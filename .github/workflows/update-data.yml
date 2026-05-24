@@ -29,12 +29,17 @@ jobs:
           cd scripts
           python process_data.py
 
+      - name: Genereaza articole blog
+        run: |
+          cd scripts
+          python generate_blog.py
+
       - name: Commit si push daca s-au schimbat datele
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add frontend/public/output.json data/output.json
+          git add frontend/public/output.json data/output.json frontend/public/blog-posts.json
           git diff --staged --quiet && echo "Nicio schimbare." || (
-            git commit -m "auto: actualizare date $(date +'%Y-%m-%d')"
+            git commit -m "auto: actualizare date si blog $(date +'%Y-%m-%d')"
             git push
           )

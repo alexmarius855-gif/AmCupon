@@ -127,6 +127,7 @@ export default function Home() {
 
           <nav className="hidden md:flex items-center gap-5 text-sm font-semibold text-gray-600">
             <a href="#promotii" className="hover:text-orange-500 transition-colors">Promoții</a>
+            <a href="/blog" className="hover:text-orange-500 transition-colors">Blog</a>
             <div className="relative group">
               <button className="flex items-center gap-1 hover:text-orange-500 transition-colors py-1">
                 Categorii
