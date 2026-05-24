@@ -284,10 +284,10 @@ export default function Home() {
       {/* FOOTER */}
       <footer className="bg-gray-950 text-gray-400">
         <div className="max-w-7xl mx-auto px-4 pt-12 pb-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-10">
 
-            {/* Coloana brand */}
-            <div>
+            {/* Brand */}
+            <div className="col-span-2 md:col-span-1">
               <div className="flex items-center gap-2 mb-4">
                 <div className="bg-orange-500 text-white font-black text-sm px-2 py-0.5 rounded-md">Am</div>
                 <span className="font-black text-white text-lg">Cupon.ro</span>
@@ -295,74 +295,108 @@ export default function Home() {
               <p className="text-sm leading-relaxed mb-5">
                 Coduri de reducere verificate de la cele mai mari magazine online din România. Actualizat zilnic, gratuit.
               </p>
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-2 mb-5">
                 <div className="flex items-center gap-2 bg-gray-900 rounded-xl px-3 py-2 text-xs">
-                  <svg className="w-4 h-4 text-green-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-3.5 h-3.5 text-green-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                   </svg>
-                  <span>Conexiune SSL 256-bit</span>
+                  SSL 256-bit · GDPR Conform
                 </div>
-                <div className="flex items-center gap-2 bg-gray-900 rounded-xl px-3 py-2 text-xs">
-                  <svg className="w-4 h-4 text-blue-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
-                  <span>Conform GDPR · Date protejate</span>
-                </div>
+              </div>
+              <div className="flex items-center gap-3">
+                {[
+                  { label: "Facebook", path: "M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" },
+                  { label: "Instagram", path: "M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01M6.5 19.5h11a3 3 0 003-3v-11a3 3 0 00-3-3h-11a3 3 0 00-3 3v11a3 3 0 003 3z" },
+                  { label: "TikTok", path: "M9 12a4 4 0 104 4V4a5 5 0 005 5" },
+                ].map((s) => (
+                  <a key={s.label} href="#" aria-label={s.label}
+                    className="w-8 h-8 rounded-lg bg-gray-800 hover:bg-orange-500 flex items-center justify-center transition-colors">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d={s.path} />
+                    </svg>
+                  </a>
+                ))}
               </div>
             </div>
 
-            {/* Categorii populare */}
+            {/* Categorii */}
             <div>
-              <h3 className="text-white font-bold text-sm mb-4 uppercase tracking-wide">Categorii</h3>
+              <h3 className="text-white font-bold text-xs mb-4 uppercase tracking-wider">Categorii</h3>
               <ul className="space-y-2.5 text-sm">
                 {[
                   { href: "/categorii/fashion", label: "Fashion" },
                   { href: "/categorii/electronics-itc", label: "Electronice IT&C" },
-                  { href: "/categorii/beauty", label: "Frumusețe & Cosmetice" },
+                  { href: "/categorii/beauty", label: "Frumusețe" },
                   { href: "/categorii/home-garden", label: "Casă & Grădină" },
-                  { href: "/categorii/sports-outdoors", label: "Sport & Outdoor" },
-                  { href: "/categorii/pharma", label: "Farmacie & Sănătate" },
+                  { href: "/categorii/sports-outdoors", label: "Sport" },
+                  { href: "/categorii/pharma", label: "Farmacie" },
                   { href: "/categorii", label: "Toate categoriile →" },
                 ].map((l) => (
-                  <li key={l.href}>
-                    <a href={l.href} className="hover:text-orange-400 transition-colors">{l.label}</a>
-                  </li>
+                  <li key={l.href}><a href={l.href} className="hover:text-orange-400 transition-colors">{l.label}</a></li>
                 ))}
               </ul>
             </div>
 
-            {/* Magazine */}
+            {/* Cautari populare */}
             <div>
-              <h3 className="text-white font-bold text-sm mb-4 uppercase tracking-wide">Magazine populare</h3>
+              <h3 className="text-white font-bold text-xs mb-4 uppercase tracking-wider">Căutări populare</h3>
               <ul className="space-y-2.5 text-sm">
                 {[
-                  "answear.ro", "fashiondays.ro", "elefant.ro",
-                  "emag.ro", "farmec.ro", "noriel.ro", "notino.ro",
-                ].map((mag) => (
-                  <li key={mag}>
-                    <a href={`/reduceri/${mag}`} className="hover:text-orange-400 transition-colors">
-                      {mag.split(".")[0].charAt(0).toUpperCase() + mag.split(".")[0].slice(1)}
-                    </a>
-                  </li>
+                  { href: "/reduceri/answear.ro", label: "Cod reducere Answear" },
+                  { href: "/reduceri/fashiondays.ro", label: "Cod reducere Fashion Days" },
+                  { href: "/reduceri/notino.ro", label: "Cod reducere Notino" },
+                  { href: "/reduceri/emag.ro", label: "Cod reducere eMAG" },
+                  { href: "/reduceri/farmec.ro", label: "Cod reducere Farmec" },
+                  { href: "/reduceri/noriel.ro", label: "Cod reducere Noriel" },
+                  { href: "/reduceri/elefant.ro", label: "Cod reducere Elefant" },
+                ].map((l) => (
+                  <li key={l.href}><a href={l.href} className="hover:text-orange-400 transition-colors">{l.label}</a></li>
                 ))}
               </ul>
             </div>
 
-            {/* Informații */}
+            {/* Pagini */}
             <div>
-              <h3 className="text-white font-bold text-sm mb-4 uppercase tracking-wide">Informații</h3>
+              <h3 className="text-white font-bold text-xs mb-4 uppercase tracking-wider">Pagini</h3>
               <ul className="space-y-2.5 text-sm">
+                <li><a href="/blog" className="hover:text-orange-400 transition-colors">Blog</a></li>
+                <li><a href="/despre-noi" className="hover:text-orange-400 transition-colors">Despre noi</a></li>
+                <li><a href="/categorii" className="hover:text-orange-400 transition-colors">Toate categoriile</a></li>
                 <li><a href="/termeni" className="hover:text-orange-400 transition-colors">Termeni și Condiții</a></li>
                 <li><a href="/termeni#gdpr" className="hover:text-orange-400 transition-colors">GDPR & Confidențialitate</a></li>
                 <li><a href="/termeni#cookies" className="hover:text-orange-400 transition-colors">Politica Cookies</a></li>
                 <li><a href="mailto:contact@amcupon.ro" className="hover:text-orange-400 transition-colors">Contact</a></li>
               </ul>
             </div>
+
+            {/* Linkuri utile */}
+            <div>
+              <h3 className="text-white font-bold text-xs mb-4 uppercase tracking-wider">Linkuri utile</h3>
+              <ul className="space-y-2.5 text-sm">
+                {[
+                  { href: "https://anpc.ro", label: "ANPC" },
+                  { href: "https://ec.europa.eu/consumers/odr", label: "SAL-UE" },
+                  { href: "https://eccromania.ro", label: "ECC România" },
+                  { href: "https://ancom.ro", label: "ANCOM" },
+                  { href: "https://2performant.com", label: "2Performant" },
+                ].map((l) => (
+                  <li key={l.href}>
+                    <a href={l.href} target="_blank" rel="noopener noreferrer"
+                      className="hover:text-orange-400 transition-colors flex items-center gap-1">
+                      {l.label}
+                      <svg className="w-2.5 h-2.5 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           <div className="border-t border-gray-800 pt-6 space-y-3">
             <p className="text-xs text-gray-600 leading-relaxed max-w-4xl">
-              Linkurile de pe AmCupon.ro sunt linkuri de afiliat generate prin platforma 2Performant. Când accesezi un magazin partener prin site-ul nostru și efectuezi o achiziție, primim un comision de la magazin — fără niciun cost suplimentar pentru tine. Comisionul nu influențează prețul sau calitatea produselor achiziționate.
+              Linkurile de pe AmCupon.ro sunt linkuri de afiliat generate prin platforma 2Performant. Când accesezi un magazin partener și efectuezi o achiziție, primim un comision de la magazin — fără niciun cost suplimentar pentru tine. Comisionul nu influențează prețul sau calitatea produselor achiziționate.
             </p>
             <p className="text-xs text-gray-700">
               © {new Date().getFullYear()} AmCupon.ro · Toate drepturile rezervate.

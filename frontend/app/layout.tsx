@@ -61,6 +61,13 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col">
+        <div className="bg-gradient-to-r from-red-600 to-orange-500 text-white text-xs font-semibold py-2 px-4 text-center">
+          🔥{" "}
+          <span className="hidden sm:inline">Coduri de reducere actualizate zilnic — </span>
+          <a href="/#promotii" className="underline hover:no-underline font-bold">
+            Descoperă promoțiile active de azi →
+          </a>
+        </div>
         {children}
         <Analytics />
         <Script
