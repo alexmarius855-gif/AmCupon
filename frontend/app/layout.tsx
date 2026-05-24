@@ -14,8 +14,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AfiliereRO - Cele mai bune oferte si coduri de reducere",
-  description: "Promotii active, coduri de reducere si oferte exclusive de la cele mai mari magazine online din Romania.",
+  title: "AmCupon.ro - Coduri de reducere si oferte verificate",
+  description: "Coduri de reducere verificate si oferte exclusive de la cele mai mari magazine online din Romania. Actualizat zilnic.",
+  verification: {
+    google: "UvsbX8yxIp1eGwFK5ESqVXzA6jT5wjcTartEIPG5mqw",
+  },
 };
 
 export default function RootLayout({
