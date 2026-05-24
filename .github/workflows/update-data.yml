@@ -1,0 +1,40 @@
+name: Actualizare date zilnica
+
+on:
+  schedule:
+    - cron: '0 4 * * *'  # 6:00 ora Romaniei (UTC+2)
+  workflow_dispatch:      # pornire manuala din GitHub
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Instaleaza dependinte Python
+        run: pip install pandas openpyxl
+
+      - name: Ruleaza procesare date
+        run: |
+          cd scripts
+          python process_data.py
+
+      - name: Commit si push daca s-au schimbat datele
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add frontend/public/output.json data/output.json
+          git diff --staged --quiet && echo "Nicio schimbare." || (
+            git commit -m "auto: actualizare date $(date +'%Y-%m-%d')"
+            git push
+          )

@@ -1,0 +1,1612 @@
+{
+  "generat_la": "2026-05-24T22:58:29.884665",
+  "total": 230,
+  "ok": 218,
+  "erori": 12,
+  "rezultate": [
+    {
+      "magazin": "aosom.ro",
+      "url": "https://aosom.ro",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "magazin": "automobilus.ro",
+      "url": "https://automobilus.ro",
+      "status": 444,
+      "ok": false
+    },
+    {
+      "magazin": "bigbear not installed",
+      "url": "https://BigBear not Installed",
+      "status": "EROARE",
+      "mesaj": "URL can't contain control characters. 'BigBear not Installed' (found at least ' ')",
+      "ok": false
+    },
+    {
+      "magazin": "bigbear not installed",
+      "url": "https://BigBear not Installed",
+      "status": "EROARE",
+      "mesaj": "URL can't contain control characters. 'BigBear not Installed' (found at least ' ')",
+      "ok": false
+    },
+    {
+      "magazin": "bigbear not installed",
+      "url": "https://BigBear not Installed",
+      "status": "EROARE",
+      "mesaj": "URL can't contain control characters. 'BigBear not Installed' (found at least ' ')",
+      "ok": false
+    },
+    {
+      "magazin": "drmax.ro",
+      "url": "https://drmax.ro",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "magazin": "edituratrei.ro",
+      "url": "https://edituratrei.ro",
+      "status": "EROARE",
+      "mesaj": "[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1081)",
+      "ok": false
+    },
+    {
+      "magazin": "feelnue.ro",
+      "url": "https://feelnue.ro",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "magazin": "gameology.ro",
+      "url": "https://gameology.ro",
+      "status": "EROARE",
+      "mesaj": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1081)",
+      "ok": false
+    },
+    {
+      "magazin": "kidsly.ro",
+      "url": "https://kidsly.ro",
+      "status": "EROARE",
+      "mesaj": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)",
+      "ok": false
+    },
+    {
+      "magazin": "lumaro.ro",
+      "url": "https://lumaro.ro",
+      "status": 402,
+      "ok": false
+    },
+    {
+      "magazin": "verohairshop.com",
+      "url": "https://verohairshop.com",
+      "status": 403,
+      "ok": false
+    },
+    {
+      "magazin": "112coffee.com",
+      "url": "https://112coffee.com",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://112coffee.com"
+    },
+    {
+      "magazin": "21collagen.ro",
+      "url": "https://21collagen.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://21collagen.ro"
+    },
+    {
+      "magazin": "3gifts.ro",
+      "url": "https://3gifts.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.3gifts.ro/"
+    },
+    {
+      "magazin": "ada-shoes.ro",
+      "url": "https://ada-shoes.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://ada-shoes.ro"
+    },
+    {
+      "magazin": "agroclima.ro",
+      "url": "https://agroclima.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.agroclima.ro/"
+    },
+    {
+      "magazin": "albertool.com",
+      "url": "https://albertool.com",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.albertool.com/"
+    },
+    {
+      "magazin": "albirea-dintilor.com",
+      "url": "https://albirea-dintilor.com",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://albirea-dintilor.com"
+    },
+    {
+      "magazin": "androvelli.ro",
+      "url": "https://androvelli.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.androvelli.ro/"
+    },
+    {
+      "magazin": "anticexlibris.ro",
+      "url": "https://anticexlibris.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.anticexlibris.ro/"
+    },
+    {
+      "magazin": "apiland.ro",
+      "url": "https://apiland.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://apiland.ro"
+    },
+    {
+      "magazin": "aqualine.ro",
+      "url": "https://aqualine.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.aqualine.ro/"
+    },
+    {
+      "magazin": "aquaromania.ro/aquabliss-angel",
+      "url": "https://aquaromania.ro/aquabliss-angel",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://aquaromania.ro/aquabliss-angel"
+    },
+    {
+      "magazin": "arashop.ro",
+      "url": "https://arashop.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://arashop.ro"
+    },
+    {
+      "magazin": "atelier49.ro",
+      "url": "https://atelier49.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.atelier49.ro/"
+    },
+    {
+      "magazin": "atomico.ro",
+      "url": "https://atomico.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.atomico.ro/"
+    },
+    {
+      "magazin": "autobob.ro",
+      "url": "https://autobob.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.autobob.ro/"
+    },
+    {
+      "magazin": "bagstodoor.ro",
+      "url": "https://bagstodoor.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://bagstodoor.ro"
+    },
+    {
+      "magazin": "baobao.ro",
+      "url": "https://baobao.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.baobao.ro/"
+    },
+    {
+      "magazin": "barber-store.ro",
+      "url": "https://barber-store.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://barber-store.ro"
+    },
+    {
+      "magazin": "baseone.ro",
+      "url": "https://baseone.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.baseone.ro/"
+    },
+    {
+      "magazin": "baterii-lux.ro",
+      "url": "https://baterii-lux.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.baterii-lux.ro/"
+    },
+    {
+      "magazin": "bazar-shop.ro",
+      "url": "https://bazar-shop.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://bazar-shop.ro"
+    },
+    {
+      "magazin": "bebeboo.ro",
+      "url": "https://bebeboo.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://bebeboo.ro"
+    },
+    {
+      "magazin": "belher.ro",
+      "url": "https://belher.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.belher.ro/"
+    },
+    {
+      "magazin": "beststoreonline.ro",
+      "url": "https://beststoreonline.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.beststoreonline.ro/"
+    },
+    {
+      "magazin": "bewater.ro",
+      "url": "https://bewater.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.bewater.ro/"
+    },
+    {
+      "magazin": "bijubox.ro",
+      "url": "https://bijubox.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://bijubox.ro"
+    },
+    {
+      "magazin": "biomag.ro",
+      "url": "https://Biomag.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.biomag.ro/"
+    },
+    {
+      "magazin": "birai.ro",
+      "url": "https://birai.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://birai.ro"
+    },
+    {
+      "magazin": "bis-design.ro",
+      "url": "https://bis-design.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.bis-design.ro/"
+    },
+    {
+      "magazin": "bookzone.ro",
+      "url": "https://bookzone.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://bookzone.ro"
+    },
+    {
+      "magazin": "botaniq.ro",
+      "url": "https://botaniq.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.botaniq.ro/"
+    },
+    {
+      "magazin": "bravapet.ro",
+      "url": "https://bravapet.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://bravapet.ro"
+    },
+    {
+      "magazin": "brazicraciun.net",
+      "url": "https://brazicraciun.net",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.brazicraciun.net/"
+    },
+    {
+      "magazin": "brico.ro",
+      "url": "https://brico.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.brico.ro/"
+    },
+    {
+      "magazin": "candycave.ie",
+      "url": "https://candycave.ie",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://candycave.ie"
+    },
+    {
+      "magazin": "car-solution.ro",
+      "url": "https://car-solution.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.car-solution.ro/"
+    },
+    {
+      "magazin": "carsupreme.ro",
+      "url": "https://carsupreme.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://carsupreme.ro"
+    },
+    {
+      "magazin": "cartepedia.ro",
+      "url": "https://cartepedia.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.cartepedia.ro/"
+    },
+    {
+      "magazin": "carturesti.ro",
+      "url": "https://carturesti.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://carturesti.ro"
+    },
+    {
+      "magazin": "case-smart.ro",
+      "url": "https://case-smart.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://case-smart.ro"
+    },
+    {
+      "magazin": "ceasuri-shop.ro",
+      "url": "https://ceasuri-shop.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.ceasuri-shop.ro/"
+    },
+    {
+      "magazin": "chicbijoux.ro",
+      "url": "https://chicbijoux.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://chicbijoux.ro"
+    },
+    {
+      "magazin": "comenzi.ro",
+      "url": "https://comenzi.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.comenzi.ro/"
+    },
+    {
+      "magazin": "conectica.ro",
+      "url": "https://conectica.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://conectica.ro"
+    },
+    {
+      "magazin": "constructii-finisaje.com",
+      "url": "https://constructii-finisaje.com",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://constructii-finisaje.com"
+    },
+    {
+      "magazin": "corturi24.ro",
+      "url": "https://corturi24.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://corturi24.ro"
+    },
+    {
+      "magazin": "cu-reduceri.ro",
+      "url": "https://cu-reduceri.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.cu-reduceri.ro/"
+    },
+    {
+      "magazin": "cumperiangro.ro",
+      "url": "https://cumperiangro.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.cumperiangro.ro/"
+    },
+    {
+      "magazin": "cursuri-ai.ro",
+      "url": "https://cursuri-ai.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://cursuri-ai.ro"
+    },
+    {
+      "magazin": "daar.ro",
+      "url": "https://daar.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://daar.ro"
+    },
+    {
+      "magazin": "dacris.net",
+      "url": "https://dacris.net",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.dacris.net/"
+    },
+    {
+      "magazin": "delhome.ro",
+      "url": "https://delhome.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.delhome.ro/"
+    },
+    {
+      "magazin": "demax.ro",
+      "url": "https://demax.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://demax.ro"
+    },
+    {
+      "magazin": "dentfactory.ro",
+      "url": "https://dentfactory.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.dentfactory.ro/"
+    },
+    {
+      "magazin": "dfc.ro",
+      "url": "https://dfc.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://dfc.ro"
+    },
+    {
+      "magazin": "drestetix.ro",
+      "url": "https://drestetix.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://drestetix.ro"
+    },
+    {
+      "magazin": "dualstore.ro",
+      "url": "https://dualstore.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.dualstore.ro/"
+    },
+    {
+      "magazin": "e-roti.ro",
+      "url": "https://e-roti.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.e-roti.ro/"
+    },
+    {
+      "magazin": "ebashop.ro",
+      "url": "https://ebashop.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://ebashop.ro"
+    },
+    {
+      "magazin": "ecovent.ro",
+      "url": "https://ecovent.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://ecovent.ro"
+    },
+    {
+      "magazin": "edituracasa.ro",
+      "url": "https://edituracasa.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.edituracasa.ro/"
+    },
+    {
+      "magazin": "edituradph.ro",
+      "url": "https://edituradph.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.edituradph.ro/"
+    },
+    {
+      "magazin": "ehranaanimale.ro",
+      "url": "https://ehranaanimale.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.ehranaanimale.ro/"
+    },
+    {
+      "magazin": "electricsun.de",
+      "url": "https://ElectricSun.de",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://ElectricSun.de"
+    },
+    {
+      "magazin": "elindor.ro",
+      "url": "https://elindor.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://elindor.ro"
+    },
+    {
+      "magazin": "empria.ro",
+      "url": "https://empria.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.empria.ro/"
+    },
+    {
+      "magazin": "erfi.ro",
+      "url": "https://erfi.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.erfi.ro/"
+    },
+    {
+      "magazin": "esteto.bg",
+      "url": "https://esteto.bg",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.esteto.bg/"
+    },
+    {
+      "magazin": "esteto.ro",
+      "url": "https://esteto.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.esteto.ro/"
+    },
+    {
+      "magazin": "esyhair.com/en",
+      "url": "https://esyhair.com/en",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.esyhair.com/#gbaid344849"
+    },
+    {
+      "magazin": "evocomputers.ro",
+      "url": "https://evocomputers.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.evocomputers.ro/"
+    },
+    {
+      "magazin": "evolutionpowertools.ro",
+      "url": "https://evolutionpowertools.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://evolutionpowertools.ro"
+    },
+    {
+      "magazin": "fabricadetuica.ro",
+      "url": "https://fabricadetuica.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.fabricadetuica.ro/"
+    },
+    {
+      "magazin": "fara-daunatori.ro",
+      "url": "https://fara-daunatori.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.fara-daunatori.ro/"
+    },
+    {
+      "magazin": "fermier.ro",
+      "url": "https://fermier.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://fermier.ro"
+    },
+    {
+      "magazin": "fitlife.ro",
+      "url": "https://fitlife.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://fitlife.ro"
+    },
+    {
+      "magazin": "flip.bg",
+      "url": "https://flip.bg",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://flip.bg"
+    },
+    {
+      "magazin": "flip.gr",
+      "url": "https://flip.gr",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://flip.gr"
+    },
+    {
+      "magazin": "floria.ro",
+      "url": "https://floria.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.floria.ro/"
+    },
+    {
+      "magazin": "fluturasi.ro",
+      "url": "https://fluturasi.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.fluturasi.ro/"
+    },
+    {
+      "magazin": "folie.ro",
+      "url": "https://folie.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://folie.ro"
+    },
+    {
+      "magazin": "fornello.ro",
+      "url": "https://fornello.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://fornello.ro"
+    },
+    {
+      "magazin": "frootya.ro",
+      "url": "https://frootya.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://frootya.ro"
+    },
+    {
+      "magazin": "fsm-romania.ro",
+      "url": "https://fsm-romania.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://fsm-romania.ro"
+    },
+    {
+      "magazin": "ginissima.ro",
+      "url": "https://ginissima.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://ginissima.ro"
+    },
+    {
+      "magazin": "ginsari.ro",
+      "url": "https://ginsari.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://ginsari.ro"
+    },
+    {
+      "magazin": "glowmania.ro",
+      "url": "https://glowmania.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.glowmania.ro/"
+    },
+    {
+      "magazin": "goldnutrition.ro",
+      "url": "https://goldnutrition.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://goldnutrition.ro"
+    },
+    {
+      "magazin": "goodscents.ro",
+      "url": "https://goodscents.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://goodscents.ro/pachete-promo-163"
+    },
+    {
+      "magazin": "gopet.ro",
+      "url": "https://gopet.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.gopet.ro/"
+    },
+    {
+      "magazin": "gossi.ro",
+      "url": "https://gossi.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://gossi.ro"
+    },
+    {
+      "magazin": "greeno.ro",
+      "url": "https://greeno.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://greeno.ro/ro/"
+    },
+    {
+      "magazin": "haaus.ro",
+      "url": "https://haaus.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://haaus.ro"
+    },
+    {
+      "magazin": "herbagetica.ro",
+      "url": "https://herbagetica.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://herbagetica.ro"
+    },
+    {
+      "magazin": "hippoland.ro",
+      "url": "https://hippoland.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://hippoland.ro"
+    },
+    {
+      "magazin": "ihunt.ro",
+      "url": "https://ihunt.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.ihunt.ro/oferta"
+    },
+    {
+      "magazin": "impulz.ro",
+      "url": "https://impulz.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.impulz.ro/"
+    },
+    {
+      "magazin": "infinity.ro",
+      "url": "https://infinity.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.infinity.ro/"
+    },
+    {
+      "magazin": "inpuff.ro",
+      "url": "https://inpuff.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.inpuff.ro/"
+    },
+    {
+      "magazin": "janta.ro",
+      "url": "https://janta.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.janta.ro/wheelsportal/84677/start"
+    },
+    {
+      "magazin": "jocurinoi.ro",
+      "url": "https://jocurinoi.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.jocurinoi.ro/"
+    },
+    {
+      "magazin": "jollymag.ro",
+      "url": "https://jollymag.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://jollymag.ro"
+    },
+    {
+      "magazin": "kinderplay.ro",
+      "url": "https://kinderplay.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.kinderplay.ro/"
+    },
+    {
+      "magazin": "kitunghii.ro",
+      "url": "https://kitunghii.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.kitunghii.ro/"
+    },
+    {
+      "magazin": "laptoplab.ro",
+      "url": "https://laptoplab.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.laptoplab.ro/homepage"
+    },
+    {
+      "magazin": "lasebiacasa.ro",
+      "url": "https://lasebiacasa.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://lasebiacasa.ro"
+    },
+    {
+      "magazin": "lenjeriapufoasa.ro",
+      "url": "https://lenjeriapufoasa.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.lenjeriapufoasa.ro/"
+    },
+    {
+      "magazin": "libhumanitas.ro",
+      "url": "https://libhumanitas.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.libhumanitas.ro/"
+    },
+    {
+      "magazin": "libris.ro",
+      "url": "https://libris.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.libris.ro/"
+    },
+    {
+      "magazin": "liki24.es",
+      "url": "https://liki24.es",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://liki24.es"
+    },
+    {
+      "magazin": "liki24.nl",
+      "url": "https://liki24.nl",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://liki24.nl"
+    },
+    {
+      "magazin": "liki24.ro",
+      "url": "https://liki24.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://liki24.ro"
+    },
+    {
+      "magazin": "litera.ro",
+      "url": "https://litera.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.litera.ro/pretdetipar"
+    },
+    {
+      "magazin": "lollis.ro",
+      "url": "https://lollis.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://lollis.ro"
+    },
+    {
+      "magazin": "lonamad.ro",
+      "url": "https://lonamad.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://lonamad.ro"
+    },
+    {
+      "magazin": "lu.ro",
+      "url": "https://lu.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://lu.ro"
+    },
+    {
+      "magazin": "lysee.ro",
+      "url": "https://lysee.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.lysee.ro/"
+    },
+    {
+      "magazin": "madebysociety.co.uk",
+      "url": "https://madebysociety.co.uk",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://madebysociety.co.uk"
+    },
+    {
+      "magazin": "magazintraditional.ro",
+      "url": "https://magazintraditional.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.magazintraditional.ro/"
+    },
+    {
+      "magazin": "magazinuldegene.ro",
+      "url": "https://magazinuldegene.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://magazinuldegene.ro"
+    },
+    {
+      "magazin": "mangoandbloom.ro",
+      "url": "https://mangoandbloom.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.mangoandbloom.ro/"
+    },
+    {
+      "magazin": "mariart.ro",
+      "url": "https://mariart.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.mariart.ro/"
+    },
+    {
+      "magazin": "materialeelectrice.ro",
+      "url": "https://materialeelectrice.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.materialeelectrice.ro/"
+    },
+    {
+      "magazin": "medimfarm.ro",
+      "url": "https://medimfarm.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://medimfarm.ro"
+    },
+    {
+      "magazin": "megadepot.ro",
+      "url": "https://megadepot.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.megadepot.ro/"
+    },
+    {
+      "magazin": "mendo.ro",
+      "url": "https://mendo.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://mendo.ro"
+    },
+    {
+      "magazin": "meolle.com",
+      "url": "https://meolle.com",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.meolle.com/"
+    },
+    {
+      "magazin": "mezoni.ro",
+      "url": "https://mezoni.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.mezoni.ro/"
+    },
+    {
+      "magazin": "mirano.ro",
+      "url": "https://mirano.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.mirano.ro/"
+    },
+    {
+      "magazin": "mobilachic.ro",
+      "url": "https://mobilachic.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.mobilachic.ro/"
+    },
+    {
+      "magazin": "mobiladeko.ro",
+      "url": "https://mobiladeko.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.mobiladeko.ro/"
+    },
+    {
+      "magazin": "mobilepet.ro",
+      "url": "https://mobilepet.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://mobilepet.ro"
+    },
+    {
+      "magazin": "mobiro.ro",
+      "url": "https://mobiro.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://mobiro.ro"
+    },
+    {
+      "magazin": "modastil.ro",
+      "url": "https://modastil.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.modastil.ro/"
+    },
+    {
+      "magazin": "moftcollection.ro",
+      "url": "https://moftcollection.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://moftcollection.ro"
+    },
+    {
+      "magazin": "mugurdelumina.ro",
+      "url": "https://mugurdelumina.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://mugurdelumina.ro"
+    },
+    {
+      "magazin": "myeshop.ro",
+      "url": "https://myeshop.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.myeshop.ro/"
+    },
+    {
+      "magazin": "mygrace.ro",
+      "url": "https://mygrace.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://mygrace.ro"
+    },
+    {
+      "magazin": "nailsup.ro",
+      "url": "https://nailsup.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://nailsup.ro"
+    },
+    {
+      "magazin": "nannie.ro",
+      "url": "https://nannie.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.nannie.ro/"
+    },
+    {
+      "magazin": "navigatiiandroid.ro",
+      "url": "https://navigatiiandroid.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.navigatiiandroid.ro/"
+    },
+    {
+      "magazin": "nextsim.eu",
+      "url": "https://nextsim.eu",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://nextsim.eu/en"
+    },
+    {
+      "magazin": "noriel.ro",
+      "url": "https://noriel.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://noriel.ro"
+    },
+    {
+      "magazin": "nortia.ro",
+      "url": "https://nortia.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://nortia.ro"
+    },
+    {
+      "magazin": "novapet.ro",
+      "url": "https://novapet.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.novapet.ro/"
+    },
+    {
+      "magazin": "novvu.ro",
+      "url": "https://novvu.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://novvu.ro"
+    },
+    {
+      "magazin": "nurio.ro",
+      "url": "https://nurio.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.nurio.ro/"
+    },
+    {
+      "magazin": "optiblu.ro",
+      "url": "https://optiblu.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.optiblu.ro/"
+    },
+    {
+      "magazin": "orisee.ro",
+      "url": "https://orisee.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://orisee.ro"
+    },
+    {
+      "magazin": "otter.ro",
+      "url": "https://otter.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.otter.ro/"
+    },
+    {
+      "magazin": "ottobroker.ro",
+      "url": "https://ottobroker.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.ottobroker.ro/"
+    },
+    {
+      "magazin": "outfitblack.ro",
+      "url": "https://outfitblack.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.outfitblack.ro/"
+    },
+    {
+      "magazin": "ozone.ro",
+      "url": "https://ozone.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.ozone.ro/"
+    },
+    {
+      "magazin": "paa-home.ro",
+      "url": "https://paa-home.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://paa-home.ro"
+    },
+    {
+      "magazin": "pansiprod.ro",
+      "url": "https://pansiprod.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://pansiprod.ro"
+    },
+    {
+      "magazin": "papusica.ro",
+      "url": "https://papusica.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://papusica.ro"
+    },
+    {
+      "magazin": "parmashop.ro",
+      "url": "https://parmashop.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.parmashop.ro/"
+    },
+    {
+      "magazin": "petmart.ro",
+      "url": "https://petmart.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.petmart.ro/"
+    },
+    {
+      "magazin": "petmax.ro",
+      "url": "https://petmax.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.petmax.ro/"
+    },
+    {
+      "magazin": "pfarma.ro",
+      "url": "https://pfarma.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.pfarma.ro/"
+    },
+    {
+      "magazin": "polti.ro",
+      "url": "https://polti.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.polti.ro/"
+    },
+    {
+      "magazin": "premiumchocolate.ro",
+      "url": "https://premiumchocolate.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.chocolatemakers.ro/"
+    },
+    {
+      "magazin": "prestigehome.ro",
+      "url": "https://prestigehome.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.prestigehome.ro/"
+    },
+    {
+      "magazin": "promotionalprint.ro",
+      "url": "https://promotionalprint.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://promotionalprint.ro"
+    },
+    {
+      "magazin": "pronaturiste.ro",
+      "url": "https://pronaturiste.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.pronaturiste.ro/"
+    },
+    {
+      "magazin": "rayahalal.ro",
+      "url": "https://rayahalal.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://rayahalal.ro"
+    },
+    {
+      "magazin": "reincarcareprepay.ro",
+      "url": "https://reincarcareprepay.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://reincarcareprepay.ro"
+    },
+    {
+      "magazin": "republicabio.ro",
+      "url": "https://republicabio.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://republicabio.ro"
+    },
+    {
+      "magazin": "rovision.ro",
+      "url": "https://rovision.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://rovision.ro"
+    },
+    {
+      "magazin": "scauneonline.ro",
+      "url": "https://scauneonline.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.scauneonline.ro/"
+    },
+    {
+      "magazin": "scentoparfum.ro",
+      "url": "https://scentoparfum.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.scentoparfum.ro/"
+    },
+    {
+      "magazin": "scule365.ro",
+      "url": "https://scule365.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.scule365.ro/"
+    },
+    {
+      "magazin": "sculefix.ro",
+      "url": "https://sculefix.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.sculefix.ro/"
+    },
+    {
+      "magazin": "sculepescuit.ro",
+      "url": "https://sculepescuit.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://sculepescuit.ro"
+    },
+    {
+      "magazin": "seladin.ro",
+      "url": "https://seladin.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://seladin.ro"
+    },
+    {
+      "magazin": "selyo.ro",
+      "url": "https://selyo.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://selyo.ro"
+    },
+    {
+      "magazin": "sevich.ro",
+      "url": "https://sevich.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.sevich.ro/"
+    },
+    {
+      "magazin": "shop.biofarmland.ro",
+      "url": "https://shop.biofarmland.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.shop.biofarmland.ro/"
+    },
+    {
+      "magazin": "sofiline.ro",
+      "url": "https://sofiline.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.sofiline.ro/"
+    },
+    {
+      "magazin": "spectral.ro",
+      "url": "https://spectral.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.spectral.ro/"
+    },
+    {
+      "magazin": "sportdepot.ro",
+      "url": "https://sportdepot.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.sportdepot.ro/"
+    },
+    {
+      "magazin": "springfarma.com",
+      "url": "https://springfarma.com",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.springfarma.com/"
+    },
+    {
+      "magazin": "spumos.ro",
+      "url": "https://spumos.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://spumos.ro"
+    },
+    {
+      "magazin": "stoneproof.ro",
+      "url": "https://stoneproof.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.stoneproof.ro/"
+    },
+    {
+      "magazin": "synergytherm.com",
+      "url": "https://synergytherm.com",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.synergytherm.com/"
+    },
+    {
+      "magazin": "talis.ro",
+      "url": "https://talis.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.talis.ro/"
+    },
+    {
+      "magazin": "targetdeal.ro",
+      "url": "https://targetdeal.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://targetdeal.ro"
+    },
+    {
+      "magazin": "techstar.ro",
+      "url": "https://techstar.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.techstar.ro/"
+    },
+    {
+      "magazin": "teilor.ro",
+      "url": "https://teilor.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.teilor.ro/"
+    },
+    {
+      "magazin": "telvertical.ro",
+      "url": "https://telvertical.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://telvertical.ro"
+    },
+    {
+      "magazin": "tenq.ro",
+      "url": "https://tenq.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.tenq.ro/"
+    },
+    {
+      "magazin": "timebox.ro",
+      "url": "https://timebox.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://timebox.ro"
+    },
+    {
+      "magazin": "tinar.ro",
+      "url": "https://tinar.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.tinar.ro/"
+    },
+    {
+      "magazin": "topstar.ro",
+      "url": "https://topstar.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.topstar.ro/"
+    },
+    {
+      "magazin": "totalpantofi.ro",
+      "url": "https://TotalPantofi.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://TotalPantofi.ro"
+    },
+    {
+      "magazin": "traditionalfashion.ro",
+      "url": "https://traditionalfashion.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.traditionalfashion.ro/"
+    },
+    {
+      "magazin": "tratamentenaturiste.ro",
+      "url": "https://tratamentenaturiste.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://tratamentenaturiste.ro"
+    },
+    {
+      "magazin": "twindeco.ro",
+      "url": "https://twindeco.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://twindeco.ro"
+    },
+    {
+      "magazin": "underarmour.bg",
+      "url": "https://underarmour.bg",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.underarmour.bg/"
+    },
+    {
+      "magazin": "uniquestore.ro",
+      "url": "https://uniquestore.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.uniquestore.ro/"
+    },
+    {
+      "magazin": "urbancare.ro",
+      "url": "https://urbancare.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://urbancare.ro"
+    },
+    {
+      "magazin": "vdoors.ro",
+      "url": "https://vdoors.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://vdoors.ro"
+    },
+    {
+      "magazin": "vedrashop.ro",
+      "url": "https://vedrashop.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://vedrashop.ro"
+    },
+    {
+      "magazin": "verdemivida.ro",
+      "url": "https://verdemivida.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://verdemivida.ro"
+    },
+    {
+      "magazin": "vidaxl.ro",
+      "url": "https://vidaxl.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.vidaxl.ro/"
+    },
+    {
+      "magazin": "vioi.ro",
+      "url": "https://vioi.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.vioi.ro/"
+    },
+    {
+      "magazin": "vitamix.ro",
+      "url": "https://vitamix.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://comenzi.vitamix.ro/"
+    },
+    {
+      "magazin": "vivadeco.ro",
+      "url": "https://vivadeco.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.vivadeco.ro/"
+    },
+    {
+      "magazin": "vonmag.ro",
+      "url": "https://vonmag.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.vonmag.ro/"
+    },
+    {
+      "magazin": "wargear.ro",
+      "url": "https://wargear.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://wargear.ro"
+    },
+    {
+      "magazin": "welapo.com",
+      "url": "https://welapo.com",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.welapo.com/"
+    },
+    {
+      "magazin": "zaire.ro",
+      "url": "https://zaire.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://zaire.ro"
+    },
+    {
+      "magazin": "zandra.ro",
+      "url": "https://zandra.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.zandra.ro/"
+    },
+    {
+      "magazin": "zephyrlabs.ro",
+      "url": "https://zephyrlabs.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.zephyrlabs.ro/"
+    },
+    {
+      "magazin": "zitamine.ro",
+      "url": "https://zitamine.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://zitamine.ro"
+    },
+    {
+      "magazin": "zukitoys.ro",
+      "url": "https://zukitoys.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://www.zukitoys.ro/"
+    },
+    {
+      "magazin": "zurlishop.ro",
+      "url": "https://zurlishop.ro",
+      "status": 200,
+      "ok": true,
+      "url_final": "https://zurlishop.ro"
+    }
+  ]
+}

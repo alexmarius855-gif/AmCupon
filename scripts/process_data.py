@@ -92,6 +92,15 @@ def calculeaza_scor(row):
     return round(scor, 1)
 
 
+def categorie_slug(cat: str) -> str:
+    s = cat.lower()
+    s = re.sub(r"[&/]", "", s)
+    s = re.sub(r"[^a-z0-9\s-]", "", s)
+    s = re.sub(r"\s+", "-", s.strip())
+    s = re.sub(r"-+", "-", s)
+    return s
+
+
 def calculeaza_folosit(magazin: str, sales: int, are_promotie: bool) -> int:
     """Numar realist de utilizari bazat pe popularitate, determinist per magazin."""
     if not are_promotie:
@@ -206,7 +215,8 @@ def main():
             # features noi
             "folosit_de": calculeaza_folosit(cheie, sales, are_promotie),
             "procent_succes": calculeaza_succes(cheie, rank, trend),
-            "exclusiv": are_cod,  # orice magazin cu cod cupon activ
+            "exclusiv": are_cod,
+            "categorie_slug": categorie_slug(categorie),
         }
 
         intrare["scor_final"] = calculeaza_scor(intrare)

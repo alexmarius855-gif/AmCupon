@@ -203,16 +203,41 @@ export default function Home() {
       {/* FOOTER */}
       <footer className="bg-gray-900 text-gray-400 py-10 px-4 mt-0">
         <div className="max-w-7xl mx-auto">
-          <div className="flex items-center gap-2 mb-4">
-            <div className="bg-orange-500 text-white font-black text-sm px-2 py-0.5 rounded">Am</div>
-            <span className="font-black text-white text-lg">Cupon.ro</span>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+              <div className="flex items-center gap-2 mb-3">
+                <div className="bg-orange-500 text-white font-black text-sm px-2 py-0.5 rounded">Am</div>
+                <span className="font-black text-white text-lg">Cupon.ro</span>
+              </div>
+              <p className="text-sm leading-relaxed">
+                Coduri de reducere verificate și oferte exclusive de la cele mai mari magazine online din România. Actualizat zilnic.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-white font-bold text-sm mb-3">Categorii populare</h3>
+              <ul className="space-y-1.5 text-sm">
+                <li><a href="/categorii/fashion" className="hover:text-orange-400 transition-colors">Fashion</a></li>
+                <li><a href="/categorii/home-garden" className="hover:text-orange-400 transition-colors">Casă &amp; Grădină</a></li>
+                <li><a href="/categorii/electronics-itc" className="hover:text-orange-400 transition-colors">Electronice</a></li>
+                <li><a href="/categorii/books" className="hover:text-orange-400 transition-colors">Cărți</a></li>
+                <li><a href="/categorii/pharma" className="hover:text-orange-400 transition-colors">Farmacie</a></li>
+                <li><a href="/categorii/sports-outdoors" className="hover:text-orange-400 transition-colors">Sport</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-white font-bold text-sm mb-3">Informații</h3>
+              <ul className="space-y-1.5 text-sm">
+                <li><a href="/termeni" className="hover:text-orange-400 transition-colors">Termeni și Condiții</a></li>
+                <li><a href="/termeni#gdpr" className="hover:text-orange-400 transition-colors">GDPR & Confidențialitate</a></li>
+                <li><a href="/termeni#cookies" className="hover:text-orange-400 transition-colors">Politica Cookies</a></li>
+              </ul>
+            </div>
           </div>
-          <p className="text-sm mb-4 max-w-xl">
-            Cele mai bune coduri de reducere și oferte exclusive de la cele mai mari magazine online din România. Actualizat zilnic.
-          </p>
-          <p className="text-xs text-gray-600">
-            © 2026 AmCupon.ro · Linkurile de pe site sunt linkuri de afiliat. Primim un comision când cumperi, fără costuri suplimentare pentru tine.
-          </p>
+          <div className="border-t border-gray-800 pt-6">
+            <p className="text-xs text-gray-600">
+              © 2026 AmCupon.ro · Linkurile de pe site sunt linkuri de afiliat. Primim un comision când cumperi, fără costuri suplimentare pentru tine.
+            </p>
+          </div>
         </div>
       </footer>
     </div>

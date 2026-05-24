@@ -45,9 +45,10 @@
         "zile_ramase": 0
       }
     ],
-    "folosit_de": 242,
-    "procent_succes": 92,
+    "folosit_de": 358,
+    "procent_succes": 98,
     "exclusiv": true,
+    "categorie_slug": "babies-kids-toys",
     "scor_final": 136
   },
   {
@@ -75,9 +76,10 @@
         "zile_ramase": 221
       }
     ],
-    "folosit_de": 2023,
+    "folosit_de": 2983,
     "procent_succes": 99,
     "exclusiv": false,
+    "categorie_slug": "books",
     "scor_final": 135
   },
   {
@@ -112,9 +114,10 @@
         "zile_ramase": 6
       }
     ],
-    "folosit_de": 2425,
+    "folosit_de": 2804,
     "procent_succes": 99,
     "exclusiv": false,
+    "categorie_slug": "pharma",
     "scor_final": 134
   },
   {
@@ -170,9 +173,10 @@
         "zile_ramase": 0
       }
     ],
-    "folosit_de": 579,
+    "folosit_de": 584,
     "procent_succes": 92,
     "exclusiv": false,
+    "categorie_slug": "books",
     "scor_final": 132
   },
   {
@@ -201,8 +205,9 @@
       }
     ],
     "folosit_de": 748,
-    "procent_succes": 92,
+    "procent_succes": 94,
     "exclusiv": false,
+    "categorie_slug": "fashion",
     "scor_final": 131
   },
   {
@@ -230,9 +235,10 @@
         "zile_ramase": 0
       }
     ],
-    "folosit_de": 472,
-    "procent_succes": 88,
+    "folosit_de": 527,
+    "procent_succes": 95,
     "exclusiv": false,
+    "categorie_slug": "books",
     "scor_final": 123
   },
   {
@@ -260,9 +266,10 @@
         "zile_ramase": 6
       }
     ],
-    "folosit_de": 713,
-    "procent_succes": 90,
+    "folosit_de": 877,
+    "procent_succes": 89,
     "exclusiv": false,
+    "categorie_slug": "pet-supplies",
     "scor_final": 121
   },
   {
@@ -283,8 +290,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 93,
+    "procent_succes": 97,
     "exclusiv": false,
+    "categorie_slug": "pharma",
     "scor_final": 113
   },
   {
@@ -305,8 +313,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 83,
+    "procent_succes": 88,
     "exclusiv": false,
+    "categorie_slug": "pet-supplies",
     "scor_final": 105
   },
   {
@@ -341,9 +350,10 @@
         "zile_ramase": 0
       }
     ],
-    "folosit_de": 750,
-    "procent_succes": 86,
+    "folosit_de": 888,
+    "procent_succes": 90,
     "exclusiv": false,
+    "categorie_slug": "books",
     "scor_final": 104
   },
   {
@@ -392,9 +402,10 @@
         "zile_ramase": 6
       }
     ],
-    "folosit_de": 231,
-    "procent_succes": 87,
+    "folosit_de": 95,
+    "procent_succes": 89,
     "exclusiv": false,
+    "categorie_slug": "automotive",
     "scor_final": 103
   },
   {
@@ -415,8 +426,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 86,
+    "procent_succes": 93,
     "exclusiv": false,
+    "categorie_slug": "pharma",
     "scor_final": 97
   },
   {
@@ -439,6 +451,7 @@
     "folosit_de": 0,
     "procent_succes": 93,
     "exclusiv": false,
+    "categorie_slug": "books",
     "scor_final": 94
   },
   {
@@ -459,8 +472,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 84,
+    "procent_succes": 86,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 89
   },
   {
@@ -481,8 +495,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 84,
+    "procent_succes": 85,
     "exclusiv": false,
+    "categorie_slug": "beauty",
     "scor_final": 85
   },
   {
@@ -503,8 +518,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 90,
+    "procent_succes": 84,
     "exclusiv": false,
+    "categorie_slug": "pharma",
     "scor_final": 81
   },
   {
@@ -539,9 +555,10 @@
         "zile_ramase": 160
       }
     ],
-    "folosit_de": 142,
-    "procent_succes": 81,
+    "folosit_de": 77,
+    "procent_succes": 73,
     "exclusiv": false,
+    "categorie_slug": "automotive",
     "scor_final": 49
   },
   {
@@ -569,9 +586,10 @@
         "zile_ramase": 7
       }
     ],
-    "folosit_de": 193,
-    "procent_succes": 75,
+    "folosit_de": 226,
+    "procent_succes": 81,
     "exclusiv": false,
+    "categorie_slug": "health-personal-care",
     "scor_final": 45
   },
   {
@@ -599,9 +617,10 @@
         "zile_ramase": 6
       }
     ],
-    "folosit_de": 36,
-    "procent_succes": 71,
+    "folosit_de": 52,
+    "procent_succes": 68,
     "exclusiv": true,
+    "categorie_slug": "fashion",
     "scor_final": 45
   },
   {
@@ -643,9 +662,10 @@
         "zile_ramase": 99
       }
     ],
-    "folosit_de": 206,
-    "procent_succes": 86,
+    "folosit_de": 134,
+    "procent_succes": 84,
     "exclusiv": false,
+    "categorie_slug": "electronics-itc",
     "scor_final": 43
   },
   {
@@ -708,9 +728,10 @@
         "zile_ramase": 6
       }
     ],
-    "folosit_de": 248,
-    "procent_succes": 76,
+    "folosit_de": 153,
+    "procent_succes": 84,
     "exclusiv": true,
+    "categorie_slug": "sports-outdoors",
     "scor_final": 39
   },
   {
@@ -738,9 +759,10 @@
         "zile_ramase": 279
       }
     ],
-    "folosit_de": 19,
-    "procent_succes": 62,
+    "folosit_de": 49,
+    "procent_succes": 67,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 35
   },
   {
@@ -768,9 +790,10 @@
         "zile_ramase": 28
       }
     ],
-    "folosit_de": 25,
-    "procent_succes": 67,
+    "folosit_de": 21,
+    "procent_succes": 77,
     "exclusiv": false,
+    "categorie_slug": "online-mall",
     "scor_final": 35
   },
   {
@@ -805,9 +828,10 @@
         "zile_ramase": 6
       }
     ],
-    "folosit_de": 21,
-    "procent_succes": 76,
+    "folosit_de": 20,
+    "procent_succes": 74,
     "exclusiv": false,
+    "categorie_slug": "office-supplies",
     "scor_final": 35
   },
   {
@@ -835,9 +859,10 @@
         "zile_ramase": 14
       }
     ],
-    "folosit_de": 67,
-    "procent_succes": 72,
+    "folosit_de": 25,
+    "procent_succes": 78,
     "exclusiv": false,
+    "categorie_slug": "babies-kids-toys",
     "scor_final": 35
   },
   {
@@ -865,9 +890,10 @@
         "zile_ramase": 7
       }
     ],
-    "folosit_de": 55,
-    "procent_succes": 72,
+    "folosit_de": 67,
+    "procent_succes": 74,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 35
   },
   {
@@ -895,9 +921,10 @@
         "zile_ramase": 36
       }
     ],
-    "folosit_de": 49,
-    "procent_succes": 79,
+    "folosit_de": 56,
+    "procent_succes": 75,
     "exclusiv": false,
+    "categorie_slug": "automotive",
     "scor_final": 35
   },
   {
@@ -932,9 +959,10 @@
         "zile_ramase": 1315
       }
     ],
-    "folosit_de": 65,
-    "procent_succes": 79,
+    "folosit_de": 64,
+    "procent_succes": 81,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 35
   },
   {
@@ -962,9 +990,10 @@
         "zile_ramase": 220
       }
     ],
-    "folosit_de": 44,
-    "procent_succes": 71,
+    "folosit_de": 21,
+    "procent_succes": 64,
     "exclusiv": false,
+    "categorie_slug": "hypermarket-groceries",
     "scor_final": 35
   },
   {
@@ -992,9 +1021,10 @@
         "zile_ramase": 6
       }
     ],
-    "folosit_de": 23,
-    "procent_succes": 74,
+    "folosit_de": 40,
+    "procent_succes": 72,
     "exclusiv": false,
+    "categorie_slug": "sports-outdoors",
     "scor_final": 35
   },
   {
@@ -1022,9 +1052,10 @@
         "zile_ramase": 128
       }
     ],
-    "folosit_de": 45,
-    "procent_succes": 68,
+    "folosit_de": 38,
+    "procent_succes": 79,
     "exclusiv": false,
+    "categorie_slug": "health-personal-care",
     "scor_final": 35
   },
   {
@@ -1045,8 +1076,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 79,
+    "procent_succes": 83,
     "exclusiv": false,
+    "categorie_slug": "health-personal-care",
     "scor_final": 34
   },
   {
@@ -1067,8 +1099,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 79,
+    "procent_succes": 82,
     "exclusiv": false,
+    "categorie_slug": "books",
     "scor_final": 30
   },
   {
@@ -1103,9 +1136,10 @@
         "zile_ramase": 6
       }
     ],
-    "folosit_de": 44,
-    "procent_succes": 66,
+    "folosit_de": 17,
+    "procent_succes": 79,
     "exclusiv": true,
+    "categorie_slug": "fashion",
     "scor_final": 30
   },
   {
@@ -1133,9 +1167,10 @@
         "zile_ramase": 7
       }
     ],
-    "folosit_de": 39,
-    "procent_succes": 67,
+    "folosit_de": 68,
+    "procent_succes": 71,
     "exclusiv": true,
+    "categorie_slug": "pharma",
     "scor_final": 30
   },
   {
@@ -1163,9 +1198,10 @@
         "zile_ramase": 220
       }
     ],
-    "folosit_de": 17,
-    "procent_succes": 73,
+    "folosit_de": 47,
+    "procent_succes": 64,
     "exclusiv": true,
+    "categorie_slug": "online-mall",
     "scor_final": 30
   },
   {
@@ -1186,8 +1222,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 81,
+    "procent_succes": 87,
     "exclusiv": false,
+    "categorie_slug": "books",
     "scor_final": 26
   },
   {
@@ -1215,9 +1252,10 @@
         "zile_ramase": 221
       }
     ],
-    "folosit_de": 111,
-    "procent_succes": 82,
+    "folosit_de": 207,
+    "procent_succes": 83,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 26
   },
   {
@@ -1238,8 +1276,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 81,
+    "procent_succes": 84,
     "exclusiv": false,
+    "categorie_slug": "online-mall",
     "scor_final": 20
   },
   {
@@ -1267,9 +1306,10 @@
         "zile_ramase": 22
       }
     ],
-    "folosit_de": 69,
-    "procent_succes": 64,
+    "folosit_de": 64,
+    "procent_succes": 74,
     "exclusiv": false,
+    "categorie_slug": "electronics-itc",
     "scor_final": 20
   },
   {
@@ -1311,9 +1351,10 @@
         "zile_ramase": 7
       }
     ],
-    "folosit_de": 70,
+    "folosit_de": 50,
     "procent_succes": 77,
     "exclusiv": false,
+    "categorie_slug": "books",
     "scor_final": 20
   },
   {
@@ -1341,9 +1382,10 @@
         "zile_ramase": 7
       }
     ],
-    "folosit_de": 42,
-    "procent_succes": 78,
+    "folosit_de": 24,
+    "procent_succes": 64,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 20
   },
   {
@@ -1371,9 +1413,10 @@
         "zile_ramase": 6
       }
     ],
-    "folosit_de": 67,
-    "procent_succes": 76,
+    "folosit_de": 49,
+    "procent_succes": 74,
     "exclusiv": false,
+    "categorie_slug": "babies-kids-toys",
     "scor_final": 20
   },
   {
@@ -1401,9 +1444,10 @@
         "zile_ramase": 98
       }
     ],
-    "folosit_de": 31,
-    "procent_succes": 63,
+    "folosit_de": 23,
+    "procent_succes": 75,
     "exclusiv": false,
+    "categorie_slug": "sports-outdoors",
     "scor_final": 20
   },
   {
@@ -1431,9 +1475,10 @@
         "zile_ramase": 6
       }
     ],
-    "folosit_de": 30,
-    "procent_succes": 63,
+    "folosit_de": 55,
+    "procent_succes": 79,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 20
   },
   {
@@ -1456,6 +1501,7 @@
     "folosit_de": 0,
     "procent_succes": 85,
     "exclusiv": false,
+    "categorie_slug": "pharma",
     "scor_final": 18
   },
   {
@@ -1476,8 +1522,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 84,
+    "procent_succes": 83,
     "exclusiv": false,
+    "categorie_slug": "pet-supplies",
     "scor_final": 17
   },
   {
@@ -1498,8 +1545,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 87,
+    "procent_succes": 75,
     "exclusiv": false,
+    "categorie_slug": "beauty",
     "scor_final": 17
   },
   {
@@ -1520,8 +1568,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 78,
+    "procent_succes": 72,
     "exclusiv": false,
+    "categorie_slug": "books",
     "scor_final": 16
   },
   {
@@ -1542,8 +1591,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 86,
+    "procent_succes": 81,
     "exclusiv": false,
+    "categorie_slug": "electronics-itc",
     "scor_final": 16
   },
   {
@@ -1564,8 +1614,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 75,
+    "procent_succes": 71,
     "exclusiv": false,
+    "categorie_slug": "electronics-itc",
     "scor_final": 15
   },
   {
@@ -1586,8 +1637,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 79,
+    "procent_succes": 73,
     "exclusiv": false,
+    "categorie_slug": "pet-supplies",
     "scor_final": 15
   },
   {
@@ -1608,8 +1660,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 76,
+    "procent_succes": 73,
     "exclusiv": false,
+    "categorie_slug": "electronics-itc",
     "scor_final": 15
   },
   {
@@ -1630,8 +1683,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 67,
+    "procent_succes": 81,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 15
   },
   {
@@ -1652,8 +1706,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 76,
+    "procent_succes": 68,
     "exclusiv": false,
+    "categorie_slug": "jewelry",
     "scor_final": 15
   },
   {
@@ -1674,8 +1729,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 72,
+    "procent_succes": 70,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 15
   },
   {
@@ -1698,6 +1754,7 @@
     "folosit_de": 0,
     "procent_succes": 68,
     "exclusiv": false,
+    "categorie_slug": "health-personal-care",
     "scor_final": 15
   },
   {
@@ -1718,8 +1775,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 72,
+    "procent_succes": 81,
     "exclusiv": false,
+    "categorie_slug": "jewelry",
     "scor_final": 15
   },
   {
@@ -1740,8 +1798,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 76,
+    "procent_succes": 70,
     "exclusiv": false,
+    "categorie_slug": "gifts-flowers",
     "scor_final": 15
   },
   {
@@ -1762,8 +1821,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 70,
+    "procent_succes": 77,
     "exclusiv": false,
+    "categorie_slug": "fashion",
     "scor_final": 15
   },
   {
@@ -1784,8 +1844,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 73,
+    "procent_succes": 79,
     "exclusiv": false,
+    "categorie_slug": "jewelry",
     "scor_final": 15
   },
   {
@@ -1806,8 +1867,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 74,
+    "procent_succes": 79,
     "exclusiv": false,
+    "categorie_slug": "beauty",
     "scor_final": 15
   },
   {
@@ -1828,8 +1890,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 75,
+    "procent_succes": 76,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 15
   },
   {
@@ -1850,8 +1913,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 69,
+    "procent_succes": 67,
     "exclusiv": false,
+    "categorie_slug": "others",
     "scor_final": 15
   },
   {
@@ -1872,8 +1936,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 80,
+    "procent_succes": 71,
     "exclusiv": false,
+    "categorie_slug": "sports-outdoors",
     "scor_final": 15
   },
   {
@@ -1894,8 +1959,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 72,
+    "procent_succes": 81,
     "exclusiv": false,
+    "categorie_slug": "health-personal-care",
     "scor_final": 15
   },
   {
@@ -1916,8 +1982,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 78,
+    "procent_succes": 70,
     "exclusiv": false,
+    "categorie_slug": "jewelry",
     "scor_final": 15
   },
   {
@@ -1938,8 +2005,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 67,
+    "procent_succes": 76,
     "exclusiv": false,
+    "categorie_slug": "health-personal-care",
     "scor_final": 15
   },
   {
@@ -1960,8 +2028,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 73,
+    "procent_succes": 66,
     "exclusiv": false,
+    "categorie_slug": "babies-kids-toys",
     "scor_final": 15
   },
   {
@@ -1982,8 +2051,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 75,
+    "procent_succes": 78,
     "exclusiv": false,
+    "categorie_slug": "babies-kids-toys",
     "scor_final": 15
   },
   {
@@ -2004,8 +2074,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 64,
+    "procent_succes": 65,
     "exclusiv": false,
+    "categorie_slug": "fashion",
     "scor_final": 15
   },
   {
@@ -2026,8 +2097,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 81,
+    "procent_succes": 80,
     "exclusiv": false,
+    "categorie_slug": "automotive",
     "scor_final": 15
   },
   {
@@ -2048,8 +2120,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 73,
+    "procent_succes": 78,
     "exclusiv": false,
+    "categorie_slug": "babies-kids-toys",
     "scor_final": 15
   },
   {
@@ -2070,8 +2143,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 79,
+    "procent_succes": 74,
     "exclusiv": false,
+    "categorie_slug": "babies-kids-toys",
     "scor_final": 15
   },
   {
@@ -2092,8 +2166,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 79,
+    "procent_succes": 76,
     "exclusiv": false,
+    "categorie_slug": "online-mall",
     "scor_final": 15
   },
   {
@@ -2114,8 +2189,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 64,
+    "procent_succes": 77,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 15
   },
   {
@@ -2136,8 +2212,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 72,
+    "procent_succes": 66,
     "exclusiv": false,
+    "categorie_slug": "online-mall",
     "scor_final": 15
   },
   {
@@ -2158,8 +2235,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 75,
+    "procent_succes": 80,
     "exclusiv": false,
+    "categorie_slug": "electronics-itc",
     "scor_final": 15
   },
   {
@@ -2180,8 +2258,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 69,
+    "procent_succes": 81,
     "exclusiv": false,
+    "categorie_slug": "automotive",
     "scor_final": 15
   },
   {
@@ -2202,8 +2281,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 64,
+    "procent_succes": 74,
     "exclusiv": false,
+    "categorie_slug": "beauty",
     "scor_final": 15
   },
   {
@@ -2224,8 +2304,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 73,
+    "procent_succes": 76,
     "exclusiv": false,
+    "categorie_slug": "health-personal-care",
     "scor_final": 15
   },
   {
@@ -2246,8 +2327,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 73,
+    "procent_succes": 81,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 15
   },
   {
@@ -2268,8 +2350,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 65,
+    "procent_succes": 72,
     "exclusiv": false,
+    "categorie_slug": "beauty",
     "scor_final": 15
   },
   {
@@ -2290,8 +2373,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 77,
+    "procent_succes": 69,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 15
   },
   {
@@ -2312,8 +2396,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 73,
+    "procent_succes": 77,
     "exclusiv": false,
+    "categorie_slug": "beauty",
     "scor_final": 15
   },
   {
@@ -2334,8 +2419,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 64,
+    "procent_succes": 81,
     "exclusiv": false,
+    "categorie_slug": "beauty",
     "scor_final": 15
   },
   {
@@ -2356,8 +2442,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 64,
+    "procent_succes": 65,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 15
   },
   {
@@ -2378,8 +2465,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 69,
+    "procent_succes": 68,
     "exclusiv": false,
+    "categorie_slug": "fashion",
     "scor_final": 15
   },
   {
@@ -2402,6 +2490,7 @@
     "folosit_de": 0,
     "procent_succes": 78,
     "exclusiv": false,
+    "categorie_slug": "beauty",
     "scor_final": 15
   },
   {
@@ -2422,8 +2511,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 81,
+    "procent_succes": 68,
     "exclusiv": false,
+    "categorie_slug": "health-personal-care",
     "scor_final": 15
   },
   {
@@ -2444,8 +2534,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 74,
+    "procent_succes": 68,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 15
   },
   {
@@ -2466,8 +2557,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 81,
+    "procent_succes": 67,
     "exclusiv": false,
+    "categorie_slug": "beauty",
     "scor_final": 15
   },
   {
@@ -2488,8 +2580,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 70,
+    "procent_succes": 71,
     "exclusiv": false,
+    "categorie_slug": "jewelry",
     "scor_final": 15
   },
   {
@@ -2510,8 +2603,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 78,
+    "procent_succes": 79,
     "exclusiv": false,
+    "categorie_slug": "fashion",
     "scor_final": 13
   },
   {
@@ -2532,8 +2626,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 86,
+    "procent_succes": 72,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 9
   },
   {
@@ -2554,8 +2649,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 87,
+    "procent_succes": 84,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 7
   },
   {
@@ -2576,8 +2672,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 81,
+    "procent_succes": 78,
     "exclusiv": false,
+    "categorie_slug": "health-personal-care",
     "scor_final": 3
   },
   {
@@ -2598,8 +2695,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 75,
+    "procent_succes": 74,
     "exclusiv": false,
+    "categorie_slug": "beauty",
     "scor_final": 0
   },
   {
@@ -2620,8 +2718,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 70,
+    "procent_succes": 75,
     "exclusiv": false,
+    "categorie_slug": "jewelry",
     "scor_final": 0
   },
   {
@@ -2642,8 +2741,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 72,
+    "procent_succes": 70,
     "exclusiv": false,
+    "categorie_slug": "beauty",
     "scor_final": 0
   },
   {
@@ -2664,8 +2764,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 68,
+    "procent_succes": 70,
     "exclusiv": false,
+    "categorie_slug": "beauty",
     "scor_final": 0
   },
   {
@@ -2686,8 +2787,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 62,
+    "procent_succes": 72,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -2708,8 +2810,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 69,
+    "procent_succes": 68,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -2730,8 +2833,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 72,
+    "procent_succes": 74,
     "exclusiv": false,
+    "categorie_slug": "pet-supplies",
     "scor_final": 0
   },
   {
@@ -2752,8 +2856,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 76,
+    "procent_succes": 63,
     "exclusiv": false,
+    "categorie_slug": "books",
     "scor_final": 0
   },
   {
@@ -2774,8 +2879,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 62,
+    "procent_succes": 68,
     "exclusiv": false,
+    "categorie_slug": "health-personal-care",
     "scor_final": 0
   },
   {
@@ -2796,8 +2902,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 69,
+    "procent_succes": 68,
     "exclusiv": false,
+    "categorie_slug": "fashion",
     "scor_final": 0
   },
   {
@@ -2818,8 +2925,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 62,
+    "procent_succes": 78,
     "exclusiv": false,
+    "categorie_slug": "electronics-itc",
     "scor_final": 0
   },
   {
@@ -2840,8 +2948,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 65,
+    "procent_succes": 78,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -2864,6 +2973,7 @@
     "folosit_de": 0,
     "procent_succes": 76,
     "exclusiv": false,
+    "categorie_slug": "electronics-itc",
     "scor_final": 0
   },
   {
@@ -2884,8 +2994,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 79,
+    "procent_succes": 64,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -2906,8 +3017,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 64,
+    "procent_succes": 68,
     "exclusiv": false,
+    "categorie_slug": "insurance",
     "scor_final": 0
   },
   {
@@ -2928,8 +3040,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 64,
+    "procent_succes": 65,
     "exclusiv": false,
+    "categorie_slug": "gifts-flowers",
     "scor_final": 0
   },
   {
@@ -2952,6 +3065,7 @@
     "folosit_de": 0,
     "procent_succes": 62,
     "exclusiv": false,
+    "categorie_slug": "health-personal-care",
     "scor_final": 0
   },
   {
@@ -2972,8 +3086,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 67,
+    "procent_succes": 72,
     "exclusiv": false,
+    "categorie_slug": "fashion",
     "scor_final": 0
   },
   {
@@ -2996,6 +3111,7 @@
     "folosit_de": 0,
     "procent_succes": 76,
     "exclusiv": false,
+    "categorie_slug": "fashion",
     "scor_final": 0
   },
   {
@@ -3016,8 +3132,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 79,
+    "procent_succes": 75,
     "exclusiv": false,
+    "categorie_slug": "hypermarket-groceries",
     "scor_final": 0
   },
   {
@@ -3038,8 +3155,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 71,
+    "procent_succes": 66,
     "exclusiv": false,
+    "categorie_slug": "health-personal-care",
     "scor_final": 0
   },
   {
@@ -3060,8 +3178,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 73,
+    "procent_succes": 69,
     "exclusiv": false,
+    "categorie_slug": "online-mall",
     "scor_final": 0
   },
   {
@@ -3084,6 +3203,7 @@
     "folosit_de": 0,
     "procent_succes": 75,
     "exclusiv": false,
+    "categorie_slug": "electronics-itc",
     "scor_final": 0
   },
   {
@@ -3104,8 +3224,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 70,
+    "procent_succes": 75,
     "exclusiv": false,
+    "categorie_slug": "babies-kids-toys",
     "scor_final": 0
   },
   {
@@ -3126,8 +3247,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 63,
+    "procent_succes": 66,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -3148,8 +3270,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 71,
+    "procent_succes": 75,
     "exclusiv": false,
+    "categorie_slug": "babies-kids-toys",
     "scor_final": 0
   },
   {
@@ -3170,8 +3293,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 76,
+    "procent_succes": 62,
     "exclusiv": false,
+    "categorie_slug": "online-mall",
     "scor_final": 0
   },
   {
@@ -3192,8 +3316,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 70,
+    "procent_succes": 75,
     "exclusiv": false,
+    "categorie_slug": "hypermarket-groceries",
     "scor_final": 0
   },
   {
@@ -3214,8 +3339,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 69,
+    "procent_succes": 75,
     "exclusiv": false,
+    "categorie_slug": "electronics-itc",
     "scor_final": 0
   },
   {
@@ -3236,8 +3362,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 78,
+    "procent_succes": 65,
     "exclusiv": false,
+    "categorie_slug": "watches",
     "scor_final": 0
   },
   {
@@ -3258,8 +3385,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 76,
+    "procent_succes": 70,
     "exclusiv": false,
+    "categorie_slug": "electronics-itc",
     "scor_final": 0
   },
   {
@@ -3280,8 +3408,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 68,
+    "procent_succes": 63,
     "exclusiv": false,
+    "categorie_slug": "health-personal-care",
     "scor_final": 0
   },
   {
@@ -3302,8 +3431,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 78,
+    "procent_succes": 77,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -3324,8 +3454,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 65,
+    "procent_succes": 77,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -3346,8 +3477,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 74,
+    "procent_succes": 63,
     "exclusiv": false,
+    "categorie_slug": "electronics-itc",
     "scor_final": 0
   },
   {
@@ -3368,8 +3500,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 75,
+    "procent_succes": 73,
     "exclusiv": false,
+    "categorie_slug": "beauty",
     "scor_final": 0
   },
   {
@@ -3390,8 +3523,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 76,
+    "procent_succes": 62,
     "exclusiv": false,
+    "categorie_slug": "electronics-itc",
     "scor_final": 0
   },
   {
@@ -3412,8 +3546,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 73,
+    "procent_succes": 65,
     "exclusiv": false,
+    "categorie_slug": "fashion",
     "scor_final": 0
   },
   {
@@ -3434,8 +3569,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 77,
+    "procent_succes": 65,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -3456,8 +3592,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 78,
+    "procent_succes": 67,
     "exclusiv": false,
+    "categorie_slug": "beauty",
     "scor_final": 0
   },
   {
@@ -3478,8 +3615,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 72,
+    "procent_succes": 79,
     "exclusiv": false,
+    "categorie_slug": "pharma",
     "scor_final": 0
   },
   {
@@ -3500,8 +3638,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 68,
+    "procent_succes": 72,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -3522,8 +3661,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 65,
+    "procent_succes": 67,
     "exclusiv": false,
+    "categorie_slug": "games",
     "scor_final": 0
   },
   {
@@ -3544,8 +3684,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 67,
+    "procent_succes": 71,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -3566,8 +3707,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 63,
+    "procent_succes": 75,
     "exclusiv": false,
+    "categorie_slug": "beauty",
     "scor_final": 0
   },
   {
@@ -3588,8 +3730,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 73,
+    "procent_succes": 79,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -3610,8 +3753,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 68,
+    "procent_succes": 65,
     "exclusiv": false,
+    "categorie_slug": "sports-outdoors",
     "scor_final": 0
   },
   {
@@ -3632,8 +3776,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 73,
+    "procent_succes": 67,
     "exclusiv": false,
+    "categorie_slug": "fashion",
     "scor_final": 0
   },
   {
@@ -3654,8 +3799,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 70,
+    "procent_succes": 66,
     "exclusiv": false,
+    "categorie_slug": "fashion",
     "scor_final": 0
   },
   {
@@ -3676,8 +3822,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 74,
+    "procent_succes": 68,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -3698,8 +3845,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 67,
+    "procent_succes": 74,
     "exclusiv": false,
+    "categorie_slug": "hypermarket-groceries",
     "scor_final": 0
   },
   {
@@ -3720,8 +3868,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 70,
+    "procent_succes": 69,
     "exclusiv": false,
+    "categorie_slug": "health-personal-care",
     "scor_final": 0
   },
   {
@@ -3742,8 +3891,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 65,
+    "procent_succes": 67,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -3764,8 +3914,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 63,
+    "procent_succes": 70,
     "exclusiv": false,
+    "categorie_slug": "hypermarket-groceries",
     "scor_final": 0
   },
   {
@@ -3786,8 +3937,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 66,
+    "procent_succes": 63,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -3808,8 +3960,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 66,
+    "procent_succes": 68,
     "exclusiv": false,
+    "categorie_slug": "automotive",
     "scor_final": 0
   },
   {
@@ -3830,8 +3983,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 70,
+    "procent_succes": 79,
     "exclusiv": false,
+    "categorie_slug": "automotive",
     "scor_final": 0
   },
   {
@@ -3852,8 +4006,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 67,
+    "procent_succes": 74,
     "exclusiv": false,
+    "categorie_slug": "pharma",
     "scor_final": 0
   },
   {
@@ -3874,8 +4029,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 67,
+    "procent_succes": 70,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -3896,8 +4052,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 69,
+    "procent_succes": 73,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -3918,8 +4075,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 79,
+    "procent_succes": 75,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -3942,6 +4100,7 @@
     "folosit_de": 0,
     "procent_succes": 70,
     "exclusiv": false,
+    "categorie_slug": "sports-outdoors",
     "scor_final": 0
   },
   {
@@ -3962,8 +4121,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 77,
+    "procent_succes": 75,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -3984,8 +4144,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 65,
+    "procent_succes": 76,
     "exclusiv": false,
+    "categorie_slug": "hypermarket-groceries",
     "scor_final": 0
   },
   {
@@ -4008,6 +4169,7 @@
     "folosit_de": 0,
     "procent_succes": 78,
     "exclusiv": false,
+    "categorie_slug": "telecom",
     "scor_final": 0
   },
   {
@@ -4028,8 +4190,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 67,
+    "procent_succes": 78,
     "exclusiv": false,
+    "categorie_slug": "gifts-flowers",
     "scor_final": 0
   },
   {
@@ -4050,8 +4213,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 74,
+    "procent_succes": 62,
     "exclusiv": false,
+    "categorie_slug": "books",
     "scor_final": 0
   },
   {
@@ -4072,8 +4236,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 68,
+    "procent_succes": 72,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -4094,8 +4259,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 73,
+    "procent_succes": 62,
     "exclusiv": false,
+    "categorie_slug": "online-mall",
     "scor_final": 0
   },
   {
@@ -4116,8 +4282,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 74,
+    "procent_succes": 63,
     "exclusiv": false,
+    "categorie_slug": "pharma",
     "scor_final": 0
   },
   {
@@ -4138,8 +4305,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 65,
+    "procent_succes": 68,
     "exclusiv": false,
+    "categorie_slug": "fashion",
     "scor_final": 0
   },
   {
@@ -4160,8 +4328,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 71,
+    "procent_succes": 67,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -4182,8 +4351,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 66,
+    "procent_succes": 79,
     "exclusiv": false,
+    "categorie_slug": "electronics-itc",
     "scor_final": 0
   },
   {
@@ -4204,8 +4374,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 66,
+    "procent_succes": 77,
     "exclusiv": false,
+    "categorie_slug": "pharma",
     "scor_final": 0
   },
   {
@@ -4226,8 +4397,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 76,
+    "procent_succes": 64,
     "exclusiv": false,
+    "categorie_slug": "online-mall",
     "scor_final": 0
   },
   {
@@ -4248,8 +4420,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 63,
+    "procent_succes": 76,
     "exclusiv": false,
+    "categorie_slug": "electronics-itc",
     "scor_final": 0
   },
   {
@@ -4270,8 +4443,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 70,
+    "procent_succes": 65,
     "exclusiv": false,
+    "categorie_slug": "fashion",
     "scor_final": 0
   },
   {
@@ -4292,8 +4466,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 75,
+    "procent_succes": 78,
     "exclusiv": false,
+    "categorie_slug": "babies-kids-toys",
     "scor_final": 0
   },
   {
@@ -4314,8 +4489,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 75,
+    "procent_succes": 62,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -4336,8 +4512,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 71,
+    "procent_succes": 78,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -4358,8 +4535,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 64,
+    "procent_succes": 76,
     "exclusiv": false,
+    "categorie_slug": "beauty",
     "scor_final": 0
   },
   {
@@ -4380,8 +4558,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 69,
+    "procent_succes": 79,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -4402,8 +4581,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 75,
+    "procent_succes": 65,
     "exclusiv": false,
+    "categorie_slug": "automotive",
     "scor_final": 0
   },
   {
@@ -4424,8 +4604,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 68,
+    "procent_succes": 66,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -4446,8 +4627,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 63,
+    "procent_succes": 70,
     "exclusiv": false,
+    "categorie_slug": "health-personal-care",
     "scor_final": 0
   },
   {
@@ -4468,8 +4650,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 63,
+    "procent_succes": 75,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -4490,8 +4673,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 69,
+    "procent_succes": 78,
     "exclusiv": false,
+    "categorie_slug": "beauty",
     "scor_final": 0
   },
   {
@@ -4512,8 +4696,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 77,
+    "procent_succes": 75,
     "exclusiv": false,
+    "categorie_slug": "gifts-flowers",
     "scor_final": 0
   },
   {
@@ -4534,8 +4719,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 69,
+    "procent_succes": 67,
     "exclusiv": false,
+    "categorie_slug": "fashion",
     "scor_final": 0
   },
   {
@@ -4556,8 +4742,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 73,
+    "procent_succes": 78,
     "exclusiv": false,
+    "categorie_slug": "beauty",
     "scor_final": 0
   },
   {
@@ -4580,6 +4767,7 @@
     "folosit_de": 0,
     "procent_succes": 79,
     "exclusiv": false,
+    "categorie_slug": "jewelry",
     "scor_final": 0
   },
   {
@@ -4600,8 +4788,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 66,
+    "procent_succes": 76,
     "exclusiv": false,
+    "categorie_slug": "telecom",
     "scor_final": 0
   },
   {
@@ -4622,8 +4811,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 73,
+    "procent_succes": 75,
     "exclusiv": false,
+    "categorie_slug": "health-personal-care",
     "scor_final": 0
   },
   {
@@ -4644,8 +4834,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 69,
+    "procent_succes": 78,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -4666,8 +4857,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 77,
+    "procent_succes": 64,
     "exclusiv": false,
+    "categorie_slug": "health-personal-care",
     "scor_final": 0
   },
   {
@@ -4688,8 +4880,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 69,
+    "procent_succes": 74,
     "exclusiv": false,
+    "categorie_slug": "beauty",
     "scor_final": 0
   },
   {
@@ -4710,8 +4903,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 65,
+    "procent_succes": 73,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -4732,8 +4926,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 69,
+    "procent_succes": 66,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -4754,8 +4949,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 63,
+    "procent_succes": 65,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -4776,8 +4972,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 62,
+    "procent_succes": 72,
     "exclusiv": false,
+    "categorie_slug": "babies-kids-toys",
     "scor_final": 0
   },
   {
@@ -4798,8 +4995,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 70,
+    "procent_succes": 79,
     "exclusiv": false,
+    "categorie_slug": "babies-kids-toys",
     "scor_final": 0
   },
   {
@@ -4820,8 +5018,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 79,
+    "procent_succes": 68,
     "exclusiv": false,
+    "categorie_slug": "telecom",
     "scor_final": 0
   },
   {
@@ -4842,8 +5041,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 76,
+    "procent_succes": 73,
     "exclusiv": false,
+    "categorie_slug": "hypermarket-groceries",
     "scor_final": 0
   },
   {
@@ -4864,8 +5064,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 69,
+    "procent_succes": 73,
     "exclusiv": false,
+    "categorie_slug": "fashion",
     "scor_final": 0
   },
   {
@@ -4888,6 +5089,7 @@
     "folosit_de": 0,
     "procent_succes": 66,
     "exclusiv": false,
+    "categorie_slug": "electronics-itc",
     "scor_final": 0
   },
   {
@@ -4908,8 +5110,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 62,
+    "procent_succes": 63,
     "exclusiv": false,
+    "categorie_slug": "electronics-itc",
     "scor_final": 0
   },
   {
@@ -4930,8 +5133,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 67,
+    "procent_succes": 78,
     "exclusiv": false,
+    "categorie_slug": "pet-supplies",
     "scor_final": 0
   },
   {
@@ -4952,8 +5156,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 70,
+    "procent_succes": 79,
     "exclusiv": false,
+    "categorie_slug": "beauty",
     "scor_final": 0
   },
   {
@@ -4974,8 +5179,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 64,
+    "procent_succes": 73,
     "exclusiv": false,
+    "categorie_slug": "online-mall",
     "scor_final": 0
   },
   {
@@ -4996,8 +5202,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 65,
+    "procent_succes": 64,
     "exclusiv": false,
+    "categorie_slug": "jewelry",
     "scor_final": 0
   },
   {
@@ -5018,8 +5225,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 76,
+    "procent_succes": 72,
     "exclusiv": false,
+    "categorie_slug": "hypermarket-groceries",
     "scor_final": 0
   },
   {
@@ -5040,8 +5248,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 66,
+    "procent_succes": 76,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -5062,8 +5271,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 77,
+    "procent_succes": 79,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -5084,8 +5294,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 66,
+    "procent_succes": 64,
     "exclusiv": false,
+    "categorie_slug": "pet-supplies",
     "scor_final": 0
   },
   {
@@ -5106,8 +5317,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 63,
+    "procent_succes": 75,
     "exclusiv": false,
+    "categorie_slug": "pharma",
     "scor_final": 0
   },
   {
@@ -5128,8 +5340,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 76,
+    "procent_succes": 66,
     "exclusiv": false,
+    "categorie_slug": "automotive",
     "scor_final": 0
   },
   {
@@ -5150,8 +5363,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 65,
+    "procent_succes": 67,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -5172,8 +5386,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 72,
+    "procent_succes": 69,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -5194,8 +5409,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 69,
+    "procent_succes": 71,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -5216,8 +5432,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 74,
+    "procent_succes": 62,
     "exclusiv": false,
+    "categorie_slug": "beauty",
     "scor_final": 0
   },
   {
@@ -5238,8 +5455,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 63,
+    "procent_succes": 66,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -5260,8 +5478,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 76,
+    "procent_succes": 78,
     "exclusiv": false,
+    "categorie_slug": "health-personal-care",
     "scor_final": 0
   },
   {
@@ -5282,8 +5501,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 64,
+    "procent_succes": 78,
     "exclusiv": false,
+    "categorie_slug": "fashion",
     "scor_final": 0
   },
   {
@@ -5304,8 +5524,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 79,
+    "procent_succes": 77,
     "exclusiv": false,
+    "categorie_slug": "hypermarket-groceries",
     "scor_final": 0
   },
   {
@@ -5326,8 +5547,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 62,
+    "procent_succes": 78,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -5348,8 +5570,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 75,
+    "procent_succes": 66,
     "exclusiv": false,
+    "categorie_slug": "software",
     "scor_final": 0
   },
   {
@@ -5370,8 +5593,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 74,
+    "procent_succes": 65,
     "exclusiv": false,
+    "categorie_slug": "babies-kids-toys",
     "scor_final": 0
   },
   {
@@ -5392,8 +5616,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 62,
+    "procent_succes": 74,
     "exclusiv": false,
+    "categorie_slug": "fashion",
     "scor_final": 0
   },
   {
@@ -5414,8 +5639,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 79,
+    "procent_succes": 75,
     "exclusiv": false,
+    "categorie_slug": "electronics-itc",
     "scor_final": 0
   },
   {
@@ -5436,8 +5662,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 78,
+    "procent_succes": 75,
     "exclusiv": false,
+    "categorie_slug": "beauty",
     "scor_final": 0
   },
   {
@@ -5458,8 +5685,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 65,
+    "procent_succes": 67,
     "exclusiv": false,
+    "categorie_slug": "gifts-flowers",
     "scor_final": 0
   },
   {
@@ -5480,8 +5708,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 67,
+    "procent_succes": 66,
     "exclusiv": false,
+    "categorie_slug": "home-garden",
     "scor_final": 0
   },
   {
@@ -5502,8 +5731,9 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 72,
+    "procent_succes": 78,
     "exclusiv": false,
+    "categorie_slug": "fashion",
     "scor_final": 0
   }
 ]
