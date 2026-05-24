@@ -73,6 +73,7 @@ export default function Home() {
   const [cautare, setCautare] = useState("");
   const [coduriReveal, setCoduriReveal] = useState<Set<string>>(new Set());
   const [copiat, setCopiat] = useState<string | null>(null);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     fetch("/output.json").then((r) => r.json()).then(setMagazine);
@@ -105,7 +106,7 @@ export default function Home() {
 
       {/* HEADER */}
       <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-4">
+        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-3">
           <a href="/" className="flex items-center gap-1.5 shrink-0">
             <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
             <span className="font-black text-gray-900 text-xl">Cupon</span>
@@ -120,7 +121,7 @@ export default function Home() {
               type="text"
               placeholder="Answear, Farmec, Noriel..."
               value={cautare}
-              onChange={(e) => setCautare(e.target.value)}
+              onChange={(e) => { setCautare(e.target.value); setMenuOpen(false); }}
               className="w-full border border-gray-300 rounded-full pl-9 pr-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-orange-400"
             />
           </div>
@@ -154,7 +155,67 @@ export default function Home() {
               </div>
             </div>
           </nav>
+
+          {/* Hamburger button — mobile only */}
+          <button
+            onClick={() => setMenuOpen((o) => !o)}
+            className="md:hidden shrink-0 p-2 rounded-xl hover:bg-gray-100 transition-colors text-gray-700"
+            aria-label="Meniu"
+          >
+            {menuOpen ? (
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            ) : (
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            )}
+          </button>
         </div>
+
+        {/* Mobile menu panel */}
+        {menuOpen && (
+          <div className="md:hidden border-t border-gray-100 bg-white">
+            <div className="max-w-7xl mx-auto px-4 py-4 space-y-5">
+
+              {/* Nav links */}
+              <nav className="space-y-1">
+                {[
+                  { href: "/#promotii", label: "🔥 Promoții active" },
+                  { href: "/blog", label: "📝 Blog" },
+                  { href: "/categorii", label: "📂 Toate categoriile" },
+                  { href: "/despre-noi", label: "ℹ️ Despre noi" },
+                ].map((l) => (
+                  <a key={l.href} href={l.href}
+                    onClick={() => setMenuOpen(false)}
+                    className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-semibold text-gray-700 hover:bg-orange-50 hover:text-orange-600 transition-colors">
+                    {l.label}
+                  </a>
+                ))}
+              </nav>
+
+              {/* Category grid */}
+              <div>
+                <p className="text-xs font-bold text-gray-400 uppercase tracking-wider px-1 mb-3">Categorii populare</p>
+                <div className="grid grid-cols-4 gap-2">
+                  {CATEGORII.slice(0, 8).map((c) => (
+                    <a key={c.slug} href={`/categorii/${c.slug}`}
+                      onClick={() => setMenuOpen(false)}
+                      className={`flex flex-col items-center gap-1 p-2 rounded-xl border ${c.bg} ${c.border} hover:border-orange-300 transition-colors`}>
+                      <span className="text-xl">{c.emoji}</span>
+                      <span className="text-xs font-semibold text-gray-700 text-center leading-tight">{c.label}</span>
+                    </a>
+                  ))}
+                </div>
+                <a href="/categorii" onClick={() => setMenuOpen(false)}
+                  className="block text-center text-xs font-bold text-orange-500 mt-3 hover:text-orange-600">
+                  Vezi toate categoriile →
+                </a>
+              </div>
+            </div>
+          </div>
+        )}
       </header>
 
       {/* HERO */}
