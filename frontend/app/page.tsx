@@ -68,15 +68,28 @@ function numeAfisat(magazin: string): string {
     .split(" ").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
 }
 
+interface BlogPost {
+  slug: string;
+  title: string;
+  date: string;
+  excerpt: string;
+  category: string;
+  cover: string;
+}
+
 export default function Home() {
   const [magazine, setMagazine] = useState<Magazin[]>([]);
+  const [blogPosts, setBlogPosts] = useState<BlogPost[]>([]);
+  const [loading, setLoading] = useState(true);
   const [cautare, setCautare] = useState("");
   const [coduriReveal, setCoduriReveal] = useState<Set<string>>(new Set());
   const [copiat, setCopiat] = useState<string | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [storeLimit, setStoreLimit] = useState(12);
 
   useEffect(() => {
-    fetch("/output.json").then((r) => r.json()).then(setMagazine);
+    fetch("/output.json").then((r) => r.json()).then((data) => { setMagazine(data); setLoading(false); });
+    fetch("/blog-posts.json").then((r) => r.json()).then((posts: BlogPost[]) => setBlogPosts(posts.slice(0, 3))).catch(() => {});
   }, []);
 
   const filtrate = magazine.filter((m) =>
@@ -85,7 +98,7 @@ export default function Home() {
 
   const expiraAzi = filtrate.filter((m) => m.are_promotie && m.zile_ramase <= 1);
   const cuPromotii = filtrate.filter((m) => m.are_promotie);
-  const faraPromotii = filtrate.filter((m) => !m.are_promotie).slice(0, 60);
+  const faraPromotii = filtrate.filter((m) => !m.are_promotie);
 
   const promoPerCateg = magazine.reduce((acc, m) => {
     if (m.are_promotie && m.categorie_slug) {
@@ -279,8 +292,18 @@ export default function Home() {
 
       <div className="max-w-7xl mx-auto px-4 py-8">
 
+        {/* SKELETON LOADING */}
+        {loading && (
+          <section className="mb-10">
+            <div className="h-7 w-48 bg-gray-200 rounded-lg animate-pulse mb-5" />
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+              {Array(8).fill(0).map((_, i) => <SkeletonCard key={i} />)}
+            </div>
+          </section>
+        )}
+
         {/* EXPIRA AZI */}
-        {expiraAzi.length > 0 && (
+        {!loading && expiraAzi.length > 0 && (
           <section className="mb-8">
             <div className="flex items-center gap-3 mb-4">
               <span className="bg-red-600 text-white text-xs font-bold px-2.5 py-0.5 rounded-full animate-pulse">EXPIRĂ AZI</span>
@@ -296,7 +319,7 @@ export default function Home() {
         )}
 
         {/* PROMOTII ACTIVE */}
-        {cuPromotii.length > 0 && (
+        {!loading && cuPromotii.length > 0 && (
           <section id="promotii" className="mb-10">
             <div className="flex items-center gap-3 mb-5">
               <span className="bg-red-500 text-white text-xs font-bold px-2.5 py-0.5 rounded-full">LIVE</span>
@@ -312,20 +335,74 @@ export default function Home() {
         )}
 
         {/* MAGAZINE PARTENERE */}
-        {faraPromotii.length > 0 && (
+        {!loading && faraPromotii.length > 0 && (
           <section id="magazine">
             <div className="flex items-center gap-3 mb-5">
               <h2 className="text-xl font-black text-gray-900">Magazine Partenere</h2>
               <span className="text-sm text-gray-400">{magazine.length} total</span>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-              {faraPromotii.map((m) => (
+              {faraPromotii.slice(0, storeLimit).map((m) => (
                 <Card key={m.magazin} m={m} revealed={coduriReveal.has(m.magazin)} copiat={copiat === m.magazin} onCopiere={copiazaCod} />
               ))}
             </div>
+            {faraPromotii.length > storeLimit && (
+              <div className="text-center mt-8">
+                <button
+                  onClick={() => setStoreLimit((l) => l + 24)}
+                  className="bg-white border-2 border-gray-200 hover:border-orange-400 text-gray-600 hover:text-orange-500 font-bold px-8 py-3 rounded-2xl text-sm transition-all hover:shadow-md"
+                >
+                  Încarcă mai multe ({faraPromotii.length - storeLimit} magazine rămase)
+                </button>
+              </div>
+            )}
           </section>
         )}
       </div>
+
+      {/* BLOG PREVIEW */}
+      {blogPosts.length > 0 && (
+        <div className="bg-white border-t border-gray-100 py-12 px-4">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex items-center justify-between mb-7">
+              <div>
+                <h2 className="text-xl font-black text-gray-900">Din blog</h2>
+                <p className="text-sm text-gray-400 mt-0.5">Sfaturi și ghiduri despre reduceri online</p>
+              </div>
+              <a href="/blog" className="text-sm font-bold text-orange-500 hover:text-orange-600 transition-colors flex items-center gap-1">
+                Toate articolele
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {blogPosts.map((post) => (
+                <a key={post.slug} href={`/blog/${post.slug}`}
+                  className="group bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 overflow-hidden flex flex-col">
+                  <div className="overflow-hidden h-44 bg-gray-100">
+                    <img src={post.cover} alt={post.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                  </div>
+                  <div className="p-5 flex-1 flex flex-col">
+                    <span className="text-xs font-bold text-orange-500 uppercase tracking-wide">{post.category}</span>
+                    <h3 className="font-black text-gray-900 text-sm mt-1.5 mb-2 line-clamp-2 group-hover:text-orange-500 transition-colors leading-snug">
+                      {post.title}
+                    </h3>
+                    <p className="text-xs text-gray-500 line-clamp-2 flex-1">{post.excerpt}</p>
+                    <div className="mt-3 text-xs font-bold text-orange-500 flex items-center gap-1">
+                      Citește articolul
+                      <svg className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* NEWSLETTER */}
       <div className="relative bg-gradient-to-r from-orange-500 to-red-500 py-14 px-4 mt-12 overflow-hidden">
@@ -574,6 +651,25 @@ function Card({ m, revealed, copiat, onCopiere }: {
             Vizitează magazinul
           </a>
         )}
+      </div>
+    </div>
+  );
+}
+
+function SkeletonCard() {
+  return (
+    <div className="bg-white rounded-2xl border border-gray-200 animate-pulse overflow-hidden">
+      <div className="flex flex-col items-center pt-5 pb-3 px-4">
+        <div className="w-20 h-20 rounded-2xl bg-gray-200 mb-3" />
+        <div className="h-4 w-28 bg-gray-200 rounded mb-1.5" />
+        <div className="h-3 w-16 bg-gray-100 rounded" />
+      </div>
+      <div className="px-4 pb-3 space-y-2">
+        <div className="h-3 w-full bg-gray-100 rounded" />
+        <div className="h-3 w-3/4 bg-gray-100 rounded mx-auto" />
+      </div>
+      <div className="px-4 pb-5">
+        <div className="h-10 w-full bg-gray-200 rounded-xl" />
       </div>
     </div>
   );
