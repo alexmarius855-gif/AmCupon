@@ -387,14 +387,36 @@ function Card({ m, revealed, copiat, onCopiere }: {
 
 function NewsletterForm() {
   const [email, setEmail] = useState("");
-  const [status, setStatus] = useState<"idle" | "ok" | "err">("idle");
+  const [status, setStatus] = useState<"idle" | "loading" | "ok" | "err">("idle");
 
-  function trimite(e: React.FormEvent) {
+  async function trimite(e: React.FormEvent) {
     e.preventDefault();
     if (!email.includes("@")) { setStatus("err"); return; }
-    // TODO: conecteaza la Brevo API
-    setStatus("ok");
-    setEmail("");
+    setStatus("loading");
+    try {
+      const res = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+      if (res.ok) {
+        setStatus("ok");
+        setEmail("");
+      } else {
+        setStatus("err");
+      }
+    } catch {
+      setStatus("err");
+    }
+  }
+
+  if (status === "ok") {
+    return (
+      <div className="bg-white/20 rounded-xl px-6 py-4 text-white text-center">
+        <p className="font-bold text-lg">Mulțumim!</p>
+        <p className="text-sm text-orange-100 mt-1">Te-ai abonat cu succes. Vei primi ofertele zilei pe email.</p>
+      </div>
+    );
   }
 
   return (
@@ -404,15 +426,21 @@ function NewsletterForm() {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         placeholder="adresa@email.ro"
-        className="flex-1 px-4 py-3 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-white"
+        disabled={status === "loading"}
+        className="flex-1 px-4 py-3 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-white disabled:opacity-60"
       />
       <button
         type="submit"
-        className="bg-gray-900 hover:bg-gray-800 text-white font-bold px-6 py-3 rounded-xl text-sm transition-colors whitespace-nowrap"
+        disabled={status === "loading"}
+        className="bg-gray-900 hover:bg-gray-800 disabled:opacity-60 text-white font-bold px-6 py-3 rounded-xl text-sm transition-colors whitespace-nowrap"
       >
-        {status === "ok" ? "✓ Abonat!" : "Abonează-te"}
+        {status === "loading" ? "Se trimite..." : "Abonează-te"}
       </button>
-      {status === "err" && <p className="text-white text-xs mt-1">Introdu un email valid.</p>}
+      {status === "err" && (
+        <p className="text-white text-xs mt-1 sm:col-span-2">
+          Ceva n-a mers. Verifică emailul și încearcă din nou.
+        </p>
+      )}
     </form>
   );
 }
