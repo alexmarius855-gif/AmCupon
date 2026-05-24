@@ -12,21 +12,21 @@
     "trend": 0.8065000000000001,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 2,
+    "zile_ramase": 1,
     "promotii": [
       {
         "nume": "Bright Friday Happy Days - 30% Reducere In Cos",
         "descriere": "Condiții promoție\n30% REDUCERE ÎN COȘ pentru comenzile de minim 3 produse achiziționate în perioada 22 - 25 Mai 2026, în limita stocului disponibil + Transport GRATUIT în Easybox de la 140 lei.\n\nSunt excluse din această ofertă produsele Noi, produsele care fac obiectul altor Promoții, Cutiile și Seturile Cadou. Reducerea nu se cumulează cu alte discounturi active.\n\nOfertă valabilă Exclusiv Online.",
         "cod_cupon": "",
         "landing_page": "https://www.farmec.ro/promo/weekend-30-reducere",
-        "zile_ramase": 2
+        "zile_ramase": 1
       },
       {
         "nume": " INTRĂ ACUM ÎN BeautyCLUB GEROVITAL ȘI POȚI CÂȘTIGA SUPER PREMIILE VERII, DESTINATE EXCLUSIV MEMBRILOR.",
         "descriere": "ACTIVEAZĂ ȘANSA TA LA O VARĂ PREMIUM ÎN TREI PAȘI SIMPLI:\n♥  Intră în BeautyCLUB Gerovital.\n\n♥  Achiziționează produse de minimum 99 lei pe farmec.ro sau din magazinele Gerovital în perioada 17 aprilie - 25 mai 2026.\n\n♥  Înscrie-te în cursa pentru o croazieră mediteraneană pentru două persoane și alte premii fabuloase.\n",
         "cod_cupon": "",
         "landing_page": "https://www.farmec.ro/tombola-fidelizare-gerovital",
-        "zile_ramase": 2
+        "zile_ramase": 1
       }
     ],
     "scor_final": 139.5
@@ -44,14 +44,14 @@
     "trend": 0.6286,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 8,
+    "zile_ramase": 7,
     "promotii": [
       {
         "nume": "30% reducere la TOȚI ochelarii de soare, online și în showroom-uri",
         "descriere": "Bună,\n\nProfită acum de 30% reducere la TOȚI ochelarii de soare, atât online, cât și în showroom-urile noastre.\n\nFolosește codul SUN30 la finalizarea comenzii și bucură-te de stil și protecție la un preț special.\n\nSpor la cumpărături!",
         "cod_cupon": "SUN30",
         "landing_page": "https://www.videt.ro/ochelari-de-soare.html",
-        "zile_ramase": 8
+        "zile_ramase": 7
       }
     ],
     "scor_final": 139.4
@@ -69,14 +69,14 @@
     "trend": 0.08449999999999999,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 252,
+    "zile_ramase": 251,
     "promotii": [
       {
         "nume": "Transport gratuit la orice comanda!",
         "descriere": "Transport gratuit la orice comanda si discounturi zilnice si dinamica pe site.  Nu este necesar cupon, transportul e gratuit automat si discounturile aplicate deja la pret produs pe site direct.  Va multumim.",
         "cod_cupon": "",
         "landing_page": "https://manukashop.ro",
-        "zile_ramase": 252
+        "zile_ramase": 251
       }
     ],
     "scor_final": 138.7
@@ -94,28 +94,28 @@
     "trend": 0.0882,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 100,
+    "zile_ramase": 99,
     "promotii": [
       {
         "nume": "Livrare Gratuita la comenzi de peste 200 lei",
         "descriere": "E timpul pentru un upgrade! Comanda accesoriile tale preferate de pe Moft Collection si, daca depasesti pragul de 200 lei, noi iti platim transportul!\n\nNu uita: la fiecare comanda primesti setul complet de protectie (folie de sticla + protectie camera) CADOU.\n👉Transport Gratuit (>200 lei)\n👉Cadouri incluse la orice comanda\n👉Huse, curele si accesorii de top.\nComanda acum si economiseste!",
         "cod_cupon": "",
         "landing_page": "https://moftcollection.ro/",
-        "zile_ramase": 222
+        "zile_ramase": 221
       },
       {
         "nume": "Folie de sticla si protectie camera CADOU la fiecare comanda",
         "descriere": "Acum este momentul perfect sa iti accesorizezi telefonul si sa beneficiezi de un pachet de protectie premium fara niciun cost suplimentar. La fiecare comanda plasata pe site-ul MoftCollection.ro, primesti cadou atat o folie de sticla securizata pentru ecran, cat si o protectie dedicata pentru camera foto. Ne dorim sa te bucuri de dispozitivul tau fara grija zgarieturilor sau a loviturilor accidentale, oferindu-ti aceste accesorii esentiale direct in colet.\n\nFolia de sticla asigura o claritate maxima si o rezistenta sporita la impact, in timp ce protectia pentru camera pastreaza lentilele intacte pentru ca tu sa poti face fotografii impecabile de fiecare data. Procesul este extrem de simplu deoarece nu trebuie sa adaugi nimic suplimentar in cos. Echipa noastra va include automat pachetul cadou. Profita de aceasta oferta limitata si asigura-i telefonului tau siguranta pe care o merita, economisind in acelasi timp bani si efort. Grabeste-te, promotia este valabila doar in limita stocului disponibil!",
         "cod_cupon": "",
         "landing_page": "https://moftcollection.ro/",
-        "zile_ramase": 100
+        "zile_ramase": 99
       },
       {
         "nume": "Pana la -75% la huse silicon Iphone + CADOU la fiecare comanda",
         "descriere": "Pana la -75% la huse silicon Iphone + CADOU la fiecare comanda. Gasesti modele de huse din silicon pentru Iphone precum: 8, 8 PLUS, 16, 16E, 16 PLUS, 16 PRO, 16 PRO MAX, 17, 17 AIR, 17 PRO, 17 PRO MAX,12 PRO MAX, 13, 13 PRO, 13 MINI, 13 PRO MAX,14 PRO, 14 PRO MAX, 14 PLUS 15, 15 PRO, 15 PLUS si multe altele. ",
         "cod_cupon": "",
         "landing_page": "https://moftcollection.ro/collections/oferta-limitata",
-        "zile_ramase": 100
+        "zile_ramase": 99
       }
     ],
     "scor_final": 138.7
@@ -133,21 +133,21 @@
     "trend": 1.2,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 8,
+    "zile_ramase": 7,
     "promotii": [
       {
         "nume": "Black Friday de primavara cu reduceri de pana la -55% la mobila",
         "descriere": "A inceput Black Friday de primavara la Expomob, cu reduceri de pana la -55% la mobila living, mobila dormitor, mobila bucatarie, mobila pentru camera copilului, mobila terasa si multe altele. Promotie valabila pana pe 31.05.2026!",
         "cod_cupon": "",
         "landing_page": "https://www.expomob.ro/promotii-expomob",
-        "zile_ramase": 8
+        "zile_ramase": 7
       },
       {
         "nume": "Reduceri de pana la -70% la Outlet Expomob",
         "descriere": "Este momentul perfect sa iti transformi locuinta intr-un spatiu modern si primitor, profitand de preturile de Outlet cu reduceri de pana la -70% la mobila. La Expomob, punem pret pe traditia romaneasca si pe calitatea oferita de peste 30 de ani de experienta, motiv pentru care iti punem la dispozitie piese de mobilier variate, de la canapele confortabile si dormitoare relaxante, pana la seturi de bucatarie si decoratiuni chic.\n\nNu lasa timpul sa treaca, deoarece stocurile sunt limitate si cele mai bune oferte dispar primele! Poti alege dintr-o gama larga de produse cu livrare ultra-rapida in doar 48 de ore oriunde in Romania, astfel incat sa te bucuri de noua ta mobila. \n\nViziteaza acum sectiunea de Outlet pe expomob.ro si alege calitatea fabricata in Romania la cele mai mici preturi din an!",
         "cod_cupon": "",
         "landing_page": "https://www.expomob.ro/outlet-mobila",
-        "zile_ramase": 161
+        "zile_ramase": 160
       }
     ],
     "scor_final": 138.2
@@ -165,14 +165,14 @@
     "trend": 0.0217,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 1683,
+    "zile_ramase": 1682,
     "promotii": [
       {
         "nume": "Profita acum de reduceri intre 5% si 15% la echipamente si consumabile!",
         "descriere": "Echipamentele – imprimante de etichete 🖨️, cititoare de coduri de bare 📡, aplicatoare 🔧 și accesorii – vor avea prețuri speciale pentru cei care vor să își modernizeze infrastructura la un cost redus.",
         "cod_cupon": "",
         "landing_page": "https://www.labelshop.ro/promotii",
-        "zile_ramase": 1683
+        "zile_ramase": 1682
       }
     ],
     "scor_final": 129.4
@@ -190,14 +190,14 @@
     "trend": 1.0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 1019,
+    "zile_ramase": 1018,
     "promotii": [
       {
         "nume": "Sale",
         "descriere": "",
         "cod_cupon": "",
         "landing_page": "https://www.sneakerit.ro/sale",
-        "zile_ramase": 1019
+        "zile_ramase": 1018
       }
     ],
     "scor_final": 127.4
@@ -215,14 +215,14 @@
     "trend": 0.4583,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 7,
+    "zile_ramase": 6,
     "promotii": [
       {
         "nume": "Gratar WEBER Gratuit",
         "descriere": "Comanda o sursa de caldura in valoare de 3700 lei si primesti cadou un gratar Weber",
         "cod_cupon": "",
         "landing_page": "https://www.kamin.ro/blog/kamin-ofera-cadou-un-gratar-weber-la-comanda-unei-surse-de-caldura-minim-3700-lei",
-        "zile_ramase": 7
+        "zile_ramase": 6
       }
     ],
     "scor_final": 126.9
@@ -410,14 +410,14 @@
     "trend": 0.8,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 8,
+    "zile_ramase": 7,
     "promotii": [
       {
         "nume": "Spring Deals cu până la -55% la unelte sezoniere pentru curte și grădină",
         "descriere": "Este momentul ideal să-ți cumperi sculele și uneltele care să-ți facă munca din curte și grădină mai ușoară, deoarece pe atomico.ro sunt reduceri de până la -55% la uneltele sezoniere.",
         "cod_cupon": "",
         "landing_page": "https://www.atomico.ro/collections/unelte-sezoniere",
-        "zile_ramase": 8
+        "zile_ramase": 7
       }
     ],
     "scor_final": 124.3
@@ -452,14 +452,14 @@
     "trend": 0.24350000000000002,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 222,
+    "zile_ramase": 221,
     "promotii": [
       {
         "nume": "Livrare Gratuita la comenzi de peste 350 lei",
         "descriere": "Ai nevoie de consumabile pentru aspiratorul tău? Comandă de pe paa-home.ro și beneficiezi de Transport Gratuit la toate comenzile de peste 350 lei!\n\nAvem în stoc accesorii compatibile pentru cele mai populare branduri:\n👉Roboți: Roborock (S8, S7, S5), Xiaomi, Dreame, Viomi.\n👉Verticale: Dyson, Rowenta, Jimmy, Tineco.\n👉Purificatoare și umidificatoare: Filtre dedicate pentru aer curat.\n\nProfită de livrarea rapidă în 24-48h și asigură-te că aparatele tale funcționează ca noi!",
         "cod_cupon": "",
         "landing_page": "https://paa-home.ro/",
-        "zile_ramase": 222
+        "zile_ramase": 221
       }
     ],
     "scor_final": 123.3
@@ -477,63 +477,17 @@
     "trend": 0.6556000000000001,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 9,
+    "zile_ramase": 8,
     "promotii": [
       {
         "nume": "Happy Days Sale BabyNeeds.ro",
         "descriere": "Happy Days Sale vine cu reduceri de pana la 63% la mii de produse pentru micutul tau! Gasesti articole la pret redus din categoriile Carucioare copii, Scaune auto copii, Genti plimbare, Accesorii plimbare, Marsupii si port bebe alaturi de Saci de iarna.",
         "cod_cupon": "",
         "landing_page": "https://www.babyneeds.ro/lp/happy-days-sale",
-        "zile_ramase": 9
+        "zile_ramase": 8
       }
     ],
     "scor_final": 123.1
-  },
-  {
-    "magazin": "noriel.ro",
-    "url": "https://businessleague.2performant.com/affiliate/program/noriel-ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bc92f1bf2&redirect_to=https%3A%2F%2Fbusinessleague.2performant.com%2Faffiliate%2Fprogram%2Fnoriel-ro",
-    "categorie": "Babies Kids & Toys",
-    "comision": "7.00%",
-    "scor_afiliere": 72.3,
-    "prioritate": "B - Bun de testat",
-    "canal_recomandat": "Google Ads",
-    "sales_number": 19883,
-    "trend": 0.2256,
-    "are_promotie": true,
-    "cod_cupon": true,
-    "zile_ramase": 1,
-    "promotii": [
-      {
-        "nume": "50 lei Voucher Cadou la comenzile de minimum 249 de lei | 25.05 - 02.06.2026",
-        "descriere": "Te asteptam pe Noriel.ro sa alegi cele mai tari jucarii si jocuri! 🧸🧩 Foloseste codul NORIEL50 in perioada 25.05 - 02.06.2026 si ai 50 de lei DISCOUNT 💸 la cumparaturi de minimum 249 de lei pentru produsele din categoria jucarii, jocuri si carti 📚🤩 >> https://noriel.ro/\nExceptie produsele aflate in alte promotii, in stoc furnizor si seturile Pokémon TCG. ",
-        "cod_cupon": "NORIEL50",
-        "landing_page": "https://noriel.ro/",
-        "zile_ramase": 10
-      },
-      {
-        "nume": "Castiga premii de poveste cu Disney",
-        "descriere": "❄️✨ Intra in lumea magica Disney! Cumpara 2 papusi Disney Princess sau Disney Frozen, inscrie bonul pe noriel.ro si poti castiga: 🏰 o excursie de poveste la castelele din Franta sau 🎁 unul dintre cele 3 seturi de joaca Disney Frozen. Transforma fiecare moment de joaca intr-o aventura magica! 💙 >> https://noriel.ro/blog/concurs-disney-frozen-si-princess ",
-        "cod_cupon": "",
-        "landing_page": "https://noriel.ro/blog/concurs-disney-frozen-si-princess",
-        "zile_ramase": 9
-      },
-      {
-        "nume": "20% Reducere la jucarii si jocuri | Cod: KIDS20 |18-24.05.2026",
-        "descriere": "Lumea cu imaginatie aduce vesti minunate! Aplica in cosul de cumparaturi codul KIDS20 si ai 20% Reducere la jucarii si jocuri. ❤️🧸Promotia este valabila exclusiv online, in perioada 18-24 Mai, in limita stocului disponibil. Reducerea nu se aplica produselor care sunt in stoc furnizor, Pokémon TCG  si nu se cumuleaza cu alte promotii.",
-        "cod_cupon": "KIDS20 ",
-        "landing_page": "https://noriel.ro/",
-        "zile_ramase": 1
-      },
-      {
-        "nume": "Super Oferte - Reduceri de pana la 50% | 18–24.05.2026",
-        "descriere": "Super oferte te asteapta pe noriel.ro! 🎉\nAm pregatit reduceri de pana la 50% la o multime de produse. \n✨ Descopera acum ofertele speciale pe noriel.ro >> https://noriel.ro/\nPromotia este valabila in perioada 18–24.05.2026, in limita stocului disponibil.",
-        "cod_cupon": "",
-        "landing_page": "https://noriel.ro/promotii",
-        "zile_ramase": 1
-      }
-    ],
-    "scor_final": 122.3
   },
   {
     "magazin": "pansiprod.ro/",
@@ -582,28 +536,28 @@
     "trend": 0.050499999999999996,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 130,
+    "zile_ramase": 129,
     "promotii": [
       {
         "nume": "EXTRA reducere CraftUp -15% la minim 3 produse achizitionate din selectie",
         "descriere": "Pregătește-te pentru proiectele tale creative cu o ofertă de nerefuzat la CraftUp! Creează-ți propriul pachet personalizat și economisești mai mult.\n\nAlege oricare 3 produse din selecția noastră specială — de la ambalaje premium și sacoșe din iută, până la decorațiuni handmade și felicitări — și primești o reducere EXTRA de 15%. Reducerea se aplică automat în coșul de cumpărături imediat ce pachetul tău este complet.\n👉Selecție variată: Ambalaje, stickere, felicitări și accesorii DIY.\n👉Reducere Automată: Fără coduri de voucher, direct în coș.\n👉Livrare Rapidă: Produse expediate rapid din stoc propriu.",
         "cod_cupon": "",
         "landing_page": "https://craftup.ro/pages/pachete-produse",
-        "zile_ramase": 161
+        "zile_ramase": 160
       },
       {
         "nume": "Solutii Premium de Ambalare: Pungi si Sacose pentru orice ocazie cu preturi de la 11 lei/set",
         "descriere": "Descopera colectia de pungi si sacose de pe Craftup.ro, solutia ideala pentru ambalarea eleganta si sustenabila a produselor tale. Oferta noastra include de la pungi de hartie si cadou, pana la variante stand-up premium si sacose textile reutilizabile, perfecte pentru retail sau evenimente. Fiecare model este conceput sa imbine estetica cu rezistenta, oferind o prezentare impecabila cadourilor sau marfurilor tale. Alegand ambalajele noastre eco-friendly, adaugi un plus de valoare brandului tau si respect fata de mediu. Exploreaza gama diversificata si gaseste dimensiunea sau stilul potrivit pentru orice ocazie. ",
         "cod_cupon": "",
         "landing_page": "https://craftup.ro/collections/pungi-si-sacose",
-        "zile_ramase": 130
+        "zile_ramase": 129
       },
       {
         "nume": "Reduceri de pana la -66% la ambalaje de cadou si accesorii produse handmade",
         "descriere": "Reduceri de pana la -66% la produsele tale preferate! 🎨\nEste momentul perfect sa iti refaci stocurile sau sa gasesti ambalajul ideal pentru cadourile tale. Am pregatit o selectie de produse pentru impachetat, accesorii handmade si organizare, acum la preturi mult mai mici.\nCe poti gasi in oferta noastra:\nPungi si sacose de hartie: Diverse culori (roz, albastru, kraft) ideale pentru cadouri elegante.\n* *Ambalaje textile: Saculeti din tesatura cu sfoara (set 50 buc), perfecti pentru marturii sau bijuterii.\nEtichete: Rola de 500 stickere \"Thank you\" sau \"Handmade\" si etichete din carton pentru un aspect profesional.\nCutii si organizare: Cutii din hartie cu sertar sau cutii transparente din plastic.\n* *Accesorii: Magneti, benzi satinate colorate si sticlute reutilizabile cu spray sau roll-on.\nOferta este valabila in limita stocului disponibil! Preturile incep de la doar 0,69 lei.\n\nNu mai sta pe ganduri si profita de preturile speciale pentru a oferi proiectelor tale acea nota finala impecabila.",
         "cod_cupon": "",
         "landing_page": "https://craftup.ro/collections/oferte",
-        "zile_ramase": 130
+        "zile_ramase": 129
       }
     ],
     "scor_final": 121.5
@@ -658,6 +612,52 @@
     "zile_ramase": 99,
     "promotii": [],
     "scor_final": 118.1
+  },
+  {
+    "magazin": "noriel.ro",
+    "url": "https://businessleague.2performant.com/affiliate/program/noriel-ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bc92f1bf2&redirect_to=https%3A%2F%2Fbusinessleague.2performant.com%2Faffiliate%2Fprogram%2Fnoriel-ro",
+    "categorie": "Babies Kids & Toys",
+    "comision": "7.00%",
+    "scor_afiliere": 72.3,
+    "prioritate": "B - Bun de testat",
+    "canal_recomandat": "Google Ads",
+    "sales_number": 19883,
+    "trend": 0.2256,
+    "are_promotie": true,
+    "cod_cupon": true,
+    "zile_ramase": 0,
+    "promotii": [
+      {
+        "nume": "50 lei Voucher Cadou la comenzile de minimum 249 de lei | 25.05 - 02.06.2026",
+        "descriere": "Te asteptam pe Noriel.ro sa alegi cele mai tari jucarii si jocuri! 🧸🧩 Foloseste codul NORIEL50 in perioada 25.05 - 02.06.2026 si ai 50 de lei DISCOUNT 💸 la cumparaturi de minimum 249 de lei pentru produsele din categoria jucarii, jocuri si carti 📚🤩 >> https://noriel.ro/\nExceptie produsele aflate in alte promotii, in stoc furnizor si seturile Pokémon TCG. ",
+        "cod_cupon": "NORIEL50",
+        "landing_page": "https://noriel.ro/",
+        "zile_ramase": 9
+      },
+      {
+        "nume": "Castiga premii de poveste cu Disney",
+        "descriere": "❄️✨ Intra in lumea magica Disney! Cumpara 2 papusi Disney Princess sau Disney Frozen, inscrie bonul pe noriel.ro si poti castiga: 🏰 o excursie de poveste la castelele din Franta sau 🎁 unul dintre cele 3 seturi de joaca Disney Frozen. Transforma fiecare moment de joaca intr-o aventura magica! 💙 >> https://noriel.ro/blog/concurs-disney-frozen-si-princess ",
+        "cod_cupon": "",
+        "landing_page": "https://noriel.ro/blog/concurs-disney-frozen-si-princess",
+        "zile_ramase": 8
+      },
+      {
+        "nume": "20% Reducere la jucarii si jocuri | Cod: KIDS20 |18-24.05.2026",
+        "descriere": "Lumea cu imaginatie aduce vesti minunate! Aplica in cosul de cumparaturi codul KIDS20 si ai 20% Reducere la jucarii si jocuri. ❤️🧸Promotia este valabila exclusiv online, in perioada 18-24 Mai, in limita stocului disponibil. Reducerea nu se aplica produselor care sunt in stoc furnizor, Pokémon TCG  si nu se cumuleaza cu alte promotii.",
+        "cod_cupon": "KIDS20 ",
+        "landing_page": "https://noriel.ro/",
+        "zile_ramase": 0
+      },
+      {
+        "nume": "Super Oferte - Reduceri de pana la 50% | 18–24.05.2026",
+        "descriere": "Super oferte te asteapta pe noriel.ro! 🎉\nAm pregatit reduceri de pana la 50% la o multime de produse. \n✨ Descopera acum ofertele speciale pe noriel.ro >> https://noriel.ro/\nPromotia este valabila in perioada 18–24.05.2026, in limita stocului disponibil.",
+        "cod_cupon": "",
+        "landing_page": "https://noriel.ro/promotii",
+        "zile_ramase": 0
+      }
+    ],
+    "scor_final": 117.3
   },
   {
     "magazin": "nailsup.ro",
@@ -893,14 +893,14 @@
     "trend": 0.1475,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 37,
+    "zile_ramase": 36,
     "promotii": [
       {
         "nume": "5% discount prima comanda",
         "descriere": "Beneficiază de 5% discount la prima comandă plasată pe site. Discount-ul se aplică per întreg coșul de cumpărături.",
         "cod_cupon": "FERANEW",
         "landing_page": "https://fera.ro/5-reducere.html",
-        "zile_ramase": 37
+        "zile_ramase": 36
       }
     ],
     "scor_final": 111.5
@@ -1020,14 +1020,14 @@
     "trend": 0.8,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 8,
+    "zile_ramase": 7,
     "promotii": [
       {
         "nume": "Cod reducere MedimFarm.ro -15% la orice comanda de minim 190 lei",
         "descriere": "Pana pe 31 Mai 2026 profita de un cod reducere MedimFarm.ro ce iti ofera o reducere de 15% la orice comanda de minim 190 lei + 10% Money Back din valoarea comenzii inapoi, pentru cumparaturi viitoare!",
         "cod_cupon": "MEDIM15",
         "landing_page": "https://medimfarm.ro/",
-        "zile_ramase": 8
+        "zile_ramase": 7
       }
     ],
     "scor_final": 110.1
@@ -1062,28 +1062,28 @@
     "trend": 0.3704,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 8,
+    "zile_ramase": 7,
     "promotii": [
       {
         "nume": "20% reducere la toate titlurile din categoria Știință ale editurii HUMANITAS",
         "descriere": "20% reducere la toate titlurile din categoria Știință ale editurii HUMANITAS.  Livrare gratuita la comenzi mai mari de 149 lei.",
         "cod_cupon": "",
         "landing_page": "https://www.libhumanitas.ro/carti.html?c2c_book_publisher=humanitas&cat=236&_gl=1*76tm7x*_up*MQ..*_ga*MTQwMTg3NzY0MS4xNzc3OTY5MDY0*_ga_SYM7XQ1C77*czE3Nzc5NjkwNjQkbzEkZzEkdDE3Nzc5NzAzODIkajYwJGwwJGgw",
-        "zile_ramase": 8
+        "zile_ramase": 7
       },
       {
         "nume": "25% reducere la o selectie de titluri ale Grupului Editorial ART",
         "descriere": "25% reducere la o selectie de titluri ale Grupului Editorial ART.  Livrare gratuita la comenzi mai mari de 149 lei.",
         "cod_cupon": "",
         "landing_page": "https://www.libhumanitas.ro/",
-        "zile_ramase": 8
+        "zile_ramase": 7
       },
       {
         "nume": "25% reducere la toate titlurile editurii GAMA",
         "descriere": "25% reducere la toate titlurile editurii GAMA.  Livrare gratuita la comenzi mai mari de 149 lei.",
         "cod_cupon": "",
         "landing_page": "https://www.libhumanitas.ro/",
-        "zile_ramase": 8
+        "zile_ramase": 7
       }
     ],
     "scor_final": 109.7
@@ -1135,14 +1135,14 @@
     "trend": -0.1387,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 222,
+    "zile_ramase": 221,
     "promotii": [
       {
         "nume": "Nou pe bookzone.ro: 1200 de titluri în engleză – Un adevărat festin literar!",
         "descriere": "Pe bookzone.ro găsești 1200 de titluri în engleză. Aceste cărți acoperă o gamă variată de genuri, de la ficțiune la non-ficțiune. Acesta este doar începutul – vom continua să extindem oferta în limba engleză în perioada următoare.",
         "cod_cupon": "",
         "landing_page": "https://bookzone.ro/carti/carti-in-limba-engleza",
-        "zile_ramase": 222
+        "zile_ramase": 221
       }
     ],
     "scor_final": 109.1
@@ -1177,14 +1177,14 @@
     "trend": 0.1389,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 8,
+    "zile_ramase": 7,
     "promotii": [
       {
         "nume": "🔥Până la 30% reducere la gama antistres!🧘‍♀️Mai puțin stres, mai multă bucurie!",
         "descriere": "Luna mai aduce oferte speciale pentru starea ta de bine 🌿\n\nPână pe 31 mai, te bucuri de reduceri de până la 30% la produse pentru combaterea stresului și susținerea unui somn odihnitor 😌💤\n\nÎn campanie sunt incluse produse precum Magneziu Biglicinat, Ashwagandha și multe altele.🌱\n\nDescoperă oferta pe herbagetica.ro. Alege mai puțin stres și mai multă bucurie 💚",
         "cod_cupon": "",
         "landing_page": "https://herbagetica.ro/anti-stres.html",
-        "zile_ramase": 8
+        "zile_ramase": 7
       }
     ],
     "scor_final": 108.4
@@ -1236,14 +1236,14 @@
     "trend": 1.0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 129,
+    "zile_ramase": 128,
     "promotii": [
       {
         "nume": "Extragarantie 2+3 ani la Biciclete Afisport.ro",
         "descriere": "Oferă audienței tale mai mult decât un discount: 3 ani fără costuri de service.\n\nCampania AFISPORT „Garanție Extinsă 2+3 Ani” elimină una dintre cele mai mari bariere de cumpărare – costurile post-achiziție.\n\n✔ crește încrederea\n✔ crește rata de conversie\n✔ diferențiator puternic în piață\n\nIdeal pentru promovare pe segmente: MTB, City, copii, gravel.\n\n📅 Campanie limitată: 1 aprilie – 30 septembrie\n👉 Vezi detalii complete despre campanie: https://afisport.ro/extragarantie",
         "cod_cupon": "",
         "landing_page": "https://afisport.ro/biciclete-mtb/",
-        "zile_ramase": 129
+        "zile_ramase": 128
       }
     ],
     "scor_final": 107.3
@@ -1329,21 +1329,21 @@
     "trend": 0.36210000000000003,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 20,
+    "zile_ramase": 19,
     "promotii": [
       {
         "nume": "Reduceri de pana la -40% la brandul Motul",
         "descriere": "Reduceri de pana la -40% la brandul Motul - Uleiuri si Lichide Auto, Moto/Atv, Intretinere auto si pachete revizie.",
         "cod_cupon": "",
         "landing_page": "https://www.autobob.ro/produse/motul",
-        "zile_ramase": 20
+        "zile_ramase": 19
       },
       {
         "nume": "Pachete revizie auto cu reducere de pana la -35%",
         "descriere": "Incepe sezonul drumurilor lungi, iar masina ta merita toata atentia pentru a te purta in siguranta spre fiecare destinatie. Pe Autobob.ro am reunit excelenta marcilor de top precum Motul, Castrol si Mann-Filter in pachete de revizie complete, create special sa ofere motorului tau protectia si performanta de care are nevoie.\n\nIndiferent daca esti la volanul unui Audi , al unui BMW sau al unui Ford, gasesti acum solutia ideala gata configurata. Poti uita de cautarile nesfarsite dupa coduri de piese, deoarece am pregatit totul intr-un singur loc, cu reduceri ce depasesc 35%. De la pachete economice pentru Opel la doar 152 lei, pana la kituri profesionale pentru transmisii DSG, calitatea este acum accesibila si livrata rapid, direct din stoc.\n\nAlege sa economisesti timp si bani fara sa faci compromisuri la calitatea pieselor. Intra pe site, selecteaza marca masinii tale si profita de ofertele momentului. Masina ta iti va multumi la fiecare kilometru parcurs cu un consum optim si o functionare impecabila.\n\nAutobob — Piese de incredere pentru calatorii fara griji.",
         "cod_cupon": "",
         "landing_page": "https://www.autobob.ro/pachete-revizie",
-        "zile_ramase": 161
+        "zile_ramase": 160
       }
     ],
     "scor_final": 106.3
@@ -1378,35 +1378,35 @@
     "trend": 0.21719999999999998,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 7,
+    "zile_ramase": 6,
     "promotii": [
       {
         "nume": "Livrare rapida si in easy box!",
         "descriere": "Pe automobilus.ro iti poti gasi orice piesa ai nevoie doar introducand seria de sasiu!",
         "cod_cupon": "",
         "landing_page": "https://automobilus.ro",
-        "zile_ramase": 38
+        "zile_ramase": 37
       },
       {
         "nume": "Mirka POLAROS RP 600 – Noul etalon al polishului profesional acum cu 20% reducere",
         "descriere": "Mirka POLAROS RP 600 o mașină de polish rotativă care redefinește performanța, un polizor rotativ de 150 mm, cu motor brushless de 750 W, Poate fi folosita atat in ateliere   auto cat si in industria marina.\nDefinita printr-un corp compact, cu profil redus, inspirat din premiata platformă Mirka DEROS, oferă o poziție naturală a mâinilor aproape de suprafață.\nCu o greutate de doar 1,75 kg, POLAROS RP 600 este una dintre cele mai ușoare mașini de polish din clasa sa – o diferență reală pentru profesioniștii care lucrează ore întregi fără întrerupere.",
         "cod_cupon": "",
         "landing_page": "https://automobilus.ro/mirka-polaros-rp-600-noul-etalon-al-polishului-profesional",
-        "zile_ramase": 38
+        "zile_ramase": 37
       },
       {
         "nume": "Reducere de pana la 24% la vopseaua FOLIATEC pentru etriere!",
         "descriere": "Kitul de vopsea etrieri Foliatec este o soluție profesională ce oferă un aspect sportiv, lucios și protecție de lungă durată (câțiva ani) împotriva coroziunii, substanțelor chimice și temperaturilor înalte.\nPe automobilus.ro Kit-ul contine:\n\nUn spray de curatat franele, foarte eficient, pentru a indeparta toata mizeria si praful reziduu de la placutele de frana de pe etrier\nUn recipient cu 125ml de vopsea\nUn tub cu 50ml de intaritor special pentru vopsea\nPerie de sarma \nPensula pentru vopsit\nRigla din lemn pentru amestecat\n\nNu este necesar sa demontati etrierul de pe masina si nici placutele de frana, intrucat aplicarea se face cu o pensula mica ce va permite foarte multa precizie in aplicare, fara vopsirea unor elemente nedorite, cum ar fi placutele, discul sau conductele de frana.\n\nVopseaua Foliatec are urmatoarele caracteristici:\n\nRezistenta la substante chimice si lichid de frana\nAre o excelenta adeziune\nRezistenta la uleiuri\nIsi pastreaza foarte bine nivelul de luciu, fie el mat sau lucios, in functie de produsul ales",
         "cod_cupon": "",
         "landing_page": "https://automobilus.ro/vopsele-si-auxiliare/vopsea-pentru-etriere?filter=QnJhbmRQcm9kdWN0RmllbGRzRmlsdGVyJTVCMCU1RD04MjUx",
-        "zile_ramase": 7
+        "zile_ramase": 6
       },
       {
         "nume": "Reduceri la accesoriile masinilor electrice !",
         "descriere": "preturi excelente la accesoriile masinilor electrice\n",
         "cod_cupon": "",
         "landing_page": "https://automobilus.ro/accesorii-masini-electrice",
-        "zile_ramase": 7
+        "zile_ramase": 6
       }
     ],
     "scor_final": 106.1
@@ -1441,49 +1441,49 @@
     "trend": 0.21739999999999998,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 2,
+    "zile_ramase": 1,
     "promotii": [
       {
         "nume": "MID SEASON SALE + EXTRA 10% la mii de modele deja reduse",
         "descriere": "MID SEASON SALE + EXTRA 10% la mii de modele deja reduse\nIn selectie gasesti: Imbracaminte, Incaltaminte, Echipament sport, Accesorii si Fitness.\nPromo cod: EXTRA10\n*Codul promotional este valabil in perioada 22.05 - 25.05.2026 si ofera reducere suplimentara de -10% la toate produsele reduse si nu poate fi combinat cu alte coduri promotionale de reducere.",
         "cod_cupon": "EXTRA10",
         "landing_page": "https://www.sportdepot.ro/mid_season_sale_extra_10_la_mii_de_articole/recommended-1271",
-        "zile_ramase": 2
+        "zile_ramase": 1
       },
       {
         "nume": "Mid Season Sale la SportDepot.ro cu reduceri de pana la -40% la selectia Nike, Puma, Adidas, Under Armour, Guess si Brille",
         "descriere": "Mid Season Sale cu reduceri de pana la -40% la selectia Nike, Puma, Adidas, Under Armour, Guess si Brille. In acesta selectie gasesti imbracaminte, incaltaminte, echipament sport.",
         "cod_cupon": "",
         "landing_page": "https://www.sportdepot.ro/mid_season_sale_pana_la_40/promotion-011f83d6dfd4a7e7d64994b1fefbf9e0",
-        "zile_ramase": 2
+        "zile_ramase": 1
       },
       {
         "nume": "Promotie SportDepot.ro - 20% Reducere CORDILLERO, DEMIX, JOSS, OUTVENTURE, TERMIT",
         "descriere": "Bucura-te de o reducere de 20% la brandurile CORDILLERO, DEMIX, JOSS, OUTVENTURE, TERMIT pana pe 25.05.2026",
         "cod_cupon": "",
         "landing_page": "https://www.sportdepot.ro/vibe_activ_20_reducere_cordillero_demix_joss_outventure_termit/promotion-7d0349905a412c06e0f50fcb8f1ace6f",
-        "zile_ramase": 2
+        "zile_ramase": 1
       },
       {
         "nume": "Cod reducere SportDepot.ro -10% EXTRA reducere la Puma Timeless collection",
         "descriere": "Cod reducere SportDepot.ro -10% EXTRA reducere la Puma Timeless collection. In colectie gasesti imbracaminte, incaltaminte, echipament sport si accesorii.",
         "cod_cupon": "PUMA10",
         "landing_page": "https://www.sportdepot.ro/puma_timeless_collection_extra_10_reducere_promo_cod_puma10/recommended-1299",
-        "zile_ramase": 4
+        "zile_ramase": 3
       },
       {
         "nume": "Promotie SportDepot.ro -15% la selectia de tricouri",
         "descriere": "Promotie SportDepot.ro -15% la selectia de tricouri de femei, barbati si copii, de la branduri precum: Columbia, The North Face, Oakley si multe altele.",
         "cod_cupon": "",
         "landing_page": "https://www.sportdepot.ro/outdoor_tricouri_reducere_15/promotion-225db47ed79974eec8e0cb9511836290",
-        "zile_ramase": 2
+        "zile_ramase": 1
       },
       {
         "nume": "Reducere SportDepot.ro -40% Colectie de vara: KIDS MOVIE HEROES & NAME IT",
         "descriere": "Pe SportDepot.ro au început reducerile la articolele pentru copii -40% colectie de vara de la brandurile KIDS MOVIE HEROS si NAMET IT valabila pana pe 30.05.2026",
         "cod_cupon": "",
         "landing_page": "https://www.sportdepot.ro/40_colectie_de_vara_kids_movie_heroes_name_it/recommended-1298",
-        "zile_ramase": 7
+        "zile_ramase": 6
       }
     ],
     "scor_final": 105.9
@@ -1518,21 +1518,21 @@
     "trend": 0.1215,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 8,
+    "zile_ramase": 7,
     "promotii": [
       {
         "nume": "Kfea.ro împlinește 20 de ani",
         "descriere": "🎉 Kfea.ro împlinește 20 de ani! 🎉\nNe bucurăm să sărbătorim împreună două decenii de pasiune pentru cafea! ☕❤\n\nCa să-ți mulțumim că ai fost alături de noi în această călătorie aromată, ți-am pregătit 20 de zile pline de surprize: oferte exclusive, reduceri speciale și cadouri dedicate iubitorilor de cafea.\n\nÎn fiecare zi te așteaptă o nouă surpriză, disponibilă în stoc limitat, pe pagina aniversară Kfea.ro - https://www.kfea.ro/aniversare-20-ani\n\nÎți mulțumim că faci parte din povestea noastră!💛\n\n#kfea20ani #etolia #kfearo #cafeaproaspatprajita #specialtycoffee",
         "cod_cupon": "KFEA20",
         "landing_page": "https://www.kfea.ro/aniversare-20-ani",
-        "zile_ramase": 14
+        "zile_ramase": 13
       },
       {
         "nume": "Happy Spring Sale la Kfea.ro!",
         "descriere": "Odată cu venirea primăverii, Kfea.ro dă startul campaniei de primăvară Happy Spring Sale și oferă pasionaților de cafea reduceri de până la 50% la o selecție extinsă de produse.\n\nÎncepe-ți dimineața cu „cea mai bună cafea”. Poți alege din zeci de sortimente de la cele mai cunoscute branduri din industrie. Vei găsi aici cafea la reducere, promoții la aparate de cafea sau produse complementare.\n\nAi TRANSPORT GRATUIT la comenzi de peste 99.99 lei, cu livrare în orice Easybox la nivel național sau la achiziționarea oricărei pungi de Etolia cafea proaspăt prăjită la 1kg.\n\nÎn perioada 1-8 Martie, folosește codul MARTISOR5 și bucură-te de o reducere la orice comandă de minimum 150 lei, care conține cel puțin un produs Etolia.\n\nPentru detalii, vizitează-ne site-ul sau scrie-ne și îți vom răspunde în cel mai scurt timp!",
         "cod_cupon": "",
         "landing_page": "https://kfea.ro/spring-sale",
-        "zile_ramase": 8
+        "zile_ramase": 7
       }
     ],
     "scor_final": 105.3
@@ -1686,21 +1686,21 @@
     "trend": 0.2727,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 7,
+    "zile_ramase": 6,
     "promotii": [
       {
         "nume": "Confort pentru toti. Pret pentru oricine Regata.ro",
         "descriere": "Am lansat o noua campanie pentru boilerele Ariston - o categorie cu cerere constanta si interes ridicat.\n\nCampania Confort pentru toti. Pret pentru oricine.\n•\tPreturi incepand de la 319.99 lei\n•\tBoilere fiabile, durabile si eficiente energetic\n•\tProduse cunoscute, usor de promovat\n•\tPotential ridicat de conversie\n\nCampania este valabila in limita stocului disponibil, produsele participante sunt disponibile aici: https://regata.ro/termice/boilere-si-accesorii/boilere \n",
         "cod_cupon": "",
         "landing_page": "https://regata.ro/termice/boilere-si-accesorii/boilere",
-        "zile_ramase": 7
+        "zile_ramase": 6
       },
       {
         "nume": "Cupon reducere 5%",
         "descriere": "Cupon reducere 5% la toate produsele din site",
         "cod_cupon": "REGATA5",
         "landing_page": "https://regata.ro/",
-        "zile_ramase": 1683
+        "zile_ramase": 1682
       }
     ],
     "scor_final": 102.9
@@ -1820,28 +1820,28 @@
     "trend": -0.5,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 7,
+    "zile_ramase": 6,
     "promotii": [
       {
         "nume": "Luna Menstruației la Femi.Eko 🌸",
         "descriere": "Am lansat oficial campania „Luna Menstruației” pe Femi.Eko, iar perioada aceasta vine cu oportunități foarte bune de conversie 💜\n\n🔹 Clienții pot învârti Roata Femi.Eko pentru a primi coduri de discount\n🔹 Orice comandă de peste 89 lei primește un cadou garantat, ales de client\n🔹 Campania este activă până pe 31 mai\n\nAm pregătit comunicare specială pentru campanie, iar mecanica de promo este gândită pentru a crește engagement-ul și rata de conversie.\n\nNe-ar bucura să promovați campania în această perioadă prin articole, social media, newslettere sau content dedicat.\n\nMulțumim pentru colaborare și mult succes la conversii! 🌿",
         "cod_cupon": "",
         "landing_page": "https://femieko.ro",
-        "zile_ramase": 7
+        "zile_ramase": 6
       },
       {
         "nume": "Economisește până la 25% cu Abonamentul Femi.Eko – Protecție lunară fără griji",
         "descriere": "Promovează Abonamentul Femi.Eko® ca soluția care aduce comoditate și economii lunare clienților: livrarea automată a produselor preferate, până la 25% reducere și 10% reducere extra la prima comandă cu codul SUB10. Fiecare influencer înscris în campanie primește produsele direct acasă, pentru a le testa și a le promova autentic. Arată cum te ajută abonamentul în rutina ta lunară și evidențiază produsele sigure și naturale, din bumbac organic certificat, precum și flexibilitatea abonamentului, care poate fi modificat, pus pe pauză sau anulat oricând. Include întotdeauna link-ul către pagina de abonament https://femieko.ro/pages/abonamente-femieko\n și codul SUB10 în postări sau stories.",
         "cod_cupon": "SUB10",
         "landing_page": "https://femieko.ro/pages/abonamente-femieko",
-        "zile_ramase": 221
+        "zile_ramase": 220
       },
       {
         "nume": "Provocarea Femieko 2026 – Câștigă premii și comision de 19%!",
         "descriere": "Cum funcționează:\n\nFiecare comandă generată îți aduce 19% comision.\n\nFolosește coduri de reducere și produse pentru testare pentru a-ți motiva comunitatea.\n\nCu cât vinzi mai mult, cu atât mai aproape ești de premiile extraordinare!\n\nPremiile mari:\n🏆 Locul 1 – 3.000 comenzi → Experiență nordică în Copenhaga + 1.000€ cash\n🥈 Locul 2 – 2.000 comenzi → Voucher 1.000€ MyGeisha + Voucher 300€ Femieko\n🥉 Locul 3 – 1.500 comenzi → Voucher 500€ MyGeisha + Voucher 300€ Femieko\n\nExtras:\n\nProduse pentru testare pentru tine și comunitatea ta.\n\nPrioritate la bonusuri și premii speciale.\n\n📩 Vrei cod de reducere sau produse pentru testare? Scrie-ne și te ajutăm!\n\nHai să transformăm 2026 într-un an profitabil și plin de premii pentru tine și comunitatea ta!",
         "cod_cupon": "",
         "landing_page": "https://femieko.ro",
-        "zile_ramase": 221
+        "zile_ramase": 220
       }
     ],
     "scor_final": 102.2
@@ -1910,14 +1910,14 @@
     "trend": 0.4722,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 21,
+    "zile_ramase": 20,
     "promotii": [
       {
         "nume": "1 iunie - Pentru ziua copilului tau! | Ookee.ro",
         "descriere": "1 iunie -Jucarii si selectii Pentru ziua copilului tau! | Ookee.ro",
         "cod_cupon": "",
         "landing_page": "https://www.ookee.ro/3516-1-iunie",
-        "zile_ramase": 21
+        "zile_ramase": 20
       }
     ],
     "scor_final": 101.2
@@ -2003,14 +2003,14 @@
     "trend": 0.1783,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 8,
+    "zile_ramase": 7,
     "promotii": [
       {
         "nume": "Reduceri Mobila Luna Mai 2026",
         "descriere": "Prinde reducerile la mobila din luna aceasta! Am ales cele mai cautate produse din gama noastra la care am aplicat super reduceri. Astfel poti sa iti pregatesti casa asa cum doresti fara grija bugetului pentru mobila. Vei gasi aceste oferte semnalate cu etichete speciale in categoriile dormitor, canapele, living, coltare, bucatarie si multe altele. Poti vedea mai rapid produsele intrand in pagina dedicata campaniei de Super Reduceri. \nSuntem producatori de mobilier inca din 1994 din Maramures, Romania si oferim o gama variata la preturi avantajoase, atat mobila din pal cat si tapitata. In fiecare categorie veti gasi oferte si promotii. Pe langa preturile mici, oferim si Livrare Gratuita* in numai 4-10 zile lucratoare. Datorita faptului ca suntem producatori, comanda pleaca direct din fabrica la tine acasa, fara intermediari sau costuri suplimentare. Transportul se face prin flota proprie de masini, astfel ne asiguram ca ajung in stare buna.",
         "cod_cupon": "",
         "landing_page": "https://mobilalaguna.ro/super-reduceri-la-mobila-si-canapele/",
-        "zile_ramase": 8
+        "zile_ramase": 7
       }
     ],
     "scor_final": 98.9
@@ -2028,21 +2028,21 @@
     "trend": 0.1863,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 7,
+    "zile_ramase": 6,
     "promotii": [
       {
         "nume": "Campanie Produse Solare 19-31.05",
         "descriere": "☀️ VARĂ? Ne ocupăm noi! – Campanie dedicată produselor de protecție solară\n\nIncepând cu 19 Mai, clienții pot descoperi oferte speciale la produse de protecție solară și îngrijire pentru sezonul de vară.\n\n🌴 Temperaturile cresc, iar interesul pentru SPF și skincare de vară este deja în plină ascensiune — momentul perfect pentru promovare.\n\n🌞 Branduri vedetă în campanie:\n•\tAvène \n•\tLa Roche-Posay \n•\tBioderma \n•\tVichy \n•\tPharmaceris \n•\tSkinexpert by Dr. Max \n•\tEucerin \n",
         "cod_cupon": "",
         "landing_page": "www.drmax.ro/frumusete-si-ingrijire/protectie-solara",
-        "zile_ramase": 7
+        "zile_ramase": 6
       },
       {
         "nume": "Ofertele Lunii - Mai",
         "descriere": "Luna mai vine cu reduceri speciale la produse esențiale pentru sănătate, îngrijire și frumusețe. Pe tot parcursul lunii, clienții pot profita de oferte atractive la branduri cunoscute și produse dedicate întregii familii.",
         "cod_cupon": "",
         "landing_page": "https://www.drmax.ro/ofertele-lunii",
-        "zile_ramase": 7
+        "zile_ramase": 6
       }
     ],
     "scor_final": 95.6
@@ -2060,70 +2060,38 @@
     "trend": 0.3539,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 37,
+    "zile_ramase": 36,
     "promotii": [
       {
         "nume": "Lichidari stoc produse medicale",
         "descriere": "Produse medicale la prețuri excepționale, cu reduceri de până la 90%, disponibile pentru o perioadă limitată.  Aceste produse provin din stocuri care urmează să fie epuizate sau sunt aproape de data expirării, dar sunt perfect conforme și sigure pentru utilizare, în condițiile specificate de producător. ",
         "cod_cupon": "",
         "landing_page": "https://www.vetro.ro/lichidari/produse-medicale-reduceri-lichidare-stoc",
-        "zile_ramase": 37
+        "zile_ramase": 36
       },
       {
         "nume": "Lichidare stoc - produse cosmetice",
         "descriere": "Consumabile cosmetice la prețuri excepționale, cu reduceri de până la 90%, disponibile pentru o perioadă limitată. Produsele din această categorie provin din stocuri care urmează să fie epuizate sau au termen de valabilitate apropiat.",
         "cod_cupon": "",
         "landing_page": "https://www.vetro.ro/lichidari/produse-cosmetice-lichidare-stoc",
-        "zile_ramase": 38
+        "zile_ramase": 37
       },
       {
         "nume": "Lichidare stoc - produse birou",
         "descriere": "Bucură-te de oferte incredibile la produse pentru birou, cu reduceri de până la 90%. Această categorie include articole de uz general care urmează să iasă din stoc sau au termen de expirare apropiat.",
         "cod_cupon": "",
         "landing_page": "https://www.vetro.ro/lichidari/produse-birou-reduceri",
-        "zile_ramase": 38
+        "zile_ramase": 37
       },
       {
         "nume": "Lichidari de stoc - masini si utilaje de croitorie",
         "descriere": "Mașini și utilaje de croitorie la prețuri speciale, cu reduceri pentru o perioadă limitată de timp. Această categorie include produse de calitate, ideale pentru ateliere de croitorie, designeri de modă sau pasionați de cusut, la prețuri mult mai avantajoase.",
         "cod_cupon": "",
         "landing_page": "https://www.vetro.ro/lichidari/masini-utilaje-croitorie-reduceri",
-        "zile_ramase": 38
+        "zile_ramase": 37
       }
     ],
     "scor_final": 95.3
-  },
-  {
-    "magazin": "litera.ro",
-    "url": "https://businessleague.2performant.com/affiliate/program/litera-ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=8628af76e&redirect_to=https%3A%2F%2Fbusinessleague.2performant.com%2Faffiliate%2Fprogram%2Flitera-ro",
-    "categorie": "Books",
-    "comision": "7.00%",
-    "scor_afiliere": 69.9,
-    "prioritate": "B - Bun de testat",
-    "canal_recomandat": "SEO/Blog",
-    "sales_number": 10015,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 1,
-    "promotii": [
-      {
-        "nume": "🧸 De 1 iunie, copiii au decis: toate cărțile trebuie să ajungă la ei! (25 mai-1 iunie) 🧸",
-        "descriere": "🎂 De Ziua Copilului, sărbătorim alături de cei mici cu reduceri de până la 80%. De la povești ilustrate până la enciclopedii și cărți de activități, pe toate le găsești pe litera.ro, la cele mai bune prețuri. 📖\n\n🎁 Plus o jucărie de pluș cadou, care îi va ține companie în toate aventurile. 🧸 *Jucărie de pluș cadou la orice comandă, diverse modele.",
-        "cod_cupon": "",
-        "landing_page": "https://www.litera.ro/",
-        "zile_ramase": 9
-      },
-      {
-        "nume": "📚 Cărți la preț de tipar - până la -80% (22 - 24 mai) 📚",
-        "descriere": "O selecție de cărți te așteaptă la 𝐩𝐫𝐞𝐭̦ 𝐝𝐞 𝐭𝐢𝐩𝐚𝐫 pe litera.ro: de la bestsellere și romane care se citesc pe nerăsuflate, la cărți pentru copii și titluri de non-ficțiune.",
-        "cod_cupon": "",
-        "landing_page": "https://www.litera.ro/",
-        "zile_ramase": 1
-      }
-    ],
-    "scor_final": 94.9
   },
   {
     "magazin": "otter.ro",
@@ -2138,21 +2106,14 @@
     "trend": 0.08960000000000001,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 0,
+    "zile_ramase": 1682,
     "promotii": [
-      {
-        "nume": "Otter Days - Pana la 40% reducere",
-        "descriere": "Otter Days este aici! Sărbătorește cu reduceri de până la 40% la sute de modele și branduri favorite, pe otter.ro. 🎉\n\nMaterialele grafice aferente campaniei sunt disponibile aici : https://we.tl/t-FkxUHLZfh3pRLHC8\n\n",
-        "cod_cupon": "",
-        "landing_page": "https://www.otter.ro/reduceri",
-        "zile_ramase": 0
-      },
       {
         "nume": "Flash Sale",
         "descriere": "Profită de reduceri fulger în Flash Sale-ul Otter, de luni pana vineri, intre 10-13! Încălțăminte și accesorii la prețuri masiv reduse.",
         "cod_cupon": "",
         "landing_page": "https://www.otter.ro/flashsale",
-        "zile_ramase": 1683
+        "zile_ramase": 1682
       }
     ],
     "scor_final": 94.8
@@ -2187,14 +2148,14 @@
     "trend": 0.3143,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 23,
+    "zile_ramase": 22,
     "promotii": [
       {
         "nume": "🔥  Lichidare stoc Hikvision HiWatch",
         "descriere": "Până la 40% reducere la camere de supraveghere, în limita stocului disponibil!",
         "cod_cupon": "",
         "landing_page": "https://www.vonmag.ro/oferte/hwls",
-        "zile_ramase": 23
+        "zile_ramase": 22
       }
     ],
     "scor_final": 94.7
@@ -2215,38 +2176,6 @@
     "zile_ramase": 99,
     "promotii": [],
     "scor_final": 93.8
-  },
-  {
-    "magazin": "nobilacasa.ro",
-    "url": "https://businessleague.2performant.com/affiliate/program/nobilacasa-ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=43bedc44f&redirect_to=https%3A%2F%2Fbusinessleague.2performant.com%2Faffiliate%2Fprogram%2Fnobilacasa-ro",
-    "categorie": "Home & Garden",
-    "comision": "8.00%",
-    "scor_afiliere": 63.5,
-    "prioritate": "B - Bun de testat",
-    "canal_recomandat": "SEO + Google Ads",
-    "sales_number": 630,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": true,
-    "zile_ramase": 0,
-    "promotii": [
-      {
-        "nume": "-20% reducere cu codul HOT20",
-        "descriere": "Folosește codul HOT20 și adu vara la masa ta! În perioada 18–24 mai ai -20% reducere la toate produsele cu preț întreg, pentru comenzile de peste 200 lei, exclusiv online pe nobilacasa.ro.\nDescoperă noile colecții:\n🍽️ Veselă de vară fresh & elegantă\n🐭 Villeroy & Boch Disney — Mickey & Minnie în varianta premium\n⚡ Electrocasnice smart Berlinger Haus — o bucătărie mai stylish și mai practică\n🥄 Tacâmuri și decor premium pentru casă\n🧊 Stanley & Polarbox\nMai mult stil, la preț mai mic. Nu rata!",
-        "cod_cupon": "HOT20",
-        "landing_page": "https://www.nobilacasa.ro/",
-        "zile_ramase": 0
-      },
-      {
-        "nume": "REDUCERI COMBO",
-        "descriere": "REDUCERI COMBO-Cumpără în combo, economisește și bucură-te de cele mai iubite produse, la preț redus!\nAlege bestseller-urile noastre în combo – produsele populare acum sunt mai ieftine împreună!\nOferta este valabilă doar Online în limita stocului disponibil și nu se cumulează cu alte coduri sau vouchere active!\nLink: Link: https://www.nobilacasa.ro/sale/reduceri-combo",
-        "cod_cupon": "",
-        "landing_page": "https://www.nobilacasa.ro/sale/reduceri-combo",
-        "zile_ramase": 222
-      }
-    ],
-    "scor_final": 93.5
   },
   {
     "magazin": "retro-electro.ro",
@@ -2295,42 +2224,42 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 37,
+    "zile_ramase": 36,
     "promotii": [
       {
         "nume": "Legendary Sale",
         "descriere": "Pana la 30% reducere la produsele selectate.",
         "cod_cupon": "",
         "landing_page": "https://www.benvenuti.com/ro/reduceri",
-        "zile_ramase": 37
+        "zile_ramase": 36
       }
     ],
     "scor_final": 91.5
   },
   {
-    "magazin": "vegis.ro",
-    "url": "https://businessleague.2performant.com/affiliate/program/vegis-ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=34a1d9df5&redirect_to=https%3A%2F%2Fbusinessleague.2performant.com%2Faffiliate%2Fprogram%2Fvegis-ro",
-    "categorie": "Health & Personal care",
-    "comision": "8.00%",
-    "scor_afiliere": 65.8,
+    "magazin": "rowenta.ro/",
+    "url": "https://businessleague.2performant.com/affiliate/program/rowenta-ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=cf2f8c2a8&redirect_to=https%3A%2F%2Fbusinessleague.2performant.com%2Faffiliate%2Fprogram%2Frowenta-ro",
+    "categorie": "Electronics IT&C",
+    "comision": "4.00%",
+    "scor_afiliere": 56.4,
     "prioritate": "B - Bun de testat",
-    "canal_recomandat": "Google Ads",
-    "sales_number": 3978,
-    "trend": -0.0359,
+    "canal_recomandat": "SEO + Google Ads",
+    "sales_number": 3518,
+    "trend": -0.20440000000000003,
     "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 1,
+    "cod_cupon": true,
+    "zile_ramase": 3,
     "promotii": [
       {
-        "nume": "REDUCERI fresh la o varietate de produse",
-        "descriere": "-",
-        "cod_cupon": "",
-        "landing_page": "https://vegis.ro/",
-        "zile_ramase": 1
+        "nume": "Rowenta Spring sales",
+        "descriere": "Pentru orice comanda in valoare de peste 600 RON poti primi un Ondulator de par Rowenta Elite Shine CF3228F0 daca te afli printre primii 100 de cumparatori. \nAdauga in cos codul de voucher SPRING si beneficiezi de 20% EXTRA discount pentru produsele selectate. \n*Campanie valabilă in perioada 4-28 Mai, în limita stocului disponibil. Mai multe detalii in regulament.",
+        "cod_cupon": "SPRING",
+        "landing_page": "https://www.rowenta.ro/rowenta_spring_sales",
+        "zile_ramase": 3
       }
     ],
-    "scor_final": 90.8
+    "scor_final": 91.4
   },
   {
     "magazin": "jollymag.ro/",
@@ -2345,95 +2274,17 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 221,
+    "zile_ramase": 220,
     "promotii": [
       {
         "nume": "Reducere 10% la tot cosul",
         "descriere": "Reducere 10% la tot cosul de cumparaturi, indiferent de valoare si indiferent daca produsele sunt deja reduse! Foloseste codul voucher JOLLY10 la finalizarea comenzii, valabil exclusiv pe www.jollymag.ro",
         "cod_cupon": "JOLLY10",
         "landing_page": "https://jollymag.ro/brand/680-jollymag",
-        "zile_ramase": 221
+        "zile_ramase": 220
       }
     ],
     "scor_final": 90.8
-  },
-  {
-    "magazin": "carturesti.ro",
-    "url": "https://businessleague.2performant.com/affiliate/program/carturesti-ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=d809b261b&redirect_to=https%3A%2F%2Fbusinessleague.2performant.com%2Faffiliate%2Fprogram%2Fcarturesti-ro",
-    "categorie": "Books",
-    "comision": "9.00%",
-    "scor_afiliere": 65.7,
-    "prioritate": "B - Bun de testat",
-    "canal_recomandat": "SEO/Blog",
-    "sales_number": 33138,
-    "trend": -0.3759,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 1,
-    "promotii": [
-      {
-        "nume": "Anul școlar s-a terminat. Povestea abia începe",
-        "descriere": "Există un moment în iunie când ghiozdanul e aruncat pe hol și vara intră pe ușă cu tot zgomotul ei. E momentul perfect pentru un cadou care să nu se termine odată cu ziua: o carte bună, aleasă cu grijă, care să călătorească cu ei toată vacanța. Premii școlare, daruri de final de an sau pur și simplu un „bravo\" spus altfel — cărțile pentru copii din selecția noastră sunt aici pentru toate ocaziile.\n\nPe carturesti.ro găsești titluri pentru micii cititori, în română și în limbi străine, cu reduceri de până la 20% în perioada 20 mai – 18 iunie. Pentru că vacanța de vară e mai bună cu noutăți în bibliotecă.\n\nPromoția este valabilă pe carturesti.ro, în limita stocului disponibil. Nu se cumulează cu alte promoții și reduceri.",
-        "cod_cupon": "",
-        "landing_page": "https://carturesti.ro/offer/anul-scolar-s-a-terminat-6590",
-        "zile_ramase": 25
-      },
-      {
-        "nume": "Răsfoiește albume în engleză",
-        "descriere": "Există cărți pe care nu le citești, ci le trăiești — pagină cu pagină, imagine cu imagine. Albumele în limba engleză din selecția noastră transformă orice raft într-o mică galerie și orice după-amiază liberă într-o călătorie.\n\nArhitectură care spune povești, gastronomie cu personalitate, design care inspiră, artă care rămâne. Le-am adunat pe toate într-o selecție care merită răsfoită, cu 30% reducere, în perioada 19 mai – 8 iunie.\n\nPromoția este valabilă pe carturesti.ro, în limita stocului disponibil. Nu se cumulează cu alte promoții și reduceri.",
-        "cod_cupon": "",
-        "landing_page": "https://carturesti.ro/offer/rasfoieste-albume-in-engleza-6589",
-        "zile_ramase": 15
-      },
-      {
-        "nume": "Tombolă Dixit",
-        "descriere": "Jocurile din seria Dixit sunt mai mult decât simple board games; sunt ferestre deschise către o lume unde regulile logicii lasă loc intuiției și visării. Dixit a devenit un simbol al reconectării, oferind un spațiu sigur în care limbajul vizual deblochează amintiri și metafore surprinzătoare, indiferent de vârstă.\n\nTe invităm să duci experiența la înălțime: cumpără orice joc de bază sau extensie Dixit în stoc pe carturesti.ro, în perioada 15 mai – 1 iunie, și poți câștiga, prin tragere la sorți, un zbor cu balonul pentru două persoane sau extensii pentru a-ți completa colecția.\n\nPentru a intra în tragerea la sorți, bifează căsuța „Vreau să mă înscriu la tombola Dixit” din pagina de checkout. Promoția este valabilă exclusiv online, în limita stocului disponibil.",
-        "cod_cupon": "",
-        "landing_page": "https://carturesti.ro/offer/tombola-dixit-6588",
-        "zile_ramase": 8
-      },
-      {
-        "nume": "Legami Good Vibes cu până la -25% reducere",
-        "descriere": "Cea mai frumoasă destinație de vacanță este, de fapt, o stare de spirit. Pentru a o atinge, am creat un „kit de supraviețuire” pentru zilele însorite, unde estetica veselă întâlnește distracția pură. Colecția Good Vibes - Legami este biletul tău către o vacanță continuă, unde accesoriile gonflabile spectaculoase și jocurile de vară transformă orice piscină într-o oază de relaxare, departe de zgomotul notificărilor.\n\nTransformă-ți vara într-o experiență memorabilă cu accesoriile Good Vibes, cu până la 25% reducere în perioada 15 mai – 15 iunie.\n\nPromoția este valabilă pe carturesti.ro, în limita stocului disponibil. Nu se cumulează cu alte promoții și reduceri.",
-        "cod_cupon": "",
-        "landing_page": "https://carturesti.ro/offer/good-vibes-6587",
-        "zile_ramase": 22
-      },
-      {
-        "nume": "Colorezi și te relaxezi",
-        "descriere": "Terapia prin culoare este cadoul pe care ți-l poți face atunci când vrei să închizi ecranele și să te întorci la tactil. Selecția noastră de cărți de colorat pentru adulți este concepută ca un refugiu urban, unde liniile fine devin un ghid spre claritate mentală și reducerea stresului.\n\n\nRedescoperă bucuria nuanțelor cu 50% reducere la a doua carte sau planșă de colorat adăugată în coș, în perioada 12-25 mai. Este o oportunitate excelentă de a-ți extinde colecția sau de a împărtăși un moment de liniște cu cineva drag.\n\n\nPromoția este valabilă pe carturesti.ro, în limita stocului disponibil. Reducerea de 50% se acordă pentru al doilea produs, cel cu valoarea mai mică, în coșul de cumpărături. Nu se cumulează cu alte promoții și reduceri.",
-        "cod_cupon": "",
-        "landing_page": "https://carturesti.ro/offer/colorezi-si-te-relaxezi-6585",
-        "zile_ramase": 1
-      }
-    ],
-    "scor_final": 90.7
-  },
-  {
-    "magazin": "aldoshoes.com.ro",
-    "url": "https://businessleague.2performant.com/affiliate/program/aldoshoes-com-ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=dc09c3c78&redirect_to=https%3A%2F%2Fbusinessleague.2performant.com%2Faffiliate%2Fprogram%2Faldoshoes-com-ro",
-    "categorie": "Fashion",
-    "comision": "variable sale commission",
-    "scor_afiliere": 55.5,
-    "prioritate": "B - Bun de testat",
-    "canal_recomandat": "TikTok/Reels + SEO",
-    "sales_number": 646,
-    "trend": 0.4,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 0,
-    "promotii": [
-      {
-        "nume": "Early Summer Sale - Pana la 40% reducere",
-        "descriere": "Early Summer Sale la ALDO! Profită de reduceri la modelele preferate și adaugă un plus de stil look-urilor tale.\n\n🎉 Materialele grafice aferente campaniei sunt disponibile aici : https://we.tl/t-gPGwLs74Jhymn9Bf",
-        "cod_cupon": "",
-        "landing_page": "https://www.aldoshoes.com.ro/reduceri",
-        "zile_ramase": 0
-      }
-    ],
-    "scor_final": 90.5
   },
   {
     "magazin": "nailshop.ro",
@@ -2482,14 +2333,14 @@
     "trend": 0.3077,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 7,
+    "zile_ramase": 6,
     "promotii": [
       {
         "nume": "Reducere 18 lei – Carucior de cumparaturi cu scaun si roti pentru scari",
         "descriere": "Profita acum de 18 lei reducere la caruciorul de cumparaturi Catena, conceput pentru a transporta cumparaturile mai usor si fara efort.\n\nAcest carucior practic este dotat cu sistem de roti in stea pentru urcat scari, astfel incat poti urca borduri sau trepte mult mai usor. In plus, scaunul pliabil integrat iti permite sa te odihnesti rapid ori de cate ori ai nevoie – ideal pentru drumurile la supermarket sau piata.\n\n🛒 De ce merita sa-l alegi:\n\nReducere directa de 18 lei\n\nRoti speciale pentru urcat scari si borduri\n\nScaun pliabil integrat pentru pauze rapide\n\nSac incapator, rezistent la stropire\n\nCadru metalic durabil si manevrare usoara\n\nEste alegerea ideala pentru cumparaturi zilnice, mers la piata sau transportul produselor fara efort, mai ales pentru persoanele care locuiesc la bloc sau urca frecvent scari.\n\nOferta exclusiva online – produsul este disponibil doar pentru livrare prin curier, la domiciliu (nu se livreaza in farmacii).\nPromotia este valabila in limita stocului disponibil.\n\nProfita acum de oferta si transporta cumparaturile mai usor, fara efort!",
         "cod_cupon": "",
         "landing_page": "https://www.catenapascupas.ro/carucior-de-cumparaturi-cu-scaun-si-roti-in-stea.html",
-        "zile_ramase": 7
+        "zile_ramase": 6
       }
     ],
     "scor_final": 90.2
@@ -2507,14 +2358,14 @@
     "trend": -0.1776,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 9,
+    "zile_ramase": 8,
     "promotii": [
       {
         "nume": "Promotie 1 Iunie - reducere 15% la tot. Perioada 29.05-01.06.2026 ",
         "descriere": "Promotie 1 Iunie - reducere 15% la toate produsele mai putin cele cu pret redus din alte promotii. Campanie valabila in limita stocului disponibil. \nPerioada 29.05-01.06.2026. ",
         "cod_cupon": "",
         "landing_page": "https://www.shopika.ro/imbracaminte",
-        "zile_ramase": 9
+        "zile_ramase": 8
       }
     ],
     "scor_final": 90.1
@@ -2535,6 +2386,38 @@
     "zile_ramase": 99,
     "promotii": [],
     "scor_final": 90.0
+  },
+  {
+    "magazin": "litera.ro",
+    "url": "https://businessleague.2performant.com/affiliate/program/litera-ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=8628af76e&redirect_to=https%3A%2F%2Fbusinessleague.2performant.com%2Faffiliate%2Fprogram%2Flitera-ro",
+    "categorie": "Books",
+    "comision": "7.00%",
+    "scor_afiliere": 69.9,
+    "prioritate": "B - Bun de testat",
+    "canal_recomandat": "SEO/Blog",
+    "sales_number": 10015,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 0,
+    "promotii": [
+      {
+        "nume": "🧸 De 1 iunie, copiii au decis: toate cărțile trebuie să ajungă la ei! (25 mai-1 iunie) 🧸",
+        "descriere": "🎂 De Ziua Copilului, sărbătorim alături de cei mici cu reduceri de până la 80%. De la povești ilustrate până la enciclopedii și cărți de activități, pe toate le găsești pe litera.ro, la cele mai bune prețuri. 📖\n\n🎁 Plus o jucărie de pluș cadou, care îi va ține companie în toate aventurile. 🧸 *Jucărie de pluș cadou la orice comandă, diverse modele.",
+        "cod_cupon": "",
+        "landing_page": "https://www.litera.ro/",
+        "zile_ramase": 8
+      },
+      {
+        "nume": "📚 Cărți la preț de tipar - până la -80% (22 - 24 mai) 📚",
+        "descriere": "O selecție de cărți te așteaptă la 𝐩𝐫𝐞𝐭̦ 𝐝𝐞 𝐭𝐢𝐩𝐚𝐫 pe litera.ro: de la bestsellere și romane care se citesc pe nerăsuflate, la cărți pentru copii și titluri de non-ficțiune.",
+        "cod_cupon": "",
+        "landing_page": "https://www.litera.ro/",
+        "zile_ramase": 0
+      }
+    ],
+    "scor_final": 89.9
   },
   {
     "magazin": "zoomania.ro",
@@ -2668,14 +2551,14 @@
     "trend": 0.0833,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 29,
+    "zile_ramase": 28,
     "promotii": [
       {
         "nume": "Heat-urile Verii",
         "descriere": "Tot ce ai nevoie pentru întreținerea casei și grădinii, într-un singur loc. Produse alese pentru utilitate reală, gândite să îți simplifice munca și să îți optimizeze spațiul exterior. Fără complicații – doar soluții practice pentru fiecare zi",
         "cod_cupon": "",
         "landing_page": "https://www.infinity.ro/heat-urile-verii",
-        "zile_ramase": 29
+        "zile_ramase": 28
       }
     ],
     "scor_final": 88.4
@@ -2696,31 +2579,6 @@
     "zile_ramase": 99,
     "promotii": [],
     "scor_final": 88.3
-  },
-  {
-    "magazin": "libris.ro",
-    "url": "s",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=03c7c0ace&redirect_to=s",
-    "categorie": "Books",
-    "comision": "8.00%",
-    "scor_afiliere": 63.1,
-    "prioritate": "B - Bun de testat",
-    "canal_recomandat": "SEO/Blog",
-    "sales_number": 12601,
-    "trend": -0.25670000000000004,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 1,
-    "promotii": [
-      {
-        "nume": "Cadou la alegere? REDUCERI aniversare? Vezi ce SURPRIZE ți-am pregătit de 35 de ani Libris",
-        "descriere": "Dragi afiliati, \n\nZilele acestea sărbătorim 35 de ani de Libris printr-un Book Party de 6 zile! Te așteptăm la Libris Days, petrecerea de carte care se va desfășura la noi acasă, pe libris.ro, între 19 (ora 08:00) și 24 mai. \nAm pregătit REDUCERI de până la 76% și CADOURI la alegere la comenzile de peste 120 lei. Și ce cadouri! ;)\nÎn plus, oferim TRANSPORT GRATUIT la toate comenzile de peste 75 lei, prin curier rapid, oriunde în România.\n\nMulțumim că sunteți alături de noi. \n\nAm încarcat bannere. Spor la conversii!",
-        "cod_cupon": "",
-        "landing_page": "https://www.libris.ro/",
-        "zile_ramase": 1
-      }
-    ],
-    "scor_final": 88.1
   },
   {
     "magazin": "maxi-pet.ro",
@@ -2893,31 +2751,6 @@
     "scor_final": 86.6
   },
   {
-    "magazin": "rowenta.ro/",
-    "url": "https://businessleague.2performant.com/affiliate/program/rowenta-ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=cf2f8c2a8&redirect_to=https%3A%2F%2Fbusinessleague.2performant.com%2Faffiliate%2Fprogram%2Frowenta-ro",
-    "categorie": "Electronics IT&C",
-    "comision": "4.00%",
-    "scor_afiliere": 56.4,
-    "prioritate": "B - Bun de testat",
-    "canal_recomandat": "SEO + Google Ads",
-    "sales_number": 3518,
-    "trend": -0.20440000000000003,
-    "are_promotie": true,
-    "cod_cupon": true,
-    "zile_ramase": 4,
-    "promotii": [
-      {
-        "nume": "Rowenta Spring sales",
-        "descriere": "Pentru orice comanda in valoare de peste 600 RON poti primi un Ondulator de par Rowenta Elite Shine CF3228F0 daca te afli printre primii 100 de cumparatori. \nAdauga in cos codul de voucher SPRING si beneficiezi de 20% EXTRA discount pentru produsele selectate. \n*Campanie valabilă in perioada 4-28 Mai, în limita stocului disponibil. Mai multe detalii in regulament.",
-        "cod_cupon": "SPRING",
-        "landing_page": "https://www.rowenta.ro/rowenta_spring_sales",
-        "zile_ramase": 4
-      }
-    ],
-    "scor_final": 86.4
-  },
-  {
     "magazin": "espressocafe.ro",
     "url": "https://businessleague.2performant.com/affiliate/program/espressocafe-ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=d8032baf4&redirect_to=https%3A%2F%2Fbusinessleague.2performant.com%2Faffiliate%2Fprogram%2Fespressocafe-ro",
@@ -2969,6 +2802,84 @@
     "scor_final": 86.0
   },
   {
+    "magazin": "vegis.ro",
+    "url": "https://businessleague.2performant.com/affiliate/program/vegis-ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=34a1d9df5&redirect_to=https%3A%2F%2Fbusinessleague.2performant.com%2Faffiliate%2Fprogram%2Fvegis-ro",
+    "categorie": "Health & Personal care",
+    "comision": "8.00%",
+    "scor_afiliere": 65.8,
+    "prioritate": "B - Bun de testat",
+    "canal_recomandat": "Google Ads",
+    "sales_number": 3978,
+    "trend": -0.0359,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 0,
+    "promotii": [
+      {
+        "nume": "REDUCERI fresh la o varietate de produse",
+        "descriere": "-",
+        "cod_cupon": "",
+        "landing_page": "https://vegis.ro/",
+        "zile_ramase": 0
+      }
+    ],
+    "scor_final": 85.8
+  },
+  {
+    "magazin": "carturesti.ro",
+    "url": "https://businessleague.2performant.com/affiliate/program/carturesti-ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=d809b261b&redirect_to=https%3A%2F%2Fbusinessleague.2performant.com%2Faffiliate%2Fprogram%2Fcarturesti-ro",
+    "categorie": "Books",
+    "comision": "9.00%",
+    "scor_afiliere": 65.7,
+    "prioritate": "B - Bun de testat",
+    "canal_recomandat": "SEO/Blog",
+    "sales_number": 33138,
+    "trend": -0.3759,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 0,
+    "promotii": [
+      {
+        "nume": "Anul școlar s-a terminat. Povestea abia începe",
+        "descriere": "Există un moment în iunie când ghiozdanul e aruncat pe hol și vara intră pe ușă cu tot zgomotul ei. E momentul perfect pentru un cadou care să nu se termine odată cu ziua: o carte bună, aleasă cu grijă, care să călătorească cu ei toată vacanța. Premii școlare, daruri de final de an sau pur și simplu un „bravo\" spus altfel — cărțile pentru copii din selecția noastră sunt aici pentru toate ocaziile.\n\nPe carturesti.ro găsești titluri pentru micii cititori, în română și în limbi străine, cu reduceri de până la 20% în perioada 20 mai – 18 iunie. Pentru că vacanța de vară e mai bună cu noutăți în bibliotecă.\n\nPromoția este valabilă pe carturesti.ro, în limita stocului disponibil. Nu se cumulează cu alte promoții și reduceri.",
+        "cod_cupon": "",
+        "landing_page": "https://carturesti.ro/offer/anul-scolar-s-a-terminat-6590",
+        "zile_ramase": 24
+      },
+      {
+        "nume": "Răsfoiește albume în engleză",
+        "descriere": "Există cărți pe care nu le citești, ci le trăiești — pagină cu pagină, imagine cu imagine. Albumele în limba engleză din selecția noastră transformă orice raft într-o mică galerie și orice după-amiază liberă într-o călătorie.\n\nArhitectură care spune povești, gastronomie cu personalitate, design care inspiră, artă care rămâne. Le-am adunat pe toate într-o selecție care merită răsfoită, cu 30% reducere, în perioada 19 mai – 8 iunie.\n\nPromoția este valabilă pe carturesti.ro, în limita stocului disponibil. Nu se cumulează cu alte promoții și reduceri.",
+        "cod_cupon": "",
+        "landing_page": "https://carturesti.ro/offer/rasfoieste-albume-in-engleza-6589",
+        "zile_ramase": 14
+      },
+      {
+        "nume": "Tombolă Dixit",
+        "descriere": "Jocurile din seria Dixit sunt mai mult decât simple board games; sunt ferestre deschise către o lume unde regulile logicii lasă loc intuiției și visării. Dixit a devenit un simbol al reconectării, oferind un spațiu sigur în care limbajul vizual deblochează amintiri și metafore surprinzătoare, indiferent de vârstă.\n\nTe invităm să duci experiența la înălțime: cumpără orice joc de bază sau extensie Dixit în stoc pe carturesti.ro, în perioada 15 mai – 1 iunie, și poți câștiga, prin tragere la sorți, un zbor cu balonul pentru două persoane sau extensii pentru a-ți completa colecția.\n\nPentru a intra în tragerea la sorți, bifează căsuța „Vreau să mă înscriu la tombola Dixit” din pagina de checkout. Promoția este valabilă exclusiv online, în limita stocului disponibil.",
+        "cod_cupon": "",
+        "landing_page": "https://carturesti.ro/offer/tombola-dixit-6588",
+        "zile_ramase": 7
+      },
+      {
+        "nume": "Legami Good Vibes cu până la -25% reducere",
+        "descriere": "Cea mai frumoasă destinație de vacanță este, de fapt, o stare de spirit. Pentru a o atinge, am creat un „kit de supraviețuire” pentru zilele însorite, unde estetica veselă întâlnește distracția pură. Colecția Good Vibes - Legami este biletul tău către o vacanță continuă, unde accesoriile gonflabile spectaculoase și jocurile de vară transformă orice piscină într-o oază de relaxare, departe de zgomotul notificărilor.\n\nTransformă-ți vara într-o experiență memorabilă cu accesoriile Good Vibes, cu până la 25% reducere în perioada 15 mai – 15 iunie.\n\nPromoția este valabilă pe carturesti.ro, în limita stocului disponibil. Nu se cumulează cu alte promoții și reduceri.",
+        "cod_cupon": "",
+        "landing_page": "https://carturesti.ro/offer/good-vibes-6587",
+        "zile_ramase": 21
+      },
+      {
+        "nume": "Colorezi și te relaxezi",
+        "descriere": "Terapia prin culoare este cadoul pe care ți-l poți face atunci când vrei să închizi ecranele și să te întorci la tactil. Selecția noastră de cărți de colorat pentru adulți este concepută ca un refugiu urban, unde liniile fine devin un ghid spre claritate mentală și reducerea stresului.\n\n\nRedescoperă bucuria nuanțelor cu 50% reducere la a doua carte sau planșă de colorat adăugată în coș, în perioada 12-25 mai. Este o oportunitate excelentă de a-ți extinde colecția sau de a împărtăși un moment de liniște cu cineva drag.\n\n\nPromoția este valabilă pe carturesti.ro, în limita stocului disponibil. Reducerea de 50% se acordă pentru al doilea produs, cel cu valoarea mai mică, în coșul de cumpărături. Nu se cumulează cu alte promoții și reduceri.",
+        "cod_cupon": "",
+        "landing_page": "https://carturesti.ro/offer/colorezi-si-te-relaxezi-6585",
+        "zile_ramase": 0
+      }
+    ],
+    "scor_final": 85.7
+  },
+  {
     "magazin": "soundhouse.ro/",
     "url": "https://businessleague.2performant.com/affiliate/program/soundhouse-ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=81d05bf58&redirect_to=https%3A%2F%2Fbusinessleague.2performant.com%2Faffiliate%2Fprogram%2Fsoundhouse-ro",
@@ -3015,14 +2926,14 @@
     "trend": -0.5067,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 8,
+    "zile_ramase": 7,
     "promotii": [
       {
         "nume": "BookAlert cu 50% REDUCERE la coș!",
         "descriere": "🚨📚 Pssst...BookAlert a ajuns pe NEMIRA.RO cu cărți la jumătate de preț! Am redus totul cu 50% ca să-ți completezi biblioteca mai repede decât crezi.\n\n📖 50% reducere la coșul de cumpărături prin codul BOOK50,\n✨ Noutăți, bestsellere și titluri pe care le aveai de mult pe listă, acum la prețuri speciale,\n🚚 Transport GRATUIT la comenzi de minimum 190 lei, oriunde în România.\n\n👉 Dacă ai o listă de cărți pe care tot amâni să o bifezi, acum e momentul perfect să intri pe https://nemira.ro/oferta-nemira.\n\n*Îți punem la dispoziție codul BOOK50 valabil în perioada 22 mai 2026 (ora 10:00) – 31 mai 2026 (ora 23:59), pentru cumpărături pe website-ul www.nemira.ro. Acest cod se aplică la coșul de cumpărături, indiferent de valoarea comenzii, prin introducerea BOOK50 în câmpul special CODURI NEMIRA. Reducerea de 50% în baza codului va fi dedusă din valoarea totală a produselor eligibile comandate în limita stocului și nu se cumulează cu alte beneficii acordate prin coduri cadou active pe www.nemira.ro. Produsele eligibile sunt titlurile semnalizate prin bulina „PROMO\".",
         "cod_cupon": "",
         "landing_page": "https://nemira.ro/oferta-nemira",
-        "zile_ramase": 8
+        "zile_ramase": 7
       }
     ],
     "scor_final": 85.5
@@ -3108,21 +3019,21 @@
     "trend": -0.3333,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 11,
+    "zile_ramase": 10,
     "promotii": [
       {
         "nume": "Birouri Gaming cu preturi de la 299,98 lei + Livrare si retur GRATUIT",
         "descriere": "Alege dintr-o selectie de birouri de gaming cu preturi incepand de la 299,98 lei + Livrare si retur GRATUIT",
         "cod_cupon": "",
         "landing_page": "https://doctorshield.ro/cat/birouri-gaming/",
-        "zile_ramase": 11
+        "zile_ramase": 10
       },
       {
         "nume": "Livrare si retur GRATUIT la orice comanda de gratare, paturi, birouri si scaune de gaming",
         "descriere": "Modernizeaza-ti spatiul cu solutiile profesionale de la Doctor Shield, unde calitatea intalneste confortul absolut. De la birouri reglabile si scaune gaming ergonomice, pana la incalzitoare de terasa si mic mobilier, oferim tot ce ai nevoie pentru un stil de viata eficient. Beneficiezi de transport si retur gratuit la toate comenzile, eliminand orice grija suplimentara. In plus, prin parteneriatul cu TBI Bank, poti achizitiona produsele dorite acum si sa le platesti mai tarziu in 6 pana la 60 de rate, cu aprobare 100% online. Profita de livrarea rapida si transforma-ti mediul de lucru sau de relaxare cu dotari de top, accesibile oricui. Exploreaza gama noastra diversificata si alege performanta fara compromisuri!",
         "cod_cupon": "",
         "landing_page": "https://doctorshield.ro/",
-        "zile_ramase": 130
+        "zile_ramase": 129
       }
     ],
     "scor_final": 84.2
@@ -3174,14 +3085,14 @@
     "trend": -0.0557,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 7,
+    "zile_ramase": 6,
     "promotii": [
       {
         "nume": "Profită de reducerile la antiparazitare pentru câini și pisici",
         "descriere": "Căpușe, purici, țânțari, paraziți interni? Primăvara vine și cu provocări, nu doar cu vreme frumoasă pentru joacă în natură. Poți preveni toate aceste neplăceri cu antiparazitarele special concepute pentru blănosul tău. Profită de reducerile de până la -60% în luna mai!",
         "cod_cupon": "",
         "landing_page": "https://www.petmart.ro/promotii.html#q=&idx=pm_default_products&p=0&hFR%5Bcategories.level0%5D%5B0%5D=Promotii%20%2F%2F%2F%20PROMOTII%20ANTIPARAZITARE&is_v=1",
-        "zile_ramase": 7
+        "zile_ramase": 6
       }
     ],
     "scor_final": 84.0
@@ -3216,14 +3127,39 @@
     "trend": -0.1852,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 281,
+    "zile_ramase": 279,
     "promotii": [
       {
         "nume": "Oferta 1+1",
         "descriere": "Oferta 1+1",
         "cod_cupon": "",
         "landing_page": "https://www.fara-daunatori.ro/search/oferta/?q=oferta",
-        "zile_ramase": 281
+        "zile_ramase": 279
+      }
+    ],
+    "scor_final": 83.5
+  },
+  {
+    "magazin": "nobilacasa.ro",
+    "url": "https://businessleague.2performant.com/affiliate/program/nobilacasa-ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=43bedc44f&redirect_to=https%3A%2F%2Fbusinessleague.2performant.com%2Faffiliate%2Fprogram%2Fnobilacasa-ro",
+    "categorie": "Home & Garden",
+    "comision": "8.00%",
+    "scor_afiliere": 63.5,
+    "prioritate": "B - Bun de testat",
+    "canal_recomandat": "SEO + Google Ads",
+    "sales_number": 630,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 221,
+    "promotii": [
+      {
+        "nume": "REDUCERI COMBO",
+        "descriere": "REDUCERI COMBO-Cumpără în combo, economisește și bucură-te de cele mai iubite produse, la preț redus!\nAlege bestseller-urile noastre în combo – produsele populare acum sunt mai ieftine împreună!\nOferta este valabilă doar Online în limita stocului disponibil și nu se cumulează cu alte coduri sau vouchere active!\nLink: Link: https://www.nobilacasa.ro/sale/reduceri-combo",
+        "cod_cupon": "",
+        "landing_page": "https://www.nobilacasa.ro/sale/reduceri-combo",
+        "zile_ramase": 221
       }
     ],
     "scor_final": 83.5
@@ -3261,6 +3197,31 @@
     "zile_ramase": 99,
     "promotii": [],
     "scor_final": 83.2
+  },
+  {
+    "magazin": "libris.ro",
+    "url": "s",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=03c7c0ace&redirect_to=s",
+    "categorie": "Books",
+    "comision": "8.00%",
+    "scor_afiliere": 63.1,
+    "prioritate": "B - Bun de testat",
+    "canal_recomandat": "SEO/Blog",
+    "sales_number": 12601,
+    "trend": -0.25670000000000004,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 0,
+    "promotii": [
+      {
+        "nume": "Cadou la alegere? REDUCERI aniversare? Vezi ce SURPRIZE ți-am pregătit de 35 de ani Libris",
+        "descriere": "Dragi afiliati, \n\nZilele acestea sărbătorim 35 de ani de Libris printr-un Book Party de 6 zile! Te așteptăm la Libris Days, petrecerea de carte care se va desfășura la noi acasă, pe libris.ro, între 19 (ora 08:00) și 24 mai. \nAm pregătit REDUCERI de până la 76% și CADOURI la alegere la comenzile de peste 120 lei. Și ce cadouri! ;)\nÎn plus, oferim TRANSPORT GRATUIT la toate comenzile de peste 75 lei, prin curier rapid, oriunde în România.\n\nMulțumim că sunteți alături de noi. \n\nAm încarcat bannere. Spor la conversii!",
+        "cod_cupon": "",
+        "landing_page": "https://www.libris.ro/",
+        "zile_ramase": 0
+      }
+    ],
+    "scor_final": 83.1
   },
   {
     "magazin": "inpuff.ro",
@@ -3428,14 +3389,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 22,
+    "zile_ramase": 21,
     "promotii": [
       {
         "nume": "Atelier Rebul: Cadouri Green Tea la cumpărături + 15% comision",
         "descriere": "Atelier Rebul România este un brand premium de parfumerie, home fragrance și produse pentru îngrijire, cu o moștenire de peste 130 de ani.\n\nPortofoliul include parfumuri, lumânări parfumate, difuzoare cu bețișoare, produse pentru baie și corp, seturi cadou și colecții sezoniere.\n\nCampanie activă: Colecția Green Tea cadou la cumpărături\n\nClienții primesc automat cadouri din colecția Green Tea, în funcție de valoarea comenzii:\n\n• 400 RON: Săpun lichid Green Tea\n• 600 RON: Loțiune de mâini și corp Green Tea\n• 800 RON: Difuzor cu bețișoare Green Tea\n\nTransport gratuit pentru comenzile de peste 300 RON.\n",
         "cod_cupon": "",
         "landing_page": "https://atelierrebul.ro",
-        "zile_ramase": 22
+        "zile_ramase": 21
       }
     ],
     "scor_final": 81.2
@@ -3623,14 +3584,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 7,
+    "zile_ramase": 6,
     "promotii": [
       {
         "nume": "Transport gratuit la comenzi de peste 99 lei",
         "descriere": "In perioda 25-31 mai 2026, la cumparaturi de minim 99 lei. Beneficiezi de transport gratuit.",
         "cod_cupon": "LIVRAREGRATIS",
         "landing_page": "https://www.centini.ro/",
-        "zile_ramase": 7
+        "zile_ramase": 6
       }
     ],
     "scor_final": 78.0
@@ -3665,21 +3626,21 @@
     "trend": -0.3077,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 7,
+    "zile_ramase": 6,
     "promotii": [
       {
         "nume": "Accesorii premium pentru laptop, mouse, tastatură și hub-uri",
         "descriere": "Descoperă gama completă de accesorii Kensington pentru laptop — mouse-uri ergonomice, tastaturi wireless, hub-uri USB și docking stations. Produse certificate, compatibile cu orice laptop sau MacBook, concepute pentru profesioniști care lucrează de acasă sau la birou.",
         "cod_cupon": "",
         "landing_page": "https://www.dacris.net/kensington",
-        "zile_ramase": 7
+        "zile_ramase": 6
       },
       {
         "nume": "Ambalaje HoReCa și consumabile profesionale ",
         "descriere": "Tot ce ai nevoie pentru HoReCa într-un singur loc: ambalaje alimentare, consumabile de unică folosință, tacâmuri, pungi și caserole. Gamă largă, prețuri competitive, livrare rapidă. Disponibile pe dacris.ro.",
         "cod_cupon": "",
         "landing_page": "https://www.dacris.net/administrativ/ambalaje-si-articole-horeca",
-        "zile_ramase": 7
+        "zile_ramase": 6
       }
     ],
     "scor_final": 77.8
@@ -3833,14 +3794,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 7,
+    "zile_ramase": 6,
     "promotii": [
       {
         "nume": "5% Discount la orice comanda",
         "descriere": "Beneficiezi 5% Discount la orice comanda direct in cosul de cumparaturi.",
         "cod_cupon": "",
         "landing_page": "https://bigiottos.com/",
-        "zile_ramase": 7
+        "zile_ramase": 6
       }
     ],
     "scor_final": 74.1
@@ -3892,14 +3853,14 @@
     "trend": -0.5,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 7,
+    "zile_ramase": 6,
     "promotii": [
       {
         "nume": "Reducere de 30% la TOTI ochelarii de vedere",
         "descriere": "Reducere de 30% la TOTI ochelarii de vedere",
         "cod_cupon": "MAI",
         "landing_page": "https://www.optiblu.ro/",
-        "zile_ramase": 7
+        "zile_ramase": 6
       }
     ],
     "scor_final": 73.7
@@ -4087,35 +4048,35 @@
     "trend": -0.3226,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 222,
+    "zile_ramase": 221,
     "promotii": [
       {
         "nume": "Reduceri Sportera.ro de pana la -50% la echipament sportiv",
         "descriere": "Profita acum de promotiile Sportera.ro si reinnoieste-ti garderoba cu reduceri de pana la 50% la o gama larga de echipament sportiv!\n\nGasesti preturi speciale la branduri de top precum Hummel, 4F, Puma si Adidas. Fie ca esti in cautarea unor ghete de fotbal, treninguri confortabile sau accesorii pentru antrenament, acum este momentul ideal sa cumperi mai ieftin.\n\nBeneficiile tale la Sportera:\n👉Reduceri reale de pana la 50% la sute de articole.\n👉Transport GRATUIT pentru toate comenzile care depasesc valoarea de 350 RON.\n👉Livrare rapida prin curier sau Easybox.\n👉Retur simplu si rapid.\nNu rata ocazia! Stocurile sunt limitate si preturile sunt actualizate zilnic. Alege echipamentul care te motiveaza sa fii in forma!",
         "cod_cupon": "",
         "landing_page": "https://sportera.ro/produse/reduceri/",
-        "zile_ramase": 222
+        "zile_ramase": 221
       },
       {
         "nume": "Reduceri Sportera.ro de pana la -50% la Echipament de joc Handbal",
         "descriere": "Echipeaza-te pentru victorie cu noile reduceri Sportera dedicate handbalului! Acum ai preturi speciale la o gama variata de echipamente de joc de la branduri de top precum Hummel si Puma, disponibile pentru barbati, femei si copii.\n\nGaseste tot ce ai nevoie pentru antrenamente si meciuri oficiale:\n👉Tricouri si sorturi de joc realizate din materiale tehnice performante.\n👉Seturi complete si sosete specializate cu reduceri ce depasesc 50%\n👉Echipament pentru copii, inclusiv seturi promo duo ideale pentru micii sportivi.\n\nBeneficiile tale:\n👉Transport GRATUIT pentru comenzile de peste 350 RON.\n👉Gama variata de marimi, de la copii la adulti (pana la 4XL).\n👉Plata flexibila: Ramburs, cash sau cu cardul.",
         "cod_cupon": "",
         "landing_page": "https://sportera.ro/produse/echipament-sportiv/echipament-sportiv-handbal/echipament-de-joc-handbal/",
-        "zile_ramase": 222
+        "zile_ramase": 221
       },
       {
         "nume": "Reducere Sportera.ro de pana la -50% la echipament de joc fotbal",
         "descriere": "Intra in joc cu cele mai bune oferte la echipamentul de fotbal! Sportera.ro iti aduce reduceri de pana la 50% la o selectie variata de articole de la Hummel si Puma, concepute special pentru meciuri si antrenamente intense.\n\nGasesti tot ce ai nevoie pentru a domina terenul:\n👉Tricouri de joc si antrenament: Modele tehnice pentru adulti si copii (ex: Tricou Hummel Essential la pret redus).\n👉Sorturi si jambiere: Completeaza-ti kit-ul cu sorturi rezistente si jambiere Puma Team LIGA la preturi promotionale.\n👉Echipament portar: Protectie maxima cu pantaloni si sorturi Gamepatch Padded la pret special.\n👉Seturi pentru copii: Kit-uri complete Hummel Promo Duo, ideale pentru viitorii campioni.\n\nDe ce sa alegi Sportera?\n👉Reduceri masive: Pana la 50% la branduri premium.\n👉Transport GRATUIT: Pentru toate comenzile de peste 350 RON.\n👉Livrare rapida: Pregateste-te pentru urmatorul meci in cel mai scurt timp.\n👉Plata sigura: Online cu cardul sau ramburs la primirea coletului.\n\nNu lasa victoria la voia intamplarii! Alege echipamentul potrivit si profita de stocurile limitate.",
         "cod_cupon": "",
         "landing_page": "https://sportera.ro/produse/echipament-sportiv/echipament-sportiv-fotbal/echipament-de-joc-fotbal/",
-        "zile_ramase": 222
+        "zile_ramase": 221
       },
       {
         "nume": "Livrare Gratuita Sportera.ro la comenzi de peste 350 lei",
         "descriere": "Profita si comanda cu livrare gratuita echipamentul sportiv mult dorit de la branduri precum: hummel, Adidas, Puma, Select, Molten.",
         "cod_cupon": "",
         "landing_page": "https://sportera.ro/",
-        "zile_ramase": 222
+        "zile_ramase": 221
       }
     ],
     "scor_final": 71.9
@@ -4133,21 +4094,21 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 953,
+    "zile_ramase": 951,
     "promotii": [
       {
         "nume": "Abonează-te la newsletterul nostru az & beneficiază de o reducere de 25Lei la înscriere!",
         "descriere": "",
         "cod_cupon": "",
         "landing_page": "https://www.vidaxl.ro/subscribe-to-newsletter.html",
-        "zile_ramase": 953
+        "zile_ramase": 951
       },
       {
         "nume": "Deals Page: Reduceri de 10% prin codul OFERTE01",
         "descriere": "",
         "cod_cupon": "",
         "landing_page": "https://www.vidaxl.ro/campaign-s-oferte",
-        "zile_ramase": 1317
+        "zile_ramase": 1315
       }
     ],
     "scor_final": 71.9
@@ -4199,24 +4160,41 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 1317,
+    "zile_ramase": 1315,
     "promotii": [
       {
         "nume": "10% намаление",
         "descriere": "",
         "cod_cupon": "",
         "landing_page": "https://www.vidaxl.bg/campaign-s-oferti",
-        "zile_ramase": 1317
+        "zile_ramase": 1315
       },
       {
         "nume": "Абонирайте се за нашия бюлетин днес & получавате отстъпка от 10 лв. при регистрация!",
         "descriere": "",
         "cod_cupon": "",
         "landing_page": "https://www.vidaxl.bg/subscribe-to-newsletter.html",
-        "zile_ramase": 1318
+        "zile_ramase": 1316
       }
     ],
     "scor_final": 70.7
+  },
+  {
+    "magazin": "aldoshoes.com.ro",
+    "url": "https://businessleague.2performant.com/affiliate/program/aldoshoes-com-ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=dc09c3c78&redirect_to=https%3A%2F%2Fbusinessleague.2performant.com%2Faffiliate%2Fprogram%2Faldoshoes-com-ro",
+    "categorie": "Fashion",
+    "comision": "variable sale commission",
+    "scor_afiliere": 55.5,
+    "prioritate": "B - Bun de testat",
+    "canal_recomandat": "TikTok/Reels + SEO",
+    "sales_number": 646,
+    "trend": 0.4,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "scor_final": 70.5
   },
   {
     "magazin": "kidstory.ro",
@@ -4231,14 +4209,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 26,
+    "zile_ramase": 25,
     "promotii": [
       {
         "nume": "Campanie 1 Iunie",
         "descriere": "Reduceri de pana la 50% pentru Ziua Copilului!",
         "cod_cupon": "",
         "landing_page": "https://www.kidstory.ro/promotii-jucarii",
-        "zile_ramase": 26
+        "zile_ramase": 25
       }
     ],
     "scor_final": 70.4
@@ -4259,31 +4237,6 @@
     "zile_ramase": 99,
     "promotii": [],
     "scor_final": 70.0
-  },
-  {
-    "magazin": "tezyo.ro",
-    "url": "https://businessleague.2performant.com/affiliate/program/tezyo-ro-by-otter-distribution",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=8ca00d3f6&redirect_to=https%3A%2F%2Fbusinessleague.2performant.com%2Faffiliate%2Fprogram%2Ftezyo-ro-by-otter-distribution",
-    "categorie": "Fashion",
-    "comision": "variable sale commission",
-    "scor_afiliere": 49.9,
-    "prioritate": "C - Secundar",
-    "canal_recomandat": "TikTok/Reels + SEO",
-    "sales_number": 5441,
-    "trend": -0.08,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 0,
-    "promotii": [
-      {
-        "nume": "Early Summer Sale - Pana la 44% reducere",
-        "descriere": "E momentul pentru un refresh de sezon. Descoperă selecția Early Summer Sale la prețuri speciale, cu reduceri de pana la 44%. SELECTAT de TEZYO\n\n🎉 Materialele grafice aferente campaniei sunt disponibile aici :  https://we.tl/t-9gjez5nNEjaOej6E\n",
-        "cod_cupon": "",
-        "landing_page": "https://www.tezyo.ro/reduceri",
-        "zile_ramase": 0
-      }
-    ],
-    "scor_final": 69.9
   },
   {
     "magazin": "sofiline.ro",
@@ -4315,14 +4268,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 129,
+    "zile_ramase": 128,
     "promotii": [
       {
         "nume": "Promotie -33% Mai - Septembrie pentru oricare 2 produse identice de la Melegatti Pharma",
         "descriere": "Promotie -33% reducere in lunie Mai - Septembrie pentru oricare 2 produse identice de la Melegatti Pharma, nu este necesara aplicarea unui voucher pentru aceasta promotie.",
         "cod_cupon": "",
         "landing_page": "https://www.zephyrlabs.ro/promo-ianuarie-aprilie",
-        "zile_ramase": 129
+        "zile_ramase": 128
       }
     ],
     "scor_final": 69.6
@@ -4379,31 +4332,6 @@
     "scor_final": 68.6
   },
   {
-    "magazin": "gryxx.ro",
-    "url": "https://businessleague.2performant.com/affiliate/program/gryxx-ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=f48f1214a&redirect_to=https%3A%2F%2Fbusinessleague.2performant.com%2Faffiliate%2Fprogram%2Fgryxx-ro",
-    "categorie": "Fashion",
-    "comision": "variable sale commission",
-    "scor_afiliere": 48.3,
-    "prioritate": "C - Secundar",
-    "canal_recomandat": "TikTok/Reels + SEO",
-    "sales_number": 4442,
-    "trend": -0.1307,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 0,
-    "promotii": [
-      {
-        "nume": "Summer Sale Start Level - Pana la 57% reducere",
-        "descriere": "Your boldest summer starts now. 🔥 Descoperă EARLY SUMMER SALE la GRYXX și prinde modelele de sezon la prețuri reduse cu pana la 57%.\n\n🎉 Materialele grafice aferente campaniei sunt disponibile aici : https://we.tl/t-rmFL0XM0smi4wbU3\n\n",
-        "cod_cupon": "",
-        "landing_page": "https://www.gryxx.ro/reduceri",
-        "zile_ramase": 0
-      }
-    ],
-    "scor_final": 68.3
-  },
-  {
     "magazin": "apiland.ro",
     "url": "https://businessleague.2performant.com/affiliate/program/apiland-ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=6a191caf4&redirect_to=https%3A%2F%2Fbusinessleague.2performant.com%2Faffiliate%2Fprogram%2Fapiland-ro",
@@ -4433,14 +4361,14 @@
     "trend": -0.036000000000000004,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 10,
+    "zile_ramase": 9,
     "promotii": [
       {
         "nume": "Sezonul Creatorilor a început! Cod EXTRA pentru reduceri de până la 80% la vlogging gear!",
         "descriere": "E timpul să creezi fără limite!  \nÎn Sezonul Creatorilor, ai un cod EXTRA care îți aduce până la 80% reducere la echipamentele de vlogging și content creation.\n\nAplică EXTRA în coș și vezi cum prețurile scad instant.\nPerfect pentru:\n- cei care vor să înceapă vlogging-ul\n- creatori de TikTok, Reels, YouTube\n- upgrade de gear pentru proiecte noi\n\nTu aduci ideile. Noi aducem echipamentul. Aplica codul EXTRA în coș și bucură-te de reduceri!",
         "cod_cupon": "",
         "landing_page": "https://www.f64.ro/oferte-speciale",
-        "zile_ramase": 10
+        "zile_ramase": 9
       }
     ],
     "scor_final": 67.6
@@ -4577,14 +4505,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
+    "zile_ramase": 98,
     "promotii": [
       {
         "nume": "Set 4 avertizori pescuit cu statie Cool Angel – Cel mai bun pret din piata! (Best Seller 7% comision)",
         "descriere": "Set 4 avertizori pescuit cu statie Cool Angel – Pret IMBATABIL \n\nhttps://sculepescuit.ro/product/set-4-avertizori-pescuit-cu-statie-cool-angel-4-culori-si-geanta-protectie-f5w/\n\nhttps://www.youtube.com/watch?v=a0J8RgQObfc\n\nProfitati acum de cea mai buna oferta la Statie de pescuit cu senzori si penar! Am redus pretul la minimul istoric pentru a va ajuta sa generati conversii rapide. Este un produs esential pentru orice pescar, recunoscut pentru fiabilitate si performanta.\n\nDe ce sa promovezi aceasta oferta?\n\nCel mai mic pret: Garantam un pret mai mic decat TOTI competitoriI, ceea ce inseamna o rata de conversie uriasa pentru traficul tau.\n\nStoc Limitat: Produsul este la mare cautare, iar stocurile se epuizeaza rapid – creeaza urgenta in randul urmaritorilor tai!\n\nComision 7%: Primesti comision plin pentru un produs care se vinde singur.\n\nLivrare Rapida: Pescarii vor produsele ieri; noi le trimitem imediat pentru a asigura satisfactia clientului tau.\n\nBeneficii pentru clienti:\n\nCalitate premium LA PRET DE ENGROSS.\n\nGarantie inclusa si suport tehnic de la echipa de pescari SculePescuit.ro.\n\nPret direct de importator.",
         "cod_cupon": "",
         "landing_page": "https://sculepescuit.ro/",
-        "zile_ramase": 99
+        "zile_ramase": 98
       }
     ],
     "scor_final": 66.0
@@ -4602,14 +4530,14 @@
     "trend": -0.3636,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 8,
+    "zile_ramase": 7,
     "promotii": [
       {
         "nume": "Mai mult confort pentru un stil de viata mai bun",
         "descriere": "Intre 1 si 31 mai ai reduceri de pana la -25% la o selectie de paturi, saltele si canapele Prestige Home. Alege-ti preferatele si bucura-te de livrare rapida din stoc! ",
         "cod_cupon": "",
         "landing_page": "https://www.prestigehome.ro/collections/reduceri-de-25-%C8%99i-livrare-rapida-din-stoc-mai",
-        "zile_ramase": 8
+        "zile_ramase": 7
       }
     ],
     "scor_final": 64.7
@@ -4627,14 +4555,14 @@
     "trend": -0.2857,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 37,
+    "zile_ramase": 36,
     "promotii": [
       {
         "nume": "Cu JANTA.RO si Autonom Protect Nu ramai in pana",
         "descriere": "Salut,\n\nAvem o campanie nou. La fiecare comanda de 4 anvelope sau 4 roti complete clientii primesc GRATIS Autonom Protect pe tot teritoriul României.\n\nBeneficii:\n\nIn caz de pana:\n\n-tractare pana cel mai apropiat service pe o distanta de 50 km pe sens.\n\nIn caz de accident\n\n-tractare fara limita de kilometri pana la cea mai apropiata unitate de service din reteaua Autonom Protect.\n-consultanta dosar dauna\n-masina la schimb in baza normei RCA\n\nDurata campaniei: 19.05.2026-30.06.2026\n\nAsigurarea este valabila 365 de zile.\n\nBannerele campaniei le gasiti pe link-ul urmator: https://drive.google.com/drive/folders/1YMJ8FVrmfe43gW9mPo94XVlN8b72C2ST?usp=sharing\n\nRegulamentul campaniei il gasiti aici: https://www.blog.janta.ro/post/cu-janta-ro-si-autonom-protect-nu-ramai-in-pana",
         "cod_cupon": "",
         "landing_page": "https://www.janta.ro/wheelsportal/84677/start",
-        "zile_ramase": 37
+        "zile_ramase": 36
       }
     ],
     "scor_final": 64.1
@@ -4686,21 +4614,21 @@
     "trend": -0.4,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 8,
+    "zile_ramase": 7,
     "promotii": [
       {
         "nume": "Discount-uri atractive la Pavele, Dale si Borduri din cauciuc 100% reciclat - amenajeaza-ti gradina eco friendly si cu stil",
         "descriere": "Aboneaza-te la newsletter-ul nostru si beneficiezi de 10% extra discount la prima comanda. Pentru plata efectuata cu cardul online, se ofera 5% extra discount. Orice comanda mai mare de 190 lei beneficiaza de transport gratuit oriunde in Romania. Pentru comenzile mai mari de 500 lei, se ofera extra discount de 10%. Oferim si serviciul de plata in rate, prin partenerul nostru, TBI Bank.",
         "cod_cupon": "",
         "landing_page": "https://davopro.ro/pavele-dale-cauciuc",
-        "zile_ramase": 8
+        "zile_ramase": 7
       },
       {
         "nume": "Folii de geam cu protectie solara - Protejeaza-ti casa de efectele razelor UV",
         "descriere": "Categoria cuprinde folii de geam autoadezive sau statice, fumurii sau cu efect de oglinda, cu indice ridicat de protectie impotriva razelor UV. Se ofera 10% extra discount la prima comanda dupa abonare. Pentru plata efectuata cu cardul online, se ofera 5% extra discount. Orice comanda mai mare de 190 lei beneficiaza de transport gratuit oriunde in Romania. Pentru comenzile mai mari de 500 lei, se ofera extra discount de 10%. Oferim si serviciul de plata in rate, prin partenerul nostru, TBI Bank.",
         "cod_cupon": "",
         "landing_page": "https://davopro.ro/folie-solara",
-        "zile_ramase": 8
+        "zile_ramase": 7
       }
     ],
     "scor_final": 63.7
@@ -5296,14 +5224,14 @@
     "trend": -0.5,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 7,
+    "zile_ramase": 6,
     "promotii": [
       {
         "nume": "Spring Sale - până la 70% reducere",
         "descriere": "Reduceri de Primăvară – Echipamente Fitness la Prețuri Speciale\nPrimăvara este momentul ideal pentru un nou început. Zilele devin mai lungi, energia crește, iar motivația pentru mișcare revine. În această perioadă lansăm Reducerile de Primăvară, o selecție specială de echipamente fitness pentru acasă și pentru săli de fitness, disponibile la prețuri promoționale.\n\nFie că îți dorești să îți amenajezi propria zonă de antrenament sau să îți modernizezi sala de fitness, acum este momentul potrivit să investești în echipamente performante. În această categorie găsești aparate cardio, echipamente de forță și accesorii esențiale pentru antrenamente complete, concepute pentru a te ajuta să îți atingi obiectivele mai rapid și mai eficient.\n\nPrimăvara este perioada în care se construiesc rezultatele pentru vară. Cu antrenamente constante și echipamentele potrivite, îți poți îmbunătăți condiția fizică, rezistența și tonusul muscular înainte de sezonul concediilor.\n\nProfită de Reducerile de Primăvară și descoperă echipamente fitness de calitate, potrivite atât pentru antrenamentele de acasă, cât și pentru utilizare profesională în săli de fitness.\n\nAlege Fitlife - pasiune pentru sport, importator și distribuitor direct în România.",
         "cod_cupon": "",
         "landing_page": "https://fitlife.ro/spring-sale",
-        "zile_ramase": 7
+        "zile_ramase": 6
       }
     ],
     "scor_final": 56.3
@@ -5389,14 +5317,14 @@
     "trend": -0.44439999999999996,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 15,
+    "zile_ramase": 14,
     "promotii": [
       {
         "nume": "Oferta pentru blonde si nu doar",
         "descriere": "Părul tău merită îngrijire specială ✨\nPăstrează nuanța rece, strălucirea și aspectul sănătos al părului blond sau vopsit cu produsele profesionale preferate.\nProfită acum de reduceri speciale la șampoane, măști, tratamente și produse pentru protecția culorii — pentru un blond luminos, fără compromisuri. \n25% REDUCERE la toate produsele ingrijire specială pentru păr vopsi și blond si masti nuantatoare.\nDescoperă gamele profesionale de produse create special pentru parul tău!",
         "cod_cupon": "",
         "landing_page": "https://www.estel.ro/ro/promotions",
-        "zile_ramase": 15
+        "zile_ramase": 14
       }
     ],
     "scor_final": 55.5
@@ -5963,6 +5891,23 @@
     "scor_final": 50.3
   },
   {
+    "magazin": "tezyo.ro",
+    "url": "https://businessleague.2performant.com/affiliate/program/tezyo-ro-by-otter-distribution",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=8ca00d3f6&redirect_to=https%3A%2F%2Fbusinessleague.2performant.com%2Faffiliate%2Fprogram%2Ftezyo-ro-by-otter-distribution",
+    "categorie": "Fashion",
+    "comision": "variable sale commission",
+    "scor_afiliere": 49.9,
+    "prioritate": "C - Secundar",
+    "canal_recomandat": "TikTok/Reels + SEO",
+    "sales_number": 5441,
+    "trend": -0.08,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "scor_final": 49.9
+  },
+  {
     "magazin": "aosom.ro",
     "url": "https://businessleague.2performant.com/affiliate/program/aosom-ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=fff117bae&redirect_to=https%3A%2F%2Fbusinessleague.2performant.com%2Faffiliate%2Fprogram%2Faosom-ro",
@@ -6097,6 +6042,23 @@
     "zile_ramase": 99,
     "promotii": [],
     "scor_final": 48.7
+  },
+  {
+    "magazin": "gryxx.ro",
+    "url": "https://businessleague.2performant.com/affiliate/program/gryxx-ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=f48f1214a&redirect_to=https%3A%2F%2Fbusinessleague.2performant.com%2Faffiliate%2Fprogram%2Fgryxx-ro",
+    "categorie": "Fashion",
+    "comision": "variable sale commission",
+    "scor_afiliere": 48.3,
+    "prioritate": "C - Secundar",
+    "canal_recomandat": "TikTok/Reels + SEO",
+    "sales_number": 4442,
+    "trend": -0.1307,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "scor_final": 48.3
   },
   {
     "magazin": "husdago.ro",
