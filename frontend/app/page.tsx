@@ -14,10 +14,12 @@ interface Magazin {
   magazin: string;
   url: string;
   url_afiliat: string;
+  logo_url?: string;
   categorie: string;
   comision: string;
   scor_afiliere: number;
   scor_final: number;
+  rank?: number;
   prioritate: string;
   canal_recomandat: string;
   sales_number: number;
@@ -31,11 +33,6 @@ interface Magazin {
 function getDomain(url: string): string {
   try { return new URL(url).hostname.replace("www.", ""); }
   catch { return ""; }
-}
-
-function getFavicon(url: string): string {
-  const domain = getDomain(url);
-  return domain ? `https://logo.clearbit.com/${domain}` : "";
 }
 
 function maskCod(cod: string): string {
@@ -170,8 +167,21 @@ export default function Home() {
         )}
       </div>
 
+      {/* NEWSLETTER */}
+      <div className="bg-gradient-to-r from-orange-500 to-red-500 py-12 px-4 mt-12">
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="text-2xl font-black text-white mb-2">
+            🎁 Primește ofertele zilei pe email
+          </h2>
+          <p className="text-orange-100 text-sm mb-6">
+            Abonează-te și fii primul care află codurile de reducere exclusive. Fără spam, dezabonare oricând.
+          </p>
+          <NewsletterForm />
+        </div>
+      </div>
+
       {/* FOOTER */}
-      <footer className="bg-gray-900 text-gray-400 py-10 px-4 mt-12">
+      <footer className="bg-gray-900 text-gray-400 py-10 px-4 mt-0">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center gap-2 mb-4">
             <div className="bg-orange-500 text-white font-black text-sm px-2 py-0.5 rounded">Am</div>
@@ -196,7 +206,7 @@ function Card({ m, revealed, copiat, onCopiere }: {
   onCopiere: (id: string, cod: string) => void;
 }) {
   const promo = m.promotii[0];
-  const favicon = getFavicon(m.url);
+  const logoSrc = m.logo_url || "";
   const discount = promo ? (extractDiscount(promo.nume) || extractDiscount(promo.descriere || "")) : null;
   const numeMagazin = numeAfisat(m.magazin);
   const initiala = numeMagazin.charAt(0).toUpperCase();
@@ -214,16 +224,16 @@ function Card({ m, revealed, copiat, onCopiere }: {
 
       {/* LOGO AREA */}
       <div className="flex flex-col items-center justify-center pt-6 pb-3 px-4">
-        <div className="w-20 h-20 rounded-2xl overflow-hidden flex items-center justify-center mb-3 bg-gray-50 border border-gray-100">
-          {favicon && imgOk ? (
+        <div className="w-20 h-20 rounded-2xl overflow-hidden flex items-center justify-center mb-3 bg-white border border-gray-100 p-1">
+          {logoSrc && imgOk ? (
             <img
-              src={favicon}
+              src={logoSrc}
               alt={numeMagazin}
-              className="w-16 h-16 object-contain"
+              className="w-full h-full object-contain"
               onError={() => setImgOk(false)}
             />
           ) : (
-            <div className={`w-full h-full ${culoare} flex items-center justify-center`}>
+            <div className={`w-full h-full rounded-xl ${culoare} flex items-center justify-center`}>
               <span className="text-white font-black text-3xl">{initiala}</span>
             </div>
           )}
@@ -320,5 +330,37 @@ function Card({ m, revealed, copiat, onCopiere }: {
         )}
       </div>
     </div>
+  );
+}
+
+function NewsletterForm() {
+  const [email, setEmail] = useState("");
+  const [status, setStatus] = useState<"idle" | "ok" | "err">("idle");
+
+  function trimite(e: React.FormEvent) {
+    e.preventDefault();
+    if (!email.includes("@")) { setStatus("err"); return; }
+    // TODO: conecteaza la Brevo API
+    setStatus("ok");
+    setEmail("");
+  }
+
+  return (
+    <form onSubmit={trimite} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+      <input
+        type="email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        placeholder="adresa@email.ro"
+        className="flex-1 px-4 py-3 rounded-xl text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-white"
+      />
+      <button
+        type="submit"
+        className="bg-gray-900 hover:bg-gray-800 text-white font-bold px-6 py-3 rounded-xl text-sm transition-colors whitespace-nowrap"
+      >
+        {status === "ok" ? "✓ Abonat!" : "Abonează-te"}
+      </button>
+      {status === "err" && <p className="text-white text-xs mt-1">Introdu un email valid.</p>}
+    </form>
   );
 }
