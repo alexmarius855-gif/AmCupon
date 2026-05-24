@@ -93,5 +93,49 @@ export default async function PaginaMagazin({
 
   if (!m) notFound();
 
-  return <MagazinClient magazin={m} />;
+  const nume = numeAfisat(m.magazin);
+  const pageUrl = `https://amcupon.ro/reduceri/${slug}`;
+
+  const breadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "AmCupon.ro", item: "https://amcupon.ro" },
+      { "@type": "ListItem", position: 2, name: `Coduri reducere ${nume}`, item: pageUrl },
+    ],
+  };
+
+  const offerList = m.promotii.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: `Coduri reducere ${nume} ${new Date().getFullYear()}`,
+    url: pageUrl,
+    itemListElement: m.promotii.map((promo, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: {
+        "@type": "Offer",
+        name: promo.nume,
+        description: promo.descriere || promo.nume,
+        url: pageUrl,
+        availability: "https://schema.org/InStock",
+        ...(promo.cod_cupon ? { disambiguatingDescription: `Cod: ${promo.cod_cupon}` } : {}),
+        seller: {
+          "@type": "Organization",
+          name: nume,
+          url: m.url,
+        },
+      },
+    })),
+  } : null;
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      {offerList && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(offerList) }} />
+      )}
+      <MagazinClient magazin={m} />
+    </>
+  );
 }

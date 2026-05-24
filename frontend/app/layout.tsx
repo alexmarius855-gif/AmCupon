@@ -22,6 +22,28 @@ export const metadata: Metadata = {
   },
 };
 
+const siteJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://amcupon.ro/#website",
+      "url": "https://amcupon.ro",
+      "name": "AmCupon.ro",
+      "description": "Coduri de reducere verificate și oferte exclusive de la cele mai mari magazine online din România.",
+      "inLanguage": "ro-RO",
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://amcupon.ro/#organization",
+      "name": "AmCupon.ro",
+      "url": "https://amcupon.ro",
+      "email": "contact@amcupon.ro",
+      "sameAs": ["https://amcupon.ro"],
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -32,6 +54,12 @@ export default function RootLayout({
       lang="ro"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}
+        />
+      </head>
       <body className="min-h-full flex flex-col">
         {children}
         <Analytics />
