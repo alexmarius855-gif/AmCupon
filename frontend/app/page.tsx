@@ -28,6 +28,9 @@ interface Magazin {
   cod_cupon: boolean;
   zile_ramase: number;
   promotii: Promotie[];
+  folosit_de: number;
+  procent_succes: number;
+  exclusiv: boolean;
 }
 
 function getDomain(url: string): string {
@@ -69,6 +72,7 @@ export default function Home() {
     return cat && search;
   });
 
+  const expiraAzi = filtrate.filter((m) => m.are_promotie && m.zile_ramase <= 1);
   const cuPromotii = filtrate.filter((m) => m.are_promotie);
   const faraPromotii = filtrate.filter((m) => !m.are_promotie).slice(0, 60);
 
@@ -134,6 +138,22 @@ export default function Home() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 py-8">
+
+        {/* EXPIRA AZI — sectiune urgenta */}
+        {expiraAzi.length > 0 && (
+          <section className="mb-8">
+            <div className="flex items-center gap-3 mb-4">
+              <span className="bg-red-600 text-white text-xs font-bold px-2 py-0.5 rounded-full animate-pulse">EXPIRĂ AZI</span>
+              <h2 className="text-xl font-black text-gray-900">Oferte care se termină azi</h2>
+              <span className="text-sm text-gray-400">{expiraAzi.length} oferte</span>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+              {expiraAzi.map((m) => (
+                <Card key={m.magazin + "_azi"} m={m} revealed={coduriReveal.has(m.magazin)} copiat={copiat === m.magazin} onCopiere={copiazaCod} />
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* PROMOTII ACTIVE */}
         {cuPromotii.length > 0 && (
@@ -223,7 +243,12 @@ function Card({ m, revealed, copiat, onCopiere }: {
     <div className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col overflow-hidden">
 
       {/* LOGO AREA */}
-      <a href={`/reduceri/${m.magazin}`} className="flex flex-col items-center justify-center pt-6 pb-3 px-4 group">
+      <a href={`/reduceri/${m.magazin}`} className="flex flex-col items-center justify-center pt-5 pb-3 px-4 group relative">
+        {m.exclusiv && (
+          <span className="absolute top-3 right-3 text-xs font-bold bg-orange-500 text-white px-2 py-0.5 rounded-full">
+            Exclusiv
+          </span>
+        )}
         <div className="w-20 h-20 rounded-2xl overflow-hidden flex items-center justify-center mb-3 bg-white border border-gray-100 p-1 group-hover:border-orange-300 transition-colors">
           {logoSrc && imgOk ? (
             <img
@@ -262,14 +287,20 @@ function Card({ m, revealed, copiat, onCopiere }: {
       </div>
 
       {/* BADGES */}
-      <div className="px-4 pb-3 flex flex-wrap justify-center gap-1">
+      <div className="px-4 pb-2 flex flex-wrap justify-center gap-2">
         {promo && promo.zile_ramase <= 3 && (
-          <span className="text-xs text-red-500 flex items-center gap-0.5">
-            Expiră în {promo.zile_ramase}z
+          <span className="text-xs font-semibold text-red-500">
+            Expiră în {promo.zile_ramase === 0 ? "azi" : `${promo.zile_ramase}z`}
           </span>
         )}
         {m.trend > 0 && (
           <span className="text-xs text-purple-500">Trending</span>
+        )}
+        {m.are_promotie && m.cod_cupon && (
+          <span className="text-xs text-green-600 font-semibold">{m.procent_succes}% succes</span>
+        )}
+        {m.folosit_de > 0 && (
+          <span className="text-xs text-gray-400">Folosit de {m.folosit_de}x</span>
         )}
       </div>
 

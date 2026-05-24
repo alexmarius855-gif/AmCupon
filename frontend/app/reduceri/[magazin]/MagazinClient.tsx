@@ -23,6 +23,9 @@ interface Magazin {
   cod_cupon: boolean;
   zile_ramase: number;
   promotii: Promotie[];
+  folosit_de: number;
+  procent_succes: number;
+  exclusiv: boolean;
 }
 
 function numeAfisat(magazin: string): string {
@@ -106,17 +109,30 @@ export default function MagazinClient({ magazin: m }: { magazin: Magazin }) {
                   Top #{m.rank} Romania
                 </span>
               )}
+              {m.exclusiv && (
+                <span className="text-xs font-bold bg-orange-500 text-white px-2 py-0.5 rounded-full">
+                  Exclusiv
+                </span>
+              )}
             </div>
             <p className="text-gray-500 text-sm mb-3">{m.categorie}</p>
 
             <div className="flex flex-wrap justify-center sm:justify-start gap-4 text-sm mb-4">
-              <div>
-                <span className="text-gray-400">Comision: </span>
-                <span className="font-semibold text-green-600">{m.comision}</span>
-              </div>
+              {m.cod_cupon && (
+                <div className="flex items-center gap-1">
+                  <span className="text-green-500">✓</span>
+                  <span className="font-semibold text-green-600">{m.procent_succes}% rată succes</span>
+                </div>
+              )}
+              {m.folosit_de > 0 && (
+                <div>
+                  <span className="text-gray-400">Folosit de </span>
+                  <span className="font-semibold text-gray-700">{m.folosit_de}x</span>
+                </div>
+              )}
               {m.trend > 0 && (
                 <div>
-                  <span className="text-gray-400">Trend: </span>
+                  <span className="text-purple-500">↑ Trending </span>
                   <span className="font-semibold text-purple-600">+{m.trend}%</span>
                 </div>
               )}

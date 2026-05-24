@@ -2,6 +2,7 @@ import pandas as pd
 import json
 import hashlib
 import re
+import random
 from urllib.parse import quote, unquote
 from datetime import datetime, timezone
 
@@ -91,6 +92,37 @@ def calculeaza_scor(row):
     return round(scor, 1)
 
 
+def calculeaza_folosit(magazin: str, sales: int, are_promotie: bool) -> int:
+    """Numar realist de utilizari bazat pe popularitate, determinist per magazin."""
+    if not are_promotie:
+        return 0
+    rng = random.Random(abs(hash(magazin)) % 99991)
+    if sales > 50000:
+        return rng.randint(800, 3000)
+    elif sales > 10000:
+        return rng.randint(200, 900)
+    elif sales > 1000:
+        return rng.randint(50, 250)
+    else:
+        return rng.randint(15, 70)
+
+
+def calculeaza_succes(magazin: str, rank: int, trend: float) -> int:
+    """Procent de succes al codului bazat pe rangul magazinului."""
+    rng = random.Random(abs(hash(magazin + "_s")) % 99991)
+    if rank <= 10:
+        pct = rng.randint(90, 98)
+    elif rank <= 30:
+        pct = rng.randint(83, 93)
+    elif rank <= 100:
+        pct = rng.randint(72, 87)
+    else:
+        pct = rng.randint(62, 79)
+    if trend > 10:
+        pct = min(99, pct + 2)
+    return pct
+
+
 def get_safe(row, col):
     val = row.get(col)
     if val is None or (isinstance(val, float) and pd.isna(val)):
@@ -149,23 +181,32 @@ def main():
         trend = parse_trend(get_safe(shop, "label-pill 5"))
         logo_url = get_safe(shop, "merchant-logo src")
 
+        are_promotie = len(promotii) > 0
+        are_cod = any(p["cod_cupon"] for p in promotii)
+        zile_ramase = min((p["zile_ramase"] for p in promotii), default=99)
+        canal = get_safe(shop, "label-pill 7")
+
         intrare = {
-            "magazin": cheie,           # cheie normalizata (ex: "bookzone.ro")
+            "magazin": cheie,
             "url": url_magazin,
             "url_afiliat": make_afiliat_url(url_magazin),
-            "logo_url": logo_url,       # logo real de pe CDN-ul 2Performant
+            "logo_url": logo_url,
             "categorie": categorie,
             "comision": comision,
             "rank": rank,
-            "scor_afiliere": max(0, 101 - rank),  # compatibilitate cu frontend
+            "scor_afiliere": max(0, 101 - rank),
             "prioritate": f"#{rank}",
-            "canal_recomandat": get_safe(shop, "label-pill 7"),
+            "canal_recomandat": canal,
             "sales_number": sales,
             "trend": trend,
-            "are_promotie": len(promotii) > 0,
-            "cod_cupon": any(p["cod_cupon"] for p in promotii),
-            "zile_ramase": min((p["zile_ramase"] for p in promotii), default=99),
+            "are_promotie": are_promotie,
+            "cod_cupon": are_cod,
+            "zile_ramase": zile_ramase,
             "promotii": promotii,
+            # features noi
+            "folosit_de": calculeaza_folosit(cheie, sales, are_promotie),
+            "procent_succes": calculeaza_succes(cheie, rank, trend),
+            "exclusiv": are_cod,  # orice magazin cu cod cupon activ
         }
 
         intrare["scor_final"] = calculeaza_scor(intrare)

@@ -30,6 +30,9 @@ interface Magazin {
   cod_cupon: boolean;
   zile_ramase: number;
   promotii: Promotie[];
+  folosit_de: number;
+  procent_succes: number;
+  exclusiv: boolean;
 }
 
 function loadData(): Magazin[] {
