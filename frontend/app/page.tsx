@@ -223,8 +223,8 @@ function Card({ m, revealed, copiat, onCopiere }: {
     <div className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col overflow-hidden">
 
       {/* LOGO AREA */}
-      <div className="flex flex-col items-center justify-center pt-6 pb-3 px-4">
-        <div className="w-20 h-20 rounded-2xl overflow-hidden flex items-center justify-center mb-3 bg-white border border-gray-100 p-1">
+      <a href={`/reduceri/${m.magazin}`} className="flex flex-col items-center justify-center pt-6 pb-3 px-4 group">
+        <div className="w-20 h-20 rounded-2xl overflow-hidden flex items-center justify-center mb-3 bg-white border border-gray-100 p-1 group-hover:border-orange-300 transition-colors">
           {logoSrc && imgOk ? (
             <img
               src={logoSrc}
@@ -238,9 +238,9 @@ function Card({ m, revealed, copiat, onCopiere }: {
             </div>
           )}
         </div>
-        <h3 className="font-black text-gray-900 text-base text-center">{numeMagazin}</h3>
+        <h3 className="font-black text-gray-900 text-base text-center group-hover:text-orange-500 transition-colors">{numeMagazin}</h3>
         <span className="text-xs text-gray-400 mt-0.5">{m.categorie}</span>
-      </div>
+      </a>
 
       {/* LABEL */}
       <div className="px-4 pb-2 text-center">
