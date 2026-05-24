@@ -35,19 +35,29 @@ function getDomain(url: string): string {
 
 function getFavicon(url: string): string {
   const domain = getDomain(url);
-  return domain ? `https://www.google.com/s2/favicons?domain=${domain}&sz=64` : "";
+  return domain ? `https://logo.clearbit.com/${domain}` : "";
+}
+
+function maskCod(cod: string): string {
+  if (!cod || cod.length <= 4) return cod;
+  return cod.slice(0, 4) + "*".repeat(Math.min(cod.length - 4, 6));
 }
 
 function extractDiscount(text: string): string | null {
-  const m = text.match(/(\d+)\s*%/);
+  const m = text?.match(/(\d+)\s*%/);
   return m ? m[1] + "%" : null;
+}
+
+function numeAfisat(magazin: string): string {
+  return magazin.split(".")[0].replace(/-/g, " ")
+    .split(" ").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
 }
 
 export default function Home() {
   const [magazine, setMagazine] = useState<Magazin[]>([]);
   const [filtru, setFiltru] = useState("toate");
   const [cautare, setCautare] = useState("");
-  const [coduriAratate, setCoduriAratate] = useState<Set<string>>(new Set());
+  const [coduriReveal, setCoduriReveal] = useState<Set<string>>(new Set());
   const [copiat, setCopiat] = useState<string | null>(null);
 
   useEffect(() => {
@@ -65,64 +75,61 @@ export default function Home() {
   const cuPromotii = filtrate.filter((m) => m.are_promotie);
   const faraPromotii = filtrate.filter((m) => !m.are_promotie).slice(0, 60);
 
-  function arataCod(id: string, cod: string) {
-    setCoduriAratate((prev) => new Set(prev).add(id));
+  function copiazaCod(id: string, cod: string) {
+    setCoduriReveal((prev) => new Set(prev).add(id));
     navigator.clipboard.writeText(cod).catch(() => {});
     setCopiat(id);
-    setTimeout(() => setCopiat(null), 2500);
+    setTimeout(() => setCopiat(null), 3000);
   }
 
   return (
     <div className="min-h-screen bg-gray-50">
       {/* HEADER */}
       <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-6">
-          <a href="/" className="flex items-center gap-2 shrink-0">
-            <div className="bg-orange-500 text-white font-black text-lg px-2 py-1 rounded-lg">Am</div>
+        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-4">
+          <a href="/" className="flex items-center gap-1.5 shrink-0">
+            <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
             <span className="font-black text-gray-900 text-xl">Cupon</span>
             <span className="text-orange-500 font-black text-xl">.ro</span>
           </a>
-          <div className="flex-1 relative">
-            <input
-              type="text"
-              placeholder="Caută magazin sau cod reducere..."
-              value={cautare}
-              onChange={(e) => setCautare(e.target.value)}
-              className="w-full border border-gray-300 rounded-full px-5 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent"
-            />
-            <svg className="absolute right-4 top-2.5 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="flex-1 relative max-w-2xl">
+            <svg className="absolute left-3 top-2.5 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
+            <input
+              type="text"
+              placeholder="Answear, Farmec, Noriel..."
+              value={cautare}
+              onChange={(e) => setCautare(e.target.value)}
+              className="w-full border border-gray-300 rounded-full pl-9 pr-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400"
+            />
           </div>
-          <div className="hidden md:flex items-center gap-1 text-sm text-gray-500 shrink-0">
-            <span className="w-2 h-2 bg-green-500 rounded-full inline-block"></span>
-            <span>{magazine.length} magazine active</span>
-          </div>
+          <nav className="hidden md:flex items-center gap-5 text-sm font-medium text-gray-600">
+            <a href="#promotii" className="hover:text-orange-500 transition-colors">Promoții</a>
+            <a href="#magazine" className="hover:text-orange-500 transition-colors">Magazine</a>
+          </nav>
         </div>
       </header>
 
       {/* HERO */}
-      <div className="bg-gradient-to-br from-orange-500 to-red-500 text-white py-10 px-4">
-        <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-3xl md:text-4xl font-black mb-2">
-            Cele mai bune coduri de reducere din România
+      <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white py-8 px-4">
+        <div className="max-w-7xl mx-auto">
+          <h1 className="text-2xl md:text-3xl font-black mb-1">
+            Coduri de reducere verificate din România
           </h1>
-          <p className="text-orange-100 text-sm md:text-base mb-6">
+          <p className="text-orange-100 text-sm mb-4">
             {cuPromotii.length} promoții active · {magazine.length} magazine partenere · Actualizat zilnic
           </p>
-          {/* CATEGORII */}
-          <div className="flex flex-wrap justify-center gap-2">
-            {categorii.slice(0, 10).map((c) => (
+          <div className="flex flex-wrap gap-2">
+            {categorii.slice(0, 12).map((c) => (
               <button
                 key={c}
                 onClick={() => setFiltru(c)}
-                className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all ${
-                  filtru === c
-                    ? "bg-white text-orange-600 shadow-md"
-                    : "bg-white/20 text-white hover:bg-white/30"
+                className={`px-3 py-1 rounded-full text-xs font-semibold transition-all ${
+                  filtru === c ? "bg-white text-orange-600 shadow" : "bg-white/20 text-white hover:bg-white/30"
                 }`}
               >
-                {c === "toate" ? "Toate" : c}
+                {c === "toate" ? "Toate categoriile" : c}
               </button>
             ))}
           </div>
@@ -133,43 +140,30 @@ export default function Home() {
 
         {/* PROMOTII ACTIVE */}
         {cuPromotii.length > 0 && (
-          <section className="mb-10">
+          <section id="promotii" className="mb-10">
             <div className="flex items-center gap-3 mb-5">
-              <span className="bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full animate-pulse">LIVE</span>
+              <span className="bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-full">LIVE</span>
               <h2 className="text-xl font-black text-gray-900">Promoții Active</h2>
-              <span className="text-sm text-gray-500">{cuPromotii.length} oferte</span>
+              <span className="text-sm text-gray-400">{cuPromotii.length} oferte</span>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {cuPromotii.slice(0, 9).map((m) => (
-                <CardMagazin
-                  key={m.magazin}
-                  m={m}
-                  coduriAratate={coduriAratate}
-                  copiat={copiat}
-                  onArataCod={arataCod}
-                  highlight
-                />
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+              {cuPromotii.slice(0, 12).map((m) => (
+                <Card key={m.magazin} m={m} revealed={coduriReveal.has(m.magazin)} copiat={copiat === m.magazin} onCopiere={copiazaCod} />
               ))}
             </div>
           </section>
         )}
 
-        {/* TOATE MAGAZINELE */}
+        {/* MAGAZINE */}
         {faraPromotii.length > 0 && (
-          <section>
+          <section id="magazine">
             <div className="flex items-center gap-3 mb-5">
               <h2 className="text-xl font-black text-gray-900">Magazine Partenere</h2>
-              <span className="text-sm text-gray-500">{filtrate.length} total</span>
+              <span className="text-sm text-gray-400">{filtrate.length} total</span>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
               {faraPromotii.map((m) => (
-                <CardMagazin
-                  key={m.magazin}
-                  m={m}
-                  coduriAratate={coduriAratate}
-                  copiat={copiat}
-                  onArataCod={arataCod}
-                />
+                <Card key={m.magazin} m={m} revealed={coduriReveal.has(m.magazin)} copiat={copiat === m.magazin} onCopiere={copiazaCod} />
               ))}
             </div>
           </section>
@@ -177,15 +171,17 @@ export default function Home() {
       </div>
 
       {/* FOOTER */}
-      <footer className="bg-gray-900 text-gray-400 py-8 px-4 mt-12">
-        <div className="max-w-7xl mx-auto text-center">
-          <div className="flex items-center justify-center gap-2 mb-3">
+      <footer className="bg-gray-900 text-gray-400 py-10 px-4 mt-12">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-center gap-2 mb-4">
             <div className="bg-orange-500 text-white font-black text-sm px-2 py-0.5 rounded">Am</div>
             <span className="font-black text-white text-lg">Cupon.ro</span>
           </div>
-          <p className="text-sm mb-2">Cele mai bune coduri de reducere și oferte din România</p>
+          <p className="text-sm mb-4 max-w-xl">
+            Cele mai bune coduri de reducere și oferte exclusive de la cele mai mari magazine online din România. Actualizat zilnic.
+          </p>
           <p className="text-xs text-gray-600">
-            Linkurile de pe AmCupon.ro sunt linkuri de afiliat. Primim un comision când cumperi prin linkurile noastre, fără costuri suplimentare pentru tine.
+            © 2026 AmCupon.ro · Linkurile de pe site sunt linkuri de afiliat. Primim un comision când cumperi, fără costuri suplimentare pentru tine.
           </p>
         </div>
       </footer>
@@ -193,113 +189,134 @@ export default function Home() {
   );
 }
 
-function CardMagazin({
-  m,
-  coduriAratate,
-  copiat,
-  onArataCod,
-  highlight = false,
-}: {
+function Card({ m, revealed, copiat, onCopiere }: {
   m: Magazin;
-  coduriAratate: Set<string>;
-  copiat: string | null;
-  onArataCod: (id: string, cod: string) => void;
-  highlight?: boolean;
+  revealed: boolean;
+  copiat: boolean;
+  onCopiere: (id: string, cod: string) => void;
 }) {
   const promo = m.promotii[0];
   const favicon = getFavicon(m.url);
-  const discount = promo ? extractDiscount(promo.nume) || extractDiscount(promo.descriere || "") : null;
-  const cardId = m.magazin;
-  const codAratat = coduriAratate.has(cardId);
-  const esteCopinat = copiat === cardId;
+  const discount = promo ? (extractDiscount(promo.nume) || extractDiscount(promo.descriere || "")) : null;
+  const numeMagazin = numeAfisat(m.magazin);
+  const initiala = numeMagazin.charAt(0).toUpperCase();
   const link = promo?.landing_page || m.url_afiliat || m.url;
+  const [imgOk, setImgOk] = useState(true);
+
+  const culoriInitiala = [
+    "bg-blue-500", "bg-green-500", "bg-purple-500", "bg-pink-500",
+    "bg-indigo-500", "bg-teal-500", "bg-red-500", "bg-yellow-500"
+  ];
+  const culoare = culoriInitiala[initiala.charCodeAt(0) % culoriInitiala.length];
 
   return (
-    <div className={`bg-white rounded-2xl border overflow-hidden hover:shadow-lg transition-all duration-200 flex flex-col ${
-      highlight ? "border-orange-300 shadow-md" : "border-gray-200 shadow-sm"
-    }`}>
-      {/* TOP */}
-      <div className="p-4 flex items-start gap-3">
-        <div className="w-12 h-12 rounded-xl border border-gray-100 overflow-hidden shrink-0 bg-gray-50 flex items-center justify-center">
-          {favicon ? (
-            <img src={favicon} alt={m.magazin} className="w-8 h-8 object-contain" onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
+    <div className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col overflow-hidden">
+
+      {/* LOGO AREA */}
+      <div className="flex flex-col items-center justify-center pt-6 pb-3 px-4">
+        <div className="w-20 h-20 rounded-2xl overflow-hidden flex items-center justify-center mb-3 bg-gray-50 border border-gray-100">
+          {favicon && imgOk ? (
+            <img
+              src={favicon}
+              alt={numeMagazin}
+              className="w-16 h-16 object-contain"
+              onError={() => setImgOk(false)}
+            />
           ) : (
-            <span className="text-lg font-bold text-gray-300">{m.magazin[0]?.toUpperCase()}</span>
+            <div className={`w-full h-full ${culoare} flex items-center justify-center`}>
+              <span className="text-white font-black text-3xl">{initiala}</span>
+            </div>
           )}
         </div>
-        <div className="flex-1 min-w-0">
-          <h3 className="font-bold text-gray-900 text-sm capitalize truncate">{m.magazin}</h3>
-          <span className="text-xs text-gray-500">{m.categorie}</span>
-        </div>
-        {discount && (
-          <div className="text-2xl font-black text-orange-500 shrink-0">{discount}</div>
+        <h3 className="font-black text-gray-900 text-base text-center">{numeMagazin}</h3>
+        <span className="text-xs text-gray-400 mt-0.5">{m.categorie}</span>
+      </div>
+
+      {/* LABEL */}
+      <div className="px-4 pb-2 text-center">
+        <span className="text-xs font-bold text-teal-600 tracking-wider uppercase">
+          {promo?.cod_cupon ? "Cod Reducere" : promo ? "Ofertă Specială" : "Partener"}
+          {discount && <span className="ml-1 text-orange-500">{discount}</span>}
+        </span>
+      </div>
+
+      {/* DESCRIERE */}
+      <div className="px-4 pb-3 flex-1">
+        {promo ? (
+          <p className="text-sm text-gray-600 text-center line-clamp-2">{promo.nume}</p>
+        ) : (
+          <p className="text-sm text-gray-500 text-center">Comision: {m.comision}</p>
         )}
       </div>
 
-      {/* PROMO INFO */}
-      {promo && (
-        <div className="px-4 pb-3">
-          <p className="text-xs text-gray-600 line-clamp-2">{promo.nume}</p>
-          <div className="flex flex-wrap gap-1 mt-2">
-            <span className="text-xs bg-green-50 text-green-700 px-2 py-0.5 rounded-full font-medium">✓ Verificat</span>
-            {promo.zile_ramase <= 3 && (
-              <span className="text-xs bg-red-50 text-red-600 px-2 py-0.5 rounded-full font-medium">🔥 Expiră în {promo.zile_ramase}z</span>
-            )}
-            {promo.cod_cupon && (
-              <span className="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full font-medium">🏷 Cod cupon</span>
-            )}
-            {m.trend > 0 && (
-              <span className="text-xs bg-purple-50 text-purple-600 px-2 py-0.5 rounded-full font-medium">↑ Trending</span>
-            )}
-          </div>
-        </div>
-      )}
+      {/* BADGES */}
+      <div className="px-4 pb-3 flex flex-wrap justify-center gap-1">
+        <span className="text-xs text-green-600 flex items-center gap-0.5">
+          <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
+          Verificat
+        </span>
+        {promo && promo.zile_ramase <= 3 && (
+          <span className="text-xs text-red-500 flex items-center gap-0.5">
+            🔥 Expiră în {promo.zile_ramase}z
+          </span>
+        )}
+        {m.trend > 0 && (
+          <span className="text-xs text-purple-500">↑ Trending</span>
+        )}
+      </div>
 
-      {!promo && (
-        <div className="px-4 pb-3">
-          <div className="flex flex-wrap gap-1">
-            <span className="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full font-medium">{m.comision} comision</span>
-            {m.trend > 0 && (
-              <span className="text-xs bg-purple-50 text-purple-600 px-2 py-0.5 rounded-full font-medium">↑ Trending</span>
-            )}
-          </div>
-        </div>
-      )}
-
-      {/* BUTON */}
-      <div className="px-4 pb-4 mt-auto">
+      {/* COD / BUTON */}
+      <div className="px-4 pb-5">
         {promo?.cod_cupon ? (
-          codAratat ? (
-            <div className="flex gap-2">
-              <div className="flex-1 bg-orange-50 border-2 border-dashed border-orange-300 rounded-xl px-3 py-2 text-center">
-                <span className="font-mono font-black text-orange-600 text-sm tracking-wider">{promo.cod_cupon}</span>
+          revealed ? (
+            <div className="space-y-2">
+              <div className="border-2 border-dashed border-orange-400 rounded-xl py-2 text-center bg-orange-50">
+                <span className="font-mono font-black text-orange-600 tracking-widest text-sm">
+                  {promo.cod_cupon}
+                </span>
               </div>
               <a
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold px-3 py-2 rounded-xl transition-colors"
+                className="flex items-center justify-center gap-2 w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 rounded-xl text-sm transition-colors"
               >
-                {esteCopinat ? "Copiat!" : "Mergi"}
+                {copiat ? "✓ Copiat!" : "Mergi la magazin"}
               </a>
             </div>
           ) : (
             <button
-              onClick={() => onArataCod(cardId, promo.cod_cupon)}
-              className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 rounded-xl text-sm transition-colors"
+              onClick={() => onCopiere(m.magazin, promo.cod_cupon)}
+              className="w-full border-2 border-dashed border-gray-300 hover:border-orange-400 rounded-xl py-2 mb-2 text-center transition-colors group"
             >
-              Arată codul
+              <span className="font-mono text-gray-500 group-hover:text-orange-500 text-sm">
+                {maskCod(promo.cod_cupon)}
+              </span>
             </button>
           )
-        ) : (
+        ) : null}
+
+        {(!promo?.cod_cupon) && (
           <a
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="block w-full bg-gray-900 hover:bg-gray-800 text-white font-bold py-2.5 rounded-xl text-sm text-center transition-colors"
+            className="flex items-center justify-center gap-1 w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 rounded-xl text-sm text-center transition-colors"
           >
-            Vezi oferta →
+            Copiază codul întreg
           </a>
+        )}
+
+        {promo?.cod_cupon && !revealed && (
+          <button
+            onClick={() => onCopiere(m.magazin, promo.cod_cupon)}
+            className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 rounded-xl text-sm transition-colors flex items-center justify-center gap-2"
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+            </svg>
+            Copiază codul întreg
+          </button>
         )}
       </div>
     </div>
