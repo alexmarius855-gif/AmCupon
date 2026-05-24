@@ -243,11 +243,13 @@ function Card({ m, revealed, copiat, onCopiere }: {
       </a>
 
       {/* LABEL */}
-      <div className="px-4 pb-2 text-center">
-        <span className="text-xs font-bold text-teal-600 tracking-wider uppercase">
-          {promo?.cod_cupon ? "Cod Reducere" : promo ? "Ofertă Specială" : "Partener"}
-          {discount && <span className="ml-1 text-orange-500">{discount}</span>}
-        </span>
+      <div className="px-4 pb-2 text-center min-h-[20px]">
+        {(promo?.cod_cupon || promo) && (
+          <span className="text-xs font-bold text-teal-600 tracking-wider uppercase">
+            {promo?.cod_cupon ? "Cod Reducere" : "Ofertă Specială"}
+            {discount && <span className="ml-1 text-orange-500">{discount}</span>}
+          </span>
+        )}
       </div>
 
       {/* DESCRIERE */}
@@ -255,23 +257,19 @@ function Card({ m, revealed, copiat, onCopiere }: {
         {promo ? (
           <p className="text-sm text-gray-600 text-center line-clamp-2">{promo.nume}</p>
         ) : (
-          <p className="text-sm text-gray-500 text-center">Comision: {m.comision}</p>
+          <p className="text-sm text-gray-400 text-center">Fără promoții active momentan</p>
         )}
       </div>
 
       {/* BADGES */}
       <div className="px-4 pb-3 flex flex-wrap justify-center gap-1">
-        <span className="text-xs text-green-600 flex items-center gap-0.5">
-          <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
-          Verificat
-        </span>
         {promo && promo.zile_ramase <= 3 && (
           <span className="text-xs text-red-500 flex items-center gap-0.5">
-            🔥 Expiră în {promo.zile_ramase}z
+            Expiră în {promo.zile_ramase}z
           </span>
         )}
         {m.trend > 0 && (
-          <span className="text-xs text-purple-500">↑ Trending</span>
+          <span className="text-xs text-purple-500">Trending</span>
         )}
       </div>
 
@@ -291,42 +289,40 @@ function Card({ m, revealed, copiat, onCopiere }: {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 rounded-xl text-sm transition-colors"
               >
-                {copiat ? "✓ Copiat!" : "Mergi la magazin"}
+                {copiat ? "Copiat! Mergi la magazin" : "Mergi la magazin"}
               </a>
             </div>
           ) : (
-            <button
-              onClick={() => onCopiere(m.magazin, promo.cod_cupon)}
-              className="w-full border-2 border-dashed border-gray-300 hover:border-orange-400 rounded-xl py-2 mb-2 text-center transition-colors group"
-            >
-              <span className="font-mono text-gray-500 group-hover:text-orange-500 text-sm">
-                {maskCod(promo.cod_cupon)}
-              </span>
-            </button>
+            <div className="space-y-2">
+              <div className="border-2 border-dashed border-gray-300 rounded-xl py-2 text-center">
+                <span className="font-mono text-gray-400 text-sm">{maskCod(promo.cod_cupon)}</span>
+              </div>
+              <button
+                onClick={() => onCopiere(m.magazin, promo.cod_cupon)}
+                className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 rounded-xl text-sm transition-colors"
+              >
+                Copiază codul
+              </button>
+            </div>
           )
-        ) : null}
-
-        {(!promo?.cod_cupon) && (
+        ) : promo ? (
           <a
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-1 w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 rounded-xl text-sm text-center transition-colors"
+            className="flex items-center justify-center w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 rounded-xl text-sm transition-colors"
           >
-            Copiază codul întreg
+            Vezi oferta
           </a>
-        )}
-
-        {promo?.cod_cupon && !revealed && (
-          <button
-            onClick={() => onCopiere(m.magazin, promo.cod_cupon)}
-            className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 rounded-xl text-sm transition-colors flex items-center justify-center gap-2"
+        ) : (
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center w-full border border-gray-200 hover:border-orange-300 text-gray-500 hover:text-orange-500 font-medium py-2.5 rounded-xl text-sm transition-colors"
           >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-            </svg>
-            Copiază codul întreg
-          </button>
+            Vizitează magazinul
+          </a>
         )}
       </div>
     </div>
