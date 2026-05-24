@@ -136,8 +136,8 @@ export default function DespreNoiPage() {
               {[
                 { step: "01", text: "Găsește magazinul dorit pe AmCupon.ro și copiază codul de reducere activ." },
                 { step: "02", text: "Deschide site-ul magazinului și adaugă produsele dorite în coșul de cumpărături." },
-                { step: "03", text: "La finalizarea comenzii, caută câmpul „Cod promoțional", „Voucher" sau „Cupon"." },
-                { step: "04", text: "Introdu codul copiat și apasă „Aplică". Reducerea se scade automat din total." },
+                { step: "03", text: `La finalizarea comenzii, caută câmpul „Cod promoțional", „Voucher" sau „Cupon".` },
+                { step: "04", text: `Introdu codul copiat și apasă „Aplică". Reducerea se scade automat din total.` },
                 { step: "05", text: "Finalizează comanda și bucură-te de economii!" },
               ].map((s) => (
                 <div key={s.step} className="flex items-start gap-4">
