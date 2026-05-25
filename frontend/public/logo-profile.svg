@@ -1,75 +1,129 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="optimizeLegibility">
+  <defs>
+    <!-- Orange gradient for ticket -->
+    <linearGradient id="ogGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FB923C"/>
+      <stop offset="100%" stop-color="#EA580C"/>
+    </linearGradient>
+    <!-- Emerald gradient for badge -->
+    <linearGradient id="emGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#34D399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <!-- Soft shadow filter -->
+    <filter id="ticketShadow" x="-8%" y="-4%" width="116%" height="124%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#F97316" flood-opacity="0.28"/>
+    </filter>
+    <filter id="badgeShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#059669" flood-opacity="0.4"/>
+    </filter>
+  </defs>
 
-  <!-- Background: premium dark blue -->
-  <rect width="500" height="500" rx="85" fill="#0F2240"/>
+  <!-- ── White background ── -->
+  <rect width="400" height="400" fill="#FFFFFF"/>
 
-  <!-- Shopping bag handles (white arc above bag) -->
-  <path d="M 178 210 L 178 162 Q 178 118 250 118 Q 322 118 322 162 L 322 210"
-    fill="none"
-    stroke="white"
-    stroke-width="22"
-    stroke-linecap="round"
-    stroke-linejoin="round"/>
+  <!-- ══════════════════════════════════════════════
+       TICKET ICON
+       Bounding: x=52–348, y=55–248  (296×193)
+       Corner radius: 26
+       Notch: radius=23 centered at y=151.5
+  ═══════════════════════════════════════════════ -->
 
-  <!-- Bag body: white filled -->
-  <rect x="112" y="205" width="276" height="198" rx="16" fill="white"/>
+  <!--
+    Path breakdown (clockwise):
+      top-left→right edge  →  top-right corner
+      →  right side down to notch (151.5-23=128.5)
+      →  right notch arc inward (CCW, sweep=0) to 174.5
+      →  right side down to bottom corner (248-26=222)
+      →  bottom-right corner
+      →  bottom edge right→left
+      →  bottom-left corner
+      →  left side up to notch (151.5+23=174.5)
+      →  left notch arc inward (CW, sweep=1) to 128.5
+      →  left side up to top corner
+      →  top-left corner  →  close
+  -->
+  <path
+    d="M 78,55
+       L 322,55
+       Q 348,55 348,81
+       L 348,128
+       A 23,23 0 0,0 348,175
+       L 348,222
+       Q 348,248 322,248
+       L 78,248
+       Q 52,248 52,222
+       L 52,175
+       A 23,23 0 0,1 52,128
+       L 52,81
+       Q 52,55 78,55 Z"
+    fill="url(#ogGrad)"
+    filter="url(#ticketShadow)"
+  />
 
-  <!-- Orange coupon strip across center of bag -->
-  <rect x="112" y="272" width="276" height="86" fill="#F97316"/>
+  <!-- Top-edge shine overlay -->
+  <path
+    d="M 78,55 L 322,55 Q 348,55 348,81 L 348,88
+       C 310,68 200,64 52,88 L 52,81 Q 52,55 78,55 Z"
+    fill="white" opacity="0.13"
+  />
 
-  <!-- Left notch on coupon strip -->
-  <circle cx="112" cy="315" r="22" fill="#0F2240"/>
+  <!-- Perforated dashed line at notch midpoint y=151 -->
+  <line
+    x1="74" y1="151" x2="326" y2="151"
+    stroke="white" stroke-width="1.6"
+    stroke-dasharray="7 5" opacity="0.38"
+  />
 
-  <!-- Right notch on coupon strip -->
-  <circle cx="388" cy="315" r="22" fill="#0F2240"/>
-
-  <!-- Perforation dots on coupon -->
-  <circle cx="250" cy="278" r="3.5" fill="#ffffff50"/>
-  <circle cx="250" cy="292" r="3.5" fill="#ffffff50"/>
-  <circle cx="250" cy="306" r="3.5" fill="#ffffff50"/>
-  <circle cx="250" cy="320" r="3.5" fill="#ffffff50"/>
-  <circle cx="250" cy="334" r="3.5" fill="#ffffff50"/>
-  <circle cx="250" cy="348" r="3.5" fill="#ffffff50"/>
-
-  <!-- % symbol on orange coupon strip -->
+  <!-- ── Percentage symbol ── -->
   <text
-    x="250"
-    y="319"
-    font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif"
-    font-weight="900"
-    font-size="94"
-    fill="white"
-    text-anchor="middle"
-    dominant-baseline="middle">%</text>
+    x="200" y="156"
+    font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+    font-size="106" font-weight="800"
+    fill="white" fill-opacity="0.96"
+    text-anchor="middle" dominant-baseline="middle"
+    letter-spacing="-2"
+  >%</text>
 
-  <!-- Bag top fold line -->
-  <line x1="112" y1="230" x2="388" y2="230"
-    stroke="#e5e7eb"
-    stroke-width="1.5"
-    opacity="0.6"/>
+  <!-- ══════════════════════════════════════════════
+       EMERALD CHECKMARK BADGE  (bottom-right of ticket)
+  ═══════════════════════════════════════════════ -->
+  <!-- White ring -->
+  <circle cx="317" cy="233" r="22" fill="white" filter="url(#badgeShadow)"/>
+  <!-- Green fill -->
+  <circle cx="317" cy="233" r="18" fill="url(#emGrad)"/>
+  <!-- Checkmark -->
+  <path
+    d="M 308,233 L 315,240 L 327,223"
+    stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
+  />
 
-  <!-- Bottom section: subtle "AmCupon" label -->
+  <!-- ══════════════════════════════════════════════
+       WORDMARK  "AmCupon.ro"
+  ═══════════════════════════════════════════════ -->
   <text
-    x="250"
-    y="377"
-    font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif"
-    font-weight="900"
-    font-size="26"
-    fill="#0F2240"
-    text-anchor="middle"
-    dominant-baseline="middle"
-    letter-spacing="1">AmCupon.ro</text>
+    x="200" y="290"
+    font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+    font-size="44" font-weight="900"
+    text-anchor="middle" dominant-baseline="middle"
+    letter-spacing="-0.5"
+  >
+    <tspan fill="#111827">Am</tspan><tspan fill="#F97316">Cupon</tspan><tspan fill="#10B981">.ro</tspan>
+  </text>
 
-  <!-- Orange dot accent top-right -->
-  <circle cx="398" cy="88" r="28" fill="#F97316"/>
+  <!-- ══════════════════════════════════════════════
+       TAGLINE
+  ═══════════════════════════════════════════════ -->
   <text
-    x="398"
-    y="94"
-    font-family="'Arial Black', Arial, sans-serif"
-    font-weight="900"
-    font-size="26"
-    fill="white"
-    text-anchor="middle"
-    dominant-baseline="middle">✓</text>
+    x="200" y="330"
+    font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+    font-size="11.5" font-weight="500"
+    letter-spacing="3"
+    fill="#9CA3AF" text-anchor="middle" dominant-baseline="middle"
+  >CODURI DE REDUCERE VERIFICATE</text>
+
+  <!-- Decorative dots flanking tagline -->
+  <circle cx="68" cy="330" r="2.5" fill="#F97316" opacity="0.45"/>
+  <circle cx="332" cy="330" r="2.5" fill="#10B981" opacity="0.45"/>
 
 </svg>
