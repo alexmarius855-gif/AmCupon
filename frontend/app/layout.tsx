@@ -2,9 +2,16 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import CookieBanner from "./components/CookieBanner";
 import AffiliateScript from "./components/AffiliateScript";
 import "./globals.css";
+
+// ─── GA4 Measurement ID ───────────────────────────────────────────────────────
+// Mergi la analytics.google.com → Admin → Data Streams → Web → Measurement ID
+// Formatul e G-XXXXXXXXXX  (ex: G-ABC123DEF4)
+// Pune-l ca variabila de mediu NEXT_PUBLIC_GA_ID in Vercel Dashboard
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -101,6 +108,7 @@ export default function RootLayout({
         <AffiliateScript />
         <Analytics />
       </body>
+      {GA_ID && <GoogleAnalytics gaId={GA_ID} />}
     </html>
   );
 }
