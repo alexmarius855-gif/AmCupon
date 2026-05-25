@@ -66,7 +66,7 @@ function MagazinCard({ m, revealed, copiat, onCopiere }: {
         )}
         <div className="w-20 h-20 rounded-2xl overflow-hidden flex items-center justify-center mb-3 bg-white border border-gray-100 p-1 group-hover:border-orange-300 transition-colors">
           {m.logo_url && imgOk ? (
-            <img src={m.logo_url} alt={numeMagazin} className="w-full h-full object-contain" onError={() => setImgOk(false)} />
+            <img src={m.logo_url} alt={numeMagazin} className="w-full h-full object-contain" loading="lazy" decoding="async" onError={() => setImgOk(false)} />
           ) : (
             <div className={`w-full h-full rounded-xl ${culoare} flex items-center justify-center`}>
               <span className="text-white font-black text-3xl">{initiala}</span>

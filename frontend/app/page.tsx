@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 interface Promotie {
   nume: string;
@@ -441,9 +442,10 @@ export default function Home() {
               {blogPosts.map((post) => (
                 <a key={post.slug} href={`/blog/${post.slug}`}
                   className="group bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 overflow-hidden flex flex-col">
-                  <div className="overflow-hidden h-44 bg-gray-100">
-                    <img src={post.cover} alt={post.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                  <div className="relative overflow-hidden h-44 bg-gray-100">
+                    <Image src={post.cover} alt={post.title} fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, 380px" />
                   </div>
                   <div className="p-5 flex-1 flex flex-col">
                     <span className="text-xs font-bold text-orange-500 uppercase tracking-wide">{post.category}</span>
@@ -658,7 +660,7 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
         )}
         <div className="w-20 h-20 rounded-2xl overflow-hidden flex items-center justify-center mb-3 bg-white border border-gray-100 p-1 group-hover:border-orange-300 group-hover:shadow-md transition-all duration-200">
           {logoSrc && imgOk ? (
-            <img src={logoSrc} alt={numeMagazin} className="w-full h-full object-contain" onError={() => setImgOk(false)} />
+            <img src={logoSrc} alt={numeMagazin} className="w-full h-full object-contain" loading="lazy" decoding="async" onError={() => setImgOk(false)} />
           ) : (
             <div className={`w-full h-full rounded-xl ${culoare} flex items-center justify-center`}>
               <span className="text-white font-black text-3xl">{initiala}</span>

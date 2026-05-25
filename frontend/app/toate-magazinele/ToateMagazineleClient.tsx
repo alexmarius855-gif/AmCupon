@@ -162,6 +162,7 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
                 <div className="w-14 h-14 rounded-xl overflow-hidden flex items-center justify-center bg-gray-50 border border-gray-100 p-0.5">
                   {m.logo_url && logoOk ? (
                     <img src={m.logo_url} alt={nume} className="w-full h-full object-contain"
+                      loading="lazy" decoding="async"
                       onError={() => setImgErrors(prev => new Set(prev).add(m.magazin))} />
                   ) : (
                     <div className={`w-full h-full rounded-lg ${culoare} flex items-center justify-center`}>

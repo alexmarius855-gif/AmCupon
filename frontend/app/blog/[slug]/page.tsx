@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
+import Image from "next/image";
 import fs from "fs";
 import path from "path";
 
@@ -166,8 +167,8 @@ export default async function ArticolPage({
             )}
           </div>
 
-          <div className="rounded-2xl overflow-hidden mb-8 shadow-sm">
-            <img src={post.cover} alt={post.title} className="w-full h-64 md:h-80 object-cover" />
+          <div className="relative rounded-2xl overflow-hidden mb-8 shadow-sm h-64 md:h-80">
+            <Image src={post.cover} alt={post.title} fill className="object-cover" priority sizes="(max-width: 768px) 100vw, 768px" />
           </div>
 
           <p className="text-lg text-gray-600 font-medium leading-relaxed mb-8 p-5 bg-orange-50 rounded-2xl border border-orange-100">
@@ -197,7 +198,9 @@ export default async function ArticolPage({
               {altePosts.map((p) => (
                 <a key={p.slug} href={`/blog/${p.slug}`}
                   className="bg-white rounded-2xl border border-gray-200 overflow-hidden hover:shadow-md transition-all group">
-                  <img src={p.cover} alt={p.title} className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300" />
+                  <div className="relative h-32 overflow-hidden">
+                    <Image src={p.cover} alt={p.title} fill className="object-cover group-hover:scale-105 transition-transform duration-300" sizes="300px" />
+                  </div>
                   <div className="p-4">
                     <span className="text-xs font-bold text-orange-500">{p.category}</span>
                     <p className="text-sm font-bold text-gray-900 mt-1 line-clamp-2 group-hover:text-orange-500 transition-colors">{p.title}</p>

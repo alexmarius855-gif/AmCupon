@@ -217,6 +217,7 @@ def main():
             "procent_succes": calculeaza_succes(cheie, rank, trend),
             "exclusiv": are_cod,
             "categorie_slug": categorie_slug(categorie),
+            "platforma": "2performant",
         }
 
         intrare["scor_final"] = calculeaza_scor(intrare)

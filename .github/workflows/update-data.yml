@@ -22,12 +22,25 @@ jobs:
           cache: 'pip'
 
       - name: Instaleaza dependinte Python
-        run: pip install pandas openpyxl
+        run: pip install pandas openpyxl requests
 
-      - name: Ruleaza procesare date
+      - name: Ruleaza procesare date 2Performant
         run: |
           cd scripts
           python process_data.py
+
+      - name: Ruleaza procesare date Profitshare
+        env:
+          PROFITSHARE_USER: ${{ secrets.PROFITSHARE_USER }}
+          PROFITSHARE_KEY: ${{ secrets.PROFITSHARE_KEY }}
+        run: |
+          cd scripts
+          python process_profitshare.py
+
+      - name: Merge date din toate platformele
+        run: |
+          cd scripts
+          python merge_platforms.py
 
       - name: Genereaza articole blog
         run: |
