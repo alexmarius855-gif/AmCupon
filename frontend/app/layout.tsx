@@ -11,7 +11,7 @@ import "./globals.css";
 // Mergi la analytics.google.com → Admin → Data Streams → Web → Measurement ID
 // Formatul e G-XXXXXXXXXX  (ex: G-ABC123DEF4)
 // Pune-l ca variabila de mediu NEXT_PUBLIC_GA_ID in Vercel Dashboard
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "";
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "G-KXTENZX0EN";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
