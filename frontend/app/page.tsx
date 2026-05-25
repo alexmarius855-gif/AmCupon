@@ -197,6 +197,7 @@ export default function Home() {
 
           <nav className="hidden md:flex items-center gap-5 text-sm font-semibold text-gray-600">
             <a href="#promotii" className="hover:text-orange-500 transition-colors">Promoții</a>
+            <a href="/produse" className="hover:text-orange-500 transition-colors">Produse</a>
             <a href="/blog" className="hover:text-orange-500 transition-colors">Blog</a>
             <div className="relative group">
               <button className="flex items-center gap-1 hover:text-orange-500 transition-colors py-1">
@@ -688,6 +689,7 @@ export default function Home() {
                 <li><a href="/copii" className="hover:text-orange-400 transition-colors">👶 Copii & Jucării</a></li>
                 <li><a href="/gadgets" className="hover:text-orange-400 transition-colors">📡 Gadgets & Tech</a></li>
                 <li><a href="/idei-cadouri" className="hover:text-orange-400 transition-colors">🎁 Idei Cadouri</a></li>
+                <li><a href="/produse" className="hover:text-orange-400 transition-colors">🛍️ Produse cu reducere</a></li>
                 <li><a href="/blog" className="hover:text-orange-400 transition-colors">📝 Blog</a></li>
                 <li><a href="/categorii" className="hover:text-orange-400 transition-colors">Toate categoriile</a></li>
                 <li><a href="/toate-magazinele" className="hover:text-orange-400 transition-colors">Toate magazinele</a></li>

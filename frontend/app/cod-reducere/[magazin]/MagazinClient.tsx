@@ -28,6 +28,19 @@ interface Magazin {
   exclusiv: boolean;
 }
 
+interface Produs {
+  title: string;
+  url: string;
+  image: string;
+  price: number;
+  old_price?: number;
+  discount_pct: number;
+  category: string;
+  brand: string;
+  merchant: string;
+  merchant_slug: string;
+}
+
 function numeAfisat(magazin: string): string {
   return magazin
     .split(".")[0]
@@ -42,7 +55,51 @@ function extractDiscount(text: string): string | null {
   return m ? m[1] + "%" : null;
 }
 
-export default function MagazinClient({ magazin: m }: { magazin: Magazin }) {
+function ProdusCard({ produs: p }: { produs: Produs }) {
+  const [imgOk, setImgOk] = useState(true);
+  const hasDiscount = p.discount_pct > 0 && p.old_price;
+  return (
+    <a href={p.url} target="_blank" rel="sponsored noopener noreferrer"
+      className="group bg-white border border-gray-200 hover:border-orange-300 rounded-2xl overflow-hidden transition-all hover:shadow-lg hover:-translate-y-0.5 duration-200 flex flex-col">
+      <div className="relative bg-gray-50 overflow-hidden" style={{aspectRatio:"1"}}>
+        {p.image && imgOk ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={p.image} alt={p.title} className="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300"
+            onError={() => setImgOk(false)} loading="lazy" />
+        ) : (
+          <div className="w-full h-full flex items-center justify-center text-4xl">🛍️</div>
+        )}
+        {hasDiscount && (
+          <div className="absolute top-2 left-2 bg-red-500 text-white text-xs font-black px-2 py-0.5 rounded-full shadow-sm">
+            -{p.discount_pct}%
+          </div>
+        )}
+      </div>
+      <div className="p-3 flex flex-col flex-1">
+        <p className="text-xs text-gray-500 mb-1 line-clamp-1">{p.brand || p.category}</p>
+        <p className="text-sm font-semibold text-gray-900 line-clamp-2 flex-1 group-hover:text-orange-600 transition-colors leading-snug">
+          {p.title}
+        </p>
+        <div className="flex items-center gap-2 mt-2">
+          <span className="font-black text-orange-600 text-base">
+            {p.price > 0 ? `${p.price.toFixed(2)} lei` : "Vezi prețul"}
+          </span>
+          {hasDiscount && p.old_price && (
+            <span className="text-xs text-gray-400 line-through">{p.old_price.toFixed(2)} lei</span>
+          )}
+        </div>
+        <div className="mt-2 text-xs font-bold text-orange-500 group-hover:text-orange-600 flex items-center gap-1">
+          Cumpără acum
+          <svg className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+          </svg>
+        </div>
+      </div>
+    </a>
+  );
+}
+
+export default function MagazinClient({ magazin: m, produse = [] }: { magazin: Magazin; produse?: Produs[] }) {
   const [revealed, setRevealed] = useState<Set<number>>(new Set());
   const [copiat, setCopiat] = useState<number | null>(null);
   const [imgOk, setImgOk] = useState(true);
@@ -290,6 +347,26 @@ export default function MagazinClient({ magazin: m }: { magazin: Magazin }) {
               Mergi la {nume}
             </a>
           </div>
+        )}
+
+        {/* PRODUSE CU REDUCERE */}
+        {produse.length > 0 && (
+          <section className="mt-12">
+            <div className="flex items-center justify-between mb-5">
+              <div className="flex items-center gap-3">
+                <h2 className="text-xl font-black text-gray-900">Produse {nume} cu reducere</h2>
+                <span className="text-sm text-gray-400">{produse.length} produse</span>
+              </div>
+              <a href="/produse" className="text-sm font-semibold text-orange-500 hover:text-orange-600">
+                Toate produsele →
+              </a>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+              {produse.map((p, i) => (
+                <ProdusCard key={i} produs={p} />
+              ))}
+            </div>
+          </section>
         )}
 
         {/* FAQ SECTION */}

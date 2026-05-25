@@ -21,8 +21,8 @@ BASE_URL = "http://api.2performant.com"
 AFFILIATE_USERNAME = os.environ.get("TWOPEFORMANT_USER", "")
 AFFILIATE_TOKEN = os.environ.get("TWOPEFORMANT_TOKEN", "")
 
-MAX_PRODUCTS_PER_FEED = 50
-MAX_TOTAL_PRODUCTS = 500
+MAX_PRODUCTS_PER_FEED = 80
+MAX_TOTAL_PRODUCTS = 2000
 OUTPUT_FILE = "../frontend/public/products.json"
 
 
@@ -54,6 +54,48 @@ def twopeformant_auth_headers(method, api_name, params=None):
         "X-2PF-Accept": "application/json",
         "Date": date_str,
     }
+
+
+def build_slug_map():
+    """Construieste o harta din numele programului -> slug magazin (din output.json)."""
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    repo_root = os.path.dirname(script_dir)
+    output_path = os.path.join(repo_root, "frontend", "public", "output.json")
+    slug_map = {}
+    if os.path.exists(output_path):
+        try:
+            with open(output_path, encoding="utf-8") as f:
+                magazine = json.load(f)
+            for m in magazine:
+                slug = m.get("magazin", "")
+                if not slug:
+                    continue
+                slug_map[slug.lower()] = slug
+                base = slug.split(".")[0].lower()
+                slug_map[base] = slug
+        except Exception:
+            pass
+    return slug_map
+
+
+def match_merchant_slug(merchant_name, slug_map):
+    """Gaseste slug-ul corect pentru un merchant name."""
+    if not merchant_name:
+        return merchant_name.lower() if merchant_name else ""
+    nl = merchant_name.strip().lower()
+    if nl in slug_map:
+        return slug_map[nl]
+    clean = re.sub(r"[^a-z0-9.]", "", nl)
+    if clean in slug_map:
+        return slug_map[clean]
+    first = nl.split()[0] if " " in nl else nl
+    if first in slug_map:
+        return slug_map[first]
+    for tld in [".ro", ".com", ".eu"]:
+        cand = nl.replace(" ", "") + tld
+        if cand in slug_map:
+            return slug_map[cand]
+    return nl
 
 
 def get_program_feeds():
@@ -201,6 +243,9 @@ def main():
     repo_root = os.path.dirname(script_dir)
     output_path = os.path.join(repo_root, "frontend", "public", "products.json")
 
+    slug_map = build_slug_map()
+    print(f"  Slug map: {len(slug_map)} intrari din output.json")
+
     feeds = get_program_feeds()
 
     all_products = []
@@ -208,6 +253,9 @@ def main():
         if len(all_products) >= MAX_TOTAL_PRODUCTS:
             break
         products = fetch_and_parse_feed(feed)
+        # Adauga merchant_slug la fiecare produs
+        for p in products:
+            p["merchant_slug"] = match_merchant_slug(p.get("merchant", ""), slug_map)
         all_products.extend(products)
         time.sleep(0.5)  # Rate limiting
 

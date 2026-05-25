@@ -83,9 +83,37 @@ const DESCRIERI_CUSTOM: Record<string, string> = {
     "Cod reducere AliExpress pentru produse din toate categoriile. Voucher AliExpress verificat și actualizat pe AmCupon.ro.",
 };
 
+export interface Produs {
+  title: string;
+  url: string;
+  image: string;
+  price: number;
+  old_price?: number;
+  discount_pct: number;
+  category: string;
+  brand: string;
+  merchant: string;
+  merchant_slug: string;
+}
+
 function loadData(): Magazin[] {
   const filePath = path.join(process.cwd(), "public", "output.json");
   return JSON.parse(fs.readFileSync(filePath, "utf-8"));
+}
+
+function loadProducts(slug: string): Produs[] {
+  try {
+    const p = path.join(process.cwd(), "public", "products.json");
+    if (!fs.existsSync(p)) return [];
+    const raw = JSON.parse(fs.readFileSync(p, "utf-8"));
+    const all: Produs[] = raw.products || raw;
+    return all.filter((pr) => {
+      const ms = (pr.merchant_slug || "").toLowerCase();
+      const mn = (pr.merchant || "").toLowerCase();
+      const s = slug.toLowerCase();
+      return ms === s || mn === s || ms.startsWith(s.split(".")[0]) || mn.includes(s.split(".")[0]);
+    }).slice(0, 24);
+  } catch { return []; }
 }
 
 function numeAfisat(magazin: string): string {
@@ -187,6 +215,7 @@ export default async function PaginaMagazin({
 
   if (!m) notFound();
 
+  const produse = loadProducts(slug);
   const nume = numeAfisat(m.magazin);
   const an = new Date().getFullYear();
   const luna = lunaRo();
@@ -300,7 +329,7 @@ export default async function PaginaMagazin({
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(offerList) }} />
       )}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <MagazinClient magazin={m} />
+      <MagazinClient magazin={m} produse={produse} />
     </>
   );
 }
