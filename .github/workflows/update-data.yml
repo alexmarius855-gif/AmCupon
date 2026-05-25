@@ -1,9 +1,9 @@
-name: Actualizare date zilnica
+name: Actualizare Automata Date & Blog
 
 on:
   schedule:
-    - cron: '0 4 * * *'  # 6:00 ora Romaniei (UTC+2)
-  workflow_dispatch:      # pornire manuala din GitHub
+    - cron: '0 6 * * *'   # Zilnic la 08:00 ora Romaniei (UTC+6)
+  workflow_dispatch:        # Buton manual in GitHub → Actions
 
 jobs:
   update:
@@ -12,47 +12,85 @@ jobs:
       contents: write
 
     steps:
+      # ── 1. Checkout ────────────────────────────────────────────────────────
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
+      # ── 2. Python ──────────────────────────────────────────────────────────
       - name: Setup Python 3.11
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
           cache: 'pip'
 
-      - name: Instaleaza dependinte Python
+      - name: Instaleaza dependinte
         run: pip install pandas openpyxl requests
 
-      - name: Ruleaza procesare date 2Performant
-        run: |
-          cd scripts
-          python process_data.py
+      # ── 3. 2Performant data ────────────────────────────────────────────────
+      - name: Proceseaza date 2Performant (SHOPS.xlsx + promotions.csv)
+        working-directory: scripts
+        run: python process_data.py
 
-      - name: Ruleaza procesare date Profitshare
+      # ── 4. Profitshare (optional — necesar secret PROFITSHARE_USER) ────────
+      - name: Proceseaza date Profitshare
+        working-directory: scripts
         env:
           PROFITSHARE_USER: ${{ secrets.PROFITSHARE_USER }}
-          PROFITSHARE_KEY: ${{ secrets.PROFITSHARE_KEY }}
+          PROFITSHARE_KEY:  ${{ secrets.PROFITSHARE_KEY }}
         run: |
-          cd scripts
-          python process_profitshare.py
+          if [ -n "$PROFITSHARE_USER" ]; then
+            echo "Ruleaza Profitshare..."
+            python process_profitshare.py
+          else
+            echo "PROFITSHARE_USER nu e setat — skip Profitshare"
+          fi
 
-      - name: Merge date din toate platformele
-        run: |
-          cd scripts
-          python merge_platforms.py
+      # ── 5. Merge platforme ─────────────────────────────────────────────────
+      - name: Merge 2Performant + Profitshare
+        working-directory: scripts
+        run: python merge_platforms.py
 
-      - name: Genereaza articole blog
+      # ── 6. Product Feeds XML (optional — necesar secret TWOPEFORMANT_USER) ─
+      - name: Fetch product feeds XML (2Performant)
+        working-directory: scripts
+        env:
+          TWOPEFORMANT_USER:  ${{ secrets.TWOPEFORMANT_USER }}
+          TWOPEFORMANT_TOKEN: ${{ secrets.TWOPEFORMANT_TOKEN }}
         run: |
-          cd scripts
-          python generate_blog.py
+          if [ -n "$TWOPEFORMANT_USER" ]; then
+            echo "Ruleaza fetch_product_feeds..."
+            python fetch_product_feeds.py
+          else
+            echo "TWOPEFORMANT_USER nu e setat — skip product feeds"
+          fi
 
-      - name: Commit si push daca s-au schimbat datele
+      # ── 7. Blog automat ────────────────────────────────────────────────────
+      - name: Genereaza articole blog din promotii active
+        working-directory: scripts
+        run: python generate_blog.py
+
+      - name: Genereaza articole Cel mai bun X
+        working-directory: scripts
+        run: python generate_best_of.py
+
+      # ── 8. Commit & Push ───────────────────────────────────────────────────
+      - name: Commit si push date actualizate
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add frontend/public/output.json data/output.json frontend/public/blog-posts.json
-          git diff --staged --quiet && echo "Nicio schimbare." || (
-            git commit -m "auto: actualizare date si blog $(date +'%Y-%m-%d')"
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add frontend/public/output.json      || true
+          git add frontend/public/blog-posts.json  || true
+          git add frontend/public/products.json    || true
+          git add data/output.json                 || true
+          git add data/profitshare_output.json     || true
+
+          if git diff --staged --quiet; then
+            echo "Nicio schimbare — skip commit"
+          else
+            git commit -m "chore: actualizare automata $(date -u +%Y-%m-%d)"
             git push
-          )
+            echo "✅ Date noi publicate — Vercel redeploys automat"
+          fi
