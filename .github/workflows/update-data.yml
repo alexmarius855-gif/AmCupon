@@ -24,9 +24,10 @@ jobs:
         with:
           python-version: '3.11'
           cache: 'pip'
+          cache-dependency-path: 'scripts/requirements.txt'
 
       - name: Instaleaza dependinte
-        run: pip install pandas openpyxl requests
+        run: pip install -r scripts/requirements.txt
 
       # ── 3. 2Performant data — API direct (inlocuieste SHOPS.xlsx) ──────────
       - name: Fetch date 2Performant via API (nu mai e nevoie de SHOPS.xlsx)
