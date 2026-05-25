@@ -1,0 +1,235 @@
+"""
+Fetch product feeds din 2Performant.
+Extrage produse cu discount si le salveaza in frontend/public/products.json.
+Ruleaza dupa process_data.py in GitHub Actions.
+"""
+
+import json
+import os
+import sys
+import hashlib
+import hmac
+import time
+import re
+import xml.etree.ElementTree as ET
+from datetime import datetime, timezone
+from urllib.parse import urlencode, quote, unquote
+from urllib.request import urlopen, Request
+
+AFF_CODE = "541547473"
+BASE_URL = "http://api.2performant.com"
+AFFILIATE_USERNAME = os.environ.get("TWOPEFORMANT_USER", "")
+AFFILIATE_TOKEN = os.environ.get("TWOPEFORMANT_TOKEN", "")
+
+MAX_PRODUCTS_PER_FEED = 50
+MAX_TOTAL_PRODUCTS = 500
+OUTPUT_FILE = "../frontend/public/products.json"
+
+
+def make_afiliat_url(url):
+    if not url or not isinstance(url, str):
+        return url
+    url_curat = unquote(url.strip())
+    unique = hashlib.md5(url_curat.encode()).hexdigest()[:9]
+    encoded_url = quote(url_curat, safe="")
+    return (f"https://event.2performant.com/events/click"
+            f"?ad_type=quicklink&aff_code={AFF_CODE}"
+            f"&unique={unique}&redirect_to={encoded_url}")
+
+
+def twopeformant_auth_headers(method, api_name, params=None):
+    """Genereaza headerele de autentificare 2Performant."""
+    if not AFFILIATE_USERNAME or not AFFILIATE_TOKEN:
+        return {}
+    date_str = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    qs = unquote(urlencode(sorted((params or {}).items()))) if params else ""
+    qs_part = f"?{qs}" if qs else "/"
+    string_to_sign = f"{method}{api_name}/{qs_part}{AFFILIATE_USERNAME}{date_str}"
+    signature = hmac.new(
+        AFFILIATE_TOKEN.encode(), string_to_sign.encode(), "sha1"
+    ).hexdigest()
+    return {
+        "X-2PF-Client": AFFILIATE_USERNAME,
+        "X-2PF-Auth": signature,
+        "X-2PF-Accept": "application/json",
+        "Date": date_str,
+    }
+
+
+def get_program_feeds():
+    """Obtine lista de feed-uri disponibile de la programele afiliate."""
+    try:
+        params = {"page": 1, "per_page": 100}
+        headers = twopeformant_auth_headers("GET", "affiliate-programs", params)
+        if not headers:
+            print("  Nu sunt credentiale 2Performant configurate.")
+            return []
+        qs = urlencode(sorted(params.items()))
+        url = f"{BASE_URL}/affiliate-programs/?{qs}"
+        req = Request(url, headers=headers)
+        with urlopen(req, timeout=10) as resp:
+            data = json.loads(resp.read())
+        programs = data.get("results", data if isinstance(data, list) else [])
+        feeds = []
+        for prog in programs:
+            feed_url = prog.get("product_feed_url") or prog.get("feed_url")
+            if feed_url:
+                feeds.append({
+                    "merchant": prog.get("name", ""),
+                    "feed_url": feed_url,
+                    "program_id": prog.get("id"),
+                })
+        print(f"  {len(feeds)} feed-uri gasite din {len(programs)} programe")
+        return feeds
+    except Exception as e:
+        print(f"  Eroare la obtinerea feed-urilor: {e}")
+        return []
+
+
+def parse_xml_feed(xml_content, merchant_name, program_id):
+    """Parseaza un feed XML/RSS si extrage produsele cu discount."""
+    products = []
+    try:
+        root = ET.fromstring(xml_content)
+        ns = {"g": "http://base.google.com/ns/1.0"}
+
+        # Suport pentru Google Product Feed format si format simplu
+        items = root.findall(".//item") or root.findall(".//product")
+        if not items:
+            # Incearca namespace Google
+            items = root.findall(".//{http://base.google.com/ns/1.0}item")
+
+        for item in items[:MAX_PRODUCTS_PER_FEED]:
+            def get_field(*names):
+                for name in names:
+                    el = item.find(name) or item.find(f"g:{name}", ns)
+                    if el is not None and el.text:
+                        return el.text.strip()
+                return ""
+
+            title = get_field("title", "name", "g:title")
+            url = get_field("link", "url", "product_url", "g:link")
+            image = get_field("image_link", "image", "img", "g:image_link")
+            price_str = get_field("price", "sale_price", "g:price", "g:sale_price")
+            old_price_str = get_field("original_price", "regular_price", "g:original_price")
+            category = get_field("category", "product_category", "g:product_category")
+            brand = get_field("brand", "g:brand")
+
+            if not title or not url:
+                continue
+
+            # Extrage valori numerice din pret
+            price = _parse_price(price_str)
+            old_price = _parse_price(old_price_str)
+
+            # Calculeaza discount
+            discount_pct = 0
+            if price and old_price and old_price > price:
+                discount_pct = round((1 - price / old_price) * 100)
+
+            # Filtreaza produsele relevante (cu discount sau imagine)
+            if not image and discount_pct == 0:
+                continue
+
+            products.append({
+                "title": title[:120],
+                "url": make_afiliat_url(url),
+                "url_original": url,
+                "image": image,
+                "price": price,
+                "old_price": old_price if old_price > price else None,
+                "discount_pct": discount_pct,
+                "category": category[:50] if category else "",
+                "brand": brand[:50] if brand else "",
+                "merchant": merchant_name,
+                "program_id": program_id,
+            })
+
+    except ET.ParseError as e:
+        print(f"  Eroare XML parse: {e}")
+    return products
+
+
+def _parse_price(price_str):
+    """Extrage valoarea numerica dintr-un string de pret."""
+    if not price_str:
+        return 0
+    # Elimina simboluri valuta si text
+    clean = re.sub(r"[^\d.,]", "", price_str.replace(",", "."))
+    # Ia ultima valoare dupa punct/virgula
+    parts = clean.split(".")
+    if len(parts) > 2:
+        clean = "".join(parts[:-1]) + "." + parts[-1]
+    try:
+        return float(clean) if clean else 0
+    except ValueError:
+        return 0
+
+
+def fetch_and_parse_feed(feed_info):
+    """Descarca si parseaza un feed."""
+    merchant = feed_info["merchant"]
+    feed_url = feed_info["feed_url"]
+    program_id = feed_info["program_id"]
+
+    try:
+        req = Request(feed_url, headers={"User-Agent": "AmCupon.ro/1.0 FeedBot"})
+        with urlopen(req, timeout=15) as resp:
+            content = resp.read()
+        products = parse_xml_feed(content, merchant, program_id)
+        print(f"  {merchant}: {len(products)} produse extrase")
+        return products
+    except Exception as e:
+        print(f"  {merchant}: Eroare la fetch - {e}")
+        return []
+
+
+def load_existing_products():
+    """Incarca produsele existente."""
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    repo_root = os.path.dirname(script_dir)
+    output_path = os.path.join(repo_root, OUTPUT_FILE.lstrip("../"))
+    if os.path.exists(output_path):
+        with open(output_path, encoding="utf-8") as f:
+            return json.load(f), output_path
+    return [], output_path
+
+
+def main():
+    print("Fetching 2Performant product feeds...")
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    repo_root = os.path.dirname(script_dir)
+    output_path = os.path.join(repo_root, "frontend", "public", "products.json")
+
+    feeds = get_program_feeds()
+
+    all_products = []
+    for feed in feeds:
+        if len(all_products) >= MAX_TOTAL_PRODUCTS:
+            break
+        products = fetch_and_parse_feed(feed)
+        all_products.extend(products)
+        time.sleep(0.5)  # Rate limiting
+
+    # Sorteaza dupa discount descrescator
+    all_products.sort(key=lambda x: x.get("discount_pct", 0), reverse=True)
+    all_products = all_products[:MAX_TOTAL_PRODUCTS]
+
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump({
+            "updated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "count": len(all_products),
+            "products": all_products,
+        }, f, ensure_ascii=False, indent=2)
+
+    print(f"\nGata! {len(all_products)} produse salvate in products.json")
+
+    # Statistici
+    cu_discount = [p for p in all_products if p.get("discount_pct", 0) > 0]
+    cu_imagine = [p for p in all_products if p.get("image")]
+    print(f"  {len(cu_discount)} cu discount")
+    print(f"  {len(cu_imagine)} cu imagine")
+
+
+if __name__ == "__main__":
+    main()

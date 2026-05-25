@@ -1146,6 +1146,584 @@ def main():
         adaugate += 1
         print(f"  Adaugat: {art['title']}")
 
+    # ── Articole suplimentare: Gadgets, Moto, Electrocasnice, Gaming ─────────
+    ARTICOLE_EXTRA = [
+        {
+            "slug": f"cel-mai-bun-smartwatch-{AN}",
+            "title": f"Cel mai bun smartwatch {AN} — Apple Watch vs Samsung vs Garmin",
+            "excerpt": f"Top smartwatch-uri {AN}: Apple Watch Series 10, Samsung Galaxy Watch 7, Garmin Fenix 8. Comparatie completa, coduri reducere eMAG si Altex.",
+            "category": "Gadgets",
+            "cover": cover_url("smartwatch"),
+            "content": f"""## Cel mai bun smartwatch în {AN}
+
+Un smartwatch bun îți monitorizează sănătatea, îți trimite notificări și te ajută la sport — fără să mai scoți telefonul din buzunar.
+
+## Apple Watch vs Samsung vs Garmin — pe scurt
+
+| | Apple Watch Series 10 | Samsung Galaxy Watch 7 | Garmin Fenix 8 |
+|---|---|---|---|
+| **Ecosistem** | iPhone only | Android (Samsung) | Universal |
+| **Autonomie** | 18h | 40h | 16 zile |
+| **Sport** | ++ | ++ | ++++ |
+| **Sănătate** | ECG, SpO2 | ECG, SpO2, Temp | ECG, SpO2, GPS |
+| **Preț** | 2000-3000 lei | 1500-2500 lei | 3000-7000 lei |
+
+## Top smartwatch-uri recomandate în {AN}
+
+### Apple Watch Series 10 — Cel mai bun pentru iPhone
+Cel mai subțire Apple Watch vreodată. Display Always-On mai mare, detecție apnee de somn, ECG, GPS. Dacă ai iPhone, nu există alternativă mai bună.
+
+### Samsung Galaxy Watch 7 — Cel mai bun pentru Android
+Chip Exynos W1000, baterie 40h, analiza compoziție corporală BIA. Excelent integrat cu telefoanele Samsung.
+
+### Garmin Forerunner 265 — Cel mai bun pentru alergare
+GPS multi-band, training load analysis, autonomie 13 zile. Alegerea alergătorilor serioși.
+
+### Garmin Instinct 3 Solar — Autonomie nelimitată
+Încărcare solară, autonomie infinită în condiții bune de lumină. Indestructibil, GPS multi-band.
+
+### Xiaomi Band 9 — Buget limitat
+Cel mai ieftin smartband decent. Display AMOLED 1.62", 14 zile autonomie, SpO2. Sub 200 lei.
+
+### Huawei Watch GT 5 Pro — Frumos și durabil
+Design premium, autonomie 14 zile, GPS precis. Ecosistem limitat față de Apple/Samsung.
+
+## Ce să verifici înainte de cumpărare
+
+- **Compatibilitate telefon**: Apple Watch = iPhone only, restul = Android
+- **Autonomie**: dacă nu vrei să încarci zilnic, alege Garmin sau Huawei
+- **Scop principal**: sport serios → Garmin; daily use → Apple/Samsung
+- **Dimensiunea**: bandă 41mm vs 45mm — testează pe încheietura ta
+
+## Unde cumperi mai ieftin?
+
+{link_magazine(MAGAZINE_ELECTRONICE)}
+
+[Toate gadgeturile cu reducere →](/gadgets)
+""",
+        },
+        {
+            "slug": f"cele-mai-bune-casti-wireless-{AN}",
+            "title": f"Cele mai bune căști wireless {AN} — Over-ear, In-ear, True Wireless",
+            "excerpt": f"Top căști wireless {AN}: Sony WH-1000XM6, Apple AirPods Pro, Samsung Galaxy Buds. Noise cancelling, autonomie, sunet. Coduri reducere incluse.",
+            "category": "Gadgets",
+            "cover": cover_url("casti-wireless"),
+            "content": f"""## Cele mai bune căști wireless în {AN}
+
+Căștile wireless au revoluționat modul în care ascultăm muzică. Noise cancelling activ, autonomie de 30+ ore, sunet Hi-Fi — totul fără fir.
+
+## Tipuri de căști wireless
+
+- **Over-ear (circumaurale)**: cele mai bune pentru sunete și noise cancelling, mai puțin portabile
+- **On-ear (supraurale)**: compromise între portabilitate și calitate sunet
+- **In-ear (earbuds)**: portabile, ideale pentru sport și zi-cu-zi
+- **True Wireless Stereo (TWS)**: complet fără fir, în cutie de încărcare
+
+## Top căști over-ear {AN}
+
+### Sony WH-1000XM6 — Standardul industriei
+Noise cancelling de neegalat, 30h autonomie, pliant, LDAC pentru audio Hi-Res. Referința pentru noise cancelling.
+
+### Bose QuietComfort Ultra — Confort suprem
+Cel mai confortabil headphone din lume. ANC excelent, Bose Immersive Audio, 24h autonomie.
+
+### Apple AirPods Max — Design premium
+Spatial Audio cu head tracking, ANC puternic, H2 chip. Ideal dacă ești în ecosistem Apple.
+
+## Top True Wireless (TWS) {AN}
+
+### Apple AirPods Pro (2nd gen) — Cele mai bune TWS pentru iPhone
+Adaptive Transparency, H2 chip, USB-C, 30h total cu case. Noise cancelling excelent.
+
+### Sony WF-1000XM5 — Cele mai bune ANC TWS
+Noise cancelling superior față de AirPods, V2 chip, LDAC, IPX4. 24h total autonomie.
+
+### Samsung Galaxy Buds3 Pro — Ecosistem Samsung
+Integrare perfectă cu Samsung, ANC bun, design over-ear in-ear unic, 30h total.
+
+## Sfaturi de cumpărare
+
+- **Buget sub 300 lei**: Anker Soundcore Life Q30, Edifier W820NB
+- **Buget 300-800 lei**: Sony WH-CH720N, Jabra Evolve2 55
+- **Premium 800+ lei**: Sony XM6, Bose QC Ultra, AirPods Max
+
+## Unde cumperi?
+
+{link_magazine(MAGAZINE_ELECTRONICE)}
+
+[Gadgets cu reducere →](/gadgets)
+""",
+        },
+        {
+            "slug": f"cel-mai-bun-power-bank-{AN}",
+            "title": f"Cel mai bun power bank {AN} — pentru orice telefon și laptop",
+            "excerpt": f"Top power bank-uri {AN}: Anker, Baseus, Xiaomi. Ce capacitate alegi, incarcare rapida, compatibilitate. Coduri reducere eMAG.",
+            "category": "Gadgets",
+            "cover": cover_url("power-bank"),
+            "content": f"""## Cel mai bun power bank în {AN}
+
+Un power bank bun înseamnă capacitate mare, încărcare rapidă și formă compactă. Iată cum alegi și ce recomandăm.
+
+## Ce capacitate ai nevoie?
+
+- **5000-10000 mAh**: pentru 1-2 încărcări telefon, portabil în buzunar
+- **20000-26800 mAh**: pentru 3-5 încărcări sau laptop, mai greu
+- **Peste 27000 mAh**: stație de încărcare portabilă
+
+## Încărcarea rapidă — ce protocoale să verifici
+
+- **USB-C PD (Power Delivery)**: standard universal, 20-100W
+- **Quick Charge (QC)**: Qualcomm, pentru telefoane Android
+- **MagSafe**: pentru iPhone 12+, fără fir
+- **Watt-ii contează**: 20W = iPhone rapid, 65W+ = laptop posibil
+
+## Top power bank-uri {AN}
+
+### Anker 737 (PowerCore 26K) — Cel mai versatil
+26800mAh, 140W, încarcă laptop, 2 USB-C + 1 USB-A. Power IQ 4.0. Recomandat pentru călători.
+
+### Baseus Blade — Cel mai subțire power bank laptop
+20000mAh, 100W, format ultra-slim (grosime ca o carte). Ideal pentru laptop + telefon.
+
+### Xiaomi 33W Power Bank 10000 — Cel mai accesibil
+10000mAh, 33W, USB-C + USB-A, design compact. Cel mai bun raport calitate-preț.
+
+### Anker MagGo 10000 — Wireless MagSafe
+10000mAh, MagSafe 15W, USB-C 20W. Ideal pentru iPhone 15/16 — se lipeste de telefon.
+
+## Sfat important
+
+Verifică puterea portului USB-C de OUTPUT (nu input). Un power bank cu 65W output poate încărca laptop-ul, unul cu 20W — nu.
+
+## Unde cumperi?
+
+{link_magazine(MAGAZINE_ELECTRONICE)}
+""",
+        },
+        {
+            "slug": f"cel-mai-bun-sistem-smart-home-{AN}",
+            "title": f"Cel mai bun sistem smart home {AN} — ghid complet pentru casa inteligentă",
+            "excerpt": f"Ghid smart home {AN}: Philips Hue, Google Home, Amazon Alexa, Apple HomeKit. Ce alegi, cum integrezi, costuri reale.",
+            "category": "Gadgets",
+            "cover": cover_url("smart-home"),
+            "content": f"""## Cel mai bun sistem smart home în {AN}
+
+O casă inteligentă îți controlează luminile, termostatele, prizele și camera de securitate dintr-o singură aplicație. Dar care ecosistem e potrivit pentru tine?
+
+## Ecosistemele principale
+
+### Google Home — Cel mai deschis ecosistem
+Compatibil cu cel mai mare număr de dispozitive. Google Assistant excelent, integrare Android nativă.
+
+### Amazon Alexa — Cel mai popular în lume
+Mii de dispozitive compatibile, skills bogate, cel mai bun pentru comenzi vocale complexe.
+
+### Apple HomeKit — Cel mai sigur și privat
+Toate procesările local (fără cloud), criptare end-to-end, integrare perfectă iPhone/Mac.
+
+### Matter/Thread — Viitorul smart home
+Standard universal adoptat de Apple, Google, Amazon. Un dispozitiv Matter funcționează cu orice ecosistem.
+
+## Dispozitive esențiale pentru primul smart home
+
+### Becuri inteligente — Philips Hue / IKEA TRÅDFRI
+Controlezi culoarea și luminozitatea. Philips Hue = premium, IKEA = buget. Amândouă cu Zigbee (mai stabile decât WiFi).
+
+### Priză inteligentă
+Pornești/oprești orice dispozitiv de la distanță. Monitorizezi consumul de energie. Sub 50 lei per priză.
+
+### Termostat inteligent — Nest / Tado
+Economisești 15-23% la factura de energie. Apprendă programul tău și se ajustează automat.
+
+### Camera de securitate — Ring / Reolink / Xiaomi
+Alertă pe telefon la mișcare, vizualizare live, stocare cloud. Reolink = cel mai bun raport calitate-preț.
+
+### Hub central — Google Nest Hub / Amazon Echo
+Controlezi totul cu vocea. Display pentru vizualizare rapidă.
+
+## Buget recomandat
+
+- **Starter kit**: 500-1000 lei (priză + bec + cameră)
+- **Living inteligent**: 1500-3000 lei (lumini + termostat + hub)
+- **Casă completă**: 5000+ lei
+
+## Unde cumperi?
+
+{link_magazine(MAGAZINE_ELECTRONICE)} + {link_magazine(MAGAZINE_CASA)}
+
+[Smart home cu reducere →](/gadgets)
+""",
+        },
+        {
+            "slug": f"cea-mai-buna-drona-{AN}",
+            "title": f"Cea mai bună dronă {AN} — pentru începători și avansați",
+            "excerpt": f"Top drone {AN}: DJI Mini 4 Pro, DJI Air 3, Autel EVO Lite. Camera 4K, autonomie, stabilizator. Coduri reducere eMAG Altex.",
+            "category": "Gadgets",
+            "cover": cover_url("drona"),
+            "content": f"""## Cea mai bună dronă în {AN}
+
+Dronele au devenit accesibile și ușor de pilotat. Iată ce alegi în {AN} în funcție de buget și experiență.
+
+## Legislație importantă în România
+
+Înainte de a cumpăra o dronă, știi că:
+- **Sub 250g** (ex: DJI Mini 4 Pro): reguli simplificate, nu necesită certificat pilot în UE
+- **Peste 250g**: necesită înregistrare la AACR și uneori certificat
+- Fotografia aeriană comercială necesită autorizații speciale
+- Zburatul în zone restricționate este interzis
+
+## Top drone recomandate {AN}
+
+### DJI Mini 4 Pro — Cea mai recomandată pentru începători
+Sub 249g, cameră 4K/60fps, autonomie 34 min, obstacle avoidance omnidirectional. Cea mai bună dronă sub 250g din lume.
+
+### DJI Air 3 — Cel mai bun raport performanță-preț
+Dual camera (wide + medium tele), 4K/60fps, 46 min autonomie. Perfectă pentru creatori de conținut.
+
+### DJI Avata 2 — FPV pentru adrenalină
+First Person View, senzație de zbor unic, camere de 4K. Pentru piloți experimentați care vor viteza.
+
+### DJI Mini 3 Pro — Alternativă accesibilă la Mini 4 Pro
+Sub 249g, 4K/60fps, obstacol avoidance 3 direcții. Preț mai mic decât Mini 4 Pro.
+
+## Ce să verifici la o dronă
+
+- **Greutate**: sub/peste 250g face diferența legală
+- **Autonomie**: 20-30 min = standard, 40+ min = premium
+- **Stabilizator**: gimbal 3 axe = video stabil garantat
+- **Evitare obstacole**: numărul de direcții (omnidirectional = ideal)
+- **Camera**: rezoluție, fps, logaritmic (pentru editare profesională)
+
+## Unde cumperi?
+
+{link_magazine(MAGAZINE_ELECTRONICE)}
+""",
+        },
+        # MOTO / AUTO
+        {
+            "slug": f"cel-mai-bun-dashcam-{AN}",
+            "title": f"Cel mai bun dashcam (cameră auto) {AN} — înregistrează tot",
+            "excerpt": f"Top dashcam-uri {AN}: Viofo A229 Pro, Garmin Dash Cam 57, Xiaomi 70mai. 4K, night vision, GPS integrat. Coduri reducere incluse.",
+            "category": "Auto",
+            "cover": cover_url("dashcam"),
+            "content": f"""## Cel mai bun dashcam în {AN}
+
+Un dashcam (cameră de bord) înregistrează tot ce se întâmplă în trafic — dovadă în caz de accident, alertă la parcare, înregistrare continuă.
+
+## De ce ai nevoie de un dashcam
+
+- **Dovadă în caz de accident**: înregistrarea video este acceptată la poliție și asigurări
+- **Monitorizare parcare**: detectare mișcare/impact când mașina e oprită
+- **Anti-furt**: camera disuadează tentativele de vandalism
+- **Înregistrare automată**: pornire/oprire odată cu mașina
+
+## Top dashcam-uri {AN}
+
+### Viofo A229 Pro — Cel mai bun overall
+4K față + 2K spate, Sony STARVIS 2 senzor, GPS integrat, WiFi. Calitate video de noapte excelentă.
+
+### Garmin Dash Cam 57 — Cel mai simplu de folosit
+1440p, GPS, alerte trafic live, voice control. Perfect pentru utilizatorul non-tehnic.
+
+### Xiaomi 70mai A800S — Raport calitate-preț
+4K față, GPS opțional, WiFi/app, design discret. Cel mai vândut dashcam din România.
+
+### BlackVue DR900X-2CH — Premium
+4K față + 4K spate, Cloud conectat, Cloud Live View. Pentru cine vrea tot ce e mai bun.
+
+## Ce să verifici la un dashcam
+
+- **Rezoluție**: 1440p+ pentru a vedea numerele de înmatriculare clar
+- **Câmp vizual (FOV)**: 140° = standard, 160°+ = mai larg
+- **Night vision**: senzori Sony sau OmniVision = cei mai buni pe întuneric
+- **GPS integrat**: înregistrează viteza și locația
+- **Parcare mod**: necesită hardwire kit sau baterie separată
+
+## Unde cumperi?
+
+{link_magazine(MAGAZINE_ELECTRONICE)}
+
+[Auto-moto cu reducere →](/moto)
+""",
+        },
+        {
+            "slug": f"cele-mai-bune-accesorii-masina-{AN}",
+            "title": f"Cele mai utile accesorii pentru mașină {AN} — top recomandări",
+            "excerpt": f"Top accesorii masina {AN}: suport telefon, incarcator auto, organizator portbagaj, kit prim ajutor. Gadgeturi utile cu coduri reducere.",
+            "category": "Auto",
+            "cover": cover_url("accesorii-auto"),
+            "content": f"""## Cele mai utile accesorii pentru mașină în {AN}
+
+Cu accesoriile potrivite, mașina ta devine mai sigură, mai comodă și mai organizată. Iată ce merită banii.
+
+## Accesorii esențiale (orice șofer ar trebui să aibă)
+
+### 1. Suport telefon pentru mașină
+Magnetic sau cu prindere pe grila de ventilație. Montajul magnetic cu placă pe telefon sau husă e cel mai comod.
+**Recomandare**: Baseus Magnetic Air Vent — magnetic, robust, orientare portret/peisaj.
+
+### 2. Încărcător auto cu încărcare rapidă
+Alege USB-C PD 30W+ pentru a încărca telefonul înainte să ajungi la destinație.
+**Recomandare**: Anker 335 Car Charger — 67W total, 2 porturi USB-C + 1 USB-A.
+
+### 3. Dashcam (cameră de bord)
+Dovadă video în caz de accident. Opțional: GPS integrat.
+**Recomandare**: Xiaomi 70mai A800S — 4K, GPS, WiFi.
+
+### 4. Organizator portbagaj
+Împiedică obiectele să se rostogolească. Cu compartimente, pliabil.
+**Recomandare**: Organizator cu capac, impermeabil, cu mânere.
+
+### 5. Kit prim ajutor + triunghi reflectorizant + vestă
+Obligatorii legal în România. Verifică termenul de valabilitate.
+
+## Accesorii bonus utile
+
+### 6. Aspirator auto portabil
+Aspirator 12V/USB-C, 8000-15000 Pa. Curăță rapid interiorul fără să mergi la spălătorie.
+
+### 7. Mini compresor auto
+Pompează roțile acasă. Verifică presiunea și umflă în 3-5 minute. Sub 150 lei modele decente.
+
+### 8. Camera marsarier wireless
+Montaj simplu, vizualizare pe telefon via WiFi. Ajutor real la parcarea în spații înguste.
+
+### 9. Geantă organizator față (între scaune)
+Pahare, telefon, monede — totul organizat la îndemână.
+
+## Unde cumperi accesorii auto?
+
+{link_magazine(MAGAZINE_ELECTRONICE)} + {link_magazine(MAGAZINE_CASA)}
+
+[Accesorii auto cu reducere →](/moto)
+""",
+        },
+        # GAMING
+        {
+            "slug": f"cel-mai-bun-pc-gaming-{AN}",
+            "title": f"Cel mai bun PC gaming {AN} — pentru orice buget",
+            "excerpt": f"Ghid PC gaming {AN}: componente recomandate, configuratii preassemblate vs custom build. Intel vs AMD, RTX vs RX. Coduri reducere eMAG Altex.",
+            "category": "Gaming",
+            "cover": cover_url("pc-gaming"),
+            "content": f"""## Cel mai bun PC gaming în {AN}
+
+Un PC gaming îți oferă performanța pe care nicio consolă nu o poate egala. Dar ce alegi în {AN}, în funcție de buget?
+
+## Configurații recomandate {AN}
+
+### Entry Level (2500-4000 lei) — 1080p gaming
+- **CPU**: AMD Ryzen 5 5600 / Intel Core i5-12400F
+- **GPU**: AMD RX 6600 / NVIDIA RTX 3060
+- **RAM**: 16GB DDR4 3200MHz
+- **SSD**: 500GB NVMe
+- **PSU**: 650W 80+ Bronze
+- **Jocuri**: orice titlu la 1080p/High, 60+ fps
+
+### Mid Range (5000-8000 lei) — 1440p gaming
+- **CPU**: AMD Ryzen 7 7800X3D / Intel Core i5-14600K
+- **GPU**: AMD RX 7800 XT / NVIDIA RTX 4070
+- **RAM**: 32GB DDR5 6000MHz
+- **SSD**: 1TB NVMe Gen4
+- **Jocuri**: 1440p/Ultra, 100+ fps
+
+### High End (10000-15000 lei) — 4K gaming
+- **CPU**: AMD Ryzen 9 9900X / Intel Core i9-14900K
+- **GPU**: NVIDIA RTX 4080 Super / AMD RX 7900 XTX
+- **RAM**: 32GB DDR5 6400MHz
+- **SSD**: 2TB NVMe Gen5
+- **Jocuri**: 4K/Ultra, Ray Tracing activat
+
+## PC preassemblat vs custom build
+
+**Preassemblat**: mai ușor, garanție sistem, pierdere 10-15% față de custom.
+**Custom build**: performanță maximă per leu, alegere liberă componente, satisfacție garantată.
+
+## Intel vs AMD — în {AN}
+
+- **AMD Ryzen 7 7800X3D**: cel mai bun gaming CPU din lume, datorită 3D V-Cache
+- **Intel Core i9-14900K**: multi-thread excelent, mai scump și mai fierbinte
+- **Pentru buget mediu**: Ryzen 5 7600X sau Intel Core i5-14600K — ambele excelente
+
+## Unde cumperi componente?
+
+{link_magazine(MAGAZINE_ELECTRONICE)}
+
+[Gaming cu reducere →](/categorii/games)
+""",
+        },
+        {
+            "slug": f"cel-mai-bun-monitor-gaming-{AN}",
+            "title": f"Cel mai bun monitor gaming {AN} — IPS, VA sau OLED?",
+            "excerpt": f"Top monitoare gaming {AN}: 144Hz, 240Hz, 4K, OLED. LG, Samsung, ASUS ROG, MSI. Ghid complet cu coduri reducere eMAG.",
+            "category": "Gaming",
+            "cover": cover_url("monitor-gaming"),
+            "content": f"""## Cel mai bun monitor gaming în {AN}
+
+Monitorul face diferența între a vedea inamicul primul sau ultimul. Iată cum alegi în {AN}.
+
+## IPS vs VA vs OLED — rapid
+
+| | IPS | VA | OLED |
+|---|---|---|---|
+| **Culori** | Excelente | Bune | Perfecte |
+| **Contrast** | 1000:1 | 3000:1 | Infinit |
+| **Time de răspuns** | 1ms | 1ms | 0.1ms |
+| **Burn-in** | Nu | Nu | Risc mic |
+| **Preț** | Mediu | Mediu | Mare |
+
+## Top monitoare gaming {AN}
+
+### LG 27GR95QE-B OLED 240Hz — Cel mai bun overall
+27" QHD OLED, 240Hz, 0.1ms, G-Sync Compatible. Culorile și contrastul sunt pur și simplu altceva.
+
+### ASUS ROG Swift PG279QM — IPS 240Hz
+27" QHD, 240Hz, G-Sync, Fast IPS. Referința pentru competitive gaming.
+
+### Samsung Odyssey G7 — VA curbat
+27" QHD VA 240Hz, 1000R curbat, 1ms. Cea mai bună imersie pentru gaming.
+
+### LG 27GP850-B — Raport calitate-preț
+27" QHD IPS 165Hz, 1ms, Nano IPS. Cel mai recomandat monitor mid-range.
+
+## Ce rezoluție și refresh rate?
+
+- **1080p/144Hz**: entry level, orice GPU îl poate alimenta
+- **1440p/165Hz**: sweet spot pentru {AN}, vizibil mai bine decât 1080p
+- **4K/144Hz**: ai nevoie de RTX 4080+ pentru jocuri moderne
+- **1080p/240Hz**: competitive gaming (CS2, Valorant, Apex)
+
+## Unde cumperi?
+
+{link_magazine(MAGAZINE_ELECTRONICE)}
+
+[Gaming cu reducere →](/categorii/games)
+""",
+        },
+        # ELECTROCASNICE
+        {
+            "slug": f"cel-mai-bun-robot-de-bucatarie-{AN}",
+            "title": f"Cel mai bun robot de bucătărie {AN} — Thermomix vs KitchenAid vs Kenwood",
+            "excerpt": f"Top robots bucatarie {AN}: Thermomix TM7, KitchenAid Artisan, Kenwood Chef. Ce alegi, cat costa, coduri reducere eMAG.",
+            "category": "Electrocasnice",
+            "cover": cover_url("robot-bucatarie"),
+            "content": f"""## Cel mai bun robot de bucătărie în {AN}
+
+Un robot de bucătărie bun îți salvează ore din bucătărie. Dar există o diferență uriașă între un robot multifuncțional și un simplu mixer cu accesorii.
+
+## Tipuri de roboti de bucătărie
+
+### Robot multifuncțional (Thermomix style)
+Gătit, mixare, cântărire, fermentare — totul într-un singur aparat.
+**Ideal pentru**: persoane care gătesc des și vor să simplifice procesul.
+
+### Stand mixer (KitchenAid style)
+Mixare, frământare, montare smântână — cu bol fix și accesorii multiple.
+**Ideal pentru**: copt, patiserie, deserturi.
+
+### Robot culinaj (procesator)
+Tocare, feliere, răzuire, mixare — pregătire ingrediente.
+**Ideal pentru**: preparare rapidă ingrediente.
+
+## Top roboti de bucătărie {AN}
+
+### Thermomix TM7 — Cel mai complet
+Gătit, mixare, cântărire, fermentare, Bluetooth cookbook. Cel mai scump dar și cel mai capabil.
+
+### KitchenAid Artisan — Iconicul stand mixer
+Motor puternic 325W, 10 viteze, 4.8L bol, 15+ accesorii. Durată de viață: 15-20 ani. Investiție pe viață.
+
+### Kenwood Chef Titanium — Alternativa europeană
+6.7L bol, 1400W, mixer + robot culinaj integrat, 20+ accesorii. Mai complet decât KitchenAid la același preț.
+
+### Bosch MUM5 — Entry level solid
+800W, 3.9L bol, accesorii de bază, preț accesibil. Ideal pentru uz normal.
+
+## Sfat important
+
+Dacă gătești 3+ ori pe săptămână și vrei să simplifici: **Thermomix** sau **Kenwood Chef**.
+Dacă faci mult copt și deserturi: **KitchenAid Artisan**.
+Dacă vrei ceva accesibil: **Bosch MUM5**.
+
+## Unde cumperi?
+
+{link_magazine(MAGAZINE_ELECTRONICE)} + {link_magazine(MAGAZINE_CASA)}
+
+[Electrocasnice cu reducere →](/categorii/home-garden)
+""",
+        },
+        {
+            "slug": f"cea-mai-buna-masina-de-cafea-{AN}",
+            "title": f"Cea mai bună mașină de cafea {AN} — espressor automat, manual, capsule",
+            "excerpt": f"Top masini de cafea {AN}: DeLonghi, Breville, Nespresso. Espressor automat vs manual vs capsule. Coduri reducere eMAG si Altex.",
+            "category": "Electrocasnice",
+            "cover": cover_url("masina-cafea"),
+            "content": f"""## Cea mai bună mașină de cafea în {AN}
+
+Cafeaua perfectă acasă este posibilă. Dar tipul de mașină pe care o alegi face toată diferența.
+
+## Tipuri de mașini de cafea
+
+### Espressor automat (bean-to-cup)
+Macini, extrage, spumeaza lapte — totul automat. Cafeaua cea mai proaspătă.
+**Ideal pentru**: iubitorii de espresso/cappuccino care vor simplitate maximă.
+
+### Espressor semi-automat
+Tu controlezi extragerea, aparatul face presiunea. Experiența completă de barista.
+**Ideal pentru**: entuziaști care vor să stăpânească cafeaua.
+
+### Capsule (Nespresso/Dolce Gusto)
+Cel mai simplu. Introduci capsula, apeși buton. Cost per capsulă mai mare.
+**Ideal pentru**: cei care vor cafea rapidă fără bătăi de cap.
+
+### Filter coffee / Pour-over
+Cafea lentă, aromatică, fără presiune. Apreciată de adevărații cunoscători.
+
+## Top mașini de cafea {AN}
+
+### DeLonghi Dinamica Plus — Cel mai bun automat
+Spumant LatteCrema integrat, 13 băuturi, ecran touch. Produce espresso și cappuccino la nivel de cafenea.
+
+### Breville Barista Express — Best semi-automat
+Râșniță integrată, 15 bar, wand spumant manuală. Controlezi fiecare variabilă. Curba de învățare există.
+
+### Nespresso Vertuo Pop — Capsule accesibile
+Design modern, 5 mărimi ceașcă (espresso la cafea mare), crema autentică. Cel mai accesibil Nespresso.
+
+### De'Longhi Magnifica Start — Entry-level automat
+Automatizare simplă, 2 setări de intensitate, spumant manual. Sub 1000 lei.
+
+## Costul real per ceașcă
+
+- **Capsule**: 2-4 lei/capsulă
+- **Boabe + automat**: 0.50-1.50 lei/ceașcă
+- **Cafea măcinată + filtru**: 0.30-0.80 lei/ceașcă
+
+## Unde cumperi?
+
+{link_magazine(MAGAZINE_ELECTRONICE)}
+
+[Electrocasnice cu reducere →](/categorii/home-garden)
+""",
+        },
+    ]
+
+    for art in ARTICOLE_EXTRA:
+        if art["slug"] in sluguri_existente:
+            continue
+        post = {
+            "slug": art["slug"],
+            "title": art["title"],
+            "date": datetime.now().strftime("%Y-%m-%d"),
+            "excerpt": art["excerpt"],
+            "category": art["category"],
+            "magazin": None,
+            "cover": art["cover"],
+            "content": art["content"],
+        }
+        posts.insert(0, post)
+        sluguri_existente.add(art["slug"])
+        adaugate += 1
+
     # Sorteaza si salveaza
     posts = sorted(posts, key=lambda x: x["date"], reverse=True)
 
