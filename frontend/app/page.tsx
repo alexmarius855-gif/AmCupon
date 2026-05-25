@@ -63,6 +63,23 @@ function extractDiscount(text: string): string | null {
   return m ? m[1] + "%" : null;
 }
 
+function maxDiscount(promotii: Promotie[]): string | null {
+  let maxPct = 0;
+  for (const p of promotii) {
+    const texts = [p.nume || "", p.descriere || ""];
+    for (const t of texts) {
+      const m = t.match(/(\d+)\s*%/g);
+      if (m) {
+        for (const match of m) {
+          const val = parseInt(match);
+          if (val > maxPct && val <= 90) maxPct = val;
+        }
+      }
+    }
+  }
+  return maxPct > 0 ? `Până la ${maxPct}% reducere` : null;
+}
+
 function numeAfisat(magazin: string): string {
   return magazin.split(".")[0].replace(/-/g, " ")
     .split(" ").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
@@ -554,10 +571,12 @@ function Card({ m, revealed, copiat, onCopiere }: {
 }) {
   const promo = m.promotii[0];
   const logoSrc = m.logo_url || "";
-  const discount = promo ? (extractDiscount(promo.nume) || extractDiscount(promo.descriere || "")) : null;
+  const badgeReducere = m.promotii.length > 0 ? maxDiscount(m.promotii) : null;
   const numeMagazin = numeAfisat(m.magazin);
   const initiala = numeMagazin.charAt(0).toUpperCase();
   const link = promo?.landing_page || m.url_afiliat || m.url;
+  const nrCupoane = m.promotii.filter(p => p.cod_cupon).length;
+  const nrOferte = m.promotii.length;
   const [imgOk, setImgOk] = useState(true);
 
   const culori = ["bg-blue-500", "bg-green-500", "bg-purple-500", "bg-pink-500", "bg-indigo-500", "bg-teal-500", "bg-red-500", "bg-yellow-500"];
@@ -568,7 +587,7 @@ function Card({ m, revealed, copiat, onCopiere }: {
 
       <a href={`/cod-reducere/${m.magazin}`} className="flex flex-col items-center justify-center pt-5 pb-3 px-4 group relative">
         {m.exclusiv && (
-          <span className="absolute top-3 right-3 text-xs font-bold bg-orange-500 text-white px-2 py-0.5 rounded-full shadow-sm">
+          <span className="absolute top-3 left-3 text-xs font-bold bg-orange-500 text-white px-2 py-0.5 rounded-full shadow-sm">
             Exclusiv
           </span>
         )}
@@ -581,15 +600,36 @@ function Card({ m, revealed, copiat, onCopiere }: {
             </div>
           )}
         </div>
-        <h3 className="font-black text-gray-900 text-base text-center group-hover:text-orange-500 transition-colors">{numeMagazin}</h3>
+        <h3 className="font-black text-gray-900 text-sm text-center group-hover:text-orange-500 transition-colors leading-tight">
+          {m.promotii.length > 0 ? (nrCupoane > 0 ? "Cupoane" : "Reduceri") : "Magazine"} {numeMagazin}
+        </h3>
         <span className="text-xs text-gray-400 mt-0.5">{m.categorie}</span>
       </a>
 
-      <div className="px-4 pb-2 text-center min-h-[20px]">
-        {(promo?.cod_cupon || promo) && (
-          <span className="text-xs font-bold text-teal-600 tracking-wider uppercase">
-            {promo?.cod_cupon ? "Cod Reducere" : "Ofertă Specială"}
-            {discount && <span className="ml-1 text-orange-500">{discount}</span>}
+      {/* Nr. cupoane / oferte */}
+      <div className="px-4 pb-1 text-center min-h-[18px]">
+        {nrOferte > 0 && (
+          <span className="text-xs text-gray-500">
+            {nrCupoane > 0
+              ? `${nrCupoane} cupon${nrCupoane > 1 ? "e" : ""}`
+              : `${nrOferte} ofert${nrOferte > 1 ? "e" : "ă"}`}
+          </span>
+        )}
+      </div>
+
+      {/* Badge "Până la X% reducere" */}
+      <div className="px-4 pb-3 text-center min-h-[28px] flex items-center justify-center">
+        {badgeReducere ? (
+          <span className="inline-block bg-blue-50 text-blue-700 border border-blue-200 text-xs font-bold px-3 py-1 rounded-full">
+            {badgeReducere}
+          </span>
+        ) : m.are_promotie ? (
+          <span className="inline-block bg-orange-50 text-orange-600 border border-orange-200 text-xs font-bold px-3 py-1 rounded-full">
+            Ofertă activă
+          </span>
+        ) : (
+          <span className="inline-block bg-gray-50 text-gray-400 text-xs px-3 py-1 rounded-full">
+            Fără promoții acum
           </span>
         )}
       </div>

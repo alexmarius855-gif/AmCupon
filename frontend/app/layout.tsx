@@ -18,8 +18,30 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "AmCupon.ro - Coduri de reducere si oferte verificate",
   description: "Coduri de reducere verificate si oferte exclusive de la cele mai mari magazine online din Romania. Actualizat zilnic.",
+  metadataBase: new URL("https://amcupon.ro"),
   verification: {
     google: "UvsbX8yxIp1eGwFK5ESqVXzA6jT5wjcTartEIPG5mqw",
+  },
+  openGraph: {
+    title: "AmCupon.ro — Coduri de reducere verificate",
+    description: "Peste 200 magazine partenere. Coduri verificate, actualizate zilnic. 100% gratuit.",
+    url: "https://amcupon.ro",
+    siteName: "AmCupon.ro",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "AmCupon.ro" }],
+    locale: "ro_RO",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AmCupon.ro — Coduri de reducere verificate",
+    description: "Peste 200 magazine partenere. Actualizat zilnic.",
+    images: ["/og-image.png"],
+  },
+  icons: {
+    icon: [
+      { url: "/logo.svg", type: "image/svg+xml" },
+    ],
+    apple: "/logo.svg",
   },
 };
 
