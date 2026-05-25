@@ -32,7 +32,7 @@ export default function NewsletterPopup() {
     try {
       // Trimite la Formspree (gratuit, 50 emailuri/luna)
       // Inlocuieste FORMSPREE_ID cu ID-ul tau de la formspree.io
-      const FORMSPREE_ID = process.env.NEXT_PUBLIC_FORMSPREE_ID || "newsletter";
+      const FORMSPREE_ID = process.env.NEXT_PUBLIC_FORMSPREE_ID || "xpqnywer";
       const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
