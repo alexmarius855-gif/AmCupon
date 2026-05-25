@@ -710,9 +710,18 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
       </div>
 
       <div className="px-4 pb-2 flex flex-wrap justify-center gap-2 min-h-[24px]">
-        {promo && promo.zile_ramase <= 3 && (
-          <span className="text-xs font-semibold text-red-500">
-            Expiră {promo.zile_ramase === 0 ? "azi" : `în ${promo.zile_ramase}z`}
+        {/* Timestamp verificare */}
+        {m.are_promotie && !promo?.zile_ramase || (promo && promo.zile_ramase > 3) ? (
+          <span className="text-xs text-green-600 font-medium">✓ Verificat azi</span>
+        ) : null}
+        {promo && promo.zile_ramase <= 3 && promo.zile_ramase > 0 && (
+          <span className="text-xs font-bold text-amber-600 bg-amber-50 px-2 py-0.5 rounded-full">
+            ⏰ Expiră în {promo.zile_ramase}z
+          </span>
+        )}
+        {promo && promo.zile_ramase === 0 && (
+          <span className="text-xs font-bold text-red-600 bg-red-50 px-2 py-0.5 rounded-full animate-pulse">
+            🔴 Expiră azi!
           </span>
         )}
         {m.trend > 0 && <span className="text-xs text-purple-500 font-medium">↑ Trending</span>}

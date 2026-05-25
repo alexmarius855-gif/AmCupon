@@ -218,6 +218,7 @@ def main():
             "exclusiv": are_cod,
             "categorie_slug": categorie_slug(categorie),
             "platforma": "2performant",
+            "ultima_verificare": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
         }
 
         intrare["scor_final"] = calculeaza_scor(intrare)

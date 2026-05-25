@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import CookieBanner from "./components/CookieBanner";
 import AffiliateScript from "./components/AffiliateScript";
+import NewsletterPopup from "./components/NewsletterPopup";
 import "./globals.css";
 
 // ─── GA4 Measurement ID ───────────────────────────────────────────────────────
@@ -106,6 +107,7 @@ export default function RootLayout({
         {children}
         <CookieBanner />
         <AffiliateScript />
+        <NewsletterPopup />
         <Analytics />
       </body>
       {GA_ID && <GoogleAnalytics gaId={GA_ID} />}
