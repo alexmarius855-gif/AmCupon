@@ -36,22 +36,22 @@ interface Magazin {
 }
 
 const CATEGORII = [
-  { slug: "fashion", emoji: "👗", label: "Fashion", bg: "bg-pink-50", hover: "hover:bg-pink-100", border: "border-pink-200" },
-  { slug: "electronics-itc", emoji: "💻", label: "Electronice", bg: "bg-blue-50", hover: "hover:bg-blue-100", border: "border-blue-200" },
-  { slug: "beauty", emoji: "💄", label: "Frumusețe", bg: "bg-rose-50", hover: "hover:bg-rose-100", border: "border-rose-200" },
-  { slug: "home-garden", emoji: "🏡", label: "Casă & Grădină", bg: "bg-green-50", hover: "hover:bg-green-100", border: "border-green-200" },
-  { slug: "sports-outdoors", emoji: "🏃", label: "Sport", bg: "bg-orange-50", hover: "hover:bg-orange-100", border: "border-orange-200" },
-  { slug: "pharma", emoji: "💊", label: "Farmacie", bg: "bg-red-50", hover: "hover:bg-red-100", border: "border-red-200" },
-  { slug: "babies-kids-toys", emoji: "👶", label: "Copii", bg: "bg-purple-50", hover: "hover:bg-purple-100", border: "border-purple-200" },
-  { slug: "automotive", emoji: "🚗", label: "Auto-Moto", bg: "bg-slate-50", hover: "hover:bg-slate-100", border: "border-slate-200" },
-  { slug: "books", emoji: "📚", label: "Cărți", bg: "bg-yellow-50", hover: "hover:bg-yellow-100", border: "border-yellow-200" },
-  { slug: "hypermarket-groceries", emoji: "🛒", label: "Hypermarket", bg: "bg-emerald-50", hover: "hover:bg-emerald-100", border: "border-emerald-200" },
-  { slug: "gifts-flowers", emoji: "🎁", label: "Cadouri", bg: "bg-fuchsia-50", hover: "hover:bg-fuchsia-100", border: "border-fuchsia-200" },
-  { slug: "telecom", emoji: "📱", label: "Telecom", bg: "bg-cyan-50", hover: "hover:bg-cyan-100", border: "border-cyan-200" },
-  { slug: "pet-supplies", emoji: "🐾", label: "Animale", bg: "bg-amber-50", hover: "hover:bg-amber-100", border: "border-amber-200" },
-  { slug: "health-personal-care", emoji: "🧴", label: "Sănătate", bg: "bg-teal-50", hover: "hover:bg-teal-100", border: "border-teal-200" },
-  { slug: "jewelry", emoji: "💎", label: "Bijuterii", bg: "bg-violet-50", hover: "hover:bg-violet-100", border: "border-violet-200" },
-  { slug: "games", emoji: "🎮", label: "Jocuri", bg: "bg-indigo-50", hover: "hover:bg-indigo-100", border: "border-indigo-200" },
+  { slug: "fashion",              emoji: "👗", label: "Fashion",       bg: "bg-pink-50",    hover: "hover:bg-pink-100",    border: "border-pink-200" },
+  { slug: "electronics-itc",     emoji: "💻", label: "Electronice",   bg: "bg-blue-50",    hover: "hover:bg-blue-100",    border: "border-blue-200" },
+  { slug: "beauty",              emoji: "💄", label: "Frumusețe",     bg: "bg-rose-50",    hover: "hover:bg-rose-100",    border: "border-rose-200" },
+  { slug: "home-garden",         emoji: "🏡", label: "Casă & Grădină",bg: "bg-green-50",   hover: "hover:bg-green-100",   border: "border-green-200" },
+  { slug: "sports-outdoors",     emoji: "🏃", label: "Sport",         bg: "bg-orange-50",  hover: "hover:bg-orange-100",  border: "border-orange-200" },
+  { slug: "pharma",              emoji: "💊", label: "Farmacie",      bg: "bg-red-50",     hover: "hover:bg-red-100",     border: "border-red-200" },
+  { slug: "babies-kids-toys",    emoji: "👶", label: "Copii & Jucării",bg:"bg-purple-50",  hover: "hover:bg-purple-100",  border: "border-purple-200" },
+  { slug: "automotive",          emoji: "🚗", label: "Auto-Moto",     bg: "bg-slate-50",   hover: "hover:bg-slate-100",   border: "border-slate-200" },
+  { slug: "books",               emoji: "📚", label: "Cărți",         bg: "bg-yellow-50",  hover: "hover:bg-yellow-100",  border: "border-yellow-200" },
+  { slug: "hypermarket-groceries",emoji:"🛒", label: "Hypermarket",   bg: "bg-emerald-50", hover: "hover:bg-emerald-100", border: "border-emerald-200" },
+  { slug: "gifts-flowers",       emoji: "🎁", label: "Cadouri",       bg: "bg-fuchsia-50", hover: "hover:bg-fuchsia-100", border: "border-fuchsia-200" },
+  { slug: "telecom",             emoji: "📱", label: "Telecom",       bg: "bg-cyan-50",    hover: "hover:bg-cyan-100",    border: "border-cyan-200" },
+  { slug: "pet-supplies",        emoji: "🐾", label: "Animale",       bg: "bg-amber-50",   hover: "hover:bg-amber-100",   border: "border-amber-200" },
+  { slug: "health-personal-care",emoji: "🧴", label: "Sănătate",      bg: "bg-teal-50",    hover: "hover:bg-teal-100",    border: "border-teal-200" },
+  { slug: "jewelry",             emoji: "💎", label: "Bijuterii",     bg: "bg-violet-50",  hover: "hover:bg-violet-100",  border: "border-violet-200" },
+  { slug: "games",               emoji: "🎮", label: "Jocuri",        bg: "bg-indigo-50",  hover: "hover:bg-indigo-100",  border: "border-indigo-200" },
 ];
 
 // Sectiuni speciale (pagini dedicate)
@@ -342,45 +342,98 @@ export default function Home() {
         </div>
       </div>
 
-      {/* CATEGORY GRID */}
-      <div className="bg-white border-b border-gray-100 py-8 px-4">
+      {/* CATEGORY GRID — Wirecutter style */}
+      <div className="bg-white border-b border-gray-100 py-10 px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="flex items-center justify-between mb-5">
-            <h2 className="text-lg font-black text-gray-900">Caută după categorie</h2>
-            <a href="/categorii" className="text-sm font-semibold text-orange-500 hover:text-orange-600 transition-colors">
-              Vezi toate →
+          <div className="flex items-center justify-between mb-7">
+            <div>
+              <h2 className="text-2xl font-black text-gray-900">Explorează pe categorii</h2>
+              <p className="text-sm text-gray-400 mt-0.5">Găsește cele mai bune oferte din categoria ta preferată</p>
+            </div>
+            <a href="/categorii" className="hidden sm:flex items-center gap-1.5 text-sm font-bold text-orange-500 hover:text-orange-600 transition-colors border border-orange-200 hover:border-orange-400 px-4 py-2 rounded-full">
+              Toate categoriile
+              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+              </svg>
             </a>
           </div>
-          <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 gap-2 md:gap-3">
-            {CATEGORII.map((c) => (
-              <a key={c.slug} href={`/categorii/${c.slug}`}
-                className={`relative flex flex-col items-center gap-1.5 p-2.5 md:p-3 rounded-2xl border ${c.bg} ${c.hover} ${c.border} transition-all duration-200 group`}>
-                <span className="text-2xl md:text-3xl group-hover:scale-110 transition-transform duration-200">{c.emoji}</span>
-                <span className="text-xs font-semibold text-gray-700 text-center leading-tight">{c.label}</span>
-                {promoPerCateg[c.slug] > 0 && (
-                  <span className="absolute -top-1.5 -right-1.5 bg-orange-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center leading-none">
-                    {promoPerCateg[c.slug] > 9 ? "9+" : promoPerCateg[c.slug]}
-                  </span>
-                )}
-              </a>
-            ))}
+
+          {/* Grid mare — carduri vizuale */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-3 md:gap-4">
+            {CATEGORII.slice(0, 8).map((c) => {
+              const nrPromo = promoPerCateg[c.slug] || 0;
+              return (
+                <a key={c.slug} href={`/categorii/${c.slug}`}
+                  className={`group relative flex flex-col items-center justify-center gap-3 p-6 md:p-7 rounded-3xl border-2 ${c.bg} ${c.hover} ${c.border} hover:border-orange-300 hover:shadow-lg hover:-translate-y-1 transition-all duration-200 overflow-hidden min-h-[140px]`}>
+                  {/* Glow decorativ */}
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-br from-white/40 to-transparent pointer-events-none" />
+                  {/* Emoji */}
+                  <span className="text-4xl md:text-5xl group-hover:scale-110 transition-transform duration-200 drop-shadow-sm">{c.emoji}</span>
+                  {/* Nume */}
+                  <span className="font-black text-sm md:text-base text-gray-800 text-center leading-tight">{c.label}</span>
+                  {/* Badge promoții */}
+                  {nrPromo > 0 ? (
+                    <span className="bg-orange-500 text-white text-xs font-bold px-2.5 py-0.5 rounded-full shadow-sm">
+                      {nrPromo} {nrPromo === 1 ? "ofertă" : "oferte"}
+                    </span>
+                  ) : (
+                    <span className="text-xs text-gray-400 font-medium">Vezi magazine</span>
+                  )}
+                </a>
+              );
+            })}
           </div>
+
+          {/* Al doilea rând — categorii secundare, mai mici */}
+          <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-8 gap-2 mt-3">
+            {CATEGORII.slice(8).map((c) => {
+              const nrPromo = promoPerCateg[c.slug] || 0;
+              return (
+                <a key={c.slug} href={`/categorii/${c.slug}`}
+                  className={`group relative flex flex-col items-center gap-1.5 p-3 rounded-2xl border ${c.bg} ${c.hover} ${c.border} hover:border-orange-300 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200`}>
+                  <span className="text-2xl group-hover:scale-110 transition-transform duration-200">{c.emoji}</span>
+                  <span className="text-xs font-bold text-gray-700 text-center leading-tight">{c.label}</span>
+                  {nrPromo > 0 && (
+                    <span className="absolute -top-1.5 -right-1.5 bg-orange-500 text-white text-[10px] font-bold rounded-full w-5 h-5 flex items-center justify-center shadow-sm">
+                      {nrPromo > 9 ? "9+" : nrPromo}
+                    </span>
+                  )}
+                </a>
+              );
+            })}
+          </div>
+
+          <a href="/categorii" className="sm:hidden mt-4 flex items-center justify-center gap-1.5 text-sm font-bold text-orange-500 border border-orange-200 py-2.5 rounded-2xl">
+            Toate categoriile →
+          </a>
         </div>
       </div>
 
       {/* SECTIUNI SPECIALE */}
-      <div className="bg-gray-50 border-b border-gray-100 py-8 px-4">
+      <div className="bg-gray-50 border-b border-gray-100 py-10 px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="text-lg font-black text-gray-900">Secțiuni speciale</h2>
+          <div className="flex items-center justify-between mb-6">
+            <div>
+              <h2 className="text-2xl font-black text-gray-900">Secțiuni speciale</h2>
+              <p className="text-sm text-gray-400 mt-0.5">Ghiduri dedicate cu cele mai bune oferte</p>
+            </div>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-            {SECTIUNI_SPECIALE.map((s) => (
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 md:gap-4">
+            {SECTIUNI_SPECIALE.slice(0, 10).map((s) => (
               <a key={s.href} href={s.href}
-                className={`group bg-gradient-to-br ${s.gradient} rounded-2xl p-4 text-white hover:opacity-90 transition-all hover:shadow-lg hover:-translate-y-0.5 duration-200`}>
-                <div className="text-2xl mb-2">{s.emoji}</div>
-                <p className="font-black text-sm leading-tight">{s.label}</p>
-                <p className="text-white/70 text-xs mt-0.5 leading-tight">{s.desc}</p>
+                className={`group relative bg-gradient-to-br ${s.gradient} rounded-3xl p-5 md:p-6 text-white hover:shadow-xl hover:-translate-y-1 transition-all duration-200 overflow-hidden`}>
+                <div className="absolute top-0 right-0 w-20 h-20 rounded-full bg-white/10 blur-xl transform translate-x-4 -translate-y-4 group-hover:scale-150 transition-transform duration-300" />
+                <div className="relative">
+                  <div className="text-3xl mb-3">{s.emoji}</div>
+                  <p className="font-black text-sm leading-tight">{s.label}</p>
+                  <p className="text-white/65 text-xs mt-1 leading-tight">{s.desc}</p>
+                  <div className="mt-4 flex items-center gap-1 text-white/80 text-xs font-semibold">
+                    Descoperă
+                    <svg className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </div>
               </a>
             ))}
           </div>
