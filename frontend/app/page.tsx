@@ -480,13 +480,13 @@ export default function Home() {
               <h3 className="text-white font-bold text-xs mb-4 uppercase tracking-wider">Căutări populare</h3>
               <ul className="space-y-2.5 text-sm">
                 {[
-                  { href: "/reduceri/answear.ro", label: "Cod reducere Answear" },
-                  { href: "/reduceri/fashiondays.ro", label: "Cod reducere Fashion Days" },
-                  { href: "/reduceri/notino.ro", label: "Cod reducere Notino" },
-                  { href: "/reduceri/emag.ro", label: "Cod reducere eMAG" },
-                  { href: "/reduceri/farmec.ro", label: "Cod reducere Farmec" },
-                  { href: "/reduceri/noriel.ro", label: "Cod reducere Noriel" },
-                  { href: "/reduceri/elefant.ro", label: "Cod reducere Elefant" },
+                  { href: "/cod-reducere/answear.ro", label: "Cod reducere Answear" },
+                  { href: "/cod-reducere/fashiondays.ro", label: "Cod reducere Fashion Days" },
+                  { href: "/cod-reducere/notino.ro", label: "Cod reducere Notino" },
+                  { href: "/cod-reducere/emag.ro", label: "Cod reducere eMAG" },
+                  { href: "/cod-reducere/farmec.ro", label: "Cod reducere Farmec" },
+                  { href: "/cod-reducere/noriel.ro", label: "Cod reducere Noriel" },
+                  { href: "/cod-reducere/elefant.ro", label: "Cod reducere Elefant" },
                 ].map((l) => (
                   <li key={l.href}><a href={l.href} className="hover:text-orange-400 transition-colors">{l.label}</a></li>
                 ))}
@@ -566,7 +566,7 @@ function Card({ m, revealed, copiat, onCopiere }: {
   return (
     <div className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 flex flex-col overflow-hidden">
 
-      <a href={`/reduceri/${m.magazin}`} className="flex flex-col items-center justify-center pt-5 pb-3 px-4 group relative">
+      <a href={`/cod-reducere/${m.magazin}`} className="flex flex-col items-center justify-center pt-5 pb-3 px-4 group relative">
         {m.exclusiv && (
           <span className="absolute top-3 right-3 text-xs font-bold bg-orange-500 text-white px-2 py-0.5 rounded-full shadow-sm">
             Exclusiv

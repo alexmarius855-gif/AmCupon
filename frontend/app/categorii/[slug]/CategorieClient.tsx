@@ -60,7 +60,7 @@ function MagazinCard({ m, revealed, copiat, onCopiere }: {
 
   return (
     <div className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col overflow-hidden">
-      <a href={`/reduceri/${m.magazin}`} className="flex flex-col items-center pt-5 pb-3 px-4 group relative">
+      <a href={`/cod-reducere/${m.magazin}`} className="flex flex-col items-center pt-5 pb-3 px-4 group relative">
         {m.exclusiv && (
           <span className="absolute top-3 right-3 text-xs font-bold bg-orange-500 text-white px-2 py-0.5 rounded-full">Exclusiv</span>
         )}

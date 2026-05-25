@@ -34,10 +34,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     })),
     ...magazine.map((m) => ({
-      url: `${BASE_URL}/reduceri/${m.magazin}`,
+      url: `${BASE_URL}/cod-reducere/${m.magazin}`,
       lastModified: new Date(),
       changeFrequency: "daily" as const,
-      priority: m.are_promotie ? 0.8 : 0.5,
+      priority: m.are_promotie ? 0.9 : 0.6,
     })),
   ];
 }

@@ -159,7 +159,7 @@ export default async function ArticolPage({
             {post.magazin && (
               <>
                 <span>·</span>
-                <a href={`/reduceri/${post.magazin}`} className="text-orange-500 font-semibold hover:underline">
+                <a href={`/cod-reducere/${post.magazin}`} className="text-orange-500 font-semibold hover:underline">
                   {numeAfisat(post.magazin)}
                 </a>
               </>
@@ -182,7 +182,7 @@ export default async function ArticolPage({
             <div className="mt-10 p-6 bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl text-white text-center">
               <p className="font-black text-xl mb-2">Vezi toate promoțiile {numeAfisat(post.magazin)}</p>
               <p className="text-orange-100 text-sm mb-4">Coduri verificate, actualizate zilnic</p>
-              <a href={`/reduceri/${post.magazin}`}
+              <a href={`/cod-reducere/${post.magazin}`}
                 className="inline-block bg-white text-orange-600 font-bold px-6 py-2.5 rounded-xl text-sm hover:bg-orange-50 transition-colors">
                 Deschide pagina →
               </a>
