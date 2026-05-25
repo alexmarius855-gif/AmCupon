@@ -36,7 +36,7 @@ AFFILIATE_KEY      = os.environ.get("PROFITSHARE_KEY", "")
 
 OUTPUT_FILE = "../data/profitshare_output.json"
 
-BASE_URL = "https://api.profitshare.ro"
+BASE_URL = "http://api.profitshare.ro"
 
 # ─── MAPARE CATEGORII (Profitshare -> formatul nostru) ────────────────────────
 CATEGORY_MAP = {
@@ -120,28 +120,56 @@ def calculeaza_folosit(slug: str, are_promotie: bool) -> int:
     return rng.randint(20, 400)
 
 
-def ps_get(endpoint: str, params: dict = None) -> dict | list | None:
-    """Apel API Profitshare cu autentificare."""
+def ps_get(api_name: str, params: dict = None) -> dict | list | None:
+    """
+    Apel API Profitshare cu autentificare HMAC-SHA1.
+    Ref: https://github.com/ConversionMarketing/profitshare-api
+
+    String to sign: GET{api_name}/?{query_string}/{user}{date_gmt}
+    Headers: X-PS-Client, X-PS-Auth, X-PS-Accept, Date
+    """
     if not AFFILIATE_USERNAME or not AFFILIATE_KEY:
         print("  EROARE: Lipsesc credentialele Profitshare!")
         print("  Seteaza PROFITSHARE_USER si PROFITSHARE_KEY ca variabile de mediu.")
         return None
 
-    url = f"{BASE_URL}{endpoint}"
-    p = {
-        "affiliate_username": AFFILIATE_USERNAME,
-        "affiliate_key": AFFILIATE_KEY,
-        **(params or {}),
+    import hmac as hmac_mod
+    import hashlib
+    from urllib.parse import urlencode, unquote
+    from datetime import datetime, timezone
+
+    date_str = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S GMT")
+    query_string = unquote(urlencode(params)) if params else ""
+
+    string_to_sign = f"GET{api_name}/?{query_string}/{AFFILIATE_USERNAME}{date_str}"
+    signature = hmac_mod.new(
+        AFFILIATE_KEY.encode(),
+        string_to_sign.encode(),
+        hashlib.sha1,
+    ).hexdigest()
+
+    headers = {
+        "Date": date_str,
+        "X-PS-Client": AFFILIATE_USERNAME,
+        "X-PS-Auth": signature,
+        "X-PS-Accept": "json",
     }
+
+    qs_part = f"?{query_string}" if query_string else ""
+    url = f"{BASE_URL}/{api_name}/{qs_part}"
+
     try:
-        r = requests.get(url, params=p, timeout=30)
+        r = requests.get(url, headers=headers, timeout=30)
+        if r.status_code == 500:
+            # Cont nou / fara programe aprobate inca
+            return []
         r.raise_for_status()
         return r.json()
     except requests.exceptions.RequestException as e:
-        print(f"  Eroare retea {endpoint}: {e}")
+        print(f"  Eroare retea {api_name}: {e}")
         return None
     except ValueError as e:
-        print(f"  Eroare JSON {endpoint}: {e}")
+        print(f"  Eroare JSON {api_name}: {e}")
         return None
 
 
@@ -152,7 +180,7 @@ def load_programs() -> list[dict]:
     page = 1
 
     while True:
-        data = ps_get("/affiliate-programs/", {"results_per_page": 100, "page": page})
+        data = ps_get("affiliate-programs", {"results_per_page": 100, "page": page})
         if not data:
             break
         programs = data if isinstance(data, list) else data.get("programs", data.get("result", []))
@@ -174,7 +202,7 @@ def load_promotions() -> list[dict]:
     page = 1
 
     while True:
-        data = ps_get("/affiliate-promotions/", {"results_per_page": 200, "page": page})
+        data = ps_get("affiliate-promotions", {"results_per_page": 200, "page": page})
         if not data:
             break
         promos = data if isinstance(data, list) else data.get("promotions", data.get("result", []))
