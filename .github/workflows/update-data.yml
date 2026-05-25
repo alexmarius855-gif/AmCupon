@@ -27,18 +27,19 @@ jobs:
       - name: Instaleaza dependinte
         run: pip install -r scripts/requirements.txt
 
-      # ── 3. 2Performant data — API direct (inlocuieste SHOPS.xlsx) ──────────
-      - name: Fetch date 2Performant via API (nu mai e nevoie de SHOPS.xlsx)
+      # ── 3. 2Performant data — API direct ──────────────────────────────────
+      - name: Fetch date 2Performant via API
         working-directory: scripts
         env:
           TWOPEFORMANT_USER:  ${{ secrets.TWOPEFORMANT_USER }}
-          TWOPEFORMANT_TOKEN: ${{ secrets.TWOPEFORMANT_TOKEN }}
+          TWOPEFORMANT_EMAIL: ${{ secrets.TWOPEFORMANT_EMAIL }}
+          TWOPEFORMANT_PASS:  ${{ secrets.TWOPEFORMANT_PASS }}
         run: |
-          if [ -n "$TWOPEFORMANT_USER" ]; then
-            echo "Ruleaza fetch_2p_api (API direct)..."
+          if [ -n "$TWOPEFORMANT_EMAIL" ]; then
+            echo "Ruleaza fetch_2p_api cu email+parola..."
             python fetch_2p_api.py
           else
-            echo "Credentiale lipsa — ruleaza process_data.py cu SHOPS.xlsx existent"
+            echo "TWOPEFORMANT_EMAIL nu e setat — ruleaza process_data.py cu date existente"
             python process_data.py
           fi
 
@@ -61,18 +62,19 @@ jobs:
         working-directory: scripts
         run: python merge_platforms.py
 
-      # ── 6. Product Feeds XML (optional — necesar secret TWOPEFORMANT_USER) ─
-      - name: Fetch product feeds XML (2Performant)
+      # ── 6. Product Feeds API ──────────────────────────────────────────────
+      - name: Fetch product feeds (2Performant API)
         working-directory: scripts
         env:
           TWOPEFORMANT_USER:  ${{ secrets.TWOPEFORMANT_USER }}
-          TWOPEFORMANT_TOKEN: ${{ secrets.TWOPEFORMANT_TOKEN }}
+          TWOPEFORMANT_EMAIL: ${{ secrets.TWOPEFORMANT_EMAIL }}
+          TWOPEFORMANT_PASS:  ${{ secrets.TWOPEFORMANT_PASS }}
         run: |
-          if [ -n "$TWOPEFORMANT_USER" ]; then
+          if [ -n "$TWOPEFORMANT_EMAIL" ]; then
             echo "Ruleaza fetch_product_feeds..."
             python fetch_product_feeds.py
           else
-            echo "TWOPEFORMANT_USER nu e setat — skip product feeds"
+            echo "TWOPEFORMANT_EMAIL nu e setat — skip product feeds"
           fi
 
       # ── 7. Blog automat ────────────────────────────────────────────────────
