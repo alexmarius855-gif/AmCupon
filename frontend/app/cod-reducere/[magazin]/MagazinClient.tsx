@@ -68,20 +68,39 @@ export default function MagazinClient({ magazin: m }: { magazin: Magazin }) {
     <div className="min-h-screen bg-gray-50">
       {/* HEADER */}
       <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
-        <div className="max-w-5xl mx-auto px-4 py-3 flex items-center gap-4">
+        <div className="max-w-5xl mx-auto px-4 py-3 flex items-center gap-3">
           <a href="/" className="flex items-center gap-1.5 shrink-0">
             <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
             <span className="font-black text-gray-900 text-xl">Cupon</span>
             <span className="text-orange-500 font-black text-xl">.ro</span>
           </a>
-          <span className="text-gray-300">/</span>
-          <nav className="text-sm text-gray-500 flex items-center gap-1">
-            <a href="/" className="hover:text-orange-500 transition-colors">Reduceri</a>
-            <span className="text-gray-300 mx-1">/</span>
-            <span className="text-gray-800 font-semibold">{nume}</span>
-          </nav>
         </div>
       </header>
+
+      {/* BREADCRUMB */}
+      <nav
+        aria-label="Breadcrumb"
+        className="bg-white border-b border-gray-100"
+      >
+        <div className="max-w-5xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-gray-400 flex-wrap">
+          <a href="/" className="hover:text-orange-500 transition-colors flex items-center gap-1">
+            <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+            </svg>
+            Acasă
+          </a>
+          <svg className="w-3 h-3 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+          <a href="/toate-magazinele" className="hover:text-orange-500 transition-colors">
+            Magazine
+          </a>
+          <svg className="w-3 h-3 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+          <span className="text-gray-700 font-medium">Cod Reducere {nume}</span>
+        </div>
+      </nav>
 
       <div className="max-w-5xl mx-auto px-4 py-8">
 
