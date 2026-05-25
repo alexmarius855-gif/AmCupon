@@ -103,15 +103,38 @@ export default function Home() {
   const [copiat, setCopiat] = useState<string | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
   const [storeLimit, setStoreLimit] = useState(12);
+  const [filtruActiv, setFiltruActiv] = useState<"toate" | "cod" | "promotie" | "favorite">("toate");
+  const [favorite, setFavorite] = useState<Set<string>>(new Set());
 
   useEffect(() => {
     fetch("/output.json").then((r) => r.json()).then((data) => { setMagazine(data); setLoading(false); });
     fetch("/blog-posts.json").then((r) => r.json()).then((posts: BlogPost[]) => setBlogPosts(posts.slice(0, 3))).catch(() => {});
+    // Încarcă favorite din localStorage
+    try {
+      const saved = JSON.parse(localStorage.getItem("favorite_magazine") || "[]");
+      setFavorite(new Set(saved));
+    } catch {}
   }, []);
 
-  const filtrate = magazine.filter((m) =>
-    cautare === "" || m.magazin.toLowerCase().includes(cautare.toLowerCase()) || numeAfisat(m.magazin).toLowerCase().includes(cautare.toLowerCase())
-  );
+  function toggleFavorit(slug: string, e: React.MouseEvent) {
+    e.preventDefault();
+    e.stopPropagation();
+    setFavorite(prev => {
+      const next = new Set(prev);
+      if (next.has(slug)) next.delete(slug); else next.add(slug);
+      localStorage.setItem("favorite_magazine", JSON.stringify([...next]));
+      return next;
+    });
+  }
+
+  const filtrate = magazine.filter((m) => {
+    const matchCautare = cautare === "" || m.magazin.toLowerCase().includes(cautare.toLowerCase()) || numeAfisat(m.magazin).toLowerCase().includes(cautare.toLowerCase());
+    if (!matchCautare) return false;
+    if (filtruActiv === "cod") return m.cod_cupon;
+    if (filtruActiv === "promotie") return m.are_promotie;
+    if (filtruActiv === "favorite") return favorite.has(m.magazin);
+    return true;
+  });
 
   const expiraAzi = filtrate.filter((m) => m.are_promotie && m.zile_ramase <= 1);
   const cuPromotii = filtrate.filter((m) => m.are_promotie);
@@ -309,6 +332,27 @@ export default function Home() {
 
       <div className="max-w-7xl mx-auto px-4 py-8">
 
+        {/* FILTRE RAPIDE */}
+        {!loading && (
+          <div className="flex flex-wrap gap-2 mb-6 items-center">
+            {([
+              { key: "toate", label: "Toate" },
+              { key: "cod", label: "🎟 Cod cupon" },
+              { key: "promotie", label: "⚡ Promoții active" },
+              { key: "favorite", label: `❤️ Favorite${favorite.size > 0 ? ` (${favorite.size})` : ""}` },
+            ] as { key: "toate"|"cod"|"promotie"|"favorite"; label: string }[]).map(f => (
+              <button key={f.key} onClick={() => setFiltruActiv(f.key)}
+                className={`px-4 py-2 rounded-full text-sm font-semibold transition-colors ${filtruActiv === f.key ? "bg-orange-500 text-white shadow-sm" : "bg-white border border-gray-200 text-gray-600 hover:border-orange-300"}`}>
+                {f.label}
+              </button>
+            ))}
+            <a href="/toate-magazinele"
+              className="ml-auto text-sm text-orange-500 hover:text-orange-600 font-semibold transition-colors">
+              Vezi toate ({magazine.length}) →
+            </a>
+          </div>
+        )}
+
         {/* SKELETON LOADING */}
         {loading && (
           <section className="mb-10">
@@ -329,7 +373,7 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
               {expiraAzi.map((m) => (
-                <Card key={m.magazin + "_azi"} m={m} revealed={coduriReveal.has(m.magazin)} copiat={copiat === m.magazin} onCopiere={copiazaCod} />
+                <Card key={m.magazin + "_azi"} m={m} revealed={coduriReveal.has(m.magazin)} copiat={copiat === m.magazin} onCopiere={copiazaCod} isFavorit={favorite.has(m.magazin)} onToggleFavorit={toggleFavorit} />
               ))}
             </div>
           </section>
@@ -345,7 +389,7 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
               {cuPromotii.slice(0, 12).map((m) => (
-                <Card key={m.magazin} m={m} revealed={coduriReveal.has(m.magazin)} copiat={copiat === m.magazin} onCopiere={copiazaCod} />
+                <Card key={m.magazin} m={m} revealed={coduriReveal.has(m.magazin)} copiat={copiat === m.magazin} onCopiere={copiazaCod} isFavorit={favorite.has(m.magazin)} onToggleFavorit={toggleFavorit} />
               ))}
             </div>
           </section>
@@ -360,7 +404,7 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
               {faraPromotii.slice(0, storeLimit).map((m) => (
-                <Card key={m.magazin} m={m} revealed={coduriReveal.has(m.magazin)} copiat={copiat === m.magazin} onCopiere={copiazaCod} />
+                <Card key={m.magazin} m={m} revealed={coduriReveal.has(m.magazin)} copiat={copiat === m.magazin} onCopiere={copiazaCod} isFavorit={favorite.has(m.magazin)} onToggleFavorit={toggleFavorit} />
               ))}
             </div>
             {faraPromotii.length > storeLimit && (
@@ -517,8 +561,9 @@ export default function Home() {
                 <li><a href="/blog" className="hover:text-orange-400 transition-colors">Blog</a></li>
                 <li><a href="/despre-noi" className="hover:text-orange-400 transition-colors">Despre noi</a></li>
                 <li><a href="/categorii" className="hover:text-orange-400 transition-colors">Toate categoriile</a></li>
+                <li><a href="/toate-magazinele" className="hover:text-orange-400 transition-colors">Toate magazinele</a></li>
                 <li><a href="/termeni" className="hover:text-orange-400 transition-colors">Termeni și Condiții</a></li>
-                <li><a href="/termeni#gdpr" className="hover:text-orange-400 transition-colors">GDPR & Confidențialitate</a></li>
+                <li><a href="/confidentialitate" className="hover:text-orange-400 transition-colors">Politică Confidențialitate</a></li>
                 <li><a href="/termeni#cookies" className="hover:text-orange-400 transition-colors">Politica Cookies</a></li>
                 <li><a href="mailto:contact@amcupon.ro" className="hover:text-orange-400 transition-colors">Contact</a></li>
               </ul>
@@ -563,11 +608,13 @@ export default function Home() {
   );
 }
 
-function Card({ m, revealed, copiat, onCopiere }: {
+function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
   m: Magazin;
   revealed: boolean;
   copiat: boolean;
   onCopiere: (id: string, cod: string) => void;
+  isFavorit: boolean;
+  onToggleFavorit: (slug: string, e: React.MouseEvent) => void;
 }) {
   const promo = m.promotii[0];
   const logoSrc = m.logo_url || "";
@@ -578,6 +625,15 @@ function Card({ m, revealed, copiat, onCopiere }: {
   const nrCupoane = m.promotii.filter(p => p.cod_cupon).length;
   const nrOferte = m.promotii.length;
   const [imgOk, setImgOk] = useState(true);
+  const [rating, setRating] = useState<"ok"|"nok"|null>(() => {
+    try { return (localStorage.getItem(`rating_${m.magazin}`) as "ok"|"nok"|null); } catch { return null; }
+  });
+
+  function voteaza(v: "ok"|"nok", e: React.MouseEvent) {
+    e.preventDefault(); e.stopPropagation();
+    setRating(v);
+    try { localStorage.setItem(`rating_${m.magazin}`, v); } catch {}
+  }
 
   const culori = ["bg-blue-500", "bg-green-500", "bg-purple-500", "bg-pink-500", "bg-indigo-500", "bg-teal-500", "bg-red-500", "bg-yellow-500"];
   const culoare = culori[initiala.charCodeAt(0) % culori.length];
@@ -586,6 +642,15 @@ function Card({ m, revealed, copiat, onCopiere }: {
     <div className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 flex flex-col overflow-hidden">
 
       <a href={`/cod-reducere/${m.magazin}`} className="flex flex-col items-center justify-center pt-5 pb-3 px-4 group relative">
+        {/* Buton favorit */}
+        <button onClick={(e) => onToggleFavorit(m.magazin, e)}
+          className="absolute top-2 right-2 p-1.5 rounded-full hover:bg-gray-100 transition-colors z-10"
+          title={isFavorit ? "Elimină din favorite" : "Adaugă la favorite"}>
+          <svg className={`w-4 h-4 transition-colors ${isFavorit ? "fill-red-500 stroke-red-500" : "fill-none stroke-gray-300 hover:stroke-red-400"}`}
+            viewBox="0 0 24 24" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+        </button>
         {m.exclusiv && (
           <span className="absolute top-3 left-3 text-xs font-bold bg-orange-500 text-white px-2 py-0.5 rounded-full shadow-sm">
             Exclusiv
@@ -692,6 +757,29 @@ function Card({ m, revealed, copiat, onCopiere }: {
           </a>
         )}
       </div>
+
+      {/* RATING — A funcționat codul? */}
+      {promo && (
+        <div className="px-4 pb-4 border-t border-gray-50 pt-3">
+          {rating ? (
+            <p className="text-xs text-center font-semibold text-green-600">
+              {rating === "ok" ? "✓ Mulțumim pentru feedback!" : "✓ Am notat, verificăm!"}
+            </p>
+          ) : (
+            <div className="flex items-center justify-center gap-2">
+              <span className="text-xs text-gray-400">A funcționat?</span>
+              <button onClick={(e) => voteaza("ok", e)}
+                className="text-xs px-2.5 py-1 rounded-full bg-green-50 text-green-600 hover:bg-green-100 font-semibold transition-colors border border-green-200">
+                ✓ Da
+              </button>
+              <button onClick={(e) => voteaza("nok", e)}
+                className="text-xs px-2.5 py-1 rounded-full bg-red-50 text-red-500 hover:bg-red-100 font-semibold transition-colors border border-red-200">
+                ✗ Nu
+              </button>
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 }

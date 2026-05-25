@@ -20,7 +20,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: BASE_URL, lastModified: new Date(), changeFrequency: "daily", priority: 1.0 },
     { url: `${BASE_URL}/blog`, lastModified: new Date(), changeFrequency: "daily", priority: 0.8 },
+    { url: `${BASE_URL}/toate-magazinele`, lastModified: new Date(), changeFrequency: "daily", priority: 0.8 },
     { url: `${BASE_URL}/categorii`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.7 },
+    { url: `${BASE_URL}/despre-noi`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.4 },
+    { url: `${BASE_URL}/confidentialitate`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.3 },
+    { url: `${BASE_URL}/termeni`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.3 },
     ...categoriiSluguri.map((slug) => ({
       url: `${BASE_URL}/categorii/${slug}`,
       lastModified: new Date(),

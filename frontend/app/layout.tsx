@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
 import CookieBanner from "./components/CookieBanner";
+import AffiliateScript from "./components/AffiliateScript";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -82,6 +83,9 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}
         />
+        <link rel="preconnect" href="https://img.2performant.com" />
+        <link rel="preconnect" href="https://cdn.2performant.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
       <body className="min-h-full flex flex-col">
         <div className="bg-gradient-to-r from-red-600 to-orange-500 text-white text-xs font-semibold py-2 px-4 text-center">
@@ -93,14 +97,8 @@ export default function RootLayout({
         </div>
         {children}
         <CookieBanner />
+        <AffiliateScript />
         <Analytics />
-        <Script
-          src="https://cdn.2performant.com/l2/link2.js"
-          id="linkTwoPerformant"
-          data-id="l2/0/2/1/0/7/5/9/7/5/2"
-          data-api-host="https://cdn.2performant.com"
-          strategy="afterInteractive"
-        />
       </body>
     </html>
   );
