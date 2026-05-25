@@ -309,33 +309,93 @@ export default function Home() {
         )}
       </header>
 
-      {/* HERO */}
-      <div className="relative bg-gradient-to-br from-orange-500 via-orange-500 to-red-500 text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-white blur-3xl transform translate-x-1/3 -translate-y-1/3" />
-          <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-white blur-3xl transform -translate-x-1/3 translate-y-1/3" />
+      {/* HERO — upgraded */}
+      <div className="relative bg-gradient-to-br from-orange-600 via-orange-500 to-amber-500 text-white overflow-hidden">
+        {/* Background decorations */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute -top-20 -right-20 w-96 h-96 rounded-full bg-white/10 blur-3xl" />
+          <div className="absolute -bottom-20 -left-20 w-80 h-80 rounded-full bg-red-600/30 blur-3xl" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-orange-400/20 blur-3xl" />
         </div>
-        <div className="relative max-w-7xl mx-auto px-4 py-14 text-center">
-          <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-1.5 text-xs font-bold mb-6 border border-white/30">
+        {/* Floating deal bubbles — decorative */}
+        <div className="absolute left-6 top-8 hidden lg:flex flex-col gap-3 opacity-90">
+          {["💊 -40%", "👗 -60%", "💻 -35%"].map((t, i) => (
+            <div key={i} className="bg-white/15 backdrop-blur-sm border border-white/20 rounded-2xl px-3 py-2 text-xs font-bold shadow-lg">
+              {t}
+            </div>
+          ))}
+        </div>
+        <div className="absolute right-6 top-8 hidden lg:flex flex-col gap-3 opacity-90">
+          {["🏃 -50%", "🎁 -45%", "🏡 -30%"].map((t, i) => (
+            <div key={i} className="bg-white/15 backdrop-blur-sm border border-white/20 rounded-2xl px-3 py-2 text-xs font-bold shadow-lg">
+              {t}
+            </div>
+          ))}
+        </div>
+
+        <div className="relative max-w-4xl mx-auto px-4 py-16 md:py-24 text-center">
+          {/* Live badge */}
+          <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm rounded-full px-4 py-1.5 text-xs font-bold mb-6 border border-white/25">
             <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse inline-block" />
-            Actualizat zilnic · Coduri verificate
+            🔥 {cuPromotii.length > 0 ? cuPromotii.length : "Sute de"} oferte active acum
           </div>
-          <h1 className="text-3xl md:text-5xl font-black mb-4 leading-tight">
-            Coduri de reducere verificate<br className="hidden md:block" /> din România
+
+          {/* H1 */}
+          <h1 className="text-4xl md:text-6xl font-black mb-5 leading-[1.1] tracking-tight">
+            Cele mai bune<br />
+            <span className="text-amber-200">coduri de reducere</span><br />
+            din România
           </h1>
-          <p className="text-orange-100 text-base md:text-lg mb-10 max-w-xl mx-auto">
-            Economisește la cele mai mari magazine online. Sute de oferte actualizate zilnic, gratuit.
+          <p className="text-orange-100 text-base md:text-xl mb-8 max-w-lg mx-auto leading-relaxed">
+            Verificate zilnic. Gratuit. Peste {magazine.length > 0 ? magazine.length : "610"} magazine partenere.
           </p>
 
-          <div className="flex flex-wrap justify-center gap-8 md:gap-16">
+          {/* CTA buttons */}
+          <div className="flex flex-wrap justify-center gap-3 mb-10">
+            <a href="#promotii"
+              className="bg-white text-orange-600 font-black px-7 py-3.5 rounded-2xl text-sm hover:bg-orange-50 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 duration-200">
+              🔥 Oferte active
+            </a>
+            <a href="#categorii"
+              className="bg-white/15 backdrop-blur-sm border border-white/30 text-white font-bold px-7 py-3.5 rounded-2xl text-sm hover:bg-white/25 transition-all duration-200">
+              Caută după categorie →
+            </a>
+          </div>
+
+          {/* Quick search */}
+          <div className="max-w-xl mx-auto relative">
+            <svg className="absolute left-4 top-3.5 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <input
+              type="text"
+              placeholder="Caută magazin: eMAG, Answear, Notino..."
+              value={cautare}
+              onChange={(e) => setCautare(e.target.value)}
+              className="w-full bg-white text-gray-900 font-medium rounded-2xl pl-12 pr-4 py-3.5 text-sm focus:outline-none focus:ring-4 focus:ring-white/30 shadow-xl placeholder-gray-400"
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* TRUST BAR */}
+      <div className="bg-white border-b border-gray-100 shadow-sm">
+        <div className="max-w-7xl mx-auto px-4 py-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6">
             {[
-              { value: magazine.length > 0 ? magazine.length.toString() : "610+", label: "magazine partenere" },
-              { value: cuPromotii.length > 0 ? cuPromotii.length.toString() : "...", label: "promoții active" },
-              { value: "100%", label: "gratuit pentru tine" },
+              { icon: "🏪", value: magazine.length > 0 ? `${magazine.length}+` : "610+", label: "Magazine partenere" },
+              { icon: "⚡", value: cuPromotii.length > 0 ? `${cuPromotii.length}` : "200+", label: "Promoții active" },
+              { icon: "✅", value: "100%", label: "Coduri verificate" },
+              { icon: "🆓", value: "Gratuit", label: "Fără abonament" },
             ].map((s) => (
-              <div key={s.label} className="text-center">
-                <div className="text-3xl md:text-4xl font-black tabular-nums">{s.value}</div>
-                <div className="text-orange-200 text-xs font-medium mt-1 uppercase tracking-wide">{s.label}</div>
+              <div key={s.label} className="flex items-center gap-3 p-3 rounded-xl hover:bg-orange-50 transition-colors group">
+                <div className="w-10 h-10 rounded-xl bg-orange-50 group-hover:bg-orange-100 flex items-center justify-center text-xl shrink-0 transition-colors">
+                  {s.icon}
+                </div>
+                <div>
+                  <p className="font-black text-gray-900 text-lg leading-tight">{s.value}</p>
+                  <p className="text-xs text-gray-500">{s.label}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -343,7 +403,7 @@ export default function Home() {
       </div>
 
       {/* CATEGORY GRID — Wirecutter style */}
-      <div className="bg-white border-b border-gray-100 py-10 px-4">
+      <div id="categorii" className="bg-white border-b border-gray-100 py-10 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center justify-between mb-7">
             <div>
@@ -409,6 +469,113 @@ export default function Home() {
         </div>
       </div>
 
+      {/* DEAL ZILEI */}
+      {!loading && cuPromotii.length > 0 && (() => {
+        const deal = cuPromotii.find(m => m.cod_cupon) || cuPromotii[0];
+        const promo = deal.promotii[0];
+        const discountText = maxDiscount(deal.promotii);
+        const link = promo?.landing_page || deal.url_afiliat || deal.url;
+        return (
+          <div className="bg-gradient-to-r from-gray-900 to-gray-800 py-6 px-4">
+            <div className="max-w-7xl mx-auto">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="bg-orange-500 text-white text-xs font-black px-3 py-1 rounded-full animate-pulse">🔥 DEAL ZILEI</span>
+                <span className="text-gray-400 text-xs">{new Date().toLocaleDateString("ro-RO", { day: "numeric", month: "long" })}</span>
+              </div>
+              <a href={link} target="_blank" rel="sponsored noopener noreferrer"
+                className="group flex flex-col sm:flex-row items-start sm:items-center gap-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-orange-500/50 rounded-2xl p-5 transition-all duration-200">
+                {/* Logo */}
+                <div className="w-16 h-16 rounded-2xl bg-white flex items-center justify-center shrink-0 shadow-lg">
+                  {deal.logo_url ? (
+                    <img src={deal.logo_url} alt={numeAfisat(deal.magazin)} className="w-12 h-12 object-contain" loading="lazy" />
+                  ) : (
+                    <span className="text-2xl font-black text-orange-500">{numeAfisat(deal.magazin)[0]}</span>
+                  )}
+                </div>
+                {/* Info */}
+                <div className="flex-1 min-w-0">
+                  <div className="flex flex-wrap items-center gap-2 mb-1">
+                    <span className="text-white font-black text-lg">{numeAfisat(deal.magazin)}</span>
+                    <span className="text-gray-400 text-xs">{deal.categorie}</span>
+                  </div>
+                  <p className="text-gray-300 text-sm line-clamp-1">{promo?.nume || "Ofertă specială disponibilă"}</p>
+                  {discountText && (
+                    <span className="inline-block mt-2 bg-green-500/20 text-green-400 text-xs font-black px-2.5 py-0.5 rounded-full border border-green-500/30">
+                      {discountText}
+                    </span>
+                  )}
+                </div>
+                {/* CTA */}
+                <div className="flex items-center gap-3 shrink-0">
+                  {promo?.cod_cupon && (
+                    <div className="hidden sm:block border-2 border-dashed border-orange-400/60 rounded-xl px-4 py-2 bg-orange-500/10">
+                      <span className="font-mono font-black text-orange-400 text-sm tracking-widest">{promo.cod_cupon}</span>
+                    </div>
+                  )}
+                  <span className="bg-orange-500 group-hover:bg-orange-400 text-white font-black px-5 py-2.5 rounded-xl text-sm transition-colors whitespace-nowrap">
+                    Activează →
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+        );
+      })()}
+
+      {/* TRENDING — scroll orizontal */}
+      {!loading && cuPromotii.length >= 3 && (
+        <div className="bg-white border-b border-gray-100 py-8 px-4">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex items-center justify-between mb-5">
+              <div className="flex items-center gap-3">
+                <span className="bg-red-500 text-white text-xs font-black px-2.5 py-1 rounded-full">LIVE</span>
+                <h2 className="text-xl font-black text-gray-900">Trending acum</h2>
+              </div>
+              <a href="#promotii" className="text-sm font-bold text-orange-500 hover:text-orange-600 transition-colors hidden sm:block">
+                Toate ofertele →
+              </a>
+            </div>
+            {/* Scroll orizontal cu hide scrollbar */}
+            <div className="overflow-x-auto -mx-4 px-4 pb-3" style={{ scrollbarWidth: "none" }}>
+              <div className="flex gap-3" style={{ minWidth: "max-content" }}>
+                {cuPromotii.slice(0, 12).map((m) => {
+                  const promo = m.promotii[0];
+                  const discount = maxDiscount(m.promotii);
+                  const link = promo?.landing_page || m.url_afiliat || m.url;
+                  return (
+                    <a key={m.magazin} href={link} target="_blank" rel="sponsored noopener noreferrer"
+                      className="group flex-shrink-0 w-52 bg-white border border-gray-200 hover:border-orange-300 rounded-2xl p-4 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200">
+                      <div className="flex items-center gap-2.5 mb-3">
+                        <div className="w-10 h-10 rounded-xl bg-gray-50 border border-gray-100 flex items-center justify-center shrink-0">
+                          {m.logo_url ? (
+                            <img src={m.logo_url} alt={numeAfisat(m.magazin)} className="w-8 h-8 object-contain" loading="lazy" />
+                          ) : (
+                            <span className="text-base font-black text-orange-500">{numeAfisat(m.magazin)[0]}</span>
+                          )}
+                        </div>
+                        <div className="min-w-0">
+                          <p className="font-black text-gray-900 text-xs truncate group-hover:text-orange-600 transition-colors">{numeAfisat(m.magazin)}</p>
+                          <p className="text-gray-400 text-xs truncate">{m.categorie}</p>
+                        </div>
+                      </div>
+                      {discount && (
+                        <div className="bg-green-50 border border-green-200 rounded-lg px-2.5 py-1 mb-2.5 text-center">
+                          <span className="text-green-700 font-black text-xs">{discount}</span>
+                        </div>
+                      )}
+                      <p className="text-gray-500 text-xs line-clamp-2 mb-3">{promo?.nume || "Ofertă activă"}</p>
+                      <div className="bg-orange-500 group-hover:bg-orange-600 text-white text-xs font-black py-1.5 rounded-lg text-center transition-colors">
+                        {m.cod_cupon ? "🎟 Cod disponibil" : "Vezi oferta"}
+                      </div>
+                    </a>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* SECTIUNI SPECIALE */}
       <div className="bg-gray-50 border-b border-gray-100 py-10 px-4">
         <div className="max-w-7xl mx-auto">
@@ -440,60 +607,77 @@ export default function Home() {
         </div>
       </div>
 
-      {/* BANNERE OFERTE RECOMANDATE */}
+      {/* TOP PICKS — 3 oferte premium */}
       {!loading && cuPromotii.length >= 3 && (
-        <div className="bg-white border-b border-gray-100 py-8 px-4">
+        <div className="bg-white border-b border-gray-100 py-10 px-4">
           <div className="max-w-7xl mx-auto">
-            <div className="flex items-center justify-between mb-5">
+            <div className="flex items-center justify-between mb-6">
               <div>
-                <h2 className="text-lg font-black text-gray-900">🔥 Oferte Recomandate</h2>
-                <p className="text-xs text-gray-400 mt-0.5">Selectate din promoțiile cu cel mai mare succes</p>
+                <h2 className="text-2xl font-black text-gray-900">Top picks săptămâna aceasta</h2>
+                <p className="text-sm text-gray-400 mt-0.5">Cele mai bune oferte selectate de echipa noastră</p>
               </div>
-              <a href="#promotii" className="text-sm font-semibold text-orange-500 hover:text-orange-600">
-                Toate →
+              <a href="#promotii" className="hidden sm:flex items-center gap-1.5 text-sm font-bold text-orange-500 hover:text-orange-600 transition-colors">
+                Toate ofertele
+                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                </svg>
               </a>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
               {cuPromotii.slice(0, 3).map((m, i) => {
                 const nume = numeAfisat(m.magazin);
                 const promo = m.promotii[0];
                 const discountText = maxDiscount(m.promotii);
-                const gradients = [
-                  "from-orange-500 to-red-600",
-                  "from-purple-600 to-pink-600",
-                  "from-blue-600 to-indigo-700",
-                ];
                 const link = promo?.landing_page || m.url_afiliat || m.url;
+                const badges = [
+                  { bg: "bg-orange-500", label: "#1 Recomandat" },
+                  { bg: "bg-purple-600", label: "Popular" },
+                  { bg: "bg-blue-600", label: "Trending" },
+                ];
                 return (
                   <a key={m.magazin} href={link} target="_blank" rel="sponsored noopener noreferrer"
-                    className={`group relative bg-gradient-to-br ${gradients[i]} rounded-2xl p-6 text-white overflow-hidden hover:opacity-95 transition-all hover:shadow-xl hover:-translate-y-0.5 duration-200`}>
-                    <div className="absolute top-0 right-0 w-32 h-32 rounded-full bg-white/10 blur-2xl transform translate-x-8 -translate-y-8" />
-                    <div className="relative">
-                      <div className="flex items-start justify-between mb-3">
+                    className="group relative bg-white border-2 border-gray-100 hover:border-orange-300 rounded-3xl overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-200">
+                    {/* Top banner color */}
+                    <div className={`h-2 ${["bg-gradient-to-r from-orange-500 to-red-500", "bg-gradient-to-r from-purple-500 to-pink-500", "bg-gradient-to-r from-blue-500 to-indigo-500"][i]}`} />
+                    <div className="p-6">
+                      <div className="flex items-start justify-between mb-4">
+                        <span className={`${badges[i].bg} text-white text-xs font-black px-2.5 py-1 rounded-full`}>
+                          {badges[i].label}
+                        </span>
+                        {m.cod_cupon && (
+                          <span className="bg-amber-50 text-amber-700 border border-amber-200 text-xs font-bold px-2.5 py-1 rounded-full">
+                            🎟 Cod cupon
+                          </span>
+                        )}
+                      </div>
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className="w-16 h-16 rounded-2xl bg-gray-50 border border-gray-100 flex items-center justify-center shrink-0">
+                          {m.logo_url ? (
+                            <img src={m.logo_url} alt={`Logo ${nume}`} className="w-12 h-12 object-contain" loading="lazy" />
+                          ) : (
+                            <span className="text-2xl font-black text-orange-500">{nume[0]}</span>
+                          )}
+                        </div>
                         <div>
+                          <h3 className="font-black text-gray-900 text-lg group-hover:text-orange-600 transition-colors leading-tight">{nume}</h3>
+                          <p className="text-gray-400 text-xs">{m.categorie}</p>
                           {discountText && (
-                            <span className="inline-block bg-white/20 backdrop-blur-sm text-white text-xs font-black px-3 py-1 rounded-full mb-2">
+                            <span className="inline-block mt-1 bg-green-50 text-green-700 border border-green-200 text-xs font-bold px-2 py-0.5 rounded-full">
                               {discountText}
                             </span>
                           )}
-                          <h3 className="font-black text-lg leading-tight">{nume}</h3>
-                          <p className="text-white/80 text-xs mt-0.5">{m.categorie}</p>
                         </div>
-                        {m.logo_url && (
-                          <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center overflow-hidden shrink-0 ml-2">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img src={m.logo_url} alt={`Logo ${nume}`} className="w-10 h-10 object-contain" loading="lazy" />
-                          </div>
-                        )}
                       </div>
                       {promo && (
-                        <p className="text-white/90 text-sm line-clamp-2 mb-4">{promo.nume}</p>
+                        <p className="text-gray-600 text-sm line-clamp-2 mb-4 leading-relaxed">{promo.nume}</p>
                       )}
-                      <div className="flex items-center justify-between">
-                        <span className="text-xs text-white/70">
-                          {m.promotii.length} {m.promotii.length === 1 ? "ofertă" : "oferte"}
-                        </span>
-                        <span className="bg-white text-gray-900 font-black text-xs px-4 py-1.5 rounded-full group-hover:bg-orange-50 transition-colors">
+                      <div className="flex items-center justify-between pt-4 border-t border-gray-100">
+                        <div className="flex items-center gap-3 text-xs text-gray-400">
+                          <span>✓ Verificat azi</span>
+                          <span>·</span>
+                          <span>{m.promotii.length} {m.promotii.length === 1 ? "ofertă" : "oferte"}</span>
+                        </div>
+                        <span className="bg-orange-500 group-hover:bg-orange-600 text-white font-black text-xs px-4 py-2 rounded-xl transition-colors">
                           Activează →
                         </span>
                       </div>
@@ -558,10 +742,15 @@ export default function Home() {
         {/* PROMOTII ACTIVE */}
         {!loading && cuPromotii.length > 0 && (
           <section id="promotii" className="mb-10">
-            <div className="flex items-center gap-3 mb-5">
-              <span className="bg-red-500 text-white text-xs font-bold px-2.5 py-0.5 rounded-full">LIVE</span>
-              <h2 className="text-xl font-black text-gray-900">Promoții Active</h2>
-              <span className="text-sm text-gray-400">{cuPromotii.length} oferte</span>
+            <div className="flex items-center justify-between mb-5">
+              <div className="flex items-center gap-3">
+                <span className="bg-red-500 text-white text-xs font-black px-3 py-1 rounded-full animate-pulse">LIVE</span>
+                <h2 className="text-xl font-black text-gray-900">Toate promoțiile active</h2>
+                <span className="text-sm text-gray-400 hidden sm:inline">{cuPromotii.length} oferte</span>
+              </div>
+              <a href="/toate-magazinele" className="text-sm font-bold text-orange-500 hover:text-orange-600 transition-colors hidden sm:block">
+                Toate magazinele →
+              </a>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
               {cuPromotii.slice(0, 12).map((m) => (
@@ -574,9 +763,14 @@ export default function Home() {
         {/* MAGAZINE PARTENERE */}
         {!loading && faraPromotii.length > 0 && (
           <section id="magazine">
-            <div className="flex items-center gap-3 mb-5">
-              <h2 className="text-xl font-black text-gray-900">Magazine Partenere</h2>
-              <span className="text-sm text-gray-400">{magazine.length} total</span>
+            <div className="flex items-center justify-between mb-5">
+              <div className="flex items-center gap-3">
+                <h2 className="text-xl font-black text-gray-900">Toate magazinele</h2>
+                <span className="text-sm text-gray-400 hidden sm:inline">{magazine.length} partenere</span>
+              </div>
+              <a href="/toate-magazinele" className="text-sm font-bold text-orange-500 hover:text-orange-600 transition-colors">
+                Pagina completă →
+              </a>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
               {faraPromotii.slice(0, storeLimit).map((m) => (
@@ -642,17 +836,28 @@ export default function Home() {
         </div>
       )}
 
-      {/* NEWSLETTER */}
-      <div className="relative bg-gradient-to-r from-orange-500 to-red-500 py-14 px-4 mt-12 overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-1/4 w-64 h-64 rounded-full bg-white blur-3xl" />
+      {/* NEWSLETTER — upgraded */}
+      <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-16 px-4 mt-12 overflow-hidden">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-0 left-1/4 w-64 h-64 rounded-full bg-orange-500/10 blur-3xl" />
+          <div className="absolute bottom-0 right-1/4 w-48 h-48 rounded-full bg-orange-500/10 blur-3xl" />
         </div>
         <div className="relative max-w-2xl mx-auto text-center">
-          <div className="text-5xl mb-4">🎁</div>
-          <h2 className="text-2xl md:text-3xl font-black text-white mb-2">Primește ofertele zilei pe email</h2>
-          <p className="text-orange-100 text-sm mb-8 max-w-md mx-auto">
-            Fii primul care află codurile exclusive. Fără spam, dezabonare oricând cu un click.
+          <div className="inline-flex items-center gap-2 bg-orange-500/20 border border-orange-500/30 rounded-full px-4 py-1.5 text-orange-400 text-xs font-bold mb-5">
+            📬 Newsletter zilnic gratuit
+          </div>
+          <h2 className="text-2xl md:text-4xl font-black text-white mb-3 leading-tight">
+            Nu rata nicio ofertă bună
+          </h2>
+          <p className="text-gray-400 text-sm md:text-base mb-8 max-w-md mx-auto leading-relaxed">
+            Primești în fiecare dimineață top 5 cele mai bune coduri de reducere. Fără spam, dezabonare cu un click.
           </p>
+          {/* Trust signals */}
+          <div className="flex flex-wrap justify-center gap-4 text-xs text-gray-500 mb-8">
+            {["✓ Gratuit", "✓ Fără spam", "✓ Dezabonare oricând", "✓ 0 reclame"].map(t => (
+              <span key={t}>{t}</span>
+            ))}
+          </div>
           <NewsletterForm />
         </div>
       </div>
