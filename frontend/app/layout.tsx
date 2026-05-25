@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
+import CookieBanner from "./components/CookieBanner";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -69,6 +70,7 @@ export default function RootLayout({
           </a>
         </div>
         {children}
+        <CookieBanner />
         <Analytics />
         <Script
           src="https://cdn.2performant.com/l2/link2.js"
