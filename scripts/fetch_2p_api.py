@@ -22,8 +22,20 @@ import random
 import time
 from datetime import datetime, timezone
 from urllib.parse import urlencode, quote, unquote
-from urllib.request import urlopen, Request
-from urllib.error import HTTPError, URLError
+
+import requests as req_lib
+from requests.adapters import HTTPAdapter
+
+BROWSER_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Accept-Language": "ro-RO,ro;q=0.9,en-US;q=0.8,en;q=0.7",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive",
+}
+
+_session = req_lib.Session()
+_session.headers.update(BROWSER_HEADERS)
+_session.mount("https://", HTTPAdapter(max_retries=2))
 
 AFF_CODE           = "541547473"
 BASE_URL           = "https://api.2performant.com"
@@ -120,24 +132,17 @@ def api_get(endpoint: str, params: dict = None) -> dict | list | None:
         return None
     print(f"  → GET {url}")
     try:
-        req = Request(url, headers=hdrs)
-        with urlopen(req, timeout=20) as resp:
-            raw = resp.read()
-            print(f"    HTTP 200 — {len(raw)} bytes")
-            data = json.loads(raw)
-            if isinstance(data, list):
-                print(f"    Raspuns: lista cu {len(data)} elemente")
-            elif isinstance(data, dict):
-                print(f"    Raspuns: dict cu chei {list(data.keys())[:5]}")
-            return data
-    except HTTPError as e:
-        body = e.read().decode(errors="replace")[:300]
-        print(f"  ❌ HTTP {e.code} la {endpoint}")
-        print(f"    Body: {body}")
-        return None
-    except URLError as e:
-        print(f"  ❌ URL eroare la {endpoint}: {e}")
-        return None
+        resp = _session.get(url, headers=hdrs, timeout=20)
+        print(f"    HTTP {resp.status_code} — {len(resp.content)} bytes")
+        if resp.status_code != 200:
+            print(f"    Body: {resp.text[:300]}")
+            return None
+        data = resp.json()
+        if isinstance(data, list):
+            print(f"    Raspuns: lista cu {len(data)} elemente")
+        elif isinstance(data, dict):
+            print(f"    Raspuns: dict cu chei {list(data.keys())[:5]}")
+        return data
     except Exception as e:
         print(f"  ❌ Eroare {endpoint}: {e}")
         return None

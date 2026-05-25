@@ -14,7 +14,17 @@ import re
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from urllib.parse import urlencode, quote, unquote
-from urllib.request import urlopen, Request
+
+import requests as req_lib
+from requests.adapters import HTTPAdapter
+
+_BROWSER = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Accept-Language": "ro-RO,ro;q=0.9,en-US;q=0.8",
+}
+_session = req_lib.Session()
+_session.headers.update(_BROWSER)
+_session.mount("https://", HTTPAdapter(max_retries=2))
 
 AFF_CODE = "541547473"
 BASE_URL = "https://api.2performant.com"
@@ -108,9 +118,11 @@ def get_program_feeds():
             return []
         qs = urlencode(sorted(params.items()))
         url = f"{BASE_URL}/affiliate-programs/?{qs}"
-        req = Request(url, headers=headers)
-        with urlopen(req, timeout=10) as resp:
-            data = json.loads(resp.read())
+        resp = _session.get(url, headers=headers, timeout=15)
+        if resp.status_code != 200:
+            print(f"  HTTP {resp.status_code}: {resp.text[:200]}")
+            return []
+        data = resp.json()
         programs = data.get("results", data if isinstance(data, list) else [])
         feeds = []
         for prog in programs:
@@ -215,9 +227,9 @@ def fetch_and_parse_feed(feed_info):
     program_id = feed_info["program_id"]
 
     try:
-        req = Request(feed_url, headers={"User-Agent": "AmCupon.ro/1.0 FeedBot"})
-        with urlopen(req, timeout=15) as resp:
-            content = resp.read()
+        feed_resp = _session.get(feed_url, timeout=15)
+        feed_resp.raise_for_status()
+        content = feed_resp.content
         products = parse_xml_feed(content, merchant, program_id)
         print(f"  {merchant}: {len(products)} produse extrase")
         return products
