@@ -1,64 +1,75 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
 
-  <!-- Background: orange rounded square -->
-  <rect width="500" height="500" rx="88" fill="#F97316"/>
+  <!-- Background: premium dark blue -->
+  <rect width="500" height="500" rx="85" fill="#0F2240"/>
 
-  <!-- Shadow/depth on ticket -->
-  <rect x="62" y="166" width="376" height="184" rx="16" fill="#00000022"/>
+  <!-- Shopping bag handles (white arc above bag) -->
+  <path d="M 178 210 L 178 162 Q 178 118 250 118 Q 322 118 322 162 L 322 210"
+    fill="none"
+    stroke="white"
+    stroke-width="22"
+    stroke-linecap="round"
+    stroke-linejoin="round"/>
 
-  <!-- White coupon ticket -->
-  <rect x="58" y="160" width="376" height="184" rx="16" fill="white"/>
+  <!-- Bag body: white filled -->
+  <rect x="112" y="205" width="276" height="198" rx="16" fill="white"/>
 
-  <!-- Left notch -->
-  <circle cx="58" cy="252" r="26" fill="#F97316"/>
+  <!-- Orange coupon strip across center of bag -->
+  <rect x="112" y="272" width="276" height="86" fill="#F97316"/>
 
-  <!-- Right notch -->
-  <circle cx="434" cy="252" r="26" fill="#F97316"/>
+  <!-- Left notch on coupon strip -->
+  <circle cx="112" cy="315" r="22" fill="#0F2240"/>
 
-  <!-- Perforation dots (center divider) -->
-  <circle cx="246" cy="172" r="3.5" fill="#F9731640"/>
-  <circle cx="246" cy="188" r="3.5" fill="#F9731640"/>
-  <circle cx="246" cy="204" r="3.5" fill="#F9731640"/>
-  <circle cx="246" cy="220" r="3.5" fill="#F9731640"/>
-  <circle cx="246" cy="236" r="3.5" fill="#F9731660"/>
-  <circle cx="246" cy="252" r="3.5" fill="#F9731660"/>
-  <circle cx="246" cy="268" r="3.5" fill="#F9731660"/>
-  <circle cx="246" cy="284" r="3.5" fill="#F9731640"/>
-  <circle cx="246" cy="300" r="3.5" fill="#F9731640"/>
-  <circle cx="246" cy="316" r="3.5" fill="#F9731640"/>
-  <circle cx="246" cy="332" r="3.5" fill="#F9731640"/>
+  <!-- Right notch on coupon strip -->
+  <circle cx="388" cy="315" r="22" fill="#0F2240"/>
 
-  <!-- LEFT side: "Am" brand -->
+  <!-- Perforation dots on coupon -->
+  <circle cx="250" cy="278" r="3.5" fill="#ffffff50"/>
+  <circle cx="250" cy="292" r="3.5" fill="#ffffff50"/>
+  <circle cx="250" cy="306" r="3.5" fill="#ffffff50"/>
+  <circle cx="250" cy="320" r="3.5" fill="#ffffff50"/>
+  <circle cx="250" cy="334" r="3.5" fill="#ffffff50"/>
+  <circle cx="250" cy="348" r="3.5" fill="#ffffff50"/>
+
+  <!-- % symbol on orange coupon strip -->
   <text
-    x="148"
-    y="262"
+    x="250"
+    y="319"
     font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif"
     font-weight="900"
-    font-size="70"
-    fill="#F97316"
-    text-anchor="middle"
-    dominant-baseline="middle">Am</text>
-
-  <!-- RIGHT side: % hero symbol -->
-  <text
-    x="345"
-    y="255"
-    font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif"
-    font-weight="900"
-    font-size="118"
-    fill="#F97316"
+    font-size="94"
+    fill="white"
     text-anchor="middle"
     dominant-baseline="middle">%</text>
 
-  <!-- Green verified badge -->
-  <circle cx="404" cy="116" r="46" fill="#16A34A"/>
-  <!-- Checkmark -->
-  <polyline
-    points="386,116 400,131 424,104"
-    stroke="white"
-    stroke-width="7"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    fill="none"/>
+  <!-- Bag top fold line -->
+  <line x1="112" y1="230" x2="388" y2="230"
+    stroke="#e5e7eb"
+    stroke-width="1.5"
+    opacity="0.6"/>
+
+  <!-- Bottom section: subtle "AmCupon" label -->
+  <text
+    x="250"
+    y="377"
+    font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif"
+    font-weight="900"
+    font-size="26"
+    fill="#0F2240"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    letter-spacing="1">AmCupon.ro</text>
+
+  <!-- Orange dot accent top-right -->
+  <circle cx="398" cy="88" r="28" fill="#F97316"/>
+  <text
+    x="398"
+    y="94"
+    font-family="'Arial Black', Arial, sans-serif"
+    font-weight="900"
+    font-size="26"
+    fill="white"
+    text-anchor="middle"
+    dominant-baseline="middle">✓</text>
 
 </svg>
