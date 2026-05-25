@@ -17,7 +17,7 @@ from urllib.parse import urlencode, quote, unquote
 from urllib.request import urlopen, Request
 
 AFF_CODE = "541547473"
-BASE_URL = "http://api.2performant.com"
+BASE_URL = "https://api.2performant.com"
 AFFILIATE_USERNAME = os.environ.get("TWOPEFORMANT_USER", "")
 AFFILIATE_TOKEN = os.environ.get("TWOPEFORMANT_TOKEN", "")
 

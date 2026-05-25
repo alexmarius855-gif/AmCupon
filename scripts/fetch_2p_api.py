@@ -26,7 +26,7 @@ from urllib.request import urlopen, Request
 from urllib.error import HTTPError, URLError
 
 AFF_CODE           = "541547473"
-BASE_URL           = "http://api.2performant.com"
+BASE_URL           = "https://api.2performant.com"
 AFFILIATE_USERNAME = os.environ.get("TWOPEFORMANT_USER", "")
 AFFILIATE_TOKEN    = os.environ.get("TWOPEFORMANT_TOKEN", "")
 
