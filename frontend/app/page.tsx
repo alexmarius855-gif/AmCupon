@@ -59,6 +59,11 @@ const SECTIUNI_SPECIALE = [
   { href: "/gadgets", emoji: "📡", label: "Gadgets & Tech", desc: "Smartwatch, căști, drone", gradient: "from-blue-500 to-indigo-600" },
   { href: "/moto", emoji: "🏍️", label: "Auto-Moto", desc: "Piese, accesorii, anvelope", gradient: "from-slate-600 to-gray-800" },
   { href: "/idei-cadouri", emoji: "🎁", label: "Idei Cadouri", desc: "Cadoul perfect la preț mic", gradient: "from-pink-500 to-purple-600" },
+  { href: "/farmacie", emoji: "💊", label: "Farmacie Online", desc: "Dr. Max, Vegis, Catena", gradient: "from-green-500 to-teal-600" },
+  { href: "/sport", emoji: "🏃", label: "Sport & Outdoor", desc: "Decathlon, Hervis, Intersport", gradient: "from-orange-500 to-amber-600" },
+  { href: "/copii", emoji: "👶", label: "Copii & Jucării", desc: "Noriel, Bebetei, Smyths", gradient: "from-yellow-400 to-orange-500" },
+  { href: "/frumusete", emoji: "💄", label: "Beauty", desc: "Notino, Douglas, Sephora", gradient: "from-pink-400 to-rose-600" },
+  { href: "/calatorie", emoji: "✈️", label: "Vacanțe & Travel", desc: "Booking, Airbnb, Trip.com", gradient: "from-sky-500 to-blue-600" },
   { href: "/black-friday", emoji: "🖤", label: "Black Friday", desc: "Cele mai mari reduceri", gradient: "from-gray-900 to-black" },
   { href: "/craciun", emoji: "🎄", label: "Crăciun", desc: "Oferte de sărbători", gradient: "from-red-600 to-green-700" },
   { href: "/categorii", emoji: "📂", label: "Toate categoriile", desc: "Explorează tot", gradient: "from-orange-500 to-red-500" },
@@ -201,7 +206,7 @@ export default function Home() {
                 </svg>
               </button>
               <div className="absolute right-0 top-full pt-1 hidden group-hover:block z-50">
-                <div className="bg-white border border-gray-200 rounded-2xl shadow-xl py-2 w-56">
+                <div className="bg-white border border-gray-200 rounded-2xl shadow-xl py-2 w-64">
                   {CATEGORII.slice(0, 8).map((c) => (
                     <a key={c.slug} href={`/categorii/${c.slug}`}
                       className="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-600 transition-colors">
@@ -214,6 +219,22 @@ export default function Home() {
                       className="flex items-center gap-2 px-4 py-2.5 text-sm font-bold text-orange-500 hover:bg-orange-50 transition-colors">
                       Vezi toate categoriile →
                     </a>
+                  </div>
+                  <div className="border-t border-gray-100 mt-1 pt-1">
+                    <p className="px-4 py-1.5 text-xs font-bold text-gray-400 uppercase tracking-wider">Pagini speciale</p>
+                    {[
+                      { href: "/farmacie", emoji: "💊", label: "Farmacie Online" },
+                      { href: "/sport", emoji: "🏃", label: "Sport & Outdoor" },
+                      { href: "/frumusete", emoji: "💄", label: "Beauty" },
+                      { href: "/calatorie", emoji: "✈️", label: "Vacanțe & Travel" },
+                      { href: "/copii", emoji: "👶", label: "Copii & Jucării" },
+                    ].map((l) => (
+                      <a key={l.href} href={l.href}
+                        className="flex items-center gap-3 px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-600 transition-colors">
+                        <span className="text-base">{l.emoji}</span>
+                        <span className="font-medium">{l.label}</span>
+                      </a>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -248,6 +269,11 @@ export default function Home() {
                 {[
                   { href: "/#promotii", label: "🔥 Promoții active" },
                   { href: "/blog", label: "📝 Blog" },
+                  { href: "/farmacie", label: "💊 Farmacie Online" },
+                  { href: "/sport", label: "🏃 Sport & Outdoor" },
+                  { href: "/frumusete", label: "💄 Beauty" },
+                  { href: "/calatorie", label: "✈️ Vacanțe & Travel" },
+                  { href: "/copii", label: "👶 Copii & Jucării" },
                   { href: "/categorii", label: "📂 Toate categoriile" },
                   { href: "/despre-noi", label: "ℹ️ Despre noi" },
                 ].map((l) => (
@@ -347,7 +373,7 @@ export default function Home() {
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-lg font-black text-gray-900">Secțiuni speciale</h2>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
             {SECTIUNI_SPECIALE.map((s) => (
               <a key={s.href} href={s.href}
                 className={`group bg-gradient-to-br ${s.gradient} rounded-2xl p-4 text-white hover:opacity-90 transition-all hover:shadow-lg hover:-translate-y-0.5 duration-200`}>
@@ -653,15 +679,21 @@ export default function Home() {
 
             {/* Pagini */}
             <div>
-              <h3 className="text-white font-bold text-xs mb-4 uppercase tracking-wider">Pagini</h3>
+              <h3 className="text-white font-bold text-xs mb-4 uppercase tracking-wider">Pagini speciale</h3>
               <ul className="space-y-2.5 text-sm">
-                <li><a href="/blog" className="hover:text-orange-400 transition-colors">Blog</a></li>
-                <li><a href="/despre-noi" className="hover:text-orange-400 transition-colors">Despre noi</a></li>
+                <li><a href="/farmacie" className="hover:text-orange-400 transition-colors">💊 Farmacie Online</a></li>
+                <li><a href="/sport" className="hover:text-orange-400 transition-colors">🏃 Sport & Outdoor</a></li>
+                <li><a href="/frumusete" className="hover:text-orange-400 transition-colors">💄 Beauty</a></li>
+                <li><a href="/calatorie" className="hover:text-orange-400 transition-colors">✈️ Vacanțe & Travel</a></li>
+                <li><a href="/copii" className="hover:text-orange-400 transition-colors">👶 Copii & Jucării</a></li>
+                <li><a href="/gadgets" className="hover:text-orange-400 transition-colors">📡 Gadgets & Tech</a></li>
+                <li><a href="/idei-cadouri" className="hover:text-orange-400 transition-colors">🎁 Idei Cadouri</a></li>
+                <li><a href="/blog" className="hover:text-orange-400 transition-colors">📝 Blog</a></li>
                 <li><a href="/categorii" className="hover:text-orange-400 transition-colors">Toate categoriile</a></li>
                 <li><a href="/toate-magazinele" className="hover:text-orange-400 transition-colors">Toate magazinele</a></li>
+                <li><a href="/despre-noi" className="hover:text-orange-400 transition-colors">Despre noi</a></li>
                 <li><a href="/termeni" className="hover:text-orange-400 transition-colors">Termeni și Condiții</a></li>
                 <li><a href="/confidentialitate" className="hover:text-orange-400 transition-colors">Politică Confidențialitate</a></li>
-                <li><a href="/termeni#cookies" className="hover:text-orange-400 transition-colors">Politica Cookies</a></li>
                 <li><a href="mailto:contact@amcupon.ro" className="hover:text-orange-400 transition-colors">Contact</a></li>
               </ul>
             </div>
