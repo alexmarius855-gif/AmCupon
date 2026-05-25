@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+
+  <!-- Background: orange rounded square -->
+  <rect width="500" height="500" rx="88" fill="#F97316"/>
+
+  <!-- Shadow/depth on ticket -->
+  <rect x="62" y="166" width="376" height="184" rx="16" fill="#00000022"/>
+
+  <!-- White coupon ticket -->
+  <rect x="58" y="160" width="376" height="184" rx="16" fill="white"/>
+
+  <!-- Left notch -->
+  <circle cx="58" cy="252" r="26" fill="#F97316"/>
+
+  <!-- Right notch -->
+  <circle cx="434" cy="252" r="26" fill="#F97316"/>
+
+  <!-- Perforation dots (center divider) -->
+  <circle cx="246" cy="172" r="3.5" fill="#F9731640"/>
+  <circle cx="246" cy="188" r="3.5" fill="#F9731640"/>
+  <circle cx="246" cy="204" r="3.5" fill="#F9731640"/>
+  <circle cx="246" cy="220" r="3.5" fill="#F9731640"/>
+  <circle cx="246" cy="236" r="3.5" fill="#F9731660"/>
+  <circle cx="246" cy="252" r="3.5" fill="#F9731660"/>
+  <circle cx="246" cy="268" r="3.5" fill="#F9731660"/>
+  <circle cx="246" cy="284" r="3.5" fill="#F9731640"/>
+  <circle cx="246" cy="300" r="3.5" fill="#F9731640"/>
+  <circle cx="246" cy="316" r="3.5" fill="#F9731640"/>
+  <circle cx="246" cy="332" r="3.5" fill="#F9731640"/>
+
+  <!-- LEFT side: "Am" brand -->
+  <text
+    x="148"
+    y="262"
+    font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif"
+    font-weight="900"
+    font-size="70"
+    fill="#F97316"
+    text-anchor="middle"
+    dominant-baseline="middle">Am</text>
+
+  <!-- RIGHT side: % hero symbol -->
+  <text
+    x="345"
+    y="255"
+    font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif"
+    font-weight="900"
+    font-size="118"
+    fill="#F97316"
+    text-anchor="middle"
+    dominant-baseline="middle">%</text>
+
+  <!-- Green verified badge -->
+  <circle cx="404" cy="116" r="46" fill="#16A34A"/>
+  <!-- Checkmark -->
+  <polyline
+    points="386,116 400,131 424,104"
+    stroke="white"
+    stroke-width="7"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"/>
+
+</svg>
