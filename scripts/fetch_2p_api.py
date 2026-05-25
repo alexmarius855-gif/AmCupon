@@ -99,11 +99,12 @@ def auth_headers(method: str, api_name: str, params: dict = None) -> dict:
         string_to_sign.encode(),
         "sha1"
     ).hexdigest()
+    print(f"    [AUTH] string_to_sign: {string_to_sign[:80]}...")
+    print(f"    [AUTH] sig: {sig[:20]}...")
     return {
         "X-2PF-Client":  AFFILIATE_USERNAME,
         "X-2PF-Auth":    sig,
-        "X-2PF-Accept":  "application/json",
-        "Date":          date_str,
+        "X-2PF-Date":    date_str,
         "Accept":        "application/json",
     }
 
@@ -117,12 +118,22 @@ def api_get(endpoint: str, params: dict = None) -> dict | list | None:
     if not hdrs:
         print(f"  ⚠️  Credentiale lipsa — skip {endpoint}")
         return None
+    print(f"  → GET {url}")
     try:
         req = Request(url, headers=hdrs)
         with urlopen(req, timeout=20) as resp:
-            return json.loads(resp.read())
+            raw = resp.read()
+            print(f"    HTTP 200 — {len(raw)} bytes")
+            data = json.loads(raw)
+            if isinstance(data, list):
+                print(f"    Raspuns: lista cu {len(data)} elemente")
+            elif isinstance(data, dict):
+                print(f"    Raspuns: dict cu chei {list(data.keys())[:5]}")
+            return data
     except HTTPError as e:
-        print(f"  ❌ HTTP {e.code} la {endpoint}: {e.read().decode()[:200]}")
+        body = e.read().decode(errors="replace")[:300]
+        print(f"  ❌ HTTP {e.code} la {endpoint}")
+        print(f"    Body: {body}")
         return None
     except URLError as e:
         print(f"  ❌ URL eroare la {endpoint}: {e}")

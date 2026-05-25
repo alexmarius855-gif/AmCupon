@@ -51,8 +51,8 @@ def twopeformant_auth_headers(method, api_name, params=None):
     return {
         "X-2PF-Client": AFFILIATE_USERNAME,
         "X-2PF-Auth": signature,
-        "X-2PF-Accept": "application/json",
-        "Date": date_str,
+        "X-2PF-Date": date_str,
+        "Accept": "application/json",
     }
 
 
