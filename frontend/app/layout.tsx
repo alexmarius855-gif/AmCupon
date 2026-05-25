@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import CookieBanner from "./components/CookieBanner";
 import AffiliateScript from "./components/AffiliateScript";
@@ -109,6 +110,7 @@ export default function RootLayout({
         <AffiliateScript />
         <NewsletterPopup />
         <Analytics />
+        <SpeedInsights />
       </body>
       {GA_ID && <GoogleAnalytics gaId={GA_ID} />}
     </html>
