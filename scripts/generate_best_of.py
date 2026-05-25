@@ -48,6 +48,28 @@ MAGAZINE_PHARMA = [
     ("Dr. Max", "/cod-reducere/drmax.ro"),
     ("Vegis", "/cod-reducere/vegis.ro"),
 ]
+MAGAZINE_TRAVEL = [
+    ("eMag Vacante", "/cod-reducere/emag.ro"),
+    ("Booking", "/cod-reducere/booking.com"),
+]
+MAGAZINE_PET = [
+    ("Zoo.ro", "/cod-reducere/zoo.ro"),
+    ("animax.ro", "/cod-reducere/animax.ro"),
+    ("zooplus.ro", "/cod-reducere/zooplus.ro"),
+]
+MAGAZINE_FASHION_ALL = [
+    ("FashionDays", "/cod-reducere/fashiondays.ro"),
+    ("Answear", "/cod-reducere/answear.ro"),
+    ("Modivo", "/cod-reducere/modivo.ro"),
+    ("Trendyol", "/cod-reducere/trendyol.com"),
+]
+MAGAZINE_ALL = [
+    ("eMAG", "/cod-reducere/emag.ro"),
+    ("Altex", "/cod-reducere/altex.ro"),
+    ("Flanco", "/cod-reducere/flanco.ro"),
+    ("FashionDays", "/cod-reducere/fashiondays.ro"),
+    ("Notino", "/cod-reducere/notino.ro"),
+]
 
 
 def link_magazine(magazine):
@@ -1110,6 +1132,1027 @@ Selecție imensă, personalul cunoaște produsele, program de fidelitate bun.
     },
 
 ]
+
+# ─── Articole extra 2 — Health, Home, Fashion, Travel, Pets, Guides ──────────
+ARTICOLE_EXTRA2 = [
+
+    # ── SANATATE & FARMACIE ──────────────────────────────────────────────────
+
+    {
+        "slug": f"cel-mai-bun-tensiometru-{AN}",
+        "title": f"Cel mai bun tensiometru {AN} — Top 5 aparate recomandate",
+        "excerpt": f"Comparam cele mai bune tensiometre {AN}: digital de brat, de incheietura, validat clinic. Coduri reducere Dr. Max, Vegis, eMAG.",
+        "category": "Sanatate",
+        "cover": cover_url("tensiometru-brat"),
+        "content": f"""## Cel mai bun tensiometru in {AN}
+
+Monitorizarea tensiunii arteriale acasa este esentiala pentru persoanele cu hipertensiune. Omron M3 Comfort este standardul de referinta — validat clinic ESH, memorie 60 masuratouri, indicator aritmie. Alternativ, Microlife BP A3 Basic ofera tehnologie PAD la pret mai mic.
+
+## Tipuri de tensiometre
+
+- **De brat** (recomandat): mai precis, validat clinic
+- **De incheietura**: compact, necesita pozitionare corecta
+- **Semiautomat**: pompare manuala, citire digitala
+
+## Top 5 tensiometre {AN}
+
+### Omron M3 Comfort — Cel mai echilibrat
+Validat clinic ESH/ESC, memorie 60 masuratouri, indicator aritmie. ~350 lei.
+
+### Microlife BP A3 Basic — Cel mai bun calitate-pret
+Tehnologie PAD pentru detectarea aritmiei, maneta universala. ~280 lei.
+
+### Omron M6 Comfort — Top performanta
+Detectare fibrilatie atriala, Bluetooth, app Omron Connect. ~500 lei.
+
+### Beurer BM 55 — Ecran mare
+Ecran XL, iluminare fundal, ideal pentru persoane cu vedere slaba. ~320 lei.
+
+### Braun ExactFit 3 — Design simplu
+Universal Fit 22-42cm, 3 semafoare interpretare rapida. ~280 lei.
+
+## Cum alegi
+
+- Cauta simbolul validare ESH sau BHS
+- Masura circumferinta bratului (standard: 22-32 cm)
+- Min 60 masuratouri memorie
+- Detectare aritmie daca ai palpitatii
+
+## Unde cumperi?
+
+{link_magazine(MAGAZINE_PHARMA)} — aparate medicale certificate, cu garantie.
+
+[Aparate medicale cu reducere →](/categorii/health-personal-care)
+""",
+    },
+
+    {
+        "slug": f"farmacie-online-ieftina-romania-{AN}",
+        "title": f"Farmacie online ieftina Romania {AN} — Dr. Max vs Vegis vs Catena",
+        "excerpt": f"Comparam farmaciile online din Romania {AN}: preturi, livrare, gama de produse. Coduri de reducere Dr. Max, Vegis, Catena.",
+        "category": "Farmacie",
+        "cover": cover_url("farmacie-online"),
+        "content": f"""## Farmacie online in Romania {AN}
+
+Cumparaturile din farmacii online au crescut 200% in ultimii ani. Preturi mai mici, livrare acasa, varietate mai mare decat farmacia fizica.
+
+## Top farmacii online Romania {AN}
+
+### Dr. Max — Cel mai mare lant
+Peste 500 farmacii fizice + online puternic. Medicamente compensate, personal farmacist online.
+[Cod reducere Dr. Max →](/cod-reducere/drmax.ro)
+
+### Vegis — Specialitate naturiste & organice
+Cel mai mare magazin de naturiste din Romania. Suplimente, plante medicinale, produse bio.
+[Cod reducere Vegis →](/cod-reducere/vegis.ro)
+
+### Catena — Farmacie traditionala online
+Prezenta nationala, preturi compensate, livrare 24h in orase mari.
+
+### Sensiblu — Premium
+Gama extinsa cosmetice medicale (Vichy, La Roche-Posay, Avene), produse dermatologice.
+
+## Ce cumperi mai ieftin online vs fizic
+
+- **Suplimente**: 20-40% mai ieftine online
+- **Cosmetice medicale**: reduceri frecvente la Vichy, Avene
+- **Aparate medicale**: tensiometre, glucometre — preturi semnificativ mai mici
+- **Produse igiena**: pachete mai mari, preturi mai mici
+
+[Coduri reducere farmacii →](/categorii/pharma)
+""",
+    },
+
+    {
+        "slug": f"cele-mai-bune-vitamine-suplimente-{AN}",
+        "title": f"Cele mai bune vitamine si suplimente {AN} — ghid bazat pe studii",
+        "excerpt": f"Ce vitamine merita cumparate in {AN}? Vitamina D, C, Omega-3, Magneziu — ghid bazat pe studii. Reduceri Dr. Max si Vegis.",
+        "category": "Sanatate",
+        "cover": cover_url("vitamine-suplimente"),
+        "content": f"""## Cele mai bune vitamine si suplimente in {AN}
+
+Piata suplimentelor e uriasa si confuza. Iata ce functioneaza cu adevarat, bazat pe dovezi stiintifice.
+
+## Vitamine esentiale pentru romani
+
+### Vitamina D3 — Nr.1 prioritate
+70%+ din romani au deficit. Esentiala pentru imunitate, oase, dispozitie. Doza: 2000-4000 UI/zi toamna-iarna.
+
+### Magneziu Bisglicinat — Stres si somn
+Forma bisglicinat = cel mai bine absorbit. Reduce anxietatea, imbunatateste somnul. 300-400 mg/zi seara.
+
+### Omega-3 EPA+DHA — Inima si creier
+Min 1000 mg EPA+DHA combined. Forma trigliceride (nu ester).
+
+### Vitamina C — Imunitate
+1000 mg/zi in sezonul rece. Forma tamponata (C-Vitamin Ester) mai blanda cu stomacul.
+
+### Zinc — Imunitate
+Deficit comun la vegetarieni si sportivi. 15-25 mg/zi.
+
+## Suplimente overrated
+
+- Detox & cleanse: ficatul tau detoxifica singur
+- Colagen oral: degradat in aminoacizi, nu ajunge in piele intact
+- Multivitamine ieftine: formele ieftine nu se absorb
+
+## Unde cumperi?
+
+{link_magazine(MAGAZINE_PHARMA)} — suplimente certificate, preturi bune.
+
+[Suplimente cu reducere →](/categorii/health-personal-care)
+""",
+    },
+
+    # ── CASA & ELECTROCASNICE ────────────────────────────────────────────────
+
+    {
+        "slug": f"cel-mai-bun-aspirator-{AN}",
+        "title": f"Cel mai bun aspirator {AN} — robot, fara sac, vertical, clasic",
+        "excerpt": f"Top aspiratoare {AN}: Dyson, Rowenta, Dreame, iRobot. Robot vs vertical vs clasic. Coduri reducere eMAG, Altex.",
+        "category": "Electrocasnice",
+        "cover": cover_url("aspirator-robot"),
+        "content": f"""## Cel mai bun aspirator in {AN}
+
+Piata aspiratorilor s-a transformat. Robotii au explodat, cele verticale fara fir au inlocuit modelele cu fir. Cum alegi?
+
+## Robot — Comoditate maxima
+- **Dreame L10s Ultra** — cel mai bun {AN}: mapare laser, statie golire automata, mop integrat
+- **Roborock S7 MaxV** — recunoastere obstacole AI, mop vibratii ultrasonice
+- **iRobot Roomba j9+** — premium, statie golire, antiobstructie
+
+## Vertical fara fir — Flexibil si puternic
+- **Dyson V15 Detect** — laser dezvaluie praful invizibil, senzor particule
+- **Dyson V12 Slim** — mai usor, ideal spatii mici
+- **Rowenta X-Force Flex 14.60** — mop integrat, preturi mai accesibile
+
+## Clasic cu sac — Putere maxima
+- **Miele Complete C3 Silence** — silentios, HEPA, calitate germana
+- **Bosch BGL8ZOOO** — motor EcoSilence, autonomie mare
+
+## Cum alegi
+- Animale de companie: robot cu perie antiblocking
+- Apartament mic: vertical fara fir Dyson V12
+- Casa mare cu covoare: clasic cu sac Miele
+
+## Unde cumperi?
+
+{link_magazine(MAGAZINE_ELECTRONICE)} — electrocasnice cu garantie oficiala.
+
+[Aspiratoare cu reducere →](/categorii/appliances)
+""",
+    },
+
+    {
+        "slug": f"cel-mai-bun-frigider-{AN}",
+        "title": f"Cel mai bun frigider {AN} — No-Frost, Side-by-Side, comparatie",
+        "excerpt": f"Top frigidere {AN}: Samsung, LG, Bosch, Indesit. No-Frost vs cu inghet, consum energie, pret. Coduri reducere eMAG, Altex.",
+        "category": "Electrocasnice",
+        "cover": cover_url("frigider-nofrost"),
+        "content": f"""## Cel mai bun frigider in {AN}
+
+Un frigider bun dureaza 10-15 ani. Alegerea conteaza.
+
+## Recomandari concrete
+
+### Samsung RB38A7B6AS9 — Cel mai bun echilibrat
+SpaceMax (pereti mai subtiri = mai mult spatiu), No Frost 360, A+ energie, WiFi SmartThings.
+
+### LG GBB92STAXP — Premium silentios
+DoorCooling+, ThinQ WiFi, NatureFRESH cu UV pentru legume.
+
+### Bosch KGN86AIDR — German, fiabil
+NoFrost, raftul VarioShelf pliabil, anti-fingerprint.
+
+### Indesit INFC9TO32X — Buget optim
+368L, finisaj inox, A+. Raport calitate-pret excelent sub 3000 lei.
+
+## Ce nu ratezi la alegere
+- Clasa energetica: minim A+, ideal A++
+- No Frost elimina dezghetul manual
+- Zgomot: sub 40 dB pentru bucatarie open space
+- Garantie: 5 ani compresoare Samsung/LG
+
+## Unde cumperi?
+
+{link_magazine(MAGAZINE_ELECTRONICE)} — cu instalare la domiciliu disponibila.
+
+[Frigidere cu reducere →](/categorii/appliances)
+""",
+    },
+
+    {
+        "slug": f"cea-mai-buna-masina-de-spalat-{AN}",
+        "title": f"Cea mai buna masina de spalat {AN} — top 5 modele",
+        "excerpt": f"Top masini de spalat {AN}: Samsung, Bosch, LG, Indesit. Comparatie capacitate, consum, programe. Coduri reducere eMAG si Altex.",
+        "category": "Electrocasnice",
+        "cover": cover_url("masina-spalat"),
+        "content": f"""## Cea mai buna masina de spalat in {AN}
+
+## Top masini de spalat {AN}
+
+### Samsung WW90T534DAE — Cel mai bun overall
+9kg, EcoBubble (spuma la 20C = curata ca la 40C), AddWash (usa suplimentara), WiFi SmartThings.
+
+### Bosch WAV28K00BY — Premium german
+9kg, i-Dos (dozare automata detergent), EcoSilence Drive, antivibratie ActiveWaterPlus.
+
+### LG F4WR709S1 — Steam si TurboWash
+9kg, Steam pentru alergeni, TurboWash 40 min ciclu complet.
+
+### Indesit MTWSA61252WK — Buget inteligent
+6kg, FreshCare+ (tumbling anti-mototolire), ideal 1-2 persoane.
+
+## Parametri importanti
+- Capacitate: 7kg (1-2 pers), 8kg (3-4 pers), 9-10kg (familii)
+- Clasa energetica: A-10% sau A-20%
+- RPM centrifugare: 1400 RPM = rufe mai uscate
+- Zgomot: sub 50 dB spalare, sub 75 dB centrifugare
+
+## Unde cumperi?
+
+{link_magazine(MAGAZINE_ELECTRONICE)} — cu instalare si conectare la canalizare disponibila.
+
+[Masini de spalat cu reducere →](/categorii/appliances)
+""",
+    },
+
+    # ── COPII & BEBELUSI ─────────────────────────────────────────────────────
+
+    {
+        "slug": f"cel-mai-bun-scaun-auto-copil-{AN}",
+        "title": f"Cel mai bun scaun auto copil {AN} — sigur, omologat i-Size",
+        "excerpt": f"Top scaune auto copii {AN}: Maxi-Cosi, Britax, Cybex. Grupe 0+/1/2/3, omologare i-Size. Unde gasesti reduceri la scaune auto.",
+        "category": "Copii",
+        "cover": cover_url("scaun-auto-copil"),
+        "content": f"""## Cel mai bun scaun auto pentru copil in {AN}
+
+Scaunul auto este echipamentul de siguranta cel mai important pentru copilul tau.
+
+## Omologare si standarde
+- **ECE R129 (i-Size)** = nou standard, protectie laterala obligatorie
+- **ECE R44** = standard vechi, mai putin sigur
+- Alege intotdeauna i-Size
+
+## Recomandari pe grupe
+
+### Scoica 0-13 kg:
+- **Maxi-Cosi CabrioFix i-Size** — usoara, compatibila carucioare, testata ADAC
+- **Cybex Cloud T i-Size** — rotativa 360°, reclinare usoara
+
+### Grup 1 (9-18 kg):
+- **Britax ROMER Dualfix M i-Size** — rotativa, contrapresor rebound, rearfacing extins
+- **Maxi-Cosi Titan i-Size** — creste cu copilul pana la 36kg, ISOFIX
+
+### Universal 9-36 kg:
+- **Cybex Solution B i-Fix** — reglaj inaltime one-hand, protectie laterala SIP
+
+## Nu faci niciodata
+- Nu montezi cu fata inainte in fata cu airbag activ
+- Nu cumperi second-hand (nu stii daca a fost in accident)
+
+## Unde cumperi?
+
+{link_magazine(MAGAZINE_COPII)} — scaune originale cu certificat de conformitate.
+
+[Scaune auto copil cu reducere →](/categorii/babies-kids-toys)
+""",
+    },
+
+    {
+        "slug": f"cel-mai-bun-carucior-bebelus-{AN}",
+        "title": f"Cel mai bun carucior bebelus {AN} — top 5 sisteme recomandate",
+        "excerpt": f"Comparam cele mai bune carucioare bebelusi {AN}: Bugaboo, Joie, Kinderkraft, Cybex. Sisteme 2in1, 3in1. Coduri reducere.",
+        "category": "Copii",
+        "cover": cover_url("carucior-bebelus"),
+        "content": f"""## Cel mai bun carucior de bebelus in {AN}
+
+## Tipuri de carucioare
+
+### Sistem modular 3in1 — Cel mai versatil
+Scoica auto + landou + scaun sport = o singura investitie. Ideal de la nastere pana la 3-4 ani.
+
+### Buggy usor (de la 6 luni)
+Sub 10 kg, ideal pentru deplasari frecvente.
+
+## Top carucioare {AN}
+
+### Bugaboo Fox 5 — Cel mai bun (budget premium)
+Suspensie impecabila, configurabil fata-spate, design iconic. 5000+ lei.
+
+### Cybex Gazelle S — Multifunctional extrem
+Poate transporta 2 copii (tandem), 11 configuratii. Ideal familii cu 2 copii.
+
+### Joie Finiti Flex — Raport calitate-pret excelent
+Sistem 3in1, rotire 360° scaun auto, pliabil compact. 2500-3000 lei.
+
+### Kinderkraft Kraft 5in1 — Accesibil si complet
+5 accesorii incluse, 1500-2000 lei. Ideal buget limitat.
+
+## Ce conteaza cu adevarat
+- Greutate: sub 12 kg pentru lifturi si scari
+- Dimensiune pliat: verifica daca intra in portbagaj
+- Suspensie: esentiala pentru trotuare denivelate
+
+## Unde cumperi?
+
+{link_magazine(MAGAZINE_COPII)} — cu posibilitate de testare.
+
+[Carucioare bebelusi cu reducere →](/categorii/babies-kids-toys)
+""",
+    },
+
+    # ── SPORT & OUTDOOR ──────────────────────────────────────────────────────
+
+    {
+        "slug": f"cea-mai-buna-bicicleta-electrica-{AN}",
+        "title": f"Cea mai buna bicicleta electrica {AN} — city, MTB, trekking",
+        "excerpt": f"Top biciclete electrice {AN}: Cube, Trek, Specialized. City vs MTB vs trekking. Autonomie, motor, baterie. Coduri reducere Decathlon.",
+        "category": "Sport",
+        "cover": cover_url("bicicleta-electrica"),
+        "content": f"""## Cea mai buna bicicleta electrica in {AN}
+
+E-bike-urile au explodat in popularitate. Nu mai e pentru lenes — e pentru cei care vor sa ajunga la birou fara transpiratie.
+
+## Parametri esentiali
+- **Motor**: Bosch, Shimano Steps, Yamaha = fiabilitate maxima
+- **Baterie**: min 500Wh pentru autonomie 70-100km
+- **Torque motor**: 60-75Nm = urci confortabil orice deal
+- **Frane hidraulice**: obligatorii la orice e-bike serios
+
+## Recomandari concrete {AN}
+
+### Cube Touring Hybrid 500 — Urban premium
+Motor Bosch Active Plus 50Nm, 500Wh, iluminat integrat. ~7000 lei.
+
+### Trek FX+ 2 — City elegant
+Motor Brose, 400Wh, design minimalist fara baterie vizibila.
+
+### Decathlon Riverside 500E — Buget optim
+Motor Bafang central 40Nm, 418Wh, 10 viteze Shimano. Cel mai bun sub 5000 lei.
+
+### Scott Sub Cross eRIDE 20 — Trekking versatil
+Motor Bosch Performance 65Nm, 625Wh, ideal drumuri mixte.
+
+## Costuri ascunse
+- Service: 300-600 lei/an pentru motoare Bosch
+- Baterie noua: 2000-4000 lei dupa 5-7 ani
+
+## Unde cumperi?
+
+{link_magazine(MAGAZINE_SPORT)} — test ride disponibil in magazine fizice.
+
+[Biciclete electrice cu reducere →](/categorii/sports-outdoors)
+""",
+    },
+
+    {
+        "slug": f"cel-mai-bun-cort-camping-{AN}",
+        "title": f"Cel mai bun cort de camping {AN} — 2 persoane, familial, ultralight",
+        "excerpt": f"Top corturi camping {AN}: Decathlon, MSR, Vango. Corturi 2 persoane, 4 persoane, ultralight. Rezistenta vant si ploaie. Coduri reducere.",
+        "category": "Sport",
+        "cover": cover_url("cort-camping"),
+        "content": f"""## Cel mai bun cort de camping in {AN}
+
+Un cort bun te tine uscat si cald. Un cort prost = noapte alba si poze amuzante pentru prieteni.
+
+## Recomandari concrete {AN}
+
+### 2 persoane backpacking:
+**MSR Hubba Hubba NX2** — 1.72 kg, tratat siliconat, 3 sezoane. ~1500 lei.
+**Decathlon MH500 Fresh&Black** — blocare lumina pentru somn mai bun, 2.4 kg. ~500 lei.
+
+### Familial 3-4 persoane:
+**Vango Keswick 400** — 4 pers, absis generos, 3000 HH impermeabilitate.
+**Decathlon Arpenaz 4.1** — 4 pers, living separat, montat 10 minute. ~800 lei.
+
+## Ce verifici
+- **HH (Hydrostatic Head)**: min 2000 HH pentru ploaie serioasa
+- **Cusaturi termosudare**: evita infiltratii
+- **Poli aluminiu vs fibra sticla**: aluminiu = mai usor si mai rezistent
+
+## Unde cumperi?
+
+{link_magazine(MAGAZINE_SPORT)} — echipament outdoor original, cu garantie.
+
+[Corturi camping cu reducere →](/categorii/sports-outdoors)
+""",
+    },
+
+    # ── FASHION & ACCESORII ──────────────────────────────────────────────────
+
+    {
+        "slug": f"cele-mai-bune-genti-dama-{AN}",
+        "title": f"Cele mai bune genti dama {AN} — piele, casual, office",
+        "excerpt": f"Top genti dama {AN}: pentru birou, casual, ocazii. Branduri accesibile vs premium. Coduri reducere FashionDays, Answear, Modivo.",
+        "category": "Fashion",
+        "cover": cover_url("genti-dama-fashion"),
+        "content": f"""## Cele mai bune genti dama in {AN}
+
+## Branduri recomandate per buget
+
+### Budget accesibil (100-300 lei)
+- **Answear**: colectii internationale, calitate buna pentru pret
+- **FashionDays**: reduceri frecvente la branduri bune
+
+### Mid-range (300-1000 lei)
+- **Calvin Klein**: minimalism american, materiale solide
+- **Michael Kors**: luxul accesibil, recunoscut instant
+
+### Premium (1000+ lei)
+- **Coach**: piele americana, artizanat solid
+- **Furla**: piele italiana, culori vibrante
+
+## Sfaturi cumparare inteligenta
+- Piele genuina dureaza 10+ ani, eco-leather 2-3 ani
+- Culori neutrale (black, camel, cognac) = polivalente
+- Cumpara off-season: colectii vechi la 40-70% reducere
+
+## Unde cumperi?
+
+{link_magazine(MAGAZINE_FASHION_ALL)} — returnare gratuita, ghid marimi online.
+
+[Genti dama cu reducere →](/categorii/fashion)
+""",
+    },
+
+    {
+        "slug": f"cele-mai-bune-ochelari-soare-{AN}",
+        "title": f"Cei mai buni ochelari de soare {AN} — protectie UV400, polarizati",
+        "excerpt": f"Top ochelari soare {AN}: Ray-Ban, Oakley, Polaroid. Protectie UV400, polarizati vs nepolarizati. Unde gasesti reduceri in Romania.",
+        "category": "Fashion",
+        "cover": cover_url("ochelari-soare"),
+        "content": f"""## Cei mai buni ochelari de soare in {AN}
+
+Ochelarii de soare nu sunt doar un accesoriu — protejeaza vederea de UV-uri daunatoare.
+
+## Protectie reala
+
+- **UV400**: blocheaza toata radiatia UV pana la 400nm. Standard minim.
+- **Polarizare**: elimina reflexiile de pe apa, asfalt, zapada
+- **Categoria 3**: ideal plaja si outdoor
+- **Categoria 4**: munte, zapada (NU pentru sofat)
+
+## Recomandari concrete {AN}
+
+**Ray-Ban Aviator Classic** — Iconicul absolut. Lentile G-15, ramament metalic. ~400+ lei.
+**Ray-Ban Wayfarer** — Versatil, clasic, lentile polarizate disponibile.
+**Oakley Holbrook** — Sport si casual, lentile Prizm contrast imbunatatit.
+**Polaroid PLD 2053/S** — Polarizare reala, sub 150 lei. Ideal daca esti precaut.
+
+## Atentie
+
+Ochelari ieftini de pe strada fara UV400: lentilele intunecate dilata pupila si lasa mai mult UV sa intre. Mai rau decat fara ochelari.
+
+## Unde cumperi?
+
+{link_magazine(MAGAZINE_FASHION_ALL)} — ochelari originali certificati UV400.
+
+[Ochelari soare cu reducere →](/categorii/fashion)
+""",
+    },
+
+    # ── BEAUTY ──────────────────────────────────────────────────────────────
+
+    {
+        "slug": f"cel-mai-bun-ser-fata-{AN}",
+        "title": f"Cel mai bun ser de fata {AN} — vitamina C, retinol, acid hialuronic",
+        "excerpt": f"Top seruri de fata {AN}: vitamina C, retinol, niacinamida. Pentru riduri, pete, hidratare. Coduri reducere Notino, Sephora, Douglas.",
+        "category": "Beauty",
+        "cover": cover_url("ser-fata-vitaminac"),
+        "content": f"""## Cel mai bun ser de fata in {AN}
+
+Serurile au cea mai mare concentratie de activi din rutina skincare. Alese corect, transforma tenul.
+
+## Tipuri si ce fac
+
+- **Vitamina C**: antipete, luminozitate, antioxidant. Dimineata sub SPF.
+- **Retinol**: anti-aging nr.1, stimuleaza colagenul, reduce ridurile fine. Seara.
+- **Niacinamida**: pori minimizati, control sebum, cel mai tolerabil activ.
+- **Acid hialuronic**: hidratare profunda. Pe ten umed pentru efect maxim.
+
+## Recomandari {AN}
+
+**Vitamina C premium**: Skinceuticals CE Ferulic — cel mai studiat ser din lume.
+**Vitamina C accesibil**: Garnier Vitamin C Serum — 10% vitamina C, eficient la 1/10 din pret.
+**Retinol**: La Roche-Posay Retinol B3 Serum — tolerabilitate buna, dermatologic.
+**Niacinamida**: The Ordinary 10% + Zinc — bestseller, ~50 lei.
+**Acid hialuronic**: Vichy Mineral 89 — ideal pentru ten sensibil.
+
+## Combinatii de evitat
+- Retinol + vitamina C: iritare
+- AHA/BHA + retinol: iritare
+
+## Unde cumperi?
+
+{link_magazine(MAGAZINE_BEAUTY)} — produse originale, consilieri beauty online.
+
+[Seruri fata cu reducere →](/categorii/beauty)
+""",
+    },
+
+    {
+        "slug": f"cea-mai-buna-crema-antirid-{AN}",
+        "title": f"Cea mai buna crema antirid {AN} — testata si recomandata",
+        "excerpt": f"Top creme antirid {AN}: L'Oreal, Vichy, Nivea, Neutrogena. Ingrediente active dovedite stiintific. Coduri reducere Notino, Douglas.",
+        "category": "Beauty",
+        "cover": cover_url("crema-antirid"),
+        "content": f"""## Cea mai buna crema antirid in {AN}
+
+## Ingrediente dovedite pentru antiaging
+
+- **Retinol**: singurul antiaging validat FDA. Stimuleaza colagenul.
+- **SPF**: 80% din imbatranirea pielii = foto-imbatranire. SPF zilnic = cel mai eficient antiaging.
+- **Peptide**: stimuleaza colagenul fara iritarea retinolului. Ideal ten sensibil.
+- **Niacinamida**: reduce ridurile superficiale, intareste bariera cutanata.
+
+## Recomandari concrete {AN}
+
+### Zi cu SPF:
+**Vichy Liftactiv Supreme SPF 30** — retinol + peptide + SPF, formula completa. ~250 lei.
+**L'Oreal Paris Revitalift Anti-Wrinkle SPF 20** — retinol 0.1% pro, accesibila. ~80 lei.
+
+### Noapte:
+**RoC Retinol Correxion Line Smoothing** — 0.5% retinol, vizibil in 4 saptamani.
+**Neutrogena Rapid Wrinkle Repair Retinol** — retinol accelerat. ~100 lei.
+
+### Premium:
+**Estee Lauder Advanced Night Repair** — bestseller 40 ani, regenerare nocturnă.
+
+## Adevarul despre creme antirid
+- Nicio crema nu elimina ridurile adanci (doar proceduri medicale)
+- Efectele se vad dupa 4-12 saptamani
+- Consistenta > produs magic
+
+## Unde cumperi?
+
+{link_magazine(MAGAZINE_BEAUTY)} — consultanta beauty online gratuita.
+
+[Creme antirid cu reducere →](/categorii/beauty)
+""",
+    },
+
+    # ── ANIMALE DE COMPANIE ──────────────────────────────────────────────────
+
+    {
+        "slug": f"cea-mai-buna-hrana-pentru-caini-{AN}",
+        "title": f"Cea mai buna hrana pentru caini {AN} — uscata, umeda, ghid complet",
+        "excerpt": f"Top hrana caini {AN}: Royal Canin, Purina Pro Plan, Josera. Uscata vs umeda, pentru catei si adulti. Coduri reducere Zoo.ro, Zooplus.",
+        "category": "Animale",
+        "cover": cover_url("hrana-caini"),
+        "content": f"""## Cea mai buna hrana pentru caini in {AN}
+
+## Cum citesti eticheta
+- Primul ingredient = cel mai mult (vrei carne, nu cereale)
+- Proteine brute: min 25% la adulti, 28%+ la catei
+- Fara "by-products" sau "faina de carne" nespecificata
+
+## Recomandari concrete {AN}
+
+### Adulti talie medie/mare:
+**Purina Pro Plan Adult Large Athletic** — formula echilibrata, digestibilitate excelenta.
+**Royal Canin Maxi Adult** — specific rase mari, articulatii protejate.
+
+### Catei:
+**Royal Canin Puppy** — ajustat per rasa, suport imunitar.
+**Purina Pro Plan Puppy** — DHA din ulei de peste pentru dezvoltare cognitiva.
+
+### Budget inteligent:
+**Josera Balance** — ingredient principal pui, fara coloranti, calitate buna.
+**Brit Premium by Nature Adult** — pui + hering, fara cereale cu gluten.
+
+## Hrana umeda — cand si cat
+- Catei: tranzitie mai usoara
+- Adulti: 20-30% langa uscat = hidratare + palatabilitate
+- Batrani/probleme dentare: mai usor de mestecat
+
+## Unde cumperi?
+
+{link_magazine(MAGAZINE_PET)} — livrare gratuita la comenzi mari.
+
+[Hrana animale cu reducere →](/categorii/pet-supplies)
+""",
+    },
+
+    # ── TRAVEL ──────────────────────────────────────────────────────────────
+
+    {
+        "slug": f"cel-mai-bun-troller-{AN}",
+        "title": f"Cel mai bun troller {AN} — cabina, cala, ultralight",
+        "excerpt": f"Top trollere {AN}: Samsonite, Delsey, American Tourister. Cabina vs cala, hard vs soft. Ghid complet cu coduri reducere.",
+        "category": "Calatorie",
+        "cover": cover_url("troller-samsonite"),
+        "content": f"""## Cel mai bun troller in {AN}
+
+Un troller bun te insoteste zeci de ani. Un troller prost se strica la prima cursa.
+
+## Dimensiuni importante
+- **Cabina Ryanair/Wizz**: max 40x20x25 cm gratuit
+- **Cabina standard**: 55x35x25 cm majority companiilor
+- **Cala M (67cm)**: 60-70L, ideal 1-2 saptamani
+- **Cala L (77cm)**: 80-100L, familii sau deplasari lungi
+
+## Recomandari concrete {AN}
+
+### Cabina premium:
+**Samsonite Proxis S** — 2.1 kg (cel mai usor), TSA lock, garantat 5 ani. ~1500-2000 lei.
+
+### Cabina buget inteligent:
+**American Tourister Soundbox S** — extensibil, 4 roti duble. ~500-700 lei.
+
+### Cala:
+**Samsonite Base Boost M** — 67cm, expandabil +10%, TSA, garantie 5 ani. ~1000-1300 lei.
+**Wittchen HA-A047-07** — polonez premium, preturi competitive.
+
+## Ce verifici obligatoriu
+- Roti duble 360°: 8 roti = rulare silentioasa
+- TSA lock: obligatoriu pentru zboruri SUA
+- Greutate: sub 2.5 kg cabina, sub 3.5 kg pentru 67cm
+- Garantie: min 5 ani pentru trollere premium
+
+## Unde cumperi?
+
+{link_magazine(MAGAZINE_ALL)} — testare in showroom, returnare 30 zile.
+
+[Trollere cu reducere →](/toate-magazinele)
+""",
+    },
+
+    {
+        "slug": f"vacanta-ieftina-romania-{AN}",
+        "title": f"Vacanta ieftina in Romania {AN} — destinatii, cazare, reduceri",
+        "excerpt": f"Cele mai frumoase destinatii din Romania pentru vacante ieftine {AN}. Munte, mare, Delta. Coduri reducere Booking si alte platforme.",
+        "category": "Calatorie",
+        "cover": cover_url("vacanta-romania"),
+        "content": f"""## Vacanta ieftina in Romania in {AN}
+
+Romania ofera peisaje superbe la preturi mult mai mici decat Europa Occidentala.
+
+## Top destinatii {AN}
+
+### Muntii Bucegi — Clasicul nemurit
+- Sinaia, Busteni, Azuga: ski iarna + drumetii vara
+- Cazare medie: 150-300 lei/noapte pensiune
+- Must-do: Castelul Peles, Platoul Bucegi, Babele
+
+### Delta Dunarii — Unicat mondial
+- Birdwatching, pescuit, natura salbatica
+- Cazare medie: 200-400 lei/noapte
+- Acces din Tulcea cu naveta fluviala
+
+### Litoral — Vara clasica
+- Mamaia (animat), Vama Veche (boem), Neptun-Olimp (familial)
+- Sezon optim: iulie-august, septembrie preturi mai mici
+
+### Sibiu & Imprejurimi — Cultura si Marginimea
+- City break cultural, medieval autentic, Transfagarasan la 30 min
+
+### Apuseni — Pesteri si Avenuri
+- Ghetarul Scarisoara, Pestera Ursilor
+- Cel mai bun raport calitate-experienta din Romania
+
+## Cum economisesti
+- Rezerva cu avans 2-3 luni: 20-40% mai ieftin
+- Evita weekenduri lungi: preturi cresc 50-100%
+- Pensiunile mici: mai ieftine si mai autentice
+
+## Unde cumperi?
+
+{link_magazine(MAGAZINE_TRAVEL)} — comparare preturi, anulare gratuita.
+
+[Oferte vacanta cu reducere →](/toate-magazinele)
+""",
+    },
+
+    # ── FOOD & KITCHEN ───────────────────────────────────────────────────────
+
+    {
+        "slug": f"cel-mai-bun-aparat-aer-cald-{AN}",
+        "title": f"Cel mai bun air fryer {AN} — aparat gatit cu aer cald top",
+        "excerpt": f"Top air fryer Romania {AN}: Philips, Tefal, Ninja, Cosori. Capacitate, consum, functii. Cartofi prajiti fara ulei. Coduri reducere eMAG.",
+        "category": "Electrocasnice",
+        "cover": cover_url("air-fryer-aparat"),
+        "content": f"""## Cel mai bun air fryer in {AN}
+
+Air fryer-ul a devenit electrocasnicul anului. Gatesti mai sanatos (90% mai putin ulei), mai rapid.
+
+## Ce poti gati
+- Cartofi prajiti: perfecti in 15-20 minute
+- Pui: crispy exterior, suculent interior, fara ulei
+- Legume: mult mai rapid ca cuptorul
+- Pizza reincalzita: crusta crocanta in 3 minute
+- Prajituri: brownies, gogosi functioneaza!
+
+## Recomandari concrete {AN}
+
+### Philips Premium Airfryer HD9741/96 — Cel mai bun overall
+TurboStar circulare uniforma, Fat Removal Technology, 7.2L, app NutriU. ~1500-1800 lei.
+
+### Ninja AF300EU DualZone — Doi in unu
+2 zone independente simultan, 7.6L total. ~900-1200 lei.
+
+### Tefal Easy Fry XXL EY801 — Capacitate uriasa
+5.4L, 8 programe, timer digital. ~600-800 lei.
+
+### Cosori Lite CAF-L501 — Buget smart
+Smart WiFi, 4.7L, app 100+ retete. ~500-700 lei.
+
+### Moulinex EZ401810 — Intrare de nivel
+1.5L, compact. Ideal daca gatesti singur. ~250-350 lei.
+
+## Merita cumparat?
+Da daca: consumi frecvent fast-food, ai copii, vrei sa reduci grasimile.
+Nu daca: gatesti rar, spatiu limitat, buget sub 250 lei.
+
+## Unde cumperi?
+
+{link_magazine(MAGAZINE_ELECTRONICE)} — cu demonstratie in unele magazine.
+
+[Air fryer cu reducere →](/categorii/appliances)
+""",
+    },
+
+    # ── GHIDURI CUMPARATURI ──────────────────────────────────────────────────
+
+    {
+        "slug": f"cum-alegi-un-laptop-{AN}",
+        "title": f"Cum alegi un laptop in {AN} — ghid complet pentru orice buget",
+        "excerpt": f"Ghid complet alegere laptop {AN}: procesor, RAM, stocare, ecran. Ce sa nu cumperi. Recomandari per buget 2000, 3000, 5000 lei.",
+        "category": "Ghiduri",
+        "cover": cover_url("cum-alegi-laptop"),
+        "content": f"""## Cum alegi un laptop in {AN}
+
+## Primul pas: ce faci cu el?
+
+### Navigare, email, YouTube:
+- Procesor: Intel Core i3 sau AMD Ryzen 3/5 | RAM: 8GB | SSD: 256GB | Buget: 1500-2500 lei
+
+### Birou, Excel, Zoom, multitasking:
+- Procesor: Intel Core i5/i7 sau AMD Ryzen 5/7 | RAM: 16GB | SSD: 512GB | Buget: 2500-4000 lei
+
+### Design, foto/video editare:
+- Procesor: Core i7/i9 sau Ryzen 7/9 | RAM: 16-32GB | Ecran 100% sRGB | Buget: 4000-8000 lei
+
+### Gaming:
+- GPU: NVIDIA RTX 4060 minim | RAM: 16GB DDR5 | Refresh rate: 144Hz+ | Buget: 4000-10000 lei
+
+## Ce NU cumperi niciodata
+- HDD in loc de SSD: lent indiferent de procesor
+- 4GB RAM in 2026: insuficient chiar si pentru Chrome
+- Sub 1500 lei: calitate slaba, reparatii costisitoare
+- Ecran 1366x768: rezolutie depasita, evita complet
+
+## Branduri fiabile in {AN}
+- **Lenovo ThinkPad**: indestructibil, tastatura excelenta
+- **ASUS**: raport calitate-pret bun
+- **HP**: fiabil, suport bun in Romania
+- **Apple MacBook**: autonomie si build quality superioare
+
+## Unde cumperi?
+
+{link_magazine(MAGAZINE_ELECTRONICE)} — cu drept returnare 30 zile.
+
+[Laptopuri cu reducere →](/categorii/electronics-itc)
+""",
+    },
+
+    {
+        "slug": f"cum-alegi-un-televizor-{AN}",
+        "title": f"Cum alegi un televizor in {AN} — 4K, OLED, QLED, dimensiuni",
+        "excerpt": f"Ghid televizoare {AN}: OLED vs QLED vs LED, dimensiune optima, Smart TV, HDR. Ce sa cumperi in functie de buget. Coduri reducere eMAG, Altex.",
+        "category": "Ghiduri",
+        "cover": cover_url("televizor-oled-4k"),
+        "content": f"""## Cum alegi un televizor in {AN}
+
+## Tehnologii de panel — diferentele reale
+
+### OLED — Neintrecutpentru imagine
+Fiecare pixel se ilumineaza individual → negru absolut, contrast infinit. Cinema autentic acasa.
+
+### QLED/Mini-LED — Luminozitate maxima
+Luminozitate uriasa, ideal camera luminoasa. Negrul nu e la fel de adanc ca OLED.
+
+### LED IPS/VA — Buget
+OK pentru buget, nu pentru cinefili.
+
+## Dimensiune optima per distanta
+- 1.5-2m → 43-50 inch
+- 2-2.5m → 55 inch
+- 2.5-3m → 65 inch
+- 3m+ → 75-85 inch
+
+## Recomandari concrete {AN}
+
+### OLED premium:
+**LG C3/C4 OLED** — standard de referinta cinefili, procesare α9 AI, Dolby Vision IQ.
+**Sony Bravia A80L** — culori naturale, Google TV excelent, ideal PS5.
+
+### QLED mid-range:
+**Samsung QN85B Neo QLED** — luminozitate 4000 nits, anti-reflexie.
+**TCL C845** — Mini-LED, 144Hz, gaming excelent, preturi competitive.
+
+### Budget:
+**Hisense A6K** — 4K, HDR10, Smart TV, 1500-2500 lei pentru 55inch.
+
+## Ce nu negociezi niciodata
+- 4K minim (1080p e demodat)
+- Smart TV cu update-uri active
+- HDR10+ sau Dolby Vision
+- HDMI 2.1 daca ai PS5/Xbox Series X
+
+## Unde cumperi?
+
+{link_magazine(MAGAZINE_ELECTRONICE)} — cu montare pe perete disponibila.
+
+[Televizoare cu reducere →](/categorii/electronics-itc)
+""",
+    },
+
+    {
+        "slug": f"ghid-cumparaturi-online-sigure-{AN}",
+        "title": f"Cum cumperi online sigur in {AN} — ghid complet anti-frauda",
+        "excerpt": f"Ghid cumparaturi online sigure {AN}: cum verifici un magazin, metode plata sigure, drepturi consumator, returnare. Tot ce trebuie sa stii.",
+        "category": "Ghiduri",
+        "cover": cover_url("cumparaturi-online-sigure"),
+        "content": f"""## Cum cumperi online sigur in {AN}
+
+## Cum verifici un magazin online
+
+### Semne ca e de incredere
+- Trusted.ro sau Google Reviews: min 4.0 stele, 50+ recenzii recente
+- ANPC inregistrat
+- Adresa fizica reala verificabila pe Google Maps
+- Date de contact reale: telefon functional + email cu raspuns rapid
+- HTTPS + certificat valid: lacat in browser
+
+### Semnale de alarma
+- Preturi cu 70%+ sub piata: imposibil sa fie real
+- Fara politica de retur sau garantie
+- Plata doar prin transfer bancar sau crypto
+- Site creat recent
+- Zero recenzii sau recenzii false (text generic)
+
+## Metode de plata — siguranta comparata
+
+### Card credit/debit online (recomandat)
+- Chargeback disponibil daca nu primesti produsul
+- 3D Secure = protectie suplimentara
+- Foloseste card virtual dedicat online (BT Pay, Revolut Virtual)
+
+### PayPal — Protectie cumparator excelenta
+### Ramburs la livrare — Platesti doar cand primesti
+### Transfer bancar direct — Evita pentru magazine necunoscute
+
+## Drepturile tale ca si cumparator online in Romania
+- 14 zile returnare fara justificare (Directiva UE)
+- Produs defect: garantie legala 2 ani
+- Livrare intarziata: poti anula si cere ramburs integral
+
+## Unde cumperi sigur?
+
+{link_magazine(MAGAZINE_ALL)} — magazine cu mii de recenzii, returnare simpla.
+
+[Toate magazinele verificate →](/toate-magazinele)
+""",
+    },
+
+    {
+        "slug": f"comparator-preturi-online-romania-{AN}",
+        "title": f"Comparator preturi online Romania {AN} — unde gasesti cel mai ieftin",
+        "excerpt": f"Top unelte comparare preturi online Romania {AN}: ShopMania, Google Shopping, PriceSpy. Cum gasesti cel mai ieftin. Combinat cu coduri reducere.",
+        "category": "Ghiduri",
+        "cover": cover_url("comparator-preturi"),
+        "content": f"""## Cum compari preturile online in Romania in {AN}
+
+Preturile variaza enorm intre magazine. Un produs la eMAG poate fi cu 30% mai scump decat la alt magazin.
+
+## Unelte de comparare preturi
+
+### ShopMania.ro — Cel mai popular
+Indexeaza sute de magazine, grafic evolutie pret, recenzii produse.
+
+### Google Shopping
+Cautare integrata cu filtrare pret. Instant ce magazine au stocul si pretul.
+
+### PriceSpy.ro
+Grafic detaliat istoric preturi, alerte email. Ideal pentru a cumpara la minim istoric.
+
+## Strategia completa pentru pret minim
+
+1. Identifica produsul exact (model, cod, culoare)
+2. Cauta pe ShopMania/Google Shopping — gasesti minimul curent
+3. Verifica istoricul pretului pe PriceSpy
+4. Cauta cod reducere pe AmCupon.ro
+5. Verifica costul livrarii (50 lei mai ieftin + 25 lei livrare = 25 lei economisit)
+
+## Cum recunosti Black Friday fake
+
+Multi comercianti cresc pretul cu 20-30% in octombrie, apoi "reduc" cu 50% in BF.
+- Urmareste pretul din octombrie cu PriceSpy
+- Compara pretul BF cu media ultimelor 3 luni
+
+## Unde gasesti coduri reducere?
+
+AmCupon.ro verifica zilnic codurile de la 600+ magazine. Combini comparatorul cu codul = economii maxime.
+
+[Toate codurile de reducere verificate →](/)
+""",
+    },
+
+    {
+        "slug": f"reduceri-flash-online-romania-{AN}",
+        "title": f"Reduceri flash in Romania {AN} — cum nu ratezi ofertele limitate",
+        "excerpt": f"Cum prinzi reducerile flash Romania {AN}: eMAG Deals, FashionDays Flash Sale. Alerte si trucuri pentru ofertele cu timp limitat.",
+        "category": "Ghiduri",
+        "cover": cover_url("reduceri-flash-deals"),
+        "content": f"""## Reduceri flash in Romania in {AN}
+
+Reducerile flash (ore limitate, stocuri limitate) ofera cele mai mari discounturi din an.
+
+## Unde gasesti reduceri flash in Romania
+
+### eMAG Deals
+**eMAG → Oferte Fulger** zilnic la 06:00, 12:00, 18:00.
+Abonare la newsletter + notificari app = nu ratezi nimic.
+
+### FashionDays Flash Sale
+24-48h la haine si accesorii, 50-70% reducere. Abonare newsletter obligatorie.
+
+### Answear Outlet
+Sectiune permanenta cu reduceri mari la articolele sezonului trecut.
+
+### Notino Deals
+Parfumuri si cosmetice la reduceri ocazionale.
+
+## Cum nu ratezi nicio oferta flash
+
+1. **Aplicatii cu notificari**: eMAG app + FashionDays app + Notino app → alerts activate
+2. **Newsletter selectiv**: email dedicat (nu cel principal) pentru spam management
+3. **Lista de dorinte**: adauga la Wishlist pe eMAG → alerta cand pretul scade
+4. **AmCupon.ro**: uneori combini pretul flash cu codul de reducere
+
+## Strategia Black Friday
+
+- Urmareste preturile din octombrie cu PriceSpy
+- Pregateste contul si cardul salvat
+- Stai online la 00:00 pentru primele oferte
+- Cumpara dimineata devreme pentru stocuri maxime
+
+[Coduri reducere verificate zilnic →](/)
+""",
+    },
+
+    {
+        "slug": f"ghid-black-friday-romania-{AN}",
+        "title": f"Black Friday Romania {AN} — ghid complet, oferte reale vs fake",
+        "excerpt": f"Ghid Black Friday Romania {AN}: cand incepe, ce magazine participa, cum recunosti ofertele fake. Strategia completa cumparaturi inteligente.",
+        "category": "Ghiduri",
+        "cover": cover_url("black-friday-romania"),
+        "content": f"""## Black Friday Romania {AN} — Ghid complet
+
+## Cand este Black Friday {AN}
+
+**Data officiala**: ultima vineri din noiembrie — **29 noiembrie {AN}**
+In Romania, BF dureaza 1-2 saptamani (unele magazine incep pe 11 noiembrie).
+
+## Magazine cu Black Friday real in Romania
+
+- **eMAG**: sute de mii de produse, reduceri verificate
+- **Altex & Flanco**: electronice si electrocasnice
+- **FashionDays**: branduri premium 50-80% reducere
+- **Notino & Douglas**: parfumuri originale 30-50% reducere
+- **Elefant & Libris**: carti si pachete cu reducere
+
+## Cum identifici reducerile FAKE
+
+### Pretul crescut inainte de BF
+Multi comercianti cresc pretul 20-30% in octombrie, apoi afiseaza "50% reducere" in BF.
+Verifica: PriceSpy.ro sau ShopMania istoricul din ultimele 3 luni.
+
+### "Reducere" la pretul de lista vs pretul real
+"Pret recomandat: 5000 lei → Azi: 3000 lei (40% reducere)" — daca nimeni nu a vandut la 5000 lei, e fictiv.
+
+### Urgenta artificiala
+"Ultimele 3 bucati!" timp de 3 zile = fake scarcity.
+
+## Strategia completa BF
+
+**Cu 3 saptamani inainte**: lista produse dorite + urmarire preturi pe PriceSpy.
+**De Black Friday**: cumpara dimineata devreme + verifica pretul vs referinta ta + combina cu cod reducere AmCupon.ro.
+
+## Ce merita cumparat de BF
+Electronice mari, parfumuri originale, electrocasnice, haine premium.
+Nu cumpara: produse necunoscute de la magazine necunoscute cu "99% reducere".
+
+[Coduri reducere Black Friday →](/black-friday)
+""",
+    },
+
+]
+
+
+# ─── Combina toate listele ────────────────────────────────────────────────────
+ARTICOLE = ARTICOLE + ARTICOLE_EXTRA2
 
 
 def main():
