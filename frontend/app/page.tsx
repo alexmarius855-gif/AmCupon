@@ -114,11 +114,14 @@ interface Banner {
   id: string;
   image_url: string;
   landing_url: string;
+  landing_raw: string;
   width: number;
   height: number;
   merchant: string;
   merchant_slug: string;
   name: string;
+  category: string;
+  b_type: string;
 }
 
 export default function Home() {
@@ -139,9 +142,18 @@ export default function Home() {
     fetch("/blog-posts.json").then((r) => r.json()).then((posts: BlogPost[]) => setBlogPosts(posts.slice(0, 3))).catch(() => {});
     fetch("/banners.json").then((r) => r.json()).then((data) => {
       const list: Banner[] = data?.banners || data || [];
-      // Preferă bannere 300x250 sau orice cu imagine
-      const filtered = list.filter((b) => b.image_url && b.landing_url);
-      setBanners(filtered.slice(0, 8));
+      // Filtrare: bannere cu imagine si link valide
+      const withImg = list.filter((b) => b.image_url && (b.landing_url || b.landing_raw));
+      // Sortare: landscape (width > height) > square > portrait (social media)
+      withImg.sort((a, b) => {
+        const ratioA = a.width / (a.height || 1);
+        const ratioB = b.width / (b.height || 1);
+        // Preferam bannere cu aspect ratio 1.5x-2.5x (web banners)
+        const scoreA = ratioA >= 1.2 && ratioA <= 3 ? 2 : ratioA >= 0.8 ? 1 : 0;
+        const scoreB = ratioB >= 1.2 && ratioB <= 3 ? 2 : ratioB >= 0.8 ? 1 : 0;
+        return scoreB - scoreA;
+      });
+      setBanners(withImg.slice(0, 8));
     }).catch(() => {});
     try {
       const saved = JSON.parse(localStorage.getItem("favorite_magazine") || "[]");
@@ -719,8 +731,8 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
               {banners.slice(0, 8).map((b, i) => (
-                <a key={b.id || i} href={b.landing_url} target="_blank" rel="sponsored noopener noreferrer"
-                  title={b.name || b.merchant}
+                <a key={b.id || i} href={b.landing_url || b.landing_raw} target="_blank" rel="sponsored noopener noreferrer"
+                  title={b.name || b.merchant || b.category}
                   className="group relative overflow-hidden rounded-2xl border border-gray-200 hover:border-orange-300 hover:shadow-lg transition-all duration-200 bg-white block">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
