@@ -1,79 +1,246 @@
 import { Metadata } from "next";
+import fs from "fs";
+import path from "path";
 
 export const metadata: Metadata = {
-  title: "Toate categoriile | AmCupon.ro",
-  description: "Coduri de reducere organizate pe categorii: Fashion, Electronice, Frumusețe, Casă & Grădină, Sport, Farmacie și multe altele. Oferte verificate zilnic.",
+  title: "Categorii coduri reducere | AmCupon.ro",
+  description: "Coduri de reducere organizate pe categorii: Fashion, Electronice, Frumusete, Casa & Gradina, Sport, Farmacie si multe altele. Oferte verificate zilnic.",
 };
 
+/* ─── Config categorii ───────────────────────────────────────────────────── */
 const CATEGORII = [
-  { slug: "fashion", emoji: "👗", label: "Fashion", desc: "Îmbrăcăminte & Accesorii", bg: "bg-pink-50", border: "border-pink-200", hover: "hover:border-pink-400" },
-  { slug: "electronics-itc", emoji: "💻", label: "Electronice IT&C", desc: "Laptopuri, telefoane, gadgeturi", bg: "bg-blue-50", border: "border-blue-200", hover: "hover:border-blue-400" },
-  { slug: "beauty", emoji: "💄", label: "Frumusețe", desc: "Cosmetice & Parfumuri", bg: "bg-rose-50", border: "border-rose-200", hover: "hover:border-rose-400" },
-  { slug: "home-garden", emoji: "🏡", label: "Casă & Grădină", desc: "Mobilă, decorațiuni, unelte", bg: "bg-green-50", border: "border-green-200", hover: "hover:border-green-400" },
-  { slug: "sports-outdoors", emoji: "🏃", label: "Sport & Outdoor", desc: "Echipament sportiv & fitness", bg: "bg-orange-50", border: "border-orange-200", hover: "hover:border-orange-400" },
-  { slug: "pharma", emoji: "💊", label: "Farmacie", desc: "Medicamente & suplimente", bg: "bg-red-50", border: "border-red-200", hover: "hover:border-red-400" },
-  { slug: "babies-kids-toys", emoji: "👶", label: "Copii & Jucării", desc: "Produse pentru copii", bg: "bg-purple-50", border: "border-purple-200", hover: "hover:border-purple-400" },
-  { slug: "automotive", emoji: "🚗", label: "Auto-Moto", desc: "Piese & accesorii auto", bg: "bg-slate-50", border: "border-slate-200", hover: "hover:border-slate-400" },
-  { slug: "books", emoji: "📚", label: "Cărți", desc: "Cărți, papetărie & e-books", bg: "bg-yellow-50", border: "border-yellow-200", hover: "hover:border-yellow-400" },
-  { slug: "hypermarket-groceries", emoji: "🛒", label: "Hypermarket", desc: "Alimente & produse zilnice", bg: "bg-emerald-50", border: "border-emerald-200", hover: "hover:border-emerald-400" },
-  { slug: "gifts-flowers", emoji: "🎁", label: "Cadouri & Flori", desc: "Cadouri pentru orice ocazie", bg: "bg-fuchsia-50", border: "border-fuchsia-200", hover: "hover:border-fuchsia-400" },
-  { slug: "telecom", emoji: "📱", label: "Telecom", desc: "Abonamente & servicii mobile", bg: "bg-cyan-50", border: "border-cyan-200", hover: "hover:border-cyan-400" },
-  { slug: "pet-supplies", emoji: "🐾", label: "Animale de Companie", desc: "Hrană, jucării, accesorii", bg: "bg-amber-50", border: "border-amber-200", hover: "hover:border-amber-400" },
-  { slug: "jewelry", emoji: "💎", label: "Bijuterii", desc: "Bijuterii & ceasuri", bg: "bg-violet-50", border: "border-violet-200", hover: "hover:border-violet-400" },
-  { slug: "games", emoji: "🎮", label: "Jocuri", desc: "Jocuri video & console", bg: "bg-indigo-50", border: "border-indigo-200", hover: "hover:border-indigo-400" },
-  { slug: "health-personal-care", emoji: "🧴", label: "Sănătate", desc: "Îngrijire personală & wellness", bg: "bg-teal-50", border: "border-teal-200", hover: "hover:border-teal-400" },
-  { slug: "online-mall", emoji: "🛍️", label: "Online Mall", desc: "Platforme cu mai multe branduri", bg: "bg-sky-50", border: "border-sky-200", hover: "hover:border-sky-400" },
-  { slug: "watches", emoji: "⌚", label: "Ceasuri", desc: "Ceasuri & smartwatch-uri", bg: "bg-stone-50", border: "border-stone-200", hover: "hover:border-stone-400" },
-  { slug: "software", emoji: "💾", label: "Software", desc: "Licențe & aplicații", bg: "bg-lime-50", border: "border-lime-200", hover: "hover:border-lime-400" },
-  { slug: "insurance", emoji: "🛡️", label: "Asigurări", desc: "Asigurări auto, medicale", bg: "bg-zinc-50", border: "border-zinc-200", hover: "hover:border-zinc-400" },
-  { slug: "office-supplies", emoji: "📎", label: "Papetărie & Birou", desc: "Rechizite & mobilier birou", bg: "bg-neutral-50", border: "border-neutral-200", hover: "hover:border-neutral-400" },
-  { slug: "others", emoji: "🔖", label: "Altele", desc: "Diverse categorii", bg: "bg-gray-50", border: "border-gray-200", hover: "hover:border-gray-400" },
+  {
+    slug: "fashion", label: "Fashion", desc: "Haine & accesorii",
+    from: "#ec4899", to: "#f97316",
+    keywords: ["fashion", "clothing", "haine", "shoes", "answear", "aboutyou"],
+  },
+  {
+    slug: "electronics-itc", label: "Electronice IT&C", desc: "Laptopuri, telefoane, gadgeturi",
+    from: "#3b82f6", to: "#6366f1",
+    keywords: ["electronic", "tech", "it", "laptop", "phone", "ozone", "navstore"],
+  },
+  {
+    slug: "beauty", label: "Frumusete", desc: "Cosmetice & parfumuri",
+    from: "#f43f5e", to: "#a855f7",
+    keywords: ["beauty", "cosmetic", "parfum", "notino", "makeup", "sephora"],
+  },
+  {
+    slug: "home-garden", label: "Casa & Gradina", desc: "Mobila, decoratiuni, unelte",
+    from: "#10b981", to: "#3b82f6",
+    keywords: ["home", "casa", "garden", "vidaxl", "gradina", "mobila", "dedeman"],
+  },
+  {
+    slug: "sports-outdoors", label: "Sport & Outdoor", desc: "Echipament sportiv & fitness",
+    from: "#f97316", to: "#eab308",
+    keywords: ["sport", "fitness", "outdoor", "sportdepot", "decathlon", "running"],
+  },
+  {
+    slug: "pharma", label: "Farmacie", desc: "Medicamente & suplimente",
+    from: "#ef4444", to: "#f97316",
+    keywords: ["pharma", "farmacie", "drmax", "sensiblu", "vegis", "medic"],
+  },
+  {
+    slug: "babies-kids-toys", label: "Copii & Jucarii", desc: "Produse pentru cei mici",
+    from: "#a855f7", to: "#ec4899",
+    keywords: ["kids", "copii", "toy", "bebe", "noriel", "jucarii"],
+  },
+  {
+    slug: "automotive", label: "Auto-Moto", desc: "Piese & accesorii auto",
+    from: "#64748b", to: "#1e293b",
+    keywords: ["auto", "car", "moto", "automobilus", "piese", "anvelop"],
+  },
+  {
+    slug: "books", label: "Carti & Edu", desc: "Carti, e-books, papetarie",
+    from: "#eab308", to: "#f97316",
+    keywords: ["book", "carte", "libris", "carturesti", "bookzone", "edu"],
+  },
+  {
+    slug: "hypermarket-groceries", label: "Hypermarket", desc: "Alimente & produse zilnice",
+    from: "#10b981", to: "#059669",
+    keywords: ["hypermarket", "grocery", "aliment", "food", "supermarket"],
+  },
+  {
+    slug: "gifts-flowers", label: "Cadouri & Flori", desc: "Cadouri pentru orice ocazie",
+    from: "#f43f5e", to: "#ec4899",
+    keywords: ["gift", "cadou", "flori", "flower", "cadouri"],
+  },
+  {
+    slug: "telecom", label: "Telecom", desc: "Abonamente & servicii mobile",
+    from: "#06b6d4", to: "#3b82f6",
+    keywords: ["telecom", "mobile", "abonament", "orange", "vodafone", "digi"],
+  },
+  {
+    slug: "pet-supplies", label: "Animale", desc: "Hrana, jucarii, accesorii",
+    from: "#f59e0b", to: "#d97706",
+    keywords: ["pet", "animal", "caine", "pisica", "zooplus"],
+  },
+  {
+    slug: "jewelry", label: "Bijuterii", desc: "Bijuterii & ceasuri",
+    from: "#8b5cf6", to: "#6366f1",
+    keywords: ["jewel", "bijuterie", "ceas", "argint", "aur"],
+  },
+  {
+    slug: "games", label: "Jocuri & Gaming", desc: "Jocuri video & console",
+    from: "#6366f1", to: "#1e293b",
+    keywords: ["game", "gaming", "console", "jocuri", "steam", "ps5"],
+  },
+  {
+    slug: "health-personal-care", label: "Sanatate", desc: "Ingrijire personala & wellness",
+    from: "#0ea5e9", to: "#10b981",
+    keywords: ["health", "sanatate", "wellness", "ingrijire"],
+  },
+  {
+    slug: "online-mall", label: "Online Mall", desc: "Platforme multi-brand",
+    from: "#1e293b", to: "#475569",
+    keywords: ["mall", "emag", "altex", "flanco", "platform"],
+  },
+  {
+    slug: "others", label: "Altele", desc: "Diverse categorii",
+    from: "#94a3b8", to: "#64748b",
+    keywords: [],
+  },
 ];
 
+/* ─── Load data ──────────────────────────────────────────────────────────── */
+function loadMagazine(): any[] {
+  try {
+    const p = path.join(process.cwd(), "public", "output.json");
+    return JSON.parse(fs.readFileSync(p, "utf-8"));
+  } catch {
+    return [];
+  }
+}
+
+function getMagazineForCategory(magazine: any[], cat: typeof CATEGORII[0]) {
+  return magazine.filter((m: any) => {
+    const slugM  = (m.categorie_slug || m.categorie || "").toLowerCase();
+    const nameM  = (m.magazin || "").toLowerCase();
+    const dispM  = (m.magazin_display || "").toLowerCase();
+    // Match dupa slug exact
+    if (slugM === cat.slug) return true;
+    // Match dupa keywords
+    return cat.keywords.some(kw =>
+      slugM.includes(kw) || nameM.includes(kw) || dispM.includes(kw)
+    );
+  });
+}
+
+/* ─── Page ───────────────────────────────────────────────────────────────── */
 export default function CategoriPage() {
+  const magazine = loadMagazine();
+
+  // Construieste date per categorie
+  const categoriiCuDate = CATEGORII.map((cat) => {
+    const mag    = getMagazineForCategory(magazine, cat);
+    const nrOff  = mag.filter((m: any) => m.promotie || m.cod_cupon).length;
+    const logos  = mag
+      .filter((m: any) => m.logo)
+      .slice(0, 4)
+      .map((m: any) => ({ logo: m.logo, name: m.magazin_display || m.magazin }));
+    return { ...cat, nrMag: mag.length, nrOff, logos };
+  });
+
+  const totalOff = magazine.filter((m: any) => m.promotie || m.cod_cupon).length;
+
   return (
-    <div className="min-h-screen bg-gray-50">
-      <header className="bg-white border-b border-gray-200 shadow-sm">
+    <div className="min-h-screen bg-slate-950">
+
+      {/* Header */}
+      <header className="bg-slate-900 border-b border-slate-800">
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-3">
           <a href="/" className="flex items-center gap-1.5 shrink-0">
             <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
-            <span className="font-black text-gray-900 text-xl">Cupon</span>
+            <span className="font-black text-white text-xl">Cupon</span>
             <span className="text-orange-500 font-black text-xl">.ro</span>
           </a>
-          <span className="text-gray-300">/</span>
-          <span className="text-sm font-semibold text-gray-700">Categorii</span>
+          <span className="text-slate-600">/</span>
+          <span className="text-sm font-semibold text-slate-400">Categorii</span>
         </div>
       </header>
 
-      <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white py-8 px-4">
+      {/* Hero */}
+      <div className="bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800 py-10 px-4 border-b border-slate-800">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-2xl md:text-3xl font-black mb-1">Categorii coduri reducere</h1>
-          <p className="text-orange-100 text-sm">
-            Descoperă oferte organizate pe {CATEGORII.length} categorii · Actualizat zilnic
+          <h1 className="text-3xl md:text-4xl font-black text-white mb-2">
+            Toate categoriile
+          </h1>
+          <p className="text-slate-400 text-sm">
+            <span className="text-emerald-400 font-bold">{totalOff} oferte active</span>
+            {" "}in{" "}
+            <span className="text-white font-bold">{CATEGORII.length} categorii</span>
+            {" "}&mdash; actualizat zilnic
           </p>
         </div>
       </div>
 
+      {/* Grid categorii */}
       <div className="max-w-7xl mx-auto px-4 py-10">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
-          {CATEGORII.map((c) => (
+          {categoriiCuDate.map((c) => (
             <a
               key={c.slug}
               href={`/categorii/${c.slug}`}
-              className={`flex flex-col items-center gap-3 p-5 rounded-2xl border-2 ${c.bg} ${c.border} ${c.hover} transition-all duration-200 group`}
+              className="group relative rounded-2xl overflow-hidden transition-all duration-300 hover:scale-[1.04] hover:shadow-2xl"
+              style={{
+                background: `linear-gradient(135deg, ${c.from} 0%, ${c.to} 100%)`,
+              }}
             >
-              <span className="text-4xl group-hover:scale-110 transition-transform duration-200">{c.emoji}</span>
-              <div className="text-center">
-                <div className="font-black text-gray-900 text-sm leading-tight">{c.label}</div>
-                <div className="text-xs text-gray-500 mt-1 leading-tight">{c.desc}</div>
+              {/* Overlay sticla */}
+              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300" />
+
+              {/* Logouri magazine (fundal decorativ) */}
+              {c.logos.length > 0 && (
+                <div className="absolute top-2 right-2 flex -space-x-2 opacity-70 group-hover:opacity-90 transition-opacity">
+                  {c.logos.slice(0, 3).map((l, i) => (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      key={i}
+                      src={l.logo}
+                      alt={l.name}
+                      className="w-6 h-6 rounded-full border border-white/40 bg-white object-contain p-0.5"
+                      loading="lazy"
+                    />
+                  ))}
+                </div>
+              )}
+
+              {/* Content */}
+              <div className="relative p-4 pt-8">
+                {/* Nr oferte badge */}
+                {c.nrOff > 0 ? (
+                  <div className="inline-flex items-center gap-1 bg-white/25 backdrop-blur-sm px-2 py-0.5 rounded-full mb-3">
+                    <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
+                    <span className="text-white text-[10px] font-bold">{c.nrOff} oferte</span>
+                  </div>
+                ) : (
+                  <div className="inline-flex items-center gap-1 bg-white/15 px-2 py-0.5 rounded-full mb-3">
+                    <span className="text-white/70 text-[10px]">{c.nrMag} magazine</span>
+                  </div>
+                )}
+
+                <div className="text-white font-black text-sm leading-tight mb-1">
+                  {c.label}
+                </div>
+                <div className="text-white/70 text-[10px] leading-tight">
+                  {c.desc}
+                </div>
+
+                {/* Arrow */}
+                <div className="mt-3 flex items-center gap-1 text-white/60 group-hover:text-white group-hover:gap-2 transition-all text-[10px] font-bold">
+                  Vezi ofertele
+                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
               </div>
             </a>
           ))}
         </div>
 
+        {/* Back link */}
         <div className="mt-10 text-center">
-          <a href="/" className="text-sm text-gray-400 hover:text-orange-500 transition-colors">
-            ← Înapoi la AmCupon.ro
+          <a href="/" className="text-sm text-slate-500 hover:text-orange-400 transition-colors">
+            &larr; Inapoi la AmCupon.ro
           </a>
         </div>
       </div>
