@@ -6,7 +6,8 @@ export const runtime = "edge";
 
 const BREVO_API = "https://api.brevo.com/v3/contacts";
 const LIST_ID   = parseInt(process.env.BREVO_LIST_ID || "2", 10);
-const API_KEY   = process.env.BREVO_API_KEY || "";
+// Accepta atat xkeysib- (REST API key) cat si xsmtpsib- (SMTP key — merge si pt API v3)
+const API_KEY   = process.env.BREVO_API_KEY || process.env.BREVO_SMTP_PASS || "";
 
 export async function POST(request: Request) {
   let email = "";
