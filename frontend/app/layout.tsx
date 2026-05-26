@@ -96,6 +96,14 @@ export default function RootLayout({
         <link rel="preconnect" href="https://img.2performant.com" />
         <link rel="preconnect" href="https://cdn.2performant.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* Google AdSense — inlocuieste ca-pub-XXXXXXXXXXXXXXXX cu ID-ul tau din AdSense */}
+        {process.env.NEXT_PUBLIC_ADSENSE_ID && (
+          <script
+            async
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_ID}`}
+            crossOrigin="anonymous"
+          />
+        )}
       </head>
       <body className="min-h-full flex flex-col">
         <div className="bg-gradient-to-r from-red-600 to-orange-500 text-white text-xs font-semibold py-2 px-4 text-center">

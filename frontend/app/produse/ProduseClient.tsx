@@ -1,11 +1,13 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
+import { useWishlist } from "../hooks/useWishlist";
 
 /* ─── Types ──────────────────────────────────────────────────────────────── */
 export interface Produs {
   title: string;
   url: string;
+  url_original?: string;
   image: string;
   price: number;
   old_price?: number | null;
@@ -101,57 +103,70 @@ type Sort = "discount" | "pret_asc" | "pret_desc" | "nou";
 type Tab  = "oferte" | "produse" | "campanii";
 
 /* ─── Product Card ────────────────────────────────────────────────────────── */
-function ProdusCard({ p }: { p: Produs }) {
+function ProdusCard({ p, onSave, saved }: { p: Produs; onSave: () => void; saved: boolean }) {
   const [imgOk, setImgOk] = useState(true);
   const hasImg = p.image && imgOk;
   const emoji  = catEmoji(p.category);
   const merchant = numeAfisat(p.merchant_slug || p.merchant);
-  const initial  = merchant.charAt(0).toUpperCase();
 
   return (
-    <a href={p.url} target="_blank" rel="sponsored noopener noreferrer"
-      className="group bg-white border border-slate-200 hover:border-orange-300 rounded-2xl overflow-hidden transition-all hover:shadow-lg hover:-translate-y-0.5 duration-200 flex flex-col">
-      {/* Image / Placeholder */}
-      <div className="relative bg-slate-50 overflow-hidden" style={{ aspectRatio: "1" }}>
-        {hasImg ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img src={p.image} alt={p.title} loading="lazy"
-            className="w-full h-full object-contain p-3 group-hover:scale-105 transition-transform duration-300"
-            onError={() => setImgOk(false)} />
-        ) : (
-          <div className="w-full h-full flex flex-col items-center justify-center gap-2">
-            <span className="text-4xl">{emoji}</span>
-            <span className="text-[10px] font-bold text-slate-400 text-center px-2 leading-tight">{merchant}</span>
-          </div>
-        )}
-        {p.discount_pct > 0 && (
-          <span className="absolute top-2 left-2 bg-red-500 text-white text-[10px] font-black px-2 py-0.5 rounded-full shadow">
-            -{p.discount_pct}%
-          </span>
-        )}
-      </div>
-      {/* Info */}
-      <div className="p-3 flex flex-col flex-1">
-        <p className="text-[10px] text-slate-400 mb-0.5 truncate">{p.brand || p.category}</p>
-        <p className="text-xs font-semibold text-slate-900 line-clamp-2 flex-1 group-hover:text-orange-600 transition-colors leading-snug">
-          {p.title}
-        </p>
-        <div className="flex items-baseline gap-2 mt-2 flex-wrap">
-          <span className="font-black text-orange-600 text-sm">
-            {p.price > 0 ? `${p.price.toFixed(2)} lei` : "Vezi pretul"}
-          </span>
-          {p.old_price && p.old_price > p.price && (
-            <span className="text-[10px] text-slate-400 line-through">{p.old_price.toFixed(2)} lei</span>
+    <div className="group bg-white border border-slate-200 hover:border-orange-300 rounded-2xl overflow-hidden transition-all hover:shadow-lg hover:-translate-y-0.5 duration-200 flex flex-col relative">
+      {/* Buton salvare */}
+      <button
+        onClick={(e) => { e.preventDefault(); onSave(); }}
+        title={saved ? "Sterge din lista dorintelor" : "Salveaza pentru price alert"}
+        className={`absolute top-2 right-2 z-10 w-7 h-7 rounded-full border flex items-center justify-center text-sm transition-all
+          ${saved
+            ? "bg-red-50 border-red-300 text-red-500 hover:bg-red-100"
+            : "bg-white/90 border-slate-200 text-slate-300 hover:text-red-400 hover:border-red-300"
+          }`}
+      >
+        {saved ? "♥" : "♡"}
+      </button>
+
+      <a href={p.url} target="_blank" rel="sponsored noopener noreferrer" className="flex flex-col flex-1">
+        {/* Image / Placeholder */}
+        <div className="relative bg-slate-50 overflow-hidden" style={{ aspectRatio: "1" }}>
+          {hasImg ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={p.image} alt={p.title} loading="lazy"
+              className="w-full h-full object-contain p-3 group-hover:scale-105 transition-transform duration-300"
+              onError={() => setImgOk(false)} />
+          ) : (
+            <div className="w-full h-full flex flex-col items-center justify-center gap-2">
+              <span className="text-4xl">{emoji}</span>
+              <span className="text-[10px] font-bold text-slate-400 text-center px-2 leading-tight">{merchant}</span>
+            </div>
+          )}
+          {p.discount_pct > 0 && (
+            <span className="absolute top-2 left-2 bg-red-500 text-white text-[10px] font-black px-2 py-0.5 rounded-full shadow">
+              -{p.discount_pct}%
+            </span>
           )}
         </div>
-        <div className="mt-2 flex items-center gap-1 text-[10px] font-bold text-orange-500">
-          Cumpara acum
-          <svg className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
-          </svg>
+        {/* Info */}
+        <div className="p-3 flex flex-col flex-1">
+          <p className="text-[10px] text-slate-400 mb-0.5 truncate">{p.brand || p.category}</p>
+          <p className="text-xs font-semibold text-slate-900 line-clamp-2 flex-1 group-hover:text-orange-600 transition-colors leading-snug">
+            {p.title}
+          </p>
+          <div className="flex items-baseline gap-2 mt-2 flex-wrap">
+            <span className="font-black text-orange-600 text-sm">
+              {p.price > 0 ? `${p.price.toFixed(2)} lei` : "Vezi pretul"}
+            </span>
+            {p.old_price && p.old_price > p.price && (
+              <span className="text-[10px] text-slate-400 line-through">{p.old_price.toFixed(2)} lei</span>
+            )}
+          </div>
+          <div className="mt-2 flex items-center gap-1 text-[10px] font-bold text-orange-500">
+            Cumpara acum
+            <svg className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
+            </svg>
+          </div>
         </div>
-      </div>
-    </a>
+      </a>
+    </div>
   );
 }
 
@@ -251,6 +266,10 @@ export default function ProduseClient({
   const [limit,       setLimit]       = useState(48);
   const [activeTab,   setActiveTab]   = useState<Tab>("oferte");
   const [menuOpen,    setMenuOpen]    = useState(false);
+  const [savedToast,  setSavedToast]  = useState<string | null>(null);
+
+  // Wishlist + price alerts
+  const { isSaved, toggle, priceDrops } = useWishlist();
 
   // Magazine cu promotii active pentru "Top Deals"
   const cuPromotii = useMemo(() =>
@@ -633,10 +652,42 @@ export default function ProduseClient({
                 </div>
               ) : (
                 <>
+                  {/* Price drop banner */}
+                  {priceDrops.length > 0 && (
+                    <div className="mb-4 bg-emerald-50 border border-emerald-200 rounded-2xl p-3 flex items-center gap-3">
+                      <span className="text-xl">&#127381;</span>
+                      <div className="flex-1 text-sm">
+                        <span className="font-bold text-emerald-800">Pretul a scazut la {priceDrops.length} produse salvate!</span>
+                      </div>
+                      <a href="/wishlist" className="text-xs font-bold text-emerald-600 hover:text-emerald-800 whitespace-nowrap">
+                        Vezi lista &#8594;
+                      </a>
+                    </div>
+                  )}
+
                   <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
-                    {filtrate.slice(0, limit).map((p, i) => (
-                      <ProdusCard key={`${p.merchant}-${i}`} p={p}/>
-                    ))}
+                    {filtrate.slice(0, limit).map((p, i) => {
+                      const itemId = p.url_original || `${p.merchant}-${p.title}`;
+                      return (
+                        <ProdusCard
+                          key={`${p.merchant}-${i}`}
+                          p={p}
+                          saved={isSaved(itemId)}
+                          onSave={() => {
+                            toggle({
+                              id:       itemId,
+                              title:    p.title,
+                              url:      p.url,
+                              image:    p.image || "",
+                              price:    p.price,
+                              merchant: p.merchant,
+                            });
+                            setSavedToast(isSaved(itemId) ? null : p.title.slice(0, 40));
+                            setTimeout(() => setSavedToast(null), 2500);
+                          }}
+                        />
+                      );
+                    })}
                   </div>
                   {filtrate.length > limit && (
                     <div className="text-center mt-8">
@@ -695,6 +746,17 @@ export default function ProduseClient({
           <p className="text-slate-300">&copy; {an} AmCupon.ro</p>
         </div>
       </footer>
+
+      {/* ─── TOAST salvare produs ──────────────────────────────────────────── */}
+      {savedToast && (
+        <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-slate-900 text-white px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-2 text-sm font-semibold animate-in slide-in-from-bottom-4 duration-300">
+          <span className="text-red-400">&#9829;</span>
+          <span>Salvat: {savedToast}</span>
+          <a href="/wishlist" className="ml-2 text-emerald-400 hover:text-emerald-300 text-xs underline">
+            Vezi lista
+          </a>
+        </div>
+      )}
     </div>
   );
 }

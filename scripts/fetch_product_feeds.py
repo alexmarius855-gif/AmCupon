@@ -647,6 +647,23 @@ def main():
     print(f"  Feed-uri cu URL direct: {len(feeds_cu_url)}")
     print(f"  Feed-uri fara URL (vor folosi API fallback): {len(feeds_fara_url)}")
 
+    # Feed-uri cunoscute cu URL direct (fallback hardcodat daca API nu le returneaza)
+    KNOWN_FEEDS = [
+        {"name": "libris.ro",      "url": "https://www.libris.ro/feed_2p-21220622?_uiAc=ODA4OA=="},
+        {"name": "navstore.ro",    "url": "https://www.navstore.ro/feed/googleShoppingAds.xml"},
+    ]
+    slug_map_rev = {v: k for k, v in slug_map.items()}
+    existing_names = {(f.get("name") or "").lower() for f, _ in feeds_cu_url}
+
+    for kf in KNOWN_FEEDS:
+        nm = kf["name"].lower()
+        if not any(nm in en for en in existing_names):
+            print(f"  + Feed hardcodat adaugat: {kf['name']}")
+            feeds_cu_url.append(({
+                "id": kf["name"], "name": kf["name"],
+                "program": {"name": kf["name"], "slug": kf["name"].split(".")[0]},
+            }, kf["url"]))
+
     # Prioritizeaza feed-urile mari (libris, vidaxl, automobilus, ozone)
     PRIORITATE = ["libris", "vidaxl", "ozone", "automobilus", "navstore", "bobaro"]
 
