@@ -72,11 +72,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
 
     // ─── Pagini magazine (/cod-reducere/[magazin]) ────────────────────────────
-    ...magazine.map((m) => ({
-      url: `${BASE_URL}/cod-reducere/${m.magazin}`,
-      lastModified: new Date(),
-      changeFrequency: "daily" as const,
-      priority: m.are_promotie ? 0.9 : 0.6,
-    })),
+    // Filtram sluguri invalide: cu spatii, cu "/" in interior, sau retele afiliere
+    ...magazine
+      .filter((m) => {
+        const slug = m.magazin || "";
+        if (!slug) return false;
+        if (/\s/.test(slug)) return false;           // spatii in slug
+        if (slug.split("/").length > 2) return false; // prea multe slash-uri
+        if (["profitshare.ro", "2performant.com"].includes(slug)) return false; // retele, nu magazine
+        return true;
+      })
+      .map((m) => ({
+        url: `${BASE_URL}/cod-reducere/${m.magazin}`,
+        lastModified: new Date(),
+        changeFrequency: "daily" as const,
+        priority: m.are_promotie ? 0.9 : 0.6,
+      })),
   ];
 }
