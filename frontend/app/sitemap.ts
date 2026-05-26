@@ -4,6 +4,9 @@ import path from "path";
 
 const BASE_URL = "https://amcupon.ro";
 
+// Sluguri pagini multi-nisa (/nisa/[slug])
+const NISA_SLUGURI = ["auto", "carti", "casa", "tech", "fashion", "sport", "frumusete"];
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const magazine: { magazin: string; are_promotie: boolean; categorie_slug?: string }[] = JSON.parse(
     fs.readFileSync(path.join(process.cwd(), "public", "output.json"), "utf-8")
@@ -18,37 +21,57 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const categoriiSluguri = [...new Set(magazine.map((m) => m.categorie_slug).filter(Boolean))];
 
   return [
-    { url: BASE_URL, lastModified: new Date(), changeFrequency: "daily", priority: 1.0 },
-    { url: `${BASE_URL}/black-friday`, lastModified: new Date(), changeFrequency: "daily", priority: 0.95 },
-    { url: `${BASE_URL}/craciun`, lastModified: new Date(), changeFrequency: "daily", priority: 0.9 },
-    { url: `${BASE_URL}/gadgets`, lastModified: new Date(), changeFrequency: "daily", priority: 0.85 },
-    { url: `${BASE_URL}/moto`, lastModified: new Date(), changeFrequency: "daily", priority: 0.85 },
-    { url: `${BASE_URL}/idei-cadouri`, lastModified: new Date(), changeFrequency: "daily", priority: 0.85 },
-    { url: `${BASE_URL}/farmacie`, lastModified: new Date(), changeFrequency: "daily", priority: 0.85 },
-    { url: `${BASE_URL}/sport`, lastModified: new Date(), changeFrequency: "daily", priority: 0.85 },
-    { url: `${BASE_URL}/copii`, lastModified: new Date(), changeFrequency: "daily", priority: 0.85 },
-    { url: `${BASE_URL}/frumusete`, lastModified: new Date(), changeFrequency: "daily", priority: 0.85 },
-    { url: `${BASE_URL}/calatorie`, lastModified: new Date(), changeFrequency: "daily", priority: 0.8 },
-    { url: `${BASE_URL}/blog`, lastModified: new Date(), changeFrequency: "daily", priority: 0.8 },
-    { url: `${BASE_URL}/produse`, lastModified: new Date(), changeFrequency: "daily", priority: 0.85 },
-    { url: `${BASE_URL}/toate-magazinele`, lastModified: new Date(), changeFrequency: "daily", priority: 0.8 },
-    { url: `${BASE_URL}/categorii`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.7 },
-    { url: `${BASE_URL}/contact`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.5 },
-    { url: `${BASE_URL}/despre-noi`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.4 },
-    { url: `${BASE_URL}/confidentialitate`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.3 },
-    { url: `${BASE_URL}/termeni`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.3 },
+    // ─── Pagini principale ───────────────────────────────────────────────────
+    { url: BASE_URL,                             lastModified: new Date(), changeFrequency: "daily",   priority: 1.0 },
+    { url: `${BASE_URL}/black-friday`,           lastModified: new Date(), changeFrequency: "daily",   priority: 0.95 },
+    { url: `${BASE_URL}/produse`,                lastModified: new Date(), changeFrequency: "daily",   priority: 0.9 },
+    { url: `${BASE_URL}/toate-magazinele`,       lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
+    { url: `${BASE_URL}/categorii`,              lastModified: new Date(), changeFrequency: "weekly",  priority: 0.85 },
+    { url: `${BASE_URL}/blog`,                   lastModified: new Date(), changeFrequency: "daily",   priority: 0.8 },
+
+    // ─── Landing pages sezoniere & nisa ─────────────────────────────────────
+    { url: `${BASE_URL}/craciun`,                lastModified: new Date(), changeFrequency: "daily",   priority: 0.9 },
+    { url: `${BASE_URL}/farmacie`,               lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
+    { url: `${BASE_URL}/sport`,                  lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
+    { url: `${BASE_URL}/copii`,                  lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
+    { url: `${BASE_URL}/frumusete`,              lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
+    { url: `${BASE_URL}/gadgets`,                lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
+    { url: `${BASE_URL}/moto`,                   lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
+    { url: `${BASE_URL}/idei-cadouri`,           lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
+    { url: `${BASE_URL}/calatorie`,              lastModified: new Date(), changeFrequency: "daily",   priority: 0.8 },
+
+    // ─── Pagini nisa (/nisa/[slug]) ──────────────────────────────────────────
+    ...NISA_SLUGURI.map((slug) => ({
+      url: `${BASE_URL}/nisa/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: "daily" as const,
+      priority: 0.8,
+    })),
+
+    // ─── Pagini utilitare ────────────────────────────────────────────────────
+    { url: `${BASE_URL}/wishlist`,               lastModified: new Date(), changeFrequency: "weekly",  priority: 0.4 },
+    { url: `${BASE_URL}/contact`,                lastModified: new Date(), changeFrequency: "monthly", priority: 0.5 },
+    { url: `${BASE_URL}/despre-noi`,             lastModified: new Date(), changeFrequency: "monthly", priority: 0.4 },
+    { url: `${BASE_URL}/confidentialitate`,      lastModified: new Date(), changeFrequency: "monthly", priority: 0.3 },
+    { url: `${BASE_URL}/termeni`,                lastModified: new Date(), changeFrequency: "monthly", priority: 0.3 },
+
+    // ─── Categorii dinamice (/categorii/[slug]) ──────────────────────────────
     ...categoriiSluguri.map((slug) => ({
       url: `${BASE_URL}/categorii/${slug}`,
       lastModified: new Date(),
       changeFrequency: "daily" as const,
-      priority: 0.7,
+      priority: 0.75,
     })),
+
+    // ─── Blog posts ──────────────────────────────────────────────────────────
     ...blogPosts.map((p) => ({
       url: `${BASE_URL}/blog/${p.slug}`,
       lastModified: new Date(p.date),
       changeFrequency: "monthly" as const,
       priority: 0.6,
     })),
+
+    // ─── Pagini magazine (/cod-reducere/[magazin]) ────────────────────────────
     ...magazine.map((m) => ({
       url: `${BASE_URL}/cod-reducere/${m.magazin}`,
       lastModified: new Date(),
