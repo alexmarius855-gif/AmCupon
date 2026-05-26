@@ -116,31 +116,36 @@ def fetch_banners() -> list:
                 break
 
             print(f"  Pagina {page}: {len(items)} bannere")
+            # Debug: show keys of first banner to understand API structure
+            if items and page == 1:
+                print(f"  DEBUG keys: {list(items[0].keys())[:12]}")
+                first = items[0]
+                print(f"  DEBUG image_url={str(first.get('image_url',''))[:60]}")
+                print(f"  DEBUG code[:80]={str(first.get('code',''))[:80]}")
             for b in items:
                 # Extrage campurile relevante
                 prog = b.get("program", {}) or {}
                 code = b.get("code", "") or ""
 
-                # 1. Imagini reale: extrage <img src="..."> din HTML code
+                # 1. Extrage imaginea: prioritate <img src="..."> din HTML code
                 img_url = ""
                 if code:
                     m = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', code, re.IGNORECASE)
                     if m:
                         img_url = m.group(1)
 
-                # 2. Fallback: image_url doar daca e un fisier imagine real
+                # 2. Fallback: image_url (URL-decoded) — poate fi CDN fara extensie
                 if not img_url:
-                    raw_img = unquote(b.get("image_url", "") or b.get("image", "") or "")
-                    if raw_img and any(raw_img.lower().split("?")[0].endswith(ext)
-                                       for ext in (".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg")):
-                        img_url = raw_img
+                    raw = (b.get("image_url") or b.get("image") or
+                           b.get("banner_url") or b.get("preview") or "")
+                    img_url = unquote(raw).strip() if raw else ""
 
-                # 3. Extrage landing page din <a href="..."> din HTML sau din campuri dedicate
+                # 3. Extrage landing page: intai din <a href="..."> din HTML (are tracking)
                 landing = ""
                 if code:
                     m2 = re.search(r'<a[^>]+href=["\']([^"\']+)["\']', code, re.IGNORECASE)
                     if m2:
-                        landing = m2.group(1)  # deja contine tracking 2Performant
+                        landing = m2.group(1)
                 if not landing:
                     landing = (b.get("landing_page_url") or b.get("landing_page") or
                                b.get("affiliate_url") or prog.get("main_url", "") or "")
@@ -158,8 +163,9 @@ def fetch_banners() -> list:
                     "id":            b.get("id", ""),
                     "image_url":     img_url,
                     # Daca landing-ul contine deja tracking 2performant, il folosim direct
-                    "landing_url":   landing if "2performant.com" in landing or "event.2performant" in landing
-                                     else (make_afiliat_url(landing) if landing else ""),
+                    "landing_url":   (landing if ("2performant.com" in landing or
+                                                   "event.2performant" in landing)
+                                     else (make_afiliat_url(landing) if landing else "")),
                     "landing_raw":   landing,
                     "width":         int(width) if width else 0,
                     "height":        int(height) if height else 0,
