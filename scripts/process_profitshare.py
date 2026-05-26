@@ -36,7 +36,13 @@ AFFILIATE_KEY      = os.environ.get("PROFITSHARE_KEY", "")
 
 OUTPUT_FILE = "../data/profitshare_output.json"
 
-BASE_URL = "http://api.profitshare.ro"
+BASE_URL = "https://api.profitshare.ro"
+
+# ─── API ENDPOINTS (noua documentatie: doc.profitshare.com/advertisers/docs/) ─
+# Endpoint-uri afiliat (testate ambele variante: cu si fara prefix "affiliate-")
+ENDPOINT_ADVERTISERS  = "affiliate-advertisers"   # sau "advertisers"
+ENDPOINT_CAMPAIGNS    = "affiliate-campaigns"      # sau "campaigns" / "vouchers"
+ENDPOINT_PROMOTIONS   = "affiliate-promotions"     # backup
 
 # ─── MAPARE CATEGORII (Profitshare -> formatul nostru) ────────────────────────
 CATEGORY_MAP = {
@@ -139,12 +145,18 @@ def ps_get(api_name: str, params: dict = None) -> dict | list | None:
     from datetime import datetime, timezone
 
     date_str = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S GMT")
-    query_string = unquote(urlencode(params)) if params else ""
+    # Parametrii in ordinea originala (PHP http_build_query nu sorteaza)
+    query_string = unquote(urlencode(params or {})) if params else ""
 
-    string_to_sign = f"GET{api_name}/?{query_string}/{AFFILIATE_USERNAME}{date_str}"
+    # Din documentatia oficiala Profitshare (doc.profitshare.com):
+    # signature_string = "$request_type$route" . $query_string . '/' . PS_API_USER . $date
+    # Unde $route include "/{api_name}/?", ex: "/affiliate-advertisers/?"
+    route = f"/{api_name}/?"
+    string_to_sign = f"GET{route}{query_string}/{AFFILIATE_USERNAME}{date_str}"
+
     signature = hmac_mod.new(
-        AFFILIATE_KEY.encode(),
-        string_to_sign.encode(),
+        AFFILIATE_KEY.encode("utf-8"),
+        string_to_sign.encode("utf-8"),
         hashlib.sha1,
     ).hexdigest()
 
@@ -174,16 +186,39 @@ def ps_get(api_name: str, params: dict = None) -> dict | list | None:
 
 
 def load_programs() -> list[dict]:
-    """Descarca toate programele (magazinele) active."""
+    """Descarca toate programele (magazinele) active — incearca mai multe endpoint-uri."""
     print("  Descarc programe Profitshare...")
     all_programs = []
-    page = 1
 
+    # Incearca endpoint-urile in ordine (noul API vs vechiul)
+    endpoint_candidates = [
+        ENDPOINT_ADVERTISERS,           # affiliate-advertisers (PHP SDK vechi)
+        "advertisers",                  # fara prefix (docs noi)
+        "affiliate-programs",           # varianta alternativa
+    ]
+
+    working_endpoint = None
+    for ep in endpoint_candidates:
+        test = ps_get(ep, {"results_per_page": 5, "page": 1})
+        if test is not None and test != []:
+            working_endpoint = ep
+            print(f"    Endpoint functional: {ep}")
+            break
+        elif test == []:
+            working_endpoint = ep  # Merge dar 0 rezultate (cont nou)
+            print(f"    Endpoint accesibil (0 programe): {ep}")
+            break
+
+    if working_endpoint is None:
+        print("    Niciun endpoint functional — credentiale invalide sau cont nou")
+        return []
+
+    page = 1
     while True:
-        data = ps_get("affiliate-programs", {"results_per_page": 100, "page": page})
+        data = ps_get(working_endpoint, {"results_per_page": 100, "page": page})
         if not data:
             break
-        programs = data if isinstance(data, list) else data.get("programs", data.get("result", []))
+        programs = data if isinstance(data, list) else data.get("programs", data.get("result", data.get("data", [])))
         if not programs:
             break
         all_programs.extend(programs)
@@ -199,13 +234,26 @@ def load_promotions() -> list[dict]:
     """Descarca toate promotiile active."""
     print("  Descarc promotii Profitshare...")
     all_promos = []
-    page = 1
 
+    # Detecteaza endpoint-ul functional pentru promotii
+    ep_promos = None
+    for ep_try in [ENDPOINT_CAMPAIGNS, "campaigns", "vouchers", ENDPOINT_PROMOTIONS]:
+        test = ps_get(ep_try, {"results_per_page": 5, "page": 1})
+        if test is not None:
+            ep_promos = ep_try
+            print(f"    Endpoint promotii: {ep_try}")
+            break
+
+    if ep_promos is None:
+        print("    Niciun endpoint promotii functional")
+        return []
+
+    page = 1
     while True:
-        data = ps_get("affiliate-promotions", {"results_per_page": 200, "page": page})
+        data = ps_get(ep_promos, {"results_per_page": 200, "page": page})
         if not data:
             break
-        promos = data if isinstance(data, list) else data.get("promotions", data.get("result", []))
+        promos = data if isinstance(data, list) else data.get("promotions", data.get("result", data.get("data", [])))
         if not promos:
             break
 
