@@ -103,7 +103,23 @@ jobs:
         working-directory: scripts
         run: python generate_best_of.py
 
-      # ── 8. Commit & Push ───────────────────────────────────────────────────
+      # ── 9. Newsletter zilnic (Brevo) ──────────────────────────────────────
+      - name: Trimite newsletter zilnic
+        working-directory: scripts
+        env:
+          BREVO_API_KEY:      ${{ secrets.BREVO_API_KEY }}
+          BREVO_LIST_ID:      ${{ secrets.BREVO_LIST_ID }}
+          BREVO_SENDER_EMAIL: newsletter@amcupon.ro
+          BREVO_SENDER_NAME:  AmCupon.ro
+        run: |
+          if [ -n "$BREVO_API_KEY" ]; then
+            echo "Trimite newsletter via Brevo..."
+            python send_newsletter.py
+          else
+            echo "BREVO_API_KEY nu e setat — skip newsletter"
+          fi
+
+      # ── 10. Commit & Push ──────────────────────────────────────────────────
       - name: Commit si push date actualizate
         run: |
           git config user.name  "github-actions[bot]"
