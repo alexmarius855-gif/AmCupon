@@ -1,5 +1,8 @@
 # AmCupon.ro — Extensie Chrome
 
+**Extension ID:** `mahfankpalkgognhnllkgdkjncmmkllb`
+**Chrome Web Store:** https://chromewebstore.google.com/detail/mahfankpalkgognhnllkgdkjncmmkllb
+
 Extensie Chrome (Manifest V3) care detecteaza automat magazinul pe care il vizitezi
 si afiseaza codurile de reducere + ofertele disponibile pe AmCupon.ro.
 
@@ -34,12 +37,11 @@ extension/
 4. **Matching**: compara domeniul cu `magazin` + `url_real` din output.json
 5. **Afiseaza**: cod cupon + promotie + cashback + link afiliat
 
-## Publicare pe Chrome Web Store (optional)
+## Chrome Web Store
 
-1. Creeaza cont developer: https://chrome.google.com/webstore/devconsole
-2. Taxa unica: $5 USD
-3. Zip folderul `extension/`, upload in dashboard
-4. Review: 1-3 zile lucratoare
+**Status:** In review (1-3 zile lucratoare)
+**Link public:** https://chromewebstore.google.com/detail/mahfankpalkgognhnllkgdkjncmmkllb
+**Developer console:** https://chrome.google.com/webstore/devconsole
 
 ## Environment
 

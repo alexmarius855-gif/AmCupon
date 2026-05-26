@@ -111,6 +111,15 @@ Quicklinks: `https://event.2performant.com/events/click?ad_type=quicklink&aff_co
 
 ---
 
+## Chrome Extension
+
+- **Extension ID:** `mahfankpalkgognhnllkgdkjncmmkllb`
+- **Web Store:** https://chromewebstore.google.com/detail/mahfankpalkgognhnllkgdkjncmmkllb
+- **Status:** In review (trimis 2026-05-26)
+- **Cod sursa:** `extension/` folder
+
+---
+
 ## GitHub Secrets
 
 | Secret | Valoare |
@@ -118,8 +127,10 @@ Quicklinks: `https://event.2performant.com/events/click?ad_type=quicklink&aff_co
 | `TWOPEFORMANT_EMAIL` | alexmarius855@gmail.com |
 | `TWOPEFORMANT_PASS` | parola cont 2Performant |
 | `TWOPEFORMANT_USER` | 541547473 (AFF_CODE pentru quicklinks) |
-| `PROFITSHARE_USER` | opțional |
-| `PROFITSHARE_KEY` | opțional |
+| `PROFITSHARE_USER` | marinescu_alex_marius_6a1454f45dc33 |
+| `PROFITSHARE_KEY` | 4e57ac2e62b978256949426d88ede8b61c8a7f86 |
+| `BREVO_SMTP_USER` | ac67f7001@smtp-brevo.com |
+| `BREVO_SMTP_PASS` | xsmtpsib-... (in GitHub Secrets) |
 
 ---
 
