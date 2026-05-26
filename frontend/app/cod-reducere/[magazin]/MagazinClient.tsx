@@ -123,117 +123,103 @@ export default function MagazinClient({ magazin: m, produse = [] }: { magazin: M
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* HEADER */}
-      <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
+      {/* ── HEADER dark ────────────────────────────────────────────────── */}
+      <header className="bg-slate-900 border-b border-slate-800 sticky top-0 z-50">
         <div className="max-w-5xl mx-auto px-4 py-3 flex items-center gap-3">
           <a href="/" className="flex items-center gap-1.5 shrink-0">
             <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
-            <span className="font-black text-gray-900 text-xl">Cupon</span>
+            <span className="font-black text-white text-xl">Cupon</span>
             <span className="text-orange-500 font-black text-xl">.ro</span>
           </a>
+          <span className="text-slate-600">/</span>
+          <a href="/toate-magazinele" className="text-sm text-slate-400 hover:text-white transition-colors">Magazine</a>
+          <span className="text-slate-600">/</span>
+          <span className="text-sm font-semibold text-slate-300 truncate max-w-[160px]">{nume}</span>
         </div>
       </header>
 
-      {/* BREADCRUMB */}
-      <nav
-        aria-label="Breadcrumb"
-        className="bg-white border-b border-gray-100"
-      >
-        <div className="max-w-5xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-gray-400 flex-wrap">
-          <a href="/" className="hover:text-orange-500 transition-colors flex items-center gap-1">
-            <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
-            </svg>
-            Acasă
-          </a>
-          <svg className="w-3 h-3 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
-          <a href="/toate-magazinele" className="hover:text-orange-500 transition-colors">
-            Magazine
-          </a>
-          <svg className="w-3 h-3 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
-          <span className="text-gray-700 font-medium">Cod Reducere {nume}</span>
+      {/* ── HERO dark ──────────────────────────────────────────────────── */}
+      <div className="bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800 border-b border-slate-700 py-10 px-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+
+            {/* Logo */}
+            <div className="w-24 h-24 rounded-2xl overflow-hidden flex items-center justify-center bg-white border border-slate-700 p-1.5 shrink-0 shadow-xl shadow-black/30">
+              {m.logo_url && imgOk ? (
+                <img
+                  src={m.logo_url}
+                  alt={`Logo ${nume}`}
+                  className="w-full h-full object-contain"
+                  onError={() => setImgOk(false)}
+                />
+              ) : (
+                <div className={`w-full h-full rounded-xl ${culoare} flex items-center justify-center`}>
+                  <span className="text-white font-black text-4xl">{initiala}</span>
+                </div>
+              )}
+            </div>
+
+            {/* Info */}
+            <div className="flex-1 text-center sm:text-left">
+              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 mb-1">
+                <h1 className="text-2xl md:text-3xl font-black text-white">
+                  Cod Reducere {nume} {an}
+                </h1>
+                {m.rank && m.rank <= 20 && (
+                  <span className="text-xs font-bold bg-yellow-400/20 text-yellow-300 border border-yellow-400/30 px-2 py-0.5 rounded-full">
+                    Top #{m.rank} Romania
+                  </span>
+                )}
+                {m.exclusiv && (
+                  <span className="text-xs font-bold bg-orange-500 text-white px-2 py-0.5 rounded-full">
+                    Exclusiv
+                  </span>
+                )}
+              </div>
+              <p className="text-slate-400 text-sm mb-4">{m.categorie}</p>
+
+              {/* Stats pills */}
+              <div className="flex flex-wrap justify-center sm:justify-start gap-2 mb-5">
+                {m.promotii.length > 0 && (
+                  <div className="flex items-center gap-1.5 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold px-3 py-1.5 rounded-full">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                    {m.promotii.length} {m.promotii.length === 1 ? "oferta activa" : "oferte active"}
+                  </div>
+                )}
+                {m.cod_cupon && (
+                  <div className="flex items-center gap-1.5 bg-orange-500/10 border border-orange-500/20 text-orange-400 text-xs font-bold px-3 py-1.5 rounded-full">
+                    🎟 {m.procent_succes}% rata succes
+                  </div>
+                )}
+                {m.folosit_de > 0 && (
+                  <div className="flex items-center gap-1.5 bg-slate-700/60 border border-slate-600 text-slate-300 text-xs font-semibold px-3 py-1.5 rounded-full">
+                    👤 Folosit de {m.folosit_de}x
+                  </div>
+                )}
+                {m.trend > 0 && (
+                  <div className="flex items-center gap-1.5 bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-semibold px-3 py-1.5 rounded-full">
+                    ↑ Trending +{m.trend}%
+                  </div>
+                )}
+              </div>
+
+              <a
+                href={m.url_afiliat || m.url}
+                target="_blank"
+                rel="sponsored noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-400 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-colors shadow-lg shadow-orange-500/25"
+              >
+                Viziteaza {nume}
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
-      </nav>
+      </div>
 
       <div className="max-w-5xl mx-auto px-4 py-8">
-
-        {/* PROFIL MAGAZIN */}
-        <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-6 mb-8 flex flex-col sm:flex-row items-center sm:items-start gap-6">
-          <div className="w-24 h-24 rounded-2xl overflow-hidden flex items-center justify-center bg-gray-50 border border-gray-100 p-1 shrink-0">
-            {m.logo_url && imgOk ? (
-              <img
-                src={m.logo_url}
-                alt={`Logo ${nume}`}
-                className="w-full h-full object-contain"
-                onError={() => setImgOk(false)}
-              />
-            ) : (
-              <div className={`w-full h-full rounded-xl ${culoare} flex items-center justify-center`}>
-                <span className="text-white font-black text-4xl">{initiala}</span>
-              </div>
-            )}
-          </div>
-
-          <div className="flex-1 text-center sm:text-left">
-            <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 mb-1">
-              <h1 className="text-2xl font-black text-gray-900">
-                Cod Reducere {nume} {an}
-              </h1>
-              {m.rank && m.rank <= 20 && (
-                <span className="text-xs font-bold bg-yellow-100 text-yellow-700 px-2 py-0.5 rounded-full">
-                  Top #{m.rank} Romania
-                </span>
-              )}
-              {m.exclusiv && (
-                <span className="text-xs font-bold bg-orange-500 text-white px-2 py-0.5 rounded-full">
-                  Exclusiv
-                </span>
-              )}
-            </div>
-            <p className="text-gray-500 text-sm mb-3">{m.categorie}</p>
-
-            <div className="flex flex-wrap justify-center sm:justify-start gap-4 text-sm mb-4">
-              {m.cod_cupon && (
-                <div className="flex items-center gap-1">
-                  <span className="text-green-500">✓</span>
-                  <span className="font-semibold text-green-600">{m.procent_succes}% rată succes</span>
-                </div>
-              )}
-              {m.folosit_de > 0 && (
-                <div>
-                  <span className="text-gray-400">Folosit de </span>
-                  <span className="font-semibold text-gray-700">{m.folosit_de}x</span>
-                </div>
-              )}
-              {m.trend > 0 && (
-                <div>
-                  <span className="text-purple-500">↑ Trending </span>
-                  <span className="font-semibold text-purple-600">+{m.trend}%</span>
-                </div>
-              )}
-              <div>
-                <span className="text-gray-400">Promoții active: </span>
-                <span className="font-semibold text-orange-600">{m.promotii.length}</span>
-              </div>
-            </div>
-
-            <a
-              href={m.url_afiliat || m.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-colors"
-            >
-              Vizitează {nume}
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </a>
-          </div>
-        </div>
 
         {/* PROMOTII */}
         {m.promotii.length > 0 ? (
