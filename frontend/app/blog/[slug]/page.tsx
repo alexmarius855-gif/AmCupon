@@ -1,3 +1,4 @@
+import React from "react";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -32,32 +33,54 @@ function formatDate(dateStr: string): string {
   });
 }
 
+/** Parseza bold + linkuri markdown inline: **bold** si [text](url) */
+function parseInline(text: string, baseKey: string): React.ReactNode[] {
+  const nodes: React.ReactNode[] = [];
+  const regex = /\*\*(.*?)\*\*|\[([^\]]+)\]\(([^)]+)\)/g;
+  let last = 0;
+  let match;
+  let i = 0;
+  while ((match = regex.exec(text)) !== null) {
+    if (match.index > last) nodes.push(text.slice(last, match.index));
+    if (match[1] !== undefined) {
+      nodes.push(<strong key={`${baseKey}-b${i}`}>{match[1]}</strong>);
+    } else if (match[2] && match[3]) {
+      const isExt = match[3].startsWith("http");
+      nodes.push(
+        <a key={`${baseKey}-l${i}`} href={match[3]}
+          className="text-orange-500 hover:text-orange-600 underline underline-offset-2 font-medium"
+          {...(isExt ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
+          {match[2]}
+        </a>
+      );
+    }
+    last = match.index + match[0].length;
+    i++;
+  }
+  if (last < text.length) nodes.push(text.slice(last));
+  return nodes;
+}
+
 function renderContent(content: string) {
   return content.split("\n\n").map((block, i) => {
+    const key = `b${i}`;
     if (block.startsWith("## ")) {
-      return <h2 key={i} className="text-xl font-black text-gray-900 mt-8 mb-3">{block.slice(3)}</h2>;
+      return <h2 key={key} className="text-xl font-black text-gray-900 mt-8 mb-3">{parseInline(block.slice(3), key)}</h2>;
     }
     if (block.startsWith("### ")) {
-      return <h3 key={i} className="text-lg font-bold text-gray-900 mt-6 mb-2">{block.slice(4)}</h3>;
+      return <h3 key={key} className="text-lg font-bold text-gray-900 mt-6 mb-2">{parseInline(block.slice(4), key)}</h3>;
     }
     if (block.startsWith("- ") || block.includes("\n- ")) {
       const items = block.split("\n").filter((l) => l.startsWith("- ")).map((l) => l.slice(2));
       return (
-        <ul key={i} className="list-disc list-inside space-y-1.5 my-4 text-gray-700">
-          {items.map((item, j) => {
-            const parts = item.split(/\*\*(.*?)\*\*/g);
-            return (
-              <li key={j}>
-                {parts.map((part, k) => k % 2 === 1 ? <strong key={k}>{part}</strong> : part)}
-              </li>
-            );
-          })}
+        <ul key={key} className="list-disc list-inside space-y-1.5 my-4 text-gray-700">
+          {items.map((item, j) => (
+            <li key={j}>{parseInline(item, `${key}-li${j}`)}</li>
+          ))}
         </ul>
       );
     }
-    const parts = block.split(/\*\*(.*?)\*\*/g);
-    const rendered = parts.map((part, k) => k % 2 === 1 ? <strong key={k}>{part}</strong> : part);
-    return <p key={i} className="text-gray-700 leading-relaxed my-3">{rendered}</p>;
+    return <p key={key} className="text-gray-700 leading-relaxed my-3">{parseInline(block, key)}</p>;
   });
 }
 
