@@ -110,71 +110,37 @@ def fetch_banners() -> list:
 
             data = resp.json()
 
-            # Debug: salveaza raspunsul raw prima pagina ca sa intelegem structura
-            if page == 1:
-                script_dir  = os.path.dirname(os.path.abspath(__file__))
-                debug_path  = os.path.join(script_dir, "..", "data", "banners_raw_debug.json")
-                os.makedirs(os.path.dirname(debug_path), exist_ok=True)
-                with open(debug_path, "w", encoding="utf-8") as dbg:
-                    raw_sample = data if isinstance(data, list) else data
-                    # Salveaza primele 3 bannere raw
-                    if isinstance(raw_sample, list):
-                        json.dump(raw_sample[:3], dbg, ensure_ascii=False, indent=2)
-                    elif isinstance(raw_sample, dict):
-                        # truncate lists la 3 items
-                        compact = {}
-                        for k, v in raw_sample.items():
-                            compact[k] = v[:3] if isinstance(v, list) else v
-                        json.dump(compact, dbg, ensure_ascii=False, indent=2)
-                print(f"  DEBUG raw salvat in data/banners_raw_debug.json")
-
-            items = data if isinstance(data, list) else next(
-                (v for v in data.values() if isinstance(v, list)), []
+            # API returneaza {"banners": [...], "metadata": {...}}
+            items = data.get("banners", []) if isinstance(data, dict) else (
+                data if isinstance(data, list) else []
             )
-
-            # Debug: print keys si fields
-            print(f"  Tip date: {type(data).__name__}")
-            if isinstance(data, dict):
-                print(f"  Dict keys: {list(data.keys())}")
-            print(f"  Items gasite: {len(items)}")
             if not items:
+                print(f"  Niciun banner pe pagina {page}")
                 break
 
             print(f"  Pagina {page}: {len(items)} bannere")
-            if items and page == 1:
-                first = items[0]
-                print(f"  DEBUG keys: {list(first.keys())[:15]}")
-                print(f"  DEBUG image_url={str(first.get('image_url',''))[:80]}")
-                print(f"  DEBUG code[:100]={str(first.get('code',''))[:100]}")
-                print(f"  DEBUG preview={str(first.get('preview',''))[:80]}")
-                print(f"  DEBUG source_url={str(first.get('source_url',''))[:80]}")
             for b in items:
-                # Extrage campurile relevante
-                prog = b.get("program", {}) or {}
-                code = b.get("code", "") or ""
+                # Campuri corecte ale API-ului 2Performant:
+                # img_path    → URL imagine banner (CDN img.2performant.com)
+                # link        → URL tracking afiliat (event.2performant.com, contine aff_code)
+                # url         → URL-encoded landing page (URL destinatie)
+                # markup      → HTML complet <a href="link"><img src="img_path"/></a>
+                prog    = b.get("program", {}) or {}
+                img_url = b.get("img_path", "") or ""
 
-                # 1. Extrage imaginea: prioritate <img src="..."> din HTML code
-                img_url = ""
-                if code:
-                    m = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', code, re.IGNORECASE)
+                # Fallback: extrage src din markup HTML daca img_path lipseste
+                if not img_url:
+                    markup = b.get("markup", "") or ""
+                    m = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', markup, re.IGNORECASE)
                     if m:
                         img_url = m.group(1)
 
-                # 2. Fallback: image_url (URL-decoded) — poate fi CDN fara extensie
-                if not img_url:
-                    raw = (b.get("image_url") or b.get("image") or
-                           b.get("banner_url") or b.get("preview") or "")
-                    img_url = unquote(raw).strip() if raw else ""
-
-                # 3. Extrage landing page: intai din <a href="..."> din HTML (are tracking)
-                landing = ""
-                if code:
-                    m2 = re.search(r'<a[^>]+href=["\']([^"\']+)["\']', code, re.IGNORECASE)
-                    if m2:
-                        landing = m2.group(1)
+                # Link afiliat: campul "link" contine deja aff_code si tracking
+                landing = b.get("link", "") or ""
                 if not landing:
-                    landing = (b.get("landing_page_url") or b.get("landing_page") or
-                               b.get("affiliate_url") or prog.get("main_url", "") or "")
+                    # Fallback: decode url + quicklink
+                    raw_url = unquote(b.get("url", "") or prog.get("main_url", "") or "")
+                    landing = make_afiliat_url(raw_url) if raw_url else ""
 
                 width  = b.get("width") or b.get("banner_width") or 0
                 height = b.get("height") or b.get("banner_height") or 0
@@ -188,16 +154,15 @@ def fetch_banners() -> list:
                 banners.append({
                     "id":            b.get("id", ""),
                     "image_url":     img_url,
-                    # Daca landing-ul contine deja tracking 2performant, il folosim direct
-                    "landing_url":   (landing if ("2performant.com" in landing or
-                                                   "event.2performant" in landing)
-                                     else (make_afiliat_url(landing) if landing else "")),
-                    "landing_raw":   landing,
+                    "landing_url":   landing,  # contine deja tracking aff_code
+                    "landing_raw":   unquote(b.get("url", "") or ""),
                     "width":         int(width) if width else 0,
                     "height":        int(height) if height else 0,
                     "merchant":      merchant_name,
                     "merchant_slug": (prog.get("slug") or merchant_name.lower().replace(" ", "-")),
-                    "name":          b.get("name", "") or b.get("title", ""),
+                    "name":          b.get("name", "") or b.get("title", "") or b.get("category", ""),
+                    "category":      b.get("category", ""),
+                    "b_type":        b.get("b_type", "image"),
                 })
 
             if len(items) < 50:
