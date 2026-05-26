@@ -110,9 +110,21 @@ interface BlogPost {
   cover: string;
 }
 
+interface Banner {
+  id: string;
+  image_url: string;
+  landing_url: string;
+  width: number;
+  height: number;
+  merchant: string;
+  merchant_slug: string;
+  name: string;
+}
+
 export default function Home() {
   const [magazine, setMagazine] = useState<Magazin[]>([]);
   const [blogPosts, setBlogPosts] = useState<BlogPost[]>([]);
+  const [banners, setBanners] = useState<Banner[]>([]);
   const [loading, setLoading] = useState(true);
   const [cautare, setCautare] = useState("");
   const [coduriReveal, setCoduriReveal] = useState<Set<string>>(new Set());
@@ -125,7 +137,12 @@ export default function Home() {
   useEffect(() => {
     fetch("/output.json").then((r) => r.json()).then((data) => { setMagazine(data); setLoading(false); });
     fetch("/blog-posts.json").then((r) => r.json()).then((posts: BlogPost[]) => setBlogPosts(posts.slice(0, 3))).catch(() => {});
-    // Încarcă favorite din localStorage
+    fetch("/banners.json").then((r) => r.json()).then((data) => {
+      const list: Banner[] = data?.banners || data || [];
+      // Preferă bannere 300x250 sau orice cu imagine
+      const filtered = list.filter((b) => b.image_url && b.landing_url);
+      setBanners(filtered.slice(0, 8));
+    }).catch(() => {});
     try {
       const saved = JSON.parse(localStorage.getItem("favorite_magazine") || "[]");
       setFavorite(new Set(saved));
@@ -685,6 +702,39 @@ export default function Home() {
                   </a>
                 );
               })}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* BANNERE CAMPANII PARTENERE */}
+      {banners.length > 0 && (
+        <div className="bg-gray-50 border-b border-gray-100 py-8 px-4">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex items-center justify-between mb-5">
+              <div className="flex items-center gap-2">
+                <h2 className="text-lg font-black text-gray-700">Oferte partenere</h2>
+                <span className="text-xs text-gray-400 bg-gray-200 px-2 py-0.5 rounded-full">Publicitate</span>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+              {banners.slice(0, 8).map((b, i) => (
+                <a key={b.id || i} href={b.landing_url} target="_blank" rel="sponsored noopener noreferrer"
+                  title={b.name || b.merchant}
+                  className="group relative overflow-hidden rounded-2xl border border-gray-200 hover:border-orange-300 hover:shadow-lg transition-all duration-200 bg-white block">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={b.image_url}
+                    alt={b.name || b.merchant || "Ofertă partener"}
+                    className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                    onError={(e) => { (e.target as HTMLImageElement).closest("a")?.remove(); }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-end p-3">
+                    <span className="text-white text-xs font-bold truncate">{b.merchant}</span>
+                  </div>
+                </a>
+              ))}
             </div>
           </div>
         </div>

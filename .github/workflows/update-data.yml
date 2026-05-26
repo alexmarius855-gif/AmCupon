@@ -77,7 +77,22 @@ jobs:
             echo "TWOPEFORMANT_EMAIL nu e setat — skip product feeds"
           fi
 
-      # ── 7. Blog automat ────────────────────────────────────────────────────
+      # ── 7. Bannere campanii (2Performant) ────────────────────────────────────
+      - name: Fetch bannere campanii (2Performant API)
+        working-directory: scripts
+        env:
+          TWOPEFORMANT_USER:  ${{ secrets.TWOPEFORMANT_USER }}
+          TWOPEFORMANT_EMAIL: ${{ secrets.TWOPEFORMANT_EMAIL }}
+          TWOPEFORMANT_PASS:  ${{ secrets.TWOPEFORMANT_PASS }}
+        run: |
+          if [ -n "$TWOPEFORMANT_EMAIL" ]; then
+            echo "Ruleaza fetch_banners..."
+            python fetch_banners.py
+          else
+            echo "TWOPEFORMANT_EMAIL nu e setat — skip bannere"
+          fi
+
+      # ── 8. Blog automat ────────────────────────────────────────────────────
       - name: Genereaza articole blog din promotii active
         working-directory: scripts
         run: python generate_blog.py
@@ -95,6 +110,7 @@ jobs:
           git add frontend/public/output.json      || true
           git add frontend/public/blog-posts.json  || true
           git add frontend/public/products.json    || true
+          git add frontend/public/banners.json     || true
           git add data/output.json                 || true
           git add data/profitshare_output.json     || true
 
