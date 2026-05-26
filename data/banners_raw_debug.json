@@ -1,0 +1,1732 @@
+{
+  "banners": [
+    {
+      "id": 270050,
+      "img_path": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270009/original/270009.jpg",
+      "dimensions": "1080x1920",
+      "category": "2+1 la cartea pentru copii și manga",
+      "friendly_type": "JPEG",
+      "width": 1080,
+      "height": 1920,
+      "unique_code": "b6062cdee",
+      "url": "https%3A%2F%2Fcarturesti.ro%2Foffer%2Ftarg-de-o-schioapa-2026-carte-6595",
+      "b_type": "image",
+      "conversion_rate": 0,
+      "created_at": "2026-05-26T13:37:53Z",
+      "program": {
+        "name": "carturesti.ro ",
+        "slug": "carturesti-ro",
+        "unique_code": "07b5f0fed"
+      },
+      "link": "https://event.2performant.com/events/click?ad_type=banner&unique=b6062cdee&aff_code=541547473&campaign_unique=07b5f0fed",
+      "markup": "<a href=\"https://event.2performant.com/events/click?ad_type=banner&unique=b6062cdee&aff_code=541547473&campaign_unique=07b5f0fed\" target=\"_blank\" rel=\"nofollow\"><img src=\"https://img.2performant.com/system/paperclip/banner_pictures/pics/270009/original/270009.jpg\" alt=\"carturesti.ro \" title=\"carturesti.ro \" border=\"0\" height=\"1920px\" width=\"1080px\" /></a>"
+    },
+    {
+      "id": 270049,
+      "img_path": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270008/original/270008.jpg",
+      "dimensions": "1080x1350",
+      "category": "2+1 la cartea pentru copii și manga",
+      "friendly_type": "JPEG",
+      "width": 1080,
+      "height": 1350,
+      "unique_code": "d60509be0",
+      "url": "https%3A%2F%2Fcarturesti.ro%2Foffer%2Ftarg-de-o-schioapa-2026-carte-6595",
+      "b_type": "image",
+      "conversion_rate": 0,
+      "created_at": "2026-05-26T13:37:45Z",
+      "program": {
+        "name": "carturesti.ro ",
+        "slug": "carturesti-ro",
+        "unique_code": "07b5f0fed"
+      },
+      "link": "https://event.2performant.com/events/click?ad_type=banner&unique=d60509be0&aff_code=541547473&campaign_unique=07b5f0fed",
+      "markup": "<a href=\"https://event.2performant.com/events/click?ad_type=banner&unique=d60509be0&aff_code=541547473&campaign_unique=07b5f0fed\" target=\"_blank\" rel=\"nofollow\"><img src=\"https://img.2performant.com/system/paperclip/banner_pictures/pics/270008/original/270008.jpg\" alt=\"carturesti.ro \" title=\"carturesti.ro \" border=\"0\" height=\"1350px\" width=\"1080px\" /></a>"
+    },
+    {
+      "id": 270048,
+      "img_path": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270007/original/270007.jpg",
+      "dimensions": "1200x1200",
+      "category": "2+1 la cartea pentru copii și manga",
+      "friendly_type": "JPEG",
+      "width": 1200,
+      "height": 1200,
+      "unique_code": "91e0c745a",
+      "url": "https%3A%2F%2Fcarturesti.ro%2Foffer%2Ftarg-de-o-schioapa-2026-carte-6595",
+      "b_type": "image",
+      "conversion_rate": 0,
+      "created_at": "2026-05-26T13:37:37Z",
+      "program": {
+        "name": "carturesti.ro ",
+        "slug": "carturesti-ro",
+        "unique_code": "07b5f0fed"
+      },
+      "link": "https://event.2performant.com/events/click?ad_type=banner&unique=91e0c745a&aff_code=541547473&campaign_unique=07b5f0fed",
+      "markup": "<a href=\"https://event.2performant.com/events/click?ad_type=banner&unique=91e0c745a&aff_code=541547473&campaign_unique=07b5f0fed\" target=\"_blank\" rel=\"nofollow\"><img src=\"https://img.2performant.com/system/paperclip/banner_pictures/pics/270007/original/270007.jpg\" alt=\"carturesti.ro \" title=\"carturesti.ro \" border=\"0\" height=\"1200px\" width=\"1200px\" /></a>"
+    }
+  ],
+  "metadata": {
+    "facets": {
+      "search": {
+        "category": [
+          {
+            "value": "",
+            "count": 772
+          },
+          {
+            "value": "-80 % STAR RUSH, CELEBRITY SECRET BAG GRATUIT",
+            "count": 70
+          },
+          {
+            "value": "-80% BLACK FRIDAY,SECRET BEAUTY BAG GRATUIT",
+            "count": 51
+          },
+          {
+            "value": "-80% STAR EASTER, CELEBRITY SECRET BAG GRATUIT",
+            "count": 80
+          },
+          {
+            "value": "-80% STAR MUST-HAVE, CELEBRITY SECRET BEAUTY BAG GRATUIT",
+            "count": 106
+          },
+          {
+            "value": "-80% STAR NEW YEAR,SECRET BEAUTY BAG GRATUIT",
+            "count": 57
+          },
+          {
+            "value": "-80% STAR RUSH, CELEBRITY SECRET BAG GRATUIT",
+            "count": 63
+          },
+          {
+            "value": "-80% STAR VALENTINE'S,SECRET BEAUTY BAG GRATUIT",
+            "count": 94
+          },
+          {
+            "value": "-80% STAR WINTER GLAM,SECRET BEAUTY BAG GRATUIT",
+            "count": 54
+          },
+          {
+            "value": "-80% STAR WOMEN'S GIFT,SECRET BEAUTY BAG GRATUIT",
+            "count": 115
+          },
+          {
+            "value": "-80% STAR XMAS,SECRET CELEBARITY BAG GRATUIT",
+            "count": 72
+          },
+          {
+            "value": "-80% STAR XMAS,SECRET CELEBRITY BAG GRATUIT",
+            "count": 72
+          },
+          {
+            "value": "-80% black friday,secret beauty bag gratuit",
+            "count": 49
+          },
+          {
+            "value": "1 + 1 Cadou",
+            "count": 130
+          },
+          {
+            "value": "2 + 1 Cadou",
+            "count": 94
+          },
+          {
+            "value": "23 OCTOMBRIE 2024: Reduceri maniace de 23% la întreaga gamă Crocs",
+            "count": 42
+          },
+          {
+            "value": "35% reducere 10 titluri in precomanda 1-15 aprilie 2024",
+            "count": 53
+          },
+          {
+            "value": "APRILIE 2024: Livrare gratuită cu codul CULOARE",
+            "count": 86
+          },
+          {
+            "value": "APRILIE 2025: Colecții noi de primăvară și LIVRARE GRATUITĂ!",
+            "count": 118
+          },
+          {
+            "value": "AUGUST 2024: Noutati si livrare gratuita cu codul FESTIVAL",
+            "count": 135
+          },
+          {
+            "value": "BACK2SCHOOL - Reduceri maniace de 15% - septembrie 2023",
+            "count": 102
+          },
+          {
+            "value": "Back To School",
+            "count": 43
+          },
+          {
+            "value": "Back to school",
+            "count": 103
+          },
+          {
+            "value": "Bannere generale",
+            "count": 107
+          },
+          {
+            "value": "Bannere permanente",
+            "count": 53
+          },
+          {
+            "value": "Black Friday",
+            "count": 468
+          },
+          {
+            "value": "Black Friday 2020",
+            "count": 46
+          },
+          {
+            "value": "Black Friday 2023",
+            "count": 54
+          },
+          {
+            "value": "Black Friday 2024",
+            "count": 64
+          },
+          {
+            "value": "Black Friday 2025",
+            "count": 190
+          },
+          {
+            "value": "Black Friday Meli Melo",
+            "count": 51
+          },
+          {
+            "value": "Black November - Transport gratuit cu codul BLACK - 11.2023",
+            "count": 117
+          },
+          {
+            "value": "BlackFriday",
+            "count": 64
+          },
+          {
+            "value": "Campanie Max Days - Machiaj",
+            "count": 47
+          },
+          {
+            "value": "Campanie Max Days - Mama si copilul",
+            "count": 55
+          },
+          {
+            "value": "Campanie de primavara",
+            "count": 59
+          },
+          {
+            "value": "Carti",
+            "count": 51
+          },
+          {
+            "value": "Colectie Noua",
+            "count": 59
+          },
+          {
+            "value": "Consultatii",
+            "count": 452
+          },
+          {
+            "value": "Cumperi mai mult, platesti mai putin!",
+            "count": 48
+          },
+          {
+            "value": "Curatenie",
+            "count": 126
+          },
+          {
+            "value": "DECEMBRIE 2024: 10% reducere cu codul CADOUCROCS",
+            "count": 58
+          },
+          {
+            "value": "Distrugatoare documente",
+            "count": 47
+          },
+          {
+            "value": "Esarfe",
+            "count": 47
+          },
+          {
+            "value": "FEBRUARIE 2024: Reduceri de 20% în PERECHE",
+            "count": 85
+          },
+          {
+            "value": "FEBRUARIE 2025: 20% reducere în PERECHE, la comenzile cu minim 2 articole",
+            "count": 126
+          },
+          {
+            "value": "Flori de Valentine's Day",
+            "count": 43
+          },
+          {
+            "value": "General",
+            "count": 58
+          },
+          {
+            "value": "IANUARIE 2024: Sărbătorim 14 ani de servire maniacă cu livrare gratuită",
+            "count": 113
+          },
+          {
+            "value": "IANUARIE 2025: 15 ani cu reduceri maniace de 15%",
+            "count": 58
+          },
+          {
+            "value": "IULIE - AUGUST 2025: Noutăți cool și livrare GRATUITĂ cu codul CrocSummer",
+            "count": 135
+          },
+          {
+            "value": "IULIE 2024: Transport gratuit cu codul VACANȚĂ",
+            "count": 134
+          },
+          {
+            "value": "IUNIE 2024: Livrare gratuită cu codul COPILĂRIE",
+            "count": 72
+          },
+          {
+            "value": "IUNIE 2025: Noutățile verii sunt aici + LIVRARE GRATUITĂ",
+            "count": 79
+          },
+          {
+            "value": "Jocuri si Jucarii",
+            "count": 713
+          },
+          {
+            "value": "Jucarii Noriel",
+            "count": 145
+          },
+          {
+            "value": "Lego",
+            "count": 273
+          },
+          {
+            "value": "Lentile colorate",
+            "count": 265
+          },
+          {
+            "value": "Lentile de contact",
+            "count": 277
+          },
+          {
+            "value": "Lichidări de stoc cu reduceri maniace de 20% - Martie 2023",
+            "count": 43
+          },
+          {
+            "value": "Livrare gratuită cu codul COPILĂRIE - Iunie 2023",
+            "count": 100
+          },
+          {
+            "value": "Livrare gratuită cu codul IEPURAȘ - Aprilie 2023",
+            "count": 53
+          },
+          {
+            "value": "Livrare gratuită cu codul MAIMANIAC - Mai 2023",
+            "count": 78
+          },
+          {
+            "value": "MAI 2024: Livrare gratuită cu codul MAIMANIAC",
+            "count": 88
+          },
+          {
+            "value": "MAI 2025: Mai multe noutăți și livrare gratuită cu codul MaiManiac",
+            "count": 76
+          },
+          {
+            "value": "MARTIE 2025: 20% reducere cu codul LICHIDARE",
+            "count": 123
+          },
+          {
+            "value": "MARTIE: Lichidări de stoc cu reduceri maniace de 20%",
+            "count": 87
+          },
+          {
+            "value": "Ochelari de soare",
+            "count": 315
+          },
+          {
+            "value": "Ochelari pentru calculator",
+            "count": 190
+          },
+          {
+            "value": "Ochelari sport",
+            "count": 142
+          },
+          {
+            "value": "Pachete - 20% reducere suplimentara",
+            "count": 47
+          },
+          {
+            "value": "Papusi",
+            "count": 59
+          },
+          {
+            "value": "Paste",
+            "count": 58
+          },
+          {
+            "value": "Pilot",
+            "count": 86
+          },
+          {
+            "value": "Primavara cu sanatate si energie",
+            "count": 46
+          },
+          {
+            "value": "Promo ",
+            "count": 129
+          },
+          {
+            "value": "Promotii",
+            "count": 250
+          },
+          {
+            "value": "Reduceri",
+            "count": 266
+          },
+          {
+            "value": "Reduceri Mobila Luna Mai 2026",
+            "count": 50
+          },
+          {
+            "value": "Reduceri de iarna",
+            "count": 48
+          },
+          {
+            "value": "Reduceri de vara",
+            "count": 47
+          },
+          {
+            "value": "SEPTEMBRIE 2024: Livrare gratuită cu codul BACK2SCHOOL",
+            "count": 122
+          },
+          {
+            "value": "Servicii",
+            "count": 77
+          },
+          {
+            "value": "Sex Shop",
+            "count": 44
+          },
+          {
+            "value": "Solutii si accesorii",
+            "count": 65
+          },
+          {
+            "value": "Summer Sale",
+            "count": 93
+          },
+          {
+            "value": "Săptămâna reducerilor maniace Crocs - 10% - CROCS10",
+            "count": 52
+          },
+          {
+            "value": "Transport Gratuit",
+            "count": 125
+          },
+          {
+            "value": "Transport gratuit cu codul CROCTOBER - Octombrie 2023",
+            "count": 114
+          },
+          {
+            "value": "Transport gratuit peste 299 lei!",
+            "count": 119
+          },
+          {
+            "value": "Uv Gel NailsUp 1",
+            "count": 55
+          },
+          {
+            "value": "beauty",
+            "count": 80
+          },
+          {
+            "value": "black friday 2020",
+            "count": 75
+          },
+          {
+            "value": "mayam",
+            "count": 42
+          },
+          {
+            "value": "noua colectie",
+            "count": 97
+          },
+          {
+            "value": "rame de vedere",
+            "count": 320
+          },
+          {
+            "value": "reduceri",
+            "count": 452
+          },
+          {
+            "value": "reduceri aniversare",
+            "count": 51
+          },
+          {
+            "value": "reduceri finale",
+            "count": 106
+          },
+          {
+            "value": "saltele",
+            "count": 48
+          }
+        ],
+        "dimensions": [
+          {
+            "value": "980x200",
+            "count": 188
+          },
+          {
+            "value": "980x120",
+            "count": 60
+          },
+          {
+            "value": "970x90",
+            "count": 295
+          },
+          {
+            "value": "970x250",
+            "count": 716
+          },
+          {
+            "value": "960x90",
+            "count": 58
+          },
+          {
+            "value": "960x1200",
+            "count": 1064
+          },
+          {
+            "value": "915x316",
+            "count": 21
+          },
+          {
+            "value": "900x900",
+            "count": 36
+          },
+          {
+            "value": "900x650",
+            "count": 23
+          },
+          {
+            "value": "870x200",
+            "count": 116
+          },
+          {
+            "value": "864x864",
+            "count": 59
+          },
+          {
+            "value": "840x440",
+            "count": 15
+          },
+          {
+            "value": "830x315",
+            "count": 27
+          },
+          {
+            "value": "800x800",
+            "count": 62
+          },
+          {
+            "value": "800x600",
+            "count": 47
+          },
+          {
+            "value": "800x458",
+            "count": 45
+          },
+          {
+            "value": "800x400",
+            "count": 23
+          },
+          {
+            "value": "795x664",
+            "count": 25
+          },
+          {
+            "value": "768x768",
+            "count": 47
+          },
+          {
+            "value": "760x400",
+            "count": 17
+          },
+          {
+            "value": "750x90",
+            "count": 60
+          },
+          {
+            "value": "750x350",
+            "count": 29
+          },
+          {
+            "value": "750x200",
+            "count": 46
+          },
+          {
+            "value": "740x240",
+            "count": 60
+          },
+          {
+            "value": "729x91",
+            "count": 25
+          },
+          {
+            "value": "729x90",
+            "count": 21
+          },
+          {
+            "value": "728x90",
+            "count": 3643
+          },
+          {
+            "value": "725x379",
+            "count": 47
+          },
+          {
+            "value": "725x325",
+            "count": 62
+          },
+          {
+            "value": "720x90",
+            "count": 98
+          },
+          {
+            "value": "700x700",
+            "count": 15
+          },
+          {
+            "value": "690x340",
+            "count": 46
+          },
+          {
+            "value": "690x180",
+            "count": 32
+          },
+          {
+            "value": "680x200",
+            "count": 15
+          },
+          {
+            "value": "650x650",
+            "count": 20
+          },
+          {
+            "value": "640x680",
+            "count": 35
+          },
+          {
+            "value": "625x464",
+            "count": 76
+          },
+          {
+            "value": "625x350",
+            "count": 37
+          },
+          {
+            "value": "600x600",
+            "count": 142
+          },
+          {
+            "value": "600x400",
+            "count": 72
+          },
+          {
+            "value": "600x314",
+            "count": 234
+          },
+          {
+            "value": "600x300",
+            "count": 35
+          },
+          {
+            "value": "600x280",
+            "count": 64
+          },
+          {
+            "value": "600x120",
+            "count": 25
+          },
+          {
+            "value": "550x200",
+            "count": 59
+          },
+          {
+            "value": "540x960",
+            "count": 55
+          },
+          {
+            "value": "540x540",
+            "count": 52
+          },
+          {
+            "value": "500x500",
+            "count": 213
+          },
+          {
+            "value": "480x600",
+            "count": 20
+          },
+          {
+            "value": "480x480",
+            "count": 498
+          },
+          {
+            "value": "468x60",
+            "count": 852
+          },
+          {
+            "value": "447x292",
+            "count": 54
+          },
+          {
+            "value": "410x560",
+            "count": 39
+          },
+          {
+            "value": "400x400",
+            "count": 33
+          },
+          {
+            "value": "400x300",
+            "count": 16
+          },
+          {
+            "value": "385x600",
+            "count": 45
+          },
+          {
+            "value": "360x330",
+            "count": 84
+          },
+          {
+            "value": "350x500",
+            "count": 16
+          },
+          {
+            "value": "336x280",
+            "count": 1174
+          },
+          {
+            "value": "320x50",
+            "count": 350
+          },
+          {
+            "value": "320x100",
+            "count": 268
+          },
+          {
+            "value": "301x601",
+            "count": 15
+          },
+          {
+            "value": "300x600",
+            "count": 3837
+          },
+          {
+            "value": "300x50",
+            "count": 218
+          },
+          {
+            "value": "300x300",
+            "count": 439
+          },
+          {
+            "value": "300x250",
+            "count": 4770
+          },
+          {
+            "value": "300x157",
+            "count": 17
+          },
+          {
+            "value": "300x1050",
+            "count": 89
+          },
+          {
+            "value": "270x270",
+            "count": 15
+          },
+          {
+            "value": "251x126",
+            "count": 19
+          },
+          {
+            "value": "250x300",
+            "count": 50
+          },
+          {
+            "value": "250x250",
+            "count": 1526
+          },
+          {
+            "value": "240x400",
+            "count": 54
+          },
+          {
+            "value": "2400x1000",
+            "count": 25
+          },
+          {
+            "value": "200x200",
+            "count": 660
+          },
+          {
+            "value": "1920x533",
+            "count": 19
+          },
+          {
+            "value": "1920x1080",
+            "count": 16
+          },
+          {
+            "value": "1920x100",
+            "count": 19
+          },
+          {
+            "value": "180x150",
+            "count": 52
+          },
+          {
+            "value": "160x900",
+            "count": 17
+          },
+          {
+            "value": "160x600",
+            "count": 3174
+          },
+          {
+            "value": "160x300",
+            "count": 248
+          },
+          {
+            "value": "150x150",
+            "count": 124
+          },
+          {
+            "value": "1500x1500",
+            "count": 53
+          },
+          {
+            "value": "125x125",
+            "count": 170
+          },
+          {
+            "value": "1250x464",
+            "count": 18
+          },
+          {
+            "value": "120x600",
+            "count": 1008
+          },
+          {
+            "value": "120x60",
+            "count": 619
+          },
+          {
+            "value": "1200x630",
+            "count": 18
+          },
+          {
+            "value": "1200x628",
+            "count": 2414
+          },
+          {
+            "value": "1200x620",
+            "count": 29
+          },
+          {
+            "value": "1200x1500",
+            "count": 49
+          },
+          {
+            "value": "1200x1200",
+            "count": 1566
+          },
+          {
+            "value": "1140x330",
+            "count": 54
+          },
+          {
+            "value": "1080x1920",
+            "count": 1240
+          },
+          {
+            "value": "1080x1350",
+            "count": 69
+          },
+          {
+            "value": "1080x1080",
+            "count": 1111
+          },
+          {
+            "value": "1050x1050",
+            "count": 76
+          },
+          {
+            "value": "1024x1024",
+            "count": 15
+          },
+          {
+            "value": "1000x1000",
+            "count": 142
+          }
+        ],
+        "friendly_type": [
+          {
+            "value": "Flash",
+            "count": 9
+          },
+          {
+            "value": "GIF",
+            "count": 708
+          },
+          {
+            "value": "JPEG",
+            "count": 29806
+          },
+          {
+            "value": "PNG",
+            "count": 7977
+          },
+          {
+            "value": "svg+xml",
+            "count": 2
+          }
+        ]
+      },
+      "available": {
+        "category": [
+          {
+            "value": "",
+            "count": 772
+          },
+          {
+            "value": "-80 % STAR RUSH, CELEBRITY SECRET BAG GRATUIT",
+            "count": 70
+          },
+          {
+            "value": "-80% BLACK FRIDAY,SECRET BEAUTY BAG GRATUIT",
+            "count": 51
+          },
+          {
+            "value": "-80% STAR EASTER, CELEBRITY SECRET BAG GRATUIT",
+            "count": 80
+          },
+          {
+            "value": "-80% STAR MUST-HAVE, CELEBRITY SECRET BEAUTY BAG GRATUIT",
+            "count": 106
+          },
+          {
+            "value": "-80% STAR NEW YEAR,SECRET BEAUTY BAG GRATUIT",
+            "count": 57
+          },
+          {
+            "value": "-80% STAR RUSH, CELEBRITY SECRET BAG GRATUIT",
+            "count": 63
+          },
+          {
+            "value": "-80% STAR VALENTINE'S,SECRET BEAUTY BAG GRATUIT",
+            "count": 94
+          },
+          {
+            "value": "-80% STAR WINTER GLAM,SECRET BEAUTY BAG GRATUIT",
+            "count": 54
+          },
+          {
+            "value": "-80% STAR WOMEN'S GIFT,SECRET BEAUTY BAG GRATUIT",
+            "count": 115
+          },
+          {
+            "value": "-80% STAR XMAS,SECRET CELEBARITY BAG GRATUIT",
+            "count": 72
+          },
+          {
+            "value": "-80% STAR XMAS,SECRET CELEBRITY BAG GRATUIT",
+            "count": 72
+          },
+          {
+            "value": "-80% black friday,secret beauty bag gratuit",
+            "count": 49
+          },
+          {
+            "value": "1 + 1 Cadou",
+            "count": 130
+          },
+          {
+            "value": "2 + 1 Cadou",
+            "count": 94
+          },
+          {
+            "value": "23 OCTOMBRIE 2024: Reduceri maniace de 23% la întreaga gamă Crocs",
+            "count": 42
+          },
+          {
+            "value": "35% reducere 10 titluri in precomanda 1-15 aprilie 2024",
+            "count": 53
+          },
+          {
+            "value": "APRILIE 2024: Livrare gratuită cu codul CULOARE",
+            "count": 86
+          },
+          {
+            "value": "APRILIE 2025: Colecții noi de primăvară și LIVRARE GRATUITĂ!",
+            "count": 118
+          },
+          {
+            "value": "AUGUST 2024: Noutati si livrare gratuita cu codul FESTIVAL",
+            "count": 135
+          },
+          {
+            "value": "BACK2SCHOOL - Reduceri maniace de 15% - septembrie 2023",
+            "count": 102
+          },
+          {
+            "value": "Back To School",
+            "count": 43
+          },
+          {
+            "value": "Back to school",
+            "count": 103
+          },
+          {
+            "value": "Bannere generale",
+            "count": 107
+          },
+          {
+            "value": "Bannere permanente",
+            "count": 53
+          },
+          {
+            "value": "Black Friday",
+            "count": 468
+          },
+          {
+            "value": "Black Friday 2020",
+            "count": 46
+          },
+          {
+            "value": "Black Friday 2023",
+            "count": 54
+          },
+          {
+            "value": "Black Friday 2024",
+            "count": 64
+          },
+          {
+            "value": "Black Friday 2025",
+            "count": 190
+          },
+          {
+            "value": "Black Friday Meli Melo",
+            "count": 51
+          },
+          {
+            "value": "Black November - Transport gratuit cu codul BLACK - 11.2023",
+            "count": 117
+          },
+          {
+            "value": "BlackFriday",
+            "count": 64
+          },
+          {
+            "value": "Campanie Max Days - Machiaj",
+            "count": 47
+          },
+          {
+            "value": "Campanie Max Days - Mama si copilul",
+            "count": 55
+          },
+          {
+            "value": "Campanie de primavara",
+            "count": 59
+          },
+          {
+            "value": "Carti",
+            "count": 51
+          },
+          {
+            "value": "Colectie Noua",
+            "count": 59
+          },
+          {
+            "value": "Consultatii",
+            "count": 452
+          },
+          {
+            "value": "Cumperi mai mult, platesti mai putin!",
+            "count": 48
+          },
+          {
+            "value": "Curatenie",
+            "count": 126
+          },
+          {
+            "value": "DECEMBRIE 2024: 10% reducere cu codul CADOUCROCS",
+            "count": 58
+          },
+          {
+            "value": "Distrugatoare documente",
+            "count": 47
+          },
+          {
+            "value": "Esarfe",
+            "count": 47
+          },
+          {
+            "value": "FEBRUARIE 2024: Reduceri de 20% în PERECHE",
+            "count": 85
+          },
+          {
+            "value": "FEBRUARIE 2025: 20% reducere în PERECHE, la comenzile cu minim 2 articole",
+            "count": 126
+          },
+          {
+            "value": "Flori de Valentine's Day",
+            "count": 43
+          },
+          {
+            "value": "General",
+            "count": 58
+          },
+          {
+            "value": "IANUARIE 2024: Sărbătorim 14 ani de servire maniacă cu livrare gratuită",
+            "count": 113
+          },
+          {
+            "value": "IANUARIE 2025: 15 ani cu reduceri maniace de 15%",
+            "count": 58
+          },
+          {
+            "value": "IULIE - AUGUST 2025: Noutăți cool și livrare GRATUITĂ cu codul CrocSummer",
+            "count": 135
+          },
+          {
+            "value": "IULIE 2024: Transport gratuit cu codul VACANȚĂ",
+            "count": 134
+          },
+          {
+            "value": "IUNIE 2024: Livrare gratuită cu codul COPILĂRIE",
+            "count": 72
+          },
+          {
+            "value": "IUNIE 2025: Noutățile verii sunt aici + LIVRARE GRATUITĂ",
+            "count": 79
+          },
+          {
+            "value": "Jocuri si Jucarii",
+            "count": 713
+          },
+          {
+            "value": "Jucarii Noriel",
+            "count": 145
+          },
+          {
+            "value": "Lego",
+            "count": 273
+          },
+          {
+            "value": "Lentile colorate",
+            "count": 265
+          },
+          {
+            "value": "Lentile de contact",
+            "count": 277
+          },
+          {
+            "value": "Lichidări de stoc cu reduceri maniace de 20% - Martie 2023",
+            "count": 43
+          },
+          {
+            "value": "Livrare gratuită cu codul COPILĂRIE - Iunie 2023",
+            "count": 100
+          },
+          {
+            "value": "Livrare gratuită cu codul IEPURAȘ - Aprilie 2023",
+            "count": 53
+          },
+          {
+            "value": "Livrare gratuită cu codul MAIMANIAC - Mai 2023",
+            "count": 78
+          },
+          {
+            "value": "MAI 2024: Livrare gratuită cu codul MAIMANIAC",
+            "count": 88
+          },
+          {
+            "value": "MAI 2025: Mai multe noutăți și livrare gratuită cu codul MaiManiac",
+            "count": 76
+          },
+          {
+            "value": "MARTIE 2025: 20% reducere cu codul LICHIDARE",
+            "count": 123
+          },
+          {
+            "value": "MARTIE: Lichidări de stoc cu reduceri maniace de 20%",
+            "count": 87
+          },
+          {
+            "value": "Ochelari de soare",
+            "count": 315
+          },
+          {
+            "value": "Ochelari pentru calculator",
+            "count": 190
+          },
+          {
+            "value": "Ochelari sport",
+            "count": 142
+          },
+          {
+            "value": "Pachete - 20% reducere suplimentara",
+            "count": 47
+          },
+          {
+            "value": "Papusi",
+            "count": 59
+          },
+          {
+            "value": "Paste",
+            "count": 58
+          },
+          {
+            "value": "Pilot",
+            "count": 86
+          },
+          {
+            "value": "Primavara cu sanatate si energie",
+            "count": 46
+          },
+          {
+            "value": "Promo ",
+            "count": 129
+          },
+          {
+            "value": "Promotii",
+            "count": 250
+          },
+          {
+            "value": "Reduceri",
+            "count": 266
+          },
+          {
+            "value": "Reduceri Mobila Luna Mai 2026",
+            "count": 50
+          },
+          {
+            "value": "Reduceri de iarna",
+            "count": 48
+          },
+          {
+            "value": "Reduceri de vara",
+            "count": 47
+          },
+          {
+            "value": "SEPTEMBRIE 2024: Livrare gratuită cu codul BACK2SCHOOL",
+            "count": 122
+          },
+          {
+            "value": "Servicii",
+            "count": 77
+          },
+          {
+            "value": "Sex Shop",
+            "count": 44
+          },
+          {
+            "value": "Solutii si accesorii",
+            "count": 65
+          },
+          {
+            "value": "Summer Sale",
+            "count": 93
+          },
+          {
+            "value": "Săptămâna reducerilor maniace Crocs - 10% - CROCS10",
+            "count": 52
+          },
+          {
+            "value": "Transport Gratuit",
+            "count": 125
+          },
+          {
+            "value": "Transport gratuit cu codul CROCTOBER - Octombrie 2023",
+            "count": 114
+          },
+          {
+            "value": "Transport gratuit peste 299 lei!",
+            "count": 119
+          },
+          {
+            "value": "Uv Gel NailsUp 1",
+            "count": 55
+          },
+          {
+            "value": "beauty",
+            "count": 80
+          },
+          {
+            "value": "black friday 2020",
+            "count": 75
+          },
+          {
+            "value": "mayam",
+            "count": 42
+          },
+          {
+            "value": "noua colectie",
+            "count": 97
+          },
+          {
+            "value": "rame de vedere",
+            "count": 320
+          },
+          {
+            "value": "reduceri",
+            "count": 452
+          },
+          {
+            "value": "reduceri aniversare",
+            "count": 51
+          },
+          {
+            "value": "reduceri finale",
+            "count": 106
+          },
+          {
+            "value": "saltele",
+            "count": 48
+          }
+        ],
+        "dimensions": [
+          {
+            "value": "980x200",
+            "count": 188
+          },
+          {
+            "value": "980x120",
+            "count": 60
+          },
+          {
+            "value": "970x90",
+            "count": 295
+          },
+          {
+            "value": "970x250",
+            "count": 716
+          },
+          {
+            "value": "960x90",
+            "count": 58
+          },
+          {
+            "value": "960x1200",
+            "count": 1064
+          },
+          {
+            "value": "915x316",
+            "count": 21
+          },
+          {
+            "value": "900x900",
+            "count": 36
+          },
+          {
+            "value": "900x650",
+            "count": 23
+          },
+          {
+            "value": "870x200",
+            "count": 116
+          },
+          {
+            "value": "864x864",
+            "count": 59
+          },
+          {
+            "value": "840x440",
+            "count": 15
+          },
+          {
+            "value": "830x315",
+            "count": 27
+          },
+          {
+            "value": "800x800",
+            "count": 62
+          },
+          {
+            "value": "800x600",
+            "count": 47
+          },
+          {
+            "value": "800x458",
+            "count": 45
+          },
+          {
+            "value": "800x400",
+            "count": 23
+          },
+          {
+            "value": "795x664",
+            "count": 25
+          },
+          {
+            "value": "768x768",
+            "count": 47
+          },
+          {
+            "value": "760x400",
+            "count": 17
+          },
+          {
+            "value": "750x90",
+            "count": 60
+          },
+          {
+            "value": "750x350",
+            "count": 29
+          },
+          {
+            "value": "750x200",
+            "count": 46
+          },
+          {
+            "value": "740x240",
+            "count": 60
+          },
+          {
+            "value": "729x91",
+            "count": 25
+          },
+          {
+            "value": "729x90",
+            "count": 21
+          },
+          {
+            "value": "728x90",
+            "count": 3643
+          },
+          {
+            "value": "725x379",
+            "count": 47
+          },
+          {
+            "value": "725x325",
+            "count": 62
+          },
+          {
+            "value": "720x90",
+            "count": 98
+          },
+          {
+            "value": "700x700",
+            "count": 15
+          },
+          {
+            "value": "690x340",
+            "count": 46
+          },
+          {
+            "value": "690x180",
+            "count": 32
+          },
+          {
+            "value": "680x200",
+            "count": 15
+          },
+          {
+            "value": "650x650",
+            "count": 20
+          },
+          {
+            "value": "640x680",
+            "count": 35
+          },
+          {
+            "value": "625x464",
+            "count": 76
+          },
+          {
+            "value": "625x350",
+            "count": 37
+          },
+          {
+            "value": "600x600",
+            "count": 142
+          },
+          {
+            "value": "600x400",
+            "count": 72
+          },
+          {
+            "value": "600x314",
+            "count": 234
+          },
+          {
+            "value": "600x300",
+            "count": 35
+          },
+          {
+            "value": "600x280",
+            "count": 64
+          },
+          {
+            "value": "600x120",
+            "count": 25
+          },
+          {
+            "value": "550x200",
+            "count": 59
+          },
+          {
+            "value": "540x960",
+            "count": 55
+          },
+          {
+            "value": "540x540",
+            "count": 52
+          },
+          {
+            "value": "500x500",
+            "count": 213
+          },
+          {
+            "value": "480x600",
+            "count": 20
+          },
+          {
+            "value": "480x480",
+            "count": 498
+          },
+          {
+            "value": "468x60",
+            "count": 852
+          },
+          {
+            "value": "447x292",
+            "count": 54
+          },
+          {
+            "value": "410x560",
+            "count": 39
+          },
+          {
+            "value": "400x400",
+            "count": 33
+          },
+          {
+            "value": "400x300",
+            "count": 16
+          },
+          {
+            "value": "385x600",
+            "count": 45
+          },
+          {
+            "value": "360x330",
+            "count": 84
+          },
+          {
+            "value": "350x500",
+            "count": 16
+          },
+          {
+            "value": "336x280",
+            "count": 1174
+          },
+          {
+            "value": "320x50",
+            "count": 350
+          },
+          {
+            "value": "320x100",
+            "count": 268
+          },
+          {
+            "value": "301x601",
+            "count": 15
+          },
+          {
+            "value": "300x600",
+            "count": 3837
+          },
+          {
+            "value": "300x50",
+            "count": 218
+          },
+          {
+            "value": "300x300",
+            "count": 439
+          },
+          {
+            "value": "300x250",
+            "count": 4770
+          },
+          {
+            "value": "300x157",
+            "count": 17
+          },
+          {
+            "value": "300x1050",
+            "count": 89
+          },
+          {
+            "value": "270x270",
+            "count": 15
+          },
+          {
+            "value": "251x126",
+            "count": 19
+          },
+          {
+            "value": "250x300",
+            "count": 50
+          },
+          {
+            "value": "250x250",
+            "count": 1526
+          },
+          {
+            "value": "240x400",
+            "count": 54
+          },
+          {
+            "value": "2400x1000",
+            "count": 25
+          },
+          {
+            "value": "200x200",
+            "count": 660
+          },
+          {
+            "value": "1920x533",
+            "count": 19
+          },
+          {
+            "value": "1920x1080",
+            "count": 16
+          },
+          {
+            "value": "1920x100",
+            "count": 19
+          },
+          {
+            "value": "180x150",
+            "count": 52
+          },
+          {
+            "value": "160x900",
+            "count": 17
+          },
+          {
+            "value": "160x600",
+            "count": 3174
+          },
+          {
+            "value": "160x300",
+            "count": 248
+          },
+          {
+            "value": "150x150",
+            "count": 124
+          },
+          {
+            "value": "1500x1500",
+            "count": 53
+          },
+          {
+            "value": "125x125",
+            "count": 170
+          },
+          {
+            "value": "1250x464",
+            "count": 18
+          },
+          {
+            "value": "120x600",
+            "count": 1008
+          },
+          {
+            "value": "120x60",
+            "count": 619
+          },
+          {
+            "value": "1200x630",
+            "count": 18
+          },
+          {
+            "value": "1200x628",
+            "count": 2414
+          },
+          {
+            "value": "1200x620",
+            "count": 29
+          },
+          {
+            "value": "1200x1500",
+            "count": 49
+          },
+          {
+            "value": "1200x1200",
+            "count": 1566
+          },
+          {
+            "value": "1140x330",
+            "count": 54
+          },
+          {
+            "value": "1080x1920",
+            "count": 1240
+          },
+          {
+            "value": "1080x1350",
+            "count": 69
+          },
+          {
+            "value": "1080x1080",
+            "count": 1111
+          },
+          {
+            "value": "1050x1050",
+            "count": 76
+          },
+          {
+            "value": "1024x1024",
+            "count": 15
+          },
+          {
+            "value": "1000x1000",
+            "count": 142
+          }
+        ],
+        "friendly_type": [
+          {
+            "value": "Flash",
+            "count": 9
+          },
+          {
+            "value": "GIF",
+            "count": 708
+          },
+          {
+            "value": "JPEG",
+            "count": 29806
+          },
+          {
+            "value": "PNG",
+            "count": 7977
+          },
+          {
+            "value": "svg+xml",
+            "count": 2
+          }
+        ]
+      }
+    },
+    "pagination": {
+      "results": 38502,
+      "pages": 1926,
+      "current_page": 1
+    }
+  }
+}
