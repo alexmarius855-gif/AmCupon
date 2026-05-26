@@ -504,4 +504,13 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    print(f"Python {sys.version}")
+    try:
+        main()
+    except Exception as e:
+        import traceback
+        print(f"\nFATAL: {e}")
+        traceback.print_exc()
+        print("\nScript esuat — pastrez datele existente.")
+        sys.exit(0)  # nu esuam step-ul GitHub Actions

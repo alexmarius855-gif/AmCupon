@@ -25,7 +25,9 @@ jobs:
           python-version: '3.11'
 
       - name: Instaleaza dependinte
-        run: pip install -r scripts/requirements.txt
+        run: |
+          python --version
+          pip install -r scripts/requirements.txt
 
       # ── 3. 2Performant data — API direct ──────────────────────────────────
       - name: Fetch date 2Performant via API
