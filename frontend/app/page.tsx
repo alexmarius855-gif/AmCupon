@@ -1043,6 +1043,18 @@ export default function Home() {
   );
 }
 
+/* ─── CASHBACK HELPER ────────────────────────────────────────────────────── */
+function formatCashback(comision: string): string | null {
+  if (!comision) return null;
+  // Extrage numere din string: "5%", "3-8%", "2% - 5%", "10", "0"
+  const nums = comision.match(/[\d.]+/g)?.map(Number) ?? [];
+  if (!nums.length) return null;
+  const max = Math.max(...nums);
+  if (max <= 0) return null;
+  if (nums.length > 1) return `Cashback pana la ${max}%`;
+  return `Cashback ${max}%`;
+}
+
 /* ─── CARD COMPONENT ──────────────────────────────────────────────────────── */
 function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
   m: Magazin;
@@ -1061,6 +1073,7 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
   const nrCupoane      = m.promotii.filter(p => p.cod_cupon).length;
   const nrOferte       = m.promotii.length;
   const trustScore     = m.procent_succes || (m.are_promotie ? 78 : 50);
+  const cashbackText   = formatCashback(m.comision);
 
   const [imgOk, setImgOk] = useState(true);
   const [rating, setRating] = useState<"ok"|"nok"|null>(() => {
@@ -1125,11 +1138,17 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
             {badgeReducere && (
               <span className="text-[10px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-1.5 py-0.5 rounded-full">
                 {badgeReducere}
+                {cashbackText && <span className="opacity-60 ml-0.5">+ CB</span>}
               </span>
             )}
             {!badgeReducere && m.are_promotie && (
               <span className="text-[10px] font-bold text-orange-600 bg-orange-50 border border-orange-200 px-1.5 py-0.5 rounded-full">
                 Oferta activa
+              </span>
+            )}
+            {!m.are_promotie && cashbackText && (
+              <span className="text-[10px] font-bold text-teal-700 bg-teal-50 border border-teal-200 px-1.5 py-0.5 rounded-full">
+                {cashbackText}
               </span>
             )}
             {m.cod_cupon && (
@@ -1150,6 +1169,10 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
       <div className="px-4 pb-3 flex-1">
         {promo ? (
           <p className="text-xs text-slate-500 line-clamp-2 leading-relaxed">{promo.nume}</p>
+        ) : cashbackText ? (
+          <p className="text-xs text-teal-600 font-medium leading-relaxed">
+            Cumpara prin AmCupon si primesti <strong>{cashbackText.toLowerCase()}</strong> automat
+          </p>
         ) : (
           <p className="text-xs text-slate-400 italic">Fara promotii active momentan</p>
         )}
@@ -1212,8 +1235,12 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
           </a>
         ) : (
           <a href={m.url_afiliat || m.url} target="_blank" rel="noopener noreferrer"
-            className="flex items-center justify-center w-full border border-slate-200 hover:border-orange-300 text-slate-500 hover:text-orange-500 font-medium py-2.5 rounded-xl text-sm transition-colors">
-            Viziteaza magazinul
+            className={`flex items-center justify-center w-full font-medium py-2.5 rounded-xl text-sm transition-colors ${
+              cashbackText
+                ? "bg-teal-500 hover:bg-teal-600 text-white"
+                : "border border-slate-200 hover:border-orange-300 text-slate-500 hover:text-orange-500"
+            }`}>
+            {cashbackText ? `Viziteaza + ${cashbackText}` : "Viziteaza magazinul"}
           </a>
         )}
       </div>
