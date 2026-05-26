@@ -36,22 +36,22 @@ interface Magazin {
 }
 
 const CATEGORII = [
-  { slug: "fashion",               emoji: "👗", label: "Fashion",        bg: "bg-pink-50",    hover: "hover:bg-pink-100",    border: "border-pink-200" },
-  { slug: "electronics-itc",      emoji: "💻", label: "Electronice",    bg: "bg-blue-50",    hover: "hover:bg-blue-100",    border: "border-blue-200" },
-  { slug: "beauty",               emoji: "💄", label: "Frumusete",      bg: "bg-rose-50",    hover: "hover:bg-rose-100",    border: "border-rose-200" },
-  { slug: "home-garden",          emoji: "🏡", label: "Casa & Gradina", bg: "bg-green-50",   hover: "hover:bg-green-100",   border: "border-green-200" },
-  { slug: "sports-outdoors",      emoji: "🏃", label: "Sport",          bg: "bg-orange-50",  hover: "hover:bg-orange-100",  border: "border-orange-200" },
-  { slug: "pharma",               emoji: "💊", label: "Farmacie",       bg: "bg-red-50",     hover: "hover:bg-red-100",     border: "border-red-200" },
-  { slug: "babies-kids-toys",     emoji: "👶", label: "Copii & Jucarii",bg: "bg-purple-50",  hover: "hover:bg-purple-100",  border: "border-purple-200" },
-  { slug: "automotive",           emoji: "🚗", label: "Auto-Moto",      bg: "bg-slate-50",   hover: "hover:bg-slate-100",   border: "border-slate-200" },
-  { slug: "books",                emoji: "📚", label: "Carti",          bg: "bg-yellow-50",  hover: "hover:bg-yellow-100",  border: "border-yellow-200" },
-  { slug: "hypermarket-groceries",emoji: "🛒", label: "Hypermarket",    bg: "bg-emerald-50", hover: "hover:bg-emerald-100", border: "border-emerald-200" },
-  { slug: "gifts-flowers",        emoji: "🎁", label: "Cadouri",        bg: "bg-fuchsia-50", hover: "hover:bg-fuchsia-100", border: "border-fuchsia-200" },
-  { slug: "telecom",              emoji: "📱", label: "Telecom",        bg: "bg-cyan-50",    hover: "hover:bg-cyan-100",    border: "border-cyan-200" },
-  { slug: "pet-supplies",         emoji: "🐾", label: "Animale",        bg: "bg-amber-50",   hover: "hover:bg-amber-100",   border: "border-amber-200" },
-  { slug: "health-personal-care", emoji: "🧴", label: "Sanatate",       bg: "bg-teal-50",    hover: "hover:bg-teal-100",    border: "border-teal-200" },
-  { slug: "jewelry",              emoji: "💎", label: "Bijuterii",      bg: "bg-violet-50",  hover: "hover:bg-violet-100",  border: "border-violet-200" },
-  { slug: "games",                emoji: "🎮", label: "Jocuri",         bg: "bg-indigo-50",  hover: "hover:bg-indigo-100",  border: "border-indigo-200" },
+  { slug: "fashion",               emoji: "👗", label: "Fashion",         desc: "Haine, pantofi & accesorii",    from: "#ec4899", to: "#f97316" },
+  { slug: "electronics-itc",       emoji: "💻", label: "Electronice",     desc: "Laptopuri, telefoane, gadgeturi", from: "#3b82f6", to: "#6366f1" },
+  { slug: "beauty",                emoji: "💄", label: "Frumusete",       desc: "Cosmetice, parfumuri, unghii",   from: "#f43f5e", to: "#a855f7" },
+  { slug: "home-garden",           emoji: "🏡", label: "Casa & Gradina",  desc: "Mobila, deco, unelte",          from: "#10b981", to: "#3b82f6" },
+  { slug: "sports-outdoors",       emoji: "🏃", label: "Sport & Outdoor", desc: "Echipament sportiv & fitness",  from: "#f97316", to: "#eab308" },
+  { slug: "pharma",                emoji: "💊", label: "Farmacie",        desc: "Medicamente, suplimente",       from: "#ef4444", to: "#f97316" },
+  { slug: "babies-kids-toys",      emoji: "👶", label: "Copii & Jucarii", desc: "Produse pentru cei mici",       from: "#a855f7", to: "#ec4899" },
+  { slug: "automotive",            emoji: "🚗", label: "Auto-Moto",       desc: "Piese & accesorii auto",        from: "#475569", to: "#0f172a" },
+  { slug: "books",                 emoji: "📚", label: "Carti & Edu",     desc: "Carti, e-books, cursuri",       from: "#eab308", to: "#f97316" },
+  { slug: "hypermarket-groceries", emoji: "🛒", label: "Hypermarket",     desc: "Alimente & produse zilnice",    from: "#10b981", to: "#059669" },
+  { slug: "gifts-flowers",         emoji: "🎁", label: "Cadouri & Flori", desc: "Cadouri pentru orice ocazie",   from: "#f43f5e", to: "#ec4899" },
+  { slug: "telecom",               emoji: "📱", label: "Telecom",         desc: "Abonamente & servicii mobile",  from: "#06b6d4", to: "#3b82f6" },
+  { slug: "pet-supplies",          emoji: "🐾", label: "Animale",         desc: "Hrana, jucarii, accesorii",     from: "#f59e0b", to: "#d97706" },
+  { slug: "health-personal-care",  emoji: "🧴", label: "Sanatate",        desc: "Ingrijire personala & wellness",from: "#0ea5e9", to: "#10b981" },
+  { slug: "jewelry",               emoji: "💎", label: "Bijuterii",       desc: "Bijuterii & ceasuri",           from: "#8b5cf6", to: "#6366f1" },
+  { slug: "games",                 emoji: "🎮", label: "Jocuri & Gaming", desc: "Jocuri video & console",        from: "#6366f1", to: "#0f172a" },
 ];
 
 const SECTIUNI_SPECIALE = [
@@ -293,9 +293,9 @@ export default function Home() {
                 <div className="grid grid-cols-4 gap-2">
                   {CATEGORII.slice(0, 8).map(c => (
                     <a key={c.slug} href={`/categorii/${c.slug}`} onClick={() => setMenuOpen(false)}
-                      className={`flex flex-col items-center gap-1 p-2 rounded-xl border ${c.bg} ${c.border} hover:border-orange-300 transition-colors`}>
+                      className="flex flex-col items-center gap-1 p-2 rounded-xl border border-slate-700 bg-slate-800 hover:border-orange-500 transition-colors">
                       <span className="text-xl">{c.emoji}</span>
-                      <span className="text-[10px] font-semibold text-slate-700 text-center leading-tight">{c.label}</span>
+                      <span className="text-[10px] font-semibold text-slate-300 text-center leading-tight">{c.label}</span>
                     </a>
                   ))}
                 </div>
@@ -405,15 +405,17 @@ export default function Home() {
       </div>
 
       {/* ─── CATEGORY GRID ───────────────────────────────────────────────── */}
-      <section id="categorii" className="bg-slate-50 border-b border-slate-100 py-14 px-4">
+      <section id="categorii" className="bg-slate-900 border-b border-slate-800 py-14 px-4">
         <div className="max-w-7xl mx-auto">
+
+          {/* Header */}
           <div className="flex items-end justify-between mb-8">
             <div>
-              <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-2">CATEGORII</p>
-              <h2 className="text-3xl font-black tracking-tight text-slate-900">Exploreaza dupa categorie</h2>
-              <p className="text-slate-500 text-sm mt-1.5">Gaseste cele mai bune oferte din categoria ta preferata</p>
+              <p className="text-xs font-bold text-orange-400 uppercase tracking-widest mb-2">CATEGORII</p>
+              <h2 className="text-3xl font-black tracking-tight text-white">Exploreaza dupa categorie</h2>
+              <p className="text-slate-400 text-sm mt-1.5">Coduri verificate zilnic in fiecare categorie</p>
             </div>
-            <a href="/categorii" className="hidden sm:flex items-center gap-1.5 text-sm font-bold text-orange-500 hover:text-orange-600 transition-colors border border-orange-200 hover:border-orange-400 px-4 py-2 rounded-full whitespace-nowrap">
+            <a href="/categorii" className="hidden sm:flex items-center gap-1.5 text-sm font-bold text-orange-400 hover:text-orange-300 transition-colors border border-orange-500/30 hover:border-orange-400/60 bg-orange-500/10 hover:bg-orange-500/20 px-4 py-2 rounded-full whitespace-nowrap">
               Toate categoriile
               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
@@ -421,37 +423,73 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-3">
+          {/* Grid principal — top 8 categorii */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
             {CATEGORII.slice(0, 8).map(c => {
               const nrPromo = promoPerCateg[c.slug] || 0;
               return (
-                <a key={c.slug} href={`/categorii/${c.slug}`}
-                  className={`group relative flex flex-col items-center justify-center gap-3 p-6 rounded-2xl border-2 ${c.bg} ${c.hover} ${c.border} hover:border-orange-300 hover:shadow-lg hover:-translate-y-1 transition-all duration-200 overflow-hidden min-h-[130px]`}>
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-br from-white/50 to-transparent transition-opacity duration-300 pointer-events-none" />
-                  <span className="text-4xl group-hover:scale-110 transition-transform duration-200">{c.emoji}</span>
-                  <span className="font-black text-sm text-slate-800 text-center leading-tight">{c.label}</span>
-                  {nrPromo > 0 ? (
-                    <span className="bg-orange-500 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow-sm">
-                      {nrPromo} {nrPromo === 1 ? "oferta" : "oferte"}
+                <a
+                  key={c.slug}
+                  href={`/categorii/${c.slug}`}
+                  className="group relative rounded-2xl overflow-hidden transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl hover:shadow-black/40"
+                  style={{ background: `linear-gradient(135deg, ${c.from} 0%, ${c.to} 100%)` }}
+                >
+                  {/* Shimmer overlay la hover */}
+                  <div className="absolute inset-0 bg-white/0 group-hover:bg-white/10 transition-colors duration-300 pointer-events-none" />
+
+                  <div className="relative p-5 flex flex-col gap-3 min-h-[140px]">
+                    {/* Badge oferte */}
+                    {nrPromo > 0 ? (
+                      <div className="inline-flex self-start items-center gap-1 bg-black/20 backdrop-blur-sm px-2 py-0.5 rounded-full">
+                        <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
+                        <span className="text-white text-[10px] font-bold">{nrPromo} {nrPromo === 1 ? "oferta" : "oferte"}</span>
+                      </div>
+                    ) : (
+                      <div className="inline-flex self-start bg-black/15 px-2 py-0.5 rounded-full">
+                        <span className="text-white/70 text-[10px]">Vezi magazine</span>
+                      </div>
+                    )}
+
+                    {/* Emoji mare */}
+                    <span className="text-4xl group-hover:scale-110 transition-transform duration-300 drop-shadow-lg">
+                      {c.emoji}
                     </span>
-                  ) : (
-                    <span className="text-[11px] text-slate-400 font-medium">Vezi magazine</span>
-                  )}
+
+                    {/* Nume + descriere */}
+                    <div>
+                      <div className="text-white font-black text-sm leading-tight">{c.label}</div>
+                      <div className="text-white/65 text-[10px] mt-0.5 leading-tight">{c.desc}</div>
+                    </div>
+
+                    {/* Arrow */}
+                    <div className="flex items-center gap-1 text-white/50 group-hover:text-white group-hover:gap-2 transition-all text-[10px] font-bold">
+                      Vezi ofertele
+                      <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </div>
                 </a>
               );
             })}
           </div>
 
+          {/* Grid secundar — restul categoriilor ca chips */}
           <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-8 gap-2 mt-3">
             {CATEGORII.slice(8).map(c => {
               const nrPromo = promoPerCateg[c.slug] || 0;
               return (
-                <a key={c.slug} href={`/categorii/${c.slug}`}
-                  className={`group relative flex flex-col items-center gap-1.5 p-3 rounded-xl border ${c.bg} ${c.hover} ${c.border} hover:border-orange-300 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200`}>
+                <a
+                  key={c.slug}
+                  href={`/categorii/${c.slug}`}
+                  className="group relative flex flex-col items-center gap-1.5 p-3 rounded-xl overflow-hidden transition-all duration-200 hover:scale-[1.05] hover:shadow-lg"
+                  style={{ background: `linear-gradient(135deg, ${c.from}33 0%, ${c.to}33 100%)`, border: `1px solid ${c.from}40` }}
+                >
                   <span className="text-2xl group-hover:scale-110 transition-transform duration-200">{c.emoji}</span>
-                  <span className="text-[10px] font-bold text-slate-700 text-center leading-tight">{c.label}</span>
+                  <span className="text-[10px] font-bold text-white text-center leading-tight">{c.label}</span>
                   {nrPromo > 0 && (
-                    <span className="absolute -top-1.5 -right-1.5 bg-orange-500 text-white text-[9px] font-bold rounded-full w-4 h-4 flex items-center justify-center shadow-sm">
+                    <span className="absolute -top-1 -right-1 text-white text-[9px] font-black rounded-full w-4 h-4 flex items-center justify-center shadow-sm"
+                      style={{ background: c.from }}>
                       {nrPromo > 9 ? "9+" : nrPromo}
                     </span>
                   )}
@@ -460,7 +498,7 @@ export default function Home() {
             })}
           </div>
 
-          <a href="/categorii" className="sm:hidden mt-4 flex items-center justify-center gap-1.5 text-sm font-bold text-orange-500 border border-orange-200 py-2.5 rounded-2xl">
+          <a href="/categorii" className="sm:hidden mt-4 flex items-center justify-center gap-1.5 text-sm font-bold text-orange-400 border border-orange-500/30 bg-orange-500/10 py-2.5 rounded-2xl">
             Toate categoriile →
           </a>
         </div>
