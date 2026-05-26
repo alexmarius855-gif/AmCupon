@@ -131,6 +131,7 @@ Quicklinks: `https://event.2performant.com/events/click?ad_type=quicklink&aff_co
 | `PROFITSHARE_KEY` | 4e57ac2e62b978256949426d88ede8b61c8a7f86 |
 | `BREVO_SMTP_USER` | ac67f7001@smtp-brevo.com |
 | `BREVO_SMTP_PASS` | xsmtpsib-... (in GitHub Secrets) |
+| `NEXT_PUBLIC_ADSENSE_ID` | ca-pub-1744566936173747 |
 
 ---
 
