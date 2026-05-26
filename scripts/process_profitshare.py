@@ -92,7 +92,7 @@ def categorie_slug(cat: str) -> str:
     return s
 
 
-def make_tracking_url(username: str, program_id: int, store_slug: str) -> str:
+def make_tracking_url(username: str, program_id, store_slug: str) -> str:
     """Genereaza link de tracking Profitshare."""
     return f"https://l.profitshare.ro/l/{username}/{program_id}?sub_id={store_slug}"
 
@@ -148,10 +148,11 @@ def ps_get(api_name: str, params: dict = None) -> dict | list | None:
     # Parametrii in ordinea originala (PHP http_build_query nu sorteaza)
     query_string = unquote(urlencode(params or {})) if params else ""
 
-    # Din documentatia oficiala Profitshare (doc.profitshare.com):
+    # Din documentatia oficiala Profitshare:
     # signature_string = "$request_type$route" . $query_string . '/' . PS_API_USER . $date
-    # Unde $route include "/{api_name}/?", ex: "/affiliate-advertisers/?"
-    route = f"/{api_name}/?"
+    # Unde $route = "{api_name}/?" (FARA slash prefix!)
+    # Ex: "GETaffiliate-advertisers/?results_per_page=10&page=1/USER DATE"
+    route = f"{api_name}/?"
     string_to_sign = f"GET{route}{query_string}/{AFFILIATE_USERNAME}{date_str}"
 
     signature = hmac_mod.new(
@@ -185,32 +186,44 @@ def ps_get(api_name: str, params: dict = None) -> dict | list | None:
         return None
 
 
+def _extract_list(data, *keys) -> list:
+    """Extrage lista din raspuns API Profitshare (structura variabila)."""
+    if data is None:
+        return []
+    if isinstance(data, list):
+        return data
+    # Cauta recursiv in dict
+    for key in keys:
+        val = data.get(key) if isinstance(data, dict) else None
+        if val is not None:
+            if isinstance(val, list):
+                return val
+            if isinstance(val, dict):
+                # Daca e dict de dicts (ex: {"35": {...}, "56983": {...}}), returneaza values
+                if all(isinstance(v, dict) for v in val.values()):
+                    return list(val.values())
+    # Fallback: daca data e dict de dicts direct
+    if isinstance(data, dict) and all(isinstance(v, dict) for v in data.values()):
+        return list(data.values())
+    return []
+
+
 def load_programs() -> list[dict]:
-    """Descarca toate programele (magazinele) active — incearca mai multe endpoint-uri."""
+    """Descarca toate programele (magazinele) active."""
     print("  Descarc programe Profitshare...")
     all_programs = []
 
-    # Incearca endpoint-urile in ordine (noul API vs vechiul)
-    endpoint_candidates = [
-        ENDPOINT_ADVERTISERS,           # affiliate-advertisers (PHP SDK vechi)
-        "advertisers",                  # fara prefix (docs noi)
-        "affiliate-programs",           # varianta alternativa
-    ]
-
+    # API nou: affiliate-advertisers → {"result": {"35": {...}, ...}}
     working_endpoint = None
-    for ep in endpoint_candidates:
+    for ep in [ENDPOINT_ADVERTISERS, "advertisers", "affiliate-programs"]:
         test = ps_get(ep, {"results_per_page": 5, "page": 1})
-        if test is not None and test != []:
+        if test is not None:
             working_endpoint = ep
-            print(f"    Endpoint functional: {ep}")
-            break
-        elif test == []:
-            working_endpoint = ep  # Merge dar 0 rezultate (cont nou)
-            print(f"    Endpoint accesibil (0 programe): {ep}")
+            print(f"    Endpoint: {ep}")
             break
 
     if working_endpoint is None:
-        print("    Niciun endpoint functional — credentiale invalide sau cont nou")
+        print("    Niciun endpoint functional")
         return []
 
     page = 1
@@ -218,7 +231,13 @@ def load_programs() -> list[dict]:
         data = ps_get(working_endpoint, {"results_per_page": 100, "page": page})
         if not data:
             break
-        programs = data if isinstance(data, list) else data.get("programs", data.get("result", data.get("data", [])))
+        # Structura: {"result": {"35": {advertisers...}, "56983": {...}}}
+        result = data.get("result", data) if isinstance(data, dict) else data
+        programs = _extract_list(result, "advertisers", "programs", "data")
+        if not programs:
+            # Daca result e direct dict de advertisers (keyed by id)
+            if isinstance(result, dict) and not any(k in result for k in ("paginator", "campaigns")):
+                programs = [v for v in result.values() if isinstance(v, dict)]
         if not programs:
             break
         all_programs.extend(programs)
@@ -231,136 +250,187 @@ def load_programs() -> list[dict]:
 
 
 def load_promotions() -> list[dict]:
-    """Descarca toate promotiile active."""
-    print("  Descarc promotii Profitshare...")
+    """Descarca toate campaniile active Profitshare.
+    Structura API noua: {"result": {"paginator": {...}, "campaigns": [...]}}
+    Fiecare campanie: {id, advertiser_id, name, startDate, endDate, url, banners}
+    """
+    print("  Descarc promotii/campanii Profitshare...")
     all_promos = []
 
-    # Detecteaza endpoint-ul functional pentru promotii
+    # Detecteaza endpoint functional
     ep_promos = None
     for ep_try in [ENDPOINT_CAMPAIGNS, "campaigns", "vouchers", ENDPOINT_PROMOTIONS]:
         test = ps_get(ep_try, {"results_per_page": 5, "page": 1})
         if test is not None:
             ep_promos = ep_try
-            print(f"    Endpoint promotii: {ep_try}")
+            print(f"    Endpoint campanii: {ep_try}")
             break
 
     if ep_promos is None:
-        print("    Niciun endpoint promotii functional")
+        print("    Niciun endpoint campanii functional")
         return []
 
+    now = datetime.now(timezone.utc)
     page = 1
     while True:
-        data = ps_get(ep_promos, {"results_per_page": 200, "page": page})
+        data = ps_get(ep_promos, {"results_per_page": 100, "page": page})
         if not data:
             break
-        promos = data if isinstance(data, list) else data.get("promotions", data.get("result", data.get("data", [])))
-        if not promos:
+
+        # Structura: {"result": {"paginator": {...}, "campaigns": [...]}}
+        result = data.get("result", data) if isinstance(data, dict) else data
+        if isinstance(result, dict):
+            campaigns = result.get("campaigns") or result.get("vouchers") or []
+            total_pages = result.get("paginator", {}).get("totalPages", 1) if isinstance(result.get("paginator"), dict) else 1
+        else:
+            campaigns = result if isinstance(result, list) else []
+            total_pages = 1
+
+        if not campaigns:
             break
 
-        now = datetime.now(timezone.utc)
-        for promo in promos:
-            end_raw = promo.get("end_date") or promo.get("end") or ""
+        for camp in campaigns:
+            if not isinstance(camp, dict):
+                continue
+            # Filtrare dupa data expirarii
+            end_raw = camp.get("endDate") or camp.get("end_date") or ""
+            zile_ramase = 30
             if end_raw:
                 try:
-                    end_dt = datetime.fromisoformat(end_raw.replace("Z", "+00:00"))
+                    end_dt = datetime.fromisoformat(str(end_raw).replace(" ", "T"))
                     if end_dt.tzinfo is None:
                         end_dt = end_dt.replace(tzinfo=timezone.utc)
-                    if end_dt > now:
-                        promo["_zile_ramase"] = max(0, (end_dt - now).days)
-                        all_promos.append(promo)
+                    if end_dt < now:
+                        continue  # Expirata
+                    zile_ramase = max(0, (end_dt - now).days)
                 except (ValueError, AttributeError):
-                    all_promos.append(promo)
-            else:
-                promo["_zile_ramase"] = 30
-                all_promos.append(promo)
+                    pass
 
-        print(f"    Pagina {page}: {len(promos)} promotii")
-        if len(promos) < 200:
+            camp["_zile_ramase"] = zile_ramase
+            all_promos.append(camp)
+
+        items_per_page = result.get("paginator", {}).get("itemsPerPage", 20) if isinstance(result, dict) else 20
+        print(f"    Pagina {page}/{total_pages}: {len(campaigns)} campanii")
+        if page >= total_pages or len(campaigns) < items_per_page:
             break
         page += 1
 
     return all_promos
 
 
+def _get_best_banner(banners: dict) -> str:
+    """Extrage cea mai buna imagine din dict-ul de bannere."""
+    if not isinstance(banners, dict):
+        return ""
+    # Preferam dimensiuni medii
+    for size in ["600x314", "600x400", "468x60", "300x250", "1200x628", "1080x1080"]:
+        b = banners.get(size, {})
+        src = b.get("src", "") if isinstance(b, dict) else ""
+        if src:
+            return ("https:" + src) if src.startswith("//") else src
+    # Fallback: primul banner
+    for b in banners.values():
+        src = b.get("src", "") if isinstance(b, dict) else ""
+        if src:
+            return ("https:" + src) if src.startswith("//") else src
+    return ""
+
+
 def build_promo_map(promotions: list[dict]) -> dict[str, list]:
-    """Indexeaza promotiile dupa program_id."""
+    """Indexeaza campaniile dupa advertiser_id (noul API Profitshare)."""
     promo_map: dict[str, list] = {}
-    for promo in promotions:
-        pid = str(promo.get("program_id") or promo.get("affiliate_program_id") or "")
+    for camp in promotions:
+        if not isinstance(camp, dict):
+            continue
+        # Noul API: advertiser_id leaga campania de magazin
+        pid = str(
+            camp.get("advertiser_id") or
+            camp.get("program_id") or
+            camp.get("affiliate_program_id") or ""
+        )
         if not pid:
             continue
+
         if pid not in promo_map:
             promo_map[pid] = []
 
-        cod = promo.get("coupon_code") or promo.get("code") or ""
-        landing = promo.get("url") or promo.get("landing_url") or ""
-        descriere = promo.get("description") or promo.get("name") or ""
-        name = promo.get("name") or promo.get("title") or "Promotie activa"
+        cod     = camp.get("coupon_code") or camp.get("voucher_code") or camp.get("code") or ""
+        landing = camp.get("url") or camp.get("landing_url") or camp.get("landing_page") or ""
+        name    = camp.get("name") or camp.get("title") or "Promotie activa"
+        banner  = _get_best_banner(camp.get("banners", {}))
 
         promo_map[pid].append({
-            "nume": name,
-            "descriere": descriere,
-            "cod_cupon": cod if cod else "",
+            "nume":         name[:200],
+            "descriere":    name[:200],
+            "cod_cupon":    cod,
             "landing_page": landing,
-            "zile_ramase": promo.get("_zile_ramase", 30),
+            "zile_ramase":  camp.get("_zile_ramase", 30),
+            "banner":       banner,
         })
 
     return promo_map
 
 
 def process_program(prog: dict, promo_map: dict, rank_counter: int) -> dict | None:
-    """Converteste un program Profitshare in formatul nostru."""
+    """Converteste un advertiser Profitshare in formatul nostru.
+    Structura noua: {id, name, logo, category, url, advertiser_identifier,
+                     affiliate_identifier, commissions:[{type,value}]}
+    """
     pid = str(prog.get("id") or prog.get("program_id") or "")
     if not pid:
         return None
 
-    # Slug magazin
     name_raw = prog.get("name") or prog.get("program_name") or ""
-    url_raw = prog.get("url") or prog.get("website") or prog.get("main_url") or ""
+    url_raw  = prog.get("url") or prog.get("website") or prog.get("main_url") or ""
 
     if not name_raw and not url_raw:
         return None
 
-    # Prefer domain-ul real ca slug (ex: dedeman.ro)
+    # Extrage slug din domeniu
     if url_raw:
-        # Extrage domeniu: "https://www.dedeman.ro/..." -> "dedeman.ro"
         domain_m = re.search(r"(?:https?://)?(?:www\.)?([^/\s]+\.[a-z]{2,})", url_raw)
         slug = domain_m.group(1) if domain_m else normalize_slug(name_raw)
     else:
         slug = normalize_slug(name_raw)
 
-    # Logo
-    logo_url = (
-        prog.get("logo") or prog.get("logo_url") or prog.get("image") or ""
-    )
+    # Logo — poate incepe cu // (protocol-relative)
+    logo_raw = prog.get("logo") or prog.get("logo_url") or prog.get("image") or ""
+    logo_url = ("https:" + logo_raw) if logo_raw.startswith("//") else logo_raw
 
     # Categorie
-    cat_raw = prog.get("category") or prog.get("main_category") or ""
+    cat_raw   = prog.get("category") or prog.get("main_category") or ""
     categorie = normalize_category(cat_raw)
 
-    # Comision
-    comm_val = prog.get("commission_value") or prog.get("default_commission") or ""
-    comm_type = prog.get("commission_type") or "sale commission"
-    comision = f"{comm_val} {comm_type}".strip() if comm_val else ""
+    # Comision — noua structura: commissions: [{type: "CPS", value: "1.00% - 20.00%"}]
+    commissions = prog.get("commissions") or []
+    if commissions and isinstance(commissions, list):
+        # Ia primul comision CPS sau primul disponibil
+        cps = next((c for c in commissions if c.get("type") == "CPS"), commissions[0])
+        comision = str(cps.get("value", "")).strip()
+    else:
+        # Fallback camp simplu
+        comision = str(prog.get("commission_value") or prog.get("default_commission") or "")
 
-    # URL magazin curat
     url_magazin = url_raw or f"https://{slug}"
     if not url_magazin.startswith("http"):
         url_magazin = f"https://{url_magazin}"
 
-    # Promotii
-    promotii = promo_map.get(pid, [])
-    are_promotie = len(promotii) > 0
-    are_cod = any(p["cod_cupon"] for p in promotii)
-    zile_ramase = min((p["zile_ramase"] for p in promotii), default=99)
+    # Link afiliat — foloseste affiliate_identifier daca exista
+    aff_id = prog.get("affiliate_identifier") or prog.get("advertiser_identifier") or pid
+    url_afiliat = make_tracking_url(AFFILIATE_USERNAME, aff_id, slug)
 
-    # Rank aproximat (bazat pe ordinea din API)
-    rank = rank_counter + 100  # Incepem de la 100 ca sa nu conflicte cu 2Performant top
+    # Promotii din promo_map (indexate dupa advertiser_id = pid)
+    promotii    = promo_map.get(pid, [])
+    are_promotie = len(promotii) > 0
+    are_cod     = any(p.get("cod_cupon") for p in promotii)
+    zile_ramase = min((p.get("zile_ramase", 99) for p in promotii), default=99)
+
+    rank = rank_counter + 100
 
     return {
         "magazin": slug,
         "url": url_magazin,
-        "url_afiliat": make_tracking_url(AFFILIATE_USERNAME, int(pid), slug),
+        "url_afiliat": url_afiliat,
         "logo_url": logo_url,
         "categorie": categorie,
         "comision": comision,
