@@ -69,8 +69,16 @@ function MagazinCard({ m, revealed, copiat, onCopiere }: {
   const promo = m.promotii[0];
   const numeMagazin = numeAfisat(m.magazin);
   const initiala = numeMagazin.charAt(0).toUpperCase();
-  const link = promo?.landing_page || m.url_afiliat || m.url;
-  const affiliateLink = m.url_afiliat || m.url;
+
+  // Filtrăm linkuri invalide: placeholder NA6 de la Profitshare (cont neaprobat)
+  const isValidAffiliateUrl = (url: string) => {
+    if (!url) return false;
+    if (url.includes("/NA6?") || url.includes("/NA6&")) return false;
+    return true;
+  };
+  const validAffiliateLink = isValidAffiliateUrl(m.url_afiliat) ? m.url_afiliat : m.url;
+  const link = promo?.landing_page || validAffiliateLink;
+  const affiliateLink = validAffiliateLink;
   const discount = promo ? (extractDiscount(promo.nume) || extractDiscount(promo.descriere || "")) : null;
 
   const culori = ["bg-blue-500", "bg-green-500", "bg-purple-500", "bg-pink-500", "bg-indigo-500", "bg-teal-500", "bg-red-500", "bg-yellow-500"];

@@ -415,8 +415,9 @@ def process_program(prog: dict, promo_map: dict, rank_counter: int) -> dict | No
     if not url_magazin.startswith("http"):
         url_magazin = f"https://{url_magazin}"
 
-    # Link afiliat — foloseste affiliate_identifier daca exista
-    aff_id = prog.get("affiliate_identifier") or prog.get("advertiser_identifier") or pid
+    # Link afiliat — folosim pid numeric (advertiser ID), mai fiabil decat
+    # affiliate_identifier care poate fi un placeholder generic (ex: "NA6")
+    aff_id = pid
     url_afiliat = make_tracking_url(AFFILIATE_USERNAME, aff_id, slug)
 
     # Promotii din promo_map (indexate dupa advertiser_id = pid)
