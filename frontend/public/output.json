@@ -52,7 +52,7 @@
     "trend": -7.26,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 1,
+    "zile_ramase": 220,
     "promotii": [
       {
         "nume": "Nou pe bookzone.ro: 1200 de titluri în engleză – Un adevărat festin literar!",
@@ -60,22 +60,13 @@
         "cod_cupon": "",
         "landing_page": "https://bookzone.ro/carti/carti-in-limba-engleza",
         "zile_ramase": 220
-      },
-      {
-        "nume": "-20% EXTRA-reducere la mii de titluri de TOP, pe bookzone.ro // 26-27 mai",
-        "descriere": "Mii de titluri de pe site beneficiază de 20% EXTRA-reducere! Reducerea este deja aplicată.",
-        "cod_cupon": "",
-        "landing_page": "https://bookzone.ro/carti",
-        "zile_ramase": 1,
-        "expira": "2026-05-27",
-        "sursa": "csv_import"
       }
     ],
     "folosit_de": 2073,
     "procent_succes": 97,
     "exclusiv": false,
     "categorie_slug": "books",
-    "scor_final": 40.0
+    "scor_final": 120
   },
   {
     "magazin": "drmax.ro",
@@ -130,7 +121,7 @@
     "trend": -10.9,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 5,
+    "zile_ramase": 6,
     "promotii": [
       {
         "nume": "Anul școlar s-a terminat. Povestea abia începe",
@@ -159,31 +150,13 @@
         "cod_cupon": "",
         "landing_page": "https://carturesti.ro/offer/good-vibes-6587",
         "zile_ramase": 20
-      },
-      {
-        "nume": "2+1 la întreaga ofertă de carte pentru copii și manga",
-        "descriere": "Târgul de-o șchioapă vine cu 2+1 la întreaga ofertă în stoc de cărți pentru copii și manga, în română și limbi străine, în perioada 26 mai – 1 iunie, pe carturesti.ro.\nDe la primele cărți ilustrate până la manga și romane grafice pentru cititorii mai mari, oferta acoperă toate vârstele și toate fazele de lectură. Explorați împreună rafturile virtuale și nu ratați finalistele și câștigătoarele Premiilor Cărturino.\n\nProdusul pe care nu îl plătești este cel cu prețul cel mai mic. Promoție valabilă ",
-        "cod_cupon": "",
-        "landing_page": "https://carturesti.ro/offer/targ-de-o-schioapa-2026-carte-6595",
-        "zile_ramase": 5,
-        "expira": "2026-05-31",
-        "sursa": "csv_import"
-      },
-      {
-        "nume": "20% reducere la jocuri și jucării",
-        "descriere": "Nu știi ce vrea? La Târgul de-o șchioapă ai 20% reducere la jocuri și jucării în stoc — și timp până pe 1 iunie să te decizi.\nInteresele copiilor se schimbă repede și noi știm asta. De aceea am adunat tot ce poate deveni jucăria preferată de azi sau jocul de care nu se vor mai despărți mâine — de la jocuri de societate și jocuri de strategie, până la jucării pentru cei mai mici. Cu 20% reducere, e mai ușor să pariezi pe mai multe variante.\n\nPromoție valabilă pe carturesti.ro, în limita stocului ",
-        "cod_cupon": "",
-        "landing_page": "https://carturesti.ro/offer/targ-de-o-schioapa-2026-jucarii-6599",
-        "zile_ramase": 5,
-        "expira": "2026-05-31",
-        "sursa": "csv_import"
       }
     ],
     "folosit_de": 272,
     "procent_succes": 91,
     "exclusiv": false,
     "categorie_slug": "books",
-    "scor_final": 30.0
+    "scor_final": 117
   },
   {
     "magazin": "otter.ro",
@@ -200,7 +173,7 @@
     "trend": -3.82,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 1680,
+    "zile_ramase": 1681,
     "promotii": [
       {
         "nume": "Flash Sale",
@@ -208,22 +181,13 @@
         "cod_cupon": "",
         "landing_page": "https://www.otter.ro/flashsale",
         "zile_ramase": 1681
-      },
-      {
-        "nume": "Flash Sale",
-        "descriere": "Profită de reduceri fulger în Flash Sale-ul Otter, de luni pana vineri, intre 10-13! Încălțăminte și accesorii la prețuri masiv reduse.",
-        "cod_cupon": "",
-        "landing_page": "https://www.otter.ro/flashsale",
-        "zile_ramase": 1680,
-        "expira": "2030-12-31",
-        "sursa": "csv_import"
       }
     ],
     "folosit_de": 393,
     "procent_succes": 94,
     "exclusiv": false,
     "categorie_slug": "fashion",
-    "scor_final": 30.0
+    "scor_final": 116
   },
   {
     "magazin": "petmart.ro",
@@ -428,22 +392,13 @@
         "cod_cupon": "",
         "landing_page": "https://www.sportdepot.ro/40_colectie_de_vara_kids_movie_heroes_name_it/recommended-1298",
         "zile_ramase": 5
-      },
-      {
-        "nume": "SUMMER OFFERS la SportDepot.ro cu reduceri de pana la -40%",
-        "descriere": "SUMMER OFFERS la SportDepot.ro cu reduceri de pana la -40%. Promotie valabila in perioada 26.05-14.06.2026. În acesta promoție gasesti îmbrăcăminte, încălțăminte, echipament sport și accesorii de la branduri precum Adidas, Nike, Puma și altele.",
-        "cod_cupon": "",
-        "landing_page": "https://www.sportdepot.ro/summer_offers_pana_la_40/promotion-b420f1e4c729afb26acee72c7350ec49",
-        "zile_ramase": 19,
-        "expira": "2026-06-14",
-        "sursa": "csv_import"
       }
     ],
     "folosit_de": 174,
     "procent_succes": 74,
     "exclusiv": true,
     "categorie_slug": "sports-outdoors",
-    "scor_final": 50.0
+    "scor_final": 51
   },
   {
     "magazin": "autobob.ro",
@@ -588,7 +543,7 @@
     "trend": 28.57,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 278,
+    "zile_ramase": 279,
     "promotii": [
       {
         "nume": "Oferta 1+1",
@@ -596,22 +551,13 @@
         "cod_cupon": "",
         "landing_page": "https://www.fara-daunatori.ro/search/oferta/?q=oferta",
         "zile_ramase": 279
-      },
-      {
-        "nume": "Oferta 1+1",
-        "descriere": "Oferta 1+1",
-        "cod_cupon": "",
-        "landing_page": "https://www.fara-daunatori.ro/search/oferta/?q=oferta",
-        "zile_ramase": 278,
-        "expira": "2027-02-28",
-        "sursa": "csv_import"
       }
     ],
     "folosit_de": 59,
     "procent_succes": 71,
     "exclusiv": false,
     "categorie_slug": "home-garden",
-    "scor_final": 30.0
+    "scor_final": 35
   },
   {
     "magazin": "sportera.ro",
@@ -757,31 +703,13 @@
         "cod_cupon": "",
         "landing_page": "https://www.vidaxl.ro/campaign-s-oferte",
         "zile_ramase": 1315
-      },
-      {
-        "nume": "10% намаление",
-        "descriere": "Винаги има перфектна оферта за вас; просто следете ежемесечно актуализираната ни страница с оферти, която можете да намерите в долния колонтитул на главната страница.\n\nИзползвайте промоционалния код OFERTI01 при плащане, за да получите допълнителна отстъпка от 10%. Кодът е приложим само за всички продукти, видими на страницата с оферти, без минимална стойност на поръчката.",
-        "cod_cupon": "",
-        "landing_page": "https://www.vidaxl.bg/campaign-s-oferti",
-        "zile_ramase": 1314,
-        "expira": "2029-12-30",
-        "sursa": "csv_import"
-      },
-      {
-        "nume": "Абонирайте се за нашия бюлетин днес & получавате отстъпка от 10 лв. при регистрация!",
-        "descriere": "Страхотни бонуси за присъединяване към общността на vidaXL:\n\n> бъдете първите, които ще научат за нашите нови оферти\n\n> получавате отстъпка от 10 лв. при регистрация\n\n> ползвайте ексклузивни отстъпки\n\n> получавайте актуална информация за най-новите ни предложения\n\n> черпете вдъхновение от най-новите тенденции, стилове и публикации в блога чрез нашите седмични бюлетини",
-        "cod_cupon": "",
-        "landing_page": "https://www.vidaxl.bg/subscribe-to-newsletter.html",
-        "zile_ramase": 1315,
-        "expira": "2029-12-31",
-        "sursa": "csv_import"
       }
     ],
     "folosit_de": 51,
     "procent_succes": 76,
     "exclusiv": false,
     "categorie_slug": "home-garden",
-    "scor_final": 30.0
+    "scor_final": 35
   },
   {
     "magazin": "davopro.ro",
@@ -1329,25 +1257,15 @@
     "canal_recomandat": "Coupons/Vouchers",
     "sales_number": 14474,
     "trend": 25.62,
-    "are_promotie": true,
+    "are_promotie": false,
     "cod_cupon": false,
-    "zile_ramase": 1,
-    "promotii": [
-      {
-        "nume": "-50% la 1.000 de titluri! Alege-ți lecturile la jumătate de preț",
-        "descriere": "Dragi afiliati, \n\nIn perioada26-28.05.2026 pe Libris.ro, avem 50% la 1000 de titluri, iar pentru zilele 27-28.05 vom avea si TRANSPORT GRATUIT peste 50 lei la comenzile cu livrare in Romania.\n\nAm incarcat bannere. Spor la conversii!",
-        "cod_cupon": "",
-        "landing_page": "https://www.libris.ro/carti?fp=1000cu50_mai26",
-        "zile_ramase": 1,
-        "expira": "2026-05-27",
-        "sursa": "csv_import"
-      }
-    ],
-    "folosit_de": 554,
+    "zile_ramase": 99,
+    "promotii": [],
+    "folosit_de": 0,
     "procent_succes": 90,
     "exclusiv": false,
     "categorie_slug": "books",
-    "scor_final": 40.0
+    "scor_final": 103
   },
   {
     "magazin": "liki24.ro",
