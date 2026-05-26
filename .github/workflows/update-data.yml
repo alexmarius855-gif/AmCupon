@@ -115,6 +115,7 @@ jobs:
           git add frontend/public/banners.json     || true
           git add data/output.json                 || true
           git add data/profitshare_output.json     || true
+          git add data/banners_raw_debug.json      || true
 
           if git diff --staged --quiet; then
             echo "Nicio schimbare — skip commit"

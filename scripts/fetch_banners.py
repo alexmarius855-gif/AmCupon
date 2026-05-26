@@ -109,19 +109,45 @@ def fetch_banners() -> list:
                 break
 
             data = resp.json()
+
+            # Debug: salveaza raspunsul raw prima pagina ca sa intelegem structura
+            if page == 1:
+                script_dir  = os.path.dirname(os.path.abspath(__file__))
+                debug_path  = os.path.join(script_dir, "..", "data", "banners_raw_debug.json")
+                os.makedirs(os.path.dirname(debug_path), exist_ok=True)
+                with open(debug_path, "w", encoding="utf-8") as dbg:
+                    raw_sample = data if isinstance(data, list) else data
+                    # Salveaza primele 3 bannere raw
+                    if isinstance(raw_sample, list):
+                        json.dump(raw_sample[:3], dbg, ensure_ascii=False, indent=2)
+                    elif isinstance(raw_sample, dict):
+                        # truncate lists la 3 items
+                        compact = {}
+                        for k, v in raw_sample.items():
+                            compact[k] = v[:3] if isinstance(v, list) else v
+                        json.dump(compact, dbg, ensure_ascii=False, indent=2)
+                print(f"  DEBUG raw salvat in data/banners_raw_debug.json")
+
             items = data if isinstance(data, list) else next(
                 (v for v in data.values() if isinstance(v, list)), []
             )
+
+            # Debug: print keys si fields
+            print(f"  Tip date: {type(data).__name__}")
+            if isinstance(data, dict):
+                print(f"  Dict keys: {list(data.keys())}")
+            print(f"  Items gasite: {len(items)}")
             if not items:
                 break
 
             print(f"  Pagina {page}: {len(items)} bannere")
-            # Debug: show keys of first banner to understand API structure
             if items and page == 1:
-                print(f"  DEBUG keys: {list(items[0].keys())[:12]}")
                 first = items[0]
-                print(f"  DEBUG image_url={str(first.get('image_url',''))[:60]}")
-                print(f"  DEBUG code[:80]={str(first.get('code',''))[:80]}")
+                print(f"  DEBUG keys: {list(first.keys())[:15]}")
+                print(f"  DEBUG image_url={str(first.get('image_url',''))[:80]}")
+                print(f"  DEBUG code[:100]={str(first.get('code',''))[:100]}")
+                print(f"  DEBUG preview={str(first.get('preview',''))[:80]}")
+                print(f"  DEBUG source_url={str(first.get('source_url',''))[:80]}")
             for b in items:
                 # Extrage campurile relevante
                 prog = b.get("program", {}) or {}
