@@ -18,6 +18,7 @@ interface Magazin {
   url_afiliat: string;
   logo_url?: string;
   categorie: string;
+  categorie_slug?: string;
   comision: string;
   rank?: number;
   scor_afiliere: number;
@@ -33,6 +34,14 @@ interface Magazin {
   folosit_de: number;
   procent_succes: number;
   exclusiv: boolean;
+}
+
+interface MagazinSimilar {
+  magazin: string;
+  logo_url?: string;
+  are_promotie: boolean;
+  cod_cupon: boolean;
+  promotii: { nume: string }[];
 }
 
 // ─── Luna curentă în română ────────────────────────────────────────────────────
@@ -216,6 +225,23 @@ export default async function PaginaMagazin({
   if (!m) notFound();
 
   const produse = loadProducts(slug);
+
+  // Magazine similare din aceeasi categorie (max 8, prioritate la cele cu promotii)
+  const similare: MagazinSimilar[] = magazine
+    .filter((x) => x.magazin !== slug && x.categorie_slug && x.categorie_slug === m.categorie_slug)
+    .sort((a, b) =>
+      (b.are_promotie ? 1 : 0) - (a.are_promotie ? 1 : 0) ||
+      (a.rank || 999) - (b.rank || 999)
+    )
+    .slice(0, 8)
+    .map((x) => ({
+      magazin: x.magazin,
+      logo_url: x.logo_url,
+      are_promotie: x.are_promotie,
+      cod_cupon: x.cod_cupon,
+      promotii: x.promotii.map((p) => ({ nume: p.nume })),
+    }));
+
   const nume = numeAfisat(m.magazin);
   const an = new Date().getFullYear();
   const luna = lunaRo();
@@ -329,7 +355,7 @@ export default async function PaginaMagazin({
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(offerList) }} />
       )}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <MagazinClient magazin={m} produse={produse} />
+      <MagazinClient magazin={m} produse={produse} similare={similare} />
     </>
   );
 }

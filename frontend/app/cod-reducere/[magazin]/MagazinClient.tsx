@@ -28,6 +28,14 @@ interface Magazin {
   exclusiv: boolean;
 }
 
+interface MagazinSimilar {
+  magazin: string;
+  logo_url?: string;
+  are_promotie: boolean;
+  cod_cupon: boolean;
+  promotii: { nume: string }[];
+}
+
 interface Produs {
   title: string;
   url: string;
@@ -48,6 +56,15 @@ function numeAfisat(magazin: string): string {
     .split(" ")
     .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
     .join(" ");
+}
+
+function maxPct(promotii: { nume: string }[]): number {
+  let max = 0;
+  for (const p of promotii) {
+    const m = p.nume?.match(/(\d+)\s*%/);
+    if (m) { const v = parseInt(m[1]); if (v > max && v <= 90) max = v; }
+  }
+  return max;
 }
 
 function extractDiscount(text: string): string | null {
@@ -99,7 +116,7 @@ function ProdusCard({ produs: p }: { produs: Produs }) {
   );
 }
 
-export default function MagazinClient({ magazin: m, produse = [] }: { magazin: Magazin; produse?: Produs[] }) {
+export default function MagazinClient({ magazin: m, produse = [], similare = [] }: { magazin: Magazin; produse?: Produs[]; similare?: MagazinSimilar[] }) {
   const [revealed, setRevealed] = useState<Set<number>>(new Set());
   const [copiat, setCopiat] = useState<number | null>(null);
   const [imgOk, setImgOk] = useState(true);
@@ -390,10 +407,49 @@ export default function MagazinClient({ magazin: m, produse = [] }: { magazin: M
           </div>
         </section>
 
+        {/* MAGAZINE SIMILARE */}
+        {similare.length > 0 && (
+          <section className="mt-12">
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-xl font-black text-gray-900">Magazine similare cu reduceri</h2>
+              <a href="/toate-magazinele" className="text-sm font-semibold text-orange-500 hover:text-orange-600">
+                Toate →
+              </a>
+            </div>
+            <div className="grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-8 gap-3">
+              {similare.map((s) => {
+                const numeSim = numeAfisat(s.magazin);
+                const pctSim  = maxPct(s.promotii);
+                return (
+                  <a key={s.magazin} href={`/cod-reducere/${s.magazin}`}
+                    className="group flex flex-col items-center gap-1.5 p-2.5 bg-white rounded-xl border border-gray-200 hover:border-orange-300 hover:shadow-sm transition-all text-center">
+                    <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center bg-gray-50 border border-gray-100">
+                      {s.logo_url ? (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img src={s.logo_url} alt={numeSim} className="w-full h-full object-contain p-0.5" loading="lazy" />
+                      ) : (
+                        <span className="text-base font-black text-gray-400">{numeSim.charAt(0)}</span>
+                      )}
+                    </div>
+                    <span className="text-[11px] font-semibold text-gray-700 group-hover:text-orange-600 leading-tight line-clamp-1 w-full">{numeSim}</span>
+                    {pctSim > 0 ? (
+                      <span className="text-[10px] font-black text-orange-500">-{pctSim}%</span>
+                    ) : s.cod_cupon ? (
+                      <span className="text-[10px] font-bold text-emerald-600">Cod</span>
+                    ) : s.are_promotie ? (
+                      <span className="text-[10px] text-gray-400">Oferta</span>
+                    ) : null}
+                  </a>
+                );
+              })}
+            </div>
+          </section>
+        )}
+
         {/* BACK LINK */}
         <div className="mt-10 pt-6 border-t border-gray-100 text-center">
           <a href="/" className="text-sm text-gray-400 hover:text-orange-500 transition-colors">
-            ← Înapoi la toate promoțiile
+            ← Inapoi la toate promotiile
           </a>
         </div>
       </div>

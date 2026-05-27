@@ -64,6 +64,11 @@ export async function generateStaticParams() {
   return slugs.map((slug) => ({ slug }));
 }
 
+const LUNI_RO = [
+  "ianuarie","februarie","martie","aprilie","mai","iunie",
+  "iulie","august","septembrie","octombrie","noiembrie","decembrie",
+];
+
 export async function generateMetadata({
   params,
 }: {
@@ -72,17 +77,41 @@ export async function generateMetadata({
   const { slug } = await params;
   const magazine = loadData();
   const mag = magazine.filter((m) => m.categorie_slug === slug);
-  if (!mag.length) return { title: "Categorie negăsită | AmCupon.ro" };
+  if (!mag.length) return { title: "Categorie negasita | AmCupon.ro" };
 
   const numeCateg = NUME_CATEGORIE[slug] || mag[0].categorie;
-  const cuPromo = mag.filter((m) => m.are_promotie).length;
+  const cuPromo   = mag.filter((m) => m.are_promotie).length;
+  const cuCod     = mag.filter((m) => m.cod_cupon).length;
+  const an        = new Date().getFullYear();
+  const luna      = LUNI_RO[new Date().getMonth()];
+  const pageUrl   = `https://amcupon.ro/categorii/${slug}`;
+
+  const title = cuCod > 0
+    ? `Cod Reducere ${numeCateg} ${luna} ${an} — ${cuCod} coduri active | AmCupon.ro`
+    : `Coduri reducere ${numeCateg} ${an} — ${cuPromo} oferte active | AmCupon.ro`;
+
+  const description = `${cuPromo > 0 ? `✅ ${cuPromo} promotii active` : "Promotii verificate"} la ${mag.length} magazine de ${numeCateg} din Romania. ${cuCod > 0 ? `${cuCod} coduri reducere active in ${luna} ${an}. ` : ""}Oferte verificate zilnic pe AmCupon.ro.`;
 
   return {
-    title: `Coduri reducere ${numeCateg} ${new Date().getFullYear()} | AmCupon.ro`,
-    description: `${cuPromo} promoții active la magazinele de ${numeCateg} din România. Coduri de reducere verificate și oferte exclusive.`,
+    title,
+    description,
+    keywords: [
+      `cod reducere ${numeCateg.toLowerCase()}`,
+      `reduceri ${numeCateg.toLowerCase()} ${an}`,
+      `magazine ${numeCateg.toLowerCase()} romania`,
+      `voucher ${numeCateg.toLowerCase()}`,
+      `promotii ${numeCateg.toLowerCase()}`,
+      "coduri reducere romania",
+      "amcupon.ro",
+    ],
+    alternates: { canonical: pageUrl },
     openGraph: {
-      title: `${cuPromo} promoții active — ${numeCateg} | AmCupon.ro`,
-      url: `https://amcupon.ro/categorii/${slug}`,
+      title,
+      description,
+      url: pageUrl,
+      siteName: "AmCupon.ro",
+      locale: "ro_RO",
+      type: "website",
     },
   };
 }
@@ -98,5 +127,96 @@ export default async function PaginaCategorie({
   if (!mag.length) notFound();
 
   const numeCateg = NUME_CATEGORIE[slug] || mag[0].categorie;
-  return <CategorieClient magazine={mag} numeCategorie={numeCateg} slug={slug} />;
+  const cuPromo   = mag.filter((m) => m.are_promotie).length;
+  const cuCod     = mag.filter((m) => m.cod_cupon).length;
+  const an        = new Date().getFullYear();
+  const luna      = LUNI_RO[new Date().getMonth()];
+  const pageUrl   = `https://amcupon.ro/categorii/${slug}`;
+
+  // Top magazine cu cod cupon pentru FAQ
+  const topCoduri = mag.filter((m) => m.cod_cupon).slice(0, 3).map((m) =>
+    m.magazin.split(".")[0].replace(/-/g, " ").split(" ")
+      .map((w: string) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ")
+  );
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "AmCupon.ro", item: "https://amcupon.ro" },
+      { "@type": "ListItem", position: 2, name: "Categorii", item: "https://amcupon.ro/categorii" },
+      { "@type": "ListItem", position: 3, name: numeCateg, item: pageUrl },
+    ],
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: `Unde gasesc coduri de reducere la magazine de ${numeCateg}?`,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `Pe AmCupon.ro gasesti ${cuPromo} promotii active pentru ${mag.length} magazine de ${numeCateg} din Romania. Toate codurile sunt verificate si actualizate zilnic — gratuit.`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: `Cate coduri de reducere ${numeCateg} sunt active in ${luna} ${an}?`,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: cuCod > 0
+            ? `In ${luna} ${an} sunt ${cuCod} coduri de reducere active la magazine de ${numeCateg}${topCoduri.length > 0 ? `, printre care ${topCoduri.join(", ")}` : ""}. AmCupon.ro actualizeaza zilnic toate ofertele.`
+            : `AmCupon.ro urmareste ${cuPromo} promotii active la magazine de ${numeCateg}. Revino zilnic pentru coduri noi.`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: `Cum functioneaza codurile de reducere la magazine de ${numeCateg}?`,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `Copiaza codul de pe AmCupon.ro, adauga produsele in cos pe site-ul magazinului ales, apoi la checkout introdu codul in campul "Cod promotional" sau "Voucher". Reducerea se aplica automat.`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Este AmCupon.ro gratuit?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Da, AmCupon.ro este 100% gratuit pentru cumparatori. Nu platesti nimic in plus. Magazinele ne platesc un mic comision din bugetul lor de marketing.",
+        },
+      },
+    ],
+  };
+
+  const itemListSchema = cuPromo > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: `Magazine ${numeCateg} cu reduceri — ${luna} ${an}`,
+    description: `${cuPromo} promotii active la magazine de ${numeCateg} pe AmCupon.ro`,
+    url: pageUrl,
+    numberOfItems: mag.filter((m) => m.are_promotie).length,
+    itemListElement: mag
+      .filter((m) => m.are_promotie)
+      .slice(0, 10)
+      .map((m, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        url: `https://amcupon.ro/cod-reducere/${m.magazin}`,
+        name: m.magazin.split(".")[0].replace(/-/g, " ").split(" ")
+          .map((w: string) => w.charAt(0).toUpperCase() + w.slice(1)).join(" "),
+      })),
+  } : null;
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      {itemListSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      )}
+      <CategorieClient magazine={mag} numeCategorie={numeCateg} slug={slug} />
+    </>
+  );
 }
