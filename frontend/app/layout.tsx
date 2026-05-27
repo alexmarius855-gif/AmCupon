@@ -68,6 +68,14 @@ const siteJsonLd = {
       "name": "AmCupon.ro",
       "description": "Coduri de reducere verificate și oferte exclusive de la cele mai mari magazine online din România.",
       "inLanguage": "ro-RO",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://amcupon.ro/cautare?q={search_term_string}",
+        },
+        "query-input": "required name=search_term_string",
+      },
     },
     {
       "@type": "Organization",
@@ -75,7 +83,12 @@ const siteJsonLd = {
       "name": "AmCupon.ro",
       "url": "https://amcupon.ro",
       "email": "contact@amcupon.ro",
-      "sameAs": ["https://amcupon.ro"],
+      "logo": "https://amcupon.ro/logo-profile.svg",
+      "sameAs": [
+        "https://www.facebook.com/amcupon.ro",
+        "https://www.instagram.com/amcupon.ro",
+        "https://www.tiktok.com/@amcupon.ro",
+      ],
     },
   ],
 };
