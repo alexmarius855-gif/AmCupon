@@ -3,6 +3,31 @@ import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
 import CategorieClient from "./CategorieClient";
+import NisaProduse from "../../components/NisaProduse";
+
+const CATEG_MERCHANTS: Record<string, string[]> = {
+  "fashion":            ["fashiondays.ro","answear.ro","hm.com","reserved.com","about-you.ro","lc-waikiki.ro","zara.com"],
+  "home-garden":        ["dedeman.ro","ikea.com","leroy-merlin.ro","mobexpert.ro","jysk.ro","hornbach.ro"],
+  "electronics-itc":   ["emag.ro","altex.ro","pcgarage.ro","flanco.ro","cel.ro","evomag.ro"],
+  "beauty":             ["notino.ro","douglas.ro","sephora.ro","makeup.ro","beautik.ro"],
+  "pharma":             ["drmax.ro","vegis.ro","catena.ro","helpnet.ro","farmaciatei.ro"],
+  "babies-kids-toys":  ["noriel.ro","emag.ro","smythstoys.com","bebetei.ro","chicco.ro"],
+  "sports-outdoors":   ["decathlon.ro","sportisimo.ro","sport-vision.ro","intersport.ro","hervis.ro"],
+  "books":              ["libris.ro","elefant.ro","carturesti.ro","librarie.net","bookhub.ro"],
+  "gifts-flowers":     ["floria.ro","noriel.ro","elefant.ro","fashiondays.ro","notino.ro"],
+  "automotive":         ["autonom.ro","autodoc.ro","kfzteile24.ro"],
+  "health-personal-care": ["drmax.ro","vegis.ro","catena.ro"],
+  "pet-supplies":       ["zooplus.ro","animax.ro","petshop.ro"],
+  "jewelry":            ["bijuteria.ro","teilor.ro"],
+  "games":              ["pcgarage.ro","emag.ro"],
+};
+
+const CATEG_CULORI: Record<string, string> = {
+  "fashion": "purple", "home-garden": "green", "electronics-itc": "blue",
+  "beauty": "pink", "pharma": "emerald", "babies-kids-toys": "yellow",
+  "sports-outdoors": "orange", "books": "amber", "gifts-flowers": "rose",
+  "automotive": "gray", "health-personal-care": "teal", "jewelry": "violet",
+};
 
 interface Magazin {
   magazin: string;
@@ -217,6 +242,14 @@ export default async function PaginaCategorie({
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       )}
       <CategorieClient magazine={mag} numeCategorie={numeCateg} slug={slug} />
+      {CATEG_MERCHANTS[slug] && (
+        <NisaProduse
+          merchantSlugs={CATEG_MERCHANTS[slug]}
+          titlu={`Produse populare — ${numeCateg} cu reducere`}
+          culoareAccent={CATEG_CULORI[slug] || "orange"}
+          limit={12}
+        />
+      )}
     </>
   );
 }
