@@ -56,6 +56,8 @@ const CATEGORII = [
 
 const SECTIUNI_SPECIALE = [
   { href: "/gadgets",      emoji: "📡", label: "Gadgets & Tech",   desc: "Smartwatch, casti, drone",         gradient: "from-blue-500 to-indigo-600" },
+  { href: "/fashion",      emoji: "👗", label: "Fashion & Haine",  desc: "FashionDays, Answear, H&M",        gradient: "from-purple-500 to-fuchsia-600" },
+  { href: "/casa",         emoji: "🏡", label: "Casa & Gradina",   desc: "Dedeman, IKEA, Leroy Merlin",      gradient: "from-green-600 to-teal-600" },
   { href: "/moto",         emoji: "🏍️", label: "Auto-Moto",        desc: "Piese, accesorii, anvelope",        gradient: "from-slate-600 to-gray-800" },
   { href: "/idei-cadouri", emoji: "🎁", label: "Idei Cadouri",     desc: "Cadoul perfect la pret mic",        gradient: "from-pink-500 to-purple-600" },
   { href: "/farmacie",     emoji: "💊", label: "Farmacie Online",  desc: "Dr. Max, Vegis, Catena",            gradient: "from-green-500 to-teal-600" },
@@ -274,13 +276,15 @@ export default function Home() {
                 {[
                   { href: "/#promotii",  label: "Promotii active" },
                   { href: "/blog",       label: "Blog" },
+                  { href: "/fashion",    label: "Fashion & Haine" },
+                  { href: "/casa",       label: "Casa & Gradina" },
                   { href: "/farmacie",   label: "Farmacie Online" },
                   { href: "/sport",      label: "Sport & Outdoor" },
                   { href: "/frumusete",  label: "Beauty" },
                   { href: "/calatorie",  label: "Vacante & Travel" },
                   { href: "/copii",      label: "Copii & Jucarii" },
+                  { href: "/gadgets",    label: "Gadgets & Tech" },
                   { href: "/categorii",  label: "Toate categoriile" },
-                  { href: "/despre-noi", label: "Despre noi" },
                 ].map(l => (
                   <a key={l.href} href={l.href} onClick={() => setMenuOpen(false)}
                     className="flex items-center px-3 py-2.5 rounded-xl text-sm font-semibold text-slate-700 hover:bg-orange-50 hover:text-orange-600 transition-colors">
@@ -623,7 +627,7 @@ export default function Home() {
             <p className="text-slate-500 text-sm mt-1.5">Curatate editorial cu cele mai bune oferte pe fiecare nisa</p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
-            {SECTIUNI_SPECIALE.slice(0, 10).map(s => (
+            {SECTIUNI_SPECIALE.map(s => (
               <a key={s.href} href={s.href}
                 className={`group relative bg-gradient-to-br ${s.gradient} rounded-2xl p-5 text-white hover:shadow-xl hover:-translate-y-1 transition-all duration-200 overflow-hidden`}>
                 <div className="absolute top-0 right-0 w-20 h-20 rounded-full bg-white/10 blur-xl transform translate-x-4 -translate-y-4 group-hover:scale-150 transition-transform duration-300 pointer-events-none"/>
@@ -1034,11 +1038,11 @@ export default function Home() {
               </div>
               <div className="flex items-center gap-2">
                 {[
-                  { label: "Facebook",  path: "M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" },
-                  { label: "Instagram", path: "M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01M6.5 19.5h11a3 3 0 003-3v-11a3 3 0 00-3-3h-11a3 3 0 00-3 3v11a3 3 0 003 3z" },
-                  { label: "TikTok",    path: "M9 12a4 4 0 104 4V4a5 5 0 005 5" },
+                  { label: "Facebook",  href: "https://www.facebook.com/amcupon.ro", path: "M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" },
+                  { label: "Instagram", href: "https://www.instagram.com/amcupon.ro", path: "M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01M6.5 19.5h11a3 3 0 003-3v-11a3 3 0 00-3-3h-11a3 3 0 00-3 3v11a3 3 0 003 3z" },
+                  { label: "TikTok",    href: "https://www.tiktok.com/@amcupon.ro",  path: "M9 12a4 4 0 104 4V4a5 5 0 005 5" },
                 ].map(s => (
-                  <a key={s.label} href="#" aria-label={s.label}
+                  <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.label}
                     className="w-8 h-8 rounded-lg bg-white/5 hover:bg-orange-500 flex items-center justify-center transition-colors">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d={s.path}/>
@@ -1089,6 +1093,8 @@ export default function Home() {
               <h3 className="text-slate-300 font-bold text-xs mb-4 uppercase tracking-wider">Pagini speciale</h3>
               <ul className="space-y-2.5 text-sm">
                 {[
+                  { href: "/fashion",          label: "Fashion & Haine" },
+                  { href: "/casa",             label: "Casa & Gradina" },
                   { href: "/farmacie",         label: "Farmacie Online" },
                   { href: "/sport",            label: "Sport & Outdoor" },
                   { href: "/frumusete",        label: "Beauty" },
@@ -1100,7 +1106,6 @@ export default function Home() {
                   { href: "/blog",             label: "Blog" },
                   { href: "/categorii",        label: "Toate categoriile" },
                   { href: "/toate-magazinele", label: "Toate magazinele" },
-                  { href: "/despre-noi",       label: "Despre noi" },
                 ].map(l => (
                   <li key={l.href}><a href={l.href} className="hover:text-orange-400 transition-colors">{l.label}</a></li>
                 ))}
