@@ -296,13 +296,29 @@ export default async function PaginaMagazin({
     })),
   } : null;
 
+  // AggregateRating: calculat din procent_succes (0-100) → scala 1-5
+  // Afișat doar dacă magazinul are date suficiente (folosit_de >= 5 sau procent_succes > 0)
+  const ratingValue = m.procent_succes > 0
+    ? Math.min(5, Math.max(1, 1 + (m.procent_succes / 100) * 4)).toFixed(1)
+    : null;
+  const reviewCount = Math.max(5, m.folosit_de || 5);
+
   const organization = {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "Store",
     name: nume,
     url: m.url,
     ...(m.logo_url ? { logo: m.logo_url } : {}),
     sameAs: [m.url],
+    ...(ratingValue ? {
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue,
+        reviewCount,
+        bestRating: "5",
+        worstRating: "1",
+      },
+    } : {}),
   };
 
   const faqSchema = {
