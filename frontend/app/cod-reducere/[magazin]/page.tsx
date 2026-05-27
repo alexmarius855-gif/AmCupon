@@ -227,8 +227,15 @@ export default async function PaginaMagazin({
   const produse = loadProducts(slug);
 
   // Magazine similare din aceeasi categorie (max 8, prioritate la cele cu promotii)
+  const RETELE_AFILIERE = ["profitshare.ro", "2performant.com"];
   const similare: MagazinSimilar[] = magazine
-    .filter((x) => x.magazin !== slug && x.categorie_slug && x.categorie_slug === m.categorie_slug)
+    .filter((x) =>
+      x.magazin !== slug &&
+      x.categorie_slug &&
+      x.categorie_slug === m.categorie_slug &&
+      !RETELE_AFILIERE.includes(x.magazin) &&
+      !/\s/.test(x.magazin)
+    )
     .sort((a, b) =>
       (b.are_promotie ? 1 : 0) - (a.are_promotie ? 1 : 0) ||
       (a.rank || 999) - (b.rank || 999)
