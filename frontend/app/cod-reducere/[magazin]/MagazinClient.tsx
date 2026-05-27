@@ -1,6 +1,37 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+function CountdownTimer({ zileRamase }: { zileRamase: number }) {
+  const [timeLeft, setTimeLeft] = useState("");
+
+  useEffect(() => {
+    function calc() {
+      const now = new Date();
+      const target = new Date();
+      target.setHours(23, 59, 59, 0);
+      if (zileRamase === 1) target.setDate(target.getDate() + 1);
+      const diff = target.getTime() - now.getTime();
+      if (diff <= 0) { setTimeLeft("Expirat"); return; }
+      const h = Math.floor(diff / 3600000);
+      const m = Math.floor((diff % 3600000) / 60000);
+      const s = Math.floor((diff % 60000) / 1000);
+      setTimeLeft(`${String(h).padStart(2,"0")}:${String(m).padStart(2,"0")}:${String(s).padStart(2,"0")}`);
+    }
+    calc();
+    const interval = setInterval(calc, 1000);
+    return () => clearInterval(interval);
+  }, [zileRamase]);
+
+  return (
+    <span className="inline-flex items-center gap-1.5 text-xs font-black text-red-600 bg-red-50 border border-red-200 px-2.5 py-1 rounded-full animate-pulse">
+      <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+      {zileRamase === 0 ? "Expiră azi" : "Expiră mâine"} — {timeLeft}
+    </span>
+  );
+}
 
 interface Promotie {
   nume: string;
@@ -278,9 +309,12 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [] 
                               Cod Reducere
                             </span>
                           )}
-                          {promo.zile_ramase <= 3 && (
-                            <span className="text-xs font-bold text-red-500 bg-red-50 px-2 py-0.5 rounded-full">
-                              Expiră în {promo.zile_ramase}z
+                          {promo.zile_ramase <= 1 && promo.zile_ramase >= 0 && (
+                            <CountdownTimer zileRamase={promo.zile_ramase} />
+                          )}
+                          {promo.zile_ramase > 1 && promo.zile_ramase <= 3 && (
+                            <span className="text-xs font-bold text-orange-500 bg-orange-50 px-2 py-0.5 rounded-full">
+                              ⚠️ Expiră în {promo.zile_ramase} zile
                             </span>
                           )}
                           {promo.zile_ramase > 3 && (
