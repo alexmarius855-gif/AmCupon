@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 
 interface Promotie {
@@ -137,6 +137,8 @@ export default function Home() {
   const [storeLimit, setStoreLimit]       = useState(12);
   const [filtruActiv, setFiltruActiv]     = useState<"toate"|"cod"|"promotie"|"favorite">("toate");
   const [favorite, setFavorite]           = useState<Set<string>>(new Set());
+  const bannersRef                         = useRef<HTMLDivElement>(null);
+  const trendingRef                        = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     fetch("/output.json").then(r => r.json()).then(data => { setMagazine(data); setLoading(false); });
@@ -570,11 +572,27 @@ export default function Home() {
                 </p>
                 <h2 className="text-3xl font-black tracking-tight text-slate-900">Trending acum</h2>
               </div>
-              <a href="#promotii" className="hidden sm:block text-sm font-bold text-orange-500 hover:text-orange-600 transition-colors">
-                Toate ofertele →
-              </a>
+              <div className="hidden sm:flex items-center gap-2">
+                <button
+                  onClick={() => trendingRef.current?.scrollBy({ left: -520, behavior: "smooth" })}
+                  className="w-8 h-8 rounded-full bg-slate-100 hover:bg-orange-500 hover:text-white flex items-center justify-center transition-colors text-slate-600">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7"/>
+                  </svg>
+                </button>
+                <button
+                  onClick={() => trendingRef.current?.scrollBy({ left: 520, behavior: "smooth" })}
+                  className="w-8 h-8 rounded-full bg-slate-100 hover:bg-orange-500 hover:text-white flex items-center justify-center transition-colors text-slate-600">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
+                  </svg>
+                </button>
+                <a href="#promotii" className="text-sm font-bold text-orange-500 hover:text-orange-600 transition-colors ml-2">
+                  Toate →
+                </a>
+              </div>
             </div>
-            <div className="overflow-x-auto -mx-4 px-4 pb-3" style={{scrollbarWidth:"none"}}>
+            <div ref={trendingRef} className="overflow-x-auto -mx-4 px-4 pb-3" style={{scrollbarWidth:"none", scrollBehavior:"smooth"}}>
               <div className="flex gap-3" style={{minWidth:"max-content"}}>
                 {cuPromotii.slice(0, 12).map(m => {
                   const promo    = m.promotii[0];
@@ -754,17 +772,27 @@ export default function Home() {
                 <p className="text-xs text-slate-400 mt-0.5">Campanii active de la partenerii nostri</p>
               </div>
             </div>
-            <div className="hidden sm:flex items-center gap-1 text-xs text-slate-500">
-              <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/>
-              </svg>
-              <span>Scroll pentru mai multe</span>
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() => bannersRef.current?.scrollBy({ left: -340, behavior: "smooth" })}
+                className="w-8 h-8 rounded-full bg-slate-700 hover:bg-orange-500 flex items-center justify-center transition-colors">
+                <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7"/>
+                </svg>
+              </button>
+              <button
+                onClick={() => bannersRef.current?.scrollBy({ left: 340, behavior: "smooth" })}
+                className="w-8 h-8 rounded-full bg-slate-700 hover:bg-orange-500 flex items-center justify-center transition-colors">
+                <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
+                </svg>
+              </button>
             </div>
           </div>
 
           {/* Carousel orizontal cu scroll snap */}
-          <div className="px-4 overflow-x-auto scrollbar-hide"
-            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
+          <div ref={bannersRef} className="px-4 overflow-x-auto"
+            style={{ scrollbarWidth: "none", msOverflowStyle: "none", scrollBehavior: "smooth" }}>
             <div className="flex gap-3 pb-2"
               style={{ width: "max-content" }}>
               {banners.slice(0, 12).map((b, i) => {
