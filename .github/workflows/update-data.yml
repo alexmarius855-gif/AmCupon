@@ -2,7 +2,8 @@ name: Actualizare Automata Date & Blog
 
 on:
   schedule:
-    - cron: '0 6 * * *'   # Zilnic la 08:00 ora Romaniei (UTC+6)
+    - cron: '0 */4 * * *'  # Date fresh la fiecare 4 ore (00:00, 04:00, 08:00, 12:00, 16:00, 20:00 UTC)
+    - cron: '0 6 * * *'    # Newsletter + Telegram — zilnic la 08:00 ora Romaniei
   workflow_dispatch:        # Buton manual in GitHub → Actions
 
 jobs:
@@ -103,8 +104,9 @@ jobs:
         working-directory: scripts
         run: python generate_best_of.py
 
-      # ── 9. Newsletter zilnic (Brevo SMTP) ────────────────────────────────
+      # ── 9. Newsletter zilnic (Brevo SMTP) — rulat DOAR la 08:00 Romania ────
       - name: Trimite newsletter zilnic
+        if: github.event.schedule == '0 6 * * *' || github.event_name == 'workflow_dispatch'
         working-directory: scripts
         env:
           BREVO_SMTP_USER:    ${{ secrets.BREVO_SMTP_USER }}
@@ -121,8 +123,9 @@ jobs:
             echo "BREVO_SMTP_PASS nu e setat — skip newsletter"
           fi
 
-      # ── 10. Telegram — top oferte zilnice ────────────────────────────────
+      # ── 10. Telegram — top oferte zilnice — rulat DOAR la 08:00 Romania ──
       - name: Postare Telegram canal oferte
+        if: github.event.schedule == '0 6 * * *' || github.event_name == 'workflow_dispatch'
         working-directory: scripts
         env:
           TELEGRAM_BOT_TOKEN:  ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -130,12 +133,23 @@ jobs:
         run: |
           python telegram_daily.py
 
-      # ── 11. Generator continut social media ──────────────────────────────
-      - name: Genereaza continut social media
+      # ── 11. Generator continut social media pe NISE — la 08:00 Romania ────
+      - name: Genereaza continut social media pe nise
+        if: github.event.schedule == '0 6 * * *' || github.event_name == 'workflow_dispatch'
         working-directory: scripts
         run: python generate_social_content.py
 
-      # ── 12. Commit & Push ──────────────────────────────────────────────────
+      # ── 12. Facebook Page auto-posting — la 08:00 Romania ────────────────
+      - name: Postare automata Facebook Page
+        if: github.event.schedule == '0 6 * * *' || github.event_name == 'workflow_dispatch'
+        working-directory: scripts
+        env:
+          FACEBOOK_PAGE_ID:    ${{ secrets.FACEBOOK_PAGE_ID }}
+          FACEBOOK_PAGE_TOKEN: ${{ secrets.FACEBOOK_PAGE_TOKEN }}
+        run: |
+          python post_facebook.py
+
+      # ── 13. Commit & Push ──────────────────────────────────────────────────
       - name: Commit si push date actualizate
         run: |
           git config user.name  "github-actions[bot]"
@@ -147,7 +161,10 @@ jobs:
           git add frontend/public/banners.json     || true
           git add data/output.json                 || true
           git add data/profitshare_output.json     || true
-          git add data/banners_raw_debug.json      || true   # debug — se poate sterge
+          git add data/banners_raw_debug.json      || true
+          git add data/social-content.json         || true
+          git add data/social-content-today.txt    || true
+          git add data/social-nisa-*.txt           || true
 
           if git diff --staged --quiet; then
             echo "Nicio schimbare — skip commit"

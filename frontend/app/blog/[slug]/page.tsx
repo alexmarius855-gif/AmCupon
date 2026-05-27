@@ -212,9 +212,18 @@ export default async function ArticolPage({
           <h1 className="text-2xl md:text-3xl font-black text-gray-900 leading-tight mb-4">{post.title}</h1>
 
           <div className="flex items-center gap-4 text-sm text-gray-400 mb-8 pb-6 border-b border-gray-100">
-            <span>{formatDate(post.date)}</span>
+            <div className="flex items-center gap-2 shrink-0">
+              <Image
+                src="/logo-profile.svg"
+                alt="AmCupon.ro"
+                width={28}
+                height={28}
+                className="rounded-full ring-2 ring-orange-100"
+              />
+              <span className="font-semibold text-gray-700">AmCupon.ro</span>
+            </div>
             <span>·</span>
-            <span>AmCupon.ro</span>
+            <span>{formatDate(post.date)}</span>
             {post.magazin && (
               <>
                 <span>·</span>
