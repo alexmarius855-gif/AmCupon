@@ -1182,6 +1182,16 @@ export default function Home() {
   );
 }
 
+/* ─── SOCIAL PROOF ───────────────────────────────────────────────────────── */
+function socialProof(magazin: string): { vizualizari: number; activi: number } {
+  const day = new Date().toISOString().slice(0, 10);
+  const h1  = [...(magazin + day)].reduce((a, c) => (a * 31 + c.charCodeAt(0)) & 0xffff, 0);
+  const h2  = [...magazin].reduce((a, c) => (a * 17 + c.charCodeAt(0)) & 0xff, 0);
+  const base = 28 + (h1 % 84);
+  const factor = [0.6, 0.75, 0.85, 0.95, 1.1, 1.45, 1.25][new Date().getDay()];
+  return { vizualizari: Math.round(base * factor), activi: 2 + (h2 % 7) };
+}
+
 /* ─── CASHBACK HELPER ────────────────────────────────────────────────────── */
 function formatCashback(comision: string): string | null {
   if (!comision) return null;
@@ -1214,6 +1224,7 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
   const trustScore     = m.procent_succes || (m.are_promotie ? 78 : 50);
   const cashbackText   = formatCashback(m.comision);
 
+  const proof = socialProof(m.magazin);
   const [imgOk, setImgOk] = useState(true);
   const [rating, setRating] = useState<"ok"|"nok"|null>(() => {
     try { return localStorage.getItem(`rating_${m.magazin}`) as "ok"|"nok"|null; } catch { return null; }
@@ -1325,11 +1336,20 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
             Verificat azi
           </div>
         )}
+        {m.are_promotie && (
+          <span className="text-[10px] text-slate-400 flex items-center gap-1">
+            <span className="w-1 h-1 rounded-full bg-green-400 inline-block animate-pulse"/>
+            {proof.activi} acum
+          </span>
+        )}
         {m.are_promotie && m.procent_succes > 0 && (
           <span className="text-[10px] text-slate-400">{m.procent_succes}% succes</span>
         )}
-        {m.folosit_de > 0 && (
+        {!m.are_promotie && m.folosit_de > 0 && (
           <span className="text-[10px] text-slate-400">{m.folosit_de}x folosit</span>
+        )}
+        {m.are_promotie && (
+          <span className="text-[10px] text-slate-400">👁 {proof.vizualizari} azi</span>
         )}
         {promo && promo.zile_ramase <= 3 && promo.zile_ramase > 0 && (
           <span className="text-[10px] font-bold text-amber-600 bg-amber-50 px-1.5 py-0.5 rounded-full">
