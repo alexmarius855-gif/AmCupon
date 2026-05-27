@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useMemo } from "react";
+import ReviewSection from "./ReviewSection";
 
 function CountdownTimer({ zileRamase }: { zileRamase: number }) {
   const [timeLeft, setTimeLeft] = useState("");
@@ -543,6 +544,9 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [] 
             </div>
           </section>
         )}
+
+        {/* RECENZII */}
+        <ReviewSection magazin={m.magazin} />
 
         {/* BACK LINK */}
         <div className="mt-10 pt-6 border-t border-gray-100 text-center">
