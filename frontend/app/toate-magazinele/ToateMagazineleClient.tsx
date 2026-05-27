@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 
 interface Magazin {
   magazin: string;
@@ -66,6 +66,13 @@ const CULORI_BG = [
 export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[] }) {
   const [cautare, setCautare]     = useState("");
   const [categorie, setCategorie] = useState("Toate");
+
+  // Citeste ?q= din URL la mount (permite link direct cu search pre-completat)
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get("q");
+    if (q) setCautare(decodeURIComponent(q));
+  }, []);
   const [filtru, setFiltru]       = useState<"toate" | "cod" | "promotie">("toate");
   const [sortare, setSortare]     = useState<"az" | "reducere" | "rank">("rank");
   const [imgErrors, setImgErrors] = useState<Set<string>>(new Set());

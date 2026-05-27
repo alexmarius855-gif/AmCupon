@@ -3,10 +3,11 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { GoogleAnalytics } from "@next/third-parties/google";
+// GoogleAnalytics mutat in ConsentAnalytics (conditional pe cookie consent)
 import CookieBanner from "./components/CookieBanner";
 import AffiliateScript from "./components/AffiliateScript";
 import NewsletterPopup from "./components/NewsletterPopup";
+import ConsentAnalytics from "./components/ConsentAnalytics";
 import "./globals.css";
 
 // ─── GA4 Measurement ID ───────────────────────────────────────────────────────
@@ -96,14 +97,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://img.2performant.com" />
         <link rel="preconnect" href="https://cdn.2performant.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        {/* Google AdSense — inlocuieste ca-pub-XXXXXXXXXXXXXXXX cu ID-ul tau din AdSense */}
-        {process.env.NEXT_PUBLIC_ADSENSE_ID && (
-          <script
-            async
-            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_ID}`}
-            crossOrigin="anonymous"
-          />
-        )}
+        {/* AdSense + GA4 se incarca prin ConsentAnalytics (conditionat de cookie consent) */}
       </head>
       <body className="min-h-full flex flex-col">
         <div className="bg-gradient-to-r from-red-600 to-orange-500 text-white text-xs font-semibold py-2 px-4 text-center flex items-center justify-center gap-3 flex-wrap">
@@ -114,6 +108,12 @@ export default function RootLayout({
               Descopera promotiile active de azi &rarr;
             </a>
           </span>
+          <a
+            href="/newsletter"
+            className="hidden sm:inline-flex items-center gap-1 bg-white/20 hover:bg-white/30 px-2.5 py-0.5 rounded-full transition-colors"
+          >
+            &#128140; Newsletter gratuit
+          </a>
           <a
             href="https://chromewebstore.google.com/detail/mahfankpalkgognhnllkgdkjncmmkllb"
             target="_blank" rel="noopener noreferrer"
@@ -126,10 +126,20 @@ export default function RootLayout({
         <CookieBanner />
         <AffiliateScript />
         <NewsletterPopup />
+        {/* GA4 + AdSense — incarcate DOAR dupa acceptarea cookie-urilor (GDPR) */}
+        <ConsentAnalytics
+          gaId={GA_ID || undefined}
+          adsenseId={process.env.NEXT_PUBLIC_ADSENSE_ID}
+        />
         <Analytics />
         <SpeedInsights />
+
+        {/* Affiliate disclosure global (obligatoriu legal) */}
+        <p className="sr-only">
+          AmCupon.ro contine link-uri de afiliere. Primim un comision de la magazine
+          atunci cand efectuezi o achizitie prin link-urile noastre, fara costuri suplimentare pentru tine.
+        </p>
       </body>
-      {GA_ID && <GoogleAnalytics gaId={GA_ID} />}
     </html>
   );
 }

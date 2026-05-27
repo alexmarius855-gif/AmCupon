@@ -33,9 +33,9 @@ export default function CookieBanner() {
         <div className="flex-1 text-sm">
           <p className="font-bold text-white mb-0.5">Folosim cookie-uri</p>
           <p className="text-gray-400 leading-relaxed">
-            Folosim cookie-uri tehnice necesare funcționării site-ului și cookie-uri de analiză anonimă (Vercel Analytics) și tracking afiliat (2Performant).{" "}
-            <a href="/termeni#cookies" className="text-orange-400 hover:underline">
-              Politica cookies
+            Folosim cookie-uri pentru analiza traficului (Google Analytics), publicitate (Google AdSense) si tracking afiliat (2Performant). Date anonime, fara vanzare catre terti.{" "}
+            <a href="/confidentialitate" className="text-orange-400 hover:underline">
+              Politica de confidentialitate
             </a>
           </p>
         </div>

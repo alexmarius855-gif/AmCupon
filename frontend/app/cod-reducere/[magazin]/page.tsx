@@ -197,18 +197,18 @@ export async function generateMetadata({
       type: "website",
       images: [
         {
-          url: "/logo-profile.svg",
-          width: 400,
-          height: 400,
+          url: m.logo_url || "/og-image.png",
+          width: m.logo_url ? 400 : 1200,
+          height: m.logo_url ? 400 : 630,
           alt: `Cod reducere ${nume} — AmCupon.ro`,
         },
       ],
     },
     twitter: {
-      card: "summary",
+      card: m.logo_url ? "summary" : "summary_large_image",
       title,
       description,
-      images: ["/logo-profile.svg"],
+      images: [m.logo_url || "/og-image.png"],
     },
   };
 }
