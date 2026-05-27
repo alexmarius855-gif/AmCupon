@@ -95,13 +95,20 @@ function renderNotFound(domain) {
 }
 
 function renderStore(magazin) {
-  const name  = (magazin.magazin_display || magazin.magazin || "").replace(/\b\w/g, c => c.toUpperCase());
-  const logo  = magazin.logo || "";
-  const cod   = magazin.cod_cupon || "";
-  const promo = magazin.promotie  || "";
-  const url   = magazin.url_afiliat || "https://amcupon.ro";
+  // Extrage campuri corecte din output.json
+  const slug = magazin.magazin || "";
+  const name = slug.split(".")[0].replace(/-/g, " ")
+    .split(" ").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
+  const logo  = magazin.logo_url || magazin.logo || "";
+  const promotii = magazin.promotii || [];
+
+  // Gaseste prima promotie cu cod, altfel prima promotie
+  const promoWithCode = promotii.find(p => p.cod_cupon) || null;
+  const firstPromo    = promotii[0] || null;
+  const cod   = promoWithCode?.cod_cupon || "";
+  const url   = promoWithCode?.landing_page || firstPromo?.landing_page || magazin.url_afiliat || magazin.url || "https://amcupon.ro";
   const cash  = formatCashback(magazin.comision);
-  const scor  = magazin.scor_final  || 0;
+  const scor  = magazin.scor_final || 0;
 
   // Logo / initiale
   let logoHtml;
@@ -118,6 +125,7 @@ function renderStore(magazin) {
                    : scor >= 50 ? "&#9733;&#9733; Recomandat"
                    : "&#9733; In baza de date";
 
+  // Cod reducere
   let codHtml = "";
   if (cod) {
     codHtml = `
@@ -128,25 +136,28 @@ function renderStore(magazin) {
       </div>`;
   }
 
+  // Promotii (toate, max 3)
   let promoHtml = "";
-  if (promo) {
-    promoHtml = `
-      <div class="section-title">${cod ? "Detalii oferta" : "Oferta activa"}</div>
-      <div class="promo-text">${promo.slice(0, 150)}${promo.length > 150 ? "..." : ""}</div>`;
+  const promoList = promotii.slice(0, 3);
+  if (promoList.length > 0) {
+    promoHtml = `<div class="section-title">${cod ? "Toate ofertele" : "Oferte active"} (${promotii.length})</div>`;
+    promoList.forEach(p => {
+      const txt = (p.nume || "").slice(0, 120) + ((p.nume || "").length > 120 ? "..." : "");
+      const hasCod = p.cod_cupon && p.cod_cupon !== cod;
+      promoHtml += `<div class="promo-text">${txt}${hasCod ? ` <span style="color:#16a34a;font-weight:700">[${p.cod_cupon}]</span>` : ""}</div>`;
+    });
   }
 
   let cashHtml = "";
-  if (cash && !cod && !promo) {
-    cashHtml = `<div class="cashback-badge">&#8594; ${cash}</div><br>`;
-  } else if (cash && !cod) {
+  if (cash && !cod) {
     cashHtml = `<div class="cashback-badge">&#8594; ${cash}</div><br>`;
   }
 
   const ctaText = cod
-    ? `Mergi la magazin cu codul`
+    ? "Mergi la magazin cu codul"
     : cash
     ? `Mergi la magazin (${cash})`
-    : `Mergi la magazin`;
+    : "Mergi la magazin";
 
   content.innerHTML = `
     <div class="card-top">
@@ -172,12 +183,8 @@ function renderStore(magazin) {
       navigator.clipboard.writeText(cod).then(() => {
         btnCopy.textContent = "Copiat!";
         btnCopy.classList.add("copied");
-        setTimeout(() => {
-          btnCopy.textContent = "Copiaza";
-          btnCopy.classList.remove("copied");
-        }, 2000);
+        setTimeout(() => { btnCopy.textContent = "Copiaza"; btnCopy.classList.remove("copied"); }, 2000);
       }).catch(() => {
-        // Fallback pentru browsere mai vechi
         const el = document.getElementById("couponCode");
         const range = document.createRange();
         range.selectNode(el);
@@ -186,19 +193,15 @@ function renderStore(magazin) {
         document.execCommand("copy");
         btnCopy.textContent = "Copiat!";
         btnCopy.classList.add("copied");
-        setTimeout(() => {
-          btnCopy.textContent = "Copiaza";
-          btnCopy.classList.remove("copied");
-        }, 2000);
+        setTimeout(() => { btnCopy.textContent = "Copiaza"; btnCopy.classList.remove("copied"); }, 2000);
       });
     });
   }
 
-  // Track click pe link (optional analytics)
+  // Track click
   document.getElementById("btnVisit")?.addEventListener("click", () => {
     chrome.storage.local.get("amcupon_clicks", (res) => {
       const clicks = res.amcupon_clicks || {};
-      const slug   = magazin.magazin || "unknown";
       clicks[slug] = (clicks[slug] || 0) + 1;
       chrome.storage.local.set({ amcupon_clicks: clicks });
     });

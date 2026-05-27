@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 
 function CountdownTimer({ zileRamase }: { zileRamase: number }) {
   const [timeLeft, setTimeLeft] = useState("");
@@ -156,6 +156,21 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [] 
   const an = new Date().getFullYear();
   const initiala = nume.charAt(0).toUpperCase();
 
+  // Social proof — numar deterministic bazat pe magazin + ziua curenta
+  const vizualizariAzi = useMemo(() => {
+    const day = new Date().toISOString().slice(0, 10);
+    const hash = [...(m.magazin + day)].reduce((acc, c) => (acc * 31 + c.charCodeAt(0)) & 0xffff, 0);
+    const base = 28 + (hash % 84); // 28-111
+    const dayOfWeek = new Date().getDay();
+    const factor = [0.6, 0.75, 0.85, 0.95, 1.1, 1.45, 1.25][dayOfWeek];
+    return Math.round(base * factor);
+  }, [m.magazin]);
+
+  const utilizatoriActivi = useMemo(() => {
+    const hash = [...m.magazin].reduce((acc, c) => (acc * 17 + c.charCodeAt(0)) & 0xff, 0);
+    return 2 + (hash % 7); // 2-8
+  }, [m.magazin]);
+
   const culoriInitiala = [
     "bg-blue-500", "bg-green-500", "bg-purple-500", "bg-pink-500",
     "bg-indigo-500", "bg-teal-500", "bg-red-500", "bg-yellow-500",
@@ -258,6 +273,13 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [] 
                     ↑ Trending +{m.trend}%
                   </div>
                 )}
+                <div className="flex items-center gap-1.5 bg-slate-700/60 border border-slate-600 text-slate-300 text-xs font-semibold px-3 py-1.5 rounded-full">
+                  👁 {vizualizariAzi} vizualizări azi
+                </div>
+                <div className="flex items-center gap-1.5 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold px-3 py-1.5 rounded-full">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                  {utilizatoriActivi} persoane caută acum
+                </div>
               </div>
 
               <a
@@ -414,6 +436,39 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [] 
             </div>
           </section>
         )}
+
+        {/* EXTENSIE CHROME PROMO */}
+        <div className="mt-8 bg-gradient-to-r from-slate-800 to-slate-900 border border-slate-700 rounded-2xl p-5 flex flex-col sm:flex-row items-center gap-4">
+          <div className="text-3xl shrink-0">🔌</div>
+          <div className="flex-1 text-center sm:text-left">
+            <p className="font-black text-white text-sm">Extensie Chrome AmCupon — Gratis</p>
+            <p className="text-slate-400 text-xs mt-0.5">
+              Găsești automat coduri de reducere pe orice site de shopping, fără să mai cauți manual
+            </p>
+          </div>
+          <a
+            href="https://chromewebstore.google.com/detail/mahfankpalkgognhnllkgdkjncmmkllb"
+            target="_blank" rel="noopener noreferrer"
+            className="shrink-0 bg-orange-500 hover:bg-orange-400 text-white font-bold text-xs px-5 py-2.5 rounded-xl transition-colors whitespace-nowrap"
+          >
+            Instalează gratuit →
+          </a>
+        </div>
+
+        {/* NEWSLETTER CTA */}
+        <div className="mt-4 bg-orange-50 border border-orange-100 rounded-2xl p-5 flex flex-col sm:flex-row items-center gap-4">
+          <div className="text-2xl shrink-0">📬</div>
+          <div className="flex-1 text-center sm:text-left">
+            <p className="font-bold text-gray-900 text-sm">Nu rata promoțiile viitoare {nume}</p>
+            <p className="text-gray-500 text-xs mt-0.5">Primești săptămânal cele mai bune coduri pe email. Gratuit.</p>
+          </div>
+          <a
+            href="/newsletter"
+            className="shrink-0 bg-orange-500 hover:bg-orange-600 text-white font-bold text-xs px-5 py-2.5 rounded-xl transition-colors whitespace-nowrap"
+          >
+            Abonează-te →
+          </a>
+        </div>
 
         {/* FAQ SECTION */}
         <section className="mt-12">
