@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
+import NisaProduse from "../components/NisaProduse";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -144,6 +145,13 @@ export default function FrumusetePage() {
             })}
           </div>
         </section>
+
+        <NisaProduse
+          merchantSlugs={["notino.ro","douglas.ro","sephora.ro","makeup.ro","beautik.ro"]}
+          titlu="Produse beauty populare cu reducere"
+          culoareAccent="pink"
+          limit={12}
+        />
 
         {/* SEO */}
         <section className="bg-gray-50 border-t border-gray-200 py-10 px-4">

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
+import NisaProduse from "../components/NisaProduse";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -200,6 +201,13 @@ export default function GadgetsPage() {
             </div>
           </section>
         </div>
+
+        <NisaProduse
+          merchantSlugs={["emag.ro","altex.ro","flanco.ro","quickmobile.ro","cel.ro","pcgarage.ro","evomag.ro"]}
+          titlu="Gadgets populare cu reducere"
+          culoareAccent="blue"
+          limit={12}
+        />
 
         <footer className="border-t border-gray-200 py-6 text-center text-xs text-gray-400 mt-4">
           © {an} AmCupon.ro · <a href="/" className="hover:text-orange-500">Acasă</a>

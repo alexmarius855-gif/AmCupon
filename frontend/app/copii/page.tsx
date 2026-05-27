@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
+import NisaProduse from "../components/NisaProduse";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -140,6 +141,13 @@ export default function CopiiPage() {
             })}
           </div>
         </section>
+
+        <NisaProduse
+          merchantSlugs={["noriel.ro","emag.ro","smythstoys.com","bebetei.ro","bebe-tei.ro","chicco.ro"]}
+          titlu="Jucarii si produse copii cu reducere"
+          culoareAccent="yellow"
+          limit={12}
+        />
 
         {/* SEO */}
         <section className="bg-gray-50 border-t border-gray-200 py-10 px-4">

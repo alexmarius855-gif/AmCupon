@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
+import NisaProduse from "../components/NisaProduse";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -141,6 +142,13 @@ export default function SportPage() {
             </div>
           )}
         </section>
+
+        <NisaProduse
+          merchantSlugs={["decathlon.ro","sportisimo.ro","sport-vision.ro","intersport.ro","hervis.ro","gigasport.ro"]}
+          titlu="Echipament sport popular cu reducere"
+          culoareAccent="orange"
+          limit={12}
+        />
 
         {/* SEO */}
         <section className="bg-gray-50 border-t border-gray-200 py-10 px-4">

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
+import NisaProduse from "../components/NisaProduse";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -137,6 +138,13 @@ export default function ElectronicePage() {
             })}
           </div>
         </section>
+
+        <NisaProduse
+          merchantSlugs={["emag.ro","altex.ro","pcgarage.ro","flanco.ro","cel.ro","evomag.ro","vexio.ro"]}
+          titlu="Produse populare — Electronice cu reducere"
+          culoareAccent="blue"
+          limit={12}
+        />
 
         <section className="bg-gray-50 border-t border-gray-200 py-10 px-4">
           <div className="max-w-3xl mx-auto">
