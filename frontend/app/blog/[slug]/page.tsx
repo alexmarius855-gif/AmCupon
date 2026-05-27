@@ -99,14 +99,27 @@ export async function generateMetadata({
   const post = posts.find((p) => p.slug === slug);
   if (!post) return { title: "Articol negăsit | AmCupon.ro" };
 
+  const pageUrl = `https://amcupon.ro/blog/${slug}`;
   return {
     title: `${post.title} | AmCupon.ro`,
     description: post.excerpt,
+    alternates: { canonical: pageUrl },
     openGraph: {
       title: post.title,
       description: post.excerpt,
-      url: `https://amcupon.ro/blog/${slug}`,
-      images: [{ url: post.cover }],
+      url: pageUrl,
+      siteName: "AmCupon.ro",
+      locale: "ro_RO",
+      type: "article",
+      publishedTime: post.date,
+      authors: ["AmCupon.ro"],
+      images: [{ url: post.cover, width: 1200, height: 630, alt: post.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: [post.cover],
     },
   };
 }
@@ -136,16 +149,38 @@ export default async function ArticolPage({
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
+    "@id": `https://amcupon.ro/blog/${slug}#article`,
     headline: post.title,
     description: post.excerpt,
-    image: post.cover,
+    url: `https://amcupon.ro/blog/${slug}`,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://amcupon.ro/blog/${slug}`,
+    },
+    image: {
+      "@type": "ImageObject",
+      url: post.cover,
+      width: 1200,
+      height: 630,
+    },
     datePublished: post.date,
     dateModified: post.date,
-    author: { "@type": "Organization", name: "AmCupon.ro" },
+    inLanguage: "ro-RO",
+    author: {
+      "@type": "Organization",
+      name: "Echipa AmCupon.ro",
+      url: "https://amcupon.ro/despre-noi",
+    },
     publisher: {
       "@type": "Organization",
       name: "AmCupon.ro",
-      logo: { "@type": "ImageObject", url: "https://amcupon.ro/favicon.ico" },
+      url: "https://amcupon.ro",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://amcupon.ro/logo-profile.svg",
+        width: 512,
+        height: 512,
+      },
     },
   };
 

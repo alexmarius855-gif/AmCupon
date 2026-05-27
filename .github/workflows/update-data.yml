@@ -121,7 +121,21 @@ jobs:
             echo "BREVO_SMTP_PASS nu e setat — skip newsletter"
           fi
 
-      # ── 10. Commit & Push ──────────────────────────────────────────────────
+      # ── 10. Telegram — top oferte zilnice ────────────────────────────────
+      - name: Postare Telegram canal oferte
+        working-directory: scripts
+        env:
+          TELEGRAM_BOT_TOKEN:  ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+        run: |
+          python telegram_daily.py
+
+      # ── 11. Generator continut social media ──────────────────────────────
+      - name: Genereaza continut social media
+        working-directory: scripts
+        run: python generate_social_content.py
+
+      # ── 12. Commit & Push ──────────────────────────────────────────────────
       - name: Commit si push date actualizate
         run: |
           git config user.name  "github-actions[bot]"

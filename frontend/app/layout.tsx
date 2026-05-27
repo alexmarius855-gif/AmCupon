@@ -8,6 +8,7 @@ import CookieBanner from "./components/CookieBanner";
 import AffiliateScript from "./components/AffiliateScript";
 import NewsletterPopup from "./components/NewsletterPopup";
 import ConsentAnalytics from "./components/ConsentAnalytics";
+import WebPushInit from "./components/WebPushInit";
 import "./globals.css";
 
 // ─── GA4 Measurement ID ───────────────────────────────────────────────────────
@@ -131,6 +132,8 @@ export default function RootLayout({
           gaId={GA_ID || undefined}
           adsenseId={process.env.NEXT_PUBLIC_ADSENSE_ID}
         />
+        {/* Web Push — OneSignal (setare NEXT_PUBLIC_ONESIGNAL_APP_ID in Vercel) */}
+        <WebPushInit appId={process.env.NEXT_PUBLIC_ONESIGNAL_APP_ID} />
         <Analytics />
         <SpeedInsights />
 

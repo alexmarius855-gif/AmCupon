@@ -15,8 +15,32 @@ export default function NewsletterPopup() {
     const closed     = parseInt(localStorage.getItem("nl_closed") || "0");
     if (subscribed || closed >= 2) return;
 
-    const t = setTimeout(() => setVisible(true), 40000);
-    return () => clearTimeout(t);
+    let triggered = false;
+    function show() {
+      if (!triggered) { triggered = true; setVisible(true); }
+    }
+
+    // 1. Timer fallback — 25 secunde
+    const timer = setTimeout(show, 25000);
+
+    // 2. Exit-intent — mouse paraseste viewport prin sus
+    function onMouseLeave(e: MouseEvent) {
+      if (e.clientY <= 5) show();
+    }
+    document.addEventListener("mouseleave", onMouseLeave);
+
+    // 3. Scroll 55% din pagina
+    function onScroll() {
+      const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+      if (pct >= 0.55) show();
+    }
+    window.addEventListener("scroll", onScroll, { passive: true });
+
+    return () => {
+      clearTimeout(timer);
+      document.removeEventListener("mouseleave", onMouseLeave);
+      window.removeEventListener("scroll", onScroll);
+    };
   }, []);
 
   useEffect(() => {
