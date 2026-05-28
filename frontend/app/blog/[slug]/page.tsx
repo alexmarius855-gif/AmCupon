@@ -257,6 +257,17 @@ export default async function ArticolPage({
             </div>
           )}
 
+          {/* Newsletter CTA */}
+          <div className="mt-10 p-6 bg-slate-950 rounded-2xl text-center">
+            <p className="text-sm font-black text-orange-400 uppercase tracking-widest mb-2">Newsletter gratuit</p>
+            <h3 className="text-xl font-black text-white mb-2">Primeste coduri noi direct pe email</h3>
+            <p className="text-slate-400 text-sm mb-5">600+ magazine monitorizate zilnic. Zero spam.</p>
+            <a href="/newsletter"
+              className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-400 text-white font-bold px-6 py-3 rounded-xl text-sm transition-colors">
+              Aboneaza-te gratuit &rarr;
+            </a>
+          </div>
+
           {/* Share buttons */}
           <div className="mt-10 pt-6 border-t border-gray-100">
             <p className="text-sm font-bold text-gray-500 mb-3 text-center">Distribuie articolul</p>
