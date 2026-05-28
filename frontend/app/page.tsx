@@ -64,6 +64,8 @@ const SECTIUNI_SPECIALE = [
   { href: "/sport",        emoji: "🏃", label: "Sport & Outdoor",  desc: "Decathlon, Hervis, Intersport",     gradient: "from-orange-500 to-amber-600" },
   { href: "/copii",        emoji: "👶", label: "Copii & Jucarii",  desc: "Noriel, Bebetei, Smyths",           gradient: "from-yellow-400 to-orange-500" },
   { href: "/frumusete",    emoji: "💄", label: "Beauty",           desc: "Notino, Douglas, Sephora",          gradient: "from-pink-400 to-rose-600" },
+  { href: "/sanatate",     emoji: "🌿", label: "Sanatate",         desc: "Vitamine, naturiste, suplimente",   gradient: "from-green-500 to-teal-600" },
+  { href: "/animale",      emoji: "🐾", label: "Animale",          desc: "Petmart, Petmax, hrana animale",    gradient: "from-amber-500 to-orange-600" },
   { href: "/calatorie",    emoji: "✈️", label: "Vacante & Travel", desc: "Booking, Airbnb, Trip.com",         gradient: "from-sky-500 to-blue-600" },
   { href: "/black-friday", emoji: "🖤", label: "Black Friday",     desc: "Cele mai mari reduceri",            gradient: "from-gray-900 to-black" },
   { href: "/craciun",      emoji: "🎄", label: "Craciun",          desc: "Oferte de sarbatori",               gradient: "from-red-600 to-green-700" },
@@ -290,6 +292,8 @@ export default function Home() {
                   { href: "/calatorie",  label: "Vacante & Travel" },
                   { href: "/copii",      label: "Copii & Jucarii" },
                   { href: "/gadgets",    label: "Gadgets & Tech" },
+                  { href: "/sanatate",   label: "Sanatate & Naturiste" },
+                  { href: "/animale",    label: "Animale de Companie" },
                   { href: "/categorii",  label: "Toate categoriile" },
                 ].map(l => (
                   <a key={l.href} href={l.href} onClick={() => setMenuOpen(false)}
@@ -1126,6 +1130,8 @@ export default function Home() {
               <ul className="space-y-2.5 text-sm">
                 {[
                   { href: "/oferte-azi",        label: "Oferte de Azi" },
+                  { href: "/sanatate",          label: "Sanatate & Naturiste" },
+                  { href: "/animale",           label: "Animale de Companie" },
                   { href: "/fashion",          label: "Fashion & Haine" },
                   { href: "/casa",             label: "Casa & Gradina" },
                   { href: "/farmacie",         label: "Farmacie Online" },

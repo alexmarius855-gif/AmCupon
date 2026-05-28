@@ -46,6 +46,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/extensie`,              lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/casa`,                  lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
     { url: `${BASE_URL}/fashion`,               lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
+    { url: `${BASE_URL}/sanatate`,              lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
+    { url: `${BASE_URL}/animale`,               lastModified: new Date(), changeFrequency: "daily",   priority: 0.8  },
 
     // ─── Pagini nisa (/nisa/[slug]) ──────────────────────────────────────────
     ...NISA_SLUGURI.map((slug) => ({
