@@ -191,6 +191,7 @@ jobs:
             echo "Nicio schimbare — skip commit"
           else
             git commit -m "chore: actualizare automata $(date -u +%Y-%m-%d)"
+            git pull --rebase origin main || true
             git push
             echo "✅ Date noi publicate — Vercel redeploys automat"
           fi
