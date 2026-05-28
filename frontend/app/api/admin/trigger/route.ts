@@ -2,7 +2,7 @@ import { cookies } from "next/headers";
 
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "";
 const GITHUB_TOKEN   = process.env.ADMIN_GITHUB_TOKEN || process.env.GITHUB_TOKEN || "";
-const GITHUB_REPO    = process.env.GITHUB_REPO || "alexmarius855/afiliere-site";
+const GITHUB_REPO    = process.env.GITHUB_REPO || "alexmarius855-gif/AmCupon";
 
 async function checkAuth(): Promise<boolean> {
   if (!ADMIN_PASSWORD) return false;
