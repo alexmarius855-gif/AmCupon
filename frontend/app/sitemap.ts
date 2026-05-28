@@ -23,6 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     // ─── Pagini principale ───────────────────────────────────────────────────
     { url: BASE_URL,                             lastModified: new Date(), changeFrequency: "daily",   priority: 1.0 },
+    { url: `${BASE_URL}/oferte-azi`,             lastModified: new Date(), changeFrequency: "daily",   priority: 0.95 },
     { url: `${BASE_URL}/black-friday`,           lastModified: new Date(), changeFrequency: "daily",   priority: 0.95 },
     { url: `${BASE_URL}/produse`,                lastModified: new Date(), changeFrequency: "daily",   priority: 0.9 },
     { url: `${BASE_URL}/toate-magazinele`,       lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },

@@ -217,7 +217,10 @@ export default function Home() {
           </div>
 
           <nav className="hidden md:flex items-center gap-5 text-sm font-semibold text-slate-600 ml-auto">
-            <a href="#promotii" className="hover:text-orange-500 transition-colors">Promotii</a>
+            <a href="/oferte-azi" className="flex items-center gap-1 text-orange-500 hover:text-orange-600 transition-colors font-bold">
+              <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse" />
+              Oferte azi
+            </a>
             <a href="/produse"  className="hover:text-orange-500 transition-colors">Produse</a>
             <a href="/blog"     className="hover:text-orange-500 transition-colors">Blog</a>
             <div className="relative group">
@@ -276,6 +279,7 @@ export default function Home() {
               </div>
               <nav className="space-y-1">
                 {[
+                  { href: "/oferte-azi",  label: "🔥 Oferte de azi" },
                   { href: "/#promotii",  label: "Promotii active" },
                   { href: "/blog",       label: "Blog" },
                   { href: "/fashion",    label: "Fashion & Haine" },
@@ -1121,6 +1125,7 @@ export default function Home() {
               <h3 className="text-slate-300 font-bold text-xs mb-4 uppercase tracking-wider">Pagini speciale</h3>
               <ul className="space-y-2.5 text-sm">
                 {[
+                  { href: "/oferte-azi",        label: "Oferte de Azi" },
                   { href: "/fashion",          label: "Fashion & Haine" },
                   { href: "/casa",             label: "Casa & Gradina" },
                   { href: "/farmacie",         label: "Farmacie Online" },
