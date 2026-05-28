@@ -128,7 +128,6 @@ export default function MotoPage() {
               {cuPromo.length > 0 && (
                 <section className="mb-8">
                   <div className="flex items-center gap-3 mb-4">
-                    <span className="bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-full">LIVE</span>
                     <h2 className="text-xl font-black text-gray-900">Oferte active</h2>
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

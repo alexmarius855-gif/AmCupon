@@ -91,7 +91,7 @@ export default function SportPage() {
         {/* MAGAZINE */}
         <section className="max-w-6xl mx-auto px-4 py-10">
           <div className="flex items-center gap-3 mb-5">
-            {cuPromo.length > 0 && <span className="bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-full animate-pulse">LIVE</span>}
+            
             <h2 className="text-xl font-black text-gray-900">Magazine sport cu reduceri active</h2>
           </div>
           {magazine.length === 0 ? (

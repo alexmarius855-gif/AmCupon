@@ -305,7 +305,6 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [] 
         {m.promotii.length > 0 ? (
           <section>
             <div className="flex items-center gap-3 mb-5">
-              <span className="bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-full">LIVE</span>
               <h2 className="text-xl font-black text-gray-900">Promoții Active {an}</h2>
               <span className="text-sm text-gray-400">{m.promotii.length} oferte</span>
             </div>
