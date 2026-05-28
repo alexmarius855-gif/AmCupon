@@ -60,6 +60,7 @@ jobs:
             echo "Nicio schimbare"
           else
             git commit -m "chore: agent-content output $(date -u +%Y-%m-%d) [${{ github.event.inputs.agent_type }}]"
+            git pull --rebase origin main || true
             git push
             echo "✅ Output agent publicat"
           fi
