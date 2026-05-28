@@ -18,8 +18,8 @@ LUNI_RO = {
     9: "Septembrie", 10: "Octombrie", 11: "Noiembrie", 12: "Decembrie",
 }
 
-MAX_POSTS = 120
-POSTS_PER_RUN = 8  # articole noi per rulare
+MAX_POSTS = 500       # max total articole in blog-posts.json
+POSTS_PER_RUN = 30   # articole noi per rulare (6 rulari/zi = 180/zi pana acoperim toti)
 
 # Categorii pentru care generam articole roundup
 CATEGORII_ROUNDUP = [
@@ -367,6 +367,7 @@ def main():
                 print(f"Generat categorie: {art['title']}")
 
     # ── 3. Articole per magazin (top cu promotii) ──────────────────────────────
+    # ── 3a. Magazine cu promotii active ───────────────────────────────────────
     cu_promotii = [
         m for m in magazine
         if m.get("are_promotie") and m.get("promotii")
@@ -383,6 +384,29 @@ def main():
             sluguri_existente.add(slug)
             generate_count += 1
             print(f"Generat magazin: {art['title']}")
+
+    # ── 3b. Magazine TOP fara promotii — scop SEO (cashback + brand awareness) ─
+    # Aceste magazine rankeaza pe "cod reducere [brand]" chiar fara promotii active
+    top_fara_promo = [
+        m for m in magazine
+        if not m.get("are_promotie")
+        and m.get("scor_final", 0) > 40
+        and " " not in m.get("magazin", "")      # skip sluguri invalide
+        and "/" not in m.get("magazin", "")       # skip sluguri cu path
+        and len(m.get("magazin", "")) > 3         # skip sluguri goale/scurte
+    ]
+    top_fara_promo.sort(key=lambda x: x.get("scor_final", 0), reverse=True)
+
+    for store in top_fara_promo:
+        if generate_count >= POSTS_PER_RUN:
+            break
+        slug = slug_articol_magazin(store["magazin"], luna, an)
+        if slug not in sluguri_existente:
+            art = genereaza_articol_magazin(store, luna, an)
+            noi.append(art)
+            sluguri_existente.add(slug)
+            generate_count += 1
+            print(f"Generat magazin (SEO top): {art['title']}")
 
     # Insereaza articolele noi la inceput si limiteaza la MAX_POSTS
     all_posts = noi + posts
