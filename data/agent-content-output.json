@@ -1,5 +1,15 @@
 [
   {
+    "timestamp": "2026-05-28T19:30:52.514178",
+    "results": [
+      {
+        "type": "blog_ideas",
+        "date": "2026-05-28",
+        "content": "[MOCK RESPONSE — seteaza ANTHROPIC_API_KEY]\n\nPrompt: \nEsti un expert in marketing afiliat si content creation pentru Romania.\nSite-ul se numeste AmCupon...."
+      }
+    ]
+  },
+  {
     "timestamp": "2026-05-28T19:24:03.957098",
     "results": [
       {
