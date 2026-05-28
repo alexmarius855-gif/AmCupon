@@ -59,7 +59,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // ─── Tool pages ─────────────────────────────────────────────────────────
     { url: `${BASE_URL}/top-reduceri`,            lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
-    { url: `${BASE_URL}/calculator`,              lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/calculator`,              lastModified: new Date(), changeFrequency: "monthly", priority: 0.75 },
 
     // ─── Pagini utilitare ────────────────────────────────────────────────────
     { url: `${BASE_URL}/cautare`,                 lastModified: new Date(), changeFrequency: "monthly", priority: 0.4 },
