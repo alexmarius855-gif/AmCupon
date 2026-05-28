@@ -390,7 +390,7 @@ def main():
     top_fara_promo = [
         m for m in magazine
         if not m.get("are_promotie")
-        and m.get("scor_final", 0) > 40
+        and m.get("scor_final", 0) > 10
         and " " not in m.get("magazin", "")      # skip sluguri invalide
         and "/" not in m.get("magazin", "")       # skip sluguri cu path
         and len(m.get("magazin", "")) > 3         # skip sluguri goale/scurte
