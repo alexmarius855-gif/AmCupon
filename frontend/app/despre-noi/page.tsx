@@ -1,8 +1,18 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Despre noi | AmCupon.ro",
-  description: "Aflați cum funcționează AmCupon.ro — platforma de coduri de reducere verificate din România. 600+ magazine partenere, actualizare zilnică, 100% gratuit.",
+  title: "Despre AmCupon.ro — Platforma de Coduri Reducere din Romania",
+  description: "AmCupon.ro este platforma de coduri de reducere verificate din Romania. 600+ magazine partenere, actualizare zilnica automata, 100% gratuit pentru cumparatori.",
+  keywords: ["despre amcupon","cum functioneaza coduri reducere","platforma reduceri romania","coduri verificate automat"],
+  alternates: { canonical: "https://amcupon.ro/despre-noi" },
+  openGraph: {
+    title: "Despre AmCupon.ro — Cum functioneaza",
+    description: "600+ magazine partenere, coduri verificate zilnic, 100% gratuit.",
+    url: "https://amcupon.ro/despre-noi",
+    siteName: "AmCupon.ro",
+    locale: "ro_RO",
+    type: "website",
+  },
 };
 
 const PASI = [

@@ -229,6 +229,25 @@ export default function MotoPage() {
           limit={12}
         />
 
+        <section className="max-w-6xl mx-auto px-4 py-8">
+          <h2 className="text-base font-black text-gray-700 mb-4">Exploreaza si alte categorii</h2>
+          <div className="flex flex-wrap gap-2">
+            {[
+              { href: "/gadgets", label: "📡 Gadgets" },
+              { href: "/sport", label: "🏃 Sport" },
+              { href: "/electronice", label: "💻 Electronice" },
+              { href: "/sanatate", label: "🌿 Sanatate" },
+              { href: "/categorii", label: "📂 Categorii" },
+              { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
+            ].map(l => (
+              <a key={l.href} href={l.href}
+                className="bg-gray-100 hover:bg-orange-50 hover:text-orange-600 text-gray-700 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-gray-200 hover:border-orange-200">
+                {l.label}
+              </a>
+            ))}
+          </div>
+        </section>
+
         <footer className="border-t border-gray-200 py-6 text-center text-xs text-gray-400 mt-4">
           © {an} AmCupon.ro · <a href="/" className="hover:text-orange-500">Acasă</a>
           {" · "}<a href="/gadgets" className="hover:text-orange-500">Gadgets</a>
