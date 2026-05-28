@@ -67,6 +67,7 @@ export default function ReviewSection({ magazin }: { magazin: string }) {
       nume: nume.trim() || "Anonim",
       stele,
       text: text.trim(),
+      aprobat: false,  // necesita moderare manuala in Supabase dashboard
     });
     setSubmitting(false);
     if (error) { setEroare("Eroare la trimitere. Incearca din nou."); return; }
