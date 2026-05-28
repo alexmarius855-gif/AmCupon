@@ -2,414 +2,521 @@
 
 import { useEffect, useState, useCallback } from "react";
 
-interface SiteStats {
-  totalMagazine: number;
-  cuPromotii: number;
-  cuCod: number;
-  totalPromotii: number;
-  lastUpdate: string;
-}
-
-interface GithubRun {
-  id: number;
-  name: string;
-  status: string;
-  conclusion: string | null;
-  createdAt: string;
-  updatedAt: string;
-  url: string;
-}
-
-interface BrevoStats {
-  subscribers: number;
-  blacklisted: number;
-  listName: string;
-}
-
-interface TopProduse {
-  categorii: number;
-  produse: number;
-  updated: string;
-}
-
+/* ─── Types ─────────────────────────────────────────────── */
+interface SiteStats { totalMagazine:number; cuPromotii:number; cuCod:number; lastUpdate:string; }
+interface GithubRun { id:number; name:string; status:string; conclusion:string|null; updatedAt:string; url:string; }
+interface BrevoStats { subscribers:number; listName:string; }
 interface StatusData {
-  ok: boolean;
-  timestamp: string;
-  site: SiteStats | null;
-  github: GithubRun[] | null;
-  brevo: BrevoStats | null;
-  topProduse: TopProduse | null;
-  env: { hasGithubToken: boolean; hasBrevoKey: boolean; hasAdminPass: boolean };
+  ok:boolean; timestamp:string;
+  site:SiteStats|null; github:GithubRun[]|null; brevo:BrevoStats|null;
+  env:{ hasGithubToken:boolean; hasBrevoKey:boolean; };
 }
+type NavItem = "agents"|"tasks"|"memory"|"logs"|"links";
 
-function timeAgo(iso: string): string {
-  const diff = (Date.now() - new Date(iso).getTime()) / 1000;
-  if (diff < 60) return `acum ${Math.round(diff)}s`;
-  if (diff < 3600) return `acum ${Math.round(diff / 60)}m`;
-  if (diff < 86400) return `acum ${Math.round(diff / 3600)}h`;
-  return `acum ${Math.round(diff / 86400)}z`;
-}
-
-function StatusBadge({ status, conclusion }: { status: string; conclusion: string | null }) {
-  if (status === "in_progress" || status === "queued") {
-    return (
-      <span className="flex items-center gap-1.5 text-yellow-400 text-xs font-bold">
-        <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 animate-pulse" />
-        RUNNING
-      </span>
-    );
-  }
-  if (conclusion === "success") {
-    return (
-      <span className="flex items-center gap-1.5 text-emerald-400 text-xs font-bold">
-        <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-        SUCCESS
-      </span>
-    );
-  }
-  if (conclusion === "failure") {
-    return (
-      <span className="flex items-center gap-1.5 text-red-400 text-xs font-bold">
-        <span className="w-1.5 h-1.5 rounded-full bg-red-400" />
-        FAILED
-      </span>
-    );
-  }
-  return (
-    <span className="text-slate-400 text-xs font-bold">{conclusion || status}</span>
-  );
-}
-
+/* ─── Agent definitions ─────────────────────────────────── */
 const AGENTS = [
   {
-    id:    "content",
-    emoji: "📝",
-    label: "Agent Continut",
-    desc:  "Genereaza script YouTube + idei blog",
-    color: "violet",
+    id:      "nexus",
+    name:    "NEXUS",
+    role:    "Data & Sync",
+    model:   "claude-haiku",
+    color:   "#00f5d4",
+    bg:      "from-cyan-900/40 to-slate-900",
+    border:  "border-cyan-500/30",
+    glow:    "shadow-cyan-500/20",
+    desc:    "NEXUS actualizeaza magazine, promotii si merge toate platformele de afiliere. Ruleaza de 4 ori pe zi.",
+    skills:  ["Scraper","Merge","2Performant","Profitshare","Auto"],
+    avatar:  "N",
+    avatarBg:"#00f5d4",
+    workflow:"update-data",
+    agentType: null,
+    status:  "idle",
   },
   {
-    id:    "business",
-    emoji: "💡",
-    label: "Agent Business",
-    desc:  "Analizeaza oportunitati de afaceri",
-    color: "amber",
+    id:      "echo",
+    name:    "ECHO",
+    role:    "Content & YouTube",
+    model:   "claude-sonnet",
+    color:   "#ff3cac",
+    bg:      "from-pink-900/40 to-slate-900",
+    border:  "border-pink-500/30",
+    glow:    "shadow-pink-500/20",
+    desc:    "ECHO genereaza scripturi complete YouTube, articole SEO, idei blog si ghiduri de cumparare.",
+    skills:  ["YouTube","Blog","SEO","Creative","Scripts"],
+    avatar:  "E",
+    avatarBg:"#ff3cac",
+    workflow:"run-agent",
+    agentType:"youtube",
+    status:  "idle",
   },
   {
-    id:    "social",
-    emoji: "📱",
-    label: "Agent Social Media",
-    desc:  "Postari Instagram, TikTok, Facebook",
-    color: "pink",
+    id:      "pulse",
+    name:    "PULSE",
+    role:    "Social & Newsletter",
+    model:   "claude-haiku",
+    color:   "#f7971e",
+    bg:      "from-orange-900/40 to-slate-900",
+    border:  "border-orange-500/30",
+    glow:    "shadow-orange-500/20",
+    desc:    "PULSE creeaza continut pentru Instagram, TikTok, Facebook si campanii email pentru abonati.",
+    skills:  ["Instagram","TikTok","Email","Growth","Viral"],
+    avatar:  "P",
+    avatarBg:"#f7971e",
+    workflow:"run-agent",
+    agentType:"social",
+    status:  "idle",
   },
   {
-    id:    "update-data",
-    emoji: "🔄",
-    label: "Actualizeaza Date",
-    desc:  "Ruleaza pipeline complet de date",
-    color: "blue",
+    id:      "sigma",
+    name:    "SIGMA",
+    role:    "Business & Strategy",
+    model:   "claude-opus",
+    color:   "#784ba0",
+    bg:      "from-violet-900/40 to-slate-900",
+    border:  "border-violet-500/30",
+    glow:    "shadow-violet-500/20",
+    desc:    "SIGMA analizeaza oportunitati de business, strategii de crestere si idei de monetizare noi.",
+    skills:  ["Business","Strategy","Analytics","Research","Ideas"],
+    avatar:  "S",
+    avatarBg:"#784ba0",
+    workflow:"run-agent",
+    agentType:"business",
+    status:  "idle",
   },
 ];
 
+/* ─── Helpers ───────────────────────────────────────────── */
+function timeAgo(iso:string):string {
+  const d=(Date.now()-new Date(iso).getTime())/1000;
+  if(d<60) return `${Math.round(d)}s`;
+  if(d<3600) return `${Math.round(d/60)}m`;
+  if(d<86400) return `${Math.round(d/3600)}h`;
+  return `${Math.round(d/86400)}z`;
+}
+function runColor(r:GithubRun) {
+  if(r.status==="in_progress"||r.status==="queued") return "#f7971e";
+  if(r.conclusion==="success") return "#00f5d4";
+  if(r.conclusion==="failure") return "#ff3cac";
+  return "#666";
+}
+function runLabel(r:GithubRun) {
+  if(r.status==="in_progress") return "RUNNING";
+  if(r.status==="queued")      return "QUEUED";
+  return (r.conclusion||r.status).toUpperCase();
+}
+
+/* ─── Avatar SVG ────────────────────────────────────────── */
+function AgentAvatar({ letter, color }: { letter:string; color:string }) {
+  return (
+    <div className="relative w-14 h-14 rounded-xl overflow-hidden shrink-0"
+      style={{ background: `linear-gradient(135deg, ${color}22, ${color}44)`, border:`1.5px solid ${color}66` }}>
+      <div className="absolute inset-0 flex items-center justify-center font-black text-2xl"
+        style={{ color, textShadow:`0 0 12px ${color}` }}>
+        {letter}
+      </div>
+      {/* scanline effect */}
+      <div className="absolute inset-0 pointer-events-none"
+        style={{ background:"repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.08) 2px,rgba(0,0,0,0.08) 4px)" }} />
+    </div>
+  );
+}
+
+/* ─── Sidebar nav items ─────────────────────────────────── */
+const NAV = [
+  { id:"agents" as NavItem, icon:"🤖", label:"Agent Roster",  sub:"ECHIPA" },
+  { id:"tasks"  as NavItem, icon:"⚙️", label:"GitHub Actions", sub:"TASKS" },
+  { id:"memory" as NavItem, icon:"💾", label:"Site Stats",     sub:"MEMORIE" },
+  { id:"logs"   as NavItem, icon:"📋", label:"Logs & Output",  sub:"LOGS" },
+  { id:"links"  as NavItem, icon:"🔗", label:"Quick Links",    sub:"LINKS" },
+];
+
+/* ═══════════════════════════════════════════════════════════
+   MAIN COMPONENT
+════════════════════════════════════════════════════════════ */
 export default function AdminDashboard() {
-  const [data,         setData]         = useState<StatusData | null>(null);
-  const [loading,      setLoading]      = useState(true);
-  const [triggering,   setTriggering]   = useState<string | null>(null);
-  const [triggerMsg,   setTriggerMsg]   = useState<string | null>(null);
-  const [lastRefresh,  setLastRefresh]  = useState(new Date());
+  const [data,       setData]       = useState<StatusData|null>(null);
+  const [loading,    setLoading]    = useState(true);
+  const [nav,        setNav]        = useState<NavItem>("agents");
+  const [triggering, setTriggering] = useState<string|null>(null);
+  const [triggerMsg, setTriggerMsg] = useState<{ text:string; ok:boolean }|null>(null);
+  const [now,        setNow]        = useState(new Date());
+  const [agentStates, setAgentStates] = useState<Record<string,"idle"|"running"|"done">>({});
 
   const fetchStatus = useCallback(async () => {
     try {
       const res = await fetch("/api/admin/status");
-      if (res.ok) {
-        setData(await res.json());
-        setLastRefresh(new Date());
-      }
-    } finally {
-      setLoading(false);
-    }
+      if(res.ok) setData(await res.json());
+    } finally { setLoading(false); }
   }, []);
 
   useEffect(() => {
     fetchStatus();
-    const interval = setInterval(fetchStatus, 30000); // refresh la 30s
-    return () => clearInterval(interval);
+    const si = setInterval(fetchStatus, 30000);
+    const st = setInterval(() => setNow(new Date()), 1000);
+    return () => { clearInterval(si); clearInterval(st); };
   }, [fetchStatus]);
 
-  async function triggerAgent(workflow: string, agentType?: string) {
-    setTriggering(workflow + (agentType || ""));
+  async function runAgent(agent: typeof AGENTS[0]) {
+    const key = agent.id;
+    setTriggering(key);
+    setAgentStates(s => ({ ...s, [key]: "running" }));
     setTriggerMsg(null);
     try {
       const res = await fetch("/api/admin/trigger", {
-        method:  "POST",
-        headers: { "Content-Type": "application/json" },
-        body:    JSON.stringify({
-          workflow: workflow === "update-data" ? "update-data" : "run-agent",
-          inputs:   agentType ? { agent_type: agentType } : {},
+        method:"POST", headers:{"Content-Type":"application/json"},
+        body: JSON.stringify({
+          workflow: agent.workflow,
+          inputs:   agent.agentType ? { agent_type: agent.agentType } : {},
         }),
       });
       const d = await res.json();
-      setTriggerMsg(d.ok ? `✅ ${d.message}` : `❌ ${d.error}`);
-      setTimeout(() => { fetchStatus(); setTriggerMsg(null); }, 3000);
+      if(d.ok) {
+        setAgentStates(s => ({ ...s, [key]: "done" }));
+        setTriggerMsg({ text: `✅ ${agent.name} pornit cu succes!`, ok:true });
+        setTimeout(() => { fetchStatus(); setAgentStates(s => ({ ...s, [key]: "idle" })); }, 5000);
+      } else {
+        setAgentStates(s => ({ ...s, [key]: "idle" }));
+        setTriggerMsg({ text:`❌ ${d.error}`, ok:false });
+      }
     } catch {
-      setTriggerMsg("❌ Eroare de conexiune");
-    } finally {
-      setTriggering(null);
-    }
+      setAgentStates(s => ({ ...s, [key]: "idle" }));
+      setTriggerMsg({ text:"❌ Eroare conexiune", ok:false });
+    } finally { setTriggering(null); }
   }
 
   async function logout() {
-    await fetch("/api/admin/login", { method: "DELETE" });
+    await fetch("/api/admin/login", { method:"DELETE" });
     window.location.href = "/admin";
   }
 
-  if (loading) {
-    return (
-      <div className="min-h-screen bg-slate-950 flex items-center justify-center">
-        <div className="text-center">
-          <div className="text-4xl mb-4 animate-spin">⚙️</div>
-          <p className="text-slate-400 text-sm">Se incarca Mission Control...</p>
-        </div>
-      </div>
-    );
-  }
+  /* ── bg scanline ── */
+  const scanlineBg = {
+    backgroundImage: "repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,255,212,0.012) 3px,rgba(0,255,212,0.012) 4px)",
+  };
 
-  const s = data?.site;
-  const g = data?.github;
-  const b = data?.brevo;
-  const t = data?.topProduse;
-  const lastRun = g?.[0];
+  if(loading) return (
+    <div className="min-h-screen flex items-center justify-center" style={{ background:"#07071a", ...scanlineBg }}>
+      <div className="text-center">
+        <div className="text-4xl mb-3 animate-spin">⚙️</div>
+        <p className="font-mono text-sm" style={{ color:"#00f5d4" }}>INITIALIZING MISSION CONTROL...</p>
+      </div>
+    </div>
+  );
+
+  const s  = data?.site;
+  const g  = data?.github || [];
+  const b  = data?.brevo;
+  const lastRun = g[0];
 
   return (
-    <div className="min-h-screen bg-slate-950 text-white">
-      {/* TOPBAR */}
-      <header className="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center font-black text-sm">M</div>
-            <span className="font-black text-lg tracking-tight">Mission Control</span>
-            <span className="text-slate-600 text-sm hidden sm:block">amcupon.ro</span>
-          </div>
-          <div className="flex items-center gap-3">
-            {/* Live indicator */}
-            <div className="hidden sm:flex items-center gap-1.5 text-xs text-slate-400">
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-              Live · {lastRefresh.toLocaleTimeString("ro-RO")}
-            </div>
-            <button
-              onClick={fetchStatus}
-              className="text-slate-400 hover:text-white transition-colors text-sm font-semibold px-3 py-1.5 rounded-lg hover:bg-slate-800"
-            >
-              ↻ Refresh
-            </button>
-            <a href="https://amcupon.ro" target="_blank" rel="noopener noreferrer"
-              className="text-slate-400 hover:text-white transition-colors text-sm font-semibold px-3 py-1.5 rounded-lg hover:bg-slate-800">
-              ↗ Site
-            </a>
-            <button onClick={logout}
-              className="text-slate-500 hover:text-red-400 transition-colors text-xs px-3 py-1.5 rounded-lg hover:bg-slate-800">
-              Logout
-            </button>
-          </div>
-        </div>
-      </header>
+    <div className="flex h-screen overflow-hidden font-sans" style={{ background:"#07071a", ...scanlineBg }}>
 
-      <div className="max-w-7xl mx-auto px-4 py-6 space-y-6">
+      {/* ── SIDEBAR ─────────────────────────────────────── */}
+      <aside className="w-52 flex flex-col shrink-0 border-r overflow-y-auto"
+        style={{ background:"#0d0d26", borderColor:"#1a1a40" }}>
 
-        {/* TRIGGER MSG */}
-        {triggerMsg && (
-          <div className={`rounded-xl px-4 py-3 text-sm font-semibold ${
-            triggerMsg.startsWith("✅")
-              ? "bg-emerald-900/40 border border-emerald-700/50 text-emerald-300"
-              : "bg-red-900/40 border border-red-700/50 text-red-300"
-          }`}>
-            {triggerMsg}
+        {/* Logo */}
+        <div className="px-4 py-5 border-b" style={{ borderColor:"#1a1a40" }}>
+          <div className="flex items-center gap-2 mb-0.5">
+            <span className="text-xl">🎛️</span>
+            <span className="font-black text-sm tracking-widest" style={{ color:"#00f5d4" }}>MISSION</span>
           </div>
-        )}
-
-        {/* ENV WARNINGS */}
-        {data?.env && (
-          <div className="flex flex-wrap gap-2">
-            {!data.env.hasGithubToken && (
-              <span className="text-xs bg-yellow-900/40 border border-yellow-700/40 text-yellow-400 px-3 py-1 rounded-full">
-                ⚠ ADMIN_GITHUB_TOKEN lipsa — trigger dezactivat
-              </span>
-            )}
-            {!data.env.hasBrevoKey && (
-              <span className="text-xs bg-yellow-900/40 border border-yellow-700/40 text-yellow-400 px-3 py-1 rounded-full">
-                ⚠ BREVO_API_KEY lipsa — newsletter stats dezactivat
-              </span>
-            )}
-          </div>
-        )}
-
-        {/* STATS ROW */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-          {[
-            { label: "Magazine",    val: s?.totalMagazine ?? "—",  icon: "🏪", color: "blue" },
-            { label: "Cu promotii", val: s?.cuPromotii ?? "—",     icon: "🔥", color: "orange" },
-            { label: "Coduri",      val: s?.cuCod ?? "—",          icon: "🎟",  color: "violet" },
-            { label: "Abonati",     val: b?.subscribers ?? "—",    icon: "📧", color: "emerald" },
-          ].map(stat => (
-            <div key={stat.label} className="bg-slate-900 border border-slate-800 rounded-2xl p-4">
-              <div className="text-2xl mb-2">{stat.icon}</div>
-              <div className="text-2xl font-black text-white">{stat.val.toLocaleString()}</div>
-              <div className="text-xs text-slate-500 mt-0.5">{stat.label}</div>
-            </div>
-          ))}
+          <span className="font-black text-base tracking-widest ml-7" style={{ color:"#ff3cac" }}>CONTROL</span>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          {/* GITHUB ACTIONS */}
-          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5">
-            <div className="flex items-center justify-between mb-4">
-              <h2 className="font-black text-base flex items-center gap-2">
-                <span>⚙️</span> GitHub Actions
-              </h2>
-              {data?.env.hasGithubToken ? (
-                <button
-                  onClick={() => triggerAgent("update-data")}
-                  disabled={!!triggering}
-                  className="text-xs font-bold bg-blue-600 hover:bg-blue-500 disabled:opacity-50 px-3 py-1.5 rounded-lg transition-colors"
-                >
-                  {triggering === "update-data" ? "Se porneste..." : "▶ Run Now"}
-                </button>
-              ) : (
-                <span className="text-xs text-slate-500">Token lipsa</span>
-              )}
-            </div>
-
-            {g && g.length > 0 ? (
-              <div className="space-y-2">
-                {g.map(run => (
-                  <a key={run.id} href={run.url} target="_blank" rel="noopener noreferrer"
-                    className="flex items-center justify-between p-3 bg-slate-800/60 rounded-xl hover:bg-slate-800 transition-colors group">
-                    <div className="min-w-0">
-                      <p className="text-sm font-semibold text-slate-200 truncate group-hover:text-white">{run.name}</p>
-                      <p className="text-xs text-slate-500 mt-0.5">{timeAgo(run.updatedAt)}</p>
-                    </div>
-                    <StatusBadge status={run.status} conclusion={run.conclusion} />
-                  </a>
-                ))}
+        {/* Nav */}
+        <nav className="flex-1 px-2 py-4 space-y-1">
+          {NAV.map(n => (
+            <button key={n.id} onClick={() => setNav(n.id)}
+              className="w-full text-left px-3 py-2.5 rounded-xl transition-all group"
+              style={{
+                background: nav===n.id ? "rgba(0,245,212,0.08)" : "transparent",
+                border: `1px solid ${nav===n.id ? "rgba(0,245,212,0.2)" : "transparent"}`,
+              }}>
+              <div className="flex items-center gap-2.5">
+                <span className="text-base">{n.icon}</span>
+                <div>
+                  <p className="text-xs font-bold leading-none"
+                    style={{ color: nav===n.id ? "#00f5d4" : "#8888aa" }}>{n.label}</p>
+                  <p className="text-xs font-mono mt-0.5" style={{ color:"#444466", fontSize:"9px" }}>{n.sub}</p>
+                </div>
               </div>
-            ) : (
-              <p className="text-slate-500 text-sm text-center py-6">
-                {data?.env.hasGithubToken ? "Niciun run recent" : "Configureaza ADMIN_GITHUB_TOKEN"}
-              </p>
-            )}
+            </button>
+          ))}
+        </nav>
 
-            {s?.lastUpdate && (
-              <p className="text-xs text-slate-600 mt-3 pt-3 border-t border-slate-800">
-                Date actualizate: {timeAgo(s.lastUpdate)}
-              </p>
-            )}
+        {/* System status */}
+        <div className="px-4 py-4 border-t" style={{ borderColor:"#1a1a40" }}>
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full animate-pulse" style={{ background:"#00f5d4" }} />
+            <span className="text-xs font-mono font-bold" style={{ color:"#00f5d4", fontSize:"10px" }}>SYSTEM ONLINE</span>
           </div>
+          <button onClick={logout} className="text-xs font-mono mt-2 transition-colors hover:opacity-100 opacity-40"
+            style={{ color:"#ff3cac", fontSize:"10px" }}>
+            [ LOGOUT ]
+          </button>
+        </div>
+      </aside>
 
-          {/* SITE HEALTH */}
-          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5">
-            <h2 className="font-black text-base flex items-center gap-2 mb-4">
-              <span>📊</span> Sanatate Site
-            </h2>
-            <div className="space-y-3">
-              {[
-                { label: "Magazine totale",    val: s?.totalMagazine, max: 700, color: "blue" },
-                { label: "Cu promotii active", val: s?.cuPromotii,    max: s?.totalMagazine || 1, color: "orange" },
-                { label: "Cu cod reducere",    val: s?.cuCod,         max: s?.cuPromotii || 1, color: "violet" },
-              ].map(item => {
-                const pct = item.val && item.max ? Math.round((item.val / item.max) * 100) : 0;
+      {/* ── MAIN ────────────────────────────────────────── */}
+      <div className="flex-1 flex flex-col overflow-hidden">
+
+        {/* Header */}
+        <header className="px-6 py-3 flex items-center justify-between shrink-0 border-b"
+          style={{ background:"rgba(13,13,38,0.8)", borderColor:"#1a1a40", backdropFilter:"blur(8px)" }}>
+          <div className="flex items-center gap-4">
+            <h1 className="font-black text-2xl tracking-widest" style={{
+              background:"linear-gradient(90deg,#00f5d4,#ff3cac,#784ba0)",
+              WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent",
+            }}>
+              MISSION CONTROL
+            </h1>
+            <span className="text-xs font-mono hidden sm:block" style={{ color:"#444466" }}>
+              AmCupon.ro Command Center &nbsp;|&nbsp; Last update: {now.toLocaleTimeString("ro-RO")}
+            </span>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="text-xs font-mono font-bold px-2.5 py-1 rounded-md border"
+              style={{ color:"#ff3cac", borderColor:"#ff3cac44", background:"#ff3cac11", fontSize:"10px" }}>
+              SYNTHWAVE MODE
+            </span>
+            <span className="text-xs font-mono font-bold px-2.5 py-1 rounded-md border"
+              style={{ color:"#00f5d4", borderColor:"#00f5d444", background:"#00f5d411", fontSize:"10px" }}>
+              PHASE 2: AGENTS
+            </span>
+          </div>
+        </header>
+
+        {/* Content */}
+        <main className="flex-1 overflow-y-auto p-5">
+
+          {/* Trigger message */}
+          {triggerMsg && (
+            <div className="mb-4 px-4 py-2.5 rounded-xl text-sm font-mono font-bold border"
+              style={{
+                color:       triggerMsg.ok ? "#00f5d4" : "#ff3cac",
+                borderColor: triggerMsg.ok ? "#00f5d444" : "#ff3cac44",
+                background:  triggerMsg.ok ? "#00f5d411" : "#ff3cac11",
+              }}>
+              {triggerMsg.text}
+            </div>
+          )}
+
+          {/* MISIUNE banner */}
+          {nav==="agents" && (
+            <div className="mb-5 px-5 py-3 rounded-2xl border text-center"
+              style={{ background:"rgba(120,75,160,0.08)", borderColor:"#784ba033" }}>
+              <span className="text-sm font-mono" style={{ color:"#784ba0" }}>🎯 MISIUNE &nbsp;🎯</span>
+              <p className="text-sm font-mono mt-1" style={{ color:"#ff3cac" }}>
+                Autonomous data sync, content creation &amp; business growth for AmCupon.ro operations
+              </p>
+            </div>
+          )}
+
+          {/* ── AGENTS VIEW ──────────────────────────────── */}
+          {nav==="agents" && (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {AGENTS.map(agent => {
+                const state = agentStates[agent.id] || "idle";
+                const isRunning = state==="running" || triggering===agent.id;
+                const isDone    = state==="done";
                 return (
-                  <div key={item.label}>
-                    <div className="flex justify-between text-xs mb-1">
-                      <span className="text-slate-400">{item.label}</span>
-                      <span className="text-white font-bold">{item.val ?? "—"}</span>
+                  <div key={agent.id}
+                    className={`rounded-2xl border p-5 transition-all duration-300 bg-gradient-to-br ${agent.bg} shadow-xl ${agent.glow}`}
+                    style={{
+                      borderColor: isRunning ? agent.color : isDone ? "#00f5d4" : agent.color+"44",
+                      boxShadow:   isRunning ? `0 0 20px ${agent.color}33` : "none",
+                    }}>
+
+                    {/* Card header */}
+                    <div className="flex items-start justify-between mb-3">
+                      <div className="flex items-center gap-3">
+                        <AgentAvatar letter={agent.avatar} color={agent.color} />
+                        <div>
+                          <div className="flex items-center gap-2 flex-wrap">
+                            <h3 className="font-black text-lg tracking-wider" style={{ color:agent.color, textShadow:`0 0 8px ${agent.color}66` }}>
+                              {agent.name}
+                            </h3>
+                            <span className="text-xs font-bold px-2 py-0.5 rounded-md border font-mono"
+                              style={{ color:agent.color, borderColor:agent.color+"55", background:agent.color+"11" }}>
+                              {agent.role}
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      {/* Model badge */}
+                      <span className="text-xs font-mono px-2 py-1 rounded-md border shrink-0"
+                        style={{ color:"#666688", borderColor:"#333355", background:"#111128", fontSize:"10px" }}>
+                        ● {agent.model}
+                      </span>
                     </div>
-                    <div className="h-1.5 bg-slate-800 rounded-full">
-                      <div
-                        className={`h-full rounded-full bg-${item.color}-500`}
-                        style={{ width: `${pct}%` }}
-                      />
+
+                    {/* Description */}
+                    <p className="text-sm leading-relaxed mb-3" style={{ color:"#8888aa" }}>{agent.desc}</p>
+
+                    {/* Skills */}
+                    <div className="flex flex-wrap gap-1.5 mb-4">
+                      {agent.skills.map(sk => (
+                        <span key={sk} className="text-xs font-mono px-2 py-0.5 rounded-md"
+                          style={{ color:agent.color+"cc", background:agent.color+"15", border:`1px solid ${agent.color}33` }}>
+                          {sk}
+                        </span>
+                      ))}
+                    </div>
+
+                    {/* Status + Run button */}
+                    <div className="flex items-center justify-between pt-3 border-t" style={{ borderColor:"#ffffff0d" }}>
+                      <div className="flex items-center gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full"
+                          style={{ background: isRunning ? agent.color : isDone ? "#00f5d4" : "#333355",
+                            boxShadow: isRunning ? `0 0 6px ${agent.color}` : "none",
+                            animation: isRunning ? "pulse 1s infinite" : "none",
+                          }} />
+                        <span className="text-xs font-mono" style={{ color:"#666688", fontSize:"10px" }}>
+                          {isRunning ? "RUNNING..." : isDone ? "DONE ✓" : "Fara sesiune activa"}
+                        </span>
+                      </div>
+                      <button
+                        onClick={() => runAgent(agent)}
+                        disabled={isRunning || !data?.env.hasGithubToken}
+                        className="text-xs font-mono font-bold px-3 py-1.5 rounded-lg transition-all disabled:opacity-30 disabled:cursor-not-allowed"
+                        style={{
+                          color:       isRunning ? "#333355" : agent.color,
+                          border:      `1px solid ${agent.color}55`,
+                          background:  isRunning ? "#1a1a30" : agent.color+"15",
+                        }}>
+                        {isRunning ? "RUNNING..." : "▶ RUN"}
+                      </button>
                     </div>
                   </div>
                 );
               })}
+            </div>
+          )}
 
-              <div className="pt-3 border-t border-slate-800 grid grid-cols-2 gap-3 mt-2">
-                {t && (
-                  <div className="bg-slate-800/60 rounded-xl p-3">
-                    <div className="text-lg font-black text-orange-400">{t.produse}</div>
-                    <div className="text-xs text-slate-500">Produse in /top</div>
-                  </div>
-                )}
-                {b && (
-                  <div className="bg-slate-800/60 rounded-xl p-3">
-                    <div className="text-lg font-black text-emerald-400">{b.subscribers}</div>
-                    <div className="text-xs text-slate-500">Abonati newsletter</div>
+          {/* ── TASKS VIEW ──────────────────────────────── */}
+          {nav==="tasks" && (
+            <div>
+              <div className="flex items-center justify-between mb-4">
+                <h2 className="font-black tracking-wider" style={{ color:"#00f5d4" }}>⚙️ GITHUB ACTIONS</h2>
+                <button onClick={() => runAgent(AGENTS[0])}
+                  disabled={!!triggering || !data?.env.hasGithubToken}
+                  className="text-xs font-mono font-bold px-4 py-2 rounded-xl transition-all disabled:opacity-30"
+                  style={{ color:"#00f5d4", border:"1px solid #00f5d444", background:"#00f5d411" }}>
+                  ▶ RUN UPDATE NOW
+                </button>
+              </div>
+              <div className="space-y-2">
+                {g.length>0 ? g.map(run => (
+                  <a key={run.id} href={run.url} target="_blank" rel="noopener noreferrer"
+                    className="flex items-center justify-between p-4 rounded-xl border transition-all hover:border-opacity-60"
+                    style={{ background:"rgba(13,13,38,0.8)", borderColor:"#1a1a40" }}>
+                    <div>
+                      <p className="text-sm font-semibold text-white">{run.name}</p>
+                      <p className="text-xs font-mono mt-0.5" style={{ color:"#444466" }}>{timeAgo(run.updatedAt)} ago</p>
+                    </div>
+                    <span className="text-xs font-mono font-bold px-3 py-1 rounded-md"
+                      style={{ color:runColor(run), background:runColor(run)+"11", border:`1px solid ${runColor(run)}44` }}>
+                      {runLabel(run)}
+                    </span>
+                  </a>
+                )) : (
+                  <div className="text-center py-12" style={{ color:"#444466" }}>
+                    <p className="font-mono text-sm">
+                      {data?.env.hasGithubToken ? "Niciun run recent" : "⚠ ADMIN_GITHUB_TOKEN neconfigurat"}
+                    </p>
                   </div>
                 )}
               </div>
             </div>
-          </div>
-        </div>
+          )}
 
-        {/* AI AGENTS */}
-        <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5">
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="font-black text-base flex items-center gap-2">
-              <span>🤖</span> AI Agents
-            </h2>
-            <span className="text-xs text-slate-500 bg-slate-800 px-2 py-1 rounded-full">
-              powered by Claude
+          {/* ── MEMORY / STATS VIEW ─────────────────────── */}
+          {nav==="memory" && (
+            <div>
+              <h2 className="font-black tracking-wider mb-4" style={{ color:"#f7971e" }}>💾 SITE STATS</h2>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
+                {[
+                  { l:"Magazine",    v:s?.totalMagazine, c:"#00f5d4" },
+                  { l:"Cu promotii", v:s?.cuPromotii,    c:"#ff3cac" },
+                  { l:"Cu cod",      v:s?.cuCod,         c:"#f7971e" },
+                  { l:"Abonati NL",  v:b?.subscribers,   c:"#784ba0" },
+                ].map(st => (
+                  <div key={st.l} className="rounded-2xl p-4 border" style={{ background:"rgba(13,13,38,0.8)", borderColor:st.c+"33" }}>
+                    <div className="text-2xl font-black mb-1" style={{ color:st.c, textShadow:`0 0 10px ${st.c}55` }}>
+                      {st.v?.toLocaleString() ?? "—"}
+                    </div>
+                    <div className="text-xs font-mono" style={{ color:"#666688" }}>{st.l}</div>
+                  </div>
+                ))}
+              </div>
+              {s?.lastUpdate && (
+                <p className="text-xs font-mono" style={{ color:"#444466" }}>
+                  Date actualizate: {timeAgo(s.lastUpdate)} ago
+                </p>
+              )}
+            </div>
+          )}
+
+          {/* ── LOGS VIEW ──────────────────────────────── */}
+          {nav==="logs" && (
+            <div>
+              <h2 className="font-black tracking-wider mb-4" style={{ color:"#ff3cac" }}>📋 OUTPUT AGENTI</h2>
+              <div className="rounded-2xl p-5 border" style={{ background:"#0a0a1e", borderColor:"#1a1a40" }}>
+                <p className="text-xs font-mono mb-3" style={{ color:"#444466" }}>// Ultimul output generat de agenti</p>
+                <a href="/agent-content-latest.json" target="_blank" rel="noopener noreferrer"
+                  className="text-sm font-mono transition-colors hover:underline" style={{ color:"#00f5d4" }}>
+                  → /agent-content-latest.json
+                </a>
+                <p className="text-xs font-mono mt-4" style={{ color:"#333355" }}>
+                  Ruleaza un agent din tab-ul AGENT ROSTER pentru a genera continut nou.
+                </p>
+              </div>
+            </div>
+          )}
+
+          {/* ── LINKS VIEW ──────────────────────────────── */}
+          {nav==="links" && (
+            <div>
+              <h2 className="font-black tracking-wider mb-4" style={{ color:"#784ba0" }}>🔗 QUICK LINKS</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {[
+                  { l:"Vercel Dashboard",  h:"https://vercel.com/dashboard",               c:"#00f5d4", e:"▲" },
+                  { l:"GitHub Actions",    h:"https://github.com/alexmarius855/afiliere-site/actions", c:"#ff3cac", e:"⚙" },
+                  { l:"Brevo Contacts",    h:"https://app.brevo.com/contact/list",           c:"#f7971e", e:"📧" },
+                  { l:"Google Analytics",  h:"https://analytics.google.com",                 c:"#784ba0", e:"📈" },
+                  { l:"Search Console",    h:"https://search.google.com/search-console",     c:"#00f5d4", e:"🔍" },
+                  { l:"2Performant",       h:"https://app.2performant.com",                  c:"#ff3cac", e:"💰" },
+                  { l:"Profitshare",       h:"https://www.profitshare.ro",                   c:"#f7971e", e:"💰" },
+                  { l:"Site Live →",       h:"https://amcupon.ro",                           c:"#784ba0", e:"🌐" },
+                ].map(l => (
+                  <a key={l.l} href={l.h} target="_blank" rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-4 rounded-2xl border transition-all hover:scale-[1.02]"
+                    style={{ background:"rgba(13,13,38,0.8)", borderColor:l.c+"33" }}>
+                    <span className="text-xl">{l.e}</span>
+                    <span className="font-semibold text-sm" style={{ color:l.c }}>{l.l}</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+        </main>
+
+        {/* Terminal bar */}
+        <div className="px-5 py-2.5 border-t shrink-0 flex items-center gap-3"
+          style={{ background:"#0a0a1e", borderColor:"#1a1a40" }}>
+          <span className="font-mono text-xs" style={{ color:"#00f5d4" }}>root@amcupon-mc:~$</span>
+          <span className="font-mono text-xs animate-pulse" style={{ color:"#666688" }}>_</span>
+          <div className="ml-auto flex items-center gap-4 text-xs font-mono" style={{ color:"#333355" }}>
+            <span>amcupon.ro v2.0</span>
+            <span>|</span>
+            <span>{now.toLocaleTimeString("ro-RO")}</span>
+            <span>|</span>
+            <span style={{ color: data?.env.hasGithubToken ? "#00f5d4" : "#ff3cac" }}>
+              {data?.env.hasGithubToken ? "● GITHUB CONNECTED" : "○ GITHUB OFFLINE"}
             </span>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-            {AGENTS.map(agent => (
-              <button
-                key={agent.id}
-                onClick={() => triggerAgent("run-agent", agent.id === "update-data" ? undefined : agent.id)}
-                disabled={!!triggering || !data?.env.hasGithubToken}
-                className="group text-left p-4 bg-slate-800/60 hover:bg-slate-800 disabled:opacity-40 disabled:cursor-not-allowed rounded-2xl border border-slate-700/50 hover:border-slate-600 transition-all"
-              >
-                <div className="text-2xl mb-3">{agent.emoji}</div>
-                <div className="font-bold text-sm text-white mb-1 group-hover:text-orange-300 transition-colors">
-                  {agent.label}
-                </div>
-                <div className="text-xs text-slate-500 leading-relaxed">{agent.desc}</div>
-                <div className="mt-3 text-xs font-bold text-slate-600 group-hover:text-orange-400 transition-colors">
-                  {triggering === ("run-agent" + agent.id) ? "Se porneste..." : "▶ Run →"}
-                </div>
-              </button>
-            ))}
-          </div>
         </div>
-
-        {/* QUICK LINKS */}
-        <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5">
-          <h2 className="font-black text-base flex items-center gap-2 mb-4">
-            <span>🔗</span> Quick Links
-          </h2>
-          <div className="flex flex-wrap gap-2">
-            {[
-              { label: "Vercel Dashboard",   href: "https://vercel.com/dashboard",                          emoji: "▲" },
-              { label: "GitHub Actions",     href: `https://github.com/${data?.env.hasGithubToken ? "alexmarius855/afiliere-site" : "#"}/actions`, emoji: "⚙️" },
-              { label: "Brevo Contacts",     href: "https://app.brevo.com/contact/list",                    emoji: "📧" },
-              { label: "Google Analytics",   href: "https://analytics.google.com",                          emoji: "📈" },
-              { label: "Google Search",      href: "https://search.google.com/search-console",              emoji: "🔍" },
-              { label: "2Performant",        href: "https://app.2performant.com",                            emoji: "💰" },
-              { label: "Profitshare",        href: "https://www.profitshare.ro",                             emoji: "💰" },
-              { label: "Site Live",          href: "https://amcupon.ro",                                    emoji: "🌐" },
-            ].map(l => (
-              <a key={l.label} href={l.href} target="_blank" rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-slate-700 hover:border-slate-500">
-                <span>{l.emoji}</span>{l.label}
-              </a>
-            ))}
-          </div>
-        </div>
-
-        {/* FOOTER */}
-        <p className="text-center text-xs text-slate-700 pb-4">
-          Mission Control v1.0 · AmCupon.ro · Auto-refresh 30s
-        </p>
       </div>
     </div>
   );
