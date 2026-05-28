@@ -11,7 +11,10 @@ export const runtime = "edge";
 
 const BREVO_API = "https://api.brevo.com/v3/contacts";
 const LIST_ID   = parseInt(process.env.BREVO_LIST_ID || "2", 10);
-const API_KEY   = process.env.BREVO_API_KEY || process.env.BREVO_SMTP_PASS || "";
+// IMPORTANT: BREVO_API_KEY != BREVO_SMTP_PASS
+// API key (xkeysib-...) se ia din brevo.com → Settings → API Keys
+// SMTP pass (xsmtpsib-...) este ALTCEVA si NU functioneaza ca REST API key
+const API_KEY   = process.env.BREVO_API_KEY || "";
 
 const ALLOWED_ORIGINS = new Set([
   "https://amcupon.ro",
@@ -86,10 +89,13 @@ export async function POST(request: Request) {
     return Response.json({ error: "Adresa de email invalida." }, { status: 400, headers: corsHeaders });
   }
 
-  // Dev mode fara API key
+  // Fara API key — returneaza eroare clara (nu simula succes fals)
   if (!API_KEY) {
-    console.warn("BREVO_API_KEY nu este setat");
-    return Response.json({ ok: true, dev: true }, { headers: corsHeaders });
+    console.warn("[newsletter] BREVO_API_KEY nu este setat in env vars");
+    return Response.json(
+      { error: "Serviciul de newsletter este momentan in configurare. Revino in curand!" },
+      { status: 503, headers: corsHeaders }
+    );
   }
 
   try {
