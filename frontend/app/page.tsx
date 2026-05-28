@@ -144,6 +144,7 @@ export default function Home() {
   const [favorite, setFavorite]           = useState<Set<string>>(new Set());
   const bannersRef                         = useRef<HTMLDivElement>(null);
   const trendingRef                        = useRef<HTMLDivElement>(null);
+  const rezultateRef                       = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     fetch("/output.json").then(r => r.json()).then(data => { setMagazine(data); setLoading(false); });
@@ -373,8 +374,18 @@ export default function Home() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
             </svg>
             <input type="text" placeholder="Cauta: eMAG, Answear, Noriel..." value={cautare}
-              onChange={e => setCautare(e.target.value)}
+              onChange={e => {
+                setCautare(e.target.value);
+                setTimeout(() => rezultateRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }), 150);
+              }}
+              onKeyDown={e => { if (e.key === "Enter") rezultateRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }); }}
               className="w-full bg-white/10 border border-white/20 text-white rounded-2xl pl-12 pr-4 py-4 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/60 focus:border-orange-500/40 placeholder-white/35 transition-all" />
+            {cautare && (
+              <button onClick={() => setCautare("")}
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-white/50 hover:text-white transition-colors text-lg leading-none">
+                &times;
+              </button>
+            )}
           </div>
 
           {/* CTA row */}
@@ -877,18 +888,34 @@ export default function Home() {
       )}
 
       {/* ─── PROMOTII + MAGAZINE ─────────────────────────────────────────── */}
-      <div className="max-w-7xl mx-auto px-4 py-10">
+      <div ref={rezultateRef} className="max-w-7xl mx-auto px-4 py-10">
+
+        {/* BANNER CAUTARE ACTIVA */}
+        {!loading && cautare && (
+          <div className="bg-orange-50 border border-orange-200 rounded-2xl px-5 py-3 mb-6 flex items-center justify-between gap-3">
+            <span className="text-sm font-semibold text-orange-700">
+              {filtrate.length > 0
+                ? <>{filtrate.length === 1 ? "1 rezultat" : `${filtrate.length} rezultate`} pentru <strong>&quot;{cautare}&quot;</strong></>
+                : <>Niciun rezultat pentru <strong>&quot;{cautare}&quot;</strong> — incearca alt nume</>
+              }
+            </span>
+            <button onClick={() => setCautare("")}
+              className="text-xs text-orange-500 hover:text-orange-700 font-bold border border-orange-300 rounded-lg px-3 py-1 transition-colors">
+              Sterge cautarea
+            </button>
+          </div>
+        )}
 
         {/* FILTRE RAPIDE */}
         {!loading && (
           <div className="flex flex-wrap gap-2 mb-8 items-center">
             {([
               { key: "toate",    label: "Toate" },
-              { key: "cod",      label: "Cod cupon" },
-              { key: "promotie", label: "Promotii active" },
+              { key: "cod",      label: `Cod cupon` },
+              { key: "promotie", label: `Promotii active` },
               { key: "favorite", label: `Favorite${favorite.size > 0 ? ` (${favorite.size})` : ""}` },
             ] as { key: "toate"|"cod"|"promotie"|"favorite"; label: string }[]).map(f => (
-              <button key={f.key} onClick={() => setFiltruActiv(f.key)}
+              <button key={f.key} onClick={() => { setFiltruActiv(f.key); setStoreLimit(12); }}
                 className={`px-4 py-2 rounded-full text-sm font-semibold transition-all ${filtruActiv === f.key ? "bg-slate-900 text-white shadow-sm" : "bg-white border border-slate-200 text-slate-600 hover:border-slate-300 hover:bg-slate-50"}`}>
                 {f.label}
               </button>
@@ -932,17 +959,21 @@ export default function Home() {
               <div>
                 <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-1.5 flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse inline-block"/>
-                  LIVE
+                  {cautare || filtruActiv !== "toate" ? "FILTRAT" : "LIVE"}
                 </p>
-                <h2 className="text-2xl font-black text-slate-900 tracking-tight">Promotii active</h2>
+                <h2 className="text-2xl font-black text-slate-900 tracking-tight">
+                  {cautare ? `Rezultate pentru "${cautare}"` : "Promotii active"}
+                </h2>
                 <p className="text-slate-400 text-sm mt-0.5">{cuPromotii.length} oferte verificate</p>
               </div>
-              <a href="/toate-magazinele" className="hidden sm:block text-sm font-bold text-orange-500 hover:text-orange-600 transition-colors">
-                Toate magazinele →
-              </a>
+              {!cautare && filtruActiv === "toate" && (
+                <a href="/toate-magazinele" className="hidden sm:block text-sm font-bold text-orange-500 hover:text-orange-600 transition-colors">
+                  Toate magazinele →
+                </a>
+              )}
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-              {cuPromotii.slice(0, 12).map(m => (
+              {(cautare || filtruActiv !== "toate" ? cuPromotii : cuPromotii.slice(0, 12)).map(m => (
                 <Card key={m.magazin} m={m} revealed={coduriReveal.has(m.magazin)} copiat={copiat === m.magazin} onCopiere={copiazaCod} isFavorit={favorite.has(m.magazin)} onToggleFavorit={toggleFavorit}/>
               ))}
             </div>
@@ -956,7 +987,12 @@ export default function Home() {
               <div>
                 <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1.5">TOATE MAGAZINELE</p>
                 <h2 className="text-2xl font-black text-slate-900 tracking-tight">Magazine partenere</h2>
-                <p className="text-slate-400 text-sm mt-0.5">{magazine.length} magazine</p>
+                <p className="text-slate-400 text-sm mt-0.5">
+                  {cautare || filtruActiv !== "toate"
+                    ? <>{faraPromotii.length} din {magazine.length} magazine</>
+                    : <>{magazine.length} magazine</>
+                  }
+                </p>
               </div>
               <a href="/toate-magazinele" className="text-sm font-bold text-orange-500 hover:text-orange-600 transition-colors">
                 Pagina completa →
@@ -976,6 +1012,25 @@ export default function Home() {
               </div>
             )}
           </section>
+        )}
+
+        {/* EMPTY STATE — niciun rezultat */}
+        {!loading && cautare && filtrate.length === 0 && (
+          <div className="text-center py-20">
+            <div className="text-5xl mb-4">🔍</div>
+            <h3 className="text-xl font-black text-slate-800 mb-2">Niciun magazin gasit pentru &quot;{cautare}&quot;</h3>
+            <p className="text-slate-400 text-sm mb-6">Incearca un alt nume sau cauta in toate magazinele.</p>
+            <div className="flex flex-wrap justify-center gap-3">
+              <button onClick={() => setCautare("")}
+                className="bg-orange-500 text-white font-bold px-6 py-2.5 rounded-xl text-sm hover:bg-orange-600 transition-colors">
+                Sterge cautarea
+              </button>
+              <a href="/toate-magazinele"
+                className="bg-white border border-slate-200 text-slate-700 font-bold px-6 py-2.5 rounded-xl text-sm hover:border-orange-400 transition-colors">
+                Toate magazinele
+              </a>
+            </div>
+          </div>
         )}
       </div>
 
