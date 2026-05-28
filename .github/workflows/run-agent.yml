@@ -1,0 +1,63 @@
+name: Run AI Agent
+
+on:
+  workflow_dispatch:
+    inputs:
+      agent_type:
+        description: 'Tipul agentului'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - youtube
+          - blog
+          - social
+          - business
+
+jobs:
+  run-agent:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instaleaza dependinte
+        run: |
+          pip install -r scripts/requirements.txt
+          pip install anthropic 2>/dev/null || echo "anthropic nu e in requirements, instalat manual"
+
+      - name: Ruleaza Agent Continut
+        working-directory: scripts
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_MODEL:      ${{ secrets.CLAUDE_MODEL || 'claude-3-5-haiku-20241022' }}
+        run: |
+          echo "=== Agent type: ${{ github.event.inputs.agent_type }} ==="
+          python agent_content.py --type ${{ github.event.inputs.agent_type }}
+
+      - name: Commit output agenti
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add data/agent-content-output.json          || true
+          git add frontend/public/agent-content-latest.json || true
+
+          if git diff --staged --quiet; then
+            echo "Nicio schimbare"
+          else
+            git commit -m "chore: agent-content output $(date -u +%Y-%m-%d) [${{ github.event.inputs.agent_type }}]"
+            git push
+            echo "✅ Output agent publicat"
+          fi
