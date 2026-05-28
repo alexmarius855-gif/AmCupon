@@ -205,7 +205,7 @@ export default function Home() {
     <div className="min-h-screen bg-white">
 
       {/* ─── HEADER ─────────────────────────────────────────────────────── */}
-      <header className="bg-white/95 backdrop-blur-sm border-b border-slate-200 sticky top-0 z-50">
+      <header className="bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm border-b border-slate-200 dark:border-slate-700 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 h-[60px] flex items-center gap-3">
 
           <a href="/" className="flex items-center gap-1.5 shrink-0">
@@ -411,7 +411,7 @@ export default function Home() {
       </section>
 
       {/* ─── STATS BAR ───────────────────────────────────────────────────── */}
-      <div className="bg-white border-b border-slate-100">
+      <div className="bg-white dark:bg-slate-800 border-b border-slate-100 dark:border-slate-700">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-slate-100">
             {[
@@ -584,7 +584,7 @@ export default function Home() {
 
       {/* ─── TRENDING ─────────────────────────────────────────────────────── */}
       {!loading && cuPromotii.length >= 3 && (
-        <section className="bg-white border-b border-slate-100 py-12 px-4">
+        <section className="bg-white dark:bg-slate-900 border-b border-slate-100 dark:border-slate-800 py-12 px-4">
           <div className="max-w-7xl mx-auto">
             <div className="flex items-end justify-between mb-7">
               <div>
@@ -690,7 +690,7 @@ export default function Home() {
 
       {/* ─── TOP PICKS ────────────────────────────────────────────────────── */}
       {!loading && cuPromotii.length >= 3 && (
-        <section className="bg-white border-b border-slate-100 py-14 px-4">
+        <section className="bg-white dark:bg-slate-900 border-b border-slate-100 dark:border-slate-800 py-14 px-4">
           <div className="max-w-7xl mx-auto">
             <div className="flex items-end justify-between mb-8">
               <div>
@@ -1036,7 +1036,7 @@ export default function Home() {
 
       {/* ─── BLOG ─────────────────────────────────────────────────────────── */}
       {blogPosts.length > 0 && (
-        <section className="bg-slate-50 border-t border-slate-100 py-14 px-4">
+        <section className="bg-slate-50 dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800 py-14 px-4">
           <div className="max-w-7xl mx-auto">
             <div className="flex items-end justify-between mb-8">
               <div>
@@ -1309,7 +1309,7 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
   const logoBg     = logoColors[initiala.charCodeAt(0) % logoColors.length];
 
   return (
-    <div className="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 flex flex-col overflow-hidden group">
+    <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 flex flex-col overflow-hidden group">
 
       {/* Trust Score bar — thin emerald line at top */}
       <div className="h-1 bg-slate-100 overflow-hidden">
@@ -1502,7 +1502,7 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
 /* ─── SKELETON ────────────────────────────────────────────────────────────── */
 function SkeletonCard() {
   return (
-    <div className="bg-white rounded-2xl border border-slate-200 animate-pulse overflow-hidden">
+    <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 animate-pulse overflow-hidden">
       <div className="h-1 bg-slate-100"/>
       <div className="flex items-start gap-3 p-4">
         <div className="w-12 h-12 rounded-xl bg-slate-200 shrink-0"/>

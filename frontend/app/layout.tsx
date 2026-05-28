@@ -10,6 +10,7 @@ import NewsletterPopup from "./components/NewsletterPopup";
 import ConsentAnalytics from "./components/ConsentAnalytics";
 import WebPushInit from "./components/WebPushInit";
 import "./globals.css";
+import ThemeToggle from "./components/ThemeToggle";
 
 // ─── GA4 Measurement ID ───────────────────────────────────────────────────────
 // Mergi la analytics.google.com → Admin → Data Streams → Web → Measurement ID
@@ -104,6 +105,8 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
+        {/* Anti-flash dark mode — ruleaza inainte de orice render */}
+        <script dangerouslySetInnerHTML={{ __html: `(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(t===null&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.classList.add('dark')}}catch(e){}})();` }} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}
@@ -135,6 +138,7 @@ export default function RootLayout({
           >
             &#129513; Extensie Chrome
           </a>
+          <ThemeToggle className="ml-auto sm:ml-0 bg-white/15 hover:bg-white/25 text-white" />
         </div>
         {children}
         <CookieBanner />
