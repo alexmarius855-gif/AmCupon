@@ -191,7 +191,10 @@ jobs:
             echo "Nicio schimbare — skip commit"
           else
             git commit -m "chore: actualizare automata $(date -u +%Y-%m-%d)"
-            git pull --rebase origin main || true
-            git push
-            echo "✅ Date noi publicate — Vercel redeploys automat"
+            # Retry loop — evita conflict cand doua workflow-uri ruleaza simultan
+            for i in 1 2 3 4 5; do
+              git pull --rebase origin main && git push && echo "✅ Date noi publicate — Vercel redeploys automat" && break
+              echo "⚠ Push esuat (tentativa $i/5) — retrying in ${i}0s..."
+              sleep $((i * 10))
+            done
           fi
