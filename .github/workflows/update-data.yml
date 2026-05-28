@@ -60,8 +60,22 @@ jobs:
             echo "PROFITSHARE_USER nu e setat — skip Profitshare"
           fi
 
+      # ── 4b. TradeTracker (optional — necesar secret TRADETRACKER_SITE_ID) ──
+      - name: Fetch date TradeTracker Romania
+        working-directory: scripts
+        env:
+          TRADETRACKER_SITE_ID: ${{ secrets.TRADETRACKER_SITE_ID }}
+          TRADETRACKER_API_KEY: ${{ secrets.TRADETRACKER_API_KEY }}
+        run: |
+          if [ -n "$TRADETRACKER_SITE_ID" ]; then
+            echo "Ruleaza TradeTracker..."
+            python fetch_tradetracker.py
+          else
+            echo "TRADETRACKER_SITE_ID nu e setat — skip TradeTracker"
+          fi
+
       # ── 5. Merge platforme ─────────────────────────────────────────────────
-      - name: Merge 2Performant + Profitshare
+      - name: Merge 2Performant + Profitshare + TradeTracker
         working-directory: scripts
         run: python merge_platforms.py
 
