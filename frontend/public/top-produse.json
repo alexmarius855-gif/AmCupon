@@ -1,0 +1,762 @@
+{
+  "updated": "2026-05-28",
+  "categorii": [
+    {
+      "slug": "laptopuri",
+      "titlu": "Cele mai bune laptopuri 2026",
+      "titlu_scurt": "Laptopuri",
+      "emoji": "💻",
+      "descriere": "Am analizat 20+ modele. Top 6 recomandari pentru lucru, gaming si multimedia, pentru orice buget.",
+      "culoare": "blue",
+      "tag": "POPULAR",
+      "produse": [
+        {
+          "pozitie": 1,
+          "badge": "Alegerea Redactiei",
+          "badge_color": "orange",
+          "nume": "ASUS Zenbook 14 OLED",
+          "model": "UX3405MA",
+          "imagine": "https://picsum.photos/seed/asus-zenbook/400/280",
+          "pret_de_la": 3199,
+          "moneda": "RON",
+          "scor_total": 9.4,
+          "scoruri": {"Design": 9.5, "Performanta": 9.2, "Display": 9.8, "Baterie": 9.1, "Pret/Calitate": 9.3},
+          "verdict_scurt": "Cel mai bun laptop mid-range cu display OLED",
+          "verdict_detaliat": "ASUS Zenbook 14 OLED ramane una dintre cele mai bune alegeri pentru utilizatorii care cauta un laptop ultraportabil cu display de exceptie. Ecranul OLED 2.8K 90Hz ofera culori vibrante si contrast infinit, perfecte atat pentru lucru cat si pentru divertisment.",
+          "pro": ["Display OLED 2.8K 90Hz exceptional", "Autonomie reala 10-12 ore", "Design ultraslim 1.35kg", "Keyboard confortabil retroiluminat"],
+          "contra": ["Porturi limitate (2xUSB-C, 1xUSB-A)", "Webcam 720p mediocru", "Fara cititor card SD"],
+          "specificatii": {"Procesor": "Intel Core Ultra 5 125H", "RAM": "16GB LPDDR5X", "Stocare": "512GB NVMe SSD", "Display": "14 inch 2.8K OLED 90Hz", "Placa video": "Intel Arc Graphics", "Greutate": "1.35 kg", "Baterie": "75Wh / 65W"},
+          "magazine": [
+            {"magazin_slug": "emag.ro", "eticheta": "eMAG", "pret": 3299, "recomandat": true},
+            {"magazin_slug": "flanco.ro", "eticheta": "Flanco", "pret": 3399, "recomandat": false},
+            {"magazin_slug": "altex.ro", "eticheta": "Altex", "pret": 3449, "recomandat": false}
+          ]
+        },
+        {
+          "pozitie": 2,
+          "badge": "Cel mai bun gaming",
+          "badge_color": "purple",
+          "nume": "ASUS ROG Zephyrus G14",
+          "model": "GA403UV",
+          "imagine": "https://picsum.photos/seed/rog-gaming/400/280",
+          "pret_de_la": 5499,
+          "moneda": "RON",
+          "scor_total": 9.2,
+          "scoruri": {"Design": 9.0, "Performanta": 9.8, "Display": 9.3, "Baterie": 8.5, "Pret/Calitate": 8.8},
+          "verdict_scurt": "Putere maxima de gaming intr-un chassis compact",
+          "verdict_detaliat": "ROG Zephyrus G14 este laptopul de gaming portabil suprem. Cu RTX 4060 si Ryzen 9, gestioneaza orice joc AAA la setari inalte, iar designul AniMe Matrix il face unic.",
+          "pro": ["RTX 4060 + Ryzen 9 extrem de rapid", "Display 165Hz OLED", "Racire eficienta", "Design premium AniMe Matrix"],
+          "contra": ["Pret ridicat", "Baterie 6-7h in uz normal", "Incalzire puternica sub load"],
+          "specificatii": {"Procesor": "AMD Ryzen 9 8945HS", "RAM": "16GB DDR5", "Stocare": "1TB NVMe SSD", "Display": "14 inch 2.8K OLED 165Hz", "Placa video": "NVIDIA RTX 4060 8GB", "Greutate": "1.65 kg", "Baterie": "73Wh"},
+          "magazine": [
+            {"magazin_slug": "emag.ro", "eticheta": "eMAG", "pret": 5599, "recomandat": true},
+            {"magazin_slug": "pcgarage.ro", "eticheta": "PC Garage", "pret": 5499, "recomandat": false}
+          ]
+        },
+        {
+          "pozitie": 3,
+          "badge": "Cel mai bun pret",
+          "badge_color": "green",
+          "nume": "Lenovo IdeaPad Slim 5",
+          "model": "82XF008NRM",
+          "imagine": "https://picsum.photos/seed/lenovo-slim5/400/280",
+          "pret_de_la": 1999,
+          "moneda": "RON",
+          "scor_total": 8.7,
+          "scoruri": {"Design": 8.5, "Performanta": 8.6, "Display": 8.8, "Baterie": 9.0, "Pret/Calitate": 9.5},
+          "verdict_scurt": "Raportul pret/calitate cel mai bun sub 2000 lei",
+          "verdict_detaliat": "Lenovo IdeaPad Slim 5 ofera tot ce iti trebuie pentru birou si studiu la un pret accesibil. Ecranul IPS 1920x1200 cu raport 16:10 este surprinzator de bun pentru aceasta categorie de pret.",
+          "pro": ["Pret excelent sub 2000 lei", "Display 1920x1200 16:10", "Baterie 10+ ore", "Port USB-C cu incarcare"],
+          "contra": ["Carcasa din plastic", "Fara placa video dedicata", "Difuzoare mediocre"],
+          "specificatii": {"Procesor": "AMD Ryzen 5 7530U", "RAM": "16GB DDR4", "Stocare": "512GB NVMe SSD", "Display": "15.6 inch FHD+ IPS", "Placa video": "AMD Radeon Integrated", "Greutate": "1.62 kg", "Baterie": "56Wh"},
+          "magazine": [
+            {"magazin_slug": "emag.ro", "eticheta": "eMAG", "pret": 1999, "recomandat": true},
+            {"magazin_slug": "altex.ro", "eticheta": "Altex", "pret": 2099, "recomandat": false}
+          ]
+        },
+        {
+          "pozitie": 4,
+          "badge": null,
+          "badge_color": null,
+          "nume": "Apple MacBook Air M3",
+          "model": "MRXN3RO/A",
+          "imagine": "https://picsum.photos/seed/macbook-air-m3/400/280",
+          "pret_de_la": 5499,
+          "moneda": "RON",
+          "scor_total": 9.3,
+          "scoruri": {"Design": 9.8, "Performanta": 9.5, "Display": 9.2, "Baterie": 9.7, "Pret/Calitate": 8.2},
+          "verdict_scurt": "Cel mai bun laptop macOS cu autonomie uriasa",
+          "verdict_detaliat": "MacBook Air M3 este laptopul de referinta pentru utilizatorii Apple. Cipul M3 ofera performanta exceptionala si autonomie de 18+ ore reale, intr-un chassis elegant si silentios.",
+          "pro": ["Autonomie 18+ ore reala", "Chip M3 extrem de rapid", "Display Liquid Retina excelent", "Zero zgomot (fara ventilator)"],
+          "contra": ["Pret premium ridicat", "RAM 8GB poate fi insuficient", "Incompatibil cu software Windows nativ"],
+          "specificatii": {"Procesor": "Apple M3 8 nuclee", "RAM": "8GB Unified Memory", "Stocare": "256GB SSD", "Display": "13.6 inch Liquid Retina 2560x1664", "Placa video": "Apple GPU 10 nuclee", "Greutate": "1.24 kg", "Baterie": "52.6Wh"},
+          "magazine": [
+            {"magazin_slug": "emag.ro", "eticheta": "eMAG", "pret": 5799, "recomandat": true},
+            {"magazin_slug": "altex.ro", "eticheta": "Altex", "pret": 5699, "recomandat": false}
+          ]
+        },
+        {
+          "pozitie": 5,
+          "badge": null,
+          "badge_color": null,
+          "nume": "HP EliteBook 840 G11",
+          "model": "9G0G2ET",
+          "imagine": "https://picsum.photos/seed/hp-elitebook/400/280",
+          "pret_de_la": 4299,
+          "moneda": "RON",
+          "scor_total": 8.9,
+          "scoruri": {"Design": 8.8, "Performanta": 9.0, "Display": 8.7, "Baterie": 9.2, "Pret/Calitate": 8.6},
+          "verdict_scurt": "Laptop de business solid cu securitate avansata",
+          "verdict_detaliat": "HP EliteBook 840 G11 este alegerea profesionistilor care au nevoie de securitate hardware, rezistenta la soc si conectivitate completa. Bateria 51Wh dureaza toata ziua de munca.",
+          "pro": ["Constructie robusta MIL-STD-810H", "Tastatura excelenta", "Webcam 5MP cu obturator", "4G LTE optional"],
+          "contra": ["Display fara OLED", "Pret ridicat vs performanta", "Design sobru business"],
+          "specificatii": {"Procesor": "Intel Core Ultra 7 165U", "RAM": "16GB DDR5", "Stocare": "512GB NVMe SSD", "Display": "14 inch FHD IPS 1920x1200", "Placa video": "Intel Graphics", "Greutate": "1.33 kg", "Baterie": "51Wh"},
+          "magazine": [
+            {"magazin_slug": "emag.ro", "eticheta": "eMAG", "pret": 4399, "recomandat": true}
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "telefoane",
+      "titlu": "Cele mai bune telefoane 2026",
+      "titlu_scurt": "Telefoane",
+      "emoji": "📱",
+      "descriere": "Top 6 smartphone-uri testate: cel mai bun pret, cel mai bun pentru poze si cel mai bun gaming.",
+      "culoare": "violet",
+      "tag": "NOU",
+      "produse": [
+        {
+          "pozitie": 1,
+          "badge": "Alegerea Redactiei",
+          "badge_color": "orange",
+          "nume": "Samsung Galaxy S25",
+          "model": "SM-S931B",
+          "imagine": "https://picsum.photos/seed/samsung-s25/400/280",
+          "pret_de_la": 3999,
+          "moneda": "RON",
+          "scor_total": 9.5,
+          "scoruri": {"Camera": 9.6, "Performanta": 9.5, "Display": 9.4, "Baterie": 9.0, "Pret/Calitate": 9.2},
+          "verdict_scurt": "Cel mai echilibrat flagship Android din 2026",
+          "verdict_detaliat": "Samsung Galaxy S25 combina cel mai bun hardware Qualcomm Snapdragon 8 Elite cu software One UI 7 rafinat si camera cu AI avansata. Designul subtil si ecranul AMOLED 120Hz fac din el telefonul ideal pentru cei mai pretentiosi utilizatori.",
+          "pro": ["Camera 50MP cu AI excellent", "Snapdragon 8 Elite fulgerator", "Display AMOLED 120Hz vibrant", "7 ani actualizari garantate"],
+          "contra": ["Baterie 4000mAh putin mica", "Incarcare 25W lenta vs concurenta", "Pret premium"],
+          "specificatii": {"Procesor": "Qualcomm Snapdragon 8 Elite", "RAM": "12GB", "Stocare": "256GB UFS 4.0", "Display": "6.2 inch FHD+ AMOLED 120Hz", "Camera principala": "50MP f/1.8", "Baterie": "4000mAh / 25W", "OS": "Android 15 / One UI 7"},
+          "magazine": [
+            {"magazin_slug": "emag.ro", "eticheta": "eMAG", "pret": 3999, "recomandat": true},
+            {"magazin_slug": "altex.ro", "eticheta": "Altex", "pret": 4099, "recomandat": false},
+            {"magazin_slug": "flanco.ro", "eticheta": "Flanco", "pret": 4149, "recomandat": false}
+          ]
+        },
+        {
+          "pozitie": 2,
+          "badge": "Cel mai bun pret",
+          "badge_color": "green",
+          "nume": "Xiaomi Redmi Note 14 Pro",
+          "model": "2407FPN8EG",
+          "imagine": "https://picsum.photos/seed/redmi-note14/400/280",
+          "pret_de_la": 1299,
+          "moneda": "RON",
+          "scor_total": 8.9,
+          "scoruri": {"Camera": 8.8, "Performanta": 8.5, "Display": 9.2, "Baterie": 9.5, "Pret/Calitate": 9.8},
+          "verdict_scurt": "Cel mai bun raport calitate-pret sub 1500 lei",
+          "verdict_detaliat": "Xiaomi Redmi Note 14 Pro ofera specificatii de clasa medie superioara la un pret exceptional. Camera 200MP si bateria 5110mAh cu incarcare 45W sunt punctele forte. Display-ul AMOLED 120Hz este o raritate la aceasta clasa de pret.",
+          "pro": ["Camera 200MP surprinzatoare", "Baterie 5110mAh uriasa", "Display AMOLED 120Hz", "Incarcare 45W rapida"],
+          "contra": ["Procesor Helio G99 mediu", "MIUI poate fi aglomerat", "Fara 5G pe modelul de baza"],
+          "specificatii": {"Procesor": "MediaTek Helio G99-Ultra", "RAM": "8GB", "Stocare": "256GB", "Display": "6.67 inch FHD+ AMOLED 120Hz", "Camera principala": "200MP f/1.65", "Baterie": "5110mAh / 45W", "OS": "Android 14 / MIUI 14"},
+          "magazine": [
+            {"magazin_slug": "emag.ro", "eticheta": "eMAG", "pret": 1299, "recomandat": true},
+            {"magazin_slug": "altex.ro", "eticheta": "Altex", "pret": 1349, "recomandat": false}
+          ]
+        },
+        {
+          "pozitie": 3,
+          "badge": "Cel mai bun pentru poze",
+          "badge_color": "pink",
+          "nume": "Google Pixel 9 Pro",
+          "model": "GA05228",
+          "imagine": "https://picsum.photos/seed/pixel-9-pro/400/280",
+          "pret_de_la": 4999,
+          "moneda": "RON",
+          "scor_total": 9.3,
+          "scoruri": {"Camera": 9.9, "Performanta": 9.2, "Display": 9.3, "Baterie": 8.8, "Pret/Calitate": 8.5},
+          "verdict_scurt": "Camera nr. 1 pentru fotografie cu telefon",
+          "verdict_detaliat": "Google Pixel 9 Pro are camera care stabileste standardul in industrie. Modul Night Sight, Zoom 5x optic si editarea foto cu AI Gemini il fac cel mai bun telefon pentru fotografie din 2026.",
+          "pro": ["Camera de referinta nr. 1 in industrie", "Night Sight impresionant", "AI Gemini integrat nativ", "Actualizari 7 ani garantate"],
+          "contra": ["Pret premium", "Design mai sobru vs Samsung", "Fara incarcare cu cablu sub 30W"],
+          "specificatii": {"Procesor": "Google Tensor G4", "RAM": "16GB", "Stocare": "256GB", "Display": "6.3 inch QHD+ LTPO OLED 120Hz", "Camera principala": "50MP f/1.68 + 48MP periscop 5x", "Baterie": "4700mAh / 27W", "OS": "Android 15"},
+          "magazine": [
+            {"magazin_slug": "emag.ro", "eticheta": "eMAG", "pret": 4999, "recomandat": true}
+          ]
+        },
+        {
+          "pozitie": 4,
+          "badge": null,
+          "badge_color": null,
+          "nume": "iPhone 16",
+          "model": "MXVD3RO/A",
+          "imagine": "https://picsum.photos/seed/iphone-16/400/280",
+          "pret_de_la": 4299,
+          "moneda": "RON",
+          "scor_total": 9.1,
+          "scoruri": {"Camera": 9.2, "Performanta": 9.6, "Display": 9.0, "Baterie": 8.9, "Pret/Calitate": 8.4},
+          "verdict_scurt": "Cel mai bun iPhone la pret accesibil din linie",
+          "verdict_detaliat": "iPhone 16 cu chip A18 si Camera Control este cel mai accesibil iPhone nou. Ecosistemul Apple, integrarea iOS si suportul pe termen lung il fac o alegere excelenta pentru utilizatorii existenti.",
+          "pro": ["Chip A18 extrem de rapid", "Camera Control fizic unic", "iOS 18 cu Apple Intelligence", "Build quality premium"],
+          "contra": ["Incarcare 20W lenta", "Display 60Hz pe modelul de baza", "Pret ridicat vs specificatii"],
+          "specificatii": {"Procesor": "Apple A18", "RAM": "8GB", "Stocare": "128GB", "Display": "6.1 inch Super Retina XDR OLED 60Hz", "Camera principala": "48MP f/1.6", "Baterie": "3561mAh / 20W MagSafe", "OS": "iOS 18"},
+          "magazine": [
+            {"magazin_slug": "emag.ro", "eticheta": "eMAG", "pret": 4299, "recomandat": true},
+            {"magazin_slug": "altex.ro", "eticheta": "Altex", "pret": 4399, "recomandat": false}
+          ]
+        },
+        {
+          "pozitie": 5,
+          "badge": null,
+          "badge_color": null,
+          "nume": "OnePlus 13",
+          "model": "PJX110",
+          "imagine": "https://picsum.photos/seed/oneplus-13/400/280",
+          "pret_de_la": 3299,
+          "moneda": "RON",
+          "scor_total": 8.8,
+          "scoruri": {"Camera": 8.5, "Performanta": 9.4, "Display": 9.3, "Baterie": 9.8, "Pret/Calitate": 9.0},
+          "verdict_scurt": "Cel mai rapid incarcator la aceasta categorie de pret",
+          "verdict_detaliat": "OnePlus 13 se distinge prin incarcare 100W incredibil de rapida (0 la 100% in 36 minute) si bateria 6000mAh. Snapdragon 8 Elite asigura performante de flagship la pret sub.",
+          "pro": ["Incarcare 100W ultra-rapida", "Baterie 6000mAh uriasa", "Snapdragon 8 Elite", "Display LTPO 120Hz excellent"],
+          "contra": ["Camera mai slaba vs Samsung/Pixel", "OxygenOS uneori instabil", "Nu se gaseste in toate magazinele RO"],
+          "specificatii": {"Procesor": "Qualcomm Snapdragon 8 Elite", "RAM": "12GB", "Stocare": "256GB UFS 4.0", "Display": "6.82 inch QHD+ LTPO AMOLED 120Hz", "Camera principala": "50MP Hasselblad f/1.6", "Baterie": "6000mAh / 100W", "OS": "Android 15 / OxygenOS 15"},
+          "magazine": [
+            {"magazin_slug": "emag.ro", "eticheta": "eMAG", "pret": 3299, "recomandat": true}
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "casti-wireless",
+      "titlu": "Cele mai bune casti wireless 2026",
+      "titlu_scurt": "Casti Wireless",
+      "emoji": "🎧",
+      "descriere": "Top 6 casti wireless cu anulare zgomot. De la buget la premium, pentru muzica, gaming si sport.",
+      "culoare": "indigo",
+      "tag": "TOP",
+      "produse": [
+        {
+          "pozitie": 1,
+          "badge": "Alegerea Redactiei",
+          "badge_color": "orange",
+          "nume": "Sony WH-1000XM5",
+          "model": "WH1000XM5/B",
+          "imagine": "https://picsum.photos/seed/sony-xm5/400/280",
+          "pret_de_la": 1299,
+          "moneda": "RON",
+          "scor_total": 9.6,
+          "scoruri": {"Sunet": 9.7, "ANC": 9.8, "Confort": 9.5, "Autonomie": 9.4, "Pret/Calitate": 9.2},
+          "verdict_scurt": "Cel mai bun ANC din lume, an dupa an",
+          "verdict_detaliat": "Sony WH-1000XM5 ramane standardul de aur in anularea zgomotului. Cu 8 microfoane pentru ANC si sunet Hi-Res Audio, ofera 30 ore de autonomie si confort exceptional pentru calatorii lungi.",
+          "pro": ["ANC nr. 1 in industrie", "Sunet Hi-Res exceptional", "30 ore autonomie", "Fold flat compact"],
+          "contra": ["Pret premium", "Fara port jack 3.5mm pe unele modele", "Cupa usor mai ingusta vs XM4"],
+          "specificatii": {"Tip": "Over-ear wireless", "Driver": "30mm", "ANC": "8 microfoane AI", "Autonomie": "30 ore (ANC on)", "Incarcare": "USB-C, 3h full / 3min = 3h", "Codec": "LDAC, AAC, SBC", "Greutate": "250g"},
+          "magazine": [
+            {"magazin_slug": "emag.ro", "eticheta": "eMAG", "pret": 1349, "recomandat": true},
+            {"magazin_slug": "altex.ro", "eticheta": "Altex", "pret": 1399, "recomandat": false},
+            {"magazin_slug": "flanco.ro", "eticheta": "Flanco", "pret": 1299, "recomandat": false}
+          ]
+        },
+        {
+          "pozitie": 2,
+          "badge": "Cel mai bun pret",
+          "badge_color": "green",
+          "nume": "Edifier WH950NB",
+          "model": "WH950NB",
+          "imagine": "https://picsum.photos/seed/edifier-wh950/400/280",
+          "pret_de_la": 499,
+          "moneda": "RON",
+          "scor_total": 8.6,
+          "scoruri": {"Sunet": 8.7, "ANC": 8.3, "Confort": 8.5, "Autonomie": 9.0, "Pret/Calitate": 9.6},
+          "verdict_scurt": "ANC decent la o treime din pretul Sony",
+          "verdict_detaliat": "Edifier WH950NB ofera o surpriza placuta la 499 lei. ANC-ul nu este la nivelul Sony, dar este surprinzator de eficient pentru aceasta clasa de pret. Sunetul este cald si echilibrat.",
+          "pro": ["Pret exceptional sub 500 lei", "60 ore autonomie uriasa", "ANC decent pentru pret", "LDAC supported"],
+          "contra": ["ANC mai slab vs Sony/Bose", "Design plastic mai ieftin", "Microfon call mediocru"],
+          "specificatii": {"Tip": "Over-ear wireless", "Driver": "40mm", "ANC": "4 microfoane", "Autonomie": "60 ore (ANC off)", "Incarcare": "USB-C, 2h full", "Codec": "LDAC, aptX, SBC", "Greutate": "256g"},
+          "magazine": [
+            {"magazin_slug": "emag.ro", "eticheta": "eMAG", "pret": 499, "recomandat": true}
+          ]
+        },
+        {
+          "pozitie": 3,
+          "badge": "Cel mai bun gaming",
+          "badge_color": "purple",
+          "nume": "SteelSeries Arctis Nova Pro",
+          "model": "61527",
+          "imagine": "https://picsum.photos/seed/steelseries-arctis/400/280",
+          "pret_de_la": 1499,
+          "moneda": "RON",
+          "scor_total": 9.1,
+          "scoruri": {"Sunet": 9.3, "ANC": 8.5, "Confort": 9.4, "Autonomie": 8.8, "Pret/Calitate": 8.7},
+          "verdict_scurt": "Castile de gaming cu ANC pentru PC si console",
+          "verdict_detaliat": "SteelSeries Arctis Nova Pro combina calitatea audio gaming cu functia ANC intr-un package versatil. Sistemul de baterii interschimbabile garanteaza 0 timp mort in gaming.",
+          "pro": ["Sunet gaming superior 360 Spatial Audio", "Baterii interschimbabile", "Microfon retractabil ClearCast", "Dual wireless (Bluetooth + 2.4GHz)"],
+          "contra": ["Pret ridicat", "Aplicatia software necesara pentru setari", "Mai greu 338g"],
+          "specificatii": {"Tip": "Over-ear wireless", "Driver": "40mm neodim", "ANC": "Active ANC cu transparenta", "Autonomie": "22h + baterie extra", "Incarcare": "USB-C quick charge", "Conexiune": "Bluetooth 5.0 + 2.4GHz USB", "Greutate": "338g"},
+          "magazine": [
+            {"magazin_slug": "emag.ro", "eticheta": "eMAG", "pret": 1499, "recomandat": true},
+            {"magazin_slug": "pcgarage.ro", "eticheta": "PC Garage", "pret": 1549, "recomandat": false}
+          ]
+        },
+        {
+          "pozitie": 4,
+          "badge": null,
+          "badge_color": null,
+          "nume": "Bose QuietComfort 45",
+          "model": "866724-0100",
+          "imagine": "https://picsum.photos/seed/bose-qc45/400/280",
+          "pret_de_la": 1199,
+          "moneda": "RON",
+          "scor_total": 9.0,
+          "scoruri": {"Sunet": 9.1, "ANC": 9.4, "Confort": 9.6, "Autonomie": 9.0, "Pret/Calitate": 8.6},
+          "verdict_scurt": "Cel mai confortabil headphone pentru calatorii",
+          "verdict_detaliat": "Bose QC 45 exceleaza la confort - poti purta aceste casti 8 ore fara disconfort. ANC-ul Bose ramane printre cele mai bune, cu sunet cald si placut.",
+          "pro": ["Confort exceptional 8h+ purtare", "ANC excelent mai ales la frecvente joase", "Sunet cald si placut", "Modul Aware transparent"],
+          "contra": ["Nu suporta LDAC/aptX", "Lipsa EQ in aplicatie", "Nu se pliaza complet plat"],
+          "specificatii": {"Tip": "Over-ear wireless", "Driver": "Triport TriPort custom", "ANC": "Dual microphone ANC", "Autonomie": "24 ore", "Incarcare": "USB-C, 2.5h full", "Codec": "AAC, SBC", "Greutate": "238g"},
+          "magazine": [
+            {"magazin_slug": "emag.ro", "eticheta": "eMAG", "pret": 1199, "recomandat": true},
+            {"magazin_slug": "altex.ro", "eticheta": "Altex", "pret": 1249, "recomandat": false}
+          ]
+        },
+        {
+          "pozitie": 5,
+          "badge": "Cel mai bun sport",
+          "badge_color": "cyan",
+          "nume": "Jabra Elite 8 Active",
+          "model": "100-99180000-98",
+          "imagine": "https://picsum.photos/seed/jabra-elite8/400/280",
+          "pret_de_la": 799,
+          "moneda": "RON",
+          "scor_total": 8.8,
+          "scoruri": {"Sunet": 8.7, "ANC": 8.5, "Confort": 8.9, "Autonomie": 8.6, "Pret/Calitate": 8.8},
+          "verdict_scurt": "Cele mai bune in-ear pentru sport si activitati",
+          "verdict_detaliat": "Jabra Elite 8 Active sunt concepute pentru sport extrem. Certificarea IP68 le protejeaza si la inot, iar ShakeGrip garanteaza stabilitate la alergat.",
+          "pro": ["IP68 - rezistente la apa si inot", "ShakeGrip nu cad la alergare", "ANC adaptat la sport", "Sunet EqualizerFlex excelent"],
+          "contra": ["Pret mai mare vs concurenta", "Carcasa incarcare compacta dar fara Qi", "Autonomie 8h moderata"],
+          "specificatii": {"Tip": "In-ear true wireless", "Driver": "6mm", "ANC": "6-mic ajustabil", "Autonomie": "8h + 24h carcasa", "Incarcare": "USB-C, 1h full", "Conectivitate": "Bluetooth 5.3 Multipoint", "IP": "IP68"},
+          "magazine": [
+            {"magazin_slug": "emag.ro", "eticheta": "eMAG", "pret": 799, "recomandat": true}
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "televizoare",
+      "titlu": "Cele mai bune televizoare 2026",
+      "titlu_scurt": "Televizoare",
+      "emoji": "📺",
+      "descriere": "Top 5 televizoare smart OLED si QLED testate. Recomandarile noastre pentru living, gaming si cinema acasa.",
+      "culoare": "teal",
+      "tag": "POPULAR",
+      "produse": [
+        {
+          "pozitie": 1,
+          "badge": "Alegerea Redactiei",
+          "badge_color": "orange",
+          "nume": "LG OLED C4 55 inch",
+          "model": "OLED55C42LA",
+          "imagine": "https://picsum.photos/seed/lg-oled-c4/400/280",
+          "pret_de_la": 5499,
+          "moneda": "RON",
+          "scor_total": 9.7,
+          "scoruri": {"Imagine": 9.9, "Sunet": 8.5, "Smart TV": 9.2, "Gaming": 9.8, "Pret/Calitate": 9.3},
+          "verdict_scurt": "Cel mai bun OLED la balanta pret-calitate",
+          "verdict_detaliat": "LG OLED C4 este televizorul de referinta in 2026. Panoul OLED evo cu MLA ofera negru perfect si luminozitate record pentru OLED. Alpha 9 AI Gen7 proceseaza imagini cu precizie cinematografica.",
+          "pro": ["Negru perfect OLED fara backlight", "1ms HDMI 2.1 x4 ideal gaming", "Dolby Vision + Atmos", "webOS 24 fluid si rapid"],
+          "contra": ["Risc burn-in pe termen lung", "Sunet integrat mediocru", "Pret ridicat vs QLED"],
+          "specificatii": {"Tip": "OLED evo MLA", "Dimensiune": "55 inch", "Rezolutie": "4K UHD 3840x2160", "Frecventa": "120Hz HDMI 2.1", "HDR": "Dolby Vision IQ, HDR10, HLG", "Smart TV": "webOS 24", "HDMI": "4x HDMI 2.1 48Gbps"},
+          "magazine": [
+            {"magazin_slug": "emag.ro", "eticheta": "eMAG", "pret": 5699, "recomandat": true},
+            {"magazin_slug": "altex.ro", "eticheta": "Altex", "pret": 5499, "recomandat": false},
+            {"magazin_slug": "flanco.ro", "eticheta": "Flanco", "pret": 5599, "recomandat": false}
+          ]
+        },
+        {
+          "pozitie": 2,
+          "badge": "Cel mai bun pret",
+          "badge_color": "green",
+          "nume": "Hisense U8N 55 inch",
+          "model": "55U8NQ",
+          "imagine": "https://picsum.photos/seed/hisense-u8n/400/280",
+          "pret_de_la": 2999,
+          "moneda": "RON",
+          "scor_total": 9.0,
+          "scoruri": {"Imagine": 9.2, "Sunet": 8.8, "Smart TV": 8.5, "Gaming": 9.0, "Pret/Calitate": 9.7},
+          "verdict_scurt": "QLED Mini-LED spectaculos la jumatate pretul OLED",
+          "verdict_detaliat": "Hisense U8N ofera imagine apropiata de OLED la un pret cu 40% mai mic. Mini-LED cu 1500 zone de local dimming, luminozitate de 3000 niti in HDR si HDMI 2.1 il fac extraordinar la aceasta clasa de pret.",
+          "pro": ["Luminozitate HDR 3000 niti exceptional", "1500 zone local dimming", "HDMI 2.1 144Hz pentru gaming", "Raport calitate-pret imbatabil"],
+          "contra": ["Halo effect vizibil pe QLED vs OLED", "VIDAA OS mai limitat", "Sunet modest 40W"],
+          "specificatii": {"Tip": "Mini-LED QLED", "Dimensiune": "55 inch", "Rezolutie": "4K UHD", "Frecventa": "144Hz HDMI 2.1", "HDR": "Dolby Vision, HDR10+, HLG", "Smart TV": "VIDAA U7", "Luminozitate": "3000 niti HDR"},
+          "magazine": [
+            {"magazin_slug": "emag.ro", "eticheta": "eMAG", "pret": 2999, "recomandat": true},
+            {"magazin_slug": "altex.ro", "eticheta": "Altex", "pret": 3099, "recomandat": false}
+          ]
+        },
+        {
+          "pozitie": 3,
+          "badge": "Cel mai bun gaming",
+          "badge_color": "purple",
+          "nume": "Samsung QN90D 55 inch",
+          "model": "QE55QN90DATXXH",
+          "imagine": "https://picsum.photos/seed/samsung-qn90d/400/280",
+          "pret_de_la": 4299,
+          "moneda": "RON",
+          "scor_total": 9.2,
+          "scoruri": {"Imagine": 9.3, "Sunet": 9.0, "Smart TV": 9.5, "Gaming": 9.6, "Pret/Calitate": 8.7},
+          "verdict_scurt": "Cel mai complet TV gaming cu Tizen OS excelent",
+          "verdict_detaliat": "Samsung QN90D Neo QLED cu Mini-LED Matrix este optiunea ideala pentru gamer si cinefil. 4x HDMI 2.1 cu 144Hz, VRR si ALLM il fac perfect pentru PS5 si Xbox Series X.",
+          "pro": ["Tizen OS cel mai complet Smart TV", "144Hz VRR gaming exceptional", "Luminozitate 2000 niti", "Sunete integrate 60W Dolby Atmos"],
+          "contra": ["Pret mai mare vs Hisense", "Burn-in imposibil pe QLED dar imagine mai slaba negru"],
+          "specificatii": {"Tip": "Neo QLED Mini-LED", "Dimensiune": "55 inch", "Rezolutie": "4K UHD", "Frecventa": "144Hz VRR", "HDR": "Quantum HDR 2000 niti", "Smart TV": "Tizen 8.0 + Gaming Hub", "HDMI": "4x HDMI 2.1"},
+          "magazine": [
+            {"magazin_slug": "emag.ro", "eticheta": "eMAG", "pret": 4499, "recomandat": true},
+            {"magazin_slug": "altex.ro", "eticheta": "Altex", "pret": 4299, "recomandat": false}
+          ]
+        },
+        {
+          "pozitie": 4,
+          "badge": null,
+          "badge_color": null,
+          "nume": "Sony Bravia 7 55 inch",
+          "model": "K-55XR70",
+          "imagine": "https://picsum.photos/seed/sony-bravia7/400/280",
+          "pret_de_la": 4999,
+          "moneda": "RON",
+          "scor_total": 9.1,
+          "scoruri": {"Imagine": 9.4, "Sunet": 9.3, "Smart TV": 8.8, "Gaming": 9.0, "Pret/Calitate": 8.5},
+          "verdict_scurt": "Procesarea imaginii Sony + sunet cinematografic",
+          "verdict_detaliat": "Sony Bravia 7 exceleaza la procesarea culorii cu XR Processor si sunet Acoustic Multi-Audio 3D. Integrat cu Google TV si compatibil perfect cu PS5.",
+          "pro": ["Procesare XR superioara", "Sunet Acoustic 3D exceptional", "Google TV complet", "Perfect sincronizat cu PS5"],
+          "contra": ["Pret premium ridicat", "Nu ajunge la luminozitatea Hisense/Samsung"],
+          "specificatii": {"Tip": "Mini-LED LCD", "Dimensiune": "55 inch", "Rezolutie": "4K UHD", "Frecventa": "120Hz HDMI 2.1", "HDR": "Dolby Vision, HDR10, HLG", "Smart TV": "Google TV", "Sunet": "60W Acoustic Multi-Audio"},
+          "magazine": [
+            {"magazin_slug": "emag.ro", "eticheta": "eMAG", "pret": 4999, "recomandat": true},
+            {"magazin_slug": "flanco.ro", "eticheta": "Flanco", "pret": 5099, "recomandat": false}
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "aspiratoare-robot",
+      "titlu": "Cele mai bune aspiratoare robot 2026",
+      "titlu_scurt": "Aspiratoare Robot",
+      "emoji": "🤖",
+      "descriere": "Top 5 aspiratoare robot cu statie auto-golire, mop integrat si cartografiere laser. Testate in conditii reale.",
+      "culoare": "emerald",
+      "tag": "NOU",
+      "produse": [
+        {
+          "pozitie": 1,
+          "badge": "Alegerea Redactiei",
+          "badge_color": "orange",
+          "nume": "Roborock S8 MaxV Ultra",
+          "model": "S8 MaxV Ultra",
+          "imagine": "https://picsum.photos/seed/roborock-s8/400/280",
+          "pret_de_la": 4999,
+          "moneda": "RON",
+          "scor_total": 9.5,
+          "scoruri": {"Aspirare": 9.8, "Mop": 9.5, "Navigatie": 9.7, "Statie": 9.6, "Pret/Calitate": 8.8},
+          "verdict_scurt": "Cel mai complet robot aspirator din piata",
+          "verdict_detaliat": "Roborock S8 MaxV Ultra stabileste un nou standard pentru robotii de curatenie. Suctiunea de 10000Pa, camera inteligenta pentru recunoastere obstacole, mop vibratie si statia de golire + spalare mop automat fac din el robotul ideal.",
+          "pro": ["10000Pa suctiune record", "Camera RockCam evita obstacolele", "Mop vibratie + ridicare automata", "Statie golire + spalare + uscare mop"],
+          "contra": ["Pret very premium", "Statia este voluminoasa", "App necesara Wi-Fi permanent"],
+          "specificatii": {"Suctiune": "10000 Pa", "Navigatie": "LiDAR PreciSense+ AI", "Mop": "Vibratie ultrasonica + ridicare 10mm", "Statie": "Golire + spalare mop + uscare aer cald", "Autonomie": "180 min", "Zgomot": "65 dB"},
+          "magazine": [
+            {"magazin_slug": "emag.ro", "eticheta": "eMAG", "pret": 4999, "recomandat": true},
+            {"magazin_slug": "altex.ro", "eticheta": "Altex", "pret": 5199, "recomandat": false}
+          ]
+        },
+        {
+          "pozitie": 2,
+          "badge": "Cel mai bun pret",
+          "badge_color": "green",
+          "nume": "Dreame L10s Pro Ultra Heat",
+          "model": "RLS8-RU0",
+          "imagine": "https://picsum.photos/seed/dreame-l10s/400/280",
+          "pret_de_la": 2899,
+          "moneda": "RON",
+          "scor_total": 9.1,
+          "scoruri": {"Aspirare": 9.2, "Mop": 9.3, "Navigatie": 9.0, "Statie": 9.1, "Pret/Calitate": 9.4},
+          "verdict_scurt": "Performante de top la 40% mai putin",
+          "verdict_detaliat": "Dreame L10s Pro Ultra Heat ofera functie de curatare a mopului cu abur la 75 grade Celsius, ucizand bacteriile. 7000Pa suctiune si AI Object Recognition asigura performante excelente la pret mai accesibil.",
+          "pro": ["Spalare mop cu abur 75 grade", "AI Object Recognition", "7000Pa suctiune buna", "Pret accesibil vs Roborock"],
+          "contra": ["Harta mai lenta de generat", "Statia mai mare decat Roborock", "App uneori lenta"],
+          "specificatii": {"Suctiune": "7000 Pa", "Navigatie": "LiDAR 3D", "Mop": "Vibratie + ridicare automata", "Statie": "Golire + spalare abur 75C", "Autonomie": "150 min", "Zgomot": "67 dB"},
+          "magazine": [
+            {"magazin_slug": "emag.ro", "eticheta": "eMAG", "pret": 2899, "recomandat": true}
+          ]
+        },
+        {
+          "pozitie": 3,
+          "badge": null,
+          "badge_color": null,
+          "nume": "Xiaomi Robot Vacuum X20 Pro",
+          "model": "BHR8166EU",
+          "imagine": "https://picsum.photos/seed/xiaomi-x20/400/280",
+          "pret_de_la": 1899,
+          "moneda": "RON",
+          "scor_total": 8.5,
+          "scoruri": {"Aspirare": 8.6, "Mop": 8.3, "Navigatie": 8.7, "Statie": 8.4, "Pret/Calitate": 9.2},
+          "verdict_scurt": "Robot solid la pret mediu cu statie completa",
+          "verdict_detaliat": "Xiaomi X20 Pro este optiunea ideala pentru cei care vor un robot capabil cu statie de golire automata fara sa plateasca premium. 4000Pa si mop vibratie ofera curatare decenta pe toate tipurile de pardoseala.",
+          "pro": ["Pret accesibil cu statie golire", "Mi Home app intuitiva", "4000Pa suficient pentru curataare zilnica", "Mop cu vibratie inclus"],
+          "contra": ["Mop fara spalare automata", "Suctiune mai slaba vs premium", "Camera recunoastere fara AI avansat"],
+          "specificatii": {"Suctiune": "4000 Pa", "Navigatie": "LiDAR", "Mop": "Vibratie 3000 rpm", "Statie": "Golire automata 60 zile", "Autonomie": "130 min", "Zgomot": "65 dB"},
+          "magazine": [
+            {"magazin_slug": "emag.ro", "eticheta": "eMAG", "pret": 1899, "recomandat": true},
+            {"magazin_slug": "altex.ro", "eticheta": "Altex", "pret": 1999, "recomandat": false}
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "friteuze",
+      "titlu": "Cele mai bune friteuze cu aer 2026",
+      "titlu_scurt": "Friteuze Aer Cald",
+      "emoji": "🍟",
+      "descriere": "Top 6 friteuze cu aer cald (air fryer) testate in bucatarie. De la modele entry-level la cele cu ecran digital.",
+      "culoare": "amber",
+      "tag": "TOP",
+      "produse": [
+        {
+          "pozitie": 1,
+          "badge": "Alegerea Redactiei",
+          "badge_color": "orange",
+          "nume": "Ninja Foodi MAX Dual Zone AF400",
+          "model": "AF400EU",
+          "imagine": "https://picsum.photos/seed/ninja-af400/400/280",
+          "pret_de_la": 899,
+          "moneda": "RON",
+          "scor_total": 9.4,
+          "scoruri": {"Gatit": 9.6, "Usurinta": 9.3, "Capacitate": 9.5, "Curatare": 8.8, "Pret/Calitate": 9.2},
+          "verdict_scurt": "Doua zone independente - gatesti doua lucruri simultan",
+          "verdict_detaliat": "Ninja AF400 revolutioneaza gatitul cu doua zone independente de 4.7L fiecare. Sync Cook si Match Cook permit sincronizarea sau gatitul la parametri diferiti simultan. Ideal pentru familii mari.",
+          "pro": ["2 zone 9.5L total independente", "Sync Cook / Match Cook revolutionar", "10 programe presetate", "Rezultate crocante superioare"],
+          "contra": ["Pret mai ridicat", "Ocupa mult spatiu pe blat", "Cosul nu intra complet la frigider"],
+          "specificatii": {"Capacitate": "2x 4.75L = 9.5L total", "Putere": "2400W", "Programe": "10 (Air Fry, Max Crisp, Roast, Bake, Reheat, Dehydrate)", "Temperatura": "40-240 grade", "Dimensiuni": "47.4 x 27.4 x 31.2 cm"},
+          "magazine": [
+            {"magazin_slug": "emag.ro", "eticheta": "eMAG", "pret": 899, "recomandat": true},
+            {"magazin_slug": "altex.ro", "eticheta": "Altex", "pret": 949, "recomandat": false}
+          ]
+        },
+        {
+          "pozitie": 2,
+          "badge": "Cel mai bun pret",
+          "badge_color": "green",
+          "nume": "Philips HD9285 Airfryer XXL",
+          "model": "HD9285/90",
+          "imagine": "https://picsum.photos/seed/philips-airfryer/400/280",
+          "pret_de_la": 599,
+          "moneda": "RON",
+          "scor_total": 8.9,
+          "scoruri": {"Gatit": 9.0, "Usurinta": 9.2, "Capacitate": 8.8, "Curatare": 9.1, "Pret/Calitate": 9.3},
+          "verdict_scurt": "Clasicul de referinta - simplu, fiabil, eficient",
+          "verdict_detaliat": "Philips Airfryer XXL este friteuza cu aer care a definit categoria. Fat Removal Technology extrage grasimea din alimente, iar capacitatea 7.3L o face ideala pentru o familie de 4-6 persoane.",
+          "pro": ["Fat Removal Technology unic Philips", "7.3L capacitate familiala", "Curat usor - compatibil masina spalat vase", "Aplicatie NutriU cu retete"],
+          "contra": ["Fara zona duala", "Panou touch simplu fara ecran color", "Pret mediu-ridicat"],
+          "specificatii": {"Capacitate": "7.3L", "Putere": "2000W", "Temperatura": "40-200 grade", "Ecran": "Digital LED", "Compatibilitate": "Masina spalat vase (cosuri)"},
+          "magazine": [
+            {"magazin_slug": "emag.ro", "eticheta": "eMAG", "pret": 599, "recomandat": true},
+            {"magazin_slug": "altex.ro", "eticheta": "Altex", "pret": 649, "recomandat": false},
+            {"magazin_slug": "flanco.ro", "eticheta": "Flanco", "pret": 629, "recomandat": false}
+          ]
+        },
+        {
+          "pozitie": 3,
+          "badge": "Cel mai ieftin",
+          "badge_color": "blue",
+          "nume": "Tefal Easy Fry Oven & Grill EY505D",
+          "model": "EY505D15",
+          "imagine": "https://picsum.photos/seed/tefal-easyfry/400/280",
+          "pret_de_la": 349,
+          "moneda": "RON",
+          "scor_total": 8.3,
+          "scoruri": {"Gatit": 8.4, "Usurinta": 8.8, "Capacitate": 8.0, "Curatare": 8.5, "Pret/Calitate": 9.5},
+          "verdict_scurt": "Air fryer + cuptor + grill in 3 in 1 la pret mic",
+          "verdict_detaliat": "Tefal EY505D combina friteuza cu aer, cuptor si grill intr-un aparat compact la pret accesibil. 11L capacitate si 8 presetari automate il fac versatil pentru o familie medie.",
+          "pro": ["Pret accesibil sub 400 lei", "3 in 1: air fry + cuptor + grill", "11L capacitate mare", "8 programe automate"],
+          "contra": ["Calitate constructie mai slaba", "Distributie uniforma mai slaba vs Philips", "Fara aplicatie mobila"],
+          "specificatii": {"Capacitate": "11L", "Putere": "1500W", "Functii": "Air fry, Cuptor, Grill, Prajitor paine", "Temperatura": "30-230 grade", "Programe": "8 presetate"},
+          "magazine": [
+            {"magazin_slug": "emag.ro", "eticheta": "eMAG", "pret": 349, "recomandat": true},
+            {"magazin_slug": "altex.ro", "eticheta": "Altex", "pret": 379, "recomandat": false}
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "smartwatch-uri",
+      "titlu": "Cele mai bune smartwatch-uri 2026",
+      "titlu_scurt": "Smartwatch-uri",
+      "emoji": "⌚",
+      "descriere": "Top 5 smartwatch-uri pentru sanatate, sport si notificari. Apple Watch, Samsung, Garmin si optiunile budget.",
+      "culoare": "rose",
+      "tag": "NOU",
+      "produse": [
+        {
+          "pozitie": 1,
+          "badge": "Alegerea Redactiei",
+          "badge_color": "orange",
+          "nume": "Apple Watch Series 10",
+          "model": "MYED3RO/A",
+          "imagine": "https://picsum.photos/seed/apple-watch-10/400/280",
+          "pret_de_la": 2299,
+          "moneda": "RON",
+          "scor_total": 9.4,
+          "scoruri": {"Sanatate": 9.7, "Sport": 9.2, "Design": 9.8, "Autonomie": 8.5, "Pret/Calitate": 8.6},
+          "verdict_scurt": "Cel mai bun smartwatch pentru utilizatorii iPhone",
+          "verdict_detaliat": "Apple Watch Series 10 este cel mai subtil si mai usor Apple Watch creat. Ecranul 46mm cu Always On si detectionul apneei in somn sunt adaugiri semnificative. Integrat perfect cu iPhone si sanatatea Apple.",
+          "pro": ["Cel mai subtil/usor Apple Watch", "Detectie apnee somn noua", "Display LTPO 2.1 inch", "watchOS 11 + Siri excelent"],
+          "contra": ["Autonomie 18-36h limitata", "Compatibil DOAR cu iPhone", "Pret premium ridicat"],
+          "specificatii": {"Carcasa": "45mm sau 49mm Titan/Aluminiu", "Display": "LTPO OLED Always-On Retina", "Sanatate": "ECG, Sp02, temperature piele, detectie apnee", "GPS": "Dual-frequency GPS", "Autonomie": "18h sport / 36h mod economic", "WR": "50m"},
+          "magazine": [
+            {"magazin_slug": "emag.ro", "eticheta": "eMAG", "pret": 2299, "recomandat": true},
+            {"magazin_slug": "altex.ro", "eticheta": "Altex", "pret": 2399, "recomandat": false}
+          ]
+        },
+        {
+          "pozitie": 2,
+          "badge": "Cel mai bun Android",
+          "badge_color": "blue",
+          "nume": "Samsung Galaxy Watch 7",
+          "model": "SM-L300NZAAEUE",
+          "imagine": "https://picsum.photos/seed/samsung-watch7/400/280",
+          "pret_de_la": 1299,
+          "moneda": "RON",
+          "scor_total": 9.1,
+          "scoruri": {"Sanatate": 9.3, "Sport": 9.0, "Design": 9.2, "Autonomie": 8.8, "Pret/Calitate": 9.2},
+          "verdict_scurt": "Cel mai complet smartwatch pentru Android",
+          "verdict_detaliat": "Samsung Galaxy Watch 7 cu Exynos W1000 este de doua ori mai rapid decat predecesorul. Analiza Bioactive Sensor 3.0 monitorizeaza glicemia indirect, energetic, somn avansat si compozitie corporala.",
+          "pro": ["Exynos W1000 extra rapid", "BioActive Sensor 3.0 avansat", "Analiza compozitie corporala", "Wear OS + One UI Watch bun"],
+          "contra": ["Autonomie 40h moderata", "Optimizat pt Samsung Galaxy", "Fara bezel circular"],
+          "specificatii": {"Carcasa": "40mm sau 44mm Aluminiu", "Display": "Super AMOLED sapphire 432x432", "Sanatate": "BioActive 3.0, ECG, SpO2, Skin Temperature", "GPS": "GPS + Glonass + Beidou", "Autonomie": "40h mixed use", "WR": "5ATM + IP68"},
+          "magazine": [
+            {"magazin_slug": "emag.ro", "eticheta": "eMAG", "pret": 1299, "recomandat": true},
+            {"magazin_slug": "altex.ro", "eticheta": "Altex", "pret": 1349, "recomandat": false}
+          ]
+        },
+        {
+          "pozitie": 3,
+          "badge": "Cel mai bun sport",
+          "badge_color": "green",
+          "nume": "Garmin Fenix 8 Sapphire",
+          "model": "010-02906-11",
+          "imagine": "https://picsum.photos/seed/garmin-fenix8/400/280",
+          "pret_de_la": 4799,
+          "moneda": "RON",
+          "scor_total": 9.3,
+          "scoruri": {"Sanatate": 9.5, "Sport": 9.9, "Design": 8.8, "Autonomie": 9.8, "Pret/Calitate": 8.2},
+          "verdict_scurt": "Cel mai performant smartwatch pentru atleti",
+          "verdict_detaliat": "Garmin Fenix 8 Sapphire este alegerea sportivilor seriosi. 29 zile autonomie, GPS multi-band, analize VO2max si training load avansat. Primul Fenix cu microfon si difuzor pentru apeluri.",
+          "pro": ["29 zile autonomie record", "GPS multi-band ultra-precis", "Analize sport extrem de avansate", "Microfon + difuzor noi pe Fenix"],
+          "contra": ["Pret prohibitiv 4800+ lei", "Design masiv 51mm", "Notificari limitate vs Apple/Samsung"],
+          "specificatii": {"Carcasa": "51mm titan cu display safir", "Display": "AMOLED 1.4 inch", "Sanatate": "Pulse Ox, Body Battery, HRV, Stress", "GPS": "Multi-band L1+L5", "Autonomie": "29 zile smartwatch / 90h GPS", "WR": "10ATM + MIL-STD-810"},
+          "magazine": [
+            {"magazin_slug": "emag.ro", "eticheta": "eMAG", "pret": 4799, "recomandat": true}
+          ]
+        },
+        {
+          "pozitie": 4,
+          "badge": "Cel mai ieftin",
+          "badge_color": "cyan",
+          "nume": "Amazfit GTR 4",
+          "model": "W2166EU1N",
+          "imagine": "https://picsum.photos/seed/amazfit-gtr4/400/280",
+          "pret_de_la": 499,
+          "moneda": "RON",
+          "scor_total": 8.4,
+          "scoruri": {"Sanatate": 8.5, "Sport": 8.6, "Design": 8.8, "Autonomie": 9.0, "Pret/Calitate": 9.7},
+          "verdict_scurt": "Smartwatch complet la sub 500 lei",
+          "verdict_detaliat": "Amazfit GTR 4 ofera 150+ moduri sport, GPS dual-band, ECG si monitorare SpO2 la un pret sub 500 lei. Design rotund elegant si display AMOLED 466x466 excelent.",
+          "pro": ["Pret exceptional sub 500 lei", "GPS dual-band precis", "Display AMOLED 466x466 excelent", "150+ moduri sport"],
+          "contra": ["Zepp OS inferior Wear OS", "Fara NFC pentru plati", "Unele metrici mai putin precise"],
+          "specificatii": {"Carcasa": "46mm aluminiu", "Display": "AMOLED 1.43 inch 466x466", "Sanatate": "ECG, SpO2, temperatura, stres", "GPS": "Dual-band GPS L1+L5", "Autonomie": "14 zile", "WR": "5ATM"},
+          "magazine": [
+            {"magazin_slug": "emag.ro", "eticheta": "eMAG", "pret": 499, "recomandat": true},
+            {"magazin_slug": "altex.ro", "eticheta": "Altex", "pret": 549, "recomandat": false}
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "monitoare",
+      "titlu": "Cele mai bune monitoare 2026",
+      "titlu_scurt": "Monitoare",
+      "emoji": "🖥️",
+      "descriere": "Top 5 monitoare pentru birou, gaming si design grafic. OLED, IPS si VA testate si comparate.",
+      "culoare": "sky",
+      "tag": "POPULAR",
+      "produse": [
+        {
+          "pozitie": 1,
+          "badge": "Cel mai bun gaming",
+          "badge_color": "purple",
+          "nume": "LG 27GR95QE OLED 27inch",
+          "model": "27GR95QE-B",
+          "imagine": "https://picsum.photos/seed/lg-oled-monitor/400/280",
+          "pret_de_la": 3299,
+          "moneda": "RON",
+          "scor_total": 9.5,
+          "scoruri": {"Imagine": 9.9, "Gaming": 9.7, "Design": 9.3, "Ergonomie": 8.5, "Pret/Calitate": 8.9},
+          "verdict_scurt": "OLED 240Hz - cel mai bun monitor gaming din lume",
+          "verdict_detaliat": "LG 27GR95QE cu panel OLED 240Hz si timp de raspuns 0.03ms este monitorul de referinta pentru gaming competitiv. Negru perfect si culori OLED la 240Hz este combinatia imposibil de egalat de monitoarele LCD.",
+          "pro": ["OLED 240Hz + 0.03ms inegalabil", "Negru perfect si culori exceptionale", "DisplayHDR True Black 400", "Compatibil G-Sync + FreeSync Premium"],
+          "contra": ["Pret premium 3300+ lei", "Risc teoretic burn-in OLED", "1440p nu 4K la 27inch"],
+          "specificatii": {"Panel": "OLED W-OLED", "Dimensiune": "27 inch QHD 2560x1440", "Frecventa": "240Hz", "Timp raspuns": "0.03ms GtG", "HDR": "DisplayHDR True Black 400", "Conectori": "2x HDMI 2.1, 1x DP 1.4", "VRR": "G-Sync + FreeSync Premium Pro"},
+          "magazine": [
+            {"magazin_slug": "emag.ro", "eticheta": "eMAG", "pret": 3299, "recomandat": true},
+            {"magazin_slug": "pcgarage.ro", "eticheta": "PC Garage", "pret": 3399, "recomandat": false}
+          ]
+        },
+        {
+          "pozitie": 2,
+          "badge": "Cel mai bun birou",
+          "badge_color": "blue",
+          "nume": "Dell UltraSharp U2724D",
+          "model": "U2724D",
+          "imagine": "https://picsum.photos/seed/dell-u2724/400/280",
+          "pret_de_la": 2199,
+          "moneda": "RON",
+          "scor_total": 9.1,
+          "scoruri": {"Imagine": 9.2, "Gaming": 8.2, "Design": 9.5, "Ergonomie": 9.8, "Pret/Calitate": 8.9},
+          "verdict_scurt": "Monitorul perfect pentru munca - culori calibrate fabrica",
+          "verdict_detaliat": "Dell UltraSharp U2724D cu panel IPS Black ofera contrast 2000:1 (dublu fata de IPS normal) si culori calibrate la fabrica <2 Delta-E. Ergonomia completa si Hub USB-C 90W il fac ideal pentru biroul profesionist.",
+          "pro": ["IPS Black contrast 2000:1 superior", "Calibrat fabrica DeltaE<2", "Ergonomie completa (pivot, inaltime)", "USB-C 90W dock integrat"],
+          "contra": ["60Hz nu potrivit pentru gaming", "Pret ridicat vs IPS standard", "Fara HDR True Black"],
+          "specificatii": {"Panel": "IPS Black", "Dimensiune": "27 inch QHD 2560x1440", "Frecventa": "60Hz", "Contrast": "2000:1", "Color": "100% sRGB, 98% DCI-P3, calibrat <2 dE", "Conectori": "USB-C 90W, 2x HDMI, DP", "Ergonomie": "Tilt/Swivel/Height/Pivot"},
+          "magazine": [
+            {"magazin_slug": "emag.ro", "eticheta": "eMAG", "pret": 2199, "recomandat": true}
+          ]
+        },
+        {
+          "pozitie": 3,
+          "badge": "Cel mai bun pret",
+          "badge_color": "green",
+          "nume": "Gigabyte G27Q",
+          "model": "G27Q",
+          "imagine": "https://picsum.photos/seed/gigabyte-g27q/400/280",
+          "pret_de_la": 799,
+          "moneda": "RON",
+          "scor_total": 8.6,
+          "scoruri": {"Imagine": 8.7, "Gaming": 9.0, "Design": 8.3, "Ergonomie": 8.0, "Pret/Calitate": 9.8},
+          "verdict_scurt": "IPS 1440p 144Hz la cel mai bun pret posibil",
+          "verdict_detaliat": "Gigabyte G27Q ofera 1440p IPS 144Hz FreeSync Premium la sub 800 lei. Este unul dintre cele mai bune rapoarte calitate-pret din categoria monitoarelor de gaming medii.",
+          "pro": ["Pret excelent sub 800 lei", "1440p IPS 144Hz fluiditate", "FreeSync Premium / G-Sync Compatible", "Culori IPS bune pentru pret"],
+          "contra": ["Ergonomie limitata (tilt only)", "Contraste IPS standard 1000:1", "Cabluri management absent"],
+          "specificatii": {"Panel": "IPS", "Dimensiune": "27 inch QHD 2560x1440", "Frecventa": "144Hz", "Timp raspuns": "1ms MPRT", "HDR": "HDR400", "VRR": "AMD FreeSync Premium / G-Sync Compatible"},
+          "magazine": [
+            {"magazin_slug": "emag.ro", "eticheta": "eMAG", "pret": 799, "recomandat": true},
+            {"magazin_slug": "pcgarage.ro", "eticheta": "PC Garage", "pret": 849, "recomandat": false}
+          ]
+        }
+      ]
+    }
+  ]
+}

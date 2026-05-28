@@ -7,6 +7,9 @@ const BASE_URL = "https://amcupon.ro";
 // Sluguri pagini multi-nisa (/nisa/[slug])
 const NISA_SLUGURI = ["auto", "carti", "casa", "tech", "fashion", "sport", "frumusete"];
 
+// Sluguri pagini /top/[slug]
+const TOP_SLUGURI = ["laptopuri", "telefoane", "casti-wireless", "televizoare", "aspiratoare-robot", "friteuze", "smartwatch-uri", "monitoare"];
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const magazine: { magazin: string; are_promotie: boolean; categorie_slug?: string }[] = JSON.parse(
     fs.readFileSync(path.join(process.cwd(), "public", "output.json"), "utf-8")
@@ -58,6 +61,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "daily" as const,
       priority: 0.8,
+    })),
+
+    // ─── Top Produse (/top si /top/[slug]) ───────────────────────────────────
+    { url: `${BASE_URL}/top`,                     lastModified: new Date(), changeFrequency: "weekly",  priority: 0.9 },
+    ...TOP_SLUGURI.map(slug => ({
+      url: `${BASE_URL}/top/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.85,
     })),
 
     // ─── Tool pages ─────────────────────────────────────────────────────────

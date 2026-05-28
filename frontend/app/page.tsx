@@ -55,6 +55,7 @@ const CATEGORII = [
 ];
 
 const SECTIUNI_SPECIALE = [
+  { href: "/top",          emoji: "🏆", label: "Top Produse",      desc: "Review-uri laptopuri, telefoane",   gradient: "from-slate-800 to-slate-900" },
   { href: "/gadgets",      emoji: "📡", label: "Gadgets & Tech",   desc: "Smartwatch, casti, drone",         gradient: "from-blue-500 to-indigo-600" },
   { href: "/fashion",      emoji: "👗", label: "Fashion & Haine",  desc: "FashionDays, Answear, H&M",        gradient: "from-purple-500 to-fuchsia-600" },
   { href: "/casa",         emoji: "🏡", label: "Casa & Gradina",   desc: "Dedeman, IKEA, Leroy Merlin",      gradient: "from-green-600 to-teal-600" },

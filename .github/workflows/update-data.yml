@@ -118,6 +118,10 @@ jobs:
         working-directory: scripts
         run: python generate_best_of.py
 
+      - name: Actualizeaza link-uri afiliate in Top Produse
+        working-directory: scripts
+        run: python generate_product_tops.py
+
       # ── 9. Newsletter zilnic (Brevo SMTP) — rulat DOAR la 08:00 Romania ────
       - name: Trimite newsletter zilnic
         if: github.event.schedule == '0 6 * * *' || github.event_name == 'workflow_dispatch'
@@ -173,6 +177,7 @@ jobs:
           git add frontend/public/blog-posts.json  || true
           git add frontend/public/products.json    || true
           git add frontend/public/banners.json     || true
+          git add frontend/public/top-produse.json || true
           git add data/output.json                 || true
           git add data/profitshare_output.json     || true
           git add data/banners_raw_debug.json      || true
