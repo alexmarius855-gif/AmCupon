@@ -329,7 +329,8 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                 </div>
                 <div className="space-y-4">
                   {cuCod.map((promo, idx) => {
-                    const link     = promo.landing_page || m.url_afiliat || m.url;
+                    // Daca promotia a expirat (zile_ramase < 0) folosim quicklink magazin
+                    const link     = (promo.zile_ramase >= 0 && promo.landing_page) ? promo.landing_page : (m.url_afiliat || m.url);
                     const discount = extractDiscount(promo.nume) || extractDiscount(promo.descriere || "");
                     const isRevealed = revealed.has(idx);
                     const isCopiat   = copiat === idx;
@@ -438,7 +439,8 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                 </div>
                 <div className="space-y-4">
                   {faraCodd.map((promo, idx) => {
-                    const link     = promo.landing_page || m.url_afiliat || m.url;
+                    // Daca promotia a expirat (zile_ramase < 0) folosim quicklink magazin
+                    const link     = (promo.zile_ramase >= 0 && promo.landing_page) ? promo.landing_page : (m.url_afiliat || m.url);
                     const discount = extractDiscount(promo.nume) || extractDiscount(promo.descriere || "");
                     return (
                       <div key={idx} className="bg-slate-900 rounded-2xl border border-slate-800 hover:shadow-lg hover:shadow-black/20 transition-all hover:border-slate-700 p-5">
