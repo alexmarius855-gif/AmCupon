@@ -1,7 +1,46 @@
 {
-  "updated": "2026-05-29T18:07:47Z",
+  "updated": "2026-05-29T20:41:09Z",
   "count": 20,
   "banners": [
+    {
+      "id": 270110,
+      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270069/original/270069.png",
+      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=3359a9129&aff_code=541547473&campaign_unique=706637522",
+      "landing_raw": "https://www.niculescu.ro/domenii/promotiile-lunii.html",
+      "width": 300,
+      "height": 600,
+      "merchant": "niculescu.ro",
+      "merchant_slug": "niculescu-ro",
+      "name": "Campanie Vara 2026",
+      "category": "Campanie Vara 2026",
+      "b_type": "image"
+    },
+    {
+      "id": 270109,
+      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270068/original/270068.png",
+      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=38e667455&aff_code=541547473&campaign_unique=706637522",
+      "landing_raw": "https://www.niculescu.ro/domenii/promotiile-lunii.html",
+      "width": 300,
+      "height": 300,
+      "merchant": "niculescu.ro",
+      "merchant_slug": "niculescu-ro",
+      "name": "Campanie Vara 2026",
+      "category": "Campanie Vara 2026",
+      "b_type": "image"
+    },
+    {
+      "id": 270108,
+      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270067/original/270067.png",
+      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=4d882f07b&aff_code=541547473&campaign_unique=706637522",
+      "landing_raw": "https://www.niculescu.ro/domenii/promotiile-lunii.html",
+      "width": 300,
+      "height": 250,
+      "merchant": "niculescu.ro",
+      "merchant_slug": "niculescu-ro",
+      "name": "Campanie Vara 2026",
+      "category": "Campanie Vara 2026",
+      "b_type": "image"
+    },
     {
       "id": 270107,
       "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270066/original/270066.jpg",
@@ -221,45 +260,6 @@
       "merchant_slug": "noriel-ro",
       "name": "Promo ",
       "category": "Promo ",
-      "b_type": "image"
-    },
-    {
-      "id": 270090,
-      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270049/original/270049.jpg",
-      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=4df6c8e74&aff_code=541547473&campaign_unique=4b9a6d5ea",
-      "landing_raw": "https://www.kitunghii.ro",
-      "width": 1200,
-      "height": 1200,
-      "merchant": "kitunghii.ro",
-      "merchant_slug": "kitunghii-ro",
-      "name": "-80% STAR REVOLUTION ⭐️ CELEBRITY SECRET BAG GRATUIT",
-      "category": "-80% STAR REVOLUTION ⭐️ CELEBRITY SECRET BAG GRATUIT",
-      "b_type": "image"
-    },
-    {
-      "id": 270089,
-      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270048/original/270048.jpg",
-      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=4581c0f77&aff_code=541547473&campaign_unique=4b9a6d5ea",
-      "landing_raw": "https://www.kitunghii.ro",
-      "width": 960,
-      "height": 1200,
-      "merchant": "kitunghii.ro",
-      "merchant_slug": "kitunghii-ro",
-      "name": "-80% STAR REVOLUTION ⭐️ CELEBRITY SECRET BAG GRATUIT",
-      "category": "-80% STAR REVOLUTION ⭐️ CELEBRITY SECRET BAG GRATUIT",
-      "b_type": "image"
-    },
-    {
-      "id": 270088,
-      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270047/original/270047.jpg",
-      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=737348d5f&aff_code=541547473&campaign_unique=4b9a6d5ea",
-      "landing_raw": "https://www.kitunghii.ro",
-      "width": 1200,
-      "height": 628,
-      "merchant": "kitunghii.ro",
-      "merchant_slug": "kitunghii-ro",
-      "name": "-80% STAR REVOLUTION ⭐️ CELEBRITY SECRET BAG GRATUIT",
-      "category": "-80% STAR REVOLUTION ⭐️ CELEBRITY SECRET BAG GRATUIT",
       "b_type": "image"
     }
   ]
