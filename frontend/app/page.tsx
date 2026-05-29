@@ -143,6 +143,7 @@ export default function Home() {
   const [storeLimit, setStoreLimit]       = useState(12);
   const [filtruActiv, setFiltruActiv]     = useState<"toate"|"cod"|"promotie"|"favorite">("toate");
   const [favorite, setFavorite]           = useState<Set<string>>(new Set());
+  const [produse, setProduse]             = useState<{title:string;url:string;image:string;price:number;old_price?:number;discount_pct:number;brand:string;merchant:string;merchant_slug:string}[]>([]);
   const bannersRef                         = useRef<HTMLDivElement>(null);
   const trendingRef                        = useRef<HTMLDivElement>(null);
   const rezultateRef                       = useRef<HTMLDivElement>(null);
@@ -150,6 +151,12 @@ export default function Home() {
   useEffect(() => {
     fetch("/output.json").then(r => r.json()).then(data => { setMagazine(data); setLoading(false); });
     fetch("/blog-posts.json").then(r => r.json()).then((posts: BlogPost[]) => setBlogPosts(posts.slice(0, 3))).catch(() => {});
+    fetch("/products.json").then(r => r.json()).then(data => {
+      const all = data?.products || data || [];
+      const cuImagine = all.filter((p: {image:string;price:number}) => p.image && p.price > 0);
+      const sortate = cuImagine.sort((a: {discount_pct:number}, b: {discount_pct:number}) => b.discount_pct - a.discount_pct);
+      setProduse(sortate.slice(0, 12));
+    }).catch(() => {});
     fetch("/banners.json").then(r => r.json()).then(data => {
       const list: Banner[] = data?.banners || data || [];
       const withImg = list.filter(b => b.image_url && (b.landing_url || b.landing_raw));
@@ -688,6 +695,64 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ─── PRODUSE HOT ─────────────────────────────────────────────────── */}
+      {produse.length > 0 && (
+        <section className="bg-slate-950 border-b border-slate-800 py-14 px-4">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex items-end justify-between mb-8">
+              <div>
+                <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-2">🔥 CELE MAI BUNE PRETURI</p>
+                <h2 className="text-3xl font-black tracking-tight text-white">Produse cu reducere acum</h2>
+                <p className="text-slate-400 text-sm mt-1.5">Sortate dupa cel mai mare discount — actualizate zilnic</p>
+              </div>
+              <a href="/produse" className="hidden sm:flex items-center gap-1.5 bg-orange-500 hover:bg-orange-400 text-white font-bold px-4 py-2 rounded-xl text-sm transition-colors">
+                Toate produsele
+                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+              {produse.map((p, i) => (
+                <a key={i} href={p.url} target="_blank" rel="sponsored noopener noreferrer"
+                  className="group bg-slate-900 border border-slate-800 hover:border-orange-500 rounded-2xl overflow-hidden transition-all hover:shadow-xl hover:shadow-black/40 hover:-translate-y-1 duration-200 flex flex-col">
+                  <div className="relative bg-slate-800 overflow-hidden" style={{aspectRatio:"1"}}>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={p.image} alt={p.title}
+                      className="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy" onError={e => { (e.target as HTMLImageElement).style.display='none'; }}/>
+                    {p.discount_pct > 0 && (
+                      <div className="absolute top-2 left-2 bg-red-500 text-white text-xs font-black px-2 py-0.5 rounded-full shadow-sm">
+                        -{p.discount_pct}%
+                      </div>
+                    )}
+                  </div>
+                  <div className="p-3 flex flex-col flex-1">
+                    <p className="text-[11px] text-slate-500 mb-0.5 truncate">{p.brand || p.merchant}</p>
+                    <p className="text-xs font-semibold text-slate-200 line-clamp-2 flex-1 group-hover:text-orange-400 transition-colors leading-snug">{p.title}</p>
+                    <div className="flex items-center gap-1.5 mt-2">
+                      <span className="font-black text-orange-400 text-sm">{p.price > 0 ? `${p.price.toFixed(0)} lei` : "Pret"}</span>
+                      {p.old_price && p.old_price > p.price && (
+                        <span className="text-[11px] text-slate-500 line-through">{p.old_price.toFixed(0)}</span>
+                      )}
+                    </div>
+                    <div className="mt-1.5 text-[11px] font-bold text-orange-500 group-hover:text-orange-400 flex items-center gap-0.5">
+                      Cumpara
+                      <svg className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+              ))}
+            </div>
+            <div className="text-center mt-6">
+              <a href="/produse" className="inline-flex items-center gap-2 text-slate-400 hover:text-orange-400 text-sm font-semibold transition-colors">
+                Vezi toate produsele cu reducere →
+              </a>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ─── TOP PICKS ────────────────────────────────────────────────────── */}
       {!loading && cuPromotii.length >= 3 && (
