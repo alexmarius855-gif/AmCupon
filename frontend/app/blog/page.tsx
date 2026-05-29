@@ -80,16 +80,16 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <div className="min-h-screen bg-gray-50">
-        <header className="bg-white border-b border-gray-200 shadow-sm">
+      <div className="min-h-screen bg-slate-950">
+        <header className="bg-white border-b border-slate-800 shadow-sm">
           <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-3">
             <a href="/" className="flex items-center gap-1.5 shrink-0">
               <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
-              <span className="font-black text-gray-900 text-xl">Cupon</span>
+              <span className="font-black text-white text-xl">Cupon</span>
               <span className="text-orange-500 font-black text-xl">.ro</span>
             </a>
-            <span className="text-gray-300">/</span>
-            <span className="text-sm font-semibold text-gray-700">Blog</span>
+            <span className="text-slate-600">/</span>
+            <span className="text-sm font-semibold text-slate-300">Blog</span>
           </div>
         </header>
 
@@ -112,7 +112,7 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
                 className={`px-4 py-1.5 rounded-full text-sm font-semibold transition-colors ${
                   categorieActiva === cat
                     ? "bg-orange-500 text-white"
-                    : "bg-white border border-gray-200 text-gray-600 hover:border-orange-300 hover:text-orange-500"
+                    : "bg-white border border-gray-200 text-slate-400 hover:border-orange-300 hover:text-orange-500"
                 }`}
               >
                 {cat}
@@ -126,7 +126,7 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
           </div>
 
           {posts.length === 0 ? (
-            <div className="text-center py-20 text-gray-400">
+            <div className="text-center py-20 text-slate-500">
               <p className="text-lg mb-4">Niciun articol in categoria &ldquo;{categorieActiva}&rdquo;.</p>
               <Link href="/blog" className="text-orange-500 font-bold hover:underline">
                 Vezi toate articolele →
@@ -154,15 +154,15 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
                   </div>
 
                   <div className="p-5 flex-1 flex flex-col">
-                    <div className="flex items-center gap-3 text-xs text-gray-400 mb-3">
+                    <div className="flex items-center gap-3 text-xs text-slate-500 mb-3">
                       <span>{formatDate(post.date)}</span>
                       <span>·</span>
                       <span>AmCupon.ro</span>
                     </div>
-                    <h2 className="font-black text-gray-900 text-base leading-snug mb-3 group-hover:text-orange-500 transition-colors line-clamp-2">
+                    <h2 className="font-black text-white text-base leading-snug mb-3 group-hover:text-orange-500 transition-colors line-clamp-2">
                       {post.title}
                     </h2>
-                    <p className="text-sm text-gray-500 line-clamp-3 flex-1">{post.excerpt}</p>
+                    <p className="text-sm text-slate-400 line-clamp-3 flex-1">{post.excerpt}</p>
                     <div className="mt-4 text-sm font-bold text-orange-500 group-hover:text-orange-600 flex items-center gap-1">
                       Citeste articolul
                       <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -176,7 +176,7 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
           )}
 
           <div className="mt-10 pt-6 border-t border-gray-100 text-center">
-            <a href="/" className="text-sm text-gray-400 hover:text-orange-500 transition-colors">
+            <a href="/" className="text-sm text-slate-500 hover:text-orange-500 transition-colors">
               ← Inapoi la AmCupon.ro
             </a>
           </div>

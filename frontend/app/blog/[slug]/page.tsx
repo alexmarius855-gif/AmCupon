@@ -65,22 +65,22 @@ function renderContent(content: string) {
   return content.split("\n\n").map((block, i) => {
     const key = `b${i}`;
     if (block.startsWith("## ")) {
-      return <h2 key={key} className="text-xl font-black text-gray-900 mt-8 mb-3">{parseInline(block.slice(3), key)}</h2>;
+      return <h2 key={key} className="text-xl font-black text-white mt-8 mb-3">{parseInline(block.slice(3), key)}</h2>;
     }
     if (block.startsWith("### ")) {
-      return <h3 key={key} className="text-lg font-bold text-gray-900 mt-6 mb-2">{parseInline(block.slice(4), key)}</h3>;
+      return <h3 key={key} className="text-lg font-bold text-white mt-6 mb-2">{parseInline(block.slice(4), key)}</h3>;
     }
     if (block.startsWith("- ") || block.includes("\n- ")) {
       const items = block.split("\n").filter((l) => l.startsWith("- ")).map((l) => l.slice(2));
       return (
-        <ul key={key} className="list-disc list-inside space-y-1.5 my-4 text-gray-700">
+        <ul key={key} className="list-disc list-inside space-y-1.5 my-4 text-slate-300">
           {items.map((item, j) => (
             <li key={j}>{parseInline(item, `${key}-li${j}`)}</li>
           ))}
         </ul>
       );
     }
-    return <p key={key} className="text-gray-700 leading-relaxed my-3">{parseInline(block, key)}</p>;
+    return <p key={key} className="text-slate-300 leading-relaxed my-3">{parseInline(block, key)}</p>;
   });
 }
 
@@ -193,18 +193,18 @@ export default async function ArticolPage({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
-      <div className="min-h-screen bg-gray-50">
-        <header className="bg-white border-b border-gray-200 shadow-sm sticky top-0 z-50">
+      <div className="min-h-screen bg-slate-950">
+        <header className="bg-slate-900 border-b border-slate-800 shadow-black/30 sticky top-0 z-50">
           <div className="max-w-4xl mx-auto px-4 py-3 flex items-center gap-3">
             <a href="/" className="flex items-center gap-1.5 shrink-0">
               <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
-              <span className="font-black text-gray-900 text-xl">Cupon</span>
+              <span className="font-black text-white text-xl">Cupon</span>
               <span className="text-orange-500 font-black text-xl">.ro</span>
             </a>
-            <span className="text-gray-300">/</span>
-            <a href="/blog" className="text-sm text-gray-500 hover:text-orange-500 transition-colors font-medium">Blog</a>
-            <span className="text-gray-300">/</span>
-            <span className="text-sm text-gray-700 font-semibold truncate max-w-48">{post.title}</span>
+            <span className="text-slate-600">/</span>
+            <a href="/blog" className="text-sm text-slate-400 hover:text-orange-500 transition-colors font-medium">Blog</a>
+            <span className="text-slate-600">/</span>
+            <span className="text-sm text-slate-300 font-semibold truncate max-w-48">{post.title}</span>
           </div>
         </header>
 
@@ -213,18 +213,18 @@ export default async function ArticolPage({
             <span className="bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">{post.category}</span>
           </div>
 
-          <h1 className="text-2xl md:text-3xl font-black text-gray-900 leading-tight mb-4">{post.title}</h1>
+          <h1 className="text-2xl md:text-3xl font-black text-white leading-tight mb-4">{post.title}</h1>
 
-          <div className="flex items-center gap-4 text-sm text-gray-400 mb-8 pb-6 border-b border-gray-100">
+          <div className="flex items-center gap-4 text-sm text-slate-500 mb-8 pb-6 border-b border-slate-800">
             <div className="flex items-center gap-2 shrink-0">
               <Image
                 src="/logo-profile.svg"
                 alt="AmCupon.ro"
                 width={28}
                 height={28}
-                className="rounded-full ring-2 ring-orange-100"
+                className="rounded-full ring-2 ring-orange-500/20"
               />
-              <span className="font-semibold text-gray-700">AmCupon.ro</span>
+              <span className="font-semibold text-slate-300">AmCupon.ro</span>
             </div>
             <span>·</span>
             <span>{formatDate(post.date)}</span>
@@ -242,7 +242,7 @@ export default async function ArticolPage({
             <Image src={post.cover} alt={post.title} fill className="object-cover" priority sizes="(max-width: 768px) 100vw, 768px" />
           </div>
 
-          <p className="text-lg text-gray-600 font-medium leading-relaxed mb-8 p-5 bg-orange-50 rounded-2xl border border-orange-100">
+          <p className="text-lg text-slate-400 font-medium leading-relaxed mb-8 p-5 bg-orange-50 rounded-2xl border border-orange-100">
             {post.excerpt}
           </p>
 
@@ -273,8 +273,8 @@ export default async function ArticolPage({
           </div>
 
           {/* Share buttons */}
-          <div className="mt-10 pt-6 border-t border-gray-100">
-            <p className="text-sm font-bold text-gray-500 mb-3 text-center">Distribuie articolul</p>
+          <div className="mt-10 pt-6 border-t border-slate-800">
+            <p className="text-sm font-bold text-slate-400 mb-3 text-center">Distribuie articolul</p>
             <div className="flex justify-center gap-3">
               <a
                 href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`https://amcupon.ro/blog/${slug}`)}`}
@@ -303,7 +303,7 @@ export default async function ArticolPage({
 
         {altePosts.length > 0 && (
           <div className="max-w-3xl mx-auto px-4 pb-12">
-            <h2 className="text-xl font-black text-gray-900 mb-5">Articole recomandate</h2>
+            <h2 className="text-xl font-black text-white mb-5">Articole recomandate</h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {altePosts.map((p) => (
                 <a key={p.slug} href={`/blog/${p.slug}`}
@@ -313,7 +313,7 @@ export default async function ArticolPage({
                   </div>
                   <div className="p-4">
                     <span className="text-xs font-bold text-orange-500">{p.category}</span>
-                    <p className="text-sm font-bold text-gray-900 mt-1 line-clamp-2 group-hover:text-orange-500 transition-colors">{p.title}</p>
+                    <p className="text-sm font-bold text-white mt-1 line-clamp-2 group-hover:text-orange-500 transition-colors">{p.title}</p>
                   </div>
                 </a>
               ))}
@@ -322,7 +322,7 @@ export default async function ArticolPage({
         )}
 
         <div className="max-w-3xl mx-auto px-4 pb-10 text-center">
-          <a href="/blog" className="text-sm text-gray-400 hover:text-orange-500 transition-colors">← Înapoi la Blog</a>
+          <a href="/blog" className="text-sm text-slate-500 hover:text-orange-500 transition-colors">← Înapoi la Blog</a>
         </div>
       </div>
     </>

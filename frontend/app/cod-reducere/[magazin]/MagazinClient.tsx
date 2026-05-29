@@ -56,6 +56,11 @@ interface Magazin {
   folosit_de: number;
   procent_succes: number;
   exclusiv: boolean;
+  canal_recomandat?: string;
+  prioritate?: string;
+  sales_number?: number;
+  scor_afiliere?: number;
+  scor_final?: number;
 }
 
 interface MagazinSimilar {
@@ -551,6 +556,77 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
             </a>
           </div>
         </div>
+
+
+        {/* ── ELIGIBILITATE & CONDITII ─────────────────────────────────────── */}
+        <section className="mt-10">
+          <h2 className="text-lg font-black text-white mb-4">Conditii afiliere {nume}</h2>
+          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-5">
+              {/* Comision */}
+              <div className="bg-slate-800 rounded-xl p-4 text-center">
+                <p className="text-xs text-slate-500 uppercase tracking-wide mb-1">Comision</p>
+                <p className="text-orange-400 font-black text-base leading-tight">
+                  {m.comision?.replace("sale commission","").replace("Commission","").trim() || "Variabil"}
+                </p>
+              </div>
+              {/* Canal */}
+              <div className="bg-slate-800 rounded-xl p-4 text-center">
+                <p className="text-xs text-slate-500 uppercase tracking-wide mb-1">Canal</p>
+                <p className="text-white font-bold text-sm leading-tight">
+                  {m.canal_recomandat || "Toate"}
+                </p>
+              </div>
+              {/* Vanzari */}
+              <div className="bg-slate-800 rounded-xl p-4 text-center">
+                <p className="text-xs text-slate-500 uppercase tracking-wide mb-1">Vanzari totale</p>
+                <p className="text-emerald-400 font-black text-base">
+                  {m.sales_number ? m.sales_number.toLocaleString() : "N/A"}
+                </p>
+              </div>
+              {/* Prioritate */}
+              <div className="bg-slate-800 rounded-xl p-4 text-center">
+                <p className="text-xs text-slate-500 uppercase tracking-wide mb-1">Prioritate</p>
+                <p className="text-white font-black text-base">
+                  {m.prioritate || m.rank ? `#${m.rank || m.prioritate?.replace("#","")}` : "Standard"}
+                </p>
+              </div>
+            </div>
+            {/* Eligibilitate produse */}
+            <div className="border-t border-slate-800 pt-4">
+              <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Poti vinde produse?</p>
+              <div className="flex flex-wrap gap-2">
+                {m.canal_recomandat?.toLowerCase().includes("coupon") && (
+                  <span className="flex items-center gap-1.5 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-bold px-3 py-1.5 rounded-full">
+                    ✅ Coduri reducere
+                  </span>
+                )}
+                {m.canal_recomandat?.toLowerCase().includes("content") && (
+                  <span className="flex items-center gap-1.5 bg-blue-500/10 text-blue-400 border border-blue-500/20 text-xs font-bold px-3 py-1.5 rounded-full">
+                    ✅ Content / Review
+                  </span>
+                )}
+                {m.canal_recomandat?.toLowerCase().includes("cashback") && (
+                  <span className="flex items-center gap-1.5 bg-purple-500/10 text-purple-400 border border-purple-500/20 text-xs font-bold px-3 py-1.5 rounded-full">
+                    ✅ Cashback
+                  </span>
+                )}
+                {(m.promotii.length > 0 || m.are_promotie) && (
+                  <span className="flex items-center gap-1.5 bg-orange-500/10 text-orange-400 border border-orange-500/20 text-xs font-bold px-3 py-1.5 rounded-full">
+                    ✅ Promotii active
+                  </span>
+                )}
+                <span className="flex items-center gap-1.5 bg-slate-800 text-slate-400 border border-slate-700 text-xs font-bold px-3 py-1.5 rounded-full">
+                  🔗 Quicklinks permise
+                </span>
+              </div>
+              <p className="text-xs text-slate-500 mt-3">
+                Comision primit la fiecare vanzare confirmata prin link-urile AmCupon.ro. 
+                Platit in {m.comision?.toLowerCase().includes("prepaid") || m.comision?.toLowerCase().includes("pre-paid") ? "avans (pre-paid)" : "30-60 zile dupa confirmare"}.
+              </p>
+            </div>
+          </div>
+        </section>
 
         {/* ── ARTICOL BLOG ─────────────────────────────────────────────────── */}
         {blogPost && (
