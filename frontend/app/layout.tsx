@@ -10,6 +10,7 @@ import NewsletterPopup from "./components/NewsletterPopup";
 import ConsentAnalytics from "./components/ConsentAnalytics";
 import WebPushInit from "./components/WebPushInit";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import "./globals.css";
 import ThemeToggle from "./components/ThemeToggle";
 
@@ -143,6 +144,7 @@ export default function RootLayout({
           <ThemeToggle className="ml-auto sm:ml-0 bg-white/15 hover:bg-white/25 text-white" />
         </div>
         {children}
+        <Footer />
         <CookieBanner />
         <AffiliateScript />
         <NewsletterPopup />
