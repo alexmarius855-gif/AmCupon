@@ -134,7 +134,11 @@ export default async function ArticolPage({
   const post = posts.find((p) => p.slug === slug);
   if (!post) notFound();
 
-  const altePosts = posts.filter((p) => p.slug !== slug).slice(0, 3);
+  // Articole din aceeasi categorie sau cu acelasi magazin (prioritate relevanta)
+  const altePosts = [
+    ...posts.filter((p) => p.slug !== slug && p.category === post.category && (post.magazin ? p.magazin !== post.magazin : true)),
+    ...posts.filter((p) => p.slug !== slug && p.category !== post.category),
+  ].slice(0, 3);
 
   const breadcrumb = {
     "@context": "https://schema.org",

@@ -105,9 +105,27 @@ export interface Produs {
   merchant_slug: string;
 }
 
+interface BlogPostMic {
+  slug: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  cover: string;
+}
+
 function loadData(): Magazin[] {
   const filePath = path.join(process.cwd(), "public", "output.json");
   return JSON.parse(fs.readFileSync(filePath, "utf-8"));
+}
+
+function loadBlogPost(magazinSlug: string): BlogPostMic | null {
+  try {
+    const p = path.join(process.cwd(), "public", "blog-posts.json");
+    if (!fs.existsSync(p)) return null;
+    const posts: { slug: string; title: string; excerpt: string; date: string; cover: string; magazin?: string }[] =
+      JSON.parse(fs.readFileSync(p, "utf-8"));
+    return posts.find((post) => post.magazin === magazinSlug) || null;
+  } catch { return null; }
 }
 
 function loadProducts(slug: string): Produs[] {
@@ -225,6 +243,7 @@ export default async function PaginaMagazin({
   if (!m) notFound();
 
   const produse = loadProducts(slug);
+  const blogPost = loadBlogPost(slug);
 
   // Magazine similare din aceeasi categorie (max 8, prioritate la cele cu promotii)
   const RETELE_AFILIERE = ["profitshare.ro", "2performant.com"];
@@ -378,7 +397,7 @@ export default async function PaginaMagazin({
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(offerList) }} />
       )}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <MagazinClient magazin={m} produse={produse} similare={similare} />
+      <MagazinClient magazin={m} produse={produse} similare={similare} blogPost={blogPost} />
     </>
   );
 }

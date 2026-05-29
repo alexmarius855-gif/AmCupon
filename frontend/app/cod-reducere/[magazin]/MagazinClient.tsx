@@ -66,6 +66,14 @@ interface MagazinSimilar {
   promotii: { nume: string }[];
 }
 
+interface BlogPostMic {
+  slug: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  cover: string;
+}
+
 interface Produs {
   title: string;
   url: string;
@@ -144,10 +152,11 @@ function ProdusCard({ produs: p }: { produs: Produs }) {
 // ── Main component ────────────────────────────────────────────────────────────
 type Tab = "coduri" | "oferte" | "produse" | "recenzii";
 
-export default function MagazinClient({ magazin: m, produse = [], similare = [] }: {
+export default function MagazinClient({ magazin: m, produse = [], similare = [], blogPost = null }: {
   magazin: Magazin;
   produse?: Produs[];
   similare?: MagazinSimilar[];
+  blogPost?: BlogPostMic | null;
 }) {
   const [revealed, setRevealed]   = useState<Set<number>>(new Set());
   const [copiat, setCopiat]       = useState<number | null>(null);
@@ -540,6 +549,34 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [] 
             </a>
           </div>
         </div>
+
+        {/* ── ARTICOL BLOG ─────────────────────────────────────────────────── */}
+        {blogPost && (
+          <section className="mt-10">
+            <h2 className="text-lg font-black text-gray-900 mb-4">Ghid complet {nume}</h2>
+            <a href={`/blog/${blogPost.slug}`}
+              className="group flex gap-4 bg-white border border-gray-200 hover:border-orange-300 rounded-2xl p-4 hover:shadow-md transition-all">
+              <div className="w-20 h-20 shrink-0 rounded-xl overflow-hidden bg-gray-100">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={blogPost.cover} alt={blogPost.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <span className="text-xs font-bold text-orange-500 uppercase tracking-wide">Articol blog</span>
+                <p className="text-sm font-bold text-gray-900 mt-0.5 line-clamp-2 group-hover:text-orange-600 transition-colors leading-snug">
+                  {blogPost.title}
+                </p>
+                <p className="text-xs text-gray-500 mt-1 line-clamp-2 leading-relaxed">{blogPost.excerpt}</p>
+                <span className="inline-flex items-center gap-1 mt-2 text-xs font-bold text-orange-500 group-hover:text-orange-600">
+                  Citeste ghidul
+                  <svg className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
+                  </svg>
+                </span>
+              </div>
+            </a>
+          </section>
+        )}
 
         {/* ── MAGAZINE SIMILARE ────────────────────────────────────────────── */}
         {similare.length > 0 && (
