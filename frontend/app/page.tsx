@@ -1204,6 +1204,33 @@ function formatCashback(comision: string): string | null {
   return `Cashback ${max}%`;
 }
 
+/* ─── COUNTDOWN TIMER ─────────────────────────────────────────────────────── */
+function CardCountdown({ zileRamase }: { zileRamase: number }) {
+  const [timeLeft, setTimeLeft] = useState("");
+  useEffect(() => {
+    function calc() {
+      const now = new Date();
+      const target = new Date();
+      target.setHours(23, 59, 59, 0);
+      if (zileRamase === 1) target.setDate(target.getDate() + 1);
+      const diff = target.getTime() - now.getTime();
+      if (diff <= 0) { setTimeLeft("Expirat"); return; }
+      const h = Math.floor(diff / 3600000);
+      const m = Math.floor((diff % 3600000) / 60000);
+      const s = Math.floor((diff % 60000) / 1000);
+      setTimeLeft(`${String(h).padStart(2,"0")}:${String(m).padStart(2,"0")}:${String(s).padStart(2,"0")}`);
+    }
+    calc();
+    const interval = setInterval(calc, 1000);
+    return () => clearInterval(interval);
+  }, [zileRamase]);
+  return (
+    <span className="inline-flex items-center gap-1 text-[10px] font-black text-red-600 bg-red-50 border border-red-200 px-1.5 py-0.5 rounded-full animate-pulse">
+      ⏱ {zileRamase === 0 ? "Azi" : "Mâine"} {timeLeft}
+    </span>
+  );
+}
+
 /* ─── CARD COMPONENT ──────────────────────────────────────────────────────── */
 function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
   m: Magazin;
@@ -1239,12 +1266,17 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
   const logoColors = ["bg-blue-500","bg-violet-500","bg-teal-500","bg-pink-500","bg-indigo-500","bg-emerald-600","bg-red-500","bg-amber-500"];
   const logoBg     = logoColors[initiala.charCodeAt(0) % logoColors.length];
 
-  return (
-    <div className="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 flex flex-col overflow-hidden group">
+  const expiraAzi   = promo && promo.zile_ramase === 0;
+  const expiraMaine = promo && promo.zile_ramase === 1;
+  const expiraCurand= promo && promo.zile_ramase <= 3 && promo.zile_ramase > 0;
+  const isHot       = m.trend > 2 || (m.sales_number || 0) > 100;
 
-      {/* Trust Score bar — thin emerald line at top */}
+  return (
+    <div className={`bg-white rounded-2xl border shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 flex flex-col overflow-hidden group ${expiraAzi ? "border-red-300 ring-1 ring-red-200" : "border-slate-200"}`}>
+
+      {/* Trust Score bar — rosu pentru expira azi, portocaliu maine, verde normal */}
       <div className="h-1 bg-slate-100 overflow-hidden">
-        <div className="h-full bg-gradient-to-r from-emerald-400 to-emerald-500 transition-all duration-700 rounded-r-full" style={{width:`${trustScore}%`}}/>
+        <div className={`h-full transition-all duration-700 rounded-r-full ${expiraAzi ? "bg-gradient-to-r from-red-500 to-red-600 animate-pulse" : expiraMaine ? "bg-gradient-to-r from-orange-400 to-amber-500" : "bg-gradient-to-r from-emerald-400 to-emerald-500"}`} style={{width:`${trustScore}%`}}/>
       </div>
 
       {/* Header: logo + info + buttons */}
@@ -1270,6 +1302,9 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
               <p className="text-[11px] text-slate-400 mt-0.5 truncate">{m.categorie}</p>
             </div>
             <div className="flex items-center gap-1 shrink-0 -mt-0.5">
+              {isHot && !m.exclusiv && (
+                <span className="text-[9px] font-black bg-red-100 text-red-600 px-1.5 py-0.5 rounded-full tracking-wide">🔥 HOT</span>
+              )}
               {m.exclusiv && (
                 <span className="text-[9px] font-black bg-orange-100 text-orange-600 px-1.5 py-0.5 rounded-full tracking-wide">EXCLUSIV</span>
               )}
@@ -1351,14 +1386,11 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
         {m.are_promotie && (
           <span className="text-[10px] text-slate-400">👁 {proof.vizualizari} azi</span>
         )}
-        {promo && promo.zile_ramase <= 3 && promo.zile_ramase > 0 && (
-          <span className="text-[10px] font-bold text-amber-600 bg-amber-50 px-1.5 py-0.5 rounded-full">
-            Expira in {promo.zile_ramase}z
-          </span>
-        )}
-        {promo && promo.zile_ramase === 0 && (
-          <span className="text-[10px] font-bold text-red-600 bg-red-50 px-1.5 py-0.5 rounded-full animate-pulse">
-            Expira azi!
+        {expiraAzi && <CardCountdown zileRamase={0} />}
+        {expiraMaine && <CardCountdown zileRamase={1} />}
+        {expiraCurand && !expiraAzi && !expiraMaine && (
+          <span className="text-[10px] font-bold text-amber-600 bg-amber-50 border border-amber-200 px-1.5 py-0.5 rounded-full">
+            ⏳ {promo!.zile_ramase}z ramase
           </span>
         )}
       </div>

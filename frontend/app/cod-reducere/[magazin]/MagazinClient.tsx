@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useMemo } from "react";
+import PriceAlert from "../../components/PriceAlert";
 import ReviewSection from "./ReviewSection";
 
 function CountdownTimer({ zileRamase }: { zileRamase: number }) {

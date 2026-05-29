@@ -9,6 +9,7 @@ import AffiliateScript from "./components/AffiliateScript";
 import NewsletterPopup from "./components/NewsletterPopup";
 import ConsentAnalytics from "./components/ConsentAnalytics";
 import WebPushInit from "./components/WebPushInit";
+import Navbar from "./components/Navbar";
 import "./globals.css";
 
 // ─── GA4 Measurement ID ───────────────────────────────────────────────────────
@@ -114,6 +115,7 @@ export default function RootLayout({
         {/* AdSense + GA4 se incarca prin ConsentAnalytics (conditionat de cookie consent) */}
       </head>
       <body className="min-h-full flex flex-col">
+        <Navbar />
         <div className="bg-gradient-to-r from-red-600 to-orange-500 text-white text-xs font-semibold py-2 px-4 text-center flex items-center justify-center gap-3 flex-wrap">
           <span>
             &#128293;{" "}

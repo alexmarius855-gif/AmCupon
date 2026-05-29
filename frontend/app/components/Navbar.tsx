@@ -1,0 +1,215 @@
+"use client";
+
+import { useState, useEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
+
+interface MagazinMini {
+  magazin: string;
+  logo_url?: string;
+  are_promotie: boolean;
+  cod_cupon: boolean;
+}
+
+function numeAfisat(slug: string) {
+  return slug.split(".")[0].replace(/-/g, " ").split(" ").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
+}
+
+export default function Navbar() {
+  const pathname = usePathname();
+  const [search, setSearch] = useState("");
+  const [results, setResults] = useState<MagazinMini[]>([]);
+  const [allStores, setAllStores] = useState<MagazinMini[]>([]);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
+  const [focused, setFocused] = useState(false);
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  // Nu arata pe pagini cu propriul header
+  if (
+    pathname === "/" ||
+    pathname.startsWith("/cod-reducere/") ||
+    pathname.startsWith("/reduceri/")
+  ) return null;
+
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  useEffect(() => {
+    fetch("/output.json").then(r => r.json()).then(setAllStores).catch(() => {});
+  }, []);
+
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  useEffect(() => {
+    if (search.length < 2) { setResults([]); setShowDropdown(false); return; }
+    const q = search.toLowerCase();
+    const filtered = allStores
+      .filter(m => m.magazin.toLowerCase().includes(q) || numeAfisat(m.magazin).toLowerCase().includes(q))
+      .sort((a, b) => {
+        const aExact = a.magazin.toLowerCase().startsWith(q) ? 1 : 0;
+        const bExact = b.magazin.toLowerCase().startsWith(q) ? 1 : 0;
+        return bExact - aExact || (b.are_promotie ? 1 : 0) - (a.are_promotie ? 1 : 0);
+      })
+      .slice(0, 7);
+    setResults(filtered);
+    setShowDropdown(focused && filtered.length > 0);
+  }, [search, allStores, focused]);
+
+  function handleSelect(slug: string) {
+    setSearch(""); setShowDropdown(false); setMenuOpen(false);
+    window.location.href = `/cod-reducere/${slug}`;
+  }
+
+  function handleSearchSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    if (search.trim()) {
+      setShowDropdown(false);
+      window.location.href = `/cautare?q=${encodeURIComponent(search.trim())}`;
+    }
+  }
+
+  const navLinks = [
+    { href: "/", label: "Acasa" },
+    { href: "/#promotii", label: "Promotii" },
+    { href: "/produse", label: "Produse" },
+    { href: "/blog", label: "Blog" },
+    { href: "/toate-magazinele", label: "Magazine" },
+    { href: "/categorii", label: "Categorii" },
+    { href: "/top-reduceri", label: "Top reduceri" },
+  ];
+
+  const mobileLinks = [
+    { href: "/", label: "🏠 Acasa" },
+    { href: "/#promotii", label: "🔥 Promotii active" },
+    { href: "/produse", label: "🛍️ Produse" },
+    { href: "/blog", label: "📝 Blog" },
+    { href: "/toate-magazinele", label: "🏪 Toate magazinele" },
+    { href: "/categorii", label: "📂 Categorii" },
+    { href: "/top-reduceri", label: "⭐ Top reduceri" },
+    { href: "/calculator", label: "🧮 Calculator" },
+    { href: "/extensie", label: "🧩 Extensie Chrome" },
+    { href: "/newsletter", label: "📧 Newsletter" },
+  ];
+
+  return (
+    <header className="bg-white/95 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50 shadow-sm">
+      <div className="max-w-7xl mx-auto px-4 h-[64px] flex items-center gap-4">
+
+        {/* Logo */}
+        <a href="/" className="flex items-center gap-1.5 shrink-0 group">
+          <div className="bg-orange-500 group-hover:bg-orange-600 text-white font-black text-sm px-2 py-0.5 rounded-lg tracking-tighter transition-colors">Am</div>
+          <span className="font-black text-slate-900 text-xl tracking-tight">Cupon<span className="text-orange-500">.ro</span></span>
+        </a>
+
+        {/* Search cu autocomplete */}
+        <div className="flex-1 relative max-w-2xl hidden sm:block">
+          <form onSubmit={handleSearchSubmit}>
+            <div className="relative">
+              <svg className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+              </svg>
+              <input
+                ref={inputRef}
+                type="text"
+                value={search}
+                onChange={e => setSearch(e.target.value)}
+                onFocus={() => { setFocused(true); if (results.length > 0) setShowDropdown(true); }}
+                onBlur={() => { setFocused(false); setTimeout(() => setShowDropdown(false), 160); }}
+                placeholder="Cauta: eMAG, Answear, Notino..."
+                className="w-full bg-slate-50 border border-slate-200 hover:border-slate-300 focus:border-orange-400 focus:ring-2 focus:ring-orange-400/20 rounded-full pl-10 pr-10 py-2.5 text-sm focus:outline-none focus:bg-white transition-all"
+              />
+              {search && (
+                <button type="button" onClick={() => { setSearch(""); setShowDropdown(false); inputRef.current?.focus(); }}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 transition-colors">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12"/>
+                  </svg>
+                </button>
+              )}
+            </div>
+          </form>
+
+          {/* Dropdown autocomplete */}
+          {showDropdown && results.length > 0 && (
+            <div className="absolute top-full mt-2 left-0 right-0 bg-white border border-slate-200 rounded-2xl shadow-2xl shadow-slate-200/80 py-2 z-50 overflow-hidden animate-in fade-in slide-in-from-top-1 duration-150">
+              {results.map(m => (
+                <button key={m.magazin} onMouseDown={() => handleSelect(m.magazin)}
+                  className="w-full flex items-center gap-3 px-4 py-2.5 hover:bg-orange-50 transition-colors text-left group/item">
+                  <div className="w-8 h-8 rounded-lg bg-slate-100 flex items-center justify-center shrink-0 overflow-hidden border border-slate-200">
+                    {m.logo_url
+                      ? <img src={m.logo_url} alt={numeAfisat(m.magazin)} className="w-6 h-6 object-contain"/>
+                      : <span className="text-xs font-black text-orange-500">{numeAfisat(m.magazin)[0]}</span>
+                    }
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-sm font-bold text-slate-900 truncate group-hover/item:text-orange-600 transition-colors">{numeAfisat(m.magazin)}</p>
+                    <p className="text-xs text-slate-400 truncate">{m.magazin}</p>
+                  </div>
+                  <div className="flex items-center gap-1.5 shrink-0">
+                    {m.cod_cupon && (
+                      <span className="text-[10px] font-black bg-amber-100 text-amber-700 px-1.5 py-0.5 rounded-full">Cod</span>
+                    )}
+                    {m.are_promotie && (
+                      <span className="text-[10px] font-black bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded-full">Activ</span>
+                    )}
+                  </div>
+                </button>
+              ))}
+              <div className="border-t border-slate-100 mt-1 pt-1">
+                <button onMouseDown={handleSearchSubmit as never}
+                  className="w-full flex items-center gap-2 px-4 py-2.5 text-sm text-orange-500 font-bold hover:bg-orange-50 transition-colors">
+                  <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                  </svg>
+                  Cauta <span className="text-slate-700">&quot;{search}&quot;</span> in toate magazinele
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
+
+        {/* Desktop nav */}
+        <nav className="hidden md:flex items-center gap-4 text-sm font-semibold text-slate-600 ml-auto shrink-0">
+          {navLinks.map(l => (
+            <a key={l.href} href={l.href}
+              className={`hover:text-orange-500 transition-colors whitespace-nowrap ${pathname === l.href || (l.href !== "/" && pathname.startsWith(l.href)) ? "text-orange-500" : ""}`}>
+              {l.label}
+            </a>
+          ))}
+          <a href="/extensie"
+            className="flex items-center gap-1.5 bg-slate-900 hover:bg-orange-500 text-white px-3.5 py-1.5 rounded-full text-xs font-bold transition-all hover:scale-105 duration-150">
+            🧩 Extensie
+          </a>
+        </nav>
+
+        {/* Mobile menu btn */}
+        <button onClick={() => setMenuOpen(o => !o)}
+          className="md:hidden ml-auto p-2 rounded-xl hover:bg-slate-100 transition-colors text-slate-700" aria-label="Meniu">
+          {menuOpen
+            ? <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12"/></svg>
+            : <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 6h16M4 12h16M4 18h16"/></svg>
+          }
+        </button>
+      </div>
+
+      {/* Mobile menu */}
+      {menuOpen && (
+        <div className="md:hidden border-t border-slate-100 bg-white px-4 py-4 space-y-3 shadow-lg">
+          <form onSubmit={handleSearchSubmit} className="relative">
+            <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+            </svg>
+            <input type="text" value={search} onChange={e => setSearch(e.target.value)}
+              placeholder="Cauta magazin..."
+              className="w-full bg-slate-50 border border-slate-200 rounded-full pl-9 pr-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400" />
+          </form>
+          <nav className="space-y-0.5">
+            {mobileLinks.map(l => (
+              <a key={l.href} href={l.href} onClick={() => setMenuOpen(false)}
+                className="flex items-center px-3 py-2.5 rounded-xl text-sm font-semibold text-slate-700 hover:bg-orange-50 hover:text-orange-600 transition-colors">
+                {l.label}
+              </a>
+            ))}
+          </nav>
+        </div>
+      )}
+    </header>
+  );
+}
