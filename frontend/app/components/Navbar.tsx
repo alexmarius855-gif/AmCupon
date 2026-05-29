@@ -72,6 +72,7 @@ export default function Navbar() {
     { href: "/blog", label: "Blog" },
     { href: "/toate-magazinele", label: "Magazine" },
     { href: "/categorii", label: "Categorii" },
+    { href: "/comparator", label: "Comparator" },
     { href: "/top-reduceri", label: "Top reduceri" },
   ];
 
@@ -82,6 +83,7 @@ export default function Navbar() {
     { href: "/blog", label: "📝 Blog" },
     { href: "/toate-magazinele", label: "🏪 Toate magazinele" },
     { href: "/categorii", label: "📂 Categorii" },
+    { href: "/comparator", label: "⚖️ Comparator magazine" },
     { href: "/top-reduceri", label: "⭐ Top reduceri" },
     { href: "/calculator", label: "🧮 Calculator" },
     { href: "/extensie", label: "🧩 Extensie Chrome" },
