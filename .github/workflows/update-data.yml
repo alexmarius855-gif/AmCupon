@@ -131,7 +131,7 @@ jobs:
         env:
           BREVO_SMTP_USER:    ${{ secrets.BREVO_SMTP_USER }}
           BREVO_SMTP_PASS:    ${{ secrets.BREVO_SMTP_PASS }}
-          BREVO_API_KEY:      ${{ secrets.BREVO_SMTP_PASS }}
+          BREVO_API_KEY:      ${{ secrets.BREVO_API_KEY }}
           BREVO_LIST_ID:      "2"
           BREVO_SENDER_EMAIL: newsletter@amcupon.ro
           BREVO_SENDER_NAME:  AmCupon.ro

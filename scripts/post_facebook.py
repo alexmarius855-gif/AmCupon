@@ -24,6 +24,13 @@ import urllib.error
 import urllib.parse
 from datetime import datetime, timezone
 
+if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+        sys.stderr.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
+
 # ── Config ──────────────────────────────────────────────────────────────────
 PAGE_ID    = os.environ.get("FACEBOOK_PAGE_ID", "")
 PAGE_TOKEN = os.environ.get("FACEBOOK_PAGE_TOKEN", "")
@@ -51,10 +58,26 @@ NISE_LABEL = {
 }
 
 
+def get_best_promo(m: dict) -> dict:
+    """Returneaza cea mai buna promotie activa (cu cod preferential)."""
+    promotii = [p for p in m.get("promotii", []) if p.get("zile_ramase", -1) >= 0]
+    if not promotii:
+        return {}
+    cu_cod = [p for p in promotii if p.get("cod_cupon")]
+    return cu_cod[0] if cu_cod else promotii[0]
+
+
 def pick_top5(magazine: list[dict]) -> list[dict]:
-    cu_cod   = [m for m in magazine if m.get("cod_cupon") and m.get("promotie")]
-    fara_cod = [m for m in magazine if m.get("promotie") and not m.get("cod_cupon")]
-    cu_cod.sort(key=lambda x: -x.get("scor_final", 0))
+    """Selecteaza top 5 magazine cu promotii active (structura reala output.json)."""
+    def are_promo_activa(m):
+        return any(p.get("zile_ramase", -1) >= 0 for p in m.get("promotii", []))
+    def are_cod_activ(m):
+        return any(p.get("cod_cupon") and p.get("zile_ramase", -1) >= 0
+                   for p in m.get("promotii", []))
+
+    cu_cod   = [m for m in magazine if are_cod_activ(m)]
+    fara_cod = [m for m in magazine if are_promo_activa(m) and not are_cod_activ(m)]
+    cu_cod.sort(  key=lambda x: -x.get("scor_final", 0))
     fara_cod.sort(key=lambda x: -x.get("scor_final", 0))
     combined = cu_cod[:5]
     if len(combined) < 5:
@@ -63,13 +86,14 @@ def pick_top5(magazine: list[dict]) -> list[dict]:
 
 
 def format_discount(m: dict) -> str:
-    if m.get("promotie"):
-        return m["promotie"]
-    if m.get("comision"):
-        import re
-        nums = [float(x) for x in re.findall(r"[\d.]+", m["comision"])]
-        if nums:
-            return f"Cashback pana la {max(nums):.0f}%"
+    import re
+    promo = get_best_promo(m)
+    if promo.get("nume"):
+        return promo["nume"][:80]
+    c = m.get("comision", "")
+    nums = [float(x) for x in re.findall(r"[\d.]+", c)]
+    if nums:
+        return f"Cashback pana la {max(nums):.0f}%"
     return "Oferta speciala"
 
 
@@ -79,13 +103,14 @@ def build_post_text(top5: list[dict], data_str: str) -> str:
         f"Coduri verificate pe AmCupon.ro\n",
     ]
     for i, m in enumerate(top5, 1):
-        name  = m.get("magazin_display", m.get("magazin", "")).title()
+        name  = m["magazin"].split(".")[0].capitalize()
+        promo = get_best_promo(m)
+        cod   = promo.get("cod_cupon", "")
+        url   = m.get("url_afiliat") or m.get("url", SITE_URL)
         disc  = format_discount(m)
-        cod   = m.get("cod_cupon", "")
-        url   = m.get("url_afiliat", f"{SITE_URL}/cod-reducere/{m.get('magazin','')}")
         line  = f"{i}. {name} — {disc}"
         if cod:
-            line += f" | Cod: {cod}"
+            line += f"\n   Cod: {cod}"
         lines.append(line)
 
     lines += [
@@ -103,11 +128,12 @@ def build_nisa_post(nisa: str, magazine_nisa: list[dict], data_str: str) -> str:
         "",
     ]
     for m in top3:
-        name = m.get("magazin_display", m.get("magazin", "")).title()
-        disc = format_discount(m)
-        cod  = m.get("cod_cupon", "")
-        slug = m.get("magazin", "")
-        line = f"• {name}: {disc}"
+        name  = m["magazin"].split(".")[0].capitalize()
+        promo = get_best_promo(m)
+        cod   = promo.get("cod_cupon", "")
+        slug  = m.get("magazin", "")
+        disc  = format_discount(m)
+        line  = f"• {name}: {disc[:60]}"
         if cod:
             line += f" (cod: {cod})"
         lines.append(line)
