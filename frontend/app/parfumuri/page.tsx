@@ -97,7 +97,7 @@ export default function ParfumuriPage() {
 
         <section className="max-w-6xl mx-auto px-4 pb-10">
           <div className="flex items-center gap-3 mb-5">
-            {cuPromo.length > 0 && <span className="bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-full animate-pulse">LIVE</span>}
+            
             <h2 className="text-xl font-black text-gray-900">Magazine parfumuri cu reduceri active</h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -168,6 +168,25 @@ export default function ParfumuriPage() {
                 <p>Cele mai mari reduceri la parfumuri apar în noiembrie (Black Friday), înainte de Crăciun și de Valentine&apos;s Day. Douglas lansează frecvent promoții pentru membrii clubului de fidelitate.</p>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className="max-w-6xl mx-auto px-4 py-8">
+          <h2 className="text-base font-black text-gray-700 mb-4">Exploreaza si alte categorii</h2>
+          <div className="flex flex-wrap gap-2">
+            {[
+              { href: "/frumusete", label: "💄 Frumusete" },
+              { href: "/fashion", label: "👗 Fashion" },
+              { href: "/idei-cadouri", label: "🎁 Idei Cadouri" },
+              { href: "/sanatate", label: "🌿 Sanatate" },
+              { href: "/categorii", label: "📂 Categorii" },
+              { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
+            ].map(l => (
+              <a key={l.href} href={l.href}
+                className="bg-gray-100 hover:bg-orange-50 hover:text-orange-600 text-gray-700 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-gray-200 hover:border-orange-200">
+                {l.label}
+              </a>
+            ))}
           </div>
         </section>
 

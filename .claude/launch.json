@@ -3,9 +3,9 @@
   "configurations": [
     {
       "name": "frontend",
-      "runtimeExecutable": "npm",
+      "runtimeExecutable": "npm.cmd",
       "runtimeArgs": ["run", "dev"],
-      "cwd": "${workspaceFolder}/frontend",
+      "cwd": "C:\\Users\\alexm\\Projects\\afiliere-site\\frontend",
       "port": 3000
     }
   ]

@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
       # ── 1. Checkout ────────────────────────────────────────────────────────
@@ -60,8 +62,22 @@ jobs:
             echo "PROFITSHARE_USER nu e setat — skip Profitshare"
           fi
 
+      # ── 4b. TradeTracker (optional — necesar secret TRADETRACKER_SITE_ID) ──
+      - name: Fetch date TradeTracker Romania
+        working-directory: scripts
+        env:
+          TRADETRACKER_SITE_ID: ${{ secrets.TRADETRACKER_SITE_ID }}
+          TRADETRACKER_API_KEY: ${{ secrets.TRADETRACKER_API_KEY }}
+        run: |
+          if [ -n "$TRADETRACKER_SITE_ID" ]; then
+            echo "Ruleaza TradeTracker..."
+            python fetch_tradetracker.py
+          else
+            echo "TRADETRACKER_SITE_ID nu e setat — skip TradeTracker"
+          fi
+
       # ── 5. Merge platforme ─────────────────────────────────────────────────
-      - name: Merge 2Performant + Profitshare
+      - name: Merge 2Performant + Profitshare + TradeTracker
         working-directory: scripts
         run: python merge_platforms.py
 
@@ -103,6 +119,10 @@ jobs:
       - name: Genereaza articole Cel mai bun X
         working-directory: scripts
         run: python generate_best_of.py
+
+      - name: Actualizeaza link-uri afiliate in Top Produse
+        working-directory: scripts
+        run: python generate_product_tops.py
 
       # ── 9. Newsletter zilnic (Brevo SMTP) — rulat DOAR la 08:00 Romania ────
       - name: Trimite newsletter zilnic
@@ -159,6 +179,7 @@ jobs:
           git add frontend/public/blog-posts.json  || true
           git add frontend/public/products.json    || true
           git add frontend/public/banners.json     || true
+          git add frontend/public/top-produse.json || true
           git add data/output.json                 || true
           git add data/profitshare_output.json     || true
           git add data/banners_raw_debug.json      || true
@@ -170,6 +191,10 @@ jobs:
             echo "Nicio schimbare — skip commit"
           else
             git commit -m "chore: actualizare automata $(date -u +%Y-%m-%d)"
-            git push
-            echo "✅ Date noi publicate — Vercel redeploys automat"
+            # Retry loop — evita conflict cand doua workflow-uri ruleaza simultan
+            for i in 1 2 3 4 5; do
+              git pull --rebase origin main && git push && echo "✅ Date noi publicate — Vercel redeploys automat" && break
+              echo "⚠ Push esuat (tentativa $i/5) — retrying in ${i}0s..."
+              sleep $((i * 10))
+            done
           fi

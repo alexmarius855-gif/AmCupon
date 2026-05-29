@@ -3,8 +3,18 @@ import fs from "fs";
 import path from "path";
 
 export const metadata: Metadata = {
-  title: "Categorii coduri reducere | AmCupon.ro",
-  description: "Coduri de reducere organizate pe categorii: Fashion, Electronice, Frumusete, Casa & Gradina, Sport, Farmacie si multe altele. Oferte verificate zilnic.",
+  title: "Categorii Coduri Reducere Romania 2026 | AmCupon.ro",
+  description: "Coduri de reducere organizate pe categorii: Fashion, Electronice, Frumusete, Casa, Sport, Farmacie, Copii, Animale si multe altele. 600+ magazine verificate zilnic.",
+  keywords: ["categorii reduceri romania","coduri reducere pe categorii","fashion reducere","electronice ieftine","farmacie online reducere"],
+  alternates: { canonical: "https://amcupon.ro/categorii" },
+  openGraph: {
+    title: "Categorii Coduri Reducere Romania | AmCupon.ro",
+    description: "600+ magazine organizate pe 18 categorii. Oferte verificate zilnic.",
+    url: "https://amcupon.ro/categorii",
+    siteName: "AmCupon.ro",
+    locale: "ro_RO",
+    type: "website",
+  },
 };
 
 /* ─── Config categorii ───────────────────────────────────────────────────── */
@@ -129,20 +139,55 @@ function getMagazineForCategory(magazine: any[], cat: typeof CATEGORII[0]) {
 export default function CategoriPage() {
   const magazine = loadMagazine();
 
-  // Construieste date per categorie
+  // Construieste date per categorie — fix: camp corect are_promotie + logo_url
   const categoriiCuDate = CATEGORII.map((cat) => {
     const mag    = getMagazineForCategory(magazine, cat);
-    const nrOff  = mag.filter((m: any) => m.promotie || m.cod_cupon).length;
+    const nrOff  = mag.filter((m: any) => m.are_promotie || m.cod_cupon).length;
     const logos  = mag
-      .filter((m: any) => m.logo)
-      .slice(0, 4)
-      .map((m: any) => ({ logo: m.logo, name: m.magazin_display || m.magazin }));
+      .filter((m: any) => m.logo_url)
+      .slice(0, 3)
+      .map((m: any) => ({ logo: m.logo_url, name: m.magazin_display || m.magazin }));
     return { ...cat, nrMag: mag.length, nrOff, logos };
   });
 
-  const totalOff = magazine.filter((m: any) => m.promotie || m.cod_cupon).length;
+  const totalOff = magazine.filter((m: any) => m.are_promotie || m.cod_cupon).length;
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Categorii Coduri Reducere Romania",
+    "url": "https://amcupon.ro/categorii",
+    "itemListElement": CATEGORII.map((c, i) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "name": c.label,
+      "url": `https://amcupon.ro/categorii/${c.slug}`,
+    })),
+  };
+
+  // Pagini specializate cu link direct la nisa (nu doar /categorii/slug)
+  const NISE_SPECIALE = [
+    { href: "/fashion",      emoji: "👗", label: "Fashion & Haine" },
+    { href: "/electronice",  emoji: "💻", label: "Electronice & IT" },
+    { href: "/frumusete",    emoji: "💄", label: "Beauty & Cosmetice" },
+    { href: "/parfumuri",    emoji: "🌹", label: "Parfumuri" },
+    { href: "/casa",         emoji: "🏡", label: "Casa & Gradina" },
+    { href: "/sport",        emoji: "🏃", label: "Sport & Outdoor" },
+    { href: "/farmacie",     emoji: "💊", label: "Farmacie Online" },
+    { href: "/sanatate",     emoji: "🌿", label: "Sanatate & Naturiste" },
+    { href: "/copii",        emoji: "👶", label: "Copii & Jucarii" },
+    { href: "/animale",      emoji: "🐾", label: "Animale de Companie" },
+    { href: "/calatorie",    emoji: "✈️", label: "Vacante & Travel" },
+    { href: "/gadgets",      emoji: "📡", label: "Gadgets & Tech" },
+    { href: "/moto",         emoji: "🚗", label: "Auto-Moto" },
+    { href: "/carti",        emoji: "📚", label: "Carti & Edu" },
+    { href: "/idei-cadouri", emoji: "🎁", label: "Idei Cadouri" },
+    { href: "/oferte-azi",   emoji: "🔥", label: "Oferte de Azi" },
+  ];
 
   return (
+    <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
     <div className="min-h-screen bg-slate-950">
 
       {/* Header */}
@@ -237,6 +282,21 @@ export default function CategoriPage() {
           ))}
         </div>
 
+        {/* Pagini specializate — contin editorial + produse */}
+        <div className="mt-12 border-t border-slate-800 pt-10">
+          <h2 className="text-lg font-black text-white mb-2">Pagini specializate pe nisa</h2>
+          <p className="text-slate-500 text-sm mb-6">Fiecare pagina are editorial, ghiduri de cumparaturi si produse recomandate.</p>
+          <div className="flex flex-wrap gap-2">
+            {NISE_SPECIALE.map(n => (
+              <a key={n.href} href={n.href}
+                className="flex items-center gap-1.5 bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-orange-500/50 text-slate-300 hover:text-white text-sm font-semibold px-3 py-2 rounded-xl transition-all">
+                <span>{n.emoji}</span>
+                {n.label}
+              </a>
+            ))}
+          </div>
+        </div>
+
         {/* Back link */}
         <div className="mt-10 text-center">
           <a href="/" className="text-sm text-slate-500 hover:text-orange-400 transition-colors">
@@ -245,5 +305,6 @@ export default function CategoriPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

@@ -150,7 +150,7 @@ export default function IdeiCadouriPage() {
         {/* MAGAZINE CU REDUCERI */}
         <section className="max-w-6xl mx-auto px-4 pb-10">
           <div className="flex items-center gap-3 mb-5">
-            {cuPromo.length > 0 && <span className="bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-full animate-pulse">LIVE</span>}
+            
             <h2 className="text-xl font-black text-gray-900">Magazine cu reduceri la cadouri</h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -223,6 +223,25 @@ export default function IdeiCadouriPage() {
                 </ul>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className="max-w-6xl mx-auto px-4 py-8">
+          <h2 className="text-base font-black text-gray-700 mb-4">Exploreaza si alte categorii</h2>
+          <div className="flex flex-wrap gap-2">
+            {[
+              { href: "/fashion", label: "👗 Fashion" },
+              { href: "/frumusete", label: "💄 Frumusete" },
+              { href: "/parfumuri", label: "🌹 Parfumuri" },
+              { href: "/carti", label: "📚 Carti" },
+              { href: "/copii", label: "👶 Copii" },
+              { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
+            ].map(l => (
+              <a key={l.href} href={l.href}
+                className="bg-gray-100 hover:bg-orange-50 hover:text-orange-600 text-gray-700 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-gray-200 hover:border-orange-200">
+                {l.label}
+              </a>
+            ))}
           </div>
         </section>
 

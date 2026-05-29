@@ -9,8 +9,9 @@ import json
 import os
 
 FILES = [
-    "../data/output.json",           # 2Performant
+    "../data/output.json",              # 2Performant
     "../data/profitshare_output.json",  # Profitshare
+    "../data/tradetracker_output.json", # TradeTracker
 ]
 
 OUTPUT_FILE    = "../data/output.json"

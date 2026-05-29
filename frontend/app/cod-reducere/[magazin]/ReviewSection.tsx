@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { supabase, Review } from "../../../lib/supabase";
+import { getSupabase, Review } from "../../../lib/supabase";
 
 function Stele({ value, onChange }: { value: number; onChange?: (v: number) => void }) {
   const [hover, setHover] = useState(0);
@@ -17,7 +17,7 @@ function Stele({ value, onChange }: { value: number; onChange?: (v: number) => v
           className={`text-2xl transition-transform ${onChange ? "hover:scale-110 cursor-pointer" : "cursor-default"}`}
           aria-label={`${n} stele`}
         >
-          <span className={(hover || value) >= n ? "text-amber-400" : "text-slate-200"}>★</span>
+          <span className={(hover || value) >= n ? "text-amber-400" : "text-slate-200"}>&#9733;</span>
         </button>
       ))}
     </div>
@@ -38,37 +38,45 @@ export default function ReviewSection({ magazin }: { magazin: string }) {
   const [eroare, setEroare]     = useState("");
   const [submitting, setSubmitting] = useState(false);
 
+  const sb = getSupabase();
+
   useEffect(() => {
-    supabase
+    if (!sb) { setLoading(false); return; }
+    sb
       .from("reviews")
       .select("id, magazin, nume, stele, text, created_at")
       .eq("magazin", magazin)
       .eq("aprobat", true)
       .order("created_at", { ascending: false })
       .limit(20)
-      .then(({ data }) => {
-        setReviews((data as Review[]) || []);
+      .then(({ data }: { data: Review[] | null }) => {
+        setReviews(data || []);
         setLoading(false);
       });
-  }, [magazin]);
+  }, [magazin, sb]);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setEroare("");
+    if (!sb) { setEroare("Recenziile nu sunt disponibile momentan."); return; }
     if (stele === 0) { setEroare("Alege un rating (1-5 stele)."); return; }
     if (text.trim().length < 10) { setEroare("Scrie cel putin 10 caractere."); return; }
     setSubmitting(true);
-    const { error } = await supabase.from("reviews").insert({
+    const { error } = await sb.from("reviews").insert({
       magazin,
       nume: nume.trim() || "Anonim",
       stele,
       text: text.trim(),
+      aprobat: false,  // necesita moderare manuala in Supabase dashboard
     });
     setSubmitting(false);
     if (error) { setEroare("Eroare la trimitere. Incearca din nou."); return; }
     setTrimis(true);
     setStele(0); setNume(""); setText("");
   }
+
+  // Daca supabase nu e configurat, ascunde sectiunea complet
+  if (!sb) return null;
 
   const medieStele = reviews.length
     ? (reviews.reduce((s, r) => s + r.stele, 0) / reviews.length).toFixed(1)
@@ -129,7 +137,7 @@ export default function ReviewSection({ magazin }: { magazin: string }) {
         <h3 className="font-black text-gray-900 text-sm mb-4">Lasa o recenzie</h3>
         {trimis ? (
           <div className="text-center py-4">
-            <div className="text-3xl mb-2">✅</div>
+            <div className="text-3xl mb-2">&#9989;</div>
             <p className="font-bold text-gray-900 text-sm">Multumim pentru recenzie!</p>
             <p className="text-xs text-gray-500 mt-1">Va aparea dupa aprobare (de obicei in 24h).</p>
             <button onClick={() => setTrimis(false)} className="mt-3 text-xs text-orange-500 hover:underline">

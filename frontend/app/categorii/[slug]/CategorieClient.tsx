@@ -242,7 +242,6 @@ export default function CategorieClient({ magazine, numeCategorie, slug }: {
         {cuPromotii.length > 0 && (
           <section className="mb-10">
             <div className="flex items-center gap-3 mb-5">
-              <span className="bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-full animate-pulse">LIVE</span>
               <h2 className="text-xl font-black text-gray-900">Promoții Active {an}</h2>
               <span className="text-sm text-gray-400">{cuPromotii.length} oferte</span>
             </div>

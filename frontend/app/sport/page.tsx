@@ -91,7 +91,7 @@ export default function SportPage() {
         {/* MAGAZINE */}
         <section className="max-w-6xl mx-auto px-4 py-10">
           <div className="flex items-center gap-3 mb-5">
-            {cuPromo.length > 0 && <span className="bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-full animate-pulse">LIVE</span>}
+            
             <h2 className="text-xl font-black text-gray-900">Magazine sport cu reduceri active</h2>
           </div>
           {magazine.length === 0 ? (
@@ -173,6 +173,25 @@ export default function SportPage() {
                 <p>Combină prețul din ShopMania cu codul de reducere de pe AmCupon.ro. La echipament scump (biciclete, ceasuri GPS, căști sport), diferența poate ajunge la sute de lei.</p>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className="max-w-6xl mx-auto px-4 py-8">
+          <h2 className="text-base font-black text-gray-700 mb-4">Exploreaza si alte categorii</h2>
+          <div className="flex flex-wrap gap-2">
+            {[
+              { href: "/farmacie", label: "💊 Farmacie" },
+              { href: "/gadgets", label: "📡 Gadgets" },
+              { href: "/moto", label: "🚗 Auto-Moto" },
+              { href: "/sanatate", label: "🌿 Sanatate" },
+              { href: "/copii", label: "👶 Copii" },
+              { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
+            ].map(l => (
+              <a key={l.href} href={l.href}
+                className="bg-gray-100 hover:bg-orange-50 hover:text-orange-600 text-gray-700 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-gray-200 hover:border-orange-200">
+                {l.label}
+              </a>
+            ))}
           </div>
         </section>
 

@@ -7,6 +7,9 @@ const BASE_URL = "https://amcupon.ro";
 // Sluguri pagini multi-nisa (/nisa/[slug])
 const NISA_SLUGURI = ["auto", "carti", "casa", "tech", "fashion", "sport", "frumusete"];
 
+// Sluguri pagini /top/[slug]
+const TOP_SLUGURI = ["laptopuri", "telefoane", "casti-wireless", "televizoare", "aspiratoare-robot", "friteuze", "smartwatch-uri", "monitoare"];
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const magazine: { magazin: string; are_promotie: boolean; categorie_slug?: string }[] = JSON.parse(
     fs.readFileSync(path.join(process.cwd(), "public", "output.json"), "utf-8")
@@ -23,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     // ─── Pagini principale ───────────────────────────────────────────────────
     { url: BASE_URL,                             lastModified: new Date(), changeFrequency: "daily",   priority: 1.0 },
+    { url: `${BASE_URL}/oferte-azi`,             lastModified: new Date(), changeFrequency: "daily",   priority: 0.95 },
     { url: `${BASE_URL}/black-friday`,           lastModified: new Date(), changeFrequency: "daily",   priority: 0.95 },
     { url: `${BASE_URL}/produse`,                lastModified: new Date(), changeFrequency: "daily",   priority: 0.9 },
     { url: `${BASE_URL}/toate-magazinele`,       lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
@@ -45,6 +49,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/extensie`,              lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/casa`,                  lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
     { url: `${BASE_URL}/fashion`,               lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
+    { url: `${BASE_URL}/sanatate`,              lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
+    { url: `${BASE_URL}/animale`,               lastModified: new Date(), changeFrequency: "daily",   priority: 0.8  },
+    { url: `${BASE_URL}/bijuterii`,             lastModified: new Date(), changeFrequency: "daily",   priority: 0.8  },
+    { url: `${BASE_URL}/jocuri`,                lastModified: new Date(), changeFrequency: "daily",   priority: 0.8  },
+    { url: `${BASE_URL}/supermarket`,           lastModified: new Date(), changeFrequency: "daily",   priority: 0.8  },
 
     // ─── Pagini nisa (/nisa/[slug]) ──────────────────────────────────────────
     ...NISA_SLUGURI.map((slug) => ({
@@ -54,9 +63,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     })),
 
+    // ─── Top Produse (/top si /top/[slug]) ───────────────────────────────────
+    { url: `${BASE_URL}/top`,                     lastModified: new Date(), changeFrequency: "weekly",  priority: 0.9 },
+    ...TOP_SLUGURI.map(slug => ({
+      url: `${BASE_URL}/top/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.85,
+    })),
+
     // ─── Tool pages ─────────────────────────────────────────────────────────
     { url: `${BASE_URL}/top-reduceri`,            lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
-    { url: `${BASE_URL}/calculator`,              lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/calculator`,              lastModified: new Date(), changeFrequency: "monthly", priority: 0.75 },
 
     // ─── Pagini utilitare ────────────────────────────────────────────────────
     { url: `${BASE_URL}/cautare`,                 lastModified: new Date(), changeFrequency: "monthly", priority: 0.4 },

@@ -1,7 +1,59 @@
 {
-  "updated": "2026-05-28T00:01:12Z",
+  "updated": "2026-05-28T22:19:36Z",
   "count": 20,
   "banners": [
+    {
+      "id": 270067,
+      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270026/original/270026.png",
+      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=254f2fd64&aff_code=541547473&campaign_unique=50e9adcf3",
+      "landing_raw": "https://bookzone.ro/campanie/marea-evadare-literara",
+      "width": 728,
+      "height": 90,
+      "merchant": "bookzone.ro ",
+      "merchant_slug": "bookzone-ro-9c9bce7e-a8e0-40de-8d7a-afa44b9f3d2a",
+      "name": "Promotii",
+      "category": "Promotii",
+      "b_type": "image"
+    },
+    {
+      "id": 270066,
+      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270025/original/270025.png",
+      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=2be4435f9&aff_code=541547473&campaign_unique=50e9adcf3",
+      "landing_raw": "https://bookzone.ro/campanie/marea-evadare-literara",
+      "width": 300,
+      "height": 600,
+      "merchant": "bookzone.ro ",
+      "merchant_slug": "bookzone-ro-9c9bce7e-a8e0-40de-8d7a-afa44b9f3d2a",
+      "name": "Promotii",
+      "category": "Promotii",
+      "b_type": "image"
+    },
+    {
+      "id": 270065,
+      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270024/original/270024.png",
+      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=441fd19a2&aff_code=541547473&campaign_unique=50e9adcf3",
+      "landing_raw": "https://bookzone.ro/campanie/marea-evadare-literara",
+      "width": 300,
+      "height": 250,
+      "merchant": "bookzone.ro ",
+      "merchant_slug": "bookzone-ro-9c9bce7e-a8e0-40de-8d7a-afa44b9f3d2a",
+      "name": "Promotii",
+      "category": "Promotii",
+      "b_type": "image"
+    },
+    {
+      "id": 270064,
+      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270023/original/270023.png",
+      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=c0509b2e4&aff_code=541547473&campaign_unique=50e9adcf3",
+      "landing_raw": "https://bookzone.ro/campanie/marea-evadare-literara",
+      "width": 160,
+      "height": 600,
+      "merchant": "bookzone.ro ",
+      "merchant_slug": "bookzone-ro-9c9bce7e-a8e0-40de-8d7a-afa44b9f3d2a",
+      "name": "Promotii",
+      "category": "Promotii",
+      "b_type": "image"
+    },
     {
       "id": 270060,
       "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270019/original/270019.png",
@@ -208,58 +260,6 @@
       "merchant_slug": "carturesti-ro",
       "name": "20% reducere la jocuri și jucării",
       "category": "20% reducere la jocuri și jucării",
-      "b_type": "image"
-    },
-    {
-      "id": 270044,
-      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270003/original/270003.jpg",
-      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=78e1a0bf0&aff_code=541547473&campaign_unique=07b5f0fed",
-      "landing_raw": "https://carturesti.ro/offer/targ-de-o-schioapa-2026-jucarii-6599",
-      "width": 1200,
-      "height": 1200,
-      "merchant": "carturesti.ro ",
-      "merchant_slug": "carturesti-ro",
-      "name": "20% reducere la jocuri și jucării",
-      "category": "20% reducere la jocuri și jucării",
-      "b_type": "image"
-    },
-    {
-      "id": 270043,
-      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270002/original/270002.jpg",
-      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=ee432ecfc&aff_code=541547473&campaign_unique=07b5f0fed",
-      "landing_raw": "https://carturesti.ro/offer/targ-de-o-schioapa-2026-jucarii-6599",
-      "width": 1200,
-      "height": 628,
-      "merchant": "carturesti.ro ",
-      "merchant_slug": "carturesti-ro",
-      "name": "20% reducere la jocuri și jucării",
-      "category": "20% reducere la jocuri și jucării",
-      "b_type": "image"
-    },
-    {
-      "id": 270042,
-      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270001/original/270001.jpg",
-      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=d1edc2dd9&aff_code=541547473&campaign_unique=50e9adcf3",
-      "landing_raw": "https://bookzone.ro/",
-      "width": 728,
-      "height": 90,
-      "merchant": "bookzone.ro ",
-      "merchant_slug": "bookzone-ro-9c9bce7e-a8e0-40de-8d7a-afa44b9f3d2a",
-      "name": "Promotii",
-      "category": "Promotii",
-      "b_type": "image"
-    },
-    {
-      "id": 270041,
-      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270000/original/270000.jpg",
-      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=1860f6cbf&aff_code=541547473&campaign_unique=50e9adcf3",
-      "landing_raw": "https://bookzone.ro/",
-      "width": 300,
-      "height": 600,
-      "merchant": "bookzone.ro ",
-      "merchant_slug": "bookzone-ro-9c9bce7e-a8e0-40de-8d7a-afa44b9f3d2a",
-      "name": "Promotii",
-      "category": "Promotii",
       "b_type": "image"
     }
   ]

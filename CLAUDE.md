@@ -6,6 +6,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate zilnic prin GitHub Actions. Răspunde întotdeauna în română.
 
+**Stare curentă (28.05.2026):**
+- 288 magazine (226 × 2Performant + 62 × Profitshare)
+- 204 articole blog (139 tip magazin cu 500+ cuvinte, 55 tip best-of)
+- generate_blog.py: MAX_POSTS=500, POSTS_PER_RUN=30, acoperă magazine cu scor>10
+- GitHub Actions: retry loop 5x la push (evită conflicte concurrent)
+- Google Search Console: 430 pagini indexate (sitemap va crește la ~553)
+
 ---
 
 ## Commands
