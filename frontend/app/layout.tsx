@@ -13,6 +13,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import "./globals.css";
 import ThemeToggle from "./components/ThemeToggle";
+import AnuntAnimat from "./components/AnuntAnimat";
 
 // ─── GA4 Measurement ID ───────────────────────────────────────────────────────
 // Mergi la analytics.google.com → Admin → Data Streams → Web → Measurement ID
@@ -120,29 +121,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col">
         <Navbar />
-        <div className="bg-gradient-to-r from-red-600 to-orange-500 text-white text-xs font-semibold py-2 px-4 text-center flex items-center justify-center gap-3 flex-wrap">
-          <span>
-            &#128293;{" "}
-            <span className="hidden sm:inline">Coduri de reducere actualizate zilnic &mdash; </span>
-            <a href="/#promotii" className="underline hover:no-underline font-bold">
-              Descopera promotiile active de azi &rarr;
-            </a>
-          </span>
-          <a
-            href="/newsletter"
-            className="hidden sm:inline-flex items-center gap-1 bg-white/20 hover:bg-white/30 px-2.5 py-0.5 rounded-full transition-colors"
-          >
-            &#128140; Newsletter gratuit
-          </a>
-          <a
-            href="https://chromewebstore.google.com/detail/mahfankpalkgognhnllkgdkjncmmkllb"
-            target="_blank" rel="noopener noreferrer"
-            className="hidden md:inline-flex items-center gap-1 bg-white/20 hover:bg-white/30 px-2.5 py-0.5 rounded-full transition-colors"
-          >
-            &#129513; Extensie Chrome
-          </a>
-          <ThemeToggle className="ml-auto sm:ml-0 bg-white/15 hover:bg-white/25 text-white" />
-        </div>
+        <AnuntAnimat />
         {children}
         <Footer />
         <CookieBanner />
