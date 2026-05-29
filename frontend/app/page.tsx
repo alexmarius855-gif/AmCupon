@@ -1627,19 +1627,40 @@ function SkeletonCard() {
 function NewsletterForm() {
   const [email, setEmail]   = useState("");
   const [status, setStatus] = useState<"idle"|"loading"|"ok"|"err">("idle");
+  const [errMsg, setErrMsg] = useState("");
 
   async function trimite(e: React.FormEvent) {
     e.preventDefault();
-    if (!email.includes("@")) { setStatus("err"); return; }
+    const trimmed = email.trim().toLowerCase();
+    if (!trimmed.includes("@") || !trimmed.includes(".")) {
+      setErrMsg("Adresa de email invalida.");
+      setStatus("err");
+      return;
+    }
     setStatus("loading");
+    setErrMsg("");
     try {
-      const res = await fetch("/api/newsletter", {
+      const res  = await fetch("/api/newsletter", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email: trimmed }),
       });
-      if (res.ok) { setStatus("ok"); setEmail(""); } else setStatus("err");
-    } catch { setStatus("err"); }
+      const data = await res.json().catch(() => ({}));
+      if (data.ok) {
+        setStatus("ok");
+        setEmail("");
+      } else {
+        // Mesaj clar in loc de generic
+        setErrMsg(
+          data.error ||
+          (res.status === 503 ? "Newsletter in configurare — revino curand!" : "Eroare. Incearca din nou.")
+        );
+        setStatus("err");
+      }
+    } catch {
+      setErrMsg("Eroare de retea. Verifica conexiunea.");
+      setStatus("err");
+    }
   }
 
   if (status === "ok") {
@@ -1654,7 +1675,7 @@ function NewsletterForm() {
   return (
     <div>
       <form onSubmit={trimite} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-        <input type="email" value={email} onChange={e => setEmail(e.target.value)}
+        <input type="email" value={email} onChange={e => { setEmail(e.target.value); setStatus("idle"); setErrMsg(""); }}
           placeholder="adresa@email.ro" disabled={status === "loading"}
           className="flex-1 px-4 py-3.5 rounded-xl bg-white/10 border border-white/15 text-white text-sm placeholder-white/30 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500/40 disabled:opacity-60 transition-all"/>
         <button type="submit" disabled={status === "loading"}
@@ -1662,8 +1683,8 @@ function NewsletterForm() {
           {status === "loading" ? "Se trimite..." : "Aboneaza-te"}
         </button>
       </form>
-      {status === "err" && (
-        <p className="text-white/60 text-xs mt-2 text-center">Verifica emailul si incearca din nou.</p>
+      {status === "err" && errMsg && (
+        <p className="text-white/60 text-xs mt-2 text-center">{errMsg}</p>
       )}
     </div>
   );
