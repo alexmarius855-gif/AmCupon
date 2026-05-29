@@ -697,62 +697,96 @@ export default function Home() {
       </section>
 
       {/* ─── PRODUSE HOT ─────────────────────────────────────────────────── */}
-      {produse.length > 0 && (
-        <section className="bg-slate-950 border-b border-slate-800 py-14 px-4">
-          <div className="max-w-7xl mx-auto">
-            <div className="flex items-end justify-between mb-8">
-              <div>
-                <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-2">🔥 CELE MAI BUNE PRETURI</p>
-                <h2 className="text-3xl font-black tracking-tight text-white">Produse cu reducere acum</h2>
-                <p className="text-slate-400 text-sm mt-1.5">Sortate dupa cel mai mare discount — actualizate zilnic</p>
-              </div>
-              <a href="/produse" className="hidden sm:flex items-center gap-1.5 bg-orange-500 hover:bg-orange-400 text-white font-bold px-4 py-2 rounded-xl text-sm transition-colors">
-                Toate produsele
-                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-              {produse.map((p, i) => (
-                <a key={i} href={p.url} target="_blank" rel="sponsored noopener noreferrer"
-                  className="group bg-slate-900 border border-slate-800 hover:border-orange-500 rounded-2xl overflow-hidden transition-all hover:shadow-xl hover:shadow-black/40 hover:-translate-y-1 duration-200 flex flex-col">
-                  <div className="relative bg-slate-800 overflow-hidden" style={{aspectRatio:"1"}}>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={p.image} alt={p.title}
-                      className="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300"
-                      loading="lazy" onError={e => { (e.target as HTMLImageElement).style.display='none'; }}/>
-                    {p.discount_pct > 0 && (
-                      <div className="absolute top-2 left-2 bg-red-500 text-white text-xs font-black px-2 py-0.5 rounded-full shadow-sm">
-                        -{p.discount_pct}%
-                      </div>
-                    )}
-                  </div>
-                  <div className="p-3 flex flex-col flex-1">
-                    <p className="text-[11px] text-slate-500 mb-0.5 truncate">{p.brand || p.merchant}</p>
-                    <p className="text-xs font-semibold text-slate-200 line-clamp-2 flex-1 group-hover:text-orange-400 transition-colors leading-snug">{p.title}</p>
-                    <div className="flex items-center gap-1.5 mt-2">
-                      <span className="font-black text-orange-400 text-sm">{p.price > 0 ? `${p.price.toFixed(0)} lei` : "Pret"}</span>
-                      {p.old_price && p.old_price > p.price && (
-                        <span className="text-[11px] text-slate-500 line-through">{p.old_price.toFixed(0)}</span>
-                      )}
-                    </div>
-                    <div className="mt-1.5 text-[11px] font-bold text-orange-500 group-hover:text-orange-400 flex items-center gap-0.5">
-                      Cumpara
-                      <svg className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
-                      </svg>
-                    </div>
-                  </div>
+      {/* ─── OFERTE ACTIVE CU COD — din output.json, diverse magazine ─── */}
+      {!loading && (() => {
+        const cuCod = magazine
+          .filter(m => m.promotii?.some((p: {zile_ramase:number;cod_cupon:string}) => p.zile_ramase >= 0 && p.cod_cupon))
+          .sort((a, b) => (b.scor_final || 0) - (a.scor_final || 0))
+          .slice(0, 6);
+        const faraCod = magazine
+          .filter(m => !cuCod.find(x => x.magazin === m.magazin) && m.promotii?.some((p: {zile_ramase:number}) => p.zile_ramase >= 0))
+          .sort((a, b) => (b.scor_final || 0) - (a.scor_final || 0))
+          .slice(0, 6);
+        const oferte = [...cuCod, ...faraCod].slice(0, 12);
+        if (oferte.length === 0) return null;
+        return (
+          <section className="bg-slate-950 border-b border-slate-800 py-14 px-4">
+            <div className="max-w-7xl mx-auto">
+              <div className="flex items-end justify-between mb-8">
+                <div>
+                  <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-2">🔥 CODURI ACTIVE AZI</p>
+                  <h2 className="text-3xl font-black tracking-tight text-white">Oferte cu reducere acum</h2>
+                  <p className="text-slate-400 text-sm mt-1.5">Coduri verificate de la {oferte.length} magazine — actualizate zilnic</p>
+                </div>
+                <a href="/toate-magazinele" className="hidden sm:flex items-center gap-1.5 bg-orange-500 hover:bg-orange-400 text-white font-bold px-4 py-2 rounded-xl text-sm transition-colors">
+                  Toate ofertele
+                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/></svg>
                 </a>
-              ))}
+              </div>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+                {oferte.map((m, i) => {
+                  const promo = m.promotii?.find((p: {zile_ramase:number;cod_cupon:string}) => p.zile_ramase >= 0 && p.cod_cupon)
+                             || m.promotii?.find((p: {zile_ramase:number}) => p.zile_ramase >= 0);
+                  const cod = promo?.cod_cupon || '';
+                  const link = promo?.landing_page || m.url_afiliat || m.url || '#';
+                  const titlu = (promo?.nume || `Oferta ${m.magazin.split('.')[0]}`).slice(0, 55);
+                  const zile = promo?.zile_ramase ?? 0;
+                  const slug = m.magazin;
+                  return (
+                    <a key={i} href={link} target="_blank" rel="sponsored noopener noreferrer"
+                      className="group bg-slate-900 border border-slate-800 hover:border-orange-500 rounded-2xl overflow-hidden transition-all hover:shadow-xl hover:shadow-black/40 hover:-translate-y-1 duration-200 flex flex-col">
+                      {/* Logo */}
+                      <div className="relative bg-slate-800 flex items-center justify-center p-4" style={{aspectRatio:"1"}}>
+                        {m.logo_url
+                          ? <img src={m.logo_url} alt={slug}
+                              className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                              loading="lazy" onError={e => { (e.target as HTMLImageElement).style.display='none'; }}/>
+                          : <span className="font-black text-orange-500 text-base">{slug.split('.')[0].toUpperCase()}</span>
+                        }
+                        {cod && (
+                          <div className="absolute top-2 left-2 bg-orange-500 text-white text-[10px] font-black px-1.5 py-0.5 rounded-full shadow">
+                            COD
+                          </div>
+                        )}
+                        {zile <= 3 && zile >= 0 && (
+                          <div className="absolute top-2 right-2 bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full">
+                            {zile}z
+                          </div>
+                        )}
+                      </div>
+                      {/* Info */}
+                      <div className="p-3 flex flex-col flex-1">
+                        <p className="text-[11px] text-slate-500 mb-0.5 truncate">{slug}</p>
+                        <p className="text-xs font-semibold text-slate-200 line-clamp-2 flex-1 group-hover:text-orange-400 transition-colors leading-snug">{titlu}</p>
+                        {cod ? (
+                          <div className="mt-2 bg-slate-800 border border-dashed border-orange-500/60 rounded-lg px-2 py-1 text-center">
+                            <span className="font-black text-orange-400 text-[11px] tracking-widest">{cod}</span>
+                          </div>
+                        ) : (
+                          <div className="mt-2 text-[11px] font-bold text-emerald-500">Fara cod necesar</div>
+                        )}
+                        <a href={`/cod-reducere/${slug}`}
+                          className="mt-2 text-[11px] font-bold text-orange-500 group-hover:text-orange-400 flex items-center gap-0.5"
+                          onClick={e => e.stopPropagation()}>
+                          Vezi oferta
+                          <svg className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
+                          </svg>
+                        </a>
+                      </div>
+                    </a>
+                  );
+                })}
+              </div>
+              <div className="text-center mt-6">
+                <a href="/toate-magazinele" className="inline-flex items-center gap-2 text-slate-400 hover:text-orange-400 text-sm font-semibold transition-colors">
+                  Vezi toate magazinele cu oferte active →
+                </a>
+              </div>
             </div>
-            <div className="text-center mt-6">
-              <a href="/produse" className="inline-flex items-center gap-2 text-slate-400 hover:text-orange-400 text-sm font-semibold transition-colors">
-                Vezi toate produsele cu reducere →
-              </a>
-            </div>
-          </div>
-        </section>
-      )}
+          </section>
+        );
+      })()}
 
       {/* ─── TOP PICKS ────────────────────────────────────────────────────── */}
       {!loading && cuPromotii.length >= 3 && (
