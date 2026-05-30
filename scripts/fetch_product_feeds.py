@@ -661,6 +661,7 @@ def main():
         {"name": "noriel.ro",        "url": "https://www.noriel.ro/feed/google_shopping.xml"},
         # Feed direct 2Performant (CSV simplu: title, aff_code, price, image_urls)
         # aff_code = URL tracking deja complet cu aff_code=541547473
+        # Feed 4a3fc5d5f contine: outfitblack.ro (320) + sevensins.ro (3522) + depox.ro (2795)
         {"name": "outfitblack.ro",   "url": "https://feeds.2performant.com/feed/4a3fc5d5f.csv"},
     ]
     slug_map_rev = {v: k for k, v in slug_map.items()}

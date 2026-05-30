@@ -12,6 +12,7 @@ FILES = [
     "../data/output.json",              # 2Performant
     "../data/profitshare_output.json",  # Profitshare
     "../data/tradetracker_output.json", # TradeTracker
+    "../data/extra_merchants.json",     # Magazine adaugate manual (studioszel, sevensins, depox etc.)
 ]
 
 OUTPUT_FILE    = "../data/output.json"
