@@ -360,11 +360,13 @@ def parse_xml_feed(content: bytes, merchant: str, feed_id) -> list:
 CSV_FIELD_MAP = {
     # Titlu
     "title": "title", "name": "title", "product_name": "title",
-    # Link
+    # Link — inclusiv formatul 2Performant direct (aff_code = URL tracking deja complet)
     "link": "link", "url": "link", "product_url": "link", "page_url": "link",
-    # Imagine
+    "aff_code": "link",
+    # Imagine — inclusiv image_urls (plural, format outfitblack)
     "image_link": "image", "image_url": "image", "image": "image",
     "g:image_link": "image", "main_image": "image", "picture": "image",
+    "image_urls": "image",
     # Pret
     "price": "price", "g:price": "price", "sale_price": "price",
     "final_price": "price", "current_price": "price",
@@ -440,10 +442,12 @@ def parse_csv_feed(content: bytes, merchant: str, feed_id, encoding="utf-8") -> 
                 category = category.split(">")[-1].strip()
             category = category[:60]
 
+            # Nu dublu-wrap URL-urile 2Performant deja cu tracking (ex: outfitblack feed)
+            is_2p_url = link.startswith("https://event.2performant.com")
             products.append({
                 "id":           mapped.get("id", str(i)),
                 "title":        title[:120],
-                "url":          make_afiliat_url(link),
+                "url":          link if is_2p_url else make_afiliat_url(link),
                 "url_original": link,
                 "image":        image,
                 "price":        price,
@@ -650,11 +654,14 @@ def main():
 
     # Feed-uri cunoscute cu URL direct (diverse categorii)
     KNOWN_FEEDS = [
-        {"name": "libris.ro",      "url": "https://www.libris.ro/feed_2p-21220622?_uiAc=ODA4OA=="},
-        {"name": "navstore.ro",    "url": "https://www.navstore.ro/feed/googleShoppingAds.xml"},
-        {"name": "elefant.ro",     "url": "https://www.elefant.ro/feed/google-shopping"},
-        {"name": "vidaxl.ro",      "url": "https://www.vidaxl.ro/feed/google"},
-        {"name": "noriel.ro",      "url": "https://www.noriel.ro/feed/google_shopping.xml"},
+        {"name": "libris.ro",        "url": "https://www.libris.ro/feed_2p-21220622?_uiAc=ODA4OA=="},
+        {"name": "navstore.ro",      "url": "https://www.navstore.ro/feed/googleShoppingAds.xml"},
+        {"name": "elefant.ro",       "url": "https://www.elefant.ro/feed/google-shopping"},
+        {"name": "vidaxl.ro",        "url": "https://www.vidaxl.ro/feed/google"},
+        {"name": "noriel.ro",        "url": "https://www.noriel.ro/feed/google_shopping.xml"},
+        # Feed direct 2Performant (CSV simplu: title, aff_code, price, image_urls)
+        # aff_code = URL tracking deja complet cu aff_code=541547473
+        {"name": "outfitblack.ro",   "url": "https://feeds.2performant.com/feed/4a3fc5d5f.csv"},
     ]
     slug_map_rev = {v: k for k, v in slug_map.items()}
     existing_names = {(f.get("name") or "").lower() for f, _ in feeds_cu_url}
