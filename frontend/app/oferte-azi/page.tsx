@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
 import Link from "next/link";
+import ShareButton from "../components/ShareButton";
 
 /* ── Tipuri ──────────────────────────────────────────────────────────────── */
 interface Promotie {
@@ -189,17 +190,26 @@ function OfertaCard({ o, index }: { o: OfertaFlat; index: number }) {
             {o.promo.zile_ramase != null ? `${o.promo.zile_ramase} zile` : ""}
           </span>
         )}
-        {o.hasCod ? (
-          <Link href={`/cod-reducere/${o.magazin}`}
-            className="text-xs font-bold bg-orange-500 hover:bg-orange-400 text-white px-3 py-1.5 rounded-lg transition-colors">
-            Vezi codul
-          </Link>
-        ) : (
-          <a href={o.url_afiliat} target="_blank" rel="sponsored noopener noreferrer"
-            className="text-xs font-bold bg-orange-500 hover:bg-orange-400 text-white px-3 py-1.5 rounded-lg transition-colors">
-            Vezi oferta
-          </a>
-        )}
+        <div className="flex items-center gap-1.5">
+          <ShareButton
+            pageSlug={`/cod-reducere/${o.magazin}`}
+            title={`${o.hasCod ? "Cod reducere" : "Oferta"} ${discount > 0 ? "-" + discount + "% " : ""}${nume}`}
+            text={`${o.hasCod ? "🔥 Cod reducere" : "🏷 Oferta"}${discount > 0 ? " -" + discount + "%" : ""} la ${nume}!\n${o.promo.nume}`}
+            small
+            theme="light"
+          />
+          {o.hasCod ? (
+            <Link href={`/cod-reducere/${o.magazin}`}
+              className="text-xs font-bold bg-orange-500 hover:bg-orange-400 text-white px-3 py-1.5 rounded-lg transition-colors">
+              Vezi codul
+            </Link>
+          ) : (
+            <a href={o.url_afiliat} target="_blank" rel="sponsored noopener noreferrer"
+              className="text-xs font-bold bg-orange-500 hover:bg-orange-400 text-white px-3 py-1.5 rounded-lg transition-colors">
+              Vezi oferta
+            </a>
+          )}
+        </div>
       </div>
 
       {/* Link magazin */}
