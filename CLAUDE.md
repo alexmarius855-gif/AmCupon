@@ -134,10 +134,10 @@ Quicklinks: `https://event.2performant.com/events/click?ad_type=quicklink&aff_co
 | `TWOPEFORMANT_EMAIL` | alexmarius855@gmail.com |
 | `TWOPEFORMANT_PASS` | parola cont 2Performant |
 | `TWOPEFORMANT_USER` | 541547473 (AFF_CODE pentru quicklinks) |
-| `PROFITSHARE_USER` | marinescu_alex_marius_6a1454f45dc33 |
-| `PROFITSHARE_KEY` | 4e57ac2e62b978256949426d88ede8b61c8a7f86 |
-| `BREVO_SMTP_USER` | ac67f7001@smtp-brevo.com |
-| `BREVO_SMTP_PASS` | xsmtpsib-... (in GitHub Secrets) |
+| `PROFITSHARE_USER` | [setat in GitHub Secrets] |
+| `PROFITSHARE_KEY` | [setat in GitHub Secrets] |
+| `BREVO_SMTP_USER` | [setat in GitHub Secrets] |
+| `BREVO_SMTP_PASS` | [setat in GitHub Secrets] |
 | `NEXT_PUBLIC_ADSENSE_ID` | ca-pub-1744566936173747 |
 
 ---
