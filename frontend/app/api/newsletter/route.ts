@@ -209,11 +209,13 @@ export async function POST(request: Request) {
       return Response.json({ ok: true }, { headers: corsHeaders });
     }
     const data = await res.json().catch(() => ({}));
-    if (res.status === 400 && data?.code === "duplicate_parameter") {
+    if (res.status === 400 && (data?.code === "duplicate_parameter" || data?.code === "contact_already_in_list")) {
       return Response.json({ ok: true, existing: true }, { headers: corsHeaders });
     }
-    console.error("Brevo error:", res.status, data);
-    return Response.json({ error: "Eroare server" }, { status: 500, headers: corsHeaders });
+    console.error("[newsletter] Brevo API error:", res.status, JSON.stringify(data));
+    // Returnam mesaj mai specific in functie de tipul erorii
+    const msg = data?.message || "Eroare server. Incearca din nou.";
+    return Response.json({ error: msg }, { status: 500, headers: corsHeaders });
   } catch (err) {
     console.error("Newsletter fetch error:", err);
     return Response.json({ error: "Eroare retea" }, { status: 500, headers: corsHeaders });
