@@ -228,6 +228,16 @@ export default function Home() {
     return acc;
   }, {} as Record<string, number>);
 
+  // Vânzări totale per categorie — sortăm categoriile după popularitate reală
+  const vanzariPerCateg = magazine.reduce((acc, m) => {
+    if (m.categorie_slug) acc[m.categorie_slug] = (acc[m.categorie_slug] || 0) + (m.sales_number || 0);
+    return acc;
+  }, {} as Record<string, number>);
+
+  const categoriiSortate = [...CATEGORII].sort(
+    (a, b) => (vanzariPerCateg[b.slug] || 0) - (vanzariPerCateg[a.slug] || 0)
+  );
+
   function copiazaCod(id: string, cod: string) {
     setCoduriReveal(prev => new Set(prev).add(id));
     navigator.clipboard.writeText(cod).catch(() => {});
@@ -273,7 +283,7 @@ export default function Home() {
               </button>
               <div className="absolute right-0 top-full pt-1 hidden group-hover:block z-50 w-60">
                 <div className="bg-white border border-slate-200 rounded-2xl shadow-xl py-2">
-                  {CATEGORII.slice(0, 8).map(c => (
+                  {categoriiSortate.slice(0, 8).map(c => (
                     <a key={c.slug} href={`/categorii/${c.slug}`}
                       className="flex items-center gap-3 px-4 py-2 text-sm text-slate-700 hover:bg-orange-50 hover:text-orange-600 transition-colors">
                       <span className="text-base">{c.emoji}</span>
@@ -344,7 +354,7 @@ export default function Home() {
               <div>
                 <p className="text-xs font-bold text-slate-400 uppercase tracking-wider px-1 mb-3">Categorii populare</p>
                 <div className="grid grid-cols-4 gap-2">
-                  {CATEGORII.slice(0, 8).map(c => (
+                  {categoriiSortate.slice(0, 8).map(c => (
                     <a key={c.slug} href={`/categorii/${c.slug}`} onClick={() => setMenuOpen(false)}
                       className="flex flex-col items-center gap-1 p-2 rounded-xl border border-slate-700 bg-slate-800 hover:border-orange-500 transition-colors">
                       <span className="text-xl">{c.emoji}</span>
@@ -445,28 +455,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ─── STATS BAR ───────────────────────────────────────────────────── */}
-      <div className="bg-white dark:bg-slate-800 border-b border-slate-100 dark:border-slate-700">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-slate-100">
-            {[
-              { icon: "🏪", value: magazine.length > 0 ? `${magazine.length}+` : "610+", label: "Magazine partenere" },
-              { icon: "⚡", value: cuPromotii.length > 0 ? `${cuPromotii.length}` : "200+",  label: "Promotii active" },
-              { icon: "✅", value: "100%",    label: "Coduri verificate" },
-              { icon: "🆓", value: "Gratuit", label: "Fara abonament" },
-            ].map(s => (
-              <div key={s.label} className="flex items-center gap-3 px-4 py-5">
-                <span className="text-2xl">{s.icon}</span>
-                <div>
-                  <p className="font-black text-slate-900 text-xl leading-none">{s.value}</p>
-                  <p className="text-xs text-slate-400 mt-0.5">{s.label}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
       {/* ─── CATEGORY GRID ───────────────────────────────────────────────── */}
       <section id="categorii" className="bg-slate-900 border-b border-slate-800 py-14 px-4">
         <div className="max-w-7xl mx-auto">
@@ -486,9 +474,9 @@ export default function Home() {
             </a>
           </div>
 
-          {/* Grid principal — top 8 categorii */}
+          {/* Grid principal — top 8 categorii după vânzări */}
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-            {CATEGORII.slice(0, 8).map(c => {
+            {categoriiSortate.slice(0, 8).map(c => {
               const nrPromo = promoPerCateg[c.slug] || 0;
               return (
                 <a
@@ -539,7 +527,7 @@ export default function Home() {
 
           {/* Grid secundar — restul categoriilor ca chips */}
           <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-8 gap-2 mt-3">
-            {CATEGORII.slice(8).map(c => {
+            {categoriiSortate.slice(8).map(c => {
               const nrPromo = promoPerCateg[c.slug] || 0;
               return (
                 <a
@@ -566,6 +554,28 @@ export default function Home() {
           </a>
         </div>
       </section>
+
+      {/* ─── STATS BAR ───────────────────────────────────────────────────── */}
+      <div className="bg-white dark:bg-slate-800 border-b border-slate-100 dark:border-slate-700">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-slate-100">
+            {[
+              { icon: "🏪", value: magazine.length > 0 ? `${magazine.length}+` : "610+", label: "Magazine partenere" },
+              { icon: "⚡", value: cuPromotii.length > 0 ? `${cuPromotii.length}` : "200+",  label: "Promotii active" },
+              { icon: "✅", value: "100%",    label: "Coduri verificate" },
+              { icon: "🆓", value: "Gratuit", label: "Fara abonament" },
+            ].map(s => (
+              <div key={s.label} className="flex items-center gap-3 px-4 py-5">
+                <span className="text-2xl">{s.icon}</span>
+                <div>
+                  <p className="font-black text-slate-900 text-xl leading-none">{s.value}</p>
+                  <p className="text-xs text-slate-400 mt-0.5">{s.label}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
 
       {/* ─── DEAL ZILEI ──────────────────────────────────────────────────── */}
       {!loading && cuPromotii.length > 0 && (() => {
