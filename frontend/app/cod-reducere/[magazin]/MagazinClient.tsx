@@ -4,6 +4,7 @@ import { useState, useEffect, useMemo } from "react";
 import PriceAlert from "../../components/PriceAlert";
 import ReviewSection from "./ReviewSection";
 import ShareButton from "../../components/ShareButton";
+import BannerAd2P from "../../components/BannerAd2P";
 
 // ── Countdown timer ───────────────────────────────────────────────────────────
 function CountdownTimer({ zileRamase }: { zileRamase: number }) {
@@ -158,11 +159,18 @@ function ProdusCard({ produs: p }: { produs: Produs }) {
 // ── Main component ────────────────────────────────────────────────────────────
 type Tab = "coduri" | "oferte" | "produse" | "recenzii";
 
-export default function MagazinClient({ magazin: m, produse = [], similare = [], blogPost = null }: {
+interface Banner2P {
+  id: number; image_url: string; landing_url: string; landing_raw: string;
+  width: number; height: number; merchant: string; merchant_slug: string;
+  name: string; category: string; b_type: string;
+}
+
+export default function MagazinClient({ magazin: m, produse = [], similare = [], blogPost = null, banner = null }: {
   magazin: Magazin;
   produse?: Produs[];
   similare?: MagazinSimilar[];
   blogPost?: BlogPostMic | null;
+  banner?: Banner2P | null;
 }) {
   const [revealed, setRevealed]   = useState<Set<number>>(new Set());
   const [copiat, setCopiat]       = useState<number | null>(null);
@@ -705,6 +713,13 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
               </div>
             </a>
           </section>
+        )}
+
+        {/* ── BANNER PUBLICITAR 2PERFORMANT ───────────────────────────────── */}
+        {banner && (
+          <div className="mt-10 flex justify-center">
+            <BannerAd2P banner={banner} />
+          </div>
         )}
 
         {/* ── MAGAZINE SIMILARE ────────────────────────────────────────────── */}

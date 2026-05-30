@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
 import MagazinClient from "./MagazinClient";
+import BannerAd2P from "../../components/BannerAd2P";
 
 interface Promotie {
   nume: string;
@@ -113,9 +114,62 @@ interface BlogPostMic {
   cover: string;
 }
 
+interface Banner2P {
+  id: number;
+  image_url: string;
+  landing_url: string;
+  landing_raw: string;
+  width: number;
+  height: number;
+  merchant: string;
+  merchant_slug: string;
+  name: string;
+  category: string;
+  b_type: string;
+}
+
 function loadData(): Magazin[] {
   const filePath = path.join(process.cwd(), "public", "output.json");
   return JSON.parse(fs.readFileSync(filePath, "utf-8"));
+}
+
+function loadBanner(magazinSlug: string): Banner2P | null {
+  try {
+    const p = path.join(process.cwd(), "public", "banners.json");
+    if (!fs.existsSync(p)) return null;
+    const raw = JSON.parse(fs.readFileSync(p, "utf-8"));
+    const banners: Banner2P[] = raw.banners || raw;
+    if (!banners.length) return null;
+
+    const slugBase = magazinSlug.split(".")[0].toLowerCase();
+
+    // Prefer 300x250 sau 300x600 — formate universale
+    const preferred = [300, 336];
+
+    // 1. Cauta banner al aceluiasi magazin (300x250 sau 300x600)
+    const own = banners.find(
+      (b) =>
+        (b.merchant_slug?.replace(/-ro$/, "") === slugBase ||
+          b.merchant?.split(".")[0].toLowerCase() === slugBase) &&
+        preferred.includes(b.width)
+    );
+    if (own) return own;
+
+    // 2. Banner de la alt magazin (evita conflicte cu merchantul curent)
+    const other = banners.find(
+      (b) =>
+        b.merchant_slug?.replace(/-ro$/, "") !== slugBase &&
+        b.merchant?.split(".")[0].toLowerCase() !== slugBase &&
+        preferred.includes(b.width) &&
+        b.image_url
+    );
+    if (other) return other;
+
+    // 3. Orice banner cu imagine
+    return banners.find((b) => b.image_url) || null;
+  } catch {
+    return null;
+  }
 }
 
 function loadBlogPost(magazinSlug: string): BlogPostMic | null {
@@ -244,6 +298,7 @@ export default async function PaginaMagazin({
 
   const produse = loadProducts(slug);
   const blogPost = loadBlogPost(slug);
+  const banner = loadBanner(slug);
 
   // Magazine similare din aceeasi categorie (max 8, prioritate la cele cu promotii)
   const RETELE_AFILIERE = ["profitshare.ro", "2performant.com"];
@@ -397,7 +452,7 @@ export default async function PaginaMagazin({
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(offerList) }} />
       )}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <MagazinClient magazin={m} produse={produse} similare={similare} blogPost={blogPost} />
+      <MagazinClient magazin={m} produse={produse} similare={similare} blogPost={blogPost} banner={banner} />
     </>
   );
 }
