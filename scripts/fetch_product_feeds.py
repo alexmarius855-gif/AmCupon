@@ -38,9 +38,10 @@ AFF_CODE        = os.environ.get("TWOPEFORMANT_USER", "541547473")
 AFFILIATE_EMAIL = os.environ.get("TWOPEFORMANT_EMAIL", "")
 AFFILIATE_PASS  = os.environ.get("TWOPEFORMANT_PASS", "")
 
-MAX_FEEDS             = 20     # max feed-uri de procesat
-MAX_PRODUCTS_PER_FEED = 3000   # max produse per feed
-MAX_TOTAL             = 30000  # max produse total (cu imagini prioritizate)
+MAX_FEEDS             = 25     # max feed-uri de procesat
+MAX_PRODUCTS_PER_FEED = 300    # max produse per feed — limitat pentru diversitate
+MAX_PER_MERCHANT      = 400    # max produse per merchant in output final
+MAX_TOTAL             = 6000   # max produse total
 DOWNLOAD_TIMEOUT      = 120    # secunde pentru download feed
 CHUNK_SIZE            = 1024 * 512  # 512KB per chunk
 
@@ -647,10 +648,13 @@ def main():
     print(f"  Feed-uri cu URL direct: {len(feeds_cu_url)}")
     print(f"  Feed-uri fara URL (vor folosi API fallback): {len(feeds_fara_url)}")
 
-    # Feed-uri cunoscute cu URL direct (fallback hardcodat daca API nu le returneaza)
+    # Feed-uri cunoscute cu URL direct (diverse categorii)
     KNOWN_FEEDS = [
         {"name": "libris.ro",      "url": "https://www.libris.ro/feed_2p-21220622?_uiAc=ODA4OA=="},
         {"name": "navstore.ro",    "url": "https://www.navstore.ro/feed/googleShoppingAds.xml"},
+        {"name": "elefant.ro",     "url": "https://www.elefant.ro/feed/google-shopping"},
+        {"name": "vidaxl.ro",      "url": "https://www.vidaxl.ro/feed/google"},
+        {"name": "noriel.ro",      "url": "https://www.noriel.ro/feed/google_shopping.xml"},
     ]
     slug_map_rev = {v: k for k, v in slug_map.items()}
     existing_names = {(f.get("name") or "").lower() for f, _ in feeds_cu_url}
@@ -664,8 +668,8 @@ def main():
                 "program": {"name": kf["name"], "slug": kf["name"].split(".")[0]},
             }, kf["url"]))
 
-    # Prioritizeaza feed-urile mari (libris, vidaxl, automobilus, ozone)
-    PRIORITATE = ["libris", "vidaxl", "ozone", "automobilus", "navstore", "bobaro"]
+    # Prioritizeaza diversitate de categorii
+    PRIORITATE = ["libris", "elefant", "vidaxl", "noriel", "ozone", "bobaro", "automobilus", "navstore"]
 
     def _priority(item):
         feed, furl = item
@@ -738,14 +742,34 @@ def main():
             all_products.extend(products)
             time.sleep(0.5)
 
-    # ── Sorteaza: produse cu imagini + discount mai sus ────────────────────────
-    def _sort_key(p):
-        has_img  = 1 if p.get("image") else 0
-        discount = p.get("discount_pct", 0) or 0
-        return (-has_img, -discount)
+    # ── Diversitate: max MAX_PER_MERCHANT per merchant ────────────────────────
+    import random
+    from collections import defaultdict
+    by_merchant: dict = defaultdict(list)
+    for p in all_products:
+        m = (p.get("merchant_slug") or p.get("merchant") or "alt").lower()
+        by_merchant[m].append(p)
 
-    all_products.sort(key=_sort_key)
+    # Cap per merchant + shuffle intern pentru varietate
+    capped = []
+    for m, prods in by_merchant.items():
+        # Prioritizeaza produsele cu imagini si discount
+        prods.sort(key=lambda x: (-int(bool(x.get("image"))), -(x.get("discount_pct") or 0)))
+        capped.extend(prods[:MAX_PER_MERCHANT])
+
+    # Shuffle final pentru distributie uniforma intre merchants
+    random.shuffle(capped)
+
+    # Sorteaza: produse cu discount real deasupra, restul random
+    cu_discount  = [p for p in capped if (p.get("discount_pct") or 0) > 0 and p.get("image")]
+    fara_discount = [p for p in capped if (p.get("discount_pct") or 0) == 0 and p.get("image")]
+    fara_imagine  = [p for p in capped if not p.get("image")]
+
+    all_products = cu_discount + fara_discount + fara_imagine
     all_products = all_products[:MAX_TOTAL]
+
+    merchants_finali = len(set((p.get("merchant_slug") or p.get("merchant","")).lower() for p in all_products))
+    print(f"  Diversitate finala: {merchants_finali} merchants distincti in {len(all_products)} produse")
 
     # ── Salveaza ──────────────────────────────────────────────────────────────
     os.makedirs(os.path.dirname(output_path), exist_ok=True)

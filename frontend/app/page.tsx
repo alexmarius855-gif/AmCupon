@@ -153,9 +153,35 @@ export default function Home() {
     fetch("/blog-posts.json").then(r => r.json()).then((posts: BlogPost[]) => setBlogPosts(posts.slice(0, 3))).catch(() => {});
     fetch("/products.json").then(r => r.json()).then(data => {
       const all = data?.products || data || [];
-      const cuImagine = all.filter((p: {image:string;price:number}) => p.image && p.price > 0);
-      const sortate = cuImagine.sort((a: {discount_pct:number}, b: {discount_pct:number}) => b.discount_pct - a.discount_pct);
-      setProduse(sortate.slice(0, 12));
+      type P = {title:string;url:string;image:string;price:number;old_price?:number;discount_pct:number;brand:string;merchant:string;merchant_slug:string;category:string};
+      const cuImagine = (all as P[]).filter(p => p.image && p.price > 0);
+      if (cuImagine.length === 0) return;
+
+      // Grupare per merchant
+      const byMerchant: Record<string, P[]> = {};
+      for (const p of cuImagine) {
+        const m = p.merchant_slug || p.merchant || "alt";
+        if (!byMerchant[m]) byMerchant[m] = [];
+        byMerchant[m].push(p);
+      }
+      const merchants = Object.keys(byMerchant);
+      // Cate produse per merchant: cel putin 1, max 12 daca e singur merchant
+      const perMerchant = Math.max(1, Math.ceil(12 / merchants.length));
+
+      // Ia primele perMerchant din fiecare merchant (sortate: discount > pret)
+      const pool: P[] = [];
+      for (const m of merchants) {
+        const sorted = [...byMerchant[m]].sort((a, b) =>
+          (b.discount_pct || 0) - (a.discount_pct || 0) || b.price - a.price
+        );
+        pool.push(...sorted.slice(0, perMerchant));
+      }
+      // Shuffle pentru varietate vizuala
+      for (let i = pool.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [pool[i], pool[j]] = [pool[j], pool[i]];
+      }
+      setProduse(pool.slice(0, 12));
     }).catch(() => {});
     fetch("/banners.json").then(r => r.json()).then(data => {
       const list: Banner[] = data?.banners || data || [];
