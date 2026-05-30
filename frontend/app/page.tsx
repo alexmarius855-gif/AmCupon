@@ -207,6 +207,7 @@ export default function Home() {
     navigator.clipboard.writeText(cod).catch(() => {});
     setCopiat(id);
     setTimeout(() => setCopiat(null), 3000);
+    trackAfiliat("copiere_cod_homepage", id, cod);
   }
 
   return (
@@ -1359,6 +1360,21 @@ function socialProof(magazin: string): { vizualizari: number; activi: number } {
   const base = 28 + (h1 % 84);
   const factor = [0.6, 0.75, 0.85, 0.95, 1.1, 1.45, 1.25][new Date().getDay()];
   return { vizualizari: Math.round(base * factor), activi: 2 + (h2 % 7) };
+}
+
+/* ─── GA4 AFFILIATE TRACKING ─────────────────────────────────────────────── */
+function trackAfiliat(tip: string, magazin: string, cod?: string) {
+  try {
+    if (typeof window !== "undefined" && (window as unknown as {gtag?: (...a: unknown[]) => void}).gtag) {
+      (window as unknown as {gtag: (...a: unknown[]) => void}).gtag("event", "affiliate_click", {
+        event_category: "afiliere",
+        event_label: magazin,
+        affiliate_type: tip,
+        coupon_code: cod || "",
+        value: 1,
+      });
+    }
+  } catch {}
 }
 
 /* ─── CASHBACK HELPER ────────────────────────────────────────────────────── */

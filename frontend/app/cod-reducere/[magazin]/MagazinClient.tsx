@@ -197,6 +197,22 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
     navigator.clipboard.writeText(cod).catch(() => {});
     setCopiat(idx);
     setTimeout(() => setCopiat(null), 3000);
+    trackClick("copiere_cod", m.magazin, cod);
+  }
+
+
+  function trackClick(tip: string, magazinSlug: string, cod?: string) {
+    try {
+      if (typeof window !== "undefined" && (window as unknown as {gtag?: (...args: unknown[]) => void}).gtag) {
+        (window as unknown as {gtag: (...args: unknown[]) => void}).gtag("event", "affiliate_click", {
+          event_category: "afiliere",
+          event_label: magazinSlug,
+          affiliate_type: tip,
+          coupon_code: cod || "",
+          value: 1,
+        });
+      }
+    } catch {}
   }
 
   // Tab-uri cu count-uri
@@ -279,6 +295,15 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                     ↑ Trending +{m.trend}%
                   </div>
                 )}
+                {m.comision && (() => {
+                  const nums = m.comision.match(/[\d.]+/g)?.map(Number) ?? [];
+                  const max = nums.length ? Math.max(...nums) : 0;
+                  return max > 0 ? (
+                    <div className="flex items-center gap-1.5 bg-teal-500/10 border border-teal-500/20 text-teal-400 text-xs font-bold px-3 py-1.5 rounded-full">
+                      💰 Cashback pana la {max}%
+                    </div>
+                  ) : null;
+                })()}
                 <div className="flex items-center gap-1.5 bg-slate-700/60 border border-slate-600 text-slate-300 text-xs font-semibold px-3 py-1.5 rounded-full">
                   👁 {vizualizariAzi} vizualizari azi
                 </div>
@@ -289,7 +314,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
               </div>
 
               <a href={m.url_afiliat || m.url} target="_blank" rel="sponsored noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-400 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-colors shadow-lg shadow-orange-500/25">
+                className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-400 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-colors shadow-lg shadow-orange-500/25" onClick={() => trackClick("vizita_magazin", m.magazin)}>
                 Viziteaza {nume}
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
@@ -369,7 +394,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                                   {isCopiat && <p className="text-xs text-green-600 mt-0.5">✓ Copiat!</p>}
                                 </div>
                                 <a href={link} target="_blank" rel="sponsored noopener noreferrer"
-                                  className="flex items-center justify-center w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 rounded-xl text-sm transition-colors">
+                                  className="flex items-center justify-center w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 rounded-xl text-sm transition-colors" onClick={() => trackClick("cod", m.magazin, promo.cod_cupon)}>
                                   Mergi la magazin →
                                 </a>
                               </div>
