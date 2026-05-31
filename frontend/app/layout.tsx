@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
@@ -56,10 +56,16 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: "/logo-profile.svg", type: "image/svg+xml" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
     ],
-    apple: "/logo-profile.svg",
+    apple: "/icon-192.png",
     shortcut: "/logo-profile.svg",
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#f97316",
+  colorScheme: "light dark",
 };
 
 const siteJsonLd = {
