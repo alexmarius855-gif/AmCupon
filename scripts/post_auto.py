@@ -124,28 +124,54 @@ POSTAREA:"""
         return json.loads(r.read())["response"].strip()
 
 
-def posteaza(text, link):
-    if PAGE_TOKEN == "PUNE_TOKENUL_TAU_AICI":
-        print("\n  ⚠️  Token lipsa — adauga PAGE_TOKEN in post_auto.py\n")
-        return False
-    payload = urllib.parse.urlencode({
-        "message": text,
-        "link": link,
-        "access_token": PAGE_TOKEN
-    }).encode()
-    req = urllib.request.Request(
-        f"https://graph.facebook.com/v19.0/{PAGE_ID}/feed",
-        data=payload,
-        method="POST"
-    )
+def copiaza_clipboard(text):
+    """Copiaza textul in clipboard pe Windows."""
     try:
-        with urllib.request.urlopen(req, timeout=20) as r:
-            res = json.loads(r.read())
-        print(f"  ✅ POSTAT! ID: {res.get('id')}")
+        import subprocess
+        proc = subprocess.Popen(['clip'], stdin=subprocess.PIPE, close_fds=True)
+        proc.communicate(input=text.encode('utf-8'))
         return True
-    except urllib.error.HTTPError as e:
-        print(f"  ❌ Eroare: {e.read().decode()[:200]}")
+    except Exception as e:
+        print(f"  ⚠️  Clipboard error: {e}")
         return False
+
+
+def deschide_facebook():
+    """Deschide pagina Facebook in browser."""
+    import webbrowser
+    webbrowser.open("https://www.facebook.com/people/AmCuponro/61590235029734")
+
+
+def posteaza(text, link):
+    # Incearca API daca token e setat
+    if PAGE_TOKEN != "PUNE_TOKENUL_TAU_AICI":
+        payload = urllib.parse.urlencode({
+            "message": text,
+            "link": link,
+            "access_token": PAGE_TOKEN
+        }).encode()
+        req = urllib.request.Request(
+            f"https://graph.facebook.com/v19.0/{PAGE_ID}/feed",
+            data=payload,
+            method="POST"
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=20) as r:
+                res = json.loads(r.read())
+            print(f"  ✅ POSTAT AUTOMAT! ID: {res.get('id')}")
+            return True
+        except urllib.error.HTTPError as e:
+            print(f"  ❌ API Error: {e.read().decode()[:200]}")
+
+    # Fallback: clipboard + deschide browser
+    print("\n  📋 Copiez postarea in clipboard...")
+    copiaza_clipboard(text + f"\n\n{link}")
+    print("  ✅ Copiat in clipboard!")
+    print("  🌐 Deschid Facebook in browser...")
+    deschide_facebook()
+    print("\n  👉 Click pe 'La ce te gandesti?' si apasa CTRL+V")
+    print("  👉 Apoi click PUBLICA\n")
+    return True
 
 
 def salveaza_log(tip, text):
