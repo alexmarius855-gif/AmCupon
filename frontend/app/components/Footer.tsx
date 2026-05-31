@@ -112,6 +112,34 @@ export default function Footer() {
   return (
     <footer className="bg-[#070a0f] text-slate-400 border-t border-slate-800/60 mt-auto">
 
+      {/* Facebook Follow banner */}
+      <div className="border-b border-slate-800/60 bg-[#1877F2]/10">
+        <div className="max-w-7xl mx-auto px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-[#1877F2] flex items-center justify-center shrink-0">
+              <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+              </svg>
+            </div>
+            <div>
+              <p className="text-white font-bold text-sm">Urmareste AmCupon.ro pe Facebook</p>
+              <p className="text-slate-400 text-xs">Oferte zilnice, coduri exclusive si concursuri</p>
+            </div>
+          </div>
+          <a
+            href="https://www.facebook.com/people/AmCuponro/61590235029734"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="shrink-0 flex items-center gap-2 bg-[#1877F2] hover:bg-[#1565d8] text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-colors"
+          >
+            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+            </svg>
+            Da Like paginii
+          </a>
+        </div>
+      </div>
+
       {/* Newsletter banner */}
       <div className="border-b border-slate-800/60">
         <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col sm:flex-row items-center justify-between gap-6">
