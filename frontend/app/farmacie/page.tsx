@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: "Coduri de reducere farmacie online România: Dr. Max, Vegis, Catena, Sensiblu. Suplimente, medicamente OTC, cosmetice medicale la prețuri reduse. Livrare rapidă.",
   keywords: ["farmacie online", "cod reducere dr max", "reduceri vegis", "suplimente ieftine", "medicamente online romania", "farmacie reducere", "catena online"],
   alternates: { canonical: "https://amcupon.ro/farmacie" },
-  openGraph: { title: "Farmacie Online cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/farmacie", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
+  openGraph: { title: "Farmacie Online cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/farmacie", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
 const TOP_PHARMA = ["drmax.ro","vegis.ro","catena.ro","helpnet.ro","farmaciatei.ro","farmacia.ro"];

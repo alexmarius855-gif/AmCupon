@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: "Coduri de reducere casa si gradina Romania: Dedeman, IKEA, Leroy Merlin, Mobexpert, Jysk. Mobila, decoratiuni, gradina, electrocasnice mari la preturi reduse. Verificate zilnic.",
   keywords: ["cod reducere dedeman","reduceri ikea","mobila ieftina","cod reducere leroy merlin","mobexpert reducere","casa gradina reducere romania","electrocasnice reducere"],
   alternates: { canonical: "https://amcupon.ro/casa" },
-  openGraph: { title: "Casa & Gradina cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/casa", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
+  openGraph: { title: "Casa & Gradina cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/casa", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
 const TOP_CASA = ["dedeman.ro","ikea.com","leroy-merlin.ro","mobexpert.ro","jysk.ro","hornbach.ro","kika.ro","someproducts.ro"];

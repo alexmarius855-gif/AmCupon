@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: "Coduri de reducere electronice România: eMag, Altex, PCGarage, Flanco, Cel.ro. Telefoane, laptopuri, TV, gaming la prețuri reduse. Verificate zilnic.",
   keywords: ["cod reducere emag", "reduceri altex", "electronice ieftine", "cod reducere pcgarage", "laptop reducere", "telefon reducere romania", "electronice online"],
   alternates: { canonical: "https://amcupon.ro/electronice" },
-  openGraph: { title: "Electronice cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/electronice", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
+  openGraph: { title: "Electronice cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/electronice", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
 const TOP_TECH = ["emag.ro","altex.ro","pcgarage.ro","flanco.ro","cel.ro","mediagalaxy.ro","evomag.ro","vexio.ro"];

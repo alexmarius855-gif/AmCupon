@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: "Coduri de reducere fashion Romania: FashionDays, Answear, H&M, Reserved, About You, Zara. Haine, pantofi, accesorii la preturi reduse. Verificate zilnic.",
   keywords: ["cod reducere fashiondays","reduceri answear","haine ieftine online","cod reducere hm","reserved reducere","fashion online romania","imbracaminte reducere"],
   alternates: { canonical: "https://amcupon.ro/fashion" },
-  openGraph: { title: "Fashion & Haine cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/fashion", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
+  openGraph: { title: "Fashion & Haine cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/fashion", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
 const TOP_FASHION = ["fashiondays.ro","answear.ro","hm.com","reserved.com","about-you.ro","lc-waikiki.ro","zara.com","peek-cloppenburg.ro"];

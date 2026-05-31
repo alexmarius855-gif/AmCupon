@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: "Idei de cadouri pentru orice ocazie: ziua de naștere, aniversare, Crăciun, Valentine's Day. Coduri de reducere verificate la jucării, fashion, beauty, electronice și bijuterii.",
   keywords: ["idei cadouri", "cadouri reducere", "cadou ziua nasterii", "cadou craciun", "cadouri online ieftine", "voucher cadou romania", "cod reducere cadouri"],
   alternates: { canonical: "https://amcupon.ro/idei-cadouri" },
-  openGraph: { title: "Idei Cadouri cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/idei-cadouri", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
+  openGraph: { title: "Idei Cadouri cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/idei-cadouri", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
 const TOP_CADOURI = [

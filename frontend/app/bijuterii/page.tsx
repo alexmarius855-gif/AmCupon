@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: "Coduri de reducere bijuterii Romania: Bijuteria Stef, Teilor, Swarovski, Pandora, Joyeria. Aur, argint, cristale, inele, bratari si coliere la preturi mici.",
   keywords: ["cod reducere bijuterii","reduceri aur","argint reducere","pandora cod cupon","teilor reducere","bijuterii online romania","inele reducere"],
   alternates: { canonical: "https://amcupon.ro/bijuterii" },
-  openGraph: { title: "Bijuterii cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/bijuterii", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
+  openGraph: { title: "Bijuterii cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/bijuterii", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
 const TOP_BIJUTERII = ["teilor.ro","bijuteriistef.ro","joyeria.ro","glamira.ro","pandora.net","swarovski.com","bijuteriionline.ro","argintart.ro"];

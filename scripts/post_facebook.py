@@ -2,18 +2,18 @@
 Postare automata pe Facebook Page via Meta Graph API.
 
 Env vars necesare (GitHub Secrets):
-  FACEBOOK_PAGE_ID     -- ID-ul paginii tale de Facebook (ex: 123456789)
+  FACEBOOK_PAGE_ID     -- ID-ul paginii tale de Facebook (ex: 1080299791844588)
   FACEBOOK_PAGE_TOKEN  -- Page Access Token cu permisiunea pages_manage_posts
 
 Cum obtii token-ul (o singura data):
-  1. Mergi la developers.facebook.com → My Apps → Create App → Business
-  2. Adauga produsul "Facebook Login"
-  3. In Graph API Explorer: selecteaza app + pagina ta
-  4. Genereaza token cu: pages_manage_posts, pages_read_engagement
-  5. Extinde token-ul la "Long-lived" (60 zile) cu /oauth/access_token
-  6. Sau foloseste token permanent de pagina din Business Suite
+  1. Mergi la business.facebook.com → Settings → Pages → Selecteaza pagina
+  2. Click "Page Access Tokens" → Copy token
+  3. Sau: developers.facebook.com → Graph API Explorer → selecteaza pagina
+     → genereaza cu: pages_manage_posts, pages_read_engagement
+  4. Adauga in GitHub Secrets: FACEBOOK_PAGE_TOKEN
 
-Output: posteaza top 5 oferte zilnice cu link catre amcupon.ro
+Ruleaza zilnic la 08:00 Romania (06:00 UTC) via GitHub Actions.
+Posteaza: 1 post tematic zilnic (ocazie / zi saptamana / promotii top).
 """
 
 import json
@@ -22,7 +22,8 @@ import sys
 import urllib.request
 import urllib.error
 import urllib.parse
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
+import random
 
 if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
     try:
@@ -42,24 +43,36 @@ OUTPUT_JSON = os.path.join(os.path.dirname(__file__), "../frontend/public/output
 LUNI_RO = ["ianuarie","februarie","martie","aprilie","mai","iunie",
            "iulie","august","septembrie","octombrie","noiembrie","decembrie"]
 
+ZILE_RO = ["luni","marti","miercuri","joi","vineri","sambata","duminica"]
+
 NISE_LABEL = {
-    "fashion":             "👗 Fashion & Îmbrăcăminte",
-    "beauty":              "💄 Frumusețe & Cosmetice",
-    "pharma":              "💊 Farmacie & Sănătate",
-    "electronics-itc":     "📱 Electronice & IT",
-    "sports-outdoors":     "🏋️ Sport & Fitness",
-    "home-garden":         "🏠 Casă & Grădină",
-    "babies-kids-toys":    "🧸 Copii & Jucării",
-    "automotive":          "🚗 Auto & Moto",
-    "books":               "📚 Cărți & Educație",
-    "hypermarket-groceries":"🛒 Supermarket & Grocery",
-    "travel":              "✈️ Călătorii",
-    "gifts-flowers":       "🎁 Cadouri & Flori",
+    "fashion":              "👗 Fashion & Imbracaminte",
+    "beauty":               "💄 Frumusete & Cosmetice",
+    "pharma":               "💊 Farmacie & Sanatate",
+    "electronics-itc":      "📱 Electronice & IT",
+    "sports-outdoors":      "🏋 Sport & Fitness",
+    "home-garden":          "🏠 Casa & Gradina",
+    "babies-kids-toys":     "🧸 Copii & Jucarii",
+    "automotive":           "🚗 Auto & Moto",
+    "books":                "📚 Carti & Educatie",
+    "hypermarket-groceries":"🛒 Supermarket",
+    "travel":               "✈ Calatorii",
+    "gifts-flowers":        "🎁 Cadouri & Flori",
+    "pet-supplies":         "🐾 Animale de companie",
+}
+
+# Ocazii speciale luna → (zi, titlu, emoji, categorie_hint)
+OCAZII = {
+    (6, 1):  ("Ziua Copilului", "🎈", "babies-kids-toys"),
+    (6, 5):  ("Ziua Mediului", "🌿", None),
+    (2, 14): ("Valentine's Day", "💝", "gifts-flowers"),
+    (3, 8):  ("8 Martie", "🌸", "beauty"),
+    (12, 6): ("Ziua Nationala", "🇷🇴", None),
+    (11, 11):("Singles Day", "🛒", None),
 }
 
 
 def get_best_promo(m: dict) -> dict:
-    """Returneaza cea mai buna promotie activa (cu cod preferential)."""
     promotii = [p for p in m.get("promotii", []) if p.get("zile_ramase", -1) >= 0]
     if not promotii:
         return {}
@@ -67,29 +80,11 @@ def get_best_promo(m: dict) -> dict:
     return cu_cod[0] if cu_cod else promotii[0]
 
 
-def pick_top5(magazine: list[dict]) -> list[dict]:
-    """Selecteaza top 5 magazine cu promotii active (structura reala output.json)."""
-    def are_promo_activa(m):
-        return any(p.get("zile_ramase", -1) >= 0 for p in m.get("promotii", []))
-    def are_cod_activ(m):
-        return any(p.get("cod_cupon") and p.get("zile_ramase", -1) >= 0
-                   for p in m.get("promotii", []))
-
-    cu_cod   = [m for m in magazine if are_cod_activ(m)]
-    fara_cod = [m for m in magazine if are_promo_activa(m) and not are_cod_activ(m)]
-    cu_cod.sort(  key=lambda x: -x.get("scor_final", 0))
-    fara_cod.sort(key=lambda x: -x.get("scor_final", 0))
-    combined = cu_cod[:5]
-    if len(combined) < 5:
-        combined += fara_cod[:5 - len(combined)]
-    return combined[:5]
-
-
-def format_discount(m: dict) -> str:
+def format_discount(m: dict, max_len: int = 70) -> str:
     import re
     promo = get_best_promo(m)
     if promo.get("nume"):
-        return promo["nume"][:80]
+        return promo["nume"][:max_len]
     c = m.get("comision", "")
     nums = [float(x) for x in re.findall(r"[\d.]+", c)]
     if nums:
@@ -97,56 +92,155 @@ def format_discount(m: dict) -> str:
     return "Oferta speciala"
 
 
-def build_post_text(top5: list[dict], data_str: str) -> str:
+def pick_top(magazine: list[dict], n: int = 5, categorie: str = None) -> list[dict]:
+    """Selecteaza top N magazine cu promotii active, optional filtrate pe categorie."""
+    def are_promo(m):
+        return any(p.get("zile_ramase", -1) >= 0 for p in m.get("promotii", []))
+    def are_cod(m):
+        return any(p.get("cod_cupon") and p.get("zile_ramase", -1) >= 0
+                   for p in m.get("promotii", []))
+
+    pool = [m for m in magazine if are_promo(m)]
+    if categorie:
+        pool_cat = [m for m in pool if m.get("categorie_slug") == categorie]
+        if len(pool_cat) >= 3:
+            pool = pool_cat
+
+    cu_cod   = sorted([m for m in pool if are_cod(m)],   key=lambda x: -x.get("scor_final", 0))
+    fara_cod = sorted([m for m in pool if not are_cod(m)],key=lambda x: -x.get("scor_final", 0))
+    combined = cu_cod[:n]
+    if len(combined) < n:
+        combined += fara_cod[:n - len(combined)]
+    return combined[:n]
+
+
+# ── Generatoare de posturi tematice ─────────────────────────────────────────
+
+def post_ocazie(top: list[dict], titlu: str, emoji: str, data_str: str) -> str:
+    """Post special pentru o ocazie (1 Iunie, 8 Martie etc.)"""
     lines = [
-        f"🏷️ TOP 5 OFERTE AZI — {data_str}",
-        f"Coduri verificate pe AmCupon.ro\n",
+        f"{emoji} {titlu.upper()} — reduceri speciale!",
+        "",
+        f"De {titlu}, magazinele online te asteapta cu oferte:",
+        "",
     ]
-    for i, m in enumerate(top5, 1):
+    for m in top[:4]:
         name  = m["magazin"].split(".")[0].capitalize()
         promo = get_best_promo(m)
         cod   = promo.get("cod_cupon", "")
-        url   = m.get("url_afiliat") or m.get("url", SITE_URL)
-        disc  = format_discount(m)
+        disc  = format_discount(m, 65)
+        line  = f"{emoji} {name} — {disc}"
+        if cod:
+            line += f"\n   Cod: {cod}"
+        lines.append(line)
+        lines.append("")
+
+    lines += [
+        f"Toate ofertele verificate: {SITE_URL}",
+        "",
+        f"#reduceri #codreducere #{titlu.replace(' ', '')} #romania #amcupon",
+    ]
+    return "\n".join(lines)
+
+
+def post_weekend(top: list[dict], data_str: str) -> str:
+    """Post special pentru weekend (sambata/duminica)."""
+    intro_options = [
+        "Weekend-ul e mai frumos cu o cumparatura inteligenta!",
+        "Ce faci in weekend? Noi am gasit cele mai bune oferte active!",
+        "Weekend de shopping? Iata ce merita atentie azi:",
+    ]
+    lines = [
+        f"🛍 OFERTE DE WEEKEND — {data_str}",
+        "",
+        random.choice(intro_options),
+        "",
+    ]
+    for i, m in enumerate(top[:5], 1):
+        name  = m["magazin"].split(".")[0].capitalize()
+        promo = get_best_promo(m)
+        cod   = promo.get("cod_cupon", "")
+        disc  = format_discount(m, 65)
+        slug  = m.get("magazin", "")
+        line  = f"{i}. {name} — {disc}"
+        if cod:
+            line += f" (cod: {cod})"
+        lines.append(line)
+
+    lines += [
+        "",
+        f"Cauta orice magazin sau cod pe: {SITE_URL}",
+        "",
+        "#weekend #reduceri #shoppingonline #codreducere #romania #amcupon",
+    ]
+    return "\n".join(lines)
+
+
+def post_zi_saptamana(top: list[dict], zi: str, data_str: str) -> str:
+    """Post standard pentru zilele de luni-vineri."""
+    zi_cap = zi.capitalize()
+    opening = {
+        "luni":     f"Incepe saptamana cu economii! Ofertele zilei de {zi_cap}:",
+        "marti":    f"Marti productiv = cumparaturi inteligente. Top oferte azi:",
+        "miercuri": f"Mijlocul saptamanii — moment bun pentru o oferta buna:",
+        "joi":      f"Joi vine cu reduceri! Iata ce am gasit pentru tine:",
+        "vineri":   f"TGIF! Vinerea asta economisesti cu aceste oferte:",
+    }
+    lines = [
+        f"🏷 TOP OFERTE {zi_cap.upper()} — {data_str}",
+        "",
+        opening.get(zi, f"Ofertele zilei de {zi_cap}:"),
+        "",
+    ]
+    for i, m in enumerate(top[:5], 1):
+        name  = m["magazin"].split(".")[0].capitalize()
+        promo = get_best_promo(m)
+        cod   = promo.get("cod_cupon", "")
+        disc  = format_discount(m, 65)
         line  = f"{i}. {name} — {disc}"
         if cod:
             line += f"\n   Cod: {cod}"
         lines.append(line)
 
     lines += [
-        f"\n👉 Toate codurile: {SITE_URL}",
-        "\n#codreducere #reduceri #shopping #romania #voucher #economii #amcupon",
+        "",
+        f"Toate codurile verificate pe: {SITE_URL}/oferte-azi",
+        "",
+        "#reduceri #codreducere #shoppingonline #economii #romania #amcupon",
     ]
     return "\n".join(lines)
 
 
-def build_nisa_post(nisa: str, magazine_nisa: list[dict], data_str: str) -> str:
+def post_nisa(nisa: str, top: list[dict], data_str: str) -> str:
+    """Post dedicat unei nise (fashion, sport, farmacie etc.)"""
     label = NISE_LABEL.get(nisa, nisa.title())
-    top3  = magazine_nisa[:3]
     lines = [
         f"{label} — Oferte active {data_str}",
         "",
     ]
-    for m in top3:
+    for m in top[:4]:
         name  = m["magazin"].split(".")[0].capitalize()
         promo = get_best_promo(m)
         cod   = promo.get("cod_cupon", "")
         slug  = m.get("magazin", "")
-        disc  = format_discount(m)
-        line  = f"• {name}: {disc[:60]}"
+        disc  = format_discount(m, 60)
+        line  = f"• {name}: {disc}"
         if cod:
-            line += f" (cod: {cod})"
+            line += f" — cod: {cod}"
         lines.append(line)
-        lines.append(f"  → {SITE_URL}/cod-reducere/{slug}")
+        lines.append(f"  {SITE_URL}/cod-reducere/{slug}")
         lines.append("")
 
+    cat_slug = nisa
     lines += [
-        f"Cauta toate ofertele pe {SITE_URL}",
+        f"Mai multe oferte: {SITE_URL}/categorii/{cat_slug}",
         "",
-        "#reduceri #codreducere #romania #shopping #economii #amcupon",
+        f"#reduceri #codreducere #romania #{nisa.replace('-', '')} #amcupon",
     ]
     return "\n".join(lines)
 
+
+# ── Post to Facebook ─────────────────────────────────────────────────────────
 
 def post_to_facebook(message: str, link: str = "") -> dict:
     if not PAGE_ID or not PAGE_TOKEN:
@@ -161,14 +255,14 @@ def post_to_facebook(message: str, link: str = "") -> dict:
     if link:
         payload["link"] = link
 
-    data     = urllib.parse.urlencode(payload).encode("utf-8")
-    req      = urllib.request.Request(endpoint, data=data, method="POST")
+    data = urllib.parse.urlencode(payload).encode("utf-8")
+    req  = urllib.request.Request(endpoint, data=data, method="POST")
     req.add_header("Content-Type", "application/x-www-form-urlencoded")
 
     try:
         with urllib.request.urlopen(req, timeout=20) as resp:
             result = json.loads(resp.read())
-        print(f"  Postat ✓ — post id: {result.get('id', '?')}")
+        print(f"  Postat cu succes — post id: {result.get('id', '?')}")
         return result
     except urllib.error.HTTPError as e:
         body = e.read().decode("utf-8", errors="replace")
@@ -178,6 +272,8 @@ def post_to_facebook(message: str, link: str = "") -> dict:
         print(f"  Eroare: {e}")
         return {}
 
+
+# ── Main ─────────────────────────────────────────────────────────────────────
 
 def main():
     if not PAGE_ID or not PAGE_TOKEN:
@@ -191,8 +287,12 @@ def main():
     with open(OUTPUT_JSON, encoding="utf-8") as f:
         magazine = json.load(f)
 
-    now      = datetime.now(timezone.utc)
-    data_str = f"{now.day} {LUNI_RO[now.month - 1]} {now.year}"
+    # ora Romaniei (+3 in vara)
+    now_ro   = datetime.now(timezone.utc) + timedelta(hours=3)
+    zi_idx   = now_ro.weekday()          # 0=luni … 6=duminica
+    zi_name  = ZILE_RO[zi_idx]
+    data_str = f"{now_ro.day} {LUNI_RO[now_ro.month - 1]} {now_ro.year}"
+    luna_zi  = (now_ro.month, now_ro.day)
 
     valide = [
         m for m in magazine
@@ -201,31 +301,53 @@ def main():
         and " " not in m.get("magazin", "")
     ]
 
-    # ── 1. Post general top 5 ─────────────────────────────────────────────────
-    top5    = pick_top5(valide)
-    message = build_post_text(top5, data_str)
-    print("Post general top 5:")
-    print(message[:200], "...\n")
-    post_to_facebook(message, SITE_URL)
+    posted = 0
 
-    # ── 2. Post per nisa (primele 3 nise active) ──────────────────────────────
-    nise_active = {}
-    for m in valide:
-        nisa = m.get("categorie_slug", "")
-        if nisa and nisa in NISE_LABEL:
-            nise_active.setdefault(nisa, []).append(m)
+    # ── 1. Ocazie speciala ────────────────────────────────────────────────────
+    if luna_zi in OCAZII:
+        titlu, emoji, cat_hint = OCAZII[luna_zi]
+        top = pick_top(valide, n=4, categorie=cat_hint)
+        msg = post_ocazie(top, titlu, emoji, data_str)
+        link = f"{SITE_URL}/categorii/{cat_hint}" if cat_hint else SITE_URL
+        print(f"Post ocazie: {titlu}")
+        print(msg[:300], "...\n")
+        post_to_facebook(msg, link)
+        posted += 1
 
-    # sorteaza nisa dupa nr magazine, ia top 3 nise
-    top_nise = sorted(nise_active.items(), key=lambda x: -len(x[1]))[:3]
+    # ── 2. Post principal zilnic ──────────────────────────────────────────────
+    top5 = pick_top(valide, n=5)
+    if zi_idx in (5, 6):  # sambata, duminica
+        msg  = post_weekend(top5, data_str)
+        link = f"{SITE_URL}/oferte-azi"
+    else:
+        msg  = post_zi_saptamana(top5, zi_name, data_str)
+        link = f"{SITE_URL}/oferte-azi"
 
-    for nisa, mag_list in top_nise:
-        mag_list.sort(key=lambda x: -x.get("scor_final", 0))
-        msg = build_nisa_post(nisa, mag_list, data_str)
-        print(f"Post nisa {nisa}:")
-        print(msg[:150], "...\n")
-        post_to_facebook(msg, f"{SITE_URL}/categorii/{nisa}")
+    print(f"Post principal ({zi_name}):")
+    print(msg[:300], "...\n")
+    post_to_facebook(msg, link)
+    posted += 1
 
-    print(f"\nFacebook: 1 post general + {len(top_nise)} posturi nisa publicate ✓")
+    # ── 3. Post nisa (rotatie zilnica: luni=fashion, marti=beauty etc.) ───────
+    nise_rotatie = [
+        "fashion", "beauty", "sports-outdoors", "pharma",
+        "electronics-itc", "home-garden", "babies-kids-toys",
+    ]
+    nisa_azi = nise_rotatie[zi_idx % len(nise_rotatie)]
+
+    # verifica daca avem magazine in nisa asta
+    top_nisa = pick_top(valide, n=4, categorie=nisa_azi)
+    top_nisa_filtrat = [m for m in top_nisa if m.get("categorie_slug") == nisa_azi]
+
+    if len(top_nisa_filtrat) >= 2:
+        msg_nisa  = post_nisa(nisa_azi, top_nisa_filtrat, data_str)
+        link_nisa = f"{SITE_URL}/categorii/{nisa_azi}"
+        print(f"Post nisa ({nisa_azi}):")
+        print(msg_nisa[:200], "...\n")
+        post_to_facebook(msg_nisa, link_nisa)
+        posted += 1
+
+    print(f"\nFacebook: {posted} posturi publicate pe {data_str} ✓")
 
 
 if __name__ == "__main__":

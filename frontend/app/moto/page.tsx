@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: "Coduri de reducere auto și moto verificate: piese auto, accesorii mașini, echipamente moto, anvelope, uleiuri. Magazine partenere verificate zilnic pe AmCupon.ro.",
   keywords: ["cod reducere auto", "reducere piese auto", "accesorii moto reducere", "anvelope reducere", "cod reducere moto", "magazin auto online reducere"],
   alternates: { canonical: "https://amcupon.ro/moto" },
-  openGraph: { title: "Auto-Moto — Coduri Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/moto", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
+  openGraph: { title: "Auto-Moto — Coduri Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/moto", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
 const MOTO_SLUGS = ["autonom.ro", "autodoc.ro", "kfzteile24.ro", "americanexpress.ro"];

@@ -137,6 +137,7 @@ export async function generateMetadata({
       siteName: "AmCupon.ro",
       locale: "ro_RO",
       type: "website",
+      images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }],
     },
   };
 }

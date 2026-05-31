@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: "Gadgets, smartwatch-uri, căști wireless, smart home, drone și accesorii tech — coduri de reducere verificate pentru tot ce e nou și interesant în tech.",
   keywords: ["gadgets reducere", "smartwatch ieftin", "casti wireless reducere", "drone reducere", "smart home romania", "accesorii tech cod reducere"],
   alternates: { canonical: "https://amcupon.ro/gadgets" },
-  openGraph: { title: "Gadgets & Tech — Coduri Reducere | AmCupon.ro", url: "https://amcupon.ro/gadgets", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
+  openGraph: { title: "Gadgets & Tech — Coduri Reducere | AmCupon.ro", url: "https://amcupon.ro/gadgets", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
 const GADGET_SLUGS = ["emag.ro", "altex.ro", "flanco.ro", "elefant.ro", "quickmobile.ro", "cel.ro", "pcgarage.ro", "evomag.ro"];

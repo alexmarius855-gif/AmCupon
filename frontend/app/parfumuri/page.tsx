@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: "Coduri de reducere parfumuri România: Douglas, Notino, Sephora, Makeup. Parfumuri originale, cosmetice, skincare la prețuri reduse. Verificate zilnic.",
   keywords: ["cod reducere parfumuri", "reduceri douglas", "parfumuri ieftine", "cod reducere notino", "sephora reducere", "parfumuri originale romania", "cosmetice reducere"],
   alternates: { canonical: "https://amcupon.ro/parfumuri" },
-  openGraph: { title: "Parfumuri cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/parfumuri", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
+  openGraph: { title: "Parfumuri cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/parfumuri", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
 const TOP_BEAUTY = ["douglas.ro","notino.ro","sephora.ro","makeup.ro","marionnaud.ro","kiehl.ro","parfumexpress.ro"];

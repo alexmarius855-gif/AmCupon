@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: "Coduri de reducere cărți online România: Libris, Elefant, Carturesti, eMag Books. Cărți, audiobook-uri, e-book-uri la prețuri reduse. Verificate zilnic.",
   keywords: ["cod reducere carti", "reduceri libris", "carti ieftine online", "cod reducere elefant", "carturesti reducere", "carti online romania", "audiobook reducere"],
   alternates: { canonical: "https://amcupon.ro/carti" },
-  openGraph: { title: "Cărți Online cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/carti", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
+  openGraph: { title: "Cărți Online cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/carti", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
 const TOP_BOOKS = ["libris.ro","elefant.ro","carturesti.ro","librarie.net","bookhub.ro"];

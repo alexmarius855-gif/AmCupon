@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: "Coduri reducere magazine copii 2026: Noriel, eMAG, FashionDays Copii, H&M Kids. Jucării, haine, cărucioare, scaune auto — la prețuri reduse.",
   keywords: ["reduceri jucarii", "cod reducere noriel", "haine copii reducere", "jucarii ieftine online", "emag copii reducere", "carucior reducere", "scaun auto copil reducere"],
   alternates: { canonical: "https://amcupon.ro/copii" },
-  openGraph: { title: "Reduceri Copii & Jucării 2026 | AmCupon.ro", url: "https://amcupon.ro/copii", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
+  openGraph: { title: "Reduceri Copii & Jucării 2026 | AmCupon.ro", url: "https://amcupon.ro/copii", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
 const TOP_COPII = ["noriel.ro","emag.ro","smythstoys.com","bebetei.ro","bebe-tei.ro","mothercare.ro","chicco.ro"];

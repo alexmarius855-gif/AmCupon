@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: "Coduri de reducere supermarket online Romania: Carrefour, Kaufland, Auchan, Bringo, Freshful. Alimente, bauturi, produse de casa la preturi mici. Livrare la domiciliu.",
   keywords: ["cod reducere carrefour","reduceri kaufland","auchan cod cupon","bringo reducere","supermarket online romania","alimente ieftine","livrare mancare reducere"],
   alternates: { canonical: "https://amcupon.ro/supermarket" },
-  openGraph: { title: "Supermarket Online cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/supermarket", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
+  openGraph: { title: "Supermarket Online cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/supermarket", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
 const TOP_SUPERMARKET = ["carrefour.ro","bringo.ro","freshful.ro","auchan.ro","kaufland.ro","emag.ro","glovo.ro","tazz.ro"];

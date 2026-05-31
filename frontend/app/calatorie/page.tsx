@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: "Coduri de reducere vacanțe și travel 2026: Booking, eMag Vacante, bilete avion, trollere Samsonite. Reduceri verificate pentru vacanță ieftină în România și Europa.",
   keywords: ["reduceri vacante", "cod reducere booking", "vacanta ieftina romania 2026", "bilete avion reducere", "hotel reducere", "troller reducere", "travel reducere romania"],
   alternates: { canonical: "https://amcupon.ro/calatorie" },
-  openGraph: { title: "Reduceri Vacanțe & Călătorii 2026 | AmCupon.ro", url: "https://amcupon.ro/calatorie", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
+  openGraph: { title: "Reduceri Vacanțe & Călătorii 2026 | AmCupon.ro", url: "https://amcupon.ro/calatorie", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
 const TOP_TRAVEL = ["booking.com","airbnb.com","trip.com","rentalcars.com","samsonite.com","delsey.com"];

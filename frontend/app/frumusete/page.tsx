@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: "Coduri de reducere beauty și cosmetice 2026: Notino, Douglas, Sephora, Makeup.ro. Parfumuri, skincare, machiaj la prețuri reduse. Reduceri verificate zilnic.",
   keywords: ["reduceri beauty", "cod reducere notino", "reduceri douglas", "sephora reducere", "parfumuri ieftine", "cosmetice reducere romania", "skincare reducere", "machiaj ieftin"],
   alternates: { canonical: "https://amcupon.ro/frumusete" },
-  openGraph: { title: "Reduceri Beauty & Cosmetice 2026 | AmCupon.ro", url: "https://amcupon.ro/frumusete", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
+  openGraph: { title: "Reduceri Beauty & Cosmetice 2026 | AmCupon.ro", url: "https://amcupon.ro/frumusete", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
 const TOP_BEAUTY = ["notino.ro","douglas.ro","sephora.ro","makeup.ro","beautik.ro","elenfashion.ro"];
