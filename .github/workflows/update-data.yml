@@ -124,6 +124,11 @@ jobs:
         working-directory: scripts
         run: python generate_product_tops.py
 
+      # ── 8b. Date lightweight homepage (reduce payload ~1MB) ────────────────
+      - name: Genereaza date lightweight homepage
+        working-directory: scripts
+        run: python generate_homepage_data.py
+
       # ── 9. Newsletter zilnic (Brevo SMTP) — rulat DOAR la 08:00 Romania ────
       - name: Trimite newsletter zilnic
         if: github.event.schedule == '0 6 * * *' || github.event_name == 'workflow_dispatch'
@@ -175,9 +180,12 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add frontend/public/output.json      || true
-          git add frontend/public/blog-posts.json  || true
-          git add frontend/public/products.json    || true
+          git add frontend/public/output.json       || true
+          git add frontend/public/nav-index.json    || true
+          git add frontend/public/blog-posts.json   || true
+          git add frontend/public/blog-latest.json  || true
+          git add frontend/public/products.json     || true
+          git add frontend/public/products-home.json || true
           git add frontend/public/banners.json     || true
           git add frontend/public/top-produse.json || true
           git add data/output.json                 || true

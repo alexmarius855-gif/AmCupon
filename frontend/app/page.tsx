@@ -150,8 +150,8 @@ export default function Home() {
 
   useEffect(() => {
     fetch("/output.json").then(r => r.json()).then(data => { setMagazine(data); setLoading(false); });
-    fetch("/blog-posts.json").then(r => r.json()).then((posts: BlogPost[]) => setBlogPosts(posts.slice(0, 3))).catch(() => {});
-    fetch("/products.json").then(r => r.json()).then(data => {
+    fetch("/blog-latest.json").then(r => r.json()).then((posts: BlogPost[]) => setBlogPosts(posts.slice(0, 3))).catch(() => {});
+    fetch("/products-home.json").then(r => r.json()).then(data => {
       const all = data?.products || data || [];
       type P = {title:string;url:string;image:string;price:number;old_price?:number;discount_pct:number;brand:string;merchant:string;merchant_slug:string;category:string};
       const cuImagine = (all as P[]).filter(p => p.image && p.price > 0);

@@ -35,7 +35,7 @@ export default function AnuntAnimat() {
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
-    fetch("/output.json")
+    fetch("/nav-index.json")
       .then((r) => r.json())
       .then((data: Magazin[]) => {
         const promoItems: AnuntItem[] = [];

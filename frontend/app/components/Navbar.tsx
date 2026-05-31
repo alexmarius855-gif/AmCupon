@@ -33,7 +33,7 @@ export default function Navbar() {
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
-    fetch("/output.json").then(r => r.json()).then(setAllStores).catch(() => {});
+    fetch("/nav-index.json").then(r => r.json()).then(setAllStores).catch(() => {});
   }, []);
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
