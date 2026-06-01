@@ -46,9 +46,42 @@ export default function ProduseePage() {
 
   const an = new Date().getFullYear();
 
+  // ── Structured data: ItemList cu Product + Offer (preturi reale RON) ──────
+  // Eligibil pentru rich results Google (imagine + pret in rezultate)
+  const produseValide = (productsData.products || [])
+    .filter((p) => p.image && (p.price || 0) > 0)
+    .slice(0, 30);
+
+  const produseJsonLd = produseValide.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Produse cu reducere din Romania",
+    numberOfItems: produseValide.length,
+    itemListElement: produseValide.map((p, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: {
+        "@type": "Product",
+        name: p.title,
+        image: p.image,
+        ...(p.brand ? { brand: { "@type": "Brand", name: p.brand } } : {}),
+        offers: {
+          "@type": "Offer",
+          price: Math.round((p.price || 0) * 100) / 100,
+          priceCurrency: "RON",
+          availability: "https://schema.org/InStock",
+          url: p.url,
+        },
+      },
+    })),
+  } : null;
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      {produseJsonLd && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(produseJsonLd) }} />
+      )}
       <ProduseClient
         products={productsData.products || []}
         updated={productsData.updated || ""}
