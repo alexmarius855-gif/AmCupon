@@ -265,12 +265,14 @@ export default function Home() {
     (a, b) => (vanzariPerCateg[b.slug] || 0) - (vanzariPerCateg[a.slug] || 0)
   );
 
-  function copiazaCod(id: string, cod: string) {
+  function copiazaCod(id: string, cod: string, link?: string) {
     setCoduriReveal(prev => new Set(prev).add(id));
     navigator.clipboard.writeText(cod).catch(() => {});
     setCopiat(id);
     setTimeout(() => setCopiat(null), 3000);
     trackAfiliat("copiere_cod_homepage", id, cod);
+    // Deschide magazinul cu link-ul afiliat (sincron = nu e blocat) — prinde comisionul
+    if (link) window.open(link, "_blank", "noopener,noreferrer");
   }
 
   return (
@@ -1579,7 +1581,7 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
   m: Magazin;
   revealed: boolean;
   copiat: boolean;
-  onCopiere: (id: string, cod: string) => void;
+  onCopiere: (id: string, cod: string, link?: string) => void;
   isFavorit: boolean;
   onToggleFavorit: (slug: string, e: React.MouseEvent) => void;
 }) {
@@ -1756,9 +1758,9 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
               <div className="border-2 border-dashed border-slate-200 rounded-xl py-2.5 text-center bg-slate-50">
                 <span className="font-mono text-slate-400 text-sm">{maskCod(promo.cod_cupon)}</span>
               </div>
-              <button onClick={() => onCopiere(m.magazin, promo.cod_cupon)}
+              <button onClick={() => onCopiere(m.magazin, promo.cod_cupon, link)}
                 className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 rounded-xl text-sm transition-colors">
-                Copiaza codul
+                Copiaza codul + mergi la magazin
               </button>
             </div>
           )

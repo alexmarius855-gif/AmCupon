@@ -201,12 +201,15 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
   const culori = ["bg-blue-500","bg-green-500","bg-purple-500","bg-pink-500","bg-indigo-500","bg-teal-500","bg-red-500","bg-yellow-500"];
   const culoare = culori[initiala.charCodeAt(0) % culori.length];
 
-  function copiazaCod(idx: number, cod: string) {
+  function copiazaCod(idx: number, cod: string, link?: string) {
     setRevealed(prev => new Set(prev).add(idx));
     navigator.clipboard.writeText(cod).catch(() => {});
     setCopiat(idx);
     setTimeout(() => setCopiat(null), 3000);
     trackClick("copiere_cod", m.magazin, cod);
+    // Deschide magazinul cu link-ul afiliat — seteaza cookie-ul = prinde comisionul.
+    // Sincron (in click handler) ca sa NU fie blocat de popup blocker.
+    if (link) window.open(link, "_blank", "noopener,noreferrer");
   }
 
 
@@ -425,12 +428,12 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                                 </div>
                               </div>
                             ) : (
-                              <button onClick={() => copiazaCod(idx, promo.cod_cupon)}
+                              <button onClick={() => copiazaCod(idx, promo.cod_cupon, link)}
                                 className="w-full border-2 border-dashed border-slate-700 hover:border-orange-400 rounded-xl bg-slate-800 py-2.5 px-3 text-center transition-colors group">
                                 <span className="font-mono text-slate-500 group-hover:text-orange-400 text-sm">
                                   {promo.cod_cupon.slice(0,4)}{"*".repeat(Math.max(0, Math.min(promo.cod_cupon.length - 4, 6)))}
                                 </span>
-                                <p className="text-xs text-slate-500 mt-0.5 group-hover:text-orange-400">Click pentru cod complet</p>
+                                <p className="text-xs text-slate-500 mt-0.5 group-hover:text-orange-400">Click → cod + mergi la magazin</p>
                               </button>
                             )}
                           </div>
