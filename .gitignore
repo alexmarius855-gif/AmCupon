@@ -1,6 +1,34 @@
-"node_modules/" 
+# Dependencies
+node_modules/
+
+# Build output
+.next/
+out/
+dist/
+
+# ── SECRETE — NICIODATA in git ──────────────────────────
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+*.env
+
+# Python
 scripts/__pycache__/
+__pycache__/
+*.pyc
+venv/
+
+# Tools & local
+.vercel
 .claude/
 amcupon-extension.zip
 
-.vercel
+# Logs & debug
+*.log
+data/*_debug.json
+
+# OS
+.DS_Store
+Thumbs.db
