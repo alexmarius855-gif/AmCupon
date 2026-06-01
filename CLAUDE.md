@@ -114,7 +114,9 @@ Endpoint-uri (toate cu `.json` suffix, fără slash final):
 - `/affiliate/product_feeds.json` — lista feed-uri
 - `/affiliate/product_feeds/{id}/products.json` — produse
 
-Quicklinks: `https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique={md5(url)[:9]}&redirect_to={quote(url)}`
+Quicklinks: `https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to={quote(url)}`
+
+⚠️ **CRITIC (bug reparat 01.06.2026):** `unique` TREBUIE să fie token-ul REAL al afiliatului (`bb3071a7d`, din 2P → Tools → Quick Link), UNIVERSAL pentru toate magazinele. **NU folosi `md5(url)[:9]`** — produce `unique` invalid → 2P respinge cu `notoolerror` → TOATE link-urile stricate (s-au stricat 229/291 magazine). Constanta `QUICKLINK_UNIQUE` în fetch_2p_api.py + fetch_product_feeds.py.
 
 ---
 
