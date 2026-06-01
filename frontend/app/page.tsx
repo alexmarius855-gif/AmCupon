@@ -760,6 +760,111 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ─── BANNERE PARTENERE ────────────────────────────────────────────── */}
+      {banners.length > 0 && (
+        <div className="bg-slate-900 border-b border-slate-800 py-10">
+          {/* Header */}
+          <div className="max-w-7xl mx-auto px-4 mb-6 flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <span className="text-xl">🔥</span>
+              <div>
+                <h2 className="text-lg font-black text-white tracking-tight">Oferte vizuale ale zilei</h2>
+                <p className="text-xs text-slate-400 mt-0.5">Campanii active de la partenerii nostri</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() => bannersRef.current?.scrollBy({ left: -340, behavior: "smooth" })}
+                className="w-8 h-8 rounded-full bg-slate-700 hover:bg-orange-500 flex items-center justify-center transition-colors">
+                <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7"/>
+                </svg>
+              </button>
+              <button
+                onClick={() => bannersRef.current?.scrollBy({ left: 340, behavior: "smooth" })}
+                className="w-8 h-8 rounded-full bg-slate-700 hover:bg-orange-500 flex items-center justify-center transition-colors">
+                <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          {/* Carousel orizontal cu scroll snap */}
+          <div ref={bannersRef} className="px-4 overflow-x-auto"
+            style={{ scrollbarWidth: "none", msOverflowStyle: "none", scrollBehavior: "smooth" }}>
+            <div className="flex gap-3 pb-2"
+              style={{ width: "max-content" }}>
+              {banners.slice(0, 12).map((b, i) => {
+                const aspectLandscape = b.width >= b.height;
+                return (
+                  <a
+                    key={b.id || i}
+                    href={b.landing_url || b.landing_raw}
+                    target="_blank"
+                    rel="sponsored noopener noreferrer"
+                    className="group relative overflow-hidden rounded-2xl flex-shrink-0 block"
+                    style={{
+                      width: aspectLandscape ? "320px" : "200px",
+                      height: "200px",
+                      scrollSnapAlign: "start",
+                    }}
+                    onError={() => {}}
+                  >
+                    {/* Imagine banner */}
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={b.image_url}
+                      alt={b.name || b.merchant || "Oferta"}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      onError={e => {
+                        const el = (e.target as HTMLImageElement).closest("a");
+                        if (el) el.style.display = "none";
+                      }}
+                    />
+
+                    {/* Gradient overlay permanent */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+
+                    {/* Continut overlay */}
+                    <div className="absolute bottom-0 left-0 right-0 p-3">
+                      <p className="text-white/60 text-[10px] font-medium uppercase tracking-wider mb-0.5">
+                        {(b.merchant || "").replace(".ro","").replace(".com","").trim()}
+                      </p>
+                      <p className="text-white font-black text-xs leading-tight line-clamp-2 mb-2">
+                        {b.name || "Oferta activa"}
+                      </p>
+                      <span className="inline-flex items-center gap-1 bg-orange-500 group-hover:bg-orange-400 text-white text-[10px] font-bold px-2.5 py-1 rounded-full transition-colors">
+                        Vezi oferta
+                        <svg className="w-2.5 h-2.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
+                        </svg>
+                      </span>
+                    </div>
+
+                    {/* Ring la hover */}
+                    <div className="absolute inset-0 rounded-2xl ring-2 ring-orange-500/0 group-hover:ring-orange-500/60 transition-all duration-200 pointer-events-none" />
+                  </a>
+                );
+              })}
+
+              {/* Card final — "Vezi toate" */}
+              <a href="/categorii" className="group relative overflow-hidden rounded-2xl flex-shrink-0 flex flex-col items-center justify-center gap-3 bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-orange-500/50 transition-all duration-200"
+                style={{ width: "160px", height: "200px", scrollSnapAlign: "start" }}>
+                <div className="w-12 h-12 rounded-full bg-orange-500/20 flex items-center justify-center group-hover:bg-orange-500/30 transition-colors">
+                  <svg className="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16"/>
+                  </svg>
+                </div>
+                <span className="text-white font-bold text-xs text-center px-4">Toate categoriile</span>
+                <span className="text-orange-400 text-[10px] font-bold">Vezi →</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* ─── PRODUSE HOT ─────────────────────────────────────────────────── */}
       {/* ─── OFERTE ACTIVE CU COD — din output.json, diverse magazine ─── */}
       {!loading && (() => {
@@ -1000,111 +1105,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-      )}
-
-      {/* ─── BANNERE PARTENERE ────────────────────────────────────────────── */}
-      {banners.length > 0 && (
-        <div className="bg-slate-900 border-b border-slate-800 py-10">
-          {/* Header */}
-          <div className="max-w-7xl mx-auto px-4 mb-6 flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <span className="text-xl">🔥</span>
-              <div>
-                <h2 className="text-lg font-black text-white tracking-tight">Oferte vizuale ale zilei</h2>
-                <p className="text-xs text-slate-400 mt-0.5">Campanii active de la partenerii nostri</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-2">
-              <button
-                onClick={() => bannersRef.current?.scrollBy({ left: -340, behavior: "smooth" })}
-                className="w-8 h-8 rounded-full bg-slate-700 hover:bg-orange-500 flex items-center justify-center transition-colors">
-                <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7"/>
-                </svg>
-              </button>
-              <button
-                onClick={() => bannersRef.current?.scrollBy({ left: 340, behavior: "smooth" })}
-                className="w-8 h-8 rounded-full bg-slate-700 hover:bg-orange-500 flex items-center justify-center transition-colors">
-                <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          {/* Carousel orizontal cu scroll snap */}
-          <div ref={bannersRef} className="px-4 overflow-x-auto"
-            style={{ scrollbarWidth: "none", msOverflowStyle: "none", scrollBehavior: "smooth" }}>
-            <div className="flex gap-3 pb-2"
-              style={{ width: "max-content" }}>
-              {banners.slice(0, 12).map((b, i) => {
-                const aspectLandscape = b.width >= b.height;
-                return (
-                  <a
-                    key={b.id || i}
-                    href={b.landing_url || b.landing_raw}
-                    target="_blank"
-                    rel="sponsored noopener noreferrer"
-                    className="group relative overflow-hidden rounded-2xl flex-shrink-0 block"
-                    style={{
-                      width: aspectLandscape ? "320px" : "200px",
-                      height: "200px",
-                      scrollSnapAlign: "start",
-                    }}
-                    onError={() => {}}
-                  >
-                    {/* Imagine banner */}
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={b.image_url}
-                      alt={b.name || b.merchant || "Oferta"}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
-                      onError={e => {
-                        const el = (e.target as HTMLImageElement).closest("a");
-                        if (el) el.style.display = "none";
-                      }}
-                    />
-
-                    {/* Gradient overlay permanent */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
-
-                    {/* Continut overlay */}
-                    <div className="absolute bottom-0 left-0 right-0 p-3">
-                      <p className="text-white/60 text-[10px] font-medium uppercase tracking-wider mb-0.5">
-                        {(b.merchant || "").replace(".ro","").replace(".com","").trim()}
-                      </p>
-                      <p className="text-white font-black text-xs leading-tight line-clamp-2 mb-2">
-                        {b.name || "Oferta activa"}
-                      </p>
-                      <span className="inline-flex items-center gap-1 bg-orange-500 group-hover:bg-orange-400 text-white text-[10px] font-bold px-2.5 py-1 rounded-full transition-colors">
-                        Vezi oferta
-                        <svg className="w-2.5 h-2.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
-                        </svg>
-                      </span>
-                    </div>
-
-                    {/* Ring la hover */}
-                    <div className="absolute inset-0 rounded-2xl ring-2 ring-orange-500/0 group-hover:ring-orange-500/60 transition-all duration-200 pointer-events-none" />
-                  </a>
-                );
-              })}
-
-              {/* Card final — "Vezi toate" */}
-              <a href="/categorii" className="group relative overflow-hidden rounded-2xl flex-shrink-0 flex flex-col items-center justify-center gap-3 bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-orange-500/50 transition-all duration-200"
-                style={{ width: "160px", height: "200px", scrollSnapAlign: "start" }}>
-                <div className="w-12 h-12 rounded-full bg-orange-500/20 flex items-center justify-center group-hover:bg-orange-500/30 transition-colors">
-                  <svg className="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16"/>
-                  </svg>
-                </div>
-                <span className="text-white font-bold text-xs text-center px-4">Toate categoriile</span>
-                <span className="text-orange-400 text-[10px] font-bold">Vezi →</span>
-              </a>
-            </div>
-          </div>
-        </div>
       )}
 
       {/* ─── PROMOTII + MAGAZINE ─────────────────────────────────────────── */}
