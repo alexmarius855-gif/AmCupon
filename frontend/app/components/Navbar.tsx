@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 interface MagazinMini {
   magazin: string;
@@ -95,10 +96,10 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 h-[64px] flex items-center gap-4">
 
         {/* Logo */}
-        <a href="/" className="flex items-center gap-1.5 shrink-0 group">
+        <Link href="/" className="flex items-center gap-1.5 shrink-0 group">
           <div className="bg-orange-500 group-hover:bg-orange-600 text-white font-black text-sm px-2 py-0.5 rounded-lg tracking-tighter transition-colors">Am</div>
           <span className="font-black text-slate-900 text-xl tracking-tight">Cupon<span className="text-orange-500">.ro</span></span>
-        </a>
+        </Link>
 
         {/* Search cu autocomplete */}
         <div className="flex-1 relative max-w-2xl hidden sm:block">
@@ -170,10 +171,10 @@ export default function Navbar() {
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-4 text-sm font-semibold text-slate-600 ml-auto shrink-0">
           {navLinks.map(l => (
-            <a key={l.href} href={l.href}
+            <Link key={l.href} href={l.href}
               className={`hover:text-orange-500 transition-colors whitespace-nowrap ${pathname === l.href || (l.href !== "/" && pathname.startsWith(l.href)) ? "text-orange-500" : ""}`}>
               {l.label}
-            </a>
+            </Link>
           ))}
           {/* Social media icons */}
           <div className="flex items-center gap-1.5 border-l border-slate-200 pl-4 ml-1">
@@ -196,10 +197,10 @@ export default function Navbar() {
               </svg>
             </a>
           </div>
-          <a href="/extensie"
+          <Link href="/extensie"
             className="flex items-center gap-1.5 bg-slate-900 hover:bg-orange-500 text-white px-3.5 py-1.5 rounded-full text-xs font-bold transition-all hover:scale-105 duration-150">
             🧩 Extensie
-          </a>
+          </Link>
         </nav>
 
         {/* Mobile menu btn */}
@@ -225,10 +226,10 @@ export default function Navbar() {
           </form>
           <nav className="space-y-0.5">
             {mobileLinks.map(l => (
-              <a key={l.href} href={l.href} onClick={() => setMenuOpen(false)}
+              <Link key={l.href} href={l.href} onClick={() => setMenuOpen(false)}
                 className="flex items-center px-3 py-2.5 rounded-xl text-sm font-semibold text-slate-700 hover:bg-orange-50 hover:text-orange-600 transition-colors">
                 {l.label}
-              </a>
+              </Link>
             ))}
           </nav>
         </div>

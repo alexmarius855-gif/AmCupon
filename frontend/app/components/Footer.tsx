@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const MAGAZINE_POPULARE = [
   { slug: "emag.ro",         label: "eMAG" },
@@ -161,10 +162,10 @@ export default function Footer() {
 
           {/* Brand col */}
           <div className="col-span-2 md:col-span-4 lg:col-span-1">
-            <a href="/" className="flex items-center gap-1.5 mb-4">
+            <Link href="/" className="flex items-center gap-1.5 mb-4">
               <div className="bg-orange-500 text-white font-black text-sm px-2 py-0.5 rounded-lg">Am</div>
               <span className="font-black text-white text-xl">Cupon<span className="text-orange-500">.ro</span></span>
-            </a>
+            </Link>
             <p className="text-sm leading-relaxed text-slate-500 mb-5">
               Coduri de reducere verificate zilnic de la cele mai mari magazine online din Romania.
               100% gratuit.
@@ -203,10 +204,10 @@ export default function Footer() {
             <ul className="space-y-2">
               {MAGAZINE_POPULARE.map(m => (
                 <li key={m.slug}>
-                  <a href={`/cod-reducere/${m.slug}`}
+                  <Link href={`/cod-reducere/${m.slug}`}
                     className="text-sm text-slate-500 hover:text-orange-400 transition-colors">
                     Cod reducere {m.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -218,9 +219,9 @@ export default function Footer() {
             <ul className="space-y-2">
               {CATEGORII.map(c => (
                 <li key={c.href}>
-                  <a href={c.href} className="text-sm text-slate-500 hover:text-orange-400 transition-colors">
+                  <Link href={c.href} className="text-sm text-slate-500 hover:text-orange-400 transition-colors">
                     {c.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -232,9 +233,9 @@ export default function Footer() {
             <ul className="space-y-2">
               {GHIDURI.map(g => (
                 <li key={g.href}>
-                  <a href={g.href} className="text-sm text-slate-500 hover:text-orange-400 transition-colors">
+                  <Link href={g.href} className="text-sm text-slate-500 hover:text-orange-400 transition-colors">
                     {g.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -246,9 +247,9 @@ export default function Footer() {
             <ul className="space-y-2">
               {INFO.map(i => (
                 <li key={i.href}>
-                  <a href={i.href} className="text-sm text-slate-500 hover:text-orange-400 transition-colors">
+                  <Link href={i.href} className="text-sm text-slate-500 hover:text-orange-400 transition-colors">
                     {i.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -266,9 +267,9 @@ export default function Footer() {
             al magazinelor, fără costuri suplimentare pentru tine.
           </p>
           <div className="flex items-center gap-4">
-            <a href="/confidentialitate" className="hover:text-slate-400 transition-colors">GDPR</a>
-            <a href="/termeni" className="hover:text-slate-400 transition-colors">Termeni</a>
-            <a href="/contact" className="hover:text-slate-400 transition-colors">Contact</a>
+            <Link href="/confidentialitate" className="hover:text-slate-400 transition-colors">GDPR</Link>
+            <Link href="/termeni" className="hover:text-slate-400 transition-colors">Termeni</Link>
+            <Link href="/contact" className="hover:text-slate-400 transition-colors">Contact</Link>
           </div>
         </div>
       </div>
