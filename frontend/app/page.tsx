@@ -76,6 +76,33 @@ const SECTIUNI_SPECIALE = [
   { href: "/categorii",    emoji: "📂", label: "Toate categoriile",desc: "Exploreaza tot",                    gradient: "from-orange-500 to-red-500" },
 ];
 
+const FAQ_ITEMS: { q: string; a: string }[] = [
+  {
+    q: "Cum folosesc un cod de reducere de pe AmCupon.ro?",
+    a: "Alegi magazinul dorit, apesi pe cod ca sa il copiezi, apoi mergi la magazin prin butonul nostru. La finalizarea comenzii (checkout) lipesti codul in campul \"Cod reducere\" sau \"Voucher\" si reducerea se aplica automat.",
+  },
+  {
+    q: "Codurile de reducere sunt gratuite?",
+    a: "Da, 100% gratuit. Nu platesti nimic si nu ai nevoie de cont. AmCupon.ro este gratuit pentru toti utilizatorii, fara costuri ascunse.",
+  },
+  {
+    q: "Cat de des se actualizeaza ofertele si codurile?",
+    a: "Verificam si actualizam codurile zilnic, automat, de la peste 290 de magazine partenere din Romania. Ofertele expirate sunt eliminate, iar cele noi adaugate in fiecare zi.",
+  },
+  {
+    q: "De ce unele coduri nu mai functioneaza?",
+    a: "Magazinele pot opri o promotie inainte de data anuntata sau pot limita stocul. Daca un cod nu mai merge, incearca alt cod activ din aceeasi pagina de magazin sau verifica ofertele fara cod, care se aplica automat.",
+  },
+  {
+    q: "Trebuie sa imi fac cont ca sa folosesc codurile?",
+    a: "Nu. Toate codurile si ofertele sunt disponibile fara cont si fara inregistrare. Optional, te poti abona la newsletter pentru a primi top 5 oferte zilnic pe email.",
+  },
+  {
+    q: "Cum castiga bani AmCupon.ro?",
+    a: "Primim un comision de la magazine atunci cand cumperi prin link-urile noastre, din bugetul lor de marketing. Pentru tine pretul ramane acelasi, fara costuri suplimentare. Asa putem mentine serviciul gratuit.",
+  },
+];
+
 function maskCod(cod: string): string {
   if (!cod || cod.length <= 4) return cod;
   return cod.slice(0, 4) + "*".repeat(Math.min(cod.length - 4, 6));
@@ -1275,6 +1302,45 @@ export default function Home() {
           </div>
         </section>
       )}
+
+      {/* ─── FAQ (intrebari frecvente + structured data) ──────────────────── */}
+      <section className="bg-slate-950 border-t border-slate-800 py-14 px-4">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: FAQ_ITEMS.map(item => ({
+                "@type": "Question",
+                name: item.q,
+                acceptedAnswer: { "@type": "Answer", text: item.a },
+              })),
+            }),
+          }}
+        />
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-8">
+            <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-2">INTREBARI FRECVENTE</p>
+            <h2 className="text-3xl font-black tracking-tight text-white">Tot ce vrei sa stii despre codurile de reducere</h2>
+          </div>
+          <div className="space-y-3">
+            {FAQ_ITEMS.map((item, i) => (
+              <details key={i} className="group bg-slate-900 rounded-2xl border border-slate-700 overflow-hidden">
+                <summary className="flex items-center justify-between gap-4 px-5 py-4 cursor-pointer list-none select-none hover:bg-slate-800/50 transition-colors">
+                  <h3 className="font-bold text-slate-100 text-sm sm:text-base leading-snug">{item.q}</h3>
+                  <svg className="w-5 h-5 text-orange-500 shrink-0 transition-transform duration-200 group-open:rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4v16m8-8H4"/>
+                  </svg>
+                </summary>
+                <div className="px-5 pb-5 -mt-1">
+                  <p className="text-sm text-slate-400 leading-relaxed">{item.a}</p>
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* ─── NEWSLETTER ───────────────────────────────────────────────────── */}
       <section className="relative bg-slate-950 py-16 px-4 overflow-hidden">
