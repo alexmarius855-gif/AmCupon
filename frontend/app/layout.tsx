@@ -37,6 +37,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://amcupon.ro"),
   verification: {
     google: "UvsbX8yxIp1eGwFK5ESqVXzA6jT5wjcTartEIPG5mqw",
+    other: {
+      "p:domain_verify": "ba572e9f4b288f061ae35149c1a13d30",
+    },
   },
   openGraph: {
     title: "AmCupon.ro — Coduri de reducere verificate",
