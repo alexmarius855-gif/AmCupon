@@ -138,15 +138,19 @@ def api_get(endpoint: str, params: dict = None):
 
 # ─── Utilitare ────────────────────────────────────────────────────────────────
 
+# Token quicklink REAL al afiliatului — universal, merge pe orice magazin.
+# NU md5 (da notoolerror). Bug reparat 01.06.2026.
+QUICKLINK_UNIQUE = "bb3071a7d"
+
+
 def make_afiliat_url(url: str) -> str:
     if not url:
         return url
     url_curat = unquote(url.strip())
-    unique    = hashlib.md5(url_curat.encode()).hexdigest()[:9]
     encoded   = quote(url_curat, safe="")
     return (f"https://event.2performant.com/events/click"
             f"?ad_type=quicklink&aff_code={AFF_CODE}"
-            f"&unique={unique}&redirect_to={encoded}")
+            f"&unique={QUICKLINK_UNIQUE}&redirect_to={encoded}")
 
 
 def _parse_price(val) -> float:

@@ -259,15 +259,19 @@ def categorie_slug(cat: str) -> str:
     return re.sub(r"-+", "-", s)
 
 
+# Token quicklink REAL al afiliatului (din 2P → Tools → Quick Link).
+# UNIVERSAL — merge pe ORICE magazin aprobat. NU folosi md5 (da notoolerror)!
+QUICKLINK_UNIQUE = "bb3071a7d"
+
+
 def make_afiliat_url(url: str) -> str:
     if not url or not isinstance(url, str):
         return ""
     url_curat = unquote(url.strip())
-    unique = hashlib.md5(url_curat.encode()).hexdigest()[:9]
     encoded = quote(url_curat, safe="")
     return (f"https://event.2performant.com/events/click"
             f"?ad_type=quicklink&aff_code={AFF_CODE}"
-            f"&unique={unique}&redirect_to={encoded}")
+            f"&unique={QUICKLINK_UNIQUE}&redirect_to={encoded}")
 
 
 def calculeaza_folosit(magazin: str, are_promotie: bool) -> int:
@@ -378,15 +382,9 @@ def program_to_magazin(prog: dict, promo_map: dict) -> dict:
         (p.get("zile_ramase", 99) for p in promotii_raw), default=99
     )
 
-    # Construieste URL afiliat folosind unique_code (mai precis decat quicklink simplu)
-    if main_url and unique_code:
-        url_afiliat = (
-            f"https://event.2performant.com/events/click"
-            f"?ad_type=quicklink&aff_code={AFF_CODE}"
-            f"&unique={unique_code}&redirect_to={quote(main_url, safe='')}"
-        )
-    else:
-        url_afiliat = make_afiliat_url(main_url)
+    # URL afiliat — foloseste QUICKLINK_UNIQUE (token real, universal).
+    # NU folosi prog unique_code/id — dau notoolerror (bug reparat 01.06.2026)!
+    url_afiliat = make_afiliat_url(main_url)
 
     return {
         "magazin":          slug or cheie_name,
