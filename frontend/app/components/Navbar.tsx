@@ -25,19 +25,10 @@ export default function Navbar() {
   const [focused, setFocused] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  // Nu arata pe pagini cu propriul header
-  if (
-    pathname === "/" ||
-    pathname.startsWith("/cod-reducere/") ||
-    pathname.startsWith("/reduceri/")
-  ) return null;
-
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     fetch("/nav-index.json").then(r => r.json()).then(setAllStores).catch(() => {});
   }, []);
 
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     if (search.length < 2) { setResults([]); setShowDropdown(false); return; }
     const q = search.toLowerCase();
@@ -52,6 +43,16 @@ export default function Navbar() {
     setResults(filtered);
     setShowDropdown(focused && filtered.length > 0);
   }, [search, allStores, focused]);
+
+  // Nu arata pe pagini cu propriul header.
+  // IMPORTANT: acest return TREBUIE sa fie DUPA toate hook-urile, altfel cand
+  // navighezi (soft nav) catre o pagina ascunsa, Navbar-ul re-randeaza cu mai
+  // putine hooks => React error #300 ("rendered fewer hooks") => pagina alba.
+  if (
+    pathname === "/" ||
+    pathname.startsWith("/cod-reducere/") ||
+    pathname.startsWith("/reduceri/")
+  ) return null;
 
   function handleSelect(slug: string) {
     setSearch(""); setShowDropdown(false); setMenuOpen(false);
