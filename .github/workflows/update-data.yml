@@ -129,6 +129,11 @@ jobs:
         working-directory: scripts
         run: python generate_homepage_data.py
 
+      # ── 8c. Descrieri editoriale magazine (continut SEO unic, fara AI) ─────
+      - name: Genereaza descrieri magazine
+        working-directory: scripts
+        run: python generate_store_descriptions.py --force
+
       # ── 9. Newsletter zilnic (Brevo SMTP) — rulat DOAR la 08:00 Romania ────
       - name: Trimite newsletter zilnic
         if: github.event.schedule == '0 6 * * *' || github.event_name == 'workflow_dispatch'

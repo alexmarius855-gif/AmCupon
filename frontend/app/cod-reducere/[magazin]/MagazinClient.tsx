@@ -165,12 +165,13 @@ interface Banner2P {
   name: string; category: string; b_type: string;
 }
 
-export default function MagazinClient({ magazin: m, produse = [], similare = [], blogPost = null, banner = null }: {
+export default function MagazinClient({ magazin: m, produse = [], similare = [], blogPost = null, banner = null, descriere = null }: {
   magazin: Magazin;
   produse?: Produs[];
   similare?: MagazinSimilar[];
   blogPost?: BlogPostMic | null;
   banner?: Banner2P | null;
+  descriere?: { titlu: string; paragrafe: string[] } | null;
 }) {
   const [revealed, setRevealed]   = useState<Set<number>>(new Set());
   const [copiat, setCopiat]       = useState<number | null>(null);
@@ -758,6 +759,18 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                   </a>
                 );
               })}
+            </div>
+          </section>
+        )}
+
+        {/* ── DESPRE MAGAZIN (text editorial SEO) ──────────────────────────── */}
+        {descriere && descriere.paragrafe?.length > 0 && (
+          <section className="mt-12 bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8">
+            <h2 className="text-lg sm:text-xl font-black text-white mb-4">{descriere.titlu}</h2>
+            <div className="space-y-3 text-sm sm:text-[15px] text-slate-300 leading-relaxed">
+              {descriere.paragrafe.map((p, i) => (
+                <p key={i}>{p}</p>
+              ))}
             </div>
           </section>
         )}

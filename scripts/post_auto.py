@@ -125,11 +125,19 @@ POSTAREA:"""
 
 
 def copiaza_clipboard(text):
-    """Copiaza textul in clipboard pe Windows."""
+    """Copiaza textul in clipboard pe Windows cu UTF-8 corect."""
     try:
-        import subprocess
-        proc = subprocess.Popen(['clip'], stdin=subprocess.PIPE, close_fds=True)
-        proc.communicate(input=text.encode('utf-8'))
+        import subprocess, tempfile, os
+        # Scrie intr-un fisier temp UTF-8, apoi PowerShell il citeste corect
+        with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', suffix='.txt', delete=False) as f:
+            f.write(text)
+            fname = f.name
+        subprocess.run(
+            ['powershell', '-NoProfile', '-Command',
+             f'[System.IO.File]::ReadAllText("{fname}", [System.Text.Encoding]::UTF8) | Set-Clipboard'],
+            check=True, capture_output=True
+        )
+        os.unlink(fname)
         return True
     except Exception as e:
         print(f"  ⚠️  Clipboard error: {e}")
