@@ -51,6 +51,19 @@ const nextConfig: NextConfig = {
           },
         ],
       },
+      // ── Cache inteligent pe fisierele de date statice ─────────────────
+      // Datele se actualizeaza la 4h (cron) → nu are sens re-descarcare la fiecare vizita.
+      // 5 min proaspat, apoi serveste din cache si revalideaza in fundal (pana la 1h).
+      // Vizite repetate = instant; banda economisita; Core Web Vitals mai bune.
+      {
+        source: "/:file(output|nav-index|blog-latest|products-home|products|banners|blog-posts|store-descriptions|top-produse).json",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=300, stale-while-revalidate=3600",
+          },
+        ],
+      },
       // ── CORS strict pe API routes ─────────────────────────────────────
       {
         source: "/api/(.*)",
