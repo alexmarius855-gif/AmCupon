@@ -52,6 +52,27 @@ export default function ProduseePage() {
     .filter((p) => p.image && (p.price || 0) > 0)
     .slice(0, 30);
 
+  // Politici standard RO/UE — corecte pentru e-commerce romanesc:
+  // retragere 14 zile garantata legal (OUG 34/2014). Reutilizate pe toate ofertele.
+  const returRO = {
+    "@type": "MerchantReturnPolicy",
+    applicableCountry: "RO",
+    returnPolicyCategory: "https://schema.org/MerchantReturnFiniteReturnWindow",
+    merchantReturnDays: 14,
+    returnMethod: "https://schema.org/ReturnByMail",
+    returnFees: "https://schema.org/ReturnShippingFees",
+  };
+  const livrareRO = {
+    "@type": "OfferShippingDetails",
+    shippingRate: { "@type": "MonetaryAmount", value: 0, currency: "RON" },
+    shippingDestination: { "@type": "DefinedRegion", addressCountry: "RO" },
+    deliveryTime: {
+      "@type": "ShippingDeliveryTime",
+      handlingTime: { "@type": "QuantitativeValue", minValue: 0, maxValue: 1, unitCode: "DAY" },
+      transitTime:  { "@type": "QuantitativeValue", minValue: 1, maxValue: 3, unitCode: "DAY" },
+    },
+  };
+
   const produseJsonLd = produseValide.length > 0 ? {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -64,13 +85,17 @@ export default function ProduseePage() {
         "@type": "Product",
         name: p.title,
         image: p.image,
-        ...(p.brand ? { brand: { "@type": "Brand", name: p.brand } } : {}),
+        description: `${p.title}${p.brand ? ` — ${p.brand}` : ""}. Produs cu reducere${p.merchant ? `, disponibil la ${p.merchant}` : ""} prin AmCupon.ro.`,
+        sku: String(p.id ?? `${p.merchant_slug || "amcupon"}-${i}`),
+        brand: { "@type": "Brand", name: p.brand || p.merchant?.split(".")[0] || "AmCupon" },
         offers: {
           "@type": "Offer",
           price: Math.round((p.price || 0) * 100) / 100,
           priceCurrency: "RON",
           availability: "https://schema.org/InStock",
           url: p.url,
+          hasMerchantReturnPolicy: returRO,
+          shippingDetails: livrareRO,
         },
       },
     })),
