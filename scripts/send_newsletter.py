@@ -334,20 +334,28 @@ def send_campaign_brevo(html: str, subject: str):
         print("  Obtine cheia de la: https://app.brevo.com/settings/keys/api")
         return False
 
-    print(f"  Creez campanie Brevo: {subject}")
-    campaign = brevo_post("/emailCampaigns", {
-        "name":        f"Newsletter {datetime.now().strftime('%d.%m.%Y')}",
-        "subject":     subject,
-        "sender":      {"name": SENDER_NAME, "email": SENDER_EMAIL},
-        "type":        "classic",
-        "htmlContent": html,
-        "recipients":  {"listIds": [LIST_ID]},
-    })
-    cid = campaign.get("id")
-    print(f"  Campanie creata (ID: {cid}). Trimit acum...")
-    brevo_post(f"/emailCampaigns/{cid}/sendNow", {})
-    print(f"  OK! Verifica: https://app.brevo.com/email-campaigns")
-    return True
+    try:
+        print(f"  Creez campanie Brevo: {subject}")
+        campaign = brevo_post("/emailCampaigns", {
+            "name":        f"Newsletter {datetime.now().strftime('%d.%m.%Y')}",
+            "subject":     subject,
+            "sender":      {"name": SENDER_NAME, "email": SENDER_EMAIL},
+            "type":        "classic",
+            "htmlContent": html,
+            "recipients":  {"listIds": [LIST_ID]},
+        })
+        cid = campaign.get("id")
+        print(f"  Campanie creata (ID: {cid}). Trimit acum...")
+        brevo_post(f"/emailCampaigns/{cid}/sendNow", {})
+        print(f"  OK! Verifica: https://app.brevo.com/email-campaigns")
+        return True
+    except urllib.error.HTTPError as e:
+        # Cauza frecventa: expeditorul nu e verificat in Brevo (Settings -> Senders),
+        # sau lista nu are destinatari validi. NU oprim pipeline-ul pentru asta.
+        print(f"  [WARN] Brevo a respins campania (HTTP {e.code}).")
+        print(f"  Verifica ca expeditorul '{SENDER_EMAIL}' e verificat in Brevo → Settings → Senders.")
+        print(f"  Newsletter-ul NU a fost trimis, dar restul pipeline-ului continua normal.")
+        return False
 
 
 # ── Main ─────────────────────────────────────────────────────────────────────
@@ -408,7 +416,9 @@ def main():
         if ok:
             print(f"[OK] Newsletter trimis la {len(contacts)} abonati!")
         else:
-            sys.exit(1)
+            # Newsletter e non-critic — nu oprim pipeline-ul de date (exit 0)
+            print("[SKIP] Newsletter neexpediat (vezi WARN de mai sus). Continui fara eroare.")
+            sys.exit(0)
 
 
 if __name__ == "__main__":

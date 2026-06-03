@@ -137,6 +137,7 @@ jobs:
       # ── 9. Newsletter zilnic (Brevo SMTP) — rulat DOAR la 08:00 Romania ────
       - name: Trimite newsletter zilnic
         if: github.event.schedule == '0 6 * * *' || github.event_name == 'workflow_dispatch'
+        continue-on-error: true   # non-critic — nu trebuie sa blocheze commit/push-ul datelor
         working-directory: scripts
         env:
           BREVO_SMTP_USER:    ${{ secrets.BREVO_SMTP_USER }}
@@ -156,6 +157,7 @@ jobs:
       # ── 10. Telegram — top oferte zilnice — rulat DOAR la 08:00 Romania ──
       - name: Postare Telegram canal oferte
         if: github.event.schedule == '0 6 * * *' || github.event_name == 'workflow_dispatch'
+        continue-on-error: true   # non-critic
         working-directory: scripts
         env:
           TELEGRAM_BOT_TOKEN:  ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -166,12 +168,14 @@ jobs:
       # ── 11. Generator continut social media pe NISE — la 08:00 Romania ────
       - name: Genereaza continut social media pe nise
         if: github.event.schedule == '0 6 * * *' || github.event_name == 'workflow_dispatch'
+        continue-on-error: true   # non-critic
         working-directory: scripts
         run: python generate_social_content.py
 
       # ── 12. Facebook Page auto-posting — la 08:00 Romania ────────────────
       - name: Postare automata Facebook Page
         if: github.event.schedule == '0 6 * * *' || github.event_name == 'workflow_dispatch'
+        continue-on-error: true   # non-critic
         working-directory: scripts
         env:
           FACEBOOK_PAGE_ID:    ${{ secrets.FACEBOOK_PAGE_ID }}
