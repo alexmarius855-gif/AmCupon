@@ -3,7 +3,7 @@
 import { useState, useMemo, useEffect } from "react";
 import { useWishlist } from "../hooks/useWishlist";
 
-/* â”€â”€â”€ Types â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ─── Types ──────────────────────────────────────────────────────────────── */
 export interface Produs {
   id?: number;
   title: string;
@@ -57,7 +57,7 @@ export interface Banner {
   category: string;
 }
 
-/* â”€â”€â”€ Helpers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ─── Helpers ─────────────────────────────────────────────────────────────── */
 function numeAfisat(s: string) {
   return (s || "").split(".")[0].replace(/-/g, " ")
     .split(" ").map(w => w[0]?.toUpperCase() + w.slice(1)).join(" ");
@@ -76,22 +76,22 @@ function maxDiscount(promotii: Promotie[]): number {
 // Emoji per categorie produs
 function catEmoji(cat: string): string {
   const c = (cat || "").toLowerCase();
-  if (c.includes("fashion") || c.includes("clothing") || c.includes("shoes")) return "đź‘—";
-  if (c.includes("electronic") || c.includes("tech") || c.includes("phone") || c.includes("esim")) return "đź’»";
-  if (c.includes("beauty") || c.includes("parfum") || c.includes("cosmet")) return "đź’„";
-  if (c.includes("sport") || c.includes("outdoor") || c.includes("fitness")) return "đźŹ";
-  if (c.includes("home") || c.includes("casa") || c.includes("garden")) return "đźŹˇ";
-  if (c.includes("book") || c.includes("carte")) return "đź“š";
-  if (c.includes("toy") || c.includes("copii") || c.includes("kids")) return "đź‘¶";
-  if (c.includes("pharma") || c.includes("health") || c.includes("medic")) return "đź’Š";
-  if (c.includes("food") || c.includes("grocery") || c.includes("aliment")) return "đź›’";
-  if (c.includes("travel") || c.includes("hotel") || c.includes("flight")) return "âśď¸Ź";
-  if (c.includes("auto") || c.includes("car") || c.includes("moto")) return "đźš—";
-  if (c.includes("game") || c.includes("jocuri")) return "đźŽ®";
-  if (c.includes("pet") || c.includes("animal")) return "đźľ";
-  if (c.includes("jewel") || c.includes("bijuterie")) return "đź’Ž";
-  if (c.includes("gift") || c.includes("cadou")) return "đźŽ";
-  return "đź›Ťď¸Ź";
+  if (c.includes("fashion") || c.includes("clothing") || c.includes("shoes")) return "👗";
+  if (c.includes("electronic") || c.includes("tech") || c.includes("phone") || c.includes("esim")) return "💻";
+  if (c.includes("beauty") || c.includes("parfum") || c.includes("cosmet")) return "💄";
+  if (c.includes("sport") || c.includes("outdoor") || c.includes("fitness")) return "🏃";
+  if (c.includes("home") || c.includes("casa") || c.includes("garden")) return "🏡";
+  if (c.includes("book") || c.includes("carte")) return "📚";
+  if (c.includes("toy") || c.includes("copii") || c.includes("kids")) return "👶";
+  if (c.includes("pharma") || c.includes("health") || c.includes("medic")) return "💊";
+  if (c.includes("food") || c.includes("grocery") || c.includes("aliment")) return "🛒";
+  if (c.includes("travel") || c.includes("hotel") || c.includes("flight")) return "✈️";
+  if (c.includes("auto") || c.includes("car") || c.includes("moto")) return "🚗";
+  if (c.includes("game") || c.includes("jocuri")) return "🎮";
+  if (c.includes("pet") || c.includes("animal")) return "🐾";
+  if (c.includes("jewel") || c.includes("bijuterie")) return "💎";
+  if (c.includes("gift") || c.includes("cadou")) return "🎁";
+  return "🛍️";
 }
 
 // Culori logo fallback
@@ -103,7 +103,7 @@ function logoBg(name: string) {
 type Sort = "discount" | "pret_asc" | "pret_desc" | "nou";
 type Tab  = "oferte" | "produse" | "campanii";
 
-/* â”€â”€â”€ Product Card â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ─── Product Card ────────────────────────────────────────────────────────── */
 function ProdusCard({ p, onSave, saved }: { p: Produs; onSave: () => void; saved: boolean }) {
   const [imgOk, setImgOk] = useState(true);
   const hasImg = p.image && imgOk;
@@ -122,7 +122,7 @@ function ProdusCard({ p, onSave, saved }: { p: Produs; onSave: () => void; saved
             : "bg-slate-800/90 border-slate-600 text-slate-500 hover:text-red-400 hover:border-red-400"
           }`}
       >
-        {saved ? "â™Ą" : "â™ˇ"}
+        {saved ? "♥" : "♡"}
       </button>
 
       <a href={p.url} target="_blank" rel="sponsored noopener noreferrer" className="flex flex-col flex-1">
@@ -171,7 +171,7 @@ function ProdusCard({ p, onSave, saved }: { p: Produs; onSave: () => void; saved
   );
 }
 
-/* â”€â”€â”€ Deal Card (din output.json) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ─── Deal Card (din output.json) ─────────────────────────────────────────── */
 function DealCard({ m, rank }: { m: Magazin; rank?: number }) {
   const [imgOk, setImgOk] = useState(true);
   const promo = m.promotii[0];
@@ -231,21 +231,21 @@ function DealCard({ m, rank }: { m: Magazin; rank?: number }) {
             <span className="w-1 h-1 rounded-full bg-emerald-400 animate-pulse inline-block"/>
             Verificat azi
           </div>
-          <span className="text-slate-300 text-[10px]">Â·</span>
+          <span className="text-slate-300 text-[10px]">·</span>
           <span className="text-[10px] text-slate-400">{m.promotii.length} {m.promotii.length === 1 ? "oferta" : "oferte"}</span>
         </div>
       </div>
       {/* CTA */}
       <div className="px-4 pb-4">
         <div className="bg-orange-500 group-hover:bg-orange-600 text-white text-xs font-black py-2 rounded-xl text-center transition-colors">
-          {m.cod_cupon ? "Copiaza codul" : "Vezi oferta"} â†’
+          {m.cod_cupon ? "Copiaza codul" : "Vezi oferta"} →
         </div>
       </div>
     </a>
   );
 }
 
-/* â”€â”€â”€ Main Component â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ─── Main Component ──────────────────────────────────────────────────────── */
 export default function ProduseClient({
   products,
   updated,
@@ -331,7 +331,7 @@ export default function ProduseClient({
   return (
     <div className="min-h-screen bg-slate-950">
 
-      {/* â”€â”€â”€ HEADER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* ─── HEADER ───────────────────────────────────────────────────────── */}
       <header className="bg-slate-950/95 backdrop-blur-sm border-b border-slate-800 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 h-[60px] flex items-center gap-3">
           <a href="/" className="flex items-center gap-1.5 shrink-0">
@@ -382,7 +382,7 @@ export default function ProduseClient({
         )}
       </header>
 
-      {/* â”€â”€â”€ HERO DARK â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* ─── HERO DARK ────────────────────────────────────────────────────── */}
       <section className="relative bg-slate-950 text-white overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute inset-0" style={{background:"radial-gradient(ellipse 80% 60% at 50% 0%, rgba(249,115,22,0.15) 0%, transparent 65%)"}}/>
@@ -391,7 +391,7 @@ export default function ProduseClient({
         <div className="relative max-w-5xl mx-auto px-4 pt-14 pb-16 text-center">
           <div className="inline-flex items-center gap-2 bg-white/8 border border-white/15 rounded-full px-4 py-1.5 text-xs font-semibold text-white/70 mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse inline-block"/>
-            {cuPromotii.length} magazine cu promotii active Â· {products.length} produse in catalog
+            {cuPromotii.length} magazine cu promotii active · {products.length} produse in catalog
           </div>
           <h1 className="text-4xl md:text-6xl font-black tracking-tight leading-tight mb-4">
             <span className="text-white">Cumpara mai inteligent</span><br/>
@@ -419,14 +419,14 @@ export default function ProduseClient({
         </div>
       </section>
 
-      {/* â”€â”€â”€ TABS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* ─── TABS ─────────────────────────────────────────────────────────── */}
       <div className="bg-white border-b border-slate-200 sticky top-[60px] z-40">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center gap-1 overflow-x-auto" style={{scrollbarWidth:"none"}}>
             {([
-              { id: "oferte",   label: `Top Deals (${cuPromotii.length})`,      emoji: "đź”Ą" },
-              { id: "campanii", label: `Campanii cu Imagini (${bannereValide.length})`, emoji: "đź–Ľď¸Ź" },
-              { id: "produse",  label: `Feed Produse (${products.length})`,      emoji: "đź“¦" },
+              { id: "oferte",   label: `Top Deals (${cuPromotii.length})`,      emoji: "🔥" },
+              { id: "campanii", label: `Campanii cu Imagini (${bannereValide.length})`, emoji: "🖼️" },
+              { id: "produse",  label: `Feed Produse (${products.length})`,      emoji: "📦" },
             ] as {id: Tab; label: string; emoji: string}[]).map(t => (
               <button key={t.id} onClick={() => setActiveTab(t.id)}
                 className={`flex items-center gap-2 px-5 py-3.5 text-sm font-semibold whitespace-nowrap border-b-2 transition-colors ${
@@ -442,11 +442,11 @@ export default function ProduseClient({
         </div>
       </div>
 
-      {/* â”€â”€â”€ TAB: TOP DEALS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* ─── TAB: TOP DEALS ───────────────────────────────────────────────── */}
       {activeTab === "oferte" && (
         <section id="top-deals" className="max-w-7xl mx-auto px-4 py-10">
           <div className="mb-8">
-            <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-2">LIVE Â· ACTUALIZAT AZI</p>
+            <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-2">LIVE · ACTUALIZAT AZI</p>
             <h2 className="text-3xl font-black tracking-tight text-white">Top Deals din Romania</h2>
             <p className="text-slate-400 text-sm mt-1.5">
               {cuPromotii.length} magazine cu promotii actuale, sortate dupa reducere maxima
@@ -455,7 +455,7 @@ export default function ProduseClient({
 
           {cuPromotii.length === 0 ? (
             <div className="text-center py-16 bg-slate-900 rounded-2xl border border-slate-700">
-              <p className="text-3xl mb-3">âŹł</p>
+              <p className="text-3xl mb-3">⏳</p>
               <p className="font-black text-slate-200 mb-2">Se incarca ofertele</p>
               <p className="text-slate-400 text-sm">Datele se actualizeaza zilnic la 08:00</p>
             </div>
@@ -478,7 +478,7 @@ export default function ProduseClient({
               {cuPromotii.length > 54 && (
                 <div className="text-center mt-8">
                   <a href="/" className="border-2 border-slate-700 hover:border-orange-500 text-slate-400 hover:text-orange-400 font-bold px-8 py-3 rounded-2xl text-sm transition-all hover:shadow-md inline-block">
-                    Vezi toate {cuPromotii.length} magazine pe homepage â†’
+                    Vezi toate {cuPromotii.length} magazine pe homepage →
                   </a>
                 </div>
               )}
@@ -487,7 +487,7 @@ export default function ProduseClient({
         </section>
       )}
 
-      {/* â”€â”€â”€ TAB: CAMPANII CU IMAGINI â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* ─── TAB: CAMPANII CU IMAGINI ─────────────────────────────────────── */}
       {activeTab === "campanii" && (
         <section className="max-w-7xl mx-auto px-4 py-10">
           <div className="mb-8">
@@ -500,7 +500,7 @@ export default function ProduseClient({
 
           {bannereValide.length === 0 ? (
             <div className="text-center py-16 bg-slate-900 rounded-2xl border border-slate-700">
-              <p className="text-3xl mb-3">đź–Ľď¸Ź</p>
+              <p className="text-3xl mb-3">🖼️</p>
               <p className="font-black text-slate-200 mb-2">Nicio campanie activa momentan</p>
               <p className="text-slate-400 text-sm">Bannere se actualizeaza zilnic odata ce magazinele activeaza campanii</p>
             </div>
@@ -520,7 +520,7 @@ export default function ProduseClient({
                       <p className="text-white/70 text-sm">{b.name || b.category}</p>
                     </div>
                     <span className="ml-auto bg-orange-500 text-white font-black px-4 py-2 rounded-xl text-sm">
-                      Vezi oferta â†’
+                      Vezi oferta →
                     </span>
                   </div>
                 </a>
@@ -551,7 +551,7 @@ export default function ProduseClient({
         </section>
       )}
 
-      {/* â”€â”€â”€ TAB: FEED PRODUSE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* ─── TAB: FEED PRODUSE ────────────────────────────────────────────── */}
       {activeTab === "produse" && (
         <section id="produse-feed" className="max-w-7xl mx-auto px-4 py-10">
           <div className="flex items-end justify-between mb-6">
@@ -559,22 +559,22 @@ export default function ProduseClient({
               <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-2">FEED-URI 2PERFORMANT</p>
               <h2 className="text-3xl font-black tracking-tight text-white">Catalog Produse</h2>
               <p className="text-slate-400 text-sm mt-1.5">
-                {products.length} produse din feed-urile partenerilor Â· {statsProds.magazine} magazine
-                {updated && ` Â· actualizat ${new Date(updated).toLocaleDateString("ro-RO")}`}
+                {products.length} produse din feed-urile partenerilor · {statsProds.magazine} magazine
+                {updated && ` · actualizat ${new Date(updated).toLocaleDateString("ro-RO")}`}
               </p>
             </div>
           </div>
 
           {products.length === 0 ? (
             <div className="text-center py-16 bg-slate-900 rounded-2xl border border-slate-700">
-              <p className="text-4xl mb-4">đź“¦</p>
+              <p className="text-4xl mb-4">📦</p>
               <h3 className="font-black text-slate-200 text-xl mb-2">Feed-urile se populeaza</h3>
               <p className="text-slate-500 text-sm mb-6 max-w-md mx-auto">
                 Produsele din feed-urile de afiliati se actualizeaza zilnic la 08:00. Intre timp, vezi ofertele din tab-ul Top Deals.
               </p>
               <button onClick={() => setActiveTab("oferte")}
                 className="bg-orange-500 text-white font-bold px-6 py-3 rounded-xl hover:bg-orange-600 transition-colors text-sm">
-                Vezi Top Deals â†’
+                Vezi Top Deals →
               </button>
             </div>
           ) : (
@@ -607,7 +607,7 @@ export default function ProduseClient({
                       {[0, 10, 25, 50].map(v => (
                         <button key={v} onClick={() => setMinDiscount(v)}
                           className={`px-3 py-2 rounded-xl text-sm font-semibold transition-colors ${minDiscount === v ? "bg-orange-500 text-white" : "border border-slate-700 bg-slate-800 text-slate-300 hover:border-orange-500"}`}>
-                          {v === 0 ? "Toate" : `â‰Ą${v}%`}
+                          {v === 0 ? "Toate" : `≥${v}%`}
                         </button>
                       ))}
                     </div>
@@ -644,11 +644,11 @@ export default function ProduseClient({
 
               {filtrate.length === 0 ? (
                 <div className="text-center py-12 bg-slate-900 rounded-2xl border border-slate-700">
-                  <p className="text-3xl mb-3">đź”Ť</p>
+                  <p className="text-3xl mb-3">🔍</p>
                   <p className="font-bold text-slate-200 mb-2">Niciun produs gasit</p>
                   <button onClick={() => { setCategorie(""); setMagazinFiltru(""); setMinDiscount(0); setSearch(""); }}
                     className="text-orange-500 font-semibold text-sm hover:text-orange-600">
-                    Reseteaza filtrele â†’
+                    Reseteaza filtrele →
                   </button>
                 </div>
               ) : (
@@ -705,16 +705,16 @@ export default function ProduseClient({
         </section>
       )}
 
-      {/* â”€â”€â”€ CROSS-PROMO: Alte sectiuni â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* ─── CROSS-PROMO: Alte sectiuni ───────────────────────────────────── */}
       <section className="bg-slate-50 border-t border-slate-100 py-10 px-4">
         <div className="max-w-7xl mx-auto">
           <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { href: "/",               emoji: "đź”Ą", label: "Coduri de reducere",   desc: "Toate codurile verificate" },
-              { href: "/categorii",      emoji: "đź“‚", label: "Categorii",             desc: "Fashion, Tech, Beauty..." },
-              { href: "/toate-magazinele",emoji:"đźŹŞ", label: "Toate magazinele",       desc: `${magazine.length}+ magazine partenere` },
-              { href: "/blog",           emoji: "đź“ť", label: "Blog & Ghiduri",         desc: "Cum sa economisesti mai mult" },
+              { href: "/",               emoji: "🔥", label: "Coduri de reducere",   desc: "Toate codurile verificate" },
+              { href: "/categorii",      emoji: "📂", label: "Categorii",             desc: "Fashion, Tech, Beauty..." },
+              { href: "/toate-magazinele",emoji:"🏪", label: "Toate magazinele",       desc: `${magazine.length}+ magazine partenere` },
+              { href: "/blog",           emoji: "📝", label: "Blog & Ghiduri",         desc: "Cum sa economisesti mai mult" },
             ].map(s => (
               <a key={s.href} href={s.href}
                 className="group bg-white border border-slate-200 hover:border-orange-300 rounded-2xl p-5 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200">
@@ -727,18 +727,18 @@ export default function ProduseClient({
         </div>
       </section>
 
-      {/* â”€â”€â”€ FOOTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* ─── FOOTER ───────────────────────────────────────────────────────── */}
       <footer className="border-t border-slate-100 py-8 text-center text-xs text-slate-400 bg-white">
         <div className="max-w-7xl mx-auto px-4 space-y-2">
           <p>
             <a href="/" className="font-black text-slate-700 hover:text-orange-500 transition-colors">AmCupon.ro</a>
-            {" Â· "}
+            {" · "}
             <a href="/" className="hover:text-orange-500 transition-colors">Acasa</a>
-            {" Â· "}
+            {" · "}
             <a href="/toate-magazinele" className="hover:text-orange-500 transition-colors">Magazine</a>
-            {" Â· "}
+            {" · "}
             <a href="/categorii" className="hover:text-orange-500 transition-colors">Categorii</a>
-            {" Â· "}
+            {" · "}
             <a href="/blog" className="hover:text-orange-500 transition-colors">Blog</a>
           </p>
           <p className="text-slate-300">
@@ -748,7 +748,7 @@ export default function ProduseClient({
         </div>
       </footer>
 
-      {/* â”€â”€â”€ TOAST salvare produs â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* ─── TOAST salvare produs ──────────────────────────────────────────── */}
       {savedToast && (
         <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-slate-900 text-white px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-2 text-sm font-semibold animate-in slide-in-from-bottom-4 duration-300">
           <span className="text-red-400">&#9829;</span>
