@@ -172,6 +172,7 @@ export default function Home() {
   const [favorite, setFavorite]           = useState<Set<string>>(new Set());
   const [produse, setProduse]             = useState<{title:string;url:string;image:string;price:number;old_price?:number;discount_pct:number;brand:string;merchant:string;merchant_slug:string}[]>([]);
   const [recomandate, setRecomandate]     = useState<{magazin:string;nume:string;logo_url:string;categorie:string;comision:number;are_cod:boolean;oferta:string}[]>([]);
+  const [showFab, setShowFab]             = useState(false);
   const bannersRef                         = useRef<HTMLDivElement>(null);
   const trendingRef                        = useRef<HTMLDivElement>(null);
   const rezultateRef                       = useRef<HTMLDivElement>(null);
@@ -229,6 +230,12 @@ export default function Home() {
     } catch {}
   }, []);
 
+  useEffect(() => {
+    const onScroll = () => setShowFab(window.scrollY > 500);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   function toggleFavorit(slug: string, e: React.MouseEvent) {
     e.preventDefault(); e.stopPropagation();
     setFavorite(prev => {
@@ -279,6 +286,21 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-slate-950">
+      {/* ─── BUTON FLOTANT PRODUSE (burtiera) ─────────────────────────────── */}
+      <a
+        href="/produse"
+        aria-label="Vezi produsele cu reducere"
+        className={`fixed bottom-5 left-1/2 -translate-x-1/2 z-40 flex items-center gap-2.5 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white font-black pl-4 pr-5 py-3 rounded-full shadow-2xl shadow-orange-500/50 ring-2 ring-orange-300/40 transition-all duration-300 hover:scale-105 ${showFab ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 translate-y-6 pointer-events-none"}`}
+      >
+        <span className="relative flex items-center justify-center w-8 h-8 rounded-full bg-white/20 text-lg">
+          🛍️
+          <span className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full ring-2 ring-orange-500 animate-pulse" />
+        </span>
+        <span className="text-sm leading-tight text-left">Produse cu<br/>reducere</span>
+        <span className="bg-white/25 text-[10px] font-black px-2 py-0.5 rounded-full tracking-wide">HOT</span>
+        <span className="text-lg">→</span>
+      </a>
+
 
       {/* ─── HEADER ─────────────────────────────────────────────────────── */}
       <header className="bg-slate-900/95 backdrop-blur-sm border-b border-slate-700 sticky top-0 z-50">
