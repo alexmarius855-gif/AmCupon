@@ -774,6 +774,64 @@ export default function Home() {
       )}
 
       {/* ─── SECTIUNI SPECIALE ─── */}
+      {/* ─── OFERTE PE CATEGORII (deals pe nise, cu link afiliat) ────────── */}
+      {!loading && (() => {
+        const cuOferta = magazine.filter(m => m.are_promotie && m.categorie_slug && m.promotii?.some((p: {zile_ramase:number}) => p.zile_ramase >= 0));
+        const grupuri: Record<string, Magazin[]> = {};
+        for (const m of cuOferta) { (grupuri[m.categorie_slug!] = grupuri[m.categorie_slug!] || []).push(m); }
+        const LABELS: Record<string,string> = { fashion:"👗 Fashion", "electronics-itc":"💻 Electronice", beauty:"💄 Frumusete", "home-garden":"🏡 Casa & Gradina", "sports-outdoors":"🏃 Sport", pharma:"💊 Farmacie", "babies-kids-toys":"🧸 Copii & Jucarii", automotive:"🚗 Auto-Moto", books:"📚 Carti", "pet-supplies":"🐾 Animale", "online-mall":"🛍️ Mall Online", "office-supplies":"📎 Birou", "health-personal-care":"🧴 Ingrijire" };
+        const topCat = Object.entries(grupuri).sort((a,b)=>b[1].length-a[1].length).slice(0,5);
+        if (!topCat.length) return null;
+        return (
+          <section className="bg-slate-950 border-b border-slate-800 py-12 px-4">
+            <div className="max-w-7xl mx-auto">
+              <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-2">🔥 OFERTE PE CATEGORII</p>
+              <h2 className="text-3xl font-black tracking-tight text-white mb-8">Cele mai bune oferte, pe nise</h2>
+              <div className="space-y-9">
+                {topCat.map(([slug, mags]) => {
+                  const top = [...mags].sort((a,b)=>(b.scor_final||0)-(a.scor_final||0)).slice(0,4);
+                  return (
+                    <div key={slug}>
+                      <div className="flex items-center justify-between mb-3">
+                        <h3 className="text-lg font-black text-white">{LABELS[slug] || slug}</h3>
+                        <a href={`/categorii/${slug}`} className="text-sm font-semibold text-orange-400 hover:text-orange-300">Toate →</a>
+                      </div>
+                      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        {top.map(m => {
+                          const promo = m.promotii?.find((p: {zile_ramase:number;cod_cupon:string})=>p.zile_ramase>=0 && p.cod_cupon) || m.promotii?.find((p: {zile_ramase:number})=>p.zile_ramase>=0);
+                          const link = promo?.landing_page || m.url_afiliat || m.url || '#';
+                          const disc = maxDiscount(m.promotii);
+                          return (
+                            <a key={m.magazin} href={link} target="_blank" rel="sponsored noopener noreferrer"
+                              className="group bg-slate-900 border border-slate-800 hover:border-orange-500/50 rounded-2xl p-4 transition-all hover:-translate-y-0.5 flex flex-col">
+                              <div className="flex items-center gap-2.5 mb-2">
+                                <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center shrink-0 overflow-hidden">
+                                  {m.logo_url ? (
+                                    // eslint-disable-next-line @next/next/no-img-element
+                                    <img src={m.logo_url} alt={numeAfisat(m.magazin)} className="w-8 h-8 object-contain" loading="lazy"/>
+                                  ) : (<span className="font-black text-orange-500">{numeAfisat(m.magazin)[0]}</span>)}
+                                </div>
+                                <div className="min-w-0">
+                                  <p className="font-black text-white text-sm truncate group-hover:text-orange-400 transition-colors">{numeAfisat(m.magazin)}</p>
+                                  {disc ? <span className="text-[10px] font-black text-emerald-400">{disc}</span> : m.cod_cupon ? <span className="text-[10px] font-bold text-emerald-400">COD</span> : <span className="text-[10px] text-slate-500">Oferta</span>}
+                                </div>
+                              </div>
+                              <p className="text-slate-400 text-[11px] line-clamp-2 flex-1">{promo?.nume || "Oferta activa"}</p>
+                              <div className="mt-2 text-[11px] font-black text-orange-500 group-hover:text-orange-400">Vezi oferta →</div>
+                            </a>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </section>
+        );
+      })()}
+
+      {/* ─── SECTIUNI SPECIALE ─── */}
       <section className="bg-slate-950 border-b border-slate-800 py-14 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="mb-8">
