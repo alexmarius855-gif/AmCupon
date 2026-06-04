@@ -19,6 +19,71 @@ def nume_afisat(magazin: str) -> str:
 
 
 ARTICOLE_EVERGREEN = [
+    # ── BEST-OF / NISA (intentie comerciala mare) ──────────────────────────────
+    {
+        "slug": "cele-mai-bune-produse-animale-companie-romania",
+        "title": f"Cele Mai Bune Produse pentru Animale de Companie {AN} — Ghid Economii",
+        "excerpt": f"Ghid complet {AN} pentru produse de calitate pentru caini si pisici: hrana, antiparazitare, accesorii. Unde cumperi cel mai ieftin si cum economisesti pana la 40%.",
+        "category": "Animale",
+        "tip": "ghid",
+        "content": f"""## Cum cumperi inteligent pentru animalul tau de companie in {AN}
+
+Romanii cheltuie tot mai mult pe animalele de companie — iar preturile la hrana premium si produsele veterinare au crescut. Vestea buna: cu putina atentie, poti economisi 30-40% la aceleasi produse de calitate. Iata ghidul complet.
+
+## Pe ce categorii merita sa fii atent la pret
+
+### 1. Hrana (cea mai mare cheltuiala lunara)
+Hrana de calitate face diferenta pentru sanatatea animalului — dar e si cheltuiala recurenta cea mai mare. Cumparata la sac mare (la oferta) costa cu pana la 35% mai putin pe kilogram decat la punga mica.
+
+### 2. Antiparazitare (sezonier, esential)
+Primavara si vara = sezonul de capuse si purici. Antiparazitarele pentru caini si pisici sunt produse pe care le cumperi oricum — asa ca merita sa prinzi o reducere. La [PetMart](/cod-reducere/petmart.ro) gasesti frecvent oferte la antiparazitare de la branduri verificate.
+
+### 3. Accesorii si jucarii
+Lese, hamuri, paturi, jucarii — produse cu marja mare, deci si reduceri mari (pana la 50% in campanii). Nu te grabi: astea apar des la oferta.
+
+### 4. Suplimente si produse veterinare
+Vitamine, suplimente pentru articulatii, produse de igiena. Aici calitatea conteaza — cauta branduri recomandate de veterinar, dar verifica pretul intre magazine.
+
+## Top sfaturi sa economisesti la produse pentru animale
+
+**1. Cumpara hrana la sac mare cand e la oferta**
+Un sac de 12-15 kg la reducere costa mult mai putin pe kg decat pungile mici. Daca ai spatiu de depozitare, e cea mai simpla economie.
+
+**2. Foloseste coduri de reducere inainte de comanda**
+AmCupon.ro verifica zilnic ofertele active la magazinele de animale. Un cod de 15% pe o comanda de 250 lei = aproape 40 lei economisiti instant.
+
+**3. Aboneaza-te la newslettere pentru reduceri la prima comanda**
+Majoritatea magazinelor ofera 10-15% la prima comanda. Inscrie-te, cumpara, gata.
+
+**4. Profita de campaniile sezoniere**
+Antiparazitarele sunt mai ieftine primavara, paturile si culcusurile — toamna. Black Friday aduce reduceri la hrana premium si accesorii.
+
+**5. Compara intre magazine**
+Acelasi sac de hrana poate varia cu 20-30% intre magazine. Verifica intotdeauna 2-3 surse inainte sa comanzi.
+
+## Cand sa cumperi — calendarul reducerilor
+
+| Perioada | Ce e la reducere | Reducere medie |
+|----------|------------------|----------------|
+| Primavara | Antiparazitare, vitamine | 20-30% |
+| Vara | Accesorii outdoor, racire | 25-40% |
+| Toamna | Culcusuri, paturi, hrana | 20-35% |
+| Black Friday | Hrana premium, tot | 30-50% |
+| Ianuarie | Lichidari de stoc | 30-60% |
+
+## Greseli frecvente de evitat
+
+- **Nu cumpara cea mai ieftina hrana** — calitatea proasta costa mai mult la veterinar pe termen lung.
+- **Nu schimba brusc hrana** — tranzitia se face gradual, in 7-10 zile.
+- **Nu ignora data de expirare** la ofertele de lichidare.
+- **Nu cumpara antiparazitare necorespunzatoare greutatii** animalului.
+
+## Concluzie
+
+Animalul tau merita produse de calitate — iar tu meriti sa nu platesti pretul intreg. Secretul e simplu: cumperi acelasi lucru, dar cu cod de reducere si la momentul potrivit. [AmCupon.ro](/categorii/pet-supplies) centralizeaza ofertele active la magazinele de animale, verificate zilnic.
+
+[**Vezi toate ofertele pentru animale de companie →**](/categorii/pet-supplies)""",
+    },
     # ── GHIDURI CATEGORII ──────────────────────────────────────────────────────
     {
         "slug": "ghid-cumparaturi-fashion-online-romania",
