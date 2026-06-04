@@ -84,6 +84,212 @@ Animalul tau merita produse de calitate — iar tu meriti sa nu platesti pretul 
 
 [**Vezi toate ofertele pentru animale de companie →**](/categorii/pet-supplies)""",
     },
+    {
+        "slug": "cele-mai-bune-oferte-carti-online-romania",
+        "title": f"Cele Mai Bune Oferte la Carti Online Romania {AN} — Unde Cumperi Ieftin",
+        "excerpt": f"Ghid {AN} pentru carti online ieftine: Carturesti, Litera, Bookzone, Humanitas. Coduri reducere active si sfaturi sa economisesti pana la 50% la carti.",
+        "category": "Carti",
+        "tip": "ghid",
+        "content": f"""## Cumparaturile de carti online in Romania in {AN}
+
+Cititul a redevenit la moda, iar magazinele online de carti se intrec in reduceri. Vestea buna: cu un cod de reducere potrivit, poti economisi 20-50% la carti — fie ca iei beletristica, manuale sau carti pentru copii.
+
+## Top magazine de carti cu coduri de reducere
+
+### 1. [Carturesti](/cod-reducere/carturesti.ro) — cel mai cunoscut
+Carturesti are cea mai mare selectie de carti, plus papetarie si cadouri. Promotiile pe categorii ajung frecvent la 25-30%, iar tombolele si campaniile sezoniere aduc oferte si mai bune.
+
+### 2. [Litera](/cod-reducere/litera.ro) — editura cu preturi bune
+Litera publica bestselleruri si carti pentru copii. Cumparand direct de la editura, prinzi reduceri mari la titlurile proprii.
+
+### 3. [Bookzone](/cod-reducere/bookzone.ro) — noutati si carti in engleza
+Bookzone aduce constant noutati editoriale si o selectie buna de carti in limba engleza. Codurile de tip EXTRA aplica reduceri suplimentare peste preturile deja mici.
+
+### 4. [Humanitas](/cod-reducere/libhumanitas.ro) — calitate si fond de carte
+Libraria Humanitas are titluri de stiinta, filosofie si beletristica de top. Reducerile pe colectii ajung la 20-25%.
+
+## Cum economisesti la carti online
+
+**1. Cumpara in campanii**
+Cele mai mari reduceri apar de Ziua Cartii (aprilie), la inceput de an scolar (august-septembrie) si de Black Friday. Atunci reducerile trec de 40%.
+
+**2. Foloseste coduri de reducere**
+AmCupon.ro verifica zilnic codurile active de la librariile online. Un cod de 20% pe o comanda de 150 lei = 30 lei economisiti.
+
+**3. Profita de transportul gratuit**
+Majoritatea librariilor ofera livrare gratuita peste un anumit prag. Comanda mai multe carti odata ca sa atingi pragul.
+
+**4. Urmareste editurile direct**
+Cumparand de la editura (Litera, Humanitas), eviti adaosul si prinzi reduceri la titlurile proprii.
+
+## Cand sa cumperi carti — calendarul reducerilor
+
+| Perioada | Eveniment | Reducere medie |
+|----------|-----------|----------------|
+| Aprilie | Ziua Cartii | 30-50% |
+| August-Septembrie | Inceput an scolar | 25-40% |
+| Noiembrie | Black Friday | 40-60% |
+| Decembrie | Craciun | 20-35% |
+
+## Concluzie
+
+Cartile online sunt mult mai ieftine daca stii unde si cand sa cauti. [AmCupon.ro](/categorii/books) centralizeaza codurile de reducere active de la toate librariile — verificate zilnic — ca sa nu platesti niciodata pretul intreg.
+
+[**Vezi toate ofertele la carti →**](/categorii/books)""",
+    },
+    {
+        "slug": "cele-mai-bune-oferte-casa-gradina-romania",
+        "title": f"Cele Mai Bune Oferte Casa si Gradina {AN} — Amenajeaza Ieftin",
+        "excerpt": f"Ghid {AN} pentru amenajari casa si gradina la preturi mici. Mobilier, decor, scule, gratare. Coduri reducere active si sfaturi sa economisesti pana la 50%.",
+        "category": "Casa",
+        "tip": "ghid",
+        "content": f"""## Amenajarile pentru casa si gradina in {AN}
+
+Fie ca renovezi, mobilezi sau pregatesti gradina de vara, costurile se aduna repede. Cu putina atentie la reduceri, poti economisi sume importante la mobilier, decor, scule si produse de gradina.
+
+## Top magazine casa si gradina cu reduceri
+
+### 1. [Kamin](/cod-reducere/kamin.ro) — gratare si exterior
+Kamin e specializat pe gratare, seminee si produse pentru exterior. Campaniile aduc frecvent cadouri si reduceri mari la branduri precum Weber.
+
+### 2. [Dedeman](/cod-reducere/dedeman.ro) — bricolaj si materiale
+Cel mai mare lant de bricolaj din Romania. Reducerile la scule, materiale de constructii si gradina sunt constante, mai ales in sezonul cald.
+
+### 3. [Dacris](/cod-reducere/dacris.net) — birou si organizare
+Dacris are accesorii premium pentru birou si organizarea casei. Bun pentru cei care lucreaza de acasa.
+
+## Cum economisesti la amenajari
+
+**1. Cumpara sculele in afara sezonului**
+Sculele de gradina sunt mai ieftine toamna-iarna, iar cele de iarna (deszapezire) — primavara. Reducerile ajung la 40%.
+
+**2. Profita de campaniile de primavara**
+Martie-mai aduc cele mai mari reduceri la mobilier de gradina, gratare si plante.
+
+**3. Foloseste coduri de reducere**
+AmCupon.ro verifica zilnic ofertele active. La o comanda mare de mobilier, un cod de 15% inseamna sute de lei economisiti.
+
+**4. Compara preturile la produsele mari**
+Mobilierul si electrocasnicele variaza mult intre magazine. Verifica 2-3 surse inainte de o achizitie importanta.
+
+## Cand sa cumperi — calendarul reducerilor
+
+| Perioada | Ce e la reducere | Reducere medie |
+|----------|------------------|----------------|
+| Martie-Mai | Gradina, gratare, mobilier exterior | 20-40% |
+| Septembrie | Scule, amenajari interioare | 25-35% |
+| Noiembrie | Black Friday (tot) | 30-50% |
+| Ianuarie | Lichidari de stoc | 30-60% |
+
+## Concluzie
+
+Amenajarile nu trebuie sa coste o avere. [AmCupon.ro](/categorii/home-garden) aduna codurile de reducere active de la magazinele de casa si gradina — verificate zilnic.
+
+[**Vezi toate ofertele casa si gradina →**](/categorii/home-garden)""",
+    },
+    {
+        "slug": "cele-mai-bune-oferte-sport-fitness-romania",
+        "title": f"Cele Mai Bune Oferte Sport si Fitness {AN} — Echipament Ieftin",
+        "excerpt": f"Ghid {AN} pentru echipament sportiv ieftin: adidasi, haine sport, fitness. SportDepot, Decathlon, Fitlife. Coduri reducere active si sfaturi de economisire.",
+        "category": "Sport",
+        "tip": "ghid",
+        "content": f"""## Echipamentul sportiv in {AN} — cum cumperi inteligent
+
+Fie ca incepi sa alergi, mergi la sala sau practici un sport, echipamentul de calitate conteaza. Vestea buna: cu reducerile potrivite, prinzi branduri bune (Nike, Puma, Adidas) la preturi accesibile.
+
+## Top magazine sport cu reduceri
+
+### 1. [SportDepot](/cod-reducere/sportdepot.ro) — branduri internationale
+SportDepot are cea mai buna selectie de adidasi si echipament de la branduri mari. Campaniile Mid Season Sale aduc reduceri de pana la 40%, iar codurile EXTRA aplica reduceri suplimentare.
+
+### 2. [Decathlon](/cod-reducere/decathlon.ro) — raport calitate-pret
+Decathlon e ideal pentru echipament de toate tipurile la preturi mici. Produsele proprii sunt foarte bune ca raport calitate-pret.
+
+### 3. [Fitlife](/cod-reducere/fitlife.ro) — fitness si suplimente
+Fitlife e specializat pe fitness, suplimente si accesorii de sala. Spring Sale aduce reduceri de pana la 70%.
+
+## Cum economisesti la echipament sportiv
+
+**1. Cumpara adidasii la finalul sezonului**
+Modelele din sezonul trecut ajung la -50% cand apar cele noi. Performanta ramane aceeasi.
+
+**2. Foloseste coduri de reducere**
+AmCupon.ro verifica zilnic ofertele active. Un cod de 10% extra pe o comanda de 400 lei la SportDepot = 40 lei economisiti instant.
+
+**3. Profita de campaniile de sezon**
+Mid Season Sale (mar-apr, sep-oct) aduce cele mai bune reduceri la echipament.
+
+**4. Cumpara suplimentele la cantitate**
+Proteinele si suplimentele sunt mai ieftine la pachete mari, mai ales in campanii.
+
+## Cand sa cumperi — calendarul reducerilor
+
+| Perioada | Ce e la reducere | Reducere medie |
+|----------|------------------|----------------|
+| Martie-Aprilie | Colectii primavara-vara | 30-50% |
+| Iulie | Summer sale | 40-60% |
+| Septembrie-Octombrie | Mid season | 30-40% |
+| Noiembrie | Black Friday | 40-70% |
+
+## Concluzie
+
+Echipamentul sportiv de calitate nu trebuie sa fie scump. [AmCupon.ro](/categorii/sports-outdoors) aduna codurile active de la magazinele de sport — verificate zilnic.
+
+[**Vezi toate ofertele sport →**](/sport)""",
+    },
+    {
+        "slug": "ghid-black-friday-romania",
+        "title": f"Ghid Black Friday Romania {AN} — Cum Prinzi Cele Mai Bune Reduceri",
+        "excerpt": f"Ghid complet Black Friday {AN} in Romania: cand e, cum te pregatesti, ce magazine au cele mai bune reduceri si cum eviti falsele oferte.",
+        "category": "Ghid",
+        "tip": "ghid",
+        "content": f"""## Black Friday in Romania {AN} — ghidul complet
+
+Black Friday e cel mai mare eveniment de reduceri din an. Dar atentie: nu toate ofertele sunt reale. Iata cum prinzi reducerile adevarate si eviti capcanele.
+
+## Cand e Black Friday in {AN}
+
+In Romania, Black Friday cade de obicei in a treia sau a patra vineri din noiembrie. Multe magazine il intind pe toata luna („Black Friday Month"), cu valuri de oferte.
+
+## Cum te pregatesti din timp
+
+**1. Fa-ti lista de dorinte ACUM**
+Noteaza produsele pe care le vrei si pretul lor actual. Asa vei sti daca reducerea de Black Friday e reala sau falsa.
+
+**2. Verifica istoricul preturilor**
+Multe magazine umfla pretul cu o saptamana inainte ca sa para reducerea mai mare. Daca stii pretul normal, nu te pacalesti.
+
+**3. Aboneaza-te la newslettere**
+Magazinele trimit codurile si ofertele exclusive pe email cu cateva zile inainte. Inscrie-te din timp.
+
+## Ce magazine au cele mai bune reduceri
+
+- **Electronice/IT:** [eMAG](/cod-reducere/emag.ro), Altex, PCGarage — reduceri reale la telefoane, laptopuri
+- **Fashion:** [FashionDays](/cod-reducere/fashiondays.ro), Answear — pana la 70-80%
+- **Beauty:** [Notino](/cod-reducere/notino.ro) — parfumuri si cosmetice la jumatate de pret
+- **Carti:** Carturesti, Litera — reduceri masive
+- **Sport:** SportDepot, Decathlon
+
+## Cum eviti falsele oferte
+
+1. **Compara cu pretul normal** (l-ai notat din timp)
+2. **Nu te grabi** — „stoc limitat" e adesea o presiune falsa
+3. **Citeste recenziile** produsului inainte sa cumperi
+4. **Verifica costul de livrare** — uneori anuleaza reducerea
+
+## Strategia castigatoare
+
+In ziua de Black Friday:
+1. Intra dimineata devreme (cele mai bune stocuri pleaca repede)
+2. Verifica pe AmCupon.ro codurile active — multe magazine dau coduri EXTRA peste reducerile afisate
+3. Cumpara ce ai pe lista, nu ce „pare" ieftin
+
+## Concluzie
+
+Black Friday e o oportunitate reala de a economisi sute de lei — daca esti pregatit. [AmCupon.ro](/black-friday) aduna toate codurile si ofertele active de Black Friday, verificate zilnic.
+
+[**Vezi ofertele Black Friday →**](/black-friday)""",
+    },
     # ── GHIDURI CATEGORII ──────────────────────────────────────────────────────
     {
         "slug": "ghid-cumparaturi-fashion-online-romania",
