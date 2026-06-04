@@ -134,6 +134,11 @@ jobs:
         working-directory: scripts
         run: python generate_store_descriptions.py --force
 
+      # ── 8d. Prioritizare magazine dupa potential de castig ────────────────
+      - name: Genereaza top magazine (potential castig)
+        working-directory: scripts
+        run: python generate_merchant_priority.py
+
       # ── 9. Newsletter zilnic (Brevo SMTP) — rulat DOAR la 08:00 Romania ────
       - name: Trimite newsletter zilnic
         if: github.event.schedule == '0 6 * * *' || github.event_name == 'workflow_dispatch'
@@ -195,6 +200,9 @@ jobs:
           git add frontend/public/blog-latest.json  || true
           git add frontend/public/products.json     || true
           git add frontend/public/products-home.json || true
+          git add frontend/public/recomandate.json || true
+          git add frontend/public/store-descriptions.json || true
+          git add data/RAPORT-TOP-CASTIG.md        || true
           git add frontend/public/banners.json     || true
           git add frontend/public/top-produse.json || true
           git add data/output.json                 || true

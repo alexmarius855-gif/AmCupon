@@ -1,0 +1,110 @@
+[
+ {
+  "magazin": "moftcollection.ro",
+  "nume": "Moftcollection",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13200/medium/13200.png",
+  "categorie": "Electronics IT&C",
+  "comision": 20.0,
+  "are_cod": false,
+  "oferta": "Livrare Gratuita la comenzi de peste 200 lei"
+ },
+ {
+  "magazin": "bookzone.ro",
+  "nume": "Bookzone",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9309/medium/9309.png",
+  "categorie": "Books",
+  "comision": 10.0,
+  "are_cod": false,
+  "oferta": "Nou pe bookzone.ro: 1200 de titluri în engleză – Un adevărat festin li"
+ },
+ {
+  "magazin": "noriel.ro",
+  "nume": "Noriel",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/7926/medium/7926.png",
+  "categorie": "Babies Kids & Toys",
+  "comision": 7.0,
+  "are_cod": true,
+  "oferta": "50 lei Voucher Cadou la comenzile de minimum 249 de lei | 25.05 - 02.0"
+ },
+ {
+  "magazin": "carturesti.ro",
+  "nume": "Carturesti",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11380/medium/11380.png",
+  "categorie": "Books",
+  "comision": 9.0,
+  "are_cod": false,
+  "oferta": "Anul școlar s-a terminat. Povestea abia începe"
+ },
+ {
+  "magazin": "apiland.ro",
+  "nume": "Apiland",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/2683/medium/2683.png",
+  "categorie": "Health & Personal care",
+  "comision": 10.0,
+  "are_cod": false,
+  "oferta": "Start de vară cu tonicele apicole ApiLand"
+ },
+ {
+  "magazin": "elindor.ro",
+  "nume": "Elindor",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13890/medium/13890.jpeg",
+  "categorie": "Online Mall",
+  "comision": 10.0,
+  "are_cod": true,
+  "oferta": "10% reducere extra pentru afiliatii Elindor 😊"
+ },
+ {
+  "magazin": "kamin.ro",
+  "nume": "Kamin",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13443/medium/13443.png",
+  "categorie": "Home & Garden",
+  "comision": 10.0,
+  "are_cod": false,
+  "oferta": "Gratar WEBER Gratuit"
+ },
+ {
+  "magazin": "libhumanitas.ro",
+  "nume": "Libhumanitas",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/2577/medium/2577.png",
+  "categorie": "Books",
+  "comision": 10.0,
+  "are_cod": false,
+  "oferta": "20% reducere la toate titlurile din categoria Știință ale editurii HUM"
+ },
+ {
+  "magazin": "fara-daunatori.ro",
+  "nume": "Fara Daunatori",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11329/medium/11329.png",
+  "categorie": "Home & Garden",
+  "comision": 10.0,
+  "are_cod": false,
+  "oferta": "Oferta 1+1"
+ },
+ {
+  "magazin": "dacris.net",
+  "nume": "Dacris",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/2970/medium/2970.jpg",
+  "categorie": "Office supplies",
+  "comision": 10.0,
+  "are_cod": false,
+  "oferta": "Accesorii premium pentru laptop, mouse, tastatură și hub-uri"
+ },
+ {
+  "magazin": "litera.ro",
+  "nume": "Litera",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9545/medium/9545.png",
+  "categorie": "Books",
+  "comision": 7.0,
+  "are_cod": false,
+  "oferta": "🧸 De 1 iunie, copiii au decis: toate cărțile trebuie să ajungă la ei! "
+ },
+ {
+  "magazin": "paa-home.ro",
+  "nume": "Paa Home",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13525/medium/13525.jpg",
+  "categorie": "Home & Garden",
+  "comision": 7.0,
+  "are_cod": false,
+  "oferta": "Livrare Gratuita la comenzi de peste 350 lei"
+ }
+]

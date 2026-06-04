@@ -171,6 +171,7 @@ export default function Home() {
   const [filtruActiv, setFiltruActiv]     = useState<"toate"|"cod"|"promotie"|"favorite">("toate");
   const [favorite, setFavorite]           = useState<Set<string>>(new Set());
   const [produse, setProduse]             = useState<{title:string;url:string;image:string;price:number;old_price?:number;discount_pct:number;brand:string;merchant:string;merchant_slug:string}[]>([]);
+  const [recomandate, setRecomandate]     = useState<{magazin:string;nume:string;logo_url:string;categorie:string;comision:number;are_cod:boolean;oferta:string}[]>([]);
   const bannersRef                         = useRef<HTMLDivElement>(null);
   const trendingRef                        = useRef<HTMLDivElement>(null);
   const rezultateRef                       = useRef<HTMLDivElement>(null);
@@ -178,6 +179,7 @@ export default function Home() {
   useEffect(() => {
     fetch("/output.json").then(r => r.json()).then(data => { setMagazine(data); setLoading(false); });
     fetch("/blog-latest.json").then(r => r.json()).then((posts: BlogPost[]) => setBlogPosts(posts.slice(0, 3))).catch(() => {});
+    fetch("/recomandate.json").then(r => r.json()).then(setRecomandate).catch(() => {});
     fetch("/products-home.json").then(r => r.json()).then(data => {
       const all = data?.products || data || [];
       type P = {title:string;url:string;image:string;price:number;old_price?:number;discount_pct:number;brand:string;merchant:string;merchant_slug:string;category:string};
@@ -733,6 +735,45 @@ export default function Home() {
       )}
 
       {/* ─── SECTIUNI SPECIALE ────────────────────────────────────────────── */}
+      {/* ─── RECOMANDATE (potential castig: comision × cerere × oferta) ──── */}
+      {recomandate.length > 0 && (
+        <section className="bg-slate-900 border-b border-slate-800 py-12 px-4">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex items-end justify-between mb-7">
+              <div>
+                <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-2">⭐ RECOMANDATE DE NOI</p>
+                <h2 className="text-3xl font-black tracking-tight text-white">Magazine de incredere</h2>
+                <p className="text-slate-400 text-sm mt-1.5">Magazine cu oferte active, verificate zilnic</p>
+              </div>
+              <a href="/toate-magazinele" className="hidden sm:flex items-center gap-1.5 text-sm font-bold text-orange-400 hover:text-orange-300 border border-orange-500/30 hover:border-orange-400/60 bg-orange-500/10 px-4 py-2 rounded-full whitespace-nowrap transition-colors">Toate magazinele →</a>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+              {recomandate.map(r => (
+                <a key={r.magazin} href={`/cod-reducere/${r.magazin}`}
+                  className="group bg-slate-950 border border-slate-800 hover:border-orange-500/50 rounded-2xl p-4 flex flex-col items-center text-center hover:-translate-y-0.5 transition-all duration-200">
+                  <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center mb-2.5 overflow-hidden shrink-0">
+                    {r.logo_url ? (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img src={r.logo_url} alt={r.nume} className="w-9 h-9 object-contain" loading="lazy" />
+                    ) : (
+                      <span className="text-base font-black text-orange-500">{r.nume.charAt(0)}</span>
+                    )}
+                  </div>
+                  <p className="font-black text-white text-xs truncate w-full group-hover:text-orange-400 transition-colors">{r.nume}</p>
+                  <p className="text-slate-500 text-[10px] truncate w-full mb-2">{r.categorie}</p>
+                  {r.are_cod ? (
+                    <span className="text-[10px] font-black text-emerald-400 bg-emerald-500/15 border border-emerald-500/25 px-2 py-0.5 rounded-full">COD ACTIV</span>
+                  ) : (
+                    <span className="text-[10px] font-bold text-orange-400 bg-orange-500/10 border border-orange-500/20 px-2 py-0.5 rounded-full">OFERTA</span>
+                  )}
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ─── SECTIUNI SPECIALE ─── */}
       <section className="bg-slate-950 border-b border-slate-800 py-14 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="mb-8">
