@@ -276,15 +276,15 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-slate-950">
 
       {/* ─── HEADER ─────────────────────────────────────────────────────── */}
-      <header className="bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm border-b border-slate-200 dark:border-slate-700 sticky top-0 z-50">
+      <header className="bg-slate-900/95 backdrop-blur-sm border-b border-slate-700 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 h-[60px] flex items-center gap-3">
 
           <a href="/" className="flex items-center gap-1.5 shrink-0">
             <div className="bg-orange-500 text-white font-black text-sm px-2 py-0.5 rounded-lg tracking-tighter">Am</div>
-            <span className="font-black text-slate-900 text-xl tracking-tight">Cupon<span className="text-orange-500">.ro</span></span>
+            <span className="font-black text-white text-xl tracking-tight">Cupon<span className="text-orange-500">.ro</span></span>
           </a>
 
           <div className="flex-1 relative max-w-2xl hidden sm:block">
@@ -293,10 +293,10 @@ export default function Home() {
             </svg>
             <input type="text" placeholder="Answear, eMAG, Notino..." value={cautare}
               onChange={e => { setCautare(e.target.value); setMenuOpen(false); }}
-              className="w-full bg-slate-50 border border-slate-200 rounded-full pl-9 pr-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400 focus:bg-white focus:border-orange-400 transition-all" />
+              className="w-full bg-slate-800 border border-slate-700 text-white placeholder-slate-500 rounded-full pl-9 pr-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-orange-400 transition-all" />
           </div>
 
-          <nav className="hidden md:flex items-center gap-5 text-sm font-semibold text-slate-600 ml-auto">
+          <nav className="hidden md:flex items-center gap-5 text-sm font-semibold text-slate-300 ml-auto">
             <a href="/oferte-azi" className="flex items-center gap-1 text-orange-500 hover:text-orange-600 transition-colors font-bold">
               <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse" />
               Oferte azi
@@ -311,10 +311,10 @@ export default function Home() {
                 </svg>
               </button>
               <div className="absolute right-0 top-full pt-1 hidden group-hover:block z-50 w-60">
-                <div className="bg-white border border-slate-200 rounded-2xl shadow-xl py-2">
+                <div className="bg-slate-900 border border-slate-700 rounded-2xl shadow-xl py-2">
                   {categoriiSortate.slice(0, 8).map(c => (
                     <a key={c.slug} href={`/categorii/${c.slug}`}
-                      className="flex items-center gap-3 px-4 py-2 text-sm text-slate-700 hover:bg-orange-50 hover:text-orange-600 transition-colors">
+                      className="flex items-center gap-3 px-4 py-2 text-sm text-slate-300 hover:bg-orange-500/15 hover:text-orange-400 transition-colors">
                       <span className="text-base">{c.emoji}</span>
                       <span className="font-medium">{c.label}</span>
                       {promoPerCateg[c.slug] > 0 && (
@@ -322,7 +322,7 @@ export default function Home() {
                       )}
                     </a>
                   ))}
-                  <div className="border-t border-slate-100 mt-1 pt-1">
+                  <div className="border-t border-slate-800 mt-1 pt-1">
                     <a href="/categorii" className="flex items-center px-4 py-2 text-sm font-bold text-orange-500 hover:bg-orange-50 transition-colors">
                       Toate categoriile →
                     </a>
@@ -333,7 +333,7 @@ export default function Home() {
           </nav>
 
           <button onClick={() => setMenuOpen(o => !o)}
-            className="md:hidden ml-auto p-2 rounded-xl hover:bg-slate-100 transition-colors text-slate-700" aria-label="Meniu">
+            className="md:hidden ml-auto p-2 rounded-xl hover:bg-slate-100 transition-colors text-slate-200" aria-label="Meniu">
             {menuOpen ? (
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12"/>
@@ -347,7 +347,7 @@ export default function Home() {
         </div>
 
         {menuOpen && (
-          <div className="md:hidden border-t border-slate-100 bg-white">
+          <div className="md:hidden border-t border-slate-800 bg-slate-900">
             <div className="max-w-7xl mx-auto px-4 py-4 space-y-4">
               <div className="relative">
                 <svg className="absolute left-3 top-2.5 w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -355,7 +355,7 @@ export default function Home() {
                 </svg>
                 <input type="text" placeholder="Cauta magazin..." value={cautare}
                   onChange={e => setCautare(e.target.value)}
-                  className="w-full bg-slate-50 border border-slate-200 rounded-full pl-9 pr-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400" />
+                  className="w-full bg-slate-800 border border-slate-700 text-white placeholder-slate-500 rounded-full pl-9 pr-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400" />
               </div>
               <nav className="space-y-1">
                 {[
@@ -375,7 +375,7 @@ export default function Home() {
                   { href: "/categorii",  label: "Toate categoriile" },
                 ].map(l => (
                   <a key={l.href} href={l.href} onClick={() => setMenuOpen(false)}
-                    className="flex items-center px-3 py-2.5 rounded-xl text-sm font-semibold text-slate-700 hover:bg-orange-50 hover:text-orange-600 transition-colors">
+                    className="flex items-center px-3 py-2.5 rounded-xl text-sm font-semibold text-slate-200 hover:bg-orange-50 hover:text-orange-600 transition-colors">
                     {l.label}
                   </a>
                 ))}
@@ -585,9 +585,9 @@ export default function Home() {
       </section>
 
       {/* ─── STATS BAR ───────────────────────────────────────────────────── */}
-      <div className="bg-white dark:bg-slate-800 border-b border-slate-100 dark:border-slate-700">
+      <div className="bg-slate-900 border-b border-slate-800">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-slate-100">
+          <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-slate-800">
             {[
               { icon: "🏪", value: magazine.length > 0 ? `${magazine.length}+` : "610+", label: "Magazine partenere" },
               { icon: "⚡", value: cuPromotii.length > 0 ? `${cuPromotii.length}` : "200+",  label: "Promotii active" },
@@ -597,7 +597,7 @@ export default function Home() {
               <div key={s.label} className="flex items-center gap-3 px-4 py-5">
                 <span className="text-2xl">{s.icon}</span>
                 <div>
-                  <p className="font-black text-slate-900 text-xl leading-none">{s.value}</p>
+                  <p className="font-black text-white text-xl leading-none">{s.value}</p>
                   <p className="text-xs text-slate-400 mt-0.5">{s.label}</p>
                 </div>
               </div>
@@ -658,7 +658,7 @@ export default function Home() {
 
       {/* ─── TRENDING ─────────────────────────────────────────────────────── */}
       {!loading && cuPromotii.length >= 3 && (
-        <section className="bg-white dark:bg-slate-900 border-b border-slate-100 dark:border-slate-800 py-12 px-4">
+        <section className="bg-slate-950 border-b border-slate-800 py-12 px-4">
           <div className="max-w-7xl mx-auto">
             <div className="flex items-end justify-between mb-7">
               <div>
@@ -666,19 +666,19 @@ export default function Home() {
                   <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse inline-block"/>
                   LIVE
                 </p>
-                <h2 className="text-3xl font-black tracking-tight text-slate-900">Trending acum</h2>
+                <h2 className="text-3xl font-black tracking-tight text-white">Trending acum</h2>
               </div>
               <div className="hidden sm:flex items-center gap-2">
                 <button
                   onClick={() => trendingRef.current?.scrollBy({ left: -520, behavior: "smooth" })}
-                  className="w-8 h-8 rounded-full bg-slate-100 hover:bg-orange-500 hover:text-white flex items-center justify-center transition-colors text-slate-600">
+                  className="w-8 h-8 rounded-full bg-slate-100 hover:bg-orange-500 hover:text-white flex items-center justify-center transition-colors text-slate-300">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7"/>
                   </svg>
                 </button>
                 <button
                   onClick={() => trendingRef.current?.scrollBy({ left: 520, behavior: "smooth" })}
-                  className="w-8 h-8 rounded-full bg-slate-100 hover:bg-orange-500 hover:text-white flex items-center justify-center transition-colors text-slate-600">
+                  className="w-8 h-8 rounded-full bg-slate-100 hover:bg-orange-500 hover:text-white flex items-center justify-center transition-colors text-slate-300">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
                   </svg>
@@ -696,13 +696,13 @@ export default function Home() {
                   const link     = promo?.landing_page || m.url_afiliat || m.url;
                   return (
                     <a key={m.magazin} href={link} target="_blank" rel="sponsored noopener noreferrer"
-                      className="group flex-shrink-0 w-48 bg-white border border-slate-200 hover:border-orange-300 rounded-2xl p-4 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 overflow-hidden">
+                      className="group flex-shrink-0 w-48 bg-slate-900 border border-slate-800 hover:border-orange-500/50 rounded-2xl p-4 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 overflow-hidden">
                       {/* Trust bar */}
-                      <div className="h-0.5 w-full bg-slate-100 rounded-full mb-3 overflow-hidden">
+                      <div className="h-0.5 w-full bg-slate-800 rounded-full mb-3 overflow-hidden">
                         <div className="h-full bg-gradient-to-r from-emerald-400 to-emerald-500 rounded-full" style={{width:`${m.procent_succes || 75}%`}}/>
                       </div>
                       <div className="flex items-center gap-2.5 mb-3">
-                        <div className="w-9 h-9 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center shrink-0">
+                        <div className="w-9 h-9 rounded-xl bg-white border border-slate-700 flex items-center justify-center shrink-0">
                           {m.logo_url ? (
                             <img src={m.logo_url} alt={numeAfisat(m.magazin)} className="w-7 h-7 object-contain" loading="lazy"/>
                           ) : (
@@ -710,13 +710,13 @@ export default function Home() {
                           )}
                         </div>
                         <div className="min-w-0">
-                          <p className="font-black text-slate-900 text-xs truncate group-hover:text-orange-600 transition-colors">{numeAfisat(m.magazin)}</p>
+                          <p className="font-black text-white text-xs truncate group-hover:text-orange-600 transition-colors">{numeAfisat(m.magazin)}</p>
                           <p className="text-slate-400 text-[10px] truncate">{m.categorie}</p>
                         </div>
                       </div>
                       {discount && (
-                        <div className="bg-emerald-50 border border-emerald-200 rounded-lg px-2 py-1 mb-2.5 text-center">
-                          <span className="text-emerald-700 font-black text-xs">{discount}</span>
+                        <div className="bg-emerald-500/15 border border-emerald-500/25 rounded-lg px-2 py-1 mb-2.5 text-center">
+                          <span className="text-emerald-400 font-black text-xs">{discount}</span>
                         </div>
                       )}
                       <p className="text-slate-500 text-[11px] line-clamp-2 mb-3">{promo?.nume || "Oferta activa"}</p>
@@ -733,11 +733,11 @@ export default function Home() {
       )}
 
       {/* ─── SECTIUNI SPECIALE ────────────────────────────────────────────── */}
-      <section className="bg-slate-50 border-b border-slate-100 py-14 px-4">
+      <section className="bg-slate-950 border-b border-slate-800 py-14 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="mb-8">
             <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-2">GHIDURI DEDICATE</p>
-            <h2 className="text-3xl font-black tracking-tight text-slate-900">Sectiuni speciale</h2>
+            <h2 className="text-3xl font-black tracking-tight text-white">Sectiuni speciale</h2>
             <p className="text-slate-500 text-sm mt-1.5">Curatate editorial cu cele mai bune oferte pe fiecare nisa</p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
@@ -1093,7 +1093,7 @@ export default function Home() {
                         <div className="flex items-center gap-1.5 text-emerald-400 text-xs font-semibold">
                           <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse inline-block"/>
                           Verificat azi
-                          <span className="text-slate-600 mx-1">·</span>
+                          <span className="text-slate-300 mx-1">·</span>
                           <span className="text-slate-400">{m.promotii.length} {m.promotii.length === 1 ? "oferta" : "oferte"}</span>
                         </div>
                         <span className="bg-orange-500 group-hover:bg-orange-400 text-white font-black text-xs px-4 py-2 rounded-xl transition-colors">
@@ -1138,7 +1138,7 @@ export default function Home() {
               { key: "favorite", label: `Favorite${favorite.size > 0 ? ` (${favorite.size})` : ""}` },
             ] as { key: "toate"|"cod"|"promotie"|"favorite"; label: string }[]).map(f => (
               <button key={f.key} onClick={() => { setFiltruActiv(f.key); setStoreLimit(12); }}
-                className={`px-4 py-2 rounded-full text-sm font-semibold transition-all ${filtruActiv === f.key ? "bg-slate-900 text-white shadow-sm" : "bg-white border border-slate-200 text-slate-600 hover:border-slate-300 hover:bg-slate-50"}`}>
+                className={`px-4 py-2 rounded-full text-sm font-semibold transition-all ${filtruActiv === f.key ? "bg-slate-900 text-white shadow-sm" : "bg-slate-800 border border-slate-700 text-slate-300 hover:border-slate-600 hover:bg-slate-700"}`}>
                 {f.label}
               </button>
             ))}
@@ -1163,7 +1163,7 @@ export default function Home() {
           <section className="mb-10">
             <div className="flex items-center gap-3 mb-5">
               <span className="bg-red-600 text-white text-[10px] font-black px-2.5 py-1 rounded-full animate-pulse tracking-wider">EXPIRA AZI</span>
-              <h2 className="text-xl font-black text-slate-900 tracking-tight">Oferte care se termina azi</h2>
+              <h2 className="text-xl font-black text-white tracking-tight">Oferte care se termina azi</h2>
               <span className="text-sm text-slate-400">{expiraAzi.length} oferte</span>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
@@ -1183,7 +1183,7 @@ export default function Home() {
                   <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse inline-block"/>
                   {cautare || filtruActiv !== "toate" ? "FILTRAT" : "LIVE"}
                 </p>
-                <h2 className="text-2xl font-black text-slate-900 tracking-tight">
+                <h2 className="text-2xl font-black text-white tracking-tight">
                   {cautare ? `Rezultate pentru "${cautare}"` : "Promotii active"}
                 </h2>
                 <p className="text-slate-400 text-sm mt-0.5">{cuPromotii.length} oferte verificate</p>
@@ -1208,7 +1208,7 @@ export default function Home() {
             <div className="flex items-end justify-between mb-6">
               <div>
                 <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1.5">TOATE MAGAZINELE</p>
-                <h2 className="text-2xl font-black text-slate-900 tracking-tight">Magazine partenere</h2>
+                <h2 className="text-2xl font-black text-white tracking-tight">Magazine partenere</h2>
                 <p className="text-slate-400 text-sm mt-0.5">
                   {cautare || filtruActiv !== "toate"
                     ? <>{faraPromotii.length} din {magazine.length} magazine</>
@@ -1228,7 +1228,7 @@ export default function Home() {
             {faraPromotii.length > storeLimit && (
               <div className="text-center mt-10">
                 <button onClick={() => setStoreLimit(l => l + 24)}
-                  className="bg-white border-2 border-slate-200 hover:border-orange-400 text-slate-600 hover:text-orange-500 font-bold px-8 py-3 rounded-2xl text-sm transition-all hover:shadow-md">
+                  className="bg-slate-800 border-2 border-slate-700 hover:border-orange-400 text-slate-300 hover:text-orange-400 font-bold px-8 py-3 rounded-2xl text-sm transition-all hover:shadow-md">
                   Incarca mai multe ({faraPromotii.length - storeLimit} magazine ramase)
                 </button>
               </div>
@@ -1240,7 +1240,7 @@ export default function Home() {
         {!loading && cautare && filtrate.length === 0 && (
           <div className="text-center py-20">
             <div className="text-5xl mb-4">🔍</div>
-            <h3 className="text-xl font-black text-slate-800 mb-2">Niciun magazin gasit pentru &quot;{cautare}&quot;</h3>
+            <h3 className="text-xl font-black text-slate-200 mb-2">Niciun magazin gasit pentru &quot;{cautare}&quot;</h3>
             <p className="text-slate-400 text-sm mb-6">Incearca un alt nume sau cauta in toate magazinele.</p>
             <div className="flex flex-wrap justify-center gap-3">
               <button onClick={() => setCautare("")}
@@ -1248,7 +1248,7 @@ export default function Home() {
                 Sterge cautarea
               </button>
               <a href="/toate-magazinele"
-                className="bg-white border border-slate-200 text-slate-700 font-bold px-6 py-2.5 rounded-xl text-sm hover:border-orange-400 transition-colors">
+                className="bg-slate-800 border border-slate-700 text-slate-200 font-bold px-6 py-2.5 rounded-xl text-sm hover:border-orange-400 transition-colors">
                 Toate magazinele
               </a>
             </div>
@@ -1360,7 +1360,7 @@ export default function Home() {
           <p className="text-slate-400 text-base mb-8 max-w-sm mx-auto leading-relaxed">
             Top 5 coduri de reducere verificate in fiecare dimineata. Fara spam.
           </p>
-          <div className="flex flex-wrap justify-center gap-5 text-xs text-slate-600 mb-8 font-medium">
+          <div className="flex flex-wrap justify-center gap-5 text-xs text-slate-300 mb-8 font-medium">
             {["Gratuit", "Fara spam", "Dezabonare oricand", "0 reclame"].map(t => (
               <span key={t} className="flex items-center gap-1.5">
                 <span className="text-emerald-500">✓</span> {t}
@@ -1499,10 +1499,10 @@ export default function Home() {
           </div>
 
           <div className="border-t border-white/5 pt-6 space-y-2">
-            <p className="text-xs text-slate-700 leading-relaxed max-w-4xl">
+            <p className="text-xs text-slate-200 leading-relaxed max-w-4xl">
               Linkurile de pe AmCupon.ro sunt linkuri afiliate generate prin 2Performant. Cand accesezi un magazin partener si efectuezi o achizitie, primim un comision de la magazin fara niciun cost suplimentar pentru tine.
             </p>
-            <p className="text-xs text-slate-800">
+            <p className="text-xs text-slate-500">
               &copy; {new Date().getFullYear()} AmCupon.ro &mdash; Toate drepturile rezervate.
             </p>
           </div>
@@ -1617,7 +1617,7 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
   const isHot       = m.trend > 2 || (m.sales_number || 0) > 100;
 
   return (
-    <div className={`bg-white dark:bg-slate-800 rounded-2xl border shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 flex flex-col overflow-hidden group ${expiraAzi ? "border-red-300 ring-1 ring-red-200" : "border-slate-200 dark:border-slate-700"}`}>
+    <div className={`bg-slate-900 rounded-2xl border shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 flex flex-col overflow-hidden group ${expiraAzi ? "border-red-300 ring-1 ring-red-200" : "border-slate-700 dark:border-slate-700"}`}>
 
       {/* Trust Score bar — rosu pentru expira azi, portocaliu maine, verde normal */}
       <div className="h-1 bg-slate-100 overflow-hidden">
@@ -1627,7 +1627,7 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
       {/* Header: logo + info + buttons */}
       <a href={`/cod-reducere/${m.magazin}`} className="flex items-start gap-3 p-4">
         {/* Logo */}
-        <div className="w-12 h-12 rounded-xl border border-slate-200 bg-white flex items-center justify-center shrink-0 overflow-hidden group-hover:border-orange-300 transition-colors">
+        <div className="w-12 h-12 rounded-xl border border-slate-700 bg-white flex items-center justify-center shrink-0 overflow-hidden group-hover:border-orange-300 transition-colors">
           {logoSrc && imgOk ? (
             <img src={logoSrc} alt={numeMagazin} className="w-10 h-10 object-contain" loading="lazy" decoding="async" onError={() => setImgOk(false)}/>
           ) : (
@@ -1641,7 +1641,7 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
         <div className="flex-1 min-w-0">
           <div className="flex items-start justify-between gap-1">
             <div className="min-w-0">
-              <h3 className="font-black text-slate-900 text-sm leading-tight group-hover:text-orange-600 transition-colors truncate">
+              <h3 className="font-black text-white text-sm leading-tight group-hover:text-orange-600 transition-colors truncate">
                 {numeMagazin}
               </h3>
               <p className="text-[11px] text-slate-400 mt-0.5 truncate">{m.categorie}</p>
@@ -1755,7 +1755,7 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
             </div>
           ) : (
             <div className="space-y-2">
-              <div className="border-2 border-dashed border-slate-200 rounded-xl py-2.5 text-center bg-slate-50">
+              <div className="border-2 border-dashed border-slate-700 rounded-xl py-2.5 text-center bg-slate-50">
                 <span className="font-mono text-slate-400 text-sm">{maskCod(promo.cod_cupon)}</span>
               </div>
               <button onClick={() => onCopiere(m.magazin, promo.cod_cupon, link)}
@@ -1774,7 +1774,7 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
             className={`flex items-center justify-center w-full font-medium py-2.5 rounded-xl text-sm transition-colors ${
               cashbackText
                 ? "bg-teal-500 hover:bg-teal-600 text-white"
-                : "border border-slate-200 hover:border-orange-300 text-slate-500 hover:text-orange-500"
+                : "border border-slate-700 hover:border-orange-300 text-slate-500 hover:text-orange-500"
             }`}>
             {cashbackText ? `Viziteaza + ${cashbackText}` : "Viziteaza magazinul"}
           </a>
@@ -1796,7 +1796,7 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
                 Da
               </button>
               <button onClick={e => voteaza("nok", e)}
-                className="text-[11px] px-2.5 py-1 rounded-full bg-slate-50 text-slate-500 hover:bg-red-50 hover:text-red-500 font-semibold transition-colors border border-slate-200 hover:border-red-200">
+                className="text-[11px] px-2.5 py-1 rounded-full bg-slate-50 text-slate-500 hover:bg-red-50 hover:text-red-500 font-semibold transition-colors border border-slate-700 hover:border-red-200">
                 Nu
               </button>
             </div>
@@ -1810,24 +1810,24 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
 /* ─── SKELETON ────────────────────────────────────────────────────────────── */
 function SkeletonCard() {
   return (
-    <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 animate-pulse overflow-hidden">
-      <div className="h-1 bg-slate-100"/>
+    <div className="bg-slate-900 rounded-2xl border border-slate-800 animate-pulse overflow-hidden">
+      <div className="h-1 bg-slate-800"/>
       <div className="flex items-start gap-3 p-4">
-        <div className="w-12 h-12 rounded-xl bg-slate-200 shrink-0"/>
+        <div className="w-12 h-12 rounded-xl bg-slate-700 shrink-0"/>
         <div className="flex-1 space-y-2 pt-0.5">
-          <div className="h-3.5 w-28 bg-slate-200 rounded"/>
-          <div className="h-3 w-16 bg-slate-100 rounded"/>
+          <div className="h-3.5 w-28 bg-slate-700 rounded"/>
+          <div className="h-3 w-16 bg-slate-800 rounded"/>
           <div className="flex gap-1">
-            <div className="h-4 w-20 bg-slate-100 rounded-full"/>
+            <div className="h-4 w-20 bg-slate-800 rounded-full"/>
           </div>
         </div>
       </div>
       <div className="px-4 pb-3 space-y-1.5">
-        <div className="h-3 w-full bg-slate-100 rounded"/>
-        <div className="h-3 w-3/4 bg-slate-100 rounded"/>
+        <div className="h-3 w-full bg-slate-800 rounded"/>
+        <div className="h-3 w-3/4 bg-slate-800 rounded"/>
       </div>
       <div className="px-4 pb-4">
-        <div className="h-10 w-full bg-slate-200 rounded-xl"/>
+        <div className="h-10 w-full bg-slate-700 rounded-xl"/>
       </div>
     </div>
   );
