@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import fs from "fs";
 import path from "path";
@@ -230,9 +231,9 @@ export default async function NisaPage(
             <p className="text-4xl mb-3">{nisa.emoji}</p>
             <p className="font-bold text-slate-700 mb-2">Produsele se actualizeaza zilnic</p>
             <p className="text-slate-400 text-sm">Revino maine pentru oferte noi in aceasta categorie.</p>
-            <a href="/produse" className="mt-4 inline-block text-orange-500 font-bold hover:text-orange-600">
+            <Link href="/produse" className="mt-4 inline-block text-orange-500 font-bold hover:text-orange-600">
               Vezi toate produsele &rarr;
-            </a>
+            </Link>
           </div>
         )}
       </div>

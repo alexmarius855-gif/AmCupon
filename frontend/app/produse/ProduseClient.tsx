@@ -1,5 +1,6 @@
 ﻿"use client";
 
+import Link from "next/link";
 import { useState, useMemo, useEffect } from "react";
 import { useWishlist } from "../hooks/useWishlist";
 
@@ -334,10 +335,10 @@ export default function ProduseClient({
       {/* ─── HEADER ───────────────────────────────────────────────────────── */}
       <header className="bg-slate-950/95 backdrop-blur-sm border-b border-slate-800 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 h-[60px] flex items-center gap-3">
-          <a href="/" className="flex items-center gap-1.5 shrink-0">
+          <Link href="/" className="flex items-center gap-1.5 shrink-0">
             <div className="bg-orange-500 text-white font-black text-sm px-2 py-0.5 rounded-lg tracking-tighter">Am</div>
             <span className="font-black text-white text-xl tracking-tight">Cupon<span className="text-orange-500">.ro</span></span>
-          </a>
+          </Link>
 
           <div className="flex-1 relative max-w-xl hidden sm:block">
             <svg className="absolute left-3 top-2.5 w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -349,10 +350,10 @@ export default function ProduseClient({
           </div>
 
           <nav className="hidden md:flex items-center gap-5 text-sm font-semibold text-slate-400 ml-auto">
-            <a href="/" className="hover:text-orange-500 transition-colors">Acasa</a>
+            <Link href="/" className="hover:text-orange-500 transition-colors">Acasa</Link>
             <a href="#top-deals" className="hover:text-orange-500 transition-colors">Top Deals</a>
             <a href="#produse-feed" className="hover:text-orange-500 transition-colors">Feed Produse</a>
-            <a href="/blog" className="hover:text-orange-500 transition-colors">Blog</a>
+            <Link href="/blog" className="hover:text-orange-500 transition-colors">Blog</Link>
           </nav>
           <button onClick={() => setMenuOpen(o => !o)} className="md:hidden ml-auto p-2 rounded-xl hover:bg-slate-800 transition-colors text-slate-300" aria-label="Meniu">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -477,9 +478,9 @@ export default function ProduseClient({
               </div>
               {cuPromotii.length > 54 && (
                 <div className="text-center mt-8">
-                  <a href="/" className="border-2 border-slate-700 hover:border-orange-500 text-slate-400 hover:text-orange-400 font-bold px-8 py-3 rounded-2xl text-sm transition-all hover:shadow-md inline-block">
+                  <Link href="/" className="border-2 border-slate-700 hover:border-orange-500 text-slate-400 hover:text-orange-400 font-bold px-8 py-3 rounded-2xl text-sm transition-all hover:shadow-md inline-block">
                     Vezi toate {cuPromotii.length} magazine pe homepage →
-                  </a>
+                  </Link>
                 </div>
               )}
             </>
@@ -660,9 +661,9 @@ export default function ProduseClient({
                       <div className="flex-1 text-sm">
                         <span className="font-bold text-emerald-800">Pretul a scazut la {priceDrops.length} produse salvate!</span>
                       </div>
-                      <a href="/wishlist" className="text-xs font-bold text-emerald-600 hover:text-emerald-800 whitespace-nowrap">
+                      <Link href="/wishlist" className="text-xs font-bold text-emerald-600 hover:text-emerald-800 whitespace-nowrap">
                         Vezi lista &#8594;
-                      </a>
+                      </Link>
                     </div>
                   )}
 
@@ -731,15 +732,15 @@ export default function ProduseClient({
       <footer className="border-t border-slate-100 py-8 text-center text-xs text-slate-400 bg-white">
         <div className="max-w-7xl mx-auto px-4 space-y-2">
           <p>
-            <a href="/" className="font-black text-slate-700 hover:text-orange-500 transition-colors">AmCupon.ro</a>
+            <Link href="/" className="font-black text-slate-700 hover:text-orange-500 transition-colors">AmCupon.ro</Link>
             {" · "}
-            <a href="/" className="hover:text-orange-500 transition-colors">Acasa</a>
+            <Link href="/" className="hover:text-orange-500 transition-colors">Acasa</Link>
             {" · "}
-            <a href="/toate-magazinele" className="hover:text-orange-500 transition-colors">Magazine</a>
+            <Link href="/toate-magazinele" className="hover:text-orange-500 transition-colors">Magazine</Link>
             {" · "}
-            <a href="/categorii" className="hover:text-orange-500 transition-colors">Categorii</a>
+            <Link href="/categorii" className="hover:text-orange-500 transition-colors">Categorii</Link>
             {" · "}
-            <a href="/blog" className="hover:text-orange-500 transition-colors">Blog</a>
+            <Link href="/blog" className="hover:text-orange-500 transition-colors">Blog</Link>
           </p>
           <p className="text-slate-300">
             Linkuri afiliate 2Performant. Cand cumperi printr-un link, primim un comision fara costuri in plus pentru tine.
@@ -753,9 +754,9 @@ export default function ProduseClient({
         <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-slate-900 text-white px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-2 text-sm font-semibold animate-in slide-in-from-bottom-4 duration-300">
           <span className="text-red-400">&#9829;</span>
           <span>Salvat: {savedToast}</span>
-          <a href="/wishlist" className="ml-2 text-emerald-400 hover:text-emerald-300 text-xs underline">
+          <Link href="/wishlist" className="ml-2 text-emerald-400 hover:text-emerald-300 text-xs underline">
             Vezi lista
-          </a>
+          </Link>
         </div>
       )}
     </div>

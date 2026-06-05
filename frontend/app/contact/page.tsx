@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Metadata } from "next";
 import ContactForm from "./ContactForm";
 
@@ -42,11 +43,11 @@ export default function ContactPage() {
         {/* Header */}
         <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
           <div className="max-w-5xl mx-auto px-4 py-3 flex items-center gap-3">
-            <a href="/" className="flex items-center gap-1.5 shrink-0">
+            <Link href="/" className="flex items-center gap-1.5 shrink-0">
               <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
               <span className="font-black text-gray-900 text-xl">Cupon</span>
               <span className="text-orange-500 font-black text-xl">.ro</span>
-            </a>
+            </Link>
             <span className="text-gray-300">/</span>
             <span className="text-sm text-gray-600 font-semibold">Contact</span>
           </div>
@@ -54,7 +55,7 @@ export default function ContactPage() {
 
         {/* Breadcrumb */}
         <nav className="max-w-5xl mx-auto px-4 pt-4 pb-0 text-xs text-gray-400 flex items-center gap-1">
-          <a href="/" className="hover:text-orange-500 transition-colors">Acasă</a>
+          <Link href="/" className="hover:text-orange-500 transition-colors">Acasă</Link>
           <span className="mx-1">/</span>
           <span className="text-gray-600">Contact</span>
         </nav>
@@ -154,11 +155,11 @@ export default function ContactPage() {
         <footer className="border-t border-gray-200 mt-12 py-6 text-center text-sm text-gray-400">
           <p>
             © {new Date().getFullYear()} AmCupon.ro ·{" "}
-            <a href="/confidentialitate" className="hover:text-orange-500">Confidențialitate</a>
+            <Link href="/confidentialitate" className="hover:text-orange-500">Confidențialitate</Link>
             {" · "}
-            <a href="/termeni" className="hover:text-orange-500">Termeni</a>
+            <Link href="/termeni" className="hover:text-orange-500">Termeni</Link>
             {" · "}
-            <a href="/" className="hover:text-orange-500">Toate reducerile</a>
+            <Link href="/" className="hover:text-orange-500">Toate reducerile</Link>
           </p>
         </footer>
       </div>

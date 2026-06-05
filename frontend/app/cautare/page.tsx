@@ -54,11 +54,11 @@ export default async function CautarePage({ searchParams }: { searchParams: Prom
     <div className="min-h-screen bg-white">
       <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
         <div className="max-w-4xl mx-auto px-4 py-3 flex items-center gap-3">
-          <a href="/" className="flex items-center gap-1.5 shrink-0">
+          <Link href="/" className="flex items-center gap-1.5 shrink-0">
             <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
             <span className="font-black text-gray-900 text-xl">Cupon</span>
             <span className="text-orange-500 font-black text-xl">.ro</span>
-          </a>
+          </Link>
           <form action="/cautare" method="get" className="flex-1 flex gap-2">
             <div className="relative flex-1">
               <svg className="absolute left-3 top-2.5 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -92,9 +92,9 @@ export default async function CautarePage({ searchParams }: { searchParams: Prom
             <div className="text-5xl mb-4">😕</div>
             <h1 className="text-xl font-black text-gray-900 mb-2">Niciun rezultat pentru &ldquo;{q}&rdquo;</h1>
             <p className="text-gray-500 mb-6">Incearca un alt termen sau browseza categoriile.</p>
-            <a href="/categorii" className="bg-orange-500 text-white font-bold px-6 py-3 rounded-2xl text-sm hover:bg-orange-600 transition-colors">
+            <Link href="/categorii" className="bg-orange-500 text-white font-bold px-6 py-3 rounded-2xl text-sm hover:bg-orange-600 transition-colors">
               Exploreaza categorii
-            </a>
+            </Link>
           </div>
         ) : (
           <>
@@ -143,7 +143,7 @@ export default async function CautarePage({ searchParams }: { searchParams: Prom
       </div>
 
       <footer className="border-t border-gray-200 py-6 text-center text-xs text-gray-400 mt-8">
-        <a href="/" className="hover:text-orange-500">← Inapoi la AmCupon.ro</a>
+        <Link href="/" className="hover:text-orange-500">← Inapoi la AmCupon.ro</Link>
       </footer>
     </div>
   );

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import fs from "fs";
@@ -157,15 +158,15 @@ export default async function TopCategoriePage({
         {/* HEADER */}
         <header className="bg-white dark:bg-slate-900 border-b border-gray-200 dark:border-slate-700 sticky top-0 z-50 shadow-sm">
           <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-2 flex-wrap">
-            <a href="/" className="flex items-center gap-1.5 shrink-0">
+            <Link href="/" className="flex items-center gap-1.5 shrink-0">
               <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
               <span className="font-black text-gray-900 dark:text-white text-xl">Cupon</span>
               <span className="text-orange-500 font-black text-xl">.ro</span>
-            </a>
+            </Link>
             <span className="text-gray-300 dark:text-slate-600">/</span>
-            <a href="/top" className="text-sm text-gray-500 dark:text-slate-400 hover:text-orange-500 transition-colors font-medium">
+            <Link href="/top" className="text-sm text-gray-500 dark:text-slate-400 hover:text-orange-500 transition-colors font-medium">
               Top Produse
-            </a>
+            </Link>
             <span className="text-gray-300 dark:text-slate-600">/</span>
             <span className="text-sm font-semibold text-gray-700 dark:text-slate-300 truncate">{cat.titlu_scurt}</span>
           </div>
@@ -175,9 +176,9 @@ export default async function TopCategoriePage({
         <section className={`bg-gradient-to-br ${gradient} text-white py-10 px-4`}>
           <div className="max-w-5xl mx-auto">
             <div className="flex items-center gap-2 mb-3">
-              <a href="/top" className="text-white/60 hover:text-white text-sm transition-colors">
+              <Link href="/top" className="text-white/60 hover:text-white text-sm transition-colors">
                 &larr; Top Produse
-              </a>
+              </Link>
               {cat.tag && (
                 <span className="bg-white/20 text-white text-xs font-bold px-2.5 py-0.5 rounded-full ml-2">
                   {cat.tag}
@@ -280,10 +281,10 @@ export default async function TopCategoriePage({
             <p className="text-slate-400 text-sm mb-5">
               600+ magazine monitorizate. Zero spam.
             </p>
-            <a href="/newsletter"
+            <Link href="/newsletter"
               className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-400 text-white font-bold px-6 py-3 rounded-xl text-sm transition-colors">
               Aboneaza-te gratuit &rarr;
-            </a>
+            </Link>
           </section>
         </div>
 
@@ -293,9 +294,9 @@ export default async function TopCategoriePage({
             Alte categorii recomandate
           </h3>
           <div className="flex flex-wrap gap-2">
-            <a href="/top" className="bg-white dark:bg-slate-800 hover:bg-orange-50 dark:hover:bg-slate-700 text-gray-700 dark:text-slate-300 text-sm font-semibold px-4 py-2 rounded-xl border border-gray-200 dark:border-slate-600 hover:border-orange-200 transition-colors">
+            <Link href="/top" className="bg-white dark:bg-slate-800 hover:bg-orange-50 dark:hover:bg-slate-700 text-gray-700 dark:text-slate-300 text-sm font-semibold px-4 py-2 rounded-xl border border-gray-200 dark:border-slate-600 hover:border-orange-200 transition-colors">
               Toate topurile &rarr;
-            </a>
+            </Link>
             {[
               { href: "/gadgets",     label: "📡 Gadgets" },
               { href: "/electronice", label: "💻 Electronice" },
@@ -312,9 +313,9 @@ export default async function TopCategoriePage({
 
         <footer className="border-t border-gray-200 dark:border-slate-700 py-6 text-center text-xs text-gray-400">
           &copy; {an} AmCupon.ro &middot;{" "}
-          <a href="/" className="hover:text-orange-500">Acasa</a>
-          {" · "}<a href="/top" className="hover:text-orange-500">Top Produse</a>
-          {" · "}<a href="/blog" className="hover:text-orange-500">Blog</a>
+          <Link href="/" className="hover:text-orange-500">Acasa</Link>
+          {" · "}<Link href="/top" className="hover:text-orange-500">Top Produse</Link>
+          {" · "}<Link href="/blog" className="hover:text-orange-500">Blog</Link>
         </footer>
       </div>
     </>

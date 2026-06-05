@@ -188,7 +188,16 @@ jobs:
         run: |
           python post_facebook.py
 
-      # ── 13. Commit & Push ──────────────────────────────────────────────────
+      # ── 13. Health check freshness ────────────────────────────────────────
+      - name: Health check — verifica freshness output.json
+        continue-on-error: true   # non-critic — nu blocheaza deploy-ul
+        working-directory: scripts
+        env:
+          TELEGRAM_BOT_TOKEN:  ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+        run: python health_check.py
+
+      # ── 14. Commit & Push ──────────────────────────────────────────────────
       - name: Commit si push date actualizate
         run: |
           git config user.name  "github-actions[bot]"

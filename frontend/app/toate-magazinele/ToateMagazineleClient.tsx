@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { useState, useMemo, useEffect } from "react";
 
 interface Magazin {
@@ -105,11 +107,11 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
       {/* ── HEADER ─────────────────────────────────────────────────────── */}
       <header className="bg-slate-900 border-b border-slate-800 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-3">
-          <a href="/" className="flex items-center gap-1.5 shrink-0">
+          <Link href="/" className="flex items-center gap-1.5 shrink-0">
             <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
             <span className="font-black text-white text-xl">Cupon</span>
             <span className="text-orange-500 font-black text-xl">.ro</span>
-          </a>
+          </Link>
           <span className="text-slate-600">/</span>
           <span className="text-sm font-semibold text-slate-400">Toate magazinele</span>
         </div>
@@ -282,12 +284,12 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
 
         {/* FOOTER NAV */}
         <div className="mt-12 pt-6 border-t border-slate-800 flex items-center justify-between flex-wrap gap-3">
-          <a href="/" className="text-sm text-slate-500 hover:text-orange-400 transition-colors">
+          <Link href="/" className="text-sm text-slate-500 hover:text-orange-400 transition-colors">
             &larr; Inapoi la homepage
-          </a>
-          <a href="/categorii" className="text-sm text-slate-500 hover:text-orange-400 transition-colors">
+          </Link>
+          <Link href="/categorii" className="text-sm text-slate-500 hover:text-orange-400 transition-colors">
             Exploreaza categorii &rarr;
-          </a>
+          </Link>
         </div>
       </div>
     </div>

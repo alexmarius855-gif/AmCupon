@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { useEffect, useState } from "react";
 
 type Status = "idle" | "loading" | "success" | "error";
@@ -160,9 +162,9 @@ export default function NewsletterPopup() {
 
               <p className="text-xs text-gray-400 text-center">
                 Prin abonare esti de acord cu{" "}
-                <a href="/confidentialitate" className="underline hover:text-orange-500">
+                <Link href="/confidentialitate" className="underline hover:text-orange-500">
                   politica de confidentialitate
-                </a>
+                </Link>
               </p>
             </form>
           )}

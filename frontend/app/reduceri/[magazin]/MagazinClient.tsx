@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { useState } from "react";
 
 interface Promotie {
@@ -68,14 +70,14 @@ export default function MagazinClient({ magazin: m }: { magazin: Magazin }) {
       {/* HEADER */}
       <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
         <div className="max-w-5xl mx-auto px-4 py-3 flex items-center gap-4">
-          <a href="/" className="flex items-center gap-1.5 shrink-0">
+          <Link href="/" className="flex items-center gap-1.5 shrink-0">
             <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
             <span className="font-black text-gray-900 text-xl">Cupon</span>
             <span className="text-orange-500 font-black text-xl">.ro</span>
-          </a>
+          </Link>
           <span className="text-gray-300">/</span>
           <nav className="text-sm text-gray-500 flex items-center gap-1">
-            <a href="/" className="hover:text-orange-500 transition-colors">Reduceri</a>
+            <Link href="/" className="hover:text-orange-500 transition-colors">Reduceri</Link>
             <span className="text-gray-300 mx-1">/</span>
             <span className="text-gray-800 font-semibold">{nume}</span>
           </nav>
@@ -271,9 +273,9 @@ export default function MagazinClient({ magazin: m }: { magazin: Magazin }) {
 
         {/* BACK LINK */}
         <div className="mt-10 pt-6 border-t border-gray-100 text-center">
-          <a href="/" className="text-sm text-gray-400 hover:text-orange-500 transition-colors">
+          <Link href="/" className="text-sm text-gray-400 hover:text-orange-500 transition-colors">
             ← Înapoi la toate promoțiile
-          </a>
+          </Link>
         </div>
       </div>
     </div>

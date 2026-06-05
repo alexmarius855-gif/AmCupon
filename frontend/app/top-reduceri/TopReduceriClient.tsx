@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { useState } from "react";
 
 interface Promotie {
@@ -198,11 +200,11 @@ export default function TopReduceriClient({
       {/* Header */}
       <header className="bg-slate-900 border-b border-slate-800 sticky top-0 z-50">
         <div className="max-w-4xl mx-auto px-4 py-3 flex items-center gap-3">
-          <a href="/" className="flex items-center gap-1.5 shrink-0">
+          <Link href="/" className="flex items-center gap-1.5 shrink-0">
             <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
             <span className="font-black text-white text-xl">Cupon</span>
             <span className="text-orange-500 font-black text-xl">.ro</span>
-          </a>
+          </Link>
           <span className="text-slate-600">/</span>
           <span className="text-sm font-semibold text-slate-400">Top Reduceri</span>
         </div>
@@ -275,9 +277,9 @@ export default function TopReduceriClient({
           <div className="text-center py-16">
             <div className="text-4xl mb-3">🔍</div>
             <p className="text-slate-400">Nu sunt oferte in aceasta categorie momentan.</p>
-            <a href="/toate-magazinele" className="mt-4 inline-block text-orange-400 hover:text-orange-300 text-sm font-semibold">
+            <Link href="/toate-magazinele" className="mt-4 inline-block text-orange-400 hover:text-orange-300 text-sm font-semibold">
               Vezi toate magazinele &rarr;
-            </a>
+            </Link>
           </div>
         ) : (
           <div className="space-y-2">

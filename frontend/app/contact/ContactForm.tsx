@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { useForm, ValidationError } from "@formspree/react";
 
 const SUBIECTE = [
@@ -139,9 +141,9 @@ export default function ContactForm() {
 
         <p className="text-xs text-gray-400 text-center">
           Prin trimitere ești de acord cu{" "}
-          <a href="/confidentialitate" className="underline hover:text-orange-500">
+          <Link href="/confidentialitate" className="underline hover:text-orange-500">
             politica de confidențialitate
-          </a>
+          </Link>
         </p>
       </form>
     </div>

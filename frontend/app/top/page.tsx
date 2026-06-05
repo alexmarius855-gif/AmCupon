@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
@@ -73,11 +74,11 @@ export default function TopHubPage() {
         {/* HEADER */}
         <header className="bg-white dark:bg-slate-900 border-b border-gray-200 dark:border-slate-700 sticky top-0 z-50 shadow-sm">
           <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-3">
-            <a href="/" className="flex items-center gap-1.5 shrink-0">
+            <Link href="/" className="flex items-center gap-1.5 shrink-0">
               <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
               <span className="font-black text-gray-900 dark:text-white text-xl">Cupon</span>
               <span className="text-orange-500 font-black text-xl">.ro</span>
-            </a>
+            </Link>
             <span className="text-gray-300 dark:text-slate-600">/</span>
             <span className="text-sm font-semibold text-gray-700 dark:text-slate-300">Top Produse</span>
           </div>
@@ -86,7 +87,7 @@ export default function TopHubPage() {
         {/* BREADCRUMB */}
         <nav className="bg-white dark:bg-slate-800 border-b border-gray-100 dark:border-slate-700">
           <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-gray-400 flex-wrap">
-            <a href="/" className="hover:text-orange-500 transition-colors">Acasa</a>
+            <Link href="/" className="hover:text-orange-500 transition-colors">Acasa</Link>
             <span className="mx-1 text-gray-300">/</span>
             <span className="text-gray-700 dark:text-slate-300 font-medium">Top Produse</span>
           </div>
@@ -226,9 +227,9 @@ export default function TopHubPage() {
 
         <footer className="border-t border-gray-200 dark:border-slate-700 py-6 text-center text-xs text-gray-400">
           &copy; {an} AmCupon.ro &middot;{" "}
-          <a href="/" className="hover:text-orange-500">Acasa</a>
-          {" · "}<a href="/blog" className="hover:text-orange-500">Blog</a>
-          {" · "}<a href="/gadgets" className="hover:text-orange-500">Gadgets</a>
+          <Link href="/" className="hover:text-orange-500">Acasa</Link>
+          {" · "}<Link href="/blog" className="hover:text-orange-500">Blog</Link>
+          {" · "}<Link href="/gadgets" className="hover:text-orange-500">Gadgets</Link>
         </footer>
       </div>
     </>

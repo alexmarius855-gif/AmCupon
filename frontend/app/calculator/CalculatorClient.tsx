@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { useState } from "react";
 
 // ── Tipuri calcule disponibile ────────────────────────────────────────────────
@@ -63,11 +65,11 @@ export default function CalculatorClient() {
       {/* Header */}
       <header className="bg-slate-900 border-b border-slate-800 sticky top-0 z-50">
         <div className="max-w-3xl mx-auto px-4 py-3 flex items-center gap-3">
-          <a href="/" className="flex items-center gap-1.5 shrink-0">
+          <Link href="/" className="flex items-center gap-1.5 shrink-0">
             <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
             <span className="font-black text-white text-xl">Cupon</span>
             <span className="text-orange-500 font-black text-xl">.ro</span>
-          </a>
+          </Link>
           <span className="text-slate-600">/</span>
           <span className="text-sm font-semibold text-slate-400">Calculator Reduceri</span>
         </div>
@@ -283,10 +285,10 @@ export default function CalculatorClient() {
             <p className="text-white font-bold text-sm">Cauta un cod de reducere acum</p>
             <p className="text-slate-500 text-xs">600+ magazine, verificate zilnic</p>
           </div>
-          <a href="/toate-magazinele"
+          <Link href="/toate-magazinele"
             className="ml-auto shrink-0 bg-orange-500 hover:bg-orange-400 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-colors">
             Cauta coduri →
-          </a>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { useState } from "react";
 
 type Status = "idle" | "loading" | "success" | "error";
@@ -70,9 +72,9 @@ export default function NewsletterForm() {
             <div className="text-5xl mb-4">🎉</div>
             <h2 className="text-2xl font-black text-white mb-2">Esti abonat!</h2>
             <p className="text-slate-400 mb-6">Vei primi cele mai bune coduri reducere direct in inbox.</p>
-            <a href="/" className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-400 text-white font-bold px-6 py-3 rounded-xl transition-colors">
+            <Link href="/" className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-400 text-white font-bold px-6 py-3 rounded-xl transition-colors">
               Descopera ofertele de azi &rarr;
-            </a>
+            </Link>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -102,7 +104,7 @@ export default function NewsletterForm() {
             </button>
             <p className="text-xs text-slate-500 text-center leading-relaxed">
               Prin abonare esti de acord cu{" "}
-              <a href="/confidentialitate" className="text-orange-400 hover:underline">politica de confidentialitate</a>
+              <Link href="/confidentialitate" className="text-orange-400 hover:underline">politica de confidentialitate</Link>
               . Dezabonare oricand cu un click.
             </p>
           </form>

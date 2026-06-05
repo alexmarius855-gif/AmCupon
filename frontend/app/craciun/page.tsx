@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
@@ -133,11 +134,11 @@ export default function CraciunPage() {
         {/* Header */}
         <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
           <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-3">
-            <a href="/" className="flex items-center gap-1.5 shrink-0">
+            <Link href="/" className="flex items-center gap-1.5 shrink-0">
               <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
               <span className="font-black text-gray-900 text-xl">Cupon</span>
               <span className="text-orange-500 font-black text-xl">.ro</span>
-            </a>
+            </Link>
             <span className="text-gray-300">/</span>
             <span className="text-sm text-gray-600 font-semibold">Crăciun {an}</span>
           </div>
@@ -145,7 +146,7 @@ export default function CraciunPage() {
 
         {/* Breadcrumb */}
         <nav className="max-w-6xl mx-auto px-4 pt-4 pb-0 text-xs text-gray-400 flex items-center gap-1">
-          <a href="/" className="hover:text-orange-500 transition-colors">Acasă</a>
+          <Link href="/" className="hover:text-orange-500 transition-colors">Acasă</Link>
           <span className="mx-1">/</span>
           <span className="text-gray-600">Reduceri de Crăciun {an}</span>
         </nav>
@@ -302,11 +303,11 @@ export default function CraciunPage() {
 
         <footer className="border-t border-gray-200 py-6 text-center text-xs text-gray-400">
           © {an} AmCupon.ro ·{" "}
-          <a href="/" className="hover:text-orange-500">Toate reducerile</a>
+          <Link href="/" className="hover:text-orange-500">Toate reducerile</Link>
           {" · "}
-          <a href="/black-friday" className="hover:text-orange-500">Black Friday</a>
+          <Link href="/black-friday" className="hover:text-orange-500">Black Friday</Link>
           {" · "}
-          <a href="/contact" className="hover:text-orange-500">Contact</a>
+          <Link href="/contact" className="hover:text-orange-500">Contact</Link>
         </footer>
       </div>
     </>

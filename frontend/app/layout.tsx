@@ -36,6 +36,7 @@ export const metadata: Metadata = {
   title: "AmCupon.ro - Coduri de reducere si oferte verificate",
   description: "Coduri de reducere verificate si oferte exclusive de la cele mai mari magazine online din Romania. Actualizat zilnic.",
   metadataBase: new URL("https://amcupon.ro"),
+  alternates: { canonical: "https://amcupon.ro" },
   verification: {
     google: "UvsbX8yxIp1eGwFK5ESqVXzA6jT5wjcTartEIPG5mqw",
     other: {

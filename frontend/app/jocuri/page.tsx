@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
@@ -72,18 +73,18 @@ export default function JocuriPage() {
         {/* Header */}
         <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
           <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-3">
-            <a href="/" className="flex items-center gap-1.5 shrink-0">
+            <Link href="/" className="flex items-center gap-1.5 shrink-0">
               <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
               <span className="font-black text-gray-900 text-xl">Cupon</span>
               <span className="text-orange-500 font-black text-xl">.ro</span>
-            </a>
+            </Link>
           </div>
         </header>
 
         {/* Breadcrumb */}
         <nav className="bg-white border-b border-gray-100">
           <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-gray-400">
-            <a href="/" className="hover:text-orange-500">Acasa</a>
+            <Link href="/" className="hover:text-orange-500">Acasa</Link>
             <span className="mx-1">/</span>
             <span className="text-gray-700 font-medium">Jocuri Video & Gaming</span>
           </div>
@@ -178,7 +179,7 @@ export default function JocuriPage() {
               <p className="text-4xl mb-3">🎮</p>
               <p className="font-bold text-gray-700 mb-2">Magazine actualizate zilnic</p>
               <p className="text-gray-400 text-sm mb-4">Revino curand pentru promotii la jocuri si gaming.</p>
-              <a href="/toate-magazinele" className="text-orange-500 font-bold hover:text-orange-600 text-sm">Toate magazinele &rarr;</a>
+              <Link href="/toate-magazinele" className="text-orange-500 font-bold hover:text-orange-600 text-sm">Toate magazinele &rarr;</Link>
             </div>
           )}
         </section>
@@ -239,9 +240,9 @@ export default function JocuriPage() {
 
         <footer className="border-t border-gray-200 py-6 text-center text-xs text-gray-400 mt-4">
           &copy; {an} AmCupon.ro &middot;{" "}
-          <a href="/electronice" className="hover:text-orange-500">Electronice</a>{" · "}
-          <a href="/gadgets" className="hover:text-orange-500">Gadgets</a>{" · "}
-          <a href="/categorii" className="hover:text-orange-500">Categorii</a>
+          <Link href="/electronice" className="hover:text-orange-500">Electronice</Link>{" · "}
+          <Link href="/gadgets" className="hover:text-orange-500">Gadgets</Link>{" · "}
+          <Link href="/categorii" className="hover:text-orange-500">Categorii</Link>
         </footer>
       </div>
     </>

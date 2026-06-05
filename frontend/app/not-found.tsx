@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
@@ -42,11 +43,11 @@ export default function NotFound() {
       {/* Header */}
       <header className="bg-white border-b border-gray-200 shadow-sm">
         <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
-          <a href="/" className="flex items-center gap-1.5">
+          <Link href="/" className="flex items-center gap-1.5">
             <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
             <span className="font-black text-gray-900 text-xl">Cupon</span>
             <span className="text-orange-500 font-black text-xl">.ro</span>
-          </a>
+          </Link>
           <a
             href="/"
             className="text-sm text-orange-500 hover:text-orange-600 font-semibold transition-colors"
@@ -152,7 +153,7 @@ export default function NotFound() {
 
       <footer className="border-t border-gray-100 py-5 text-center text-xs text-gray-400">
         © {new Date().getFullYear()} AmCupon.ro ·{" "}
-        <a href="/contact" className="hover:text-orange-500">Contact</a>
+        <Link href="/contact" className="hover:text-orange-500">Contact</Link>
       </footer>
     </div>
   );

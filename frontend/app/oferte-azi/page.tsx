@@ -269,17 +269,17 @@ export default async function OferteAziPage(
         {/* Header */}
         <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
           <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-3">
-            <a href="/" className="flex items-center gap-1.5 shrink-0">
+            <Link href="/" className="flex items-center gap-1.5 shrink-0">
               <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
               <span className="font-black text-gray-900 text-xl">Cupon</span>
               <span className="text-orange-500 font-black text-xl">.ro</span>
-            </a>
+            </Link>
             <span className="text-gray-300">/</span>
             <span className="text-sm font-semibold text-gray-600">Oferte de Azi</span>
             <div className="ml-auto hidden sm:flex items-center gap-4 text-xs font-semibold text-gray-500">
-              <a href="/top-reduceri" className="hover:text-orange-500 transition-colors">Top Reduceri</a>
-              <a href="/toate-magazinele" className="hover:text-orange-500 transition-colors">Magazine</a>
-              <a href="/newsletter" className="bg-orange-500 hover:bg-orange-400 text-white px-3 py-1.5 rounded-lg transition-colors">Newsletter</a>
+              <Link href="/top-reduceri" className="hover:text-orange-500 transition-colors">Top Reduceri</Link>
+              <Link href="/toate-magazinele" className="hover:text-orange-500 transition-colors">Magazine</Link>
+              <Link href="/newsletter" className="bg-orange-500 hover:bg-orange-400 text-white px-3 py-1.5 rounded-lg transition-colors">Newsletter</Link>
             </div>
           </div>
         </header>
@@ -358,22 +358,22 @@ export default async function OferteAziPage(
             <p className="text-sm font-black text-orange-400 uppercase tracking-widest mb-2">Nu rata ofertele</p>
             <h2 className="text-xl font-black text-white mb-2">Primeste ofertele de azi direct pe email</h2>
             <p className="text-slate-400 text-sm mb-5">600+ magazine monitorizate. Top 5 coduri in fiecare saptamana.</p>
-            <a href="/newsletter"
+            <Link href="/newsletter"
               className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-400 text-white font-bold px-6 py-3 rounded-xl text-sm transition-colors">
               Aboneaza-te gratuit &rarr;
-            </a>
+            </Link>
           </div>
         </div>
 
         {/* Footer intern */}
         <footer className="border-t border-gray-200 py-6 text-center text-xs text-gray-400">
           <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 mb-3">
-            <a href="/" className="hover:text-orange-500">Acasa</a>
-            <a href="/top-reduceri" className="hover:text-orange-500">Top Reduceri</a>
-            <a href="/toate-magazinele" className="hover:text-orange-500">Magazine</a>
-            <a href="/categorii" className="hover:text-orange-500">Categorii</a>
-            <a href="/blog" className="hover:text-orange-500">Blog</a>
-            <a href="/newsletter" className="hover:text-orange-500">Newsletter</a>
+            <Link href="/" className="hover:text-orange-500">Acasa</Link>
+            <Link href="/top-reduceri" className="hover:text-orange-500">Top Reduceri</Link>
+            <Link href="/toate-magazinele" className="hover:text-orange-500">Magazine</Link>
+            <Link href="/categorii" className="hover:text-orange-500">Categorii</Link>
+            <Link href="/blog" className="hover:text-orange-500">Blog</Link>
+            <Link href="/newsletter" className="hover:text-orange-500">Newsletter</Link>
           </div>
           &copy; {an} AmCupon.ro
         </footer>

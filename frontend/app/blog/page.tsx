@@ -84,11 +84,11 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
       <div className="min-h-screen bg-slate-950">
         <header className="bg-white border-b border-slate-800 shadow-sm">
           <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-3">
-            <a href="/" className="flex items-center gap-1.5 shrink-0">
+            <Link href="/" className="flex items-center gap-1.5 shrink-0">
               <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
               <span className="font-black text-white text-xl">Cupon</span>
               <span className="text-orange-500 font-black text-xl">.ro</span>
-            </a>
+            </Link>
             <span className="text-slate-600">/</span>
             <span className="text-sm font-semibold text-slate-300">Blog</span>
           </div>
@@ -177,9 +177,9 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
           )}
 
           <div className="mt-10 pt-6 border-t border-gray-100 text-center">
-            <a href="/" className="text-sm text-slate-500 hover:text-orange-500 transition-colors">
+            <Link href="/" className="text-sm text-slate-500 hover:text-orange-500 transition-colors">
               ← Inapoi la AmCupon.ro
-            </a>
+            </Link>
           </div>
         </div>
       </div>

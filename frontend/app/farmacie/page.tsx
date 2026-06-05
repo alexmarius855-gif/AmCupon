@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
@@ -52,16 +53,16 @@ export default function FarmaciePage() {
       <div className="min-h-screen bg-white">
         <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
           <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-3">
-            <a href="/" className="flex items-center gap-1.5 shrink-0">
+            <Link href="/" className="flex items-center gap-1.5 shrink-0">
               <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
               <span className="font-black text-gray-900 text-xl">Cupon</span>
               <span className="text-orange-500 font-black text-xl">.ro</span>
-            </a>
+            </Link>
           </div>
         </header>
         <nav className="bg-white border-b border-gray-100">
           <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-gray-400">
-            <a href="/" className="hover:text-orange-500">Acasă</a>
+            <Link href="/" className="hover:text-orange-500">Acasă</Link>
             <span className="mx-1">/</span>
             <span className="text-gray-700 font-medium">Farmacie Online</span>
           </div>
@@ -197,9 +198,9 @@ export default function FarmaciePage() {
 
         <footer className="border-t border-gray-200 py-6 text-center text-xs text-gray-400 mt-4">
           © {an} AmCupon.ro ·{" "}
-          <a href="/idei-cadouri" className="hover:text-orange-500">Idei Cadouri</a>{" · "}
-          <a href="/gadgets" className="hover:text-orange-500">Gadgets</a>{" · "}
-          <a href="/categorii" className="hover:text-orange-500">Categorii</a>
+          <Link href="/idei-cadouri" className="hover:text-orange-500">Idei Cadouri</Link>{" · "}
+          <Link href="/gadgets" className="hover:text-orange-500">Gadgets</Link>{" · "}
+          <Link href="/categorii" className="hover:text-orange-500">Categorii</Link>
         </footer>
       </div>
     </>

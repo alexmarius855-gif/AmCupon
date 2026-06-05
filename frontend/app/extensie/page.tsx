@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -69,17 +70,17 @@ export default function ExtensiePage() {
       <div className="min-h-screen bg-white">
         <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
           <div className="max-w-5xl mx-auto px-4 py-3 flex items-center gap-3">
-            <a href="/" className="flex items-center gap-1.5 shrink-0">
+            <Link href="/" className="flex items-center gap-1.5 shrink-0">
               <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
               <span className="font-black text-gray-900 text-xl">Cupon</span>
               <span className="text-orange-500 font-black text-xl">.ro</span>
-            </a>
+            </Link>
           </div>
         </header>
 
         <nav className="bg-white border-b border-gray-100">
           <div className="max-w-5xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-gray-400">
-            <a href="/" className="hover:text-orange-500">Acasă</a>
+            <Link href="/" className="hover:text-orange-500">Acasă</Link>
             <span className="mx-1">/</span>
             <span className="text-gray-700 font-medium">Extensie Chrome</span>
           </div>
@@ -194,9 +195,9 @@ export default function ExtensiePage() {
 
         <footer className="border-t border-gray-200 py-6 text-center text-xs text-gray-400">
           © {new Date().getFullYear()} AmCupon.ro ·{" "}
-          <a href="/" className="hover:text-orange-500">Acasă</a>{" · "}
-          <a href="/toate-magazinele" className="hover:text-orange-500">Magazine</a>{" · "}
-          <a href="/categorii" className="hover:text-orange-500">Categorii</a>
+          <Link href="/" className="hover:text-orange-500">Acasă</Link>{" · "}
+          <Link href="/toate-magazinele" className="hover:text-orange-500">Magazine</Link>{" · "}
+          <Link href="/categorii" className="hover:text-orange-500">Categorii</Link>
         </footer>
       </div>
     </>

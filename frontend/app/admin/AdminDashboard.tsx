@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useCallback } from "react";
+import Link from "next/link";
 
 /* ─── Types ─────────────────────────────────────────────── */
 interface SiteStats { totalMagazine:number; cuPromotii:number; cuCod:number; lastUpdate:string; }
@@ -712,10 +713,10 @@ export default function AdminDashboard() {
               <h2 className="font-black tracking-wider mb-4" style={{ color:"#ff3cac" }}>📋 OUTPUT AGENTI</h2>
               <div className="rounded-2xl p-5 border" style={{ background:"#0a0a1e", borderColor:"#1a1a40" }}>
                 <p className="text-xs font-mono mb-3" style={{ color:"#444466" }}>// Ultimul output generat de agenti</p>
-                <a href="/agent-content-latest.json" target="_blank" rel="noopener noreferrer"
+                <Link href="/agent-content-latest.json" target="_blank" rel="noopener noreferrer"
                   className="text-sm font-mono transition-colors hover:underline" style={{ color:"#00f5d4" }}>
                   → /agent-content-latest.json
-                </a>
+                </Link>
                 <p className="text-xs font-mono mt-4" style={{ color:"#333355" }}>
                   Ruleaza un agent din tab-ul AGENT ROSTER pentru a genera continut nou.
                 </p>

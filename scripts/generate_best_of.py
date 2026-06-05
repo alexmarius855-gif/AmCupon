@@ -2697,7 +2697,7 @@ Dacă vrei ceva accesibil: **Bosch MUM5**.
         },
         {
             "slug": f"cea-mai-buna-masina-de-cafea-{AN}",
-            "title": f"Cea mai bună mașină de cafea {AN} — espressor automat, manual, capsule",
+            "title": f"Cea mai buna masina de cafea {AN} — espressor automat, manual, capsule",
             "excerpt": f"Top masini de cafea {AN}: DeLonghi, Breville, Nespresso. Espressor automat vs manual vs capsule. Coduri reducere eMAG si Altex.",
             "category": "Electrocasnice",
             "cover": cover_url("masina-cafea"),
@@ -2749,6 +2749,323 @@ Automatizare simplă, 2 setări de intensitate, spumant manual. Sub 1000 lei.
 [Electrocasnice cu reducere →](/categorii/home-garden)
 """,
         },
+
+        # ── ARTICOLE NOI ─────────────────────────────────────────────────────
+
+        {
+            "slug": f"cea-mai-buna-friteuza-aer-{AN}",
+            "title": f"Cea mai buna friteuza cu aer cald {AN} — ghid complet de cumparare",
+            "excerpt": f"Top friteuze cu aer cald {AN}: Philips, Tefal, Cosori, Ninja. Ce capacitate alegi, cat consuma, coduri reducere eMAG si Altex.",
+            "category": "Electrocasnice",
+            "cover": cover_url("friteuza-aer-cald"),
+            "content": f"""## Cea mai buna friteuza cu aer cald in {AN}
+
+Friteuza cu aer cald (air fryer) este probabil cel mai vandut electrocasnic mic din ultimii 3 ani. Gatesti mai sanatos, mai rapid si mai economic decat la friteuza clasica sau cuptor. Dar piata e uriasa — iata ce sa alegi in {AN}.
+
+## De ce merita o friteuza cu aer cald?
+
+- **Pana la 80% mai putin ulei** fata de fritura clasica
+- **Gatit rapid**: cartofi prajiti in 15 min, aripioare in 20 min
+- **Versatila**: prajit, copt, gratar, reincalzit, deshidratat
+- **Consum mic**: 1200-1800W vs 2000-4000W la cuptor
+- **Curatare usoara**: vas detasabil, compatibil masina de spalat
+
+## Ce capacitate sa alegi?
+
+- **1-2 persoane**: 2-3 litri (Philips HD9200, Cosori 3.5L)
+- **3-4 persoane**: 4-5 litri — sweet spot pentru familii
+- **5+ persoane sau gatit in cantitati mari**: 6-8 litri (Ninja DZ550)
+
+## Top friteuze cu aer cald {AN}
+
+### Philips Essential Airfryer XL — Cel mai bun overall
+4.1 litri, tehnologie Rapid Air, cos usor de curatat, marca de incredere cu garantie buna. Ideal pentru 2-4 persoane. Pret: 500-700 lei.
+
+### Cosori Air Fryer 5.5L — Raportul calitate-pret castigator
+5.5 litri, 12 programe presetate, display LED, app control via Wi-Fi, retete incluse. Cel mai bun bang-for-buck din categorie. Pret: 350-500 lei.
+
+### Ninja Dual Zone AF400 — Doua cosuri independente
+Gatesti doua preparate diferit simultan, la temperaturi si timpi diferiti. Revolutionar pentru familii. 9.5 litri total, 2400W. Pret: 800-1200 lei.
+
+### Tefal Easy Fry Precision — Simplu si fiabil
+6.2 litri, 8 programe, timer digital, curatare usoara. Marca europeana de incredere. Pret: 400-600 lei.
+
+### Moulinex Easy Fry & Grill — Cu functie de gratar
+Friteuza + gratar pe gratare amovibile. Pui, legume, burgeri — toate cu dungi de gratar. Pret: 450-650 lei.
+
+## Parametri tehnici importanti
+
+- **Temperatura maxima**: 200-220°C — cu cat mai mare, cu atat mai bine
+- **Putere**: 1400-1800W pentru 4-5L; mai mica = gatit mai lent
+- **Forma cos**: patrat > rotund (mai mult spatiu util)
+- **Ecran digital vs butoane**: digitalul e mai precis, butoanele mai simple
+
+## Ce poti gati intr-o friteuza cu aer cald?
+
+- Cartofi prajiti, aripioare, nuggets, creveti
+- Pizza, briose, cozonac mic
+- Legume la gratar: dovlecel, ardei, ciuperci
+- Reincalzit pizza (mai bun decat microunde!)
+- Deshidratat fructe si legume (la modele cu aceasta functie)
+
+## Pret corect in Romania {AN}
+
+- **Entry level**: 200-350 lei (Myria, Hausberg) — functioneaza, fara pretentii
+- **Mid-range recomandat**: 350-600 lei (Cosori, Tefal, Philips Essential)
+- **Premium**: 600-1200 lei (Philips XXL, Ninja Dual) — capacitate mare, functii extra
+
+## Unde cumperi mai ieftin?
+
+{link_magazine(MAGAZINE_ELECTRONICE)} — verifica intotdeauna daca exista un cod reducere activ inainte de comanda.
+
+[Electrocasnice mici cu reducere →](/categorii/home-garden)
+""",
+        },
+
+        {
+            "slug": f"cea-mai-buna-tableta-android-{AN}",
+            "title": f"Cea mai buna tableta Android {AN} — Samsung, Xiaomi, Lenovo comparate",
+            "excerpt": f"Top tablete Android {AN}: Samsung Galaxy Tab, Xiaomi Pad, Lenovo Tab. Ghid complet: ce sa alegi pentru copii, munca sau divertisment. Coduri reducere.",
+            "category": "Electronice",
+            "cover": cover_url("tableta-android"),
+            "content": f"""## Cea mai buna tableta Android in {AN}
+
+Tableta Android perfecta depinde 100% de cum o vei folosi. Pentru copii, productivitate, drawing sau pur si simplu Netflix — fiecare scenariu are un castigator diferit. Iata ghidul complet pentru {AN}.
+
+## Pentru ce vrei tableta?
+
+### Divertisment (Netflix, YouTube, Gaming casual)
+Orice tableta cu display bun si baterie mare functioneaza. Nu ai nevoie de putere de procesare mare. Buget recomandat: 700-1500 lei.
+
+### Munca si productivitate
+Ai nevoie de procesor rapid, RAM 6-8GB, suport stylus si tastatura. Samsung Galaxy Tab S cu S Pen sau Lenovo Tab P12 Pro. Buget: 2000-5000 lei.
+
+### Copii (2-10 ani)
+Rezistenta la caderi, control parental, baterie mare, display vizibil in lumina. Samsung Kids Edition sau orice tableta cu carcasa robusta. Buget: 400-1000 lei.
+
+### Desen digital si creativitate
+Display AMOLED, latenta scazuta stylus, rezolutie mare. Samsung Galaxy Tab S9 FE sau Tab S9 cu S Pen inclus.
+
+## Top tablete Android {AN}
+
+### Samsung Galaxy Tab S9 FE — Cel mai bun echilibru {AN}
+Display AMOLED 10.9", Exynos 1380, 6GB RAM, S Pen inclus, IP68 rezistenta la apa. Performanta flagship la pret mid-range. Pret: 1500-2000 lei.
+
+### Samsung Galaxy Tab A9+ — Best raport calitate-pret
+11" LCD, Snapdragon 695, 8GB RAM, 4 difuzoare Dolby Atmos. Excelenta pentru streaming si uz general. Pret: 900-1300 lei.
+
+### Xiaomi Pad 6 — Surpriza anului
+11" IPS 144Hz, Snapdragon 870, 6GB RAM, 8840mAh baterie. Specificatii excelente la pret accesibil. Pret: 1000-1400 lei.
+
+### Lenovo Tab P11 Pro Gen 2 — Display OLED accesibil
+11.2" OLED 120Hz, Snapdragon 870, stylus compatibil. Cel mai bun display din categorie pentru bani.
+
+### Samsung Galaxy Tab A9 — Buget recomandat pentru copii
+8.7" TFT, Helio G99, 4GB RAM, rezistent, interfata copii disponibila. Pret: 600-800 lei.
+
+## De ce nu iPad?
+
+iPad-urile sunt excelente dar semnificativ mai scumpe in Romania. Daca esti deja in ecosistemul Apple sau ai nevoie de aplicatii iOS specifice (GoodNotes, Procreate), merita. Altfel, Samsung Galaxy Tab S9 FE ofera 90% din experienta iPad la jumatate din pret.
+
+## Accesorii recomandate
+
+- **Husa cu tastatura**: transforma tableta in laptop mic (100-300 lei)
+- **Stylus**: doar Samsung S Pen (inclus la Tab S), nu cumpara compatibile ieftine
+- **Folie de sticla**: protectie display esentiala, mai ales la copii
+- **Card microSD**: extinde spatiu de stocare la modele compatibile
+
+## Parametri pe care ii verifici
+
+| Parametru | Minim OK | Recomandat |
+|-----------|----------|------------|
+| RAM | 4GB | 6-8GB |
+| Stocare | 64GB | 128GB+ |
+| Baterie | 7000 mAh | 8000+ mAh |
+| Display | IPS | AMOLED/OLED |
+| Refresh rate | 60Hz | 90-120Hz |
+
+## Unde cumperi la cel mai mic pret?
+
+{link_magazine(MAGAZINE_ELECTRONICE)} — compara preturile inainte de comanda si cauta cod reducere activ.
+
+[Tablete si electronice cu reducere →](/categorii/electronics-itc)
+""",
+        },
+
+        {
+            "slug": f"cea-mai-buna-saltea-ortopedica-{AN}",
+            "title": f"Cea mai buna saltea ortopedica {AN} — ghid complet de alegere",
+            "excerpt": f"Top saltele ortopedice {AN}: memory foam, arcuri de buzunar, latex. Ce duritate sa alegi, ce branduri merita. Coduri reducere IKEA, eMAG.",
+            "category": "Casa",
+            "cover": cover_url("saltea-ortopedica"),
+            "content": f"""## Cea mai buna saltea ortopedica in {AN}
+
+Dormi o treime din viata pe saltea. O saltea proasta iti strica somnul, te trezesti cu dureri de spate si oboseala cronica. Dar cu atatea optiuni pe piata, cum alegi in {AN}?
+
+## Tipuri de saltele — care e mai buna?
+
+### Memory Foam (spuma cu memorie)
+- **Avantaje**: se muleste perfect pe corp, izolatie miscare excelenta, presiune redusa pe articulatii
+- **Dezavantaje**: poate retine caldura (rezolvat la versiunile cu gel), mai scumpa
+- **Ideal pentru**: persoane cu dureri de spate, cupluri cu program diferit, dormitori caldurosi
+- **Durata**: 8-12 ani
+
+### Arcuri de buzunar (Pocket Spring)
+- **Avantaje**: ventilatie mai buna, suport excelent, nu retine caldura, pret mai accesibil
+- **Dezavantaje**: se poate simti miscarea partenerului (daca arcurile nu sunt independente)
+- **Ideal pentru**: persoane care dorm fierbinte, cei care prefera suport ferm
+- **Durata**: 10-15 ani
+
+### Latex natural
+- **Avantaje**: antibacterian natural, hipoalergenic, elasticitate excelenta, eco-friendly
+- **Dezavantaje**: cel mai scump, mai greu de transportat
+- **Ideal pentru**: alergici, cei care vor saltea naturala, durabilitate maxima
+- **Durata**: 15-20 ani
+
+### Spuma poliuretanica (clasica)
+- **Avantaje**: cel mai ieftin, usor
+- **Dezavantaje**: se deformeaza in timp, nu e ortopedica cu adevarat
+- **Ideal pentru**: camera de oaspeti, dormitor temporar, buget foarte restrictionat
+
+## Ce duritate sa alegi?
+
+- **Moale (H1-H2)**: persoane sub 70 kg, dormit pe spate sau lateral, prefer confort
+- **Medie (H3)**: 70-100 kg, cel mai popular, functioneaza pentru majoritatea
+- **Ferma (H4-H5)**: peste 100 kg, dureri de spate, dormit pe burta, suport maximal
+
+## Top saltele recomandate in Romania {AN}
+
+### IKEA VALEVAG — Cel mai bun raport calitate-pret
+Arcuri de buzunar cu strat memory foam, 3 zone de suport, husa lavabila. ~1500-2000 lei pentru 160x200. Disponibila in magazine IKEA din Romania.
+
+### Dormeo Octasmart — Memorabil de confortabila
+Spuma Octaspring cu canale de ventilatie, se simte ca memory foam dar nu retine caldura. Branduri romanesc de incredere. ~2500-4000 lei.
+
+### TEMPUR Original — Investitia pe viata
+Spuma TEMPUR originala din NASA, 30 de ani pe piata, garantie 10 ani. Scumpa (5000-12000 lei) dar dureaza o generatie.
+
+### Magniflex Magnistretch — Pentru sportivi si dureri spate
+Design special care decomprime coloana vertebrala. Italiana, testata de sportivi profesinonisti.
+
+### eMAG / Altex selectie proprie (Somnart, Sinnlein)
+Saltele cu arcuri de buzunar la preturi accesibile (800-1500 lei). Bune pentru camera de oaspeti sau dormitor secundar.
+
+## Dimensiuni standard in Romania
+
+| Dimensiune | Ideal pentru |
+|------------|-------------|
+| 90x200 | Pat single, dormitor copil |
+| 120x200 | Pat single adult, spatiu mic |
+| 140x200 | Cuplu in spatiu mic |
+| 160x200 | Standard cuplu recomandat |
+| 180x200 | Premium cuplu, spatiu generos |
+| 200x200 | Pat king size |
+
+## Ce sa NU faci
+
+- Nu cumpara saltea fara sa o testezi (30 min culcat, nu 30 secunde pe marginea patului)
+- Nu te uita doar la pret — o saltea ieftina schimbata la 3 ani e mai scumpa decat una buna la 10 ani
+- Nu ignora topper-ul — un topper memory foam 4-5 cm poate transforma o saltea mediocra
+
+## Unde cumperi?
+
+{link_magazine(MAGAZINE_CASA)} — livrare la domiciliu inclusiv pentru saltele mari.
+
+[Casa si mobila cu reducere →](/categorii/home-garden)
+""",
+        },
+
+        {
+            "slug": f"idei-cadouri-craciun-{AN}",
+            "title": f"Idei cadouri de Craciun {AN} — pentru oricine din familie",
+            "excerpt": f"Cele mai bune idei de cadouri de Craciun {AN}: pentru el, ea, copii, parinti, prieteni. Buget 50-5000 lei. Coduri reducere incluse.",
+            "category": "Ghiduri",
+            "cover": cover_url("cadouri-craciun"),
+            "content": f"""## Idei cadouri de Craciun {AN} — ghid complet
+
+Craciunul se apropie si nu stii ce sa cumperi? Ghidul nostru acopera cadouri pentru orice buget si orice persoana din viata ta — de la 50 lei la 5000 lei.
+
+## Cadouri pentru EL — barbati (50-5000 lei)
+
+### Sub 200 lei
+- **Set ingrijire barba**: ulei barba + trimmer + pieptene (Gillette, Philips) — practic si apreciat
+- **Carti**: "Psihologia banilor", "Zero to One", orice carte din domeniul lui de interes
+- **Casti wireless**: earbuds JBL Tune 235BT sau Samsung Galaxy Buds FE
+- **Abonament streaming**: Netflix, Spotify, Xbox Game Pass — cadou digital instant
+
+### 200-800 lei
+- **Smartwatch**: Xiaomi Band 9 Pro, Samsung Galaxy Watch FE — fitness + notificari
+- **Hanorac/geaca premium**: North Face, Columbia, Patagonia — calitate simtita la atingere
+- **Maneta gaming**: Xbox Series X Controller, DualSense PS5
+- **Parfum**: Dior Sauvage, Armani Acqua di Gio, YSL Y — clasice masculine
+
+### 800-5000 lei
+- **Laptop/tableta**: Samsung Galaxy Tab S9, ASUS ZenBook
+- **Consola gaming**: PlayStation 5, Xbox Series S
+- **Televizor 4K**: pentru upgrade dormitor sau living
+- **Scuter electric**: pentru cei care fac naveta
+
+## Cadouri pentru EA — femei (50-5000 lei)
+
+### Sub 200 lei
+- **Set parfum/crema**: Rituals, L'Occitane, The Body Shop — prezentare frumoasa
+- **Bijuterii placate aur**: Pandora, Tous la preturi accesibile
+- **Carti**: romane, dezvoltare personala, cookbooks
+- **Abonament yoga/fitness**: Zumba, pilates online
+
+### 200-800 lei
+- **Parfum original**: YSL Black Opium, Lancome La Vie Est Belle, Chanel Coco Mademoiselle
+- **Geanta**: Guess, Michael Kors entry-level, Tommy Hilfiger
+- **Bijuterie argint**: inel, bratara, colier cu piatreta
+- **Aparat de masaj facial**: Foreo Luna, NuFACE
+
+### 800-5000 lei
+- **Genti designer**: Coach, Kate Spade, Michael Kors premium
+- **Bijuterie aur**: cercei, colier, brosa
+- **Vacanata city-break**: Viena, Roma, Praga, Budapesta — experienta mai mult decat obiect
+- **Robot Thermomix / KitchenAid**: pentru pasionatele de gatit
+
+## Cadouri pentru COPII (50-1000 lei)
+
+### 0-3 ani
+- Set jucarii de baie, carti moi texturate, muzicute electronice
+- Hainute premium (Zara Kids, H&M Kids): practice si apreciate de parinti
+
+### 4-8 ani
+- **LEGO DUPLO sau Creator**: varsta de aur pentru constructii
+- **Tricicleta / Bicicleta cu roti ajutatoare**: cadoul anului
+- **Costum supererou sau printesa**: imaginatia copilului nu are limite
+
+### 9-14 ani
+- **Nintendo Switch**: cel mai popular cadou gaming pentru copii
+- **Tableta Samsung Galaxy Tab A9**: pentru jocuri + invatare
+- **Casti gaming + microfon**: pentru Roblox, Minecraft, Fortnite
+
+## Cadouri pentru PARINTI si BUNICI (100-2000 lei)
+
+- **Tensiometru digital**: Omron M3, Microlife — practic si util
+- **Halat premium**: fleece moale, initial-uri brodate, robe de calitate
+- **Album foto personalizat**: amintiri printate = cel mai emotional cadou
+- **Tableta Samsung**: pentru video call cu nepotii, YouTube, stiri
+- **Carti audio abonament**: Audible, Storytel — pentru bunici cu probleme de vedere
+- **Excursie sau wellness**: spa de weekend, tur cultural
+
+## Sfaturi pentru cadouri reusete
+
+1. **Intreaba discret** prietenii/colegii despre preferintele persoanei
+2. **Pastreaza bonul** — returnare/schimb in 30 zile la majoritatea magazinelor
+3. **Impacheteaza frumos** — cadoul nu incepe la deschidere, ci la prezentare
+4. **Cadou digital** = bilet la concert, abonament, voucher — pentru cei care au totul
+5. **Cumpara din timp** — stocurile se termina, preturile cresc inainte de Craciun
+
+## Unde gasesti cele mai bune oferte?
+
+{link_magazine(MAGAZINE_ALL)} — verifica zilnic promotiile si foloseste codurile de reducere active.
+
+[Toate cadourile cu reducere →](/)
+""",
+        },
+
     ]
 
     for art in ARTICOLE_EXTRA:

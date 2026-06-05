@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { useEffect, useState } from "react";
 
 export default function CookieBanner() {
@@ -34,9 +36,9 @@ export default function CookieBanner() {
           <p className="font-bold text-white mb-0.5">Folosim cookie-uri</p>
           <p className="text-gray-400 leading-relaxed">
             Folosim cookie-uri pentru analiza traficului (Google Analytics), publicitate (Google AdSense) si tracking afiliat (2Performant). Date anonime, fara vanzare catre terti.{" "}
-            <a href="/confidentialitate" className="text-orange-400 hover:underline">
+            <Link href="/confidentialitate" className="text-orange-400 hover:underline">
               Politica de confidentialitate
-            </a>
+            </Link>
           </p>
         </div>
 

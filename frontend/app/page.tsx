@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface Promotie {
   nume: string;
@@ -306,10 +307,10 @@ export default function Home() {
       <header className="bg-slate-900/95 backdrop-blur-sm border-b border-slate-700 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 h-[60px] flex items-center gap-3">
 
-          <a href="/" className="flex items-center gap-1.5 shrink-0">
+          <Link href="/" className="flex items-center gap-1.5 shrink-0">
             <div className="bg-orange-500 text-white font-black text-sm px-2 py-0.5 rounded-lg tracking-tighter">Am</div>
             <span className="font-black text-white text-xl tracking-tight">Cupon<span className="text-orange-500">.ro</span></span>
-          </a>
+          </Link>
 
           <div className="flex-1 relative max-w-2xl hidden sm:block">
             <svg className="absolute left-3 top-2.5 w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -321,12 +322,12 @@ export default function Home() {
           </div>
 
           <nav className="hidden md:flex items-center gap-5 text-sm font-semibold text-slate-300 ml-auto">
-            <a href="/oferte-azi" className="flex items-center gap-1 text-orange-500 hover:text-orange-600 transition-colors font-bold">
+            <Link href="/oferte-azi" className="flex items-center gap-1 text-orange-500 hover:text-orange-600 transition-colors font-bold">
               <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse" />
               Oferte azi
-            </a>
-            <a href="/produse"  className="hover:text-orange-500 transition-colors">Produse</a>
-            <a href="/blog"     className="hover:text-orange-500 transition-colors">Blog</a>
+            </Link>
+            <Link href="/produse"  className="hover:text-orange-500 transition-colors">Produse</Link>
+            <Link href="/blog"     className="hover:text-orange-500 transition-colors">Blog</Link>
             <div className="relative group">
               <button className="flex items-center gap-1 hover:text-orange-500 transition-colors py-1">
                 Categorii
@@ -347,9 +348,9 @@ export default function Home() {
                     </a>
                   ))}
                   <div className="border-t border-slate-800 mt-1 pt-1">
-                    <a href="/categorii" className="flex items-center px-4 py-2 text-sm font-bold text-orange-500 hover:bg-orange-50 transition-colors">
+                    <Link href="/categorii" className="flex items-center px-4 py-2 text-sm font-bold text-orange-500 hover:bg-orange-500/15 transition-colors">
                       Toate categoriile →
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -399,7 +400,7 @@ export default function Home() {
                   { href: "/categorii",  label: "Toate categoriile" },
                 ].map(l => (
                   <a key={l.href} href={l.href} onClick={() => setMenuOpen(false)}
-                    className="flex items-center px-3 py-2.5 rounded-xl text-sm font-semibold text-slate-200 hover:bg-orange-50 hover:text-orange-600 transition-colors">
+                    className="flex items-center px-3 py-2.5 rounded-xl text-sm font-semibold text-slate-200 hover:bg-slate-800 hover:text-orange-500 transition-colors">
                     {l.label}
                   </a>
                 ))}
@@ -519,12 +520,12 @@ export default function Home() {
               <h2 className="text-3xl font-black tracking-tight text-white">Exploreaza dupa categorie</h2>
               <p className="text-slate-400 text-sm mt-1.5">Coduri verificate zilnic in fiecare categorie</p>
             </div>
-            <a href="/categorii" className="hidden sm:flex items-center gap-1.5 text-sm font-bold text-orange-400 hover:text-orange-300 transition-colors border border-orange-500/30 hover:border-orange-400/60 bg-orange-500/10 hover:bg-orange-500/20 px-4 py-2 rounded-full whitespace-nowrap">
+            <Link href="/categorii" className="hidden sm:flex items-center gap-1.5 text-sm font-bold text-orange-400 hover:text-orange-300 transition-colors border border-orange-500/30 hover:border-orange-400/60 bg-orange-500/10 hover:bg-orange-500/20 px-4 py-2 rounded-full whitespace-nowrap">
               Toate categoriile
               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
               </svg>
-            </a>
+            </Link>
           </div>
 
           {/* Grid principal — top 8 categorii după vânzări */}
@@ -602,9 +603,9 @@ export default function Home() {
             })}
           </div>
 
-          <a href="/categorii" className="sm:hidden mt-4 flex items-center justify-center gap-1.5 text-sm font-bold text-orange-400 border border-orange-500/30 bg-orange-500/10 py-2.5 rounded-2xl">
+          <Link href="/categorii" className="sm:hidden mt-4 flex items-center justify-center gap-1.5 text-sm font-bold text-orange-400 border border-orange-500/30 bg-orange-500/10 py-2.5 rounded-2xl">
             Toate categoriile →
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -767,7 +768,7 @@ export default function Home() {
                 <h2 className="text-3xl font-black tracking-tight text-white">Magazine de incredere</h2>
                 <p className="text-slate-400 text-sm mt-1.5">Magazine cu oferte active, verificate zilnic</p>
               </div>
-              <a href="/toate-magazinele" className="hidden sm:flex items-center gap-1.5 text-sm font-bold text-orange-400 hover:text-orange-300 border border-orange-500/30 hover:border-orange-400/60 bg-orange-500/10 px-4 py-2 rounded-full whitespace-nowrap transition-colors">Toate magazinele →</a>
+              <Link href="/toate-magazinele" className="hidden sm:flex items-center gap-1.5 text-sm font-bold text-orange-400 hover:text-orange-300 border border-orange-500/30 hover:border-orange-400/60 bg-orange-500/10 px-4 py-2 rounded-full whitespace-nowrap transition-colors">Toate magazinele →</Link>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
               {recomandate.map(r => (
@@ -973,7 +974,7 @@ export default function Home() {
               })}
 
               {/* Card final — "Vezi toate" */}
-              <a href="/categorii" className="group relative overflow-hidden rounded-2xl flex-shrink-0 flex flex-col items-center justify-center gap-3 bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-orange-500/50 transition-all duration-200"
+              <Link href="/categorii" className="group relative overflow-hidden rounded-2xl flex-shrink-0 flex flex-col items-center justify-center gap-3 bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-orange-500/50 transition-all duration-200"
                 style={{ width: "160px", height: "200px", scrollSnapAlign: "start" }}>
                 <div className="w-12 h-12 rounded-full bg-orange-500/20 flex items-center justify-center group-hover:bg-orange-500/30 transition-colors">
                   <svg className="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -982,7 +983,7 @@ export default function Home() {
                 </div>
                 <span className="text-white font-bold text-xs text-center px-4">Toate categoriile</span>
                 <span className="text-orange-400 text-[10px] font-bold">Vezi →</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -1010,10 +1011,10 @@ export default function Home() {
                   <h2 className="text-3xl font-black tracking-tight text-white">Oferte cu reducere acum</h2>
                   <p className="text-slate-400 text-sm mt-1.5">Coduri verificate de la {oferte.length} magazine — actualizate zilnic</p>
                 </div>
-                <a href="/toate-magazinele" className="hidden sm:flex items-center gap-1.5 bg-orange-500 hover:bg-orange-400 text-white font-bold px-4 py-2 rounded-xl text-sm transition-colors">
+                <Link href="/toate-magazinele" className="hidden sm:flex items-center gap-1.5 bg-orange-500 hover:bg-orange-400 text-white font-bold px-4 py-2 rounded-xl text-sm transition-colors">
                   Toate ofertele
                   <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/></svg>
-                </a>
+                </Link>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
                 {oferte.map((m, i) => {
@@ -1071,9 +1072,9 @@ export default function Home() {
                 })}
               </div>
               <div className="text-center mt-6">
-                <a href="/toate-magazinele" className="inline-flex items-center gap-2 text-slate-400 hover:text-orange-400 text-sm font-semibold transition-colors">
+                <Link href="/toate-magazinele" className="inline-flex items-center gap-2 text-slate-400 hover:text-orange-400 text-sm font-semibold transition-colors">
                   Vezi toate magazinele cu oferte active →
-                </a>
+                </Link>
               </div>
             </div>
           </section>
@@ -1090,12 +1091,12 @@ export default function Home() {
                 <h2 className="text-2xl font-black tracking-tight text-white">Produse populare acum</h2>
                 <p className="text-slate-400 text-sm mt-1">Cele mai cautate produse de la parteneri verificati</p>
               </div>
-              <a href="/produse" className="hidden sm:flex items-center gap-1 text-sm font-bold text-orange-500 hover:text-orange-400 transition-colors">
+              <Link href="/produse" className="hidden sm:flex items-center gap-1 text-sm font-bold text-orange-500 hover:text-orange-400 transition-colors">
                 Toate produsele
                 <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
                 </svg>
-              </a>
+              </Link>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
               {produse.map((p, i) => (
@@ -1128,9 +1129,9 @@ export default function Home() {
               ))}
             </div>
             <div className="text-center mt-6">
-              <a href="/produse" className="inline-flex items-center gap-2 text-sm font-bold text-slate-400 hover:text-orange-400 transition-colors">
+              <Link href="/produse" className="inline-flex items-center gap-2 text-sm font-bold text-slate-400 hover:text-orange-400 transition-colors">
                 Vezi toate produsele cu reducere →
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -1191,7 +1192,7 @@ export default function Home() {
                           <h3 className="font-black text-white text-lg group-hover:text-orange-400 transition-colors leading-tight tracking-tight">{nume}</h3>
                           <p className="text-slate-400 text-xs">{m.categorie}</p>
                           {discountText && (
-                            <span className="inline-flex items-center gap-1 mt-1.5 bg-emerald-50 text-emerald-700 border border-emerald-200 text-[10px] font-bold px-2 py-0.5 rounded-full">
+                            <span className="inline-flex items-center gap-1 mt-1.5 bg-emerald-500/15 text-emerald-400 border border-emerald-500/25 text-[10px] font-bold px-2 py-0.5 rounded-full">
                               {discountText}
                             </span>
                           )}
@@ -1235,8 +1236,8 @@ export default function Home() {
 
         {/* BANNER CAUTARE ACTIVA */}
         {!loading && cautare && (
-          <div className="bg-orange-50 border border-orange-200 rounded-2xl px-5 py-3 mb-6 flex items-center justify-between gap-3">
-            <span className="text-sm font-semibold text-orange-700">
+          <div className="bg-orange-500/10 border border-orange-500/25 rounded-2xl px-5 py-3 mb-6 flex items-center justify-between gap-3">
+            <span className="text-sm font-semibold text-orange-400">
               {filtrate.length > 0
                 ? <>{filtrate.length === 1 ? "1 rezultat" : `${filtrate.length} rezultate`} pentru <strong>&quot;{cautare}&quot;</strong></>
                 : <>Niciun rezultat pentru <strong>&quot;{cautare}&quot;</strong> — incearca alt nume</>
@@ -1263,9 +1264,9 @@ export default function Home() {
                 {f.label}
               </button>
             ))}
-            <a href="/toate-magazinele" className="ml-auto text-sm text-orange-500 hover:text-orange-600 font-semibold transition-colors">
+            <Link href="/toate-magazinele" className="ml-auto text-sm text-orange-500 hover:text-orange-600 font-semibold transition-colors">
               Vezi toate ({magazine.length}) →
-            </a>
+            </Link>
           </div>
         )}
 
@@ -1310,9 +1311,9 @@ export default function Home() {
                 <p className="text-slate-400 text-sm mt-0.5">{cuPromotii.length} oferte verificate</p>
               </div>
               {!cautare && filtruActiv === "toate" && (
-                <a href="/toate-magazinele" className="hidden sm:block text-sm font-bold text-orange-500 hover:text-orange-600 transition-colors">
+                <Link href="/toate-magazinele" className="hidden sm:block text-sm font-bold text-orange-500 hover:text-orange-600 transition-colors">
                   Toate magazinele →
-                </a>
+                </Link>
               )}
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
@@ -1337,9 +1338,9 @@ export default function Home() {
                   }
                 </p>
               </div>
-              <a href="/toate-magazinele" className="text-sm font-bold text-orange-500 hover:text-orange-600 transition-colors">
+              <Link href="/toate-magazinele" className="text-sm font-bold text-orange-500 hover:text-orange-600 transition-colors">
                 Pagina completa →
-              </a>
+              </Link>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
               {faraPromotii.slice(0, storeLimit).map(m => (
@@ -1368,10 +1369,10 @@ export default function Home() {
                 className="bg-orange-500 text-white font-bold px-6 py-2.5 rounded-xl text-sm hover:bg-orange-600 transition-colors">
                 Sterge cautarea
               </button>
-              <a href="/toate-magazinele"
+              <Link href="/toate-magazinele"
                 className="bg-slate-800 border border-slate-700 text-slate-200 font-bold px-6 py-2.5 rounded-xl text-sm hover:border-orange-400 transition-colors">
                 Toate magazinele
-              </a>
+              </Link>
             </div>
           </div>
         )}
@@ -1387,12 +1388,12 @@ export default function Home() {
                 <h2 className="text-3xl font-black tracking-tight text-white">Ghiduri si sfaturi</h2>
                 <p className="text-slate-400 text-sm mt-1.5">Cum sa economisesti mai mult la cumparaturile online</p>
               </div>
-              <a href="/blog" className="hidden sm:flex items-center gap-1 text-sm font-bold text-orange-500 hover:text-orange-400 transition-colors">
+              <Link href="/blog" className="hidden sm:flex items-center gap-1 text-sm font-bold text-orange-500 hover:text-orange-400 transition-colors">
                 Toate articolele
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
                 </svg>
-              </a>
+              </Link>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {blogPosts.map((post, i) => (
@@ -1633,15 +1634,6 @@ export default function Home() {
   );
 }
 
-/* ─── SOCIAL PROOF ───────────────────────────────────────────────────────── */
-function socialProof(magazin: string): { vizualizari: number; activi: number } {
-  const day = new Date().toISOString().slice(0, 10);
-  const h1  = [...(magazin + day)].reduce((a, c) => (a * 31 + c.charCodeAt(0)) & 0xffff, 0);
-  const h2  = [...magazin].reduce((a, c) => (a * 17 + c.charCodeAt(0)) & 0xff, 0);
-  const base = 28 + (h1 % 84);
-  const factor = [0.6, 0.75, 0.85, 0.95, 1.1, 1.45, 1.25][new Date().getDay()];
-  return { vizualizari: Math.round(base * factor), activi: 2 + (h2 % 7) };
-}
 
 /* ─── GA4 AFFILIATE TRACKING ─────────────────────────────────────────────── */
 function trackAfiliat(tip: string, magazin: string, cod?: string) {
@@ -1691,7 +1683,7 @@ function CardCountdown({ zileRamase }: { zileRamase: number }) {
     return () => clearInterval(interval);
   }, [zileRamase]);
   return (
-    <span className="inline-flex items-center gap-1 text-[10px] font-black text-red-600 bg-red-50 border border-red-200 px-1.5 py-0.5 rounded-full animate-pulse">
+    <span className="inline-flex items-center gap-1 text-[10px] font-black text-red-400 bg-red-500/15 border border-red-500/30 px-1.5 py-0.5 rounded-full animate-pulse">
       ⏱ {zileRamase === 0 ? "Azi" : "Mâine"} {timeLeft}
     </span>
   );
@@ -1717,7 +1709,6 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
   const trustScore     = m.procent_succes || (m.are_promotie ? 78 : 50);
   const cashbackText   = formatCashback(m.comision);
 
-  const proof = socialProof(m.magazin);
   const [imgOk, setImgOk] = useState(true);
   const [rating, setRating] = useState<"ok"|"nok"|null>(() => {
     try { return localStorage.getItem(`rating_${m.magazin}`) as "ok"|"nok"|null; } catch { return null; }
@@ -1787,28 +1778,28 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
           {/* Badges */}
           <div className="flex flex-wrap gap-1 mt-2">
             {badgeReducere && (
-              <span className="text-[10px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-1.5 py-0.5 rounded-full">
+              <span className="text-[10px] font-bold text-emerald-400 bg-emerald-500/15 border border-emerald-500/25 px-1.5 py-0.5 rounded-full">
                 {badgeReducere}
                 {cashbackText && <span className="opacity-60 ml-0.5">+ CB</span>}
               </span>
             )}
             {!badgeReducere && m.are_promotie && (
-              <span className="text-[10px] font-bold text-orange-600 bg-orange-50 border border-orange-200 px-1.5 py-0.5 rounded-full">
+              <span className="text-[10px] font-bold text-orange-400 bg-orange-500/15 border border-orange-500/25 px-1.5 py-0.5 rounded-full">
                 Oferta activa
               </span>
             )}
             {!m.are_promotie && cashbackText && (
-              <span className="text-[10px] font-bold text-teal-700 bg-teal-50 border border-teal-200 px-1.5 py-0.5 rounded-full">
+              <span className="text-[10px] font-bold text-teal-400 bg-teal-500/15 border border-teal-500/25 px-1.5 py-0.5 rounded-full">
                 {cashbackText}
               </span>
             )}
             {m.cod_cupon && (
-              <span className="text-[10px] font-semibold text-violet-700 bg-violet-50 border border-violet-200 px-1.5 py-0.5 rounded-full">
+              <span className="text-[10px] font-semibold text-violet-400 bg-violet-500/15 border border-violet-500/25 px-1.5 py-0.5 rounded-full">
                 Cod cupon
               </span>
             )}
             {m.trend > 0 && (
-              <span className="text-[10px] font-semibold text-purple-600 bg-purple-50 px-1.5 py-0.5 rounded-full">
+              <span className="text-[10px] font-semibold text-purple-400 bg-purple-500/15 px-1.5 py-0.5 rounded-full">
                 Trending
               </span>
             )}
@@ -1837,25 +1828,16 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
             Verificat azi
           </div>
         )}
-        {m.are_promotie && (
-          <span className="text-[10px] text-slate-400 flex items-center gap-1">
-            <span className="w-1 h-1 rounded-full bg-green-400 inline-block animate-pulse"/>
-            {proof.activi} acum
-          </span>
-        )}
         {m.are_promotie && m.procent_succes > 0 && (
           <span className="text-[10px] text-slate-400">{m.procent_succes}% succes</span>
         )}
         {!m.are_promotie && m.folosit_de > 0 && (
           <span className="text-[10px] text-slate-400">{m.folosit_de}x folosit</span>
         )}
-        {m.are_promotie && (
-          <span className="text-[10px] text-slate-400">👁 {proof.vizualizari} azi</span>
-        )}
         {expiraAzi && <CardCountdown zileRamase={0} />}
         {expiraMaine && <CardCountdown zileRamase={1} />}
         {expiraCurand && !expiraAzi && !expiraMaine && (
-          <span className="text-[10px] font-bold text-amber-600 bg-amber-50 border border-amber-200 px-1.5 py-0.5 rounded-full">
+          <span className="text-[10px] font-bold text-amber-400 bg-amber-500/15 border border-amber-500/25 px-1.5 py-0.5 rounded-full">
             ⏳ {promo!.zile_ramase}z ramase
           </span>
         )}
@@ -1866,8 +1848,8 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
         {promo?.cod_cupon ? (
           revealed ? (
             <div className="space-y-2">
-              <div className="border-2 border-dashed border-orange-400 rounded-xl py-2.5 text-center bg-orange-50">
-                <span className="font-mono font-black text-orange-600 tracking-widest text-sm">{promo.cod_cupon}</span>
+              <div className="border-2 border-dashed border-orange-400 rounded-xl py-2.5 text-center bg-orange-500/10">
+                <span className="font-mono font-black text-orange-400 tracking-widest text-sm">{promo.cod_cupon}</span>
               </div>
               <a href={link} target="_blank" rel="noopener noreferrer"
                 className="flex items-center justify-center w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 rounded-xl text-sm transition-colors">
@@ -1876,7 +1858,7 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
             </div>
           ) : (
             <div className="space-y-2">
-              <div className="border-2 border-dashed border-slate-700 rounded-xl py-2.5 text-center bg-slate-50">
+              <div className="border-2 border-dashed border-slate-700 rounded-xl py-2.5 text-center bg-slate-800">
                 <span className="font-mono text-slate-400 text-sm">{maskCod(promo.cod_cupon)}</span>
               </div>
               <button onClick={() => onCopiere(m.magazin, promo.cod_cupon, link)}
@@ -1904,20 +1886,20 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
 
       {/* Voting */}
       {promo && (
-        <div className="px-4 pb-4 border-t border-slate-50 pt-3">
+        <div className="px-4 pb-4 border-t border-slate-800 pt-3">
           {rating ? (
-            <p className="text-[11px] text-center font-semibold text-emerald-600">
+            <p className="text-[11px] text-center font-semibold text-emerald-400">
               {rating === "ok" ? "Multumim pentru feedback!" : "Am notat, verificam!"}
             </p>
           ) : (
             <div className="flex items-center justify-center gap-2">
               <span className="text-[11px] text-slate-400">A functionat codul?</span>
               <button onClick={e => voteaza("ok", e)}
-                className="text-[11px] px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-600 hover:bg-emerald-100 font-semibold transition-colors border border-emerald-200">
+                className="text-[11px] px-2.5 py-1 rounded-full bg-emerald-500/15 text-emerald-400 hover:bg-emerald-500/25 font-semibold transition-colors border border-emerald-500/30">
                 Da
               </button>
               <button onClick={e => voteaza("nok", e)}
-                className="text-[11px] px-2.5 py-1 rounded-full bg-slate-50 text-slate-500 hover:bg-red-50 hover:text-red-500 font-semibold transition-colors border border-slate-700 hover:border-red-200">
+                className="text-[11px] px-2.5 py-1 rounded-full bg-slate-800 text-slate-400 hover:bg-red-500/15 hover:text-red-400 font-semibold transition-colors border border-slate-700 hover:border-red-500/30">
                 Nu
               </button>
             </div>

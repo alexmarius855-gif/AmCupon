@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,11 +11,11 @@ export default function ConfidentialitatePage() {
     <div className="min-h-screen bg-gray-50">
       <header className="bg-white border-b border-gray-200 shadow-sm">
         <div className="max-w-4xl mx-auto px-4 py-3 flex items-center gap-2">
-          <a href="/" className="flex items-center gap-1.5">
+          <Link href="/" className="flex items-center gap-1.5">
             <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
             <span className="font-black text-gray-900 text-xl">Cupon</span>
             <span className="text-orange-500 font-black text-xl">.ro</span>
-          </a>
+          </Link>
           <span className="text-gray-300 mx-1">/</span>
           <span className="text-sm font-semibold text-gray-600">Politică de Confidențialitate</span>
         </div>
@@ -168,9 +169,9 @@ export default function ConfidentialitatePage() {
         </div>
 
         <div className="mt-8 text-center">
-          <a href="/" className="text-sm text-gray-400 hover:text-orange-500 transition-colors">
+          <Link href="/" className="text-sm text-gray-400 hover:text-orange-500 transition-colors">
             ← Înapoi la AmCupon.ro
-          </a>
+          </Link>
         </div>
       </div>
     </div>

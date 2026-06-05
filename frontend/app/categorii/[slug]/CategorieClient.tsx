@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { useState } from "react";
 
 interface Promotie {
@@ -193,27 +195,27 @@ export default function CategorieClient({ magazine, numeCategorie, slug }: {
       {/* HEADER */}
       <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-3">
-          <a href="/" className="flex items-center gap-1.5 shrink-0">
+          <Link href="/" className="flex items-center gap-1.5 shrink-0">
             <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
             <span className="font-black text-gray-900 text-xl">Cupon</span>
             <span className="text-orange-500 font-black text-xl">.ro</span>
-          </a>
+          </Link>
         </div>
       </header>
 
       {/* BREADCRUMB */}
       <nav aria-label="Breadcrumb" className="bg-white border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-gray-400 flex-wrap">
-          <a href="/" className="hover:text-orange-500 transition-colors flex items-center gap-1">
+          <Link href="/" className="hover:text-orange-500 transition-colors flex items-center gap-1">
             <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
               <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
             </svg>
             Acasă
-          </a>
+          </Link>
           <svg className="w-3 h-3 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
-          <a href="/categorii" className="hover:text-orange-500 transition-colors">Categorii</a>
+          <Link href="/categorii" className="hover:text-orange-500 transition-colors">Categorii</Link>
           <svg className="w-3 h-3 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
@@ -302,12 +304,12 @@ export default function CategorieClient({ magazine, numeCategorie, slug }: {
         </section>
 
         <div className="mt-8 pt-6 border-t border-gray-100 flex items-center justify-between flex-wrap gap-3">
-          <a href="/categorii" className="text-sm text-gray-400 hover:text-orange-500 transition-colors">
+          <Link href="/categorii" className="text-sm text-gray-400 hover:text-orange-500 transition-colors">
             ← Toate categoriile
-          </a>
-          <a href="/toate-magazinele" className="text-sm text-gray-400 hover:text-orange-500 transition-colors">
+          </Link>
+          <Link href="/toate-magazinele" className="text-sm text-gray-400 hover:text-orange-500 transition-colors">
             Toate magazinele →
-          </a>
+          </Link>
         </div>
       </div>
     </div>

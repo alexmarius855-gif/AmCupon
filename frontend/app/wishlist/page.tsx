@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { useWishlist } from "../hooks/useWishlist";
 import { useState } from "react";
 
@@ -59,9 +61,9 @@ export default function WishlistPage() {
             <p className="text-slate-500 text-sm mb-6">
               Apasa iconita &#9825; pe orice produs din sectiunea Produse pentru a-l salva.
             </p>
-            <a href="/produse" className="inline-block bg-orange-500 text-white font-bold px-6 py-3 rounded-xl hover:bg-orange-600 transition-colors">
+            <Link href="/produse" className="inline-block bg-orange-500 text-white font-bold px-6 py-3 rounded-xl hover:bg-orange-600 transition-colors">
               Exploreaza produse
-            </a>
+            </Link>
           </div>
         )}
 
