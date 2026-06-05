@@ -11,6 +11,7 @@ import ConsentAnalytics from "./components/ConsentAnalytics";
 import WebPushInit from "./components/WebPushInit";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import AffiliateClickTracker from "./components/AffiliateClickTracker";
 import "./globals.css";
 import ThemeToggle from "./components/ThemeToggle";
 import AnuntAnimat from "./components/AnuntAnimat";
@@ -141,6 +142,8 @@ export default function RootLayout({
           gaId={GA_ID || undefined}
           adsenseId={process.env.NEXT_PUBLIC_ADSENSE_ID}
         />
+        {/* Tracking global click-uri afiliate → GA4 event affiliate_click */}
+        <AffiliateClickTracker />
         {/* Web Push — OneSignal (setare NEXT_PUBLIC_ONESIGNAL_APP_ID in Vercel) */}
         <WebPushInit appId={process.env.NEXT_PUBLIC_ONESIGNAL_APP_ID} />
         <Analytics />
