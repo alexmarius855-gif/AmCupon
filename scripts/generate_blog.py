@@ -10,6 +10,7 @@ Tipuri de articole generate:
 
 import json
 import os
+import re
 from datetime import datetime
 
 LUNI_RO = {
@@ -407,6 +408,26 @@ def main():
             sluguri_existente.add(slug)
             generate_count += 1
             print(f"Generat magazin (SEO top): {art['title']}")
+
+    # ── PRUNE articole lunare EXPIRATE (fix 05.06.2026) ────────────────────────
+    # Articolele tip magazin/categorie/roundup se regenereaza lunar cu acelasi
+    # continut dar slug nou (-mai-2026, -iunie-2026...), creand DUPLICATE CONTENT
+    # care se canibalizeaza. Pastram doar luna curenta; stergem lunile vechi.
+    # Best-of (cel-mai-bun-X-2026) si evergreen NU au luna in slug -> raman intacte.
+    _luni_lower = [v.lower() for v in LUNI_RO.values()]
+    _month_re = re.compile(r"-(" + "|".join(_luni_lower) + r")-(\d{4})$")
+    _suffix_curent = f"-{luna.lower()}-{an}"
+
+    def _este_lunar_expirat(slug: str) -> bool:
+        if not _month_re.search(slug):
+            return False  # nu e articol lunar -> pastreaza
+        return not slug.endswith(_suffix_curent)
+
+    inainte = len(posts)
+    posts = [p for p in posts if not _este_lunar_expirat(p.get("slug", ""))]
+    sterse = inainte - len(posts)
+    if sterse:
+        print(f"Prune: sterse {sterse} articole lunare expirate (duplicate).")
 
     # Insereaza articolele noi la inceput si limiteaza la MAX_POSTS
     all_posts = noi + posts
