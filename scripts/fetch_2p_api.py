@@ -331,16 +331,25 @@ def parse_promotii(promotii_raw: list) -> dict:
                 pass
 
         # Un cod de reducere explicit poate fi in affiliate_challenge sau description
-        challenge = p.get("affiliate_challenge", "") or ""
+        # FIX 05.06.2026: API-ul poate intoarce bool/None pe affiliate_challenge ->
+        # len() pe non-string arunca TypeError si OMORA tot scriptul (pipeline mort 5 zile).
+        challenge = p.get("affiliate_challenge") or ""
+        if not isinstance(challenge, str):
+            challenge = ""
         cod_cupon = ""
         if challenge and len(challenge) < 30 and re.match(r"^[A-Z0-9_\-]+$", challenge.strip()):
             cod_cupon = challenge.strip()
+
+        # Link-ul ofertei specifice (deep-link) — TREBUIE wrappat afiliat prin quicklink,
+        # altfel click-urile pe oferte/cupoane/Deal Zilei pierd comisionul (fix 05.06.2026).
+        landing_raw = p.get("landing_page_link", "") or p.get("landing_page", "")
+        landing_afiliat = make_afiliat_url(landing_raw) if landing_raw else ""
 
         promotie = {
             "nume":          p.get("name", "") or p.get("title", ""),
             "descriere":     p.get("description", "") or p.get("affiliate_bonus", ""),
             "cod_cupon":     cod_cupon,
-            "landing_page":  p.get("landing_page_link", "") or p.get("landing_page", ""),
+            "landing_page":  landing_afiliat,
             "zile_ramase":   zile_ramase,
         }
 
@@ -510,5 +519,8 @@ if __name__ == "__main__":
         import traceback
         print(f"\nFATAL: {e}")
         traceback.print_exc()
+        # Anotare GitHub Actions: apare VIZIBIL in UI-ul rularii (rosu) fara a bloca
+        # restul pipeline-ului (profitshare/blog/commit ruleaza in continuare).
+        print(f"::error title=fetch_2p_api a esuat::{e} — datele 2Performant raman inghetate (pastrez output.json existent). Verifica scriptul!")
         print("\nScript esuat — pastrez datele existente.")
         sys.exit(0)  # nu esuam step-ul GitHub Actions

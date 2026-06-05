@@ -422,6 +422,17 @@ def process_program(prog: dict, promo_map: dict, rank_counter: int) -> dict | No
 
     # Promotii din promo_map (indexate dupa advertiser_id = pid)
     promotii    = promo_map.get(pid, [])
+
+    # FIX 05.06.2026: landing_page-urile promotiilor erau URL-uri brute (fara tracking),
+    # deci click-urile pe oferte pierdeau comisionul. Le wrappez peste url_afiliat
+    # (tracking verificat HTTP 200) + &url= pentru deep-link la oferta specifica.
+    for promo in promotii:
+        lp = promo.get("landing_page", "")
+        if lp and not lp.startswith("https://l.profitshare.ro"):
+            promo["landing_page"] = f"{url_afiliat}&url={quote(lp, safe='')}"
+        elif not lp:
+            promo["landing_page"] = url_afiliat
+
     are_promotie = len(promotii) > 0
     are_cod     = any(p.get("cod_cupon") for p in promotii)
     zile_ramase = min((p.get("zile_ramase", 99) for p in promotii), default=99)
