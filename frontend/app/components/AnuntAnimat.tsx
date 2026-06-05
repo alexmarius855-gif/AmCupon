@@ -24,7 +24,7 @@ interface AnuntItem {
 }
 
 const MESAJE_STATICE: AnuntItem[] = [
-  { text: "288 magazine partenere — coduri verificate zilnic", href: "/toate-magazinele", emoji: "🛍️" },
+  { text: "290+ magazine partenere — coduri verificate zilnic", href: "/toate-magazinele", emoji: "🛍️" },
   { text: "Extensie Chrome disponibila — cod automat la checkout", href: "/extensie", emoji: "🧩" },
   { text: "Newsletter gratuit — top 5 oferte zilnic pe email", href: "/newsletter", emoji: "📬" },
 ];
@@ -60,9 +60,16 @@ export default function AnuntAnimat() {
           });
         }
 
-        if (promoItems.length >= 3) {
-          setItems([...promoItems, ...MESAJE_STATICE]);
-        }
+        // Numar real de magazine din nav-index.json (nu hardcodat)
+        const totalMagazine = Array.isArray(data) ? data.length : 0;
+        const statice: AnuntItem[] = totalMagazine > 0
+          ? [
+              { text: `${totalMagazine} magazine partenere — coduri verificate zilnic`, href: "/toate-magazinele", emoji: "🛍️" },
+              ...MESAJE_STATICE.slice(1),
+            ]
+          : MESAJE_STATICE;
+
+        setItems(promoItems.length >= 3 ? [...promoItems, ...statice] : statice);
       })
       .catch(() => {});
   }, []);

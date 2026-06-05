@@ -463,7 +463,7 @@ export default function Home() {
 
           <p className="text-slate-400 text-lg md:text-xl mb-10 max-w-md mx-auto leading-relaxed">
             Verificate zilnic. 100% gratuit.<br className="hidden sm:block"/>
-            {magazine.length > 0 ? `Peste ${magazine.length}` : "Peste 610"} magazine partenere.
+            {magazine.length > 0 ? `Peste ${magazine.length}` : "Peste 290"} magazine partenere.
           </p>
 
           {/* Search hero */}
@@ -501,7 +501,7 @@ export default function Home() {
           {/* Trust row */}
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-xs text-white/40 font-medium">
             <span className="flex items-center gap-1.5"><span className="text-emerald-400">✓</span> Gratuit, fara cont</span>
-            <span className="flex items-center gap-1.5"><span className="text-emerald-400">✓</span> {magazine.length > 0 ? `${magazine.length}+` : "610+"} magazine</span>
+            <span className="flex items-center gap-1.5"><span className="text-emerald-400">✓</span> {magazine.length > 0 ? `${magazine.length}+` : "290+"} magazine</span>
             <span className="flex items-center gap-1.5"><span className="text-emerald-400">✓</span> Actualizat zilnic automat</span>
             <span className="flex items-center gap-1.5"><span className="text-emerald-400">✓</span> 0 reclame invazive</span>
           </div>
@@ -613,7 +613,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-slate-800">
             {[
-              { icon: "🏪", value: magazine.length > 0 ? `${magazine.length}+` : "610+", label: "Magazine partenere" },
+              { icon: "🏪", value: magazine.length > 0 ? `${magazine.length}+` : "290+", label: "Magazine partenere" },
               { icon: "⚡", value: cuPromotii.length > 0 ? `${cuPromotii.length}` : "200+",  label: "Promotii active" },
               { icon: "✅", value: "100%",    label: "Coduri verificate" },
               { icon: "🆓", value: "Gratuit", label: "Fara abonament" },

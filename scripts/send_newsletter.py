@@ -154,7 +154,7 @@ def format_comision(m: dict) -> str:
     return "Oferta activa"
 
 
-def make_html(top_n: list, data_str: str, is_test: bool = False) -> str:
+def make_html(top_n: list, data_str: str, is_test: bool = False, total_magazine: int = 0) -> str:
     def card(m: dict) -> str:
         logo    = m.get("logo_url", "")
         name    = m["magazin"].split(".")[0].capitalize()
@@ -255,7 +255,7 @@ def make_html(top_n: list, data_str: str, is_test: bool = False) -> str:
         Vezi toate ofertele &rarr;
       </a>
       <p style="color:#9ca3af;font-size:12px;margin-top:10px;">
-        288 magazine &bull; Actualizat zilnic &bull; 100% gratuit
+        {total_magazine if total_magazine else '290+'} magazine &bull; Actualizat zilnic &bull; 100% gratuit
       </p>
     </div>
   </div>
@@ -390,7 +390,7 @@ def main():
         promo = get_best_promo(m)
         print(f"  {m['magazin']:<28} cod={promo.get('cod_cupon','-'):<20} scor={m.get('scor_final',0)}")
 
-    html_content = make_html(top_n, data_str, is_test=bool(args.test))
+    html_content = make_html(top_n, data_str, is_test=bool(args.test), total_magazine=len(magazine))
     text_content = make_text(top_n, data_str)
 
     if args.test:
