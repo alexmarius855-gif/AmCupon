@@ -3,7 +3,8 @@ name: Actualizare Automata Date & Blog
 on:
   schedule:
     - cron: '0 */4 * * *'  # Date fresh la fiecare 4 ore (00:00, 04:00, 08:00, 12:00, 16:00, 20:00 UTC)
-    - cron: '0 6 * * *'    # Newsletter + Telegram — zilnic la 08:00 ora Romaniei
+    - cron: '0 6 * * *'    # Newsletter + Social dimineata — zilnic la 08:00 ora Romaniei
+    - cron: '0 17 * * *'   # Social seara — zilnic la 19:00 ora Romaniei (17:00 UTC)
   workflow_dispatch:        # Buton manual in GitHub → Actions
 
 jobs:
@@ -177,16 +178,42 @@ jobs:
         working-directory: scripts
         run: python generate_social_content.py
 
-      # ── 12. Facebook Page auto-posting — la 08:00 Romania ────────────────
-      - name: Postare automata Facebook Page
-        if: github.event.schedule == '0 6 * * *' || github.event_name == 'workflow_dispatch'
-        continue-on-error: true   # non-critic
+      # ── 12. Genereaza bannere automat (Pillow) ────────────────────────────
+      - name: Genereaza bannere sociale (Pillow)
+        if: >
+          github.event.schedule == '0 6 * * *' ||
+          github.event.schedule == '0 17 * * *' ||
+          github.event_name == 'workflow_dispatch'
+        continue-on-error: true
+        working-directory: scripts
+        run: python generate_banner_auto.py
+
+      # ── 12b. Facebook Page auto-posting ──────────────────────────────────
+      - name: Postare automata Facebook Page (dimineata + seara)
+        if: >
+          github.event.schedule == '0 6 * * *' ||
+          github.event.schedule == '0 17 * * *' ||
+          github.event_name == 'workflow_dispatch'
+        continue-on-error: true
         working-directory: scripts
         env:
           FACEBOOK_PAGE_ID:    ${{ secrets.FACEBOOK_PAGE_ID }}
           FACEBOOK_PAGE_TOKEN: ${{ secrets.FACEBOOK_PAGE_TOKEN }}
-        run: |
-          python post_facebook.py
+        run: python post_facebook.py
+
+      # ── 12c. Instagram auto-posting ───────────────────────────────────────
+      - name: Postare automata Instagram Business
+        if: >
+          github.event.schedule == '0 6 * * *' ||
+          github.event.schedule == '0 17 * * *' ||
+          github.event_name == 'workflow_dispatch'
+        continue-on-error: true
+        working-directory: scripts
+        env:
+          INSTAGRAM_ACCOUNT_ID:   ${{ secrets.INSTAGRAM_ACCOUNT_ID }}
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          BANNER_PUBLIC_URL:      "https://amcupon.ro/banner-categorii.png"
+        run: python post_instagram.py
 
       # ── 13. Health check freshness ────────────────────────────────────────
       - name: Health check — verifica freshness output.json
@@ -220,6 +247,8 @@ jobs:
           git add data/social-content.json         || true
           git add data/social-content-today.txt    || true
           git add data/social-nisa-*.txt           || true
+          git add data/banner_daily.png            || true
+          git add data/banner_story.png            || true
 
           if git diff --staged --quiet; then
             echo "Nicio schimbare — skip commit"
