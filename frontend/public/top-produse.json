@@ -1846,6 +1846,1542 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "cafetiere",
+      "titlu": "Cele mai bune cafetiere 2026",
+      "titlu_scurt": "Cafetiere",
+      "emoji": "☕",
+      "descriere": "Am testat 15+ cafetiere espresso, filtru si capsule. Top 5 recomandari pentru orice buget si tip de cafea.",
+      "culoare": "amber",
+      "tag": "NOU",
+      "produse": [
+        {
+          "pozitie": 1,
+          "badge": "Alegerea Redactiei",
+          "badge_color": "orange",
+          "nume": "DeLonghi Magnifica Evo",
+          "model": "ECAM290.61.B",
+          "imagine": "https://picsum.photos/seed/delonghi-magnifica/400/280",
+          "pret_de_la": 1499,
+          "moneda": "RON",
+          "scor_total": 9.3,
+          "scoruri": {
+            "Calitate cafea": 9.5,
+            "Usurinta folosire": 9.2,
+            "Constructie": 9.3,
+            "Pret/Calitate": 9.1
+          },
+          "verdict_scurt": "Cea mai buna cafetiera automat pentru acasa",
+          "verdict_detaliat": "DeLonghi Magnifica Evo prepara espresso autentic din boabe proaspete. Rasnita ceramica integrata pastreaza aroma, iar interfata simpla o face accesibila oricui.",
+          "pro": [
+            "Rasnita ceramica inclusa",
+            "Espresso autentic din boabe",
+            "Curatare automata",
+            "Silentioasa"
+          ],
+          "contra": [
+            "Pret mai ridicat",
+            "Necesita boabe de calitate",
+            "Rezervor apa 1.8L mic"
+          ],
+          "specificatii": {
+            "Tip": "Automat cu boabe",
+            "Presiune": "15 bar",
+            "Rezervor apa": "1.8L",
+            "Rasnita": "Ceramica"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "recomandat": true,
+              "pret": 1599
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 1649,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 2,
+          "badge": "Cel mai bun pret",
+          "badge_color": "green",
+          "nume": "Philips Series 2200",
+          "model": "EP2220/10",
+          "imagine": "https://picsum.photos/seed/philips-2200/400/280",
+          "pret_de_la": 999,
+          "moneda": "RON",
+          "scor_total": 8.8,
+          "scoruri": {
+            "Calitate cafea": 8.7,
+            "Usurinta folosire": 9.0,
+            "Constructie": 8.8,
+            "Pret/Calitate": 9.3
+          },
+          "verdict_scurt": "Automat cu boabe la pret accesibil",
+          "verdict_detaliat": "Philips 2200 este alegerea perfecta pentru incepatori. Prepara cafea buna la pret corect, cu intretinere minima si functii simple.",
+          "pro": [
+            "Pret bun sub 1000 lei",
+            "Usor de folosit",
+            "Curatare simpla",
+            "Compact"
+          ],
+          "contra": [
+            "Fara display",
+            "O singura marime portie",
+            "Rasnita mai zgomotoasa"
+          ],
+          "specificatii": {
+            "Tip": "Automat cu boabe",
+            "Presiune": "15 bar",
+            "Rezervor apa": "1.8L",
+            "Rasnita": "Metal"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "recomandat": true,
+              "pret": 1049
+            },
+            {
+              "magazin_slug": "flanco.ro",
+              "eticheta": "Flanco",
+              "pret": 999,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 3,
+          "badge": "Capsule premium",
+          "badge_color": "purple",
+          "nume": "Nespresso Vertuo Pop+",
+          "model": "ENV92.B",
+          "imagine": "https://picsum.photos/seed/nespresso-vertuo/400/280",
+          "pret_de_la": 549,
+          "moneda": "RON",
+          "scor_total": 8.5,
+          "scoruri": {
+            "Calitate cafea": 8.8,
+            "Usurinta folosire": 9.5,
+            "Constructie": 8.3,
+            "Pret/Calitate": 7.8
+          },
+          "verdict_scurt": "Cea mai simpla cafetiera cu capsule",
+          "verdict_detaliat": "Nespresso Vertuo Pop+ este regina simplitatii: o singura apasare, cafea perfecta mereu. Centrifusion extrage aroma complet din fiecare capsula.",
+          "pro": [
+            "Extrem de simplu de folosit",
+            "Cafea constanta",
+            "Incalzire rapida 30s",
+            "Design compact"
+          ],
+          "contra": [
+            "Cost capsule ridicat (5-7 lei/buc)",
+            "Fara boabe proaspete",
+            "Capsula proprie Nespresso"
+          ],
+          "specificatii": {
+            "Tip": "Capsule Vertuo",
+            "Presiune": "19 bar",
+            "Rezervor apa": "0.56L",
+            "Incalzire": "30 secunde"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "recomandat": true,
+              "pret": 599
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 549,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 4,
+          "badge": null,
+          "badge_color": null,
+          "nume": "Rowenta Grind & Brew",
+          "model": "CT380810",
+          "imagine": "https://picsum.photos/seed/rowenta-grind/400/280",
+          "pret_de_la": 399,
+          "moneda": "RON",
+          "scor_total": 8.1,
+          "scoruri": {
+            "Calitate cafea": 8.3,
+            "Usurinta folosire": 8.0,
+            "Constructie": 8.2,
+            "Pret/Calitate": 8.7
+          },
+          "verdict_scurt": "Filtru cu rasnita integrata la pret mic",
+          "verdict_detaliat": "Rowenta Grind & Brew combina rasnita cu prepararea filtru pentru cafea proaspata la un pret accesibil. Ideal pentru cei care prefera cafea de filtru.",
+          "pro": [
+            "Rasnita integrata",
+            "Pret accesibil",
+            "Carafa termica",
+            "Programare ora"
+          ],
+          "contra": [
+            "Nu face espresso",
+            "Rasnita cu lame (nu ceramic)",
+            "Carafa mica 4 cesti"
+          ],
+          "specificatii": {
+            "Tip": "Filtru cu rasnita",
+            "Capacitate": "4 cesti",
+            "Putere": "900W",
+            "Rasnita": "Lame"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "recomandat": true,
+              "pret": 429
+            },
+            {
+              "magazin_slug": "geekmall.ro",
+              "eticheta": "GeekMall",
+              "recomandat": false,
+              "pret": 399
+            }
+          ]
+        },
+        {
+          "pozitie": 5,
+          "badge": null,
+          "badge_color": null,
+          "nume": "Illy X1 Anniversary",
+          "model": "60126",
+          "imagine": "https://picsum.photos/seed/illy-x1/400/280",
+          "pret_de_la": 749,
+          "moneda": "RON",
+          "scor_total": 8.4,
+          "scoruri": {
+            "Calitate cafea": 9.0,
+            "Usurinta folosire": 8.8,
+            "Constructie": 8.5,
+            "Pret/Calitate": 7.9
+          },
+          "verdict_scurt": "Capsule iperespresso pentru cafea de specialitate",
+          "verdict_detaliat": "Illy X1 este pentru iubitorii de cafea premium. Capsula iperespresso ofera o extragere mai bogata si crema superioara comparativ cu alte sisteme capsule.",
+          "pro": [
+            "Cafea premium Illy",
+            "Crema excelenta",
+            "Design italian elegant",
+            "Simplu de curatat"
+          ],
+          "contra": [
+            "Capsule scumpe si greu de gasit",
+            "Fara personalizare intensitate",
+            "Rezervor mic"
+          ],
+          "specificatii": {
+            "Tip": "Capsule iperespresso",
+            "Presiune": "19 bar",
+            "Rezervor apa": "0.7L",
+            "Putere": "1250W"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "recomandat": true,
+              "pret": 799
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "masini-de-spalat",
+      "titlu": "Cele mai bune masini de spalat 2026",
+      "titlu_scurt": "Masini de spalat",
+      "emoji": "🫧",
+      "descriere": "Am comparat 12+ masini de spalat frontale si cu incarcare superioara. Top 5 pentru economie de energie, capacitate si silentiozitate.",
+      "culoare": "sky",
+      "tag": null,
+      "produse": [
+        {
+          "pozitie": 1,
+          "badge": "Alegerea Redactiei",
+          "badge_color": "orange",
+          "nume": "Samsung WW90T554DAW",
+          "model": "AddWash 9kg",
+          "imagine": "https://picsum.photos/seed/samsung-ww90/400/280",
+          "pret_de_la": 1999,
+          "moneda": "RON",
+          "scor_total": 9.2,
+          "scoruri": {
+            "Spalare": 9.3,
+            "Consum energie": 9.0,
+            "Silentiozitate": 9.2,
+            "Pret/Calitate": 9.1
+          },
+          "verdict_scurt": "Cea mai silentioasa masina de spalat 9kg",
+          "verdict_detaliat": "Samsung WW90T554 cu tehnologia EcoBubble spala eficient la temperatura joasa, economisind energia. Usa AddWash permite adaugarea hainelor uitate in timpul spalarii.",
+          "pro": [
+            "Usa AddWash - adaugi rufe in timpul spalarii",
+            "EcoBubble - spalare la rece eficienta",
+            "Motor inverter silentios",
+            "Clasa A energetica"
+          ],
+          "contra": [
+            "Pret mediu-ridicat",
+            "Aplicatie SmartThings poate fi complicata",
+            "Fara abur (la varianta de baza)"
+          ],
+          "specificatii": {
+            "Capacitate": "9 kg",
+            "Clasa energie": "A",
+            "Turatie": "1400 rpm",
+            "Nivel zgomot": "48 dB"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "recomandat": true,
+              "pret": 2099
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 1999,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 2,
+          "badge": "Cel mai economic",
+          "badge_color": "green",
+          "nume": "Beko WUE 7512 XA",
+          "model": "7kg A+++",
+          "imagine": "https://picsum.photos/seed/beko-7kg/400/280",
+          "pret_de_la": 1199,
+          "moneda": "RON",
+          "scor_total": 8.6,
+          "scoruri": {
+            "Spalare": 8.5,
+            "Consum energie": 9.2,
+            "Silentiozitate": 8.4,
+            "Pret/Calitate": 9.0
+          },
+          "verdict_scurt": "Cel mai bun raport pret/consum energetic",
+          "verdict_detaliat": "Beko WUE 7512 ofera performanta solida la un pret accesibil. Motor cu perii, clasa A+++, consum redus — alegerea practica pentru familie.",
+          "pro": [
+            "Pret accesibil",
+            "Clasa A+++ consum redus",
+            "Motor durabil",
+            "Programe multiple"
+          ],
+          "contra": [
+            "Nu are WiFi",
+            "Mai zgomotoasa la centrifugare",
+            "Display simplu"
+          ],
+          "specificatii": {
+            "Capacitate": "7 kg",
+            "Clasa energie": "A+++",
+            "Turatie": "1200 rpm",
+            "Nivel zgomot": "52 dB"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "recomandat": true,
+              "pret": 1249
+            },
+            {
+              "magazin_slug": "flanco.ro",
+              "eticheta": "Flanco",
+              "pret": 1199,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 3,
+          "badge": null,
+          "badge_color": null,
+          "nume": "LG F4WR509SBW",
+          "model": "9kg AI DD",
+          "imagine": "https://picsum.photos/seed/lg-f4wr/400/280",
+          "pret_de_la": 2299,
+          "moneda": "RON",
+          "scor_total": 9.0,
+          "scoruri": {
+            "Spalare": 9.4,
+            "Consum energie": 9.1,
+            "Silentiozitate": 9.3,
+            "Pret/Calitate": 8.5
+          },
+          "verdict_scurt": "Tehnologie AI pentru spalare optima",
+          "verdict_detaliat": "LG F4WR509S cu AI DD detecteaza tipul de tesatura si ajusteaza automat parametrii. TurboWash spala 9kg in 39 minute.",
+          "pro": [
+            "AI DD adapteaza automat spalarea",
+            "TurboWash 39 minute",
+            "Steam pentru igienizare",
+            "Motor inverter 10 ani garantie"
+          ],
+          "contra": [
+            "Pret ridicat",
+            "Aplicatia ThinQ necesita cont",
+            "Dimensiuni mari"
+          ],
+          "specificatii": {
+            "Capacitate": "9 kg",
+            "Clasa energie": "A",
+            "Turatie": "1400 rpm",
+            "Nivel zgomot": "46 dB"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "recomandat": true,
+              "pret": 2399
+            },
+            {
+              "magazin_slug": "flanco.ro",
+              "eticheta": "Flanco",
+              "pret": 2299,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 4,
+          "badge": null,
+          "badge_color": null,
+          "nume": "Indesit MTWSC 61294 WK EE",
+          "model": "6kg",
+          "imagine": "https://picsum.photos/seed/indesit-6kg/400/280",
+          "pret_de_la": 899,
+          "moneda": "RON",
+          "scor_total": 7.9,
+          "scoruri": {
+            "Spalare": 7.8,
+            "Consum energie": 8.0,
+            "Silentiozitate": 7.8,
+            "Pret/Calitate": 9.2
+          },
+          "verdict_scurt": "Cel mai ieftin — solid si de incredere",
+          "verdict_detaliat": "Indesit este alegerea pragmatica pentru buget limitat. Spala corect, dureaza, fara functii inutile. Perfect pentru single sau cuplu.",
+          "pro": [
+            "Pret sub 900 lei",
+            "Fiabil si durabil",
+            "Programe suficiente",
+            "Usor de folosit"
+          ],
+          "contra": [
+            "Fara motor inverter",
+            "Clasa energetica B",
+            "Fara display digital"
+          ],
+          "specificatii": {
+            "Capacitate": "6 kg",
+            "Clasa energie": "B",
+            "Turatie": "1200 rpm",
+            "Nivel zgomot": "58 dB"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "recomandat": true,
+              "pret": 949
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 899,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 5,
+          "badge": null,
+          "badge_color": null,
+          "nume": "Bosch WGB2560X0",
+          "model": "10kg Serie 8",
+          "imagine": "https://picsum.photos/seed/bosch-serie8/400/280",
+          "pret_de_la": 3299,
+          "moneda": "RON",
+          "scor_total": 9.4,
+          "scoruri": {
+            "Spalare": 9.6,
+            "Consum energie": 9.3,
+            "Silentiozitate": 9.5,
+            "Pret/Calitate": 8.2
+          },
+          "verdict_scurt": "Masina premium pentru familia mare",
+          "verdict_detaliat": "Bosch Serie 8 este varful de gama pentru familii cu mult rufe. EcoSilence Drive, iDos dozare automata detergent si 10kg capacitate — perfecta pentru 4-5 persoane.",
+          "pro": [
+            "iDos - dozare automata detergent",
+            "Motor EcoSilence 47dB",
+            "10kg capacitate",
+            "SpeedPerfect 65% mai rapid"
+          ],
+          "contra": [
+            "Pret premium 3000+ lei",
+            "Complex de programat initial",
+            "Dimensiuni mari"
+          ],
+          "specificatii": {
+            "Capacitate": "10 kg",
+            "Clasa energie": "A",
+            "Turatie": "1600 rpm",
+            "Nivel zgomot": "47 dB"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "recomandat": true,
+              "pret": 3499
+            },
+            {
+              "magazin_slug": "flanco.ro",
+              "eticheta": "Flanco",
+              "pret": 3299,
+              "recomandat": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "roboti-de-bucatarie",
+      "titlu": "Cele mai bune roboti de bucatarie 2026",
+      "titlu_scurt": "Roboti bucatarie",
+      "emoji": "🤖",
+      "descriere": "Am testat 10+ roboti de bucatarie multifunctionali. Top 5 pentru amestecare, tocare, fierbere si coacere.",
+      "culoare": "rose",
+      "tag": null,
+      "produse": [
+        {
+          "pozitie": 1,
+          "badge": "Alegerea Redactiei",
+          "badge_color": "orange",
+          "nume": "Kenwood Chef XL KVL4100W",
+          "model": "6.7L",
+          "imagine": "https://picsum.photos/seed/kenwood-chef/400/280",
+          "pret_de_la": 1799,
+          "moneda": "RON",
+          "scor_total": 9.3,
+          "scoruri": {
+            "Putere": 9.5,
+            "Versatilitate": 9.4,
+            "Constructie": 9.3,
+            "Pret/Calitate": 8.8
+          },
+          "verdict_scurt": "Cel mai versatil robot de bucatarie",
+          "verdict_detaliat": "Kenwood Chef XL este standardul de aur al robotilor de bucatarie. Bol 6.7L, motor 1400W si 20 accesorii optionale — face absolut orice in bucatarie.",
+          "pro": [
+            "Bol inox 6.7L mare",
+            "Motor 1400W puternic",
+            "20+ accesorii compatibile",
+            "Constructie metal solida"
+          ],
+          "contra": [
+            "Pret ridicat",
+            "Greu 10kg — greu de mutat",
+            "Zgomotos la putere maxima"
+          ],
+          "specificatii": {
+            "Bol": "6.7L inox",
+            "Motor": "1400W",
+            "Viteze": "6 + puls",
+            "Greutate": "10.2 kg"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "recomandat": true,
+              "pret": 1899
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 1799,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 2,
+          "badge": "Cel mai bun pret",
+          "badge_color": "green",
+          "nume": "Tefal QB317838 Masterchef",
+          "model": "3L",
+          "imagine": "https://picsum.photos/seed/tefal-masterchef/400/280",
+          "pret_de_la": 499,
+          "moneda": "RON",
+          "scor_total": 8.2,
+          "scoruri": {
+            "Putere": 8.0,
+            "Versatilitate": 8.3,
+            "Constructie": 8.2,
+            "Pret/Calitate": 9.1
+          },
+          "verdict_scurt": "Robot solid la pret accesibil",
+          "verdict_detaliat": "Tefal Masterchef este alegerea practica pentru bucataria de zi cu zi. Bol 3L, 8 viteze si accesorii de baza incluse — suficient pentru familie.",
+          "pro": [
+            "Pret accesibil sub 500 lei",
+            "Compact si usor",
+            "Accesorii incluse",
+            "Usor de curatat"
+          ],
+          "contra": [
+            "Bol 3L — mic pentru cantitati mari",
+            "Motor 800W limitat",
+            "Fara gatit integrat"
+          ],
+          "specificatii": {
+            "Bol": "3L inox",
+            "Motor": "800W",
+            "Viteze": "8 + puls",
+            "Accesorii": "Paleta, carlig, tel"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "recomandat": true,
+              "pret": 549
+            },
+            {
+              "magazin_slug": "flanco.ro",
+              "eticheta": "Flanco",
+              "pret": 499,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 3,
+          "badge": "Cu gatit integrat",
+          "badge_color": "blue",
+          "nume": "Thermomix TM6",
+          "model": "Vorwerk",
+          "imagine": "https://picsum.photos/seed/thermomix-tm6/400/280",
+          "pret_de_la": 5990,
+          "moneda": "RON",
+          "scor_total": 9.5,
+          "scoruri": {
+            "Putere": 9.8,
+            "Versatilitate": 9.9,
+            "Constructie": 9.5,
+            "Pret/Calitate": 7.0
+          },
+          "verdict_scurt": "Robotul complet — gateste, amesteca, cantareste",
+          "verdict_detaliat": "Thermomix TM6 este robotul suprem care inlocuieste 20 de aparate. Gateste, amesteca, ferbe, caleste, toaca — cu retete ghidate pe ecran tactil.",
+          "pro": [
+            "Face absolut orice",
+            "Gatit ghidat pas cu pas",
+            "Cantar integrat",
+            "Incalzire pana la 160 grade"
+          ],
+          "contra": [
+            "Pret extrem 6000 lei",
+            "Vanzare directa fara reduceri",
+            "Invatare curba lunga"
+          ],
+          "specificatii": {
+            "Bol": "2.2L inox",
+            "Motor": "1300W",
+            "Temperatura": "37-160 grade",
+            "Viteze": "0-10200 rpm"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "recomandat": true,
+              "pret": 5990
+            }
+          ]
+        },
+        {
+          "pozitie": 4,
+          "badge": null,
+          "badge_color": null,
+          "nume": "Bosch MUMS2EW20",
+          "model": "Serie 2 700W",
+          "imagine": "https://picsum.photos/seed/bosch-mums2/400/280",
+          "pret_de_la": 699,
+          "moneda": "RON",
+          "scor_total": 8.5,
+          "scoruri": {
+            "Putere": 8.3,
+            "Versatilitate": 8.6,
+            "Constructie": 8.8,
+            "Pret/Calitate": 8.7
+          },
+          "verdict_scurt": "Robot Bosch fiabil la pret mediu",
+          "verdict_detaliat": "Bosch MUMS2 ofera calitate germana la pret mediu. Motor 700W, bol 3.8L si 3 accesorii standard — potrivit pentru familii de 4 persoane.",
+          "pro": [
+            "Calitate constructie Bosch",
+            "Motor silentios",
+            "Bol 3.8L suficient",
+            "Design elegant"
+          ],
+          "contra": [
+            "Motor 700W nu prea puternic",
+            "Accesorii limitate incluse",
+            "Fara variante de culori"
+          ],
+          "specificatii": {
+            "Bol": "3.8L inox",
+            "Motor": "700W",
+            "Viteze": "4 + puls",
+            "Greutate": "5.9 kg"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "recomandat": true,
+              "pret": 749
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 699,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 5,
+          "badge": null,
+          "badge_color": null,
+          "nume": "KitchenAid Classic 5K45SS",
+          "model": "4.3L",
+          "imagine": "https://picsum.photos/seed/kitchenaid-classic/400/280",
+          "pret_de_la": 1299,
+          "moneda": "RON",
+          "scor_total": 9.0,
+          "scoruri": {
+            "Putere": 8.8,
+            "Versatilitate": 9.0,
+            "Constructie": 9.5,
+            "Pret/Calitate": 8.5
+          },
+          "verdict_scurt": "Iconicul robot american — dureaza o viata",
+          "verdict_detaliat": "KitchenAid Classic este legendar pentru durabilitate si design. Motor 250W discret dar eficient, 59 accesorii optionale, garantie extinsa — investitie pe viata.",
+          "pro": [
+            "Constructie metal — dureaza 20+ ani",
+            "59 accesorii compatibile",
+            "Design iconic 12 culori",
+            "Motor silentios"
+          ],
+          "contra": [
+            "Motor 250W mai slab decat concurenta",
+            "Pret ridicat vs putere",
+            "Bol 4.3L — nu prea mare"
+          ],
+          "specificatii": {
+            "Bol": "4.3L inox",
+            "Motor": "250W",
+            "Viteze": "10",
+            "Greutate": "8.6 kg"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "recomandat": true,
+              "pret": 1399
+            },
+            {
+              "magazin_slug": "flanco.ro",
+              "eticheta": "Flanco",
+              "pret": 1299,
+              "recomandat": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "purificatoare-aer",
+      "titlu": "Cele mai bune purificatoare de aer 2026",
+      "titlu_scurt": "Purificatoare aer",
+      "emoji": "🌬️",
+      "descriere": "Am testat 10+ purificatoare HEPA pentru dormitor, living si birou. Top 5 pentru curatare aer, silentiozitate si consum.",
+      "culoare": "teal",
+      "tag": "POPULAR",
+      "produse": [
+        {
+          "pozitie": 1,
+          "badge": "Alegerea Redactiei",
+          "badge_color": "orange",
+          "nume": "Philips Series 2000i AC2958/23",
+          "model": "HEPA+Carbon",
+          "imagine": "https://picsum.photos/seed/philips-purifier/400/280",
+          "pret_de_la": 1099,
+          "moneda": "RON",
+          "scor_total": 9.2,
+          "scoruri": {
+            "Curatare aer": 9.4,
+            "Silentiozitate": 9.1,
+            "Consum energie": 9.0,
+            "Pret/Calitate": 9.0
+          },
+          "verdict_scurt": "Cel mai bun purificator pentru dormitor",
+          "verdict_detaliat": "Philips 2000i curata aerul dintr-o camera de 63mp in maxim 12 minute. Filtru HEPA + carbon activ captureaza 99.97% praf, alergeni, fum si VOC.",
+          "pro": [
+            "HEPA + Carbon activ",
+            "Modul noapte silentios 33dB",
+            "Senzor calitate aer real-time",
+            "Aplicatie WiFi"
+          ],
+          "contra": [
+            "Filtru scump de inlocuit (100-150 lei/an)",
+            "Rezervor fara umidificare",
+            "Pret mediu-ridicat"
+          ],
+          "specificatii": {
+            "Acoperire": "63 mp",
+            "Filtrare": "HEPA + Carbon",
+            "Nivel zgomot min": "33 dB",
+            "Consum": "50W"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "recomandat": true,
+              "pret": 1199
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 1099,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 2,
+          "badge": "Cel mai silentios",
+          "badge_color": "blue",
+          "nume": "Xiaomi Smart Air Purifier 4",
+          "model": "BHR5096GL",
+          "imagine": "https://picsum.photos/seed/xiaomi-purifier4/400/280",
+          "pret_de_la": 499,
+          "moneda": "RON",
+          "scor_total": 8.8,
+          "scoruri": {
+            "Curatare aer": 8.7,
+            "Silentiozitate": 9.3,
+            "Consum energie": 9.2,
+            "Pret/Calitate": 9.4
+          },
+          "verdict_scurt": "Raport pret/performanta imbatabil",
+          "verdict_detaliat": "Xiaomi Smart Purifier 4 ofera curatare HEPA la pret injumatatit. Control vocal, integrare Alexa/Google, senzor PM2.5 — smart home la cost mic.",
+          "pro": [
+            "Pret excelent 500 lei",
+            "Filtru HEPA 360 grade",
+            "Smart Home compatible",
+            "Silentios 32.1 dB"
+          ],
+          "contra": [
+            "Aplicatia Mi Home poate fi instabila",
+            "Filtru original greu de gasit",
+            "Fara carbon activ dedicat"
+          ],
+          "specificatii": {
+            "Acoperire": "48 mp",
+            "Filtrare": "HEPA True",
+            "Nivel zgomot min": "32 dB",
+            "Consum": "35W"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "recomandat": true,
+              "pret": 549
+            },
+            {
+              "magazin_slug": "geekmall.ro",
+              "eticheta": "GeekMall",
+              "recomandat": false,
+              "pret": 499
+            }
+          ]
+        },
+        {
+          "pozitie": 3,
+          "badge": null,
+          "badge_color": null,
+          "nume": "Dyson Purifier Cool Gen1 TP10",
+          "model": "386025-01",
+          "imagine": "https://picsum.photos/seed/dyson-purifier/400/280",
+          "pret_de_la": 2299,
+          "moneda": "RON",
+          "scor_total": 9.4,
+          "scoruri": {
+            "Curatare aer": 9.6,
+            "Silentiozitate": 8.8,
+            "Consum energie": 8.5,
+            "Pret/Calitate": 7.8
+          },
+          "verdict_scurt": "Purificator + ventilator premium 2-in-1",
+          "verdict_detaliat": "Dyson TP10 este purificatorul suprem pentru cei care vor tot. Ventilator puternic + HEPA H13 + carbon activ + senzori multipli — aerul din camera transformat complet.",
+          "pro": [
+            "HEPA H13 + Carbon activ filtru dublu",
+            "Ventilator puternic vara",
+            "Ecran informatii live",
+            "Design iconic Dyson"
+          ],
+          "contra": [
+            "Pret premium 2000+ lei",
+            "Filtru scump 300-400 lei/an",
+            "Zgomotos la viteza maxima"
+          ],
+          "specificatii": {
+            "Acoperire": "70 mp",
+            "Filtrare": "HEPA H13 + Carbon",
+            "Nivel zgomot min": "35 dB",
+            "Consum": "40W"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "recomandat": true,
+              "pret": 2499
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 2299,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 4,
+          "badge": null,
+          "badge_color": null,
+          "nume": "Levoit Core 300S",
+          "model": "HEPA True",
+          "imagine": "https://picsum.photos/seed/levoit-core300/400/280",
+          "pret_de_la": 299,
+          "moneda": "RON",
+          "scor_total": 8.4,
+          "scoruri": {
+            "Curatare aer": 8.2,
+            "Silentiozitate": 9.0,
+            "Consum energie": 9.3,
+            "Pret/Calitate": 9.2
+          },
+          "verdict_scurt": "Cel mai ieftin cu HEPA adevarat",
+          "verdict_detaliat": "Levoit Core 300S este alegerea pentru dormitoare mici. La 300 lei, ofera HEPA True real, nu HEPA-like, cu consum minim si zgomot 24dB in modul somn.",
+          "pro": [
+            "Pret 300 lei",
+            "Zgomot minim 24dB",
+            "HEPA True real",
+            "Compact pentru noptiera"
+          ],
+          "contra": [
+            "Acoperire mica 19mp",
+            "Fara senzori calitate aer",
+            "Filtru de schimbat la 6 luni"
+          ],
+          "specificatii": {
+            "Acoperire": "19 mp",
+            "Filtrare": "HEPA True",
+            "Nivel zgomot min": "24 dB",
+            "Consum": "45W"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "recomandat": true,
+              "pret": 329
+            },
+            {
+              "magazin_slug": "geekmall.ro",
+              "eticheta": "GeekMall",
+              "recomandat": false,
+              "pret": 299
+            }
+          ]
+        },
+        {
+          "pozitie": 5,
+          "badge": null,
+          "badge_color": null,
+          "nume": "Blueair Blue Pure 211i Max",
+          "model": "HEPA Silent",
+          "imagine": "https://picsum.photos/seed/blueair-211/400/280",
+          "pret_de_la": 1399,
+          "moneda": "RON",
+          "scor_total": 9.0,
+          "scoruri": {
+            "Curatare aer": 9.3,
+            "Silentiozitate": 9.4,
+            "Consum energie": 8.9,
+            "Pret/Calitate": 8.6
+          },
+          "verdict_scurt": "CADR 600 — cel mai rapid purificator",
+          "verdict_detaliat": "Blueair 211i Max are CADR 600 — cel mai mare din clasa lui. Curata 50mp in 12 minute, silentios si eficient, cu filtru de lunga durata.",
+          "pro": [
+            "CADR 600 — viteza de curatare maxima",
+            "Silentios 25dB",
+            "Filtru dureaza 6 luni",
+            "Design scandinav minimalist"
+          ],
+          "contra": [
+            "Pret ridicat",
+            "Fara afisaj informatii",
+            "Filtru specific Blueair scump"
+          ],
+          "specificatii": {
+            "Acoperire": "50 mp",
+            "Filtrare": "HEPA + Carbon",
+            "Nivel zgomot min": "25 dB",
+            "CADR": "600 m3/h"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "recomandat": true,
+              "pret": 1499
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 1399,
+              "recomandat": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "scaune-gaming",
+      "titlu": "Cele mai bune scaune gaming 2026",
+      "titlu_scurt": "Scaune gaming",
+      "emoji": "🎮",
+      "descriere": "Am testat 12+ scaune gaming pentru ergonomie, confort prelungit si calitate materiale. Top 5 pentru gamer si office.",
+      "culoare": "violet",
+      "tag": null,
+      "produse": [
+        {
+          "pozitie": 1,
+          "badge": "Alegerea Redactiei",
+          "badge_color": "orange",
+          "nume": "Secretlab TITAN Evo 2022",
+          "model": "SoftWeave",
+          "imagine": "https://picsum.photos/seed/secretlab-titan/400/280",
+          "pret_de_la": 2299,
+          "moneda": "RON",
+          "scor_total": 9.5,
+          "scoruri": {
+            "Ergonomie": 9.6,
+            "Confort": 9.4,
+            "Calitate materiale": 9.7,
+            "Pret/Calitate": 8.8
+          },
+          "verdict_scurt": "Cel mai bun scaun gaming pentru sesiuni lungi",
+          "verdict_detaliat": "Secretlab TITAN Evo este standardul industriei gaming. Spatar complet reglabil 4D, suport lombar magnetic, bracciali 4D — construit sa dureze 10+ ani.",
+          "pro": [
+            "Spatar 85-165 grade reglabil",
+            "Suport lombar magnetic integrat",
+            "Bracciali 4D full adjustable",
+            "Material durabil 5 ani garantie"
+          ],
+          "contra": [
+            "Pret ridicat 2300 lei",
+            "Greu de asamblat singur",
+            "Dur initial — se muleaza in 2-3 saptamani"
+          ],
+          "specificatii": {
+            "Incarcare maxima": "150 kg",
+            "Inaltime utilizator": "157-193 cm",
+            "Material": "SoftWeave Fabric",
+            "Garantie": "5 ani"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "recomandat": true,
+              "pret": 2399
+            },
+            {
+              "magazin_slug": "geekmall.ro",
+              "eticheta": "GeekMall",
+              "recomandat": false,
+              "pret": 2299
+            }
+          ]
+        },
+        {
+          "pozitie": 2,
+          "badge": "Cel mai bun pret",
+          "badge_color": "green",
+          "nume": "Huzaro Force 4.7 Carbon",
+          "model": "HZ-Force-4.7",
+          "imagine": "https://picsum.photos/seed/huzaro-force/400/280",
+          "pret_de_la": 699,
+          "moneda": "RON",
+          "scor_total": 8.3,
+          "scoruri": {
+            "Ergonomie": 8.2,
+            "Confort": 8.3,
+            "Calitate materiale": 8.0,
+            "Pret/Calitate": 9.3
+          },
+          "verdict_scurt": "Scaun gaming solid sub 700 lei",
+          "verdict_detaliat": "Huzaro Force 4.7 ofera tot ce-ti trebuie la un pret accesibil. Piele ecologica, spatar reglabil, bracciali 3D — perfect pentru gameri la inceput.",
+          "pro": [
+            "Pret 700 lei excelent",
+            "Piele eco rezistenta",
+            "Reglaj inaltime pneumatic",
+            "Bracciali 3D"
+          ],
+          "contra": [
+            "Material transpira vara",
+            "Suport lombar perna detasabila (nu integrat)",
+            "Nu pentru persoane peste 120kg"
+          ],
+          "specificatii": {
+            "Incarcare maxima": "130 kg",
+            "Inaltime utilizator": "165-185 cm",
+            "Material": "Piele ecologica",
+            "Garantie": "2 ani"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "recomandat": true,
+              "pret": 749
+            },
+            {
+              "magazin_slug": "flanco.ro",
+              "eticheta": "Flanco",
+              "pret": 699,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 3,
+          "badge": null,
+          "badge_color": null,
+          "nume": "DXRacer Formula F08",
+          "model": "OH/FH08/NR",
+          "imagine": "https://picsum.photos/seed/dxracer-formula/400/280",
+          "pret_de_la": 1099,
+          "moneda": "RON",
+          "scor_total": 8.8,
+          "scoruri": {
+            "Ergonomie": 8.9,
+            "Confort": 8.7,
+            "Calitate materiale": 8.9,
+            "Pret/Calitate": 8.7
+          },
+          "verdict_scurt": "Clasicul gaming chair de incredere",
+          "verdict_detaliat": "DXRacer Formula este scaunul care a definit categoria gaming chair. Construit pentru gameri profesionisti, cu spatar inalt si suport lombar dedicat.",
+          "pro": [
+            "Brand recunoscut mondial",
+            "Spatar inalt pentru gat",
+            "Material durabil",
+            "Garantie 2 ani extinsa"
+          ],
+          "contra": [
+            "Design polarizant gaming",
+            "Prea ingust pentru persoane corpolente",
+            "Scump vs Huzaro"
+          ],
+          "specificatii": {
+            "Incarcare maxima": "120 kg",
+            "Inaltime utilizator": "160-180 cm",
+            "Material": "Piele ecologica premium",
+            "Garantie": "2 ani"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "recomandat": true,
+              "pret": 1199
+            },
+            {
+              "magazin_slug": "geekmall.ro",
+              "eticheta": "GeekMall",
+              "recomandat": false,
+              "pret": 1099
+            }
+          ]
+        },
+        {
+          "pozitie": 4,
+          "badge": "Office + Gaming",
+          "badge_color": "teal",
+          "nume": "Haworth Fern Gaming",
+          "model": "Mesh Ergonomic",
+          "imagine": "https://picsum.photos/seed/haworth-fern/400/280",
+          "pret_de_la": 3999,
+          "moneda": "RON",
+          "scor_total": 9.4,
+          "scoruri": {
+            "Ergonomie": 9.8,
+            "Confort": 9.6,
+            "Calitate materiale": 9.5,
+            "Pret/Calitate": 7.5
+          },
+          "verdict_scurt": "Scaunul ergonomic suprem — office si gaming",
+          "verdict_detaliat": "Haworth Fern transcende categoria gaming — este un scaun ergonomic de inalta calitate cu adaptare frond. Mesh respirabil, suport lombar dinamic — recomandat pentru 8+ ore/zi.",
+          "pro": [
+            "Mesh respirabil nu transpira",
+            "Adaptare automata postura",
+            "Durabil 12+ ani",
+            "Garantie extinsa"
+          ],
+          "contra": [
+            "Pret 4000 lei foarte ridicat",
+            "Nu are look gaming",
+            "Comanda online cu timp de asteptare"
+          ],
+          "specificatii": {
+            "Incarcare maxima": "136 kg",
+            "Inaltime utilizator": "157-196 cm",
+            "Material": "Mesh respirabil",
+            "Garantie": "12 ani"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "recomandat": true,
+              "pret": 3999
+            }
+          ]
+        },
+        {
+          "pozitie": 5,
+          "badge": null,
+          "badge_color": null,
+          "nume": "IKEA Matchspel",
+          "model": "Gaming Chair",
+          "imagine": "https://picsum.photos/seed/ikea-matchspel/400/280",
+          "pret_de_la": 999,
+          "moneda": "RON",
+          "scor_total": 8.5,
+          "scoruri": {
+            "Ergonomie": 8.6,
+            "Confort": 8.4,
+            "Calitate materiale": 8.8,
+            "Pret/Calitate": 9.0
+          },
+          "verdict_scurt": "Design simplu, calitate IKEA de incredere",
+          "verdict_detaliat": "IKEA Matchspel surprinde cu calitate buna la pret mediu. Piele ecologica rezistenta, spatar reglabil si look mai discret decat concurenta — perfect si pentru birou.",
+          "pro": [
+            "Disponibil in magazine IKEA Romania",
+            "Design mai discret",
+            "Calitate materiale buna",
+            "Returnare usoara IKEA"
+          ],
+          "contra": [
+            "Asamblare necesara",
+            "Fara bracciali 4D",
+            "Nu se comanda online cu livrare"
+          ],
+          "specificatii": {
+            "Incarcare maxima": "110 kg",
+            "Inaltime utilizator": "150-190 cm",
+            "Material": "Piele ecologica",
+            "Garantie": "2 ani"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "recomandat": true,
+              "pret": 1099
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "biciclete-electrice",
+      "titlu": "Cele mai bune biciclete electrice 2026",
+      "titlu_scurt": "Biciclete electrice",
+      "emoji": "⚡",
+      "descriere": "Am testat 10+ biciclete electrice pentru oras si off-road. Top 5 pentru autonomie, putere motor si raport pret/calitate.",
+      "culoare": "emerald",
+      "tag": "TREND",
+      "produse": [
+        {
+          "pozitie": 1,
+          "badge": "Alegerea Redactiei",
+          "badge_color": "orange",
+          "nume": "Blaupunkt Fiene 500",
+          "model": "E-Bike 27.5",
+          "imagine": "https://picsum.photos/seed/blaupunkt-fiene/400/280",
+          "pret_de_la": 2799,
+          "moneda": "RON",
+          "scor_total": 9.0,
+          "scoruri": {
+            "Motor": 8.9,
+            "Autonomie": 9.1,
+            "Constructie": 9.0,
+            "Pret/Calitate": 9.2
+          },
+          "verdict_scurt": "Bicicleta electrica completa la pret accesibil",
+          "verdict_detaliat": "Blaupunkt Fiene 500 ofera tot ce ai nevoie pentru deplasari urbane: motor 500W, baterie 48V/10Ah, autonomie 60km si display LCD. Pret corect pentru calitate.",
+          "pro": [
+            "Motor 500W puternic pentru rampe",
+            "Autonomie 60km la asistare medie",
+            "Display LCD clar",
+            "Frane disc mecanice"
+          ],
+          "contra": [
+            "Fara suspensie fata",
+            "Baterie nedetasabila",
+            "Greutate 22kg"
+          ],
+          "specificatii": {
+            "Motor": "500W brushless",
+            "Baterie": "48V 10Ah",
+            "Autonomie": "60 km",
+            "Viteza max": "25 km/h"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "recomandat": true,
+              "pret": 2899
+            },
+            {
+              "magazin_slug": "vidaxl.ro",
+              "eticheta": "vidaXL",
+              "recomandat": false,
+              "pret": 2799
+            }
+          ]
+        },
+        {
+          "pozitie": 2,
+          "badge": "Cel mai bun pret",
+          "badge_color": "green",
+          "nume": "Ancheer 26 Mountain E-Bike",
+          "model": "250W Shimano",
+          "imagine": "https://picsum.photos/seed/ancheer-ebike/400/280",
+          "pret_de_la": 1599,
+          "moneda": "RON",
+          "scor_total": 8.1,
+          "scoruri": {
+            "Motor": 7.8,
+            "Autonomie": 8.0,
+            "Constructie": 8.0,
+            "Pret/Calitate": 9.4
+          },
+          "verdict_scurt": "Prima bicicleta electrica ieftina",
+          "verdict_detaliat": "Ancheer este cel mai accesibil punct de intrare in lumea e-bike. Motor 250W, viteze Shimano 21, autonomie 40km — suficient pentru navetat.",
+          "pro": [
+            "Pret sub 1600 lei",
+            "21 viteze Shimano",
+            "Frana fata+spate disc",
+            "Usor de montat"
+          ],
+          "contra": [
+            "Motor 250W slab pe rampe mari",
+            "Autonomie 40km limitata",
+            "Calitate finisaje medie"
+          ],
+          "specificatii": {
+            "Motor": "250W brushless",
+            "Baterie": "36V 10Ah",
+            "Autonomie": "40 km",
+            "Viteze": "21 Shimano"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "recomandat": true,
+              "pret": 1699
+            },
+            {
+              "magazin_slug": "vidaxl.ro",
+              "eticheta": "vidaXL",
+              "recomandat": false,
+              "pret": 1599
+            }
+          ]
+        },
+        {
+          "pozitie": 3,
+          "badge": null,
+          "badge_color": null,
+          "nume": "Xiaomi Mi Smart Electric Folding Bike",
+          "model": "HIMO C20",
+          "imagine": "https://picsum.photos/seed/xiaomi-folding/400/280",
+          "pret_de_la": 2499,
+          "moneda": "RON",
+          "scor_total": 8.8,
+          "scoruri": {
+            "Motor": 8.5,
+            "Autonomie": 8.8,
+            "Constructie": 9.0,
+            "Pret/Calitate": 8.9
+          },
+          "verdict_scurt": "Pliabila — perfecta pentru multimodal",
+          "verdict_detaliat": "Xiaomi HIMO C20 este e-bike-ul pliabil perfect pentru cei care combina bicicleta cu metroul sau trenul. Se pliaza in 3 secunde, incape in portbagaj.",
+          "pro": [
+            "Pliabila in 3 secunde",
+            "Compacta — incape in masina",
+            "Display smart",
+            "Motor silentios"
+          ],
+          "contra": [
+            "Roti mici 20 inch — mai putin stabile",
+            "Autonomie 80km doar in modul eco",
+            "Scumpa vs concurenta"
+          ],
+          "specificatii": {
+            "Motor": "250W",
+            "Baterie": "36V 10Ah",
+            "Autonomie": "80 km eco",
+            "Greutate": "14.9 kg"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "recomandat": true,
+              "pret": 2599
+            },
+            {
+              "magazin_slug": "geekmall.ro",
+              "eticheta": "GeekMall",
+              "recomandat": false,
+              "pret": 2499
+            }
+          ]
+        },
+        {
+          "pozitie": 4,
+          "badge": null,
+          "badge_color": null,
+          "nume": "Engwe EP-2 Pro",
+          "model": "Fat Tire 750W",
+          "imagine": "https://picsum.photos/seed/engwe-ep2/400/280",
+          "pret_de_la": 3299,
+          "moneda": "RON",
+          "scor_total": 9.1,
+          "scoruri": {
+            "Motor": 9.5,
+            "Autonomie": 9.0,
+            "Constructie": 9.0,
+            "Pret/Calitate": 8.7
+          },
+          "verdict_scurt": "Fat bike pentru orice teren — 750W bestie",
+          "verdict_detaliat": "Engwe EP-2 Pro este monstrul category killer. Motor 750W, anvelope fat 4 inch, suspensie fata — merge pe zapada, nisip, noroi. Pliabila bonus.",
+          "pro": [
+            "Motor 750W pentru orice rampa",
+            "Anvelope fat 4 inch grip extrem",
+            "Autonomie 120km",
+            "Pliabila pentru depozitare"
+          ],
+          "contra": [
+            "Greu 36kg",
+            "Pliabil dar mare",
+            "Pret 3300 lei"
+          ],
+          "specificatii": {
+            "Motor": "750W",
+            "Baterie": "48V 12.8Ah",
+            "Autonomie": "120 km",
+            "Anvelope": "4 inch fat"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "recomandat": true,
+              "pret": 3499
+            },
+            {
+              "magazin_slug": "vidaxl.ro",
+              "eticheta": "vidaXL",
+              "recomandat": false,
+              "pret": 3299
+            }
+          ]
+        },
+        {
+          "pozitie": 5,
+          "badge": null,
+          "badge_color": null,
+          "nume": "Decathlon Riverside 500E",
+          "model": "27.5 inch",
+          "imagine": "https://picsum.photos/seed/decathlon-500e/400/280",
+          "pret_de_la": 3999,
+          "moneda": "RON",
+          "scor_total": 9.2,
+          "scoruri": {
+            "Motor": 9.0,
+            "Autonomie": 9.3,
+            "Constructie": 9.2,
+            "Pret/Calitate": 8.8
+          },
+          "verdict_scurt": "Decathlon — calitate trekking la pret bun",
+          "verdict_detaliat": "Riverside 500E este bicicleta electrica de trekking Decathlon — robusta, cu baterie detasabila, motor Bosch Active si autonomie 100km. Garantie si service Decathlon Romania.",
+          "pro": [
+            "Baterie detasabila pentru incarcat separat",
+            "Motor Bosch Active Plus de incredere",
+            "Service Decathlon Romania",
+            "Autonomie 100km"
+          ],
+          "contra": [
+            "Disponibil doar in magazinele Decathlon",
+            "Pret 4000 lei",
+            "Greutate 22kg"
+          ],
+          "specificatii": {
+            "Motor": "Bosch Active Plus 250W",
+            "Baterie": "500Wh detasabila",
+            "Autonomie": "100 km",
+            "Viteze": "9 Shimano"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "recomandat": true,
+              "pret": 3999
+            }
+          ]
+        }
+      ]
     }
   ]
 }

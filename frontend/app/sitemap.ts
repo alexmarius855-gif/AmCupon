@@ -8,7 +8,7 @@ const BASE_URL = "https://amcupon.ro";
 const NISA_SLUGURI = ["auto", "carti", "casa", "tech", "fashion", "sport", "frumusete"];
 
 // Sluguri pagini /top/[slug]
-const TOP_SLUGURI = ["laptopuri", "telefoane", "casti-wireless", "televizoare", "aspiratoare-robot", "friteuze", "smartwatch-uri", "monitoare"];
+const TOP_SLUGURI = ["laptopuri", "telefoane", "casti-wireless", "televizoare", "aspiratoare-robot", "friteuze", "smartwatch-uri", "monitoare", "cafetiere", "masini-de-spalat", "roboti-de-bucatarie", "purificatoare-aer", "scaune-gaming", "biciclete-electrice"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const magazine: { magazin: string; are_promotie: boolean; categorie_slug?: string }[] = JSON.parse(

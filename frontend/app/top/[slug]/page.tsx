@@ -149,9 +149,59 @@ export default async function TopCategoriePage({
     ],
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: `Care este cel mai bun ${cat.titlu_scurt.toLowerCase()} in 2026?`,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: bestPick
+            ? `${bestPick.nume} este alegerea redactiei AmCupon.ro pentru ${new Date().getFullYear()}. ${bestPick.verdict_detaliat}`
+            : cat.descriere,
+        },
+      },
+      {
+        "@type": "Question",
+        name: `Unde cumpar ${cat.titlu_scurt.toLowerCase()} mai ieftin in Romania?`,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `Pe AmCupon.ro gasesti coduri de reducere si oferte actualizate zilnic pentru ${cat.titlu_scurt.toLowerCase()} de la magazinele partenere. Preturile pornesc de la ${pretMinim.toLocaleString("ro-RO")} lei.`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: `Cat costa ${cat.titlu_scurt.toLowerCase()} in Romania?`,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `Preturile pentru ${cat.titlu_scurt.toLowerCase()} in Romania variaza intre ${pretMinim.toLocaleString("ro-RO")} lei si ${pretMaxim.toLocaleString("ro-RO")} lei, in functie de model si specificatii. Scorul mediu al modelelor testate de noi este ${scorMediu}/10.`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: `Ce sa verific inainte sa cumpar ${cat.titlu_scurt.toLowerCase()}?`,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `Inainte de cumparare verifica: specificatiile tehnice, recenziile utilizatorilor reali, garantia oferita si politica de retur. Topul nostru include doar modele testate si verificate de echipa AmCupon.ro.`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: `Este topul ${cat.titlu_scurt.toLowerCase()} actualizat?`,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `Da, topul ${cat.titlu_scurt.toLowerCase()} de pe AmCupon.ro este actualizat periodic. Ultima actualizare: ${data.updated}. Preturile si disponibilitatea sunt verificate saptamanal.`,
+        },
+      },
+    ],
+  };
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <div className="min-h-screen bg-gray-50 dark:bg-slate-900">
@@ -268,6 +318,26 @@ export default async function TopCategoriePage({
                   className="text-sm font-semibold text-orange-600 dark:text-orange-400 hover:underline">
                   Coduri {slug.split(".")[0].charAt(0).toUpperCase() + slug.split(".")[0].slice(1)} &rarr;
                 </a>
+              ))}
+            </div>
+          </section>
+
+          {/* FAQ */}
+          <section className="mt-6 bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-2xl p-6">
+            <h2 className="text-lg font-black text-gray-900 dark:text-white mb-4">
+              Intrebari frecvente despre {cat.titlu_scurt.toLowerCase()}
+            </h2>
+            <div className="space-y-4">
+              {faqSchema.mainEntity.map((item, i) => (
+                <details key={i} className="group border-b border-gray-100 dark:border-slate-700 last:border-0 pb-4 last:pb-0">
+                  <summary className="flex justify-between items-center cursor-pointer text-sm font-semibold text-gray-800 dark:text-slate-200 list-none select-none gap-2">
+                    <span>{item.name}</span>
+                    <span className="text-orange-500 text-lg shrink-0 group-open:rotate-45 transition-transform">+</span>
+                  </summary>
+                  <p className="mt-2 text-sm text-gray-600 dark:text-slate-400 leading-relaxed">
+                    {item.acceptedAnswer.text}
+                  </p>
+                </details>
               ))}
             </div>
           </section>
