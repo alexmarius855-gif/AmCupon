@@ -75,6 +75,11 @@ export default function NewsletterPopup() {
         headers: { "content-type": "application/json" },
         body:    JSON.stringify({ email: trimmed }),
       });
+      if (res.status >= 500) {
+        // Eroare server (ex: BREVO_API_KEY nesetat) — inchidem silentios, nu deranjam userul
+        setVisible(false);
+        return;
+      }
       const data = await res.json().catch(() => ({}));
       if (data.ok) {
         setStatus("success");
