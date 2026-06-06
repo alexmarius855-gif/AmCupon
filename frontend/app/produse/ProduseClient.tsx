@@ -267,7 +267,6 @@ export default function ProduseClient({
   const [sort,        setSort]        = useState<Sort>("nou");
   const [limit,       setLimit]       = useState(48);
   const [activeTab,   setActiveTab]   = useState<Tab>("oferte");
-  const [menuOpen,    setMenuOpen]    = useState(false);
   const [savedToast,  setSavedToast]  = useState<string | null>(null);
 
   // Wishlist + price alerts
@@ -332,57 +331,6 @@ export default function ProduseClient({
   return (
     <div className="min-h-screen bg-slate-950">
 
-      {/* ─── HEADER ───────────────────────────────────────────────────────── */}
-      <header className="bg-slate-950/95 backdrop-blur-sm border-b border-slate-800 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 h-[60px] flex items-center gap-3">
-          <Link href="/" className="flex items-center gap-1.5 shrink-0">
-            <div className="bg-orange-500 text-white font-black text-sm px-2 py-0.5 rounded-lg tracking-tighter">Am</div>
-            <span className="font-black text-white text-xl tracking-tight">Cupon<span className="text-orange-500">.ro</span></span>
-          </Link>
-
-          <div className="flex-1 relative max-w-xl hidden sm:block">
-            <svg className="absolute left-3 top-2.5 w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
-            </svg>
-            <input type="text" placeholder="Cauta produs, brand, magazin..."
-              value={search} onChange={e => setSearch(e.target.value)}
-              className="w-full bg-slate-800 border border-slate-700 text-slate-200 placeholder:text-slate-500 rounded-full pl-9 pr-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all"/>
-          </div>
-
-          <nav className="hidden md:flex items-center gap-5 text-sm font-semibold text-slate-400 ml-auto">
-            <Link href="/" className="hover:text-orange-500 transition-colors">Acasa</Link>
-            <a href="#top-deals" className="hover:text-orange-500 transition-colors">Top Deals</a>
-            <a href="#produse-feed" className="hover:text-orange-500 transition-colors">Feed Produse</a>
-            <Link href="/blog" className="hover:text-orange-500 transition-colors">Blog</Link>
-          </nav>
-          <button onClick={() => setMenuOpen(o => !o)} className="md:hidden ml-auto p-2 rounded-xl hover:bg-slate-800 transition-colors text-slate-300" aria-label="Meniu">
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d={menuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}/>
-            </svg>
-          </button>
-        </div>
-        {menuOpen && (
-          <div className="md:hidden border-t border-slate-800 bg-slate-900 px-4 py-3 space-y-1">
-            <div className="relative mb-3">
-              <svg className="absolute left-3 top-2.5 w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
-              </svg>
-              <input type="text" placeholder="Cauta produs..." value={search} onChange={e => setSearch(e.target.value)}
-                className="w-full bg-slate-800 border border-slate-700 text-slate-200 placeholder:text-slate-500 rounded-full pl-9 pr-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500"/>
-            </div>
-            {[
-              { href: "/", label: "Acasa" }, { href: "/toate-magazinele", label: "Magazine" },
-              { href: "/blog", label: "Blog" }, { href: "/categorii", label: "Categorii" },
-            ].map(l => (
-              <a key={l.href} href={l.href} onClick={() => setMenuOpen(false)}
-                className="flex items-center px-3 py-2.5 rounded-xl text-sm font-semibold text-slate-300 hover:bg-orange-500/10 hover:text-orange-400 transition-colors">
-                {l.label}
-              </a>
-            ))}
-          </div>
-        )}
-      </header>
-
       {/* ─── HERO DARK ────────────────────────────────────────────────────── */}
       <section className="relative bg-slate-950 text-white overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
@@ -421,7 +369,7 @@ export default function ProduseClient({
       </section>
 
       {/* ─── TABS ─────────────────────────────────────────────────────────── */}
-      <div className="bg-white border-b border-slate-200 sticky top-[60px] z-40">
+      <div className="bg-slate-900 border-b border-slate-800 sticky top-[64px] z-40">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center gap-1 overflow-x-auto" style={{scrollbarWidth:"none"}}>
             {([
@@ -432,8 +380,8 @@ export default function ProduseClient({
               <button key={t.id} onClick={() => setActiveTab(t.id)}
                 className={`flex items-center gap-2 px-5 py-3.5 text-sm font-semibold whitespace-nowrap border-b-2 transition-colors ${
                   activeTab === t.id
-                    ? "border-orange-500 text-orange-600"
-                    : "border-transparent text-slate-500 hover:text-slate-800"
+                    ? "border-orange-500 text-orange-400"
+                    : "border-transparent text-slate-500 hover:text-slate-300"
                 }`}>
                 <span>{t.emoji}</span>
                 {t.label}
@@ -583,6 +531,18 @@ export default function ProduseClient({
               {/* Filtre */}
               <div className="bg-slate-900 rounded-2xl border border-slate-700 p-4 mb-6">
                 <div className="flex flex-wrap gap-3 items-end">
+                  {/* Search */}
+                  <div className="flex flex-col gap-1 flex-1 min-w-[200px]">
+                    <label className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Cauta produs</label>
+                    <div className="relative">
+                      <svg className="absolute left-3 top-2.5 w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                      </svg>
+                      <input type="text" placeholder="Titlu, brand, magazin..."
+                        value={search} onChange={e => setSearch(e.target.value)}
+                        className="w-full bg-slate-800 border border-slate-700 text-slate-200 placeholder:text-slate-500 rounded-xl pl-9 pr-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all"/>
+                    </div>
+                  </div>
                   {/* Categorie */}
                   <div className="flex flex-col gap-1 min-w-[160px]">
                     <label className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Categorie</label>
@@ -656,12 +616,12 @@ export default function ProduseClient({
                 <>
                   {/* Price drop banner */}
                   {priceDrops.length > 0 && (
-                    <div className="mb-4 bg-emerald-50 border border-emerald-200 rounded-2xl p-3 flex items-center gap-3">
+                    <div className="mb-4 bg-emerald-500/10 border border-emerald-500/30 rounded-2xl p-3 flex items-center gap-3">
                       <span className="text-xl">&#127381;</span>
                       <div className="flex-1 text-sm">
-                        <span className="font-bold text-emerald-800">Pretul a scazut la {priceDrops.length} produse salvate!</span>
+                        <span className="font-bold text-emerald-400">Pretul a scazut la {priceDrops.length} produse salvate!</span>
                       </div>
-                      <Link href="/wishlist" className="text-xs font-bold text-emerald-600 hover:text-emerald-800 whitespace-nowrap">
+                      <Link href="/wishlist" className="text-xs font-bold text-emerald-400 hover:text-emerald-300 whitespace-nowrap">
                         Vezi lista &#8594;
                       </Link>
                     </div>
@@ -694,7 +654,7 @@ export default function ProduseClient({
                   {filtrate.length > limit && (
                     <div className="text-center mt-8">
                       <button onClick={() => setLimit(l => l + 48)}
-                        className="bg-white border-2 border-slate-200 hover:border-orange-400 text-slate-600 hover:text-orange-500 font-bold px-8 py-3 rounded-2xl text-sm transition-all hover:shadow-md">
+                        className="bg-slate-800 border border-slate-700 hover:border-orange-500 text-slate-300 hover:text-orange-400 font-bold px-8 py-3 rounded-2xl text-sm transition-all hover:shadow-md">
                         Incarca mai multe ({filtrate.length - limit} ramase)
                       </button>
                     </div>
@@ -707,9 +667,9 @@ export default function ProduseClient({
       )}
 
       {/* ─── CROSS-PROMO: Alte sectiuni ───────────────────────────────────── */}
-      <section className="bg-slate-50 border-t border-slate-100 py-10 px-4">
+      <section className="bg-slate-900 border-t border-slate-800 py-10 px-4">
         <div className="max-w-7xl mx-auto">
-          <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
+          <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
               { href: "/",               emoji: "🔥", label: "Coduri de reducere",   desc: "Toate codurile verificate" },
@@ -718,36 +678,15 @@ export default function ProduseClient({
               { href: "/blog",           emoji: "📝", label: "Blog & Ghiduri",         desc: "Cum sa economisesti mai mult" },
             ].map(s => (
               <a key={s.href} href={s.href}
-                className="group bg-white border border-slate-200 hover:border-orange-300 rounded-2xl p-5 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200">
+                className="group bg-slate-800 border border-slate-700 hover:border-orange-500/50 rounded-2xl p-5 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200">
                 <div className="text-3xl mb-3">{s.emoji}</div>
-                <p className="font-black text-slate-900 text-sm group-hover:text-orange-600 transition-colors">{s.label}</p>
-                <p className="text-xs text-slate-400 mt-1">{s.desc}</p>
+                <p className="font-black text-slate-200 text-sm group-hover:text-orange-400 transition-colors">{s.label}</p>
+                <p className="text-xs text-slate-500 mt-1">{s.desc}</p>
               </a>
             ))}
           </div>
         </div>
       </section>
-
-      {/* ─── FOOTER ───────────────────────────────────────────────────────── */}
-      <footer className="border-t border-slate-100 py-8 text-center text-xs text-slate-400 bg-white">
-        <div className="max-w-7xl mx-auto px-4 space-y-2">
-          <p>
-            <Link href="/" className="font-black text-slate-700 hover:text-orange-500 transition-colors">AmCupon.ro</Link>
-            {" · "}
-            <Link href="/" className="hover:text-orange-500 transition-colors">Acasa</Link>
-            {" · "}
-            <Link href="/toate-magazinele" className="hover:text-orange-500 transition-colors">Magazine</Link>
-            {" · "}
-            <Link href="/categorii" className="hover:text-orange-500 transition-colors">Categorii</Link>
-            {" · "}
-            <Link href="/blog" className="hover:text-orange-500 transition-colors">Blog</Link>
-          </p>
-          <p className="text-slate-300">
-            Linkuri afiliate 2Performant. Cand cumperi printr-un link, primim un comision fara costuri in plus pentru tine.
-          </p>
-          <p className="text-slate-300">&copy; {an} AmCupon.ro</p>
-        </div>
-      </footer>
 
       {/* ─── TOAST salvare produs ──────────────────────────────────────────── */}
       {savedToast && (
