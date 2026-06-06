@@ -136,6 +136,25 @@ function numeAfisat(magazin: string): string {
     .split(" ").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
 }
 
+interface Produs {
+  title: string;
+  url: string;
+  image: string;
+  price: number;
+  old_price?: number;
+  discount_pct: number;
+  brand: string;
+  merchant: string;
+  merchant_slug: string;
+}
+
+interface ProdusCategorie {
+  slug: string;
+  label: string;
+  emoji: string;
+  products: Produs[];
+}
+
 interface BlogPost {
   slug: string;
   title: string;
@@ -171,7 +190,8 @@ export default function Home() {
   const [storeLimit, setStoreLimit]       = useState(12);
   const [filtruActiv, setFiltruActiv]     = useState<"toate"|"cod"|"promotie"|"favorite">("toate");
   const [favorite, setFavorite]           = useState<Set<string>>(new Set());
-  const [produse, setProduse]             = useState<{title:string;url:string;image:string;price:number;old_price?:number;discount_pct:number;brand:string;merchant:string;merchant_slug:string}[]>([]);
+  const [produseCategorii, setProduseCategorii] = useState<ProdusCategorie[]>([]);
+  const [activeCatTab, setActiveCatTab]         = useState<string>("toate");
   const [recomandate, setRecomandate]     = useState<{magazin:string;nume:string;logo_url:string;categorie:string;comision:number;are_cod:boolean;oferta:string}[]>([]);
   const [showFab, setShowFab]             = useState(false);
   const bannersRef                         = useRef<HTMLDivElement>(null);
@@ -183,36 +203,17 @@ export default function Home() {
     fetch("/blog-latest.json").then(r => r.json()).then((posts: BlogPost[]) => setBlogPosts(posts.slice(0, 3))).catch(() => {});
     fetch("/recomandate.json").then(r => r.json()).then(setRecomandate).catch(() => {});
     fetch("/products-home.json").then(r => r.json()).then(data => {
-      const all = data?.products || data || [];
-      type P = {title:string;url:string;image:string;price:number;old_price?:number;discount_pct:number;brand:string;merchant:string;merchant_slug:string;category:string};
-      const cuImagine = (all as P[]).filter(p => p.image && p.price > 0);
-      if (cuImagine.length === 0) return;
-
-      // Grupare per merchant
-      const byMerchant: Record<string, P[]> = {};
-      for (const p of cuImagine) {
-        const m = p.merchant_slug || p.merchant || "alt";
-        if (!byMerchant[m]) byMerchant[m] = [];
-        byMerchant[m].push(p);
+      const cats: ProdusCategorie[] = data?.by_category || [];
+      const valid = cats.filter(c => c.products?.length >= 2);
+      if (valid.length > 0) {
+        setProduseCategorii(valid);
+        return;
       }
-      const merchants = Object.keys(byMerchant);
-      // Cate produse per merchant: cel putin 1, max 12 daca e singur merchant
-      const perMerchant = Math.max(1, Math.ceil(12 / merchants.length));
-
-      // Ia primele perMerchant din fiecare merchant (sortate: discount > pret)
-      const pool: P[] = [];
-      for (const m of merchants) {
-        const sorted = [...byMerchant[m]].sort((a, b) =>
-          (b.discount_pct || 0) - (a.discount_pct || 0) || b.price - a.price
-        );
-        pool.push(...sorted.slice(0, perMerchant));
-      }
-      // Shuffle pentru varietate vizuala
-      for (let i = pool.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [pool[i], pool[j]] = [pool[j], pool[i]];
-      }
-      setProduse(pool.slice(0, 12));
+      // Fallback: flat list → grupam per merchant si afisam ca un singur "rand"
+      const all: Produs[] = (data?.products || (Array.isArray(data) ? data : [])).filter((p: Produs) => p.image && p.price > 0);
+      if (all.length === 0) return;
+      all.sort((a, b) => (b.discount_pct || 0) - (a.discount_pct || 0));
+      setProduseCategorii([{ slug: "toate", label: "Produse populare", emoji: "🛍️", products: all.slice(0, 16) }]);
     }).catch(() => {});
     fetch("/banners.json").then(r => r.json()).then(data => {
       const list: Banner[] = data?.banners || data || [];
@@ -1081,56 +1082,152 @@ export default function Home() {
         );
       })()}
 
-      {/* ─── PRODUSE POPULARE ─────────────────────────────────────────────── */}
-      {produse.length > 0 && (
-        <section className="bg-slate-900 border-b border-slate-800 py-12 px-4">
+      {/* ─── PRODUSE PE CATEGORII ─────────────────────────────────────────── */}
+      {produseCategorii.length > 0 && (
+        <section className="bg-slate-900 border-b border-slate-800 py-14 px-4">
           <div className="max-w-7xl mx-auto">
+
+            {/* Header */}
             <div className="flex items-end justify-between mb-7">
               <div>
-                <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-2">PRODUSE</p>
-                <h2 className="text-2xl font-black tracking-tight text-white">Produse populare acum</h2>
-                <p className="text-slate-400 text-sm mt-1">Cele mai cautate produse de la parteneri verificati</p>
+                <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-2">PRODUSE CU REDUCERE</p>
+                <h2 className="text-3xl font-black tracking-tight text-white">Produse pe categorii</h2>
+                <p className="text-slate-400 text-sm mt-1.5">Cele mai bune oferte, organizate pe nise</p>
               </div>
-              <Link href="/produse" className="hidden sm:flex items-center gap-1 text-sm font-bold text-orange-500 hover:text-orange-400 transition-colors">
-                Toate produsele
-                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
-                </svg>
+              <Link href="/produse" className="hidden sm:flex items-center gap-1.5 text-sm font-bold text-orange-400 hover:text-orange-300 border border-orange-500/30 hover:border-orange-400/60 bg-orange-500/10 hover:bg-orange-500/20 px-4 py-2 rounded-full whitespace-nowrap transition-all">
+                Toate produsele →
               </Link>
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-              {produse.map((p, i) => (
-                <a key={i} href={p.url} target="_blank" rel="sponsored noopener noreferrer"
-                  className="group bg-slate-800 border border-slate-700 hover:border-orange-500/50 rounded-xl overflow-hidden hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200">
-                  <div className="relative aspect-square bg-slate-700 overflow-hidden">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={p.image} alt={p.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      loading="lazy"
-                      onError={e => { (e.target as HTMLImageElement).closest("a")!.style.display = "none"; }}
-                    />
-                    {p.discount_pct > 0 && (
-                      <div className="absolute top-1.5 left-1.5 bg-red-500 text-white text-[10px] font-black px-1.5 py-0.5 rounded-full">
-                        -{p.discount_pct}%
-                      </div>
-                    )}
-                  </div>
-                  <div className="p-2.5">
-                    <p className="text-[10px] text-slate-500 mb-0.5 truncate">{p.merchant.replace(".ro","").replace(".com","")}</p>
-                    <p className="text-xs font-semibold text-slate-200 line-clamp-2 leading-snug group-hover:text-orange-400 transition-colors mb-1.5">{p.title}</p>
-                    <div className="flex items-center gap-1.5">
-                      <span className="text-sm font-black text-orange-400">{p.price.toLocaleString("ro-RO")} lei</span>
-                      {p.old_price && p.old_price > p.price && (
-                        <span className="text-[10px] text-slate-500 line-through">{p.old_price.toLocaleString("ro-RO")}</span>
-                      )}
-                    </div>
-                  </div>
-                </a>
+
+            {/* Tab pills — filtre categorie */}
+            <div className="flex gap-2 overflow-x-auto pb-1 mb-9 -mx-4 px-4" style={{scrollbarWidth:"none"}}>
+              <button
+                onClick={() => setActiveCatTab("toate")}
+                className={`flex-shrink-0 flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-bold transition-all duration-200 ${activeCatTab === "toate" ? "bg-orange-500 text-white shadow-lg shadow-orange-500/30" : "bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700/80"}`}
+              >
+                🛍️ Toate
+              </button>
+              {produseCategorii.map(cat => (
+                <button
+                  key={cat.slug}
+                  onClick={() => setActiveCatTab(cat.slug)}
+                  className={`flex-shrink-0 flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-bold transition-all duration-200 ${activeCatTab === cat.slug ? "bg-orange-500 text-white shadow-lg shadow-orange-500/30" : "bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700/80"}`}
+                >
+                  {cat.emoji} {cat.label}
+                </button>
               ))}
             </div>
-            <div className="text-center mt-6">
+
+            {/* Continut: randuri orizontale (mod Toate) sau grid (mod categorie) */}
+            {activeCatTab === "toate" ? (
+              <div className="space-y-10">
+                {produseCategorii.map(cat => (
+                  <div key={cat.slug}>
+                    {/* Header rand */}
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="flex items-center gap-2.5">
+                        <span className="text-2xl">{cat.emoji}</span>
+                        <h3 className="text-lg font-black text-white">{cat.label}</h3>
+                        <span className="text-xs text-slate-500 font-medium">{cat.products.length} produse</span>
+                      </div>
+                      <button
+                        onClick={() => setActiveCatTab(cat.slug)}
+                        className="text-xs font-bold text-orange-400 hover:text-orange-300 transition-colors flex items-center gap-1 border border-orange-500/20 hover:border-orange-400/40 px-3 py-1 rounded-full bg-orange-500/5 hover:bg-orange-500/10"
+                      >
+                        Vezi toate →
+                      </button>
+                    </div>
+                    {/* Scroll orizontal */}
+                    <div className="overflow-x-auto -mx-4 px-4 pb-2" style={{scrollbarWidth:"none"}}>
+                      <div className="flex gap-3" style={{minWidth:"max-content"}}>
+                        {cat.products.map((p, i) => (
+                          <a key={i} href={p.url} target="_blank" rel="sponsored noopener noreferrer"
+                            className="group flex-shrink-0 w-44 bg-slate-800 border border-slate-700 hover:border-orange-500/50 rounded-2xl overflow-hidden hover:shadow-xl hover:shadow-black/40 hover:-translate-y-1 transition-all duration-200">
+                            <div className="relative w-full aspect-square bg-slate-700 overflow-hidden">
+                              {/* eslint-disable-next-line @next/next/no-img-element */}
+                              <img src={p.image} alt={p.title}
+                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                loading="lazy"
+                                onError={e => { const el = (e.target as HTMLImageElement).closest("a"); if (el) el.style.display = "none"; }}
+                              />
+                              {p.discount_pct > 0 && (
+                                <div className="absolute top-2 left-2 bg-red-500 text-white text-[10px] font-black px-1.5 py-0.5 rounded-full shadow-md">
+                                  -{p.discount_pct}%
+                                </div>
+                              )}
+                            </div>
+                            <div className="p-2.5">
+                              <p className="text-[9px] text-slate-500 mb-0.5 truncate font-medium">{p.merchant.replace(".ro","").replace(".com","")}</p>
+                              <p className="text-xs font-semibold text-slate-200 line-clamp-2 leading-snug group-hover:text-orange-400 transition-colors mb-1.5">{p.title}</p>
+                              <div className="flex items-baseline gap-1.5">
+                                <span className="text-sm font-black text-orange-400">{p.price.toLocaleString("ro-RO")} lei</span>
+                                {p.old_price && p.old_price > p.price && (
+                                  <span className="text-[10px] text-slate-500 line-through">{p.old_price.toLocaleString("ro-RO")}</span>
+                                )}
+                              </div>
+                            </div>
+                          </a>
+                        ))}
+                        {/* Card "Toate" la finalul randului */}
+                        <button
+                          onClick={() => setActiveCatTab(cat.slug)}
+                          className="flex-shrink-0 w-32 bg-slate-800/60 border border-dashed border-slate-700 hover:border-orange-500/40 rounded-2xl flex flex-col items-center justify-center gap-2.5 hover:bg-slate-800 transition-all duration-200 group cursor-pointer"
+                        >
+                          <div className="w-10 h-10 rounded-full bg-orange-500/15 flex items-center justify-center group-hover:bg-orange-500/25 transition-colors">
+                            <svg className="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/>
+                            </svg>
+                          </div>
+                          <span className="text-xs font-bold text-slate-400 group-hover:text-orange-400 text-center px-2 leading-tight transition-colors">Toate {cat.label}</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              /* Grid pentru categoria selectata */
+              (() => {
+                const cat = produseCategorii.find(c => c.slug === activeCatTab);
+                if (!cat) return null;
+                return (
+                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                    {cat.products.map((p, i) => (
+                      <a key={i} href={p.url} target="_blank" rel="sponsored noopener noreferrer"
+                        className="group bg-slate-800 border border-slate-700 hover:border-orange-500/50 rounded-2xl overflow-hidden hover:shadow-xl hover:shadow-black/40 hover:-translate-y-1 transition-all duration-200">
+                        <div className="relative aspect-square bg-slate-700 overflow-hidden">
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img src={p.image} alt={p.title}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            loading="lazy"
+                            onError={e => { const el = (e.target as HTMLImageElement).closest("a"); if (el) el.style.display = "none"; }}
+                          />
+                          {p.discount_pct > 0 && (
+                            <div className="absolute top-2 left-2 bg-red-500 text-white text-[11px] font-black px-2 py-0.5 rounded-full shadow-md">
+                              -{p.discount_pct}%
+                            </div>
+                          )}
+                        </div>
+                        <div className="p-3.5">
+                          <p className="text-[10px] text-slate-500 mb-0.5 truncate font-medium">{p.merchant.replace(".ro","").replace(".com","")}</p>
+                          <p className="text-sm font-semibold text-slate-200 line-clamp-2 leading-snug group-hover:text-orange-400 transition-colors mb-2">{p.title}</p>
+                          <div className="flex items-baseline gap-2">
+                            <span className="text-base font-black text-orange-400">{p.price.toLocaleString("ro-RO")} lei</span>
+                            {p.old_price && p.old_price > p.price && (
+                              <span className="text-xs text-slate-500 line-through">{p.old_price.toLocaleString("ro-RO")}</span>
+                            )}
+                          </div>
+                        </div>
+                      </a>
+                    ))}
+                  </div>
+                );
+              })()
+            )}
+
+            <div className="text-center mt-10">
               <Link href="/produse" className="inline-flex items-center gap-2 text-sm font-bold text-slate-400 hover:text-orange-400 transition-colors">
-                Vezi toate produsele cu reducere →
+                Toate produsele cu reducere →
               </Link>
             </div>
           </div>
