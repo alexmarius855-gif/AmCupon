@@ -55,6 +55,33 @@ def slug_articol_roundup(luna: str, an: int) -> str:
     return f"cele-mai-bune-coduri-reducere-{luna.lower()}-{an}"
 
 
+CAT_LINKURI_INTERNE = {
+    "fashion":              [("/fashion", "Reduceri Fashion"), ("/categorii/fashion", "Magazine Fashion")],
+    "beauty":               [("/frumusete", "Reduceri Frumusete"), ("/categorii/beauty", "Magazine Beauty")],
+    "electronics-itc":      [("/electronice", "Reduceri Electronice"), ("/top/laptopuri", "Top Laptopuri"), ("/top/telefoane", "Top Telefoane")],
+    "pharma":               [("/farmacie", "Reduceri Farmacie"), ("/sanatate", "Produse Sanatate")],
+    "sports-outdoors":      [("/sport", "Reduceri Sport"), ("/top/biciclete-electrice", "Top Biciclete Electrice")],
+    "home-garden":          [("/casa", "Reduceri Casa"), ("/top/cafetiere", "Top Cafetiere"), ("/top/purificatoare-aer", "Top Purificatoare Aer"), ("/top/masini-de-spalat", "Top Masini de Spalat")],
+    "babies-kids-toys":     [("/copii", "Reduceri Copii & Jucarii")],
+    "automotive":           [("/moto", "Reduceri Auto-Moto")],
+    "books":                [("/carti", "Reduceri Carti")],
+    "health-personal-care": [("/sanatate", "Reduceri Sanatate"), ("/farmacie", "Farmacie Online")],
+    "pet-supplies":         [("/animale", "Reduceri Animale")],
+    "jewelry":              [("/bijuterii", "Reduceri Bijuterii")],
+    "games":                [("/jocuri", "Reduceri Jocuri"), ("/top/scaune-gaming", "Top Scaune Gaming")],
+    "hypermarket-groceries":[("/supermarket", "Reduceri Supermarket")],
+    "gifts-flowers":        [("/idei-cadouri", "Idei Cadouri")],
+}
+
+
+def bloc_linkuri_interne(categorie_slug: str) -> str:
+    linkuri = CAT_LINKURI_INTERNE.get(categorie_slug, [])
+    if not linkuri:
+        return ""
+    items = " | ".join(f"[{label}]({url})" for url, label in linkuri)
+    return f"\n\n**Vezi si:** {items}"
+
+
 def genereaza_articol_magazin(store: dict, luna: str, an: int) -> dict:
     slug_mag  = store["magazin"]
     nume      = nume_afisat(slug_mag)
@@ -179,7 +206,7 @@ Sistemul nostru verifica promotiile de la {nume} de **6 ori pe zi** (la fiecare 
 
 ---
 
-[**Vezi toate ofertele active {nume} pe AmCupon.ro →**](/cod-reducere/{slug_mag})"""
+[**Vezi toate ofertele active {nume} pe AmCupon.ro →**](/cod-reducere/{slug_mag}){bloc_linkuri_interne(store.get("categorie_slug", ""))}"""
 
     return {
         "slug":    slug_articol_magazin(slug_mag, luna, an),
