@@ -52,14 +52,9 @@ export default async function CautarePage({ searchParams }: { searchParams: Prom
 
   return (
     <div className="min-h-screen bg-white">
-      <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
-        <div className="max-w-4xl mx-auto px-4 py-3 flex items-center gap-3">
-          <Link href="/" className="flex items-center gap-1.5 shrink-0">
-            <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
-            <span className="font-black text-gray-900 text-xl">Cupon</span>
-            <span className="text-orange-500 font-black text-xl">.ro</span>
-          </Link>
-          <form action="/cautare" method="get" className="flex-1 flex gap-2">
+      <div className="bg-white border-b border-gray-200 sticky top-[64px] z-40 shadow-sm">
+        <div className="max-w-4xl mx-auto px-4 py-3">
+          <form action="/cautare" method="get" className="flex gap-2">
             <div className="relative flex-1">
               <svg className="absolute left-3 top-2.5 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
@@ -78,7 +73,7 @@ export default async function CautarePage({ searchParams }: { searchParams: Prom
             </button>
           </form>
         </div>
-      </header>
+      </div>
 
       <div className="max-w-4xl mx-auto px-4 py-8">
         {query.length < 2 ? (

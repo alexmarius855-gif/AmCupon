@@ -71,19 +71,6 @@ export default function TopHubPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <div className="min-h-screen bg-gray-50 dark:bg-slate-900">
-        {/* HEADER */}
-        <header className="bg-white dark:bg-slate-900 border-b border-gray-200 dark:border-slate-700 sticky top-0 z-50 shadow-sm">
-          <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-3">
-            <Link href="/" className="flex items-center gap-1.5 shrink-0">
-              <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
-              <span className="font-black text-gray-900 dark:text-white text-xl">Cupon</span>
-              <span className="text-orange-500 font-black text-xl">.ro</span>
-            </Link>
-            <span className="text-gray-300 dark:text-slate-600">/</span>
-            <span className="text-sm font-semibold text-gray-700 dark:text-slate-300">Top Produse</span>
-          </div>
-        </header>
-
         {/* BREADCRUMB */}
         <nav className="bg-white dark:bg-slate-800 border-b border-gray-100 dark:border-slate-700">
           <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-gray-400 flex-wrap">

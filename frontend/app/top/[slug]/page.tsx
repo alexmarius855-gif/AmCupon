@@ -205,23 +205,6 @@ export default async function TopCategoriePage({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <div className="min-h-screen bg-gray-50 dark:bg-slate-900">
-        {/* HEADER */}
-        <header className="bg-white dark:bg-slate-900 border-b border-gray-200 dark:border-slate-700 sticky top-0 z-50 shadow-sm">
-          <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-2 flex-wrap">
-            <Link href="/" className="flex items-center gap-1.5 shrink-0">
-              <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
-              <span className="font-black text-gray-900 dark:text-white text-xl">Cupon</span>
-              <span className="text-orange-500 font-black text-xl">.ro</span>
-            </Link>
-            <span className="text-gray-300 dark:text-slate-600">/</span>
-            <Link href="/top" className="text-sm text-gray-500 dark:text-slate-400 hover:text-orange-500 transition-colors font-medium">
-              Top Produse
-            </Link>
-            <span className="text-gray-300 dark:text-slate-600">/</span>
-            <span className="text-sm font-semibold text-gray-700 dark:text-slate-300 truncate">{cat.titlu_scurt}</span>
-          </div>
-        </header>
-
         {/* HERO */}
         <section className={`bg-gradient-to-br ${gradient} text-white py-10 px-4`}>
           <div className="max-w-5xl mx-auto">
