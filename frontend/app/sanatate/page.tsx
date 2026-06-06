@@ -71,15 +71,6 @@ export default function SanatatePage() {
       <div className="min-h-screen bg-white">
 
         {/* Header */}
-        <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
-          <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-3">
-            <Link href="/" className="flex items-center gap-1.5 shrink-0">
-              <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
-              <span className="font-black text-gray-900 text-xl">Cupon</span>
-              <span className="text-orange-500 font-black text-xl">.ro</span>
-            </Link>
-          </div>
-        </header>
 
         {/* Breadcrumb */}
         <nav className="bg-white border-b border-gray-100">

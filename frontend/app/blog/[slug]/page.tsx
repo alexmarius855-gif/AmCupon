@@ -195,20 +195,6 @@ export default async function ArticolPage({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
       <div className="min-h-screen bg-slate-950">
-        <header className="bg-slate-900 border-b border-slate-800 shadow-black/30 sticky top-0 z-50">
-          <div className="max-w-4xl mx-auto px-4 py-3 flex items-center gap-3">
-            <Link href="/" className="flex items-center gap-1.5 shrink-0">
-              <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
-              <span className="font-black text-white text-xl">Cupon</span>
-              <span className="text-orange-500 font-black text-xl">.ro</span>
-            </Link>
-            <span className="text-slate-600">/</span>
-            <Link href="/blog" className="text-sm text-slate-400 hover:text-orange-500 transition-colors font-medium">Blog</Link>
-            <span className="text-slate-600">/</span>
-            <span className="text-sm text-slate-300 font-semibold truncate max-w-48">{post.title}</span>
-          </div>
-        </header>
-
         <article className="max-w-3xl mx-auto px-4 py-10">
           <div className="mb-6">
             <span className="bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">{post.category}</span>

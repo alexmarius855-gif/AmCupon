@@ -110,17 +110,6 @@ export default function BlackFridayPage() {
 
       <div className="min-h-screen bg-gray-950 text-white">
         {/* Header */}
-        <header className="bg-gray-950 border-b border-gray-800 sticky top-0 z-50">
-          <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-3">
-            <Link href="/" className="flex items-center gap-1.5 shrink-0">
-              <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
-              <span className="font-black text-white text-xl">Cupon</span>
-              <span className="text-orange-500 font-black text-xl">.ro</span>
-            </Link>
-            <span className="text-gray-600">/</span>
-            <span className="text-sm text-gray-300 font-semibold">Black Friday</span>
-          </div>
-        </header>
 
         {/* Breadcrumb */}
         <nav className="max-w-6xl mx-auto px-4 pt-4 pb-0 text-xs text-gray-500 flex items-center gap-1">

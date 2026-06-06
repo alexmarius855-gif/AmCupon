@@ -32,17 +32,6 @@ export default function NewsletterPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="min-h-screen bg-slate-950">
-        <header className="bg-slate-900 border-b border-slate-800 sticky top-0 z-50">
-          <div className="max-w-4xl mx-auto px-4 py-3 flex items-center gap-3">
-            <Link href="/" className="flex items-center gap-1.5 shrink-0">
-              <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
-              <span className="font-black text-white text-xl">Cupon</span>
-              <span className="text-orange-500 font-black text-xl">.ro</span>
-            </Link>
-            <span className="text-slate-600">/</span>
-            <span className="text-sm font-semibold text-slate-400">Newsletter</span>
-          </div>
-        </header>
 
         <div className="max-w-2xl mx-auto px-4 py-16">
           <div className="text-center mb-12">
