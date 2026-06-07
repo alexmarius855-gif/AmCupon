@@ -32,6 +32,11 @@ DATA_DIR.mkdir(exist_ok=True)
 OUT_SQUARE  = DATA_DIR / "banner_daily.png"
 OUT_STORY   = DATA_DIR / "banner_story.png"
 
+# Copie in frontend/public/ — servita de Vercel la amcupon.ro/banner-daily.png
+PUBLIC_DIR   = ROOT_DIR / "frontend" / "public"
+OUT_SQ_PUB  = PUBLIC_DIR / "banner-daily.png"
+OUT_ST_PUB  = PUBLIC_DIR / "banner-story.png"
+
 # ── Culori brand ─────────────────────────────────────────────────────────────
 BG_DARK     = (15, 23, 42)      # #0f172a
 BG_MID      = (26, 39, 68)      # #1a2744
@@ -501,10 +506,18 @@ def main():
     sq.save(str(OUT_SQUARE), "PNG", optimize=True)
     print(f"  Salvat: {OUT_SQUARE} ({OUT_SQUARE.stat().st_size // 1024} KB)")
 
+    # Copie in frontend/public/ pentru Vercel
+    PUBLIC_DIR.mkdir(parents=True, exist_ok=True)
+    sq.save(str(OUT_SQ_PUB), "PNG", optimize=True)
+    print(f"  Copiat: {OUT_SQ_PUB}")
+
     print("Genereaza banner story 1080x1920...")
     st = create_story_banner(valide, data_str)
     st.save(str(OUT_STORY), "PNG", optimize=True)
     print(f"  Salvat: {OUT_STORY} ({OUT_STORY.stat().st_size // 1024} KB)")
+
+    st.save(str(OUT_ST_PUB), "PNG", optimize=True)
+    print(f"  Copiat: {OUT_ST_PUB}")
 
     print("Bannere generate cu succes!")
 

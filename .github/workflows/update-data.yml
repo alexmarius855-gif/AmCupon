@@ -5,7 +5,7 @@ on:
     - cron: '0 */4 * * *'  # Date fresh la fiecare 4 ore (00:00, 04:00, 08:00, 12:00, 16:00, 20:00 UTC)
     - cron: '0 6 * * *'    # Newsletter + Social dimineata — zilnic la 08:00 ora Romaniei
     - cron: '0 17 * * *'   # Social seara — zilnic la 19:00 ora Romaniei (17:00 UTC)
-  workflow_dispatch:        # Buton manual in GitHub → Actions
+  workflow_dispatch:        # Buton manual in GitHub -> Actions
 
 jobs:
   update:
@@ -49,7 +49,7 @@ jobs:
             python process_data.py
           fi
 
-      # ── 4. Profitshare (optional — necesar secret PROFITSHARE_USER) ────────
+      # ── 4. Profitshare (optional) ─────────────────────────────────────────
       - name: Proceseaza date Profitshare
         working-directory: scripts
         env:
@@ -63,7 +63,7 @@ jobs:
             echo "PROFITSHARE_USER nu e setat — skip Profitshare"
           fi
 
-      # ── 4b. TradeTracker (optional — necesar secret TRADETRACKER_SITE_ID) ──
+      # ── 4b. TradeTracker (optional) ───────────────────────────────────────
       - name: Fetch date TradeTracker Romania
         working-directory: scripts
         env:
@@ -97,7 +97,7 @@ jobs:
             echo "TWOPEFORMANT_EMAIL nu e setat — skip product feeds"
           fi
 
-      # ── 7. Bannere campanii (2Performant) ────────────────────────────────────
+      # ── 7. Bannere campanii (2Performant) ─────────────────────────────────
       - name: Fetch bannere campanii (2Performant API)
         working-directory: scripts
         env:
@@ -125,25 +125,25 @@ jobs:
         working-directory: scripts
         run: python generate_product_tops.py
 
-      # ── 8b. Date lightweight homepage (reduce payload ~1MB) ────────────────
+      # ── 8b. Date lightweight homepage ──────────────────────────────────────
       - name: Genereaza date lightweight homepage
         working-directory: scripts
         run: python generate_homepage_data.py
 
-      # ── 8c. Descrieri editoriale magazine (continut SEO unic, fara AI) ─────
+      # ── 8c. Descrieri editoriale magazine ──────────────────────────────────
       - name: Genereaza descrieri magazine
         working-directory: scripts
         run: python generate_store_descriptions.py --force
 
-      # ── 8d. Prioritizare magazine dupa potential de castig ────────────────
+      # ── 8d. Prioritizare magazine ──────────────────────────────────────────
       - name: Genereaza top magazine (potential castig)
         working-directory: scripts
         run: python generate_merchant_priority.py
 
-      # ── 9. Newsletter zilnic (Brevo SMTP) — rulat DOAR la 08:00 Romania ────
+      # ── 9. Newsletter zilnic (Brevo SMTP) — DOAR la 08:00 Romania ──────────
       - name: Trimite newsletter zilnic
         if: github.event.schedule == '0 6 * * *' || github.event_name == 'workflow_dispatch'
-        continue-on-error: true   # non-critic — nu trebuie sa blocheze commit/push-ul datelor
+        continue-on-error: true
         working-directory: scripts
         env:
           BREVO_SMTP_USER:    ${{ secrets.BREVO_SMTP_USER }}
@@ -160,10 +160,10 @@ jobs:
             echo "BREVO_SMTP_PASS nu e setat — skip newsletter"
           fi
 
-      # ── 10. Telegram — top oferte zilnice — rulat DOAR la 08:00 Romania ──
+      # ── 10. Telegram canal oferte ──────────────────────────────────────────
       - name: Postare Telegram canal oferte
         if: github.event.schedule == '0 6 * * *' || github.event_name == 'workflow_dispatch'
-        continue-on-error: true   # non-critic
+        continue-on-error: true
         working-directory: scripts
         env:
           TELEGRAM_BOT_TOKEN:  ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -171,14 +171,15 @@ jobs:
         run: |
           python telegram_daily.py
 
-      # ── 11. Generator continut social media pe NISE — la 08:00 Romania ────
+      # ── 11. Generator continut social media pe nise ────────────────────────
       - name: Genereaza continut social media pe nise
         if: github.event.schedule == '0 6 * * *' || github.event_name == 'workflow_dispatch'
-        continue-on-error: true   # non-critic
+        continue-on-error: true
         working-directory: scripts
         run: python generate_social_content.py
 
-      # ── 12. Genereaza bannere automat (Pillow) ────────────────────────────
+      # ── 12. Genereaza bannere (Pillow) ────────────────────────────────────
+      # Salveaza in data/ SI frontend/public/ (servit de Vercel)
       - name: Genereaza bannere sociale (Pillow)
         if: >
           github.event.schedule == '0 6 * * *' ||
@@ -188,8 +189,79 @@ jobs:
         working-directory: scripts
         run: python generate_banner_auto.py
 
-      # ── 12b. Facebook Page auto-posting ──────────────────────────────────
-      - name: Postare automata Facebook Page (dimineata + seara)
+      # ── 13. Health check ──────────────────────────────────────────────────
+      - name: Health check — verifica freshness output.json
+        continue-on-error: true
+        working-directory: scripts
+        env:
+          TELEGRAM_BOT_TOKEN:  ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+        run: python health_check.py
+
+      # ── 14. Commit & Push ─────────────────────────────────────────────────
+      # IMPORTANT: commit INAINTE de social posting
+      # Asa bannerele sunt live pe amcupon.ro cand postam pe Instagram
+      - name: Commit si push date actualizate
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add frontend/public/output.json          || true
+          git add frontend/public/nav-index.json       || true
+          git add frontend/public/blog-posts.json      || true
+          git add frontend/public/blog-latest.json     || true
+          git add frontend/public/products.json        || true
+          git add frontend/public/products-home.json   || true
+          git add frontend/public/recomandate.json     || true
+          git add frontend/public/store-descriptions.json || true
+          git add frontend/public/banner-daily.png     || true
+          git add frontend/public/banner-story.png     || true
+          git add data/RAPORT-TOP-CASTIG.md            || true
+          git add frontend/public/banners.json         || true
+          git add frontend/public/top-produse.json     || true
+          git add data/output.json                     || true
+          git add data/profitshare_output.json         || true
+          git add data/banners_raw_debug.json          || true
+          git add data/social-content.json             || true
+          git add data/social-content-today.txt        || true
+          git add "data/social-nisa-*.txt"             || true
+          git add data/banner_daily.png                || true
+          git add data/banner_story.png                || true
+
+          if git diff --staged --quiet; then
+            echo "Nicio schimbare — skip commit"
+          else
+            git commit -m "chore: actualizare automata $(date -u +%Y-%m-%d)"
+            for i in 1 2 3 4 5; do
+              git pull --rebase origin main && git push && echo "Date noi publicate — Vercel redeploys automat" && break
+              echo "Push esuat (tentativa $i/5) — retrying in ${i}0s..."
+              sleep $((i * 10))
+            done
+          fi
+
+      # ── 15. Social Media — DUPA commit, ca bannerele sa fie live ──────────
+
+      # ── 15a. Postare via Make.com webhook (NU necesita token Meta) ─────────
+      # Acesta e metoda RECOMANDATA — functioeaza fara developer account Meta
+      # Setup: vezi scripts/SETUP-MAKE-COM.md (10 minute, gratuit)
+      - name: Postare automata via Make.com webhook (FB + IG)
+        if: >
+          github.event.schedule == '0 6 * * *' ||
+          github.event.schedule == '0 17 * * *' ||
+          github.event_name == 'workflow_dispatch'
+        continue-on-error: true
+        working-directory: scripts
+        env:
+          MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}
+          # Banner live pe Vercel dupa commit+push de mai sus
+          BANNER_PUBLIC_URL: "https://amcupon.ro/banner-daily.png"
+          BANNER_STORY_URL:  "https://amcupon.ro/banner-story.png"
+        run: python post_via_webhook.py
+
+      # ── 15b. Postare directa Facebook API (daca ai token Meta) ────────────
+      # Alternativa la Make.com — necesita FACEBOOK_PAGE_TOKEN in Secrets
+      # Cum obtii token: vezi scripts/SETUP-MAKE-COM.md sectiunea "Alternativa"
+      - name: Postare automata Facebook Page (API direct)
         if: >
           github.event.schedule == '0 6 * * *' ||
           github.event.schedule == '0 17 * * *' ||
@@ -201,8 +273,9 @@ jobs:
           FACEBOOK_PAGE_TOKEN: ${{ secrets.FACEBOOK_PAGE_TOKEN }}
         run: python post_facebook.py
 
-      # ── 12c. Instagram auto-posting ───────────────────────────────────────
-      - name: Postare automata Instagram Business
+      # ── 15c. Postare directa Instagram API (daca ai token Meta) ──────────
+      # Alternativa la Make.com — necesita INSTAGRAM_ACCESS_TOKEN in Secrets
+      - name: Postare automata Instagram Business (API direct)
         if: >
           github.event.schedule == '0 6 * * *' ||
           github.event.schedule == '0 17 * * *' ||
@@ -212,52 +285,6 @@ jobs:
         env:
           INSTAGRAM_ACCOUNT_ID:   ${{ secrets.INSTAGRAM_ACCOUNT_ID }}
           INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
-          BANNER_PUBLIC_URL:      "https://amcupon.ro/banner-categorii.png"
+          # Banner live pe Vercel (raw GitHub ca backup)
+          BANNER_PUBLIC_URL: "https://amcupon.ro/banner-daily.png"
         run: python post_instagram.py
-
-      # ── 13. Health check freshness ────────────────────────────────────────
-      - name: Health check — verifica freshness output.json
-        continue-on-error: true   # non-critic — nu blocheaza deploy-ul
-        working-directory: scripts
-        env:
-          TELEGRAM_BOT_TOKEN:  ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
-        run: python health_check.py
-
-      # ── 14. Commit & Push ──────────────────────────────────────────────────
-      - name: Commit si push date actualizate
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          git add frontend/public/output.json       || true
-          git add frontend/public/nav-index.json    || true
-          git add frontend/public/blog-posts.json   || true
-          git add frontend/public/blog-latest.json  || true
-          git add frontend/public/products.json     || true
-          git add frontend/public/products-home.json || true
-          git add frontend/public/recomandate.json || true
-          git add frontend/public/store-descriptions.json || true
-          git add data/RAPORT-TOP-CASTIG.md        || true
-          git add frontend/public/banners.json     || true
-          git add frontend/public/top-produse.json || true
-          git add data/output.json                 || true
-          git add data/profitshare_output.json     || true
-          git add data/banners_raw_debug.json      || true
-          git add data/social-content.json         || true
-          git add data/social-content-today.txt    || true
-          git add data/social-nisa-*.txt           || true
-          git add data/banner_daily.png            || true
-          git add data/banner_story.png            || true
-
-          if git diff --staged --quiet; then
-            echo "Nicio schimbare — skip commit"
-          else
-            git commit -m "chore: actualizare automata $(date -u +%Y-%m-%d)"
-            # Retry loop — evita conflict cand doua workflow-uri ruleaza simultan
-            for i in 1 2 3 4 5; do
-              git pull --rebase origin main && git push && echo "✅ Date noi publicate — Vercel redeploys automat" && break
-              echo "⚠ Push esuat (tentativa $i/5) — retrying in ${i}0s..."
-              sleep $((i * 10))
-            done
-          fi
