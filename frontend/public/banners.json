@@ -1,7 +1,20 @@
 {
-  "updated": "2026-06-07T17:03:36Z",
+  "updated": "2026-06-07T19:16:31Z",
   "count": 20,
   "banners": [
+    {
+      "id": 270361,
+      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270320/original/270320.jpg",
+      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=5b05d7684&aff_code=541547473&campaign_unique=f6cf397df",
+      "landing_raw": "https://www.uniquestore.ro",
+      "width": 1200,
+      "height": 600,
+      "merchant": "uniquestore.ro",
+      "merchant_slug": "uniquestore-ro",
+      "name": "Homepage link",
+      "category": "Homepage link",
+      "b_type": "image"
+    },
     {
       "id": 270359,
       "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270318/original/270318.png",
@@ -241,19 +254,6 @@
       "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270297/original/270297.jpg",
       "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=1f643e777&aff_code=541547473&campaign_unique=fcc86a8dc",
       "landing_raw": "https://www.botaniq.ro/organic-lions-mane-focus-1000-mg-full-spectrum-60-capsule-mushroomsforlife.html",
-      "width": 1200,
-      "height": 628,
-      "merchant": "botaniq.ro/",
-      "merchant_slug": "botaniq-ro",
-      "name": "BestOfJune-landscape",
-      "category": "BestOfJune-landscape",
-      "b_type": "image"
-    },
-    {
-      "id": 270337,
-      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270296/original/270296.jpg",
-      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=b72b44c1f&aff_code=541547473&campaign_unique=fcc86a8dc",
-      "landing_raw": "https://www.botaniq.ro/magnesium-kids-body-spray-bfg-100-ml-betteryou.html",
       "width": 1200,
       "height": 628,
       "merchant": "botaniq.ro/",
