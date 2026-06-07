@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-07T19:16:31Z",
+  "updated": "2026-06-07T20:14:44Z",
   "count": 20,
   "banners": [
     {
@@ -16,6 +16,19 @@
       "b_type": "image"
     },
     {
+      "id": 270360,
+      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270319/original/270319.jpg",
+      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=dd5e48d25&aff_code=541547473&campaign_unique=54d3fd9a5",
+      "landing_raw": "https://www.autoeqt.ro/catalog/stopuri-99",
+      "width": 1587,
+      "height": 2245,
+      "merchant": "autoeqt.ro/",
+      "merchant_slug": "autoeqt-ro",
+      "name": "Stopuri",
+      "category": "Stopuri",
+      "b_type": "image"
+    },
+    {
       "id": 270359,
       "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270318/original/270318.png",
       "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=fd9a36905&aff_code=541547473&campaign_unique=48a30b7c9",
@@ -26,6 +39,32 @@
       "merchant_slug": "obio-ro",
       "name": "Spirulina + Chlorella",
       "category": "Spirulina + Chlorella",
+      "b_type": "image"
+    },
+    {
+      "id": 270358,
+      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270317/original/270317.jpg",
+      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=355855811&aff_code=541547473&campaign_unique=54d3fd9a5",
+      "landing_raw": "https://www.autoeqt.ro/catalog/elemente-caroserie-67",
+      "width": 1587,
+      "height": 2245,
+      "merchant": "autoeqt.ro/",
+      "merchant_slug": "autoeqt-ro",
+      "name": "Caroserie",
+      "category": "Caroserie",
+      "b_type": "image"
+    },
+    {
+      "id": 270357,
+      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270316/original/270316.jpg",
+      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=932eb9797&aff_code=541547473&campaign_unique=54d3fd9a5",
+      "landing_raw": "https://www.autoeqt.ro/catalog/elemente-caroserie-67",
+      "width": 1587,
+      "height": 2245,
+      "merchant": "autoeqt.ro/",
+      "merchant_slug": "autoeqt-ro",
+      "name": "Caroserie",
+      "category": "Caroserie",
       "b_type": "image"
     },
     {
@@ -78,6 +117,19 @@
       "merchant_slug": "bookzone-ro-9c9bce7e-a8e0-40de-8d7a-afa44b9f3d2a",
       "name": "Promotii",
       "category": "Promotii",
+      "b_type": "image"
+    },
+    {
+      "id": 270352,
+      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270311/original/270311.jpg",
+      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=1541cdde3&aff_code=541547473&campaign_unique=54d3fd9a5",
+      "landing_raw": "https://www.autoeqt.ro/catalog/iluminat-auto-78",
+      "width": 1587,
+      "height": 2245,
+      "merchant": "autoeqt.ro/",
+      "merchant_slug": "autoeqt-ro",
+      "name": "Iluminat auto",
+      "category": "Iluminat auto",
       "b_type": "image"
     },
     {
@@ -208,58 +260,6 @@
       "merchant_slug": "botaniq-ro",
       "name": "BestPfJune-square",
       "category": "BestPfJune-square",
-      "b_type": "image"
-    },
-    {
-      "id": 270341,
-      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270300/original/270300.jpg",
-      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=d9756f31f&aff_code=541547473&campaign_unique=fcc86a8dc",
-      "landing_raw": "https://www.botaniq.ro/altrient-c-30-pliculete-ebook.html",
-      "width": 1200,
-      "height": 628,
-      "merchant": "botaniq.ro/",
-      "merchant_slug": "botaniq-ro",
-      "name": "BestOfJune-landscape",
-      "category": "BestOfJune-landscape",
-      "b_type": "image"
-    },
-    {
-      "id": 270340,
-      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270299/original/270299.jpg",
-      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=910f90610&aff_code=541547473&campaign_unique=fcc86a8dc",
-      "landing_raw": "https://www.botaniq.ro/organic-fermented-ashwagandha-600-mg-full-spectrum-60-capsule-living-nutrition.html",
-      "width": 1200,
-      "height": 628,
-      "merchant": "botaniq.ro/",
-      "merchant_slug": "botaniq-ro",
-      "name": "BestOfJune-landscape",
-      "category": "BestOfJune-landscape",
-      "b_type": "image"
-    },
-    {
-      "id": 270339,
-      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270298/original/270298.jpg",
-      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=01ca6161e&aff_code=541547473&campaign_unique=fcc86a8dc",
-      "landing_raw": "https://www.botaniq.ro/vitamina-d3-3000ui-spray-oral-15-ml-betteryou.html",
-      "width": 1200,
-      "height": 628,
-      "merchant": "botaniq.ro/",
-      "merchant_slug": "botaniq-ro",
-      "name": "BestOfJune-landscape",
-      "category": "BestOfJune-landscape",
-      "b_type": "image"
-    },
-    {
-      "id": 270338,
-      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270297/original/270297.jpg",
-      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=1f643e777&aff_code=541547473&campaign_unique=fcc86a8dc",
-      "landing_raw": "https://www.botaniq.ro/organic-lions-mane-focus-1000-mg-full-spectrum-60-capsule-mushroomsforlife.html",
-      "width": 1200,
-      "height": 628,
-      "merchant": "botaniq.ro/",
-      "merchant_slug": "botaniq-ro",
-      "name": "BestOfJune-landscape",
-      "category": "BestOfJune-landscape",
       "b_type": "image"
     }
   ]
