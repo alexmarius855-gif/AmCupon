@@ -42,10 +42,30 @@ LUNI_RO  = ["ianuarie","februarie","martie","aprilie","mai","iunie",
             "iulie","august","septembrie","octombrie","noiembrie","decembrie"]
 ZILE_RO  = ["luni","marti","miercuri","joi","vineri","sambata","duminica"]
 
-NISE_ROTATIE = [
-    "fashion", "beauty", "sports-outdoors", "pharma",
-    "electronics-itc", "home-garden", "babies-kids-toys",
+# Nise pentru pranz (12:00) — rotatie pe zi saptamana
+NISE_PRANZ = [
+    "fashion",          # Luni
+    "beauty",           # Marti
+    "pharma",           # Miercuri
+    "babies-kids-toys", # Joi
+    "electronics-itc",  # Vineri
+    "sports-outdoors",  # Sambata
+    "home-garden",      # Duminica
 ]
+
+# Nise pentru seara (19:00) — diferite fata de pranz in aceeasi zi
+NISE_SEARA = [
+    "electronics-itc",  # Luni
+    "sports-outdoors",  # Marti
+    "home-garden",      # Miercuri
+    "fashion",          # Joi
+    "beauty",           # Vineri
+    "pharma",           # Sambata
+    "babies-kids-toys", # Duminica
+]
+
+# Compatibilitate backward (folosit in ocazii)
+NISE_ROTATIE = NISE_PRANZ
 
 NISE_LABEL = {
     "fashion":           "👗 Fashion & Imbracaminte",
@@ -295,18 +315,33 @@ def main():
         if send_webhook(payload):
             posted += 1
 
-    # ── 2. Post zilnic principal ───────────────────────────────────────────────
-    if 5 <= ora_ro <= 13:  # dimineata
-        top5    = pick_top(valide, n=5)
-        caption = build_caption_general(top5, zi_name, data_str)
-        link    = f"{SITE_URL}/oferte-azi"
+    # ── 2. Post zilnic principal (3 posturi/zi pe categorii diferite) ───────────
+    if 5 <= ora_ro <= 10:       # dimineata — 08:00 Romania
+        top5      = pick_top(valide, n=5)
+        caption   = build_caption_general(top5, zi_name, data_str)
+        link      = f"{SITE_URL}/oferte-azi"
         post_type = "morning"
         nisa_sent = "general"
 
-    elif 15 <= ora_ro <= 23:  # seara — nisa
-        nisa    = NISE_ROTATIE[zi_idx % len(NISE_ROTATIE)]
-        top4    = pick_top(valide, n=4, categorie=nisa)
-        top4n   = [m for m in top4 if m.get("categorie_slug") == nisa]
+    elif 10 < ora_ro <= 14:     # pranz — 12:00 Romania
+        nisa  = NISE_PRANZ[zi_idx % len(NISE_PRANZ)]
+        top4  = pick_top(valide, n=4, categorie=nisa)
+        top4n = [m for m in top4 if m.get("categorie_slug") == nisa]
+
+        if len(top4n) >= 2:
+            caption = build_caption_nisa(nisa, top4n, data_str)
+            link    = f"{SITE_URL}/categorii/{nisa}"
+            nisa_sent = nisa
+        else:
+            caption = build_caption_general(pick_top(valide, n=5), zi_name, data_str)
+            link    = f"{SITE_URL}/oferte-azi"
+            nisa_sent = "general"
+        post_type = "noon"
+
+    elif 15 <= ora_ro <= 23:    # seara — 19:00 Romania
+        nisa  = NISE_SEARA[zi_idx % len(NISE_SEARA)]
+        top4  = pick_top(valide, n=4, categorie=nisa)
+        top4n = [m for m in top4 if m.get("categorie_slug") == nisa]
 
         if len(top4n) >= 2:
             caption = build_caption_nisa(nisa, top4n, data_str)
@@ -319,7 +354,7 @@ def main():
         post_type = "evening"
 
     else:
-        print(f"Ora {ora_ro}:00 Romania — afara din fereastra de postare (5-13 / 15-23)")
+        print(f"Ora {ora_ro}:00 Romania — afara din fereastra (5-10 / 11-14 / 15-23)")
         sys.exit(0)
 
     payload = {

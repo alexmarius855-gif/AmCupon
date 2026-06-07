@@ -4,6 +4,7 @@ on:
   schedule:
     - cron: '0 */4 * * *'  # Date fresh la fiecare 4 ore (00:00, 04:00, 08:00, 12:00, 16:00, 20:00 UTC)
     - cron: '0 6 * * *'    # Newsletter + Social dimineata — zilnic la 08:00 ora Romaniei
+    - cron: '0 10 * * *'   # Social pranz — zilnic la 12:00 ora Romaniei (10:00 UTC)
     - cron: '0 17 * * *'   # Social seara — zilnic la 19:00 ora Romaniei (17:00 UTC)
   workflow_dispatch:        # Buton manual in GitHub -> Actions
 
@@ -183,6 +184,7 @@ jobs:
       - name: Genereaza bannere sociale (Pillow)
         if: >
           github.event.schedule == '0 6 * * *' ||
+          github.event.schedule == '0 10 * * *' ||
           github.event.schedule == '0 17 * * *' ||
           github.event_name == 'workflow_dispatch'
         continue-on-error: true
@@ -247,6 +249,7 @@ jobs:
       - name: Postare automata via Make.com webhook (FB + IG)
         if: >
           github.event.schedule == '0 6 * * *' ||
+          github.event.schedule == '0 10 * * *' ||
           github.event.schedule == '0 17 * * *' ||
           github.event_name == 'workflow_dispatch'
         continue-on-error: true
@@ -264,6 +267,7 @@ jobs:
       - name: Postare automata Facebook Page (API direct)
         if: >
           github.event.schedule == '0 6 * * *' ||
+          github.event.schedule == '0 10 * * *' ||
           github.event.schedule == '0 17 * * *' ||
           github.event_name == 'workflow_dispatch'
         continue-on-error: true
@@ -278,6 +282,7 @@ jobs:
       - name: Postare automata Instagram Business (API direct)
         if: >
           github.event.schedule == '0 6 * * *' ||
+          github.event.schedule == '0 10 * * *' ||
           github.event.schedule == '0 17 * * *' ||
           github.event_name == 'workflow_dispatch'
         continue-on-error: true
