@@ -38,12 +38,133 @@ AFF_CODE        = os.environ.get("TWOPEFORMANT_USER", "541547473")
 AFFILIATE_EMAIL = os.environ.get("TWOPEFORMANT_EMAIL", "")
 AFFILIATE_PASS  = os.environ.get("TWOPEFORMANT_PASS", "")
 
-MAX_FEEDS             = 25     # max feed-uri de procesat
-MAX_PRODUCTS_PER_FEED = 300    # max produse per feed — limitat pentru diversitate
-MAX_PER_MERCHANT      = 400    # max produse per merchant in output final
-MAX_TOTAL             = 6000   # max produse total
+MAX_FEEDS             = 60     # max feed-uri de procesat
+MAX_PRODUCTS_PER_FEED = 3000   # max produse per feed
+MAX_PER_MERCHANT      = 3000   # max produse per merchant in output final
+MAX_TOTAL             = 40000  # max produse total
 DOWNLOAD_TIMEOUT      = 120    # secunde pentru download feed
 CHUNK_SIZE            = 1024 * 512  # 512KB per chunk
+
+# ─── Normalizare categorie → slug standard ────────────────────────────────────
+# Mapat din textul brut al feed-ului catre slug-uri URL-friendly
+CATEGORY_SLUG_MAP: dict = {
+    # Fashion
+    "fashion": "fashion", "imbracaminte": "fashion", "clothing": "fashion",
+    "haine": "fashion", "bluze": "fashion", "tricouri": "fashion",
+    "pantaloni": "fashion", "rochii": "fashion", "fuste": "fashion",
+    "jachete": "fashion", "paltoane": "fashion", "geci": "fashion",
+    "incaltaminte": "fashion", "pantofi": "fashion", "ghete": "fashion",
+    "sneakers": "fashion", "shoes": "fashion", "boots": "fashion",
+    "genti": "fashion", "genta": "fashion", "bags": "fashion",
+    "accesorii": "fashion", "ceasuri": "fashion", "watches": "fashion",
+    "bijuterii moda": "fashion", "lenjerie": "fashion", "swimwear": "fashion",
+    "mode": "fashion", "vêtements": "fashion",
+    # Electronics
+    "electronice": "electronice", "electronics": "electronice",
+    "telefoane": "electronice", "smartphone": "electronice", "phones": "electronice",
+    "laptop": "electronice", "laptopuri": "electronice", "laptops": "electronice",
+    "tablete": "electronice", "tablets": "electronice",
+    "calculatoare": "electronice", "computers": "electronice",
+    "tv": "electronice", "televizoare": "electronice", "television": "electronice",
+    "audio": "electronice", "casti": "electronice", "headphones": "electronice",
+    "camere foto": "electronice", "aparate foto": "electronice", "cameras": "electronice",
+    "it": "electronice", "tech": "electronice", "gadget": "electronice",
+    "electrocasnice": "electronice", "small appliances": "electronice",
+    "imprimante": "electronice", "printers": "electronice",
+    "monitoare": "electronice", "monitors": "electronice",
+    "console": "electronice", "gaming peripherals": "electronice",
+    # Beauty
+    "beauty": "beauty", "frumusete": "beauty", "cosmetice": "beauty",
+    "parfumuri": "beauty", "parfum": "beauty", "perfume": "beauty", "fragrance": "beauty",
+    "skincare": "beauty", "ingrijire ten": "beauty", "ingrijire piele": "beauty",
+    "makeup": "beauty", "machiaj": "beauty", "fard": "beauty",
+    "ingrijire par": "beauty", "hair care": "beauty", "haircare": "beauty",
+    "ingrijire corp": "beauty", "body care": "beauty",
+    "produse cosmetice": "beauty", "cosmetics": "beauty",
+    "sanatate si frumusete": "beauty", "health & beauty": "beauty",
+    # Sport
+    "sport": "sport", "sports": "sport", "fitness": "sport",
+    "outdoor": "sport", "camping": "sport", "hiking": "sport",
+    "ciclism": "sport", "biciclete": "sport", "cycling": "sport",
+    "fotbal": "sport", "tenis": "sport", "inot": "sport",
+    "echipament sportiv": "sport", "sportswear": "sport",
+    "sala de sport": "sport", "gym": "sport", "antrenament": "sport",
+    "rulare": "sport", "running": "sport",
+    # Casa si Gradina
+    "casa": "casa", "home": "casa", "gradina": "casa", "garden": "casa",
+    "mobila": "casa", "furniture": "casa", "mobilier": "casa",
+    "decoratiuni": "casa", "decor": "casa", "home decor": "casa",
+    "bucatarie": "casa", "kitchen": "casa", "ustensile bucatarie": "casa",
+    "baie": "casa", "bathroom": "casa", "bedding": "casa",
+    "unelte": "casa", "tools": "casa", "bricolaj": "casa",
+    "iluminat": "casa", "lighting": "casa", "perdele": "casa",
+    "electrocasnice mari": "casa", "appliances": "casa",
+    # Copii
+    "copii": "copii", "jucarii": "copii", "toys": "copii",
+    "bebelusi": "copii", "baby": "copii", "babies": "copii",
+    "kids": "copii", "children": "copii",
+    "educatie": "copii", "educational": "copii",
+    "imbracaminte copii": "copii", "kids fashion": "copii",
+    "carucioare": "copii", "puericultura": "copii",
+    # Farmacie / Sanatate
+    "farmacie": "farmacie", "pharmacy": "farmacie",
+    "sanatate": "farmacie", "health": "farmacie", "healthcare": "farmacie",
+    "medicamente": "farmacie", "vitamins": "farmacie", "vitamine": "farmacie",
+    "suplimente": "farmacie", "supplements": "farmacie",
+    "medical": "farmacie", "medicina": "farmacie",
+    "dieta": "farmacie", "nutritie": "farmacie", "nutrition": "farmacie",
+    "produse naturale": "farmacie", "natural products": "farmacie",
+    # Carti
+    "carte": "carti", "carti": "carti", "book": "carti", "books": "carti",
+    "literatura": "carti", "fiction": "carti", "nonfiction": "carti",
+    "manuale": "carti", "educational books": "carti",
+    "e-books": "carti", "audiobooks": "carti",
+    "muzica": "carti", "cd": "carti", "dvd": "carti",
+    # Auto / Moto
+    "auto": "auto", "moto": "auto", "automotive": "auto",
+    "piese auto": "auto", "car parts": "auto", "accesorii auto": "auto",
+    "car accessories": "auto", "anvelope": "auto", "tires": "auto",
+    "uleiuri": "auto", "lubricants": "auto",
+    "motociclete": "auto", "motorcycles": "auto",
+    # Animale
+    "animale": "animale", "pets": "animale", "pet": "animale",
+    "animale de companie": "animale", "caini": "animale", "pisici": "animale",
+    "dog": "animale", "cat": "animale", "aquarium": "animale",
+    "hrana animale": "animale", "pet food": "animale",
+    # Alimente / Supermarket
+    "alimente": "alimente", "food": "alimente", "grocery": "alimente",
+    "supermarket": "alimente", "bauturi": "alimente", "drinks": "alimente",
+    "cafea": "alimente", "coffee": "alimente", "ceai": "alimente",
+    "vinuri": "alimente", "wine": "alimente", "alcool": "alimente",
+    "bio": "alimente", "organic": "alimente",
+    # Bijuterii
+    "bijuterii": "bijuterii", "jewelry": "bijuterii", "jewellery": "bijuterii",
+    "inele": "bijuterii", "coliere": "bijuterii", "bratari": "bijuterii",
+    "cercei": "bijuterii", "aur": "bijuterii", "argint": "bijuterii",
+    # Jocuri
+    "jocuri": "jocuri", "games": "jocuri", "gaming": "jocuri",
+    "video games": "jocuri", "jocuri video": "jocuri",
+    "board games": "jocuri", "jocuri de societate": "jocuri",
+}
+
+
+def normalize_cat_slug(raw_cat: str) -> str:
+    """Normalizeaza categoria bruta din feed catre un slug standard."""
+    if not raw_cat:
+        return "altele"
+    c = raw_cat.lower().strip()
+    # Match direct
+    if c in CATEGORY_SLUG_MAP:
+        return CATEGORY_SLUG_MAP[c]
+    # Match partial (cauta keyword in categoria bruta)
+    for key, slug in CATEGORY_SLUG_MAP.items():
+        if key in c:
+            return slug
+    # Match invers (categoria bruta in keyword)
+    for key, slug in CATEGORY_SLUG_MAP.items():
+        if len(key) > 4 and c in key:
+            return slug
+    return "altele"
 
 # Namespace Google Shopping XML
 NS = {"g": "http://base.google.com/ns/1.0"}
@@ -342,6 +463,7 @@ def parse_xml_feed(content: bytes, merchant: str, feed_id) -> list:
                     "old_price":    old_price if old_price > price else None,
                     "discount_pct": discount_pct,
                     "category":     category,
+                    "cat_slug":     normalize_cat_slug(category),
                     "brand":        brand,
                     "merchant":     merchant,
                     "feed_id":      feed_id,
@@ -448,6 +570,7 @@ def parse_csv_feed(content: bytes, merchant: str, feed_id, encoding="utf-8") -> 
 
             # Nu dublu-wrap URL-urile 2Performant deja cu tracking (ex: outfitblack feed)
             is_2p_url = link.startswith("https://event.2performant.com")
+            cat_raw = category[:60]
             products.append({
                 "id":           mapped.get("id", str(i)),
                 "title":        title[:120],
@@ -457,7 +580,8 @@ def parse_csv_feed(content: bytes, merchant: str, feed_id, encoding="utf-8") -> 
                 "price":        price,
                 "old_price":    old_price if old_price > price else None,
                 "discount_pct": discount_pct,
-                "category":     category[:60],
+                "category":     cat_raw,
+                "cat_slug":     normalize_cat_slug(cat_raw),
                 "brand":        mapped.get("brand", "")[:50],
                 "merchant":     merchant,
                 "feed_id":      feed_id,
@@ -584,6 +708,7 @@ def get_products_from_api(feed_id, merchant: str) -> list:
             )
             if not title or not url:
                 continue
+            cat_raw = (prod.get("category") or "")[:60]
             products.append({
                 "title":        title[:120],
                 "url":          make_afiliat_url(url),
@@ -592,7 +717,8 @@ def get_products_from_api(feed_id, merchant: str) -> list:
                 "price":        _parse_price(prod.get("price")),
                 "old_price":    None,
                 "discount_pct": 0,
-                "category":     (prod.get("category") or "")[:60],
+                "category":     cat_raw,
+                "cat_slug":     normalize_cat_slug(cat_raw),
                 "brand":        (prod.get("brand") or "")[:50],
                 "merchant":     merchant,
                 "feed_id":      feed_id,
@@ -657,16 +783,37 @@ def main():
     print(f"  Feed-uri fara URL (vor folosi API fallback): {len(feeds_fara_url)}")
 
     # Feed-uri cunoscute cu URL direct (diverse categorii)
+    # Formatul: name = merchant slug, url = URL direct XML/CSV
     KNOWN_FEEDS = [
+        # ── Carti ────────────────────────────────────────────────────────────────
         {"name": "libris.ro",        "url": "https://www.libris.ro/feed_2p-21220622?_uiAc=ODA4OA=="},
-        {"name": "navstore.ro",      "url": "https://www.navstore.ro/feed/googleShoppingAds.xml"},
         {"name": "elefant.ro",       "url": "https://www.elefant.ro/feed/google-shopping"},
+        # ── Casa & Gradina / General ─────────────────────────────────────────────
         {"name": "vidaxl.ro",        "url": "https://www.vidaxl.ro/feed/google"},
+        {"name": "navstore.ro",      "url": "https://www.navstore.ro/feed/googleShoppingAds.xml"},
+        # ── Copii / Jucarii ──────────────────────────────────────────────────────
         {"name": "noriel.ro",        "url": "https://www.noriel.ro/feed/google_shopping.xml"},
-        # Feed direct 2Performant (CSV simplu: title, aff_code, price, image_urls)
-        # aff_code = URL tracking deja complet cu aff_code=541547473
-        # Feed 4a3fc5d5f contine: outfitblack.ro (320) + sevensins.ro (3522) + depox.ro (2795)
+        # ── Fashion (multi-merchant feed 2P — CSV) ───────────────────────────────
+        # aff_code = URL tracking complet — NU dubla-wrapa
+        # Feed 4a3fc5d5f: outfitblack + sevensins + depox (fashion)
         {"name": "outfitblack.ro",   "url": "https://feeds.2performant.com/feed/4a3fc5d5f.csv"},
+        # ── Sport / Outdoor ──────────────────────────────────────────────────────
+        {"name": "sportisimo.ro",    "url": "https://www.sportisimo.ro/google-merchant-feed.xml"},
+        {"name": "decathlon.ro",     "url": "https://www.decathlon.ro/feed/google_shopping.xml"},
+        # ── Electronice / IT ─────────────────────────────────────────────────────
+        {"name": "pcgarage.ro",      "url": "https://www.pcgarage.ro/feed/google/?lang=ro"},
+        {"name": "altex.ro",         "url": "https://www.altex.ro/feed/google-shopping.xml"},
+        {"name": "evomag.ro",        "url": "https://www.evomag.ro/feed/google.xml"},
+        {"name": "quickmobile.ro",   "url": "https://www.quickmobile.ro/feed/google.xml"},
+        # ── Beauty / Sanatate ────────────────────────────────────────────────────
+        {"name": "farmacia-tei.ro",  "url": "https://www.farmacia-tei.ro/feed/google-shopping.xml"},
+        {"name": "secom.ro",         "url": "https://www.secom.ro/feed/google-shopping.xml"},
+        # ── Fashion / Imbracaminte ───────────────────────────────────────────────
+        {"name": "fashion-days.ro",  "url": "https://www.fashiondays.ro/feed/google-shopping.xml"},
+        {"name": "answear.ro",       "url": "https://www.answear.ro/feed/google-shopping.xml"},
+        {"name": "epantofi.ro",      "url": "https://www.epantofi.ro/feed/google-shopping.xml"},
+        # ── Auto ────────────────────────────────────────────────────────────────
+        {"name": "automobilus.ro",   "url": "https://www.automobilus.ro/googlemerchantshopping.xml"},
     ]
     slug_map_rev = {v: k for k, v in slug_map.items()}
     existing_names = {(f.get("name") or "").lower() for f, _ in feeds_cu_url}

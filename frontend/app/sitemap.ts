@@ -10,6 +10,9 @@ const NISA_SLUGURI = ["auto", "carti", "casa", "tech", "fashion", "sport", "frum
 // Sluguri pagini /top/[slug]
 const TOP_SLUGURI = ["laptopuri", "telefoane", "casti-wireless", "televizoare", "aspiratoare-robot", "friteuze", "smartwatch-uri", "monitoare", "cafetiere", "masini-de-spalat", "roboti-de-bucatarie", "purificatoare-aer", "scaune-gaming", "biciclete-electrice"];
 
+// Sluguri pagini produse pe categorie (/produse/[categorie])
+const PRODUSE_CATEGORII = ["fashion", "electronice", "beauty", "sport", "casa", "copii", "farmacie", "carti", "auto", "animale", "alimente", "bijuterii", "jocuri"];
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const magazine: { magazin: string; are_promotie: boolean; categorie_slug?: string }[] = JSON.parse(
     fs.readFileSync(path.join(process.cwd(), "public", "output.json"), "utf-8")
@@ -54,6 +57,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/bijuterii`,             lastModified: new Date(), changeFrequency: "daily",   priority: 0.8  },
     { url: `${BASE_URL}/jocuri`,                lastModified: new Date(), changeFrequency: "daily",   priority: 0.8  },
     { url: `${BASE_URL}/supermarket`,           lastModified: new Date(), changeFrequency: "daily",   priority: 0.8  },
+
+    // ─── Pagini produse pe categorie (/produse/[categorie]) ─────────────────
+    ...PRODUSE_CATEGORII.map((slug) => ({
+      url: `${BASE_URL}/produse/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: "daily" as const,
+      priority: 0.85,
+    })),
 
     // ─── Pagini nisa (/nisa/[slug]) ──────────────────────────────────────────
     ...NISA_SLUGURI.map((slug) => ({

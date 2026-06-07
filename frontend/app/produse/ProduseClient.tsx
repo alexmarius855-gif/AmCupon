@@ -1,8 +1,9 @@
 ﻿"use client";
 
 import Link from "next/link";
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo } from "react";
 import { useWishlist } from "../hooks/useWishlist";
+import { CAT_META } from "./categorie-meta";
 
 /* ─── Types ──────────────────────────────────────────────────────────────── */
 export interface Produs {
@@ -15,6 +16,7 @@ export interface Produs {
   old_price?: number | null;
   discount_pct: number;
   category: string;
+  cat_slug?: string;
   brand: string;
   merchant: string;
   merchant_slug: string;
@@ -513,6 +515,35 @@ export default function ProduseClient({
               </p>
             </div>
           </div>
+
+          {/* ── Navigatie categorii ─────────────────────────────────────────────── */}
+          {products.length > 0 && (() => {
+            // Calculeaza numarul de produse per cat_slug
+            const catCounts: Record<string, number> = {};
+            for (const p of products) {
+              const slug = p.cat_slug || "altele";
+              catCounts[slug] = (catCounts[slug] || 0) + 1;
+            }
+            const catList = Object.entries(CAT_META)
+              .filter(([slug]) => slug !== "altele" && (catCounts[slug] || 0) > 0)
+              .sort((a, b) => (catCounts[b[0]] || 0) - (catCounts[a[0]] || 0));
+
+            return catList.length > 0 ? (
+              <div className="mb-8">
+                <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">NAVIGATIE PE CATEGORII</p>
+                <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-2">
+                  {catList.map(([slug, cm]) => (
+                    <Link key={slug} href={`/produse/${slug}`}
+                      className="group bg-slate-900 border border-slate-700 hover:border-orange-500/60 rounded-xl p-2.5 text-center hover:-translate-y-0.5 transition-all duration-200">
+                      <div className="text-xl mb-1">{cm.emoji}</div>
+                      <p className="text-[10px] font-bold text-slate-300 group-hover:text-orange-400 transition-colors leading-tight">{cm.label}</p>
+                      <p className="text-[10px] text-slate-500 mt-0.5">{(catCounts[slug] || 0).toLocaleString()} produse</p>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ) : null;
+          })()}
 
           {products.length === 0 ? (
             <div className="text-center py-16 bg-slate-900 rounded-2xl border border-slate-700">
