@@ -148,22 +148,60 @@ CATEGORY_SLUG_MAP: dict = {
 }
 
 
-def normalize_cat_slug(raw_cat: str) -> str:
+MERCHANT_SLUG_FALLBACK: dict = {
+    "navstore":     "auto",
+    "automobilus":  "auto",
+    "outfitblack":  "fashion",
+    "sevensins":    "fashion",
+    "depox":        "fashion",
+    "epantofi":     "fashion",
+    "answear":      "fashion",
+    "fashiondays":  "fashion",
+    "fashion-days": "fashion",
+    "zara":         "fashion",
+    "hm.com":       "fashion",
+    "libris":       "carti",
+    "elefant":      "carti",
+    "noriel":       "copii",
+    "farmacia-tei": "farmacie",
+    "secom":        "farmacie",
+    "drhobe":       "farmacie",
+    "altex":        "electronice",
+    "pcgarage":     "electronice",
+    "evomag":       "electronice",
+    "quickmobile":  "electronice",
+    "emag":         "electronice",
+    "flanco":       "electronice",
+    "vidaxl":       "casa",
+    "leroy":        "casa",
+    "bricodepot":   "casa",
+    "sportisimo":   "sport",
+    "decathlon":    "sport",
+    "hervis":       "sport",
+}
+
+
+def normalize_cat_slug(raw_cat: str, merchant: str = "") -> str:
     """Normalizeaza categoria bruta din feed catre un slug standard."""
-    if not raw_cat:
-        return "altele"
-    c = raw_cat.lower().strip()
-    # Match direct
-    if c in CATEGORY_SLUG_MAP:
-        return CATEGORY_SLUG_MAP[c]
-    # Match partial (cauta keyword in categoria bruta)
-    for key, slug in CATEGORY_SLUG_MAP.items():
-        if key in c:
-            return slug
-    # Match invers (categoria bruta in keyword)
-    for key, slug in CATEGORY_SLUG_MAP.items():
-        if len(key) > 4 and c in key:
-            return slug
+    if raw_cat:
+        c = raw_cat.lower().strip()
+        # Match direct
+        if c in CATEGORY_SLUG_MAP:
+            return CATEGORY_SLUG_MAP[c]
+        # Match partial (cauta keyword in categoria bruta)
+        for key, slug in CATEGORY_SLUG_MAP.items():
+            if key in c:
+                return slug
+        # Match invers (categoria bruta in keyword)
+        for key, slug in CATEGORY_SLUG_MAP.items():
+            if len(key) > 4 and c in key:
+                return slug
+    # Fallback pe baza merchant-ului
+    if merchant:
+        m = merchant.lower()
+        for key, slug in MERCHANT_SLUG_FALLBACK.items():
+            if key in m:
+                return slug
     return "altele"
 
 # Namespace Google Shopping XML
@@ -463,7 +501,7 @@ def parse_xml_feed(content: bytes, merchant: str, feed_id) -> list:
                     "old_price":    old_price if old_price > price else None,
                     "discount_pct": discount_pct,
                     "category":     category,
-                    "cat_slug":     normalize_cat_slug(category),
+                    "cat_slug":     normalize_cat_slug(category, merchant),
                     "brand":        brand,
                     "merchant":     merchant,
                     "feed_id":      feed_id,
@@ -581,7 +619,7 @@ def parse_csv_feed(content: bytes, merchant: str, feed_id, encoding="utf-8") -> 
                 "old_price":    old_price if old_price > price else None,
                 "discount_pct": discount_pct,
                 "category":     cat_raw,
-                "cat_slug":     normalize_cat_slug(cat_raw),
+                "cat_slug":     normalize_cat_slug(cat_raw, merchant),
                 "brand":        mapped.get("brand", "")[:50],
                 "merchant":     merchant,
                 "feed_id":      feed_id,
@@ -718,7 +756,7 @@ def get_products_from_api(feed_id, merchant: str) -> list:
                 "old_price":    None,
                 "discount_pct": 0,
                 "category":     cat_raw,
-                "cat_slug":     normalize_cat_slug(cat_raw),
+                "cat_slug":     normalize_cat_slug(cat_raw, merchant),
                 "brand":        (prod.get("brand") or "")[:50],
                 "merchant":     merchant,
                 "feed_id":      feed_id,
@@ -741,46 +779,50 @@ def main():
     repo_root   = os.path.dirname(script_dir)
     output_path = os.path.join(repo_root, "frontend", "public", "products.json")
 
-    if not AFFILIATE_EMAIL:
-        print("TWOPEFORMANT_EMAIL nu e setat — skip.")
-        return
+    skip_api = not AFFILIATE_EMAIL or not AFFILIATE_PASS
 
-    # ── 1. Login ──────────────────────────────────────────────────────────────
-    print("\n[1/4] Login 2Performant...")
-    if not sign_in():
-        print("  Login esuat — iesire.")
-        return
+    if skip_api:
+        print("  Credentiale lipsa — mod offline, folosesc doar KNOWN_FEEDS.")
+    else:
+        # ── 1. Login ──────────────────────────────────────────────────────────
+        print("\n[1/4] Login 2Performant...")
+        if not sign_in():
+            print("  Login esuat — continuam cu KNOWN_FEEDS.")
+            skip_api = True
 
     slug_map = build_slug_map()
     print(f"  Slug map: {len(slug_map)} intrari")
 
     # ── 2. Feed list ──────────────────────────────────────────────────────────
-    print("\n[2/4] Obtin lista feed-uri...")
-    feeds_raw = get_product_feeds()
-    print(f"  {len(feeds_raw)} feed-uri disponibile")
+    feeds_cu_url   = []
+    feeds_fara_url = []
 
-    # Debug: afiseaza campurile primului feed
-    if feeds_raw:
-        print(f"  Campuri feed[0]: {list(feeds_raw[0].keys())}")
-        sample = feeds_raw[0]
-        for k in ["url", "feed_url", "file_url", "download_url", "source_url"]:
-            if sample.get(k):
-                print(f"    {k} = {sample[k][:80]}")
+    if not skip_api:
+        print("\n[2/4] Obtin lista feed-uri...")
+        feeds_raw = get_product_feeds()
+        print(f"  {len(feeds_raw)} feed-uri disponibile")
+
+        if feeds_raw:
+            print(f"  Campuri feed[0]: {list(feeds_raw[0].keys())}")
+            sample = feeds_raw[0]
+            for k in ["url", "feed_url", "file_url", "download_url", "source_url"]:
+                if sample.get(k):
+                    print(f"    {k} = {sample[k][:80]}")
+
+        for feed in feeds_raw:
+            furl = _get_feed_url(feed)
+            if furl:
+                feeds_cu_url.append((feed, furl))
+            else:
+                feeds_fara_url.append(feed)
+
+        print(f"  Feed-uri cu URL direct: {len(feeds_cu_url)}")
+        print(f"  Feed-uri fara URL (vor folosi API fallback): {len(feeds_fara_url)}")
+    else:
+        print("\n[2/4] Sarit (mod offline) — feed list din API indisponibil.")
 
     # ── 3. Selecteaza feed-uri cu URL direct ─────────────────────────────────
     print("\n[3/4] Sortez si selectez feed-uri prioritare...")
-    feeds_cu_url    = []
-    feeds_fara_url  = []
-
-    for feed in feeds_raw:
-        furl = _get_feed_url(feed)
-        if furl:
-            feeds_cu_url.append((feed, furl))
-        else:
-            feeds_fara_url.append(feed)
-
-    print(f"  Feed-uri cu URL direct: {len(feeds_cu_url)}")
-    print(f"  Feed-uri fara URL (vor folosi API fallback): {len(feeds_fara_url)}")
 
     # Feed-uri cunoscute cu URL direct (diverse categorii)
     # Formatul: name = merchant slug, url = URL direct XML/CSV
