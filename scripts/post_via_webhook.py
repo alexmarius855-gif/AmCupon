@@ -68,13 +68,20 @@ NISE_SEARA = [
 NISE_ROTATIE = NISE_PRANZ
 
 NISE_LABEL = {
-    "fashion":           "👗 Fashion & Imbracaminte",
-    "beauty":            "💄 Frumusete & Cosmetice",
-    "pharma":            "💊 Farmacie & Sanatate",
-    "electronics-itc":   "📱 Electronice & IT",
-    "sports-outdoors":   "🏋 Sport & Fitness",
-    "home-garden":       "🏠 Casa & Gradina",
-    "babies-kids-toys":  "🧸 Copii & Jucarii",
+    "fashion":              "👗 Fashion & Imbracaminte",
+    "beauty":               "💄 Frumusete & Cosmetice",
+    "pharma":               "💊 Farmacie & Sanatate",
+    "electronics-itc":      "📱 Electronice & IT",
+    "sports-outdoors":      "🏋 Sport & Fitness",
+    "home-garden":          "🏠 Casa & Gradina",
+    "babies-kids-toys":     "🧸 Copii & Jucarii",
+    "books":                "📚 Carti & Educatie",
+    "automotive":           "🚗 Auto & Moto",
+    "health-personal-care": "💪 Sanatate & Ingrijire",
+    "pet-supplies":         "🐾 Animale de Companie",
+    "online-mall":          "🛒 Mall Online",
+    "gifts-flowers":        "🎁 Cadouri & Flori",
+    "hypermarket-groceries":"🛍 Supermarket & Alimente",
 }
 
 HASHTAGS_BASE = (
@@ -83,13 +90,20 @@ HASHTAGS_BASE = (
 )
 
 HASHTAGS_NISA = {
-    "fashion":          "#fashion #moda #style #imbracaminte #fashionromania",
-    "beauty":           "#beauty #frumusete #cosmetice #makeup #skincare",
-    "pharma":           "#farmacie #sanatate #suplimente",
-    "electronics-itc":  "#tech #electronice #gadgets #smartphone",
-    "sports-outdoors":  "#sport #fitness #gym #sportromania",
-    "home-garden":      "#casa #gradina #decoratiuni #home",
-    "babies-kids-toys": "#copii #mamici #bebelusi #jucarii",
+    "fashion":              "#fashion #moda #style #imbracaminte #fashionromania",
+    "beauty":               "#beauty #frumusete #cosmetice #makeup #skincare",
+    "pharma":               "#farmacie #sanatate #suplimente",
+    "electronics-itc":      "#tech #electronice #gadgets #smartphone",
+    "sports-outdoors":      "#sport #fitness #gym #sportromania",
+    "home-garden":          "#casa #gradina #decoratiuni #home",
+    "babies-kids-toys":     "#copii #mamici #bebelusi #jucarii",
+    "books":                "#carti #lectura #carte #librarie #citeste",
+    "automotive":           "#auto #masina #piese #moto #automotive",
+    "health-personal-care": "#sanatate #wellness #ingrijire #fitness",
+    "pet-supplies":         "#animale #caini #pisici #petshop",
+    "online-mall":          "#shopping #mall #shoppingonline",
+    "gifts-flowers":        "#cadouri #flori #surprize #gift",
+    "hypermarket-groceries":"#alimente #supermarket #mancare #grocery",
 }
 
 OCAZII = {
