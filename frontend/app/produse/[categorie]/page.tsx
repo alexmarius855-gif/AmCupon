@@ -5,6 +5,7 @@ import path from "path";
 import ProduseCategorieClient from "./ProduseCategorieClient";
 import type { Produs } from "../ProduseClient";
 import { CAT_META } from "../categorie-meta";
+import { CAT_FAQ } from "./categorie-faq";
 
 export { CAT_META };
 
@@ -118,10 +119,29 @@ export default async function ProduseCategorieePage(
           priceCurrency: "RON",
           availability: "https://schema.org/InStock",
           url: p.url,
+          priceValidUntil: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString().split("T")[0],
+          ...(p.old_price && p.old_price > (p.price || 0) ? {
+            priceSpecification: {
+              "@type": "PriceSpecification",
+              price: Math.round((p.price || 0) * 100) / 100,
+              priceCurrency: "RON",
+            },
+          } : {}),
           hasMerchantReturnPolicy: returRO,
           shippingDetails: livrareRO,
         },
       },
+    })),
+  } : null;
+
+  const faqItems = CAT_FAQ[categorie] || [];
+  const faqJsonLd = faqItems.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((item: { q: string; a: string }) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: { "@type": "Answer", text: item.a },
     })),
   } : null;
 
@@ -130,6 +150,9 @@ export default async function ProduseCategorieePage(
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       {itemListJsonLd && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
+      )}
+      {faqJsonLd && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       )}
       <ProduseCategorieClient
         products={filtered}
