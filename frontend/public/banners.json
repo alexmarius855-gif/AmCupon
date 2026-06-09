@@ -1,7 +1,20 @@
 {
-  "updated": "2026-06-09T18:13:36Z",
+  "updated": "2026-06-09T20:22:38Z",
   "count": 20,
   "banners": [
+    {
+      "id": 270487,
+      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270446/original/270446.png",
+      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=e3cbd86a1&aff_code=541547473&campaign_unique=94045f09d",
+      "landing_raw": "https://fera.ro/promotie-hills-hrana-umeda-gratis-la-sacii-mari-selectati-de-hrana-uscata/",
+      "width": 500,
+      "height": 500,
+      "merchant": "fera.ro",
+      "merchant_slug": "fera-ro",
+      "name": "Brands",
+      "category": "Brands",
+      "b_type": "image"
+    },
     {
       "id": 270485,
       "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270444/original/270444.png",
@@ -243,19 +256,6 @@
       "landing_raw": "https://www.drmax.ro/maxdays-dermato-cosmetice",
       "width": 300,
       "height": 250,
-      "merchant": "drmax.ro/",
-      "merchant_slug": "drmax-ro",
-      "name": "Max Days - Frumusete",
-      "category": "Max Days - Frumusete",
-      "b_type": "image"
-    },
-    {
-      "id": 270426,
-      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270385/original/270385.jpg",
-      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=42f276c3c&aff_code=541547473&campaign_unique=6390e3cfb",
-      "landing_raw": "https://www.drmax.ro/maxdays-dermato-cosmetice",
-      "width": 300,
-      "height": 200,
       "merchant": "drmax.ro/",
       "merchant_slug": "drmax-ro",
       "name": "Max Days - Frumusete",
