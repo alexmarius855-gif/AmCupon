@@ -634,46 +634,64 @@ export default function Home() {
 
       {/* ─── DEAL ZILEI ──────────────────────────────────────────────────── */}
       {!loading && cuPromotii.length > 0 && (() => {
-        const deal  = cuPromotii.find(m => m.cod_cupon) || cuPromotii[0];
+        const deal  = cuPromotii.find(m => m.cod_cupon && m.zile_ramase <= 3) || cuPromotii.find(m => m.cod_cupon) || cuPromotii[0];
         const promo = deal.promotii[0];
         const discountText = maxDiscount(deal.promotii);
         const link  = promo?.landing_page || deal.url_afiliat || deal.url;
+        const urgency = deal.zile_ramase <= 1;
         return (
-          <div className="bg-slate-900 py-6 px-4 border-b border-white/5">
+          <div className={`py-6 px-4 border-b ${urgency ? "bg-gradient-to-r from-red-950/60 via-slate-900 to-slate-900 border-red-500/20" : "bg-slate-900 border-white/5"}`}>
             <div className="max-w-7xl mx-auto">
               <div className="flex items-center gap-3 mb-4">
-                <span className="bg-orange-500 text-white text-[10px] font-black px-3 py-1 rounded-full tracking-wider">DEAL ZILEI</span>
+                <span className={`text-white text-[10px] font-black px-3 py-1 rounded-full tracking-wider ${urgency ? "bg-red-600 animate-pulse" : "bg-orange-500"}`}>
+                  {urgency ? "⚡ EXPIRA AZI" : "🔥 DEAL ZILEI"}
+                </span>
                 <span className="text-slate-500 text-xs">{new Date().toLocaleDateString("ro-RO", { day: "numeric", month: "long" })}</span>
+                {deal.zile_ramase <= 1 && <CardCountdown zileRamase={deal.zile_ramase} />}
+                {expiraAzi.length > 1 && (
+                  <Link href="/oferte-azi" className="ml-auto text-xs font-bold text-orange-400 hover:text-orange-300 transition-colors">
+                    +{expiraAzi.length - 1} oferte expira azi →
+                  </Link>
+                )}
               </div>
               <a href={link} target="_blank" rel="sponsored noopener noreferrer"
-                className="group flex flex-col sm:flex-row items-start sm:items-center gap-4 bg-white/5 hover:bg-white/8 border border-white/10 hover:border-orange-500/40 rounded-2xl p-5 transition-all duration-200">
-                <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center shrink-0 shadow-lg">
+                className={`group flex flex-col sm:flex-row items-start sm:items-center gap-4 border rounded-2xl p-5 transition-all duration-200 hover:-translate-y-0.5 ${urgency ? "bg-red-500/8 hover:bg-red-500/12 border-red-500/30 hover:border-red-400/50 hover:shadow-lg hover:shadow-red-500/10" : "bg-white/5 hover:bg-white/8 border-white/10 hover:border-orange-500/40 hover:shadow-lg hover:shadow-orange-500/10"}`}>
+                <div className="w-16 h-16 rounded-2xl bg-white flex items-center justify-center shrink-0 shadow-lg">
                   {deal.logo_url ? (
-                    <img src={deal.logo_url} alt={numeAfisat(deal.magazin)} className="w-10 h-10 object-contain" loading="lazy"/>
+                    <img src={deal.logo_url} alt={numeAfisat(deal.magazin)} className="w-12 h-12 object-contain" loading="lazy"/>
                   ) : (
-                    <span className="text-xl font-black text-orange-500">{numeAfisat(deal.magazin)[0]}</span>
+                    <span className="text-2xl font-black text-orange-500">{numeAfisat(deal.magazin)[0]}</span>
                   )}
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex flex-wrap items-center gap-2 mb-1">
-                    <span className="text-white font-black text-lg">{numeAfisat(deal.magazin)}</span>
+                    <span className="text-white font-black text-xl">{numeAfisat(deal.magazin)}</span>
                     <span className="text-slate-500 text-xs">{deal.categorie}</span>
+                    {deal.exclusiv && <span className="bg-purple-500/20 text-purple-400 text-[10px] font-black px-2 py-0.5 rounded-full border border-purple-500/30">EXCLUSIV</span>}
                   </div>
-                  <p className="text-slate-400 text-sm line-clamp-1">{promo?.nume || "Oferta speciala disponibila"}</p>
-                  {discountText && (
-                    <span className="inline-flex items-center mt-2 gap-1 bg-emerald-500/15 text-emerald-400 text-xs font-bold px-2.5 py-0.5 rounded-full border border-emerald-500/25">
-                      {discountText}
-                    </span>
-                  )}
+                  <p className="text-slate-300 text-sm line-clamp-2">{promo?.descriere || promo?.nume || "Oferta speciala disponibila"}</p>
+                  <div className="flex flex-wrap items-center gap-2 mt-2">
+                    {discountText && (
+                      <span className="inline-flex items-center gap-1 bg-emerald-500/15 text-emerald-400 text-xs font-bold px-2.5 py-0.5 rounded-full border border-emerald-500/25">
+                        ✓ {discountText}
+                      </span>
+                    )}
+                    {deal.cod_cupon && promo?.cod_cupon && (
+                      <span className="inline-flex items-center gap-1 bg-orange-500/15 text-orange-400 text-xs font-bold px-2.5 py-0.5 rounded-full border border-orange-500/25">
+                        🏷 Cod disponibil
+                      </span>
+                    )}
+                  </div>
                 </div>
                 <div className="flex items-center gap-3 shrink-0">
                   {promo?.cod_cupon && (
-                    <div className="hidden sm:block border-2 border-dashed border-orange-400/50 rounded-xl px-4 py-2 bg-orange-500/8">
+                    <div className="hidden sm:block border-2 border-dashed border-orange-400/50 rounded-xl px-4 py-2.5 bg-orange-500/8">
+                      <p className="text-[9px] text-slate-500 uppercase tracking-widest mb-0.5">Cod reducere</p>
                       <span className="font-mono font-black text-orange-400 text-sm tracking-widest">{promo.cod_cupon}</span>
                     </div>
                   )}
-                  <span className="bg-orange-500 group-hover:bg-orange-400 text-white font-black px-5 py-2.5 rounded-xl text-sm transition-colors whitespace-nowrap">
-                    Activeaza →
+                  <span className={`font-black px-5 py-3 rounded-xl text-sm transition-colors whitespace-nowrap shadow-lg ${urgency ? "bg-red-600 group-hover:bg-red-500 text-white shadow-red-500/30" : "bg-orange-500 group-hover:bg-orange-400 text-white shadow-orange-500/20"}`}>
+                    {deal.cod_cupon ? "Ia codul →" : "Vezi oferta →"}
                   </span>
                 </div>
               </a>
