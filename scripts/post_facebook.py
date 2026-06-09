@@ -294,12 +294,15 @@ def main():
     data_str = f"{now_ro.day} {LUNI_RO[now_ro.month - 1]} {now_ro.year}"
     luna_zi  = (now_ro.month, now_ro.day)
 
+    # Filtrare larga — nu mai cerem procent_succes (dateaz date nesigure)
     valide = [
         m for m in magazine
         if m.get("are_promotie") and m.get("promotii")
-        and m.get("procent_succes", 0) >= 50
         and " " not in m.get("magazin", "")
     ]
+    # Fallback daca nu avem destule: include si magazine fara promotie activa dar cu scor bun
+    if len(valide) < 3:
+        valide = [m for m in magazine if " " not in m.get("magazin", "")]
 
     posted = 0
 
@@ -314,7 +317,53 @@ def main():
         post_to_facebook(msg, link)
         posted += 1
 
-    # ── 2. Post principal zilnic ──────────────────────────────────────────────
+    # ── 2. Post "Reduceri mari azi" (daca avem oferte cu % mare) ──────────────
+    import re as _re
+    oferte_pct = []
+    for m in magazine:
+        for p in m.get("promotii", []):
+            titlu_p = p.get("nume", "") or ""
+            match = _re.search(r"(\d+)\s*%", titlu_p)
+            if match:
+                disc = int(match.group(1))
+                if 20 <= disc <= 80 and p.get("zile_ramase", -1) >= 0:
+                    oferte_pct.append({
+                        "magazin": m["magazin"],
+                        "disc": disc,
+                        "titlu": titlu_p[:70],
+                        "cod": p.get("cod_cupon", ""),
+                        "url": p.get("landing_page") or m.get("url_afiliat", ""),
+                        "slug": m.get("magazin", ""),
+                    })
+    oferte_pct.sort(key=lambda x: x["disc"], reverse=True)
+
+    if len(oferte_pct) >= 3:
+        linii = [
+            f"🔥 REDUCERI MARI AZI — {data_str}",
+            "",
+            "Cele mai mari reduceri active chiar acum:",
+            "",
+        ]
+        for o in oferte_pct[:5]:
+            name = o["magazin"].split(".")[0].capitalize()
+            linie = f"🏷 -{o['disc']}% la {name}"
+            if o["cod"]:
+                linie += f" (cod: {o['cod']})"
+            linii.append(linie)
+            linii.append(f"   {o['titlu'][:60]}")
+            linii.append("")
+        linii += [
+            f"Toate ofertele verificate: {SITE_URL}/oferte-azi",
+            "",
+            "#reduceri #codreducere #shoppingonline #romania #amcupon",
+        ]
+        msg_pct = "\n".join(linii)
+        print("Post reduceri mari:")
+        print(msg_pct[:300], "...\n")
+        post_to_facebook(msg_pct, f"{SITE_URL}/oferte-azi")
+        posted += 1
+
+    # ── 3. Post principal zilnic ──────────────────────────────────────────────
     top5 = pick_top(valide, n=5)
     if zi_idx in (5, 6):  # sambata, duminica
         msg  = post_weekend(top5, data_str)
@@ -328,14 +377,13 @@ def main():
     post_to_facebook(msg, link)
     posted += 1
 
-    # ── 3. Post nisa (rotatie zilnica: luni=fashion, marti=beauty etc.) ───────
+    # ── 4. Post nisa (rotatie zilnica: luni=fashion, marti=beauty etc.) ───────
     nise_rotatie = [
         "fashion", "beauty", "sports-outdoors", "pharma",
         "electronics-itc", "home-garden", "babies-kids-toys",
     ]
     nisa_azi = nise_rotatie[zi_idx % len(nise_rotatie)]
 
-    # verifica daca avem magazine in nisa asta
     top_nisa = pick_top(valide, n=4, categorie=nisa_azi)
     top_nisa_filtrat = [m for m in top_nisa if m.get("categorie_slug") == nisa_azi]
 
@@ -346,6 +394,52 @@ def main():
         print(msg_nisa[:200], "...\n")
         post_to_facebook(msg_nisa, link_nisa)
         posted += 1
+
+    # ── 5. Post brand spotlight (joi = brand saptamanei) ─────────────────────
+    if zi_idx == 3:  # joi
+        BRANDURI_SPOTLIGHT = [
+            ("emag", "eMAG", "🛒", "/emag"),
+            ("altex", "Altex", "📺", "/altex"),
+            ("fashiondays", "Fashion Days", "👗", "/fashiondays"),
+            ("noriel", "Noriel", "🧸", "/noriel"),
+            ("decathlon", "Decathlon", "🏃", "/decathlon"),
+            ("carturesti", "Carturesti", "📚", "/carturesti"),
+            ("drmax", "Dr. Max", "💊", "/drmax"),
+        ]
+        # Alege brand-ul bazat pe saptamana anului
+        saptamana_nr = now_ro.isocalendar()[1]
+        brand_idx = saptamana_nr % len(BRANDURI_SPOTLIGHT)
+        slug_b, name_b, emoji_b, path_b = BRANDURI_SPOTLIGHT[brand_idx]
+
+        brand_mag = next((m for m in magazine if slug_b in m.get("magazin", "").lower()), None)
+        if brand_mag:
+            promotii_b = [p for p in brand_mag.get("promotii", []) if p.get("zile_ramase", -1) >= 0]
+            linii_b = [
+                f"{emoji_b} BRAND SAPTAMANEI: {name_b.upper()}",
+                "",
+                f"Iata cele mai bune oferte {name_b} active acum:",
+                "",
+            ]
+            for p in promotii_b[:3]:
+                cod = p.get("cod_cupon", "")
+                linie = f"• {p.get('nume', '')[:65]}"
+                if cod:
+                    linie += f"\n  Cod: {cod}"
+                linii_b.append(linie)
+                linii_b.append("")
+            if not promotii_b:
+                linii_b.append(f"Descopera toate ofertele {name_b} pe AmCupon.ro!")
+                linii_b.append("")
+            linii_b += [
+                f"Ghid complet + coduri: {SITE_URL}{path_b}",
+                "",
+                f"#reduceri #{name_b.replace(' ', '').lower()} #codreducere #romania #amcupon",
+            ]
+            msg_brand = "\n".join(linii_b)
+            print(f"Post brand spotlight ({name_b}):")
+            print(msg_brand[:300], "...\n")
+            post_to_facebook(msg_brand, f"{SITE_URL}{path_b}")
+            posted += 1
 
     print(f"\nFacebook: {posted} posturi publicate pe {data_str} ✓")
 

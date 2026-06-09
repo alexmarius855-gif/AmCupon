@@ -750,6 +750,67 @@ export default function Home() {
         );
       })()}
 
+      {/* ─── REDUCERI MARI AZI ───────────────────────────────────────────── */}
+      {!loading && (() => {
+        const ofertePct = magazine.flatMap(m =>
+          m.promotii
+            .filter(p => {
+              const match = p.nume?.match(/(\d+)\s*%/);
+              return match && parseInt(match[1]) >= 20 && parseInt(match[1]) <= 80 && (p.zile_ramase ?? 99) >= 0;
+            })
+            .map(p => {
+              const disc = parseInt(p.nume.match(/(\d+)\s*%/)![1]);
+              return { ...p, disc, magazin: m.magazin, logo: m.logo_url, url_mag: m.url_afiliat };
+            })
+        ).sort((a, b) => b.disc - a.disc).slice(0, 8);
+
+        if (ofertePct.length < 3) return null;
+        return (
+          <section className="bg-gradient-to-b from-slate-900 to-slate-950 border-b border-slate-800 py-10 px-4">
+            <div className="max-w-7xl mx-auto">
+              <div className="flex items-center justify-between mb-6">
+                <div>
+                  <p className="text-xs font-bold text-red-400 uppercase tracking-widest mb-1">REDUCERI MARI</p>
+                  <h2 className="text-xl font-black text-white">Cele mai mari reduceri active azi</h2>
+                </div>
+                <Link href="/oferte-azi" className="text-xs font-bold text-orange-400 hover:text-orange-300 transition-colors hidden sm:block">
+                  Toate ofertele →
+                </Link>
+              </div>
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+                {ofertePct.map((o, i) => {
+                  const link = o.landing_page || o.url_mag || "#";
+                  const name = o.magazin.split(".")[0];
+                  const name1 = name.charAt(0).toUpperCase() + name.slice(1);
+                  return (
+                    <a key={i} href={link} target="_blank" rel="sponsored noopener noreferrer"
+                      className="group bg-slate-900 border border-slate-800 hover:border-red-500/40 rounded-2xl p-4 flex flex-col gap-2 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-red-500/10">
+                      <div className="flex items-center justify-between">
+                        <div className="w-9 h-9 rounded-xl bg-white flex items-center justify-center shrink-0">
+                          {o.logo ? (
+                            <img src={o.logo} alt={name1} className="w-7 h-7 object-contain" loading="lazy"/>
+                          ) : (
+                            <span className="text-sm font-black text-orange-500">{name1[0]}</span>
+                          )}
+                        </div>
+                        <span className="bg-red-500 text-white text-sm font-black px-2.5 py-1 rounded-xl">-{o.disc}%</span>
+                      </div>
+                      <p className="text-xs font-bold text-white mt-1">{name1}</p>
+                      <p className="text-[11px] text-slate-400 line-clamp-2 leading-tight">{o.nume}</p>
+                      {o.cod_cupon && (
+                        <div className="mt-auto bg-slate-800 border border-dashed border-orange-400/40 rounded-lg px-2 py-1 text-center">
+                          <span className="font-mono font-black text-orange-400 text-xs tracking-widest">{o.cod_cupon}</span>
+                        </div>
+                      )}
+                    </a>
+                  );
+                })}
+              </div>
+            </div>
+          </section>
+        );
+      })()}
+
       {/* ─── TRENDING ─────────────────────────────────────────────────────── */}
       {!loading && cuPromotii.length >= 3 && (
         <section className="bg-slate-950 border-b border-slate-800 py-12 px-4">
