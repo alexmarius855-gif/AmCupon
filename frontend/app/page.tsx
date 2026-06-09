@@ -91,6 +91,9 @@ const BRAND_PAGES = [
   { href: "/brico",       name: "Brico",        emoji: "🔨" },
   { href: "/liki24",      name: "Liki24",       emoji: "🏥" },
   { href: "/vidaxl",      name: "vidaXL",       emoji: "🛋️" },
+  { href: "/answear",     name: "Answear",      emoji: "👗" },
+  { href: "/notino",      name: "Notino",       emoji: "🌸" },
+  { href: "/flanco",      name: "Flanco",       emoji: "📺" },
 ];
 
 const FAQ_ITEMS: { q: string; a: string }[] = [

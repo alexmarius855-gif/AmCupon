@@ -103,12 +103,6 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
               <div className="font-black text-white text-2xl">{promotii.filter(p => !!p.cod_cupon).length}</div>
               <div className="text-slate-500 text-xs mt-0.5">Coduri reducere</div>
             </div>
-            {magazin?.comision && (
-              <div className="text-center">
-                <div className="font-black text-orange-400 text-2xl">{magazin.comision}</div>
-                <div className="text-slate-500 text-xs mt-0.5">Comision afiliat</div>
-              </div>
-            )}
           </div>
 
           {/* CTA buttons */}

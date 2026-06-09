@@ -97,6 +97,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/brico`,                   lastModified: new Date(), changeFrequency: "daily",   priority: 0.75 },
     { url: `${BASE_URL}/liki24`,                  lastModified: new Date(), changeFrequency: "daily",   priority: 0.75 },
     { url: `${BASE_URL}/vidaxl`,                  lastModified: new Date(), changeFrequency: "daily",   priority: 0.75 },
+    { url: `${BASE_URL}/answear`,                 lastModified: new Date(), changeFrequency: "daily",   priority: 0.8  },
+    { url: `${BASE_URL}/notino`,                  lastModified: new Date(), changeFrequency: "daily",   priority: 0.8  },
+    { url: `${BASE_URL}/flanco`,                  lastModified: new Date(), changeFrequency: "daily",   priority: 0.8  },
 
     // ─── Tool pages ─────────────────────────────────────────────────────────
     { url: `${BASE_URL}/top-reduceri`,            lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
