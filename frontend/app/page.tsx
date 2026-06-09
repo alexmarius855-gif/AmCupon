@@ -77,6 +77,22 @@ const SECTIUNI_SPECIALE = [
   { href: "/categorii",    emoji: "📂", label: "Toate categoriile",desc: "Exploreaza tot",                    gradient: "from-orange-500 to-red-500" },
 ];
 
+const BRAND_PAGES = [
+  { href: "/emag",        name: "eMAG",         emoji: "🛒" },
+  { href: "/altex",       name: "Altex",        emoji: "📺" },
+  { href: "/fashiondays", name: "Fashion Days", emoji: "👗" },
+  { href: "/decathlon",   name: "Decathlon",    emoji: "🏃" },
+  { href: "/noriel",      name: "Noriel",       emoji: "🧸" },
+  { href: "/carturesti",  name: "Carturesti",   emoji: "📚" },
+  { href: "/drmax",       name: "Dr. Max",      emoji: "💊" },
+  { href: "/libris",      name: "Libris",       emoji: "📖" },
+  { href: "/petmart",     name: "Petmart",      emoji: "🐾" },
+  { href: "/elefant",     name: "Elefant",      emoji: "🐘" },
+  { href: "/brico",       name: "Brico",        emoji: "🔨" },
+  { href: "/liki24",      name: "Liki24",       emoji: "🏥" },
+  { href: "/vidaxl",      name: "vidaXL",       emoji: "🛋️" },
+];
+
 const FAQ_ITEMS: { q: string; a: string }[] = [
   {
     q: "Cum folosesc un cod de reducere de pe AmCupon.ro?",
@@ -929,6 +945,27 @@ export default function Home() {
                   </div>
                 </div>
               </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── MAGAZINE POPULARE (pagini brand dedicate) ───────────────────── */}
+      <section className="bg-slate-950 border-b border-slate-800 py-10 px-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-6 flex items-center justify-between">
+            <div>
+              <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-1">MAGAZINE POPULARE</p>
+              <h2 className="text-xl font-black text-white">Ghiduri dedicate pentru cele mai cautate magazine</h2>
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-2.5">
+            {BRAND_PAGES.map(b => (
+              <Link key={b.href} href={b.href}
+                className="flex items-center gap-2 bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-orange-500/40 text-slate-300 hover:text-white rounded-2xl px-4 py-2.5 text-sm font-semibold transition-all duration-200 hover:-translate-y-0.5">
+                <span className="text-base">{b.emoji}</span>
+                {b.name}
+              </Link>
             ))}
           </div>
         </div>
