@@ -2151,8 +2151,250 @@ Nu cumpara: produse necunoscute de la magazine necunoscute cu "99% reducere".
 ]
 
 
+# ─── Articole comparative ────────────────────────────────────────────────────
+ARTICOLE_COMPARATII = [
+
+    {
+        "slug": f"emag-vs-altex-{AN}",
+        "title": f"eMAG vs Altex {AN} — Unde cumperi mai ieftin electronicele?",
+        "excerpt": f"eMAG sau Altex in {AN}? Comparatie completa: preturi, livrare, garantie, return si coduri de reducere. Afla unde faci cea mai buna afacere.",
+        "category": "Electronice",
+        "cover": cover_url("emag-altex"),
+        "content": f"""## eMAG vs Altex {AN} — Comparatie completa
+
+Doua dintre cele mai mari magazine online din Romania, dar care e mai bun? Raspunsul depinde de ce cumperi si cand.
+
+## Gama de produse
+
+**eMAG** are catalog mai mare — milioane de produse inclusiv Marketplace cu vanzatori third-party. Gasesti aproape orice, de la electronice la moda si carti.
+
+**Altex** se concentreaza pe electronice si electrocasnice, cu gama mai restransa dar selectie mai curata. Mai putine produse de calitate indoielnica din Marketplace.
+
+**Verdict**: Pentru varietate maxima, eMAG castiga. Pentru electronice premium fara confuzia Marketplace, Altex e mai simplu.
+
+## Preturi
+
+Preturile variaza zilnic la ambii retaileri. In general:
+- eMAG are mai frecvent promotii flash de 24-48h
+- Altex are preturi stabile si campanii saptamanale clare
+- La produse identice, diferenta e de obicei 2-8%
+
+**Sfat**: foloseste [pagina eMAG](/cod-reducere/emag.ro) si [pagina Altex](/cod-reducere/altex.ro) de pe AmCupon.ro pentru a vedea codurile active la ambii simultan.
+
+## Livrare
+
+**eMAG**: livrare gratuita de la 99 lei, eMAG Express same-day in orase mari, ridicare din lockere easybox.
+**Altex**: livrare gratuita de la un prag similar, ridicare din magazinele fizice (avantaj major in orase mici).
+
+**Verdict**: Daca ai magazin Altex in oras, ridicarea gratuita din magazin e un avantaj real. eMAG castiga pe same-day delivery.
+
+## Garantie si return
+
+Ambii ofera garantie legala de 2 ani. Altex are garantie extinsa optionala cu servicii mai bune in magazin. eMAG are return online mai simplu.
+
+## Concluzie
+
+- **Cumperi electronice** si vrei cel mai mic pret: compara ambii, foloseste coduri reducere
+- **Vrei ridicare rapida din magazin**: Altex
+- **Vrei varietate maxima**: eMAG
+- **Vrei same-day delivery in Bucuresti**: eMAG Express
+
+[Cod reducere eMAG activ](/cod-reducere/emag.ro) | [Cod reducere Altex activ](/cod-reducere/altex.ro)
+""",
+    },
+
+    {
+        "slug": f"fashiondays-vs-answear-{AN}",
+        "title": f"Fashion Days vs Answear {AN} — Cel mai bun magazin de haine online",
+        "excerpt": f"Fashion Days sau Answear in {AN}? Comparatie branduri, preturi, reduceri si livrare. Afla care magazin de fashion online merita banii tai.",
+        "category": "Fashion",
+        "cover": cover_url("fashion-compare"),
+        "content": f"""## Fashion Days vs Answear {AN} — Comparatie completa
+
+Doua platforme de fashion online care domina piata din Romania. Care e mai bun pentru tine?
+
+## Branduri disponibile
+
+**Fashion Days** are o selectie mai mare de branduri mid si premium: Tommy Hilfiger, Calvin Klein, Guess, Liu Jo, plus branduri locale romanesti.
+
+**Answear** se concentreaza pe branduri sportive si casual: Nike, Adidas, New Balance, Puma, plus branduri europene de nisa.
+
+**Verdict**: Depinde de stilul tau — Fashion Days pentru look urban/office, Answear pentru sport si casual activ.
+
+## Preturi si reduceri
+
+Ambele platforme au reduceri permanente de 20-60%. Fashion Days face flash sales agresive (24h, -70%). Answear are reduceri mai stabile si campanii sezoniere clare.
+
+Verificati codurile active pe AmCupon.ro: [Fashion Days](/cod-reducere/fashiondays.ro) si [Answear](/cod-reducere/answear.ro).
+
+## Calitatea produselor
+
+Ambele vand produse 100% originale de la branduri autorizate. Fashion Days are si produse Marketplace de la vanzatori third-party — verificati vanzatorul inainte de comanda.
+
+## Livrare si return
+
+Fashion Days si Answear au politici similare: livrare gratuita peste un prag, return 30 zile. Procesul de retur online e simplu la ambii.
+
+## Concluzie
+
+- **Stil urban si branduri premium**: Fashion Days
+- **Sportswear si casual activ**: Answear
+- **Flash sales agresive**: Fashion Days
+- **Reduceri stabile si previzibile**: Answear
+
+[Coduri reducere Fashion Days →](/cod-reducere/fashiondays.ro) | [Coduri reducere Answear →](/cod-reducere/answear.ro)
+""",
+    },
+
+    {
+        "slug": f"librarii-online-romania-{AN}",
+        "title": f"Librarii online Romania {AN} — Carturesti vs Libris vs Elefant: comparatie completa",
+        "excerpt": f"Carturesti, Libris sau Elefant? Comparatie completa {AN}: preturi, gama, livrare si reduceri la carti online in Romania.",
+        "category": "Carti",
+        "cover": cover_url("librarii-online"),
+        "content": f"""## Librarii online Romania {AN} — Carturesti vs Libris vs Elefant
+
+Trei platforme diferite, trei experiente diferite de cumparare. Iata ce le diferentiaza:
+
+## Carturesti — Experienta culturala completa
+
+**Puncte forte**: Brand puternic, experienta premium, gama larga de produse (nu doar carti: jocuri societate, muzica, papetarie). Livrare rapida, magazine fizice in orase mari.
+
+**Contra**: Preturile usor mai mari la unele titluri. Promotiile sunt mai rare.
+
+**Recomandat pentru**: Cititorii care vor experienta completa, nu doar cel mai mic pret.
+
+[Coduri reducere Carturesti →](/cod-reducere/carturesti.ro)
+
+## Libris — Cel mai mare catalog
+
+**Puncte forte**: Cel mai mare catalog de carti din Romania (peste 500.000 titluri). Preturi competitive, newsletter cu promotii zilnice, transport gratuit de la prag mic.
+
+**Contra**: Interfata mai putin moderna. Timpii de livrare variaza.
+
+**Recomandat pentru**: Cititorii care cauta titluri rare sau din afara topurilor.
+
+[Coduri reducere Libris →](/cod-reducere/libris.ro)
+
+## Elefant — Varietate si preturi bune
+
+**Puncte forte**: Nu doar carti — DVD, muzica, jocuri, electronice. Preturi bune, promotii frecvente, program de fidelitate.
+
+**Contra**: Experienta mai putin specializata pe carti decat Carturesti sau Libris.
+
+**Recomandat pentru**: Cumparatorii care vor carti alaturi de alte produse media si entertainment.
+
+[Coduri reducere Elefant →](/cod-reducere/elefant.ro)
+
+## Concluzie
+
+- **Vrei cel mai mic pret la titluri populare**: compara toate trei
+- **Cauti titluri rare**: Libris (catalog cel mai mare)
+- **Vrei experienta premium**: Carturesti
+- **Cumperi si alte produse media**: Elefant
+""",
+    },
+
+    {
+        "slug": f"farmacii-online-romania-{AN}",
+        "title": f"Farmacii online Romania {AN} — Dr. Max vs Liki24 vs Vegis: ghid complet",
+        "excerpt": f"Dr. Max, Liki24 sau Vegis? Comparatie farmacii online {AN}: preturi, gama, livrare si coduri reducere. Unde cumperi suplimente si OTC mai ieftin.",
+        "category": "Farmacie",
+        "cover": cover_url("farmacii-online"),
+        "content": f"""## Farmacii online Romania {AN} — Comparatie completa
+
+Cumparaturi online la farmacie: economisesti timp si bani comparativ cu farmacia fizica. Dar care platforma e mai buna?
+
+## Dr. Max — Liderul pietei
+
+**Puncte forte**: Cel mai cunoscut brand de farmacie din Romania, cu sute de locatii fizice. Program de fidelitate Dr. Max Club, gama completa, livrare rapida.
+
+**Contra**: Preturile nu sunt intotdeauna cele mai mici la suplimente si cosmetice.
+
+**Recomandat pentru**: Cumparatori care vor brandul de incredere si posibilitatea ridicarii din magazin fizic.
+
+[Coduri reducere Dr. Max →](/cod-reducere/drmax.ro)
+
+## Liki24 — Preturi competitive
+
+**Puncte forte**: Preturi mai mici la multe categorii de suplimente si OTC. Interfata moderna, livrare rapida.
+
+**Contra**: Brand mai putin cunoscut decat Dr. Max, fara retea fizica in Romania.
+
+**Recomandat pentru**: Cumparatori care prioritizeaza pretul si nu au nevoie de ridicare din magazin.
+
+[Coduri reducere Liki24 →](/cod-reducere/liki24.ro)
+
+## Vegis — Specializata in produse naturale
+
+**Puncte forte**: Selectie excelenta de produse naturiste, bio si vegetariene. Cel mai bun loc pentru suplimente naturale.
+
+**Contra**: Gama mai limitata la medicamente OTC clasice.
+
+**Recomandat pentru**: Cei care cauta alternative naturale si suplimente bio.
+
+[Coduri reducere Vegis →](/cod-reducere/vegis.ro)
+
+## Sfaturi pentru economii maxime la farmacie online
+
+1. Cumpara suplimentele in pachete de 3-6 luni — economii 15-25%
+2. Combina codul de reducere cu promotia activa
+3. Compara preturile la acelasi produs intre platforme — diferentele pot fi de 20-30%
+4. Inscrie-te in programul de fidelitate Dr. Max Club pentru puncte la fiecare achizitie
+
+[Toate ofertele farmacie online →](/farmacie)
+""",
+    },
+
+    {
+        "slug": f"jucarii-online-romania-{AN}",
+        "title": f"Jucarii online Romania {AN} — Noriel vs eMAG vs alte magazine: ghid parinti",
+        "excerpt": f"Unde cumperi jucarii online mai ieftin in {AN}? Noriel, eMAG, Carrefour. Comparatie preturi, livrare si coduri reducere jucarii.",
+        "category": "Copii",
+        "cover": cover_url("jucarii-online"),
+        "content": f"""## Jucarii online Romania {AN} — Ghid pentru parinti
+
+Cumparaturi de jucarii online: mai rapid, mai ieftin si cu mai multa varietate decat in magazin. Dar de unde cumperi?
+
+## Noriel — Specialistul in jucarii
+
+**Puncte forte**: Cel mai mare lant specializat in jucarii din Romania. Gama completa LEGO, Barbie, Hot Wheels, jocuri de societate. Personal calificat, program de fidelitate.
+
+**Contra**: Preturile sunt uneori mai mari decat la retaileri generali pentru jucarii non-exclusive.
+
+**Recomandat pentru**: Parinti care vor specializare si garantia produsului original.
+
+[Coduri reducere Noriel →](/cod-reducere/noriel.ro)
+
+## eMAG — Varietate maxima
+
+**Puncte forte**: Catalog imens, preturi competitive, promotii flash frecvente. Livrare rapida, return simplu.
+
+**Contra**: Marketplace include vanzatori third-party — verifica vanzatorul pentru jucarii de calitate.
+
+**Recomandat pentru**: Cumparatori care compara preturile si vor cel mai bun deal.
+
+## Sfaturi pentru cumpararea de jucarii online
+
+1. **Verifica varsta recomandata** — esentiale pentru siguranta copilului
+2. **Cumpara LEGO in pachete mari** — pretul per piesa e mai mic
+3. **Black Friday si Craciun** sunt momentele cu cele mai mari reduceri la jucarii (30-50%)
+4. **Aboneaza-te la newsletter Noriel** pentru alerte de reduceri
+
+## Cand e cel mai ieftin sa cumperi jucarii?
+
+- **Noiembrie** (Black Friday): reduceri de 30-50% la LEGO si jucarii premium
+- **Dupa Craciun** (26-31 Decembrie): lichidare stoc cu -40-70%
+- **Iulie-August**: reduceri de vara mai mici, dar constante
+
+[Jucarii si reduceri copii →](/copii) | [Coduri reducere Noriel →](/cod-reducere/noriel.ro)
+""",
+    },
+
+]
+
 # ─── Combina toate listele ────────────────────────────────────────────────────
-ARTICOLE = ARTICOLE + ARTICOLE_EXTRA2
+ARTICOLE = ARTICOLE + ARTICOLE_EXTRA2 + ARTICOLE_COMPARATII
 
 
 def main():
