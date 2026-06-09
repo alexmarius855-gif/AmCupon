@@ -89,6 +89,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/elefant`,                 lastModified: new Date(), changeFrequency: "daily",   priority: 0.8  },
     { url: `${BASE_URL}/decathlon`,               lastModified: new Date(), changeFrequency: "daily",   priority: 0.8  },
     { url: `${BASE_URL}/libris`,                  lastModified: new Date(), changeFrequency: "daily",   priority: 0.8  },
+    { url: `${BASE_URL}/fashiondays`,             lastModified: new Date(), changeFrequency: "daily",   priority: 0.8  },
+    { url: `${BASE_URL}/carturesti`,              lastModified: new Date(), changeFrequency: "daily",   priority: 0.8  },
+    { url: `${BASE_URL}/drmax`,                   lastModified: new Date(), changeFrequency: "daily",   priority: 0.8  },
+    { url: `${BASE_URL}/noriel`,                  lastModified: new Date(), changeFrequency: "daily",   priority: 0.8  },
+    { url: `${BASE_URL}/petmart`,                 lastModified: new Date(), changeFrequency: "daily",   priority: 0.75 },
+    { url: `${BASE_URL}/brico`,                   lastModified: new Date(), changeFrequency: "daily",   priority: 0.75 },
+    { url: `${BASE_URL}/liki24`,                  lastModified: new Date(), changeFrequency: "daily",   priority: 0.75 },
+    { url: `${BASE_URL}/vidaxl`,                  lastModified: new Date(), changeFrequency: "daily",   priority: 0.75 },
 
     // ─── Tool pages ─────────────────────────────────────────────────────────
     { url: `${BASE_URL}/top-reduceri`,            lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },

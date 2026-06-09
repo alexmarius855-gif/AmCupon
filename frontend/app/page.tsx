@@ -510,6 +510,37 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ─── STATS BAR ────────────────────────────────────────────────────── */}
+      {!loading && magazine.length > 0 && (() => {
+        const nrOferte    = magazine.filter(m => m.are_promotie).length;
+        const nrCoduri    = magazine.filter(m => m.cod_cupon).length;
+        const nrMagazine  = magazine.length;
+        const nrExpiraAzi = magazine.filter(m => m.are_promotie && m.zile_ramase <= 1).length;
+        return (
+          <div className="bg-slate-900/80 border-b border-slate-800 py-4 px-4">
+            <div className="max-w-4xl mx-auto flex flex-wrap justify-center gap-6 sm:gap-10">
+              {[
+                { val: nrMagazine,  label: "magazine partenere", icon: "🏪" },
+                { val: nrOferte,    label: "oferte active azi",   icon: "🔥" },
+                { val: nrCoduri,    label: "coduri de reducere",  icon: "🎟️" },
+                { val: nrExpiraAzi, label: "expira astazi",        icon: "⏰" },
+              ].map((s, i) => (
+                <div key={i} className="flex items-center gap-2.5 text-sm">
+                  <span className="text-xl">{s.icon}</span>
+                  <div>
+                    <span className="font-black text-white text-base">{s.val}</span>
+                    <span className="text-slate-500 ml-1.5 text-xs">{s.label}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        );
+      })()}
+
+      {/* placeholder pentru a inchide sectiunea corecta daca loading */}
+      {loading && <div className="h-[53px] bg-slate-900/80 border-b border-slate-800" />}
+
       {/* ─── CATEGORY GRID ───────────────────────────────────────────────── */}
       <section id="categorii" className="bg-slate-900 border-b border-slate-800 py-14 px-4">
         <div className="max-w-7xl mx-auto">
