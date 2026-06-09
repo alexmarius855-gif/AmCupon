@@ -1045,7 +1045,7 @@ export default function Home() {
                   const zile = promo?.zile_ramase ?? 0;
                   const slug = m.magazin;
                   return (
-                    <a key={i} href={link} target="_blank" rel="sponsored noopener noreferrer"
+                    <Link key={i} href={`/cod-reducere/${slug}`}
                       className="group bg-slate-900 border border-slate-800 hover:border-orange-500 rounded-2xl overflow-hidden transition-all hover:shadow-xl hover:shadow-black/40 hover:-translate-y-1 duration-200 flex flex-col">
                       {/* Logo */}
                       <div className="relative bg-slate-800 flex items-center justify-center p-4" style={{aspectRatio:"1"}}>
@@ -1077,16 +1077,14 @@ export default function Home() {
                         ) : (
                           <div className="mt-2 text-[11px] font-bold text-emerald-500">Fara cod necesar</div>
                         )}
-                        <a href={`/cod-reducere/${slug}`}
-                          className="mt-2 text-[11px] font-bold text-orange-500 group-hover:text-orange-400 flex items-center gap-0.5"
-                          onClick={e => e.stopPropagation()}>
+                        <span className="mt-2 text-[11px] font-bold text-orange-500 group-hover:text-orange-400 flex items-center gap-0.5">
                           Vezi oferta
                           <svg className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
                           </svg>
-                        </a>
+                        </span>
                       </div>
-                    </a>
+                    </Link>
                   );
                 })}
               </div>

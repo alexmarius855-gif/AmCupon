@@ -374,6 +374,22 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
         {/* ─── TAB: CODURI ──────────────────────────────────────────────────── */}
         {tabActiv === "coduri" && (
           <>
+            {/* ── Cum functioneaza (3 pasi) ─────────────────────────────────── */}
+            <div className="flex items-stretch gap-2 sm:gap-4 mb-7 bg-slate-900/60 border border-slate-800 rounded-2xl p-4">
+              {[
+                { nr: "1", icon: "📋", titlu: "Copiaza codul", desc: "Click pe cod — se copiaza automat" },
+                { nr: "2", icon: "🛒", titlu: "Mergi la magazin", desc: `Te redirectam la ${nume}` },
+                { nr: "3", icon: "✅", titlu: "Aplica la checkout", desc: `Lipeste codul in camp "Voucher"` },
+              ].map((pas) => (
+                <div key={pas.nr} className="flex-1 flex flex-col items-center text-center gap-1.5 px-2">
+                  <span className="text-xl">{pas.icon}</span>
+                  <span className="text-[10px] font-black text-orange-500 uppercase tracking-widest">Pas {pas.nr}</span>
+                  <span className="text-xs font-bold text-white leading-tight">{pas.titlu}</span>
+                  <span className="text-[11px] text-slate-500 leading-snug hidden sm:block">{pas.desc}</span>
+                </div>
+              ))}
+            </div>
+
             {cuCod.length > 0 ? (
               <section>
                 <div className="flex items-center gap-3 mb-5">
@@ -609,11 +625,11 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
               Instaleaza gratuit →
             </a>
           </div>
-          <div className="bg-orange-950/50 border border-orange-100 rounded-2xl p-5 flex flex-col sm:flex-row items-center gap-4">
+          <div className="bg-orange-500/8 border border-orange-500/25 rounded-2xl p-5 flex flex-col sm:flex-row items-center gap-4">
             <div className="text-2xl shrink-0">📬</div>
             <div className="flex-1 text-center sm:text-left">
-              <p className="font-bold text-gray-900 text-sm">Nu rata promotiile viitoare {nume}</p>
-              <p className="text-gray-500 text-xs mt-0.5">Saptamanal — cele mai bune coduri pe email. Gratuit.</p>
+              <p className="font-bold text-white text-sm">Nu rata promotiile viitoare {nume}</p>
+              <p className="text-slate-400 text-xs mt-0.5">Saptamanal — cele mai bune coduri pe email. Gratuit.</p>
             </div>
             <Link href="/newsletter"
               className="shrink-0 bg-orange-500 hover:bg-orange-600 text-white font-bold text-xs px-5 py-2.5 rounded-xl transition-colors whitespace-nowrap">
