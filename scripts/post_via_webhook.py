@@ -107,14 +107,22 @@ HASHTAGS_NISA = {
 }
 
 OCAZII = {
-    (6, 1):  ("Ziua Copilului",   "🎈", "babies-kids-toys"),
-    (6, 5):  ("Ziua Mediului",    "🌿", None),
-    (2, 14): ("Valentine's Day",  "💝", "gifts-flowers"),
-    (3, 8):  ("8 Martie",         "🌸", "beauty"),
-    (12, 6): ("Ziua Nationala",   "🇷🇴", None),
-    (11, 11):("Singles Day",      "🛒", None),
-    (11, 29):("Black Friday",     "🔥", None),
-    (12, 26):("Reduceri Craciun", "🎁", "gifts-flowers"),
+    (2, 14): ("Valentine's Day",   "💝", "gifts-flowers"),
+    (3, 8):  ("8 Martie",          "🌸", "beauty"),
+    (4, 23): ("Ziua Cartii",       "📖", "books"),
+    (5, 1):  ("1 Mai",             "🌞", "sports-outdoors"),
+    (6, 1):  ("Ziua Copilului",    "🎈", "babies-kids-toys"),
+    (6, 5):  ("Ziua Mediului",     "🌿", "home-garden"),
+    (6, 21): ("Solstitiu Verii",   "☀️", "sports-outdoors"),
+    (7, 15): ("Summer Sale",       "🏖", None),
+    (8, 15): ("Oferte de Vara",    "🌊", "fashion"),
+    (9, 1):  ("Back to School",    "🎒", "books"),
+    (10, 31):("Halloween Sale",    "🎃", None),
+    (11, 11):("Singles Day",       "🛒", None),
+    (11, 29):("Black Friday",      "🔥", None),
+    (12, 6): ("Ziua Nationala",    "🇷🇴", None),
+    (12, 26):("Reduceri Craciun",  "🎁", "gifts-flowers"),
+    (12, 31):("Revelion Sale",     "🎆", None),
 }
 
 
@@ -126,10 +134,24 @@ def get_best_promo(m):
     return cu_cod[0] if cu_cod else (promotii[0] if promotii else {})
 
 
-def format_discount(m, max_len=65):
+def format_discount(m, max_len=70):
     promo = get_best_promo(m)
     if promo.get("nume"):
-        return promo["nume"][:max_len]
+        text = promo["nume"].strip()
+        # Curata text urat: pipe, bare, doua spatii
+        text = re.sub(r"\s*\|\s*\d+\s*\|?\s*$", "", text).strip()
+        text = re.sub(r"\s{2,}", " ", text)
+        if len(text) <= max_len:
+            return text
+        # Taie la ultimul spatiu inainte de limita
+        cut = text[:max_len]
+        last_space = cut.rfind(" ")
+        if last_space > int(max_len * 0.65):
+            return cut[:last_space] + "..."
+        return cut + "..."
+    # Extrage procent din textul promotiei
+    if promo.get("procent_reducere"):
+        return f"Reducere {promo['procent_reducere']}%"
     c = m.get("comision", "")
     nums = [float(x) for x in re.findall(r"[\d.]+", c)]
     if nums:

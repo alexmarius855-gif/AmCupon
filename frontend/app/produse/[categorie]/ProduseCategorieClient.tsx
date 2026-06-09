@@ -43,6 +43,11 @@ function ProdusCard({ p }: { p: Produs }) {
             <span className="text-[10px] font-bold text-slate-400 text-center px-2 leading-tight">{merchant}</span>
           </div>
         )}
+        {p.discount_pct >= 30 && (
+          <span className="absolute top-2 right-2 bg-gradient-to-r from-orange-500 to-red-500 text-white text-[9px] font-black px-1.5 py-0.5 rounded-full shadow uppercase tracking-wide">
+            TOP DEAL
+          </span>
+        )}
         {p.discount_pct > 0 && (
           <span className="absolute top-2 left-2 bg-red-500 text-white text-[10px] font-black px-2 py-0.5 rounded-full shadow">
             -{p.discount_pct}%
@@ -267,6 +272,24 @@ export default function ProduseCategorieClient({
                     ))}
                   </div>
                 </div>
+
+                {/* Pret max */}
+                {pretMax > 0 && (
+                  <div className="flex flex-col gap-1 min-w-[160px]">
+                    <label className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+                      Pret max: {maxPret > 0 && maxPret < pretMax ? `${maxPret} lei` : "Orice"}
+                    </label>
+                    <input
+                      type="range" min={0} max={pretMax} step={Math.ceil(pretMax / 50)}
+                      value={maxPret || pretMax}
+                      onChange={(e) => setMaxPret(Number(e.target.value) >= pretMax ? 0 : Number(e.target.value))}
+                      className="accent-orange-500 w-full h-2 cursor-pointer"
+                    />
+                    <div className="flex justify-between text-[9px] text-slate-500">
+                      <span>0 lei</span><span>{pretMax.toLocaleString()} lei</span>
+                    </div>
+                  </div>
+                )}
 
                 {/* Sort */}
                 <div className="flex flex-col gap-1 ml-auto">
