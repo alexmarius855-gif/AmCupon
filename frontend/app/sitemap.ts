@@ -83,6 +83,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     })),
 
+    // ─── Pagini brand-uri mari ───────────────────────────────────────────────
+    { url: `${BASE_URL}/altex`,                   lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
+    { url: `${BASE_URL}/emag`,                    lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
+    { url: `${BASE_URL}/elefant`,                 lastModified: new Date(), changeFrequency: "daily",   priority: 0.8  },
+    { url: `${BASE_URL}/decathlon`,               lastModified: new Date(), changeFrequency: "daily",   priority: 0.8  },
+    { url: `${BASE_URL}/libris`,                  lastModified: new Date(), changeFrequency: "daily",   priority: 0.8  },
+
     // ─── Tool pages ─────────────────────────────────────────────────────────
     { url: `${BASE_URL}/top-reduceri`,            lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
     { url: `${BASE_URL}/calculator`,              lastModified: new Date(), changeFrequency: "monthly", priority: 0.75 },

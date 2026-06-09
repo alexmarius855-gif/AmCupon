@@ -1,11 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, useRef, useCallback } from "react";
 import type { Produs } from "../ProduseClient";
 import { CAT_META } from "../categorie-meta";
+import { useWishlist } from "../../hooks/useWishlist";
 
-/* ─── Helpers (identice cu ProduseClient) ────────────────────────────────── */
 function numeAfisat(s: string) {
   return (s || "").split(".")[0].replace(/-/g, " ")
     .split(" ").map((w) => w[0]?.toUpperCase() + w.slice(1)).join(" ");
@@ -13,8 +13,64 @@ function numeAfisat(s: string) {
 
 type Sort = "discount" | "pret_asc" | "pret_desc" | "nou";
 
-/* ─── Product Card ─────────────────────────────────────────────────────────── */
-function ProdusCard({ p }: { p: Produs }) {
+const CAT_FAQ: Record<string, { q: string; a: string }[]> = {
+  fashion: [
+    { q: "Unde gasesc reduceri la haine online in Romania?", a: "Pe pagina Fashion de pe AmCupon.ro gasesti produse de la FashionDays, Answear, Outfitblack si alte magazine cu pana la 70% reducere, actualizate zilnic. Foloseste filtrul 'Discount maxim' pentru cele mai bune oferte." },
+    { q: "Cum economisesc bani la cumparaturi de haine?", a: "Sorteaza produsele dupa 'Discount maxim', aplica filtrul >=25% si salveaza produsele dorite la favorite (iconita inima). Cand pretul scade, vei vedea notificarea in pagina Wishlist." },
+    { q: "Ce marci de haine gasesc la reducere?", a: "Gasesti marci internationale ca Answear, FashionDays, ZARA, H&M dar si branduri romanesti. Filtrul 'Brand' iti permite sa cauti exact marca dorita." },
+  ],
+  electronice: [
+    { q: "Unde gasesc laptopuri si telefoane la cel mai mic pret?", a: "Categoria Electronice de pe AmCupon.ro agrega oferte de la Altex, PCGarage, eMAG si alte magazine IT. Sorteaza dupa 'Pret crescator' sau 'Discount maxim' pentru cele mai bune dealuri." },
+    { q: "Cum stiu ca pretul afisat e corect?", a: "Preturile sunt sincronizate direct din feed-urile oficiale ale magazinelor partenere si actualizate zilnic. Apasa 'Cumpara acum' pentru a vedea pretul final pe site-ul magazinului." },
+    { q: "Pot filtra electronicele dupa brand?", a: "Da, filtrul 'Brand' iti permite sa selectezi exact producatorul dorit: Samsung, Apple, Lenovo, ASUS si altii. Combina cu filtrul de discount pentru ofertele optime." },
+  ],
+  beauty: [
+    { q: "Unde gasesc parfumuri si cosmetice la reducere?", a: "In categoria Beauty gasesti produse de la Notino, Douglas, Sephora si alte magazine de cosmetice cu reduceri de pana la 50%. Actualizam ofertele zilnic." },
+    { q: "Cum aleg cel mai bun parfum la pret mic?", a: "Foloseste cautarea dupa brand (ex: Chanel, Dior, Versace), sorteaza dupa discount si salveaza preferatele in wishlist pentru a urmari evolutia pretului." },
+  ],
+  sport: [
+    { q: "Unde gasesc echipamente sportive la reducere?", a: "Categoria Sport & Outdoor agrega oferte de la Decathlon, Hervis, Sportisimo si alte magazine. Filtreaza dupa brand sau tip de produs pentru a gasi exact ce cauti." },
+    { q: "Cum economisesc la cumparaturi de echipament fitness?", a: "Sorteaza produsele dupa 'Discount maxim' sau aplica filtrul >=25%. Multe magazine de sport au perioade cu reduceri mari la sfarsit de sezon." },
+  ],
+  casa: [
+    { q: "Unde gasesc mobila si decoratiuni la reducere?", a: "Categoria Casa & Gradina include oferte de la IKEA, Dedeman, Mobexpert, vidaXL si alte magazine. Filtreaza dupa pret maxim cu sliderul pentru a gasi produse in bugetul tau." },
+    { q: "Ce produse pentru casa gasesc la cel mai mic pret?", a: "De la mobila si decoratiuni pana la electrocasnice si unelte, gasesti mii de produse. Sorteaza dupa 'Pret crescator' pentru a incepe de la cele mai accesibile optiuni." },
+  ],
+  copii: [
+    { q: "Unde gasesc jucarii la reducere in Romania?", a: "Categoria Copii & Jucarii agrega oferte de la Noriel, Bebetei, Smyths si alte magazine pentru copii. Reduceri de pana la 50% la jucarii, haine bebelusi si accesorii." },
+    { q: "Cum aleg jucarii sigure la pret bun?", a: "Cauta branduri cunoscute (LEGO, Hasbro, Mattel) folosind filtrul de Brand si sorteaza dupa discount. Produsele listate sunt de la magazine certificate." },
+  ],
+  farmacie: [
+    { q: "Pot cumpara medicamente si suplimente mai ieftin online?", a: "Da, in categoria Farmacie gasesti suplimente, vitamine si produse naturiste de la Dr. Max, Farmacia Tei, Catena si alte farmacii online cu reduceri verificate zilnic." },
+    { q: "Cum gasesc cel mai ieftin supliment alimentar?", a: "Foloseste cautarea cu numele produsului, compara preturile intre magazine cu filtrul 'Magazin' si sorteaza dupa 'Pret crescator' pentru cel mai bun pret." },
+  ],
+  carti: [
+    { q: "Unde gasesc carti ieftine online in Romania?", a: "Categoria Carti agrega oferte de la Elefant, Libris, Carturesti si alte librarii online. Gasesti carti cu reduceri de pana la 70% la mii de titluri." },
+    { q: "Cum gasesc rapid o carte anume la pret mic?", a: "Foloseste bara de cautare pentru a cauta dupa titlu sau autor, apoi sorteaza dupa 'Pret crescator'. Salveaza cartea in wishlist si vei fi notificat cand pretul scade." },
+  ],
+  auto: [
+    { q: "Unde gasesc piese auto si accesorii la reducere?", a: "Categoria Auto & Moto include oferte de la Navstore, AutoDoc si alte magazine auto online din Romania. Cauta dupa marca sau tipul piesei cu filtrul de cautare." },
+    { q: "Pot gasi anvelope la pret mic?", a: "Da, sorteaza dupa 'Discount maxim' sau 'Pret crescator' pentru a gasi anvelopele la cel mai bun pret. Filtrul de brand te ajuta sa selectezi producatorul preferat." },
+  ],
+  animale: [
+    { q: "Unde gasesc hrana pentru animale de companie mai ieftina?", a: "Categoria Animale agrega oferte de la Petmart, Petmax, Animax si alte magazine specializate. Gasesti hrana, accesorii si produse de ingrijire la reduceri frecvente." },
+    { q: "Cum economisesc la hrana pentru caine sau pisica?", a: "Cauta dupa brand (Royal Canin, Hill's, Purina) cu filtrul dedicat, sorteaza dupa discount si salveaza produsele preferate in wishlist." },
+  ],
+  alimente: [
+    { q: "Pot cumpara alimente mai ieftin online?", a: "Da, categoria Alimente include oferte de la Carrefour, Kaufland Online, Bringo si alte supermarketuri online. Gasesti promotii la alimente, bauturi si produse bio." },
+    { q: "Ce produse alimentare au reduceri frecvente?", a: "Cafeaua, ceaiul, produsele bio si suplimentele nutritive au frecvent reduceri de 20-40%. Sorteaza dupa discount pentru a vedea cele mai bune oferte ale momentului." },
+  ],
+};
+
+function ProdusCard({
+  p,
+  isSaved,
+  onToggle,
+}: {
+  p: Produs;
+  isSaved: boolean;
+  onToggle: (p: Produs) => void;
+}) {
   const [imgOk, setImgOk] = useState(true);
   const hasImg = p.image && imgOk;
   const merchant = numeAfisat(p.merchant_slug || p.merchant);
@@ -24,7 +80,7 @@ function ProdusCard({ p }: { p: Produs }) {
       href={p.url}
       target="_blank"
       rel="sponsored noopener noreferrer"
-      className="group bg-slate-900 border border-slate-700 hover:border-orange-500/50 rounded-2xl overflow-hidden transition-all hover:shadow-lg hover:-translate-y-0.5 duration-200 flex flex-col relative"
+      className="group bg-slate-900 border border-slate-700 hover:border-orange-500/70 rounded-2xl overflow-hidden transition-all hover:shadow-[0_0_24px_rgba(249,115,22,0.22)] hover:-translate-y-1 duration-200 flex flex-col relative"
     >
       {/* Image */}
       <div className="relative bg-slate-800 overflow-hidden" style={{ aspectRatio: "1" }}>
@@ -43,17 +99,36 @@ function ProdusCard({ p }: { p: Produs }) {
             <span className="text-[10px] font-bold text-slate-400 text-center px-2 leading-tight">{merchant}</span>
           </div>
         )}
-        {p.discount_pct >= 30 && (
-          <span className="absolute top-2 right-2 bg-gradient-to-r from-orange-500 to-red-500 text-white text-[9px] font-black px-1.5 py-0.5 rounded-full shadow uppercase tracking-wide">
-            TOP DEAL
-          </span>
-        )}
+
+        {/* Discount badge — stanga sus */}
         {p.discount_pct > 0 && (
           <span className="absolute top-2 left-2 bg-red-500 text-white text-[10px] font-black px-2 py-0.5 rounded-full shadow">
             -{p.discount_pct}%
           </span>
         )}
+
+        {/* TOP DEAL badge — dreapta sus */}
+        {p.discount_pct >= 30 && (
+          <span className="absolute top-2 right-2 bg-gradient-to-r from-orange-500 to-red-500 text-white text-[9px] font-black px-1.5 py-0.5 rounded-full shadow uppercase tracking-wide">
+            TOP DEAL
+          </span>
+        )}
+
+        {/* Wishlist button — dreapta jos */}
+        <button
+          onClick={(e) => { e.preventDefault(); e.stopPropagation(); onToggle(p); }}
+          className={`absolute bottom-2 right-2 w-7 h-7 rounded-full flex items-center justify-center text-sm transition-all duration-150 shadow-lg ${
+            isSaved
+              ? "bg-red-500 text-white scale-110"
+              : "bg-slate-900/80 text-slate-400 opacity-0 group-hover:opacity-100 hover:text-red-400"
+          }`}
+          title={isSaved ? "Salvat in wishlist — click sa stergi" : "Salveaza in wishlist"}
+          aria-label={isSaved ? "Sterge din wishlist" : "Adauga in wishlist"}
+        >
+          {isSaved ? "♥" : "♡"}
+        </button>
       </div>
+
       {/* Info */}
       <div className="p-3 flex flex-col flex-1">
         <p className="text-[10px] text-slate-400 mb-0.5 truncate">{p.brand || merchant}</p>
@@ -79,6 +154,21 @@ function ProdusCard({ p }: { p: Produs }) {
   );
 }
 
+/* ─── Skeleton ────────────────────────────────────────────────────────────── */
+function SkeletonCard() {
+  return (
+    <div className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden animate-pulse">
+      <div className="aspect-square bg-slate-800" />
+      <div className="p-3 space-y-2">
+        <div className="h-2 bg-slate-800 rounded w-1/2" />
+        <div className="h-3 bg-slate-800 rounded w-full" />
+        <div className="h-3 bg-slate-800 rounded w-3/4" />
+        <div className="h-4 bg-slate-700 rounded w-1/3 mt-2" />
+      </div>
+    </div>
+  );
+}
+
 /* ─── Main Component ─────────────────────────────────────────────────────── */
 export default function ProduseCategorieClient({
   products,
@@ -96,28 +186,40 @@ export default function ProduseCategorieClient({
   const [search,      setSearch]      = useState("");
   const [minDiscount, setMinDiscount] = useState(0);
   const [maxPret,     setMaxPret]     = useState(0);
-  const [sort,        setSort]        = useState<Sort>("nou");
+  const [sort,        setSort]        = useState<Sort>("discount");
   const [limit,       setLimit]       = useState(48);
+  const [faqOpen,     setFaqOpen]     = useState<number | null>(null);
+  const loadMoreRef                   = useRef<HTMLDivElement>(null);
 
-  // Pretul maxim disponibil in categorie
+  const { isSaved, toggle } = useWishlist();
+
+  const handleToggle = useCallback((p: Produs) => {
+    toggle({
+      id:       p.url,
+      title:    p.title,
+      url:      p.url,
+      image:    p.image,
+      price:    p.price,
+      merchant: numeAfisat(p.merchant_slug || p.merchant),
+    });
+  }, [toggle]);
+
   const pretMax = useMemo(() => {
     const prices = products.map((p) => p.price).filter((v) => v > 0);
     return prices.length ? Math.ceil(Math.max(...prices)) : 9999;
   }, [products]);
 
-  // Magazine distincte in categorie
   const magazineList = useMemo(() => {
     const s = new Set(products.map((p) => p.merchant_slug || p.merchant).filter(Boolean));
     return [...s].sort();
   }, [products]);
 
-  // Branduri distincte
   const brandList = useMemo(() => {
     const s = new Set(products.map((p) => p.brand).filter(Boolean));
     return [...s].sort().slice(0, 40);
   }, [products]);
 
-  const [brand, setBrand] = useState("");
+  const [brand,   setBrand]   = useState("");
   const [magazin, setMagazin] = useState("");
 
   const filtrate = useMemo(() => {
@@ -149,14 +251,27 @@ export default function ProduseCategorieClient({
     setSearch(""); setBrand(""); setMagazin(""); setMinDiscount(0); setMaxPret(0);
   };
 
-  // Stats
+  // Infinite scroll — incarca mai multe cand ajungi la sentinel
+  useEffect(() => {
+    if (!loadMoreRef.current) return;
+    const obs = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && limit < filtrate.length) {
+          setLimit((l) => l + 48);
+        }
+      },
+      { rootMargin: "300px" }
+    );
+    obs.observe(loadMoreRef.current);
+    return () => obs.disconnect();
+  }, [limit, filtrate.length]);
+
   const cuDiscount = products.filter((p) => p.discount_pct > 0).length;
   const bestDisc   = products.reduce((mx, p) => Math.max(mx, p.discount_pct), 0);
-
-  // Alte categorii pentru cross-promo
   const alteCategorii = Object.entries(CAT_META)
     .filter(([slug]) => slug !== categorie && slug !== "altele")
     .slice(0, 6);
+  const faqItems = CAT_FAQ[categorie] || [];
 
   return (
     <div className="min-h-screen bg-slate-950">
@@ -167,7 +282,6 @@ export default function ProduseCategorieClient({
           <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(249,115,22,0.12) 0%, transparent 65%)" }} />
         </div>
         <div className="relative max-w-5xl mx-auto px-4 pt-12 pb-14 text-center">
-          {/* Breadcrumb */}
           <nav className="flex justify-center gap-2 text-xs text-slate-500 mb-6">
             <Link href="/" className="hover:text-slate-300 transition-colors">AmCupon.ro</Link>
             <span>/</span>
@@ -184,19 +298,26 @@ export default function ProduseCategorieClient({
           </h1>
           <p className="text-slate-400 text-base mb-8 max-w-xl mx-auto">{catMeta.desc}</p>
 
-          {/* Stats row */}
           <div className="flex flex-wrap justify-center gap-8 text-sm">
             {[
               { v: products.length.toLocaleString(), l: "Produse" },
-              { v: cuDiscount.toLocaleString(), l: "Cu discount" },
+              { v: cuDiscount.toLocaleString(),      l: "Cu discount" },
               { v: bestDisc > 0 ? `-${bestDisc}%` : "—", l: "Reducere max" },
-              { v: magazineList.length.toString(), l: "Magazine" },
+              { v: magazineList.length.toString(),   l: "Magazine" },
             ].map((s) => (
               <div key={s.l} className="text-center">
                 <div className="font-black text-white text-2xl">{s.v}</div>
                 <div className="text-slate-500 text-xs mt-0.5">{s.l}</div>
               </div>
             ))}
+          </div>
+
+          {/* Link wishlist daca are produse salvate */}
+          <div className="mt-6 flex justify-center">
+            <Link href="/wishlist"
+              className="inline-flex items-center gap-1.5 text-xs text-slate-500 hover:text-red-400 transition-colors border border-slate-700 px-3 py-1.5 rounded-full hover:border-red-400/50">
+              ♥ Wishlist — produsele tale salvate
+            </Link>
           </div>
         </div>
       </section>
@@ -267,7 +388,7 @@ export default function ProduseCategorieClient({
                     {[0, 10, 25, 50, 70].map((v) => (
                       <button key={v} onClick={() => setMinDiscount(v)}
                         className={`px-2.5 py-2 rounded-xl text-xs font-semibold transition-colors ${minDiscount === v ? "bg-orange-500 text-white" : "border border-slate-700 bg-slate-800 text-slate-300 hover:border-orange-500"}`}>
-                        {v === 0 ? "Toate" : `≥${v}%`}
+                        {v === 0 ? "Toate" : `>=${v}%`}
                       </button>
                     ))}
                   </div>
@@ -296,8 +417,8 @@ export default function ProduseCategorieClient({
                   <label className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Sortare</label>
                   <select value={sort} onChange={(e) => setSort(e.target.value as Sort)}
                     className="border border-slate-700 bg-slate-800 text-slate-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500">
-                    <option value="nou">Cele mai noi</option>
                     <option value="discount">Discount maxim</option>
+                    <option value="nou">Cele mai noi</option>
                     <option value="pret_asc">Pret crescator</option>
                     <option value="pret_desc">Pret descrescator</option>
                   </select>
@@ -319,6 +440,9 @@ export default function ProduseCategorieClient({
                 {hasFiltre && <span className="text-slate-500"> (din {products.length.toLocaleString()})</span>}
                 {updated && <span className="text-slate-600"> · actualizat {new Date(updated).toLocaleDateString("ro-RO")}</span>}
               </p>
+              <Link href="/wishlist" className="text-xs text-slate-500 hover:text-red-400 transition-colors flex items-center gap-1">
+                ♥ Wishlist
+              </Link>
             </div>
 
             {/* Grid produse */}
@@ -334,24 +458,57 @@ export default function ProduseCategorieClient({
               <>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
                   {filtrate.slice(0, limit).map((p, i) => (
-                    <ProdusCard key={`${p.merchant}-${i}`} p={p} />
+                    <ProdusCard
+                      key={`${p.merchant}-${i}`}
+                      p={p}
+                      isSaved={isSaved(p.url)}
+                      onToggle={handleToggle}
+                    />
+                  ))}
+                  {/* Skeleton-uri cand se incarca mai multe */}
+                  {limit < filtrate.length && Array.from({ length: 6 }).map((_, i) => (
+                    <SkeletonCard key={`sk-${i}`} />
                   ))}
                 </div>
-                {filtrate.length > limit && (
-                  <div className="text-center mt-8">
-                    <button
-                      onClick={() => setLimit((l) => l + 48)}
-                      className="bg-slate-800 border border-slate-700 hover:border-orange-500 text-slate-300 hover:text-orange-400 font-bold px-8 py-3 rounded-2xl text-sm transition-all hover:shadow-md"
-                    >
-                      Incarca mai multe ({(filtrate.length - limit).toLocaleString()} ramase)
-                    </button>
-                  </div>
+                {/* Sentinel pentru infinite scroll */}
+                <div ref={loadMoreRef} className="h-4 mt-4" />
+                {limit >= filtrate.length && filtrate.length > 48 && (
+                  <p className="text-center text-xs text-slate-600 mt-4">
+                    Toate cele {filtrate.length.toLocaleString()} produse au fost incarcate.
+                  </p>
                 )}
               </>
             )}
           </>
         )}
       </section>
+
+      {/* ─── FAQ ─────────────────────────────────────────────────────────────── */}
+      {faqItems.length > 0 && (
+        <section className="max-w-3xl mx-auto px-4 py-12">
+          <h2 className="text-xl font-black text-white mb-6 text-center">
+            Intrebari frecvente despre {catMeta.label}
+          </h2>
+          <div className="space-y-3">
+            {faqItems.map((item, i) => (
+              <div key={i} className="bg-slate-900 border border-slate-700 rounded-2xl overflow-hidden">
+                <button
+                  onClick={() => setFaqOpen(faqOpen === i ? null : i)}
+                  className="w-full text-left px-5 py-4 flex items-center justify-between gap-3 hover:bg-slate-800 transition-colors"
+                >
+                  <span className="font-semibold text-slate-200 text-sm">{item.q}</span>
+                  <span className={`text-orange-500 text-lg transition-transform ${faqOpen === i ? "rotate-45" : ""}`}>+</span>
+                </button>
+                {faqOpen === i && (
+                  <div className="px-5 pb-5 text-sm text-slate-400 leading-relaxed border-t border-slate-800 pt-3">
+                    {item.a}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* ─── ALTE CATEGORII ──────────────────────────────────────────────────── */}
       <section className="bg-slate-900 border-t border-slate-800 py-10 px-4">
