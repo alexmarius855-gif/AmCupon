@@ -1,7 +1,33 @@
 {
-  "updated": "2026-06-11T14:29:04Z",
+  "updated": "2026-06-11T18:20:49Z",
   "count": 20,
   "banners": [
+    {
+      "id": 270546,
+      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270505/original/270505.jpg",
+      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=242748762&aff_code=541547473&campaign_unique=5baacfa1f",
+      "landing_raw": "https://www.f64.ro/teasing-black-friday",
+      "width": 300,
+      "height": 600,
+      "merchant": "f64.ro ",
+      "merchant_slug": "f64-ro",
+      "name": "BF VARA",
+      "category": "BF VARA",
+      "b_type": "image"
+    },
+    {
+      "id": 270545,
+      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270504/original/270504.jpg",
+      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=51cc62c5a&aff_code=541547473&campaign_unique=5baacfa1f",
+      "landing_raw": "https://www.f64.ro/teasing-black-friday",
+      "width": 300,
+      "height": 250,
+      "merchant": "f64.ro ",
+      "merchant_slug": "f64-ro",
+      "name": "BF VARA",
+      "category": "BF VARA",
+      "b_type": "image"
+    },
     {
       "id": 270543,
       "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270502/original/270502.jpg",
@@ -230,32 +256,6 @@
       "landing_raw": "https://www.infinitelove.ro",
       "width": 1080,
       "height": 1080,
-      "merchant": "infinitelove.ro",
-      "merchant_slug": "infinitelove-ro",
-      "name": "beauty",
-      "category": "beauty",
-      "b_type": "image"
-    },
-    {
-      "id": 270520,
-      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270479/original/270479.jpeg",
-      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=aa0845a13&aff_code=541547473&campaign_unique=3fd6221b1",
-      "landing_raw": "https://www.infinitelove.ro",
-      "width": 1024,
-      "height": 1024,
-      "merchant": "infinitelove.ro",
-      "merchant_slug": "infinitelove-ro",
-      "name": "beauty",
-      "category": "beauty",
-      "b_type": "image"
-    },
-    {
-      "id": 270519,
-      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270478/original/270478.jpeg",
-      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=fbc671949&aff_code=541547473&campaign_unique=3fd6221b1",
-      "landing_raw": "https://www.infinitelove.ro",
-      "width": 768,
-      "height": 768,
       "merchant": "infinitelove.ro",
       "merchant_slug": "infinitelove-ro",
       "name": "beauty",
