@@ -94,6 +94,14 @@ const BRAND_PAGES = [
   { href: "/answear",     name: "Answear",      emoji: "👗" },
   { href: "/notino",      name: "Notino",       emoji: "🌸" },
   { href: "/flanco",      name: "Flanco",       emoji: "📺" },
+  { href: "/bookzone",    name: "BookZone",     emoji: "📖" },
+  { href: "/vegis",       name: "Vegis",        emoji: "🌿" },
+  { href: "/petmax",      name: "Petmax",       emoji: "🐕" },
+  { href: "/sportdepot",  name: "Sport Depot",  emoji: "⚽" },
+  { href: "/automobilus", name: "Automobilus",  emoji: "🚗" },
+  { href: "/litera",      name: "Litera",       emoji: "📚" },
+  { href: "/pcmadd",      name: "PC Madd",      emoji: "💻" },
+  { href: "/otter",       name: "Otter",        emoji: "🧢" },
 ];
 
 const FAQ_ITEMS: { q: string; a: string }[] = [

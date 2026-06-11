@@ -100,6 +100,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/answear`,                 lastModified: new Date(), changeFrequency: "daily",   priority: 0.8  },
     { url: `${BASE_URL}/notino`,                  lastModified: new Date(), changeFrequency: "daily",   priority: 0.8  },
     { url: `${BASE_URL}/flanco`,                  lastModified: new Date(), changeFrequency: "daily",   priority: 0.8  },
+    { url: `${BASE_URL}/bookzone`,                lastModified: new Date(), changeFrequency: "daily",   priority: 0.8  },
+    { url: `${BASE_URL}/vegis`,                   lastModified: new Date(), changeFrequency: "daily",   priority: 0.75 },
+    { url: `${BASE_URL}/petmax`,                  lastModified: new Date(), changeFrequency: "daily",   priority: 0.75 },
+    { url: `${BASE_URL}/sportdepot`,              lastModified: new Date(), changeFrequency: "daily",   priority: 0.8  },
+    { url: `${BASE_URL}/automobilus`,             lastModified: new Date(), changeFrequency: "daily",   priority: 0.75 },
+    { url: `${BASE_URL}/litera`,                  lastModified: new Date(), changeFrequency: "daily",   priority: 0.75 },
+    { url: `${BASE_URL}/pcmadd`,                  lastModified: new Date(), changeFrequency: "daily",   priority: 0.75 },
+    { url: `${BASE_URL}/otter`,                   lastModified: new Date(), changeFrequency: "daily",   priority: 0.75 },
+    { url: `${BASE_URL}/recomandari`,             lastModified: new Date(), changeFrequency: "monthly", priority: 0.7  },
 
     // ─── Tool pages ─────────────────────────────────────────────────────────
     { url: `${BASE_URL}/top-reduceri`,            lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },

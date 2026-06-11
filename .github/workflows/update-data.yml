@@ -171,6 +171,7 @@ jobs:
           TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
         run: |
           python telegram_daily.py
+          python post_telegram.py
 
       # ── 11. Generator continut social media pe nise ────────────────────────
       - name: Genereaza continut social media pe nise
