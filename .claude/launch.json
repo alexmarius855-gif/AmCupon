@@ -2,10 +2,10 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "frontend",
-      "runtimeExecutable": "npm.cmd",
+      "name": "amcupon-dev",
+      "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev"],
-      "cwd": "C:\\Users\\alexm\\Projects\\afiliere-site\\frontend",
+      "cwd": "frontend",
       "port": 3000
     }
   ]
