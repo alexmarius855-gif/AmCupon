@@ -111,6 +111,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/recomandari`,             lastModified: new Date(), changeFrequency: "monthly", priority: 0.7  },
     { url: `${BASE_URL}/vpn`,                     lastModified: new Date(), changeFrequency: "monthly", priority: 0.8  },
     { url: `${BASE_URL}/hosting`,                 lastModified: new Date(), changeFrequency: "monthly", priority: 0.8  },
+    { url: `${BASE_URL}/servicii`,                lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
+    { url: `${BASE_URL}/albire-dinti`,            lastModified: new Date(), changeFrequency: "weekly",  priority: 0.75 },
+    { url: `${BASE_URL}/cursuri-online`,          lastModified: new Date(), changeFrequency: "weekly",  priority: 0.8  },
+    { url: `${BASE_URL}/software-business`,       lastModified: new Date(), changeFrequency: "weekly",  priority: 0.8  },
 
     // ─── Tool pages ─────────────────────────────────────────────────────────
     { url: `${BASE_URL}/top-reduceri`,            lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
