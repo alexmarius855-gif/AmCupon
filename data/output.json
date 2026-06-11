@@ -304,6 +304,102 @@
     "scor_final": 103
   },
   {
+    "magazin": "temu.com",
+    "url": "https://www.temu.com",
+    "url_afiliat": "https://www.temu.com",
+    "logo_url": "",
+    "categorie": "Diverse",
+    "categorie_slug": "online-mall",
+    "comision": "Variabil",
+    "rank": null,
+    "scor_afiliere": 80,
+    "scor_final": 80,
+    "prioritate": "high",
+    "canal_recomandat": "Coupon, Content, Social",
+    "sales_number": 0,
+    "trend": 10,
+    "are_promotie": true,
+    "cod_cupon": true,
+    "zile_ramase": 30,
+    "promotii": [
+      {
+        "nume": "Temu - Reduceri pana la 90%",
+        "descriere": "Milioane de produse la preturi incredibil de mici. Transport gratuit la comenzi eligibile in Romania.",
+        "cod_cupon": "",
+        "landing_page": "https://www.temu.com",
+        "zile_ramase": 30
+      }
+    ],
+    "folosit_de": 0,
+    "procent_succes": 75,
+    "exclusiv": false,
+    "platforma": "direct"
+  },
+  {
+    "magazin": "shein.com",
+    "url": "https://www.shein.com",
+    "url_afiliat": "https://www.shein.com",
+    "logo_url": "",
+    "categorie": "Fashion",
+    "categorie_slug": "fashion",
+    "comision": "Variabil",
+    "rank": null,
+    "scor_afiliere": 75,
+    "scor_final": 75,
+    "prioritate": "high",
+    "canal_recomandat": "Coupon, Social, Content",
+    "sales_number": 0,
+    "trend": 8,
+    "are_promotie": true,
+    "cod_cupon": true,
+    "zile_ramase": 30,
+    "promotii": [
+      {
+        "nume": "SHEIN - Fashion la preturi mici",
+        "descriere": "Mii de tinute noi zilnic cu reduceri de 30-80%. Livrare in Romania disponibila.",
+        "cod_cupon": "",
+        "landing_page": "https://www.shein.com",
+        "zile_ramase": 30
+      }
+    ],
+    "folosit_de": 0,
+    "procent_succes": 75,
+    "exclusiv": false,
+    "platforma": "direct"
+  },
+  {
+    "magazin": "trendyol.com",
+    "url": "https://www.trendyol.com",
+    "url_afiliat": "https://www.trendyol.com",
+    "logo_url": "",
+    "categorie": "Fashion",
+    "categorie_slug": "fashion",
+    "comision": "Variabil",
+    "rank": null,
+    "scor_afiliere": 70,
+    "scor_final": 70,
+    "prioritate": "high",
+    "canal_recomandat": "Content, Coupon",
+    "sales_number": 0,
+    "trend": 7,
+    "are_promotie": true,
+    "cod_cupon": true,
+    "zile_ramase": 30,
+    "promotii": [
+      {
+        "nume": "Trendyol - Cel mai mare marketplace turcesc",
+        "descriere": "Fashion, beauty, electronice si lifestyle la preturi competitive. Reduceri de sezon disponibile.",
+        "cod_cupon": "",
+        "landing_page": "https://www.trendyol.com",
+        "zile_ramase": 30
+      }
+    ],
+    "folosit_de": 0,
+    "procent_succes": 70,
+    "exclusiv": false,
+    "platforma": "direct"
+  },
+  {
     "magazin": "pcmadd.com",
     "url": "https://www.pcmadd.com",
     "url_afiliat": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/NA6?sub_id=pcmadd.com",
@@ -369,6 +465,70 @@
     "platforma": "profitshare"
   },
   {
+    "magazin": "gsmnet.ro",
+    "url": "https://www.gsmnet.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gsmnet.ro",
+    "logo_url": "",
+    "categorie": "Electronice",
+    "categorie_slug": "electronics-itc",
+    "comision": "Variabil",
+    "rank": null,
+    "scor_afiliere": 60,
+    "scor_final": 60,
+    "prioritate": "standard",
+    "canal_recomandat": "Content, Coupon",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 7,
+    "promotii": [
+      {
+        "nume": "GSMNet - Reduceri de vara la accesorii telefoane",
+        "descriere": "19 ani de experienta. Reduceri de pana la 80% la accesorii si piese telefoane mobile.",
+        "cod_cupon": "",
+        "landing_page": "https://www.gsmnet.ro",
+        "zile_ramase": 7
+      }
+    ],
+    "folosit_de": 0,
+    "procent_succes": 80,
+    "exclusiv": false,
+    "platforma": "2performant"
+  },
+  {
+    "magazin": "jollymag.ro",
+    "url": "https://www.jollymag.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.jollymag.ro",
+    "logo_url": "",
+    "categorie": "Carti",
+    "categorie_slug": "books",
+    "comision": "Variabil",
+    "rank": null,
+    "scor_afiliere": 60,
+    "scor_final": 60,
+    "prioritate": "standard",
+    "canal_recomandat": "Content, Coupon",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": true,
+    "zile_ramase": 18,
+    "promotii": [
+      {
+        "nume": "JollyMag - 10% reducere cu codul JOLLY10",
+        "descriere": "Reviste, carti si publicatii la reducere. Foloseste codul JOLLY10 pentru 10% discount la prima comanda.",
+        "cod_cupon": "JOLLY10",
+        "landing_page": "https://www.jollymag.ro",
+        "zile_ramase": 18
+      }
+    ],
+    "folosit_de": 0,
+    "procent_succes": 80,
+    "exclusiv": false,
+    "platforma": "2performant"
+  },
+  {
     "magazin": "apiland.ro",
     "url": "https://apiland.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fapiland.ro",
@@ -398,6 +558,134 @@
     "exclusiv": false,
     "categorie_slug": "health-personal-care",
     "scor_final": 55
+  },
+  {
+    "magazin": "nobilacasa.ro",
+    "url": "https://www.nobilacasa.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.nobilacasa.ro",
+    "logo_url": "",
+    "categorie": "Casa & Gradina",
+    "categorie_slug": "home-garden",
+    "comision": "Variabil",
+    "rank": null,
+    "scor_afiliere": 55,
+    "scor_final": 55,
+    "prioritate": "standard",
+    "canal_recomandat": "Content, Coupon",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": true,
+    "zile_ramase": 14,
+    "promotii": [
+      {
+        "nume": "NobilaCasa - 15% reducere cu codul PROMO15",
+        "descriere": "Foloseste codul PROMO15 pentru 15% reducere la produsele NobilaCasa. Produse pentru casa de calitate.",
+        "cod_cupon": "PROMO15",
+        "landing_page": "https://www.nobilacasa.ro",
+        "zile_ramase": 14
+      }
+    ],
+    "folosit_de": 0,
+    "procent_succes": 80,
+    "exclusiv": false,
+    "platforma": "2performant"
+  },
+  {
+    "magazin": "herbagetica.ro",
+    "url": "https://www.herbagetica.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.herbagetica.ro",
+    "logo_url": "",
+    "categorie": "Sanatate",
+    "categorie_slug": "health-personal-care",
+    "comision": "Variabil",
+    "rank": null,
+    "scor_afiliere": 55,
+    "scor_final": 55,
+    "prioritate": "standard",
+    "canal_recomandat": "Content, Coupon",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 10,
+    "promotii": [
+      {
+        "nume": "Herbagetica - 35% reducere la suplimente naturale",
+        "descriere": "Suplimente alimentare naturale de calitate. Reducere de 35% la produsele selectate.",
+        "cod_cupon": "",
+        "landing_page": "https://www.herbagetica.ro",
+        "zile_ramase": 10
+      }
+    ],
+    "folosit_de": 0,
+    "procent_succes": 80,
+    "exclusiv": false,
+    "platforma": "2performant"
+  },
+  {
+    "magazin": "medimfarm.ro",
+    "url": "https://www.medimfarm.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.medimfarm.ro",
+    "logo_url": "",
+    "categorie": "Farmacie",
+    "categorie_slug": "pharma",
+    "comision": "Variabil",
+    "rank": null,
+    "scor_afiliere": 55,
+    "scor_final": 55,
+    "prioritate": "standard",
+    "canal_recomandat": "Content, Coupon",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": true,
+    "zile_ramase": 14,
+    "promotii": [
+      {
+        "nume": "MedimFarm - 18% reducere vara cu codul SUMMER18",
+        "descriere": "Farmacie online cu livrare rapida. Cod SUMMER18 pentru 18% reducere la produsele selectate.",
+        "cod_cupon": "SUMMER18",
+        "landing_page": "https://www.medimfarm.ro",
+        "zile_ramase": 14
+      }
+    ],
+    "folosit_de": 0,
+    "procent_succes": 80,
+    "exclusiv": false,
+    "platforma": "2performant"
+  },
+  {
+    "magazin": "fera.ro",
+    "url": "https://www.fera.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.fera.ro",
+    "logo_url": "",
+    "categorie": "Animale",
+    "categorie_slug": "pet-supplies",
+    "comision": "Variabil",
+    "rank": null,
+    "scor_afiliere": 55,
+    "scor_final": 55,
+    "prioritate": "standard",
+    "canal_recomandat": "Content, Coupon",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 20,
+    "promotii": [
+      {
+        "nume": "Fera.ro - 5% reducere la prima comanda hrana Hills",
+        "descriere": "Hrana premium Hills si alte marci de top pentru animale. 5% reducere la prima comanda.",
+        "cod_cupon": "",
+        "landing_page": "https://www.fera.ro",
+        "zile_ramase": 20
+      }
+    ],
+    "folosit_de": 0,
+    "procent_succes": 80,
+    "exclusiv": false,
+    "platforma": "2performant"
   },
   {
     "magazin": "chroot.ro",

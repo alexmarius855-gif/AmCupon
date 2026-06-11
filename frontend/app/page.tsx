@@ -75,6 +75,9 @@ const SECTIUNI_SPECIALE = [
   { href: "/servicii",     emoji: "⚙️", label: "Servicii Online",  desc: "Software, hosting, cursuri, VPN",   gradient: "from-emerald-600 to-teal-700" },
   { href: "/vpn",          emoji: "🔒", label: "VPN & Securitate", desc: "NordVPN, Surfshark, ExpressVPN",    gradient: "from-blue-700 to-indigo-800" },
   { href: "/hosting",      emoji: "🌐", label: "Hosting Web",      desc: "Hostinger, SiteGround, Cloudways",  gradient: "from-violet-600 to-purple-700" },
+  { href: "/temu",         emoji: "🛍️", label: "Temu",             desc: "Milioane produse la preturi mici",  gradient: "from-orange-500 to-red-500" },
+  { href: "/shein",        emoji: "👗", label: "SHEIN",            desc: "Fashion global, mii noutati zilnic", gradient: "from-gray-700 to-gray-900" },
+  { href: "/trendyol",     emoji: "🧡", label: "Trendyol",         desc: "Marketplace turcesc in Romania",    gradient: "from-orange-400 to-amber-500" },
   { href: "/black-friday", emoji: "🖤", label: "Black Friday",     desc: "Cele mai mari reduceri",            gradient: "from-gray-900 to-black" },
   { href: "/craciun",      emoji: "🎄", label: "Craciun",          desc: "Oferte de sarbatori",               gradient: "from-red-600 to-green-700" },
   { href: "/categorii",    emoji: "📂", label: "Toate categoriile",desc: "Exploreaza tot",                    gradient: "from-orange-500 to-red-500" },
@@ -105,6 +108,9 @@ const BRAND_PAGES = [
   { href: "/litera",      name: "Litera",       emoji: "📚" },
   { href: "/pcmadd",      name: "PC Madd",      emoji: "💻" },
   { href: "/otter",       name: "Otter",        emoji: "🧢" },
+  { href: "/temu",        name: "Temu",         emoji: "🛍️" },
+  { href: "/shein",       name: "SHEIN",        emoji: "👗" },
+  { href: "/trendyol",    name: "Trendyol",     emoji: "🧡" },
 ];
 
 const FAQ_ITEMS: { q: string; a: string }[] = [
