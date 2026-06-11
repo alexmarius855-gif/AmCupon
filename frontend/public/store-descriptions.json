@@ -71,6 +71,33 @@
   ],
   "sursa": "data-template"
  },
+ "temu.com": {
+  "titlu": "Despre codurile de reducere Temu",
+  "paragrafe": [
+   "Temu este un magazin online din categoria produse variate din toate categoriile, unde găsești o gamă variată de produse la prețuri competitive.",
+   "Momentan găsești 1 ofertă activă pentru Temu, inclusiv „Temu - Reduceri pana la 90%”. Pe AmCupon.ro actualizăm aceste reduceri zilnic, ca informația să fie mereu corectă.",
+   "Ca să economisești, copiază codul Temu de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
+  ],
+  "sursa": "data-template"
+ },
+ "shein.com": {
+  "titlu": "Despre codurile de reducere Shein",
+  "paragrafe": [
+   "Shein este un magazin online din categoria modă, haine și accesorii, unde găsești o gamă variată de produse la prețuri competitive.",
+   "Chiar acum, Shein are 1 ofertă activă pe AmCupon.ro, printre care „SHEIN - Fashion la preturi mici”. Verificăm zilnic codurile de reducere ca să prinzi cel mai bun preț înainte să finalizezi comanda.",
+   "Folosirea unui cod Shein este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
+  ],
+  "sursa": "data-template"
+ },
+ "trendyol.com": {
+  "titlu": "Despre codurile de reducere Trendyol",
+  "paragrafe": [
+   "Trendyol se numără printre magazinele de modă, haine și accesorii apreciate în România pentru raportul bun dintre calitate și preț.",
+   "Momentan găsești 1 ofertă activă pentru Trendyol, inclusiv „Trendyol - Cel mai mare marketplace turcesc”. Pe AmCupon.ro actualizăm aceste reduceri zilnic, ca informația să fie mereu corectă.",
+   "Ca să economisești, copiază codul Trendyol de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
+  ],
+  "sursa": "data-template"
+ },
  "pcmadd.com": {
   "titlu": "Despre codurile de reducere Pcmadd",
   "paragrafe": [
@@ -80,12 +107,66 @@
   ],
   "sursa": "data-template"
  },
+ "gsmnet.ro": {
+  "titlu": "Despre codurile de reducere Gsmnet",
+  "paragrafe": [
+   "Pe Gsmnet descoperi electronice, IT și gadgeturi, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
+   "Momentan găsești 1 ofertă activă pentru Gsmnet, inclusiv „GSMNet - Reduceri de vara la accesorii telefoane”. Pe AmCupon.ro actualizăm aceste reduceri zilnic, ca informația să fie mereu corectă.",
+   "Ca să economisești, copiază codul Gsmnet de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
+  ],
+  "sursa": "data-template"
+ },
+ "jollymag.ro": {
+  "titlu": "Despre codurile de reducere Jollymag",
+  "paragrafe": [
+   "Jollymag se numără printre magazinele de cărți, manuale și produse de papetărie apreciate în România pentru raportul bun dintre calitate și preț.",
+   "Chiar acum, Jollymag are 1 ofertă activă pe AmCupon.ro, printre care „JollyMag - 10% reducere cu codul JOLLY10”. Verificăm zilnic codurile de reducere ca să prinzi cel mai bun preț înainte să finalizezi comanda.",
+   "Folosirea unui cod Jollymag este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
+  ],
+  "sursa": "data-template"
+ },
  "apiland.ro": {
   "titlu": "Despre codurile de reducere Apiland",
   "paragrafe": [
    "Apiland este un magazin online din categoria sănătate și îngrijire personală, unde găsești o gamă variată de produse la prețuri competitive.",
    "Momentan găsești 1 ofertă activă pentru Apiland, inclusiv „Start de vară cu tonicele apicole ApiLand”. Pe AmCupon.ro actualizăm aceste reduceri zilnic, ca informația să fie mereu corectă.",
    "Ca să economisești, copiază codul Apiland de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
+  ],
+  "sursa": "data-template"
+ },
+ "nobilacasa.ro": {
+  "titlu": "Despre codurile de reducere Nobilacasa",
+  "paragrafe": [
+   "Nobilacasa este un magazin online din categoria casă, mobilier și grădină, unde găsești o gamă variată de produse la prețuri competitive.",
+   "Chiar acum, Nobilacasa are 1 ofertă activă pe AmCupon.ro, printre care „NobilaCasa - 15% reducere cu codul PROMO15”. Verificăm zilnic codurile de reducere ca să prinzi cel mai bun preț înainte să finalizezi comanda.",
+   "Folosirea unui cod Nobilacasa este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
+  ],
+  "sursa": "data-template"
+ },
+ "herbagetica.ro": {
+  "titlu": "Despre codurile de reducere Herbagetica",
+  "paragrafe": [
+   "Herbagetica se numără printre magazinele de sănătate și îngrijire personală apreciate în România pentru raportul bun dintre calitate și preț.",
+   "Herbagetica are în acest moment 1 ofertă activă, cum este „Herbagetica - 35% reducere la suplimente naturale”. Toate sunt verificate și reîmprospătate zilnic pe AmCupon.ro.",
+   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Herbagetica, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
+  ],
+  "sursa": "data-template"
+ },
+ "medimfarm.ro": {
+  "titlu": "Despre codurile de reducere Medimfarm",
+  "paragrafe": [
+   "Pe Medimfarm descoperi farmacie, suplimente și sănătate, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
+   "Medimfarm are în acest moment 1 ofertă activă, cum este „MedimFarm - 18% reducere vara cu codul SUMMER18”. Toate sunt verificate și reîmprospătate zilnic pe AmCupon.ro.",
+   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Medimfarm, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
+  ],
+  "sursa": "data-template"
+ },
+ "fera.ro": {
+  "titlu": "Despre codurile de reducere Fera",
+  "paragrafe": [
+   "Pe Fera descoperi produse pentru animale de companie, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
+   "Momentan găsești 1 ofertă activă pentru Fera, inclusiv „Fera.ro - 5% reducere la prima comanda hrana Hills”. Pe AmCupon.ro actualizăm aceste reduceri zilnic, ca informația să fie mereu corectă.",
+   "Ca să economisești, copiază codul Fera de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
   ],
   "sursa": "data-template"
  },

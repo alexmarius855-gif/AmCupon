@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-11T20:06:43Z",
+  "updated": "2026-06-11T22:46:19Z",
   "count": 20,
   "banners": [
     {
@@ -26,6 +26,19 @@
       "merchant_slug": "f64-ro",
       "name": "BF VARA",
       "category": "BF VARA",
+      "b_type": "image"
+    },
+    {
+      "id": 270544,
+      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270503/original/270503.png",
+      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=36eda6e98&aff_code=541547473&campaign_unique=59ba2d97b",
+      "landing_raw": "https://emelodii.ro",
+      "width": 696,
+      "height": 325,
+      "merchant": "emelodii.ro",
+      "merchant_slug": "emelodii-ro",
+      "name": "muzica personalizata",
+      "category": "muzica personalizata",
       "b_type": "image"
     },
     {
@@ -247,19 +260,6 @@
       "merchant_slug": "lenjeriapufoasa-ro",
       "name": "Toate Produsele",
       "category": "Toate Produsele",
-      "b_type": "image"
-    },
-    {
-      "id": 270521,
-      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270480/original/270480.jpeg",
-      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=ec95633b8&aff_code=541547473&campaign_unique=3fd6221b1",
-      "landing_raw": "https://www.infinitelove.ro",
-      "width": 1080,
-      "height": 1080,
-      "merchant": "infinitelove.ro",
-      "merchant_slug": "infinitelove-ro",
-      "name": "beauty",
-      "category": "beauty",
       "b_type": "image"
     }
   ]
