@@ -98,6 +98,11 @@ jobs:
             echo "TWOPEFORMANT_EMAIL nu e setat — skip product feeds"
           fi
 
+      # ── 6b. Imbogatire produse din promotii active ────────────────────────
+      - name: Injecteaza promo-produse cu discount in products.json
+        working-directory: scripts
+        run: python enrich_products_from_promos.py
+
       # ── 7. Bannere campanii (2Performant) ─────────────────────────────────
       - name: Fetch bannere campanii (2Performant API)
         working-directory: scripts
