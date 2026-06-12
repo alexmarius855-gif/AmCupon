@@ -118,6 +118,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/temu`,                    lastModified: new Date(), changeFrequency: "daily",   priority: 0.8  },
     { url: `${BASE_URL}/shein`,                   lastModified: new Date(), changeFrequency: "daily",   priority: 0.8  },
     { url: `${BASE_URL}/trendyol`,                lastModified: new Date(), changeFrequency: "daily",   priority: 0.8  },
+    { url: `${BASE_URL}/scule365`,                lastModified: new Date(), changeFrequency: "daily",   priority: 0.75 },
+    { url: `${BASE_URL}/kitunghii`,               lastModified: new Date(), changeFrequency: "daily",   priority: 0.75 },
+    { url: `${BASE_URL}/pfarma`,                  lastModified: new Date(), changeFrequency: "daily",   priority: 0.75 },
 
     // ─── Tool pages ─────────────────────────────────────────────────────────
     { url: `${BASE_URL}/top-reduceri`,            lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },

@@ -111,6 +111,9 @@ const BRAND_PAGES = [
   { href: "/temu",        name: "Temu",         emoji: "🛍️" },
   { href: "/shein",       name: "SHEIN",        emoji: "👗" },
   { href: "/trendyol",    name: "Trendyol",     emoji: "🧡" },
+  { href: "/scule365",    name: "Scule365",     emoji: "🔧" },
+  { href: "/kitunghii",   name: "KitUnghii",    emoji: "💅" },
+  { href: "/pfarma",      name: "pFarma",       emoji: "💊" },
 ];
 
 const FAQ_ITEMS: { q: string; a: string }[] = [
