@@ -127,7 +127,7 @@ const FAQ_ITEMS: { q: string; a: string }[] = [
   },
   {
     q: "Cat de des se actualizeaza ofertele si codurile?",
-    a: "Verificam si actualizam codurile zilnic, automat, de la peste 290 de magazine partenere din Romania. Ofertele expirate sunt eliminate, iar cele noi adaugate in fiecare zi.",
+    a: "Verificam si actualizam codurile zilnic, automat, de la peste 300 de magazine partenere din Romania. Ofertele expirate sunt eliminate, iar cele noi adaugate in fiecare zi.",
   },
   {
     q: "De ce unele coduri nu mai functioneaza?",

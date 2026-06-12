@@ -133,7 +133,7 @@ export default function ContactPage() {
                 <h3 className="font-bold text-gray-900 mb-2">Despre AmCupon.ro</h3>
                 <p className="text-sm text-gray-500 leading-relaxed">
                   AmCupon.ro este un site de coduri de reducere 100% gratuit pentru utilizatori.
-                  Lucrăm cu peste 200 magazine partenere prin platformele 2Performant și Profitshare.
+                  Lucrăm cu peste 300 magazine partenere prin platformele 2Performant și Profitshare.
                   Actualizăm codurile zilnic și verificăm fiecare promoție înainte de publicare.
                 </p>
               </div>

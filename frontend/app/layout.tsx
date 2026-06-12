@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "AmCupon.ro — Coduri de reducere verificate",
-    description: "Peste 200 magazine partenere. Coduri verificate, actualizate zilnic. 100% gratuit.",
+    description: "Peste 300 magazine partenere. Coduri verificate, actualizate zilnic. 100% gratuit.",
     url: "https://amcupon.ro",
     siteName: "AmCupon.ro",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "AmCupon.ro" }],
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "AmCupon.ro — Coduri de reducere verificate",
-    description: "Peste 200 magazine partenere. Actualizat zilnic.",
+    description: "Peste 300 magazine partenere. Actualizat zilnic.",
     images: ["/og-image.png"],
   },
   icons: {

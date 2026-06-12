@@ -244,7 +244,7 @@ export default function ServiciiPage() {
         <div className="bg-gradient-to-r from-emerald-950/30 to-slate-900 border border-emerald-800/30 rounded-2xl p-7">
           <h2 className="text-xl font-black text-white mb-2">Cunosti si alte servicii cu programe de afiliere?</h2>
           <p className="text-slate-400 text-sm mb-5">
-            AmCupon.ro monitorizeaza automat 290+ magazine si servicii din Romania. Daca gasesti un serviciu cu reduceri active pe care nu il vedem, scrie-ne.
+            AmCupon.ro monitorizeaza automat 300+ magazine si servicii din Romania. Daca gasesti un serviciu cu reduceri active pe care nu il vedem, scrie-ne.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link href="/recomandari"

@@ -55,7 +55,7 @@ export default function OGImage() {
             verificate zilnic
           </div>
           <div style={{ color: "#94a3b8", fontSize: 26, marginBottom: 40 }}>
-            Peste 200 magazine partenere · 100% gratuit
+            Peste 300 magazine partenere · 100% gratuit
           </div>
 
           {/* Stats pills */}
@@ -65,7 +65,7 @@ export default function OGImage() {
               borderRadius: 24, padding: "10px 24px",
               fontSize: 18, fontWeight: 700,
               display: "flex",
-            }}>✓ 200+ magazine</div>
+            }}>✓ 300+ magazine</div>
             <div style={{
               background: "rgba(16,185,129,0.15)", color: "#34D399",
               borderRadius: 24, padding: "10px 24px",
