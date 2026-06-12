@@ -1,4 +1,4 @@
-💊 FARMACIE & SĂNĂTATE — 11.06.2026
+💊 FARMACIE & SĂNĂTATE — 12.06.2026
 ==================================================
 
 >>> Drmax <<<
@@ -66,6 +66,71 @@ SUBREDDITS: r/Romania, r/cluj, r/Bucuresti, r/deals
 
 ----------------------------------------
 
+>>> Medimfarm <<<
+
+[ TIKTOK ]
+🎬 SCRIPT TIKTOK — Medimfarm (Farmacie & Sănătate)
+
+HOOK (0-3 sec):
+"💊 Stii ca poti economisi la Medimfarm? Iata codul SECRET!"
+
+BODY (3-25 sec):
+"Mergi pe AmCupon.ro, cauti Medimfarm, copiezi codul SUMMER18 si il aplici la checkout.
+MedimFarm - 18% reducere vara cu codul SUMMER18. Rata de succes 80% — a fost verificat chiar ieri!"
+
+CTA (25-30 sec):
+"Link in bio → amcupon.ro. Salveaza videoul sa nu uiti codul!"
+
+HASHTAG-URI:
+#farmacie #sanatate #suplimente #vitamine #romania #farmacii #codreducere #amcupon #voucher #economii
+
+[ INSTAGRAM ]
+📸 INSTAGRAM CAPTION — Medimfarm
+
+💊 Cod reducere Medimfarm activ în iunie 2026!
+
+✅ Oferta speciala
+🎟️ Cod: **SUMMER18**
+📊 80% rată de succes — verificat!
+
+👉 https://amcupon.ro/cod-reducere/medimfarm.ro
+
+💡 Medicamente si suplimente la reducere
+
+#farmacie #sanatate #suplimente #vitamine #romania #farmacii
+#codreducere #amcupon #economii
+
+[ PINTEREST ]
+📌 PINTEREST PIN — Medimfarm
+
+TITLU (max 100 caractere):
+Cod Reducere Medimfarm: SUMMER18 | iunie 2026
+
+DESCRIERE:
+Cod Reducere Medimfarm: SUMMER18 | iunie 2026. MedimFarm - 18% reducere vara cu codul SUMMER18. Codul de reducere Medimfarm verificat si actualizat pe AmCupon.ro. Medicamente si suplimente la reducere. Economiseste acum!
+
+URL: https://amcupon.ro/cod-reducere/medimfarm.ro
+BOARD: Farmacie & Sănătate — Coduri Reducere Romania
+
+[ REDDIT/FB ]
+💬 REDDIT / FACEBOOK GRUP — Medimfarm
+
+TITLU: [Cod reducere Farmacie & Sănătate] Medimfarm — MedimFarm - 18% reducere vara cu codul SUMMER18 (cod: SUMMER18, 80% succes)
+
+Cod activ pentru Medimfarm:
+
+**Oferta:** MedimFarm - 18% reducere vara cu codul SUMMER18
+**Cod:** `SUMMER18`
+**Rata succes:** 80%
+
+**Link:** https://amcupon.ro/cod-reducere/medimfarm.ro
+
+*Sursa: AmCupon.ro — verificat zilnic*
+
+SUBREDDITS: r/Romania, r/cluj, r/Bucuresti, r/deals
+
+----------------------------------------
+
 >>> Apiland <<<
 
 [ TIKTOK ]
@@ -122,69 +187,6 @@ Reducere activa la Apiland:
 **Rata succes:** 84%
 
 **Link:** https://amcupon.ro/cod-reducere/apiland.ro
-
-*Sursa: AmCupon.ro — verificat zilnic*
-
-SUBREDDITS: r/Romania, r/cluj, r/Bucuresti, r/deals
-
-----------------------------------------
-
->>> Zephyrlabs <<<
-
-[ TIKTOK ]
-🎬 SCRIPT TIKTOK — Zephyrlabs (Farmacie & Sănătate)
-
-HOOK (0-3 sec):
-"💊 Reducere ACTIVA la Zephyrlabs — nu ai nevoie de niciun cod!"
-
-BODY (3-25 sec):
-"Mergi pe AmCupon.ro, gasesti Zephyrlabs si dai click pe oferta.
-Promotie -33% Mai - Septembrie pentru oricare 2 produse identice de la Melegatti Pharma. Reducerea se aplica automat — zero bataie de cap!"
-
-CTA (25-30 sec):
-"Link in bio → amcupon.ro. Dai follow pentru oferte zilnice!"
-
-HASHTAG-URI:
-#farmacie #sanatate #suplimente #vitamine #romania #farmacii #reduceri #amcupon #oferte #promotii
-
-[ INSTAGRAM ]
-📸 INSTAGRAM CAPTION — Zephyrlabs
-
-💊 Cod reducere Zephyrlabs activ în iunie 2026!
-
-✅ Cashback pana la 8%
-📊 77% rată de succes — verificat!
-
-👉 https://amcupon.ro/cod-reducere/zephyrlabs.ro
-
-💡 Medicamente si suplimente la reducere
-
-#farmacie #sanatate #suplimente #vitamine #romania #farmacii
-#codreducere #amcupon #economii
-
-[ PINTEREST ]
-📌 PINTEREST PIN — Zephyrlabs
-
-TITLU (max 100 caractere):
-Cod Reducere Zephyrlabs iunie 2026 — Voucher Verificat
-
-DESCRIERE:
-Cod Reducere Zephyrlabs iunie 2026 — Voucher Verificat. Promotie -33% Mai - Septembrie pentru oricare 2 produse identice de la Melegatti Pharma. Codul de reducere Zephyrlabs verificat si actualizat pe AmCupon.ro. Medicamente si suplimente la reducere. Economiseste acum!
-
-URL: https://amcupon.ro/cod-reducere/zephyrlabs.ro
-BOARD: Farmacie & Sănătate — Coduri Reducere Romania
-
-[ REDDIT/FB ]
-💬 REDDIT / FACEBOOK GRUP — Zephyrlabs
-
-TITLU: [Reducere Farmacie & Sănătate] Zephyrlabs — Promotie -33% Mai - Septembrie pentru oricare 2 produse identice de la Melegatti Pharma
-
-Reducere activa la Zephyrlabs:
-
-**Oferta:** Promotie -33% Mai - Septembrie pentru oricare 2 produse identice de la Melegatti Pharma
-**Rata succes:** 77%
-
-**Link:** https://amcupon.ro/cod-reducere/zephyrlabs.ro
 
 *Sursa: AmCupon.ro — verificat zilnic*
 
