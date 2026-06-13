@@ -267,10 +267,10 @@ def post_to_facebook(message: str, link: str = "") -> dict:
     except urllib.error.HTTPError as e:
         body = e.read().decode("utf-8", errors="replace")
         print(f"  Eroare HTTP {e.code}: {body}")
-        return {}
+        return None
     except Exception as e:
         print(f"  Eroare: {e}")
-        return {}
+        return None
 
 
 # ── Main ─────────────────────────────────────────────────────────────────────
@@ -314,8 +314,8 @@ def main():
         link = f"{SITE_URL}/categorii/{cat_hint}" if cat_hint else SITE_URL
         print(f"Post ocazie: {titlu}")
         print(msg[:300], "...\n")
-        post_to_facebook(msg, link)
-        posted += 1
+        if post_to_facebook(msg, link):
+            posted += 1
 
     # ── 2. Post "Reduceri mari azi" (daca avem oferte cu % mare) ──────────────
     import re as _re
@@ -360,8 +360,8 @@ def main():
         msg_pct = "\n".join(linii)
         print("Post reduceri mari:")
         print(msg_pct[:300], "...\n")
-        post_to_facebook(msg_pct, f"{SITE_URL}/oferte-azi")
-        posted += 1
+        if post_to_facebook(msg_pct, f"{SITE_URL}/oferte-azi"):
+            posted += 1
 
     # ── 3. Post principal zilnic ──────────────────────────────────────────────
     top5 = pick_top(valide, n=5)
@@ -374,8 +374,8 @@ def main():
 
     print(f"Post principal ({zi_name}):")
     print(msg[:300], "...\n")
-    post_to_facebook(msg, link)
-    posted += 1
+    if post_to_facebook(msg, link):
+        posted += 1
 
     # ── 4. Post nisa (rotatie zilnica: luni=fashion, marti=beauty etc.) ───────
     nise_rotatie = [
@@ -392,8 +392,8 @@ def main():
         link_nisa = f"{SITE_URL}/categorii/{nisa_azi}"
         print(f"Post nisa ({nisa_azi}):")
         print(msg_nisa[:200], "...\n")
-        post_to_facebook(msg_nisa, link_nisa)
-        posted += 1
+        if post_to_facebook(msg_nisa, link_nisa):
+            posted += 1
 
     # ── 5. Post brand spotlight (joi = brand saptamanei) ─────────────────────
     if zi_idx == 3:  # joi
@@ -438,8 +438,8 @@ def main():
             msg_brand = "\n".join(linii_b)
             print(f"Post brand spotlight ({name_b}):")
             print(msg_brand[:300], "...\n")
-            post_to_facebook(msg_brand, f"{SITE_URL}{path_b}")
-            posted += 1
+            if post_to_facebook(msg_brand, f"{SITE_URL}{path_b}"):
+                posted += 1
 
     print(f"\nFacebook: {posted} posturi publicate pe {data_str} ✓")
 
