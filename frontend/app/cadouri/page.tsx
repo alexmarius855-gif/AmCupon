@@ -140,6 +140,37 @@ export default function CadouriPage() {
           </div>
         </section>
 
+        {/* Filtre buget */}
+        <section className="mb-12">
+          <div className="flex items-center gap-3 mb-6">
+            <h2 className="text-xl font-black text-white">Cadouri dupa buget</h2>
+            <span className="text-xs text-green-400 bg-green-500/10 border border-green-500/20 px-2 py-0.5 rounded-full font-bold">NOU</span>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            {[
+              { slug: "sub-100-lei",  emoji: "💰", label: "Sub 100 Lei",     desc: "Cadouri accesibile",   from: "#22c55e", to: "#10b981" },
+              { slug: "sub-200-lei",  emoji: "🎁", label: "Sub 200 Lei",     desc: "Raport pret/calitate", from: "#f97316", to: "#fb923c" },
+              { slug: "sub-500-lei",  emoji: "💎", label: "Sub 500 Lei",     desc: "Cadouri premium",      from: "#8b5cf6", to: "#7c3aed" },
+              { slug: "peste-500-lei",emoji: "👑", label: "Peste 500 Lei",   desc: "Cadouri de lux",       from: "#d97706", to: "#f59e0b" },
+            ].map(b => (
+              <Link
+                key={b.slug}
+                href={`/cadouri/${b.slug}`}
+                className="group relative rounded-2xl border border-slate-800 hover:border-slate-600 transition-all hover:-translate-y-1 hover:shadow-xl overflow-hidden"
+                style={{ background: `linear-gradient(135deg, ${b.from}15 0%, ${b.to}08 100%)` }}
+              >
+                <div className="p-5 text-center">
+                  <div className="text-4xl mb-3">{b.emoji}</div>
+                  <div className="text-white font-black text-sm mb-1 group-hover:text-orange-300 transition-colors">{b.label}</div>
+                  <div className="text-slate-500 text-xs">{b.desc}</div>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 h-0.5 opacity-40 group-hover:opacity-100 transition-opacity"
+                  style={{ background: `linear-gradient(90deg, ${b.from}, transparent)` }} />
+              </Link>
+            ))}
+          </div>
+        </section>
+
         {/* Sfaturi */}
         <section className="mb-10">
           <h2 className="text-lg font-black text-white mb-4">Sfaturi pentru alegerea cadoului perfect</h2>

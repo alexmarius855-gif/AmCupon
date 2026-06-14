@@ -137,6 +137,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/cadouri/craciun`,         lastModified: new Date(), changeFrequency: "yearly",  priority: 0.85 },
     { url: `${BASE_URL}/cadouri/absolvire`,       lastModified: new Date(), changeFrequency: "weekly",  priority: 0.8  },
     { url: `${BASE_URL}/cadouri/pasti`,           lastModified: new Date(), changeFrequency: "yearly",  priority: 0.8  },
+    // Filtre buget
+    { url: `${BASE_URL}/cadouri/sub-100-lei`,     lastModified: new Date(), changeFrequency: "weekly",  priority: 0.85 },
+    { url: `${BASE_URL}/cadouri/sub-200-lei`,     lastModified: new Date(), changeFrequency: "weekly",  priority: 0.85 },
+    { url: `${BASE_URL}/cadouri/sub-500-lei`,     lastModified: new Date(), changeFrequency: "weekly",  priority: 0.85 },
+    { url: `${BASE_URL}/cadouri/peste-500-lei`,   lastModified: new Date(), changeFrequency: "weekly",  priority: 0.8  },
 
     // ─── Tool pages ─────────────────────────────────────────────────────────
     { url: `${BASE_URL}/top-reduceri`,            lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
