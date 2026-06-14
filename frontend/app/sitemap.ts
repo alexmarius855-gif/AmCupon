@@ -123,6 +123,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/kitunghii`,               lastModified: new Date(), changeFrequency: "daily",   priority: 0.75 },
     { url: `${BASE_URL}/pfarma`,                  lastModified: new Date(), changeFrequency: "daily",   priority: 0.75 },
 
+    // ─── Cadouri nisa ───────────────────────────────────────────────────────
+    { url: `${BASE_URL}/cadouri`,                 lastModified: new Date(), changeFrequency: "weekly",  priority: 0.9  },
+    { url: `${BASE_URL}/cadouri/ea`,              lastModified: new Date(), changeFrequency: "weekly",  priority: 0.85 },
+    { url: `${BASE_URL}/cadouri/el`,              lastModified: new Date(), changeFrequency: "weekly",  priority: 0.85 },
+    { url: `${BASE_URL}/cadouri/copii`,           lastModified: new Date(), changeFrequency: "weekly",  priority: 0.85 },
+    { url: `${BASE_URL}/cadouri/mama`,            lastModified: new Date(), changeFrequency: "weekly",  priority: 0.85 },
+    { url: `${BASE_URL}/cadouri/tata`,            lastModified: new Date(), changeFrequency: "weekly",  priority: 0.85 },
+    { url: `${BASE_URL}/cadouri/botez`,           lastModified: new Date(), changeFrequency: "weekly",  priority: 0.9  },
+    { url: `${BASE_URL}/cadouri/nasi`,            lastModified: new Date(), changeFrequency: "weekly",  priority: 0.9  },
+    { url: `${BASE_URL}/cadouri/nastere`,         lastModified: new Date(), changeFrequency: "weekly",  priority: 0.85 },
+    { url: `${BASE_URL}/cadouri/valentine`,       lastModified: new Date(), changeFrequency: "yearly",  priority: 0.8  },
+    { url: `${BASE_URL}/cadouri/craciun`,         lastModified: new Date(), changeFrequency: "yearly",  priority: 0.85 },
+    { url: `${BASE_URL}/cadouri/absolvire`,       lastModified: new Date(), changeFrequency: "weekly",  priority: 0.8  },
+    { url: `${BASE_URL}/cadouri/pasti`,           lastModified: new Date(), changeFrequency: "yearly",  priority: 0.8  },
+
     // ─── Tool pages ─────────────────────────────────────────────────────────
     { url: `${BASE_URL}/top-reduceri`,            lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
     { url: `${BASE_URL}/calculator`,              lastModified: new Date(), changeFrequency: "monthly", priority: 0.75 },
