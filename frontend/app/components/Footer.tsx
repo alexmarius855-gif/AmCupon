@@ -41,6 +41,8 @@ const GHIDURI = [
   { href: "/casa",        label: "Casa & Bricolaj" },
   { href: "/black-friday",label: "Black Friday" },
   { href: "/extensie",    label: "Extensie Chrome" },
+  { href: "/ai-tools",   label: "Programe Afiliere AI" },
+  { href: "/vpn",        label: "Cele mai bune VPN-uri" },
 ];
 
 const INFO = [

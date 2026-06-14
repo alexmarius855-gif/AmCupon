@@ -110,6 +110,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/otter`,                   lastModified: new Date(), changeFrequency: "daily",   priority: 0.75 },
     { url: `${BASE_URL}/recomandari`,             lastModified: new Date(), changeFrequency: "monthly", priority: 0.7  },
     { url: `${BASE_URL}/vpn`,                     lastModified: new Date(), changeFrequency: "monthly", priority: 0.8  },
+    { url: `${BASE_URL}/ai-tools`,               lastModified: new Date(), changeFrequency: "monthly", priority: 0.85 },
     { url: `${BASE_URL}/hosting`,                 lastModified: new Date(), changeFrequency: "monthly", priority: 0.8  },
     { url: `${BASE_URL}/servicii`,                lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
     { url: `${BASE_URL}/albire-dinti`,            lastModified: new Date(), changeFrequency: "weekly",  priority: 0.75 },

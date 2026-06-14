@@ -39,7 +39,7 @@ interface Magazin {
 // Sluguri care sunt servicii (nu produse fizice)
 const SERVICII_SLUGS: Record<string, { label: string; emoji: string; desc: string; slug_url: string | null }> = {
   "albirea-dintilor.com": { label: "Sanatate & Estetica", emoji: "🦷", desc: "Serviciu albire dinti", slug_url: "/albire-dinti" },
-  "cursuri-ai.ro":        { label: "Educatie & Cursuri",  emoji: "🎓", desc: "Cursuri AI online",    slug_url: "/cursuri-online" },
+  "cursuri-ai.ro":        { label: "Educatie & Cursuri",  emoji: "🎓", desc: "Cursuri AI online",    slug_url: null },
   "facturis-online.ro":   { label: "Software & SaaS",     emoji: "📊", desc: "Software facturare 35% comision", slug_url: "/software-business" },
   "hostico.ro":           { label: "Hosting",              emoji: "🌐", desc: "Hosting romanesc 25% comision", slug_url: "/hosting" },
   "chroot.ro":            { label: "Software & SaaS",      emoji: "💻", desc: "Servicii IT & cloud", slug_url: "/software-business" },

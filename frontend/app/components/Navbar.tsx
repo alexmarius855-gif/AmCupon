@@ -89,6 +89,7 @@ export default function Navbar() {
     { href: "/top-reduceri", label: "⭐ Top reduceri" },
     { href: "/calculator", label: "🧮 Calculator" },
     { href: "/extensie", label: "🧩 Extensie Chrome" },
+    { href: "/ai-tools", label: "🧠 Programe Afiliere AI" },
     { href: "/newsletter", label: "📧 Newsletter" },
   ];
 

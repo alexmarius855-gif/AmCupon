@@ -64,7 +64,7 @@ export default function CursuriOnlinePage() {
     fs.readFileSync(path.join(process.cwd(), "public", "output.json"), "utf-8")
   );
   const cursuri2p = allMag.filter(m =>
-    ["cursuri-ai.ro", "dacris.net"].includes(m.magazin) ||
+    ["dacris.net"].includes(m.magazin) ||
     m.magazin.toLowerCase().includes("curs") ||
     m.magazin.toLowerCase().includes("edu") ||
     (m as any).categorie_slug === "software"
