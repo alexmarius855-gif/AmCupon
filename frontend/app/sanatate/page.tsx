@@ -173,6 +173,7 @@ export default function SanatatePage() {
         {/* Produse */}
         <NisaProduse
           merchantSlugs={["pronaturiste.ro","vitamix.ro","goldnutrition.ro","apiland.ro","botaniq.ro","republicabio.ro"]}
+          catSlug="farmacie"
           titlu="Suplimente si produse naturiste populare"
           culoareAccent="green"
           limit={12}

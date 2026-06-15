@@ -195,6 +195,7 @@ export default function GadgetsPage() {
 
         <NisaProduse
           merchantSlugs={["emag.ro","altex.ro","flanco.ro","quickmobile.ro","cel.ro","pcgarage.ro","evomag.ro"]}
+          catSlug="electronice"
           titlu="Gadgets populare cu reducere"
           culoareAccent="blue"
           limit={12}

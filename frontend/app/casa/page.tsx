@@ -133,6 +133,7 @@ export default function CasaPage() {
 
         <NisaProduse
           merchantSlugs={["dedeman.ro","ikea.com","leroy-merlin.ro","mobexpert.ro","jysk.ro","hornbach.ro"]}
+          catSlug="casa"
           titlu="Produse populare — Casa & Gradina cu reducere"
           culoareAccent="green"
           limit={12}

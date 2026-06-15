@@ -142,6 +142,20 @@ jobs:
         working-directory: scripts
         run: python generate_best_of.py
 
+      - name: Genereaza ghiduri calitative cu Claude AI
+        working-directory: scripts
+        if: github.event.schedule == '0 6 * * *' || github.event_name == 'workflow_dispatch'
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -n "$ANTHROPIC_API_KEY" ]; then
+            echo "Ruleaza generate_ai_guides..."
+            python generate_ai_guides.py
+          else
+            echo "ANTHROPIC_API_KEY nu e setat — skip ghiduri AI"
+          fi
+
       - name: Actualizeaza link-uri afiliate in Top Produse
         working-directory: scripts
         run: python generate_product_tops.py

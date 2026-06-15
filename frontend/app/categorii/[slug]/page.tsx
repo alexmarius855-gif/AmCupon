@@ -29,6 +29,14 @@ const CATEG_CULORI: Record<string, string> = {
   "automotive": "gray", "health-personal-care": "teal", "jewelry": "violet",
 };
 
+const CATEG_CAT_SLUG: Record<string, string> = {
+  "fashion": "fashion", "home-garden": "casa", "electronics-itc": "electronice",
+  "beauty": "beauty", "pharma": "farmacie", "babies-kids-toys": "copii",
+  "sports-outdoors": "sport", "books": "carti", "gifts-flowers": "bijuterii",
+  "automotive": "auto", "health-personal-care": "farmacie", "pet-supplies": "animale",
+  "jewelry": "bijuterii", "games": "jocuri", "online-mall": "electronice",
+};
+
 interface Magazin {
   magazin: string;
   url: string;
@@ -246,6 +254,7 @@ export default async function PaginaCategorie({
       {CATEG_MERCHANTS[slug] && (
         <NisaProduse
           merchantSlugs={CATEG_MERCHANTS[slug]}
+          catSlug={CATEG_CAT_SLUG[slug] || ""}
           titlu={`Produse populare — ${numeCateg} cu reducere`}
           culoareAccent={CATEG_CULORI[slug] || "orange"}
           limit={12}

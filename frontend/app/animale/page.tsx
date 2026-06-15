@@ -185,6 +185,7 @@ export default function AnimalePage() {
         {/* Produse */}
         <NisaProduse
           merchantSlugs={["petmart.ro","petmax.ro","bravapet.ro","ehranaanimale.ro","mobilepet.ro","husse.ro"]}
+          catSlug="animale"
           titlu="Hrana si accesorii populare pentru animale"
           culoareAccent="orange"
           limit={12}

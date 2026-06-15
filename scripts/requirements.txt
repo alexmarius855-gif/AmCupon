@@ -3,3 +3,4 @@ openpyxl
 requests
 PyNaCl
 Pillow
+anthropic

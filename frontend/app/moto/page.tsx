@@ -215,6 +215,7 @@ export default function MotoPage() {
 
         <NisaProduse
           merchantSlugs={["autonom.ro","autodoc.ro","kfzteile24.ro"]}
+          catSlug="auto"
           titlu="Accesorii auto cu reducere"
           culoareAccent="orange"
           limit={12}

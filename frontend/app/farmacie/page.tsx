@@ -136,6 +136,7 @@ export default function FarmaciePage() {
 
         <NisaProduse
           merchantSlugs={["drmax.ro","vegis.ro","catena.ro","helpnet.ro","farmaciatei.ro","farmacia.ro"]}
+          catSlug="farmacie"
           titlu="Produse populare — Farmacie Online cu reducere"
           culoareAccent="green"
           limit={12}

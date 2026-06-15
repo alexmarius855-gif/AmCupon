@@ -133,6 +133,7 @@ export default function ParfumuriPage() {
 
         <NisaProduse
           merchantSlugs={["douglas.ro","notino.ro","sephora.ro","makeup.ro","marionnaud.ro"]}
+          catSlug="beauty"
           titlu="Produse populare — Parfumuri & Cosmetice cu reducere"
           culoareAccent="pink"
           limit={12}

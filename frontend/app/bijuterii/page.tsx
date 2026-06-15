@@ -178,6 +178,7 @@ export default function BijuteriiPage() {
         {/* Produse */}
         <NisaProduse
           merchantSlugs={["teilor.ro","bijuteriistef.ro","joyeria.ro","glamira.ro"]}
+          catSlug="bijuterii"
           titlu="Bijuterii populare cu reducere"
           culoareAccent="pink"
           limit={12}

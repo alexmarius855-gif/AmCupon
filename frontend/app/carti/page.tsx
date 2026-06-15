@@ -133,6 +133,7 @@ export default function CartiPage() {
 
         <NisaProduse
           merchantSlugs={["libris.ro","elefant.ro","carturesti.ro","librarie.net","bookhub.ro"]}
+          catSlug="carti"
           titlu="Cărți populare cu reducere"
           culoareAccent="amber"
           limit={12}

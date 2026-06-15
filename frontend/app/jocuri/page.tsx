@@ -178,6 +178,7 @@ export default function JocuriPage() {
         {/* Produse */}
         <NisaProduse
           merchantSlugs={["pcgarage.ro","evomag.ro","altex.ro","gamers.ro"]}
+          catSlug="jocuri"
           titlu="Jocuri si accesorii gaming populare"
           culoareAccent="purple"
           limit={12}

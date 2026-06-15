@@ -140,6 +140,7 @@ export default function FrumusetePage() {
 
         <NisaProduse
           merchantSlugs={["notino.ro","douglas.ro","sephora.ro","makeup.ro","beautik.ro"]}
+          catSlug="beauty"
           titlu="Produse beauty populare cu reducere"
           culoareAccent="pink"
           limit={12}
