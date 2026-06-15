@@ -78,8 +78,23 @@ jobs:
             echo "TRADETRACKER_SITE_ID nu e setat — skip TradeTracker"
           fi
 
+      # ── 4c. Impact.com tracking links ────────────────────────────────────
+      - name: Actualizeaza tracking links Impact.com
+        working-directory: scripts
+        continue-on-error: true
+        env:
+          IMPACT_ACCOUNT_SID: ${{ secrets.IMPACT_ACCOUNT_SID }}
+          IMPACT_AUTH_TOKEN:  ${{ secrets.IMPACT_AUTH_TOKEN }}
+        run: |
+          if [ -n "$IMPACT_ACCOUNT_SID" ]; then
+            echo "Ruleaza fetch_impact_api..."
+            python fetch_impact_api.py
+          else
+            echo "IMPACT_ACCOUNT_SID nu e setat — skip Impact.com"
+          fi
+
       # ── 5. Merge platforme ─────────────────────────────────────────────────
-      - name: Merge 2Performant + Profitshare + TradeTracker
+      - name: Merge 2Performant + Profitshare + TradeTracker + Impact
         working-directory: scripts
         run: python merge_platforms.py
 
