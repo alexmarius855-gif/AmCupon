@@ -633,25 +633,49 @@ def parse_csv_feed(content: bytes, merchant: str, feed_id, encoding="utf-8") -> 
 
 # ─── Download + parsare feed ──────────────────────────────────────────────────
 
+_BROWSER_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/125.0.0.0 Safari/537.36"
+    ),
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "ro-RO,ro;q=0.9,en;q=0.8",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Cache-Control": "no-cache",
+    "Pragma": "no-cache",
+}
+
+
 def download_feed(url: str) -> bytes | None:
     """Descarca un feed XML/CSV cu suport pentru gzip si fisiere mari."""
     print(f"    Descarcare: {url[:80]}...")
+    # Adauga Referer bazat pe domeniu pentru a evita 403 pe feed-uri directe
+    from urllib.parse import urlparse as _urlparse
+    parsed = _urlparse(url)
+    referer_hdr = {"Referer": f"{parsed.scheme}://{parsed.netloc}/"}
     try:
-        # Feed-urile pot necesita autentificare sau nu
-        # Incercam mai intai fara auth, apoi cu auth headers
-        for headers in [{}, _auth_headers()]:
+        # Incercam: fara auth + browser headers, apoi cu auth 2P, apoi cu Referer
+        attempts = [
+            {**_BROWSER_HEADERS},
+            {**_BROWSER_HEADERS, **referer_hdr},
+            {**_BROWSER_HEADERS, **_auth_headers()},
+        ]
+        resp = None
+        for headers in attempts:
             resp = _session.get(
                 url,
-                headers={**{"Accept": "*/*", "User-Agent": "Mozilla/5.0"}, **headers},
+                headers=headers,
                 timeout=DOWNLOAD_TIMEOUT,
                 stream=True,
+                allow_redirects=True,
             )
             if resp.status_code == 200:
                 break
-            print(f"    HTTP {resp.status_code} (cu {'auth' if headers else 'fara auth'})")
+            print(f"    HTTP {resp.status_code}")
 
-        if resp.status_code != 200:
-            print(f"    EROARE: HTTP {resp.status_code}")
+        if resp is None or resp.status_code != 200:
+            print(f"    EROARE: HTTP {resp.status_code if resp else 'no response'}")
             return None
 
         # Citeste in chunks
@@ -835,10 +859,6 @@ def main():
         {"name": "navstore.ro",      "url": "https://www.navstore.ro/feed/googleShoppingAds.xml"},
         # ── Copii / Jucarii ──────────────────────────────────────────────────────
         {"name": "noriel.ro",        "url": "https://www.noriel.ro/feed/google_shopping.xml"},
-        # ── Fashion (multi-merchant feed 2P — CSV) ───────────────────────────────
-        # aff_code = URL tracking complet — NU dubla-wrapa
-        # Feed 4a3fc5d5f: outfitblack + sevensins + depox (fashion)
-        {"name": "outfitblack.ro",   "url": "https://feeds.2performant.com/feed/4a3fc5d5f.csv"},
         # ── Sport / Outdoor ──────────────────────────────────────────────────────
         {"name": "sportisimo.ro",    "url": "https://www.sportisimo.ro/google-merchant-feed.xml"},
         {"name": "decathlon.ro",     "url": "https://www.decathlon.ro/feed/google_shopping.xml"},
@@ -856,7 +876,11 @@ def main():
         {"name": "epantofi.ro",      "url": "https://www.epantofi.ro/feed/google-shopping.xml"},
         # ── Auto ────────────────────────────────────────────────────────────────
         {"name": "automobilus.ro",   "url": "https://www.automobilus.ro/googlemerchantshopping.xml"},
+        # ── Electronice extra ────────────────────────────────────────────────────
+        {"name": "emag.ro",          "url": "https://www.emag.ro/feed/google-shopping.xml"},
+        {"name": "flanco.ro",        "url": "https://www.flanco.ro/feed/google-shopping.xml"},
     ]
+    # outfitblack.ro eliminat — se inchide 10-07-2026
     slug_map_rev = {v: k for k, v in slug_map.items()}
     existing_names = {(f.get("name") or "").lower() for f, _ in feeds_cu_url}
 
