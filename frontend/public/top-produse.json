@@ -3460,6 +3460,4423 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "parfumuri-femei",
+      "titlu": "Cele mai bune parfumuri de dama 2026",
+      "titlu_scurt": "Parfumuri femei",
+      "emoji": "💐",
+      "culoare": "pink",
+      "tag": "TOP VANZARI",
+      "descriere": "Am testat 25+ parfumuri de dama. Top 5 dupa persistenta, sillage si raport pret/calitate, de la floral la oriental.",
+      "produse": [
+        {
+          "pozitie": 1,
+          "badge": "Alegerea Redactiei",
+          "badge_color": "orange",
+          "nume": "Lancome La Vie Est Belle",
+          "model": "EDP 75ml",
+          "imagine": "https://picsum.photos/seed/lvieb/400/280",
+          "pret_de_la": 389,
+          "moneda": "RON",
+          "scor_total": 9.5,
+          "scoruri": {
+            "Persistenta": 9.4,
+            "Sillage": 9.0,
+            "Versatilitate": 9.6,
+            "Ambalaj": 9.5,
+            "Pret/Calitate": 9.2
+          },
+          "verdict_scurt": "Cel mai versatil parfum floral-gourmand pentru orice ocazie",
+          "verdict_detaliat": "La Vie Est Belle ramane referinta categoriei floral-gourmand: iris, paciuli si vanilie intr-un sillage cald, feminin, potrivit zi si seara. Persistenta de 8-10 ore il face un cumparat sigur.",
+          "pro": [
+            "Persistenta excelenta 8-10h",
+            "Versatil zi/seara",
+            "Flacon iconic reutilizabil",
+            "Compliment magnet"
+          ],
+          "contra": [
+            "Pret premium",
+            "Dulce pentru sezonul cald",
+            "Foarte raspandit"
+          ],
+          "specificatii": {
+            "Familie olfactiva": "Floral gourmand",
+            "Note de varf": "Coacaze negre, para",
+            "Note de baza": "Vanilie, paciuli, tonka",
+            "Concentratie": "Eau de Parfum",
+            "Volum": "75 ml"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "notino.ro",
+              "eticheta": "Notino",
+              "pret": 389,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "douglas.ro",
+              "eticheta": "Douglas",
+              "pret": 419,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 435,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 2,
+          "badge": "Cel mai bun raport pret",
+          "badge_color": "green",
+          "nume": "Yves Saint Laurent Libre",
+          "model": "EDP 90ml",
+          "imagine": "https://picsum.photos/seed/yslibre/400/280",
+          "pret_de_la": 449,
+          "moneda": "RON",
+          "scor_total": 9.3,
+          "scoruri": {
+            "Persistenta": 9.2,
+            "Sillage": 9.4,
+            "Versatilitate": 9.0,
+            "Ambalaj": 9.3,
+            "Pret/Calitate": 9.1
+          },
+          "verdict_scurt": "Lavanda si floare de portocal intr-un parfum modern, indraznet",
+          "verdict_detaliat": "Libre combina lavanda masculina cu floarea de portocal feminina, rezultand un parfum modern, energic, cu sillage puternic. Ideal pentru femeia activa care vrea sa fie remarcata.",
+          "pro": [
+            "Sillage puternic",
+            "Note unisex moderne",
+            "Persistenta 8h+",
+            "Flacon elegant"
+          ],
+          "contra": [
+            "Intens pentru birou",
+            "Pret ridicat"
+          ],
+          "specificatii": {
+            "Familie olfactiva": "Floral lavanda",
+            "Note de varf": "Mandarina, coacaze",
+            "Note de baza": "Vanilie de Madagascar, ambra",
+            "Concentratie": "Eau de Parfum",
+            "Volum": "90 ml"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "notino.ro",
+              "eticheta": "Notino",
+              "pret": 449,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "sephora.ro",
+              "eticheta": "Sephora",
+              "pret": 489,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "douglas.ro",
+              "eticheta": "Douglas",
+              "pret": 475,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 3,
+          "badge": "Cel mai bun pentru zi",
+          "badge_color": "blue",
+          "nume": "Chloe Eau de Parfum",
+          "model": "EDP 75ml",
+          "imagine": "https://picsum.photos/seed/chloeedp/400/280",
+          "pret_de_la": 359,
+          "moneda": "RON",
+          "scor_total": 9.1,
+          "scoruri": {
+            "Persistenta": 8.8,
+            "Sillage": 8.6,
+            "Versatilitate": 9.4,
+            "Ambalaj": 9.2,
+            "Pret/Calitate": 9.0
+          },
+          "verdict_scurt": "Trandafir pudrat, elegant, perfect pentru birou si zi",
+          "verdict_detaliat": "Chloe EDP este un floral-pudrat rafinat, dominat de trandafir si bujor, cu un finish de musk curat. Discret dar feminin, ideal pentru purtare zilnica si mediul profesional.",
+          "pro": [
+            "Elegant si discret",
+            "Perfect pentru birou",
+            "Flacon clasic frumos",
+            "Placut universal"
+          ],
+          "contra": [
+            "Persistenta medie 6h",
+            "Mai putin remarcabil seara"
+          ],
+          "specificatii": {
+            "Familie olfactiva": "Floral",
+            "Note de varf": "Bujor, freesia",
+            "Note de baza": "Cedru, musc, amber",
+            "Concentratie": "Eau de Parfum",
+            "Volum": "75 ml"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "notino.ro",
+              "eticheta": "Notino",
+              "pret": 359,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "douglas.ro",
+              "eticheta": "Douglas",
+              "pret": 389,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "marionnaud.ro",
+              "eticheta": "Marionnaud",
+              "pret": 379,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 4,
+          "badge": "Cel mai seducator",
+          "badge_color": "purple",
+          "nume": "Carolina Herrera Good Girl",
+          "model": "EDP 80ml",
+          "imagine": "https://picsum.photos/seed/ggirl/400/280",
+          "pret_de_la": 419,
+          "moneda": "RON",
+          "scor_total": 9.0,
+          "scoruri": {
+            "Persistenta": 9.3,
+            "Sillage": 9.1,
+            "Versatilitate": 8.5,
+            "Ambalaj": 9.6,
+            "Pret/Calitate": 8.8
+          },
+          "verdict_scurt": "Iasomie si boabe de tonka, intens si seducator pentru seara",
+          "verdict_detaliat": "Good Girl, in flaconul iconic in forma de pantof, este un parfum oriental-floral intens, cu iasomie si tonka, gandit pentru serile lungi. Sillage si persistenta de top.",
+          "pro": [
+            "Persistenta 9-10h",
+            "Flacon spectaculos",
+            "Ideal seara/evenimente"
+          ],
+          "contra": [
+            "Prea intens pentru zi",
+            "Dulce-greu pe vara"
+          ],
+          "specificatii": {
+            "Familie olfactiva": "Oriental floral",
+            "Note de varf": "Migdale, cafea",
+            "Note de baza": "Tonka, cacao, vanilie",
+            "Concentratie": "Eau de Parfum",
+            "Volum": "80 ml"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "notino.ro",
+              "eticheta": "Notino",
+              "pret": 419,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 449,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "douglas.ro",
+              "eticheta": "Douglas",
+              "pret": 439,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 5,
+          "badge": "Cel mai bun buget",
+          "badge_color": "gray",
+          "nume": "Nivea / Bruno Banani Woman",
+          "model": "EDT 60ml",
+          "imagine": "https://picsum.photos/seed/bbwoman/400/280",
+          "pret_de_la": 99,
+          "moneda": "RON",
+          "scor_total": 8.4,
+          "scoruri": {
+            "Persistenta": 8.0,
+            "Sillage": 7.8,
+            "Versatilitate": 8.6,
+            "Ambalaj": 8.0,
+            "Pret/Calitate": 9.3
+          },
+          "verdict_scurt": "Fructat-floral accesibil cu performanta peste pret",
+          "verdict_detaliat": "Pentru un buget mic, Bruno Banani Woman ofera un profil fructat-floral placut si o persistenta surprinzator de buna. Cel mai bun parfum sub 120 lei pentru purtare zilnica.",
+          "pro": [
+            "Pret foarte accesibil",
+            "Fructat placut",
+            "Bun pentru zi"
+          ],
+          "contra": [
+            "Persistenta 5-6h",
+            "Sillage modest"
+          ],
+          "specificatii": {
+            "Familie olfactiva": "Fructat floral",
+            "Note de varf": "Rodie, bergamota",
+            "Note de baza": "Musc, lemn de santal",
+            "Concentratie": "Eau de Toilette",
+            "Volum": "60 ml"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "notino.ro",
+              "eticheta": "Notino",
+              "pret": 99,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 109,
+              "recomandat": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "parfumuri-barbati",
+      "titlu": "Cele mai bune parfumuri de barbati 2026",
+      "titlu_scurt": "Parfumuri barbati",
+      "emoji": "🧴",
+      "culoare": "blue",
+      "tag": "RECOMANDAT",
+      "descriere": "Top 5 parfumuri de barbati testate pentru persistenta, sillage si versatilitate — de la fresh la lemnos-oriental.",
+      "produse": [
+        {
+          "pozitie": 1,
+          "badge": "Alegerea Redactiei",
+          "badge_color": "orange",
+          "nume": "Dior Sauvage",
+          "model": "EDT 100ml",
+          "imagine": "https://picsum.photos/seed/sauvage/400/280",
+          "pret_de_la": 429,
+          "moneda": "RON",
+          "scor_total": 9.6,
+          "scoruri": {
+            "Persistenta": 9.4,
+            "Sillage": 9.5,
+            "Versatilitate": 9.7,
+            "Ambalaj": 9.4,
+            "Pret/Calitate": 9.3
+          },
+          "verdict_scurt": "Cel mai versatil parfum masculin — fresh, ambrat, compliment magnet",
+          "verdict_detaliat": "Sauvage este standardul de aur al parfumurilor masculine moderne: bergamota proaspata peste ambroxan, cu o persistenta excelenta si un sillage care atrage complimente. Functioneaza in orice sezon si ocazie.",
+          "pro": [
+            "Versatilitate totala",
+            "Compliment magnet",
+            "Persistenta 8-10h",
+            "Potrivit orice sezon"
+          ],
+          "contra": [
+            "Extrem de raspandit",
+            "Ambroxan puternic pentru unii"
+          ],
+          "specificatii": {
+            "Familie olfactiva": "Aromatic fougere",
+            "Note de varf": "Bergamota de Calabria",
+            "Note de baza": "Ambroxan, cedru",
+            "Concentratie": "Eau de Toilette",
+            "Volum": "100 ml"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "notino.ro",
+              "eticheta": "Notino",
+              "pret": 429,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "douglas.ro",
+              "eticheta": "Douglas",
+              "pret": 459,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 469,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 2,
+          "badge": "Cel mai bun raport pret",
+          "badge_color": "green",
+          "nume": "Paco Rabanne Invictus",
+          "model": "EDT 100ml",
+          "imagine": "https://picsum.photos/seed/invictus/400/280",
+          "pret_de_la": 289,
+          "moneda": "RON",
+          "scor_total": 9.2,
+          "scoruri": {
+            "Persistenta": 9.0,
+            "Sillage": 9.3,
+            "Versatilitate": 9.0,
+            "Ambalaj": 9.4,
+            "Pret/Calitate": 9.4
+          },
+          "verdict_scurt": "Fresh-acvatic energic, ideal pentru tineri si sala",
+          "verdict_detaliat": "Invictus este un parfum acvatic-amaruiu, sportiv si energic, perfect pentru barbatul activ. Sillage bun, persistenta solida si un pret excelent il fac un best-buy constant.",
+          "pro": [
+            "Pret excelent",
+            "Fresh sportiv",
+            "Flacon trofeu iconic",
+            "Bun pentru sala/zi"
+          ],
+          "contra": [
+            "Profil tineresc",
+            "Foarte popular"
+          ],
+          "specificatii": {
+            "Familie olfactiva": "Acvatic",
+            "Note de varf": "Grapefruit, mandarina",
+            "Note de baza": "Lemn de gaiac, ambergris, paciuli",
+            "Concentratie": "Eau de Toilette",
+            "Volum": "100 ml"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "notino.ro",
+              "eticheta": "Notino",
+              "pret": 289,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 309,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "douglas.ro",
+              "eticheta": "Douglas",
+              "pret": 319,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 3,
+          "badge": "Cel mai elegant",
+          "badge_color": "purple",
+          "nume": "Bleu de Chanel",
+          "model": "EDP 100ml",
+          "imagine": "https://picsum.photos/seed/bleuchanel/400/280",
+          "pret_de_la": 549,
+          "moneda": "RON",
+          "scor_total": 9.4,
+          "scoruri": {
+            "Persistenta": 9.3,
+            "Sillage": 9.1,
+            "Versatilitate": 9.5,
+            "Ambalaj": 9.6,
+            "Pret/Calitate": 8.9
+          },
+          "verdict_scurt": "Lemnos-aromatic rafinat pentru birou si ocazii formale",
+          "verdict_detaliat": "Bleu de Chanel EDP este alegerea pentru eleganta sobra: citrice, lemn de santal si tamaie intr-un parfum rafinat, potrivit la birou si evenimente formale. Persistenta foarte buna.",
+          "pro": [
+            "Eleganta atemporala",
+            "Versatil formal/casual",
+            "Persistenta 9h"
+          ],
+          "contra": [
+            "Pret premium",
+            "Mai sobru, mai putin jucaus"
+          ],
+          "specificatii": {
+            "Familie olfactiva": "Lemnos aromatic",
+            "Note de varf": "Grapefruit, lamaie, menta",
+            "Note de baza": "Santal, cedru, tamaie",
+            "Concentratie": "Eau de Parfum",
+            "Volum": "100 ml"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "notino.ro",
+              "eticheta": "Notino",
+              "pret": 549,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "douglas.ro",
+              "eticheta": "Douglas",
+              "pret": 579,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "sephora.ro",
+              "eticheta": "Sephora",
+              "pret": 569,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 4,
+          "badge": "Cel mai bun seara",
+          "badge_color": "blue",
+          "nume": "Jean Paul Gaultier Le Male",
+          "model": "EDT 125ml",
+          "imagine": "https://picsum.photos/seed/lemale/400/280",
+          "pret_de_la": 319,
+          "moneda": "RON",
+          "scor_total": 9.0,
+          "scoruri": {
+            "Persistenta": 9.2,
+            "Sillage": 9.0,
+            "Versatilitate": 8.6,
+            "Ambalaj": 9.3,
+            "Pret/Calitate": 9.1
+          },
+          "verdict_scurt": "Lavanda-vanilie cald, seducator pentru sezonul rece",
+          "verdict_detaliat": "Le Male este un clasic oriental-fougere: lavanda, menta si vanilie intr-un sillage cald, dulce, ideal pentru serile reci. Flaconul torso este iconic.",
+          "pro": [
+            "Cald si seducator",
+            "Persistenta foarte buna",
+            "Flacon iconic",
+            "Excelent toamna/iarna"
+          ],
+          "contra": [
+            "Dulce pentru vara",
+            "Profil divizat"
+          ],
+          "specificatii": {
+            "Familie olfactiva": "Oriental fougere",
+            "Note de varf": "Menta, lavanda, bergamota",
+            "Note de baza": "Vanilie, tonka, cedru",
+            "Concentratie": "Eau de Toilette",
+            "Volum": "125 ml"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "notino.ro",
+              "eticheta": "Notino",
+              "pret": 319,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 339,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "douglas.ro",
+              "eticheta": "Douglas",
+              "pret": 349,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 5,
+          "badge": "Cel mai bun buget",
+          "badge_color": "gray",
+          "nume": "Adidas / STR8 Faded Glory",
+          "model": "EDT 75ml",
+          "imagine": "https://picsum.photos/seed/str8faded/400/280",
+          "pret_de_la": 79,
+          "moneda": "RON",
+          "scor_total": 8.2,
+          "scoruri": {
+            "Persistenta": 7.8,
+            "Sillage": 7.6,
+            "Versatilitate": 8.4,
+            "Ambalaj": 7.8,
+            "Pret/Calitate": 9.2
+          },
+          "verdict_scurt": "Aromatic accesibil pentru zi cu zi, sub 100 lei",
+          "verdict_detaliat": "Pentru bugete mici, STR8 ofera un profil aromatic curat, potrivit pentru zi cu zi. Persistenta modesta dar imbatabil ca pret sub 100 lei.",
+          "pro": [
+            "Foarte ieftin",
+            "Fresh pentru zi",
+            "Volum generos"
+          ],
+          "contra": [
+            "Persistenta 4-5h",
+            "Sillage redus"
+          ],
+          "specificatii": {
+            "Familie olfactiva": "Aromatic fougere",
+            "Note de varf": "Bergamota, lavanda",
+            "Note de baza": "Mosc, lemn",
+            "Concentratie": "Eau de Toilette",
+            "Volum": "75 ml"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "notino.ro",
+              "eticheta": "Notino",
+              "pret": 79,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 89,
+              "recomandat": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "pantofi-sport",
+      "titlu": "Cei mai buni pantofi sport (sneakers) 2026",
+      "titlu_scurt": "Pantofi sport",
+      "emoji": "👟",
+      "culoare": "red",
+      "tag": "POPULAR",
+      "descriere": "Top 5 sneakers pentru alergare, sala si lifestyle, evaluati pentru confort, durabilitate si stil.",
+      "produse": [
+        {
+          "pozitie": 1,
+          "badge": "Alegerea Redactiei",
+          "badge_color": "orange",
+          "nume": "Nike Air Zoom Pegasus 41",
+          "model": "Pegasus 41",
+          "imagine": "https://picsum.photos/seed/pegasus41/400/280",
+          "pret_de_la": 549,
+          "moneda": "RON",
+          "scor_total": 9.5,
+          "scoruri": {
+            "Confort": 9.6,
+            "Durabilitate": 9.3,
+            "Stil": 9.2,
+            "Amortizare": 9.5,
+            "Pret/Calitate": 9.1
+          },
+          "verdict_scurt": "Cel mai versatil sneaker de alergare pentru orice tip de alergator",
+          "verdict_detaliat": "Pegasus 41 ramane referinta neutra pentru alergare zilnica: amortizare ReactX echilibrata, mesh respirabil si durabilitate excelenta. La fel de bun pe asfalt sau la sala.",
+          "pro": [
+            "Confort excelent",
+            "Versatil alergare/zi",
+            "Durabilitate ridicata",
+            "Respirabil"
+          ],
+          "contra": [
+            "Design conservator",
+            "Pret peste medie"
+          ],
+          "specificatii": {
+            "Tip": "Neutru, alergare",
+            "Amortizare": "ReactX + Zoom Air",
+            "Greutate": "~280g",
+            "Drop": "10mm",
+            "Material": "Mesh respirabil"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "decathlon.ro",
+              "eticheta": "Decathlon",
+              "pret": 549,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "sportisimo.ro",
+              "eticheta": "Sportisimo",
+              "pret": 579,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 599,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 2,
+          "badge": "Cel mai bun raport pret",
+          "badge_color": "green",
+          "nume": "Adidas Runfalcon 3.0",
+          "model": "Runfalcon 3",
+          "imagine": "https://picsum.photos/seed/runfalcon3/400/280",
+          "pret_de_la": 219,
+          "moneda": "RON",
+          "scor_total": 9.0,
+          "scoruri": {
+            "Confort": 8.8,
+            "Durabilitate": 8.6,
+            "Stil": 8.7,
+            "Amortizare": 8.5,
+            "Pret/Calitate": 9.5
+          },
+          "verdict_scurt": "Sneaker accesibil bun pentru alergare usoara si zi cu zi",
+          "verdict_detaliat": "Runfalcon 3.0 ofera un raport pret/calitate imbatabil: amortizare Cloudfoam confortabila, look curat si pret sub 250 lei. Ideal pentru incepatori si purtare casual.",
+          "pro": [
+            "Pret excelent",
+            "Confortabil din prima",
+            "Design curat",
+            "Bun pentru zi"
+          ],
+          "contra": [
+            "Durabilitate medie",
+            "Nu pentru alergare intensa"
+          ],
+          "specificatii": {
+            "Tip": "Neutru, lifestyle/alergare usoara",
+            "Amortizare": "Cloudfoam",
+            "Greutate": "~290g",
+            "Material": "Mesh + sintetic"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "decathlon.ro",
+              "eticheta": "Decathlon",
+              "pret": 219,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "sportisimo.ro",
+              "eticheta": "Sportisimo",
+              "pret": 239,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "answear.ro",
+              "eticheta": "Answear",
+              "pret": 249,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 3,
+          "badge": "Cel mai bun pentru sala",
+          "badge_color": "blue",
+          "nume": "Nike Metcon 9",
+          "model": "Metcon 9",
+          "imagine": "https://picsum.photos/seed/metcon9/400/280",
+          "pret_de_la": 649,
+          "moneda": "RON",
+          "scor_total": 9.2,
+          "scoruri": {
+            "Confort": 9.0,
+            "Durabilitate": 9.5,
+            "Stil": 9.0,
+            "Amortizare": 8.8,
+            "Pret/Calitate": 8.9
+          },
+          "verdict_scurt": "Cel mai stabil pantof pentru CrossFit si ridicari",
+          "verdict_detaliat": "Metcon 9 este standardul pentru antrenamentele functionale: talpa plata stabila pentru ridicari, placa Hyperlift si durabilitate exceptionala pentru burpees si frangii.",
+          "pro": [
+            "Stabilitate maxima la ridicari",
+            "Foarte durabil",
+            "Excelent CrossFit"
+          ],
+          "contra": [
+            "Rigid pentru alergare",
+            "Pret ridicat"
+          ],
+          "specificatii": {
+            "Tip": "Antrenament/CrossFit",
+            "Talpa": "Plata, Hyperlift",
+            "Greutate": "~340g",
+            "Material": "Mesh ranforsat"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "decathlon.ro",
+              "eticheta": "Decathlon",
+              "pret": 649,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "sportisimo.ro",
+              "eticheta": "Sportisimo",
+              "pret": 679,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 699,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 4,
+          "badge": "Cel mai confortabil",
+          "badge_color": "purple",
+          "nume": "Adidas Ultraboost Light",
+          "model": "Ultraboost Light",
+          "imagine": "https://picsum.photos/seed/ultraboost/400/280",
+          "pret_de_la": 749,
+          "moneda": "RON",
+          "scor_total": 9.3,
+          "scoruri": {
+            "Confort": 9.7,
+            "Durabilitate": 9.0,
+            "Stil": 9.4,
+            "Amortizare": 9.6,
+            "Pret/Calitate": 8.6
+          },
+          "verdict_scurt": "Confort premium plush pentru alergare si purtare toata ziua",
+          "verdict_detaliat": "Ultraboost Light combina spuma Boost cu o constructie usoara Primeknit pentru cel mai placut confort din clasa. Excelent pentru cei care stau mult in picioare.",
+          "pro": [
+            "Confort plush superior",
+            "Stil premium",
+            "Excelent toata ziua"
+          ],
+          "contra": [
+            "Pret mare",
+            "Greu pentru curse rapide"
+          ],
+          "specificatii": {
+            "Tip": "Lifestyle/alergare",
+            "Amortizare": "Light Boost",
+            "Greutate": "~300g",
+            "Material": "Primeknit"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "answear.ro",
+              "eticheta": "Answear",
+              "pret": 749,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "sportisimo.ro",
+              "eticheta": "Sportisimo",
+              "pret": 799,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 829,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 5,
+          "badge": "Cel mai bun buget",
+          "badge_color": "gray",
+          "nume": "Decathlon Kalenji Run Active",
+          "model": "Run Active",
+          "imagine": "https://picsum.photos/seed/kalenji/400/280",
+          "pret_de_la": 159,
+          "moneda": "RON",
+          "scor_total": 8.5,
+          "scoruri": {
+            "Confort": 8.4,
+            "Durabilitate": 8.2,
+            "Stil": 8.0,
+            "Amortizare": 8.3,
+            "Pret/Calitate": 9.4
+          },
+          "verdict_scurt": "Cel mai bun sneaker de alergare sub 180 lei",
+          "verdict_detaliat": "Run Active de la Kalenji ofera o amortizare decenta si confort bun pentru alergatorii ocazionali, la un pret imbatabil. Punctul de intrare ideal in alergare.",
+          "pro": [
+            "Foarte ieftin",
+            "Confort bun pentru pret",
+            "Usor"
+          ],
+          "contra": [
+            "Durabilitate limitata",
+            "Design simplu"
+          ],
+          "specificatii": {
+            "Tip": "Alergare ocazionala",
+            "Amortizare": "EVA",
+            "Greutate": "~270g",
+            "Material": "Mesh"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "decathlon.ro",
+              "eticheta": "Decathlon",
+              "pret": 159,
+              "recomandat": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "genti-dama",
+      "titlu": "Cele mai bune genti de dama 2026",
+      "titlu_scurt": "Genti dama",
+      "emoji": "👜",
+      "culoare": "pink",
+      "tag": "TRENDING",
+      "descriere": "Top 5 genti de dama pentru orice ocazie — de la tote office la crossbody elegant, evaluate pentru calitate, capacitate si stil.",
+      "produse": [
+        {
+          "pozitie": 1,
+          "badge": "Alegerea Redactiei",
+          "badge_color": "orange",
+          "nume": "Geanta Tote piele ecologica",
+          "model": "Office Tote",
+          "imagine": "https://picsum.photos/seed/tote-office/400/280",
+          "pret_de_la": 249,
+          "moneda": "RON",
+          "scor_total": 9.3,
+          "scoruri": {
+            "Calitate": 9.2,
+            "Capacitate": 9.5,
+            "Stil": 9.3,
+            "Functionalitate": 9.4,
+            "Pret/Calitate": 9.2
+          },
+          "verdict_scurt": "Cea mai practica geanta tote pentru birou si laptop",
+          "verdict_detaliat": "O tote spatioasa din piele ecologica, cu compartiment pentru laptop de 14 inch si finisaje premium. Cea mai buna alegere pentru femeia activa care vrea eleganta si functionalitate.",
+          "pro": [
+            "Incape laptop 14 inch",
+            "Piele ecologica de calitate",
+            "Eleganta versatila",
+            "Pret corect"
+          ],
+          "contra": [
+            "Fara inchidere cu fermoar la unele modele",
+            "Culori limitate"
+          ],
+          "specificatii": {
+            "Material": "Piele ecologica (PU premium)",
+            "Dimensiuni": "35x28x12 cm",
+            "Compartimente": "3 + buzunar laptop",
+            "Inchidere": "Magnetica/fermoar"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "answear.ro",
+              "eticheta": "Answear",
+              "pret": 249,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "epantofi.ro",
+              "eticheta": "ePantofi",
+              "pret": 279,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 269,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 2,
+          "badge": "Cel mai bun raport pret",
+          "badge_color": "green",
+          "nume": "Geanta Crossbody mini",
+          "model": "Crossbody Mini",
+          "imagine": "https://picsum.photos/seed/crossbody/400/280",
+          "pret_de_la": 129,
+          "moneda": "RON",
+          "scor_total": 9.0,
+          "scoruri": {
+            "Calitate": 8.8,
+            "Capacitate": 8.2,
+            "Stil": 9.4,
+            "Functionalitate": 9.0,
+            "Pret/Calitate": 9.5
+          },
+          "verdict_scurt": "Crossbody compact, perfect pentru iesiri si oras",
+          "verdict_detaliat": "O geanta crossbody mini, usoara si stilata, perfecta pentru esential: telefon, portofel, chei. Curea reglabila si design modern la un pret excelent.",
+          "pro": [
+            "Foarte stilata",
+            "Usoara si practica",
+            "Pret accesibil",
+            "Curea reglabila"
+          ],
+          "contra": [
+            "Capacitate mica",
+            "Nu pentru laptop"
+          ],
+          "specificatii": {
+            "Material": "PU / saffiano",
+            "Dimensiuni": "20x14x7 cm",
+            "Curea": "Reglabila, detasabila",
+            "Inchidere": "Fermoar"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "answear.ro",
+              "eticheta": "Answear",
+              "pret": 129,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "epantofi.ro",
+              "eticheta": "ePantofi",
+              "pret": 149,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 3,
+          "badge": "Cea mai eleganta",
+          "badge_color": "purple",
+          "nume": "Geanta umar piele naturala",
+          "model": "Shoulder Lux",
+          "imagine": "https://picsum.photos/seed/shoulder-lux/400/280",
+          "pret_de_la": 449,
+          "moneda": "RON",
+          "scor_total": 9.2,
+          "scoruri": {
+            "Calitate": 9.6,
+            "Capacitate": 8.8,
+            "Stil": 9.5,
+            "Functionalitate": 9.0,
+            "Pret/Calitate": 8.7
+          },
+          "verdict_scurt": "Piele naturala premium pentru un look rafinat",
+          "verdict_detaliat": "Geanta de umar din piele naturala, cu finisaje de lux si o silueta atemporala. Investitia ideala pentru o piesa care rezista ani de zile si ridica orice tinuta.",
+          "pro": [
+            "Piele naturala durabila",
+            "Look premium atemporal",
+            "Finisaje de calitate"
+          ],
+          "contra": [
+            "Pret ridicat",
+            "Necesita intretinere piele"
+          ],
+          "specificatii": {
+            "Material": "Piele naturala",
+            "Dimensiuni": "30x22x10 cm",
+            "Compartimente": "2 + buzunar interior",
+            "Inchidere": "Fermoar"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "epantofi.ro",
+              "eticheta": "ePantofi",
+              "pret": 449,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "answear.ro",
+              "eticheta": "Answear",
+              "pret": 479,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 499,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 4,
+          "badge": "Cea mai incapatoare",
+          "badge_color": "blue",
+          "nume": "Geanta Shopper XL",
+          "model": "Shopper XL",
+          "imagine": "https://picsum.photos/seed/shopper-xl/400/280",
+          "pret_de_la": 199,
+          "moneda": "RON",
+          "scor_total": 8.9,
+          "scoruri": {
+            "Calitate": 8.6,
+            "Capacitate": 9.7,
+            "Stil": 8.6,
+            "Functionalitate": 9.3,
+            "Pret/Calitate": 9.1
+          },
+          "verdict_scurt": "Shopper mare pentru cumparaturi, plaja sau weekend",
+          "verdict_detaliat": "O shopper XL extrem de incapatoare, ideala pentru cumparaturi, plaja sau o escapada de weekend. Rezistenta si usor de purtat pe umar.",
+          "pro": [
+            "Capacitate uriasa",
+            "Rezistenta",
+            "Multifunctionala"
+          ],
+          "contra": [
+            "Mai putin eleganta",
+            "Lipsa structura"
+          ],
+          "specificatii": {
+            "Material": "Canvas / PU",
+            "Dimensiuni": "42x35x15 cm",
+            "Compartimente": "1 mare + buzunar",
+            "Inchidere": "Magnetica"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "answear.ro",
+              "eticheta": "Answear",
+              "pret": 199,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 219,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 5,
+          "badge": "Cea mai buna buget",
+          "badge_color": "gray",
+          "nume": "Geanta plic clutch",
+          "model": "Clutch Evening",
+          "imagine": "https://picsum.photos/seed/clutch/400/280",
+          "pret_de_la": 89,
+          "moneda": "RON",
+          "scor_total": 8.4,
+          "scoruri": {
+            "Calitate": 8.2,
+            "Capacitate": 7.6,
+            "Stil": 9.2,
+            "Functionalitate": 8.0,
+            "Pret/Calitate": 9.4
+          },
+          "verdict_scurt": "Plic elegant pentru evenimente, sub 100 lei",
+          "verdict_detaliat": "Un clutch elegant pentru seri si evenimente, cu detalii metalice si lant detasabil. Cea mai accesibila modalitate de a completa o tinuta de ocazie.",
+          "pro": [
+            "Pret mic",
+            "Elegant pentru evenimente",
+            "Lant detasabil"
+          ],
+          "contra": [
+            "Capacitate foarte mica",
+            "Doar pentru ocazii"
+          ],
+          "specificatii": {
+            "Material": "Satin / PU",
+            "Dimensiuni": "24x13x4 cm",
+            "Lant": "Detasabil",
+            "Inchidere": "Clic-clac"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "answear.ro",
+              "eticheta": "Answear",
+              "pret": 89,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "epantofi.ro",
+              "eticheta": "ePantofi",
+              "pret": 99,
+              "recomandat": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "bijuterii-argint",
+      "titlu": "Cele mai bune bijuterii din argint 2026",
+      "titlu_scurt": "Bijuterii argint",
+      "emoji": "💍",
+      "culoare": "blue",
+      "tag": "CADOU IDEAL",
+      "descriere": "Top 5 bijuterii din argint 925 pentru cadou — coliere, cercei, inele si bratari evaluate pentru calitate si raport pret/valoare.",
+      "produse": [
+        {
+          "pozitie": 1,
+          "badge": "Alegerea Redactiei",
+          "badge_color": "orange",
+          "nume": "Colier argint 925 cu pandantiv",
+          "model": "Inima Zirconiu",
+          "imagine": "https://picsum.photos/seed/colier-925/400/280",
+          "pret_de_la": 149,
+          "moneda": "RON",
+          "scor_total": 9.3,
+          "scoruri": {
+            "Calitate": 9.4,
+            "Design": 9.2,
+            "Durabilitate": 9.0,
+            "Ambalaj cadou": 9.5,
+            "Pret/Calitate": 9.3
+          },
+          "verdict_scurt": "Cel mai popular cadou — colier argint cu pandantiv zirconiu",
+          "verdict_detaliat": "Un colier din argint 925 cu pandantiv in forma de inima si zirconiu cubic, livrat in cutie cadou. Cea mai sigura alegere pentru aniversari, Valentine's si ocazii speciale.",
+          "pro": [
+            "Argint 925 certificat",
+            "Cutie cadou inclusa",
+            "Design atemporal",
+            "Pret excelent pentru cadou"
+          ],
+          "contra": [
+            "Lant subtire la unele modele",
+            "Zirconiu, nu diamant"
+          ],
+          "specificatii": {
+            "Material": "Argint 925",
+            "Piatra": "Zirconiu cubic",
+            "Lungime lant": "40-45 cm reglabil",
+            "Ambalaj": "Cutie cadou"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 149,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "answear.ro",
+              "eticheta": "Answear",
+              "pret": 169,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 2,
+          "badge": "Cel mai bun raport pret",
+          "badge_color": "green",
+          "nume": "Cercei argint 925 tortite",
+          "model": "Hoops Clasic",
+          "imagine": "https://picsum.photos/seed/cercei-hoops/400/280",
+          "pret_de_la": 79,
+          "moneda": "RON",
+          "scor_total": 9.0,
+          "scoruri": {
+            "Calitate": 8.9,
+            "Design": 9.0,
+            "Durabilitate": 8.8,
+            "Ambalaj cadou": 8.6,
+            "Pret/Calitate": 9.5
+          },
+          "verdict_scurt": "Cercei hoops versatili pentru purtare zilnica",
+          "verdict_detaliat": "Cercei rotunzi (hoops) din argint 925, usori si versatili, potriviti pentru orice tinuta. Cel mai bun raport pret/calitate pentru purtare de zi cu zi.",
+          "pro": [
+            "Foarte versatili",
+            "Usori si comozi",
+            "Pret accesibil",
+            "Argint 925"
+          ],
+          "contra": [
+            "Design simplu",
+            "Fara piatra"
+          ],
+          "specificatii": {
+            "Material": "Argint 925",
+            "Diametru": "20 mm",
+            "Inchidere": "Click",
+            "Greutate": "Usori"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 79,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "answear.ro",
+              "eticheta": "Answear",
+              "pret": 89,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 3,
+          "badge": "Cel mai elegant",
+          "badge_color": "purple",
+          "nume": "Set argint colier + cercei",
+          "model": "Set Bridal",
+          "imagine": "https://picsum.photos/seed/set-bridal/400/280",
+          "pret_de_la": 229,
+          "moneda": "RON",
+          "scor_total": 9.2,
+          "scoruri": {
+            "Calitate": 9.3,
+            "Design": 9.4,
+            "Durabilitate": 9.0,
+            "Ambalaj cadou": 9.4,
+            "Pret/Calitate": 8.9
+          },
+          "verdict_scurt": "Set complet colier si cercei pentru ocazii speciale",
+          "verdict_detaliat": "Un set coordonat din argint 925 cu colier si cercei asortati, perfect pentru nunti, botezuri si evenimente. Livrat in cutie premium, ideal pentru un cadou impresionant.",
+          "pro": [
+            "Set coordonat complet",
+            "Aspect premium",
+            "Cutie cadou premium",
+            "Ideal pentru evenimente"
+          ],
+          "contra": [
+            "Pret mai mare",
+            "Mai festiv decat casual"
+          ],
+          "specificatii": {
+            "Material": "Argint 925",
+            "Continut": "Colier + 1 pereche cercei",
+            "Pietre": "Zirconiu",
+            "Ambalaj": "Cutie premium"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 229,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "answear.ro",
+              "eticheta": "Answear",
+              "pret": 259,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 4,
+          "badge": "Cel mai versatil",
+          "badge_color": "blue",
+          "nume": "Bratara argint cu charm",
+          "model": "Charm Bracelet",
+          "imagine": "https://picsum.photos/seed/bratara-charm/400/280",
+          "pret_de_la": 119,
+          "moneda": "RON",
+          "scor_total": 8.9,
+          "scoruri": {
+            "Calitate": 8.8,
+            "Design": 9.1,
+            "Durabilitate": 8.7,
+            "Ambalaj cadou": 9.0,
+            "Pret/Calitate": 9.2
+          },
+          "verdict_scurt": "Bratara cu charm-uri, personalizabila in timp",
+          "verdict_detaliat": "O bratara din argint 925 compatibila cu charm-uri, care poate fi personalizata cu talismane adaugate la fiecare ocazie. Un cadou care creste in timp.",
+          "pro": [
+            "Personalizabila cu charms",
+            "Cadou care creste in timp",
+            "Argint 925"
+          ],
+          "contra": [
+            "Charm-urile se cumpara separat",
+            "Inchidere fina"
+          ],
+          "specificatii": {
+            "Material": "Argint 925",
+            "Tip": "Snake bracelet compatibil charms",
+            "Lungime": "18-20 cm",
+            "Inchidere": "Clip siguranta"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 119,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "answear.ro",
+              "eticheta": "Answear",
+              "pret": 139,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 5,
+          "badge": "Cel mai bun buget",
+          "badge_color": "gray",
+          "nume": "Inel argint 925 reglabil",
+          "model": "Inel Minimalist",
+          "imagine": "https://picsum.photos/seed/inel-925/400/280",
+          "pret_de_la": 49,
+          "moneda": "RON",
+          "scor_total": 8.5,
+          "scoruri": {
+            "Calitate": 8.4,
+            "Design": 8.6,
+            "Durabilitate": 8.3,
+            "Ambalaj cadou": 8.2,
+            "Pret/Calitate": 9.4
+          },
+          "verdict_scurt": "Inel minimalist reglabil sub 60 lei",
+          "verdict_detaliat": "Un inel minimalist din argint 925, reglabil pentru a se potrivi oricarui deget. Cea mai accesibila bijuterie din argint, perfecta ca mic cadou sau accesoriu zilnic.",
+          "pro": [
+            "Foarte ieftin",
+            "Reglabil universal",
+            "Minimalist modern"
+          ],
+          "contra": [
+            "Subtire",
+            "Fara piatra"
+          ],
+          "specificatii": {
+            "Material": "Argint 925",
+            "Tip": "Reglabil",
+            "Marime": "Universala",
+            "Stil": "Minimalist"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 49,
+              "recomandat": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "jucarii-copii",
+      "titlu": "Cele mai bune jucarii pentru copii 2026",
+      "titlu_scurt": "Jucarii copii",
+      "emoji": "🧸",
+      "culoare": "yellow",
+      "tag": "CADOU IDEAL",
+      "descriere": "Top 5 jucarii educative si distractive pe categorii de varsta, evaluate pentru valoare educativa, calitate si distractie.",
+      "produse": [
+        {
+          "pozitie": 1,
+          "badge": "Alegerea Redactiei",
+          "badge_color": "orange",
+          "nume": "Set LEGO Classic constructie",
+          "model": "Classic 11717",
+          "imagine": "https://picsum.photos/seed/lego-classic/400/280",
+          "pret_de_la": 179,
+          "moneda": "RON",
+          "scor_total": 9.4,
+          "scoruri": {
+            "Valoare educativa": 9.6,
+            "Calitate": 9.5,
+            "Distractie": 9.4,
+            "Durabilitate": 9.5,
+            "Pret/Calitate": 9.2
+          },
+          "verdict_scurt": "Cea mai buna jucarie pentru creativitate, 4-99 ani",
+          "verdict_detaliat": "Un set LEGO Classic cu sute de piese variate stimuleaza creativitatea si motricitatea fina. Cadoul ideal care se joaca ani de zile si creste odata cu copilul.",
+          "pro": [
+            "Stimuleaza creativitatea",
+            "Durabilitate excelenta",
+            "Potrivit varsta larga",
+            "Compatibil cu alte seturi"
+          ],
+          "contra": [
+            "Piese mici (sub 3 ani nu)",
+            "Necesita spatiu depozitare"
+          ],
+          "specificatii": {
+            "Varsta": "4+ ani",
+            "Piese": "~500",
+            "Material": "Plastic ABS premium",
+            "Tip": "Constructie creativa"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "noriel.ro",
+              "eticheta": "Noriel",
+              "pret": 179,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 199,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "elefant.ro",
+              "eticheta": "Elefant",
+              "pret": 189,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 2,
+          "badge": "Cel mai bun raport pret",
+          "badge_color": "green",
+          "nume": "Puzzle educativ lemn",
+          "model": "Puzzle Animale",
+          "imagine": "https://picsum.photos/seed/puzzle-lemn/400/280",
+          "pret_de_la": 59,
+          "moneda": "RON",
+          "scor_total": 9.0,
+          "scoruri": {
+            "Valoare educativa": 9.3,
+            "Calitate": 8.9,
+            "Distractie": 8.8,
+            "Durabilitate": 9.1,
+            "Pret/Calitate": 9.5
+          },
+          "verdict_scurt": "Puzzle din lemn pentru dezvoltare cognitiva 2-5 ani",
+          "verdict_detaliat": "Un puzzle din lemn cu animale, ideal pentru dezvoltarea cognitiva si a coordonarii la copiii mici. Materiale sigure, sustenabile si pret excelent.",
+          "pro": [
+            "Lemn sigur sustenabil",
+            "Dezvolta logica",
+            "Pret mic",
+            "Durabil"
+          ],
+          "contra": [
+            "Numar limitat de piese",
+            "Pentru varsta mica"
+          ],
+          "specificatii": {
+            "Varsta": "2-5 ani",
+            "Material": "Lemn natural",
+            "Piese": "9-16",
+            "Tip": "Puzzle educativ"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "noriel.ro",
+              "eticheta": "Noriel",
+              "pret": 59,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "elefant.ro",
+              "eticheta": "Elefant",
+              "pret": 69,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 3,
+          "badge": "Cel mai distractiv",
+          "badge_color": "purple",
+          "nume": "Masina telecomanda off-road",
+          "model": "RC Buggy 4WD",
+          "imagine": "https://picsum.photos/seed/rc-buggy/400/280",
+          "pret_de_la": 199,
+          "moneda": "RON",
+          "scor_total": 9.1,
+          "scoruri": {
+            "Valoare educativa": 8.0,
+            "Calitate": 9.0,
+            "Distractie": 9.7,
+            "Durabilitate": 8.8,
+            "Pret/Calitate": 9.0
+          },
+          "verdict_scurt": "Masina RC 4WD pentru distractie maxima, 6+ ani",
+          "verdict_detaliat": "O masina cu telecomanda 4WD, rezistenta la teren accidentat, cu baterie reincarcabila. Cadoul preferat al copiilor activi care vor distractie in aer liber.",
+          "pro": [
+            "Distractie garantata",
+            "4WD off-road",
+            "Baterie reincarcabila",
+            "Rezistenta la socuri"
+          ],
+          "contra": [
+            "Autonomie ~20 min",
+            "Valoare educativa redusa"
+          ],
+          "specificatii": {
+            "Varsta": "6+ ani",
+            "Tractiune": "4WD",
+            "Autonomie": "~20 min",
+            "Raza": "~30m",
+            "Baterie": "Reincarcabila"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "noriel.ro",
+              "eticheta": "Noriel",
+              "pret": 199,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 229,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 4,
+          "badge": "Cel mai educativ",
+          "badge_color": "blue",
+          "nume": "Microscop / kit stiinta copii",
+          "model": "STEM Lab",
+          "imagine": "https://picsum.photos/seed/stem-lab/400/280",
+          "pret_de_la": 149,
+          "moneda": "RON",
+          "scor_total": 9.2,
+          "scoruri": {
+            "Valoare educativa": 9.7,
+            "Calitate": 9.0,
+            "Distractie": 9.0,
+            "Durabilitate": 8.8,
+            "Pret/Calitate": 9.1
+          },
+          "verdict_scurt": "Kit STEM care transforma invatarea in joaca, 8+ ani",
+          "verdict_detaliat": "Un kit de stiinta cu experimente sigure si microscop, care stimuleaza curiozitatea si gandirea logica. Ideal pentru copiii pasionati de descoperire.",
+          "pro": [
+            "Invatare prin joaca",
+            "Multe experimente incluse",
+            "Stimuleaza curiozitatea STEM"
+          ],
+          "contra": [
+            "Necesita supraveghere",
+            "Pentru copii mai mari"
+          ],
+          "specificatii": {
+            "Varsta": "8+ ani",
+            "Continut": "Microscop + 30 experimente",
+            "Domeniu": "STEM/stiinta",
+            "Material": "Plastic + sticla"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "noriel.ro",
+              "eticheta": "Noriel",
+              "pret": 149,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "elefant.ro",
+              "eticheta": "Elefant",
+              "pret": 169,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 159,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 5,
+          "badge": "Cel mai bun buget",
+          "badge_color": "gray",
+          "nume": "Set plus / jucarie senzoriala",
+          "model": "Plus Senzorial",
+          "imagine": "https://picsum.photos/seed/plus-senzorial/400/280",
+          "pret_de_la": 39,
+          "moneda": "RON",
+          "scor_total": 8.6,
+          "scoruri": {
+            "Valoare educativa": 8.4,
+            "Calitate": 8.5,
+            "Distractie": 8.8,
+            "Durabilitate": 8.6,
+            "Pret/Calitate": 9.3
+          },
+          "verdict_scurt": "Jucarie de plus moale, sigura pentru bebelusi",
+          "verdict_detaliat": "O jucarie de plus moale si sigura, perfecta pentru bebelusi si copii mici. Materiale hipoalergenice, lavabila, ideala ca prim cadou la pret mic.",
+          "pro": [
+            "Sigura pentru bebelusi",
+            "Materiale moi lavabile",
+            "Pret foarte mic"
+          ],
+          "contra": [
+            "Simpla",
+            "Fara componenta educativa avansata"
+          ],
+          "specificatii": {
+            "Varsta": "0+ ani",
+            "Material": "Plus hipoalergenic",
+            "Intretinere": "Lavabila",
+            "Tip": "Senzorial/confort"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "noriel.ro",
+              "eticheta": "Noriel",
+              "pret": 39,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 45,
+              "recomandat": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "suplimente-fitness",
+      "titlu": "Cele mai bune suplimente fitness 2026",
+      "titlu_scurt": "Suplimente fitness",
+      "emoji": "💪",
+      "culoare": "red",
+      "tag": "RECOMANDAT",
+      "descriere": "Top 5 suplimente esentiale pentru masa musculara si recuperare, evaluate pentru eficienta, ingrediente si raport pret/portie.",
+      "produse": [
+        {
+          "pozitie": 1,
+          "badge": "Alegerea Redactiei",
+          "badge_color": "orange",
+          "nume": "Proteina Whey izolat",
+          "model": "Whey Isolate 900g",
+          "imagine": "https://picsum.photos/seed/whey-iso/400/280",
+          "pret_de_la": 169,
+          "moneda": "RON",
+          "scor_total": 9.4,
+          "scoruri": {
+            "Eficienta": 9.5,
+            "Ingrediente": 9.3,
+            "Gust": 9.0,
+            "Solubilitate": 9.2,
+            "Pret/Portie": 9.2
+          },
+          "verdict_scurt": "Cea mai buna proteina pentru crestere si recuperare musculara",
+          "verdict_detaliat": "O proteina whey izolat cu peste 80% proteina per portie, absorbtie rapida si continut scazut de lactoza. Esentiala pentru oricine vrea masa musculara si recuperare optima.",
+          "pro": [
+            "80%+ proteina per portie",
+            "Absorbtie rapida",
+            "Lactoza redusa",
+            "Se dizolva usor"
+          ],
+          "contra": [
+            "Pret mai mare ca whey concentrat",
+            "Gust variabil intre arome"
+          ],
+          "specificatii": {
+            "Tip": "Whey izolat",
+            "Proteina/portie": "~27g",
+            "Portii": "30",
+            "Aroma": "Ciocolata/vanilie"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "secom.ro",
+              "eticheta": "Secom",
+              "pret": 169,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "farmacia-tei.ro",
+              "eticheta": "Farmacia Tei",
+              "pret": 189,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 179,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 2,
+          "badge": "Cel mai bun raport pret",
+          "badge_color": "green",
+          "nume": "Creatina monohidrat",
+          "model": "Creatine 500g",
+          "imagine": "https://picsum.photos/seed/creatina/400/280",
+          "pret_de_la": 89,
+          "moneda": "RON",
+          "scor_total": 9.3,
+          "scoruri": {
+            "Eficienta": 9.6,
+            "Ingrediente": 9.4,
+            "Gust": 8.5,
+            "Solubilitate": 8.8,
+            "Pret/Portie": 9.6
+          },
+          "verdict_scurt": "Suplimentul cu cele mai multe dovezi stiintifice, pret mic",
+          "verdict_detaliat": "Creatina monohidrat este cel mai studiat si eficient supliment pentru forta si masa musculara. 500g acopera luni intregi la un pret excelent — un must-have.",
+          "pro": [
+            "Eficienta dovedita stiintific",
+            "Foarte ieftin pe portie",
+            "Creste forta si masa"
+          ],
+          "contra": [
+            "Retentie usoara de apa initial",
+            "Fara aroma"
+          ],
+          "specificatii": {
+            "Tip": "Monohidrat micronizat",
+            "Doza zilnica": "5g",
+            "Portii": "100",
+            "Aroma": "Neutra"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "secom.ro",
+              "eticheta": "Secom",
+              "pret": 89,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "farmacia-tei.ro",
+              "eticheta": "Farmacia Tei",
+              "pret": 99,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 3,
+          "badge": "Cea mai buna recuperare",
+          "badge_color": "purple",
+          "nume": "BCAA / EAA pudra",
+          "model": "EAA 400g",
+          "imagine": "https://picsum.photos/seed/eaa/400/280",
+          "pret_de_la": 129,
+          "moneda": "RON",
+          "scor_total": 9.0,
+          "scoruri": {
+            "Eficienta": 9.0,
+            "Ingrediente": 9.2,
+            "Gust": 9.3,
+            "Solubilitate": 9.0,
+            "Pret/Portie": 8.7
+          },
+          "verdict_scurt": "Aminoacizi esentiali pentru recuperare si anti-catabolism",
+          "verdict_detaliat": "Un complex de aminoacizi esentiali (EAA) care sustine recuperarea si reduce catabolismul muscular in timpul antrenamentelor lungi sau in deficit caloric.",
+          "pro": [
+            "Sustine recuperarea",
+            "Gust placut intra-workout",
+            "Util in deficit caloric"
+          ],
+          "contra": [
+            "Mai putin esential daca aportul de proteina e suficient",
+            "Pret per portie mediu"
+          ],
+          "specificatii": {
+            "Tip": "EAA complet",
+            "Aminoacizi": "Toti 9 esentiali",
+            "Portii": "40",
+            "Aroma": "Fructe"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "secom.ro",
+              "eticheta": "Secom",
+              "pret": 129,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 145,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 4,
+          "badge": "Cel mai bun pre-workout",
+          "badge_color": "blue",
+          "nume": "Pre-workout cu cofeina",
+          "model": "Pre-WO 300g",
+          "imagine": "https://picsum.photos/seed/preworkout/400/280",
+          "pret_de_la": 119,
+          "moneda": "RON",
+          "scor_total": 8.9,
+          "scoruri": {
+            "Eficienta": 9.1,
+            "Ingrediente": 8.8,
+            "Gust": 9.2,
+            "Solubilitate": 9.0,
+            "Pret/Portie": 8.6
+          },
+          "verdict_scurt": "Energie si focus pentru antrenamente intense",
+          "verdict_detaliat": "Un pre-workout cu cofeina, beta-alanina si citrulina pentru energie, focus si pompa musculara. Ideal pentru sesiunile grele cand ai nevoie de un boost.",
+          "pro": [
+            "Energie si focus crescut",
+            "Pompa musculara buna",
+            "Gust bun"
+          ],
+          "contra": [
+            "Cofeina poate afecta somnul seara",
+            "Furnicaturi de la beta-alanina"
+          ],
+          "specificatii": {
+            "Tip": "Pre-workout stimulant",
+            "Cofeina/portie": "~200mg",
+            "Portii": "30",
+            "Aroma": "Fructe"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "secom.ro",
+              "eticheta": "Secom",
+              "pret": 119,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 135,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 5,
+          "badge": "Cel mai bun buget",
+          "badge_color": "gray",
+          "nume": "Vitamina D3 + Omega 3",
+          "model": "D3+Omega",
+          "imagine": "https://picsum.photos/seed/d3-omega/400/280",
+          "pret_de_la": 49,
+          "moneda": "RON",
+          "scor_total": 8.7,
+          "scoruri": {
+            "Eficienta": 8.8,
+            "Ingrediente": 9.0,
+            "Gust": 8.5,
+            "Solubilitate": 8.5,
+            "Pret/Portie": 9.3
+          },
+          "verdict_scurt": "Baza de sanatate accesibila pentru orice sportiv",
+          "verdict_detaliat": "Combinatia D3 + Omega 3 sustine sanatatea articulatiilor, imunitatea si recuperarea. Un supliment de baza, ieftin, recomandat oricarui sportiv, mai ales iarna.",
+          "pro": [
+            "Sustine articulatiile si imunitatea",
+            "Pret foarte mic",
+            "Util tot anul"
+          ],
+          "contra": [
+            "Efect indirect asupra performantei",
+            "Necesita consum constant"
+          ],
+          "specificatii": {
+            "Tip": "Vitamina D3 + ulei de peste",
+            "D3/portie": "2000 UI",
+            "Portii": "60",
+            "Forma": "Capsule"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "secom.ro",
+              "eticheta": "Secom",
+              "pret": 49,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "farmacia-tei.ro",
+              "eticheta": "Farmacia Tei",
+              "pret": 55,
+              "recomandat": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "scaune-birou",
+      "titlu": "Cele mai bune scaune de birou ergonomice 2026",
+      "titlu_scurt": "Scaune birou",
+      "emoji": "🪑",
+      "culoare": "blue",
+      "tag": "POPULAR",
+      "descriere": "Top 5 scaune de birou ergonomice pentru lucru de acasa, evaluate pentru confort, suport lombar si durabilitate.",
+      "produse": [
+        {
+          "pozitie": 1,
+          "badge": "Alegerea Redactiei",
+          "badge_color": "orange",
+          "nume": "Scaun ergonomic mesh premium",
+          "model": "ErgoMesh Pro",
+          "imagine": "https://picsum.photos/seed/ergomesh/400/280",
+          "pret_de_la": 1290,
+          "moneda": "RON",
+          "scor_total": 9.4,
+          "scoruri": {
+            "Confort": 9.5,
+            "Suport lombar": 9.6,
+            "Reglaje": 9.4,
+            "Durabilitate": 9.3,
+            "Pret/Calitate": 9.0
+          },
+          "verdict_scurt": "Cel mai bun scaun ergonomic pentru lucru 8h+ pe zi",
+          "verdict_detaliat": "Un scaun ergonomic cu spatar din mesh respirabil, suport lombar reglabil si cotiere 4D. Cea mai buna alegere pentru cei care lucreaza multe ore la birou, cu sustinere reala a spatelui.",
+          "pro": [
+            "Suport lombar reglabil excelent",
+            "Mesh respirabil",
+            "Cotiere 4D",
+            "Constructie solida"
+          ],
+          "contra": [
+            "Pret ridicat",
+            "Asamblare necesara"
+          ],
+          "specificatii": {
+            "Tip spatar": "Mesh respirabil",
+            "Lombar": "Reglabil pe inaltime",
+            "Cotiere": "4D",
+            "Greutate maxima": "120 kg",
+            "Inclinare": "Pana la 135°"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 1290,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 1390,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "vidaxl.ro",
+              "eticheta": "vidaXL",
+              "pret": 1350,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 2,
+          "badge": "Cel mai bun raport pret",
+          "badge_color": "green",
+          "nume": "Scaun birou mesh mid-back",
+          "model": "ComfortMesh",
+          "imagine": "https://picsum.photos/seed/comfortmesh/400/280",
+          "pret_de_la": 549,
+          "moneda": "RON",
+          "scor_total": 9.0,
+          "scoruri": {
+            "Confort": 8.9,
+            "Suport lombar": 8.8,
+            "Reglaje": 8.6,
+            "Durabilitate": 8.8,
+            "Pret/Calitate": 9.5
+          },
+          "verdict_scurt": "Ergonomie decenta la pret accesibil pentru home-office",
+          "verdict_detaliat": "Un scaun mesh mid-back cu suport lombar de baza si reglaje esentiale, ideal pentru home-office la un pret accesibil. Cel mai bun raport pret/ergonomie sub 600 lei.",
+          "pro": [
+            "Pret excelent",
+            "Mesh respirabil",
+            "Reglaje esentiale",
+            "Asamblare usoara"
+          ],
+          "contra": [
+            "Lombar mai putin reglabil",
+            "Cotiere simple"
+          ],
+          "specificatii": {
+            "Tip spatar": "Mesh mid-back",
+            "Lombar": "Fix integrat",
+            "Cotiere": "Fixe/2D",
+            "Greutate maxima": "110 kg"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 549,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 599,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "vidaxl.ro",
+              "eticheta": "vidaXL",
+              "pret": 569,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 3,
+          "badge": "Cel mai confortabil",
+          "badge_color": "purple",
+          "nume": "Scaun executiv piele ecologica",
+          "model": "Executive Lux",
+          "imagine": "https://picsum.photos/seed/executive/400/280",
+          "pret_de_la": 899,
+          "moneda": "RON",
+          "scor_total": 9.1,
+          "scoruri": {
+            "Confort": 9.4,
+            "Suport lombar": 9.0,
+            "Reglaje": 8.8,
+            "Durabilitate": 9.0,
+            "Pret/Calitate": 8.8
+          },
+          "verdict_scurt": "Confort plush si aspect premium pentru birou clasic",
+          "verdict_detaliat": "Un scaun executiv din piele ecologica, cu padding generos si tetiera, pentru cei care prefera confortul plush si un aspect elegant clasic in detrimentul mesh-ului sportiv.",
+          "pro": [
+            "Confort plush superior",
+            "Aspect premium",
+            "Tetiera inclusa"
+          ],
+          "contra": [
+            "Mai putin respirabil decat mesh",
+            "Voluminos"
+          ],
+          "specificatii": {
+            "Tip spatar": "Piele ecologica + padding",
+            "Tetiera": "Da",
+            "Cotiere": "Reglabile pe inaltime",
+            "Greutate maxima": "130 kg"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 899,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "vidaxl.ro",
+              "eticheta": "vidaXL",
+              "pret": 949,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 4,
+          "badge": "Cel mai bun gaming/birou",
+          "badge_color": "blue",
+          "nume": "Scaun hibrid gaming-office",
+          "model": "HybridChair",
+          "imagine": "https://picsum.photos/seed/hybrid/400/280",
+          "pret_de_la": 749,
+          "moneda": "RON",
+          "scor_total": 8.9,
+          "scoruri": {
+            "Confort": 9.0,
+            "Suport lombar": 8.9,
+            "Reglaje": 9.0,
+            "Durabilitate": 8.7,
+            "Pret/Calitate": 9.1
+          },
+          "verdict_scurt": "Hibrid gaming-office cu perne lombare si cervicale",
+          "verdict_detaliat": "Un scaun hibrid care imbina estetica gaming cu ergonomia de birou: perne lombare si cervicale, inclinare ampla si cotiere reglabile. Bun pentru lucru si relaxare.",
+          "pro": [
+            "Versatil munca/gaming",
+            "Perne lombar+cervical",
+            "Inclinare ampla 155°"
+          ],
+          "contra": [
+            "Estetica gaming nu place tuturor",
+            "Padding se aseaza in timp"
+          ],
+          "specificatii": {
+            "Tip spatar": "Imitatie piele + perne",
+            "Inclinare": "Pana la 155°",
+            "Cotiere": "Reglabile",
+            "Greutate maxima": "120 kg"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 749,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 799,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "pcgarage.ro",
+              "eticheta": "PC Garage",
+              "pret": 779,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 5,
+          "badge": "Cel mai bun buget",
+          "badge_color": "gray",
+          "nume": "Scaun birou simplu reglabil",
+          "model": "BasicTask",
+          "imagine": "https://picsum.photos/seed/basictask/400/280",
+          "pret_de_la": 299,
+          "moneda": "RON",
+          "scor_total": 8.3,
+          "scoruri": {
+            "Confort": 8.2,
+            "Suport lombar": 7.9,
+            "Reglaje": 8.0,
+            "Durabilitate": 8.2,
+            "Pret/Calitate": 9.2
+          },
+          "verdict_scurt": "Scaun functional pentru utilizare ocazionala, sub 300 lei",
+          "verdict_detaliat": "Un scaun de birou simplu, cu reglaj de inaltime si inclinare de baza, potrivit pentru utilizare ocazionala sau bugete stranse. Functional si accesibil.",
+          "pro": [
+            "Pret foarte mic",
+            "Reglaj inaltime",
+            "Compact"
+          ],
+          "contra": [
+            "Suport lombar minimal",
+            "Nu pentru 8h zilnic"
+          ],
+          "specificatii": {
+            "Tip spatar": "Mesh/textil mic",
+            "Lombar": "Minimal",
+            "Cotiere": "Fixe",
+            "Greutate maxima": "100 kg"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 299,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "vidaxl.ro",
+              "eticheta": "vidaXL",
+              "pret": 319,
+              "recomandat": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "tablete",
+      "titlu": "Cele mai bune tablete 2026",
+      "titlu_scurt": "Tablete",
+      "emoji": "📲",
+      "culoare": "blue",
+      "tag": "POPULAR",
+      "descriere": "Top 5 tablete pentru divertisment, productivitate si copii, evaluate pentru performanta, ecran si autonomie.",
+      "produse": [
+        {
+          "pozitie": 1,
+          "badge": "Alegerea Redactiei",
+          "badge_color": "orange",
+          "nume": "Apple iPad (A16)",
+          "model": "iPad 11",
+          "imagine": "https://picsum.photos/seed/ipad-a16/400/280",
+          "pret_de_la": 2199,
+          "moneda": "RON",
+          "scor_total": 9.5,
+          "scoruri": {
+            "Performanta": 9.5,
+            "Ecran": 9.4,
+            "Autonomie": 9.3,
+            "Software": 9.7,
+            "Pret/Calitate": 9.1
+          },
+          "verdict_scurt": "Cea mai buna tableta pentru majoritatea utilizatorilor",
+          "verdict_detaliat": "iPad-ul de baza ramane cea mai echilibrata tableta: chip rapid A16, ecran Liquid Retina excelent si suport software indelungat. Perfect pentru divertisment, scoala si productivitate usoara.",
+          "pro": [
+            "Performanta excelenta",
+            "Suport software 6+ ani",
+            "Ecosistem accesorii bogat",
+            "Autonomie buna"
+          ],
+          "contra": [
+            "Stylus si tastatura separate",
+            "Stocare de baza 128GB"
+          ],
+          "specificatii": {
+            "Ecran": "11 inch Liquid Retina",
+            "Chip": "A16",
+            "Stocare": "128/256 GB",
+            "Autonomie": "~10h",
+            "Conectivitate": "Wi-Fi / 5G optional"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 2199,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 2299,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "evomag.ro",
+              "eticheta": "evoMAG",
+              "pret": 2249,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 2,
+          "badge": "Cel mai bun raport pret",
+          "badge_color": "green",
+          "nume": "Xiaomi Redmi Pad SE",
+          "model": "Redmi Pad SE",
+          "imagine": "https://picsum.photos/seed/redmi-pad/400/280",
+          "pret_de_la": 799,
+          "moneda": "RON",
+          "scor_total": 9.1,
+          "scoruri": {
+            "Performanta": 8.8,
+            "Ecran": 9.0,
+            "Autonomie": 9.3,
+            "Software": 8.7,
+            "Pret/Calitate": 9.6
+          },
+          "verdict_scurt": "Cea mai buna tableta Android sub 900 lei",
+          "verdict_detaliat": "Redmi Pad SE ofera un ecran mare de 11 inch 90Hz, autonomie excelenta si performanta decenta pentru media si navigare, la un pret imbatabil. Ideal pentru consum de continut.",
+          "pro": [
+            "Pret excelent",
+            "Ecran 90Hz mare",
+            "Autonomie foarte buna",
+            "Difuzoare bune"
+          ],
+          "contra": [
+            "Performanta medie la jocuri grele",
+            "Fara 5G"
+          ],
+          "specificatii": {
+            "Ecran": "11 inch 90Hz",
+            "Chip": "Snapdragon 680",
+            "Stocare": "128/256 GB",
+            "Autonomie": "~12h",
+            "Conectivitate": "Wi-Fi"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 799,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 849,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "quickmobile.ro",
+              "eticheta": "QuickMobile",
+              "pret": 829,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 3,
+          "badge": "Cea mai buna premium",
+          "badge_color": "purple",
+          "nume": "Samsung Galaxy Tab S9 FE",
+          "model": "Tab S9 FE",
+          "imagine": "https://picsum.photos/seed/tab-s9fe/400/280",
+          "pret_de_la": 1999,
+          "moneda": "RON",
+          "scor_total": 9.3,
+          "scoruri": {
+            "Performanta": 9.2,
+            "Ecran": 9.4,
+            "Autonomie": 9.2,
+            "Software": 9.1,
+            "Pret/Calitate": 8.9
+          },
+          "verdict_scurt": "Premium Android cu S Pen inclus si rezistenta la apa",
+          "verdict_detaliat": "Galaxy Tab S9 FE vine cu S Pen inclus, ecran de 10.9 inch si rezistenta IP68, fiind alegerea premium Android pentru notite, desen si productivitate.",
+          "pro": [
+            "S Pen inclus",
+            "Rezistenta la apa IP68",
+            "Ecran foarte bun",
+            "DeX pentru productivitate"
+          ],
+          "contra": [
+            "Pret ridicat",
+            "Incarcator separat"
+          ],
+          "specificatii": {
+            "Ecran": "10.9 inch 90Hz",
+            "Chip": "Exynos 1380",
+            "Stocare": "128/256 GB",
+            "S Pen": "Inclus",
+            "Rezistenta": "IP68"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 1999,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 2099,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "evomag.ro",
+              "eticheta": "evoMAG",
+              "pret": 2049,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 4,
+          "badge": "Cea mai buna pentru copii",
+          "badge_color": "blue",
+          "nume": "Lenovo Tab M11 Kids",
+          "model": "Tab M11",
+          "imagine": "https://picsum.photos/seed/tab-m11/400/280",
+          "pret_de_la": 999,
+          "moneda": "RON",
+          "scor_total": 8.9,
+          "scoruri": {
+            "Performanta": 8.6,
+            "Ecran": 8.9,
+            "Autonomie": 9.2,
+            "Software": 8.8,
+            "Pret/Calitate": 9.2
+          },
+          "verdict_scurt": "Tableta robusta cu control parental pentru copii",
+          "verdict_detaliat": "Tab M11 cu husa de protectie si control parental Google Kids Space este ideala pentru cei mici: rezistenta, autonomie buna si continut sigur, supravegheat.",
+          "pro": [
+            "Husa protectie inclusa",
+            "Control parental robust",
+            "Autonomie buna",
+            "Stylus inclus la unele variante"
+          ],
+          "contra": [
+            "Performanta modesta",
+            "Ecran LCD obisnuit"
+          ],
+          "specificatii": {
+            "Ecran": "11 inch 90Hz",
+            "Chip": "MediaTek G88",
+            "Stocare": "128 GB",
+            "Extra": "Husa + control parental",
+            "Autonomie": "~11h"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 999,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 1049,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 5,
+          "badge": "Cea mai buna buget",
+          "badge_color": "gray",
+          "nume": "Lenovo Tab M9",
+          "model": "Tab M9",
+          "imagine": "https://picsum.photos/seed/tab-m9/400/280",
+          "pret_de_la": 549,
+          "moneda": "RON",
+          "scor_total": 8.4,
+          "scoruri": {
+            "Performanta": 8.0,
+            "Ecran": 8.3,
+            "Autonomie": 8.8,
+            "Software": 8.4,
+            "Pret/Calitate": 9.3
+          },
+          "verdict_scurt": "Tableta de baza pentru media si navigare, sub 600 lei",
+          "verdict_detaliat": "Tab M9 acopera nevoile de baza — YouTube, navigare, citit — la un pret mic. Cea mai accesibila tableta de incredere pentru utilizare casual sau a doua tableta in casa.",
+          "pro": [
+            "Pret foarte mic",
+            "Compacta si usoara",
+            "Autonomie decenta"
+          ],
+          "contra": [
+            "Performanta limitata",
+            "Ecran HD obisnuit"
+          ],
+          "specificatii": {
+            "Ecran": "9 inch HD",
+            "Chip": "MediaTek G80",
+            "Stocare": "32/64 GB",
+            "Autonomie": "~10h",
+            "Conectivitate": "Wi-Fi/LTE"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 549,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 579,
+              "recomandat": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "casti-gaming",
+      "titlu": "Cele mai bune casti gaming 2026",
+      "titlu_scurt": "Casti gaming",
+      "emoji": "🎧",
+      "culoare": "purple",
+      "tag": "RECOMANDAT",
+      "descriere": "Top 5 casti gaming wireless si cu fir, evaluate pentru sunet, microfon, confort si autonomie.",
+      "produse": [
+        {
+          "pozitie": 1,
+          "badge": "Alegerea Redactiei",
+          "badge_color": "orange",
+          "nume": "SteelSeries Arctis Nova 7",
+          "model": "Nova 7",
+          "imagine": "https://picsum.photos/seed/nova7/400/280",
+          "pret_de_la": 749,
+          "moneda": "RON",
+          "scor_total": 9.4,
+          "scoruri": {
+            "Sunet": 9.4,
+            "Microfon": 9.3,
+            "Confort": 9.5,
+            "Autonomie": 9.2,
+            "Pret/Calitate": 9.1
+          },
+          "verdict_scurt": "Cele mai echilibrate casti gaming wireless",
+          "verdict_detaliat": "Arctis Nova 7 ofera sunet excelent, microfon clar retractabil si un confort de top pentru sesiuni lungi. Conectivitate dual wireless (2.4GHz + Bluetooth) o face extrem de versatila.",
+          "pro": [
+            "Confort exceptional",
+            "Microfon clar",
+            "Dual wireless 2.4G+BT",
+            "Autonomie ~38h"
+          ],
+          "contra": [
+            "Pret peste medie",
+            "Fara ANC"
+          ],
+          "specificatii": {
+            "Conectivitate": "2.4GHz + Bluetooth",
+            "Autonomie": "~38h",
+            "Driver": "40mm",
+            "Microfon": "Retractabil ClearCast",
+            "Compatibilitate": "PC/PS/Switch"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 749,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "pcgarage.ro",
+              "eticheta": "PC Garage",
+              "pret": 779,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 799,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 2,
+          "badge": "Cel mai bun raport pret",
+          "badge_color": "green",
+          "nume": "HyperX Cloud Stinger 2",
+          "model": "Stinger 2",
+          "imagine": "https://picsum.photos/seed/stinger2/400/280",
+          "pret_de_la": 219,
+          "moneda": "RON",
+          "scor_total": 9.1,
+          "scoruri": {
+            "Sunet": 8.9,
+            "Microfon": 8.8,
+            "Confort": 9.0,
+            "Autonomie": 8.0,
+            "Pret/Calitate": 9.6
+          },
+          "verdict_scurt": "Cele mai bune casti gaming cu fir sub 250 lei",
+          "verdict_detaliat": "Cloud Stinger 2 ofera sunet bun, microfon decent si confort surprinzator la un pret mic. Cea mai sigura alegere cu fir pentru bugete reduse.",
+          "pro": [
+            "Pret excelent",
+            "Confortabile usoare",
+            "Microfon swivel-to-mute",
+            "Sunet bun"
+          ],
+          "contra": [
+            "Cu fir doar",
+            "Constructie plastic"
+          ],
+          "specificatii": {
+            "Conectivitate": "Cu fir 3.5mm",
+            "Driver": "50mm",
+            "Microfon": "Flip-to-mute",
+            "Greutate": "~275g",
+            "Compatibilitate": "PC/console"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 219,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "pcgarage.ro",
+              "eticheta": "PC Garage",
+              "pret": 239,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 3,
+          "badge": "Cele mai premium",
+          "badge_color": "purple",
+          "nume": "Razer BlackShark V2 Pro",
+          "model": "BlackShark V2 Pro",
+          "imagine": "https://picsum.photos/seed/blackshark/400/280",
+          "pret_de_la": 999,
+          "moneda": "RON",
+          "scor_total": 9.3,
+          "scoruri": {
+            "Sunet": 9.5,
+            "Microfon": 9.4,
+            "Confort": 9.3,
+            "Autonomie": 9.0,
+            "Pret/Calitate": 8.8
+          },
+          "verdict_scurt": "Premium e-sport cu sunet detaliat si microfon de top",
+          "verdict_detaliat": "BlackShark V2 Pro este alegerea pentru jucatorii competitivi: sunet detaliat cu directionalitate excelenta, microfon detasabil de calitate si izolare buna a zgomotului.",
+          "pro": [
+            "Sunet competitiv detaliat",
+            "Microfon detasabil excelent",
+            "Izolare buna",
+            "Wireless lag redus"
+          ],
+          "contra": [
+            "Pret premium",
+            "Estetica e-sport sobra"
+          ],
+          "specificatii": {
+            "Conectivitate": "2.4GHz wireless",
+            "Autonomie": "~70h",
+            "Driver": "50mm TriForce",
+            "Microfon": "HyperClear detasabil",
+            "Compatibilitate": "PC/PS"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 999,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "pcgarage.ro",
+              "eticheta": "PC Garage",
+              "pret": 1049,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "evomag.ro",
+              "eticheta": "evoMAG",
+              "pret": 1029,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 4,
+          "badge": "Cel mai bun confort",
+          "badge_color": "blue",
+          "nume": "Logitech G535 Wireless",
+          "model": "G535",
+          "imagine": "https://picsum.photos/seed/g535/400/280",
+          "pret_de_la": 449,
+          "moneda": "RON",
+          "scor_total": 9.0,
+          "scoruri": {
+            "Sunet": 8.9,
+            "Microfon": 8.7,
+            "Confort": 9.4,
+            "Autonomie": 8.8,
+            "Pret/Calitate": 9.2
+          },
+          "verdict_scurt": "Wireless usor si confortabil pentru sesiuni lungi",
+          "verdict_detaliat": "G535 este una dintre cele mai usoare casti wireless, foarte confortabila pentru ore intregi de joc. Sunet bun si microfon cu flip-to-mute, la un pret rezonabil.",
+          "pro": [
+            "Foarte usoare 236g",
+            "Wireless accesibil",
+            "Microfon flip-to-mute",
+            "Confort prelungit"
+          ],
+          "contra": [
+            "Bass mai modest",
+            "Autonomie medie ~33h"
+          ],
+          "specificatii": {
+            "Conectivitate": "Lightspeed 2.4GHz",
+            "Autonomie": "~33h",
+            "Driver": "40mm",
+            "Greutate": "236g",
+            "Compatibilitate": "PC/PS"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 449,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "pcgarage.ro",
+              "eticheta": "PC Garage",
+              "pret": 479,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 469,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 5,
+          "badge": "Cele mai bune buget",
+          "badge_color": "gray",
+          "nume": "Trust GXT 415 / Redragon",
+          "model": "GXT Zirox",
+          "imagine": "https://picsum.photos/seed/gxt-zirox/400/280",
+          "pret_de_la": 99,
+          "moneda": "RON",
+          "scor_total": 8.3,
+          "scoruri": {
+            "Sunet": 8.0,
+            "Microfon": 7.9,
+            "Confort": 8.4,
+            "Autonomie": 8.0,
+            "Pret/Calitate": 9.3
+          },
+          "verdict_scurt": "Casti gaming functionale sub 120 lei",
+          "verdict_detaliat": "Pentru un buget minim, aceste casti cu fir ofera sunet decent si microfon functional pentru jocuri casual si comunicare. Cea mai accesibila intrare in gaming audio.",
+          "pro": [
+            "Pret foarte mic",
+            "Microfon functional",
+            "Confort decent"
+          ],
+          "contra": [
+            "Sunet de baza",
+            "Constructie simpla"
+          ],
+          "specificatii": {
+            "Conectivitate": "Cu fir 3.5mm/USB",
+            "Driver": "50mm",
+            "Microfon": "Flexibil",
+            "Compatibilitate": "PC/console"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 99,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "pcgarage.ro",
+              "eticheta": "PC Garage",
+              "pret": 109,
+              "recomandat": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "imprimante",
+      "titlu": "Cele mai bune imprimante 2026",
+      "titlu_scurt": "Imprimante",
+      "emoji": "🖨️",
+      "culoare": "blue",
+      "tag": "POPULAR",
+      "descriere": "Top 5 imprimante pentru acasa si birou, evaluate pentru cost per pagina, calitate, viteza si conectivitate.",
+      "produse": [
+        {
+          "pozitie": 1,
+          "badge": "Alegerea Redactiei",
+          "badge_color": "orange",
+          "nume": "Epson EcoTank L3560",
+          "model": "EcoTank L3560",
+          "imagine": "https://picsum.photos/seed/ecotank/400/280",
+          "pret_de_la": 1099,
+          "moneda": "RON",
+          "scor_total": 9.4,
+          "scoruri": {
+            "Cost/pagina": 9.7,
+            "Calitate": 9.2,
+            "Viteza": 8.9,
+            "Conectivitate": 9.3,
+            "Pret/Calitate": 9.2
+          },
+          "verdict_scurt": "Cel mai mic cost per pagina datorita rezervoarelor CISS",
+          "verdict_detaliat": "EcoTank L3560 multifunctionala color cu rezervoare reincarcabile ofera cel mai mic cost per pagina din piata. Investitia initiala se amortizeaza rapid pentru cei care printeaza mult.",
+          "pro": [
+            "Cost per pagina minim",
+            "Wi-Fi + scaner + copiator",
+            "Rezervoare generoase",
+            "Ideal volum mare"
+          ],
+          "contra": [
+            "Pret initial mai mare",
+            "Viteza medie"
+          ],
+          "specificatii": {
+            "Tip": "Inkjet CISS multifunctional",
+            "Functii": "Print/scan/copiere",
+            "Conectivitate": "Wi-Fi, USB",
+            "Color": "Da",
+            "Cost/pagina": "Foarte mic"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 1099,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 1149,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "pcgarage.ro",
+              "eticheta": "PC Garage",
+              "pret": 1129,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 2,
+          "badge": "Cel mai bun raport pret",
+          "badge_color": "green",
+          "nume": "HP DeskJet 2720e",
+          "model": "DeskJet 2720e",
+          "imagine": "https://picsum.photos/seed/deskjet/400/280",
+          "pret_de_la": 299,
+          "moneda": "RON",
+          "scor_total": 9.0,
+          "scoruri": {
+            "Cost/pagina": 8.2,
+            "Calitate": 8.8,
+            "Viteza": 8.5,
+            "Conectivitate": 9.0,
+            "Pret/Calitate": 9.4
+          },
+          "verdict_scurt": "Multifunctionala accesibila pentru uz ocazional acasa",
+          "verdict_detaliat": "DeskJet 2720e este o multifunctionala inkjet ieftina, perfecta pentru printuri ocazionale acasa. Wi-Fi, scaner si HP+ cu luni de cerneala incluse via Instant Ink.",
+          "pro": [
+            "Pret mic",
+            "Compacta",
+            "Wi-Fi + scaner",
+            "Luni de cerneala incluse"
+          ],
+          "contra": [
+            "Cost cartuse ridicat la volum",
+            "Viteza modesta"
+          ],
+          "specificatii": {
+            "Tip": "Inkjet multifunctional",
+            "Functii": "Print/scan/copiere",
+            "Conectivitate": "Wi-Fi, USB",
+            "Color": "Da"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 299,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 319,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 3,
+          "badge": "Cea mai buna laser",
+          "badge_color": "purple",
+          "nume": "Brother HL-L2400DW",
+          "model": "HL-L2400DW",
+          "imagine": "https://picsum.photos/seed/brother-laser/400/280",
+          "pret_de_la": 799,
+          "moneda": "RON",
+          "scor_total": 9.2,
+          "scoruri": {
+            "Cost/pagina": 9.4,
+            "Calitate": 9.3,
+            "Viteza": 9.4,
+            "Conectivitate": 9.0,
+            "Pret/Calitate": 9.1
+          },
+          "verdict_scurt": "Cea mai buna laser monocrom pentru documente",
+          "verdict_detaliat": "HL-L2400DW este o laser monocrom rapida, cu duplex automat si Wi-Fi, ideala pentru cine printeaza multe documente text. Cost per pagina excelent si fiabilitate ridicata.",
+          "pro": [
+            "Viteza mare",
+            "Duplex automat",
+            "Cost/pagina mic la text",
+            "Fiabila"
+          ],
+          "contra": [
+            "Doar alb-negru",
+            "Fara scaner"
+          ],
+          "specificatii": {
+            "Tip": "Laser monocrom",
+            "Viteza": "~30 ppm",
+            "Duplex": "Automat",
+            "Conectivitate": "Wi-Fi, USB",
+            "Color": "Nu"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 799,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "pcgarage.ro",
+              "eticheta": "PC Garage",
+              "pret": 829,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "evomag.ro",
+              "eticheta": "evoMAG",
+              "pret": 819,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 4,
+          "badge": "Cea mai buna foto",
+          "badge_color": "blue",
+          "nume": "Canon PIXMA TS7450",
+          "model": "PIXMA TS7450",
+          "imagine": "https://picsum.photos/seed/pixma/400/280",
+          "pret_de_la": 449,
+          "moneda": "RON",
+          "scor_total": 8.9,
+          "scoruri": {
+            "Cost/pagina": 8.0,
+            "Calitate": 9.4,
+            "Viteza": 8.6,
+            "Conectivitate": 9.1,
+            "Pret/Calitate": 8.9
+          },
+          "verdict_scurt": "Cele mai bune printuri foto color acasa",
+          "verdict_detaliat": "PIXMA TS7450 exceleaza la printuri foto color cu detalii fine si culori bogate. Alegerea pentru cei care vor sa imprime fotografii de calitate acasa.",
+          "pro": [
+            "Calitate foto excelenta",
+            "Wi-Fi + ecran tactil",
+            "Compacta eleganta"
+          ],
+          "contra": [
+            "Cost cartuse foto ridicat",
+            "Mai lenta pe foto"
+          ],
+          "specificatii": {
+            "Tip": "Inkjet foto multifunctional",
+            "Functii": "Print/scan/copiere",
+            "Conectivitate": "Wi-Fi, ecran tactil",
+            "Color": "Da"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 449,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 479,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 5,
+          "badge": "Cea mai buna buget",
+          "badge_color": "gray",
+          "nume": "Canon PIXMA TS3450",
+          "model": "PIXMA TS3450",
+          "imagine": "https://picsum.photos/seed/pixma-buget/400/280",
+          "pret_de_la": 229,
+          "moneda": "RON",
+          "scor_total": 8.3,
+          "scoruri": {
+            "Cost/pagina": 7.8,
+            "Calitate": 8.4,
+            "Viteza": 8.0,
+            "Conectivitate": 8.6,
+            "Pret/Calitate": 9.2
+          },
+          "verdict_scurt": "Multifunctionala de baza sub 250 lei",
+          "verdict_detaliat": "PIXMA TS3450 acopera nevoile esentiale de print, scanare si copiere acasa, cu Wi-Fi, la cel mai mic pret. Buna pentru utilizare ocazionala.",
+          "pro": [
+            "Pret foarte mic",
+            "Wi-Fi + scaner",
+            "Compacta"
+          ],
+          "contra": [
+            "Cost cartuse mare la volum",
+            "Constructie simpla"
+          ],
+          "specificatii": {
+            "Tip": "Inkjet multifunctional",
+            "Functii": "Print/scan/copiere",
+            "Conectivitate": "Wi-Fi, USB",
+            "Color": "Da"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 229,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 249,
+              "recomandat": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "camere-actiune",
+      "titlu": "Cele mai bune camere de actiune 2026",
+      "titlu_scurt": "Camere actiune",
+      "emoji": "📷",
+      "culoare": "red",
+      "tag": "TRENDING",
+      "descriere": "Top 5 camere de actiune pentru sport, vlogging si aventura, evaluate pentru calitate video, stabilizare si rezistenta.",
+      "produse": [
+        {
+          "pozitie": 1,
+          "badge": "Alegerea Redactiei",
+          "badge_color": "orange",
+          "nume": "GoPro HERO13 Black",
+          "model": "HERO13",
+          "imagine": "https://picsum.photos/seed/hero13/400/280",
+          "pret_de_la": 1999,
+          "moneda": "RON",
+          "scor_total": 9.5,
+          "scoruri": {
+            "Calitate video": 9.6,
+            "Stabilizare": 9.6,
+            "Rezistenta": 9.3,
+            "Autonomie": 9.0,
+            "Pret/Calitate": 9.0
+          },
+          "verdict_scurt": "Cea mai buna camera de actiune all-round",
+          "verdict_detaliat": "HERO13 Black ramane referinta categoriei: video 5.3K, stabilizare HyperSmooth excelenta si rezistenta la apa fara carcasa. Alegerea sigura pentru sport si aventura.",
+          "pro": [
+            "Stabilizare HyperSmooth de top",
+            "Video 5.3K",
+            "Waterproof 10m fara carcasa",
+            "Ecosistem accesorii vast"
+          ],
+          "contra": [
+            "Pret ridicat",
+            "Autonomie medie la 5.3K"
+          ],
+          "specificatii": {
+            "Rezolutie max": "5.3K60",
+            "Stabilizare": "HyperSmooth 6",
+            "Waterproof": "10m fara carcasa",
+            "Ecran": "Fata + spate tactil"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 1999,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 2099,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "pcgarage.ro",
+              "eticheta": "PC Garage",
+              "pret": 2049,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 2,
+          "badge": "Cel mai bun raport pret",
+          "badge_color": "green",
+          "nume": "DJI Osmo Action 4",
+          "model": "Osmo Action 4",
+          "imagine": "https://picsum.photos/seed/osmo4/400/280",
+          "pret_de_la": 1499,
+          "moneda": "RON",
+          "scor_total": 9.3,
+          "scoruri": {
+            "Calitate video": 9.4,
+            "Stabilizare": 9.4,
+            "Rezistenta": 9.2,
+            "Autonomie": 9.3,
+            "Pret/Calitate": 9.4
+          },
+          "verdict_scurt": "Cea mai buna alternativa la GoPro, autonomie mai buna",
+          "verdict_detaliat": "Osmo Action 4 ofera senzor mare 1/1.3 inch, stabilizare RockSteady excelenta si autonomie superioara, la un pret mai bun decat GoPro. Excelenta pe lumina slaba.",
+          "pro": [
+            "Senzor mare, bun pe intuneric",
+            "Autonomie excelenta",
+            "Stabilizare RockSteady",
+            "Pret competitiv"
+          ],
+          "contra": [
+            "Ecosistem accesorii mai mic",
+            "Aplicatie ocazional capricioasa"
+          ],
+          "specificatii": {
+            "Rezolutie max": "4K120",
+            "Senzor": "1/1.3 inch",
+            "Stabilizare": "RockSteady 3.0",
+            "Waterproof": "18m fara carcasa"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 1499,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 1599,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "evomag.ro",
+              "eticheta": "evoMAG",
+              "pret": 1549,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 3,
+          "badge": "Cea mai versatila",
+          "badge_color": "purple",
+          "nume": "Insta360 Ace Pro 2",
+          "model": "Ace Pro 2",
+          "imagine": "https://picsum.photos/seed/ace-pro2/400/280",
+          "pret_de_la": 2299,
+          "moneda": "RON",
+          "scor_total": 9.2,
+          "scoruri": {
+            "Calitate video": 9.5,
+            "Stabilizare": 9.3,
+            "Rezistenta": 9.0,
+            "Autonomie": 9.2,
+            "Pret/Calitate": 8.8
+          },
+          "verdict_scurt": "Cea mai buna calitate de imagine si ecran flip",
+          "verdict_detaliat": "Ace Pro 2, cu senzor Leica si ecran rabatabil, ofera cea mai buna calitate de imagine si functii AI utile pentru vlogging. Alegerea creatorilor de continut.",
+          "pro": [
+            "Calitate imagine de top (Leica)",
+            "Ecran flip pentru vlog",
+            "Functii AI utile",
+            "Bun pe lumina slaba"
+          ],
+          "contra": [
+            "Pret premium",
+            "Mai voluminoasa"
+          ],
+          "specificatii": {
+            "Rezolutie max": "8K30/4K120",
+            "Senzor": "1/1.3 inch Leica",
+            "Ecran": "Flip 2.5 inch",
+            "Waterproof": "12m fara carcasa"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 2299,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "pcgarage.ro",
+              "eticheta": "PC Garage",
+              "pret": 2399,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 4,
+          "badge": "Cea mai buna 360",
+          "badge_color": "blue",
+          "nume": "Insta360 X4",
+          "model": "X4",
+          "imagine": "https://picsum.photos/seed/insta-x4/400/280",
+          "pret_de_la": 2599,
+          "moneda": "RON",
+          "scor_total": 9.1,
+          "scoruri": {
+            "Calitate video": 9.3,
+            "Stabilizare": 9.5,
+            "Rezistenta": 9.0,
+            "Autonomie": 9.0,
+            "Pret/Calitate": 8.7
+          },
+          "verdict_scurt": "Camera 360 pentru cadre imposibile si reframing",
+          "verdict_detaliat": "X4 filmeaza 360° in 8K, permitand reframing-ul scenei dupa filmare si efecte spectaculoase de tip drona-pe-bat. Pentru creatorii care vor cadre unice.",
+          "pro": [
+            "Video 360 8K",
+            "Reframing dupa filmare",
+            "Efecte spectaculoase",
+            "Stabilizare excelenta"
+          ],
+          "contra": [
+            "Editare mai complexa",
+            "Pret ridicat"
+          ],
+          "specificatii": {
+            "Rezolutie max": "8K360",
+            "Tip": "Camera 360",
+            "Stabilizare": "FlowState",
+            "Waterproof": "10m fara carcasa"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 2599,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 2699,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 5,
+          "badge": "Cea mai buna buget",
+          "badge_color": "gray",
+          "nume": "AKASO Brave 8 / SJCAM",
+          "model": "Brave 8",
+          "imagine": "https://picsum.photos/seed/akaso/400/280",
+          "pret_de_la": 599,
+          "moneda": "RON",
+          "scor_total": 8.3,
+          "scoruri": {
+            "Calitate video": 8.2,
+            "Stabilizare": 8.0,
+            "Rezistenta": 8.4,
+            "Autonomie": 8.3,
+            "Pret/Calitate": 9.3
+          },
+          "verdict_scurt": "Camera de actiune accesibila pentru incepatori",
+          "verdict_detaliat": "Brave 8 ofera video 4K, stabilizare decenta si un pachet generos de accesorii incluse, la o fractiune din pretul brandurilor mari. Ideala pentru a incepe.",
+          "pro": [
+            "Pret foarte mic",
+            "Accesorii incluse multe",
+            "Video 4K",
+            "Telecomanda inclusa"
+          ],
+          "contra": [
+            "Stabilizare sub GoPro/DJI",
+            "Calitate medie pe intuneric"
+          ],
+          "specificatii": {
+            "Rezolutie max": "4K30",
+            "Stabilizare": "Electronica de baza",
+            "Waterproof": "Cu carcasa",
+            "Extra": "Pachet accesorii inclus"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 599,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 649,
+              "recomandat": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "aer-conditionat",
+      "titlu": "Cele mai bune aparate de aer conditionat 2026",
+      "titlu_scurt": "Aer conditionat",
+      "emoji": "❄️",
+      "culoare": "blue",
+      "tag": "SEZON",
+      "descriere": "Top 5 aparate de aer conditionat inverter, evaluate pentru eficienta energetica, zgomot, racire si raport pret/calitate.",
+      "produse": [
+        {
+          "pozitie": 1,
+          "badge": "Alegerea Redactiei",
+          "badge_color": "orange",
+          "nume": "Daikin Sensira 12000 BTU",
+          "model": "Sensira FTXF35",
+          "imagine": "https://picsum.photos/seed/daikin/400/280",
+          "pret_de_la": 2799,
+          "moneda": "RON",
+          "scor_total": 9.4,
+          "scoruri": {
+            "Eficienta": 9.5,
+            "Zgomot": 9.4,
+            "Racire": 9.3,
+            "Fiabilitate": 9.5,
+            "Pret/Calitate": 9.0
+          },
+          "verdict_scurt": "Cel mai bun echilibru eficienta-fiabilitate-zgomot",
+          "verdict_detaliat": "Daikin Sensira 12000 BTU este referinta pentru o camera medie: clasa energetica A++, functionare silentioasa si fiabilitatea Daikin. Investitia sigura pe termen lung.",
+          "pro": [
+            "Foarte silentios",
+            "Clasa A++ eficient",
+            "Fiabilitate Daikin",
+            "Racire rapida uniforma"
+          ],
+          "contra": [
+            "Pret peste medie",
+            "Wi-Fi optional"
+          ],
+          "specificatii": {
+            "Capacitate": "12000 BTU",
+            "Clasa energetica": "A++/A+",
+            "Tip": "Inverter",
+            "Zgomot": "~20 dB(A) min",
+            "Suprafata": "~30 mp"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 2799,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 2899,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "evomag.ro",
+              "eticheta": "evoMAG",
+              "pret": 2849,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 2,
+          "badge": "Cel mai bun raport pret",
+          "badge_color": "green",
+          "nume": "Beko 12000 BTU inverter",
+          "model": "Beko BEVCSA",
+          "imagine": "https://picsum.photos/seed/beko-ac/400/280",
+          "pret_de_la": 1799,
+          "moneda": "RON",
+          "scor_total": 9.0,
+          "scoruri": {
+            "Eficienta": 8.9,
+            "Zgomot": 8.7,
+            "Racire": 9.0,
+            "Fiabilitate": 8.8,
+            "Pret/Calitate": 9.5
+          },
+          "verdict_scurt": "Inverter eficient la cel mai bun pret pentru 30 mp",
+          "verdict_detaliat": "Beko 12000 BTU ofera tehnologie inverter, clasa A++ si racire buna pentru o camera de 30 mp, la un pret excelent. Cel mai bun raport pret/performanta pentru bugete medii.",
+          "pro": [
+            "Pret excelent",
+            "Inverter clasa A++",
+            "Racire buna 30 mp",
+            "Wi-Fi inclus la unele variante"
+          ],
+          "contra": [
+            "Mai zgomotos la viteza mare",
+            "Finisaje simple"
+          ],
+          "specificatii": {
+            "Capacitate": "12000 BTU",
+            "Clasa energetica": "A++",
+            "Tip": "Inverter",
+            "Suprafata": "~30 mp",
+            "Wi-Fi": "Optional"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 1799,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 1899,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "flanco.ro",
+              "eticheta": "Flanco",
+              "pret": 1849,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 3,
+          "badge": "Cel mai silentios",
+          "badge_color": "purple",
+          "nume": "Mitsubishi 9000 BTU",
+          "model": "MSZ-HR25",
+          "imagine": "https://picsum.photos/seed/mitsubishi/400/280",
+          "pret_de_la": 3199,
+          "moneda": "RON",
+          "scor_total": 9.2,
+          "scoruri": {
+            "Eficienta": 9.3,
+            "Zgomot": 9.6,
+            "Racire": 9.1,
+            "Fiabilitate": 9.4,
+            "Pret/Calitate": 8.7
+          },
+          "verdict_scurt": "Cel mai silentios, ideal pentru dormitor",
+          "verdict_detaliat": "Mitsubishi 9000 BTU este alegerea pentru dormitor datorita functionarii extrem de silentioase si fiabilitatii legendare. Racire fina si consum redus pentru camere mici-medii.",
+          "pro": [
+            "Cel mai silentios din clasa",
+            "Fiabilitate excelenta",
+            "Eficient energetic",
+            "Ideal dormitor"
+          ],
+          "contra": [
+            "Pret ridicat",
+            "Capacitate mai mica 9000 BTU"
+          ],
+          "specificatii": {
+            "Capacitate": "9000 BTU",
+            "Clasa energetica": "A++",
+            "Tip": "Inverter",
+            "Zgomot": "~19 dB(A)",
+            "Suprafata": "~20 mp"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 3199,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 3299,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 4,
+          "badge": "Cel mai bun pentru spatii mari",
+          "badge_color": "blue",
+          "nume": "LG DualCool 18000 BTU",
+          "model": "DualCool 18000",
+          "imagine": "https://picsum.photos/seed/lg-ac/400/280",
+          "pret_de_la": 3499,
+          "moneda": "RON",
+          "scor_total": 9.1,
+          "scoruri": {
+            "Eficienta": 9.2,
+            "Zgomot": 9.0,
+            "Racire": 9.5,
+            "Fiabilitate": 9.0,
+            "Pret/Calitate": 8.8
+          },
+          "verdict_scurt": "Putere mare pentru living si spatii deschise",
+          "verdict_detaliat": "LG DualCool 18000 BTU acopera living-uri si spatii deschise pana la ~45 mp, cu racire rapida, Wi-Fi si filtrare aer. Alegerea pentru camerele mari.",
+          "pro": [
+            "Putere mare 18000 BTU",
+            "Racire rapida spatii mari",
+            "Wi-Fi + filtrare",
+            "Clasa A++"
+          ],
+          "contra": [
+            "Pret ridicat",
+            "Consum mai mare la spatii mari"
+          ],
+          "specificatii": {
+            "Capacitate": "18000 BTU",
+            "Clasa energetica": "A++",
+            "Tip": "Inverter Dual",
+            "Suprafata": "~45 mp",
+            "Wi-Fi": "Da"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 3499,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 3599,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "flanco.ro",
+              "eticheta": "Flanco",
+              "pret": 3549,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 5,
+          "badge": "Cel mai bun buget",
+          "badge_color": "gray",
+          "nume": "Aer conditionat portabil 9000 BTU",
+          "model": "Portabil 9000",
+          "imagine": "https://picsum.photos/seed/ac-portabil/400/280",
+          "pret_de_la": 1299,
+          "moneda": "RON",
+          "scor_total": 8.3,
+          "scoruri": {
+            "Eficienta": 8.0,
+            "Zgomot": 7.8,
+            "Racire": 8.4,
+            "Fiabilitate": 8.2,
+            "Pret/Calitate": 9.1
+          },
+          "verdict_scurt": "Solutie portabila fara montaj, sub 1300 lei",
+          "verdict_detaliat": "Un aparat portabil de 9000 BTU este solutia pentru cei care nu pot monta split (chirie, restrictii): nu necesita instalare, se muta usor, racire decenta pentru camere mici.",
+          "pro": [
+            "Fara montaj/instalare",
+            "Mobil intre camere",
+            "Pret accesibil",
+            "Ideal pentru chirie"
+          ],
+          "contra": [
+            "Mai zgomotos",
+            "Eficienta sub split",
+            "Ocupa spatiu pe podea"
+          ],
+          "specificatii": {
+            "Capacitate": "9000 BTU",
+            "Tip": "Portabil monobloc",
+            "Montaj": "Nu necesita",
+            "Suprafata": "~20 mp"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 1299,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 1349,
+              "recomandat": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "aspiratoare-fara-fir",
+      "titlu": "Cele mai bune aspiratoare verticale fara fir 2026",
+      "titlu_scurt": "Aspiratoare fara fir",
+      "emoji": "🧹",
+      "culoare": "purple",
+      "tag": "POPULAR",
+      "descriere": "Top 5 aspiratoare verticale fara fir, evaluate pentru putere de aspirare, autonomie, manevrabilitate si filtrare.",
+      "produse": [
+        {
+          "pozitie": 1,
+          "badge": "Alegerea Redactiei",
+          "badge_color": "orange",
+          "nume": "Dyson V12 Detect Slim",
+          "model": "V12 Detect",
+          "imagine": "https://picsum.photos/seed/dyson-v12/400/280",
+          "pret_de_la": 2799,
+          "moneda": "RON",
+          "scor_total": 9.5,
+          "scoruri": {
+            "Putere aspirare": 9.6,
+            "Autonomie": 9.2,
+            "Manevrabilitate": 9.5,
+            "Filtrare": 9.5,
+            "Pret/Calitate": 9.0
+          },
+          "verdict_scurt": "Cel mai bun aspirator vertical fara fir all-round",
+          "verdict_detaliat": "V12 Detect Slim combina putere mare de aspirare, laser care evidentiaza praful si ecran cu date in timp real, intr-un corp usor. Cea mai buna experienta de curatare fara fir.",
+          "pro": [
+            "Putere de aspirare excelenta",
+            "Laser detectie praf",
+            "Usor si manevrabil",
+            "Filtrare HEPA"
+          ],
+          "contra": [
+            "Pret ridicat",
+            "Recipient mediu"
+          ],
+          "specificatii": {
+            "Autonomie": "~60 min",
+            "Filtrare": "HEPA sigilat",
+            "Greutate": "~2.2 kg",
+            "Recipient": "0.35 L",
+            "Extra": "Laser + ecran LCD"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 2799,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 2899,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "flanco.ro",
+              "eticheta": "Flanco",
+              "pret": 2849,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 2,
+          "badge": "Cel mai bun raport pret",
+          "badge_color": "green",
+          "nume": "Rowenta X-Force Flex 9.60",
+          "model": "X-Force 9.60",
+          "imagine": "https://picsum.photos/seed/rowenta-x/400/280",
+          "pret_de_la": 1299,
+          "moneda": "RON",
+          "scor_total": 9.1,
+          "scoruri": {
+            "Putere aspirare": 9.0,
+            "Autonomie": 9.3,
+            "Manevrabilitate": 9.2,
+            "Filtrare": 8.9,
+            "Pret/Calitate": 9.5
+          },
+          "verdict_scurt": "Aspirare puternica si autonomie mare la pret bun",
+          "verdict_detaliat": "X-Force Flex 9.60 ofera autonomie de pana la 70 minute, tub flexibil pentru a curata sub mobila si putere buna, la jumatate din pretul Dyson. Cel mai bun mid-range.",
+          "pro": [
+            "Autonomie pana la 70 min",
+            "Tub flexibil sub mobila",
+            "Pret excelent",
+            "Aspirare buna"
+          ],
+          "contra": [
+            "Filtrare sub Dyson",
+            "Mai voluminos"
+          ],
+          "specificatii": {
+            "Autonomie": "~70 min",
+            "Filtrare": "Multistrat",
+            "Greutate": "~2.9 kg",
+            "Recipient": "0.9 L",
+            "Extra": "Tub flexibil"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 1299,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 1399,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "evomag.ro",
+              "eticheta": "evoMAG",
+              "pret": 1349,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 3,
+          "badge": "Cel mai premium",
+          "badge_color": "purple",
+          "nume": "Dyson V15 Detect",
+          "model": "V15 Detect",
+          "imagine": "https://picsum.photos/seed/dyson-v15/400/280",
+          "pret_de_la": 3499,
+          "moneda": "RON",
+          "scor_total": 9.4,
+          "scoruri": {
+            "Putere aspirare": 9.8,
+            "Autonomie": 9.3,
+            "Manevrabilitate": 9.3,
+            "Filtrare": 9.6,
+            "Pret/Calitate": 8.8
+          },
+          "verdict_scurt": "Cea mai mare putere de aspirare si filtrare de top",
+          "verdict_detaliat": "V15 Detect ofera cea mai mare putere de aspirare din gama, autonomie de 60 minute si filtrare avansata, ideal pentru case mari cu animale. Numararea particulelor pe ecran.",
+          "pro": [
+            "Putere de aspirare maxima",
+            "Filtrare avansata",
+            "Ideal pentru animale",
+            "Autonomie 60 min"
+          ],
+          "contra": [
+            "Pret premium",
+            "Greutate ceva mai mare"
+          ],
+          "specificatii": {
+            "Autonomie": "~60 min",
+            "Filtrare": "HEPA sigilat",
+            "Greutate": "~3 kg",
+            "Recipient": "0.77 L",
+            "Extra": "Laser + numarare particule"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 3499,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 3599,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 4,
+          "badge": "Cel mai bun pentru animale",
+          "badge_color": "blue",
+          "nume": "Samsung Bespoke Jet AI",
+          "model": "Bespoke Jet",
+          "imagine": "https://picsum.photos/seed/samsung-jet/400/280",
+          "pret_de_la": 2199,
+          "moneda": "RON",
+          "scor_total": 9.0,
+          "scoruri": {
+            "Putere aspirare": 9.2,
+            "Autonomie": 9.0,
+            "Manevrabilitate": 9.1,
+            "Filtrare": 9.3,
+            "Pret/Calitate": 9.0
+          },
+          "verdict_scurt": "Statie de golire automata, ideal pentru par de animale",
+          "verdict_detaliat": "Bespoke Jet AI vine cu statie Clean Station care goleste automat recipientul, reducand contactul cu praful — ideal pentru alergici si case cu animale.",
+          "pro": [
+            "Golire automata igienica",
+            "Buna pentru alergici",
+            "Putere buna",
+            "Filtrare multistrat"
+          ],
+          "contra": [
+            "Statia ocupa spatiu",
+            "Pret peste medie"
+          ],
+          "specificatii": {
+            "Autonomie": "~60 min",
+            "Filtrare": "Multistrat",
+            "Greutate": "~2.5 kg",
+            "Extra": "Statie golire automata"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 2199,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 2299,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "flanco.ro",
+              "eticheta": "Flanco",
+              "pret": 2249,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 5,
+          "badge": "Cel mai bun buget",
+          "badge_color": "gray",
+          "nume": "Tefal / Philips vertical fara fir",
+          "model": "Aqua Cordless",
+          "imagine": "https://picsum.photos/seed/tefal-cord/400/280",
+          "pret_de_la": 599,
+          "moneda": "RON",
+          "scor_total": 8.3,
+          "scoruri": {
+            "Putere aspirare": 8.0,
+            "Autonomie": 8.2,
+            "Manevrabilitate": 8.6,
+            "Filtrare": 8.0,
+            "Pret/Calitate": 9.3
+          },
+          "verdict_scurt": "Aspirator vertical accesibil pentru intretinere zilnica",
+          "verdict_detaliat": "Un aspirator vertical fara fir accesibil, potrivit pentru curatari rapide zilnice in apartamente mici. Usor si comod, la cel mai bun pret de intrare.",
+          "pro": [
+            "Pret foarte mic",
+            "Usor si compact",
+            "Bun pentru curatari rapide"
+          ],
+          "contra": [
+            "Putere si autonomie mai mici",
+            "Recipient mic"
+          ],
+          "specificatii": {
+            "Autonomie": "~40 min",
+            "Filtrare": "Standard",
+            "Greutate": "~2.3 kg",
+            "Recipient": "0.5 L"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 599,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 649,
+              "recomandat": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "boxe-bluetooth",
+      "titlu": "Cele mai bune boxe Bluetooth 2026",
+      "titlu_scurt": "Boxe Bluetooth",
+      "emoji": "🔊",
+      "culoare": "red",
+      "tag": "POPULAR",
+      "descriere": "Top 5 boxe Bluetooth portabile, evaluate pentru calitate sunet, autonomie, rezistenta la apa si raport pret/calitate.",
+      "produse": [
+        {
+          "pozitie": 1,
+          "badge": "Alegerea Redactiei",
+          "badge_color": "orange",
+          "nume": "JBL Charge 5",
+          "model": "Charge 5",
+          "imagine": "https://picsum.photos/seed/charge5/400/280",
+          "pret_de_la": 599,
+          "moneda": "RON",
+          "scor_total": 9.4,
+          "scoruri": {
+            "Sunet": 9.4,
+            "Autonomie": 9.5,
+            "Rezistenta": 9.3,
+            "Portabilitate": 9.2,
+            "Pret/Calitate": 9.2
+          },
+          "verdict_scurt": "Cea mai echilibrata boxa portabila, cu powerbank",
+          "verdict_detaliat": "JBL Charge 5 ofera sunet puternic, bass solid, 20 ore autonomie si rezistenta IP67. In plus, functioneaza ca powerbank pentru telefon. Cea mai sigura alegere portabila.",
+          "pro": [
+            "Sunet puternic cu bass bun",
+            "Autonomie 20h",
+            "IP67 apa+praf",
+            "Functie powerbank"
+          ],
+          "contra": [
+            "Mai grea decat boxele mici",
+            "Fara difuzor de inalte separat"
+          ],
+          "specificatii": {
+            "Autonomie": "~20h",
+            "Rezistenta": "IP67",
+            "Bluetooth": "5.1",
+            "Extra": "Powerbank USB",
+            "PartyBoost": "Da"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 599,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 629,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "pcgarage.ro",
+              "eticheta": "PC Garage",
+              "pret": 619,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 2,
+          "badge": "Cel mai bun raport pret",
+          "badge_color": "green",
+          "nume": "JBL Flip 6",
+          "model": "Flip 6",
+          "imagine": "https://picsum.photos/seed/flip6/400/280",
+          "pret_de_la": 399,
+          "moneda": "RON",
+          "scor_total": 9.1,
+          "scoruri": {
+            "Sunet": 9.0,
+            "Autonomie": 9.0,
+            "Rezistenta": 9.3,
+            "Portabilitate": 9.5,
+            "Pret/Calitate": 9.5
+          },
+          "verdict_scurt": "Cel mai bun echilibru portabilitate-sunet sub 450 lei",
+          "verdict_detaliat": "Flip 6 este compacta, rezistenta IP67 si suna excelent pentru dimensiunea ei, cu 12 ore autonomie. Cea mai buna boxa de cazat in rucsac pentru orice ocazie.",
+          "pro": [
+            "Compacta si portabila",
+            "Sunet bun pentru marime",
+            "IP67",
+            "Pret excelent"
+          ],
+          "contra": [
+            "Bass mai modest ca Charge 5",
+            "Fara powerbank"
+          ],
+          "specificatii": {
+            "Autonomie": "~12h",
+            "Rezistenta": "IP67",
+            "Bluetooth": "5.1",
+            "PartyBoost": "Da"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 399,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 429,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 3,
+          "badge": "Cea mai buna premium",
+          "badge_color": "purple",
+          "nume": "Bose SoundLink Flex 2",
+          "model": "SoundLink Flex 2",
+          "imagine": "https://picsum.photos/seed/bose-flex/400/280",
+          "pret_de_la": 799,
+          "moneda": "RON",
+          "scor_total": 9.3,
+          "scoruri": {
+            "Sunet": 9.6,
+            "Autonomie": 9.0,
+            "Rezistenta": 9.3,
+            "Portabilitate": 9.2,
+            "Pret/Calitate": 8.9
+          },
+          "verdict_scurt": "Cel mai bun sunet dintr-o boxa portabila compacta",
+          "verdict_detaliat": "SoundLink Flex 2 ofera semnatura sonora Bose — clar, echilibrat, surprinzator de amplu — intr-un corp rezistent IP67. Pentru cei care pun calitatea sunetului pe primul loc.",
+          "pro": [
+            "Calitate sunet superioara",
+            "Clar la volum mare",
+            "IP67 robusta",
+            "Design premium"
+          ],
+          "contra": [
+            "Pret peste medie",
+            "Autonomie 12h"
+          ],
+          "specificatii": {
+            "Autonomie": "~12h",
+            "Rezistenta": "IP67",
+            "Bluetooth": "5.3",
+            "Extra": "Pozitionare automata PositionIQ"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 799,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 849,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 4,
+          "badge": "Cea mai puternica",
+          "badge_color": "blue",
+          "nume": "JBL Xtreme 3 / PartyBox",
+          "model": "Xtreme 3",
+          "imagine": "https://picsum.photos/seed/xtreme3/400/280",
+          "pret_de_la": 1299,
+          "moneda": "RON",
+          "scor_total": 9.0,
+          "scoruri": {
+            "Sunet": 9.4,
+            "Autonomie": 9.3,
+            "Rezistenta": 9.0,
+            "Portabilitate": 8.2,
+            "Pret/Calitate": 8.9
+          },
+          "verdict_scurt": "Sunet puternic pentru petreceri si exterior",
+          "verdict_detaliat": "Xtreme 3 livreaza un sunet amplu, cu bass puternic, ideal pentru petreceri si spatii deschise. 15 ore autonomie, IP67 si curea de transport inclusa.",
+          "pro": [
+            "Sunet amplu pentru petreceri",
+            "Bass puternic",
+            "IP67",
+            "Curea transport inclusa"
+          ],
+          "contra": [
+            "Voluminoasa si grea",
+            "Mai putin portabila"
+          ],
+          "specificatii": {
+            "Autonomie": "~15h",
+            "Rezistenta": "IP67",
+            "Bluetooth": "5.1",
+            "Extra": "Powerbank + curea"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 1299,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 1349,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "flanco.ro",
+              "eticheta": "Flanco",
+              "pret": 1329,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 5,
+          "badge": "Cea mai buna buget",
+          "badge_color": "gray",
+          "nume": "Anker Soundcore 3 / Tronsmart",
+          "model": "Soundcore 3",
+          "imagine": "https://picsum.photos/seed/soundcore3/400/280",
+          "pret_de_la": 199,
+          "moneda": "RON",
+          "scor_total": 8.4,
+          "scoruri": {
+            "Sunet": 8.3,
+            "Autonomie": 9.0,
+            "Rezistenta": 8.6,
+            "Portabilitate": 9.2,
+            "Pret/Calitate": 9.4
+          },
+          "verdict_scurt": "Boxa portabila cu autonomie mare sub 220 lei",
+          "verdict_detaliat": "Soundcore 3 ofera sunet curat, 24 ore autonomie si rezistenta IPX7, la un pret foarte mic. Cea mai buna boxa de buget pentru utilizare zilnica si calatorii.",
+          "pro": [
+            "Autonomie uriasa 24h",
+            "Pret foarte mic",
+            "IPX7 rezistenta apa",
+            "Compacta"
+          ],
+          "contra": [
+            "Bass modest",
+            "Fara putere pentru petreceri mari"
+          ],
+          "specificatii": {
+            "Autonomie": "~24h",
+            "Rezistenta": "IPX7",
+            "Bluetooth": "5.0",
+            "Driver": "Titanium dual"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 199,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 219,
+              "recomandat": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "trotinete-electrice",
+      "titlu": "Cele mai bune trotinete electrice 2026",
+      "titlu_scurt": "Trotinete electrice",
+      "emoji": "🛴",
+      "culoare": "yellow",
+      "tag": "TRENDING",
+      "descriere": "Top 5 trotinete electrice pentru oras si naveta, evaluate pentru autonomie, putere, siguranta si raport pret/calitate.",
+      "produse": [
+        {
+          "pozitie": 1,
+          "badge": "Alegerea Redactiei",
+          "badge_color": "orange",
+          "nume": "Xiaomi Electric Scooter 4 Pro",
+          "model": "Scooter 4 Pro",
+          "imagine": "https://picsum.photos/seed/xiaomi-4pro/400/280",
+          "pret_de_la": 2299,
+          "moneda": "RON",
+          "scor_total": 9.4,
+          "scoruri": {
+            "Autonomie": 9.4,
+            "Putere": 9.3,
+            "Siguranta": 9.4,
+            "Confort": 9.2,
+            "Pret/Calitate": 9.2
+          },
+          "verdict_scurt": "Cea mai echilibrata trotineta pentru naveta urbana",
+          "verdict_detaliat": "Scooter 4 Pro ofera ~55 km autonomie, motor de 350W (varf 700W), frane duble si roti de 10 inch pentru confort. Cea mai sigura alegere pentru naveta zilnica in oras.",
+          "pro": [
+            "Autonomie ~55 km",
+            "Roti 10 inch confortabile",
+            "Frane duble sigure",
+            "App + tablou de bord"
+          ],
+          "contra": [
+            "Greutate ~17 kg",
+            "Pret peste medie"
+          ],
+          "specificatii": {
+            "Autonomie": "~55 km",
+            "Motor": "350W (varf 700W)",
+            "Viteza max": "25 km/h",
+            "Roti": "10 inch",
+            "Greutate": "~17 kg"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 2299,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 2399,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "quickmobile.ro",
+              "eticheta": "QuickMobile",
+              "pret": 2349,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 2,
+          "badge": "Cel mai bun raport pret",
+          "badge_color": "green",
+          "nume": "Xiaomi Electric Scooter 4 Lite",
+          "model": "Scooter 4 Lite",
+          "imagine": "https://picsum.photos/seed/xiaomi-4lite/400/280",
+          "pret_de_la": 1499,
+          "moneda": "RON",
+          "scor_total": 9.1,
+          "scoruri": {
+            "Autonomie": 9.0,
+            "Putere": 8.8,
+            "Siguranta": 9.0,
+            "Confort": 8.9,
+            "Pret/Calitate": 9.5
+          },
+          "verdict_scurt": "Cea mai buna trotineta pentru incepatori sub 1500 lei",
+          "verdict_detaliat": "Scooter 4 Lite ofera ~30 km autonomie, frane fiabile si roti tubeless, la cel mai bun pret. Ideala pentru navete scurte si pentru cei care incep cu trotineta electrica.",
+          "pro": [
+            "Pret excelent",
+            "Roti tubeless anti-pana",
+            "Usor de folosit",
+            "App inclus"
+          ],
+          "contra": [
+            "Autonomie ~30 km",
+            "Motor mai putin puternic la pante"
+          ],
+          "specificatii": {
+            "Autonomie": "~30 km",
+            "Motor": "300W",
+            "Viteza max": "25 km/h",
+            "Roti": "10 inch tubeless",
+            "Greutate": "~15 kg"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 1499,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 1599,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 3,
+          "badge": "Cea mai performanta",
+          "badge_color": "purple",
+          "nume": "Segway Ninebot Max G2",
+          "model": "Max G2",
+          "imagine": "https://picsum.photos/seed/ninebot-g2/400/280",
+          "pret_de_la": 3499,
+          "moneda": "RON",
+          "scor_total": 9.3,
+          "scoruri": {
+            "Autonomie": 9.6,
+            "Putere": 9.5,
+            "Siguranta": 9.3,
+            "Confort": 9.4,
+            "Pret/Calitate": 8.8
+          },
+          "verdict_scurt": "Autonomie si putere de top pentru navete lungi",
+          "verdict_detaliat": "Ninebot Max G2 ofera pana la 70 km autonomie, suspensie fata-spate si motor puternic care urca pante usor. Alegerea pentru navete lungi si teren variat.",
+          "pro": [
+            "Autonomie pana la 70 km",
+            "Suspensie fata-spate",
+            "Urca pante bine",
+            "Constructie robusta"
+          ],
+          "contra": [
+            "Greutate ~24 kg",
+            "Pret ridicat"
+          ],
+          "specificatii": {
+            "Autonomie": "~70 km",
+            "Motor": "450W (varf 1000W)",
+            "Viteza max": "25 km/h",
+            "Suspensie": "Fata + spate",
+            "Greutate": "~24 kg"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 3499,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 3599,
+              "recomandat": false
+            },
+            {
+              "magazin_slug": "quickmobile.ro",
+              "eticheta": "QuickMobile",
+              "pret": 3549,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 4,
+          "badge": "Cea mai buna pentru oras",
+          "badge_color": "blue",
+          "nume": "Segway Ninebot E2 Plus",
+          "model": "Ninebot E2 Plus",
+          "imagine": "https://picsum.photos/seed/ninebot-e2/400/280",
+          "pret_de_la": 1799,
+          "moneda": "RON",
+          "scor_total": 8.9,
+          "scoruri": {
+            "Autonomie": 8.8,
+            "Putere": 8.7,
+            "Siguranta": 9.1,
+            "Confort": 9.0,
+            "Pret/Calitate": 9.1
+          },
+          "verdict_scurt": "Compacta si usoara pentru oras si transport mixt",
+          "verdict_detaliat": "Ninebot E2 Plus este usoara si compacta, ideala pentru a fi combinata cu transportul public. Autonomie ~35 km, pliere rapida si frane fiabile pentru oras.",
+          "pro": [
+            "Usoara si compacta",
+            "Pliere rapida",
+            "Buna pentru transport mixt",
+            "Frane fiabile"
+          ],
+          "contra": [
+            "Autonomie medie",
+            "Roti mai mici"
+          ],
+          "specificatii": {
+            "Autonomie": "~35 km",
+            "Motor": "300W",
+            "Viteza max": "25 km/h",
+            "Roti": "9 inch",
+            "Greutate": "~14 kg"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 1799,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 1849,
+              "recomandat": false
+            }
+          ]
+        },
+        {
+          "pozitie": 5,
+          "badge": "Cea mai buna buget",
+          "badge_color": "gray",
+          "nume": "Trotineta electrica entry-level",
+          "model": "Urban Lite",
+          "imagine": "https://picsum.photos/seed/urban-lite/400/280",
+          "pret_de_la": 999,
+          "moneda": "RON",
+          "scor_total": 8.2,
+          "scoruri": {
+            "Autonomie": 8.0,
+            "Putere": 8.0,
+            "Siguranta": 8.3,
+            "Confort": 8.2,
+            "Pret/Calitate": 9.2
+          },
+          "verdict_scurt": "Intrare accesibila in mobilitate electrica, sub 1000 lei",
+          "verdict_detaliat": "O trotineta entry-level potrivita pentru drumuri scurte si plate prin oras, la cel mai mic pret. Solutia accesibila pentru a testa mobilitatea electrica.",
+          "pro": [
+            "Pret foarte mic",
+            "Usoara",
+            "Buna pentru drumuri scurte plate"
+          ],
+          "contra": [
+            "Autonomie ~20 km",
+            "Putere redusa la pante",
+            "Frane simple"
+          ],
+          "specificatii": {
+            "Autonomie": "~20 km",
+            "Motor": "250W",
+            "Viteza max": "25 km/h",
+            "Roti": "8.5 inch",
+            "Greutate": "~12 kg"
+          },
+          "magazine": [
+            {
+              "magazin_slug": "emag.ro",
+              "eticheta": "eMAG",
+              "pret": 999,
+              "recomandat": true
+            },
+            {
+              "magazin_slug": "altex.ro",
+              "eticheta": "Altex",
+              "pret": 1049,
+              "recomandat": false
+            }
+          ]
+        }
+      ]
     }
   ]
 }

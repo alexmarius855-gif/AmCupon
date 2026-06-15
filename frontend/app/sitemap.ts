@@ -7,8 +7,16 @@ const BASE_URL = "https://amcupon.ro";
 // Sluguri pagini multi-nisa (/nisa/[slug])
 const NISA_SLUGURI = ["auto", "carti", "casa", "tech", "fashion", "sport", "frumusete"];
 
-// Sluguri pagini /top/[slug]
-const TOP_SLUGURI = ["laptopuri", "telefoane", "casti-wireless", "televizoare", "aspiratoare-robot", "friteuze", "smartwatch-uri", "monitoare", "cafetiere", "masini-de-spalat", "roboti-de-bucatarie", "purificatoare-aer", "scaune-gaming", "biciclete-electrice"];
+// Sluguri pagini /top/[slug] — citite dinamic din top-produse.json
+function getTopSluguriDinamic(): string[] {
+  try {
+    const topPath = path.join(process.cwd(), "public", "top-produse.json");
+    const data = JSON.parse(fs.readFileSync(topPath, "utf-8"));
+    return (data.categorii || []).map((c: { slug: string }) => c.slug);
+  } catch {
+    return ["laptopuri", "telefoane", "casti-wireless", "televizoare"];
+  }
+}
 
 // Sluguri pagini produse pe categorie (/produse/[categorie])
 const PRODUSE_CATEGORII = ["fashion", "electronice", "beauty", "sport", "casa", "copii", "farmacie", "carti", "auto", "animale", "alimente", "bijuterii", "jocuri"];
@@ -76,7 +84,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // ─── Top Produse (/top si /top/[slug]) ───────────────────────────────────
     { url: `${BASE_URL}/top`,                     lastModified: new Date(), changeFrequency: "weekly",  priority: 0.9 },
-    ...TOP_SLUGURI.map(slug => ({
+    ...getTopSluguriDinamic().map(slug => ({
       url: `${BASE_URL}/top/${slug}`,
       lastModified: new Date(),
       changeFrequency: "weekly" as const,
