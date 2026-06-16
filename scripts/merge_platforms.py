@@ -45,6 +45,11 @@ def main():
             slug = magazin.get("magazin", "").strip().lower()
             if not slug:
                 continue
+            if "/" in slug:
+                # Slug cu "/" rupe ruta dinamica /cod-reducere/[magazin] (Next.js
+                # trateaza segmentul ca path multiplu -> 404). Ex: "esyhair.com/en".
+                duplicate += 1
+                continue
             if slug in seen_slugs:
                 # Pastreaza cel cu mai multe promotii / scor mai mare
                 duplicate += 1

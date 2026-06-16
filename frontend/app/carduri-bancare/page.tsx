@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 const LINK_REVOLUT  = "https://revolut.com/referral/AMCUPON";          // cod referral din app Revolut
 const LINK_WISE     = "https://wise.com/invite/AMCUPON";                // link afiliat Wise (Partnerize)
 const LINK_N26      = "https://n26.com/r/AMCUPON";                      // link referral N26
-const LINK_SALTBANK = "https://www.saltbank.ro/?ref=amcupon";           // link referral Salt Bank
+const LINK_SALTBANK = "https://salt.bank/?ref=amcupon";           // link referral Salt Bank (domeniu corect: salt.bank, NU saltbank.ro)
 // ──────────────────────────────────────────────────────────────────────────
 
 const CONTURI = [
