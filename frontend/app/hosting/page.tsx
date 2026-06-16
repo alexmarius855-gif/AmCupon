@@ -1,6 +1,15 @@
 import { Metadata } from "next";
 import Link from "next/link";
 
+// ── LINKURI AFILIATE HOSTING ── inlocuieste cu linkurile tale ─────────────
+// Hostinger: aplica la https://www.hostinger.com/affiliates → 60% comision
+// SiteGround: aplica la https://www.siteground.com/affiliates.htm → $50-150/signup
+// Cloudways: aplica la https://www.cloudways.com/en/partners/affiliate.php
+const LINK_HOSTINGER  = "https://hostinger.com/?REFERRALCODE";   // inlocuieste cu linkul din Impact.com
+const LINK_SITEGROUND = "https://www.siteground.com/?aff=AMCUPON"; // link afiliat SiteGround
+const LINK_CLOUDWAYS  = "https://www.cloudways.com/en/?id=AMCUPON"; // link afiliat Cloudways
+// ──────────────────────────────────────────────────────────────────────────
+
 export const metadata: Metadata = {
   title: "Cel mai bun Hosting Romania 2026 — Hostinger vs SiteGround | AmCupon.ro",
   description: "Comparam cele mai bune servicii de hosting pentru Romania in 2026. Hostinger, SiteGround, Cloudways — preturi, viteza, suport. Alege gazduirea web potrivita.",
@@ -27,8 +36,7 @@ const HOSTING_LIST = [
     pret_luna: "1.99€",
     pret_nota: "plan Starter 48 luni",
     rating: "9.6",
-    url: "https://hostinger.com",
-    // ACTUALIZARE: inlocuieste cu linkul tau de afiliat Hostinger (60% comision) dupa ce aplici la hostinger.com/affiliates
+    url: LINK_HOSTINGER,
     tip: "Shared Hosting / WordPress",
     ideal: "Bloguri, site-uri mici, magazine online, portofolii",
     pros: [
@@ -52,8 +60,7 @@ const HOSTING_LIST = [
     pret_luna: "3.99€",
     pret_nota: "plan StartUp (primul an)",
     rating: "9.3",
-    url: "https://siteground.com",
-    // ACTUALIZARE: inlocuieste cu linkul tau de afiliat SiteGround (~75$ per signup) dupa ce aplici la siteground.com/web-hosting/affiliate.htm
+    url: LINK_SITEGROUND,
     tip: "Shared / Cloud Hosting",
     ideal: "Site-uri de business, WooCommerce, magazine cu trafic",
     pros: [
@@ -76,8 +83,7 @@ const HOSTING_LIST = [
     pret_luna: "11€",
     pret_nota: "plan DigitalOcean 1GB",
     rating: "9.0",
-    url: "https://cloudways.com",
-    // ACTUALIZARE: inlocuieste cu linkul tau de afiliat Cloudways dupa ce aplici la cloudways.com/affiliate
+    url: LINK_CLOUDWAYS,
     tip: "Managed Cloud Hosting",
     ideal: "Agentii, magazine cu trafic mare, developeri",
     pros: [

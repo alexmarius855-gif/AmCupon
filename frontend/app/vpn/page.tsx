@@ -1,6 +1,15 @@
 import { Metadata } from "next";
 import Link from "next/link";
 
+// ── LINKURI AFILIATE VPN ── inlocuieste cu linkurile tale din Impact.com ──
+// NordVPN: aplica la https://partners.nordvpn.com → primesti link personalizat
+// Surfshark: aplica la https://surfshark.com/affiliates → primesti link Impact.com
+// ExpressVPN: aplica la https://www.expressvpn.com/affiliates
+const LINK_NORDVPN    = "https://nordvpn.com/?aff_id=AMCUPON";   // inlocuieste cu Impact.com link
+const LINK_SURFSHARK  = "https://surfshark.com/?coupon=amcupon";  // inlocuieste cu link afiliat
+const LINK_EXPRESSVPN = "https://expressvpn.com/?ref=amcupon";   // inlocuieste cu link afiliat
+// ──────────────────────────────────────────────────────────────────────────
+
 export const metadata: Metadata = {
   title: "Cel mai bun VPN Romania 2026 — Comparatie NordVPN vs Surfshark | AmCupon.ro",
   description: "Comparam cele mai bune VPN-uri pentru Romania in 2026. NordVPN, Surfshark, ExpressVPN — preturi, viteza, securitate. Alege VPN-ul potrivit pentru streaming si confidentialitate.",
@@ -27,8 +36,7 @@ const VPN_LIST = [
     pret_luna: "2.99€",
     pret_nota: "plan 2 ani",
     rating: "9.8",
-    url: "https://nordvpn.com",
-    // ACTUALIZARE: inlocuieste cu linkul tau de afiliat NordVPN dupa ce aplici la partners.nordvpn.com
+    url: LINK_NORDVPN,
     pros: [
       "6000+ servere in 111 tari",
       "Viteza mare (NordLynx protocol)",
@@ -51,8 +59,7 @@ const VPN_LIST = [
     pret_luna: "2.39€",
     pret_nota: "plan 2 ani",
     rating: "9.4",
-    url: "https://surfshark.com",
-    // ACTUALIZARE: inlocuieste cu linkul tau de afiliat Surfshark dupa ce aplici la impact.com
+    url: LINK_SURFSHARK,
     pros: [
       "Dispozitive NELIMITATE",
       "CleanWeb — blocheaza reclame si trackeri",
@@ -74,8 +81,7 @@ const VPN_LIST = [
     pret_luna: "6.67€",
     pret_nota: "plan 1 an",
     rating: "9.2",
-    url: "https://expressvpn.com",
-    // ACTUALIZARE: inlocuieste cu linkul tau de afiliat ExpressVPN
+    url: LINK_EXPRESSVPN,
     pros: [
       "Lightway — protocol propriu ultra-rapid",
       "3000 servere in 105 tari",

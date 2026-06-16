@@ -95,6 +95,7 @@ const CATEGORII_INTL = [
   { href: "/smart-home",      emoji: "🏠", label: "Casa Smart",        desc: "Becuri, camere, termostate WiFi",    from: "#d97706", to: "#ea580c", badge: "" },
   { href: "/antivirus",       emoji: "🛡️", label: "Antivirus",         desc: "Bitdefender, Norton, ESET -70%",     from: "#dc2626", to: "#9f1239", badge: "" },
   { href: "/instrumente-seo", emoji: "📊", label: "Instrumente SEO",   desc: "Semrush, Ahrefs, Moz Pro",           from: "#059669", to: "#0d9488", badge: "NEW" },
+  { href: "/trading",         emoji: "📈", label: "Trading & Invest",  desc: "XTB, Binance, eToro — 0% comision",  from: "#065f46", to: "#1e40af", badge: "NEW" },
   { href: "/vpn",             emoji: "🔒", label: "VPN & Privacy",     desc: "NordVPN, Surfshark, ExpressVPN",     from: "#1e40af", to: "#3730a3", badge: "" },
   { href: "/hosting",         emoji: "🌐", label: "Hosting Web",       desc: "Hostinger, SiteGround, Cloudways",   from: "#6d28d9", to: "#4338ca", badge: "" },
   { href: "/temu",            emoji: "🛍️", label: "Import Asia",       desc: "Temu — milioane produse ieftine",    from: "#f97316", to: "#dc2626", badge: "HOT" },
