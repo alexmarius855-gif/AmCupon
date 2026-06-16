@@ -75,6 +75,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/vpn`,                 lastModified: new Date(), changeFrequency: "weekly",  priority: 0.85 },
     { url: `${BASE_URL}/hosting`,             lastModified: new Date(), changeFrequency: "weekly",  priority: 0.85 },
     { url: `${BASE_URL}/ai-tools`,            lastModified: new Date(), changeFrequency: "weekly",  priority: 0.85 },
+    { url: `${BASE_URL}/carduri-bancare`,     lastModified: new Date(), changeFrequency: "weekly",  priority: 0.85 },
 
     // ─── Pagini produse pe categorie (/produse/[categorie]) ─────────────────
     ...PRODUSE_CATEGORII.map((slug) => ({

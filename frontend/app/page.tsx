@@ -102,6 +102,8 @@ const CATEGORII_INTL = [
   { href: "/shein",           emoji: "✨", label: "Moda Fast Fashion",  desc: "SHEIN — fashion global la pret mic", from: "#db2777", to: "#9d174d", badge: "" },
   { href: "/trendyol",        emoji: "🧡", label: "Marketplace Est",   desc: "Trendyol — piata internationala",    from: "#ea580c", to: "#d97706", badge: "" },
   { href: "/ai-tools",        emoji: "🤖", label: "AI Tools",          desc: "ChatGPT, Claude, Midjourney",        from: "#0ea5e9", to: "#4f46e5", badge: "AI" },
+  { href: "/carduri-bancare", emoji: "💳", label: "Conturi Bancare",   desc: "Revolut, Wise, N26 — cont gratuit",  from: "#6d28d9", to: "#0f766e", badge: "NEW" },
+  { href: "/cursuri-online",  emoji: "🎓", label: "Cursuri Online",    desc: "Udemy, Coursera, Skillshare",        from: "#4338ca", to: "#7c3aed", badge: "" },
 ];
 
 const BRAND_PAGES = [

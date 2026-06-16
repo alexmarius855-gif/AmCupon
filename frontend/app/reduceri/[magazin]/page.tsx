@@ -1,4 +1,4 @@
-import { redirect } from "next/navigation";
+import { permanentRedirect } from "next/navigation";
 import fs from "fs";
 import path from "path";
 
@@ -18,5 +18,5 @@ export default async function RedirectMagazin({
   params: Promise<{ magazin: string }>;
 }) {
   const { magazin } = await params;
-  redirect(`/cod-reducere/${magazin}`);
+  permanentRedirect(`/cod-reducere/${magazin}`);
 }

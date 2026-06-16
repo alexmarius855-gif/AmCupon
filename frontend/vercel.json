@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.amcupon.ro" }],
+      "destination": "https://amcupon.ro/:path*",
+      "permanent": true
+    }
+  ]
+}
