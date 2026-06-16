@@ -65,6 +65,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/bijuterii`,             lastModified: new Date(), changeFrequency: "daily",   priority: 0.8  },
     { url: `${BASE_URL}/jocuri`,                lastModified: new Date(), changeFrequency: "daily",   priority: 0.8  },
     { url: `${BASE_URL}/supermarket`,           lastModified: new Date(), changeFrequency: "daily",   priority: 0.8  },
+    { url: `${BASE_URL}/gaming`,               lastModified: new Date(), changeFrequency: "daily",   priority: 0.9  },
+    { url: `${BASE_URL}/laptop`,               lastModified: new Date(), changeFrequency: "daily",   priority: 0.9  },
+    { url: `${BASE_URL}/telefoane`,            lastModified: new Date(), changeFrequency: "daily",   priority: 0.9  },
+    { url: `${BASE_URL}/antivirus`,            lastModified: new Date(), changeFrequency: "weekly",  priority: 0.85 },
+    { url: `${BASE_URL}/smart-home`,           lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
+    { url: `${BASE_URL}/instrumente-seo`,      lastModified: new Date(), changeFrequency: "weekly",  priority: 0.85 },
 
     // ─── Pagini produse pe categorie (/produse/[categorie]) ─────────────────
     ...PRODUSE_CATEGORII.map((slug) => ({

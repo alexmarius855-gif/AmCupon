@@ -1,12 +1,1 @@
-{
-  "version": "0.0.1",
-  "configurations": [
-    {
-      "name": "amcupon-dev",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev"],
-      "cwd": "frontend",
-      "port": 3000
-    }
-  ]
-}
+{"version":"0.0.1","configurations":[{"name":"amcupon-frontend","runtimeExecutable":"npm","runtimeArgs":["run","dev"],"cwd":"C:\Users\alexm\Projects\afiliere-site\frontend","port":3000}]}

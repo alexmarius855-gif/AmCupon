@@ -58,6 +58,11 @@ const CATEGORII = [
 const SECTIUNI_SPECIALE = [
   { href: "/top",          emoji: "🏆", label: "Top Produse",      desc: "Review-uri laptopuri, telefoane",   gradient: "from-slate-800 to-slate-900" },
   { href: "/gadgets",      emoji: "📡", label: "Gadgets & Tech",   desc: "Smartwatch, casti, drone",         gradient: "from-blue-500 to-indigo-600" },
+  { href: "/laptop",       emoji: "💻", label: "Laptop Ieftin",    desc: "Gaming, business, student",        gradient: "from-blue-700 to-indigo-800" },
+  { href: "/telefoane",    emoji: "📲", label: "Telefoane",        desc: "Samsung, iPhone, Xiaomi reducere", gradient: "from-teal-600 to-cyan-700" },
+  { href: "/gaming",       emoji: "🎮", label: "Gaming PC",        desc: "Placi video, laptop gaming, RTX",  gradient: "from-purple-700 to-indigo-800" },
+  { href: "/antivirus",    emoji: "🛡️", label: "Antivirus",        desc: "Bitdefender, Norton, ESET -70%",   gradient: "from-red-700 to-rose-800" },
+  { href: "/smart-home",   emoji: "🏠", label: "Smart Home",       desc: "Becuri, prize, camere WiFi",       gradient: "from-amber-600 to-orange-700" },
   { href: "/fashion",      emoji: "👗", label: "Fashion & Haine",  desc: "FashionDays, Answear, H&M",        gradient: "from-purple-500 to-fuchsia-600" },
   { href: "/casa",         emoji: "🏡", label: "Casa & Gradina",   desc: "Dedeman, IKEA, Leroy Merlin",      gradient: "from-green-600 to-teal-600" },
   { href: "/moto",         emoji: "🏍️", label: "Auto-Moto",        desc: "Piese, accesorii, anvelope",        gradient: "from-slate-600 to-gray-800" },
@@ -81,6 +86,21 @@ const SECTIUNI_SPECIALE = [
   { href: "/black-friday", emoji: "🖤", label: "Black Friday",     desc: "Cele mai mari reduceri",            gradient: "from-gray-900 to-black" },
   { href: "/craciun",      emoji: "🎄", label: "Craciun",          desc: "Oferte de sarbatori",               gradient: "from-red-600 to-green-700" },
   { href: "/categorii",    emoji: "📂", label: "Toate categoriile",desc: "Exploreaza tot",                    gradient: "from-orange-500 to-red-500" },
+];
+
+const CATEGORII_INTL = [
+  { href: "/gaming",          emoji: "🎮", label: "PC Gaming",         desc: "Laptop gaming, placi video RTX",     from: "#7c3aed", to: "#4338ca", badge: "" },
+  { href: "/laptop",          emoji: "💻", label: "Laptop Ieftin",     desc: "Gaming, business, student",          from: "#1d4ed8", to: "#4338ca", badge: "" },
+  { href: "/telefoane",       emoji: "📲", label: "Telefoane",         desc: "Samsung, iPhone, Xiaomi reducere",   from: "#0d9488", to: "#0284c7", badge: "" },
+  { href: "/smart-home",      emoji: "🏠", label: "Casa Smart",        desc: "Becuri, camere, termostate WiFi",    from: "#d97706", to: "#ea580c", badge: "" },
+  { href: "/antivirus",       emoji: "🛡️", label: "Antivirus",         desc: "Bitdefender, Norton, ESET -70%",     from: "#dc2626", to: "#9f1239", badge: "" },
+  { href: "/instrumente-seo", emoji: "📊", label: "Instrumente SEO",   desc: "Semrush, Ahrefs, Moz Pro",           from: "#059669", to: "#0d9488", badge: "NEW" },
+  { href: "/vpn",             emoji: "🔒", label: "VPN & Privacy",     desc: "NordVPN, Surfshark, ExpressVPN",     from: "#1e40af", to: "#3730a3", badge: "" },
+  { href: "/hosting",         emoji: "🌐", label: "Hosting Web",       desc: "Hostinger, SiteGround, Cloudways",   from: "#6d28d9", to: "#4338ca", badge: "" },
+  { href: "/temu",            emoji: "🛍️", label: "Import Asia",       desc: "Temu — milioane produse ieftine",    from: "#f97316", to: "#dc2626", badge: "HOT" },
+  { href: "/shein",           emoji: "✨", label: "Moda Fast Fashion",  desc: "SHEIN — fashion global la pret mic", from: "#db2777", to: "#9d174d", badge: "" },
+  { href: "/trendyol",        emoji: "🧡", label: "Marketplace Est",   desc: "Trendyol — piata internationala",    from: "#ea580c", to: "#d97706", badge: "" },
+  { href: "/ai-tools",        emoji: "🤖", label: "AI Tools",          desc: "ChatGPT, Claude, Midjourney",        from: "#0ea5e9", to: "#4f46e5", badge: "AI" },
 ];
 
 const BRAND_PAGES = [
@@ -677,6 +697,42 @@ export default function Home() {
           <Link href="/categorii" className="sm:hidden mt-4 flex items-center justify-center gap-1.5 text-sm font-bold text-orange-400 border border-orange-500/30 bg-orange-500/10 py-2.5 rounded-2xl">
             Toate categoriile →
           </Link>
+        </div>
+      </section>
+
+      {/* ─── NISE & INTERNATIONAL ────────────────────────────────────────── */}
+      <section className="bg-slate-950 border-b border-slate-800 py-10 px-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-6">
+            <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-1.5">NISE & INTERNATIONAL</p>
+            <h2 className="text-xl font-black tracking-tight text-white">Categorii speciale & piete internationale</h2>
+            <p className="text-slate-400 text-sm mt-1">Tech, securitate, fashion global si marketplace-uri din toata lumea</p>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+            {CATEGORII_INTL.map(c => (
+              <a key={c.href} href={c.href}
+                className="group relative rounded-2xl overflow-hidden transition-all duration-300 hover:scale-[1.04] hover:shadow-2xl hover:shadow-black/50"
+                style={{ background: `linear-gradient(135deg, ${c.from} 0%, ${c.to} 100%)` }}>
+                <div className="absolute inset-0 bg-white/0 group-hover:bg-white/10 transition-colors duration-300 pointer-events-none" />
+                {c.badge && (
+                  <div className="absolute top-2 right-2 text-[9px] font-black text-white bg-black/40 backdrop-blur-sm px-1.5 py-0.5 rounded-full tracking-wider">{c.badge}</div>
+                )}
+                <div className="relative p-4 min-h-[110px] flex flex-col gap-2">
+                  <span className="text-3xl group-hover:scale-110 transition-transform duration-300 drop-shadow-lg">{c.emoji}</span>
+                  <div>
+                    <p className="text-white font-black text-xs leading-tight">{c.label}</p>
+                    <p className="text-white/55 text-[10px] mt-0.5 line-clamp-2 leading-tight">{c.desc}</p>
+                  </div>
+                  <div className="mt-auto flex items-center gap-1 text-white/50 group-hover:text-white/90 transition-colors text-[10px] font-bold">
+                    Descopera
+                    <svg className="w-2.5 h-2.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
       </section>
 

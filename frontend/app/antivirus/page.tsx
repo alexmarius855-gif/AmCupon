@@ -21,6 +21,7 @@ export const metadata: Metadata = {
 
 const TOP_ANTIVIRUS = ["bitdefender.com","norton.com","eset.com","kaspersky.com","malwarebytes.com","emag.ro","altex.ro"];
 const CAT_AV = ["software","security","antivirus","tech"];
+
 const TIPURI_PROTECTIE = [
   { emoji: "🛡️", titlu: "Antivirus PC & Mac", desc: "Protectie in timp real impotriva virusilor, ransomware, spyware" },
   { emoji: "📱", titlu: "Antivirus Android & iOS", desc: "Securitate mobila, anti-furt, VPN integrat" },
@@ -31,14 +32,14 @@ const TIPURI_PROTECTIE = [
 ];
 
 const COMPARATIV = [
-  { brand: "Bitdefender", nota: "9.8/10", pret: "de la 45 lei/an", highlight: "Cel mai bun detectie malware", culoare: "bg-red-500" },
+  { brand: "Bitdefender", nota: "9.8/10", pret: "de la 45 lei/an", highlight: "Cel mai bun detectie malware", culoare: "bg-red-600" },
   { brand: "Norton 360", nota: "9.5/10", pret: "de la 59 lei/an", highlight: "VPN nelimitat inclus", culoare: "bg-yellow-500" },
-  { brand: "ESET NOD32", nota: "9.3/10", pret: "de la 39 lei/an", highlight: "Cel mai usor pe sistem", culoare: "bg-blue-500" },
-  { brand: "Kaspersky", nota: "9.1/10", pret: "de la 49 lei/an", highlight: "Protectie bancara excelenta", culoare: "bg-green-500" },
+  { brand: "ESET NOD32", nota: "9.3/10", pret: "de la 39 lei/an", highlight: "Cel mai usor pe sistem", culoare: "bg-blue-600" },
+  { brand: "Kaspersky", nota: "9.1/10", pret: "de la 49 lei/an", highlight: "Protectie bancara excelenta", culoare: "bg-emerald-600" },
 ];
 
 function numeAfisat(s: string) { return s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" "); }
-const CULORI = ["bg-red-500","bg-yellow-500","bg-blue-500","bg-green-500","bg-purple-500","bg-orange-500","bg-teal-500"];
+const CULORI_BADGE = ["bg-red-600","bg-yellow-500","bg-blue-600","bg-emerald-600","bg-purple-600","bg-orange-500","bg-teal-600"];
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Antivirus Ieftin Romania 2026","url":"https://amcupon.ro/antivirus","description":"Coduri reducere antivirus Romania — Bitdefender, Norton, ESET, Kaspersky" };
 
 export default function AntivirusPage() {
@@ -56,97 +57,124 @@ export default function AntivirusPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-white">
-        <nav className="bg-white border-b border-gray-100">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-gray-400">
-            <Link href="/" className="hover:text-orange-500">Acasa</Link>
-            <span className="mx-1">/</span>
-            <span className="text-gray-700 font-medium">Antivirus</span>
+      <div className="min-h-screen bg-slate-950">
+
+        {/* Breadcrumb */}
+        <nav className="bg-slate-900/80 backdrop-blur-sm border-b border-slate-800">
+          <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-1.5 text-xs text-slate-500">
+            <Link href="/" className="hover:text-orange-400 transition-colors">Acasa</Link>
+            <span>/</span>
+            <span className="text-slate-300 font-medium">Antivirus</span>
           </div>
         </nav>
 
-        <section className="bg-gradient-to-br from-red-600 via-rose-600 to-orange-500 text-white py-14 px-4">
-          <div className="max-w-6xl mx-auto text-center">
-            <div className="text-5xl mb-4">🛡️</div>
-            <h1 className="text-3xl md:text-4xl font-black mb-3">Antivirus Ieftin Romania {an}</h1>
-            <p className="text-red-100 text-lg mb-6 max-w-xl mx-auto">
+        {/* Hero */}
+        <section className="relative overflow-hidden bg-gradient-to-br from-red-950 via-slate-900 to-rose-950 py-16 px-4">
+          <div className="absolute inset-0 pointer-events-none">
+            <div className="absolute top-0 right-1/4 w-96 h-96 bg-red-600/20 rounded-full blur-3xl" />
+            <div className="absolute bottom-0 left-1/4 w-64 h-64 bg-rose-600/15 rounded-full blur-3xl" />
+          </div>
+          <div className="relative max-w-6xl mx-auto text-center">
+            <div className="inline-flex items-center gap-2 bg-red-500/20 border border-red-500/30 text-red-300 text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
+              <span className="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse"/>
+              Pana la 70% reducere
+            </div>
+            <div className="text-6xl mb-5 drop-shadow-2xl">🛡️</div>
+            <h1 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">
+              Antivirus Ieftin Romania <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #f87171, #fb923c)"}}>{an}</span>
+            </h1>
+            <p className="text-slate-300 text-lg mb-8 max-w-xl mx-auto leading-relaxed">
               Bitdefender, Norton, ESET, Kaspersky — protectie completa cu pana la 70% reducere fata de pretul de lista
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["PC & Mac","Android","iOS","5 Dispozitive","Parental Control","VPN Inclus","Dark Web Monitor"].map(c => (
-                <span key={c} className="bg-white/15 text-white text-sm font-semibold px-4 py-1.5 rounded-full border border-white/25">{c}</span>
+                <span key={c} className="bg-white/8 border border-white/15 text-white/80 text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
               ))}
             </div>
           </div>
         </section>
 
-        <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-gray-900 mb-6 text-center">Comparativ antivirus {an} — Romania</h2>
+        {/* Comparativ */}
+        <section className="max-w-6xl mx-auto px-4 py-12">
+          <div className="text-center mb-8">
+            <p className="text-xs font-bold text-red-400 uppercase tracking-widest mb-2">COMPARATIV</p>
+            <h2 className="text-2xl font-black text-white">Cel mai bun antivirus {an} — Romania</h2>
+          </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {COMPARATIV.map(c => (
-              <div key={c.brand} className="bg-white border-2 border-gray-100 rounded-2xl p-5 hover:border-orange-200 hover:shadow-md transition-all">
-                <div className={`w-10 h-10 ${c.culoare} rounded-xl flex items-center justify-center text-white font-black text-sm mb-3`}>
-                  {c.brand[0]}
-                </div>
-                <h3 className="font-black text-gray-900 text-base mb-1">{c.brand}</h3>
-                <p className="text-xs text-gray-500 mb-2">{c.highlight}</p>
+              <div key={c.brand} className="bg-slate-900 border border-slate-800 hover:border-red-500/40 rounded-2xl p-5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-red-500/10">
+                <div className={`w-11 h-11 ${c.culoare} rounded-xl flex items-center justify-center text-white font-black text-sm mb-4`}>{c.brand[0]}</div>
+                <h3 className="font-black text-white text-base mb-1">{c.brand}</h3>
+                <p className="text-xs text-slate-400 mb-3">{c.highlight}</p>
                 <div className="flex items-center justify-between">
-                  <span className="text-orange-500 font-black text-sm">{c.pret}</span>
-                  <span className="bg-green-100 text-green-700 text-xs font-bold px-2 py-0.5 rounded-full">{c.nota}</span>
+                  <span className="text-orange-400 font-black text-sm">{c.pret}</span>
+                  <span className="bg-emerald-500/15 border border-emerald-500/25 text-emerald-400 text-xs font-bold px-2 py-0.5 rounded-full">{c.nota}</span>
                 </div>
               </div>
             ))}
           </div>
         </section>
 
-        <section className="max-w-6xl mx-auto px-4 pb-10">
-          <h2 className="text-xl font-black text-gray-900 mb-6 text-center">Ce include un antivirus bun</h2>
+        {/* Tipuri protectie */}
+        <section className="max-w-6xl mx-auto px-4 pb-12">
+          <div className="text-center mb-8">
+            <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-2">FUNCTII</p>
+            <h2 className="text-2xl font-black text-white">Ce include un antivirus bun</h2>
+          </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {TIPURI_PROTECTIE.map(a => (
-              <div key={a.titlu} className="bg-red-50 border border-red-100 rounded-2xl p-5">
-                <div className="text-3xl mb-2">{a.emoji}</div>
-                <h3 className="font-bold text-gray-900 text-sm mb-1">{a.titlu}</h3>
-                <p className="text-xs text-gray-500">{a.desc}</p>
+            {TIPURI_PROTECTIE.map((a, i) => (
+              <div key={a.titlu} className="bg-slate-900 border border-slate-800 hover:border-red-500/30 rounded-2xl p-5 transition-all duration-200">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className={`w-10 h-10 rounded-xl flex items-center justify-center text-xl ${CULORI_BADGE[i % CULORI_BADGE.length]}`}>{a.emoji}</div>
+                  <h3 className="font-bold text-white text-sm">{a.titlu}</h3>
+                </div>
+                <p className="text-xs text-slate-400 leading-relaxed">{a.desc}</p>
               </div>
             ))}
           </div>
         </section>
 
+        {/* Magazine */}
         {magazine.length > 0 && (
-          <section className="max-w-6xl mx-auto px-4 pb-10">
-            <h2 className="text-xl font-black text-gray-900 mb-5">Unde gasesti antivirus cu reducere</h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+          <section className="max-w-6xl mx-auto px-4 pb-12">
+            <div className="flex items-center justify-between mb-6">
+              <div>
+                <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-1">MAGAZINE PARTENERE</p>
+                <h2 className="text-xl font-black text-white">Unde gasesti antivirus cu reducere</h2>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
               {magazine.map((m, i) => {
                 const nume = numeAfisat(m.magazin);
-                const culoare = CULORI[i % CULORI.length];
+                const culoare = CULORI_BADGE[i % CULORI_BADGE.length];
                 const promo = m.promotii[0];
                 return (
                   <a key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                    className="group bg-white border border-gray-200 hover:border-red-300 rounded-2xl p-4 transition-all hover:shadow-md">
+                    className="group bg-slate-900 border border-slate-800 hover:border-red-500/50 rounded-2xl p-4 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-red-500/10">
                     <div className="flex items-center gap-3 mb-3">
                       {m.logo_url ? (
-                        <div className="w-10 h-10 rounded-xl overflow-hidden bg-gray-50 border border-gray-100 shrink-0">
+                        <div className="w-10 h-10 rounded-xl overflow-hidden bg-white flex items-center justify-center shrink-0">
                           {/* eslint-disable-next-line @next/next/no-img-element */}
-                          <img src={m.logo_url} alt={`Logo ${nume}`} className="w-full h-full object-contain" loading="lazy" />
+                          <img src={m.logo_url} alt={`Logo ${nume}`} className="w-8 h-8 object-contain" loading="lazy" />
                         </div>
                       ) : (
-                        <div className={`w-10 h-10 rounded-xl ${culoare} flex items-center justify-center text-white font-black text-lg shrink-0`}>
-                          {nume[0]}
-                        </div>
+                        <div className={`w-10 h-10 rounded-xl ${culoare} flex items-center justify-center text-white font-black text-lg shrink-0`}>{nume[0]}</div>
                       )}
                       <div>
-                        <p className="font-bold text-gray-900 text-sm">{nume}</p>
-                        {m.are_promotie && m.cod_cupon && <span className="text-xs text-orange-500 font-bold">COD</span>}
-                        {m.are_promotie && !m.cod_cupon && <span className="text-xs text-green-500 font-medium">Oferta</span>}
+                        <p className="font-bold text-white text-sm group-hover:text-red-300 transition-colors">{nume}</p>
+                        {m.are_promotie && m.cod_cupon && <span className="text-[10px] font-black text-orange-400 bg-orange-500/10 border border-orange-500/20 px-1.5 py-0.5 rounded-full">COD</span>}
+                        {m.are_promotie && !m.cod_cupon && <span className="text-[10px] font-medium text-emerald-400">Oferta activa</span>}
                       </div>
                     </div>
                     {promo ? (
-                      <p className="text-gray-500 text-xs line-clamp-2">{promo.nume}</p>
+                      <p className="text-slate-400 text-xs line-clamp-2 leading-relaxed">{promo.nume}</p>
                     ) : (
-                      <p className="text-gray-400 text-xs italic">Verifica ofertele curente</p>
+                      <p className="text-slate-600 text-xs italic">Verifica ofertele curente</p>
                     )}
-                    <div className="flex justify-end mt-2">
-                      <span className="text-xs text-red-500 font-semibold group-hover:text-red-600">Vezi &rarr;</span>
+                    <div className="flex justify-end mt-3">
+                      <span className="text-xs text-red-400 font-semibold group-hover:text-red-300 flex items-center gap-1">
+                        Vezi <svg className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/></svg>
+                      </span>
                     </div>
                   </a>
                 );
@@ -163,28 +191,31 @@ export default function AntivirusPage() {
           limit={8}
         />
 
-        <section className="bg-gray-50 border-t border-gray-200 py-10 px-4">
+        {/* Ghid */}
+        <section className="bg-slate-900 border-t border-slate-800 py-12 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-gray-900 mb-5">Ghid: Ce antivirus sa alegi in {an}</h2>
-            <div className="space-y-4 text-sm text-gray-600 leading-relaxed">
-              <div>
-                <h3 className="font-bold text-gray-900 mb-1">Bitdefender — cel mai bun antivirus Romania {an}</h3>
-                <p>Bitdefender este o companie romaneasca (Cluj-Napoca) cu una dintre cele mai bune rate de detectie din lume. Total Security include protectie pentru 5 dispozitive, VPN 200MB/zi, Parental Control, Password Manager si protectie webcam. Pretul de lista este 250 lei/an, dar cu coduri AmCupon gasesti frecvent la 80-120 lei.</p>
+            <p className="text-xs font-bold text-red-400 uppercase tracking-widest mb-3">GHID ALEGERE</p>
+            <h2 className="text-2xl font-black text-white mb-7">Ce antivirus sa alegi in {an}</h2>
+            <div className="space-y-5">
+              <div className="bg-slate-800 border border-slate-700 rounded-2xl p-5">
+                <h3 className="font-bold text-white mb-2 text-base">Bitdefender — cel mai bun antivirus Romania {an}</h3>
+                <p className="text-sm text-slate-400 leading-relaxed">Bitdefender este o companie romaneasca (Cluj-Napoca) cu una dintre cele mai bune rate de detectie din lume. Total Security include protectie pentru 5 dispozitive, VPN 200MB/zi, Parental Control, Password Manager si protectie webcam. Pretul de lista este 250 lei/an, dar cu coduri AmCupon gasesti frecvent la 80-120 lei.</p>
               </div>
-              <div>
-                <h3 className="font-bold text-gray-900 mb-1">Norton 360 — VPN nelimitat inclus</h3>
-                <p>Singurul antivirus major care include VPN fara limita de trafic in pachetul standard. Ideal daca folosesti frecvent retele Wi-Fi publice sau vrei acces la continut geo-blocat.</p>
+              <div className="bg-slate-800 border border-slate-700 rounded-2xl p-5">
+                <h3 className="font-bold text-white mb-2 text-base">Norton 360 — VPN nelimitat inclus</h3>
+                <p className="text-sm text-slate-400 leading-relaxed">Singurul antivirus major care include VPN fara limita de trafic in pachetul standard. Ideal daca folosesti frecvent retele Wi-Fi publice sau vrei acces la continut geo-blocat.</p>
               </div>
-              <div>
-                <h3 className="font-bold text-gray-900 mb-1">Ai nevoie de antivirus pe telefon?</h3>
-                <p>Android — da, este vulnerabil. iOS — mai putin, dar un antivirus cu VPN si protectie phishing are sens. Majoritatea pachetelor premium includ protectie mobila fara cost suplimentar.</p>
+              <div className="bg-slate-800 border border-slate-700 rounded-2xl p-5">
+                <h3 className="font-bold text-white mb-2 text-base">Ai nevoie de antivirus pe telefon?</h3>
+                <p className="text-sm text-slate-400 leading-relaxed">Android — da, este vulnerabil. iOS — mai putin, dar un antivirus cu VPN si protectie phishing are sens. Majoritatea pachetelor premium includ protectie mobila fara cost suplimentar.</p>
               </div>
             </div>
           </div>
         </section>
 
+        {/* Related */}
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-gray-700 mb-4">Exploreaza si alte categorii</h2>
+          <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/vpn", label: "🌐 VPN" },
@@ -192,21 +223,20 @@ export default function AntivirusPage() {
               { href: "/software-business", label: "💼 Software" },
               { href: "/gaming", label: "🎮 Gaming" },
               { href: "/electronice", label: "📱 Electronice" },
-              { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-gray-100 hover:bg-red-50 hover:text-red-600 text-gray-700 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-gray-200 hover:border-red-200">
+                className="bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-red-500/40 text-slate-300 hover:text-white text-sm font-semibold px-4 py-2 rounded-xl transition-all duration-200">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-gray-200 py-6 text-center text-xs text-gray-400 mt-4">
+        <footer className="border-t border-slate-800 py-6 text-center text-xs text-slate-600">
           &copy; {an} AmCupon.ro &middot;{" "}
-          <Link href="/vpn" className="hover:text-orange-500">VPN</Link>{" · "}
-          <Link href="/hosting" className="hover:text-orange-500">Hosting</Link>{" · "}
-          <Link href="/categorii" className="hover:text-orange-500">Categorii</Link>
+          <Link href="/vpn" className="hover:text-orange-400 transition-colors">VPN</Link>{" · "}
+          <Link href="/hosting" className="hover:text-orange-400 transition-colors">Hosting</Link>{" · "}
+          <Link href="/categorii" className="hover:text-orange-400 transition-colors">Categorii</Link>
         </footer>
       </div>
     </>
