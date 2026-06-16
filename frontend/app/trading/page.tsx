@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 
 // ── LINKURI AFILIATE ── inlocuieste cu codurile tale ───────────────────────
 const LINK_XTB       = "https://www.xtb.com/ro?ref=amcupon";           // IB link XTB
-const LINK_BINANCE   = "https://accounts.binance.com/register?ref=AMCUPON"; // ref code Binance
+const LINK_BINANCE   = "https://accounts.binance.com/register?ref=205306153"; // ref code Binance real (20% comision Spot)
 const LINK_ETORO     = "https://www.etoro.com/ro/?dl=30001846";         // afiliat eToro
 const LINK_TRADING212 = "https://www.trading212.com/invite/AMCUPON";   // referral Trading212
 const LINK_REVOLUT   = "https://revolut.com/referral/AMCUPON";         // referral Revolut

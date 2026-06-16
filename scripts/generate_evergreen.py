@@ -22,7 +22,7 @@ ARTICOLE_EVERGREEN = [
     # ── BEST-OF / NISA (intentie comerciala mare) ──────────────────────────────
     {
         "slug": "cele-mai-bune-produse-animale-companie-romania",
-        "title": f"Cele Mai Bune Produse pentru Animale de Companie {AN} — Ghid Economii",
+        "title": f"Cele Mai Bune Produse pentru Animale de Companie {AN}",
         "excerpt": f"Ghid complet {AN} pentru produse de calitate pentru caini si pisici: hrana, antiparazitare, accesorii. Unde cumperi cel mai ieftin si cum economisesti pana la 40%.",
         "category": "Animale",
         "tip": "ghid",
@@ -86,7 +86,7 @@ Animalul tau merita produse de calitate — iar tu meriti sa nu platesti pretul 
     },
     {
         "slug": "cele-mai-bune-oferte-carti-online-romania",
-        "title": f"Cele Mai Bune Oferte la Carti Online Romania {AN} — Unde Cumperi Ieftin",
+        "title": f"Cele Mai Bune Oferte la Carti Online Romania {AN}",
         "excerpt": f"Ghid {AN} pentru carti online ieftine: Carturesti, Litera, Bookzone, Humanitas. Coduri reducere active si sfaturi sa economisesti pana la 50% la carti.",
         "category": "Carti",
         "tip": "ghid",
@@ -139,7 +139,7 @@ Cartile online sunt mult mai ieftine daca stii unde si cand sa cauti. [AmCupon.r
     },
     {
         "slug": "cele-mai-bune-oferte-casa-gradina-romania",
-        "title": f"Cele Mai Bune Oferte Casa si Gradina {AN} — Amenajeaza Ieftin",
+        "title": f"Cele Mai Bune Oferte Casa si Gradina {AN}",
         "excerpt": f"Ghid {AN} pentru amenajari casa si gradina la preturi mici. Mobilier, decor, scule, gratare. Coduri reducere active si sfaturi sa economisesti pana la 50%.",
         "category": "Casa",
         "tip": "ghid",
@@ -189,7 +189,7 @@ Amenajarile nu trebuie sa coste o avere. [AmCupon.ro](/categorii/home-garden) ad
     },
     {
         "slug": "cele-mai-bune-oferte-sport-fitness-romania",
-        "title": f"Cele Mai Bune Oferte Sport si Fitness {AN} — Echipament Ieftin",
+        "title": f"Cele Mai Bune Oferte Sport si Fitness {AN}",
         "excerpt": f"Ghid {AN} pentru echipament sportiv ieftin: adidasi, haine sport, fitness. SportDepot, Decathlon, Fitlife. Coduri reducere active si sfaturi de economisire.",
         "category": "Sport",
         "tip": "ghid",
@@ -239,7 +239,7 @@ Echipamentul sportiv de calitate nu trebuie sa fie scump. [AmCupon.ro](/categori
     },
     {
         "slug": "ghid-black-friday-romania",
-        "title": f"Ghid Black Friday Romania {AN} — Cum Prinzi Cele Mai Bune Reduceri",
+        "title": f"Ghid Black Friday Romania {AN}",
         "excerpt": f"Ghid complet Black Friday {AN} in Romania: cand e, cum te pregatesti, ce magazine au cele mai bune reduceri si cum eviti falsele oferte.",
         "category": "Ghid",
         "tip": "ghid",
@@ -293,7 +293,7 @@ Black Friday e o oportunitate reala de a economisi sute de lei — daca esti pre
     # ── GHIDURI CATEGORII ──────────────────────────────────────────────────────
     {
         "slug": "ghid-cumparaturi-fashion-online-romania",
-        "title": f"Ghid Cumparaturi Fashion Online Romania {AN} — Cum Economisesti 30-60%",
+        "title": f"Ghid Cumparaturi Fashion Online Romania {AN}",
         "excerpt": f"Ghid complet pentru cumparaturi fashion online in Romania {AN}. Magazine de top, coduri reducere active si sfaturi sa economisesti pana la 60% la haine si accesorii.",
         "category": "Fashion",
         "tip": "ghid",
@@ -353,7 +353,7 @@ Cumparaturile fashion online in Romania sunt mai ieftine ca niciodata daca stii 
     },
     {
         "slug": "ghid-cumparaturi-electronice-online-romania",
-        "title": f"Ghid Electronice Online Romania {AN} — Unde Cumperi Cel Mai Ieftin",
+        "title": f"Ghid Electronice Online Romania {AN}",
         "excerpt": f"Unde cumperi electronice online mai ieftin in Romania {AN}? eMAG vs Altex vs Flanco — comparatie completa + coduri reducere active la laptopuri, telefoane si electrocasnice.",
         "category": "Electronice",
         "tip": "ghid",
@@ -399,7 +399,7 @@ Evomag are adesea preturi mai mici decat eMAG pe anumite categorii si livrare ra
     },
     {
         "slug": "ghid-cumparaturi-farmacie-online-romania",
-        "title": f"Farmacie Online Romania {AN} — Cum Economisesti la Medicamente si Suplimente",
+        "title": f"Farmacie Online Romania {AN} — Ghid Economii",
         "excerpt": f"Ghid farmacie online Romania {AN}. Dr. Max, Vegis, Catena — comparatie preturi + coduri reducere active la medicamente OTC, suplimente si produse naturiste.",
         "category": "Farmacie",
         "tip": "ghid",
@@ -441,7 +441,7 @@ Farmacia Tei are promotii saptamanale si un card de fidelitate activ in toata ta
     },
     {
         "slug": "ghid-cumparaturi-copii-jucarii-online",
-        "title": f"Jucarii si Produse Copii Online Romania {AN} — Ghid Complet",
+        "title": f"Jucarii si Produse Copii Online Romania {AN}",
         "excerpt": f"Ghid jucarii si produse copii online Romania {AN}. Noriel, Bebetei, Smyths Toys — unde gasesti cel mai bun pret + coduri reducere active pentru parinti.",
         "category": "Copii",
         "tip": "ghid",
@@ -478,7 +478,7 @@ Cumpara intotdeauna de la magazine autorizate care garanteaza certificarea CE pe
     },
     {
         "slug": "cum-sa-economisesti-la-shopping-online-romania",
-        "title": f"Cum sa Economisesti la Shopping Online in Romania — 15 Metode Testate {AN}",
+        "title": f"Cum sa Economisesti la Shopping Online Romania {AN}",
         "excerpt": f"15 metode testate pentru a economisi la cumparaturi online in Romania in {AN}. Coduri reducere, cashback, timing corect si trucuri pentru fiecare magazine mare.",
         "category": "Ghiduri",
         "tip": "ghid",
@@ -537,7 +537,7 @@ Pretul produsului + transport + eventual taxe vamale (pentru comenzi din afara U
     },
     {
         "slug": "black-friday-romania-ghid-complet",
-        "title": f"Black Friday Romania {AN} — Ghid Complet: Cand, Unde si Cum Cumperi Inteligent",
+        "title": f"Black Friday Romania {AN} — Ghid Complet",
         "excerpt": f"Ghid complet Black Friday Romania {AN}. Cand incepe, ce magazine participa, cum sa identifici reducerile reale si codurile de reducere pentru cumparaturi inteligente.",
         "category": "Ghiduri",
         "tip": "ghid",
@@ -600,7 +600,7 @@ In perioada Black Friday, AmCupon.ro actualizeaza codurile in timp real. Unele m
     },
     {
         "slug": "top-magazine-online-romania-cu-reduceri",
-        "title": f"Top 20 Magazine Online Romania cu Cele Mai Bune Reduceri in {AN}",
+        "title": f"Top 20 Magazine Online Romania cu Reduceri {AN}",
         "excerpt": f"Top 20 magazine online Romania {AN} cu reduceri reale si coduri verificate. eMAG, FashionDays, Notino, Answear — ghid complet cu rating si coduri active.",
         "category": "Ghiduri",
         "tip": "ghid",
@@ -652,7 +652,7 @@ AmCupon.ro monitorizeaza peste 288 magazine online din Romania. Iata top 20 dupa
     },
     {
         "slug": "cod-reducere-emag-ghid-complet",
-        "title": f"Cod Reducere eMAG {AN} — Ghid Complet: Toate Metodele de Economisire",
+        "title": f"Cod Reducere eMAG {AN} — Ghid Complet",
         "excerpt": f"Ghid complet coduri reducere eMAG {AN}. Genius, cashback, newsletter, Black Friday — toate metodele sa economisesti la cel mai mare retailer online din Romania.",
         "category": "Electronice",
         "tip": "ghid",
@@ -712,7 +712,7 @@ eMAG ofera adesea rate fara dobanda la electronice mari. Combina cu un voucher d
     },
     {
         "slug": "reduceri-cosmetice-parfumuri-online-romania",
-        "title": f"Reduceri Cosmetice si Parfumuri Online Romania {AN} — Notino vs Douglas vs Sephora",
+        "title": f"Reduceri Cosmetice si Parfumuri Romania {AN}",
         "excerpt": f"Comparatie completa Notino vs Douglas vs Sephora Romania {AN}. Unde gasesti parfumuri si cosmetice mai ieftin + coduri reducere active verificate zilnic.",
         "category": "Frumusete",
         "tip": "ghid",

@@ -210,7 +210,7 @@ Sistemul nostru verifica promotiile de la {nume} de **6 ori pe zi** (la fiecare 
 
     return {
         "slug":    slug_articol_magazin(slug_mag, luna, an),
-        "title":   f"Cod Reducere {nume} — {luna} {an} | Oferte Verificate AmCupon",
+        "title":   f"Cod Reducere {nume} {luna} {an} | AmCupon.ro",
         "date":    datetime.now().strftime("%Y-%m-%d"),
         "excerpt": f"Coduri reducere {nume} verificate in {luna} {an}. {len(promotii)} promotii active, rata succes {procent}%. Ghid complet + FAQ pe AmCupon.ro.",
         "category": categorie,
@@ -230,7 +230,9 @@ def genereaza_articol_categorie(cat_slug: str, cat_name: str, magazine: list, lu
     mag_cat.sort(key=lambda x: (x.get("cod_cupon", False), x.get("procent_succes", 0)), reverse=True)
     top = mag_cat[:7]
 
-    if not top:
+    if len(top) < 3:
+        # Sub 3 magazine inseamna un articol "Top Reduceri" fals — promite un roundup,
+        # livreaza 1-2 intrari. Mai bine nu generam deloc decat sa publicam continut slab.
         return None
 
     linii_mag = []
@@ -271,7 +273,7 @@ AmCupon.ro agrega zilnic ofertele de la peste 600 de magazine romanesti. Nu plat
 
     return {
         "slug": slug_articol_categorie(cat_slug, luna, an),
-        "title": f"Top Reduceri {cat_name} — {luna} {an} | Coduri Verificate AmCupon.ro",
+        "title": f"Top Reduceri {cat_name} {luna} {an} | AmCupon.ro",
         "date": datetime.now().strftime("%Y-%m-%d"),
         "excerpt": f"{nr_total} magazine de {cat_name} cu promotii active in {luna} {an}. {nr_coduri} cu cod reducere. Oferte verificate zilnic pe AmCupon.ro.",
         "category": cat_name,
