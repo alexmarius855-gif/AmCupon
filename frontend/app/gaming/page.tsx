@@ -1,0 +1,190 @@
+import Link from "next/link";
+import { Metadata } from "next";
+import fs from "fs";
+import path from "path";
+import NisaProduse from "../components/NisaProduse";
+
+interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
+interface Magazin {
+  magazin: string; url: string; url_afiliat: string; logo_url?: string;
+  categorie: string; categorie_slug?: string; scor_final: number;
+  are_promotie: boolean; cod_cupon: boolean; promotii: Promotie[]; trend: number;
+}
+
+export const metadata: Metadata = {
+  title: "Reduceri Gaming 2026 — Coduri eMAG, PCGarage, Altex | AmCupon.ro",
+  description: "Coduri reducere gaming Romania 2026: laptopuri gaming, placi video, monitoare, periferice. eMAG, PCGarage, Altex, Evomag — oferte verificate zilnic.",
+  keywords: ["reduceri gaming", "laptop gaming ieftin", "placa video reducere", "monitor gaming reducere", "pcgarage cod reducere", "emag gaming reducere", "periferice gaming ieftine"],
+  alternates: { canonical: "https://amcupon.ro/gaming" },
+  openGraph: { title: "Reduceri Gaming 2026 | AmCupon.ro", url: "https://amcupon.ro/gaming", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
+};
+
+const TOP_GAMING = ["pcgarage.ro","emag.ro","altex.ro","evomag.ro","flanco.ro","cel.ro","quickmobile.ro"];
+const CAT_GAMING = ["gaming","periferice","electronics","electronice"];
+const CATEGORII_GAMING = [
+  { emoji: "💻", titlu: "Laptopuri Gaming", desc: "ASUS ROG, Lenovo Legion, MSI, Acer Nitro — performanta maxima" },
+  { emoji: "🖥️", titlu: "Monitoare Gaming", desc: "144Hz, 240Hz, 4K — pentru gaming competitiv sau casual" },
+  { emoji: "🎮", titlu: "Console & Jocuri", desc: "PS5, Xbox, Nintendo Switch, jocuri digitale" },
+  { emoji: "⌨️", titlu: "Periferice", desc: "Tastatura mecanica, mouse gaming, casti, controller" },
+  { emoji: "🖱️", titlu: "Placi Video", desc: "NVIDIA RTX, AMD Radeon — upgrade pentru FPS maxim" },
+  { emoji: "🔊", titlu: "Audio Gaming", desc: "Casti surround 7.1, microfoane, soundbar gaming" },
+];
+
+function numeAfisat(s: string) { return s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" "); }
+const CULORI = ["bg-purple-600","bg-blue-600","bg-indigo-600","bg-violet-600","bg-sky-600","bg-purple-500","bg-blue-500"];
+const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Reduceri Gaming 2026","url":"https://amcupon.ro/gaming","description":"Coduri reducere gaming Romania — laptopuri, placi video, monitoare, periferice" };
+
+export default function GamingPage() {
+  const filePath = path.join(process.cwd(), "public", "output.json");
+  const all: Magazin[] = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+  const an = new Date().getFullYear();
+
+  const topGaming = TOP_GAMING.map(s => all.find(m => m.magazin === s)).filter(Boolean) as Magazin[];
+  const restGaming = all.filter(m =>
+    !TOP_GAMING.includes(m.magazin) && m.are_promotie &&
+    CAT_GAMING.some(c => (m.categorie_slug||"").includes(c) || m.categorie.toLowerCase().includes(c))
+  ).slice(0, 8);
+  const magazine = [...topGaming, ...restGaming];
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
+      <div className="min-h-screen bg-white">
+        <nav className="bg-white border-b border-gray-100">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-gray-400">
+            <Link href="/" className="hover:text-orange-500">Acasa</Link>
+            <span className="mx-1">/</span>
+            <span className="text-gray-700 font-medium">Gaming</span>
+          </div>
+        </nav>
+
+        <section className="bg-gradient-to-br from-purple-900 via-indigo-800 to-blue-900 text-white py-14 px-4">
+          <div className="max-w-6xl mx-auto text-center">
+            <div className="text-5xl mb-4">🎮</div>
+            <h1 className="text-3xl md:text-4xl font-black mb-3">Gaming cu Reducere {an}</h1>
+            <p className="text-purple-200 text-lg mb-6 max-w-xl mx-auto">
+              Laptopuri gaming, placi video, monitoare si periferice — coduri reducere verificate la PCGarage, eMAG, Altex
+            </p>
+            <div className="flex flex-wrap justify-center gap-2">
+              {["Laptop Gaming","Monitor 144Hz","Placa Video RTX","Mouse Gaming","Tastatura Mecanica","Casti Gaming","Controller PS5"].map(c => (
+                <span key={c} className="bg-white/10 text-white text-sm font-semibold px-4 py-1.5 rounded-full border border-white/20">{c}</span>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="max-w-6xl mx-auto px-4 py-10">
+          <h2 className="text-xl font-black text-gray-900 mb-6 text-center">Categorii gaming populare</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {CATEGORII_GAMING.map(a => (
+              <div key={a.titlu} className="bg-purple-50 border border-purple-100 rounded-2xl p-5">
+                <div className="text-3xl mb-2">{a.emoji}</div>
+                <h3 className="font-bold text-gray-900 text-sm mb-1">{a.titlu}</h3>
+                <p className="text-xs text-gray-500">{a.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="max-w-6xl mx-auto px-4 pb-10">
+          <h2 className="text-xl font-black text-gray-900 mb-5">Magazine gaming cu reduceri active</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+            {magazine.map((m, i) => {
+              const nume = numeAfisat(m.magazin);
+              const culoare = CULORI[i % CULORI.length];
+              const promo = m.promotii[0];
+              return (
+                <a key={m.magazin} href={`/cod-reducere/${m.magazin}`}
+                  className="group bg-white border border-gray-200 hover:border-purple-300 rounded-2xl p-4 transition-all hover:shadow-md">
+                  <div className="flex items-center gap-3 mb-3">
+                    {m.logo_url ? (
+                      <div className="w-10 h-10 rounded-xl overflow-hidden bg-gray-50 border border-gray-100 shrink-0">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img src={m.logo_url} alt={`Logo ${nume}`} className="w-full h-full object-contain" loading="lazy" />
+                      </div>
+                    ) : (
+                      <div className={`w-10 h-10 rounded-xl ${culoare} flex items-center justify-center text-white font-black text-lg shrink-0`}>
+                        {nume[0]}
+                      </div>
+                    )}
+                    <div>
+                      <p className="font-bold text-gray-900 text-sm">{nume}</p>
+                      {m.are_promotie && m.cod_cupon && <span className="text-xs text-orange-500 font-bold">COD</span>}
+                      {m.are_promotie && !m.cod_cupon && <span className="text-xs text-green-500 font-medium">Oferta</span>}
+                    </div>
+                  </div>
+                  {promo ? (
+                    <p className="text-gray-500 text-xs line-clamp-2">{promo.nume}</p>
+                  ) : (
+                    <p className="text-gray-400 text-xs italic">Verifica ofertele curente</p>
+                  )}
+                  <div className="flex justify-end mt-2">
+                    <span className="text-xs text-purple-600 font-semibold group-hover:text-purple-700">Vezi &rarr;</span>
+                  </div>
+                </a>
+              );
+            })}
+          </div>
+        </section>
+
+        <NisaProduse
+          merchantSlugs={["pcgarage.ro","emag.ro","altex.ro","evomag.ro","flanco.ro","cel.ro"]}
+          catSlug="electronice"
+          titlu="Produse gaming populare cu reducere"
+          culoareAccent="purple"
+          limit={12}
+        />
+
+        <section className="bg-gray-50 border-t border-gray-200 py-10 px-4">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-xl font-black text-gray-900 mb-5">Ghid: Cum cumperi echipament gaming mai ieftin</h2>
+            <div className="space-y-4 text-sm text-gray-600 leading-relaxed">
+              <div>
+                <h3 className="font-bold text-gray-900 mb-1">PCGarage vs eMAG vs Altex — care e mai ieftin la gaming?</h3>
+                <p>PCGarage are cel mai bun pret la componente PC (placi video, procesoare, RAM) — specializati in gaming. eMAG are gama mai larga si frecvent campanii cu reduceri masive. Altex are avantaj la laptopuri gaming prin promotii periodice. Verifica mereu toate trei inainte de orice achizitie.</p>
+              </div>
+              <div>
+                <h3 className="font-bold text-gray-900 mb-1">Cel mai bun moment sa cumperi echipament gaming</h3>
+                <ul className="list-disc list-inside space-y-1 ml-2">
+                  <li><strong>Black Friday (noiembrie)</strong> — reduceri 20-40% la laptopuri gaming si monitoare</li>
+                  <li><strong>Lansarea generatiei noi</strong> — cand apare RTX 5000, pretul la RTX 4000 scade instant</li>
+                  <li><strong>Vara (iulie-august)</strong> — reduceri vara la stocuri de iarna (casti, controllere)</li>
+                  <li><strong>Campionii de Gaming eMAG</strong> — campanie dedicata, reduceri bune la periferice</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-bold text-gray-900 mb-1">Laptop gaming recomandat sub 4000 lei</h3>
+                <p>Acer Nitro 5 si Lenovo IdeaPad Gaming ofera cel mai bun raport performanta-pret sub 4000 lei. Cauta modele cu RTX 3050 sau RTX 4050, 16GB RAM, SSD 512GB. Frecvent gasesti reduceri de 300-500 lei la eMAG sau PCGarage cu coduri AmCupon.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="max-w-6xl mx-auto px-4 py-8">
+          <h2 className="text-base font-black text-gray-700 mb-4">Exploreaza si alte categorii</h2>
+          <div className="flex flex-wrap gap-2">
+            {[
+              { href: "/electronice", label: "📱 Electronice" },
+              { href: "/gadgets", label: "📡 Gadgets" },
+              { href: "/jocuri", label: "🕹️ Jocuri" },
+              { href: "/carti", label: "📚 Carti" },
+              { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
+            ].map(l => (
+              <a key={l.href} href={l.href}
+                className="bg-gray-100 hover:bg-purple-50 hover:text-purple-600 text-gray-700 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-gray-200 hover:border-purple-200">
+                {l.label}
+              </a>
+            ))}
+          </div>
+        </section>
+
+        <footer className="border-t border-gray-200 py-6 text-center text-xs text-gray-400 mt-4">
+          &copy; {an} AmCupon.ro &middot;{" "}
+          <Link href="/electronice" className="hover:text-orange-500">Electronice</Link>{" · "}
+          <Link href="/gadgets" className="hover:text-orange-500">Gadgets</Link>{" · "}
+          <Link href="/categorii" className="hover:text-orange-500">Categorii</Link>
+        </footer>
+      </div>
+    </>
+  );
+}
