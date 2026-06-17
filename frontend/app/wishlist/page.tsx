@@ -61,7 +61,7 @@ export default function WishlistPage() {
             <p className="text-slate-500 text-sm mb-6">
               Apasa iconita &#9825; pe orice produs din sectiunea Produse pentru a-l salva.
             </p>
-            <Link href="/produse" className="inline-block bg-orange-500 text-white font-bold px-6 py-3 rounded-xl hover:bg-orange-600 transition-colors">
+            <Link href="/produse" className="inline-block bg-indigo-600 text-white font-bold px-6 py-3 rounded-xl hover:bg-indigo-500 transition-colors">
               Exploreaza produse
             </Link>
           </div>
@@ -120,7 +120,7 @@ export default function WishlistPage() {
                     <div className="mt-2">
                       {item.price > 0 ? (
                         <div className="flex items-baseline gap-1.5 flex-wrap">
-                          <span className={`font-black text-sm ${dropped ? "text-emerald-600" : "text-orange-600"}`}>
+                          <span className={`font-black text-sm ${dropped ? "text-emerald-600" : "text-indigo-300"}`}>
                             {item.price.toFixed(2)} lei
                           </span>
                           {dropped && (
@@ -139,7 +139,7 @@ export default function WishlistPage() {
 
                     <a
                       href={item.url} target="_blank" rel="sponsored noopener noreferrer"
-                      className="mt-2 block text-center text-[10px] font-bold text-white bg-orange-500 hover:bg-orange-600 py-1.5 rounded-lg transition-colors"
+                      className="mt-2 block text-center text-[10px] font-bold text-white bg-indigo-600 hover:bg-indigo-500 py-1.5 rounded-lg transition-colors"
                     >
                       Cumpara acum
                     </a>

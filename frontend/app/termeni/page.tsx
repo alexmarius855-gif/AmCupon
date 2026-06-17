@@ -12,9 +12,9 @@ export default function TermeniPage() {
       <header className="bg-white border-b border-gray-200 shadow-sm">
         <div className="max-w-4xl mx-auto px-4 py-3 flex items-center gap-2">
           <Link href="/" className="flex items-center gap-1.5">
-            <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
+            <div className="bg-indigo-600 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
             <span className="font-black text-gray-900 text-xl">Cupon</span>
-            <span className="text-orange-500 font-black text-xl">.ro</span>
+            <span className="text-indigo-400 font-black text-xl">.ro</span>
           </Link>
         </div>
       </header>
@@ -93,7 +93,7 @@ export default function TermeniPage() {
             <p>
               Pentru orice întrebare legată de acești termeni sau de datele tale personale,
               ne poți contacta la:{" "}
-              <a href="mailto:contact@amcupon.ro" className="text-orange-500 hover:underline">
+              <a href="mailto:contact@amcupon.ro" className="text-indigo-400 hover:underline">
                 contact@amcupon.ro
               </a>
             </p>
@@ -102,7 +102,7 @@ export default function TermeniPage() {
         </div>
 
         <div className="mt-8 text-center">
-          <Link href="/" className="text-sm text-gray-400 hover:text-orange-500 transition-colors">
+          <Link href="/" className="text-sm text-gray-400 hover:text-indigo-400 transition-colors">
             ← Înapoi la AmCupon.ro
           </Link>
         </div>

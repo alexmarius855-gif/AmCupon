@@ -53,7 +53,7 @@ export default function FashionPage() {
       <div className="min-h-screen bg-white">
         <nav className="bg-white border-b border-gray-100">
           <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-gray-400">
-            <Link href="/" className="hover:text-orange-500">Acasa</Link>
+            <Link href="/" className="hover:text-indigo-400">Acasa</Link>
             <span className="mx-1">/</span>
             <span className="text-gray-700 font-medium">Fashion & Haine cu Reducere</span>
           </div>
@@ -113,7 +113,7 @@ export default function FashionPage() {
                     )}
                     <div>
                       <p className="font-bold text-gray-900 text-sm">{nume}</p>
-                      {m.are_promotie && m.cod_cupon && <span className="text-xs text-orange-500 font-bold">COD</span>}
+                      {m.are_promotie && m.cod_cupon && <span className="text-xs text-indigo-400 font-bold">COD</span>}
                       {m.are_promotie && !m.cod_cupon && <span className="text-xs text-purple-500 font-medium">Oferta</span>}
                     </div>
                   </div>
@@ -166,9 +166,9 @@ export default function FashionPage() {
 
         <footer className="border-t border-gray-200 py-6 text-center text-xs text-gray-400 mt-4">
           © {an} AmCupon.ro ·{" "}
-          <Link href="/frumusete" className="hover:text-orange-500">Frumusete</Link>{" · "}
-          <Link href="/idei-cadouri" className="hover:text-orange-500">Idei Cadouri</Link>{" · "}
-          <Link href="/categorii" className="hover:text-orange-500">Categorii</Link>
+          <Link href="/frumusete" className="hover:text-indigo-400">Frumusete</Link>{" · "}
+          <Link href="/idei-cadouri" className="hover:text-indigo-400">Idei Cadouri</Link>{" · "}
+          <Link href="/categorii" className="hover:text-indigo-400">Categorii</Link>
         </footer>
       </div>
     </>

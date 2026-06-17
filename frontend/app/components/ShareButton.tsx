@@ -68,7 +68,7 @@ export default function ShareButton({
 
   const btnColors = isDark
     ? "border border-slate-700 text-slate-400 hover:border-slate-500 hover:text-slate-200"
-    : "border border-gray-300 text-gray-500 hover:border-orange-400 hover:text-orange-500";
+    : "border border-gray-300 text-gray-500 hover:border-indigo-400 hover:text-indigo-400";
 
   const dropdownBg = isDark
     ? "bg-slate-800 border-slate-700"

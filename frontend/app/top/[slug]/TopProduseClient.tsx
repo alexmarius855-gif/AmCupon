@@ -38,7 +38,7 @@ interface TopProduseClientProps {
 }
 
 const BADGE_COLORS: Record<string, string> = {
-  orange: "bg-orange-500 text-white",
+  orange: "bg-indigo-600 text-white",
   green:  "bg-green-600 text-white",
   purple: "bg-purple-600 text-white",
   blue:   "bg-blue-600 text-white",
@@ -65,7 +65,7 @@ function ScorBar({ label, value }: { label: string; value: number }) {
       <span className="text-xs text-gray-500 dark:text-slate-400 w-28 shrink-0">{label}</span>
       <div className="flex-1 h-1.5 bg-gray-100 dark:bg-slate-700 rounded-full overflow-hidden">
         <div
-          className="h-full bg-orange-400 rounded-full"
+          className="h-full bg-indigo-500 rounded-full"
           style={{ width: `${pct}%` }}
         />
       </div>
@@ -78,7 +78,7 @@ function ScorCircle({ scor, size = "lg" }: { scor: number; size?: "sm" | "lg" })
   const color =
     scor >= 9.5 ? "text-emerald-500" :
     scor >= 8.5 ? "text-green-500" :
-    scor >= 7.5 ? "text-yellow-500" : "text-orange-500";
+    scor >= 7.5 ? "text-yellow-500" : "text-indigo-400";
 
   if (size === "sm") {
     return (
@@ -112,8 +112,8 @@ export default function TopProduseClient({ produse, culoare }: TopProduseClientP
     <div>
       {/* BEST PICK BAR */}
       {bestPick && (
-        <div className="bg-orange-50 dark:bg-orange-950/30 border border-orange-200 dark:border-orange-800/40 rounded-2xl p-4 mb-6 flex flex-col sm:flex-row items-start sm:items-center gap-3">
-          <div className="bg-orange-500 text-white text-xs font-black px-3 py-1.5 rounded-xl shrink-0">
+        <div className="bg-cyan-50 dark:bg-cyan-950/30 border border-cyan-200 dark:border-cyan-800/40 rounded-2xl p-4 mb-6 flex flex-col sm:flex-row items-start sm:items-center gap-3">
+          <div className="bg-indigo-600 text-white text-xs font-black px-3 py-1.5 rounded-xl shrink-0">
             ⭐ Alegerea redactiei
           </div>
           <div className="flex-1 min-w-0">
@@ -121,10 +121,10 @@ export default function TopProduseClient({ produse, culoare }: TopProduseClientP
             <span className="text-gray-500 dark:text-slate-400 text-sm ml-2">— {bestPick.verdict_scurt}</span>
           </div>
           <div className="flex items-center gap-3 shrink-0">
-            <span className="text-lg font-black text-orange-500">{bestPick.pret_de_la.toLocaleString("ro-RO")} lei</span>
+            <span className="text-lg font-black text-indigo-400">{bestPick.pret_de_la.toLocaleString("ro-RO")} lei</span>
             <a
               href={`/cod-reducere/${bestPick.magazine[0]?.magazin_slug}`}
-              className="bg-orange-500 hover:bg-orange-400 text-white text-sm font-bold px-4 py-2 rounded-xl transition-colors"
+              className="bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-bold px-4 py-2 rounded-xl transition-colors"
             >
               Cauta pret &rarr;
             </a>
@@ -145,8 +145,8 @@ export default function TopProduseClient({ produse, culoare }: TopProduseClientP
             onClick={() => setSortare(opt.val)}
             className={`text-sm font-semibold px-4 py-1.5 rounded-xl transition-colors ${
               sortare === opt.val
-                ? "bg-orange-500 text-white"
-                : "bg-white dark:bg-slate-800 text-gray-600 dark:text-slate-300 border border-gray-200 dark:border-slate-600 hover:border-orange-300"
+                ? "bg-indigo-600 text-white"
+                : "bg-white dark:bg-slate-800 text-gray-600 dark:text-slate-300 border border-gray-200 dark:border-slate-600 hover:border-indigo-300"
             }`}
           >
             {opt.label}
@@ -171,7 +171,7 @@ export default function TopProduseClient({ produse, culoare }: TopProduseClientP
           <tbody>
             {produseSortate.map((p, i) => (
               <tr key={p.pozitie}
-                className={`border-b border-gray-100 dark:border-slate-700 last:border-0 ${i === 0 ? "bg-orange-50/50 dark:bg-orange-950/10" : ""}`}
+                className={`border-b border-gray-100 dark:border-slate-700 last:border-0 ${i === 0 ? "bg-cyan-50/50 dark:bg-cyan-950/10" : ""}`}
               >
                 <td className="px-4 py-3">
                   <div className="flex items-center gap-2">
@@ -197,7 +197,7 @@ export default function TopProduseClient({ produse, culoare }: TopProduseClientP
                   </td>
                 ))}
                 <td className="px-4 py-3 text-center">
-                  <span className="font-black text-orange-500 text-sm">
+                  <span className="font-black text-indigo-400 text-sm">
                     {p.pret_de_la.toLocaleString("ro-RO")} lei
                   </span>
                 </td>
@@ -222,7 +222,7 @@ export default function TopProduseClient({ produse, culoare }: TopProduseClientP
               key={p.pozitie}
               className={`bg-white dark:bg-slate-800 rounded-2xl border transition-all duration-200 overflow-hidden ${
                 p.badge === "Alegerea Redactiei"
-                  ? `border-orange-300 dark:border-orange-700 ring-1 ${accent.ring}`
+                  ? `border-indigo-300 dark:border-indigo-700 ring-1 ${accent.ring}`
                   : "border-gray-200 dark:border-slate-700"
               }`}
             >
@@ -269,7 +269,7 @@ export default function TopProduseClient({ produse, culoare }: TopProduseClientP
                     <ScorCircle scor={p.scor_total} />
                     <div className="text-right">
                       <div className="text-xs text-gray-400 dark:text-slate-500">de la</div>
-                      <div className="text-xl font-black text-orange-500 leading-tight">
+                      <div className="text-xl font-black text-indigo-400 leading-tight">
                         {p.pret_de_la.toLocaleString("ro-RO")} lei
                       </div>
                     </div>
@@ -310,7 +310,7 @@ export default function TopProduseClient({ produse, culoare }: TopProduseClientP
                       rel={mag.url_afiliat ? "noopener noreferrer nofollow" : undefined}
                       className={`inline-flex items-center gap-2 text-sm font-bold px-4 py-2 rounded-xl transition-colors ${
                         mag.recomandat
-                          ? "bg-orange-500 hover:bg-orange-400 text-white"
+                          ? "bg-indigo-600 hover:bg-indigo-500 text-white"
                           : "bg-gray-100 dark:bg-slate-700 hover:bg-gray-200 dark:hover:bg-slate-600 text-gray-700 dark:text-slate-300"
                       }`}
                     >
@@ -328,7 +328,7 @@ export default function TopProduseClient({ produse, culoare }: TopProduseClientP
                 {/* EXPAND TOGGLE */}
                 <button
                   onClick={() => setExpandat(isExpaneded ? null : p.pozitie)}
-                  className="mt-3 text-xs text-gray-400 dark:text-slate-500 hover:text-orange-500 transition-colors flex items-center gap-1"
+                  className="mt-3 text-xs text-gray-400 dark:text-slate-500 hover:text-indigo-400 transition-colors flex items-center gap-1"
                 >
                   {isExpaneded ? "▲ Ascunde detalii" : "▼ Specificatii complete si review detaliat"}
                 </button>

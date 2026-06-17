@@ -79,8 +79,8 @@ export default function CalculatorClient() {
               onClick={() => setMode(m.key)}
               className={`p-3 rounded-xl text-sm font-bold transition-all text-center ${
                 mode === m.key
-                  ? "bg-orange-500 text-white shadow-lg shadow-orange-500/25"
-                  : "bg-slate-800 text-slate-300 border border-slate-700 hover:border-orange-500/40"
+                  ? "bg-indigo-600 text-white shadow-lg shadow-cyan-500/25"
+                  : "bg-slate-800 text-slate-300 border border-slate-700 hover:border-cyan-500/40"
               }`}
             >
               <span className="block text-xl mb-1">{m.icon}</span>
@@ -98,7 +98,7 @@ export default function CalculatorClient() {
               <input
                 type="number" value={pret} onChange={e => setPret(e.target.value)}
                 placeholder="ex: 350" min="0"
-                className="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-500/40 focus:border-orange-500/50"
+                className="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500/40 focus:border-cyan-500/50"
               />
             </div>
             <div>
@@ -106,7 +106,7 @@ export default function CalculatorClient() {
               <input
                 type="number" value={procent} onChange={e => setProcent(e.target.value)}
                 placeholder="ex: 20" min="0" max="100"
-                className="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-500/40 focus:border-orange-500/50"
+                className="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500/40 focus:border-cyan-500/50"
               />
             </div>
             {pretNum > 0 && procentNum > 0 && (
@@ -122,7 +122,7 @@ export default function CalculatorClient() {
                 <div className="h-px bg-slate-700 my-1" />
                 <div className="flex justify-between">
                   <span className="text-white font-bold text-lg">Platesti</span>
-                  <span className="text-orange-400 font-black text-2xl">{pretFinal.toFixed(2)} lei</span>
+                  <span className="text-indigo-400 font-black text-2xl">{pretFinal.toFixed(2)} lei</span>
                 </div>
                 <p className="text-emerald-400 text-sm font-bold text-center pt-1">
                   Economisesti {economie.toFixed(2)} lei ({procentNum}%)!
@@ -141,20 +141,20 @@ export default function CalculatorClient() {
               <label className="text-sm text-slate-400 mb-1.5 block">Pretul afisat (lei)</label>
               <input type="number" value={pret} onChange={e => setPret(e.target.value)}
                 placeholder="ex: 500"
-                className="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-500/40"
+                className="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500/40"
               />
             </div>
             <div>
               <label className="text-sm text-slate-400 mb-1.5 block">Reducerea codului (%)</label>
               <input type="number" value={procent} onChange={e => setProcent(e.target.value)}
                 placeholder="ex: 15" min="0" max="100"
-                className="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-500/40"
+                className="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500/40"
               />
             </div>
             {pretNum > 0 && procentNum > 0 && (
-              <div className="bg-orange-500/10 border border-orange-500/20 rounded-2xl p-5 text-center">
+              <div className="bg-cyan-500/10 border border-cyan-500/20 rounded-2xl p-5 text-center">
                 <p className="text-slate-400 text-sm mb-1">Platesti efectiv</p>
-                <p className="text-orange-400 font-black text-4xl">{pretFinal.toFixed(2)} lei</p>
+                <p className="text-indigo-400 font-black text-4xl">{pretFinal.toFixed(2)} lei</p>
                 <p className="text-slate-500 text-xs mt-2">
                   fata de {pretNum.toFixed(2)} lei — economie {economie.toFixed(2)} lei
                 </p>
@@ -171,14 +171,14 @@ export default function CalculatorClient() {
               <label className="text-sm text-slate-400 mb-1.5 block">Pretul vechi / barat (lei)</label>
               <input type="number" value={pretVechi} onChange={e => setPretVechi(e.target.value)}
                 placeholder="ex: 400"
-                className="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-500/40"
+                className="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500/40"
               />
             </div>
             <div>
               <label className="text-sm text-slate-400 mb-1.5 block">Pretul nou / redus (lei)</label>
               <input type="number" value={pretNou} onChange={e => setPretNou(e.target.value)}
                 placeholder="ex: 299"
-                className="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-500/40"
+                className="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500/40"
               />
             </div>
             {pretVechiNum > 0 && pretNouNum > 0 && pretNouNum < pretVechiNum && (
@@ -229,14 +229,14 @@ export default function CalculatorClient() {
               ))}
             </div>
             <button onClick={addCosItem}
-              className="w-full border border-dashed border-slate-600 hover:border-orange-500 text-slate-400 hover:text-orange-400 rounded-xl py-2 text-sm font-semibold transition-all">
+              className="w-full border border-dashed border-slate-600 hover:border-indigo-500 text-slate-400 hover:text-indigo-400 rounded-xl py-2 text-sm font-semibold transition-all">
               + Adauga produs
             </button>
             <div>
               <label className="text-sm text-slate-400 mb-1.5 block">Cod reducere (%) — optional</label>
               <input type="number" value={cosDiscount} onChange={e => setCosDiscount(e.target.value)}
                 placeholder="ex: 10" min="0" max="100"
-                className="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-500/40"
+                className="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500/40"
               />
             </div>
             {totalCos > 0 && (
@@ -254,7 +254,7 @@ export default function CalculatorClient() {
                 <div className="h-px bg-slate-700" />
                 <div className="flex justify-between">
                   <span className="text-white font-bold">Total de plata</span>
-                  <span className="text-orange-400 font-black text-2xl">{totalFinalCos.toFixed(2)} lei</span>
+                  <span className="text-indigo-400 font-black text-2xl">{totalFinalCos.toFixed(2)} lei</span>
                 </div>
                 {cosDiscountNum > 0 && (
                   <p className="text-emerald-400 text-sm font-bold text-center">
@@ -273,7 +273,7 @@ export default function CalculatorClient() {
             <p className="text-slate-500 text-xs">600+ magazine, verificate zilnic</p>
           </div>
           <Link href="/toate-magazinele"
-            className="ml-auto shrink-0 bg-orange-500 hover:bg-orange-400 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-colors">
+            className="ml-auto shrink-0 bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-colors">
             Cauta coduri →
           </Link>
         </div>

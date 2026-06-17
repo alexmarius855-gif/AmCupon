@@ -31,7 +31,7 @@ const AVANTAJE = [
 ];
 
 function numeAfisat(s: string) { return s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" "); }
-const CULORI = ["bg-amber-500","bg-yellow-500","bg-orange-400","bg-lime-500","bg-amber-600","bg-yellow-600"];
+const CULORI = ["bg-amber-500","bg-yellow-500","bg-indigo-500","bg-lime-500","bg-amber-600","bg-yellow-600"];
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Cărți Online cu Reducere 2026","url":"https://amcupon.ro/carti","description":"Coduri reducere carti online Romania — Libris, Elefant, Carturesti" };
 
 export default function CartiPage() {
@@ -53,13 +53,13 @@ export default function CartiPage() {
       <div className="min-h-screen bg-white">
         <nav className="bg-white border-b border-gray-100">
           <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-gray-400">
-            <Link href="/" className="hover:text-orange-500">Acasă</Link>
+            <Link href="/" className="hover:text-indigo-400">Acasă</Link>
             <span className="mx-1">/</span>
             <span className="text-gray-700 font-medium">Cărți Online cu Reducere</span>
           </div>
         </nav>
 
-        <section className="bg-gradient-to-br from-amber-500 via-orange-500 to-yellow-500 text-white py-12 px-4">
+        <section className="bg-gradient-to-br from-violet-500 via-indigo-500 to-cyan-500 text-white py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">📚</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Cărți Online cu Reducere {an}</h1>
@@ -113,7 +113,7 @@ export default function CartiPage() {
                     )}
                     <div>
                       <p className="font-bold text-gray-900 text-sm">{nume}</p>
-                      {m.are_promotie && m.cod_cupon && <span className="text-xs text-orange-500 font-bold">COD</span>}
+                      {m.are_promotie && m.cod_cupon && <span className="text-xs text-indigo-400 font-bold">COD</span>}
                       {m.are_promotie && !m.cod_cupon && <span className="text-xs text-amber-500 font-medium">Ofertă</span>}
                     </div>
                   </div>
@@ -176,7 +176,7 @@ export default function CartiPage() {
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-gray-100 hover:bg-orange-50 hover:text-orange-600 text-gray-700 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-gray-200 hover:border-orange-200">
+                className="bg-gray-100 hover:bg-cyan-50 hover:text-indigo-300 text-gray-700 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-gray-200 hover:border-cyan-200">
                 {l.label}
               </a>
             ))}
@@ -185,9 +185,9 @@ export default function CartiPage() {
 
         <footer className="border-t border-gray-200 py-6 text-center text-xs text-gray-400 mt-4">
           © {an} AmCupon.ro ·{" "}
-          <Link href="/idei-cadouri" className="hover:text-orange-500">Idei Cadouri</Link>{" · "}
-          <Link href="/copii" className="hover:text-orange-500">Copii</Link>{" · "}
-          <Link href="/categorii" className="hover:text-orange-500">Categorii</Link>
+          <Link href="/idei-cadouri" className="hover:text-indigo-400">Idei Cadouri</Link>{" · "}
+          <Link href="/copii" className="hover:text-indigo-400">Copii</Link>{" · "}
+          <Link href="/categorii" className="hover:text-indigo-400">Categorii</Link>
         </footer>
       </div>
     </>

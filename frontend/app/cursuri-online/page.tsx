@@ -131,13 +131,13 @@ export default function CursuriOnlinePage() {
                       <p className="font-black text-white">{m.magazin.split(".")[0].charAt(0).toUpperCase() + m.magazin.split(".")[0].slice(1)}</p>
                       <p className="text-xs text-slate-500">{m.magazin}</p>
                     </div>
-                    {m.comision && <span className="text-orange-400 text-xs font-bold">{m.comision.replace(" sale commission","")}</span>}
+                    {m.comision && <span className="text-indigo-400 text-xs font-bold">{m.comision.replace(" sale commission","")}</span>}
                   </div>
                   {promo.descriere && <p className="text-slate-300 text-sm">{promo.descriere.slice(0,120)}</p>}
                   {promo.cod_cupon && (
                     <div className="bg-slate-800 border border-dashed border-slate-600 rounded-lg px-3 py-2 text-center">
                       <p className="text-[10px] text-slate-500 mb-0.5">Cod reducere</p>
-                      <p className="font-mono font-black text-orange-400 text-sm tracking-wider">{promo.cod_cupon}</p>
+                      <p className="font-mono font-black text-indigo-400 text-sm tracking-wider">{promo.cod_cupon}</p>
                     </div>
                   )}
                   <a href={m.url_afiliat} target="_blank" rel="sponsored noopener noreferrer"
@@ -157,7 +157,7 @@ export default function CursuriOnlinePage() {
         <p className="text-slate-400 text-sm mb-5">Certificate recunoscute mondial — investitie in cariera pe termen lung.</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {PLATFORME_INTL.map(p => (
-            <div key={p.name} className="bg-slate-900 border border-slate-800 hover:border-orange-500/30 rounded-2xl p-6 flex flex-col gap-4 transition-all">
+            <div key={p.name} className="bg-slate-900 border border-slate-800 hover:border-cyan-500/30 rounded-2xl p-6 flex flex-col gap-4 transition-all">
               <div>
                 <div className="flex items-center gap-2 mb-1">
                   <span className="text-lg font-black text-white">{p.name}</span>
@@ -166,7 +166,7 @@ export default function CursuriOnlinePage() {
                 <p className="text-slate-400 text-xs">{p.tagline}</p>
               </div>
               <div className="flex items-center justify-between text-sm">
-                <span className="text-orange-400 font-bold">{p.pret}</span>
+                <span className="text-indigo-400 font-bold">{p.pret}</span>
                 <span className="text-emerald-400 text-xs">{p.comision}</span>
               </div>
               <ul className="space-y-1">
@@ -177,7 +177,7 @@ export default function CursuriOnlinePage() {
                 ))}
               </ul>
               <a href={p.url} target="_blank" rel="sponsored noopener noreferrer"
-                className="mt-auto bg-orange-500 hover:bg-orange-400 text-white font-black px-4 py-3 rounded-xl text-sm transition-all text-center hover:-translate-y-0.5 shadow-lg shadow-orange-500/20">
+                className="mt-auto bg-indigo-600 hover:bg-indigo-500 text-white font-black px-4 py-3 rounded-xl text-sm transition-all text-center hover:-translate-y-0.5 shadow-lg shadow-cyan-500/20">
                 Incearca {p.name} →
               </a>
             </div>

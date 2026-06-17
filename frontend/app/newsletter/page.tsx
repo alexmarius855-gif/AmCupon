@@ -35,7 +35,7 @@ export default function NewsletterPage() {
 
         <div className="max-w-2xl mx-auto px-4 py-16">
           <div className="text-center mb-12">
-            <div className="inline-flex items-center justify-center w-20 h-20 rounded-3xl bg-gradient-to-br from-orange-500 to-red-500 text-4xl mb-6 shadow-xl shadow-orange-500/30">
+            <div className="inline-flex items-center justify-center w-20 h-20 rounded-3xl bg-gradient-to-br from-indigo-600 to-violet-600 text-4xl mb-6 shadow-xl shadow-cyan-500/30">
               🎁
             </div>
             <h1 className="text-3xl md:text-4xl font-black text-white mb-3 tracking-tight">
@@ -56,14 +56,14 @@ export default function NewsletterPage() {
               { nr: "100%",   label: "Gratuit pentru tine" },
             ].map(s => (
               <div key={s.label} className="bg-slate-900 rounded-2xl border border-slate-800 p-4">
-                <p className="text-xl font-black text-orange-400">{s.nr}</p>
+                <p className="text-xl font-black text-indigo-400">{s.nr}</p>
                 <p className="text-xs text-slate-500 mt-0.5">{s.label}</p>
               </div>
             ))}
           </div>
 
           <div className="text-center">
-            <Link href="/" className="text-sm text-slate-500 hover:text-orange-400 transition-colors">
+            <Link href="/" className="text-sm text-slate-500 hover:text-indigo-400 transition-colors">
               &larr; Inapoi la homepage
             </Link>
           </div>

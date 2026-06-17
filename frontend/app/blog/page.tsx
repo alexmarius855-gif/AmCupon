@@ -117,19 +117,19 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
         <header className="bg-white border-b border-slate-800 shadow-sm">
           <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-3">
             <Link href="/" className="flex items-center gap-1.5 shrink-0">
-              <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
+              <div className="bg-indigo-600 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
               <span className="font-black text-white text-xl">Cupon</span>
-              <span className="text-orange-500 font-black text-xl">.ro</span>
+              <span className="text-indigo-400 font-black text-xl">.ro</span>
             </Link>
             <span className="text-slate-600">/</span>
             <span className="text-sm font-semibold text-slate-300">Blog</span>
           </div>
         </header>
 
-        <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white py-10 px-4">
+        <div className="bg-gradient-to-r from-indigo-600 to-violet-600 text-white py-10 px-4">
           <div className="max-w-7xl mx-auto text-center">
             <h1 className="text-2xl md:text-3xl font-black mb-2">Blog AmCupon.ro</h1>
-            <p className="text-orange-100 text-sm max-w-xl mx-auto">
+            <p className="text-cyan-100 text-sm max-w-xl mx-auto">
               Sfaturi, ghiduri și noutăți despre cum să economisești inteligent la cumpărăturile online
             </p>
           </div>
@@ -144,8 +144,8 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
                 href={cat === "Toate" ? "/blog" : `/blog?cat=${encodeURIComponent(cat)}`}
                 className={`px-4 py-1.5 rounded-full text-sm font-semibold transition-colors ${
                   categorieActiva === cat
-                    ? "bg-orange-500 text-white"
-                    : "bg-white border border-gray-200 text-slate-400 hover:border-orange-300 hover:text-orange-500"
+                    ? "bg-indigo-600 text-white"
+                    : "bg-white border border-gray-200 text-slate-400 hover:border-indigo-300 hover:text-indigo-400"
                 }`}
               >
                 {cat}
@@ -161,7 +161,7 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
           {posts.length === 0 ? (
             <div className="text-center py-20 text-slate-500">
               <p className="text-lg mb-4">Niciun articol in categoria &ldquo;{categorieActiva}&rdquo;.</p>
-              <Link href="/blog" className="text-orange-500 font-bold hover:underline">
+              <Link href="/blog" className="text-indigo-400 font-bold hover:underline">
                 Vezi toate articolele →
               </Link>
             </div>
@@ -181,7 +181,7 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
                       className="object-cover group-hover:scale-105 transition-transform duration-300"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
-                    <span className="absolute top-3 left-3 bg-orange-500 text-white text-xs font-bold px-2.5 py-1 rounded-full z-10">
+                    <span className="absolute top-3 left-3 bg-indigo-600 text-white text-xs font-bold px-2.5 py-1 rounded-full z-10">
                       {post.category}
                     </span>
                   </div>
@@ -192,11 +192,11 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
                       <span>·</span>
                       <span>AmCupon.ro</span>
                     </div>
-                    <h2 className="font-black text-white text-base leading-snug mb-3 group-hover:text-orange-500 transition-colors line-clamp-2">
+                    <h2 className="font-black text-white text-base leading-snug mb-3 group-hover:text-indigo-400 transition-colors line-clamp-2">
                       {post.title}
                     </h2>
                     <p className="text-sm text-slate-400 line-clamp-3 flex-1">{post.excerpt}</p>
-                    <div className="mt-4 text-sm font-bold text-orange-500 group-hover:text-orange-600 flex items-center gap-1">
+                    <div className="mt-4 text-sm font-bold text-indigo-400 group-hover:text-indigo-300 flex items-center gap-1">
                       Citeste articolul
                       <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
@@ -209,7 +209,7 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
           )}
 
           <div className="mt-10 pt-6 border-t border-gray-100 text-center">
-            <Link href="/" className="text-sm text-slate-500 hover:text-orange-500 transition-colors">
+            <Link href="/" className="text-sm text-slate-500 hover:text-indigo-400 transition-colors">
               ← Inapoi la AmCupon.ro
             </Link>
           </div>

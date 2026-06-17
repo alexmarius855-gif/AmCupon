@@ -40,7 +40,7 @@ const PLATFORME = [
     name: "XTB",
     tagline: "Actiuni & ETF-uri la 0% comision — brokerul preferat al romanilor",
     badge: "Recomandat #1",
-    badgeColor: "bg-orange-500",
+    badgeColor: "bg-indigo-600",
     emoji: "📈",
     tip: "Actiuni, ETF-uri, Forex, Crypto",
     pret_min: "0 RON minim",
@@ -60,8 +60,8 @@ const PLATFORME = [
     ],
     dezavantaje: ["Spread criptomonede mai mare decat pe exchange-uri", "Comision actiuni dupa 100.000€/luna"],
     ideal: "Investitori pe termen lung, DCA, ETF-uri indice",
-    culoare: "from-orange-700 to-orange-900",
-    culoare_accent: "orange",
+    culoare: "from-indigo-700 to-indigo-900",
+    culoare_accent: "indigo",
   },
   {
     rank: 2,
@@ -175,7 +175,7 @@ export default function TradingPage() {
         {/* Breadcrumb */}
         <nav className="bg-slate-900/80 backdrop-blur-sm border-b border-slate-800">
           <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-1.5 text-xs text-slate-500">
-            <Link href="/" className="hover:text-orange-400 transition-colors">Acasa</Link>
+            <Link href="/" className="hover:text-indigo-400 transition-colors">Acasa</Link>
             <span>/</span>
             <span className="text-slate-300 font-medium">Trading & Investitii</span>
           </div>
@@ -299,7 +299,7 @@ export default function TradingPage() {
 
                   <div className="flex flex-col sm:flex-row gap-3">
                     <a href={p.url} target="_blank" rel="nofollow noopener noreferrer"
-                      className="flex-1 bg-orange-500 hover:bg-orange-400 text-white font-black text-sm py-3 px-6 rounded-2xl text-center transition-colors">
+                      className="flex-1 bg-indigo-600 hover:bg-indigo-500 text-white font-black text-sm py-3 px-6 rounded-2xl text-center transition-colors">
                       Deschide cont {p.name} gratuit →
                     </a>
                     <a href={p.program_url} target="_blank" rel="nofollow noopener noreferrer"
@@ -325,7 +325,7 @@ export default function TradingPage() {
                 <thead>
                   <tr className="border-b border-slate-700">
                     <th className="text-left py-3 px-4 text-slate-400 font-semibold">Caracteristica</th>
-                    <th className="py-3 px-4 text-orange-400 font-bold">XTB</th>
+                    <th className="py-3 px-4 text-indigo-400 font-bold">XTB</th>
                     <th className="py-3 px-4 text-yellow-400 font-bold">Binance</th>
                     <th className="py-3 px-4 text-green-400 font-bold">eToro</th>
                     <th className="py-3 px-4 text-blue-400 font-bold">T212</th>
@@ -403,9 +403,9 @@ export default function TradingPage() {
 
         <footer className="border-t border-slate-800 py-6 text-center text-xs text-slate-600">
           &copy; {an} AmCupon.ro &middot;{" "}
-          <Link href="/servicii" className="hover:text-orange-400 transition-colors">Servicii Online</Link>{" · "}
-          <Link href="/vpn" className="hover:text-orange-400 transition-colors">VPN</Link>{" · "}
-          <Link href="/categorii" className="hover:text-orange-400 transition-colors">Categorii</Link>
+          <Link href="/servicii" className="hover:text-indigo-400 transition-colors">Servicii Online</Link>{" · "}
+          <Link href="/vpn" className="hover:text-indigo-400 transition-colors">VPN</Link>{" · "}
+          <Link href="/categorii" className="hover:text-indigo-400 transition-colors">Categorii</Link>
         </footer>
       </div>
     </>

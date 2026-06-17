@@ -155,12 +155,12 @@ function OfertaCard({ o }: { o: OfertaFlat }) {
   const urgenta = (o.promo.zile_ramase ?? 99) <= 2;
   const zile = o.promo.zile_ramase ?? 99;
 
-  const CULORI = ["bg-orange-500","bg-blue-500","bg-violet-500","bg-emerald-500",
+  const CULORI = ["bg-indigo-600","bg-blue-500","bg-violet-500","bg-emerald-500",
     "bg-pink-500","bg-teal-500","bg-indigo-500","bg-red-500"];
   const culoare = CULORI[nume.charCodeAt(0) % CULORI.length];
 
   return (
-    <div className="group bg-slate-900 border border-slate-800 hover:border-orange-500/40 rounded-2xl p-4 transition-all duration-200 hover:shadow-xl hover:shadow-black/40 hover:-translate-y-0.5 flex flex-col gap-3">
+    <div className="group bg-slate-900 border border-slate-800 hover:border-cyan-500/40 rounded-2xl p-4 transition-all duration-200 hover:shadow-xl hover:shadow-black/40 hover:-translate-y-0.5 flex flex-col gap-3">
 
       {/* Header magazin */}
       <div className="flex items-center gap-3">
@@ -176,7 +176,7 @@ function OfertaCard({ o }: { o: OfertaFlat }) {
           )}
         </div>
         <div className="min-w-0 flex-1">
-          <p className="text-sm font-black text-white truncate group-hover:text-orange-400 transition-colors">{nume}</p>
+          <p className="text-sm font-black text-white truncate group-hover:text-indigo-400 transition-colors">{nume}</p>
           <p className="text-[10px] text-slate-500 truncate">{CAT_EMOJI[o.categorie_slug] || ""} {CAT_LABELS[o.categorie_slug] || o.categorie}</p>
         </div>
         <div className="flex flex-col items-end gap-1 shrink-0">
@@ -194,8 +194,8 @@ function OfertaCard({ o }: { o: OfertaFlat }) {
 
       {/* Cod box (daca exista) */}
       {o.hasCod && o.promo.cod_cupon && (
-        <div className="bg-slate-800 border border-dashed border-orange-400/50 rounded-xl px-3 py-1.5 text-center">
-          <span className="font-mono font-black text-orange-400 text-sm tracking-widest">{o.promo.cod_cupon}</span>
+        <div className="bg-slate-800 border border-dashed border-cyan-400/50 rounded-xl px-3 py-1.5 text-center">
+          <span className="font-mono font-black text-indigo-400 text-sm tracking-widest">{o.promo.cod_cupon}</span>
         </div>
       )}
 
@@ -221,12 +221,12 @@ function OfertaCard({ o }: { o: OfertaFlat }) {
           />
           {o.hasCod ? (
             <Link href={`/cod-reducere/${o.magazin}`}
-              className="text-xs font-black bg-orange-500 hover:bg-orange-400 text-white px-3 py-1.5 rounded-xl transition-colors">
+              className="text-xs font-black bg-indigo-600 hover:bg-indigo-500 text-white px-3 py-1.5 rounded-xl transition-colors">
               Copiaza codul
             </Link>
           ) : (
             <a href={o.url_afiliat} target="_blank" rel="sponsored noopener noreferrer"
-              className="text-xs font-black bg-orange-500 hover:bg-orange-400 text-white px-3 py-1.5 rounded-xl transition-colors">
+              className="text-xs font-black bg-indigo-600 hover:bg-indigo-500 text-white px-3 py-1.5 rounded-xl transition-colors">
               Vezi oferta →
             </a>
           )}
@@ -235,7 +235,7 @@ function OfertaCard({ o }: { o: OfertaFlat }) {
 
       {/* Link magazin */}
       <Link href={`/cod-reducere/${o.magazin}`}
-        className="text-[10px] text-slate-600 hover:text-orange-400 transition-colors text-center border-t border-slate-800 pt-2">
+        className="text-[10px] text-slate-600 hover:text-indigo-400 transition-colors text-center border-t border-slate-800 pt-2">
         Toate codurile {nume} →
       </Link>
     </div>
@@ -294,15 +294,15 @@ export default async function OferteAziPage(
           <div className="absolute inset-0 pointer-events-none" style={{background:"radial-gradient(ellipse 80% 70% at 50% -20%, rgba(249,115,22,0.12) 0%, transparent 65%)"}} />
           <div className="relative max-w-6xl mx-auto px-4 pt-10 pb-12 text-center">
 
-            <div className="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/25 text-orange-400 text-xs font-bold px-4 py-1.5 rounded-full mb-6">
+            <div className="inline-flex items-center gap-2 bg-cyan-500/10 border border-cyan-500/25 text-indigo-400 text-xs font-bold px-4 py-1.5 rounded-full mb-6">
               <span className="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse" />
               Live — actualizat azi, {luna} {an}
             </div>
 
             <h1 className="text-4xl md:text-5xl font-black tracking-tight text-white mb-4 leading-tight">
               {cat && CAT_LABELS[cat]
-                ? <>{CAT_EMOJI[cat] || ""} Oferte <span className="text-orange-400">{CAT_LABELS[cat]}</span> de Azi</>
-                : <>Oferte de Azi <span className="text-orange-400">Romania</span></>
+                ? <>{CAT_EMOJI[cat] || ""} Oferte <span className="text-indigo-400">{CAT_LABELS[cat]}</span> de Azi</>
+                : <>Oferte de Azi <span className="text-indigo-400">Romania</span></>
               }
             </h1>
             <p className="text-slate-400 text-lg mb-8 max-w-xl mx-auto">
@@ -335,7 +335,7 @@ export default async function OferteAziPage(
               <Link href="/oferte-azi"
                 className={`flex items-center gap-1 text-xs font-bold px-3 py-1.5 rounded-full transition-all whitespace-nowrap ${
                   !cat
-                    ? "bg-orange-500 text-white shadow-md shadow-orange-500/25"
+                    ? "bg-indigo-600 text-white shadow-md shadow-cyan-500/25"
                     : "bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700"
                 }`}>
                 🔥 Toate ({toateOfertele.length})
@@ -344,7 +344,7 @@ export default async function OferteAziPage(
                 <Link key={slug} href={`/oferte-azi?cat=${slug}`}
                   className={`flex items-center gap-1 text-xs font-bold px-3 py-1.5 rounded-full transition-all whitespace-nowrap ${
                     cat === slug
-                      ? "bg-orange-500 text-white shadow-md shadow-orange-500/25"
+                      ? "bg-indigo-600 text-white shadow-md shadow-cyan-500/25"
                       : "bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700"
                   }`}>
                   {CAT_EMOJI[slug] || ""} {CAT_LABELS[slug] || slug} ({count})
@@ -362,7 +362,7 @@ export default async function OferteAziPage(
               <p className="font-black text-white text-lg mb-2">Nicio oferta activa in aceasta categorie</p>
               <p className="text-slate-400 text-sm mb-6">Incearca alta categorie sau revino mai tarziu.</p>
               <Link href="/oferte-azi"
-                className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-400 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-colors">
+                className="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-colors">
                 Vezi toate ofertele →
               </Link>
             </div>
@@ -376,7 +376,7 @@ export default async function OferteAziPage(
                   {" "}— sortate: cod &gt; discount &gt; urgenta
                 </p>
                 {cat && (
-                  <Link href="/oferte-azi" className="text-xs font-bold text-orange-400 hover:text-orange-300 transition-colors">
+                  <Link href="/oferte-azi" className="text-xs font-bold text-indigo-400 hover:text-indigo-300 transition-colors">
                     Sterge filtrul ×
                   </Link>
                 )}
@@ -393,10 +393,10 @@ export default async function OferteAziPage(
 
         {/* CTA Newsletter ──────────────────────────────────────────────── */}
         <div className="max-w-6xl mx-auto px-4 pb-16">
-          <div className="relative bg-gradient-to-r from-orange-500/10 via-slate-900 to-red-500/10 border border-orange-500/15 rounded-3xl p-8 md:p-12 text-center overflow-hidden">
+          <div className="relative bg-gradient-to-r from-indigo-500/10 via-slate-900 to-violet-500/10 border border-cyan-500/15 rounded-3xl p-8 md:p-12 text-center overflow-hidden">
             <div className="absolute inset-0 pointer-events-none" style={{background:"radial-gradient(ellipse 80% 100% at 50% 100%, rgba(249,115,22,0.06) 0%, transparent 70%)"}} />
             <div className="relative">
-              <span className="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 text-orange-400 text-xs font-black px-3 py-1 rounded-full mb-5 uppercase tracking-widest">
+              <span className="inline-flex items-center gap-2 bg-cyan-500/10 border border-cyan-500/20 text-indigo-400 text-xs font-black px-3 py-1 rounded-full mb-5 uppercase tracking-widest">
                 📬 Nu rata nicio oferta buna
               </span>
               <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
@@ -407,7 +407,7 @@ export default async function OferteAziPage(
               </p>
               <div className="flex flex-wrap items-center justify-center gap-4">
                 <Link href="/newsletter"
-                  className="bg-orange-500 hover:bg-orange-400 text-white font-black px-8 py-3.5 rounded-2xl text-sm transition-all shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 hover:-translate-y-0.5 duration-200">
+                  className="bg-indigo-600 hover:bg-indigo-500 text-white font-black px-8 py-3.5 rounded-2xl text-sm transition-all shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 duration-200">
                   Aboneaza-te gratuit →
                 </Link>
                 <Link href="/toate-magazinele"

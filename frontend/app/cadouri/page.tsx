@@ -24,7 +24,7 @@ const OCAZII = [
   { slug: "tata",       emoji: "👨", titlu: "Cadouri Tata",            desc: "Gadgeturi, auto, unelte",      color: "#1e293b", popular: false },
   { slug: "botez",      emoji: "👶", titlu: "Cadouri Botez",           desc: "Bijuterii argint, personalizate", color: "#60a5fa", popular: true },
   { slug: "nasi",       emoji: "💍", titlu: "Cadouri Nasi",            desc: "Bijuterii premium, elegante",  color: "#d97706", popular: true },
-  { slug: "nastere",    emoji: "🎂", titlu: "Cadouri Nastere",         desc: "Bijuterii, parfumuri, gadgeturi", color: "#f97316", popular: false },
+  { slug: "nastere",    emoji: "🎂", titlu: "Cadouri Nastere",         desc: "Bijuterii, parfumuri, gadgeturi", color: "#6366f1", popular: false },
   { slug: "valentine",  emoji: "❤️", titlu: "Valentine's Day",         desc: "Bijuterii romantice, parfumuri", color: "#ef4444", popular: false },
   { slug: "craciun",    emoji: "🎄", titlu: "Cadouri Craciun",         desc: "Cadouri pentru toata familia", color: "#16a34a", popular: false },
   { slug: "absolvire",  emoji: "🎓", titlu: "Cadouri Absolvire",       desc: "Gadgeturi, bijuterii, carti",  color: "#7c3aed", popular: false },
@@ -49,7 +49,7 @@ export default function CadouriPage() {
       <header className="bg-slate-900 border-b border-slate-800">
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-2 text-sm">
           <Link href="/" className="flex items-center gap-1.5 shrink-0">
-            <div className="bg-orange-500 text-white font-black text-sm px-1.5 py-0.5 rounded-md">Am</div>
+            <div className="bg-indigo-600 text-white font-black text-sm px-1.5 py-0.5 rounded-md">Am</div>
             <span className="font-black text-white">Cupon.ro</span>
           </Link>
           <span className="text-slate-600">/</span>
@@ -78,7 +78,7 @@ export default function CadouriPage() {
               { v: "24h", l: "Livrare medie" },
             ].map(s => (
               <div key={s.l} className="bg-slate-900/80 border border-slate-700 rounded-xl px-4 py-2 text-center">
-                <div className="text-orange-400 font-black text-lg">{s.v}</div>
+                <div className="text-indigo-400 font-black text-lg">{s.v}</div>
                 <div className="text-slate-500 text-xs">{s.l}</div>
               </div>
             ))}
@@ -92,7 +92,7 @@ export default function CadouriPage() {
         <section className="mb-12">
           <div className="flex items-center gap-3 mb-6">
             <h2 className="text-xl font-black text-white">Ocazii populare</h2>
-            <span className="text-xs text-orange-400 bg-orange-500/10 border border-orange-500/20 px-2 py-0.5 rounded-full font-bold">TRENDING</span>
+            <span className="text-xs text-indigo-400 bg-cyan-500/10 border border-cyan-500/20 px-2 py-0.5 rounded-full font-bold">TRENDING</span>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {populare.map(o => (
@@ -104,7 +104,7 @@ export default function CadouriPage() {
               >
                 <div className="p-5">
                   <div className="text-4xl mb-3">{o.emoji}</div>
-                  <h3 className="text-white font-black text-base mb-1 group-hover:text-orange-300 transition-colors">{o.titlu}</h3>
+                  <h3 className="text-white font-black text-base mb-1 group-hover:text-indigo-300 transition-colors">{o.titlu}</h3>
                   <p className="text-slate-500 text-xs mb-3">{o.desc}</p>
                   <div
                     className="inline-flex items-center gap-1 text-xs font-bold"
@@ -133,7 +133,7 @@ export default function CadouriPage() {
                 className="group flex flex-col items-center text-center bg-slate-900 border border-slate-800 hover:border-slate-600 rounded-xl p-4 transition-all hover:-translate-y-0.5"
               >
                 <div className="text-3xl mb-2">{o.emoji}</div>
-                <div className="text-white text-xs font-bold group-hover:text-orange-300 transition-colors">{o.titlu}</div>
+                <div className="text-white text-xs font-bold group-hover:text-indigo-300 transition-colors">{o.titlu}</div>
                 <div className="text-slate-600 text-[10px] mt-1">{o.desc}</div>
               </Link>
             ))}
@@ -149,7 +149,7 @@ export default function CadouriPage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {[
               { slug: "sub-100-lei",  emoji: "💰", label: "Sub 100 Lei",     desc: "Cadouri accesibile",   from: "#22c55e", to: "#10b981" },
-              { slug: "sub-200-lei",  emoji: "🎁", label: "Sub 200 Lei",     desc: "Raport pret/calitate", from: "#f97316", to: "#fb923c" },
+              { slug: "sub-200-lei",  emoji: "🎁", label: "Sub 200 Lei",     desc: "Raport pret/calitate", from: "#6366f1", to: "#818cf8" },
               { slug: "sub-500-lei",  emoji: "💎", label: "Sub 500 Lei",     desc: "Cadouri premium",      from: "#8b5cf6", to: "#7c3aed" },
               { slug: "peste-500-lei",emoji: "👑", label: "Peste 500 Lei",   desc: "Cadouri de lux",       from: "#d97706", to: "#f59e0b" },
             ].map(b => (
@@ -161,7 +161,7 @@ export default function CadouriPage() {
               >
                 <div className="p-5 text-center">
                   <div className="text-4xl mb-3">{b.emoji}</div>
-                  <div className="text-white font-black text-sm mb-1 group-hover:text-orange-300 transition-colors">{b.label}</div>
+                  <div className="text-white font-black text-sm mb-1 group-hover:text-indigo-300 transition-colors">{b.label}</div>
                   <div className="text-slate-500 text-xs">{b.desc}</div>
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 h-0.5 opacity-40 group-hover:opacity-100 transition-opacity"
@@ -201,7 +201,7 @@ export default function CadouriPage() {
               <Link
                 key={m.href}
                 href={m.href}
-                className="text-sm text-slate-400 hover:text-white bg-slate-900 border border-slate-800 hover:border-orange-500/40 px-3 py-2 rounded-lg transition-all"
+                className="text-sm text-slate-400 hover:text-white bg-slate-900 border border-slate-800 hover:border-cyan-500/40 px-3 py-2 rounded-lg transition-all"
               >
                 {m.label}
               </Link>

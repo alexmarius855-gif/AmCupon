@@ -60,7 +60,7 @@ const IDEI_PER_PROFIL = [
 ];
 
 function numeAfisat(s: string) { return s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" "); }
-const CULORI_CARD = ["bg-pink-500","bg-purple-500","bg-orange-500","bg-teal-500","bg-red-500","bg-blue-500","bg-green-500","bg-indigo-500"];
+const CULORI_CARD = ["bg-pink-500","bg-purple-500","bg-indigo-600","bg-teal-500","bg-red-500","bg-blue-500","bg-green-500","bg-indigo-500"];
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Idei Cadouri cu Reducere 2026","url":"https://amcupon.ro/idei-cadouri" };
 
 export default function IdeiCadouriPage() {
@@ -84,14 +84,14 @@ export default function IdeiCadouriPage() {
 
         <nav className="bg-white border-b border-gray-100">
           <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-gray-400">
-            <Link href="/" className="hover:text-orange-500">Acasă</Link>
+            <Link href="/" className="hover:text-indigo-400">Acasă</Link>
             <span className="mx-1 text-gray-300">/</span>
             <span className="text-gray-700 font-medium">Idei Cadouri</span>
           </div>
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-pink-500 via-purple-500 to-orange-400 text-white py-12 px-4">
+        <section className="bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-400 text-white py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">🎁</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Idei de Cadouri {an}</h1>
@@ -131,7 +131,7 @@ export default function IdeiCadouriPage() {
                     </li>
                   ))}
                 </ul>
-                <p className="text-xs font-bold text-orange-500 mt-3 group-hover:text-orange-600">
+                <p className="text-xs font-bold text-indigo-400 mt-3 group-hover:text-indigo-300">
                   Vezi reduceri →
                 </p>
               </a>
@@ -166,7 +166,7 @@ export default function IdeiCadouriPage() {
                     )}
                     <div>
                       <p className="font-bold text-gray-900 text-sm">{nume}</p>
-                      {m.are_promotie && m.cod_cupon && <span className="text-xs text-orange-500 font-bold">COD</span>}
+                      {m.are_promotie && m.cod_cupon && <span className="text-xs text-indigo-400 font-bold">COD</span>}
                       {m.are_promotie && !m.cod_cupon && <span className="text-xs text-green-500 font-medium">Ofertă</span>}
                     </div>
                   </div>
@@ -231,7 +231,7 @@ export default function IdeiCadouriPage() {
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-gray-100 hover:bg-orange-50 hover:text-orange-600 text-gray-700 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-gray-200 hover:border-orange-200">
+                className="bg-gray-100 hover:bg-cyan-50 hover:text-indigo-300 text-gray-700 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-gray-200 hover:border-cyan-200">
                 {l.label}
               </a>
             ))}
@@ -239,9 +239,9 @@ export default function IdeiCadouriPage() {
         </section>
 
         <footer className="border-t border-gray-200 py-6 text-center text-xs text-gray-400 mt-4">
-          © {an} AmCupon.ro · <Link href="/craciun" className="hover:text-orange-500">Crăciun</Link>
-          {" · "}<Link href="/black-friday" className="hover:text-orange-500">Black Friday</Link>
-          {" · "}<Link href="/gadgets" className="hover:text-orange-500">Gadgets</Link>
+          © {an} AmCupon.ro · <Link href="/craciun" className="hover:text-indigo-400">Crăciun</Link>
+          {" · "}<Link href="/black-friday" className="hover:text-indigo-400">Black Friday</Link>
+          {" · "}<Link href="/gadgets" className="hover:text-indigo-400">Gadgets</Link>
         </footer>
       </div>
     </>

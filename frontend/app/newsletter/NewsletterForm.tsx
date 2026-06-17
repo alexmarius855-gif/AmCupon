@@ -72,7 +72,7 @@ export default function NewsletterForm() {
             <div className="text-5xl mb-4">🎉</div>
             <h2 className="text-2xl font-black text-white mb-2">Esti abonat!</h2>
             <p className="text-slate-400 mb-6">Vei primi cele mai bune coduri reducere direct in inbox.</p>
-            <Link href="/" className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-400 text-white font-bold px-6 py-3 rounded-xl transition-colors">
+            <Link href="/" className="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-6 py-3 rounded-xl transition-colors">
               Descopera ofertele de azi &rarr;
             </Link>
           </div>
@@ -89,7 +89,7 @@ export default function NewsletterForm() {
                 onChange={e => { setEmail(e.target.value); setStatus("idle"); setErrMsg(""); }}
                 placeholder="adresa@email.ro"
                 required
-                className="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-4 py-3.5 text-base focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500/50 placeholder-slate-500 transition-all"
+                className="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-4 py-3.5 text-base focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-cyan-500/50 placeholder-slate-500 transition-all"
               />
             </div>
             {status === "error" && errMsg && (
@@ -98,13 +98,13 @@ export default function NewsletterForm() {
             <button
               type="submit"
               disabled={status === "loading"}
-              className="w-full bg-orange-500 hover:bg-orange-400 disabled:opacity-60 text-white font-black py-4 rounded-xl text-base transition-colors shadow-lg shadow-orange-500/25"
+              className="w-full bg-indigo-600 hover:bg-indigo-500 disabled:opacity-60 text-white font-black py-4 rounded-xl text-base transition-colors shadow-lg shadow-cyan-500/25"
             >
               {status === "loading" ? "Se proceseaza..." : "Aboneaza-ma gratuit →"}
             </button>
             <p className="text-xs text-slate-500 text-center leading-relaxed">
               Prin abonare esti de acord cu{" "}
-              <Link href="/confidentialitate" className="text-orange-400 hover:underline">politica de confidentialitate</Link>
+              <Link href="/confidentialitate" className="text-indigo-400 hover:underline">politica de confidentialitate</Link>
               . Dezabonare oricand cu un click.
             </p>
           </form>

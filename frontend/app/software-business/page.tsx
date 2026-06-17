@@ -102,14 +102,14 @@ export default function SoftwareBusinessPage() {
               const promo = m.promotii.find(p => (p.zile_ramase ?? 99) >= 0) ?? m.promotii[0] ?? {};
               const isFact = m.magazin === "facturis-online.ro";
               return (
-                <div key={m.magazin} className={`bg-slate-900 border rounded-xl p-5 flex flex-col gap-3 transition-all ${isFact ? "border-amber-700/30 hover:border-amber-500/40" : "border-slate-800 hover:border-orange-500/20"}`}>
+                <div key={m.magazin} className={`bg-slate-900 border rounded-xl p-5 flex flex-col gap-3 transition-all ${isFact ? "border-amber-700/30 hover:border-amber-500/40" : "border-slate-800 hover:border-cyan-500/20"}`}>
                   <div className="flex items-start justify-between">
                     <div>
                       <p className="font-black text-white">{m.magazin.split(".")[0].charAt(0).toUpperCase() + m.magazin.split(".")[0].slice(1).replace("-", " ")}</p>
                       <p className="text-xs text-slate-500">{m.magazin}</p>
                     </div>
                     {m.comision && (
-                      <span className={`text-xs font-black px-2 py-0.5 rounded-full ${isFact ? "bg-amber-600 text-white" : "text-orange-400"}`}>
+                      <span className={`text-xs font-black px-2 py-0.5 rounded-full ${isFact ? "bg-amber-600 text-white" : "text-indigo-400"}`}>
                         {m.comision.replace(" sale commission","").replace(" % sale commission","%")}
                       </span>
                     )}
@@ -118,7 +118,7 @@ export default function SoftwareBusinessPage() {
                   {promo.cod_cupon && (
                     <div className="bg-slate-800 border border-dashed border-slate-600 rounded-lg px-3 py-2 text-center">
                       <p className="text-[10px] text-slate-500 mb-0.5">Cod reducere</p>
-                      <p className="font-mono font-black text-orange-400 text-sm">{promo.cod_cupon}</p>
+                      <p className="font-mono font-black text-indigo-400 text-sm">{promo.cod_cupon}</p>
                     </div>
                   )}
                   <a href={m.url_afiliat} target="_blank" rel="sponsored noopener noreferrer"
@@ -138,7 +138,7 @@ export default function SoftwareBusinessPage() {
           <h2 className="text-xl font-black text-white mb-5">{group.categ} — International</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {group.items.map(item => (
-              <div key={item.name} className="bg-slate-900 border border-slate-800 hover:border-orange-500/20 rounded-xl p-5 flex flex-col gap-3 transition-all">
+              <div key={item.name} className="bg-slate-900 border border-slate-800 hover:border-cyan-500/20 rounded-xl p-5 flex flex-col gap-3 transition-all">
                 <div className="flex items-start justify-between gap-2">
                   <div>
                     <div className="flex items-center gap-2 mb-0.5">
@@ -148,12 +148,12 @@ export default function SoftwareBusinessPage() {
                     <p className="text-xs text-slate-400">{item.desc}</p>
                   </div>
                   <div className="text-right shrink-0">
-                    <p className="text-orange-400 text-xs font-bold">{item.pret}</p>
+                    <p className="text-indigo-400 text-xs font-bold">{item.pret}</p>
                     <p className="text-emerald-400 text-[10px]">{item.comision}</p>
                   </div>
                 </div>
                 <a href={item.url} target="_blank" rel="sponsored noopener noreferrer"
-                  className="bg-orange-500 hover:bg-orange-400 text-white text-sm font-bold py-2.5 rounded-lg text-center transition-all hover:-translate-y-0.5">
+                  className="bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-bold py-2.5 rounded-lg text-center transition-all hover:-translate-y-0.5">
                   Incearca {item.name} →
                 </a>
                 <p className="text-[10px] text-slate-600 text-center">Program afiliere: {item.program}</p>

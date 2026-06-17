@@ -25,7 +25,7 @@ const CATEG_MERCHANTS: Record<string, string[]> = {
 const CATEG_CULORI: Record<string, string> = {
   "fashion": "purple", "home-garden": "green", "electronics-itc": "blue",
   "beauty": "pink", "pharma": "emerald", "babies-kids-toys": "yellow",
-  "sports-outdoors": "orange", "books": "amber", "gifts-flowers": "rose",
+  "sports-outdoors": "indigo", "books": "amber", "gifts-flowers": "rose",
   "automotive": "gray", "health-personal-care": "teal", "jewelry": "violet",
 };
 
@@ -256,7 +256,7 @@ export default async function PaginaCategorie({
           merchantSlugs={CATEG_MERCHANTS[slug]}
           catSlug={CATEG_CAT_SLUG[slug] || ""}
           titlu={`Produse populare — ${numeCateg} cu reducere`}
-          culoareAccent={CATEG_CULORI[slug] || "orange"}
+          culoareAccent={CATEG_CULORI[slug] || "indigo"}
           limit={12}
         />
       )}

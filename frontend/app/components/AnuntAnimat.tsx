@@ -90,7 +90,7 @@ export default function AnuntAnimat() {
   const item = items[idx];
 
   return (
-    <div className="bg-gradient-to-r from-red-600 to-orange-500 text-white text-xs font-semibold py-2 px-4 text-center flex items-center justify-center gap-3 min-h-[34px]">
+    <div className="bg-gradient-to-r from-violet-600 to-indigo-500 text-white text-xs font-semibold py-2 px-4 text-center flex items-center justify-center gap-3 min-h-[34px]">
       {/* Mesaj rotativ */}
       <div
         className="flex items-center gap-2 transition-all duration-300"

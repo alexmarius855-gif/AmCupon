@@ -49,7 +49,7 @@ function parseCashback(comision: string): number {
   return m ? parseFloat(m[1]) : 0;
 }
 
-function ScorBar({ value, max = 100, color = "bg-orange-500" }: { value: number; max?: number; color?: string }) {
+function ScorBar({ value, max = 100, color = "bg-indigo-600" }: { value: number; max?: number; color?: string }) {
   return (
     <div className="h-2 bg-slate-100 rounded-full overflow-hidden">
       <div className={`h-full ${color} rounded-full transition-all duration-700`} style={{ width: `${Math.min(100, (value / max) * 100)}%` }} />
@@ -64,7 +64,7 @@ function MagazinCard({ m, onRemove, onSwap, position }: { m: Magazin; onRemove: 
   const nrCoduri  = m.promotii.filter(p => p.cod_cupon).length;
   const nrOferte  = m.promotii.length;
   const trustScore = m.procent_succes || (m.are_promotie ? 78 : 50);
-  const gradients = ["from-orange-500 to-red-500", "from-blue-500 to-indigo-600"];
+  const gradients = ["from-violet-500 to-fuchsia-600", "from-blue-500 to-indigo-600"];
 
   return (
     <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
@@ -92,7 +92,7 @@ function MagazinCard({ m, onRemove, onSwap, position }: { m: Magazin; onRemove: 
           <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center shrink-0 overflow-hidden">
             {m.logo_url && imgOk
               ? <img src={m.logo_url} alt={numeAfisat(m.magazin)} className="w-10 h-10 object-contain" onError={() => setImgOk(false)} />
-              : <span className="text-xl font-black text-orange-500">{numeAfisat(m.magazin)[0]}</span>
+              : <span className="text-xl font-black text-indigo-400">{numeAfisat(m.magazin)[0]}</span>
             }
           </div>
           <div>
@@ -126,9 +126,9 @@ function MagazinCard({ m, onRemove, onSwap, position }: { m: Magazin; onRemove: 
         <div>
           <div className="flex justify-between items-center mb-1.5">
             <span className="text-xs font-semibold text-slate-500 uppercase tracking-wide">Reducere maximă</span>
-            <span className={`text-sm font-black ${discount > 0 ? "text-orange-600" : "text-slate-400"}`}>{discount > 0 ? `${discount}%` : "—"}</span>
+            <span className={`text-sm font-black ${discount > 0 ? "text-indigo-300" : "text-slate-400"}`}>{discount > 0 ? `${discount}%` : "—"}</span>
           </div>
-          <ScorBar value={discount} max={80} color="bg-orange-500" />
+          <ScorBar value={discount} max={80} color="bg-indigo-600" />
         </div>
 
         {/* Cashback */}
@@ -151,7 +151,7 @@ function MagazinCard({ m, onRemove, onSwap, position }: { m: Magazin; onRemove: 
 
         {/* Badges */}
         <div className="flex flex-wrap gap-1.5 pt-2 border-t border-slate-100">
-          {m.exclusiv    && <span className="text-[10px] font-bold bg-orange-100 text-orange-600 px-2 py-0.5 rounded-full">Exclusiv</span>}
+          {m.exclusiv    && <span className="text-[10px] font-bold bg-cyan-100 text-indigo-300 px-2 py-0.5 rounded-full">Exclusiv</span>}
           {m.cod_cupon   && <span className="text-[10px] font-bold bg-violet-100 text-violet-700 px-2 py-0.5 rounded-full">Cod cupon</span>}
           {m.are_promotie&& <span className="text-[10px] font-bold bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded-full">Ofertă activă</span>}
           {m.trend > 2   && <span className="text-[10px] font-bold bg-red-100 text-red-600 px-2 py-0.5 rounded-full">🔥 Trending</span>}
@@ -165,7 +165,7 @@ function MagazinCard({ m, onRemove, onSwap, position }: { m: Magazin; onRemove: 
             <ul className="space-y-1.5">
               {m.promotii.slice(0, 3).map((p, i) => (
                 <li key={i} className="flex items-start gap-2 text-xs text-slate-600">
-                  <span className="text-orange-400 shrink-0 mt-0.5">•</span>
+                  <span className="text-indigo-400 shrink-0 mt-0.5">•</span>
                   <span className="line-clamp-2">{p.nume}</span>
                 </li>
               ))}
@@ -175,7 +175,7 @@ function MagazinCard({ m, onRemove, onSwap, position }: { m: Magazin; onRemove: 
 
         {/* CTA */}
         <a href={`/cod-reducere/${m.magazin}`}
-          className="flex items-center justify-center w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 rounded-xl text-sm transition-colors mt-2">
+          className="flex items-center justify-center w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-2.5 rounded-xl text-sm transition-colors mt-2">
           Vezi toate ofertele →
         </a>
       </div>
@@ -210,16 +210,16 @@ function SearchMagazin({ onSelect, exclude }: { onSelect: (slug: string) => void
           onFocus={() => results.length > 0 && setShow(true)}
           onBlur={() => setTimeout(() => setShow(false), 150)}
           placeholder="Cauta magazin (ex: eMAG, Notino...)"
-          className="w-full bg-slate-50 border border-slate-200 focus:border-orange-400 focus:ring-2 focus:ring-orange-400/20 rounded-xl pl-9 pr-4 py-3 text-sm focus:outline-none transition-all" />
+          className="w-full bg-slate-50 border border-slate-200 focus:border-indigo-400 focus:ring-2 focus:ring-indigo-400/20 rounded-xl pl-9 pr-4 py-3 text-sm focus:outline-none transition-all" />
       </div>
       {show && results.length > 0 && (
         <div className="absolute top-full mt-1 left-0 right-0 bg-white border border-slate-200 rounded-xl shadow-xl py-1 z-50">
           {results.map(m => (
             <button key={m.magazin} onMouseDown={() => { onSelect(m.magazin); setQuery(""); setShow(false); }}
-              className="w-full flex items-center gap-3 px-3 py-2.5 hover:bg-orange-50 text-left transition-colors">
+              className="w-full flex items-center gap-3 px-3 py-2.5 hover:bg-cyan-50 text-left transition-colors">
               {m.logo_url
                 ? <img src={m.logo_url} alt={numeAfisat(m.magazin)} className="w-7 h-7 object-contain" />
-                : <div className="w-7 h-7 bg-orange-100 rounded-lg flex items-center justify-center text-xs font-black text-orange-500">{numeAfisat(m.magazin)[0]}</div>
+                : <div className="w-7 h-7 bg-cyan-100 rounded-lg flex items-center justify-center text-xs font-black text-indigo-400">{numeAfisat(m.magazin)[0]}</div>
               }
               <div className="flex-1 min-w-0">
                 <p className="text-sm font-bold text-slate-800 truncate">{numeAfisat(m.magazin)}</p>
@@ -288,7 +288,7 @@ function ComparatorInner() {
       {/* Hero */}
       <div className="bg-slate-900 text-white py-10 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-xs font-bold text-orange-400 uppercase tracking-widest mb-3">INSTRUMENT NOU</p>
+          <p className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-3">INSTRUMENT NOU</p>
           <h1 className="text-3xl md:text-4xl font-black tracking-tight mb-3">Comparator Magazine</h1>
           <p className="text-slate-400 text-base max-w-xl mx-auto">
             Compară două magazine online side-by-side — oferte, coduri, cashback și trust score
@@ -356,7 +356,7 @@ function ComparatorInner() {
             <div className="flex flex-wrap gap-2">
               {all.filter(m => m.are_promotie && !selected.includes(m.magazin)).slice(0, 10).map(m => (
                 <button key={m.magazin} onClick={() => addMagazin(m.magazin)}
-                  className="flex items-center gap-1.5 px-3 py-1.5 bg-white border border-slate-200 hover:border-orange-300 hover:bg-orange-50 rounded-full text-sm font-semibold text-slate-700 hover:text-orange-600 transition-all">
+                  className="flex items-center gap-1.5 px-3 py-1.5 bg-white border border-slate-200 hover:border-indigo-300 hover:bg-cyan-50 rounded-full text-sm font-semibold text-slate-700 hover:text-indigo-300 transition-all">
                   {m.logo_url && <img src={m.logo_url} alt="" className="w-4 h-4 object-contain" />}
                   {numeAfisat(m.magazin)}
                 </button>

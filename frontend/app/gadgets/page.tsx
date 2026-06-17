@@ -56,7 +56,7 @@ export default function GadgetsPage() {
 
         <nav className="bg-white border-b border-gray-100">
           <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-gray-400 flex-wrap">
-            <Link href="/" className="hover:text-orange-500 transition-colors">Acasă</Link>
+            <Link href="/" className="hover:text-indigo-400 transition-colors">Acasă</Link>
             <span className="mx-1 text-gray-300">/</span>
             <span className="text-gray-700 font-medium">Gadgets & Tech</span>
           </div>
@@ -213,7 +213,7 @@ export default function GadgetsPage() {
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-gray-100 hover:bg-orange-50 hover:text-orange-600 text-gray-700 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-gray-200 hover:border-orange-200">
+                className="bg-gray-100 hover:bg-cyan-50 hover:text-indigo-300 text-gray-700 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-gray-200 hover:border-cyan-200">
                 {l.label}
               </a>
             ))}
@@ -221,9 +221,9 @@ export default function GadgetsPage() {
         </section>
 
         <footer className="border-t border-gray-200 py-6 text-center text-xs text-gray-400 mt-4">
-          © {an} AmCupon.ro · <Link href="/" className="hover:text-orange-500">Acasă</Link>
-          {" · "}<Link href="/black-friday" className="hover:text-orange-500">Black Friday</Link>
-          {" · "}<Link href="/moto" className="hover:text-orange-500">Auto-Moto</Link>
+          © {an} AmCupon.ro · <Link href="/" className="hover:text-indigo-400">Acasă</Link>
+          {" · "}<Link href="/black-friday" className="hover:text-indigo-400">Black Friday</Link>
+          {" · "}<Link href="/moto" className="hover:text-indigo-400">Auto-Moto</Link>
         </footer>
       </div>
     </>

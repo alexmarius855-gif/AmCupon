@@ -103,7 +103,7 @@ export default function NewsletterPopup() {
       <div className="bg-white rounded-3xl shadow-2xl w-full max-w-md overflow-hidden animate-in slide-in-from-bottom-4 duration-300">
 
         {/* Header gradient */}
-        <div className="bg-gradient-to-r from-orange-500 to-red-500 px-6 pt-6 pb-8 text-white text-center relative">
+        <div className="bg-gradient-to-r from-indigo-600 to-violet-600 px-6 pt-6 pb-8 text-white text-center relative">
           <button
             onClick={close}
             className="absolute top-4 right-4 text-white/70 hover:text-white transition-colors text-xl font-bold"
@@ -112,13 +112,13 @@ export default function NewsletterPopup() {
           </button>
           <div className="text-4xl mb-2">&#127873;</div>
           <h2 className="text-xl font-black mb-1">Reduceri exclusive pe email</h2>
-          <p className="text-orange-100 text-sm">
+          <p className="text-cyan-100 text-sm">
             Fii primul care afla codurile zilei &mdash; gratuit, fara spam
           </p>
         </div>
 
         {/* Beneficii */}
-        <div className="px-6 py-4 bg-orange-50 border-b border-orange-100">
+        <div className="px-6 py-4 bg-cyan-50 border-b border-cyan-100">
           <div className="flex flex-col gap-1.5 text-sm text-gray-700">
             {[
               "Coduri exclusive inainte de toti",
@@ -150,7 +150,7 @@ export default function NewsletterPopup() {
                 onChange={(e) => { setEmail(e.target.value); setStatus("idle"); setErrMsg(""); }}
                 placeholder="adresa@email.ro"
                 required
-                className="w-full border-2 border-gray-200 rounded-2xl px-4 py-3 text-sm focus:outline-none focus:border-orange-400 transition-colors"
+                className="w-full border-2 border-gray-200 rounded-2xl px-4 py-3 text-sm focus:outline-none focus:border-indigo-400 transition-colors"
               />
 
               {status === "error" && errMsg && (
@@ -160,14 +160,14 @@ export default function NewsletterPopup() {
               <button
                 type="submit"
                 disabled={status === "loading"}
-                className="w-full bg-orange-500 hover:bg-orange-600 disabled:opacity-60 text-white font-black py-3 rounded-2xl text-sm transition-colors"
+                className="w-full bg-indigo-600 hover:bg-indigo-500 disabled:opacity-60 text-white font-black py-3 rounded-2xl text-sm transition-colors"
               >
                 {status === "loading" ? "Se trimite..." : "Vreau reduceri exclusive →"}
               </button>
 
               <p className="text-xs text-gray-400 text-center">
                 Prin abonare esti de acord cu{" "}
-                <Link href="/confidentialitate" className="underline hover:text-orange-500">
+                <Link href="/confidentialitate" className="underline hover:text-indigo-400">
                   politica de confidentialitate
                 </Link>
               </p>

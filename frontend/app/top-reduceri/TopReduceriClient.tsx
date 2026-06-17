@@ -79,10 +79,10 @@ function MagazinCard({
   }
 
   return (
-    <div className="bg-slate-900 border border-slate-800 rounded-2xl p-4 hover:border-orange-500/30 transition-all group">
+    <div className="bg-slate-900 border border-slate-800 rounded-2xl p-4 hover:border-cyan-500/30 transition-all group">
       <div className="flex items-start gap-3">
         {/* Rank badge */}
-        <div className="shrink-0 w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-xs font-black text-slate-400 group-hover:bg-orange-500/20 group-hover:text-orange-400 transition-all">
+        <div className="shrink-0 w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-xs font-black text-slate-400 group-hover:bg-cyan-500/20 group-hover:text-indigo-400 transition-all">
           {rank}
         </div>
 
@@ -104,7 +104,7 @@ function MagazinCard({
           <div className="flex items-center gap-2 flex-wrap">
             <a
               href={`/cod-reducere/${m.magazin}`}
-              className="font-bold text-white hover:text-orange-400 transition-colors text-sm"
+              className="font-bold text-white hover:text-indigo-400 transition-colors text-sm"
             >
               {nume}
             </a>
@@ -148,7 +148,7 @@ function MagazinCard({
               className={`text-xs font-bold px-3 py-2 rounded-xl transition-all ${
                 copied
                   ? "bg-emerald-500/20 text-emerald-400 border border-emerald-500/30"
-                  : "bg-orange-500/10 text-orange-400 border border-orange-500/30 hover:bg-orange-500 hover:text-white"
+                  : "bg-cyan-500/10 text-indigo-400 border border-cyan-500/30 hover:bg-indigo-600 hover:text-white"
               }`}
             >
               {copied ? "Copiat!" : cod.cod_cupon}
@@ -201,8 +201,8 @@ export default function TopReduceriClient({
 
         {/* Hero */}
         <div className="text-center mb-8">
-          <div className="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-1.5 text-orange-400 text-xs font-bold mb-4">
-            <span className="w-2 h-2 bg-orange-400 rounded-full animate-pulse" />
+          <div className="inline-flex items-center gap-2 bg-cyan-500/10 border border-cyan-500/20 rounded-full px-4 py-1.5 text-indigo-400 text-xs font-bold mb-4">
+            <span className="w-2 h-2 bg-indigo-500 rounded-full animate-pulse" />
             Actualizat zilnic
           </div>
           <h1 className="text-3xl sm:text-4xl font-black text-white mb-3">
@@ -215,12 +215,12 @@ export default function TopReduceriClient({
           {/* Stats */}
           <div className="flex items-center justify-center gap-6 mt-6">
             <div className="text-center">
-              <div className="text-2xl font-black text-orange-400">{totalMagazine}+</div>
+              <div className="text-2xl font-black text-indigo-400">{totalMagazine}+</div>
               <div className="text-xs text-slate-500">magazine</div>
             </div>
             <div className="w-px h-8 bg-slate-800" />
             <div className="text-center">
-              <div className="text-2xl font-black text-orange-400">{totalCoduri}</div>
+              <div className="text-2xl font-black text-indigo-400">{totalCoduri}</div>
               <div className="text-xs text-slate-500">coduri active</div>
             </div>
             <div className="w-px h-8 bg-slate-800" />
@@ -239,8 +239,8 @@ export default function TopReduceriClient({
               onClick={() => setTab(t.key)}
               className={`p-3 rounded-xl text-sm font-bold transition-all text-left ${
                 tab === t.key
-                  ? "bg-orange-500 text-white shadow-lg shadow-orange-500/25"
-                  : "bg-slate-900 text-slate-300 border border-slate-800 hover:border-orange-500/40"
+                  ? "bg-indigo-600 text-white shadow-lg shadow-cyan-500/25"
+                  : "bg-slate-900 text-slate-300 border border-slate-800 hover:border-cyan-500/40"
               }`}
             >
               <div className="flex items-center gap-1.5 mb-1">
@@ -252,7 +252,7 @@ export default function TopReduceriClient({
                 </span>
               </div>
               <div className="font-black">{t.label}</div>
-              <div className={`text-xs mt-0.5 ${tab === t.key ? "text-orange-100" : "text-slate-500"}`}>
+              <div className={`text-xs mt-0.5 ${tab === t.key ? "text-cyan-100" : "text-slate-500"}`}>
                 {t.desc}
               </div>
             </button>
@@ -264,7 +264,7 @@ export default function TopReduceriClient({
           <div className="text-center py-16">
             <div className="text-4xl mb-3">🔍</div>
             <p className="text-slate-400">Nu sunt oferte in aceasta categorie momentan.</p>
-            <Link href="/toate-magazinele" className="mt-4 inline-block text-orange-400 hover:text-orange-300 text-sm font-semibold">
+            <Link href="/toate-magazinele" className="mt-4 inline-block text-indigo-400 hover:text-indigo-300 text-sm font-semibold">
               Vezi toate magazinele &rarr;
             </Link>
           </div>
@@ -305,7 +305,7 @@ export default function TopReduceriClient({
             </div>
             <a
               href="/toate-magazinele"
-              className="ml-auto shrink-0 bg-orange-500 hover:bg-orange-400 text-white font-bold px-4 py-2 rounded-xl text-sm transition-colors"
+              className="ml-auto shrink-0 bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-4 py-2 rounded-xl text-sm transition-colors"
             >
               Cauta
             </a>

@@ -53,7 +53,7 @@ export default function FarmaciePage() {
       <div className="min-h-screen bg-white">
         <nav className="bg-white border-b border-gray-100">
           <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-gray-400">
-            <Link href="/" className="hover:text-orange-500">Acasă</Link>
+            <Link href="/" className="hover:text-indigo-400">Acasă</Link>
             <span className="mx-1">/</span>
             <span className="text-gray-700 font-medium">Farmacie Online</span>
           </div>
@@ -116,7 +116,7 @@ export default function FarmaciePage() {
                     )}
                     <div>
                       <p className="font-bold text-gray-900 text-sm">{nume}</p>
-                      {m.are_promotie && m.cod_cupon && <span className="text-xs text-orange-500 font-bold">COD</span>}
+                      {m.are_promotie && m.cod_cupon && <span className="text-xs text-indigo-400 font-bold">COD</span>}
                       {m.are_promotie && !m.cod_cupon && <span className="text-xs text-green-500 font-medium">Ofertă</span>}
                     </div>
                   </div>
@@ -181,7 +181,7 @@ export default function FarmaciePage() {
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-gray-100 hover:bg-orange-50 hover:text-orange-600 text-gray-700 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-gray-200 hover:border-orange-200">
+                className="bg-gray-100 hover:bg-cyan-50 hover:text-indigo-300 text-gray-700 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-gray-200 hover:border-cyan-200">
                 {l.label}
               </a>
             ))}
@@ -190,9 +190,9 @@ export default function FarmaciePage() {
 
         <footer className="border-t border-gray-200 py-6 text-center text-xs text-gray-400 mt-4">
           © {an} AmCupon.ro ·{" "}
-          <Link href="/idei-cadouri" className="hover:text-orange-500">Idei Cadouri</Link>{" · "}
-          <Link href="/gadgets" className="hover:text-orange-500">Gadgets</Link>{" · "}
-          <Link href="/categorii" className="hover:text-orange-500">Categorii</Link>
+          <Link href="/idei-cadouri" className="hover:text-indigo-400">Idei Cadouri</Link>{" · "}
+          <Link href="/gadgets" className="hover:text-indigo-400">Gadgets</Link>{" · "}
+          <Link href="/categorii" className="hover:text-indigo-400">Categorii</Link>
         </footer>
       </div>
     </>

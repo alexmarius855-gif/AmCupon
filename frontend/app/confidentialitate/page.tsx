@@ -12,9 +12,9 @@ export default function ConfidentialitatePage() {
       <header className="bg-white border-b border-gray-200 shadow-sm">
         <div className="max-w-4xl mx-auto px-4 py-3 flex items-center gap-2">
           <Link href="/" className="flex items-center gap-1.5">
-            <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
+            <div className="bg-indigo-600 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
             <span className="font-black text-gray-900 text-xl">Cupon</span>
-            <span className="text-orange-500 font-black text-xl">.ro</span>
+            <span className="text-indigo-400 font-black text-xl">.ro</span>
           </Link>
           <span className="text-gray-300 mx-1">/</span>
           <span className="text-sm font-semibold text-gray-600">Politică de Confidențialitate</span>
@@ -35,7 +35,7 @@ export default function ConfidentialitatePage() {
             </p>
             <p className="mt-2">
               <strong>Contact:</strong>{" "}
-              <a href="mailto:contact@amcupon.ro" className="text-orange-500 hover:underline">contact@amcupon.ro</a>
+              <a href="mailto:contact@amcupon.ro" className="text-indigo-400 hover:underline">contact@amcupon.ro</a>
               <br />
               <strong>Website:</strong> https://amcupon.ro
             </p>
@@ -112,7 +112,7 @@ export default function ConfidentialitatePage() {
             </ul>
             <p className="mt-3">
               Pentru exercitarea acestor drepturi, contactează-ne la:{" "}
-              <a href="mailto:contact@amcupon.ro" className="text-orange-500 hover:underline">contact@amcupon.ro</a>.
+              <a href="mailto:contact@amcupon.ro" className="text-indigo-400 hover:underline">contact@amcupon.ro</a>.
               Răspundem în maxim <strong>30 de zile</strong>.
             </p>
           </section>
@@ -144,13 +144,13 @@ export default function ConfidentialitatePage() {
             <ul className="list-disc ml-6 mt-2 space-y-1">
               <li>
                 <strong>ANSPDCP</strong> (Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal):{" "}
-                <a href="https://www.dataprotection.ro" target="_blank" rel="noopener noreferrer" className="text-orange-500 hover:underline">
+                <a href="https://www.dataprotection.ro" target="_blank" rel="noopener noreferrer" className="text-indigo-400 hover:underline">
                   www.dataprotection.ro
                 </a>
               </li>
               <li>
                 <strong>ANPC:</strong>{" "}
-                <a href="https://anpc.ro" target="_blank" rel="noopener noreferrer" className="text-orange-500 hover:underline">
+                <a href="https://anpc.ro" target="_blank" rel="noopener noreferrer" className="text-indigo-400 hover:underline">
                   anpc.ro
                 </a>
               </li>
@@ -169,7 +169,7 @@ export default function ConfidentialitatePage() {
         </div>
 
         <div className="mt-8 text-center">
-          <Link href="/" className="text-sm text-gray-400 hover:text-orange-500 transition-colors">
+          <Link href="/" className="text-sm text-gray-400 hover:text-indigo-400 transition-colors">
             ← Înapoi la AmCupon.ro
           </Link>
         </div>

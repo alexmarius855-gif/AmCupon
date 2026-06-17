@@ -49,7 +49,7 @@ function parseInline(text: string, baseKey: string): React.ReactNode[] {
       const isExt = match[3].startsWith("http");
       nodes.push(
         <a key={`${baseKey}-l${i}`} href={match[3]}
-          className="text-orange-500 hover:text-orange-600 underline underline-offset-2 font-medium"
+          className="text-indigo-400 hover:text-indigo-300 underline underline-offset-2 font-medium"
           {...(isExt ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
           {match[2]}
         </a>
@@ -197,7 +197,7 @@ export default async function ArticolPage({
       <div className="min-h-screen bg-slate-950">
         <article className="max-w-3xl mx-auto px-4 py-10">
           <div className="mb-6">
-            <span className="bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">{post.category}</span>
+            <span className="bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-full">{post.category}</span>
           </div>
 
           <h1 className="text-2xl md:text-3xl font-black text-white leading-tight mb-4">{post.title}</h1>
@@ -209,7 +209,7 @@ export default async function ArticolPage({
                 alt="AmCupon.ro"
                 width={28}
                 height={28}
-                className="rounded-full ring-2 ring-orange-500/20"
+                className="rounded-full ring-2 ring-indigo-500/20"
               />
               <span className="font-semibold text-slate-300">AmCupon.ro</span>
             </div>
@@ -218,7 +218,7 @@ export default async function ArticolPage({
             {post.magazin && (
               <>
                 <span>·</span>
-                <a href={`/cod-reducere/${post.magazin}`} className="text-orange-500 font-semibold hover:underline">
+                <a href={`/cod-reducere/${post.magazin}`} className="text-indigo-400 font-semibold hover:underline">
                   {numeAfisat(post.magazin)}
                 </a>
               </>
@@ -229,7 +229,7 @@ export default async function ArticolPage({
             <Image src={post.cover} alt={post.title} fill className="object-cover" priority sizes="(max-width: 768px) 100vw, 768px" />
           </div>
 
-          <p className="text-lg text-slate-400 font-medium leading-relaxed mb-8 p-5 bg-orange-50 rounded-2xl border border-orange-100">
+          <p className="text-lg text-slate-400 font-medium leading-relaxed mb-8 p-5 bg-cyan-50 rounded-2xl border border-cyan-100">
             {post.excerpt}
           </p>
 
@@ -238,11 +238,11 @@ export default async function ArticolPage({
           </div>
 
           {post.magazin && (
-            <div className="mt-10 p-6 bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl text-white text-center">
+            <div className="mt-10 p-6 bg-gradient-to-r from-indigo-600 to-violet-600 rounded-2xl text-white text-center">
               <p className="font-black text-xl mb-2">Vezi toate promoțiile {numeAfisat(post.magazin)}</p>
-              <p className="text-orange-100 text-sm mb-4">Coduri verificate, actualizate zilnic</p>
+              <p className="text-cyan-100 text-sm mb-4">Coduri verificate, actualizate zilnic</p>
               <a href={`/cod-reducere/${post.magazin}`}
-                className="inline-block bg-white text-orange-600 font-bold px-6 py-2.5 rounded-xl text-sm hover:bg-orange-50 transition-colors">
+                className="inline-block bg-white text-indigo-300 font-bold px-6 py-2.5 rounded-xl text-sm hover:bg-cyan-50 transition-colors">
                 Deschide pagina →
               </a>
             </div>
@@ -250,11 +250,11 @@ export default async function ArticolPage({
 
           {/* Newsletter CTA */}
           <div className="mt-10 p-6 bg-slate-950 rounded-2xl text-center">
-            <p className="text-sm font-black text-orange-400 uppercase tracking-widest mb-2">Newsletter gratuit</p>
+            <p className="text-sm font-black text-indigo-400 uppercase tracking-widest mb-2">Newsletter gratuit</p>
             <h3 className="text-xl font-black text-white mb-2">Primeste coduri noi direct pe email</h3>
             <p className="text-slate-400 text-sm mb-5">600+ magazine monitorizate zilnic. Zero spam.</p>
             <Link href="/newsletter"
-              className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-400 text-white font-bold px-6 py-3 rounded-xl text-sm transition-colors">
+              className="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-6 py-3 rounded-xl text-sm transition-colors">
               Aboneaza-te gratuit &rarr;
             </Link>
           </div>
@@ -299,8 +299,8 @@ export default async function ArticolPage({
                     <Image src={p.cover} alt={p.title} fill className="object-cover group-hover:scale-105 transition-transform duration-300" sizes="300px" />
                   </div>
                   <div className="p-4">
-                    <span className="text-xs font-bold text-orange-500">{p.category}</span>
-                    <p className="text-sm font-bold text-white mt-1 line-clamp-2 group-hover:text-orange-500 transition-colors">{p.title}</p>
+                    <span className="text-xs font-bold text-indigo-400">{p.category}</span>
+                    <p className="text-sm font-bold text-white mt-1 line-clamp-2 group-hover:text-indigo-400 transition-colors">{p.title}</p>
                   </div>
                 </a>
               ))}
@@ -309,7 +309,7 @@ export default async function ArticolPage({
         )}
 
         <div className="max-w-3xl mx-auto px-4 pb-10 text-center">
-          <Link href="/blog" className="text-sm text-slate-500 hover:text-orange-500 transition-colors">← Înapoi la Blog</Link>
+          <Link href="/blog" className="text-sm text-slate-500 hover:text-indigo-400 transition-colors">← Înapoi la Blog</Link>
         </div>
       </div>
     </>

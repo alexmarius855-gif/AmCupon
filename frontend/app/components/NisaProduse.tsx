@@ -74,11 +74,30 @@ function getProduse(merchantSlugs: string[], catSlug: string, limit: number): Pr
   return combined;
 }
 
+// Clase Tailwind complete si statice — Tailwind nu poate detecta clase construite
+// dinamic prin interpolare (ex. `text-${culoareAccent}-600`), asa ca avem nevoie
+// de un lookup cu fiecare combinatie scrisa literal.
+const ACCENT_CLASSES: Record<string, { text: string; bg: string; border: string; groupHoverText: string }> = {
+  purple:  { text: "text-purple-600",  bg: "bg-purple-500",  border: "hover:border-purple-300",  groupHoverText: "group-hover:text-purple-600" },
+  green:   { text: "text-green-600",   bg: "bg-green-500",   border: "hover:border-green-300",   groupHoverText: "group-hover:text-green-600" },
+  blue:    { text: "text-blue-600",    bg: "bg-blue-500",    border: "hover:border-blue-300",    groupHoverText: "group-hover:text-blue-600" },
+  pink:    { text: "text-pink-600",    bg: "bg-pink-500",    border: "hover:border-pink-300",    groupHoverText: "group-hover:text-pink-600" },
+  emerald: { text: "text-emerald-600", bg: "bg-emerald-500", border: "hover:border-emerald-300", groupHoverText: "group-hover:text-emerald-600" },
+  yellow:  { text: "text-yellow-600",  bg: "bg-yellow-500",  border: "hover:border-yellow-300",  groupHoverText: "group-hover:text-yellow-600" },
+  indigo:  { text: "text-indigo-600",  bg: "bg-indigo-500",  border: "hover:border-indigo-300",  groupHoverText: "group-hover:text-indigo-600" },
+  amber:   { text: "text-amber-600",   bg: "bg-amber-500",   border: "hover:border-amber-300",   groupHoverText: "group-hover:text-amber-600" },
+  rose:    { text: "text-rose-600",    bg: "bg-rose-500",    border: "hover:border-rose-300",    groupHoverText: "group-hover:text-rose-600" },
+  gray:    { text: "text-gray-600",    bg: "bg-gray-500",    border: "hover:border-gray-300",    groupHoverText: "group-hover:text-gray-600" },
+  teal:    { text: "text-teal-600",    bg: "bg-teal-500",    border: "hover:border-teal-300",    groupHoverText: "group-hover:text-teal-600" },
+  violet:  { text: "text-violet-600",  bg: "bg-violet-500",  border: "hover:border-violet-300",  groupHoverText: "group-hover:text-violet-600" },
+  cyan:    { text: "text-cyan-600",    bg: "bg-cyan-500",    border: "hover:border-cyan-300",    groupHoverText: "group-hover:text-cyan-600" },
+};
+
 export default function NisaProduse({
   merchantSlugs,
   catSlug = "",
   titlu = "Produse populare",
-  culoareAccent = "orange",
+  culoareAccent = "indigo",
   limit = 12,
 }: {
   merchantSlugs: string[];
@@ -90,8 +109,9 @@ export default function NisaProduse({
   const produse = getProduse(merchantSlugs, catSlug, limit);
   if (produse.length === 0) return null;
 
-  const textAccent = `text-${culoareAccent}-600`;
-  const bgAccent   = `bg-${culoareAccent}-500`;
+  const accent     = ACCENT_CLASSES[culoareAccent] || ACCENT_CLASSES.indigo;
+  const textAccent = accent.text;
+  const bgAccent   = accent.bg;
 
   return (
     <section className="max-w-6xl mx-auto px-4 pb-12">
@@ -108,7 +128,7 @@ export default function NisaProduse({
               href={p.url}
               target="_blank"
               rel="sponsored noopener noreferrer"
-              className={`group bg-white border border-gray-200 hover:border-${culoareAccent}-300 rounded-2xl overflow-hidden transition-all hover:shadow-lg hover:-translate-y-0.5 duration-200 flex flex-col`}
+              className={`group bg-white border border-gray-200 ${accent.border} rounded-2xl overflow-hidden transition-all hover:shadow-lg hover:-translate-y-0.5 duration-200 flex flex-col`}
             >
               {/* Imagine */}
               <div className="relative bg-gray-50 aspect-square overflow-hidden">
@@ -134,7 +154,7 @@ export default function NisaProduse({
               {/* Info */}
               <div className="p-3 flex flex-col flex-1">
                 <p className="text-xs text-gray-400 mb-1 truncate">{p.brand || p.merchant}</p>
-                <p className={`text-sm font-semibold text-gray-900 line-clamp-2 flex-1 group-hover:${textAccent} transition-colors leading-snug`}>
+                <p className={`text-sm font-semibold text-gray-900 line-clamp-2 flex-1 ${accent.groupHoverText} transition-colors leading-snug`}>
                   {p.title}
                 </p>
                 <div className="flex items-center gap-2 mt-2">

@@ -33,7 +33,7 @@ const SUBCATEGORII = [
 ];
 
 function numeAfisat(s: string) { return s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" "); }
-const CULORI = ["bg-orange-500","bg-red-500","bg-yellow-500","bg-green-500","bg-blue-500","bg-purple-500"];
+const CULORI = ["bg-indigo-600","bg-red-500","bg-yellow-500","bg-green-500","bg-blue-500","bg-purple-500"];
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Reduceri Sport & Fitness 2026","url":"https://amcupon.ro/sport" };
 
 export default function SportPage() {
@@ -55,18 +55,18 @@ export default function SportPage() {
       <div className="min-h-screen bg-white">
         <nav className="bg-white border-b border-gray-100">
           <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-gray-400">
-            <Link href="/" className="hover:text-orange-500">Acasă</Link>
+            <Link href="/" className="hover:text-indigo-400">Acasă</Link>
             <span className="mx-1">/</span>
             <span className="text-gray-700 font-medium">Sport & Fitness</span>
           </div>
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-orange-500 via-red-500 to-yellow-500 text-white py-12 px-4">
+        <section className="bg-gradient-to-br from-indigo-500 via-violet-500 to-cyan-500 text-white py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">🏃</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Sport & Fitness cu Reducere {an}</h1>
-            <p className="text-orange-100 text-lg mb-6 max-w-xl mx-auto">
+            <p className="text-cyan-100 text-lg mb-6 max-w-xl mx-auto">
               Echipament sport, biciclete, sală fitness — coduri de reducere verificate zilnic
             </p>
             <div className="flex flex-wrap justify-center gap-2">
@@ -90,7 +90,7 @@ export default function SportPage() {
             <div className="text-center py-12">
               <p className="text-gray-500 mb-4">Momentan nu sunt magazine sport cu promoții active.</p>
               <Link href="/categorii/sports-outdoors"
-                className="inline-block bg-orange-500 text-white font-bold px-6 py-3 rounded-xl hover:bg-orange-600 transition-colors">
+                className="inline-block bg-indigo-600 text-white font-bold px-6 py-3 rounded-xl hover:bg-indigo-500 transition-colors">
                 Vezi echipament sport →
               </Link>
             </div>
@@ -102,7 +102,7 @@ export default function SportPage() {
                 const promo = m.promotii[0];
                 return (
                   <a key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                    className="group bg-white border border-gray-200 hover:border-orange-300 rounded-2xl p-4 transition-all hover:shadow-md">
+                    className="group bg-white border border-gray-200 hover:border-indigo-300 rounded-2xl p-4 transition-all hover:shadow-md">
                     <div className="flex items-center gap-3 mb-3">
                       {m.logo_url ? (
                         <div className="w-10 h-10 rounded-xl overflow-hidden bg-gray-50 border border-gray-100 shrink-0">
@@ -116,7 +116,7 @@ export default function SportPage() {
                       )}
                       <div>
                         <p className="font-bold text-gray-900 text-sm">{nume}</p>
-                        {m.are_promotie && m.cod_cupon && <span className="text-xs text-orange-500 font-bold">COD</span>}
+                        {m.are_promotie && m.cod_cupon && <span className="text-xs text-indigo-400 font-bold">COD</span>}
                         {m.are_promotie && !m.cod_cupon && <span className="text-xs text-green-500 font-medium">Ofertă</span>}
                       </div>
                     </div>
@@ -126,7 +126,7 @@ export default function SportPage() {
                       <p className="text-gray-400 text-xs italic">Verifică ofertele curente</p>
                     )}
                     <div className="flex justify-end mt-2">
-                      <span className="text-xs text-orange-500 font-semibold group-hover:text-orange-600">Vezi →</span>
+                      <span className="text-xs text-indigo-400 font-semibold group-hover:text-indigo-300">Vezi →</span>
                     </div>
                   </a>
                 );
@@ -139,7 +139,7 @@ export default function SportPage() {
           merchantSlugs={["decathlon.ro","sportisimo.ro","sport-vision.ro","intersport.ro","hervis.ro","gigasport.ro"]}
           catSlug="sport"
           titlu="Echipament sport popular cu reducere"
-          culoareAccent="orange"
+          culoareAccent="indigo"
           limit={12}
         />
 
@@ -181,7 +181,7 @@ export default function SportPage() {
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-gray-100 hover:bg-orange-50 hover:text-orange-600 text-gray-700 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-gray-200 hover:border-orange-200">
+                className="bg-gray-100 hover:bg-cyan-50 hover:text-indigo-300 text-gray-700 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-gray-200 hover:border-cyan-200">
                 {l.label}
               </a>
             ))}
@@ -190,9 +190,9 @@ export default function SportPage() {
 
         <footer className="border-t border-gray-200 py-6 text-center text-xs text-gray-400 mt-4">
           © {an} AmCupon.ro ·{" "}
-          <Link href="/moto" className="hover:text-orange-500">Auto-Moto</Link>{" · "}
-          <Link href="/gadgets" className="hover:text-orange-500">Gadgets</Link>{" · "}
-          <Link href="/categorii" className="hover:text-orange-500">Categorii</Link>
+          <Link href="/moto" className="hover:text-indigo-400">Auto-Moto</Link>{" · "}
+          <Link href="/gadgets" className="hover:text-indigo-400">Gadgets</Link>{" · "}
+          <Link href="/categorii" className="hover:text-indigo-400">Categorii</Link>
         </footer>
       </div>
     </>

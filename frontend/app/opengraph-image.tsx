@@ -19,11 +19,11 @@ export default function OGImage() {
           fontFamily: "sans-serif",
         }}
       >
-        {/* Decorative orange circle top-right */}
+        {/* Decorative indigo circle top-right */}
         <div style={{
           position: "absolute", top: -60, right: -60,
           width: 320, height: 320, borderRadius: "50%",
-          background: "#F97316", opacity: 0.08,
+          background: "#6366F1", opacity: 0.08,
           display: "flex",
         }} />
         {/* Decorative green circle bottom-left */}
@@ -37,13 +37,13 @@ export default function OGImage() {
         {/* Top: Logo */}
         <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 50 }}>
           <div style={{
-            background: "#F97316", color: "white",
+            background: "#4F46E5", color: "white",
             fontWeight: 900, fontSize: 28, padding: "8px 14px",
             borderRadius: 12,
             display: "flex",
           }}>Am</div>
           <span style={{ color: "white", fontWeight: 900, fontSize: 38 }}>Cupon</span>
-          <span style={{ color: "#F97316", fontWeight: 900, fontSize: 38 }}>.ro</span>
+          <span style={{ color: "#818CF8", fontWeight: 900, fontSize: 38 }}>.ro</span>
         </div>
 
         {/* Main text */}
@@ -51,7 +51,7 @@ export default function OGImage() {
           <div style={{ color: "white", fontSize: 64, fontWeight: 900, lineHeight: 1.1, marginBottom: 16 }}>
             Coduri de reducere
           </div>
-          <div style={{ color: "#FB923C", fontSize: 64, fontWeight: 900, lineHeight: 1.1, marginBottom: 28 }}>
+          <div style={{ color: "#22D3EE", fontSize: 64, fontWeight: 900, lineHeight: 1.1, marginBottom: 28 }}>
             verificate zilnic
           </div>
           <div style={{ color: "#94a3b8", fontSize: 26, marginBottom: 40 }}>
@@ -61,7 +61,7 @@ export default function OGImage() {
           {/* Stats pills */}
           <div style={{ display: "flex", gap: 16 }}>
             <div style={{
-              background: "rgba(249,115,22,0.15)", color: "#FB923C",
+              background: "rgba(99,102,241,0.15)", color: "#818CF8",
               borderRadius: 24, padding: "10px 24px",
               fontSize: 18, fontWeight: 700,
               display: "flex",

@@ -54,7 +54,7 @@ export default function GamingPage() {
         {/* Breadcrumb */}
         <nav className="bg-slate-900/80 backdrop-blur-sm border-b border-slate-800">
           <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-1.5 text-xs text-slate-500">
-            <Link href="/" className="hover:text-orange-400 transition-colors">Acasa</Link>
+            <Link href="/" className="hover:text-indigo-400 transition-colors">Acasa</Link>
             <span>/</span>
             <span className="text-slate-300 font-medium">Gaming</span>
           </div>
@@ -111,7 +111,7 @@ export default function GamingPage() {
         <section className="max-w-6xl mx-auto px-4 pb-12">
           <div className="flex items-center justify-between mb-6">
             <div>
-              <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-1">MAGAZINE PARTENERE</p>
+              <p className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-1">MAGAZINE PARTENERE</p>
               <h2 className="text-xl font-black text-white">Magazine gaming cu reduceri active</h2>
             </div>
           </div>
@@ -134,7 +134,7 @@ export default function GamingPage() {
                     )}
                     <div>
                       <p className="font-bold text-white text-sm group-hover:text-purple-300 transition-colors">{nume}</p>
-                      {m.are_promotie && m.cod_cupon && <span className="text-[10px] font-black text-orange-400 bg-orange-500/10 border border-orange-500/20 px-1.5 py-0.5 rounded-full">COD</span>}
+                      {m.are_promotie && m.cod_cupon && <span className="text-[10px] font-black text-indigo-400 bg-cyan-500/10 border border-cyan-500/20 px-1.5 py-0.5 rounded-full">COD</span>}
                       {m.are_promotie && !m.cod_cupon && <span className="text-[10px] font-medium text-emerald-400">Oferta activa</span>}
                     </div>
                   </div>
@@ -217,9 +217,9 @@ export default function GamingPage() {
 
         <footer className="border-t border-slate-800 py-6 text-center text-xs text-slate-600 mt-4">
           &copy; {an} AmCupon.ro &middot;{" "}
-          <Link href="/electronice" className="hover:text-orange-400 transition-colors">Electronice</Link>{" · "}
-          <Link href="/gadgets" className="hover:text-orange-400 transition-colors">Gadgets</Link>{" · "}
-          <Link href="/categorii" className="hover:text-orange-400 transition-colors">Categorii</Link>
+          <Link href="/electronice" className="hover:text-indigo-400 transition-colors">Electronice</Link>{" · "}
+          <Link href="/gadgets" className="hover:text-indigo-400 transition-colors">Gadgets</Link>{" · "}
+          <Link href="/categorii" className="hover:text-indigo-400 transition-colors">Categorii</Link>
         </footer>
       </div>
     </>

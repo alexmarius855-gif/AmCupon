@@ -74,7 +74,7 @@ export default function TopHubPage() {
         {/* BREADCRUMB */}
         <nav className="bg-white dark:bg-slate-800 border-b border-gray-100 dark:border-slate-700">
           <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-gray-400 flex-wrap">
-            <Link href="/" className="hover:text-orange-500 transition-colors">Acasa</Link>
+            <Link href="/" className="hover:text-indigo-400 transition-colors">Acasa</Link>
             <span className="mx-1 text-gray-300">/</span>
             <span className="text-gray-700 dark:text-slate-300 font-medium">Top Produse</span>
           </div>
@@ -83,13 +83,13 @@ export default function TopHubPage() {
         {/* HERO */}
         <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-14 px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 bg-orange-500/20 border border-orange-500/30 text-orange-300 text-xs font-bold px-4 py-1.5 rounded-full mb-5">
-              <span className="w-1.5 h-1.5 bg-orange-400 rounded-full animate-pulse"></span>
+            <div className="inline-flex items-center gap-2 bg-cyan-500/20 border border-cyan-500/30 text-indigo-300 text-xs font-bold px-4 py-1.5 rounded-full mb-5">
+              <span className="w-1.5 h-1.5 bg-indigo-500 rounded-full animate-pulse"></span>
               Actualizat {updated}
             </div>
             <h1 className="text-3xl md:text-5xl font-black mb-4 leading-tight">
               Top Produse<br />
-              <span className="text-orange-400">Recomandate {an}</span>
+              <span className="text-indigo-400">Recomandate {an}</span>
             </h1>
             <p className="text-slate-300 text-lg max-w-xl mx-auto mb-8">
               Review-uri detaliate, comparatii si ghiduri de cumparare pentru a alege intotdeauna produsul potrivit la cel mai bun pret.
@@ -141,7 +141,7 @@ export default function TopHubPage() {
                   </div>
 
                   {/* TITLE */}
-                  <h3 className="font-black text-gray-900 dark:text-white text-lg leading-tight mb-1 group-hover:text-orange-500 transition-colors">
+                  <h3 className="font-black text-gray-900 dark:text-white text-lg leading-tight mb-1 group-hover:text-indigo-400 transition-colors">
                     {cat.titlu_scurt}
                   </h3>
                   <p className="text-xs text-gray-500 dark:text-slate-400 leading-relaxed mb-4 flex-1">
@@ -183,7 +183,7 @@ export default function TopHubPage() {
             </p>
             <a
               href="/newsletter"
-              className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-400 text-white font-bold px-6 py-3 rounded-xl text-sm transition-colors"
+              className="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-6 py-3 rounded-xl text-sm transition-colors"
             >
               Aboneaza-te gratuit &rarr;
             </a>
@@ -205,7 +205,7 @@ export default function TopHubPage() {
               { href: "/", label: "🏠 Toate codurile" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-white dark:bg-slate-800 hover:bg-orange-50 dark:hover:bg-slate-700 hover:text-orange-600 text-gray-700 dark:text-slate-300 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-gray-200 dark:border-slate-600 hover:border-orange-200">
+                className="bg-white dark:bg-slate-800 hover:bg-cyan-50 dark:hover:bg-slate-700 hover:text-indigo-300 text-gray-700 dark:text-slate-300 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-gray-200 dark:border-slate-600 hover:border-cyan-200">
                 {l.label}
               </a>
             ))}
@@ -214,9 +214,9 @@ export default function TopHubPage() {
 
         <footer className="border-t border-gray-200 dark:border-slate-700 py-6 text-center text-xs text-gray-400">
           &copy; {an} AmCupon.ro &middot;{" "}
-          <Link href="/" className="hover:text-orange-500">Acasa</Link>
-          {" · "}<Link href="/blog" className="hover:text-orange-500">Blog</Link>
-          {" · "}<Link href="/gadgets" className="hover:text-orange-500">Gadgets</Link>
+          <Link href="/" className="hover:text-indigo-400">Acasa</Link>
+          {" · "}<Link href="/blog" className="hover:text-indigo-400">Blog</Link>
+          {" · "}<Link href="/gadgets" className="hover:text-indigo-400">Gadgets</Link>
         </footer>
       </div>
     </>

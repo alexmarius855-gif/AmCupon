@@ -62,7 +62,7 @@ async function sendWelcomeEmail(email: string, apiKey: string) {
 <body style="margin:0;padding:0;background:#f8fafc;font-family:Arial,sans-serif;">
   <div style="max-width:600px;margin:0 auto;background:#ffffff;border-radius:16px;overflow:hidden;margin-top:24px;margin-bottom:24px;box-shadow:0 4px 24px rgba(0,0,0,0.08);">
     <!-- Header -->
-    <div style="background:linear-gradient(135deg,#ea580c 0%,#f97316 100%);padding:40px 32px;text-align:center;">
+    <div style="background:linear-gradient(135deg,#4f46e5 0%,#6366f1 100%);padding:40px 32px;text-align:center;">
       <div style="display:inline-flex;align-items:center;gap:8px;margin-bottom:16px;">
         <span style="background:rgba(255,255,255,0.2);color:#fff;font-weight:900;font-size:16px;padding:4px 10px;border-radius:8px;">Am</span>
         <span style="color:#fff;font-weight:900;font-size:24px;">Cupon.ro</span>
@@ -78,7 +78,7 @@ async function sendWelcomeEmail(email: string, apiKey: string) {
       </p>
       <!-- CTA principal -->
       <div style="text-align:center;margin:32px 0;">
-        <a href="https://amcupon.ro/#promotii" style="background:#f97316;color:#fff;font-weight:900;font-size:16px;padding:16px 40px;border-radius:12px;text-decoration:none;display:inline-block;">
+        <a href="https://amcupon.ro/#promotii" style="background:#4f46e5;color:#fff;font-weight:900;font-size:16px;padding:16px 40px;border-radius:12px;text-decoration:none;display:inline-block;">
           Vezi ofertele active acum →
         </a>
       </div>
@@ -102,7 +102,7 @@ async function sendWelcomeEmail(email: string, apiKey: string) {
       <div style="margin-bottom:32px;">
         ${["emag.ro","fashiondays.ro","notino.ro","altex.ro","drmax.ro"].map(m => {
           const label = m.split(".")[0].charAt(0).toUpperCase() + m.split(".")[0].slice(1);
-          return `<a href="https://amcupon.ro/cod-reducere/${m}" style="display:inline-block;margin:4px;padding:6px 14px;background:#fff7ed;border:1px solid #fed7aa;border-radius:20px;text-decoration:none;color:#c2410c;font-size:13px;font-weight:700;">Cod ${label}</a>`;
+          return `<a href="https://amcupon.ro/cod-reducere/${m}" style="display:inline-block;margin:4px;padding:6px 14px;background:#eef2ff;border:1px solid #c7d2fe;border-radius:20px;text-decoration:none;color:#4338ca;font-size:13px;font-weight:700;">Cod ${label}</a>`;
         }).join("")}
       </div>
       <!-- Extensie -->

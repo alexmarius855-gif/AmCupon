@@ -77,7 +77,7 @@ const CATEGORII = [
         pret: "de la 3.99€/luna",
         comision: "~75$ per signup",
         badge: "Performanta top",
-        badgeColor: "bg-orange-600",
+        badgeColor: "bg-indigo-500",
         program: "siteground.com/affiliates",
         url: "https://siteground.com",
         // ACTUALIZARE: https://www.siteground.com/go/TU_ID_SITEGROUND
@@ -97,7 +97,7 @@ const CATEGORII = [
         pret: "de la 99$/luna",
         comision: "200$ per vanzare + 10$ per lead",
         badge: "Comision maxim",
-        badgeColor: "bg-orange-500",
+        badgeColor: "bg-indigo-600",
         program: "semrush.com/lp/inter-affiliate",
         url: "https://semrush.com",
         // ACTUALIZARE: link din programul Impact al Semrush
@@ -228,7 +228,7 @@ export default function RecomandariPage() {
           </nav>
           <div className="text-5xl mb-5">⭐</div>
           <h1 className="text-4xl md:text-5xl font-black text-white mb-4">
-            Servicii <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #fb923c, #fbbf24)" }}>Recomandate</span>
+            Servicii <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #8b5cf6, #22d3ee)" }}>Recomandate</span>
           </h1>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto mb-8">
             VPN, hosting, SEO tools, freelancing si travel — servicii testate si recomandate de echipa AmCupon.ro. Alege ce ti se potriveste.
@@ -258,7 +258,7 @@ export default function RecomandariPage() {
             </div>
             {cat.slug && (
               <Link href={cat.slug}
-                className="text-xs text-orange-400 hover:text-orange-300 border border-orange-500/30 hover:border-orange-400/50 px-3 py-1.5 rounded-lg transition-all shrink-0 ml-4">
+                className="text-xs text-indigo-400 hover:text-indigo-300 border border-cyan-500/30 hover:border-cyan-400/50 px-3 py-1.5 rounded-lg transition-all shrink-0 ml-4">
                 Ghid complet →
               </Link>
             )}
@@ -266,7 +266,7 @@ export default function RecomandariPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {cat.servicii.map((s, si) => (
-              <div key={si} className="bg-slate-900 border border-slate-800 hover:border-orange-500/30 rounded-2xl p-6 flex flex-col gap-4 transition-all group">
+              <div key={si} className="bg-slate-900 border border-slate-800 hover:border-cyan-500/30 rounded-2xl p-6 flex flex-col gap-4 transition-all group">
                 <div className="flex items-start justify-between gap-3">
                   <div>
                     <div className="flex items-center gap-2 mb-1">
@@ -276,7 +276,7 @@ export default function RecomandariPage() {
                     <p className="text-slate-400 text-sm">{s.tagline}</p>
                   </div>
                   <div className="text-right shrink-0">
-                    <div className="text-orange-400 font-black text-sm">{s.pret}</div>
+                    <div className="text-indigo-400 font-black text-sm">{s.pret}</div>
                     <div className="text-emerald-400 text-[10px] font-bold mt-0.5">{s.comision}</div>
                   </div>
                 </div>
@@ -292,7 +292,7 @@ export default function RecomandariPage() {
 
                 <div className="mt-auto flex flex-col gap-2">
                   <a href={s.url} target="_blank" rel="sponsored noopener noreferrer"
-                    className="bg-orange-500 hover:bg-orange-400 text-white font-black px-5 py-3 rounded-xl text-sm transition-all text-center shadow-lg shadow-orange-500/20 hover:-translate-y-0.5 duration-200">
+                    className="bg-indigo-600 hover:bg-indigo-500 text-white font-black px-5 py-3 rounded-xl text-sm transition-all text-center shadow-lg shadow-cyan-500/20 hover:-translate-y-0.5 duration-200">
                     Incearca {s.name} →
                   </a>
                   <p className="text-[10px] text-slate-600 text-center">Program afiliere: {s.program}</p>

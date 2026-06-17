@@ -90,9 +90,9 @@ function MagazinCard({ m, revealed, copiat, onCopiere }: {
     <div className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col overflow-hidden">
       <a href={`/cod-reducere/${m.magazin}`} className="flex flex-col items-center pt-5 pb-3 px-4 group relative">
         {m.exclusiv && (
-          <span className="absolute top-3 right-3 text-xs font-bold bg-orange-500 text-white px-2 py-0.5 rounded-full">Exclusiv</span>
+          <span className="absolute top-3 right-3 text-xs font-bold bg-indigo-600 text-white px-2 py-0.5 rounded-full">Exclusiv</span>
         )}
-        <div className="w-20 h-20 rounded-2xl overflow-hidden flex items-center justify-center mb-3 bg-white border border-gray-100 p-1 group-hover:border-orange-300 transition-colors">
+        <div className="w-20 h-20 rounded-2xl overflow-hidden flex items-center justify-center mb-3 bg-white border border-gray-100 p-1 group-hover:border-indigo-300 transition-colors">
           {m.logo_url && imgOk ? (
             <img src={m.logo_url} alt={numeMagazin} className="w-full h-full object-contain" loading="lazy" decoding="async" onError={() => setImgOk(false)} />
           ) : (
@@ -101,14 +101,14 @@ function MagazinCard({ m, revealed, copiat, onCopiere }: {
             </div>
           )}
         </div>
-        <h3 className="font-black text-gray-900 text-base text-center group-hover:text-orange-500 transition-colors">{numeMagazin}</h3>
+        <h3 className="font-black text-gray-900 text-base text-center group-hover:text-indigo-400 transition-colors">{numeMagazin}</h3>
       </a>
 
       <div className="px-4 pb-2 text-center min-h-[20px]">
         {promo && (
           <span className="text-xs font-bold text-teal-600 uppercase tracking-wide">
             {promo.cod_cupon ? "Cod Reducere" : "Ofertă Specială"}
-            {discount && <span className="ml-1 text-orange-500">{discount}</span>}
+            {discount && <span className="ml-1 text-indigo-400">{discount}</span>}
           </span>
         )}
       </div>
@@ -133,12 +133,12 @@ function MagazinCard({ m, revealed, copiat, onCopiere }: {
         {promo?.cod_cupon ? (
           revealed ? (
             <div className="space-y-2">
-              <div className="border-2 border-dashed border-orange-400 rounded-xl py-2 text-center bg-orange-50">
-                <span className="font-mono font-black text-orange-600 tracking-widest text-sm">{promo.cod_cupon}</span>
+              <div className="border-2 border-dashed border-indigo-400 rounded-xl py-2 text-center bg-cyan-50">
+                <span className="font-mono font-black text-indigo-300 tracking-widest text-sm">{promo.cod_cupon}</span>
                 {copiat && <p className="text-xs text-green-600 mt-0.5">✓ Copiat!</p>}
               </div>
               <a href={link} target="_blank" rel="sponsored noopener noreferrer"
-                className="flex items-center justify-center w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 rounded-xl text-sm transition-colors">
+                className="flex items-center justify-center w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-2.5 rounded-xl text-sm transition-colors">
                 Mergi la {numeMagazin} →
               </a>
             </div>
@@ -148,14 +148,14 @@ function MagazinCard({ m, revealed, copiat, onCopiere }: {
                 <span className="font-mono text-gray-400 text-sm">{maskCod(promo.cod_cupon)}</span>
               </div>
               <button onClick={() => onCopiere(m.magazin, promo.cod_cupon)}
-                className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 rounded-xl text-sm transition-colors">
+                className="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-2.5 rounded-xl text-sm transition-colors">
                 Copiază codul
               </button>
             </div>
           )
         ) : promo ? (
           <a href={link} target="_blank" rel="sponsored noopener noreferrer"
-            className="flex items-center justify-center w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 rounded-xl text-sm transition-colors">
+            className="flex items-center justify-center w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-2.5 rounded-xl text-sm transition-colors">
             Vezi oferta →
           </a>
         ) : (
@@ -195,7 +195,7 @@ export default function CategorieClient({ magazine, numeCategorie, slug }: {
       {/* BREADCRUMB */}
       <nav aria-label="Breadcrumb" className="bg-white border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-gray-400 flex-wrap">
-          <Link href="/" className="hover:text-orange-500 transition-colors flex items-center gap-1">
+          <Link href="/" className="hover:text-indigo-400 transition-colors flex items-center gap-1">
             <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
               <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
             </svg>
@@ -204,7 +204,7 @@ export default function CategorieClient({ magazine, numeCategorie, slug }: {
           <svg className="w-3 h-3 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
-          <Link href="/categorii" className="hover:text-orange-500 transition-colors">Categorii</Link>
+          <Link href="/categorii" className="hover:text-indigo-400 transition-colors">Categorii</Link>
           <svg className="w-3 h-3 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
@@ -213,16 +213,16 @@ export default function CategorieClient({ magazine, numeCategorie, slug }: {
       </nav>
 
       {/* HERO */}
-      <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white py-8 px-4">
+      <div className="bg-gradient-to-r from-indigo-600 to-violet-600 text-white py-8 px-4">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-2xl md:text-3xl font-black mb-1">
             Coduri reducere {numeCategorie} {an}
           </h1>
-          <p className="text-orange-100 text-sm">
+          <p className="text-cyan-100 text-sm">
             {cuPromotii.length} promoții active · {magazine.length} magazine · Actualizat zilnic
           </p>
           {descCateg && (
-            <p className="text-orange-100 text-sm mt-2 max-w-2xl opacity-90">{descCateg}</p>
+            <p className="text-cyan-100 text-sm mt-2 max-w-2xl opacity-90">{descCateg}</p>
           )}
         </div>
       </div>
@@ -293,10 +293,10 @@ export default function CategorieClient({ magazine, numeCategorie, slug }: {
         </section>
 
         <div className="mt-8 pt-6 border-t border-gray-100 flex items-center justify-between flex-wrap gap-3">
-          <Link href="/categorii" className="text-sm text-gray-400 hover:text-orange-500 transition-colors">
+          <Link href="/categorii" className="text-sm text-gray-400 hover:text-indigo-400 transition-colors">
             ← Toate categoriile
           </Link>
-          <Link href="/toate-magazinele" className="text-sm text-gray-400 hover:text-orange-500 transition-colors">
+          <Link href="/toate-magazinele" className="text-sm text-gray-400 hover:text-indigo-400 transition-colors">
             Toate magazinele →
           </Link>
         </div>

@@ -184,7 +184,7 @@ export default function ServiciiPage() {
                         </div>
                         <p className="text-slate-500 text-xs">{info.desc}</p>
                       </div>
-                      {mag.comision && <span className="text-orange-400 text-xs font-bold shrink-0">{mag.comision.replace(" sale commission", "").replace(" % sale commission", "%")}</span>}
+                      {mag.comision && <span className="text-indigo-400 text-xs font-bold shrink-0">{mag.comision.replace(" sale commission", "").replace(" % sale commission", "%")}</span>}
                     </div>
 
                     {descriere && (
@@ -194,7 +194,7 @@ export default function ServiciiPage() {
                     {cod && (
                       <div className="bg-slate-800 border border-dashed border-slate-600 rounded-lg px-3 py-2 text-center">
                         <p className="text-[10px] text-slate-500 mb-0.5">Cod reducere</p>
-                        <p className="font-mono font-black text-orange-400 text-sm tracking-wider">{cod}</p>
+                        <p className="font-mono font-black text-indigo-400 text-sm tracking-wider">{cod}</p>
                       </div>
                     )}
 
@@ -214,7 +214,7 @@ export default function ServiciiPage() {
 
               {/* Servicii internationale */}
               {itemsIntl.map(item => (
-                <div key={item.name} className="bg-slate-900 border border-slate-800 hover:border-orange-500/20 rounded-xl p-5 flex flex-col gap-3 transition-all">
+                <div key={item.name} className="bg-slate-900 border border-slate-800 hover:border-cyan-500/20 rounded-xl p-5 flex flex-col gap-3 transition-all">
                   <div className="flex items-start justify-between gap-2">
                     <div>
                       <div className="flex items-center gap-2 mb-0.5">
@@ -223,13 +223,13 @@ export default function ServiciiPage() {
                       </div>
                       <p className="text-slate-500 text-xs">{item.desc}</p>
                     </div>
-                    <span className="text-orange-400 text-xs font-bold shrink-0">{item.pret}</span>
+                    <span className="text-indigo-400 text-xs font-bold shrink-0">{item.pret}</span>
                   </div>
 
                   <p className="text-slate-400 text-xs">{item.comision}</p>
 
                   <a href={item.url} target="_blank" rel="sponsored noopener noreferrer"
-                    className="mt-auto bg-orange-500 hover:bg-orange-400 text-white text-xs font-bold py-2.5 rounded-lg text-center transition-all hover:-translate-y-0.5">
+                    className="mt-auto bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold py-2.5 rounded-lg text-center transition-all hover:-translate-y-0.5">
                     Incearca {item.name} →
                   </a>
                 </div>

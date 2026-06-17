@@ -71,7 +71,7 @@ export default function ExtensiePage() {
 
         <nav className="bg-white border-b border-gray-100">
           <div className="max-w-5xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-gray-400">
-            <Link href="/" className="hover:text-orange-500">Acasă</Link>
+            <Link href="/" className="hover:text-indigo-400">Acasă</Link>
             <span className="mx-1">/</span>
             <span className="text-gray-700 font-medium">Extensie Chrome</span>
           </div>
@@ -80,7 +80,7 @@ export default function ExtensiePage() {
         {/* HERO */}
         <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-16 px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 bg-orange-500/20 border border-orange-500/30 text-orange-400 text-xs font-bold px-4 py-1.5 rounded-full mb-6">
+            <div className="inline-flex items-center gap-2 bg-cyan-500/20 border border-cyan-500/30 text-indigo-400 text-xs font-bold px-4 py-1.5 rounded-full mb-6">
               🔌 Extensie Chrome — 100% Gratuită
             </div>
             <h1 className="text-3xl md:text-4xl font-black mb-4 leading-tight">
@@ -94,7 +94,7 @@ export default function ExtensiePage() {
               <a
                 href="https://chromewebstore.google.com/detail/mahfankpalkgognhnllkgdkjncmmkllb"
                 target="_blank" rel="noopener noreferrer"
-                className="flex items-center gap-3 bg-orange-500 hover:bg-orange-400 text-white font-black px-8 py-4 rounded-2xl text-base transition-colors shadow-lg shadow-orange-500/25"
+                className="flex items-center gap-3 bg-indigo-600 hover:bg-indigo-500 text-white font-black px-8 py-4 rounded-2xl text-base transition-colors shadow-lg shadow-cyan-500/25"
               >
                 <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/>
@@ -115,10 +115,10 @@ export default function ExtensiePage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {PASII.map((p) => (
               <div key={p.nr} className="text-center">
-                <div className="w-14 h-14 bg-orange-50 border-2 border-orange-100 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4">
+                <div className="w-14 h-14 bg-cyan-50 border-2 border-cyan-100 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4">
                   {p.icon}
                 </div>
-                <div className="text-xs font-black text-orange-500 mb-1">PAS {p.nr}</div>
+                <div className="text-xs font-black text-indigo-400 mb-1">PAS {p.nr}</div>
                 <h3 className="font-black text-gray-900 text-sm mb-2">{p.titlu}</h3>
                 <p className="text-xs text-gray-500 leading-relaxed">{p.desc}</p>
               </div>
@@ -159,36 +159,36 @@ export default function ExtensiePage() {
                 {m}
               </span>
             ))}
-            <span className="bg-orange-50 text-orange-600 text-sm font-bold px-4 py-2 rounded-full">
+            <span className="bg-cyan-50 text-indigo-300 text-sm font-bold px-4 py-2 rounded-full">
               + 580 altele
             </span>
           </div>
         </section>
 
         {/* CTA FINAL */}
-        <section className="bg-gradient-to-br from-orange-500 to-red-500 py-16 px-4">
+        <section className="bg-gradient-to-br from-indigo-600 to-violet-600 py-16 px-4">
           <div className="max-w-2xl mx-auto text-center text-white">
             <div className="text-5xl mb-4">🎟</div>
             <h2 className="text-2xl font-black mb-3">Începe să economisești azi</h2>
-            <p className="text-orange-100 mb-8 text-sm">
+            <p className="text-cyan-100 mb-8 text-sm">
               Instalezi în 10 secunde. Găsești coduri pe orice site. Economisești la fiecare comandă.
             </p>
             <a
               href="https://chromewebstore.google.com/detail/mahfankpalkgognhnllkgdkjncmmkllb"
               target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-white text-orange-600 font-black px-8 py-4 rounded-2xl text-base hover:bg-orange-50 transition-colors shadow-xl"
+              className="inline-flex items-center gap-2 bg-white text-indigo-300 font-black px-8 py-4 rounded-2xl text-base hover:bg-cyan-50 transition-colors shadow-xl"
             >
               Instalează Extensia Gratuit →
             </a>
-            <p className="text-orange-200 text-xs mt-4">Compatibil cu Chrome, Edge și Brave</p>
+            <p className="text-cyan-200 text-xs mt-4">Compatibil cu Chrome, Edge și Brave</p>
           </div>
         </section>
 
         <footer className="border-t border-gray-200 py-6 text-center text-xs text-gray-400">
           © {new Date().getFullYear()} AmCupon.ro ·{" "}
-          <Link href="/" className="hover:text-orange-500">Acasă</Link>{" · "}
-          <Link href="/toate-magazinele" className="hover:text-orange-500">Magazine</Link>{" · "}
-          <Link href="/categorii" className="hover:text-orange-500">Categorii</Link>
+          <Link href="/" className="hover:text-indigo-400">Acasă</Link>{" · "}
+          <Link href="/toate-magazinele" className="hover:text-indigo-400">Magazine</Link>{" · "}
+          <Link href="/categorii" className="hover:text-indigo-400">Categorii</Link>
         </footer>
       </div>
     </>

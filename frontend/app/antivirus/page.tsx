@@ -39,7 +39,7 @@ const COMPARATIV = [
 ];
 
 function numeAfisat(s: string) { return s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" "); }
-const CULORI_BADGE = ["bg-red-600","bg-yellow-500","bg-blue-600","bg-emerald-600","bg-purple-600","bg-orange-500","bg-teal-600"];
+const CULORI_BADGE = ["bg-red-600","bg-yellow-500","bg-blue-600","bg-emerald-600","bg-purple-600","bg-indigo-600","bg-teal-600"];
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Antivirus Ieftin Romania 2026","url":"https://amcupon.ro/antivirus","description":"Coduri reducere antivirus Romania — Bitdefender, Norton, ESET, Kaspersky" };
 
 export default function AntivirusPage() {
@@ -62,7 +62,7 @@ export default function AntivirusPage() {
         {/* Breadcrumb */}
         <nav className="bg-slate-900/80 backdrop-blur-sm border-b border-slate-800">
           <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-1.5 text-xs text-slate-500">
-            <Link href="/" className="hover:text-orange-400 transition-colors">Acasa</Link>
+            <Link href="/" className="hover:text-indigo-400 transition-colors">Acasa</Link>
             <span>/</span>
             <span className="text-slate-300 font-medium">Antivirus</span>
           </div>
@@ -81,7 +81,7 @@ export default function AntivirusPage() {
             </div>
             <div className="text-6xl mb-5 drop-shadow-2xl">🛡️</div>
             <h1 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">
-              Antivirus Ieftin Romania <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #f87171, #fb923c)"}}>{an}</span>
+              Antivirus Ieftin Romania <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #8b5cf6, #22d3ee)"}}>{an}</span>
             </h1>
             <p className="text-slate-300 text-lg mb-8 max-w-xl mx-auto leading-relaxed">
               Bitdefender, Norton, ESET, Kaspersky — protectie completa cu pana la 70% reducere fata de pretul de lista
@@ -107,7 +107,7 @@ export default function AntivirusPage() {
                 <h3 className="font-black text-white text-base mb-1">{c.brand}</h3>
                 <p className="text-xs text-slate-400 mb-3">{c.highlight}</p>
                 <div className="flex items-center justify-between">
-                  <span className="text-orange-400 font-black text-sm">{c.pret}</span>
+                  <span className="text-indigo-400 font-black text-sm">{c.pret}</span>
                   <span className="bg-emerald-500/15 border border-emerald-500/25 text-emerald-400 text-xs font-bold px-2 py-0.5 rounded-full">{c.nota}</span>
                 </div>
               </div>
@@ -118,7 +118,7 @@ export default function AntivirusPage() {
         {/* Tipuri protectie */}
         <section className="max-w-6xl mx-auto px-4 pb-12">
           <div className="text-center mb-8">
-            <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-2">FUNCTII</p>
+            <p className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-2">FUNCTII</p>
             <h2 className="text-2xl font-black text-white">Ce include un antivirus bun</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -139,7 +139,7 @@ export default function AntivirusPage() {
           <section className="max-w-6xl mx-auto px-4 pb-12">
             <div className="flex items-center justify-between mb-6">
               <div>
-                <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-1">MAGAZINE PARTENERE</p>
+                <p className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-1">MAGAZINE PARTENERE</p>
                 <h2 className="text-xl font-black text-white">Unde gasesti antivirus cu reducere</h2>
               </div>
             </div>
@@ -162,7 +162,7 @@ export default function AntivirusPage() {
                       )}
                       <div>
                         <p className="font-bold text-white text-sm group-hover:text-red-300 transition-colors">{nume}</p>
-                        {m.are_promotie && m.cod_cupon && <span className="text-[10px] font-black text-orange-400 bg-orange-500/10 border border-orange-500/20 px-1.5 py-0.5 rounded-full">COD</span>}
+                        {m.are_promotie && m.cod_cupon && <span className="text-[10px] font-black text-indigo-400 bg-cyan-500/10 border border-cyan-500/20 px-1.5 py-0.5 rounded-full">COD</span>}
                         {m.are_promotie && !m.cod_cupon && <span className="text-[10px] font-medium text-emerald-400">Oferta activa</span>}
                       </div>
                     </div>
@@ -234,9 +234,9 @@ export default function AntivirusPage() {
 
         <footer className="border-t border-slate-800 py-6 text-center text-xs text-slate-600">
           &copy; {an} AmCupon.ro &middot;{" "}
-          <Link href="/vpn" className="hover:text-orange-400 transition-colors">VPN</Link>{" · "}
-          <Link href="/hosting" className="hover:text-orange-400 transition-colors">Hosting</Link>{" · "}
-          <Link href="/categorii" className="hover:text-orange-400 transition-colors">Categorii</Link>
+          <Link href="/vpn" className="hover:text-indigo-400 transition-colors">VPN</Link>{" · "}
+          <Link href="/hosting" className="hover:text-indigo-400 transition-colors">Hosting</Link>{" · "}
+          <Link href="/categorii" className="hover:text-indigo-400 transition-colors">Categorii</Link>
         </footer>
       </div>
     </>

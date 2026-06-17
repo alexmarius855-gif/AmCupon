@@ -44,7 +44,7 @@ export default function ContactPage() {
 
         {/* Breadcrumb */}
         <nav className="max-w-5xl mx-auto px-4 pt-4 pb-0 text-xs text-gray-400 flex items-center gap-1">
-          <Link href="/" className="hover:text-orange-500 transition-colors">Acasă</Link>
+          <Link href="/" className="hover:text-indigo-400 transition-colors">Acasă</Link>
           <span className="mx-1">/</span>
           <span className="text-gray-600">Contact</span>
         </nav>
@@ -65,7 +65,7 @@ export default function ContactPage() {
                 titlu: "Email direct",
                 detalii: "contact@amcupon.ro",
                 href: "mailto:contact@amcupon.ro",
-                culoare: "orange",
+                culoare: "indigo",
               },
               {
                 icon: "⏱️",
@@ -91,7 +91,7 @@ export default function ContactPage() {
                 {card.href ? (
                   <a
                     href={card.href}
-                    className="text-orange-500 hover:text-orange-600 font-medium text-sm underline underline-offset-2"
+                    className="text-indigo-400 hover:text-indigo-300 font-medium text-sm underline underline-offset-2"
                   >
                     {card.detalii}
                   </a>
@@ -108,7 +108,7 @@ export default function ContactPage() {
 
             {/* Info box */}
             <div className="space-y-4">
-              <div className="bg-orange-50 border border-orange-100 rounded-2xl p-6">
+              <div className="bg-cyan-50 border border-cyan-100 rounded-2xl p-6">
                 <h3 className="font-bold text-gray-900 mb-3 flex items-center gap-2">
                   <span>💡</span> Cum te putem ajuta?
                 </h3>
@@ -122,7 +122,7 @@ export default function ContactPage() {
                     "Solicitare retragere date (GDPR)",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-2">
-                      <span className="text-orange-400 mt-0.5 shrink-0">✓</span>
+                      <span className="text-indigo-400 mt-0.5 shrink-0">✓</span>
                       {item}
                     </li>
                   ))}
@@ -144,11 +144,11 @@ export default function ContactPage() {
         <footer className="border-t border-gray-200 mt-12 py-6 text-center text-sm text-gray-400">
           <p>
             © {new Date().getFullYear()} AmCupon.ro ·{" "}
-            <Link href="/confidentialitate" className="hover:text-orange-500">Confidențialitate</Link>
+            <Link href="/confidentialitate" className="hover:text-indigo-400">Confidențialitate</Link>
             {" · "}
-            <Link href="/termeni" className="hover:text-orange-500">Termeni</Link>
+            <Link href="/termeni" className="hover:text-indigo-400">Termeni</Link>
             {" · "}
-            <Link href="/" className="hover:text-orange-500">Toate reducerile</Link>
+            <Link href="/" className="hover:text-indigo-400">Toate reducerile</Link>
           </p>
         </footer>
       </div>

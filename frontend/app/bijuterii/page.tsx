@@ -75,7 +75,7 @@ export default function BijuteriiPage() {
         {/* Breadcrumb */}
         <nav className="bg-white border-b border-gray-100">
           <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-gray-400">
-            <Link href="/" className="hover:text-orange-500">Acasa</Link>
+            <Link href="/" className="hover:text-indigo-400">Acasa</Link>
             <span className="mx-1">/</span>
             <span className="text-gray-700 font-medium">Bijuterii & Accesorii</span>
           </div>
@@ -149,7 +149,7 @@ export default function BijuteriiPage() {
                       )}
                       <div>
                         <p className="font-bold text-gray-900 text-sm">{nume}</p>
-                        {m.are_promotie && m.cod_cupon && <span className="text-xs text-orange-500 font-bold">COD</span>}
+                        {m.are_promotie && m.cod_cupon && <span className="text-xs text-indigo-400 font-bold">COD</span>}
                         {m.are_promotie && !m.cod_cupon && <span className="text-xs text-rose-500 font-medium">Oferta</span>}
                       </div>
                     </div>
@@ -170,7 +170,7 @@ export default function BijuteriiPage() {
               <p className="text-4xl mb-3">💍</p>
               <p className="font-bold text-gray-700 mb-2">Magazine actualizate zilnic</p>
               <p className="text-gray-400 text-sm mb-4">Revino curand pentru promotii la bijuterii.</p>
-              <Link href="/toate-magazinele" className="text-orange-500 font-bold hover:text-orange-600 text-sm">Toate magazinele &rarr;</Link>
+              <Link href="/toate-magazinele" className="text-indigo-400 font-bold hover:text-indigo-300 text-sm">Toate magazinele &rarr;</Link>
             </div>
           )}
         </section>
@@ -223,7 +223,7 @@ export default function BijuteriiPage() {
               { href: "/categorii",  label: "📂 Toate Categoriile" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-gray-100 hover:bg-orange-50 hover:text-orange-600 text-gray-700 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-gray-200 hover:border-orange-200">
+                className="bg-gray-100 hover:bg-cyan-50 hover:text-indigo-300 text-gray-700 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-gray-200 hover:border-cyan-200">
                 {l.label}
               </a>
             ))}
@@ -232,9 +232,9 @@ export default function BijuteriiPage() {
 
         <footer className="border-t border-gray-200 py-6 text-center text-xs text-gray-400 mt-4">
           &copy; {an} AmCupon.ro &middot;{" "}
-          <Link href="/fashion" className="hover:text-orange-500">Fashion</Link>{" · "}
-          <Link href="/frumusete" className="hover:text-orange-500">Frumusete</Link>{" · "}
-          <Link href="/categorii" className="hover:text-orange-500">Categorii</Link>
+          <Link href="/fashion" className="hover:text-indigo-400">Fashion</Link>{" · "}
+          <Link href="/frumusete" className="hover:text-indigo-400">Frumusete</Link>{" · "}
+          <Link href="/categorii" className="hover:text-indigo-400">Categorii</Link>
         </footer>
       </div>
     </>

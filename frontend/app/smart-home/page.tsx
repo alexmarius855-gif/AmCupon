@@ -32,7 +32,7 @@ const CATEGORII_SMART = [
 ];
 
 function numeAfisat(s: string) { return s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" "); }
-const CULORI_BADGE = ["bg-amber-600","bg-orange-600","bg-yellow-600","bg-teal-600","bg-green-600","bg-lime-600"];
+const CULORI_BADGE = ["bg-amber-600","bg-indigo-500","bg-yellow-600","bg-teal-600","bg-green-600","bg-lime-600"];
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Smart Home Romania 2026","url":"https://amcupon.ro/smart-home","description":"Oferte smart home Romania 2026 — becuri, prize, camere, termostate inteligente" };
 
 export default function SmartHomePage() {
@@ -55,17 +55,17 @@ export default function SmartHomePage() {
         {/* Breadcrumb */}
         <nav className="bg-slate-900/80 backdrop-blur-sm border-b border-slate-800">
           <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-1.5 text-xs text-slate-500">
-            <Link href="/" className="hover:text-orange-400 transition-colors">Acasa</Link>
+            <Link href="/" className="hover:text-indigo-400 transition-colors">Acasa</Link>
             <span>/</span>
             <span className="text-slate-300 font-medium">Smart Home</span>
           </div>
         </nav>
 
         {/* Hero */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-amber-950 via-slate-900 to-orange-950 py-16 px-4">
+        <section className="relative overflow-hidden bg-gradient-to-br from-indigo-950 via-slate-900 to-violet-950 py-16 px-4">
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute top-0 left-1/3 w-80 h-80 bg-amber-600/20 rounded-full blur-3xl" />
-            <div className="absolute bottom-0 right-1/3 w-64 h-64 bg-orange-600/15 rounded-full blur-3xl" />
+            <div className="absolute bottom-0 right-1/3 w-64 h-64 bg-cyan-600/15 rounded-full blur-3xl" />
           </div>
           <div className="relative max-w-6xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-amber-500/20 border border-amber-500/30 text-amber-300 text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
@@ -74,7 +74,7 @@ export default function SmartHomePage() {
             </div>
             <div className="text-6xl mb-5 drop-shadow-2xl">🏠</div>
             <h1 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">
-              Smart Home Romania <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #fbbf24, #fb923c)"}}>{an}</span>
+              Smart Home Romania <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #8b5cf6, #22d3ee)"}}>{an}</span>
             </h1>
             <p className="text-slate-300 text-lg mb-8 max-w-xl mx-auto leading-relaxed">
               Becuri inteligente, prize smart, camere WiFi — transforma-ti casa cu coduri reducere verificate zilnic
@@ -110,7 +110,7 @@ export default function SmartHomePage() {
         <section className="max-w-6xl mx-auto px-4 pb-12">
           <div className="flex items-center justify-between mb-6">
             <div>
-              <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-1">MAGAZINE PARTENERE</p>
+              <p className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-1">MAGAZINE PARTENERE</p>
               <h2 className="text-xl font-black text-white">Magazine smart home cu reduceri active</h2>
             </div>
           </div>
@@ -133,7 +133,7 @@ export default function SmartHomePage() {
                     )}
                     <div>
                       <p className="font-bold text-white text-sm group-hover:text-amber-300 transition-colors">{nume}</p>
-                      {m.are_promotie && m.cod_cupon && <span className="text-[10px] font-black text-orange-400 bg-orange-500/10 border border-orange-500/20 px-1.5 py-0.5 rounded-full">COD</span>}
+                      {m.are_promotie && m.cod_cupon && <span className="text-[10px] font-black text-indigo-400 bg-cyan-500/10 border border-cyan-500/20 px-1.5 py-0.5 rounded-full">COD</span>}
                       {m.are_promotie && !m.cod_cupon && <span className="text-[10px] font-medium text-emerald-400">Oferta activa</span>}
                     </div>
                   </div>
@@ -216,9 +216,9 @@ export default function SmartHomePage() {
 
         <footer className="border-t border-slate-800 py-6 text-center text-xs text-slate-600">
           &copy; {an} AmCupon.ro &middot;{" "}
-          <Link href="/electronice" className="hover:text-orange-400 transition-colors">Electronice</Link>{" · "}
-          <Link href="/casa" className="hover:text-orange-400 transition-colors">Casa & Gradina</Link>{" · "}
-          <Link href="/categorii" className="hover:text-orange-400 transition-colors">Categorii</Link>
+          <Link href="/electronice" className="hover:text-indigo-400 transition-colors">Electronice</Link>{" · "}
+          <Link href="/casa" className="hover:text-indigo-400 transition-colors">Casa & Gradina</Link>{" · "}
+          <Link href="/categorii" className="hover:text-indigo-400 transition-colors">Categorii</Link>
         </footer>
       </div>
     </>

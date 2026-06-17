@@ -57,7 +57,7 @@ const AI_TOOLS = [
     name: "InVideo AI",
     tagline: "Video AI din text — cel mai usor de promovat in Romania",
     badge: "ROI maxim",
-    badgeColor: "bg-orange-600",
+    badgeColor: "bg-indigo-500",
     emoji: "🎬",
     comision: "50%",
     comision_tip: "prima luna / 25% recurent",
@@ -76,14 +76,14 @@ const AI_TOOLS = [
     cons: ["Structura comision dual (50% + 25%)", "Necesita cont PayPal pentru plati"],
     ideal: "Creatori de continut, YouTube, social media",
     cat: "Video AI",
-    catColor: "#f97316",
+    catColor: "#6366f1",
   },
   {
     rank: 3,
     name: "HubSpot",
     tagline: "CRM + Marketing AI — comision mare pe produse premium",
     badge: "Valoare mare per vanzare",
-    badgeColor: "bg-orange-500",
+    badgeColor: "bg-indigo-600",
     emoji: "🏆",
     comision: "30%",
     comision_tip: "recurent 12 luni",
@@ -183,7 +183,7 @@ const AI_TOOLS = [
     cons: ["Piata mai specializata (B2B)", "Necesita content demonstrativ pentru conversie"],
     ideal: "Bloguri eLearning, HR tech, corporate training",
     cat: "Video AI",
-    catColor: "#f97316",
+    catColor: "#6366f1",
   },
   {
     rank: 7,
@@ -336,7 +336,7 @@ const AI_TOOLS = [
     cons: ["Cookie 30 zile", "Concurenta cu InVideo si Canva"],
     ideal: "YouTuberi, TikTok creators, bloggeri cu podcast",
     cat: "Video AI",
-    catColor: "#f97316",
+    catColor: "#6366f1",
   },
   {
     rank: 13,
@@ -361,7 +361,7 @@ const AI_TOOLS = [
     cons: ["Comision 15% — mai mic", "Cookie 30 zile"],
     ideal: "Podcasteri, YouTuberi, video editors",
     cat: "Video AI",
-    catColor: "#f97316",
+    catColor: "#6366f1",
   },
   {
     rank: 14,
@@ -417,7 +417,7 @@ const AI_TOOLS = [
 
 const CAT_COLORS: Record<string, string> = {
   "Copywriting AI": "#8b5cf6",
-  "Video AI": "#f97316",
+  "Video AI": "#6366f1",
   "CRM & Marketing": "#f59e0b",
   "SEO Tools": "#10b981",
   "Voice AI": "#eab308",
@@ -630,7 +630,7 @@ export default function AiToolsPage() {
               step: "02",
               titlu: "Creeaza continut comparativ",
               desc: "Articolele 'X vs Y' si 'Cel mai bun tool pentru Z' au intentia de cumparare cea mai mare. Un singur articol bun = sute de conversii pe an.",
-              color: "#f97316",
+              color: "#6366f1",
             },
             {
               step: "03",

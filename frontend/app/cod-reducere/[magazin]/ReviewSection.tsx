@@ -114,7 +114,7 @@ export default function ReviewSection({ magazin }: { magazin: string }) {
             <div key={r.id} className="bg-gray-50 border border-gray-100 rounded-2xl p-4">
               <div className="flex items-start justify-between gap-2 mb-2">
                 <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-full bg-orange-100 flex items-center justify-center text-sm font-black text-orange-600">
+                  <div className="w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-sm font-black text-indigo-300">
                     {r.nume.charAt(0).toUpperCase()}
                   </div>
                   <div>
@@ -133,14 +133,14 @@ export default function ReviewSection({ magazin }: { magazin: string }) {
       )}
 
       {/* Formular */}
-      <div className="bg-orange-50 border border-orange-100 rounded-2xl p-5">
+      <div className="bg-cyan-50 border border-cyan-100 rounded-2xl p-5">
         <h3 className="font-black text-gray-900 text-sm mb-4">Lasa o recenzie</h3>
         {trimis ? (
           <div className="text-center py-4">
             <div className="text-3xl mb-2">&#9989;</div>
             <p className="font-bold text-gray-900 text-sm">Multumim pentru recenzie!</p>
             <p className="text-xs text-gray-500 mt-1">Va aparea dupa aprobare (de obicei in 24h).</p>
-            <button onClick={() => setTrimis(false)} className="mt-3 text-xs text-orange-500 hover:underline">
+            <button onClick={() => setTrimis(false)} className="mt-3 text-xs text-indigo-400 hover:underline">
               Adauga alta recenzie
             </button>
           </div>
@@ -157,7 +157,7 @@ export default function ReviewSection({ magazin }: { magazin: string }) {
                 value={nume}
                 onChange={e => setNume(e.target.value)}
                 maxLength={50}
-                className="w-full border border-gray-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400 bg-white"
+                className="w-full border border-gray-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white"
               />
             </div>
             <div>
@@ -168,7 +168,7 @@ export default function ReviewSection({ magazin }: { magazin: string }) {
                 rows={3}
                 maxLength={500}
                 required
-                className="w-full border border-gray-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400 bg-white resize-none"
+                className="w-full border border-gray-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white resize-none"
               />
               <p className="text-[10px] text-gray-400 text-right mt-0.5">{text.length}/500</p>
             </div>
@@ -176,7 +176,7 @@ export default function ReviewSection({ magazin }: { magazin: string }) {
             <button
               type="submit"
               disabled={submitting}
-              className="w-full bg-orange-500 hover:bg-orange-600 disabled:bg-orange-300 text-white font-bold py-2.5 rounded-xl text-sm transition-colors"
+              className="w-full bg-indigo-600 hover:bg-indigo-500 disabled:bg-indigo-300 text-white font-bold py-2.5 rounded-xl text-sm transition-colors"
             >
               {submitting ? "Se trimite..." : "Trimite recenzia"}
             </button>

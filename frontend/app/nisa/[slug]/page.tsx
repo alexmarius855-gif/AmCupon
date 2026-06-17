@@ -171,7 +171,7 @@ export default async function NisaPage(
               {magazineFiltrate.map((m: any) => (
                 <a key={m.magazin} href={m.url_afiliat || m.url}
                   target="_blank" rel="sponsored noopener noreferrer"
-                  className="bg-white border border-slate-200 hover:border-orange-300 rounded-xl p-3 flex items-center gap-3 hover:shadow-md transition-all">
+                  className="bg-white border border-slate-200 hover:border-indigo-300 rounded-xl p-3 flex items-center gap-3 hover:shadow-md transition-all">
                   {m.logo && (
                     // eslint-disable-next-line @next/next/no-img-element
                     <img src={m.logo} alt={m.magazin_display || m.magazin}
@@ -200,7 +200,7 @@ export default async function NisaPage(
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
               {produseFiltrate.map((p: any, i: number) => (
                 <a key={i} href={p.url} target="_blank" rel="sponsored noopener noreferrer"
-                  className="group bg-white border border-slate-200 hover:border-orange-300 rounded-2xl overflow-hidden hover:shadow-lg transition-all flex flex-col">
+                  className="group bg-white border border-slate-200 hover:border-indigo-300 rounded-2xl overflow-hidden hover:shadow-lg transition-all flex flex-col">
                   <div className="aspect-square bg-slate-50 flex items-center justify-center overflow-hidden relative">
                     {p.image ? (
                       // eslint-disable-next-line @next/next/no-img-element
@@ -218,7 +218,7 @@ export default async function NisaPage(
                   <div className="p-3 flex flex-col flex-1">
                     <p className="text-[10px] text-slate-400 truncate">{p.brand || p.category}</p>
                     <p className="text-xs font-semibold text-slate-800 line-clamp-2 flex-1 leading-snug">{p.title}</p>
-                    <p className="font-black text-orange-600 text-sm mt-2">
+                    <p className="font-black text-indigo-300 text-sm mt-2">
                       {p.price > 0 ? `${p.price.toFixed(2)} lei` : "Vezi pretul"}
                     </p>
                   </div>
@@ -231,7 +231,7 @@ export default async function NisaPage(
             <p className="text-4xl mb-3">{nisa.emoji}</p>
             <p className="font-bold text-slate-700 mb-2">Produsele se actualizeaza zilnic</p>
             <p className="text-slate-400 text-sm">Revino maine pentru oferte noi in aceasta categorie.</p>
-            <Link href="/produse" className="mt-4 inline-block text-orange-500 font-bold hover:text-orange-600">
+            <Link href="/produse" className="mt-4 inline-block text-indigo-400 font-bold hover:text-indigo-300">
               Vezi toate produsele &rarr;
             </Link>
           </div>

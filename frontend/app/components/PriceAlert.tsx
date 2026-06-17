@@ -43,7 +43,7 @@ export default function PriceAlert({ magazin, numeMagazin }: Props) {
     return (
       <button
         onClick={() => setOpen(true)}
-        className="flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-orange-500 border border-slate-200 hover:border-orange-300 bg-white hover:bg-orange-50 px-4 py-2.5 rounded-xl transition-all"
+        className="flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-indigo-400 border border-slate-200 hover:border-indigo-300 bg-white hover:bg-cyan-50 px-4 py-2.5 rounded-xl transition-all"
       >
         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
@@ -54,7 +54,7 @@ export default function PriceAlert({ magazin, numeMagazin }: Props) {
   }
 
   return (
-    <div className="bg-orange-50 border border-orange-200 rounded-2xl p-4">
+    <div className="bg-cyan-50 border border-cyan-200 rounded-2xl p-4">
       <div className="flex items-start justify-between mb-3">
         <div>
           <p className="font-black text-slate-900 text-sm">🔔 Alertă {numeMagazin}</p>
@@ -81,10 +81,10 @@ export default function PriceAlert({ magazin, numeMagazin }: Props) {
             onChange={e => { setEmail(e.target.value); setStatus("idle"); setErrMsg(""); }}
             placeholder="email@tau.ro"
             required
-            className="flex-1 border border-orange-200 focus:border-orange-400 bg-white rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-orange-300/30"
+            className="flex-1 border border-cyan-200 focus:border-indigo-400 bg-white rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300/30"
           />
           <button type="submit" disabled={status === "loading"}
-            className="bg-orange-500 hover:bg-orange-600 disabled:opacity-60 text-white font-bold px-4 py-2 rounded-xl text-sm transition-colors whitespace-nowrap">
+            className="bg-indigo-600 hover:bg-indigo-500 disabled:opacity-60 text-white font-bold px-4 py-2 rounded-xl text-sm transition-colors whitespace-nowrap">
             {status === "loading" ? "..." : "Abonare"}
           </button>
         </form>

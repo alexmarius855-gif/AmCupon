@@ -27,7 +27,7 @@ const TOOLS_SEO = [
     nota: "9.8/10",
     pret: "de la 99$/luna",
     highlight: "All-in-one SEO suite",
-    culoare: "bg-orange-500",
+    culoare: "bg-indigo-600",
     desc: "Cea mai completa platforma SEO: research cuvinte cheie, audit site, analiza backlink-uri, monitorizare pozitii, analiza concurenta. Over 55+ instrumente intr-un singur abonament.",
     features: ["Keyword Research", "Site Audit", "Backlink Analysis", "Rank Tracking", "Competitor Analysis", "Content Marketing"],
   },
@@ -102,9 +102,9 @@ export default function InstrumenteSeoPage() {
         {/* Breadcrumb */}
         <nav className="bg-slate-900/80 backdrop-blur-sm border-b border-slate-800">
           <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-1.5 text-xs text-slate-500">
-            <Link href="/" className="hover:text-orange-400 transition-colors">Acasa</Link>
+            <Link href="/" className="hover:text-indigo-400 transition-colors">Acasa</Link>
             <span>/</span>
-            <Link href="/servicii" className="hover:text-orange-400 transition-colors">Servicii</Link>
+            <Link href="/servicii" className="hover:text-indigo-400 transition-colors">Servicii</Link>
             <span>/</span>
             <span className="text-slate-300 font-medium">Instrumente SEO</span>
           </div>
@@ -163,10 +163,10 @@ export default function InstrumenteSeoPage() {
                         ))}
                       </div>
                       <div className="flex flex-wrap items-center gap-3">
-                        <span className="text-orange-400 font-black text-base">{t.pret}</span>
+                        <span className="text-indigo-400 font-black text-base">{t.pret}</span>
                         {mag ? (
                           <a href={`/cod-reducere/${t.slug}`}
-                            className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-400 text-white text-sm font-bold px-4 py-2 rounded-xl transition-colors shadow-lg shadow-orange-500/20">
+                            className="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-bold px-4 py-2 rounded-xl transition-colors shadow-lg shadow-cyan-500/20">
                             {mag.are_promotie ? (mag.cod_cupon ? "Cod reducere activ" : "Oferta activa") : "Vezi oferta"}
                             <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/></svg>
                           </a>
@@ -178,8 +178,8 @@ export default function InstrumenteSeoPage() {
                           </a>
                         )}
                         {promo?.cod_cupon && (
-                          <div className="border border-dashed border-orange-400/50 rounded-xl px-3 py-1.5 bg-orange-500/8">
-                            <span className="font-mono font-black text-orange-400 text-sm tracking-widest">{promo.cod_cupon}</span>
+                          <div className="border border-dashed border-cyan-400/50 rounded-xl px-3 py-1.5 bg-cyan-500/8">
+                            <span className="font-mono font-black text-indigo-400 text-sm tracking-widest">{promo.cod_cupon}</span>
                           </div>
                         )}
                       </div>
@@ -219,14 +219,14 @@ export default function InstrumenteSeoPage() {
         {/* Ghid */}
         <section className="max-w-6xl mx-auto px-4 py-12">
           <div className="text-center mb-8">
-            <p className="text-xs font-bold text-orange-400 uppercase tracking-widest mb-2">GHID ALEGERE</p>
+            <p className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-2">GHID ALEGERE</p>
             <h2 className="text-2xl font-black text-white">Cum alegi tool-ul SEO potrivit</h2>
           </div>
           <div className="space-y-4">
             {GHID_SEO.map((g, i) => (
               <div key={i} className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
                 <h3 className="font-bold text-white text-base mb-3 flex items-center gap-2">
-                  <span className="w-6 h-6 bg-orange-500/20 border border-orange-500/30 rounded-full flex items-center justify-center text-orange-400 text-xs font-black">{i+1}</span>
+                  <span className="w-6 h-6 bg-cyan-500/20 border border-cyan-500/30 rounded-full flex items-center justify-center text-indigo-400 text-xs font-black">{i+1}</span>
                   {g.titlu}
                 </h3>
                 <p className="text-sm text-slate-400 leading-relaxed">{g.continut}</p>
@@ -270,9 +270,9 @@ export default function InstrumenteSeoPage() {
 
         <footer className="border-t border-slate-800 py-6 text-center text-xs text-slate-600">
           &copy; {an} AmCupon.ro &middot;{" "}
-          <Link href="/hosting" className="hover:text-orange-400 transition-colors">Hosting</Link>{" · "}
-          <Link href="/vpn" className="hover:text-orange-400 transition-colors">VPN</Link>{" · "}
-          <Link href="/categorii" className="hover:text-orange-400 transition-colors">Categorii</Link>
+          <Link href="/hosting" className="hover:text-indigo-400 transition-colors">Hosting</Link>{" · "}
+          <Link href="/vpn" className="hover:text-indigo-400 transition-colors">VPN</Link>{" · "}
+          <Link href="/categorii" className="hover:text-indigo-400 transition-colors">Categorii</Link>
         </footer>
       </div>
     </>

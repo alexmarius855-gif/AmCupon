@@ -23,7 +23,7 @@ const MOTO_SLUGS = ["autonom.ro", "autodoc.ro", "kfzteile24.ro", "americanexpres
 const CAT_MOTO = ["automotive", "auto", "moto", "car"];
 
 function numeAfisat(s: string) { return s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" "); }
-const CULORI = ["bg-slate-600","bg-gray-700","bg-zinc-600","bg-stone-600","bg-neutral-600","bg-blue-700","bg-red-700","bg-orange-600"];
+const CULORI = ["bg-slate-600","bg-gray-700","bg-zinc-600","bg-stone-600","bg-neutral-600","bg-blue-700","bg-red-700","bg-indigo-500"];
 
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Coduri Reducere Auto-Moto 2026","url":"https://amcupon.ro/moto" };
 
@@ -54,7 +54,7 @@ export default function MotoPage() {
 
         <nav className="bg-white border-b border-gray-100">
           <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-gray-400">
-            <Link href="/" className="hover:text-orange-500">Acasă</Link>
+            <Link href="/" className="hover:text-indigo-400">Acasă</Link>
             <span className="mx-1 text-gray-300">/</span>
             <span className="text-gray-700 font-medium">Auto-Moto</span>
           </div>
@@ -111,7 +111,7 @@ export default function MotoPage() {
               <h2 className="text-xl font-black text-gray-900 mb-2">Magazine auto disponibile</h2>
               <p className="text-gray-500 mb-6">Verificăm zilnic ofertele de la partenerii auto. Încearcă categoria principală.</p>
               <Link href="/categorii/automotive"
-                className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-bold px-6 py-3 rounded-xl transition-colors">
+                className="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-6 py-3 rounded-xl transition-colors">
                 Magazine Auto-Moto →
               </Link>
             </div>
@@ -129,7 +129,7 @@ export default function MotoPage() {
                       const promo = m.promotii[0];
                       return (
                         <a key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                          className="group bg-white border border-gray-200 hover:border-orange-300 rounded-2xl p-5 transition-all hover:shadow-md">
+                          className="group bg-white border border-gray-200 hover:border-indigo-300 rounded-2xl p-5 transition-all hover:shadow-md">
                           <div className="flex items-center gap-3 mb-3">
                             {m.logo_url ? (
                               <div className="w-10 h-10 rounded-xl overflow-hidden bg-gray-50 shrink-0">
@@ -143,13 +143,13 @@ export default function MotoPage() {
                             )}
                             <div>
                               <p className="font-bold text-gray-900 text-sm">{nume}</p>
-                              {m.cod_cupon && <span className="text-xs text-orange-500 font-bold">COD REDUCERE</span>}
+                              {m.cod_cupon && <span className="text-xs text-indigo-400 font-bold">COD REDUCERE</span>}
                             </div>
                           </div>
                           {promo && <p className="text-gray-500 text-xs line-clamp-2 mb-2">{promo.nume}</p>}
                           <div className="flex justify-between items-center">
                             <span className="text-xs text-gray-400">{m.promotii.length} oferte</span>
-                            <span className="text-xs text-orange-500 font-semibold group-hover:text-orange-600">Vezi →</span>
+                            <span className="text-xs text-indigo-400 font-semibold group-hover:text-indigo-300">Vezi →</span>
                           </div>
                         </a>
                       );
@@ -166,7 +166,7 @@ export default function MotoPage() {
                     const culoare = CULORI[i % CULORI.length];
                     return (
                       <a key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                        className="flex items-center gap-3 bg-white border border-gray-200 hover:border-orange-300 rounded-xl p-3 transition-all group">
+                        className="flex items-center gap-3 bg-white border border-gray-200 hover:border-indigo-300 rounded-xl p-3 transition-all group">
                         {m.logo_url ? (
                           <div className="w-8 h-8 rounded-lg overflow-hidden bg-gray-50 shrink-0">
                             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -177,7 +177,7 @@ export default function MotoPage() {
                             {nume[0]}
                           </div>
                         )}
-                        <span className="text-sm font-semibold text-gray-700 group-hover:text-orange-500 transition-colors truncate">{nume}</span>
+                        <span className="text-sm font-semibold text-gray-700 group-hover:text-indigo-400 transition-colors truncate">{nume}</span>
                       </a>
                     );
                   })}
@@ -193,8 +193,8 @@ export default function MotoPage() {
               <div className="grid sm:grid-cols-2 gap-3">
                 {ARTICOLE_MOTO.map(a => (
                   <a key={a.href} href={a.href}
-                    className="flex items-center gap-2 bg-white rounded-xl px-4 py-3 text-sm font-semibold text-gray-700 hover:text-orange-500 border border-gray-200 hover:border-orange-300 transition-all">
-                    <span className="text-orange-400">→</span>{a.title}
+                    className="flex items-center gap-2 bg-white rounded-xl px-4 py-3 text-sm font-semibold text-gray-700 hover:text-indigo-400 border border-gray-200 hover:border-indigo-300 transition-all">
+                    <span className="text-indigo-400">→</span>{a.title}
                   </a>
                 ))}
               </div>
@@ -217,7 +217,7 @@ export default function MotoPage() {
           merchantSlugs={["autonom.ro","autodoc.ro","kfzteile24.ro"]}
           catSlug="auto"
           titlu="Accesorii auto cu reducere"
-          culoareAccent="orange"
+          culoareAccent="indigo"
           limit={12}
         />
 
@@ -233,7 +233,7 @@ export default function MotoPage() {
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-gray-100 hover:bg-orange-50 hover:text-orange-600 text-gray-700 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-gray-200 hover:border-orange-200">
+                className="bg-gray-100 hover:bg-cyan-50 hover:text-indigo-300 text-gray-700 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-gray-200 hover:border-cyan-200">
                 {l.label}
               </a>
             ))}
@@ -241,9 +241,9 @@ export default function MotoPage() {
         </section>
 
         <footer className="border-t border-gray-200 py-6 text-center text-xs text-gray-400 mt-4">
-          © {an} AmCupon.ro · <Link href="/" className="hover:text-orange-500">Acasă</Link>
-          {" · "}<Link href="/gadgets" className="hover:text-orange-500">Gadgets</Link>
-          {" · "}<Link href="/idei-cadouri" className="hover:text-orange-500">Idei Cadouri</Link>
+          © {an} AmCupon.ro · <Link href="/" className="hover:text-indigo-400">Acasă</Link>
+          {" · "}<Link href="/gadgets" className="hover:text-indigo-400">Gadgets</Link>
+          {" · "}<Link href="/idei-cadouri" className="hover:text-indigo-400">Idei Cadouri</Link>
         </footer>
       </div>
     </>

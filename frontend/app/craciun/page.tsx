@@ -87,7 +87,7 @@ function numeAfisat(magazin: string): string {
 
 const CULORI = [
   "bg-red-500", "bg-green-600", "bg-red-600", "bg-green-500",
-  "bg-orange-500", "bg-teal-600", "bg-pink-500", "bg-indigo-500",
+  "bg-indigo-600", "bg-teal-600", "bg-pink-500", "bg-indigo-500",
 ];
 
 const craciunJsonLd = {
@@ -135,7 +135,7 @@ export default function CraciunPage() {
 
         {/* Breadcrumb */}
         <nav className="max-w-6xl mx-auto px-4 pt-4 pb-0 text-xs text-gray-400 flex items-center gap-1">
-          <Link href="/" className="hover:text-orange-500 transition-colors">Acasă</Link>
+          <Link href="/" className="hover:text-indigo-400 transition-colors">Acasă</Link>
           <span className="mx-1">/</span>
           <span className="text-gray-600">Reduceri de Crăciun {an}</span>
         </nav>
@@ -226,7 +226,7 @@ export default function CraciunPage() {
                     <div className="min-w-0">
                       <p className="font-bold text-gray-900 text-sm truncate">{nume}</p>
                       {coduri.length > 0 && (
-                        <span className="text-xs font-bold text-orange-500">
+                        <span className="text-xs font-bold text-indigo-400">
                           {coduri.length} cod{coduri.length > 1 ? "uri" : ""}
                         </span>
                       )}
@@ -292,11 +292,11 @@ export default function CraciunPage() {
 
         <footer className="border-t border-gray-200 py-6 text-center text-xs text-gray-400">
           © {an} AmCupon.ro ·{" "}
-          <Link href="/" className="hover:text-orange-500">Toate reducerile</Link>
+          <Link href="/" className="hover:text-indigo-400">Toate reducerile</Link>
           {" · "}
-          <Link href="/black-friday" className="hover:text-orange-500">Black Friday</Link>
+          <Link href="/black-friday" className="hover:text-indigo-400">Black Friday</Link>
           {" · "}
-          <Link href="/contact" className="hover:text-orange-500">Contact</Link>
+          <Link href="/contact" className="hover:text-indigo-400">Contact</Link>
         </footer>
       </div>
     </>

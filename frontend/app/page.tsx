@@ -37,15 +37,15 @@ interface Magazin {
 }
 
 const CATEGORII = [
-  { slug: "fashion",               emoji: "👗", label: "Fashion",         desc: "Haine, pantofi & accesorii",    from: "#ec4899", to: "#f97316" },
+  { slug: "fashion",               emoji: "👗", label: "Fashion",         desc: "Haine, pantofi & accesorii",    from: "#ec4899", to: "#6366f1" },
   { slug: "electronics-itc",       emoji: "💻", label: "Electronice",     desc: "Laptopuri, telefoane, gadgeturi", from: "#3b82f6", to: "#6366f1" },
   { slug: "beauty",                emoji: "💄", label: "Frumusete",       desc: "Cosmetice, parfumuri, unghii",   from: "#f43f5e", to: "#a855f7" },
   { slug: "home-garden",           emoji: "🏡", label: "Casa & Gradina",  desc: "Mobila, deco, unelte",          from: "#10b981", to: "#3b82f6" },
-  { slug: "sports-outdoors",       emoji: "🏃", label: "Sport & Outdoor", desc: "Echipament sportiv & fitness",  from: "#f97316", to: "#eab308" },
-  { slug: "pharma",                emoji: "💊", label: "Farmacie",        desc: "Medicamente, suplimente",       from: "#ef4444", to: "#f97316" },
+  { slug: "sports-outdoors",       emoji: "🏃", label: "Sport & Outdoor", desc: "Echipament sportiv & fitness",  from: "#6366f1", to: "#06b6d4" },
+  { slug: "pharma",                emoji: "💊", label: "Farmacie",        desc: "Medicamente, suplimente",       from: "#ef4444", to: "#8b5cf6" },
   { slug: "babies-kids-toys",      emoji: "👶", label: "Copii & Jucarii", desc: "Produse pentru cei mici",       from: "#a855f7", to: "#ec4899" },
   { slug: "automotive",            emoji: "🚗", label: "Auto-Moto",       desc: "Piese & accesorii auto",        from: "#475569", to: "#0f172a" },
-  { slug: "books",                 emoji: "📚", label: "Carti & Edu",     desc: "Carti, e-books, cursuri",       from: "#eab308", to: "#f97316" },
+  { slug: "books",                 emoji: "📚", label: "Carti & Edu",     desc: "Carti, e-books, cursuri",       from: "#06b6d4", to: "#6366f1" },
   { slug: "hypermarket-groceries", emoji: "🛒", label: "Hypermarket",     desc: "Alimente & produse zilnice",    from: "#10b981", to: "#059669" },
   { slug: "gifts-flowers",         emoji: "🎁", label: "Cadouri & Flori", desc: "Cadouri pentru orice ocazie",   from: "#f43f5e", to: "#ec4899" },
   { slug: "telecom",               emoji: "📱", label: "Telecom",         desc: "Abonamente & servicii mobile",  from: "#06b6d4", to: "#3b82f6" },
@@ -62,17 +62,17 @@ const SECTIUNI_SPECIALE = [
   { href: "/telefoane",    emoji: "📲", label: "Telefoane",        desc: "Samsung, iPhone, Xiaomi reducere", gradient: "from-teal-600 to-cyan-700" },
   { href: "/gaming",       emoji: "🎮", label: "Gaming PC",        desc: "Placi video, laptop gaming, RTX",  gradient: "from-purple-700 to-indigo-800" },
   { href: "/antivirus",    emoji: "🛡️", label: "Antivirus",        desc: "Bitdefender, Norton, ESET -70%",   gradient: "from-red-700 to-rose-800" },
-  { href: "/smart-home",   emoji: "🏠", label: "Smart Home",       desc: "Becuri, prize, camere WiFi",       gradient: "from-amber-600 to-orange-700" },
+  { href: "/smart-home",   emoji: "🏠", label: "Smart Home",       desc: "Becuri, prize, camere WiFi",       gradient: "from-indigo-600 to-violet-700" },
   { href: "/fashion",      emoji: "👗", label: "Fashion & Haine",  desc: "FashionDays, Answear, H&M",        gradient: "from-purple-500 to-fuchsia-600" },
   { href: "/casa",         emoji: "🏡", label: "Casa & Gradina",   desc: "Dedeman, IKEA, Leroy Merlin",      gradient: "from-green-600 to-teal-600" },
   { href: "/moto",         emoji: "🏍️", label: "Auto-Moto",        desc: "Piese, accesorii, anvelope",        gradient: "from-slate-600 to-gray-800" },
   { href: "/idei-cadouri", emoji: "🎁", label: "Idei Cadouri",     desc: "Cadoul perfect la pret mic",        gradient: "from-pink-500 to-purple-600" },
   { href: "/farmacie",     emoji: "💊", label: "Farmacie Online",  desc: "Dr. Max, Vegis, Catena",            gradient: "from-green-500 to-teal-600" },
-  { href: "/sport",        emoji: "🏃", label: "Sport & Outdoor",  desc: "Decathlon, Hervis, Intersport",     gradient: "from-orange-500 to-amber-600" },
-  { href: "/copii",        emoji: "👶", label: "Copii & Jucarii",  desc: "Noriel, Bebetei, Smyths",           gradient: "from-yellow-400 to-orange-500" },
+  { href: "/sport",        emoji: "🏃", label: "Sport & Outdoor",  desc: "Decathlon, Hervis, Intersport",     gradient: "from-indigo-500 to-violet-600" },
+  { href: "/copii",        emoji: "👶", label: "Copii & Jucarii",  desc: "Noriel, Bebetei, Smyths",           gradient: "from-cyan-400 to-indigo-500" },
   { href: "/frumusete",    emoji: "💄", label: "Beauty",           desc: "Notino, Douglas, Sephora",          gradient: "from-pink-400 to-rose-600" },
   { href: "/sanatate",     emoji: "🌿", label: "Sanatate",         desc: "Vitamine, naturiste, suplimente",   gradient: "from-green-500 to-teal-600" },
-  { href: "/animale",      emoji: "🐾", label: "Animale",          desc: "Petmart, Petmax, hrana animale",    gradient: "from-amber-500 to-orange-600" },
+  { href: "/animale",      emoji: "🐾", label: "Animale",          desc: "Petmart, Petmax, hrana animale",    gradient: "from-violet-500 to-indigo-600" },
   { href: "/bijuterii",    emoji: "💍", label: "Bijuterii",        desc: "Teilor, Pandora, Glamira",          gradient: "from-rose-500 to-pink-600" },
   { href: "/jocuri",       emoji: "🎮", label: "Jocuri & Gaming",  desc: "Console, jocuri, accesorii PC",     gradient: "from-violet-600 to-indigo-700" },
   { href: "/supermarket",  emoji: "🛒", label: "Supermarket",      desc: "Carrefour, Bringo, Freshful",       gradient: "from-blue-500 to-cyan-600" },
@@ -80,27 +80,27 @@ const SECTIUNI_SPECIALE = [
   { href: "/servicii",     emoji: "⚙️", label: "Servicii Online",  desc: "Software, hosting, cursuri, VPN",   gradient: "from-emerald-600 to-teal-700" },
   { href: "/vpn",          emoji: "🔒", label: "VPN & Securitate", desc: "NordVPN, Surfshark, ExpressVPN",    gradient: "from-blue-700 to-indigo-800" },
   { href: "/hosting",      emoji: "🌐", label: "Hosting Web",      desc: "Hostinger, SiteGround, Cloudways",  gradient: "from-violet-600 to-purple-700" },
-  { href: "/temu",         emoji: "🛍️", label: "Temu",             desc: "Milioane produse la preturi mici",  gradient: "from-orange-500 to-red-500" },
+  { href: "/temu",         emoji: "🛍️", label: "Temu",             desc: "Milioane produse la preturi mici",  gradient: "from-indigo-600 to-red-500" },
   { href: "/shein",        emoji: "👗", label: "SHEIN",            desc: "Fashion global, mii noutati zilnic", gradient: "from-gray-700 to-gray-900" },
-  { href: "/trendyol",     emoji: "🧡", label: "Trendyol",         desc: "Marketplace turcesc in Romania",    gradient: "from-orange-400 to-amber-500" },
+  { href: "/trendyol",     emoji: "🧡", label: "Trendyol",         desc: "Marketplace turcesc in Romania",    gradient: "from-blue-400 to-indigo-500" },
   { href: "/black-friday", emoji: "🖤", label: "Black Friday",     desc: "Cele mai mari reduceri",            gradient: "from-gray-900 to-black" },
   { href: "/craciun",      emoji: "🎄", label: "Craciun",          desc: "Oferte de sarbatori",               gradient: "from-red-600 to-green-700" },
-  { href: "/categorii",    emoji: "📂", label: "Toate categoriile",desc: "Exploreaza tot",                    gradient: "from-orange-500 to-red-500" },
+  { href: "/categorii",    emoji: "📂", label: "Toate categoriile",desc: "Exploreaza tot",                    gradient: "from-indigo-600 to-violet-600" },
 ];
 
 const CATEGORII_INTL = [
   { href: "/gaming",          emoji: "🎮", label: "PC Gaming",         desc: "Laptop gaming, placi video RTX",     from: "#7c3aed", to: "#4338ca", badge: "" },
   { href: "/laptop",          emoji: "💻", label: "Laptop Ieftin",     desc: "Gaming, business, student",          from: "#1d4ed8", to: "#4338ca", badge: "" },
   { href: "/telefoane",       emoji: "📲", label: "Telefoane",         desc: "Samsung, iPhone, Xiaomi reducere",   from: "#0d9488", to: "#0284c7", badge: "" },
-  { href: "/smart-home",      emoji: "🏠", label: "Casa Smart",        desc: "Becuri, camere, termostate WiFi",    from: "#d97706", to: "#ea580c", badge: "" },
+  { href: "/smart-home",      emoji: "🏠", label: "Casa Smart",        desc: "Becuri, camere, termostate WiFi",    from: "#4f46e5", to: "#7c3aed", badge: "" },
   { href: "/antivirus",       emoji: "🛡️", label: "Antivirus",         desc: "Bitdefender, Norton, ESET -70%",     from: "#dc2626", to: "#9f1239", badge: "" },
   { href: "/instrumente-seo", emoji: "📊", label: "Instrumente SEO",   desc: "Semrush, Ahrefs, Moz Pro",           from: "#059669", to: "#0d9488", badge: "NEW" },
   { href: "/trading",         emoji: "📈", label: "Trading & Invest",  desc: "XTB, Binance, eToro — 0% comision",  from: "#065f46", to: "#1e40af", badge: "NEW" },
   { href: "/vpn",             emoji: "🔒", label: "VPN & Privacy",     desc: "NordVPN, Surfshark, ExpressVPN",     from: "#1e40af", to: "#3730a3", badge: "" },
   { href: "/hosting",         emoji: "🌐", label: "Hosting Web",       desc: "Hostinger, SiteGround, Cloudways",   from: "#6d28d9", to: "#4338ca", badge: "" },
-  { href: "/temu",            emoji: "🛍️", label: "Import Asia",       desc: "Temu — milioane produse ieftine",    from: "#f97316", to: "#dc2626", badge: "HOT" },
+  { href: "/temu",            emoji: "🛍️", label: "Import Asia",       desc: "Temu — milioane produse ieftine",    from: "#4f46e5", to: "#dc2626", badge: "HOT" },
   { href: "/shein",           emoji: "✨", label: "Moda Fast Fashion",  desc: "SHEIN — fashion global la pret mic", from: "#db2777", to: "#9d174d", badge: "" },
-  { href: "/trendyol",        emoji: "🧡", label: "Marketplace Est",   desc: "Trendyol — piata internationala",    from: "#ea580c", to: "#d97706", badge: "" },
+  { href: "/trendyol",        emoji: "🧡", label: "Marketplace Est",   desc: "Trendyol — piata internationala",    from: "#0891b2", to: "#4f46e5", badge: "" },
   { href: "/ai-tools",        emoji: "🤖", label: "AI Tools",          desc: "ChatGPT, Claude, Midjourney",        from: "#0ea5e9", to: "#4f46e5", badge: "AI" },
   { href: "/carduri-bancare", emoji: "💳", label: "Conturi Bancare",   desc: "Revolut, Wise, N26 — cont gratuit",  from: "#6d28d9", to: "#0f766e", badge: "NEW" },
   { href: "/cursuri-online",  emoji: "🎓", label: "Cursuri Online",    desc: "Udemy, Coursera, Skillshare",        from: "#4338ca", to: "#7c3aed", badge: "" },
@@ -354,11 +354,11 @@ export default function Home() {
       <a
         href="/produse"
         aria-label="Vezi produsele cu reducere"
-        className={`fixed bottom-5 left-1/2 -translate-x-1/2 z-40 flex items-center gap-2.5 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white font-black pl-4 pr-5 py-3 rounded-full shadow-2xl shadow-orange-500/50 ring-2 ring-orange-300/40 transition-all duration-300 hover:scale-105 ${showFab ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 translate-y-6 pointer-events-none"}`}
+        className={`fixed bottom-5 left-1/2 -translate-x-1/2 z-40 flex items-center gap-2.5 bg-gradient-to-r from-indigo-600 to-indigo-700 hover:from-indigo-500 hover:to-indigo-600 text-white font-black pl-4 pr-5 py-3 rounded-full shadow-2xl shadow-cyan-500/50 ring-2 ring-indigo-300/40 transition-all duration-300 hover:scale-105 ${showFab ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 translate-y-6 pointer-events-none"}`}
       >
         <span className="relative flex items-center justify-center w-8 h-8 rounded-full bg-white/20 text-lg">
           🛍️
-          <span className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full ring-2 ring-orange-500 animate-pulse" />
+          <span className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full ring-2 ring-indigo-500 animate-pulse" />
         </span>
         <span className="text-sm leading-tight text-left">Produse cu<br/>reducere</span>
         <span className="bg-white/25 text-[10px] font-black px-2 py-0.5 rounded-full tracking-wide">HOT</span>
@@ -371,8 +371,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 h-[60px] flex items-center gap-3">
 
           <Link href="/" className="flex items-center gap-1.5 shrink-0">
-            <div className="bg-orange-500 text-white font-black text-sm px-2 py-0.5 rounded-lg tracking-tighter">Am</div>
-            <span className="font-black text-white text-xl tracking-tight">Cupon<span className="text-orange-500">.ro</span></span>
+            <div className="bg-indigo-600 text-white font-black text-sm px-2 py-0.5 rounded-lg tracking-tighter">Am</div>
+            <span className="font-black text-white text-xl tracking-tight">Cupon<span className="text-indigo-400">.ro</span></span>
           </Link>
 
           <div className="flex-1 relative max-w-2xl hidden sm:block">
@@ -381,18 +381,18 @@ export default function Home() {
             </svg>
             <input type="text" placeholder="Answear, eMAG, Notino..." value={cautare}
               onChange={e => { setCautare(e.target.value); setMenuOpen(false); }}
-              className="w-full bg-slate-800 border border-slate-700 text-white placeholder-slate-500 rounded-full pl-9 pr-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-orange-400 transition-all" />
+              className="w-full bg-slate-800 border border-slate-700 text-white placeholder-slate-500 rounded-full pl-9 pr-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:border-indigo-400 transition-all" />
           </div>
 
           <nav className="hidden md:flex items-center gap-5 text-sm font-semibold text-slate-300 ml-auto">
-            <Link href="/oferte-azi" className="flex items-center gap-1 text-orange-500 hover:text-orange-600 transition-colors font-bold">
-              <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse" />
+            <Link href="/oferte-azi" className="flex items-center gap-1 text-indigo-400 hover:text-indigo-300 transition-colors font-bold">
+              <span className="w-1.5 h-1.5 rounded-full bg-indigo-600 animate-pulse" />
               Oferte azi
             </Link>
-            <Link href="/produse"  className="hover:text-orange-500 transition-colors">Produse</Link>
-            <Link href="/blog"     className="hover:text-orange-500 transition-colors">Blog</Link>
+            <Link href="/produse"  className="hover:text-indigo-400 transition-colors">Produse</Link>
+            <Link href="/blog"     className="hover:text-indigo-400 transition-colors">Blog</Link>
             <div className="relative group">
-              <button className="flex items-center gap-1 hover:text-orange-500 transition-colors py-1">
+              <button className="flex items-center gap-1 hover:text-indigo-400 transition-colors py-1">
                 Categorii
                 <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7"/>
@@ -402,16 +402,16 @@ export default function Home() {
                 <div className="bg-slate-900 border border-slate-700 rounded-2xl shadow-xl py-2">
                   {categoriiSortate.slice(0, 8).map(c => (
                     <a key={c.slug} href={`/categorii/${c.slug}`}
-                      className="flex items-center gap-3 px-4 py-2 text-sm text-slate-300 hover:bg-orange-500/15 hover:text-orange-400 transition-colors">
+                      className="flex items-center gap-3 px-4 py-2 text-sm text-slate-300 hover:bg-cyan-500/15 hover:text-indigo-400 transition-colors">
                       <span className="text-base">{c.emoji}</span>
                       <span className="font-medium">{c.label}</span>
                       {promoPerCateg[c.slug] > 0 && (
-                        <span className="ml-auto text-[10px] font-bold bg-orange-100 text-orange-600 px-1.5 py-0.5 rounded-full">{promoPerCateg[c.slug]}</span>
+                        <span className="ml-auto text-[10px] font-bold bg-cyan-100 text-indigo-300 px-1.5 py-0.5 rounded-full">{promoPerCateg[c.slug]}</span>
                       )}
                     </a>
                   ))}
                   <div className="border-t border-slate-800 mt-1 pt-1">
-                    <Link href="/categorii" className="flex items-center px-4 py-2 text-sm font-bold text-orange-500 hover:bg-orange-500/15 transition-colors">
+                    <Link href="/categorii" className="flex items-center px-4 py-2 text-sm font-bold text-indigo-400 hover:bg-cyan-500/15 transition-colors">
                       Toate categoriile →
                     </Link>
                   </div>
@@ -443,7 +443,7 @@ export default function Home() {
                 </svg>
                 <input type="text" placeholder="Cauta magazin..." value={cautare}
                   onChange={e => setCautare(e.target.value)}
-                  className="w-full bg-slate-800 border border-slate-700 text-white placeholder-slate-500 rounded-full pl-9 pr-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400" />
+                  className="w-full bg-slate-800 border border-slate-700 text-white placeholder-slate-500 rounded-full pl-9 pr-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400" />
               </div>
               <nav className="space-y-1">
                 {[
@@ -463,7 +463,7 @@ export default function Home() {
                   { href: "/categorii",  label: "Toate categoriile" },
                 ].map(l => (
                   <a key={l.href} href={l.href} onClick={() => setMenuOpen(false)}
-                    className="flex items-center px-3 py-2.5 rounded-xl text-sm font-semibold text-slate-200 hover:bg-slate-800 hover:text-orange-500 transition-colors">
+                    className="flex items-center px-3 py-2.5 rounded-xl text-sm font-semibold text-slate-200 hover:bg-slate-800 hover:text-indigo-400 transition-colors">
                     {l.label}
                   </a>
                 ))}
@@ -473,7 +473,7 @@ export default function Home() {
                 <div className="grid grid-cols-4 gap-2">
                   {categoriiSortate.slice(0, 8).map(c => (
                     <a key={c.slug} href={`/categorii/${c.slug}`} onClick={() => setMenuOpen(false)}
-                      className="flex flex-col items-center gap-1 p-2 rounded-xl border border-slate-700 bg-slate-800 hover:border-orange-500 transition-colors">
+                      className="flex flex-col items-center gap-1 p-2 rounded-xl border border-slate-700 bg-slate-800 hover:border-indigo-500 transition-colors">
                       <span className="text-xl">{c.emoji}</span>
                       <span className="text-[10px] font-semibold text-slate-300 text-center leading-tight">{c.label}</span>
                     </a>
@@ -520,7 +520,7 @@ export default function Home() {
           {/* H1 */}
           <h1 className="text-[2.75rem] md:text-[4.5rem] font-black tracking-tight leading-[1.05] mb-6">
             <span className="text-white">Cele mai bune coduri</span><br/>
-            <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #fb923c 0%, #fbbf24 100%)"}}>
+            <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #8b5cf6 0%, #22d3ee 100%)"}}>
               de reducere din Romania
             </span>
           </h1>
@@ -541,7 +541,7 @@ export default function Home() {
                 setTimeout(() => rezultateRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }), 150);
               }}
               onKeyDown={e => { if (e.key === "Enter") rezultateRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }); }}
-              className="w-full bg-white/10 border border-white/20 text-white rounded-2xl pl-12 pr-4 py-4 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/60 focus:border-orange-500/40 placeholder-white/35 transition-all" />
+              className="w-full bg-white/10 border border-white/20 text-white rounded-2xl pl-12 pr-4 py-4 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/60 focus:border-cyan-500/40 placeholder-white/35 transition-all" />
             {cautare && (
               <button onClick={() => setCautare("")}
                 className="absolute right-4 top-1/2 -translate-y-1/2 text-white/50 hover:text-white transition-colors text-lg leading-none">
@@ -553,7 +553,7 @@ export default function Home() {
           {/* CTA row */}
           <div className="flex flex-wrap items-center justify-center gap-3 mb-12">
             <a href="#promotii"
-              className="bg-orange-500 hover:bg-orange-400 text-white font-black px-7 py-3.5 rounded-2xl text-sm transition-all shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 hover:-translate-y-0.5 duration-200">
+              className="bg-indigo-600 hover:bg-indigo-500 text-white font-black px-7 py-3.5 rounded-2xl text-sm transition-all shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 duration-200">
               Coduri active acum →
             </a>
             <a href="#categorii"
@@ -610,11 +610,11 @@ export default function Home() {
           {/* Header */}
           <div className="flex items-end justify-between mb-8">
             <div>
-              <p className="text-xs font-bold text-orange-400 uppercase tracking-widest mb-2">CATEGORII</p>
+              <p className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-2">CATEGORII</p>
               <h2 className="text-3xl font-black tracking-tight text-white">Exploreaza dupa categorie</h2>
               <p className="text-slate-400 text-sm mt-1.5">Coduri verificate zilnic in fiecare categorie</p>
             </div>
-            <Link href="/categorii" className="hidden sm:flex items-center gap-1.5 text-sm font-bold text-orange-400 hover:text-orange-300 transition-colors border border-orange-500/30 hover:border-orange-400/60 bg-orange-500/10 hover:bg-orange-500/20 px-4 py-2 rounded-full whitespace-nowrap">
+            <Link href="/categorii" className="hidden sm:flex items-center gap-1.5 text-sm font-bold text-indigo-400 hover:text-indigo-300 transition-colors border border-cyan-500/30 hover:border-cyan-400/60 bg-cyan-500/10 hover:bg-cyan-500/20 px-4 py-2 rounded-full whitespace-nowrap">
               Toate categoriile
               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
@@ -697,7 +697,7 @@ export default function Home() {
             })}
           </div>
 
-          <Link href="/categorii" className="sm:hidden mt-4 flex items-center justify-center gap-1.5 text-sm font-bold text-orange-400 border border-orange-500/30 bg-orange-500/10 py-2.5 rounded-2xl">
+          <Link href="/categorii" className="sm:hidden mt-4 flex items-center justify-center gap-1.5 text-sm font-bold text-indigo-400 border border-cyan-500/30 bg-cyan-500/10 py-2.5 rounded-2xl">
             Toate categoriile →
           </Link>
         </div>
@@ -707,7 +707,7 @@ export default function Home() {
       <section className="bg-slate-950 border-b border-slate-800 py-10 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="mb-6">
-            <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-1.5">NISE & INTERNATIONAL</p>
+            <p className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-1.5">NISE & INTERNATIONAL</p>
             <h2 className="text-xl font-black tracking-tight text-white">Categorii speciale & piete internationale</h2>
             <p className="text-slate-400 text-sm mt-1">Tech, securitate, fashion global si marketplace-uri din toata lumea</p>
           </div>
@@ -772,24 +772,24 @@ export default function Home() {
           <div className={`py-6 px-4 border-b ${urgency ? "bg-gradient-to-r from-red-950/60 via-slate-900 to-slate-900 border-red-500/20" : "bg-slate-900 border-white/5"}`}>
             <div className="max-w-7xl mx-auto">
               <div className="flex items-center gap-3 mb-4">
-                <span className={`text-white text-[10px] font-black px-3 py-1 rounded-full tracking-wider ${urgency ? "bg-red-600 animate-pulse" : "bg-orange-500"}`}>
+                <span className={`text-white text-[10px] font-black px-3 py-1 rounded-full tracking-wider ${urgency ? "bg-red-600 animate-pulse" : "bg-indigo-600"}`}>
                   {urgency ? "⚡ EXPIRA AZI" : "🔥 DEAL ZILEI"}
                 </span>
                 <span className="text-slate-500 text-xs">{new Date().toLocaleDateString("ro-RO", { day: "numeric", month: "long" })}</span>
                 {deal.zile_ramase <= 1 && <CardCountdown zileRamase={deal.zile_ramase} />}
                 {expiraAzi.length > 1 && (
-                  <Link href="/oferte-azi" className="ml-auto text-xs font-bold text-orange-400 hover:text-orange-300 transition-colors">
+                  <Link href="/oferte-azi" className="ml-auto text-xs font-bold text-indigo-400 hover:text-indigo-300 transition-colors">
                     +{expiraAzi.length - 1} oferte expira azi →
                   </Link>
                 )}
               </div>
               <a href={link} target="_blank" rel="sponsored noopener noreferrer"
-                className={`group flex flex-col sm:flex-row items-start sm:items-center gap-4 border rounded-2xl p-5 transition-all duration-200 hover:-translate-y-0.5 ${urgency ? "bg-red-500/8 hover:bg-red-500/12 border-red-500/30 hover:border-red-400/50 hover:shadow-lg hover:shadow-red-500/10" : "bg-white/5 hover:bg-white/8 border-white/10 hover:border-orange-500/40 hover:shadow-lg hover:shadow-orange-500/10"}`}>
+                className={`group flex flex-col sm:flex-row items-start sm:items-center gap-4 border rounded-2xl p-5 transition-all duration-200 hover:-translate-y-0.5 ${urgency ? "bg-red-500/8 hover:bg-red-500/12 border-red-500/30 hover:border-red-400/50 hover:shadow-lg hover:shadow-red-500/10" : "bg-white/5 hover:bg-white/8 border-white/10 hover:border-cyan-500/40 hover:shadow-lg hover:shadow-cyan-500/10"}`}>
                 <div className="w-16 h-16 rounded-2xl bg-white flex items-center justify-center shrink-0 shadow-lg">
                   {deal.logo_url ? (
                     <img src={deal.logo_url} alt={numeAfisat(deal.magazin)} className="w-12 h-12 object-contain" loading="lazy"/>
                   ) : (
-                    <span className="text-2xl font-black text-orange-500">{numeAfisat(deal.magazin)[0]}</span>
+                    <span className="text-2xl font-black text-indigo-400">{numeAfisat(deal.magazin)[0]}</span>
                   )}
                 </div>
                 <div className="flex-1 min-w-0">
@@ -806,7 +806,7 @@ export default function Home() {
                       </span>
                     )}
                     {deal.cod_cupon && promo?.cod_cupon && (
-                      <span className="inline-flex items-center gap-1 bg-orange-500/15 text-orange-400 text-xs font-bold px-2.5 py-0.5 rounded-full border border-orange-500/25">
+                      <span className="inline-flex items-center gap-1 bg-cyan-500/15 text-indigo-400 text-xs font-bold px-2.5 py-0.5 rounded-full border border-cyan-500/25">
                         🏷 Cod disponibil
                       </span>
                     )}
@@ -814,12 +814,12 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-3 shrink-0">
                   {promo?.cod_cupon && (
-                    <div className="hidden sm:block border-2 border-dashed border-orange-400/50 rounded-xl px-4 py-2.5 bg-orange-500/8">
+                    <div className="hidden sm:block border-2 border-dashed border-cyan-400/50 rounded-xl px-4 py-2.5 bg-cyan-500/8">
                       <p className="text-[9px] text-slate-500 uppercase tracking-widest mb-0.5">Cod reducere</p>
-                      <span className="font-mono font-black text-orange-400 text-sm tracking-widest">{promo.cod_cupon}</span>
+                      <span className="font-mono font-black text-indigo-400 text-sm tracking-widest">{promo.cod_cupon}</span>
                     </div>
                   )}
-                  <span className={`font-black px-5 py-3 rounded-xl text-sm transition-colors whitespace-nowrap shadow-lg ${urgency ? "bg-red-600 group-hover:bg-red-500 text-white shadow-red-500/30" : "bg-orange-500 group-hover:bg-orange-400 text-white shadow-orange-500/20"}`}>
+                  <span className={`font-black px-5 py-3 rounded-xl text-sm transition-colors whitespace-nowrap shadow-lg ${urgency ? "bg-red-600 group-hover:bg-red-500 text-white shadow-red-500/30" : "bg-indigo-600 group-hover:bg-indigo-500 text-white shadow-cyan-500/20"}`}>
                     {deal.cod_cupon ? "Ia codul →" : "Vezi oferta →"}
                   </span>
                 </div>
@@ -852,7 +852,7 @@ export default function Home() {
                   <p className="text-xs font-bold text-red-400 uppercase tracking-widest mb-1">REDUCERI MARI</p>
                   <h2 className="text-xl font-black text-white">Cele mai mari reduceri active azi</h2>
                 </div>
-                <Link href="/oferte-azi" className="text-xs font-bold text-orange-400 hover:text-orange-300 transition-colors hidden sm:block">
+                <Link href="/oferte-azi" className="text-xs font-bold text-indigo-400 hover:text-indigo-300 transition-colors hidden sm:block">
                   Toate ofertele →
                 </Link>
               </div>
@@ -869,7 +869,7 @@ export default function Home() {
                           {o.logo ? (
                             <img src={o.logo} alt={name1} className="w-7 h-7 object-contain" loading="lazy"/>
                           ) : (
-                            <span className="text-sm font-black text-orange-500">{name1[0]}</span>
+                            <span className="text-sm font-black text-indigo-400">{name1[0]}</span>
                           )}
                         </div>
                         <span className="bg-red-500 text-white text-sm font-black px-2.5 py-1 rounded-xl">-{o.disc}%</span>
@@ -877,8 +877,8 @@ export default function Home() {
                       <p className="text-xs font-bold text-white mt-1">{name1}</p>
                       <p className="text-[11px] text-slate-400 line-clamp-2 leading-tight">{o.nume}</p>
                       {o.cod_cupon && (
-                        <div className="mt-auto bg-slate-800 border border-dashed border-orange-400/40 rounded-lg px-2 py-1 text-center">
-                          <span className="font-mono font-black text-orange-400 text-xs tracking-widest">{o.cod_cupon}</span>
+                        <div className="mt-auto bg-slate-800 border border-dashed border-cyan-400/40 rounded-lg px-2 py-1 text-center">
+                          <span className="font-mono font-black text-indigo-400 text-xs tracking-widest">{o.cod_cupon}</span>
                         </div>
                       )}
                     </a>
@@ -896,7 +896,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto">
             <div className="flex items-end justify-between mb-7">
               <div>
-                <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-2 flex items-center gap-2">
+                <p className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-2 flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse inline-block"/>
                   LIVE
                 </p>
@@ -905,19 +905,19 @@ export default function Home() {
               <div className="hidden sm:flex items-center gap-2">
                 <button
                   onClick={() => trendingRef.current?.scrollBy({ left: -520, behavior: "smooth" })}
-                  className="w-8 h-8 rounded-full bg-slate-100 hover:bg-orange-500 hover:text-white flex items-center justify-center transition-colors text-slate-300">
+                  className="w-8 h-8 rounded-full bg-slate-100 hover:bg-indigo-600 hover:text-white flex items-center justify-center transition-colors text-slate-300">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7"/>
                   </svg>
                 </button>
                 <button
                   onClick={() => trendingRef.current?.scrollBy({ left: 520, behavior: "smooth" })}
-                  className="w-8 h-8 rounded-full bg-slate-100 hover:bg-orange-500 hover:text-white flex items-center justify-center transition-colors text-slate-300">
+                  className="w-8 h-8 rounded-full bg-slate-100 hover:bg-indigo-600 hover:text-white flex items-center justify-center transition-colors text-slate-300">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
                   </svg>
                 </button>
-                <a href="#promotii" className="text-sm font-bold text-orange-500 hover:text-orange-600 transition-colors ml-2">
+                <a href="#promotii" className="text-sm font-bold text-indigo-400 hover:text-indigo-300 transition-colors ml-2">
                   Toate →
                 </a>
               </div>
@@ -930,7 +930,7 @@ export default function Home() {
                   const link     = promo?.landing_page || m.url_afiliat || m.url;
                   return (
                     <a key={m.magazin} href={link} target="_blank" rel="sponsored noopener noreferrer"
-                      className="group flex-shrink-0 w-48 bg-slate-900 border border-slate-800 hover:border-orange-500/50 rounded-2xl p-4 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 overflow-hidden">
+                      className="group flex-shrink-0 w-48 bg-slate-900 border border-slate-800 hover:border-cyan-500/50 rounded-2xl p-4 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 overflow-hidden">
                       {/* Trust bar */}
                       <div className="h-0.5 w-full bg-slate-800 rounded-full mb-3 overflow-hidden">
                         <div className="h-full bg-gradient-to-r from-emerald-400 to-emerald-500 rounded-full" style={{width:`${m.procent_succes || 75}%`}}/>
@@ -940,11 +940,11 @@ export default function Home() {
                           {m.logo_url ? (
                             <img src={m.logo_url} alt={numeAfisat(m.magazin)} className="w-7 h-7 object-contain" loading="lazy"/>
                           ) : (
-                            <span className="text-sm font-black text-orange-500">{numeAfisat(m.magazin)[0]}</span>
+                            <span className="text-sm font-black text-indigo-400">{numeAfisat(m.magazin)[0]}</span>
                           )}
                         </div>
                         <div className="min-w-0">
-                          <p className="font-black text-white text-xs truncate group-hover:text-orange-600 transition-colors">{numeAfisat(m.magazin)}</p>
+                          <p className="font-black text-white text-xs truncate group-hover:text-indigo-300 transition-colors">{numeAfisat(m.magazin)}</p>
                           <p className="text-slate-400 text-[10px] truncate">{m.categorie}</p>
                         </div>
                       </div>
@@ -954,7 +954,7 @@ export default function Home() {
                         </div>
                       )}
                       <p className="text-slate-500 text-[11px] line-clamp-2 mb-3">{promo?.nume || "Oferta activa"}</p>
-                      <div className="bg-orange-500 group-hover:bg-orange-600 text-white text-[11px] font-black py-1.5 rounded-lg text-center transition-colors">
+                      <div className="bg-indigo-600 group-hover:bg-indigo-500 text-white text-[11px] font-black py-1.5 rounded-lg text-center transition-colors">
                         {m.cod_cupon ? "Cod disponibil" : "Vezi oferta"}
                       </div>
                     </a>
@@ -973,30 +973,30 @@ export default function Home() {
           <div className="max-w-7xl mx-auto">
             <div className="flex items-end justify-between mb-7">
               <div>
-                <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-2">⭐ RECOMANDATE DE NOI</p>
+                <p className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-2">⭐ RECOMANDATE DE NOI</p>
                 <h2 className="text-3xl font-black tracking-tight text-white">Magazine de incredere</h2>
                 <p className="text-slate-400 text-sm mt-1.5">Magazine cu oferte active, verificate zilnic</p>
               </div>
-              <Link href="/toate-magazinele" className="hidden sm:flex items-center gap-1.5 text-sm font-bold text-orange-400 hover:text-orange-300 border border-orange-500/30 hover:border-orange-400/60 bg-orange-500/10 px-4 py-2 rounded-full whitespace-nowrap transition-colors">Toate magazinele →</Link>
+              <Link href="/toate-magazinele" className="hidden sm:flex items-center gap-1.5 text-sm font-bold text-indigo-400 hover:text-indigo-300 border border-cyan-500/30 hover:border-cyan-400/60 bg-cyan-500/10 px-4 py-2 rounded-full whitespace-nowrap transition-colors">Toate magazinele →</Link>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
               {recomandate.map(r => (
                 <a key={r.magazin} href={`/cod-reducere/${r.magazin}`}
-                  className="group bg-slate-950 border border-slate-800 hover:border-orange-500/50 rounded-2xl p-4 flex flex-col items-center text-center hover:-translate-y-0.5 transition-all duration-200">
+                  className="group bg-slate-950 border border-slate-800 hover:border-cyan-500/50 rounded-2xl p-4 flex flex-col items-center text-center hover:-translate-y-0.5 transition-all duration-200">
                   <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center mb-2.5 overflow-hidden shrink-0">
                     {r.logo_url ? (
                       // eslint-disable-next-line @next/next/no-img-element
                       <img src={r.logo_url} alt={r.nume} className="w-9 h-9 object-contain" loading="lazy" />
                     ) : (
-                      <span className="text-base font-black text-orange-500">{r.nume.charAt(0)}</span>
+                      <span className="text-base font-black text-indigo-400">{r.nume.charAt(0)}</span>
                     )}
                   </div>
-                  <p className="font-black text-white text-xs truncate w-full group-hover:text-orange-400 transition-colors">{r.nume}</p>
+                  <p className="font-black text-white text-xs truncate w-full group-hover:text-indigo-400 transition-colors">{r.nume}</p>
                   <p className="text-slate-500 text-[10px] truncate w-full mb-2">{r.categorie}</p>
                   {r.are_cod ? (
                     <span className="text-[10px] font-black text-emerald-400 bg-emerald-500/15 border border-emerald-500/25 px-2 py-0.5 rounded-full">COD ACTIV</span>
                   ) : (
-                    <span className="text-[10px] font-bold text-orange-400 bg-orange-500/10 border border-orange-500/20 px-2 py-0.5 rounded-full">OFERTA</span>
+                    <span className="text-[10px] font-bold text-indigo-400 bg-cyan-500/10 border border-cyan-500/20 px-2 py-0.5 rounded-full">OFERTA</span>
                   )}
                 </a>
               ))}
@@ -1017,7 +1017,7 @@ export default function Home() {
         return (
           <section className="bg-slate-950 border-b border-slate-800 py-12 px-4">
             <div className="max-w-7xl mx-auto">
-              <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-2">🔥 OFERTE PE CATEGORII</p>
+              <p className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-2">🔥 OFERTE PE CATEGORII</p>
               <h2 className="text-3xl font-black tracking-tight text-white mb-8">Cele mai bune oferte, pe nise</h2>
               <div className="space-y-9">
                 {topCat.map(([slug, mags]) => {
@@ -1026,7 +1026,7 @@ export default function Home() {
                     <div key={slug}>
                       <div className="flex items-center justify-between mb-3">
                         <h3 className="text-lg font-black text-white">{LABELS[slug] || slug}</h3>
-                        <a href={`/categorii/${slug}`} className="text-sm font-semibold text-orange-400 hover:text-orange-300">Toate →</a>
+                        <a href={`/categorii/${slug}`} className="text-sm font-semibold text-indigo-400 hover:text-indigo-300">Toate →</a>
                       </div>
                       <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                         {top.map(m => {
@@ -1035,21 +1035,21 @@ export default function Home() {
                           const disc = maxDiscount(m.promotii);
                           return (
                             <a key={m.magazin} href={link} target="_blank" rel="sponsored noopener noreferrer"
-                              className="group bg-slate-900 border border-slate-800 hover:border-orange-500/50 rounded-2xl p-4 transition-all hover:-translate-y-0.5 flex flex-col">
+                              className="group bg-slate-900 border border-slate-800 hover:border-cyan-500/50 rounded-2xl p-4 transition-all hover:-translate-y-0.5 flex flex-col">
                               <div className="flex items-center gap-2.5 mb-2">
                                 <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center shrink-0 overflow-hidden">
                                   {m.logo_url ? (
                                     // eslint-disable-next-line @next/next/no-img-element
                                     <img src={m.logo_url} alt={numeAfisat(m.magazin)} className="w-8 h-8 object-contain" loading="lazy"/>
-                                  ) : (<span className="font-black text-orange-500">{numeAfisat(m.magazin)[0]}</span>)}
+                                  ) : (<span className="font-black text-indigo-400">{numeAfisat(m.magazin)[0]}</span>)}
                                 </div>
                                 <div className="min-w-0">
-                                  <p className="font-black text-white text-sm truncate group-hover:text-orange-400 transition-colors">{numeAfisat(m.magazin)}</p>
+                                  <p className="font-black text-white text-sm truncate group-hover:text-indigo-400 transition-colors">{numeAfisat(m.magazin)}</p>
                                   {disc ? <span className="text-[10px] font-black text-emerald-400">{disc}</span> : m.cod_cupon ? <span className="text-[10px] font-bold text-emerald-400">COD</span> : <span className="text-[10px] text-slate-500">Oferta</span>}
                                 </div>
                               </div>
                               <p className="text-slate-400 text-[11px] line-clamp-2 flex-1">{promo?.nume || "Oferta activa"}</p>
-                              <div className="mt-2 text-[11px] font-black text-orange-500 group-hover:text-orange-400">Vezi oferta →</div>
+                              <div className="mt-2 text-[11px] font-black text-indigo-400 group-hover:text-indigo-400">Vezi oferta →</div>
                             </a>
                           );
                         })}
@@ -1067,7 +1067,7 @@ export default function Home() {
       <section className="bg-slate-950 border-b border-slate-800 py-14 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="mb-8">
-            <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-2">GHIDURI DEDICATE</p>
+            <p className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-2">GHIDURI DEDICATE</p>
             <h2 className="text-3xl font-black tracking-tight text-white">Sectiuni speciale</h2>
             <p className="text-slate-500 text-sm mt-1.5">Curatate editorial cu cele mai bune oferte pe fiecare nisa</p>
           </div>
@@ -1098,14 +1098,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="mb-6 flex items-center justify-between">
             <div>
-              <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-1">MAGAZINE POPULARE</p>
+              <p className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-1">MAGAZINE POPULARE</p>
               <h2 className="text-xl font-black text-white">Ghiduri dedicate pentru cele mai cautate magazine</h2>
             </div>
           </div>
           <div className="flex flex-wrap gap-2.5">
             {BRAND_PAGES.map(b => (
               <Link key={b.href} href={b.href}
-                className="flex items-center gap-2 bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-orange-500/40 text-slate-300 hover:text-white rounded-2xl px-4 py-2.5 text-sm font-semibold transition-all duration-200 hover:-translate-y-0.5">
+                className="flex items-center gap-2 bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-cyan-500/40 text-slate-300 hover:text-white rounded-2xl px-4 py-2.5 text-sm font-semibold transition-all duration-200 hover:-translate-y-0.5">
                 <span className="text-base">{b.emoji}</span>
                 {b.name}
               </Link>
@@ -1129,14 +1129,14 @@ export default function Home() {
             <div className="flex items-center gap-2">
               <button
                 onClick={() => bannersRef.current?.scrollBy({ left: -340, behavior: "smooth" })}
-                className="w-8 h-8 rounded-full bg-slate-700 hover:bg-orange-500 flex items-center justify-center transition-colors">
+                className="w-8 h-8 rounded-full bg-slate-700 hover:bg-indigo-600 flex items-center justify-center transition-colors">
                 <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7"/>
                 </svg>
               </button>
               <button
                 onClick={() => bannersRef.current?.scrollBy({ left: 340, behavior: "smooth" })}
-                className="w-8 h-8 rounded-full bg-slate-700 hover:bg-orange-500 flex items-center justify-center transition-colors">
+                className="w-8 h-8 rounded-full bg-slate-700 hover:bg-indigo-600 flex items-center justify-center transition-colors">
                 <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
                 </svg>
@@ -1189,7 +1189,7 @@ export default function Home() {
                       <p className="text-white font-black text-xs leading-tight line-clamp-2 mb-2">
                         {b.name || "Oferta activa"}
                       </p>
-                      <span className="inline-flex items-center gap-1 bg-orange-500 group-hover:bg-orange-400 text-white text-[10px] font-bold px-2.5 py-1 rounded-full transition-colors">
+                      <span className="inline-flex items-center gap-1 bg-indigo-600 group-hover:bg-indigo-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full transition-colors">
                         Vezi oferta
                         <svg className="w-2.5 h-2.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
@@ -1198,21 +1198,21 @@ export default function Home() {
                     </div>
 
                     {/* Ring la hover */}
-                    <div className="absolute inset-0 rounded-2xl ring-2 ring-orange-500/0 group-hover:ring-orange-500/60 transition-all duration-200 pointer-events-none" />
+                    <div className="absolute inset-0 rounded-2xl ring-2 ring-indigo-500/0 group-hover:ring-indigo-500/60 transition-all duration-200 pointer-events-none" />
                   </a>
                 );
               })}
 
               {/* Card final — "Vezi toate" */}
-              <Link href="/categorii" className="group relative overflow-hidden rounded-2xl flex-shrink-0 flex flex-col items-center justify-center gap-3 bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-orange-500/50 transition-all duration-200"
+              <Link href="/categorii" className="group relative overflow-hidden rounded-2xl flex-shrink-0 flex flex-col items-center justify-center gap-3 bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-cyan-500/50 transition-all duration-200"
                 style={{ width: "160px", height: "200px", scrollSnapAlign: "start" }}>
-                <div className="w-12 h-12 rounded-full bg-orange-500/20 flex items-center justify-center group-hover:bg-orange-500/30 transition-colors">
-                  <svg className="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-12 h-12 rounded-full bg-cyan-500/20 flex items-center justify-center group-hover:bg-cyan-500/30 transition-colors">
+                  <svg className="w-6 h-6 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16"/>
                   </svg>
                 </div>
                 <span className="text-white font-bold text-xs text-center px-4">Toate categoriile</span>
-                <span className="text-orange-400 text-[10px] font-bold">Vezi →</span>
+                <span className="text-indigo-400 text-[10px] font-bold">Vezi →</span>
               </Link>
             </div>
           </div>
@@ -1237,11 +1237,11 @@ export default function Home() {
             <div className="max-w-7xl mx-auto">
               <div className="flex items-end justify-between mb-8">
                 <div>
-                  <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-2">🔥 CODURI ACTIVE AZI</p>
+                  <p className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-2">🔥 CODURI ACTIVE AZI</p>
                   <h2 className="text-3xl font-black tracking-tight text-white">Oferte cu reducere acum</h2>
                   <p className="text-slate-400 text-sm mt-1.5">Coduri verificate de la {oferte.length} magazine — actualizate zilnic</p>
                 </div>
-                <Link href="/toate-magazinele" className="hidden sm:flex items-center gap-1.5 bg-orange-500 hover:bg-orange-400 text-white font-bold px-4 py-2 rounded-xl text-sm transition-colors">
+                <Link href="/toate-magazinele" className="hidden sm:flex items-center gap-1.5 bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-4 py-2 rounded-xl text-sm transition-colors">
                   Toate ofertele
                   <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/></svg>
                 </Link>
@@ -1257,17 +1257,17 @@ export default function Home() {
                   const slug = m.magazin;
                   return (
                     <Link key={i} href={`/cod-reducere/${slug}`}
-                      className="group bg-slate-900 border border-slate-800 hover:border-orange-500 rounded-2xl overflow-hidden transition-all hover:shadow-xl hover:shadow-black/40 hover:-translate-y-1 duration-200 flex flex-col">
+                      className="group bg-slate-900 border border-slate-800 hover:border-indigo-500 rounded-2xl overflow-hidden transition-all hover:shadow-xl hover:shadow-black/40 hover:-translate-y-1 duration-200 flex flex-col">
                       {/* Logo */}
                       <div className="relative bg-slate-800 flex items-center justify-center p-4" style={{aspectRatio:"1"}}>
                         {m.logo_url
                           ? <img src={m.logo_url} alt={slug}
                               className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                               loading="lazy" onError={e => { (e.target as HTMLImageElement).style.display='none'; }}/>
-                          : <span className="font-black text-orange-500 text-base">{slug.split('.')[0].toUpperCase()}</span>
+                          : <span className="font-black text-indigo-400 text-base">{slug.split('.')[0].toUpperCase()}</span>
                         }
                         {cod && (
-                          <div className="absolute top-2 left-2 bg-orange-500 text-white text-[10px] font-black px-1.5 py-0.5 rounded-full shadow">
+                          <div className="absolute top-2 left-2 bg-indigo-600 text-white text-[10px] font-black px-1.5 py-0.5 rounded-full shadow">
                             COD
                           </div>
                         )}
@@ -1280,15 +1280,15 @@ export default function Home() {
                       {/* Info */}
                       <div className="p-3 flex flex-col flex-1">
                         <p className="text-[11px] text-slate-500 mb-0.5 truncate">{slug}</p>
-                        <p className="text-xs font-semibold text-slate-200 line-clamp-2 flex-1 group-hover:text-orange-400 transition-colors leading-snug">{titlu}</p>
+                        <p className="text-xs font-semibold text-slate-200 line-clamp-2 flex-1 group-hover:text-indigo-400 transition-colors leading-snug">{titlu}</p>
                         {cod ? (
-                          <div className="mt-2 bg-slate-800 border border-dashed border-orange-500/60 rounded-lg px-2 py-1 text-center">
-                            <span className="font-black text-orange-400 text-[11px] tracking-widest">{cod}</span>
+                          <div className="mt-2 bg-slate-800 border border-dashed border-cyan-500/60 rounded-lg px-2 py-1 text-center">
+                            <span className="font-black text-indigo-400 text-[11px] tracking-widest">{cod}</span>
                           </div>
                         ) : (
                           <div className="mt-2 text-[11px] font-bold text-emerald-500">Fara cod necesar</div>
                         )}
-                        <span className="mt-2 text-[11px] font-bold text-orange-500 group-hover:text-orange-400 flex items-center gap-0.5">
+                        <span className="mt-2 text-[11px] font-bold text-indigo-400 group-hover:text-indigo-400 flex items-center gap-0.5">
                           Vezi oferta
                           <svg className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
@@ -1300,7 +1300,7 @@ export default function Home() {
                 })}
               </div>
               <div className="text-center mt-6">
-                <Link href="/toate-magazinele" className="inline-flex items-center gap-2 text-slate-400 hover:text-orange-400 text-sm font-semibold transition-colors">
+                <Link href="/toate-magazinele" className="inline-flex items-center gap-2 text-slate-400 hover:text-indigo-400 text-sm font-semibold transition-colors">
                   Vezi toate magazinele cu oferte active →
                 </Link>
               </div>
@@ -1317,11 +1317,11 @@ export default function Home() {
             {/* Header */}
             <div className="flex items-end justify-between mb-7">
               <div>
-                <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-2">PRODUSE CU REDUCERE</p>
+                <p className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-2">PRODUSE CU REDUCERE</p>
                 <h2 className="text-3xl font-black tracking-tight text-white">Produse pe categorii</h2>
                 <p className="text-slate-400 text-sm mt-1.5">Cele mai bune oferte, organizate pe nise</p>
               </div>
-              <Link href="/produse" className="hidden sm:flex items-center gap-1.5 text-sm font-bold text-orange-400 hover:text-orange-300 border border-orange-500/30 hover:border-orange-400/60 bg-orange-500/10 hover:bg-orange-500/20 px-4 py-2 rounded-full whitespace-nowrap transition-all">
+              <Link href="/produse" className="hidden sm:flex items-center gap-1.5 text-sm font-bold text-indigo-400 hover:text-indigo-300 border border-cyan-500/30 hover:border-cyan-400/60 bg-cyan-500/10 hover:bg-cyan-500/20 px-4 py-2 rounded-full whitespace-nowrap transition-all">
                 Toate produsele →
               </Link>
             </div>
@@ -1330,7 +1330,7 @@ export default function Home() {
             <div className="flex gap-2 overflow-x-auto pb-1 mb-9 -mx-4 px-4" style={{scrollbarWidth:"none"}}>
               <button
                 onClick={() => setActiveCatTab("toate")}
-                className={`flex-shrink-0 flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-bold transition-all duration-200 ${activeCatTab === "toate" ? "bg-orange-500 text-white shadow-lg shadow-orange-500/30" : "bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700/80"}`}
+                className={`flex-shrink-0 flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-bold transition-all duration-200 ${activeCatTab === "toate" ? "bg-indigo-600 text-white shadow-lg shadow-cyan-500/30" : "bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700/80"}`}
               >
                 🛍️ Toate
               </button>
@@ -1338,7 +1338,7 @@ export default function Home() {
                 <button
                   key={cat.slug}
                   onClick={() => setActiveCatTab(cat.slug)}
-                  className={`flex-shrink-0 flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-bold transition-all duration-200 ${activeCatTab === cat.slug ? "bg-orange-500 text-white shadow-lg shadow-orange-500/30" : "bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700/80"}`}
+                  className={`flex-shrink-0 flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-bold transition-all duration-200 ${activeCatTab === cat.slug ? "bg-indigo-600 text-white shadow-lg shadow-cyan-500/30" : "bg-slate-800 text-slate-300 hover:bg-slate-700 border border-slate-700/80"}`}
                 >
                   {cat.emoji} {cat.label}
                 </button>
@@ -1359,7 +1359,7 @@ export default function Home() {
                       </div>
                       <button
                         onClick={() => setActiveCatTab(cat.slug)}
-                        className="text-xs font-bold text-orange-400 hover:text-orange-300 transition-colors flex items-center gap-1 border border-orange-500/20 hover:border-orange-400/40 px-3 py-1 rounded-full bg-orange-500/5 hover:bg-orange-500/10"
+                        className="text-xs font-bold text-indigo-400 hover:text-indigo-300 transition-colors flex items-center gap-1 border border-cyan-500/20 hover:border-cyan-400/40 px-3 py-1 rounded-full bg-cyan-500/5 hover:bg-cyan-500/10"
                       >
                         Vezi toate →
                       </button>
@@ -1369,7 +1369,7 @@ export default function Home() {
                       <div className="flex gap-3" style={{minWidth:"max-content"}}>
                         {cat.products.map((p, i) => (
                           <a key={i} href={p.url} target="_blank" rel="sponsored noopener noreferrer"
-                            className="group flex-shrink-0 w-44 bg-slate-800 border border-slate-700 hover:border-orange-500/50 rounded-2xl overflow-hidden hover:shadow-xl hover:shadow-black/40 hover:-translate-y-1 transition-all duration-200">
+                            className="group flex-shrink-0 w-44 bg-slate-800 border border-slate-700 hover:border-cyan-500/50 rounded-2xl overflow-hidden hover:shadow-xl hover:shadow-black/40 hover:-translate-y-1 transition-all duration-200">
                             <div className="relative w-full aspect-square bg-slate-700 overflow-hidden">
                               {/* eslint-disable-next-line @next/next/no-img-element */}
                               <img src={p.image} alt={p.title}
@@ -1385,9 +1385,9 @@ export default function Home() {
                             </div>
                             <div className="p-2.5">
                               <p className="text-[9px] text-slate-500 mb-0.5 truncate font-medium">{p.merchant.replace(".ro","").replace(".com","")}</p>
-                              <p className="text-xs font-semibold text-slate-200 line-clamp-2 leading-snug group-hover:text-orange-400 transition-colors mb-1.5">{p.title}</p>
+                              <p className="text-xs font-semibold text-slate-200 line-clamp-2 leading-snug group-hover:text-indigo-400 transition-colors mb-1.5">{p.title}</p>
                               <div className="flex items-baseline gap-1.5">
-                                <span className="text-sm font-black text-orange-400">{p.price.toLocaleString("ro-RO")} lei</span>
+                                <span className="text-sm font-black text-indigo-400">{p.price.toLocaleString("ro-RO")} lei</span>
                                 {p.old_price && p.old_price > p.price && (
                                   <span className="text-[10px] text-slate-500 line-through">{p.old_price.toLocaleString("ro-RO")}</span>
                                 )}
@@ -1398,14 +1398,14 @@ export default function Home() {
                         {/* Card "Toate" la finalul randului */}
                         <button
                           onClick={() => setActiveCatTab(cat.slug)}
-                          className="flex-shrink-0 w-32 bg-slate-800/60 border border-dashed border-slate-700 hover:border-orange-500/40 rounded-2xl flex flex-col items-center justify-center gap-2.5 hover:bg-slate-800 transition-all duration-200 group cursor-pointer"
+                          className="flex-shrink-0 w-32 bg-slate-800/60 border border-dashed border-slate-700 hover:border-cyan-500/40 rounded-2xl flex flex-col items-center justify-center gap-2.5 hover:bg-slate-800 transition-all duration-200 group cursor-pointer"
                         >
-                          <div className="w-10 h-10 rounded-full bg-orange-500/15 flex items-center justify-center group-hover:bg-orange-500/25 transition-colors">
-                            <svg className="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <div className="w-10 h-10 rounded-full bg-cyan-500/15 flex items-center justify-center group-hover:bg-cyan-500/25 transition-colors">
+                            <svg className="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/>
                             </svg>
                           </div>
-                          <span className="text-xs font-bold text-slate-400 group-hover:text-orange-400 text-center px-2 leading-tight transition-colors">Toate {cat.label}</span>
+                          <span className="text-xs font-bold text-slate-400 group-hover:text-indigo-400 text-center px-2 leading-tight transition-colors">Toate {cat.label}</span>
                         </button>
                       </div>
                     </div>
@@ -1421,7 +1421,7 @@ export default function Home() {
                   <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
                     {cat.products.map((p, i) => (
                       <a key={i} href={p.url} target="_blank" rel="sponsored noopener noreferrer"
-                        className="group bg-slate-800 border border-slate-700 hover:border-orange-500/50 rounded-2xl overflow-hidden hover:shadow-xl hover:shadow-black/40 hover:-translate-y-1 transition-all duration-200">
+                        className="group bg-slate-800 border border-slate-700 hover:border-cyan-500/50 rounded-2xl overflow-hidden hover:shadow-xl hover:shadow-black/40 hover:-translate-y-1 transition-all duration-200">
                         <div className="relative aspect-square bg-slate-700 overflow-hidden">
                           {/* eslint-disable-next-line @next/next/no-img-element */}
                           <img src={p.image} alt={p.title}
@@ -1437,9 +1437,9 @@ export default function Home() {
                         </div>
                         <div className="p-3.5">
                           <p className="text-[10px] text-slate-500 mb-0.5 truncate font-medium">{p.merchant.replace(".ro","").replace(".com","")}</p>
-                          <p className="text-sm font-semibold text-slate-200 line-clamp-2 leading-snug group-hover:text-orange-400 transition-colors mb-2">{p.title}</p>
+                          <p className="text-sm font-semibold text-slate-200 line-clamp-2 leading-snug group-hover:text-indigo-400 transition-colors mb-2">{p.title}</p>
                           <div className="flex items-baseline gap-2">
-                            <span className="text-base font-black text-orange-400">{p.price.toLocaleString("ro-RO")} lei</span>
+                            <span className="text-base font-black text-indigo-400">{p.price.toLocaleString("ro-RO")} lei</span>
                             {p.old_price && p.old_price > p.price && (
                               <span className="text-xs text-slate-500 line-through">{p.old_price.toLocaleString("ro-RO")}</span>
                             )}
@@ -1453,7 +1453,7 @@ export default function Home() {
             )}
 
             <div className="text-center mt-10">
-              <Link href="/produse" className="inline-flex items-center gap-2 text-sm font-bold text-slate-400 hover:text-orange-400 transition-colors">
+              <Link href="/produse" className="inline-flex items-center gap-2 text-sm font-bold text-slate-400 hover:text-indigo-400 transition-colors">
                 Toate produsele cu reducere →
               </Link>
             </div>
@@ -1467,11 +1467,11 @@ export default function Home() {
           <div className="max-w-7xl mx-auto">
             <div className="flex items-end justify-between mb-8">
               <div>
-                <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-2">SELECTIE EDITORIALA</p>
+                <p className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-2">SELECTIE EDITORIALA</p>
                 <h2 className="text-3xl font-black tracking-tight text-white">Top picks saptamana asta</h2>
                 <p className="text-slate-400 text-sm mt-1.5">Cele mai bune oferte verificate de echipa noastra</p>
               </div>
-              <a href="#promotii" className="hidden sm:flex items-center gap-1 text-sm font-bold text-orange-500 hover:text-orange-600 transition-colors">
+              <a href="#promotii" className="hidden sm:flex items-center gap-1 text-sm font-bold text-indigo-400 hover:text-indigo-300 transition-colors">
                 Toate ofertele
                 <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
@@ -1485,13 +1485,13 @@ export default function Home() {
                 const discountText = maxDiscount(m.promotii);
                 const link  = promo?.landing_page || m.url_afiliat || m.url;
                 const tops  = [
-                  { label: "#1 Recomandat", bar: "from-orange-500 to-red-500",   badge: "bg-orange-500" },
+                  { label: "#1 Recomandat", bar: "from-violet-500 to-fuchsia-600",   badge: "bg-indigo-600" },
                   { label: "Popular",       bar: "from-purple-500 to-pink-500",   badge: "bg-purple-600" },
                   { label: "Trending",      bar: "from-blue-500 to-indigo-500",   badge: "bg-blue-600" },
                 ];
                 return (
                   <a key={m.magazin} href={link} target="_blank" rel="sponsored noopener noreferrer"
-                    className="group bg-slate-900 border-2 border-slate-700 hover:border-orange-500/50 rounded-2xl overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-200">
+                    className="group bg-slate-900 border-2 border-slate-700 hover:border-cyan-500/50 rounded-2xl overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-200">
                     <div className={`h-1.5 bg-gradient-to-r ${tops[i].bar}`}/>
                     <div className="p-6">
                       <div className="flex items-start justify-between mb-4">
@@ -1509,11 +1509,11 @@ export default function Home() {
                           {m.logo_url ? (
                             <img src={m.logo_url} alt={`Logo ${nume}`} className="w-10 h-10 object-contain" loading="lazy"/>
                           ) : (
-                            <span className="text-xl font-black text-orange-500">{nume[0]}</span>
+                            <span className="text-xl font-black text-indigo-400">{nume[0]}</span>
                           )}
                         </div>
                         <div>
-                          <h3 className="font-black text-white text-lg group-hover:text-orange-400 transition-colors leading-tight tracking-tight">{nume}</h3>
+                          <h3 className="font-black text-white text-lg group-hover:text-indigo-400 transition-colors leading-tight tracking-tight">{nume}</h3>
                           <p className="text-slate-400 text-xs">{m.categorie}</p>
                           {discountText && (
                             <span className="inline-flex items-center gap-1 mt-1.5 bg-emerald-500/15 text-emerald-400 border border-emerald-500/25 text-[10px] font-bold px-2 py-0.5 rounded-full">
@@ -1542,7 +1542,7 @@ export default function Home() {
                           <span className="text-slate-300 mx-1">·</span>
                           <span className="text-slate-400">{m.promotii.length} {m.promotii.length === 1 ? "oferta" : "oferte"}</span>
                         </div>
-                        <span className="bg-orange-500 group-hover:bg-orange-400 text-white font-black text-xs px-4 py-2 rounded-xl transition-colors">
+                        <span className="bg-indigo-600 group-hover:bg-indigo-500 text-white font-black text-xs px-4 py-2 rounded-xl transition-colors">
                           Activeaza →
                         </span>
                       </div>
@@ -1560,15 +1560,15 @@ export default function Home() {
 
         {/* BANNER CAUTARE ACTIVA */}
         {!loading && cautare && (
-          <div className="bg-orange-500/10 border border-orange-500/25 rounded-2xl px-5 py-3 mb-6 flex items-center justify-between gap-3">
-            <span className="text-sm font-semibold text-orange-400">
+          <div className="bg-cyan-500/10 border border-cyan-500/25 rounded-2xl px-5 py-3 mb-6 flex items-center justify-between gap-3">
+            <span className="text-sm font-semibold text-indigo-400">
               {filtrate.length > 0
                 ? <>{filtrate.length === 1 ? "1 rezultat" : `${filtrate.length} rezultate`} pentru <strong>&quot;{cautare}&quot;</strong></>
                 : <>Niciun rezultat pentru <strong>&quot;{cautare}&quot;</strong> — incearca alt nume</>
               }
             </span>
             <button onClick={() => setCautare("")}
-              className="text-xs text-orange-500 hover:text-orange-700 font-bold border border-orange-300 rounded-lg px-3 py-1 transition-colors">
+              className="text-xs text-indigo-400 hover:text-indigo-300 font-bold border border-indigo-300 rounded-lg px-3 py-1 transition-colors">
               Sterge cautarea
             </button>
           </div>
@@ -1588,7 +1588,7 @@ export default function Home() {
                 {f.label}
               </button>
             ))}
-            <Link href="/toate-magazinele" className="ml-auto text-sm text-orange-500 hover:text-orange-600 font-semibold transition-colors">
+            <Link href="/toate-magazinele" className="ml-auto text-sm text-indigo-400 hover:text-indigo-300 font-semibold transition-colors">
               Vezi toate ({magazine.length}) →
             </Link>
           </div>
@@ -1625,7 +1625,7 @@ export default function Home() {
           <section id="promotii" className="mb-12">
             <div className="flex items-end justify-between mb-6">
               <div>
-                <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-1.5 flex items-center gap-2">
+                <p className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-1.5 flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse inline-block"/>
                   {cautare || filtruActiv !== "toate" ? "FILTRAT" : "LIVE"}
                 </p>
@@ -1635,7 +1635,7 @@ export default function Home() {
                 <p className="text-slate-400 text-sm mt-0.5">{cuPromotii.length} oferte verificate</p>
               </div>
               {!cautare && filtruActiv === "toate" && (
-                <Link href="/toate-magazinele" className="hidden sm:block text-sm font-bold text-orange-500 hover:text-orange-600 transition-colors">
+                <Link href="/toate-magazinele" className="hidden sm:block text-sm font-bold text-indigo-400 hover:text-indigo-300 transition-colors">
                   Toate magazinele →
                 </Link>
               )}
@@ -1662,7 +1662,7 @@ export default function Home() {
                   }
                 </p>
               </div>
-              <Link href="/toate-magazinele" className="text-sm font-bold text-orange-500 hover:text-orange-600 transition-colors">
+              <Link href="/toate-magazinele" className="text-sm font-bold text-indigo-400 hover:text-indigo-300 transition-colors">
                 Pagina completa →
               </Link>
             </div>
@@ -1674,7 +1674,7 @@ export default function Home() {
             {faraPromotii.length > storeLimit && (
               <div className="text-center mt-10">
                 <button onClick={() => setStoreLimit(l => l + 24)}
-                  className="bg-slate-800 border-2 border-slate-700 hover:border-orange-400 text-slate-300 hover:text-orange-400 font-bold px-8 py-3 rounded-2xl text-sm transition-all hover:shadow-md">
+                  className="bg-slate-800 border-2 border-slate-700 hover:border-indigo-400 text-slate-300 hover:text-indigo-400 font-bold px-8 py-3 rounded-2xl text-sm transition-all hover:shadow-md">
                   Incarca mai multe ({faraPromotii.length - storeLimit} magazine ramase)
                 </button>
               </div>
@@ -1690,11 +1690,11 @@ export default function Home() {
             <p className="text-slate-400 text-sm mb-6">Incearca un alt nume sau cauta in toate magazinele.</p>
             <div className="flex flex-wrap justify-center gap-3">
               <button onClick={() => setCautare("")}
-                className="bg-orange-500 text-white font-bold px-6 py-2.5 rounded-xl text-sm hover:bg-orange-600 transition-colors">
+                className="bg-indigo-600 text-white font-bold px-6 py-2.5 rounded-xl text-sm hover:bg-indigo-500 transition-colors">
                 Sterge cautarea
               </button>
               <Link href="/toate-magazinele"
-                className="bg-slate-800 border border-slate-700 text-slate-200 font-bold px-6 py-2.5 rounded-xl text-sm hover:border-orange-400 transition-colors">
+                className="bg-slate-800 border border-slate-700 text-slate-200 font-bold px-6 py-2.5 rounded-xl text-sm hover:border-indigo-400 transition-colors">
                 Toate magazinele
               </Link>
             </div>
@@ -1708,11 +1708,11 @@ export default function Home() {
           <div className="max-w-7xl mx-auto">
             <div className="flex items-end justify-between mb-8">
               <div>
-                <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-2">BLOG</p>
+                <p className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-2">BLOG</p>
                 <h2 className="text-3xl font-black tracking-tight text-white">Ghiduri si sfaturi</h2>
                 <p className="text-slate-400 text-sm mt-1.5">Cum sa economisesti mai mult la cumparaturile online</p>
               </div>
-              <Link href="/blog" className="hidden sm:flex items-center gap-1 text-sm font-bold text-orange-500 hover:text-orange-400 transition-colors">
+              <Link href="/blog" className="hidden sm:flex items-center gap-1 text-sm font-bold text-indigo-400 hover:text-indigo-400 transition-colors">
                 Toate articolele
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
@@ -1722,21 +1722,21 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {blogPosts.map((post, i) => (
                 <a key={post.slug} href={`/blog/${post.slug}`}
-                  className={`group bg-slate-900 rounded-2xl border border-slate-700 hover:border-orange-500/50 shadow-sm hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 overflow-hidden flex flex-col ${i === 0 ? "md:col-span-1" : ""}`}>
+                  className={`group bg-slate-900 rounded-2xl border border-slate-700 hover:border-cyan-500/50 shadow-sm hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 overflow-hidden flex flex-col ${i === 0 ? "md:col-span-1" : ""}`}>
                   <div className="relative overflow-hidden h-44 bg-slate-800">
                     <Image src={post.cover} alt={post.title} fill
                       className="object-cover group-hover:scale-105 transition-transform duration-300"
                       sizes="(max-width: 768px) 100vw, 380px"/>
                   </div>
                   <div className="p-5 flex-1 flex flex-col">
-                    <span className="text-[10px] font-black text-orange-500 uppercase tracking-widest">{post.category}</span>
-                    <h3 className="font-black text-slate-100 text-base mt-2 mb-2 line-clamp-2 group-hover:text-orange-400 transition-colors leading-snug tracking-tight">
+                    <span className="text-[10px] font-black text-indigo-400 uppercase tracking-widest">{post.category}</span>
+                    <h3 className="font-black text-slate-100 text-base mt-2 mb-2 line-clamp-2 group-hover:text-indigo-400 transition-colors leading-snug tracking-tight">
                       {post.title}
                     </h3>
                     <p className="text-xs text-slate-400 line-clamp-2 flex-1 leading-relaxed">{post.excerpt}</p>
                     <div className="mt-4 pt-4 border-t border-slate-700 flex items-center justify-between">
                       <span className="text-xs text-slate-500">{post.date}</span>
-                      <span className="text-xs font-bold text-orange-500 flex items-center gap-1 group-hover:gap-1.5 transition-all">
+                      <span className="text-xs font-bold text-indigo-400 flex items-center gap-1 group-hover:gap-1.5 transition-all">
                         Citeste
                         <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
@@ -1769,7 +1769,7 @@ export default function Home() {
         />
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-8">
-            <p className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-2">INTREBARI FRECVENTE</p>
+            <p className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-2">INTREBARI FRECVENTE</p>
             <h2 className="text-3xl font-black tracking-tight text-white">Tot ce vrei sa stii despre codurile de reducere</h2>
           </div>
           <div className="space-y-3">
@@ -1777,7 +1777,7 @@ export default function Home() {
               <details key={i} className="group bg-slate-900 rounded-2xl border border-slate-700 overflow-hidden">
                 <summary className="flex items-center justify-between gap-4 px-5 py-4 cursor-pointer list-none select-none hover:bg-slate-800/50 transition-colors">
                   <h3 className="font-bold text-slate-100 text-sm sm:text-base leading-snug">{item.q}</h3>
-                  <svg className="w-5 h-5 text-orange-500 shrink-0 transition-transform duration-200 group-open:rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-indigo-400 shrink-0 transition-transform duration-200 group-open:rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4v16m8-8H4"/>
                   </svg>
                 </summary>
@@ -1793,11 +1793,11 @@ export default function Home() {
       {/* ─── NEWSLETTER ───────────────────────────────────────────────────── */}
       <section className="relative bg-slate-950 py-16 px-4 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 left-1/3 w-64 h-64 rounded-full bg-orange-500/8 blur-3xl"/>
-          <div className="absolute bottom-0 right-1/3 w-48 h-48 rounded-full bg-orange-500/8 blur-3xl"/>
+          <div className="absolute top-0 left-1/3 w-64 h-64 rounded-full bg-cyan-500/8 blur-3xl"/>
+          <div className="absolute bottom-0 right-1/3 w-48 h-48 rounded-full bg-cyan-500/8 blur-3xl"/>
         </div>
         <div className="relative max-w-xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-orange-500/15 border border-orange-500/25 rounded-full px-4 py-1.5 text-orange-400 text-xs font-bold mb-6">
+          <div className="inline-flex items-center gap-2 bg-cyan-500/15 border border-cyan-500/25 rounded-full px-4 py-1.5 text-indigo-400 text-xs font-bold mb-6">
             Newsletter zilnic gratuit
           </div>
           <h2 className="text-3xl md:text-4xl font-black tracking-tight text-white mb-3">
@@ -1825,8 +1825,8 @@ export default function Home() {
             {/* Brand */}
             <div className="col-span-2 md:col-span-1">
               <div className="flex items-center gap-2 mb-4">
-                <div className="bg-orange-500 text-white font-black text-sm px-2 py-0.5 rounded-md tracking-tighter">Am</div>
-                <span className="font-black text-white text-xl tracking-tight">Cupon<span className="text-orange-500">.ro</span></span>
+                <div className="bg-indigo-600 text-white font-black text-sm px-2 py-0.5 rounded-md tracking-tighter">Am</div>
+                <span className="font-black text-white text-xl tracking-tight">Cupon<span className="text-indigo-400">.ro</span></span>
               </div>
               <p className="text-sm leading-relaxed mb-5">
                 Coduri de reducere verificate zilnic. Cel mai rapid mod de a economisi la cumparaturile online din Romania.
@@ -1844,7 +1844,7 @@ export default function Home() {
                   { label: "TikTok",    href: "https://www.tiktok.com/@amcupon.ro",  path: "M9 12a4 4 0 104 4V4a5 5 0 005 5" },
                 ].map(s => (
                   <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.label}
-                    className="w-8 h-8 rounded-lg bg-white/5 hover:bg-orange-500 flex items-center justify-center transition-colors">
+                    className="w-8 h-8 rounded-lg bg-white/5 hover:bg-indigo-600 flex items-center justify-center transition-colors">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d={s.path}/>
                     </svg>
@@ -1866,7 +1866,7 @@ export default function Home() {
                   { href: "/categorii/pharma",            label: "Farmacie" },
                   { href: "/categorii",                   label: "Toate categoriile →" },
                 ].map(l => (
-                  <li key={l.href}><a href={l.href} className="hover:text-orange-400 transition-colors">{l.label}</a></li>
+                  <li key={l.href}><a href={l.href} className="hover:text-indigo-400 transition-colors">{l.label}</a></li>
                 ))}
               </ul>
             </div>
@@ -1884,7 +1884,7 @@ export default function Home() {
                   { href: "/cod-reducere/noriel.ro",       label: "Cod Noriel" },
                   { href: "/cod-reducere/elefant.ro",      label: "Cod Elefant" },
                 ].map(l => (
-                  <li key={l.href}><a href={l.href} className="hover:text-orange-400 transition-colors">{l.label}</a></li>
+                  <li key={l.href}><a href={l.href} className="hover:text-indigo-400 transition-colors">{l.label}</a></li>
                 ))}
               </ul>
             </div>
@@ -1911,7 +1911,7 @@ export default function Home() {
                   { href: "/categorii",        label: "Toate categoriile" },
                   { href: "/toate-magazinele", label: "Toate magazinele" },
                 ].map(l => (
-                  <li key={l.href}><a href={l.href} className="hover:text-orange-400 transition-colors">{l.label}</a></li>
+                  <li key={l.href}><a href={l.href} className="hover:text-indigo-400 transition-colors">{l.label}</a></li>
                 ))}
               </ul>
             </div>
@@ -1930,7 +1930,7 @@ export default function Home() {
                 ].map(l => (
                   <li key={l.href}>
                     <a href={l.href} target={l.ext ? "_blank" : undefined} rel={l.ext ? "noopener noreferrer" : undefined}
-                      className="hover:text-orange-400 transition-colors flex items-center gap-1">
+                      className="hover:text-indigo-400 transition-colors flex items-center gap-1">
                       {l.label}
                       {l.ext && (
                         <svg className="w-2.5 h-2.5 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -2055,15 +2055,15 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
   return (
     <div className={`bg-slate-900 rounded-2xl border shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 flex flex-col overflow-hidden group ${expiraAzi ? "border-red-300 ring-1 ring-red-200" : "border-slate-700 dark:border-slate-700"}`}>
 
-      {/* Trust Score bar — rosu pentru expira azi, portocaliu maine, verde normal */}
+      {/* Trust Score bar — rosu pentru expira azi, cyan maine, verde normal */}
       <div className="h-1 bg-slate-100 overflow-hidden">
-        <div className={`h-full transition-all duration-700 rounded-r-full ${expiraAzi ? "bg-gradient-to-r from-red-500 to-red-600 animate-pulse" : expiraMaine ? "bg-gradient-to-r from-orange-400 to-amber-500" : "bg-gradient-to-r from-emerald-400 to-emerald-500"}`} style={{width:`${trustScore}%`}}/>
+        <div className={`h-full transition-all duration-700 rounded-r-full ${expiraAzi ? "bg-gradient-to-r from-red-500 to-red-600 animate-pulse" : expiraMaine ? "bg-gradient-to-r from-cyan-400 to-blue-500" : "bg-gradient-to-r from-emerald-400 to-emerald-500"}`} style={{width:`${trustScore}%`}}/>
       </div>
 
       {/* Header: logo + info + buttons */}
       <a href={`/cod-reducere/${m.magazin}`} className="flex items-start gap-3 p-4">
         {/* Logo */}
-        <div className="w-12 h-12 rounded-xl border border-slate-700 bg-white flex items-center justify-center shrink-0 overflow-hidden group-hover:border-orange-300 transition-colors">
+        <div className="w-12 h-12 rounded-xl border border-slate-700 bg-white flex items-center justify-center shrink-0 overflow-hidden group-hover:border-indigo-300 transition-colors">
           {logoSrc && imgOk ? (
             <img src={logoSrc} alt={numeMagazin} className="w-10 h-10 object-contain" loading="lazy" decoding="async" onError={() => setImgOk(false)}/>
           ) : (
@@ -2077,7 +2077,7 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
         <div className="flex-1 min-w-0">
           <div className="flex items-start justify-between gap-1">
             <div className="min-w-0">
-              <h3 className="font-black text-white text-sm leading-tight group-hover:text-orange-600 transition-colors truncate">
+              <h3 className="font-black text-white text-sm leading-tight group-hover:text-indigo-300 transition-colors truncate">
                 {numeMagazin}
               </h3>
               <p className="text-[11px] text-slate-400 mt-0.5 truncate">{m.categorie}</p>
@@ -2087,7 +2087,7 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
                 <span className="text-[9px] font-black bg-red-100 text-red-600 px-1.5 py-0.5 rounded-full tracking-wide">🔥 HOT</span>
               )}
               {m.exclusiv && (
-                <span className="text-[9px] font-black bg-orange-100 text-orange-600 px-1.5 py-0.5 rounded-full tracking-wide">EXCLUSIV</span>
+                <span className="text-[9px] font-black bg-cyan-100 text-indigo-300 px-1.5 py-0.5 rounded-full tracking-wide">EXCLUSIV</span>
               )}
               <button onClick={e => onToggleFavorit(m.magazin, e)}
                 className="p-1.5 rounded-full hover:bg-slate-100 transition-colors z-10"
@@ -2108,7 +2108,7 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
               </span>
             )}
             {!badgeReducere && m.are_promotie && (
-              <span className="text-[10px] font-bold text-orange-400 bg-orange-500/15 border border-orange-500/25 px-1.5 py-0.5 rounded-full">
+              <span className="text-[10px] font-bold text-indigo-400 bg-cyan-500/15 border border-cyan-500/25 px-1.5 py-0.5 rounded-full">
                 Oferta activa
               </span>
             )}
@@ -2172,11 +2172,11 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
         {promo?.cod_cupon ? (
           revealed ? (
             <div className="space-y-2">
-              <div className="border-2 border-dashed border-orange-400 rounded-xl py-2.5 text-center bg-orange-500/10">
-                <span className="font-mono font-black text-orange-400 tracking-widest text-sm">{promo.cod_cupon}</span>
+              <div className="border-2 border-dashed border-indigo-400 rounded-xl py-2.5 text-center bg-cyan-500/10">
+                <span className="font-mono font-black text-indigo-400 tracking-widest text-sm">{promo.cod_cupon}</span>
               </div>
               <a href={link} target="_blank" rel="noopener noreferrer"
-                className="flex items-center justify-center w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 rounded-xl text-sm transition-colors">
+                className="flex items-center justify-center w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-2.5 rounded-xl text-sm transition-colors">
                 {copiat ? "Copiat! Mergi la magazin" : "Mergi la magazin →"}
               </a>
             </div>
@@ -2186,14 +2186,14 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
                 <span className="font-mono text-slate-400 text-sm">{maskCod(promo.cod_cupon)}</span>
               </div>
               <button onClick={() => onCopiere(m.magazin, promo.cod_cupon, link)}
-                className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 rounded-xl text-sm transition-colors">
+                className="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-2.5 rounded-xl text-sm transition-colors">
                 Copiaza codul + mergi la magazin
               </button>
             </div>
           )
         ) : promo ? (
           <a href={link} target="_blank" rel="noopener noreferrer"
-            className="flex items-center justify-center w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 rounded-xl text-sm transition-colors">
+            className="flex items-center justify-center w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-2.5 rounded-xl text-sm transition-colors">
             Vezi oferta →
           </a>
         ) : (
@@ -2201,7 +2201,7 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
             className={`flex items-center justify-center w-full font-medium py-2.5 rounded-xl text-sm transition-colors ${
               cashbackText
                 ? "bg-teal-500 hover:bg-teal-600 text-white"
-                : "border border-slate-700 hover:border-orange-300 text-slate-500 hover:text-orange-500"
+                : "border border-slate-700 hover:border-indigo-300 text-slate-500 hover:text-indigo-400"
             }`}>
             {cashbackText ? `Viziteaza + ${cashbackText}` : "Viziteaza magazinul"}
           </a>
@@ -2314,9 +2314,9 @@ function NewsletterForm() {
       <form onSubmit={trimite} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
         <input type="email" value={email} onChange={e => { setEmail(e.target.value); setStatus("idle"); setErrMsg(""); }}
           placeholder="adresa@email.ro" disabled={status === "loading"}
-          className="flex-1 px-4 py-3.5 rounded-xl bg-white/10 border border-white/15 text-white text-sm placeholder-white/30 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500/40 disabled:opacity-60 transition-all"/>
+          className="flex-1 px-4 py-3.5 rounded-xl bg-white/10 border border-white/15 text-white text-sm placeholder-white/30 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-cyan-500/40 disabled:opacity-60 transition-all"/>
         <button type="submit" disabled={status === "loading"}
-          className="bg-orange-500 hover:bg-orange-400 disabled:opacity-60 text-white font-black px-7 py-3.5 rounded-xl text-sm transition-colors whitespace-nowrap shadow-lg shadow-orange-500/25">
+          className="bg-indigo-600 hover:bg-indigo-500 disabled:opacity-60 text-white font-black px-7 py-3.5 rounded-xl text-sm transition-colors whitespace-nowrap shadow-lg shadow-cyan-500/25">
           {status === "loading" ? "Se trimite..." : "Aboneaza-te"}
         </button>
       </form>

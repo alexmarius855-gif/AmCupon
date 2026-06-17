@@ -104,7 +104,7 @@ const CONTURI = [
     name: "Salt Bank",
     tagline: "Banca 100% digitala romaneasca — dobanda la cash, fara birou fizic",
     badge: "100% Romanesc",
-    badgeColor: "bg-orange-500",
+    badgeColor: "bg-indigo-600",
     emoji: "🧂",
     cost: "Gratuit",
     rating: "8.7",
@@ -118,7 +118,7 @@ const CONTURI = [
     ],
     dezavantaje: ["Fara optiuni de investitii inca", "Ecosistem mai tanar, mai putine functii"],
     ideal: "Romani care vor banking 100% digital, in limba romana",
-    culoare: "from-orange-600 to-amber-800",
+    culoare: "from-indigo-600 to-violet-800",
   },
 ];
 
@@ -140,7 +140,7 @@ export default function CarduriBancarePage() {
 
         <nav className="bg-slate-900/80 backdrop-blur-sm border-b border-slate-800">
           <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-1.5 text-xs text-slate-500">
-            <Link href="/" className="hover:text-orange-400 transition-colors">Acasa</Link>
+            <Link href="/" className="hover:text-indigo-400 transition-colors">Acasa</Link>
             <span>/</span>
             <span className="text-slate-300 font-medium">Carduri & Conturi Bancare</span>
           </div>
@@ -242,7 +242,7 @@ export default function CarduriBancarePage() {
 
                   <div className="flex flex-col sm:flex-row gap-3">
                     <a href={c.url} target="_blank" rel="nofollow noopener noreferrer"
-                      className="flex-1 bg-orange-500 hover:bg-orange-400 text-white font-black text-sm py-3 px-6 rounded-2xl text-center transition-colors">
+                      className="flex-1 bg-indigo-600 hover:bg-indigo-500 text-white font-black text-sm py-3 px-6 rounded-2xl text-center transition-colors">
                       Deschide cont {c.name} gratuit →
                     </a>
                     <a href={c.program_url} target="_blank" rel="nofollow noopener noreferrer"
@@ -298,9 +298,9 @@ export default function CarduriBancarePage() {
 
         <footer className="border-t border-slate-800 py-6 text-center text-xs text-slate-600">
           &copy; {an} AmCupon.ro &middot;{" "}
-          <Link href="/trading" className="hover:text-orange-400 transition-colors">Trading</Link>{" · "}
-          <Link href="/servicii" className="hover:text-orange-400 transition-colors">Servicii</Link>{" · "}
-          <Link href="/categorii" className="hover:text-orange-400 transition-colors">Categorii</Link>
+          <Link href="/trading" className="hover:text-indigo-400 transition-colors">Trading</Link>{" · "}
+          <Link href="/servicii" className="hover:text-indigo-400 transition-colors">Servicii</Link>{" · "}
+          <Link href="/categorii" className="hover:text-indigo-400 transition-colors">Categorii</Link>
         </footer>
       </div>
     </>

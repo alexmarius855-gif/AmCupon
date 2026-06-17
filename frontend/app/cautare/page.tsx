@@ -65,10 +65,10 @@ export default async function CautarePage({ searchParams }: { searchParams: Prom
                 defaultValue={q || ""}
                 placeholder="Cauta magazin sau categorie..."
                 autoFocus
-                className="w-full border border-gray-200 rounded-full pl-9 pr-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400 bg-gray-50"
+                className="w-full border border-gray-200 rounded-full pl-9 pr-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-gray-50"
               />
             </div>
-            <button type="submit" className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-5 py-2 rounded-full text-sm transition-colors">
+            <button type="submit" className="bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-5 py-2 rounded-full text-sm transition-colors">
               Cauta
             </button>
           </form>
@@ -87,7 +87,7 @@ export default async function CautarePage({ searchParams }: { searchParams: Prom
             <div className="text-5xl mb-4">😕</div>
             <h1 className="text-xl font-black text-gray-900 mb-2">Niciun rezultat pentru &ldquo;{q}&rdquo;</h1>
             <p className="text-gray-500 mb-6">Incearca un alt termen sau browseza categoriile.</p>
-            <Link href="/categorii" className="bg-orange-500 text-white font-bold px-6 py-3 rounded-2xl text-sm hover:bg-orange-600 transition-colors">
+            <Link href="/categorii" className="bg-indigo-600 text-white font-bold px-6 py-3 rounded-2xl text-sm hover:bg-indigo-500 transition-colors">
               Exploreaza categorii
             </Link>
           </div>
@@ -109,20 +109,20 @@ export default async function CautarePage({ searchParams }: { searchParams: Prom
                 const promo = m.promotii[0];
                 return (
                   <Link key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                    className="group bg-white border border-gray-200 hover:border-orange-300 rounded-2xl p-4 transition-all hover:shadow-md flex gap-3 items-start">
+                    className="group bg-white border border-gray-200 hover:border-indigo-300 rounded-2xl p-4 transition-all hover:shadow-md flex gap-3 items-start">
                     <div className="w-11 h-11 rounded-xl border border-gray-100 bg-gray-50 flex items-center justify-center shrink-0 overflow-hidden">
                       {m.logo_url ? (
                         // eslint-disable-next-line @next/next/no-img-element
                         <img src={m.logo_url} alt={nume} className="w-9 h-9 object-contain" />
                       ) : (
-                        <span className="font-black text-orange-500 text-lg">{nume[0]}</span>
+                        <span className="font-black text-indigo-400 text-lg">{nume[0]}</span>
                       )}
                     </div>
                     <div className="flex-1 min-w-0">
-                      <p className="font-black text-gray-900 text-sm group-hover:text-orange-600 truncate">{nume}</p>
+                      <p className="font-black text-gray-900 text-sm group-hover:text-indigo-300 truncate">{nume}</p>
                       <p className="text-[11px] text-gray-400 mb-1">{m.categorie}</p>
                       {m.are_promotie && m.cod_cupon && (
-                        <span className="text-[10px] font-bold text-orange-500 bg-orange-50 border border-orange-200 px-1.5 py-0.5 rounded-full">Cod cupon</span>
+                        <span className="text-[10px] font-bold text-indigo-400 bg-cyan-50 border border-cyan-200 px-1.5 py-0.5 rounded-full">Cod cupon</span>
                       )}
                       {m.are_promotie && !m.cod_cupon && (
                         <span className="text-[10px] font-semibold text-emerald-600 bg-emerald-50 border border-emerald-100 px-1.5 py-0.5 rounded-full">Oferta activa</span>
@@ -138,7 +138,7 @@ export default async function CautarePage({ searchParams }: { searchParams: Prom
       </div>
 
       <footer className="border-t border-gray-200 py-6 text-center text-xs text-gray-400 mt-8">
-        <Link href="/" className="hover:text-orange-500">← Inapoi la AmCupon.ro</Link>
+        <Link href="/" className="hover:text-indigo-400">← Inapoi la AmCupon.ro</Link>
       </footer>
     </div>
   );

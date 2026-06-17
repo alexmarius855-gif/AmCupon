@@ -99,8 +99,8 @@ export default function Navbar() {
 
         {/* Logo */}
         <Link href="/" className="flex items-center gap-1.5 shrink-0 group">
-          <div className="bg-orange-500 group-hover:bg-orange-600 text-white font-black text-sm px-2 py-0.5 rounded-lg tracking-tighter transition-colors">Am</div>
-          <span className="font-black text-white text-xl tracking-tight">Cupon<span className="text-orange-500">.ro</span></span>
+          <div className="bg-indigo-600 group-hover:bg-indigo-500 text-white font-black text-sm px-2 py-0.5 rounded-lg tracking-tighter transition-colors">Am</div>
+          <span className="font-black text-white text-xl tracking-tight">Cupon<span className="text-indigo-400">.ro</span></span>
         </Link>
 
         {/* Search cu autocomplete */}
@@ -118,7 +118,7 @@ export default function Navbar() {
                 onFocus={() => { setFocused(true); if (results.length > 0) setShowDropdown(true); }}
                 onBlur={() => { setFocused(false); setTimeout(() => setShowDropdown(false), 160); }}
                 placeholder="Cauta: eMAG, Answear, Notino..."
-                className="w-full bg-slate-800 border border-slate-700 hover:border-slate-600 focus:border-orange-400 focus:ring-2 focus:ring-orange-400/20 text-slate-100 placeholder-slate-500 rounded-full pl-10 pr-10 py-2.5 text-sm focus:outline-none transition-all"
+                className="w-full bg-slate-800 border border-slate-700 hover:border-slate-600 focus:border-indigo-400 focus:ring-2 focus:ring-indigo-400/20 text-slate-100 placeholder-slate-500 rounded-full pl-10 pr-10 py-2.5 text-sm focus:outline-none transition-all"
               />
               {search && (
                 <button type="button" onClick={() => { setSearch(""); setShowDropdown(false); inputRef.current?.focus(); }}
@@ -140,11 +140,11 @@ export default function Navbar() {
                   <div className="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center shrink-0 overflow-hidden border border-slate-700">
                     {m.logo_url
                       ? <img src={m.logo_url} alt={numeAfisat(m.magazin)} className="w-6 h-6 object-contain"/>
-                      : <span className="text-xs font-black text-orange-500">{numeAfisat(m.magazin)[0]}</span>
+                      : <span className="text-xs font-black text-indigo-400">{numeAfisat(m.magazin)[0]}</span>
                     }
                   </div>
                   <div className="flex-1 min-w-0">
-                    <p className="text-sm font-bold text-white truncate group-hover/item:text-orange-400 transition-colors">{numeAfisat(m.magazin)}</p>
+                    <p className="text-sm font-bold text-white truncate group-hover/item:text-indigo-400 transition-colors">{numeAfisat(m.magazin)}</p>
                     <p className="text-xs text-slate-400 truncate">{m.magazin}</p>
                   </div>
                   <div className="flex items-center gap-1.5 shrink-0">
@@ -159,7 +159,7 @@ export default function Navbar() {
               ))}
               <div className="border-t border-slate-700 mt-1 pt-1">
                 <button onMouseDown={handleSearchSubmit as never}
-                  className="w-full flex items-center gap-2 px-4 py-2.5 text-sm text-orange-400 font-bold hover:bg-slate-800 transition-colors">
+                  className="w-full flex items-center gap-2 px-4 py-2.5 text-sm text-indigo-400 font-bold hover:bg-slate-800 transition-colors">
                   <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
                   </svg>
@@ -174,7 +174,7 @@ export default function Navbar() {
         <nav className="hidden md:flex items-center gap-4 text-sm font-semibold text-slate-300 ml-auto shrink-0">
           {navLinks.map(l => (
             <Link key={l.href} href={l.href}
-              className={`hover:text-orange-500 transition-colors whitespace-nowrap ${pathname === l.href || (l.href !== "/" && pathname.startsWith(l.href)) ? "text-orange-500" : ""}`}>
+              className={`hover:text-indigo-400 transition-colors whitespace-nowrap ${pathname === l.href || (l.href !== "/" && pathname.startsWith(l.href)) ? "text-indigo-400" : ""}`}>
               {l.label}
             </Link>
           ))}
@@ -200,7 +200,7 @@ export default function Navbar() {
             </a>
           </div>
           <Link href="/extensie"
-            className="flex items-center gap-1.5 bg-slate-700 hover:bg-orange-500 text-white px-3.5 py-1.5 rounded-full text-xs font-bold transition-all hover:scale-105 duration-150">
+            className="flex items-center gap-1.5 bg-slate-700 hover:bg-indigo-600 text-white px-3.5 py-1.5 rounded-full text-xs font-bold transition-all hover:scale-105 duration-150">
             🧩 Extensie
           </Link>
         </nav>
@@ -224,12 +224,12 @@ export default function Navbar() {
             </svg>
             <input type="text" value={search} onChange={e => setSearch(e.target.value)}
               placeholder="Cauta magazin..."
-              className="w-full bg-slate-800 border border-slate-700 text-slate-100 placeholder-slate-500 rounded-full pl-9 pr-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400" />
+              className="w-full bg-slate-800 border border-slate-700 text-slate-100 placeholder-slate-500 rounded-full pl-9 pr-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400" />
           </form>
           <nav className="space-y-0.5">
             {mobileLinks.map(l => (
               <Link key={l.href} href={l.href} onClick={() => setMenuOpen(false)}
-                className="flex items-center px-3 py-2.5 rounded-xl text-sm font-semibold text-slate-300 hover:bg-slate-800 hover:text-orange-500 transition-colors">
+                className="flex items-center px-3 py-2.5 rounded-xl text-sm font-semibold text-slate-300 hover:bg-slate-800 hover:text-indigo-400 transition-colors">
                 {l.label}
               </Link>
             ))}

@@ -60,9 +60,9 @@ export default function DespreNoiPage() {
       <header className="bg-white border-b border-gray-200 shadow-sm">
         <div className="max-w-5xl mx-auto px-4 py-3 flex items-center gap-3">
           <Link href="/" className="flex items-center gap-1.5 shrink-0">
-            <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
+            <div className="bg-indigo-600 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
             <span className="font-black text-gray-900 text-xl">Cupon</span>
-            <span className="text-orange-500 font-black text-xl">.ro</span>
+            <span className="text-indigo-400 font-black text-xl">.ro</span>
           </Link>
           <span className="text-gray-300">/</span>
           <span className="text-sm font-semibold text-gray-700">Despre noi</span>
@@ -70,10 +70,10 @@ export default function DespreNoiPage() {
       </header>
 
       {/* HERO */}
-      <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white py-14 px-4">
+      <div className="bg-gradient-to-r from-indigo-600 to-violet-600 text-white py-14 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-3xl md:text-4xl font-black mb-4">Despre AmCupon.ro</h1>
-          <p className="text-orange-100 text-base md:text-lg leading-relaxed">
+          <p className="text-cyan-100 text-base md:text-lg leading-relaxed">
             AmCupon.ro îți aduce cele mai bune coduri de reducere și oferte verificate
             de la peste <strong className="text-white">600 de magazine partenere</strong> din România,
             actualizate zilnic — complet gratuit.
@@ -128,7 +128,7 @@ export default function DespreNoiPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {PASI.map((p) => (
               <div key={p.nr} className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm flex gap-4">
-                <div className="w-10 h-10 rounded-xl bg-orange-500 text-white font-black text-lg flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-xl bg-indigo-600 text-white font-black text-lg flex items-center justify-center shrink-0">
                   {p.nr}
                 </div>
                 <div>
@@ -153,7 +153,7 @@ export default function DespreNoiPage() {
                 { step: "05", text: "Finalizează comanda și bucură-te de economii!" },
               ].map((s) => (
                 <div key={s.step} className="flex items-start gap-4">
-                  <span className="text-orange-500 font-black text-lg w-10 shrink-0">{s.step}</span>
+                  <span className="text-indigo-400 font-black text-lg w-10 shrink-0">{s.step}</span>
                   <p className="text-gray-700 leading-relaxed pt-0.5">{s.text}</p>
                 </div>
               ))}
@@ -162,7 +162,7 @@ export default function DespreNoiPage() {
         </section>
 
         {/* CIFRE */}
-        <section className="bg-gradient-to-r from-orange-500 to-red-500 rounded-3xl p-10 text-white text-center">
+        <section className="bg-gradient-to-r from-indigo-600 to-violet-600 rounded-3xl p-10 text-white text-center">
           <h2 className="text-2xl font-black mb-8">AmCupon.ro în cifre</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
@@ -173,7 +173,7 @@ export default function DespreNoiPage() {
             ].map((c) => (
               <div key={c.label}>
                 <div className="text-3xl md:text-4xl font-black mb-1">{c.nr}</div>
-                <div className="text-orange-200 text-sm">{c.label}</div>
+                <div className="text-cyan-200 text-sm">{c.label}</div>
               </div>
             ))}
           </div>
@@ -188,7 +188,7 @@ export default function DespreNoiPage() {
               Ne poți contacta oricând pe email.
             </p>
             <a href="mailto:contact@amcupon.ro"
-              className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-bold px-6 py-3 rounded-xl transition-colors">
+              className="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-6 py-3 rounded-xl transition-colors">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
@@ -200,7 +200,7 @@ export default function DespreNoiPage() {
       </div>
 
       <div className="max-w-5xl mx-auto px-4 pb-10 text-center">
-        <Link href="/" className="text-sm text-gray-400 hover:text-orange-500 transition-colors">
+        <Link href="/" className="text-sm text-gray-400 hover:text-indigo-400 transition-colors">
           ← Înapoi la AmCupon.ro
         </Link>
       </div>

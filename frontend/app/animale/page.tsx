@@ -34,7 +34,7 @@ const AVANTAJE = [
 function numeAfisat(s: string) {
   return s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" ");
 }
-const CULORI = ["bg-amber-500","bg-orange-500","bg-yellow-600","bg-amber-600","bg-orange-600","bg-yellow-500"];
+const CULORI = ["bg-amber-500","bg-indigo-600","bg-yellow-600","bg-amber-600","bg-indigo-500","bg-yellow-500"];
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -75,14 +75,14 @@ export default function AnimalePage() {
         {/* Breadcrumb */}
         <nav className="bg-white border-b border-gray-100">
           <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-gray-400">
-            <Link href="/" className="hover:text-orange-500">Acasa</Link>
+            <Link href="/" className="hover:text-indigo-400">Acasa</Link>
             <span className="mx-1">/</span>
             <span className="text-gray-700 font-medium">Animale de Companie</span>
           </div>
         </nav>
 
         {/* Hero */}
-        <section className="bg-gradient-to-br from-amber-500 via-orange-500 to-yellow-600 text-white py-12 px-4">
+        <section className="bg-gradient-to-br from-violet-500 via-indigo-500 to-cyan-600 text-white py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">🐾</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Pet Shop cu Reducere {an}</h1>
@@ -154,7 +154,7 @@ export default function AnimalePage() {
                       )}
                       <div>
                         <p className="font-bold text-gray-900 text-sm">{nume}</p>
-                        {m.are_promotie && m.cod_cupon && <span className="text-xs text-orange-500 font-bold">COD</span>}
+                        {m.are_promotie && m.cod_cupon && <span className="text-xs text-indigo-400 font-bold">COD</span>}
                         {m.are_promotie && !m.cod_cupon && <span className="text-xs text-amber-600 font-medium">Oferta</span>}
                       </div>
                     </div>
@@ -175,7 +175,7 @@ export default function AnimalePage() {
               <p className="text-4xl mb-3">🐾</p>
               <p className="font-bold text-gray-700 mb-2">Magazine actualizate zilnic</p>
               <p className="text-gray-400 text-sm mb-4">Revino curand pentru promotii noi la pet shop-uri.</p>
-              <Link href="/toate-magazinele" className="text-orange-500 font-bold hover:text-orange-600 text-sm">
+              <Link href="/toate-magazinele" className="text-indigo-400 font-bold hover:text-indigo-300 text-sm">
                 Toate magazinele &rarr;
               </Link>
             </div>
@@ -187,7 +187,7 @@ export default function AnimalePage() {
           merchantSlugs={["petmart.ro","petmax.ro","bravapet.ro","ehranaanimale.ro","mobilepet.ro","husse.ro"]}
           catSlug="animale"
           titlu="Hrana si accesorii populare pentru animale"
-          culoareAccent="orange"
+          culoareAccent="indigo"
           limit={12}
         />
 
@@ -230,7 +230,7 @@ export default function AnimalePage() {
               { href: "/categorii",  label: "📂 Toate Categoriile" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-gray-100 hover:bg-orange-50 hover:text-orange-600 text-gray-700 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-gray-200 hover:border-orange-200">
+                className="bg-gray-100 hover:bg-cyan-50 hover:text-indigo-300 text-gray-700 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-gray-200 hover:border-cyan-200">
                 {l.label}
               </a>
             ))}
@@ -239,9 +239,9 @@ export default function AnimalePage() {
 
         <footer className="border-t border-gray-200 py-6 text-center text-xs text-gray-400 mt-4">
           &copy; {an} AmCupon.ro &middot;{" "}
-          <Link href="/sanatate" className="hover:text-orange-500">Sanatate</Link>{" · "}
-          <Link href="/farmacie" className="hover:text-orange-500">Farmacie</Link>{" · "}
-          <Link href="/categorii" className="hover:text-orange-500">Categorii</Link>
+          <Link href="/sanatate" className="hover:text-indigo-400">Sanatate</Link>{" · "}
+          <Link href="/farmacie" className="hover:text-indigo-400">Farmacie</Link>{" · "}
+          <Link href="/categorii" className="hover:text-indigo-400">Categorii</Link>
         </footer>
       </div>
     </>

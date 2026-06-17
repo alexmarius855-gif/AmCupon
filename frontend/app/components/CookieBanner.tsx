@@ -36,7 +36,7 @@ export default function CookieBanner() {
           <p className="font-bold text-white mb-0.5">Folosim cookie-uri</p>
           <p className="text-gray-400 leading-relaxed">
             Folosim cookie-uri pentru analiza traficului (Google Analytics), publicitate (Google AdSense) si tracking afiliat (2Performant). Date anonime, fara vanzare catre terti.{" "}
-            <Link href="/confidentialitate" className="text-orange-400 hover:underline">
+            <Link href="/confidentialitate" className="text-indigo-400 hover:underline">
               Politica de confidentialitate
             </Link>
           </p>
@@ -52,7 +52,7 @@ export default function CookieBanner() {
           </button>
           <button
             onClick={accept}
-            className="flex-1 sm:flex-none px-5 py-2 rounded-xl bg-orange-500 hover:bg-orange-600 text-white text-sm font-bold transition-colors"
+            className="flex-1 sm:flex-none px-5 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-bold transition-colors"
           >
             Accept
           </button>

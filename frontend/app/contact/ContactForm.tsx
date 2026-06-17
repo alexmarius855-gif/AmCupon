@@ -46,7 +46,7 @@ export default function ContactForm() {
             name="name"
             placeholder="Prenume Nume"
             required
-            className="w-full border-2 border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-orange-400 transition-colors"
+            className="w-full border-2 border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-indigo-400 transition-colors"
           />
           <ValidationError
             field="name"
@@ -70,7 +70,7 @@ export default function ContactForm() {
             name="email"
             placeholder="adresa@email.ro"
             required
-            className="w-full border-2 border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-orange-400 transition-colors"
+            className="w-full border-2 border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-indigo-400 transition-colors"
           />
           <ValidationError
             field="email"
@@ -91,7 +91,7 @@ export default function ContactForm() {
           <select
             id="subiect"
             name="subiect"
-            className="w-full border-2 border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-orange-400 transition-colors bg-white"
+            className="w-full border-2 border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-indigo-400 transition-colors bg-white"
           >
             {SUBIECTE.map((s) => (
               <option key={s} value={s}>
@@ -115,7 +115,7 @@ export default function ContactForm() {
             placeholder="Descrie-ne problema sau întrebarea ta..."
             required
             rows={5}
-            className="w-full border-2 border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-orange-400 transition-colors resize-none"
+            className="w-full border-2 border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-indigo-400 transition-colors resize-none"
           />
           <ValidationError
             field="message"
@@ -134,14 +134,14 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={state.submitting}
-          className="w-full bg-orange-500 hover:bg-orange-600 disabled:opacity-60 text-white font-black py-3 rounded-xl text-sm transition-colors"
+          className="w-full bg-indigo-600 hover:bg-indigo-500 disabled:opacity-60 text-white font-black py-3 rounded-xl text-sm transition-colors"
         >
           {state.submitting ? "Se trimite..." : "Trimite mesajul →"}
         </button>
 
         <p className="text-xs text-gray-400 text-center">
           Prin trimitere ești de acord cu{" "}
-          <Link href="/confidentialitate" className="underline hover:text-orange-500">
+          <Link href="/confidentialitate" className="underline hover:text-indigo-400">
             politica de confidențialitate
           </Link>
         </p>

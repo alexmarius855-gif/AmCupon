@@ -31,7 +31,7 @@ function numeAfisat(magazin: string): string {
 }
 
 const CULORI = [
-  "bg-orange-500", "bg-blue-500", "bg-green-500", "bg-purple-500",
+  "bg-indigo-600", "bg-blue-500", "bg-green-500", "bg-purple-500",
   "bg-pink-500", "bg-teal-500", "bg-red-500", "bg-indigo-500",
 ];
 
@@ -44,13 +44,13 @@ export default function NotFound() {
       <header className="bg-white border-b border-gray-200 shadow-sm">
         <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-1.5">
-            <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
+            <div className="bg-indigo-600 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
             <span className="font-black text-gray-900 text-xl">Cupon</span>
-            <span className="text-orange-500 font-black text-xl">.ro</span>
+            <span className="text-indigo-400 font-black text-xl">.ro</span>
           </Link>
           <a
             href="/"
-            className="text-sm text-orange-500 hover:text-orange-600 font-semibold transition-colors"
+            className="text-sm text-indigo-400 hover:text-indigo-300 font-semibold transition-colors"
           >
             ← Toate reducerile
           </a>
@@ -80,19 +80,19 @@ export default function NotFound() {
         <div className="flex flex-col sm:flex-row gap-3 mb-12">
           <a
             href="/"
-            className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-7 py-3 rounded-xl transition-colors shadow-sm"
+            className="bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-7 py-3 rounded-xl transition-colors shadow-sm"
           >
             🏠 Acasă — toate reducerile
           </a>
           <a
             href="/toate-magazinele"
-            className="bg-white border-2 border-gray-200 hover:border-orange-300 text-gray-700 hover:text-orange-500 font-bold px-7 py-3 rounded-xl transition-colors"
+            className="bg-white border-2 border-gray-200 hover:border-indigo-300 text-gray-700 hover:text-indigo-400 font-bold px-7 py-3 rounded-xl transition-colors"
           >
             🏪 Toate magazinele
           </a>
           <a
             href="/categorii"
-            className="bg-white border-2 border-gray-200 hover:border-orange-300 text-gray-700 hover:text-orange-500 font-bold px-7 py-3 rounded-xl transition-colors"
+            className="bg-white border-2 border-gray-200 hover:border-indigo-300 text-gray-700 hover:text-indigo-400 font-bold px-7 py-3 rounded-xl transition-colors"
           >
             📂 Categorii
           </a>
@@ -109,7 +109,7 @@ export default function NotFound() {
             <a
               key={c.href}
               href={c.href}
-              className="flex flex-col items-center gap-2 p-4 bg-white rounded-2xl border border-gray-200 hover:border-orange-300 hover:shadow-md transition-all"
+              className="flex flex-col items-center gap-2 p-4 bg-white rounded-2xl border border-gray-200 hover:border-indigo-300 hover:shadow-md transition-all"
             >
               <span className="text-2xl">{c.emoji}</span>
               <span className="text-xs font-semibold text-gray-700">{c.label}</span>
@@ -132,7 +132,7 @@ export default function NotFound() {
                   <a
                     key={store.magazin}
                     href={`/cod-reducere/${store.magazin}`}
-                    className="flex flex-col items-center gap-2 p-4 bg-white rounded-2xl border border-gray-200 hover:border-orange-300 hover:shadow-md transition-all group"
+                    className="flex flex-col items-center gap-2 p-4 bg-white rounded-2xl border border-gray-200 hover:border-indigo-300 hover:shadow-md transition-all group"
                   >
                     <div className={`w-10 h-10 rounded-xl ${culoare} flex items-center justify-center text-white font-black text-lg`}>
                       {nume.charAt(0)}
@@ -141,7 +141,7 @@ export default function NotFound() {
                       {nume}
                     </span>
                     {hasCod && (
-                      <span className="text-xs text-orange-500 font-bold">COD</span>
+                      <span className="text-xs text-indigo-400 font-bold">COD</span>
                     )}
                   </a>
                 );
@@ -153,7 +153,7 @@ export default function NotFound() {
 
       <footer className="border-t border-gray-100 py-5 text-center text-xs text-gray-400">
         © {new Date().getFullYear()} AmCupon.ro ·{" "}
-        <Link href="/contact" className="hover:text-orange-500">Contact</Link>
+        <Link href="/contact" className="hover:text-indigo-400">Contact</Link>
       </footer>
     </div>
   );

@@ -32,7 +32,7 @@ function ProdusCard({
       href={p.url}
       target="_blank"
       rel="sponsored noopener noreferrer"
-      className="group bg-slate-900 border border-slate-700 hover:border-orange-500/70 rounded-2xl overflow-hidden transition-all hover:shadow-[0_0_24px_rgba(249,115,22,0.22)] hover:-translate-y-1 duration-200 flex flex-col relative"
+      className="group bg-slate-900 border border-slate-700 hover:border-cyan-500/70 rounded-2xl overflow-hidden transition-all hover:shadow-[0_0_24px_rgba(249,115,22,0.22)] hover:-translate-y-1 duration-200 flex flex-col relative"
     >
       {/* Image */}
       <div className="relative bg-slate-800 overflow-hidden" style={{ aspectRatio: "1" }}>
@@ -61,7 +61,7 @@ function ProdusCard({
 
         {/* TOP DEAL badge — dreapta sus */}
         {p.discount_pct >= 30 && (
-          <span className="absolute top-2 right-2 bg-gradient-to-r from-orange-500 to-red-500 text-white text-[9px] font-black px-1.5 py-0.5 rounded-full shadow uppercase tracking-wide">
+          <span className="absolute top-2 right-2 bg-gradient-to-r from-indigo-600 to-violet-600 text-white text-[9px] font-black px-1.5 py-0.5 rounded-full shadow uppercase tracking-wide">
             TOP DEAL
           </span>
         )}
@@ -84,18 +84,18 @@ function ProdusCard({
       {/* Info */}
       <div className="p-3 flex flex-col flex-1">
         <p className="text-[10px] text-slate-400 mb-0.5 truncate">{p.brand || merchant}</p>
-        <p className="text-xs font-semibold text-slate-200 line-clamp-2 flex-1 group-hover:text-orange-400 transition-colors leading-snug">
+        <p className="text-xs font-semibold text-slate-200 line-clamp-2 flex-1 group-hover:text-indigo-400 transition-colors leading-snug">
           {p.title}
         </p>
         <div className="flex items-baseline gap-2 mt-2 flex-wrap">
-          <span className="font-black text-orange-400 text-sm">
+          <span className="font-black text-indigo-400 text-sm">
             {p.price > 0 ? `${p.price.toFixed(2)} lei` : "Vezi pretul"}
           </span>
           {p.old_price && p.old_price > p.price && (
             <span className="text-[10px] text-slate-400 line-through">{p.old_price.toFixed(2)} lei</span>
           )}
         </div>
-        <div className="mt-2 flex items-center gap-1 text-[10px] font-bold text-orange-500">
+        <div className="mt-2 flex items-center gap-1 text-[10px] font-bold text-indigo-400">
           Cumpara acum
           <svg className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
@@ -244,7 +244,7 @@ export default function ProduseCategorieClient({
 
           <div className="text-5xl mb-4">{catMeta.emoji}</div>
           <h1 className="text-4xl md:text-5xl font-black tracking-tight leading-tight mb-3">
-            <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #fb923c 0%, #fbbf24 100%)" }}>
+            <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #8b5cf6 0%, #22d3ee 100%)" }}>
               {catMeta.h1}
             </span>
           </h1>
@@ -285,7 +285,7 @@ export default function ProduseCategorieClient({
               Produsele din categoria {catMeta.label} se incarca la urmatoarea actualizare zilnica.
               Total in catalog: {totalAll.toLocaleString()} produse.
             </p>
-            <Link href="/produse" className="bg-orange-500 text-white font-bold px-6 py-3 rounded-xl hover:bg-orange-600 transition-colors text-sm inline-block">
+            <Link href="/produse" className="bg-indigo-600 text-white font-bold px-6 py-3 rounded-xl hover:bg-indigo-500 transition-colors text-sm inline-block">
               Toate produsele ({totalAll.toLocaleString()}) →
             </Link>
           </div>
@@ -304,7 +304,7 @@ export default function ProduseCategorieClient({
                     <input
                       type="text" placeholder="Titlu, brand..."
                       value={search} onChange={(e) => setSearch(e.target.value)}
-                      className="w-full bg-slate-800 border border-slate-700 text-slate-200 placeholder:text-slate-500 rounded-xl pl-9 pr-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
+                      className="w-full bg-slate-800 border border-slate-700 text-slate-200 placeholder:text-slate-500 rounded-xl pl-9 pr-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
                     />
                   </div>
                 </div>
@@ -314,7 +314,7 @@ export default function ProduseCategorieClient({
                   <div className="flex flex-col gap-1 min-w-[140px]">
                     <label className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Brand</label>
                     <select value={brand} onChange={(e) => setBrand(e.target.value)}
-                      className="border border-slate-700 bg-slate-800 text-slate-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500">
+                      className="border border-slate-700 bg-slate-800 text-slate-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
                       <option value="">Toate</option>
                       {brandList.map((b) => <option key={b} value={b}>{b}</option>)}
                     </select>
@@ -326,7 +326,7 @@ export default function ProduseCategorieClient({
                   <div className="flex flex-col gap-1 min-w-[140px]">
                     <label className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Magazin</label>
                     <select value={magazin} onChange={(e) => setMagazin(e.target.value)}
-                      className="border border-slate-700 bg-slate-800 text-slate-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500">
+                      className="border border-slate-700 bg-slate-800 text-slate-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
                       <option value="">Toate ({magazineList.length})</option>
                       {magazineList.map((m) => <option key={m} value={m}>{numeAfisat(m)}</option>)}
                     </select>
@@ -339,7 +339,7 @@ export default function ProduseCategorieClient({
                   <div className="flex gap-1">
                     {[0, 10, 25, 50, 70].map((v) => (
                       <button key={v} onClick={() => setMinDiscount(v)}
-                        className={`px-2.5 py-2 rounded-xl text-xs font-semibold transition-colors ${minDiscount === v ? "bg-orange-500 text-white" : "border border-slate-700 bg-slate-800 text-slate-300 hover:border-orange-500"}`}>
+                        className={`px-2.5 py-2 rounded-xl text-xs font-semibold transition-colors ${minDiscount === v ? "bg-indigo-600 text-white" : "border border-slate-700 bg-slate-800 text-slate-300 hover:border-indigo-500"}`}>
                         {v === 0 ? "Toate" : `>=${v}%`}
                       </button>
                     ))}
@@ -356,7 +356,7 @@ export default function ProduseCategorieClient({
                       type="range" min={0} max={pretMax} step={Math.ceil(pretMax / 50)}
                       value={maxPret || pretMax}
                       onChange={(e) => setMaxPret(Number(e.target.value) >= pretMax ? 0 : Number(e.target.value))}
-                      className="accent-orange-500 w-full h-2 cursor-pointer"
+                      className="accent-indigo-500 w-full h-2 cursor-pointer"
                     />
                     <div className="flex justify-between text-[9px] text-slate-500">
                       <span>0 lei</span><span>{pretMax.toLocaleString()} lei</span>
@@ -368,7 +368,7 @@ export default function ProduseCategorieClient({
                 <div className="flex flex-col gap-1 ml-auto">
                   <label className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Sortare</label>
                   <select value={sort} onChange={(e) => setSort(e.target.value as Sort)}
-                    className="border border-slate-700 bg-slate-800 text-slate-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500">
+                    className="border border-slate-700 bg-slate-800 text-slate-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
                     <option value="discount">Discount maxim</option>
                     <option value="nou">Cele mai noi</option>
                     <option value="pret_asc">Pret crescator</option>
@@ -378,7 +378,7 @@ export default function ProduseCategorieClient({
 
                 {hasFiltre && (
                   <button onClick={resetFiltre}
-                    className="text-sm text-orange-500 font-semibold hover:text-orange-400 border border-orange-500/30 px-3 py-2 rounded-xl bg-slate-900">
+                    className="text-sm text-indigo-400 font-semibold hover:text-indigo-400 border border-cyan-500/30 px-3 py-2 rounded-xl bg-slate-900">
                     Reset
                   </button>
                 )}
@@ -402,7 +402,7 @@ export default function ProduseCategorieClient({
               <div className="text-center py-16 bg-slate-900 rounded-2xl border border-slate-700">
                 <p className="text-3xl mb-3">🔍</p>
                 <p className="font-bold text-slate-200 mb-2">Niciun produs gasit</p>
-                <button onClick={resetFiltre} className="text-orange-500 font-semibold text-sm hover:text-orange-600">
+                <button onClick={resetFiltre} className="text-indigo-400 font-semibold text-sm hover:text-indigo-300">
                   Reseteaza filtrele →
                 </button>
               </div>
@@ -449,7 +449,7 @@ export default function ProduseCategorieClient({
                   className="w-full text-left px-5 py-4 flex items-center justify-between gap-3 hover:bg-slate-800 transition-colors"
                 >
                   <span className="font-semibold text-slate-200 text-sm">{item.q}</span>
-                  <span className={`text-orange-500 text-lg transition-transform ${faqOpen === i ? "rotate-45" : ""}`}>+</span>
+                  <span className={`text-indigo-400 text-lg transition-transform ${faqOpen === i ? "rotate-45" : ""}`}>+</span>
                 </button>
                 {faqOpen === i && (
                   <div className="px-5 pb-5 text-sm text-slate-400 leading-relaxed border-t border-slate-800 pt-3">
@@ -469,15 +469,15 @@ export default function ProduseCategorieClient({
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3">
             {alteCategorii.map(([slug, cm]) => (
               <Link key={slug} href={`/produse/${slug}`}
-                className="group bg-slate-800 border border-slate-700 hover:border-orange-500/50 rounded-xl p-3 text-center hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+                className="group bg-slate-800 border border-slate-700 hover:border-cyan-500/50 rounded-xl p-3 text-center hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
                 <div className="text-2xl mb-1">{cm.emoji}</div>
-                <p className="text-xs font-semibold text-slate-300 group-hover:text-orange-400 transition-colors leading-tight">{cm.label}</p>
+                <p className="text-xs font-semibold text-slate-300 group-hover:text-indigo-400 transition-colors leading-tight">{cm.label}</p>
               </Link>
             ))}
           </div>
           <div className="mt-4 text-center">
             <Link href="/produse"
-              className="text-sm font-bold text-orange-500 hover:text-orange-400 border border-orange-500/30 px-5 py-2 rounded-xl bg-slate-900 inline-block">
+              className="text-sm font-bold text-indigo-400 hover:text-indigo-400 border border-cyan-500/30 px-5 py-2 rounded-xl bg-slate-900 inline-block">
               Toate produsele ({totalAll.toLocaleString()}) →
             </Link>
           </div>

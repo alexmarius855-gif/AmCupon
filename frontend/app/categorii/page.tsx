@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 const CATEGORII = [
   {
     slug: "fashion", label: "Fashion", desc: "Haine & accesorii",
-    from: "#ec4899", to: "#f97316",
+    from: "#ec4899", to: "#6366f1",
     keywords: ["fashion", "clothing", "haine", "shoes", "answear", "aboutyou"],
   },
   {
@@ -43,12 +43,12 @@ const CATEGORII = [
   },
   {
     slug: "sports-outdoors", label: "Sport & Outdoor", desc: "Echipament sportiv & fitness",
-    from: "#f97316", to: "#eab308",
+    from: "#6366f1", to: "#06b6d4",
     keywords: ["sport", "fitness", "outdoor", "sportdepot", "decathlon", "running"],
   },
   {
     slug: "pharma", label: "Farmacie", desc: "Medicamente & suplimente",
-    from: "#ef4444", to: "#f97316",
+    from: "#ef4444", to: "#8b5cf6",
     keywords: ["pharma", "farmacie", "drmax", "sensiblu", "vegis", "medic"],
   },
   {
@@ -63,7 +63,7 @@ const CATEGORII = [
   },
   {
     slug: "books", label: "Carti & Edu", desc: "Carti, e-books, papetarie",
-    from: "#eab308", to: "#f97316",
+    from: "#06b6d4", to: "#6366f1",
     keywords: ["book", "carte", "libris", "carturesti", "bookzone", "edu"],
   },
   {
@@ -196,9 +196,9 @@ export default function CategoriPage() {
       <header className="bg-slate-900 border-b border-slate-800">
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-3">
           <Link href="/" className="flex items-center gap-1.5 shrink-0">
-            <div className="bg-orange-500 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
+            <div className="bg-indigo-600 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
             <span className="font-black text-white text-xl">Cupon</span>
-            <span className="text-orange-500 font-black text-xl">.ro</span>
+            <span className="text-indigo-400 font-black text-xl">.ro</span>
           </Link>
           <span className="text-slate-600">/</span>
           <span className="text-sm font-semibold text-slate-400">Categorii</span>
@@ -291,7 +291,7 @@ export default function CategoriPage() {
           <div className="flex flex-wrap gap-2">
             {NISE_SPECIALE.map(n => (
               <a key={n.href} href={n.href}
-                className="flex items-center gap-1.5 bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-orange-500/50 text-slate-300 hover:text-white text-sm font-semibold px-3 py-2 rounded-xl transition-all">
+                className="flex items-center gap-1.5 bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-cyan-500/50 text-slate-300 hover:text-white text-sm font-semibold px-3 py-2 rounded-xl transition-all">
                 <span>{n.emoji}</span>
                 {n.label}
               </a>
@@ -301,7 +301,7 @@ export default function CategoriPage() {
 
         {/* Back link */}
         <div className="mt-10 text-center">
-          <Link href="/" className="text-sm text-slate-500 hover:text-orange-400 transition-colors">
+          <Link href="/" className="text-sm text-slate-500 hover:text-indigo-400 transition-colors">
             &larr; Inapoi la AmCupon.ro
           </Link>
         </div>

@@ -55,7 +55,7 @@ const HOSTING_LIST = [
     name: "SiteGround",
     tagline: "Hosting profesional cu suport top si viteza exceptionala",
     badge: "Cel mai profesional",
-    badgeColor: "bg-orange-600",
+    badgeColor: "bg-indigo-500",
     emoji: "⚡",
     pret_luna: "3.99€",
     pret_nota: "plan StartUp (primul an)",
@@ -160,7 +160,7 @@ export default function HostingPage() {
         <h2 className="text-2xl font-black text-white mb-3">Top 3 Hosteri pentru Romania</h2>
         <div className="bg-slate-900 border border-slate-800 rounded-xl p-4 mb-6">
           <p className="text-slate-300 text-sm text-center">
-            <strong className="text-white">Concluzia scurta:</strong> Incepi un site? Alege <span className="text-violet-400 font-bold">Hostinger</span> — cel mai ieftin, cel mai usor. Ai deja trafic si vrei performanta? <span className="text-orange-400 font-bold">SiteGround</span>. Vrei cloud si scalare? <span className="text-blue-400 font-bold">Cloudways</span>.
+            <strong className="text-white">Concluzia scurta:</strong> Incepi un site? Alege <span className="text-violet-400 font-bold">Hostinger</span> — cel mai ieftin, cel mai usor. Ai deja trafic si vrei performanta? <span className="text-indigo-400 font-bold">SiteGround</span>. Vrei cloud si scalare? <span className="text-blue-400 font-bold">Cloudways</span>.
           </p>
         </div>
 
