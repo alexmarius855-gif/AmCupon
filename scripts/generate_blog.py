@@ -215,7 +215,7 @@ Sistemul nostru verifica promotiile de la {nume} de **6 ori pe zi** (la fiecare 
         "excerpt": f"Coduri reducere {nume} verificate in {luna} {an}. {len(promotii)} promotii active, rata succes {procent}%. Ghid complet + FAQ pe AmCupon.ro.",
         "category": categorie,
         "magazin":  slug_mag,
-        "cover":    f"https://picsum.photos/seed/{slug_mag}/800/400",
+        "cover":    store.get("logo_url") or f"https://picsum.photos/seed/{slug_mag}/800/400",
         "content":  content,
         "tip":      "magazin",
     }
