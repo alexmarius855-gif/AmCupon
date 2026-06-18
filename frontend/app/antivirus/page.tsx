@@ -31,11 +31,22 @@ const TIPURI_PROTECTIE = [
   { emoji: "🔍", titlu: "Dark Web Monitor", desc: "Alerte cand datele tale apar in breach-uri" },
 ];
 
+// ── LINKURI AFILIATE ── inlocuieste cu linkurile tale dupa aprobare ────────
+// Bitdefender: aplica prin Impact.com (cont existent AmCupon) — app.impact.com/campaign-promo-signup/Bitdefender.brand
+// Norton: direct, formular propriu — us.norton.com/affiliates
+// ESET: via CJ Affiliate (cont nou necesar) — eset.com/us/business/partner/online-affiliates
+// Kaspersky: via CJ Affiliate (acelasi cont CJ ca ESET) — kaspersky.com/partners/affiliate
+const LINK_BITDEFENDER = "https://www.bitdefender.com/?ref=amcupon";
+const LINK_NORTON      = "https://us.norton.com/?ref=amcupon";
+const LINK_ESET        = "https://www.eset.com/ro/?ref=amcupon";
+const LINK_KASPERSKY   = "https://www.kaspersky.com/?ref=amcupon";
+// ──────────────────────────────────────────────────────────────────────────
+
 const COMPARATIV = [
-  { brand: "Bitdefender", nota: "9.8/10", pret: "de la 45 lei/an", highlight: "Cel mai bun detectie malware", culoare: "bg-red-600" },
-  { brand: "Norton 360", nota: "9.5/10", pret: "de la 59 lei/an", highlight: "VPN nelimitat inclus", culoare: "bg-yellow-500" },
-  { brand: "ESET NOD32", nota: "9.3/10", pret: "de la 39 lei/an", highlight: "Cel mai usor pe sistem", culoare: "bg-blue-600" },
-  { brand: "Kaspersky", nota: "9.1/10", pret: "de la 49 lei/an", highlight: "Protectie bancara excelenta", culoare: "bg-emerald-600" },
+  { brand: "Bitdefender", nota: "9.8/10", pret: "de la 45 lei/an", highlight: "Cel mai bun detectie malware", culoare: "bg-red-600", url: LINK_BITDEFENDER },
+  { brand: "Norton 360", nota: "9.5/10", pret: "de la 59 lei/an", highlight: "VPN nelimitat inclus", culoare: "bg-yellow-500", url: LINK_NORTON },
+  { brand: "ESET NOD32", nota: "9.3/10", pret: "de la 39 lei/an", highlight: "Cel mai usor pe sistem", culoare: "bg-blue-600", url: LINK_ESET },
+  { brand: "Kaspersky", nota: "9.1/10", pret: "de la 49 lei/an", highlight: "Protectie bancara excelenta", culoare: "bg-emerald-600", url: LINK_KASPERSKY },
 ];
 
 function numeAfisat(s: string) { return s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" "); }
@@ -102,7 +113,8 @@ export default function AntivirusPage() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {COMPARATIV.map(c => (
-              <div key={c.brand} className="bg-slate-900 border border-slate-800 hover:border-red-500/40 rounded-2xl p-5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-red-500/10">
+              <a key={c.brand} href={c.url} target="_blank" rel="sponsored noopener noreferrer"
+                className="block bg-slate-900 border border-slate-800 hover:border-red-500/40 rounded-2xl p-5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-red-500/10">
                 <div className={`w-11 h-11 ${c.culoare} rounded-xl flex items-center justify-center text-white font-black text-sm mb-4`}>{c.brand[0]}</div>
                 <h3 className="font-black text-white text-base mb-1">{c.brand}</h3>
                 <p className="text-xs text-slate-400 mb-3">{c.highlight}</p>
@@ -110,7 +122,7 @@ export default function AntivirusPage() {
                   <span className="text-indigo-400 font-black text-sm">{c.pret}</span>
                   <span className="bg-emerald-500/15 border border-emerald-500/25 text-emerald-400 text-xs font-bold px-2 py-0.5 rounded-full">{c.nota}</span>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </section>
