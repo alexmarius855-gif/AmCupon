@@ -74,7 +74,7 @@ async function sendWelcomeEmail(email: string, apiKey: string) {
     <div style="padding:32px;">
       <p style="color:#374151;font-size:15px;line-height:1.6;margin:0 0 24px;">
         Salut! Îți mulțumim că te-ai abonat la <strong>AmCupon.ro</strong>.
-        De acum înainte vei fi primul care află codurile de reducere active și ofertele exclusive de la peste <strong>288 magazine partenere</strong>.
+        De acum înainte vei fi primul care află codurile de reducere active și ofertele exclusive de la peste <strong>370 magazine partenere</strong>.
       </p>
       <!-- CTA principal -->
       <div style="text-align:center;margin:32px 0;">
@@ -100,7 +100,7 @@ async function sendWelcomeEmail(email: string, apiKey: string) {
       <!-- Magazine top -->
       <p style="color:#6b7280;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 12px;">Magazine cu oferte active</p>
       <div style="margin-bottom:32px;">
-        ${["emag.ro","fashiondays.ro","notino.ro","altex.ro","drmax.ro"].map(m => {
+        ${["emag.ro","fashiondays.ro","drmax.ro","noriel.ro","carturesti.ro"].map(m => {
           const label = m.split(".")[0].charAt(0).toUpperCase() + m.split(".")[0].slice(1);
           return `<a href="https://amcupon.ro/cod-reducere/${m}" style="display:inline-block;margin:4px;padding:6px 14px;background:#eef2ff;border:1px solid #c7d2fe;border-radius:20px;text-decoration:none;color:#4338ca;font-size:13px;font-weight:700;">Cod ${label}</a>`;
         }).join("")}
@@ -124,7 +124,7 @@ async function sendWelcomeEmail(email: string, apiKey: string) {
 </body>
 </html>`;
 
-  await fetch("https://api.brevo.com/v3/smtp/email", {
+  const res = await fetch("https://api.brevo.com/v3/smtp/email", {
     method: "POST",
     headers: {
       "api-key": apiKey,
@@ -138,6 +138,12 @@ async function sendWelcomeEmail(email: string, apiKey: string) {
       tags: ["welcome"],
     }),
   });
+  if (!res.ok) {
+    // Nu mai inghitim eroarea in tacere - daca expeditorul nu e verificat in
+    // Brevo (cauza cunoscuta, vezi send_newsletter.py), vrem sa apara in logs.
+    const body = await res.text().catch(() => "");
+    console.error("[newsletter] Welcome email failed:", res.status, body);
+  }
 }
 
 export async function OPTIONS(request: Request) {

@@ -188,11 +188,11 @@ jobs:
           BREVO_SENDER_EMAIL: newsletter@amcupon.ro
           BREVO_SENDER_NAME:  AmCupon.ro
         run: |
-          if [ -n "$BREVO_SMTP_PASS" ]; then
-            echo "Trimite newsletter via Brevo SMTP..."
+          if [ -n "$BREVO_API_KEY" ]; then
+            echo "Trimite newsletter via Brevo API..."
             python send_newsletter.py
           else
-            echo "BREVO_SMTP_PASS nu e setat — skip newsletter"
+            echo "BREVO_API_KEY nu e setat — skip newsletter (acesta e folosit pentru campanie, nu BREVO_SMTP_PASS)"
           fi
 
       # ── 10. Telegram canal oferte ──────────────────────────────────────────

@@ -170,13 +170,13 @@ def make_html(top_n: list, data_str: str, is_test: bool = False, total_magazine:
             f'<img src="{logo}" alt="{name}" height="36" '
             f'style="max-height:36px;max-width:110px;object-fit:contain;margin-bottom:6px;">'
             if logo else
-            f'<div style="font-weight:900;font-size:17px;color:#f97316;">{name}</div>'
+            f'<div style="font-weight:900;font-size:17px;color:#4f46e5;">{name}</div>'
         )
 
         cod_html = (
-            f'<div style="margin:10px 0;padding:8px 16px;background:#fff7ed;'
-            f'border:2px dashed #f97316;border-radius:6px;text-align:center;'
-            f'font-family:monospace;font-size:16px;font-weight:bold;color:#c2410c;'
+            f'<div style="margin:10px 0;padding:8px 16px;background:#eef2ff;'
+            f'border:2px dashed #6366f1;border-radius:6px;text-align:center;'
+            f'font-family:monospace;font-size:16px;font-weight:bold;color:#4338ca;'
             f'letter-spacing:2px;">{cod}</div>'
             if cod else ""
         )
@@ -203,7 +203,7 @@ def make_html(top_n: list, data_str: str, is_test: bool = False, total_magazine:
                   {titlu_scurt}{zile_badge}
                 </div>
                 {cod_html}
-                <a href="{link}" style="display:inline-block;margin-top:10px;background:#f97316;
+                <a href="{link}" style="display:inline-block;margin-top:10px;background:#4f46e5;
                    color:#fff;text-decoration:none;padding:8px 18px;border-radius:7px;
                    font-size:13px;font-weight:700;">Cumpara acum &rarr;</a>
               </td>
@@ -228,7 +228,7 @@ def make_html(top_n: list, data_str: str, is_test: bool = False, total_magazine:
 <title>Top oferte &mdash; AmCupon.ro</title></head>
 <body style="margin:0;padding:0;background:#f1f5f9;font-family:Arial,'Helvetica Neue',sans-serif;">
 <div style="max-width:620px;margin:24px auto;padding:0 12px;">
-  <div style="background:linear-gradient(135deg,#ea580c,#f97316,#dc2626);
+  <div style="background:linear-gradient(135deg,#4338ca,#4f46e5,#0891b2);
               border-radius:16px 16px 0 0;padding:32px;text-align:center;">
     <a href="{SITE_URL}" style="text-decoration:none;display:inline-block;margin-bottom:14px;">
       <span style="background:rgba(255,255,255,0.2);color:#fff;font-weight:900;font-size:14px;
@@ -249,20 +249,20 @@ def make_html(top_n: list, data_str: str, is_test: bool = False, total_magazine:
     </p>
     {cards_html}
     <div style="text-align:center;margin-top:20px;padding-top:16px;border-top:1px solid #e5e7eb;">
-      <a href="{SITE_URL}" style="display:inline-block;background:#f97316;color:#fff;
+      <a href="{SITE_URL}" style="display:inline-block;background:#4f46e5;color:#fff;
          text-decoration:none;padding:14px 36px;border-radius:12px;font-size:15px;font-weight:900;
-         box-shadow:0 4px 16px rgba(249,115,22,0.25);">
+         box-shadow:0 4px 16px rgba(99,102,241,0.25);">
         Vezi toate ofertele &rarr;
       </a>
       <p style="color:#9ca3af;font-size:12px;margin-top:10px;">
-        {total_magazine if total_magazine else '290+'} magazine &bull; Actualizat zilnic &bull; 100% gratuit
+        {total_magazine if total_magazine else '370+'} magazine &bull; Actualizat zilnic &bull; 100% gratuit
       </p>
     </div>
   </div>
 
   <div style="background:#1e293b;border-radius:0 0 16px 16px;padding:20px 28px;text-align:center;">
     <p style="color:#94a3b8;font-size:12px;margin:0 0 6px;">
-      <a href="{SITE_URL}" style="color:#f97316;text-decoration:none;font-weight:700;">AmCupon.ro</a>
+      <a href="{SITE_URL}" style="color:#22d3ee;text-decoration:none;font-weight:700;">AmCupon.ro</a>
       &bull; Coduri reducere verificate zilnic din Romania
     </p>
     <p style="color:#475569;font-size:11px;margin:0 0 10px;line-height:1.5;">
