@@ -78,6 +78,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/carduri-bancare`,     lastModified: new Date(), changeFrequency: "weekly",  priority: 0.85 },
     { url: `${BASE_URL}/piese-auto`,          lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
     { url: `${BASE_URL}/echipament-moto`,     lastModified: new Date(), changeFrequency: "weekly",  priority: 0.8  },
+    { url: `${BASE_URL}/rochii-mireasa`,      lastModified: new Date(), changeFrequency: "weekly",  priority: 0.8  },
 
     // ─── Pagini produse pe categorie (/produse/[categorie]) ─────────────────
     ...PRODUSE_CATEGORII.map((slug) => ({

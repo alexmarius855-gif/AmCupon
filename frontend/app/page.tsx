@@ -106,6 +106,7 @@ const CATEGORII_INTL = [
   { href: "/cursuri-online",  emoji: "🎓", label: "Cursuri Online",    desc: "Udemy, Coursera, Skillshare",        from: "#4338ca", to: "#7c3aed", badge: "" },
   { href: "/piese-auto",      emoji: "🔧", label: "Piese Auto",        desc: "Anvelope, jante, detailing",         from: "#1e3a8a", to: "#0f766e", badge: "NEW" },
   { href: "/echipament-moto", emoji: "🏍️", label: "Echipament Moto",   desc: "Casti, geci, piese moto",            from: "#155e75", to: "#3730a3", badge: "NEW" },
+  { href: "/rochii-mireasa",  emoji: "👰", label: "Rochii Mireasa",    desc: "Rochii nunta si ocazie",             from: "#7c3aed", to: "#0891b2", badge: "NEW" },
 ];
 
 const BRAND_PAGES = [
