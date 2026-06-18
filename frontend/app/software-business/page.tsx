@@ -13,6 +13,12 @@ export const metadata: Metadata = {
 
 const TOOLS_INTL = [
   {
+    categ: "Marketplace SaaS Deals",
+    items: [
+      { name: "AppSumo", desc: "Marketplace cu oferte lifetime deal la zeci de tool-uri SaaS — plata o singura data, acces pe viata, reduceri pana la 90%.", pret: "de la 29$ (lifetime)", comision: "program afiliat Impact.com", badge: "Oferte lifetime", url: "https://appsumo.8odi.net/AgnqdR", program: "appsumo.com/affiliate" },
+    ],
+  },
+  {
     categ: "SEO & Marketing",
     items: [
       { name: "Semrush", desc: "Unealta SEO #1 la nivel mondial. Cercetare cuvinte, audit site, competitor analysis.", pret: "de la 99$/luna", comision: "200$ per vanzare", badge: "Comision maxim", url: "https://semrush.com", program: "semrush.com/lp/inter-affiliate" },

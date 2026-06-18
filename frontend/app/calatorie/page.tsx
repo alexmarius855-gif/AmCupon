@@ -20,6 +20,10 @@ export const metadata: Metadata = {
 };
 
 const TOP_TRAVEL = ["booking.com","airbnb.com","trip.com","rentalcars.com","samsonite.com","delsey.com"];
+const PARTENERI_INTL = [
+  { nume: "KKday", emoji: "🎟️", desc: "Excursii, tururi ghidate si activitati locale in Asia si nu numai — rezervare instanta.", url: "https://kkday.sjv.io/n4P9qx" },
+  { nume: "Pelago by Singapore Airlines", emoji: "✈️", desc: "Experiente si excursii curate de Singapore Airlines — de la city tours la activitati exclusive.", url: "https://pelago.pxf.io/3kyVBv" },
+];
 const CAT_TRAVEL = ["travel","calatorie","vacante","turism","tourism","luggage","transport"];
 const DESTINATII = [
   { emoji: "🏔️", label: "Munte Romania", desc: "Bucegi, Retezat, Apuseni" },
@@ -154,6 +158,24 @@ export default function CalatoriePage() {
           culoareAccent="sky"
           limit={12}
         />
+
+        {/* Parteneri internationali (Impact.com) */}
+        <section className="max-w-6xl mx-auto px-4 pb-10">
+          <h2 className="text-xl font-black text-gray-900 mb-5">Excursii & activitati internationale</h2>
+          <div className="grid sm:grid-cols-2 gap-4">
+            {PARTENERI_INTL.map(p => (
+              <a key={p.nume} href={p.url} target="_blank" rel="sponsored noopener noreferrer"
+                className="bg-sky-50 border border-sky-100 hover:border-sky-300 rounded-2xl p-5 transition-all hover:shadow-md flex flex-col gap-2">
+                <div className="flex items-center gap-2">
+                  <span className="text-2xl">{p.emoji}</span>
+                  <span className="font-black text-gray-900">{p.nume}</span>
+                </div>
+                <p className="text-gray-500 text-xs">{p.desc}</p>
+                <p className="text-xs font-bold text-sky-500 mt-1">Vezi oferte →</p>
+              </a>
+            ))}
+          </div>
+        </section>
 
         {/* SEO */}
         <section className="bg-gray-50 border-t border-gray-200 py-10 px-4">

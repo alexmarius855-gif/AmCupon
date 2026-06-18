@@ -390,6 +390,31 @@ const AI_TOOLS = [
   },
   {
     rank: 15,
+    name: "Wegic",
+    tagline: "Construieste un site web complet AI, dintr-un singur prompt",
+    badge: "Website builder AI",
+    badgeColor: "bg-fuchsia-600",
+    emoji: "🪄",
+    comision: "Vezi cont",
+    comision_tip: "program afiliat via Impact.com",
+    cookie: "necunoscut",
+    pret_min: "plan gratuit disponibil",
+    rating: "8.0",
+    url: "https://wegic-ai.pxf.io/B5ODN9",
+    program_url: "https://wegic-ai.pxf.io/B5ODN9",
+    pros: [
+      "Genereaza site complet (design + continut) dintr-o singura descriere",
+      "Nisa noua, in crestere — putina concurenta intre afiliati inca",
+      "Plan gratuit pentru a incepe — usor de demonstrat in continut",
+      "Util pentru audiente non-tehnice (antreprenori, freelanceri)",
+    ],
+    cons: ["Brand nou, mai putin cunoscut ca Wix/Squarespace", "Termeni de comision neconfirmati public"],
+    ideal: "Bloguri despre antreprenoriat, freelancing, no-code tools",
+    cat: "Website Builder AI",
+    catColor: "#d946ef",
+  },
+  {
+    rank: 16,
     name: "LiveChat",
     tagline: "Customer support AI — comision lifetime recurent",
     badge: "Lifetime comision",
@@ -423,6 +448,7 @@ const CAT_COLORS: Record<string, string> = {
   "Voice AI": "#eab308",
   "Design AI": "#a855f7",
   "Customer Support AI": "#22c55e",
+  "Website Builder AI": "#d946ef",
 };
 
 const CATEGORII = [

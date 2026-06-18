@@ -8,6 +8,10 @@ import Link from "next/link";
 const LINK_NORDVPN    = "https://nordvpn.com/?aff_id=AMCUPON";   // inlocuieste cu Impact.com link
 const LINK_SURFSHARK  = "https://surfshark.com/?coupon=amcupon";  // inlocuieste cu link afiliat
 const LINK_EXPRESSVPN = "https://expressvpn.com/?ref=amcupon";   // inlocuieste cu link afiliat
+// Linkuri reale, aprobate pe Impact.com (18.06.2026)
+const LINK_ADGUARD_VPN = "https://adguard.sjv.io/5kyXR2";
+const LINK_ICEVPN      = "https://iceprivacyltd.pxf.io/jRQMNn";
+const LINK_IPROYAL     = "https://iproyal.sjv.io/k497yM";
 // ──────────────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
@@ -91,6 +95,23 @@ const VPN_LIST = [
     ],
     cons: ["Cel mai scump dintre top 3", "Maxim 8 dispozitive simultan"],
     ideal: "Utilizatori avansati, streaming 4K, business",
+  },
+];
+
+const ALTE_VPN = [
+  {
+    name: "AdGuard VPN",
+    emoji: "🛡️",
+    desc: "De la echipa AdGuard, cunoscuta pentru bloggere de reclame. VPN simplu, no-logs, fara reclame in aplicatie.",
+    url: LINK_ADGUARD_VPN,
+    ideal: "Cei care vor un VPN simplu, de la un brand deja cunoscut pentru confidentialitate",
+  },
+  {
+    name: "IceVPN",
+    emoji: "🧊",
+    desc: "VPN mai mic, optiune buna pentru cei care cauta un pret accesibil fara functii avansate.",
+    url: LINK_ICEVPN,
+    ideal: "Buget redus, utilizare de baza (navigare sigura, Wi-Fi public)",
   },
 ];
 
@@ -208,6 +229,37 @@ export default function VpnPage() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Alte VPN-uri verificate */}
+      <section className="max-w-5xl mx-auto px-4 py-8 border-t border-slate-800">
+        <h2 className="text-xl font-black text-white mb-2">Alte VPN-uri verificate</h2>
+        <p className="text-slate-500 text-sm mb-5">Optiuni suplimentare, pentru cazuri specifice sau buget mai mic.</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {ALTE_VPN.map((v) => (
+            <div key={v.name} className="bg-slate-900 border border-slate-800 rounded-xl p-5 flex flex-col gap-3">
+              <div className="flex items-center gap-2">
+                <span className="text-xl">{v.emoji}</span>
+                <span className="font-black text-white">{v.name}</span>
+              </div>
+              <p className="text-slate-400 text-xs">{v.desc}</p>
+              <p className="text-[11px] text-slate-500">Ideal pentru: <span className="text-slate-400">{v.ideal}</span></p>
+              <a href={v.url} target="_blank" rel="sponsored noopener noreferrer"
+                className="mt-auto bg-slate-700 hover:bg-slate-600 text-white text-sm font-bold py-2.5 rounded-lg text-center transition-all">
+                Incearca {v.name} →
+              </a>
+            </div>
+          ))}
+        </div>
+        <div className="mt-4 bg-slate-900/60 border border-slate-800 rounded-xl p-4 flex items-center justify-between gap-4 flex-wrap">
+          <p className="text-xs text-slate-400">
+            <strong className="text-slate-200">IPRoyal</strong> — nu e un VPN clasic, ci o retea de proxy rezidential. Util pentru web scraping, verificare reclame sau administrare de conturi multiple, nu pentru streaming general.
+          </p>
+          <a href={LINK_IPROYAL} target="_blank" rel="sponsored noopener noreferrer"
+            className="shrink-0 text-xs font-bold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded-lg transition-all">
+            Vezi IPRoyal →
+          </a>
         </div>
       </section>
 
