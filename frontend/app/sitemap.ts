@@ -165,6 +165,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ─── Tool pages ─────────────────────────────────────────────────────────
     { url: `${BASE_URL}/top-reduceri`,            lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
     { url: `${BASE_URL}/calculator`,              lastModified: new Date(), changeFrequency: "monthly", priority: 0.75 },
+    { url: `${BASE_URL}/calculator-salariu`,      lastModified: new Date(), changeFrequency: "monthly", priority: 0.8  },
 
     // ─── Pagini utilitare ────────────────────────────────────────────────────
     { url: `${BASE_URL}/newsletter`,              lastModified: new Date(), changeFrequency: "monthly", priority: 0.5 },

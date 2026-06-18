@@ -88,6 +88,7 @@ export default function Navbar() {
     { href: "/comparator", label: "⚖️ Comparator magazine" },
     { href: "/top-reduceri", label: "⭐ Top reduceri" },
     { href: "/calculator", label: "🧮 Calculator" },
+    { href: "/calculator-salariu", label: "💰 Calculator Salariu" },
     { href: "/extensie", label: "🧩 Extensie Chrome" },
     { href: "/ai-tools", label: "🧠 Programe Afiliere AI" },
     { href: "/newsletter", label: "📧 Newsletter" },
