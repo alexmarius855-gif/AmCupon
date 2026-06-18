@@ -31,7 +31,7 @@ const AVANTAJE = [
 ];
 
 function numeAfisat(s: string) { return s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" "); }
-const CULORI = ["bg-amber-500","bg-yellow-500","bg-indigo-500","bg-lime-500","bg-amber-600","bg-yellow-600"];
+const CULORI = ["bg-indigo-600","bg-indigo-600","bg-indigo-500","bg-lime-500","bg-indigo-600","bg-indigo-600"];
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Cărți Online cu Reducere 2026","url":"https://amcupon.ro/carti","description":"Coduri reducere carti online Romania — Libris, Elefant, Carturesti" };
 
 export default function CartiPage() {
@@ -50,20 +50,20 @@ export default function CartiPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-white">
-        <nav className="bg-white border-b border-gray-100">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-gray-400">
+      <div className="min-h-screen bg-slate-950">
+        <nav className="bg-slate-950 border-b border-slate-800">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-slate-500">
             <Link href="/" className="hover:text-indigo-400">Acasă</Link>
             <span className="mx-1">/</span>
-            <span className="text-gray-700 font-medium">Cărți Online cu Reducere</span>
+            <span className="text-slate-300 font-medium">Cărți Online cu Reducere</span>
           </div>
         </nav>
 
-        <section className="bg-gradient-to-br from-violet-500 via-indigo-500 to-cyan-500 text-white py-12 px-4">
+        <section className="bg-gradient-to-br from-indigo-700 via-blue-700 to-cyan-700 text-white py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">📚</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Cărți Online cu Reducere {an}</h1>
-            <p className="text-amber-100 text-lg mb-6 max-w-xl mx-auto">
+            <p className="text-indigo-100 text-lg mb-6 max-w-xl mx-auto">
               Coduri de reducere verificate la Libris, Elefant, Cărturești și alte librării online din România
             </p>
             <div className="flex flex-wrap justify-center gap-2">
@@ -75,13 +75,13 @@ export default function CartiPage() {
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-gray-900 mb-6 text-center">Ce găsești la librăriile online</h2>
+          <h2 className="text-xl font-black text-white mb-6 text-center">Ce găsești la librăriile online</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {AVANTAJE.map(a => (
-              <div key={a.titlu} className="bg-amber-50 border border-amber-100 rounded-2xl p-5">
+              <div key={a.titlu} className="bg-slate-900 border border-slate-800 rounded-2xl p-5">
                 <div className="text-3xl mb-2">{a.icon}</div>
-                <h3 className="font-bold text-gray-900 text-sm mb-1">{a.titlu}</h3>
-                <p className="text-xs text-gray-500">{a.desc}</p>
+                <h3 className="font-bold text-white text-sm mb-1">{a.titlu}</h3>
+                <p className="text-xs text-slate-400">{a.desc}</p>
               </div>
             ))}
           </div>
@@ -90,7 +90,7 @@ export default function CartiPage() {
         <section className="max-w-6xl mx-auto px-4 pb-10">
           <div className="flex items-center gap-3 mb-5">
             
-            <h2 className="text-xl font-black text-gray-900">Librării online cu reduceri active</h2>
+            <h2 className="text-xl font-black text-white">Librării online cu reduceri active</h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {magazine.map((m, i) => {
@@ -99,10 +99,10 @@ export default function CartiPage() {
               const promo = m.promotii[0];
               return (
                 <a key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                  className="group bg-white border border-gray-200 hover:border-amber-300 rounded-2xl p-4 transition-all hover:shadow-md">
+                  className="group bg-slate-900 border border-slate-800 hover:border-indigo-500/40 rounded-2xl p-4 transition-all hover:shadow-md">
                   <div className="flex items-center gap-3 mb-3">
                     {m.logo_url ? (
-                      <div className="w-10 h-10 rounded-xl overflow-hidden bg-gray-50 border border-gray-100 shrink-0">
+                      <div className="w-10 h-10 rounded-xl overflow-hidden bg-white border border-slate-800 shrink-0">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img src={m.logo_url} alt={`Logo ${nume}`} className="w-full h-full object-contain" loading="lazy" />
                       </div>
@@ -112,18 +112,18 @@ export default function CartiPage() {
                       </div>
                     )}
                     <div>
-                      <p className="font-bold text-gray-900 text-sm">{nume}</p>
+                      <p className="font-bold text-white text-sm">{nume}</p>
                       {m.are_promotie && m.cod_cupon && <span className="text-xs text-indigo-400 font-bold">COD</span>}
-                      {m.are_promotie && !m.cod_cupon && <span className="text-xs text-amber-500 font-medium">Ofertă</span>}
+                      {m.are_promotie && !m.cod_cupon && <span className="text-xs text-cyan-400 font-medium">Ofertă</span>}
                     </div>
                   </div>
                   {promo ? (
-                    <p className="text-gray-500 text-xs line-clamp-2">{promo.nume}</p>
+                    <p className="text-slate-400 text-xs line-clamp-2">{promo.nume}</p>
                   ) : (
-                    <p className="text-gray-400 text-xs italic">Verifică ofertele curente</p>
+                    <p className="text-slate-500 text-xs italic">Verifică ofertele curente</p>
                   )}
                   <div className="flex justify-end mt-2">
-                    <span className="text-xs text-amber-500 font-semibold group-hover:text-amber-600">Vezi →</span>
+                    <span className="text-xs text-cyan-400 font-semibold group-hover:text-cyan-400">Vezi →</span>
                   </div>
                 </a>
               );
@@ -135,20 +135,20 @@ export default function CartiPage() {
           merchantSlugs={["libris.ro","elefant.ro","carturesti.ro","librarie.net","bookhub.ro"]}
           catSlug="carti"
           titlu="Cărți populare cu reducere"
-          culoareAccent="amber"
+          culoareAccent="indigo"
           limit={12}
         />
 
-        <section className="bg-gray-50 border-t border-gray-200 py-10 px-4">
+        <section className="bg-slate-900 border-t border-slate-800 py-10 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-gray-900 mb-5">Ghid: Cărți ieftine online în România</h2>
-            <div className="space-y-4 text-sm text-gray-600 leading-relaxed">
+            <h2 className="text-xl font-black text-white mb-5">Ghid: Cărți ieftine online în România</h2>
+            <div className="space-y-4 text-sm text-slate-400 leading-relaxed">
               <div>
-                <h3 className="font-bold text-gray-900 mb-1">Libris vs Elefant vs Cărturești</h3>
+                <h3 className="font-bold text-white mb-1">Libris vs Elefant vs Cărturești</h3>
                 <p>Libris are cele mai frecvente campanii cu -30% și transport gratuit de la sume mici. Elefant excelează la gama de cărți în limba engleză. Cărturești atrage cu ediții speciale și cărți de artă.</p>
               </div>
               <div>
-                <h3 className="font-bold text-gray-900 mb-1">Cărți populare cu reduceri frecvente</h3>
+                <h3 className="font-bold text-white mb-1">Cărți populare cu reduceri frecvente</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
                   <li><strong>Atomic Habits</strong> — James Clear, bestseller non-ficțiune</li>
                   <li><strong>Sapiens</strong> — Yuval Noah Harari, reduceri regulate</li>
@@ -157,7 +157,7 @@ export default function CartiPage() {
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-gray-900 mb-1">Economisește la cărți</h3>
+                <h3 className="font-bold text-white mb-1">Economisește la cărți</h3>
                 <p>Abonează-te la newsletterul Libris — primești coduri de -20% exclusiv abonaților. Cumpără seturi și pachete pentru discount suplimentar. Verifică zilnic secțiunea &quot;Carte Zilei&quot; pe Libris.</p>
               </div>
             </div>
@@ -165,7 +165,7 @@ export default function CartiPage() {
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-gray-700 mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-slate-300 mb-4">Exploreaza si alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/idei-cadouri", label: "🎁 Idei Cadouri" },
@@ -176,14 +176,14 @@ export default function CartiPage() {
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-gray-100 hover:bg-cyan-50 hover:text-indigo-300 text-gray-700 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-gray-200 hover:border-cyan-200">
+                className="bg-slate-900 hover:bg-slate-800 hover:text-indigo-300 text-slate-300 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-slate-800 hover:border-cyan-200">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-gray-200 py-6 text-center text-xs text-gray-400 mt-4">
+        <footer className="border-t border-slate-800 py-6 text-center text-xs text-slate-500 mt-4">
           © {an} AmCupon.ro ·{" "}
           <Link href="/idei-cadouri" className="hover:text-indigo-400">Idei Cadouri</Link>{" · "}
           <Link href="/copii" className="hover:text-indigo-400">Copii</Link>{" · "}

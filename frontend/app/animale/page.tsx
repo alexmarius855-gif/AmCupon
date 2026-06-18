@@ -34,7 +34,7 @@ const AVANTAJE = [
 function numeAfisat(s: string) {
   return s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" ");
 }
-const CULORI = ["bg-amber-500","bg-indigo-600","bg-yellow-600","bg-amber-600","bg-indigo-500","bg-yellow-500"];
+const CULORI = ["bg-indigo-600","bg-indigo-600","bg-indigo-600","bg-indigo-600","bg-indigo-500","bg-indigo-600"];
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -68,25 +68,25 @@ export default function AnimalePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-slate-950">
 
         {/* Header */}
 
         {/* Breadcrumb */}
-        <nav className="bg-white border-b border-gray-100">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-gray-400">
+        <nav className="bg-slate-950 border-b border-slate-800">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-slate-500">
             <Link href="/" className="hover:text-indigo-400">Acasa</Link>
             <span className="mx-1">/</span>
-            <span className="text-gray-700 font-medium">Animale de Companie</span>
+            <span className="text-slate-300 font-medium">Animale de Companie</span>
           </div>
         </nav>
 
         {/* Hero */}
-        <section className="bg-gradient-to-br from-violet-500 via-indigo-500 to-cyan-600 text-white py-12 px-4">
+        <section className="bg-gradient-to-br from-indigo-700 via-blue-700 to-cyan-700 text-white py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">🐾</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Pet Shop cu Reducere {an}</h1>
-            <p className="text-amber-100 text-lg mb-6 max-w-xl mx-auto">
+            <p className="text-indigo-100 text-lg mb-6 max-w-xl mx-auto">
               Hrana, jucarii si accesorii pentru animalele tale de companie la preturi mici. Petmart, Petmax, Bravapet si alte magazine verificate zilnic.
             </p>
             <div className="flex flex-wrap justify-center gap-2">
@@ -98,15 +98,15 @@ export default function AnimalePage() {
         </section>
 
         {/* Stats bar */}
-        <div className="bg-amber-50 border-b border-amber-100 py-3 px-4">
+        <div className="bg-slate-900 border-slate-800 py-3 px-4">
           <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-6 text-sm">
-            <span className="text-amber-700 font-semibold">
-              <span className="font-black text-amber-600">{magazine.length}</span> magazine pet shop
+            <span className="text-cyan-300 font-semibold">
+              <span className="font-black text-cyan-400">{magazine.length}</span> magazine pet shop
             </span>
-            <span className="text-amber-700 font-semibold">
-              <span className="font-black text-amber-600">{cuPromo.length}</span> cu promotii active
+            <span className="text-cyan-300 font-semibold">
+              <span className="font-black text-cyan-400">{cuPromo.length}</span> cu promotii active
             </span>
-            <span className="text-amber-700 font-semibold">
+            <span className="text-cyan-300 font-semibold">
               &#10003; Actualizat zilnic
             </span>
           </div>
@@ -114,13 +114,13 @@ export default function AnimalePage() {
 
         {/* Avantaje */}
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-gray-900 mb-6 text-center">Ce gasesti la pet shop-urile online din Romania</h2>
+          <h2 className="text-xl font-black text-white mb-6 text-center">Ce gasesti la pet shop-urile online din Romania</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {AVANTAJE.map(a => (
-              <div key={a.titlu} className="bg-amber-50 border border-amber-100 rounded-2xl p-5">
+              <div key={a.titlu} className="bg-slate-900 border border-slate-800 rounded-2xl p-5">
                 <div className="text-3xl mb-2">{a.icon}</div>
-                <h3 className="font-bold text-gray-900 text-sm mb-1">{a.titlu}</h3>
-                <p className="text-xs text-gray-500">{a.desc}</p>
+                <h3 className="font-bold text-white text-sm mb-1">{a.titlu}</h3>
+                <p className="text-xs text-slate-400">{a.desc}</p>
               </div>
             ))}
           </div>
@@ -129,7 +129,7 @@ export default function AnimalePage() {
         {/* Magazine */}
         <section className="max-w-6xl mx-auto px-4 pb-10">
           <div className="flex items-center gap-3 mb-5">
-            <h2 className="text-xl font-black text-gray-900">Magazine pet shop cu reduceri active</h2>
+            <h2 className="text-xl font-black text-white">Magazine pet shop cu reduceri active</h2>
           </div>
 
           {magazine.length > 0 ? (
@@ -140,10 +140,10 @@ export default function AnimalePage() {
                 const promo = m.promotii[0];
                 return (
                   <a key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                    className="group bg-white border border-gray-200 hover:border-amber-300 rounded-2xl p-4 transition-all hover:shadow-md">
+                    className="group bg-slate-900 border border-slate-800 hover:border-indigo-500/40 rounded-2xl p-4 transition-all hover:shadow-md">
                     <div className="flex items-center gap-3 mb-3">
                       {m.logo_url ? (
-                        <div className="w-10 h-10 rounded-xl overflow-hidden bg-gray-50 border border-gray-100 shrink-0">
+                        <div className="w-10 h-10 rounded-xl overflow-hidden bg-white border border-slate-800 shrink-0">
                           {/* eslint-disable-next-line @next/next/no-img-element */}
                           <img src={m.logo_url} alt={`Logo ${nume}`} className="w-full h-full object-contain" loading="lazy" />
                         </div>
@@ -153,28 +153,28 @@ export default function AnimalePage() {
                         </div>
                       )}
                       <div>
-                        <p className="font-bold text-gray-900 text-sm">{nume}</p>
+                        <p className="font-bold text-white text-sm">{nume}</p>
                         {m.are_promotie && m.cod_cupon && <span className="text-xs text-indigo-400 font-bold">COD</span>}
-                        {m.are_promotie && !m.cod_cupon && <span className="text-xs text-amber-600 font-medium">Oferta</span>}
+                        {m.are_promotie && !m.cod_cupon && <span className="text-xs text-cyan-400 font-medium">Oferta</span>}
                       </div>
                     </div>
                     {promo ? (
-                      <p className="text-gray-500 text-xs line-clamp-2">{promo.nume}</p>
+                      <p className="text-slate-400 text-xs line-clamp-2">{promo.nume}</p>
                     ) : (
-                      <p className="text-gray-400 text-xs italic">Verifica ofertele curente</p>
+                      <p className="text-slate-500 text-xs italic">Verifica ofertele curente</p>
                     )}
                     <div className="flex justify-end mt-2">
-                      <span className="text-xs text-amber-600 font-semibold group-hover:text-amber-700">Vezi &rarr;</span>
+                      <span className="text-xs text-cyan-400 font-semibold group-hover:text-cyan-300">Vezi &rarr;</span>
                     </div>
                   </a>
                 );
               })}
             </div>
           ) : (
-            <div className="bg-amber-50 border border-amber-100 rounded-2xl p-10 text-center">
+            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-10 text-center">
               <p className="text-4xl mb-3">🐾</p>
-              <p className="font-bold text-gray-700 mb-2">Magazine actualizate zilnic</p>
-              <p className="text-gray-400 text-sm mb-4">Revino curand pentru promotii noi la pet shop-uri.</p>
+              <p className="font-bold text-slate-300 mb-2">Magazine actualizate zilnic</p>
+              <p className="text-slate-500 text-sm mb-4">Revino curand pentru promotii noi la pet shop-uri.</p>
               <Link href="/toate-magazinele" className="text-indigo-400 font-bold hover:text-indigo-300 text-sm">
                 Toate magazinele &rarr;
               </Link>
@@ -192,16 +192,16 @@ export default function AnimalePage() {
         />
 
         {/* Editorial */}
-        <section className="bg-gray-50 border-t border-gray-200 py-10 px-4">
+        <section className="bg-slate-900 border-t border-slate-800 py-10 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-gray-900 mb-5">Ghid: Cum economisesti la cumparaturile pentru animale</h2>
-            <div className="space-y-4 text-sm text-gray-600 leading-relaxed">
+            <h2 className="text-xl font-black text-white mb-5">Ghid: Cum economisesti la cumparaturile pentru animale</h2>
+            <div className="space-y-4 text-sm text-slate-400 leading-relaxed">
               <div>
-                <h3 className="font-bold text-gray-900 mb-1">Petmart vs Petmax vs Bravapet</h3>
+                <h3 className="font-bold text-white mb-1">Petmart vs Petmax vs Bravapet</h3>
                 <p>Petmart are cel mai larg catalog si frecvent promotii la saci mari de hrana. Petmax se remarca prin livrare rapida si oferte flash. Bravapet este o alegere buna pentru hrana premium (Royal Canin, Hill's, Purina Pro Plan) cu preturi competitive.</p>
               </div>
               <div>
-                <h3 className="font-bold text-gray-900 mb-1">Sfaturi pentru economii la hrana pentru animale</h3>
+                <h3 className="font-bold text-white mb-1">Sfaturi pentru economii la hrana pentru animale</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
                   <li><strong>Cumpara saci mari</strong> — pretul per kg scade semnificativ la cantitatile de 12-15 kg</li>
                   <li><strong>Aboneaza-te la newsletter</strong> — pet shop-urile trimit frecvent coduri de 10-15% off</li>
@@ -210,7 +210,7 @@ export default function AnimalePage() {
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-gray-900 mb-1">Branduri premium la preturi mai mici</h3>
+                <h3 className="font-bold text-white mb-1">Branduri premium la preturi mai mici</h3>
                 <p>Royal Canin, Hill's Science Diet si Purina Pro Plan sunt disponibile pe toate platformele mari de pet shop. Preturile variaza cu 20-30% intre magazine — compara inainte sa cumperi si foloseste codurile de reducere de pe AmCupon.ro.</p>
               </div>
             </div>
@@ -219,7 +219,7 @@ export default function AnimalePage() {
 
         {/* Internal links */}
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-gray-700 mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-slate-300 mb-4">Exploreaza si alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/sanatate",   label: "🌿 Sanatate & Naturiste" },
@@ -230,14 +230,14 @@ export default function AnimalePage() {
               { href: "/categorii",  label: "📂 Toate Categoriile" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-gray-100 hover:bg-cyan-50 hover:text-indigo-300 text-gray-700 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-gray-200 hover:border-cyan-200">
+                className="bg-slate-900 hover:bg-slate-800 hover:text-indigo-300 text-slate-300 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-slate-800 hover:border-cyan-200">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-gray-200 py-6 text-center text-xs text-gray-400 mt-4">
+        <footer className="border-t border-slate-800 py-6 text-center text-xs text-slate-500 mt-4">
           &copy; {an} AmCupon.ro &middot;{" "}
           <Link href="/sanatate" className="hover:text-indigo-400">Sanatate</Link>{" · "}
           <Link href="/farmacie" className="hover:text-indigo-400">Farmacie</Link>{" · "}

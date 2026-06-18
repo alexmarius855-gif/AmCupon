@@ -142,11 +142,11 @@ export default async function NisaPage(
   };
 
   return (
-    <div className="min-h-screen bg-slate-50">
+    <div className="min-h-screen bg-slate-950">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* Hero */}
-      <div className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-12 px-4">
+      <div className="bg-gradient-to-br from-indigo-700 to-cyan-700 text-white py-12 px-4">
         <div className="max-w-5xl mx-auto text-center">
           <div className="text-5xl mb-3">{nisa.emoji}</div>
           <h1 className="text-3xl font-black mb-2">{nisa.titlu}</h1>
@@ -171,7 +171,7 @@ export default async function NisaPage(
               {magazineFiltrate.map((m: any) => (
                 <a key={m.magazin} href={m.url_afiliat || m.url}
                   target="_blank" rel="sponsored noopener noreferrer"
-                  className="bg-white border border-slate-200 hover:border-indigo-300 rounded-xl p-3 flex items-center gap-3 hover:shadow-md transition-all">
+                  className="bg-slate-900 border border-slate-800 hover:border-indigo-300 rounded-xl p-3 flex items-center gap-3 hover:shadow-md transition-all">
                   {m.logo && (
                     // eslint-disable-next-line @next/next/no-img-element
                     <img src={m.logo} alt={m.magazin_display || m.magazin}
@@ -182,7 +182,7 @@ export default async function NisaPage(
                       {m.magazin_display || m.magazin}
                     </p>
                     {m.promotie && (
-                      <p className="text-[10px] text-emerald-600 truncate">{m.promotie.slice(0, 40)}</p>
+                      <p className="text-[10px] text-cyan-400 truncate">{m.promotie.slice(0, 40)}</p>
                     )}
                   </div>
                 </a>
@@ -200,7 +200,7 @@ export default async function NisaPage(
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
               {produseFiltrate.map((p: any, i: number) => (
                 <a key={i} href={p.url} target="_blank" rel="sponsored noopener noreferrer"
-                  className="group bg-white border border-slate-200 hover:border-indigo-300 rounded-2xl overflow-hidden hover:shadow-lg transition-all flex flex-col">
+                  className="group bg-slate-900 border border-slate-800 hover:border-indigo-300 rounded-2xl overflow-hidden hover:shadow-lg transition-all flex flex-col">
                   <div className="aspect-square bg-slate-50 flex items-center justify-center overflow-hidden relative">
                     {p.image ? (
                       // eslint-disable-next-line @next/next/no-img-element
@@ -210,7 +210,7 @@ export default async function NisaPage(
                       <span className="text-4xl">{nisa.emoji}</span>
                     )}
                     {p.discount_pct > 0 && (
-                      <span className="absolute top-2 left-2 bg-red-500 text-white text-[10px] font-black px-2 py-0.5 rounded-full">
+                      <span className="absolute top-2 left-2 bg-indigo-600 text-white text-[10px] font-black px-2 py-0.5 rounded-full">
                         -{p.discount_pct}%
                       </span>
                     )}
@@ -227,7 +227,7 @@ export default async function NisaPage(
             </div>
           </section>
         ) : (
-          <div className="text-center py-16 bg-white rounded-2xl border border-slate-200">
+          <div className="text-center py-16 bg-slate-900 rounded-2xl border border-slate-800">
             <p className="text-4xl mb-3">{nisa.emoji}</p>
             <p className="font-bold text-slate-700 mb-2">Produsele se actualizeaza zilnic</p>
             <p className="text-slate-400 text-sm">Revino maine pentru oferte noi in aceasta categorie.</p>

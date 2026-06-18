@@ -33,7 +33,7 @@ const SUBCATEGORII = [
 ];
 
 function numeAfisat(s: string) { return s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" "); }
-const CULORI = ["bg-indigo-600","bg-red-500","bg-yellow-500","bg-green-500","bg-blue-500","bg-purple-500"];
+const CULORI = ["bg-indigo-600","bg-indigo-600","bg-indigo-600","bg-indigo-600","bg-indigo-600","bg-indigo-600"];
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Reduceri Sport & Fitness 2026","url":"https://amcupon.ro/sport" };
 
 export default function SportPage() {
@@ -52,17 +52,17 @@ export default function SportPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-white">
-        <nav className="bg-white border-b border-gray-100">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-gray-400">
+      <div className="min-h-screen bg-slate-950">
+        <nav className="bg-slate-950 border-b border-slate-800">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-slate-500">
             <Link href="/" className="hover:text-indigo-400">Acasă</Link>
             <span className="mx-1">/</span>
-            <span className="text-gray-700 font-medium">Sport & Fitness</span>
+            <span className="text-slate-300 font-medium">Sport & Fitness</span>
           </div>
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-indigo-500 via-violet-500 to-cyan-500 text-white py-12 px-4">
+        <section className="bg-gradient-to-br from-indigo-700 via-blue-700 to-cyan-700 text-white py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">🏃</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Sport & Fitness cu Reducere {an}</h1>
@@ -84,11 +84,11 @@ export default function SportPage() {
         <section className="max-w-6xl mx-auto px-4 py-10">
           <div className="flex items-center gap-3 mb-5">
             
-            <h2 className="text-xl font-black text-gray-900">Magazine sport cu reduceri active</h2>
+            <h2 className="text-xl font-black text-white">Magazine sport cu reduceri active</h2>
           </div>
           {magazine.length === 0 ? (
             <div className="text-center py-12">
-              <p className="text-gray-500 mb-4">Momentan nu sunt magazine sport cu promoții active.</p>
+              <p className="text-slate-400 mb-4">Momentan nu sunt magazine sport cu promoții active.</p>
               <Link href="/categorii/sports-outdoors"
                 className="inline-block bg-indigo-600 text-white font-bold px-6 py-3 rounded-xl hover:bg-indigo-500 transition-colors">
                 Vezi echipament sport →
@@ -102,10 +102,10 @@ export default function SportPage() {
                 const promo = m.promotii[0];
                 return (
                   <a key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                    className="group bg-white border border-gray-200 hover:border-indigo-300 rounded-2xl p-4 transition-all hover:shadow-md">
+                    className="group bg-slate-900 border border-slate-800 hover:border-indigo-300 rounded-2xl p-4 transition-all hover:shadow-md">
                     <div className="flex items-center gap-3 mb-3">
                       {m.logo_url ? (
-                        <div className="w-10 h-10 rounded-xl overflow-hidden bg-gray-50 border border-gray-100 shrink-0">
+                        <div className="w-10 h-10 rounded-xl overflow-hidden bg-white border border-slate-800 shrink-0">
                           {/* eslint-disable-next-line @next/next/no-img-element */}
                           <img src={m.logo_url} alt={`Logo ${nume}`} className="w-full h-full object-contain" loading="lazy" />
                         </div>
@@ -115,15 +115,15 @@ export default function SportPage() {
                         </div>
                       )}
                       <div>
-                        <p className="font-bold text-gray-900 text-sm">{nume}</p>
+                        <p className="font-bold text-white text-sm">{nume}</p>
                         {m.are_promotie && m.cod_cupon && <span className="text-xs text-indigo-400 font-bold">COD</span>}
-                        {m.are_promotie && !m.cod_cupon && <span className="text-xs text-green-500 font-medium">Ofertă</span>}
+                        {m.are_promotie && !m.cod_cupon && <span className="text-xs text-cyan-400 font-medium">Ofertă</span>}
                       </div>
                     </div>
                     {promo ? (
-                      <p className="text-gray-500 text-xs line-clamp-2">{promo.nume}</p>
+                      <p className="text-slate-400 text-xs line-clamp-2">{promo.nume}</p>
                     ) : (
-                      <p className="text-gray-400 text-xs italic">Verifică ofertele curente</p>
+                      <p className="text-slate-500 text-xs italic">Verifică ofertele curente</p>
                     )}
                     <div className="flex justify-end mt-2">
                       <span className="text-xs text-indigo-400 font-semibold group-hover:text-indigo-300">Vezi →</span>
@@ -144,16 +144,16 @@ export default function SportPage() {
         />
 
         {/* SEO */}
-        <section className="bg-gray-50 border-t border-gray-200 py-10 px-4">
+        <section className="bg-slate-900 border-t border-slate-800 py-10 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-gray-900 mb-5">Ghid: Echipament sport mai ieftin</h2>
-            <div className="space-y-4 text-sm text-gray-600 leading-relaxed">
+            <h2 className="text-xl font-black text-white mb-5">Ghid: Echipament sport mai ieftin</h2>
+            <div className="space-y-4 text-sm text-slate-400 leading-relaxed">
               <div>
-                <h3 className="font-bold text-gray-900 mb-1">Cum economisești la echipament sport</h3>
+                <h3 className="font-bold text-white mb-1">Cum economisești la echipament sport</h3>
                 <p>Decathlon oferă cel mai bun raport calitate-preț pentru echipament entry-level cu brandurile proprii (Quechua, Domyos, Kipsta). Pentru echipament premium, caută reduceri la finalul sezonului — reduceri de 40-60% sunt frecvente în ianuarie și august.</p>
               </div>
               <div>
-                <h3 className="font-bold text-gray-900 mb-1">Cele mai bune perioade pentru cumpărături sport</h3>
+                <h3 className="font-bold text-white mb-1">Cele mai bune perioade pentru cumpărături sport</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
                   <li><strong>Ianuarie</strong> — solduri de iarnă, reduceri echipament ski și fitness</li>
                   <li><strong>Iulie-August</strong> — solduri de vară, echipament outdoor, biciclete</li>
@@ -162,7 +162,7 @@ export default function SportPage() {
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-gray-900 mb-1">Echipament sport la cel mai mic preț</h3>
+                <h3 className="font-bold text-white mb-1">Echipament sport la cel mai mic preț</h3>
                 <p>Combină prețul din ShopMania cu codul de reducere de pe AmCupon.ro. La echipament scump (biciclete, ceasuri GPS, căști sport), diferența poate ajunge la sute de lei.</p>
               </div>
             </div>
@@ -170,7 +170,7 @@ export default function SportPage() {
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-gray-700 mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-slate-300 mb-4">Exploreaza si alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/farmacie", label: "💊 Farmacie" },
@@ -181,14 +181,14 @@ export default function SportPage() {
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-gray-100 hover:bg-cyan-50 hover:text-indigo-300 text-gray-700 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-gray-200 hover:border-cyan-200">
+                className="bg-slate-900 hover:bg-slate-800 hover:text-indigo-300 text-slate-300 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-slate-800 hover:border-cyan-200">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-gray-200 py-6 text-center text-xs text-gray-400 mt-4">
+        <footer className="border-t border-slate-800 py-6 text-center text-xs text-slate-500 mt-4">
           © {an} AmCupon.ro ·{" "}
           <Link href="/moto" className="hover:text-indigo-400">Auto-Moto</Link>{" · "}
           <Link href="/gadgets" className="hover:text-indigo-400">Gadgets</Link>{" · "}

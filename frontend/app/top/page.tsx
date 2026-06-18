@@ -35,14 +35,14 @@ export const metadata: Metadata = {
 };
 
 const CULORI: Record<string, { bg: string; text: string; border: string; badge: string }> = {
-  blue:    { bg: "bg-blue-600",    text: "text-blue-600",    border: "border-blue-200",   badge: "bg-blue-100 text-blue-700" },
-  violet:  { bg: "bg-violet-600",  text: "text-violet-600",  border: "border-violet-200", badge: "bg-violet-100 text-violet-700" },
-  indigo:  { bg: "bg-indigo-600",  text: "text-indigo-600",  border: "border-indigo-200", badge: "bg-indigo-100 text-indigo-700" },
-  teal:    { bg: "bg-teal-600",    text: "text-teal-600",    border: "border-teal-200",   badge: "bg-teal-100 text-teal-700" },
-  emerald: { bg: "bg-emerald-600", text: "text-emerald-600", border: "border-emerald-200", badge: "bg-emerald-100 text-emerald-700" },
-  amber:   { bg: "bg-amber-500",   text: "text-amber-600",   border: "border-amber-200",  badge: "bg-amber-100 text-amber-700" },
-  rose:    { bg: "bg-rose-600",    text: "text-rose-600",    border: "border-rose-200",   badge: "bg-rose-100 text-rose-700" },
-  sky:     { bg: "bg-sky-600",     text: "text-sky-600",     border: "border-sky-200",    badge: "bg-sky-100 text-sky-700" },
+  blue:    { bg: "bg-indigo-600",    text: "text-blue-600",    border: "border-blue-200",   badge: "bg-blue-100 text-indigo-300" },
+  violet:  { bg: "bg-indigo-600",  text: "text-indigo-400",  border: "border-violet-200", badge: "bg-violet-100 text-indigo-300" },
+  indigo:  { bg: "bg-indigo-600",  text: "text-indigo-600",  border: "border-indigo-200", badge: "bg-indigo-100 text-indigo-300" },
+  teal:    { bg: "bg-indigo-600",    text: "text-cyan-400",    border: "border-teal-200",   badge: "bg-teal-100 text-cyan-300" },
+  emerald: { bg: "bg-indigo-600", text: "text-cyan-400", border: "border-emerald-200", badge: "bg-emerald-100 text-cyan-300" },
+  amber:   { bg: "bg-indigo-600",   text: "text-cyan-400",   border: "border-amber-200",  badge: "bg-amber-100 text-cyan-300" },
+  rose:    { bg: "bg-indigo-600",    text: "text-indigo-400",    border: "border-rose-200",   badge: "bg-rose-100 text-indigo-300" },
+  sky:     { bg: "bg-indigo-600",     text: "text-sky-600",     border: "border-sky-200",    badge: "bg-sky-100 text-indigo-300" },
 };
 
 function getScorMediu(cat: Categorie): number {
@@ -70,18 +70,18 @@ export default function TopHubPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <div className="min-h-screen bg-gray-50 dark:bg-slate-900">
+      <div className="min-h-screen bg-slate-950 dark:bg-slate-900">
         {/* BREADCRUMB */}
-        <nav className="bg-white dark:bg-slate-800 border-b border-gray-100 dark:border-slate-700">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-gray-400 flex-wrap">
+        <nav className="bg-white dark:bg-slate-800 border-b border-slate-800 dark:border-slate-700">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-slate-500 flex-wrap">
             <Link href="/" className="hover:text-indigo-400 transition-colors">Acasa</Link>
             <span className="mx-1 text-gray-300">/</span>
-            <span className="text-gray-700 dark:text-slate-300 font-medium">Top Produse</span>
+            <span className="text-slate-300 dark:text-slate-300 font-medium">Top Produse</span>
           </div>
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-14 px-4">
+        <section className="bg-gradient-to-br from-indigo-700 via-blue-700 to-cyan-700 text-white py-14 px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-cyan-500/20 border border-cyan-500/30 text-indigo-300 text-xs font-bold px-4 py-1.5 rounded-full mb-5">
               <span className="w-1.5 h-1.5 bg-indigo-500 rounded-full animate-pulse"></span>
@@ -111,10 +111,10 @@ export default function TopHubPage() {
 
         {/* CATEGORII GRID */}
         <div className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-2xl font-black text-gray-900 dark:text-white mb-2">
+          <h2 className="text-2xl font-black text-white dark:text-white mb-2">
             Alege categoria
           </h2>
-          <p className="text-gray-500 dark:text-slate-400 text-sm mb-8">
+          <p className="text-slate-400 dark:text-slate-400 text-sm mb-8">
             Fiecare top include produse testate si comparate dupa criterii obiective.
           </p>
 
@@ -126,7 +126,7 @@ export default function TopHubPage() {
                 <a
                   key={cat.slug}
                   href={`/top/${cat.slug}`}
-                  className="group relative bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 hover:border-gray-300 dark:hover:border-slate-500 rounded-2xl p-5 transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5 flex flex-col"
+                  className="group relative bg-white dark:bg-slate-800 border border-slate-800 dark:border-slate-700 hover:border-gray-300 dark:hover:border-slate-500 rounded-2xl p-5 transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5 flex flex-col"
                 >
                   {/* TAG BADGE */}
                   {cat.tag && (
@@ -141,21 +141,21 @@ export default function TopHubPage() {
                   </div>
 
                   {/* TITLE */}
-                  <h3 className="font-black text-gray-900 dark:text-white text-lg leading-tight mb-1 group-hover:text-indigo-400 transition-colors">
+                  <h3 className="font-black text-white dark:text-white text-lg leading-tight mb-1 group-hover:text-indigo-400 transition-colors">
                     {cat.titlu_scurt}
                   </h3>
-                  <p className="text-xs text-gray-500 dark:text-slate-400 leading-relaxed mb-4 flex-1">
+                  <p className="text-xs text-slate-400 dark:text-slate-400 leading-relaxed mb-4 flex-1">
                     {cat.descriere}
                   </p>
 
                   {/* FOOTER */}
-                  <div className="flex items-center justify-between pt-3 border-t border-gray-100 dark:border-slate-700">
+                  <div className="flex items-center justify-between pt-3 border-t border-slate-800 dark:border-slate-700">
                     <div className="flex items-center gap-2">
-                      <span className="text-xs text-gray-400 dark:text-slate-500">{cat.produse.length} produse</span>
+                      <span className="text-xs text-slate-500 dark:text-slate-500">{cat.produse.length} produse</span>
                       {scorMediu > 0 && (
                         <>
                           <span className="text-gray-200 dark:text-slate-600">·</span>
-                          <span className="text-xs font-bold text-yellow-500">
+                          <span className="text-xs font-bold text-cyan-400">
                             {scorMediu.toFixed(1)} / 10
                           </span>
                         </>
@@ -192,7 +192,7 @@ export default function TopHubPage() {
 
         {/* CROSS LINKS */}
         <section className="max-w-6xl mx-auto px-4 pb-10">
-          <h3 className="text-base font-black text-gray-700 dark:text-slate-300 mb-4">
+          <h3 className="text-base font-black text-slate-300 dark:text-slate-300 mb-4">
             Exploreaza si
           </h3>
           <div className="flex flex-wrap gap-2">
@@ -205,14 +205,14 @@ export default function TopHubPage() {
               { href: "/", label: "🏠 Toate codurile" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-white dark:bg-slate-800 hover:bg-cyan-50 dark:hover:bg-slate-700 hover:text-indigo-300 text-gray-700 dark:text-slate-300 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-gray-200 dark:border-slate-600 hover:border-cyan-200">
+                className="bg-white dark:bg-slate-800 hover:bg-cyan-50 dark:hover:bg-slate-700 hover:text-indigo-300 text-slate-300 dark:text-slate-300 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-slate-800 dark:border-slate-600 hover:border-cyan-200">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-gray-200 dark:border-slate-700 py-6 text-center text-xs text-gray-400">
+        <footer className="border-t border-slate-800 dark:border-slate-700 py-6 text-center text-xs text-slate-500">
           &copy; {an} AmCupon.ro &middot;{" "}
           <Link href="/" className="hover:text-indigo-400">Acasa</Link>
           {" · "}<Link href="/blog" className="hover:text-indigo-400">Blog</Link>

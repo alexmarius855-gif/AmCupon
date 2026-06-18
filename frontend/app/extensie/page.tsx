@@ -67,18 +67,18 @@ export default function ExtensiePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-slate-950">
 
-        <nav className="bg-white border-b border-gray-100">
-          <div className="max-w-5xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-gray-400">
+        <nav className="bg-slate-950 border-b border-slate-800">
+          <div className="max-w-5xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-slate-500">
             <Link href="/" className="hover:text-indigo-400">Acasă</Link>
             <span className="mx-1">/</span>
-            <span className="text-gray-700 font-medium">Extensie Chrome</span>
+            <span className="text-slate-300 font-medium">Extensie Chrome</span>
           </div>
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-16 px-4">
+        <section className="bg-gradient-to-br from-indigo-700 via-blue-700 to-cyan-700 text-white py-16 px-4">
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-cyan-500/20 border border-cyan-500/30 text-indigo-400 text-xs font-bold px-4 py-1.5 rounded-full mb-6">
               🔌 Extensie Chrome — 100% Gratuită
@@ -111,32 +111,32 @@ export default function ExtensiePage() {
 
         {/* CUM FUNCTIONEAZA */}
         <section className="max-w-5xl mx-auto px-4 py-16">
-          <h2 className="text-2xl font-black text-gray-900 mb-10 text-center">Cum funcționează</h2>
+          <h2 className="text-2xl font-black text-white mb-10 text-center">Cum funcționează</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {PASII.map((p) => (
               <div key={p.nr} className="text-center">
-                <div className="w-14 h-14 bg-cyan-50 border-2 border-cyan-100 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4">
+                <div className="w-14 h-14 bg-cyan-50 border-2 border-slate-800 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4">
                   {p.icon}
                 </div>
                 <div className="text-xs font-black text-indigo-400 mb-1">PAS {p.nr}</div>
-                <h3 className="font-black text-gray-900 text-sm mb-2">{p.titlu}</h3>
-                <p className="text-xs text-gray-500 leading-relaxed">{p.desc}</p>
+                <h3 className="font-black text-white text-sm mb-2">{p.titlu}</h3>
+                <p className="text-xs text-slate-400 leading-relaxed">{p.desc}</p>
               </div>
             ))}
           </div>
         </section>
 
         {/* FEATURES */}
-        <section className="bg-gray-50 border-y border-gray-100 py-16 px-4">
+        <section className="bg-slate-900 border-y border-slate-800 py-16 px-4">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-black text-gray-900 mb-10 text-center">De ce AmCupon Extension?</h2>
+            <h2 className="text-2xl font-black text-white mb-10 text-center">De ce AmCupon Extension?</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {FEATURES.map((f) => (
-                <div key={f.titlu} className="bg-white rounded-2xl border border-gray-200 p-5 flex items-start gap-4">
+                <div key={f.titlu} className="bg-white rounded-2xl border border-slate-800 p-5 flex items-start gap-4">
                   <div className="text-2xl shrink-0">{f.icon}</div>
                   <div>
-                    <h3 className="font-bold text-gray-900 text-sm mb-1">{f.titlu}</h3>
-                    <p className="text-xs text-gray-500">{f.desc}</p>
+                    <h3 className="font-bold text-white text-sm mb-1">{f.titlu}</h3>
+                    <p className="text-xs text-slate-400">{f.desc}</p>
                   </div>
                 </div>
               ))}
@@ -146,8 +146,8 @@ export default function ExtensiePage() {
 
         {/* MAGAZINE COMPATIBILE */}
         <section className="max-w-5xl mx-auto px-4 py-16">
-          <h2 className="text-2xl font-black text-gray-900 mb-4 text-center">Funcționează pe 600+ magazine</h2>
-          <p className="text-center text-gray-500 text-sm mb-8">Inclusiv cele mai populare din România</p>
+          <h2 className="text-2xl font-black text-white mb-4 text-center">Funcționează pe 600+ magazine</h2>
+          <p className="text-center text-slate-400 text-sm mb-8">Inclusiv cele mai populare din România</p>
           <div className="flex flex-wrap justify-center gap-2">
             {[
               "eMag","Altex","Zara","H&M","Notino","Douglas","Sephora",
@@ -155,7 +155,7 @@ export default function ExtensiePage() {
               "PCGarage","Flanco","Dr. Max","Vegis","Booking","Answear",
               "Reserved","Carturesti","Mobexpert","IKEA",
             ].map((m) => (
-              <span key={m} className="bg-gray-100 text-gray-700 text-sm font-semibold px-4 py-2 rounded-full">
+              <span key={m} className="bg-gray-100 text-slate-300 text-sm font-semibold px-4 py-2 rounded-full">
                 {m}
               </span>
             ))}
@@ -166,7 +166,7 @@ export default function ExtensiePage() {
         </section>
 
         {/* CTA FINAL */}
-        <section className="bg-gradient-to-br from-indigo-600 to-violet-600 py-16 px-4">
+        <section className="bg-gradient-to-br from-indigo-700 to-cyan-700 py-16 px-4">
           <div className="max-w-2xl mx-auto text-center text-white">
             <div className="text-5xl mb-4">🎟</div>
             <h2 className="text-2xl font-black mb-3">Începe să economisești azi</h2>
@@ -184,7 +184,7 @@ export default function ExtensiePage() {
           </div>
         </section>
 
-        <footer className="border-t border-gray-200 py-6 text-center text-xs text-gray-400">
+        <footer className="border-t border-slate-800 py-6 text-center text-xs text-slate-500">
           © {new Date().getFullYear()} AmCupon.ro ·{" "}
           <Link href="/" className="hover:text-indigo-400">Acasă</Link>{" · "}
           <Link href="/toate-magazinele" className="hover:text-indigo-400">Magazine</Link>{" · "}

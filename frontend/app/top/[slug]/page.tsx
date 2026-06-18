@@ -47,14 +47,14 @@ interface TopData {
 }
 
 const GRADIENT: Record<string, string> = {
-  blue:    "from-blue-700 via-blue-600 to-indigo-700",
-  violet:  "from-violet-700 via-violet-600 to-purple-700",
-  indigo:  "from-indigo-700 via-indigo-600 to-blue-700",
-  teal:    "from-teal-700 via-teal-600 to-emerald-700",
-  emerald: "from-emerald-700 via-emerald-600 to-teal-700",
-  amber:   "from-amber-500 via-amber-600 to-yellow-600",
-  rose:    "from-rose-700 via-rose-600 to-pink-700",
-  sky:     "from-sky-700 via-sky-600 to-blue-700",
+  blue:    "from-indigo-700 via-blue-700 to-cyan-700",
+  violet:  "from-indigo-700 via-blue-700 to-cyan-700",
+  indigo:  "from-indigo-700 via-blue-700 to-cyan-700",
+  teal:    "from-indigo-700 via-blue-700 to-cyan-700",
+  emerald: "from-indigo-700 via-blue-700 to-cyan-700",
+  amber:   "from-indigo-700 via-blue-700 to-cyan-700",
+  rose:    "from-indigo-700 via-blue-700 to-cyan-700",
+  sky:     "from-indigo-700 via-blue-700 to-cyan-700",
 };
 
 function loadData(): TopData {
@@ -204,7 +204,7 @@ export default async function TopCategoriePage({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
-      <div className="min-h-screen bg-gray-50 dark:bg-slate-900">
+      <div className="min-h-screen bg-slate-950 dark:bg-slate-900">
         {/* HERO */}
         <section className={`bg-gradient-to-br ${gradient} text-white py-10 px-4`}>
           <div className="max-w-5xl mx-auto">
@@ -246,9 +246,9 @@ export default async function TopCategoriePage({
 
         {/* BEST PICK QUICK INFO */}
         {bestPick && (
-          <div className="bg-white dark:bg-slate-800 border-b border-gray-200 dark:border-slate-700">
-            <div className="max-w-5xl mx-auto px-4 py-3 flex flex-wrap items-center gap-x-6 gap-y-1 text-sm text-gray-600 dark:text-slate-400">
-              <span className="font-semibold text-gray-900 dark:text-white">
+          <div className="bg-white dark:bg-slate-800 border-b border-slate-800 dark:border-slate-700">
+            <div className="max-w-5xl mx-auto px-4 py-3 flex flex-wrap items-center gap-x-6 gap-y-1 text-sm text-slate-400 dark:text-slate-400">
+              <span className="font-semibold text-white dark:text-white">
                 {cat.emoji} Recomandam:
               </span>
               <span className="font-bold text-indigo-400">{bestPick.nume}</span>
@@ -265,8 +265,8 @@ export default async function TopCategoriePage({
           <TopProduseClient produse={cat.produse} culoare={cat.culoare} />
 
           {/* HOW WE TEST */}
-          <section className="mt-10 bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-2xl p-6">
-            <h2 className="text-lg font-black text-gray-900 dark:text-white mb-3">
+          <section className="mt-10 bg-white dark:bg-slate-800 border border-slate-800 dark:border-slate-700 rounded-2xl p-6">
+            <h2 className="text-lg font-black text-white dark:text-white mb-3">
               Cum testam {cat.titlu_scurt.toLowerCase()}?
             </h2>
             <div className="grid sm:grid-cols-3 gap-4">
@@ -277,8 +277,8 @@ export default async function TopCategoriePage({
               ].map(item => (
                 <div key={item.titlu} className="text-center p-4">
                   <div className="text-3xl mb-2">{item.icon}</div>
-                  <h3 className="font-bold text-gray-900 dark:text-white text-sm mb-1">{item.titlu}</h3>
-                  <p className="text-xs text-gray-500 dark:text-slate-400 leading-relaxed">{item.desc}</p>
+                  <h3 className="font-bold text-white dark:text-white text-sm mb-1">{item.titlu}</h3>
+                  <p className="text-xs text-slate-400 dark:text-slate-400 leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -286,10 +286,10 @@ export default async function TopCategoriePage({
 
           {/* PRICE RANGE INFO */}
           <section className="mt-6 bg-cyan-50 dark:bg-cyan-950/20 border border-cyan-200 dark:border-cyan-800/30 rounded-2xl p-5">
-            <h3 className="font-bold text-gray-900 dark:text-white mb-2 text-sm">
+            <h3 className="font-bold text-white dark:text-white mb-2 text-sm">
               Interval de preturi {cat.titlu_scurt.toLowerCase()}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-slate-300">
+            <p className="text-sm text-slate-400 dark:text-slate-300">
               Produsele din acest top costa intre{" "}
               <strong className="text-indigo-300">{pretMinim.toLocaleString("ro-RO")} lei</strong> si{" "}
               <strong className="text-indigo-300">{pretMaxim.toLocaleString("ro-RO")} lei</strong>.
@@ -306,18 +306,18 @@ export default async function TopCategoriePage({
           </section>
 
           {/* FAQ */}
-          <section className="mt-6 bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-2xl p-6">
-            <h2 className="text-lg font-black text-gray-900 dark:text-white mb-4">
+          <section className="mt-6 bg-white dark:bg-slate-800 border border-slate-800 dark:border-slate-700 rounded-2xl p-6">
+            <h2 className="text-lg font-black text-white dark:text-white mb-4">
               Intrebari frecvente despre {cat.titlu_scurt.toLowerCase()}
             </h2>
             <div className="space-y-4">
               {faqSchema.mainEntity.map((item, i) => (
-                <details key={i} className="group border-b border-gray-100 dark:border-slate-700 last:border-0 pb-4 last:pb-0">
-                  <summary className="flex justify-between items-center cursor-pointer text-sm font-semibold text-gray-800 dark:text-slate-200 list-none select-none gap-2">
+                <details key={i} className="group border-b border-slate-800 dark:border-slate-700 last:border-0 pb-4 last:pb-0">
+                  <summary className="flex justify-between items-center cursor-pointer text-sm font-semibold text-white dark:text-slate-200 list-none select-none gap-2">
                     <span>{item.name}</span>
                     <span className="text-indigo-400 text-lg shrink-0 group-open:rotate-45 transition-transform">+</span>
                   </summary>
-                  <p className="mt-2 text-sm text-gray-600 dark:text-slate-400 leading-relaxed">
+                  <p className="mt-2 text-sm text-slate-400 dark:text-slate-400 leading-relaxed">
                     {item.acceptedAnswer.text}
                   </p>
                 </details>
@@ -343,11 +343,11 @@ export default async function TopCategoriePage({
 
         {/* OTHER CATEGORIES */}
         <div className="max-w-5xl mx-auto px-4 pb-12">
-          <h3 className="text-base font-black text-gray-700 dark:text-slate-300 mb-4">
+          <h3 className="text-base font-black text-slate-300 dark:text-slate-300 mb-4">
             Alte categorii recomandate
           </h3>
           <div className="flex flex-wrap gap-2">
-            <Link href="/top" className="bg-white dark:bg-slate-800 hover:bg-cyan-50 dark:hover:bg-slate-700 text-gray-700 dark:text-slate-300 text-sm font-semibold px-4 py-2 rounded-xl border border-gray-200 dark:border-slate-600 hover:border-cyan-200 transition-colors">
+            <Link href="/top" className="bg-white dark:bg-slate-800 hover:bg-cyan-50 dark:hover:bg-slate-700 text-slate-300 dark:text-slate-300 text-sm font-semibold px-4 py-2 rounded-xl border border-slate-800 dark:border-slate-600 hover:border-cyan-200 transition-colors">
               Toate topurile &rarr;
             </Link>
             {[
@@ -357,14 +357,14 @@ export default async function TopCategoriePage({
               { href: "/blog",        label: "📖 Blog" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-white dark:bg-slate-800 hover:bg-cyan-50 dark:hover:bg-slate-700 hover:text-indigo-300 text-gray-700 dark:text-slate-300 text-sm font-semibold px-4 py-2 rounded-xl border border-gray-200 dark:border-slate-600 hover:border-cyan-200 transition-colors">
+                className="bg-white dark:bg-slate-800 hover:bg-cyan-50 dark:hover:bg-slate-700 hover:text-indigo-300 text-slate-300 dark:text-slate-300 text-sm font-semibold px-4 py-2 rounded-xl border border-slate-800 dark:border-slate-600 hover:border-cyan-200 transition-colors">
                 {l.label}
               </a>
             ))}
           </div>
         </div>
 
-        <footer className="border-t border-gray-200 dark:border-slate-700 py-6 text-center text-xs text-gray-400">
+        <footer className="border-t border-slate-800 dark:border-slate-700 py-6 text-center text-xs text-slate-500">
           &copy; {an} AmCupon.ro &middot;{" "}
           <Link href="/" className="hover:text-indigo-400">Acasa</Link>
           {" · "}<Link href="/top" className="hover:text-indigo-400">Top Produse</Link>

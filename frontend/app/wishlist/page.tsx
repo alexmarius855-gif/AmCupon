@@ -16,7 +16,7 @@ export default function WishlistPage() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-50">
+    <div className="min-h-screen bg-slate-950">
       <div className="max-w-5xl mx-auto px-4 py-10">
 
         {/* Header */}
@@ -30,7 +30,7 @@ export default function WishlistPage() {
 
         {/* Price drop banner */}
         {priceDrops.length > 0 && (
-          <div className="bg-emerald-50 border border-emerald-200 rounded-2xl p-4 mb-6 flex items-start gap-3">
+          <div className="bg-slate-900 border border-emerald-200 rounded-2xl p-4 mb-6 flex items-start gap-3">
             <span className="text-2xl">&#127381;</span>
             <div>
               <p className="font-bold text-emerald-800">
@@ -40,10 +40,10 @@ export default function WishlistPage() {
                 {priceDrops.map((p) => {
                   const pct = formatPct(p.savedPrice, p.price);
                   return (
-                    <li key={p.id} className="text-sm text-emerald-700">
+                    <li key={p.id} className="text-sm text-cyan-300">
                       <span className="font-semibold">{p.title.slice(0, 50)}</span>
                       {" "}&mdash; era {p.savedPrice.toFixed(2)} lei, acum{" "}
-                      <span className="font-black text-emerald-600">{p.price.toFixed(2)} lei</span>
+                      <span className="font-black text-cyan-400">{p.price.toFixed(2)} lei</span>
                       {pct && <span className="ml-1 text-xs bg-emerald-200 text-emerald-800 px-1.5 py-0.5 rounded-full font-bold">-{pct}%</span>}
                     </li>
                   );
@@ -76,12 +76,12 @@ export default function WishlistPage() {
               const dropped  = item.price > 0 && item.savedPrice > 0 && item.price < item.savedPrice;
 
               return (
-                <div key={item.id} className={`bg-white rounded-2xl border overflow-hidden flex flex-col relative
-                    ${dropped ? "border-emerald-300 ring-2 ring-emerald-200" : "border-slate-200"}`}>
+                <div key={item.id} className={`bg-slate-900 rounded-2xl border overflow-hidden flex flex-col relative
+                    ${dropped ? "border-emerald-300 ring-2 ring-emerald-200" : "border-slate-800"}`}>
 
                   {/* Badge pret scazut */}
                   {dropped && pct && (
-                    <div className="absolute top-2 left-2 z-10 bg-emerald-500 text-white text-[10px] font-black px-2 py-0.5 rounded-full">
+                    <div className="absolute top-2 left-2 z-10 bg-indigo-600 text-white text-[10px] font-black px-2 py-0.5 rounded-full">
                       -{pct}% SCAZUT
                     </div>
                   )}
@@ -89,7 +89,7 @@ export default function WishlistPage() {
                   {/* Buton remove */}
                   <button
                     onClick={() => remove(item.id)}
-                    className="absolute top-2 right-2 z-10 w-6 h-6 bg-white/90 hover:bg-red-50 border border-slate-200 rounded-full flex items-center justify-center text-slate-400 hover:text-red-500 transition-colors text-xs"
+                    className="absolute top-2 right-2 z-10 w-6 h-6 bg-white/90 hover:bg-slate-900 border border-slate-800 rounded-full flex items-center justify-center text-slate-500 hover:text-red-400 transition-colors text-xs"
                     title="Sterge din lista"
                   >
                     &#x2715;
@@ -120,7 +120,7 @@ export default function WishlistPage() {
                     <div className="mt-2">
                       {item.price > 0 ? (
                         <div className="flex items-baseline gap-1.5 flex-wrap">
-                          <span className={`font-black text-sm ${dropped ? "text-emerald-600" : "text-indigo-300"}`}>
+                          <span className={`font-black text-sm ${dropped ? "text-cyan-400" : "text-indigo-300"}`}>
                             {item.price.toFixed(2)} lei
                           </span>
                           {dropped && (

@@ -63,12 +63,12 @@ const TOP_CRACIUN = [
 ];
 
 const IDEI_CADOURI = [
-  { emoji: "🧸", titlu: "Jucării copii", href: "/categorii/toys", culoare: "bg-yellow-100 text-yellow-700" },
-  { emoji: "💄", titlu: "Parfumuri & Beauty", href: "/categorii/beauty", culoare: "bg-pink-100 text-pink-700" },
-  { emoji: "📱", titlu: "Electronice", href: "/categorii/electronics", culoare: "bg-blue-100 text-blue-700" },
-  { emoji: "👗", titlu: "Modă & Fashion", href: "/categorii/fashion", culoare: "bg-purple-100 text-purple-700" },
-  { emoji: "📚", titlu: "Cărți & Jocuri", href: "/categorii/books", culoare: "bg-green-100 text-green-700" },
-  { emoji: "🏋️", titlu: "Sport & Outdoor", href: "/categorii/sport", culoare: "bg-teal-100 text-teal-700" },
+  { emoji: "🧸", titlu: "Jucării copii", href: "/categorii/toys", culoare: "bg-yellow-100 text-cyan-300" },
+  { emoji: "💄", titlu: "Parfumuri & Beauty", href: "/categorii/beauty", culoare: "bg-pink-100 text-indigo-300" },
+  { emoji: "📱", titlu: "Electronice", href: "/categorii/electronics", culoare: "bg-blue-100 text-indigo-300" },
+  { emoji: "👗", titlu: "Modă & Fashion", href: "/categorii/fashion", culoare: "bg-purple-100 text-indigo-300" },
+  { emoji: "📚", titlu: "Cărți & Jocuri", href: "/categorii/books", culoare: "bg-green-100 text-cyan-300" },
+  { emoji: "🏋️", titlu: "Sport & Outdoor", href: "/categorii/sport", culoare: "bg-teal-100 text-cyan-300" },
 ];
 
 function loadData(): Magazin[] {
@@ -86,8 +86,8 @@ function numeAfisat(magazin: string): string {
 }
 
 const CULORI = [
-  "bg-red-500", "bg-green-600", "bg-red-600", "bg-green-500",
-  "bg-indigo-600", "bg-teal-600", "bg-pink-500", "bg-indigo-500",
+  "bg-indigo-600", "bg-indigo-600", "bg-indigo-600", "bg-indigo-600",
+  "bg-indigo-600", "bg-indigo-600", "bg-indigo-600", "bg-indigo-500",
 ];
 
 const craciunJsonLd = {
@@ -130,24 +130,24 @@ export default function CraciunPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(craciunJsonLd) }}
       />
 
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-slate-950">
         {/* Header */}
 
         {/* Breadcrumb */}
-        <nav className="max-w-6xl mx-auto px-4 pt-4 pb-0 text-xs text-gray-400 flex items-center gap-1">
+        <nav className="max-w-6xl mx-auto px-4 pt-4 pb-0 text-xs text-slate-500 flex items-center gap-1">
           <Link href="/" className="hover:text-indigo-400 transition-colors">Acasă</Link>
           <span className="mx-1">/</span>
-          <span className="text-gray-600">Reduceri de Crăciun {an}</span>
+          <span className="text-slate-400">Reduceri de Crăciun {an}</span>
         </nav>
 
         {/* Hero */}
-        <section className="bg-gradient-to-br from-red-600 via-red-500 to-green-600 text-white">
+        <section className="bg-gradient-to-br from-indigo-700 via-blue-700 to-cyan-700 text-white">
           <div className="max-w-6xl mx-auto px-4 py-14 text-center">
             <div className="text-5xl mb-4">🎄</div>
             <h1 className="text-4xl md:text-5xl font-black mb-4 leading-tight">
               Reduceri de Crăciun {an}
             </h1>
-            <p className="text-red-100 text-lg mb-8 max-w-xl mx-auto">
+            <p className="text-indigo-100 text-lg mb-8 max-w-xl mx-auto">
               Coduri de reducere verificate pentru cadourile perfecte — jucării, fashion,
               electronice, parfumuri și multe altele
             </p>
@@ -161,7 +161,7 @@ export default function CraciunPage() {
               ].map((s) => (
                 <div key={s.label} className="bg-white/10 backdrop-blur-sm rounded-2xl py-3 px-2">
                   <div className="text-2xl font-black">{s.val}</div>
-                  <div className="text-xs text-red-100">{s.label}</div>
+                  <div className="text-xs text-indigo-100">{s.label}</div>
                 </div>
               ))}
             </div>
@@ -170,7 +170,7 @@ export default function CraciunPage() {
 
         {/* Idei de cadouri */}
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-gray-900 mb-5">🎁 Idei de cadouri</h2>
+          <h2 className="text-xl font-black text-white mb-5">🎁 Idei de cadouri</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
             {IDEI_CADOURI.map((idee) => (
               <a
@@ -188,10 +188,10 @@ export default function CraciunPage() {
         {/* Magazine grid */}
         <section className="max-w-6xl mx-auto px-4 pb-14">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-xl font-black text-gray-900">
+            <h2 className="text-xl font-black text-white">
               🛍️ Magazine cu reduceri active
             </h2>
-            <span className="text-sm text-gray-400">{magazine.length} magazine</span>
+            <span className="text-sm text-slate-500">{magazine.length} magazine</span>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -205,11 +205,11 @@ export default function CraciunPage() {
                 <a
                   key={m.magazin}
                   href={`/cod-reducere/${m.magazin}`}
-                  className="group bg-white border border-gray-200 hover:border-red-300 rounded-2xl p-4 transition-all hover:shadow-md"
+                  className="group bg-slate-900 border border-slate-800 hover:border-indigo-500/40 rounded-2xl p-4 transition-all hover:shadow-md"
                 >
                   <div className="flex items-center gap-3 mb-3">
                     {m.logo_url ? (
-                      <div className="w-10 h-10 rounded-xl overflow-hidden bg-gray-50 border border-gray-100 shrink-0 flex items-center justify-center p-0.5">
+                      <div className="w-10 h-10 rounded-xl overflow-hidden bg-white border border-slate-800 shrink-0 flex items-center justify-center p-0.5">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
                           src={m.logo_url}
@@ -224,7 +224,7 @@ export default function CraciunPage() {
                       </div>
                     )}
                     <div className="min-w-0">
-                      <p className="font-bold text-gray-900 text-sm truncate">{nume}</p>
+                      <p className="font-bold text-white text-sm truncate">{nume}</p>
                       {coduri.length > 0 && (
                         <span className="text-xs font-bold text-indigo-400">
                           {coduri.length} cod{coduri.length > 1 ? "uri" : ""}
@@ -234,13 +234,13 @@ export default function CraciunPage() {
                   </div>
 
                   {bestPromo && (
-                    <p className="text-gray-500 text-xs leading-snug line-clamp-2 mb-2">
+                    <p className="text-slate-400 text-xs leading-snug line-clamp-2 mb-2">
                       {bestPromo.nume}
                     </p>
                   )}
 
                   <div className="flex items-center justify-between">
-                    <span className="text-xs text-gray-400">{m.promotii.length} oferte</span>
+                    <span className="text-xs text-slate-500">{m.promotii.length} oferte</span>
                     <span className="text-xs text-red-500 group-hover:text-red-600 font-semibold transition-colors">
                       Vezi →
                     </span>
@@ -252,14 +252,14 @@ export default function CraciunPage() {
         </section>
 
         {/* SEO Content */}
-        <section className="bg-gray-50 border-t border-gray-200">
+        <section className="bg-slate-900 border-t border-slate-800">
           <div className="max-w-3xl mx-auto px-4 py-12">
-            <h2 className="text-2xl font-black text-gray-900 mb-6">
+            <h2 className="text-2xl font-black text-white mb-6">
               Ghid Cumpărături Crăciun {an}
             </h2>
-            <div className="space-y-6 text-gray-600 text-sm leading-relaxed">
+            <div className="space-y-6 text-slate-400 text-sm leading-relaxed">
               <div>
-                <h3 className="text-gray-900 font-bold mb-2">Când să cumperi cadourile de Crăciun?</h3>
+                <h3 className="text-white font-bold mb-2">Când să cumperi cadourile de Crăciun?</h3>
                 <p>
                   Cel mai bun moment este în noiembrie, profitând de ofertele Black Friday, și
                   în primele două săptămâni din decembrie. Apropiindu-te de 25 decembrie,
@@ -268,7 +268,7 @@ export default function CraciunPage() {
                 </p>
               </div>
               <div>
-                <h3 className="text-gray-900 font-bold mb-2">Unde găsești cele mai bune cadouri la prețuri mici?</h3>
+                <h3 className="text-white font-bold mb-2">Unde găsești cele mai bune cadouri la prețuri mici?</h3>
                 <ul className="list-disc list-inside space-y-1">
                   <li><strong>Jucării:</strong> Noriel, eMAG — reduceri până la 50%</li>
                   <li><strong>Electronice:</strong> eMAG, Altex — oferte speciale de sezon</li>
@@ -278,7 +278,7 @@ export default function CraciunPage() {
                 </ul>
               </div>
               <div>
-                <h3 className="text-gray-900 font-bold mb-2">Cum folosești codurile de reducere de Crăciun?</h3>
+                <h3 className="text-white font-bold mb-2">Cum folosești codurile de reducere de Crăciun?</h3>
                 <p>
                   Intră pe pagina magazinului de pe AmCupon.ro, copiază codul de reducere
                   activ, adaugă produsele în coș pe site-ul magazinului și introdu codul la
@@ -290,7 +290,7 @@ export default function CraciunPage() {
           </div>
         </section>
 
-        <footer className="border-t border-gray-200 py-6 text-center text-xs text-gray-400">
+        <footer className="border-t border-slate-800 py-6 text-center text-xs text-slate-500">
           © {an} AmCupon.ro ·{" "}
           <Link href="/" className="hover:text-indigo-400">Toate reducerile</Link>
           {" · "}
