@@ -2205,7 +2205,7 @@ Ambii ofera garantie legala de 2 ani. Altex are garantie extinsa optionala cu se
 
     {
         "slug": f"fashiondays-vs-answear-{AN}",
-        "title": f"Fashion Days vs Answear {AN} — Cel mai bun magazin de haine online",
+        "title": f"Fashion Days vs Answear {AN} — cel mai bun magazin haine",
         "excerpt": f"Fashion Days sau Answear in {AN}? Comparatie branduri, preturi, reduceri si livrare. Afla care magazin de fashion online merita banii tai.",
         "category": "Fashion",
         "cover": cover_url("fashion-compare"),
@@ -2248,7 +2248,7 @@ Fashion Days si Answear au politici similare: livrare gratuita peste un prag, re
 
     {
         "slug": f"librarii-online-romania-{AN}",
-        "title": f"Librarii online Romania {AN} — Carturesti vs Libris vs Elefant: comparatie completa",
+        "title": f"Librarii online {AN} — Carturesti vs Libris vs Elefant",
         "excerpt": f"Carturesti, Libris sau Elefant? Comparatie completa {AN}: preturi, gama, livrare si reduceri la carti online in Romania.",
         "category": "Carti",
         "cover": cover_url("librarii-online"),
@@ -2297,7 +2297,7 @@ Trei platforme diferite, trei experiente diferite de cumparare. Iata ce le difer
 
     {
         "slug": f"farmacii-online-romania-{AN}",
-        "title": f"Farmacii online Romania {AN} — Dr. Max vs Liki24 vs Vegis: ghid complet",
+        "title": f"Farmacii online {AN} — Dr. Max vs Liki24 vs Vegis",
         "excerpt": f"Dr. Max, Liki24 sau Vegis? Comparatie farmacii online {AN}: preturi, gama, livrare si coduri reducere. Unde cumperi suplimente si OTC mai ieftin.",
         "category": "Farmacie",
         "cover": cover_url("farmacii-online"),
@@ -2348,7 +2348,7 @@ Cumparaturi online la farmacie: economisesti timp si bani comparativ cu farmacia
 
     {
         "slug": f"jucarii-online-romania-{AN}",
-        "title": f"Jucarii online Romania {AN} — Noriel vs eMAG vs alte magazine: ghid parinti",
+        "title": f"Jucarii online {AN} — Noriel vs eMAG: ghid parinti",
         "excerpt": f"Unde cumperi jucarii online mai ieftin in {AN}? Noriel, eMAG, Carrefour. Comparatie preturi, livrare si coduri reducere jucarii.",
         "category": "Copii",
         "cover": cover_url("jucarii-online"),
@@ -2996,7 +2996,7 @@ Automatizare simplă, 2 setări de intensitate, spumant manual. Sub 1000 lei.
 
         {
             "slug": f"cea-mai-buna-friteuza-aer-{AN}",
-            "title": f"Cea mai buna friteuza cu aer cald {AN} — ghid complet de cumparare",
+            "title": f"Cea mai buna friteuza cu aer cald {AN} — ghid cumparare",
             "excerpt": f"Top friteuze cu aer cald {AN}: Philips, Tefal, Cosori, Ninja. Ce capacitate alegi, cat consuma, coduri reducere eMAG si Altex.",
             "category": "Electrocasnice",
             "cover": cover_url("friteuza-aer-cald"),
@@ -3066,7 +3066,7 @@ Friteuza + gratar pe gratare amovibile. Pui, legume, burgeri — toate cu dungi 
 
         {
             "slug": f"cea-mai-buna-tableta-android-{AN}",
-            "title": f"Cea mai buna tableta Android {AN} — Samsung, Xiaomi, Lenovo comparate",
+            "title": f"Cea mai buna tableta Android {AN} — comparatie completa",
             "excerpt": f"Top tablete Android {AN}: Samsung Galaxy Tab, Xiaomi Pad, Lenovo Tab. Ghid complet: ce sa alegi pentru copii, munca sau divertisment. Coduri reducere.",
             "category": "Electronice",
             "cover": cover_url("tableta-android"),
@@ -3136,7 +3136,7 @@ iPad-urile sunt excelente dar semnificativ mai scumpe in Romania. Daca esti deja
 
         {
             "slug": f"cea-mai-buna-saltea-ortopedica-{AN}",
-            "title": f"Cea mai buna saltea ortopedica {AN} — ghid complet de alegere",
+            "title": f"Cea mai buna saltea ortopedica {AN} — ghid de alegere",
             "excerpt": f"Top saltele ortopedice {AN}: memory foam, arcuri de buzunar, latex. Ce duritate sa alegi, ce branduri merita. Coduri reducere IKEA, eMAG.",
             "category": "Casa",
             "cover": cover_url("saltea-ortopedica"),

@@ -765,7 +765,7 @@ Makeup.ro ofera gama completa la preturi competitive, cu livrare rapida in Roman
     },
     {
         "slug": "cum-folosesti-cod-reducere-online",
-        "title": "Cum Folosesti un Cod de Reducere Online — Ghid Pas cu Pas pentru Incepatori",
+        "title": "Cum Folosesti Cod Reducere Online — Ghid pentru Incepatori",
         "excerpt": "Nu stii cum sa folosesti un cod de reducere online? Ghid complet pas cu pas: unde gasesti coduri, cum le aplici la checkout si ce faci daca nu functioneaza.",
         "category": "Ghiduri",
         "tip": "ghid",

@@ -14,7 +14,7 @@ const LINK_LINKEDIN  = "https://www.linkedin.com/learning/?ref=amcupon";
 
 export const metadata: Metadata = {
   title: "Cursuri Online cu Reducere Romania 2026 — Cod Reducere Verificat | AmCupon.ro",
-  description: "Coduri de reducere la cursuri online actualizate zilnic. Reduceri la platforme e-learning, cursuri AI, certificari internationale. Coursera, cursuri-ai.ro si altele.",
+  description: "Coduri de reducere la cursuri online actualizate zilnic. Reduceri la platforme e-learning, cursuri AI, certificari internationale. Coursera, Udemy si altele.",
   keywords: ["cursuri online reducere", "cod reducere cursuri online", "cursuri ai romania reducere", "e-learning reducere", "certificari online ieftine", "coursera reducere"],
   alternates: { canonical: "https://amcupon.ro/cursuri-online" },
   openGraph: { title: "Cursuri Online cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/cursuri-online", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
