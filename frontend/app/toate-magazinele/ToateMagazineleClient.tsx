@@ -190,7 +190,7 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
         </p>
 
         {/* ── GRID MAGAZINE ───────────────────────────────────────────── */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3.5">
           {filtrate.map(m => {
             const nume     = numeAfisat(m.magazin);
             const initiala = nume.charAt(0);
@@ -202,18 +202,11 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
               <a
                 key={m.magazin}
                 href={`/cod-reducere/${m.magazin}`}
-                className="group relative bg-slate-900 rounded-2xl border border-slate-800 hover:border-cyan-500/40 p-4 flex flex-col items-center gap-2.5 hover:shadow-xl hover:shadow-black/40 hover:-translate-y-0.5 transition-all duration-200 overflow-hidden"
+                className="group relative bg-gradient-to-b from-slate-900 to-slate-900/60 rounded-2xl border border-slate-800/80 hover:border-indigo-500/50 p-4 flex flex-col items-center gap-3 hover:-translate-y-1 transition-all duration-200"
+                style={{ boxShadow: "0 1px 2px rgba(0,0,0,0.2)" }}
               >
-                {/* Subtle glow la hover */}
-                <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/0 to-indigo-500/0 group-hover:from-indigo-500/5 group-hover:to-transparent transition-all duration-300 pointer-events-none rounded-2xl" />
-
-                {/* Badge promotie (colt dreapta-sus) */}
-                {m.are_promotie && (
-                  <span className="absolute top-2 right-2 w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                )}
-
                 {/* Logo */}
-                <div className="w-14 h-14 rounded-xl overflow-hidden flex items-center justify-center bg-white border border-slate-700/50 p-1 shrink-0 group-hover:border-cyan-400/40 transition-colors">
+                <div className="relative w-16 h-16 rounded-2xl overflow-hidden flex items-center justify-center bg-white shrink-0 p-2 group-hover:ring-2 group-hover:ring-indigo-400/40 transition-all">
                   {m.logo_url && logoOk ? (
                     <img
                       src={m.logo_url}
@@ -224,33 +217,35 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
                       onError={() => setImgErrors(prev => new Set(prev).add(m.magazin))}
                     />
                   ) : (
-                    <div className={`w-full h-full rounded-lg bg-gradient-to-br ${culoare} flex items-center justify-center`}>
+                    <div className={`w-full h-full rounded-xl bg-gradient-to-br ${culoare} flex items-center justify-center`}>
                       <span className="text-white font-black text-xl">{initiala}</span>
                     </div>
+                  )}
+                  {/* Indicator activ, atasat de logo nu plutind pe card */}
+                  {m.are_promotie && (
+                    <span className="absolute -top-1 -right-1 w-3.5 h-3.5 rounded-full bg-emerald-400 ring-2 ring-slate-900" />
                   )}
                 </div>
 
                 {/* Nume */}
-                <span className="text-xs font-bold text-slate-200 text-center group-hover:text-white transition-colors leading-tight">
+                <span className="text-xs font-bold text-slate-200 text-center group-hover:text-white transition-colors leading-tight line-clamp-2 min-h-[2rem] flex items-center">
                   {nume}
                 </span>
 
-                {/* Badge status */}
+                {/* Badge status — omis complet daca nu e nimic de spus, fara placeholder gol */}
                 {pct > 0 ? (
-                  <span className="text-[10px] font-black text-white bg-indigo-600 px-2 py-0.5 rounded-full">
+                  <span className="text-[10px] font-black text-white bg-indigo-600 px-2.5 py-1 rounded-full">
                     -{pct}%
                   </span>
                 ) : m.cod_cupon ? (
-                  <span className="text-[10px] font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded-full">
+                  <span className="text-[10px] font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-1 rounded-full">
                     Cod cupon
                   </span>
                 ) : m.are_promotie ? (
-                  <span className="text-[10px] font-semibold text-indigo-300 bg-cyan-500/10 border border-cyan-500/20 px-2 py-0.5 rounded-full">
+                  <span className="text-[10px] font-semibold text-cyan-300 bg-cyan-500/10 border border-cyan-500/20 px-2.5 py-1 rounded-full">
                     Ofertă
                   </span>
-                ) : (
-                  <span className="text-[10px] text-slate-600 px-2 py-0.5">—</span>
-                )}
+                ) : null}
               </a>
             );
           })}

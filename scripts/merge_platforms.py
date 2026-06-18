@@ -50,6 +50,13 @@ def main():
                 # trateaza segmentul ca path multiplu -> 404). Ex: "esyhair.com/en".
                 duplicate += 1
                 continue
+            url_val = (magazin.get("url") or "").strip()
+            if url_val and any(c.isspace() for c in url_val):
+                # URL cu spatii in interior = date corupte de la sursa (ex: scraping
+                # gresit a prins text de status in loc de domeniu). Numele afisat poate
+                # legitim avea spatii ("Revolut Business") - doar URL-ul nu trebuie sa aiba.
+                duplicate += 1
+                continue
             if slug in seen_slugs:
                 # Pastreaza cel cu mai multe promotii / scor mai mare
                 duplicate += 1
