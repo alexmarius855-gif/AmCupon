@@ -104,6 +104,8 @@ const CATEGORII_INTL = [
   { href: "/ai-tools",        emoji: "🤖", label: "AI Tools",          desc: "ChatGPT, Claude, Midjourney",        from: "#0ea5e9", to: "#4f46e5", badge: "AI" },
   { href: "/carduri-bancare", emoji: "💳", label: "Conturi Bancare",   desc: "Revolut, Wise, N26 — cont gratuit",  from: "#6d28d9", to: "#0f766e", badge: "NEW" },
   { href: "/cursuri-online",  emoji: "🎓", label: "Cursuri Online",    desc: "Udemy, Coursera, Skillshare",        from: "#4338ca", to: "#7c3aed", badge: "" },
+  { href: "/piese-auto",      emoji: "🔧", label: "Piese Auto",        desc: "Anvelope, jante, detailing",         from: "#1e3a8a", to: "#0f766e", badge: "NEW" },
+  { href: "/echipament-moto", emoji: "🏍️", label: "Echipament Moto",   desc: "Casti, geci, piese moto",            from: "#155e75", to: "#3730a3", badge: "NEW" },
 ];
 
 const BRAND_PAGES = [
