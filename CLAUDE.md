@@ -12,7 +12,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
-**Stare curentă (20.06.2026):**
+**Stare curentă (20.06.2026, seara — sesiune amplă, TOTUL push-uit pe `main` și LIVE):**
+- **Feed de produse rezolvat definitiv**: 33.096 produse din 20 magazine românești reale (era 3.076/1 magazin) — vezi tabelul de mai jos "products.json — REZOLVAT". Produsele apar automat pe fiecare pagină de magazin.
 - 370 magazine active (`output.json`), tema dark indigo+cyan pe **toate** paginile (rebrand orange→indigo complet, ultimele 28 pagini retemuite pe 19.06)
 - ~217+ articole blog (titluri sub 60 caractere, cover = logo real magazin, nu mai poze stock random)
 - GitHub Actions: cron 4h, retry 5x la push — vezi `.github/workflows/update-data.yml`
