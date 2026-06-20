@@ -342,9 +342,18 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                   text={`💰 ${m.promotii.length > 0 ? m.promotii.length + " reduceri active" : "Oferte"} la ${nume}! Verificate pe AmCupon.ro`}
                   label="Distribuie"
                 />
+                <PriceAlert magazin={m.magazin} numeMagazin={nume} />
               </div>
             </div>
           </div>
+
+          {/* ── BANNER PUBLICITAR 2PERFORMANT (mutat sub hero — vizibilitate maxima,
+               era ingropat dupa tab-uri+CTA-uri+blog, sectiunea 13/15) ──────────── */}
+          {banner && (
+            <div className="px-4 pb-4 flex justify-center">
+              <BannerAd2P banner={banner} />
+            </div>
+          )}
 
           {/* ── TAB NAVIGATION ─────────────────────────────────────────────── */}
           <div className="flex gap-0 border-t border-slate-800 overflow-x-auto" style={{scrollbarWidth:"none"}}>
@@ -735,13 +744,6 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
               </div>
             </a>
           </section>
-        )}
-
-        {/* ── BANNER PUBLICITAR 2PERFORMANT ───────────────────────────────── */}
-        {banner && (
-          <div className="mt-10 flex justify-center">
-            <BannerAd2P banner={banner} />
-          </div>
         )}
 
         {/* ── MAGAZINE SIMILARE ────────────────────────────────────────────── */}

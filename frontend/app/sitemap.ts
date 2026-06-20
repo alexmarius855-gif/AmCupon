@@ -53,6 +53,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/gadgets`,                lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
     { url: `${BASE_URL}/moto`,                   lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
     { url: `${BASE_URL}/idei-cadouri`,           lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
+    { url: `${BASE_URL}/flori`,                  lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
     { url: `${BASE_URL}/calatorie`,              lastModified: new Date(), changeFrequency: "daily",   priority: 0.8 },
     { url: `${BASE_URL}/electronice`,            lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
     { url: `${BASE_URL}/parfumuri`,              lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
