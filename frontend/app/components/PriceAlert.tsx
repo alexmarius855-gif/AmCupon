@@ -43,7 +43,7 @@ export default function PriceAlert({ magazin, numeMagazin }: Props) {
     return (
       <button
         onClick={() => setOpen(true)}
-        className="flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-indigo-400 border border-slate-200 hover:border-indigo-300 bg-white hover:bg-cyan-50 px-4 py-2.5 rounded-xl transition-all"
+        className="flex items-center gap-2 text-sm font-semibold text-slate-300 hover:text-cyan-400 border border-slate-700 hover:border-cyan-500/40 bg-slate-800/60 hover:bg-slate-800 px-4 py-2.5 rounded-xl transition-all"
       >
         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
@@ -54,14 +54,14 @@ export default function PriceAlert({ magazin, numeMagazin }: Props) {
   }
 
   return (
-    <div className="bg-cyan-50 border border-cyan-200 rounded-2xl p-4">
+    <div className="bg-slate-900 border border-cyan-500/20 rounded-2xl p-4">
       <div className="flex items-start justify-between mb-3">
         <div>
-          <p className="font-black text-slate-900 text-sm">🔔 Alertă {numeMagazin}</p>
-          <p className="text-xs text-slate-500 mt-0.5">Te notificăm când apare o ofertă nouă</p>
+          <p className="font-black text-white text-sm">🔔 Alertă {numeMagazin}</p>
+          <p className="text-xs text-slate-400 mt-0.5">Te notificăm când apare o ofertă nouă</p>
         </div>
         <button onClick={() => { setOpen(false); setStatus("idle"); setEmail(""); }}
-          className="text-slate-400 hover:text-slate-600 transition-colors">
+          className="text-slate-500 hover:text-slate-300 transition-colors">
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12"/>
           </svg>
@@ -69,8 +69,8 @@ export default function PriceAlert({ magazin, numeMagazin }: Props) {
       </div>
 
       {status === "success" ? (
-        <div className="flex items-center gap-2 text-emerald-700 bg-emerald-50 border border-emerald-200 rounded-xl px-3 py-2.5">
-          <span className="text-emerald-500">✓</span>
+        <div className="flex items-center gap-2 text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 rounded-xl px-3 py-2.5">
+          <span className="text-emerald-400">✓</span>
           <p className="text-sm font-bold">Ești abonat! Te vom anunța când apare o ofertă {numeMagazin}.</p>
         </div>
       ) : (
@@ -81,7 +81,7 @@ export default function PriceAlert({ magazin, numeMagazin }: Props) {
             onChange={e => { setEmail(e.target.value); setStatus("idle"); setErrMsg(""); }}
             placeholder="email@tau.ro"
             required
-            className="flex-1 border border-cyan-200 focus:border-indigo-400 bg-white rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300/30"
+            className="flex-1 border border-slate-700 focus:border-indigo-400 bg-slate-800 text-white placeholder:text-slate-500 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/30"
           />
           <button type="submit" disabled={status === "loading"}
             className="bg-indigo-600 hover:bg-indigo-500 disabled:opacity-60 text-white font-bold px-4 py-2 rounded-xl text-sm transition-colors whitespace-nowrap">
@@ -90,7 +90,7 @@ export default function PriceAlert({ magazin, numeMagazin }: Props) {
         </form>
       )}
       {status === "error" && errMsg && (
-        <p className="text-red-500 text-xs mt-1.5">{errMsg}</p>
+        <p className="text-red-400 text-xs mt-1.5">{errMsg}</p>
       )}
     </div>
   );

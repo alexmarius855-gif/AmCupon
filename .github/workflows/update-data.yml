@@ -98,6 +98,23 @@ jobs:
         working-directory: scripts
         run: python merge_platforms.py
 
+      # ── 5b. Alerte de pret per magazin (Brevo, ALERT_STORES) ────────────────
+      - name: Verifica si trimite alerte cod nou pe magazin
+        continue-on-error: true
+        working-directory: scripts
+        env:
+          BREVO_API_KEY:      ${{ secrets.BREVO_API_KEY }}
+          BREVO_LIST_ID:      "2"
+          BREVO_SENDER_EMAIL: newsletter@amcupon.ro
+          BREVO_SENDER_NAME:  AmCupon.ro
+        run: |
+          if [ -n "$BREVO_API_KEY" ]; then
+            echo "Verific coduri noi si trimit alerte..."
+            python check_price_alerts.py
+          else
+            echo "BREVO_API_KEY nu e setat — skip alerte de pret"
+          fi
+
       # ── 6. Product Feeds API ──────────────────────────────────────────────
       - name: Fetch product feeds (2Performant API)
         working-directory: scripts
@@ -257,6 +274,7 @@ jobs:
           git add frontend/public/banners.json         || true
           git add frontend/public/top-produse.json     || true
           git add data/output.json                     || true
+          git add data/price_alert_snapshot.json       || true
           git add data/profitshare_output.json         || true
           git add data/banners_raw_debug.json          || true
           git add data/social-content.json             || true

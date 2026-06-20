@@ -54,6 +54,31 @@ function isValidEmail(email: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email) && email.length <= 254;
 }
 
+// ── ALERT_STORES (price alert per magazin) ──────────────────────────────────
+// PriceAlert.tsx trimite tag="alert_{magazin}". Salvam magazinul ca atribut
+// custom Brevo (CSV), citit ulterior de scripts/check_price_alerts.py.
+// Atributul ALERT_STORES trebuie creat o singura data in Brevo:
+// Contacts -> Settings -> Contact attributes -> Text -> ALERT_STORES
+function magazinFromTag(tag: string): string | null {
+  if (!tag.startsWith("alert_")) return null;
+  const magazin = tag.slice("alert_".length).trim().toLowerCase();
+  return magazin || null;
+}
+
+async function getExistingAlertStores(email: string, apiKey: string): Promise<string[]> {
+  try {
+    const res = await fetch(`${BREVO_API}/${encodeURIComponent(email)}`, {
+      headers: { "api-key": apiKey, "Accept": "application/json" },
+    });
+    if (!res.ok) return []; // contact nou sau eroare — pornim de la lista goala
+    const data = await res.json();
+    const raw = (data?.attributes?.ALERT_STORES || "") as string;
+    return raw.split(",").map((s: string) => s.trim()).filter(Boolean);
+  } catch {
+    return [];
+  }
+}
+
 // ── Welcome email ────────────────────────────────────────────────────────────
 async function sendWelcomeEmail(email: string, apiKey: string) {
   const html = `<!DOCTYPE html>
@@ -170,9 +195,13 @@ export async function POST(request: Request) {
 
   // Parse body
   let email = "";
+  let tag = "";
+  let source = "";
   try {
     const body = await request.json();
-    email = (body.email || "").trim().toLowerCase();
+    email  = (body.email  || "").trim().toLowerCase();
+    tag    = (body.tag    || "").trim();
+    source = (body.source || "").trim();
   } catch {
     return Response.json({ error: "Body invalid" }, { status: 400, headers: corsHeaders });
   }
@@ -190,7 +219,20 @@ export async function POST(request: Request) {
     );
   }
 
+  const magazin = magazinFromTag(tag);
+
   try {
+    const attributes: Record<string, string> = {
+      SOURCE:      source || "amcupon.ro",
+      SIGNUP_DATE: new Date().toISOString().split("T")[0],
+    };
+
+    if (magazin) {
+      const existing = await getExistingAlertStores(email, API_KEY);
+      if (!existing.includes(magazin)) existing.push(magazin);
+      attributes.ALERT_STORES = existing.join(",");
+    }
+
     const res = await fetch(BREVO_API, {
       method: "POST",
       headers: {
@@ -202,16 +244,14 @@ export async function POST(request: Request) {
         email,
         listIds:       [LIST_ID],
         updateEnabled: true,
-        attributes: {
-          SOURCE:      "amcupon.ro",
-          SIGNUP_DATE: new Date().toISOString().split("T")[0],
-        },
+        attributes,
       }),
     });
 
     if (res.status === 201 || res.status === 204) {
-      // Trimite email de bun venit (fire-and-forget, nu blocam raspunsul)
-      sendWelcomeEmail(email, API_KEY).catch(() => {});
+      // Email de bun venit doar pt. abonarile generice — alertele de pret
+      // au deja confirmare inline in PriceAlert.tsx, nu trimitem dublu.
+      if (!magazin) sendWelcomeEmail(email, API_KEY).catch(() => {});
       return Response.json({ ok: true }, { headers: corsHeaders });
     }
     const data = await res.json().catch(() => ({}));
