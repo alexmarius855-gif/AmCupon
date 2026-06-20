@@ -31,14 +31,18 @@ NAV_OUT   = os.path.join(PUB, "nav-index.json")
 
 # Cate articole / produse pastram pentru homepage
 N_BLOG          = 8
-N_PROD_TOTAL    = 48
+N_PROD_TOTAL    = 96
 N_PROD_PER_SHOP = 12  # max produse per merchant (fallback flat list)
-N_PER_CAT       = 8   # max produse per categorie in by_category
+N_PER_CAT       = 16  # max produse per categorie in by_category
 
 # Override explicit pentru merchantii cu categorie gresita in 2P/PS
 MERCHANT_CAT_OVERRIDE: dict[str, str] = {
-    "navstore.ro":    "automotive",
-    "outfitblack.ro": "books",
+    "navstore.ro": "automotive",
+    # outfitblack.ro -> "books" ELIMINAT (bug gasit 20.06.2026): outfitblack.ro e magazin
+    # de incaltaminte (zappatos.ro, poze cu pantofi), nu carti — categoria "Carti" pe homepage
+    # afisa de fapt pantofi sub eticheta gresita, plus magazinul oricum se inchide
+    # (vezi Probleme active din CLAUDE.md). Imaginile erau si pe HTTP simplu, blocate
+    # ca mixed-content pe amcupon.ro (https) — card goale in productie.
 }
 
 # Detectie categorie din titlu produs (fallback cand merchant nu e mapat)
@@ -174,7 +178,19 @@ def gen_products():
             merchant_to_cat[slug_short] = cat
             merchant_to_cat[magazin] = cat
 
-    valide = [p for p in products if p.get("image") and (p.get("price") or 0) > 0]
+    # Magazine cu feed de imagini stricat/mort — excluse din grid-ul de produse
+    # outfitblack.ro: imaginile (zappatos.ro) dau 404, plus magazinul se inchide
+    # (vezi Probleme active din CLAUDE.md) — verificat 20.06.2026
+    MERCHANT_IMG_BLOCKLIST = {"outfitblack.ro"}
+
+    # is_promo=True = banner generic de campanie (logo magazin reutilizat ca "imagine produs"),
+    # NU un produs real cu poza proprie — excluse explicit, altfel arata stricat in grid
+    # (bug observat 20.06.2026: categoria "Carti" avea 3 "produse" identice = logo Libhumanitas)
+    valide = [
+        p for p in products
+        if p.get("image") and (p.get("price") or 0) > 0 and not p.get("is_promo")
+        and (p.get("merchant_slug") or p.get("merchant") or "").lower() not in MERCHANT_IMG_BLOCKLIST
+    ]
 
     # Adauga category_slug fiecarui produs
     for p in valide:

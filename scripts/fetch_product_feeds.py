@@ -631,6 +631,101 @@ def parse_csv_feed(content: bytes, merchant: str, feed_id, encoding="utf-8") -> 
     return products
 
 
+# ─── Feed combinat 2Performant ("My Feeds", multi-magazin) ───────────────────
+# Format nativ 2Performant (DIFERIT de Google Shopping XML): un singur fisier
+# <items><item> cu <title>/<aff_code>/<price>/<campaign_name>/<image_urls>,
+# campaign_name variaza per produs (multi-magazin in acelasi feed).
+# aff_code e deja link de tracking COMPLET — nu se mai dubleaza cu make_afiliat_url.
+# Creat manual din 2Performant -> Affiliate -> My Feeds (24 surse, 414k+ produse,
+# descoperit 20.06.2026 dupa ce s-a constatat ca toate URL-urile ghicite din
+# KNOWN_FEEDS sunt moarte — vezi CLAUDE.md "products-home.json").
+MY_FEED_URL = "https://api.2performant.com/feed/4a3fc5d5f.xml"
+
+
+def parse_my_feed_combined(url: str, slug_map: dict, max_per_merchant: int = 2000) -> tuple[list, dict]:
+    """Streaming-parseaza feed-ul combinat 2Performant (multi-magazin).
+    Nu bufereaza tot fisierul in memorie — proceseaza element cu element direct
+    din raspunsul HTTP, deoarece fisierul poate avea sute de MB (414k+ produse
+    cu descrieri lungi). Cap per-magazin pentru diversitate, fara cap total
+    artificial — scaneaza tot fisierul ca sa prinda toate cele ~24 surse,
+    nu doar primul magazin (care poate domina alfabetic/in ordinea feed-ului).
+    """
+    products: list = []
+    per_merchant: dict = {}
+    items_seen = 0
+    skipped_no_data = 0
+
+    try:
+        resp = _session.get(url, headers=_BROWSER_HEADERS, timeout=600, stream=True)
+        resp.raise_for_status()
+        resp.raw.decode_content = True
+
+        for event, elem in ET.iterparse(resp.raw, events=("end",)):
+            if elem.tag != "item":
+                continue
+            items_seen += 1
+
+            title       = (elem.findtext("title") or "").strip()
+            link        = (elem.findtext("aff_code") or "").strip()
+            price       = _parse_price(elem.findtext("price"))
+            merchant_raw = (elem.findtext("campaign_name") or "").strip()
+            # image_urls e uneori o lista separata prin virgula (ex: carturesti.ro
+            # trimite mai multe poze per produs) — luam doar prima, altfel src-ul
+            # din <img> devine un string invalid cu mai multe URL-uri concatenate
+            image_raw   = (elem.findtext("image_urls") or "").strip()
+            image       = image_raw.split(",")[0].strip()
+            elem.clear()
+
+            if not title or not link or not image or price <= 0 or not merchant_raw:
+                skipped_no_data += 1
+                continue
+
+            # AmCupon e pentru cumparatori din Romania — excludem magazine pe alt
+            # domeniu de tara (ex: zapatos.hu, esteto.bg, vidaxl.bg) gasite in feed-ul
+            # combinat 2Performant (descoperit 20.06.2026, vezi CLAUDE.md)
+            merchant_domain = merchant_raw.lower().rstrip("/")
+            if not merchant_domain.endswith(".ro"):
+                skipped_no_data += 1
+                continue
+
+            mn  = merchant_raw.lower()
+            cnt = per_merchant.get(mn, 0)
+            per_merchant[mn] = cnt + 1
+            if cnt >= max_per_merchant:
+                continue  # cota magazinului plina, dar continuam scanarea pt. restul
+
+            slug = slug_map.get(mn, slug_map.get(mn.split(".")[0], merchant_raw))
+
+            products.append({
+                "id":           f"2pfeed_{items_seen}",
+                "title":        title[:120],
+                "url":          link,           # aff_code e deja link complet de tracking
+                "url_original": link,
+                "image":        image,
+                "price":        price,
+                "old_price":    None,
+                "discount_pct": 0,
+                "category":     "",
+                "cat_slug":     normalize_cat_slug("", merchant_raw),
+                "brand":        "",
+                "merchant":     merchant_raw,
+                "merchant_slug": slug,
+                "feed_id":      "my_feed_combined",
+            })
+
+            if items_seen % 50000 == 0:
+                print(f"      ...{items_seen} produse scanate, {len(products)} retinute, {len(per_merchant)} magazine vazute")
+
+    except ET.ParseError as e:
+        print(f"    XML ParseError (feed combinat): {e} — {len(products)} produse pana acum din {items_seen} scanate")
+    except Exception as e:
+        print(f"    EROARE feed combinat: {e}")
+
+    print(f"    Feed combinat: {items_seen} produse scanate, {len(products)} retinute, "
+          f"{len(per_merchant)} magazine distincte, {skipped_no_data} sarite (date lipsa)")
+    return products, per_merchant
+
+
 # ─── Download + parsare feed ──────────────────────────────────────────────────
 
 _BROWSER_HEADERS = {
@@ -817,6 +912,11 @@ def main():
     slug_map = build_slug_map()
     print(f"  Slug map: {len(slug_map)} intrari")
 
+    # ── 0. Feed combinat 2Performant ("My Feeds", 24+ magazine reale) ─────────
+    print("\n[0/4] Descarc feed-ul combinat 2Performant (My Feeds)...")
+    combined_products, combined_stats = parse_my_feed_combined(MY_FEED_URL, slug_map)
+    print(f"  Feed combinat: {len(combined_products)} produse din {len(combined_stats)} magazine")
+
     # ── 2. Feed list ──────────────────────────────────────────────────────────
     feeds_cu_url   = []
     feeds_fara_url = []
@@ -850,37 +950,15 @@ def main():
 
     # Feed-uri cunoscute cu URL direct (diverse categorii)
     # Formatul: name = merchant slug, url = URL direct XML/CSV
+    # NOTA 20.06.2026: lista era 19 intrari, 18 confirmate MOARTE (404/403/DNS fail)
+    # prin testare live (inclusiv din GitHub Actions cu auth reala). Curatata la
+    # singura intrare confirmata functionala. Sursa principala de produse e acum
+    # MY_FEED_URL (feed combinat 2Performant, vezi mai sus) — 20+ magazine reale.
+    # Daca vrei sa adaugi un magazin nou, mai simplu sa-l adaugi in 2Performant
+    # -> Affiliate -> My Feeds, nu sa ghicesti URL-ul direct al magazinului.
     KNOWN_FEEDS = [
-        # ── Carti ────────────────────────────────────────────────────────────────
-        {"name": "libris.ro",        "url": "https://www.libris.ro/feed_2p-21220622?_uiAc=ODA4OA=="},
-        {"name": "elefant.ro",       "url": "https://www.elefant.ro/feed/google-shopping"},
-        # ── Casa & Gradina / General ─────────────────────────────────────────────
-        {"name": "vidaxl.ro",        "url": "https://www.vidaxl.ro/feed/google"},
         {"name": "navstore.ro",      "url": "https://www.navstore.ro/feed/googleShoppingAds.xml"},
-        # ── Copii / Jucarii ──────────────────────────────────────────────────────
-        {"name": "noriel.ro",        "url": "https://www.noriel.ro/feed/google_shopping.xml"},
-        # ── Sport / Outdoor ──────────────────────────────────────────────────────
-        {"name": "sportisimo.ro",    "url": "https://www.sportisimo.ro/google-merchant-feed.xml"},
-        {"name": "decathlon.ro",     "url": "https://www.decathlon.ro/feed/google_shopping.xml"},
-        # ── Electronice / IT ─────────────────────────────────────────────────────
-        {"name": "pcgarage.ro",      "url": "https://www.pcgarage.ro/feed/google/?lang=ro"},
-        {"name": "altex.ro",         "url": "https://www.altex.ro/feed/google-shopping.xml"},
-        {"name": "evomag.ro",        "url": "https://www.evomag.ro/feed/google.xml"},
-        {"name": "quickmobile.ro",   "url": "https://www.quickmobile.ro/feed/google.xml"},
-        # ── Beauty / Sanatate ────────────────────────────────────────────────────
-        {"name": "farmacia-tei.ro",  "url": "https://www.farmacia-tei.ro/feed/google-shopping.xml"},
-        {"name": "secom.ro",         "url": "https://www.secom.ro/feed/google-shopping.xml"},
-        # ── Fashion / Imbracaminte ───────────────────────────────────────────────
-        {"name": "fashion-days.ro",  "url": "https://www.fashiondays.ro/feed/google-shopping.xml"},
-        {"name": "answear.ro",       "url": "https://www.answear.ro/feed/google-shopping.xml"},
-        {"name": "epantofi.ro",      "url": "https://www.epantofi.ro/feed/google-shopping.xml"},
-        # ── Auto ────────────────────────────────────────────────────────────────
-        {"name": "automobilus.ro",   "url": "https://www.automobilus.ro/googlemerchantshopping.xml"},
-        # ── Electronice extra ────────────────────────────────────────────────────
-        {"name": "emag.ro",          "url": "https://www.emag.ro/feed/google-shopping.xml"},
-        {"name": "flanco.ro",        "url": "https://www.flanco.ro/feed/google-shopping.xml"},
     ]
-    # outfitblack.ro eliminat — se inchide 10-07-2026
     slug_map_rev = {v: k for k, v in slug_map.items()}
     existing_names = {(f.get("name") or "").lower() for f, _ in feeds_cu_url}
 
@@ -909,8 +987,8 @@ def main():
 
     # ── 4. Descarca si parseaza ───────────────────────────────────────────────
     print(f"\n[4/4] Procesez {len(feeds_to_process)} feed-uri...")
-    all_products = []
-    stats = {"feeds_ok": 0, "feeds_fail": 0, "cu_imagine": 0, "fara_imagine": 0}
+    all_products = list(combined_products)
+    stats = {"feeds_ok": 1 if combined_products else 0, "feeds_fail": 0, "cu_imagine": 0, "fara_imagine": 0}
 
     for idx, (feed, furl) in enumerate(feeds_to_process):
         if len(all_products) >= MAX_TOTAL:
