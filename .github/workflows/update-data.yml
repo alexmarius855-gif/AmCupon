@@ -282,6 +282,7 @@ jobs:
           git add "data/social-nisa-*.txt"             || true
           git add data/banner_daily.png                || true
           git add data/banner_story.png                || true
+          git add data/indexnow_seen.json               || true
 
           if git diff --staged --quiet; then
             echo "Nicio schimbare — skip commit"
@@ -293,6 +294,12 @@ jobs:
               sleep $((i * 10))
             done
           fi
+
+      # ── 14b. IndexNow — anunta Bing/Yandex de pagini noi (fara cont) ──────
+      - name: Trimite URL-uri noi catre IndexNow (Bing/Yandex)
+        continue-on-error: true
+        working-directory: scripts
+        run: python submit_indexnow.py
 
       # ── 15. Social Media — DUPA commit, ca bannerele sa fie live ──────────
 
