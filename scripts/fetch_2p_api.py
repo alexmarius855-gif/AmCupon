@@ -241,8 +241,13 @@ def fetch_all_pages(endpoint: str, per_page: int = 100) -> list:
 
 # ─── Procesare date ───────────────────────────────────────────────────────────
 
-def normalize_category(raw: str) -> str:
-    if not raw:
+def normalize_category(raw) -> str:
+    # API-ul 2Performant returneaza category fie ca text simplu, fie ca obiect
+    # {"name": "..."} pentru unele programe — normalizam intai la string
+    # (bug gasit 20.06.2026: crasha intregul fetch cu 'dict' has no attribute 'lower')
+    if isinstance(raw, dict):
+        raw = raw.get("name") or raw.get("title") or ""
+    if not raw or not isinstance(raw, str):
         return "Online Mall"
     raw_l = raw.lower()
     for key, val in CATEGORY_MAP.items():
