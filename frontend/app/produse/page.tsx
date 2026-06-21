@@ -108,7 +108,7 @@ export default function ProduseePage() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(produseJsonLd) }} />
       )}
       <ProduseClient
-        products={productsData.products || []}
+        products={(productsData.products || []).slice(0, 60)}
         updated={productsData.updated || ""}
         magazine={magazine}
         banners={bannersData.banners || []}

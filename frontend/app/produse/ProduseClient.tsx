@@ -1,7 +1,7 @@
 ﻿"use client";
 
 import Link from "next/link";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { useWishlist } from "../hooks/useWishlist";
 import { CAT_META } from "./categorie-meta";
 
@@ -288,7 +288,7 @@ function DealCard({ m, rank }: { m: Magazin; rank?: number }) {
 
 /* ─── Main Component ──────────────────────────────────────────────────────── */
 export default function ProduseClient({
-  products,
+  products: initialProducts,
   updated,
   magazine,
   banners,
@@ -300,6 +300,26 @@ export default function ProduseClient({
   banners: Banner[];
   an: number;
 }) {
+  // Produsele NU mai vin integral ca prop (33k = pagina de 21MB care spargea
+  // build-ul Vercel cu FALLBACK_BODY_TOO_LARGE). Serverul trimite doar un set
+  // initial mic pentru primul paint + SEO; restul se incarca client-side din
+  // fisierul static deja servit de CDN (acelasi pattern ca homepage cu output.json).
+  const [products, setProducts] = useState<Produs[]>(initialProducts);
+  useEffect(() => {
+    let activ = true;
+    fetch("/products.json")
+      .then((r) => r.json())
+      .then((d) => {
+        if (!activ) return;
+        const lista: Produs[] = d.products || d;
+        if (Array.isArray(lista) && lista.length > initialProducts.length) {
+          setProducts(lista);
+        }
+      })
+      .catch(() => {});
+    return () => { activ = false; };
+  }, [initialProducts]);
+
   const [search,      setSearch]      = useState("");
   const [categorie,   setCategorie]   = useState("");
   const [magazinFiltru, setMagazinFiltru] = useState("");

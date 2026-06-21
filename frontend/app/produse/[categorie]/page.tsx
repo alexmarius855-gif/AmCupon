@@ -155,7 +155,7 @@ export default async function ProduseCategorieePage(
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       )}
       <ProduseCategorieClient
-        products={filtered}
+        products={filtered.slice(0, 60)}
         updated={productsData.updated}
         categorie={categorie}
         catMeta={meta}

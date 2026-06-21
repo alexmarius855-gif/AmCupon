@@ -123,7 +123,7 @@ function SkeletonCard() {
 
 /* ─── Main Component ─────────────────────────────────────────────────────── */
 export default function ProduseCategorieClient({
-  products,
+  products: initialProducts,
   updated,
   categorie,
   catMeta,
@@ -135,6 +135,28 @@ export default function ProduseCategorieClient({
   catMeta: { label: string; emoji: string; desc: string; h1: string };
   totalAll: number;
 }) {
+  // Produsele NU mai vin integral ca prop (categoria "altele" are 21k+ produse =
+  // pagina enorma care risca limita ISR Vercel 19MB). Server trimite set initial
+  // mic; restul se incarca client-side din /products.json (CDN) si se filtreaza
+  // dupa cat_slug. Vezi fix-ul identic din /produse (FALLBACK_BODY_TOO_LARGE).
+  const [products, setProducts] = useState<Produs[]>(initialProducts);
+  useEffect(() => {
+    let activ = true;
+    fetch("/products.json")
+      .then((r) => r.json())
+      .then((d) => {
+        if (!activ) return;
+        const lista: (Produs & { cat_slug?: string })[] = d.products || d;
+        if (!Array.isArray(lista)) return;
+        const aleCategoriei = lista.filter((p) => p.cat_slug === categorie);
+        if (aleCategoriei.length > initialProducts.length) {
+          setProducts(aleCategoriei);
+        }
+      })
+      .catch(() => {});
+    return () => { activ = false; };
+  }, [categorie, initialProducts]);
+
   const [search,      setSearch]      = useState("");
   const [minDiscount, setMinDiscount] = useState(0);
   const [maxPret,     setMaxPret]     = useState(0);
