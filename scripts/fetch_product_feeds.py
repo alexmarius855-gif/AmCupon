@@ -639,7 +639,11 @@ def parse_csv_feed(content: bytes, merchant: str, feed_id, encoding="utf-8") -> 
 # Creat manual din 2Performant -> Affiliate -> My Feeds (24 surse, 414k+ produse,
 # descoperit 20.06.2026 dupa ce s-a constatat ca toate URL-urile ghicite din
 # KNOWN_FEEDS sunt moarte — vezi CLAUDE.md "products-home.json").
-MY_FEED_URL = "https://api.2performant.com/feed/4a3fc5d5f.xml"
+# 2Performant a mutat feed-urile de pe api.2performant.com pe feeds.2performant.com
+# (21.06.2026: api.* returneaza redirect HTML -> ET.iterparse crapa cu
+# "not well-formed line 1 col 0" -> 0 produse, products.json inghetat din 20.06).
+# Pointam direct la adresa finala ca sa ocolim redirectul.
+MY_FEED_URL = "https://feeds.2performant.com/feed/4a3fc5d5f.xml"
 
 
 def parse_my_feed_combined(url: str, slug_map: dict, max_per_merchant: int = 2000) -> tuple[list, dict]:
