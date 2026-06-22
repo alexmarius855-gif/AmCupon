@@ -289,7 +289,7 @@ jobs:
           else
             git commit -m "chore: actualizare automata $(date -u +%Y-%m-%d)"
             for i in 1 2 3 4 5; do
-              git pull --rebase origin main && git push && echo "Date noi publicate — Vercel redeploys automat" && break
+              git pull --rebase --autostash origin main && git push && echo "Date noi publicate — Vercel redeploys automat" && break
               echo "Push esuat (tentativa $i/5) — retrying in ${i}0s..."
               sleep $((i * 10))
             done

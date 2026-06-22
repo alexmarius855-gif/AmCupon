@@ -1034,20 +1034,32 @@ def main():
         print(f"    Total acumulat: {len(all_products)} produse")
         time.sleep(1.0)  # Respecta rate limiting
 
-    # Daca nu am reusit nimic cu URL direct, incearca fallback pe primele feed-uri
-    if not all_products and feeds_fara_url:
-        print("\n  Niciun produs din feed-uri directe — fallback API complet...")
-        for feed in feeds_fara_url[:5]:
+    # Feed-uri fara URL direct -> produse via API autentificat (api.2performant.com).
+    # IMPORTANT: feed-ul combinat (feeds.2performant.com) e blocat pe IP de datacenter
+    # (Cloudflare) -> din GitHub Actions returneaza HTML, nu XML, deci 0 produse.
+    # API-ul autentificat NU e blocat (login-ul si fetch-ul magazinelor merg in CI),
+    # asa ca il folosim mereu ca sursa de diversitate, nu doar ca fallback cand e gol.
+    # Altfel in CI ramanea doar navstore (1 magazin), o regresie fata de feed-ul local.
+    if feeds_fara_url:
+        already = {(p.get("merchant_slug") or p.get("merchant") or "").lower()
+                   for p in all_products}
+        print(f"\n  Diversitate via API: procesez {min(len(feeds_fara_url), 20)} feed-uri 2P...")
+        for feed in feeds_fara_url[:20]:
             feed_id  = feed.get("id", "")
             prog     = feed.get("program", {}) or {}
             merchant = prog.get("name", "") or feed.get("name", "")
             mn       = merchant.strip().lower()
+            slug     = slug_map.get(mn, slug_map.get(mn.split(".")[0], mn))
+            # daca feed-ul combinat a acoperit deja bogat magazinul, sarim (evitam dubluri locale)
+            if slug.lower() in already or mn in already:
+                continue
             products = get_products_from_api(feed_id, merchant)
             for p in products:
-                slug = slug_map.get(mn, slug_map.get(mn.split(".")[0], mn))
                 p["merchant_slug"] = slug
+            if products:
+                print(f"    + {merchant[:30]:30} {len(products)} produse via API")
             all_products.extend(products)
-            time.sleep(0.5)
+            time.sleep(0.4)
 
     # ── Diversitate: max MAX_PER_MERCHANT per merchant ────────────────────────
     import random
@@ -1077,6 +1089,29 @@ def main():
 
     merchants_finali = len(set((p.get("merchant_slug") or p.get("merchant","")).lower() for p in all_products))
     print(f"  Diversitate finala: {merchants_finali} merchants distincti in {len(all_products)} produse")
+
+    # ── Guard anti-regresie ───────────────────────────────────────────────────
+    # Daca run-ul a iesit degradat (foarte putine magazine — ex. doar navstore
+    # fiindca feed-ul combinat a fost blocat in CI si API-ul n-a raspuns), NU
+    # suprascriem un products.json existent mai bogat. Mai bine date stabile
+    # (chiar usor invechite) decat un fisier cu un singur magazin.
+    MIN_MERCHANTS_OK = 4
+    if merchants_finali < MIN_MERCHANTS_OK and os.path.exists(output_path):
+        try:
+            with open(output_path, "r", encoding="utf-8") as f:
+                old = json.load(f)
+            old_prods = old.get("products", []) if isinstance(old, dict) else old
+            old_merchants = len(set(
+                (p.get("merchant_slug") or p.get("merchant", "")).lower()
+                for p in old_prods
+            ))
+            if old_merchants > merchants_finali:
+                print(f"\n  ⚠ Run degradat: {merchants_finali} magazine vs {old_merchants} "
+                      f"in fisierul existent ({len(old_prods)} produse). "
+                      f"PASTREZ fisierul vechi, NU suprascriu.")
+                return
+        except Exception as e:
+            print(f"  (nu am putut citi products.json existent pt. guard: {e})")
 
     # ── Salveaza ──────────────────────────────────────────────────────────────
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
