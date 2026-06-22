@@ -1,16 +1,34 @@
 [
  {
-  "magazin": "moftcollection.ro",
-  "nume": "Moftcollection",
-  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13200/medium/13200.png",
-  "categorie": "Electronics IT&C",
-  "comision": 20.0,
+  "magazin": "facturis-online.ro",
+  "nume": "Facturis Online",
+  "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_facturis_online.ro_1430824435.png",
+  "categorie": "Online Mall",
+  "comision": 35.0,
   "are_cod": false,
-  "oferta": "Livrare Gratuita la comenzi de peste 200 lei"
+  "oferta": "Faturis Online e-Factura"
  },
  {
-  "magazin": "bookzone.ro",
-  "nume": "Bookzone",
+  "magazin": "emag.ro",
+  "nume": "Emag",
+  "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_emag.ro_1570027386.png",
+  "categorie": "Online Mall",
+  "comision": 20.0,
+  "are_cod": false,
+  "oferta": "Electro Weekend 19 - 22 iunie 2026"
+ },
+ {
+  "magazin": "itgalaxy.ro",
+  "nume": "Itgalaxy",
+  "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_itgalaxy.ro_1603815076.png",
+  "categorie": "Electronics IT&C",
+  "comision": 10.0,
+  "are_cod": false,
+  "oferta": "Telefoane mobile"
+ },
+ {
+  "magazin": "bookzone-ro-9c9bce7e-a8e0-40de-8d7a-afa44b9f3d2a",
+  "nume": "Bookzone Ro 9c9bce7e A8e0 40de 8d7a Afa44b9f3d2a",
   "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9309/medium/9309.png",
   "categorie": "Books",
   "comision": 10.0,
@@ -18,93 +36,75 @@
   "oferta": "Nou pe bookzone.ro: 1200 de titluri în engleză – Un adevărat festin li"
  },
  {
-  "magazin": "noriel.ro",
-  "nume": "Noriel",
-  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/7926/medium/7926.png",
-  "categorie": "Babies Kids & Toys",
-  "comision": 7.0,
-  "are_cod": true,
-  "oferta": "50 lei Voucher Cadou la comenzile de minimum 249 de lei | 25.05 - 02.0"
- },
- {
-  "magazin": "carturesti.ro",
-  "nume": "Carturesti",
-  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11380/medium/11380.png",
-  "categorie": "Books",
-  "comision": 9.0,
-  "are_cod": false,
-  "oferta": "Anul școlar s-a terminat. Povestea abia începe"
- },
- {
-  "magazin": "apiland.ro",
-  "nume": "Apiland",
-  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/2683/medium/2683.png",
-  "categorie": "Health & Personal care",
+  "magazin": "pint.ro",
+  "nume": "Pint",
+  "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_rca_ieftin.ro_1572950407.png",
+  "categorie": "Automotive",
   "comision": 10.0,
   "are_cod": false,
-  "oferta": "Start de vară cu tonicele apicole ApiLand"
+  "oferta": "Asigurari RCA"
  },
  {
-  "magazin": "elindor.ro",
-  "nume": "Elindor",
-  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13890/medium/13890.jpeg",
+  "magazin": "exclusive-home.ro",
+  "nume": "Exclusive Home",
+  "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_exclusive_home.ro_1740577116.png",
+  "categorie": "Home & Garden",
+  "comision": 10.0,
+  "are_cod": false,
+  "oferta": "OFERTA TRIO-   3 PATURI COCOLINO= 99 LEI"
+ },
+ {
+  "magazin": "streamstore.ro",
+  "nume": "Streamstore",
+  "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_streamstore.ro_1716811541.jpg",
+  "categorie": "Electronics IT&C",
+  "comision": 10.0,
+  "are_cod": false,
+  "oferta": "NetStreamSofware"
+ },
+ {
+  "magazin": "vapetronic.ro",
+  "nume": "Vapetronic",
+  "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_vapetronic.ro_1728402751.png",
   "categorie": "Online Mall",
-  "comision": 10.0,
-  "are_cod": true,
-  "oferta": "10% reducere extra pentru afiliatii Elindor 😊"
- },
- {
-  "magazin": "kamin.ro",
-  "nume": "Kamin",
-  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13443/medium/13443.png",
-  "categorie": "Home & Garden",
-  "comision": 10.0,
+  "comision": 8.0,
   "are_cod": false,
-  "oferta": "Gratar WEBER Gratuit"
+  "oferta": "General"
  },
  {
-  "magazin": "libhumanitas.ro",
-  "nume": "Libhumanitas",
-  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/2577/medium/2577.png",
-  "categorie": "Books",
-  "comision": 10.0,
-  "are_cod": false,
-  "oferta": "20% reducere la toate titlurile din categoria Știință ale editurii HUM"
- },
- {
-  "magazin": "fara-daunatori.ro",
-  "nume": "Fara Daunatori",
-  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11329/medium/11329.png",
-  "categorie": "Home & Garden",
-  "comision": 10.0,
-  "are_cod": false,
-  "oferta": "Oferta 1+1"
- },
- {
-  "magazin": "dacris.net",
-  "nume": "Dacris",
-  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/2970/medium/2970.jpg",
-  "categorie": "Office supplies",
-  "comision": 10.0,
-  "are_cod": false,
-  "oferta": "Accesorii premium pentru laptop, mouse, tastatură și hub-uri"
- },
- {
-  "magazin": "litera.ro",
-  "nume": "Litera",
-  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9545/medium/9545.png",
-  "categorie": "Books",
+  "magazin": "daedalusonline.eu",
+  "nume": "Daedalusonline",
+  "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_daedalusonline.eu_1485345410.png",
+  "categorie": "Online Mall",
   "comision": 7.0,
   "are_cod": false,
-  "oferta": "🧸 De 1 iunie, copiii au decis: toate cărțile trebuie să ajungă la ei! "
+  "oferta": "Descoperă beneficiile Daedalus Online"
  },
  {
-  "magazin": "paa-home.ro",
-  "nume": "Paa Home",
-  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13525/medium/13525.jpg",
-  "categorie": "Home & Garden",
+  "magazin": "giftspot.ro",
+  "nume": "Giftspot",
+  "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_giftspot.ro_1727711187.png",
+  "categorie": "Online Mall",
   "comision": 7.0,
   "are_cod": false,
-  "oferta": "Livrare Gratuita la comenzi de peste 350 lei"
+  "oferta": "Giftspot.ro - Magazinul de Cadouri Originale și Gadget-uri"
+ },
+ {
+  "magazin": "pcmadd.com",
+  "nume": "Pcmadd",
+  "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_pcmadd.com_1384803965.png",
+  "categorie": "Electronics IT&C",
+  "comision": 6.0,
+  "are_cod": false,
+  "oferta": "m@dd server"
+ },
+ {
+  "magazin": "fashiondays.ro",
+  "nume": "Fashiondays",
+  "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_fashiondays.ro_1713947169.jpg",
+  "categorie": "Fashion",
+  "comision": 5.0,
+  "are_cod": false,
+  "oferta": "Summer Offers 19 iun - 6 iul"
  }
 ]

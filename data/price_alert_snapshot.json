@@ -1,7 +1,4 @@
 {
-  "noriel.ro": [
-    "NORIEL50"
-  ],
   "jollymag.ro": [
     "JOLLY10"
   ],
@@ -10,15 +7,5 @@
   ],
   "medimfarm.ro": [
     "SUMMER18"
-  ],
-  "sportdepot.ro": [
-    "EXTRA10",
-    "PUMA10"
-  ],
-  "elindor.ro": [
-    "ELINDORHOME10"
-  ],
-  "optiblu.ro": [
-    "MAI"
   ]
 }
