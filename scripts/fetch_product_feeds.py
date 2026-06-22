@@ -1054,7 +1054,12 @@ def main():
             feed_id  = feed.get("id", "")
             prog     = feed.get("program", {}) or {}
             merchant = prog.get("name", "") or feed.get("name", "")
-            mn       = merchant.strip().lower()
+            mn       = merchant.strip().lower().rstrip("/")
+            # AmCupon e pentru cumparatori din Romania — sarim magazinele pe domeniu
+            # de tara straina (ex: fragranza.hu, liki24.pl) gasite in My Feeds 2P
+            if any(mn.endswith(t) for t in (".hu", ".pl", ".bg", ".gr", ".cz", ".sk", ".ua", ".md", ".rs", ".hr", ".si")):
+                print(f"    - {merchant[:30]:30} magazin strain — sarit")
+                continue
             slug     = slug_map.get(mn, slug_map.get(mn.split(".")[0], mn))
             # daca feed-ul combinat a acoperit deja bogat magazinul, sarim (evitam dubluri locale)
             if slug.lower() in already or mn in already:
