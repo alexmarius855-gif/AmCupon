@@ -859,13 +859,19 @@ def get_products_from_api(feed_id, merchant: str) -> list:
         for prod in items:
             title = prod.get("title", "") or ""
             url   = prod.get("url", "") or prod.get("product_url", "") or ""
+            # structured_image_urls poate veni ca dict SAU ca lista (variaza per feed) —
+            # normalizam la lista de valori inainte de iterare, altfel .values() crapa
+            sims = prod.get("structured_image_urls")
+            if isinstance(sims, dict):
+                sims_vals = list(sims.values())
+            elif isinstance(sims, list):
+                sims_vals = sims
+            else:
+                sims_vals = []
             image = (
                 prod.get("image_url", "")
                 or prod.get("image", "")
-                or next(
-                    (v for v in (prod.get("structured_image_urls") or {}).values() if v),
-                    ""
-                )
+                or next((v for v in sims_vals if v), "")
             )
             if not title or not url:
                 continue
@@ -1053,7 +1059,11 @@ def main():
             # daca feed-ul combinat a acoperit deja bogat magazinul, sarim (evitam dubluri locale)
             if slug.lower() in already or mn in already:
                 continue
-            products = get_products_from_api(feed_id, merchant)
+            try:
+                products = get_products_from_api(feed_id, merchant)
+            except Exception as e:
+                print(f"    ! {merchant[:30]:30} eroare API ({e}) — sarim")
+                continue
             for p in products:
                 p["merchant_slug"] = slug
             if products:
