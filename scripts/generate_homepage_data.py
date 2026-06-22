@@ -12,7 +12,9 @@ Ruleaza DUPA generate_blog.py si fetch_product_feeds.py in pipeline.
 
 import json
 import os
+import re
 import sys
+import unicodedata
 
 if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
     try:
@@ -35,17 +37,38 @@ N_PROD_TOTAL    = 96
 N_PROD_PER_SHOP = 12  # max produse per merchant (fallback flat list)
 N_PER_CAT       = 16  # max produse per categorie in by_category
 
-# Override explicit pentru merchantii cu categorie gresita in 2P/PS
+# Override de categorie pentru magazine VERIFICATE manual cu catalog coerent
+# (folosit DOAR ca fallback cand titlul produsului nu se clasifica singur).
+# Verificat 21.06.2026 din titlurile reale ale feed-ului.
 MERCHANT_CAT_OVERRIDE: dict[str, str] = {
-    "navstore.ro": "automotive",
-    # outfitblack.ro -> "books" ELIMINAT (bug gasit 20.06.2026): outfitblack.ro e magazin
-    # de incaltaminte (zappatos.ro, poze cu pantofi), nu carti — categoria "Carti" pe homepage
-    # afisa de fapt pantofi sub eticheta gresita, plus magazinul oricum se inchide
-    # (vezi Probleme active din CLAUDE.md). Imaginile erau si pe HTTP simplu, blocate
-    # ca mixed-content pe amcupon.ro (https) — card goale in productie.
+    "navstore.ro":           "automotive",   # navigatii auto
+    "evomag.ro":             "electronics-itc",
+    "gameology.ro":          "games",         # jocuri de societate
+    "bookzone.ro":           "books",
+    "libris.ro":             "books",
+    "reincarcareprepay.ro":  "telecom",       # reincarcari prepay
+    "farmec.ro":             "beauty",        # cosmetice Gerovital/Farmec
+    "dyfashion.ro":          "fashion",
+    "inpuff.ro":             "fashion",
+    "nurio.ro":              "babies-kids-toys",  # jucarii + accesorii bebe
+    "foglia.ro":             "home-garden",   # chiuvete/baie/bucatarie (NU beauty!)
+    "sofiline.ro":           "fashion",
+    "sevensins.ro":          "fashion",
+    # carturesti.ro feed = figurine/colectii (Funko etc.), NU carti -> games
+    "carturesti.ro":         "games",
+    # depox.ro: vinde arme/autoaparare (spray paralizant, electrosoc, cutite, baston)
+    # + gadgeturi disparate -> EXCLUS complet din homepage (vezi MERCHANT_GRID_BLOCKLIST)
 }
 
-# Detectie categorie din titlu produs (fallback cand merchant nu e mapat)
+# Magazine excluse complet din grid-ul de produse de pe homepage:
+# - depox.ro: catalog cu arme/autoaparare, nepotrivit de afisat (mai ales langa "Copii")
+# - outfitblack.ro: imagini moarte (zappatos.ro 404) + magazinul se inchide
+MERCHANT_GRID_BLOCKLIST = {"depox.ro", "outfitblack.ro"}
+
+# Detectie categorie din TITLUL produsului (sursa PRIMARA — nu magazinul, fiindca
+# magazinele multi-categorie bagau tot intr-o singura categorie gresita).
+# Ordinea conteaza: prima potrivire castiga. Termenii structurali (baie/bucatarie)
+# sunt inainte de beauty ca "Suport gel de dus" sa mearga la Casa, nu la Frumusete.
 TITLE_CAT_KEYWORDS: list[tuple[str, list[str]]] = [
     ("automotive",          ["navigatie", "navigatii", "carplay", "android auto", "bmw", "mercedes",
                              "volkswagen", "skoda", "ford", "opel", "toyota", "audi", "renault",
@@ -53,32 +76,62 @@ TITLE_CAT_KEYWORDS: list[tuple[str, list[str]]] = [
                              "mazda", "porsche", "jeep", "mitsubishi", "suzuki", "nissan", "lexus",
                              "dvd auto", "multimedia auto", "adaptoare 2din", "rama adaptoare",
                              "unitate centrala"]),
+    # Casa & baie & bucatarie INAINTE de beauty (capteaza "suport gel de dus", "chiuveta")
+    ("home-garden",         ["chiuveta", "lavoar", "vas wc", "capac wc", "baterie lavoar",
+                             "baterie bucatarie", "baterie cada", "robinet", "paravan dus",
+                             "cabina dus", "palarie dus", "rigola", "ventil", "suport gel",
+                             "raft baie", "canapea", "fotoliu", "saltea", "dulap", "covor",
+                             "perdea", "lampa", "gradina", "planta", "cuvertura", "patura",
+                             "espressor", "cafetiera", "aspirator", "masina de spalat",
+                             "masina de cafea", "tigaie", "oala", "set cutite", "mobilier"]),
+    ("games",               ["figurina", "funko", "board game", "joc de societate",
+                             "carti de joc", "monopoly", "lorcana", "catan", "zaruri",
+                             "card sleeves", "set magnetic", "joc de carti", "puzzle 1000"]),
     ("books",               ["carte", "carti", "roman", "literatura", "antologie", "beletristica",
-                             "nuvela", "poezie", "memorii", "biografie", "atlas", "dictionar"]),
+                             "nuvela", "poezie", "memorii", "biografie", "atlas", "dictionar",
+                             "editura", "abecedar", "revista"]),
+    ("babies-kids-toys",    ["jucarie", "jucarii", "lego", "papusa", "scutec", "biberon", "suzeta",
+                             "carucior", "patut", "masinuta", "tablita magnetica", "montessori",
+                             "puzzle din lemn", "jucarie motrica"]),
     ("electronics-itc",     ["laptop", "telefon", "tableta", "smartphone", "monitor", "televizor",
                              "casti wireless", "smartwatch", "ssd", "hdd", "placa video", "procesor",
-                             "router", "camera foto", "imprimanta"]),
+                             "router", "camera foto", "imprimanta", "incarcator", "boxa", "binoclu"]),
     ("fashion",             ["tricou", "rochie", "pantalon", "bluza", "jacheta", "palton", "geaca",
-                             "incaltaminte", "pantofi", "adidasi", "ghete", "tenisi", "geanta"]),
-    ("home-garden",         ["canapea", "fotoliu", "saltea", "dulap", "covor", "perdea", "lampa",
-                             "gradina", "planta", "cuvertura", "patura", "husa canapea"]),
+                             "incaltaminte", "pantofi", "adidasi", "ghete", "tenisi", "geanta",
+                             "camasa", "fusta", "sacou"]),
+    # beauty DUPA home & fashion — termeni neambigui (fara "gel de dus"/"ulei" generic)
     ("beauty",              ["crema", "serum", "parfum", "fond de ten", "ruj", "oja", "mascara",
-                             "sampon", "balsam", "gel de dus", "lotiune", "ulei"]),
+                             "sampon", "balsam de par", "lotiune", "ulei de fata", "ulei de masaj",
+                             "apa micelara", "demachiant", "masca de fata", "fard"]),
     ("sports-outdoors",     ["bicicleta", "trotineta", "role", "schi", "snowboard", "cort",
-                             "rucsac sport", "haltera", "banda alergat", "eliptica"]),
-    ("pharma",              ["medicament", "vitamina", "supliment nutritiv", "pastila", "sirop",
-                             "unguent", "bandaj", "termometru", "tensiometru"]),
-    ("babies-kids-toys",    ["jucarie", "jucarii", "lego", "puzzle", "papusa", "scutec",
-                             "biberon", "carucior", "patut copil"]),
+                             "rucsac sport", "haltera", "banda alergat", "eliptica", "gantere"]),
+    # FARA "vitamina" — prindea creme cosmetice (farmec) si le baga gresit la Farmacie
+    ("pharma",              ["medicament", "supliment nutritiv", "pastila", "sirop",
+                             "bandaj", "termometru", "tensiometru"]),
+    ("telecom",             ["reincarcare", "cartela", "abonament telefon"]),
     ("pet-supplies",        ["hrana pisica", "hrana caine", "hrana animale", "zgarda",
                              "lesa", "pat caine", "pat pisica", "nisip pisica"]),
 ]
 
 
+def _strip_diacritics(s: str) -> str:
+    # ă→a, î/â→i/a, ș→s, ț→t — titlurile romanesti folosesc diacritice,
+    # cuvintele-cheie nu; fara normalizare "Cremă" nu se potriveste cu "crema"
+    nfkd = unicodedata.normalize("NFKD", s)
+    return "".join(c for c in nfkd if not unicodedata.combining(c))
+
+# Pattern pe CUVANT INTREG (\b) per categorie — evita false-positive de substring
+# ("romantic"→roman, "matlasat"→atlas, "carter"→carte). Compilat o singura data.
+_CAT_PATTERNS = [
+    (cat, re.compile(r"\b(?:" + "|".join(re.escape(k) for k in kws) + r")\b"))
+    for cat, kws in TITLE_CAT_KEYWORDS
+]
+
+
 def _detect_cat_from_title(title: str) -> str:
-    t = title.lower()
-    for cat_slug, keywords in TITLE_CAT_KEYWORDS:
-        if any(kw in t for kw in keywords):
+    t = _strip_diacritics(title.lower())
+    for cat_slug, pat in _CAT_PATTERNS:
+        if pat.search(t):
             return cat_slug
     return "other"
 
@@ -162,51 +215,39 @@ def gen_products():
         data = json.load(f)
     products = data.get("products", data) if isinstance(data, dict) else data
 
-    # Construieste mapping merchant_slug → categorie_slug din output.json
-    merchant_to_cat: dict[str, str] = {}
-    if os.path.exists(NAV_SRC):
-        with open(NAV_SRC, encoding="utf-8") as f:
-            magazine = json.load(f)
-        for m in magazine:
-            magazin = m.get("magazin", "")
-            cat = m.get("categorie_slug", "")
-            if not (magazin and cat):
-                continue
-            slug_norm = magazin.replace(".", "-").lower()
-            slug_short = magazin.split(".")[0].lower()
-            merchant_to_cat[slug_norm] = cat
-            merchant_to_cat[slug_short] = cat
-            merchant_to_cat[magazin] = cat
-
-    # Magazine cu feed de imagini stricat/mort — excluse din grid-ul de produse
-    # outfitblack.ro: imaginile (zappatos.ro) dau 404, plus magazinul se inchide
-    # (vezi Probleme active din CLAUDE.md) — verificat 20.06.2026
-    MERCHANT_IMG_BLOCKLIST = {"outfitblack.ro"}
+    def _mkey(p: dict) -> str:
+        return (p.get("merchant") or p.get("merchant_slug") or "").lower().rstrip("/")
 
     # is_promo=True = banner generic de campanie (logo magazin reutilizat ca "imagine produs"),
-    # NU un produs real cu poza proprie — excluse explicit, altfel arata stricat in grid
-    # (bug observat 20.06.2026: categoria "Carti" avea 3 "produse" identice = logo Libhumanitas)
+    # NU un produs real cu poza proprie — excluse explicit, altfel arata stricat in grid.
+    # MERCHANT_GRID_BLOCKLIST: magazine excluse complet (arme/imagini moarte).
+    def _titlu_ok(p: dict) -> bool:
+        t = (p.get("title") or "").strip().lower()
+        if len(t) < 6:            # "Open", titluri trunchiate/goale
+            return False
+        if "voucher" in t or "card cadou" in t or "resigilat" in t:
+            return False          # nu-s produse reale de afisat in grid
+        return True
+
     valide = [
         p for p in products
         if p.get("image") and (p.get("price") or 0) > 0 and not p.get("is_promo")
-        and (p.get("merchant_slug") or p.get("merchant") or "").lower() not in MERCHANT_IMG_BLOCKLIST
+        and _mkey(p) not in MERCHANT_GRID_BLOCKLIST and _titlu_ok(p)
     ]
 
-    # Adauga category_slug fiecarui produs
+    # Clasificare PER-TITLU (primara) — magazinul doar ca fallback verificat manual.
+    # Asa magazinele multi-categorie (foglia=baie, carturesti=figurine) nu mai baga
+    # tot intr-o categorie gresita. Produsele neclasificabile raman "other" -> excluse.
     for p in valide:
-        m_slug = (p.get("merchant_slug") or "").lower()
-        m_raw  = (p.get("merchant") or "").lower()
-        m_norm = m_raw.replace(".", "-")
-        m_short = m_raw.split(".")[0]
-        p["_cat"] = (
-            MERCHANT_CAT_OVERRIDE.get(m_raw)
-            or MERCHANT_CAT_OVERRIDE.get(m_slug)
-            or merchant_to_cat.get(m_slug)
-            or merchant_to_cat.get(m_norm)
-            or merchant_to_cat.get(m_short)
-            or merchant_to_cat.get(m_raw)
-            or _detect_cat_from_title(p.get("title", ""))
-        )
+        by_title = _detect_cat_from_title(p.get("title", ""))
+        if by_title != "other":
+            p["_cat"] = by_title
+        else:
+            p["_cat"] = (
+                MERCHANT_CAT_OVERRIDE.get(_mkey(p))
+                or MERCHANT_CAT_OVERRIDE.get((p.get("merchant_slug") or "").lower())
+                or "other"
+            )
 
     # Grupare pe categorie
     by_cat: dict[str, list] = {}
