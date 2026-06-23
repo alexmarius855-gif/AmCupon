@@ -9,6 +9,15 @@
   "oferta": "Faturis Online e-Factura"
  },
  {
+  "magazin": "itgalaxy.ro",
+  "nume": "Itgalaxy",
+  "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_itgalaxy.ro_1603815076.png",
+  "categorie": "Electronics IT&C",
+  "comision": 10.0,
+  "are_cod": false,
+  "oferta": "Telefoane mobile"
+ },
+ {
   "magazin": "bookzone-ro-9c9bce7e-a8e0-40de-8d7a-afa44b9f3d2a",
   "nume": "Bookzone Ro 9c9bce7e A8e0 40de 8d7a Afa44b9f3d2a",
   "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9309/medium/9309.png",
@@ -45,6 +54,15 @@
   "oferta": "NetStreamSofware"
  },
  {
+  "magazin": "libris.ro",
+  "nume": "Libris",
+  "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_libris.ro_1629366879.png",
+  "categorie": "Books",
+  "comision": 8.0,
+  "are_cod": false,
+  "oferta": "Cupon ACTIV! -20% la orice Află codul "
+ },
+ {
   "magazin": "vapetronic.ro",
   "nume": "Vapetronic",
   "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_vapetronic.ro_1728402751.png",
@@ -72,39 +90,21 @@
   "oferta": "Giftspot.ro - Magazinul de Cadouri Originale și Gadget-uri"
  },
  {
-  "magazin": "otter-ro",
-  "nume": "Otter Ro",
-  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/2469/medium/2469.png",
+  "magazin": "pcmadd.com",
+  "nume": "Pcmadd",
+  "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_pcmadd.com_1384803965.png",
+  "categorie": "Electronics IT&C",
+  "comision": 6.0,
+  "are_cod": false,
+  "oferta": "m@dd server"
+ },
+ {
+  "magazin": "fashiondays.ro",
+  "nume": "Fashiondays",
+  "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_fashiondays.ro_1713947169.jpg",
   "categorie": "Fashion",
   "comision": 5.0,
   "are_cod": false,
-  "oferta": "Flash Sale"
- },
- {
-  "magazin": "temu.com",
-  "nume": "Temu",
-  "logo_url": "",
-  "categorie": "Diverse",
-  "comision": 0.0,
-  "are_cod": true,
-  "oferta": "Temu - Reduceri pana la 90%"
- },
- {
-  "magazin": "shein.com",
-  "nume": "Shein",
-  "logo_url": "",
-  "categorie": "Fashion",
-  "comision": 0.0,
-  "are_cod": true,
-  "oferta": "SHEIN - Fashion la preturi mici"
- },
- {
-  "magazin": "trendyol.com",
-  "nume": "Trendyol",
-  "logo_url": "",
-  "categorie": "Fashion",
-  "comision": 0.0,
-  "are_cod": true,
-  "oferta": "Trendyol - Cel mai mare marketplace turcesc"
+  "oferta": "Summer Offers 19 iun - 6 iul"
  }
 ]
