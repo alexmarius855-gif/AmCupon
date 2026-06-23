@@ -1,7 +1,46 @@
 {
-  "updated": "2026-06-23T01:58:34Z",
+  "updated": "2026-06-23T07:37:24Z",
   "count": 20,
   "banners": [
+    {
+      "id": 270732,
+      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270691/original/270691.png",
+      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=9f1dbdd1f&aff_code=541547473&campaign_unique=9a6f02fef",
+      "landing_raw": "https://www.libris.ro/lp/cupon",
+      "width": 1080,
+      "height": 1080,
+      "merchant": "libris.ro ",
+      "merchant_slug": "libris-ro",
+      "name": "Cupon ACTIV! -20% la orice Află codul ",
+      "category": "Cupon ACTIV! -20% la orice Află codul ",
+      "b_type": "image"
+    },
+    {
+      "id": 270731,
+      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270690/original/270690.png",
+      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=53e28961d&aff_code=541547473&campaign_unique=9a6f02fef",
+      "landing_raw": "https://www.libris.ro/lp/cupon",
+      "width": 1200,
+      "height": 628,
+      "merchant": "libris.ro ",
+      "merchant_slug": "libris-ro",
+      "name": "Cupon ACTIV! -20% la orice Află codul ",
+      "category": "Cupon ACTIV! -20% la orice Află codul ",
+      "b_type": "image"
+    },
+    {
+      "id": 270730,
+      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270689/original/270689.png",
+      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=fac6dc45c&aff_code=541547473&campaign_unique=9a6f02fef",
+      "landing_raw": "https://www.libris.ro/lp/cupon",
+      "width": 1080,
+      "height": 1920,
+      "merchant": "libris.ro ",
+      "merchant_slug": "libris-ro",
+      "name": "Cupon ACTIV! -20% la orice Află codul ",
+      "category": "Cupon ACTIV! -20% la orice Află codul ",
+      "b_type": "image"
+    },
     {
       "id": 270729,
       "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270688/original/270688.jpg",
@@ -219,45 +258,6 @@
       "height": 600,
       "merchant": "kitunghii.ro",
       "merchant_slug": "kitunghii-ro",
-      "name": "-80% STAR CELEBRATION SECRET BEAUTY BAG GRATUIT",
-      "category": "-80% STAR CELEBRATION SECRET BEAUTY BAG GRATUIT",
-      "b_type": "image"
-    },
-    {
-      "id": 270712,
-      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270671/original/270671.jpg",
-      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=d63094723&aff_code=541547473&campaign_unique=cc08e2536",
-      "landing_raw": "https://www.pensulemachiaj.ro",
-      "width": 1200,
-      "height": 1200,
-      "merchant": "pensulemachiaj.ro",
-      "merchant_slug": "pensulemachiaj-ro",
-      "name": "-80% STAR CELEBRATION SECRET BEAUTY BAG GRATUIT",
-      "category": "-80% STAR CELEBRATION SECRET BEAUTY BAG GRATUIT",
-      "b_type": "image"
-    },
-    {
-      "id": 270711,
-      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270670/original/270670.jpg",
-      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=b48369298&aff_code=541547473&campaign_unique=cc08e2536",
-      "landing_raw": "https://www.pensulemachiaj.ro",
-      "width": 1200,
-      "height": 628,
-      "merchant": "pensulemachiaj.ro",
-      "merchant_slug": "pensulemachiaj-ro",
-      "name": "-80% STAR CELEBRATION SECRET BEAUTY BAG GRATUIT",
-      "category": "-80% STAR CELEBRATION SECRET BEAUTY BAG GRATUIT",
-      "b_type": "image"
-    },
-    {
-      "id": 270710,
-      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270669/original/270669.jpg",
-      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=e1e2d02d5&aff_code=541547473&campaign_unique=cc08e2536",
-      "landing_raw": "https://www.pensulemachiaj.ro",
-      "width": 960,
-      "height": 1200,
-      "merchant": "pensulemachiaj.ro",
-      "merchant_slug": "pensulemachiaj-ro",
       "name": "-80% STAR CELEBRATION SECRET BEAUTY BAG GRATUIT",
       "category": "-80% STAR CELEBRATION SECRET BEAUTY BAG GRATUIT",
       "b_type": "image"
