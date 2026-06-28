@@ -36,6 +36,15 @@
   "oferta": "OFERTA TRIO-   3 PATURI COCOLINO= 99 LEI"
  },
  {
+  "magazin": "streamstore.ro",
+  "nume": "Streamstore",
+  "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_streamstore.ro_1716811541.jpg",
+  "categorie": "Electronics IT&C",
+  "comision": 10.0,
+  "are_cod": false,
+  "oferta": "NetStreamSofware"
+ },
+ {
   "magazin": "vapetronic.ro",
   "nume": "Vapetronic",
   "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_vapetronic.ro_1728402751.png",
@@ -97,14 +106,5 @@
   "comision": 0.0,
   "are_cod": false,
   "oferta": "Electro Weekend 26 - 29 iunie 2026"
- },
- {
-  "magazin": "trendyol.com",
-  "nume": "Trendyol",
-  "logo_url": "",
-  "categorie": "Fashion",
-  "comision": 0.0,
-  "are_cod": true,
-  "oferta": "Trendyol - Cel mai mare marketplace turcesc"
  }
 ]
