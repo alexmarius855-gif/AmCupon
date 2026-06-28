@@ -34,6 +34,55 @@ Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Pro
 
 ---
 
+## Plan promovare + Nise
+
+### Pagini live cu partener real
+| Pagina | Partener | Comision | Canal promovare ideal |
+|--------|----------|----------|-----------------------|
+| `/flori` | floria.ro (2P) | 7% | Pinterest, Instagram, TikTok ocazii |
+| `/pescuit` | pescar-expert.ro (2P, in asteptare) | 5-6% | YouTube fishing, Facebook grupuri pescari |
+| `/fashion` | FashionDays, Answear | 5-8% | TikTok outfit, Instagram Reels |
+| `/frumusete` | Notino, DrMax | 4-7% | YouTube recenzii, TikTok skincare |
+| `/electronice` | Altex, Flanco | 2-4% | YouTube comparatii, Reddit |
+| `/gaming` | diverse 2P | 3-5% | TikTok gaming, Discord |
+| `/calatorie` | KKday, Pelago (Impact) | 5-10% | Blog articole, Pinterest |
+| `/farmacie` | DrMax, Liki24 | 3-5% | Facebook grupuri sanatate |
+| `/animale` | Petmart, Petmax | 4-6% | TikTok animale (viral nativ) |
+| `/trading` | Binance ref | fix | YouTube, newsletter |
+| `/hosting` | Hostinger (Impact) | 30-60% | Blog tech, YouTube tutoriale |
+| `/vpn` | NordVPN, AdGuard (Impact) | 30-40% | YouTube, TikTok privacy |
+
+### Canale de promovare per tip
+```
+TikTok        → animale, fashion, frumusete, gaming, radar zilnic
+YouTube       → pescuit, tech, hosting/vpn (tutoriale lungi)
+Pinterest     → flori, calatorie, idei cadouri, fashion
+Facebook grp  → pescuit, animale, farmacie, sanatate
+SEO organic   → calculator-salariu, generator-proforma, blog
+Newsletter    → radar zilnic, alerte pret, top saptamana
+Telegram      → radar zilnic (copy-paste din digest-today.txt)
+```
+
+### Nise urmatoare (cu partener posibil pe 2P/PS)
+| Nisa | Partener potential | Prioritate |
+|------|-------------------|------------|
+| Gradina/plante | Plantor.ro, pepiniere PS | Mare — sezon activ |
+| Hrana animale | Zooplus (PS), Animax | Mare — achizitie repetitiva |
+| Suplimente/fitness | Vegis, GNC Romania | Mare — marje bune |
+| Copii/bebelusi | Noriel, Bebeshop (2P) | Mare — ocazii frecvente |
+| Bricolaj/scule | Brico, Dedeman (2P) | Mediu |
+| Zboruri/travel | esky.ro, Kiwi (PS) | Mare — volum mare |
+| Mobilier | vidaXL, IKEA-like (PS) | Mediu |
+
+### Video AI — flux continut fara fata
+```
+Script (Claude haiku) → Voce (ElevenLabs gratuit 10k/luna)
+→ Video (CapCut AI / InVideo) → Subtitluri auto → TikTok/Reels/Shorts
+Sursa zilnica: data/digest-today.txt (deja generat de pipeline)
+```
+
+---
+
 ## ⚠️ Probleme active / acțiuni necesare de la Alex
 
 | Problemă | Status | Acțiune necesară |
