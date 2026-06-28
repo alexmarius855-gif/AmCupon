@@ -237,8 +237,10 @@ def genereaza_voce_fallback(picks: list, data_str: str) -> dict:
     takes = []
     for p in picks:
         t = _TAKE_CAT.get(p["categorie"], "Oferta verificata — buna daca te incadrezi in categorie.")
-        if 0 < p["zile_ramase"] <= 5:
-            t = f"Grabeste-te: expira in {p['zile_ramase']} zile. " + t
+        zile = p["zile_ramase"]
+        if 0 < zile <= 5:
+            unit = "zi" if zile == 1 else "zile"
+            t = f"Grabeste-te: expira in {zile} {unit}. " + t
         takes.append(t)
     outro = "Revino maine la Radar — alegem din nou ce merita, ca sa nu cauti tu prin sute de oferte."
     return {"intro": intro, "takes": takes, "outro": outro, "sursa": "fallback"}

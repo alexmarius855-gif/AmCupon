@@ -12,6 +12,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 29.06.2026:**
+- **Profitshare meta tag validare** adaugat in `layout.tsx` (`verification.other["profitshareid"] = "55a94904302585d3a4d01658d993fd4d"`). Apasa "Valideaza" in dashboard-ul Profitshare dupa deploy pentru a activa accesul la 62 magazine PS.
+- **Pagina `/pescuit` LIVE** — nisa echipamente pescuit (Daiwa, Okuma, Trabucco, Prologic etc.), hero emerald, 6 categorii, SEO text. `pescar-expert.ro` aplicat pe 2Performant (aprobare ~31 zile). Pana atunci fallback pe decathlon.ro. Adaugat in `sitemap.ts`.
+- **Pagina `/radar` LIVE** (28.06) — rubrica editoriala zilnica cu voce. `generate_daily_digest.py` in pipeline, `/radar` in sitemap.
+- **BUG CRITIC rezolvat 28.06 — pipeline-ul era OPRIT ~6 zile din facturare GitHub.** Repo PRIVAT → 2000 min consumate → rulari esuau instant. Fix: repo facut PUBLIC. Repo trebuie sa ramana public.
+- ⚠️ **Magazine scazute: 174 (de la 370 pe 20.06)** — de investigat separat (posibil programe 2P expirate sau pierdere la merge). Neinvestigat inca.
+
 **Stare curentă (20.06.2026, seara — sesiune amplă, TOTUL push-uit pe `main` și LIVE):**
 - **Feed de produse rezolvat definitiv**: 33.096 produse din 20 magazine românești reale (era 3.076/1 magazin) — vezi tabelul de mai jos "products.json — REZOLVAT". Produsele apar automat pe fiecare pagină de magazin.
 - 370 magazine active (`output.json`), tema dark indigo+cyan pe **toate** paginile (rebrand orange→indigo complet, ultimele 28 pagini retemuite pe 19.06)
@@ -125,6 +132,11 @@ Fiecare pagină dinamică are două fișiere:
 ### Nise tech & financiar
 `/gaming`, `/laptop`, `/telefoane`, `/antivirus`, `/smart-home`, `/instrumente-seo`, `/trading`, `/carduri-bancare`, `/vpn`, `/hosting`, `/ai-tools`, `/cursuri-online`, `/software-business`, `/servicii`, `/recomandari`, `/albire-dinti`
 
+### Nise adăugate 29.06.2026
+| URL | Status date |
+|-----|-------------|
+| `/pescuit` | LIVE, hero emerald, fallback decathlon.ro pana la aprobare pescar-expert.ro (~31 zile) |
+
 ### Nise adăugate 20.06.2026
 | URL | Status date |
 |-----|-------------|
@@ -164,6 +176,7 @@ Fiecare pagină dinamică are două fișiere:
 | Binance | Direct | ✅ ACTIV — ref `205306153`, în `/trading` |
 | Fiverr, Hostinger, NordVPN | Impact.com / direct | 🔄 In review / pending |
 | Semrush | Impact.com | ❌ RESPINS (18.06.2026, "business model mismatch") |
+| pescar-expert.ro | 2Performant | 🔄 Aplicat 29.06.2026 — aprobare in ~31 zile (5-6% comision, 25k produse) |
 | Fixato, MxEnduro, Trendiva, Viada, DYFashion | 2Performant | 🔄 De aplicat — vezi Probleme active |
 | TradeTracker | Direct | ⚠️ cod gata, secrets lipsesc |
 

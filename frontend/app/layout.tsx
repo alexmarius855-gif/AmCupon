@@ -41,6 +41,7 @@ export const metadata: Metadata = {
     google: "UvsbX8yxIp1eGwFK5ESqVXzA6jT5wjcTartEIPG5mqw",
     other: {
       "p:domain_verify": "ba572e9f4b288f061ae35149c1a13d30",
+      "profitshareid": "55a94904302585d3a4d01658d993fd4d",
     },
   },
   openGraph: {

@@ -231,6 +231,17 @@ jobs:
         working-directory: scripts
         run: python generate_social_content.py
 
+      # ── 11.5 Radarul AmCupon — digest editorial zilnic ───────────────────
+      # Produce frontend/public/digest-today.json (pagina /radar) + data/digest-today.txt.
+      # Ruleaza la fiecare update ca /radar sa reflecte mereu ofertele curente.
+      # Voce: Claude haiku daca ANTHROPIC_API_KEY e setat, altfel fallback determinist (gratis).
+      - name: Genereaza Radarul AmCupon (digest editorial)
+        continue-on-error: true
+        working-directory: scripts
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python generate_daily_digest.py
+
       # ── 12. Genereaza bannere (Pillow) ────────────────────────────────────
       # Salveaza in data/ SI frontend/public/ (servit de Vercel)
       - name: Genereaza bannere sociale (Pillow)
@@ -261,6 +272,8 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           git add frontend/public/output.json          || true
+          git add frontend/public/digest-today.json    || true
+          git add data/digest-today.txt                || true
           git add frontend/public/nav-index.json       || true
           git add frontend/public/blog-posts.json      || true
           git add frontend/public/blog-latest.json     || true
