@@ -37,6 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     // ─── Pagini principale ───────────────────────────────────────────────────
     { url: BASE_URL,                             lastModified: new Date(), changeFrequency: "daily",   priority: 1.0 },
+    { url: `${BASE_URL}/radar`,                  lastModified: new Date(), changeFrequency: "daily",   priority: 0.95 },
     { url: `${BASE_URL}/oferte-azi`,             lastModified: new Date(), changeFrequency: "daily",   priority: 0.95 },
     { url: `${BASE_URL}/black-friday`,           lastModified: new Date(), changeFrequency: "daily",   priority: 0.95 },
     { url: `${BASE_URL}/produse`,                lastModified: new Date(), changeFrequency: "daily",   priority: 0.9 },
@@ -54,6 +55,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/moto`,                   lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
     { url: `${BASE_URL}/idei-cadouri`,           lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
     { url: `${BASE_URL}/flori`,                  lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
+    { url: `${BASE_URL}/pescuit`,               lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
     { url: `${BASE_URL}/calatorie`,              lastModified: new Date(), changeFrequency: "daily",   priority: 0.8 },
     { url: `${BASE_URL}/electronice`,            lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
     { url: `${BASE_URL}/parfumuri`,              lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
