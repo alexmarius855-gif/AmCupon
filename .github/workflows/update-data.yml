@@ -96,6 +96,21 @@ jobs:
             echo "IMPACT_ACCOUNT_SID nu e setat — skip Impact.com"
           fi
 
+      # ── 4d. Impact.com — descopera campanii noi aprobate ─────────────────
+      - name: Descopera magazine noi Impact.com
+        working-directory: scripts
+        continue-on-error: true
+        env:
+          IMPACT_ACCOUNT_SID: ${{ secrets.IMPACT_ACCOUNT_SID }}
+          IMPACT_AUTH_TOKEN:  ${{ secrets.IMPACT_AUTH_TOKEN }}
+        run: |
+          if [ -n "$IMPACT_ACCOUNT_SID" ]; then
+            echo "Ruleaza discover_impact_merchants..."
+            python discover_impact_merchants.py
+          else
+            echo "IMPACT_ACCOUNT_SID nu e setat — skip discovery"
+          fi
+
       # ── 5. Merge platforme ─────────────────────────────────────────────────
       - name: Merge 2Performant + Profitshare + TradeTracker + Impact
         working-directory: scripts
@@ -320,6 +335,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           git add frontend/public/output.json          || true
+          git add data/extra_merchants.json            || true
           git add frontend/public/digest-today.json    || true
           git add data/digest-today.txt                || true
           git add frontend/public/nav-index.json       || true
