@@ -89,8 +89,8 @@
         "banner": "https://app.profitshare.ro/images/advertiser_widgets_shared/300x250_35_1782296258.jpg"
       }
     ],
-    "folosit_de": 175,
-    "procent_succes": 93,
+    "folosit_de": 60,
+    "procent_succes": 90,
     "exclusiv": false,
     "categorie_slug": "online-mall",
     "scor_final": 70,
@@ -186,8 +186,8 @@
         "banner": "https://app.profitshare.ro/images/advertiser_widgets_shared/468x60_copy_59438_1384808546.jpg"
       }
     ],
-    "folosit_de": 37,
-    "procent_succes": 89,
+    "folosit_de": 142,
+    "procent_succes": 95,
     "exclusiv": false,
     "categorie_slug": "electronics-itc",
     "scor_final": 66,
@@ -443,7 +443,7 @@
         "banner": "https://app.profitshare.ro/images/advertiser_widgets_shared/3b_79316_1626256795.png"
       }
     ],
-    "folosit_de": 309,
+    "folosit_de": 96,
     "procent_succes": 80,
     "exclusiv": false,
     "categorie_slug": "online-mall",
@@ -508,8 +508,8 @@
         "banner": "https://app.profitshare.ro/images/advertiser_widgets_shared/49_83901_1781075845.png"
       }
     ],
-    "folosit_de": 97,
-    "procent_succes": 83,
+    "folosit_de": 234,
+    "procent_succes": 91,
     "exclusiv": false,
     "categorie_slug": "electronics-itc",
     "scor_final": 50,
@@ -541,8 +541,8 @@
         "banner": "https://app.profitshare.ro/images/advertiser_widgets_shared/468x60_88736_1781686644.jpg"
       }
     ],
-    "folosit_de": 261,
-    "procent_succes": 86,
+    "folosit_de": 95,
+    "procent_succes": 89,
     "exclusiv": false,
     "categorie_slug": "fashion",
     "scor_final": 46,
@@ -574,8 +574,8 @@
         "banner": "https://app.profitshare.ro/images/advertiser_widgets_shared/daedalus_template_4_513_103212_1774431578.png"
       }
     ],
-    "folosit_de": 341,
-    "procent_succes": 80,
+    "folosit_de": 202,
+    "procent_succes": 82,
     "exclusiv": false,
     "categorie_slug": "online-mall",
     "scor_final": 41,
@@ -767,15 +767,15 @@
         "banner": "https://app.profitshare.ro/images/advertiser_widgets_shared/gips_300x250_124829_1736502113.png"
       }
     ],
-    "folosit_de": 393,
-    "procent_succes": 73,
+    "folosit_de": 127,
+    "procent_succes": 84,
     "exclusiv": false,
     "categorie_slug": "home-garden",
     "scor_final": 33,
     "platforma": "profitshare"
   },
   {
-    "magazin": "bookzone-ro-9c9bce7e-a8e0-40de-8d7a-afa44b9f3d2a",
+    "magazin": "bookzone.ro",
     "url": "https://bookzone.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbookzone.ro%2F",
     "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9309/medium/9309.png",
@@ -800,8 +800,8 @@
         "zile_ramase": 185
       }
     ],
-    "folosit_de": 306,
-    "procent_succes": 77,
+    "folosit_de": 206,
+    "procent_succes": 93,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-06-29",
@@ -810,7 +810,7 @@
     "unique_code": "50e9adcf3"
   },
   {
-    "magazin": "otter-ro",
+    "magazin": "otter.ro",
     "url": "https://www.otter.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.otter.ro%2F",
     "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/2469/medium/2469.png",
@@ -835,8 +835,8 @@
         "zile_ramase": 1646
       }
     ],
-    "folosit_de": 265,
-    "procent_succes": 91,
+    "folosit_de": 470,
+    "procent_succes": 79,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-06-29",
@@ -870,8 +870,8 @@
         "banner": "https://app.profitshare.ro/images/advertiser_widgets_shared/468x60_128052_1571835377.jpg"
       }
     ],
-    "folosit_de": 121,
-    "procent_succes": 70,
+    "folosit_de": 94,
+    "procent_succes": 81,
     "exclusiv": false,
     "categorie_slug": "automotive",
     "scor_final": 30,
@@ -903,8 +903,8 @@
         "banner": "https://app.profitshare.ro/images/advertiser_widgets_shared/banner4_468x60_133049_1729147892.png"
       }
     ],
-    "folosit_de": 65,
-    "procent_succes": 84,
+    "folosit_de": 125,
+    "procent_succes": 78,
     "exclusiv": false,
     "categorie_slug": "online-mall",
     "scor_final": 26,
@@ -960,8 +960,8 @@
         "banner": "https://app.profitshare.ro/images/advertiser_widgets_shared/bun4redimensionatala1200x1200_160977_1768996908.jpeg"
       }
     ],
-    "folosit_de": 102,
-    "procent_succes": 78,
+    "folosit_de": 21,
+    "procent_succes": 70,
     "exclusiv": false,
     "categorie_slug": "home-garden",
     "scor_final": 20,
@@ -993,8 +993,8 @@
         "banner": "https://app.profitshare.ro/images/advertiser_widgets_shared/big_square_1080x1080px_166230_1716814613_166230_1752733808.jpg"
       }
     ],
-    "folosit_de": 207,
-    "procent_succes": 77,
+    "folosit_de": 65,
+    "procent_succes": 78,
     "exclusiv": false,
     "categorie_slug": "electronics-itc",
     "scor_final": 20,
@@ -1026,15 +1026,15 @@
         "banner": "https://app.profitshare.ro/images/advertiser_widgets_shared/468x60_167474_1727714216.jpg"
       }
     ],
-    "folosit_de": 127,
-    "procent_succes": 72,
+    "folosit_de": 225,
+    "procent_succes": 70,
     "exclusiv": false,
     "categorie_slug": "online-mall",
     "scor_final": 20,
     "platforma": "profitshare"
   },
   {
-    "magazin": "Surfshark",
+    "magazin": "surfshark.com",
     "url": "https://surfshark.com",
     "url_afiliat": "https://surfshark.sjv.io/c/7401119/535269/9043",
     "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Surfshark_logo.svg/320px-Surfshark_logo.svg.png",
@@ -1059,7 +1059,7 @@
     "descriere": "VPN premium cu politica no-logs, protectie avansata si viteze mari. Disponibil pe toate dispozitivele."
   },
   {
-    "magazin": "Hostinger",
+    "magazin": "hostinger.ro",
     "url": "https://www.hostinger.ro",
     "url_afiliat": "https://www.hostinger.ro/?REFERRALCODE=AMCUPON",
     "logo_url": "https://www.hostinger.ro/assets/images/hostinger-logo.svg",
@@ -1084,7 +1084,7 @@
     "descriere": "Hosting web accesibil si rapid, ideal pentru site-uri WordPress, magazine online si bloguri."
   },
   {
-    "magazin": "Shopify",
+    "magazin": "shopify.com",
     "url": "https://www.shopify.com",
     "url_afiliat": "https://shopify.pxf.io/c/7401119/1728767/13624",
     "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopify_logo_2018.svg/320px-Shopify_logo_2018.svg.png",
@@ -1109,7 +1109,7 @@
     "descriere": "Creeaza-ti magazinul online in minute. Shopify e cea mai populara platforma ecommerce din lume."
   },
   {
-    "magazin": "Bitdefender",
+    "magazin": "bitdefender.ro",
     "url": "https://www.bitdefender.ro",
     "url_afiliat": "https://bitdefender.f9tmep.net/c/7401119/1622667/4466",
     "logo_url": "https://www.bitdefender.ro/img/bitdefender-logo.svg",
@@ -1134,7 +1134,7 @@
     "descriere": "Antivirus romanesc de top, premiat mondial. Protejeaza PC, Mac, Android si iOS."
   },
   {
-    "magazin": "NortonLifeLock",
+    "magazin": "us.norton.com",
     "url": "https://us.norton.com",
     "url_afiliat": "https://us.norton.com/?utm_source=amcupon",
     "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Norton_logo.svg/320px-Norton_logo.svg.png",
@@ -1159,7 +1159,7 @@
     "descriere": "Norton 360 - protectie completa impotriva virusilor, ransomware si a furtului de identitate."
   },
   {
-    "magazin": "Coursera",
+    "magazin": "coursera.org",
     "url": "https://www.coursera.org",
     "url_afiliat": "https://coursera.pxf.io/c/7761435/1/0",
     "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Coursera-Logo_600x600.svg/320px-Coursera-Logo_600x600.svg.png",
@@ -1184,7 +1184,7 @@
     "descriere": "Cursuri online de la universitatile de top din lume: Google, IBM, Meta, Stanford si altele."
   },
   {
-    "magazin": "Revolut Business",
+    "magazin": "revolut.com",
     "url": "https://www.revolut.com/business",
     "url_afiliat": "https://www.revolut.com/business/?ref=amcupon",
     "logo_url": "https://www.revolut.com/favicon.ico",
@@ -1209,7 +1209,7 @@
     "descriere": "Cont business digital Revolut. Platesti in orice valuta fara comision, carduri virtuale, API."
   },
   {
-    "magazin": "Envato Market",
+    "magazin": "market.envato.com",
     "url": "https://market.envato.com",
     "url_afiliat": "https://technitya.com",
     "logo_url": "https://envato.com/assets/img/envato-logo.svg",
@@ -1234,7 +1234,7 @@
     "descriere": "Milioane de teme WordPress, pluginuri, fonturi, videoclipuri si resurse creative."
   },
   {
-    "magazin": "Lenovo",
+    "magazin": "lenovo.com",
     "url": "https://www.lenovo.com/ro",
     "url_afiliat": "https://lenovo-in.zlvv.net/c/7401119/616203/9634",
     "logo_url": "https://www.lenovo.com/medias/lenovo-logo.png",
@@ -1259,7 +1259,7 @@
     "descriere": "Laptopuri, tablete si PC-uri Lenovo. ThinkPad, IdeaPad, Legion Gaming la preturi competitive."
   },
   {
-    "magazin": "InVideo",
+    "magazin": "invideo.io",
     "url": "https://invideo.io",
     "url_afiliat": "https://invideo.sjv.io/c/7401119/888347/12258?subId1=neelansh-test",
     "logo_url": "https://invideo.io/assets/images/invideo-logo.svg",
@@ -1284,7 +1284,7 @@
     "descriere": "Creeaza videoclipuri profesionale cu AI in minute. Ideal pentru YouTube, TikTok si social media."
   },
   {
-    "magazin": "Banggood",
+    "magazin": "banggood.com",
     "url": "https://www.banggood.com",
     "url_afiliat": "https://www.banggood.com/affiliate.html?ref=amcupon",
     "logo_url": "https://img.staticbg.com/images/footer/banggood_logo_white.png",
@@ -1309,7 +1309,7 @@
     "descriere": "Gadgeturi, electronice si accesorii la preturi mici direct din China. Livrare internationala."
   },
   {
-    "magazin": "Logitech",
+    "magazin": "logitech.com",
     "url": "https://www.logitech.com",
     "url_afiliat": "https://www.logitech.com/?ref=amcupon",
     "logo_url": "https://www.logitech.com/assets/65376/logitech-bug-logo.png",
@@ -1334,7 +1334,7 @@
     "descriere": "Mouse, tastatura, webcam si casti de la cel mai popular brand de periferice din lume."
   },
   {
-    "magazin": "Bluehost",
+    "magazin": "bluehost.com",
     "url": "https://www.bluehost.com",
     "url_afiliat": "https://www.bluehost.com/track/amcupon",
     "logo_url": "https://www.bluehost.com/favicon.ico",
@@ -1359,7 +1359,7 @@
     "descriere": "Hosting WordPress recomandat oficial. Domeniu gratuit, SSL gratuit si instalare WordPress 1-click."
   },
   {
-    "magazin": "HubSpot",
+    "magazin": "hubspot.com",
     "url": "https://www.hubspot.com",
     "url_afiliat": "https://www.hubspot.com/?ref=amcupon",
     "logo_url": "https://www.hubspot.com/hubfs/HubSpot_Logos/HubSpot-Inversed-Favicon.png",
@@ -1384,7 +1384,7 @@
     "descriere": "CRM complet gratuit pentru marketing, vanzari si customer service. Folosit de 150.000+ companii."
   },
   {
-    "magazin": "Upwork",
+    "magazin": "upwork.com",
     "url": "https://www.upwork.com",
     "url_afiliat": "https://www.upwork.com/?ref=amcupon",
     "logo_url": "https://www.upwork.com/favicon.ico",
@@ -1409,7 +1409,7 @@
     "descriere": "Cea mai mare platforma de freelancing. Gaseste freelanceri sau proiecte in orice domeniu."
   },
   {
-    "magazin": "Razer",
+    "magazin": "razer.com",
     "url": "https://www.razer.com",
     "url_afiliat": "https://www.razer.com/?ref=amcupon",
     "logo_url": "https://assets.razerzone.com/eeimages/social-pages/razer-logo-og.png",
@@ -1434,7 +1434,7 @@
     "descriere": "Periferice gaming premium: mouse, tastatura, casti, laptop gaming si accesorii Razer."
   },
   {
-    "magazin": "Blinkist",
+    "magazin": "blinkist.com",
     "url": "https://www.blinkist.com",
     "url_afiliat": "https://www.blinkist.com/invite/amcupon",
     "logo_url": "https://www.blinkist.com/images/og/og-homepage.png",
@@ -1459,7 +1459,7 @@
     "descriere": "Rezumate ale celor mai bune carti de business si self-development in 15 minute."
   },
   {
-    "magazin": "DHgate",
+    "magazin": "dhgate.com",
     "url": "https://www.dhgate.com",
     "url_afiliat": "https://dhgate.sjv.io/c/7401119/1466364/12108",
     "logo_url": "https://www.dhgate.com/favicon.ico",
@@ -1484,7 +1484,7 @@
     "descriere": "Marketplace cu milioane de produse la preturi angro direct din China. Haine, gadgeturi, bijuterii."
   },
   {
-    "magazin": "DataCamp",
+    "magazin": "datacamp.com",
     "url": "https://www.datacamp.com",
     "url_afiliat": "https://www.datacamp.com/promo/amcupon",
     "logo_url": "https://www.datacamp.com/favicon.ico",
@@ -1509,7 +1509,7 @@
     "descriere": "Invata Data Science, Python, R, SQL si Machine Learning. Peste 350 cursuri interactive."
   },
   {
-    "magazin": "StockX",
+    "magazin": "stockx.com",
     "url": "https://stockx.com",
     "url_afiliat": "https://stockx.com/?ref=amcupon",
     "logo_url": "https://stockx.com/favicon.ico",
@@ -1534,7 +1534,7 @@
     "descriere": "Cumparati si vindeti sneakers, haine streetwear si accesorii autentice. Verificare garantata."
   },
   {
-    "magazin": "Preply",
+    "magazin": "preply.com",
     "url": "https://preply.com",
     "url_afiliat": "https://preply.sjv.io/c/7401119/2034253/24422",
     "logo_url": "",
@@ -1559,7 +1559,7 @@
     "descriere": "Tutori online pentru engleza, spaniola, franceza si 50+ limbi. Lectii 1-la-1 flexibile."
   },
   {
-    "magazin": "Eufy",
+    "magazin": "eufy.com",
     "url": "https://www.eufy.com",
     "url_afiliat": "https://eufy.sjv.io/c/7401119/1543972/18024",
     "logo_url": "",
@@ -1584,7 +1584,7 @@
     "descriere": "Roboti de aspirare, camere de supraveghere si gadgeturi smart home Eufy by Anker. Calitate premium, pret accesibil."
   },
   {
-    "magazin": "O'Reilly Learning",
+    "magazin": "oreilly.com",
     "url": "https://www.oreilly.com",
     "url_afiliat": "https://www.oreilly.com/?ref=amcupon",
     "logo_url": "https://www.oreilly.com/favicon.ico",
@@ -1609,7 +1609,7 @@
     "descriere": "Biblioteca completa de carti si videocursuri tech: programare, AI, cloud, DevOps."
   },
   {
-    "magazin": "Crocs",
+    "magazin": "crocs.com",
     "url": "https://www.crocs.com",
     "url_afiliat": "https://www.crocs.com/?ref=amcupon",
     "logo_url": "https://www.crocs.com/favicon.ico",
@@ -1634,7 +1634,7 @@
     "descriere": "Incaltaminte Crocs confortabila si colorata. Clasicii si noile colectii cu Jibbitz."
   },
   {
-    "magazin": "Skylum",
+    "magazin": "skylum.com",
     "url": "https://skylum.com",
     "url_afiliat": "https://skylum.com/?ref=amcupon",
     "logo_url": "https://skylum.com/favicon.ico",
@@ -1659,7 +1659,7 @@
     "descriere": "Luminar Neo - editare foto cu AI. Cel mai intuitiv software pentru fotografi."
   },
   {
-    "magazin": "Magoosh",
+    "magazin": "magoosh.com",
     "url": "https://magoosh.com",
     "url_afiliat": "https://magoosh.com/?ref=amcupon",
     "logo_url": "https://magoosh.com/favicon.ico",
@@ -1684,7 +1684,7 @@
     "descriere": "Pregatire online pentru GRE, GMAT, IELTS, TOEFL, SAT. Lectii video si practica adaptiva."
   },
   {
-    "magazin": "UPERFECT",
+    "magazin": "uperfectmonitor.com",
     "url": "https://www.uperfectmonitor.com",
     "url_afiliat": "https://uperfect.sjv.io/c/7401119/1226538/15155",
     "logo_url": "https://www.uperfectmonitor.com/favicon.ico",
@@ -1709,7 +1709,7 @@
     "descriere": "Monitoare portabile 4K pentru laptop, telefon si consola. Perfecte pentru lucru remote."
   },
   {
-    "magazin": "Omio",
+    "magazin": "omio.com",
     "url": "https://www.omio.com",
     "url_afiliat": "https://www.omio.com/?ref=amcupon",
     "logo_url": "https://www.omio.com/favicon.ico",
@@ -1734,7 +1734,7 @@
     "descriere": "Cauta si rezerva tren, autobuz si avion in Europa si America. Cel mai simplu mod de a calatori."
   },
   {
-    "magazin": "Domain.com",
+    "magazin": "domain.com",
     "url": "https://www.domain.com",
     "url_afiliat": "https://www.domain.com/?ref=amcupon",
     "logo_url": "https://www.domain.com/favicon.ico",
@@ -1759,7 +1759,7 @@
     "descriere": "Inregistreaza domenii .ro, .com, .net la preturi mici. Include email si hosting."
   },
   {
-    "magazin": "Turtle Beach",
+    "magazin": "eu.turtlebeach.com",
     "url": "https://eu.turtlebeach.com",
     "url_afiliat": "http://www.eu.turtlebeach.com/",
     "logo_url": "",
@@ -1784,7 +1784,7 @@
     "descriere": "Casti gaming profesionale pentru PS5, Xbox, PC. Sunet surround, microfon retractabil, confort extrem."
   },
   {
-    "magazin": "Maxi-Cosi",
+    "magazin": "maxicosi.com",
     "url": "https://maxicosi.com",
     "url_afiliat": "https://doreljuvenile.pxf.io/c/7401119/2191411/23708",
     "logo_url": "",
@@ -1809,7 +1809,7 @@
     "descriere": "Scaune auto, carucioare si accesorii pentru bebelusi. Brand european de incredere de 30+ ani."
   },
   {
-    "magazin": "Intego",
+    "magazin": "intego.com",
     "url": "https://www.intego.com",
     "url_afiliat": "https://www.intego.com/?ref=amcupon",
     "logo_url": "https://www.intego.com/favicon.ico",
@@ -1834,7 +1834,7 @@
     "descriere": "Cel mai bun antivirus pentru Mac. Protejeaza MacBook si iMac de virusi si malware."
   },
   {
-    "magazin": "Clean Email",
+    "magazin": "clean.email",
     "url": "https://clean.email",
     "url_afiliat": "https://clean.email",
     "logo_url": "https://clean.email/favicon.ico",
@@ -1859,7 +1859,7 @@
     "descriere": "Curata inbox-ul Gmail sau Outlook in minute. Dezabonare in masa, stergere email-uri vechi."
   },
   {
-    "magazin": "Cuyana",
+    "magazin": "cuyana.com",
     "url": "https://www.cuyana.com",
     "url_afiliat": "https://www.cuyana.com/?ref=amcupon",
     "logo_url": "https://www.cuyana.com/favicon.ico",
@@ -1884,7 +1884,7 @@
     "descriere": "Haine si genti din materiale sustenabile de calitate premium pentru femei."
   },
   {
-    "magazin": "KKday",
+    "magazin": "kkday.com",
     "url": "https://www.kkday.com",
     "url_afiliat": "http://www.kkday.com/en",
     "logo_url": "https://www.kkday.com/favicon.ico",
@@ -1909,7 +1909,7 @@
     "descriere": "Activitati, tururi si experiente de calatorie in toata lumea. Rezervari instant."
   },
   {
-    "magazin": "Muc-Off",
+    "magazin": "muc-off.com",
     "url": "https://muc-off.com",
     "url_afiliat": "https://mucoff.sjv.io/c/7401119/1960276/14325",
     "logo_url": "https://muc-off.com/favicon.ico",
@@ -1934,7 +1934,7 @@
     "descriere": "Produse de curatenie si intretinere pentru biciclete, moto si masini. Brand profesional UK."
   },
   {
-    "magazin": "Alamy",
+    "magazin": "alamy.com",
     "url": "https://www.alamy.com",
     "url_afiliat": "https://www.alamy.com/?ref=amcupon",
     "logo_url": "https://www.alamy.com/favicon.ico",
@@ -1959,7 +1959,7 @@
     "descriere": "Cea mai mare biblioteca de stock photos si imagini editoriale. 350+ milioane imagini."
   },
   {
-    "magazin": "British Council",
+    "magazin": "britishcouncil.org",
     "url": "https://www.britishcouncil.org",
     "url_afiliat": "https://www.britishcouncil.org/?ref=amcupon",
     "logo_url": "https://www.britishcouncil.org/favicon.ico",
@@ -1984,7 +1984,7 @@
     "descriere": "Cursuri de engleza online de la British Council. Certificate recunoscute international."
   },
   {
-    "magazin": "Uphold",
+    "magazin": "uphold.com",
     "url": "https://uphold.com",
     "url_afiliat": "https://uphold.com/?ref=amcupon",
     "logo_url": "https://uphold.com/favicon.ico",
@@ -2009,7 +2009,7 @@
     "descriere": "Platforma crypto cu 250+ monede digitale, metale pretioase si actiuni. Simplu si sigur."
   },
   {
-    "magazin": "IPRoyal",
+    "magazin": "iproyal.com",
     "url": "https://iproyal.com",
     "url_afiliat": "https://iproyal.sjv.io/c/7401119/1295570/15731",
     "logo_url": "",
@@ -2034,7 +2034,7 @@
     "descriere": "Proxies rezidentiale, datacenter si mobile. Ideal pentru web scraping, SEO si brand protection."
   },
   {
-    "magazin": "OnePlus",
+    "magazin": "oneplus.com",
     "url": "https://www.oneplus.com",
     "url_afiliat": "https://oneplusfr.sjv.io/c/7401119/1127882/14044",
     "logo_url": "",
@@ -2059,7 +2059,7 @@
     "descriere": "Telefoane flagship la preturi semi-premium. OnePlus 12, Nord si alte modele performante."
   },
   {
-    "magazin": "Mailbird",
+    "magazin": "getmailbird.com",
     "url": "https://www.getmailbird.com",
     "url_afiliat": "https://www.getmailbird.com/?ref=amcupon",
     "logo_url": "https://www.getmailbird.com/favicon.ico",
@@ -2084,7 +2084,7 @@
     "descriere": "Client email Windows elegant, cu integrari pentru Gmail, Outlook, Slack si altele."
   },
   {
-    "magazin": "Vecteezy",
+    "magazin": "vecteezy.com",
     "url": "https://www.vecteezy.com",
     "url_afiliat": "https://www.vecteezy.com/?ref=amcupon",
     "logo_url": "https://www.vecteezy.com/favicon.ico",
@@ -2109,7 +2109,7 @@
     "descriere": "Milioane de vectori, ilustratii si imagini stock gratuite si premium pentru designeri."
   },
   {
-    "magazin": "Vivaia",
+    "magazin": "vivaia.com",
     "url": "https://vivaia.com",
     "url_afiliat": "https://vivaia.com/?ref=amcupon",
     "logo_url": "https://vivaia.com/favicon.ico",
@@ -2134,7 +2134,7 @@
     "descriere": "Pantofi confortabili din materiale reciclate. Eco-friendly si stilati."
   },
   {
-    "magazin": "Ticket Liquidator",
+    "magazin": "ticketliquidator.com",
     "url": "https://www.ticketliquidator.com",
     "url_afiliat": "https://www.ticketliquidator.com/?ref=amcupon",
     "logo_url": "https://www.ticketliquidator.com/favicon.ico",
@@ -2159,7 +2159,7 @@
     "descriere": "Bilete pentru concerte, sporturi si evenimente. Stocuri garantate si preturi competitive."
   },
   {
-    "magazin": "Tempo",
+    "magazin": "tempo.fit",
     "url": "https://tempo.fit",
     "url_afiliat": "https://imp.i277339.net/c/7401119/820248/11505",
     "logo_url": "https://tempo.fit/favicon.ico",
@@ -2184,7 +2184,7 @@
     "descriere": "Echipamente fitness inteligente cu AI coaching. Antrenament personalizat acasa."
   },
   {
-    "magazin": "SportsLine",
+    "magazin": "sportsline.com",
     "url": "https://www.sportsline.com",
     "url_afiliat": "https://www.sportsline.com/?ref=amcupon",
     "logo_url": "https://www.sportsline.com/favicon.ico",
@@ -2209,7 +2209,7 @@
     "descriere": "Predictii sportive bazate pe AI si simulari. Basketball, fotbal american, baseball."
   },
   {
-    "magazin": "Debutify",
+    "magazin": "debutify.com",
     "url": "https://debutify.com",
     "url_afiliat": "https://debutify.com/?ref=amcupon",
     "logo_url": "https://debutify.com/favicon.ico",
@@ -2234,7 +2234,7 @@
     "descriere": "Tema Shopify #1 pentru conversii. Include sute de add-ons pentru optimizare vanzari."
   },
   {
-    "magazin": "TS Plus",
+    "magazin": "terminalserviceplus.com",
     "url": "https://terminalserviceplus.com",
     "url_afiliat": "https://terminalserviceplus.com/?ref=amcupon",
     "logo_url": "https://terminalserviceplus.com/favicon.ico",
@@ -2259,7 +2259,7 @@
     "descriere": "Software acces remote si publicare aplicatii Windows. Alternativa la Citrix si RDS."
   },
   {
-    "magazin": "Vista Social",
+    "magazin": "vistasocial.com",
     "url": "https://vistasocial.com",
     "url_afiliat": "https://vistasocial.sjv.io/c/7401119/2916038/33456",
     "logo_url": "",
@@ -2284,7 +2284,7 @@
     "descriere": "Platforma all-in-one pentru management social media: programare postari, analytics, inbox unificat."
   },
   {
-    "magazin": "RAVPower",
+    "magazin": "ravpower.com",
     "url": "https://www.ravpower.com",
     "url_afiliat": "https://zebaoaffiliateprogram.pxf.io/c/7401119/1809775/21526",
     "logo_url": "",
@@ -2309,7 +2309,7 @@
     "descriere": "Baterii externe, incarcatoare rapide si accesorii power. Compatibil iPhone, Samsung, laptop."
   },
   {
-    "magazin": "Jackery",
+    "magazin": "nl.jackery.com",
     "url": "https://nl.jackery.com",
     "url_afiliat": "https://nl.jackery.com/",
     "logo_url": "",
@@ -2334,7 +2334,7 @@
     "descriere": "Statii de incarcare portabile si panouri solare. Perfecte pentru camping, outdoor si pene de curent."
   },
   {
-    "magazin": "Wyndham Rewards",
+    "magazin": "wyndhamhotels.com",
     "url": "https://www.wyndhamhotels.com",
     "url_afiliat": "https://www.wyndhamhotels.com/?ref=amcupon",
     "logo_url": "https://www.wyndhamhotels.com/favicon.ico",
@@ -2359,7 +2359,7 @@
     "descriere": "Peste 9.000 de hoteluri Wyndham in toata lumea. Puncte de fidelitate si oferte exclusive."
   },
   {
-    "magazin": "BdThemes",
+    "magazin": "bdthemes.com",
     "url": "https://bdthemes.com",
     "url_afiliat": "https://bdthemes.com",
     "logo_url": "https://bdthemes.com/favicon.ico",
@@ -2384,7 +2384,7 @@
     "descriere": "Teme si pluginuri Elementor premium. Pachete complete pentru orice tip de site."
   },
   {
-    "magazin": "Termly",
+    "magazin": "termly.io",
     "url": "https://termly.io",
     "url_afiliat": "https://termly.io/?ref=amcupon",
     "logo_url": "https://termly.io/favicon.ico",
@@ -2409,7 +2409,7 @@
     "descriere": "Generator de politici de confidentialitate, GDPR, termeni si conditii pentru site-uri."
   },
   {
-    "magazin": "Anantara Hotels",
+    "magazin": "anantara.com",
     "url": "https://www.anantara.com",
     "url_afiliat": "https://nhhotelgroup.sjv.io/c/7401119/3729690/15508",
     "logo_url": "https://www.anantara.com/favicon.ico",
@@ -2434,7 +2434,7 @@
     "descriere": "Hoteluri si resorturi de lux in Asia, Orientul Mijlociu si Africa. Experiente unice."
   },
   {
-    "magazin": "youngelectricbikes",
+    "magazin": "youngelectricbikes.com",
     "url": "https://youngelectricbikes.com",
     "url_afiliat": "https://youngelectricbikes.pxf.io/c/7401119/2876938/33100",
     "logo_url": "",
@@ -2459,7 +2459,7 @@
     "descriere": "Biciclete electrice moderne pentru oras si off-road. Autonomie mare, design sportiv."
   },
   {
-    "magazin": "Tribesigns",
+    "magazin": "tribesigns.com",
     "url": "https://tribesigns.com",
     "url_afiliat": "https://tribesigns.pxf.io/c/7401119/2096333/26195",
     "logo_url": "",
@@ -2484,7 +2484,7 @@
     "descriere": "Mobila moderna pentru birou si living: birouri, rafturi, biblioteci. Pret mic, calitate buna."
   },
   {
-    "magazin": "eSIMX",
+    "magazin": "esimx.com",
     "url": "https://esimx.com",
     "url_afiliat": "https://esimx.com",
     "logo_url": "",
@@ -2509,7 +2509,7 @@
     "descriere": "eSIM pentru calatorii internationale in 200+ tari. Conectare instant fara cartele fizice."
   },
   {
-    "magazin": "Cariloha",
+    "magazin": "cariloha.com",
     "url": "https://www.cariloha.com",
     "url_afiliat": "https://cariloha.pxf.io/c/7401119/1162998/14163",
     "logo_url": "https://www.cariloha.com/favicon.ico",
@@ -2534,7 +2534,7 @@
     "descriere": "Haine, lenjerie de pat si prosoape din bambus organic. Extrem de moi si sustenabile."
   },
   {
-    "magazin": "Nelio",
+    "magazin": "neliosoftware.com",
     "url": "https://neliosoftware.com",
     "url_afiliat": "https://neliosoftware.com/?ref=amcupon",
     "logo_url": "https://neliosoftware.com/favicon.ico",
@@ -2559,7 +2559,7 @@
     "descriere": "Pluginuri WordPress premium: A/B testing, heatmaps, content calendars si altele."
   },
   {
-    "magazin": "Meta Box",
+    "magazin": "metabox.io",
     "url": "https://metabox.io",
     "url_afiliat": "https://metabox.sjv.io/c/7401119/921211/12511",
     "logo_url": "https://metabox.io/favicon.ico",
@@ -2584,7 +2584,7 @@
     "descriere": "Plugin WordPress pentru campuri personalizate si Custom Post Types. 500.000+ utilizatori."
   },
   {
-    "magazin": "Sorare",
+    "magazin": "sorare.com",
     "url": "https://sorare.com",
     "url_afiliat": "https://sorare.com/?ref=amcupon",
     "logo_url": "https://sorare.com/favicon.ico",
@@ -2609,7 +2609,7 @@
     "descriere": "Fantasy football cu carduri digitale (NFT) ale jucatorilor reali. Castiga premii saptamanal."
   },
   {
-    "magazin": "Rumpl",
+    "magazin": "rumpl.com",
     "url": "https://rumpl.com",
     "url_afiliat": "https://rumpl.com/?ref=amcupon",
     "logo_url": "https://rumpl.com/favicon.ico",
@@ -2634,7 +2634,7 @@
     "descriere": "Paturi si saci de dormit tehnici pentru outdoor si calatorie. Materiale reciclate."
   },
   {
-    "magazin": "NuLeaf Naturals",
+    "magazin": "nuleafnaturals.com",
     "url": "https://nuleafnaturals.com",
     "url_afiliat": "https://nuleafnaturals.sjv.io/c/7401119/914449/10322",
     "logo_url": "https://nuleafnaturals.com/favicon.ico",
@@ -2659,7 +2659,7 @@
     "descriere": "Uleiuri CBD organice de cea mai inalta calitate. Testate de laboratoare independente."
   },
   {
-    "magazin": "Maxbone",
+    "magazin": "maxbone.com",
     "url": "https://www.maxbone.com",
     "url_afiliat": "https://www.maxbone.com/?ref=amcupon",
     "logo_url": "https://www.maxbone.com/favicon.ico",
@@ -2684,7 +2684,7 @@
     "descriere": "Colectie premium de accesorii si haine pentru caini. Design minimalist si materiale eco."
   },
   {
-    "magazin": "LARQ",
+    "magazin": "livelarq.com",
     "url": "https://www.livelarq.com",
     "url_afiliat": "https://www.livelarq.com/?ref=amcupon",
     "logo_url": "https://www.livelarq.com/favicon.ico",
@@ -2709,7 +2709,7 @@
     "descriere": "Sticle de apa cu purificator UV-C integrat. Sterileaza apa automat la 60 secunde."
   },
   {
-    "magazin": "JustFit",
+    "magazin": "justfit.app",
     "url": "https://justfit.app",
     "url_afiliat": "https://justfit.sjv.io/c/7401119/1989829/24460",
     "logo_url": "",
@@ -2734,7 +2734,7 @@
     "descriere": "Aplicatie fitness cu antrenamente personalizate fara echipament. HIIT, Yoga, forta."
   },
   {
-    "magazin": "Treezy",
+    "magazin": "treezy.de",
     "url": "https://www.treezy.de",
     "url_afiliat": "https://www.treezy.de/?ref=amcupon",
     "logo_url": "https://www.treezy.de/favicon.ico",
@@ -2759,7 +2759,7 @@
     "descriere": "Brazi de Craciun artificiali premium din Germania. Realist, durabil, fara intretinere."
   },
   {
-    "magazin": "Martinic Audio",
+    "magazin": "martinic.com",
     "url": "https://www.martinic.com",
     "url_afiliat": "https://martinic.evyy.net/c/7401119/1422857/4482",
     "logo_url": "https://www.martinic.com/favicon.ico",
@@ -2784,7 +2784,7 @@
     "descriere": "Plugin-uri audio si sintetizatoare virtuale pentru productie muzicala profesionala."
   },
   {
-    "magazin": "Wildbird",
+    "magazin": "wildbird.com",
     "url": "https://wildbird.com",
     "url_afiliat": "https://wildbird.com/?ref=amcupon",
     "logo_url": "https://wildbird.com/favicon.ico",
@@ -2826,7 +2826,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 92,
+    "procent_succes": 97,
     "exclusiv": false,
     "categorie_slug": "fashion",
     "scor_final": 49,
@@ -2850,7 +2850,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 97,
+    "procent_succes": 88,
     "exclusiv": false,
     "categorie_slug": "online-mall",
     "scor_final": 48,
@@ -2898,7 +2898,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 89,
+    "procent_succes": 96,
     "exclusiv": false,
     "categorie_slug": "books",
     "scor_final": 45,
@@ -2953,7 +2953,7 @@
     "platforma": "2performant"
   },
   {
-    "magazin": "Prop Money Inc",
+    "magazin": "propmoney.com",
     "url": "https://propmoney.com",
     "url_afiliat": "https://propmoneyinc.pxf.io/c/7401119/1941708/14559",
     "logo_url": "https://propmoney.com/favicon.ico",
@@ -2995,7 +2995,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 92,
+    "procent_succes": 89,
     "exclusiv": false,
     "categorie_slug": "online-mall",
     "scor_final": 44,
@@ -3019,7 +3019,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 95,
+    "procent_succes": 93,
     "exclusiv": false,
     "categorie_slug": "electronics-itc",
     "scor_final": 43,
@@ -3043,7 +3043,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 95,
+    "procent_succes": 92,
     "exclusiv": false,
     "categorie_slug": "online-mall",
     "scor_final": 42,
@@ -3067,7 +3067,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 90,
+    "procent_succes": 89,
     "exclusiv": false,
     "categorie_slug": "fashion",
     "scor_final": 41,
@@ -3091,7 +3091,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 97,
+    "procent_succes": 91,
     "exclusiv": false,
     "categorie_slug": "electronics-itc",
     "scor_final": 40,
@@ -3139,7 +3139,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 81,
+    "procent_succes": 87,
     "exclusiv": false,
     "categorie_slug": "fashion",
     "scor_final": 39,
@@ -3163,7 +3163,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 84,
+    "procent_succes": 83,
     "exclusiv": false,
     "categorie_slug": "fashion",
     "scor_final": 38,
@@ -3187,7 +3187,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 80,
+    "procent_succes": 87,
     "exclusiv": false,
     "categorie_slug": "beauty",
     "scor_final": 37,
@@ -3211,7 +3211,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 84,
+    "procent_succes": 87,
     "exclusiv": false,
     "categorie_slug": "online-mall",
     "scor_final": 36,
@@ -3235,7 +3235,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 82,
+    "procent_succes": 85,
     "exclusiv": false,
     "categorie_slug": "online-mall",
     "scor_final": 35,
@@ -3259,7 +3259,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 82,
+    "procent_succes": 81,
     "exclusiv": false,
     "categorie_slug": "online-mall",
     "scor_final": 34,
@@ -3283,7 +3283,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 87,
+    "procent_succes": 91,
     "exclusiv": false,
     "categorie_slug": "online-mall",
     "scor_final": 33,
@@ -3307,7 +3307,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 89,
+    "procent_succes": 83,
     "exclusiv": false,
     "categorie_slug": "sports-outdoors",
     "scor_final": 31,
@@ -3331,7 +3331,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 81,
+    "procent_succes": 90,
     "exclusiv": false,
     "categorie_slug": "electronics-itc",
     "scor_final": 29,
@@ -3355,7 +3355,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 82,
+    "procent_succes": 81,
     "exclusiv": false,
     "categorie_slug": "electronics-itc",
     "scor_final": 28,
@@ -3379,7 +3379,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 91,
+    "procent_succes": 90,
     "exclusiv": false,
     "categorie_slug": "electronics-itc",
     "scor_final": 27,
@@ -3403,7 +3403,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 80,
+    "procent_succes": 90,
     "exclusiv": false,
     "categorie_slug": "online-mall",
     "scor_final": 25,
@@ -3427,7 +3427,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 88,
+    "procent_succes": 91,
     "exclusiv": false,
     "categorie_slug": "electronics-itc",
     "scor_final": 24,
@@ -3451,7 +3451,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 89,
+    "procent_succes": 81,
     "exclusiv": false,
     "categorie_slug": "home-garden",
     "scor_final": 23,
@@ -3475,7 +3475,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 87,
+    "procent_succes": 83,
     "exclusiv": false,
     "categorie_slug": "electronics-itc",
     "scor_final": 22,
@@ -3499,14 +3499,14 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 83,
+    "procent_succes": 90,
     "exclusiv": false,
     "categorie_slug": "online-mall",
     "scor_final": 20,
     "platforma": "profitshare"
   },
   {
-    "magazin": "Arkuda Digital",
+    "magazin": "arkuda.digital",
     "url": "https://www.arkuda.digital",
     "url_afiliat": "https://arkmc.pxf.io/c/7401119/349210/5172",
     "logo_url": "https://www.arkuda.digital/favicon.ico",
@@ -3548,7 +3548,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 76,
+    "procent_succes": 78,
     "exclusiv": false,
     "categorie_slug": "home-garden",
     "scor_final": 19,
@@ -3572,7 +3572,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 75,
+    "procent_succes": 70,
     "exclusiv": false,
     "categorie_slug": "online-mall",
     "scor_final": 18,
@@ -3596,7 +3596,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 80,
+    "procent_succes": 74,
     "exclusiv": false,
     "categorie_slug": "fashion",
     "scor_final": 17,
@@ -3620,7 +3620,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 71,
+    "procent_succes": 83,
     "exclusiv": false,
     "categorie_slug": "beauty",
     "scor_final": 16,
@@ -3644,7 +3644,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 83,
+    "procent_succes": 79,
     "exclusiv": false,
     "categorie_slug": "online-mall",
     "scor_final": 15,
@@ -3668,7 +3668,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 70,
+    "procent_succes": 80,
     "exclusiv": false,
     "categorie_slug": "automotive",
     "scor_final": 14,
@@ -3692,7 +3692,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 85,
+    "procent_succes": 81,
     "exclusiv": false,
     "categorie_slug": "electronics-itc",
     "scor_final": 12,
@@ -3716,7 +3716,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 79,
+    "procent_succes": 77,
     "exclusiv": false,
     "categorie_slug": "online-mall",
     "scor_final": 11,
@@ -3740,7 +3740,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 84,
+    "procent_succes": 79,
     "exclusiv": false,
     "categorie_slug": "beauty",
     "scor_final": 9,
@@ -3764,7 +3764,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 77,
+    "procent_succes": 76,
     "exclusiv": false,
     "categorie_slug": "electronics-itc",
     "scor_final": 8,
@@ -3788,7 +3788,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 70,
+    "procent_succes": 76,
     "exclusiv": false,
     "categorie_slug": "electronics-itc",
     "scor_final": 7,
@@ -3812,7 +3812,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 76,
+    "procent_succes": 82,
     "exclusiv": false,
     "categorie_slug": "online-mall",
     "scor_final": 5,
@@ -3860,7 +3860,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 85,
+    "procent_succes": 75,
     "exclusiv": false,
     "categorie_slug": "electronics-itc",
     "scor_final": 3,
@@ -3884,7 +3884,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 79,
+    "procent_succes": 78,
     "exclusiv": false,
     "categorie_slug": "online-mall",
     "scor_final": 2,
@@ -3915,7 +3915,7 @@
     "platforma": "profitshare"
   },
   {
-    "magazin": "aronia-charlottenburg-ro",
+    "magazin": "aronia-charlottenburg.ro",
     "url": "https://aronia-charlottenburg.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Faronia-charlottenburg.ro%2F",
     "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/8498/medium/8498.png",
@@ -3933,7 +3933,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 94,
+    "procent_succes": 76,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-06-29",
@@ -3942,7 +3942,7 @@
     "unique_code": "9abbbd0e9"
   },
   {
-    "magazin": "answear-ro",
+    "magazin": "answear.ro",
     "url": "https://answear.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fanswear.ro",
     "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/2561/medium/2561.png",
@@ -3960,7 +3960,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 89,
+    "procent_succes": 81,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-06-29",
@@ -3969,7 +3969,7 @@
     "unique_code": "a5e9e1225"
   },
   {
-    "magazin": "scule365-ro",
+    "magazin": "scule365.ro",
     "url": "https://www.scule365.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.scule365.ro",
     "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11376/medium/11376.png",
@@ -3987,7 +3987,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 90,
+    "procent_succes": 78,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-06-29",
@@ -3996,7 +3996,7 @@
     "unique_code": "8e59c17b0"
   },
   {
-    "magazin": "springfarma-com",
+    "magazin": "springfarma.com",
     "url": "https://www.springfarma.com",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.springfarma.com",
     "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13455/medium/13455.png",
@@ -4014,7 +4014,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 87,
+    "procent_succes": 96,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-06-29",
@@ -4023,7 +4023,7 @@
     "unique_code": "1ec3596e6"
   },
   {
-    "magazin": "carturesti-ro",
+    "magazin": "carturesti.ro",
     "url": "https://carturesti.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2F",
     "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11380/medium/11380.png",
@@ -4050,7 +4050,7 @@
     "unique_code": "07b5f0fed"
   },
   {
-    "magazin": "elefant-ro",
+    "magazin": "elefant.ro",
     "url": "https://elefant.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Felefant.ro",
     "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13096/medium/13096.png",
@@ -4068,7 +4068,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 72,
+    "procent_succes": 89,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-06-29",
@@ -4077,7 +4077,7 @@
     "unique_code": "184f69294"
   },
   {
-    "magazin": "kinderauto-ro",
+    "magazin": "kinderauto.ro",
     "url": "https://kinderauto.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fkinderauto.ro",
     "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11191/medium/11191.png",
@@ -4095,7 +4095,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 72,
+    "procent_succes": 79,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-06-29",
@@ -4104,7 +4104,7 @@
     "unique_code": "322bda0fb"
   },
   {
-    "magazin": "bestvalue-eu",
+    "magazin": "bestvalue.eu",
     "url": "https://bestvalue.eu/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbestvalue.eu%2F",
     "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/3109/medium/3109.png",
@@ -4122,7 +4122,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 95,
+    "procent_succes": 80,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-06-29",
@@ -4131,7 +4131,7 @@
     "unique_code": "087e21d9f"
   },
   {
-    "magazin": "kitunghii-ro",
+    "magazin": "kitunghii.ro",
     "url": "https://www.kitunghii.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.kitunghii.ro",
     "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/10339/medium/10339.png",
@@ -4149,7 +4149,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 94,
+    "procent_succes": 73,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-06-29",
@@ -4158,7 +4158,7 @@
     "unique_code": "4b9a6d5ea"
   },
   {
-    "magazin": "petmax-ro",
+    "magazin": "petmax.ro",
     "url": "https://www.petmax.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.petmax.ro",
     "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/8763/medium/8763.jpg",
@@ -4176,7 +4176,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 87,
+    "procent_succes": 73,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-06-29",
@@ -4185,34 +4185,7 @@
     "unique_code": "07e65acfe"
   },
   {
-    "magazin": "fashiondays-ro",
-    "url": "https://www.fashiondays.ro/",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.fashiondays.ro%2F",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11974/medium/11974.jpg",
-    "categorie": "Fashion",
-    "categorie_slug": "fashion",
-    "comision": "5.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "#999",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
-    "procent_succes": 84,
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-06-29",
-    "scor_final": 0.0,
-    "program_id": 488,
-    "unique_code": "a1880c1fe"
-  },
-  {
-    "magazin": "litera-ro",
+    "magazin": "litera.ro",
     "url": "https://www.litera.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.litera.ro%2F",
     "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9545/medium/9545.png",
@@ -4230,7 +4203,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 74,
+    "procent_succes": 82,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-06-29",
@@ -4239,7 +4212,7 @@
     "unique_code": "0a8a2c4d9"
   },
   {
-    "magazin": "evomag-ro",
+    "magazin": "evomag.ro",
     "url": "https://www.evomag.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2F",
     "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13753/medium/13753.jpg",
@@ -4257,7 +4230,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 84,
+    "procent_succes": 95,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-06-29",
@@ -4266,7 +4239,7 @@
     "unique_code": "d4f678b43"
   },
   {
-    "magazin": "bazarulonline-ro",
+    "magazin": "bazarulonline.ro",
     "url": "https://bazarulonline.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2F",
     "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/10151/medium/10151.png",
@@ -4284,7 +4257,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 76,
+    "procent_succes": 74,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-06-29",
@@ -4293,7 +4266,7 @@
     "unique_code": "d5075b651"
   },
   {
-    "magazin": "librarie-net",
+    "magazin": "librarie.net",
     "url": "https://www.librarie.net/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.librarie.net%2F",
     "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/10206/medium/10206.png",
@@ -4311,7 +4284,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 80,
+    "procent_succes": 81,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-06-29",
@@ -4320,34 +4293,7 @@
     "unique_code": "da1148931"
   },
   {
-    "magazin": "gsmnet-ro",
-    "url": "https://www.gsmnet.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gsmnet.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/12802/medium/12802.png",
-    "categorie": "Electronics IT&C",
-    "categorie_slug": "electronics-itc",
-    "comision": "12.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "#999",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
-    "procent_succes": 75,
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-06-29",
-    "scor_final": 0.0,
-    "program_id": 11361,
-    "unique_code": "3a3c2e10d"
-  },
-  {
-    "magazin": "noriel-ro",
+    "magazin": "noriel.ro",
     "url": "https://noriel.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnoriel.ro%2F",
     "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/7926/medium/7926.png",
@@ -4365,7 +4311,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 75,
+    "procent_succes": 73,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-06-29",
@@ -4374,7 +4320,7 @@
     "unique_code": "bb3071a7d"
   },
   {
-    "magazin": "drmax-ro",
+    "magazin": "drmax.ro",
     "url": "https://www.drmax.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2F",
     "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/8800/medium/8800.png",
@@ -4392,7 +4338,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 87,
+    "procent_succes": 84,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-06-29",
@@ -4418,7 +4364,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 82,
+    "procent_succes": 73,
     "exclusiv": false,
     "categorie_slug": "online-mall",
     "scor_final": 0,
@@ -4442,7 +4388,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 85,
+    "procent_succes": 72,
     "exclusiv": false,
     "categorie_slug": "online-mall",
     "scor_final": 0,
@@ -4466,7 +4412,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 77,
+    "procent_succes": 81,
     "exclusiv": false,
     "categorie_slug": "home-garden",
     "scor_final": 0,
@@ -4490,7 +4436,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 79,
+    "procent_succes": 75,
     "exclusiv": false,
     "categorie_slug": "online-mall",
     "scor_final": 0,
@@ -4514,7 +4460,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 80,
+    "procent_succes": 75,
     "exclusiv": false,
     "categorie_slug": "home-garden",
     "scor_final": 0,
@@ -4538,7 +4484,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 72,
+    "procent_succes": 81,
     "exclusiv": false,
     "categorie_slug": "automotive",
     "scor_final": 0,
@@ -4562,7 +4508,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 71,
+    "procent_succes": 72,
     "exclusiv": false,
     "categorie_slug": "online-mall",
     "scor_final": 0,
@@ -4586,7 +4532,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 75,
+    "procent_succes": 78,
     "exclusiv": false,
     "categorie_slug": "online-mall",
     "scor_final": 0,
@@ -4610,7 +4556,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 73,
+    "procent_succes": 77,
     "exclusiv": false,
     "categorie_slug": "online-mall",
     "scor_final": 0,
@@ -4634,7 +4580,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 82,
+    "procent_succes": 78,
     "exclusiv": false,
     "categorie_slug": "online-mall",
     "scor_final": 0,
@@ -4658,7 +4604,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 74,
+    "procent_succes": 70,
     "exclusiv": false,
     "categorie_slug": "online-mall",
     "scor_final": 0,
@@ -4682,7 +4628,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 80,
+    "procent_succes": 74,
     "exclusiv": false,
     "categorie_slug": "home-garden",
     "scor_final": 0,
@@ -4706,7 +4652,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 74,
+    "procent_succes": 79,
     "exclusiv": false,
     "categorie_slug": "automotive",
     "scor_final": 0,
@@ -4730,7 +4676,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 78,
+    "procent_succes": 71,
     "exclusiv": false,
     "categorie_slug": "home-garden",
     "scor_final": 0,
@@ -4754,7 +4700,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 83,
+    "procent_succes": 81,
     "exclusiv": false,
     "categorie_slug": "home-garden",
     "scor_final": 0,
@@ -4778,7 +4724,7 @@
     "zile_ramase": 99,
     "promotii": [],
     "folosit_de": 0,
-    "procent_succes": 70,
+    "procent_succes": 78,
     "exclusiv": false,
     "categorie_slug": "home-garden",
     "scor_final": 0,

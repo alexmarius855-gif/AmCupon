@@ -217,6 +217,18 @@ function numeAfisat(magazin: string): string {
     .join(" ");
 }
 
+// Cauta magazinul tolerand URL-uri vechi (majuscule/forme anterioare ale slug-ului):
+// 1) potrivire exacta  2) case-insensitive  3) pe primul label de domeniu (surfshark ~ surfshark.com)
+function gasesteMagazin(magazine: Magazin[], slug: string): Magazin | undefined {
+  const s = slug.toLowerCase();
+  const base = s.split(".")[0];
+  return (
+    magazine.find((x) => x.magazin === slug) ||
+    magazine.find((x) => x.magazin.toLowerCase() === s) ||
+    magazine.find((x) => x.magazin.toLowerCase().split(".")[0] === base)
+  );
+}
+
 export async function generateStaticParams() {
   const magazine = loadData();
   return magazine.map((m) => ({ magazin: m.magazin }));
@@ -229,7 +241,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { magazin: slug } = await params;
   const magazine = loadData();
-  const m = magazine.find((x) => x.magazin === slug);
+  const m = gasesteMagazin(magazine, slug);
 
   if (!m) return { title: "Magazin negăsit | AmCupon.ro" };
 
@@ -238,7 +250,8 @@ export async function generateMetadata({
   const luna = lunaRo();
   const nrPromo = m.promotii.length;
   const nrCod = m.promotii.filter((p) => p.cod_cupon).length;
-  const pageUrl = `https://amcupon.ro/cod-reducere/${slug}`;
+  // Canonical = mereu slug-ul curat al magazinului (nu forma din URL accesat)
+  const pageUrl = `https://amcupon.ro/cod-reducere/${m.magazin}`;
 
   // Titlu optimizat — format care rankuieste (ex: cuponeria)
   const title = nrCod > 0
@@ -303,14 +316,16 @@ export default async function PaginaMagazin({
 }) {
   const { magazin: slug } = await params;
   const magazine = loadData();
-  const m = magazine.find((x) => x.magazin === slug);
+  const m = gasesteMagazin(magazine, slug);
 
   if (!m) notFound();
 
-  const produse = loadProducts(slug);
-  const blogPost = loadBlogPost(slug);
-  const banner = loadBanner(slug);
-  const descriere = loadDescriere(slug);
+  // Folosim slug-ul curat al magazinului pentru toate loader-ele (consistenta)
+  const cleanSlug = m.magazin;
+  const produse = loadProducts(cleanSlug);
+  const blogPost = loadBlogPost(cleanSlug);
+  const banner = loadBanner(cleanSlug);
+  const descriere = loadDescriere(cleanSlug);
 
   // Magazine similare din aceeasi categorie (max 8, prioritate la cele cu promotii)
   const RETELE_AFILIERE = ["profitshare.ro", "2performant.com"];

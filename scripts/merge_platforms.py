@@ -7,6 +7,8 @@ Output: ../data/output.json + ../frontend/public/output.json
 
 import json
 import os
+import re
+from urllib.parse import urlparse
 
 FILES = [
     "../data/output.json",              # 2Performant
@@ -18,10 +20,42 @@ FILES = [
 OUTPUT_FILE    = "../data/output.json"
 OUTPUT_FRONTEND = "../frontend/public/output.json"
 
+# ─── Normalizare slug — TOATE slug-urile devin domeniu curat ─────────────────
+# Slug-ul (`magazin`) e folosit ca segment de URL in /cod-reducere/[magazin] SI
+# in canonical + sitemap. Slug-uri cu spatii ("Revolut Business"), majuscule
+# ("Surfshark"), UUID-uri lipite ("bookzone-ro-9c9bce7e-...") sau liniute in loc
+# de punct ("otter-ro") produc linkuri invalide. Solutie: derivam slug-ul din
+# DOMENIUL url-ului (consistent cu restul site-ului: emag.ro, temu.com), cu
+# fallback pe numele slugificat doar daca url-ul lipseste.
+_UUID = re.compile(
+    r"-?[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}", re.I)
+
+
+def _slugify_name(s: str) -> str:
+    s = _UUID.sub("", (s or "").lower().strip())
+    s = re.sub(r"[^a-z0-9.]+", "-", s)
+    s = re.sub(r"-{2,}", "-", s).strip("-.")
+    return s
+
+
+def domain_slug(url: str, fallback: str) -> str:
+    """Domeniu curat din url (fara www/protocol/path); fallback = nume slugificat."""
+    host = ""
+    if url:
+        try:
+            netloc = urlparse(url if "//" in url else "//" + url).netloc
+            host = (netloc or "").lower().split(":")[0]
+            if host.startswith("www."):
+                host = host[4:]
+        except Exception:
+            host = ""
+    if host and "." in host and " " not in host and not _UUID.search(host):
+        return host
+    return _slugify_name(fallback)
+
 
 def main():
-    merged: list[dict] = []
-    seen_slugs: set[str] = set()
+    by_slug: dict[str, dict] = {}  # slug curat -> magazin (pastram cel mai bun)
 
     for fpath in FILES:
         if not os.path.exists(fpath):
@@ -41,32 +75,41 @@ def main():
 
         adaugate = 0
         duplicate = 0
+        invalide = 0
         for magazin in data:
-            slug = magazin.get("magazin", "").strip().lower()
-            if not slug:
-                continue
-            if "/" in slug:
-                # Slug cu "/" rupe ruta dinamica /cod-reducere/[magazin] (Next.js
-                # trateaza segmentul ca path multiplu -> 404). Ex: "esyhair.com/en".
-                duplicate += 1
+            raw = (magazin.get("magazin", "") or "").strip()
+            if not raw:
                 continue
             url_val = (magazin.get("url") or "").strip()
             if url_val and any(c.isspace() for c in url_val):
-                # URL cu spatii in interior = date corupte de la sursa (ex: scraping
-                # gresit a prins text de status in loc de domeniu). Numele afisat poate
-                # legitim avea spatii ("Revolut Business") - doar URL-ul nu trebuie sa aiba.
-                duplicate += 1
+                # URL cu spatii = date corupte de la sursa -> aruncam
+                invalide += 1
                 continue
-            if slug in seen_slugs:
-                # Pastreaza cel cu mai multe promotii / scor mai mare
-                duplicate += 1
+            # Slug curat, URL-safe, derivat din domeniu (consistent cu tot site-ul)
+            slug = domain_slug(url_val, raw)
+            if not slug or len(slug) < 2 or slug.strip("-.") == "":
+                invalide += 1
                 continue
-            seen_slugs.add(slug)
-            merged.append(magazin)
-            adaugate += 1
+            magazin["magazin"] = slug  # suprascriem cu forma curata
 
-        platforma = data[0].get("platforma", "2performant") if data else "unknown"
-        print(f"  {os.path.basename(fpath)}: +{adaugate} magazine ({duplicate} duplicate sarite)")
+            prev = by_slug.get(slug)
+            if prev is None:
+                by_slug[slug] = magazin
+                adaugate += 1
+            else:
+                # Dedup: pastram magazinul cu scor_final mai mare (sau cu promotii)
+                duplicate += 1
+                better = (
+                    magazin.get("scor_final", 0) > prev.get("scor_final", 0)
+                    or (len(magazin.get("promotii") or []) > len(prev.get("promotii") or []))
+                )
+                if better:
+                    by_slug[slug] = magazin
+
+        print(f"  {os.path.basename(fpath)}: +{adaugate} magazine "
+              f"({duplicate} duplicate, {invalide} invalide sarite)")
+
+    merged: list[dict] = list(by_slug.values())
 
     # Sorteaza: promotii active primul, apoi scor final
     merged.sort(key=lambda x: (
