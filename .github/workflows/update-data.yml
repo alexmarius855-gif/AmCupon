@@ -1,12 +1,13 @@
 name: Actualizare Automata Date & Blog
 
+# Optimizat 19.06.2026: 3 rulări/zi (nu 9) → ~70% mai puține minute GitHub Actions.
+# - 05:00 + 17:00 UTC = sync date (07:00 + 19:00 RO) — doar API + merge + commit
+# - 06:00 UTC = pipeline complet (08:00 RO) — blog, social, newsletter, video
 on:
   schedule:
-    - cron: '0 */4 * * *'  # Date fresh la fiecare 4 ore (00:00, 04:00, 08:00, 12:00, 16:00, 20:00 UTC)
-    - cron: '0 6 * * *'    # Newsletter + Social dimineata — zilnic la 08:00 ora Romaniei
-    - cron: '0 10 * * *'   # Social pranz — zilnic la 12:00 ora Romaniei (10:00 UTC)
-    - cron: '0 17 * * *'   # Social seara — zilnic la 19:00 ora Romaniei (17:00 UTC)
-  workflow_dispatch:        # Buton manual in GitHub -> Actions
+    - cron: '0 5,17 * * *'  # Sync date de 2 ori/zi (07:00 + 19:00 ora Romaniei)
+    - cron: '0 6 * * *'      # Pipeline complet dimineata (08:00 ora Romaniei)
+  workflow_dispatch:        # Buton manual in GitHub -> Actions (ruleaza tot)
 
 jobs:
   update:
@@ -15,6 +16,8 @@ jobs:
       contents: write
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+      # Pipeline complet: dimineata + rulare manuala. Sync-urile 05/17 UTC sunt doar date.
+      IS_FULL_DAILY: ${{ github.event.schedule == '0 6 * * *' || github.event_name == 'workflow_dispatch' }}
 
     steps:
       # ── 1. Checkout ────────────────────────────────────────────────────────
@@ -149,8 +152,9 @@ jobs:
         working-directory: scripts
         run: python enrich_products_from_promos.py
 
-      # ── 7. Bannere campanii (2Performant) ─────────────────────────────────
+      # ── 7. Bannere campanii (2Performant) — doar pipeline complet ─────────
       - name: Fetch bannere campanii (2Performant API)
+        if: env.IS_FULL_DAILY == 'true'
         working-directory: scripts
         env:
           TWOPEFORMANT_USER:  ${{ secrets.TWOPEFORMANT_USER }}
@@ -164,18 +168,20 @@ jobs:
             echo "TWOPEFORMANT_EMAIL nu e setat — skip bannere"
           fi
 
-      # ── 8. Blog automat ────────────────────────────────────────────────────
+      # ── 8. Blog automat (doar pipeline complet dimineata) ───────────────────
       - name: Genereaza articole blog din promotii active
+        if: env.IS_FULL_DAILY == 'true'
         working-directory: scripts
         run: python generate_blog.py
 
       - name: Genereaza articole Cel mai bun X
+        if: env.IS_FULL_DAILY == 'true'
         working-directory: scripts
         run: python generate_best_of.py
 
       - name: Genereaza ghiduri calitative cu Claude AI
         working-directory: scripts
-        if: github.event.schedule == '0 6 * * *' || github.event_name == 'workflow_dispatch'
+        if: env.IS_FULL_DAILY == 'true'
         continue-on-error: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -188,27 +194,31 @@ jobs:
           fi
 
       - name: Actualizeaza link-uri afiliate in Top Produse
+        if: env.IS_FULL_DAILY == 'true'
         working-directory: scripts
         run: python generate_product_tops.py
 
       # ── 8b. Date lightweight homepage ──────────────────────────────────────
       - name: Genereaza date lightweight homepage
+        if: env.IS_FULL_DAILY == 'true'
         working-directory: scripts
         run: python generate_homepage_data.py
 
-      # ── 8c. Descrieri editoriale magazine ──────────────────────────────────
+      # ── 8c. Descrieri editoriale magazine (--force = refresh cu promotii curente) ─
       - name: Genereaza descrieri magazine
+        if: env.IS_FULL_DAILY == 'true'
         working-directory: scripts
         run: python generate_store_descriptions.py --force
 
       # ── 8d. Prioritizare magazine ──────────────────────────────────────────
       - name: Genereaza top magazine (potential castig)
+        if: env.IS_FULL_DAILY == 'true'
         working-directory: scripts
         run: python generate_merchant_priority.py
 
       # ── 9. Newsletter zilnic (Brevo SMTP) — DOAR la 08:00 Romania ──────────
       - name: Trimite newsletter zilnic
-        if: github.event.schedule == '0 6 * * *' || github.event_name == 'workflow_dispatch'
+        if: env.IS_FULL_DAILY == 'true'
         continue-on-error: true
         working-directory: scripts
         env:
@@ -228,7 +238,7 @@ jobs:
 
       # ── 10. Telegram canal oferte ──────────────────────────────────────────
       - name: Postare Telegram canal oferte
-        if: github.event.schedule == '0 6 * * *' || github.event_name == 'workflow_dispatch'
+        if: env.IS_FULL_DAILY == 'true'
         continue-on-error: true
         working-directory: scripts
         env:
@@ -240,7 +250,7 @@ jobs:
 
       # ── 11. Generator continut social media pe nise ────────────────────────
       - name: Genereaza continut social media pe nise
-        if: github.event.schedule == '0 6 * * *' || github.event_name == 'workflow_dispatch'
+        if: env.IS_FULL_DAILY == 'true'
         continue-on-error: true
         working-directory: scripts
         run: python generate_social_content.py
@@ -250,6 +260,7 @@ jobs:
       # Ruleaza la fiecare update ca /radar sa reflecte mereu ofertele curente.
       # Voce: Claude haiku daca ANTHROPIC_API_KEY e setat, altfel fallback determinist (gratis).
       - name: Genereaza Radarul AmCupon (digest editorial)
+        if: env.IS_FULL_DAILY == 'true'
         continue-on-error: true
         working-directory: scripts
         env:
@@ -262,7 +273,7 @@ jobs:
       # Ruleaza doar dimineata (un clip/zi e suficient). ffmpeg e preinstalat in
       # ubuntu-latest; edge-tts vine din requirements.txt.
       - name: Genereaza video zilnic (TikTok/Reels/Shorts)
-        if: github.event.schedule == '0 6 * * *' || github.event_name == 'workflow_dispatch'
+        if: env.IS_FULL_DAILY == 'true'
         continue-on-error: true
         working-directory: scripts
         run: |
@@ -280,11 +291,7 @@ jobs:
       # ── 12. Genereaza bannere (Pillow) ────────────────────────────────────
       # Salveaza in data/ SI frontend/public/ (servit de Vercel)
       - name: Genereaza bannere sociale (Pillow)
-        if: >
-          github.event.schedule == '0 6 * * *' ||
-          github.event.schedule == '0 10 * * *' ||
-          github.event.schedule == '0 17 * * *' ||
-          github.event_name == 'workflow_dispatch'
+        if: env.IS_FULL_DAILY == 'true'
         continue-on-error: true
         working-directory: scripts
         run: python generate_banner_auto.py
@@ -348,6 +355,7 @@ jobs:
 
       # ── 14b. IndexNow — anunta Bing/Yandex de pagini noi (fara cont) ──────
       - name: Trimite URL-uri noi catre IndexNow (Bing/Yandex)
+        if: env.IS_FULL_DAILY == 'true'
         continue-on-error: true
         working-directory: scripts
         run: python submit_indexnow.py
@@ -355,14 +363,9 @@ jobs:
       # ── 15. Social Media — DUPA commit, ca bannerele sa fie live ──────────
 
       # ── 15a. Postare via Make.com webhook (NU necesita token Meta) ─────────
-      # Acesta e metoda RECOMANDATA — functioeaza fara developer account Meta
-      # Setup: vezi scripts/SETUP-MAKE-COM.md (10 minute, gratuit)
+      # O singura postare/zi (dimineata). Post manual pranz/seara din Meta Suite daca vrei.
       - name: Postare automata via Make.com webhook (FB + IG)
-        if: >
-          github.event.schedule == '0 6 * * *' ||
-          github.event.schedule == '0 10 * * *' ||
-          github.event.schedule == '0 17 * * *' ||
-          github.event_name == 'workflow_dispatch'
+        if: env.IS_FULL_DAILY == 'true'
         continue-on-error: true
         working-directory: scripts
         env:
@@ -376,11 +379,7 @@ jobs:
       # Alternativa la Make.com — necesita FACEBOOK_PAGE_TOKEN in Secrets
       # Cum obtii token: vezi scripts/SETUP-MAKE-COM.md sectiunea "Alternativa"
       - name: Postare automata Facebook Page (API direct)
-        if: >
-          github.event.schedule == '0 6 * * *' ||
-          github.event.schedule == '0 10 * * *' ||
-          github.event.schedule == '0 17 * * *' ||
-          github.event_name == 'workflow_dispatch'
+        if: env.IS_FULL_DAILY == 'true'
         continue-on-error: true
         working-directory: scripts
         env:
@@ -391,11 +390,7 @@ jobs:
       # ── 15c. Postare directa Instagram API (daca ai token Meta) ──────────
       # Alternativa la Make.com — necesita INSTAGRAM_ACCESS_TOKEN in Secrets
       - name: Postare automata Instagram Business (API direct)
-        if: >
-          github.event.schedule == '0 6 * * *' ||
-          github.event.schedule == '0 10 * * *' ||
-          github.event.schedule == '0 17 * * *' ||
-          github.event_name == 'workflow_dispatch'
+        if: env.IS_FULL_DAILY == 'true'
         continue-on-error: true
         working-directory: scripts
         env:

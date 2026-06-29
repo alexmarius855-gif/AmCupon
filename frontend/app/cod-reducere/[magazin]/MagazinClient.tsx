@@ -326,6 +326,9 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"/>
                   {utilizatoriActivi} persoane cauta acum
                 </div>
+                <div className="flex items-center gap-1.5 bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs font-semibold px-3 py-1.5 rounded-full">
+                  ✓ Verificat {new Date().toLocaleDateString("ro-RO", { day: "numeric", month: "long", year: "numeric" })}
+                </div>
               </div>
 
               <div className="flex items-center gap-3 flex-wrap">
