@@ -18,6 +18,15 @@
   "oferta": "Electro Weekend 26 - 29 iunie 2026"
  },
  {
+  "magazin": "aronia-charlottenburg.ro",
+  "nume": "Aronia Charlottenburg",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/8498/medium/8498.png",
+  "categorie": "Health & Personal care",
+  "comision": 12.0,
+  "are_cod": true,
+  "oferta": "Flash sale până în 30 iunie 2026"
+ },
+ {
   "magazin": "itgalaxy.ro",
   "nume": "Itgalaxy",
   "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_itgalaxy.ro_1603815076.png",
@@ -27,8 +36,8 @@
   "oferta": "Telefoane mobile"
  },
  {
-  "magazin": "bookzone-ro-9c9bce7e-a8e0-40de-8d7a-afa44b9f3d2a",
-  "nume": "Bookzone Ro 9c9bce7e A8e0 40de 8d7a Afa44b9f3d2a",
+  "magazin": "bookzone.ro",
+  "nume": "Bookzone",
   "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9309/medium/9309.png",
   "categorie": "Books",
   "comision": 10.0,
@@ -63,6 +72,15 @@
   "oferta": "NetStreamSofware"
  },
  {
+  "magazin": "carturesti.ro",
+  "nume": "Carturesti",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11380/medium/11380.png",
+  "categorie": "Books",
+  "comision": 9.0,
+  "are_cod": false,
+  "oferta": "2+1 la colecția Humanitas Fiction"
+ },
+ {
   "magazin": "vapetronic.ro",
   "nume": "Vapetronic",
   "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_vapetronic.ro_1728402751.png",
@@ -72,6 +90,15 @@
   "oferta": "General"
  },
  {
+  "magazin": "librarie.net",
+  "nume": "Librarie",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/10206/medium/10206.png",
+  "categorie": "Books",
+  "comision": 8.0,
+  "are_cod": false,
+  "oferta": "Târgul de Vară 2026"
+ },
+ {
   "magazin": "daedalusonline.eu",
   "nume": "Daedalusonline",
   "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_daedalusonline.eu_1485345410.png",
@@ -79,32 +106,5 @@
   "comision": 7.0,
   "are_cod": false,
   "oferta": "Descoperă beneficiile Daedalus Online"
- },
- {
-  "magazin": "giftspot.ro",
-  "nume": "Giftspot",
-  "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_giftspot.ro_1727711187.png",
-  "categorie": "Online Mall",
-  "comision": 7.0,
-  "are_cod": false,
-  "oferta": "Giftspot.ro - Magazinul de Cadouri Originale și Gadget-uri"
- },
- {
-  "magazin": "pcmadd.com",
-  "nume": "Pcmadd",
-  "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_pcmadd.com_1384803965.png",
-  "categorie": "Electronics IT&C",
-  "comision": 6.0,
-  "are_cod": false,
-  "oferta": "m@dd server"
- },
- {
-  "magazin": "fashiondays.ro",
-  "nume": "Fashiondays",
-  "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_fashiondays.ro_1713947169.jpg",
-  "categorie": "Fashion",
-  "comision": 5.0,
-  "are_cod": false,
-  "oferta": "Summer Offers 19 iun - 6 iul"
  }
 ]
