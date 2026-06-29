@@ -167,10 +167,11 @@ interface Banner2P {
   name: string; category: string; b_type: string;
 }
 
-export default function MagazinClient({ magazin: m, produse = [], similare = [], blogPost = null, banner = null, descriere = null }: {
+export default function MagazinClient({ magazin: m, produse = [], similare = [], comparatii = [], blogPost = null, banner = null, descriere = null }: {
   magazin: Magazin;
   produse?: Produs[];
   similare?: MagazinSimilar[];
+  comparatii?: { slug: string; label: string }[];
   blogPost?: BlogPostMic | null;
   banner?: Banner2P | null;
   descriere?: { titlu: string; paragrafe: string[] } | null;
@@ -782,6 +783,25 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                   </a>
                 );
               })}
+            </div>
+          </section>
+        )}
+
+        {/* ── COMPARATII (X vs Y) — link contextual intern pt SEO ──────────── */}
+        {comparatii.length > 0 && (
+          <section className="mt-10">
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-lg font-black text-white">{nume} vs alte magazine</h2>
+              <Link href="/comparatii" className="text-sm font-semibold text-indigo-400 hover:text-indigo-300">Toate comparatiile →</Link>
+            </div>
+            <div className="grid sm:grid-cols-2 gap-3">
+              {comparatii.map(c => (
+                <Link key={c.slug} href={`/comparatii/${c.slug}`}
+                  className="group flex items-center justify-between gap-3 p-4 bg-slate-900 rounded-xl border border-slate-800 hover:border-cyan-500 transition-all">
+                  <span className="text-sm font-bold text-slate-200 group-hover:text-cyan-300">{c.label}</span>
+                  <span className="text-xs font-semibold text-slate-500 group-hover:text-cyan-400 whitespace-nowrap">Compara →</span>
+                </Link>
+              ))}
             </div>
           </section>
         )}

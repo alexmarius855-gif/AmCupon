@@ -193,6 +193,27 @@ function loadDescriere(slug: string): StoreDesc | null {
   } catch { return null; }
 }
 
+interface ComparatieRaw {
+  slug: string;
+  m1_slug: string;
+  m2_slug: string;
+  n1: string;
+  n2: string;
+}
+
+// Comparatiile care includ acest magazin (pt link contextual intern → SEO)
+function loadComparatii(slug: string): { slug: string; label: string }[] {
+  try {
+    const p = path.join(process.cwd(), "public", "comparisons.json");
+    if (!fs.existsSync(p)) return [];
+    const all: Record<string, ComparatieRaw> = JSON.parse(fs.readFileSync(p, "utf-8"));
+    const s = slug.toLowerCase();
+    return Object.values(all)
+      .filter((c) => c.m1_slug.toLowerCase() === s || c.m2_slug.toLowerCase() === s)
+      .map((c) => ({ slug: c.slug, label: `${c.n1} vs ${c.n2}` }));
+  } catch { return []; }
+}
+
 function loadProducts(slug: string): Produs[] {
   try {
     const p = path.join(process.cwd(), "public", "products.json");
@@ -326,6 +347,7 @@ export default async function PaginaMagazin({
   const blogPost = loadBlogPost(cleanSlug);
   const banner = loadBanner(cleanSlug);
   const descriere = loadDescriere(cleanSlug);
+  const comparatii = loadComparatii(cleanSlug);
 
   // Magazine similare din aceeasi categorie (max 8, prioritate la cele cu promotii)
   const RETELE_AFILIERE = ["profitshare.ro", "2performant.com"];
@@ -479,7 +501,7 @@ export default async function PaginaMagazin({
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(offerList) }} />
       )}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <MagazinClient magazin={m} produse={produse} similare={similare} blogPost={blogPost} banner={banner} descriere={descriere} />
+      <MagazinClient magazin={m} produse={produse} similare={similare} comparatii={comparatii} blogPost={blogPost} banner={banner} descriere={descriere} />
     </>
   );
 }

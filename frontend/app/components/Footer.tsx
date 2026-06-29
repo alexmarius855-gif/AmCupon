@@ -51,6 +51,7 @@ const INFO = [
   { href: "/blog",             label: "Blog & Ghiduri" },
   { href: "/newsletter",       label: "Newsletter gratuit" },
   { href: "/top-reduceri",     label: "Top reduceri" },
+  { href: "/comparatii",       label: "Comparatii magazine" },
   { href: "/toate-magazinele", label: "Toate magazinele" },
   { href: "/confidentialitate",label: "Politica GDPR" },
   { href: "/termeni",          label: "Termeni si conditii" },
