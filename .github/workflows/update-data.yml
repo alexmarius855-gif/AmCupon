@@ -216,6 +216,12 @@ jobs:
         working-directory: scripts
         run: python generate_merchant_priority.py
 
+      # ── 8e. Pagini comparatii SEO (X vs Y luna an) ─────────────────────────
+      - name: Genereaza comparatii magazine (fashiondays vs answear etc.)
+        if: env.IS_FULL_DAILY == 'true'
+        working-directory: scripts
+        run: python generate_comparisons.py
+
       # ── 9. Newsletter zilnic (Brevo SMTP) — DOAR la 08:00 Romania ──────────
       - name: Trimite newsletter zilnic
         if: env.IS_FULL_DAILY == 'true'
@@ -323,6 +329,7 @@ jobs:
           git add frontend/public/products-home.json   || true
           git add frontend/public/recomandate.json     || true
           git add frontend/public/store-descriptions.json || true
+          git add frontend/public/comparisons.json        || true
           git add frontend/public/banner-daily.png     || true
           git add frontend/public/banner-story.png     || true
           git add data/RAPORT-TOP-CASTIG.md            || true

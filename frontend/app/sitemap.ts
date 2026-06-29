@@ -32,6 +32,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     blogPosts = JSON.parse(fs.readFileSync(blogPath, "utf-8"));
   }
 
+  let comparatiiSluguri: string[] = [];
+  const comparatiiPath = path.join(process.cwd(), "public", "comparisons.json");
+  if (fs.existsSync(comparatiiPath)) {
+    comparatiiSluguri = Object.keys(JSON.parse(fs.readFileSync(comparatiiPath, "utf-8")));
+  }
+
   const categoriiSluguri = [...new Set(magazine.map((m) => m.categorie_slug).filter(Boolean))];
 
   return [
@@ -167,6 +173,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/cadouri/sub-200-lei`,     lastModified: new Date(), changeFrequency: "weekly",  priority: 0.85 },
     { url: `${BASE_URL}/cadouri/sub-500-lei`,     lastModified: new Date(), changeFrequency: "weekly",  priority: 0.85 },
     { url: `${BASE_URL}/cadouri/peste-500-lei`,   lastModified: new Date(), changeFrequency: "weekly",  priority: 0.8  },
+
+    // ─── Comparatii magazine ─────────────────────────────────────────────────
+    { url: `${BASE_URL}/comparatii`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.85 },
+    ...comparatiiSluguri.map((slug) => ({
+      url: `${BASE_URL}/comparatii/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.85,
+    })),
 
     // ─── Tool pages ─────────────────────────────────────────────────────────
     { url: `${BASE_URL}/top-reduceri`,            lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
