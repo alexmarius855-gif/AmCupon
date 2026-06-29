@@ -54,6 +54,25 @@ def domain_slug(url: str, fallback: str) -> str:
     return _slugify_name(fallback)
 
 
+# ─── Branduri straine / B2B irelevante pentru public RO ──────────────────────
+# Veneau prin Impact ca noise (hoteluri din Asia, plugin-uri WordPress, prop money
+# pentru filme, CBD US etc.) — linkurile mergeau, dar pe un site de cupoane RO arata
+# spam si nu converteau. Pastram doar branduri pe care un consumator/creator RO
+# le-ar folosi real (VPN, antivirus, hosting, gadget-uri, cursuri, travel, fintech,
+# unelte video). Editabil: adauga/scoate domenii dupa nevoie.
+IRRELEVANT_FOREIGN = {
+    "anantara.com", "arkuda.digital", "bdthemes.com", "britishcouncil.org",
+    "cariloha.com", "clean.email", "cuyana.com", "debutify.com", "getmailbird.com",
+    "hubspot.com", "justfit.app", "livelarq.com", "magoosh.com", "martinic.com",
+    "maxbone.com", "metabox.io", "neliosoftware.com", "nuleafnaturals.com",
+    "propmoney.com", "sorare.com", "sportsline.com", "tempo.fit",
+    "terminalserviceplus.com", "termly.io", "ticketliquidator.com", "treezy.de",
+    "tribesigns.com", "uperfectmonitor.com", "uphold.com", "vistasocial.com",
+    "vivaia.com", "wildbird.com", "wyndhamhotels.com", "rumpl.com", "alamy.com",
+    "oreilly.com", "esimx.com", "domain.com", "bluehost.com", "youngelectricbikes.com",
+}
+
+
 def main():
     by_slug: dict[str, dict] = {}  # slug curat -> magazin (pastram cel mai bun)
 
@@ -88,6 +107,10 @@ def main():
             # Slug curat, URL-safe, derivat din domeniu (consistent cu tot site-ul)
             slug = domain_slug(url_val, raw)
             if not slug or len(slug) < 2 or slug.strip("-.") == "":
+                invalide += 1
+                continue
+            if slug in IRRELEVANT_FOREIGN:
+                # brand strain/B2B irelevant pentru public RO — il scoatem
                 invalide += 1
                 continue
             magazin["magazin"] = slug  # suprascriem cu forma curata

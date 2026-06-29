@@ -53,7 +53,7 @@ OUT_DIR = DATA / "video-today"
 DIGEST_JSON = PUBLIC / "digest-today.json"
 BG_STORY = PUBLIC / "banner-story.png"   # 1080x1920, brand
 
-VOICE_DEFAULT = "ro-RO-EmilNeural"
+VOICE_DEFAULT = "ro-RO-AlinaNeural"  # voce feminina RO (schimba cu --voice ro-RO-EmilNeural)
 
 # Cate oferte intra in clip (scurt = mai bine retinut)
 N_DEALS = 3
