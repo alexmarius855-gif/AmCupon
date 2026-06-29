@@ -98,6 +98,20 @@ jobs:
         working-directory: scripts
         run: python merge_platforms.py
 
+      # ── 5a. Import promotii din CSV 2Performant (data/promotii_2p.csv) ─────
+      # Multe programe acceptate cu promotii reale NU vin prin API. Importul
+      # adauga promotiile + creeaza magazine noi cu link afiliat 2P real.
+      # Expira automat promotiile trecute. Alex inlocuieste CSV-ul cand exporta.
+      - name: Import promotii CSV 2Performant
+        continue-on-error: true
+        working-directory: scripts
+        run: |
+          if [ -f ../data/promotii_2p.csv ]; then
+            python import_csv_promotii.py
+          else
+            echo "data/promotii_2p.csv lipsa — skip import CSV"
+          fi
+
       # ── 5b. Alerte de pret per magazin (Brevo, ALERT_STORES) ────────────────
       - name: Verifica si trimite alerte cod nou pe magazin
         continue-on-error: true

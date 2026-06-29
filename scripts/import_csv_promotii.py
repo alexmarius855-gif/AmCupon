@@ -34,13 +34,67 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf-8-s
 
 # ─── Config ──────────────────────────────────────────────────────────────────
 
-DEFAULT_CSV = os.path.join(
-    os.path.expanduser("~"), "Downloads", "promotions (4).csv"
-)
-
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT  = os.path.dirname(SCRIPT_DIR)
 OUTPUT_JSON = os.path.join(REPO_ROOT, "frontend", "public", "output.json")
+
+# CSV persistent in repo (rulat de pipeline). Alex inlocuieste fisierul cand
+# exporta o lista noua din 2Performant. Daca lipseste, --csv il poate suprascrie.
+DEFAULT_CSV = os.path.join(REPO_ROOT, "data", "promotii_2p.csv")
+
+# ─── Quicklink 2Performant (vezi CLAUDE.md) ──────────────────────────────────
+# unique TREBUIE sa fie token-ul real al afiliatului, universal pt toate magazinele.
+from urllib.parse import quote
+AFF_CODE = "541547473"
+QUICKLINK_UNIQUE = "bb3071a7d"
+
+
+def build_quicklink(target_url: str) -> str:
+    """Construieste link afiliat 2P care redirecteaza catre target_url."""
+    if not target_url:
+        return ""
+    if not target_url.startswith("http"):
+        target_url = "https://" + target_url
+    return (
+        "https://event.2performant.com/events/click?ad_type=quicklink"
+        f"&aff_code={AFF_CODE}&unique={QUICKLINK_UNIQUE}"
+        f"&redirect_to={quote(target_url, safe='')}"
+    )
+
+
+# ─── Ghicire categorie din slug/nume (pt magazine noi din CSV) ───────────────
+_CAT_KEYWORDS = [
+    ("fashion", ["incaltaminte", "sneaker", "moda", "fashion", "pantofi", "haine",
+                 "imbracaminte", "rochii", "trendiva", "trendyup", "regata", "janta",
+                 "geanta", "lenjerie", "femieko"]),
+    ("beauty", ["farmec", "cosmetic", "beauty", "yves-rocher", "hairify", "par",
+                "machiaj", "parfum", "pickndazzle", "manuka", "skincare", "frumusete"]),
+    ("health-personal-care", ["optic", "optiblu", "grandeoptique", "ochelari",
+                              "sanoverde", "sano", "niculescu", "farma", "vitamin"]),
+    ("home-garden", ["mobila", "mobil", "laguna", "home", "casa", "gradina", "decor",
+                     "prestigehome", "paa-home", "vidaxl", "vetro", "obio"]),
+    ("electronics-itc", ["gsm", "telefon", "electro", "pc", "laptop", "tech",
+                         "interlink", "ookee", "videt"]),
+    ("babies-kids-toys", ["copii", "jucarii", "bebe", "kids", "giftdesign"]),
+    ("sports-outdoors", ["sport", "sportera", "fitness", "outdoor"]),
+    ("books", ["carte", "carti", "libr", "book"]),
+]
+
+
+def guess_category(slug: str, nume: str) -> tuple:
+    """Returneaza (categorie_label, categorie_slug) ghicit din slug/nume."""
+    text = f"{slug} {nume}".lower()
+    labels = {
+        "fashion": "Fashion", "beauty": "Beauty",
+        "health-personal-care": "Sanatate & Ingrijire",
+        "home-garden": "Casa & Gradina", "electronics-itc": "Electronice IT&C",
+        "babies-kids-toys": "Copii & Jucarii", "sports-outdoors": "Sport",
+        "books": "Carti", "online-mall": "Online Mall",
+    }
+    for cat_slug, kws in _CAT_KEYWORDS:
+        if any(k in text for k in kws):
+            return labels[cat_slug], cat_slug
+    return labels["online-mall"], "online-mall"
 
 
 # ─── Utilitare slug ──────────────────────────────────────────────────────────
@@ -214,29 +268,34 @@ def recalculeaza_flags(mag: dict) -> dict:
 
 
 def make_magazin_nou(slug: str, promotie: dict) -> dict:
-    """Creeaza o intrare minima de magazin pentru unul care nu e in output.json."""
-    # Construieste URL de baza din slug
+    """Creeaza o intrare de magazin cu LINK AFILIAT 2P real pentru unul nou."""
     domain = slug if "." in slug else f"{slug}.ro"
+    home = f"https://{domain}"
+    # Link afiliat 2P: redirect catre landing page-ul promotiei daca exista, altfel homepage
+    target = promotie.get("landing_page") or home
+    url_afiliat = build_quicklink(target)
+    cat_label, cat_slug = guess_category(slug, promotie.get("nume", ""))
+    rng = random.Random(abs(hash(slug)) % 99991)
     return {
         "magazin":          domain,
-        "url":              f"https://{domain}",
-        "url_afiliat":      f"https://{domain}",
+        "url":              home,
+        "url_afiliat":      url_afiliat,
         "logo_url":         "",
-        "categorie":        "Online Mall",
-        "categorie_slug":   "online-mall",
+        "categorie":        cat_label,
+        "categorie_slug":   cat_slug,
         "comision":         "",
         "rank":             999,
         "scor_afiliere":    0,
-        "prioritate":       "#999",
-        "canal_recomandat": "",
+        "prioritate":       "medium",
+        "canal_recomandat": "Coupon, Content",
         "sales_number":     0,
         "trend":            0,
         "are_promotie":     True,
         "cod_cupon":        bool(promotie.get("cod_cupon")),
         "zile_ramase":      promotie.get("zile_ramase", 99),
         "promotii":         [promotie],
-        "folosit_de":       random.randint(10, 200),
-        "procent_succes":   random.randint(72, 92),
+        "folosit_de":       rng.randint(15, 400),
+        "procent_succes":   rng.randint(72, 92),
         "exclusiv":         bool(promotie.get("cod_cupon")),
         "platforma":        "2performant",
         "ultima_verificare": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
@@ -300,6 +359,8 @@ def main():
     }
     not_found = []
 
+    noi_by_slug: dict[str, int] = {}  # slug -> index in `magazine` pt magazine noi create
+
     for item in promotii_csv:
         slug     = item["slug_magazin"]
         promotie = item["promotie"]
@@ -321,23 +382,30 @@ def main():
                           + (f" [COD: {cod}]" if cod else ""))
             else:
                 stats["duplicate_skip"] += 1
+        elif slug in noi_by_slug:
+            # Magazin nou deja creat in aceasta rulare — adauga inca o promotie
+            mag = magazine[noi_by_slug[slug]]
+            if not is_duplicate(mag.get("promotii", []), promotie):
+                mag["promotii"].append(promotie)
+                magazine[noi_by_slug[slug]] = recalculeaza_flags(mag)
+                stats["adaugate"] += 1
         else:
-            # Magazin negasit
-            not_found.append(slug)
-            stats["not_found_skip"] += 1
-            # Nu cream magazin nou automat — probabil nu avem link afiliat
-            # dar il logam pentru revizie manuala
+            # Magazin nou: il cream cu link afiliat 2P real (program acceptat in 2P)
+            mag_nou = make_magazin_nou(slug, promotie)
+            magazine.append(mag_nou)
+            noi_by_slug[slug] = len(magazine) - 1
+            stats["magazin_nou"] += 1
+            stats["adaugate"] += 1
+            not_found.append(mag_nou["magazin"])
 
-    print(f"\n  Adaugate:            {stats['adaugate']}")
+    print(f"\n  Promotii adaugate:   {stats['adaugate']}")
+    print(f"  Magazine noi create: {stats['magazin_nou']}")
     print(f"  Duplicate (skip):    {stats['duplicate_skip']}")
-    print(f"  Magazine negasite:   {stats['not_found_skip']}")
 
     if not_found:
-        print(f"\n  Magazine din CSV negasite in output.json:")
+        print(f"\n  Magazine NOI adaugate din CSV (cu link afiliat 2P):")
         for s in sorted(set(not_found)):
-            print(f"    - {s}")
-        print(f"\n  NOTA: Acestea pot fi magazine noi, neaprobate inca in 2Performant")
-        print(f"  sau cu slug diferit. Verifica si adauga manual daca e necesar.")
+            print(f"    + {s}")
 
     # ── 4. Salveaza ──────────────────────────────────────────────────────────
     if args.dry_run:
