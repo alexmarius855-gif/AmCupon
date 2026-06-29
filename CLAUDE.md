@@ -13,6 +13,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
 **UPDATE 29.06.2026:**
+- **Flux video AI zilnic LIVE** (`scripts/generate_video_daily.py`) — transforma `digest-today.json` intr-un clip vertical 1080x1920 gata de postat pe TikTok/Reels/Shorts, **100% gratuit, fara niciun API key platit**. Lant: digest → script vocal scurt (~40s) → **edge-tts** (voce neural RO `ro-RO-EmilNeural` + subtitrari sincronizate) → **ffmpeg** (MP4 cu fundal brand curat dark indigo/cyan generat cu PIL — ZERO portocaliu — + subtitrari arse in zona centrala). Degradare in straturi: script+captions mereu, voce+SRT daca edge-tts, MP4 daca ffmpeg. Output in `data/video-today/` (gitignored); pipeline copiaza `video-today.mp4` + `video-captions.txt` + `video-script.txt` in `frontend/public/` → descarcabile la `amcupon.ro/video-today.mp4`. Ruleaza in workflow doar dimineata (`0 6` cron + dispatch), un clip/zi. Subtitrari: `.ass` cu PlayRes 1080x1920 (pozitionare exacta), NU SRT+force_style (rezolutie implicita 384x288 → MarginV iese din cadru). edge-tts emite **SentenceBoundary** nu WordBoundary — colectam ambele si spargem in cuvinte cu timing proportional. Banner-story.png NU se foloseste ca fundal (e plin de portocaliu); fundalul video se genereaza separat cu `make_video_bg()`.
 - **Profitshare meta tag validare** adaugat in `layout.tsx` (`verification.other["profitshareid"] = "55a94904302585d3a4d01658d993fd4d"`). Apasa "Valideaza" in dashboard-ul Profitshare dupa deploy pentru a activa accesul la 62 magazine PS.
 - **Pagina `/pescuit` LIVE** — nisa echipamente pescuit (Daiwa, Okuma, Trabucco, Prologic etc.), hero emerald, 6 categorii, SEO text. `pescar-expert.ro` aplicat pe 2Performant (aprobare ~31 zile). Pana atunci fallback pe decathlon.ro. Adaugat in `sitemap.ts`.
 - **Pagina `/radar` LIVE** (28.06) — rubrica editoriala zilnica cu voce. `generate_daily_digest.py` in pipeline, `/radar` in sitemap.
@@ -74,12 +75,17 @@ Telegram      → radar zilnic (copy-paste din digest-today.txt)
 | Zboruri/travel | esky.ro, Kiwi (PS) | Mare — volum mare |
 | Mobilier | vidaXL, IKEA-like (PS) | Mediu |
 
-### Video AI — flux continut fara fata
+### Video AI — flux continut fara fata (AUTOMATIZAT 29.06.2026)
 ```
-Script (Claude haiku) → Voce (ElevenLabs gratuit 10k/luna)
-→ Video (CapCut AI / InVideo) → Subtitluri auto → TikTok/Reels/Shorts
-Sursa zilnica: data/digest-today.txt (deja generat de pipeline)
+digest-today.json → script vocal (generate_video_daily.py)
+→ Voce RO + subtitrari (edge-tts, GRATIS fara cont)
+→ MP4 vertical 1080x1920 (ffmpeg, fundal brand PIL fara portocaliu)
+→ amcupon.ro/video-today.mp4  → descarci → postezi pe TikTok/Reels/Shorts
 ```
+Ruleaza automat in pipeline dimineata. Caption-uri per platforma in
+`amcupon.ro/video-captions.txt`. **Singurul pas manual ramas: descarci MP4-ul
+si il urci pe platforme** (postarea video nu se poate automatiza fara API-uri
+platite/risc de ban). Schimba vocea cu `--voice ro-RO-AlinaNeural` (feminin).
 
 ---
 
@@ -249,6 +255,7 @@ Fiecare pagină dinamică are două fișiere:
 | `scripts/fetch_product_feeds.py` | Descărcare produse din API feed-uri |
 | `scripts/send_newsletter.py` | Campanie Brevo către abonați (template indigo/cyan) |
 | `scripts/check_price_alerts.py` | Alerte țintite per magazin — diff `output.json` vs `data/price_alert_snapshot.json`, trimite doar abonaților cu `ALERT_STORES` matching |
+| `scripts/generate_video_daily.py` | Flux video AI: `digest-today.json` → script vocal + edge-tts (voce RO + subtitrări) + ffmpeg → MP4 vertical TikTok/Reels/Shorts. Fundal brand curat (PIL, fără portocaliu). Output `data/video-today/`, copiat în public/ de pipeline |
 | `data/price_alert_snapshot.json` | Snapshot coduri active per magazin, folosit pentru detectarea codurilor noi |
 | `frontend/lib/supabase.ts` | Client Supabase (proiect `ktfoaqprezeqzoeuohnh`) pentru `reviews` — URL + cheie anon hardcodate ca fallback |
 | `frontend/app/cod-reducere/[magazin]/ReviewSection.tsx` | Tab Recenzii pe pagina de magazin — citire + formular submit, moderare manuală din Supabase dashboard |

@@ -29,6 +29,9 @@ amcupon-extension.zip
 *.log
 data/*_debug.json
 
+# Flux video — folder de lucru (livrabilele finale merg in frontend/public/)
+data/video-today/
+
 # OS
 .DS_Store
 Thumbs.db

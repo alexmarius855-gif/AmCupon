@@ -88,17 +88,20 @@ Telegram        radar zilnic                     Zero (copy-paste)
 
 ---
 
-## Flux video AI (fara fata, fara filmare)
+## Flux video AI (fara fata, fara filmare) — AUTOMATIZAT 29.06.2026
 
 ```
-1. digest-today.txt  →  script 30s (Claude haiku ~$0.001)
-2. script            →  voce MP3 (ElevenLabs gratuit 10k char/luna)
-3. voce + imagini    →  video (CapCut AI / InVideo)
-4. video             →  subtitluri auto + export
-5. export            →  TikTok / Instagram Reels / YouTube Shorts
+1. digest-today.json  →  script vocal scurt    (generate_video_daily.py)
+2. script             →  voce RO + subtitrari   (edge-tts, GRATIS fara cont)
+3. voce + fundal brand→  MP4 vertical 1080x1920 (ffmpeg, fundal PIL fara portocaliu)
+4. rezultat           →  amcupon.ro/video-today.mp4 + caption-uri per platforma
+5. MANUAL (Alex)      →  descarci MP4 → postezi pe TikTok / Reels / Shorts
 ```
 
-Cost total per clip: ~$0 (in limite gratuite). Rezultat: trafic zilnic pe AmCupon.
+Cost total per clip: **$0** (edge-tts + ffmpeg, fara niciun API key platit).
+Ruleaza automat in pipeline dimineata. Singurul pas manual: descarci si urci
+clipul (postarea video nu se automatizeaza fara API-uri platite / risc de ban).
+Caption-uri gata de copiat: `amcupon.ro/video-captions.txt`.
 
 ---
 

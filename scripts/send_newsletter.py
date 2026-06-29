@@ -8,7 +8,7 @@ Utilizare:
 
 Env vars necesare:
   BREVO_API_KEY     -- xkeysib-... din Brevo > Settings > API Keys (pentru campanii + abonati)
-  BREVO_SMTP_USER   -- ac67f7001@smtp-brevo.com (pentru --test via SMTP)
+  BREVO_SMTP_USER   -- SMTP login Brevo (pentru --test via SMTP)
   BREVO_SMTP_PASS   -- xsmtpsib-... (pentru --test via SMTP)
   BREVO_LIST_ID     -- ID lista contacte Brevo (default: 2)
 

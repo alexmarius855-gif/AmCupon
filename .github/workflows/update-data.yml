@@ -242,6 +242,27 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python generate_daily_digest.py
 
+      # ── 11.6 Flux video AI zilnic — TikTok / Reels / Shorts ──────────────
+      # digest-today.json -> script vocal -> edge-tts (voce RO + subtitrari) ->
+      # ffmpeg (MP4 vertical 1080x1920 pe brand). 100% gratuit, fara API key platit.
+      # Ruleaza doar dimineata (un clip/zi e suficient). ffmpeg e preinstalat in
+      # ubuntu-latest; edge-tts vine din requirements.txt.
+      - name: Genereaza video zilnic (TikTok/Reels/Shorts)
+        if: github.event.schedule == '0 6 * * *' || github.event_name == 'workflow_dispatch'
+        continue-on-error: true
+        working-directory: scripts
+        run: |
+          python generate_video_daily.py
+          # Copiaza in public/ ca sa fie descarcabile de pe telefon (amcupon.ro/...)
+          if [ -f ../data/video-today/video-today.mp4 ]; then
+            cp ../data/video-today/video-today.mp4 ../frontend/public/video-today.mp4
+            cp ../data/video-today/captions.txt    ../frontend/public/video-captions.txt
+            cp ../data/video-today/script.txt      ../frontend/public/video-script.txt
+            echo "Video zilnic gata: https://amcupon.ro/video-today.mp4"
+          else
+            echo "Video negenerat (edge-tts/ffmpeg indisponibil) — skip copiere"
+          fi
+
       # ── 12. Genereaza bannere (Pillow) ────────────────────────────────────
       # Salveaza in data/ SI frontend/public/ (servit de Vercel)
       - name: Genereaza bannere sociale (Pillow)
@@ -293,6 +314,9 @@ jobs:
           git add data/social-content.json             || true
           git add data/social-content-today.txt        || true
           git add "data/social-nisa-*.txt"             || true
+          git add frontend/public/video-today.mp4      || true
+          git add frontend/public/video-captions.txt   || true
+          git add frontend/public/video-script.txt     || true
           git add data/banner_daily.png                || true
           git add data/banner_story.png                || true
           git add data/indexnow_seen.json               || true
