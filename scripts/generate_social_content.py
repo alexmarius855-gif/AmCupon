@@ -20,8 +20,13 @@ Output:
 
 import json
 import random
+import sys
 from pathlib import Path
 from datetime import datetime
+
+# Windows: forteaza UTF-8 pe stdout (altfel emoji-urile crapa pe cp1250)
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
 
 # ── Date ──────────────────────────────────────────────────────────────────────
 DATA_PATH = Path(__file__).parent.parent / "frontend" / "public" / "output.json"
@@ -107,22 +112,82 @@ NISE = {
         "categorii": ["travel"],
         "cta": "Vacante mai ieftine cu coduri AmCupon",
     },
+    # ── Nișe digitale (comision recurent — cel mai bun cash-flow) ──────────────
+    "software-ai": {
+        "label": "Software & Unelte AI",
+        "emoji": "🤖",
+        "hashtags": "#ai #inteligentaartificiala #software #productivitate #tools #romania #tech",
+        "categorii": ["software-business", "ai-tools"],
+        "cta": "Cele mai bune unelte AI și software, multe cu reducere de lansare",
+    },
+    "hosting": {
+        "label": "Hosting & Domenii Web",
+        "emoji": "🌐",
+        "hashtags": "#hosting #website #webdesign #domenii #wordpress #romania #online",
+        "categorii": ["hosting"],
+        "cta": "Hosting rapid și ieftin pentru site-ul tău, plătești o dată folosești ani",
+    },
+    "security": {
+        "label": "Securitate & VPN",
+        "emoji": "🛡️",
+        "hashtags": "#vpn #antivirus #securitate #confidentialitate #cybersecurity #romania",
+        "categorii": ["antivirus-securitate", "software-business"],
+        "cta": "VPN și antivirus la reducere, protecție pentru toate dispozitivele",
+    },
+    "esim": {
+        "label": "eSIM & Date Mobile Călătorie",
+        "emoji": "📡",
+        "hashtags": "#esim #calatorie #datemobile #roaming #travel #vacanta #romania",
+        "categorii": ["telecom", "travel"],
+        "cta": "Date mobile ieftine în 190+ țări fără SIM fizic",
+    },
 }
 
 
 def get_magazine_nisa(nisa_key: str, nisa_cfg: dict) -> list[dict]:
     categorii = nisa_cfg["categorii"]
-    magazine  = [
-        m for m in toate_magazine
-        if m.get("are_promotie")
-        and m.get("promotii")
-        and m.get("categorie_slug") in categorii
-        and " " not in m.get("magazin", "")
-        and m.get("procent_succes", 0) >= 40
-        and m.get("magazin") not in {"profitshare.ro", "2performant.com"}
-    ]
-    magazine.sort(key=lambda x: (-x.get("scor_final", 0), -(1 if x.get("cod_cupon") else 0)))
-    return magazine[:8]
+    excluse = {"profitshare.ro", "2performant.com"}
+
+    def in_categorie(m):
+        return (
+            m.get("categorie_slug") in categorii
+            and " " not in m.get("magazin", "")
+            and m.get("procent_succes", 0) >= 40
+            and m.get("magazin") not in excluse
+        )
+
+    # Prioritar: magazine cu promotii active (au cod/oferta de promovat)
+    cu_promotii = [m for m in toate_magazine if m.get("are_promotie") and m.get("promotii") and in_categorie(m)]
+    cu_promotii.sort(key=lambda x: (-x.get("scor_final", 0), -(1 if x.get("cod_cupon") else 0)))
+
+    # Daca nisa are putine promotii (tipic nisele de comision: VPN/hosting/AI),
+    # completeaza cu magazinele cu cel mai bun comision — generam postari de tip
+    # "recomandare" (fara cod, dar cu link afiliat care castiga comision).
+    if len(cu_promotii) < 3:
+        fara_promotii = [
+            m for m in toate_magazine
+            if not (m.get("are_promotie") and m.get("promotii"))
+            and in_categorie(m)
+        ]
+        fara_promotii.sort(key=lambda x: -x.get("scor_final", 0))
+        existente = {m.get("magazin") for m in cu_promotii}
+        for m in fara_promotii:
+            if m.get("magazin") not in existente:
+                # Promotie sintetica de tip "recomandare" — generatoarele au nevoie de promotii[0].
+                m = dict(m)
+                m["_recomandare"] = True  # flag: postare de tip recomandare, NU reducere
+                m["promotii"] = [{
+                    "nume": f"Recomandare {nume(m['magazin'])}",
+                    "descriere": nisa_cfg.get("cta", "Ofertă recomandată"),
+                    "cod_cupon": "",
+                    "landing_page": m.get("url", ""),
+                    "zile_ramase": 0,
+                }]
+                cu_promotii.append(m)
+            if len(cu_promotii) >= 8:
+                break
+
+    return cu_promotii[:8]
 
 
 def nume(slug: str) -> str:
@@ -130,14 +195,13 @@ def nume(slug: str) -> str:
 
 
 def format_discount(m: dict) -> str:
+    # Magazinele de recomandare (fara promotie reala): NU afisam comisionul ca "cashback"
+    # — ar fi inselator si ar dezvalui marja. Folosim un mesaj de recomandare onest.
+    if m.get("_recomandare"):
+        return "Recomandat de AmCupon.ro"
     if m.get("promotie"):
         txt = m["promotie"]
         return txt[:80] + "..." if len(txt) > 80 else txt
-    if m.get("comision"):
-        import re
-        nums = [float(x) for x in re.findall(r"[\d.]+", m["comision"])]
-        if nums:
-            return f"Cashback pana la {max(nums):.0f}%"
     return "Oferta speciala"
 
 
@@ -152,7 +216,22 @@ def gen_tiktok(m: dict, nisa_cfg: dict) -> str:
     emoji  = nisa_cfg["emoji"]
     ht     = nisa_cfg["hashtags"]
 
-    if cod:
+    if m.get("_recomandare"):
+        return f"""🎬 SCRIPT TIKTOK — {n} ({nisa_cfg['label']})
+
+HOOK (0-3 sec):
+"{emoji} Cauti cea mai buna varianta de {nisa_cfg['label'].lower()}? Uite ce recomand!"
+
+BODY (3-25 sec):
+"{n} e una dintre cele mai bune optiuni acum. {nisa_cfg['cta']}.
+Pe AmCupon.ro gasesti recomandarea completa si link direct."
+
+CTA (25-30 sec):
+"Link in bio → amcupon.ro. Dai follow pentru recomandari zilnice!"
+
+HASHTAG-URI:
+{ht} #recomandare #amcupon #review"""
+    elif cod:
         return f"""🎬 SCRIPT TIKTOK — {n} ({nisa_cfg['label']})
 
 HOOK (0-3 sec):
@@ -195,6 +274,18 @@ def gen_instagram(m: dict, nisa_cfg: dict) -> str:
     emoji  = nisa_cfg["emoji"]
     ht     = nisa_cfg["hashtags"]
 
+    if m.get("_recomandare"):
+        lines = [f"{emoji} {n} — recomandarea AmCupon pentru {nisa_cfg['label']}", ""]
+        lines.append(f"✅ {nisa_cfg['cta']}")
+        lines += [
+            "",
+            f"👉 {SITE_URL}/cod-reducere/{slug}",
+            "",
+            ht,
+            "#recomandare #amcupon #review",
+        ]
+        return "📸 INSTAGRAM CAPTION — " + n + "\n\n" + "\n".join(lines)
+
     lines  = [f"{emoji} Cod reducere {n} activ în {LUNA} {AN}!", ""]
     lines.append(f"✅ {disc}")
     if cod:
@@ -222,15 +313,21 @@ def gen_pinterest(m: dict, nisa_cfg: dict) -> str:
     titlu = promo.get("nume", "promotie activa")
     slug  = m.get("magazin", "")
 
-    titlu_pin = f"Cod Reducere {n} {LUNA} {AN} — Voucher Verificat"
-    if cod:
-        titlu_pin = f"Cod Reducere {n}: {cod} | {LUNA} {AN}"
-
-    desc = (
-        f"{titlu_pin}. {titlu}. "
-        f"Codul de reducere {n} verificat si actualizat pe AmCupon.ro. "
-        f"{nisa_cfg['cta']}. Economiseste acum!"
-    )
+    if m.get("_recomandare"):
+        titlu_pin = f"{n} — Cea mai buna alegere {LUNA} {AN} | {nisa_cfg['label']}"
+        desc = (
+            f"{titlu_pin}. {nisa_cfg['cta']}. "
+            f"Recomandare verificata pe AmCupon.ro cu link direct. Vezi detalii!"
+        )
+    else:
+        titlu_pin = f"Cod Reducere {n} {LUNA} {AN} — Voucher Verificat"
+        if cod:
+            titlu_pin = f"Cod Reducere {n}: {cod} | {LUNA} {AN}"
+        desc = (
+            f"{titlu_pin}. {titlu}. "
+            f"Codul de reducere {n} verificat si actualizat pe AmCupon.ro. "
+            f"{nisa_cfg['cta']}. Economiseste acum!"
+        )
 
     return f"""📌 PINTEREST PIN — {n}
 

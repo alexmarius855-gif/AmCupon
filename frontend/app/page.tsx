@@ -55,60 +55,6 @@ const CATEGORII = [
   { slug: "games",                 emoji: "🎮", label: "Jocuri & Gaming", desc: "Jocuri video & console",        from: "#6366f1", to: "#0f172a" },
 ];
 
-const SECTIUNI_SPECIALE = [
-  { href: "/top",          emoji: "🏆", label: "Top Produse",      desc: "Review-uri laptopuri, telefoane",   gradient: "from-slate-800 to-slate-900" },
-  { href: "/gadgets",      emoji: "📡", label: "Gadgets & Tech",   desc: "Smartwatch, casti, drone",         gradient: "from-blue-500 to-indigo-600" },
-  { href: "/laptop",       emoji: "💻", label: "Laptop Ieftin",    desc: "Gaming, business, student",        gradient: "from-blue-700 to-indigo-800" },
-  { href: "/telefoane",    emoji: "📲", label: "Telefoane",        desc: "Samsung, iPhone, Xiaomi reducere", gradient: "from-teal-600 to-cyan-700" },
-  { href: "/gaming",       emoji: "🎮", label: "Gaming PC",        desc: "Placi video, laptop gaming, RTX",  gradient: "from-purple-700 to-indigo-800" },
-  { href: "/antivirus",    emoji: "🛡️", label: "Antivirus",        desc: "Bitdefender, Norton, ESET -70%",   gradient: "from-red-700 to-rose-800" },
-  { href: "/smart-home",   emoji: "🏠", label: "Smart Home",       desc: "Becuri, prize, camere WiFi",       gradient: "from-indigo-600 to-violet-700" },
-  { href: "/fashion",      emoji: "👗", label: "Fashion & Haine",  desc: "FashionDays, Answear, H&M",        gradient: "from-purple-500 to-fuchsia-600" },
-  { href: "/casa",         emoji: "🏡", label: "Casa & Gradina",   desc: "Dedeman, IKEA, Leroy Merlin",      gradient: "from-green-600 to-teal-600" },
-  { href: "/moto",         emoji: "🏍️", label: "Auto-Moto",        desc: "Piese, accesorii, anvelope",        gradient: "from-slate-600 to-gray-800" },
-  { href: "/idei-cadouri", emoji: "🎁", label: "Idei Cadouri",     desc: "Cadoul perfect la pret mic",        gradient: "from-pink-500 to-purple-600" },
-  { href: "/flori",        emoji: "💐", label: "Flori & Buchete",  desc: "Floria, livrare rapida flori",      gradient: "from-rose-500 to-fuchsia-600" },
-  { href: "/farmacie",     emoji: "💊", label: "Farmacie Online",  desc: "Dr. Max, Vegis, Catena",            gradient: "from-green-500 to-teal-600" },
-  { href: "/sport",        emoji: "🏃", label: "Sport & Outdoor",  desc: "Decathlon, Hervis, Intersport",     gradient: "from-indigo-500 to-violet-600" },
-  { href: "/copii",        emoji: "👶", label: "Copii & Jucarii",  desc: "Noriel, Bebetei, Smyths",           gradient: "from-cyan-400 to-indigo-500" },
-  { href: "/frumusete",    emoji: "💄", label: "Beauty",           desc: "Notino, Douglas, Sephora",          gradient: "from-pink-400 to-rose-600" },
-  { href: "/sanatate",     emoji: "🌿", label: "Sanatate",         desc: "Vitamine, naturiste, suplimente",   gradient: "from-green-500 to-teal-600" },
-  { href: "/animale",      emoji: "🐾", label: "Animale",          desc: "Petmart, Petmax, hrana animale",    gradient: "from-violet-500 to-indigo-600" },
-  { href: "/bijuterii",    emoji: "💍", label: "Bijuterii",        desc: "Teilor, Pandora, Glamira",          gradient: "from-rose-500 to-pink-600" },
-  { href: "/jocuri",       emoji: "🎮", label: "Jocuri & Gaming",  desc: "Console, jocuri, accesorii PC",     gradient: "from-violet-600 to-indigo-700" },
-  { href: "/supermarket",  emoji: "🛒", label: "Supermarket",      desc: "Carrefour, Bringo, Freshful",       gradient: "from-blue-500 to-cyan-600" },
-  { href: "/calatorie",    emoji: "✈️", label: "Vacante & Travel", desc: "Booking, Airbnb, Trip.com",         gradient: "from-sky-500 to-blue-600" },
-  { href: "/servicii",     emoji: "⚙️", label: "Servicii Online",  desc: "Software, hosting, cursuri, VPN",   gradient: "from-emerald-600 to-teal-700" },
-  { href: "/vpn",          emoji: "🔒", label: "VPN & Securitate", desc: "NordVPN, Surfshark, ExpressVPN",    gradient: "from-blue-700 to-indigo-800" },
-  { href: "/hosting",      emoji: "🌐", label: "Hosting Web",      desc: "Hostinger, SiteGround, Cloudways",  gradient: "from-violet-600 to-purple-700" },
-  { href: "/temu",         emoji: "🛍️", label: "Temu",             desc: "Milioane produse la preturi mici",  gradient: "from-indigo-600 to-red-500" },
-  { href: "/shein",        emoji: "👗", label: "SHEIN",            desc: "Fashion global, mii noutati zilnic", gradient: "from-gray-700 to-gray-900" },
-  { href: "/trendyol",     emoji: "🧡", label: "Trendyol",         desc: "Marketplace turcesc in Romania",    gradient: "from-blue-400 to-indigo-500" },
-  { href: "/black-friday", emoji: "🖤", label: "Black Friday",     desc: "Cele mai mari reduceri",            gradient: "from-gray-900 to-black" },
-  { href: "/craciun",      emoji: "🎄", label: "Craciun",          desc: "Oferte de sarbatori",               gradient: "from-red-600 to-green-700" },
-  { href: "/categorii",    emoji: "📂", label: "Toate categoriile",desc: "Exploreaza tot",                    gradient: "from-indigo-600 to-violet-600" },
-];
-
-const CATEGORII_INTL = [
-  { href: "/gaming",          emoji: "🎮", label: "PC Gaming",         desc: "Laptop gaming, placi video RTX",     from: "#7c3aed", to: "#4338ca", badge: "" },
-  { href: "/laptop",          emoji: "💻", label: "Laptop Ieftin",     desc: "Gaming, business, student",          from: "#1d4ed8", to: "#4338ca", badge: "" },
-  { href: "/telefoane",       emoji: "📲", label: "Telefoane",         desc: "Samsung, iPhone, Xiaomi reducere",   from: "#0d9488", to: "#0284c7", badge: "" },
-  { href: "/smart-home",      emoji: "🏠", label: "Casa Smart",        desc: "Becuri, camere, termostate WiFi",    from: "#4f46e5", to: "#7c3aed", badge: "" },
-  { href: "/antivirus",       emoji: "🛡️", label: "Antivirus",         desc: "Bitdefender, Norton, ESET -70%",     from: "#dc2626", to: "#9f1239", badge: "" },
-  { href: "/instrumente-seo", emoji: "📊", label: "Instrumente SEO",   desc: "Semrush, Ahrefs, Moz Pro",           from: "#059669", to: "#0d9488", badge: "NEW" },
-  { href: "/trading",         emoji: "📈", label: "Trading & Invest",  desc: "XTB, Binance, eToro — 0% comision",  from: "#065f46", to: "#1e40af", badge: "NEW" },
-  { href: "/vpn",             emoji: "🔒", label: "VPN & Privacy",     desc: "NordVPN, Surfshark, ExpressVPN",     from: "#1e40af", to: "#3730a3", badge: "" },
-  { href: "/hosting",         emoji: "🌐", label: "Hosting Web",       desc: "Hostinger, SiteGround, Cloudways",   from: "#6d28d9", to: "#4338ca", badge: "" },
-  { href: "/temu",            emoji: "🛍️", label: "Import Asia",       desc: "Temu — milioane produse ieftine",    from: "#4f46e5", to: "#dc2626", badge: "HOT" },
-  { href: "/shein",           emoji: "✨", label: "Moda Fast Fashion",  desc: "SHEIN — fashion global la pret mic", from: "#db2777", to: "#9d174d", badge: "" },
-  { href: "/trendyol",        emoji: "🧡", label: "Marketplace Est",   desc: "Trendyol — piata internationala",    from: "#0891b2", to: "#4f46e5", badge: "" },
-  { href: "/ai-tools",        emoji: "🤖", label: "AI Tools",          desc: "ChatGPT, Claude, Midjourney",        from: "#0ea5e9", to: "#4f46e5", badge: "AI" },
-  { href: "/carduri-bancare", emoji: "💳", label: "Conturi Bancare",   desc: "Revolut, Wise, N26 — cont gratuit",  from: "#6d28d9", to: "#0f766e", badge: "NEW" },
-  { href: "/cursuri-online",  emoji: "🎓", label: "Cursuri Online",    desc: "Udemy, Coursera, Skillshare",        from: "#4338ca", to: "#7c3aed", badge: "" },
-  { href: "/piese-auto",      emoji: "🔧", label: "Piese Auto",        desc: "Anvelope, jante, detailing",         from: "#1e3a8a", to: "#0f766e", badge: "NEW" },
-  { href: "/echipament-moto", emoji: "🏍️", label: "Echipament Moto",   desc: "Casti, geci, piese moto",            from: "#155e75", to: "#3730a3", badge: "NEW" },
-  { href: "/rochii-mireasa",  emoji: "👰", label: "Rochii Mireasa",    desc: "Rochii nunta si ocazie",             from: "#7c3aed", to: "#0891b2", badge: "NEW" },
-];
 
 const BRAND_PAGES = [
   { href: "/emag",        name: "eMAG",         emoji: "🛒" },
@@ -247,7 +193,6 @@ interface Banner {
 export default function Home() {
   const [magazine, setMagazine]           = useState<Magazin[]>([]);
   const [blogPosts, setBlogPosts]         = useState<BlogPost[]>([]);
-  const [banners, setBanners]             = useState<Banner[]>([]);
   const [loading, setLoading]             = useState(true);
   const [cautare, setCautare]             = useState("");
   const [coduriReveal, setCoduriReveal]   = useState<Set<string>>(new Set());
@@ -260,8 +205,6 @@ export default function Home() {
   const [activeCatTab, setActiveCatTab]         = useState<string>("toate");
   const [recomandate, setRecomandate]     = useState<{magazin:string;nume:string;logo_url:string;categorie:string;comision:number;are_cod:boolean;oferta:string}[]>([]);
   const [showFab, setShowFab]             = useState(false);
-  const bannersRef                         = useRef<HTMLDivElement>(null);
-  const trendingRef                        = useRef<HTMLDivElement>(null);
   const rezultateRef                       = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -280,17 +223,6 @@ export default function Home() {
       if (all.length === 0) return;
       all.sort((a, b) => (b.discount_pct || 0) - (a.discount_pct || 0));
       setProduseCategorii([{ slug: "toate", label: "Produse populare", emoji: "🛍️", products: all.slice(0, 16) }]);
-    }).catch(() => {});
-    fetch("/banners.json").then(r => r.json()).then(data => {
-      const list: Banner[] = data?.banners || data || [];
-      const withImg = list.filter(b => b.image_url && (b.landing_url || b.landing_raw));
-      withImg.sort((a, b) => {
-        const rA = a.width / (a.height || 1), rB = b.width / (b.height || 1);
-        const sA = rA >= 1.2 && rA <= 3 ? 2 : rA >= 0.8 ? 1 : 0;
-        const sB = rB >= 1.2 && rB <= 3 ? 2 : rB >= 0.8 ? 1 : 0;
-        return sB - sA;
-      });
-      setBanners(withImg.slice(0, 8));
     }).catch(() => {});
     try {
       const saved = JSON.parse(localStorage.getItem("favorite_magazine") || "[]");
@@ -491,47 +423,28 @@ export default function Home() {
 
       {/* ─── HERO ────────────────────────────────────────────────────────── */}
       <section className="relative bg-slate-950 text-white overflow-hidden">
-        {/* Layered background */}
+        {/* Fundal: un singur glow indigo subtil, fara grid/portocaliu */}
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute inset-0" style={{background:"radial-gradient(ellipse 90% 70% at 50% -10%, rgba(249,115,22,0.18) 0%, transparent 70%)"}} />
-          <div className="absolute inset-0 opacity-[0.025]" style={{backgroundImage:"linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px)", backgroundSize:"50px 50px"}} />
-          <div className="absolute bottom-0 left-0 right-0 h-32" style={{background:"linear-gradient(to top, rgba(255,255,255,0.03), transparent)"}} />
+          <div className="absolute inset-0" style={{background:"radial-gradient(ellipse 80% 60% at 50% -20%, rgba(79,70,229,0.20) 0%, transparent 65%)"}} />
         </div>
 
-        {/* Floating deal badges — desktop only */}
-        <div className="absolute left-8 top-16 hidden xl:flex flex-col gap-3 opacity-80">
-          {[{e:"👗", t:"-60%"}, {e:"💊", t:"-40%"}, {e:"💻", t:"-35%"}].map((b,i) => (
-            <div key={i} className="flex items-center gap-2 bg-white/8 backdrop-blur-sm border border-white/12 rounded-2xl px-3 py-2 text-xs font-bold">
-              <span>{b.e}</span><span className="text-white/90">{b.t}</span>
-            </div>
-          ))}
-        </div>
-        <div className="absolute right-8 top-16 hidden xl:flex flex-col gap-3 opacity-80">
-          {[{e:"🏃", t:"-50%"}, {e:"🎁", t:"-45%"}, {e:"🏡", t:"-30%"}].map((b,i) => (
-            <div key={i} className="flex items-center gap-2 bg-white/8 backdrop-blur-sm border border-white/12 rounded-2xl px-3 py-2 text-xs font-bold">
-              <span>{b.e}</span><span className="text-white/90">{b.t}</span>
-            </div>
-          ))}
-        </div>
-
-        <div className="relative max-w-4xl mx-auto px-4 pt-16 pb-20 md:pt-24 md:pb-28 text-center">
+        <div className="relative max-w-3xl mx-auto px-4 pt-20 pb-20 md:pt-28 md:pb-28 text-center">
           {/* Live pill */}
-          <div className="inline-flex items-center gap-2 bg-white/8 border border-white/15 rounded-full px-4 py-1.5 text-xs font-semibold text-white/80 mb-7">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse inline-block"/>
-            {cuPromotii.length > 0 ? `${cuPromotii.length} oferte verificate acum` : "Sute de oferte verificate acum"}
+          <div className="inline-flex items-center gap-2 bg-white/[0.06] border border-white/10 rounded-full px-4 py-1.5 text-xs font-medium text-slate-300 mb-8">
+            <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse inline-block"/>
+            {cuPromotii.length > 0 ? `${cuPromotii.length} oferte verificate astazi` : "Sute de oferte verificate zilnic"}
           </div>
 
           {/* H1 */}
-          <h1 className="text-[2.75rem] md:text-[4.5rem] font-black tracking-tight leading-[1.05] mb-6">
+          <h1 className="text-[2.75rem] md:text-[4.25rem] font-black tracking-tight leading-[1.05] mb-6">
             <span className="text-white">Cele mai bune coduri</span><br/>
-            <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #8b5cf6 0%, #22d3ee 100%)"}}>
+            <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #818cf8 0%, #22d3ee 100%)"}}>
               de reducere din Romania
             </span>
           </h1>
 
-          <p className="text-slate-400 text-lg md:text-xl mb-10 max-w-md mx-auto leading-relaxed">
-            Verificate zilnic. 100% gratuit.<br className="hidden sm:block"/>
-            {magazine.length > 0 ? `Peste ${magazine.length}` : "Peste 290"} magazine partenere.
+          <p className="text-slate-400 text-lg mb-10 max-w-lg mx-auto leading-relaxed">
+            {magazine.length > 0 ? `Peste ${magazine.length}` : "Peste 380"} magazine partenere, verificate zilnic. 100% gratuit.
           </p>
 
           {/* Search hero */}
@@ -567,11 +480,11 @@ export default function Home() {
           </div>
 
           {/* Trust row */}
-          <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-xs text-white/40 font-medium">
-            <span className="flex items-center gap-1.5"><span className="text-emerald-400">✓</span> Gratuit, fara cont</span>
-            <span className="flex items-center gap-1.5"><span className="text-emerald-400">✓</span> {magazine.length > 0 ? `${magazine.length}+` : "290+"} magazine</span>
-            <span className="flex items-center gap-1.5"><span className="text-emerald-400">✓</span> Actualizat zilnic automat</span>
-            <span className="flex items-center gap-1.5"><span className="text-emerald-400">✓</span> 0 reclame invazive</span>
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-xs text-slate-500 font-medium">
+            <span className="flex items-center gap-1.5"><span className="text-cyan-400">✓</span> Gratuit, fara cont</span>
+            <span className="flex items-center gap-1.5"><span className="text-cyan-400">✓</span> {magazine.length > 0 ? `${magazine.length}+` : "380+"} magazine</span>
+            <span className="flex items-center gap-1.5"><span className="text-cyan-400">✓</span> Actualizat zilnic automat</span>
+            <span className="flex items-center gap-1.5"><span className="text-cyan-400">✓</span> 0 reclame invazive</span>
           </div>
         </div>
       </section>
@@ -859,64 +772,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ─── NISE & INTERNATIONAL ────────────────────────────────────────── */}
-      <section className="bg-slate-950 border-b border-slate-800 py-10 px-4">
-        <div className="max-w-7xl mx-auto">
-          <div className="mb-6">
-            <p className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-1.5">NISE & INTERNATIONAL</p>
-            <h2 className="text-xl font-black tracking-tight text-white">Categorii speciale & piete internationale</h2>
-            <p className="text-slate-400 text-sm mt-1">Tech, securitate, fashion global si marketplace-uri din toata lumea</p>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-            {CATEGORII_INTL.map(c => (
-              <a key={c.href} href={c.href}
-                className="group relative rounded-2xl overflow-hidden transition-all duration-300 hover:scale-[1.04] hover:shadow-2xl hover:shadow-black/50"
-                style={{ background: `linear-gradient(135deg, ${c.from} 0%, ${c.to} 100%)` }}>
-                <div className="absolute inset-0 bg-white/0 group-hover:bg-white/10 transition-colors duration-300 pointer-events-none" />
-                {c.badge && (
-                  <div className="absolute top-2 right-2 text-[9px] font-black text-white bg-black/40 backdrop-blur-sm px-1.5 py-0.5 rounded-full tracking-wider">{c.badge}</div>
-                )}
-                <div className="relative p-4 min-h-[110px] flex flex-col gap-2">
-                  <span className="text-3xl group-hover:scale-110 transition-transform duration-300 drop-shadow-lg">{c.emoji}</span>
-                  <div>
-                    <p className="text-white font-black text-xs leading-tight">{c.label}</p>
-                    <p className="text-white/55 text-[10px] mt-0.5 line-clamp-2 leading-tight">{c.desc}</p>
-                  </div>
-                  <div className="mt-auto flex items-center gap-1 text-white/50 group-hover:text-white/90 transition-colors text-[10px] font-bold">
-                    Descopera
-                    <svg className="w-2.5 h-2.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
-                    </svg>
-                  </div>
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ─── STATS BAR ───────────────────────────────────────────────────── */}
-      <div className="bg-slate-900 border-b border-slate-800">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-slate-800">
-            {[
-              { icon: "🏪", value: magazine.length > 0 ? `${magazine.length}+` : "290+", label: "Magazine partenere" },
-              { icon: "⚡", value: cuPromotii.length > 0 ? `${cuPromotii.length}` : "200+",  label: "Promotii active" },
-              { icon: "✅", value: "100%",    label: "Coduri verificate" },
-              { icon: "🆓", value: "Gratuit", label: "Fara abonament" },
-            ].map(s => (
-              <div key={s.label} className="flex items-center gap-3 px-4 py-5">
-                <span className="text-2xl">{s.icon}</span>
-                <div>
-                  <p className="font-black text-white text-xl leading-none">{s.value}</p>
-                  <p className="text-xs text-slate-400 mt-0.5">{s.label}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
       {/* ─── DEAL ZILEI ──────────────────────────────────────────────────── */}
       {!loading && cuPromotii.length > 0 && (() => {
         const deal  = cuPromotii.find(m => m.cod_cupon && m.zile_ramase <= 3) || cuPromotii.find(m => m.cod_cupon) || cuPromotii[0];
@@ -1046,83 +901,6 @@ export default function Home() {
         );
       })()}
 
-      {/* ─── TRENDING ─────────────────────────────────────────────────────── */}
-      {!loading && cuPromotii.length >= 3 && (
-        <section className="bg-slate-950 border-b border-slate-800 py-12 px-4">
-          <div className="max-w-7xl mx-auto">
-            <div className="flex items-end justify-between mb-7">
-              <div>
-                <p className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-2 flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse inline-block"/>
-                  LIVE
-                </p>
-                <h2 className="text-3xl font-black tracking-tight text-white">Trending acum</h2>
-              </div>
-              <div className="hidden sm:flex items-center gap-2">
-                <button
-                  onClick={() => trendingRef.current?.scrollBy({ left: -520, behavior: "smooth" })}
-                  className="w-8 h-8 rounded-full bg-slate-100 hover:bg-indigo-600 hover:text-white flex items-center justify-center transition-colors text-slate-300">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7"/>
-                  </svg>
-                </button>
-                <button
-                  onClick={() => trendingRef.current?.scrollBy({ left: 520, behavior: "smooth" })}
-                  className="w-8 h-8 rounded-full bg-slate-100 hover:bg-indigo-600 hover:text-white flex items-center justify-center transition-colors text-slate-300">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
-                  </svg>
-                </button>
-                <a href="#promotii" className="text-sm font-bold text-indigo-400 hover:text-indigo-300 transition-colors ml-2">
-                  Toate →
-                </a>
-              </div>
-            </div>
-            <div ref={trendingRef} className="overflow-x-auto -mx-4 px-4 pb-3" style={{scrollbarWidth:"none", scrollBehavior:"smooth"}}>
-              <div className="flex gap-3" style={{minWidth:"max-content"}}>
-                {cuPromotii.slice(0, 12).map(m => {
-                  const promo    = m.promotii[0];
-                  const discount = maxDiscount(m.promotii);
-                  const link     = promo?.landing_page || m.url_afiliat || m.url;
-                  return (
-                    <a key={m.magazin} href={link} target="_blank" rel="sponsored noopener noreferrer"
-                      className="group flex-shrink-0 w-48 bg-slate-900 border border-slate-800 hover:border-cyan-500/50 rounded-2xl p-4 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 overflow-hidden">
-                      {/* Trust bar */}
-                      <div className="h-0.5 w-full bg-slate-800 rounded-full mb-3 overflow-hidden">
-                        <div className="h-full bg-gradient-to-r from-emerald-400 to-emerald-500 rounded-full" style={{width:`${m.procent_succes || 75}%`}}/>
-                      </div>
-                      <div className="flex items-center gap-2.5 mb-3">
-                        <div className="w-9 h-9 rounded-xl bg-white border border-slate-700 flex items-center justify-center shrink-0">
-                          {m.logo_url ? (
-                            <img src={m.logo_url} alt={numeAfisat(m.magazin)} className="w-7 h-7 object-contain" loading="lazy"/>
-                          ) : (
-                            <span className="text-sm font-black text-indigo-400">{numeAfisat(m.magazin)[0]}</span>
-                          )}
-                        </div>
-                        <div className="min-w-0">
-                          <p className="font-black text-white text-xs truncate group-hover:text-indigo-300 transition-colors">{numeAfisat(m.magazin)}</p>
-                          <p className="text-slate-400 text-[10px] truncate">{m.categorie}</p>
-                        </div>
-                      </div>
-                      {discount && (
-                        <div className="bg-emerald-500/15 border border-emerald-500/25 rounded-lg px-2 py-1 mb-2.5 text-center">
-                          <span className="text-emerald-400 font-black text-xs">{discount}</span>
-                        </div>
-                      )}
-                      <p className="text-slate-500 text-[11px] line-clamp-2 mb-3">{promo?.nume || "Oferta activa"}</p>
-                      <div className="bg-indigo-600 group-hover:bg-indigo-500 text-white text-[11px] font-black py-1.5 rounded-lg text-center transition-colors">
-                        {m.cod_cupon ? "Cod disponibil" : "Vezi oferta"}
-                      </div>
-                    </a>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* ─── SECTIUNI SPECIALE ────────────────────────────────────────────── */}
       {/* ─── RECOMANDATE (potential castig: comision × cerere × oferta) ──── */}
       {recomandate.length > 0 && (
         <section className="bg-slate-900 border-b border-slate-800 py-12 px-4">
@@ -1162,93 +940,6 @@ export default function Home() {
       )}
 
       {/* ─── SECTIUNI SPECIALE ─── */}
-      {/* ─── OFERTE PE CATEGORII (deals pe nise, cu link afiliat) ────────── */}
-      {!loading && (() => {
-        const cuOferta = magazine.filter(m => m.are_promotie && m.categorie_slug && m.promotii?.some((p: {zile_ramase:number}) => p.zile_ramase >= 0));
-        const grupuri: Record<string, Magazin[]> = {};
-        for (const m of cuOferta) { (grupuri[m.categorie_slug!] = grupuri[m.categorie_slug!] || []).push(m); }
-        const LABELS: Record<string,string> = { fashion:"👗 Fashion", "electronics-itc":"💻 Electronice", beauty:"💄 Frumusete", "home-garden":"🏡 Casa & Gradina", "sports-outdoors":"🏃 Sport", pharma:"💊 Farmacie", "babies-kids-toys":"🧸 Copii & Jucarii", automotive:"🚗 Auto-Moto", books:"📚 Carti", "pet-supplies":"🐾 Animale", "online-mall":"🛍️ Mall Online", "office-supplies":"📎 Birou", "health-personal-care":"🧴 Ingrijire" };
-        const topCat = Object.entries(grupuri).sort((a,b)=>b[1].length-a[1].length).slice(0,5);
-        if (!topCat.length) return null;
-        return (
-          <section className="bg-slate-950 border-b border-slate-800 py-12 px-4">
-            <div className="max-w-7xl mx-auto">
-              <p className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-2">🔥 OFERTE PE CATEGORII</p>
-              <h2 className="text-3xl font-black tracking-tight text-white mb-8">Cele mai bune oferte, pe nise</h2>
-              <div className="space-y-9">
-                {topCat.map(([slug, mags]) => {
-                  const top = [...mags].sort((a,b)=>(b.scor_final||0)-(a.scor_final||0)).slice(0,4);
-                  return (
-                    <div key={slug}>
-                      <div className="flex items-center justify-between mb-3">
-                        <h3 className="text-lg font-black text-white">{LABELS[slug] || slug}</h3>
-                        <a href={`/categorii/${slug}`} className="text-sm font-semibold text-indigo-400 hover:text-indigo-300">Toate →</a>
-                      </div>
-                      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                        {top.map(m => {
-                          const promo = m.promotii?.find((p: {zile_ramase:number;cod_cupon:string})=>p.zile_ramase>=0 && p.cod_cupon) || m.promotii?.find((p: {zile_ramase:number})=>p.zile_ramase>=0);
-                          const link = promo?.landing_page || m.url_afiliat || m.url || '#';
-                          const disc = maxDiscount(m.promotii);
-                          return (
-                            <a key={m.magazin} href={link} target="_blank" rel="sponsored noopener noreferrer"
-                              className="group bg-slate-900 border border-slate-800 hover:border-cyan-500/50 rounded-2xl p-4 transition-all hover:-translate-y-0.5 flex flex-col">
-                              <div className="flex items-center gap-2.5 mb-2">
-                                <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center shrink-0 overflow-hidden">
-                                  {m.logo_url ? (
-                                    // eslint-disable-next-line @next/next/no-img-element
-                                    <img src={m.logo_url} alt={numeAfisat(m.magazin)} className="w-8 h-8 object-contain" loading="lazy"/>
-                                  ) : (<span className="font-black text-indigo-400">{numeAfisat(m.magazin)[0]}</span>)}
-                                </div>
-                                <div className="min-w-0">
-                                  <p className="font-black text-white text-sm truncate group-hover:text-indigo-400 transition-colors">{numeAfisat(m.magazin)}</p>
-                                  {disc ? <span className="text-[10px] font-black text-emerald-400">{disc}</span> : m.cod_cupon ? <span className="text-[10px] font-bold text-emerald-400">COD</span> : <span className="text-[10px] text-slate-500">Oferta</span>}
-                                </div>
-                              </div>
-                              <p className="text-slate-400 text-[11px] line-clamp-2 flex-1">{promo?.nume || "Oferta activa"}</p>
-                              <div className="mt-2 text-[11px] font-black text-indigo-400 group-hover:text-indigo-400">Vezi oferta →</div>
-                            </a>
-                          );
-                        })}
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </section>
-        );
-      })()}
-
-      {/* ─── SECTIUNI SPECIALE ─── */}
-      <section className="bg-slate-950 border-b border-slate-800 py-14 px-4">
-        <div className="max-w-7xl mx-auto">
-          <div className="mb-8">
-            <p className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-2">GHIDURI DEDICATE</p>
-            <h2 className="text-3xl font-black tracking-tight text-white">Sectiuni speciale</h2>
-            <p className="text-slate-500 text-sm mt-1.5">Curatate editorial cu cele mai bune oferte pe fiecare nisa</p>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
-            {SECTIUNI_SPECIALE.map(s => (
-              <a key={s.href} href={s.href}
-                className={`group relative bg-gradient-to-br ${s.gradient} rounded-2xl p-5 text-white hover:shadow-xl hover:-translate-y-1 transition-all duration-200 overflow-hidden`}>
-                <div className="absolute top-0 right-0 w-20 h-20 rounded-full bg-white/10 blur-xl transform translate-x-4 -translate-y-4 group-hover:scale-150 transition-transform duration-300 pointer-events-none"/>
-                <div className="relative">
-                  <div className="text-3xl mb-3">{s.emoji}</div>
-                  <p className="font-black text-sm leading-tight">{s.label}</p>
-                  <p className="text-white/60 text-xs mt-1 leading-tight">{s.desc}</p>
-                  <div className="mt-4 flex items-center gap-1 text-white/70 text-xs font-semibold">
-                    Descopera
-                    <svg className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
-                    </svg>
-                  </div>
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ─── MAGAZINE POPULARE (pagini brand dedicate) ───────────────────── */}
       <section className="bg-slate-950 border-b border-slate-800 py-10 px-4">
         <div className="max-w-7xl mx-auto">
@@ -1270,112 +961,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ─── BANNERE PARTENERE ────────────────────────────────────────────── */}
-      {banners.length > 0 && (
-        <div className="bg-slate-900 border-b border-slate-800 py-10">
-          {/* Header */}
-          <div className="max-w-7xl mx-auto px-4 mb-6 flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <span className="text-xl">🔥</span>
-              <div>
-                <h2 className="text-lg font-black text-white tracking-tight">Oferte vizuale ale zilei</h2>
-                <p className="text-xs text-slate-400 mt-0.5">Campanii active de la partenerii nostri</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-2">
-              <button
-                onClick={() => bannersRef.current?.scrollBy({ left: -340, behavior: "smooth" })}
-                className="w-8 h-8 rounded-full bg-slate-700 hover:bg-indigo-600 flex items-center justify-center transition-colors">
-                <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7"/>
-                </svg>
-              </button>
-              <button
-                onClick={() => bannersRef.current?.scrollBy({ left: 340, behavior: "smooth" })}
-                className="w-8 h-8 rounded-full bg-slate-700 hover:bg-indigo-600 flex items-center justify-center transition-colors">
-                <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          {/* Carousel orizontal cu scroll snap */}
-          <div ref={bannersRef} className="px-4 overflow-x-auto"
-            style={{ scrollbarWidth: "none", msOverflowStyle: "none", scrollBehavior: "smooth" }}>
-            <div className="flex gap-3 pb-2"
-              style={{ width: "max-content" }}>
-              {banners.slice(0, 12).map((b, i) => {
-                const aspectLandscape = b.width >= b.height;
-                return (
-                  <a
-                    key={b.id || i}
-                    href={b.landing_url || b.landing_raw}
-                    target="_blank"
-                    rel="sponsored noopener noreferrer"
-                    className="group relative overflow-hidden rounded-2xl flex-shrink-0 block"
-                    style={{
-                      width: aspectLandscape ? "320px" : "200px",
-                      height: "200px",
-                      scrollSnapAlign: "start",
-                    }}
-                    onError={() => {}}
-                  >
-                    {/* Imagine banner */}
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={b.image_url}
-                      alt={b.name || b.merchant || "Oferta"}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
-                      onError={e => {
-                        const el = (e.target as HTMLImageElement).closest("a");
-                        if (el) el.style.display = "none";
-                      }}
-                    />
-
-                    {/* Gradient overlay permanent */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
-
-                    {/* Continut overlay */}
-                    <div className="absolute bottom-0 left-0 right-0 p-3">
-                      <p className="text-white/60 text-[10px] font-medium uppercase tracking-wider mb-0.5">
-                        {(b.merchant || "").replace(".ro","").replace(".com","").trim()}
-                      </p>
-                      <p className="text-white font-black text-xs leading-tight line-clamp-2 mb-2">
-                        {b.name || "Oferta activa"}
-                      </p>
-                      <span className="inline-flex items-center gap-1 bg-indigo-600 group-hover:bg-indigo-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full transition-colors">
-                        Vezi oferta
-                        <svg className="w-2.5 h-2.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
-                        </svg>
-                      </span>
-                    </div>
-
-                    {/* Ring la hover */}
-                    <div className="absolute inset-0 rounded-2xl ring-2 ring-indigo-500/0 group-hover:ring-indigo-500/60 transition-all duration-200 pointer-events-none" />
-                  </a>
-                );
-              })}
-
-              {/* Card final — "Vezi toate" */}
-              <Link href="/categorii" className="group relative overflow-hidden rounded-2xl flex-shrink-0 flex flex-col items-center justify-center gap-3 bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-cyan-500/50 transition-all duration-200"
-                style={{ width: "160px", height: "200px", scrollSnapAlign: "start" }}>
-                <div className="w-12 h-12 rounded-full bg-cyan-500/20 flex items-center justify-center group-hover:bg-cyan-500/30 transition-colors">
-                  <svg className="w-6 h-6 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16"/>
-                  </svg>
-                </div>
-                <span className="text-white font-bold text-xs text-center px-4">Toate categoriile</span>
-                <span className="text-indigo-400 text-[10px] font-bold">Vezi →</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* ─── PRODUSE HOT ─────────────────────────────────────────────────── */}
       {/* ─── OFERTE ACTIVE CU COD — din output.json, diverse magazine ─── */}
       {!loading && (() => {
         const cuCod = magazine
@@ -1464,100 +1049,6 @@ export default function Home() {
           </section>
         );
       })()}
-
-      {/* ─── TOP PICKS ────────────────────────────────────────────────────── */}
-      {!loading && cuPromotii.length >= 3 && (
-        <section className="bg-slate-950 border-b border-slate-800 py-14 px-4">
-          <div className="max-w-7xl mx-auto">
-            <div className="flex items-end justify-between mb-8">
-              <div>
-                <p className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-2">SELECTIE EDITORIALA</p>
-                <h2 className="text-3xl font-black tracking-tight text-white">Top picks saptamana asta</h2>
-                <p className="text-slate-400 text-sm mt-1.5">Cele mai bune oferte verificate de echipa noastra</p>
-              </div>
-              <a href="#promotii" className="hidden sm:flex items-center gap-1 text-sm font-bold text-indigo-400 hover:text-indigo-300 transition-colors">
-                Toate ofertele
-                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
-                </svg>
-              </a>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-              {cuPromotii.slice(0, 3).map((m, i) => {
-                const nume  = numeAfisat(m.magazin);
-                const promo = m.promotii[0];
-                const discountText = maxDiscount(m.promotii);
-                const link  = promo?.landing_page || m.url_afiliat || m.url;
-                const tops  = [
-                  { label: "#1 Recomandat", bar: "from-violet-500 to-fuchsia-600",   badge: "bg-indigo-600" },
-                  { label: "Popular",       bar: "from-purple-500 to-pink-500",   badge: "bg-purple-600" },
-                  { label: "Trending",      bar: "from-blue-500 to-indigo-500",   badge: "bg-blue-600" },
-                ];
-                return (
-                  <a key={m.magazin} href={link} target="_blank" rel="sponsored noopener noreferrer"
-                    className="group bg-slate-900 border-2 border-slate-700 hover:border-cyan-500/50 rounded-2xl overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-200">
-                    <div className={`h-1.5 bg-gradient-to-r ${tops[i].bar}`}/>
-                    <div className="p-6">
-                      <div className="flex items-start justify-between mb-4">
-                        <span className={`${tops[i].badge} text-white text-[10px] font-black px-2.5 py-1 rounded-full tracking-wide`}>
-                          {tops[i].label}
-                        </span>
-                        {m.cod_cupon && (
-                          <span className="bg-amber-500/20 text-amber-400 border border-amber-500/30 text-[10px] font-bold px-2.5 py-1 rounded-full">
-                            Cod cupon
-                          </span>
-                        )}
-                      </div>
-                      <div className="flex items-center gap-4 mb-4">
-                        <div className="w-14 h-14 rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center shrink-0">
-                          {m.logo_url ? (
-                            <img src={m.logo_url} alt={`Logo ${nume}`} className="w-10 h-10 object-contain" loading="lazy"/>
-                          ) : (
-                            <span className="text-xl font-black text-indigo-400">{nume[0]}</span>
-                          )}
-                        </div>
-                        <div>
-                          <h3 className="font-black text-white text-lg group-hover:text-indigo-400 transition-colors leading-tight tracking-tight">{nume}</h3>
-                          <p className="text-slate-400 text-xs">{m.categorie}</p>
-                          {discountText && (
-                            <span className="inline-flex items-center gap-1 mt-1.5 bg-emerald-500/15 text-emerald-400 border border-emerald-500/25 text-[10px] font-bold px-2 py-0.5 rounded-full">
-                              {discountText}
-                            </span>
-                          )}
-                        </div>
-                      </div>
-                      {/* Trust Score bar */}
-                      <div className="mb-4">
-                        <div className="flex items-center justify-between mb-1">
-                          <span className="text-[10px] font-semibold text-slate-400">Trust Score</span>
-                          <span className="text-[10px] font-bold text-emerald-600">{m.procent_succes || 82}%</span>
-                        </div>
-                        <div className="h-1.5 bg-slate-700 rounded-full overflow-hidden">
-                          <div className="h-full bg-gradient-to-r from-emerald-400 to-emerald-500 rounded-full transition-all duration-700" style={{width:`${m.procent_succes || 82}%`}}/>
-                        </div>
-                      </div>
-                      {promo && (
-                        <p className="text-slate-400 text-sm line-clamp-2 mb-4 leading-relaxed">{promo.nume}</p>
-                      )}
-                      <div className="flex items-center justify-between pt-4 border-t border-slate-700">
-                        <div className="flex items-center gap-1.5 text-emerald-400 text-xs font-semibold">
-                          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse inline-block"/>
-                          Verificat azi
-                          <span className="text-slate-300 mx-1">·</span>
-                          <span className="text-slate-400">{m.promotii.length} {m.promotii.length === 1 ? "oferta" : "oferte"}</span>
-                        </div>
-                        <span className="bg-indigo-600 group-hover:bg-indigo-500 text-white font-black text-xs px-4 py-2 rounded-xl transition-colors">
-                          Activeaza →
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-      )}
 
       {/* ─── PROMOTII + MAGAZINE ─────────────────────────────────────────── */}
       <div ref={rezultateRef} className="max-w-7xl mx-auto px-4 py-10">

@@ -3,13 +3,11 @@ import Link from "next/link";
 import fs from "fs";
 import path from "path";
 
-// ── LINKURI AFILIATE ── inlocuieste cu linkurile tale ──────────────────────
-// Coursera: aplica la https://about.coursera.org/affiliates
-// Udemy: aplica la https://www.udemy.com/affiliate/
-// LinkedIn Learning: program indirect, vezi linkedin.com/learning
-const LINK_COURSERA = "https://www.coursera.org/?ref=amcupon";
-const LINK_UDEMY     = "https://www.udemy.com/?ref=amcupon";
-const LINK_LINKEDIN  = "https://www.linkedin.com/learning/?ref=amcupon";
+// ── LINKURI AFILIATE — REALE din Impact.com (account 7401119) ──────────────
+const LINK_COURSERA = "https://coursera.pxf.io/c/7761435/1/0";          // REAL Impact
+const LINK_UDEMY     = "https://trk.udemy.com/c/7401119/3193860/39854"; // REAL Impact
+// LinkedIn Learning: fara program afiliat → link curat homepage (fara tracking fals)
+const LINK_LINKEDIN  = "https://www.linkedin.com/learning";
 // ──────────────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {

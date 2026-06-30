@@ -1,0 +1,65 @@
+SCRIPTURI TIKTOK — AMCUPON.RO (17 iunie 2026)
+Format: faceless, voce over AI (ElevenLabs) sau text-to-speech TikTok nativ + text pe ecran
+Lungime: 15-25 secunde fiecare, fara fata, fara editare manuala (CapCut auto sau InVideo AI)
+
+============================================================
+
+[ SCRIPT 1 — Hook pierdere de bani ]
+
+HOOK (0-3s): "Ai cumparat ceva online luna asta? Probabil ai pierdut bani fara sa stii."
+
+[Text pe ecran: 73% din romani NU folosesc cod de reducere la fiecare comanda]
+
+VOICE: "Aproape orice magazin online are un cod de reducere activ chiar acum — eMAG,
+Fashion Days, Noriel, oricare. Majoritatea oamenilor platesc pretul intreg pur si simplu
+pentru ca nu cauta 10 secunde inainte de a cumpara."
+
+[Text pe ecran: AmCupon.ro verifica codurile de 6 ori pe zi]
+
+CTA (final): "Cauta magazinul tau pe AmCupon.ro inainte de orice comanda. Link in bio."
+
+#codreducere #cupoane #economisire #shopping #romania
+
+------------------------------------------------------------
+
+[ SCRIPT 2 — Lista rapida ]
+
+HOOK (0-3s): "3 magazine unde aproape nimeni nu cauta cod de reducere, desi exista."
+
+[Text pe ecran, cate 1: Noriel — pana la 20% | Fashion Days — pana la 25% | eMAG — coduri saptamanale]
+
+VOICE: "Multi cauta cod de reducere doar la eMAG si Temu, dar magazine ca Noriel sau
+Fashion Days au coduri active aproape tot timpul, doar ca nu sunt cautate la fel de des —
+deci codurile raman valabile mai mult."
+
+CTA (final): "Toate verificate zilnic pe AmCupon.ro. Link in bio."
+
+#reduceri #cupoane #fashiondays #noriel #emag
+
+------------------------------------------------------------
+
+[ SCRIPT 3 — Educativ, increase incredere ]
+
+HOOK (0-3s): "Cum functioneaza de fapt un cod de reducere — in 15 secunde."
+
+[Text pe ecran, sincronizat cu voce:]
+"1. Magazinul plateste un comision unui site ca AmCupon"
+"2. AmCupon iti arata codul gratuit"
+"3. Tu platesti mai putin, magazinul castiga client nou"
+"4. Toata lumea iese in castig — tu cel mai mult"
+
+VOICE: "Nu e niciun trucaj, nu platesti tu in plus pentru asta. Magazinele prefera sa dea
+o reducere mica decat sa piarda clientul complet."
+
+CTA (final): "De-aia merita sa verifici inainte sa cumperi. AmCupon.ro, link in bio."
+
+#educatiefinanciara #cupoane #cumparaturionline #bani
+
+============================================================
+
+NOTE PRODUCTIE:
+- Voce: ElevenLabs (vezi stack automatizare, $5/luna) sau TikTok TTS nativ (gratuit, mai robotic)
+- Video: InVideo AI sau CapCut — stock footage shopping/cumparaturi online, nu trebuie filmat nimic
+- Postare: 1 script/saptamana la inceput, creste la 2-3/saptamana daca merge bine
+- Fiecare TikTok cu link in bio catre amcupon.ro = trafic + semnal de incredere pentru Google
+  (parte din planul de backlink-uri, nu doar trafic direct)

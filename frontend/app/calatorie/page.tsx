@@ -203,7 +203,8 @@ export default function CalatoriePage() {
           <h2 className="text-base font-black text-slate-300 mb-4">Exploreaza si alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
-              { href: "/gadgets", label: "📡 Gadgets" },
+              { href: "/esim", label: "📡 eSIM Calatorie" },
+              { href: "/gadgets", label: "🎮 Gadgets" },
               { href: "/idei-cadouri", label: "🎁 Idei Cadouri" },
               { href: "/fashion", label: "👗 Fashion" },
               { href: "/top-reduceri", label: "🏆 Top Reduceri" },

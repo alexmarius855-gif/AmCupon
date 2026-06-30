@@ -12,6 +12,61 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+> **⭐ PLAN MASTER (strategie):** vezi `PLAN-MASTER.md` în root — busola pentru 1000 afiliați,
+> 100 site-uri, 200-500€/site/lună. Oglindit în Notion (hub "IMPERIU CLAUDE"). Citește-l la
+> începutul oricărei sesiuni strategice. `CLAUDE.md` = adevărul TEHNIC, `PLAN-MASTER.md` = adevărul de BUSINESS.
+
+**UPDATE 30.06.2026 (sesiune amplă — NEPUSHED încă, Alex vrea push la final):**
+- **REDESIGN HOMEPAGE — direcție "premium minimalist" (pass 1+2 DONE).** Decizie Alex: slate uniform,
+  1 accent indigo→cyan, ZERO gradiente curcubeu, aerisit + **promovăm TOATE magazinele** (comision pe
+  orice link afiliat, nu doar cupoane — cele fără cod = recomandări curate). Făcut:
+  - Hero rescris: scos glow-ul PORTOCALIU (`rgba(249,115,22)` = bug), scoase badge-urile flotante,
+    trust row emerald→cyan (accent unic).
+  - **Tăiate 6 secțiuni redundante** (arătau aceleași magazine de 5×): "NISE & INTERNATIONAL"
+    (CATEGORII_INTL curcubeu), al 2-lea STATS BAR duplicat, "Trending acum", "Oferte pe nise",
+    "Sectiuni speciale" (SECTIUNI_SPECIALE curcubeu), "Bannere/Oferte vizuale", "Top picks".
+  - Rezultat: **17 → 11 secțiuni h2**, flux logic. Magazinele TOATE rămân vizibile (secțiunea
+    "Magazine partenere" arată `faraPromotii` cu load-more + "Magazine de incredere" recomandate).
+  - **Cod mort de șters** (cleanup viitor, nu blochează build): array-urile `CATEGORII_INTL` (~linia 92)
+    și `SECTIUNI_SPECIALE` + ref-urile `trendingRef`/`bannersRef` (acum nefolosite). Verificat vizual OK.
+- **🚀 BUG CRITIC 2P REPARAT — 84 → 583 magazine 2Performant (total site 929).** Misterul vechi
+  ("API-ul nu aduce toate programele acceptate") rezolvat: (1) `/affiliate/programs.json` **capează
+  la 20 elemente/pagină** (ignoră `per_page=100`) — `fetch_all_pages` se oprea la pagina 1 (20<100→break),
+  aducând 20 din 600. Fix: paginare prin `metadata.pagination.pages` (parcurge toate cele 30 pagini).
+  (2) Lipsea filtrul **`filter[affrequest_status]=accepted`** → acum aduce toate cele ~600 programe
+  APROBATE (528 .ro), nu doar 20. Verificat live cu credențiale (în GitHub Secrets pt pipeline).
+  Pipeline-ul va trage automat toate cele 600 la fiecare rulare. NOTĂ: rulează cu `PYTHONIOENCODING=utf-8`
+  local (emoji-urile crapă pe cp1250 Windows). **Coerciție tipuri adăugată în merge_platforms.py**
+  (promo descriere=bool spărgea build-ul cu "a.match is not a function" — acum forțat string).
+- **Import masiv afiliați — 132 → 929 magazine** (583 2P + 280 impact + 63 profitshare + 3 direct,
+  TOATE cu link afiliat, 2413 pagini build). La 71 de 1000. (1) Impact CSV +247, (2) feed 2P +10, (3) **Promotions
+  CSV 2P** (`promotions (8).csv` → `data/promotii_2p.csv`, 91 promoții/63 magazine) importat cu
+  `import_csv_promotii.py` → **+47 magazine** (2performant 37→84), 77 cu promoții, 18 cu cod. Build 1424 pagini.
+- **Import masiv Impact.com — 132 → 389 magazine.** CSV `data/impact_campaigns.csv` (315 programe active)
+  importat cu `scripts/import_impact_campaigns.py`. 247 magazine noi cu tracking links REALE (account 7401119).
+  `merge_platforms.py` rulat → output.json: 280 impact + 69 profitshare + 37 2performant + 3 direct.
+- **Extragere magazine din feed produse 2P** (`scripts/extract_merchants_from_feed.py`) — feed-ul
+  XML (`MY_FEED_URL` = feeds.2performant.com/feed/4a3fc5d5f.xml, 2GB, 1.03M produse) contine
+  `campaign_name` = magazin ACCEPTAT (produsele vin doar pt programe aprobate → recuperam magazine
+  pe care API-ul nu le aduce). Doar 13 magazine .ro in acest feed (restul international) → +10 noi
+  cu quicklink real (foglia, dyfashion, gameology, farmec, sofiline etc.). **NOTA:** feed CSV da doar
+  header gol — foloseste XML. Feed-ul e blocat pe IP datacenter (CI) dar merge pe IP rezidential (local).
+  Ca sa creasca: Alex adauga mai multe surse in 2P "My Feeds" SAU exporta Promotions CSV (sute de magazine).
+- **Motor import GENERIC reutilizabil:** `scripts/import_generic_affiliate.py` — un singur script pentru
+  ORICE rețea (impact/awin/cj/admitad preconfigurate în `NETWORKS`, adaugi altele cu mapare coloane).
+  `python scripts/import_generic_affiliate.py --network awin --file data/awin.csv`. Ăsta e drumul spre 1000.
+- **Pagină nouă `/esim` LIVE** — 10 afiliați eSIM reali (Airalo, Saily, AmigoSIM, ChillSIM, eSIMo...).
+  Comparație top 3 + tabel + FAQ + ItemList/FAQPage JSON-LD. În sitemap + meniu Navbar + link din `/calatorie`.
+- **MONEY-LEAK reparat — linkuri afiliate FALSE înlocuite cu cele REALE din Impact:**
+  `/vpn` (NordVPN, Surfshark, AdGuard, IceVPN, IPRoyal), `/cursuri-online` (Coursera, Udemy),
+  `/antivirus` (Bitdefender). Brandurile fără program afiliat (ExpressVPN, Norton, ESET, Kaspersky,
+  LinkedIn Learning) → linkuri curate homepage (FĂRĂ tracking fals `?ref=amcupon`). Restul (carduri-bancare
+  Revolut/Wise/N26, hosting Hostinger/SiteGround) încă au placeholder — de reparat când avem linkuri reale.
+- **Generator social extins cu nișe de bani:** `scripts/generate_social_content.py` — adăugate nișe
+  software-ai, hosting, security, esim (5→11 nișe active, 60→165 postări). Magazinele fără promoții (VPN/AI/
+  hosting) primesc postări de tip RECOMANDARE (flag `_recomandare`) cu limbaj onest — NU "reducere falsă",
+  NU comisionul afișat ca cashback. Fix encoding UTF-8 stdout (crăpa pe cp1250 Windows).
+
 **UPDATE 29.06.2026:**
 - **Pagini comparatii SEO + linkuri interne anti-orfan.** `scripts/generate_comparisons.py` genereaza `frontend/public/comparisons.json` (10 perechi: fashiondays-vs-answear, temu-vs-shein, libris-vs-carturesti, emag-vs-elefant, emag-vs-temu, surfshark-vs-hostinger, drmax-vs-farmec, noriel-vs-decathlon, fashiondays-vs-shein, libris-vs-elefant) cu date live din output.json (promotii active, cashback, verdict). Rute: `/comparatii` (index) + `/comparatii/[slug]` (Server Component, BreadcrumbList + FAQPage JSON-LD). Ruleaza in pipeline doar la `IS_FULL_DAILY`. **CRITIC pt indexare**: paginile erau ORFANE (0 linkuri interne) → reparat cu (1) link `/comparatii` in Footer.tsx (INFO, apare pe toate 105 pagini) + (2) bloc contextual "X vs alte magazine" pe `/cod-reducere/[magazin]` — `loadComparatii(slug)` in page.tsx filtreaza perechile care includ magazinul, pasate ca prop `comparatii` la MagazinClient, randate langa "Magazine similare". 14 magazine primesc linkuri contextuale. Cand adaugi perechi noi in `PERECHI` din generate_comparisons.py, linkurile interne + sitemap se actualizeaza automat (slug-urile m1/m2 trebuie sa fie slug-uri de domeniu reale din output.json).
 - **Import promotii CSV 2Performant — +55 magazine RO noi cu link afiliat real.** Multe programe ACCEPTATE cu promotii active NU vin prin API (`/affiliate/advertiser_promotions.json` returneaza doar o parte). Solutie: `import_csv_promotii.py` imbunatatit — citeste `data/promotii_2p.csv` (export manual din 2P dashboard → Promotions → Export), potriveste cu magazinele existente SI **creeaza magazine noi cu quicklink 2P real** (`build_quicklink()`, redirect catre landing page-ul promotiei), categorie ghicita din nume (`guess_category()`). Ruleaza in pipeline dupa merge (pas 5a), durabil — promotiile expirate se sar automat. Rezultat: **132 → 187 magazine, 23 → 84 cu promotii active, 6 → 20 cu cod**. Cand Alex exporta CSV nou, inlocuieste `data/promotii_2p.csv`. NOTA: de investigat de ce API-ul 2P nu aduce toate programele acceptate (posibil paginare/filtru in `fetch_2p_api.py`).

@@ -201,20 +201,31 @@ def api_get(endpoint: str, params: dict = None) -> dict | list | None:
         return None
 
 
-def fetch_all_pages(endpoint: str, per_page: int = 100) -> list:
-    """Descarca toate paginile pentru un endpoint paginat."""
+def fetch_all_pages(endpoint: str, per_page: int = 100, extra_params: dict = None) -> list:
+    """Descarca toate paginile pentru un endpoint paginat.
+
+    CRITIC: API-ul 2Performant CAPEAZA la 20 elemente/pagina (ignora per_page>20)!
+    De-aia NU ne putem opri la `len(items) < per_page` (20 < 100 → s-ar opri dupa
+    pagina 1, aducand doar 20 din 600 programe — bug-ul vechi). Folosim in schimb
+    `metadata.pagination.pages` ca sa stim cate pagini exista si parcurgem tot.
+    Fallback pe len<per_page doar daca raspunsul nu are metadata de paginare.
+    """
     results = []
     page = 1
+    total_pages = None
     while True:
-        data = api_get(endpoint, {"page": page, "per_page": per_page})
+        params = {"page": page, "per_page": per_page}
+        if extra_params:
+            params.update(extra_params)
+        data = api_get(endpoint, params)
         if data is None:
             break
 
         # Suport pentru { "programs": [...] } sau liste directe sau { "results": [...] }
+        meta_pages = None
         if isinstance(data, list):
             items = data
         elif isinstance(data, dict):
-            # Cauta prima lista din dict
             items = None
             for v in data.values():
                 if isinstance(v, list):
@@ -222,6 +233,7 @@ def fetch_all_pages(endpoint: str, per_page: int = 100) -> list:
                     break
             if items is None:
                 items = []
+            meta_pages = (data.get("metadata") or {}).get("pagination", {}).get("pages")
         else:
             break
 
@@ -229,9 +241,15 @@ def fetch_all_pages(endpoint: str, per_page: int = 100) -> list:
             break
 
         results.extend(items)
-        print(f"    Pagina {page}: {len(items)} elemente ({len(results)} total)")
+        total_pages = meta_pages or total_pages
+        print(f"    Pagina {page}/{total_pages or '?'}: {len(items)} elemente ({len(results)} total)")
 
-        if len(items) < per_page:
+        # Oprire: dupa ultima pagina din metadata, SAU (fallback fara metadata) cand
+        # pagina e incompleta fata de per_page.
+        if total_pages:
+            if page >= total_pages:
+                break
+        elif len(items) < per_page:
             break
         page += 1
         time.sleep(0.3)
@@ -466,8 +484,11 @@ def main():
     out_front  = os.path.join(repo_root, "frontend", "public", "output.json")
 
     # ── 2. Programe afiliate ──────────────────────────────────────────────────
-    print("\n[2/3] Descarc programele afiliate...")
-    programe = fetch_all_pages("affiliate/programs", per_page=100)
+    # filter[affrequest_status]=accepted → DOAR magazinele la care suntem APROBATI
+    # (toate dau comision pe link, nu doar cele cu promotie). ~600 vs 20 fara filtru.
+    print("\n[2/3] Descarc programele afiliate (accepted)...")
+    programe = fetch_all_pages("affiliate/programs", per_page=100,
+                               extra_params={"filter[affrequest_status]": "accepted"})
     if not programe:
         print("  ❌ Niciun program returnat — pastrez datele existente.")
         return

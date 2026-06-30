@@ -127,17 +127,17 @@ SUBREDDITS: r/Romania, r/cluj, r/Bucuresti, r/deals
 
 ----------------------------------------
 
->>> Incaltamintelamoda <<<
+>>> Fashiondays <<<
 
 [ TIKTOK ]
-🎬 SCRIPT TIKTOK — Incaltamintelamoda (Fashion & Îmbrăcăminte)
+🎬 SCRIPT TIKTOK — Fashiondays (Fashion & Îmbrăcăminte)
 
 HOOK (0-3 sec):
-"👗 Reducere ACTIVA la Incaltamintelamoda — nu ai nevoie de niciun cod!"
+"👗 Reducere ACTIVA la Fashiondays — nu ai nevoie de niciun cod!"
 
 BODY (3-25 sec):
-"Mergi pe AmCupon.ro, gasesti Incaltamintelamoda si dai click pe oferta.
-Reduceri de până la 47% la încălțăminte din piele naturală. Reducerea se aplica automat — zero bataie de cap!"
+"Mergi pe AmCupon.ro, gasesti Fashiondays si dai click pe oferta.
+Summer Offers 19 iun - 6 iul. Reducerea se aplica automat — zero bataie de cap!"
 
 CTA (25-30 sec):
 "Link in bio → amcupon.ro. Dai follow pentru oferte zilnice!"
@@ -146,14 +146,15 @@ HASHTAG-URI:
 #fashion #moda #imbracaminte #style #romania #outfitoftheday #shopping #reduceri #amcupon #oferte #promotii
 
 [ INSTAGRAM ]
-📸 INSTAGRAM CAPTION — Incaltamintelamoda
+📸 INSTAGRAM CAPTION — Fashiondays
 
-👗 Cod reducere Incaltamintelamoda activ în iunie 2026!
+👗 Cod reducere Fashiondays activ în iunie 2026!
 
 ✅ Oferta speciala
-📊 76% rată de succes — verificat!
+📊 89% rată de succes — verificat!
+⚠️ Expiră în 7 zile!
 
-👉 https://amcupon.ro/cod-reducere/incaltamintelamoda.ro
+👉 https://amcupon.ro/cod-reducere/fashiondays.ro
 
 💡 Haine la reducere, coduri verificate
 
@@ -161,28 +162,29 @@ HASHTAG-URI:
 #codreducere #amcupon #economii
 
 [ PINTEREST ]
-📌 PINTEREST PIN — Incaltamintelamoda
+📌 PINTEREST PIN — Fashiondays
 
 TITLU (max 100 caractere):
-Cod Reducere Incaltamintelamoda iunie 2026 — Voucher Verificat
+Cod Reducere Fashiondays iunie 2026 — Voucher Verificat
 
 DESCRIERE:
-Cod Reducere Incaltamintelamoda iunie 2026 — Voucher Verificat. Reduceri de până la 47% la încălțăminte din piele naturală. Codul de reducere Incaltamintelamoda verificat si actualizat pe AmCupon.ro. Haine la reducere, coduri verificate. Economiseste acum!
+Cod Reducere Fashiondays iunie 2026 — Voucher Verificat. Summer Offers 19 iun - 6 iul. Codul de reducere Fashiondays verificat si actualizat pe AmCupon.ro. Haine la reducere, coduri verificate. Economiseste acum!
 
-URL: https://amcupon.ro/cod-reducere/incaltamintelamoda.ro
+URL: https://amcupon.ro/cod-reducere/fashiondays.ro
 BOARD: Fashion & Îmbrăcăminte — Coduri Reducere Romania
 
 [ REDDIT/FB ]
-💬 REDDIT / FACEBOOK GRUP — Incaltamintelamoda
+💬 REDDIT / FACEBOOK GRUP — Fashiondays
 
-TITLU: [Reducere Fashion & Îmbrăcăminte] Incaltamintelamoda — Reduceri de până la 47% la încălțăminte din piele naturală
+TITLU: [Reducere Fashion & Îmbrăcăminte] Fashiondays — Summer Offers 19 iun - 6 iul
 
-Reducere activa la Incaltamintelamoda:
+Reducere activa la Fashiondays:
 
-**Oferta:** Reduceri de până la 47% la încălțăminte din piele naturală
-**Rata succes:** 76%
+**Oferta:** Summer Offers 19 iun - 6 iul
+**Rata succes:** 89%
+**Expira in:** 7 zile
 
-**Link:** https://amcupon.ro/cod-reducere/incaltamintelamoda.ro
+**Link:** https://amcupon.ro/cod-reducere/fashiondays.ro
 
 *Sursa: AmCupon.ro — verificat zilnic*
 

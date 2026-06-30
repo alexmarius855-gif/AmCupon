@@ -1,17 +1,15 @@
 import { Metadata } from "next";
 import Link from "next/link";
 
-// ── LINKURI AFILIATE VPN ── inlocuieste cu linkurile tale din Impact.com ──
-// NordVPN: aplica la https://partners.nordvpn.com → primesti link personalizat
-// Surfshark: aplica la https://surfshark.com/affiliates → primesti link Impact.com
-// ExpressVPN: aplica la https://www.expressvpn.com/affiliates
-const LINK_NORDVPN    = "https://nordvpn.com/?aff_id=AMCUPON";   // inlocuieste cu Impact.com link
-const LINK_SURFSHARK  = "https://surfshark.com/?coupon=amcupon";  // inlocuieste cu link afiliat
-const LINK_EXPRESSVPN = "https://expressvpn.com/?ref=amcupon";   // inlocuieste cu link afiliat
-// Linkuri reale, aprobate pe Impact.com (18.06.2026)
-const LINK_ADGUARD_VPN = "https://adguard.sjv.io/5kyXR2";
-const LINK_ICEVPN      = "https://iceprivacyltd.pxf.io/jRQMNn";
-const LINK_IPROYAL     = "https://iproyal.sjv.io/k497yM";
+// ── LINKURI AFILIATE VPN — REALE din Impact.com (account 7401119) ──
+const LINK_NORDVPN    = "https://nordvpn.sjv.io/c/7401119/417838/7452";   // REAL Impact
+const LINK_SURFSHARK  = "https://surfshark.sjv.io/c/7401119/535269/9043"; // REAL Impact
+// ExpressVPN: nu avem program afiliat inca → link curat homepage (fara tracking fals)
+const LINK_EXPRESSVPN = "https://www.expressvpn.com";
+// Linkuri reale, aprobate pe Impact.com
+const LINK_ADGUARD_VPN = "https://adguard.sjv.io/c/7401119/3824000/49891";
+const LINK_ICEVPN      = "https://iceprivacyltd.pxf.io/c/7401119/3741732/47094";
+const LINK_IPROYAL     = "https://iproyal.sjv.io/c/7401119/1295570/15731";
 // ──────────────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {

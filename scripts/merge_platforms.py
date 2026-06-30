@@ -134,6 +134,22 @@ def main():
 
     merged: list[dict] = list(by_slug.values())
 
+    # ── Coercitie tipuri: garanteaza ca frontend-ul (care face .match() pe stringuri)
+    # nu crapa la build daca o sursa trimite bool/numar in loc de string (ex: promo
+    # descriere=False din unele surse). Bug de build prins 30.06.2026 ("a.match is not a function").
+    for m in merged:
+        if not isinstance(m.get("comision"), str):
+            m["comision"] = "" if m.get("comision") is None else str(m["comision"])
+        promos = m.get("promotii")
+        if not isinstance(promos, list):
+            m["promotii"] = []
+            continue
+        for pr in promos:
+            for f in ("nume", "descriere", "cod_cupon", "landing_page"):
+                v = pr.get(f)
+                if v is not None and not isinstance(v, str):
+                    pr[f] = "" if isinstance(v, bool) else str(v)
+
     # Sorteaza: promotii active primul, apoi scor final
     merged.sort(key=lambda x: (
         -int(x.get("are_promotie", False)),
