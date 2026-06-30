@@ -114,7 +114,7 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="min-h-screen bg-slate-950">
-        <header className="bg-white border-b border-slate-800 shadow-sm">
+        <header className="bg-slate-950 border-b border-slate-800">
           <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-3">
             <Link href="/" className="flex items-center gap-1.5 shrink-0">
               <div className="bg-indigo-600 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
@@ -126,10 +126,13 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
           </div>
         </header>
 
-        <div className="bg-gradient-to-r from-indigo-600 to-violet-600 text-white py-10 px-4">
-          <div className="max-w-7xl mx-auto text-center">
-            <h1 className="text-2xl md:text-3xl font-black mb-2">Blog AmCupon.ro</h1>
-            <p className="text-cyan-100 text-sm max-w-xl mx-auto">
+        <div className="relative bg-slate-950 border-b border-slate-800 overflow-hidden">
+          <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 70% 60% at 50% 0%, rgba(79,70,229,0.15) 0%, transparent 65%)" }} />
+          <div className="relative max-w-7xl mx-auto text-center py-12 px-4">
+            <h1 className="text-3xl md:text-4xl font-black mb-2 text-white">
+              Blog <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #818cf8, #22d3ee)" }}>AmCupon.ro</span>
+            </h1>
+            <p className="text-slate-400 text-sm max-w-xl mx-auto">
               Sfaturi, ghiduri și noutăți despre cum să economisești inteligent la cumpărăturile online
             </p>
           </div>
@@ -145,7 +148,7 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
                 className={`px-4 py-1.5 rounded-full text-sm font-semibold transition-colors ${
                   categorieActiva === cat
                     ? "bg-indigo-600 text-white"
-                    : "bg-white border border-gray-200 text-slate-400 hover:border-indigo-300 hover:text-indigo-400"
+                    : "bg-slate-900 border border-slate-700 text-slate-400 hover:border-indigo-500 hover:text-indigo-300"
                 }`}
               >
                 {cat}
@@ -171,7 +174,7 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
                 <Link
                   key={post.slug}
                   href={`/blog/${post.slug}`}
-                  className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 overflow-hidden flex flex-col group"
+                  className="bg-slate-900 rounded-2xl border border-slate-800 hover:border-indigo-500/50 shadow-sm hover:shadow-lg hover:shadow-black/40 hover:-translate-y-0.5 transition-all duration-200 overflow-hidden flex flex-col group"
                 >
                   <div className="relative overflow-hidden h-48">
                     <Image
@@ -208,7 +211,7 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
             </div>
           )}
 
-          <div className="mt-10 pt-6 border-t border-gray-100 text-center">
+          <div className="mt-10 pt-6 border-t border-slate-800 text-center">
             <Link href="/" className="text-sm text-slate-500 hover:text-indigo-400 transition-colors">
               ← Inapoi la AmCupon.ro
             </Link>

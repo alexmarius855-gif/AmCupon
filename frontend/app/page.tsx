@@ -999,7 +999,12 @@ export default function Home() {
                           ? <img src={m.logo_url} alt={slug}
                               className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                               loading="lazy" onError={e => { (e.target as HTMLImageElement).style.display='none'; }}/>
-                          : <span className="font-black text-indigo-400 text-base">{slug.split('.')[0].toUpperCase()}</span>
+                          : <div className="flex flex-col items-center justify-center gap-1.5 px-2">
+                              <span className="w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-500 to-indigo-700 flex items-center justify-center text-white font-black text-2xl shadow-lg group-hover:scale-105 transition-transform duration-300">
+                                {slug.charAt(0).toUpperCase()}
+                              </span>
+                              <span className="font-bold text-slate-300 text-[11px] text-center leading-tight line-clamp-1">{slug.split('.')[0].replace(/-/g,' ').replace(/\b\w/g, c => c.toUpperCase())}</span>
+                            </div>
                         }
                         {cod && (
                           <div className="absolute top-2 left-2 bg-indigo-600 text-white text-[10px] font-black px-1.5 py-0.5 rounded-full shadow">
