@@ -15,7 +15,7 @@
   "categorie": "Online Mall",
   "comision": 20.0,
   "are_cod": false,
-  "oferta": "Electro Weekend 26 - 29 iunie 2026"
+  "oferta": "Saptamana Festivalului, 29 iunie-05 iulie 2026"
  },
  {
   "magazin": "aronia-charlottenburg.ro",
@@ -81,6 +81,15 @@
   "oferta": "2+1 la colecția Humanitas Fiction"
  },
  {
+  "magazin": "libris.ro",
+  "nume": "Libris",
+  "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_libris.ro_1629366879.png",
+  "categorie": "Books",
+  "comision": 8.0,
+  "are_cod": false,
+  "oferta": "1+1 Gratis la 1000 de titluri"
+ },
+ {
   "magazin": "vapetronic.ro",
   "nume": "Vapetronic",
   "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_vapetronic.ro_1728402751.png",
@@ -97,14 +106,5 @@
   "comision": 8.0,
   "are_cod": false,
   "oferta": "Târgul de Vară 2026"
- },
- {
-  "magazin": "daedalusonline.eu",
-  "nume": "Daedalusonline",
-  "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_daedalusonline.eu_1485345410.png",
-  "categorie": "Online Mall",
-  "comision": 7.0,
-  "are_cod": false,
-  "oferta": "Descoperă beneficiile Daedalus Online"
  }
 ]

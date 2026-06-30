@@ -1,5 +1,5 @@
 # 💰 TOP MAGAZINE după POTENȚIAL DE CÂȘTIG
-> Generat automat 29.06.2026 17:13. Pe astea să le împingi (articole, pin-uri, postări).
+> Generat automat 30.06.2026 11:54. Pe astea să le împingi (articole, pin-uri, postări).
 
 **Scor = comision × popularitate × ofertă.** Comisionul mare singur înșală — astea-s banii REALI.
 
@@ -32,9 +32,9 @@
 | 25 | Intego (intego.com) | 40% | 0 | — | 12.5 |
 | 26 | Hostico (hostico.ro) | 25% | 0 | — | 12.5 |
 | 27 | Axi Card (axi-card.ro) | 25% | 0 | — | 12.5 |
-| 28 | Vapetronic (vapetronic.ro) | 8% | 0 | 🏷️ ofertă | 11.2 |
-| 29 | Librarie (librarie.net) | 8% | 0 | 🏷️ ofertă | 11.2 |
-| 30 | Vecteezy (vecteezy.com) | 20% | 0 | — | 10.0 |
+| 28 | Libris (libris.ro) | 8% | 0 | 🏷️ ofertă | 11.2 |
+| 29 | Vapetronic (vapetronic.ro) | 8% | 0 | 🏷️ ofertă | 11.2 |
+| 30 | Librarie (librarie.net) | 8% | 0 | 🏷️ ofertă | 11.2 |
 
 ## 🎯 Cum folosești raportul
 - **Top 10** = prioritate maximă pentru articole „cel mai bun X" + pin-uri Pinterest
