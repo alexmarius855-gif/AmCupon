@@ -270,7 +270,7 @@ export default function CalculatorClient() {
         <div className="mt-8 bg-slate-900 rounded-2xl border border-slate-800 p-5 flex flex-col sm:flex-row items-center gap-4">
           <div>
             <p className="text-white font-bold text-sm">Cauta un cod de reducere acum</p>
-            <p className="text-slate-500 text-xs">600+ magazine, verificate zilnic</p>
+            <p className="text-slate-500 text-xs">900+ magazine, verificate zilnic</p>
           </div>
           <Link href="/toate-magazinele"
             className="ml-auto shrink-0 bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-colors">

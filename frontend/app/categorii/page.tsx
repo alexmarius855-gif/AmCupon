@@ -5,12 +5,12 @@ import path from "path";
 
 export const metadata: Metadata = {
   title: "Categorii Coduri Reducere Romania 2026 | AmCupon.ro",
-  description: "Coduri de reducere organizate pe categorii: Fashion, Electronice, Frumusete, Casa, Sport, Farmacie, Copii, Animale si multe altele. 600+ magazine verificate zilnic.",
+  description: "Coduri de reducere organizate pe categorii: Fashion, Electronice, Frumusete, Casa, Sport, Farmacie, Copii, Animale si multe altele. 900+ magazine verificate zilnic.",
   keywords: ["categorii reduceri romania","coduri reducere pe categorii","fashion reducere","electronice ieftine","farmacie online reducere"],
   alternates: { canonical: "https://amcupon.ro/categorii" },
   openGraph: {
     title: "Categorii Coduri Reducere Romania | AmCupon.ro",
-    description: "600+ magazine organizate pe 18 categorii. Oferte verificate zilnic.",
+    description: "900+ magazine organizate pe 18 categorii. Oferte verificate zilnic.",
     url: "https://amcupon.ro/categorii",
     siteName: "AmCupon.ro",
     locale: "ro_RO",
@@ -227,14 +227,8 @@ export default function CategoriPage() {
             <a
               key={c.slug}
               href={`/categorii/${c.slug}`}
-              className="group relative rounded-2xl overflow-hidden transition-all duration-300 hover:scale-[1.04] hover:shadow-2xl"
-              style={{
-                background: `linear-gradient(135deg, ${c.from} 0%, ${c.to} 100%)`,
-              }}
+              className="group relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/40"
             >
-              {/* Overlay sticla */}
-              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300" />
-
               {/* Logouri magazine (fundal decorativ) */}
               {c.logos.length > 0 && (
                 <div className="absolute top-2 right-2 flex -space-x-2 opacity-70 group-hover:opacity-90 transition-opacity">
@@ -244,7 +238,7 @@ export default function CategoriPage() {
                       key={i}
                       src={l.logo}
                       alt={l.name}
-                      className="w-6 h-6 rounded-full border border-white/40 bg-white object-contain p-0.5"
+                      className="w-6 h-6 rounded-full border border-slate-700 bg-white object-contain p-0.5"
                       loading="lazy"
                     />
                   ))}
@@ -255,25 +249,25 @@ export default function CategoriPage() {
               <div className="relative p-4 pt-8">
                 {/* Nr oferte badge */}
                 {c.nrOff > 0 ? (
-                  <div className="inline-flex items-center gap-1 bg-white/25 backdrop-blur-sm px-2 py-0.5 rounded-full mb-3">
-                    <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
-                    <span className="text-white text-[10px] font-bold">{c.nrOff} oferte</span>
+                  <div className="inline-flex items-center gap-1 bg-indigo-500/15 border border-indigo-500/25 px-2 py-0.5 rounded-full mb-3">
+                    <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
+                    <span className="text-indigo-300 text-[10px] font-bold">{c.nrOff} oferte</span>
                   </div>
                 ) : (
-                  <div className="inline-flex items-center gap-1 bg-white/15 px-2 py-0.5 rounded-full mb-3">
-                    <span className="text-white/70 text-[10px]">{c.nrMag} magazine</span>
+                  <div className="inline-flex items-center gap-1 bg-slate-800 px-2 py-0.5 rounded-full mb-3">
+                    <span className="text-slate-400 text-[10px]">{c.nrMag} magazine</span>
                   </div>
                 )}
 
                 <div className="text-white font-black text-sm leading-tight mb-1">
                   {c.label}
                 </div>
-                <div className="text-white/70 text-[10px] leading-tight">
+                <div className="text-slate-400 text-[10px] leading-tight">
                   {c.desc}
                 </div>
 
                 {/* Arrow */}
-                <div className="mt-3 flex items-center gap-1 text-white/60 group-hover:text-white group-hover:gap-2 transition-all text-[10px] font-bold">
+                <div className="mt-3 flex items-center gap-1 text-slate-500 group-hover:text-indigo-400 group-hover:gap-2 transition-all text-[10px] font-bold">
                   Vezi ofertele
                   <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />

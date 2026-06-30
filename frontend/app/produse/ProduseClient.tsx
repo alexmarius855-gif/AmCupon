@@ -394,7 +394,7 @@ export default function ProduseClient({
       {/* ─── HERO DARK ────────────────────────────────────────────────────── */}
       <section className="relative bg-slate-950 text-white overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute inset-0" style={{background:"radial-gradient(ellipse 80% 60% at 50% 0%, rgba(249,115,22,0.15) 0%, transparent 65%)"}}/>
+          <div className="absolute inset-0" style={{background:"radial-gradient(ellipse 80% 60% at 50% 0%, rgba(99,102,241,0.15) 0%, transparent 65%)"}}/>
           <div className="absolute inset-0 opacity-[0.02]" style={{backgroundImage:"linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px)", backgroundSize:"50px 50px"}}/>
         </div>
         <div className="relative max-w-5xl mx-auto px-4 pt-14 pb-16 text-center">

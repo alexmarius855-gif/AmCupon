@@ -58,7 +58,7 @@ export default function SoftwareBusinessPage() {
     <div className="min-h-screen bg-slate-950">
       {/* Hero */}
       <section className="relative bg-slate-950 border-b border-slate-800 overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(245,158,11,0.07) 0%, transparent 65%)" }} />
+        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(79,70,229,0.10) 0%, transparent 65%)" }} />
         <div className="relative max-w-4xl mx-auto px-4 pt-12 pb-10 text-center">
           <nav className="flex justify-center gap-2 text-xs text-slate-500 mb-8">
             <Link href="/" className="hover:text-slate-300">AmCupon.ro</Link>
@@ -69,7 +69,7 @@ export default function SoftwareBusinessPage() {
           </nav>
           <div className="text-5xl mb-4">📊</div>
           <h1 className="text-4xl md:text-5xl font-black text-white mb-4">
-            Software Business cu <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #f59e0b, #fbbf24)" }}>Reducere</span>
+            Software Business cu <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #818cf8, #22d3ee)" }}>Reducere</span>
           </h1>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
             SaaS-uri si tools pentru business cu comisioane mari. Facturare, SEO, design, contabilitate — toate mai ieftine.
@@ -79,12 +79,12 @@ export default function SoftwareBusinessPage() {
 
       {/* Highlight: facturis-online.ro 35% */}
       <section className="max-w-5xl mx-auto px-4 py-8">
-        <div className="bg-gradient-to-r from-amber-950/40 to-slate-900 border border-amber-700/30 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-5">
+        <div className="bg-gradient-to-r from-indigo-950/40 to-slate-900 border border-indigo-700/30 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-5">
           <div className="text-4xl">🏆</div>
           <div className="flex-1">
             <div className="flex items-center gap-2 mb-1">
               <span className="font-black text-white text-lg">Facturis-Online.ro</span>
-              <span className="text-xs bg-amber-600 text-white font-black px-2 py-0.5 rounded-full">35% comision</span>
+              <span className="text-xs bg-indigo-600 text-white font-black px-2 py-0.5 rounded-full">35% comision</span>
               <span className="text-xs bg-emerald-800/60 text-emerald-400 border border-emerald-700/40 font-bold px-2 py-0.5 rounded-full">Cel mai mare din Romania</span>
             </div>
             <p className="text-slate-300 text-sm">
@@ -93,7 +93,7 @@ export default function SoftwareBusinessPage() {
             </p>
           </div>
           <a href="https://facturis-online.ro" target="_blank" rel="sponsored noopener noreferrer"
-            className="shrink-0 bg-amber-500 hover:bg-amber-400 text-white font-black px-6 py-3 rounded-xl text-sm transition-all hover:-translate-y-0.5 shadow-lg shadow-amber-500/20">
+            className="shrink-0 bg-indigo-600 hover:bg-indigo-500 text-white font-black px-6 py-3 rounded-xl text-sm transition-all hover:-translate-y-0.5 shadow-lg shadow-cyan-500/20">
             Vezi Facturis →
           </a>
         </div>
@@ -108,14 +108,14 @@ export default function SoftwareBusinessPage() {
               const promo = m.promotii.find(p => (p.zile_ramase ?? 99) >= 0) ?? m.promotii[0] ?? {};
               const isFact = m.magazin === "facturis-online.ro";
               return (
-                <div key={m.magazin} className={`bg-slate-900 border rounded-xl p-5 flex flex-col gap-3 transition-all ${isFact ? "border-amber-700/30 hover:border-amber-500/40" : "border-slate-800 hover:border-cyan-500/20"}`}>
+                <div key={m.magazin} className={`bg-slate-900 border rounded-xl p-5 flex flex-col gap-3 transition-all ${isFact ? "border-indigo-700/30 hover:border-indigo-500/40" : "border-slate-800 hover:border-cyan-500/20"}`}>
                   <div className="flex items-start justify-between">
                     <div>
                       <p className="font-black text-white">{m.magazin.split(".")[0].charAt(0).toUpperCase() + m.magazin.split(".")[0].slice(1).replace("-", " ")}</p>
                       <p className="text-xs text-slate-500">{m.magazin}</p>
                     </div>
                     {m.comision && (
-                      <span className={`text-xs font-black px-2 py-0.5 rounded-full ${isFact ? "bg-amber-600 text-white" : "text-indigo-400"}`}>
+                      <span className={`text-xs font-black px-2 py-0.5 rounded-full ${isFact ? "bg-indigo-600 text-white" : "text-indigo-400"}`}>
                         {m.comision.replace(" sale commission","").replace(" % sale commission","%")}
                       </span>
                     )}
@@ -128,7 +128,7 @@ export default function SoftwareBusinessPage() {
                     </div>
                   )}
                   <a href={m.url_afiliat} target="_blank" rel="sponsored noopener noreferrer"
-                    className={`mt-auto text-white text-sm font-bold py-2.5 rounded-lg text-center transition-all ${isFact ? "bg-amber-600 hover:bg-amber-500" : "bg-slate-800 hover:bg-slate-700 border border-slate-700"}`}>
+                    className={`mt-auto text-white text-sm font-bold py-2.5 rounded-lg text-center transition-all ${isFact ? "bg-indigo-600 hover:bg-indigo-500" : "bg-slate-800 hover:bg-slate-700 border border-slate-700"}`}>
                     {promo.cod_cupon ? `Cod: ${promo.cod_cupon}` : "Vezi oferta"} →
                   </a>
                 </div>

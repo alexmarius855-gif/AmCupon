@@ -699,38 +699,34 @@ export default function Home() {
                 <a
                   key={c.slug}
                   href={`/categorii/${c.slug}`}
-                  className="group relative rounded-2xl overflow-hidden transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl hover:shadow-black/40"
-                  style={{ background: `linear-gradient(135deg, ${c.from} 0%, ${c.to} 100%)` }}
+                  className="group relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/40"
                 >
-                  {/* Shimmer overlay la hover */}
-                  <div className="absolute inset-0 bg-white/0 group-hover:bg-white/10 transition-colors duration-300 pointer-events-none" />
-
                   <div className="relative p-5 flex flex-col gap-3 min-h-[140px]">
                     {/* Badge oferte */}
                     {nrPromo > 0 ? (
-                      <div className="inline-flex self-start items-center gap-1 bg-black/20 backdrop-blur-sm px-2 py-0.5 rounded-full">
-                        <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
-                        <span className="text-white text-[10px] font-bold">{nrPromo} {nrPromo === 1 ? "oferta" : "oferte"}</span>
+                      <div className="inline-flex self-start items-center gap-1 bg-indigo-500/15 border border-indigo-500/25 px-2 py-0.5 rounded-full">
+                        <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
+                        <span className="text-indigo-300 text-[10px] font-bold">{nrPromo} {nrPromo === 1 ? "oferta" : "oferte"}</span>
                       </div>
                     ) : (
-                      <div className="inline-flex self-start bg-black/15 px-2 py-0.5 rounded-full">
-                        <span className="text-white/70 text-[10px]">Vezi magazine</span>
+                      <div className="inline-flex self-start bg-slate-800 px-2 py-0.5 rounded-full">
+                        <span className="text-slate-400 text-[10px]">Vezi magazine</span>
                       </div>
                     )}
 
                     {/* Emoji mare */}
-                    <span className="text-4xl group-hover:scale-110 transition-transform duration-300 drop-shadow-lg">
+                    <span className="text-4xl group-hover:scale-110 transition-transform duration-300">
                       {c.emoji}
                     </span>
 
                     {/* Nume + descriere */}
                     <div>
                       <div className="text-white font-black text-sm leading-tight">{c.label}</div>
-                      <div className="text-white/65 text-[10px] mt-0.5 leading-tight">{c.desc}</div>
+                      <div className="text-slate-400 text-[10px] mt-0.5 leading-tight">{c.desc}</div>
                     </div>
 
                     {/* Arrow */}
-                    <div className="flex items-center gap-1 text-white/50 group-hover:text-white group-hover:gap-2 transition-all text-[10px] font-bold">
+                    <div className="flex items-center gap-1 text-slate-500 group-hover:text-indigo-400 group-hover:gap-2 transition-all text-[10px] font-bold">
                       Vezi ofertele
                       <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
@@ -750,14 +746,12 @@ export default function Home() {
                 <a
                   key={c.slug}
                   href={`/categorii/${c.slug}`}
-                  className="group relative flex flex-col items-center gap-1.5 p-3 rounded-xl overflow-hidden transition-all duration-200 hover:scale-[1.05] hover:shadow-lg"
-                  style={{ background: `linear-gradient(135deg, ${c.from}33 0%, ${c.to}33 100%)`, border: `1px solid ${c.from}40` }}
+                  className="group relative flex flex-col items-center gap-1.5 p-3 rounded-xl overflow-hidden bg-slate-900/60 border border-slate-800 hover:border-indigo-500/40 transition-all duration-200 hover:-translate-y-0.5"
                 >
                   <span className="text-2xl group-hover:scale-110 transition-transform duration-200">{c.emoji}</span>
-                  <span className="text-[10px] font-bold text-white text-center leading-tight">{c.label}</span>
+                  <span className="text-[10px] font-bold text-slate-200 text-center leading-tight">{c.label}</span>
                   {nrPromo > 0 && (
-                    <span className="absolute -top-1 -right-1 text-white text-[9px] font-black rounded-full w-4 h-4 flex items-center justify-center shadow-sm"
-                      style={{ background: c.from }}>
+                    <span className="absolute -top-1 -right-1 bg-indigo-600 text-white text-[9px] font-black rounded-full w-4 h-4 flex items-center justify-center shadow-sm">
                       {nrPromo > 9 ? "9+" : nrPromo}
                     </span>
                   )}

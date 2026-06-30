@@ -68,7 +68,7 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
 
       {/* ─── HERO ─────────────────────────────────────────────────────────── */}
       <section className="relative bg-slate-950 overflow-hidden border-b border-slate-800">
-        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(249,115,22,0.10) 0%, transparent 65%)" }} />
+        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(79,70,229,0.12) 0%, transparent 65%)" }} />
         <div className="relative max-w-4xl mx-auto px-4 pt-12 pb-14 text-center">
           <nav className="flex justify-center gap-2 text-xs text-slate-500 mb-8">
             <Link href="/" className="hover:text-slate-300">AmCupon.ro</Link>

@@ -32,7 +32,7 @@ function ProdusCard({
       href={p.url}
       target="_blank"
       rel="sponsored noopener noreferrer"
-      className="group bg-slate-900 border border-slate-700 hover:border-cyan-500/70 rounded-2xl overflow-hidden transition-all hover:shadow-[0_0_24px_rgba(249,115,22,0.22)] hover:-translate-y-1 duration-200 flex flex-col relative"
+      className="group bg-slate-900 border border-slate-700 hover:border-cyan-500/70 rounded-2xl overflow-hidden transition-all hover:shadow-[0_0_24px_rgba(99,102,241,0.22)] hover:-translate-y-1 duration-200 flex flex-col relative"
     >
       {/* Image */}
       <div className="relative bg-slate-800 overflow-hidden" style={{ aspectRatio: "1" }}>
@@ -253,7 +253,7 @@ export default function ProduseCategorieClient({
       {/* ─── HERO ────────────────────────────────────────────────────────────── */}
       <section className="relative bg-slate-950 text-white overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(249,115,22,0.12) 0%, transparent 65%)" }} />
+          <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(99,102,241,0.12) 0%, transparent 65%)" }} />
         </div>
         <div className="relative max-w-5xl mx-auto px-4 pt-12 pb-14 text-center">
           <nav className="flex justify-center gap-2 text-xs text-slate-500 mb-6">

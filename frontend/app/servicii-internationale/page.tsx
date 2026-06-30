@@ -33,7 +33,7 @@ const CATEGORII = [
         comision: "40% + recurent",
         badge: "Top Comision",
         badgeColor: "bg-teal-700",
-        url: "https://surfshark.com/?coupon=amcupon",
+        url: "https://surfshark.sjv.io/c/7401119/529009/9043",
         descriere: "VPN premium cu no-logs verificat. Disponibil pe toate dispozitivele, camouflage mode, MultiHop.",
       },
       {
@@ -77,7 +77,7 @@ const CATEGORII = [
         comision: "60%",
         badge: "Cel mai mare comision",
         badgeColor: "bg-purple-700",
-        url: "https://www.hostinger.ro/?REFERRALCODE=AMCUPON",
+        url: "https://www.hostinger.ro",
         descriere: "Hosting rapid cu LiteSpeed, SSL gratuit, domeniu gratuit 1 an, suport 24/7. Cel mai bun raport calitate/pret.",
       },
       {
@@ -86,7 +86,7 @@ const CATEGORII = [
         comision: "$65-130 per sale",
         badge: "WordPress Official",
         badgeColor: "bg-blue-700",
-        url: "https://www.bluehost.com/track/amcupon",
+        url: "https://www.bluehost.com",
         descriere: "Gazduire WordPress recomandata de WordPress.org. Instalare cu 1 click, domeniu gratuit, SSL inclus.",
       },
       {
@@ -156,7 +156,7 @@ const CATEGORII = [
         comision: "35%",
         badge: "Data Science",
         badgeColor: "bg-green-700",
-        url: "https://www.datacamp.com/promo/amcupon",
+        url: "https://www.datacamp.com",
         descriere: "350+ cursuri de Data Science, Python, R, SQL, Machine Learning. Hands-on, fara teorie sterila.",
       },
       {
@@ -165,7 +165,7 @@ const CATEGORII = [
         comision: "20-25%",
         badge: "",
         badgeColor: "",
-        url: "https://www.blinkist.com/invite/amcupon",
+        url: "https://www.blinkist.com",
         descriere: "7500+ rezumate de carti non-fiction. Audio si text. Invata din cele mai bune carti business.",
       },
       {
@@ -200,7 +200,7 @@ const CATEGORII = [
         comision: "25-50%",
         badge: "AI Video",
         badgeColor: "bg-purple-700",
-        url: "https://invideo.io/?ref=amcupon",
+        url: "https://invideo.sjv.io/c/7401119/883681/12258",
         descriere: "Creeaza videoclipuri profesionale cu AI in minute. Template-uri pentru YouTube, TikTok, Reels.",
       },
       {

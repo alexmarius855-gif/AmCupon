@@ -130,7 +130,7 @@ export async function generateMetadata(
     : `Oferte de Azi Romania — Toate Promotiile Active ${luna} ${an} | AmCupon.ro`;
   const description = catLabel
     ? `Toate ofertele active ${catLabel} din Romania pentru ${luna} ${an}. Coduri de reducere si promotii verificate zilnic pe AmCupon.ro.`
-    : `Toate ofertele si promotiile active de azi in Romania. Coduri de reducere verificate zilnic la 300+ magazine online. Actualizat ${luna} ${an}.`;
+    : `Toate ofertele si promotiile active de azi in Romania. Coduri de reducere verificate zilnic la 900+ magazine online. Actualizat ${luna} ${an}.`;
 
   return {
     title,
@@ -291,7 +291,7 @@ export default async function OferteAziPage(
 
         {/* Hero ─────────────────────────────────────────────────────────── */}
         <div className="relative bg-slate-950 border-b border-slate-800 overflow-hidden">
-          <div className="absolute inset-0 pointer-events-none" style={{background:"radial-gradient(ellipse 80% 70% at 50% -20%, rgba(249,115,22,0.12) 0%, transparent 65%)"}} />
+          <div className="absolute inset-0 pointer-events-none" style={{background:"radial-gradient(ellipse 80% 70% at 50% -20%, rgba(99,102,241,0.14) 0%, transparent 65%)"}} />
           <div className="relative max-w-6xl mx-auto px-4 pt-10 pb-12 text-center">
 
             <div className="inline-flex items-center gap-2 bg-cyan-500/10 border border-cyan-500/25 text-indigo-400 text-xs font-bold px-4 py-1.5 rounded-full mb-6">
@@ -394,7 +394,7 @@ export default async function OferteAziPage(
         {/* CTA Newsletter ──────────────────────────────────────────────── */}
         <div className="max-w-6xl mx-auto px-4 pb-16">
           <div className="relative bg-gradient-to-r from-indigo-500/10 via-slate-900 to-violet-500/10 border border-cyan-500/15 rounded-3xl p-8 md:p-12 text-center overflow-hidden">
-            <div className="absolute inset-0 pointer-events-none" style={{background:"radial-gradient(ellipse 80% 100% at 50% 100%, rgba(249,115,22,0.06) 0%, transparent 70%)"}} />
+            <div className="absolute inset-0 pointer-events-none" style={{background:"radial-gradient(ellipse 80% 100% at 50% 100%, rgba(6,182,212,0.07) 0%, transparent 70%)"}} />
             <div className="relative">
               <span className="inline-flex items-center gap-2 bg-cyan-500/10 border border-cyan-500/20 text-indigo-400 text-xs font-black px-3 py-1 rounded-full mb-5 uppercase tracking-widest">
                 📬 Nu rata nicio oferta buna

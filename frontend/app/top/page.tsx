@@ -34,15 +34,11 @@ export const metadata: Metadata = {
   },
 };
 
+// Accent uniform indigo/cyan (dark) — diferentierea per-categorie se face prin emoji/label, nu prin culoare
+const ACCENT = { bg: "bg-indigo-600", text: "text-indigo-400", border: "border-slate-800", badge: "bg-indigo-500/15 text-indigo-300 border border-indigo-500/25" };
 const CULORI: Record<string, { bg: string; text: string; border: string; badge: string }> = {
-  blue:    { bg: "bg-indigo-600",    text: "text-blue-600",    border: "border-blue-200",   badge: "bg-blue-100 text-indigo-300" },
-  violet:  { bg: "bg-indigo-600",  text: "text-indigo-400",  border: "border-violet-200", badge: "bg-violet-100 text-indigo-300" },
-  indigo:  { bg: "bg-indigo-600",  text: "text-indigo-600",  border: "border-indigo-200", badge: "bg-indigo-100 text-indigo-300" },
-  teal:    { bg: "bg-indigo-600",    text: "text-cyan-400",    border: "border-teal-200",   badge: "bg-teal-100 text-cyan-300" },
-  emerald: { bg: "bg-indigo-600", text: "text-cyan-400", border: "border-emerald-200", badge: "bg-emerald-100 text-cyan-300" },
-  amber:   { bg: "bg-indigo-600",   text: "text-cyan-400",   border: "border-amber-200",  badge: "bg-amber-100 text-cyan-300" },
-  rose:    { bg: "bg-indigo-600",    text: "text-indigo-400",    border: "border-rose-200",   badge: "bg-rose-100 text-indigo-300" },
-  sky:     { bg: "bg-indigo-600",     text: "text-sky-600",     border: "border-sky-200",    badge: "bg-sky-100 text-indigo-300" },
+  blue: ACCENT, violet: ACCENT, indigo: ACCENT, teal: ACCENT,
+  emerald: ACCENT, amber: ACCENT, rose: ACCENT, sky: ACCENT,
 };
 
 function getScorMediu(cat: Categorie): number {
@@ -70,13 +66,13 @@ export default function TopHubPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <div className="min-h-screen bg-slate-950 dark:bg-slate-900">
+      <div className="min-h-screen bg-slate-950">
         {/* BREADCRUMB */}
-        <nav className="bg-white dark:bg-slate-800 border-b border-slate-800 dark:border-slate-700">
+        <nav className="bg-slate-900 border-b border-slate-800 ">
           <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-slate-500 flex-wrap">
             <Link href="/" className="hover:text-indigo-400 transition-colors">Acasa</Link>
-            <span className="mx-1 text-gray-300">/</span>
-            <span className="text-slate-300 dark:text-slate-300 font-medium">Top Produse</span>
+            <span className="mx-1 text-slate-600">/</span>
+            <span className="text-slate-300  font-medium">Top Produse</span>
           </div>
         </nav>
 
@@ -126,7 +122,7 @@ export default function TopHubPage() {
                 <a
                   key={cat.slug}
                   href={`/top/${cat.slug}`}
-                  className="group relative bg-white dark:bg-slate-800 border border-slate-800 dark:border-slate-700 hover:border-gray-300 dark:hover:border-slate-500 rounded-2xl p-5 transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5 flex flex-col"
+                  className="group relative bg-slate-900 border border-slate-800  hover:border-slate-800 dark:hover:border-slate-500 rounded-2xl p-5 transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5 flex flex-col"
                 >
                   {/* TAG BADGE */}
                   {cat.tag && (
@@ -149,12 +145,12 @@ export default function TopHubPage() {
                   </p>
 
                   {/* FOOTER */}
-                  <div className="flex items-center justify-between pt-3 border-t border-slate-800 dark:border-slate-700">
+                  <div className="flex items-center justify-between pt-3 border-t border-slate-800 ">
                     <div className="flex items-center gap-2">
                       <span className="text-xs text-slate-500 dark:text-slate-500">{cat.produse.length} produse</span>
                       {scorMediu > 0 && (
                         <>
-                          <span className="text-gray-200 dark:text-slate-600">·</span>
+                          <span className="text-slate-300 dark:text-slate-600">·</span>
                           <span className="text-xs font-bold text-cyan-400">
                             {scorMediu.toFixed(1)} / 10
                           </span>
@@ -192,7 +188,7 @@ export default function TopHubPage() {
 
         {/* CROSS LINKS */}
         <section className="max-w-6xl mx-auto px-4 pb-10">
-          <h3 className="text-base font-black text-slate-300 dark:text-slate-300 mb-4">
+          <h3 className="text-base font-black text-slate-300  mb-4">
             Exploreaza si
           </h3>
           <div className="flex flex-wrap gap-2">
@@ -205,14 +201,14 @@ export default function TopHubPage() {
               { href: "/", label: "🏠 Toate codurile" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-white dark:bg-slate-800 hover:bg-cyan-50 dark:hover:bg-slate-700 hover:text-indigo-300 text-slate-300 dark:text-slate-300 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-slate-800 dark:border-slate-600 hover:border-cyan-200">
+                className="bg-slate-900 hover:bg-cyan-50 dark:hover:bg-slate-700 hover:text-indigo-300 text-slate-300  text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-slate-800 dark:border-slate-600 hover:border-cyan-200">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-slate-800 dark:border-slate-700 py-6 text-center text-xs text-slate-500">
+        <footer className="border-t border-slate-800  py-6 text-center text-xs text-slate-500">
           &copy; {an} AmCupon.ro &middot;{" "}
           <Link href="/" className="hover:text-indigo-400">Acasa</Link>
           {" · "}<Link href="/blog" className="hover:text-indigo-400">Blog</Link>

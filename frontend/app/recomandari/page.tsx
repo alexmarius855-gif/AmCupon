@@ -219,7 +219,7 @@ export default function RecomandariPage() {
     <div className="min-h-screen bg-slate-950">
       {/* Hero */}
       <section className="relative bg-slate-950 border-b border-slate-800 overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(249,115,22,0.08) 0%, transparent 65%)" }} />
+        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(99,102,241,0.08) 0%, transparent 65%)" }} />
         <div className="relative max-w-5xl mx-auto px-4 pt-12 pb-12 text-center">
           <nav className="flex justify-center gap-2 text-xs text-slate-500 mb-8">
             <Link href="/" className="hover:text-slate-300">AmCupon.ro</Link>

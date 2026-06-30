@@ -5,9 +5,9 @@ import Link from "next/link";
 // Hostinger: aplica la https://www.hostinger.com/affiliates → 60% comision
 // SiteGround: aplica la https://www.siteground.com/affiliates.htm → $50-150/signup
 // Cloudways: aplica la https://www.cloudways.com/en/partners/affiliate.php
-const LINK_HOSTINGER  = "https://hostinger.com/?REFERRALCODE";   // inlocuieste cu linkul din Impact.com
-const LINK_SITEGROUND = "https://www.siteground.com/?aff=AMCUPON"; // link afiliat SiteGround
-const LINK_CLOUDWAYS  = "https://www.cloudways.com/en/?id=AMCUPON"; // link afiliat Cloudways
+const LINK_HOSTINGER  = "https://www.hostinger.ro";   // inlocuieste cu linkul din Impact.com
+const LINK_SITEGROUND = "https://www.siteground.com"; // link afiliat SiteGround
+const LINK_CLOUDWAYS  = "https://www.cloudways.com"; // link afiliat Cloudways
 // ──────────────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {

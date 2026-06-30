@@ -59,8 +59,8 @@ export default function CadouriPage() {
 
       {/* Hero */}
       <div className="relative py-12 px-4 text-center overflow-hidden border-b border-slate-800"
-        style={{ background: "linear-gradient(135deg, rgba(249,115,22,0.08) 0%, rgba(236,72,153,0.06) 100%)" }}>
-        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 70% 50% at 50% 0%, rgba(249,115,22,0.12) 0%, transparent 70%)" }} />
+        style={{ background: "linear-gradient(135deg, rgba(99,102,241,0.08) 0%, rgba(236,72,153,0.06) 100%)" }}>
+        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 70% 50% at 50% 0%, rgba(99,102,241,0.12) 0%, transparent 70%)" }} />
         <div className="relative max-w-3xl mx-auto">
           <div className="text-5xl mb-4">🎁</div>
           <h1 className="text-3xl md:text-4xl font-black text-white mb-3">
