@@ -16,7 +16,26 @@ Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Pro
 > 100 site-uri, 200-500€/site/lună. Oglindit în Notion (hub "IMPERIU CLAUDE"). Citește-l la
 > începutul oricărei sesiuni strategice. `CLAUDE.md` = adevărul TEHNIC, `PLAN-MASTER.md` = adevărul de BUSINESS.
 
-**UPDATE 30.06.2026 (sesiune amplă — NEPUSHED încă, Alex vrea push la final):**
+**UPDATE 30.06.2026 (UPDATE MASIV UI — PUSHED + LIVE):**
+- **Audit workflow (8 agenți paraleli) → 57 findings, reparate cele high/medium.** Plan complet în
+  `tasks/w3oud47r0.output` (3 agenți au picat pe session limit: niche-pages, seo-structure, verify).
+- **PORTOCALIU INTERZIS eliminat COMPLET din tot site-ul** (rgba 249,115,22 + amber 245,158,11):
+  `BrandPageTemplate.tsx` (afecta TOATE cele 12 pagini brand!), software-business (5 locuri),
+  oferte-azi (2), cadouri, produse, produse/[categorie], recomandari. Grep `249,115,22` = 0 acum.
+- **Curcubeu eliminat** (gradiente per-card multicolore din array `CATEGORII` cu `c.from/c.to`):
+  homepage grila categorii + chips, /categorii grila, /comparator header carduri → slate-900 uniform + accent indigo/cyan.
+- **Money-leak +16 linkuri** (peste vpn/cursuri/antivirus de dinainte): carduri-bancare, hosting,
+  servicii-internationale (Surfshark+InVideo REALE Impact, rest homepage curat), trading. Pattern:
+  link real din output.json/CSV unde există, altfel homepage curat FĂRĂ `?ref=amcupon` fals.
+- **Retheme dark**: /comparator era TOT pe light (bg-white/slate-50) → dark complet (logo-uri păstrate albe);
+  bug swapMagazin reparat (ștergea ambele). /top: nav+carduri light remnants + CULORI spart → accent uniform.
+- **Counts**: 300+/600+ magazine → 900+ (servicii, categorii, oferte-azi, calculator).
+- **RĂMAS (lower priority, next)**: (1) flori/pescuit hero tonal (low). (2) BrandPageTemplate: lipsă JSON-LD
+  BreadcrumbList+FAQPage (SEO) + slug matching fragil (`.includes` → egalitate). (3) **Money-leak brand
+  pages fără magazin în output.json**: altex, flanco, amazon (lipsesc) + temu/shein (url brut) — necesită
+  Alex să aplice la programe sau link real. (4) calculator-salariu/comparator: lipsă JSON-LD WebApplication.
+
+**UPDATE 30.06.2026 (sesiune amplă — push-uit anterior):**
 - **REDESIGN HOMEPAGE — direcție "premium minimalist" (pass 1+2 DONE).** Decizie Alex: slate uniform,
   1 accent indigo→cyan, ZERO gradiente curcubeu, aerisit + **promovăm TOATE magazinele** (comision pe
   orice link afiliat, nu doar cupoane — cele fără cod = recomandări curate). Făcut:
