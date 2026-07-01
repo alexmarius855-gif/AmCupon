@@ -17,6 +17,24 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "Calculator Salariu Net din Brut 2026",
+  url: "https://amcupon.ro/calculator-salariu",
+  applicationCategory: "FinanceApplication",
+  operatingSystem: "Web",
+  offers: { "@type": "Offer", price: "0", priceCurrency: "RON" },
+  description: "Calculeaza instant salariul net din brut, conform cotelor fiscale 2026 din Romania: CAS 25%, CASS 10%, impozit 10%, deducere personala.",
+  inLanguage: "ro-RO",
+  provider: { "@type": "Organization", name: "AmCupon.ro", url: "https://amcupon.ro" },
+};
+
 export default function CalculatorSalariuPage() {
-  return <CalculatorSalariuClient />;
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <CalculatorSalariuClient />
+    </>
+  );
 }

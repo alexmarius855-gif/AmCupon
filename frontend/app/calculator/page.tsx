@@ -17,6 +17,24 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "Calculator Reduceri Online",
+  url: "https://amcupon.ro/calculator",
+  applicationCategory: "UtilitiesApplication",
+  operatingSystem: "Web",
+  offers: { "@type": "Offer", price: "0", priceCurrency: "RON" },
+  description: "Calculeaza instant cat platesti dupa aplicarea unui cod de reducere si cat economisesti la cosul tau.",
+  inLanguage: "ro-RO",
+  provider: { "@type": "Organization", name: "AmCupon.ro", url: "https://amcupon.ro" },
+};
+
 export default function CalculatorPage() {
-  return <CalculatorClient />;
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <CalculatorClient />
+    </>
+  );
 }

@@ -40,9 +40,15 @@ function loadMagazin(slugs: string[]): Magazin | null {
     const data: Magazin[] = JSON.parse(
       fs.readFileSync(path.join(process.cwd(), "public", "output.json"), "utf-8")
     );
-    return data.find((m) =>
-      slugs.some((s) => m.magazin.toLowerCase().includes(s.toLowerCase()))
-    ) || null;
+    const lower = slugs.map((s) => s.toLowerCase());
+    // Potrivire in ordinea specificitatii: egalitate > prefix de domeniu > substring.
+    // Doar `.includes` producea potriviri gresite (ex: "otter" prindea si "spotter.ro").
+    return (
+      data.find((m) => lower.includes(m.magazin.toLowerCase())) ||
+      data.find((m) => lower.some((s) => m.magazin.toLowerCase().startsWith(s + "."))) ||
+      data.find((m) => lower.some((s) => m.magazin.toLowerCase().includes(s))) ||
+      null
+    );
   } catch {
     return null;
   }
@@ -63,8 +69,31 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
   const CULORI = ["bg-indigo-600","bg-blue-500","bg-violet-500","bg-emerald-500","bg-red-500"];
   const culoare = CULORI[config.name.charCodeAt(0) % CULORI.length];
 
+  const jsonLd: object[] = [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "AmCupon.ro", item: "https://amcupon.ro" },
+        { "@type": "ListItem", position: 2, name: config.name, item: `https://amcupon.ro${config.canonical}` },
+      ],
+    },
+  ];
+  if (config.faq.length > 0) {
+    jsonLd.push({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: config.faq.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    });
+  }
+
   return (
     <div className="min-h-screen bg-slate-950">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* ─── HERO ─────────────────────────────────────────────────────────── */}
       <section className="relative bg-slate-950 overflow-hidden border-b border-slate-800">
