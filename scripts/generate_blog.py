@@ -22,6 +22,15 @@ LUNI_RO = {
 MAX_POSTS = 500       # max total articole in blog-posts.json
 POSTS_PER_RUN = 30   # articole noi per rulare (6 rulari/zi = 180/zi pana acoperim toti)
 
+# Covere pe brand (generate cu generate_blog_covers.py) — NU folosi picsum/poze random
+BLOG_COVERS_DIR = os.path.join(os.path.dirname(__file__), "..", "frontend", "public", "blog-covers")
+
+def cover_categorie(cat_slug: str) -> str:
+    """Cover pe brand pentru categorie; fallback default daca fisierul nu exista."""
+    if os.path.exists(os.path.join(BLOG_COVERS_DIR, f"{cat_slug}.png")):
+        return f"/blog-covers/{cat_slug}.png"
+    return "/blog-covers/default.png"
+
 # Categorii pentru care generam articole roundup
 CATEGORII_ROUNDUP = [
     ("fashion",          "Fashion",           "fashion"),
@@ -215,7 +224,7 @@ Sistemul nostru verifica promotiile de la {nume} de **6 ori pe zi** (la fiecare 
         "excerpt": f"Coduri reducere {nume} verificate in {luna} {an}. {len(promotii)} promotii active, rata succes {procent}%. Ghid complet + FAQ pe AmCupon.ro.",
         "category": categorie,
         "magazin":  slug_mag,
-        "cover":    store.get("logo_url") or f"https://picsum.photos/seed/{slug_mag}/800/400",
+        "cover":    store.get("logo_url") or "/blog-covers/default.png",
         "content":  content,
         "tip":      "magazin",
     }
@@ -277,7 +286,7 @@ AmCupon.ro agrega zilnic ofertele de la peste 600 de magazine romanesti. Nu plat
         "date": datetime.now().strftime("%Y-%m-%d"),
         "excerpt": f"{nr_total} magazine de {cat_name} cu promotii active in {luna} {an}. {nr_coduri} cu cod reducere. Oferte verificate zilnic pe AmCupon.ro.",
         "category": cat_name,
-        "cover": f"https://picsum.photos/seed/{cat_slug}-{an}/800/400",
+        "cover": cover_categorie(cat_slug),
         "content": content,
         "tip": "categorie",
     }
@@ -341,7 +350,7 @@ In {luna} {an}, AmCupon.ro monitorizeaza **{total_magazine} magazine** cu promot
         "date": datetime.now().strftime("%Y-%m-%d"),
         "excerpt": f"Selectia celor mai bune {total_coduri} coduri reducere active in {luna} {an} din {total_magazine} magazine romanesti. Verificate zilnic pe AmCupon.ro.",
         "category": "General",
-        "cover": f"https://picsum.photos/seed/roundup-{luna.lower()}-{an}/800/400",
+        "cover": "/blog-covers/roundup.png",
         "content": content,
         "tip": "roundup",
     }
