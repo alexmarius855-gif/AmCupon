@@ -423,10 +423,29 @@ export default function Home() {
 
       {/* ─── HERO ────────────────────────────────────────────────────────── */}
       <section className="relative bg-slate-950 text-white overflow-hidden">
-        {/* Fundal: un singur glow indigo subtil, fara grid/portocaliu */}
-        <div className="absolute inset-0 pointer-events-none">
+        {/* Fundal premium: aurora indigo/cyan care pluteste lent + grid subtil, ZERO portocaliu */}
+        <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <div className="absolute inset-0" style={{background:"radial-gradient(ellipse 80% 60% at 50% -20%, rgba(79,70,229,0.20) 0%, transparent 65%)"}} />
+          <div className="hero-blob hero-blob-1" />
+          <div className="hero-blob hero-blob-2" />
+          <div className="hero-blob hero-blob-3" />
+          <div className="absolute inset-0" style={{
+            backgroundImage:"linear-gradient(rgba(148,163,184,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,0.06) 1px, transparent 1px)",
+            backgroundSize:"58px 58px",
+            maskImage:"radial-gradient(ellipse 65% 55% at 50% 32%, black, transparent 78%)",
+            WebkitMaskImage:"radial-gradient(ellipse 65% 55% at 50% 32%, black, transparent 78%)"
+          }} />
         </div>
+        <style>{`
+          @keyframes heroFloat1 { 0%,100%{ transform: translate(-8%,-6%) scale(1);} 50%{ transform: translate(9%,6%) scale(1.18);} }
+          @keyframes heroFloat2 { 0%,100%{ transform: translate(8%,0%) scale(1.1);} 50%{ transform: translate(-7%,9%) scale(0.94);} }
+          @keyframes heroFloat3 { 0%,100%{ transform: translate(0%,8%) scale(1);} 50%{ transform: translate(6%,-7%) scale(1.22);} }
+          .hero-blob{ position:absolute; border-radius:9999px; filter:blur(72px); }
+          .hero-blob-1{ width:440px;height:440px; top:-130px; left:6%;  background:rgba(99,102,241,0.30); animation:heroFloat1 15s ease-in-out infinite; }
+          .hero-blob-2{ width:360px;height:360px; top:-70px;  right:5%; background:rgba(34,211,238,0.18); animation:heroFloat2 19s ease-in-out infinite; }
+          .hero-blob-3{ width:320px;height:320px; bottom:-150px; left:44%; background:rgba(79,70,229,0.22); animation:heroFloat3 17s ease-in-out infinite; }
+          @media (prefers-reduced-motion: reduce){ .hero-blob{ animation:none; } }
+        `}</style>
 
         <div className="relative max-w-3xl mx-auto px-4 pt-20 pb-20 md:pt-28 md:pb-28 text-center">
           {/* Live pill */}
@@ -488,6 +507,42 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ─── BRAND MARQUEE — dovada vizuala a magazinelor reale ────────────── */}
+      {!loading && (() => {
+        const logos = magazine
+          .filter(m => m.logo_url && !/\s/.test(m.magazin))
+          .sort((a, b) => (b.sales_number || 0) - (a.sales_number || 0))
+          .slice(0, 30);
+        if (logos.length < 8) return null;
+        const row = [...logos, ...logos];
+        return (
+          <section className="relative bg-slate-950 border-b border-slate-800 py-8 overflow-hidden">
+            <p className="text-center text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500 mb-6">
+              Coduri verificate pentru magazinele tale preferate
+            </p>
+            <div className="relative">
+              <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-28 z-10 pointer-events-none" style={{background:"linear-gradient(90deg, #020617 10%, transparent)"}} />
+              <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-28 z-10 pointer-events-none" style={{background:"linear-gradient(270deg, #020617 10%, transparent)"}} />
+              <div className="marquee-track flex items-center gap-4 w-max">
+                {row.map((m, i) => (
+                  <a key={`${m.magazin}-${i}`} href={`/cod-reducere/${m.magazin}`} aria-hidden={i >= logos.length}
+                    className="shrink-0 w-28 h-16 rounded-2xl bg-white border border-slate-800 hover:border-indigo-500/60 flex items-center justify-center p-3 transition-colors">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={m.logo_url} alt={numeAfisat(m.magazin)} className="max-w-full max-h-full object-contain" loading="lazy" />
+                  </a>
+                ))}
+              </div>
+            </div>
+            <style>{`
+              @keyframes marqueeScroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+              .marquee-track { animation: marqueeScroll 45s linear infinite; }
+              .marquee-track:hover { animation-play-state: paused; }
+              @media (prefers-reduced-motion: reduce){ .marquee-track { animation: none; } }
+            `}</style>
+          </section>
+        );
+      })()}
 
       {/* ─── STATS BAR ────────────────────────────────────────────────────── */}
       {!loading && magazine.length > 0 && (() => {
