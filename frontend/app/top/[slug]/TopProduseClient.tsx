@@ -37,26 +37,12 @@ interface TopProduseClientProps {
   culoare: string;
 }
 
-const BADGE_COLORS: Record<string, string> = {
-  orange: "bg-indigo-600 text-white",
-  green:  "bg-green-600 text-white",
-  purple: "bg-purple-600 text-white",
-  blue:   "bg-blue-600 text-white",
-  pink:   "bg-pink-600 text-white",
-  cyan:   "bg-cyan-600 text-white",
-  red:    "bg-red-600 text-white",
-};
+// Accent uniform indigo/cyan pentru toate cheile — diferentierea per-categorie
+// se face prin emoji/titlu, nu prin culoare (aceeasi regula ca /top/page.tsx)
+const BADGE_COLORS: Record<string, string> = new Proxy({}, { get: () => "bg-indigo-600 text-white" });
 
-const ACCENT: Record<string, { ring: string; btn: string; score: string }> = {
-  blue:    { ring: "ring-blue-500",    btn: "bg-blue-600 hover:bg-blue-700",    score: "text-blue-600" },
-  violet:  { ring: "ring-violet-500",  btn: "bg-violet-600 hover:bg-violet-700", score: "text-violet-600" },
-  indigo:  { ring: "ring-indigo-500",  btn: "bg-indigo-600 hover:bg-indigo-700", score: "text-indigo-600" },
-  teal:    { ring: "ring-teal-500",    btn: "bg-teal-600 hover:bg-teal-700",    score: "text-teal-600" },
-  emerald: { ring: "ring-emerald-500", btn: "bg-emerald-600 hover:bg-emerald-700", score: "text-emerald-600" },
-  amber:   { ring: "ring-amber-500",   btn: "bg-amber-500 hover:bg-amber-600",  score: "text-amber-600" },
-  rose:    { ring: "ring-rose-500",    btn: "bg-rose-600 hover:bg-rose-700",    score: "text-rose-600" },
-  sky:     { ring: "ring-sky-500",     btn: "bg-sky-600 hover:bg-sky-700",      score: "text-sky-600" },
-};
+const ACCENT_UNIFORM = { ring: "ring-indigo-500", btn: "bg-indigo-600 hover:bg-indigo-500", score: "text-indigo-400" };
+const ACCENT: Record<string, { ring: string; btn: string; score: string }> = new Proxy({}, { get: () => ACCENT_UNIFORM });
 
 function ScorBar({ label, value }: { label: string; value: number }) {
   const pct = Math.round((value / 10) * 100);

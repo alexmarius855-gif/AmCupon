@@ -72,6 +72,12 @@ IRRELEVANT_FOREIGN = {
     "oreilly.com", "esimx.com", "domain.com", "bluehost.com", "youngelectricbikes.com",
 }
 
+# ─── Programe de test/sandbox ale retelelor de afiliere ──────────────────────
+# Ex: "advertisertest.eu/production/test944" cu promotie "testCampaign" —
+# campanie sandbox 2Performant care s-a scurs in feed cu scor_final artificial
+# maxim (100% succes fals), aparand pe locul 1-5 in Top Reduceri. NU e magazin real.
+_TEST_PATTERN = re.compile(r"test\d*\.|/test|-test\.|^test\.|sandbox|\bdemo\.|example\.com", re.I)
+
 
 def main():
     by_slug: dict[str, dict] = {}  # slug curat -> magazin (pastram cel mai bun)
@@ -111,6 +117,10 @@ def main():
                 continue
             if slug in IRRELEVANT_FOREIGN:
                 # brand strain/B2B irelevant pentru public RO — il scoatem
+                invalide += 1
+                continue
+            if _TEST_PATTERN.search(slug) or _TEST_PATTERN.search(raw):
+                # campanie sandbox/test scursa din API-ul retelei — nu e magazin real
                 invalide += 1
                 continue
             magazin["magazin"] = slug  # suprascriem cu forma curata

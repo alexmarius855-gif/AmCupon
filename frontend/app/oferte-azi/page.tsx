@@ -155,9 +155,7 @@ function OfertaCard({ o }: { o: OfertaFlat }) {
   const urgenta = (o.promo.zile_ramase ?? 99) <= 2;
   const zile = o.promo.zile_ramase ?? 99;
 
-  const CULORI = ["bg-indigo-600","bg-blue-500","bg-violet-500","bg-emerald-500",
-    "bg-pink-500","bg-teal-500","bg-indigo-500","bg-red-500"];
-  const culoare = CULORI[nume.charCodeAt(0) % CULORI.length];
+  const culoare = "bg-gradient-to-br from-indigo-500 to-indigo-700";
 
   return (
     <div className="group bg-slate-900 border border-slate-800 hover:border-cyan-500/40 rounded-2xl p-4 transition-all duration-200 hover:shadow-xl hover:shadow-black/40 hover:-translate-y-0.5 flex flex-col gap-3">

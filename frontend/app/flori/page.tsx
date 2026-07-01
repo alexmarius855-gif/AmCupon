@@ -34,7 +34,7 @@ const OCAZII = [
 ];
 
 function numeAfisat(s: string) { return s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" "); }
-const CULORI = ["bg-rose-600","bg-pink-600","bg-fuchsia-600","bg-rose-500","bg-pink-500"];
+const CULORI = ["bg-indigo-600"];
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Reduceri Flori & Buchete 2026","url":"https://amcupon.ro/flori" };
 
 export default function FloriPage() {

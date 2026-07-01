@@ -69,10 +69,7 @@ function numeAfisat(magazin: string): string {
     .join(" ");
 }
 
-const CULORI = [
-  "bg-indigo-600", "bg-blue-500", "bg-green-500", "bg-purple-500",
-  "bg-pink-500", "bg-teal-500", "bg-red-500", "bg-indigo-500",
-];
+const CULORI = ["bg-indigo-600"];
 
 const TOP_BF_MAGAZINE = [
   "emag.ro", "fashiondays.ro", "altex.ro", "dedeman.ro", "notino.ro",

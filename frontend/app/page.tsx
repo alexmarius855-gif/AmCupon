@@ -910,7 +910,7 @@ export default function Home() {
                   <div className="flex flex-wrap items-center gap-2 mb-1">
                     <span className="text-white font-black text-xl">{numeAfisat(deal.magazin)}</span>
                     <span className="text-slate-500 text-xs">{deal.categorie}</span>
-                    {deal.exclusiv && <span className="bg-purple-500/20 text-purple-400 text-[10px] font-black px-2 py-0.5 rounded-full border border-purple-500/30">EXCLUSIV</span>}
+                    {deal.exclusiv && <span className="bg-indigo-500/20 text-indigo-300 text-[10px] font-black px-2 py-0.5 rounded-full border border-indigo-500/30">EXCLUSIV</span>}
                   </div>
                   <p className="text-slate-300 text-sm line-clamp-2">{promo?.descriere || promo?.nume || "Oferta speciala disponibila"}</p>
                   <div className="flex flex-wrap items-center gap-2 mt-2">
@@ -1648,8 +1648,7 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
     try { localStorage.setItem(`rating_${m.magazin}`, v); } catch {}
   }
 
-  const logoColors = ["bg-blue-500","bg-violet-500","bg-teal-500","bg-pink-500","bg-indigo-500","bg-emerald-600","bg-red-500","bg-amber-500"];
-  const logoBg     = logoColors[initiala.charCodeAt(0) % logoColors.length];
+  const logoBg = "bg-gradient-to-br from-indigo-500 to-indigo-700";
 
   const expiraAzi   = promo && promo.zile_ramase === 0;
   const expiraMaine = promo && promo.zile_ramase === 1;
@@ -1657,10 +1656,10 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
   const isHot       = m.trend > 2 || (m.sales_number || 0) > 100;
 
   return (
-    <div className={`bg-slate-900 rounded-2xl border shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 flex flex-col overflow-hidden group ${expiraAzi ? "border-red-300 ring-1 ring-red-200" : "border-slate-700 dark:border-slate-700"}`}>
+    <div className={`bg-slate-900 rounded-2xl border shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 flex flex-col overflow-hidden group ${expiraAzi ? "border-red-500/50 ring-1 ring-red-500/30" : "border-slate-700"}`}>
 
       {/* Trust Score bar — rosu pentru expira azi, cyan maine, verde normal */}
-      <div className="h-1 bg-slate-100 overflow-hidden">
+      <div className="h-1 bg-slate-800 overflow-hidden">
         <div className={`h-full transition-all duration-700 rounded-r-full ${expiraAzi ? "bg-gradient-to-r from-red-500 to-red-600 animate-pulse" : expiraMaine ? "bg-gradient-to-r from-cyan-400 to-blue-500" : "bg-gradient-to-r from-emerald-400 to-emerald-500"}`} style={{width:`${trustScore}%`}}/>
       </div>
 
@@ -1688,13 +1687,13 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
             </div>
             <div className="flex items-center gap-1 shrink-0 -mt-0.5">
               {isHot && !m.exclusiv && (
-                <span className="text-[9px] font-black bg-red-100 text-red-600 px-1.5 py-0.5 rounded-full tracking-wide">🔥 HOT</span>
+                <span className="text-[9px] font-black bg-red-500/15 border border-red-500/25 text-red-400 px-1.5 py-0.5 rounded-full tracking-wide">🔥 HOT</span>
               )}
               {m.exclusiv && (
-                <span className="text-[9px] font-black bg-cyan-100 text-indigo-300 px-1.5 py-0.5 rounded-full tracking-wide">EXCLUSIV</span>
+                <span className="text-[9px] font-black bg-indigo-500/15 border border-indigo-500/25 text-indigo-300 px-1.5 py-0.5 rounded-full tracking-wide">EXCLUSIV</span>
               )}
               <button onClick={e => onToggleFavorit(m.magazin, e)}
-                className="p-1.5 rounded-full hover:bg-slate-100 transition-colors z-10"
+                className="p-1.5 rounded-full hover:bg-slate-800 transition-colors z-10"
                 title={isFavorit ? "Elimina din favorite" : "Adauga la favorite"}>
                 <svg className={`w-3.5 h-3.5 transition-colors ${isFavorit ? "fill-red-500 stroke-red-500" : "fill-none stroke-slate-300 hover:stroke-red-400"}`} viewBox="0 0 24 24" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
@@ -1717,17 +1716,17 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
               </span>
             )}
             {!m.are_promotie && cashbackText && (
-              <span className="text-[10px] font-bold text-teal-400 bg-teal-500/15 border border-teal-500/25 px-1.5 py-0.5 rounded-full">
+              <span className="text-[10px] font-bold text-cyan-400 bg-cyan-500/15 border border-cyan-500/25 px-1.5 py-0.5 rounded-full">
                 {cashbackText}
               </span>
             )}
             {m.cod_cupon && (
-              <span className="text-[10px] font-semibold text-violet-400 bg-violet-500/15 border border-violet-500/25 px-1.5 py-0.5 rounded-full">
+              <span className="text-[10px] font-semibold text-indigo-400 bg-indigo-500/15 border border-indigo-500/25 px-1.5 py-0.5 rounded-full">
                 Cod cupon
               </span>
             )}
             {m.trend > 0 && (
-              <span className="text-[10px] font-semibold text-purple-400 bg-purple-500/15 px-1.5 py-0.5 rounded-full">
+              <span className="text-[10px] font-semibold text-indigo-300 bg-indigo-500/10 px-1.5 py-0.5 rounded-full">
                 Trending
               </span>
             )}
@@ -1804,8 +1803,8 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
           <a href={m.url_afiliat || m.url} target="_blank" rel="noopener noreferrer"
             className={`flex items-center justify-center w-full font-medium py-2.5 rounded-xl text-sm transition-colors ${
               cashbackText
-                ? "bg-teal-500 hover:bg-teal-600 text-white"
-                : "border border-slate-700 hover:border-indigo-300 text-slate-500 hover:text-indigo-400"
+                ? "bg-cyan-600 hover:bg-cyan-500 text-white"
+                : "border border-slate-700 hover:border-indigo-400 text-slate-400 hover:text-indigo-400"
             }`}>
             {cashbackText ? `Viziteaza + ${cashbackText}` : "Viziteaza magazinul"}
           </a>

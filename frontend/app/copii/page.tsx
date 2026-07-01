@@ -29,7 +29,7 @@ const GRUPE_VARSTA = [
 ];
 
 function numeAfisat(s: string) { return s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" "); }
-const CULORI = ["bg-yellow-400","bg-indigo-600","bg-blue-400","bg-green-400","bg-purple-400","bg-indigo-500"];
+const CULORI = ["bg-indigo-600","bg-indigo-600","bg-indigo-500","bg-cyan-600","bg-indigo-600","bg-indigo-500"];
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Reduceri Copii & Jucării 2026","url":"https://amcupon.ro/copii" };
 
 export default function CopiiPage() {

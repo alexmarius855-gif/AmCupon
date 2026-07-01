@@ -202,8 +202,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
     return 2 + (hash % 7);
   }, [m.magazin]);
 
-  const culori = ["bg-blue-500","bg-green-500","bg-purple-500","bg-pink-500","bg-indigo-500","bg-teal-500","bg-red-500","bg-yellow-500"];
-  const culoare = culori[initiala.charCodeAt(0) % culori.length];
+  const culoare = "bg-gradient-to-br from-indigo-500 to-indigo-700";
 
   function copiazaCod(idx: number, cod: string, link?: string) {
     setRevealed(prev => new Set(prev).add(idx));
@@ -285,7 +284,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
               <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 mb-1">
                 <h1 className="text-2xl md:text-3xl font-black text-white">Cod Reducere {nume} {an}</h1>
                 {m.rank && m.rank <= 20 && (
-                  <span className="text-xs font-bold bg-yellow-400/20 text-yellow-300 border border-yellow-400/30 px-2 py-0.5 rounded-full">Top #{m.rank} Romania</span>
+                  <span className="text-xs font-bold bg-indigo-500/15 text-indigo-300 border border-indigo-500/30 px-2 py-0.5 rounded-full">Top #{m.rank} Romania</span>
                 )}
                 {m.exclusiv && (
                   <span className="text-xs font-bold bg-cyan-400 text-slate-900 px-2 py-0.5 rounded-full">Exclusiv</span>
@@ -307,7 +306,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                   </div>
                 )}
                 {m.trend > 0 && (
-                  <div className="flex items-center gap-1.5 bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-semibold px-3 py-1.5 rounded-full">
+                  <div className="flex items-center gap-1.5 bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs font-semibold px-3 py-1.5 rounded-full">
                     ↑ Trending +{m.trend}%
                   </div>
                 )}
@@ -315,7 +314,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                   const nums = m.comision.match(/[\d.]+/g)?.map(Number) ?? [];
                   const max = nums.length ? Math.max(...nums) : 0;
                   return max > 0 ? (
-                    <div className="flex items-center gap-1.5 bg-teal-500/10 border border-teal-500/20 text-teal-400 text-xs font-bold px-3 py-1.5 rounded-full">
+                    <div className="flex items-center gap-1.5 bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-bold px-3 py-1.5 rounded-full">
                       💰 Cashback pana la {max}%
                     </div>
                   ) : null;
@@ -424,7 +423,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                               {discount && (
                                 <span className="text-sm font-black text-cyan-400 bg-cyan-950/50 px-2 py-0.5 rounded-lg">-{discount}</span>
                               )}
-                              <span className="text-xs font-bold text-teal-400 bg-teal-500/10 px-2 py-0.5 rounded-full uppercase tracking-wide">Cod Reducere</span>
+                              <span className="text-xs font-bold text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded-full uppercase tracking-wide">Cod Reducere</span>
                               {promo.zile_ramase <= 1 && promo.zile_ramase >= 0 && <CountdownTimer zileRamase={promo.zile_ramase}/>}
                               {promo.zile_ramase > 1 && promo.zile_ramase <= 3 && (
                                 <span className="text-xs font-bold text-cyan-400 bg-cyan-950/50 px-2 py-0.5 rounded-full">Expira in {promo.zile_ramase} zile</span>
@@ -701,7 +700,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                   </span>
                 )}
                 {m.canal_recomandat?.toLowerCase().includes("cashback") && (
-                  <span className="flex items-center gap-1.5 bg-purple-500/10 text-purple-400 border border-purple-500/20 text-xs font-bold px-3 py-1.5 rounded-full">
+                  <span className="flex items-center gap-1.5 bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 text-xs font-bold px-3 py-1.5 rounded-full">
                     ✅ Cashback
                   </span>
                 )}

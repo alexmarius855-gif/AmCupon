@@ -44,7 +44,7 @@ function numeAfisat(s: string) {
   return s.split(".")[0].replace(/-/g, " ").split(" ").map(w => w[0].toUpperCase() + w.slice(1)).join(" ");
 }
 
-const CULORI = ["bg-emerald-600", "bg-green-600", "bg-teal-600", "bg-emerald-500", "bg-green-500"];
+const CULORI = ["bg-indigo-600"];
 
 const jsonLd = {
   "@context": "https://schema.org",

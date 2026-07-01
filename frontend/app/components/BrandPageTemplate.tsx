@@ -66,8 +66,7 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
   const promotii = magazin?.promotii || [];
   const hasCod = promotii.some((p) => !!p.cod_cupon);
 
-  const CULORI = ["bg-indigo-600","bg-blue-500","bg-violet-500","bg-emerald-500","bg-red-500"];
-  const culoare = CULORI[config.name.charCodeAt(0) % CULORI.length];
+  const culoare = "bg-gradient-to-br from-indigo-500 to-indigo-700";
 
   const jsonLd: object[] = [
     {

@@ -97,10 +97,9 @@ function catEmoji(cat: string): string {
   return "🛍️";
 }
 
-// Culori logo fallback
-const LOG_COLORS = ["bg-blue-500","bg-violet-500","bg-teal-500","bg-pink-500","bg-indigo-500","bg-emerald-600","bg-red-500","bg-amber-500"];
-function logoBg(name: string) {
-  return LOG_COLORS[(name.charCodeAt(0) || 0) % LOG_COLORS.length];
+// Logo fallback — accent unic indigo (fara curcubeu)
+function logoBg(_name: string) {
+  return "bg-gradient-to-br from-indigo-500 to-indigo-700";
 }
 
 type Sort = "discount" | "pret_asc" | "pret_desc" | "nou";
