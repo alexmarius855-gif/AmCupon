@@ -25,7 +25,7 @@ interface AnuntItem {
 
 const MESAJE_STATICE: AnuntItem[] = [
   { text: "300+ magazine partenere — coduri verificate zilnic", href: "/toate-magazinele", emoji: "🛍️" },
-  { text: "Extensie Chrome disponibila — cod automat la checkout", href: "/extensie", emoji: "🧩" },
+  { text: "Extensie Chrome — in curs de lansare, anunta-te acum", href: "/extensie", emoji: "🧩" },
   { text: "Newsletter gratuit — top 5 oferte zilnic pe email", href: "/newsletter", emoji: "📬" },
 ];
 

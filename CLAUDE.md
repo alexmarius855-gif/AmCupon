@@ -195,6 +195,7 @@ platite/risc de ban). Schimba vocea cu `--voice ro-RO-AlinaNeural` (feminin).
 
 | Problemă | Status | Acțiune necesară |
 |----------|--------|-------------------|
+| **Extensia Chrome arată "nu a fost găsită" pe Chrome Web Store** | Trimisă spre review 26.05.2026, acum negăsită (probabil respinsă/eliminată) | Verifică Chrome Web Store Developer Dashboard pentru motivul exact, retrimite dacă e cazul. Pagina `/extensie` a fost reparată sa nu mai trimita spre link mort. |
 | **Newsletter/welcome email nu se trimit** | Brevo respinge cu `HTTP 400 Sender is invalid/inactive` | Verifică `newsletter@amcupon.ro` în Brevo → Settings → Senders. 4 abonați reali așteaptă. Blochează și alertele de preț (folosesc același sender). |
 | **Alerte de preț (`check_price_alerts.py`) nu pot citi/scrie abonamentele** | Atributul custom `ALERT_STORES` nu există încă în Brevo | Brevo → Contacts → Settings → Contact attributes → adaugă atribut tip **Text** cu numele exact `ALERT_STORES`. Fără el, tag-ul de magazin se pierde silențios (Brevo ignoră atribute necunoscute). |
 | Proiectul Supabase (`reviews`) se poate re-pauza automat | Free tier — pauzează după ~1 săptămână fără activitate API | Dacă recenziile dispar brusc, verifică status proiect (Supabase dashboard sau MCP `list_projects`) și repornește cu `restore_project`. Risc recurent pe free tier dacă traficul pe `/cod-reducere/*` scade. |
@@ -394,7 +395,15 @@ Quicklinks: `https://event.2performant.com/events/click?ad_type=quicklink&aff_co
 
 - **Extension ID:** `mahfankpalkgognhnllkgdkjncmmkllb`
 - **Cod sursă:** `extension/` folder
-- **Status:** trimis spre review 2026-05-26 (verifică manual în Chrome Web Store Developer Dashboard pentru status curent — nu e tracked automat)
+- **Status (confirmat 01.07.2026): pagina Chrome Web Store arată "nu a fost găsită"** — trimisă spre
+  review pe 26.05.2026, acum (peste o lună) listarea nu mai rezolvă. Probabil respinsă la review sau
+  eliminată. **Alex trebuie să verifice manual în Chrome Web Store Developer Dashboard** (Claude nu are
+  acces — WebFetch e blocat de ecranul de consimțământ Google) motivul exact și să retrimită dacă e cazul.
+- **Fix aplicat 01.07.2026**: `/extensie` trimitea vizitatori activ către linkul mort (2 CTA-uri + JSON-LD
+  `url`). Înlocuit cu mesaj onest "În curs de aprobare" + CTA "Anunță-mă când e disponibilă" → `/newsletter`
+  (captează lead-ul in loc sa piarda vizitatorul pe un link mort). Mesajul din `AnuntAnimat.tsx` (bara de
+  sus) actualizat la fel — nu mai pretinde "disponibilă". **Nu reintroduce linkul chromewebstore.google.com
+  direct pana Alex confirma ca extensia e din nou LIVE (aprobata).**
 
 ---
 
