@@ -83,15 +83,15 @@ export default function ReviewSection({ magazin }: { magazin: string }) {
     : null;
 
   return (
-    <section className="mt-10 pt-8 border-t border-gray-100">
+    <section className="mt-10 pt-8 border-t border-slate-800">
       <div className="flex items-center justify-between mb-6">
         <div>
-          <h2 className="text-lg font-black text-gray-900">Recenzii cumparatori</h2>
+          <h2 className="text-lg font-black text-white">Recenzii cumparatori</h2>
           {medieStele && (
             <div className="flex items-center gap-2 mt-1">
-              <span className="text-2xl font-black text-amber-500">{medieStele}</span>
+              <span className="text-2xl font-black text-amber-400">{medieStele}</span>
               <Stele value={Math.round(Number(medieStele))} />
-              <span className="text-xs text-gray-400">({reviews.length} {reviews.length === 1 ? "recenzie" : "recenzii"})</span>
+              <span className="text-xs text-slate-500">({reviews.length} {reviews.length === 1 ? "recenzie" : "recenzii"})</span>
             </div>
           )}
         </div>
@@ -101,45 +101,45 @@ export default function ReviewSection({ magazin }: { magazin: string }) {
       {loading ? (
         <div className="space-y-3 mb-8">
           {[1, 2].map(i => (
-            <div key={i} className="bg-gray-50 rounded-2xl p-4 animate-pulse">
-              <div className="h-3 w-24 bg-gray-200 rounded mb-2" />
-              <div className="h-3 w-full bg-gray-100 rounded mb-1" />
-              <div className="h-3 w-3/4 bg-gray-100 rounded" />
+            <div key={i} className="bg-slate-900 rounded-2xl p-4 animate-pulse">
+              <div className="h-3 w-24 bg-slate-800 rounded mb-2" />
+              <div className="h-3 w-full bg-slate-800 rounded mb-1" />
+              <div className="h-3 w-3/4 bg-slate-800 rounded" />
             </div>
           ))}
         </div>
       ) : reviews.length > 0 ? (
         <div className="space-y-3 mb-8">
           {reviews.map(r => (
-            <div key={r.id} className="bg-gray-50 border border-gray-100 rounded-2xl p-4">
+            <div key={r.id} className="bg-slate-900 border border-slate-800 rounded-2xl p-4">
               <div className="flex items-start justify-between gap-2 mb-2">
                 <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-sm font-black text-indigo-300">
+                  <div className="w-8 h-8 rounded-full bg-indigo-600/20 flex items-center justify-center text-sm font-black text-indigo-400">
                     {r.nume.charAt(0).toUpperCase()}
                   </div>
                   <div>
-                    <p className="text-sm font-bold text-gray-900">{r.nume}</p>
-                    <p className="text-[10px] text-gray-400">{formatData(r.created_at)}</p>
+                    <p className="text-sm font-bold text-white">{r.nume}</p>
+                    <p className="text-[10px] text-slate-500">{formatData(r.created_at)}</p>
                   </div>
                 </div>
                 <Stele value={r.stele} />
               </div>
-              <p className="text-sm text-gray-600 leading-relaxed">{r.text}</p>
+              <p className="text-sm text-slate-400 leading-relaxed">{r.text}</p>
             </div>
           ))}
         </div>
       ) : (
-        <p className="text-sm text-gray-400 italic mb-8">Fii primul care lasa o recenzie pentru acest magazin.</p>
+        <p className="text-sm text-slate-500 italic mb-8">Fii primul care lasa o recenzie pentru acest magazin.</p>
       )}
 
       {/* Formular */}
-      <div className="bg-cyan-50 border border-cyan-100 rounded-2xl p-5">
-        <h3 className="font-black text-gray-900 text-sm mb-4">Lasa o recenzie</h3>
+      <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5">
+        <h3 className="font-black text-white text-sm mb-4">Lasa o recenzie</h3>
         {trimis ? (
           <div className="text-center py-4">
             <div className="text-3xl mb-2">&#9989;</div>
-            <p className="font-bold text-gray-900 text-sm">Multumim pentru recenzie!</p>
-            <p className="text-xs text-gray-500 mt-1">Va aparea dupa aprobare (de obicei in 24h).</p>
+            <p className="font-bold text-white text-sm">Multumim pentru recenzie!</p>
+            <p className="text-xs text-slate-400 mt-1">Va aparea dupa aprobare (de obicei in 24h).</p>
             <button onClick={() => setTrimis(false)} className="mt-3 text-xs text-indigo-400 hover:underline">
               Adauga alta recenzie
             </button>
@@ -147,7 +147,7 @@ export default function ReviewSection({ magazin }: { magazin: string }) {
         ) : (
           <form onSubmit={handleSubmit} className="space-y-3">
             <div>
-              <p className="text-xs font-semibold text-gray-600 mb-1.5">Rating *</p>
+              <p className="text-xs font-semibold text-slate-400 mb-1.5">Rating *</p>
               <Stele value={stele} onChange={setStele} />
             </div>
             <div>
@@ -157,7 +157,7 @@ export default function ReviewSection({ magazin }: { magazin: string }) {
                 value={nume}
                 onChange={e => setNume(e.target.value)}
                 maxLength={50}
-                className="w-full border border-gray-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white"
+                className="w-full bg-slate-800 border border-slate-700 text-white placeholder:text-slate-500 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
               />
             </div>
             <div>
@@ -168,19 +168,19 @@ export default function ReviewSection({ magazin }: { magazin: string }) {
                 rows={3}
                 maxLength={500}
                 required
-                className="w-full border border-gray-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white resize-none"
+                className="w-full bg-slate-800 border border-slate-700 text-white placeholder:text-slate-500 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 resize-none"
               />
-              <p className="text-[10px] text-gray-400 text-right mt-0.5">{text.length}/500</p>
+              <p className="text-[10px] text-slate-500 text-right mt-0.5">{text.length}/500</p>
             </div>
-            {eroare && <p className="text-xs text-red-500 font-medium">{eroare}</p>}
+            {eroare && <p className="text-xs text-red-400 font-medium">{eroare}</p>}
             <button
               type="submit"
               disabled={submitting}
-              className="w-full bg-indigo-600 hover:bg-indigo-500 disabled:bg-indigo-300 text-white font-bold py-2.5 rounded-xl text-sm transition-colors"
+              className="w-full bg-indigo-600 hover:bg-indigo-500 disabled:bg-indigo-800 text-white font-bold py-2.5 rounded-xl text-sm transition-colors"
             >
               {submitting ? "Se trimite..." : "Trimite recenzia"}
             </button>
-            <p className="text-[10px] text-gray-400 text-center">
+            <p className="text-[10px] text-slate-500 text-center">
               Recenziile sunt moderate inainte de publicare.
             </p>
           </form>

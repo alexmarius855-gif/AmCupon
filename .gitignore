@@ -35,3 +35,4 @@ data/video-today/
 # OS
 .DS_Store
 Thumbs.db
+*-ORIGINAL-BACKUP.png

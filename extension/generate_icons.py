@@ -19,7 +19,8 @@ os.makedirs(ICONS_DIR, exist_ok=True)
 
 # Culori brand AmCupon
 BG_DARK   = (15, 23, 42)    # slate-950  #0f172a
-EMERALD   = (16, 185, 129)  # emerald-500 #10b981
+INDIGO    = (99, 102, 241)  # indigo-500 #6366f1
+CYAN      = (34, 211, 238)  # cyan-400   #22d3ee
 WHITE     = (255, 255, 255)
 
 
@@ -27,9 +28,9 @@ def make_icon(size: int) -> Image.Image:
     img  = Image.new("RGBA", (size, size), (0, 0, 0, 0))
     draw = ImageDraw.Draw(img)
 
-    # Fundal rotunjit
+    # Fundal rotunjit — indigo solid (aceeasi pilula "Am" din navbar/logo)
     radius = size // 4
-    draw.rounded_rectangle([0, 0, size - 1, size - 1], radius=radius, fill=BG_DARK)
+    draw.rounded_rectangle([0, 0, size - 1, size - 1], radius=radius, fill=INDIGO)
 
     # Litera "A" in emerald, centrata
     font_size = int(size * 0.58)
@@ -48,16 +49,20 @@ def make_icon(size: int) -> Image.Image:
     tx   = (size - tw) // 2 - bbox[0]
     ty   = (size - th) // 2 - bbox[1] - size // 16  # mic offset vizual
 
-    draw.text((tx, ty), text, fill=EMERALD, font=font)
+    draw.text((tx, ty), text, fill=WHITE, font=font)
 
-    # Punct mic verde jos-dreapta (indicator "live")
+    # Punct mic cyan jos-dreapta (indicator "live") — pe fundal indigo, cu contur pt contrast
     if size >= 48:
         dot_r = max(3, size // 10)
         dot_x = size - dot_r - size // 12
         dot_y = size - dot_r - size // 12
         draw.ellipse(
+            [dot_x - dot_r - 2, dot_y - dot_r - 2, dot_x + dot_r + 2, dot_y + dot_r + 2],
+            fill=INDIGO,
+        )
+        draw.ellipse(
             [dot_x - dot_r, dot_y - dot_r, dot_x + dot_r, dot_y + dot_r],
-            fill=(34, 197, 94),  # green-500
+            fill=CYAN,
         )
 
     return img

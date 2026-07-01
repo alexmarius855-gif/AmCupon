@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function TermeniPage() {
   return (
     <div className="min-h-screen bg-slate-950">
-      <header className="bg-white border-b border-slate-800 shadow-sm">
+      <header className="bg-slate-950 border-b border-slate-800">
         <div className="max-w-4xl mx-auto px-4 py-3 flex items-center gap-2">
           <Link href="/" className="flex items-center gap-1.5">
             <div className="bg-indigo-600 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
@@ -23,7 +23,7 @@ export default function TermeniPage() {
         <h1 className="text-3xl font-black text-white mb-2">Termeni și Condiții</h1>
         <p className="text-sm text-slate-500 mb-8">Ultima actualizare: Mai 2026</p>
 
-        <div className="bg-white rounded-2xl border border-slate-800 p-8 space-y-8 text-slate-300 leading-relaxed">
+        <div className="bg-slate-900 rounded-2xl border border-slate-800 p-8 space-y-8 text-slate-300 leading-relaxed">
 
           <section>
             <h2 className="text-xl font-black text-white mb-3">1. Despre AmCupon.ro</h2>

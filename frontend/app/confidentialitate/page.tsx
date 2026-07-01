@@ -9,14 +9,14 @@ export const metadata: Metadata = {
 export default function ConfidentialitatePage() {
   return (
     <div className="min-h-screen bg-slate-950">
-      <header className="bg-white border-b border-slate-800 shadow-sm">
+      <header className="bg-slate-950 border-b border-slate-800">
         <div className="max-w-4xl mx-auto px-4 py-3 flex items-center gap-2">
           <Link href="/" className="flex items-center gap-1.5">
             <div className="bg-indigo-600 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
             <span className="font-black text-white text-xl">Cupon</span>
             <span className="text-indigo-400 font-black text-xl">.ro</span>
           </Link>
-          <span className="text-gray-300 mx-1">/</span>
+          <span className="text-slate-600 mx-1">/</span>
           <span className="text-sm font-semibold text-slate-400">Politică de Confidențialitate</span>
         </div>
       </header>
@@ -25,7 +25,7 @@ export default function ConfidentialitatePage() {
         <h1 className="text-3xl font-black text-white mb-2">Politică de Confidențialitate</h1>
         <p className="text-sm text-slate-500 mb-8">Ultima actualizare: Mai 2026 · Conform GDPR (Regulamentul UE 2016/679)</p>
 
-        <div className="bg-white rounded-2xl border border-slate-800 p-8 space-y-8 text-slate-300 leading-relaxed">
+        <div className="bg-slate-900 rounded-2xl border border-slate-800 p-8 space-y-8 text-slate-300 leading-relaxed">
 
           <section>
             <h2 className="text-xl font-black text-white mb-3">1. Cine suntem (Operatorul de date)</h2>
@@ -56,7 +56,7 @@ export default function ConfidentialitatePage() {
             <h2 className="text-xl font-black text-white mb-3">3. Scopul prelucrării datelor</h2>
             <table className="w-full text-sm border-collapse">
               <thead>
-                <tr className="bg-slate-900">
+                <tr className="bg-slate-800">
                   <th className="text-left p-3 border border-slate-800 font-bold">Date</th>
                   <th className="text-left p-3 border border-slate-800 font-bold">Scop</th>
                   <th className="text-left p-3 border border-slate-800 font-bold">Temei legal</th>

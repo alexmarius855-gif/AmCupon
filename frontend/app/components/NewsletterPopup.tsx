@@ -100,33 +100,36 @@ export default function NewsletterPopup() {
       className="fixed inset-0 z-[100] flex items-end sm:items-center justify-center p-4 bg-black/40 backdrop-blur-sm"
       onClick={(e) => e.target === e.currentTarget && close()}
     >
-      <div className="bg-white rounded-3xl shadow-2xl w-full max-w-md overflow-hidden animate-in slide-in-from-bottom-4 duration-300">
+      <div className="bg-slate-900 border border-slate-800 rounded-3xl shadow-2xl w-full max-w-md overflow-hidden animate-in slide-in-from-bottom-4 duration-300">
 
-        {/* Header gradient */}
-        <div className="bg-gradient-to-r from-indigo-600 to-violet-600 px-6 pt-6 pb-8 text-white text-center relative">
+        {/* Header */}
+        <div className="relative bg-slate-950 overflow-hidden px-6 pt-6 pb-8 text-center">
+          <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 80% at 50% 0%, rgba(79,70,229,0.25) 0%, transparent 70%)" }} />
           <button
             onClick={close}
-            className="absolute top-4 right-4 text-white/70 hover:text-white transition-colors text-xl font-bold"
+            className="absolute z-10 top-4 right-4 text-slate-500 hover:text-white transition-colors text-xl font-bold"
           >
             &#x2715;
           </button>
-          <div className="text-4xl mb-2">&#127873;</div>
-          <h2 className="text-xl font-black mb-1">Reduceri exclusive pe email</h2>
-          <p className="text-cyan-100 text-sm">
-            Fii primul care afla codurile zilei &mdash; gratuit, fara spam
-          </p>
+          <div className="relative z-10">
+            <div className="text-4xl mb-2">&#127873;</div>
+            <h2 className="text-xl font-black mb-1 text-white">Reduceri exclusive pe email</h2>
+            <p className="text-slate-400 text-sm">
+              Fii primul care afla codurile zilei &mdash; gratuit, fara spam
+            </p>
+          </div>
         </div>
 
         {/* Beneficii */}
-        <div className="px-6 py-4 bg-cyan-50 border-b border-cyan-100">
-          <div className="flex flex-col gap-1.5 text-sm text-gray-700">
+        <div className="px-6 py-4 bg-slate-900 border-b border-slate-800">
+          <div className="flex flex-col gap-1.5 text-sm text-slate-300">
             {[
               "Coduri exclusive inainte de toti",
               "Alert instant cand apare o oferta buna",
               "Zero spam - dezabonare cu un click",
             ].map((b, i) => (
               <span key={i} className="font-medium flex items-center gap-1.5">
-                <span className="text-emerald-500">&#10003;</span> {b}
+                <span className="text-emerald-400">&#10003;</span> {b}
               </span>
             ))}
           </div>
@@ -137,8 +140,8 @@ export default function NewsletterPopup() {
           {status === "success" ? (
             <div className="text-center py-4">
               <div className="text-4xl mb-2">&#127881;</div>
-              <p className="font-black text-gray-900 text-lg">Multumim!</p>
-              <p className="text-gray-500 text-sm mt-1">
+              <p className="font-black text-white text-lg">Multumim!</p>
+              <p className="text-slate-400 text-sm mt-1">
                 Vei primi cele mai bune oferte pe email.
               </p>
             </div>
@@ -150,11 +153,11 @@ export default function NewsletterPopup() {
                 onChange={(e) => { setEmail(e.target.value); setStatus("idle"); setErrMsg(""); }}
                 placeholder="adresa@email.ro"
                 required
-                className="w-full border-2 border-gray-200 rounded-2xl px-4 py-3 text-sm focus:outline-none focus:border-indigo-400 transition-colors"
+                className="w-full bg-slate-800 border-2 border-slate-700 text-white rounded-2xl px-4 py-3 text-sm focus:outline-none focus:border-indigo-500 transition-colors placeholder:text-slate-500"
               />
 
               {status === "error" && errMsg && (
-                <p className="text-red-500 text-xs">{errMsg}</p>
+                <p className="text-red-400 text-xs">{errMsg}</p>
               )}
 
               <button
@@ -165,7 +168,7 @@ export default function NewsletterPopup() {
                 {status === "loading" ? "Se trimite..." : "Vreau reduceri exclusive →"}
               </button>
 
-              <p className="text-xs text-gray-400 text-center">
+              <p className="text-xs text-slate-500 text-center">
                 Prin abonare esti de acord cu{" "}
                 <Link href="/confidentialitate" className="underline hover:text-indigo-400">
                   politica de confidentialitate

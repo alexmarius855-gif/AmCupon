@@ -12,6 +12,31 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 30.06.2026 (audit vizual + rebrand imagini — PUSHED):**
+- **Audit real pe cod** (agent Explore) a găsit pagini "uitate" din migrarea dark theme + portocaliu/violet ramas.
+  Reparate: `CategorieClient.tsx` (template pt TOATE paginile `/categorii/[slug]` — era light theme complet +
+  hero violet), `NewsletterPopup.tsx` (modal peste TOT site-ul — era light+violet), `ReviewSection.tsx`
+  (pe toate paginile de magazin — carduri light pe pagina dark), `not-found.tsx`, `ContactForm.tsx`,
+  `contact/page.tsx`, `cautare/page.tsx`, `confidentialitate/page.tsx`, `termeni/page.tsx`,
+  `NisaProduse.tsx` (componenta folosita in pagini de nisa), `gaming/page.tsx` + `smart-home/page.tsx`
+  (hero-uri purple/amber + array-uri curcubeu `CULORI_BADGE` → indigo unic).
+- **Rebrand imagini complet — logo-ul "AC" (favicon/PWA/OG) avea gradient violet→portocaliu**, decizie
+  explicită Alex sa fie schimbat la indigo→cyan pentru consistenta totala cu UI-ul. `scripts/recolor_logo_indigo.py`
+  recoloreaza shape-ul EXACT (stele/contur/ticket) prin remapare de nuanta HSV (nu recreeaza logo-ul).
+  Backup original: `frontend/public/logo-ac-ORIGINAL-BACKUP.png` (gitignored, local only).
+  Regenerat din noul logo: `icon-192/512/maskable-512.png` (`scripts/regenerate_favicons.py`),
+  `og-image.png` (`scripts/generate_og_image.py`, count 370+→1000+).
+- **Coperta Facebook** (`facebook-cover.png`) nu avea generator — era facuta manual, portocalie, nemaiactualizata.
+  Generator nou `scripts/generate_facebook_cover.py`: wordmark identic cu navbar-ul ("Am" pill indigo +
+  "Cupon" alb + ".ro" indigo), badge-uri cu reduceri REALE trase din output.json (nu text fictiv).
+  Ruleaza manual (nu e in pipeline-ul automat 4h — o coperta nu trebuie sa se schimbe des).
+- **`generate_banner_auto.py` (bannere zilnice social)**: paleta portocalie hardcodata (constante ORANGE*
+  + zeci de tuple rgba literale) → indigo (INDIGO*). Bug separat gasit si reparat: emoji-urile categorie
+  (📚💊 etc) si checkmark-ul ✓ nu se randau cu fonturile de sistem PIL (Arial/DejaVu) — aparea patratel gol
+  ("tofu box"). Inlocuite cu un punct/marcaj indigo desenat vectorial (nu text unicode).
+- **Iconita extensie Chrome** (`extension/generate_icons.py`): fundal slate + litera "A" emerald + punct
+  verde → fundal indigo solid + litera alba + punct cyan (aliniat cu wordmark-ul "Am" din navbar).
+
 > **⭐ PLAN MASTER (strategie):** vezi `PLAN-MASTER.md` în root — busola pentru 1000 afiliați,
 > 100 site-uri, 200-500€/site/lună. Oglindit în Notion (hub "IMPERIU CLAUDE"). Citește-l la
 > începutul oricărei sesiuni strategice. `CLAUDE.md` = adevărul TEHNIC, `PLAN-MASTER.md` = adevărul de BUSINESS.

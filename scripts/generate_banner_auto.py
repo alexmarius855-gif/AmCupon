@@ -40,9 +40,9 @@ OUT_ST_PUB  = PUBLIC_DIR / "banner-story.png"
 # ── Culori brand ─────────────────────────────────────────────────────────────
 BG_DARK     = (15, 23, 42)      # #0f172a
 BG_MID      = (26, 39, 68)      # #1a2744
-ORANGE      = (249, 115, 22)    # #f97316
-ORANGE_DARK = (234, 88, 12)     # #ea580c
-ORANGE_DIM  = (251, 146, 60)    # #fb923c
+INDIGO      = (99, 102, 241)    # #6366f1
+INDIGO_DARK = (79, 70, 229)     # #4f46e5
+INDIGO_DIM  = (129, 140, 248)    # #818cf8
 WHITE       = (248, 250, 252)   # #f8fafc
 GRAY        = (148, 163, 184)   # #94a3b8
 GRAY_DARK   = (71, 85, 105)     # #475569
@@ -136,8 +136,8 @@ def draw_gradient_bg(img: Image.Image, w: int, h: int):
 
 
 def draw_grid(draw: ImageDraw.Draw, w: int, h: int, step: int = 50):
-    """Grid subtil portocaliu."""
-    color = (249, 115, 22, 9)  # foarte transparent
+    """Grid subtil indigo."""
+    color = (99, 102, 241, 9)  # foarte transparent
     for x in range(0, w, step):
         draw.line([(x, 0), (x, h)], fill=(249//10, 115//10, 22//10))
     for y in range(0, h, step):
@@ -145,7 +145,7 @@ def draw_grid(draw: ImageDraw.Draw, w: int, h: int, step: int = 50):
 
 
 def draw_glow(img: Image.Image, cx: int, cy: int, radius: int, alpha: int = 30):
-    """Cerc glow portocaliu radial."""
+    """Cerc glow indigo radial."""
     from PIL import Image as PILImage
     overlay = PILImage.new("RGBA", img.size, (0, 0, 0, 0))
     d = ImageDraw.Draw(overlay)
@@ -154,7 +154,7 @@ def draw_glow(img: Image.Image, cx: int, cy: int, radius: int, alpha: int = 30):
         r = int(radius * i / steps)
         a = int(alpha * (steps - i + 1) / steps)
         d.ellipse([cx - r, cy - r, cx + r, cy + r],
-                  fill=(ORANGE[0], ORANGE[1], ORANGE[2], a))
+                  fill=(INDIGO[0], INDIGO[1], INDIGO[2], a))
     img.paste(overlay, mask=overlay.split()[3])
 
 
@@ -216,20 +216,20 @@ def create_square_banner(magazine: list, data_str: str, zi_name: str) -> Image.I
     pill_w, pill_h = 200, 38
     draw_rounded_rect(draw, [pill_x, pill_y, pill_x + pill_w, pill_y + pill_h],
                       radius=19,
-                      fill=(249, 115, 22, 0),  # transparent fill
+                      fill=(99, 102, 241, 0),  # transparent fill
                       outline=None)
     # manual semi-transparent fill
     pill_img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     pd = ImageDraw.Draw(pill_img)
     pd.rounded_rectangle([pill_x, pill_y, pill_x + pill_w, pill_y + pill_h],
-                          radius=19, fill=(249, 115, 22, 30),
-                          outline=(249, 115, 22, 100), width=2)
+                          radius=19, fill=(99, 102, 241, 30),
+                          outline=(99, 102, 241, 100), width=2)
     img.paste(pill_img, mask=pill_img.split()[3])
     draw = ImageDraw.Draw(img)
 
     font_pill = load_font(15, bold=True)
-    draw.text((pill_x + 26, pill_y + 10), "AmCupon.ro", font=font_pill, fill=ORANGE_DIM)
-    draw.ellipse([pill_x + 10, pill_y + 14, pill_x + 18, pill_y + 22], fill=ORANGE)
+    draw.text((pill_x + 26, pill_y + 10), "AmCupon.ro", font=font_pill, fill=INDIGO_DIM)
+    draw.ellipse([pill_x + 10, pill_y + 14, pill_x + 18, pill_y + 22], fill=INDIGO)
 
     # Tag "Verificat zilnic" — dreapta
     tag_text = "Verificat zilnic"
@@ -242,7 +242,7 @@ def create_square_banner(magazine: list, data_str: str, zi_name: str) -> Image.I
                           outline=(34, 197, 94, 76), width=1)
     img.paste(tag_img, mask=tag_img.split()[3])
     draw = ImageDraw.Draw(img)
-    draw.text((W - 52 - tag_w + 18, pill_y + 10), f"✓ {tag_text}",
+    draw.text((W - 52 - tag_w + 18, pill_y + 10), tag_text,
               font=font_tag, fill=GREEN)
 
     # ── Hero text ─────────────────────────────────────────────────────────────
@@ -254,7 +254,7 @@ def create_square_banner(magazine: list, data_str: str, zi_name: str) -> Image.I
     draw.text((W // 2, hero_y), "Coduri de reducere", font=font_h1_big,
               fill=WHITE, anchor="mt")
     draw.text((W // 2, hero_y + 56), "verificate zilnic", font=font_h1_big,
-              fill=ORANGE, anchor="mt")
+              fill=INDIGO, anchor="mt")
     draw.text((W // 2, hero_y + 56 + 60), f"Oferte active la {len(magazine)}+ magazine",
               font=font_sub, fill=GRAY, anchor="mt")
 
@@ -280,18 +280,16 @@ def create_square_banner(magazine: list, data_str: str, zi_name: str) -> Image.I
         # Card background
         card_img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         cd = ImageDraw.Draw(card_img)
-        border_color = (249, 115, 22, 100) if has_cod else (45, 63, 87, 200)
-        bg_fill = (249, 115, 22, 15) if has_cod else (30, 41, 59, 216)
+        border_color = (99, 102, 241, 100) if has_cod else (45, 63, 87, 200)
+        bg_fill = (99, 102, 241, 15) if has_cod else (30, 41, 59, 216)
         cd.rounded_rectangle([cx, cy, cx + card_w, cy + card_h],
                                radius=14, fill=bg_fill, outline=border_color, width=1)
         img.paste(card_img, mask=card_img.split()[3])
         draw = ImageDraw.Draw(img)
 
-        # Emoji categorie
+        # Marcaj categorie (punct accent — emoji nu se randeaza corect cu fonturi sistem PIL)
         cat_slug = m.get("categorie_slug", "")
-        emoji_str = CATEGORII_EMOJI.get(cat_slug, "🛍️")
-        font_emoji = load_font(28)
-        draw.text((cx + 14, cy + 14), emoji_str, font=font_emoji, fill=WHITE)
+        draw.ellipse([cx + 16, cy + 20, cx + 30, cy + 34], fill=INDIGO)
 
         # Nume magazin
         name = m.get("magazin", "").split(".")[0].capitalize()[:18]
@@ -309,7 +307,7 @@ def create_square_banner(magazine: list, data_str: str, zi_name: str) -> Image.I
         badge_img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         bd = ImageDraw.Draw(badge_img)
         bd.rounded_rectangle([badge_x, badge_y, badge_x + 56, badge_y + 26],
-                               radius=13, fill=(249, 115, 22, 255))
+                               radius=13, fill=(99, 102, 241, 255))
         img.paste(badge_img, mask=badge_img.split()[3])
         draw = ImageDraw.Draw(img)
         font_badge = load_font(12, bold=True)
@@ -323,35 +321,35 @@ def create_square_banner(magazine: list, data_str: str, zi_name: str) -> Image.I
             kd = ImageDraw.Draw(code_img)
             kd.rounded_rectangle([cx + 14, cy + card_h - 40,
                                    cx + 14 + len(cod) * 9 + 20, cy + card_h - 16],
-                                   radius=5, fill=(249, 115, 22, 26),
-                                   outline=(249, 115, 22, 76), width=1)
+                                   radius=5, fill=(99, 102, 241, 26),
+                                   outline=(99, 102, 241, 76), width=1)
             img.paste(code_img, mask=code_img.split()[3])
             draw = ImageDraw.Draw(img)
             font_cod = load_font(11, bold=True)
             draw.text((cx + 24, cy + card_h - 36), cod,
-                      font=font_cod, fill=ORANGE)
+                      font=font_cod, fill=INDIGO)
 
     # ── Stats bar ─────────────────────────────────────────────────────────────
     stats_y = card_y_start + 2 * (card_h + gap_y) + 22
     stats_img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     sd = ImageDraw.Draw(stats_img)
     sd.rounded_rectangle([52, stats_y, W - 52, stats_y + 90],
-                          radius=18, fill=(249, 115, 22, 15),
-                          outline=(249, 115, 22, 50), width=1)
+                          radius=18, fill=(99, 102, 241, 15),
+                          outline=(99, 102, 241, 50), width=1)
     img.paste(stats_img, mask=stats_img.split()[3])
     draw = ImageDraw.Draw(img)
 
     font_val = load_font(24, bold=True)
     font_lbl = load_font(11)
     stats = [
-        ("300+", "Magazine"),
+        ("1000+", "Magazine"),
         ("100%", "Gratuit"),
         ("Zilnic", "Actualizat"),
     ]
     col_w = (W - 104) // 3
     for i, (val, lbl) in enumerate(stats):
         sx = 52 + i * col_w + col_w // 2
-        draw.text((sx, stats_y + 14), val, font=font_val, fill=ORANGE, anchor="mt")
+        draw.text((sx, stats_y + 14), val, font=font_val, fill=INDIGO, anchor="mt")
         draw.text((sx, stats_y + 54), lbl, font=font_lbl, fill=GRAY_DARK, anchor="mt")
         if i < 2:  # separator
             draw.line([(52 + (i + 1) * col_w, stats_y + 20),
@@ -366,7 +364,7 @@ def create_square_banner(magazine: list, data_str: str, zi_name: str) -> Image.I
     cta_h = 52
     cta_x = (W - cta_w) // 2
     ctad.rounded_rectangle([cta_x, footer_y, cta_x + cta_w, footer_y + cta_h],
-                             radius=26, fill=(249, 115, 22, 255))
+                             radius=26, fill=(99, 102, 241, 255))
     img.paste(cta_img, mask=cta_img.split()[3])
     draw = ImageDraw.Draw(img)
     font_cta = load_font(17, bold=True)
@@ -395,19 +393,19 @@ def create_story_banner(magazine: list, data_str: str) -> Image.Image:
     pill_img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     pd = ImageDraw.Draw(pill_img)
     pd.rounded_rectangle([W//2 - 120, 80, W//2 + 120, 126],
-                          radius=23, fill=(249, 115, 22, 30),
-                          outline=(249, 115, 22, 100), width=2)
+                          radius=23, fill=(99, 102, 241, 30),
+                          outline=(99, 102, 241, 100), width=2)
     img.paste(pill_img, mask=pill_img.split()[3])
     draw = ImageDraw.Draw(img)
     font_brand = load_font(18, bold=True)
-    draw.ellipse([W//2 - 104, 96, W//2 - 88, 112], fill=ORANGE)
-    draw.text((W//2 - 70, 88), "AmCupon.ro", font=font_brand, fill=ORANGE_DIM)
+    draw.ellipse([W//2 - 104, 96, W//2 - 88, 112], fill=INDIGO)
+    draw.text((W//2 - 70, 88), "AmCupon.ro", font=font_brand, fill=INDIGO_DIM)
 
     # Hero
     font_big = load_font(64, bold=True)
     font_mid = load_font(22)
     draw.text((W//2, 190), "Coduri de", font=font_big, fill=WHITE, anchor="mt")
-    draw.text((W//2, 270), "reducere", font=font_big, fill=ORANGE, anchor="mt")
+    draw.text((W//2, 270), "reducere", font=font_big, fill=INDIGO, anchor="mt")
     draw.text((W//2, 360), "verificate zilnic", font=font_mid, fill=GRAY, anchor="mt")
 
     # Cards x5
@@ -421,13 +419,12 @@ def create_story_banner(magazine: list, data_str: str) -> Image.Image:
         has_cod = bool(promo.get("cod_cupon"))
         disc_str = format_discount_short(m)
         cat_slug = m.get("categorie_slug", "")
-        emoji_str = CATEGORII_EMOJI.get(cat_slug, "🛍️")
         name = m.get("magazin", "").split(".")[0].capitalize()[:20]
 
         ci = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         cd = ImageDraw.Draw(ci)
-        border_col = (249, 115, 22, 100) if has_cod else (45, 63, 87, 200)
-        bg_c = (249, 115, 22, 15) if has_cod else (30, 41, 59, 216)
+        border_col = (99, 102, 241, 100) if has_cod else (45, 63, 87, 200)
+        bg_c = (99, 102, 241, 15) if has_cod else (30, 41, 59, 216)
         cd.rounded_rectangle([52, card_y, W - 52, card_y + card_h],
                                radius=16, fill=bg_c, outline=border_col, width=1)
         img.paste(ci, mask=ci.split()[3])
@@ -438,7 +435,7 @@ def create_story_banner(magazine: list, data_str: str) -> Image.Image:
         font_cat2 = load_font(13)
         font_bll = load_font(14, bold=True)
 
-        draw.text((80, card_y + 28), emoji_str, font=font_emo, fill=WHITE)
+        draw.ellipse([88, card_y + 40, 108, card_y + 60], fill=INDIGO)
         draw.text((140, card_y + 24), name, font=font_nm, fill=WHITE)
         cat_lbl = CATEGORII_LABEL.get(cat_slug, cat_slug.title())[:20]
         draw.text((140, card_y + 52), cat_lbl, font=font_cat2, fill=GRAY_DARK)
@@ -448,7 +445,7 @@ def create_story_banner(magazine: list, data_str: str) -> Image.Image:
         bi = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         bd = ImageDraw.Draw(bi)
         bd.rounded_rectangle([bx, card_y + 20, bx + 68, card_y + 48],
-                               radius=14, fill=(249, 115, 22, 255))
+                               radius=14, fill=(99, 102, 241, 255))
         img.paste(bi, mask=bi.split()[3])
         draw = ImageDraw.Draw(img)
         draw.text((bx + 34, card_y + 22), disc_str, font=font_bll, fill=WHITE, anchor="mt")
@@ -458,11 +455,11 @@ def create_story_banner(magazine: list, data_str: str) -> Image.Image:
             ki = Image.new("RGBA", (W, H), (0, 0, 0, 0))
             kd = ImageDraw.Draw(ki)
             kd.rounded_rectangle([140, card_y + 80, 140 + len(cod) * 10 + 24, card_y + 110],
-                                   radius=6, fill=(249, 115, 22, 26),
-                                   outline=(249, 115, 22, 76), width=1)
+                                   radius=6, fill=(99, 102, 241, 26),
+                                   outline=(99, 102, 241, 76), width=1)
             img.paste(ki, mask=ki.split()[3])
             draw = ImageDraw.Draw(img)
-            draw.text((152, card_y + 84), cod, font=load_font(13, bold=True), fill=ORANGE)
+            draw.text((152, card_y + 84), cod, font=load_font(13, bold=True), fill=INDIGO)
 
         card_y += card_h + gap
 
@@ -471,7 +468,7 @@ def create_story_banner(magazine: list, data_str: str) -> Image.Image:
     cta_i = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     ctad = ImageDraw.Draw(cta_i)
     ctad.rounded_rectangle([W//2 - 220, cta_y, W//2 + 220, cta_y + 70],
-                             radius=35, fill=(249, 115, 22, 255))
+                             radius=35, fill=(99, 102, 241, 255))
     img.paste(cta_i, mask=cta_i.split()[3])
     draw = ImageDraw.Draw(img)
     draw.text((W//2, cta_y + 18), "Cauta codul tau →",

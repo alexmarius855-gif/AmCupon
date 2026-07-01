@@ -31,7 +31,7 @@ const CATEGORII_GAMING = [
 ];
 
 function numeAfisat(s: string) { return s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" "); }
-const CULORI_BADGE = ["bg-purple-600","bg-indigo-600","bg-blue-600","bg-violet-600","bg-sky-600","bg-purple-500","bg-blue-500"];
+const CULORI_BADGE = ["bg-indigo-600"];
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Reduceri Gaming 2026","url":"https://amcupon.ro/gaming","description":"Coduri reducere gaming Romania — laptopuri, placi video, monitoare, periferice" };
 
 export default function GamingPage() {
@@ -61,20 +61,20 @@ export default function GamingPage() {
         </nav>
 
         {/* Hero */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-purple-900 via-slate-900 to-indigo-950 py-16 px-4">
+        <section className="relative overflow-hidden bg-gradient-to-br from-indigo-950 via-slate-900 to-slate-950 py-16 px-4">
           <div className="absolute inset-0 pointer-events-none">
-            <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl" />
-            <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-indigo-600/20 rounded-full blur-3xl" />
+            <div className="absolute top-0 left-1/4 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl" />
+            <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-cyan-600/20 rounded-full blur-3xl" />
             <div className="absolute inset-0" style={{backgroundImage:"radial-gradient(circle at 50% 50%, transparent 0%, rgba(15,23,42,0.6) 100%)"}} />
           </div>
           <div className="relative max-w-6xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 bg-purple-500/20 border border-purple-500/30 text-purple-300 text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
-              <span className="w-1.5 h-1.5 rounded-full bg-purple-400 animate-pulse"/>
+            <div className="inline-flex items-center gap-2 bg-indigo-500/20 border border-indigo-500/30 text-indigo-300 text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
+              <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse"/>
               Oferte verificate zilnic
             </div>
             <div className="text-6xl mb-5 drop-shadow-2xl">🎮</div>
             <h1 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">
-              Gaming cu Reducere <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #c084fc, #818cf8)"}}>{an}</span>
+              Gaming cu Reducere <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #818cf8, #22d3ee)"}}>{an}</span>
             </h1>
             <p className="text-slate-300 text-lg mb-8 max-w-xl mx-auto leading-relaxed">
               Laptopuri gaming, placi video, monitoare si periferice — coduri reducere verificate la PCGarage, eMAG, Altex
@@ -90,13 +90,13 @@ export default function GamingPage() {
         {/* Categorii gaming */}
         <section className="max-w-6xl mx-auto px-4 py-12">
           <div className="text-center mb-8">
-            <p className="text-xs font-bold text-purple-400 uppercase tracking-widest mb-2">CATEGORII</p>
+            <p className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-2">CATEGORII</p>
             <h2 className="text-2xl font-black text-white">Echipament gaming pe categorii</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {CATEGORII_GAMING.map((a, i) => (
               <div key={a.titlu}
-                className="group bg-slate-900 border border-slate-800 hover:border-purple-500/40 rounded-2xl p-5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-purple-500/10">
+                className="group bg-slate-900 border border-slate-800 hover:border-indigo-500/40 rounded-2xl p-5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-indigo-500/10">
                 <div className="flex items-center gap-3 mb-3">
                   <div className={`w-10 h-10 rounded-xl flex items-center justify-center text-xl ${CULORI_BADGE[i % CULORI_BADGE.length]}`}>{a.emoji}</div>
                   <h3 className="font-bold text-white text-sm">{a.titlu}</h3>
@@ -122,7 +122,7 @@ export default function GamingPage() {
               const promo = m.promotii[0];
               return (
                 <a key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                  className="group bg-slate-900 border border-slate-800 hover:border-purple-500/50 rounded-2xl p-4 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-purple-500/10">
+                  className="group bg-slate-900 border border-slate-800 hover:border-indigo-500/50 rounded-2xl p-4 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-indigo-500/10">
                   <div className="flex items-center gap-3 mb-3">
                     {m.logo_url ? (
                       <div className="w-10 h-10 rounded-xl overflow-hidden bg-white flex items-center justify-center shrink-0">
@@ -133,7 +133,7 @@ export default function GamingPage() {
                       <div className={`w-10 h-10 rounded-xl ${culoare} flex items-center justify-center text-white font-black text-lg shrink-0`}>{nume[0]}</div>
                     )}
                     <div>
-                      <p className="font-bold text-white text-sm group-hover:text-purple-300 transition-colors">{nume}</p>
+                      <p className="font-bold text-white text-sm group-hover:text-indigo-300 transition-colors">{nume}</p>
                       {m.are_promotie && m.cod_cupon && <span className="text-[10px] font-black text-indigo-400 bg-cyan-500/10 border border-cyan-500/20 px-1.5 py-0.5 rounded-full">COD</span>}
                       {m.are_promotie && !m.cod_cupon && <span className="text-[10px] font-medium text-emerald-400">Oferta activa</span>}
                     </div>
@@ -144,7 +144,7 @@ export default function GamingPage() {
                     <p className="text-slate-600 text-xs italic">Verifica ofertele curente</p>
                   )}
                   <div className="flex justify-end mt-3">
-                    <span className="text-xs text-purple-400 font-semibold group-hover:text-purple-300 flex items-center gap-1">
+                    <span className="text-xs text-indigo-400 font-semibold group-hover:text-indigo-300 flex items-center gap-1">
                       Vezi <svg className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/></svg>
                     </span>
                   </div>
@@ -158,14 +158,14 @@ export default function GamingPage() {
           merchantSlugs={["pcgarage.ro","emag.ro","altex.ro","evomag.ro","flanco.ro","cel.ro"]}
           catSlug="electronice"
           titlu="Produse gaming populare cu reducere"
-          culoareAccent="purple"
+          culoareAccent="indigo"
           limit={12}
         />
 
         {/* Ghid */}
         <section className="bg-slate-900 border-t border-slate-800 py-12 px-4">
           <div className="max-w-3xl mx-auto">
-            <p className="text-xs font-bold text-purple-400 uppercase tracking-widest mb-3">GHID CUMPARATURI</p>
+            <p className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-3">GHID CUMPARATURI</p>
             <h2 className="text-2xl font-black text-white mb-7">Cum cumperi echipament gaming mai ieftin</h2>
             <div className="space-y-6 text-sm text-slate-400 leading-relaxed">
               <div className="bg-slate-800 border border-slate-700 rounded-2xl p-5">
@@ -182,7 +182,7 @@ export default function GamingPage() {
                     ["Campionii de Gaming eMAG","campanie dedicata, reduceri bune la periferice"],
                   ].map(([bold, text]) => (
                     <li key={bold} className="flex gap-2">
-                      <span className="text-purple-400 mt-0.5 shrink-0">→</span>
+                      <span className="text-indigo-400 mt-0.5 shrink-0">→</span>
                       <span><strong className="text-white">{bold}</strong> — {text}</span>
                     </li>
                   ))}
@@ -208,7 +208,7 @@ export default function GamingPage() {
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-purple-500/40 text-slate-300 hover:text-white text-sm font-semibold px-4 py-2 rounded-xl transition-all duration-200">
+                className="bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-indigo-500/40 text-slate-300 hover:text-white text-sm font-semibold px-4 py-2 rounded-xl transition-all duration-200">
                 {l.label}
               </a>
             ))}

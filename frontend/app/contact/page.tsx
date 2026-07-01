@@ -84,7 +84,7 @@ export default function ContactPage() {
             ].map((card) => (
               <div
                 key={card.titlu}
-                className="bg-white rounded-2xl border border-slate-800 shadow-sm p-6 text-center"
+                className="bg-slate-900 rounded-2xl border border-slate-800 shadow-sm p-6 text-center"
               >
                 <div className="text-4xl mb-3">{card.icon}</div>
                 <h2 className="font-bold text-white mb-1">{card.titlu}</h2>
@@ -108,7 +108,7 @@ export default function ContactPage() {
 
             {/* Info box */}
             <div className="space-y-4">
-              <div className="bg-cyan-50 border border-slate-800 rounded-2xl p-6">
+              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
                 <h3 className="font-bold text-white mb-3 flex items-center gap-2">
                   <span>💡</span> Cum te putem ajuta?
                 </h3>

@@ -52,7 +52,7 @@ export default async function CautarePage({ searchParams }: { searchParams: Prom
 
   return (
     <div className="min-h-screen bg-slate-950">
-      <div className="bg-white border-b border-slate-800 sticky top-[64px] z-40 shadow-sm">
+      <div className="bg-slate-950 border-b border-slate-800 sticky top-[64px] z-40">
         <div className="max-w-4xl mx-auto px-4 py-3">
           <form action="/cautare" method="get" className="flex gap-2">
             <div className="relative flex-1">
@@ -122,7 +122,7 @@ export default async function CautarePage({ searchParams }: { searchParams: Prom
                       <p className="font-black text-white text-sm group-hover:text-indigo-300 truncate">{nume}</p>
                       <p className="text-[11px] text-slate-500 mb-1">{m.categorie}</p>
                       {m.are_promotie && m.cod_cupon && (
-                        <span className="text-[10px] font-bold text-indigo-400 bg-cyan-50 border border-cyan-200 px-1.5 py-0.5 rounded-full">Cod cupon</span>
+                        <span className="text-[10px] font-bold text-indigo-400 bg-indigo-500/10 border border-indigo-500/30 px-1.5 py-0.5 rounded-full">Cod cupon</span>
                       )}
                       {m.are_promotie && !m.cod_cupon && (
                         <span className="text-[10px] font-semibold text-cyan-400 bg-slate-900 border border-slate-800 px-1.5 py-0.5 rounded-full">Oferta activa</span>

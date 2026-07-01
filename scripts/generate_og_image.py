@@ -54,7 +54,7 @@ draw.text((tx2, ty2), tagline, font=tag_font, fill=SLATE_300)
 
 # ── Linie discreta jos ──
 small_font = ImageFont.truetype(FONT_REGULAR, 20)
-small = "370+ magazine partenere"
+small = "1000+ magazine partenere"
 tw3, th3, ty_off3 = text_w(small_font, small)
 tx3 = (W - tw3) / 2
 ty3 = H - 56
