@@ -25,6 +25,15 @@ La înscrieri în rețele (Awin sectoare, categorii), bifăm/selectăm verticale
 construim progresiv, nu doar ce avem azi. Ex: AmCupon NU e doar cupoane — devine hub de
 economii + comparații + asigurări + finanțe. Gândire de imperiu, nu de site mic.
 
+**Regula a 3-a (02.07.2026) — CIRCUITUL SEMI-ÎNCHIS:** descoperim nișe → testăm prin
+afiliere (cost ~0) → măsurăm (clickuri/comisioane/trafic) → alegem câștigătoarele →
+construim active PROPRII doar în nișe validate cu bani reali → le promovăm prin canalele
+noastre → reinvestim. Nu construim 1500 de site-uri; construim baza de nișe + scorul +
+primele 10 teste + primele 3 site-uri, apoi multiplicăm ce merge. Sistemul complet:
+**`NISE-MASTER.md`** (reguli + scor + top 10 detaliat) + **`data/nise-master.csv`**
+(50 nișe scorate, sortabile). Faza Shopify/Amazon/reclame plătite = DUPĂ nișe validate,
+cu capitalul alocat din salariu (prima decizie: 05.07.2026).
+
 ---
 
 ## 📊 DRUM CĂTRE 1000 AFILIAȚI
