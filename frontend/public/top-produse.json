@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-30",
+  "updated": "2026-07-01",
   "categorii": [
     {
       "slug": "laptopuri",
@@ -3246,7 +3246,7 @@
               "eticheta": "vidaXL",
               "recomandat": false,
               "pret": 2799,
-              "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fvidaxl.ro",
+              "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vidaxl.ro%2F",
               "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/7190/medium/7190.png"
             }
           ]
@@ -3300,7 +3300,7 @@
               "eticheta": "vidaXL",
               "recomandat": false,
               "pret": 1599,
-              "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fvidaxl.ro",
+              "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vidaxl.ro%2F",
               "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/7190/medium/7190.png"
             }
           ]
@@ -3408,7 +3408,7 @@
               "eticheta": "vidaXL",
               "recomandat": false,
               "pret": 3299,
-              "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fvidaxl.ro",
+              "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vidaxl.ro%2F",
               "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/7190/medium/7190.png"
             }
           ]
@@ -3512,7 +3512,9 @@
               "magazin_slug": "notino.ro",
               "eticheta": "Notino",
               "pret": 389,
-              "recomandat": true
+              "recomandat": true,
+              "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.notino.ro",
+              "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/5876/medium/5876.png"
             },
             {
               "magazin_slug": "douglas.ro",
@@ -3571,7 +3573,9 @@
               "magazin_slug": "notino.ro",
               "eticheta": "Notino",
               "pret": 449,
-              "recomandat": true
+              "recomandat": true,
+              "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.notino.ro",
+              "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/5876/medium/5876.png"
             },
             {
               "magazin_slug": "sephora.ro",
@@ -3628,7 +3632,9 @@
               "magazin_slug": "notino.ro",
               "eticheta": "Notino",
               "pret": 359,
-              "recomandat": true
+              "recomandat": true,
+              "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.notino.ro",
+              "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/5876/medium/5876.png"
             },
             {
               "magazin_slug": "douglas.ro",
@@ -3684,7 +3690,9 @@
               "magazin_slug": "notino.ro",
               "eticheta": "Notino",
               "pret": 419,
-              "recomandat": true
+              "recomandat": true,
+              "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.notino.ro",
+              "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/5876/medium/5876.png"
             },
             {
               "magazin_slug": "emag.ro",
@@ -3742,7 +3750,9 @@
               "magazin_slug": "notino.ro",
               "eticheta": "Notino",
               "pret": 99,
-              "recomandat": true
+              "recomandat": true,
+              "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.notino.ro",
+              "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/5876/medium/5876.png"
             },
             {
               "magazin_slug": "emag.ro",
@@ -3806,7 +3816,9 @@
               "magazin_slug": "notino.ro",
               "eticheta": "Notino",
               "pret": 429,
-              "recomandat": true
+              "recomandat": true,
+              "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.notino.ro",
+              "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/5876/medium/5876.png"
             },
             {
               "magazin_slug": "douglas.ro",
@@ -3865,7 +3877,9 @@
               "magazin_slug": "notino.ro",
               "eticheta": "Notino",
               "pret": 289,
-              "recomandat": true
+              "recomandat": true,
+              "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.notino.ro",
+              "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/5876/medium/5876.png"
             },
             {
               "magazin_slug": "emag.ro",
@@ -3923,7 +3937,9 @@
               "magazin_slug": "notino.ro",
               "eticheta": "Notino",
               "pret": 549,
-              "recomandat": true
+              "recomandat": true,
+              "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.notino.ro",
+              "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/5876/medium/5876.png"
             },
             {
               "magazin_slug": "douglas.ro",
@@ -3980,7 +3996,9 @@
               "magazin_slug": "notino.ro",
               "eticheta": "Notino",
               "pret": 319,
-              "recomandat": true
+              "recomandat": true,
+              "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.notino.ro",
+              "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/5876/medium/5876.png"
             },
             {
               "magazin_slug": "emag.ro",
@@ -4038,7 +4056,9 @@
               "magazin_slug": "notino.ro",
               "eticheta": "Notino",
               "pret": 79,
-              "recomandat": true
+              "recomandat": true,
+              "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.notino.ro",
+              "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/5876/medium/5876.png"
             },
             {
               "magazin_slug": "emag.ro",
@@ -4103,8 +4123,8 @@
               "eticheta": "Decathlon",
               "pret": 549,
               "recomandat": true,
-              "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.decathlon.ro%2Fdeals",
-              "logo_url": ""
+              "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.decathlon.ro",
+              "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11445/medium/11445.png"
             },
             {
               "magazin_slug": "sportisimo.ro",
@@ -4163,8 +4183,8 @@
               "eticheta": "Decathlon",
               "pret": 219,
               "recomandat": true,
-              "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.decathlon.ro%2Fdeals",
-              "logo_url": ""
+              "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.decathlon.ro",
+              "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11445/medium/11445.png"
             },
             {
               "magazin_slug": "sportisimo.ro",
@@ -4222,8 +4242,8 @@
               "eticheta": "Decathlon",
               "pret": 649,
               "recomandat": true,
-              "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.decathlon.ro%2Fdeals",
-              "logo_url": ""
+              "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.decathlon.ro",
+              "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11445/medium/11445.png"
             },
             {
               "magazin_slug": "sportisimo.ro",
@@ -4340,8 +4360,8 @@
               "eticheta": "Decathlon",
               "pret": 159,
               "recomandat": true,
-              "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.decathlon.ro%2Fdeals",
-              "logo_url": ""
+              "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.decathlon.ro",
+              "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11445/medium/11445.png"
             }
           ]
         }
@@ -5533,7 +5553,9 @@
               "magazin_slug": "vidaxl.ro",
               "eticheta": "vidaXL",
               "pret": 1350,
-              "recomandat": false
+              "recomandat": false,
+              "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vidaxl.ro%2F",
+              "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/7190/medium/7190.png"
             }
           ]
         },
@@ -5591,7 +5613,9 @@
               "magazin_slug": "vidaxl.ro",
               "eticheta": "vidaXL",
               "pret": 569,
-              "recomandat": false
+              "recomandat": false,
+              "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vidaxl.ro%2F",
+              "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/7190/medium/7190.png"
             }
           ]
         },
@@ -5642,7 +5666,9 @@
               "magazin_slug": "vidaxl.ro",
               "eticheta": "vidaXL",
               "pret": 949,
-              "recomandat": false
+              "recomandat": false,
+              "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vidaxl.ro%2F",
+              "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/7190/medium/7190.png"
             }
           ]
         },
@@ -5750,7 +5776,9 @@
               "magazin_slug": "vidaxl.ro",
               "eticheta": "vidaXL",
               "pret": 319,
-              "recomandat": false
+              "recomandat": false,
+              "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vidaxl.ro%2F",
+              "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/7190/medium/7190.png"
             }
           ]
         }
