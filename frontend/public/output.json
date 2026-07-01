@@ -785,7 +785,7 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 183,
+    "zile_ramase": 1,
     "promotii": [
       {
         "nume": "Nou pe bookzone.ro: 1200 de titluri în engleză – Un adevărat festin literar!",
@@ -793,6 +793,15 @@
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbookzone.ro%2Fcarti%2Fcarti-in-limba-engleza",
         "zile_ramase": 183
+      },
+      {
+        "nume": "A început EXTRA50 pe bookzone.ro",
+        "descriere": "Pe bookzone.ro, reducerile chiar se simt și ai:\n - 50% EXTRA-reducere la mii de titluri\n - 40%, 30% și 20% EXTRA-reducere\n - 20% EXTRA-reducere la cărțile în limba engleză.\n\nPerioada campaniei: 1 iulie, ora 00:00 - 2 iulie, ora 23:59",
+        "cod_cupon": "",
+        "landing_page": "https://bookzone.ro/campanie/extra-50-pentru-cititori",
+        "zile_ramase": 1,
+        "expira": "2026-07-02",
+        "sursa": "csv_import"
       }
     ],
     "folosit_de": 513,
@@ -800,7 +809,7 @@
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-07-01",
-    "scor_final": 30.0,
+    "scor_final": 40.0,
     "program_id": 6526,
     "unique_code": "50e9adcf3"
   },
@@ -836,6 +845,15 @@
         "landing_page": "https://www.otter.ro/reduceri/pentru/femei",
         "zile_ramase": 27,
         "expira": "2026-07-28",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "Flash Sale",
+        "descriere": "Profită de reduceri fulger în Flash Sale-ul Otter, de luni pana vineri, intre 10-13! Încălțăminte și accesorii la prețuri masiv reduse.",
+        "cod_cupon": "",
+        "landing_page": "https://www.otter.ro/flashsale",
+        "zile_ramase": 1644,
+        "expira": "2030-12-31",
         "sursa": "csv_import"
       },
       {
@@ -1117,6 +1135,15 @@
         "zile_ramase": 242,
         "expira": "2027-02-28",
         "sursa": "csv_import"
+      },
+      {
+        "nume": "Oferta 1+1",
+        "descriere": "Oferta 1+1",
+        "cod_cupon": "",
+        "landing_page": "https://www.fara-daunatori.ro/search/oferta/?q=oferta",
+        "zile_ramase": 242,
+        "expira": "2027-02-28",
+        "sursa": "csv_import"
       }
     ],
     "folosit_de": 84,
@@ -1254,6 +1281,15 @@
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.sneakerit.ro%2Fsale",
         "zile_ramase": 980
+      },
+      {
+        "nume": "Sale",
+        "descriere": "Toate produsele reduse de pe sneakerit.ro",
+        "cod_cupon": "",
+        "landing_page": "https://www.sneakerit.ro/sale",
+        "zile_ramase": 980,
+        "expira": "2029-03-08",
+        "sursa": "csv_import"
       },
       {
         "nume": "Sale",
@@ -13068,16 +13104,26 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "zile_ramase": 5,
+    "promotii": [
+      {
+        "nume": "🌞 Ia-ți Vitamina D Carte - până la -70% + carte cadou (1 - 7 iulie) 🌞",
+        "descriere": "☀️ Iubim vara și iubim cărțile, de aceea am pregătit reduceri de până la -70% la cele mai frumoase titluri! 📖 🧡\n\n🎁 Și pentru că vara merită și mai mult, fiecare comandă de minim 169 lei vine cu bestseller CADOU. 🎁 \n\nHai să-ți iei 𝐕𝐢𝐭𝐚𝐦𝐢𝐧𝐚 𝐃 𝐜𝐚𝐫𝐭𝐞 de pe litera.ro!",
+        "cod_cupon": "",
+        "landing_page": "https://www.litera.ro/",
+        "zile_ramase": 5,
+        "expira": "2026-07-06",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 713,
     "procent_succes": 90,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-07-01",
-    "scor_final": 0.0,
+    "scor_final": 30.0,
     "program_id": 873,
     "unique_code": "0a8a2c4d9"
   },
@@ -13231,16 +13277,35 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "zile_ramase": 11,
+    "promotii": [
+      {
+        "nume": "25% REDUCERE la cumparaturi LEGO® Ninjago de minimum 249 lei | 1-12.07.2026",
+        "descriere": "🧱 Esti gata pentru noi aventuri LEGO®? Pe Noriel.ro, intre 1-12.07.2026, ai 25% REDUCERE direct in cos, la comenzi  LEGO® Ninjago de minimum 249 lei!🚀 Grabeste-te, oferta este valabila pentru o perioada limitata! >> https://noriel.ro/lego-ninjago",
+        "cod_cupon": "",
+        "landing_page": "https://noriel.ro/lego-ninjago",
+        "zile_ramase": 11,
+        "expira": "2026-07-12",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "Summer Sales | Reduceri de pana la 50%",
+        "descriere": "🌞 Vara aceasta incepe cu super reduceri la Noriel!\nAm pregatit discounturi de pana la 50% la sute de jocuri si jucarii care aduc zambete si distractie.✨ Descopera acum ofertele pregatite pentru cei mici >>  https://noriel.ro/promotii",
+        "cod_cupon": "",
+        "landing_page": "https://noriel.ro/promotii",
+        "zile_ramase": 32,
+        "expira": "2026-08-02",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 671,
     "procent_succes": 92,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-07-01",
-    "scor_final": 0.0,
+    "scor_final": 30.0,
     "program_id": 2615,
     "unique_code": "bb3071a7d"
   },
@@ -13303,6 +13368,15 @@
         "descriere": "🎯 Ce aduce campania?\n• Voucher digital răzuibil cu reduceri de până la 50% la branduri apreciate din categorii precum beauty, dermato-cosmetice, îngrijire personală și suplimente\n• Experiență interactivă și atractivă pentru utilizatori\n• O lună întreagă de promovare: 1–31 iulie 2026",
         "cod_cupon": "",
         "landing_page": "https://www.drmax.ro/marea-razuiala",
+        "zile_ramase": 29,
+        "expira": "2026-07-30",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "Campanie Produse Solare - Iulie 2026",
+        "descriere": "Vești bune! În plin sezon estival, produsele cu SPF continuă să fie printre cele mai căutate din categoria de frumusețe și îngrijire, fiind momentul ideal pentru a le promova.\n\n🧴 În campanie regăsești produse de la branduri de încredere precum:\nAvène, La Roche-Posay, Bioderma, Vichy, Pharmaceris, Skinexpert by Dr. Max, Eucerin și multe altele.",
+        "cod_cupon": "",
+        "landing_page": "https://www.drmax.ro/frumusete-si-ingrijire/protectie-solara",
         "zile_ramase": 29,
         "expira": "2026-07-30",
         "sursa": "csv_import"
@@ -15436,16 +15510,35 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "are_promotie": true,
+    "cod_cupon": true,
+    "zile_ramase": 13,
+    "promotii": [
+      {
+        "nume": "-30% la TOȚI ochelarii de soare, online și în showroom-uri.",
+        "descriere": "Bună,\n\nProfită acum de 30% reducere la TOȚI ochelarii de soare, atât online, cât și în showroom-urile noastre.\n\nFolosește codul BDAYSUN la finalizarea comenzii și bucură-te de stil și protecție la un preț special.\n\nSpor la cumpărături!",
+        "cod_cupon": "BDAYSUN",
+        "landing_page": "https://www.videt.ro/ochelari-de-soare.html",
+        "zile_ramase": 13,
+        "expira": "2026-07-14",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "Zilele Videt: până la -50% la rame și 30% la toate lentilele de vedere",
+        "descriere": "Bună,\n\nAu început Zilele Videt, cu reduceri pe bune la ochelari!\n\nProfită acum de până la 50% reducere la o selecție de rame și de 30% reducere la toate lentilele de vedere folosind codul BDAY.\n\nCodul este valabil în perioada 1–14 iulie 2026.\n\nMulțumim!",
+        "cod_cupon": "BDAY",
+        "landing_page": "https://www.videt.ro/ochelari-vedere.html",
+        "zile_ramase": 13,
+        "expira": "2026-07-14",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 624,
     "procent_succes": 84,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-07-01",
-    "scor_final": 0.0,
+    "scor_final": 50.0,
     "program_id": 7894,
     "unique_code": "27ec4b078"
   },
@@ -24460,16 +24553,26 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "zile_ramase": 90,
+    "promotii": [
+      {
+        "nume": "Pachete cu 2+1 / 3+3 / 5+5 Parfumuri Cadou de la doar 159,99lei",
+        "descriere": "Profită de ofertele speciale Arabescu și primește parfumuri CADOU în cadrul pachetelor promoționale 2+1, 3+3 și 5+5, începând de la doar **159,99 lei**.\n\nPromoția se aplică exclusiv pachetelor afișate pe site și este disponibilă în limita stocului disponibil. Termeni și condiții aplicabile.",
+        "cod_cupon": "",
+        "landing_page": "https://arabescu.ro/categorie/oferte-parfumuri-arabescu/",
+        "zile_ramase": 90,
+        "expira": "2026-09-29",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 420,
     "procent_succes": 76,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-07-01",
-    "scor_final": 0.0,
+    "scor_final": 30.0,
     "program_id": 12974,
     "unique_code": "28caed879"
   },
@@ -25975,16 +26078,26 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "are_promotie": true,
+    "cod_cupon": true,
+    "zile_ramase": 29,
+    "promotii": [
+      {
+        "nume": "GiftDesign Summer Sale - Extra 15% cu GDVARA15",
+        "descriere": "Summer Sale! Foloseste codul GDVARA15 si beneficiezi de 15% reducere suplimentara, inclusiv la produsele deja aflate la promotie. Oferta este valabila in perioada 07.07.2026- 31.07.2026.\n\nEN:\n\nSummer Sale! Use code GDVARA15 to get an extra 15% discount, even on products that are already on sale. Offer valid 07.07.2026- 31.07.2026.",
+        "cod_cupon": "GDVARA15",
+        "landing_page": "https://www.giftdesign.ro/?utm_source=2performant&utm_medium=affiliate&utm_campaign=gdvara15_summer_sale_2026",
+        "zile_ramase": 29,
+        "expira": "2026-07-30",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 741,
     "procent_succes": 87,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-07-01",
-    "scor_final": 0.0,
+    "scor_final": 50.0,
     "program_id": 12965,
     "unique_code": "4cc1a3cf7"
   },
