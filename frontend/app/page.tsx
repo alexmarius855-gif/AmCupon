@@ -575,6 +575,60 @@ export default function Home() {
       {/* placeholder pentru a inchide sectiunea corecta daca loading */}
       {loading && <div className="h-[53px] bg-slate-900/80 border-b border-slate-800" />}
 
+      {/* ─── OFERTA ZILEI — spotlight cu cea mai buna reducere activa ────────── */}
+      {!loading && (() => {
+        // Prefera oferte cu link de afiliat REAL (castiga comision), nu url brut (ex: temu.com)
+        const cuAfiliat = [...cuPromotii].filter(m => m.promotii?.[0] && m.url_afiliat && m.url_afiliat !== m.url);
+        const pool = cuAfiliat.length ? cuAfiliat : [...cuPromotii].filter(m => m.promotii?.[0]);
+        const best = pool.sort((a, b) => (b.scor_final || 0) - (a.scor_final || 0))[0];
+        if (!best) return null;
+        const promo = best.promotii[0];
+        const disc = extractDiscount(promo.nume) || extractDiscount(promo.descriere || "");
+        const cod = promo.cod_cupon;
+        const link = promo.landing_page || best.url_afiliat || best.url;
+        const revealed = coduriReveal.has(best.magazin);
+        const nume = numeAfisat(best.magazin);
+        return (
+          <section className="bg-slate-950 border-b border-slate-800 py-12 px-4">
+            <div className="max-w-5xl mx-auto">
+              <p className="text-xs font-black text-cyan-400 uppercase tracking-widest mb-4">⭐ Oferta zilei</p>
+              <div className="relative overflow-hidden rounded-3xl border border-indigo-500/30 bg-gradient-to-br from-indigo-950/60 via-slate-900 to-slate-900 p-6 sm:p-8">
+                <div className="absolute -top-24 -right-16 w-72 h-72 rounded-full pointer-events-none" style={{background:"radial-gradient(circle, rgba(34,211,238,0.16), transparent 70%)"}} />
+                <div className="relative flex flex-col sm:flex-row items-center gap-6">
+                  <div className="w-28 h-28 rounded-2xl bg-white flex items-center justify-center p-3 shrink-0 shadow-xl">
+                    {best.logo_url
+                      ? /* eslint-disable-next-line @next/next/no-img-element */ <img src={best.logo_url} alt={nume} className="max-w-full max-h-full object-contain" />
+                      : <span className="text-4xl font-black text-indigo-600">{nume.charAt(0)}</span>}
+                  </div>
+                  <div className="flex-1 text-center sm:text-left w-full">
+                    <div className="flex items-center justify-center sm:justify-start gap-2.5 mb-2 flex-wrap">
+                      <span className="font-black text-white text-2xl">{nume}</span>
+                      {disc && <span className="text-xs font-black text-white bg-indigo-600 px-2.5 py-1 rounded-full">-{disc}</span>}
+                      {(best.zile_ramase ?? 9) <= 2 && <span className="text-[10px] font-bold text-red-400 bg-red-500/10 border border-red-500/25 px-2 py-0.5 rounded-full">expira curand</span>}
+                    </div>
+                    <p className="text-slate-300 text-sm mb-5 max-w-md mx-auto sm:mx-0 line-clamp-2">{promo.nume}</p>
+                    <div className="flex flex-col sm:flex-row items-center gap-3">
+                      {cod && (
+                        <button onClick={() => copiazaCod(best.magazin, cod, link)}
+                          className="group flex items-center gap-2 bg-slate-800 border-2 border-dashed border-cyan-500/50 hover:border-cyan-400 rounded-xl px-4 py-2.5 transition-colors">
+                          <span className="font-mono font-black text-indigo-400 tracking-widest text-sm">{revealed ? cod : cod.slice(0, 3) + "•••"}</span>
+                          <span className="text-[10px] text-slate-500 group-hover:text-cyan-400">{copiat === best.magazin ? "✓ copiat" : "copiaza"}</span>
+                        </button>
+                      )}
+                      <a href={link} target="_blank" rel="sponsored noopener noreferrer"
+                        onClick={() => trackAfiliat("spotlight_cta", best.magazin, cod)}
+                        className="bg-indigo-600 hover:bg-indigo-500 text-white font-black px-6 py-3 rounded-xl text-sm transition-all shadow-lg shadow-cyan-500/25 hover:-translate-y-0.5 duration-200">
+                        {cod ? "Copiaza si mergi la magazin →" : "Vezi oferta →"}
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        );
+      })()}
+
       {/* ─── PRODUSE PE CATEGORII (mutat sus — prima dovada vizuala de reduceri reale) ── */}
       {produseCategorii.length > 0 && (
         <section className="bg-slate-900 border-b border-slate-800 py-14 px-4">
