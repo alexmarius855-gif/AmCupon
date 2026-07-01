@@ -20,95 +20,97 @@ export const metadata: Metadata = {
 };
 
 /* ─── Config categorii ───────────────────────────────────────────────────── */
+// Accent distinct per categorie (recunoastere instanta) — nuante racoroase premium,
+// ZERO portocaliu/galben/amber, fara rosu pur (rezervat pt "expira azi").
 const CATEGORII = [
   {
     slug: "fashion", label: "Fashion", desc: "Haine & accesorii",
-    from: "#ec4899", to: "#6366f1",
+    accent: "#f472b6",
     keywords: ["fashion", "clothing", "haine", "shoes", "answear", "aboutyou"],
   },
   {
     slug: "electronics-itc", label: "Electronice IT&C", desc: "Laptopuri, telefoane, gadgeturi",
-    from: "#3b82f6", to: "#6366f1",
+    accent: "#38bdf8",
     keywords: ["electronic", "tech", "it", "laptop", "phone", "ozone", "navstore"],
   },
   {
     slug: "beauty", label: "Frumusete", desc: "Cosmetice & parfumuri",
-    from: "#f43f5e", to: "#a855f7",
+    accent: "#c084fc",
     keywords: ["beauty", "cosmetic", "parfum", "notino", "makeup", "sephora"],
   },
   {
     slug: "home-garden", label: "Casa & Gradina", desc: "Mobila, decoratiuni, unelte",
-    from: "#10b981", to: "#3b82f6",
+    accent: "#34d399",
     keywords: ["home", "casa", "garden", "vidaxl", "gradina", "mobila", "dedeman"],
   },
   {
     slug: "sports-outdoors", label: "Sport & Outdoor", desc: "Echipament sportiv & fitness",
-    from: "#6366f1", to: "#06b6d4",
+    accent: "#22d3ee",
     keywords: ["sport", "fitness", "outdoor", "sportdepot", "decathlon", "running"],
   },
   {
     slug: "pharma", label: "Farmacie", desc: "Medicamente & suplimente",
-    from: "#ef4444", to: "#8b5cf6",
+    accent: "#2dd4bf",
     keywords: ["pharma", "farmacie", "drmax", "sensiblu", "vegis", "medic"],
   },
   {
     slug: "babies-kids-toys", label: "Copii & Jucarii", desc: "Produse pentru cei mici",
-    from: "#a855f7", to: "#ec4899",
+    accent: "#fb7185",
     keywords: ["kids", "copii", "toy", "bebe", "noriel", "jucarii"],
   },
   {
     slug: "automotive", label: "Auto-Moto", desc: "Piese & accesorii auto",
-    from: "#64748b", to: "#1e293b",
+    accent: "#94a3b8",
     keywords: ["auto", "car", "moto", "automobilus", "piese", "anvelop"],
   },
   {
     slug: "books", label: "Carti & Edu", desc: "Carti, e-books, papetarie",
-    from: "#06b6d4", to: "#6366f1",
+    accent: "#a78bfa",
     keywords: ["book", "carte", "libris", "carturesti", "bookzone", "edu"],
   },
   {
     slug: "hypermarket-groceries", label: "Hypermarket", desc: "Alimente & produse zilnice",
-    from: "#10b981", to: "#059669",
+    accent: "#60a5fa",
     keywords: ["hypermarket", "grocery", "aliment", "food", "supermarket"],
   },
   {
     slug: "gifts-flowers", label: "Cadouri & Flori", desc: "Cadouri pentru orice ocazie",
-    from: "#f43f5e", to: "#ec4899",
+    accent: "#e879f9",
     keywords: ["gift", "cadou", "flori", "flower", "cadouri"],
   },
   {
     slug: "telecom", label: "Telecom", desc: "Abonamente & servicii mobile",
-    from: "#06b6d4", to: "#3b82f6",
+    accent: "#818cf8",
     keywords: ["telecom", "mobile", "abonament", "orange", "vodafone", "digi"],
   },
   {
     slug: "pet-supplies", label: "Animale", desc: "Hrana, jucarii, accesorii",
-    from: "#f59e0b", to: "#d97706",
+    accent: "#fda4af",
     keywords: ["pet", "animal", "caine", "pisica", "zooplus"],
   },
   {
     slug: "jewelry", label: "Bijuterii", desc: "Bijuterii & ceasuri",
-    from: "#8b5cf6", to: "#6366f1",
+    accent: "#c4b5fd",
     keywords: ["jewel", "bijuterie", "ceas", "argint", "aur"],
   },
   {
     slug: "games", label: "Jocuri & Gaming", desc: "Jocuri video & console",
-    from: "#6366f1", to: "#1e293b",
+    accent: "#67e8f9",
     keywords: ["game", "gaming", "console", "jocuri", "steam", "ps5"],
   },
   {
     slug: "health-personal-care", label: "Sanatate", desc: "Ingrijire personala & wellness",
-    from: "#0ea5e9", to: "#10b981",
+    accent: "#7dd3fc",
     keywords: ["health", "sanatate", "wellness", "ingrijire"],
   },
   {
     slug: "online-mall", label: "Online Mall", desc: "Platforme multi-brand",
-    from: "#1e293b", to: "#475569",
+    accent: "#94a3b8",
     keywords: ["mall", "emag", "altex", "flanco", "platform"],
   },
   {
     slug: "others", label: "Altele", desc: "Diverse categorii",
-    from: "#94a3b8", to: "#64748b",
+    accent: "#818cf8",
     keywords: [],
   },
 ];
@@ -227,8 +229,13 @@ export default function CategoriPage() {
             <a
               key={c.slug}
               href={`/categorii/${c.slug}`}
-              className="group relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/40"
+              className="group relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/40 hover:[border-color:var(--accent)]"
+              style={{ "--accent": `${c.accent}80` } as Record<string, string>}
             >
+              {/* Glow colorat pe categorie — recunoastere instanta */}
+              <div className="absolute -top-8 -right-8 w-28 h-28 rounded-full pointer-events-none opacity-25 blur-2xl transition-opacity duration-300 group-hover:opacity-40"
+                style={{ background: c.accent }} />
+
               {/* Logouri magazine (fundal decorativ) */}
               {c.logos.length > 0 && (
                 <div className="absolute top-2 right-2 flex -space-x-2 opacity-70 group-hover:opacity-90 transition-opacity">
@@ -249,9 +256,9 @@ export default function CategoriPage() {
               <div className="relative p-4 pt-8">
                 {/* Nr oferte badge */}
                 {c.nrOff > 0 ? (
-                  <div className="inline-flex items-center gap-1 bg-indigo-500/15 border border-indigo-500/25 px-2 py-0.5 rounded-full mb-3">
-                    <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
-                    <span className="text-indigo-300 text-[10px] font-bold">{c.nrOff} oferte</span>
+                  <div className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full border mb-3" style={{ background: `${c.accent}22`, borderColor: `${c.accent}44` }}>
+                    <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: c.accent }} />
+                    <span className="text-[10px] font-bold" style={{ color: c.accent }}>{c.nrOff} oferte</span>
                   </div>
                 ) : (
                   <div className="inline-flex items-center gap-1 bg-slate-800 px-2 py-0.5 rounded-full mb-3">
@@ -267,7 +274,7 @@ export default function CategoriPage() {
                 </div>
 
                 {/* Arrow */}
-                <div className="mt-3 flex items-center gap-1 text-slate-500 group-hover:text-indigo-400 group-hover:gap-2 transition-all text-[10px] font-bold">
+                <div className="mt-3 flex items-center gap-1 text-slate-500 group-hover:text-white group-hover:gap-2 transition-all text-[10px] font-bold">
                   Vezi ofertele
                   <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />

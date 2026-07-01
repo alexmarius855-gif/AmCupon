@@ -22,7 +22,9 @@ venv/
 
 # Tools & local
 .vercel
-.claude/
+**/.claude/*
+!.claude/agents/
+!.claude/agents/**
 amcupon-extension.zip
 
 # Logs & debug

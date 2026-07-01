@@ -36,23 +36,26 @@ interface Magazin {
   exclusiv: boolean;
 }
 
+// Paleta curatata: fiecare categorie are un accent distinct (recunoastere instanta),
+// dar toate sunt nuante racoroase premium care se potrivesc pe fundal dark — ZERO
+// portocaliu/galben/amber (regula site-ului) si fara rosu pur (rezervat pt "expira azi").
 const CATEGORII = [
-  { slug: "fashion",               emoji: "👗", label: "Fashion",         desc: "Haine, pantofi & accesorii",    from: "#ec4899", to: "#6366f1" },
-  { slug: "electronics-itc",       emoji: "💻", label: "Electronice",     desc: "Laptopuri, telefoane, gadgeturi", from: "#3b82f6", to: "#6366f1" },
-  { slug: "beauty",                emoji: "💄", label: "Frumusete",       desc: "Cosmetice, parfumuri, unghii",   from: "#f43f5e", to: "#a855f7" },
-  { slug: "home-garden",           emoji: "🏡", label: "Casa & Gradina",  desc: "Mobila, deco, unelte",          from: "#10b981", to: "#3b82f6" },
-  { slug: "sports-outdoors",       emoji: "🏃", label: "Sport & Outdoor", desc: "Echipament sportiv & fitness",  from: "#6366f1", to: "#06b6d4" },
-  { slug: "pharma",                emoji: "💊", label: "Farmacie",        desc: "Medicamente, suplimente",       from: "#ef4444", to: "#8b5cf6" },
-  { slug: "babies-kids-toys",      emoji: "👶", label: "Copii & Jucarii", desc: "Produse pentru cei mici",       from: "#a855f7", to: "#ec4899" },
-  { slug: "automotive",            emoji: "🚗", label: "Auto-Moto",       desc: "Piese & accesorii auto",        from: "#475569", to: "#0f172a" },
-  { slug: "books",                 emoji: "📚", label: "Carti & Edu",     desc: "Carti, e-books, cursuri",       from: "#06b6d4", to: "#6366f1" },
-  { slug: "hypermarket-groceries", emoji: "🛒", label: "Hypermarket",     desc: "Alimente & produse zilnice",    from: "#10b981", to: "#059669" },
-  { slug: "gifts-flowers",         emoji: "🎁", label: "Cadouri & Flori", desc: "Cadouri pentru orice ocazie",   from: "#f43f5e", to: "#ec4899" },
-  { slug: "telecom",               emoji: "📱", label: "Telecom",         desc: "Abonamente & servicii mobile",  from: "#06b6d4", to: "#3b82f6" },
-  { slug: "pet-supplies",          emoji: "🐾", label: "Animale",         desc: "Hrana, jucarii, accesorii",     from: "#f59e0b", to: "#d97706" },
-  { slug: "health-personal-care",  emoji: "🧴", label: "Sanatate",        desc: "Ingrijire personala & wellness",from: "#0ea5e9", to: "#10b981" },
-  { slug: "jewelry",               emoji: "💎", label: "Bijuterii",       desc: "Bijuterii & ceasuri",           from: "#8b5cf6", to: "#6366f1" },
-  { slug: "games",                 emoji: "🎮", label: "Jocuri & Gaming", desc: "Jocuri video & console",        from: "#6366f1", to: "#0f172a" },
+  { slug: "fashion",               emoji: "👗", label: "Fashion",         desc: "Haine, pantofi & accesorii",    accent: "#f472b6" },
+  { slug: "electronics-itc",       emoji: "💻", label: "Electronice",     desc: "Laptopuri, telefoane, gadgeturi", accent: "#38bdf8" },
+  { slug: "beauty",                emoji: "💄", label: "Frumusete",       desc: "Cosmetice, parfumuri, unghii",   accent: "#c084fc" },
+  { slug: "home-garden",           emoji: "🏡", label: "Casa & Gradina",  desc: "Mobila, deco, unelte",          accent: "#34d399" },
+  { slug: "sports-outdoors",       emoji: "🏃", label: "Sport & Outdoor", desc: "Echipament sportiv & fitness",  accent: "#22d3ee" },
+  { slug: "pharma",                emoji: "💊", label: "Farmacie",        desc: "Medicamente, suplimente",       accent: "#2dd4bf" },
+  { slug: "babies-kids-toys",      emoji: "👶", label: "Copii & Jucarii", desc: "Produse pentru cei mici",       accent: "#fb7185" },
+  { slug: "automotive",            emoji: "🚗", label: "Auto-Moto",       desc: "Piese & accesorii auto",        accent: "#94a3b8" },
+  { slug: "books",                 emoji: "📚", label: "Carti & Edu",     desc: "Carti, e-books, cursuri",       accent: "#a78bfa" },
+  { slug: "hypermarket-groceries", emoji: "🛒", label: "Hypermarket",     desc: "Alimente & produse zilnice",    accent: "#60a5fa" },
+  { slug: "gifts-flowers",         emoji: "🎁", label: "Cadouri & Flori", desc: "Cadouri pentru orice ocazie",   accent: "#e879f9" },
+  { slug: "telecom",               emoji: "📱", label: "Telecom",         desc: "Abonamente & servicii mobile",  accent: "#818cf8" },
+  { slug: "pet-supplies",          emoji: "🐾", label: "Animale",         desc: "Hrana, jucarii, accesorii",     accent: "#fda4af" },
+  { slug: "health-personal-care",  emoji: "🧴", label: "Sanatate",        desc: "Ingrijire personala & wellness",accent: "#7dd3fc" },
+  { slug: "jewelry",               emoji: "💎", label: "Bijuterii",       desc: "Bijuterii & ceasuri",           accent: "#c4b5fd" },
+  { slug: "games",                 emoji: "🎮", label: "Jocuri & Gaming", desc: "Jocuri video & console",        accent: "#67e8f9" },
 ];
 
 
@@ -808,14 +811,20 @@ export default function Home() {
                 <a
                   key={c.slug}
                   href={`/categorii/${c.slug}`}
-                  className="group relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/40"
+                  className="group relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/40"
+                  onMouseEnter={e => (e.currentTarget.style.borderColor = `${c.accent}80`)}
+                  onMouseLeave={e => (e.currentTarget.style.borderColor = "")}
                 >
+                  {/* Glow colorat pe categorie — recunoastere instanta, fara card colorat integral */}
+                  <div className="absolute -top-8 -right-8 w-28 h-28 rounded-full pointer-events-none opacity-25 blur-2xl transition-opacity duration-300 group-hover:opacity-40"
+                    style={{ background: c.accent }} />
+
                   <div className="relative p-5 flex flex-col gap-3 min-h-[140px]">
                     {/* Badge oferte */}
                     {nrPromo > 0 ? (
-                      <div className="inline-flex self-start items-center gap-1 bg-indigo-500/15 border border-indigo-500/25 px-2 py-0.5 rounded-full">
-                        <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
-                        <span className="text-indigo-300 text-[10px] font-bold">{nrPromo} {nrPromo === 1 ? "oferta" : "oferte"}</span>
+                      <div className="inline-flex self-start items-center gap-1 px-2 py-0.5 rounded-full border" style={{ background: `${c.accent}22`, borderColor: `${c.accent}44` }}>
+                        <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: c.accent }} />
+                        <span className="text-[10px] font-bold" style={{ color: c.accent }}>{nrPromo} {nrPromo === 1 ? "oferta" : "oferte"}</span>
                       </div>
                     ) : (
                       <div className="inline-flex self-start bg-slate-800 px-2 py-0.5 rounded-full">
@@ -823,10 +832,12 @@ export default function Home() {
                       </div>
                     )}
 
-                    {/* Emoji mare */}
-                    <span className="text-4xl group-hover:scale-110 transition-transform duration-300">
-                      {c.emoji}
-                    </span>
+                    {/* Emoji mare cu halo colorat */}
+                    <div className="relative w-12 h-12 rounded-2xl flex items-center justify-center" style={{ background: `${c.accent}1a` }}>
+                      <span className="text-3xl group-hover:scale-110 transition-transform duration-300">
+                        {c.emoji}
+                      </span>
+                    </div>
 
                     {/* Nume + descriere */}
                     <div>
@@ -835,7 +846,7 @@ export default function Home() {
                     </div>
 
                     {/* Arrow */}
-                    <div className="flex items-center gap-1 text-slate-500 group-hover:text-indigo-400 group-hover:gap-2 transition-all text-[10px] font-bold">
+                    <div className="flex items-center gap-1 text-slate-500 group-hover:text-white group-hover:gap-2 transition-all text-[10px] font-bold">
                       Vezi ofertele
                       <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
@@ -855,12 +866,14 @@ export default function Home() {
                 <a
                   key={c.slug}
                   href={`/categorii/${c.slug}`}
-                  className="group relative flex flex-col items-center gap-1.5 p-3 rounded-xl overflow-hidden bg-slate-900/60 border border-slate-800 hover:border-indigo-500/40 transition-all duration-200 hover:-translate-y-0.5"
+                  className="group relative flex flex-col items-center gap-1.5 p-3 rounded-xl overflow-hidden bg-slate-900/60 border border-slate-800 transition-all duration-200 hover:-translate-y-0.5"
+                  onMouseEnter={e => (e.currentTarget.style.borderColor = `${c.accent}60`)}
+                  onMouseLeave={e => (e.currentTarget.style.borderColor = "")}
                 >
                   <span className="text-2xl group-hover:scale-110 transition-transform duration-200">{c.emoji}</span>
                   <span className="text-[10px] font-bold text-slate-200 text-center leading-tight">{c.label}</span>
                   {nrPromo > 0 && (
-                    <span className="absolute -top-1 -right-1 bg-indigo-600 text-white text-[9px] font-black rounded-full w-4 h-4 flex items-center justify-center shadow-sm">
+                    <span className="absolute -top-1 -right-1 text-white text-[9px] font-black rounded-full w-4 h-4 flex items-center justify-center shadow-sm" style={{ background: c.accent }}>
                       {nrPromo > 9 ? "9+" : nrPromo}
                     </span>
                   )}
