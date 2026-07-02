@@ -202,7 +202,7 @@
     "verdict_m1": "Alege Libris pentru transport gratuit la comenzi mai mici si reduceri zilnice mai frecvente. Ideal daca comanzi regulat si vrei cel mai mic pret per carte.",
     "verdict_m2": "Alege Carturesti pentru experienta completa cititor-librarie, acces la librarii fizice pentru ridicare si colectii editoriale curate.",
     "stats1": {
-      "promotii_active": 1,
+      "promotii_active": 0,
       "cashback": "pana la 8%",
       "logo": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_libris.ro_1629366879.png",
       "url_afiliat": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/61047?sub_id=libris.ro"
@@ -213,12 +213,7 @@
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11380/medium/11380.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2F"
     },
-    "promo1": [
-      {
-        "nume": "1+1 Gratis la 1000 de titluri",
-        "cod_cupon": ""
-      }
-    ],
+    "promo1": [],
     "promo2": [
       {
         "nume": "2+1 la colecția Humanitas Fiction",
@@ -236,7 +231,7 @@
       },
       {
         "q": "Are Libris coduri de reducere active?",
-        "a": "Da, Libris are 1 oferta activa pe AmCupon.ro in iulie 2026. Verificam zilnic."
+        "a": "Momentan nu, Libris are 0 oferte active pe AmCupon.ro in iulie 2026. Verificam zilnic."
       },
       {
         "q": "Are Carturesti coduri de reducere active?",
@@ -533,7 +528,7 @@
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2F"
     },
     "stats2": {
-      "promotii_active": 4,
+      "promotii_active": 3,
       "cashback": "vezi site",
       "logo": "https://logo.clearbit.com/farmec.ro",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmec.ro"
@@ -554,15 +549,15 @@
     ],
     "promo2": [
       {
-        "nume": "25% Reducere In Cos - Flash Sale",
-        "cod_cupon": ""
-      },
-      {
         "nume": "30% REDUCERE la produsele din gama Gerovital Luxury.",
         "cod_cupon": ""
       },
       {
         "nume": "-25% la gamele Gerovital H3 Evolution",
+        "cod_cupon": ""
+      },
+      {
+        "nume": "-25% la Gama Equilibrium - 19.06.2026 - 06.07.2026",
         "cod_cupon": ""
       }
     ],
@@ -577,7 +572,7 @@
       },
       {
         "q": "Are Farmec coduri de reducere active?",
-        "a": "Da, Farmec are 4 oferte active pe AmCupon.ro in iulie 2026. Verificam zilnic."
+        "a": "Da, Farmec are 3 oferte active pe AmCupon.ro in iulie 2026. Verificam zilnic."
       },
       {
         "q": "Unde gasesc cupoane pentru Drmax si Farmec?",
@@ -799,7 +794,7 @@
     "verdict_m1": "Alege Libris pentru cel mai mare stoc de carti si transport gratuit la comenzi mai mici. Preturile la bestsellers sunt adesea mai bune.",
     "verdict_m2": "Alege Elefant daca vrei si alte produse (electronice, jocuri) intr-o singura comanda alaturi de carti.",
     "stats1": {
-      "promotii_active": 1,
+      "promotii_active": 0,
       "cashback": "pana la 8%",
       "logo": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_libris.ro_1629366879.png",
       "url_afiliat": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/61047?sub_id=libris.ro"
@@ -810,12 +805,7 @@
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13096/medium/13096.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Felefant.ro"
     },
-    "promo1": [
-      {
-        "nume": "1+1 Gratis la 1000 de titluri",
-        "cod_cupon": ""
-      }
-    ],
+    "promo1": [],
     "promo2": [],
     "faq": [
       {
@@ -824,7 +814,7 @@
       },
       {
         "q": "Are Libris coduri de reducere active?",
-        "a": "Da, Libris are 1 oferta activa pe AmCupon.ro in iulie 2026. Verificam zilnic."
+        "a": "Momentan nu, Libris are 0 oferte active pe AmCupon.ro in iulie 2026. Verificam zilnic."
       },
       {
         "q": "Are Elefant coduri de reducere active?",
