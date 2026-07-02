@@ -1,0 +1,28 @@
+[
+  {
+    "id": 270895,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270854/original/270854.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=0bced947e&aff_code=541547473&campaign_unique=6390e3cfb",
+    "landing_raw": "https://www.drmax.ro/frumusete-si-ingrijire/protectie-solara",
+    "width": 1050,
+    "height": 1050,
+    "merchant": "drmax.ro/",
+    "merchant_slug": "drmax-ro",
+    "name": "Campanie Solare - Continuare",
+    "category": "Campanie Solare - Continuare",
+    "b_type": "image"
+  },
+  {
+    "id": 270883,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270842/original/270842.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=63364c8d1&aff_code=541547473&campaign_unique=27ec4b078",
+    "landing_raw": "https://www.videt.ro/ochelari-vedere.html",
+    "width": 1052,
+    "height": 1052,
+    "merchant": "videt.ro ",
+    "merchant_slug": "videt-ro",
+    "name": "ochelari de vedere",
+    "category": "ochelari de vedere",
+    "b_type": "image"
+  }
+]

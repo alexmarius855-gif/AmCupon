@@ -130,6 +130,13 @@ jobs:
             echo "data/promotii_2p.csv lipsa — skip import CSV"
           fi
 
+      # ── 5a-1. Scor comercianti + postari zilnice gata de copiat ─────────────
+      - name: Calculeaza scor comercianti si genereaza postari zilnice
+        working-directory: scripts
+        run: |
+          python scor_comercianti.py
+          python generate_postari_simple.py
+
       # ── 5b. Alerte de pret per magazin (Brevo, ALERT_STORES) ────────────────
       - name: Verifica si trimite alerte cod nou pe magazin
         continue-on-error: true
@@ -167,6 +174,11 @@ jobs:
         working-directory: scripts
         run: python enrich_products_from_promos.py
 
+      # ── 6c. Repara linkuri de produse fara tracking (0 comision la click) ──
+      - name: Repara linkuri produse fara tracking de afiliere
+        working-directory: scripts
+        run: python fix_product_links.py
+
       # ── 7. Bannere campanii (2Performant) — doar pipeline complet ─────────
       - name: Fetch bannere campanii (2Performant API)
         if: env.IS_FULL_DAILY == 'true'
@@ -179,6 +191,8 @@ jobs:
           if [ -n "$TWOPEFORMANT_EMAIL" ]; then
             echo "Ruleaza fetch_banners..."
             python fetch_banners.py
+            echo "Ruleaza generate_banner_gallery..."
+            python generate_banner_gallery.py
           else
             echo "TWOPEFORMANT_EMAIL nu e setat — skip bannere"
           fi
@@ -364,6 +378,11 @@ jobs:
           git add data/banner_daily.png                || true
           git add data/banner_story.png                || true
           git add data/indexnow_seen.json               || true
+          git add data/postari-zilnice.json             || true
+          git add data/postari-zilnice.txt              || true
+          git add data/bannere-gata-de-postat.json      || true
+          git add data/bannere-gata-de-postat.txt       || true
+          git add data/scor-comercianti.csv             || true
 
           if git diff --staged --quiet; then
             echo "Nicio schimbare — skip commit"
