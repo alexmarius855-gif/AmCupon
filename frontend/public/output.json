@@ -849,6 +849,15 @@
         "zile_ramase": 1642,
         "expira": "2030-12-31",
         "sursa": "csv_import"
+      },
+      {
+        "nume": "Flash Sale",
+        "descriere": "Profită de reduceri fulger în Flash Sale-ul Otter, de luni pana vineri, intre 10-13! Încălțăminte și accesorii la prețuri masiv reduse.",
+        "cod_cupon": "",
+        "landing_page": "https://www.otter.ro/flashsale",
+        "zile_ramase": 1642,
+        "expira": "2030-12-31",
+        "sursa": "csv_import"
       }
     ],
     "folosit_de": 650,
@@ -1166,6 +1175,15 @@
         "zile_ramase": 240,
         "expira": "2027-02-28",
         "sursa": "csv_import"
+      },
+      {
+        "nume": "Oferta 1+1",
+        "descriere": "Oferta 1+1",
+        "cod_cupon": "",
+        "landing_page": "https://www.fara-daunatori.ro/search/oferta/?q=oferta",
+        "zile_ramase": 240,
+        "expira": "2027-02-28",
+        "sursa": "csv_import"
       }
     ],
     "folosit_de": 34,
@@ -1310,6 +1328,15 @@
         "cod_cupon": "",
         "landing_page": "https://www.sneakerit.ro/sale",
         "zile_ramase": 979,
+        "expira": "2029-03-08",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "Sale",
+        "descriere": "Toate produsele reduse de pe sneakerit.ro",
+        "cod_cupon": "",
+        "landing_page": "https://www.sneakerit.ro/sale",
+        "zile_ramase": 978,
         "expira": "2029-03-08",
         "sursa": "csv_import"
       },
