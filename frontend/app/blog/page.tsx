@@ -87,6 +87,10 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
     ? toatePosts
     : toatePosts.filter(p => getMacro(p.category) === categorieActiva);
 
+  // Mozaic "revista": primele 5 articole featured doar pe vederea "Toate"
+  const featured = categorieActiva === "Toate" && posts.length >= 5 ? posts.slice(0, 5) : [];
+  const restul   = featured.length ? posts.slice(5) : posts;
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Blog",
@@ -130,17 +134,47 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
           <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 70% 60% at 50% 0%, rgba(79,70,229,0.15) 0%, transparent 65%)" }} />
           <div className="relative max-w-7xl mx-auto text-center py-12 px-4">
             <h1 className="text-3xl md:text-4xl font-black mb-2 text-white">
-              Blog <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #818cf8, #22d3ee)" }}>AmCupon.ro</span>
+              Revista <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #818cf8, #22d3ee)" }}>AmCupon</span>
             </h1>
             <p className="text-slate-400 text-sm max-w-xl mx-auto">
-              Sfaturi, ghiduri și noutăți despre cum să economisești inteligent la cumpărăturile online
+              Ghiduri, comparații și sfaturi ca să cumperi inteligent și să economisești la fiecare comandă
             </p>
           </div>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 py-10">
-          {/* Filtre functionale via URL params */}
-          <div className="flex flex-wrap gap-2 mb-8">
+          {/* ── Mozaic featured (stil revista) — doar pe vederea Toate ── */}
+          {featured.length === 5 && (
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-12">
+              {/* Articol principal — mare */}
+              <Link href={`/blog/${featured[0].slug}`} className="group relative rounded-2xl overflow-hidden border border-slate-800 hover:border-indigo-500/50 transition-colors min-h-[300px] lg:min-h-[440px] flex">
+                <Image src={featured[0].cover} alt={featured[0].title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="(max-width: 1024px) 100vw, 50vw" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
+                <div className="relative mt-auto p-6 z-10">
+                  <span className="inline-block bg-indigo-600 text-white text-xs font-bold px-2.5 py-1 rounded-full mb-3">{featured[0].category}</span>
+                  <h2 className="font-black text-white text-xl md:text-2xl leading-tight group-hover:text-indigo-300 transition-colors line-clamp-3">{featured[0].title}</h2>
+                  <p className="text-slate-300 text-sm mt-2 line-clamp-2">{featured[0].excerpt}</p>
+                </div>
+              </Link>
+              {/* 4 articole secundare — grila 2x2 */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {featured.slice(1).map(post => (
+                  <Link key={post.slug} href={`/blog/${post.slug}`} className="group relative rounded-2xl overflow-hidden border border-slate-800 hover:border-indigo-500/50 transition-colors min-h-[200px] flex">
+                    <Image src={post.cover} alt={post.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="(max-width: 640px) 100vw, 25vw" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent" />
+                    <div className="relative mt-auto p-4 z-10">
+                      <span className="inline-block bg-indigo-600/90 text-white text-[10px] font-bold px-2 py-0.5 rounded-full mb-1.5">{post.category}</span>
+                      <h3 className="font-bold text-white text-sm leading-snug group-hover:text-indigo-300 transition-colors line-clamp-2">{post.title}</h3>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* ── Titlu sectiune + filtre ── */}
+          <h2 className="text-xl md:text-2xl font-black text-white text-center mb-6">Cele mai noi sfaturi și articole</h2>
+          <div className="flex flex-wrap justify-center gap-2 mb-8">
             {categorii.map(cat => (
               <Link
                 key={cat}
@@ -161,7 +195,7 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
             ))}
           </div>
 
-          {posts.length === 0 ? (
+          {restul.length === 0 && featured.length === 0 ? (
             <div className="text-center py-20 text-slate-500">
               <p className="text-lg mb-4">Niciun articol in categoria &ldquo;{categorieActiva}&rdquo;.</p>
               <Link href="/blog" className="text-indigo-400 font-bold hover:underline">
@@ -170,7 +204,7 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {posts.map(post => (
+              {restul.map(post => (
                 <Link
                   key={post.slug}
                   href={`/blog/${post.slug}`}
