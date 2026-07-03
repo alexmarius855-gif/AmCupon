@@ -222,6 +222,14 @@ jobs:
             echo "ANTHROPIC_API_KEY nu e setat — skip ghiduri AI"
           fi
 
+      # ── 8a2. Covere editoriale per-articol (pe brand, inlocuiesc logo blur) ──
+      # Ruleaza DUPA toata generarea de blog (blog + best_of + ai_guides).
+      # Suprascrie campul cover al fiecarui articol cu /blog-covers/{slug}.png.
+      - name: Genereaza covere editoriale per-articol
+        if: env.IS_FULL_DAILY == 'true'
+        working-directory: scripts
+        run: python generate_article_covers.py
+
       - name: Actualizeaza link-uri afiliate in Top Produse
         if: env.IS_FULL_DAILY == 'true'
         working-directory: scripts
@@ -355,6 +363,7 @@ jobs:
           git add frontend/public/nav-index.json       || true
           git add frontend/public/blog-posts.json      || true
           git add frontend/public/blog-latest.json     || true
+          git add frontend/public/blog-covers          || true
           git add frontend/public/products.json        || true
           git add frontend/public/products-home.json   || true
           git add frontend/public/recomandate.json     || true
