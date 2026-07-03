@@ -189,19 +189,6 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
   const faraCodd  = m.promotii.filter(p => !p.cod_cupon);
 
   // Vizualizari deterministe
-  const vizualizariAzi = useMemo(() => {
-    const day  = new Date().toISOString().slice(0, 10);
-    const hash = [...(m.magazin + day)].reduce((acc, c) => (acc * 31 + c.charCodeAt(0)) & 0xffff, 0);
-    const base = 28 + (hash % 84);
-    const factor = [0.6,0.75,0.85,0.95,1.1,1.45,1.25][new Date().getDay()];
-    return Math.round(base * factor);
-  }, [m.magazin]);
-
-  const utilizatoriActivi = useMemo(() => {
-    const hash = [...m.magazin].reduce((acc, c) => (acc * 17 + c.charCodeAt(0)) & 0xff, 0);
-    return 2 + (hash % 7);
-  }, [m.magazin]);
-
   const culoare = "bg-gradient-to-br from-indigo-500 to-indigo-700";
 
   function copiazaCod(idx: number, cod: string, link?: string) {
@@ -300,32 +287,11 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                     {m.promotii.length} {m.promotii.length === 1 ? "oferta" : "oferte"} active
                   </div>
                 )}
-                {m.cod_cupon && (
-                  <div className="flex items-center gap-1.5 bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-bold px-3 py-1.5 rounded-full">
-                    🎟 {m.procent_succes}% rata succes
-                  </div>
-                )}
                 {m.trend > 0 && (
                   <div className="flex items-center gap-1.5 bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs font-semibold px-3 py-1.5 rounded-full">
                     ↑ Trending +{m.trend}%
                   </div>
                 )}
-                {m.comision && (() => {
-                  const nums = m.comision.match(/[\d.]+/g)?.map(Number) ?? [];
-                  const max = nums.length ? Math.max(...nums) : 0;
-                  return max > 0 ? (
-                    <div className="flex items-center gap-1.5 bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-bold px-3 py-1.5 rounded-full">
-                      💰 Cashback pana la {max}%
-                    </div>
-                  ) : null;
-                })()}
-                <div className="flex items-center gap-1.5 bg-slate-700/60 border border-slate-600 text-slate-300 text-xs font-semibold px-3 py-1.5 rounded-full">
-                  👁 {vizualizariAzi} vizualizari azi
-                </div>
-                <div className="flex items-center gap-1.5 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold px-3 py-1.5 rounded-full">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"/>
-                  {utilizatoriActivi} persoane cauta acum
-                </div>
                 <div className="flex items-center gap-1.5 bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs font-semibold px-3 py-1.5 rounded-full">
                   ✓ Verificat {new Date().toLocaleDateString("ro-RO", { day: "numeric", month: "long", year: "numeric" })}
                 </div>

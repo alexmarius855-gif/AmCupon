@@ -119,9 +119,13 @@ def genereaza_articol_magazin(store: dict, luna: str, an: int) -> dict:
     bloc_promo = "\n\n".join(linii_promo) if linii_promo else "Verificati pagina magazinului pentru ofertele curente."
 
     # ── Texte statistici ──────────────────────────────────────────────────────
-    folosit_text  = f"Codul a fost folosit de **{folosit:,} ori** de cumparatorii din Romania." if folosit > 0 else ""
-    succes_text   = f"Rata de succes verificata: **{procent}%** — mult peste media de piata de 65%." if procent > 0 else ""
-    comision_text = f"Cashback disponibil: **{comision}** din valoarea comenzii." if comision else ""
+    # NOTA (03.07.2026): procent_succes / folosit_de sunt pseudo-scoruri
+    # deterministe (fetch_2p_api.py), folosite DOAR pentru ordonare interna.
+    # NU le prezenta ca fapte "verificate" cititorului si NU afisa comisionul
+    # ca "cashback" (userul nu primeste cashback — e comisionul nostru).
+    folosit_text  = ""
+    succes_text   = ""
+    comision_text = ""
     trend_text    = f"Popularitate in crestere cu **{trend}%** fata de luna trecuta." if trend > 0 else (
                     f"Magazin stabil, cu comenzi consistente." if trend == 0 else "")
     exclusiv_text = "**Oferta exclusiva AmCupon.ro** — nu o gasesti in alta parte!\n\n" if exclusiv else ""
@@ -221,7 +225,7 @@ Sistemul nostru verifica promotiile de la {nume} de **6 ori pe zi** (la fiecare 
         "slug":    slug_articol_magazin(slug_mag, luna, an),
         "title":   f"Cod Reducere {nume} {luna} {an} | AmCupon.ro",
         "date":    datetime.now().strftime("%Y-%m-%d"),
-        "excerpt": f"Coduri reducere {nume} verificate in {luna} {an}. {len(promotii)} promotii active, rata succes {procent}%. Ghid complet + FAQ pe AmCupon.ro.",
+        "excerpt": f"Coduri reducere {nume} verificate in {luna} {an}. {len(promotii)} promotii active. Ghid complet + FAQ pe AmCupon.ro.",
         "category": categorie,
         "magazin":  slug_mag,
         "cover":    store.get("logo_url") or "/blog-covers/default.png",
@@ -250,11 +254,10 @@ def genereaza_articol_categorie(cat_slug: str, cat_name: str, magazine: list, lu
         promotii_m = m.get("promotii", [])
         promo_text = promotii_m[0]["nume"] if promotii_m else "Oferta activa"
         cod_text = f" — Cod: `{promotii_m[0]['cod_cupon'][:4]}****`" if promotii_m and promotii_m[0].get("cod_cupon") else ""
-        procent_m = m.get("procent_succes", 80)
         linii_mag.append(
             f"### {i}. [{nume_m}](/cod-reducere/{m['magazin']})\n"
             f"**{promo_text}**{cod_text}  \n"
-            f"Rata succes: {procent_m}% | [Vezi oferta →](/cod-reducere/{m['magazin']})"
+            f"[Vezi oferta →](/cod-reducere/{m['magazin']})"
         )
 
     bloc_magazine = "\n\n".join(linii_mag)

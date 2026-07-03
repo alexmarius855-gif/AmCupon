@@ -12,6 +12,23 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 03.07.2026 (audit dur + curățenie ONESTITATE — NEPUSHED încă):**
+- **Audit complet tehnic + competitori** în `AUDIT-REMODELARE-2026-07.md` (root). Descoperire cheie:
+  1044 magazine, 75 cu promoții, **0 cu cod real** (`cod_cupon: ""` la toate) — site "de coduri" fără
+  coduri. Decizie Alex: **hibrid onest** (limbaj cod→ofertă + coduri reale doar unde există în date).
+- **Semnale FALSE eliminate din UI** (cereau credibilitate, o distrugeau): pe homepage (`page.tsx`) +
+  pagina magazin (`MagazinClient.tsx`) am scos: contoare fabricate cu hash/RNG ("X vizualizări azi",
+  "X persoane caută acum"), `procent_succes` afișat ca "% rata succes" (random 72-96 din
+  `calculeaza_succes`), `folosit_de` "Nx folosit" (random 15-800), și **comisionul afișat ca
+  "Cashback până la X%"** (userul NU primește cashback — e comisionul nostru; `formatCashback` șters).
+- **Blog (`generate_blog.py`)** scria fabricația în TEXT + meta excerpt (apare în Google): *"Rata de
+  succes verificată: X% — mult peste media de piață de 65%"* + "folosit de X ori" + "Cashback din
+  comandă". Toate neutralizate (string gol). `procent_succes`/`folosit_de` rămân DOAR ca cheie de
+  sortare internă, niciodată afișate ca fapt. Articolele vechi se regenerează la următorul pipeline complet.
+- **Sursa fabricației rămâne** `fetch_2p_api.py` (`calculeaza_folosit`/`calculeaza_succes` random) —
+  acceptabil DOAR pentru ordonare internă acum că nu se mai afișează. De curățat complet dacă se reia.
+- Build verde. **Necesită push** (confirmare Alex) ca să fie live.
+
 **UPDATE 30.06.2026 (audit vizual + rebrand imagini — PUSHED):**
 - **Audit real pe cod** (agent Explore) a găsit pagini "uitate" din migrarea dark theme + portocaliu/violet ramas.
   Reparate: `CategorieClient.tsx` (template pt TOATE paginile `/categorii/[slug]` — era light theme complet +

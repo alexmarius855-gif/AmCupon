@@ -1592,17 +1592,6 @@ function trackAfiliat(tip: string, magazin: string, cod?: string) {
 }
 
 /* ─── CASHBACK HELPER ────────────────────────────────────────────────────── */
-function formatCashback(comision: string): string | null {
-  if (!comision) return null;
-  // Extrage numere din string: "5%", "3-8%", "2% - 5%", "10", "0"
-  const nums = comision.match(/[\d.]+/g)?.map(Number) ?? [];
-  if (!nums.length) return null;
-  const max = Math.max(...nums);
-  if (max <= 0) return null;
-  if (nums.length > 1) return `Cashback pana la ${max}%`;
-  return `Cashback ${max}%`;
-}
-
 /* ─── COUNTDOWN TIMER ─────────────────────────────────────────────────────── */
 function CardCountdown({ zileRamase }: { zileRamase: number }) {
   const [timeLeft, setTimeLeft] = useState("");
@@ -1647,8 +1636,7 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
   const link           = promo?.landing_page || m.url_afiliat || m.url;
   const nrCupoane      = m.promotii.filter(p => p.cod_cupon).length;
   const nrOferte       = m.promotii.length;
-  const trustScore     = m.procent_succes || (m.are_promotie ? 78 : 50);
-  const cashbackText   = formatCashback(m.comision);
+  const trustScore     = m.are_promotie ? 100 : 45;
 
   const [imgOk, setImgOk] = useState(true);
   const [rating, setRating] = useState<"ok"|"nok"|null>(() => {
@@ -1720,17 +1708,11 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
             {badgeReducere && (
               <span className="text-[10px] font-bold text-emerald-400 bg-emerald-500/15 border border-emerald-500/25 px-1.5 py-0.5 rounded-full">
                 {badgeReducere}
-                {cashbackText && <span className="opacity-60 ml-0.5">+ CB</span>}
               </span>
             )}
             {!badgeReducere && m.are_promotie && (
               <span className="text-[10px] font-bold text-indigo-400 bg-cyan-500/15 border border-cyan-500/25 px-1.5 py-0.5 rounded-full">
                 Oferta activa
-              </span>
-            )}
-            {!m.are_promotie && cashbackText && (
-              <span className="text-[10px] font-bold text-cyan-400 bg-cyan-500/15 border border-cyan-500/25 px-1.5 py-0.5 rounded-full">
-                {cashbackText}
               </span>
             )}
             {m.cod_cupon && (
@@ -1751,10 +1733,6 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
       <div className="px-4 pb-3 flex-1">
         {promo ? (
           <p className="text-xs text-slate-500 line-clamp-2 leading-relaxed">{promo.nume}</p>
-        ) : cashbackText ? (
-          <p className="text-xs text-teal-600 font-medium leading-relaxed">
-            Cumpara prin AmCupon si primesti <strong>{cashbackText.toLowerCase()}</strong> automat
-          </p>
         ) : (
           <p className="text-xs text-slate-400 italic">Fara promotii active momentan</p>
         )}
@@ -1767,12 +1745,6 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse inline-block"/>
             Verificat azi
           </div>
-        )}
-        {m.are_promotie && m.procent_succes > 0 && (
-          <span className="text-[10px] text-slate-400">{m.procent_succes}% succes</span>
-        )}
-        {!m.are_promotie && m.folosit_de > 0 && (
-          <span className="text-[10px] text-slate-400">{m.folosit_de}x folosit</span>
         )}
         {expiraAzi && <CardCountdown zileRamase={0} />}
         {expiraMaine && <CardCountdown zileRamase={1} />}
@@ -1814,12 +1786,8 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
           </a>
         ) : (
           <a href={m.url_afiliat || m.url} target="_blank" rel="noopener noreferrer"
-            className={`flex items-center justify-center w-full font-medium py-2.5 rounded-xl text-sm transition-colors ${
-              cashbackText
-                ? "bg-cyan-600 hover:bg-cyan-500 text-white"
-                : "border border-slate-700 hover:border-indigo-400 text-slate-400 hover:text-indigo-400"
-            }`}>
-            {cashbackText ? `Viziteaza + ${cashbackText}` : "Viziteaza magazinul"}
+            className="flex items-center justify-center w-full font-medium py-2.5 rounded-xl text-sm transition-colors border border-slate-700 hover:border-indigo-400 text-slate-400 hover:text-indigo-400">
+            Viziteaza magazinul
           </a>
         )}
       </div>

@@ -1,0 +1,55 @@
+TIKTOK SCRIPTS - AmCupon.ro
+Data: 2026-07-02
+Format: voce over AI + text pe ecran | 15-25 secunde | faceless
+CTA final: "link in bio" -> amcupon.ro
+================================================================================
+
+SCRIPT 1 — "Cum funcționează un cod de reducere" (educațional, unghi explicativ)
+Durata estimată: ~20 secunde
+Text pe ecran: sincronizat cu voce
+
+[TEXT ECRAN - 0:00] "De ce uneori un cod de reducere nu funcționează?"
+[VOCE] Ai găsit un cod de reducere online, îl pui la checkout... și nu merge.
+
+[TEXT ECRAN - 0:04] "3 motive reale:"
+[VOCE] Motivul unu: codul a expirat deja.
+
+[TEXT ECRAN - 0:06] "❌ Cod expirat"
+[VOCE] Motivul doi: se aplică doar pentru prima comandă.
+
+[TEXT ECRAN - 0:09] "❌ Doar prima comandă"
+[VOCE] Motivul trei: site-ul care l-a publicat nu l-a verificat niciodată.
+
+[TEXT ECRAN - 0:12] "❌ Cod neverificat"
+[VOCE] Pe AmCupon.ro găsești doar coduri active, actualizate automat. Nu mai pierzi timp cu coduri moarte.
+
+[TEXT ECRAN - 0:18] "✅ Coduri actualizate automat → link în bio"
+[VOCE] Link în bio.
+
+---
+
+SCRIPT 2 — "Magazine mai puțin cunoscute cu reduceri mari" (discovery)
+Durata estimată: ~22 secunde
+Text pe ecran: sincronizat cu voce
+
+[TEXT ECRAN - 0:00] "3 magazine pe care românii le ignoră, dar au reduceri de până la 40%"
+[VOCE] Toată lumea știe de eMAG și Fashiondays. Dar există magazine la fel de serioase pe care aproape nimeni nu le caută.
+
+[TEXT ECRAN - 0:06] "1. Notino — parfumuri & cosmetice, reduceri tot anul"
+[VOCE] Notino — parfumuri și cosmetice cu reduceri permanente, nu doar de Black Friday.
+
+[TEXT ECRAN - 0:11] "2. Answear — fashion internațional, coduri frecvente"
+[VOCE] Answear — haine din branduri internaționale cu coduri promoționale care se reînnoiesc des.
+
+[TEXT ECRAN - 0:16] "3. Vistaprint — imprimante & tipărituri, -30% frecvent"
+[VOCE] Și Vistaprint pentru cărți de vizită sau bannere — reduceri de 30% aproape constant.
+
+[TEXT ECRAN - 0:21] "Toate codurile active → amcupon.ro | link în bio"
+[VOCE] Toate codurile active le găsești pe AmCupon.ro — link în bio.
+
+================================================================================
+NOTE PRODUCȚIE:
+- Script 1: ton calm-explicativ, voce feminină sau masculină neutră, font bold pe ecran
+- Script 2: ton entuziast dar informativ, tranziții rapide între cele 3 magazine
+- Ambele: fundal simplu (gradient sau dark minimal), fără fețe/persoane
+================================================================================
