@@ -6,6 +6,7 @@ import Link from "next/link";
 interface Offer {
   magazin: string; nume: string; logo: string;
   categorie: string; promo: string; code: string;
+  disc: number; zile: number;
 }
 interface Props {
   offers: Offer[];
@@ -70,6 +71,8 @@ export default function NouClient({ offers, stats }: Props) {
         @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
         @keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
         @keyframes stamp{0%{transform:scale(1.6) rotate(-8deg);opacity:0}60%{transform:scale(.92) rotate(2deg);opacity:1}100%{transform:scale(1) rotate(0)}}
+        @keyframes pulseGlow{0%,100%{box-shadow:0 0 0 0 rgba(249,115,22,.0)}50%{box-shadow:0 0 22px 2px rgba(249,115,22,.45)}}
+        .stub-glow{animation:pulseGlow 2.4s ease-in-out infinite}
         .animate-blob{animation:blob 18s ease-in-out infinite}
         .grad-text{background:linear-gradient(90deg,#f97316,#ec4899,#8b5cf6,#22d3ee,#f97316);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:gshift 8s ease infinite}
         .glass{background:rgba(255,255,255,.06);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.12)}
@@ -146,7 +149,7 @@ export default function NouClient({ offers, stats }: Props) {
               const isRevealed = revealed.has(o.magazin);
               const isCopied = copied === o.magazin;
               return (
-                <div key={o.magazin} className="relative flex rounded-2xl overflow-visible" style={{ minHeight: 132 }}>
+                <div key={o.magazin} className="relative flex rounded-2xl overflow-visible shadow-xl shadow-black/40 hover:-translate-y-0.5 transition-transform" style={{ minHeight: 140 }}>
                   {/* Partea principala (info) — link spre magazin */}
                   <Link href={`/cod-reducere/${o.magazin}`}
                     className="flex-1 glass rounded-l-2xl p-5 flex items-center gap-4 hover:bg-white/[.09] transition-colors"
@@ -155,23 +158,36 @@ export default function NouClient({ offers, stats }: Props) {
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img src={o.logo} alt={o.nume} className="w-full h-full object-contain p-1.5" loading="lazy" />
                     </span>
-                    <span className="min-w-0">
-                      <span className="block font-black text-white text-lg truncate">{o.nume}</span>
-                      <span className="block text-[11px] text-white/45 mb-1">{o.categorie}</span>
+                    <span className="min-w-0 flex-1">
+                      <span className="flex items-center gap-2 mb-0.5">
+                        <span className="font-black text-white text-lg truncate">{o.nume}</span>
+                        {o.disc > 0 && (
+                          <span className="shrink-0 text-xs font-black text-white px-2 py-0.5 rounded-md" style={{ background: "linear-gradient(135deg,#f97316,#ec4899)" }}>-{o.disc}%</span>
+                        )}
+                      </span>
+                      <span className="block text-[11px] text-white/45 mb-1.5">{o.categorie}</span>
                       <span className="block text-sm text-white/70 line-clamp-2">{o.promo}</span>
+                      <span className="flex items-center gap-2 mt-2">
+                        <span className="inline-flex items-center gap-1 text-[10px] font-semibold text-emerald-400">
+                          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />verificat azi
+                        </span>
+                        {o.zile > 0 && o.zile <= 3 && (
+                          <span className="text-[10px] font-bold text-rose-300 bg-rose-500/15 border border-rose-500/25 px-1.5 py-0.5 rounded-full">⏳ expira in {o.zile}z</span>
+                        )}
+                      </span>
                     </span>
                   </Link>
 
-                  {/* Linie de rupere + notch-uri */}
-                  <div className="relative w-0">
-                    <div className="absolute inset-y-3 -left-px border-l-2 border-dashed border-white/25" />
+                  {/* Linie de rupere perforata + notch-uri */}
+                  <div className="relative w-0 z-10">
+                    <div className="absolute top-1.5 bottom-1.5 -left-[3px] w-1.5" style={{ backgroundImage: `radial-gradient(circle at center, ${SECTION_BG} 2.5px, transparent 3px)`, backgroundSize: "100% 12px" }} />
                     <span className="absolute -top-2.5 -left-2.5 w-5 h-5 rounded-full" style={{ background: SECTION_BG }} />
                     <span className="absolute -bottom-2.5 -left-2.5 w-5 h-5 rounded-full" style={{ background: SECTION_BG }} />
                   </div>
 
                   {/* Stub (cod) — se "rupe" la click */}
                   <button onClick={(e) => rupe(o, e)}
-                    className="w-40 shrink-0 rounded-r-2xl px-4 flex flex-col items-center justify-center text-center relative overflow-hidden group"
+                    className={`w-40 shrink-0 rounded-r-2xl px-4 flex flex-col items-center justify-center text-center relative overflow-hidden group ${o.code && !isRevealed ? "stub-glow" : ""}`}
                     style={{ background: o.code ? "linear-gradient(135deg,#f97316,#ec4899)" : "linear-gradient(135deg,#6366f1,#22d3ee)" }}>
                     {o.code ? (
                       isRevealed ? (

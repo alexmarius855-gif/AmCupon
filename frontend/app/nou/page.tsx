@@ -12,7 +12,17 @@ export const metadata: Metadata = {
 interface Magazin {
   magazin: string; url: string; url_afiliat?: string; logo_url?: string;
   categorie?: string; categorie_slug?: string; sales_number?: number;
-  are_promotie?: boolean; promotii?: { nume?: string; cod_cupon?: string }[];
+  are_promotie?: boolean; zile_ramase?: number;
+  promotii?: { nume?: string; descriere?: string; cod_cupon?: string; zile_ramase?: number }[];
+}
+
+function maxPct(...texts: (string | undefined)[]): number {
+  let max = 0;
+  for (const t of texts) {
+    const m = (t || "").match(/(\d+)\s*%/g);
+    if (m) for (const x of m) { const v = parseInt(x); if (v > max && v <= 90) max = v; }
+  }
+  return max;
 }
 
 function readJSON<T>(file: string, fallback: T): T {
@@ -36,14 +46,20 @@ export default function Page() {
     // magazinele CU cod primele (ca sa se vada reveal-ul), apoi dupa popularitate
     .sort((a, b) => (codeOf(b) ? 1 : 0) - (codeOf(a) ? 1 : 0) || (b.sales_number || 0) - (a.sales_number || 0))
     .slice(0, 12)
-    .map(m => ({
-      magazin: m.magazin,
-      nume: numeAfisat(m.magazin),
-      logo: m.logo_url || "",
-      categorie: m.categorie || "Magazin",
-      promo: m.promotii?.[0]?.nume || "Oferta activa",
-      code: codeOf(m),
-    }));
+    .map(m => {
+      const p0 = m.promotii?.[0];
+      const zile = p0?.zile_ramase ?? m.zile_ramase ?? 99;
+      return {
+        magazin: m.magazin,
+        nume: numeAfisat(m.magazin),
+        logo: m.logo_url || "",
+        categorie: m.categorie || "Magazin",
+        promo: p0?.nume || "Oferta activa",
+        code: codeOf(m),
+        disc: maxPct(p0?.nume, p0?.descriere),
+        zile: typeof zile === "number" ? zile : 99,
+      };
+    });
 
   const nrCoduri = mags.filter(m => (m.promotii || []).some(p => p.cod_cupon)).length;
   const nrPromo = withPromo.length;
