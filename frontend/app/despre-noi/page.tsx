@@ -56,27 +56,27 @@ const BENEFICII = [
 
 export default function DespreNoiPage() {
   return (
-    <div className="min-h-screen bg-slate-950">
-      <header className="bg-slate-950 border-b border-slate-800">
+    <div className="min-h-screen bg-[#0b0a07]">
+      <header className="bg-[#0b0a07] border-b border-[#26211a]">
         <div className="max-w-5xl mx-auto px-4 py-3 flex items-center gap-3">
           <Link href="/" className="flex items-center gap-1.5 shrink-0">
-            <div className="bg-indigo-600 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
+            <div className="bg-[#b8912e] text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
             <span className="font-black text-white text-xl">Cupon</span>
-            <span className="text-indigo-400 font-black text-xl">.ro</span>
+            <span className="text-[#d8c091] font-black text-xl">.ro</span>
           </Link>
-          <span className="text-slate-600">/</span>
-          <span className="text-sm font-semibold text-slate-300">Despre noi</span>
+          <span className="text-[#473d28]">/</span>
+          <span className="text-sm font-semibold text-[#c8bda2]">Despre noi</span>
         </div>
       </header>
 
       {/* HERO */}
-      <div className="relative bg-slate-950 border-b border-slate-800 overflow-hidden py-16 px-4">
-        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 70% 60% at 50% 0%, rgba(79,70,229,0.15) 0%, transparent 65%)" }} />
+      <div className="relative bg-[#0b0a07] border-b border-[#26211a] overflow-hidden py-16 px-4">
+        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 70% 60% at 50% 0%, rgba(184,145,46,0.15) 0%, transparent 65%)" }} />
         <div className="relative max-w-3xl mx-auto text-center">
           <h1 className="text-3xl md:text-4xl font-black mb-4 text-white">
-            Despre <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #818cf8, #22d3ee)" }}>AmCupon.ro</span>
+            Despre <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #e3d1a6, #b8912e)" }}>AmCupon.ro</span>
           </h1>
-          <p className="text-slate-400 text-base md:text-lg leading-relaxed">
+          <p className="text-[#a89a78] text-base md:text-lg leading-relaxed">
             AmCupon.ro îți aduce cele mai bune coduri de reducere și oferte verificate
             de la peste <strong className="text-white">1000 de magazine partenere</strong> din România,
             actualizate zilnic — complet gratuit.
@@ -89,18 +89,18 @@ export default function DespreNoiPage() {
         {/* CE FACEM */}
         <section>
           <h2 className="text-2xl font-black text-white mb-4">Ce face AmCupon.ro?</h2>
-          <div className="bg-slate-900 rounded-2xl border border-slate-800 p-8 shadow-sm">
-            <p className="text-slate-300 leading-relaxed mb-4">
+          <div className="bg-[#15120c] rounded-2xl border border-[#26211a] p-8 shadow-sm">
+            <p className="text-[#c8bda2] leading-relaxed mb-4">
               AmCupon.ro este o platformă de agregare a ofertelor afiliate. Funcționăm ca intermediar
               între tine și magazinele online: colectăm zilnic toate promoțiile active de la partenerii
               noștri prin platforma <strong>2Performant</strong> și le afișăm centralizat, ușor de găsit.
             </p>
-            <p className="text-slate-300 leading-relaxed mb-4">
+            <p className="text-[#c8bda2] leading-relaxed mb-4">
               Atunci când cumperi printr-un link de pe AmCupon.ro, magazinul ne plătește un comision mic
               din bugetul lor de marketing. <strong>Tu nu plătești nimic în plus</strong> — dimpotrivă,
               beneficiezi de codul de reducere care scade prețul final.
             </p>
-            <p className="text-slate-300 leading-relaxed">
+            <p className="text-[#c8bda2] leading-relaxed">
               Misiunea noastră este simplă: să te ajutăm să economisești la fiecare cumpărătură online,
               fără să pierzi timp căutând pe zeci de site-uri.
             </p>
@@ -112,10 +112,10 @@ export default function DespreNoiPage() {
           <h2 className="text-2xl font-black text-white mb-6">De ce AmCupon.ro?</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {BENEFICII.map((b) => (
-              <div key={b.titlu} className="bg-slate-900 rounded-2xl border border-slate-800 p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div key={b.titlu} className="bg-[#15120c] rounded-2xl border border-[#26211a] p-6 shadow-sm hover:shadow-md transition-shadow">
                 <div className="text-3xl mb-3">{b.emoji}</div>
                 <h3 className="font-black text-white text-base mb-2">{b.titlu}</h3>
-                <p className="text-sm text-slate-400 leading-relaxed">{b.desc}</p>
+                <p className="text-sm text-[#a89a78] leading-relaxed">{b.desc}</p>
               </div>
             ))}
           </div>
@@ -124,19 +124,19 @@ export default function DespreNoiPage() {
         {/* CUM VERIFICAM */}
         <section>
           <h2 className="text-2xl font-black text-white mb-6">Cum verificăm ofertele?</h2>
-          <p className="text-slate-400 mb-8 leading-relaxed">
+          <p className="text-[#a89a78] mb-8 leading-relaxed">
             Validitatea ofertelor este prioritatea noastră. Procesul nostru automat garantează că fiecare
             cod și promoție afișată este funcțională în momentul vizitei tale.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {PASI.map((p) => (
-              <div key={p.nr} className="bg-slate-900 rounded-2xl border border-slate-800 p-6 shadow-sm flex gap-4">
-                <div className="w-10 h-10 rounded-xl bg-indigo-600 text-white font-black text-lg flex items-center justify-center shrink-0">
+              <div key={p.nr} className="bg-[#15120c] rounded-2xl border border-[#26211a] p-6 shadow-sm flex gap-4">
+                <div className="w-10 h-10 rounded-xl bg-[#b8912e] text-white font-black text-lg flex items-center justify-center shrink-0">
                   {p.nr}
                 </div>
                 <div>
                   <h3 className="font-bold text-white text-sm mb-1">{p.titlu}</h3>
-                  <p className="text-xs text-slate-400 leading-relaxed">{p.desc}</p>
+                  <p className="text-xs text-[#a89a78] leading-relaxed">{p.desc}</p>
                 </div>
               </div>
             ))}
@@ -146,7 +146,7 @@ export default function DespreNoiPage() {
         {/* CUM FOLOSESTI */}
         <section>
           <h2 className="text-2xl font-black text-white mb-6">Cum folosești un cod de reducere?</h2>
-          <div className="bg-slate-900 rounded-2xl border border-slate-800 p-8 shadow-sm">
+          <div className="bg-[#15120c] rounded-2xl border border-[#26211a] p-8 shadow-sm">
             <div className="space-y-4">
               {[
                 { step: "01", text: "Găsește magazinul dorit pe AmCupon.ro și copiază codul de reducere activ." },
@@ -156,8 +156,8 @@ export default function DespreNoiPage() {
                 { step: "05", text: "Finalizează comanda și bucură-te de economii!" },
               ].map((s) => (
                 <div key={s.step} className="flex items-start gap-4">
-                  <span className="text-indigo-400 font-black text-lg w-10 shrink-0">{s.step}</span>
-                  <p className="text-slate-300 leading-relaxed pt-0.5">{s.text}</p>
+                  <span className="text-[#d8c091] font-black text-lg w-10 shrink-0">{s.step}</span>
+                  <p className="text-[#c8bda2] leading-relaxed pt-0.5">{s.text}</p>
                 </div>
               ))}
             </div>
@@ -165,7 +165,7 @@ export default function DespreNoiPage() {
         </section>
 
         {/* CIFRE */}
-        <section className="bg-gradient-to-r from-indigo-600 to-indigo-700 rounded-3xl p-10 text-white text-center">
+        <section className="bg-gradient-to-r from-[#b8912e] to-[#9c7a26] rounded-3xl p-10 text-white text-center">
           <h2 className="text-2xl font-black mb-8">AmCupon.ro în cifre</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
@@ -176,7 +176,7 @@ export default function DespreNoiPage() {
             ].map((c) => (
               <div key={c.label}>
                 <div className="text-3xl md:text-4xl font-black mb-1">{c.nr}</div>
-                <div className="text-cyan-200 text-sm">{c.label}</div>
+                <div className="text-[#e6d5a8] text-sm">{c.label}</div>
               </div>
             ))}
           </div>
@@ -185,13 +185,13 @@ export default function DespreNoiPage() {
         {/* CONTACT */}
         <section>
           <h2 className="text-2xl font-black text-white mb-6">Contact</h2>
-          <div className="bg-slate-900 rounded-2xl border border-slate-800 p-8 shadow-sm">
-            <p className="text-slate-300 mb-4 leading-relaxed">
+          <div className="bg-[#15120c] rounded-2xl border border-[#26211a] p-8 shadow-sm">
+            <p className="text-[#c8bda2] mb-4 leading-relaxed">
               Ai o întrebare despre un cod de reducere, o ofertă expirată sau dorești să colaborezi cu noi?
               Ne poți contacta oricând pe email.
             </p>
             <a href="mailto:contact@amcupon.ro"
-              className="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-6 py-3 rounded-xl transition-colors">
+              className="inline-flex items-center gap-2 bg-[#b8912e] hover:bg-[#c9a63e] text-white font-bold px-6 py-3 rounded-xl transition-colors">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
@@ -203,7 +203,7 @@ export default function DespreNoiPage() {
       </div>
 
       <div className="max-w-5xl mx-auto px-4 pb-10 text-center">
-        <Link href="/" className="text-sm text-slate-500 hover:text-indigo-400 transition-colors">
+        <Link href="/" className="text-sm text-[#8c8064] hover:text-[#d8c091] transition-colors">
           ← Înapoi la AmCupon.ro
         </Link>
       </div>

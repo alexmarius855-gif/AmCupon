@@ -49,7 +49,7 @@ export default function BannerAd2P({
   return (
     <div className={`flex flex-col gap-1.5 ${alignClass}`}>
       {showLabel && (
-        <span className="text-[10px] text-slate-600 font-medium uppercase tracking-widest">
+        <span className="text-[10px] text-[#473d28] font-medium uppercase tracking-widest">
           Publicitate
         </span>
       )}

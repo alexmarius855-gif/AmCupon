@@ -31,7 +31,7 @@ export default function AdminLogin() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-950 flex items-center justify-center px-4">
+    <div className="min-h-screen bg-[#0b0a07] flex items-center justify-center px-4">
       <div className="w-full max-w-sm">
         {/* Logo */}
         <div className="text-center mb-8">
@@ -39,12 +39,12 @@ export default function AdminLogin() {
             🎛️
           </div>
           <h1 className="text-2xl font-black text-white">Mission Control</h1>
-          <p className="text-slate-500 text-sm mt-1">AmCupon.ro · Admin Panel</p>
+          <p className="text-[#8c8064] text-sm mt-1">AmCupon.ro · Admin Panel</p>
         </div>
 
-        <form onSubmit={handleLogin} className="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-4 shadow-2xl">
+        <form onSubmit={handleLogin} className="bg-[#15120c] border border-[#26211a] rounded-2xl p-6 space-y-4 shadow-2xl">
           <div>
-            <label className="block text-sm font-semibold text-slate-300 mb-2">
+            <label className="block text-sm font-semibold text-[#c8bda2] mb-2">
               Parola admin
             </label>
             <input
@@ -54,7 +54,7 @@ export default function AdminLogin() {
               placeholder="••••••••"
               required
               autoFocus
-              className="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500/50 placeholder-slate-600 transition-all"
+              className="w-full bg-[#26211a] border border-[#37301f] text-white rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500/50 placeholder-[#473d28] transition-all"
             />
           </div>
 
@@ -73,7 +73,7 @@ export default function AdminLogin() {
           </button>
         </form>
 
-        <p className="text-center text-xs text-slate-700 mt-6">
+        <p className="text-center text-xs text-[#37301f] mt-6">
           Session valabila 24h · Acces restricționat
         </p>
       </div>

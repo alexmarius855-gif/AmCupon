@@ -44,7 +44,7 @@ function numeAfisat(s: string) {
   return s.split(".")[0].replace(/-/g, " ").split(" ").map(w => w[0].toUpperCase() + w.slice(1)).join(" ");
 }
 
-const CULORI = ["bg-indigo-600"];
+const CULORI = ["bg-[#b8912e]"];
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -72,13 +72,13 @@ export default function PescuitPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <div className="min-h-screen bg-slate-950">
+      <div className="min-h-screen bg-[#0b0a07]">
 
-        <nav className="bg-slate-950 border-b border-slate-800">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-slate-500">
-            <Link href="/" className="hover:text-indigo-400">Acasa</Link>
+        <nav className="bg-[#0b0a07] border-b border-[#26211a]">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#8c8064]">
+            <Link href="/" className="hover:text-[#d8c091]">Acasa</Link>
             <span className="mx-1">/</span>
-            <span className="text-slate-300 font-medium">Pescuit</span>
+            <span className="text-[#c8bda2] font-medium">Pescuit</span>
           </div>
         </nav>
 
@@ -107,10 +107,10 @@ export default function PescuitPage() {
           <h2 className="text-xl font-black text-white mb-6 text-center">Ce gasesti la preturi mai mici</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {ECHIPAMENTE.map(e => (
-              <div key={e.label} className="bg-slate-900 border border-slate-800 rounded-2xl p-5 hover:shadow-md transition-all">
+              <div key={e.label} className="bg-[#15120c] border border-[#26211a] rounded-2xl p-5 hover:shadow-md transition-all">
                 <div className="text-3xl mb-2">{e.emoji}</div>
                 <h3 className="font-bold text-white text-sm mb-1">{e.label}</h3>
-                <p className="text-xs text-slate-400">{e.desc}</p>
+                <p className="text-xs text-[#a89a78]">{e.desc}</p>
               </div>
             ))}
           </div>
@@ -120,9 +120,9 @@ export default function PescuitPage() {
         <section className="max-w-6xl mx-auto px-4 pb-10">
           <h2 className="text-xl font-black text-white mb-5">Magazine pescuit cu reduceri active</h2>
           {magazine.length === 0 ? (
-            <div className="text-center py-10 bg-slate-900 rounded-2xl">
+            <div className="text-center py-10 bg-[#15120c] rounded-2xl">
               <p className="text-2xl mb-3">🎣</p>
-              <p className="text-slate-400 font-medium mb-2">Curand disponibil — verifica ofertele sport</p>
+              <p className="text-[#a89a78] font-medium mb-2">Curand disponibil — verifica ofertele sport</p>
               <Link href="/categorii/sports-outdoors" className="inline-block bg-emerald-600 text-white font-bold px-6 py-3 rounded-xl hover:bg-emerald-500 transition-colors">
                 Sport & Outdoor →
               </Link>
@@ -135,10 +135,10 @@ export default function PescuitPage() {
                 const promo = m.promotii?.[0];
                 return (
                   <a key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                    className="group bg-slate-900 border border-slate-800 hover:border-emerald-500/40 rounded-2xl p-4 transition-all hover:shadow-md">
+                    className="group bg-[#15120c] border border-[#26211a] hover:border-emerald-500/40 rounded-2xl p-4 transition-all hover:shadow-md">
                     <div className="flex items-center gap-3 mb-3">
                       {m.logo_url ? (
-                        <div className="w-10 h-10 rounded-xl overflow-hidden bg-white border border-slate-800 shrink-0">
+                        <div className="w-10 h-10 rounded-xl overflow-hidden bg-white border border-[#26211a] shrink-0">
                           {/* eslint-disable-next-line @next/next/no-img-element */}
                           <img src={m.logo_url} alt={`Logo ${nume}`} className="w-full h-full object-contain" loading="lazy" />
                         </div>
@@ -154,9 +154,9 @@ export default function PescuitPage() {
                       </div>
                     </div>
                     {promo ? (
-                      <p className="text-slate-400 text-xs line-clamp-2">{promo.nume}</p>
+                      <p className="text-[#a89a78] text-xs line-clamp-2">{promo.nume}</p>
                     ) : (
-                      <p className="text-slate-500 text-xs italic">Verifica ofertele curente</p>
+                      <p className="text-[#8c8064] text-xs italic">Verifica ofertele curente</p>
                     )}
                     <div className="flex justify-end mt-2">
                       <span className="text-xs text-sky-500 font-semibold group-hover:text-sky-600">Vezi →</span>
@@ -178,10 +178,10 @@ export default function PescuitPage() {
         />
 
         {/* SEO TEXT */}
-        <section className="bg-slate-900 border-t border-slate-800 py-10 px-4">
+        <section className="bg-[#15120c] border-t border-[#26211a] py-10 px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-xl font-black text-white mb-5">Cum alegi echipamentele de pescuit</h2>
-            <div className="space-y-4 text-sm text-slate-400 leading-relaxed">
+            <div className="space-y-4 text-sm text-[#a89a78] leading-relaxed">
               <div>
                 <h3 className="font-bold text-white mb-1">Undite: spinning, feeder sau crap?</h3>
                 <p>Pentru inceput, o undita spinning universala (2-3m, 10-30g) acopera cele mai multe situatii. Feeder-ul e optim pentru rauri si lacuri cu fund nisipos, iar setup-ul de crap necesita investitie mai mare dar ofera sesiuni lungi si capturi mari.</p>
@@ -205,7 +205,7 @@ export default function PescuitPage() {
 
         {/* LINK-URI INRUDITE */}
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-slate-300 mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-[#c8bda2] mb-4">Exploreaza si alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/gradina", label: "🌿 Gradina & Plante" },
@@ -216,18 +216,18 @@ export default function PescuitPage() {
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-slate-900 hover:bg-slate-800 hover:text-emerald-300 text-slate-300 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-slate-800 hover:border-emerald-400">
+                className="bg-[#15120c] hover:bg-[#26211a] hover:text-emerald-300 text-[#c8bda2] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#26211a] hover:border-emerald-400">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-slate-800 py-6 text-center text-xs text-slate-500 mt-4">
+        <footer className="border-t border-[#26211a] py-6 text-center text-xs text-[#8c8064] mt-4">
           © {an} AmCupon.ro ·{" "}
-          <Link href="/blog" className="hover:text-indigo-400">Blog</Link>{" · "}
-          <Link href="/categorii" className="hover:text-indigo-400">Categorii</Link>{" · "}
-          <Link href="/" className="hover:text-indigo-400">Acasa</Link>
+          <Link href="/blog" className="hover:text-[#d8c091]">Blog</Link>{" · "}
+          <Link href="/categorii" className="hover:text-[#d8c091]">Categorii</Link>{" · "}
+          <Link href="/" className="hover:text-[#d8c091]">Acasa</Link>
         </footer>
       </div>
     </>

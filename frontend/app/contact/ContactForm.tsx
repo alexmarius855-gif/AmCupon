@@ -17,10 +17,10 @@ export default function ContactForm() {
 
   if (state.succeeded) {
     return (
-      <div className="bg-slate-900 border border-slate-800 rounded-2xl shadow-sm p-8 text-center">
+      <div className="bg-[#15120c] border border-[#26211a] rounded-2xl shadow-sm p-8 text-center">
         <div className="text-5xl mb-4">🎉</div>
         <h2 className="text-xl font-black text-white mb-2">Mesaj trimis!</h2>
-        <p className="text-slate-400 text-sm">
+        <p className="text-[#a89a78] text-sm">
           Îți vom răspunde în maxim 24h la adresa ta de email.
         </p>
       </div>
@@ -28,7 +28,7 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="bg-slate-900 border border-slate-800 rounded-2xl shadow-sm p-6">
+    <div className="bg-[#15120c] border border-[#26211a] rounded-2xl shadow-sm p-6">
       <h2 className="font-black text-white text-lg mb-5">Trimite un mesaj</h2>
 
       <form onSubmit={handleSubmit} className="space-y-4">
@@ -36,7 +36,7 @@ export default function ContactForm() {
         <div>
           <label
             htmlFor="name"
-            className="block text-xs font-semibold text-slate-400 mb-1 uppercase tracking-wide"
+            className="block text-xs font-semibold text-[#a89a78] mb-1 uppercase tracking-wide"
           >
             Numele tău *
           </label>
@@ -46,7 +46,7 @@ export default function ContactForm() {
             name="name"
             placeholder="Prenume Nume"
             required
-            className="w-full bg-slate-800 border-2 border-slate-700 text-white placeholder:text-slate-500 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-indigo-500 transition-colors"
+            className="w-full bg-[#26211a] border-2 border-[#37301f] text-white placeholder:text-[#8c8064] rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-[#c9a63e] transition-colors"
           />
           <ValidationError
             field="name"
@@ -60,7 +60,7 @@ export default function ContactForm() {
         <div>
           <label
             htmlFor="email"
-            className="block text-xs font-semibold text-slate-400 mb-1 uppercase tracking-wide"
+            className="block text-xs font-semibold text-[#a89a78] mb-1 uppercase tracking-wide"
           >
             Email *
           </label>
@@ -70,7 +70,7 @@ export default function ContactForm() {
             name="email"
             placeholder="adresa@email.ro"
             required
-            className="w-full bg-slate-800 border-2 border-slate-700 text-white placeholder:text-slate-500 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-indigo-500 transition-colors"
+            className="w-full bg-[#26211a] border-2 border-[#37301f] text-white placeholder:text-[#8c8064] rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-[#c9a63e] transition-colors"
           />
           <ValidationError
             field="email"
@@ -84,14 +84,14 @@ export default function ContactForm() {
         <div>
           <label
             htmlFor="subiect"
-            className="block text-xs font-semibold text-slate-400 mb-1 uppercase tracking-wide"
+            className="block text-xs font-semibold text-[#a89a78] mb-1 uppercase tracking-wide"
           >
             Subiect
           </label>
           <select
             id="subiect"
             name="subiect"
-            className="w-full bg-slate-800 border-2 border-slate-700 text-white rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-indigo-500 transition-colors"
+            className="w-full bg-[#26211a] border-2 border-[#37301f] text-white rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-[#c9a63e] transition-colors"
           >
             {SUBIECTE.map((s) => (
               <option key={s} value={s}>
@@ -105,7 +105,7 @@ export default function ContactForm() {
         <div>
           <label
             htmlFor="message"
-            className="block text-xs font-semibold text-slate-400 mb-1 uppercase tracking-wide"
+            className="block text-xs font-semibold text-[#a89a78] mb-1 uppercase tracking-wide"
           >
             Mesaj *
           </label>
@@ -115,7 +115,7 @@ export default function ContactForm() {
             placeholder="Descrie-ne problema sau întrebarea ta..."
             required
             rows={5}
-            className="w-full bg-slate-800 border-2 border-slate-700 text-white placeholder:text-slate-500 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-indigo-500 transition-colors resize-none"
+            className="w-full bg-[#26211a] border-2 border-[#37301f] text-white placeholder:text-[#8c8064] rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-[#c9a63e] transition-colors resize-none"
           />
           <ValidationError
             field="message"
@@ -134,14 +134,14 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={state.submitting}
-          className="w-full bg-indigo-600 hover:bg-indigo-500 disabled:opacity-60 text-white font-black py-3 rounded-xl text-sm transition-colors"
+          className="w-full bg-[#b8912e] hover:bg-[#c9a63e] disabled:opacity-60 text-white font-black py-3 rounded-xl text-sm transition-colors"
         >
           {state.submitting ? "Se trimite..." : "Trimite mesajul →"}
         </button>
 
-        <p className="text-xs text-slate-500 text-center">
+        <p className="text-xs text-[#8c8064] text-center">
           Prin trimitere ești de acord cu{" "}
-          <Link href="/confidentialitate" className="underline hover:text-indigo-400">
+          <Link href="/confidentialitate" className="underline hover:text-[#d8c091]">
             politica de confidențialitate
           </Link>
         </p>

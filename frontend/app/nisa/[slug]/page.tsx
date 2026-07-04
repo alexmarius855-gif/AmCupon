@@ -142,16 +142,16 @@ export default async function NisaPage(
   };
 
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div className="min-h-screen bg-[#0b0a07]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* Hero */}
-      <div className="bg-gradient-to-br from-indigo-700 to-cyan-700 text-white py-12 px-4">
+      <div className="bg-gradient-to-br from-[#9c7a26] to-[#8a6a1e] text-white py-12 px-4">
         <div className="max-w-5xl mx-auto text-center">
           <div className="text-5xl mb-3">{nisa.emoji}</div>
           <h1 className="text-3xl font-black mb-2">{nisa.titlu}</h1>
-          <p className="text-slate-300 text-sm max-w-xl mx-auto">{nisa.descriere}</p>
-          <div className="mt-4 flex flex-wrap justify-center gap-3 text-xs text-slate-400">
+          <p className="text-[#c8bda2] text-sm max-w-xl mx-auto">{nisa.descriere}</p>
+          <div className="mt-4 flex flex-wrap justify-center gap-3 text-xs text-[#a89a78]">
             <span>&#10003; {produseFiltrate.length} produse</span>
             <span>&#10003; {magazineFiltrate.length} magazine</span>
             <span>&#10003; Actualizat zilnic</span>
@@ -164,25 +164,25 @@ export default async function NisaPage(
         {/* Magazine cu promotii */}
         {magazineFiltrate.length > 0 && (
           <section className="mb-10">
-            <h2 className="text-lg font-black text-slate-900 mb-4">
+            <h2 className="text-lg font-black text-[#15120c] mb-4">
               Magazine {nisa.titlu.toLowerCase()} cu reduceri active
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
               {magazineFiltrate.map((m: any) => (
                 <a key={m.magazin} href={m.url_afiliat || m.url}
                   target="_blank" rel="sponsored noopener noreferrer"
-                  className="bg-slate-900 border border-slate-800 hover:border-indigo-300 rounded-xl p-3 flex items-center gap-3 hover:shadow-md transition-all">
+                  className="bg-[#15120c] border border-[#26211a] hover:border-[#e3d1a6] rounded-xl p-3 flex items-center gap-3 hover:shadow-md transition-all">
                   {m.logo && (
                     // eslint-disable-next-line @next/next/no-img-element
                     <img src={m.logo} alt={m.magazin_display || m.magazin}
                       className="w-8 h-8 object-contain" loading="lazy" />
                   )}
                   <div className="min-w-0">
-                    <p className="text-xs font-bold text-slate-800 truncate">
+                    <p className="text-xs font-bold text-[#26211a] truncate">
                       {m.magazin_display || m.magazin}
                     </p>
                     {m.promotie && (
-                      <p className="text-[10px] text-cyan-400 truncate">{m.promotie.slice(0, 40)}</p>
+                      <p className="text-[10px] text-[#d8c091] truncate">{m.promotie.slice(0, 40)}</p>
                     )}
                   </div>
                 </a>
@@ -194,13 +194,13 @@ export default async function NisaPage(
         {/* Produse */}
         {produseFiltrate.length > 0 ? (
           <section>
-            <h2 className="text-lg font-black text-slate-900 mb-4">
+            <h2 className="text-lg font-black text-[#15120c] mb-4">
               Produse {nisa.titlu.toLowerCase()} cu discount
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
               {produseFiltrate.map((p: any, i: number) => (
                 <a key={i} href={p.url} target="_blank" rel="sponsored noopener noreferrer"
-                  className="group bg-slate-900 border border-slate-800 hover:border-indigo-300 rounded-2xl overflow-hidden hover:shadow-lg transition-all flex flex-col">
+                  className="group bg-[#15120c] border border-[#26211a] hover:border-[#e3d1a6] rounded-2xl overflow-hidden hover:shadow-lg transition-all flex flex-col">
                   <div className="aspect-square bg-slate-50 flex items-center justify-center overflow-hidden relative">
                     {p.image ? (
                       // eslint-disable-next-line @next/next/no-img-element
@@ -210,15 +210,15 @@ export default async function NisaPage(
                       <span className="text-4xl">{nisa.emoji}</span>
                     )}
                     {p.discount_pct > 0 && (
-                      <span className="absolute top-2 left-2 bg-indigo-600 text-white text-[10px] font-black px-2 py-0.5 rounded-full">
+                      <span className="absolute top-2 left-2 bg-[#b8912e] text-white text-[10px] font-black px-2 py-0.5 rounded-full">
                         -{p.discount_pct}%
                       </span>
                     )}
                   </div>
                   <div className="p-3 flex flex-col flex-1">
-                    <p className="text-[10px] text-slate-400 truncate">{p.brand || p.category}</p>
-                    <p className="text-xs font-semibold text-slate-800 line-clamp-2 flex-1 leading-snug">{p.title}</p>
-                    <p className="font-black text-indigo-300 text-sm mt-2">
+                    <p className="text-[10px] text-[#a89a78] truncate">{p.brand || p.category}</p>
+                    <p className="text-xs font-semibold text-[#26211a] line-clamp-2 flex-1 leading-snug">{p.title}</p>
+                    <p className="font-black text-[#e3d1a6] text-sm mt-2">
                       {p.price > 0 ? `${p.price.toFixed(2)} lei` : "Vezi pretul"}
                     </p>
                   </div>
@@ -227,11 +227,11 @@ export default async function NisaPage(
             </div>
           </section>
         ) : (
-          <div className="text-center py-16 bg-slate-900 rounded-2xl border border-slate-800">
+          <div className="text-center py-16 bg-[#15120c] rounded-2xl border border-[#26211a]">
             <p className="text-4xl mb-3">{nisa.emoji}</p>
-            <p className="font-bold text-slate-700 mb-2">Produsele se actualizeaza zilnic</p>
-            <p className="text-slate-400 text-sm">Revino maine pentru oferte noi in aceasta categorie.</p>
-            <Link href="/produse" className="mt-4 inline-block text-indigo-400 font-bold hover:text-indigo-300">
+            <p className="font-bold text-[#37301f] mb-2">Produsele se actualizeaza zilnic</p>
+            <p className="text-[#a89a78] text-sm">Revino maine pentru oferte noi in aceasta categorie.</p>
+            <Link href="/produse" className="mt-4 inline-block text-[#d8c091] font-bold hover:text-[#e3d1a6]">
               Vezi toate produsele &rarr;
             </Link>
           </div>

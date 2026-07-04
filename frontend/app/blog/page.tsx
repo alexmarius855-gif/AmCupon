@@ -124,28 +124,28 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <div className="min-h-screen bg-slate-950">
+      <div className="min-h-screen bg-[#0b0a07]">
         {/* Header */}
-        <header className="bg-slate-950 border-b border-slate-800">
+        <header className="bg-[#0b0a07] border-b border-[#26211a]">
           <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-3">
             <Link href="/" className="flex items-center gap-1.5 shrink-0">
-              <div className="bg-indigo-600 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
+              <div className="bg-[#b8912e] text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
               <span className="font-black text-white text-xl">Cupon</span>
-              <span className="text-indigo-400 font-black text-xl">.ro</span>
+              <span className="text-[#d8c091] font-black text-xl">.ro</span>
             </Link>
-            <span className="text-slate-600">/</span>
-            <span className="text-sm font-semibold text-slate-300">Revista</span>
+            <span className="text-[#473d28]">/</span>
+            <span className="text-sm font-semibold text-[#c8bda2]">Revista</span>
           </div>
         </header>
 
         {/* Hero compact */}
-        <div className="relative bg-slate-950 border-b border-slate-800 overflow-hidden">
-          <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 70% 60% at 50% 0%, rgba(79,70,229,0.15) 0%, transparent 65%)" }} />
+        <div className="relative bg-[#0b0a07] border-b border-[#26211a] overflow-hidden">
+          <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 70% 60% at 50% 0%, rgba(184,145,46,0.15) 0%, transparent 65%)" }} />
           <div className="relative max-w-7xl mx-auto text-center py-9 px-4">
             <h1 className="text-3xl md:text-4xl font-black mb-2 text-white">
-              Revista <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #818cf8, #22d3ee)" }}>AmCupon</span>
+              Revista <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #e3d1a6, #b8912e)" }}>AmCupon</span>
             </h1>
-            <p className="text-slate-400 text-sm max-w-xl mx-auto">
+            <p className="text-[#a89a78] text-sm max-w-xl mx-auto">
               Ghiduri, comparatii si sfaturi ca sa cumperi inteligent si sa economisesti la fiecare comanda
             </p>
           </div>
@@ -155,23 +155,23 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
           {/* Mozaic featured */}
           {featured.length === 5 && (
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-12">
-              <Link href={`/blog/${featured[0].slug}`} className="group relative rounded-2xl overflow-hidden border border-slate-800 hover:border-indigo-500/50 transition-colors min-h-[300px] lg:min-h-[440px] flex">
+              <Link href={`/blog/${featured[0].slug}`} className="group relative rounded-2xl overflow-hidden border border-[#26211a] hover:border-[#c9a63e]/50 transition-colors min-h-[300px] lg:min-h-[440px] flex">
                 <Image src={featured[0].cover} alt={featured[0].title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="(max-width: 1024px) 100vw, 50vw" />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0b0a07] via-[#0b0a07]/40 to-transparent" />
                 <div className="relative mt-auto p-6 z-10">
-                  <span className="inline-block bg-indigo-600 text-white text-xs font-bold px-2.5 py-1 rounded-full mb-3">{featured[0].category}</span>
-                  <h2 className="font-black text-white text-xl md:text-2xl leading-tight group-hover:text-indigo-300 transition-colors line-clamp-3">{featured[0].title}</h2>
-                  <p className="text-slate-300 text-sm mt-2 line-clamp-2">{featured[0].excerpt}</p>
+                  <span className="inline-block bg-[#b8912e] text-white text-xs font-bold px-2.5 py-1 rounded-full mb-3">{featured[0].category}</span>
+                  <h2 className="font-black text-white text-xl md:text-2xl leading-tight group-hover:text-[#e3d1a6] transition-colors line-clamp-3">{featured[0].title}</h2>
+                  <p className="text-[#c8bda2] text-sm mt-2 line-clamp-2">{featured[0].excerpt}</p>
                 </div>
               </Link>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {featured.slice(1).map(post => (
-                  <Link key={post.slug} href={`/blog/${post.slug}`} className="group relative rounded-2xl overflow-hidden border border-slate-800 hover:border-indigo-500/50 transition-colors min-h-[200px] flex">
+                  <Link key={post.slug} href={`/blog/${post.slug}`} className="group relative rounded-2xl overflow-hidden border border-[#26211a] hover:border-[#c9a63e]/50 transition-colors min-h-[200px] flex">
                     <Image src={post.cover} alt={post.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="(max-width: 640px) 100vw, 25vw" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0b0a07] via-[#0b0a07]/30 to-transparent" />
                     <div className="relative mt-auto p-4 z-10">
-                      <span className="inline-block bg-indigo-600/90 text-white text-[10px] font-bold px-2 py-0.5 rounded-full mb-1.5">{post.category}</span>
-                      <h3 className="font-bold text-white text-sm leading-snug group-hover:text-indigo-300 transition-colors line-clamp-2">{post.title}</h3>
+                      <span className="inline-block bg-[#b8912e]/90 text-white text-[10px] font-bold px-2 py-0.5 rounded-full mb-1.5">{post.category}</span>
+                      <h3 className="font-bold text-white text-sm leading-snug group-hover:text-[#e3d1a6] transition-colors line-clamp-2">{post.title}</h3>
                     </div>
                   </Link>
                 ))}
@@ -185,8 +185,8 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
             {categorii.map(c => (
               <Link key={c} href={c === "Toate" ? "/blog" : `/blog?cat=${encodeURIComponent(c)}`}
                 className={`px-4 py-1.5 rounded-full text-sm font-semibold transition-colors ${
-                  categorieActiva === c ? "bg-indigo-600 text-white"
-                    : "bg-slate-900 border border-slate-700 text-slate-400 hover:border-indigo-500 hover:text-indigo-300"}`}>
+                  categorieActiva === c ? "bg-[#b8912e] text-white"
+                    : "bg-[#15120c] border border-[#37301f] text-[#a89a78] hover:border-[#c9a63e] hover:text-[#e3d1a6]"}`}>
                 {c}
                 {c !== "Toate" && <span className="ml-1.5 text-[10px] opacity-70">({toatePosts.filter(p => getMacro(p.category) === c).length})</span>}
               </Link>
@@ -198,36 +198,36 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
             {/* ── SIDEBAR ── */}
             <aside className="order-2 lg:order-1 space-y-5">
               {/* Intro */}
-              <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5">
+              <div className="bg-[#15120c] border border-[#26211a] rounded-2xl p-5">
                 <h3 className="font-black text-white text-base mb-2">Revista AmCupon — cumpara inteligent</h3>
-                <p className="text-sm text-slate-400 leading-relaxed mb-4">
+                <p className="text-sm text-[#a89a78] leading-relaxed mb-4">
                   Ghiduri si sfaturi verificate ca sa gasesti pretul bun si sa nu ratezi reducerile reale din magazinele tale preferate.
                 </p>
-                <Link href="/top-reduceri" className="inline-flex items-center gap-1 text-sm font-bold text-indigo-400 hover:text-indigo-300">
+                <Link href="/top-reduceri" className="inline-flex items-center gap-1 text-sm font-bold text-[#d8c091] hover:text-[#e3d1a6]">
                   Vezi codurile active <span aria-hidden>→</span>
                 </Link>
               </div>
 
               {/* Recomandam */}
               {recomandate.length > 0 && (
-                <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5">
+                <div className="bg-[#15120c] border border-[#26211a] rounded-2xl p-5">
                   <h3 className="font-black text-white text-base mb-4 flex items-center gap-2">
-                    <span className="w-1.5 h-4 rounded-full bg-gradient-to-b from-indigo-400 to-cyan-400" />
+                    <span className="w-1.5 h-4 rounded-full bg-gradient-to-b from-[#d8c091] to-[#d8c091]" />
                     Recomandam
                   </h3>
                   <ul className="space-y-3">
                     {recomandate.map(r => (
                       <li key={r.magazin}>
                         <Link href={`/cod-reducere/${r.magazin}`} className="flex items-center gap-3 group">
-                          <span className="w-11 h-11 shrink-0 rounded-xl bg-white overflow-hidden flex items-center justify-center border border-slate-700">
+                          <span className="w-11 h-11 shrink-0 rounded-xl bg-white overflow-hidden flex items-center justify-center border border-[#37301f]">
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img src={r.logo_url} alt={r.nume} className="w-full h-full object-contain p-1" loading="lazy" />
                           </span>
                           <span className="min-w-0 flex-1">
-                            <span className="block text-sm font-bold text-white truncate group-hover:text-indigo-300 transition-colors">{r.nume}</span>
-                            <span className="block text-[11px] text-slate-500 truncate">{r.categorie}</span>
+                            <span className="block text-sm font-bold text-white truncate group-hover:text-[#e3d1a6] transition-colors">{r.nume}</span>
+                            <span className="block text-[11px] text-[#8c8064] truncate">{r.categorie}</span>
                           </span>
-                          <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full shrink-0 ${r.are_cod ? "bg-cyan-500/15 text-cyan-300 border border-cyan-500/25" : "bg-indigo-500/15 text-indigo-300 border border-indigo-500/25"}`}>
+                          <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full shrink-0 ${r.are_cod ? "bg-[#c9a63e]/15 text-[#e3d1a6] border border-[#c9a63e]/25" : "bg-[#c9a63e]/15 text-[#e3d1a6] border border-[#c9a63e]/25"}`}>
                             {r.are_cod ? "Cod" : "Oferta"}
                           </span>
                         </Link>
@@ -238,10 +238,10 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
               )}
 
               {/* CTA newsletter */}
-              <div className="relative rounded-2xl overflow-hidden border border-indigo-500/30 p-5" style={{ background: "linear-gradient(135deg, rgba(79,70,229,0.25), rgba(8,145,178,0.18))" }}>
+              <div className="relative rounded-2xl overflow-hidden border border-[#c9a63e]/30 p-5" style={{ background: "linear-gradient(135deg, rgba(184,145,46,0.25), rgba(8,145,178,0.18))" }}>
                 <h3 className="font-black text-white text-base mb-1">Coduri noi pe email</h3>
-                <p className="text-sm text-slate-300 mb-4">Primesti cele mai bune reduceri ale zilei. Gratuit, fara spam.</p>
-                <Link href="/newsletter" className="block text-center bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-sm py-2.5 rounded-xl transition-colors">
+                <p className="text-sm text-[#c8bda2] mb-4">Primesti cele mai bune reduceri ale zilei. Gratuit, fara spam.</p>
+                <Link href="/newsletter" className="block text-center bg-[#b8912e] hover:bg-[#c9a63e] text-white font-bold text-sm py-2.5 rounded-xl transition-colors">
                   Ma abonez gratuit
                 </Link>
               </div>
@@ -250,9 +250,9 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
             {/* ── ARTICOLE ── */}
             <div className="order-1 lg:order-2">
               {restul.length === 0 && featured.length === 0 ? (
-                <div className="text-center py-20 text-slate-500">
+                <div className="text-center py-20 text-[#8c8064]">
                   <p className="text-lg mb-4">Niciun articol in categoria &ldquo;{categorieActiva}&rdquo;.</p>
-                  <Link href="/blog" className="text-indigo-400 font-bold hover:underline">Vezi toate articolele →</Link>
+                  <Link href="/blog" className="text-[#d8c091] font-bold hover:underline">Vezi toate articolele →</Link>
                 </div>
               ) : (
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -265,35 +265,35 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
                       <div key={post.slug} className="contents">
                         {promo && (
                           <Link href={`/cod-reducere/${promo.magazin}`}
-                            className="relative rounded-2xl overflow-hidden border border-indigo-500/30 p-5 flex flex-col justify-between min-h-[220px] group"
-                            style={{ background: "linear-gradient(135deg, rgba(79,70,229,0.28), rgba(8,145,178,0.16))" }}>
+                            className="relative rounded-2xl overflow-hidden border border-[#c9a63e]/30 p-5 flex flex-col justify-between min-h-[220px] group"
+                            style={{ background: "linear-gradient(135deg, rgba(184,145,46,0.28), rgba(8,145,178,0.16))" }}>
                             <div>
-                              <span className="text-[10px] font-bold uppercase tracking-wider text-cyan-300">Recomandat</span>
+                              <span className="text-[10px] font-bold uppercase tracking-wider text-[#e3d1a6]">Recomandat</span>
                               <h3 className="font-black text-white text-lg leading-tight mt-1">Cod reducere {promo.nume}</h3>
-                              <p className="text-sm text-slate-300 mt-1 line-clamp-2">{promo.oferta || `Oferte verificate la ${promo.nume} pe AmCupon.`}</p>
+                              <p className="text-sm text-[#c8bda2] mt-1 line-clamp-2">{promo.oferta || `Oferte verificate la ${promo.nume} pe AmCupon.`}</p>
                             </div>
                             <div className="flex items-center gap-3 mt-4">
                               <span className="w-10 h-10 rounded-lg bg-white flex items-center justify-center overflow-hidden shrink-0">
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
                                 <img src={promo.logo_url} alt={promo.nume} className="w-full h-full object-contain p-1" loading="lazy" />
                               </span>
-                              <span className="text-sm font-bold text-indigo-300 group-hover:text-white transition-colors">Vezi codul →</span>
+                              <span className="text-sm font-bold text-[#e3d1a6] group-hover:text-white transition-colors">Vezi codul →</span>
                             </div>
                           </Link>
                         )}
                         <Link href={`/blog/${post.slug}`}
-                          className="bg-slate-900 rounded-2xl border border-slate-800 hover:border-indigo-500/50 shadow-sm hover:shadow-lg hover:shadow-black/40 hover:-translate-y-0.5 transition-all duration-200 overflow-hidden flex flex-col group">
+                          className="bg-[#15120c] rounded-2xl border border-[#26211a] hover:border-[#c9a63e]/50 shadow-sm hover:shadow-lg hover:shadow-black/40 hover:-translate-y-0.5 transition-all duration-200 overflow-hidden flex flex-col group">
                           <div className="relative overflow-hidden h-44">
                             <Image src={post.cover} alt={post.title} fill className="object-cover group-hover:scale-105 transition-transform duration-300" sizes="(max-width: 768px) 100vw, 33vw" />
-                            <span className="absolute top-3 left-3 bg-indigo-600 text-white text-xs font-bold px-2.5 py-1 rounded-full z-10">{post.category}</span>
+                            <span className="absolute top-3 left-3 bg-[#b8912e] text-white text-xs font-bold px-2.5 py-1 rounded-full z-10">{post.category}</span>
                           </div>
                           <div className="p-5 flex-1 flex flex-col">
-                            <div className="flex items-center gap-3 text-xs text-slate-500 mb-2">
+                            <div className="flex items-center gap-3 text-xs text-[#8c8064] mb-2">
                               <span>{formatDate(post.date)}</span><span>·</span><span>AmCupon.ro</span>
                             </div>
-                            <h3 className="font-black text-white text-base leading-snug mb-2 group-hover:text-indigo-400 transition-colors line-clamp-2">{post.title}</h3>
-                            <p className="text-sm text-slate-400 line-clamp-3 flex-1">{post.excerpt}</p>
-                            <div className="mt-4 text-sm font-bold text-indigo-400 group-hover:text-indigo-300 flex items-center gap-1">
+                            <h3 className="font-black text-white text-base leading-snug mb-2 group-hover:text-[#d8c091] transition-colors line-clamp-2">{post.title}</h3>
+                            <p className="text-sm text-[#a89a78] line-clamp-3 flex-1">{post.excerpt}</p>
+                            <div className="mt-4 text-sm font-bold text-[#d8c091] group-hover:text-[#e3d1a6] flex items-center gap-1">
                               Citeste articolul
                               <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
@@ -317,15 +317,15 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
               { n: nrCoduri.toLocaleString("ro-RO"), l: "coduri de reducere" },
               { n: toatePosts.length.toLocaleString("ro-RO"), l: "articole in revista" },
             ].map(s => (
-              <div key={s.l} className="bg-slate-900 border border-slate-800 rounded-2xl py-6 text-center">
-                <div className="text-2xl md:text-3xl font-black text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #818cf8, #22d3ee)" }}>{s.n}</div>
-                <div className="text-xs text-slate-400 mt-1">{s.l}</div>
+              <div key={s.l} className="bg-[#15120c] border border-[#26211a] rounded-2xl py-6 text-center">
+                <div className="text-2xl md:text-3xl font-black text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #e3d1a6, #b8912e)" }}>{s.n}</div>
+                <div className="text-xs text-[#a89a78] mt-1">{s.l}</div>
               </div>
             ))}
           </div>
 
           {/* ── FOOTER PE CATEGORII (stil Kuplio) ── */}
-          <div className="mt-14 pt-10 border-t border-slate-800">
+          <div className="mt-14 pt-10 border-t border-[#26211a]">
             <h2 className="text-lg font-black text-white mb-6">Exploreaza pe categorii</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8">
               {MACRO_ORDINE.map(m => {
@@ -333,25 +333,25 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
                 if (inCat.length === 0) return null;
                 return (
                   <div key={m}>
-                    <Link href={`/blog?cat=${encodeURIComponent(m)}`} className="font-bold text-white hover:text-indigo-300 transition-colors">
-                      {m} <span className="text-slate-500 text-sm font-normal">({inCat.length})</span>
+                    <Link href={`/blog?cat=${encodeURIComponent(m)}`} className="font-bold text-white hover:text-[#e3d1a6] transition-colors">
+                      {m} <span className="text-[#8c8064] text-sm font-normal">({inCat.length})</span>
                     </Link>
                     <ul className="mt-2 space-y-1.5">
                       {inCat.slice(0, 3).map(p => (
                         <li key={p.slug}>
-                          <Link href={`/blog/${p.slug}`} className="text-sm text-slate-400 hover:text-indigo-300 transition-colors line-clamp-1">{p.title}</Link>
+                          <Link href={`/blog/${p.slug}`} className="text-sm text-[#a89a78] hover:text-[#e3d1a6] transition-colors line-clamp-1">{p.title}</Link>
                         </li>
                       ))}
                     </ul>
-                    <Link href={`/blog?cat=${encodeURIComponent(m)}`} className="inline-block mt-2 text-xs font-bold text-indigo-400 hover:text-indigo-300">Afiseaza tot →</Link>
+                    <Link href={`/blog?cat=${encodeURIComponent(m)}`} className="inline-block mt-2 text-xs font-bold text-[#d8c091] hover:text-[#e3d1a6]">Afiseaza tot →</Link>
                   </div>
                 );
               })}
             </div>
           </div>
 
-          <div className="mt-12 pt-6 border-t border-slate-800 text-center">
-            <Link href="/" className="text-sm text-slate-500 hover:text-indigo-400 transition-colors">← Inapoi la AmCupon.ro</Link>
+          <div className="mt-12 pt-6 border-t border-[#26211a] text-center">
+            <Link href="/" className="text-sm text-[#8c8064] hover:text-[#d8c091] transition-colors">← Inapoi la AmCupon.ro</Link>
           </div>
         </div>
       </div>

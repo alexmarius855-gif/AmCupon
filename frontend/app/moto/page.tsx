@@ -30,29 +30,29 @@ export default function MotoPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <div className="min-h-screen bg-slate-950">
+      <div className="min-h-screen bg-[#0b0a07]">
 
-        <section className="relative bg-slate-950 border-b border-slate-800 overflow-hidden">
-          <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(99,102,241,0.1) 0%, transparent 65%)" }} />
+        <section className="relative bg-[#0b0a07] border-b border-[#26211a] overflow-hidden">
+          <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(184,145,46,0.1) 0%, transparent 65%)" }} />
           <div className="relative max-w-4xl mx-auto px-4 pt-12 pb-10 text-center">
-            <nav className="flex justify-center gap-2 text-xs text-slate-500 mb-8">
-              <Link href="/" className="hover:text-slate-300">AmCupon.ro</Link>
+            <nav className="flex justify-center gap-2 text-xs text-[#8c8064] mb-8">
+              <Link href="/" className="hover:text-[#c8bda2]">AmCupon.ro</Link>
               <span>/</span>
-              <span className="text-slate-300">Auto-Moto</span>
+              <span className="text-[#c8bda2]">Auto-Moto</span>
             </nav>
             <div className="text-5xl mb-4">🚗</div>
             <h1 className="text-4xl md:text-5xl font-black text-white mb-4">Auto-Moto {an}</h1>
-            <p className="text-slate-400 text-lg max-w-2xl mx-auto mb-8">
+            <p className="text-[#a89a78] text-lg max-w-2xl mx-auto mb-8">
               Piese auto, anvelope, echipament moto — alege ce cauti mai jos.
             </p>
             <div className="grid grid-cols-2 gap-4 max-w-xs mx-auto">
-              <div className="bg-slate-900 border border-slate-800 rounded-2xl py-3 px-2">
+              <div className="bg-[#15120c] border border-[#26211a] rounded-2xl py-3 px-2">
                 <div className="text-xl font-black text-white">{magazineAuto.length}</div>
-                <div className="text-xs text-slate-500">Magazine auto</div>
+                <div className="text-xs text-[#8c8064]">Magazine auto</div>
               </div>
-              <div className="bg-slate-900 border border-slate-800 rounded-2xl py-3 px-2">
+              <div className="bg-[#15120c] border border-[#26211a] rounded-2xl py-3 px-2">
                 <div className="text-xl font-black text-white">{cuPromo}</div>
-                <div className="text-xs text-slate-500">Cu reduceri</div>
+                <div className="text-xs text-[#8c8064]">Cu reduceri</div>
               </div>
             </div>
           </div>
@@ -62,11 +62,11 @@ export default function MotoPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {HUBURI.map(h => (
               <Link key={h.href} href={h.href}
-                className="group bg-slate-900 border border-slate-800 hover:border-indigo-500/40 rounded-2xl p-6 transition-all">
+                className="group bg-[#15120c] border border-[#26211a] hover:border-[#c9a63e]/40 rounded-2xl p-6 transition-all">
                 <div className="text-4xl mb-3">{h.emoji}</div>
-                <h2 className="text-xl font-black text-white mb-2 group-hover:text-indigo-400 transition-colors">{h.titlu}</h2>
-                <p className="text-slate-400 text-sm">{h.desc}</p>
-                <span className="inline-block mt-4 text-indigo-400 text-sm font-semibold">Vezi magazinele →</span>
+                <h2 className="text-xl font-black text-white mb-2 group-hover:text-[#d8c091] transition-colors">{h.titlu}</h2>
+                <p className="text-[#a89a78] text-sm">{h.desc}</p>
+                <span className="inline-block mt-4 text-[#d8c091] text-sm font-semibold">Vezi magazinele →</span>
               </Link>
             ))}
           </div>
@@ -78,7 +78,7 @@ export default function MotoPage() {
               { href: "/oferte-azi", label: "🔥 Oferte de azi" },
             ].map(l => (
               <Link key={l.href} href={l.href}
-                className="bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-white text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-slate-800">
+                className="bg-[#15120c] hover:bg-[#26211a] text-[#c8bda2] hover:text-white text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#26211a]">
                 {l.label}
               </Link>
             ))}

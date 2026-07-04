@@ -8,22 +8,22 @@ export const metadata: Metadata = {
 
 export default function TermeniPage() {
   return (
-    <div className="min-h-screen bg-slate-950">
-      <header className="bg-slate-950 border-b border-slate-800">
+    <div className="min-h-screen bg-[#0b0a07]">
+      <header className="bg-[#0b0a07] border-b border-[#26211a]">
         <div className="max-w-4xl mx-auto px-4 py-3 flex items-center gap-2">
           <Link href="/" className="flex items-center gap-1.5">
-            <div className="bg-indigo-600 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
+            <div className="bg-[#b8912e] text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
             <span className="font-black text-white text-xl">Cupon</span>
-            <span className="text-indigo-400 font-black text-xl">.ro</span>
+            <span className="text-[#d8c091] font-black text-xl">.ro</span>
           </Link>
         </div>
       </header>
 
       <div className="max-w-4xl mx-auto px-4 py-10">
         <h1 className="text-3xl font-black text-white mb-2">Termeni și Condiții</h1>
-        <p className="text-sm text-slate-500 mb-8">Ultima actualizare: Mai 2026</p>
+        <p className="text-sm text-[#8c8064] mb-8">Ultima actualizare: Mai 2026</p>
 
-        <div className="bg-slate-900 rounded-2xl border border-slate-800 p-8 space-y-8 text-slate-300 leading-relaxed">
+        <div className="bg-[#15120c] rounded-2xl border border-[#26211a] p-8 space-y-8 text-[#c8bda2] leading-relaxed">
 
           <section>
             <h2 className="text-xl font-black text-white mb-3">1. Despre AmCupon.ro</h2>
@@ -93,7 +93,7 @@ export default function TermeniPage() {
             <p>
               Pentru orice întrebare legată de acești termeni sau de datele tale personale,
               ne poți contacta la:{" "}
-              <a href="mailto:contact@amcupon.ro" className="text-indigo-400 hover:underline">
+              <a href="mailto:contact@amcupon.ro" className="text-[#d8c091] hover:underline">
                 contact@amcupon.ro
               </a>
             </p>
@@ -102,7 +102,7 @@ export default function TermeniPage() {
         </div>
 
         <div className="mt-8 text-center">
-          <Link href="/" className="text-sm text-slate-500 hover:text-indigo-400 transition-colors">
+          <Link href="/" className="text-sm text-[#8c8064] hover:text-[#d8c091] transition-colors">
             ← Înapoi la AmCupon.ro
           </Link>
         </div>

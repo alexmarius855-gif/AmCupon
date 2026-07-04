@@ -49,7 +49,7 @@ function parseInline(text: string, baseKey: string): React.ReactNode[] {
       const isExt = match[3].startsWith("http");
       nodes.push(
         <a key={`${baseKey}-l${i}`} href={match[3]}
-          className="text-indigo-400 hover:text-indigo-300 underline underline-offset-2 font-medium"
+          className="text-[#d8c091] hover:text-[#e3d1a6] underline underline-offset-2 font-medium"
           {...(isExt ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
           {match[2]}
         </a>
@@ -74,14 +74,14 @@ function renderContent(content: string) {
     if (block.startsWith("- ") || block.includes("\n- ")) {
       const items = block.split("\n").filter((l) => l.startsWith("- ")).map((l) => l.slice(2));
       return (
-        <ul key={key} className="list-disc list-inside space-y-1.5 my-4 text-slate-300">
+        <ul key={key} className="list-disc list-inside space-y-1.5 my-4 text-[#c8bda2]">
           {items.map((item, j) => (
             <li key={j}>{parseInline(item, `${key}-li${j}`)}</li>
           ))}
         </ul>
       );
     }
-    return <p key={key} className="text-slate-300 leading-relaxed my-3">{parseInline(block, key)}</p>;
+    return <p key={key} className="text-[#c8bda2] leading-relaxed my-3">{parseInline(block, key)}</p>;
   });
 }
 
@@ -194,31 +194,31 @@ export default async function ArticolPage({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
-      <div className="min-h-screen bg-slate-950">
+      <div className="min-h-screen bg-[#0b0a07]">
         <article className="max-w-3xl mx-auto px-4 py-10">
           <div className="mb-6">
-            <span className="bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-full">{post.category}</span>
+            <span className="bg-[#b8912e] text-white text-xs font-bold px-3 py-1 rounded-full">{post.category}</span>
           </div>
 
           <h1 className="text-2xl md:text-3xl font-black text-white leading-tight mb-4">{post.title}</h1>
 
-          <div className="flex items-center gap-4 text-sm text-slate-500 mb-8 pb-6 border-b border-slate-800">
+          <div className="flex items-center gap-4 text-sm text-[#8c8064] mb-8 pb-6 border-b border-[#26211a]">
             <div className="flex items-center gap-2 shrink-0">
               <Image
                 src="/logo-profile.svg"
                 alt="AmCupon.ro"
                 width={28}
                 height={28}
-                className="rounded-full ring-2 ring-indigo-500/20"
+                className="rounded-full ring-2 ring-[#c9a63e]/20"
               />
-              <span className="font-semibold text-slate-300">AmCupon.ro</span>
+              <span className="font-semibold text-[#c8bda2]">AmCupon.ro</span>
             </div>
             <span>·</span>
             <span>{formatDate(post.date)}</span>
             {post.magazin && (
               <>
                 <span>·</span>
-                <a href={`/cod-reducere/${post.magazin}`} className="text-indigo-400 font-semibold hover:underline">
+                <a href={`/cod-reducere/${post.magazin}`} className="text-[#d8c091] font-semibold hover:underline">
                   {numeAfisat(post.magazin)}
                 </a>
               </>
@@ -229,7 +229,7 @@ export default async function ArticolPage({
             <Image src={post.cover} alt={post.title} fill className="object-cover" priority sizes="(max-width: 768px) 100vw, 768px" />
           </div>
 
-          <p className="text-lg text-slate-400 font-medium leading-relaxed mb-8 p-5 bg-cyan-50 rounded-2xl border border-cyan-100">
+          <p className="text-lg text-[#a89a78] font-medium leading-relaxed mb-8 p-5 bg-[#faf3e0] rounded-2xl border border-[#f0e6cc]">
             {post.excerpt}
           </p>
 
@@ -238,30 +238,30 @@ export default async function ArticolPage({
           </div>
 
           {post.magazin && (
-            <div className="mt-10 p-6 bg-gradient-to-r from-indigo-600 to-violet-600 rounded-2xl text-white text-center">
+            <div className="mt-10 p-6 bg-gradient-to-r from-[#b8912e] to-violet-600 rounded-2xl text-white text-center">
               <p className="font-black text-xl mb-2">Vezi toate promoțiile {numeAfisat(post.magazin)}</p>
-              <p className="text-cyan-100 text-sm mb-4">Coduri verificate, actualizate zilnic</p>
+              <p className="text-[#f0e6cc] text-sm mb-4">Coduri verificate, actualizate zilnic</p>
               <a href={`/cod-reducere/${post.magazin}`}
-                className="inline-block bg-white text-indigo-300 font-bold px-6 py-2.5 rounded-xl text-sm hover:bg-cyan-50 transition-colors">
+                className="inline-block bg-white text-[#e3d1a6] font-bold px-6 py-2.5 rounded-xl text-sm hover:bg-[#faf3e0] transition-colors">
                 Deschide pagina →
               </a>
             </div>
           )}
 
           {/* Newsletter CTA */}
-          <div className="mt-10 p-6 bg-slate-950 rounded-2xl text-center">
-            <p className="text-sm font-black text-indigo-400 uppercase tracking-widest mb-2">Newsletter gratuit</p>
+          <div className="mt-10 p-6 bg-[#0b0a07] rounded-2xl text-center">
+            <p className="text-sm font-black text-[#d8c091] uppercase tracking-widest mb-2">Newsletter gratuit</p>
             <h3 className="text-xl font-black text-white mb-2">Primeste coduri noi direct pe email</h3>
-            <p className="text-slate-400 text-sm mb-5">600+ magazine monitorizate zilnic. Zero spam.</p>
+            <p className="text-[#a89a78] text-sm mb-5">600+ magazine monitorizate zilnic. Zero spam.</p>
             <Link href="/newsletter"
-              className="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-6 py-3 rounded-xl text-sm transition-colors">
+              className="inline-flex items-center gap-2 bg-[#b8912e] hover:bg-[#c9a63e] text-white font-bold px-6 py-3 rounded-xl text-sm transition-colors">
               Aboneaza-te gratuit &rarr;
             </Link>
           </div>
 
           {/* Share buttons */}
-          <div className="mt-10 pt-6 border-t border-slate-800">
-            <p className="text-sm font-bold text-slate-400 mb-3 text-center">Distribuie articolul</p>
+          <div className="mt-10 pt-6 border-t border-[#26211a]">
+            <p className="text-sm font-bold text-[#a89a78] mb-3 text-center">Distribuie articolul</p>
             <div className="flex justify-center gap-3">
               <a
                 href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`https://amcupon.ro/blog/${slug}`)}`}
@@ -299,8 +299,8 @@ export default async function ArticolPage({
                     <Image src={p.cover} alt={p.title} fill className="object-cover group-hover:scale-105 transition-transform duration-300" sizes="300px" />
                   </div>
                   <div className="p-4">
-                    <span className="text-xs font-bold text-indigo-400">{p.category}</span>
-                    <p className="text-sm font-bold text-white mt-1 line-clamp-2 group-hover:text-indigo-400 transition-colors">{p.title}</p>
+                    <span className="text-xs font-bold text-[#d8c091]">{p.category}</span>
+                    <p className="text-sm font-bold text-white mt-1 line-clamp-2 group-hover:text-[#d8c091] transition-colors">{p.title}</p>
                   </div>
                 </a>
               ))}
@@ -309,7 +309,7 @@ export default async function ArticolPage({
         )}
 
         <div className="max-w-3xl mx-auto px-4 pb-10 text-center">
-          <Link href="/blog" className="text-sm text-slate-500 hover:text-indigo-400 transition-colors">← Înapoi la Blog</Link>
+          <Link href="/blog" className="text-sm text-[#8c8064] hover:text-[#d8c091] transition-colors">← Înapoi la Blog</Link>
         </div>
       </div>
     </>

@@ -100,29 +100,29 @@ export default function NewsletterPopup() {
       className="fixed inset-0 z-[100] flex items-end sm:items-center justify-center p-4 bg-black/40 backdrop-blur-sm"
       onClick={(e) => e.target === e.currentTarget && close()}
     >
-      <div className="bg-slate-900 border border-slate-800 rounded-3xl shadow-2xl w-full max-w-md overflow-hidden animate-in slide-in-from-bottom-4 duration-300">
+      <div className="bg-[#15120c] border border-[#26211a] rounded-3xl shadow-2xl w-full max-w-md overflow-hidden animate-in slide-in-from-bottom-4 duration-300">
 
         {/* Header */}
-        <div className="relative bg-slate-950 overflow-hidden px-6 pt-6 pb-8 text-center">
-          <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 80% at 50% 0%, rgba(79,70,229,0.25) 0%, transparent 70%)" }} />
+        <div className="relative bg-[#0b0a07] overflow-hidden px-6 pt-6 pb-8 text-center">
+          <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 80% at 50% 0%, rgba(184,145,46,0.25) 0%, transparent 70%)" }} />
           <button
             onClick={close}
-            className="absolute z-10 top-4 right-4 text-slate-500 hover:text-white transition-colors text-xl font-bold"
+            className="absolute z-10 top-4 right-4 text-[#8c8064] hover:text-white transition-colors text-xl font-bold"
           >
             &#x2715;
           </button>
           <div className="relative z-10">
             <div className="text-4xl mb-2">&#127873;</div>
             <h2 className="text-xl font-black mb-1 text-white">Reduceri exclusive pe email</h2>
-            <p className="text-slate-400 text-sm">
+            <p className="text-[#a89a78] text-sm">
               Fii primul care afla codurile zilei &mdash; gratuit, fara spam
             </p>
           </div>
         </div>
 
         {/* Beneficii */}
-        <div className="px-6 py-4 bg-slate-900 border-b border-slate-800">
-          <div className="flex flex-col gap-1.5 text-sm text-slate-300">
+        <div className="px-6 py-4 bg-[#15120c] border-b border-[#26211a]">
+          <div className="flex flex-col gap-1.5 text-sm text-[#c8bda2]">
             {[
               "Coduri exclusive inainte de toti",
               "Alert instant cand apare o oferta buna",
@@ -141,7 +141,7 @@ export default function NewsletterPopup() {
             <div className="text-center py-4">
               <div className="text-4xl mb-2">&#127881;</div>
               <p className="font-black text-white text-lg">Multumim!</p>
-              <p className="text-slate-400 text-sm mt-1">
+              <p className="text-[#a89a78] text-sm mt-1">
                 Vei primi cele mai bune oferte pe email.
               </p>
             </div>
@@ -153,7 +153,7 @@ export default function NewsletterPopup() {
                 onChange={(e) => { setEmail(e.target.value); setStatus("idle"); setErrMsg(""); }}
                 placeholder="adresa@email.ro"
                 required
-                className="w-full bg-slate-800 border-2 border-slate-700 text-white rounded-2xl px-4 py-3 text-sm focus:outline-none focus:border-indigo-500 transition-colors placeholder:text-slate-500"
+                className="w-full bg-[#26211a] border-2 border-[#37301f] text-white rounded-2xl px-4 py-3 text-sm focus:outline-none focus:border-[#c9a63e] transition-colors placeholder:text-[#8c8064]"
               />
 
               {status === "error" && errMsg && (
@@ -163,14 +163,14 @@ export default function NewsletterPopup() {
               <button
                 type="submit"
                 disabled={status === "loading"}
-                className="w-full bg-indigo-600 hover:bg-indigo-500 disabled:opacity-60 text-white font-black py-3 rounded-2xl text-sm transition-colors"
+                className="w-full bg-[#b8912e] hover:bg-[#c9a63e] disabled:opacity-60 text-white font-black py-3 rounded-2xl text-sm transition-colors"
               >
                 {status === "loading" ? "Se trimite..." : "Vreau reduceri exclusive →"}
               </button>
 
-              <p className="text-xs text-slate-500 text-center">
+              <p className="text-xs text-[#8c8064] text-center">
                 Prin abonare esti de acord cu{" "}
-                <Link href="/confidentialitate" className="underline hover:text-indigo-400">
+                <Link href="/confidentialitate" className="underline hover:text-[#d8c091]">
                   politica de confidentialitate
                 </Link>
               </p>

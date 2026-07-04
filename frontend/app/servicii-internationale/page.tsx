@@ -59,7 +59,7 @@ const CATEGORII = [
         tagline: "Cel mai bun antivirus Mac — 25-40% comision",
         comision: "25-40%",
         badge: "Mac Only",
-        badgeColor: "bg-slate-600",
+        badgeColor: "bg-[#473d28]",
         url: "https://www.intego.com",
         descriere: "Protectie specializata pentru Mac si iOS. Detecteaza malware specific macOS.",
       },
@@ -120,7 +120,7 @@ const CATEGORII = [
         tagline: "CRM gratuit pentru marketing si vanzari — 30% comision",
         comision: "30%",
         badge: "CRM Gratuit",
-        badgeColor: "bg-indigo-600",
+        badgeColor: "bg-[#b8912e]",
         url: "https://www.hubspot.com",
         descriere: "CRM complet cu email marketing, landing pages, formulare, live chat. Gratuit pentru startup-uri.",
       },
@@ -217,7 +217,7 @@ const CATEGORII = [
         tagline: "Editare foto AI cu Luminar Neo — 20-30% comision",
         comision: "20-30%",
         badge: "AI Photo",
-        badgeColor: "bg-cyan-700",
+        badgeColor: "bg-[#8a6a1e]",
         url: "https://skylum.com",
         descriere: "Luminar Neo editeaza fotografii cu AI: inlocuire cer, retusare portrete, imbunatatire automata.",
       },
@@ -243,7 +243,7 @@ const CATEGORII = [
         tagline: "Mouse, tastatura, webcam profesionale — 4-8% comision",
         comision: "4-8%",
         badge: "Brand #1 Periferice",
-        badgeColor: "bg-slate-700",
+        badgeColor: "bg-[#37301f]",
         url: "https://www.logitech.com",
         descriere: "Cel mai vandut brand de periferice. MX Master, G Pro, BRIO webcam. Compatibil Mac si Windows.",
       },
@@ -270,7 +270,7 @@ const CATEGORII = [
         tagline: "Gadgeturi ieftine din China — 5-12% comision",
         comision: "5-12%",
         badge: "Pret Mic",
-        badgeColor: "bg-indigo-600",
+        badgeColor: "bg-[#b8912e]",
         url: "https://www.banggood.com",
         descriere: "Milioane de produse: drone, electronice, unelte, sport la preturi angro. Livrare internationala.",
       },
@@ -322,7 +322,7 @@ const CATEGORII = [
         tagline: "Marketplace angro China — 2-50% comision",
         comision: "2-50%",
         badge: "Mega Selectie",
-        badgeColor: "bg-indigo-600",
+        badgeColor: "bg-[#b8912e]",
         url: "https://www.dhgate.com",
         descriere: "Milioane de produse la preturi angro: haine, bijuterii, electronice, accesorii. Livrare globala.",
       },
@@ -352,15 +352,15 @@ export default function ServiciiInternationale() {
   const totalBranduri = CATEGORII.reduce((s, c) => s + c.branduri.length, 0);
 
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div className="min-h-screen bg-[#0b0a07]">
       {/* Hero */}
-      <section className="border-b border-slate-800 overflow-hidden relative">
+      <section className="border-b border-[#26211a] overflow-hidden relative">
         <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 70% 50% at 50% 0%, rgba(139,92,246,0.07) 0%, transparent 65%)" }} />
         <div className="relative max-w-5xl mx-auto px-4 pt-12 pb-10 text-center">
-          <nav className="flex justify-center gap-2 text-xs text-slate-500 mb-8">
-            <Link href="/" className="hover:text-slate-300">AmCupon.ro</Link>
+          <nav className="flex justify-center gap-2 text-xs text-[#8c8064] mb-8">
+            <Link href="/" className="hover:text-[#c8bda2]">AmCupon.ro</Link>
             <span>/</span>
-            <span className="text-slate-300">Servicii Internationale</span>
+            <span className="text-[#c8bda2]">Servicii Internationale</span>
           </nav>
           <div className="text-5xl mb-4">🌍</div>
           <h1 className="text-4xl md:text-5xl font-black text-white mb-4">
@@ -369,13 +369,13 @@ export default function ServiciiInternationale() {
               cu Oferte 2026
             </span>
           </h1>
-          <p className="text-slate-400 text-lg max-w-2xl mx-auto mb-6">
+          <p className="text-[#a89a78] text-lg max-w-2xl mx-auto mb-6">
             {totalBranduri} servicii internationale disponibile in Romania — VPN, hosting, antivirus, cursuri, software si mai mult. Toate cu comision verificat.
           </p>
           <div className="flex flex-wrap justify-center gap-3 text-xs">
             {CATEGORII.map((c) => (
               <a key={c.slug} href={`#${c.slug}`}
-                className="bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1.5 rounded-full transition-colors">
+                className="bg-[#26211a] hover:bg-[#37301f] text-[#c8bda2] px-3 py-1.5 rounded-full transition-colors">
                 {c.emoji} {c.titlu}
               </a>
             ))}
@@ -391,13 +391,13 @@ export default function ServiciiInternationale() {
               <span className="text-3xl">{cat.emoji}</span>
               <div>
                 <h2 className="text-xl font-black text-white">{cat.titlu}</h2>
-                <p className="text-slate-500 text-sm">{cat.desc}</p>
+                <p className="text-[#8c8064] text-sm">{cat.desc}</p>
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {cat.branduri.map((brand) => (
                 <a key={brand.nume} href={brand.url} target="_blank" rel="sponsored noopener noreferrer"
-                  className="group bg-slate-900 border border-slate-800 hover:border-slate-600 rounded-xl p-5 transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-black/30 block">
+                  className="group bg-[#15120c] border border-[#26211a] hover:border-[#473d28] rounded-xl p-5 transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-black/30 block">
                   <div className="flex items-start justify-between gap-3 mb-2">
                     <div className="flex items-center gap-2">
                       <h3 className="font-black text-white group-hover:text-blue-400 transition-colors">{brand.nume}</h3>
@@ -411,8 +411,8 @@ export default function ServiciiInternationale() {
                       {brand.comision}
                     </span>
                   </div>
-                  <p className="text-slate-400 text-xs leading-relaxed">{brand.descriere}</p>
-                  <div className="mt-3 text-xs text-slate-500 group-hover:text-slate-400 transition-colors flex items-center gap-1">
+                  <p className="text-[#a89a78] text-xs leading-relaxed">{brand.descriere}</p>
+                  <div className="mt-3 text-xs text-[#8c8064] group-hover:text-[#a89a78] transition-colors flex items-center gap-1">
                     <span>Viziteaza</span>
                     <span className="group-hover:translate-x-0.5 transition-transform">→</span>
                   </div>
@@ -424,7 +424,7 @@ export default function ServiciiInternationale() {
       </div>
 
       {/* De ce servicii internationale */}
-      <section className="max-w-5xl mx-auto px-4 py-10 border-t border-slate-800">
+      <section className="max-w-5xl mx-auto px-4 py-10 border-t border-[#26211a]">
         <h2 className="text-2xl font-black text-white mb-6">De ce sa alegi servicii internationale?</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {[
@@ -432,17 +432,17 @@ export default function ServiciiInternationale() {
             { emoji: "🏆", titlu: "Calitate mai buna", desc: "Branduri internationale investesc masiv in produse premium. Bitdefender, de exemplu, e cel mai premiat antivirus la nivel mondial." },
             { emoji: "🌍", titlu: "Disponibile in Romania", desc: "Toate serviciile de pe aceasta pagina accepta plati cu carduri romanesti si livreaza (fizic sau digital) in Romania." },
           ].map((item, i) => (
-            <div key={i} className="bg-slate-900 border border-slate-800 rounded-xl p-5">
+            <div key={i} className="bg-[#15120c] border border-[#26211a] rounded-xl p-5">
               <div className="text-2xl mb-2">{item.emoji}</div>
               <h3 className="font-bold text-white mb-1">{item.titlu}</h3>
-              <p className="text-sm text-slate-400">{item.desc}</p>
+              <p className="text-sm text-[#a89a78]">{item.desc}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* Link categorii aferente */}
-      <section className="max-w-5xl mx-auto px-4 py-8 border-t border-slate-800">
+      <section className="max-w-5xl mx-auto px-4 py-8 border-t border-[#26211a]">
         <h2 className="text-xl font-black text-white mb-4">Exploreaza si paginile dedicate</h2>
         <div className="flex flex-wrap gap-3">
           {[
@@ -455,7 +455,7 @@ export default function ServiciiInternationale() {
             { href: "/gadgets", label: "Gadgeturi" },
           ].map((link) => (
             <Link key={link.href} href={link.href}
-              className="bg-slate-800 hover:bg-slate-700 text-slate-300 px-4 py-2 rounded-lg text-sm transition-colors">
+              className="bg-[#26211a] hover:bg-[#37301f] text-[#c8bda2] px-4 py-2 rounded-lg text-sm transition-colors">
               {link.label} →
             </Link>
           ))}
@@ -464,7 +464,7 @@ export default function ServiciiInternationale() {
 
       {/* Disclaimer */}
       <div className="max-w-5xl mx-auto px-4 pb-10">
-        <p className="text-slate-600 text-xs text-center">
+        <p className="text-[#473d28] text-xs text-center">
           Paginile de pe AmCupon.ro contin linkuri de afiliat. Daca faci o achizitie, primim un comision mic, fara cost suplimentar pentru tine. Recomandam doar servicii verificate editorial.
         </p>
       </div>

@@ -79,10 +79,10 @@ function MagazinCard({
   }
 
   return (
-    <div className="bg-slate-900 border border-slate-800 rounded-2xl p-4 hover:border-cyan-500/30 transition-all group">
+    <div className="bg-[#15120c] border border-[#26211a] rounded-2xl p-4 hover:border-[#c9a63e]/30 transition-all group">
       <div className="flex items-start gap-3">
         {/* Rank badge */}
-        <div className="shrink-0 w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-xs font-black text-slate-400 group-hover:bg-cyan-500/20 group-hover:text-indigo-400 transition-all">
+        <div className="shrink-0 w-8 h-8 rounded-full bg-[#26211a] flex items-center justify-center text-xs font-black text-[#a89a78] group-hover:bg-[#c9a63e]/20 group-hover:text-[#d8c091] transition-all">
           {rank}
         </div>
 
@@ -94,7 +94,7 @@ function MagazinCard({
             className="w-10 h-10 object-contain rounded-lg bg-white p-1 shrink-0"
           />
         ) : (
-          <div className="w-10 h-10 rounded-lg bg-slate-700 flex items-center justify-center text-sm font-black text-slate-400 shrink-0">
+          <div className="w-10 h-10 rounded-lg bg-[#37301f] flex items-center justify-center text-sm font-black text-[#a89a78] shrink-0">
             {nume.charAt(0)}
           </div>
         )}
@@ -104,7 +104,7 @@ function MagazinCard({
           <div className="flex items-center gap-2 flex-wrap">
             <a
               href={`/cod-reducere/${m.magazin}`}
-              className="font-bold text-white hover:text-indigo-400 transition-colors text-sm"
+              className="font-bold text-white hover:text-[#d8c091] transition-colors text-sm"
             >
               {nume}
             </a>
@@ -125,15 +125,15 @@ function MagazinCard({
           </div>
 
           {promo && (
-            <p className="text-xs text-slate-400 mt-0.5 truncate">{promo.nume}</p>
+            <p className="text-xs text-[#a89a78] mt-0.5 truncate">{promo.nume}</p>
           )}
 
           <div className="flex items-center gap-3 mt-1.5">
-            <span className="text-xs text-slate-500">
+            <span className="text-xs text-[#8c8064]">
               {m.procent_succes}% succes
             </span>
             {m.folosit_de > 0 && (
-              <span className="text-xs text-slate-500">
+              <span className="text-xs text-[#8c8064]">
                 {m.folosit_de.toLocaleString()} utilizatori
               </span>
             )}
@@ -148,7 +148,7 @@ function MagazinCard({
               className={`text-xs font-bold px-3 py-2 rounded-xl transition-all ${
                 copied
                   ? "bg-emerald-500/20 text-emerald-400 border border-emerald-500/30"
-                  : "bg-cyan-500/10 text-indigo-400 border border-cyan-500/30 hover:bg-indigo-600 hover:text-white"
+                  : "bg-[#c9a63e]/10 text-[#d8c091] border border-[#c9a63e]/30 hover:bg-[#b8912e] hover:text-white"
               }`}
             >
               {copied ? "Copiat!" : cod.cod_cupon}
@@ -158,7 +158,7 @@ function MagazinCard({
               href={m.url_afiliat || m.url}
               target="_blank"
               rel="nofollow noopener"
-              className="text-xs font-bold px-3 py-2 rounded-xl bg-slate-700 text-slate-300 hover:bg-slate-600 transition-all"
+              className="text-xs font-bold px-3 py-2 rounded-xl bg-[#37301f] text-[#c8bda2] hover:bg-[#473d28] transition-all"
             >
               Vezi &rarr;
             </a>
@@ -196,37 +196,37 @@ export default function TopReduceriClient({
   }[tab];
 
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div className="min-h-screen bg-[#0b0a07]">
       <div className="max-w-4xl mx-auto px-4 py-10">
 
         {/* Hero */}
         <div className="text-center mb-8">
-          <div className="inline-flex items-center gap-2 bg-cyan-500/10 border border-cyan-500/20 rounded-full px-4 py-1.5 text-indigo-400 text-xs font-bold mb-4">
-            <span className="w-2 h-2 bg-indigo-500 rounded-full animate-pulse" />
+          <div className="inline-flex items-center gap-2 bg-[#c9a63e]/10 border border-[#c9a63e]/20 rounded-full px-4 py-1.5 text-[#d8c091] text-xs font-bold mb-4">
+            <span className="w-2 h-2 bg-[#c9a63e] rounded-full animate-pulse" />
             Actualizat zilnic
           </div>
           <h1 className="text-3xl sm:text-4xl font-black text-white mb-3">
             Top Reduceri {luna} {an}
           </h1>
-          <p className="text-slate-400 max-w-xl mx-auto">
+          <p className="text-[#a89a78] max-w-xl mx-auto">
             Selectia celor mai bune coduri si reduceri active, sortate dupa rata de succes. Verificate zilnic.
           </p>
 
           {/* Stats */}
           <div className="flex items-center justify-center gap-6 mt-6">
             <div className="text-center">
-              <div className="text-2xl font-black text-indigo-400">{totalMagazine}+</div>
-              <div className="text-xs text-slate-500">magazine</div>
+              <div className="text-2xl font-black text-[#d8c091]">{totalMagazine}+</div>
+              <div className="text-xs text-[#8c8064]">magazine</div>
             </div>
-            <div className="w-px h-8 bg-slate-800" />
+            <div className="w-px h-8 bg-[#26211a]" />
             <div className="text-center">
-              <div className="text-2xl font-black text-indigo-400">{totalCoduri}</div>
-              <div className="text-xs text-slate-500">coduri active</div>
+              <div className="text-2xl font-black text-[#d8c091]">{totalCoduri}</div>
+              <div className="text-xs text-[#8c8064]">coduri active</div>
             </div>
-            <div className="w-px h-8 bg-slate-800" />
+            <div className="w-px h-8 bg-[#26211a]" />
             <div className="text-center">
               <div className="text-2xl font-black text-emerald-400">100%</div>
-              <div className="text-xs text-slate-500">gratuit</div>
+              <div className="text-xs text-[#8c8064]">gratuit</div>
             </div>
           </div>
         </div>
@@ -239,20 +239,20 @@ export default function TopReduceriClient({
               onClick={() => setTab(t.key)}
               className={`p-3 rounded-xl text-sm font-bold transition-all text-left ${
                 tab === t.key
-                  ? "bg-indigo-600 text-white shadow-lg shadow-cyan-500/25"
-                  : "bg-slate-900 text-slate-300 border border-slate-800 hover:border-cyan-500/40"
+                  ? "bg-[#b8912e] text-white shadow-lg shadow-[#c9a63e]/25"
+                  : "bg-[#15120c] text-[#c8bda2] border border-[#26211a] hover:border-[#c9a63e]/40"
               }`}
             >
               <div className="flex items-center gap-1.5 mb-1">
                 <span>{t.icon}</span>
                 <span className={`text-xs px-1.5 py-0.5 rounded-full font-black ${
-                  tab === t.key ? "bg-white/20" : "bg-slate-800"
+                  tab === t.key ? "bg-white/20" : "bg-[#26211a]"
                 }`}>
                   {t.count}
                 </span>
               </div>
               <div className="font-black">{t.label}</div>
-              <div className={`text-xs mt-0.5 ${tab === t.key ? "text-cyan-100" : "text-slate-500"}`}>
+              <div className={`text-xs mt-0.5 ${tab === t.key ? "text-[#f0e6cc]" : "text-[#8c8064]"}`}>
                 {t.desc}
               </div>
             </button>
@@ -263,8 +263,8 @@ export default function TopReduceriClient({
         {activeList.length === 0 ? (
           <div className="text-center py-16">
             <div className="text-4xl mb-3">🔍</div>
-            <p className="text-slate-400">Nu sunt oferte in aceasta categorie momentan.</p>
-            <Link href="/toate-magazinele" className="mt-4 inline-block text-indigo-400 hover:text-indigo-300 text-sm font-semibold">
+            <p className="text-[#a89a78]">Nu sunt oferte in aceasta categorie momentan.</p>
+            <Link href="/toate-magazinele" className="mt-4 inline-block text-[#d8c091] hover:text-[#e3d1a6] text-sm font-semibold">
               Vezi toate magazinele &rarr;
             </Link>
           </div>
@@ -284,28 +284,28 @@ export default function TopReduceriClient({
 
         {/* CTA tools */}
         <div className="mt-10 grid sm:grid-cols-2 gap-4">
-          <div className="bg-slate-900 rounded-2xl border border-slate-800 p-5 flex items-center gap-4">
+          <div className="bg-[#15120c] rounded-2xl border border-[#26211a] p-5 flex items-center gap-4">
             <span className="text-3xl">🧮</span>
             <div>
               <p className="text-white font-bold text-sm">Calculator Reduceri</p>
-              <p className="text-slate-500 text-xs">Cat economisesti cu un cod?</p>
+              <p className="text-[#8c8064] text-xs">Cat economisesti cu un cod?</p>
             </div>
             <a
               href="/calculator"
-              className="ml-auto shrink-0 bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold px-4 py-2 rounded-xl text-sm transition-colors"
+              className="ml-auto shrink-0 bg-[#26211a] hover:bg-[#37301f] text-[#c8bda2] font-bold px-4 py-2 rounded-xl text-sm transition-colors"
             >
               Calculeaza
             </a>
           </div>
-          <div className="bg-slate-900 rounded-2xl border border-slate-800 p-5 flex items-center gap-4">
+          <div className="bg-[#15120c] rounded-2xl border border-[#26211a] p-5 flex items-center gap-4">
             <span className="text-3xl">🏪</span>
             <div>
               <p className="text-white font-bold text-sm">Toate Magazinele</p>
-              <p className="text-slate-500 text-xs">{totalMagazine}+ magazine verificate</p>
+              <p className="text-[#8c8064] text-xs">{totalMagazine}+ magazine verificate</p>
             </div>
             <a
               href="/toate-magazinele"
-              className="ml-auto shrink-0 bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-4 py-2 rounded-xl text-sm transition-colors"
+              className="ml-auto shrink-0 bg-[#b8912e] hover:bg-[#c9a63e] text-white font-bold px-4 py-2 rounded-xl text-sm transition-colors"
             >
               Cauta
             </a>

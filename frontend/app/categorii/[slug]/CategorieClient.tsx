@@ -83,15 +83,15 @@ function MagazinCard({ m, revealed, copiat, onCopiere }: {
   const affiliateLink = validAffiliateLink;
   const discount = promo ? (extractDiscount(promo.nume) || extractDiscount(promo.descriere || "")) : null;
 
-  const culoare = "bg-gradient-to-br from-indigo-500 to-indigo-700";
+  const culoare = "bg-gradient-to-br from-[#c9a63e] to-[#9c7a26]";
 
   return (
-    <div className="bg-slate-900 rounded-2xl border border-slate-800 hover:border-indigo-500/40 shadow-sm hover:shadow-lg hover:shadow-black/30 transition-all duration-200 flex flex-col overflow-hidden">
+    <div className="bg-[#15120c] rounded-2xl border border-[#26211a] hover:border-[#c9a63e]/40 shadow-sm hover:shadow-lg hover:shadow-black/30 transition-all duration-200 flex flex-col overflow-hidden">
       <a href={`/cod-reducere/${m.magazin}`} className="flex flex-col items-center pt-5 pb-3 px-4 group relative">
         {m.exclusiv && (
-          <span className="absolute top-3 right-3 text-xs font-bold bg-indigo-600 text-white px-2 py-0.5 rounded-full">Exclusiv</span>
+          <span className="absolute top-3 right-3 text-xs font-bold bg-[#b8912e] text-white px-2 py-0.5 rounded-full">Exclusiv</span>
         )}
-        <div className="w-20 h-20 rounded-2xl overflow-hidden flex items-center justify-center mb-3 bg-white border border-slate-800 p-1 group-hover:border-indigo-500/50 transition-colors">
+        <div className="w-20 h-20 rounded-2xl overflow-hidden flex items-center justify-center mb-3 bg-white border border-[#26211a] p-1 group-hover:border-[#c9a63e]/50 transition-colors">
           {m.logo_url && imgOk ? (
             <img src={m.logo_url} alt={numeMagazin} className="w-full h-full object-contain" loading="lazy" decoding="async" onError={() => setImgOk(false)} />
           ) : (
@@ -100,23 +100,23 @@ function MagazinCard({ m, revealed, copiat, onCopiere }: {
             </div>
           )}
         </div>
-        <h3 className="font-black text-white text-base text-center group-hover:text-indigo-400 transition-colors">{numeMagazin}</h3>
+        <h3 className="font-black text-white text-base text-center group-hover:text-[#d8c091] transition-colors">{numeMagazin}</h3>
       </a>
 
       <div className="px-4 pb-2 text-center min-h-[20px]">
         {promo && (
-          <span className="text-xs font-bold text-cyan-400 uppercase tracking-wide">
+          <span className="text-xs font-bold text-[#d8c091] uppercase tracking-wide">
             {promo.cod_cupon ? "Cod Reducere" : "Ofertă Specială"}
-            {discount && <span className="ml-1 text-indigo-400">{discount}</span>}
+            {discount && <span className="ml-1 text-[#d8c091]">{discount}</span>}
           </span>
         )}
       </div>
 
       <div className="px-4 pb-3 flex-1">
         {promo ? (
-          <p className="text-sm text-slate-400 text-center line-clamp-2">{promo.nume}</p>
+          <p className="text-sm text-[#a89a78] text-center line-clamp-2">{promo.nume}</p>
         ) : (
-          <p className="text-sm text-slate-600 text-center italic">Verifică ofertele curente</p>
+          <p className="text-sm text-[#473d28] text-center italic">Verifică ofertele curente</p>
         )}
       </div>
 
@@ -125,42 +125,42 @@ function MagazinCard({ m, revealed, copiat, onCopiere }: {
           <span className="text-xs font-semibold text-red-400">⏰ Expiră în {promo.zile_ramase === 0 ? "azi" : `${promo.zile_ramase}z`}</span>
         )}
         {m.cod_cupon && <span className="text-xs text-emerald-400 font-semibold">✓ {m.procent_succes}% succes</span>}
-        {m.folosit_de > 0 && <span className="text-xs text-slate-500">👤 {m.folosit_de}x</span>}
+        {m.folosit_de > 0 && <span className="text-xs text-[#8c8064]">👤 {m.folosit_de}x</span>}
       </div>
 
       <div className="px-4 pb-5">
         {promo?.cod_cupon ? (
           revealed ? (
             <div className="space-y-2">
-              <div className="border-2 border-dashed border-cyan-500/50 rounded-xl py-2 text-center bg-slate-800">
-                <span className="font-mono font-black text-indigo-400 tracking-widest text-sm">{promo.cod_cupon}</span>
+              <div className="border-2 border-dashed border-[#c9a63e]/50 rounded-xl py-2 text-center bg-[#26211a]">
+                <span className="font-mono font-black text-[#d8c091] tracking-widest text-sm">{promo.cod_cupon}</span>
                 {copiat && <p className="text-xs text-emerald-400 mt-0.5">✓ Copiat!</p>}
               </div>
               <a href={link} target="_blank" rel="sponsored noopener noreferrer"
-                className="flex items-center justify-center w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-2.5 rounded-xl text-sm transition-colors">
+                className="flex items-center justify-center w-full bg-[#b8912e] hover:bg-[#c9a63e] text-white font-bold py-2.5 rounded-xl text-sm transition-colors">
                 Mergi la {numeMagazin} →
               </a>
             </div>
           ) : (
             <div className="space-y-2">
-              <div className="border-2 border-dashed border-slate-700 rounded-xl py-2 text-center">
-                <span className="font-mono text-slate-500 text-sm">{maskCod(promo.cod_cupon)}</span>
+              <div className="border-2 border-dashed border-[#37301f] rounded-xl py-2 text-center">
+                <span className="font-mono text-[#8c8064] text-sm">{maskCod(promo.cod_cupon)}</span>
               </div>
               <button onClick={() => onCopiere(m.magazin, promo.cod_cupon)}
-                className="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-2.5 rounded-xl text-sm transition-colors">
+                className="w-full bg-[#b8912e] hover:bg-[#c9a63e] text-white font-bold py-2.5 rounded-xl text-sm transition-colors">
                 Copiază codul
               </button>
             </div>
           )
         ) : promo ? (
           <a href={link} target="_blank" rel="sponsored noopener noreferrer"
-            className="flex items-center justify-center w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-2.5 rounded-xl text-sm transition-colors">
+            className="flex items-center justify-center w-full bg-[#b8912e] hover:bg-[#c9a63e] text-white font-bold py-2.5 rounded-xl text-sm transition-colors">
             Vezi oferta →
           </a>
         ) : (
           /* Fara promotii — link direct afiliat */
           <a href={affiliateLink} target="_blank" rel="sponsored noopener noreferrer"
-            className="flex items-center justify-center w-full bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-bold py-2.5 rounded-xl text-sm transition-colors">
+            className="flex items-center justify-center w-full bg-[#26211a] hover:bg-[#37301f] border border-[#37301f] text-white font-bold py-2.5 rounded-xl text-sm transition-colors">
             Mergi la {numeMagazin} →
           </a>
         )}
@@ -190,39 +190,39 @@ export default function CategorieClient({ magazine, numeCategorie, slug }: {
   const descCateg = DESC_CATEG[slug];
 
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div className="min-h-screen bg-[#0b0a07]">
       {/* BREADCRUMB */}
-      <nav aria-label="Breadcrumb" className="bg-slate-950 border-b border-slate-800">
-        <div className="max-w-7xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-slate-500 flex-wrap">
-          <Link href="/" className="hover:text-indigo-400 transition-colors flex items-center gap-1">
+      <nav aria-label="Breadcrumb" className="bg-[#0b0a07] border-b border-[#26211a]">
+        <div className="max-w-7xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#8c8064] flex-wrap">
+          <Link href="/" className="hover:text-[#d8c091] transition-colors flex items-center gap-1">
             <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
               <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
             </svg>
             Acasă
           </Link>
-          <svg className="w-3 h-3 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-3 h-3 text-[#37301f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
-          <Link href="/categorii" className="hover:text-indigo-400 transition-colors">Categorii</Link>
-          <svg className="w-3 h-3 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <Link href="/categorii" className="hover:text-[#d8c091] transition-colors">Categorii</Link>
+          <svg className="w-3 h-3 text-[#37301f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
-          <span className="text-slate-300 font-medium">{numeCategorie}</span>
+          <span className="text-[#c8bda2] font-medium">{numeCategorie}</span>
         </div>
       </nav>
 
       {/* HERO */}
-      <div className="relative bg-slate-950 border-b border-slate-800 overflow-hidden py-10 px-4">
-        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 70% 60% at 50% 0%, rgba(79,70,229,0.15) 0%, transparent 65%)" }} />
+      <div className="relative bg-[#0b0a07] border-b border-[#26211a] overflow-hidden py-10 px-4">
+        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 70% 60% at 50% 0%, rgba(184,145,46,0.15) 0%, transparent 65%)" }} />
         <div className="relative max-w-7xl mx-auto">
           <h1 className="text-2xl md:text-3xl font-black mb-1 text-white">
-            Coduri reducere <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #818cf8, #22d3ee)" }}>{numeCategorie}</span> {an}
+            Coduri reducere <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #e3d1a6, #b8912e)" }}>{numeCategorie}</span> {an}
           </h1>
-          <p className="text-slate-400 text-sm">
+          <p className="text-[#a89a78] text-sm">
             {cuPromotii.length} promoții active · {magazine.length} magazine · Actualizat zilnic
           </p>
           {descCateg && (
-            <p className="text-slate-400 text-sm mt-2 max-w-2xl opacity-90">{descCateg}</p>
+            <p className="text-[#a89a78] text-sm mt-2 max-w-2xl opacity-90">{descCateg}</p>
           )}
         </div>
       </div>
@@ -234,7 +234,7 @@ export default function CategorieClient({ magazine, numeCategorie, slug }: {
           <section className="mb-10">
             <div className="flex items-center gap-3 mb-5">
               <h2 className="text-xl font-black text-white">Promoții Active {an}</h2>
-              <span className="text-sm text-slate-500">{cuPromotii.length} oferte</span>
+              <span className="text-sm text-[#8c8064]">{cuPromotii.length} oferte</span>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
               {cuPromotii.map((m) => (
@@ -248,10 +248,10 @@ export default function CategorieClient({ magazine, numeCategorie, slug }: {
         {faraPromotii.length > 0 && (
           <section>
             <div className="flex items-center gap-3 mb-4">
-              <h2 className="text-lg font-black text-slate-300">Toate magazinele {numeCategorie}</h2>
-              <span className="text-sm text-slate-500">{faraPromotii.length} magazine</span>
+              <h2 className="text-lg font-black text-[#c8bda2]">Toate magazinele {numeCategorie}</h2>
+              <span className="text-sm text-[#8c8064]">{faraPromotii.length} magazine</span>
             </div>
-            <p className="text-xs text-slate-500 mb-4">
+            <p className="text-xs text-[#8c8064] mb-4">
               Aceste magazine nu au promoții active momentan — butoanele duc direct la magazin prin linkul nostru afiliat.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
@@ -263,11 +263,11 @@ export default function CategorieClient({ magazine, numeCategorie, slug }: {
         )}
 
         {/* SEO CONTENT */}
-        <section className="mt-14 bg-slate-900 rounded-2xl border border-slate-800 p-6 md:p-8">
+        <section className="mt-14 bg-[#15120c] rounded-2xl border border-[#26211a] p-6 md:p-8">
           <h2 className="text-lg font-black text-white mb-4">
             Cum găsești cele mai bune reduceri {numeCategorie}?
           </h2>
-          <div className="grid md:grid-cols-3 gap-6 text-sm text-slate-400">
+          <div className="grid md:grid-cols-3 gap-6 text-sm text-[#a89a78]">
             <div>
               <h3 className="font-bold text-white mb-2">✅ Coduri verificate zilnic</h3>
               <p>
@@ -292,11 +292,11 @@ export default function CategorieClient({ magazine, numeCategorie, slug }: {
           </div>
         </section>
 
-        <div className="mt-8 pt-6 border-t border-slate-800 flex items-center justify-between flex-wrap gap-3">
-          <Link href="/categorii" className="text-sm text-slate-500 hover:text-indigo-400 transition-colors">
+        <div className="mt-8 pt-6 border-t border-[#26211a] flex items-center justify-between flex-wrap gap-3">
+          <Link href="/categorii" className="text-sm text-[#8c8064] hover:text-[#d8c091] transition-colors">
             ← Toate categoriile
           </Link>
-          <Link href="/toate-magazinele" className="text-sm text-slate-500 hover:text-indigo-400 transition-colors">
+          <Link href="/toate-magazinele" className="text-sm text-[#8c8064] hover:text-[#d8c091] transition-colors">
             Toate magazinele →
           </Link>
         </div>

@@ -49,16 +49,16 @@ export default function NewsletterForm() {
   }
 
   return (
-    <div className="bg-slate-900 rounded-3xl border border-slate-800 overflow-hidden shadow-2xl mb-8">
+    <div className="bg-[#15120c] rounded-3xl border border-[#26211a] overflow-hidden shadow-2xl mb-8">
       {/* Beneficii */}
-      <div className="p-8 border-b border-slate-800">
+      <div className="p-8 border-b border-[#26211a]">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {BENEFICII.map(b => (
             <div key={b.titlu} className="flex items-start gap-3">
               <span className="text-2xl shrink-0">{b.icon}</span>
               <div>
                 <p className="font-bold text-white text-sm">{b.titlu}</p>
-                <p className="text-slate-400 text-xs mt-0.5">{b.desc}</p>
+                <p className="text-[#a89a78] text-xs mt-0.5">{b.desc}</p>
               </div>
             </div>
           ))}
@@ -71,15 +71,15 @@ export default function NewsletterForm() {
           <div className="text-center py-6">
             <div className="text-5xl mb-4">🎉</div>
             <h2 className="text-2xl font-black text-white mb-2">Esti abonat!</h2>
-            <p className="text-slate-400 mb-6">Vei primi cele mai bune coduri reducere direct in inbox.</p>
-            <Link href="/" className="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-6 py-3 rounded-xl transition-colors">
+            <p className="text-[#a89a78] mb-6">Vei primi cele mai bune coduri reducere direct in inbox.</p>
+            <Link href="/" className="inline-flex items-center gap-2 bg-[#b8912e] hover:bg-[#c9a63e] text-white font-bold px-6 py-3 rounded-xl transition-colors">
               Descopera ofertele de azi &rarr;
             </Link>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label htmlFor="email-nl" className="block text-sm font-semibold text-slate-300 mb-2">
+              <label htmlFor="email-nl" className="block text-sm font-semibold text-[#c8bda2] mb-2">
                 Adresa ta de email
               </label>
               <input
@@ -89,7 +89,7 @@ export default function NewsletterForm() {
                 onChange={e => { setEmail(e.target.value); setStatus("idle"); setErrMsg(""); }}
                 placeholder="adresa@email.ro"
                 required
-                className="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-4 py-3.5 text-base focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-cyan-500/50 placeholder-slate-500 transition-all"
+                className="w-full bg-[#26211a] border border-[#37301f] text-white rounded-xl px-4 py-3.5 text-base focus:outline-none focus:ring-2 focus:ring-[#c9a63e]/50 focus:border-[#c9a63e]/50 placeholder-[#8c8064] transition-all"
               />
             </div>
             {status === "error" && errMsg && (
@@ -98,13 +98,13 @@ export default function NewsletterForm() {
             <button
               type="submit"
               disabled={status === "loading"}
-              className="w-full bg-indigo-600 hover:bg-indigo-500 disabled:opacity-60 text-white font-black py-4 rounded-xl text-base transition-colors shadow-lg shadow-cyan-500/25"
+              className="w-full bg-[#b8912e] hover:bg-[#c9a63e] disabled:opacity-60 text-white font-black py-4 rounded-xl text-base transition-colors shadow-lg shadow-[#c9a63e]/25"
             >
               {status === "loading" ? "Se proceseaza..." : "Aboneaza-ma gratuit →"}
             </button>
-            <p className="text-xs text-slate-500 text-center leading-relaxed">
+            <p className="text-xs text-[#8c8064] text-center leading-relaxed">
               Prin abonare esti de acord cu{" "}
-              <Link href="/confidentialitate" className="text-indigo-400 hover:underline">politica de confidentialitate</Link>
+              <Link href="/confidentialitate" className="text-[#d8c091] hover:underline">politica de confidentialitate</Link>
               . Dezabonare oricand cu un click.
             </p>
           </form>

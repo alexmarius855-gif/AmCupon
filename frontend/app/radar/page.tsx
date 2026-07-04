@@ -82,11 +82,11 @@ function RadarEntry({ p, rank }: { p: Pick; rank: number }) {
   const zileText = p.zile_ramase === 1 ? "1 zi" : `${p.zile_ramase} zile`;
 
   return (
-    <article className="relative bg-slate-900 border border-slate-800 hover:border-cyan-500/40 rounded-2xl p-5 transition-all duration-200 hover:shadow-xl hover:shadow-black/40">
+    <article className="relative bg-[#15120c] border border-[#26211a] hover:border-[#c9a63e]/40 rounded-2xl p-5 transition-all duration-200 hover:shadow-xl hover:shadow-black/40">
       <div className="flex gap-4">
         {/* Numar rang */}
         <div className="shrink-0">
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-indigo-500 to-cyan-500 flex items-center justify-center text-white font-black text-base shadow-lg shadow-indigo-500/20">
+          <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#c9a63e] to-[#c9a63e] flex items-center justify-center text-white font-black text-base shadow-lg shadow-[#c9a63e]/20">
             {rank}
           </div>
         </div>
@@ -99,24 +99,24 @@ function RadarEntry({ p, rank }: { p: Pick; rank: number }) {
                 // eslint-disable-next-line @next/next/no-img-element
                 <img src={p.logo_url} alt={`Logo ${p.nume_afisat}`} className="w-7 h-7 object-contain" loading="lazy" />
               ) : (
-                <span className="text-slate-900 font-black">{p.nume_afisat.charAt(0)}</span>
+                <span className="text-[#15120c] font-black">{p.nume_afisat.charAt(0)}</span>
               )}
             </div>
             <div className="min-w-0">
               <h2 className="text-base font-black text-white truncate">{p.nume_afisat}</h2>
-              <p className="text-[11px] text-slate-500">{CAT_EMOJI[p.categorie_slug] || "🏷️"} {p.categorie}</p>
+              <p className="text-[11px] text-[#8c8064]">{CAT_EMOJI[p.categorie_slug] || "🏷️"} {p.categorie}</p>
             </div>
           </div>
 
           {/* Verdictul editorial — vedeta */}
           {p.take && (
-            <p className="text-sm text-slate-300 leading-relaxed mb-3">{p.take}</p>
+            <p className="text-sm text-[#c8bda2] leading-relaxed mb-3">{p.take}</p>
           )}
 
           {/* Linia de jos: cod + urgenta + link */}
           <div className="flex flex-wrap items-center gap-2">
             {p.cod && (
-              <span className="font-mono font-black text-indigo-400 text-sm tracking-wider bg-slate-800 border border-dashed border-cyan-400/50 rounded-lg px-2.5 py-1">
+              <span className="font-mono font-black text-[#d8c091] text-sm tracking-wider bg-[#26211a] border border-dashed border-[#d8c091]/50 rounded-lg px-2.5 py-1">
                 {p.cod}
               </span>
             )}
@@ -128,7 +128,7 @@ function RadarEntry({ p, rank }: { p: Pick; rank: number }) {
             )}
             <Link
               href={`/cod-reducere/${p.magazin}`}
-              className="ml-auto text-xs font-bold text-white bg-indigo-600 hover:bg-indigo-500 px-3.5 py-1.5 rounded-full transition-colors"
+              className="ml-auto text-xs font-bold text-white bg-[#b8912e] hover:bg-[#c9a63e] px-3.5 py-1.5 rounded-full transition-colors"
             >
               Vezi oferta →
             </Link>
@@ -147,12 +147,12 @@ export default function RadarPage() {
 
   if (!digest) {
     return (
-      <main className="min-h-screen bg-slate-950 text-white flex items-center justify-center px-6">
+      <main className="min-h-screen bg-[#0b0a07] text-white flex items-center justify-center px-6">
         <div className="text-center max-w-md">
           <div className="text-5xl mb-4">📡</div>
           <h1 className="text-2xl font-black mb-2">Radarul se incarca</h1>
-          <p className="text-slate-400 mb-6">Selectia de azi nu e inca gata. Revino in cateva minute sau vezi toate ofertele active.</p>
-          <Link href="/oferte-azi" className="inline-block text-sm font-bold text-white bg-indigo-600 hover:bg-indigo-500 px-5 py-2.5 rounded-full transition-colors">
+          <p className="text-[#a89a78] mb-6">Selectia de azi nu e inca gata. Revino in cateva minute sau vezi toate ofertele active.</p>
+          <Link href="/oferte-azi" className="inline-block text-sm font-bold text-white bg-[#b8912e] hover:bg-[#c9a63e] px-5 py-2.5 rounded-full transition-colors">
             Vezi ofertele active →
           </Link>
         </div>
@@ -183,23 +183,23 @@ export default function RadarPage() {
   };
 
   return (
-    <main className="min-h-screen bg-slate-950 text-white">
+    <main className="min-h-screen bg-[#0b0a07] text-white">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
 
       <div className="max-w-2xl mx-auto px-4 sm:px-6 py-10">
         {/* Hero */}
         <header className="mb-8">
-          <div className="inline-flex items-center gap-2 text-xs font-bold text-cyan-400 bg-cyan-400/10 border border-cyan-400/20 px-3 py-1 rounded-full mb-4">
-            <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
+          <div className="inline-flex items-center gap-2 text-xs font-bold text-[#d8c091] bg-[#d8c091]/10 border border-[#d8c091]/20 px-3 py-1 rounded-full mb-4">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#d8c091] animate-pulse" />
             RADARUL AMCUPON · {digest.data_afisata}
           </div>
           <h1 className="text-3xl sm:text-4xl font-black leading-tight mb-4">
             Ce merita azi, ales si verificat de noi
           </h1>
           {/* Vocea — intro editorial */}
-          <div className="bg-slate-900 border-l-4 border-indigo-500 rounded-r-xl p-4 sm:p-5">
-            <p className="text-slate-300 leading-relaxed">{digest.intro}</p>
+          <div className="bg-[#15120c] border-l-4 border-[#c9a63e] rounded-r-xl p-4 sm:p-5">
+            <p className="text-[#c8bda2] leading-relaxed">{digest.intro}</p>
           </div>
         </header>
 
@@ -213,15 +213,15 @@ export default function RadarPage() {
         {/* Outro */}
         {digest.outro && (
           <div className="mt-8 text-center">
-            <p className="text-slate-400 italic mb-5">{digest.outro}</p>
-            <Link href="/oferte-azi" className="inline-block text-sm font-bold text-white bg-gradient-to-r from-indigo-600 to-cyan-600 hover:opacity-90 px-6 py-3 rounded-full transition-opacity">
+            <p className="text-[#a89a78] italic mb-5">{digest.outro}</p>
+            <Link href="/oferte-azi" className="inline-block text-sm font-bold text-white bg-gradient-to-r from-[#b8912e] to-[#b8912e] hover:opacity-90 px-6 py-3 rounded-full transition-opacity">
               Vezi toate ofertele active →
             </Link>
           </div>
         )}
 
         {/* Nota de subsol — rolul editorial */}
-        <p className="mt-10 text-center text-xs text-slate-600">
+        <p className="mt-10 text-center text-xs text-[#473d28]">
           Radarul AmCupon e selectia noastra zilnica din sute de oferte active. Verificam codurile, alegem ce merita, iti spunem pe scurt de ce. Actualizat zilnic, {luna} {an}.
         </p>
       </div>

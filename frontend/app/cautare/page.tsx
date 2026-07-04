@@ -51,12 +51,12 @@ export default async function CautarePage({ searchParams }: { searchParams: Prom
   const cuPromo = rezultate.filter(m => m.are_promotie).length;
 
   return (
-    <div className="min-h-screen bg-slate-950">
-      <div className="bg-slate-950 border-b border-slate-800 sticky top-[64px] z-40">
+    <div className="min-h-screen bg-[#0b0a07]">
+      <div className="bg-[#0b0a07] border-b border-[#26211a] sticky top-[64px] z-40">
         <div className="max-w-4xl mx-auto px-4 py-3">
           <form action="/cautare" method="get" className="flex gap-2">
             <div className="relative flex-1">
-              <svg className="absolute left-3 top-2.5 w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="absolute left-3 top-2.5 w-4 h-4 text-[#8c8064]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
               </svg>
               <input
@@ -65,10 +65,10 @@ export default async function CautarePage({ searchParams }: { searchParams: Prom
                 defaultValue={q || ""}
                 placeholder="Cauta magazin sau categorie..."
                 autoFocus
-                className="w-full border border-slate-800 rounded-full pl-9 pr-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-slate-900"
+                className="w-full border border-[#26211a] rounded-full pl-9 pr-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#d8c091] bg-[#15120c]"
               />
             </div>
-            <button type="submit" className="bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-5 py-2 rounded-full text-sm transition-colors">
+            <button type="submit" className="bg-[#b8912e] hover:bg-[#c9a63e] text-white font-bold px-5 py-2 rounded-full text-sm transition-colors">
               Cauta
             </button>
           </form>
@@ -80,14 +80,14 @@ export default async function CautarePage({ searchParams }: { searchParams: Prom
           <div className="text-center py-16">
             <div className="text-5xl mb-4">🔍</div>
             <h1 className="text-2xl font-black text-white mb-2">Cauta un magazin</h1>
-            <p className="text-slate-400">Introdu cel putin 2 caractere pentru a cauta.</p>
+            <p className="text-[#a89a78]">Introdu cel putin 2 caractere pentru a cauta.</p>
           </div>
         ) : rezultate.length === 0 ? (
           <div className="text-center py-16">
             <div className="text-5xl mb-4">😕</div>
             <h1 className="text-xl font-black text-white mb-2">Niciun rezultat pentru &ldquo;{q}&rdquo;</h1>
-            <p className="text-slate-400 mb-6">Incearca un alt termen sau browseza categoriile.</p>
-            <Link href="/categorii" className="bg-indigo-600 text-white font-bold px-6 py-3 rounded-2xl text-sm hover:bg-indigo-500 transition-colors">
+            <p className="text-[#a89a78] mb-6">Incearca un alt termen sau browseza categoriile.</p>
+            <Link href="/categorii" className="bg-[#b8912e] text-white font-bold px-6 py-3 rounded-2xl text-sm hover:bg-[#c9a63e] transition-colors">
               Exploreaza categorii
             </Link>
           </div>
@@ -98,8 +98,8 @@ export default async function CautarePage({ searchParams }: { searchParams: Prom
                 {rezultate.length} rezultate pentru &ldquo;{q}&rdquo;
               </h1>
               {cuPromo > 0 && (
-                <p className="text-sm text-slate-400 mt-1">
-                  <span className="text-cyan-400 font-semibold">{cuPromo} magazine</span> cu promotii active
+                <p className="text-sm text-[#a89a78] mt-1">
+                  <span className="text-[#d8c091] font-semibold">{cuPromo} magazine</span> cu promotii active
                 </p>
               )}
             </div>
@@ -109,25 +109,25 @@ export default async function CautarePage({ searchParams }: { searchParams: Prom
                 const promo = m.promotii[0];
                 return (
                   <Link key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                    className="group bg-slate-900 border border-slate-800 hover:border-indigo-300 rounded-2xl p-4 transition-all hover:shadow-md flex gap-3 items-start">
-                    <div className="w-11 h-11 rounded-xl border border-slate-800 bg-slate-900 flex items-center justify-center shrink-0 overflow-hidden">
+                    className="group bg-[#15120c] border border-[#26211a] hover:border-[#e3d1a6] rounded-2xl p-4 transition-all hover:shadow-md flex gap-3 items-start">
+                    <div className="w-11 h-11 rounded-xl border border-[#26211a] bg-[#15120c] flex items-center justify-center shrink-0 overflow-hidden">
                       {m.logo_url ? (
                         // eslint-disable-next-line @next/next/no-img-element
                         <img src={m.logo_url} alt={nume} className="w-9 h-9 object-contain" />
                       ) : (
-                        <span className="font-black text-indigo-400 text-lg">{nume[0]}</span>
+                        <span className="font-black text-[#d8c091] text-lg">{nume[0]}</span>
                       )}
                     </div>
                     <div className="flex-1 min-w-0">
-                      <p className="font-black text-white text-sm group-hover:text-indigo-300 truncate">{nume}</p>
-                      <p className="text-[11px] text-slate-500 mb-1">{m.categorie}</p>
+                      <p className="font-black text-white text-sm group-hover:text-[#e3d1a6] truncate">{nume}</p>
+                      <p className="text-[11px] text-[#8c8064] mb-1">{m.categorie}</p>
                       {m.are_promotie && m.cod_cupon && (
-                        <span className="text-[10px] font-bold text-indigo-400 bg-indigo-500/10 border border-indigo-500/30 px-1.5 py-0.5 rounded-full">Cod cupon</span>
+                        <span className="text-[10px] font-bold text-[#d8c091] bg-[#c9a63e]/10 border border-[#c9a63e]/30 px-1.5 py-0.5 rounded-full">Cod cupon</span>
                       )}
                       {m.are_promotie && !m.cod_cupon && (
-                        <span className="text-[10px] font-semibold text-cyan-400 bg-slate-900 border border-slate-800 px-1.5 py-0.5 rounded-full">Oferta activa</span>
+                        <span className="text-[10px] font-semibold text-[#d8c091] bg-[#15120c] border border-[#26211a] px-1.5 py-0.5 rounded-full">Oferta activa</span>
                       )}
-                      {promo && <p className="text-[11px] text-slate-400 mt-1 line-clamp-1">{promo.nume}</p>}
+                      {promo && <p className="text-[11px] text-[#a89a78] mt-1 line-clamp-1">{promo.nume}</p>}
                     </div>
                   </Link>
                 );
@@ -137,8 +137,8 @@ export default async function CautarePage({ searchParams }: { searchParams: Prom
         )}
       </div>
 
-      <footer className="border-t border-slate-800 py-6 text-center text-xs text-slate-500 mt-8">
-        <Link href="/" className="hover:text-indigo-400">← Inapoi la AmCupon.ro</Link>
+      <footer className="border-t border-[#26211a] py-6 text-center text-xs text-[#8c8064] mt-8">
+        <Link href="/" className="hover:text-[#d8c091]">← Inapoi la AmCupon.ro</Link>
       </footer>
     </div>
   );

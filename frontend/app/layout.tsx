@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Playfair_Display } from "next/font/google";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -30,6 +30,13 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+// Font premium pentru titluri (serif editorial de lux, se potriveste cu auriu)
+const playfair = Playfair_Display({
+  variable: "--font-display",
+  subsets: ["latin"],
+  weight: ["600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
@@ -70,7 +77,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#4f46e5",
+  themeColor: "#b8912e",
   colorScheme: "light dark",
 };
 
@@ -117,7 +124,7 @@ export default function RootLayout({
   return (
     <html
       lang="ro"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} h-full antialiased`}
     >
       <head>
         {/* Profitshare site verification */}

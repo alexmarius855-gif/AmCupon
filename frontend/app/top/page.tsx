@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 };
 
 // Accent uniform indigo/cyan (dark) — diferentierea per-categorie se face prin emoji/label, nu prin culoare
-const ACCENT = { bg: "bg-indigo-600", text: "text-indigo-400", border: "border-slate-800", badge: "bg-indigo-500/15 text-indigo-300 border border-indigo-500/25" };
+const ACCENT = { bg: "bg-[#b8912e]", text: "text-[#d8c091]", border: "border-[#26211a]", badge: "bg-[#c9a63e]/15 text-[#e3d1a6] border border-[#c9a63e]/25" };
 const CULORI: Record<string, { bg: string; text: string; border: string; badge: string }> = {
   blue: ACCENT, violet: ACCENT, indigo: ACCENT, teal: ACCENT,
   emerald: ACCENT, amber: ACCENT, rose: ACCENT, sky: ACCENT,
@@ -66,28 +66,28 @@ export default function TopHubPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <div className="min-h-screen bg-slate-950">
+      <div className="min-h-screen bg-[#0b0a07]">
         {/* BREADCRUMB */}
-        <nav className="bg-slate-900 border-b border-slate-800 ">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-slate-500 flex-wrap">
-            <Link href="/" className="hover:text-indigo-400 transition-colors">Acasa</Link>
-            <span className="mx-1 text-slate-600">/</span>
-            <span className="text-slate-300  font-medium">Top Produse</span>
+        <nav className="bg-[#15120c] border-b border-[#26211a] ">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#8c8064] flex-wrap">
+            <Link href="/" className="hover:text-[#d8c091] transition-colors">Acasa</Link>
+            <span className="mx-1 text-[#473d28]">/</span>
+            <span className="text-[#c8bda2]  font-medium">Top Produse</span>
           </div>
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-indigo-700 via-blue-700 to-cyan-700 text-white py-14 px-4">
+        <section className="bg-gradient-to-br from-[#9c7a26] via-blue-700 to-[#8a6a1e] text-white py-14 px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 bg-cyan-500/20 border border-cyan-500/30 text-indigo-300 text-xs font-bold px-4 py-1.5 rounded-full mb-5">
-              <span className="w-1.5 h-1.5 bg-indigo-500 rounded-full animate-pulse"></span>
+            <div className="inline-flex items-center gap-2 bg-[#c9a63e]/20 border border-[#c9a63e]/30 text-[#e3d1a6] text-xs font-bold px-4 py-1.5 rounded-full mb-5">
+              <span className="w-1.5 h-1.5 bg-[#c9a63e] rounded-full animate-pulse"></span>
               Actualizat {updated}
             </div>
             <h1 className="text-3xl md:text-5xl font-black mb-4 leading-tight">
               Top Produse<br />
-              <span className="text-indigo-400">Recomandate {an}</span>
+              <span className="text-[#d8c091]">Recomandate {an}</span>
             </h1>
-            <p className="text-slate-300 text-lg max-w-xl mx-auto mb-8">
+            <p className="text-[#c8bda2] text-lg max-w-xl mx-auto mb-8">
               Review-uri detaliate, comparatii si ghiduri de cumparare pentru a alege intotdeauna produsul potrivit la cel mai bun pret.
             </p>
             <div className="grid grid-cols-3 gap-4 max-w-sm mx-auto">
@@ -98,7 +98,7 @@ export default function TopHubPage() {
               ].map(s => (
                 <div key={s.label} className="bg-white/10 rounded-2xl py-3 px-2">
                   <div className="text-xl font-black">{s.val}</div>
-                  <div className="text-xs text-slate-400">{s.label}</div>
+                  <div className="text-xs text-[#a89a78]">{s.label}</div>
                 </div>
               ))}
             </div>
@@ -110,7 +110,7 @@ export default function TopHubPage() {
           <h2 className="text-2xl font-black text-white dark:text-white mb-2">
             Alege categoria
           </h2>
-          <p className="text-slate-400 dark:text-slate-400 text-sm mb-8">
+          <p className="text-[#a89a78] dark:text-[#a89a78] text-sm mb-8">
             Fiecare top include produse testate si comparate dupa criterii obiective.
           </p>
 
@@ -122,7 +122,7 @@ export default function TopHubPage() {
                 <a
                   key={cat.slug}
                   href={`/top/${cat.slug}`}
-                  className="group relative bg-slate-900 border border-slate-800  hover:border-slate-800 dark:hover:border-slate-500 rounded-2xl p-5 transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5 flex flex-col"
+                  className="group relative bg-[#15120c] border border-[#26211a]  hover:border-[#26211a] dark:hover:border-[#8c8064] rounded-2xl p-5 transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5 flex flex-col"
                 >
                   {/* TAG BADGE */}
                   {cat.tag && (
@@ -137,21 +137,21 @@ export default function TopHubPage() {
                   </div>
 
                   {/* TITLE */}
-                  <h3 className="font-black text-white dark:text-white text-lg leading-tight mb-1 group-hover:text-indigo-400 transition-colors">
+                  <h3 className="font-black text-white dark:text-white text-lg leading-tight mb-1 group-hover:text-[#d8c091] transition-colors">
                     {cat.titlu_scurt}
                   </h3>
-                  <p className="text-xs text-slate-400 dark:text-slate-400 leading-relaxed mb-4 flex-1">
+                  <p className="text-xs text-[#a89a78] dark:text-[#a89a78] leading-relaxed mb-4 flex-1">
                     {cat.descriere}
                   </p>
 
                   {/* FOOTER */}
-                  <div className="flex items-center justify-between pt-3 border-t border-slate-800 ">
+                  <div className="flex items-center justify-between pt-3 border-t border-[#26211a] ">
                     <div className="flex items-center gap-2">
-                      <span className="text-xs text-slate-500 dark:text-slate-500">{cat.produse.length} produse</span>
+                      <span className="text-xs text-[#8c8064] dark:text-[#8c8064]">{cat.produse.length} produse</span>
                       {scorMediu > 0 && (
                         <>
-                          <span className="text-slate-300 dark:text-slate-600">·</span>
-                          <span className="text-xs font-bold text-cyan-400">
+                          <span className="text-[#c8bda2] dark:text-[#473d28]">·</span>
+                          <span className="text-xs font-bold text-[#d8c091]">
                             {scorMediu.toFixed(1)} / 10
                           </span>
                         </>
@@ -169,17 +169,17 @@ export default function TopHubPage() {
 
         {/* CTA NEWSLETTER */}
         <section className="max-w-6xl mx-auto px-4 pb-12">
-          <div className="bg-gradient-to-r from-slate-900 to-slate-800 rounded-3xl p-8 text-center">
+          <div className="bg-gradient-to-r from-[#15120c] to-[#26211a] rounded-3xl p-8 text-center">
             <div className="text-3xl mb-3">📧</div>
             <h3 className="text-xl font-black text-white mb-2">
               Primeste review-urile noi direct pe email
             </h3>
-            <p className="text-slate-400 text-sm mb-5">
+            <p className="text-[#a89a78] text-sm mb-5">
               Adaugam saptamanal noi ghiduri si review-uri. Zero spam.
             </p>
             <a
               href="/newsletter"
-              className="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-6 py-3 rounded-xl text-sm transition-colors"
+              className="inline-flex items-center gap-2 bg-[#b8912e] hover:bg-[#c9a63e] text-white font-bold px-6 py-3 rounded-xl text-sm transition-colors"
             >
               Aboneaza-te gratuit &rarr;
             </a>
@@ -188,7 +188,7 @@ export default function TopHubPage() {
 
         {/* CROSS LINKS */}
         <section className="max-w-6xl mx-auto px-4 pb-10">
-          <h3 className="text-base font-black text-slate-300  mb-4">
+          <h3 className="text-base font-black text-[#c8bda2]  mb-4">
             Exploreaza si
           </h3>
           <div className="flex flex-wrap gap-2">
@@ -201,18 +201,18 @@ export default function TopHubPage() {
               { href: "/", label: "🏠 Toate codurile" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-slate-900 hover:bg-cyan-50 dark:hover:bg-slate-700 hover:text-indigo-300 text-slate-300  text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-slate-800 dark:border-slate-600 hover:border-cyan-200">
+                className="bg-[#15120c] hover:bg-[#faf3e0] dark:hover:bg-[#37301f] hover:text-[#e3d1a6] text-[#c8bda2]  text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#26211a] dark:border-[#473d28] hover:border-[#e6d5a8]">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-slate-800  py-6 text-center text-xs text-slate-500">
+        <footer className="border-t border-[#26211a]  py-6 text-center text-xs text-[#8c8064]">
           &copy; {an} AmCupon.ro &middot;{" "}
-          <Link href="/" className="hover:text-indigo-400">Acasa</Link>
-          {" · "}<Link href="/blog" className="hover:text-indigo-400">Blog</Link>
-          {" · "}<Link href="/gadgets" className="hover:text-indigo-400">Gadgets</Link>
+          <Link href="/" className="hover:text-[#d8c091]">Acasa</Link>
+          {" · "}<Link href="/blog" className="hover:text-[#d8c091]">Blog</Link>
+          {" · "}<Link href="/gadgets" className="hover:text-[#d8c091]">Gadgets</Link>
         </footer>
       </div>
     </>

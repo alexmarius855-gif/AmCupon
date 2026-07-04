@@ -34,18 +34,18 @@ export default function NotFound() {
   const topStores = loadTopStores();
 
   return (
-    <div className="min-h-screen bg-slate-950 flex flex-col">
+    <div className="min-h-screen bg-[#0b0a07] flex flex-col">
       {/* Header */}
-      <header className="bg-slate-950 border-b border-slate-800">
+      <header className="bg-[#0b0a07] border-b border-[#26211a]">
         <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-1.5">
-            <div className="bg-indigo-600 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
+            <div className="bg-[#b8912e] text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
             <span className="font-black text-white text-xl">Cupon</span>
-            <span className="text-indigo-400 font-black text-xl">.ro</span>
+            <span className="text-[#d8c091] font-black text-xl">.ro</span>
           </Link>
           <a
             href="/"
-            className="text-sm text-indigo-400 hover:text-indigo-300 font-semibold transition-colors"
+            className="text-sm text-[#d8c091] hover:text-[#e3d1a6] font-semibold transition-colors"
           >
             ← Toate reducerile
           </a>
@@ -53,10 +53,10 @@ export default function NotFound() {
       </header>
 
       <div className="relative flex-1 flex flex-col items-center justify-center px-4 py-16 text-center overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 70% 60% at 50% 20%, rgba(79,70,229,0.15) 0%, transparent 65%)" }} />
+        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 70% 60% at 50% 20%, rgba(184,145,46,0.15) 0%, transparent 65%)" }} />
         {/* 404 Visual */}
         <div className="relative z-10 mb-6 select-none">
-          <div className="text-[120px] md:text-[160px] font-black text-slate-900 leading-none">
+          <div className="text-[120px] md:text-[160px] font-black text-[#15120c] leading-none">
             404
           </div>
           <div className="absolute inset-0 flex items-center justify-center">
@@ -67,7 +67,7 @@ export default function NotFound() {
         <h1 className="relative z-10 text-2xl md:text-3xl font-black text-white mb-3">
           Cuponul s-a pierdut undeva...
         </h1>
-        <p className="relative z-10 text-slate-400 text-base mb-8 max-w-sm">
+        <p className="relative z-10 text-[#a89a78] text-base mb-8 max-w-sm">
           Pagina pe care o cauți nu există sau a fost mutată.
           Încearcă una dintre opțiunile de mai jos.
         </p>
@@ -76,19 +76,19 @@ export default function NotFound() {
         <div className="relative z-10 flex flex-col sm:flex-row gap-3 mb-12">
           <a
             href="/"
-            className="bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-7 py-3 rounded-xl transition-colors shadow-lg shadow-cyan-500/20"
+            className="bg-[#b8912e] hover:bg-[#c9a63e] text-white font-bold px-7 py-3 rounded-xl transition-colors shadow-lg shadow-[#c9a63e]/20"
           >
             🏠 Acasă — toate reducerile
           </a>
           <a
             href="/toate-magazinele"
-            className="bg-slate-900 border border-slate-700 hover:border-indigo-500 text-slate-300 hover:text-indigo-400 font-bold px-7 py-3 rounded-xl transition-colors"
+            className="bg-[#15120c] border border-[#37301f] hover:border-[#c9a63e] text-[#c8bda2] hover:text-[#d8c091] font-bold px-7 py-3 rounded-xl transition-colors"
           >
             🏪 Toate magazinele
           </a>
           <a
             href="/categorii"
-            className="bg-slate-900 border border-slate-700 hover:border-indigo-500 text-slate-300 hover:text-indigo-400 font-bold px-7 py-3 rounded-xl transition-colors"
+            className="bg-[#15120c] border border-[#37301f] hover:border-[#c9a63e] text-[#c8bda2] hover:text-[#d8c091] font-bold px-7 py-3 rounded-xl transition-colors"
           >
             📂 Categorii
           </a>
@@ -105,10 +105,10 @@ export default function NotFound() {
             <a
               key={c.href}
               href={c.href}
-              className="flex flex-col items-center gap-2 p-4 bg-slate-900 rounded-2xl border border-slate-800 hover:border-indigo-500/50 hover:shadow-lg hover:shadow-black/30 transition-all"
+              className="flex flex-col items-center gap-2 p-4 bg-[#15120c] rounded-2xl border border-[#26211a] hover:border-[#c9a63e]/50 hover:shadow-lg hover:shadow-black/30 transition-all"
             >
               <span className="text-2xl">{c.emoji}</span>
-              <span className="text-xs font-semibold text-slate-300">{c.label}</span>
+              <span className="text-xs font-semibold text-[#c8bda2]">{c.label}</span>
             </a>
           ))}
         </div>
@@ -116,7 +116,7 @@ export default function NotFound() {
         {/* Top stores with promos */}
         {topStores.length > 0 && (
           <div className="relative z-10 w-full max-w-2xl">
-            <p className="text-sm font-semibold text-slate-500 mb-4 uppercase tracking-wide">
+            <p className="text-sm font-semibold text-[#8c8064] mb-4 uppercase tracking-wide">
               Magazine cu reduceri active acum
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
@@ -127,16 +127,16 @@ export default function NotFound() {
                   <a
                     key={store.magazin}
                     href={`/cod-reducere/${store.magazin}`}
-                    className="flex flex-col items-center gap-2 p-4 bg-slate-900 rounded-2xl border border-slate-800 hover:border-indigo-500/50 hover:shadow-lg hover:shadow-black/30 transition-all group"
+                    className="flex flex-col items-center gap-2 p-4 bg-[#15120c] rounded-2xl border border-[#26211a] hover:border-[#c9a63e]/50 hover:shadow-lg hover:shadow-black/30 transition-all group"
                   >
-                    <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-indigo-700 flex items-center justify-center text-white font-black text-lg">
+                    <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#c9a63e] to-[#9c7a26] flex items-center justify-center text-white font-black text-lg">
                       {nume.charAt(0)}
                     </div>
-                    <span className="text-xs font-semibold text-slate-300 text-center leading-tight">
+                    <span className="text-xs font-semibold text-[#c8bda2] text-center leading-tight">
                       {nume}
                     </span>
                     {hasCod && (
-                      <span className="text-xs text-indigo-400 font-bold">COD</span>
+                      <span className="text-xs text-[#d8c091] font-bold">COD</span>
                     )}
                   </a>
                 );
@@ -146,9 +146,9 @@ export default function NotFound() {
         )}
       </div>
 
-      <footer className="border-t border-slate-800 py-5 text-center text-xs text-slate-500">
+      <footer className="border-t border-[#26211a] py-5 text-center text-xs text-[#8c8064]">
         © {new Date().getFullYear()} AmCupon.ro ·{" "}
-        <Link href="/contact" className="hover:text-indigo-400">Contact</Link>
+        <Link href="/contact" className="hover:text-[#d8c091]">Contact</Link>
       </footer>
     </div>
   );

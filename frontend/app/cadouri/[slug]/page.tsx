@@ -38,7 +38,7 @@ const OCAZII: Record<string, {
     desc: "Electronice, auto, sport — cadouri practice si utile pentru barbatul din viata ta",
     descMeta: "Idei cadouri barbati: gadgeturi, accesorii auto, echipamente sport. Preturi reale din magazine partenere. Livrare Romania.",
     emoji: "🎁",
-    from: "#3b82f6", to: "#6366f1",
+    from: "#3b82f6", to: "#b8912e",
     catSluguri: ["auto", "electronice", "sport"],
     keywords: ["navigatie", "gadget", "accesoriu", "sport", "fitness", "smartwatch"],
     editorial: "Gadgeturile si accesoriile auto sunt mereu binevenite pentru barbati. Daca e pasionat de sport, echipamentele de fitness sunt o alegere practica. Electronicele — smartwatch, casti, accesorii — raman cadouri sigure.",
@@ -62,7 +62,7 @@ const OCAZII: Record<string, {
     desc: "Cadouri elegante si memorabile pentru ocazia botezului — bijuterii, jucarii si decoratiuni speciale",
     descMeta: "Cele mai frumoase cadouri de botez: bijuterii argint cu gravura, jucarii de plus, cadouri personalizate. Preturi si livrare Romania.",
     emoji: "👶",
-    from: "#60a5fa", to: "#818cf8",
+    from: "#60a5fa", to: "#e3d1a6",
     catSluguri: ["bijuterii", "fashion"],
     keywords: ["botez", "bebelus", "argint", "gravura", "bijuterie", "set cadou"],
     editorial: "Botezul este una dintre cele mai speciale ocazii din viata unui copil. Cadourile traditionale — bijuterii din argint cu gravura, seturi de haine premium sau jucarii de plus de calitate — raman amintiri pretioase pentru parinti si copil deopotriva.",
@@ -134,7 +134,7 @@ const OCAZII: Record<string, {
     desc: "Bijuterii, fashion si surprize originale pentru ziua de nastere a cuiva drag",
     descMeta: "Idei originale cadouri zi de nastere: bijuterii, parfumuri, gadgeturi. Preturi de la 50 RON. Magazine partenere cu livrare rapida.",
     emoji: "🎂",
-    from: "#6366f1", to: "#06b6d4",
+    from: "#b8912e", to: "#06b6d4",
     catSluguri: ["bijuterii", "fashion", "electronice"],
     keywords: ["nastere", "zi nastere", "aniversare", "bijuterie", "cadou", "surprise"],
     editorial: "Ziua de nastere este momentul in care un cadou atent ales face diferenta. Gandeste-te la ce isi doreste persoana respectiva sau ce ar folosi zilnic. O bijuterie cu semnificatie, un gadget dorit sau un parfum preferat sunt mereu binevenit.",
@@ -185,7 +185,7 @@ const OCAZII: Record<string, {
     desc: "Cadouri de calitate cu buget de maxim 200 lei — bijuterii, fashion, sport",
     descMeta: "Idei cadouri sub 200 lei: bijuterii, accesorii premium, fashion. Cadouri originale cu pret bun. Livrare rapida Romania.",
     emoji: "🎁",
-    from: "#6366f1", to: "#818cf8",
+    from: "#b8912e", to: "#e3d1a6",
     catSluguri: ["bijuterii", "fashion", "sport"],
     keywords: ["cadou sub 200 lei", "cadou pret mediu", "cadou original", "cadou 150 lei"],
     pretMax: 200,
@@ -326,25 +326,25 @@ export default async function CadouriSlugPage({
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <div className="min-h-screen bg-slate-950">
+      <div className="min-h-screen bg-[#0b0a07]">
 
         {/* Header */}
-        <header className="bg-slate-900 border-b border-slate-800">
+        <header className="bg-[#15120c] border-b border-[#26211a]">
           <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-2 text-sm flex-wrap">
             <Link href="/" className="flex items-center gap-1.5 shrink-0">
-              <div className="bg-indigo-600 text-white font-black text-sm px-1.5 py-0.5 rounded-md">Am</div>
+              <div className="bg-[#b8912e] text-white font-black text-sm px-1.5 py-0.5 rounded-md">Am</div>
               <span className="font-black text-white">Cupon.ro</span>
             </Link>
-            <span className="text-slate-600">/</span>
-            <Link href="/cadouri" className="text-slate-400 hover:text-white">Cadouri</Link>
-            <span className="text-slate-600">/</span>
-            <span className="text-slate-300 font-semibold">{oc.titlu}</span>
+            <span className="text-[#473d28]">/</span>
+            <Link href="/cadouri" className="text-[#a89a78] hover:text-white">Cadouri</Link>
+            <span className="text-[#473d28]">/</span>
+            <span className="text-[#c8bda2] font-semibold">{oc.titlu}</span>
           </div>
         </header>
 
         {/* Hero */}
         <div
-          className="relative py-12 px-4 text-center overflow-hidden border-b border-slate-800"
+          className="relative py-12 px-4 text-center overflow-hidden border-b border-[#26211a]"
           style={{ background: `linear-gradient(135deg, ${oc.from}18 0%, ${oc.to}12 100%)` }}
         >
           <div className="absolute inset-0 pointer-events-none" style={{ background: `radial-gradient(ellipse 70% 60% at 50% 0%, ${oc.from}22 0%, transparent 70%)` }} />
@@ -353,15 +353,15 @@ export default async function CadouriSlugPage({
             <h1 className="text-3xl md:text-4xl font-black text-white mb-3">
               {oc.titlu}
             </h1>
-            <p className="text-slate-400 text-base mb-4 max-w-xl mx-auto">{oc.desc}</p>
+            <p className="text-[#a89a78] text-base mb-4 max-w-xl mx-auto">{oc.desc}</p>
             <div className="flex flex-wrap justify-center gap-3 text-sm">
-              <span className="flex items-center gap-1.5 bg-slate-800/80 border border-slate-700 text-slate-300 px-3 py-1.5 rounded-full">
+              <span className="flex items-center gap-1.5 bg-[#26211a]/80 border border-[#37301f] text-[#c8bda2] px-3 py-1.5 rounded-full">
                 <span className="text-emerald-400">✓</span> {products.length}+ produse disponibile
               </span>
-              <span className="flex items-center gap-1.5 bg-slate-800/80 border border-slate-700 text-slate-300 px-3 py-1.5 rounded-full">
-                <span className="text-indigo-400">✓</span> Preturi verificate azi
+              <span className="flex items-center gap-1.5 bg-[#26211a]/80 border border-[#37301f] text-[#c8bda2] px-3 py-1.5 rounded-full">
+                <span className="text-[#d8c091]">✓</span> Preturi verificate azi
               </span>
-              <span className="flex items-center gap-1.5 bg-slate-800/80 border border-slate-700 text-slate-300 px-3 py-1.5 rounded-full">
+              <span className="flex items-center gap-1.5 bg-[#26211a]/80 border border-[#37301f] text-[#c8bda2] px-3 py-1.5 rounded-full">
                 <span className="text-blue-400">✓</span> Livrare Romania
               </span>
             </div>
@@ -377,7 +377,7 @@ export default async function CadouriSlugPage({
               {oc.idei.map((idee, i) => (
                 <span
                   key={i}
-                  className="flex items-center gap-1.5 bg-slate-900 border border-slate-700 text-slate-300 text-sm px-3 py-1.5 rounded-xl"
+                  className="flex items-center gap-1.5 bg-[#15120c] border border-[#37301f] text-[#c8bda2] text-sm px-3 py-1.5 rounded-xl"
                 >
                   <span style={{ color: oc.from }}>→</span>
                   {idee}
@@ -393,7 +393,7 @@ export default async function CadouriSlugPage({
                 <h2 className="text-xl font-black text-white">
                   Produse disponibile — {oc.titlu}
                 </h2>
-                <span className="text-sm text-slate-500">{products.length} produse</span>
+                <span className="text-sm text-[#8c8064]">{products.length} produse</span>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
                 {products.map((p: any) => (
@@ -402,10 +402,10 @@ export default async function CadouriSlugPage({
                     href={p.url}
                     target="_blank"
                     rel="sponsored noopener noreferrer"
-                    className="group bg-slate-900 border border-slate-800 hover:border-cyan-500/40 rounded-2xl overflow-hidden transition-all hover:shadow-lg hover:shadow-cyan-500/5 hover:-translate-y-0.5"
+                    className="group bg-[#15120c] border border-[#26211a] hover:border-[#c9a63e]/40 rounded-2xl overflow-hidden transition-all hover:shadow-lg hover:shadow-[#c9a63e]/5 hover:-translate-y-0.5"
                   >
                     {/* Imagine produs */}
-                    <div className="aspect-square relative bg-slate-800 overflow-hidden">
+                    <div className="aspect-square relative bg-[#26211a] overflow-hidden">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         src={p.image}
@@ -422,16 +422,16 @@ export default async function CadouriSlugPage({
 
                     {/* Info produs */}
                     <div className="p-3">
-                      <p className="text-slate-300 text-xs font-medium leading-tight line-clamp-2 mb-2 group-hover:text-white transition-colors">
+                      <p className="text-[#c8bda2] text-xs font-medium leading-tight line-clamp-2 mb-2 group-hover:text-white transition-colors">
                         {p.title}
                       </p>
                       <div className="flex items-baseline gap-1.5">
-                        <span className="text-indigo-400 font-black text-sm">{p.price} RON</span>
+                        <span className="text-[#d8c091] font-black text-sm">{p.price} RON</span>
                         {p.old_price && (
-                          <span className="text-slate-600 text-xs line-through">{p.old_price}</span>
+                          <span className="text-[#473d28] text-xs line-through">{p.old_price}</span>
                         )}
                       </div>
-                      <p className="text-slate-600 text-[10px] mt-1">{p.merchant_slug?.replace(".ro", "").replace(".com", "")}</p>
+                      <p className="text-[#473d28] text-[10px] mt-1">{p.merchant_slug?.replace(".ro", "").replace(".com", "")}</p>
                     </div>
                   </a>
                 ))}
@@ -441,24 +441,24 @@ export default async function CadouriSlugPage({
 
           {/* Editorial */}
           <section className="mb-10">
-            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+            <div className="bg-[#15120c] border border-[#26211a] rounded-2xl p-6">
               <h2 className="text-lg font-black text-white mb-3">Cum alegi {oc.titlu.toLowerCase()}?</h2>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4">{oc.editorial}</p>
+              <p className="text-[#a89a78] text-sm leading-relaxed mb-4">{oc.editorial}</p>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                <div className="bg-slate-800/50 rounded-xl p-4">
+                <div className="bg-[#26211a]/50 rounded-xl p-4">
                   <div className="text-2xl mb-2">💡</div>
                   <h3 className="text-sm font-bold text-white mb-1">Gandeste-te la persoana</h3>
-                  <p className="text-xs text-slate-500">Care sunt hobby-urile si pasiunile ei/lui? Un cadou personalizat valoreath mult mai mult decat unul scump dar nepotrivit.</p>
+                  <p className="text-xs text-[#8c8064]">Care sunt hobby-urile si pasiunile ei/lui? Un cadou personalizat valoreath mult mai mult decat unul scump dar nepotrivit.</p>
                 </div>
-                <div className="bg-slate-800/50 rounded-xl p-4">
+                <div className="bg-[#26211a]/50 rounded-xl p-4">
                   <div className="text-2xl mb-2">💰</div>
                   <h3 className="text-sm font-bold text-white mb-1">Stabileste un buget</h3>
-                  <p className="text-xs text-slate-500">Nu trebuie sa cheltuiesti mult pentru a impresiona. Cadouri intre 100-300 RON sunt apreciate la fel de mult ca cele mai scumpe.</p>
+                  <p className="text-xs text-[#8c8064]">Nu trebuie sa cheltuiesti mult pentru a impresiona. Cadouri intre 100-300 RON sunt apreciate la fel de mult ca cele mai scumpe.</p>
                 </div>
-                <div className="bg-slate-800/50 rounded-xl p-4">
+                <div className="bg-[#26211a]/50 rounded-xl p-4">
                   <div className="text-2xl mb-2">📦</div>
                   <h3 className="text-sm font-bold text-white mb-1">Verifica livrarea</h3>
-                  <p className="text-xs text-slate-500">Asigura-te ca produsul ajunge la timp. Toate magazinele partenere AmCupon livreaza in Romania, cele mai multe in 24-48h.</p>
+                  <p className="text-xs text-[#8c8064]">Asigura-te ca produsul ajunge la timp. Toate magazinele partenere AmCupon livreaza in Romania, cele mai multe in 24-48h.</p>
                 </div>
               </div>
             </div>
@@ -473,16 +473,16 @@ export default async function CadouriSlugPage({
                   <Link
                     key={i}
                     href={`/cod-reducere/${m.magazin}`}
-                    className="bg-slate-900 border border-slate-800 hover:border-cyan-500/40 rounded-xl p-3 flex items-center gap-2 transition-all"
+                    className="bg-[#15120c] border border-[#26211a] hover:border-[#c9a63e]/40 rounded-xl p-3 flex items-center gap-2 transition-all"
                   >
                     {m.logo_url && (
                       // eslint-disable-next-line @next/next/no-img-element
                       <img src={m.logo_url} alt={m.magazin_display || m.magazin} className="w-8 h-8 rounded-lg object-contain bg-white p-0.5" loading="lazy" />
                     )}
                     <div>
-                      <div className="text-slate-300 text-xs font-bold">{m.magazin_display || m.magazin}</div>
+                      <div className="text-[#c8bda2] text-xs font-bold">{m.magazin_display || m.magazin}</div>
                       {m.cod_cupon && (
-                        <div className="text-indigo-400 text-[10px] font-mono font-black">{m.cod_cupon}</div>
+                        <div className="text-[#d8c091] text-[10px] font-mono font-black">{m.cod_cupon}</div>
                       )}
                     </div>
                   </Link>
@@ -492,21 +492,21 @@ export default async function CadouriSlugPage({
           )}
 
           {/* Alte ocazii */}
-          <section className="mb-6 border-t border-slate-800 pt-8">
+          <section className="mb-6 border-t border-[#26211a] pt-8">
             <h2 className="text-base font-bold text-white mb-4">Alte ocazii — mai multe idei</h2>
             <div className="flex flex-wrap gap-2">
               {altePagini.map(([s, o]) => (
                 <Link
                   key={s}
                   href={`/cadouri/${s}`}
-                  className="flex items-center gap-1.5 bg-slate-900 border border-slate-800 hover:border-slate-600 text-slate-400 hover:text-white text-sm px-3 py-2 rounded-xl transition-all"
+                  className="flex items-center gap-1.5 bg-[#15120c] border border-[#26211a] hover:border-[#473d28] text-[#a89a78] hover:text-white text-sm px-3 py-2 rounded-xl transition-all"
                 >
                   {o.emoji} {o.titlu}
                 </Link>
               ))}
               <Link
                 href="/cadouri"
-                className="flex items-center gap-1.5 bg-cyan-500/10 border border-cyan-500/30 text-indigo-400 hover:text-indigo-300 text-sm px-3 py-2 rounded-xl transition-all font-bold"
+                className="flex items-center gap-1.5 bg-[#c9a63e]/10 border border-[#c9a63e]/30 text-[#d8c091] hover:text-[#e3d1a6] text-sm px-3 py-2 rounded-xl transition-all font-bold"
               >
                 Toate ocaziile →
               </Link>

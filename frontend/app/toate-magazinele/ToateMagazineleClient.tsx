@@ -55,14 +55,14 @@ const CATEGORII_FILTRE = [
 ];
 
 const CULORI_BG = [
-  "from-blue-500 to-indigo-600",
+  "from-blue-500 to-[#b8912e]",
   "from-emerald-500 to-teal-600",
   "from-purple-500 to-violet-600",
   "from-pink-500 to-rose-600",
-  "from-indigo-500 to-blue-600",
-  "from-teal-500 to-cyan-600",
+  "from-[#c9a63e] to-blue-600",
+  "from-teal-500 to-[#b8912e]",
   "from-red-500 to-pink-600",
-  "from-cyan-400 to-blue-500",
+  "from-[#d8c091] to-blue-500",
 ];
 
 export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[] }) {
@@ -102,26 +102,26 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
   const cuCod      = magazine.filter(m => m.cod_cupon).length;
 
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div className="min-h-screen bg-[#0b0a07]">
 
       {/* ── HERO ────────────────────────────────────────────────────────── */}
-      <div className="bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800 py-12 px-4 border-b border-slate-800">
+      <div className="bg-gradient-to-br from-[#15120c] via-[#15120c] to-[#26211a] py-12 px-4 border-b border-[#26211a]">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-3">DIRECTORUL REDUCERILOR</p>
+          <p className="text-xs font-bold text-[#d8c091] uppercase tracking-widest mb-3">DIRECTORUL REDUCERILOR</p>
           <h1 className="text-3xl md:text-4xl font-black text-white mb-2 tracking-tight">
             Toate magazinele cu reduceri
           </h1>
-          <p className="text-slate-400 text-sm mb-1">
+          <p className="text-[#a89a78] text-sm mb-1">
             <span className="text-white font-bold">{magazine.length} magazine partenere</span>
             {" · "}
             <span className="text-emerald-400 font-bold">{cuPromotii} cu promoții active</span>
             {" · "}
-            <span className="text-indigo-400 font-bold">{cuCod} cu cod cupon</span>
+            <span className="text-[#d8c091] font-bold">{cuCod} cu cod cupon</span>
           </p>
 
           {/* Search */}
           <div className="relative max-w-xl mx-auto mt-6">
-            <svg className="absolute left-4 top-3.5 w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="absolute left-4 top-3.5 w-5 h-5 text-[#a89a78]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
             <input
@@ -129,11 +129,11 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
               placeholder="Cauta magazin (ex: Zara, eMAG, Notino...)"
               value={cautare}
               onChange={e => setCautare(e.target.value)}
-              className="w-full bg-slate-800 text-white rounded-2xl pl-12 pr-4 py-3.5 text-base focus:outline-none focus:ring-2 focus:ring-indigo-500/50 border border-slate-700 focus:border-cyan-500/50 placeholder-slate-500 transition-all"
+              className="w-full bg-[#26211a] text-white rounded-2xl pl-12 pr-4 py-3.5 text-base focus:outline-none focus:ring-2 focus:ring-[#c9a63e]/50 border border-[#37301f] focus:border-[#c9a63e]/50 placeholder-[#8c8064] transition-all"
             />
             {cautare && (
               <button onClick={() => setCautare("")}
-                className="absolute right-4 top-3.5 text-slate-400 hover:text-white transition-colors">
+                className="absolute right-4 top-3.5 text-[#a89a78] hover:text-white transition-colors">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12"/>
                 </svg>
@@ -151,8 +151,8 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
             <button key={f} onClick={() => setFiltru(f)}
               className={`px-4 py-2 rounded-full text-sm font-bold transition-all ${
                 filtru === f
-                  ? "bg-indigo-600 text-white shadow-lg shadow-cyan-500/25"
-                  : "bg-slate-800 border border-slate-700 text-slate-300 hover:border-cyan-500/50 hover:text-white"
+                  ? "bg-[#b8912e] text-white shadow-lg shadow-[#c9a63e]/25"
+                  : "bg-[#26211a] border border-[#37301f] text-[#c8bda2] hover:border-[#c9a63e]/50 hover:text-white"
               }`}>
               {f === "toate" ? "Toate" : f === "cod" ? "🎟 Cod cupon" : "⚡ Promoții active"}
             </button>
@@ -161,7 +161,7 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
           <select
             value={sortare}
             onChange={e => setSortare(e.target.value as "az" | "reducere" | "rank")}
-            className="ml-auto bg-slate-800 border border-slate-700 text-slate-300 text-sm font-semibold rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500/40 cursor-pointer hover:border-slate-500 transition-colors">
+            className="ml-auto bg-[#26211a] border border-[#37301f] text-[#c8bda2] text-sm font-semibold rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#c9a63e]/40 cursor-pointer hover:border-[#8c8064] transition-colors">
             <option value="rank">Popularitate</option>
             <option value="reducere">Reducere maximă</option>
             <option value="az">A – Z</option>
@@ -174,8 +174,8 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
             <button key={cat.key} onClick={() => setCategorie(cat.key)}
               className={`px-3 py-1.5 rounded-full text-xs font-bold transition-all ${
                 categorie === cat.key
-                  ? "bg-slate-100 text-slate-900"
-                  : "bg-slate-800/60 border border-slate-700 text-slate-400 hover:border-slate-500 hover:text-slate-200"
+                  ? "bg-[#efe7d6] text-[#15120c]"
+                  : "bg-[#26211a]/60 border border-[#37301f] text-[#a89a78] hover:border-[#8c8064] hover:text-[#dcd0b8]"
               }`}>
               {cat.label}
             </button>
@@ -183,10 +183,10 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
         </div>
 
         {/* ── REZULTAT COUNT ──────────────────────────────────────────── */}
-        <p className="text-sm text-slate-500 mb-5">
+        <p className="text-sm text-[#8c8064] mb-5">
           {filtrate.length} magazine{" "}
           {cautare ? <span>pentru <span className="text-white font-semibold">"{cautare}"</span></span> : ""}
-          {categorie !== "Toate" ? <span className="text-indigo-400"> · {CATEGORII_FILTRE.find(c => c.key === categorie)?.label}</span> : ""}
+          {categorie !== "Toate" ? <span className="text-[#d8c091]"> · {CATEGORII_FILTRE.find(c => c.key === categorie)?.label}</span> : ""}
         </p>
 
         {/* ── GRID MAGAZINE ───────────────────────────────────────────── */}
@@ -202,11 +202,11 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
               <a
                 key={m.magazin}
                 href={`/cod-reducere/${m.magazin}`}
-                className="group relative bg-gradient-to-b from-slate-900 to-slate-900/60 rounded-2xl border border-slate-800/80 hover:border-indigo-500/50 p-4 flex flex-col items-center gap-3 hover:-translate-y-1 transition-all duration-200"
+                className="group relative bg-gradient-to-b from-[#15120c] to-[#15120c]/60 rounded-2xl border border-[#26211a]/80 hover:border-[#c9a63e]/50 p-4 flex flex-col items-center gap-3 hover:-translate-y-1 transition-all duration-200"
                 style={{ boxShadow: "0 1px 2px rgba(0,0,0,0.2)" }}
               >
                 {/* Logo */}
-                <div className="relative w-16 h-16 rounded-2xl overflow-hidden flex items-center justify-center bg-white shrink-0 p-2 group-hover:ring-2 group-hover:ring-indigo-400/40 transition-all">
+                <div className="relative w-16 h-16 rounded-2xl overflow-hidden flex items-center justify-center bg-white shrink-0 p-2 group-hover:ring-2 group-hover:ring-[#d8c091]/40 transition-all">
                   {m.logo_url && logoOk ? (
                     <img
                       src={m.logo_url}
@@ -223,18 +223,18 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
                   )}
                   {/* Indicator activ, atasat de logo nu plutind pe card */}
                   {m.are_promotie && (
-                    <span className="absolute -top-1 -right-1 w-3.5 h-3.5 rounded-full bg-emerald-400 ring-2 ring-slate-900" />
+                    <span className="absolute -top-1 -right-1 w-3.5 h-3.5 rounded-full bg-emerald-400 ring-2 ring-[#15120c]" />
                   )}
                 </div>
 
                 {/* Nume */}
-                <span className="text-xs font-bold text-slate-200 text-center group-hover:text-white transition-colors leading-tight line-clamp-2 min-h-[2rem] flex items-center">
+                <span className="text-xs font-bold text-[#dcd0b8] text-center group-hover:text-white transition-colors leading-tight line-clamp-2 min-h-[2rem] flex items-center">
                   {nume}
                 </span>
 
                 {/* Badge status — omis complet daca nu e nimic de spus, fara placeholder gol */}
                 {pct > 0 ? (
-                  <span className="text-[10px] font-black text-white bg-indigo-600 px-2.5 py-1 rounded-full">
+                  <span className="text-[10px] font-black text-white bg-[#b8912e] px-2.5 py-1 rounded-full">
                     -{pct}%
                   </span>
                 ) : m.cod_cupon ? (
@@ -242,7 +242,7 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
                     Cod cupon
                   </span>
                 ) : m.are_promotie ? (
-                  <span className="text-[10px] font-semibold text-cyan-300 bg-cyan-500/10 border border-cyan-500/20 px-2.5 py-1 rounded-full">
+                  <span className="text-[10px] font-semibold text-[#e3d1a6] bg-[#c9a63e]/10 border border-[#c9a63e]/20 px-2.5 py-1 rounded-full">
                     Ofertă
                   </span>
                 ) : null}
@@ -253,23 +253,23 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
 
         {/* EMPTY STATE */}
         {filtrate.length === 0 && (
-          <div className="text-center py-24 text-slate-500">
+          <div className="text-center py-24 text-[#8c8064]">
             <p className="text-5xl mb-4">🔍</p>
-            <p className="font-bold text-lg text-slate-300">Niciun magazin gasit</p>
+            <p className="font-bold text-lg text-[#c8bda2]">Niciun magazin gasit</p>
             <p className="text-sm mt-1">Incearca alt termen de cautare sau sterge filtrele</p>
             <button onClick={() => { setCautare(""); setCategorie("Toate"); setFiltru("toate"); }}
-              className="mt-4 text-indigo-400 hover:text-indigo-300 text-sm font-bold transition-colors">
+              className="mt-4 text-[#d8c091] hover:text-[#e3d1a6] text-sm font-bold transition-colors">
               Reseteaza filtrele
             </button>
           </div>
         )}
 
         {/* FOOTER NAV */}
-        <div className="mt-12 pt-6 border-t border-slate-800 flex items-center justify-between flex-wrap gap-3">
-          <Link href="/" className="text-sm text-slate-500 hover:text-indigo-400 transition-colors">
+        <div className="mt-12 pt-6 border-t border-[#26211a] flex items-center justify-between flex-wrap gap-3">
+          <Link href="/" className="text-sm text-[#8c8064] hover:text-[#d8c091] transition-colors">
             &larr; Inapoi la homepage
           </Link>
-          <Link href="/categorii" className="text-sm text-slate-500 hover:text-indigo-400 transition-colors">
+          <Link href="/categorii" className="text-sm text-[#8c8064] hover:text-[#d8c091] transition-colors">
             Exploreaza categorii &rarr;
           </Link>
         </div>

@@ -31,7 +31,7 @@ const SUBCATEGORII = [
 ];
 
 function numeAfisat(s: string) { return s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" "); }
-const CULORI = ["bg-indigo-600","bg-indigo-600","bg-indigo-600","bg-indigo-600","bg-red-400","bg-pink-400"];
+const CULORI = ["bg-[#b8912e]","bg-[#b8912e]","bg-[#b8912e]","bg-[#b8912e]","bg-red-400","bg-pink-400"];
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Reduceri Beauty & Cosmetice 2026","url":"https://amcupon.ro/frumusete" };
 
 export default function FrumusetePage() {
@@ -50,21 +50,21 @@ export default function FrumusetePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-slate-950">
-        <nav className="bg-slate-950 border-b border-slate-800">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-slate-500">
-            <Link href="/" className="hover:text-indigo-400">Acasă</Link>
+      <div className="min-h-screen bg-[#0b0a07]">
+        <nav className="bg-[#0b0a07] border-b border-[#26211a]">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#8c8064]">
+            <Link href="/" className="hover:text-[#d8c091]">Acasă</Link>
             <span className="mx-1">/</span>
-            <span className="text-slate-300 font-medium">Frumusețe & Beauty</span>
+            <span className="text-[#c8bda2] font-medium">Frumusețe & Beauty</span>
           </div>
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-indigo-700 via-blue-700 to-cyan-700 text-white py-12 px-4">
+        <section className="bg-gradient-to-br from-[#9c7a26] via-blue-700 to-[#8a6a1e] text-white py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">💄</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Beauty & Cosmetice cu Reducere {an}</h1>
-            <p className="text-indigo-100 text-lg mb-6 max-w-xl mx-auto">
+            <p className="text-[#efe3c6] text-lg mb-6 max-w-xl mx-auto">
               Parfumuri originale, skincare premium, machiaj — coduri de reducere verificate zilnic la Notino, Douglas, Sephora
             </p>
             <div className="flex flex-wrap justify-center gap-2">
@@ -83,11 +83,11 @@ export default function FrumusetePage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {SUBCATEGORII.map(s => (
               <a key={s.label} href="/categorii/beauty"
-                className="bg-slate-900 border border-slate-800 rounded-2xl p-5 hover:shadow-md transition-all group">
+                className="bg-[#15120c] border border-[#26211a] rounded-2xl p-5 hover:shadow-md transition-all group">
                 <div className="text-3xl mb-2">{s.emoji}</div>
                 <h3 className="font-bold text-white text-sm mb-1">{s.label}</h3>
-                <p className="text-xs text-slate-400 mb-3">{s.desc}</p>
-                <p className="text-xs font-bold text-indigo-400 group-hover:text-indigo-400">Vezi reduceri →</p>
+                <p className="text-xs text-[#a89a78] mb-3">{s.desc}</p>
+                <p className="text-xs font-bold text-[#d8c091] group-hover:text-[#d8c091]">Vezi reduceri →</p>
               </a>
             ))}
           </div>
@@ -106,10 +106,10 @@ export default function FrumusetePage() {
               const promo = m.promotii[0];
               return (
                 <a key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                  className="group bg-slate-900 border border-slate-800 hover:border-indigo-500/40 rounded-2xl p-4 transition-all hover:shadow-md">
+                  className="group bg-[#15120c] border border-[#26211a] hover:border-[#c9a63e]/40 rounded-2xl p-4 transition-all hover:shadow-md">
                   <div className="flex items-center gap-3 mb-3">
                     {m.logo_url ? (
-                      <div className="w-10 h-10 rounded-xl overflow-hidden bg-white border border-slate-800 shrink-0">
+                      <div className="w-10 h-10 rounded-xl overflow-hidden bg-white border border-[#26211a] shrink-0">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img src={m.logo_url} alt={`Logo ${nume}`} className="w-full h-full object-contain" loading="lazy" />
                       </div>
@@ -120,17 +120,17 @@ export default function FrumusetePage() {
                     )}
                     <div>
                       <p className="font-bold text-white text-sm">{nume}</p>
-                      {m.are_promotie && m.cod_cupon && <span className="text-xs text-indigo-400 font-bold">COD</span>}
-                      {m.are_promotie && !m.cod_cupon && <span className="text-xs text-cyan-400 font-medium">Ofertă</span>}
+                      {m.are_promotie && m.cod_cupon && <span className="text-xs text-[#d8c091] font-bold">COD</span>}
+                      {m.are_promotie && !m.cod_cupon && <span className="text-xs text-[#d8c091] font-medium">Ofertă</span>}
                     </div>
                   </div>
                   {promo ? (
-                    <p className="text-slate-400 text-xs line-clamp-2">{promo.nume}</p>
+                    <p className="text-[#a89a78] text-xs line-clamp-2">{promo.nume}</p>
                   ) : (
-                    <p className="text-slate-500 text-xs italic">Verifică ofertele curente</p>
+                    <p className="text-[#8c8064] text-xs italic">Verifică ofertele curente</p>
                   )}
                   <div className="flex justify-end mt-2">
-                    <span className="text-xs text-indigo-400 font-semibold group-hover:text-indigo-400">Vezi →</span>
+                    <span className="text-xs text-[#d8c091] font-semibold group-hover:text-[#d8c091]">Vezi →</span>
                   </div>
                 </a>
               );
@@ -147,10 +147,10 @@ export default function FrumusetePage() {
         />
 
         {/* SEO */}
-        <section className="bg-slate-900 border-t border-slate-800 py-10 px-4">
+        <section className="bg-[#15120c] border-t border-[#26211a] py-10 px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-xl font-black text-white mb-5">Ghid cumpărături beauty inteligente</h2>
-            <div className="space-y-4 text-sm text-slate-400 leading-relaxed">
+            <div className="space-y-4 text-sm text-[#a89a78] leading-relaxed">
               <div>
                 <h3 className="font-bold text-white mb-1">Parfumuri originale mai ieftin</h3>
                 <p>Notino este cel mai bun loc pentru parfumuri originale din România — prețuri cu 30-50% sub parfumeria fizică, autenticitate garantată. Douglas are exclusivități și pachete cadou premium. Caută coduri de reducere Notino pe AmCupon.ro înainte de orice comandă.</p>
@@ -172,7 +172,7 @@ export default function FrumusetePage() {
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-slate-300 mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-[#c8bda2] mb-4">Exploreaza si alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/parfumuri", label: "🌹 Parfumuri" },
@@ -183,18 +183,18 @@ export default function FrumusetePage() {
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-slate-900 hover:bg-slate-800 hover:text-indigo-300 text-slate-300 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-slate-800 hover:border-cyan-200">
+                className="bg-[#15120c] hover:bg-[#26211a] hover:text-[#e3d1a6] text-[#c8bda2] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#26211a] hover:border-[#e6d5a8]">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-slate-800 py-6 text-center text-xs text-slate-500 mt-4">
+        <footer className="border-t border-[#26211a] py-6 text-center text-xs text-[#8c8064] mt-4">
           © {an} AmCupon.ro ·{" "}
-          <Link href="/idei-cadouri" className="hover:text-indigo-400">Idei Cadouri</Link>{" · "}
-          <Link href="/categorii/beauty" className="hover:text-indigo-400">Categorie Beauty</Link>{" · "}
-          <Link href="/categorii" className="hover:text-indigo-400">Categorii</Link>
+          <Link href="/idei-cadouri" className="hover:text-[#d8c091]">Idei Cadouri</Link>{" · "}
+          <Link href="/categorii/beauty" className="hover:text-[#d8c091]">Categorie Beauty</Link>{" · "}
+          <Link href="/categorii" className="hover:text-[#d8c091]">Categorii</Link>
         </footer>
       </div>
     </>

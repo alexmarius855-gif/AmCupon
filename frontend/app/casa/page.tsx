@@ -31,7 +31,7 @@ const AVANTAJE = [
 ];
 
 function numeAfisat(s: string) { return s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" "); }
-const CULORI = ["bg-indigo-600","bg-indigo-600","bg-indigo-600","bg-lime-600","bg-indigo-600","bg-cyan-600"];
+const CULORI = ["bg-[#b8912e]","bg-[#b8912e]","bg-[#b8912e]","bg-lime-600","bg-[#b8912e]","bg-[#b8912e]"];
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Casa & Gradina cu Reducere 2026","url":"https://amcupon.ro/casa","description":"Coduri reducere casa si gradina Romania — Dedeman, IKEA, Leroy Merlin, Mobexpert" };
 
 export default function CasaPage() {
@@ -50,20 +50,20 @@ export default function CasaPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-slate-950">
-        <nav className="bg-slate-950 border-b border-slate-800">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-slate-500">
-            <Link href="/" className="hover:text-indigo-400">Acasa</Link>
+      <div className="min-h-screen bg-[#0b0a07]">
+        <nav className="bg-[#0b0a07] border-b border-[#26211a]">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#8c8064]">
+            <Link href="/" className="hover:text-[#d8c091]">Acasa</Link>
             <span className="mx-1">/</span>
-            <span className="text-slate-300 font-medium">Casa & Gradina cu Reducere</span>
+            <span className="text-[#c8bda2] font-medium">Casa & Gradina cu Reducere</span>
           </div>
         </nav>
 
-        <section className="bg-gradient-to-br from-indigo-700 via-blue-700 to-cyan-700 text-white py-12 px-4">
+        <section className="bg-gradient-to-br from-[#9c7a26] via-blue-700 to-[#8a6a1e] text-white py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">🏡</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Casa & Gradina cu Reducere {an}</h1>
-            <p className="text-indigo-100 text-lg mb-6 max-w-xl mx-auto">
+            <p className="text-[#efe3c6] text-lg mb-6 max-w-xl mx-auto">
               Coduri de reducere verificate la Dedeman, IKEA, Leroy Merlin si alte magazine de amenajari din Romania
             </p>
             <div className="flex flex-wrap justify-center gap-2">
@@ -78,10 +78,10 @@ export default function CasaPage() {
           <h2 className="text-xl font-black text-white mb-6 text-center">Ce gasesti la magazine casa & gradina</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {AVANTAJE.map(a => (
-              <div key={a.titlu} className="bg-slate-900 border border-slate-800 rounded-2xl p-5">
+              <div key={a.titlu} className="bg-[#15120c] border border-[#26211a] rounded-2xl p-5">
                 <div className="text-3xl mb-2">{a.icon}</div>
                 <h3 className="font-bold text-white text-sm mb-1">{a.titlu}</h3>
-                <p className="text-xs text-slate-400">{a.desc}</p>
+                <p className="text-xs text-[#a89a78]">{a.desc}</p>
               </div>
             ))}
           </div>
@@ -99,10 +99,10 @@ export default function CasaPage() {
               const promo = m.promotii[0];
               return (
                 <a key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                  className="group bg-slate-900 border border-slate-800 hover:border-indigo-500/40 rounded-2xl p-4 transition-all hover:shadow-md">
+                  className="group bg-[#15120c] border border-[#26211a] hover:border-[#c9a63e]/40 rounded-2xl p-4 transition-all hover:shadow-md">
                   <div className="flex items-center gap-3 mb-3">
                     {m.logo_url ? (
-                      <div className="w-10 h-10 rounded-xl overflow-hidden bg-white border border-slate-800 shrink-0">
+                      <div className="w-10 h-10 rounded-xl overflow-hidden bg-white border border-[#26211a] shrink-0">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img src={m.logo_url} alt={`Logo ${nume}`} className="w-full h-full object-contain" loading="lazy" />
                       </div>
@@ -113,17 +113,17 @@ export default function CasaPage() {
                     )}
                     <div>
                       <p className="font-bold text-white text-sm">{nume}</p>
-                      {m.are_promotie && m.cod_cupon && <span className="text-xs text-indigo-400 font-bold">COD</span>}
-                      {m.are_promotie && !m.cod_cupon && <span className="text-xs text-cyan-400 font-medium">Oferta</span>}
+                      {m.are_promotie && m.cod_cupon && <span className="text-xs text-[#d8c091] font-bold">COD</span>}
+                      {m.are_promotie && !m.cod_cupon && <span className="text-xs text-[#d8c091] font-medium">Oferta</span>}
                     </div>
                   </div>
                   {promo ? (
-                    <p className="text-slate-400 text-xs line-clamp-2">{promo.nume}</p>
+                    <p className="text-[#a89a78] text-xs line-clamp-2">{promo.nume}</p>
                   ) : (
-                    <p className="text-slate-500 text-xs italic">Verifica ofertele curente</p>
+                    <p className="text-[#8c8064] text-xs italic">Verifica ofertele curente</p>
                   )}
                   <div className="flex justify-end mt-2">
-                    <span className="text-xs text-cyan-400 font-semibold group-hover:text-cyan-300">Vezi &rarr;</span>
+                    <span className="text-xs text-[#d8c091] font-semibold group-hover:text-[#e3d1a6]">Vezi &rarr;</span>
                   </div>
                 </a>
               );
@@ -139,10 +139,10 @@ export default function CasaPage() {
           limit={12}
         />
 
-        <section className="bg-slate-900 border-t border-slate-800 py-10 px-4">
+        <section className="bg-[#15120c] border-t border-[#26211a] py-10 px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-xl font-black text-white mb-5">Ghid: Amenajari casa mai ieftine in Romania</h2>
-            <div className="space-y-4 text-sm text-slate-400 leading-relaxed">
+            <div className="space-y-4 text-sm text-[#a89a78] leading-relaxed">
               <div>
                 <h3 className="font-bold text-white mb-1">Dedeman vs IKEA vs Leroy Merlin</h3>
                 <p>Dedeman este liderul la materiale de constructii si bricolaj — preturi competitive, retea nationala extinsa. IKEA exceleaza la mobilier functional, design scandinav si pret accesibil. Leroy Merlin are cea mai larga gama de produse gradina si amenajari.</p>
@@ -164,11 +164,11 @@ export default function CasaPage() {
           </div>
         </section>
 
-        <footer className="border-t border-slate-800 py-6 text-center text-xs text-slate-500 mt-4">
+        <footer className="border-t border-[#26211a] py-6 text-center text-xs text-[#8c8064] mt-4">
           © {an} AmCupon.ro ·{" "}
-          <Link href="/electronice" className="hover:text-indigo-400">Electronice</Link>{" · "}
-          <Link href="/moto" className="hover:text-indigo-400">Auto-Moto</Link>{" · "}
-          <Link href="/categorii" className="hover:text-indigo-400">Categorii</Link>
+          <Link href="/electronice" className="hover:text-[#d8c091]">Electronice</Link>{" · "}
+          <Link href="/moto" className="hover:text-[#d8c091]">Auto-Moto</Link>{" · "}
+          <Link href="/categorii" className="hover:text-[#d8c091]">Categorii</Link>
         </footer>
       </div>
     </>

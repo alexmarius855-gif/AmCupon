@@ -31,17 +31,17 @@ export default function NewsletterPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <div className="min-h-screen bg-slate-950">
+      <div className="min-h-screen bg-[#0b0a07]">
 
         <div className="max-w-2xl mx-auto px-4 py-16">
           <div className="text-center mb-12">
-            <div className="inline-flex items-center justify-center w-20 h-20 rounded-3xl bg-gradient-to-br from-indigo-600 to-violet-600 text-4xl mb-6 shadow-xl shadow-cyan-500/30">
+            <div className="inline-flex items-center justify-center w-20 h-20 rounded-3xl bg-gradient-to-br from-[#b8912e] to-violet-600 text-4xl mb-6 shadow-xl shadow-[#c9a63e]/30">
               🎁
             </div>
             <h1 className="text-3xl md:text-4xl font-black text-white mb-3 tracking-tight">
               Reduceri exclusive pe email
             </h1>
-            <p className="text-slate-400 text-lg">
+            <p className="text-[#a89a78] text-lg">
               Peste <span className="text-white font-bold">600 magazine</span> monitorizate zilnic.
               Fii primul care afla codurile noi.
             </p>
@@ -55,15 +55,15 @@ export default function NewsletterPage() {
               { nr: "Zilnic", label: "Actualizare coduri" },
               { nr: "100%",   label: "Gratuit pentru tine" },
             ].map(s => (
-              <div key={s.label} className="bg-slate-900 rounded-2xl border border-slate-800 p-4">
-                <p className="text-xl font-black text-indigo-400">{s.nr}</p>
-                <p className="text-xs text-slate-500 mt-0.5">{s.label}</p>
+              <div key={s.label} className="bg-[#15120c] rounded-2xl border border-[#26211a] p-4">
+                <p className="text-xl font-black text-[#d8c091]">{s.nr}</p>
+                <p className="text-xs text-[#8c8064] mt-0.5">{s.label}</p>
               </div>
             ))}
           </div>
 
           <div className="text-center">
-            <Link href="/" className="text-sm text-slate-500 hover:text-indigo-400 transition-colors">
+            <Link href="/" className="text-sm text-[#8c8064] hover:text-[#d8c091] transition-colors">
               &larr; Inapoi la homepage
             </Link>
           </div>

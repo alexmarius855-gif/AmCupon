@@ -93,12 +93,12 @@ function NewsletterMini() {
         onChange={e => { setEmail(e.target.value); setStatus("idle"); }}
         placeholder="email@tau.ro"
         required
-        className="flex-1 bg-slate-800 border border-slate-700 focus:border-indigo-500 text-slate-200 placeholder-slate-500 rounded-xl px-3 py-2.5 text-sm focus:outline-none transition-colors min-w-0"
+        className="flex-1 bg-[#26211a] border border-[#37301f] focus:border-[#c9a63e] text-[#dcd0b8] placeholder-[#8c8064] rounded-xl px-3 py-2.5 text-sm focus:outline-none transition-colors min-w-0"
       />
       <button
         type="submit"
         disabled={status === "loading"}
-        className="bg-indigo-600 hover:bg-indigo-500 disabled:opacity-60 text-white font-bold px-4 py-2.5 rounded-xl text-sm transition-colors whitespace-nowrap shrink-0"
+        className="bg-[#b8912e] hover:bg-[#c9a63e] disabled:opacity-60 text-white font-bold px-4 py-2.5 rounded-xl text-sm transition-colors whitespace-nowrap shrink-0"
       >
         {status === "loading" ? "..." : "Abonare"}
       </button>
@@ -114,10 +114,10 @@ export default function Footer() {
   if (pathname === "/") return null;
 
   return (
-    <footer className="bg-[#070a0f] text-slate-400 border-t border-slate-800/60 mt-auto">
+    <footer className="bg-[#070a0f] text-[#a89a78] border-t border-[#26211a]/60 mt-auto">
 
       {/* Facebook Follow banner */}
-      <div className="border-b border-slate-800/60 bg-[#1877F2]/10">
+      <div className="border-b border-[#26211a]/60 bg-[#1877F2]/10">
         <div className="max-w-7xl mx-auto px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl bg-[#1877F2] flex items-center justify-center shrink-0">
@@ -127,7 +127,7 @@ export default function Footer() {
             </div>
             <div>
               <p className="text-white font-bold text-sm">Urmareste AmCupon.ro pe Facebook</p>
-              <p className="text-slate-400 text-xs">Oferte zilnice, coduri exclusive si concursuri</p>
+              <p className="text-[#a89a78] text-xs">Oferte zilnice, coduri exclusive si concursuri</p>
             </div>
           </div>
           <a
@@ -145,11 +145,11 @@ export default function Footer() {
       </div>
 
       {/* Newsletter banner */}
-      <div className="border-b border-slate-800/60">
+      <div className="border-b border-[#26211a]/60">
         <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div>
             <p className="text-white font-black text-lg">📧 Reduceri zilnice pe email</p>
-            <p className="text-slate-400 text-sm mt-0.5">
+            <p className="text-[#a89a78] text-sm mt-0.5">
               Fii primul care afla codurile active — gratuit, fara spam
             </p>
           </div>
@@ -166,10 +166,10 @@ export default function Footer() {
           {/* Brand col */}
           <div className="col-span-2 md:col-span-4 lg:col-span-1">
             <Link href="/" className="flex items-center gap-1.5 mb-4">
-              <div className="bg-indigo-600 text-white font-black text-sm px-2 py-0.5 rounded-lg">Am</div>
-              <span className="font-black text-white text-xl">Cupon<span className="text-indigo-400">.ro</span></span>
+              <div className="bg-[#b8912e] text-white font-black text-sm px-2 py-0.5 rounded-lg">Am</div>
+              <span className="font-black text-white text-xl">Cupon<span className="text-[#d8c091]">.ro</span></span>
             </Link>
-            <p className="text-sm leading-relaxed text-slate-500 mb-5">
+            <p className="text-sm leading-relaxed text-[#8c8064] mb-5">
               Coduri de reducere verificate zilnic de la cele mai mari magazine online din Romania.
               100% gratuit.
             </p>
@@ -187,15 +187,15 @@ export default function Footer() {
               ].map(s => (
                 <a key={s.href} href={s.href} target="_blank" rel="noopener noreferrer"
                   aria-label={s.label}
-                  className="w-9 h-9 rounded-xl bg-slate-800 hover:bg-indigo-600 flex items-center justify-center transition-colors group">
-                  <svg className="w-4 h-4 text-slate-400 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                  className="w-9 h-9 rounded-xl bg-[#26211a] hover:bg-[#b8912e] flex items-center justify-center transition-colors group">
+                  <svg className="w-4 h-4 text-[#a89a78] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                     {s.svg}
                   </svg>
                 </a>
               ))}
               <a href="https://chromewebstore.google.com/detail/mahfankpalkgognhnllkgdkjncmmkllb"
                 target="_blank" rel="noopener noreferrer"
-                className="w-9 h-9 rounded-xl bg-slate-800 hover:bg-indigo-600 flex items-center justify-center transition-colors" title="Extensie Chrome">
+                className="w-9 h-9 rounded-xl bg-[#26211a] hover:bg-[#b8912e] flex items-center justify-center transition-colors" title="Extensie Chrome">
                 <span className="text-sm">🧩</span>
               </a>
             </div>
@@ -208,7 +208,7 @@ export default function Footer() {
               {MAGAZINE_POPULARE.map(m => (
                 <li key={m.slug}>
                   <Link href={`/cod-reducere/${m.slug}`}
-                    className="text-sm text-slate-500 hover:text-indigo-400 transition-colors">
+                    className="text-sm text-[#8c8064] hover:text-[#d8c091] transition-colors">
                     Cod reducere {m.label}
                   </Link>
                 </li>
@@ -222,7 +222,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {CATEGORII.map(c => (
                 <li key={c.href}>
-                  <Link href={c.href} className="text-sm text-slate-500 hover:text-indigo-400 transition-colors">
+                  <Link href={c.href} className="text-sm text-[#8c8064] hover:text-[#d8c091] transition-colors">
                     {c.label}
                   </Link>
                 </li>
@@ -236,7 +236,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {GHIDURI.map(g => (
                 <li key={g.href}>
-                  <Link href={g.href} className="text-sm text-slate-500 hover:text-indigo-400 transition-colors">
+                  <Link href={g.href} className="text-sm text-[#8c8064] hover:text-[#d8c091] transition-colors">
                     {g.label}
                   </Link>
                 </li>
@@ -250,7 +250,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {INFO.map(i => (
                 <li key={i.href}>
-                  <Link href={i.href} className="text-sm text-slate-500 hover:text-indigo-400 transition-colors">
+                  <Link href={i.href} className="text-sm text-[#8c8064] hover:text-[#d8c091] transition-colors">
                     {i.label}
                   </Link>
                 </li>
@@ -262,17 +262,17 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-slate-800/60">
-        <div className="max-w-7xl mx-auto px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-600">
+      <div className="border-t border-[#26211a]/60">
+        <div className="max-w-7xl mx-auto px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[#473d28]">
           <p>© {an} AmCupon.ro — Toate drepturile rezervate</p>
           <p className="text-center">
             AmCupon.ro conține linkuri de afiliere. Primim un comision din bugetul de marketing
             al magazinelor, fără costuri suplimentare pentru tine.
           </p>
           <div className="flex items-center gap-4">
-            <Link href="/confidentialitate" className="hover:text-slate-400 transition-colors">GDPR</Link>
-            <Link href="/termeni" className="hover:text-slate-400 transition-colors">Termeni</Link>
-            <Link href="/contact" className="hover:text-slate-400 transition-colors">Contact</Link>
+            <Link href="/confidentialitate" className="hover:text-[#a89a78] transition-colors">GDPR</Link>
+            <Link href="/termeni" className="hover:text-[#a89a78] transition-colors">Termeni</Link>
+            <Link href="/contact" className="hover:text-[#a89a78] transition-colors">Contact</Link>
           </div>
         </div>
       </div>

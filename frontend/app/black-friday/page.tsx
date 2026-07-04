@@ -69,7 +69,7 @@ function numeAfisat(magazin: string): string {
     .join(" ");
 }
 
-const CULORI = ["bg-indigo-600"];
+const CULORI = ["bg-[#b8912e]"];
 
 const TOP_BF_MAGAZINE = [
   "emag.ro", "fashiondays.ro", "altex.ro", "dedeman.ro", "notino.ro",
@@ -110,7 +110,7 @@ export default function BlackFridayPage() {
 
         {/* Breadcrumb */}
         <nav className="max-w-6xl mx-auto px-4 pt-4 pb-0 text-xs text-gray-500 flex items-center gap-1">
-          <Link href="/" className="hover:text-indigo-400 transition-colors">Acasă</Link>
+          <Link href="/" className="hover:text-[#d8c091] transition-colors">Acasă</Link>
           <span className="mx-1">/</span>
           <span className="text-gray-300">Black Friday {an}</span>
         </nav>
@@ -123,7 +123,7 @@ export default function BlackFridayPage() {
 
           <h1 className="text-4xl md:text-5xl font-black mb-4 leading-tight">
             Black Friday {an}{" "}
-            <span className="text-indigo-400">România</span>
+            <span className="text-[#d8c091]">România</span>
           </h1>
           <p className="text-gray-400 text-lg mb-8 max-w-xl mx-auto">
             Toate ofertele și codurile de reducere Black Friday verificate —
@@ -138,7 +138,7 @@ export default function BlackFridayPage() {
               { val: `${totalCoduri}+`, label: "Coduri reducere" },
             ].map((s) => (
               <div key={s.label} className="bg-gray-900 border border-gray-800 rounded-2xl py-4 px-3">
-                <div className="text-2xl font-black text-indigo-400">{s.val}</div>
+                <div className="text-2xl font-black text-[#d8c091]">{s.val}</div>
                 <div className="text-xs text-gray-400 mt-0.5">{s.label}</div>
               </div>
             ))}
@@ -177,7 +177,7 @@ export default function BlackFridayPage() {
                 <a
                   key={m.magazin}
                   href={`/cod-reducere/${m.magazin}`}
-                  className="group bg-gray-900 border border-gray-800 hover:border-indigo-500 rounded-2xl p-5 transition-all hover:shadow-lg hover:shadow-cyan-500/10"
+                  className="group bg-gray-900 border border-gray-800 hover:border-[#c9a63e] rounded-2xl p-5 transition-all hover:shadow-lg hover:shadow-[#c9a63e]/10"
                 >
                   <div className="flex items-start gap-4">
                     <div className={`w-12 h-12 rounded-xl ${culoare} flex items-center justify-center text-white font-black text-xl shrink-0`}>
@@ -198,7 +198,7 @@ export default function BlackFridayPage() {
                       <div className="flex items-center gap-2 mb-1 flex-wrap">
                         <span className="font-bold text-white text-sm">{nume}</span>
                         {coduri.length > 0 && (
-                          <span className="text-xs font-bold bg-indigo-600 text-white px-1.5 py-0.5 rounded-full shrink-0">
+                          <span className="text-xs font-bold bg-[#b8912e] text-white px-1.5 py-0.5 rounded-full shrink-0">
                             {coduri.length} COD
                           </span>
                         )}
@@ -219,7 +219,7 @@ export default function BlackFridayPage() {
 
                   <div className="mt-3 flex items-center justify-between">
                     <span className="text-xs text-gray-500">{m.categorie}</span>
-                    <span className="text-xs text-indigo-400 group-hover:text-indigo-300 font-semibold transition-colors">
+                    <span className="text-xs text-[#d8c091] group-hover:text-[#e3d1a6] font-semibold transition-colors">
                       Vezi ofertele →
                     </span>
                   </div>
@@ -270,9 +270,9 @@ export default function BlackFridayPage() {
 
         <footer className="border-t border-gray-800 py-6 text-center text-xs text-gray-600">
           © {an} AmCupon.ro ·{" "}
-          <Link href="/" className="hover:text-indigo-400">Toate reducerile</Link>
+          <Link href="/" className="hover:text-[#d8c091]">Toate reducerile</Link>
           {" · "}
-          <Link href="/contact" className="hover:text-indigo-400">Contact</Link>
+          <Link href="/contact" className="hover:text-[#d8c091]">Contact</Link>
         </footer>
       </div>
     </>

@@ -23,7 +23,7 @@ const GADGET_SLUGS = ["emag.ro", "altex.ro", "flanco.ro", "elefant.ro", "quickmo
 const CAT_GADGET = ["electronics", "telecom", "games", "software", "gadget"];
 
 function numeAfisat(s: string) { return s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" "); }
-const CULORI = ["bg-indigo-600","bg-indigo-500","bg-indigo-600","bg-indigo-600","bg-cyan-500","bg-indigo-600","bg-indigo-600","bg-indigo-600"];
+const CULORI = ["bg-[#b8912e]","bg-[#c9a63e]","bg-[#b8912e]","bg-[#b8912e]","bg-[#c9a63e]","bg-[#b8912e]","bg-[#b8912e]","bg-[#b8912e]"];
 
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Gadgets & Tech — Coduri Reducere 2026","url":"https://amcupon.ro/gadgets" };
 
@@ -52,22 +52,22 @@ export default function GadgetsPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-slate-950">
+      <div className="min-h-screen bg-[#0b0a07]">
 
-        <nav className="bg-slate-950 border-b border-slate-800">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-slate-500 flex-wrap">
-            <Link href="/" className="hover:text-indigo-400 transition-colors">Acasă</Link>
+        <nav className="bg-[#0b0a07] border-b border-[#26211a]">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#8c8064] flex-wrap">
+            <Link href="/" className="hover:text-[#d8c091] transition-colors">Acasă</Link>
             <span className="mx-1 text-gray-300">/</span>
-            <span className="text-slate-300 font-medium">Gadgets & Tech</span>
+            <span className="text-[#c8bda2] font-medium">Gadgets & Tech</span>
           </div>
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-indigo-700 via-blue-700 to-cyan-700 text-white py-12 px-4">
+        <section className="bg-gradient-to-br from-[#9c7a26] via-blue-700 to-[#8a6a1e] text-white py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">📡</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Gadgets & Tech {an}</h1>
-            <p className="text-indigo-100 text-lg mb-8 max-w-xl mx-auto">
+            <p className="text-[#efe3c6] text-lg mb-8 max-w-xl mx-auto">
               Smartwatch-uri, căști wireless, drone, smart home — coduri de reducere verificate pentru tot ce e nou în tech
             </p>
             <div className="grid grid-cols-3 gap-4 max-w-sm mx-auto">
@@ -86,7 +86,7 @@ export default function GadgetsPage() {
         </section>
 
         {/* CATEGORII GADGET */}
-        <section className="bg-white border-b border-slate-800 py-6 px-4">
+        <section className="bg-white border-b border-[#26211a] py-6 px-4">
           <div className="max-w-6xl mx-auto">
             <div className="flex flex-wrap gap-2 justify-center">
               {[
@@ -100,7 +100,7 @@ export default function GadgetsPage() {
                 { emoji:"📱", label:"Telefoane", href:"/blog/cel-mai-bun-telefon-pentru-poze-2026" },
               ].map(c => (
                 <a key={c.label} href={c.href}
-                  className="flex items-center gap-2 bg-slate-900 hover:bg-blue-100 text-blue-800 font-semibold text-sm px-4 py-2 rounded-full transition-colors border border-blue-200">
+                  className="flex items-center gap-2 bg-[#15120c] hover:bg-blue-100 text-blue-800 font-semibold text-sm px-4 py-2 rounded-full transition-colors border border-blue-200">
                   <span>{c.emoji}</span>{c.label}
                 </a>
               ))}
@@ -122,10 +122,10 @@ export default function GadgetsPage() {
                   const promo = m.promotii[0];
                   return (
                     <a key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                      className="group bg-slate-900 border border-slate-800 hover:border-indigo-500/40 rounded-2xl p-5 transition-all hover:shadow-md">
+                      className="group bg-[#15120c] border border-[#26211a] hover:border-[#c9a63e]/40 rounded-2xl p-5 transition-all hover:shadow-md">
                       <div className="flex items-center gap-3 mb-3">
                         {m.logo_url ? (
-                          <div className="w-10 h-10 rounded-xl overflow-hidden bg-white border border-slate-800 shrink-0">
+                          <div className="w-10 h-10 rounded-xl overflow-hidden bg-white border border-[#26211a] shrink-0">
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img src={m.logo_url} alt={`Logo ${nume}`} className="w-full h-full object-contain" loading="lazy" />
                           </div>
@@ -139,9 +139,9 @@ export default function GadgetsPage() {
                           {m.cod_cupon && <span className="text-xs text-blue-600 font-bold">COD REDUCERE</span>}
                         </div>
                       </div>
-                      {promo && <p className="text-slate-400 text-xs line-clamp-2 mb-2">{promo.nume}</p>}
+                      {promo && <p className="text-[#a89a78] text-xs line-clamp-2 mb-2">{promo.nume}</p>}
                       <div className="flex justify-between items-center">
-                        <span className="text-xs text-slate-500">{m.promotii.length} oferte</span>
+                        <span className="text-xs text-[#8c8064]">{m.promotii.length} oferte</span>
                         <span className="text-xs text-blue-500 font-semibold group-hover:text-blue-600">Vezi →</span>
                       </div>
                     </a>
@@ -160,7 +160,7 @@ export default function GadgetsPage() {
                 const culoare = CULORI[i % CULORI.length];
                 return (
                   <a key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                    className="flex items-center gap-3 bg-slate-900 border border-slate-800 hover:border-indigo-500/40 rounded-xl p-3 transition-all group">
+                    className="flex items-center gap-3 bg-[#15120c] border border-[#26211a] hover:border-[#c9a63e]/40 rounded-xl p-3 transition-all group">
                     {m.logo_url ? (
                       <div className="w-8 h-8 rounded-lg overflow-hidden bg-white shrink-0">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -171,7 +171,7 @@ export default function GadgetsPage() {
                         {nume[0]}
                       </div>
                     )}
-                    <span className="text-sm font-semibold text-slate-300 group-hover:text-blue-600 transition-colors truncate">{nume}</span>
+                    <span className="text-sm font-semibold text-[#c8bda2] group-hover:text-blue-600 transition-colors truncate">{nume}</span>
                   </a>
                 );
               })}
@@ -179,12 +179,12 @@ export default function GadgetsPage() {
           </section>
 
           {/* ARTICOLE */}
-          <section className="bg-slate-900 rounded-2xl p-6">
+          <section className="bg-[#15120c] rounded-2xl p-6">
             <h2 className="text-lg font-black text-white mb-4">📖 Ghiduri & Recenzii Gadgets</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {ARTICOLE_GADGET.map(a => (
                 <a key={a.href} href={a.href}
-                  className="flex items-center gap-2 bg-white rounded-xl px-4 py-3 text-sm font-semibold text-slate-300 hover:text-blue-600 hover:border-indigo-500/40 border border-slate-800 transition-all group">
+                  className="flex items-center gap-2 bg-white rounded-xl px-4 py-3 text-sm font-semibold text-[#c8bda2] hover:text-blue-600 hover:border-[#c9a63e]/40 border border-[#26211a] transition-all group">
                   <span className="text-blue-400 group-hover:text-blue-500">→</span>
                   {a.title}
                 </a>
@@ -202,7 +202,7 @@ export default function GadgetsPage() {
         />
 
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-slate-300 mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-[#c8bda2] mb-4">Exploreaza si alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/electronice", label: "💻 Electronice" },
@@ -213,17 +213,17 @@ export default function GadgetsPage() {
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-slate-900 hover:bg-slate-800 hover:text-indigo-300 text-slate-300 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-slate-800 hover:border-cyan-200">
+                className="bg-[#15120c] hover:bg-[#26211a] hover:text-[#e3d1a6] text-[#c8bda2] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#26211a] hover:border-[#e6d5a8]">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-slate-800 py-6 text-center text-xs text-slate-500 mt-4">
-          © {an} AmCupon.ro · <Link href="/" className="hover:text-indigo-400">Acasă</Link>
-          {" · "}<Link href="/black-friday" className="hover:text-indigo-400">Black Friday</Link>
-          {" · "}<Link href="/moto" className="hover:text-indigo-400">Auto-Moto</Link>
+        <footer className="border-t border-[#26211a] py-6 text-center text-xs text-[#8c8064] mt-4">
+          © {an} AmCupon.ro · <Link href="/" className="hover:text-[#d8c091]">Acasă</Link>
+          {" · "}<Link href="/black-friday" className="hover:text-[#d8c091]">Black Friday</Link>
+          {" · "}<Link href="/moto" className="hover:text-[#d8c091]">Auto-Moto</Link>
         </footer>
       </div>
     </>

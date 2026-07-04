@@ -8,24 +8,24 @@ export const metadata: Metadata = {
 
 export default function ConfidentialitatePage() {
   return (
-    <div className="min-h-screen bg-slate-950">
-      <header className="bg-slate-950 border-b border-slate-800">
+    <div className="min-h-screen bg-[#0b0a07]">
+      <header className="bg-[#0b0a07] border-b border-[#26211a]">
         <div className="max-w-4xl mx-auto px-4 py-3 flex items-center gap-2">
           <Link href="/" className="flex items-center gap-1.5">
-            <div className="bg-indigo-600 text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
+            <div className="bg-[#b8912e] text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
             <span className="font-black text-white text-xl">Cupon</span>
-            <span className="text-indigo-400 font-black text-xl">.ro</span>
+            <span className="text-[#d8c091] font-black text-xl">.ro</span>
           </Link>
-          <span className="text-slate-600 mx-1">/</span>
-          <span className="text-sm font-semibold text-slate-400">Politică de Confidențialitate</span>
+          <span className="text-[#473d28] mx-1">/</span>
+          <span className="text-sm font-semibold text-[#a89a78]">Politică de Confidențialitate</span>
         </div>
       </header>
 
       <div className="max-w-4xl mx-auto px-4 py-10">
         <h1 className="text-3xl font-black text-white mb-2">Politică de Confidențialitate</h1>
-        <p className="text-sm text-slate-500 mb-8">Ultima actualizare: Mai 2026 · Conform GDPR (Regulamentul UE 2016/679)</p>
+        <p className="text-sm text-[#8c8064] mb-8">Ultima actualizare: Mai 2026 · Conform GDPR (Regulamentul UE 2016/679)</p>
 
-        <div className="bg-slate-900 rounded-2xl border border-slate-800 p-8 space-y-8 text-slate-300 leading-relaxed">
+        <div className="bg-[#15120c] rounded-2xl border border-[#26211a] p-8 space-y-8 text-[#c8bda2] leading-relaxed">
 
           <section>
             <h2 className="text-xl font-black text-white mb-3">1. Cine suntem (Operatorul de date)</h2>
@@ -35,7 +35,7 @@ export default function ConfidentialitatePage() {
             </p>
             <p className="mt-2">
               <strong>Contact:</strong>{" "}
-              <a href="mailto:contact@amcupon.ro" className="text-indigo-400 hover:underline">contact@amcupon.ro</a>
+              <a href="mailto:contact@amcupon.ro" className="text-[#d8c091] hover:underline">contact@amcupon.ro</a>
               <br />
               <strong>Website:</strong> https://amcupon.ro
             </p>
@@ -56,10 +56,10 @@ export default function ConfidentialitatePage() {
             <h2 className="text-xl font-black text-white mb-3">3. Scopul prelucrării datelor</h2>
             <table className="w-full text-sm border-collapse">
               <thead>
-                <tr className="bg-slate-800">
-                  <th className="text-left p-3 border border-slate-800 font-bold">Date</th>
-                  <th className="text-left p-3 border border-slate-800 font-bold">Scop</th>
-                  <th className="text-left p-3 border border-slate-800 font-bold">Temei legal</th>
+                <tr className="bg-[#26211a]">
+                  <th className="text-left p-3 border border-[#26211a] font-bold">Date</th>
+                  <th className="text-left p-3 border border-[#26211a] font-bold">Scop</th>
+                  <th className="text-left p-3 border border-[#26211a] font-bold">Temei legal</th>
                 </tr>
               </thead>
               <tbody>
@@ -69,10 +69,10 @@ export default function ConfidentialitatePage() {
                   ["Cookie-uri 2Performant", "Atribuirea comisioanelor afiliate la cumpărăturile efectuate", "Consimțământ (GDPR Art. 6(1)(a))"],
                   ["Adresa de email (dacă ne contactezi)", "Răspunsul la solicitări și suport", "Consimțământ (GDPR Art. 6(1)(a))"],
                 ].map(([d, s, t]) => (
-                  <tr key={d} className="border-b border-slate-800">
-                    <td className="p-3 border border-slate-800 font-medium">{d}</td>
-                    <td className="p-3 border border-slate-800">{s}</td>
-                    <td className="p-3 border border-slate-800 text-xs text-slate-400">{t}</td>
+                  <tr key={d} className="border-b border-[#26211a]">
+                    <td className="p-3 border border-[#26211a] font-medium">{d}</td>
+                    <td className="p-3 border border-[#26211a]">{s}</td>
+                    <td className="p-3 border border-[#26211a] text-xs text-[#a89a78]">{t}</td>
                   </tr>
                 ))}
               </tbody>
@@ -112,7 +112,7 @@ export default function ConfidentialitatePage() {
             </ul>
             <p className="mt-3">
               Pentru exercitarea acestor drepturi, contactează-ne la:{" "}
-              <a href="mailto:contact@amcupon.ro" className="text-indigo-400 hover:underline">contact@amcupon.ro</a>.
+              <a href="mailto:contact@amcupon.ro" className="text-[#d8c091] hover:underline">contact@amcupon.ro</a>.
               Răspundem în maxim <strong>30 de zile</strong>.
             </p>
           </section>
@@ -144,13 +144,13 @@ export default function ConfidentialitatePage() {
             <ul className="list-disc ml-6 mt-2 space-y-1">
               <li>
                 <strong>ANSPDCP</strong> (Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal):{" "}
-                <a href="https://www.dataprotection.ro" target="_blank" rel="noopener noreferrer" className="text-indigo-400 hover:underline">
+                <a href="https://www.dataprotection.ro" target="_blank" rel="noopener noreferrer" className="text-[#d8c091] hover:underline">
                   www.dataprotection.ro
                 </a>
               </li>
               <li>
                 <strong>ANPC:</strong>{" "}
-                <a href="https://anpc.ro" target="_blank" rel="noopener noreferrer" className="text-indigo-400 hover:underline">
+                <a href="https://anpc.ro" target="_blank" rel="noopener noreferrer" className="text-[#d8c091] hover:underline">
                   anpc.ro
                 </a>
               </li>
@@ -169,7 +169,7 @@ export default function ConfidentialitatePage() {
         </div>
 
         <div className="mt-8 text-center">
-          <Link href="/" className="text-sm text-slate-500 hover:text-indigo-400 transition-colors">
+          <Link href="/" className="text-sm text-[#8c8064] hover:text-[#d8c091] transition-colors">
             ← Înapoi la AmCupon.ro
           </Link>
         </div>

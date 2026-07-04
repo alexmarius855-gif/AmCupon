@@ -66,7 +66,7 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
   const promotii = magazin?.promotii || [];
   const hasCod = promotii.some((p) => !!p.cod_cupon);
 
-  const culoare = "bg-gradient-to-br from-indigo-500 to-indigo-700";
+  const culoare = "bg-gradient-to-br from-[#c9a63e] to-[#9c7a26]";
 
   const jsonLd: object[] = [
     {
@@ -91,17 +91,17 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
   }
 
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div className="min-h-screen bg-[#0b0a07]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* ─── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="relative bg-slate-950 overflow-hidden border-b border-slate-800">
-        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(79,70,229,0.12) 0%, transparent 65%)" }} />
+      <section className="relative bg-[#0b0a07] overflow-hidden border-b border-[#26211a]">
+        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(184,145,46,0.12) 0%, transparent 65%)" }} />
         <div className="relative max-w-4xl mx-auto px-4 pt-12 pb-14 text-center">
-          <nav className="flex justify-center gap-2 text-xs text-slate-500 mb-8">
-            <Link href="/" className="hover:text-slate-300">AmCupon.ro</Link>
+          <nav className="flex justify-center gap-2 text-xs text-[#8c8064] mb-8">
+            <Link href="/" className="hover:text-[#c8bda2]">AmCupon.ro</Link>
             <span>/</span>
-            <span className="text-slate-300">{config.name}</span>
+            <span className="text-[#c8bda2]">{config.name}</span>
           </nav>
 
           {/* Logo / initial */}
@@ -117,19 +117,19 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
           </div>
 
           <h1 className="text-4xl md:text-5xl font-black text-white mb-3">
-            Reduceri <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #8b5cf6, #22d3ee)" }}>{config.name}</span>
+            Reduceri <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #8b5cf6, #b8912e)" }}>{config.name}</span>
           </h1>
-          <p className="text-slate-400 text-lg mb-6">{config.tagline}</p>
+          <p className="text-[#a89a78] text-lg mb-6">{config.tagline}</p>
 
           {/* Stats row */}
           <div className="flex flex-wrap justify-center gap-6 text-sm mb-8">
             <div className="text-center">
               <div className="font-black text-white text-2xl">{promotii.length}</div>
-              <div className="text-slate-500 text-xs mt-0.5">Oferte active</div>
+              <div className="text-[#8c8064] text-xs mt-0.5">Oferte active</div>
             </div>
             <div className="text-center">
               <div className="font-black text-white text-2xl">{promotii.filter(p => !!p.cod_cupon).length}</div>
-              <div className="text-slate-500 text-xs mt-0.5">Coduri reducere</div>
+              <div className="text-[#8c8064] text-xs mt-0.5">Coduri reducere</div>
             </div>
           </div>
 
@@ -137,12 +137,12 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
           <div className="flex flex-wrap justify-center gap-3">
             {magazin?.url_afiliat && (
               <a href={magazin.url_afiliat} target="_blank" rel="sponsored noopener noreferrer"
-                className="bg-indigo-600 hover:bg-indigo-500 text-white font-black px-7 py-3 rounded-2xl text-sm transition-all shadow-lg shadow-cyan-500/25 hover:-translate-y-0.5 duration-200">
+                className="bg-[#b8912e] hover:bg-[#c9a63e] text-white font-black px-7 py-3 rounded-2xl text-sm transition-all shadow-lg shadow-[#c9a63e]/25 hover:-translate-y-0.5 duration-200">
                 Mergi la {config.name} →
               </a>
             )}
             <Link href={`/cod-reducere/${config.slug}`}
-              className="bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-300 font-semibold px-6 py-3 rounded-2xl text-sm transition-colors">
+              className="bg-[#26211a] hover:bg-[#37301f] border border-[#37301f] text-[#c8bda2] font-semibold px-6 py-3 rounded-2xl text-sm transition-colors">
               Toate codurile {config.name}
             </Link>
           </div>
@@ -160,9 +160,9 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
               const discount = extractDiscount(promo.nume) || extractDiscount(promo.descriere || "");
               const urgenta = (promo.zile_ramase ?? 99) <= 2;
               return (
-                <div key={i} className="bg-slate-900 border border-slate-800 hover:border-cyan-500/40 rounded-2xl p-4 flex flex-col gap-3 transition-all hover:shadow-lg">
+                <div key={i} className="bg-[#15120c] border border-[#26211a] hover:border-[#c9a63e]/40 rounded-2xl p-4 flex flex-col gap-3 transition-all hover:shadow-lg">
                   <div className="flex items-start justify-between gap-2">
-                    <p className="text-sm text-slate-200 font-semibold leading-snug flex-1">{promo.nume}</p>
+                    <p className="text-sm text-[#dcd0b8] font-semibold leading-snug flex-1">{promo.nume}</p>
                     <div className="flex flex-col items-end gap-1 shrink-0">
                       {discount > 0 && (
                         <span className="text-xs font-black text-white bg-red-500 px-2 py-0.5 rounded-full">-{discount}%</span>
@@ -174,25 +174,25 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
                   </div>
 
                   {promo.cod_cupon && (
-                    <div className="bg-slate-800 border border-dashed border-cyan-400/50 rounded-xl px-3 py-2 text-center">
-                      <span className="font-mono font-black text-indigo-400 text-base tracking-widest">{promo.cod_cupon}</span>
+                    <div className="bg-[#26211a] border border-dashed border-[#d8c091]/50 rounded-xl px-3 py-2 text-center">
+                      <span className="font-mono font-black text-[#d8c091] text-base tracking-widest">{promo.cod_cupon}</span>
                     </div>
                   )}
 
-                  <div className="flex items-center justify-between mt-auto pt-2 border-t border-slate-800">
+                  <div className="flex items-center justify-between mt-auto pt-2 border-t border-[#26211a]">
                     {urgenta ? (
                       <span className="text-[10px] font-bold text-red-400 flex items-center gap-1">
                         <span className="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse" />
                         {(promo.zile_ramase ?? 0) === 0 ? "Expira azi" : "Expira maine"}
                       </span>
                     ) : (
-                      <span className="text-[10px] text-slate-600">
+                      <span className="text-[10px] text-[#473d28]">
                         {(promo.zile_ramase ?? 99) < 99 ? `${promo.zile_ramase} zile ramase` : ""}
                       </span>
                     )}
                     <a href={promo.landing_page || magazin?.url_afiliat || "#"}
                       target="_blank" rel="sponsored noopener noreferrer"
-                      className="text-xs font-black bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-1.5 rounded-xl transition-colors">
+                      className="text-xs font-black bg-[#b8912e] hover:bg-[#c9a63e] text-white px-4 py-1.5 rounded-xl transition-colors">
                       {promo.cod_cupon ? "Copiaza si mergi" : "Vezi oferta →"}
                     </a>
                   </div>
@@ -205,13 +205,13 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
 
       {promotii.length === 0 && (
         <section className="max-w-5xl mx-auto px-4 py-10">
-          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-8 text-center">
+          <div className="bg-[#15120c] border border-[#26211a] rounded-2xl p-8 text-center">
             <p className="text-3xl mb-3">🔍</p>
-            <p className="font-bold text-slate-200 mb-2">Nu exista oferte active momentan</p>
-            <p className="text-slate-500 text-sm mb-4">Revino maine — actualizam ofertele zilnic de la {config.name}.</p>
+            <p className="font-bold text-[#dcd0b8] mb-2">Nu exista oferte active momentan</p>
+            <p className="text-[#8c8064] text-sm mb-4">Revino maine — actualizam ofertele zilnic de la {config.name}.</p>
             {magazin?.url_afiliat && (
               <a href={magazin.url_afiliat} target="_blank" rel="sponsored noopener noreferrer"
-                className="inline-block bg-indigo-600 text-white font-bold px-6 py-2.5 rounded-xl text-sm hover:bg-indigo-500 transition-colors">
+                className="inline-block bg-[#b8912e] text-white font-bold px-6 py-2.5 rounded-xl text-sm hover:bg-[#c9a63e] transition-colors">
                 Mergi direct la {config.name} →
               </a>
             )}
@@ -226,17 +226,17 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
         </h2>
         <div className="space-y-4">
           {config.editorial.map((para, i) => (
-            <p key={i} className="text-slate-400 leading-relaxed text-sm">{para}</p>
+            <p key={i} className="text-[#a89a78] leading-relaxed text-sm">{para}</p>
           ))}
         </div>
 
         {config.tips.length > 0 && (
-          <div className="mt-8 bg-slate-900 border border-slate-700 rounded-2xl p-5">
+          <div className="mt-8 bg-[#15120c] border border-[#37301f] rounded-2xl p-5">
             <h3 className="font-black text-white mb-4">Sfaturi pentru cumparaturi mai ieftine la {config.name}</h3>
             <ul className="space-y-2.5">
               {config.tips.map((tip, i) => (
-                <li key={i} className="flex items-start gap-2.5 text-sm text-slate-300">
-                  <span className="text-indigo-400 font-black mt-0.5 shrink-0">→</span>
+                <li key={i} className="flex items-start gap-2.5 text-sm text-[#c8bda2]">
+                  <span className="text-[#d8c091] font-black mt-0.5 shrink-0">→</span>
                   {tip}
                 </li>
               ))}
@@ -249,14 +249,14 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
       {config.faq.length > 0 && (
         <section className="max-w-3xl mx-auto px-4 pb-12">
           <h2 className="text-xl font-black text-white mb-5">Intrebari frecvente despre {config.name}</h2>
-          <div className="divide-y divide-slate-800 border border-slate-800 rounded-2xl overflow-hidden">
+          <div className="divide-y divide-[#26211a] border border-[#26211a] rounded-2xl overflow-hidden">
             {config.faq.map((item, i) => (
-              <details key={i} className="group bg-slate-900">
-                <summary className="flex items-center justify-between gap-3 px-5 py-4 cursor-pointer hover:bg-slate-800 transition-colors list-none">
-                  <span className="font-semibold text-slate-200 text-sm">{item.q}</span>
-                  <span className="text-indigo-400 text-lg shrink-0 group-open:rotate-45 transition-transform">+</span>
+              <details key={i} className="group bg-[#15120c]">
+                <summary className="flex items-center justify-between gap-3 px-5 py-4 cursor-pointer hover:bg-[#26211a] transition-colors list-none">
+                  <span className="font-semibold text-[#dcd0b8] text-sm">{item.q}</span>
+                  <span className="text-[#d8c091] text-lg shrink-0 group-open:rotate-45 transition-transform">+</span>
                 </summary>
-                <div className="px-5 pb-4 text-sm text-slate-400 leading-relaxed">{item.a}</div>
+                <div className="px-5 pb-4 text-sm text-[#a89a78] leading-relaxed">{item.a}</div>
               </details>
             ))}
           </div>
@@ -265,16 +265,16 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
 
       {/* ─── CTA NEWSLETTER ──────────────────────────────────────────────── */}
       <section className="max-w-5xl mx-auto px-4 pb-12">
-        <div className="bg-slate-900 border border-slate-700 rounded-3xl p-8 text-center">
+        <div className="bg-[#15120c] border border-[#37301f] rounded-3xl p-8 text-center">
           <p className="text-2xl font-black text-white mb-2">Nu rata urmatoarea oferta {config.name}</p>
-          <p className="text-slate-400 text-sm mb-5">Aboneaza-te la newsletter si primesti codurile noi direct pe email.</p>
+          <p className="text-[#a89a78] text-sm mb-5">Aboneaza-te la newsletter si primesti codurile noi direct pe email.</p>
           <div className="flex flex-wrap justify-center gap-3">
             <Link href="/newsletter"
-              className="bg-indigo-600 hover:bg-indigo-500 text-white font-black px-7 py-3 rounded-2xl text-sm transition-all shadow-lg shadow-cyan-500/20">
+              className="bg-[#b8912e] hover:bg-[#c9a63e] text-white font-black px-7 py-3 rounded-2xl text-sm transition-all shadow-lg shadow-[#c9a63e]/20">
               Aboneaza-te gratuit →
             </Link>
             <Link href="/oferte-azi"
-              className="bg-slate-800 border border-slate-700 hover:bg-slate-700 text-slate-300 font-semibold px-6 py-3 rounded-2xl text-sm transition-colors">
+              className="bg-[#26211a] border border-[#37301f] hover:bg-[#37301f] text-[#c8bda2] font-semibold px-6 py-3 rounded-2xl text-sm transition-colors">
               Toate ofertele de azi
             </Link>
           </div>

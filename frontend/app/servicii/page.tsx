@@ -89,20 +89,20 @@ function getBestPromo(m: Magazin): Promotie {
 // Culoare distincta per categorie de serviciu — niciodata portocaliu
 const CATEG_COLOR: Record<string, { from: string; to: string; text: string; ring: string }> = {
   "Sanatate & Estetica":  { from: "#f43f5e", to: "#ec4899", text: "text-rose-400",    ring: "hover:border-rose-500/30" },
-  "Educatie & Cursuri":   { from: "#8b5cf6", to: "#6366f1", text: "text-violet-400",  ring: "hover:border-violet-500/30" },
-  "Software & SaaS":      { from: "#3b82f6", to: "#6366f1", text: "text-blue-400",    ring: "hover:border-blue-500/30" },
-  "Hosting":              { from: "#06b6d4", to: "#0891b2", text: "text-cyan-400",   ring: "hover:border-cyan-500/30" },
+  "Educatie & Cursuri":   { from: "#8b5cf6", to: "#b8912e", text: "text-violet-400",  ring: "hover:border-violet-500/30" },
+  "Software & SaaS":      { from: "#3b82f6", to: "#b8912e", text: "text-blue-400",    ring: "hover:border-blue-500/30" },
+  "Hosting":              { from: "#06b6d4", to: "#0891b2", text: "text-[#d8c091]",   ring: "hover:border-[#c9a63e]/30" },
   "Telecomunicatii":      { from: "#0ea5e9", to: "#3b82f6", text: "text-sky-400",    ring: "hover:border-sky-500/30" },
   "Financiar":            { from: "#10b981", to: "#059669", text: "text-emerald-400",ring: "hover:border-emerald-500/30" },
 };
 
 const PAGINI_DEDICATE = [
   { href: "/albire-dinti",          emoji: "🦷", name: "Albire Dinti",         sub: "Serviciu estetic",          from: "#f43f5e", to: "#ec4899" },
-  { href: "/cursuri-online",        emoji: "🎓", name: "Cursuri Online",       sub: "Educatie & certificari",    from: "#8b5cf6", to: "#6366f1" },
-  { href: "/software-business",     emoji: "📊", name: "Software Business",    sub: "SaaS cu comision mare",     from: "#3b82f6", to: "#6366f1" },
+  { href: "/cursuri-online",        emoji: "🎓", name: "Cursuri Online",       sub: "Educatie & certificari",    from: "#8b5cf6", to: "#b8912e" },
+  { href: "/software-business",     emoji: "📊", name: "Software Business",    sub: "SaaS cu comision mare",     from: "#3b82f6", to: "#b8912e" },
   { href: "/hosting",               emoji: "🌐", name: "Hosting Web",          sub: "Gazduire site-uri",         from: "#06b6d4", to: "#0891b2" },
   { href: "/vpn",                   emoji: "🔒", name: "VPN & Securitate",     sub: "NordVPN, Surfshark",        from: "#1e40af", to: "#3730a3" },
-  { href: "/ai-tools",              emoji: "🤖", name: "AI Tools",             sub: "Unelte AI pentru munca",    from: "#a855f7", to: "#6366f1" },
+  { href: "/ai-tools",              emoji: "🤖", name: "AI Tools",             sub: "Unelte AI pentru munca",    from: "#a855f7", to: "#b8912e" },
   { href: "/trading",               emoji: "📈", name: "Trading & Investitii", sub: "XTB, Binance, eToro",       from: "#10b981", to: "#059669" },
   { href: "/instrumente-seo",       emoji: "📊", name: "Instrumente SEO",      sub: "Semrush, Ahrefs, Moz",      from: "#0d9488", to: "#0891b2" },
   { href: "/carduri-bancare",       emoji: "💳", name: "Carduri Bancare",      sub: "Conturi & carduri online",  from: "#0ea5e9", to: "#2563eb" },
@@ -129,27 +129,27 @@ export default function ServiciiPage() {
   const ordineCateg = ["Sanatate & Estetica", "Educatie & Cursuri", "Software & SaaS", "Hosting", "Telecomunicatii", "Financiar"];
 
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div className="min-h-screen bg-[#0b0a07]">
       {/* Hero */}
-      <section className="relative bg-slate-950 border-b border-slate-800 overflow-hidden">
+      <section className="relative bg-[#0b0a07] border-b border-[#26211a] overflow-hidden">
         <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 60% 50% at 20% 0%, rgba(139,92,246,0.10) 0%, transparent 60%), radial-gradient(ellipse 60% 50% at 80% 10%, rgba(16,185,129,0.10) 0%, transparent 60%), radial-gradient(ellipse 50% 40% at 50% 100%, rgba(6,182,212,0.08) 0%, transparent 60%)" }} />
         <div className="relative max-w-5xl mx-auto px-4 pt-12 pb-10 text-center">
-          <nav className="flex justify-center gap-2 text-xs text-slate-500 mb-8">
-            <Link href="/" className="hover:text-slate-300">AmCupon.ro</Link>
+          <nav className="flex justify-center gap-2 text-xs text-[#8c8064] mb-8">
+            <Link href="/" className="hover:text-[#c8bda2]">AmCupon.ro</Link>
             <span>/</span>
-            <span className="text-slate-300">Servicii</span>
+            <span className="text-[#c8bda2]">Servicii</span>
           </nav>
           <div className="text-5xl mb-4">⚙️</div>
           <h1 className="text-4xl md:text-5xl font-black text-white mb-4">
             Servicii cu <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #8b5cf6, #06b6d4, #10b981)" }}>Reducere</span>
           </h1>
-          <p className="text-slate-400 text-lg max-w-2xl mx-auto mb-6">
+          <p className="text-[#a89a78] text-lg max-w-2xl mx-auto mb-6">
             Coduri de reducere la servicii online verificate zilnic: sanatate si estetica, cursuri, software, hosting, telecomunicatii. Tot ce folosesti, mai ieftin.
           </p>
           <div className="flex flex-wrap justify-center gap-2">
             {ordineCateg.map(c => (
               <a key={c} href={`#${c.toLowerCase().replace(/[^a-z]/g, "-")}`}
-                className="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1.5 rounded-full border border-slate-700 transition-colors">
+                className="text-xs bg-[#26211a] hover:bg-[#37301f] text-[#c8bda2] px-3 py-1.5 rounded-full border border-[#37301f] transition-colors">
                 {c}
               </a>
             ))}
@@ -159,7 +159,7 @@ export default function ServiciiPage() {
 
       {/* Servicii speciale cu pagini dedicate */}
       <section className="max-w-5xl mx-auto px-4 py-8">
-        <p className="text-xs text-slate-400 font-bold mb-3 uppercase tracking-wider">Pagini dedicate</p>
+        <p className="text-xs text-[#a89a78] font-bold mb-3 uppercase tracking-wider">Pagini dedicate</p>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           {PAGINI_DEDICATE.map(item => (
             <Link key={item.href} href={item.href}
@@ -185,7 +185,7 @@ export default function ServiciiPage() {
 
         return (
           <section key={categLabel} id={categLabel.toLowerCase().replace(/[^a-z]/g, "-")}
-            className="max-w-5xl mx-auto px-4 py-8 border-t border-slate-800">
+            className="max-w-5xl mx-auto px-4 py-8 border-t border-[#26211a]">
             <h2 className="text-xl font-black text-white mb-5 flex items-center gap-3">
               <span className="w-9 h-9 rounded-xl flex items-center justify-center text-lg shrink-0"
                 style={{ background: `linear-gradient(135deg, ${culoare.from}, ${culoare.to})` }}>
@@ -203,25 +203,25 @@ export default function ServiciiPage() {
                 const arePromo = mag.are_promotie && mag.promotii.some(p => (p.zile_ramase ?? 99) >= 0);
 
                 return (
-                  <div key={mag.magazin} className={`bg-slate-900 border border-slate-800 ${culoare.ring} rounded-xl p-5 flex flex-col gap-3 transition-all`}>
+                  <div key={mag.magazin} className={`bg-[#15120c] border border-[#26211a] ${culoare.ring} rounded-xl p-5 flex flex-col gap-3 transition-all`}>
                     <div className="flex items-start justify-between gap-2">
                       <div>
                         <div className="flex items-center gap-2 mb-0.5">
                           <span className="text-white font-black text-sm">{mag.magazin.split(".")[0].charAt(0).toUpperCase() + mag.magazin.split(".")[0].slice(1)}</span>
-                          {arePromo && <span className={`text-[10px] bg-slate-800 ${culoare.text} border border-slate-700 px-1.5 py-0.5 rounded-full font-bold`}>Activ</span>}
+                          {arePromo && <span className={`text-[10px] bg-[#26211a] ${culoare.text} border border-[#37301f] px-1.5 py-0.5 rounded-full font-bold`}>Activ</span>}
                         </div>
-                        <p className="text-slate-500 text-xs">{info.desc}</p>
+                        <p className="text-[#8c8064] text-xs">{info.desc}</p>
                       </div>
                       {mag.comision && <span className={`${culoare.text} text-xs font-bold shrink-0`}>{mag.comision.replace(" sale commission", "").replace(" % sale commission", "%")}</span>}
                     </div>
 
                     {descriere && (
-                      <p className="text-slate-300 text-xs line-clamp-2">{descriere}</p>
+                      <p className="text-[#c8bda2] text-xs line-clamp-2">{descriere}</p>
                     )}
 
                     {cod && (
-                      <div className="bg-slate-800 border border-dashed border-slate-600 rounded-lg px-3 py-2 text-center">
-                        <p className="text-[10px] text-slate-500 mb-0.5">Cod reducere</p>
+                      <div className="bg-[#26211a] border border-dashed border-[#473d28] rounded-lg px-3 py-2 text-center">
+                        <p className="text-[10px] text-[#8c8064] mb-0.5">Cod reducere</p>
                         <p className={`font-mono font-black ${culoare.text} text-sm tracking-wider`}>{cod}</p>
                       </div>
                     )}
@@ -233,7 +233,7 @@ export default function ServiciiPage() {
                     </a>
 
                     {info.slug_url && (
-                      <Link href={info.slug_url} className="text-[10px] text-slate-600 hover:text-slate-400 text-center transition-colors">
+                      <Link href={info.slug_url} className="text-[10px] text-[#473d28] hover:text-[#a89a78] text-center transition-colors">
                         Ghid complet →
                       </Link>
                     )}
@@ -243,19 +243,19 @@ export default function ServiciiPage() {
 
               {/* Servicii internationale */}
               {itemsIntl.map(item => (
-                <div key={item.name} className={`bg-slate-900 border border-slate-800 ${culoare.ring} rounded-xl p-5 flex flex-col gap-3 transition-all`}>
+                <div key={item.name} className={`bg-[#15120c] border border-[#26211a] ${culoare.ring} rounded-xl p-5 flex flex-col gap-3 transition-all`}>
                   <div className="flex items-start justify-between gap-2">
                     <div>
                       <div className="flex items-center gap-2 mb-0.5">
                         <span className="text-white font-black text-sm">{item.name}</span>
-                        <span className={`text-[10px] bg-slate-800 ${culoare.text} border border-slate-700 px-1.5 py-0.5 rounded-full font-bold`}>International</span>
+                        <span className={`text-[10px] bg-[#26211a] ${culoare.text} border border-[#37301f] px-1.5 py-0.5 rounded-full font-bold`}>International</span>
                       </div>
-                      <p className="text-slate-500 text-xs">{item.desc}</p>
+                      <p className="text-[#8c8064] text-xs">{item.desc}</p>
                     </div>
                     <span className={`${culoare.text} text-xs font-bold shrink-0`}>{item.pret}</span>
                   </div>
 
-                  <p className="text-slate-400 text-xs">{item.comision}</p>
+                  <p className="text-[#a89a78] text-xs">{item.comision}</p>
 
                   <a href={item.url} target="_blank" rel="sponsored noopener noreferrer"
                     className="mt-auto text-white text-xs font-bold py-2.5 rounded-lg text-center transition-all hover:-translate-y-0.5"
@@ -270,21 +270,21 @@ export default function ServiciiPage() {
       })}
 
       {/* CTA aplica la programe */}
-      <section className="max-w-5xl mx-auto px-4 py-10 border-t border-slate-800">
+      <section className="max-w-5xl mx-auto px-4 py-10 border-t border-[#26211a]">
         <div className="relative overflow-hidden rounded-2xl p-7" style={{ background: "linear-gradient(120deg, rgba(139,92,246,0.12), rgba(6,182,212,0.10), rgba(16,185,129,0.10))" }}>
           <div className="absolute inset-0 border border-violet-700/20 rounded-2xl pointer-events-none" />
           <h2 className="text-xl font-black text-white mb-2">Cunosti si alte servicii cu programe de afiliere?</h2>
-          <p className="text-slate-400 text-sm mb-5">
+          <p className="text-[#a89a78] text-sm mb-5">
             AmCupon.ro monitorizeaza automat 900+ magazine si servicii din Romania. Daca gasesti un serviciu cu reduceri active pe care nu il vedem, scrie-ne.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link href="/recomandari"
               className="text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-all hover:-translate-y-0.5"
-              style={{ background: "linear-gradient(135deg, #8b5cf6, #6366f1)" }}>
+              style={{ background: "linear-gradient(135deg, #8b5cf6, #b8912e)" }}>
               Servicii recomandate →
             </Link>
             <Link href="/contact"
-              className="bg-slate-800 hover:bg-slate-700 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-all border border-slate-700">
+              className="bg-[#26211a] hover:bg-[#37301f] text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-all border border-[#37301f]">
               Sugereaza un serviciu
             </Link>
           </div>

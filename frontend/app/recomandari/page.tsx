@@ -77,7 +77,7 @@ const CATEGORII = [
         pret: "de la 3.99€/luna",
         comision: "~75$ per signup",
         badge: "Performanta top",
-        badgeColor: "bg-indigo-500",
+        badgeColor: "bg-[#c9a63e]",
         program: "siteground.com/affiliates",
         url: "https://siteground.com",
         // ACTUALIZARE: https://www.siteground.com/go/TU_ID_SITEGROUND
@@ -97,7 +97,7 @@ const CATEGORII = [
         pret: "de la 99$/luna",
         comision: "200$ per vanzare + 10$ per lead",
         badge: "Comision maxim",
-        badgeColor: "bg-indigo-600",
+        badgeColor: "bg-[#b8912e]",
         program: "semrush.com/lp/inter-affiliate",
         url: "https://semrush.com",
         // ACTUALIZARE: link din programul Impact al Semrush
@@ -216,28 +216,28 @@ const CATEGORII = [
 
 export default function RecomandariPage() {
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div className="min-h-screen bg-[#0b0a07]">
       {/* Hero */}
-      <section className="relative bg-slate-950 border-b border-slate-800 overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(99,102,241,0.08) 0%, transparent 65%)" }} />
+      <section className="relative bg-[#0b0a07] border-b border-[#26211a] overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(184,145,46,0.08) 0%, transparent 65%)" }} />
         <div className="relative max-w-5xl mx-auto px-4 pt-12 pb-12 text-center">
-          <nav className="flex justify-center gap-2 text-xs text-slate-500 mb-8">
-            <Link href="/" className="hover:text-slate-300">AmCupon.ro</Link>
+          <nav className="flex justify-center gap-2 text-xs text-[#8c8064] mb-8">
+            <Link href="/" className="hover:text-[#c8bda2]">AmCupon.ro</Link>
             <span>/</span>
-            <span className="text-slate-300">Recomandari Premium</span>
+            <span className="text-[#c8bda2]">Recomandari Premium</span>
           </nav>
           <div className="text-5xl mb-5">⭐</div>
           <h1 className="text-4xl md:text-5xl font-black text-white mb-4">
-            Servicii <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #8b5cf6, #22d3ee)" }}>Recomandate</span>
+            Servicii <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #8b5cf6, #b8912e)" }}>Recomandate</span>
           </h1>
-          <p className="text-slate-400 text-lg max-w-2xl mx-auto mb-8">
+          <p className="text-[#a89a78] text-lg max-w-2xl mx-auto mb-8">
             VPN, hosting, SEO tools, freelancing si travel — servicii testate si recomandate de echipa AmCupon.ro. Alege ce ti se potriveste.
           </p>
           {/* Jump links */}
           <div className="flex flex-wrap justify-center gap-2">
             {CATEGORII.map((c, i) => (
               <a key={i} href={`#cat-${i}`}
-                className="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1.5 rounded-full border border-slate-700 transition-colors">
+                className="text-xs bg-[#26211a] hover:bg-[#37301f] text-[#c8bda2] px-3 py-1.5 rounded-full border border-[#37301f] transition-colors">
                 {c.emoji} {c.titlu.split(" — ")[0]}
               </a>
             ))}
@@ -247,18 +247,18 @@ export default function RecomandariPage() {
 
       {/* Categorii */}
       {CATEGORII.map((cat, ci) => (
-        <section key={ci} id={`cat-${ci}`} className="max-w-5xl mx-auto px-4 py-10 border-b border-slate-800/50 last:border-b-0">
+        <section key={ci} id={`cat-${ci}`} className="max-w-5xl mx-auto px-4 py-10 border-b border-[#26211a]/50 last:border-b-0">
           <div className="flex items-start justify-between mb-6">
             <div>
               <h2 className="text-2xl font-black text-white flex items-center gap-3">
                 <span className="text-3xl">{cat.emoji}</span>
                 {cat.titlu}
               </h2>
-              <p className="text-slate-400 mt-1 text-sm max-w-2xl">{cat.desc}</p>
+              <p className="text-[#a89a78] mt-1 text-sm max-w-2xl">{cat.desc}</p>
             </div>
             {cat.slug && (
               <Link href={cat.slug}
-                className="text-xs text-indigo-400 hover:text-indigo-300 border border-cyan-500/30 hover:border-cyan-400/50 px-3 py-1.5 rounded-lg transition-all shrink-0 ml-4">
+                className="text-xs text-[#d8c091] hover:text-[#e3d1a6] border border-[#c9a63e]/30 hover:border-[#d8c091]/50 px-3 py-1.5 rounded-lg transition-all shrink-0 ml-4">
                 Ghid complet →
               </Link>
             )}
@@ -266,24 +266,24 @@ export default function RecomandariPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {cat.servicii.map((s, si) => (
-              <div key={si} className="bg-slate-900 border border-slate-800 hover:border-cyan-500/30 rounded-2xl p-6 flex flex-col gap-4 transition-all group">
+              <div key={si} className="bg-[#15120c] border border-[#26211a] hover:border-[#c9a63e]/30 rounded-2xl p-6 flex flex-col gap-4 transition-all group">
                 <div className="flex items-start justify-between gap-3">
                   <div>
                     <div className="flex items-center gap-2 mb-1">
                       <span className="text-xl font-black text-white">{s.name}</span>
                       <span className={`text-[10px] font-black text-white px-2 py-0.5 rounded-full ${s.badgeColor}`}>{s.badge}</span>
                     </div>
-                    <p className="text-slate-400 text-sm">{s.tagline}</p>
+                    <p className="text-[#a89a78] text-sm">{s.tagline}</p>
                   </div>
                   <div className="text-right shrink-0">
-                    <div className="text-indigo-400 font-black text-sm">{s.pret}</div>
+                    <div className="text-[#d8c091] font-black text-sm">{s.pret}</div>
                     <div className="text-emerald-400 text-[10px] font-bold mt-0.5">{s.comision}</div>
                   </div>
                 </div>
 
                 <ul className="space-y-1.5">
                   {s.beneficii.map((b, bi) => (
-                    <li key={bi} className="flex items-start gap-2 text-sm text-slate-300">
+                    <li key={bi} className="flex items-start gap-2 text-sm text-[#c8bda2]">
                       <span className="text-emerald-400 shrink-0 mt-0.5">✓</span>
                       {b}
                     </li>
@@ -292,10 +292,10 @@ export default function RecomandariPage() {
 
                 <div className="mt-auto flex flex-col gap-2">
                   <a href={s.url} target="_blank" rel="sponsored noopener noreferrer"
-                    className="bg-indigo-600 hover:bg-indigo-500 text-white font-black px-5 py-3 rounded-xl text-sm transition-all text-center shadow-lg shadow-cyan-500/20 hover:-translate-y-0.5 duration-200">
+                    className="bg-[#b8912e] hover:bg-[#c9a63e] text-white font-black px-5 py-3 rounded-xl text-sm transition-all text-center shadow-lg shadow-[#c9a63e]/20 hover:-translate-y-0.5 duration-200">
                     Incearca {s.name} →
                   </a>
-                  <p className="text-[10px] text-slate-600 text-center">Program afiliere: {s.program}</p>
+                  <p className="text-[10px] text-[#473d28] text-center">Program afiliere: {s.program}</p>
                 </div>
               </div>
             ))}
@@ -305,8 +305,8 @@ export default function RecomandariPage() {
 
       {/* Disclaimer */}
       <section className="max-w-5xl mx-auto px-4 pb-12 pt-4">
-        <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-5 text-center">
-          <p className="text-slate-500 text-xs">
+        <div className="bg-[#15120c]/50 border border-[#26211a] rounded-2xl p-5 text-center">
+          <p className="text-[#8c8064] text-xs">
             Unele linkuri de pe aceasta pagina sunt linkuri de afiliat — daca faci o achizitie, AmCupon.ro primeste un comision, fara niciun cost suplimentar pentru tine.
             Recomandam doar servicii pe care le-am testat sau verificat independent. Comisioanele arata afiseaza nu sunt garantate — variaza in functie de programul fiecarui partener.
           </p>

@@ -97,14 +97,14 @@ const CONTURI = [
     ],
     dezavantaje: ["Suport mai limitat in romana", "Retrageri numerar limitate gratuit pe luna"],
     ideal: "Studenti si lucratori in UE, cont secundar in euro",
-    culoare: "from-teal-700 to-cyan-900",
+    culoare: "from-teal-700 to-[#2e2410]",
   },
   {
     rank: 4,
     name: "Salt Bank",
     tagline: "Banca 100% digitala romaneasca — dobanda la cash, fara birou fizic",
     badge: "100% Romanesc",
-    badgeColor: "bg-indigo-600",
+    badgeColor: "bg-[#b8912e]",
     emoji: "🧂",
     cost: "Gratuit",
     rating: "8.7",
@@ -118,7 +118,7 @@ const CONTURI = [
     ],
     dezavantaje: ["Fara optiuni de investitii inca", "Ecosistem mai tanar, mai putine functii"],
     ideal: "Romani care vor banking 100% digital, in limba romana",
-    culoare: "from-indigo-600 to-violet-800",
+    culoare: "from-[#b8912e] to-violet-800",
   },
 ];
 
@@ -136,18 +136,18 @@ export default function CarduriBancarePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <div className="min-h-screen bg-slate-950">
+      <div className="min-h-screen bg-[#0b0a07]">
 
-        <nav className="bg-slate-900/80 backdrop-blur-sm border-b border-slate-800">
-          <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-1.5 text-xs text-slate-500">
-            <Link href="/" className="hover:text-indigo-400 transition-colors">Acasa</Link>
+        <nav className="bg-[#15120c]/80 backdrop-blur-sm border-b border-[#26211a]">
+          <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-1.5 text-xs text-[#8c8064]">
+            <Link href="/" className="hover:text-[#d8c091] transition-colors">Acasa</Link>
             <span>/</span>
-            <span className="text-slate-300 font-medium">Carduri & Conturi Bancare</span>
+            <span className="text-[#c8bda2] font-medium">Carduri & Conturi Bancare</span>
           </div>
         </nav>
 
         {/* Hero */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-violet-950 via-slate-900 to-emerald-950 py-16 px-4">
+        <section className="relative overflow-hidden bg-gradient-to-br from-violet-950 via-[#15120c] to-emerald-950 py-16 px-4">
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute top-0 left-1/4 w-96 h-96 bg-violet-600/15 rounded-full blur-3xl" />
             <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-emerald-600/15 rounded-full blur-3xl" />
@@ -164,7 +164,7 @@ export default function CarduriBancarePage() {
                 {an}
               </span>
             </h1>
-            <p className="text-slate-300 text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-[#c8bda2] text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
               Revolut, Wise, N26, Salt Bank — comparatie completa pentru romani. Carduri gratuite, schimb valutar fara comision, transferuri internationale ieftine.
             </p>
             <div className="flex flex-wrap justify-center gap-2">
@@ -180,12 +180,12 @@ export default function CarduriBancarePage() {
           <div className="text-center mb-10">
             <p className="text-xs font-bold text-violet-400 uppercase tracking-widest mb-2">COMPARATIE CONTURI</p>
             <h2 className="text-3xl font-black text-white">Top 4 conturi bancare digitale pentru romani</h2>
-            <p className="text-slate-400 text-sm mt-2">Testate personal — actualizat {an}</p>
+            <p className="text-[#a89a78] text-sm mt-2">Testate personal — actualizat {an}</p>
           </div>
 
           <div className="space-y-6">
             {CONTURI.map((c) => (
-              <div key={c.name} className="bg-slate-900 border border-slate-800 hover:border-slate-700 rounded-3xl overflow-hidden transition-all duration-200">
+              <div key={c.name} className="bg-[#15120c] border border-[#26211a] hover:border-[#37301f] rounded-3xl overflow-hidden transition-all duration-200">
                 <div className={`bg-gradient-to-r ${c.culoare} p-6`}>
                   <div className="flex items-start justify-between gap-4">
                     <div className="flex items-center gap-4">
@@ -206,17 +206,17 @@ export default function CarduriBancarePage() {
                 </div>
 
                 <div className="p-6">
-                  <div className="bg-slate-800/50 rounded-xl p-3 text-center mb-5 max-w-xs">
-                    <p className="text-xs text-slate-500 mb-1">Cost cont</p>
+                  <div className="bg-[#26211a]/50 rounded-xl p-3 text-center mb-5 max-w-xs">
+                    <p className="text-xs text-[#8c8064] mb-1">Cost cont</p>
                     <p className="text-emerald-400 font-bold text-sm">{c.cost}</p>
                   </div>
 
                   <div className="grid sm:grid-cols-2 gap-4 mb-5">
                     <div>
-                      <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Avantaje</p>
+                      <p className="text-xs font-bold text-[#8c8064] uppercase tracking-wider mb-2">Avantaje</p>
                       <ul className="space-y-1.5">
                         {c.avantaje.map(a => (
-                          <li key={a} className="flex items-start gap-2 text-sm text-slate-300">
+                          <li key={a} className="flex items-start gap-2 text-sm text-[#c8bda2]">
                             <span className="text-emerald-400 mt-0.5 shrink-0">✓</span>
                             {a}
                           </li>
@@ -224,17 +224,17 @@ export default function CarduriBancarePage() {
                       </ul>
                     </div>
                     <div>
-                      <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">De stiut</p>
+                      <p className="text-xs font-bold text-[#8c8064] uppercase tracking-wider mb-2">De stiut</p>
                       <ul className="space-y-1.5">
                         {c.dezavantaje.map(d => (
-                          <li key={d} className="flex items-start gap-2 text-sm text-slate-400">
+                          <li key={d} className="flex items-start gap-2 text-sm text-[#a89a78]">
                             <span className="text-amber-400 mt-0.5 shrink-0">!</span>
                             {d}
                           </li>
                         ))}
                       </ul>
-                      <div className="mt-4 bg-slate-800 rounded-xl p-3">
-                        <p className="text-xs text-slate-500">Ideal pentru</p>
+                      <div className="mt-4 bg-[#26211a] rounded-xl p-3">
+                        <p className="text-xs text-[#8c8064]">Ideal pentru</p>
                         <p className="text-white text-sm font-semibold mt-0.5">{c.ideal}</p>
                       </div>
                     </div>
@@ -242,11 +242,11 @@ export default function CarduriBancarePage() {
 
                   <div className="flex flex-col sm:flex-row gap-3">
                     <a href={c.url} target="_blank" rel="nofollow noopener noreferrer"
-                      className="flex-1 bg-indigo-600 hover:bg-indigo-500 text-white font-black text-sm py-3 px-6 rounded-2xl text-center transition-colors">
+                      className="flex-1 bg-[#b8912e] hover:bg-[#c9a63e] text-white font-black text-sm py-3 px-6 rounded-2xl text-center transition-colors">
                       Deschide cont {c.name} gratuit →
                     </a>
                     <a href={c.program_url} target="_blank" rel="nofollow noopener noreferrer"
-                      className="bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-300 hover:text-white font-semibold text-sm py-3 px-5 rounded-2xl text-center transition-colors">
+                      className="bg-[#26211a] hover:bg-[#37301f] border border-[#37301f] text-[#c8bda2] hover:text-white font-semibold text-sm py-3 px-5 rounded-2xl text-center transition-colors">
                       Program recomandare
                     </a>
                   </div>
@@ -257,7 +257,7 @@ export default function CarduriBancarePage() {
         </section>
 
         {/* Ghid alegere */}
-        <section className="bg-slate-900 border-t border-b border-slate-800 py-12 px-4">
+        <section className="bg-[#15120c] border-t border-b border-[#26211a] py-12 px-4">
           <div className="max-w-4xl mx-auto">
             <p className="text-xs font-bold text-violet-400 uppercase tracking-widest mb-3">GHID ALEGERE</p>
             <h2 className="text-2xl font-black text-white mb-7">Ce cont sa alegi in {an}?</h2>
@@ -268,10 +268,10 @@ export default function CarduriBancarePage() {
                 { icon: "🇪🇺", titlu: "Lucrezi sau studiezi in UE?", raspuns: "N26 — IBAN german, ideal pentru salarii si plati locale in zona euro." },
                 { icon: "🇷🇴", titlu: "Vrei tot in romana, susitnut de o banca mare?", raspuns: "Salt Bank — 100% digital, dobanda la cash, backing de la Banca Transilvania." },
               ].map(g => (
-                <div key={g.titlu} className="bg-slate-800 border border-slate-700 rounded-2xl p-5">
+                <div key={g.titlu} className="bg-[#26211a] border border-[#37301f] rounded-2xl p-5">
                   <div className="text-2xl mb-3">{g.icon}</div>
                   <h3 className="font-bold text-white text-sm mb-2">{g.titlu}</h3>
-                  <p className="text-xs text-slate-400 leading-relaxed">{g.raspuns}</p>
+                  <p className="text-xs text-[#a89a78] leading-relaxed">{g.raspuns}</p>
                 </div>
               ))}
             </div>
@@ -280,7 +280,7 @@ export default function CarduriBancarePage() {
 
         {/* Related */}
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
+          <p className="text-xs font-bold text-[#8c8064] uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/trading", label: "📈 Trading & Investitii" },
@@ -289,18 +289,18 @@ export default function CarduriBancarePage() {
               { href: "/servicii", label: "⚙️ Servicii Online" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-violet-500/40 text-slate-300 hover:text-white text-sm font-semibold px-4 py-2 rounded-xl transition-all duration-200">
+                className="bg-[#26211a] hover:bg-[#37301f] border border-[#37301f] hover:border-violet-500/40 text-[#c8bda2] hover:text-white text-sm font-semibold px-4 py-2 rounded-xl transition-all duration-200">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-slate-800 py-6 text-center text-xs text-slate-600">
+        <footer className="border-t border-[#26211a] py-6 text-center text-xs text-[#473d28]">
           &copy; {an} AmCupon.ro &middot;{" "}
-          <Link href="/trading" className="hover:text-indigo-400 transition-colors">Trading</Link>{" · "}
-          <Link href="/servicii" className="hover:text-indigo-400 transition-colors">Servicii</Link>{" · "}
-          <Link href="/categorii" className="hover:text-indigo-400 transition-colors">Categorii</Link>
+          <Link href="/trading" className="hover:text-[#d8c091] transition-colors">Trading</Link>{" · "}
+          <Link href="/servicii" className="hover:text-[#d8c091] transition-colors">Servicii</Link>{" · "}
+          <Link href="/categorii" className="hover:text-[#d8c091] transition-colors">Categorii</Link>
         </footer>
       </div>
     </>

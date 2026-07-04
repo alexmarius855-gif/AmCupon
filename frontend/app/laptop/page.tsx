@@ -26,7 +26,7 @@ const BUGETE = [
   { pret: "Sub 2.000 lei", emoji: "💰", desc: "Chromebook, student basic, navigare web", culoare: "bg-emerald-600" },
   { pret: "2.000 – 3.500 lei", emoji: "💻", desc: "Office, multitasking, student productivitate", culoare: "bg-blue-600" },
   { pret: "3.500 – 5.000 lei", emoji: "⚡", desc: "Laptop gaming entry, creatori continut", culoare: "bg-violet-600" },
-  { pret: "Peste 5.000 lei", emoji: "🚀", desc: "Gaming high-end, workstation, MacBook", culoare: "bg-indigo-600" },
+  { pret: "Peste 5.000 lei", emoji: "🚀", desc: "Gaming high-end, workstation, MacBook", culoare: "bg-[#b8912e]" },
 ];
 
 const BRANDURI = [
@@ -39,7 +39,7 @@ const BRANDURI = [
 ];
 
 function numeAfisat(s: string) { return s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" "); }
-const CULORI_BADGE = ["bg-blue-600","bg-indigo-600","bg-violet-600","bg-sky-600","bg-blue-500","bg-indigo-500","bg-teal-600"];
+const CULORI_BADGE = ["bg-blue-600","bg-[#b8912e]","bg-violet-600","bg-sky-600","bg-blue-500","bg-[#c9a63e]","bg-teal-600"];
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Laptop Ieftin Romania 2026","url":"https://amcupon.ro/laptop","description":"Oferte laptopuri Romania 2026 — gaming, business, student la preturi reduse" };
 
 export default function LaptopPage() {
@@ -57,22 +57,22 @@ export default function LaptopPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-slate-950">
+      <div className="min-h-screen bg-[#0b0a07]">
 
         {/* Breadcrumb */}
-        <nav className="bg-slate-900/80 backdrop-blur-sm border-b border-slate-800">
-          <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-1.5 text-xs text-slate-500">
-            <Link href="/" className="hover:text-indigo-400 transition-colors">Acasa</Link>
+        <nav className="bg-[#15120c]/80 backdrop-blur-sm border-b border-[#26211a]">
+          <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-1.5 text-xs text-[#8c8064]">
+            <Link href="/" className="hover:text-[#d8c091] transition-colors">Acasa</Link>
             <span>/</span>
-            <span className="text-slate-300 font-medium">Laptop Ieftin</span>
+            <span className="text-[#c8bda2] font-medium">Laptop Ieftin</span>
           </div>
         </nav>
 
         {/* Hero */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-blue-950 via-slate-900 to-indigo-950 py-16 px-4">
+        <section className="relative overflow-hidden bg-gradient-to-br from-blue-950 via-[#15120c] to-[#1a1408] py-16 px-4">
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute top-0 right-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl" />
-            <div className="absolute bottom-0 left-1/4 w-64 h-64 bg-indigo-600/20 rounded-full blur-3xl" />
+            <div className="absolute bottom-0 left-1/4 w-64 h-64 bg-[#b8912e]/20 rounded-full blur-3xl" />
           </div>
           <div className="relative max-w-6xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-blue-500/20 border border-blue-500/30 text-blue-300 text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
@@ -81,9 +81,9 @@ export default function LaptopPage() {
             </div>
             <div className="text-6xl mb-5 drop-shadow-2xl">💻</div>
             <h1 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">
-              Laptop Ieftin Romania <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #60a5fa, #818cf8)"}}>{an}</span>
+              Laptop Ieftin Romania <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #60a5fa, #e3d1a6)"}}>{an}</span>
             </h1>
-            <p className="text-slate-300 text-lg mb-8 max-w-xl mx-auto leading-relaxed">
+            <p className="text-[#c8bda2] text-lg mb-8 max-w-xl mx-auto leading-relaxed">
               Gaming, business, student — cele mai bune oferte laptopuri cu reduceri verificate zilnic
             </p>
             <div className="flex flex-wrap justify-center gap-2">
@@ -102,10 +102,10 @@ export default function LaptopPage() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {BUGETE.map(b => (
-              <div key={b.pret} className="bg-slate-900 border border-slate-800 hover:border-blue-500/40 rounded-2xl p-5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-blue-500/10">
+              <div key={b.pret} className="bg-[#15120c] border border-[#26211a] hover:border-blue-500/40 rounded-2xl p-5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-blue-500/10">
                 <div className={`w-11 h-11 ${b.culoare} rounded-xl flex items-center justify-center text-2xl mb-4`}>{b.emoji}</div>
                 <h3 className="font-black text-white text-base mb-1.5">{b.pret}</h3>
-                <p className="text-xs text-slate-400 leading-relaxed">{b.desc}</p>
+                <p className="text-xs text-[#a89a78] leading-relaxed">{b.desc}</p>
               </div>
             ))}
           </div>
@@ -115,7 +115,7 @@ export default function LaptopPage() {
         <section className="max-w-6xl mx-auto px-4 pb-12">
           <div className="flex items-center justify-between mb-6">
             <div>
-              <p className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-1">MAGAZINE PARTENERE</p>
+              <p className="text-xs font-bold text-[#d8c091] uppercase tracking-widest mb-1">MAGAZINE PARTENERE</p>
               <h2 className="text-xl font-black text-white">Magazine laptopuri cu reduceri active</h2>
             </div>
           </div>
@@ -126,7 +126,7 @@ export default function LaptopPage() {
               const promo = m.promotii[0];
               return (
                 <a key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                  className="group bg-slate-900 border border-slate-800 hover:border-blue-500/50 rounded-2xl p-4 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-blue-500/10">
+                  className="group bg-[#15120c] border border-[#26211a] hover:border-blue-500/50 rounded-2xl p-4 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-blue-500/10">
                   <div className="flex items-center gap-3 mb-3">
                     {m.logo_url ? (
                       <div className="w-10 h-10 rounded-xl overflow-hidden bg-white flex items-center justify-center shrink-0">
@@ -138,14 +138,14 @@ export default function LaptopPage() {
                     )}
                     <div>
                       <p className="font-bold text-white text-sm group-hover:text-blue-300 transition-colors">{nume}</p>
-                      {m.are_promotie && m.cod_cupon && <span className="text-[10px] font-black text-indigo-400 bg-cyan-500/10 border border-cyan-500/20 px-1.5 py-0.5 rounded-full">COD</span>}
+                      {m.are_promotie && m.cod_cupon && <span className="text-[10px] font-black text-[#d8c091] bg-[#c9a63e]/10 border border-[#c9a63e]/20 px-1.5 py-0.5 rounded-full">COD</span>}
                       {m.are_promotie && !m.cod_cupon && <span className="text-[10px] font-medium text-emerald-400">Oferta activa</span>}
                     </div>
                   </div>
                   {promo ? (
-                    <p className="text-slate-400 text-xs line-clamp-2 leading-relaxed">{promo.nume}</p>
+                    <p className="text-[#a89a78] text-xs line-clamp-2 leading-relaxed">{promo.nume}</p>
                   ) : (
-                    <p className="text-slate-600 text-xs italic">Verifica ofertele curente</p>
+                    <p className="text-[#473d28] text-xs italic">Verifica ofertele curente</p>
                   )}
                   <div className="flex justify-end mt-3">
                     <span className="text-xs text-blue-400 font-semibold group-hover:text-blue-300 flex items-center gap-1">
@@ -167,25 +167,25 @@ export default function LaptopPage() {
         />
 
         {/* Ghid */}
-        <section className="bg-slate-900 border-t border-slate-800 py-12 px-4">
+        <section className="bg-[#15120c] border-t border-[#26211a] py-12 px-4">
           <div className="max-w-3xl mx-auto">
             <p className="text-xs font-bold text-blue-400 uppercase tracking-widest mb-3">GHID CUMPARATURI</p>
             <h2 className="text-2xl font-black text-white mb-7">Ce laptop sa cumperi in {an}</h2>
             <div className="space-y-5">
-              <div className="bg-slate-800 border border-slate-700 rounded-2xl p-5">
+              <div className="bg-[#26211a] border border-[#37301f] rounded-2xl p-5">
                 <h3 className="font-bold text-white mb-3 text-base">Cele mai bune branduri laptop in {an}</h3>
                 <div className="grid sm:grid-cols-2 gap-3">
                   {BRANDURI.map(b => (
-                    <div key={b.brand} className="bg-slate-900 border border-slate-700 rounded-xl p-3">
+                    <div key={b.brand} className="bg-[#15120c] border border-[#37301f] rounded-xl p-3">
                       <p className="font-bold text-white text-xs mb-1">{b.brand}</p>
-                      <p className="text-xs text-slate-400">{b.desc}</p>
+                      <p className="text-xs text-[#a89a78]">{b.desc}</p>
                     </div>
                   ))}
                 </div>
               </div>
-              <div className="bg-slate-800 border border-slate-700 rounded-2xl p-5">
+              <div className="bg-[#26211a] border border-[#37301f] rounded-2xl p-5">
                 <h3 className="font-bold text-white mb-3 text-base">Ce specificatii conteaza cu adevarat</h3>
-                <ul className="space-y-2 text-sm text-slate-400">
+                <ul className="space-y-2 text-sm text-[#a89a78]">
                   {[
                     ["Procesor","Intel Core i5/i7 13th gen sau AMD Ryzen 5/7 7000 — ambele excelente"],
                     ["RAM","minimum 16GB pentru confort real in 2026 (8GB e deja insuficient)"],
@@ -200,9 +200,9 @@ export default function LaptopPage() {
                   ))}
                 </ul>
               </div>
-              <div className="bg-slate-800 border border-slate-700 rounded-2xl p-5">
+              <div className="bg-[#26211a] border border-[#37301f] rounded-2xl p-5">
                 <h3 className="font-bold text-white mb-2 text-base">Cand sunt cele mai mari reduceri la laptopuri</h3>
-                <p className="text-sm text-slate-400 leading-relaxed">Black Friday (noiembrie) si Zilele eMAG (mai, octombrie) aduc reduceri de 20-35% la laptopuri. Verifica codurile AmCupon pentru discount suplimentar de 5-10% aplicabil pe langa promotia activa.</p>
+                <p className="text-sm text-[#a89a78] leading-relaxed">Black Friday (noiembrie) si Zilele eMAG (mai, octombrie) aduc reduceri de 20-35% la laptopuri. Verifica codurile AmCupon pentru discount suplimentar de 5-10% aplicabil pe langa promotia activa.</p>
               </div>
             </div>
           </div>
@@ -210,7 +210,7 @@ export default function LaptopPage() {
 
         {/* Related */}
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
+          <p className="text-xs font-bold text-[#8c8064] uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/gaming", label: "🎮 Gaming" },
@@ -220,18 +220,18 @@ export default function LaptopPage() {
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-blue-500/40 text-slate-300 hover:text-white text-sm font-semibold px-4 py-2 rounded-xl transition-all duration-200">
+                className="bg-[#26211a] hover:bg-[#37301f] border border-[#37301f] hover:border-blue-500/40 text-[#c8bda2] hover:text-white text-sm font-semibold px-4 py-2 rounded-xl transition-all duration-200">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-slate-800 py-6 text-center text-xs text-slate-600">
+        <footer className="border-t border-[#26211a] py-6 text-center text-xs text-[#473d28]">
           &copy; {an} AmCupon.ro &middot;{" "}
-          <Link href="/electronice" className="hover:text-indigo-400 transition-colors">Electronice</Link>{" · "}
-          <Link href="/gaming" className="hover:text-indigo-400 transition-colors">Gaming</Link>{" · "}
-          <Link href="/categorii" className="hover:text-indigo-400 transition-colors">Categorii</Link>
+          <Link href="/electronice" className="hover:text-[#d8c091] transition-colors">Electronice</Link>{" · "}
+          <Link href="/gaming" className="hover:text-[#d8c091] transition-colors">Gaming</Link>{" · "}
+          <Link href="/categorii" className="hover:text-[#d8c091] transition-colors">Categorii</Link>
         </footer>
       </div>
     </>

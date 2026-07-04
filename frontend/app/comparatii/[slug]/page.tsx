@@ -123,23 +123,23 @@ export default async function ComparatiePage(
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <div className="min-h-screen bg-slate-950 text-white">
+      <div className="min-h-screen bg-[#0b0a07] text-white">
         <div className="max-w-4xl mx-auto px-4 py-10">
 
           {/* Breadcrumb */}
-          <nav className="text-sm text-slate-400 mb-6 flex items-center gap-2">
-            <Link href="/" className="hover:text-cyan-400">Acasa</Link>
+          <nav className="text-sm text-[#a89a78] mb-6 flex items-center gap-2">
+            <Link href="/" className="hover:text-[#d8c091]">Acasa</Link>
             <span>/</span>
-            <Link href="/comparatii" className="hover:text-cyan-400">Comparatii</Link>
+            <Link href="/comparatii" className="hover:text-[#d8c091]">Comparatii</Link>
             <span>/</span>
             <span className="text-white">{c.n1} vs {c.n2}</span>
           </nav>
 
           {/* Hero */}
-          <div className="bg-gradient-to-br from-indigo-900/40 to-slate-900 border border-indigo-500/20 rounded-2xl p-8 mb-8">
-            <p className="text-indigo-300 text-sm font-medium mb-2 uppercase tracking-wider">{c.categorie}</p>
+          <div className="bg-gradient-to-br from-[#2e2410]/40 to-[#15120c] border border-[#c9a63e]/20 rounded-2xl p-8 mb-8">
+            <p className="text-[#e3d1a6] text-sm font-medium mb-2 uppercase tracking-wider">{c.categorie}</p>
             <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">{c.titlu_h1}</h1>
-            <p className="text-slate-300 text-lg leading-relaxed">{c.intro}</p>
+            <p className="text-[#c8bda2] text-lg leading-relaxed">{c.intro}</p>
           </div>
 
           {/* Tabel comparatie rapida */}
@@ -148,30 +148,30 @@ export default async function ComparatiePage(
               { n: c.n1, stats: c.stats1, promo: c.promo1, slug: c.m1_slug },
               { n: c.n2, stats: c.stats2, promo: c.promo2, slug: c.m2_slug },
             ].map((side, i) => (
-              <div key={i} className="bg-slate-900 border border-slate-800 rounded-xl p-5">
+              <div key={i} className="bg-[#15120c] border border-[#26211a] rounded-xl p-5">
                 {side.stats.logo && (
                   <img src={side.stats.logo} alt={side.n} className="h-10 object-contain mb-3" />
                 )}
                 <h2 className="text-white font-bold text-lg mb-3">{side.n}</h2>
                 <div className="space-y-2 text-sm mb-4">
                   <div className="flex justify-between">
-                    <span className="text-slate-400">Promotii active</span>
-                    <span className={side.stats.promotii_active > 0 ? "text-cyan-400 font-semibold" : "text-slate-500"}>
+                    <span className="text-[#a89a78]">Promotii active</span>
+                    <span className={side.stats.promotii_active > 0 ? "text-[#d8c091] font-semibold" : "text-[#8c8064]"}>
                       {side.stats.promotii_active > 0 ? `${side.stats.promotii_active} oferte` : "Nicio oferta"}
                     </span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-slate-400">Cashback</span>
-                    <span className="text-indigo-300 font-semibold">{side.stats.cashback}</span>
+                    <span className="text-[#a89a78]">Cashback</span>
+                    <span className="text-[#e3d1a6] font-semibold">{side.stats.cashback}</span>
                   </div>
                 </div>
                 {side.promo.length > 0 && (
                   <div className="mb-4 space-y-2">
                     {side.promo.map((p, j) => (
-                      <div key={j} className="bg-slate-800 rounded-lg px-3 py-2">
+                      <div key={j} className="bg-[#26211a] rounded-lg px-3 py-2">
                         <p className="text-white text-xs font-medium line-clamp-2">{p.nume}</p>
                         {p.cod_cupon && (
-                          <p className="text-cyan-400 text-xs font-mono mt-1">COD: {p.cod_cupon}</p>
+                          <p className="text-[#d8c091] text-xs font-mono mt-1">COD: {p.cod_cupon}</p>
                         )}
                       </div>
                     ))}
@@ -179,7 +179,7 @@ export default async function ComparatiePage(
                 )}
                 <Link
                   href={`/cod-reducere/${side.slug}`}
-                  className="block w-full text-center bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold py-2.5 rounded-lg transition-colors"
+                  className="block w-full text-center bg-[#b8912e] hover:bg-[#c9a63e] text-white text-sm font-semibold py-2.5 rounded-lg transition-colors"
                 >
                   Coduri {side.n}
                 </Link>
@@ -188,8 +188,8 @@ export default async function ComparatiePage(
           </div>
 
           {/* Tabel detaliat */}
-          <div className="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden mb-8">
-            <div className="grid grid-cols-3 bg-slate-800 px-4 py-3 text-sm font-semibold text-slate-300">
+          <div className="bg-[#15120c] border border-[#26211a] rounded-xl overflow-hidden mb-8">
+            <div className="grid grid-cols-3 bg-[#26211a] px-4 py-3 text-sm font-semibold text-[#c8bda2]">
               <span>Criteriu</span>
               <span className="text-center">{c.n1}</span>
               <span className="text-center">{c.n2}</span>
@@ -197,9 +197,9 @@ export default async function ComparatiePage(
             {c.puncte.map((p, i) => (
               <div
                 key={i}
-                className={`grid grid-cols-3 px-4 py-3 text-sm border-t border-slate-800 ${i % 2 === 0 ? "" : "bg-slate-900/50"}`}
+                className={`grid grid-cols-3 px-4 py-3 text-sm border-t border-[#26211a] ${i % 2 === 0 ? "" : "bg-[#15120c]/50"}`}
               >
-                <span className="text-slate-400 font-medium">{p.aspect}</span>
+                <span className="text-[#a89a78] font-medium">{p.aspect}</span>
                 <span className="text-center text-white">{p.v1}</span>
                 <span className="text-center text-white">{p.v2}</span>
               </div>
@@ -208,22 +208,22 @@ export default async function ComparatiePage(
 
           {/* Verdict */}
           <div className="grid md:grid-cols-2 gap-4 mb-10">
-            <div className="bg-indigo-900/20 border border-indigo-500/30 rounded-xl p-5">
-              <p className="text-indigo-300 font-bold text-sm mb-2 uppercase tracking-wide">Alege {c.n1} daca...</p>
-              <p className="text-slate-300 text-sm leading-relaxed">{c.verdict_m1}</p>
+            <div className="bg-[#2e2410]/20 border border-[#c9a63e]/30 rounded-xl p-5">
+              <p className="text-[#e3d1a6] font-bold text-sm mb-2 uppercase tracking-wide">Alege {c.n1} daca...</p>
+              <p className="text-[#c8bda2] text-sm leading-relaxed">{c.verdict_m1}</p>
               <Link
                 href={`/cod-reducere/${c.m1_slug}`}
-                className="mt-4 block text-center bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold py-2.5 rounded-lg transition-colors"
+                className="mt-4 block text-center bg-[#b8912e] hover:bg-[#c9a63e] text-white text-sm font-semibold py-2.5 rounded-lg transition-colors"
               >
                 Vezi oferte {c.n1}
               </Link>
             </div>
-            <div className="bg-cyan-900/20 border border-cyan-500/30 rounded-xl p-5">
-              <p className="text-cyan-300 font-bold text-sm mb-2 uppercase tracking-wide">Alege {c.n2} daca...</p>
-              <p className="text-slate-300 text-sm leading-relaxed">{c.verdict_m2}</p>
+            <div className="bg-[#2e2410]/20 border border-[#c9a63e]/30 rounded-xl p-5">
+              <p className="text-[#e3d1a6] font-bold text-sm mb-2 uppercase tracking-wide">Alege {c.n2} daca...</p>
+              <p className="text-[#c8bda2] text-sm leading-relaxed">{c.verdict_m2}</p>
               <Link
                 href={`/cod-reducere/${c.m2_slug}`}
-                className="mt-4 block text-center bg-cyan-600 hover:bg-cyan-500 text-white text-sm font-semibold py-2.5 rounded-lg transition-colors"
+                className="mt-4 block text-center bg-[#b8912e] hover:bg-[#c9a63e] text-white text-sm font-semibold py-2.5 rounded-lg transition-colors"
               >
                 Vezi oferte {c.n2}
               </Link>
@@ -235,9 +235,9 @@ export default async function ComparatiePage(
             <h2 className="text-xl font-bold text-white mb-5">Intrebari frecvente</h2>
             <div className="space-y-4">
               {c.faq.map((f, i) => (
-                <div key={i} className="bg-slate-900 border border-slate-800 rounded-xl p-5">
+                <div key={i} className="bg-[#15120c] border border-[#26211a] rounded-xl p-5">
                   <h3 className="text-white font-semibold mb-2">{f.q}</h3>
-                  <p className="text-slate-400 text-sm leading-relaxed">{f.a}</p>
+                  <p className="text-[#a89a78] text-sm leading-relaxed">{f.a}</p>
                 </div>
               ))}
             </div>
@@ -245,7 +245,7 @@ export default async function ComparatiePage(
 
           {/* Back link */}
           <div className="text-center">
-            <Link href="/comparatii" className="text-indigo-400 hover:text-indigo-300 text-sm font-medium">
+            <Link href="/comparatii" className="text-[#d8c091] hover:text-[#e3d1a6] text-sm font-medium">
               ← Toate comparatiile magazine
             </Link>
           </div>

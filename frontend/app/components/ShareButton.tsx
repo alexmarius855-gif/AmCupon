@@ -67,16 +67,16 @@ export default function ShareButton({
     : "flex items-center gap-1.5 text-sm px-3 py-2 rounded-xl";
 
   const btnColors = isDark
-    ? "border border-slate-700 text-slate-400 hover:border-slate-500 hover:text-slate-200"
-    : "border border-gray-300 text-gray-500 hover:border-indigo-400 hover:text-indigo-400";
+    ? "border border-[#37301f] text-[#a89a78] hover:border-[#8c8064] hover:text-[#dcd0b8]"
+    : "border border-gray-300 text-gray-500 hover:border-[#d8c091] hover:text-[#d8c091]";
 
   const dropdownBg = isDark
-    ? "bg-slate-800 border-slate-700"
+    ? "bg-[#26211a] border-[#37301f]"
     : "bg-white border-gray-200";
 
-  const itemHover = isDark ? "hover:bg-slate-700" : "hover:bg-gray-50";
-  const dividerColor = isDark ? "border-slate-700" : "border-gray-200";
-  const copyColor = isDark ? "text-slate-300" : "text-gray-600";
+  const itemHover = isDark ? "hover:bg-[#37301f]" : "hover:bg-gray-50";
+  const dividerColor = isDark ? "border-[#37301f]" : "border-gray-200";
+  const copyColor = isDark ? "text-[#c8bda2]" : "text-gray-600";
 
   return (
     <div className="relative inline-block">

@@ -57,7 +57,7 @@ const AI_TOOLS = [
     name: "InVideo AI",
     tagline: "Video AI din text — cel mai usor de promovat in Romania",
     badge: "ROI maxim",
-    badgeColor: "bg-indigo-500",
+    badgeColor: "bg-[#c9a63e]",
     emoji: "🎬",
     comision: "50%",
     comision_tip: "prima luna / 25% recurent",
@@ -76,14 +76,14 @@ const AI_TOOLS = [
     cons: ["Structura comision dual (50% + 25%)", "Necesita cont PayPal pentru plati"],
     ideal: "Creatori de continut, YouTube, social media",
     cat: "Video AI",
-    catColor: "#6366f1",
+    catColor: "#b8912e",
   },
   {
     rank: 3,
     name: "HubSpot",
     tagline: "CRM + Marketing AI — comision mare pe produse premium",
     badge: "Valoare mare per vanzare",
-    badgeColor: "bg-indigo-600",
+    badgeColor: "bg-[#b8912e]",
     emoji: "🏆",
     comision: "30%",
     comision_tip: "recurent 12 luni",
@@ -164,7 +164,7 @@ const AI_TOOLS = [
     name: "Synthesia",
     tagline: "Video cu avatare AI — cel mai solicitat in B2B",
     badge: "Nisa B2B premium",
-    badgeColor: "bg-indigo-600",
+    badgeColor: "bg-[#b8912e]",
     emoji: "🎭",
     comision: "25%",
     comision_tip: "recurent lunar",
@@ -183,14 +183,14 @@ const AI_TOOLS = [
     cons: ["Piata mai specializata (B2B)", "Necesita content demonstrativ pentru conversie"],
     ideal: "Bloguri eLearning, HR tech, corporate training",
     cat: "Video AI",
-    catColor: "#6366f1",
+    catColor: "#b8912e",
   },
   {
     rank: 7,
     name: "Writesonic",
     tagline: "AI pentru articole SEO + ChatSonic inclus",
     badge: "30% recurent",
-    badgeColor: "bg-cyan-600",
+    badgeColor: "bg-[#b8912e]",
     emoji: "📝",
     comision: "30%",
     comision_tip: "recurent lunar",
@@ -336,14 +336,14 @@ const AI_TOOLS = [
     cons: ["Cookie 30 zile", "Concurenta cu InVideo si Canva"],
     ideal: "YouTuberi, TikTok creators, bloggeri cu podcast",
     cat: "Video AI",
-    catColor: "#6366f1",
+    catColor: "#b8912e",
   },
   {
     rank: 13,
     name: "Descript",
     tagline: "Editare video/audio ca un document Word",
     badge: "Editare AI",
-    badgeColor: "bg-slate-600",
+    badgeColor: "bg-[#473d28]",
     emoji: "🎞️",
     comision: "15%",
     comision_tip: "recurent lunar",
@@ -361,7 +361,7 @@ const AI_TOOLS = [
     cons: ["Comision 15% — mai mic", "Cookie 30 zile"],
     ideal: "Podcasteri, YouTuberi, video editors",
     cat: "Video AI",
-    catColor: "#6366f1",
+    catColor: "#b8912e",
   },
   {
     rank: 14,
@@ -442,7 +442,7 @@ const AI_TOOLS = [
 
 const CAT_COLORS: Record<string, string> = {
   "Copywriting AI": "#8b5cf6",
-  "Video AI": "#6366f1",
+  "Video AI": "#b8912e",
   "CRM & Marketing": "#f59e0b",
   "SEO Tools": "#10b981",
   "Voice AI": "#eab308",
@@ -489,32 +489,32 @@ const FAQ = [
 
 export default function AiToolsPage() {
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div className="min-h-screen bg-[#0b0a07]">
 
       {/* Hero */}
-      <section className="relative bg-slate-950 border-b border-slate-800 overflow-hidden">
+      <section className="relative bg-[#0b0a07] border-b border-[#26211a] overflow-hidden">
         <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(139,92,246,0.10) 0%, transparent 65%)" }} />
         <div className="relative max-w-4xl mx-auto px-4 pt-12 pb-10 text-center">
-          <nav className="flex justify-center gap-2 text-xs text-slate-500 mb-8">
-            <Link href="/" className="hover:text-slate-300">AmCupon.ro</Link>
+          <nav className="flex justify-center gap-2 text-xs text-[#8c8064] mb-8">
+            <Link href="/" className="hover:text-[#c8bda2]">AmCupon.ro</Link>
             <span>/</span>
-            <span className="text-slate-300">Programe Afiliere AI</span>
+            <span className="text-[#c8bda2]">Programe Afiliere AI</span>
           </nav>
           <div className="text-5xl mb-4">🧠</div>
           <h1 className="text-4xl md:text-5xl font-black text-white mb-4">
             Top 15 Programe <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #8b5cf6, #a855f7)" }}>Afiliere AI</span> 2026
           </h1>
-          <p className="text-slate-400 text-lg max-w-2xl mx-auto mb-6">
+          <p className="text-[#a89a78] text-lg max-w-2xl mx-auto mb-6">
             Comisioane recurente 20-50%, cookie pana la 180 zile. Cele mai profitabile programe afiliere din nisa AI — ghid complet cu linkuri de aplicare directa.
           </p>
-          <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-400 mb-6">
+          <div className="flex flex-wrap justify-center gap-4 text-sm text-[#a89a78] mb-6">
             <span className="flex items-center gap-1.5"><span className="text-violet-400">✓</span> 15 programe verificate</span>
             <span className="flex items-center gap-1.5"><span className="text-violet-400">✓</span> Comisioane recurente reale</span>
             <span className="flex items-center gap-1.5"><span className="text-violet-400">✓</span> Actualizat iunie 2026</span>
           </div>
 
           {/* Quick stats */}
-          <div className="inline-flex flex-wrap justify-center gap-6 bg-slate-900/60 border border-slate-800 rounded-2xl px-6 py-4">
+          <div className="inline-flex flex-wrap justify-center gap-6 bg-[#15120c]/60 border border-[#26211a] rounded-2xl px-6 py-4">
             {[
               { v: "45%", l: "Comision max" },
               { v: "180 zile", l: "Cookie max" },
@@ -523,7 +523,7 @@ export default function AiToolsPage() {
             ].map((s) => (
               <div key={s.l} className="text-center">
                 <div className="text-xl font-black text-violet-400">{s.v}</div>
-                <div className="text-xs text-slate-500 mt-0.5">{s.l}</div>
+                <div className="text-xs text-[#8c8064] mt-0.5">{s.l}</div>
               </div>
             ))}
           </div>
@@ -531,14 +531,14 @@ export default function AiToolsPage() {
       </section>
 
       {/* Categorii */}
-      <section className="max-w-5xl mx-auto px-4 py-8 border-b border-slate-800">
-        <p className="text-xs text-slate-500 font-bold uppercase tracking-widest mb-4">Browse pe categorie</p>
+      <section className="max-w-5xl mx-auto px-4 py-8 border-b border-[#26211a]">
+        <p className="text-xs text-[#8c8064] font-bold uppercase tracking-widest mb-4">Browse pe categorie</p>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
           {CATEGORII.map((cat) => (
-            <div key={cat.slug} className="bg-slate-900 border border-slate-800 hover:border-slate-600 rounded-xl p-3 text-center cursor-pointer transition-all group">
+            <div key={cat.slug} className="bg-[#15120c] border border-[#26211a] hover:border-[#473d28] rounded-xl p-3 text-center cursor-pointer transition-all group">
               <div className="text-2xl mb-1">{cat.emoji}</div>
               <div className="text-xs font-bold text-white group-hover:text-violet-400 transition-colors">{cat.label}</div>
-              <div className="text-[10px] text-slate-500 mt-0.5 hidden sm:block">{cat.desc.split("—")[0]}</div>
+              <div className="text-[10px] text-[#8c8064] mt-0.5 hidden sm:block">{cat.desc.split("—")[0]}</div>
             </div>
           ))}
         </div>
@@ -547,13 +547,13 @@ export default function AiToolsPage() {
       {/* Lista programe */}
       <section className="max-w-5xl mx-auto px-4 py-10">
         <h2 className="text-2xl font-black text-white mb-2">Toate programele — clasate dupa profitabilitate</h2>
-        <p className="text-slate-500 text-sm mb-8">Clasament bazat pe: comision% × retentie medie clienti × usurinta conversie</p>
+        <p className="text-[#8c8064] text-sm mb-8">Clasament bazat pe: comision% × retentie medie clienti × usurinta conversie</p>
 
         <div className="space-y-5">
           {AI_TOOLS.map((tool) => (
             <div
               key={tool.name}
-              className={`bg-slate-900 border rounded-2xl p-6 transition-all ${tool.rank <= 3 ? "border-violet-500/30 shadow-lg shadow-violet-500/5" : "border-slate-800 hover:border-slate-700"}`}
+              className={`bg-[#15120c] border rounded-2xl p-6 transition-all ${tool.rank <= 3 ? "border-violet-500/30 shadow-lg shadow-violet-500/5" : "border-[#26211a] hover:border-[#37301f]"}`}
             >
               {tool.rank <= 3 && (
                 <div className="text-xs text-violet-400 font-bold mb-3 flex items-center gap-2">
@@ -575,14 +575,14 @@ export default function AiToolsPage() {
                       style={{ color: CAT_COLORS[tool.cat] || "#94a3b8", background: `${CAT_COLORS[tool.cat]}18` }}
                     >{tool.cat}</span>
                   </div>
-                  <p className="text-slate-400 text-sm mb-4">{tool.tagline}</p>
+                  <p className="text-[#a89a78] text-sm mb-4">{tool.tagline}</p>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                     <div>
                       <p className="text-xs text-emerald-400 font-bold mb-2">AVANTAJE</p>
                       <ul className="space-y-1">
                         {tool.pros.map((p, i) => (
-                          <li key={i} className="flex items-start gap-2 text-sm text-slate-300">
+                          <li key={i} className="flex items-start gap-2 text-sm text-[#c8bda2]">
                             <span className="text-emerald-400 shrink-0 mt-0.5">+</span>{p}
                           </li>
                         ))}
@@ -592,29 +592,29 @@ export default function AiToolsPage() {
                       <p className="text-xs text-red-400 font-bold mb-2">DEZAVANTAJE</p>
                       <ul className="space-y-1 mb-3">
                         {tool.cons.map((c, i) => (
-                          <li key={i} className="flex items-start gap-2 text-sm text-slate-400">
+                          <li key={i} className="flex items-start gap-2 text-sm text-[#a89a78]">
                             <span className="text-red-400 shrink-0 mt-0.5">-</span>{c}
                           </li>
                         ))}
                       </ul>
-                      <p className="text-xs text-slate-500">Ideal pentru: <span className="text-slate-400">{tool.ideal}</span></p>
+                      <p className="text-xs text-[#8c8064]">Ideal pentru: <span className="text-[#a89a78]">{tool.ideal}</span></p>
                     </div>
                   </div>
                 </div>
 
                 {/* Sidebar stats */}
                 <div className="md:w-48 flex flex-col items-center gap-3 shrink-0">
-                  <div className="w-full bg-slate-800/60 border border-slate-700 rounded-xl p-4 text-center">
+                  <div className="w-full bg-[#26211a]/60 border border-[#37301f] rounded-xl p-4 text-center">
                     <div className="text-3xl font-black text-white">{tool.comision}</div>
-                    <div className="text-xs text-slate-400 mt-0.5">{tool.comision_tip}</div>
-                    <div className="mt-2 pt-2 border-t border-slate-700 grid grid-cols-2 gap-2 text-xs">
+                    <div className="text-xs text-[#a89a78] mt-0.5">{tool.comision_tip}</div>
+                    <div className="mt-2 pt-2 border-t border-[#37301f] grid grid-cols-2 gap-2 text-xs">
                       <div>
-                        <div className="text-slate-500">Cookie</div>
-                        <div className="text-slate-300 font-bold">{tool.cookie}</div>
+                        <div className="text-[#8c8064]">Cookie</div>
+                        <div className="text-[#c8bda2] font-bold">{tool.cookie}</div>
                       </div>
                       <div>
-                        <div className="text-slate-500">Plan min</div>
-                        <div className="text-slate-300 font-bold text-[11px]">{tool.pret_min}</div>
+                        <div className="text-[#8c8064]">Plan min</div>
+                        <div className="text-[#c8bda2] font-bold text-[11px]">{tool.pret_min}</div>
                       </div>
                     </div>
                   </div>
@@ -622,7 +622,7 @@ export default function AiToolsPage() {
                     href={tool.program_url}
                     target="_blank"
                     rel="sponsored noopener noreferrer"
-                    className={`w-full text-center py-3 px-4 rounded-xl font-black text-sm text-white transition-all hover:-translate-y-0.5 shadow-lg ${tool.rank <= 3 ? "bg-violet-600 hover:bg-violet-500 shadow-violet-500/20" : "bg-slate-700 hover:bg-slate-600"}`}
+                    className={`w-full text-center py-3 px-4 rounded-xl font-black text-sm text-white transition-all hover:-translate-y-0.5 shadow-lg ${tool.rank <= 3 ? "bg-violet-600 hover:bg-violet-500 shadow-violet-500/20" : "bg-[#37301f] hover:bg-[#473d28]"}`}
                   >
                     Aplica la {tool.name} →
                   </a>
@@ -630,7 +630,7 @@ export default function AiToolsPage() {
                     href={tool.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs text-slate-500 hover:text-slate-300 transition-colors"
+                    className="text-xs text-[#8c8064] hover:text-[#c8bda2] transition-colors"
                   >
                     Vezi produsul
                   </a>
@@ -642,7 +642,7 @@ export default function AiToolsPage() {
       </section>
 
       {/* Strategie */}
-      <section className="max-w-5xl mx-auto px-4 py-10 border-t border-slate-800">
+      <section className="max-w-5xl mx-auto px-4 py-10 border-t border-[#26211a]">
         <h2 className="text-2xl font-black text-white mb-6">Cum sa castigi bani din afiliere AI — strategie practica</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
           {[
@@ -656,7 +656,7 @@ export default function AiToolsPage() {
               step: "02",
               titlu: "Creeaza continut comparativ",
               desc: "Articolele 'X vs Y' si 'Cel mai bun tool pentru Z' au intentia de cumparare cea mai mare. Un singur articol bun = sute de conversii pe an.",
-              color: "#6366f1",
+              color: "#b8912e",
             },
             {
               step: "03",
@@ -683,10 +683,10 @@ export default function AiToolsPage() {
               color: "#06b6d4",
             },
           ].map((s) => (
-            <div key={s.step} className="bg-slate-900 border border-slate-800 rounded-xl p-5">
+            <div key={s.step} className="bg-[#15120c] border border-[#26211a] rounded-xl p-5">
               <div className="text-3xl font-black mb-2" style={{ color: s.color }}>{s.step}</div>
               <h3 className="text-sm font-bold text-white mb-2">{s.titlu}</h3>
-              <p className="text-xs text-slate-400 leading-relaxed">{s.desc}</p>
+              <p className="text-xs text-[#a89a78] leading-relaxed">{s.desc}</p>
             </div>
           ))}
         </div>
@@ -700,7 +700,7 @@ export default function AiToolsPage() {
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
-                <tr className="text-slate-500 text-xs border-b border-slate-800">
+                <tr className="text-[#8c8064] text-xs border-b border-[#26211a]">
                   <th className="text-left pb-2">Scenariu</th>
                   <th className="text-right pb-2">Vizitatori/luna</th>
                   <th className="text-right pb-2">Conversii (1.5%)</th>
@@ -715,7 +715,7 @@ export default function AiToolsPage() {
                   { scenariu: "Mediu (1 an)", viz: "8.000", conv: "120", com: "$18", venit: "~$2.160" },
                   { scenariu: "Avansat (2 ani)", viz: "25.000", conv: "375", com: "$20", venit: "~$7.500" },
                 ].map((row, i) => (
-                  <tr key={i} className={`border-b border-slate-800/50 ${i === 3 ? "text-violet-300 font-bold" : "text-slate-300"}`}>
+                  <tr key={i} className={`border-b border-[#26211a]/50 ${i === 3 ? "text-violet-300 font-bold" : "text-[#c8bda2]"}`}>
                     <td className="py-2">{row.scenariu}</td>
                     <td className="py-2 text-right">{row.viz}</td>
                     <td className="py-2 text-right">{row.conv}</td>
@@ -726,18 +726,18 @@ export default function AiToolsPage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-slate-500 mt-3">*Estimare bazata pe programe cu comision recurent mediu 25-30%. Venitul se acumuleaza — un client vandut luna 1 plateste recurent si in luna 24.</p>
+          <p className="text-xs text-[#8c8064] mt-3">*Estimare bazata pe programe cu comision recurent mediu 25-30%. Venitul se acumuleaza — un client vandut luna 1 plateste recurent si in luna 24.</p>
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="max-w-5xl mx-auto px-4 py-10 border-t border-slate-800">
+      <section className="max-w-5xl mx-auto px-4 py-10 border-t border-[#26211a]">
         <h2 className="text-2xl font-black text-white mb-6">Intrebari frecvente</h2>
         <div className="space-y-4">
           {FAQ.map((item, i) => (
-            <div key={i} className="bg-slate-900 border border-slate-800 rounded-xl p-5">
+            <div key={i} className="bg-[#15120c] border border-[#26211a] rounded-xl p-5">
               <h3 className="font-bold text-white mb-2">{item.q}</h3>
-              <p className="text-slate-400 text-sm leading-relaxed">{item.a}</p>
+              <p className="text-[#a89a78] text-sm leading-relaxed">{item.a}</p>
             </div>
           ))}
         </div>
@@ -751,7 +751,7 @@ export default function AiToolsPage() {
         >
           <div className="text-4xl mb-3">🚀</div>
           <h2 className="text-2xl font-black text-white mb-3">Incepe azi cu top 3</h2>
-          <p className="text-slate-400 mb-6 text-sm max-w-xl mx-auto">
+          <p className="text-[#a89a78] mb-6 text-sm max-w-xl mx-auto">
             Aplica la Copy.ai (45%), InVideo (50%) si HubSpot (30% / 180 zile) — cele mai profitabile 3 programe. Le poti promova simultan pe acelasi blog.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -761,11 +761,11 @@ export default function AiToolsPage() {
               Copy.ai — 45% comision →
             </a>
             <a href="https://invideo.io/affiliate" target="_blank" rel="sponsored noopener noreferrer"
-              className="bg-slate-700 hover:bg-slate-600 text-white font-bold px-6 py-3 rounded-xl transition-all hover:-translate-y-0.5 text-sm">
+              className="bg-[#37301f] hover:bg-[#473d28] text-white font-bold px-6 py-3 rounded-xl transition-all hover:-translate-y-0.5 text-sm">
               InVideo — 50% prima luna →
             </a>
             <a href="https://www.hubspot.com/partners/affiliates" target="_blank" rel="sponsored noopener noreferrer"
-              className="bg-slate-700 hover:bg-slate-600 text-white font-bold px-6 py-3 rounded-xl transition-all hover:-translate-y-0.5 text-sm">
+              className="bg-[#37301f] hover:bg-[#473d28] text-white font-bold px-6 py-3 rounded-xl transition-all hover:-translate-y-0.5 text-sm">
               HubSpot — 30% / 180 zile →
             </a>
           </div>
@@ -773,19 +773,19 @@ export default function AiToolsPage() {
       </section>
 
       {/* Alte resurse */}
-      <section className="max-w-5xl mx-auto px-4 pb-10 border-t border-slate-800 pt-8">
-        <p className="text-xs text-slate-500 font-bold uppercase tracking-widest mb-4">Resurse conexe</p>
+      <section className="max-w-5xl mx-auto px-4 pb-10 border-t border-[#26211a] pt-8">
+        <p className="text-xs text-[#8c8064] font-bold uppercase tracking-widest mb-4">Resurse conexe</p>
         <div className="flex flex-wrap gap-3">
-          <Link href="/vpn" className="text-sm text-slate-400 hover:text-white bg-slate-900 border border-slate-800 hover:border-slate-700 px-4 py-2 rounded-lg transition-all">
+          <Link href="/vpn" className="text-sm text-[#a89a78] hover:text-white bg-[#15120c] border border-[#26211a] hover:border-[#37301f] px-4 py-2 rounded-lg transition-all">
             🔒 Cele mai bune VPN-uri →
           </Link>
-          <Link href="/hosting" className="text-sm text-slate-400 hover:text-white bg-slate-900 border border-slate-800 hover:border-slate-700 px-4 py-2 rounded-lg transition-all">
+          <Link href="/hosting" className="text-sm text-[#a89a78] hover:text-white bg-[#15120c] border border-[#26211a] hover:border-[#37301f] px-4 py-2 rounded-lg transition-all">
             🌐 Hosting Romania →
           </Link>
-          <Link href="/software-business" className="text-sm text-slate-400 hover:text-white bg-slate-900 border border-slate-800 hover:border-slate-700 px-4 py-2 rounded-lg transition-all">
+          <Link href="/software-business" className="text-sm text-[#a89a78] hover:text-white bg-[#15120c] border border-[#26211a] hover:border-[#37301f] px-4 py-2 rounded-lg transition-all">
             💼 Software Business →
           </Link>
-          <Link href="/" className="text-sm text-slate-400 hover:text-white bg-slate-900 border border-slate-800 hover:border-slate-700 px-4 py-2 rounded-lg transition-all">
+          <Link href="/" className="text-sm text-[#a89a78] hover:text-white bg-[#15120c] border border-[#26211a] hover:border-[#37301f] px-4 py-2 rounded-lg transition-all">
             🏷️ Toate magazinele →
           </Link>
         </div>
@@ -793,7 +793,7 @@ export default function AiToolsPage() {
 
       {/* Disclaimer */}
       <div className="max-w-5xl mx-auto px-4 pb-8">
-        <p className="text-slate-600 text-xs text-center">
+        <p className="text-[#473d28] text-xs text-center">
           Unele linkuri de pe aceasta pagina sunt linkuri de afiliat. Daca aplici si obtii un cont, AmCupon.ro poate primi un comision. Recomandam doar programe pe care le-am evaluat independent dupa comision real, retentie si usurinta de promovat.
         </p>
       </div>

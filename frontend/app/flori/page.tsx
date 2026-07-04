@@ -34,7 +34,7 @@ const OCAZII = [
 ];
 
 function numeAfisat(s: string) { return s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" "); }
-const CULORI = ["bg-indigo-600"];
+const CULORI = ["bg-[#b8912e]"];
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Reduceri Flori & Buchete 2026","url":"https://amcupon.ro/flori" };
 
 export default function FloriPage() {
@@ -53,12 +53,12 @@ export default function FloriPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-slate-950">
-        <nav className="bg-slate-950 border-b border-slate-800">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-slate-500">
-            <Link href="/" className="hover:text-indigo-400">Acasă</Link>
+      <div className="min-h-screen bg-[#0b0a07]">
+        <nav className="bg-[#0b0a07] border-b border-[#26211a]">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#8c8064]">
+            <Link href="/" className="hover:text-[#d8c091]">Acasă</Link>
             <span className="mx-1">/</span>
-            <span className="text-slate-300 font-medium">Flori & Buchete</span>
+            <span className="text-[#c8bda2] font-medium">Flori & Buchete</span>
           </div>
         </nav>
 
@@ -84,10 +84,10 @@ export default function FloriPage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {OCAZII.map(o => (
               <div key={o.label}
-                className="bg-slate-900 border border-slate-800 rounded-2xl p-5 hover:shadow-md transition-all">
+                className="bg-[#15120c] border border-[#26211a] rounded-2xl p-5 hover:shadow-md transition-all">
                 <div className="text-3xl mb-2">{o.emoji}</div>
                 <h3 className="font-bold text-white text-sm mb-1">{o.label}</h3>
-                <p className="text-xs text-slate-400">{o.desc}</p>
+                <p className="text-xs text-[#a89a78]">{o.desc}</p>
               </div>
             ))}
           </div>
@@ -99,9 +99,9 @@ export default function FloriPage() {
             <h2 className="text-xl font-black text-white">Florării cu reduceri active</h2>
           </div>
           {magazine.length === 0 ? (
-            <div className="text-center py-10 bg-slate-900 rounded-2xl">
+            <div className="text-center py-10 bg-[#15120c] rounded-2xl">
               <p className="text-2xl mb-3">💐</p>
-              <p className="text-slate-400 font-medium mb-2">Explorează ofertele noastre de cadouri</p>
+              <p className="text-[#a89a78] font-medium mb-2">Explorează ofertele noastre de cadouri</p>
               <Link href="/idei-cadouri" className="inline-block bg-rose-600 text-white font-bold px-6 py-3 rounded-xl hover:bg-rose-500 transition-colors">
                 Vezi idei de cadouri →
               </Link>
@@ -114,10 +114,10 @@ export default function FloriPage() {
                 const promo = m.promotii[0];
                 return (
                   <a key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                    className="group bg-slate-900 border border-slate-800 hover:border-rose-500/40 rounded-2xl p-4 transition-all hover:shadow-md">
+                    className="group bg-[#15120c] border border-[#26211a] hover:border-rose-500/40 rounded-2xl p-4 transition-all hover:shadow-md">
                     <div className="flex items-center gap-3 mb-3">
                       {m.logo_url ? (
-                        <div className="w-10 h-10 rounded-xl overflow-hidden bg-white border border-slate-800 shrink-0">
+                        <div className="w-10 h-10 rounded-xl overflow-hidden bg-white border border-[#26211a] shrink-0">
                           {/* eslint-disable-next-line @next/next/no-img-element */}
                           <img src={m.logo_url} alt={`Logo ${nume}`} className="w-full h-full object-contain" loading="lazy" />
                         </div>
@@ -133,9 +133,9 @@ export default function FloriPage() {
                       </div>
                     </div>
                     {promo ? (
-                      <p className="text-slate-400 text-xs line-clamp-2">{promo.nume}</p>
+                      <p className="text-[#a89a78] text-xs line-clamp-2">{promo.nume}</p>
                     ) : (
-                      <p className="text-slate-500 text-xs italic">Verifică ofertele curente</p>
+                      <p className="text-[#8c8064] text-xs italic">Verifică ofertele curente</p>
                     )}
                     <div className="flex justify-end mt-2">
                       <span className="text-xs text-sky-500 font-semibold group-hover:text-sky-600">Vezi →</span>
@@ -156,10 +156,10 @@ export default function FloriPage() {
         />
 
         {/* SEO */}
-        <section className="bg-slate-900 border-t border-slate-800 py-10 px-4">
+        <section className="bg-[#15120c] border-t border-[#26211a] py-10 px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-xl font-black text-white mb-5">Cum alegi florăria potrivită</h2>
-            <div className="space-y-4 text-sm text-slate-400 leading-relaxed">
+            <div className="space-y-4 text-sm text-[#a89a78] leading-relaxed">
               <div>
                 <h3 className="font-bold text-white mb-1">Livrare rapidă vs. programată</h3>
                 <p>Pentru ocazii de ultim moment, alege florării cu livrare în 2-4 ore în oraș mare. Pentru evenimente planificate (nuntă, aniversare), comandă cu 2-3 zile înainte pentru cele mai proaspete aranjamente și prețuri mai mici.</p>
@@ -178,7 +178,7 @@ export default function FloriPage() {
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-slate-300 mb-4">Explorează si alte categorii</h2>
+          <h2 className="text-base font-black text-[#c8bda2] mb-4">Explorează si alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/idei-cadouri", label: "🎁 Idei Cadouri" },
@@ -189,18 +189,18 @@ export default function FloriPage() {
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-slate-900 hover:bg-slate-800 hover:text-rose-300 text-slate-300 text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-slate-800 hover:border-rose-400">
+                className="bg-[#15120c] hover:bg-[#26211a] hover:text-rose-300 text-[#c8bda2] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#26211a] hover:border-rose-400">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-slate-800 py-6 text-center text-xs text-slate-500 mt-4">
+        <footer className="border-t border-[#26211a] py-6 text-center text-xs text-[#8c8064] mt-4">
           © {an} AmCupon.ro ·{" "}
-          <Link href="/blog" className="hover:text-indigo-400">Blog</Link>{" · "}
-          <Link href="/categorii" className="hover:text-indigo-400">Categorii</Link>{" · "}
-          <Link href="/" className="hover:text-indigo-400">Acasă</Link>
+          <Link href="/blog" className="hover:text-[#d8c091]">Blog</Link>{" · "}
+          <Link href="/categorii" className="hover:text-[#d8c091]">Categorii</Link>{" · "}
+          <Link href="/" className="hover:text-[#d8c091]">Acasă</Link>
         </footer>
       </div>
     </>

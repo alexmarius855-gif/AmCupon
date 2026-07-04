@@ -39,23 +39,23 @@ interface TopProduseClientProps {
 
 // Accent uniform indigo/cyan pentru toate cheile — diferentierea per-categorie
 // se face prin emoji/titlu, nu prin culoare (aceeasi regula ca /top/page.tsx)
-const BADGE_COLORS: Record<string, string> = new Proxy({}, { get: () => "bg-indigo-600 text-white" });
+const BADGE_COLORS: Record<string, string> = new Proxy({}, { get: () => "bg-[#b8912e] text-white" });
 
-const ACCENT_UNIFORM = { ring: "ring-indigo-500", btn: "bg-indigo-600 hover:bg-indigo-500", score: "text-indigo-400" };
+const ACCENT_UNIFORM = { ring: "ring-[#c9a63e]", btn: "bg-[#b8912e] hover:bg-[#c9a63e]", score: "text-[#d8c091]" };
 const ACCENT: Record<string, { ring: string; btn: string; score: string }> = new Proxy({}, { get: () => ACCENT_UNIFORM });
 
 function ScorBar({ label, value }: { label: string; value: number }) {
   const pct = Math.round((value / 10) * 100);
   return (
     <div className="flex items-center gap-2">
-      <span className="text-xs text-gray-500 dark:text-slate-400 w-28 shrink-0">{label}</span>
-      <div className="flex-1 h-1.5 bg-gray-100 dark:bg-slate-700 rounded-full overflow-hidden">
+      <span className="text-xs text-gray-500 dark:text-[#a89a78] w-28 shrink-0">{label}</span>
+      <div className="flex-1 h-1.5 bg-gray-100 dark:bg-[#37301f] rounded-full overflow-hidden">
         <div
-          className="h-full bg-indigo-500 rounded-full"
+          className="h-full bg-[#c9a63e] rounded-full"
           style={{ width: `${pct}%` }}
         />
       </div>
-      <span className="text-xs font-bold text-gray-700 dark:text-slate-300 w-8 text-right">{value}</span>
+      <span className="text-xs font-bold text-gray-700 dark:text-[#c8bda2] w-8 text-right">{value}</span>
     </div>
   );
 }
@@ -64,7 +64,7 @@ function ScorCircle({ scor, size = "lg" }: { scor: number; size?: "sm" | "lg" })
   const color =
     scor >= 9.5 ? "text-emerald-500" :
     scor >= 8.5 ? "text-green-500" :
-    scor >= 7.5 ? "text-yellow-500" : "text-indigo-400";
+    scor >= 7.5 ? "text-yellow-500" : "text-[#d8c091]";
 
   if (size === "sm") {
     return (
@@ -74,7 +74,7 @@ function ScorCircle({ scor, size = "lg" }: { scor: number; size?: "sm" | "lg" })
   return (
     <div className="flex flex-col items-center">
       <div className={`text-3xl font-black ${color} leading-none`}>{scor.toFixed(1)}</div>
-      <div className="text-xs text-gray-400 dark:text-slate-500 mt-0.5">/ 10</div>
+      <div className="text-xs text-gray-400 dark:text-[#8c8064] mt-0.5">/ 10</div>
     </div>
   );
 }
@@ -98,19 +98,19 @@ export default function TopProduseClient({ produse, culoare }: TopProduseClientP
     <div>
       {/* BEST PICK BAR */}
       {bestPick && (
-        <div className="bg-cyan-50 dark:bg-cyan-950/30 border border-cyan-200 dark:border-cyan-800/40 rounded-2xl p-4 mb-6 flex flex-col sm:flex-row items-start sm:items-center gap-3">
-          <div className="bg-indigo-600 text-white text-xs font-black px-3 py-1.5 rounded-xl shrink-0">
+        <div className="bg-[#faf3e0] dark:bg-[#1a1408]/30 border border-[#e6d5a8] dark:border-[#5a4718]/40 rounded-2xl p-4 mb-6 flex flex-col sm:flex-row items-start sm:items-center gap-3">
+          <div className="bg-[#b8912e] text-white text-xs font-black px-3 py-1.5 rounded-xl shrink-0">
             ⭐ Alegerea redactiei
           </div>
           <div className="flex-1 min-w-0">
             <span className="font-bold text-gray-900 dark:text-white">{bestPick.nume}</span>
-            <span className="text-gray-500 dark:text-slate-400 text-sm ml-2">— {bestPick.verdict_scurt}</span>
+            <span className="text-gray-500 dark:text-[#a89a78] text-sm ml-2">— {bestPick.verdict_scurt}</span>
           </div>
           <div className="flex items-center gap-3 shrink-0">
-            <span className="text-lg font-black text-indigo-400">{bestPick.pret_de_la.toLocaleString("ro-RO")} lei</span>
+            <span className="text-lg font-black text-[#d8c091]">{bestPick.pret_de_la.toLocaleString("ro-RO")} lei</span>
             <a
               href={`/cod-reducere/${bestPick.magazine[0]?.magazin_slug}`}
-              className="bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-bold px-4 py-2 rounded-xl transition-colors"
+              className="bg-[#b8912e] hover:bg-[#c9a63e] text-white text-sm font-bold px-4 py-2 rounded-xl transition-colors"
             >
               Cauta pret &rarr;
             </a>
@@ -120,7 +120,7 @@ export default function TopProduseClient({ produse, culoare }: TopProduseClientP
 
       {/* SORT CONTROLS */}
       <div className="flex items-center gap-2 mb-6">
-        <span className="text-sm text-gray-500 dark:text-slate-400 mr-1">Sorteaza:</span>
+        <span className="text-sm text-gray-500 dark:text-[#a89a78] mr-1">Sorteaza:</span>
         {[
           { val: "pozitie" as const, label: "Recomandate" },
           { val: "scor" as const,    label: "Scor" },
@@ -131,8 +131,8 @@ export default function TopProduseClient({ produse, culoare }: TopProduseClientP
             onClick={() => setSortare(opt.val)}
             className={`text-sm font-semibold px-4 py-1.5 rounded-xl transition-colors ${
               sortare === opt.val
-                ? "bg-indigo-600 text-white"
-                : "bg-white dark:bg-slate-800 text-gray-600 dark:text-slate-300 border border-gray-200 dark:border-slate-600 hover:border-indigo-300"
+                ? "bg-[#b8912e] text-white"
+                : "bg-white dark:bg-[#26211a] text-gray-600 dark:text-[#c8bda2] border border-gray-200 dark:border-[#473d28] hover:border-[#e3d1a6]"
             }`}
           >
             {opt.label}
@@ -142,26 +142,26 @@ export default function TopProduseClient({ produse, culoare }: TopProduseClientP
 
       {/* COMPARISON TABLE — desktop */}
       <div className="hidden lg:block mb-8 overflow-x-auto">
-        <table className="w-full bg-white dark:bg-slate-800 rounded-2xl border border-gray-200 dark:border-slate-700 overflow-hidden text-sm">
+        <table className="w-full bg-white dark:bg-[#26211a] rounded-2xl border border-gray-200 dark:border-[#37301f] overflow-hidden text-sm">
           <thead>
-            <tr className="bg-gray-50 dark:bg-slate-700/50 border-b border-gray-200 dark:border-slate-600">
-              <th className="text-left px-4 py-3 font-bold text-gray-700 dark:text-slate-200 w-48">Produs</th>
-              <th className="px-4 py-3 font-bold text-gray-700 dark:text-slate-200">Scor</th>
+            <tr className="bg-gray-50 dark:bg-[#37301f]/50 border-b border-gray-200 dark:border-[#473d28]">
+              <th className="text-left px-4 py-3 font-bold text-gray-700 dark:text-[#dcd0b8] w-48">Produs</th>
+              <th className="px-4 py-3 font-bold text-gray-700 dark:text-[#dcd0b8]">Scor</th>
               {Object.keys(produseSortate[0]?.scoruri || {}).map(k => (
-                <th key={k} className="px-3 py-3 font-bold text-gray-700 dark:text-slate-200 text-xs">{k}</th>
+                <th key={k} className="px-3 py-3 font-bold text-gray-700 dark:text-[#dcd0b8] text-xs">{k}</th>
               ))}
-              <th className="px-4 py-3 font-bold text-gray-700 dark:text-slate-200">Pret de la</th>
+              <th className="px-4 py-3 font-bold text-gray-700 dark:text-[#dcd0b8]">Pret de la</th>
               <th className="px-4 py-3"></th>
             </tr>
           </thead>
           <tbody>
             {produseSortate.map((p, i) => (
               <tr key={p.pozitie}
-                className={`border-b border-gray-100 dark:border-slate-700 last:border-0 ${i === 0 ? "bg-cyan-50/50 dark:bg-cyan-950/10" : ""}`}
+                className={`border-b border-gray-100 dark:border-[#37301f] last:border-0 ${i === 0 ? "bg-[#faf3e0]/50 dark:bg-[#1a1408]/10" : ""}`}
               >
                 <td className="px-4 py-3">
                   <div className="flex items-center gap-2">
-                    <span className="w-5 h-5 rounded-full bg-gray-200 dark:bg-slate-600 text-xs font-black flex items-center justify-center text-gray-600 dark:text-slate-300 shrink-0">
+                    <span className="w-5 h-5 rounded-full bg-gray-200 dark:bg-[#473d28] text-xs font-black flex items-center justify-center text-gray-600 dark:text-[#c8bda2] shrink-0">
                       {p.pozitie}
                     </span>
                     <div>
@@ -178,12 +178,12 @@ export default function TopProduseClient({ produse, culoare }: TopProduseClientP
                   <ScorCircle scor={p.scor_total} size="sm" />
                 </td>
                 {Object.values(p.scoruri).map((v, j) => (
-                  <td key={j} className="px-3 py-3 text-center text-xs font-bold text-gray-700 dark:text-slate-300">
+                  <td key={j} className="px-3 py-3 text-center text-xs font-bold text-gray-700 dark:text-[#c8bda2]">
                     {v}
                   </td>
                 ))}
                 <td className="px-4 py-3 text-center">
-                  <span className="font-black text-indigo-400 text-sm">
+                  <span className="font-black text-[#d8c091] text-sm">
                     {p.pret_de_la.toLocaleString("ro-RO")} lei
                   </span>
                 </td>
@@ -206,10 +206,10 @@ export default function TopProduseClient({ produse, culoare }: TopProduseClientP
           return (
             <div
               key={p.pozitie}
-              className={`bg-white dark:bg-slate-800 rounded-2xl border transition-all duration-200 overflow-hidden ${
+              className={`bg-white dark:bg-[#26211a] rounded-2xl border transition-all duration-200 overflow-hidden ${
                 p.badge === "Alegerea Redactiei"
-                  ? `border-indigo-300 dark:border-indigo-700 ring-1 ${accent.ring}`
-                  : "border-gray-200 dark:border-slate-700"
+                  ? `border-[#e3d1a6] dark:border-[#9c7a26] ring-1 ${accent.ring}`
+                  : "border-gray-200 dark:border-[#37301f]"
               }`}
             >
               {/* CARD HEADER */}
@@ -217,14 +217,14 @@ export default function TopProduseClient({ produse, culoare }: TopProduseClientP
                 <div className="flex gap-4">
                   {/* RANK + IMAGE */}
                   <div className="flex flex-col items-center gap-2 shrink-0">
-                    <div className="w-8 h-8 rounded-full bg-gray-100 dark:bg-slate-700 flex items-center justify-center font-black text-gray-500 dark:text-slate-400">
+                    <div className="w-8 h-8 rounded-full bg-gray-100 dark:bg-[#37301f] flex items-center justify-center font-black text-gray-500 dark:text-[#a89a78]">
                       {p.pozitie}
                     </div>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={p.imagine}
                       alt={p.nume}
-                      className="w-20 h-14 object-cover rounded-xl border border-gray-100 dark:border-slate-600"
+                      className="w-20 h-14 object-cover rounded-xl border border-gray-100 dark:border-[#473d28]"
                       loading="lazy"
                     />
                   </div>
@@ -239,8 +239,8 @@ export default function TopProduseClient({ produse, culoare }: TopProduseClientP
                         </span>
                       )}
                     </div>
-                    <p className="text-xs text-gray-400 dark:text-slate-500 mb-2">{p.model}</p>
-                    <p className="text-sm text-gray-600 dark:text-slate-300 leading-relaxed mb-3">{p.verdict_scurt}</p>
+                    <p className="text-xs text-gray-400 dark:text-[#8c8064] mb-2">{p.model}</p>
+                    <p className="text-sm text-gray-600 dark:text-[#c8bda2] leading-relaxed mb-3">{p.verdict_scurt}</p>
 
                     {/* SCORES */}
                     <div className="space-y-1.5 mb-3">
@@ -254,8 +254,8 @@ export default function TopProduseClient({ produse, culoare }: TopProduseClientP
                   <div className="flex flex-col items-end gap-3 shrink-0">
                     <ScorCircle scor={p.scor_total} />
                     <div className="text-right">
-                      <div className="text-xs text-gray-400 dark:text-slate-500">de la</div>
-                      <div className="text-xl font-black text-indigo-400 leading-tight">
+                      <div className="text-xs text-gray-400 dark:text-[#8c8064]">de la</div>
+                      <div className="text-xl font-black text-[#d8c091] leading-tight">
                         {p.pret_de_la.toLocaleString("ro-RO")} lei
                       </div>
                     </div>
@@ -263,12 +263,12 @@ export default function TopProduseClient({ produse, culoare }: TopProduseClientP
                 </div>
 
                 {/* PRO/CONTRA - mereu vizibil */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4 pt-4 border-t border-gray-100 dark:border-slate-700">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4 pt-4 border-t border-gray-100 dark:border-[#37301f]">
                   <div>
                     <p className="text-xs font-bold text-green-600 dark:text-green-400 mb-1.5">Avantaje</p>
                     <ul className="space-y-1">
                       {p.pro.slice(0, 3).map((item, i) => (
-                        <li key={i} className="text-xs text-gray-600 dark:text-slate-300 flex items-start gap-1.5">
+                        <li key={i} className="text-xs text-gray-600 dark:text-[#c8bda2] flex items-start gap-1.5">
                           <span className="text-green-500 shrink-0 mt-0.5">+</span>{item}
                         </li>
                       ))}
@@ -278,7 +278,7 @@ export default function TopProduseClient({ produse, culoare }: TopProduseClientP
                     <p className="text-xs font-bold text-red-500 dark:text-red-400 mb-1.5">Dezavantaje</p>
                     <ul className="space-y-1">
                       {p.contra.slice(0, 3).map((item, i) => (
-                        <li key={i} className="text-xs text-gray-600 dark:text-slate-300 flex items-start gap-1.5">
+                        <li key={i} className="text-xs text-gray-600 dark:text-[#c8bda2] flex items-start gap-1.5">
                           <span className="text-red-400 shrink-0 mt-0.5">-</span>{item}
                         </li>
                       ))}
@@ -296,8 +296,8 @@ export default function TopProduseClient({ produse, culoare }: TopProduseClientP
                       rel={mag.url_afiliat ? "noopener noreferrer nofollow" : undefined}
                       className={`inline-flex items-center gap-2 text-sm font-bold px-4 py-2 rounded-xl transition-colors ${
                         mag.recomandat
-                          ? "bg-indigo-600 hover:bg-indigo-500 text-white"
-                          : "bg-gray-100 dark:bg-slate-700 hover:bg-gray-200 dark:hover:bg-slate-600 text-gray-700 dark:text-slate-300"
+                          ? "bg-[#b8912e] hover:bg-[#c9a63e] text-white"
+                          : "bg-gray-100 dark:bg-[#37301f] hover:bg-gray-200 dark:hover:bg-[#473d28] text-gray-700 dark:text-[#c8bda2]"
                       }`}
                     >
                       {mag.recomandat && <span className="text-yellow-300">★</span>}
@@ -314,7 +314,7 @@ export default function TopProduseClient({ produse, culoare }: TopProduseClientP
                 {/* EXPAND TOGGLE */}
                 <button
                   onClick={() => setExpandat(isExpaneded ? null : p.pozitie)}
-                  className="mt-3 text-xs text-gray-400 dark:text-slate-500 hover:text-indigo-400 transition-colors flex items-center gap-1"
+                  className="mt-3 text-xs text-gray-400 dark:text-[#8c8064] hover:text-[#d8c091] transition-colors flex items-center gap-1"
                 >
                   {isExpaneded ? "▲ Ascunde detalii" : "▼ Specificatii complete si review detaliat"}
                 </button>
@@ -322,16 +322,16 @@ export default function TopProduseClient({ produse, culoare }: TopProduseClientP
 
               {/* EXPANDED DETAILS */}
               {isExpaneded && (
-                <div className="px-5 pb-5 border-t border-gray-100 dark:border-slate-700 pt-4">
+                <div className="px-5 pb-5 border-t border-gray-100 dark:border-[#37301f] pt-4">
                   {/* VERDICT DETALIAT */}
                   <div className="bg-blue-50 dark:bg-blue-950/20 border border-blue-100 dark:border-blue-800/30 rounded-xl p-4 mb-4">
                     <p className="text-xs font-bold text-blue-600 dark:text-blue-400 mb-1.5">Review detaliat</p>
-                    <p className="text-sm text-gray-700 dark:text-slate-300 leading-relaxed">{p.verdict_detaliat}</p>
+                    <p className="text-sm text-gray-700 dark:text-[#c8bda2] leading-relaxed">{p.verdict_detaliat}</p>
                   </div>
 
                   {/* TOATE SCORURILE */}
                   <div className="mb-4">
-                    <p className="text-xs font-bold text-gray-500 dark:text-slate-400 mb-2">Scoruri complete</p>
+                    <p className="text-xs font-bold text-gray-500 dark:text-[#a89a78] mb-2">Scoruri complete</p>
                     <div className="space-y-2">
                       {Object.entries(p.scoruri).map(([k, v]) => (
                         <ScorBar key={k} label={k} value={v} />
@@ -341,12 +341,12 @@ export default function TopProduseClient({ produse, culoare }: TopProduseClientP
 
                   {/* SPECIFICATII */}
                   <div>
-                    <p className="text-xs font-bold text-gray-500 dark:text-slate-400 mb-2">Specificatii tehnice</p>
+                    <p className="text-xs font-bold text-gray-500 dark:text-[#a89a78] mb-2">Specificatii tehnice</p>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
                       {Object.entries(p.specificatii).map(([k, v]) => (
-                        <div key={k} className="flex items-start gap-2 bg-gray-50 dark:bg-slate-700/50 rounded-lg px-3 py-2">
-                          <span className="text-xs font-semibold text-gray-400 dark:text-slate-500 w-28 shrink-0">{k}</span>
-                          <span className="text-xs text-gray-700 dark:text-slate-300">{v}</span>
+                        <div key={k} className="flex items-start gap-2 bg-gray-50 dark:bg-[#37301f]/50 rounded-lg px-3 py-2">
+                          <span className="text-xs font-semibold text-gray-400 dark:text-[#8c8064] w-28 shrink-0">{k}</span>
+                          <span className="text-xs text-gray-700 dark:text-[#c8bda2]">{v}</span>
                         </div>
                       ))}
                     </div>
