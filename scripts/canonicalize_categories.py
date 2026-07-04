@@ -57,22 +57,22 @@ LABEL_TO_CANON = {
 
 # ── Cuvinte-cheie in numele magazinului pt reclasificarea junk-ului ─────────
 NAME_KEYWORDS = [
-    (["moda", "fashion", "haine", "incaltaminte", "pantofi", "rochii", "textil", "sneaker", "dress", "wear"], "fashion"),
-    (["electro", "tech", "gadget", "telefon", "laptop", "pc", "gaming", "console", "digital", "smart", "foto"], "electronice"),
-    (["casa", "home", "mobila", "deco", "gradina", "brico", "menaj", "bucatarie", "furniture"], "casa"),
-    (["beauty", "cosmetic", "parfum", "machiaj", "unghii", "make", "skin", "hair", "frumus"], "beauty"),
-    (["farmac", "pharma", "sanatate", "medical", "supliment", "vitamin", "pharm", "health", "optic"], "sanatate"),
-    (["sport", "fitness", "outdoor", "bike", "bicicl", "camping", "gym"], "sport"),
-    (["copil", "kids", "baby", "bebe", "jucar", "toy", "noriel"], "copii"),
-    (["auto", "moto", "anvelop", "piese", "car-", "tuning"], "auto"),
-    (["carte", "book", "carti", "curs", "elearn", "libr", "edu"], "carti"),
-    (["travel", "calator", "turism", "hotel", "zbor", "vacan", "esim", "flight"], "calatorii"),
-    (["food", "mancare", "cafea", "coffee", "wine", "vin", "bere", "restaurant", "delivery"], "mancare"),
-    (["pet", "animal", "caine", "pisic", "dog", "cat", "zoo"], "animale"),
-    (["flor", "flower", "cadou", "gift"], "cadouri"),
-    (["bijuter", "jewel", "ceas", "watch", "aur", "argint"], "bijuterii"),
-    (["software", "hosting", "vpn", "antivirus", "saas", "app", "cloud", "seo", "domeniu"], "software"),
-    (["card", "bank", "asigur", "credit", "financ", "invest", "crypto"], "financiar"),
+    (["moda", "fashion", "haine", "incaltaminte", "pantofi", "rochii", "textil", "sneaker", "dress", "wear", "shoe", "boot", "stockx", "answear", "label", "regata", "outfit", "style", "zara", "bershka"], "fashion"),
+    (["electro", "tech", "gadget", "telefon", "laptop", "pc", "gaming", "console", "digital", "foto", "lenovo", "razer", "oneplus", "eufy", "turtlebeach", "anker", "xiaomi", "samsung", "asus", "acer", "dell", "msi", "logitech", "corsair", "gopro", "dji", "oppo", "realme", "huawei", "nokia", "belkin", "ugreen", "aukey", "headphone", "speaker", "camera", "monitor"], "electronice"),
+    (["casa", "home", "mobila", "deco", "gradina", "brico", "menaj", "bucatarie", "furniture", "mathaus", "expomob", "mobidea", "vidaxl", "daedalus", "interior", "lamp", "kitchen", "garden", "tool", "dedeman", "leroy"], "casa"),
+    (["beauty", "cosmetic", "parfum", "machiaj", "unghii", "make", "skin", "hair", "frumus", "notino", "douglas", "sephora", "loreal", "nivea", "perfume", "nail", "spa"], "beauty"),
+    (["farmac", "pharma", "sanatate", "medical", "supliment", "vitamin", "pharm", "health", "optic", "myprotein", "iherb", "catena", "drmax", "helcor", "wellness", "clinic", "dental", "dinti"], "sanatate"),
+    (["sport", "fitness", "outdoor", "bike", "bicicl", "camping", "gym", "muc-off", "decathl", "running", "yoga", "protein", "cycl", "hiking", "ski"], "sport"),
+    (["copil", "kids", "baby", "bebe", "jucar", "toy", "noriel", "maxicosi", "chicco", "lego", "carucior", "scoala"], "copii"),
+    (["auto", "moto", "anvelop", "piese", "car-", "tuning", "vehicle", "tire", "oil"], "auto"),
+    (["carte", "book", "carti", "curs", "elearn", "libr", "edu", "coursera", "udemy", "preply", "datacamp", "knowledgehut", "blinkist", "skillshare", "babbel", "busuu", "academy", "course", "learn", "teach", "lingchat", "study", "language"], "carti"),
+    (["travel", "calator", "turism", "hotel", "zbor", "vacan", "esim", "flight", "12go", "kkday", "booking", "trip", "tour", "expedia", "agoda", "getyourguide", "airalo", "saily", "rental", "airbnb"], "calatorii"),
+    (["food", "mancare", "cafea", "coffee", "wine", "vin", "bere", "restaurant", "delivery", "snack", "tea", "drink", "grocery", "bio"], "mancare"),
+    (["pet", "animal", "caine", "pisic", "dog", "cat", "zoo", "petshop", "aqua", "veterinar"], "animale"),
+    (["flor", "flower", "cadou", "gift", "bloom"], "cadouri"),
+    (["bijuter", "jewel", "ceas", "watch", "aur", "argint", "diamond", "ring"], "bijuterii"),
+    (["software", "hosting", "vpn", "antivirus", "saas", "cloud", "seo", "domeniu", "shopify", "envato", "helium", "upwork", "fiverr", "intego", "skylum", "canva", "adobe", "plugin", "wordpress", "api", "app", "soft", "host", "proxy", "server", "web", "digital", "tool", "ai", "gpt", "chat", "code", "dev", "tech-", "crm", "market.", "facturis", "invoice", "helpdesk"], "software"),
+    (["card", "bank", "asigur", "credit", "financ", "invest", "crypto", "loan", "insurance", "trading", "broker", "forex"], "financiar"),
 ]
 
 
