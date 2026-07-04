@@ -193,11 +193,16 @@ interface Banner {
   b_type: string;
 }
 
+interface HomeBanner {
+  id: number; image_url: string; landing_url: string;
+  width: number; height: number; merchant: string; name: string;
+}
 interface HomeClientProps {
   magazine: Magazin[];
   blogPosts: BlogPost[];
   recomandate: { magazin: string; nume: string; logo_url: string; categorie: string; comision: number; are_cod: boolean; oferta: string }[];
   produseCategorii: ProdusCategorie[];
+  banners?: HomeBanner[];
 }
 
 export default function HomeClient({
@@ -205,6 +210,7 @@ export default function HomeClient({
   blogPosts: initBlog,
   recomandate: initRec,
   produseCategorii: initProd,
+  banners = [],
 }: HomeClientProps) {
   const [magazine]                        = useState<Magazin[]>(initMag);
   const [blogPosts]                       = useState<BlogPost[]>(initBlog);
@@ -511,6 +517,42 @@ export default function HomeClient({
           </div>
         </div>
       </section>
+
+      {/* ─── BARA CATEGORII (stil Kuplio — mereu vizibila, orizontala) ──────── */}
+      <section className="relative z-20 bg-[#15120c] border-y border-[#26211a] shadow-lg shadow-black/30">
+        <div className="max-w-7xl mx-auto px-3">
+          <div className="flex items-center gap-1 overflow-x-auto py-2.5" style={{ scrollbarWidth: "none" }}>
+            {CATEGORII.map(c => (
+              <a key={c.slug} href={`/categorii/${c.slug}`}
+                className="group shrink-0 flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-sm font-semibold text-[#c8bda2] hover:text-[#0b0a07] hover:bg-gradient-to-br hover:from-[#e3d1a6] hover:to-[#c9a63e] transition-all whitespace-nowrap">
+                <span className="text-base leading-none">{c.emoji}</span>
+                {c.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── BANNERE PARTENERI (stil Kuplio — creative reale 2Performant) ──── */}
+      {banners.length >= 2 && (
+        <section className="bg-[#0b0a07] border-b border-[#26211a] py-10 px-4">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-lg md:text-xl font-black text-white mb-1">Promotii de la partenerii nostri</h2>
+            <p className="text-sm text-[#8c8064] mb-6">Oferte active, direct de la magazine.</p>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {banners.map(b => (
+                <a key={b.id} href={b.landing_url} target="_blank" rel="sponsored noopener noreferrer"
+                  className="block rounded-2xl overflow-hidden border border-[#26211a] hover:border-[#c9a63e] transition-colors">
+                  <div className="aspect-[300/250] bg-[#15120c] flex items-center justify-center">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={b.image_url} alt={b.name || b.merchant} className="max-w-full max-h-full object-contain" loading="lazy" />
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ─── BRAND MARQUEE — dovada vizuala a magazinelor reale ────────────── */}
       {!loading && (() => {

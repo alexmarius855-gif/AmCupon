@@ -51,11 +51,25 @@ function buildProduseCategorii(): ProdusCategorie[] {
   return [{ slug: "toate", label: "Produse populare", emoji: "🛍️", products: all.slice(0, 16) }];
 }
 
+interface HomeBanner {
+  id: number; image_url: string; landing_url: string;
+  width: number; height: number; merchant: string; name: string;
+}
+function buildBanners(): HomeBanner[] {
+  const parsed = readJSON<HomeBanner[] | { banners?: HomeBanner[] }>("banners.json", []);
+  const raw: HomeBanner[] = Array.isArray(parsed) ? parsed : (parsed?.banners || []);
+  // Dreptunghiuri/patrate potrivite pentru un grid curat (nu leaderboard/skyscraper/buton)
+  return raw
+    .filter(b => b.image_url && b.landing_url && b.width >= 250 && b.width <= 420 && b.height >= 180 && b.height <= 360)
+    .slice(0, 8);
+}
+
 export default function Page() {
   const magazine = readJSON<Parameters<typeof HomeClient>[0]["magazine"]>("output.json", []);
   const blogAll = readJSON<Parameters<typeof HomeClient>[0]["blogPosts"]>("blog-latest.json", []);
   const recomandate = readJSON<Parameters<typeof HomeClient>[0]["recomandate"]>("recomandate.json", []);
   const produseCategorii = buildProduseCategorii();
+  const banners = buildBanners();
 
   return (
     <HomeClient
@@ -63,6 +77,7 @@ export default function Page() {
       blogPosts={(blogAll || []).slice(0, 3)}
       recomandate={recomandate || []}
       produseCategorii={produseCategorii}
+      banners={banners}
     />
   );
 }
