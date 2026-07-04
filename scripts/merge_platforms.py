@@ -160,6 +160,14 @@ def main():
                 if v is not None and not isinstance(v, str):
                     pr[f] = "" if isinstance(v, bool) else str(v)
 
+    # ── Consolidare canonica a categoriilor (40 etichete fragmentate -> 18 RO) ──
+    # Prinde toate sursele; reclasifica junk-ul (Online Mall/Diverse) dupa nume.
+    try:
+        from canonicalize_categories import canonicalize
+        canonicalize(merged)
+    except Exception as e:
+        print(f"  (canonicalize skip: {e})")
+
     # Sorteaza: promotii active primul, apoi scor final
     merged.sort(key=lambda x: (
         -int(x.get("are_promotie", False)),

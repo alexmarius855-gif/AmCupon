@@ -39,23 +39,24 @@ interface Magazin {
 // Paleta curatata: fiecare categorie are un accent distinct (recunoastere instanta),
 // dar toate sunt nuante racoroase premium care se potrivesc pe fundal dark — ZERO
 // portocaliu/galben/amber (regula site-ului) si fara rosu pur (rezervat pt "expira azi").
+// Categorii CANONICE (aliniate cu canonicalize_categories.py — 18 categorii RO)
 const CATEGORII = [
-  { slug: "fashion",               emoji: "👗", label: "Fashion",         desc: "Haine, pantofi & accesorii",    accent: "#cdb98d" },
-  { slug: "electronics-itc",       emoji: "💻", label: "Electronice",     desc: "Laptopuri, telefoane, gadgeturi", accent: "#c9a63e" },
-  { slug: "beauty",                emoji: "💄", label: "Frumusete",       desc: "Cosmetice, parfumuri, unghii",   accent: "#d8c091" },
-  { slug: "home-garden",           emoji: "🏡", label: "Casa & Gradina",  desc: "Mobila, deco, unelte",          accent: "#7fae7a" },
-  { slug: "sports-outdoors",       emoji: "🏃", label: "Sport & Outdoor", desc: "Echipament sportiv & fitness",  accent: "#b8912e" },
-  { slug: "pharma",                emoji: "💊", label: "Farmacie",        desc: "Medicamente, suplimente",       accent: "#8fb98a" },
-  { slug: "babies-kids-toys",      emoji: "👶", label: "Copii & Jucarii", desc: "Produse pentru cei mici",       accent: "#cdb98d" },
-  { slug: "automotive",            emoji: "🚗", label: "Auto-Moto",       desc: "Piese & accesorii auto",        accent: "#a89a78" },
-  { slug: "books",                 emoji: "📚", label: "Carti & Edu",     desc: "Carti, e-books, cursuri",       accent: "#cdb98d" },
-  { slug: "hypermarket-groceries", emoji: "🛒", label: "Hypermarket",     desc: "Alimente & produse zilnice",    accent: "#cdb98d" },
-  { slug: "gifts-flowers",         emoji: "🎁", label: "Cadouri & Flori", desc: "Cadouri pentru orice ocazie",   accent: "#d8c091" },
-  { slug: "telecom",               emoji: "📱", label: "Telecom",         desc: "Abonamente & servicii mobile",  accent: "#e3d1a6" },
-  { slug: "pet-supplies",          emoji: "🐾", label: "Animale",         desc: "Hrana, jucarii, accesorii",     accent: "#d8c091" },
-  { slug: "health-personal-care",  emoji: "🧴", label: "Sanatate",        desc: "Ingrijire personala & wellness",accent: "#e3d1a6" },
-  { slug: "jewelry",               emoji: "💎", label: "Bijuterii",       desc: "Bijuterii & ceasuri",           accent: "#e3d1a6" },
-  { slug: "games",                 emoji: "🎮", label: "Jocuri & Gaming", desc: "Jocuri video & console",        accent: "#d8c091" },
+  { slug: "fashion",         emoji: "👗", label: "Fashion",            desc: "Haine, pantofi & accesorii",     accent: "#cdb98d" },
+  { slug: "casa-gradina",    emoji: "🏡", label: "Casă & Grădină",     desc: "Mobilă, decor, electrocasnice",  accent: "#7fae7a" },
+  { slug: "electronice",     emoji: "💻", label: "Electronice & IT",   desc: "Telefoane, laptopuri, gadgeturi",accent: "#c9a63e" },
+  { slug: "beauty",          emoji: "💄", label: "Beauty & Îngrijire", desc: "Cosmetice, parfumuri, unghii",   accent: "#d8c091" },
+  { slug: "sanatate",        emoji: "💊", label: "Sănătate & Farmacie",desc: "Farmacie, suplimente, optică",   accent: "#8fb98a" },
+  { slug: "software",        emoji: "🖥️", label: "Software & Digital",  desc: "VPN, hosting, AI, aplicații",    accent: "#e3d1a6" },
+  { slug: "sport",           emoji: "🏃", label: "Sport & Fitness",    desc: "Echipament sportiv & fitness",   accent: "#b8912e" },
+  { slug: "copii",           emoji: "👶", label: "Copii & Familie",    desc: "Jucării, bebe, îmbrăcăminte",    accent: "#cdb98d" },
+  { slug: "calatorii",       emoji: "✈️", label: "Călătorii",          desc: "Cazare, zboruri, eSIM",          accent: "#e3d1a6" },
+  { slug: "auto-moto",       emoji: "🚗", label: "Auto & Moto",        desc: "Piese, anvelope, accesorii",     accent: "#a89a78" },
+  { slug: "carti-educatie",  emoji: "📚", label: "Cărți & Educație",   desc: "Cărți, e-books, cursuri",        accent: "#cdb98d" },
+  { slug: "mancare-bauturi", emoji: "🍔", label: "Mâncare & Băuturi",  desc: "Livrare, cafea, vin, băuturi",   accent: "#d8c091" },
+  { slug: "animale",         emoji: "🐾", label: "Pet Shop",           desc: "Hrană & accesorii animale",      accent: "#d8c091" },
+  { slug: "cadouri-flori",   emoji: "🎁", label: "Cadouri & Flori",    desc: "Flori, cadouri, experiențe",     accent: "#d8c091" },
+  { slug: "bijuterii",       emoji: "💎", label: "Bijuterii & Ceasuri",desc: "Bijuterii, ceasuri, accesorii",  accent: "#e3d1a6" },
+  { slug: "financiar",       emoji: "💳", label: "Financiar",          desc: "Carduri, credite, asigurări",    accent: "#c9a63e" },
 ];
 
 
