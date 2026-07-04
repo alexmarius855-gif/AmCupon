@@ -535,7 +535,7 @@
     "verdict_m1": "Alege Dr. Max pentru o gama larga de medicamente OTC, suplimente si cosmetice internationale la preturi competitive cu livrare rapida.",
     "verdict_m2": "Alege Farmec daca vrei produse cosmetice romanesti de calitate (Gerovital, Aslavital) cu ingrediente naturale si preturi accesibile.",
     "stats1": {
-      "promotii_active": 3,
+      "promotii_active": 4,
       "cashback": "pana la 2%",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/8800/medium/8800.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2F"
@@ -548,15 +548,15 @@
     },
     "promo1": [
       {
-        "nume": "Toată lumea câștigă la Dr. Max 1-31.07",
-        "cod_cupon": ""
-      },
-      {
         "nume": "Pachet de Grijă – Iulie",
         "cod_cupon": ""
       },
       {
-        "nume": "Campanie Produse Solare - Iulie 2026",
+        "nume": "Toată lumea câștigă la Dr. Max 1-31.07",
+        "cod_cupon": ""
+      },
+      {
+        "nume": "Ofertele lunii Iulie",
         "cod_cupon": ""
       }
     ],
@@ -581,7 +581,7 @@
       },
       {
         "q": "Are Drmax coduri de reducere active?",
-        "a": "Da, Drmax are 3 oferte active pe AmCupon.ro in iulie 2026. Verificam zilnic."
+        "a": "Da, Drmax are 4 oferte active pe AmCupon.ro in iulie 2026. Verificam zilnic."
       },
       {
         "q": "Are Farmec coduri de reducere active?",
@@ -648,17 +648,17 @@
     },
     "promo1": [
       {
-        "nume": "25% REDUCERE la cumparaturi LEGO® Ninjago de minimum 249 lei | 1-12.07.2026",
+        "nume": "Summer Sales | Reduceri de pana la 50%",
         "cod_cupon": ""
       },
       {
-        "nume": "Summer Sales | Reduceri de pana la 50%",
+        "nume": "25% REDUCERE la cumparaturi LEGO® Ninjago de minimum 249 lei | 1-12.07.2026",
         "cod_cupon": ""
       }
     ],
     "promo2": [
       {
-        "nume": "Maratonul Reducerilor începe pe 1 iulie: promovează ofertele Decathlon și intră în cursă pentru comision mărit!",
+        "nume": "Maratonul Reducerilor începeut la Decathlon în luna Iulie!",
         "cod_cupon": ""
       }
     ],
