@@ -80,14 +80,16 @@ async function getExistingAlertStores(email: string, apiKey: string): Promise<st
 }
 
 // ── Welcome email ────────────────────────────────────────────────────────────
-async function sendWelcomeEmail(email: string, apiKey: string) {
+// IMPORTANT: pe Vercel Edge trebuie AWAITED inainte de a returna raspunsul,
+// altfel isolate-ul se opreste si emailul nu se trimite. Returneaza succes.
+async function sendWelcomeEmail(email: string, apiKey: string): Promise<boolean> {
   const html = `<!DOCTYPE html>
 <html lang="ro">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bun venit la AmCupon.ro!</title></head>
 <body style="margin:0;padding:0;background:#f8fafc;font-family:Arial,sans-serif;">
   <div style="max-width:600px;margin:0 auto;background:#ffffff;border-radius:16px;overflow:hidden;margin-top:24px;margin-bottom:24px;box-shadow:0 4px 24px rgba(0,0,0,0.08);">
     <!-- Header -->
-    <div style="background:linear-gradient(135deg,#4f46e5 0%,#6366f1 100%);padding:40px 32px;text-align:center;">
+    <div style="background:linear-gradient(135deg,#b8912e 0%,#c9a63e 100%);padding:40px 32px;text-align:center;">
       <div style="display:inline-flex;align-items:center;gap:8px;margin-bottom:16px;">
         <span style="background:rgba(255,255,255,0.2);color:#fff;font-weight:900;font-size:16px;padding:4px 10px;border-radius:8px;">Am</span>
         <span style="color:#fff;font-weight:900;font-size:24px;">Cupon.ro</span>
@@ -99,11 +101,11 @@ async function sendWelcomeEmail(email: string, apiKey: string) {
     <div style="padding:32px;">
       <p style="color:#374151;font-size:15px;line-height:1.6;margin:0 0 24px;">
         Salut! Îți mulțumim că te-ai abonat la <strong>AmCupon.ro</strong>.
-        De acum înainte vei fi primul care află codurile de reducere active și ofertele exclusive de la peste <strong>370 magazine partenere</strong>.
+        De acum înainte vei fi primul care află codurile de reducere active și ofertele exclusive de la peste <strong>1000 magazine partenere</strong>.
       </p>
       <!-- CTA principal -->
       <div style="text-align:center;margin:32px 0;">
-        <a href="https://amcupon.ro/#promotii" style="background:#4f46e5;color:#fff;font-weight:900;font-size:16px;padding:16px 40px;border-radius:12px;text-decoration:none;display:inline-block;">
+        <a href="https://amcupon.ro/#promotii" style="background:#b8912e;color:#fff;font-weight:900;font-size:16px;padding:16px 40px;border-radius:12px;text-decoration:none;display:inline-block;">
           Vezi ofertele active acum →
         </a>
       </div>
@@ -112,11 +114,11 @@ async function sendWelcomeEmail(email: string, apiKey: string) {
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:24px;">
         ${[
           {emoji:"👗",label:"Fashion",href:"/categorii/fashion"},
-          {emoji:"💻",label:"Electronice",href:"/categorii/electronics-itc"},
+          {emoji:"💻",label:"Electronice",href:"/categorii/electronice"},
           {emoji:"💄",label:"Beauty",href:"/categorii/beauty"},
-          {emoji:"💊",label:"Farmacie",href:"/farmacie"},
-          {emoji:"🏡",label:"Casa & Gradina",href:"/categorii/home-garden"},
-          {emoji:"🏃",label:"Sport",href:"/categorii/sports-outdoors"},
+          {emoji:"💊",label:"Sănătate",href:"/categorii/sanatate"},
+          {emoji:"🏡",label:"Casă & Grădină",href:"/categorii/casa-gradina"},
+          {emoji:"🏃",label:"Sport",href:"/categorii/sport"},
         ].map(c => `
         <a href="https://amcupon.ro${c.href}" style="display:flex;align-items:center;gap:8px;padding:10px 14px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:10px;text-decoration:none;color:#374151;font-size:13px;font-weight:600;">
           <span>${c.emoji}</span>${c.label}
@@ -127,7 +129,7 @@ async function sendWelcomeEmail(email: string, apiKey: string) {
       <div style="margin-bottom:32px;">
         ${["emag.ro","fashiondays.ro","drmax.ro","noriel.ro","carturesti.ro"].map(m => {
           const label = m.split(".")[0].charAt(0).toUpperCase() + m.split(".")[0].slice(1);
-          return `<a href="https://amcupon.ro/cod-reducere/${m}" style="display:inline-block;margin:4px;padding:6px 14px;background:#eef2ff;border:1px solid #c7d2fe;border-radius:20px;text-decoration:none;color:#4338ca;font-size:13px;font-weight:700;">Cod ${label}</a>`;
+          return `<a href="https://amcupon.ro/cod-reducere/${m}" style="display:inline-block;margin:4px;padding:6px 14px;background:#faf3e0;border:1px solid #e6d5a8;border-radius:20px;text-decoration:none;color:#8a6a1e;font-size:13px;font-weight:700;">Cod ${label}</a>`;
         }).join("")}
       </div>
       <!-- Extensie -->
@@ -168,7 +170,9 @@ async function sendWelcomeEmail(email: string, apiKey: string) {
     // Brevo (cauza cunoscuta, vezi send_newsletter.py), vrem sa apara in logs.
     const body = await res.text().catch(() => "");
     console.error("[newsletter] Welcome email failed:", res.status, body);
+    return false;
   }
+  return true;
 }
 
 export async function OPTIONS(request: Request) {
@@ -251,12 +255,15 @@ export async function POST(request: Request) {
     if (res.status === 201 || res.status === 204) {
       // Email de bun venit doar pt. abonarile generice — alertele de pret
       // au deja confirmare inline in PriceAlert.tsx, nu trimitem dublu.
-      if (!magazin) sendWelcomeEmail(email, API_KEY).catch(() => {});
-      return Response.json({ ok: true }, { headers: corsHeaders });
+      // AWAITED (nu fire-and-forget): pe Edge altfel nu apuca sa se trimita.
+      const welcomeSent = magazin ? false : await sendWelcomeEmail(email, API_KEY);
+      return Response.json({ ok: true, welcomeSent }, { headers: corsHeaders });
     }
     const data = await res.json().catch(() => ({}));
     if (res.status === 400 && (data?.code === "duplicate_parameter" || data?.code === "contact_already_in_list")) {
-      return Response.json({ ok: true, existing: true }, { headers: corsHeaders });
+      // Contact deja existent — trimitem totusi welcome (abonare generica), awaited.
+      const welcomeSent = magazin ? false : await sendWelcomeEmail(email, API_KEY);
+      return Response.json({ ok: true, existing: true, welcomeSent }, { headers: corsHeaders });
     }
     console.error("[newsletter] Brevo API error:", res.status, JSON.stringify(data));
     // Returnam mesaj mai specific in functie de tipul erorii
