@@ -31,8 +31,10 @@ function numeAfisat(magazin: string): string {
 export default function Page() {
   const mags = readJSON<Magazin[]>("output.json", []);
   const withPromo = mags.filter(m => m.are_promotie && m.logo_url);
+  const codeOf = (m: Magazin) => (m.promotii || []).map(p => p.cod_cupon).find(Boolean) || "";
   const offers = withPromo
-    .sort((a, b) => (b.sales_number || 0) - (a.sales_number || 0))
+    // magazinele CU cod primele (ca sa se vada reveal-ul), apoi dupa popularitate
+    .sort((a, b) => (codeOf(b) ? 1 : 0) - (codeOf(a) ? 1 : 0) || (b.sales_number || 0) - (a.sales_number || 0))
     .slice(0, 12)
     .map(m => ({
       magazin: m.magazin,
@@ -40,7 +42,7 @@ export default function Page() {
       logo: m.logo_url || "",
       categorie: m.categorie || "Magazin",
       promo: m.promotii?.[0]?.nume || "Oferta activa",
-      cod: (m.promotii || []).some(p => p.cod_cupon),
+      code: codeOf(m),
     }));
 
   const nrCoduri = mags.filter(m => (m.promotii || []).some(p => p.cod_cupon)).length;
