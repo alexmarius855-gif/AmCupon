@@ -461,7 +461,7 @@ export default async function PaginaMagazin({
         name: `Codul de reducere ${nume} este verificat?`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: `Da. AmCupon.ro verifică și actualizează zilnic toate codurile ${nume}. Afișăm rata de succes (${m.procent_succes}%) și zilele rămase de valabilitate pentru fiecare cod în parte.`,
+          text: `Da. AmCupon.ro verifică și actualizează zilnic toate codurile ${nume}, împreună cu zilele rămase de valabilitate pentru fiecare cod în parte.`,
         },
       },
       {

@@ -124,8 +124,7 @@ function MagazinCard({ m, revealed, copiat, onCopiere }: {
         {promo && promo.zile_ramase <= 3 && (
           <span className="text-xs font-semibold text-red-400">⏰ Expiră în {promo.zile_ramase === 0 ? "azi" : `${promo.zile_ramase}z`}</span>
         )}
-        {m.cod_cupon && <span className="text-xs text-emerald-400 font-semibold">✓ {m.procent_succes}% succes</span>}
-        {m.folosit_de > 0 && <span className="text-xs text-[#8c8064]">👤 {m.folosit_de}x</span>}
+        {m.are_promotie && <span className="text-xs text-emerald-400 font-semibold">✓ verificat azi</span>}
       </div>
 
       <div className="px-4 pb-5">

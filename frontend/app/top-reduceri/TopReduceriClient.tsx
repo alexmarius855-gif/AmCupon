@@ -129,13 +129,8 @@ function MagazinCard({
           )}
 
           <div className="flex items-center gap-3 mt-1.5">
-            <span className="text-xs text-[#8c8064]">
-              {m.procent_succes}% succes
-            </span>
-            {m.folosit_de > 0 && (
-              <span className="text-xs text-[#8c8064]">
-                {m.folosit_de.toLocaleString()} utilizatori
-              </span>
+            {m.are_promotie && (
+              <span className="text-xs text-emerald-400 font-semibold">✓ verificat azi</span>
             )}
           </div>
         </div>
