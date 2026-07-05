@@ -125,7 +125,7 @@ export default function NouClient({ offers, stats }: Props) {
         <div className="flex whitespace-nowrap" style={{ animation: "marquee 32s linear infinite", width: "max-content" }}>
           {[...ticker, ...ticker].map((t, i) => (
             <span key={i} className="mx-6 text-sm text-white/70 inline-flex items-center gap-2">
-              <span className="text-orange-400">🔥</span>
+              <span className="text-[#e3d1a6]">🔥</span>
               <span className="text-white/40">acum {t.t} min —</span>
               <span className="font-bold text-white">{t.cod ? "cod nou" : "oferta noua"} la {t.nume}</span>
             </span>
@@ -172,7 +172,7 @@ export default function NouClient({ offers, stats }: Props) {
                           <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />verificat azi
                         </span>
                         {o.zile > 0 && o.zile <= 3 && (
-                          <span className="text-[10px] font-bold text-rose-300 bg-rose-500/15 border border-rose-500/25 px-1.5 py-0.5 rounded-full">⏳ expira in {o.zile}z</span>
+                          <span className="text-[10px] font-bold text-[#e3d1a6] bg-[#c9a63e]/15 border border-[#c9a63e]/25 px-1.5 py-0.5 rounded-full">⏳ expira in {o.zile}z</span>
                         )}
                       </span>
                     </span>

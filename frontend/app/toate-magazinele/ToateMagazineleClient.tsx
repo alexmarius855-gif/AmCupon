@@ -55,14 +55,14 @@ const CATEGORII_FILTRE = [
 ];
 
 const CULORI_BG = [
-  "from-blue-500 to-[#b8912e]",
-  "from-emerald-500 to-teal-600",
-  "from-purple-500 to-violet-600",
-  "from-pink-500 to-rose-600",
-  "from-[#c9a63e] to-blue-600",
-  "from-teal-500 to-[#b8912e]",
-  "from-red-500 to-pink-600",
-  "from-[#d8c091] to-blue-500",
+  "from-[#c9a63e] to-[#b8912e]",
+  "from-emerald-500 to-[#c9a63e]",
+  "from-[#c9a63e] to-[#c9a63e]",
+  "from-[#c9a63e] to-[#c9a63e]",
+  "from-[#c9a63e] to-[#c9a63e]",
+  "from-[#c9a63e] to-[#b8912e]",
+  "from-red-500 to-[#c9a63e]",
+  "from-[#d8c091] to-[#c9a63e]",
 ];
 
 export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[] }) {

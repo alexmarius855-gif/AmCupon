@@ -25,7 +25,7 @@ const PLATFORME_INTL = [
     pret: "59$/luna (Plus)",
     comision: "45% din abonament",
     badge: "Certificate globale",
-    badgeColor: "bg-blue-600",
+    badgeColor: "bg-[#b8912e]",
     url: LINK_COURSERA,
     program: "coursera.org/affiliates",
     beneficii: ["Certificari Google, IBM, Meta", "7 zile trial gratuit", "Specializari complete (3-6 luni)", "Proiecte practice incluse", "Acces la 7000+ cursuri"],
@@ -36,7 +36,7 @@ const PLATFORME_INTL = [
     pret: "de la 14.99$ (promotii frecvente)",
     comision: "15% per vanzare",
     badge: "Cel mai ieftin",
-    badgeColor: "bg-purple-600",
+    badgeColor: "bg-[#b8912e]",
     url: LINK_UDEMY,
     program: "udemy.com/affiliate",
     beneficii: ["210.000+ cursuri disponibile", "Achizitie unica — acces pe viata", "Promotii la 9.99-14.99$ frecvente", "Certificate de absolvire", "App mobila inclusa"],
@@ -47,7 +47,7 @@ const PLATFORME_INTL = [
     pret: "inclus cu LinkedIn Premium",
     comision: "program indirect via LinkedIn",
     badge: "Business & Career",
-    badgeColor: "bg-blue-700",
+    badgeColor: "bg-[#b8912e]",
     url: LINK_LINKEDIN,
     program: "linkedin.com/affiliate",
     beneficii: ["Integrat cu profilul LinkedIn", "Cursuri de la experti reali", "Certificate vizibile pe profil", "1 luna trial gratuit", "Recomandate de angajatori"],
@@ -92,7 +92,7 @@ export default function CursuriOnlinePage() {
           </nav>
           <div className="text-5xl mb-4">🎓</div>
           <h1 className="text-4xl md:text-5xl font-black text-white mb-4">
-            Cursuri Online cu <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #b8912e, #a78bfa)" }}>Reducere</span> 2026
+            Cursuri Online cu <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #b8912e, #d8c091)" }}>Reducere</span> 2026
           </h1>
           <p className="text-[#a89a78] text-lg max-w-2xl mx-auto">
             Platforme e-learning si cursuri cu certificare verificate. Investitia in educatie cu cel mai mare ROI din 2026.

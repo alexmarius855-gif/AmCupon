@@ -17,7 +17,7 @@ function Stele({ value, onChange }: { value: number; onChange?: (v: number) => v
           className={`text-2xl transition-transform ${onChange ? "hover:scale-110 cursor-pointer" : "cursor-default"}`}
           aria-label={`${n} stele`}
         >
-          <span className={(hover || value) >= n ? "text-amber-400" : "text-[#dcd0b8]"}>&#9733;</span>
+          <span className={(hover || value) >= n ? "text-[#e3d1a6]" : "text-[#dcd0b8]"}>&#9733;</span>
         </button>
       ))}
     </div>
@@ -89,7 +89,7 @@ export default function ReviewSection({ magazin }: { magazin: string }) {
           <h2 className="text-lg font-black text-white">Recenzii cumparatori</h2>
           {medieStele && (
             <div className="flex items-center gap-2 mt-1">
-              <span className="text-2xl font-black text-amber-400">{medieStele}</span>
+              <span className="text-2xl font-black text-[#e3d1a6]">{medieStele}</span>
               <Stele value={Math.round(Number(medieStele))} />
               <span className="text-xs text-[#8c8064]">({reviews.length} {reviews.length === 1 ? "recenzie" : "recenzii"})</span>
             </div>

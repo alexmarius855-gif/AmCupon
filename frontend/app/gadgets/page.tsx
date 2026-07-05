@@ -63,7 +63,7 @@ export default function GadgetsPage() {
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-[#9c7a26] via-blue-700 to-[#8a6a1e] text-white py-12 px-4">
+        <section className="bg-gradient-to-br from-[#9c7a26] via-[#c9a63e] to-[#8a6a1e] text-white py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">📡</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Gadgets & Tech {an}</h1>
@@ -78,7 +78,7 @@ export default function GadgetsPage() {
               ].map(s => (
                 <div key={s.label} className="bg-white/15 rounded-2xl py-3 px-2">
                   <div className="text-xl font-black">{s.val}</div>
-                  <div className="text-xs text-blue-200">{s.label}</div>
+                  <div className="text-xs text-[#e3d1a6]">{s.label}</div>
                 </div>
               ))}
             </div>
@@ -100,7 +100,7 @@ export default function GadgetsPage() {
                 { emoji:"📱", label:"Telefoane", href:"/blog/cel-mai-bun-telefon-pentru-poze-2026" },
               ].map(c => (
                 <a key={c.label} href={c.href}
-                  className="flex items-center gap-2 bg-[#15120c] hover:bg-blue-100 text-blue-800 font-semibold text-sm px-4 py-2 rounded-full transition-colors border border-blue-200">
+                  className="flex items-center gap-2 bg-[#15120c] hover:bg-[#c9a63e] text-[#c9a63e] font-semibold text-sm px-4 py-2 rounded-full transition-colors border border-[#c9a63e]">
                   <span>{c.emoji}</span>{c.label}
                 </a>
               ))}
@@ -136,13 +136,13 @@ export default function GadgetsPage() {
                         )}
                         <div>
                           <p className="font-bold text-white text-sm">{nume}</p>
-                          {m.cod_cupon && <span className="text-xs text-blue-600 font-bold">COD REDUCERE</span>}
+                          {m.cod_cupon && <span className="text-xs text-[#c9a63e] font-bold">COD REDUCERE</span>}
                         </div>
                       </div>
                       {promo && <p className="text-[#a89a78] text-xs line-clamp-2 mb-2">{promo.nume}</p>}
                       <div className="flex justify-between items-center">
                         <span className="text-xs text-[#8c8064]">{m.promotii.length} oferte</span>
-                        <span className="text-xs text-blue-500 font-semibold group-hover:text-blue-600">Vezi →</span>
+                        <span className="text-xs text-[#c9a63e] font-semibold group-hover:text-[#c9a63e]">Vezi →</span>
                       </div>
                     </a>
                   );
@@ -171,7 +171,7 @@ export default function GadgetsPage() {
                         {nume[0]}
                       </div>
                     )}
-                    <span className="text-sm font-semibold text-[#c8bda2] group-hover:text-blue-600 transition-colors truncate">{nume}</span>
+                    <span className="text-sm font-semibold text-[#c8bda2] group-hover:text-[#c9a63e] transition-colors truncate">{nume}</span>
                   </a>
                 );
               })}
@@ -184,8 +184,8 @@ export default function GadgetsPage() {
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {ARTICOLE_GADGET.map(a => (
                 <a key={a.href} href={a.href}
-                  className="flex items-center gap-2 bg-white rounded-xl px-4 py-3 text-sm font-semibold text-[#c8bda2] hover:text-blue-600 hover:border-[#c9a63e]/40 border border-[#26211a] transition-all group">
-                  <span className="text-blue-400 group-hover:text-blue-500">→</span>
+                  className="flex items-center gap-2 bg-white rounded-xl px-4 py-3 text-sm font-semibold text-[#c8bda2] hover:text-[#c9a63e] hover:border-[#c9a63e]/40 border border-[#26211a] transition-all group">
+                  <span className="text-[#e3d1a6] group-hover:text-[#c9a63e]">→</span>
                   {a.title}
                 </a>
               ))}

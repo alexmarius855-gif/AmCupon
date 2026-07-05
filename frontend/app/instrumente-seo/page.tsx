@@ -38,7 +38,7 @@ const TOOLS_SEO = [
     nota: "9.6/10",
     pret: "de la 99$/luna",
     highlight: "Best backlink database",
-    culoare: "bg-blue-600",
+    culoare: "bg-[#b8912e]",
     desc: "Cea mai mare baza de date de backlink-uri din lume. Perfect pentru link building, analiza site-urilor concurentilor si research de continut. Site Explorer, Keywords Explorer, Site Audit.",
     features: ["Site Explorer", "Keywords Explorer", "Content Explorer", "Site Audit", "Rank Tracker", "Web Explorer"],
   },
@@ -49,7 +49,7 @@ const TOOLS_SEO = [
     nota: "9.2/10",
     pret: "de la 99$/luna",
     highlight: "Domain Authority inventor",
-    culoare: "bg-blue-500",
+    culoare: "bg-[#c9a63e]",
     desc: "Inventatorul metricii Domain Authority. Moz Pro ofera keyword research, site crawl, rank tracking si link research. Ideal pentru agentii SEO si freelanceri.",
     features: ["Keyword Research", "Link Explorer", "Site Crawl", "Rank Tracking", "On-Page Grader", "MozBar Extension"],
   },
@@ -111,10 +111,10 @@ export default function InstrumenteSeoPage() {
         </nav>
 
         {/* Hero */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-emerald-950 via-[#15120c] to-teal-950 py-16 px-4">
+        <section className="relative overflow-hidden bg-gradient-to-br from-emerald-950 via-[#15120c] to-[#1a1408] py-16 px-4">
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute top-0 left-1/3 w-80 h-80 bg-emerald-600/20 rounded-full blur-3xl" />
-            <div className="absolute bottom-0 right-1/3 w-64 h-64 bg-teal-600/15 rounded-full blur-3xl" />
+            <div className="absolute bottom-0 right-1/3 w-64 h-64 bg-[#c9a63e]/15 rounded-full blur-3xl" />
           </div>
           <div className="relative max-w-6xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
@@ -195,15 +195,15 @@ export default function InstrumenteSeoPage() {
         <section className="bg-[#15120c] border-t border-[#26211a] py-12 px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-8">
-              <p className="text-xs font-bold text-teal-400 uppercase tracking-widest mb-2">100% GRATUIT</p>
+              <p className="text-xs font-bold text-[#e3d1a6] uppercase tracking-widest mb-2">100% GRATUIT</p>
               <h2 className="text-2xl font-black text-white">Instrumente SEO gratuite recomandate</h2>
               <p className="text-[#a89a78] text-sm mt-2">Start ideal daca esti la inceput sau ai un buget limitat</p>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {TOOLS_GRATUITE.map((t, i) => (
-                <div key={t.nume} className="bg-[#26211a] border border-[#37301f] rounded-2xl p-5 hover:border-teal-500/30 transition-all duration-200">
+                <div key={t.nume} className="bg-[#26211a] border border-[#37301f] rounded-2xl p-5 hover:border-[#c9a63e]/30 transition-all duration-200">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 bg-teal-600/20 border border-teal-500/30 rounded-xl flex items-center justify-center text-xl">{t.emoji}</div>
+                    <div className="w-10 h-10 bg-[#c9a63e]/20 border border-[#c9a63e]/30 rounded-xl flex items-center justify-center text-xl">{t.emoji}</div>
                     <h3 className="font-bold text-white text-sm">{t.nume}</h3>
                   </div>
                   <p className="text-xs text-[#a89a78] leading-relaxed">{t.desc}</p>
@@ -236,7 +236,7 @@ export default function InstrumenteSeoPage() {
         </section>
 
         {/* CTA Newsletter / Alerte */}
-        <section className="bg-gradient-to-r from-emerald-900/50 to-teal-900/50 border-t border-emerald-500/20 py-10 px-4">
+        <section className="bg-gradient-to-r from-emerald-900/50 to-[#c9a63e]/50 border-t border-emerald-500/20 py-10 px-4">
           <div className="max-w-2xl mx-auto text-center">
             <div className="text-3xl mb-3">🔔</div>
             <h2 className="text-xl font-black text-white mb-2">Vrei alerte cand apare un cod Semrush?</h2>

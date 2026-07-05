@@ -61,7 +61,7 @@ function ProdusCard({
 
         {/* TOP DEAL badge — dreapta sus */}
         {p.discount_pct >= 30 && (
-          <span className="absolute top-2 right-2 bg-gradient-to-r from-[#b8912e] to-violet-600 text-white text-[9px] font-black px-1.5 py-0.5 rounded-full shadow uppercase tracking-wide">
+          <span className="absolute top-2 right-2 bg-gradient-to-r from-[#b8912e] to-[#c9a63e] text-white text-[9px] font-black px-1.5 py-0.5 rounded-full shadow uppercase tracking-wide">
             TOP DEAL
           </span>
         )}
@@ -266,7 +266,7 @@ export default function ProduseCategorieClient({
 
           <div className="text-5xl mb-4">{catMeta.emoji}</div>
           <h1 className="text-4xl md:text-5xl font-black tracking-tight leading-tight mb-3">
-            <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #8b5cf6 0%, #b8912e 100%)" }}>
+            <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #c9a63e 0%, #b8912e 100%)" }}>
               {catMeta.h1}
             </span>
           </h1>

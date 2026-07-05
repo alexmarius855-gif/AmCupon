@@ -64,7 +64,7 @@ export default function CalatoriePage() {
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-[#9c7a26] via-blue-700 to-[#8a6a1e] text-white py-12 px-4">
+        <section className="bg-gradient-to-br from-[#9c7a26] via-[#c9a63e] to-[#8a6a1e] text-white py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">✈️</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Vacanțe & Călătorii cu Reducere {an}</h1>
@@ -89,7 +89,7 @@ export default function CalatoriePage() {
                 <div className="text-3xl mb-2">{d.emoji}</div>
                 <h3 className="font-bold text-white text-sm mb-1">{d.label}</h3>
                 <p className="text-xs text-[#a89a78] mb-3">{d.desc}</p>
-                <p className="text-xs font-bold text-sky-500 group-hover:text-sky-600">Ghid & reduceri →</p>
+                <p className="text-xs font-bold text-[#c9a63e] group-hover:text-[#c9a63e]">Ghid & reduceri →</p>
               </a>
             ))}
           </div>
@@ -142,7 +142,7 @@ export default function CalatoriePage() {
                       <p className="text-[#8c8064] text-xs italic">Verifică ofertele curente</p>
                     )}
                     <div className="flex justify-end mt-2">
-                      <span className="text-xs text-sky-500 font-semibold group-hover:text-sky-600">Vezi →</span>
+                      <span className="text-xs text-[#c9a63e] font-semibold group-hover:text-[#c9a63e]">Vezi →</span>
                     </div>
                   </a>
                 );
@@ -171,7 +171,7 @@ export default function CalatoriePage() {
                   <span className="font-black text-white">{p.nume}</span>
                 </div>
                 <p className="text-[#a89a78] text-xs">{p.desc}</p>
-                <p className="text-xs font-bold text-sky-500 mt-1">Vezi oferte →</p>
+                <p className="text-xs font-bold text-[#c9a63e] mt-1">Vezi oferte →</p>
               </a>
             ))}
           </div>

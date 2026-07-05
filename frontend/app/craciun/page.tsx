@@ -64,11 +64,11 @@ const TOP_CRACIUN = [
 
 const IDEI_CADOURI = [
   { emoji: "🧸", titlu: "Jucării copii", href: "/categorii/toys", culoare: "bg-yellow-100 text-[#e3d1a6]" },
-  { emoji: "💄", titlu: "Parfumuri & Beauty", href: "/categorii/beauty", culoare: "bg-pink-100 text-[#e3d1a6]" },
-  { emoji: "📱", titlu: "Electronice", href: "/categorii/electronics", culoare: "bg-blue-100 text-[#e3d1a6]" },
-  { emoji: "👗", titlu: "Modă & Fashion", href: "/categorii/fashion", culoare: "bg-purple-100 text-[#e3d1a6]" },
+  { emoji: "💄", titlu: "Parfumuri & Beauty", href: "/categorii/beauty", culoare: "bg-[#c9a63e] text-[#e3d1a6]" },
+  { emoji: "📱", titlu: "Electronice", href: "/categorii/electronics", culoare: "bg-[#c9a63e] text-[#e3d1a6]" },
+  { emoji: "👗", titlu: "Modă & Fashion", href: "/categorii/fashion", culoare: "bg-[#c9a63e] text-[#e3d1a6]" },
   { emoji: "📚", titlu: "Cărți & Jocuri", href: "/categorii/books", culoare: "bg-green-100 text-[#e3d1a6]" },
-  { emoji: "🏋️", titlu: "Sport & Outdoor", href: "/categorii/sport", culoare: "bg-teal-100 text-[#e3d1a6]" },
+  { emoji: "🏋️", titlu: "Sport & Outdoor", href: "/categorii/sport", culoare: "bg-[#c9a63e] text-[#e3d1a6]" },
 ];
 
 function loadData(): Magazin[] {
@@ -141,7 +141,7 @@ export default function CraciunPage() {
         </nav>
 
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#9c7a26] via-blue-700 to-[#8a6a1e] text-white">
+        <section className="bg-gradient-to-br from-[#9c7a26] via-[#c9a63e] to-[#8a6a1e] text-white">
           <div className="max-w-6xl mx-auto px-4 py-14 text-center">
             <div className="text-5xl mb-4">🎄</div>
             <h1 className="text-4xl md:text-5xl font-black mb-4 leading-tight">

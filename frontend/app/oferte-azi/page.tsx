@@ -313,7 +313,7 @@ export default async function OferteAziPage(
 
             <div className="flex flex-wrap justify-center gap-3">
               <div className="bg-[#15120c] border border-[#26211a] rounded-2xl px-4 py-2.5 text-sm font-bold text-white flex items-center gap-2">
-                <span className="text-amber-400">🎟</span>
+                <span className="text-[#e3d1a6]">🎟</span>
                 {nrCoduri} coduri de reducere
               </div>
               <div className="bg-[#15120c] border border-[#26211a] rounded-2xl px-4 py-2.5 text-sm font-bold text-white flex items-center gap-2">
@@ -395,7 +395,7 @@ export default async function OferteAziPage(
 
         {/* CTA Newsletter ──────────────────────────────────────────────── */}
         <div className="max-w-6xl mx-auto px-4 pb-16">
-          <div className="relative bg-gradient-to-r from-[#c9a63e]/10 via-[#15120c] to-violet-500/10 border border-[#c9a63e]/15 rounded-3xl p-8 md:p-12 text-center overflow-hidden">
+          <div className="relative bg-gradient-to-r from-[#c9a63e]/10 via-[#15120c] to-[#c9a63e]/10 border border-[#c9a63e]/15 rounded-3xl p-8 md:p-12 text-center overflow-hidden">
             <div className="absolute inset-0 pointer-events-none" style={{background:"radial-gradient(ellipse 80% 100% at 50% 100%, rgba(6,182,212,0.07) 0%, transparent 70%)"}} />
             <div className="relative">
               <span className="inline-flex items-center gap-2 bg-[#c9a63e]/10 border border-[#c9a63e]/20 text-[#d8c091] text-xs font-black px-3 py-1 rounded-full mb-5 uppercase tracking-widest">

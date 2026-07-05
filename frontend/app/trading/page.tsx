@@ -88,7 +88,7 @@ const PLATFORME = [
     ],
     dezavantaje: ["Interfata complexa pentru incepatori", "Nu e disponibil app pe unele tari UE"],
     ideal: "Traderi activi crypto, staking pe termen lung",
-    culoare: "from-yellow-600 to-amber-800",
+    culoare: "from-yellow-600 to-[#1a1408]",
     culoare_accent: "yellow",
   },
   {
@@ -114,7 +114,7 @@ const PLATFORME = [
     ],
     dezavantaje: ["Spread mai mare la crypto vs Binance", "Comision retragere $5", "USD ca moneda de baza"],
     ideal: "Incepatori, copy trading, portofolii diversificate",
-    culoare: "from-green-700 to-teal-900",
+    culoare: "from-green-700 to-[#1a1408]",
     culoare_accent: "green",
   },
   {
@@ -122,7 +122,7 @@ const PLATFORME = [
     name: "Trading212",
     tagline: "Actiuni fractionate si ISA — ideal pentru incepatori europeni",
     badge: "Fractionale",
-    badgeColor: "bg-blue-600",
+    badgeColor: "bg-[#b8912e]",
     emoji: "📊",
     tip: "Actiuni, ETF-uri, CFD-uri",
     pret_min: "1 EUR minim",
@@ -140,7 +140,7 @@ const PLATFORME = [
     ],
     dezavantaje: ["Fara suport telefonic", "Selectie mai mica decat XTB"],
     ideal: "Incepatori cu bugete mici, DCA fractionate",
-    culoare: "from-blue-700 to-[#2e2410]",
+    culoare: "from-[#c9a63e] to-[#2e2410]",
     culoare_accent: "blue",
   },
 ];
@@ -182,10 +182,10 @@ export default function TradingPage() {
         </nav>
 
         {/* Hero */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-emerald-950 via-[#15120c] to-blue-950 py-16 px-4">
+        <section className="relative overflow-hidden bg-gradient-to-br from-emerald-950 via-[#15120c] to-[#1a1408] py-16 px-4">
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute top-0 left-1/4 w-96 h-96 bg-emerald-600/15 rounded-full blur-3xl" />
-            <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-blue-600/15 rounded-full blur-3xl" />
+            <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-[#c9a63e]/15 rounded-full blur-3xl" />
           </div>
           <div className="relative max-w-6xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
@@ -195,7 +195,7 @@ export default function TradingPage() {
             <div className="text-6xl mb-5 drop-shadow-2xl">📈</div>
             <h1 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">
               Cel mai bun Broker Romania{" "}
-              <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #34d399, #3b82f6)" }}>
+              <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #34d399, #b8912e)" }}>
                 {an}
               </span>
             </h1>
@@ -211,8 +211,8 @@ export default function TradingPage() {
         </section>
 
         {/* Disclaimer */}
-        <div className="bg-amber-950/50 border-b border-amber-800/40">
-          <div className="max-w-6xl mx-auto px-4 py-3 text-xs text-amber-300/80 text-center">
+        <div className="bg-[#c9a63e]/50 border-b border-[#c9a63e]/40">
+          <div className="max-w-6xl mx-auto px-4 py-3 text-xs text-[#e3d1a6]/80 text-center">
             ⚠️ Investitiile implica riscuri. Acest ghid are scop informativ, nu constituie sfat financiar. Tranzactionarea produselor leverage comporta risc ridicat de pierdere a capitalului.
           </div>
         </div>
@@ -285,7 +285,7 @@ export default function TradingPage() {
                       <ul className="space-y-1.5">
                         {p.dezavantaje.map(d => (
                           <li key={d} className="flex items-start gap-2 text-sm text-[#a89a78]">
-                            <span className="text-amber-400 mt-0.5 shrink-0">!</span>
+                            <span className="text-[#e3d1a6] mt-0.5 shrink-0">!</span>
                             {d}
                           </li>
                         ))}
@@ -328,7 +328,7 @@ export default function TradingPage() {
                     <th className="py-3 px-4 text-[#d8c091] font-bold">XTB</th>
                     <th className="py-3 px-4 text-yellow-400 font-bold">Binance</th>
                     <th className="py-3 px-4 text-green-400 font-bold">eToro</th>
-                    <th className="py-3 px-4 text-blue-400 font-bold">T212</th>
+                    <th className="py-3 px-4 text-[#e3d1a6] font-bold">T212</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -369,14 +369,14 @@ export default function TradingPage() {
 
         {/* Revolut bonus */}
         <section className="max-w-6xl mx-auto px-4 pb-8">
-          <div className="bg-gradient-to-r from-violet-900 to-[#2e2410] border border-violet-700/40 rounded-3xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="bg-gradient-to-r from-[#1a1408] to-[#2e2410] border border-[#c9a63e]/40 rounded-3xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div>
-              <p className="text-xs font-bold text-violet-300 uppercase tracking-widest mb-1">BONUS</p>
+              <p className="text-xs font-bold text-[#e3d1a6] uppercase tracking-widest mb-1">BONUS</p>
               <h3 className="text-xl font-black text-white mb-1">Revolut — actiuni si crypto in aplicatie</h3>
               <p className="text-[#c8bda2] text-sm">Deschizi cont gratuit si cumperi actiuni fractionate + crypto direct din app. Ideal ca portofel secundar.</p>
             </div>
             <a href={LINK_REVOLUT} target="_blank" rel="nofollow noopener noreferrer"
-              className="shrink-0 bg-white text-violet-900 font-black text-sm py-3 px-6 rounded-2xl hover:bg-violet-50 transition-colors whitespace-nowrap">
+              className="shrink-0 bg-white text-[#c9a63e] font-black text-sm py-3 px-6 rounded-2xl hover:bg-[#c9a63e] transition-colors whitespace-nowrap">
               Cont Revolut gratuit →
             </a>
           </div>

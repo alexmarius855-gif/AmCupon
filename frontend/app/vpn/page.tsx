@@ -33,7 +33,7 @@ const VPN_LIST = [
     name: "NordVPN",
     tagline: "Cel mai complet VPN — lider mondial cu 6000+ servere",
     badge: "Recomandat #1",
-    badgeColor: "bg-blue-600",
+    badgeColor: "bg-[#b8912e]",
     emoji: "🏆",
     pret_luna: "2.99€",
     pret_nota: "plan 2 ani",
@@ -56,7 +56,7 @@ const VPN_LIST = [
     name: "Surfshark",
     tagline: "Dispozitive nelimitate — cel mai bun raport calitate/pret",
     badge: "Cel mai accesibil",
-    badgeColor: "bg-teal-600",
+    badgeColor: "bg-[#b8912e]",
     emoji: "💰",
     pret_luna: "2.39€",
     pret_nota: "plan 2 ani",
@@ -145,7 +145,7 @@ export default function VpnPage() {
           </nav>
           <div className="text-5xl mb-4">🔒</div>
           <h1 className="text-4xl md:text-5xl font-black text-white mb-4">
-            Cel mai bun <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #3b82f6, #06b6d4)" }}>VPN Romania</span> 2026
+            Cel mai bun <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #b8912e, #9c7a26)" }}>VPN Romania</span> 2026
           </h1>
           <p className="text-[#a89a78] text-lg max-w-2xl mx-auto mb-6">
             Am testat cele mai populare VPN-uri si ti le prezentam comparativ. Preturi reale, viteza, securitate — tot ce trebuie sa stii inainte sa cumperi.
@@ -162,15 +162,15 @@ export default function VpnPage() {
       <section className="max-w-5xl mx-auto px-4 py-10">
         <div className="bg-[#15120c] border border-[#26211a] rounded-2xl p-5 mb-8">
           <p className="text-[#c8bda2] text-sm text-center">
-            <span className="text-white font-bold">Concluzia scurta:</span> Alege <strong className="text-blue-400">NordVPN</strong> daca vrei cel mai bun si nu te deranjeaza un pret putin mai mare. Alege <strong className="text-teal-400">Surfshark</strong> daca ai multi bani putini sau vrei dispozitive nelimitate.
+            <span className="text-white font-bold">Concluzia scurta:</span> Alege <strong className="text-[#e3d1a6]">NordVPN</strong> daca vrei cel mai bun si nu te deranjeaza un pret putin mai mare. Alege <strong className="text-[#e3d1a6]">Surfshark</strong> daca ai multi bani putini sau vrei dispozitive nelimitate.
           </p>
         </div>
 
         <div className="space-y-6">
           {VPN_LIST.map((vpn) => (
-            <div key={vpn.name} className={`bg-[#15120c] border rounded-2xl p-6 transition-all ${vpn.rank === 1 ? "border-blue-500/40 shadow-lg shadow-blue-500/10" : "border-[#26211a] hover:border-[#37301f]"}`}>
+            <div key={vpn.name} className={`bg-[#15120c] border rounded-2xl p-6 transition-all ${vpn.rank === 1 ? "border-[#c9a63e]/40 shadow-lg shadow-[#c9a63e]/10" : "border-[#26211a] hover:border-[#37301f]"}`}>
               {vpn.rank === 1 && (
-                <div className="text-xs text-blue-400 font-bold mb-3 flex items-center gap-2">
+                <div className="text-xs text-[#e3d1a6] font-bold mb-3 flex items-center gap-2">
                   <span>⭐ EDITORUL NOSTRU RECOMANDA</span>
                 </div>
               )}
@@ -219,7 +219,7 @@ export default function VpnPage() {
                     </div>
                   </div>
                   <a href={vpn.url} target="_blank" rel="sponsored noopener noreferrer"
-                    className={`w-full text-center py-3 px-4 rounded-xl font-black text-sm text-white transition-all hover:-translate-y-0.5 shadow-lg ${vpn.rank === 1 ? "bg-blue-600 hover:bg-blue-500 shadow-blue-500/20" : "bg-[#37301f] hover:bg-[#473d28]"}`}>
+                    className={`w-full text-center py-3 px-4 rounded-xl font-black text-sm text-white transition-all hover:-translate-y-0.5 shadow-lg ${vpn.rank === 1 ? "bg-[#b8912e] hover:bg-[#c9a63e] shadow-[#c9a63e]/20" : "bg-[#37301f] hover:bg-[#473d28]"}`}>
                     Incearca {vpn.name} →
                   </a>
                   <p className="text-[10px] text-[#8c8064] text-center">Garantie ramburs 30 zile</p>
@@ -314,12 +314,12 @@ export default function VpnPage() {
 
       {/* CTA final */}
       <section className="max-w-5xl mx-auto px-4 pb-12">
-        <div className="bg-gradient-to-r from-blue-950/40 to-teal-950/30 border border-blue-800/30 rounded-2xl p-8 text-center">
+        <div className="bg-gradient-to-r from-[#c9a63e]/40 to-[#c9a63e]/30 border border-[#c9a63e]/30 rounded-2xl p-8 text-center">
           <h2 className="text-2xl font-black text-white mb-3">Gata sa iti protejezi conexiunea?</h2>
           <p className="text-[#a89a78] mb-6 text-sm max-w-xl mx-auto">Oricare ai alege, ai garantie de ramburs 30 zile. Incearca fara risc — daca nu esti multumit, primesti banii inapoi.</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a href="https://nordvpn.com" target="_blank" rel="sponsored noopener noreferrer"
-              className="bg-blue-600 hover:bg-blue-500 text-white font-black px-8 py-3 rounded-xl transition-all hover:-translate-y-0.5 shadow-lg shadow-blue-500/20">
+              className="bg-[#b8912e] hover:bg-[#c9a63e] text-white font-black px-8 py-3 rounded-xl transition-all hover:-translate-y-0.5 shadow-lg shadow-[#c9a63e]/20">
               NordVPN — de la 2.99€/luna →
             </a>
             <a href="https://surfshark.com" target="_blank" rel="sponsored noopener noreferrer"

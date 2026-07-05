@@ -136,7 +136,7 @@ async function sendWelcomeEmail(email: string, apiKey: string): Promise<boolean>
       <div style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:12px;padding:20px;margin-bottom:24px;">
         <p style="margin:0 0 8px;color:#0c4a6e;font-weight:700;font-size:14px;">🧩 Extensia Chrome — reduceri automate</p>
         <p style="margin:0 0 12px;color:#0369a1;font-size:13px;">Instalează extensia AmCupon și primești automat cele mai bune coduri când ești pe orice site partener.</p>
-        <a href="https://chromewebstore.google.com/detail/mahfankpalkgognhnllkgdkjncmmkllb" style="background:#0ea5e9;color:#fff;font-weight:700;font-size:13px;padding:8px 20px;border-radius:8px;text-decoration:none;display:inline-block;">Instalează gratuit</a>
+        <a href="https://chromewebstore.google.com/detail/mahfankpalkgognhnllkgdkjncmmkllb" style="background:#b8912e;color:#fff;font-weight:700;font-size:13px;padding:8px 20px;border-radius:8px;text-decoration:none;display:inline-block;">Instalează gratuit</a>
       </div>
     </div>
     <!-- Footer -->

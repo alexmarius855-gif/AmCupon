@@ -77,7 +77,7 @@ export default function TopHubPage() {
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-[#9c7a26] via-blue-700 to-[#8a6a1e] text-white py-14 px-4">
+        <section className="bg-gradient-to-br from-[#9c7a26] via-[#c9a63e] to-[#8a6a1e] text-white py-14 px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-[#c9a63e]/20 border border-[#c9a63e]/30 text-[#e3d1a6] text-xs font-bold px-4 py-1.5 rounded-full mb-5">
               <span className="w-1.5 h-1.5 bg-[#c9a63e] rounded-full animate-pulse"></span>

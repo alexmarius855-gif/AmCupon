@@ -44,14 +44,14 @@ function culoarePentruCategorie(cat: string) {
   const c = CATEGORII_CULORI[cat] || "indigo";
   const map: Record<string, { border: string; badge: string; text: string }> = {
     indigo:  { border: "border-[#c9a63e]/20",  badge: "bg-[#c9a63e]/10 text-[#e3d1a6]",  text: "text-[#d8c091]" },
-    violet:  { border: "border-violet-500/20",  badge: "bg-violet-500/10 text-violet-300",  text: "text-violet-400" },
+    violet:  { border: "border-[#c9a63e]/20",  badge: "bg-[#c9a63e]/10 text-[#e3d1a6]",  text: "text-[#e3d1a6]" },
     emerald: { border: "border-emerald-500/20", badge: "bg-emerald-500/10 text-emerald-300", text: "text-emerald-400" },
-    blue:    { border: "border-blue-500/20",    badge: "bg-blue-500/10 text-blue-300",    text: "text-blue-400" },
+    blue:    { border: "border-[#c9a63e]/20",    badge: "bg-[#c9a63e]/10 text-[#e3d1a6]",    text: "text-[#e3d1a6]" },
     cyan:    { border: "border-[#c9a63e]/20",    badge: "bg-[#c9a63e]/10 text-[#e3d1a6]",    text: "text-[#d8c091]" },
-    pink:    { border: "border-pink-500/20",    badge: "bg-pink-500/10 text-pink-300",    text: "text-pink-400" },
-    amber:   { border: "border-amber-500/20",   badge: "bg-amber-500/10 text-amber-300",  text: "text-amber-400" },
-    purple:  { border: "border-purple-500/20",  badge: "bg-purple-500/10 text-purple-300", text: "text-purple-400" },
-    teal:    { border: "border-teal-500/20",    badge: "bg-teal-500/10 text-teal-300",    text: "text-teal-400" },
+    pink:    { border: "border-[#c9a63e]/20",    badge: "bg-[#c9a63e]/10 text-[#e3d1a6]",    text: "text-[#e3d1a6]" },
+    amber:   { border: "border-[#c9a63e]/20",   badge: "bg-[#c9a63e]/10 text-[#e3d1a6]",  text: "text-[#e3d1a6]" },
+    purple:  { border: "border-[#c9a63e]/20",  badge: "bg-[#c9a63e]/10 text-[#e3d1a6]", text: "text-[#e3d1a6]" },
+    teal:    { border: "border-[#c9a63e]/20",    badge: "bg-[#c9a63e]/10 text-[#e3d1a6]",    text: "text-[#e3d1a6]" },
   };
   return map[c];
 }

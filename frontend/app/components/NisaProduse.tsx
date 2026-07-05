@@ -78,18 +78,18 @@ function getProduse(merchantSlugs: string[], catSlug: string, limit: number): Pr
 // dinamic prin interpolare (ex. `text-${culoareAccent}-600`), asa ca avem nevoie
 // de un lookup cu fiecare combinatie scrisa literal.
 const ACCENT_CLASSES: Record<string, { text: string; bg: string; border: string; groupHoverText: string }> = {
-  purple:  { text: "text-purple-600",  bg: "bg-purple-500",  border: "hover:border-purple-300",  groupHoverText: "group-hover:text-purple-600" },
+  purple:  { text: "text-[#c9a63e]",  bg: "bg-[#c9a63e]",  border: "hover:border-[#c9a63e]",  groupHoverText: "group-hover:text-[#c9a63e]" },
   green:   { text: "text-green-600",   bg: "bg-green-500",   border: "hover:border-green-300",   groupHoverText: "group-hover:text-green-600" },
-  blue:    { text: "text-blue-600",    bg: "bg-blue-500",    border: "hover:border-blue-300",    groupHoverText: "group-hover:text-blue-600" },
-  pink:    { text: "text-pink-600",    bg: "bg-pink-500",    border: "hover:border-pink-300",    groupHoverText: "group-hover:text-pink-600" },
+  blue:    { text: "text-[#c9a63e]",    bg: "bg-[#c9a63e]",    border: "hover:border-[#c9a63e]",    groupHoverText: "group-hover:text-[#c9a63e]" },
+  pink:    { text: "text-[#c9a63e]",    bg: "bg-[#c9a63e]",    border: "hover:border-[#c9a63e]",    groupHoverText: "group-hover:text-[#c9a63e]" },
   emerald: { text: "text-emerald-600", bg: "bg-emerald-500", border: "hover:border-emerald-300", groupHoverText: "group-hover:text-emerald-600" },
   yellow:  { text: "text-yellow-600",  bg: "bg-yellow-500",  border: "hover:border-yellow-300",  groupHoverText: "group-hover:text-yellow-600" },
   indigo:  { text: "text-[#b8912e]",  bg: "bg-[#c9a63e]",  border: "hover:border-[#e3d1a6]",  groupHoverText: "group-hover:text-[#b8912e]" },
-  amber:   { text: "text-amber-600",   bg: "bg-amber-500",   border: "hover:border-amber-300",   groupHoverText: "group-hover:text-amber-600" },
-  rose:    { text: "text-rose-600",    bg: "bg-rose-500",    border: "hover:border-rose-300",    groupHoverText: "group-hover:text-rose-600" },
+  amber:   { text: "text-[#c9a63e]",   bg: "bg-[#c9a63e]",   border: "hover:border-[#c9a63e]",   groupHoverText: "group-hover:text-[#c9a63e]" },
+  rose:    { text: "text-[#c9a63e]",    bg: "bg-[#c9a63e]",    border: "hover:border-[#c9a63e]",    groupHoverText: "group-hover:text-[#c9a63e]" },
   gray:    { text: "text-gray-600",    bg: "bg-gray-500",    border: "hover:border-gray-300",    groupHoverText: "group-hover:text-gray-600" },
-  teal:    { text: "text-teal-600",    bg: "bg-teal-500",    border: "hover:border-teal-300",    groupHoverText: "group-hover:text-teal-600" },
-  violet:  { text: "text-violet-600",  bg: "bg-violet-500",  border: "hover:border-violet-300",  groupHoverText: "group-hover:text-violet-600" },
+  teal:    { text: "text-[#c9a63e]",    bg: "bg-[#c9a63e]",    border: "hover:border-[#c9a63e]",    groupHoverText: "group-hover:text-[#c9a63e]" },
+  violet:  { text: "text-[#c9a63e]",  bg: "bg-[#c9a63e]",  border: "hover:border-[#c9a63e]",  groupHoverText: "group-hover:text-[#c9a63e]" },
   cyan:    { text: "text-[#b8912e]",    bg: "bg-[#c9a63e]",    border: "hover:border-[#e3d1a6]",    groupHoverText: "group-hover:text-[#b8912e]" },
 };
 

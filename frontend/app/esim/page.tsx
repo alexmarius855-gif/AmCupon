@@ -59,7 +59,7 @@ const ESIM_TOP = [
     name: "Saily",
     tagline: "De la echipa NordVPN — securitate si simplitate garantate",
     badge: "Cel mai sigur",
-    badgeColor: "bg-blue-600",
+    badgeColor: "bg-[#b8912e]",
     pret_min: "de la $3.99",
     pret_nota: "1GB / 7 zile",
     rating: "9.2",

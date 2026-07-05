@@ -25,17 +25,17 @@ export const metadata: Metadata = {
 const CATEGORII = [
   {
     slug: "fashion", label: "Fashion", desc: "Haine & accesorii",
-    accent: "#f472b6",
+    accent: "#e3d1a6",
     keywords: ["fashion", "clothing", "haine", "shoes", "answear", "aboutyou"],
   },
   {
     slug: "electronics-itc", label: "Electronice IT&C", desc: "Laptopuri, telefoane, gadgeturi",
-    accent: "#38bdf8",
+    accent: "#d8c091",
     keywords: ["electronic", "tech", "it", "laptop", "phone", "ozone", "navstore"],
   },
   {
     slug: "beauty", label: "Frumusete", desc: "Cosmetice & parfumuri",
-    accent: "#c084fc",
+    accent: "#d8c091",
     keywords: ["beauty", "cosmetic", "parfum", "notino", "makeup", "sephora"],
   },
   {
@@ -55,7 +55,7 @@ const CATEGORII = [
   },
   {
     slug: "babies-kids-toys", label: "Copii & Jucarii", desc: "Produse pentru cei mici",
-    accent: "#fb7185",
+    accent: "#d8c091",
     keywords: ["kids", "copii", "toy", "bebe", "noriel", "jucarii"],
   },
   {
@@ -65,12 +65,12 @@ const CATEGORII = [
   },
   {
     slug: "books", label: "Carti & Edu", desc: "Carti, e-books, papetarie",
-    accent: "#a78bfa",
+    accent: "#d8c091",
     keywords: ["book", "carte", "libris", "carturesti", "bookzone", "edu"],
   },
   {
     slug: "hypermarket-groceries", label: "Hypermarket", desc: "Alimente & produse zilnice",
-    accent: "#60a5fa",
+    accent: "#d8c091",
     keywords: ["hypermarket", "grocery", "aliment", "food", "supermarket"],
   },
   {
@@ -95,7 +95,7 @@ const CATEGORII = [
   },
   {
     slug: "games", label: "Jocuri & Gaming", desc: "Jocuri video & console",
-    accent: "#67e8f9",
+    accent: "#e3d1a6",
     keywords: ["game", "gaming", "console", "jocuri", "steam", "ps5"],
   },
   {

@@ -117,7 +117,7 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
           </div>
 
           <h1 className="text-4xl md:text-5xl font-black text-white mb-3">
-            Reduceri <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #8b5cf6, #b8912e)" }}>{config.name}</span>
+            Reduceri <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #c9a63e, #b8912e)" }}>{config.name}</span>
           </h1>
           <p className="text-[#a89a78] text-lg mb-6">{config.tagline}</p>
 

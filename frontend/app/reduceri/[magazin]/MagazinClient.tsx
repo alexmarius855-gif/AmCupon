@@ -53,8 +53,8 @@ export default function MagazinClient({ magazin: m }: { magazin: Magazin }) {
   const initiala = nume.charAt(0).toUpperCase();
 
   const culoriInitiala = [
-    "bg-blue-500", "bg-green-500", "bg-purple-500", "bg-pink-500",
-    "bg-[#c9a63e]", "bg-teal-500", "bg-red-500", "bg-yellow-500",
+    "bg-[#c9a63e]", "bg-green-500", "bg-[#c9a63e]", "bg-[#c9a63e]",
+    "bg-[#c9a63e]", "bg-[#c9a63e]", "bg-red-500", "bg-yellow-500",
   ];
   const culoare = culoriInitiala[initiala.charCodeAt(0) % culoriInitiala.length];
 
@@ -134,8 +134,8 @@ export default function MagazinClient({ magazin: m }: { magazin: Magazin }) {
               )}
               {m.trend > 0 && (
                 <div>
-                  <span className="text-purple-500">↑ Trending </span>
-                  <span className="font-semibold text-purple-600">+{m.trend}%</span>
+                  <span className="text-[#c9a63e]">↑ Trending </span>
+                  <span className="font-semibold text-[#c9a63e]">+{m.trend}%</span>
                 </div>
               )}
               <div>
@@ -184,7 +184,7 @@ export default function MagazinClient({ magazin: m }: { magazin: Magazin }) {
                             </span>
                           )}
                           {promo.cod_cupon && (
-                            <span className="text-xs font-bold text-teal-600 bg-teal-50 px-2 py-0.5 rounded-full uppercase tracking-wide">
+                            <span className="text-xs font-bold text-[#c9a63e] bg-[#c9a63e] px-2 py-0.5 rounded-full uppercase tracking-wide">
                               Cod Reducere
                             </span>
                           )}

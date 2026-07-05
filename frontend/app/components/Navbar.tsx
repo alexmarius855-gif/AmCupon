@@ -154,7 +154,7 @@ export default function Navbar() {
                   </div>
                   <div className="flex items-center gap-1.5 shrink-0">
                     {m.cod_cupon && (
-                      <span className="text-[10px] font-black bg-amber-900/50 text-amber-400 px-1.5 py-0.5 rounded-full">Cod</span>
+                      <span className="text-[10px] font-black bg-[#c9a63e]/50 text-[#e3d1a6] px-1.5 py-0.5 rounded-full">Cod</span>
                     )}
                     {m.are_promotie && (
                       <span className="text-[10px] font-black bg-emerald-900/50 text-emerald-400 px-1.5 py-0.5 rounded-full">Activ</span>
@@ -192,7 +192,7 @@ export default function Navbar() {
               </svg>
             </a>
             <a href="https://www.instagram.com/amcupon.ro" target="_blank" rel="noopener noreferrer" aria-label="Instagram AmCupon"
-              className="w-8 h-8 rounded-lg bg-[#26211a] hover:bg-gradient-to-br hover:from-purple-600 hover:to-orange-400 flex items-center justify-center transition-colors group">
+              className="w-8 h-8 rounded-lg bg-[#26211a] hover:bg-gradient-to-br hover:from-[#c9a63e] hover:to-[#c9a63e] flex items-center justify-center transition-colors group">
               <svg className="w-3.5 h-3.5 text-[#a89a78] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
               </svg>

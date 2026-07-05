@@ -31,7 +31,7 @@ const AVANTAJE = [
 ];
 
 function numeAfisat(s: string) { return s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" "); }
-const CULORI = ["bg-[#b8912e]","bg-[#b8912e]","bg-[#b8912e]","bg-[#c9a63e]","bg-lime-500","bg-[#b8912e]"];
+const CULORI = ["bg-[#b8912e]","bg-[#b8912e]","bg-[#b8912e]","bg-[#c9a63e]","bg-[#c9a63e]","bg-[#b8912e]"];
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Farmacie Online cu Reducere 2026","url":"https://amcupon.ro/farmacie","description":"Coduri reducere farmacii online Romania" };
 
 export default function FarmaciePage() {
@@ -60,7 +60,7 @@ export default function FarmaciePage() {
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-[#9c7a26] via-blue-700 to-[#8a6a1e] text-white py-12 px-4">
+        <section className="bg-gradient-to-br from-[#9c7a26] via-[#c9a63e] to-[#8a6a1e] text-white py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">💊</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Farmacie Online cu Reducere {an}</h1>

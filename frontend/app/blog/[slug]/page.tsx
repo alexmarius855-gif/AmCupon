@@ -238,7 +238,7 @@ export default async function ArticolPage({
           </div>
 
           {post.magazin && (
-            <div className="mt-10 p-6 bg-gradient-to-r from-[#b8912e] to-violet-600 rounded-2xl text-white text-center">
+            <div className="mt-10 p-6 bg-gradient-to-r from-[#b8912e] to-[#c9a63e] rounded-2xl text-white text-center">
               <p className="font-black text-xl mb-2">Vezi toate promoțiile {numeAfisat(post.magazin)}</p>
               <p className="text-[#f0e6cc] text-sm mb-4">Coduri verificate, actualizate zilnic</p>
               <a href={`/cod-reducere/${post.magazin}`}

@@ -83,7 +83,7 @@ export default function PescuitPage() {
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-emerald-800 via-green-800 to-teal-800 text-white py-12 px-4">
+        <section className="bg-gradient-to-br from-emerald-800 via-green-800 to-[#1a1408] text-white py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">🎣</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">
@@ -150,7 +150,7 @@ export default function PescuitPage() {
                       <div>
                         <p className="font-bold text-white text-sm">{nume}</p>
                         {m.are_promotie && m.cod_cupon && <span className="text-xs text-emerald-400 font-bold">COD</span>}
-                        {m.are_promotie && !m.cod_cupon && <span className="text-xs text-teal-400 font-medium">Oferta</span>}
+                        {m.are_promotie && !m.cod_cupon && <span className="text-xs text-[#e3d1a6] font-medium">Oferta</span>}
                       </div>
                     </div>
                     {promo ? (
@@ -159,7 +159,7 @@ export default function PescuitPage() {
                       <p className="text-[#8c8064] text-xs italic">Verifica ofertele curente</p>
                     )}
                     <div className="flex justify-end mt-2">
-                      <span className="text-xs text-sky-500 font-semibold group-hover:text-sky-600">Vezi →</span>
+                      <span className="text-xs text-[#c9a63e] font-semibold group-hover:text-[#c9a63e]">Vezi →</span>
                     </div>
                   </a>
                 );

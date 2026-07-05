@@ -26,7 +26,7 @@ const OCAZII: Record<string, {
     desc: "Bijuterii, fashion, parfumuri — cadouri perfecte pentru femeia speciala din viata ta",
     descMeta: "Top idei cadouri pentru femei: bijuterii, parfumuri, fashion. Preturi de la 50 RON. Livrare rapida din magazinele partenere.",
     emoji: "💝",
-    from: "#f43f5e", to: "#ec4899",
+    from: "#c9a63e", to: "#d8c091",
     catSluguri: ["bijuterii", "fashion"],
     keywords: ["bijuterie", "colier", "cercei", "bratara", "inel", "parfum", "rochie", "poseta"],
     editorial: "Alege un cadou care sa o surprinda cu adevarat. Bijuteriile raman intotdeauna o alegere sigura — de la cercei delicati la coliere cu pandantiv. Daca o cunosti bine, o piesa fashion sau un parfum de calitate sunt cadouri memorabile.",
@@ -38,7 +38,7 @@ const OCAZII: Record<string, {
     desc: "Electronice, auto, sport — cadouri practice si utile pentru barbatul din viata ta",
     descMeta: "Idei cadouri barbati: gadgeturi, accesorii auto, echipamente sport. Preturi reale din magazine partenere. Livrare Romania.",
     emoji: "🎁",
-    from: "#3b82f6", to: "#b8912e",
+    from: "#b8912e", to: "#b8912e",
     catSluguri: ["auto", "electronice", "sport"],
     keywords: ["navigatie", "gadget", "accesoriu", "sport", "fitness", "smartwatch"],
     editorial: "Gadgeturile si accesoriile auto sunt mereu binevenite pentru barbati. Daca e pasionat de sport, echipamentele de fitness sunt o alegere practica. Electronicele — smartwatch, casti, accesorii — raman cadouri sigure.",
@@ -50,7 +50,7 @@ const OCAZII: Record<string, {
     desc: "Jucarii educative, carti si echipamente sport pentru copii de toate varstele",
     descMeta: "Cele mai bune cadouri pentru copii: jucarii educative, carti, echipamente sport. Toate cu livrare rapida in Romania.",
     emoji: "🧸",
-    from: "#a855f7", to: "#ec4899",
+    from: "#c9a63e", to: "#d8c091",
     catSluguri: ["fashion", "sport", "bijuterii"],
     keywords: ["copil", "bebe", "jucarie", "carte", "educativ", "sport", "noriel"],
     editorial: "Jucariile educative stimuleaza creativitatea si imaginatia. Cartile sunt mereu un cadou cu valoare pe termen lung. Pentru copiii mai mari, echipamentele sport sau jocurile de strategie sunt perfecte.",
@@ -62,7 +62,7 @@ const OCAZII: Record<string, {
     desc: "Cadouri elegante si memorabile pentru ocazia botezului — bijuterii, jucarii si decoratiuni speciale",
     descMeta: "Cele mai frumoase cadouri de botez: bijuterii argint cu gravura, jucarii de plus, cadouri personalizate. Preturi si livrare Romania.",
     emoji: "👶",
-    from: "#60a5fa", to: "#e3d1a6",
+    from: "#d8c091", to: "#e3d1a6",
     catSluguri: ["bijuterii", "fashion"],
     keywords: ["botez", "bebelus", "argint", "gravura", "bijuterie", "set cadou"],
     editorial: "Botezul este una dintre cele mai speciale ocazii din viata unui copil. Cadourile traditionale — bijuterii din argint cu gravura, seturi de haine premium sau jucarii de plus de calitate — raman amintiri pretioase pentru parinti si copil deopotriva.",
@@ -86,7 +86,7 @@ const OCAZII: Record<string, {
     desc: "Bijuterii, cosmetice si mici rasfaturi pentru cea mai importanta femeie din viata ta",
     descMeta: "Idei cadouri mama: bijuterii, parfumuri, cosmetice. De la 50 RON la 500 RON. Livrare rapida in Romania din magazine partenere.",
     emoji: "🌸",
-    from: "#f43f5e", to: "#a855f7",
+    from: "#c9a63e", to: "#c9a63e",
     catSluguri: ["bijuterii", "fashion"],
     keywords: ["mama", "bijuterie", "colier", "cercei", "parfum", "cosmetice", "ingrijire"],
     editorial: "Mama merita sa se simta speciala in fiecare zi, nu doar de ziua ei. Un colier cu pandantiv personalizat, un parfum preferat sau un set de cosmetice premium sunt cadouri care ii amintesc ca este iubita si apreciata.",
@@ -98,7 +98,7 @@ const OCAZII: Record<string, {
     desc: "Gadgeturi, accesorii auto si unelte — cadouri practice pentru tatal tau",
     descMeta: "Cele mai bune cadouri pentru tata: accesorii auto, gadgeturi tech, unelte. Livrare rapida in Romania. Preturi de la 100 RON.",
     emoji: "👨",
-    from: "#1e293b", to: "#3b82f6",
+    from: "#1e293b", to: "#b8912e",
     catSluguri: ["auto", "electronice", "sport"],
     keywords: ["tata", "auto", "navigatie", "gadget", "smartwatch", "unelte", "sport"],
     editorial: "Tatii apreciaza cadourile practice si utile. Accesoriile auto, gadgeturile tech sau echipamentele pentru hobby-urile lui sunt alegeri sigure. Daca e pasionat de sport sau de bricolaj, optiunile sunt nelimitate.",
@@ -110,7 +110,7 @@ const OCAZII: Record<string, {
     desc: "Bijuterii, parfumuri si surprize romantice pentru ziua indragostitilor",
     descMeta: "Cadouri Valentine's Day: bijuterii, parfumuri, set romantic. Idei originale cu livrare rapida in Romania. De la 50 RON.",
     emoji: "❤️",
-    from: "#ef4444", to: "#f43f5e",
+    from: "#ef4444", to: "#c9a63e",
     catSluguri: ["bijuterii", "fashion"],
     keywords: ["valentine", "bijuterie", "inima", "colier", "parfum", "romantic", "dragoste"],
     editorial: "Valentine's Day este momentul perfect sa arati cat de mult tii la persoana iubita. O bijuterie cu motiv inimioara, un parfum special sau un set romantic de cosmetice sunt cadouri care transmit emotie si afectiune.",
@@ -134,7 +134,7 @@ const OCAZII: Record<string, {
     desc: "Bijuterii, fashion si surprize originale pentru ziua de nastere a cuiva drag",
     descMeta: "Idei originale cadouri zi de nastere: bijuterii, parfumuri, gadgeturi. Preturi de la 50 RON. Magazine partenere cu livrare rapida.",
     emoji: "🎂",
-    from: "#b8912e", to: "#06b6d4",
+    from: "#b8912e", to: "#9c7a26",
     catSluguri: ["bijuterii", "fashion", "electronice"],
     keywords: ["nastere", "zi nastere", "aniversare", "bijuterie", "cadou", "surprise"],
     editorial: "Ziua de nastere este momentul in care un cadou atent ales face diferenta. Gandeste-te la ce isi doreste persoana respectiva sau ce ar folosi zilnic. O bijuterie cu semnificatie, un gadget dorit sau un parfum preferat sunt mereu binevenit.",
@@ -146,7 +146,7 @@ const OCAZII: Record<string, {
     desc: "Cadouri practice si memorabile pentru absolvirea scolii, liceului sau facultatii",
     descMeta: "Idei cadouri absolvire: bijuterii, gadgeturi, carti, accesorii. Felicita absolventi cu un cadou memorabil. Livrare Romania.",
     emoji: "🎓",
-    from: "#7c3aed", to: "#3b82f6",
+    from: "#b8912e", to: "#b8912e",
     catSluguri: ["electronice", "bijuterii", "sport"],
     keywords: ["absolvire", "diploma", "facultate", "liceu", "scoala", "cadou"],
     editorial: "Absolvirea este o realizare majora care merita sarbatorita. Un gadget util pentru urmatoarea etapa a vietii, o bijuterie memorabila sau un voucher de calatorie sunt cadouri care marcat inceputul unui nou capitol.",
@@ -198,7 +198,7 @@ const OCAZII: Record<string, {
     desc: "Cadouri premium si memorabile cu buget de maxim 500 lei — bijuterii, electronice, fashion",
     descMeta: "Cadouri sub 500 lei: bijuterii premium, electronice, accesorii auto. Cadouri de impact fara a rupe bugetul. Livrare Romania.",
     emoji: "💎",
-    from: "#8b5cf6", to: "#7c3aed",
+    from: "#c9a63e", to: "#b8912e",
     catSluguri: ["bijuterii", "auto", "electronice", "sport", "fashion"],
     keywords: ["cadou sub 500 lei", "cadou premium", "cadou 400 lei", "cadou calitate"],
     pretMax: 500,
@@ -362,7 +362,7 @@ export default async function CadouriSlugPage({
                 <span className="text-[#d8c091]">✓</span> Preturi verificate azi
               </span>
               <span className="flex items-center gap-1.5 bg-[#26211a]/80 border border-[#37301f] text-[#c8bda2] px-3 py-1.5 rounded-full">
-                <span className="text-blue-400">✓</span> Livrare Romania
+                <span className="text-[#e3d1a6]">✓</span> Livrare Romania
               </span>
             </div>
           </div>

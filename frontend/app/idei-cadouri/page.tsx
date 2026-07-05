@@ -26,24 +26,24 @@ const TOP_CADOURI = [
 const CAT_CADOURI = ["toys","gifts","flower","beauty","fashion","jewelry","books","kids"];
 
 const OCAZII = [
-  { emoji:"🎂", label:"Ziua de naștere", culoare:"bg-pink-100 text-[#e3d1a6]" },
+  { emoji:"🎂", label:"Ziua de naștere", culoare:"bg-[#c9a63e] text-[#e3d1a6]" },
   { emoji:"💕", label:"Valentine's Day", culoare:"bg-red-100 text-red-700" },
   { emoji:"🎄", label:"Crăciun", href:"/craciun", culoare:"bg-green-100 text-[#e3d1a6]" },
-  { emoji:"👩", label:"8 Martie", culoare:"bg-rose-100 text-[#e3d1a6]" },
+  { emoji:"👩", label:"8 Martie", culoare:"bg-[#c9a63e] text-[#e3d1a6]" },
   { emoji:"🐣", label:"Paște", culoare:"bg-yellow-100 text-[#e3d1a6]" },
-  { emoji:"👫", label:"Aniversare", culoare:"bg-purple-100 text-[#e3d1a6]" },
-  { emoji:"🎓", label:"Absolvire", culoare:"bg-blue-100 text-[#e3d1a6]" },
+  { emoji:"👫", label:"Aniversare", culoare:"bg-[#c9a63e] text-[#e3d1a6]" },
+  { emoji:"🎓", label:"Absolvire", culoare:"bg-[#c9a63e] text-[#e3d1a6]" },
   { emoji:"🏡", label:"Inaugurare casă", culoare:"bg-emerald-100 text-[#e3d1a6]" },
 ];
 
 const IDEI_PER_PROFIL = [
   {
-    profil: "👩 Cadouri pentru ea", culoare: "bg-[#15120c] border-pink-200",
+    profil: "👩 Cadouri pentru ea", culoare: "bg-[#15120c] border-[#c9a63e]",
     idei: ["Parfumuri & Cosmetice → Notino", "Haine & Accesorii → FashionDays", "Bijuterii → Bijuteria.ro", "Carte preferată → Elefant"],
     link: "/categorii/beauty",
   },
   {
-    profil: "👨 Cadouri pentru el", culoare: "bg-[#15120c] border-blue-200",
+    profil: "👨 Cadouri pentru el", culoare: "bg-[#15120c] border-[#c9a63e]",
     idei: ["Gadget tech → eMAG", "Echipament sport → Decathlon", "Parfum masculin → Notino", "Carte business → Libris"],
     link: "/categorii/electronics-itc",
   },
@@ -91,7 +91,7 @@ export default function IdeiCadouriPage() {
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-[#9c7a26] via-blue-700 to-[#8a6a1e] text-white py-12 px-4">
+        <section className="bg-gradient-to-br from-[#9c7a26] via-[#c9a63e] to-[#8a6a1e] text-white py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">🎁</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Idei de Cadouri {an}</h1>

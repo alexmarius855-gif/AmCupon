@@ -506,7 +506,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                               {discount && (
                                 <span className="text-sm font-black text-[#d8c091] bg-[#1a1408]/50 px-2 py-0.5 rounded-lg">-{discount}</span>
                               )}
-                              <span className="text-xs font-bold text-blue-400 bg-blue-500/10 px-2 py-0.5 rounded-full uppercase tracking-wide">Oferta</span>
+                              <span className="text-xs font-bold text-[#e3d1a6] bg-[#c9a63e]/10 px-2 py-0.5 rounded-full uppercase tracking-wide">Oferta</span>
                               {promo.zile_ramase <= 1 && promo.zile_ramase >= 0 && <CountdownTimer zileRamase={promo.zile_ramase}/>}
                               {promo.zile_ramase > 1 && promo.zile_ramase <= 3 && (
                                 <span className="text-xs font-bold text-[#d8c091] bg-[#1a1408]/50 px-2 py-0.5 rounded-full">Expira in {promo.zile_ramase} zile</span>

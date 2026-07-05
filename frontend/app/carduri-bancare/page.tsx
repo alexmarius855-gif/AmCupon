@@ -38,7 +38,7 @@ const CONTURI = [
     name: "Revolut",
     tagline: "Cel mai popular cont digital din Romania — bani, crypto si actiuni intr-o app",
     badge: "Recomandat #1",
-    badgeColor: "bg-purple-600",
+    badgeColor: "bg-[#b8912e]",
     emoji: "💜",
     cost: "Gratuit (plan Standard)",
     rating: "9.7",
@@ -54,7 +54,7 @@ const CONTURI = [
     ],
     dezavantaje: ["Suport clienti doar prin chat in app", "Planul gratuit are limite la schimb valutar"],
     ideal: "Calatorii, cumparaturi online, prima expunere la crypto/actiuni",
-    culoare: "from-violet-700 to-purple-900",
+    culoare: "from-[#c9a63e] to-[#1a1408]",
   },
   {
     rank: 2,
@@ -76,14 +76,14 @@ const CONTURI = [
     ],
     dezavantaje: ["Nu are functii de investitii/crypto", "Comision per transfer (mic, dar exista)"],
     ideal: "Freelanceri, nomazi digitali, transferuri frecvente in valuta",
-    culoare: "from-emerald-700 to-teal-900",
+    culoare: "from-emerald-700 to-[#1a1408]",
   },
   {
     rank: 3,
     name: "N26",
     tagline: "Banca digitala germana — cont european complet, fara birocratie",
     badge: "Cont European",
-    badgeColor: "bg-teal-600",
+    badgeColor: "bg-[#b8912e]",
     emoji: "🇪🇺",
     cost: "Gratuit (plan Standard)",
     rating: "8.9",
@@ -97,7 +97,7 @@ const CONTURI = [
     ],
     dezavantaje: ["Suport mai limitat in romana", "Retrageri numerar limitate gratuit pe luna"],
     ideal: "Studenti si lucratori in UE, cont secundar in euro",
-    culoare: "from-teal-700 to-[#2e2410]",
+    culoare: "from-[#c9a63e] to-[#2e2410]",
   },
   {
     rank: 4,
@@ -118,7 +118,7 @@ const CONTURI = [
     ],
     dezavantaje: ["Fara optiuni de investitii inca", "Ecosistem mai tanar, mai putine functii"],
     ideal: "Romani care vor banking 100% digital, in limba romana",
-    culoare: "from-[#b8912e] to-violet-800",
+    culoare: "from-[#b8912e] to-[#1a1408]",
   },
 ];
 
@@ -147,20 +147,20 @@ export default function CarduriBancarePage() {
         </nav>
 
         {/* Hero */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-violet-950 via-[#15120c] to-emerald-950 py-16 px-4">
+        <section className="relative overflow-hidden bg-gradient-to-br from-[#1a1408] via-[#15120c] to-emerald-950 py-16 px-4">
           <div className="absolute inset-0 pointer-events-none">
-            <div className="absolute top-0 left-1/4 w-96 h-96 bg-violet-600/15 rounded-full blur-3xl" />
+            <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#c9a63e]/15 rounded-full blur-3xl" />
             <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-emerald-600/15 rounded-full blur-3xl" />
           </div>
           <div className="relative max-w-6xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 bg-violet-500/20 border border-violet-500/30 text-violet-300 text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
-              <span className="w-1.5 h-1.5 rounded-full bg-violet-400 animate-pulse" />
+            <div className="inline-flex items-center gap-2 bg-[#c9a63e]/20 border border-[#c9a63e]/30 text-[#e3d1a6] text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#c9a63e] animate-pulse" />
               Ghid actualizat {an}
             </div>
             <div className="text-6xl mb-5 drop-shadow-2xl">💳</div>
             <h1 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">
               Cel mai bun Cont Bancar Online{" "}
-              <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #a78bfa, #34d399)" }}>
+              <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #d8c091, #34d399)" }}>
                 {an}
               </span>
             </h1>
@@ -178,7 +178,7 @@ export default function CarduriBancarePage() {
         {/* Conturi */}
         <section className="max-w-6xl mx-auto px-4 py-12">
           <div className="text-center mb-10">
-            <p className="text-xs font-bold text-violet-400 uppercase tracking-widest mb-2">COMPARATIE CONTURI</p>
+            <p className="text-xs font-bold text-[#e3d1a6] uppercase tracking-widest mb-2">COMPARATIE CONTURI</p>
             <h2 className="text-3xl font-black text-white">Top 4 conturi bancare digitale pentru romani</h2>
             <p className="text-[#a89a78] text-sm mt-2">Testate personal — actualizat {an}</p>
           </div>
@@ -228,7 +228,7 @@ export default function CarduriBancarePage() {
                       <ul className="space-y-1.5">
                         {c.dezavantaje.map(d => (
                           <li key={d} className="flex items-start gap-2 text-sm text-[#a89a78]">
-                            <span className="text-amber-400 mt-0.5 shrink-0">!</span>
+                            <span className="text-[#e3d1a6] mt-0.5 shrink-0">!</span>
                             {d}
                           </li>
                         ))}
@@ -259,7 +259,7 @@ export default function CarduriBancarePage() {
         {/* Ghid alegere */}
         <section className="bg-[#15120c] border-t border-b border-[#26211a] py-12 px-4">
           <div className="max-w-4xl mx-auto">
-            <p className="text-xs font-bold text-violet-400 uppercase tracking-widest mb-3">GHID ALEGERE</p>
+            <p className="text-xs font-bold text-[#e3d1a6] uppercase tracking-widest mb-3">GHID ALEGERE</p>
             <h2 className="text-2xl font-black text-white mb-7">Ce cont sa alegi in {an}?</h2>
             <div className="grid sm:grid-cols-2 gap-4">
               {[
@@ -289,7 +289,7 @@ export default function CarduriBancarePage() {
               { href: "/servicii", label: "⚙️ Servicii Online" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-[#26211a] hover:bg-[#37301f] border border-[#37301f] hover:border-violet-500/40 text-[#c8bda2] hover:text-white text-sm font-semibold px-4 py-2 rounded-xl transition-all duration-200">
+                className="bg-[#26211a] hover:bg-[#37301f] border border-[#37301f] hover:border-[#c9a63e]/40 text-[#c8bda2] hover:text-white text-sm font-semibold px-4 py-2 rounded-xl transition-all duration-200">
                 {l.label}
               </a>
             ))}

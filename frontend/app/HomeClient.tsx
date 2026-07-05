@@ -1705,7 +1705,7 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
 
       {/* Trust Score bar — rosu pentru expira azi, cyan maine, verde normal */}
       <div className="h-1 bg-[#26211a] overflow-hidden">
-        <div className={`h-full transition-all duration-700 rounded-r-full ${expiraAzi ? "bg-gradient-to-r from-red-500 to-red-600 animate-pulse" : expiraMaine ? "bg-gradient-to-r from-[#d8c091] to-blue-500" : "bg-gradient-to-r from-emerald-400 to-emerald-500"}`} style={{width:`${trustScore}%`}}/>
+        <div className={`h-full transition-all duration-700 rounded-r-full ${expiraAzi ? "bg-gradient-to-r from-red-500 to-red-600 animate-pulse" : expiraMaine ? "bg-gradient-to-r from-[#d8c091] to-[#c9a63e]" : "bg-gradient-to-r from-emerald-400 to-emerald-500"}`} style={{width:`${trustScore}%`}}/>
       </div>
 
       {/* Header: logo + info + buttons */}
@@ -1793,7 +1793,7 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
         {expiraAzi && <CardCountdown zileRamase={0} />}
         {expiraMaine && <CardCountdown zileRamase={1} />}
         {expiraCurand && !expiraAzi && !expiraMaine && (
-          <span className="text-[10px] font-bold text-amber-400 bg-amber-500/15 border border-amber-500/25 px-1.5 py-0.5 rounded-full">
+          <span className="text-[10px] font-bold text-[#e3d1a6] bg-[#c9a63e]/15 border border-[#c9a63e]/25 px-1.5 py-0.5 rounded-full">
             ⏳ {promo!.zile_ramase}z ramase
           </span>
         )}

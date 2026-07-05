@@ -324,8 +324,8 @@ export default function TopProduseClient({ produse, culoare }: TopProduseClientP
               {isExpaneded && (
                 <div className="px-5 pb-5 border-t border-[#37301f] pt-4">
                   {/* VERDICT DETALIAT */}
-                  <div className="bg-[#26211a] dark:bg-blue-950/20 border border-blue-100 dark:border-blue-800/30 rounded-xl p-4 mb-4">
-                    <p className="text-xs font-bold text-blue-600 dark:text-blue-400 mb-1.5">Review detaliat</p>
+                  <div className="bg-[#26211a] dark:bg-[#c9a63e]/20 border border-[#c9a63e] dark:border-[#c9a63e]/30 rounded-xl p-4 mb-4">
+                    <p className="text-xs font-bold text-[#c9a63e] dark:text-[#e3d1a6] mb-1.5">Review detaliat</p>
                     <p className="text-sm text-[#c8bda2] leading-relaxed">{p.verdict_detaliat}</p>
                   </div>
 

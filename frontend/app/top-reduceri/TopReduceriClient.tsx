@@ -117,7 +117,7 @@ function MagazinCard({
               <span className={`text-xs px-2 py-0.5 rounded-full font-bold ${
                 m.zile_ramase === 1
                   ? "bg-red-500/15 text-red-400"
-                  : "bg-amber-500/15 text-amber-400"
+                  : "bg-[#c9a63e]/15 text-[#e3d1a6]"
               }`}>
                 {m.zile_ramase === 1 ? "Expira azi!" : `${m.zile_ramase} zile`}
               </span>

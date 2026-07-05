@@ -17,17 +17,17 @@ export const metadata: Metadata = {
 };
 
 const OCAZII = [
-  { slug: "ea",         emoji: "💝", titlu: "Cadouri pentru Ea",       desc: "Bijuterii, fashion, parfumuri", color: "#f43f5e", popular: true },
-  { slug: "el",         emoji: "🎁", titlu: "Cadouri pentru El",       desc: "Electronice, auto, sport",     color: "#3b82f6", popular: true },
-  { slug: "copii",      emoji: "🧸", titlu: "Cadouri Copii",           desc: "Jucarii, carti, sport",        color: "#a855f7", popular: true },
-  { slug: "mama",       emoji: "🌸", titlu: "Cadouri Mama",            desc: "Bijuterii, cosmetice, rasfat", color: "#f43f5e", popular: true },
+  { slug: "ea",         emoji: "💝", titlu: "Cadouri pentru Ea",       desc: "Bijuterii, fashion, parfumuri", color: "#c9a63e", popular: true },
+  { slug: "el",         emoji: "🎁", titlu: "Cadouri pentru El",       desc: "Electronice, auto, sport",     color: "#b8912e", popular: true },
+  { slug: "copii",      emoji: "🧸", titlu: "Cadouri Copii",           desc: "Jucarii, carti, sport",        color: "#c9a63e", popular: true },
+  { slug: "mama",       emoji: "🌸", titlu: "Cadouri Mama",            desc: "Bijuterii, cosmetice, rasfat", color: "#c9a63e", popular: true },
   { slug: "tata",       emoji: "👨", titlu: "Cadouri Tata",            desc: "Gadgeturi, auto, unelte",      color: "#1e293b", popular: false },
-  { slug: "botez",      emoji: "👶", titlu: "Cadouri Botez",           desc: "Bijuterii argint, personalizate", color: "#60a5fa", popular: true },
+  { slug: "botez",      emoji: "👶", titlu: "Cadouri Botez",           desc: "Bijuterii argint, personalizate", color: "#d8c091", popular: true },
   { slug: "nasi",       emoji: "💍", titlu: "Cadouri Nasi",            desc: "Bijuterii premium, elegante",  color: "#d97706", popular: true },
   { slug: "nastere",    emoji: "🎂", titlu: "Cadouri Nastere",         desc: "Bijuterii, parfumuri, gadgeturi", color: "#b8912e", popular: false },
   { slug: "valentine",  emoji: "❤️", titlu: "Valentine's Day",         desc: "Bijuterii romantice, parfumuri", color: "#ef4444", popular: false },
   { slug: "craciun",    emoji: "🎄", titlu: "Cadouri Craciun",         desc: "Cadouri pentru toata familia", color: "#16a34a", popular: false },
-  { slug: "absolvire",  emoji: "🎓", titlu: "Cadouri Absolvire",       desc: "Gadgeturi, bijuterii, carti",  color: "#7c3aed", popular: false },
+  { slug: "absolvire",  emoji: "🎓", titlu: "Cadouri Absolvire",       desc: "Gadgeturi, bijuterii, carti",  color: "#b8912e", popular: false },
   { slug: "pasti",      emoji: "🐣", titlu: "Cadouri Paste",           desc: "Seturi cadou, bijuterii, flori", color: "#84cc16", popular: false },
 ];
 
@@ -150,7 +150,7 @@ export default function CadouriPage() {
             {[
               { slug: "sub-100-lei",  emoji: "💰", label: "Sub 100 Lei",     desc: "Cadouri accesibile",   from: "#22c55e", to: "#10b981" },
               { slug: "sub-200-lei",  emoji: "🎁", label: "Sub 200 Lei",     desc: "Raport pret/calitate", from: "#b8912e", to: "#e3d1a6" },
-              { slug: "sub-500-lei",  emoji: "💎", label: "Sub 500 Lei",     desc: "Cadouri premium",      from: "#8b5cf6", to: "#7c3aed" },
+              { slug: "sub-500-lei",  emoji: "💎", label: "Sub 500 Lei",     desc: "Cadouri premium",      from: "#c9a63e", to: "#b8912e" },
               { slug: "peste-500-lei",emoji: "👑", label: "Peste 500 Lei",   desc: "Cadouri de lux",       from: "#d97706", to: "#f59e0b" },
             ].map(b => (
               <Link

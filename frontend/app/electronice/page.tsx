@@ -59,7 +59,7 @@ export default function ElectronicePage() {
           </div>
         </nav>
 
-        <section className="bg-gradient-to-br from-[#9c7a26] via-blue-700 to-[#8a6a1e] text-white py-12 px-4">
+        <section className="bg-gradient-to-br from-[#9c7a26] via-[#c9a63e] to-[#8a6a1e] text-white py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">📱</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Electronice cu Reducere {an}</h1>
@@ -114,7 +114,7 @@ export default function ElectronicePage() {
                     <div>
                       <p className="font-bold text-white text-sm">{nume}</p>
                       {m.are_promotie && m.cod_cupon && <span className="text-xs text-[#d8c091] font-bold">COD</span>}
-                      {m.are_promotie && !m.cod_cupon && <span className="text-xs text-blue-500 font-medium">Ofertă</span>}
+                      {m.are_promotie && !m.cod_cupon && <span className="text-xs text-[#c9a63e] font-medium">Ofertă</span>}
                     </div>
                   </div>
                   {promo ? (
@@ -123,7 +123,7 @@ export default function ElectronicePage() {
                     <p className="text-[#8c8064] text-xs italic">Verifică ofertele curente</p>
                   )}
                   <div className="flex justify-end mt-2">
-                    <span className="text-xs text-blue-500 font-semibold group-hover:text-blue-600">Vezi →</span>
+                    <span className="text-xs text-[#c9a63e] font-semibold group-hover:text-[#c9a63e]">Vezi →</span>
                   </div>
                 </a>
               );

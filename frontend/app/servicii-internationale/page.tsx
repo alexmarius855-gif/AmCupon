@@ -32,7 +32,7 @@ const CATEGORII = [
         tagline: "VPN cu dispozitive nelimitate — 40% comision recurent",
         comision: "40% + recurent",
         badge: "Top ales",
-        badgeColor: "bg-teal-700",
+        badgeColor: "bg-[#b8912e]",
         url: "https://surfshark.sjv.io/c/7401119/529009/9043",
         descriere: "VPN premium cu no-logs verificat. Disponibil pe toate dispozitivele, camouflage mode, MultiHop.",
       },
@@ -76,7 +76,7 @@ const CATEGORII = [
         tagline: "Hosting accesibil cu WP installer 1-click — 60% comision",
         comision: "60%",
         badge: "Cel mai mare comision",
-        badgeColor: "bg-purple-700",
+        badgeColor: "bg-[#b8912e]",
         url: "https://www.hostinger.ro",
         descriere: "Hosting rapid cu LiteSpeed, SSL gratuit, domeniu gratuit 1 an, suport 24/7. Cel mai bun raport calitate/pret.",
       },
@@ -85,7 +85,7 @@ const CATEGORII = [
         tagline: "Hosting WordPress recomandat oficial — $65-130 per vanzare",
         comision: "$65-130 per sale",
         badge: "WordPress Official",
-        badgeColor: "bg-blue-700",
+        badgeColor: "bg-[#b8912e]",
         url: "https://www.bluehost.com",
         descriere: "Gazduire WordPress recomandata de WordPress.org. Instalare cu 1 click, domeniu gratuit, SSL inclus.",
       },
@@ -146,7 +146,7 @@ const CATEGORII = [
         tagline: "Cursuri universitare online Google, IBM, Stanford — 15-45% comision",
         comision: "15-45%",
         badge: "Top Platforma",
-        badgeColor: "bg-blue-700",
+        badgeColor: "bg-[#b8912e]",
         url: "https://coursera.pxf.io/c/7761435/1/0",
         descriere: "Cursuri si certificate de la Google, IBM, Meta, Stanford. Disponibil si in romana pentru unele cursuri.",
       },
@@ -199,7 +199,7 @@ const CATEGORII = [
         tagline: "Video AI pentru YouTube si Social Media — 25-50% comision",
         comision: "25-50%",
         badge: "AI Video",
-        badgeColor: "bg-purple-700",
+        badgeColor: "bg-[#b8912e]",
         url: "https://invideo.sjv.io/c/7401119/883681/12258",
         descriere: "Creeaza videoclipuri profesionale cu AI in minute. Template-uri pentru YouTube, TikTok, Reels.",
       },
@@ -279,7 +279,7 @@ const CATEGORII = [
         tagline: "Monitoare portabile 4K — 10% comision",
         comision: "10%",
         badge: "Portabil",
-        badgeColor: "bg-blue-700",
+        badgeColor: "bg-[#b8912e]",
         url: "https://www.uperfectmonitor.com",
         descriere: "Monitor portabil 4K pentru laptop, PS5, Switch. Ideal pentru remote work si gaming on-the-go.",
       },
@@ -305,7 +305,7 @@ const CATEGORII = [
         tagline: "Banking digital pentru firme — $50-200 per referral",
         comision: "$50-200 per referral",
         badge: "Fintech",
-        badgeColor: "bg-violet-700",
+        badgeColor: "bg-[#b8912e]",
         url: "https://www.revolut.com/business",
         descriere: "Cont business multi-valuta fara comisioane. Carduri virtuale, API, platI internationale gratuite.",
       },
@@ -365,7 +365,7 @@ export default function ServiciiInternationale() {
           <div className="text-5xl mb-4">🌍</div>
           <h1 className="text-4xl md:text-5xl font-black text-white mb-4">
             Servicii Internationale{" "}
-            <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #8b5cf6, #3b82f6)" }}>
+            <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #c9a63e, #b8912e)" }}>
               cu Oferte 2026
             </span>
           </h1>
@@ -400,7 +400,7 @@ export default function ServiciiInternationale() {
                   className="group bg-[#15120c] border border-[#26211a] hover:border-[#473d28] rounded-xl p-5 transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-black/30 block">
                   <div className="flex items-start justify-between gap-3 mb-2">
                     <div className="flex items-center gap-2">
-                      <h3 className="font-black text-white group-hover:text-blue-400 transition-colors">{brand.nume}</h3>
+                      <h3 className="font-black text-white group-hover:text-[#e3d1a6] transition-colors">{brand.nume}</h3>
                       {brand.badge && (
                         <span className={`text-[9px] font-black text-white px-2 py-0.5 rounded-full ${brand.badgeColor}`}>
                           {brand.badge}

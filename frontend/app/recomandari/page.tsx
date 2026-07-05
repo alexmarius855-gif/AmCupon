@@ -33,7 +33,7 @@ const CATEGORII = [
         pret: "de la 2.99€/luna",
         comision: "40% recurring",
         badge: "Recomandat",
-        badgeColor: "bg-blue-600",
+        badgeColor: "bg-[#b8912e]",
         program: "partners.nordvpn.com",
         url: "https://nordvpn.com",
         // ACTUALIZARE: https://go.nordvpn.net/aff_c?offer_id=15&aff_id=TU_ID_NORDVPN
@@ -45,7 +45,7 @@ const CATEGORII = [
         pret: "de la 2.39€/luna",
         comision: "40% recurring",
         badge: "Dispozitive nelimitate",
-        badgeColor: "bg-teal-600",
+        badgeColor: "bg-[#b8912e]",
         program: "impact.com (Surfshark)",
         url: "https://surfshark.com",
         // ACTUALIZARE: https://get.surfshark.net/aff_c?offer_id=926&aff_id=TU_ID_SURFSHARK
@@ -65,7 +65,7 @@ const CATEGORII = [
         pret: "de la 1.99€/luna",
         comision: "60% din prima achizitie",
         badge: "Cel mai accesibil",
-        badgeColor: "bg-violet-600",
+        badgeColor: "bg-[#b8912e]",
         program: "hostinger.com/affiliates",
         url: "https://hostinger.com",
         // ACTUALIZARE: https://www.hostinger.com/partners/TU_ID_HOSTINGER
@@ -109,7 +109,7 @@ const CATEGORII = [
         pret: "de la 99$/luna",
         comision: "program selectiv — aplica direct",
         badge: "Standard industrie",
-        badgeColor: "bg-blue-600",
+        badgeColor: "bg-[#b8912e]",
         program: "ahrefs.com (program intern)",
         url: "https://ahrefs.com",
         beneficii: ["Index backlink-uri masiv", "Content Explorer unic", "Site Explorer detaliat", "Keywords Explorer avansat", "Rank Tracker precis"],
@@ -128,7 +128,7 @@ const CATEGORII = [
         pret: "~13€/luna",
         comision: "36$ per conversie Pro",
         badge: "Cel mai usor",
-        badgeColor: "bg-purple-600",
+        badgeColor: "bg-[#b8912e]",
         program: "canva.com/affiliates",
         url: "https://canva.com",
         // ACTUALIZARE: link din programul Canva Affiliates
@@ -172,7 +172,7 @@ const CATEGORII = [
         pret: "de la 49$/luna (Plus)",
         comision: "45% din abonament",
         badge: "Certificari globale",
-        badgeColor: "bg-blue-500",
+        badgeColor: "bg-[#c9a63e]",
         program: "coursera.org/affiliates",
         url: "https://coursera.org",
         // ACTUALIZARE: link din programul Coursera Affiliates (Impact)
@@ -192,7 +192,7 @@ const CATEGORII = [
         pret: "fara taxe extra",
         comision: "4% din valoarea rezervarii",
         badge: "Cele mai multe optiuni",
-        badgeColor: "bg-blue-500",
+        badgeColor: "bg-[#c9a63e]",
         program: "booking.com/affiliate-partner",
         url: "https://booking.com",
         // ACTUALIZARE: https://www.booking.com/index.html?aid=TU_ID_BOOKING
@@ -228,7 +228,7 @@ export default function RecomandariPage() {
           </nav>
           <div className="text-5xl mb-5">⭐</div>
           <h1 className="text-4xl md:text-5xl font-black text-white mb-4">
-            Servicii <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #8b5cf6, #b8912e)" }}>Recomandate</span>
+            Servicii <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #c9a63e, #b8912e)" }}>Recomandate</span>
           </h1>
           <p className="text-[#a89a78] text-lg max-w-2xl mx-auto mb-8">
             VPN, hosting, SEO tools, freelancing si travel — servicii testate si recomandate de echipa AmCupon.ro. Alege ce ti se potriveste.

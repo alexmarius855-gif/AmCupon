@@ -142,7 +142,7 @@ export default function SoftwareBusinessPage() {
                   <div>
                     <div className="flex items-center gap-2 mb-0.5">
                       <span className="font-black text-white">{item.name}</span>
-                      <span className="text-[10px] bg-blue-800/50 text-blue-400 border border-blue-700/40 px-1.5 py-0.5 rounded-full font-bold">{item.badge}</span>
+                      <span className="text-[10px] bg-[#c9a63e]/50 text-[#e3d1a6] border border-[#c9a63e]/40 px-1.5 py-0.5 rounded-full font-bold">{item.badge}</span>
                     </div>
                     <p className="text-xs text-[#a89a78]">{item.desc}</p>
                   </div>

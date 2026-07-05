@@ -82,7 +82,7 @@ export default function AnimalePage() {
         </nav>
 
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#9c7a26] via-blue-700 to-[#8a6a1e] text-white py-12 px-4">
+        <section className="bg-gradient-to-br from-[#9c7a26] via-[#c9a63e] to-[#8a6a1e] text-white py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">🐾</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Pet Shop cu Reducere {an}</h1>

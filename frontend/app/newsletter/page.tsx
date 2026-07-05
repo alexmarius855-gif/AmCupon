@@ -35,7 +35,7 @@ export default function NewsletterPage() {
 
         <div className="max-w-2xl mx-auto px-4 py-16">
           <div className="text-center mb-12">
-            <div className="inline-flex items-center justify-center w-20 h-20 rounded-3xl bg-gradient-to-br from-[#b8912e] to-violet-600 text-4xl mb-6 shadow-xl shadow-[#c9a63e]/30">
+            <div className="inline-flex items-center justify-center w-20 h-20 rounded-3xl bg-gradient-to-br from-[#b8912e] to-[#c9a63e] text-4xl mb-6 shadow-xl shadow-[#c9a63e]/30">
               🎁
             </div>
             <h1 className="text-3xl md:text-4xl font-black text-white mb-3 tracking-tight">

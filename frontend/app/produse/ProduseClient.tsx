@@ -224,7 +224,7 @@ function DealCard({ m, rank }: { m: Magazin; rank?: number }) {
     <a href={link} target="_blank" rel="sponsored noopener noreferrer"
       className="group bg-[#15120c] border border-[#37301f] hover:border-[#c9a63e]/50 rounded-2xl overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-200 flex flex-col">
       {/* Colored top bar */}
-      <div className="h-1 bg-gradient-to-r from-[#d8c091] to-violet-400"/>
+      <div className="h-1 bg-gradient-to-r from-[#d8c091] to-[#c9a63e]"/>
       <div className="p-4 flex-1 flex flex-col">
         {/* Logo + rank */}
         <div className="flex items-start justify-between mb-3">
@@ -240,7 +240,7 @@ function DealCard({ m, rank }: { m: Magazin; rank?: number }) {
           </div>
           <div className="flex items-center gap-1.5">
             {rank && rank <= 3 && (
-              <span className="text-[10px] font-black bg-amber-500/20 text-amber-400 px-1.5 py-0.5 rounded-full">
+              <span className="text-[10px] font-black bg-[#c9a63e]/20 text-[#e3d1a6] px-1.5 py-0.5 rounded-full">
                 #{rank}
               </span>
             )}
@@ -250,7 +250,7 @@ function DealCard({ m, rank }: { m: Magazin; rank?: number }) {
               </span>
             )}
             {m.cod_cupon && (
-              <span className="text-[10px] font-semibold bg-violet-500/20 text-violet-400 px-1.5 py-0.5 rounded-full border border-violet-500/30">
+              <span className="text-[10px] font-semibold bg-[#c9a63e]/20 text-[#e3d1a6] px-1.5 py-0.5 rounded-full border border-[#c9a63e]/30">
                 Cod
               </span>
             )}
@@ -403,7 +403,7 @@ export default function ProduseClient({
           </div>
           <h1 className="text-4xl md:text-6xl font-black tracking-tight leading-tight mb-4">
             <span className="text-white">Cumpara mai inteligent</span><br/>
-            <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #8b5cf6 0%, #b8912e 100%)"}}>
+            <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #c9a63e 0%, #b8912e 100%)"}}>
               reduceri reale, {an}
             </span>
           </h1>

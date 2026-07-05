@@ -47,14 +47,14 @@ interface TopData {
 }
 
 const GRADIENT: Record<string, string> = {
-  blue:    "from-[#9c7a26] via-blue-700 to-[#8a6a1e]",
-  violet:  "from-[#9c7a26] via-blue-700 to-[#8a6a1e]",
-  indigo:  "from-[#9c7a26] via-blue-700 to-[#8a6a1e]",
-  teal:    "from-[#9c7a26] via-blue-700 to-[#8a6a1e]",
-  emerald: "from-[#9c7a26] via-blue-700 to-[#8a6a1e]",
-  amber:   "from-[#9c7a26] via-blue-700 to-[#8a6a1e]",
-  rose:    "from-[#9c7a26] via-blue-700 to-[#8a6a1e]",
-  sky:     "from-[#9c7a26] via-blue-700 to-[#8a6a1e]",
+  blue:    "from-[#9c7a26] via-[#c9a63e] to-[#8a6a1e]",
+  violet:  "from-[#9c7a26] via-[#c9a63e] to-[#8a6a1e]",
+  indigo:  "from-[#9c7a26] via-[#c9a63e] to-[#8a6a1e]",
+  teal:    "from-[#9c7a26] via-[#c9a63e] to-[#8a6a1e]",
+  emerald: "from-[#9c7a26] via-[#c9a63e] to-[#8a6a1e]",
+  amber:   "from-[#9c7a26] via-[#c9a63e] to-[#8a6a1e]",
+  rose:    "from-[#9c7a26] via-[#c9a63e] to-[#8a6a1e]",
+  sky:     "from-[#9c7a26] via-[#c9a63e] to-[#8a6a1e]",
 };
 
 function loadData(): TopData {

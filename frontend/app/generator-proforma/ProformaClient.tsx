@@ -75,9 +75,9 @@ export default function ProformaClient() {
         </div>
 
         {/* Disclaimer legal — ascuns la print, vizibil clar in UI */}
-        <div className="bg-amber-500/10 border border-amber-500/20 rounded-2xl p-4 mb-8 print:hidden">
-          <p className="text-amber-300 text-sm font-bold mb-1">⚠️ Proforma ≠ factura fiscala</p>
-          <p className="text-amber-200/80 text-xs leading-relaxed">
+        <div className="bg-[#c9a63e]/10 border border-[#c9a63e]/20 rounded-2xl p-4 mb-8 print:hidden">
+          <p className="text-[#e3d1a6] text-sm font-bold mb-1">⚠️ Proforma ≠ factura fiscala</p>
+          <p className="text-[#e3d1a6]/80 text-xs leading-relaxed">
             Acest document NU este o factura fiscala si nu inlocuieste obligatia de e-Factura (transmitere
             catre ANAF prin SPV), obligatorie pentru majoritatea facturilor emise in Romania din 2024-2025.
             Proforma e o oferta/deviz informal trimis inainte de plata — utila pentru a comunica un pret

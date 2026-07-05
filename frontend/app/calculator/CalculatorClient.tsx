@@ -182,9 +182,9 @@ export default function CalculatorClient() {
               />
             </div>
             {pretVechiNum > 0 && pretNouNum > 0 && pretNouNum < pretVechiNum && (
-              <div className="bg-purple-500/10 border border-purple-500/20 rounded-2xl p-5 text-center">
+              <div className="bg-[#c9a63e]/10 border border-[#c9a63e]/20 rounded-2xl p-5 text-center">
                 <p className="text-[#a89a78] text-sm mb-1">Reducere reala</p>
-                <p className="text-purple-400 font-black text-4xl">-{procentCalc}%</p>
+                <p className="text-[#e3d1a6] font-black text-4xl">-{procentCalc}%</p>
                 <p className="text-[#8c8064] text-xs mt-2">
                   {(pretVechiNum - pretNouNum).toFixed(2)} lei economisiti
                 </p>

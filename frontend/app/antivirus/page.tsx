@@ -46,12 +46,12 @@ const LINK_KASPERSKY   = "https://www.kaspersky.com";
 const COMPARATIV = [
   { brand: "Bitdefender", nota: "9.8/10", pret: "de la 45 lei/an", highlight: "Cel mai bun detectie malware", culoare: "bg-red-600", url: LINK_BITDEFENDER },
   { brand: "Norton 360", nota: "9.5/10", pret: "de la 59 lei/an", highlight: "VPN nelimitat inclus", culoare: "bg-yellow-500", url: LINK_NORTON },
-  { brand: "ESET NOD32", nota: "9.3/10", pret: "de la 39 lei/an", highlight: "Cel mai usor pe sistem", culoare: "bg-blue-600", url: LINK_ESET },
+  { brand: "ESET NOD32", nota: "9.3/10", pret: "de la 39 lei/an", highlight: "Cel mai usor pe sistem", culoare: "bg-[#b8912e]", url: LINK_ESET },
   { brand: "Kaspersky", nota: "9.1/10", pret: "de la 49 lei/an", highlight: "Protectie bancara excelenta", culoare: "bg-emerald-600", url: LINK_KASPERSKY },
 ];
 
 function numeAfisat(s: string) { return s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" "); }
-const CULORI_BADGE = ["bg-red-600","bg-yellow-500","bg-blue-600","bg-emerald-600","bg-purple-600","bg-[#b8912e]","bg-teal-600"];
+const CULORI_BADGE = ["bg-red-600","bg-yellow-500","bg-[#b8912e]","bg-emerald-600","bg-[#b8912e]","bg-[#b8912e]","bg-[#b8912e]"];
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Antivirus Ieftin Romania 2026","url":"https://amcupon.ro/antivirus","description":"Coduri reducere antivirus Romania — Bitdefender, Norton, ESET, Kaspersky" };
 
 export default function AntivirusPage() {
@@ -81,10 +81,10 @@ export default function AntivirusPage() {
         </nav>
 
         {/* Hero */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-red-950 via-[#15120c] to-rose-950 py-16 px-4">
+        <section className="relative overflow-hidden bg-gradient-to-br from-red-950 via-[#15120c] to-[#1a1408] py-16 px-4">
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute top-0 right-1/4 w-96 h-96 bg-red-600/20 rounded-full blur-3xl" />
-            <div className="absolute bottom-0 left-1/4 w-64 h-64 bg-rose-600/15 rounded-full blur-3xl" />
+            <div className="absolute bottom-0 left-1/4 w-64 h-64 bg-[#c9a63e]/15 rounded-full blur-3xl" />
           </div>
           <div className="relative max-w-6xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-red-500/20 border border-red-500/30 text-red-300 text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
@@ -93,7 +93,7 @@ export default function AntivirusPage() {
             </div>
             <div className="text-6xl mb-5 drop-shadow-2xl">🛡️</div>
             <h1 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">
-              Antivirus Ieftin Romania <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #8b5cf6, #b8912e)"}}>{an}</span>
+              Antivirus Ieftin Romania <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #c9a63e, #b8912e)"}}>{an}</span>
             </h1>
             <p className="text-[#c8bda2] text-lg mb-8 max-w-xl mx-auto leading-relaxed">
               Bitdefender, Norton, ESET, Kaspersky — protectie completa cu pana la 70% reducere fata de pretul de lista

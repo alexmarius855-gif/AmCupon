@@ -82,7 +82,7 @@ export default function SupermarketPage() {
         </nav>
 
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#9c7a26] via-blue-700 to-[#8a6a1e] text-white py-12 px-4">
+        <section className="bg-gradient-to-br from-[#9c7a26] via-[#c9a63e] to-[#8a6a1e] text-white py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">🛒</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Supermarket Online cu Reducere {an}</h1>
@@ -101,10 +101,10 @@ export default function SupermarketPage() {
         <div className="bg-[#15120c] border-[#26211a] py-3 px-4">
           <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-6 text-sm">
             <span className="text-[#e3d1a6] font-semibold">
-              <span className="font-black text-blue-600">{magazine.length}</span> magazine alimentare
+              <span className="font-black text-[#c9a63e]">{magazine.length}</span> magazine alimentare
             </span>
             <span className="text-[#e3d1a6] font-semibold">
-              <span className="font-black text-blue-600">{cuPromo.length}</span> cu promotii active
+              <span className="font-black text-[#c9a63e]">{cuPromo.length}</span> cu promotii active
             </span>
             <span className="text-[#e3d1a6] font-semibold">&#10003; Actualizat zilnic</span>
           </div>
@@ -150,7 +150,7 @@ export default function SupermarketPage() {
                       <div>
                         <p className="font-bold text-white text-sm">{nume}</p>
                         {m.are_promotie && m.cod_cupon && <span className="text-xs text-[#d8c091] font-bold">COD</span>}
-                        {m.are_promotie && !m.cod_cupon && <span className="text-xs text-blue-500 font-medium">Oferta</span>}
+                        {m.are_promotie && !m.cod_cupon && <span className="text-xs text-[#c9a63e] font-medium">Oferta</span>}
                       </div>
                     </div>
                     {promo ? (
@@ -159,7 +159,7 @@ export default function SupermarketPage() {
                       <p className="text-[#8c8064] text-xs italic">Verifica ofertele curente</p>
                     )}
                     <div className="flex justify-end mt-2">
-                      <span className="text-xs text-blue-500 font-semibold group-hover:text-[#e3d1a6]">Vezi &rarr;</span>
+                      <span className="text-xs text-[#c9a63e] font-semibold group-hover:text-[#e3d1a6]">Vezi &rarr;</span>
                     </div>
                   </a>
                 );

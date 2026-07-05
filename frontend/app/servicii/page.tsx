@@ -88,28 +88,28 @@ function getBestPromo(m: Magazin): Promotie {
 
 // Culoare distincta per categorie de serviciu — niciodata portocaliu
 const CATEG_COLOR: Record<string, { from: string; to: string; text: string; ring: string }> = {
-  "Sanatate & Estetica":  { from: "#f43f5e", to: "#ec4899", text: "text-rose-400",    ring: "hover:border-rose-500/30" },
-  "Educatie & Cursuri":   { from: "#8b5cf6", to: "#b8912e", text: "text-violet-400",  ring: "hover:border-violet-500/30" },
-  "Software & SaaS":      { from: "#3b82f6", to: "#b8912e", text: "text-blue-400",    ring: "hover:border-blue-500/30" },
-  "Hosting":              { from: "#06b6d4", to: "#0891b2", text: "text-[#d8c091]",   ring: "hover:border-[#c9a63e]/30" },
-  "Telecomunicatii":      { from: "#0ea5e9", to: "#3b82f6", text: "text-sky-400",    ring: "hover:border-sky-500/30" },
+  "Sanatate & Estetica":  { from: "#e3d1a6", to: "#c9a63e", text: "text-[#e3d1a6]",    ring: "hover:border-[#c9a63e]/30" },
+  "Educatie & Cursuri":   { from: "#d8c091", to: "#b8912e", text: "text-[#e3d1a6]",  ring: "hover:border-[#c9a63e]/30" },
+  "Software & SaaS":      { from: "#c9a63e", to: "#9c7a26", text: "text-[#e3d1a6]",    ring: "hover:border-[#c9a63e]/30" },
+  "Hosting":              { from: "#b8912e", to: "#7a5f1e", text: "text-[#d8c091]",   ring: "hover:border-[#c9a63e]/30" },
+  "Telecomunicatii":      { from: "#d8c091", to: "#c9a63e", text: "text-[#e3d1a6]",    ring: "hover:border-[#c9a63e]/30" },
   "Financiar":            { from: "#10b981", to: "#059669", text: "text-emerald-400",ring: "hover:border-emerald-500/30" },
 };
 
 const PAGINI_DEDICATE = [
-  { href: "/albire-dinti",          emoji: "🦷", name: "Albire Dinti",         sub: "Serviciu estetic",          from: "#f43f5e", to: "#ec4899" },
-  { href: "/cursuri-online",        emoji: "🎓", name: "Cursuri Online",       sub: "Educatie & certificari",    from: "#8b5cf6", to: "#b8912e" },
-  { href: "/software-business",     emoji: "📊", name: "Software Business",    sub: "SaaS cu comision mare",     from: "#3b82f6", to: "#b8912e" },
-  { href: "/hosting",               emoji: "🌐", name: "Hosting Web",          sub: "Gazduire site-uri",         from: "#06b6d4", to: "#0891b2" },
-  { href: "/vpn",                   emoji: "🔒", name: "VPN & Securitate",     sub: "NordVPN, Surfshark",        from: "#1e40af", to: "#3730a3" },
-  { href: "/ai-tools",              emoji: "🤖", name: "AI Tools",             sub: "Unelte AI pentru munca",    from: "#a855f7", to: "#b8912e" },
+  { href: "/albire-dinti",          emoji: "🦷", name: "Albire Dinti",         sub: "Serviciu estetic",          from: "#e3d1a6", to: "#c9a63e" },
+  { href: "/cursuri-online",        emoji: "🎓", name: "Cursuri Online",       sub: "Educatie & certificari",    from: "#d8c091", to: "#b8912e" },
+  { href: "/software-business",     emoji: "📊", name: "Software Business",    sub: "SaaS cu comision mare",     from: "#c9a63e", to: "#9c7a26" },
+  { href: "/hosting",               emoji: "🌐", name: "Hosting Web",          sub: "Gazduire site-uri",         from: "#b8912e", to: "#7a5f1e" },
+  { href: "/vpn",                   emoji: "🔒", name: "VPN & Securitate",     sub: "NordVPN, Surfshark",        from: "#c9a63e", to: "#9c7a26" },
+  { href: "/ai-tools",              emoji: "🤖", name: "AI Tools",             sub: "Unelte AI pentru munca",    from: "#d8c091", to: "#b8912e" },
   { href: "/trading",               emoji: "📈", name: "Trading & Investitii", sub: "XTB, Binance, eToro",       from: "#10b981", to: "#059669" },
-  { href: "/instrumente-seo",       emoji: "📊", name: "Instrumente SEO",      sub: "Semrush, Ahrefs, Moz",      from: "#0d9488", to: "#0891b2" },
-  { href: "/carduri-bancare",       emoji: "💳", name: "Carduri Bancare",      sub: "Conturi & carduri online",  from: "#0ea5e9", to: "#2563eb" },
-  { href: "/servicii-internationale", emoji: "🌍", name: "Servicii Internationale", sub: "VPN, hosting, software", from: "#6d28d9", to: "#4338ca" },
-  { href: "/calculator",            emoji: "🧮", name: "Calculator Reduceri", sub: "Calculeaza economia reala", from: "#ec4899", to: "#be185d" },
-  { href: "/calculator-salariu",    emoji: "💼", name: "Calculator Salariu",  sub: "Net-brut 2026",             from: "#2563eb", to: "#1e40af" },
-  { href: "/generator-proforma",    emoji: "📄", name: "Generator Proforma",  sub: "Document instant gratuit",  from: "#475569", to: "#1e293b" },
+  { href: "/instrumente-seo",       emoji: "📊", name: "Instrumente SEO",      sub: "Semrush, Ahrefs, Moz",      from: "#c9a63e", to: "#9c7a26" },
+  { href: "/carduri-bancare",       emoji: "💳", name: "Carduri Bancare",      sub: "Conturi & carduri online",  from: "#d8c091", to: "#b8912e" },
+  { href: "/servicii-internationale", emoji: "🌍", name: "Servicii Internationale", sub: "VPN, hosting, software", from: "#c9a63e", to: "#9c7a26" },
+  { href: "/calculator",            emoji: "🧮", name: "Calculator Reduceri", sub: "Calculeaza economia reala", from: "#e3d1a6", to: "#c9a63e" },
+  { href: "/calculator-salariu",    emoji: "💼", name: "Calculator Salariu",  sub: "Net-brut 2026",             from: "#d8c091", to: "#b8912e" },
+  { href: "/generator-proforma",    emoji: "📄", name: "Generator Proforma",  sub: "Document instant gratuit",  from: "#8c8064", to: "#473d28" },
 ];
 
 export default function ServiciiPage() {
@@ -141,7 +141,7 @@ export default function ServiciiPage() {
           </nav>
           <div className="text-5xl mb-4">⚙️</div>
           <h1 className="text-4xl md:text-5xl font-black text-white mb-4">
-            Servicii cu <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #8b5cf6, #06b6d4, #10b981)" }}>Reducere</span>
+            Servicii cu <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #e3d1a6, #c9a63e, #b8912e)" }}>Reducere</span>
           </h1>
           <p className="text-[#a89a78] text-lg max-w-2xl mx-auto mb-6">
             Coduri de reducere la servicii online verificate zilnic: sanatate si estetica, cursuri, software, hosting, telecomunicatii. Tot ce folosesti, mai ieftin.
@@ -270,7 +270,7 @@ export default function ServiciiPage() {
       {/* CTA aplica la programe */}
       <section className="max-w-5xl mx-auto px-4 py-10 border-t border-[#26211a]">
         <div className="relative overflow-hidden rounded-2xl p-7" style={{ background: "linear-gradient(120deg, rgba(139,92,246,0.12), rgba(6,182,212,0.10), rgba(16,185,129,0.10))" }}>
-          <div className="absolute inset-0 border border-violet-700/20 rounded-2xl pointer-events-none" />
+          <div className="absolute inset-0 border border-[#c9a63e]/20 rounded-2xl pointer-events-none" />
           <h2 className="text-xl font-black text-white mb-2">Cunosti si alte servicii cu programe de afiliere?</h2>
           <p className="text-[#a89a78] text-sm mb-5">
             AmCupon.ro monitorizeaza automat 900+ magazine si servicii din Romania. Daca gasesti un serviciu cu reduceri active pe care nu il vedem, scrie-ne.
@@ -278,7 +278,7 @@ export default function ServiciiPage() {
           <div className="flex flex-wrap gap-3">
             <Link href="/recomandari"
               className="text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-all hover:-translate-y-0.5"
-              style={{ background: "linear-gradient(135deg, #8b5cf6, #b8912e)" }}>
+              style={{ background: "linear-gradient(135deg, #c9a63e, #b8912e)" }}>
               Servicii recomandate →
             </Link>
             <Link href="/contact"

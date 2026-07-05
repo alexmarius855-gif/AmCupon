@@ -63,11 +63,11 @@ export default function FloriPage() {
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-rose-700 via-pink-700 to-fuchsia-700 text-white py-12 px-4">
+        <section className="bg-gradient-to-br from-[#c9a63e] via-[#c9a63e] to-[#c9a63e] text-white py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">💐</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Flori & Buchete cu Reducere {an}</h1>
-            <p className="text-rose-100 text-lg mb-6 max-w-xl mx-auto">
+            <p className="text-[#e3d1a6] text-lg mb-6 max-w-xl mx-auto">
               Livrare rapidă, aranjamente proaspete și reduceri verificate pentru orice ocazie
             </p>
             <div className="flex flex-wrap justify-center gap-2">
@@ -102,7 +102,7 @@ export default function FloriPage() {
             <div className="text-center py-10 bg-[#15120c] rounded-2xl">
               <p className="text-2xl mb-3">💐</p>
               <p className="text-[#a89a78] font-medium mb-2">Explorează ofertele noastre de cadouri</p>
-              <Link href="/idei-cadouri" className="inline-block bg-rose-600 text-white font-bold px-6 py-3 rounded-xl hover:bg-rose-500 transition-colors">
+              <Link href="/idei-cadouri" className="inline-block bg-[#b8912e] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#c9a63e] transition-colors">
                 Vezi idei de cadouri →
               </Link>
             </div>
@@ -114,7 +114,7 @@ export default function FloriPage() {
                 const promo = m.promotii[0];
                 return (
                   <a key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                    className="group bg-[#15120c] border border-[#26211a] hover:border-rose-500/40 rounded-2xl p-4 transition-all hover:shadow-md">
+                    className="group bg-[#15120c] border border-[#26211a] hover:border-[#c9a63e]/40 rounded-2xl p-4 transition-all hover:shadow-md">
                     <div className="flex items-center gap-3 mb-3">
                       {m.logo_url ? (
                         <div className="w-10 h-10 rounded-xl overflow-hidden bg-white border border-[#26211a] shrink-0">
@@ -128,8 +128,8 @@ export default function FloriPage() {
                       )}
                       <div>
                         <p className="font-bold text-white text-sm">{nume}</p>
-                        {m.are_promotie && m.cod_cupon && <span className="text-xs text-rose-400 font-bold">COD</span>}
-                        {m.are_promotie && !m.cod_cupon && <span className="text-xs text-fuchsia-400 font-medium">Ofertă</span>}
+                        {m.are_promotie && m.cod_cupon && <span className="text-xs text-[#e3d1a6] font-bold">COD</span>}
+                        {m.are_promotie && !m.cod_cupon && <span className="text-xs text-[#e3d1a6] font-medium">Ofertă</span>}
                       </div>
                     </div>
                     {promo ? (
@@ -138,7 +138,7 @@ export default function FloriPage() {
                       <p className="text-[#8c8064] text-xs italic">Verifică ofertele curente</p>
                     )}
                     <div className="flex justify-end mt-2">
-                      <span className="text-xs text-sky-500 font-semibold group-hover:text-sky-600">Vezi →</span>
+                      <span className="text-xs text-[#c9a63e] font-semibold group-hover:text-[#c9a63e]">Vezi →</span>
                     </div>
                   </a>
                 );
@@ -189,7 +189,7 @@ export default function FloriPage() {
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-[#15120c] hover:bg-[#26211a] hover:text-rose-300 text-[#c8bda2] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#26211a] hover:border-rose-400">
+                className="bg-[#15120c] hover:bg-[#26211a] hover:text-[#e3d1a6] text-[#c8bda2] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#26211a] hover:border-[#c9a63e]">
                 {l.label}
               </a>
             ))}

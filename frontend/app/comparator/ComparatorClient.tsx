@@ -64,7 +64,7 @@ function MagazinCard({ m, onRemove, onSwap, position }: { m: Magazin; onRemove: 
   const nrCoduri  = m.promotii.filter(p => p.cod_cupon).length;
   const nrOferte  = m.promotii.length;
   const trustScore = m.procent_succes || (m.are_promotie ? 78 : 50);
-  const gradients = ["from-[#b8912e] to-[#9c7a26]", "from-[#b8912e] to-blue-600"];
+  const gradients = ["from-[#b8912e] to-[#9c7a26]", "from-[#b8912e] to-[#c9a63e]"];
 
   return (
     <div className="bg-[#15120c] rounded-2xl border border-[#26211a] overflow-hidden shadow-sm">
@@ -117,9 +117,9 @@ function MagazinCard({ m, onRemove, onSwap, position }: { m: Magazin; onRemove: 
         <div>
           <div className="flex justify-between items-center mb-1.5">
             <span className="text-xs font-semibold text-[#8c8064] uppercase tracking-wide">Coduri cupon</span>
-            <span className={`text-sm font-black ${nrCoduri > 0 ? "text-violet-600" : "text-[#a89a78]"}`}>{nrCoduri}</span>
+            <span className={`text-sm font-black ${nrCoduri > 0 ? "text-[#c9a63e]" : "text-[#a89a78]"}`}>{nrCoduri}</span>
           </div>
-          <ScorBar value={nrCoduri} max={10} color="bg-violet-500" />
+          <ScorBar value={nrCoduri} max={10} color="bg-[#c9a63e]" />
         </div>
 
         {/* Reducere max */}
@@ -135,9 +135,9 @@ function MagazinCard({ m, onRemove, onSwap, position }: { m: Magazin; onRemove: 
         <div>
           <div className="flex justify-between items-center mb-1.5">
             <span className="text-xs font-semibold text-[#8c8064] uppercase tracking-wide">Cashback</span>
-            <span className={`text-sm font-black ${cashback > 0 ? "text-teal-600" : "text-[#a89a78]"}`}>{cashback > 0 ? `${cashback}%` : "—"}</span>
+            <span className={`text-sm font-black ${cashback > 0 ? "text-[#c9a63e]" : "text-[#a89a78]"}`}>{cashback > 0 ? `${cashback}%` : "—"}</span>
           </div>
-          <ScorBar value={cashback} max={20} color="bg-teal-500" />
+          <ScorBar value={cashback} max={20} color="bg-[#c9a63e]" />
         </div>
 
         {/* Trust Score */}
@@ -146,16 +146,16 @@ function MagazinCard({ m, onRemove, onSwap, position }: { m: Magazin; onRemove: 
             <span className="text-xs font-semibold text-[#8c8064] uppercase tracking-wide">Trust Score</span>
             <span className="text-sm font-black text-[#c8bda2]">{trustScore}%</span>
           </div>
-          <ScorBar value={trustScore} max={100} color={trustScore >= 80 ? "bg-emerald-500" : trustScore >= 60 ? "bg-amber-500" : "bg-red-500"} />
+          <ScorBar value={trustScore} max={100} color={trustScore >= 80 ? "bg-emerald-500" : trustScore >= 60 ? "bg-[#c9a63e]" : "bg-red-500"} />
         </div>
 
         {/* Badges */}
         <div className="flex flex-wrap gap-1.5 pt-2 border-t border-[#26211a]">
           {m.exclusiv    && <span className="text-[10px] font-bold bg-[#c9a63e]/15 text-[#e3d1a6] px-2 py-0.5 rounded-full">Exclusiv</span>}
-          {m.cod_cupon   && <span className="text-[10px] font-bold bg-violet-500/15 text-violet-300 px-2 py-0.5 rounded-full">Cod cupon</span>}
+          {m.cod_cupon   && <span className="text-[10px] font-bold bg-[#c9a63e]/15 text-[#e3d1a6] px-2 py-0.5 rounded-full">Cod cupon</span>}
           {m.are_promotie&& <span className="text-[10px] font-bold bg-emerald-500/15 text-emerald-300 px-2 py-0.5 rounded-full">Ofertă activă</span>}
           {m.trend > 2   && <span className="text-[10px] font-bold bg-red-500/15 text-red-300 px-2 py-0.5 rounded-full">🔥 Trending</span>}
-          {cashback > 0  && <span className="text-[10px] font-bold bg-teal-500/15 text-teal-300 px-2 py-0.5 rounded-full">Cashback</span>}
+          {cashback > 0  && <span className="text-[10px] font-bold bg-[#c9a63e]/15 text-[#e3d1a6] px-2 py-0.5 rounded-full">Cashback</span>}
         </div>
 
         {/* Top promotii */}
@@ -300,7 +300,7 @@ function ComparatorInner() {
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Winner banner */}
         {winner && (
-          <div className="bg-gradient-to-r from-emerald-500 to-teal-500 text-white rounded-2xl p-4 mb-6 flex items-center gap-3">
+          <div className="bg-gradient-to-r from-emerald-500 to-[#c9a63e] text-white rounded-2xl p-4 mb-6 flex items-center gap-3">
             <span className="text-2xl">🏆</span>
             <div>
               <p className="font-black text-lg">{numeAfisat(winner.magazin)} câștigă comparația!</p>

@@ -24,7 +24,7 @@ const CAT_TEL = ["electronics","electronice","telecom","mobile"];
 
 const BUGETE_TEL = [
   { pret: "Sub 1.000 lei", emoji: "📱", desc: "Android de baza, retea 4G, camera decenta", culoare: "bg-emerald-600" },
-  { pret: "1.000 – 2.000 lei", emoji: "📲", desc: "Mid-range solid: Xiaomi, Samsung A, OnePlus Nord", culoare: "bg-teal-600" },
+  { pret: "1.000 – 2.000 lei", emoji: "📲", desc: "Mid-range solid: Xiaomi, Samsung A, OnePlus Nord", culoare: "bg-[#b8912e]" },
   { pret: "2.000 – 4.000 lei", emoji: "✨", desc: "Flagship mid: Samsung S, Pixel, iPhone SE", culoare: "bg-[#b8912e]" },
   { pret: "Peste 4.000 lei", emoji: "👑", desc: "Flagship: iPhone 16, Samsung S25, OnePlus 13", culoare: "bg-[#b8912e]" },
 ];
@@ -39,7 +39,7 @@ const BRANDURI_TEL = [
 ];
 
 function numeAfisat(s: string) { return s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" "); }
-const CULORI_BADGE = ["bg-teal-600","bg-[#b8912e]","bg-blue-600","bg-emerald-600","bg-sky-600","bg-teal-500","bg-green-600","bg-[#b8912e]"];
+const CULORI_BADGE = ["bg-[#b8912e]","bg-[#b8912e]","bg-[#b8912e]","bg-emerald-600","bg-[#b8912e]","bg-[#c9a63e]","bg-green-600","bg-[#b8912e]"];
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Telefon Ieftin Romania 2026","url":"https://amcupon.ro/telefoane","description":"Oferte telefoane Romania 2026 — Samsung, iPhone, Xiaomi la preturi reduse" };
 
 export default function TelefoaneePage() {
@@ -69,14 +69,14 @@ export default function TelefoaneePage() {
         </nav>
 
         {/* Hero */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-teal-950 via-[#15120c] to-[#1a1408] py-16 px-4">
+        <section className="relative overflow-hidden bg-gradient-to-br from-[#1a1408] via-[#15120c] to-[#1a1408] py-16 px-4">
           <div className="absolute inset-0 pointer-events-none">
-            <div className="absolute top-0 left-1/3 w-80 h-80 bg-teal-600/20 rounded-full blur-3xl" />
+            <div className="absolute top-0 left-1/3 w-80 h-80 bg-[#c9a63e]/20 rounded-full blur-3xl" />
             <div className="absolute bottom-0 right-1/3 w-64 h-64 bg-[#b8912e]/15 rounded-full blur-3xl" />
           </div>
           <div className="relative max-w-6xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 bg-teal-500/20 border border-teal-500/30 text-teal-300 text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
-              <span className="w-1.5 h-1.5 rounded-full bg-teal-400 animate-pulse"/>
+            <div className="inline-flex items-center gap-2 bg-[#c9a63e]/20 border border-[#c9a63e]/30 text-[#e3d1a6] text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#c9a63e] animate-pulse"/>
               Oferte verificate zilnic
             </div>
             <div className="text-6xl mb-5 drop-shadow-2xl">📲</div>
@@ -97,12 +97,12 @@ export default function TelefoaneePage() {
         {/* Bugete */}
         <section className="max-w-6xl mx-auto px-4 py-12">
           <div className="text-center mb-8">
-            <p className="text-xs font-bold text-teal-400 uppercase tracking-widest mb-2">BUGET</p>
+            <p className="text-xs font-bold text-[#e3d1a6] uppercase tracking-widest mb-2">BUGET</p>
             <h2 className="text-2xl font-black text-white">Alege telefonul dupa buget</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {BUGETE_TEL.map(b => (
-              <div key={b.pret} className="bg-[#15120c] border border-[#26211a] hover:border-teal-500/40 rounded-2xl p-5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-teal-500/10">
+              <div key={b.pret} className="bg-[#15120c] border border-[#26211a] hover:border-[#c9a63e]/40 rounded-2xl p-5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#c9a63e]/10">
                 <div className={`w-11 h-11 ${b.culoare} rounded-xl flex items-center justify-center text-2xl mb-4`}>{b.emoji}</div>
                 <h3 className="font-black text-white text-base mb-1.5">{b.pret}</h3>
                 <p className="text-xs text-[#a89a78] leading-relaxed">{b.desc}</p>
@@ -126,7 +126,7 @@ export default function TelefoaneePage() {
               const promo = m.promotii[0];
               return (
                 <a key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                  className="group bg-[#15120c] border border-[#26211a] hover:border-teal-500/50 rounded-2xl p-4 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-teal-500/10">
+                  className="group bg-[#15120c] border border-[#26211a] hover:border-[#c9a63e]/50 rounded-2xl p-4 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#c9a63e]/10">
                   <div className="flex items-center gap-3 mb-3">
                     {m.logo_url ? (
                       <div className="w-10 h-10 rounded-xl overflow-hidden bg-white flex items-center justify-center shrink-0">
@@ -137,7 +137,7 @@ export default function TelefoaneePage() {
                       <div className={`w-10 h-10 rounded-xl ${culoare} flex items-center justify-center text-white font-black text-lg shrink-0`}>{nume[0]}</div>
                     )}
                     <div>
-                      <p className="font-bold text-white text-sm group-hover:text-teal-300 transition-colors">{nume}</p>
+                      <p className="font-bold text-white text-sm group-hover:text-[#e3d1a6] transition-colors">{nume}</p>
                       {m.are_promotie && m.cod_cupon && <span className="text-[10px] font-black text-[#d8c091] bg-[#c9a63e]/10 border border-[#c9a63e]/20 px-1.5 py-0.5 rounded-full">COD</span>}
                       {m.are_promotie && !m.cod_cupon && <span className="text-[10px] font-medium text-emerald-400">Oferta activa</span>}
                     </div>
@@ -148,7 +148,7 @@ export default function TelefoaneePage() {
                     <p className="text-[#473d28] text-xs italic">Verifica ofertele curente</p>
                   )}
                   <div className="flex justify-end mt-3">
-                    <span className="text-xs text-teal-400 font-semibold group-hover:text-teal-300 flex items-center gap-1">
+                    <span className="text-xs text-[#e3d1a6] font-semibold group-hover:text-[#e3d1a6] flex items-center gap-1">
                       Vezi <svg className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/></svg>
                     </span>
                   </div>
@@ -169,7 +169,7 @@ export default function TelefoaneePage() {
         {/* Ghid */}
         <section className="bg-[#15120c] border-t border-[#26211a] py-12 px-4">
           <div className="max-w-3xl mx-auto">
-            <p className="text-xs font-bold text-teal-400 uppercase tracking-widest mb-3">GHID CUMPARATURI</p>
+            <p className="text-xs font-bold text-[#e3d1a6] uppercase tracking-widest mb-3">GHID CUMPARATURI</p>
             <h2 className="text-2xl font-black text-white mb-7">Ce telefon sa cumperi in {an}</h2>
             <div className="space-y-5">
               <div className="bg-[#26211a] border border-[#37301f] rounded-2xl p-5">
@@ -196,7 +196,7 @@ export default function TelefoaneePage() {
                     ["Zilele eMAG","campanii de 2-3 ori pe an cu preturi foarte bune"],
                   ].map(([bold, text]) => (
                     <li key={bold} className="flex gap-2">
-                      <span className="text-teal-400 mt-0.5 shrink-0">→</span>
+                      <span className="text-[#e3d1a6] mt-0.5 shrink-0">→</span>
                       <span><strong className="text-white">{bold}</strong> — {text}</span>
                     </li>
                   ))}
@@ -218,7 +218,7 @@ export default function TelefoaneePage() {
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-[#26211a] hover:bg-[#37301f] border border-[#37301f] hover:border-teal-500/40 text-[#c8bda2] hover:text-white text-sm font-semibold px-4 py-2 rounded-xl transition-all duration-200">
+                className="bg-[#26211a] hover:bg-[#37301f] border border-[#37301f] hover:border-[#c9a63e]/40 text-[#c8bda2] hover:text-white text-sm font-semibold px-4 py-2 rounded-xl transition-all duration-200">
                 {l.label}
               </a>
             ))}

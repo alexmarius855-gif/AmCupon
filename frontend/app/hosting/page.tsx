@@ -31,7 +31,7 @@ const HOSTING_LIST = [
     name: "Hostinger",
     tagline: "Cel mai accesibil hosting premium — perfect pentru inceput si proiecte mici",
     badge: "Recomandat #1",
-    badgeColor: "bg-violet-600",
+    badgeColor: "bg-[#b8912e]",
     emoji: "🏆",
     pret_luna: "1.99€",
     pret_nota: "plan Starter 48 luni",
@@ -78,7 +78,7 @@ const HOSTING_LIST = [
     name: "Cloudways",
     tagline: "Cloud hosting gestionat — puterea AWS/Google Cloud fara complexitate",
     badge: "Cel mai scalabil",
-    badgeColor: "bg-blue-600",
+    badgeColor: "bg-[#b8912e]",
     emoji: "☁️",
     pret_luna: "11€",
     pret_nota: "plan DigitalOcean 1GB",
@@ -127,7 +127,7 @@ export default function HostingPage() {
           </nav>
           <div className="text-5xl mb-4">🌐</div>
           <h1 className="text-4xl md:text-5xl font-black text-white mb-4">
-            Cel mai bun <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #8b5cf6, #a78bfa)" }}>Hosting Romania</span> 2026
+            Cel mai bun <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #c9a63e, #d8c091)" }}>Hosting Romania</span> 2026
           </h1>
           <p className="text-[#a89a78] text-lg max-w-2xl mx-auto mb-6">
             Am comparat cei mai populari hosteri pentru site-uri romanesti. Preturi reale, teste de viteza, calitate suport — tot ce trebuie sa stii.
@@ -149,7 +149,7 @@ export default function HostingPage() {
               <div className="text-2xl mb-2">{t.emoji}</div>
               <h3 className="text-sm font-bold text-white mb-1">{t.titlu}</h3>
               <p className="text-xs text-[#a89a78] mb-2">{t.desc}</p>
-              <p className="text-[10px] text-violet-400 font-bold">Recomandat: {t.recomandat}</p>
+              <p className="text-[10px] text-[#e3d1a6] font-bold">Recomandat: {t.recomandat}</p>
             </div>
           ))}
         </div>
@@ -160,15 +160,15 @@ export default function HostingPage() {
         <h2 className="text-2xl font-black text-white mb-3">Top 3 Hosteri pentru Romania</h2>
         <div className="bg-[#15120c] border border-[#26211a] rounded-xl p-4 mb-6">
           <p className="text-[#c8bda2] text-sm text-center">
-            <strong className="text-white">Concluzia scurta:</strong> Incepi un site? Alege <span className="text-violet-400 font-bold">Hostinger</span> — cel mai ieftin, cel mai usor. Ai deja trafic si vrei performanta? <span className="text-[#d8c091] font-bold">SiteGround</span>. Vrei cloud si scalare? <span className="text-blue-400 font-bold">Cloudways</span>.
+            <strong className="text-white">Concluzia scurta:</strong> Incepi un site? Alege <span className="text-[#e3d1a6] font-bold">Hostinger</span> — cel mai ieftin, cel mai usor. Ai deja trafic si vrei performanta? <span className="text-[#d8c091] font-bold">SiteGround</span>. Vrei cloud si scalare? <span className="text-[#e3d1a6] font-bold">Cloudways</span>.
           </p>
         </div>
 
         <div className="space-y-6">
           {HOSTING_LIST.map((h) => (
-            <div key={h.name} className={`bg-[#15120c] border rounded-2xl p-6 ${h.rank === 1 ? "border-violet-500/40 shadow-lg shadow-violet-500/10" : "border-[#26211a]"}`}>
+            <div key={h.name} className={`bg-[#15120c] border rounded-2xl p-6 ${h.rank === 1 ? "border-[#c9a63e]/40 shadow-lg shadow-[#c9a63e]/10" : "border-[#26211a]"}`}>
               {h.rank === 1 && (
-                <div className="text-xs text-violet-400 font-bold mb-3">⭐ CEL MAI RECOMANDAT PENTRU INCEPUT</div>
+                <div className="text-xs text-[#e3d1a6] font-bold mb-3">⭐ CEL MAI RECOMANDAT PENTRU INCEPUT</div>
               )}
               <div className="flex flex-col md:flex-row md:items-start gap-5">
                 <div className="flex-1">
@@ -215,7 +215,7 @@ export default function HostingPage() {
                     </div>
                   </div>
                   <a href={h.url} target="_blank" rel="sponsored noopener noreferrer"
-                    className={`w-full text-center py-3 px-4 rounded-xl font-black text-sm text-white transition-all hover:-translate-y-0.5 shadow-lg ${h.rank === 1 ? "bg-violet-600 hover:bg-violet-500 shadow-violet-500/20" : "bg-[#37301f] hover:bg-[#473d28]"}`}>
+                    className={`w-full text-center py-3 px-4 rounded-xl font-black text-sm text-white transition-all hover:-translate-y-0.5 shadow-lg ${h.rank === 1 ? "bg-[#b8912e] hover:bg-[#c9a63e] shadow-[#c9a63e]/20" : "bg-[#37301f] hover:bg-[#473d28]"}`}>
                     Incearca {h.name} →
                   </a>
                 </div>
@@ -240,11 +240,11 @@ export default function HostingPage() {
 
       {/* CTA */}
       <section className="max-w-5xl mx-auto px-4 pb-12">
-        <div className="bg-gradient-to-r from-violet-950/40 to-blue-950/30 border border-violet-800/30 rounded-2xl p-8 text-center">
+        <div className="bg-gradient-to-r from-[#c9a63e]/40 to-[#c9a63e]/30 border border-[#c9a63e]/30 rounded-2xl p-8 text-center">
           <h2 className="text-2xl font-black text-white mb-3">Lanseaza-ti site-ul azi</h2>
           <p className="text-[#a89a78] mb-6 text-sm max-w-xl mx-auto">Hostinger e ales de peste 3 milioane de utilizatori din toata lumea. Setup in 5 minute, domeniu gratuit inclus.</p>
           <a href="https://hostinger.com" target="_blank" rel="sponsored noopener noreferrer"
-            className="inline-block bg-violet-600 hover:bg-violet-500 text-white font-black px-10 py-4 rounded-xl transition-all hover:-translate-y-0.5 shadow-lg shadow-violet-500/20 text-base">
+            className="inline-block bg-[#b8912e] hover:bg-[#c9a63e] text-white font-black px-10 py-4 rounded-xl transition-all hover:-translate-y-0.5 shadow-lg shadow-[#c9a63e]/20 text-base">
             Incepe cu Hostinger — de la 1.99€/luna →
           </a>
         </div>
