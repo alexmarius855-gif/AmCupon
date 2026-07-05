@@ -241,7 +241,7 @@ export default function CraciunPage() {
 
                   <div className="flex items-center justify-between">
                     <span className="text-xs text-[#8c8064]">{m.promotii.length} oferte</span>
-                    <span className="text-xs text-red-500 group-hover:text-red-600 font-semibold transition-colors">
+                    <span className="text-xs text-[#c9a63e] group-hover:text-[#e3d1a6] font-semibold transition-colors">
                       Vezi →
                     </span>
                   </div>

@@ -116,7 +116,7 @@ function MagazinCard({ m, revealed, copiat, onCopiere }: {
         {promo ? (
           <p className="text-sm text-[#a89a78] text-center line-clamp-2">{promo.nume}</p>
         ) : (
-          <p className="text-sm text-[#473d28] text-center italic">Verifică ofertele curente</p>
+          <p className="text-sm text-[#8c8064] text-center italic">Verifică ofertele curente</p>
         )}
       </div>
 
@@ -136,7 +136,7 @@ function MagazinCard({ m, revealed, copiat, onCopiere }: {
                 {copiat && <p className="text-xs text-emerald-400 mt-0.5">✓ Copiat!</p>}
               </div>
               <a href={link} target="_blank" rel="sponsored noopener noreferrer"
-                className="flex items-center justify-center w-full bg-[#b8912e] hover:bg-[#c9a63e] text-white font-bold py-2.5 rounded-xl text-sm transition-colors">
+                className="flex items-center justify-center w-full bg-gradient-to-r from-[#c9a63e] to-[#b8912e] hover:from-[#d8b850] hover:to-[#c9a63e] text-[#1a1408] font-bold py-2.5 rounded-xl text-sm transition-all">
                 Mergi la {numeMagazin} →
               </a>
             </div>
@@ -146,14 +146,14 @@ function MagazinCard({ m, revealed, copiat, onCopiere }: {
                 <span className="font-mono text-[#8c8064] text-sm">{maskCod(promo.cod_cupon)}</span>
               </div>
               <button onClick={() => onCopiere(m.magazin, promo.cod_cupon)}
-                className="w-full bg-[#b8912e] hover:bg-[#c9a63e] text-white font-bold py-2.5 rounded-xl text-sm transition-colors">
+                className="w-full bg-gradient-to-r from-[#c9a63e] to-[#b8912e] hover:from-[#d8b850] hover:to-[#c9a63e] text-[#1a1408] font-bold py-2.5 rounded-xl text-sm transition-all">
                 Copiază codul
               </button>
             </div>
           )
         ) : promo ? (
           <a href={link} target="_blank" rel="sponsored noopener noreferrer"
-            className="flex items-center justify-center w-full bg-[#b8912e] hover:bg-[#c9a63e] text-white font-bold py-2.5 rounded-xl text-sm transition-colors">
+            className="flex items-center justify-center w-full bg-gradient-to-r from-[#c9a63e] to-[#b8912e] hover:from-[#d8b850] hover:to-[#c9a63e] text-[#1a1408] font-bold py-2.5 rounded-xl text-sm transition-all">
             Vezi oferta →
           </a>
         ) : (

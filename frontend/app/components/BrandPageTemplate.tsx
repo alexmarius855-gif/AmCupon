@@ -137,7 +137,7 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
           <div className="flex flex-wrap justify-center gap-3">
             {magazin?.url_afiliat && (
               <a href={magazin.url_afiliat} target="_blank" rel="sponsored noopener noreferrer"
-                className="bg-[#b8912e] hover:bg-[#c9a63e] text-white font-black px-7 py-3 rounded-2xl text-sm transition-all shadow-lg shadow-[#c9a63e]/25 hover:-translate-y-0.5 duration-200">
+                className="bg-gradient-to-r from-[#c9a63e] to-[#b8912e] hover:from-[#d8b850] hover:to-[#c9a63e] text-[#1a1408] font-black px-7 py-3 rounded-2xl text-sm transition-all shadow-lg shadow-[#c9a63e]/25 hover:-translate-y-0.5 duration-200">
                 Mergi la {config.name} →
               </a>
             )}
@@ -165,10 +165,10 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
                     <p className="text-sm text-[#dcd0b8] font-semibold leading-snug flex-1">{promo.nume}</p>
                     <div className="flex flex-col items-end gap-1 shrink-0">
                       {discount > 0 && (
-                        <span className="text-xs font-black text-white bg-red-500 px-2 py-0.5 rounded-full">-{discount}%</span>
+                        <span className="text-[13px] font-black text-[#1a1408] bg-gradient-to-br from-[#e9d9b0] to-[#c9a63e] px-2 py-1 rounded-lg leading-none shadow-sm">-{discount}%</span>
                       )}
                       {promo.cod_cupon && (
-                        <span className="text-[10px] font-black text-amber-400 bg-amber-400/10 border border-amber-400/20 px-1.5 py-0.5 rounded-full">COD</span>
+                        <span className="text-[10px] font-black text-[#d8c091] bg-[#c9a63e]/10 border border-[#c9a63e]/25 px-1.5 py-0.5 rounded-full">COD</span>
                       )}
                     </div>
                   </div>
@@ -181,19 +181,19 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
 
                   <div className="flex items-center justify-between mt-auto pt-2 border-t border-[#26211a]">
                     {urgenta ? (
-                      <span className="text-[10px] font-bold text-red-400 flex items-center gap-1">
-                        <span className="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse" />
-                        {(promo.zile_ramase ?? 0) === 0 ? "Expira azi" : "Expira maine"}
+                      <span className="text-[10px] font-bold text-[#e8956f] flex items-center gap-1.5">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#e8956f] animate-pulse" />
+                        {(promo.zile_ramase ?? 0) === 0 ? "Expiră azi" : "Expiră mâine"}
                       </span>
                     ) : (
-                      <span className="text-[10px] text-[#473d28]">
-                        {(promo.zile_ramase ?? 99) < 99 ? `${promo.zile_ramase} zile ramase` : ""}
+                      <span className="text-[10px] text-[#7d7050]">
+                        {(promo.zile_ramase ?? 99) < 99 ? `${promo.zile_ramase} zile rămase` : "Verificat azi"}
                       </span>
                     )}
                     <a href={promo.landing_page || magazin?.url_afiliat || "#"}
                       target="_blank" rel="sponsored noopener noreferrer"
-                      className="text-xs font-black bg-[#b8912e] hover:bg-[#c9a63e] text-white px-4 py-1.5 rounded-xl transition-colors">
-                      {promo.cod_cupon ? "Copiaza si mergi" : "Vezi oferta →"}
+                      className="text-xs font-black bg-gradient-to-r from-[#c9a63e] to-[#b8912e] hover:from-[#d8b850] hover:to-[#c9a63e] text-[#1a1408] px-4 py-1.5 rounded-xl transition-all">
+                      {promo.cod_cupon ? "Copiază și mergi" : "Vezi oferta →"}
                     </a>
                   </div>
                 </div>
@@ -270,7 +270,7 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
           <p className="text-[#a89a78] text-sm mb-5">Aboneaza-te la newsletter si primesti codurile noi direct pe email.</p>
           <div className="flex flex-wrap justify-center gap-3">
             <Link href="/newsletter"
-              className="bg-[#b8912e] hover:bg-[#c9a63e] text-white font-black px-7 py-3 rounded-2xl text-sm transition-all shadow-lg shadow-[#c9a63e]/20">
+              className="bg-gradient-to-r from-[#c9a63e] to-[#b8912e] hover:from-[#d8b850] hover:to-[#c9a63e] text-[#1a1408] font-black px-7 py-3 rounded-2xl text-sm transition-all shadow-lg shadow-[#c9a63e]/20">
               Aboneaza-te gratuit →
             </Link>
             <Link href="/oferte-azi"

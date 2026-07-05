@@ -149,7 +149,7 @@ function ProdusCard({ p, onSave, saved }: { p: Produs; onSave: () => void; saved
 
           {/* Badge discount MARE — RetailMeNot style */}
           {hasDiscount && (
-            <div className="absolute top-2.5 left-2.5 bg-red-500 text-white font-black rounded-xl px-2.5 py-1 shadow-lg shadow-red-500/30 leading-none">
+            <div className="absolute top-2.5 left-2.5 bg-gradient-to-br from-[#e9d9b0] to-[#c9a63e] text-[#1a1408] font-black rounded-lg px-2.5 py-1 shadow-lg shadow-black/30 leading-none">
               <span className="text-base">-{p.discount_pct}%</span>
             </div>
           )}
@@ -186,7 +186,7 @@ function ProdusCard({ p, onSave, saved }: { p: Produs; onSave: () => void; saved
               <div className="flex items-center gap-2 mb-0.5">
                 <span className="text-[11px] text-[#8c8064] line-through">{p.old_price!.toFixed(2)} lei</span>
                 {hasDiscount && (
-                  <span className="text-[9px] font-black text-red-400 bg-red-500/10 px-1.5 py-0.5 rounded-full">
+                  <span className="text-[9px] font-black text-[#c9a63e] bg-[#c9a63e]/10 px-1.5 py-0.5 rounded-full">
                     -{p.discount_pct}% REDUCERE
                   </span>
                 )}

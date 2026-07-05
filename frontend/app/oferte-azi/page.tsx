@@ -148,68 +148,71 @@ export async function generateMetadata(
   };
 }
 
-/* ── Card oferta (dark) ──────────────────────────────────────────────────── */
+/* ── Card oferta (dark, premium) ─────────────────────────────────────────── */
 function OfertaCard({ o }: { o: OfertaFlat }) {
   const nume = numeAfisat(o.magazin);
   const discount = extractDiscount(o.promo.nume) || extractDiscount(o.promo.descriere || "");
-  const urgenta = (o.promo.zile_ramase ?? 99) <= 2;
   const zile = o.promo.zile_ramase ?? 99;
-
-  const culoare = "bg-gradient-to-br from-[#c9a63e] to-[#9c7a26]";
+  const urgenta = zile <= 2;
 
   return (
-    <div className="group bg-[#15120c] border border-[#26211a] hover:border-[#c9a63e]/40 rounded-2xl p-4 transition-all duration-200 hover:shadow-xl hover:shadow-black/40 hover:-translate-y-0.5 flex flex-col gap-3">
+    <div className="group relative flex flex-col bg-gradient-to-b from-[#17130c] to-[#110e08] border border-[#2b2418] hover:border-[#c9a63e]/50 rounded-2xl p-4 transition-all duration-200 hover:shadow-2xl hover:shadow-black/50 hover:-translate-y-1">
 
       {/* Header magazin */}
-      <div className="flex items-center gap-3">
-        <div className="w-11 h-11 rounded-xl overflow-hidden bg-white shrink-0 flex items-center justify-center shadow-sm">
+      <div className="flex items-start gap-3">
+        <div className="w-12 h-12 rounded-xl overflow-hidden bg-white shrink-0 flex items-center justify-center ring-1 ring-[#c9a63e]/20 shadow-md">
           {o.logo_url ? (
             // eslint-disable-next-line @next/next/no-img-element
             <img src={o.logo_url} alt={`Logo ${nume}`}
-              className="w-9 h-9 object-contain" loading="lazy" />
+              className="w-10 h-10 object-contain" loading="lazy" />
           ) : (
-            <span className={`w-full h-full ${culoare} flex items-center justify-center text-white font-black text-lg rounded-xl`}>
+            <span className="w-full h-full bg-gradient-to-br from-[#c9a63e] to-[#9c7a26] flex items-center justify-center text-white font-black text-lg">
               {nume.charAt(0)}
             </span>
           )}
         </div>
-        <div className="min-w-0 flex-1">
-          <p className="text-sm font-black text-white truncate group-hover:text-[#d8c091] transition-colors">{nume}</p>
-          <p className="text-[10px] text-[#8c8064] truncate">{CAT_EMOJI[o.categorie_slug] || ""} {CAT_LABELS[o.categorie_slug] || o.categorie}</p>
+        <div className="min-w-0 flex-1 pt-0.5">
+          <p className="text-sm font-black text-white truncate group-hover:text-[#e3d1a6] transition-colors">{nume}</p>
+          <p className="text-[11px] text-[#8c8064] truncate mt-0.5">{CAT_EMOJI[o.categorie_slug] || ""} {CAT_LABELS[o.categorie_slug] || o.categorie}</p>
         </div>
-        <div className="flex flex-col items-end gap-1 shrink-0">
-          {discount > 0 && (
-            <span className="text-xs font-black text-white bg-red-500 px-2 py-0.5 rounded-full">-{discount}%</span>
-          )}
-          {o.hasCod && (
-            <span className="text-[10px] font-black text-amber-400 bg-amber-400/10 border border-amber-400/20 px-1.5 py-0.5 rounded-full">COD</span>
-          )}
-        </div>
+        {discount > 0 && (
+          <div className="shrink-0 leading-none bg-gradient-to-br from-[#e9d9b0] to-[#c9a63e] rounded-lg px-2 py-1.5 shadow-sm">
+            <span className="block text-[15px] font-black text-[#1a1408] tracking-tight">-{discount}%</span>
+          </div>
+        )}
       </div>
 
-      {/* Titlu promo */}
-      <p className="text-sm text-[#c8bda2] line-clamp-2 leading-snug flex-1">{o.promo.nume}</p>
+      {/* Titlu promo — inaltime fixa pentru aliniere */}
+      <p className="text-[13px] text-[#c8bda2] leading-snug mt-3 mb-3 line-clamp-2 min-h-[2.5rem]">{o.promo.nume}</p>
 
-      {/* Cod box (daca exista) */}
-      {o.hasCod && o.promo.cod_cupon && (
-        <div className="bg-[#26211a] border border-dashed border-[#d8c091]/50 rounded-xl px-3 py-1.5 text-center">
-          <span className="font-mono font-black text-[#d8c091] text-sm tracking-widest">{o.promo.cod_cupon}</span>
+      {/* Cod box (daca exista) sau eticheta oferta */}
+      {o.hasCod && o.promo.cod_cupon ? (
+        <div className="relative bg-[#221d13] border border-dashed border-[#c9a63e]/40 rounded-lg py-2.5 text-center mb-3">
+          <span className="absolute left-2.5 top-1 text-[8px] uppercase tracking-widest text-[#8c8064] font-bold">cod</span>
+          <span className="font-mono font-black text-[#e3d1a6] text-sm tracking-[0.22em]">{o.promo.cod_cupon}</span>
+        </div>
+      ) : (
+        <div className="mb-3">
+          <span className="inline-flex items-center gap-1.5 text-[11px] font-semibold text-[#c8bda2] bg-[#221d13] border border-[#2b2418] rounded-full px-3 py-1">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#c9a63e]" /> Ofertă fără cod
+          </span>
         </div>
       )}
 
-      {/* Footer card */}
-      <div className="flex items-center justify-between gap-2">
-        {urgenta ? (
-          <span className="text-[10px] font-bold text-red-400 bg-red-500/10 border border-red-500/20 px-2 py-0.5 rounded-full flex items-center gap-1">
-            <span className="w-1 h-1 rounded-full bg-red-400 animate-pulse" />
-            {zile === 0 ? "Expira azi" : "Expira maine"}
-          </span>
-        ) : (
-          <span className="text-[10px] text-[#473d28] font-medium">
-            {zile < 99 ? `${zile} zile ramase` : ""}
-          </span>
-        )}
-        <div className="flex items-center gap-1.5">
+      {/* Actiune — impinsa jos pentru aliniere intre carduri */}
+      <div className="mt-auto">
+        <div className="flex items-center gap-2">
+          {o.hasCod ? (
+            <Link href={`/cod-reducere/${o.magazin}`}
+              className="flex-1 text-center text-[13px] font-black bg-gradient-to-r from-[#c9a63e] to-[#b8912e] hover:from-[#d8b850] hover:to-[#c9a63e] text-[#1a1408] py-2.5 rounded-xl transition-all">
+              Copiază codul
+            </Link>
+          ) : (
+            <a href={o.url_afiliat} target="_blank" rel="sponsored noopener noreferrer"
+              className="flex-1 text-center text-[13px] font-black bg-gradient-to-r from-[#c9a63e] to-[#b8912e] hover:from-[#d8b850] hover:to-[#c9a63e] text-[#1a1408] py-2.5 rounded-xl transition-all">
+              Vezi oferta →
+            </a>
+          )}
           <ShareButton
             pageSlug={`/cod-reducere/${o.magazin}`}
             title={`${o.hasCod ? "Cod reducere" : "Oferta"} ${discount > 0 ? "-" + discount + "% " : ""}${nume}`}
@@ -217,25 +220,26 @@ function OfertaCard({ o }: { o: OfertaFlat }) {
             small
             theme="dark"
           />
-          {o.hasCod ? (
-            <Link href={`/cod-reducere/${o.magazin}`}
-              className="text-xs font-black bg-[#b8912e] hover:bg-[#c9a63e] text-white px-3 py-1.5 rounded-xl transition-colors">
-              Copiaza codul
-            </Link>
+        </div>
+
+        {/* Meta */}
+        <div className="flex items-center justify-between gap-2 mt-3 pt-3 border-t border-[#221d13]">
+          {urgenta ? (
+            <span className="text-[10px] font-bold text-[#e8956f] flex items-center gap-1.5">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#e8956f] animate-pulse" />
+              {zile === 0 ? "Expiră azi" : "Expiră mâine"}
+            </span>
           ) : (
-            <a href={o.url_afiliat} target="_blank" rel="sponsored noopener noreferrer"
-              className="text-xs font-black bg-[#b8912e] hover:bg-[#c9a63e] text-white px-3 py-1.5 rounded-xl transition-colors">
-              Vezi oferta →
-            </a>
+            <span className="text-[10px] text-[#7d7050] font-medium">
+              {zile < 99 ? `${zile} zile rămase` : "Verificat azi"}
+            </span>
           )}
+          <Link href={`/cod-reducere/${o.magazin}`}
+            className="text-[10px] font-semibold text-[#8c8064] hover:text-[#e3d1a6] transition-colors">
+            Toate codurile →
+          </Link>
         </div>
       </div>
-
-      {/* Link magazin */}
-      <Link href={`/cod-reducere/${o.magazin}`}
-        className="text-[10px] text-[#473d28] hover:text-[#d8c091] transition-colors text-center border-t border-[#26211a] pt-2">
-        Toate codurile {nume} →
-      </Link>
     </div>
   );
 }
@@ -380,7 +384,7 @@ export default async function OferteAziPage(
                 )}
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                 {oferteFiltrate.map((o, i) => (
                   <OfertaCard key={`${o.magazin}-${i}`} o={o} />
                 ))}

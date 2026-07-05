@@ -745,7 +745,7 @@ export default function HomeClient({
                                 onError={e => { const el = (e.target as HTMLImageElement).closest("a"); if (el) el.style.display = "none"; }}
                               />
                               {p.discount_pct > 0 && (
-                                <div className="absolute top-2 left-2 bg-red-500 text-white text-[10px] font-black px-1.5 py-0.5 rounded-full shadow-md">
+                                <div className="absolute top-2 left-2 bg-gradient-to-br from-[#e9d9b0] to-[#c9a63e] text-[#1a1408] text-[10px] font-black px-1.5 py-0.5 rounded-lg shadow-md">
                                   -{p.discount_pct}%
                                 </div>
                               )}
@@ -797,7 +797,7 @@ export default function HomeClient({
                             onError={e => { const el = (e.target as HTMLImageElement).closest("a"); if (el) el.style.display = "none"; }}
                           />
                           {p.discount_pct > 0 && (
-                            <div className="absolute top-2 left-2 bg-red-500 text-white text-[11px] font-black px-2 py-0.5 rounded-full shadow-md">
+                            <div className="absolute top-2 left-2 bg-gradient-to-br from-[#e9d9b0] to-[#c9a63e] text-[#1a1408] text-[11px] font-black px-2 py-0.5 rounded-lg shadow-md">
                               -{p.discount_pct}%
                             </div>
                           )}
@@ -1043,7 +1043,7 @@ export default function HomeClient({
                             <span className="text-sm font-black text-[#d8c091]">{name1[0]}</span>
                           )}
                         </div>
-                        <span className="bg-red-500 text-white text-sm font-black px-2.5 py-1 rounded-xl">-{o.disc}%</span>
+                        <span className="bg-gradient-to-br from-[#e9d9b0] to-[#c9a63e] text-[#1a1408] text-sm font-black px-2.5 py-1 rounded-lg">-{o.disc}%</span>
                       </div>
                       <p className="text-xs font-bold text-white mt-1">{name1}</p>
                       <p className="text-[11px] text-[#a89a78] line-clamp-2 leading-tight">{o.nume}</p>

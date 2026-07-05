@@ -54,7 +54,7 @@ function ProdusCard({
 
         {/* Discount badge — stanga sus */}
         {p.discount_pct > 0 && (
-          <span className="absolute top-2 left-2 bg-red-500 text-white text-[10px] font-black px-2 py-0.5 rounded-full shadow">
+          <span className="absolute top-2 left-2 bg-gradient-to-br from-[#e9d9b0] to-[#c9a63e] text-[#1a1408] text-[10px] font-black px-2 py-0.5 rounded-lg shadow">
             -{p.discount_pct}%
           </span>
         )}

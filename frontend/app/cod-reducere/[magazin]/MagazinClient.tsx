@@ -131,7 +131,7 @@ function ProdusCard({ produs: p }: { produs: Produs }) {
           <div className="w-full h-full flex items-center justify-center text-4xl">🛍️</div>
         )}
         {hasDiscount && (
-          <div className="absolute top-2 left-2 bg-red-500 text-white text-xs font-black px-2 py-0.5 rounded-full shadow-sm">
+          <div className="absolute top-2 left-2 bg-gradient-to-br from-[#e9d9b0] to-[#c9a63e] text-[#1a1408] text-xs font-black px-2 py-0.5 rounded-lg shadow-sm">
             -{p.discount_pct}%
           </div>
         )}
@@ -299,7 +299,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
 
               <div className="flex items-center gap-3 flex-wrap">
                 <a href={m.url_afiliat || m.url} target="_blank" rel="sponsored noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-[#b8912e] hover:bg-[#c9a63e] text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-colors shadow-lg shadow-[#b8912e]/25" onClick={() => trackClick("vizita_magazin", m.magazin)}>
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-[#c9a63e] to-[#b8912e] hover:from-[#d8b850] hover:to-[#c9a63e] text-[#1a1408] font-bold px-5 py-2.5 rounded-xl text-sm transition-colors shadow-lg shadow-[#b8912e]/25" onClick={() => trackClick("vizita_magazin", m.magazin)}>
                   Viziteaza {nume}
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
@@ -411,7 +411,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                                   {isCopiat && <p className="text-xs text-green-600 mt-0.5">✓ Copiat!</p>}
                                 </div>
                                 <a href={link} target="_blank" rel="sponsored noopener noreferrer"
-                                  className="flex items-center justify-center w-full bg-[#b8912e] hover:bg-[#c9a63e] text-white font-bold py-2.5 rounded-xl text-sm transition-colors" onClick={() => trackClick("cod", m.magazin, promo.cod_cupon)}>
+                                  className="flex items-center justify-center w-full bg-gradient-to-r from-[#c9a63e] to-[#b8912e] hover:from-[#d8b850] hover:to-[#c9a63e] text-[#1a1408] font-bold py-2.5 rounded-xl text-sm transition-colors" onClick={() => trackClick("cod", m.magazin, promo.cod_cupon)}>
                                   Mergi la magazin →
                                 </a>
                                 <div className="flex justify-center">
@@ -522,7 +522,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                           </div>
                           <div className="flex items-center gap-2 shrink-0">
                             <a href={link} target="_blank" rel="sponsored noopener noreferrer"
-                              className="bg-[#b8912e] hover:bg-[#c9a63e] text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-colors whitespace-nowrap">
+                              className="bg-gradient-to-r from-[#c9a63e] to-[#b8912e] hover:from-[#d8b850] hover:to-[#c9a63e] text-[#1a1408] font-bold px-5 py-2.5 rounded-xl text-sm transition-colors whitespace-nowrap">
                               Vezi oferta →
                             </a>
                             <ShareButton
@@ -599,7 +599,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
             </div>
             <a href="https://chromewebstore.google.com/detail/mahfankpalkgognhnllkgdkjncmmkllb"
               target="_blank" rel="noopener noreferrer"
-              className="shrink-0 bg-[#b8912e] hover:bg-[#c9a63e] text-white font-bold text-xs px-5 py-2.5 rounded-xl transition-colors whitespace-nowrap">
+              className="shrink-0 bg-gradient-to-r from-[#c9a63e] to-[#b8912e] hover:from-[#d8b850] hover:to-[#c9a63e] text-[#1a1408] font-bold text-xs px-5 py-2.5 rounded-xl transition-colors whitespace-nowrap">
               Instaleaza gratuit →
             </a>
           </div>
@@ -610,7 +610,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
               <p className="text-[#a89a78] text-xs mt-0.5">Saptamanal — cele mai bune coduri pe email. Gratuit.</p>
             </div>
             <Link href="/newsletter"
-              className="shrink-0 bg-[#b8912e] hover:bg-[#c9a63e] text-white font-bold text-xs px-5 py-2.5 rounded-xl transition-colors whitespace-nowrap">
+              className="shrink-0 bg-gradient-to-r from-[#c9a63e] to-[#b8912e] hover:from-[#d8b850] hover:to-[#c9a63e] text-[#1a1408] font-bold text-xs px-5 py-2.5 rounded-xl transition-colors whitespace-nowrap">
               Aboneaza-te →
             </Link>
           </div>

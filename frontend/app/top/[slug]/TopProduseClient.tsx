@@ -110,7 +110,7 @@ export default function TopProduseClient({ produse, culoare }: TopProduseClientP
             <span className="text-lg font-black text-[#d8c091]">{bestPick.pret_de_la.toLocaleString("ro-RO")} lei</span>
             <a
               href={`/cod-reducere/${bestPick.magazine[0]?.magazin_slug}`}
-              className="bg-[#b8912e] hover:bg-[#c9a63e] text-white text-sm font-bold px-4 py-2 rounded-xl transition-colors"
+              className="bg-gradient-to-r from-[#c9a63e] to-[#b8912e] hover:from-[#d8b850] hover:to-[#c9a63e] text-[#1a1408] text-sm font-bold px-4 py-2 rounded-xl transition-all"
             >
               Cauta pret &rarr;
             </a>

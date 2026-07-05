@@ -300,7 +300,7 @@ export default function TopReduceriClient({
             </div>
             <a
               href="/toate-magazinele"
-              className="ml-auto shrink-0 bg-[#b8912e] hover:bg-[#c9a63e] text-white font-bold px-4 py-2 rounded-xl text-sm transition-colors"
+              className="ml-auto shrink-0 bg-gradient-to-r from-[#c9a63e] to-[#b8912e] hover:from-[#d8b850] hover:to-[#c9a63e] text-[#1a1408] font-bold px-4 py-2 rounded-xl text-sm transition-all"
             >
               Cauta
             </a>
