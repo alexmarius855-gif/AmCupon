@@ -27,42 +27,42 @@ body {
    Specificitate: .dark .{clasa} (0,2,0) > .{clasa} singur (0,1,0) → no !important
    ══════════════════════════════════════════════════════════════════════════ */
 
-/* Fundal pagina */
+/* Fundal pagina — auriu-cald (was navy/slate) */
 .dark body,
-.dark .min-h-screen.bg-white { background-color: #0f172a; }
-.dark .bg-white               { background-color: #1e293b; }
-.dark .bg-gray-50             { background-color: #0f172a; }
-.dark .bg-gray-100            { background-color: #1e293b; }
+.dark .min-h-screen.bg-white { background-color: #0b0a07; }
+.dark .bg-white               { background-color: #ffffff; } /* cutii logo = albe, crisp */
+.dark .bg-gray-50             { background-color: #0b0a07; }
+.dark .bg-gray-100            { background-color: #15120c; }
 
-/* Text */
-.dark .text-gray-900 { color: #f1f5f9; }
-.dark .text-gray-800 { color: #e2e8f0; }
-.dark .text-gray-700 { color: #cbd5e1; }
-.dark .text-gray-600 { color: #94a3b8; }
-.dark .text-gray-500 { color: #64748b; }
-.dark .text-gray-400 { color: #475569; }
-.dark .text-gray-300 { color: #334155; }
+/* Text — tonuri calde */
+.dark .text-gray-900 { color: #f1ece0; }
+.dark .text-gray-800 { color: #e3d1a6; }
+.dark .text-gray-700 { color: #dcd0b8; }
+.dark .text-gray-600 { color: #a89a78; }
+.dark .text-gray-500 { color: #8c8064; }
+.dark .text-gray-400 { color: #6b5f45; }
+.dark .text-gray-300 { color: #4a4030; }
 
-/* Borders */
-.dark .border-gray-200 { border-color: #334155; }
-.dark .border-gray-100 { border-color: #1e293b; }
-.dark .border-gray-300 { border-color: #475569; }
+/* Borders — calde */
+.dark .border-gray-200 { border-color: #37301f; }
+.dark .border-gray-100 { border-color: #26211a; }
+.dark .border-gray-300 { border-color: #473d28; }
 
 /* Hover states */
-.dark .hover\:bg-gray-100:hover  { background-color: #1e293b; }
-.dark .hover\:bg-gray-50:hover   { background-color: #1e293b; }
-.dark .hover\:border-gray-300:hover { border-color: #475569; }
+.dark .hover\:bg-gray-100:hover  { background-color: #15120c; }
+.dark .hover\:bg-gray-50:hover   { background-color: #15120c; }
+.dark .hover\:border-gray-300:hover { border-color: #473d28; }
 
 /* Input-uri */
 .dark input:not([class*="bg-"]),
 .dark textarea:not([class*="bg-"]) {
-  background-color: #1e293b;
-  color: #f1f5f9;
-  border-color: #334155;
+  background-color: #15120c;
+  color: #f1ece0;
+  border-color: #37301f;
 }
 .dark input::placeholder,
 .dark textarea::placeholder {
-  color: #64748b;
+  color: #8c8064;
 }
 
 /* Shadow-uri (mai subtile in dark) */
@@ -70,36 +70,36 @@ body {
 .dark .shadow-md   { box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5); }
 .dark .shadow-lg   { box-shadow: 0 10px 15px -3px rgba(0,0,0,0.6); }
 
-/* Cards cu hover border — accent indigo */
-.dark .hover\:border-indigo-300:hover { border-color: #6366f1; }
+/* Cards cu hover border — accent auriu */
+.dark .hover\:border-indigo-300:hover { border-color: #c9a63e; }
 
 /* Dividers */
-.dark .divide-gray-100 > * + * { border-color: #1e293b; }
-.dark .divide-slate-100 > * + * { border-color: #1e293b; }
+.dark .divide-gray-100 > * + * { border-color: #26211a; }
+.dark .divide-slate-100 > * + * { border-color: #26211a; }
 
 /* ── Homepage dark — sectiunile light ale homepage-ului ─────────────────── */
-.dark .bg-slate-50  { background-color: #0f172a; }
-.dark .border-slate-100 { border-color: #1e293b; }
-.dark .border-slate-200 { border-color: #334155; }
-.dark .text-slate-900   { color: #f1f5f9; }
-.dark .text-slate-700   { color: #cbd5e1; }
-.dark .text-slate-600   { color: #94a3b8; }
-.dark .text-slate-500   { color: #64748b; }
-.dark .text-slate-400   { color: #475569; }
-.dark .bg-slate-100     { background-color: #1e293b; }
+.dark .bg-slate-50  { background-color: #0b0a07; }
+.dark .border-slate-100 { border-color: #26211a; }
+.dark .border-slate-200 { border-color: #37301f; }
+.dark .text-slate-900   { color: #f1ece0; }
+.dark .text-slate-700   { color: #dcd0b8; }
+.dark .text-slate-600   { color: #a89a78; }
+.dark .text-slate-500   { color: #8c8064; }
+.dark .text-slate-400   { color: #6b5f45; }
+.dark .bg-slate-100     { background-color: #15120c; }
 
-/* Butoane si pill-uri neutre */
-.dark .bg-white.border { background-color: #1e293b; }
+/* Butoane si pill-uri neutre (bg-white + border) */
+.dark .bg-white.border { background-color: #15120c; }
 
 /* Details/summary (FAQ) */
-.dark details   { background-color: #1e293b; }
-.dark summary   { color: #f1f5f9; }
+.dark details   { background-color: #15120c; }
+.dark summary   { color: #f1ece0; }
 
-/* ── Scrollbar stilizat dark ─────────────────────────────────────────────── */
+/* ── Scrollbar stilizat dark — auriu-cald ────────────────────────────────── */
 .dark ::-webkit-scrollbar       { width: 8px; height: 8px; }
-.dark ::-webkit-scrollbar-track { background: #0f172a; }
-.dark ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
-.dark ::-webkit-scrollbar-thumb:hover { background: #475569; }
+.dark ::-webkit-scrollbar-track { background: #0b0a07; }
+.dark ::-webkit-scrollbar-thumb { background: #37301f; border-radius: 4px; }
+.dark ::-webkit-scrollbar-thumb:hover { background: #473d28; }
 
 /* ── Transition smooth pe elemente cheie ────────────────────────────────── */
 *, *::before, *::after {
