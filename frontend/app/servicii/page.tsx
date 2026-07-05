@@ -132,7 +132,7 @@ export default function ServiciiPage() {
     <div className="min-h-screen bg-[#0b0a07]">
       {/* Hero */}
       <section className="relative bg-[#0b0a07] border-b border-[#26211a] overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 60% 50% at 20% 0%, rgba(139,92,246,0.10) 0%, transparent 60%), radial-gradient(ellipse 60% 50% at 80% 10%, rgba(16,185,129,0.10) 0%, transparent 60%), radial-gradient(ellipse 50% 40% at 50% 100%, rgba(6,182,212,0.08) 0%, transparent 60%)" }} />
+        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 60% 50% at 20% 0%, rgba(184,145,46,0.10) 0%, transparent 60%), radial-gradient(ellipse 60% 50% at 80% 10%, rgba(16,185,129,0.10) 0%, transparent 60%), radial-gradient(ellipse 50% 40% at 50% 100%, rgba(201,166,62,0.08) 0%, transparent 60%)" }} />
         <div className="relative max-w-5xl mx-auto px-4 pt-12 pb-10 text-center">
           <nav className="flex justify-center gap-2 text-xs text-[#8c8064] mb-8">
             <Link href="/" className="hover:text-[#c8bda2]">AmCupon.ro</Link>
@@ -269,7 +269,7 @@ export default function ServiciiPage() {
 
       {/* CTA aplica la programe */}
       <section className="max-w-5xl mx-auto px-4 py-10 border-t border-[#26211a]">
-        <div className="relative overflow-hidden rounded-2xl p-7" style={{ background: "linear-gradient(120deg, rgba(139,92,246,0.12), rgba(6,182,212,0.10), rgba(16,185,129,0.10))" }}>
+        <div className="relative overflow-hidden rounded-2xl p-7" style={{ background: "linear-gradient(120deg, rgba(184,145,46,0.12), rgba(201,166,62,0.10), rgba(16,185,129,0.10))" }}>
           <div className="absolute inset-0 border border-[#c9a63e]/20 rounded-2xl pointer-events-none" />
           <h2 className="text-xl font-black text-white mb-2">Cunosti si alte servicii cu programe de afiliere?</h2>
           <p className="text-[#a89a78] text-sm mb-5">

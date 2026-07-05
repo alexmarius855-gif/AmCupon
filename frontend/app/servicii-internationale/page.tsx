@@ -355,7 +355,7 @@ export default function ServiciiInternationale() {
     <div className="min-h-screen bg-[#0b0a07]">
       {/* Hero */}
       <section className="border-b border-[#26211a] overflow-hidden relative">
-        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 70% 50% at 50% 0%, rgba(139,92,246,0.07) 0%, transparent 65%)" }} />
+        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 70% 50% at 50% 0%, rgba(184,145,46,0.07) 0%, transparent 65%)" }} />
         <div className="relative max-w-5xl mx-auto px-4 pt-12 pb-10 text-center">
           <nav className="flex justify-center gap-2 text-xs text-[#8c8064] mb-8">
             <Link href="/" className="hover:text-[#c8bda2]">AmCupon.ro</Link>

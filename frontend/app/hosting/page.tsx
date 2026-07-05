@@ -118,7 +118,7 @@ export default function HostingPage() {
     <div className="min-h-screen bg-[#0b0a07]">
       {/* Hero */}
       <section className="relative bg-[#0b0a07] border-b border-[#26211a] overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(139,92,246,0.08) 0%, transparent 65%)" }} />
+        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(184,145,46,0.08) 0%, transparent 65%)" }} />
         <div className="relative max-w-4xl mx-auto px-4 pt-12 pb-10 text-center">
           <nav className="flex justify-center gap-2 text-xs text-[#8c8064] mb-8">
             <Link href="/" className="hover:text-[#c8bda2]">AmCupon.ro</Link>

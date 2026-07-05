@@ -229,7 +229,7 @@ export default async function ArticolPage({
             <Image src={post.cover} alt={post.title} fill className="object-cover" priority sizes="(max-width: 768px) 100vw, 768px" />
           </div>
 
-          <p className="text-lg text-[#a89a78] font-medium leading-relaxed mb-8 p-5 bg-[#faf3e0] rounded-2xl border border-[#f0e6cc]">
+          <p className="text-lg text-[#c8bda2] font-medium leading-relaxed mb-8 p-5 bg-[#15120c] rounded-2xl border-l-4 border-[#c9a63e] border-y border-r border-y-[#26211a] border-r-[#26211a]">
             {post.excerpt}
           </p>
 
@@ -242,7 +242,7 @@ export default async function ArticolPage({
               <p className="font-black text-xl mb-2">Vezi toate promoțiile {numeAfisat(post.magazin)}</p>
               <p className="text-[#f0e6cc] text-sm mb-4">Coduri verificate, actualizate zilnic</p>
               <a href={`/cod-reducere/${post.magazin}`}
-                className="inline-block bg-white text-[#e3d1a6] font-bold px-6 py-2.5 rounded-xl text-sm hover:bg-[#faf3e0] transition-colors">
+                className="inline-block bg-[#1a1408] text-[#e3d1a6] font-bold px-6 py-2.5 rounded-xl text-sm hover:bg-[#0b0a07] transition-colors">
                 Deschide pagina →
               </a>
             </div>
@@ -294,7 +294,7 @@ export default async function ArticolPage({
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {altePosts.map((p) => (
                 <a key={p.slug} href={`/blog/${p.slug}`}
-                  className="bg-white rounded-2xl border border-gray-200 overflow-hidden hover:shadow-md transition-all group">
+                  className="bg-[#15120c] rounded-2xl border border-[#26211a] hover:border-[#c9a63e]/50 overflow-hidden hover:shadow-lg hover:shadow-black/40 transition-all group">
                   <div className="relative h-32 overflow-hidden">
                     <Image src={p.cover} alt={p.title} fill className="object-cover group-hover:scale-105 transition-transform duration-300" sizes="300px" />
                   </div>
