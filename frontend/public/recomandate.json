@@ -1,27 +1,9 @@
 [
  {
-  "magazin": "facturis-online.ro",
-  "nume": "Facturis Online",
-  "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_facturis_online.ro_1430824435.png",
-  "categorie": "Online Mall",
-  "comision": 35.0,
-  "are_cod": false,
-  "oferta": "Faturis Online e-Factura"
- },
- {
-  "magazin": "emag.ro",
-  "nume": "Emag",
-  "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_emag.ro_1570027386.png",
-  "categorie": "Online Mall",
-  "comision": 20.0,
-  "are_cod": false,
-  "oferta": "Electro Weekend 3 - 6 iulie 2026"
- },
- {
   "magazin": "moftcollection.ro",
   "nume": "Moftcollection",
   "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13200/medium/13200.png",
-  "categorie": "Electronics IT&C",
+  "categorie": "Electronice & IT",
   "comision": 20.0,
   "are_cod": false,
   "oferta": "Pana la -75% la huse silicon Iphone + CADOU la fiecare comanda"
@@ -30,7 +12,7 @@
   "magazin": "intimax.ro",
   "nume": "Intimax",
   "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13590/medium/13590.png",
-  "categorie": "Online Mall",
+  "categorie": "Marketplace",
   "comision": 20.0,
   "are_cod": false,
   "oferta": "DIBLONG face valuri pe intimax.ro! 🌊"
@@ -39,7 +21,7 @@
   "magazin": "femieko.ro",
   "nume": "Femieko",
   "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/10996/medium/10996.png",
-  "categorie": "Health & Personal care",
+  "categorie": "Sănătate & Farmacie",
   "comision": 19.0,
   "are_cod": false,
   "oferta": "Provocarea Femieko 2026 – Câștigă premii și comision de 19%!"
@@ -48,7 +30,7 @@
   "magazin": "manukashop.ro",
   "nume": "Manukashop",
   "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/8626/medium/8626.png",
-  "categorie": "Health & Personal care",
+  "categorie": "Sănătate & Farmacie",
   "comision": 18.0,
   "are_cod": false,
   "oferta": "Transport gratuit la orice comanda!"
@@ -66,7 +48,7 @@
   "magazin": "labelshop.ro",
   "nume": "Labelshop",
   "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9364/medium/9364.png",
-  "categorie": "Online Mall",
+  "categorie": "Fashion",
   "comision": 15.0,
   "are_cod": false,
   "oferta": "Profita acum de reduceri intre 5% si 15% la echipamente si consumabile"
@@ -75,7 +57,7 @@
   "magazin": "curteaveche.ro",
   "nume": "Curteaveche",
   "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11045/medium/11045.png",
-  "categorie": "Books",
+  "categorie": "Cărți & Educație",
   "comision": 15.0,
   "are_cod": false,
   "oferta": "Pana la 90% reducere"
@@ -93,7 +75,7 @@
   "magazin": "elindor.ro",
   "nume": "Elindor",
   "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13890/medium/13890.jpeg",
-  "categorie": "Online Mall",
+  "categorie": "Marketplace",
   "comision": 10.0,
   "are_cod": true,
   "oferta": "10% reducere extra pentru afiliatii Elindor 😊"
@@ -102,9 +84,27 @@
   "magazin": "aronia-charlottenburg.ro",
   "nume": "Aronia Charlottenburg",
   "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/8498/medium/8498.png",
-  "categorie": "Health & Personal care",
+  "categorie": "Sănătate & Farmacie",
   "comision": 12.0,
   "are_cod": false,
   "oferta": "TRANSPORT GRATUIT"
+ },
+ {
+  "magazin": "lovepadel.ie",
+  "nume": "Lovepadel",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13796/medium/13796.png",
+  "categorie": "Sport & Fitness",
+  "comision": 8.0,
+  "are_cod": true,
+  "oferta": "€5.00 off entire order"
+ },
+ {
+  "magazin": "bookzone.ro",
+  "nume": "Bookzone",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9309/medium/9309.png",
+  "categorie": "Cărți & Educație",
+  "comision": 10.0,
+  "are_cod": false,
+  "oferta": "Nou pe bookzone.ro: 1200 de titluri în engleză – Un adevărat festin li"
  }
 ]

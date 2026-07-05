@@ -1,7 +1,33 @@
 {
-  "updated": "2026-07-04T08:22:34Z",
+  "updated": "2026-07-05T08:40:47Z",
   "count": 20,
   "banners": [
+    {
+      "id": 271008,
+      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270967/original/270967.png",
+      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=738188b62&aff_code=541547473&campaign_unique=026a89a04",
+      "landing_raw": "https://littlenest.ro",
+      "width": 300,
+      "height": 600,
+      "merchant": "littlenest.ro",
+      "merchant_slug": "littlenest-ro",
+      "name": "Bannere generale",
+      "category": "Bannere generale",
+      "b_type": "image"
+    },
+    {
+      "id": 271007,
+      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270966/original/270966.png",
+      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=c5ae0b3df&aff_code=541547473&campaign_unique=026a89a04",
+      "landing_raw": "https://littlenest.ro",
+      "width": 300,
+      "height": 250,
+      "merchant": "littlenest.ro",
+      "merchant_slug": "littlenest-ro",
+      "name": "Bannere generale",
+      "category": "Bannere generale",
+      "b_type": "image"
+    },
     {
       "id": 271006,
       "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270965/original/270965.png",
@@ -234,32 +260,6 @@
       "merchant_slug": "pensulemachiaj-ro",
       "name": "- 80% STAR SUMMER & CELEBRITY SECRET BAG GRATUIT",
       "category": "- 80% STAR SUMMER & CELEBRITY SECRET BAG GRATUIT",
-      "b_type": "image"
-    },
-    {
-      "id": 270988,
-      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270947/original/270947.jpg",
-      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=3c049a69f&aff_code=541547473&campaign_unique=4b9a6d5ea",
-      "landing_raw": "https://www.kitunghii.ro",
-      "width": 1200,
-      "height": 1200,
-      "merchant": "kitunghii.ro",
-      "merchant_slug": "kitunghii-ro",
-      "name": "-80% STAR SUMMER SI CELEBRITY SECRET BAG GRATUIT",
-      "category": "-80% STAR SUMMER SI CELEBRITY SECRET BAG GRATUIT",
-      "b_type": "image"
-    },
-    {
-      "id": 270987,
-      "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/270946/original/270946.jpg",
-      "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=c1e732750&aff_code=541547473&campaign_unique=4b9a6d5ea",
-      "landing_raw": "https://www.kitunghii.ro",
-      "width": 960,
-      "height": 1200,
-      "merchant": "kitunghii.ro",
-      "merchant_slug": "kitunghii-ro",
-      "name": "-80% STAR SUMMER SI CELEBRITY SECRET BAG GRATUIT",
-      "category": "-80% STAR SUMMER SI CELEBRITY SECRET BAG GRATUIT",
       "b_type": "image"
     }
   ]
