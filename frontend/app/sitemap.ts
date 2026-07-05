@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
 import fs from "fs";
 import path from "path";
+import { MACRO_ORDINE, getMacro } from "./blog/categories";
 
 const BASE_URL = "https://amcupon.ro";
 
@@ -26,11 +27,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     fs.readFileSync(path.join(process.cwd(), "public", "output.json"), "utf-8")
   );
 
-  let blogPosts: { slug: string; date: string }[] = [];
+  let blogPosts: { slug: string; date: string; category: string }[] = [];
   const blogPath = path.join(process.cwd(), "public", "blog-posts.json");
   if (fs.existsSync(blogPath)) {
     blogPosts = JSON.parse(fs.readFileSync(blogPath, "utf-8"));
   }
+
+  // Categorii blog cu articole (pentru URL-urile /blog?cat=X)
+  const blogCategoriiCuPosts = MACRO_ORDINE.filter(
+    (m) => blogPosts.some((p) => getMacro(p.category) === m)
+  );
 
   let comparatiiSluguri: string[] = [];
   const comparatiiPath = path.join(process.cwd(), "public", "comparisons.json");
@@ -208,6 +214,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "daily" as const,
       priority: 0.75,
+    })),
+
+    // ─── Categorii blog (/blog?cat=X) — hub-uri topicale ─────────────────────
+    ...blogCategoriiCuPosts.map((cat) => ({
+      url: `${BASE_URL}/blog?cat=${encodeURIComponent(cat)}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.7,
     })),
 
     // ─── Blog posts ──────────────────────────────────────────────────────────
