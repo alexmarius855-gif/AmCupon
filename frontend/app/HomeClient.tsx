@@ -40,23 +40,25 @@ interface Magazin {
 // dar toate sunt nuante racoroase premium care se potrivesc pe fundal dark — ZERO
 // portocaliu/galben/amber (regula site-ului) si fara rosu pur (rezervat pt "expira azi").
 // Categorii CANONICE (aliniate cu canonicalize_categories.py — 18 categorii RO)
+// Culoare vibranta distincta per categorie — recunoastere instanta ("curcubeu"),
+// pe fundal auriu-premium raman clase (glow + tile colorat, nu card integral tipat).
 const CATEGORII = [
-  { slug: "fashion",         emoji: "👗", label: "Fashion",            desc: "Haine, pantofi & accesorii",     accent: "#cdb98d" },
-  { slug: "casa-gradina",    emoji: "🏡", label: "Casă & Grădină",     desc: "Mobilă, decor, electrocasnice",  accent: "#7fae7a" },
-  { slug: "electronice",     emoji: "💻", label: "Electronice & IT",   desc: "Telefoane, laptopuri, gadgeturi",accent: "#c9a63e" },
-  { slug: "beauty",          emoji: "💄", label: "Beauty & Îngrijire", desc: "Cosmetice, parfumuri, unghii",   accent: "#d8c091" },
-  { slug: "sanatate",        emoji: "💊", label: "Sănătate & Farmacie",desc: "Farmacie, suplimente, optică",   accent: "#8fb98a" },
-  { slug: "software",        emoji: "🖥️", label: "Software & Digital",  desc: "VPN, hosting, AI, aplicații",    accent: "#e3d1a6" },
-  { slug: "sport",           emoji: "🏃", label: "Sport & Fitness",    desc: "Echipament sportiv & fitness",   accent: "#b8912e" },
-  { slug: "copii",           emoji: "👶", label: "Copii & Familie",    desc: "Jucării, bebe, îmbrăcăminte",    accent: "#cdb98d" },
-  { slug: "calatorii",       emoji: "✈️", label: "Călătorii",          desc: "Cazare, zboruri, eSIM",          accent: "#e3d1a6" },
-  { slug: "auto-moto",       emoji: "🚗", label: "Auto & Moto",        desc: "Piese, anvelope, accesorii",     accent: "#a89a78" },
-  { slug: "carti-educatie",  emoji: "📚", label: "Cărți & Educație",   desc: "Cărți, e-books, cursuri",        accent: "#cdb98d" },
-  { slug: "mancare-bauturi", emoji: "🍔", label: "Mâncare & Băuturi",  desc: "Livrare, cafea, vin, băuturi",   accent: "#d8c091" },
-  { slug: "animale",         emoji: "🐾", label: "Pet Shop",           desc: "Hrană & accesorii animale",      accent: "#d8c091" },
-  { slug: "cadouri-flori",   emoji: "🎁", label: "Cadouri & Flori",    desc: "Flori, cadouri, experiențe",     accent: "#d8c091" },
-  { slug: "bijuterii",       emoji: "💎", label: "Bijuterii & Ceasuri",desc: "Bijuterii, ceasuri, accesorii",  accent: "#e3d1a6" },
-  { slug: "financiar",       emoji: "💳", label: "Financiar",          desc: "Carduri, credite, asigurări",    accent: "#c9a63e" },
+  { slug: "fashion",         emoji: "👗", label: "Fashion",            desc: "Haine, pantofi & accesorii",     accent: "#ec4899" },
+  { slug: "casa-gradina",    emoji: "🏡", label: "Casă & Grădină",     desc: "Mobilă, decor, electrocasnice",  accent: "#22c55e" },
+  { slug: "electronice",     emoji: "💻", label: "Electronice & IT",   desc: "Telefoane, laptopuri, gadgeturi",accent: "#3b82f6" },
+  { slug: "beauty",          emoji: "💄", label: "Beauty & Îngrijire", desc: "Cosmetice, parfumuri, unghii",   accent: "#d946ef" },
+  { slug: "sanatate",        emoji: "💊", label: "Sănătate & Farmacie",desc: "Farmacie, suplimente, optică",   accent: "#14b8a6" },
+  { slug: "software",        emoji: "🖥️", label: "Software & Digital",  desc: "VPN, hosting, AI, aplicații",    accent: "#6366f1" },
+  { slug: "sport",           emoji: "🏃", label: "Sport & Fitness",    desc: "Echipament sportiv & fitness",   accent: "#f97316" },
+  { slug: "copii",           emoji: "👶", label: "Copii & Familie",    desc: "Jucării, bebe, îmbrăcăminte",    accent: "#f59e0b" },
+  { slug: "calatorii",       emoji: "✈️", label: "Călătorii",          desc: "Cazare, zboruri, eSIM",          accent: "#0ea5e9" },
+  { slug: "auto-moto",       emoji: "🚗", label: "Auto & Moto",        desc: "Piese, anvelope, accesorii",     accent: "#ef4444" },
+  { slug: "carti-educatie",  emoji: "📚", label: "Cărți & Educație",   desc: "Cărți, e-books, cursuri",        accent: "#8b5cf6" },
+  { slug: "mancare-bauturi", emoji: "🍔", label: "Mâncare & Băuturi",  desc: "Livrare, cafea, vin, băuturi",   accent: "#fb7185" },
+  { slug: "animale",         emoji: "🐾", label: "Pet Shop",           desc: "Hrană & accesorii animale",      accent: "#84cc16" },
+  { slug: "cadouri-flori",   emoji: "🎁", label: "Cadouri & Flori",    desc: "Flori, cadouri, experiențe",     accent: "#f43f5e" },
+  { slug: "bijuterii",       emoji: "💎", label: "Bijuterii & Ceasuri",desc: "Bijuterii, ceasuri, accesorii",  accent: "#06b6d4" },
+  { slug: "financiar",       emoji: "💳", label: "Financiar",          desc: "Carduri, credite, asigurări",    accent: "#10b981" },
 ];
 
 
@@ -534,6 +536,115 @@ export default function HomeClient({
         </div>
       </section>
 
+      {/* ─── CATEGORY GRID (colorat, printre primele — recunoastere instanta) ── */}
+      <section id="categorii" className="bg-[#15120c] border-b border-[#26211a] py-14 px-4">
+        <div className="max-w-7xl mx-auto">
+
+          {/* Header */}
+          <div className="flex items-end justify-between mb-8">
+            <div>
+              <p className="text-xs font-bold text-[#d8c091] uppercase tracking-widest mb-2">CATEGORII</p>
+              <h2 className="text-3xl font-black tracking-tight text-white">Exploreaza dupa categorie</h2>
+              <p className="text-[#a89a78] text-sm mt-1.5">Coduri verificate zilnic in fiecare categorie</p>
+            </div>
+            <Link href="/categorii" className="hidden sm:flex items-center gap-1.5 text-sm font-bold text-[#d8c091] hover:text-[#e3d1a6] transition-colors border border-[#c9a63e]/30 hover:border-[#d8c091]/60 bg-[#c9a63e]/10 hover:bg-[#c9a63e]/20 px-4 py-2 rounded-full whitespace-nowrap">
+              Toate categoriile
+              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
+              </svg>
+            </Link>
+          </div>
+
+          {/* Grid principal — top 8 categorii după vânzări */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+            {categoriiSortate.slice(0, 8).map(c => {
+              const nrPromo = promoPerCateg[c.slug] || 0;
+              return (
+                <a
+                  key={c.slug}
+                  href={`/categorii/${c.slug}`}
+                  className="group relative rounded-2xl overflow-hidden bg-[#15120c] border border-[#26211a] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/40"
+                  onMouseEnter={e => (e.currentTarget.style.borderColor = `${c.accent}80`)}
+                  onMouseLeave={e => (e.currentTarget.style.borderColor = "")}
+                >
+                  {/* Tenta colorata pe tot cardul — personalitate per categorie */}
+                  <div className="absolute inset-0 pointer-events-none opacity-70 group-hover:opacity-100 transition-opacity duration-300"
+                    style={{ background: `linear-gradient(155deg, ${c.accent}22 0%, transparent 55%)` }} />
+                  {/* Glow colorat in colt */}
+                  <div className="absolute -top-8 -right-8 w-28 h-28 rounded-full pointer-events-none opacity-35 blur-2xl transition-opacity duration-300 group-hover:opacity-60"
+                    style={{ background: c.accent }} />
+
+                  <div className="relative p-5 flex flex-col gap-3 min-h-[140px]">
+                    {/* Badge oferte */}
+                    {nrPromo > 0 ? (
+                      <div className="inline-flex self-start items-center gap-1 px-2 py-0.5 rounded-full border" style={{ background: `${c.accent}22`, borderColor: `${c.accent}55` }}>
+                        <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: c.accent }} />
+                        <span className="text-[10px] font-bold" style={{ color: c.accent }}>{nrPromo} {nrPromo === 1 ? "oferta" : "oferte"}</span>
+                      </div>
+                    ) : (
+                      <div className="inline-flex self-start bg-[#26211a] px-2 py-0.5 rounded-full">
+                        <span className="text-[#a89a78] text-[10px]">Vezi magazine</span>
+                      </div>
+                    )}
+
+                    {/* Emoji mare pe tile colorat vibrant */}
+                    <div className="relative w-12 h-12 rounded-2xl flex items-center justify-center shadow-lg"
+                      style={{ background: `linear-gradient(135deg, ${c.accent}, ${c.accent}bb)`, boxShadow: `0 6px 16px ${c.accent}50` }}>
+                      <span className="text-3xl group-hover:scale-110 transition-transform duration-300 drop-shadow">
+                        {c.emoji}
+                      </span>
+                    </div>
+
+                    {/* Nume + descriere */}
+                    <div>
+                      <div className="text-white font-black text-sm leading-tight">{c.label}</div>
+                      <div className="text-[#a89a78] text-[10px] mt-0.5 leading-tight">{c.desc}</div>
+                    </div>
+
+                    {/* Arrow */}
+                    <div className="flex items-center gap-1 text-[#8c8064] group-hover:text-white group-hover:gap-2 transition-all text-[10px] font-bold">
+                      Vezi ofertele
+                      <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+              );
+            })}
+          </div>
+
+          {/* Grid secundar — restul categoriilor ca chips */}
+          <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-8 gap-2 mt-3">
+            {categoriiSortate.slice(8).map(c => {
+              const nrPromo = promoPerCateg[c.slug] || 0;
+              return (
+                <a
+                  key={c.slug}
+                  href={`/categorii/${c.slug}`}
+                  className="group relative flex flex-col items-center gap-1.5 p-3 rounded-xl overflow-hidden bg-[#15120c]/60 border border-[#26211a] transition-all duration-200 hover:-translate-y-0.5"
+                  onMouseEnter={e => (e.currentTarget.style.borderColor = `${c.accent}60`)}
+                  onMouseLeave={e => (e.currentTarget.style.borderColor = "")}
+                >
+                  <span className="w-9 h-9 rounded-xl flex items-center justify-center text-xl group-hover:scale-110 transition-transform duration-200"
+                    style={{ background: `linear-gradient(135deg, ${c.accent}, ${c.accent}bb)`, boxShadow: `0 4px 10px ${c.accent}44` }}>{c.emoji}</span>
+                  <span className="text-[10px] font-bold text-[#dcd0b8] text-center leading-tight">{c.label}</span>
+                  {nrPromo > 0 && (
+                    <span className="absolute -top-1 -right-1 text-white text-[9px] font-black rounded-full w-4 h-4 flex items-center justify-center shadow-sm" style={{ background: c.accent }}>
+                      {nrPromo > 9 ? "9+" : nrPromo}
+                    </span>
+                  )}
+                </a>
+              );
+            })}
+          </div>
+
+          <Link href="/categorii" className="sm:hidden mt-4 flex items-center justify-center gap-1.5 text-sm font-bold text-[#d8c091] border border-[#c9a63e]/30 bg-[#c9a63e]/10 py-2.5 rounded-2xl">
+            Toate categoriile →
+          </Link>
+        </div>
+      </section>
+
       {/* ─── BANNERE PARTENERI (stil Kuplio — creative reale 2Performant) ──── */}
       {banners.length >= 2 && (
         <section className="bg-[#0b0a07] border-b border-[#26211a] py-10 px-4">
@@ -827,110 +938,6 @@ export default function HomeClient({
           </div>
         </section>
       )}
-
-      {/* ─── CATEGORY GRID ───────────────────────────────────────────────── */}
-      <section id="categorii" className="bg-[#15120c] border-b border-[#26211a] py-14 px-4">
-        <div className="max-w-7xl mx-auto">
-
-          {/* Header */}
-          <div className="flex items-end justify-between mb-8">
-            <div>
-              <p className="text-xs font-bold text-[#d8c091] uppercase tracking-widest mb-2">CATEGORII</p>
-              <h2 className="text-3xl font-black tracking-tight text-white">Exploreaza dupa categorie</h2>
-              <p className="text-[#a89a78] text-sm mt-1.5">Coduri verificate zilnic in fiecare categorie</p>
-            </div>
-            <Link href="/categorii" className="hidden sm:flex items-center gap-1.5 text-sm font-bold text-[#d8c091] hover:text-[#e3d1a6] transition-colors border border-[#c9a63e]/30 hover:border-[#d8c091]/60 bg-[#c9a63e]/10 hover:bg-[#c9a63e]/20 px-4 py-2 rounded-full whitespace-nowrap">
-              Toate categoriile
-              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
-              </svg>
-            </Link>
-          </div>
-
-          {/* Grid principal — top 8 categorii după vânzări */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-            {categoriiSortate.slice(0, 8).map(c => {
-              const nrPromo = promoPerCateg[c.slug] || 0;
-              return (
-                <a
-                  key={c.slug}
-                  href={`/categorii/${c.slug}`}
-                  className="group relative rounded-2xl overflow-hidden bg-[#15120c] border border-[#26211a] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/40"
-                  onMouseEnter={e => (e.currentTarget.style.borderColor = `${c.accent}80`)}
-                  onMouseLeave={e => (e.currentTarget.style.borderColor = "")}
-                >
-                  {/* Glow colorat pe categorie — recunoastere instanta, fara card colorat integral */}
-                  <div className="absolute -top-8 -right-8 w-28 h-28 rounded-full pointer-events-none opacity-25 blur-2xl transition-opacity duration-300 group-hover:opacity-40"
-                    style={{ background: c.accent }} />
-
-                  <div className="relative p-5 flex flex-col gap-3 min-h-[140px]">
-                    {/* Badge oferte */}
-                    {nrPromo > 0 ? (
-                      <div className="inline-flex self-start items-center gap-1 px-2 py-0.5 rounded-full border" style={{ background: `${c.accent}22`, borderColor: `${c.accent}44` }}>
-                        <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: c.accent }} />
-                        <span className="text-[10px] font-bold" style={{ color: c.accent }}>{nrPromo} {nrPromo === 1 ? "oferta" : "oferte"}</span>
-                      </div>
-                    ) : (
-                      <div className="inline-flex self-start bg-[#26211a] px-2 py-0.5 rounded-full">
-                        <span className="text-[#a89a78] text-[10px]">Vezi magazine</span>
-                      </div>
-                    )}
-
-                    {/* Emoji mare cu halo colorat */}
-                    <div className="relative w-12 h-12 rounded-2xl flex items-center justify-center" style={{ background: `${c.accent}1a` }}>
-                      <span className="text-3xl group-hover:scale-110 transition-transform duration-300">
-                        {c.emoji}
-                      </span>
-                    </div>
-
-                    {/* Nume + descriere */}
-                    <div>
-                      <div className="text-white font-black text-sm leading-tight">{c.label}</div>
-                      <div className="text-[#a89a78] text-[10px] mt-0.5 leading-tight">{c.desc}</div>
-                    </div>
-
-                    {/* Arrow */}
-                    <div className="flex items-center gap-1 text-[#8c8064] group-hover:text-white group-hover:gap-2 transition-all text-[10px] font-bold">
-                      Vezi ofertele
-                      <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              );
-            })}
-          </div>
-
-          {/* Grid secundar — restul categoriilor ca chips */}
-          <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-8 gap-2 mt-3">
-            {categoriiSortate.slice(8).map(c => {
-              const nrPromo = promoPerCateg[c.slug] || 0;
-              return (
-                <a
-                  key={c.slug}
-                  href={`/categorii/${c.slug}`}
-                  className="group relative flex flex-col items-center gap-1.5 p-3 rounded-xl overflow-hidden bg-[#15120c]/60 border border-[#26211a] transition-all duration-200 hover:-translate-y-0.5"
-                  onMouseEnter={e => (e.currentTarget.style.borderColor = `${c.accent}60`)}
-                  onMouseLeave={e => (e.currentTarget.style.borderColor = "")}
-                >
-                  <span className="text-2xl group-hover:scale-110 transition-transform duration-200">{c.emoji}</span>
-                  <span className="text-[10px] font-bold text-[#dcd0b8] text-center leading-tight">{c.label}</span>
-                  {nrPromo > 0 && (
-                    <span className="absolute -top-1 -right-1 text-white text-[9px] font-black rounded-full w-4 h-4 flex items-center justify-center shadow-sm" style={{ background: c.accent }}>
-                      {nrPromo > 9 ? "9+" : nrPromo}
-                    </span>
-                  )}
-                </a>
-              );
-            })}
-          </div>
-
-          <Link href="/categorii" className="sm:hidden mt-4 flex items-center justify-center gap-1.5 text-sm font-bold text-[#d8c091] border border-[#c9a63e]/30 bg-[#c9a63e]/10 py-2.5 rounded-2xl">
-            Toate categoriile →
-          </Link>
-        </div>
-      </section>
 
       {/* ─── DEAL ZILEI ──────────────────────────────────────────────────── */}
       {!loading && cuPromotii.length > 0 && (() => {
