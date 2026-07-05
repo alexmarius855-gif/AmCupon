@@ -96,7 +96,7 @@ const CATEGORII = [
         tagline: "Cea mai completa unealta SEO — folosita de 10 milioane de profesionisti",
         pret: "de la 99$/luna",
         comision: "200$ per vanzare + 10$ per lead",
-        badge: "Comision maxim",
+        badge: "Recomandat #1",
         badgeColor: "bg-[#b8912e]",
         program: "semrush.com/lp/inter-affiliate",
         url: "https://semrush.com",
@@ -159,7 +159,7 @@ const CATEGORII = [
         tagline: "Cea mai mare platforma de freelancing — angajezi sau castigi din servicii",
         pret: "comision 20% Fiverr",
         comision: "150$ CPA per cumparator",
-        badge: "Comision mare",
+        badge: "Foarte bun",
         badgeColor: "bg-green-600",
         program: "affiliates.fiverr.com",
         url: "https://fiverr.com",
@@ -277,7 +277,6 @@ export default function RecomandariPage() {
                   </div>
                   <div className="text-right shrink-0">
                     <div className="text-[#d8c091] font-black text-sm">{s.pret}</div>
-                    <div className="text-emerald-400 text-[10px] font-bold mt-0.5">{s.comision}</div>
                   </div>
                 </div>
 

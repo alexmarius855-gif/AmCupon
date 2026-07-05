@@ -350,7 +350,6 @@ export default function EsimPage() {
                 <div className="flex items-center gap-2 mb-2">
                   <span className="text-xl">{e.emoji}</span>
                   <span className="font-semibold text-white group-hover:text-[#e3d1a6] transition-colors">{e.name}</span>
-                  <span className="ml-auto text-xs text-[#d8c091] font-medium">{e.comision}</span>
                 </div>
                 <p className="text-[#a89a78] text-sm">{e.desc}</p>
               </a>

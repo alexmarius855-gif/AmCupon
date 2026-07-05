@@ -30,7 +30,7 @@ const AI_TOOLS = [
     rank: 1,
     name: "Copy.ai",
     tagline: "Copywriting AI — cel mai mare comision din nisa",
-    badge: "Comision #1",
+    badge: "Recomandat #1",
     badgeColor: "bg-violet-600",
     emoji: "✍️",
     comision: "45%",
@@ -516,7 +516,7 @@ export default function AiToolsPage() {
           {/* Quick stats */}
           <div className="inline-flex flex-wrap justify-center gap-6 bg-[#15120c]/60 border border-[#26211a] rounded-2xl px-6 py-4">
             {[
-              { v: "45%", l: "Comision max" },
+              { v: "45%", l: "Top ales" },
               { v: "180 zile", l: "Cookie max" },
               { v: "$200", l: "Fix per vanzare" },
               { v: "Lifetime", l: "Recurent disponibil" },
@@ -605,9 +605,8 @@ export default function AiToolsPage() {
                 {/* Sidebar stats */}
                 <div className="md:w-48 flex flex-col items-center gap-3 shrink-0">
                   <div className="w-full bg-[#26211a]/60 border border-[#37301f] rounded-xl p-4 text-center">
-                    <div className="text-3xl font-black text-white">{tool.comision}</div>
-                    <div className="text-xs text-[#a89a78] mt-0.5">{tool.comision_tip}</div>
-                    <div className="mt-2 pt-2 border-t border-[#37301f] grid grid-cols-2 gap-2 text-xs">
+                    <div className="text-lg font-black text-[#d8c091]">{tool.name}</div>
+                    <div className="grid grid-cols-2 gap-2 text-xs mt-2 pt-2 border-t border-[#37301f]">
                       <div>
                         <div className="text-[#8c8064]">Cookie</div>
                         <div className="text-[#c8bda2] font-bold">{tool.cookie}</div>

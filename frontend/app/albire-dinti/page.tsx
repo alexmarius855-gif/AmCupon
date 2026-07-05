@@ -20,7 +20,7 @@ export default function AlbireDintiPage() {
       desc: "Coduri de reducere albire dinti verificate zilnic. Reduceri la kituri profesionale de albire, geluri dentare si tratamente estetice.",
       editorial: [
         "Albirea-dintilor.com este una dintre putinele platforme specializate exclusiv in produse si servicii de albire dentara disponibile in Romania. Platforma ofera atat kituri de albire profesionala pentru acasa, cat si produse recomandate de stomatologi — geluri cu peroxid, truse LED, benzi de albire si pasta specializata.",
-        "Pe AmCupon.ro monitorizam toate promotiile disponibile pentru albirea-dintilor.com. Reducerile apar frecvent la kiturile complete si la pachetele cu mai multe produse. Comisionul de afiliere de 10% indica o marja buna, ceea ce inseamna ca reducerile reale sunt sustenabile si frecvente.",
+        "Pe AmCupon.ro monitorizam toate promotiile disponibile pentru albirea-dintilor.com. Reducerile apar frecvent la kiturile complete si la pachetele cu mai multe produse, asa ca merita sa verifici inainte de cumparare.",
         "Albirea dintilor la domiciliu cu produse profesionale a devenit o alternativa populara la sedintele de cabinet — mai accesibila ca pret, mai comoda si cu rezultate comparabile la utilizare corecta. Kiturile moderne contin gel cu concentratie sigura de peroxid si tava personalizabila.",
       ],
       tips: [

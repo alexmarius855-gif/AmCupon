@@ -165,7 +165,6 @@ export default function CursuriOnlinePage() {
               </div>
               <div className="flex items-center justify-between text-sm">
                 <span className="text-[#d8c091] font-bold">{p.pret}</span>
-                <span className="text-emerald-400 text-xs">{p.comision}</span>
               </div>
               <ul className="space-y-1">
                 {p.beneficii.map((b, i) => (

@@ -5,7 +5,7 @@ import path from "path";
 
 export const metadata: Metadata = {
   title: "Software Business cu Reducere Romania 2026 — SaaS, Facturare, Tools | AmCupon.ro",
-  description: "Coduri de reducere la software business: facturare online, contabilitate, SEO tools, design, project management. Facturis-online.ro 35% comision si multe altele.",
+  description: "Coduri de reducere la software business: facturare online, contabilitate, SEO tools, design, project management. Facturis-online.ro si multe altele.",
   keywords: ["software facturare reducere", "facturis-online reducere", "saas romania reducere", "tools business reducere", "semrush reducere", "canva pro reducere"],
   alternates: { canonical: "https://amcupon.ro/software-business" },
   openGraph: { title: "Software Business cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/software-business", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
@@ -21,7 +21,7 @@ const TOOLS_INTL = [
   {
     categ: "SEO & Marketing",
     items: [
-      { name: "Semrush", desc: "Unealta SEO #1 la nivel mondial. Cercetare cuvinte, audit site, competitor analysis.", pret: "de la 99$/luna", comision: "200$ per vanzare", badge: "Comision maxim", url: "https://semrush.com", program: "semrush.com/lp/inter-affiliate" },
+      { name: "Semrush", desc: "Unealta SEO #1 la nivel mondial. Cercetare cuvinte, audit site, competitor analysis.", pret: "de la 99$/luna", comision: "200$ per vanzare", badge: "Recomandat #1", url: "https://semrush.com", program: "semrush.com/lp/inter-affiliate" },
       { name: "Canva Pro", desc: "Design profesional pentru social media, prezentari, materiale de marketing.", pret: "~13€/luna", comision: "36$ per conversie", badge: "Cel mai usor", url: "https://canva.com", program: "canva.com/affiliates" },
     ],
   },
@@ -72,7 +72,7 @@ export default function SoftwareBusinessPage() {
             Software Business cu <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #e3d1a6, #b8912e)" }}>Reducere</span>
           </h1>
           <p className="text-[#a89a78] text-lg max-w-2xl mx-auto">
-            SaaS-uri si tools pentru business cu comisioane mari. Facturare, SEO, design, contabilitate — toate mai ieftine.
+            SaaS-uri si tools pentru business, cu reduceri. Facturare, SEO, design, contabilitate — toate mai ieftine.
           </p>
         </div>
       </section>
@@ -84,12 +84,10 @@ export default function SoftwareBusinessPage() {
           <div className="flex-1">
             <div className="flex items-center gap-2 mb-1">
               <span className="font-black text-white text-lg">Facturis-Online.ro</span>
-              <span className="text-xs bg-[#b8912e] text-white font-black px-2 py-0.5 rounded-full">35% comision</span>
-              <span className="text-xs bg-emerald-800/60 text-emerald-400 border border-emerald-700/40 font-bold px-2 py-0.5 rounded-full">Cel mai mare din Romania</span>
+              <span className="text-xs bg-emerald-800/60 text-emerald-400 border border-emerald-700/40 font-bold px-2 py-0.5 rounded-full">Recomandat</span>
             </div>
             <p className="text-[#c8bda2] text-sm">
-              Software de facturare online romanesc cu cel mai mare comision de afiliere din output.json. Fiecare abonament referit = 35% comision recurent.
-              Ideal pentru audienta de antreprenori, freelanceri si IMM-uri.
+              Software de facturare online romanesc, ideal pentru antreprenori, freelanceri si IMM-uri. Interfata simpla, functii complete si suport in romana.
             </p>
           </div>
           <a href="https://facturis-online.ro" target="_blank" rel="sponsored noopener noreferrer"
@@ -114,11 +112,6 @@ export default function SoftwareBusinessPage() {
                       <p className="font-black text-white">{m.magazin.split(".")[0].charAt(0).toUpperCase() + m.magazin.split(".")[0].slice(1).replace("-", " ")}</p>
                       <p className="text-xs text-[#8c8064]">{m.magazin}</p>
                     </div>
-                    {m.comision && (
-                      <span className={`text-xs font-black px-2 py-0.5 rounded-full ${isFact ? "bg-[#b8912e] text-white" : "text-[#d8c091]"}`}>
-                        {m.comision.replace(" sale commission","").replace(" % sale commission","%")}
-                      </span>
-                    )}
                   </div>
                   {promo.descriere && <p className="text-[#c8bda2] text-xs">{promo.descriere.slice(0,100)}</p>}
                   {promo.cod_cupon && (
@@ -155,7 +148,6 @@ export default function SoftwareBusinessPage() {
                   </div>
                   <div className="text-right shrink-0">
                     <p className="text-[#d8c091] text-xs font-bold">{item.pret}</p>
-                    <p className="text-emerald-400 text-[10px]">{item.comision}</p>
                   </div>
                 </div>
                 <a href={item.url} target="_blank" rel="sponsored noopener noreferrer"

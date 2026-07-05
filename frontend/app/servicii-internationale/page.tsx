@@ -31,7 +31,7 @@ const CATEGORII = [
         nume: "Surfshark",
         tagline: "VPN cu dispozitive nelimitate — 40% comision recurent",
         comision: "40% + recurent",
-        badge: "Top Comision",
+        badge: "Top ales",
         badgeColor: "bg-teal-700",
         url: "https://surfshark.sjv.io/c/7401119/529009/9043",
         descriere: "VPN premium cu no-logs verificat. Disponibil pe toate dispozitivele, camouflage mode, MultiHop.",
@@ -110,7 +110,7 @@ const CATEGORII = [
         nume: "Shopify",
         tagline: "Platforma #1 ecommerce mondial — $25-150 per referral",
         comision: "$25-150 per referral",
-        badge: "Comision Mare",
+        badge: "Recomandat",
         badgeColor: "bg-green-700",
         url: "https://shopify.pxf.io/c/7761435/1/0",
         descriere: "Creeaza magazin online in minute. 4 milioane de comercianti, teme profesionale, integrari complete.",
@@ -295,7 +295,7 @@ const CATEGORII = [
         nume: "Upwork",
         tagline: "Cea mai mare platforma freelancing — $150 per client nou",
         comision: "$150 per client nou",
-        badge: "Comision Fix Mare",
+        badge: "Popular",
         badgeColor: "bg-green-700",
         url: "https://www.upwork.com",
         descriere: "Gaseste freelanceri sau proiecte in orice domeniu: programare, design, marketing, redactare.",
@@ -407,9 +407,6 @@ export default function ServiciiInternationale() {
                         </span>
                       )}
                     </div>
-                    <span className="text-emerald-400 text-xs font-bold shrink-0 bg-emerald-950/40 px-2 py-0.5 rounded-full">
-                      {brand.comision}
-                    </span>
                   </div>
                   <p className="text-[#a89a78] text-xs leading-relaxed">{brand.descriere}</p>
                   <div className="mt-3 text-xs text-[#8c8064] group-hover:text-[#a89a78] transition-colors flex items-center gap-1">

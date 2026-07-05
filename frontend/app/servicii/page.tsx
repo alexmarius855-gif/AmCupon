@@ -255,8 +255,6 @@ export default function ServiciiPage() {
                     <span className={`${culoare.text} text-xs font-bold shrink-0`}>{item.pret}</span>
                   </div>
 
-                  <p className="text-[#a89a78] text-xs">{item.comision}</p>
-
                   <a href={item.url} target="_blank" rel="sponsored noopener noreferrer"
                     className="mt-auto text-white text-xs font-bold py-2.5 rounded-lg text-center transition-all hover:-translate-y-0.5"
                     style={{ background: `linear-gradient(135deg, ${culoare.from}, ${culoare.to})` }}>
