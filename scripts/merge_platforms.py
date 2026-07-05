@@ -168,6 +168,26 @@ def main():
     except Exception as e:
         print(f"  (canonicalize skip: {e})")
 
+    # ── Normalizare logo-uri: surse moarte -> favicon Google al domeniului ──
+    # Clearbit (serviciu inchis 2023), wikimedia thumbs, SVG hotlink-blocat si gol
+    # -> favicon domeniului (slug=domeniu, marca reala, nu da niciodata 404).
+    # Pastreaza logo-urile reale de pe CDN 2Performant/Profitshare (functioneaza).
+    def _needs_favicon(u: str) -> bool:
+        if not u:
+            return True
+        if re.search(r"clearbit\.com|wikimedia\.org|wikipedia\.org", u, re.I):
+            return True
+        if re.search(r"\.svg(\?|$)", u, re.I):
+            return True
+        return False
+    _logo_fixed = 0
+    for _m in merged:
+        _dm = re.search(r"[a-z0-9-]+\.[a-z]{2,}(?:\.[a-z]{2,})?", _m.get("magazin", "") or "", re.I)
+        if _dm and _needs_favicon(_m.get("logo_url", "")):
+            _m["logo_url"] = f"https://www.google.com/s2/favicons?domain={_dm.group(0)}&sz=128"
+            _logo_fixed += 1
+    print(f"  logo-uri normalizate la favicon: {_logo_fixed}")
+
     # Sorteaza: promotii active primul, apoi scor final
     merged.sort(key=lambda x: (
         -int(x.get("are_promotie", False)),

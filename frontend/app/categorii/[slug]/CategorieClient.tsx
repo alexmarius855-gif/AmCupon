@@ -67,10 +67,17 @@ function MagazinCard({ m, revealed, copiat, onCopiere }: {
   copiat: boolean;
   onCopiere: (id: string, cod: string) => void;
 }) {
-  const [imgOk, setImgOk] = useState(true);
   const promo = m.promotii[0];
   const numeMagazin = numeAfisat(m.magazin);
   const initiala = numeMagazin.charAt(0).toUpperCase();
+
+  // Cascada logo: logo_url din date -> favicon Google al domeniului (slug=domeniu,
+  // arata marca reala; nu da niciodata 404) -> tile cu litera. Repara logo-urile
+  // moarte (clearbit inchis, thumburi wiki trunchiate, SVG cu hotlink blocat).
+  const domeniu = (m.magazin || "").match(/[a-z0-9-]+\.[a-z]{2,}(?:\.[a-z]{2,})?/i)?.[0] || null;
+  const logoSurse = [m.logo_url, domeniu ? `https://www.google.com/s2/favicons?domain=${domeniu}&sz=128` : null].filter(Boolean) as string[];
+  const [logoIdx, setLogoIdx] = useState(0);
+  const logoSrc = logoSurse[logoIdx];
 
   // Filtrăm linkuri invalide: placeholder NA6 de la Profitshare (cont neaprobat)
   const isValidAffiliateUrl = (url: string) => {
@@ -92,8 +99,8 @@ function MagazinCard({ m, revealed, copiat, onCopiere }: {
           <span className="absolute top-3 right-3 text-xs font-bold bg-[#b8912e] text-white px-2 py-0.5 rounded-full">Exclusiv</span>
         )}
         <div className="w-20 h-20 rounded-2xl overflow-hidden flex items-center justify-center mb-3 bg-white border border-[#26211a] p-1 group-hover:border-[#c9a63e]/50 transition-colors">
-          {m.logo_url && imgOk ? (
-            <img src={m.logo_url} alt={numeMagazin} className="w-full h-full object-contain" loading="lazy" decoding="async" onError={() => setImgOk(false)} />
+          {logoSrc ? (
+            <img src={logoSrc} alt={numeMagazin} className="w-full h-full object-contain" loading="lazy" decoding="async" onError={() => setLogoIdx((i) => i + 1)} />
           ) : (
             <div className={`w-full h-full rounded-xl ${culoare} flex items-center justify-center`}>
               <span className="text-white font-black text-3xl">{initiala}</span>
