@@ -1,4 +1,4 @@
-CONTINUT SOCIAL MEDIA PE NISE — AmCupon.ro — 05.07.2026
+CONTINUT SOCIAL MEDIA PE NISE — AmCupon.ro — 06.07.2026
 ======================================================================
 
 
@@ -161,8 +161,8 @@ HOOK (0-3 sec):
 "👗 Stii ca poti economisi la Videt? Iata codul SECRET!"
 
 BODY (3-25 sec):
-"Mergi pe AmCupon.ro, cauti Videt, copiezi codul BDAY si il aplici la checkout.
-Zilele Videt: până la -50% la rame și 30% la toate lentilele de vedere. Rata de succes 91% — a fost verificat chiar ieri!"
+"Mergi pe AmCupon.ro, cauti Videt, copiezi codul BDAYSUN si il aplici la checkout.
+-30% la TOȚI ochelarii de soare, online și în showroom-uri.. Rata de succes 81% — a fost verificat chiar ieri!"
 
 CTA (25-30 sec):
 "Link in bio → amcupon.ro. Salveaza videoul sa nu uiti codul!"
@@ -175,8 +175,8 @@ HASHTAG-URI:
 👗 Cod reducere Videt activ în iulie 2026!
 
 ✅ Oferta speciala
-🎟️ Cod: **BDAY**
-📊 91% rată de succes — verificat!
+🎟️ Cod: **BDAYSUN**
+📊 81% rată de succes — verificat!
 
 👉 https://amcupon.ro/cod-reducere/videt.ro
 
@@ -188,23 +188,23 @@ HASHTAG-URI:
 📌 PINTEREST PIN — Videt
 
 TITLU (max 100 caractere):
-Cod Reducere Videt: BDAY | iulie 2026
+Cod Reducere Videt: BDAYSUN | iulie 2026
 
 DESCRIERE:
-Cod Reducere Videt: BDAY | iulie 2026. Zilele Videt: până la -50% la rame și 30% la toate lentilele de vedere. Codul de reducere Videt verificat si actualizat pe AmCupon.ro. Haine la reducere, coduri verificate. Economiseste acum!
+Cod Reducere Videt: BDAYSUN | iulie 2026. -30% la TOȚI ochelarii de soare, online și în showroom-uri.. Codul de reducere Videt verificat si actualizat pe AmCupon.ro. Haine la reducere, coduri verificate. Economiseste acum!
 
 URL: https://amcupon.ro/cod-reducere/videt.ro
 BOARD: Fashion & Îmbrăcăminte — Coduri Reducere Romania
 
 💬 REDDIT / FACEBOOK GRUP — Videt
 
-TITLU: [Cod reducere Fashion & Îmbrăcăminte] Videt — Zilele Videt: până la -50% la rame și 30% la toate lentilele de vedere (cod: BDAY, 91% succes)
+TITLU: [Cod reducere Fashion & Îmbrăcăminte] Videt — -30% la TOȚI ochelarii de soare, online și în showroom-uri. (cod: BDAYSUN, 81% succes)
 
 Cod activ pentru Videt:
 
-**Oferta:** Zilele Videt: până la -50% la rame și 30% la toate lentilele de vedere
-**Cod:** `BDAY`
-**Rata succes:** 91%
+**Oferta:** -30% la TOȚI ochelarii de soare, online și în showroom-uri.
+**Cod:** `BDAYSUN`
+**Rata succes:** 81%
 
 **Link:** https://amcupon.ro/cod-reducere/videt.ro
 
@@ -217,8 +217,8 @@ SUBREDDITS: r/Romania, r/cluj, r/Bucuresti, r/deals
 Tweet 1:
 👗 Cod reducere Videt activ acum:
 
-Oferta: Zilele Videt: până la -50% la rame și 30% la toate lentilele de vedere
-Cod: BDAY
+Oferta: -30% la TOȚI ochelarii de soare, online și în showroom-uri.
+Cod: BDAYSUN
 
 👇 Cum il aplici:
 
@@ -228,7 +228,7 @@ Tweet 2:
 1. Mergi pe Videt
 2. Adauga in cos
 3. La checkout → 'Cod promotional'
-4. Introdu: BDAY
+4. Introdu: BDAYSUN
 5. Reducere aplicata ✅
 
 https://amcupon.ro/cod-reducere/videt.ro
@@ -245,7 +245,7 @@ amcupon.ro
 
 ######################################################################
   NISA: 💄 FRUMUSEȚE & COSMETICE
-  8 magazine active in aceasta nisa
+  7 magazine active in aceasta nisa
 ######################################################################
 
 ──────────────────────────────────────────────────
@@ -259,7 +259,7 @@ HOOK (0-3 sec):
 
 BODY (3-25 sec):
 "Mergi pe AmCupon.ro, cauti Pickndazzle, copiezi codul 10 si il aplici la checkout.
-CHOCOSUMMER BOX 26 – Produse premium de peste 900 lei la doar 179 lei ☀️. Rata de succes 92% — a fost verificat chiar ieri!"
+CHOCOSUMMER BOX 26 – Produse premium de peste 900 lei la doar 179 lei ☀️. Rata de succes 76% — a fost verificat chiar ieri!"
 
 CTA (25-30 sec):
 "Link in bio → amcupon.ro. Salveaza videoul sa nu uiti codul!"
@@ -273,7 +273,7 @@ HASHTAG-URI:
 
 ✅ Oferta speciala
 🎟️ Cod: **10**
-📊 92% rată de succes — verificat!
+📊 76% rată de succes — verificat!
 
 👉 https://amcupon.ro/cod-reducere/pickndazzle.com
 
@@ -295,13 +295,13 @@ BOARD: Frumusețe & Cosmetice — Coduri Reducere Romania
 
 💬 REDDIT / FACEBOOK GRUP — Pickndazzle
 
-TITLU: [Cod reducere Frumusețe & Cosmetice] Pickndazzle — CHOCOSUMMER BOX 26 – Produse premium de peste 900 lei la doar 179 lei ☀️ (cod: 10, 92% succes)
+TITLU: [Cod reducere Frumusețe & Cosmetice] Pickndazzle — CHOCOSUMMER BOX 26 – Produse premium de peste 900 lei la doar 179 lei ☀️ (cod: 10, 76% succes)
 
 Cod activ pentru Pickndazzle:
 
 **Oferta:** CHOCOSUMMER BOX 26 – Produse premium de peste 900 lei la doar 179 lei ☀️
 **Cod:** `10`
-**Rata succes:** 92%
+**Rata succes:** 76%
 
 **Link:** https://amcupon.ro/cod-reducere/pickndazzle.com
 
@@ -340,97 +340,6 @@ amcupon.ro
 
 
 ──────────────────────────────────────────────────
-MAGAZIN: Hairify
-──────────────────────────────────────────────────
-
-🎬 SCRIPT TIKTOK — Hairify (Frumusețe & Cosmetice)
-
-HOOK (0-3 sec):
-"💄 Stii ca poti economisi la Hairify? Iata codul SECRET!"
-
-BODY (3-25 sec):
-"Mergi pe AmCupon.ro, cauti Hairify, copiezi codul BL2016 si il aplici la checkout.
-15% Discount la fibrele de păr din cheratină pentru păr rar și chelie. Rata de succes 90% — a fost verificat chiar ieri!"
-
-CTA (25-30 sec):
-"Link in bio → amcupon.ro. Salveaza videoul sa nu uiti codul!"
-
-HASHTAG-URI:
-#beauty #cosmetice #machiaj #skincare #parfumuri #romania #frumusete #codreducere #amcupon #voucher #economii
-
-📸 INSTAGRAM CAPTION — Hairify
-
-💄 Cod reducere Hairify activ în iulie 2026!
-
-✅ Oferta speciala
-🎟️ Cod: **BL2016**
-📊 90% rată de succes — verificat!
-
-👉 https://amcupon.ro/cod-reducere/hairify.ro
-
-💡 Produse de frumusete la pret mai mic
-
-#beauty #cosmetice #machiaj #skincare #parfumuri #romania #frumusete
-#codreducere #amcupon #economii
-
-📌 PINTEREST PIN — Hairify
-
-TITLU (max 100 caractere):
-Cod Reducere Hairify: BL2016 | iulie 2026
-
-DESCRIERE:
-Cod Reducere Hairify: BL2016 | iulie 2026. 15% Discount la fibrele de păr din cheratină pentru păr rar și chelie. Codul de reducere Hairify verificat si actualizat pe AmCupon.ro. Produse de frumusete la pret mai mic. Economiseste acum!
-
-URL: https://amcupon.ro/cod-reducere/hairify.ro
-BOARD: Frumusețe & Cosmetice — Coduri Reducere Romania
-
-💬 REDDIT / FACEBOOK GRUP — Hairify
-
-TITLU: [Cod reducere Frumusețe & Cosmetice] Hairify — 15% Discount la fibrele de păr din cheratină pentru păr rar și chelie (cod: BL2016, 90% succes)
-
-Cod activ pentru Hairify:
-
-**Oferta:** 15% Discount la fibrele de păr din cheratină pentru păr rar și chelie
-**Cod:** `BL2016`
-**Rata succes:** 90%
-
-**Link:** https://amcupon.ro/cod-reducere/hairify.ro
-
-*Sursa: AmCupon.ro — verificat zilnic*
-
-SUBREDDITS: r/Romania, r/cluj, r/Bucuresti, r/deals
-
-🐦 TWITTER/X THREAD — Hairify
-
-Tweet 1:
-💄 Cod reducere Hairify activ acum:
-
-Oferta: 15% Discount la fibrele de păr din cheratină pentru păr rar și chelie
-Cod: BL2016
-
-👇 Cum il aplici:
-
----
-
-Tweet 2:
-1. Mergi pe Hairify
-2. Adauga in cos
-3. La checkout → 'Cod promotional'
-4. Introdu: BL2016
-5. Reducere aplicata ✅
-
-https://amcupon.ro/cod-reducere/hairify.ro
-
----
-
-Tweet 3:
-Mai multe coduri verificate pentru frumusețe & cosmetice pe:
-amcupon.ro
-
-#codreducere #romania 💄
-
-
-──────────────────────────────────────────────────
 MAGAZIN: Farmec
 ──────────────────────────────────────────────────
 
@@ -455,7 +364,6 @@ HASHTAG-URI:
 
 ✅ Oferta speciala
 📊 80% rată de succes — verificat!
-⚠️ Expiră în 1 zi!
 
 👉 https://amcupon.ro/cod-reducere/farmec.ro
 
@@ -483,7 +391,6 @@ Reducere activa la Farmec:
 
 **Oferta:** 30% REDUCERE la produsele din gama Gerovital Luxury.
 **Rata succes:** 80%
-**Expira in:** 1 zi
 
 **Link:** https://amcupon.ro/cod-reducere/farmec.ro
 
@@ -500,6 +407,78 @@ Tweet 1:
 
 Nu ai nevoie de cod!
 https://amcupon.ro/cod-reducere/farmec.ro
+
+#reduceri #romania
+
+
+──────────────────────────────────────────────────
+MAGAZIN: Yves Rocher
+──────────────────────────────────────────────────
+
+🎬 SCRIPT TIKTOK — Yves Rocher (Frumusețe & Cosmetice)
+
+HOOK (0-3 sec):
+"💄 Reducere ACTIVA la Yves Rocher — nu ai nevoie de niciun cod!"
+
+BODY (3-25 sec):
+"Mergi pe AmCupon.ro, gasesti Yves Rocher si dai click pe oferta.
+REDUCERI PÂNĂ LA -50%. Reducerea se aplica automat — zero bataie de cap!"
+
+CTA (25-30 sec):
+"Link in bio → amcupon.ro. Dai follow pentru oferte zilnice!"
+
+HASHTAG-URI:
+#beauty #cosmetice #machiaj #skincare #parfumuri #romania #frumusete #reduceri #amcupon #oferte #promotii
+
+📸 INSTAGRAM CAPTION — Yves Rocher
+
+💄 Cod reducere Yves Rocher activ în iulie 2026!
+
+✅ Oferta speciala
+📊 88% rată de succes — verificat!
+
+👉 https://amcupon.ro/cod-reducere/yves-rocher.ro
+
+💡 Produse de frumusete la pret mai mic
+
+#beauty #cosmetice #machiaj #skincare #parfumuri #romania #frumusete
+#codreducere #amcupon #economii
+
+📌 PINTEREST PIN — Yves Rocher
+
+TITLU (max 100 caractere):
+Cod Reducere Yves Rocher iulie 2026 — Voucher Verificat
+
+DESCRIERE:
+Cod Reducere Yves Rocher iulie 2026 — Voucher Verificat. REDUCERI PÂNĂ LA -50%. Codul de reducere Yves Rocher verificat si actualizat pe AmCupon.ro. Produse de frumusete la pret mai mic. Economiseste acum!
+
+URL: https://amcupon.ro/cod-reducere/yves-rocher.ro
+BOARD: Frumusețe & Cosmetice — Coduri Reducere Romania
+
+💬 REDDIT / FACEBOOK GRUP — Yves Rocher
+
+TITLU: [Reducere Frumusețe & Cosmetice] Yves Rocher — REDUCERI PÂNĂ LA -50%
+
+Reducere activa la Yves Rocher:
+
+**Oferta:** REDUCERI PÂNĂ LA -50%
+**Rata succes:** 88%
+
+**Link:** https://amcupon.ro/cod-reducere/yves-rocher.ro
+
+*Sursa: AmCupon.ro — verificat zilnic*
+
+SUBREDDITS: r/Romania, r/cluj, r/Bucuresti, r/deals
+
+🐦 TWITTER/X THREAD — Yves Rocher
+
+Tweet 1:
+💄 Reducere automata la Yves Rocher:
+
+REDUCERI PÂNĂ LA -50%
+
+Nu ai nevoie de cod!
+https://amcupon.ro/cod-reducere/yves-rocher.ro
 
 #reduceri #romania
 
