@@ -872,6 +872,15 @@
         "zile_ramase": 1640,
         "expira": "2030-12-31",
         "sursa": "csv_import"
+      },
+      {
+        "nume": "Flash Sale",
+        "descriere": "Profită de reduceri fulger în Flash Sale-ul Otter, de luni pana vineri, intre 10-13! Încălțăminte și accesorii la prețuri masiv reduse.",
+        "cod_cupon": "",
+        "landing_page": "https://www.otter.ro/flashsale",
+        "zile_ramase": 1639,
+        "expira": "2030-12-31",
+        "sursa": "csv_import"
       }
     ],
     "folosit_de": 323,
@@ -1180,6 +1189,15 @@
         "zile_ramase": 237,
         "expira": "2027-02-28",
         "sursa": "csv_import"
+      },
+      {
+        "nume": "Oferta 1+1",
+        "descriere": "Oferta 1+1",
+        "cod_cupon": "",
+        "landing_page": "https://www.fara-daunatori.ro/search/oferta/?q=oferta",
+        "zile_ramase": 237,
+        "expira": "2027-02-28",
+        "sursa": "csv_import"
       }
     ],
     "folosit_de": 673,
@@ -1317,6 +1335,15 @@
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.sneakerit.ro%2Fsale",
         "zile_ramase": 976
+      },
+      {
+        "nume": "Sale",
+        "descriere": "Toate produsele reduse de pe sneakerit.ro",
+        "cod_cupon": "",
+        "landing_page": "https://www.sneakerit.ro/sale",
+        "zile_ramase": 976,
+        "expira": "2029-03-08",
+        "sursa": "csv_import"
       },
       {
         "nume": "Sale",
@@ -25137,16 +25164,26 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "zile_ramase": 24,
+    "promotii": [
+      {
+        "nume": "Usborne Summer sale - Carti de luat in vacanta",
+        "descriere": "A venit vacanta si te intrebi ce sa pui in bagajul copilului ca sa nu auzi \"mama, m-am plictisit!” toata ziua?\n\nAi pana la 58% reducere la intreaga colectie pentru vacanta de vara de pe llittlenest.ro/collections/carti-vacanta-de-vara si poti alege carti potrivite pentru orice situatie:\n\n-> In masina / avion: activitati cu pixul wipe-clean, stickere de repozitionat\n-> La plaja / gradina: carti cu sunete, carti cu clapete, stickere tematice\n-> La hotel / casa bunicilor: seturi de activitati refol",
+        "cod_cupon": "",
+        "landing_page": "https://littlenest.ro/collections/car%C8%9Bi-vacan%C8%9Ba-de-vara",
+        "zile_ramase": 24,
+        "expira": "2026-07-30",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 133,
     "procent_succes": 95,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-07-05",
-    "scor_final": 0,
+    "scor_final": 30,
     "program_id": 13043,
     "unique_code": "026a89a04"
   },
@@ -28815,44 +28852,6 @@
     ],
     "folosit_de": 278,
     "procent_succes": 92,
-    "exclusiv": true,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-07-05",
-    "scor_final": 50,
-    "program_id": "",
-    "unique_code": "",
-    "sursa_import": "csv"
-  },
-  {
-    "magazin": "advertisertest.eu/production/test944",
-    "url": "https://advertisertest.eu/production/test944",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fadvertisertest.eu%2Fproduction%2Ftest944",
-    "logo_url": "https://www.google.com/s2/favicons?domain=advertisertest.eu&sz=128",
-    "categorie": "Online Mall",
-    "categorie_slug": "online-mall",
-    "comision": "",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "medium",
-    "canal_recomandat": "Coupon, Content",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": true,
-    "zile_ramase": 269,
-    "promotii": [
-      {
-        "nume": "testCampaign",
-        "descriere": "asd",
-        "cod_cupon": "123",
-        "landing_page": "",
-        "zile_ramase": 269,
-        "expira": "2027-03-31",
-        "sursa": "csv_import"
-      }
-    ],
-    "folosit_de": 385,
-    "procent_succes": 76,
     "exclusiv": true,
     "platforma": "2performant",
     "ultima_verificare": "2026-07-05",
