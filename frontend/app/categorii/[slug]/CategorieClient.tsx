@@ -175,10 +175,16 @@ function MagazinCard({ m, revealed, copiat, onCopiere }: {
   );
 }
 
-export default function CategorieClient({ magazine, numeCategorie, slug }: {
+interface Produs {
+  title: string; url: string; image: string; price: number;
+  old_price?: number | null; discount_pct: number; merchant?: string; merchant_slug?: string;
+}
+
+export default function CategorieClient({ magazine, numeCategorie, slug, produse = [] }: {
   magazine: Magazin[];
   numeCategorie: string;
   slug: string;
+  produse?: Produs[];
 }) {
   const [coduriReveal, setCoduriReveal] = useState<Set<string>>(new Set());
   const [copiat, setCopiat] = useState<string | null>(null);
@@ -246,6 +252,45 @@ export default function CategorieClient({ magazine, numeCategorie, slug }: {
               {cuPromotii.map((m) => (
                 <MagazinCard key={m.magazin} m={m} revealed={coduriReveal.has(m.magazin)} copiat={copiat === m.magazin} onCopiere={copiazaCod} />
               ))}
+            </div>
+          </section>
+        )}
+
+        {/* PRODUSE LA REDUCERE (din feed) — umple categoria cu dovada vizuala */}
+        {produse.length >= 4 && (
+          <section className="mb-10">
+            <div className="flex items-center justify-between gap-3 mb-5">
+              <div className="flex items-center gap-3">
+                <h2 className="text-xl font-black text-white">Produse la reducere {numeCategorie}</h2>
+                <span className="text-sm text-[#8c8064]">{produse.length} produse</span>
+              </div>
+              <Link href="/produse" className="hidden sm:inline text-xs font-bold text-[#d8c091] hover:text-[#e3d1a6] transition-colors">Toate produsele →</Link>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-3">
+              {produse.map((p, i) => {
+                const hasOld = !!(p.old_price && p.old_price > p.price);
+                return (
+                  <a key={i} href={p.url} target="_blank" rel="sponsored noopener noreferrer"
+                    className="group bg-[#15120c] border border-[#26211a] hover:border-[#c9a63e]/50 rounded-2xl overflow-hidden flex flex-col transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-black/40">
+                    <div className="relative bg-white aspect-square overflow-hidden">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={p.image} alt={p.title} loading="lazy" className="w-full h-full object-contain p-3 group-hover:scale-105 transition-transform duration-300"
+                        onError={(e) => { (e.currentTarget.closest("a") as HTMLElement).style.display = "none"; }} />
+                      {p.discount_pct > 0 && (
+                        <span className="absolute top-2 left-2 bg-gradient-to-br from-[#e9d9b0] to-[#c9a63e] text-[#1a1408] text-[11px] font-black px-2 py-0.5 rounded-lg shadow">-{p.discount_pct}%</span>
+                      )}
+                    </div>
+                    <div className="p-3 flex flex-col flex-1">
+                      <p className="text-xs font-semibold text-[#dcd0b8] line-clamp-2 flex-1 group-hover:text-white transition-colors leading-snug">{p.title}</p>
+                      <div className="mt-2 flex items-baseline gap-1.5">
+                        <span className="text-sm font-black text-[#e3d1a6]">{p.price.toLocaleString("ro-RO")} lei</span>
+                        {hasOld && <span className="text-[10px] text-[#8c8064] line-through">{p.old_price!.toLocaleString("ro-RO")}</span>}
+                      </div>
+                      {p.merchant && <span className="text-[10px] text-[#8c8064] mt-1 truncate">{p.merchant}</span>}
+                    </div>
+                  </a>
+                );
+              })}
             </div>
           </section>
         )}

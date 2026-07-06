@@ -91,6 +91,38 @@ function loadData(): Magazin[] {
   return JSON.parse(fs.readFileSync(filePath, "utf-8"));
 }
 
+export interface Produs {
+  title: string; url: string; image: string; price: number;
+  old_price?: number | null; discount_pct: number; cat_slug?: string;
+  category?: string; brand?: string; merchant?: string; merchant_slug?: string;
+}
+
+// Produse RELEVANTE per categorie = produse de la magazinele care apartin
+// categoriei (potrivire pe merchant_slug=domeniu). categorisirea pe cat_slug din
+// products.json e nesigura (ex: navstore auto taguit "bijuterii") — nu o folosim.
+function loadProduse(merchantDomains: Set<string>, limit = 12): Produs[] {
+  try {
+    const p = path.join(process.cwd(), "public", "products.json");
+    if (!fs.existsSync(p)) return [];
+    const raw = JSON.parse(fs.readFileSync(p, "utf-8"));
+    const arr: Produs[] = Array.isArray(raw) ? raw : (raw.products || []);
+    const seen = new Set<string>();
+    return arr
+      .filter((x) => {
+        if (!x.image || !x.title || !(x.price > 0)) return false; // exclude intrari promo (0 lei)
+        const dom = (x.merchant_slug || x.merchant || "").toLowerCase();
+        if (!merchantDomains.has(dom)) return false;
+        if (seen.has(x.title)) return false; // evita duplicate (navstore repeta titluri)
+        seen.add(x.title);
+        return true;
+      })
+      .sort((a, b) => (b.discount_pct || 0) - (a.discount_pct || 0))
+      .slice(0, limit);
+  } catch {
+    return [];
+  }
+}
+
 export async function generateStaticParams() {
   const magazine = loadData();
   const slugs = [...new Set(magazine.map((m) => m.categorie_slug).filter(Boolean))];
@@ -159,6 +191,9 @@ export default async function PaginaCategorie({
   const magazine = loadData();
   const mag = magazine.filter((m) => m.categorie_slug === slug);
   if (!mag.length) notFound();
+
+  const merchantDomains = new Set(mag.map((m) => (m.magazin || "").toLowerCase()));
+  const produse = loadProduse(merchantDomains, 12);
 
   const numeCateg = NUME_CATEGORIE[slug] || mag[0].categorie;
   const cuPromo   = mag.filter((m) => m.are_promotie).length;
@@ -250,8 +285,8 @@ export default async function PaginaCategorie({
       {itemListSchema && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       )}
-      <CategorieClient magazine={mag} numeCategorie={numeCateg} slug={slug} />
-      {CATEG_MERCHANTS[slug] && (
+      <CategorieClient magazine={mag} numeCategorie={numeCateg} slug={slug} produse={produse} />
+      {CATEG_MERCHANTS[slug] && produse.length === 0 && (
         <NisaProduse
           merchantSlugs={CATEG_MERCHANTS[slug]}
           catSlug={CATEG_CAT_SLUG[slug] || ""}
