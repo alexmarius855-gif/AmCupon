@@ -217,7 +217,7 @@ export default function EsimPage() {
         {/* Hero */}
         <div className="bg-gradient-to-b from-[#ffffff]/40 to-[#F7F9FC] border-b border-[#e2e8f0]">
           <div className="max-w-5xl mx-auto px-4 py-14 text-center">
-            <div className="inline-flex items-center gap-2 bg-[#2e2410]/30 border border-[#8a6a1e]/40 rounded-full px-4 py-1.5 text-sm text-[#0f766e] mb-5">
+            <div className="inline-flex items-center gap-2 bg-[#2e2410]/30 border border-[#0f766e]/40 rounded-full px-4 py-1.5 text-sm text-[#0f766e] mb-5">
               <span>📡</span>
               <span>Date mobile in 190+ tari fara SIM fizic</span>
             </div>
@@ -243,7 +243,7 @@ export default function EsimPage() {
           <h2 className="text-2xl font-bold text-[#0f172a] mb-6">Top 3 eSIM-uri recomandate</h2>
           <div className="space-y-5 mb-14">
             {ESIM_TOP.map((esim) => (
-              <div key={esim.name} className="bg-[#ffffff] border border-[#cbd5e1] rounded-xl p-6 hover:border-[#8a6a1e]/50 transition-colors">
+              <div key={esim.name} className="bg-[#ffffff] border border-[#cbd5e1] rounded-xl p-6 hover:border-[#0f766e]/50 transition-colors">
                 <div className="flex flex-col md:flex-row md:items-start gap-5">
                   <div className="flex-shrink-0 text-center">
                     <div className="w-16 h-16 bg-[#e2e8f0] rounded-xl flex items-center justify-center text-2xl font-bold text-[#0d9488] mx-auto mb-2 border border-[#cbd5e1]">
@@ -345,7 +345,7 @@ export default function EsimPage() {
                 href={e.url}
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                className="bg-[#ffffff] border border-[#e2e8f0] rounded-xl p-4 hover:border-[#8a6a1e]/50 transition-colors group"
+                className="bg-[#ffffff] border border-[#e2e8f0] rounded-xl p-4 hover:border-[#0f766e]/50 transition-colors group"
               >
                 <div className="flex items-center gap-2 mb-2">
                   <span className="text-xl">{e.emoji}</span>

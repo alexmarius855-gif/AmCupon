@@ -175,7 +175,7 @@ export default function PieseAutoPage() {
             {[
               { href: "/echipament-moto", label: "🏍️ Echipament Moto" },
               { href: "/moto", label: "🔧 Auto-Moto General" },
-              { href: "/categorii/automotive", label: "📂 Toate magazinele Auto" },
+              { href: "/categorii/auto-moto", label: "📂 Toate magazinele Auto" },
               { href: "/oferte-azi", label: "🔥 Oferte de azi" },
             ].map(l => (
               <Link key={l.href} href={l.href}

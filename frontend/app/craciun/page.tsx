@@ -63,11 +63,11 @@ const TOP_CRACIUN = [
 ];
 
 const IDEI_CADOURI = [
-  { emoji: "🧸", titlu: "Jucării copii", href: "/categorii/toys", culoare: "bg-yellow-100 text-[#0f766e]" },
+  { emoji: "🧸", titlu: "Jucării copii", href: "/categorii/copii", culoare: "bg-yellow-100 text-[#0f766e]" },
   { emoji: "💄", titlu: "Parfumuri & Beauty", href: "/categorii/beauty", culoare: "bg-[#14b8a6] text-[#0f766e]" },
-  { emoji: "📱", titlu: "Electronice", href: "/categorii/electronics", culoare: "bg-[#14b8a6] text-[#0f766e]" },
+  { emoji: "📱", titlu: "Electronice", href: "/categorii/electronice", culoare: "bg-[#14b8a6] text-[#0f766e]" },
   { emoji: "👗", titlu: "Modă & Fashion", href: "/categorii/fashion", culoare: "bg-[#14b8a6] text-[#0f766e]" },
-  { emoji: "📚", titlu: "Cărți & Jocuri", href: "/categorii/books", culoare: "bg-green-100 text-[#0f766e]" },
+  { emoji: "📚", titlu: "Cărți & Jocuri", href: "/categorii/carti-educatie", culoare: "bg-green-100 text-[#0f766e]" },
   { emoji: "🏋️", titlu: "Sport & Outdoor", href: "/categorii/sport", culoare: "bg-[#14b8a6] text-[#0f766e]" },
 ];
 
@@ -141,13 +141,13 @@ export default function CraciunPage() {
         </nav>
 
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#8a6a1e] text-[#0f172a]">
+        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#0f766e] text-[#0f172a]">
           <div className="max-w-6xl mx-auto px-4 py-14 text-center">
             <div className="text-5xl mb-4">🎄</div>
             <h1 className="text-4xl md:text-5xl font-black mb-4 leading-tight">
               Reduceri de Crăciun {an}
             </h1>
-            <p className="text-[#efe3c6] text-lg mb-8 max-w-xl mx-auto">
+            <p className="text-[#ccfbf1] text-lg mb-8 max-w-xl mx-auto">
               Coduri de reducere verificate pentru cadourile perfecte — jucării, fashion,
               electronice, parfumuri și multe altele
             </p>
@@ -161,7 +161,7 @@ export default function CraciunPage() {
               ].map((s) => (
                 <div key={s.label} className="bg-slate-100 backdrop-blur-sm rounded-xl py-3 px-2">
                   <div className="text-2xl font-black">{s.val}</div>
-                  <div className="text-xs text-[#efe3c6]">{s.label}</div>
+                  <div className="text-xs text-[#ccfbf1]">{s.label}</div>
                 </div>
               ))}
             </div>

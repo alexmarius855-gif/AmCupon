@@ -129,7 +129,7 @@ async function sendWelcomeEmail(email: string, apiKey: string): Promise<boolean>
       <div style="margin-bottom:32px;">
         ${["emag.ro","fashiondays.ro","drmax.ro","noriel.ro","carturesti.ro"].map(m => {
           const label = m.split(".")[0].charAt(0).toUpperCase() + m.split(".")[0].slice(1);
-          return `<a href="https://amcupon.ro/cod-reducere/${m}" style="display:inline-block;margin:4px;padding:6px 14px;background:#f0fdfa;border:1px solid #e6d5a8;border-radius:20px;text-decoration:none;color:#8a6a1e;font-size:13px;font-weight:700;">Cod ${label}</a>`;
+          return `<a href="https://amcupon.ro/cod-reducere/${m}" style="display:inline-block;margin:4px;padding:6px 14px;background:#f0fdfa;border:1px solid #e6d5a8;border-radius:20px;text-decoration:none;color:#0f766e;font-size:13px;font-weight:700;">Cod ${label}</a>`;
         }).join("")}
       </div>
       <!-- Extensie -->

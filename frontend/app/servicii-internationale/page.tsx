@@ -217,7 +217,7 @@ const CATEGORII = [
         tagline: "Editare foto AI cu Luminar Neo — 20-30% comision",
         comision: "20-30%",
         badge: "AI Photo",
-        badgeColor: "bg-[#8a6a1e]",
+        badgeColor: "bg-[#0f766e]",
         url: "https://skylum.com",
         descriere: "Luminar Neo editeaza fotografii cu AI: inlocuire cer, retusare portrete, imbunatatire automata.",
       },

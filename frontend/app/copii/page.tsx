@@ -58,11 +58,11 @@ export default function CopiiPage() {
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#8a6a1e] text-[#0f172a] py-12 px-4">
+        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#0f766e] text-[#0f172a] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">🧸</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Jucării & Copii cu Reducere {an}</h1>
-            <p className="text-[#efe3c6] text-lg mb-6 max-w-xl mx-auto">
+            <p className="text-[#ccfbf1] text-lg mb-6 max-w-xl mx-auto">
               LEGO, păpuși, haine copii, cărucioare, scaune auto — coduri de reducere verificate
             </p>
             <div className="flex flex-wrap justify-center gap-2">
@@ -78,7 +78,7 @@ export default function CopiiPage() {
           <h2 className="text-xl font-black text-[#0f172a] mb-6 text-center">Cadouri și cumpărături pe vârstă</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {GRUPE_VARSTA.map(g => (
-              <a key={g.label} href="/categorii/babies-kids-toys"
+              <a key={g.label} href="/categorii/copii"
                 className="bg-[#ffffff] border border-yellow-200 rounded-xl p-5 hover:shadow-md transition-all group">
                 <div className="text-3xl mb-2">{g.emoji}</div>
                 <h3 className="font-bold text-[#0f172a] text-sm mb-1">{g.label}</h3>
@@ -186,7 +186,7 @@ export default function CopiiPage() {
         <footer className="border-t border-[#e2e8f0] py-6 text-center text-xs text-[#64748b] mt-4">
           © {an} AmCupon.ro ·{" "}
           <Link href="/idei-cadouri" className="hover:text-[#0d9488]">Idei Cadouri</Link>{" · "}
-          <Link href="/categorii/babies-kids-toys" className="hover:text-[#0d9488]">Categorie Copii</Link>{" · "}
+          <Link href="/categorii/copii" className="hover:text-[#0d9488]">Categorie Copii</Link>{" · "}
           <Link href="/categorii" className="hover:text-[#0d9488]">Categorii</Link>
         </footer>
       </div>

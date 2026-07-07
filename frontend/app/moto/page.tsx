@@ -73,7 +73,7 @@ export default function MotoPage() {
 
           <div className="mt-8 flex flex-wrap gap-2 justify-center">
             {[
-              { href: "/categorii/automotive", label: "📂 Toate magazinele Auto" },
+              { href: "/categorii/auto-moto", label: "📂 Toate magazinele Auto" },
               { href: "/gadgets", label: "📡 Gadgets" },
               { href: "/oferte-azi", label: "🔥 Oferte de azi" },
             ].map(l => (

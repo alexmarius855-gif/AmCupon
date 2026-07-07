@@ -98,9 +98,9 @@ export default function NotFound() {
         <div className="relative z-10 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-xl w-full mb-12">
           {[
             { emoji: "👗", label: "Fashion", href: "/categorii/fashion" },
-            { emoji: "💻", label: "Electronice", href: "/categorii/electronics-itc" },
+            { emoji: "💻", label: "Electronice", href: "/categorii/electronice" },
             { emoji: "💄", label: "Frumusețe", href: "/categorii/beauty" },
-            { emoji: "🧸", label: "Jucării", href: "/categorii/babies-kids-toys" },
+            { emoji: "🧸", label: "Jucării", href: "/categorii/copii" },
           ].map((c) => (
             <a
               key={c.href}

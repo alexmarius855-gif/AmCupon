@@ -22,14 +22,14 @@ export const metadata: Metadata = {
 const TOP_SPORT = ["decathlon.ro","sportisimo.ro","sport-vision.ro","intersport.ro","hervis.ro","gigasport.ro"];
 const CAT_SPORT = ["sport","outdoor","fitness","running","cycling","hiking","sports"];
 const SUBCATEGORII = [
-  { emoji: "🏃", label: "Running", href: "/categorii/sports-outdoors" },
-  { emoji: "🚴", label: "Ciclism", href: "/categorii/sports-outdoors" },
-  { emoji: "⛺", label: "Camping", href: "/categorii/sports-outdoors" },
-  { emoji: "🏋️", label: "Fitness & Sală", href: "/categorii/sports-outdoors" },
-  { emoji: "⚽", label: "Fotbal", href: "/categorii/sports-outdoors" },
-  { emoji: "🎿", label: "Ski & Iarnă", href: "/categorii/sports-outdoors" },
-  { emoji: "🏊", label: "Înot", href: "/categorii/sports-outdoors" },
-  { emoji: "🧗", label: "Hiking & Alpinism", href: "/categorii/sports-outdoors" },
+  { emoji: "🏃", label: "Running", href: "/categorii/sport" },
+  { emoji: "🚴", label: "Ciclism", href: "/categorii/sport" },
+  { emoji: "⛺", label: "Camping", href: "/categorii/sport" },
+  { emoji: "🏋️", label: "Fitness & Sală", href: "/categorii/sport" },
+  { emoji: "⚽", label: "Fotbal", href: "/categorii/sport" },
+  { emoji: "🎿", label: "Ski & Iarnă", href: "/categorii/sport" },
+  { emoji: "🏊", label: "Înot", href: "/categorii/sport" },
+  { emoji: "🧗", label: "Hiking & Alpinism", href: "/categorii/sport" },
 ];
 
 function numeAfisat(s: string) { return s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" "); }
@@ -62,7 +62,7 @@ export default function SportPage() {
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#8a6a1e] text-[#0f172a] py-12 px-4">
+        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#0f766e] text-[#0f172a] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">🏃</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Sport & Fitness cu Reducere {an}</h1>
@@ -89,7 +89,7 @@ export default function SportPage() {
           {magazine.length === 0 ? (
             <div className="text-center py-12">
               <p className="text-[#475569] mb-4">Momentan nu sunt magazine sport cu promoții active.</p>
-              <Link href="/categorii/sports-outdoors"
+              <Link href="/categorii/sport"
                 className="inline-block bg-[#0d9488] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#14b8a6] transition-colors">
                 Vezi echipament sport →
               </Link>

@@ -9,52 +9,68 @@ const MAGAZINE_POPULARE = [
   { slug: "fashiondays.ro",  label: "FashionDays" },
   { slug: "notino.ro",       label: "Notino" },
   { slug: "altex.ro",        label: "Altex" },
-  { slug: "dedeman.ro",      label: "Dedeman" },
+  { slug: "flanco.ro",       label: "Flanco" },
   { slug: "decathlon.ro",    label: "Decathlon" },
   { slug: "drmax.ro",        label: "Dr. Max" },
   { slug: "noriel.ro",       label: "Noriel" },
   { slug: "elefant.ro",      label: "Elefant" },
   { slug: "libris.ro",       label: "Libris" },
+  { slug: "carturesti.ro",   label: "Carturesti" },
+  { slug: "answear.ro",      label: "Answear" },
+  { slug: "temu.com",        label: "Temu" },
+  { slug: "shein.com",       label: "SHEIN" },
+  { slug: "vidaxl.ro",       label: "vidaXL" },
+  { slug: "sportdepot.ro",   label: "Sport Depot" },
+  { slug: "bookzone.ro",     label: "BookZone" },
+  { slug: "vegis.ro",        label: "Vegis" },
+  { slug: "trendyol.com",    label: "Trendyol" },
+  { slug: "petmart.ro",      label: "Petmart" },
 ];
 
+// Slug-uri categorie CORECTE (canonicalizate) — vechile electronics-itc/home-garden dadeau 404
 const CATEGORII = [
-  { href: "/categorii/fashion",              label: "Fashion & Haine" },
-  { href: "/categorii/electronics-itc",      label: "Electronice & IT" },
-  { href: "/categorii/beauty",               label: "Frumusete & Beauty" },
-  { href: "/categorii/home-garden",          label: "Casa & Gradina" },
-  { href: "/categorii/pharma",               label: "Farmacie Online" },
-  { href: "/categorii/sports-outdoors",      label: "Sport & Outdoor" },
-  { href: "/categorii/babies-kids-toys",     label: "Copii & Jucarii" },
-  { href: "/categorii/automotive",           label: "Auto & Moto" },
-  { href: "/categorii/books",                label: "Carti & Educatie" },
-  { href: "/categorii/hypermarket-groceries",label: "Hypermarket" },
+  { href: "/categorii/fashion",         label: "Fashion & Haine" },
+  { href: "/categorii/electronice",     label: "Electronice & IT" },
+  { href: "/categorii/beauty",          label: "Frumusete & Beauty" },
+  { href: "/categorii/casa-gradina",    label: "Casa & Gradina" },
+  { href: "/categorii/sanatate",        label: "Sanatate & Farmacie" },
+  { href: "/categorii/sport",           label: "Sport & Fitness" },
+  { href: "/categorii/copii",           label: "Copii & Familie" },
+  { href: "/categorii/auto-moto",       label: "Auto & Moto" },
+  { href: "/categorii/carti-educatie",  label: "Carti & Educatie" },
+  { href: "/categorii/bijuterii",       label: "Bijuterii & Ceasuri" },
 ];
 
-const GHIDURI = [
-  { href: "/farmacie",    label: "Farmacie Online" },
-  { href: "/frumusete",   label: "Beauty & Cosmetice" },
-  { href: "/sport",       label: "Sport & Fitness" },
-  { href: "/copii",       label: "Copii & Bebelusi" },
-  { href: "/calatorie",   label: "Vacante & Travel" },
-  { href: "/gadgets",     label: "Gadgets & Tech" },
-  { href: "/fashion",     label: "Moda & Tendinte" },
-  { href: "/casa",        label: "Casa & Bricolaj" },
-  { href: "/black-friday",label: "Black Friday" },
-  { href: "/extensie",    label: "Extensie Chrome" },
-  { href: "/ai-tools",   label: "Programe Afiliere AI" },
-  { href: "/vpn",        label: "Cele mai bune VPN-uri" },
+// Reduceri preferate — hub-uri de reduceri (ce cauta userii)
+const REDUCERI = [
+  { href: "/oferte-azi",      label: "Oferte de azi" },
+  { href: "/top-reduceri",    label: "Top reduceri" },
+  { href: "/produse",         label: "Produse la reducere" },
+  { href: "/black-friday",    label: "Black Friday" },
+  { href: "/craciun",         label: "Reduceri Craciun" },
+  { href: "/idei-cadouri",    label: "Idei cadouri" },
+  { href: "/comparatii",      label: "Comparatii magazine" },
+  { href: "/calculator",      label: "Calculator reduceri" },
 ];
 
-const INFO = [
+// Pentru utilizatori
+const UTILIZATORI = [
+  { href: "/blog",             label: "Revista & Ghiduri" },
+  { href: "/newsletter",       label: "Newsletter gratuit" },
+  { href: "/extensie",         label: "Extensie Chrome" },
+  { href: "/toate-magazinele", label: "Toate magazinele" },
   { href: "/despre-noi",       label: "Despre noi" },
   { href: "/contact",          label: "Contact" },
-  { href: "/blog",             label: "Blog & Ghiduri" },
-  { href: "/newsletter",       label: "Newsletter gratuit" },
-  { href: "/top-reduceri",     label: "Top reduceri" },
-  { href: "/comparatii",       label: "Comparatii magazine" },
-  { href: "/toate-magazinele", label: "Toate magazinele" },
   { href: "/confidentialitate",label: "Politica GDPR" },
   { href: "/termeni",          label: "Termeni si conditii" },
+];
+
+// Pentru parteneri / magazine
+const PARTENERI = [
+  { href: "/despre-noi",       label: "Colaboreaza cu noi" },
+  { href: "/contact",          label: "Listeaza magazinul tau" },
+  { href: "/servicii",         label: "Servicii & Software" },
+  { href: "/instrumente-seo",  label: "Instrumente marketing" },
 ];
 
 function NewsletterMini() {
@@ -229,12 +245,12 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Ghiduri */}
+          {/* Reduceri preferate */}
           <div>
-            <p className="text-[#0f172a] font-bold text-xs uppercase tracking-widest mb-4">Ghiduri nisa</p>
+            <p className="text-[#0f172a] font-bold text-xs uppercase tracking-widest mb-4">Reduceri preferate</p>
             <ul className="space-y-2">
-              {GHIDURI.map(g => (
-                <li key={g.href}>
+              {REDUCERI.map(g => (
+                <li key={g.label}>
                   <Link href={g.href} className="text-sm text-[#64748b] hover:text-[#0d9488] transition-colors">
                     {g.label}
                   </Link>
@@ -243,12 +259,12 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Info */}
+          {/* Pentru utilizatori */}
           <div>
             <p className="text-[#0f172a] font-bold text-xs uppercase tracking-widest mb-4">Pentru utilizatori</p>
             <ul className="space-y-2">
-              {INFO.map(i => (
-                <li key={i.href}>
+              {UTILIZATORI.map(i => (
+                <li key={i.label}>
                   <Link href={i.href} className="text-sm text-[#64748b] hover:text-[#0d9488] transition-colors">
                     {i.label}
                   </Link>
@@ -257,17 +273,11 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Parteneri */}
+          {/* Pentru parteneri */}
           <div>
             <p className="text-[#0f172a] font-bold text-xs uppercase tracking-widest mb-4">Pentru parteneri</p>
             <ul className="space-y-2">
-              {[
-                { href: "/contact",    label: "Adauga magazinul tau" },
-                { href: "/contact",    label: "Contact parteneriate" },
-                { href: "/despre-noi", label: "Despre AmCupon" },
-                { href: "/extensie",   label: "Extensia Chrome" },
-                { href: "/newsletter", label: "Newsletter" },
-              ].map((p, i) => (
+              {PARTENERI.map((p, i) => (
                 <li key={i}>
                   <Link href={p.href} className="text-sm text-[#64748b] hover:text-[#0d9488] transition-colors">
                     {p.label}

@@ -45,17 +45,17 @@ const IDEI_PER_PROFIL = [
   {
     profil: "👨 Cadouri pentru el", culoare: "bg-[#ffffff] border-[#14b8a6]",
     idei: ["Gadget tech → eMAG", "Echipament sport → Decathlon", "Parfum masculin → Notino", "Carte business → Libris"],
-    link: "/categorii/electronics-itc",
+    link: "/categorii/electronice",
   },
   {
     profil: "🧒 Cadouri pentru copii", culoare: "bg-[#ffffff] border-yellow-200",
     idei: ["Jucării educative → Noriel", "Cărți ilustrate → Elefant", "Jocuri de masă → eMAG", "Set creativ → Smyths"],
-    link: "/categorii/babies-kids-toys",
+    link: "/categorii/copii",
   },
   {
     profil: "👴 Cadouri pentru părinți", culoare: "bg-[#ffffff] border-green-200",
     idei: ["Aparate electrocasnice → eMAG", "Cărți → Libris", "Îngrijire → Notino", "Accesorii casă → Dedeman"],
-    link: "/categorii/home-garden",
+    link: "/categorii/casa-gradina",
   },
 ];
 
@@ -91,11 +91,11 @@ export default function IdeiCadouriPage() {
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#8a6a1e] text-[#0f172a] py-12 px-4">
+        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#0f766e] text-[#0f172a] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">🎁</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Idei de Cadouri {an}</h1>
-            <p className="text-[#efe3c6] text-lg mb-8 max-w-xl mx-auto">
+            <p className="text-[#ccfbf1] text-lg mb-8 max-w-xl mx-auto">
               Cadoul perfect pentru orice ocazie, la prețuri reduse — jucării, fashion, beauty, electronice, cărți
             </p>
             <div className="flex flex-wrap justify-center gap-2">

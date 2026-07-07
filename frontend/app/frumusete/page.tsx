@@ -60,11 +60,11 @@ export default function FrumusetePage() {
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#8a6a1e] text-[#0f172a] py-12 px-4">
+        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#0f766e] text-[#0f172a] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">💄</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Beauty & Cosmetice cu Reducere {an}</h1>
-            <p className="text-[#efe3c6] text-lg mb-6 max-w-xl mx-auto">
+            <p className="text-[#ccfbf1] text-lg mb-6 max-w-xl mx-auto">
               Parfumuri originale, skincare premium, machiaj — coduri de reducere verificate zilnic la Notino, Douglas, Sephora
             </p>
             <div className="flex flex-wrap justify-center gap-2">

@@ -123,7 +123,7 @@ export default function PescuitPage() {
             <div className="text-center py-10 bg-[#ffffff] rounded-xl">
               <p className="text-2xl mb-3">🎣</p>
               <p className="text-[#475569] font-medium mb-2">Curand disponibil — verifica ofertele sport</p>
-              <Link href="/categorii/sports-outdoors" className="inline-block bg-emerald-600 text-white font-bold px-6 py-3 rounded-xl hover:bg-emerald-500 transition-colors">
+              <Link href="/categorii/sport" className="inline-block bg-emerald-600 text-white font-bold px-6 py-3 rounded-xl hover:bg-emerald-500 transition-colors">
                 Sport & Outdoor →
               </Link>
             </div>

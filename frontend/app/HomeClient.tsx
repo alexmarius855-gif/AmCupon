@@ -1559,11 +1559,11 @@ export default function HomeClient({
               <ul className="space-y-2.5 text-sm">
                 {[
                   { href: "/categorii/fashion",           label: "Fashion" },
-                  { href: "/categorii/electronics-itc",   label: "Electronice IT&C" },
+                  { href: "/categorii/electronice",   label: "Electronice IT&C" },
                   { href: "/categorii/beauty",            label: "Frumusete" },
-                  { href: "/categorii/home-garden",       label: "Casa & Gradina" },
-                  { href: "/categorii/sports-outdoors",   label: "Sport" },
-                  { href: "/categorii/pharma",            label: "Farmacie" },
+                  { href: "/categorii/casa-gradina",       label: "Casa & Gradina" },
+                  { href: "/categorii/sport",   label: "Sport" },
+                  { href: "/categorii/sanatate",            label: "Farmacie" },
                   { href: "/categorii",                   label: "Toate categoriile →" },
                 ].map(l => (
                   <li key={l.href}><a href={l.href} className="hover:text-[#0d9488] transition-colors">{l.label}</a></li>

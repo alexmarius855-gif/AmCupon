@@ -146,7 +146,7 @@ export default async function NisaPage(
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* Hero */}
-      <div className="bg-gradient-to-br from-[#0f766e] to-[#8a6a1e] text-[#0f172a] py-12 px-4">
+      <div className="bg-gradient-to-br from-[#0f766e] to-[#0f766e] text-[#0f172a] py-12 px-4">
         <div className="max-w-5xl mx-auto text-center">
           <div className="text-5xl mb-3">{nisa.emoji}</div>
           <h1 className="text-3xl font-black mb-2">{nisa.titlu}</h1>

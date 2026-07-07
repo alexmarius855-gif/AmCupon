@@ -63,11 +63,11 @@ export default function GadgetsPage() {
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#8a6a1e] text-[#0f172a] py-12 px-4">
+        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#0f766e] text-[#0f172a] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">📡</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Gadgets & Tech {an}</h1>
-            <p className="text-[#efe3c6] text-lg mb-8 max-w-xl mx-auto">
+            <p className="text-[#ccfbf1] text-lg mb-8 max-w-xl mx-auto">
               Smartwatch-uri, căști wireless, drone, smart home — coduri de reducere verificate pentru tot ce e nou în tech
             </p>
             <div className="grid grid-cols-3 gap-4 max-w-sm mx-auto">
@@ -96,7 +96,7 @@ export default function GadgetsPage() {
                 { emoji:"🔋", label:"Power Bank", href:"/blog/cel-mai-bun-power-bank-2026" },
                 { emoji:"🚁", label:"Drone", href:"/blog/cea-mai-buna-drona-2026" },
                 { emoji:"📷", label:"Camere acțiune", href:"/blog/cea-mai-buna-camera-video-sport-2026" },
-                { emoji:"🎮", label:"Gaming", href:"/categorii/games" },
+                { emoji:"🎮", label:"Gaming", href:"/categorii/electronice" },
                 { emoji:"📱", label:"Telefoane", href:"/blog/cel-mai-bun-telefon-pentru-poze-2026" },
               ].map(c => (
                 <a key={c.label} href={c.href}

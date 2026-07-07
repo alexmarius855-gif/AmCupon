@@ -78,7 +78,7 @@ export default function ExtensiePage() {
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#8a6a1e] text-[#0f172a] py-16 px-4">
+        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#0f766e] text-[#0f172a] py-16 px-4">
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-[#14b8a6]/15 border border-[#14b8a6]/30 text-[#0f766e] text-xs font-bold px-4 py-1.5 rounded-full mb-6">
               ⏳ În curs de aprobare pe Chrome Web Store
@@ -159,7 +159,7 @@ export default function ExtensiePage() {
         </section>
 
         {/* CTA FINAL */}
-        <section className="bg-gradient-to-br from-[#0f766e] to-[#8a6a1e] py-16 px-4">
+        <section className="bg-gradient-to-br from-[#0f766e] to-[#0f766e] py-16 px-4">
           <div className="max-w-2xl mx-auto text-center text-[#0f172a]">
             <div className="text-5xl mb-4">🎟</div>
             <h2 className="text-2xl font-black mb-3">Fii primul care o instalează</h2>
