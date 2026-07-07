@@ -3,6 +3,7 @@
 import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import PromoCarousel, { type PromoBanner } from "./components/PromoCarousel";
 
 interface Promotie {
   nume: string;
@@ -663,26 +664,45 @@ export default function HomeClient({
         </div>
       </section>
 
-      {/* ─── BANNERE PARTENERI (stil Kuplio — creative reale 2Performant) ──── */}
-      {banners.length >= 2 && (
-        <section className="bg-[#F7F9FC] border-b border-[#e2e8f0] py-10 px-4">
-          <div className="max-w-7xl mx-auto">
-            <h2 className="text-lg md:text-xl font-black text-[#0f172a] mb-1">Promotii de la partenerii nostri</h2>
-            <p className="text-sm text-[#64748b] mb-6">Oferte active, direct de la magazine.</p>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-              {banners.map(b => (
-                <a key={b.id} href={b.landing_url} target="_blank" rel="sponsored noopener noreferrer"
-                  className="block rounded-xl overflow-hidden border border-[#e2e8f0] hover:border-[#14b8a6] transition-colors">
-                  <div className="aspect-[300/250] bg-[#ffffff] flex items-center justify-center">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={b.image_url} alt={b.name || b.merchant} className="max-w-full max-h-full object-contain" loading="lazy" />
-                  </div>
-                </a>
-              ))}
+      {/* ─── TOP PROMOTII — carusel de bannere mari (stil Kuplio, design AmCupon) ── */}
+      {!loading && (() => {
+        const promoBanners: PromoBanner[] = magazine
+          .filter(m => m.are_promotie && m.promotii && m.promotii.length > 0)
+          .map(m => {
+            const p = m.promotii[0];
+            const dm = (p.nume || "").match(/(\d+)\s*%/);
+            return {
+              magazin:  m.magazin,
+              nume:     numeAfisat(m.magazin),
+              logo:     m.logo_url,
+              discount: dm ? parseInt(dm[1]) : 0,
+              cod:      p.cod_cupon || undefined,
+              text:     p.nume || "",
+              url:      p.landing_page || m.url_afiliat || m.url,
+            };
+          })
+          .filter(b => b.discount >= 10 && b.discount <= 90)
+          .sort((a, b) => b.discount - a.discount)
+          .slice(0, 8);
+        if (promoBanners.length < 2) return null;
+        return (
+          <section className="bg-[#F7F9FC] border-b border-[#e2e8f0] py-10 px-4">
+            <div className="max-w-7xl mx-auto">
+              <div className="flex items-end justify-between mb-5 gap-3">
+                <div>
+                  <h2 className="text-lg md:text-2xl font-black text-[#0f172a]">TOP promotii</h2>
+                  <p className="text-sm text-[#64748b] mt-0.5">Cele mai mari reduceri active acum.</p>
+                </div>
+                <Link href="/oferte-azi" className="shrink-0 text-sm font-bold text-[#0d9488] hover:text-[#0f766e] whitespace-nowrap flex items-center gap-1">
+                  Afiseaza toate
+                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/></svg>
+                </Link>
+              </div>
+              <PromoCarousel banners={promoBanners} />
             </div>
-          </div>
-        </section>
-      )}
+          </section>
+        );
+      })()}
 
       {/* ─── BRAND MARQUEE — dovada vizuala a magazinelor reale ────────────── */}
       {!loading && (() => {
