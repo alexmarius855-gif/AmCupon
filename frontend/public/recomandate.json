@@ -18,15 +18,6 @@
   "oferta": "Pana la -75% la huse silicon Iphone + CADOU la fiecare comanda"
  },
  {
-  "magazin": "intimax.ro",
-  "nume": "Intimax",
-  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13590/medium/13590.png",
-  "categorie": "Marketplace",
-  "comision": 20.0,
-  "are_cod": false,
-  "oferta": "DIBLONG face valuri pe intimax.ro! 🌊"
- },
- {
   "magazin": "femieko.ro",
   "nume": "Femieko",
   "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/10996/medium/10996.png",
@@ -106,5 +97,14 @@
   "comision": 8.0,
   "are_cod": true,
   "oferta": "€5.00 off entire order"
+ },
+ {
+  "magazin": "bookzone.ro",
+  "nume": "Bookzone",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9309/medium/9309.png",
+  "categorie": "Cărți & Educație",
+  "comision": 10.0,
+  "are_cod": false,
+  "oferta": "Nou pe bookzone.ro: 1200 de titluri în engleză – Un adevărat festin li"
  }
 ]

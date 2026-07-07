@@ -52,7 +52,7 @@
     },
     "promo1": [
       {
-        "nume": "Summer Offers 19 iun - 6 iul",
+        "nume": "EPIC SALE",
         "cod_cupon": ""
       }
     ],
@@ -298,7 +298,7 @@
     },
     "promo1": [
       {
-        "nume": "Electro Weekend 3 - 6 iulie 2026",
+        "nume": "Campanie Stock Busters, 7-10 iulie",
         "cod_cupon": ""
       }
     ],
@@ -377,7 +377,7 @@
     },
     "promo1": [
       {
-        "nume": "Electro Weekend 3 - 6 iulie 2026",
+        "nume": "Campanie Stock Busters, 7-10 iulie",
         "cod_cupon": ""
       }
     ],
@@ -528,7 +528,7 @@
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2F"
     },
     "stats2": {
-      "promotii_active": 3,
+      "promotii_active": 1,
       "cashback": "vezi site",
       "logo": "https://www.google.com/s2/favicons?domain=farmec.ro&sz=128",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmec.ro"
@@ -551,14 +551,6 @@
       {
         "nume": "30% REDUCERE la produsele din gama Gerovital Luxury.",
         "cod_cupon": ""
-      },
-      {
-        "nume": "-25% la gamele Gerovital H3 Evolution",
-        "cod_cupon": ""
-      },
-      {
-        "nume": "-25% la Gama Equilibrium - 19.06.2026 - 06.07.2026",
-        "cod_cupon": ""
       }
     ],
     "faq": [
@@ -572,7 +564,7 @@
       },
       {
         "q": "Are Farmec coduri de reducere active?",
-        "a": "Da, Farmec are 3 oferte active pe AmCupon.ro in iulie 2026. Verificam zilnic."
+        "a": "Da, Farmec are 1 oferta activa pe AmCupon.ro in iulie 2026. Verificam zilnic."
       },
       {
         "q": "Unde gasesc cupoane pentru Drmax si Farmec?",
@@ -723,7 +715,7 @@
     },
     "promo1": [
       {
-        "nume": "Summer Offers 19 iun - 6 iul",
+        "nume": "EPIC SALE",
         "cod_cupon": ""
       }
     ],
