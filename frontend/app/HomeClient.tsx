@@ -370,7 +370,7 @@ export default function HomeClient({
           </nav>
 
           <button onClick={() => setMenuOpen(o => !o)}
-            className="md:hidden ml-auto p-2 rounded-xl hover:bg-[#efe7d6] transition-colors text-[#1e293b]" aria-label="Meniu">
+            className="md:hidden ml-auto p-2 rounded-xl hover:bg-[#e2e8f0] transition-colors text-[#1e293b]" aria-label="Meniu">
             {menuOpen ? (
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12"/>
@@ -1415,7 +1415,7 @@ export default function HomeClient({
                   </div>
                   <div className="p-5 flex-1 flex flex-col">
                     <span className="text-[10px] font-black text-[#0d9488] uppercase tracking-widest">{post.category}</span>
-                    <h3 className="font-black text-[#efe7d6] text-base mt-2 mb-2 line-clamp-2 group-hover:text-[#0d9488] transition-colors leading-snug tracking-tight">
+                    <h3 className="font-black text-[#0f172a] text-base mt-2 mb-2 line-clamp-2 group-hover:text-[#0d9488] transition-colors leading-snug tracking-tight">
                       {post.title}
                     </h3>
                     <p className="text-xs text-[#475569] line-clamp-2 flex-1 leading-relaxed">{post.excerpt}</p>
@@ -1461,7 +1461,7 @@ export default function HomeClient({
             {FAQ_ITEMS.map((item, i) => (
               <details key={i} className="group bg-[#ffffff] rounded-xl border border-[#cbd5e1] overflow-hidden">
                 <summary className="flex items-center justify-between gap-4 px-5 py-4 cursor-pointer list-none select-none hover:bg-[#e2e8f0]/50 transition-colors">
-                  <h3 className="font-bold text-[#efe7d6] text-sm sm:text-base leading-snug">{item.q}</h3>
+                  <h3 className="font-bold text-[#0f172a] text-sm sm:text-base leading-snug">{item.q}</h3>
                   <svg className="w-5 h-5 text-[#0d9488] shrink-0 transition-transform duration-200 group-open:rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4v16m8-8H4"/>
                   </svg>

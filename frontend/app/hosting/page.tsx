@@ -215,7 +215,7 @@ export default function HostingPage() {
                     </div>
                   </div>
                   <a href={h.url} target="_blank" rel="sponsored noopener noreferrer"
-                    className={`w-full text-center py-3 px-4 rounded-xl font-black text-sm text-white transition-all hover:-translate-y-0.5 shadow-lg ${h.rank === 1 ? "bg-[#0d9488] hover:bg-[#14b8a6] shadow-[#14b8a6]/20" : "bg-[#cbd5e1] hover:bg-[#94a3b8]"}`}>
+                    className={`w-full text-center py-3 px-4 rounded-xl font-black text-sm text-white transition-all hover:-translate-y-0.5 shadow-lg ${h.rank === 1 ? "bg-[#0d9488] hover:bg-[#14b8a6] shadow-[#14b8a6]/20" : "bg-[#334155] hover:bg-[#1e293b]"}`}>
                     Incearca {h.name} →
                   </a>
                 </div>

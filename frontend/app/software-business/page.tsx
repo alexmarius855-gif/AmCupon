@@ -121,7 +121,7 @@ export default function SoftwareBusinessPage() {
                     </div>
                   )}
                   <a href={m.url_afiliat} target="_blank" rel="sponsored noopener noreferrer"
-                    className={`mt-auto text-white text-sm font-bold py-2.5 rounded-lg text-center transition-all ${isFact ? "bg-[#0d9488] hover:bg-[#14b8a6]" : "bg-[#e2e8f0] hover:bg-[#cbd5e1] border border-[#cbd5e1]"}`}>
+                    className={`mt-auto text-white text-sm font-bold py-2.5 rounded-lg text-center transition-all ${isFact ? "bg-[#0d9488] hover:bg-[#14b8a6]" : "bg-[#334155] hover:bg-[#1e293b]"}`}>
                     {promo.cod_cupon ? `Cod: ${promo.cod_cupon}` : "Vezi oferta"} →
                   </a>
                 </div>

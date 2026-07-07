@@ -213,7 +213,7 @@ export default function EsimPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
-      <div className="min-h-screen bg-[#F7F9FC] text-[#efe7d6]">
+      <div className="min-h-screen bg-[#F7F9FC] text-[#0f172a]">
         {/* Hero */}
         <div className="bg-gradient-to-b from-[#ffffff]/40 to-[#F7F9FC] border-b border-[#e2e8f0]">
           <div className="max-w-5xl mx-auto px-4 py-14 text-center">

@@ -51,7 +51,7 @@ function parseCashback(comision: string): number {
 
 function ScorBar({ value, max = 100, color = "bg-[#0d9488]" }: { value: number; max?: number; color?: string }) {
   return (
-    <div className="h-2 bg-[#efe7d6] rounded-full overflow-hidden">
+    <div className="h-2 bg-[#e2e8f0] rounded-full overflow-hidden">
       <div className={`h-full ${color} rounded-full transition-all duration-700`} style={{ width: `${Math.min(100, (value / max) * 100)}%` }} />
     </div>
   );

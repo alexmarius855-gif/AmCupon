@@ -123,7 +123,7 @@ export default function Navbar() {
                 onFocus={() => { setFocused(true); if (results.length > 0) setShowDropdown(true); }}
                 onBlur={() => { setFocused(false); setTimeout(() => setShowDropdown(false), 160); }}
                 placeholder="Cauta: eMAG, Answear, Notino..."
-                className="w-full bg-[#e2e8f0] border border-[#cbd5e1] hover:border-[#94a3b8] focus:border-[#0d9488] focus:ring-2 focus:ring-[#0d9488]/20 text-[#efe7d6] placeholder-[#64748b] rounded-full pl-10 pr-10 py-2.5 text-sm focus:outline-none transition-all"
+                className="w-full bg-[#e2e8f0] border border-[#cbd5e1] hover:border-[#94a3b8] focus:border-[#0d9488] focus:ring-2 focus:ring-[#0d9488]/20 text-[#0f172a] placeholder-[#64748b] rounded-full pl-10 pr-10 py-2.5 text-sm focus:outline-none transition-all"
               />
               {search && (
                 <button type="button" onClick={() => { setSearch(""); setShowDropdown(false); inputRef.current?.focus(); }}
@@ -205,7 +205,7 @@ export default function Navbar() {
             </a>
           </div>
           <Link href="/extensie"
-            className="flex items-center gap-1.5 bg-[#cbd5e1] hover:bg-[#0d9488] text-white px-3.5 py-1.5 rounded-full text-xs font-bold transition-all hover:scale-105 duration-150">
+            className="flex items-center gap-1.5 bg-[#ccfbf1] hover:bg-[#0d9488] text-[#0f766e] hover:text-white border border-[#99f6e4] px-3.5 py-1.5 rounded-full text-xs font-bold transition-all hover:scale-105 duration-150">
             🧩 Extensie
           </Link>
         </nav>
@@ -229,7 +229,7 @@ export default function Navbar() {
             </svg>
             <input type="text" value={search} onChange={e => setSearch(e.target.value)}
               placeholder="Cauta magazin..."
-              className="w-full bg-[#e2e8f0] border border-[#cbd5e1] text-[#efe7d6] placeholder-[#64748b] rounded-full pl-9 pr-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#0d9488]" />
+              className="w-full bg-[#e2e8f0] border border-[#cbd5e1] text-[#0f172a] placeholder-[#64748b] rounded-full pl-9 pr-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#0d9488]" />
           </form>
           <nav className="space-y-0.5">
             {mobileLinks.map(l => (

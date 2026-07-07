@@ -257,7 +257,7 @@ function DealCard({ m, rank }: { m: Magazin; rank?: number }) {
           </div>
         </div>
         {/* Name + category */}
-        <h3 className="font-black text-[#efe7d6] text-sm group-hover:text-[#0d9488] transition-colors leading-tight tracking-tight">
+        <h3 className="font-black text-[#0f172a] text-sm group-hover:text-[#0d9488] transition-colors leading-tight tracking-tight">
           {name}
         </h3>
         <p className="text-[10px] text-[#475569] mt-0.5">{m.categorie}</p>

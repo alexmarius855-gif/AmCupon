@@ -174,7 +174,7 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
             <button key={cat.key} onClick={() => setCategorie(cat.key)}
               className={`px-3 py-1.5 rounded-full text-xs font-bold transition-all ${
                 categorie === cat.key
-                  ? "bg-[#efe7d6] text-[#ffffff]"
+                  ? "bg-[#0d9488] text-[#ffffff]"
                   : "bg-[#e2e8f0]/60 border border-[#cbd5e1] text-[#475569] hover:border-[#64748b] hover:text-[#1e293b]"
               }`}>
               {cat.label}

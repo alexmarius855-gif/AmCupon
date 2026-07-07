@@ -114,14 +114,14 @@ export default function Footer() {
   if (pathname === "/") return null;
 
   return (
-    <footer className="bg-[#070a0f] text-[#475569] border-t border-[#e2e8f0]/60 mt-auto">
+    <footer className="bg-white text-[#475569] border-t border-[#e2e8f0] mt-auto">
 
       {/* Facebook Follow banner */}
       <div className="border-b border-[#e2e8f0]/60 bg-[#1877F2]/10">
         <div className="max-w-7xl mx-auto px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl bg-[#1877F2] flex items-center justify-center shrink-0">
-              <svg className="w-5 h-5 text-[#0f172a]" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
               </svg>
             </div>
