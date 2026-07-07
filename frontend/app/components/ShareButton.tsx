@@ -67,16 +67,16 @@ export default function ShareButton({
     : "flex items-center gap-1.5 text-sm px-3 py-2 rounded-xl";
 
   const btnColors = isDark
-    ? "border border-[#37301f] text-[#a89a78] hover:border-[#8c8064] hover:text-[#dcd0b8]"
-    : "border border-gray-300 text-gray-500 hover:border-[#d8c091] hover:text-[#d8c091]";
+    ? "border border-[#cbd5e1] text-[#475569] hover:border-[#64748b] hover:text-[#1e293b]"
+    : "border border-gray-300 text-gray-500 hover:border-[#0d9488] hover:text-[#0d9488]";
 
   const dropdownBg = isDark
-    ? "bg-[#26211a] border-[#37301f]"
+    ? "bg-[#e2e8f0] border-[#cbd5e1]"
     : "bg-white border-gray-200";
 
-  const itemHover = isDark ? "hover:bg-[#37301f]" : "hover:bg-gray-50";
-  const dividerColor = isDark ? "border-[#37301f]" : "border-gray-200";
-  const copyColor = isDark ? "text-[#c8bda2]" : "text-gray-600";
+  const itemHover = isDark ? "hover:bg-[#cbd5e1]" : "hover:bg-gray-50";
+  const dividerColor = isDark ? "border-[#cbd5e1]" : "border-gray-200";
+  const copyColor = isDark ? "text-[#334155]" : "text-gray-600";
 
   return (
     <div className="relative inline-block">
@@ -111,7 +111,7 @@ export default function ShareButton({
             onClick={() => setOpen(false)}
           />
           {/* dropdown */}
-          <div className={`absolute right-0 top-full mt-1.5 z-50 ${dropdownBg} border rounded-2xl shadow-2xl shadow-black/20 p-2 min-w-[170px]`}>
+          <div className={`absolute right-0 top-full mt-1.5 z-50 ${dropdownBg} border rounded-xl shadow-2xl shadow-slate-300/60 p-2 min-w-[170px]`}>
             <a
               href={whatsappUrl}
               target="_blank"

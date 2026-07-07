@@ -17,7 +17,7 @@ function Stele({ value, onChange }: { value: number; onChange?: (v: number) => v
           className={`text-2xl transition-transform ${onChange ? "hover:scale-110 cursor-pointer" : "cursor-default"}`}
           aria-label={`${n} stele`}
         >
-          <span className={(hover || value) >= n ? "text-[#e3d1a6]" : "text-[#dcd0b8]"}>&#9733;</span>
+          <span className={(hover || value) >= n ? "text-[#0f766e]" : "text-[#1e293b]"}>&#9733;</span>
         </button>
       ))}
     </div>
@@ -83,15 +83,15 @@ export default function ReviewSection({ magazin }: { magazin: string }) {
     : null;
 
   return (
-    <section className="mt-10 pt-8 border-t border-[#26211a]">
+    <section className="mt-10 pt-8 border-t border-[#e2e8f0]">
       <div className="flex items-center justify-between mb-6">
         <div>
-          <h2 className="text-lg font-black text-white">Recenzii cumparatori</h2>
+          <h2 className="text-lg font-black text-[#0f172a]">Recenzii cumparatori</h2>
           {medieStele && (
             <div className="flex items-center gap-2 mt-1">
-              <span className="text-2xl font-black text-[#e3d1a6]">{medieStele}</span>
+              <span className="text-2xl font-black text-[#0f766e]">{medieStele}</span>
               <Stele value={Math.round(Number(medieStele))} />
-              <span className="text-xs text-[#8c8064]">({reviews.length} {reviews.length === 1 ? "recenzie" : "recenzii"})</span>
+              <span className="text-xs text-[#64748b]">({reviews.length} {reviews.length === 1 ? "recenzie" : "recenzii"})</span>
             </div>
           )}
         </div>
@@ -101,53 +101,53 @@ export default function ReviewSection({ magazin }: { magazin: string }) {
       {loading ? (
         <div className="space-y-3 mb-8">
           {[1, 2].map(i => (
-            <div key={i} className="bg-[#15120c] rounded-2xl p-4 animate-pulse">
-              <div className="h-3 w-24 bg-[#26211a] rounded mb-2" />
-              <div className="h-3 w-full bg-[#26211a] rounded mb-1" />
-              <div className="h-3 w-3/4 bg-[#26211a] rounded" />
+            <div key={i} className="bg-[#ffffff] rounded-xl p-4 animate-pulse">
+              <div className="h-3 w-24 bg-[#e2e8f0] rounded mb-2" />
+              <div className="h-3 w-full bg-[#e2e8f0] rounded mb-1" />
+              <div className="h-3 w-3/4 bg-[#e2e8f0] rounded" />
             </div>
           ))}
         </div>
       ) : reviews.length > 0 ? (
         <div className="space-y-3 mb-8">
           {reviews.map(r => (
-            <div key={r.id} className="bg-[#15120c] border border-[#26211a] rounded-2xl p-4">
+            <div key={r.id} className="bg-[#ffffff] border border-[#e2e8f0] rounded-xl p-4">
               <div className="flex items-start justify-between gap-2 mb-2">
                 <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-full bg-[#b8912e]/20 flex items-center justify-center text-sm font-black text-[#d8c091]">
+                  <div className="w-8 h-8 rounded-full bg-[#0d9488]/20 flex items-center justify-center text-sm font-black text-[#0d9488]">
                     {r.nume.charAt(0).toUpperCase()}
                   </div>
                   <div>
-                    <p className="text-sm font-bold text-white">{r.nume}</p>
-                    <p className="text-[10px] text-[#8c8064]">{formatData(r.created_at)}</p>
+                    <p className="text-sm font-bold text-[#0f172a]">{r.nume}</p>
+                    <p className="text-[10px] text-[#64748b]">{formatData(r.created_at)}</p>
                   </div>
                 </div>
                 <Stele value={r.stele} />
               </div>
-              <p className="text-sm text-[#a89a78] leading-relaxed">{r.text}</p>
+              <p className="text-sm text-[#475569] leading-relaxed">{r.text}</p>
             </div>
           ))}
         </div>
       ) : (
-        <p className="text-sm text-[#8c8064] italic mb-8">Fii primul care lasa o recenzie pentru acest magazin.</p>
+        <p className="text-sm text-[#64748b] italic mb-8">Fii primul care lasa o recenzie pentru acest magazin.</p>
       )}
 
       {/* Formular */}
-      <div className="bg-[#15120c] border border-[#26211a] rounded-2xl p-5">
-        <h3 className="font-black text-white text-sm mb-4">Lasa o recenzie</h3>
+      <div className="bg-[#ffffff] border border-[#e2e8f0] rounded-xl p-5">
+        <h3 className="font-black text-[#0f172a] text-sm mb-4">Lasa o recenzie</h3>
         {trimis ? (
           <div className="text-center py-4">
             <div className="text-3xl mb-2">&#9989;</div>
-            <p className="font-bold text-white text-sm">Multumim pentru recenzie!</p>
-            <p className="text-xs text-[#a89a78] mt-1">Va aparea dupa aprobare (de obicei in 24h).</p>
-            <button onClick={() => setTrimis(false)} className="mt-3 text-xs text-[#d8c091] hover:underline">
+            <p className="font-bold text-[#0f172a] text-sm">Multumim pentru recenzie!</p>
+            <p className="text-xs text-[#475569] mt-1">Va aparea dupa aprobare (de obicei in 24h).</p>
+            <button onClick={() => setTrimis(false)} className="mt-3 text-xs text-[#0d9488] hover:underline">
               Adauga alta recenzie
             </button>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-3">
             <div>
-              <p className="text-xs font-semibold text-[#a89a78] mb-1.5">Rating *</p>
+              <p className="text-xs font-semibold text-[#475569] mb-1.5">Rating *</p>
               <Stele value={stele} onChange={setStele} />
             </div>
             <div>
@@ -157,7 +157,7 @@ export default function ReviewSection({ magazin }: { magazin: string }) {
                 value={nume}
                 onChange={e => setNume(e.target.value)}
                 maxLength={50}
-                className="w-full bg-[#26211a] border border-[#37301f] text-white placeholder:text-[#8c8064] rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#c9a63e]"
+                className="w-full bg-[#e2e8f0] border border-[#cbd5e1] text-[#0f172a] placeholder:text-[#64748b] rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#14b8a6]"
               />
             </div>
             <div>
@@ -168,19 +168,19 @@ export default function ReviewSection({ magazin }: { magazin: string }) {
                 rows={3}
                 maxLength={500}
                 required
-                className="w-full bg-[#26211a] border border-[#37301f] text-white placeholder:text-[#8c8064] rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#c9a63e] resize-none"
+                className="w-full bg-[#e2e8f0] border border-[#cbd5e1] text-[#0f172a] placeholder:text-[#64748b] rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#14b8a6] resize-none"
               />
-              <p className="text-[10px] text-[#8c8064] text-right mt-0.5">{text.length}/500</p>
+              <p className="text-[10px] text-[#64748b] text-right mt-0.5">{text.length}/500</p>
             </div>
             {eroare && <p className="text-xs text-red-400 font-medium">{eroare}</p>}
             <button
               type="submit"
               disabled={submitting}
-              className="w-full bg-[#b8912e] hover:bg-[#c9a63e] disabled:bg-[#5a4718] text-white font-bold py-2.5 rounded-xl text-sm transition-colors"
+              className="w-full bg-[#0d9488] hover:bg-[#14b8a6] disabled:bg-[#5a4718] text-white font-bold py-2.5 rounded-xl text-sm transition-colors"
             >
               {submitting ? "Se trimite..." : "Trimite recenzia"}
             </button>
-            <p className="text-[10px] text-[#8c8064] text-center">
+            <p className="text-[10px] text-[#64748b] text-center">
               Recenziile sunt moderate inainte de publicare.
             </p>
           </form>

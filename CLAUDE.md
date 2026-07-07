@@ -285,8 +285,16 @@ Fiecare pagină dinamică are două fișiere:
 
 **Excepție**: `app/page.tsx` (homepage) este full client — face `fetch("/output.json")` în `useEffect` pentru date fără rebuild.
 
-### Tema vizuala — dark indigo/cyan (din 18-19.06.2026)
-**Standard pentru orice cod nou**: `bg-slate-950` (page wrapper), `bg-slate-900` (carduri), `border-slate-800` (borduri), accent `indigo-500/600` + `cyan-400`. **NU folosi orange — interzis explicit** (preferință Alex). Paleta veche orange + roz/mov/verde a fost complet înlocuită (commit `b8f9f29` + `7ea8b1f`). Pentru migrări similare la scară (10+ fișiere), folosește un script regex dedicat (vezi `scripts/retheme_pages.js` ca model — are protecție pentru logo box-uri albe și lookahead `(?!\d)` ca să nu corupă clase gen `bg-rose-500` în `bg-slate-9000`), nu editare manuală fișier cu fișier.
+### Tema vizuala — LIGHT / clean / marketplace (din 06.07.2026)
+**Standard ACTUAL pentru orice cod nou** (decizie Alex, redesign inspirat structural de Kuplio.ro dar identitate originala):
+- **background pagina**: `#F7F9FC` (gri foarte deschis) · **carduri**: `#ffffff` alb · **border card**: `#e2e8f0`/`#E5E7EB`
+- **text principal**: `#0f172a` (near-black) · text secundar `#334155`/`#475569` · muted `#64748b`
+- **accent principal (teal)**: `#14b8a6` / `#0d9488` / `#0f766e` (butoane, linkuri, medalioane)
+- **accent promo (rosu)**: `#ef4444` (urgenta/expira) · **verificat/succes**: `emerald`
+- **radius max 12px** (`rounded-xl`) — NU folosi `rounded-2xl`/`rounded-3xl`
+- **INTERZIS**: tema aurie/sampanie/dark (`#0b0a07`, `#15120c`, `#c9a63e`, `#b8912e` etc.) — ELIMINATA complet 06.07. NU reintroduce auriu sau dark.
+- **Istoric teme** (sa nu se reintroduca din greseala): orange (initial) → indigo/cyan dark → auriu/sampanie dark → **LIGHT/teal (actual)**.
+- Migrari la scara: script regex dedicat (vezi `scripts/retheme_pages.js` ca model — protectie logo box-uri albe), nu editare manuala fisier cu fisier. `.dark` overrides din `globals.css` sunt legacy/dormante (html NU are clasa `.dark`) — tema vine din hexuri hardcodate in pagini.
 
 ### Data loading
 - Server pages: `fs.readFileSync(path.join(process.cwd(), "public", "output.json"))`

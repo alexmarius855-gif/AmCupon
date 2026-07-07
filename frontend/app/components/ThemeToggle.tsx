@@ -37,7 +37,7 @@ export default function ThemeToggle({ className = "" }: { className?: string }) 
       title={dark ? "Mod luminos" : "Mod inchis"}
       className={`w-9 h-9 rounded-xl flex items-center justify-center transition-colors
         ${dark
-          ? "bg-[#37301f] hover:bg-[#473d28] text-yellow-300"
+          ? "bg-[#cbd5e1] hover:bg-[#94a3b8] text-yellow-300"
           : "bg-gray-100 hover:bg-gray-200 text-gray-600"
         } ${className}`}
     >

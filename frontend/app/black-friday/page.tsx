@@ -69,7 +69,7 @@ function numeAfisat(magazin: string): string {
     .join(" ");
 }
 
-const CULORI = ["bg-[#b8912e]"];
+const CULORI = ["bg-[#0d9488]"];
 
 const TOP_BF_MAGAZINE = [
   "emag.ro", "fashiondays.ro", "altex.ro", "dedeman.ro", "notino.ro",
@@ -105,12 +105,12 @@ export default function BlackFridayPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(bfJsonLd) }}
       />
 
-      <div className="min-h-screen bg-gray-950 text-white">
+      <div className="min-h-screen bg-gray-950 text-[#0f172a]">
         {/* Header */}
 
         {/* Breadcrumb */}
         <nav className="max-w-6xl mx-auto px-4 pt-4 pb-0 text-xs text-gray-500 flex items-center gap-1">
-          <Link href="/" className="hover:text-[#d8c091] transition-colors">Acasă</Link>
+          <Link href="/" className="hover:text-[#0d9488] transition-colors">Acasă</Link>
           <span className="mx-1">/</span>
           <span className="text-gray-300">Black Friday {an}</span>
         </nav>
@@ -123,7 +123,7 @@ export default function BlackFridayPage() {
 
           <h1 className="text-4xl md:text-5xl font-black mb-4 leading-tight">
             Black Friday {an}{" "}
-            <span className="text-[#d8c091]">România</span>
+            <span className="text-[#0d9488]">România</span>
           </h1>
           <p className="text-gray-400 text-lg mb-8 max-w-xl mx-auto">
             Toate ofertele și codurile de reducere Black Friday verificate —
@@ -137,8 +137,8 @@ export default function BlackFridayPage() {
               { val: `${totalOferte}+`, label: "Oferte active" },
               { val: `${totalCoduri}+`, label: "Coduri reducere" },
             ].map((s) => (
-              <div key={s.label} className="bg-gray-900 border border-gray-800 rounded-2xl py-4 px-3">
-                <div className="text-2xl font-black text-[#d8c091]">{s.val}</div>
+              <div key={s.label} className="bg-gray-900 border border-gray-800 rounded-xl py-4 px-3">
+                <div className="text-2xl font-black text-[#0d9488]">{s.val}</div>
                 <div className="text-xs text-gray-400 mt-0.5">{s.label}</div>
               </div>
             ))}
@@ -177,10 +177,10 @@ export default function BlackFridayPage() {
                 <a
                   key={m.magazin}
                   href={`/cod-reducere/${m.magazin}`}
-                  className="group bg-gray-900 border border-gray-800 hover:border-[#c9a63e] rounded-2xl p-5 transition-all hover:shadow-lg hover:shadow-[#c9a63e]/10"
+                  className="group bg-gray-900 border border-gray-800 hover:border-[#14b8a6] rounded-xl p-5 transition-all hover:shadow-lg hover:shadow-[#14b8a6]/10"
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`w-12 h-12 rounded-xl ${culoare} flex items-center justify-center text-white font-black text-xl shrink-0`}>
+                    <div className={`w-12 h-12 rounded-xl ${culoare} flex items-center justify-center text-[#0f172a] font-black text-xl shrink-0`}>
                       {m.logo_url ? (
                         // eslint-disable-next-line @next/next/no-img-element
                         <img
@@ -196,9 +196,9 @@ export default function BlackFridayPage() {
 
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 mb-1 flex-wrap">
-                        <span className="font-bold text-white text-sm">{nume}</span>
+                        <span className="font-bold text-[#0f172a] text-sm">{nume}</span>
                         {coduri.length > 0 && (
-                          <span className="text-xs font-bold bg-[#b8912e] text-white px-1.5 py-0.5 rounded-full shrink-0">
+                          <span className="text-xs font-bold bg-[#0d9488] text-white px-1.5 py-0.5 rounded-full shrink-0">
                             {coduri.length} COD
                           </span>
                         )}
@@ -219,7 +219,7 @@ export default function BlackFridayPage() {
 
                   <div className="mt-3 flex items-center justify-between">
                     <span className="text-xs text-gray-500">{m.categorie}</span>
-                    <span className="text-xs text-[#d8c091] group-hover:text-[#e3d1a6] font-semibold transition-colors">
+                    <span className="text-xs text-[#0d9488] group-hover:text-[#0f766e] font-semibold transition-colors">
                       Vezi ofertele →
                     </span>
                   </div>
@@ -232,12 +232,12 @@ export default function BlackFridayPage() {
         {/* SEO Content */}
         <section className="bg-gray-900 border-t border-gray-800">
           <div className="max-w-3xl mx-auto px-4 py-12">
-            <h2 className="text-2xl font-black text-white mb-6">
+            <h2 className="text-2xl font-black text-[#0f172a] mb-6">
               Ghid Black Friday {an} România
             </h2>
             <div className="space-y-6 text-gray-400 text-sm leading-relaxed">
               <div>
-                <h3 className="text-white font-bold mb-2">Când are loc Black Friday {an}?</h3>
+                <h3 className="text-[#0f172a] font-bold mb-2">Când are loc Black Friday {an}?</h3>
                 <p>
                   Black Friday {an} are loc în luna noiembrie, în ultima vineri a lunii. Însă mulți
                   retaileri români (eMAG, Altex, Dedeman, FashionDays) lansează oferte cu săptămâni
@@ -246,7 +246,7 @@ export default function BlackFridayPage() {
                 </p>
               </div>
               <div>
-                <h3 className="text-white font-bold mb-2">Cum obții cele mai mari reduceri de Black Friday?</h3>
+                <h3 className="text-[#0f172a] font-bold mb-2">Cum obții cele mai mari reduceri de Black Friday?</h3>
                 <ul className="list-disc list-inside space-y-1">
                   <li>Adaugă produsele la Favorite sau în coș înainte de BF</li>
                   <li>Compară prețul curent cu prețul de dinainte de BF</li>
@@ -256,7 +256,7 @@ export default function BlackFridayPage() {
                 </ul>
               </div>
               <div>
-                <h3 className="text-white font-bold mb-2">Ce magazine au Black Friday în România?</h3>
+                <h3 className="text-[#0f172a] font-bold mb-2">Ce magazine au Black Friday în România?</h3>
                 <p>
                   Cele mai mari magazine online participă la Black Friday: eMAG, Altex, Dedeman,
                   FashionDays, Notino, Answear, Noriel, Decathlon, Elefant și multe altele.
@@ -270,9 +270,9 @@ export default function BlackFridayPage() {
 
         <footer className="border-t border-gray-800 py-6 text-center text-xs text-gray-600">
           © {an} AmCupon.ro ·{" "}
-          <Link href="/" className="hover:text-[#d8c091]">Toate reducerile</Link>
+          <Link href="/" className="hover:text-[#0d9488]">Toate reducerile</Link>
           {" · "}
-          <Link href="/contact" className="hover:text-[#d8c091]">Contact</Link>
+          <Link href="/contact" className="hover:text-[#0d9488]">Contact</Link>
         </footer>
       </div>
     </>

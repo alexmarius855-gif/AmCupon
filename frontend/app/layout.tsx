@@ -77,8 +77,8 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#b8912e",
-  colorScheme: "light dark",
+  themeColor: "#0d9488",
+  colorScheme: "light",
 };
 
 const siteJsonLd = {
@@ -129,8 +129,8 @@ export default function RootLayout({
       <head>
         {/* Profitshare site verification */}
         <meta name="profitshareid" content="55a94904302585d3a4d01658d993fd4d" />
-        {/* Anti-flash dark mode — ruleaza inainte de orice render */}
-        <script dangerouslySetInnerHTML={{ __html: `(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(t===null&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.classList.add('dark')}}catch(e){}})();` }} />
+        {/* Tema light unica — curata clasa dark ramasa in localStorage de la tema veche */}
+        <script dangerouslySetInnerHTML={{ __html: `(function(){try{document.documentElement.classList.remove('dark');localStorage.removeItem('theme')}catch(e){}})();` }} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}

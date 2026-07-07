@@ -123,23 +123,23 @@ export default async function ComparatiePage(
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <div className="min-h-screen bg-[#0b0a07] text-white">
+      <div className="min-h-screen bg-[#F7F9FC] text-[#0f172a]">
         <div className="max-w-4xl mx-auto px-4 py-10">
 
           {/* Breadcrumb */}
-          <nav className="text-sm text-[#a89a78] mb-6 flex items-center gap-2">
-            <Link href="/" className="hover:text-[#d8c091]">Acasa</Link>
+          <nav className="text-sm text-[#475569] mb-6 flex items-center gap-2">
+            <Link href="/" className="hover:text-[#0d9488]">Acasa</Link>
             <span>/</span>
-            <Link href="/comparatii" className="hover:text-[#d8c091]">Comparatii</Link>
+            <Link href="/comparatii" className="hover:text-[#0d9488]">Comparatii</Link>
             <span>/</span>
-            <span className="text-white">{c.n1} vs {c.n2}</span>
+            <span className="text-[#0f172a]">{c.n1} vs {c.n2}</span>
           </nav>
 
           {/* Hero */}
-          <div className="bg-gradient-to-br from-[#2e2410]/40 to-[#15120c] border border-[#c9a63e]/20 rounded-2xl p-8 mb-8">
-            <p className="text-[#e3d1a6] text-sm font-medium mb-2 uppercase tracking-wider">{c.categorie}</p>
-            <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">{c.titlu_h1}</h1>
-            <p className="text-[#c8bda2] text-lg leading-relaxed">{c.intro}</p>
+          <div className="bg-gradient-to-br from-[#2e2410]/40 to-[#ffffff] border border-[#14b8a6]/20 rounded-xl p-8 mb-8">
+            <p className="text-[#0f766e] text-sm font-medium mb-2 uppercase tracking-wider">{c.categorie}</p>
+            <h1 className="text-3xl md:text-4xl font-bold text-[#0f172a] mb-4">{c.titlu_h1}</h1>
+            <p className="text-[#334155] text-lg leading-relaxed">{c.intro}</p>
           </div>
 
           {/* Tabel comparatie rapida */}
@@ -148,30 +148,30 @@ export default async function ComparatiePage(
               { n: c.n1, stats: c.stats1, promo: c.promo1, slug: c.m1_slug },
               { n: c.n2, stats: c.stats2, promo: c.promo2, slug: c.m2_slug },
             ].map((side, i) => (
-              <div key={i} className="bg-[#15120c] border border-[#26211a] rounded-xl p-5">
+              <div key={i} className="bg-[#ffffff] border border-[#e2e8f0] rounded-xl p-5">
                 {side.stats.logo && (
                   <img src={side.stats.logo} alt={side.n} className="h-10 object-contain mb-3" />
                 )}
-                <h2 className="text-white font-bold text-lg mb-3">{side.n}</h2>
+                <h2 className="text-[#0f172a] font-bold text-lg mb-3">{side.n}</h2>
                 <div className="space-y-2 text-sm mb-4">
                   <div className="flex justify-between">
-                    <span className="text-[#a89a78]">Promotii active</span>
-                    <span className={side.stats.promotii_active > 0 ? "text-[#d8c091] font-semibold" : "text-[#8c8064]"}>
+                    <span className="text-[#475569]">Promotii active</span>
+                    <span className={side.stats.promotii_active > 0 ? "text-[#0d9488] font-semibold" : "text-[#64748b]"}>
                       {side.stats.promotii_active > 0 ? `${side.stats.promotii_active} oferte` : "Nicio oferta"}
                     </span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-[#a89a78]">Cashback</span>
-                    <span className="text-[#e3d1a6] font-semibold">{side.stats.cashback}</span>
+                    <span className="text-[#475569]">Cashback</span>
+                    <span className="text-[#0f766e] font-semibold">{side.stats.cashback}</span>
                   </div>
                 </div>
                 {side.promo.length > 0 && (
                   <div className="mb-4 space-y-2">
                     {side.promo.map((p, j) => (
-                      <div key={j} className="bg-[#26211a] rounded-lg px-3 py-2">
-                        <p className="text-white text-xs font-medium line-clamp-2">{p.nume}</p>
+                      <div key={j} className="bg-[#e2e8f0] rounded-lg px-3 py-2">
+                        <p className="text-[#0f172a] text-xs font-medium line-clamp-2">{p.nume}</p>
                         {p.cod_cupon && (
-                          <p className="text-[#d8c091] text-xs font-mono mt-1">COD: {p.cod_cupon}</p>
+                          <p className="text-[#0d9488] text-xs font-mono mt-1">COD: {p.cod_cupon}</p>
                         )}
                       </div>
                     ))}
@@ -179,7 +179,7 @@ export default async function ComparatiePage(
                 )}
                 <Link
                   href={`/cod-reducere/${side.slug}`}
-                  className="block w-full text-center bg-[#b8912e] hover:bg-[#c9a63e] text-white text-sm font-semibold py-2.5 rounded-lg transition-colors"
+                  className="block w-full text-center bg-[#0d9488] hover:bg-[#14b8a6] text-white text-sm font-semibold py-2.5 rounded-lg transition-colors"
                 >
                   Coduri {side.n}
                 </Link>
@@ -188,8 +188,8 @@ export default async function ComparatiePage(
           </div>
 
           {/* Tabel detaliat */}
-          <div className="bg-[#15120c] border border-[#26211a] rounded-xl overflow-hidden mb-8">
-            <div className="grid grid-cols-3 bg-[#26211a] px-4 py-3 text-sm font-semibold text-[#c8bda2]">
+          <div className="bg-[#ffffff] border border-[#e2e8f0] rounded-xl overflow-hidden mb-8">
+            <div className="grid grid-cols-3 bg-[#e2e8f0] px-4 py-3 text-sm font-semibold text-[#334155]">
               <span>Criteriu</span>
               <span className="text-center">{c.n1}</span>
               <span className="text-center">{c.n2}</span>
@@ -197,33 +197,33 @@ export default async function ComparatiePage(
             {c.puncte.map((p, i) => (
               <div
                 key={i}
-                className={`grid grid-cols-3 px-4 py-3 text-sm border-t border-[#26211a] ${i % 2 === 0 ? "" : "bg-[#15120c]/50"}`}
+                className={`grid grid-cols-3 px-4 py-3 text-sm border-t border-[#e2e8f0] ${i % 2 === 0 ? "" : "bg-[#ffffff]/50"}`}
               >
-                <span className="text-[#a89a78] font-medium">{p.aspect}</span>
-                <span className="text-center text-white">{p.v1}</span>
-                <span className="text-center text-white">{p.v2}</span>
+                <span className="text-[#475569] font-medium">{p.aspect}</span>
+                <span className="text-center text-[#0f172a]">{p.v1}</span>
+                <span className="text-center text-[#0f172a]">{p.v2}</span>
               </div>
             ))}
           </div>
 
           {/* Verdict */}
           <div className="grid md:grid-cols-2 gap-4 mb-10">
-            <div className="bg-[#2e2410]/20 border border-[#c9a63e]/30 rounded-xl p-5">
-              <p className="text-[#e3d1a6] font-bold text-sm mb-2 uppercase tracking-wide">Alege {c.n1} daca...</p>
-              <p className="text-[#c8bda2] text-sm leading-relaxed">{c.verdict_m1}</p>
+            <div className="bg-[#2e2410]/20 border border-[#14b8a6]/30 rounded-xl p-5">
+              <p className="text-[#0f766e] font-bold text-sm mb-2 uppercase tracking-wide">Alege {c.n1} daca...</p>
+              <p className="text-[#334155] text-sm leading-relaxed">{c.verdict_m1}</p>
               <Link
                 href={`/cod-reducere/${c.m1_slug}`}
-                className="mt-4 block text-center bg-[#b8912e] hover:bg-[#c9a63e] text-white text-sm font-semibold py-2.5 rounded-lg transition-colors"
+                className="mt-4 block text-center bg-[#0d9488] hover:bg-[#14b8a6] text-white text-sm font-semibold py-2.5 rounded-lg transition-colors"
               >
                 Vezi oferte {c.n1}
               </Link>
             </div>
-            <div className="bg-[#2e2410]/20 border border-[#c9a63e]/30 rounded-xl p-5">
-              <p className="text-[#e3d1a6] font-bold text-sm mb-2 uppercase tracking-wide">Alege {c.n2} daca...</p>
-              <p className="text-[#c8bda2] text-sm leading-relaxed">{c.verdict_m2}</p>
+            <div className="bg-[#2e2410]/20 border border-[#14b8a6]/30 rounded-xl p-5">
+              <p className="text-[#0f766e] font-bold text-sm mb-2 uppercase tracking-wide">Alege {c.n2} daca...</p>
+              <p className="text-[#334155] text-sm leading-relaxed">{c.verdict_m2}</p>
               <Link
                 href={`/cod-reducere/${c.m2_slug}`}
-                className="mt-4 block text-center bg-[#b8912e] hover:bg-[#c9a63e] text-white text-sm font-semibold py-2.5 rounded-lg transition-colors"
+                className="mt-4 block text-center bg-[#0d9488] hover:bg-[#14b8a6] text-white text-sm font-semibold py-2.5 rounded-lg transition-colors"
               >
                 Vezi oferte {c.n2}
               </Link>
@@ -232,12 +232,12 @@ export default async function ComparatiePage(
 
           {/* FAQ */}
           <div className="mb-10">
-            <h2 className="text-xl font-bold text-white mb-5">Intrebari frecvente</h2>
+            <h2 className="text-xl font-bold text-[#0f172a] mb-5">Intrebari frecvente</h2>
             <div className="space-y-4">
               {c.faq.map((f, i) => (
-                <div key={i} className="bg-[#15120c] border border-[#26211a] rounded-xl p-5">
-                  <h3 className="text-white font-semibold mb-2">{f.q}</h3>
-                  <p className="text-[#a89a78] text-sm leading-relaxed">{f.a}</p>
+                <div key={i} className="bg-[#ffffff] border border-[#e2e8f0] rounded-xl p-5">
+                  <h3 className="text-[#0f172a] font-semibold mb-2">{f.q}</h3>
+                  <p className="text-[#475569] text-sm leading-relaxed">{f.a}</p>
                 </div>
               ))}
             </div>
@@ -245,7 +245,7 @@ export default async function ComparatiePage(
 
           {/* Back link */}
           <div className="text-center">
-            <Link href="/comparatii" className="text-[#d8c091] hover:text-[#e3d1a6] text-sm font-medium">
+            <Link href="/comparatii" className="text-[#0d9488] hover:text-[#0f766e] text-sm font-medium">
               ← Toate comparatiile magazine
             </Link>
           </div>

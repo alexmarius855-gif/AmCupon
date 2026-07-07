@@ -26,41 +26,41 @@ const TOP_CADOURI = [
 const CAT_CADOURI = ["toys","gifts","flower","beauty","fashion","jewelry","books","kids"];
 
 const OCAZII = [
-  { emoji:"🎂", label:"Ziua de naștere", culoare:"bg-[#c9a63e] text-[#e3d1a6]" },
+  { emoji:"🎂", label:"Ziua de naștere", culoare:"bg-[#14b8a6] text-[#0f766e]" },
   { emoji:"💕", label:"Valentine's Day", culoare:"bg-red-100 text-red-700" },
-  { emoji:"🎄", label:"Crăciun", href:"/craciun", culoare:"bg-green-100 text-[#e3d1a6]" },
-  { emoji:"👩", label:"8 Martie", culoare:"bg-[#c9a63e] text-[#e3d1a6]" },
-  { emoji:"🐣", label:"Paște", culoare:"bg-yellow-100 text-[#e3d1a6]" },
-  { emoji:"👫", label:"Aniversare", culoare:"bg-[#c9a63e] text-[#e3d1a6]" },
-  { emoji:"🎓", label:"Absolvire", culoare:"bg-[#c9a63e] text-[#e3d1a6]" },
-  { emoji:"🏡", label:"Inaugurare casă", culoare:"bg-emerald-100 text-[#e3d1a6]" },
+  { emoji:"🎄", label:"Crăciun", href:"/craciun", culoare:"bg-green-100 text-[#0f766e]" },
+  { emoji:"👩", label:"8 Martie", culoare:"bg-[#14b8a6] text-[#0f766e]" },
+  { emoji:"🐣", label:"Paște", culoare:"bg-yellow-100 text-[#0f766e]" },
+  { emoji:"👫", label:"Aniversare", culoare:"bg-[#14b8a6] text-[#0f766e]" },
+  { emoji:"🎓", label:"Absolvire", culoare:"bg-[#14b8a6] text-[#0f766e]" },
+  { emoji:"🏡", label:"Inaugurare casă", culoare:"bg-emerald-100 text-[#0f766e]" },
 ];
 
 const IDEI_PER_PROFIL = [
   {
-    profil: "👩 Cadouri pentru ea", culoare: "bg-[#15120c] border-[#c9a63e]",
+    profil: "👩 Cadouri pentru ea", culoare: "bg-[#ffffff] border-[#14b8a6]",
     idei: ["Parfumuri & Cosmetice → Notino", "Haine & Accesorii → FashionDays", "Bijuterii → Bijuteria.ro", "Carte preferată → Elefant"],
     link: "/categorii/beauty",
   },
   {
-    profil: "👨 Cadouri pentru el", culoare: "bg-[#15120c] border-[#c9a63e]",
+    profil: "👨 Cadouri pentru el", culoare: "bg-[#ffffff] border-[#14b8a6]",
     idei: ["Gadget tech → eMAG", "Echipament sport → Decathlon", "Parfum masculin → Notino", "Carte business → Libris"],
     link: "/categorii/electronics-itc",
   },
   {
-    profil: "🧒 Cadouri pentru copii", culoare: "bg-[#15120c] border-yellow-200",
+    profil: "🧒 Cadouri pentru copii", culoare: "bg-[#ffffff] border-yellow-200",
     idei: ["Jucării educative → Noriel", "Cărți ilustrate → Elefant", "Jocuri de masă → eMAG", "Set creativ → Smyths"],
     link: "/categorii/babies-kids-toys",
   },
   {
-    profil: "👴 Cadouri pentru părinți", culoare: "bg-[#15120c] border-green-200",
+    profil: "👴 Cadouri pentru părinți", culoare: "bg-[#ffffff] border-green-200",
     idei: ["Aparate electrocasnice → eMAG", "Cărți → Libris", "Îngrijire → Notino", "Accesorii casă → Dedeman"],
     link: "/categorii/home-garden",
   },
 ];
 
 function numeAfisat(s: string) { return s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" "); }
-const CULORI_CARD = ["bg-[#b8912e]","bg-[#b8912e]","bg-[#b8912e]","bg-[#b8912e]","bg-[#b8912e]","bg-[#b8912e]","bg-[#b8912e]","bg-[#c9a63e]"];
+const CULORI_CARD = ["bg-[#0d9488]","bg-[#0d9488]","bg-[#0d9488]","bg-[#0d9488]","bg-[#0d9488]","bg-[#0d9488]","bg-[#0d9488]","bg-[#14b8a6]"];
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Idei Cadouri cu Reducere 2026","url":"https://amcupon.ro/idei-cadouri" };
 
 export default function IdeiCadouriPage() {
@@ -80,18 +80,18 @@ export default function IdeiCadouriPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-[#0b0a07]">
+      <div className="min-h-screen bg-[#F7F9FC]">
 
-        <nav className="bg-[#0b0a07] border-b border-[#26211a]">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#8c8064]">
-            <Link href="/" className="hover:text-[#d8c091]">Acasă</Link>
+        <nav className="bg-[#F7F9FC] border-b border-[#e2e8f0]">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#64748b]">
+            <Link href="/" className="hover:text-[#0d9488]">Acasă</Link>
             <span className="mx-1 text-gray-300">/</span>
-            <span className="text-[#c8bda2] font-medium">Idei Cadouri</span>
+            <span className="text-[#334155] font-medium">Idei Cadouri</span>
           </div>
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-[#9c7a26] via-[#c9a63e] to-[#8a6a1e] text-white py-12 px-4">
+        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#8a6a1e] text-[#0f172a] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">🎁</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Idei de Cadouri {an}</h1>
@@ -102,12 +102,12 @@ export default function IdeiCadouriPage() {
               {OCAZII.map(o => (
                 o.href ? (
                   <a key={o.label} href={o.href}
-                    className="flex items-center gap-1.5 bg-white/20 hover:bg-white/30 text-white font-semibold text-sm px-4 py-2 rounded-full transition-colors border border-white/30">
+                    className="flex items-center gap-1.5 bg-slate-100 hover:bg-slate-200 text-[#0f172a] font-semibold text-sm px-4 py-2 rounded-full transition-colors border border-slate-200">
                     {o.emoji} {o.label}
                   </a>
                 ) : (
                   <span key={o.label}
-                    className="flex items-center gap-1.5 bg-white/20 text-white font-semibold text-sm px-4 py-2 rounded-full border border-white/30">
+                    className="flex items-center gap-1.5 bg-slate-100 text-[#0f172a] font-semibold text-sm px-4 py-2 rounded-full border border-slate-200">
                     {o.emoji} {o.label}
                   </span>
                 )
@@ -118,20 +118,20 @@ export default function IdeiCadouriPage() {
 
         {/* IDEI PER PROFIL */}
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-white mb-6 text-center">Cadouri după persoană</h2>
+          <h2 className="text-xl font-black text-[#0f172a] mb-6 text-center">Cadouri după persoană</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {IDEI_PER_PROFIL.map(p => (
               <a key={p.profil} href={p.link}
-                className={`${p.culoare} rounded-2xl p-5 border hover:shadow-md transition-all group`}>
-                <h3 className="font-black text-white text-sm mb-3">{p.profil}</h3>
+                className={`${p.culoare} rounded-xl p-5 border hover:shadow-md transition-all group`}>
+                <h3 className="font-black text-[#0f172a] text-sm mb-3">{p.profil}</h3>
                 <ul className="space-y-1.5">
                   {p.idei.map(i => (
-                    <li key={i} className="text-xs text-[#a89a78] flex items-start gap-1.5">
-                      <span className="text-[#8c8064] mt-0.5 shrink-0">·</span>{i}
+                    <li key={i} className="text-xs text-[#475569] flex items-start gap-1.5">
+                      <span className="text-[#64748b] mt-0.5 shrink-0">·</span>{i}
                     </li>
                   ))}
                 </ul>
-                <p className="text-xs font-bold text-[#d8c091] mt-3 group-hover:text-[#e3d1a6]">
+                <p className="text-xs font-bold text-[#0d9488] mt-3 group-hover:text-[#0f766e]">
                   Vezi reduceri →
                 </p>
               </a>
@@ -143,7 +143,7 @@ export default function IdeiCadouriPage() {
         <section className="max-w-6xl mx-auto px-4 pb-10">
           <div className="flex items-center gap-3 mb-5">
             
-            <h2 className="text-xl font-black text-white">Magazine cu reduceri la cadouri</h2>
+            <h2 className="text-xl font-black text-[#0f172a]">Magazine cu reduceri la cadouri</h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {magazine.map((m, i) => {
@@ -152,31 +152,31 @@ export default function IdeiCadouriPage() {
               const promo = m.promotii[0];
               return (
                 <a key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                  className="group bg-[#15120c] border border-[#26211a] hover:border-[#c9a63e]/40 rounded-2xl p-4 transition-all hover:shadow-md">
+                  className="group bg-[#ffffff] border border-[#e2e8f0] hover:border-[#14b8a6]/40 rounded-xl p-4 transition-all hover:shadow-md">
                   <div className="flex items-center gap-3 mb-3">
                     {m.logo_url ? (
-                      <div className="w-10 h-10 rounded-xl overflow-hidden bg-white border border-[#26211a] shrink-0">
+                      <div className="w-10 h-10 rounded-xl overflow-hidden bg-white border border-[#e2e8f0] shrink-0">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img src={m.logo_url} alt={`Logo ${nume}`} className="w-full h-full object-contain" loading="lazy" />
                       </div>
                     ) : (
-                      <div className={`w-10 h-10 rounded-xl ${culoare} flex items-center justify-center text-white font-black text-lg shrink-0`}>
+                      <div className={`w-10 h-10 rounded-xl ${culoare} flex items-center justify-center text-[#0f172a] font-black text-lg shrink-0`}>
                         {nume[0]}
                       </div>
                     )}
                     <div>
-                      <p className="font-bold text-white text-sm">{nume}</p>
-                      {m.are_promotie && m.cod_cupon && <span className="text-xs text-[#d8c091] font-bold">COD</span>}
-                      {m.are_promotie && !m.cod_cupon && <span className="text-xs text-[#d8c091] font-medium">Ofertă</span>}
+                      <p className="font-bold text-[#0f172a] text-sm">{nume}</p>
+                      {m.are_promotie && m.cod_cupon && <span className="text-xs text-[#0d9488] font-bold">COD</span>}
+                      {m.are_promotie && !m.cod_cupon && <span className="text-xs text-[#0d9488] font-medium">Ofertă</span>}
                     </div>
                   </div>
                   {promo ? (
-                    <p className="text-[#a89a78] text-xs line-clamp-2">{promo.nume}</p>
+                    <p className="text-[#475569] text-xs line-clamp-2">{promo.nume}</p>
                   ) : (
-                    <p className="text-[#8c8064] text-xs italic">Verifică ofertele curente</p>
+                    <p className="text-[#64748b] text-xs italic">Verifică ofertele curente</p>
                   )}
                   <div className="flex justify-end mt-2">
-                    <span className="text-xs text-[#d8c091] font-semibold group-hover:text-[#d8c091]">Vezi →</span>
+                    <span className="text-xs text-[#0d9488] font-semibold group-hover:text-[#0d9488]">Vezi →</span>
                   </div>
                 </a>
               );
@@ -193,20 +193,20 @@ export default function IdeiCadouriPage() {
         />
 
         {/* SEO CONTENT */}
-        <section className="bg-[#15120c] border-t border-[#26211a] py-10 px-4">
+        <section className="bg-[#ffffff] border-t border-[#e2e8f0] py-10 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-white mb-5">Ghid: Cum alegi cadoul perfect</h2>
-            <div className="space-y-4 text-sm text-[#a89a78] leading-relaxed">
+            <h2 className="text-xl font-black text-[#0f172a] mb-5">Ghid: Cum alegi cadoul perfect</h2>
+            <div className="space-y-4 text-sm text-[#475569] leading-relaxed">
               <div>
-                <h3 className="font-bold text-white mb-1">Cum economisești la cadouri online?</h3>
+                <h3 className="font-bold text-[#0f172a] mb-1">Cum economisești la cadouri online?</h3>
                 <p>Folosește codurile de reducere de pe AmCupon.ro înainte de orice comandă. Poți economisi 5-30% din prețul final. Verificăm zilnic ofertele de la Noriel, FashionDays, Notino, Elefant și celelalte magazine partenere.</p>
               </div>
               <div>
-                <h3 className="font-bold text-white mb-1">Când să cumperi cadourile?</h3>
+                <h3 className="font-bold text-[#0f172a] mb-1">Când să cumperi cadourile?</h3>
                 <p>Cel mai bun moment: Black Friday (noiembrie), perioadele de sale (ianuarie, iulie) sau cu 1-2 săptămâni înainte de ocazie. Evită cumpărăturile de urgență în ultimele zile — prețurile sunt mai mari și livrarea poate întârzia.</p>
               </div>
               <div>
-                <h3 className="font-bold text-white mb-1">Cadouri care nu dau greș niciodată</h3>
+                <h3 className="font-bold text-[#0f172a] mb-1">Cadouri care nu dau greș niciodată</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
                   <li><strong>Parfumuri originale</strong> — Notino, Douglas (reduceri frecvente)</li>
                   <li><strong>Cărți</strong> — Elefant, Libris (pachete cu reducere)</li>
@@ -220,7 +220,7 @@ export default function IdeiCadouriPage() {
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[#c8bda2] mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-[#334155] mb-4">Exploreaza si alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/fashion", label: "👗 Fashion" },
@@ -231,17 +231,17 @@ export default function IdeiCadouriPage() {
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-[#15120c] hover:bg-[#26211a] hover:text-[#e3d1a6] text-[#c8bda2] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#26211a] hover:border-[#e6d5a8]">
+                className="bg-[#ffffff] hover:bg-[#e2e8f0] hover:text-[#0f766e] text-[#334155] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#e2e8f0] hover:border-[#e6d5a8]">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-[#26211a] py-6 text-center text-xs text-[#8c8064] mt-4">
-          © {an} AmCupon.ro · <Link href="/craciun" className="hover:text-[#d8c091]">Crăciun</Link>
-          {" · "}<Link href="/black-friday" className="hover:text-[#d8c091]">Black Friday</Link>
-          {" · "}<Link href="/gadgets" className="hover:text-[#d8c091]">Gadgets</Link>
+        <footer className="border-t border-[#e2e8f0] py-6 text-center text-xs text-[#64748b] mt-4">
+          © {an} AmCupon.ro · <Link href="/craciun" className="hover:text-[#0d9488]">Crăciun</Link>
+          {" · "}<Link href="/black-friday" className="hover:text-[#0d9488]">Black Friday</Link>
+          {" · "}<Link href="/gadgets" className="hover:text-[#0d9488]">Gadgets</Link>
         </footer>
       </div>
     </>

@@ -90,7 +90,7 @@ export default function AnuntAnimat() {
   const item = items[idx];
 
   return (
-    <div className="bg-[#15120c] border-b border-[#26211a] text-[#dcd0b8] text-xs font-semibold py-2 px-4 text-center flex items-center justify-center gap-3 min-h-[34px]">
+    <div className="bg-[#ffffff] border-b border-[#e2e8f0] text-[#1e293b] text-xs font-semibold py-2 px-4 text-center flex items-center justify-center gap-3 min-h-[34px]">
       {/* Mesaj rotativ */}
       <div
         className="flex items-center gap-2 transition-all duration-300"
@@ -105,12 +105,12 @@ export default function AnuntAnimat() {
         >
           {item?.text}
           {item?.cod && (
-            <span className="ml-1.5 bg-[#b8912e] text-white px-1.5 py-0.5 rounded font-black tracking-wider">
+            <span className="ml-1.5 bg-[#0d9488] text-white px-1.5 py-0.5 rounded font-black tracking-wider">
               {item.cod}
             </span>
           )}
         </a>
-        <span className="hidden sm:inline text-[#8c8064]">→</span>
+        <span className="hidden sm:inline text-[#64748b]">→</span>
       </div>
 
       {/* Dots indicatori */}
@@ -119,7 +119,7 @@ export default function AnuntAnimat() {
           <button
             key={i}
             onClick={() => { setVisible(false); setTimeout(() => { setIdx(i); setVisible(true); }, 300); }}
-            className={`w-1.5 h-1.5 rounded-full transition-all ${i === idx % Math.min(items.length, 8) ? "bg-[#d8c091]" : "bg-[#473d28]"}`}
+            className={`w-1.5 h-1.5 rounded-full transition-all ${i === idx % Math.min(items.length, 8) ? "bg-[#0d9488]" : "bg-[#94a3b8]"}`}
             aria-label={`Anunt ${i + 1}`}
           />
         ))}
@@ -128,7 +128,7 @@ export default function AnuntAnimat() {
       {/* Link Newsletter fix */}
       <a
         href="/newsletter"
-        className="hidden md:inline-flex items-center gap-1 bg-[#b8912e]/15 border border-[#c9a63e]/30 text-[#e3d1a6] hover:bg-[#b8912e]/25 px-2.5 py-0.5 rounded-full transition-colors shrink-0"
+        className="hidden md:inline-flex items-center gap-1 bg-[#0d9488]/15 border border-[#14b8a6]/30 text-[#0f766e] hover:bg-[#0d9488]/25 px-2.5 py-0.5 rounded-full transition-colors shrink-0"
       >
         📬 Newsletter gratuit
       </a>

@@ -99,20 +99,20 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="bg-[#15120c]/95 backdrop-blur-md border-b border-[#26211a] sticky top-0 z-50 shadow-lg">
+    <header className="bg-[#ffffff]/95 backdrop-blur-md border-b border-[#e2e8f0] sticky top-0 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 h-[64px] flex items-center gap-4">
 
         {/* Logo */}
         <Link href="/" className="flex items-center gap-1.5 shrink-0 group">
-          <div className="bg-[#b8912e] group-hover:bg-[#c9a63e] text-white font-black text-sm px-2 py-0.5 rounded-lg tracking-tighter transition-colors">Am</div>
-          <span className="font-black text-white text-xl tracking-tight">Cupon<span className="text-[#d8c091]">.ro</span></span>
+          <div className="bg-[#0d9488] group-hover:bg-[#14b8a6] text-white font-black text-sm px-2 py-0.5 rounded-lg tracking-tighter transition-colors">Am</div>
+          <span className="font-black text-[#0f172a] text-xl tracking-tight">Cupon<span className="text-[#0d9488]">.ro</span></span>
         </Link>
 
         {/* Search cu autocomplete */}
         <div className="flex-1 relative max-w-2xl hidden sm:block">
           <form onSubmit={handleSearchSubmit}>
             <div className="relative">
-              <svg className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-[#8c8064] pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-[#64748b] pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
               </svg>
               <input
@@ -123,11 +123,11 @@ export default function Navbar() {
                 onFocus={() => { setFocused(true); if (results.length > 0) setShowDropdown(true); }}
                 onBlur={() => { setFocused(false); setTimeout(() => setShowDropdown(false), 160); }}
                 placeholder="Cauta: eMAG, Answear, Notino..."
-                className="w-full bg-[#26211a] border border-[#37301f] hover:border-[#473d28] focus:border-[#d8c091] focus:ring-2 focus:ring-[#d8c091]/20 text-[#efe7d6] placeholder-[#8c8064] rounded-full pl-10 pr-10 py-2.5 text-sm focus:outline-none transition-all"
+                className="w-full bg-[#e2e8f0] border border-[#cbd5e1] hover:border-[#94a3b8] focus:border-[#0d9488] focus:ring-2 focus:ring-[#0d9488]/20 text-[#efe7d6] placeholder-[#64748b] rounded-full pl-10 pr-10 py-2.5 text-sm focus:outline-none transition-all"
               />
               {search && (
                 <button type="button" onClick={() => { setSearch(""); setShowDropdown(false); inputRef.current?.focus(); }}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-[#8c8064] hover:text-[#c8bda2] transition-colors">
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-[#64748b] hover:text-[#334155] transition-colors">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12"/>
                   </svg>
@@ -138,23 +138,23 @@ export default function Navbar() {
 
           {/* Dropdown autocomplete */}
           {showDropdown && results.length > 0 && (
-            <div className="absolute top-full mt-2 left-0 right-0 bg-[#15120c] border border-[#37301f] rounded-2xl shadow-2xl shadow-black/50 py-2 z-50 overflow-hidden animate-in fade-in slide-in-from-top-1 duration-150">
+            <div className="absolute top-full mt-2 left-0 right-0 bg-[#ffffff] border border-[#cbd5e1] rounded-xl shadow-2xl shadow-slate-300/60 py-2 z-50 overflow-hidden animate-in fade-in slide-in-from-top-1 duration-150">
               {results.map(m => (
                 <button key={m.magazin} onMouseDown={() => handleSelect(m.magazin)}
-                  className="w-full flex items-center gap-3 px-4 py-2.5 hover:bg-[#26211a] transition-colors text-left group/item">
-                  <div className="w-8 h-8 rounded-lg bg-[#26211a] flex items-center justify-center shrink-0 overflow-hidden border border-[#37301f]">
+                  className="w-full flex items-center gap-3 px-4 py-2.5 hover:bg-[#e2e8f0] transition-colors text-left group/item">
+                  <div className="w-8 h-8 rounded-lg bg-[#e2e8f0] flex items-center justify-center shrink-0 overflow-hidden border border-[#cbd5e1]">
                     {m.logo_url
                       ? <img src={m.logo_url} alt={numeAfisat(m.magazin)} className="w-6 h-6 object-contain"/>
-                      : <span className="text-xs font-black text-[#d8c091]">{numeAfisat(m.magazin)[0]}</span>
+                      : <span className="text-xs font-black text-[#0d9488]">{numeAfisat(m.magazin)[0]}</span>
                     }
                   </div>
                   <div className="flex-1 min-w-0">
-                    <p className="text-sm font-bold text-white truncate group-hover/item:text-[#d8c091] transition-colors">{numeAfisat(m.magazin)}</p>
-                    <p className="text-xs text-[#a89a78] truncate">{m.magazin}</p>
+                    <p className="text-sm font-bold text-[#0f172a] truncate group-hover/item:text-[#0d9488] transition-colors">{numeAfisat(m.magazin)}</p>
+                    <p className="text-xs text-[#475569] truncate">{m.magazin}</p>
                   </div>
                   <div className="flex items-center gap-1.5 shrink-0">
                     {m.cod_cupon && (
-                      <span className="text-[10px] font-black bg-[#c9a63e]/50 text-[#e3d1a6] px-1.5 py-0.5 rounded-full">Cod</span>
+                      <span className="text-[10px] font-black bg-[#14b8a6]/50 text-[#0f766e] px-1.5 py-0.5 rounded-full">Cod</span>
                     )}
                     {m.are_promotie && (
                       <span className="text-[10px] font-black bg-emerald-900/50 text-emerald-400 px-1.5 py-0.5 rounded-full">Activ</span>
@@ -162,13 +162,13 @@ export default function Navbar() {
                   </div>
                 </button>
               ))}
-              <div className="border-t border-[#37301f] mt-1 pt-1">
+              <div className="border-t border-[#cbd5e1] mt-1 pt-1">
                 <button onMouseDown={handleSearchSubmit as never}
-                  className="w-full flex items-center gap-2 px-4 py-2.5 text-sm text-[#d8c091] font-bold hover:bg-[#26211a] transition-colors">
+                  className="w-full flex items-center gap-2 px-4 py-2.5 text-sm text-[#0d9488] font-bold hover:bg-[#e2e8f0] transition-colors">
                   <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
                   </svg>
-                  Cauta <span className="text-[#c8bda2]">&quot;{search}&quot;</span> in toate magazinele
+                  Cauta <span className="text-[#334155]">&quot;{search}&quot;</span> in toate magazinele
                 </button>
               </div>
             </div>
@@ -176,43 +176,43 @@ export default function Navbar() {
         </div>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-4 text-sm font-semibold text-[#c8bda2] ml-auto shrink-0">
+        <nav className="hidden md:flex items-center gap-4 text-sm font-semibold text-[#334155] ml-auto shrink-0">
           {navLinks.map(l => (
             <Link key={l.href} href={l.href}
-              className={`hover:text-[#d8c091] transition-colors whitespace-nowrap ${pathname === l.href || (l.href !== "/" && pathname.startsWith(l.href)) ? "text-[#d8c091]" : ""}`}>
+              className={`hover:text-[#0d9488] transition-colors whitespace-nowrap ${pathname === l.href || (l.href !== "/" && pathname.startsWith(l.href)) ? "text-[#0d9488]" : ""}`}>
               {l.label}
             </Link>
           ))}
           {/* Social media icons */}
-          <div className="flex items-center gap-1.5 border-l border-[#37301f] pl-4 ml-1">
+          <div className="flex items-center gap-1.5 border-l border-[#cbd5e1] pl-4 ml-1">
             <a href="https://www.facebook.com/amcupon.ro" target="_blank" rel="noopener noreferrer" aria-label="Facebook AmCupon"
-              className="w-8 h-8 rounded-lg bg-[#26211a] hover:bg-[#1877F2] flex items-center justify-center transition-colors group">
-              <svg className="w-3.5 h-3.5 text-[#a89a78] group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
+              className="w-8 h-8 rounded-lg bg-[#e2e8f0] hover:bg-[#1877F2] flex items-center justify-center transition-colors group">
+              <svg className="w-3.5 h-3.5 text-[#475569] group-hover:text-[#0f172a] transition-colors" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
               </svg>
             </a>
             <a href="https://www.instagram.com/amcupon.ro" target="_blank" rel="noopener noreferrer" aria-label="Instagram AmCupon"
-              className="w-8 h-8 rounded-lg bg-[#26211a] hover:bg-gradient-to-br hover:from-[#c9a63e] hover:to-[#c9a63e] flex items-center justify-center transition-colors group">
-              <svg className="w-3.5 h-3.5 text-[#a89a78] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+              className="w-8 h-8 rounded-lg bg-[#e2e8f0] hover:bg-gradient-to-br hover:from-[#14b8a6] hover:to-[#14b8a6] flex items-center justify-center transition-colors group">
+              <svg className="w-3.5 h-3.5 text-[#475569] group-hover:text-[#0f172a] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
               </svg>
             </a>
             <a href="https://www.tiktok.com/@amcupon.ro" target="_blank" rel="noopener noreferrer" aria-label="TikTok AmCupon"
-              className="w-8 h-8 rounded-lg bg-[#26211a] hover:bg-black flex items-center justify-center transition-colors group">
-              <svg className="w-3.5 h-3.5 text-[#a89a78] group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
+              className="w-8 h-8 rounded-lg bg-[#e2e8f0] hover:bg-black flex items-center justify-center transition-colors group">
+              <svg className="w-3.5 h-3.5 text-[#475569] group-hover:text-[#0f172a] transition-colors" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.74a4.85 4.85 0 01-1.01-.05z"/>
               </svg>
             </a>
           </div>
           <Link href="/extensie"
-            className="flex items-center gap-1.5 bg-[#37301f] hover:bg-[#b8912e] text-white px-3.5 py-1.5 rounded-full text-xs font-bold transition-all hover:scale-105 duration-150">
+            className="flex items-center gap-1.5 bg-[#cbd5e1] hover:bg-[#0d9488] text-white px-3.5 py-1.5 rounded-full text-xs font-bold transition-all hover:scale-105 duration-150">
             🧩 Extensie
           </Link>
         </nav>
 
         {/* Mobile menu btn */}
         <button onClick={() => setMenuOpen(o => !o)}
-          className="md:hidden ml-auto p-2 rounded-xl hover:bg-[#26211a] transition-colors text-[#c8bda2]" aria-label="Meniu">
+          className="md:hidden ml-auto p-2 rounded-xl hover:bg-[#e2e8f0] transition-colors text-[#334155]" aria-label="Meniu">
           {menuOpen
             ? <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12"/></svg>
             : <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 6h16M4 12h16M4 18h16"/></svg>
@@ -222,19 +222,19 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden border-t border-[#26211a] bg-[#15120c] px-4 py-4 space-y-3 shadow-lg">
+        <div className="md:hidden border-t border-[#e2e8f0] bg-[#ffffff] px-4 py-4 space-y-3 shadow-lg">
           <form onSubmit={handleSearchSubmit} className="relative">
-            <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#8c8064]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#64748b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
             </svg>
             <input type="text" value={search} onChange={e => setSearch(e.target.value)}
               placeholder="Cauta magazin..."
-              className="w-full bg-[#26211a] border border-[#37301f] text-[#efe7d6] placeholder-[#8c8064] rounded-full pl-9 pr-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#d8c091]" />
+              className="w-full bg-[#e2e8f0] border border-[#cbd5e1] text-[#efe7d6] placeholder-[#64748b] rounded-full pl-9 pr-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#0d9488]" />
           </form>
           <nav className="space-y-0.5">
             {mobileLinks.map(l => (
               <Link key={l.href} href={l.href} onClick={() => setMenuOpen(false)}
-                className="flex items-center px-3 py-2.5 rounded-xl text-sm font-semibold text-[#c8bda2] hover:bg-[#26211a] hover:text-[#d8c091] transition-colors">
+                className="flex items-center px-3 py-2.5 rounded-xl text-sm font-semibold text-[#334155] hover:bg-[#e2e8f0] hover:text-[#0d9488] transition-colors">
                 {l.label}
               </Link>
             ))}

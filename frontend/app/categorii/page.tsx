@@ -25,17 +25,17 @@ export const metadata: Metadata = {
 const CATEGORII = [
   {
     slug: "fashion", label: "Fashion", desc: "Haine & accesorii",
-    accent: "#e3d1a6",
+    accent: "#0f766e",
     keywords: ["fashion", "clothing", "haine", "shoes", "answear", "aboutyou"],
   },
   {
     slug: "electronics-itc", label: "Electronice IT&C", desc: "Laptopuri, telefoane, gadgeturi",
-    accent: "#d8c091",
+    accent: "#0d9488",
     keywords: ["electronic", "tech", "it", "laptop", "phone", "ozone", "navstore"],
   },
   {
     slug: "beauty", label: "Frumusete", desc: "Cosmetice & parfumuri",
-    accent: "#d8c091",
+    accent: "#0d9488",
     keywords: ["beauty", "cosmetic", "parfum", "notino", "makeup", "sephora"],
   },
   {
@@ -45,7 +45,7 @@ const CATEGORII = [
   },
   {
     slug: "sports-outdoors", label: "Sport & Outdoor", desc: "Echipament sportiv & fitness",
-    accent: "#b8912e",
+    accent: "#0d9488",
     keywords: ["sport", "fitness", "outdoor", "sportdepot", "decathlon", "running"],
   },
   {
@@ -55,7 +55,7 @@ const CATEGORII = [
   },
   {
     slug: "babies-kids-toys", label: "Copii & Jucarii", desc: "Produse pentru cei mici",
-    accent: "#d8c091",
+    accent: "#0d9488",
     keywords: ["kids", "copii", "toy", "bebe", "noriel", "jucarii"],
   },
   {
@@ -65,12 +65,12 @@ const CATEGORII = [
   },
   {
     slug: "books", label: "Carti & Edu", desc: "Carti, e-books, papetarie",
-    accent: "#d8c091",
+    accent: "#0d9488",
     keywords: ["book", "carte", "libris", "carturesti", "bookzone", "edu"],
   },
   {
     slug: "hypermarket-groceries", label: "Hypermarket", desc: "Alimente & produse zilnice",
-    accent: "#d8c091",
+    accent: "#0d9488",
     keywords: ["hypermarket", "grocery", "aliment", "food", "supermarket"],
   },
   {
@@ -80,7 +80,7 @@ const CATEGORII = [
   },
   {
     slug: "telecom", label: "Telecom", desc: "Abonamente & servicii mobile",
-    accent: "#e3d1a6",
+    accent: "#0f766e",
     keywords: ["telecom", "mobile", "abonament", "orange", "vodafone", "digi"],
   },
   {
@@ -95,7 +95,7 @@ const CATEGORII = [
   },
   {
     slug: "games", label: "Jocuri & Gaming", desc: "Jocuri video & console",
-    accent: "#e3d1a6",
+    accent: "#0f766e",
     keywords: ["game", "gaming", "console", "jocuri", "steam", "ps5"],
   },
   {
@@ -110,7 +110,7 @@ const CATEGORII = [
   },
   {
     slug: "others", label: "Altele", desc: "Diverse categorii",
-    accent: "#e3d1a6",
+    accent: "#0f766e",
     keywords: [],
   },
 ];
@@ -192,31 +192,31 @@ export default function CategoriPage() {
   return (
     <>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-    <div className="min-h-screen bg-[#0b0a07]">
+    <div className="min-h-screen bg-[#F7F9FC]">
 
       {/* Header */}
-      <header className="bg-[#15120c] border-b border-[#26211a]">
+      <header className="bg-[#ffffff] border-b border-[#e2e8f0]">
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-3">
           <Link href="/" className="flex items-center gap-1.5 shrink-0">
-            <div className="bg-[#b8912e] text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
-            <span className="font-black text-white text-xl">Cupon</span>
-            <span className="text-[#d8c091] font-black text-xl">.ro</span>
+            <div className="bg-[#0d9488] text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
+            <span className="font-black text-[#0f172a] text-xl">Cupon</span>
+            <span className="text-[#0d9488] font-black text-xl">.ro</span>
           </Link>
-          <span className="text-[#473d28]">/</span>
-          <span className="text-sm font-semibold text-[#a89a78]">Categorii</span>
+          <span className="text-[#94a3b8]">/</span>
+          <span className="text-sm font-semibold text-[#475569]">Categorii</span>
         </div>
       </header>
 
       {/* Hero */}
-      <div className="bg-gradient-to-br from-[#15120c] via-[#15120c] to-[#26211a] py-10 px-4 border-b border-[#26211a]">
+      <div className="bg-gradient-to-br from-[#ffffff] via-[#ffffff] to-[#e2e8f0] py-10 px-4 border-b border-[#e2e8f0]">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-3xl md:text-4xl font-black text-white mb-2">
+          <h1 className="text-3xl md:text-4xl font-black text-[#0f172a] mb-2">
             Toate categoriile
           </h1>
-          <p className="text-[#a89a78] text-sm">
+          <p className="text-[#475569] text-sm">
             <span className="text-emerald-400 font-bold">{totalOff} oferte active</span>
             {" "}in{" "}
-            <span className="text-white font-bold">{CATEGORII.length} categorii</span>
+            <span className="text-[#0f172a] font-bold">{CATEGORII.length} categorii</span>
             {" "}&mdash; actualizat zilnic
           </p>
         </div>
@@ -229,7 +229,7 @@ export default function CategoriPage() {
             <a
               key={c.slug}
               href={`/categorii/${c.slug}`}
-              className="group relative rounded-2xl overflow-hidden bg-[#15120c] border border-[#26211a] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/40 hover:[border-color:var(--accent)]"
+              className="group relative rounded-xl overflow-hidden bg-[#ffffff] border border-[#e2e8f0] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-slate-300/60 hover:[border-color:var(--accent)]"
               style={{ "--accent": `${c.accent}80` } as Record<string, string>}
             >
               {/* Glow colorat pe categorie — recunoastere instanta */}
@@ -245,7 +245,7 @@ export default function CategoriPage() {
                       key={i}
                       src={l.logo}
                       alt={l.name}
-                      className="w-6 h-6 rounded-full border border-[#37301f] bg-white object-contain p-0.5"
+                      className="w-6 h-6 rounded-full border border-[#cbd5e1] bg-white object-contain p-0.5"
                       loading="lazy"
                     />
                   ))}
@@ -261,20 +261,20 @@ export default function CategoriPage() {
                     <span className="text-[10px] font-bold" style={{ color: c.accent }}>{c.nrOff} oferte</span>
                   </div>
                 ) : (
-                  <div className="inline-flex items-center gap-1 bg-[#26211a] px-2 py-0.5 rounded-full mb-3">
-                    <span className="text-[#a89a78] text-[10px]">{c.nrMag} magazine</span>
+                  <div className="inline-flex items-center gap-1 bg-[#e2e8f0] px-2 py-0.5 rounded-full mb-3">
+                    <span className="text-[#475569] text-[10px]">{c.nrMag} magazine</span>
                   </div>
                 )}
 
-                <div className="text-white font-black text-sm leading-tight mb-1">
+                <div className="text-[#0f172a] font-black text-sm leading-tight mb-1">
                   {c.label}
                 </div>
-                <div className="text-[#a89a78] text-[10px] leading-tight">
+                <div className="text-[#475569] text-[10px] leading-tight">
                   {c.desc}
                 </div>
 
                 {/* Arrow */}
-                <div className="mt-3 flex items-center gap-1 text-[#8c8064] group-hover:text-white group-hover:gap-2 transition-all text-[10px] font-bold">
+                <div className="mt-3 flex items-center gap-1 text-[#64748b] group-hover:text-[#0f172a] group-hover:gap-2 transition-all text-[10px] font-bold">
                   Vezi ofertele
                   <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
@@ -286,13 +286,13 @@ export default function CategoriPage() {
         </div>
 
         {/* Pagini specializate — contin editorial + produse */}
-        <div className="mt-12 border-t border-[#26211a] pt-10">
-          <h2 className="text-lg font-black text-white mb-2">Pagini specializate pe nisa</h2>
-          <p className="text-[#8c8064] text-sm mb-6">Fiecare pagina are editorial, ghiduri de cumparaturi si produse recomandate.</p>
+        <div className="mt-12 border-t border-[#e2e8f0] pt-10">
+          <h2 className="text-lg font-black text-[#0f172a] mb-2">Pagini specializate pe nisa</h2>
+          <p className="text-[#64748b] text-sm mb-6">Fiecare pagina are editorial, ghiduri de cumparaturi si produse recomandate.</p>
           <div className="flex flex-wrap gap-2">
             {NISE_SPECIALE.map(n => (
               <a key={n.href} href={n.href}
-                className="flex items-center gap-1.5 bg-[#26211a] hover:bg-[#37301f] border border-[#37301f] hover:border-[#c9a63e]/50 text-[#c8bda2] hover:text-white text-sm font-semibold px-3 py-2 rounded-xl transition-all">
+                className="flex items-center gap-1.5 bg-[#e2e8f0] hover:bg-[#cbd5e1] border border-[#cbd5e1] hover:border-[#14b8a6]/50 text-[#334155] hover:text-[#0f172a] text-sm font-semibold px-3 py-2 rounded-xl transition-all">
                 <span>{n.emoji}</span>
                 {n.label}
               </a>
@@ -302,7 +302,7 @@ export default function CategoriPage() {
 
         {/* Back link */}
         <div className="mt-10 text-center">
-          <Link href="/" className="text-sm text-[#8c8064] hover:text-[#d8c091] transition-colors">
+          <Link href="/" className="text-sm text-[#64748b] hover:text-[#0d9488] transition-colors">
             &larr; Inapoi la AmCupon.ro
           </Link>
         </div>

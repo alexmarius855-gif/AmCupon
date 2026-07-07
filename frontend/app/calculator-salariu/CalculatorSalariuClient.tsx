@@ -59,29 +59,29 @@ export default function CalculatorSalariuClient() {
   const r = brut > 0 ? calculeaza(brut, persoane, salariuMinim) : null;
 
   return (
-    <div className="min-h-screen bg-[#0b0a07]">
+    <div className="min-h-screen bg-[#F7F9FC]">
       <div className="max-w-2xl mx-auto px-4 py-10">
 
         {/* Hero */}
         <div className="text-center mb-8">
           <div className="text-5xl mb-3">💰</div>
-          <h1 className="text-3xl font-black text-white mb-2">Calculator Salariu Net 2026</h1>
-          <p className="text-[#a89a78]">Afla salariul net din brut, conform cotelor fiscale actuale din Romania</p>
+          <h1 className="text-3xl font-black text-[#0f172a] mb-2">Calculator Salariu Net 2026</h1>
+          <p className="text-[#475569]">Afla salariul net din brut, conform cotelor fiscale actuale din Romania</p>
         </div>
 
         {/* Input card */}
-        <div className="bg-[#15120c] rounded-3xl border border-[#26211a] p-6 space-y-5">
+        <div className="bg-[#ffffff] rounded-xl border border-[#e2e8f0] p-6 space-y-5">
           <div>
-            <label className="text-sm text-[#a89a78] mb-1.5 block">Salariul brut (lei/luna)</label>
+            <label className="text-sm text-[#475569] mb-1.5 block">Salariul brut (lei/luna)</label>
             <input
               type="number" value={brutStr} onChange={e => setBrutStr(e.target.value)}
               placeholder={`ex: ${salariuMinim}`} min="0"
-              className="w-full bg-[#26211a] border border-[#37301f] text-white rounded-xl px-4 py-3 text-lg focus:outline-none focus:ring-2 focus:ring-[#c9a63e]/40 focus:border-[#c9a63e]/50"
+              className="w-full bg-[#e2e8f0] border border-[#cbd5e1] text-[#0f172a] rounded-xl px-4 py-3 text-lg focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40 focus:border-[#14b8a6]/50"
             />
           </div>
 
           <div>
-            <label className="text-sm text-[#a89a78] mb-1.5 block">Persoane in intretinere</label>
+            <label className="text-sm text-[#475569] mb-1.5 block">Persoane in intretinere</label>
             <div className="grid grid-cols-5 gap-2">
               {[0, 1, 2, 3, 4].map(p => (
                 <button
@@ -89,8 +89,8 @@ export default function CalculatorSalariuClient() {
                   onClick={() => setPersoane(p)}
                   className={`py-2.5 rounded-xl text-sm font-bold transition-all ${
                     persoane === p
-                      ? "bg-[#b8912e] text-white shadow-lg shadow-[#c9a63e]/25"
-                      : "bg-[#26211a] text-[#c8bda2] border border-[#37301f] hover:border-[#c9a63e]/40"
+                      ? "bg-[#0d9488] text-white shadow-lg shadow-[#14b8a6]/25"
+                      : "bg-[#e2e8f0] text-[#334155] border border-[#cbd5e1] hover:border-[#14b8a6]/40"
                   }`}
                 >
                   {p === 4 ? "4+" : p}
@@ -100,37 +100,37 @@ export default function CalculatorSalariuClient() {
           </div>
 
           {r && (
-            <div className="bg-emerald-500/10 border border-emerald-500/20 rounded-2xl p-5 space-y-2">
+            <div className="bg-emerald-500/10 border border-emerald-500/20 rounded-xl p-5 space-y-2">
               <div className="text-center pb-2">
-                <p className="text-[#a89a78] text-sm mb-1">Salariu net</p>
+                <p className="text-[#475569] text-sm mb-1">Salariu net</p>
                 <p className="text-emerald-400 font-black text-4xl">{fmt(r.net)} lei</p>
               </div>
-              <div className="h-px bg-[#37301f] my-2" />
+              <div className="h-px bg-[#cbd5e1] my-2" />
               <div className="flex justify-between text-sm">
-                <span className="text-[#a89a78]">Salariu brut</span>
-                <span className="text-white font-semibold">{fmt(r.brut)} lei</span>
+                <span className="text-[#475569]">Salariu brut</span>
+                <span className="text-[#0f172a] font-semibold">{fmt(r.brut)} lei</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-[#a89a78]">CAS (pensie) -25%</span>
+                <span className="text-[#475569]">CAS (pensie) -25%</span>
                 <span className="text-red-400 font-semibold">-{fmt(r.cas)} lei</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-[#a89a78]">CASS (sanatate) -10%</span>
+                <span className="text-[#475569]">CASS (sanatate) -10%</span>
                 <span className="text-red-400 font-semibold">-{fmt(r.cass)} lei</span>
               </div>
               {r.deducere > 0 && (
-                <div className="flex justify-between text-xs text-[#8c8064] italic">
+                <div className="flex justify-between text-xs text-[#64748b] italic">
                   <span>din care deducere personala ({persoane === 4 ? "4+" : persoane} pers.)</span>
                   <span>-{fmt(r.deducere)} lei din baza impozabila</span>
                 </div>
               )}
               <div className="flex justify-between text-sm">
-                <span className="text-[#a89a78]">Impozit pe venit -10%</span>
+                <span className="text-[#475569]">Impozit pe venit -10%</span>
                 <span className="text-red-400 font-semibold">-{fmt(r.impozit)} lei</span>
               </div>
-              <div className="h-px bg-[#37301f] my-2" />
+              <div className="h-px bg-[#cbd5e1] my-2" />
               <div className="flex justify-between">
-                <span className="text-white font-bold text-lg">Total retineri</span>
+                <span className="text-[#0f172a] font-bold text-lg">Total retineri</span>
                 <span className="text-red-400 font-black text-xl">-{fmt(r.brut - r.net)} lei</span>
               </div>
             </div>
@@ -138,25 +138,25 @@ export default function CalculatorSalariuClient() {
         </div>
 
         {/* Disclaimer */}
-        <p className="text-[#473d28] text-xs text-center mt-4 px-4 leading-relaxed">
+        <p className="text-[#94a3b8] text-xs text-center mt-4 px-4 leading-relaxed">
           Calculator pentru salariati cu contract standard, norma intreaga. Cote valabile {salariuMinim === 4325 ? "din 1 iulie 2026" : "ianuarie-iunie 2026"}:
           CAS 25%, CASS 10%, impozit pe venit 10%, salariu minim brut {salariuMinim} lei. Nu acopera facilitati sectoriale speciale
           (constructii, agricultura) sau contracte part-time. Caracter informativ, nu inlocuieste un calcul oficial de salarizare.
         </p>
 
         {/* CTA investitii */}
-        <div className="bg-gradient-to-r from-[#1a1408]/30 to-[#15120c] border border-[#5a4718]/30 rounded-2xl p-6 mt-6 text-center">
-          <p className="text-white font-bold mb-1">Vrei sa pui surplusul la treaba?</p>
-          <p className="text-[#a89a78] text-sm mb-4">Compara platformele de investitii si trading disponibile in Romania.</p>
+        <div className="bg-gradient-to-r from-[#ffffff]/30 to-[#ffffff] border border-[#5a4718]/30 rounded-xl p-6 mt-6 text-center">
+          <p className="text-[#0f172a] font-bold mb-1">Vrei sa pui surplusul la treaba?</p>
+          <p className="text-[#475569] text-sm mb-4">Compara platformele de investitii si trading disponibile in Romania.</p>
           <Link href="/trading"
-            className="inline-block bg-[#b8912e] hover:bg-[#c9a63e] text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-all">
+            className="inline-block bg-[#0d9488] hover:bg-[#14b8a6] text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-all">
             Vezi platformele →
           </Link>
         </div>
 
         {/* Link catre celalalt calculator */}
         <div className="text-center mt-6">
-          <Link href="/calculator" className="text-[#8c8064] hover:text-[#c8bda2] text-sm transition-colors">
+          <Link href="/calculator" className="text-[#64748b] hover:text-[#334155] text-sm transition-colors">
             🧮 Cauti calculator de reduceri si coduri cupon?
           </Link>
         </div>

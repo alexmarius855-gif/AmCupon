@@ -99,7 +99,7 @@ function catEmoji(cat: string): string {
 
 // Logo fallback — accent unic indigo (fara curcubeu)
 function logoBg(_name: string) {
-  return "bg-gradient-to-br from-[#c9a63e] to-[#9c7a26]";
+  return "bg-gradient-to-br from-[#14b8a6] to-[#0f766e]";
 }
 
 type Sort = "discount" | "pret_asc" | "pret_desc" | "nou";
@@ -116,7 +116,7 @@ function ProdusCard({ p, onSave, saved }: { p: Produs; onSave: () => void; saved
   const merchantInitial = merchant.charAt(0).toUpperCase();
 
   return (
-    <div className="group bg-[#15120c] border border-[#37301f]/60 hover:border-[#c9a63e]/60 rounded-2xl overflow-hidden transition-all hover:shadow-xl hover:shadow-[#c9a63e]/5 hover:-translate-y-1 duration-200 flex flex-col relative">
+    <div className="group bg-[#ffffff] border border-[#cbd5e1]/60 hover:border-[#14b8a6]/60 rounded-xl overflow-hidden transition-all hover:shadow-xl hover:shadow-[#14b8a6]/5 hover:-translate-y-1 duration-200 flex flex-col relative">
 
       {/* Buton salvare */}
       <button
@@ -125,7 +125,7 @@ function ProdusCard({ p, onSave, saved }: { p: Produs; onSave: () => void; saved
         className={`absolute top-2.5 right-2.5 z-10 w-8 h-8 rounded-full border flex items-center justify-center text-sm transition-all shadow-sm
           ${saved
             ? "bg-red-500/20 border-red-500/50 text-red-400"
-            : "bg-[#26211a]/80 border-[#473d28]/60 text-[#8c8064] hover:text-red-400 hover:border-red-400/60 backdrop-blur-sm"
+            : "bg-[#e2e8f0]/80 border-[#94a3b8]/60 text-[#64748b] hover:text-red-400 hover:border-red-400/60 backdrop-blur-sm"
           }`}
       >
         {saved ? "♥" : "♡"}
@@ -134,7 +134,7 @@ function ProdusCard({ p, onSave, saved }: { p: Produs; onSave: () => void; saved
       <a href={p.url} target="_blank" rel="sponsored noopener noreferrer" className="flex flex-col flex-1">
 
         {/* Image */}
-        <div className="relative bg-[#26211a]/60 overflow-hidden" style={{ aspectRatio: "1" }}>
+        <div className="relative bg-[#e2e8f0]/60 overflow-hidden" style={{ aspectRatio: "1" }}>
           {hasImg ? (
             // eslint-disable-next-line @next/next/no-img-element
             <img src={p.image} alt={p.title} loading="lazy"
@@ -143,13 +143,13 @@ function ProdusCard({ p, onSave, saved }: { p: Produs; onSave: () => void; saved
           ) : (
             <div className="w-full h-full flex flex-col items-center justify-center gap-2">
               <span className="text-5xl opacity-60">{emoji}</span>
-              <span className="text-[10px] font-semibold text-[#8c8064] text-center px-3 leading-tight">{merchant}</span>
+              <span className="text-[10px] font-semibold text-[#64748b] text-center px-3 leading-tight">{merchant}</span>
             </div>
           )}
 
           {/* Badge discount MARE — RetailMeNot style */}
           {hasDiscount && (
-            <div className="absolute top-2.5 left-2.5 bg-gradient-to-br from-[#e9d9b0] to-[#c9a63e] text-[#1a1408] font-black rounded-lg px-2.5 py-1 shadow-lg shadow-black/30 leading-none">
+            <div className="absolute top-2.5 left-2.5 bg-gradient-to-br from-[#34d399] to-[#14b8a6] text-[#ffffff] font-black rounded-lg px-2.5 py-1 shadow-lg shadow-slate-300/60 leading-none">
               <span className="text-base">-{p.discount_pct}%</span>
             </div>
           )}
@@ -169,14 +169,14 @@ function ProdusCard({ p, onSave, saved }: { p: Produs; onSave: () => void; saved
             <div className={`w-5 h-5 rounded-md flex items-center justify-center overflow-hidden flex-shrink-0 ${logoBg(merchant)}`}>
               <span className="text-white text-[9px] font-black">{merchantInitial}</span>
             </div>
-            <span className="text-[10px] text-[#a89a78] font-medium truncate">{merchant}</span>
+            <span className="text-[10px] text-[#475569] font-medium truncate">{merchant}</span>
             {p.brand && p.brand !== merchant && (
-              <span className="text-[10px] text-[#473d28] truncate">· {p.brand}</span>
+              <span className="text-[10px] text-[#94a3b8] truncate">· {p.brand}</span>
             )}
           </div>
 
           {/* Title */}
-          <p className="text-xs font-semibold text-[#dcd0b8] line-clamp-2 flex-1 group-hover:text-white transition-colors leading-snug mb-3">
+          <p className="text-xs font-semibold text-[#1e293b] line-clamp-2 flex-1 group-hover:text-[#0f172a] transition-colors leading-snug mb-3">
             {p.title}
           </p>
 
@@ -184,21 +184,21 @@ function ProdusCard({ p, onSave, saved }: { p: Produs; onSave: () => void; saved
           <div className="mb-3">
             {hasOldPrice && (
               <div className="flex items-center gap-2 mb-0.5">
-                <span className="text-[11px] text-[#8c8064] line-through">{p.old_price!.toFixed(2)} lei</span>
+                <span className="text-[11px] text-[#64748b] line-through">{p.old_price!.toFixed(2)} lei</span>
                 {hasDiscount && (
-                  <span className="text-[9px] font-black text-[#c9a63e] bg-[#c9a63e]/10 px-1.5 py-0.5 rounded-full">
+                  <span className="text-[9px] font-black text-[#14b8a6] bg-[#14b8a6]/10 px-1.5 py-0.5 rounded-full">
                     -{p.discount_pct}% REDUCERE
                   </span>
                 )}
               </div>
             )}
-            <span className="font-black text-[#d8c091] text-lg leading-none">
+            <span className="font-black text-[#0d9488] text-lg leading-none">
               {p.price > 0 ? `${p.price.toFixed(2)} lei` : "Vezi pretul"}
             </span>
           </div>
 
           {/* CTA Button — buton real, RetailMeNot style */}
-          <div className="mt-auto w-full bg-[#b8912e] hover:bg-[#c9a63e] text-white font-black text-xs py-2.5 px-3 rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm shadow-[#c9a63e]/20">
+          <div className="mt-auto w-full bg-[#0d9488] hover:bg-[#14b8a6] text-white font-black text-xs py-2.5 px-3 rounded-xl flex items-center justify-center gap-1.5 transition-colors shadow-sm shadow-[#14b8a6]/20">
             Cumpara acum
             <svg className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
@@ -222,25 +222,25 @@ function DealCard({ m, rank }: { m: Magazin; rank?: number }) {
 
   return (
     <a href={link} target="_blank" rel="sponsored noopener noreferrer"
-      className="group bg-[#15120c] border border-[#37301f] hover:border-[#c9a63e]/50 rounded-2xl overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-200 flex flex-col">
+      className="group bg-[#ffffff] border border-[#cbd5e1] hover:border-[#14b8a6]/50 rounded-xl overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-200 flex flex-col">
       {/* Colored top bar */}
-      <div className="h-1 bg-gradient-to-r from-[#d8c091] to-[#c9a63e]"/>
+      <div className="h-1 bg-gradient-to-r from-[#0d9488] to-[#14b8a6]"/>
       <div className="p-4 flex-1 flex flex-col">
         {/* Logo + rank */}
         <div className="flex items-start justify-between mb-3">
-          <div className="w-12 h-12 rounded-xl border border-[#37301f] bg-[#26211a] flex items-center justify-center overflow-hidden">
+          <div className="w-12 h-12 rounded-xl border border-[#cbd5e1] bg-[#e2e8f0] flex items-center justify-center overflow-hidden">
             {m.logo_url && imgOk ? (
               // eslint-disable-next-line @next/next/no-img-element
               <img src={m.logo_url} alt={name} className="w-10 h-10 object-contain" loading="lazy" onError={() => setImgOk(false)}/>
             ) : (
               <div className={`w-full h-full ${logoBg(name)} flex items-center justify-center rounded-xl`}>
-                <span className="text-white font-black text-lg">{initial}</span>
+                <span className="text-[#0f172a] font-black text-lg">{initial}</span>
               </div>
             )}
           </div>
           <div className="flex items-center gap-1.5">
             {rank && rank <= 3 && (
-              <span className="text-[10px] font-black bg-[#c9a63e]/20 text-[#e3d1a6] px-1.5 py-0.5 rounded-full">
+              <span className="text-[10px] font-black bg-[#14b8a6]/20 text-[#0f766e] px-1.5 py-0.5 rounded-full">
                 #{rank}
               </span>
             )}
@@ -250,34 +250,34 @@ function DealCard({ m, rank }: { m: Magazin; rank?: number }) {
               </span>
             )}
             {m.cod_cupon && (
-              <span className="text-[10px] font-semibold bg-[#c9a63e]/20 text-[#e3d1a6] px-1.5 py-0.5 rounded-full border border-[#c9a63e]/30">
+              <span className="text-[10px] font-semibold bg-[#14b8a6]/20 text-[#0f766e] px-1.5 py-0.5 rounded-full border border-[#14b8a6]/30">
                 Cod
               </span>
             )}
           </div>
         </div>
         {/* Name + category */}
-        <h3 className="font-black text-[#efe7d6] text-sm group-hover:text-[#d8c091] transition-colors leading-tight tracking-tight">
+        <h3 className="font-black text-[#efe7d6] text-sm group-hover:text-[#0d9488] transition-colors leading-tight tracking-tight">
           {name}
         </h3>
-        <p className="text-[10px] text-[#a89a78] mt-0.5">{m.categorie}</p>
+        <p className="text-[10px] text-[#475569] mt-0.5">{m.categorie}</p>
         {/* Promo */}
         {promo && (
-          <p className="text-xs text-[#a89a78] mt-2 line-clamp-2 leading-relaxed flex-1">{promo.nume}</p>
+          <p className="text-xs text-[#475569] mt-2 line-clamp-2 leading-relaxed flex-1">{promo.nume}</p>
         )}
         {/* Trust row */}
-        <div className="flex items-center gap-2 mt-3 pt-3 border-t border-[#37301f]">
+        <div className="flex items-center gap-2 mt-3 pt-3 border-t border-[#cbd5e1]">
           <div className="flex items-center gap-1 text-emerald-600 text-[10px] font-semibold">
             <span className="w-1 h-1 rounded-full bg-emerald-400 animate-pulse inline-block"/>
             Verificat azi
           </div>
-          <span className="text-[#c8bda2] text-[10px]">·</span>
-          <span className="text-[10px] text-[#a89a78]">{m.promotii.length} {m.promotii.length === 1 ? "oferta" : "oferte"}</span>
+          <span className="text-[#334155] text-[10px]">·</span>
+          <span className="text-[10px] text-[#475569]">{m.promotii.length} {m.promotii.length === 1 ? "oferta" : "oferte"}</span>
         </div>
       </div>
       {/* CTA */}
       <div className="px-4 pb-4">
-        <div className="bg-[#b8912e] group-hover:bg-[#c9a63e] text-white text-xs font-black py-2 rounded-xl text-center transition-colors">
+        <div className="bg-[#0d9488] group-hover:bg-[#14b8a6] text-white text-xs font-black py-2 rounded-xl text-center transition-colors">
           {m.cod_cupon ? "Copiaza codul" : "Vezi oferta"} →
         </div>
       </div>
@@ -388,26 +388,26 @@ export default function ProduseClient({
   const hasFiltre = !!(categorie || magazinFiltru || minDiscount > 0 || search);
 
   return (
-    <div className="min-h-screen bg-[#0b0a07]">
+    <div className="min-h-screen bg-[#F7F9FC]">
 
       {/* ─── HERO DARK ────────────────────────────────────────────────────── */}
-      <section className="relative bg-[#0b0a07] text-white overflow-hidden">
+      <section className="relative bg-[#F7F9FC] text-[#0f172a] overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute inset-0" style={{background:"radial-gradient(ellipse 80% 60% at 50% 0%, rgba(184,145,46,0.15) 0%, transparent 65%)"}}/>
+          <div className="absolute inset-0" style={{background:"radial-gradient(ellipse 80% 60% at 50% 0%, rgba(13,148,136,0.15) 0%, transparent 65%)"}}/>
           <div className="absolute inset-0 opacity-[0.02]" style={{backgroundImage:"linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px)", backgroundSize:"50px 50px"}}/>
         </div>
         <div className="relative max-w-5xl mx-auto px-4 pt-14 pb-16 text-center">
-          <div className="inline-flex items-center gap-2 bg-white/8 border border-white/15 rounded-full px-4 py-1.5 text-xs font-semibold text-white/70 mb-6">
+          <div className="inline-flex items-center gap-2 bg-slate-100 border border-slate-200 rounded-full px-4 py-1.5 text-xs font-semibold text-slate-500 mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse inline-block"/>
             {cuPromotii.length} magazine cu promotii active · {products.length} produse in catalog
           </div>
           <h1 className="text-4xl md:text-6xl font-black tracking-tight leading-tight mb-4">
-            <span className="text-white">Cumpara mai inteligent</span><br/>
-            <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #c9a63e 0%, #b8912e 100%)"}}>
+            <span className="text-[#0f172a]">Cumpara mai inteligent</span><br/>
+            <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #14b8a6 0%, #0d9488 100%)"}}>
               reduceri reale, {an}
             </span>
           </h1>
-          <p className="text-[#a89a78] text-lg mb-8 max-w-lg mx-auto">
+          <p className="text-[#475569] text-lg mb-8 max-w-lg mx-auto">
             Top deals zilnice, feed-uri de produse si campanii vizuale de la {magazine.length}+ magazine partenere.
           </p>
           {/* Stats */}
@@ -419,8 +419,8 @@ export default function ProduseClient({
               { v: "100%",                  l: "Gratuit" },
             ].map(s => (
               <div key={s.l} className="text-center">
-                <div className="font-black text-white text-2xl">{s.v}</div>
-                <div className="text-[#8c8064] text-xs mt-0.5">{s.l}</div>
+                <div className="font-black text-[#0f172a] text-2xl">{s.v}</div>
+                <div className="text-[#64748b] text-xs mt-0.5">{s.l}</div>
               </div>
             ))}
           </div>
@@ -428,7 +428,7 @@ export default function ProduseClient({
       </section>
 
       {/* ─── TABS ─────────────────────────────────────────────────────────── */}
-      <div className="bg-[#15120c] border-b border-[#26211a] sticky top-[64px] z-40">
+      <div className="bg-[#ffffff] border-b border-[#e2e8f0] sticky top-[64px] z-40">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center gap-1 overflow-x-auto" style={{scrollbarWidth:"none"}}>
             {([
@@ -439,8 +439,8 @@ export default function ProduseClient({
               <button key={t.id} onClick={() => setActiveTab(t.id)}
                 className={`flex items-center gap-2 px-5 py-3.5 text-sm font-semibold whitespace-nowrap border-b-2 transition-colors ${
                   activeTab === t.id
-                    ? "border-[#c9a63e] text-[#d8c091]"
-                    : "border-transparent text-[#8c8064] hover:text-[#c8bda2]"
+                    ? "border-[#14b8a6] text-[#0d9488]"
+                    : "border-transparent text-[#64748b] hover:text-[#334155]"
                 }`}>
                 <span>{t.emoji}</span>
                 {t.label}
@@ -454,18 +454,18 @@ export default function ProduseClient({
       {activeTab === "oferte" && (
         <section id="top-deals" className="max-w-7xl mx-auto px-4 py-10">
           <div className="mb-8">
-            <p className="text-xs font-bold text-[#d8c091] uppercase tracking-widest mb-2">LIVE · ACTUALIZAT AZI</p>
-            <h2 className="text-3xl font-black tracking-tight text-white">Top Deals din Romania</h2>
-            <p className="text-[#a89a78] text-sm mt-1.5">
+            <p className="text-xs font-bold text-[#0d9488] uppercase tracking-widest mb-2">LIVE · ACTUALIZAT AZI</p>
+            <h2 className="text-3xl font-black tracking-tight text-[#0f172a]">Top Deals din Romania</h2>
+            <p className="text-[#475569] text-sm mt-1.5">
               {cuPromotii.length} magazine cu promotii actuale, sortate dupa reducere maxima
             </p>
           </div>
 
           {cuPromotii.length === 0 ? (
-            <div className="text-center py-16 bg-[#15120c] rounded-2xl border border-[#37301f]">
+            <div className="text-center py-16 bg-[#ffffff] rounded-xl border border-[#cbd5e1]">
               <p className="text-3xl mb-3">⏳</p>
-              <p className="font-black text-[#dcd0b8] mb-2">Se incarca ofertele</p>
-              <p className="text-[#a89a78] text-sm">Datele se actualizeaza zilnic la 08:00</p>
+              <p className="font-black text-[#1e293b] mb-2">Se incarca ofertele</p>
+              <p className="text-[#475569] text-sm">Datele se actualizeaza zilnic la 08:00</p>
             </div>
           ) : (
             <>
@@ -485,7 +485,7 @@ export default function ProduseClient({
               </div>
               {cuPromotii.length > 54 && (
                 <div className="text-center mt-8">
-                  <Link href="/" className="border-2 border-[#37301f] hover:border-[#c9a63e] text-[#a89a78] hover:text-[#d8c091] font-bold px-8 py-3 rounded-2xl text-sm transition-all hover:shadow-md inline-block">
+                  <Link href="/" className="border-2 border-[#cbd5e1] hover:border-[#14b8a6] text-[#475569] hover:text-[#0d9488] font-bold px-8 py-3 rounded-xl text-sm transition-all hover:shadow-md inline-block">
                     Vezi toate {cuPromotii.length} magazine pe homepage →
                   </Link>
                 </div>
@@ -499,35 +499,35 @@ export default function ProduseClient({
       {activeTab === "campanii" && (
         <section className="max-w-7xl mx-auto px-4 py-10">
           <div className="mb-8">
-            <p className="text-xs font-bold text-[#d8c091] uppercase tracking-widest mb-2">CAMPANII VIZUALE</p>
-            <h2 className="text-3xl font-black tracking-tight text-white">Bannere & Campanii Active</h2>
-            <p className="text-[#a89a78] text-sm mt-1.5">
+            <p className="text-xs font-bold text-[#0d9488] uppercase tracking-widest mb-2">CAMPANII VIZUALE</p>
+            <h2 className="text-3xl font-black tracking-tight text-[#0f172a]">Bannere & Campanii Active</h2>
+            <p className="text-[#475569] text-sm mt-1.5">
               Imagini oficiale de la magazinele partenere. Clic = redirectionare cu tracking afiliat.
             </p>
           </div>
 
           {bannereValide.length === 0 ? (
-            <div className="text-center py-16 bg-[#15120c] rounded-2xl border border-[#37301f]">
+            <div className="text-center py-16 bg-[#ffffff] rounded-xl border border-[#cbd5e1]">
               <p className="text-3xl mb-3">🖼️</p>
-              <p className="font-black text-[#dcd0b8] mb-2">Nicio campanie activa momentan</p>
-              <p className="text-[#a89a78] text-sm">Bannere se actualizeaza zilnic odata ce magazinele activeaza campanii</p>
+              <p className="font-black text-[#1e293b] mb-2">Nicio campanie activa momentan</p>
+              <p className="text-[#475569] text-sm">Bannere se actualizeaza zilnic odata ce magazinele activeaza campanii</p>
             </div>
           ) : (
             <>
               {/* Featured banner mare */}
               {bannereValide.slice(0, 1).map(b => (
                 <a key={b.id} href={b.landing_url || b.landing_raw} target="_blank" rel="sponsored noopener noreferrer"
-                  className="group relative block rounded-2xl overflow-hidden border border-[#37301f] hover:border-[#c9a63e]/50 hover:shadow-xl transition-all mb-6">
+                  className="group relative block rounded-xl overflow-hidden border border-[#cbd5e1] hover:border-[#14b8a6]/50 hover:shadow-xl transition-all mb-6">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={b.image_url} alt={b.name || b.merchant}
                     className="w-full object-cover group-hover:scale-[1.01] transition-transform duration-300"
                     onError={e => (e.target as HTMLImageElement).parentElement?.remove()}/>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6">
                     <div>
-                      <p className="text-white font-black text-xl">{b.merchant}</p>
-                      <p className="text-white/70 text-sm">{b.name || b.category}</p>
+                      <p className="text-[#0f172a] font-black text-xl">{b.merchant}</p>
+                      <p className="text-slate-500 text-sm">{b.name || b.category}</p>
                     </div>
-                    <span className="ml-auto bg-[#b8912e] text-white font-black px-4 py-2 rounded-xl text-sm">
+                    <span className="ml-auto bg-[#0d9488] text-white font-black px-4 py-2 rounded-xl text-sm">
                       Vezi oferta →
                     </span>
                   </div>
@@ -539,19 +539,19 @@ export default function ProduseClient({
                 {bannereValide.slice(1).map((b, i) => (
                   <a key={b.id || i} href={b.landing_url || b.landing_raw} target="_blank" rel="sponsored noopener noreferrer"
                     title={b.name || b.merchant}
-                    className="group relative block rounded-xl overflow-hidden border border-[#37301f] hover:border-[#c9a63e]/50 hover:shadow-lg transition-all">
+                    className="group relative block rounded-xl overflow-hidden border border-[#cbd5e1] hover:border-[#14b8a6]/50 hover:shadow-lg transition-all">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={b.image_url} alt={b.name || b.merchant || "Banner"}
                       className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy"
                       onError={e => (e.target as HTMLImageElement).closest("a")?.remove()}/>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
-                      <span className="text-white text-xs font-bold">{b.merchant}</span>
+                      <span className="text-[#0f172a] text-xs font-bold">{b.merchant}</span>
                     </div>
                   </a>
                 ))}
               </div>
 
-              <div className="mt-6 text-center text-xs text-[#8c8064] bg-[#15120c] rounded-xl py-3 px-4">
+              <div className="mt-6 text-center text-xs text-[#64748b] bg-[#ffffff] rounded-xl py-3 px-4">
                 Bannere publicitare de la magazinele partenere 2Performant. Actualizate zilnic.
               </div>
             </>
@@ -564,9 +564,9 @@ export default function ProduseClient({
         <section id="produse-feed" className="max-w-7xl mx-auto px-4 py-10">
           <div className="flex items-end justify-between mb-6">
             <div>
-              <p className="text-xs font-bold text-[#d8c091] uppercase tracking-widest mb-2">FEED-URI 2PERFORMANT</p>
-              <h2 className="text-3xl font-black tracking-tight text-white">Catalog Produse</h2>
-              <p className="text-[#a89a78] text-sm mt-1.5">
+              <p className="text-xs font-bold text-[#0d9488] uppercase tracking-widest mb-2">FEED-URI 2PERFORMANT</p>
+              <h2 className="text-3xl font-black tracking-tight text-[#0f172a]">Catalog Produse</h2>
+              <p className="text-[#475569] text-sm mt-1.5">
                 {products.length} produse din feed-urile partenerilor · {statsProds.magazine} magazine
                 {updated && ` · actualizat ${new Date(updated).toLocaleDateString("ro-RO")}`}
               </p>
@@ -587,14 +587,14 @@ export default function ProduseClient({
 
             return catList.length > 0 ? (
               <div className="mb-8">
-                <p className="text-xs font-bold text-[#8c8064] uppercase tracking-widest mb-3">NAVIGATIE PE CATEGORII</p>
+                <p className="text-xs font-bold text-[#64748b] uppercase tracking-widest mb-3">NAVIGATIE PE CATEGORII</p>
                 <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-2">
                   {catList.map(([slug, cm]) => (
                     <Link key={slug} href={`/produse/${slug}`}
-                      className="group bg-[#15120c] border border-[#37301f] hover:border-[#c9a63e]/60 rounded-xl p-2.5 text-center hover:-translate-y-0.5 transition-all duration-200">
+                      className="group bg-[#ffffff] border border-[#cbd5e1] hover:border-[#14b8a6]/60 rounded-xl p-2.5 text-center hover:-translate-y-0.5 transition-all duration-200">
                       <div className="text-xl mb-1">{cm.emoji}</div>
-                      <p className="text-[10px] font-bold text-[#c8bda2] group-hover:text-[#d8c091] transition-colors leading-tight">{cm.label}</p>
-                      <p className="text-[10px] text-[#8c8064] mt-0.5">{(catCounts[slug] || 0).toLocaleString()} produse</p>
+                      <p className="text-[10px] font-bold text-[#334155] group-hover:text-[#0d9488] transition-colors leading-tight">{cm.label}</p>
+                      <p className="text-[10px] text-[#64748b] mt-0.5">{(catCounts[slug] || 0).toLocaleString()} produse</p>
                     </Link>
                   ))}
                 </div>
@@ -603,59 +603,59 @@ export default function ProduseClient({
           })()}
 
           {products.length === 0 ? (
-            <div className="text-center py-16 bg-[#15120c] rounded-2xl border border-[#37301f]">
+            <div className="text-center py-16 bg-[#ffffff] rounded-xl border border-[#cbd5e1]">
               <p className="text-4xl mb-4">📦</p>
-              <h3 className="font-black text-[#dcd0b8] text-xl mb-2">Feed-urile se populeaza</h3>
-              <p className="text-[#8c8064] text-sm mb-6 max-w-md mx-auto">
+              <h3 className="font-black text-[#1e293b] text-xl mb-2">Feed-urile se populeaza</h3>
+              <p className="text-[#64748b] text-sm mb-6 max-w-md mx-auto">
                 Produsele din feed-urile de afiliati se actualizeaza zilnic la 08:00. Intre timp, vezi ofertele din tab-ul Top Deals.
               </p>
               <button onClick={() => setActiveTab("oferte")}
-                className="bg-[#b8912e] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#c9a63e] transition-colors text-sm">
+                className="bg-[#0d9488] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#14b8a6] transition-colors text-sm">
                 Vezi Top Deals →
               </button>
             </div>
           ) : (
             <>
               {/* Filtre */}
-              <div className="bg-[#15120c] rounded-2xl border border-[#37301f] p-4 mb-6">
+              <div className="bg-[#ffffff] rounded-xl border border-[#cbd5e1] p-4 mb-6">
                 <div className="flex flex-wrap gap-3 items-end">
                   {/* Search */}
                   <div className="flex flex-col gap-1 flex-1 min-w-[200px]">
-                    <label className="text-[10px] font-bold text-[#a89a78] uppercase tracking-widest">Cauta produs</label>
+                    <label className="text-[10px] font-bold text-[#475569] uppercase tracking-widest">Cauta produs</label>
                     <div className="relative">
-                      <svg className="absolute left-3 top-2.5 w-4 h-4 text-[#8c8064]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="absolute left-3 top-2.5 w-4 h-4 text-[#64748b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
                       </svg>
                       <input type="text" placeholder="Titlu, brand, magazin..."
                         value={search} onChange={e => setSearch(e.target.value)}
-                        className="w-full bg-[#26211a] border border-[#37301f] text-[#dcd0b8] placeholder:text-[#8c8064] rounded-xl pl-9 pr-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#c9a63e] transition-all"/>
+                        className="w-full bg-[#e2e8f0] border border-[#cbd5e1] text-[#1e293b] placeholder:text-[#64748b] rounded-xl pl-9 pr-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#14b8a6] transition-all"/>
                     </div>
                   </div>
                   {/* Categorie */}
                   <div className="flex flex-col gap-1 min-w-[160px]">
-                    <label className="text-[10px] font-bold text-[#a89a78] uppercase tracking-widest">Categorie</label>
+                    <label className="text-[10px] font-bold text-[#475569] uppercase tracking-widest">Categorie</label>
                     <select value={categorie} onChange={e => setCategorie(e.target.value)}
-                      className="border border-[#37301f] bg-[#26211a] text-[#dcd0b8] rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#c9a63e]">
+                      className="border border-[#cbd5e1] bg-[#e2e8f0] text-[#1e293b] rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#14b8a6]">
                       <option value="">Toate ({categorii.length})</option>
                       {categorii.map(c => <option key={c} value={c}>{c}</option>)}
                     </select>
                   </div>
                   {/* Magazin */}
                   <div className="flex flex-col gap-1 min-w-[160px]">
-                    <label className="text-[10px] font-bold text-[#a89a78] uppercase tracking-widest">Magazin</label>
+                    <label className="text-[10px] font-bold text-[#475569] uppercase tracking-widest">Magazin</label>
                     <select value={magazinFiltru} onChange={e => setMagazinFiltru(e.target.value)}
-                      className="border border-[#37301f] bg-[#26211a] text-[#dcd0b8] rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#c9a63e]">
+                      className="border border-[#cbd5e1] bg-[#e2e8f0] text-[#1e293b] rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#14b8a6]">
                       <option value="">Toate ({magazineList.length})</option>
                       {magazineList.map(m => <option key={m} value={m}>{numeAfisat(m)}</option>)}
                     </select>
                   </div>
                   {/* Discount */}
                   <div className="flex flex-col gap-1">
-                    <label className="text-[10px] font-bold text-[#a89a78] uppercase tracking-widest">Reducere min.</label>
+                    <label className="text-[10px] font-bold text-[#475569] uppercase tracking-widest">Reducere min.</label>
                     <div className="flex gap-1">
                       {[0, 10, 25, 50].map(v => (
                         <button key={v} onClick={() => setMinDiscount(v)}
-                          className={`px-3 py-2 rounded-xl text-sm font-semibold transition-colors ${minDiscount === v ? "bg-[#b8912e] text-white" : "border border-[#37301f] bg-[#26211a] text-[#c8bda2] hover:border-[#c9a63e]"}`}>
+                          className={`px-3 py-2 rounded-xl text-sm font-semibold transition-colors ${minDiscount === v ? "bg-[#0d9488] text-white" : "border border-[#cbd5e1] bg-[#e2e8f0] text-[#334155] hover:border-[#14b8a6]"}`}>
                           {v === 0 ? "Toate" : `≥${v}%`}
                         </button>
                       ))}
@@ -663,9 +663,9 @@ export default function ProduseClient({
                   </div>
                   {/* Sort */}
                   <div className="flex flex-col gap-1 ml-auto">
-                    <label className="text-[10px] font-bold text-[#a89a78] uppercase tracking-widest">Sortare</label>
+                    <label className="text-[10px] font-bold text-[#475569] uppercase tracking-widest">Sortare</label>
                     <select value={sort} onChange={e => setSort(e.target.value as Sort)}
-                      className="border border-[#37301f] bg-[#26211a] text-[#dcd0b8] rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#c9a63e]">
+                      className="border border-[#cbd5e1] bg-[#e2e8f0] text-[#1e293b] rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#14b8a6]">
                       <option value="nou">Cele mai noi</option>
                       <option value="discount">Discount maxim</option>
                       <option value="pret_asc">Pret crescator</option>
@@ -674,7 +674,7 @@ export default function ProduseClient({
                   </div>
                   {hasFiltre && (
                     <button onClick={() => { setCategorie(""); setMagazinFiltru(""); setMinDiscount(0); setSearch(""); }}
-                      className="text-sm text-[#d8c091] font-semibold hover:text-[#d8c091] border border-[#c9a63e]/30 px-3 py-2 rounded-xl bg-[#15120c]">
+                      className="text-sm text-[#0d9488] font-semibold hover:text-[#0d9488] border border-[#14b8a6]/30 px-3 py-2 rounded-xl bg-[#ffffff]">
                       Reseteaza
                     </button>
                   )}
@@ -683,20 +683,20 @@ export default function ProduseClient({
 
               {/* Count */}
               <div className="flex items-center justify-between mb-4">
-                <p className="text-sm text-[#a89a78]">
-                  <span className="font-bold text-[#dcd0b8]">{filtrate.length.toLocaleString()}</span> produse gasite
+                <p className="text-sm text-[#475569]">
+                  <span className="font-bold text-[#1e293b]">{filtrate.length.toLocaleString()}</span> produse gasite
                 </p>
                 {statsProds.cuImag > 0 && (
-                  <span className="text-xs text-[#a89a78]">{statsProds.cuImag} cu imagine</span>
+                  <span className="text-xs text-[#475569]">{statsProds.cuImag} cu imagine</span>
                 )}
               </div>
 
               {filtrate.length === 0 ? (
-                <div className="text-center py-12 bg-[#15120c] rounded-2xl border border-[#37301f]">
+                <div className="text-center py-12 bg-[#ffffff] rounded-xl border border-[#cbd5e1]">
                   <p className="text-3xl mb-3">🔍</p>
-                  <p className="font-bold text-[#dcd0b8] mb-2">Niciun produs gasit</p>
+                  <p className="font-bold text-[#1e293b] mb-2">Niciun produs gasit</p>
                   <button onClick={() => { setCategorie(""); setMagazinFiltru(""); setMinDiscount(0); setSearch(""); }}
-                    className="text-[#d8c091] font-semibold text-sm hover:text-[#e3d1a6]">
+                    className="text-[#0d9488] font-semibold text-sm hover:text-[#0f766e]">
                     Reseteaza filtrele →
                   </button>
                 </div>
@@ -704,7 +704,7 @@ export default function ProduseClient({
                 <>
                   {/* Price drop banner */}
                   {priceDrops.length > 0 && (
-                    <div className="mb-4 bg-emerald-500/10 border border-emerald-500/30 rounded-2xl p-3 flex items-center gap-3">
+                    <div className="mb-4 bg-emerald-500/10 border border-emerald-500/30 rounded-xl p-3 flex items-center gap-3">
                       <span className="text-xl">&#127381;</span>
                       <div className="flex-1 text-sm">
                         <span className="font-bold text-emerald-400">Pretul a scazut la {priceDrops.length} produse salvate!</span>
@@ -742,7 +742,7 @@ export default function ProduseClient({
                   {filtrate.length > limit && (
                     <div className="text-center mt-8">
                       <button onClick={() => setLimit(l => l + 48)}
-                        className="bg-[#26211a] border border-[#37301f] hover:border-[#c9a63e] text-[#c8bda2] hover:text-[#d8c091] font-bold px-8 py-3 rounded-2xl text-sm transition-all hover:shadow-md">
+                        className="bg-[#e2e8f0] border border-[#cbd5e1] hover:border-[#14b8a6] text-[#334155] hover:text-[#0d9488] font-bold px-8 py-3 rounded-xl text-sm transition-all hover:shadow-md">
                         Incarca mai multe ({filtrate.length - limit} ramase)
                       </button>
                     </div>
@@ -755,9 +755,9 @@ export default function ProduseClient({
       )}
 
       {/* ─── CROSS-PROMO: Alte sectiuni ───────────────────────────────────── */}
-      <section className="bg-[#15120c] border-t border-[#26211a] py-10 px-4">
+      <section className="bg-[#ffffff] border-t border-[#e2e8f0] py-10 px-4">
         <div className="max-w-7xl mx-auto">
-          <p className="text-xs font-bold text-[#8c8064] uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
+          <p className="text-xs font-bold text-[#64748b] uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
               { href: "/",               emoji: "🔥", label: "Coduri de reducere",   desc: "Toate codurile verificate" },
@@ -766,10 +766,10 @@ export default function ProduseClient({
               { href: "/blog",           emoji: "📝", label: "Blog & Ghiduri",         desc: "Cum sa economisesti mai mult" },
             ].map(s => (
               <a key={s.href} href={s.href}
-                className="group bg-[#26211a] border border-[#37301f] hover:border-[#c9a63e]/50 rounded-2xl p-5 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200">
+                className="group bg-[#e2e8f0] border border-[#cbd5e1] hover:border-[#14b8a6]/50 rounded-xl p-5 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200">
                 <div className="text-3xl mb-3">{s.emoji}</div>
-                <p className="font-black text-[#dcd0b8] text-sm group-hover:text-[#d8c091] transition-colors">{s.label}</p>
-                <p className="text-xs text-[#8c8064] mt-1">{s.desc}</p>
+                <p className="font-black text-[#1e293b] text-sm group-hover:text-[#0d9488] transition-colors">{s.label}</p>
+                <p className="text-xs text-[#64748b] mt-1">{s.desc}</p>
               </a>
             ))}
           </div>
@@ -778,7 +778,7 @@ export default function ProduseClient({
 
       {/* ─── TOAST salvare produs ──────────────────────────────────────────── */}
       {savedToast && (
-        <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-[#15120c] text-white px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-2 text-sm font-semibold animate-in slide-in-from-bottom-4 duration-300">
+        <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-[#ffffff] text-[#0f172a] px-5 py-3 rounded-xl shadow-2xl flex items-center gap-2 text-sm font-semibold animate-in slide-in-from-bottom-4 duration-300">
           <span className="text-red-400">&#9829;</span>
           <span>Salvat: {savedToast}</span>
           <Link href="/wishlist" className="ml-2 text-emerald-400 hover:text-emerald-300 text-xs underline">

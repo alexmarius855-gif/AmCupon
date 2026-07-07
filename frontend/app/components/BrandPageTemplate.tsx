@@ -66,7 +66,7 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
   const promotii = magazin?.promotii || [];
   const hasCod = promotii.some((p) => !!p.cod_cupon);
 
-  const culoare = "bg-gradient-to-br from-[#c9a63e] to-[#9c7a26]";
+  const culoare = "bg-gradient-to-br from-[#14b8a6] to-[#0f766e]";
 
   const jsonLd: object[] = [
     {
@@ -91,45 +91,45 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
   }
 
   return (
-    <div className="min-h-screen bg-[#0b0a07]">
+    <div className="min-h-screen bg-[#F7F9FC]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* ─── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="relative bg-[#0b0a07] overflow-hidden border-b border-[#26211a]">
-        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(184,145,46,0.12) 0%, transparent 65%)" }} />
+      <section className="relative bg-[#F7F9FC] overflow-hidden border-b border-[#e2e8f0]">
+        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(13,148,136,0.12) 0%, transparent 65%)" }} />
         <div className="relative max-w-4xl mx-auto px-4 pt-12 pb-14 text-center">
-          <nav className="flex justify-center gap-2 text-xs text-[#8c8064] mb-8">
-            <Link href="/" className="hover:text-[#c8bda2]">AmCupon.ro</Link>
+          <nav className="flex justify-center gap-2 text-xs text-[#64748b] mb-8">
+            <Link href="/" className="hover:text-[#334155]">AmCupon.ro</Link>
             <span>/</span>
-            <span className="text-[#c8bda2]">{config.name}</span>
+            <span className="text-[#334155]">{config.name}</span>
           </nav>
 
           {/* Logo / initial */}
-          <div className="w-20 h-20 mx-auto rounded-2xl overflow-hidden mb-5 shadow-xl">
+          <div className="w-20 h-20 mx-auto rounded-xl overflow-hidden mb-5 shadow-xl">
             {magazin?.logo_url ? (
               // eslint-disable-next-line @next/next/no-img-element
               <img src={magazin.logo_url} alt={`Logo ${config.name}`} className="w-full h-full object-contain bg-white p-1" />
             ) : (
-              <div className={`w-full h-full ${culoare} flex items-center justify-center text-white font-black text-3xl`}>
+              <div className={`w-full h-full ${culoare} flex items-center justify-center text-[#0f172a] font-black text-3xl`}>
                 {config.emoji}
               </div>
             )}
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-black text-white mb-3">
-            Reduceri <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #c9a63e, #b8912e)" }}>{config.name}</span>
+          <h1 className="text-4xl md:text-5xl font-black text-[#0f172a] mb-3">
+            Reduceri <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #14b8a6, #0d9488)" }}>{config.name}</span>
           </h1>
-          <p className="text-[#a89a78] text-lg mb-6">{config.tagline}</p>
+          <p className="text-[#475569] text-lg mb-6">{config.tagline}</p>
 
           {/* Stats row */}
           <div className="flex flex-wrap justify-center gap-6 text-sm mb-8">
             <div className="text-center">
-              <div className="font-black text-white text-2xl">{promotii.length}</div>
-              <div className="text-[#8c8064] text-xs mt-0.5">Oferte active</div>
+              <div className="font-black text-[#0f172a] text-2xl">{promotii.length}</div>
+              <div className="text-[#64748b] text-xs mt-0.5">Oferte active</div>
             </div>
             <div className="text-center">
-              <div className="font-black text-white text-2xl">{promotii.filter(p => !!p.cod_cupon).length}</div>
-              <div className="text-[#8c8064] text-xs mt-0.5">Coduri reducere</div>
+              <div className="font-black text-[#0f172a] text-2xl">{promotii.filter(p => !!p.cod_cupon).length}</div>
+              <div className="text-[#64748b] text-xs mt-0.5">Coduri reducere</div>
             </div>
           </div>
 
@@ -137,12 +137,12 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
           <div className="flex flex-wrap justify-center gap-3">
             {magazin?.url_afiliat && (
               <a href={magazin.url_afiliat} target="_blank" rel="sponsored noopener noreferrer"
-                className="bg-gradient-to-r from-[#c9a63e] to-[#b8912e] hover:from-[#d8b850] hover:to-[#c9a63e] text-[#1a1408] font-black px-7 py-3 rounded-2xl text-sm transition-all shadow-lg shadow-[#c9a63e]/25 hover:-translate-y-0.5 duration-200">
+                className="bg-gradient-to-r from-[#14b8a6] to-[#0d9488] hover:from-[#0d9488] hover:to-[#14b8a6] text-[#ffffff] font-black px-7 py-3 rounded-xl text-sm transition-all shadow-lg shadow-[#14b8a6]/25 hover:-translate-y-0.5 duration-200">
                 Mergi la {config.name} →
               </a>
             )}
             <Link href={`/cod-reducere/${config.slug}`}
-              className="bg-[#26211a] hover:bg-[#37301f] border border-[#37301f] text-[#c8bda2] font-semibold px-6 py-3 rounded-2xl text-sm transition-colors">
+              className="bg-[#e2e8f0] hover:bg-[#cbd5e1] border border-[#cbd5e1] text-[#334155] font-semibold px-6 py-3 rounded-xl text-sm transition-colors">
               Toate codurile {config.name}
             </Link>
           </div>
@@ -152,7 +152,7 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
       {/* ─── PROMOTII ─────────────────────────────────────────────────────── */}
       {promotii.length > 0 && (
         <section className="max-w-5xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-white mb-6">
+          <h2 className="text-xl font-black text-[#0f172a] mb-6">
             Oferte {config.name} Active — {new Date().toLocaleDateString("ro-RO", { month: "long", year: "numeric" })}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -160,39 +160,39 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
               const discount = extractDiscount(promo.nume) || extractDiscount(promo.descriere || "");
               const urgenta = (promo.zile_ramase ?? 99) <= 2;
               return (
-                <div key={i} className="bg-[#15120c] border border-[#26211a] hover:border-[#c9a63e]/40 rounded-2xl p-4 flex flex-col gap-3 transition-all hover:shadow-lg">
+                <div key={i} className="bg-[#ffffff] border border-[#e2e8f0] hover:border-[#14b8a6]/40 rounded-xl p-4 flex flex-col gap-3 transition-all hover:shadow-lg">
                   <div className="flex items-start justify-between gap-2">
-                    <p className="text-sm text-[#dcd0b8] font-semibold leading-snug flex-1">{promo.nume}</p>
+                    <p className="text-sm text-[#1e293b] font-semibold leading-snug flex-1">{promo.nume}</p>
                     <div className="flex flex-col items-end gap-1 shrink-0">
                       {discount > 0 && (
-                        <span className="text-[13px] font-black text-[#1a1408] bg-gradient-to-br from-[#e9d9b0] to-[#c9a63e] px-2 py-1 rounded-lg leading-none shadow-sm">-{discount}%</span>
+                        <span className="text-[13px] font-black text-[#ffffff] bg-gradient-to-br from-[#34d399] to-[#14b8a6] px-2 py-1 rounded-lg leading-none shadow-sm">-{discount}%</span>
                       )}
                       {promo.cod_cupon && (
-                        <span className="text-[10px] font-black text-[#d8c091] bg-[#c9a63e]/10 border border-[#c9a63e]/25 px-1.5 py-0.5 rounded-full">COD</span>
+                        <span className="text-[10px] font-black text-[#0d9488] bg-[#14b8a6]/10 border border-[#14b8a6]/25 px-1.5 py-0.5 rounded-full">COD</span>
                       )}
                     </div>
                   </div>
 
                   {promo.cod_cupon && (
-                    <div className="bg-[#26211a] border border-dashed border-[#d8c091]/50 rounded-xl px-3 py-2 text-center">
-                      <span className="font-mono font-black text-[#d8c091] text-base tracking-widest">{promo.cod_cupon}</span>
+                    <div className="bg-[#e2e8f0] border border-dashed border-[#0d9488]/50 rounded-xl px-3 py-2 text-center">
+                      <span className="font-mono font-black text-[#0d9488] text-base tracking-widest">{promo.cod_cupon}</span>
                     </div>
                   )}
 
-                  <div className="flex items-center justify-between mt-auto pt-2 border-t border-[#26211a]">
+                  <div className="flex items-center justify-between mt-auto pt-2 border-t border-[#e2e8f0]">
                     {urgenta ? (
                       <span className="text-[10px] font-bold text-[#e8956f] flex items-center gap-1.5">
                         <span className="w-1.5 h-1.5 rounded-full bg-[#e8956f] animate-pulse" />
                         {(promo.zile_ramase ?? 0) === 0 ? "Expiră azi" : "Expiră mâine"}
                       </span>
                     ) : (
-                      <span className="text-[10px] text-[#7d7050]">
+                      <span className="text-[10px] text-[#64748b]">
                         {(promo.zile_ramase ?? 99) < 99 ? `${promo.zile_ramase} zile rămase` : "Verificat azi"}
                       </span>
                     )}
                     <a href={promo.landing_page || magazin?.url_afiliat || "#"}
                       target="_blank" rel="sponsored noopener noreferrer"
-                      className="text-xs font-black bg-gradient-to-r from-[#c9a63e] to-[#b8912e] hover:from-[#d8b850] hover:to-[#c9a63e] text-[#1a1408] px-4 py-1.5 rounded-xl transition-all">
+                      className="text-xs font-black bg-gradient-to-r from-[#14b8a6] to-[#0d9488] hover:from-[#0d9488] hover:to-[#14b8a6] text-[#ffffff] px-4 py-1.5 rounded-xl transition-all">
                       {promo.cod_cupon ? "Copiază și mergi" : "Vezi oferta →"}
                     </a>
                   </div>
@@ -205,13 +205,13 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
 
       {promotii.length === 0 && (
         <section className="max-w-5xl mx-auto px-4 py-10">
-          <div className="bg-[#15120c] border border-[#26211a] rounded-2xl p-8 text-center">
+          <div className="bg-[#ffffff] border border-[#e2e8f0] rounded-xl p-8 text-center">
             <p className="text-3xl mb-3">🔍</p>
-            <p className="font-bold text-[#dcd0b8] mb-2">Nu exista oferte active momentan</p>
-            <p className="text-[#8c8064] text-sm mb-4">Revino maine — actualizam ofertele zilnic de la {config.name}.</p>
+            <p className="font-bold text-[#1e293b] mb-2">Nu exista oferte active momentan</p>
+            <p className="text-[#64748b] text-sm mb-4">Revino maine — actualizam ofertele zilnic de la {config.name}.</p>
             {magazin?.url_afiliat && (
               <a href={magazin.url_afiliat} target="_blank" rel="sponsored noopener noreferrer"
-                className="inline-block bg-[#b8912e] text-white font-bold px-6 py-2.5 rounded-xl text-sm hover:bg-[#c9a63e] transition-colors">
+                className="inline-block bg-[#0d9488] text-white font-bold px-6 py-2.5 rounded-xl text-sm hover:bg-[#14b8a6] transition-colors">
                 Mergi direct la {config.name} →
               </a>
             )}
@@ -221,22 +221,22 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
 
       {/* ─── EDITORIAL ────────────────────────────────────────────────────── */}
       <section className="max-w-3xl mx-auto px-4 py-10">
-        <h2 className="text-xl font-black text-white mb-5">
+        <h2 className="text-xl font-black text-[#0f172a] mb-5">
           De ce sa cumperi de la {config.name}?
         </h2>
         <div className="space-y-4">
           {config.editorial.map((para, i) => (
-            <p key={i} className="text-[#a89a78] leading-relaxed text-sm">{para}</p>
+            <p key={i} className="text-[#475569] leading-relaxed text-sm">{para}</p>
           ))}
         </div>
 
         {config.tips.length > 0 && (
-          <div className="mt-8 bg-[#15120c] border border-[#37301f] rounded-2xl p-5">
-            <h3 className="font-black text-white mb-4">Sfaturi pentru cumparaturi mai ieftine la {config.name}</h3>
+          <div className="mt-8 bg-[#ffffff] border border-[#cbd5e1] rounded-xl p-5">
+            <h3 className="font-black text-[#0f172a] mb-4">Sfaturi pentru cumparaturi mai ieftine la {config.name}</h3>
             <ul className="space-y-2.5">
               {config.tips.map((tip, i) => (
-                <li key={i} className="flex items-start gap-2.5 text-sm text-[#c8bda2]">
-                  <span className="text-[#d8c091] font-black mt-0.5 shrink-0">→</span>
+                <li key={i} className="flex items-start gap-2.5 text-sm text-[#334155]">
+                  <span className="text-[#0d9488] font-black mt-0.5 shrink-0">→</span>
                   {tip}
                 </li>
               ))}
@@ -248,15 +248,15 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
       {/* ─── FAQ ─────────────────────────────────────────────────────────── */}
       {config.faq.length > 0 && (
         <section className="max-w-3xl mx-auto px-4 pb-12">
-          <h2 className="text-xl font-black text-white mb-5">Intrebari frecvente despre {config.name}</h2>
-          <div className="divide-y divide-[#26211a] border border-[#26211a] rounded-2xl overflow-hidden">
+          <h2 className="text-xl font-black text-[#0f172a] mb-5">Intrebari frecvente despre {config.name}</h2>
+          <div className="divide-y divide-[#e2e8f0] border border-[#e2e8f0] rounded-xl overflow-hidden">
             {config.faq.map((item, i) => (
-              <details key={i} className="group bg-[#15120c]">
-                <summary className="flex items-center justify-between gap-3 px-5 py-4 cursor-pointer hover:bg-[#26211a] transition-colors list-none">
-                  <span className="font-semibold text-[#dcd0b8] text-sm">{item.q}</span>
-                  <span className="text-[#d8c091] text-lg shrink-0 group-open:rotate-45 transition-transform">+</span>
+              <details key={i} className="group bg-[#ffffff]">
+                <summary className="flex items-center justify-between gap-3 px-5 py-4 cursor-pointer hover:bg-[#e2e8f0] transition-colors list-none">
+                  <span className="font-semibold text-[#1e293b] text-sm">{item.q}</span>
+                  <span className="text-[#0d9488] text-lg shrink-0 group-open:rotate-45 transition-transform">+</span>
                 </summary>
-                <div className="px-5 pb-4 text-sm text-[#a89a78] leading-relaxed">{item.a}</div>
+                <div className="px-5 pb-4 text-sm text-[#475569] leading-relaxed">{item.a}</div>
               </details>
             ))}
           </div>
@@ -265,16 +265,16 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
 
       {/* ─── CTA NEWSLETTER ──────────────────────────────────────────────── */}
       <section className="max-w-5xl mx-auto px-4 pb-12">
-        <div className="bg-[#15120c] border border-[#37301f] rounded-3xl p-8 text-center">
-          <p className="text-2xl font-black text-white mb-2">Nu rata urmatoarea oferta {config.name}</p>
-          <p className="text-[#a89a78] text-sm mb-5">Aboneaza-te la newsletter si primesti codurile noi direct pe email.</p>
+        <div className="bg-[#ffffff] border border-[#cbd5e1] rounded-xl p-8 text-center">
+          <p className="text-2xl font-black text-[#0f172a] mb-2">Nu rata urmatoarea oferta {config.name}</p>
+          <p className="text-[#475569] text-sm mb-5">Aboneaza-te la newsletter si primesti codurile noi direct pe email.</p>
           <div className="flex flex-wrap justify-center gap-3">
             <Link href="/newsletter"
-              className="bg-gradient-to-r from-[#c9a63e] to-[#b8912e] hover:from-[#d8b850] hover:to-[#c9a63e] text-[#1a1408] font-black px-7 py-3 rounded-2xl text-sm transition-all shadow-lg shadow-[#c9a63e]/20">
+              className="bg-gradient-to-r from-[#14b8a6] to-[#0d9488] hover:from-[#0d9488] hover:to-[#14b8a6] text-[#ffffff] font-black px-7 py-3 rounded-xl text-sm transition-all shadow-lg shadow-[#14b8a6]/20">
               Aboneaza-te gratuit →
             </Link>
             <Link href="/oferte-azi"
-              className="bg-[#26211a] border border-[#37301f] hover:bg-[#37301f] text-[#c8bda2] font-semibold px-6 py-3 rounded-2xl text-sm transition-colors">
+              className="bg-[#e2e8f0] border border-[#cbd5e1] hover:bg-[#cbd5e1] text-[#334155] font-semibold px-6 py-3 rounded-xl text-sm transition-colors">
               Toate ofertele de azi
             </Link>
           </div>

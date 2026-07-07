@@ -39,20 +39,20 @@ export default function ContactPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(contactJsonLd) }}
       />
 
-      <div className="min-h-screen bg-[#0b0a07]">
+      <div className="min-h-screen bg-[#F7F9FC]">
         {/* Header */}
 
         {/* Breadcrumb */}
-        <nav className="max-w-5xl mx-auto px-4 pt-4 pb-0 text-xs text-[#8c8064] flex items-center gap-1">
-          <Link href="/" className="hover:text-[#d8c091] transition-colors">Acasă</Link>
+        <nav className="max-w-5xl mx-auto px-4 pt-4 pb-0 text-xs text-[#64748b] flex items-center gap-1">
+          <Link href="/" className="hover:text-[#0d9488] transition-colors">Acasă</Link>
           <span className="mx-1">/</span>
-          <span className="text-[#a89a78]">Contact</span>
+          <span className="text-[#475569]">Contact</span>
         </nav>
 
         <div className="max-w-5xl mx-auto px-4 py-8">
           <div className="text-center mb-10">
-            <h1 className="text-3xl font-black text-white mb-3">Contactează-ne</h1>
-            <p className="text-[#a89a78] max-w-lg mx-auto">
+            <h1 className="text-3xl font-black text-[#0f172a] mb-3">Contactează-ne</h1>
+            <p className="text-[#475569] max-w-lg mx-auto">
               Ai întrebări, vrei să raportezi un cod expirat sau ești interesat de un parteneriat?
               Scrie-ne — răspundem în maxim 24h.
             </p>
@@ -84,19 +84,19 @@ export default function ContactPage() {
             ].map((card) => (
               <div
                 key={card.titlu}
-                className="bg-[#15120c] rounded-2xl border border-[#26211a] shadow-sm p-6 text-center"
+                className="bg-[#ffffff] rounded-xl border border-[#e2e8f0] shadow-sm p-6 text-center"
               >
                 <div className="text-4xl mb-3">{card.icon}</div>
-                <h2 className="font-bold text-white mb-1">{card.titlu}</h2>
+                <h2 className="font-bold text-[#0f172a] mb-1">{card.titlu}</h2>
                 {card.href ? (
                   <a
                     href={card.href}
-                    className="text-[#d8c091] hover:text-[#e3d1a6] font-medium text-sm underline underline-offset-2"
+                    className="text-[#0d9488] hover:text-[#0f766e] font-medium text-sm underline underline-offset-2"
                   >
                     {card.detalii}
                   </a>
                 ) : (
-                  <p className="text-[#a89a78] text-sm">{card.detalii}</p>
+                  <p className="text-[#475569] text-sm">{card.detalii}</p>
                 )}
               </div>
             ))}
@@ -108,11 +108,11 @@ export default function ContactPage() {
 
             {/* Info box */}
             <div className="space-y-4">
-              <div className="bg-[#15120c] border border-[#26211a] rounded-2xl p-6">
-                <h3 className="font-bold text-white mb-3 flex items-center gap-2">
+              <div className="bg-[#ffffff] border border-[#e2e8f0] rounded-xl p-6">
+                <h3 className="font-bold text-[#0f172a] mb-3 flex items-center gap-2">
                   <span>💡</span> Cum te putem ajuta?
                 </h3>
-                <ul className="space-y-2 text-sm text-[#a89a78]">
+                <ul className="space-y-2 text-sm text-[#475569]">
                   {[
                     "Raportare cod de reducere expirat sau incorect",
                     "Solicitare adăugare magazin nou",
@@ -122,16 +122,16 @@ export default function ContactPage() {
                     "Solicitare retragere date (GDPR)",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-2">
-                      <span className="text-[#d8c091] mt-0.5 shrink-0">✓</span>
+                      <span className="text-[#0d9488] mt-0.5 shrink-0">✓</span>
                       {item}
                     </li>
                   ))}
                 </ul>
               </div>
 
-              <div className="bg-[#15120c] border border-[#26211a] rounded-2xl p-6">
-                <h3 className="font-bold text-white mb-2">Despre AmCupon.ro</h3>
-                <p className="text-sm text-[#a89a78] leading-relaxed">
+              <div className="bg-[#ffffff] border border-[#e2e8f0] rounded-xl p-6">
+                <h3 className="font-bold text-[#0f172a] mb-2">Despre AmCupon.ro</h3>
+                <p className="text-sm text-[#475569] leading-relaxed">
                   AmCupon.ro este un site de coduri de reducere 100% gratuit pentru utilizatori.
                   Lucrăm cu peste 300 magazine partenere prin platformele 2Performant și Profitshare.
                   Actualizăm codurile zilnic și verificăm fiecare promoție înainte de publicare.
@@ -141,14 +141,14 @@ export default function ContactPage() {
           </div>
         </div>
 
-        <footer className="border-t border-[#26211a] mt-12 py-6 text-center text-sm text-[#8c8064]">
+        <footer className="border-t border-[#e2e8f0] mt-12 py-6 text-center text-sm text-[#64748b]">
           <p>
             © {new Date().getFullYear()} AmCupon.ro ·{" "}
-            <Link href="/confidentialitate" className="hover:text-[#d8c091]">Confidențialitate</Link>
+            <Link href="/confidentialitate" className="hover:text-[#0d9488]">Confidențialitate</Link>
             {" · "}
-            <Link href="/termeni" className="hover:text-[#d8c091]">Termeni</Link>
+            <Link href="/termeni" className="hover:text-[#0d9488]">Termeni</Link>
             {" · "}
-            <Link href="/" className="hover:text-[#d8c091]">Toate reducerile</Link>
+            <Link href="/" className="hover:text-[#0d9488]">Toate reducerile</Link>
           </p>
         </footer>
       </div>

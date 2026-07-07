@@ -86,10 +86,10 @@ async function sendWelcomeEmail(email: string, apiKey: string): Promise<boolean>
   const html = `<!DOCTYPE html>
 <html lang="ro">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bun venit la AmCupon.ro!</title></head>
-<body style="margin:0;padding:0;background:#f8fafc;font-family:Arial,sans-serif;">
+<body style="margin:0;padding:0;background:#F7F9FC;font-family:Arial,sans-serif;">
   <div style="max-width:600px;margin:0 auto;background:#ffffff;border-radius:16px;overflow:hidden;margin-top:24px;margin-bottom:24px;box-shadow:0 4px 24px rgba(0,0,0,0.08);">
     <!-- Header -->
-    <div style="background:linear-gradient(135deg,#b8912e 0%,#c9a63e 100%);padding:40px 32px;text-align:center;">
+    <div style="background:linear-gradient(135deg,#0d9488 0%,#14b8a6 100%);padding:40px 32px;text-align:center;">
       <div style="display:inline-flex;align-items:center;gap:8px;margin-bottom:16px;">
         <span style="background:rgba(255,255,255,0.2);color:#fff;font-weight:900;font-size:16px;padding:4px 10px;border-radius:8px;">Am</span>
         <span style="color:#fff;font-weight:900;font-size:24px;">Cupon.ro</span>
@@ -105,7 +105,7 @@ async function sendWelcomeEmail(email: string, apiKey: string): Promise<boolean>
       </p>
       <!-- CTA principal -->
       <div style="text-align:center;margin:32px 0;">
-        <a href="https://amcupon.ro/#promotii" style="background:#b8912e;color:#fff;font-weight:900;font-size:16px;padding:16px 40px;border-radius:12px;text-decoration:none;display:inline-block;">
+        <a href="https://amcupon.ro/#promotii" style="background:#0d9488;color:#fff;font-weight:900;font-size:16px;padding:16px 40px;border-radius:12px;text-decoration:none;display:inline-block;">
           Vezi ofertele active acum →
         </a>
       </div>
@@ -120,7 +120,7 @@ async function sendWelcomeEmail(email: string, apiKey: string): Promise<boolean>
           {emoji:"🏡",label:"Casă & Grădină",href:"/categorii/casa-gradina"},
           {emoji:"🏃",label:"Sport",href:"/categorii/sport"},
         ].map(c => `
-        <a href="https://amcupon.ro${c.href}" style="display:flex;align-items:center;gap:8px;padding:10px 14px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:10px;text-decoration:none;color:#374151;font-size:13px;font-weight:600;">
+        <a href="https://amcupon.ro${c.href}" style="display:flex;align-items:center;gap:8px;padding:10px 14px;background:#F7F9FC;border:1px solid #e5e7eb;border-radius:10px;text-decoration:none;color:#374151;font-size:13px;font-weight:600;">
           <span>${c.emoji}</span>${c.label}
         </a>`).join("")}
       </div>
@@ -129,18 +129,18 @@ async function sendWelcomeEmail(email: string, apiKey: string): Promise<boolean>
       <div style="margin-bottom:32px;">
         ${["emag.ro","fashiondays.ro","drmax.ro","noriel.ro","carturesti.ro"].map(m => {
           const label = m.split(".")[0].charAt(0).toUpperCase() + m.split(".")[0].slice(1);
-          return `<a href="https://amcupon.ro/cod-reducere/${m}" style="display:inline-block;margin:4px;padding:6px 14px;background:#faf3e0;border:1px solid #e6d5a8;border-radius:20px;text-decoration:none;color:#8a6a1e;font-size:13px;font-weight:700;">Cod ${label}</a>`;
+          return `<a href="https://amcupon.ro/cod-reducere/${m}" style="display:inline-block;margin:4px;padding:6px 14px;background:#f0fdfa;border:1px solid #e6d5a8;border-radius:20px;text-decoration:none;color:#8a6a1e;font-size:13px;font-weight:700;">Cod ${label}</a>`;
         }).join("")}
       </div>
       <!-- Extensie -->
       <div style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:12px;padding:20px;margin-bottom:24px;">
         <p style="margin:0 0 8px;color:#0c4a6e;font-weight:700;font-size:14px;">🧩 Extensia Chrome — reduceri automate</p>
         <p style="margin:0 0 12px;color:#0369a1;font-size:13px;">Instalează extensia AmCupon și primești automat cele mai bune coduri când ești pe orice site partener.</p>
-        <a href="https://chromewebstore.google.com/detail/mahfankpalkgognhnllkgdkjncmmkllb" style="background:#b8912e;color:#fff;font-weight:700;font-size:13px;padding:8px 20px;border-radius:8px;text-decoration:none;display:inline-block;">Instalează gratuit</a>
+        <a href="https://chromewebstore.google.com/detail/mahfankpalkgognhnllkgdkjncmmkllb" style="background:#0d9488;color:#fff;font-weight:700;font-size:13px;padding:8px 20px;border-radius:8px;text-decoration:none;display:inline-block;">Instalează gratuit</a>
       </div>
     </div>
     <!-- Footer -->
-    <div style="background:#f8fafc;border-top:1px solid #e5e7eb;padding:20px 32px;text-align:center;">
+    <div style="background:#F7F9FC;border-top:1px solid #e5e7eb;padding:20px 32px;text-align:center;">
       <p style="color:#9ca3af;font-size:12px;margin:0 0 8px;">AmCupon.ro — Coduri de reducere verificate zilnic</p>
       <p style="color:#d1d5db;font-size:11px;margin:0;">
         Primești acest email deoarece te-ai abonat pe amcupon.ro.<br>

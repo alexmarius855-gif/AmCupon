@@ -17,17 +17,17 @@ export const metadata: Metadata = {
 };
 
 const OCAZII = [
-  { slug: "ea",         emoji: "💝", titlu: "Cadouri pentru Ea",       desc: "Bijuterii, fashion, parfumuri", color: "#c9a63e", popular: true },
-  { slug: "el",         emoji: "🎁", titlu: "Cadouri pentru El",       desc: "Electronice, auto, sport",     color: "#b8912e", popular: true },
-  { slug: "copii",      emoji: "🧸", titlu: "Cadouri Copii",           desc: "Jucarii, carti, sport",        color: "#c9a63e", popular: true },
-  { slug: "mama",       emoji: "🌸", titlu: "Cadouri Mama",            desc: "Bijuterii, cosmetice, rasfat", color: "#c9a63e", popular: true },
+  { slug: "ea",         emoji: "💝", titlu: "Cadouri pentru Ea",       desc: "Bijuterii, fashion, parfumuri", color: "#14b8a6", popular: true },
+  { slug: "el",         emoji: "🎁", titlu: "Cadouri pentru El",       desc: "Electronice, auto, sport",     color: "#0d9488", popular: true },
+  { slug: "copii",      emoji: "🧸", titlu: "Cadouri Copii",           desc: "Jucarii, carti, sport",        color: "#14b8a6", popular: true },
+  { slug: "mama",       emoji: "🌸", titlu: "Cadouri Mama",            desc: "Bijuterii, cosmetice, rasfat", color: "#14b8a6", popular: true },
   { slug: "tata",       emoji: "👨", titlu: "Cadouri Tata",            desc: "Gadgeturi, auto, unelte",      color: "#1e293b", popular: false },
-  { slug: "botez",      emoji: "👶", titlu: "Cadouri Botez",           desc: "Bijuterii argint, personalizate", color: "#d8c091", popular: true },
+  { slug: "botez",      emoji: "👶", titlu: "Cadouri Botez",           desc: "Bijuterii argint, personalizate", color: "#0d9488", popular: true },
   { slug: "nasi",       emoji: "💍", titlu: "Cadouri Nasi",            desc: "Bijuterii premium, elegante",  color: "#d97706", popular: true },
-  { slug: "nastere",    emoji: "🎂", titlu: "Cadouri Nastere",         desc: "Bijuterii, parfumuri, gadgeturi", color: "#b8912e", popular: false },
+  { slug: "nastere",    emoji: "🎂", titlu: "Cadouri Nastere",         desc: "Bijuterii, parfumuri, gadgeturi", color: "#0d9488", popular: false },
   { slug: "valentine",  emoji: "❤️", titlu: "Valentine's Day",         desc: "Bijuterii romantice, parfumuri", color: "#ef4444", popular: false },
   { slug: "craciun",    emoji: "🎄", titlu: "Cadouri Craciun",         desc: "Cadouri pentru toata familia", color: "#16a34a", popular: false },
-  { slug: "absolvire",  emoji: "🎓", titlu: "Cadouri Absolvire",       desc: "Gadgeturi, bijuterii, carti",  color: "#b8912e", popular: false },
+  { slug: "absolvire",  emoji: "🎓", titlu: "Cadouri Absolvire",       desc: "Gadgeturi, bijuterii, carti",  color: "#0d9488", popular: false },
   { slug: "pasti",      emoji: "🐣", titlu: "Cadouri Paste",           desc: "Seturi cadou, bijuterii, flori", color: "#84cc16", popular: false },
 ];
 
@@ -43,32 +43,32 @@ export default function CadouriPage() {
   const altele   = OCAZII.filter(o => !o.popular);
 
   return (
-    <div className="min-h-screen bg-[#0b0a07]">
+    <div className="min-h-screen bg-[#F7F9FC]">
 
       {/* Header breadcrumb */}
-      <header className="bg-[#15120c] border-b border-[#26211a]">
+      <header className="bg-[#ffffff] border-b border-[#e2e8f0]">
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-2 text-sm">
           <Link href="/" className="flex items-center gap-1.5 shrink-0">
-            <div className="bg-[#b8912e] text-white font-black text-sm px-1.5 py-0.5 rounded-md">Am</div>
-            <span className="font-black text-white">Cupon.ro</span>
+            <div className="bg-[#0d9488] text-white font-black text-sm px-1.5 py-0.5 rounded-md">Am</div>
+            <span className="font-black text-[#0f172a]">Cupon.ro</span>
           </Link>
-          <span className="text-[#473d28]">/</span>
-          <span className="text-[#c8bda2] font-semibold">Idei Cadouri</span>
+          <span className="text-[#94a3b8]">/</span>
+          <span className="text-[#334155] font-semibold">Idei Cadouri</span>
         </div>
       </header>
 
       {/* Hero */}
-      <div className="relative py-12 px-4 text-center overflow-hidden border-b border-[#26211a]"
-        style={{ background: "linear-gradient(135deg, rgba(184,145,46,0.08) 0%, rgba(236,72,153,0.06) 100%)" }}>
-        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 70% 50% at 50% 0%, rgba(184,145,46,0.12) 0%, transparent 70%)" }} />
+      <div className="relative py-12 px-4 text-center overflow-hidden border-b border-[#e2e8f0]"
+        style={{ background: "linear-gradient(135deg, rgba(13,148,136,0.08) 0%, rgba(236,72,153,0.06) 100%)" }}>
+        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 70% 50% at 50% 0%, rgba(13,148,136,0.12) 0%, transparent 70%)" }} />
         <div className="relative max-w-3xl mx-auto">
           <div className="text-5xl mb-4">🎁</div>
-          <h1 className="text-3xl md:text-4xl font-black text-white mb-3">
+          <h1 className="text-3xl md:text-4xl font-black text-[#0f172a] mb-3">
             Idei Cadouri pentru Orice Ocazie
           </h1>
-          <p className="text-[#a89a78] text-base mb-6 max-w-xl mx-auto">
+          <p className="text-[#475569] text-base mb-6 max-w-xl mx-auto">
             De la botez la Craciun, de la nasi la mama — gasesti cadoul perfect
-            din <span className="text-white font-bold">291+ magazine</span> partenere cu livrare in Romania.
+            din <span className="text-[#0f172a] font-bold">291+ magazine</span> partenere cu livrare in Romania.
           </p>
           <div className="flex flex-wrap justify-center gap-3 text-sm">
             {[
@@ -77,9 +77,9 @@ export default function CadouriPage() {
               { v: "291+", l: "Magazine partenere" },
               { v: "24h", l: "Livrare medie" },
             ].map(s => (
-              <div key={s.l} className="bg-[#15120c]/80 border border-[#37301f] rounded-xl px-4 py-2 text-center">
-                <div className="text-[#d8c091] font-black text-lg">{s.v}</div>
-                <div className="text-[#8c8064] text-xs">{s.l}</div>
+              <div key={s.l} className="bg-[#ffffff]/80 border border-[#cbd5e1] rounded-xl px-4 py-2 text-center">
+                <div className="text-[#0d9488] font-black text-lg">{s.v}</div>
+                <div className="text-[#64748b] text-xs">{s.l}</div>
               </div>
             ))}
           </div>
@@ -91,21 +91,21 @@ export default function CadouriPage() {
         {/* Ocazii populare */}
         <section className="mb-12">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-xl font-black text-white">Ocazii populare</h2>
-            <span className="text-xs text-[#d8c091] bg-[#c9a63e]/10 border border-[#c9a63e]/20 px-2 py-0.5 rounded-full font-bold">TRENDING</span>
+            <h2 className="text-xl font-black text-[#0f172a]">Ocazii populare</h2>
+            <span className="text-xs text-[#0d9488] bg-[#14b8a6]/10 border border-[#14b8a6]/20 px-2 py-0.5 rounded-full font-bold">TRENDING</span>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {populare.map(o => (
               <Link
                 key={o.slug}
                 href={`/cadouri/${o.slug}`}
-                className="group relative rounded-2xl overflow-hidden border border-[#26211a] hover:border-[#473d28] transition-all hover:-translate-y-1 hover:shadow-xl"
+                className="group relative rounded-xl overflow-hidden border border-[#e2e8f0] hover:border-[#94a3b8] transition-all hover:-translate-y-1 hover:shadow-xl"
                 style={{ background: `linear-gradient(135deg, ${o.color}15 0%, ${o.color}08 100%)` }}
               >
                 <div className="p-5">
                   <div className="text-4xl mb-3">{o.emoji}</div>
-                  <h3 className="text-white font-black text-base mb-1 group-hover:text-[#e3d1a6] transition-colors">{o.titlu}</h3>
-                  <p className="text-[#8c8064] text-xs mb-3">{o.desc}</p>
+                  <h3 className="text-[#0f172a] font-black text-base mb-1 group-hover:text-[#0f766e] transition-colors">{o.titlu}</h3>
+                  <p className="text-[#64748b] text-xs mb-3">{o.desc}</p>
                   <div
                     className="inline-flex items-center gap-1 text-xs font-bold"
                     style={{ color: o.color }}
@@ -124,17 +124,17 @@ export default function CadouriPage() {
 
         {/* Alte ocazii */}
         <section className="mb-12">
-          <h2 className="text-lg font-black text-white mb-4">Toate ocaziile</h2>
+          <h2 className="text-lg font-black text-[#0f172a] mb-4">Toate ocaziile</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
             {altele.map(o => (
               <Link
                 key={o.slug}
                 href={`/cadouri/${o.slug}`}
-                className="group flex flex-col items-center text-center bg-[#15120c] border border-[#26211a] hover:border-[#473d28] rounded-xl p-4 transition-all hover:-translate-y-0.5"
+                className="group flex flex-col items-center text-center bg-[#ffffff] border border-[#e2e8f0] hover:border-[#94a3b8] rounded-xl p-4 transition-all hover:-translate-y-0.5"
               >
                 <div className="text-3xl mb-2">{o.emoji}</div>
-                <div className="text-white text-xs font-bold group-hover:text-[#e3d1a6] transition-colors">{o.titlu}</div>
-                <div className="text-[#473d28] text-[10px] mt-1">{o.desc}</div>
+                <div className="text-[#0f172a] text-xs font-bold group-hover:text-[#0f766e] transition-colors">{o.titlu}</div>
+                <div className="text-[#94a3b8] text-[10px] mt-1">{o.desc}</div>
               </Link>
             ))}
           </div>
@@ -143,26 +143,26 @@ export default function CadouriPage() {
         {/* Filtre buget */}
         <section className="mb-12">
           <div className="flex items-center gap-3 mb-6">
-            <h2 className="text-xl font-black text-white">Cadouri dupa buget</h2>
+            <h2 className="text-xl font-black text-[#0f172a]">Cadouri dupa buget</h2>
             <span className="text-xs text-green-400 bg-green-500/10 border border-green-500/20 px-2 py-0.5 rounded-full font-bold">NOU</span>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {[
               { slug: "sub-100-lei",  emoji: "💰", label: "Sub 100 Lei",     desc: "Cadouri accesibile",   from: "#22c55e", to: "#10b981" },
-              { slug: "sub-200-lei",  emoji: "🎁", label: "Sub 200 Lei",     desc: "Raport pret/calitate", from: "#b8912e", to: "#e3d1a6" },
-              { slug: "sub-500-lei",  emoji: "💎", label: "Sub 500 Lei",     desc: "Cadouri premium",      from: "#c9a63e", to: "#b8912e" },
+              { slug: "sub-200-lei",  emoji: "🎁", label: "Sub 200 Lei",     desc: "Raport pret/calitate", from: "#0d9488", to: "#0f766e" },
+              { slug: "sub-500-lei",  emoji: "💎", label: "Sub 500 Lei",     desc: "Cadouri premium",      from: "#14b8a6", to: "#0d9488" },
               { slug: "peste-500-lei",emoji: "👑", label: "Peste 500 Lei",   desc: "Cadouri de lux",       from: "#d97706", to: "#f59e0b" },
             ].map(b => (
               <Link
                 key={b.slug}
                 href={`/cadouri/${b.slug}`}
-                className="group relative rounded-2xl border border-[#26211a] hover:border-[#473d28] transition-all hover:-translate-y-1 hover:shadow-xl overflow-hidden"
+                className="group relative rounded-xl border border-[#e2e8f0] hover:border-[#94a3b8] transition-all hover:-translate-y-1 hover:shadow-xl overflow-hidden"
                 style={{ background: `linear-gradient(135deg, ${b.from}15 0%, ${b.to}08 100%)` }}
               >
                 <div className="p-5 text-center">
                   <div className="text-4xl mb-3">{b.emoji}</div>
-                  <div className="text-white font-black text-sm mb-1 group-hover:text-[#e3d1a6] transition-colors">{b.label}</div>
-                  <div className="text-[#8c8064] text-xs">{b.desc}</div>
+                  <div className="text-[#0f172a] font-black text-sm mb-1 group-hover:text-[#0f766e] transition-colors">{b.label}</div>
+                  <div className="text-[#64748b] text-xs">{b.desc}</div>
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 h-0.5 opacity-40 group-hover:opacity-100 transition-opacity"
                   style={{ background: `linear-gradient(90deg, ${b.from}, transparent)` }} />
@@ -173,21 +173,21 @@ export default function CadouriPage() {
 
         {/* Sfaturi */}
         <section className="mb-10">
-          <h2 className="text-lg font-black text-white mb-4">Sfaturi pentru alegerea cadoului perfect</h2>
+          <h2 className="text-lg font-black text-[#0f172a] mb-4">Sfaturi pentru alegerea cadoului perfect</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {SFATURI.map((s, i) => (
-              <div key={i} className="bg-[#15120c] border border-[#26211a] rounded-xl p-4">
+              <div key={i} className="bg-[#ffffff] border border-[#e2e8f0] rounded-xl p-4">
                 <div className="text-2xl mb-2">{s.emoji}</div>
-                <h3 className="text-sm font-bold text-white mb-1">{s.titlu}</h3>
-                <p className="text-xs text-[#8c8064] leading-relaxed">{s.desc}</p>
+                <h3 className="text-sm font-bold text-[#0f172a] mb-1">{s.titlu}</h3>
+                <p className="text-xs text-[#64748b] leading-relaxed">{s.desc}</p>
               </div>
             ))}
           </div>
         </section>
 
         {/* Link magazine relevante */}
-        <section className="border-t border-[#26211a] pt-8">
-          <h2 className="text-base font-bold text-white mb-4">Magazine recomandate pentru cadouri</h2>
+        <section className="border-t border-[#e2e8f0] pt-8">
+          <h2 className="text-base font-bold text-[#0f172a] mb-4">Magazine recomandate pentru cadouri</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/noriel", label: "Noriel — Jucarii" },
@@ -201,7 +201,7 @@ export default function CadouriPage() {
               <Link
                 key={m.href}
                 href={m.href}
-                className="text-sm text-[#a89a78] hover:text-white bg-[#15120c] border border-[#26211a] hover:border-[#c9a63e]/40 px-3 py-2 rounded-lg transition-all"
+                className="text-sm text-[#475569] hover:text-[#0f172a] bg-[#ffffff] border border-[#e2e8f0] hover:border-[#14b8a6]/40 px-3 py-2 rounded-lg transition-all"
               >
                 {m.label}
               </Link>
