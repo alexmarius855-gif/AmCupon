@@ -58,7 +58,8 @@ STATIC_PAGES = [
 def load_json(path, default):
     if not os.path.exists(path):
         return default
-    with open(path, encoding="utf-8") as f:
+    # utf-8-sig: tolereaza BOM-ul UTF-8 (altfel json.load crapa si rupe pasul din pipeline)
+    with open(path, encoding="utf-8-sig") as f:
         return json.load(f)
 
 
