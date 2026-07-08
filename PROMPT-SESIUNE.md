@@ -16,7 +16,7 @@ PROIECT PRINCIPAL: AmCupon.ro — site afiliat LIVE
 
 CITESTE OBLIGATORIU inainte de orice modificare:
 1. C:\Users\alexm\Projects\afiliere-site\CLAUDE.md  (stare tehnica completa)
-2. C:\Users\alexm\Projects\afiliere-site\STRATEGIE.md  (viziune + nise + promovare)
+2. C:\Users\alexm\Projects\afiliere-site\docs\strategie\STRATEGIE.md  (viziune + nise + promovare)
 
 REGULI FIXE (nu se negociaza):
 - Raspunde INTOTDEAUNA in romana

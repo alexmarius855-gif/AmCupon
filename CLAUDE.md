@@ -13,7 +13,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
 **UPDATE 03.07.2026 (audit dur + curățenie ONESTITATE — NEPUSHED încă):**
-- **Audit complet tehnic + competitori** în `AUDIT-REMODELARE-2026-07.md` (root). Descoperire cheie:
+- **Audit complet tehnic + competitori** în `docs/audituri/AUDIT-REMODELARE-2026-07.md`. Descoperire cheie:
   1044 magazine, 75 cu promoții, **0 cu cod real** (`cod_cupon: ""` la toate) — site "de coduri" fără
   coduri. Decizie Alex: **hibrid onest** (limbaj cod→ofertă + coduri reale doar unde există în date).
 - **Semnale FALSE eliminate din UI** (cereau credibilitate, o distrugeau): pe homepage (`page.tsx`) +
@@ -54,9 +54,14 @@ Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Pro
 - **Iconita extensie Chrome** (`extension/generate_icons.py`): fundal slate + litera "A" emerald + punct
   verde → fundal indigo solid + litera alba + punct cyan (aliniat cu wordmark-ul "Am" din navbar).
 
-> **⭐ PLAN MASTER (strategie):** vezi `PLAN-MASTER.md` în root — busola pentru 1000 afiliați,
+> **⭐ PLAN MASTER (strategie):** vezi `docs/strategie/PLAN-MASTER.md` — busola pentru 1000 afiliați,
 > 100 site-uri, 200-500€/site/lună. Oglindit în Notion (hub "IMPERIU CLAUDE"). Citește-l la
-> începutul oricărei sesiuni strategice. `CLAUDE.md` = adevărul TEHNIC, `PLAN-MASTER.md` = adevărul de BUSINESS.
+> începutul oricărei sesiuni strategice. `CLAUDE.md` = adevărul TEHNIC, `docs/strategie/PLAN-MASTER.md` = adevărul de BUSINESS.
+>
+> **Fișiere .md de strategie/audit/operațional grupate în `docs/`** (08.07.2026): `docs/strategie/`
+> (PLAN-MASTER, STRATEGIE, NISE-MASTER, PLAN-REPLICARE-SITEURI-AFACERI), `docs/audituri/`
+> (AUDIT-PAGINI-SITE, AUDIT-REMODELARE-2026-07, CATEGORII-SEO-MASTER), `docs/operational/`
+> (ACTIUNI-VENIT, SABLON-POSTARI). Rămân în root: `AGENTS.md`, `CLAUDE.md`, `PROMPT-SESIUNE.md`.
 
 **UPDATE 30.06.2026 (UPDATE MASIV UI — PUSHED + LIVE):**
 - **Audit workflow (8 agenți paraleli) → 57 findings, reparate cele high/medium.** Plan complet în

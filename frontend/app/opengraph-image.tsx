@@ -37,7 +37,7 @@ export default function OGImage() {
           Coduri de reducere verificate zilnic
         </div>
         <div style={{ color: "#64748b", fontSize: 20, marginTop: 28, display: "flex" }}>
-          370+ magazine partenere
+          1000+ magazine partenere
         </div>
       </div>
     ),

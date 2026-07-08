@@ -105,7 +105,7 @@ export default function BlackFridayPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(bfJsonLd) }}
       />
 
-      <div className="min-h-screen bg-gray-950 text-[#0f172a]">
+      <div className="min-h-screen bg-gray-950 text-white">
         {/* Header */}
 
         {/* Breadcrumb */}
@@ -180,7 +180,7 @@ export default function BlackFridayPage() {
                   className="group bg-gray-900 border border-gray-800 hover:border-[#14b8a6] rounded-xl p-5 transition-all hover:shadow-lg hover:shadow-[#14b8a6]/10"
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`w-12 h-12 rounded-xl ${culoare} flex items-center justify-center text-[#0f172a] font-black text-xl shrink-0`}>
+                    <div className={`w-12 h-12 rounded-xl ${culoare} flex items-center justify-center text-white font-black text-xl shrink-0`}>
                       {m.logo_url ? (
                         // eslint-disable-next-line @next/next/no-img-element
                         <img
@@ -196,7 +196,7 @@ export default function BlackFridayPage() {
 
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 mb-1 flex-wrap">
-                        <span className="font-bold text-[#0f172a] text-sm">{nume}</span>
+                        <span className="font-bold text-white text-sm">{nume}</span>
                         {coduri.length > 0 && (
                           <span className="text-xs font-bold bg-[#0d9488] text-white px-1.5 py-0.5 rounded-full shrink-0">
                             {coduri.length} COD
@@ -232,12 +232,12 @@ export default function BlackFridayPage() {
         {/* SEO Content */}
         <section className="bg-gray-900 border-t border-gray-800">
           <div className="max-w-3xl mx-auto px-4 py-12">
-            <h2 className="text-2xl font-black text-[#0f172a] mb-6">
+            <h2 className="text-2xl font-black text-white mb-6">
               Ghid Black Friday {an} România
             </h2>
             <div className="space-y-6 text-gray-400 text-sm leading-relaxed">
               <div>
-                <h3 className="text-[#0f172a] font-bold mb-2">Când are loc Black Friday {an}?</h3>
+                <h3 className="text-white font-bold mb-2">Când are loc Black Friday {an}?</h3>
                 <p>
                   Black Friday {an} are loc în luna noiembrie, în ultima vineri a lunii. Însă mulți
                   retaileri români (eMAG, Altex, Dedeman, FashionDays) lansează oferte cu săptămâni
@@ -246,7 +246,7 @@ export default function BlackFridayPage() {
                 </p>
               </div>
               <div>
-                <h3 className="text-[#0f172a] font-bold mb-2">Cum obții cele mai mari reduceri de Black Friday?</h3>
+                <h3 className="text-white font-bold mb-2">Cum obții cele mai mari reduceri de Black Friday?</h3>
                 <ul className="list-disc list-inside space-y-1">
                   <li>Adaugă produsele la Favorite sau în coș înainte de BF</li>
                   <li>Compară prețul curent cu prețul de dinainte de BF</li>
@@ -256,11 +256,11 @@ export default function BlackFridayPage() {
                 </ul>
               </div>
               <div>
-                <h3 className="text-[#0f172a] font-bold mb-2">Ce magazine au Black Friday în România?</h3>
+                <h3 className="text-white font-bold mb-2">Ce magazine au Black Friday în România?</h3>
                 <p>
                   Cele mai mari magazine online participă la Black Friday: eMAG, Altex, Dedeman,
                   FashionDays, Notino, Answear, Noriel, Decathlon, Elefant și multe altele.
-                  AmCupon.ro agregă ofertele de la peste 200 de magazine partenere, cu coduri
+                  AmCupon.ro agregă ofertele de la peste 1000 de magazine partenere, cu coduri
                   verificate și actualizate zilnic.
                 </p>
               </div>

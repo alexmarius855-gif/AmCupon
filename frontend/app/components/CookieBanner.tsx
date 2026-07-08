@@ -27,13 +27,13 @@ export default function CookieBanner() {
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 p-4 md:p-6">
-      <div className="max-w-4xl mx-auto bg-gray-900 text-[#0f172a] rounded-xl shadow-2xl p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+      <div className="max-w-4xl mx-auto bg-gray-900 text-white rounded-xl shadow-2xl p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4">
         {/* Icon */}
         <span className="text-2xl shrink-0">🍪</span>
 
         {/* Text */}
         <div className="flex-1 text-sm">
-          <p className="font-bold text-[#0f172a] mb-0.5">Folosim cookie-uri</p>
+          <p className="font-bold text-white mb-0.5">Folosim cookie-uri</p>
           <p className="text-gray-400 leading-relaxed">
             Folosim cookie-uri pentru analiza traficului (Google Analytics), publicitate (Google AdSense) si tracking afiliat (2Performant). Date anonime, fara vanzare catre terti.{" "}
             <Link href="/confidentialitate" className="text-[#0d9488] hover:underline">
@@ -46,7 +46,7 @@ export default function CookieBanner() {
         <div className="flex gap-2 shrink-0 w-full sm:w-auto">
           <button
             onClick={decline}
-            className="flex-1 sm:flex-none px-4 py-2 rounded-xl border border-gray-600 text-gray-300 hover:border-gray-400 hover:text-[#0f172a] text-sm font-semibold transition-colors"
+            className="flex-1 sm:flex-none px-4 py-2 rounded-xl border border-gray-600 text-gray-300 hover:border-gray-400 hover:text-white text-sm font-semibold transition-colors"
           >
             Refuz
           </button>
