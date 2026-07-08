@@ -3,8 +3,8 @@
 > Audit bazat pe cod + date reale, nu pe presupuneri. Cifre verificate direct în
 > `output.json` / `products.json` / pipeline la data auditului. Competitori: cercetare
 > live (Kuplio, Picodi bot-blocate la fetch → date din SimilarWeb/Chrome Store/căutare).
-> Regulile de business rămân în `PLAN-MASTER.md`; nișele în `NISE-MASTER.md`; acest
-> fișier = DOAR auditul tehnic + deciziile de remodelare.
+> Regulile de business rămân în `docs/strategie/PLAN-MASTER.md`; nișele în
+> `docs/strategie/NISE-MASTER.md`; acest fișier = DOAR auditul tehnic + deciziile de remodelare.
 
 ---
 
@@ -138,10 +138,10 @@ Ai deja `ReviewSection.tsx` + Supabase (0 recenzii reale). Kuplio are review-uri
   "ofertă puternică" pe carduri, cu criteriu explicat.
 - Recenzii user rămân deschise, dar NU inventăm — până vin, folosim verdict editorial marcat clar.
 
-## J. Nișe de atacat — vezi `NISE-MASTER.md` (nu duplicăm)
+## J. Nișe de atacat — vezi `docs/strategie/NISE-MASTER.md` (nu duplicăm)
 
 Top acum (scor ≥40): eSIM, hosting, suplimente, AI tools, cadouri. Comision mare + long-tail
-unde concurenții mari sunt slabi. Sistemul de testare 14-30 zile e în `PLAN-REPLICARE-SITEURI-AFACERI.md`.
+unde concurenții mari sunt slabi. Sistemul de testare 14-30 zile e în `docs/strategie/PLAN-REPLICARE-SITEURI-AFACERI.md`.
 
 ## K. Servicii proprii — vezi `Desktop/Claude/Imperiu/VIBETRACE-GROWTH-SUITE.md`
 
