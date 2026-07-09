@@ -1,28 +1,15 @@
 [
   {
-    "id": 271088,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/271047/original/271047.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=583578da7&aff_code=541547473&campaign_unique=6390e3cfb",
-    "landing_raw": "https://www.drmax.ro/max-days-frumusete-si-ingrijire",
+    "id": 271114,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/271073/original/271073.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=457679864&aff_code=541547473&campaign_unique=6390e3cfb",
+    "landing_raw": "https://www.drmax.ro/marca-proprie",
     "width": 1050,
     "height": 1050,
     "merchant": "drmax.ro/",
     "merchant_slug": "drmax-ro",
-    "name": "Max Days - Frumusete",
-    "category": "Max Days - Frumusete",
-    "b_type": "image"
-  },
-  {
-    "id": 271082,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/271041/original/271041.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=1dbca74c5&aff_code=541547473&campaign_unique=6390e3cfb",
-    "landing_raw": "https://www.drmax.ro/max-days-mama-si-copilul",
-    "width": 1050,
-    "height": 1050,
-    "merchant": "drmax.ro/",
-    "merchant_slug": "drmax-ro",
-    "name": "Campanie Max Days - Mama si copilul",
-    "category": "Campanie Max Days - Mama si copilul",
+    "name": "Marca Proprie Dr. Max",
+    "category": "Marca Proprie Dr. Max",
     "b_type": "image"
   }
 ]
