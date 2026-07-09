@@ -29022,43 +29022,5 @@
     "categorie_slug": "casa-gradina",
     "scor_final": 0,
     "platforma": "profitshare"
-  },
-  {
-    "magazin": "advertisertest.eu/production/test944",
-    "url": "https://advertisertest.eu/production/test944",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fadvertisertest.eu%2Fproduction%2Ftest944",
-    "logo_url": "",
-    "categorie": "Online Mall",
-    "categorie_slug": "online-mall",
-    "comision": "",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "medium",
-    "canal_recomandat": "Coupon, Content",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": true,
-    "zile_ramase": 265,
-    "promotii": [
-      {
-        "nume": "testCampaign",
-        "descriere": "asd",
-        "cod_cupon": "123",
-        "landing_page": "",
-        "zile_ramase": 265,
-        "expira": "2027-03-31",
-        "sursa": "csv_import"
-      }
-    ],
-    "folosit_de": 273,
-    "procent_succes": 85,
-    "exclusiv": true,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-07-09",
-    "scor_final": 50.0,
-    "program_id": "",
-    "unique_code": "",
-    "sursa_import": "csv"
   }
 ]

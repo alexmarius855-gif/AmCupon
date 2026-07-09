@@ -12,7 +12,7 @@ formate gata de copiat:
 Structura de copywriting (imprumutata de la conturile de deal-uri care convertesc):
   1. HOOK   — numarul reducerii in fata, curiozitate
   2. OFERTA — ce primesti + codul
-  3. URGENTA/DOVADA — expira in X / verificat azi / rata de succes
+  3. URGENTA/DOVADA — expira in X / verificat azi
   4. CTA    — o singura actiune clara + link
 
 Link-ul duce pe pagina de pe site (amcupon.ro/cod-reducere/{slug}) — NU direct
@@ -83,7 +83,6 @@ def extrage_procent(*texte) -> str:
 def construieste_blocuri(m: dict):
     slug   = m.get("magazin", "")
     n      = m.get("magazin_display") or nume(slug)
-    succes = m.get("procent_succes", 0)
     categ  = m.get("categorie_slug", "")
     ht     = HASHTAG_CATEG.get(categ, HASHTAG_DEFAULT) + f" #{n.lower().replace(' ', '')}"
     link   = f"{SITE_URL}/cod-reducere/{slug}"
@@ -122,8 +121,8 @@ def construieste_blocuri(m: dict):
         wall.append(f"🎟️ Cod verificat: {cod}")
     if 0 < zile <= 7:
         wall.append(f"⏳ Expiră în {zile} {'zi' if zile == 1 else 'zile'} — prinde-l până nu zboară")
-    if succes >= 50:
-        wall.append(f"📊 Funcționează (rată {succes}% azi)")
+    else:
+        wall.append("✅ Verificat azi de echipa AmCupon")
     wall += [
         "",
         ("👉 Iei codul + mergi la magazin aici:" if cod else "👉 Vezi oferta + mergi la magazin aici:"),

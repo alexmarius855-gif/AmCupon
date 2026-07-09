@@ -48,6 +48,12 @@ from urllib.parse import quote
 AFF_CODE = "541547473"
 QUICKLINK_UNIQUE = "bb3071a7d"
 
+# Programe de test/sandbox ale retelelor de afiliere (acelasi pattern ca in
+# merge_platforms.py). Ex: "advertisertest.eu/production/test944" cu promotia
+# "testCampaign" — s-a scurs odata in output.json cu cod fals "123" pentru ca
+# acest import CSV nu avea filtrul, desi merge_platforms.py il are.
+_TEST_PATTERN = re.compile(r"test\d*\.|/test|-test\.|^test\.|sandbox|\bdemo\.|example\.com", re.I)
+
 
 def build_quicklink(target_url: str) -> str:
     """Construieste link afiliat 2P care redirecteaza catre target_url."""
@@ -356,6 +362,7 @@ def main():
         "magazin_nou":      0,
         "magazin_existent": 0,
         "not_found_skip":   0,
+        "test_skip":        0,
     }
     not_found = []
 
@@ -364,6 +371,11 @@ def main():
     for item in promotii_csv:
         slug     = item["slug_magazin"]
         promotie = item["promotie"]
+
+        if _TEST_PATTERN.search(slug):
+            stats["test_skip"] += 1
+            continue
+
         idx      = find_magazin(magazine, slug)
 
         if idx is not None:

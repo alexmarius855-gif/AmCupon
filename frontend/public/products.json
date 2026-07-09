@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-09T09:06:00Z",
-  "count": 3520,
+  "count": 3519,
   "products": [
     {
       "id": "promo_curteaveche.ro_0",
@@ -1065,25 +1065,6 @@
       "is_promo": true,
       "cod_cupon": "LAMODA",
       "zile_ramase": 3631
-    },
-    {
-      "id": "promo_advertisertest.eu/production/test944_0",
-      "title": "testCampaign — Cod: 123",
-      "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fadvertisertest.eu%2Fproduction%2Ftest944",
-      "url_original": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fadvertisertest.eu%2Fproduction%2Ftest944",
-      "image": "",
-      "price": 0.0,
-      "old_price": null,
-      "discount_pct": 0,
-      "category": "Online Mall",
-      "cat_slug": "electronice",
-      "brand": "Advertisertest",
-      "merchant": "Advertisertest",
-      "merchant_slug": "advertisertest.eu/production/test944",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "123",
-      "zile_ramase": 265
     },
     {
       "id": "promo_pickndazzle.com_0",

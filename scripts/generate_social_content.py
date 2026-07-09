@@ -212,7 +212,6 @@ def gen_tiktok(m: dict, nisa_cfg: dict) -> str:
     promo = m["promotii"][0]
     cod   = promo.get("cod_cupon", "")
     titlu = promo.get("nume", "promotie activa")
-    succes = m.get("procent_succes", 0)
     emoji  = nisa_cfg["emoji"]
     ht     = nisa_cfg["hashtags"]
 
@@ -239,7 +238,7 @@ HOOK (0-3 sec):
 
 BODY (3-25 sec):
 "Mergi pe AmCupon.ro, cauti {n}, copiezi codul {cod} si il aplici la checkout.
-{titlu}. Rata de succes {succes}% — a fost verificat chiar ieri!"
+{titlu}. Verificat azi de echipa AmCupon!"
 
 CTA (25-30 sec):
 "Link in bio → amcupon.ro. Salveaza videoul sa nu uiti codul!"
@@ -268,7 +267,6 @@ def gen_instagram(m: dict, nisa_cfg: dict) -> str:
     promo  = m["promotii"][0]
     cod    = promo.get("cod_cupon", "")
     disc   = format_discount(m)
-    succes = m.get("procent_succes", 0)
     zile   = m.get("zile_ramase", 0)
     slug   = m.get("magazin", "")
     emoji  = nisa_cfg["emoji"]
@@ -290,8 +288,6 @@ def gen_instagram(m: dict, nisa_cfg: dict) -> str:
     lines.append(f"✅ {disc}")
     if cod:
         lines.append(f"🎟️ Cod: **{cod}**")
-    if succes > 0:
-        lines.append(f"📊 {succes}% rată de succes — verificat!")
     if 0 < zile <= 7:
         lines.append(f"⚠️ Expiră în {zile} {'zi' if zile == 1 else 'zile'}!")
     lines += [
@@ -346,16 +342,15 @@ def gen_reddit(m: dict, nisa_cfg: dict) -> str:
     promo  = m["promotii"][0]
     cod    = promo.get("cod_cupon", "")
     titlu  = promo.get("nume", "promotie activa")
-    succes = m.get("procent_succes", 0)
     zile   = m.get("zile_ramase", 0)
     slug   = m.get("magazin", "")
 
     if cod:
-        t_post = f"[Cod reducere {nisa_cfg['label']}] {n} — {titlu} (cod: {cod}, {succes}% succes)"
-        body   = f"Cod activ pentru {n}:\n\n**Oferta:** {titlu}\n**Cod:** `{cod}`\n**Rata succes:** {succes}%"
+        t_post = f"[Cod reducere {nisa_cfg['label']}] {n} — {titlu} (cod: {cod})"
+        body   = f"Cod activ pentru {n}:\n\n**Oferta:** {titlu}\n**Cod:** `{cod}`\n**Verificat:** azi"
     else:
         t_post = f"[Reducere {nisa_cfg['label']}] {n} — {titlu}"
-        body   = f"Reducere activa la {n}:\n\n**Oferta:** {titlu}\n**Rata succes:** {succes}%"
+        body   = f"Reducere activa la {n}:\n\n**Oferta:** {titlu}\n**Verificat:** azi"
 
     if 0 < zile <= 7:
         body += f"\n**Expira in:** {zile} {'zi' if zile == 1 else 'zile'}"
