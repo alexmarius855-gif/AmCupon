@@ -826,10 +826,8 @@ export default function HomeClient({
                           <a key={i} href={p.url} target="_blank" rel="sponsored noopener noreferrer"
                             className="group flex-shrink-0 w-44 bg-[#e2e8f0] border border-[#cbd5e1] hover:border-[#14b8a6]/50 rounded-xl overflow-hidden hover:shadow-xl hover:shadow-slate-300/60 hover:-translate-y-1 transition-all duration-200">
                             <div className="relative w-full aspect-square bg-[#cbd5e1] overflow-hidden">
-                              {/* eslint-disable-next-line @next/next/no-img-element */}
-                              <img src={p.image} alt={p.title}
-                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                                loading="lazy"
+                              <Image src={p.image} alt={p.title} fill sizes="176px"
+                                className="object-cover group-hover:scale-105 transition-transform duration-300"
                                 onError={e => { const el = (e.target as HTMLImageElement).closest("a"); if (el) el.style.display = "none"; }}
                               />
                               {p.discount_pct > 0 && (
@@ -878,10 +876,9 @@ export default function HomeClient({
                       <a key={i} href={p.url} target="_blank" rel="sponsored noopener noreferrer"
                         className="group bg-[#e2e8f0] border border-[#cbd5e1] hover:border-[#14b8a6]/50 rounded-xl overflow-hidden hover:shadow-xl hover:shadow-slate-300/60 hover:-translate-y-1 transition-all duration-200">
                         <div className="relative aspect-square bg-[#cbd5e1] overflow-hidden">
-                          {/* eslint-disable-next-line @next/next/no-img-element */}
-                          <img src={p.image} alt={p.title}
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                            loading="lazy"
+                          <Image src={p.image} alt={p.title} fill
+                            sizes="(min-width: 768px) 25vw, (min-width: 640px) 33vw, 50vw"
+                            className="object-cover group-hover:scale-105 transition-transform duration-300"
                             onError={e => { const el = (e.target as HTMLImageElement).closest("a"); if (el) el.style.display = "none"; }}
                           />
                           {p.discount_pct > 0 && (
