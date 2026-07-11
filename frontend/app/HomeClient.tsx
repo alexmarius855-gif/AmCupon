@@ -226,6 +226,23 @@ export default function HomeClient({
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    // Reveal la scroll — un singur observer pentru toate sectiunile .reveal,
+    // manipulare directa de clasa DOM (nu re-render React) ca sa nu coste TBT.
+    const els = document.querySelectorAll(".reveal");
+    if (!els.length || !("IntersectionObserver" in window)) return;
+    const io = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          io.unobserve(entry.target);
+        }
+      }
+    }, { threshold: 0.1, rootMargin: "0px 0px -60px 0px" });
+    els.forEach(el => io.observe(el));
+    return () => io.disconnect();
+  }, [loading]);
+
   function toggleFavorit(slug: string, e: React.MouseEvent) {
     e.preventDefault(); e.stopPropagation();
     setFavorite(prev => {
@@ -278,7 +295,14 @@ export default function HomeClient({
     <div className="gold-home min-h-screen bg-[#F7F9FC]">
       <style>{`
         .gold-home h1, .gold-home h2 { font-family: var(--font-display), Georgia, "Times New Roman", serif; letter-spacing: -0.015em; }
+        @media (prefers-reduced-motion: no-preference) {
+          .gold-home .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+          .gold-home .reveal.is-visible { opacity: 1; transform: none; }
+        }
       `}</style>
+      {/* Fara JS (ad-blocker, eroare hidratare) -> IntersectionObserver nu mai adauga is-visible.
+          Fara acest fallback continutul ar ramane opacity:0 permanent. */}
+      <noscript><style>{`.gold-home .reveal { opacity: 1 !important; transform: none !important; }`}</style></noscript>
       {/* ─── BUTON FLOTANT PRODUSE (burtiera) ─────────────────────────────── */}
       <a
         href="/produse"
@@ -535,7 +559,7 @@ export default function HomeClient({
       </section>
 
       {/* ─── CATEGORY GRID (colorat, printre primele — recunoastere instanta) ── */}
-      <section id="categorii" className="bg-[#ffffff] border-b border-[#e2e8f0] py-14 px-4">
+      <section id="categorii" className="reveal bg-[#ffffff] border-b border-[#e2e8f0] py-14 px-4">
         <div className="max-w-7xl mx-auto">
 
           {/* Header */}
@@ -724,7 +748,7 @@ export default function HomeClient({
         const revealed = coduriReveal.has(best.magazin);
         const nume = numeAfisat(best.magazin);
         return (
-          <section className="bg-[#F7F9FC] border-b border-[#e2e8f0] py-12 px-4">
+          <section className="reveal bg-[#F7F9FC] border-b border-[#e2e8f0] py-12 px-4">
             <div className="max-w-5xl mx-auto">
               <p className="text-xs font-black text-[#0d9488] uppercase tracking-widest mb-4">⭐ Oferta zilei</p>
               <div className="relative overflow-hidden rounded-xl border border-[#14b8a6]/30 bg-gradient-to-br from-[#ffffff]/60 via-[#ffffff] to-[#ffffff] p-6 sm:p-8">
@@ -997,7 +1021,7 @@ export default function HomeClient({
 
         if (ofertePct.length < 3) return null;
         return (
-          <section className="bg-gradient-to-b from-[#ffffff] to-[#F7F9FC] border-b border-[#e2e8f0] py-10 px-4">
+          <section className="reveal bg-gradient-to-b from-[#ffffff] to-[#F7F9FC] border-b border-[#e2e8f0] py-10 px-4">
             <div className="max-w-7xl mx-auto">
               <div className="flex items-center justify-between mb-6">
                 <div>
@@ -1345,7 +1369,7 @@ export default function HomeClient({
 
       {/* ─── BLOG ─────────────────────────────────────────────────────────── */}
       {blogPosts.length > 0 && (
-        <section className="bg-[#F7F9FC] border-t border-[#e2e8f0] py-14 px-4">
+        <section className="reveal bg-[#F7F9FC] border-t border-[#e2e8f0] py-14 px-4">
           <div className="max-w-7xl mx-auto">
             <div className="flex items-end justify-between mb-8">
               <div>
@@ -1393,7 +1417,7 @@ export default function HomeClient({
       )}
 
       {/* ─── FAQ (intrebari frecvente + structured data) ──────────────────── */}
-      <section className="bg-[#F7F9FC] border-t border-[#e2e8f0] py-14 px-4">
+      <section className="reveal bg-[#F7F9FC] border-t border-[#e2e8f0] py-14 px-4">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

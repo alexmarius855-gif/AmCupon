@@ -1,13 +1,19 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, Playfair_Display } from "next/font/google";
 import Script from "next/script";
+import dynamic from "next/dynamic";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 // GoogleAnalytics mutat in ConsentAnalytics (conditional pe cookie consent)
-import CookieBanner from "./components/CookieBanner";
 import AffiliateScript from "./components/AffiliateScript";
-import NewsletterPopup from "./components/NewsletterPopup";
 import ConsentAnalytics from "./components/ConsentAnalytics";
+
+// CookieBanner + NewsletterPopup randeaza null pana la timer/scroll/exit-intent —
+// JS-ul lor nu trebuie sa faca parte din bundle-ul initial pe cele 2600+ pagini.
+// (ssr:false nu e permis din Server Component in Next 16 — codesplitting merge si fara,
+// componentele randeaza oricum null pe server pana la hidratare.)
+const CookieBanner = dynamic(() => import("./components/CookieBanner"));
+const NewsletterPopup = dynamic(() => import("./components/NewsletterPopup"));
 import WebPushInit from "./components/WebPushInit";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
