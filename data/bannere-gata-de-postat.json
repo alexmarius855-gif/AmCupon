@@ -1,15 +1,15 @@
 [
   {
-    "id": 271114,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/271073/original/271073.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=457679864&aff_code=541547473&campaign_unique=6390e3cfb",
-    "landing_raw": "https://www.drmax.ro/marca-proprie",
-    "width": 1050,
-    "height": 1050,
-    "merchant": "drmax.ro/",
-    "merchant_slug": "drmax-ro",
-    "name": "Marca Proprie Dr. Max",
-    "category": "Marca Proprie Dr. Max",
+    "id": 271151,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/271110/original/271110.png",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=dbf6b0fc3&aff_code=541547473&campaign_unique=2a0abc2c5",
+    "landing_raw": "https://www.sportmaniac.ro",
+    "width": 1200,
+    "height": 1200,
+    "merchant": "sportmaniac.ro ",
+    "merchant_slug": "sportmaniac-ro-d6c6ad9a-5af8-4299-ad53-4c64c644f159",
+    "name": "10-12 IULIE 2026: 15% reducere cu codul HOT15",
+    "category": "10-12 IULIE 2026: 15% reducere cu codul HOT15",
     "b_type": "image"
   }
 ]
