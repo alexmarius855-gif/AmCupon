@@ -26,6 +26,11 @@
       cer indexare pt 5-10 pagini (emag, altex, oferte-azi...)
 - [ ] **Bing Webmaster Tools** la fel (5 min, trafic bonus)
 
+**12.07.2026 — audit live: doar 1 pagină indexată din 2600+, GSC deja conectat, sitemap
+valid — cauza e 0 backlinkuri externe pe un domeniu nou.** Plan detaliat cu pași exacți +
+text de copy-paste în [`BACKLINK-PLAN.md`](BACKLINK-PLAN.md). Prioritate mai mare decât
+orice alt fix de cod acum.
+
 ### D. Captează audiența (recurring) — 15 min
 - [ ] **Brevo → validează sender-ul** ca să pornească newsletterul
 
