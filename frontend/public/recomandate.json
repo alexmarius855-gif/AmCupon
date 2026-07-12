@@ -9,6 +9,15 @@
   "oferta": "Faturis Online e-Factura"
  },
  {
+  "magazin": "emag.ro",
+  "nume": "Emag",
+  "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_emag.ro_1570027386.png",
+  "categorie": "Marketplace",
+  "comision": 20.0,
+  "are_cod": false,
+  "oferta": "Electro Weekend 11-13 iulie 2026"
+ },
+ {
   "magazin": "moftcollection.ro",
   "nume": "Moftcollection",
   "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13200/medium/13200.png",
@@ -81,15 +90,6 @@
   "oferta": "10% reducere extra pentru afiliatii Elindor 😊"
  },
  {
-  "magazin": "aronia-charlottenburg.ro",
-  "nume": "Aronia Charlottenburg",
-  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/8498/medium/8498.png",
-  "categorie": "Sănătate & Farmacie",
-  "comision": 12.0,
-  "are_cod": false,
-  "oferta": "TRANSPORT GRATUIT"
- },
- {
   "magazin": "lovepadel.ie",
   "nume": "Lovepadel",
   "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13796/medium/13796.png",
@@ -99,12 +99,12 @@
   "oferta": "€5.00 off entire order"
  },
  {
-  "magazin": "bookzone.ro",
-  "nume": "Bookzone",
-  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9309/medium/9309.png",
-  "categorie": "Cărți & Educație",
+  "magazin": "pint.ro",
+  "nume": "Pint",
+  "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_rca_ieftin.ro_1572950407.png",
+  "categorie": "Auto & Moto",
   "comision": 10.0,
   "are_cod": false,
-  "oferta": "Nou pe bookzone.ro: 1200 de titluri în engleză – Un adevărat festin li"
+  "oferta": "Asigurari RCA"
  }
 ]
