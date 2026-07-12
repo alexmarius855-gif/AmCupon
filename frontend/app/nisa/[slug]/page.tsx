@@ -63,6 +63,28 @@ const NISE: Record<string, {
   },
 };
 
+interface Produs {
+  category?: string;
+  merchant?: string;
+  url: string;
+  image?: string;
+  title: string;
+  discount_pct?: number;
+  brand?: string;
+  price: number;
+}
+
+interface Magazin {
+  magazin: string;
+  url_afiliat?: string;
+  url?: string;
+  logo?: string;
+  magazin_display?: string;
+  promotie?: string;
+  categorie?: string;
+  categorie_slug?: string;
+}
+
 /* ─── Params ─────────────────────────────────────────────────────────────── */
 export async function generateStaticParams() {
   return Object.keys(NISE).map((slug) => ({ slug }));
@@ -99,7 +121,7 @@ export default async function NisaPage(
 
   // Incarca produse
   const productsPath = path.join(process.cwd(), "public", "products.json");
-  let products: any[] = [];
+  let products: Produs[] = [];
   try {
     const raw  = JSON.parse(fs.readFileSync(productsPath, "utf-8"));
     products   = raw.products || [];
@@ -107,14 +129,14 @@ export default async function NisaPage(
 
   // Incarca magazine
   const outputPath = path.join(process.cwd(), "public", "output.json");
-  let magazine: any[] = [];
+  let magazine: Magazin[] = [];
   try {
     magazine = JSON.parse(fs.readFileSync(outputPath, "utf-8"));
   } catch { /* */ }
 
   // Filtreaza produse dupa categorie
   const produseFiltrate = products
-    .filter((p: any) => {
+    .filter((p: Produs) => {
       const cat = (p.category || "").toLowerCase();
       const mer = (p.merchant || "").toLowerCase();
       return nisa.catKeywords.some(kw => cat.includes(kw) || mer.includes(kw));
@@ -123,7 +145,7 @@ export default async function NisaPage(
 
   // Filtreaza magazine dupa categorie
   const magazineFiltrate = magazine
-    .filter((m: any) => {
+    .filter((m: Magazin) => {
       const cat  = (m.categorie || m.categorie_slug || "").toLowerCase();
       const name = (m.magazin || "").toLowerCase();
       return nisa.catKeywords.some(kw => cat.includes(kw) || name.includes(kw));
@@ -168,7 +190,7 @@ export default async function NisaPage(
               Magazine {nisa.titlu.toLowerCase()} cu reduceri active
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-              {magazineFiltrate.map((m: any) => (
+              {magazineFiltrate.map((m: Magazin) => (
                 <a key={m.magazin} href={m.url_afiliat || m.url}
                   target="_blank" rel="sponsored noopener noreferrer"
                   className="bg-[#ffffff] border border-[#e2e8f0] hover:border-[#0f766e] rounded-xl p-3 flex items-center gap-3 hover:shadow-md transition-all">
@@ -198,7 +220,7 @@ export default async function NisaPage(
               Produse {nisa.titlu.toLowerCase()} cu discount
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-              {produseFiltrate.map((p: any, i: number) => (
+              {produseFiltrate.map((p: Produs, i: number) => (
                 <a key={i} href={p.url} target="_blank" rel="sponsored noopener noreferrer"
                   className="group bg-[#ffffff] border border-[#e2e8f0] hover:border-[#0f766e] rounded-xl overflow-hidden hover:shadow-lg transition-all flex flex-col">
                   <div className="aspect-square bg-slate-50 flex items-center justify-center overflow-hidden relative">
@@ -209,7 +231,7 @@ export default async function NisaPage(
                     ) : (
                       <span className="text-4xl">{nisa.emoji}</span>
                     )}
-                    {p.discount_pct > 0 && (
+                    {(p.discount_pct || 0) > 0 && (
                       <span className="absolute top-2 left-2 bg-[#0d9488] text-white text-[10px] font-black px-2 py-0.5 rounded-full">
                         -{p.discount_pct}%
                       </span>

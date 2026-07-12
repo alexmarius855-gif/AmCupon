@@ -198,7 +198,7 @@ export default function AnimalePage() {
             <div className="space-y-4 text-sm text-[#475569] leading-relaxed">
               <div>
                 <h3 className="font-bold text-[#0f172a] mb-1">Petmart vs Petmax vs Bravapet</h3>
-                <p>Petmart are cel mai larg catalog si frecvent promotii la saci mari de hrana. Petmax se remarca prin livrare rapida si oferte flash. Bravapet este o alegere buna pentru hrana premium (Royal Canin, Hill's, Purina Pro Plan) cu preturi competitive.</p>
+                <p>Petmart are cel mai larg catalog si frecvent promotii la saci mari de hrana. Petmax se remarca prin livrare rapida si oferte flash. Bravapet este o alegere buna pentru hrana premium (Royal Canin, Hill&apos;s, Purina Pro Plan) cu preturi competitive.</p>
               </div>
               <div>
                 <h3 className="font-bold text-[#0f172a] mb-1">Sfaturi pentru economii la hrana pentru animale</h3>
@@ -211,7 +211,7 @@ export default function AnimalePage() {
               </div>
               <div>
                 <h3 className="font-bold text-[#0f172a] mb-1">Branduri premium la preturi mai mici</h3>
-                <p>Royal Canin, Hill's Science Diet si Purina Pro Plan sunt disponibile pe toate platformele mari de pet shop. Preturile variaza cu 20-30% intre magazine — compara inainte sa cumperi si foloseste codurile de reducere de pe AmCupon.ro.</p>
+                <p>Royal Canin, Hill&apos;s Science Diet si Purina Pro Plan sunt disponibile pe toate platformele mari de pet shop. Preturile variaza cu 20-30% intre magazine — compara inainte sa cumperi si foloseste codurile de reducere de pe AmCupon.ro.</p>
               </div>
             </div>
           </div>

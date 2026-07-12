@@ -220,8 +220,33 @@ const OCAZII: Record<string, {
   },
 };
 
+interface Produs {
+  id: string;
+  url: string;
+  image?: string;
+  title: string;
+  discount_pct?: number;
+  old_price?: number;
+  price: number;
+  merchant_slug?: string;
+  cat_slug?: string;
+}
+
+interface Promotie {
+  cod_cupon?: string;
+}
+
+interface Magazin {
+  magazin: string;
+  logo_url?: string;
+  magazin_display?: string;
+  are_promotie?: boolean;
+  cod_cupon?: boolean;
+  promotii?: Promotie[];
+}
+
 /* ─── Load products ──────────────────────────────────────────────────────── */
-function loadProducts() {
+function loadProducts(): Produs[] {
   try {
     const p = path.join(process.cwd(), "public", "products.json");
     return JSON.parse(fs.readFileSync(p, "utf-8")).products || [];
@@ -230,24 +255,24 @@ function loadProducts() {
   }
 }
 
-function getProducts(ocazie: typeof OCAZII[string], allProducts: any[]) {
-  const real = allProducts.filter((p: any) =>
-    p.image && p.image.length > 5 &&
+function getProducts(ocazie: typeof OCAZII[string], allProducts: Produs[]) {
+  const real = allProducts.filter((p: Produs) =>
+    !!p.image && p.image.length > 5 &&
     p.price > 0 &&
-    ocazie.catSluguri.includes(p.cat_slug)
+    ocazie.catSluguri.includes(p.cat_slug || "")
   );
 
   let filtered = real;
-  if (ocazie.pretMax) filtered = filtered.filter((p: any) => p.price <= ocazie.pretMax!);
-  if (ocazie.pretMin) filtered = filtered.filter((p: any) => p.price >= ocazie.pretMin!);
+  if (ocazie.pretMax) filtered = filtered.filter((p: Produs) => p.price <= ocazie.pretMax!);
+  if (ocazie.pretMin) filtered = filtered.filter((p: Produs) => p.price >= ocazie.pretMin!);
 
-  const withDiscount = filtered.filter((p: any) => p.discount_pct > 0 || p.old_price);
-  const withoutDiscount = filtered.filter((p: any) => !p.discount_pct && !p.old_price);
+  const withDiscount = filtered.filter((p: Produs) => (p.discount_pct || 0) > 0 || p.old_price);
+  const withoutDiscount = filtered.filter((p: Produs) => !p.discount_pct && !p.old_price);
   const sorted = [...withDiscount, ...withoutDiscount].slice(0, 36);
   return sorted;
 }
 
-function loadOutput() {
+function loadOutput(): Magazin[] {
   try {
     const p = path.join(process.cwd(), "public", "output.json");
     return JSON.parse(fs.readFileSync(p, "utf-8"));
@@ -302,7 +327,7 @@ export default async function CadouriSlugPage({
   const magazine = loadOutput();
 
   const promoRelevante = magazine
-    .filter((m: any) => (m.are_promotie || m.cod_cupon))
+    .filter((m: Magazin) => (m.are_promotie || m.cod_cupon))
     .slice(0, 8);
 
   const altePagini = Object.entries(OCAZII)
@@ -315,7 +340,7 @@ export default async function CadouriSlugPage({
     "name": oc.titlu,
     "description": oc.descMeta,
     "url": `https://amcupon.ro/cadouri/${slug}`,
-    "itemListElement": products.slice(0, 10).map((p: any, i: number) => ({
+    "itemListElement": products.slice(0, 10).map((p: Produs, i: number) => ({
       "@type": "ListItem",
       "position": i + 1,
       "name": p.title,
@@ -396,7 +421,7 @@ export default async function CadouriSlugPage({
                 <span className="text-sm text-[#64748b]">{products.length} produse</span>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
-                {products.map((p: any) => (
+                {products.map((p: Produs) => (
                   <a
                     key={p.id}
                     href={p.url}
@@ -413,9 +438,9 @@ export default async function CadouriSlugPage({
                         className="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300"
                         loading="lazy"
                       />
-                      {(p.discount_pct > 0 || p.old_price) && (
+                      {((p.discount_pct || 0) > 0 || p.old_price) && (
                         <div className="absolute top-2 left-2 bg-red-500 text-white text-[10px] font-black px-1.5 py-0.5 rounded-lg">
-                          -{p.discount_pct || Math.round(((p.old_price - p.price) / p.old_price) * 100)}%
+                          -{p.discount_pct || (p.old_price ? Math.round(((p.old_price - p.price) / p.old_price) * 100) : 0)}%
                         </div>
                       )}
                     </div>
@@ -469,7 +494,7 @@ export default async function CadouriSlugPage({
             <section className="mb-10">
               <h2 className="text-lg font-black text-[#0f172a] mb-4">Oferte active azi in magazine</h2>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                {promoRelevante.slice(0, 8).map((m: any, i: number) => (
+                {promoRelevante.slice(0, 8).map((m: Magazin, i: number) => (
                   <Link
                     key={i}
                     href={`/cod-reducere/${m.magazin}`}
@@ -481,8 +506,8 @@ export default async function CadouriSlugPage({
                     )}
                     <div>
                       <div className="text-[#334155] text-xs font-bold">{m.magazin_display || m.magazin}</div>
-                      {m.cod_cupon && (
-                        <div className="text-[#0d9488] text-[10px] font-mono font-black">{m.cod_cupon}</div>
+                      {m.promotii?.[0]?.cod_cupon && (
+                        <div className="text-[#0d9488] text-[10px] font-mono font-black">{m.promotii[0].cod_cupon}</div>
                       )}
                     </div>
                   </Link>

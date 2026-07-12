@@ -99,6 +99,11 @@ export default async function ProduseCategorieePage(
     },
   };
 
+  // Calculat o singura data (nu in interiorul .map) - React 19 flags Date.now() ca impur
+  // daca e apelat repetat in timpul randarii; oricum toate produsele trebuie sa aiba
+  // aceeasi data de valabilitate, nu una recalculata per-item.
+  const priceValidUntil = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString().split("T")[0];
+
   const itemListJsonLd = topProduse.length > 0 ? {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -119,7 +124,7 @@ export default async function ProduseCategorieePage(
           priceCurrency: "RON",
           availability: "https://schema.org/InStock",
           url: p.url,
-          priceValidUntil: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString().split("T")[0],
+          priceValidUntil,
           ...(p.old_price && p.old_price > (p.price || 0) ? {
             priceSpecification: {
               "@type": "PriceSpecification",

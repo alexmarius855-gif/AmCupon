@@ -304,7 +304,7 @@ export default function HomeClient({
           Fara acest fallback continutul ar ramane opacity:0 permanent. */}
       <noscript><style>{`.gold-home .reveal { opacity: 1 !important; transform: none !important; }`}</style></noscript>
       {/* ─── BUTON FLOTANT PRODUSE (burtiera) ─────────────────────────────── */}
-      <a
+      <Link
         href="/produse"
         aria-label="Vezi produsele cu reducere"
         className={`fixed bottom-5 left-1/2 -translate-x-1/2 z-40 flex items-center gap-2.5 bg-gradient-to-r from-[#0d9488] to-[#0f766e] hover:from-[#14b8a6] hover:to-[#0d9488] text-white font-black pl-4 pr-5 py-3 rounded-full shadow-2xl shadow-[#14b8a6]/50 ring-2 ring-[#0f766e]/40 transition-all duration-300 hover:scale-105 ${showFab ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 translate-y-6 pointer-events-none"}`}
@@ -316,7 +316,7 @@ export default function HomeClient({
         <span className="text-sm leading-tight text-left">Produse cu<br/>reducere</span>
         <span className="bg-slate-100 text-[10px] font-black px-2 py-0.5 rounded-full tracking-wide">HOT</span>
         <span className="text-lg">→</span>
-      </a>
+      </Link>
 
 
       {/* ─── HEADER ─────────────────────────────────────────────────────── */}

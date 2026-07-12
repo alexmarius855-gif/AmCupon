@@ -78,13 +78,13 @@ export default function CopiiPage() {
           <h2 className="text-xl font-black text-[#0f172a] mb-6 text-center">Cadouri și cumpărături pe vârstă</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {GRUPE_VARSTA.map(g => (
-              <a key={g.label} href="/categorii/copii"
+              <Link key={g.label} href="/categorii/copii"
                 className="bg-[#ffffff] border border-yellow-200 rounded-xl p-5 hover:shadow-md transition-all group">
                 <div className="text-3xl mb-2">{g.emoji}</div>
                 <h3 className="font-bold text-[#0f172a] text-sm mb-1">{g.label}</h3>
                 <p className="text-xs text-[#475569]">{g.desc}</p>
                 <p className="text-xs font-bold text-[#0d9488] mt-3 group-hover:text-[#0f766e]">Vezi reduceri →</p>
-              </a>
+              </Link>
             ))}
           </div>
         </section>

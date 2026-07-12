@@ -64,7 +64,7 @@ const DOMENII = [
 ];
 
 interface Promotie { descriere?: string; cod_cupon?: string; zile_ramase?: number; }
-interface Mag { magazin: string; url_afiliat: string; are_promotie: boolean; promotii: Promotie[]; comision?: string; }
+interface Mag { magazin: string; url_afiliat: string; are_promotie: boolean; promotii: Promotie[]; comision?: string; categorie_slug?: string; }
 
 export default function CursuriOnlinePage() {
   const allMag: Mag[] = JSON.parse(
@@ -74,7 +74,7 @@ export default function CursuriOnlinePage() {
     ["dacris.net"].includes(m.magazin) ||
     m.magazin.toLowerCase().includes("curs") ||
     m.magazin.toLowerCase().includes("edu") ||
-    (m as any).categorie_slug === "software"
+    m.categorie_slug === "software"
   );
 
   return (

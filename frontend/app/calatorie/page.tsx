@@ -84,13 +84,13 @@ export default function CalatoriePage() {
           <h2 className="text-xl font-black text-[#0f172a] mb-6 text-center">Destinații populare {an}</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {DESTINATII.map(d => (
-              <a key={d.label} href="/blog/vacanta-ieftina-romania-2026"
+              <Link key={d.label} href="/blog/vacanta-ieftina-romania-2026"
                 className="bg-[#ffffff] border border-[#e2e8f0] rounded-xl p-5 hover:shadow-md transition-all group">
                 <div className="text-3xl mb-2">{d.emoji}</div>
                 <h3 className="font-bold text-[#0f172a] text-sm mb-1">{d.label}</h3>
                 <p className="text-xs text-[#475569] mb-3">{d.desc}</p>
                 <p className="text-xs font-bold text-[#14b8a6] group-hover:text-[#14b8a6]">Ghid & reduceri →</p>
-              </a>
+              </Link>
             ))}
           </div>
         </section>

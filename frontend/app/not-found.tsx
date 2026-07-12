@@ -43,12 +43,12 @@ export default function NotFound() {
             <span className="font-black text-[#0f172a] text-xl">Cupon</span>
             <span className="text-[#0d9488] font-black text-xl">.ro</span>
           </Link>
-          <a
+          <Link
             href="/"
             className="text-sm text-[#0d9488] hover:text-[#0f766e] font-semibold transition-colors"
           >
             ← Toate reducerile
-          </a>
+          </Link>
         </div>
       </header>
 
@@ -74,24 +74,24 @@ export default function NotFound() {
 
         {/* CTA Buttons */}
         <div className="relative z-10 flex flex-col sm:flex-row gap-3 mb-12">
-          <a
+          <Link
             href="/"
             className="bg-[#0d9488] hover:bg-[#14b8a6] text-white font-bold px-7 py-3 rounded-xl transition-colors shadow-lg shadow-[#14b8a6]/20"
           >
             🏠 Acasă — toate reducerile
-          </a>
-          <a
+          </Link>
+          <Link
             href="/toate-magazinele"
             className="bg-[#ffffff] border border-[#cbd5e1] hover:border-[#14b8a6] text-[#334155] hover:text-[#0d9488] font-bold px-7 py-3 rounded-xl transition-colors"
           >
             🏪 Toate magazinele
-          </a>
-          <a
+          </Link>
+          <Link
             href="/categorii"
             className="bg-[#ffffff] border border-[#cbd5e1] hover:border-[#14b8a6] text-[#334155] hover:text-[#0d9488] font-bold px-7 py-3 rounded-xl transition-colors"
           >
             📂 Categorii
-          </a>
+          </Link>
         </div>
 
         {/* Quick category links */}
@@ -102,14 +102,14 @@ export default function NotFound() {
             { emoji: "💄", label: "Frumusețe", href: "/categorii/beauty" },
             { emoji: "🧸", label: "Jucării", href: "/categorii/copii" },
           ].map((c) => (
-            <a
+            <Link
               key={c.href}
               href={c.href}
               className="flex flex-col items-center gap-2 p-4 bg-[#ffffff] rounded-xl border border-[#e2e8f0] hover:border-[#14b8a6]/50 hover:shadow-lg hover:shadow-slate-300/60 transition-all"
             >
               <span className="text-2xl">{c.emoji}</span>
               <span className="text-xs font-semibold text-[#334155]">{c.label}</span>
-            </a>
+            </Link>
           ))}
         </div>
 
@@ -124,7 +124,7 @@ export default function NotFound() {
                 const nume = numeAfisat(store.magazin);
                 const hasCod = store.promotii.some((p) => p.cod_cupon);
                 return (
-                  <a
+                  <Link
                     key={store.magazin}
                     href={`/cod-reducere/${store.magazin}`}
                     className="flex flex-col items-center gap-2 p-4 bg-[#ffffff] rounded-xl border border-[#e2e8f0] hover:border-[#14b8a6]/50 hover:shadow-lg hover:shadow-slate-300/60 transition-all group"
@@ -138,7 +138,7 @@ export default function NotFound() {
                     {hasCod && (
                       <span className="text-xs text-[#0d9488] font-bold">COD</span>
                     )}
-                  </a>
+                  </Link>
                 );
               })}
             </div>

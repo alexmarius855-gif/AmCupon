@@ -188,7 +188,7 @@ export default function BijuteriiPage() {
               </div>
               <div>
                 <h3 className="font-bold text-[#0f172a] mb-1">Cand sa cumperi bijuterii cu reducere</h3>
-                <p>Reducerile maxime la bijuterii apar de Valentine's Day (feb), Craciun si in perioadele de lichidare (ian, iul). Abonarea la newsletter-ul magazinului preferat anunta frecvent promotii exclusive. Colectiile noi inseamna si reduceri la colectiile vechi.</p>
+                <p>Reducerile maxime la bijuterii apar de Valentine&apos;s Day (feb), Craciun si in perioadele de lichidare (ian, iul). Abonarea la newsletter-ul magazinului preferat anunta frecvent promotii exclusive. Colectiile noi inseamna si reduceri la colectiile vechi.</p>
               </div>
             </div>
           </div>

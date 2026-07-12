@@ -35,7 +35,7 @@ const TOOLS_INTL = [
 ];
 
 interface Promotie { descriere?: string; cod_cupon?: string; zile_ramase?: number; }
-interface Mag { magazin: string; url_afiliat: string; are_promotie: boolean; promotii: Promotie[]; comision?: string; descriere?: string; }
+interface Mag { magazin: string; url_afiliat: string; are_promotie: boolean; promotii: Promotie[]; comision?: string; descriere?: string; categorie_slug?: string; }
 
 export default function SoftwareBusinessPage() {
   const allMag: Mag[] = JSON.parse(
@@ -45,8 +45,8 @@ export default function SoftwareBusinessPage() {
   // Software/SaaS românesc din 2Performant
   const sw2p = allMag.filter(m =>
     ["facturis-online.ro", "hostico.ro", "chroot.ro"].includes(m.magazin) ||
-    (m as any).categorie_slug === "software" ||
-    (m as any).categorie_slug === "office-supplies"
+    m.categorie_slug === "software" ||
+    m.categorie_slug === "office-supplies"
   ).sort((a, b) => {
     // facturis primul (comision 35%)
     if (a.magazin === "facturis-online.ro") return -1;

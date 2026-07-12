@@ -115,8 +115,18 @@ const CATEGORII = [
   },
 ];
 
+interface Magazin {
+  magazin: string;
+  magazin_display?: string;
+  categorie?: string;
+  categorie_slug?: string;
+  are_promotie?: boolean;
+  cod_cupon?: boolean;
+  logo_url?: string;
+}
+
 /* ─── Load data ──────────────────────────────────────────────────────────── */
-function loadMagazine(): any[] {
+function loadMagazine(): Magazin[] {
   try {
     const p = path.join(process.cwd(), "public", "output.json");
     return JSON.parse(fs.readFileSync(p, "utf-8"));
@@ -125,8 +135,8 @@ function loadMagazine(): any[] {
   }
 }
 
-function getMagazineForCategory(magazine: any[], cat: typeof CATEGORII[0]) {
-  return magazine.filter((m: any) => {
+function getMagazineForCategory(magazine: Magazin[], cat: typeof CATEGORII[0]) {
+  return magazine.filter((m: Magazin) => {
     const slugM  = (m.categorie_slug || m.categorie || "").toLowerCase();
     const nameM  = (m.magazin || "").toLowerCase();
     const dispM  = (m.magazin_display || "").toLowerCase();
@@ -146,15 +156,15 @@ export default function CategoriPage() {
   // Construieste date per categorie — fix: camp corect are_promotie + logo_url
   const categoriiCuDate = CATEGORII.map((cat) => {
     const mag    = getMagazineForCategory(magazine, cat);
-    const nrOff  = mag.filter((m: any) => m.are_promotie || m.cod_cupon).length;
+    const nrOff  = mag.filter((m: Magazin) => m.are_promotie || m.cod_cupon).length;
     const logos  = mag
-      .filter((m: any) => m.logo_url)
+      .filter((m: Magazin) => m.logo_url)
       .slice(0, 3)
-      .map((m: any) => ({ logo: m.logo_url, name: m.magazin_display || m.magazin }));
+      .map((m: Magazin) => ({ logo: m.logo_url, name: m.magazin_display || m.magazin }));
     return { ...cat, nrMag: mag.length, nrOff, logos };
   });
 
-  const totalOff = magazine.filter((m: any) => m.are_promotie || m.cod_cupon).length;
+  const totalOff = magazine.filter((m: Magazin) => m.are_promotie || m.cod_cupon).length;
 
   const jsonLd = {
     "@context": "https://schema.org",

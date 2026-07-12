@@ -391,6 +391,9 @@ export default async function PaginaMagazin({
     ],
   };
 
+  // Calculat o singura data (nu in interiorul .map) - React 19 flags Date.now() ca impur.
+  const acumMs = Date.now();
+
   const offerList = nrPromo > 0 ? {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -407,7 +410,7 @@ export default async function PaginaMagazin({
         description: promo.descriere || promo.nume,
         url: promo.landing_page || pageUrl,
         availability: "https://schema.org/InStock",
-        validThrough: new Date(Date.now() + promo.zile_ramase * 86400000).toISOString(),
+        validThrough: new Date(acumMs + promo.zile_ramase * 86400000).toISOString(),
         ...(promo.cod_cupon ? { disambiguatingDescription: `Cod: ${promo.cod_cupon}` } : {}),
         seller: {
           "@type": "Organization",

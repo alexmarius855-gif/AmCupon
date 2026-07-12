@@ -158,7 +158,7 @@ export default function CasaPage() {
               </div>
               <div>
                 <h3 className="font-bold text-[#0f172a] mb-1">Sfaturi economii amenajari</h3>
-                <p>Cumparati pachete complete de mobilier pentru discount suplimentar. Urmariti sectiunile "Outlet" si "Produse discontinue" la IKEA si Mobexpert — economisesti 40-70%. Codurile de reducere AmCupon se aplica la comenzile online.</p>
+                <p>Cumparati pachete complete de mobilier pentru discount suplimentar. Urmariti sectiunile &quot;Outlet&quot; si &quot;Produse discontinue&quot; la IKEA si Mobexpert — economisesti 40-70%. Codurile de reducere AmCupon se aplica la comenzile online.</p>
               </div>
             </div>
           </div>

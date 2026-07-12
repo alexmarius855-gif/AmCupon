@@ -292,7 +292,7 @@ export default function VpnPage() {
             </div>
             <div>
               <p className="text-red-400 font-bold mb-1">Securitate falsa</p>
-              <p className="text-[#475569]">Unele VPN-uri "gratuite" injecteaza reclame in paginile web sau contin malware. Mai periculos decat fara VPN.</p>
+              <p className="text-[#475569]">Unele VPN-uri &quot;gratuite&quot; injecteaza reclame in paginile web sau contin malware. Mai periculos decat fara VPN.</p>
             </div>
           </div>
           <p className="text-[#475569] text-sm mt-4">Un VPN platit bun costa <strong className="text-[#0f172a]">2.39-3€/luna</strong> — mai ieftin decat un Netflix. Nu merita riscul pentru cateva euro.</p>

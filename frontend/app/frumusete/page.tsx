@@ -82,13 +82,13 @@ export default function FrumusetePage() {
           <h2 className="text-xl font-black text-[#0f172a] mb-6 text-center">Categorii beauty populare</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {SUBCATEGORII.map(s => (
-              <a key={s.label} href="/categorii/beauty"
+              <Link key={s.label} href="/categorii/beauty"
                 className="bg-[#ffffff] border border-[#e2e8f0] rounded-xl p-5 hover:shadow-md transition-all group">
                 <div className="text-3xl mb-2">{s.emoji}</div>
                 <h3 className="font-bold text-[#0f172a] text-sm mb-1">{s.label}</h3>
                 <p className="text-xs text-[#475569] mb-3">{s.desc}</p>
                 <p className="text-xs font-bold text-[#0d9488] group-hover:text-[#0d9488]">Vezi reduceri →</p>
-              </a>
+              </Link>
             ))}
           </div>
         </section>

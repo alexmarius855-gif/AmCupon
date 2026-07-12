@@ -330,7 +330,7 @@ export default function CategorieClient({ magazine, numeCategorie, slug, produse
               <h3 className="font-bold text-[#0f172a] mb-2">🔔 Cum folosești un cod</h3>
               <p>
                 Copiază codul de pe această pagină, adaugă produsele în coș pe site-ul magazinului,
-                iar la checkout introdu codul în câmpul „Cod promoțional". Reducerea se aplică automat.
+                iar la checkout introdu codul în câmpul „Cod promoțional&quot;. Reducerea se aplică automat.
               </p>
             </div>
             <div>

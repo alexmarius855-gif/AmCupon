@@ -185,7 +185,7 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
         {/* ── REZULTAT COUNT ──────────────────────────────────────────── */}
         <p className="text-sm text-[#64748b] mb-5">
           {filtrate.length} magazine{" "}
-          {cautare ? <span>pentru <span className="text-[#0f172a] font-semibold">"{cautare}"</span></span> : ""}
+          {cautare ? <span>pentru <span className="text-[#0f172a] font-semibold">&quot;{cautare}&quot;</span></span> : ""}
           {categorie !== "Toate" ? <span className="text-[#0d9488]"> · {CATEGORII_FILTRE.find(c => c.key === categorie)?.label}</span> : ""}
         </p>
 
