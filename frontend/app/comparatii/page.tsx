@@ -124,7 +124,7 @@ export default function ComparatiiPage() {
           <div className="mt-12 text-center bg-[#ffffff] border border-[#e2e8f0] rounded-xl p-8">
             <h2 className="text-xl font-bold text-[#0f172a] mb-2">Cauti un cod de reducere specific?</h2>
             <p className="text-[#475569] text-sm mb-5">
-              AmCupon.ro verifica zilnic codurile si ofertele de la peste 150 magazine din Romania.
+              AmCupon.ro verifica zilnic codurile si ofertele de la peste 1000 magazine din Romania.
             </p>
             <Link
               href="/toate-magazinele"

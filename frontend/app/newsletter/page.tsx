@@ -42,7 +42,7 @@ export default function NewsletterPage() {
               Reduceri exclusive pe email
             </h1>
             <p className="text-[#475569] text-lg">
-              Peste <span className="text-[#0f172a] font-bold">600 magazine</span> monitorizate zilnic.
+              Peste <span className="text-[#0f172a] font-bold">1000 magazine</span> monitorizate zilnic.
               Fii primul care afla codurile noi.
             </p>
           </div>

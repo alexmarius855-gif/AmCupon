@@ -332,7 +332,7 @@ export default async function TopCategoriePage({
               Primeste review-uri noi + coduri de reducere
             </h3>
             <p className="text-[#475569] text-sm mb-5">
-              600+ magazine monitorizate. Zero spam.
+              1000+ magazine monitorizate. Zero spam.
             </p>
             <Link href="/newsletter"
               className="inline-flex items-center gap-2 bg-[#0d9488] hover:bg-[#14b8a6] text-white font-bold px-6 py-3 rounded-xl text-sm transition-colors">

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://amcupon.ro/cadouri" },
   openGraph: {
     title: "Idei Cadouri pentru Orice Ocazie | AmCupon.ro",
-    description: "Cadouri botez, nasi, Valentine, Craciun, nastere — idei originale cu preturi reale din 291+ magazine romanesti.",
+    description: "Cadouri botez, nasi, Valentine, Craciun, nastere — idei originale cu preturi reale din 1000+ magazine romanesti.",
     url: "https://amcupon.ro/cadouri",
     siteName: "AmCupon.ro",
     locale: "ro_RO",
@@ -68,7 +68,7 @@ export default function CadouriPage() {
           </h1>
           <p className="text-[#475569] text-base mb-6 max-w-xl mx-auto">
             De la botez la Craciun, de la nasi la mama — gasesti cadoul perfect
-            din <span className="text-[#0f172a] font-bold">291+ magazine</span> partenere cu livrare in Romania.
+            din <span className="text-[#0f172a] font-bold">1000+ magazine</span> partenere cu livrare in Romania.
           </p>
           <div className="flex flex-wrap justify-center gap-3 text-sm">
             {[

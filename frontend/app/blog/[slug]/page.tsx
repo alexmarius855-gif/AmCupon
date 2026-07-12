@@ -257,7 +257,7 @@ export default async function ArticolPage({
           <div className="mt-10 p-6 bg-[#F7F9FC] rounded-xl text-center">
             <p className="text-sm font-black text-[#0d9488] uppercase tracking-widest mb-2">Newsletter gratuit</p>
             <h3 className="text-xl font-black text-[#0f172a] mb-2">Primeste coduri noi direct pe email</h3>
-            <p className="text-[#475569] text-sm mb-5">600+ magazine monitorizate zilnic. Zero spam.</p>
+            <p className="text-[#475569] text-sm mb-5">1000+ magazine monitorizate zilnic. Zero spam.</p>
             <Link href="/newsletter"
               className="inline-flex items-center gap-2 bg-[#0d9488] hover:bg-[#14b8a6] text-white font-bold px-6 py-3 rounded-xl text-sm transition-colors">
               Aboneaza-te gratuit &rarr;

@@ -5,12 +5,12 @@ import path from "path";
 
 export const metadata: Metadata = {
   title: "Categorii Coduri Reducere Romania 2026 | AmCupon.ro",
-  description: "Coduri de reducere organizate pe categorii: Fashion, Electronice, Frumusete, Casa, Sport, Farmacie, Copii, Animale si multe altele. 900+ magazine verificate zilnic.",
+  description: "Coduri de reducere organizate pe categorii: Fashion, Electronice, Frumusete, Casa, Sport, Farmacie, Copii, Animale si multe altele. 1000+ magazine verificate zilnic.",
   keywords: ["categorii reduceri romania","coduri reducere pe categorii","fashion reducere","electronice ieftine","farmacie online reducere"],
   alternates: { canonical: "https://amcupon.ro/categorii" },
   openGraph: {
     title: "Categorii Coduri Reducere Romania | AmCupon.ro",
-    description: "900+ magazine organizate pe 18 categorii. Oferte verificate zilnic.",
+    description: "1000+ magazine organizate pe 18 categorii. Oferte verificate zilnic.",
     url: "https://amcupon.ro/categorii",
     siteName: "AmCupon.ro",
     locale: "ro_RO",

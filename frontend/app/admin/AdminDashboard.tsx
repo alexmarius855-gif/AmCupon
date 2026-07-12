@@ -119,7 +119,7 @@ const MISSIONS = [
   {
     id:"data-sync",      name:"Data Sync Engine",      icon:"⚡",
     agentId:"nexus", agentName:"NEXUS", color:"#00f5d4",
-    desc:"267+ magazine, promotii si preturi actualizate de 4 ori pe zi automat.",
+    desc:"1000+ magazine, promotii si preturi actualizate de 4 ori pe zi automat.",
     revenue:"Baza tuturor veniturilor", est:"Fundatia sitului",
     workflow:"update-data", type_:null,     freq:"6h / la cerere", active:true, tag:"INFRA",
   },
