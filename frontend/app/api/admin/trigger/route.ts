@@ -1,14 +1,7 @@
-import { cookies } from "next/headers";
+import { checkAuth } from "@/lib/adminAuth";
 
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "";
 const GITHUB_TOKEN   = process.env.ADMIN_GITHUB_TOKEN || process.env.GITHUB_TOKEN || "";
 const GITHUB_REPO    = process.env.GITHUB_REPO || "alexmarius855-gif/AmCupon";
-
-async function checkAuth(): Promise<boolean> {
-  if (!ADMIN_PASSWORD) return false;
-  const cookieStore = await cookies();
-  return cookieStore.get("mc_session")?.value === ADMIN_PASSWORD;
-}
 
 const WORKFLOWS: Record<string, string> = {
   "update-data":    "update-data.yml",
