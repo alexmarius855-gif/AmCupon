@@ -101,10 +101,15 @@ export async function generateMetadata({
   if (!post) return { title: "Articol negăsit | AmCupon.ro" };
 
   const pageUrl = `https://amcupon.ro/blog/${slug}`;
+  // Articol auto-generat despre un magazin fara nicio promotie activa = continut subtire,
+  // aproape identic intre articole (doar numele magazinului difera). Scos din index ca sa
+  // nu deprecieze semnalul de calitate al site-ului pentru cele cu continut real.
+  const faraPromoActiva = /\b0 promotii active\b/.test(post.excerpt);
   return {
     title: `${post.title} | AmCupon.ro`,
     description: post.excerpt,
     alternates: { canonical: pageUrl },
+    ...(faraPromoActiva ? { robots: { index: false, follow: true } } : {}),
     openGraph: {
       title: post.title,
       description: post.excerpt,

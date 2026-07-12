@@ -27,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     fs.readFileSync(path.join(process.cwd(), "public", "output.json"), "utf-8")
   );
 
-  let blogPosts: { slug: string; date: string; category: string }[] = [];
+  let blogPosts: { slug: string; date: string; category: string; excerpt?: string }[] = [];
   const blogPath = path.join(process.cwd(), "public", "blog-posts.json");
   if (fs.existsSync(blogPath)) {
     blogPosts = JSON.parse(fs.readFileSync(blogPath, "utf-8"));
@@ -225,12 +225,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
 
     // ─── Blog posts ──────────────────────────────────────────────────────────
-    ...blogPosts.map((p) => ({
-      url: `${BASE_URL}/blog/${p.slug}`,
-      lastModified: new Date(p.date),
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
-    })),
+    // Excludem articolele despre magazine fara nicio promotie activa (continut
+    // subtire/templat, noindex si in generateMetadata din blog/[slug]/page.tsx) —
+    // sa nu iroseasca bugetul de crawl Google pe pagini fara valoare unica.
+    ...blogPosts
+      .filter((p) => !/\b0 promotii active\b/.test(p.excerpt || ""))
+      .map((p) => ({
+        url: `${BASE_URL}/blog/${p.slug}`,
+        lastModified: new Date(p.date),
+        changeFrequency: "monthly" as const,
+        priority: 0.6,
+      })),
 
     // ─── Pagini magazine (/cod-reducere/[magazin]) ────────────────────────────
     // Filtram sluguri invalide: cu spatii, cu "/" in interior, sau retele afiliere
