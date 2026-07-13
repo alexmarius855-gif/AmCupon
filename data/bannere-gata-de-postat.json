@@ -1,15 +1,28 @@
 [
   {
-    "id": 271151,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/271110/original/271110.png",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=dbf6b0fc3&aff_code=541547473&campaign_unique=2a0abc2c5",
-    "landing_raw": "https://www.sportmaniac.ro",
+    "id": 271182,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/271141/original/271141.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=d4acc009f&aff_code=541547473&campaign_unique=cc08e2536",
+    "landing_raw": "https://www.pensulemachiaj.ro",
     "width": 1200,
     "height": 1200,
-    "merchant": "sportmaniac.ro ",
-    "merchant_slug": "sportmaniac-ro-d6c6ad9a-5af8-4299-ad53-4c64c644f159",
-    "name": "10-12 IULIE 2026: 15% reducere cu codul HOT15",
-    "category": "10-12 IULIE 2026: 15% reducere cu codul HOT15",
+    "merchant": "pensulemachiaj.ro",
+    "merchant_slug": "pensulemachiaj-ro",
+    "name": "- 80% STAR SUMMER & CELEBRITY SECRET BAG GRATUIT",
+    "category": "- 80% STAR SUMMER & CELEBRITY SECRET BAG GRATUIT",
+    "b_type": "image"
+  },
+  {
+    "id": 271173,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/271132/original/271132.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=3d7aae84b&aff_code=541547473&campaign_unique=4b9a6d5ea",
+    "landing_raw": "https://www.kitunghii.ro",
+    "width": 1200,
+    "height": 1200,
+    "merchant": "kitunghii.ro",
+    "merchant_slug": "kitunghii-ro",
+    "name": "-80% STAR SUMMER, CELEBRITY SECRET BAG GRATUIT",
+    "category": "-80% STAR SUMMER, CELEBRITY SECRET BAG GRATUIT",
     "b_type": "image"
   }
 ]

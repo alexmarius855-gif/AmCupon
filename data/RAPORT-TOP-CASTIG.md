@@ -1,5 +1,5 @@
 # 💰 TOP MAGAZINE după POTENȚIAL DE CÂȘTIG
-> Generat automat 12.07.2026 11:01. Pe astea să le împingi (articole, pin-uri, postări).
+> Generat automat 13.07.2026 11:49. Pe astea să le împingi (articole, pin-uri, postări).
 
 **Scor = comision × popularitate × ofertă.** Comisionul mare singur înșală — astea-s banii REALI.
 
@@ -15,20 +15,20 @@
 | 8 | Curteaveche (curteaveche.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
 | 9 | Videt (videt.ro) | 10% | 0 | ✅ COD | 20.0 |
 | 10 | Elindor (elindor.ro) | 10% | 0 | ✅ COD | 20.0 |
-| 11 | Lovepadel (lovepadel.ie) | 8% | 0 | ✅ COD | 16.0 |
-| 12 | Pint (pint.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 13 | Bookzone (bookzone.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 14 | Craftup (craftup.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 15 | Fara Daunatori (fara-daunatori.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 16 | Exclusive Home (exclusive-home.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 17 | Streamstore (streamstore.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 18 | Doctorshield (doctorshield.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 19 | Optiblu (optiblu.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 20 | Estel (estel.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 21 | Niculescu (niculescu.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 11 | Giftdesign (giftdesign.ro) | 9% | 0 | ✅ COD | 18.0 |
+| 12 | Lovepadel (lovepadel.ie) | 8% | 0 | ✅ COD | 16.0 |
+| 13 | Pint (pint.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 14 | Bookzone (bookzone.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 15 | Craftup (craftup.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 16 | Fara Daunatori (fara-daunatori.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 17 | Exclusive Home (exclusive-home.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 18 | Streamstore (streamstore.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 19 | Doctorshield (doctorshield.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 20 | Optiblu (optiblu.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 21 | Estel (estel.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
 | 22 | Littlenest (littlenest.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 23 | Trendyup (trendyup.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 24 | Giftdesign (giftdesign.ro) | 7% | 0 | ✅ COD | 14.0 |
+| 23 | Niculescu (niculescu.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 24 | Trendyup (trendyup.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
 | 25 | Sanoverde (sanoverde.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
 | 26 | Re Bloom (re-bloom.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
 | 27 | Carturesti (carturesti.ro) | 9% | 0 | 🏷️ ofertă | 12.6 |
