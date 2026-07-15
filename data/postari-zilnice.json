@@ -389,7 +389,7 @@
     "categorie": "Casă & Grădină",
     "cod": "",
     "procent": "",
-    "zile_ramase": 228,
+    "zile_ramase": 227,
     "link": "https://amcupon.ro/cod-reducere/fara-daunatori.ro",
     "story": "🔥 Reducere Fara Daunatori azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/fara-daunatori.ro",
     "perete": "🔥 Reducere activa la Fara Daunatori\n\n✅ Oferta 1+1\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/fara-daunatori.ro",
@@ -413,7 +413,7 @@
     "categorie": "Casă & Grădină",
     "cod": "",
     "procent": "-10%",
-    "zile_ramase": 1264,
+    "zile_ramase": 1263,
     "link": "https://amcupon.ro/cod-reducere/vidaxl.ro",
     "story": "🔥 -10% la Vidaxl!\nFara cod necesar 👇\namcupon.ro/cod-reducere/vidaxl.ro",
     "perete": "🔥 -10% la Vidaxl — activ acum\n\n✅ Deals Page: Reduceri de 10% prin codul OFERTE01\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/vidaxl.ro",
@@ -449,7 +449,7 @@
     "categorie": "Casă & Grădină",
     "cod": "",
     "procent": "",
-    "zile_ramase": 1265,
+    "zile_ramase": 1264,
     "link": "https://amcupon.ro/cod-reducere/vidaxl.bg",
     "story": "🔥 Reducere Vidaxl azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/vidaxl.bg",
     "perete": "🔥 Reducere activa la Vidaxl\n\n✅ Абонирайте се за нашия бюлетин днес & получавате отстъпка от 10 лв. при регистрация!\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/vidaxl.bg",
@@ -672,18 +672,6 @@
     "hashtags": "#reduceri #moda #fashion #haine #romania #optiblu"
   },
   {
-    "magazin": "yves-rocher.ro",
-    "nume": "Yves Rocher",
-    "categorie": "Beauty & Îngrijire",
-    "cod": "",
-    "procent": "-50%",
-    "zile_ramase": 6,
-    "link": "https://amcupon.ro/cod-reducere/yves-rocher.ro",
-    "story": "🔥 -50% la Yves Rocher!\nFara cod necesar 👇\namcupon.ro/cod-reducere/yves-rocher.ro",
-    "perete": "🔥 -50% la Yves Rocher — activ acum\n\n✅ REDUCERI PÂNĂ LA -50%\n⏳ Expiră în 6 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/yves-rocher.ro",
-    "hashtags": "#reduceri #cosmetice #beauty #skincare #romania #yvesrocher"
-  },
-  {
     "magazin": "curteaveche.ro",
     "nume": "Curteaveche",
     "categorie": "Cărți & Educație",
@@ -838,6 +826,18 @@
     "story": "🔥 -20% la Re Bloom!\nFara cod necesar 👇\namcupon.ro/cod-reducere/re-bloom.ro",
     "perete": "🔥 -20% la Re Bloom — activ acum\n\n✅ Extra 20% la Produsele SelectateExtra 20% la Produsele Selectate\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/re-bloom.ro",
     "hashtags": "#reduceri #coduri #cupoane #oferte #romania #rebloom"
+  },
+  {
+    "magazin": "yves-rocher.ro",
+    "nume": "Yves Rocher",
+    "categorie": "Beauty",
+    "cod": "",
+    "procent": "-50%",
+    "zile_ramase": 6,
+    "link": "https://amcupon.ro/cod-reducere/yves-rocher.ro",
+    "story": "🔥 -50% la Yves Rocher!\nFara cod necesar 👇\namcupon.ro/cod-reducere/yves-rocher.ro",
+    "perete": "🔥 -50% la Yves Rocher — activ acum\n\n✅ REDUCERI PÂNĂ LA -50%\n⏳ Expiră în 6 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/yves-rocher.ro",
+    "hashtags": "#reduceri #cosmetice #beauty #skincare #romania #yvesrocher"
   },
   {
     "magazin": "moftcollection.ro",
