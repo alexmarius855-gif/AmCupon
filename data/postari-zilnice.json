@@ -96,6 +96,42 @@
     "hashtags": "#reduceri #coduri #cupoane #oferte #romania #jollymag"
   },
   {
+    "magazin": "litera.ro",
+    "nume": "Litera",
+    "categorie": "Cărți & Educație",
+    "cod": "EXTRA15",
+    "procent": "-15%",
+    "zile_ramase": 3,
+    "link": "https://amcupon.ro/cod-reducere/litera.ro",
+    "story": "🔥 -15% la Litera!\nCod: EXTRA15 👇\namcupon.ro/cod-reducere/litera.ro",
+    "perete": "🔥 -15% la Litera — activ acum\n\n✅ 📘 Noutățile verii - cod 15% extra reducere\n🎟️ Cod verificat: EXTRA15\n⏳ Expiră în 3 zile — prinde-l până nu zboară\n\n👉 Iei codul + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/litera.ro",
+    "hashtags": "#reduceri #coduri #cupoane #oferte #romania #litera"
+  },
+  {
+    "magazin": "noriel.ro",
+    "nume": "Noriel",
+    "categorie": "Copii & Familie",
+    "cod": "NORIEL20",
+    "procent": "-20%",
+    "zile_ramase": 2,
+    "link": "https://amcupon.ro/cod-reducere/noriel.ro",
+    "story": "🔥 -20% la Noriel!\nCod: NORIEL20 👇\namcupon.ro/cod-reducere/noriel.ro",
+    "perete": "🔥 -20% la Noriel — activ acum\n\n✅ 20% Reducere la jucarii| Cod: NORIEL20 |13-19.07.2026\n🎟️ Cod verificat: NORIEL20\n⏳ Expiră în 2 zile — prinde-l până nu zboară\n\n👉 Iei codul + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/noriel.ro",
+    "hashtags": "#reduceri #coduri #cupoane #oferte #romania #noriel"
+  },
+  {
+    "magazin": "fera.ro",
+    "nume": "Fera",
+    "categorie": "Pet Shop",
+    "cod": "",
+    "procent": "-5%",
+    "zile_ramase": 20,
+    "link": "https://amcupon.ro/cod-reducere/fera.ro",
+    "story": "🔥 -5% la Fera!\nFara cod necesar 👇\namcupon.ro/cod-reducere/fera.ro",
+    "perete": "🔥 -5% la Fera — activ acum\n\n✅ Fera.ro - 5% reducere la prima comanda hrana Hills\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/fera.ro",
+    "hashtags": "#reduceri #coduri #cupoane #oferte #romania #fera"
+  },
+  {
     "magazin": "facturis-online.ro",
     "nume": "Facturis Online",
     "categorie": "Software & Digital",
@@ -132,16 +168,52 @@
     "hashtags": "#reduceri #coduri #cupoane #oferte #romania #medimfarm"
   },
   {
-    "magazin": "fera.ro",
-    "nume": "Fera",
-    "categorie": "Pet Shop",
-    "cod": "FERANEW",
-    "procent": "-5%",
-    "zile_ramase": 14,
-    "link": "https://amcupon.ro/cod-reducere/fera.ro",
-    "story": "🔥 -5% la Fera!\nCod: FERANEW 👇\namcupon.ro/cod-reducere/fera.ro",
-    "perete": "🔥 -5% la Fera — activ acum\n\n✅ 5% discount prima comanda\n🎟️ Cod verificat: FERANEW\n✅ Verificat azi de echipa AmCupon\n\n👉 Iei codul + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/fera.ro",
-    "hashtags": "#reduceri #coduri #cupoane #oferte #romania #fera"
+    "magazin": "libris.ro",
+    "nume": "Libris",
+    "categorie": "Cărți & Educație",
+    "cod": "LIB20CITESC",
+    "procent": "-20%",
+    "zile_ramase": 0,
+    "link": "https://amcupon.ro/cod-reducere/libris.ro",
+    "story": "🔥 -20% la Libris!\nCod: LIB20CITESC 👇\namcupon.ro/cod-reducere/libris.ro",
+    "perete": "🔥 -20% la Libris — activ acum\n\n✅ Cupon -20% la orice\n🎟️ Cod verificat: LIB20CITESC\n✅ Verificat azi de echipa AmCupon\n\n👉 Iei codul + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/libris.ro",
+    "hashtags": "#reduceri #coduri #cupoane #oferte #romania #libris"
+  },
+  {
+    "magazin": "aronia-charlottenburg.ro",
+    "nume": "Aronia Charlottenburg",
+    "categorie": "Sănătate & Farmacie",
+    "cod": "SUMMER15",
+    "procent": "-15%",
+    "zile_ramase": 15,
+    "link": "https://amcupon.ro/cod-reducere/aronia-charlottenburg.ro",
+    "story": "🔥 -15% la Aronia Charlottenburg!\nCod: SUMMER15 👇\namcupon.ro/cod-reducere/aronia-charlottenburg.ro",
+    "perete": "🔥 -15% la Aronia Charlottenburg — activ acum\n\n✅ SUMMER15\n🎟️ Cod verificat: SUMMER15\n✅ Verificat azi de echipa AmCupon\n\n👉 Iei codul + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/aronia-charlottenburg.ro",
+    "hashtags": "#reduceri #coduri #cupoane #oferte #romania #aroniacharlottenburg"
+  },
+  {
+    "magazin": "automobilus.ro",
+    "nume": "Automobilus",
+    "categorie": "Auto & Moto",
+    "cod": "VARA10",
+    "procent": "-10%",
+    "zile_ramase": 15,
+    "link": "https://amcupon.ro/cod-reducere/automobilus.ro",
+    "story": "🔥 -10% la Automobilus!\nCod: VARA10 👇\namcupon.ro/cod-reducere/automobilus.ro",
+    "perete": "🔥 -10% la Automobilus — activ acum\n\n✅ Kitul de polimer a revenit în stoc! -10% cu codul VARA10\n🎟️ Cod verificat: VARA10\n✅ Verificat azi de echipa AmCupon\n\n👉 Iei codul + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/automobilus.ro",
+    "hashtags": "#reduceri #coduri #cupoane #oferte #romania #automobilus"
+  },
+  {
+    "magazin": "videt.ro",
+    "nume": "Videt",
+    "categorie": "Fashion",
+    "cod": "15ANI",
+    "procent": "-40%",
+    "zile_ramase": 5,
+    "link": "https://amcupon.ro/cod-reducere/videt.ro",
+    "story": "🔥 -40% la Videt!\nCod: 15ANI 👇\namcupon.ro/cod-reducere/videt.ro",
+    "perete": "🔥 -40% la Videt — activ acum\n\n✅ Zilele Videt: -40% la TOȚI ochelarii de vedere și de soare_15-21.07.2026\n🎟️ Cod verificat: 15ANI\n⏳ Expiră în 5 zile — prinde-l până nu zboară\n\n👉 Iei codul + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/videt.ro",
+    "hashtags": "#reduceri #moda #fashion #haine #romania #videt"
   },
   {
     "magazin": "pickndazzle.com",
@@ -168,16 +240,40 @@
     "hashtags": "#reduceri #coduri #cupoane #oferte #romania #elindor"
   },
   {
+    "magazin": "asus.com",
+    "nume": "Asus",
+    "categorie": "Electronice & IT",
+    "cod": "SUMMER10",
+    "procent": "-10%",
+    "zile_ramase": 15,
+    "link": "https://amcupon.ro/cod-reducere/asus.com",
+    "story": "🔥 -10% la Asus!\nCod: SUMMER10 👇\namcupon.ro/cod-reducere/asus.com",
+    "perete": "🔥 -10% la Asus — activ acum\n\n✅ 🎉 Peste 90 de modele de laptopuri beneficiază de 10% reducere doar în ASUS eShop!\n🎟️ Cod verificat: SUMMER10\n✅ Verificat azi de echipa AmCupon\n\n👉 Iei codul + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/asus.com",
+    "hashtags": "#reduceri #coduri #cupoane #oferte #romania #asus"
+  },
+  {
     "magazin": "atelier49.ro",
     "nume": "Atelier49",
     "categorie": "Casă & Grădină",
     "cod": "ATELIER49",
-    "procent": "-41%",
-    "zile_ramase": 15,
+    "procent": "-42%",
+    "zile_ramase": 25,
     "link": "https://amcupon.ro/cod-reducere/atelier49.ro",
-    "story": "🔥 -41% la Atelier49!\nCod: ATELIER49 👇\namcupon.ro/cod-reducere/atelier49.ro",
-    "perete": "🔥 -41% la Atelier49 — activ acum\n\n✅ Pana la 41% Discount la Produse Artizanale din Lemn\n🎟️ Cod verificat: ATELIER49\n✅ Verificat azi de echipa AmCupon\n\n👉 Iei codul + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/atelier49.ro",
+    "story": "🔥 -42% la Atelier49!\nCod: ATELIER49 👇\namcupon.ro/cod-reducere/atelier49.ro",
+    "perete": "🔥 -42% la Atelier49 — activ acum\n\n✅ Cadouri de Sfanta Maria cu pana la 42% reducere\n🎟️ Cod verificat: ATELIER49\n✅ Verificat azi de echipa AmCupon\n\n👉 Iei codul + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/atelier49.ro",
     "hashtags": "#reduceri #coduri #cupoane #oferte #romania #atelier49"
+  },
+  {
+    "magazin": "e-potion.ro",
+    "nume": "E Potion",
+    "categorie": "Sănătate & Farmacie",
+    "cod": "epotion10",
+    "procent": "-10%",
+    "zile_ramase": 358,
+    "link": "https://amcupon.ro/cod-reducere/e-potion.ro",
+    "story": "🔥 -10% la E Potion!\nCod: epotion10 👇\namcupon.ro/cod-reducere/e-potion.ro",
+    "perete": "🔥 -10% la E Potion — activ acum\n\n✅ 10% reducere pe tot site-ul e-Potion.ro\n🎟️ Cod verificat: epotion10\n✅ Verificat azi de echipa AmCupon\n\n👉 Iei codul + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/e-potion.ro",
+    "hashtags": "#reduceri #coduri #cupoane #oferte #romania #epotion"
   },
   {
     "magazin": "lovepadel.ie",
@@ -216,6 +312,18 @@
     "hashtags": "#reduceri #coduri #cupoane #oferte #romania #giftdesign"
   },
   {
+    "magazin": "hairify.ro",
+    "nume": "Hairify",
+    "categorie": "Beauty & Îngrijire",
+    "cod": "BL2016",
+    "procent": "-15%",
+    "zile_ramase": 167,
+    "link": "https://amcupon.ro/cod-reducere/hairify.ro",
+    "story": "🔥 -15% la Hairify!\nCod: BL2016 👇\namcupon.ro/cod-reducere/hairify.ro",
+    "perete": "🔥 -15% la Hairify — activ acum\n\n✅ 15% Discount la fibrele de păr din cheratină pentru păr rar și chelie\n🎟️ Cod verificat: BL2016\n✅ Verificat azi de echipa AmCupon\n\n👉 Iei codul + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/hairify.ro",
+    "hashtags": "#reduceri #cosmetice #beauty #skincare #romania #hairify"
+  },
+  {
     "magazin": "fashiondays.ro",
     "nume": "Fashiondays",
     "categorie": "Fashion",
@@ -245,23 +353,47 @@
     "categorie": "Cărți & Educație",
     "cod": "",
     "procent": "",
-    "zile_ramase": 2,
+    "zile_ramase": 17,
     "link": "https://amcupon.ro/cod-reducere/carturesti.ro",
     "story": "🔥 Reducere Carturesti azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/carturesti.ro",
-    "perete": "🔥 Reducere activa la Carturesti\n\n✅ Campionatul Mondial de Fotbal 2026\n⏳ Expiră în 2 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/carturesti.ro",
+    "perete": "🔥 Reducere activa la Carturesti\n\n✅ Cartea pe val: 1+1 Cartea cu genius, ART\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/carturesti.ro",
     "hashtags": "#reduceri #coduri #cupoane #oferte #romania #carturesti"
+  },
+  {
+    "magazin": "drmax.ro",
+    "nume": "Drmax",
+    "categorie": "Sănătate & Farmacie",
+    "cod": "",
+    "procent": "",
+    "zile_ramase": 3,
+    "link": "https://amcupon.ro/cod-reducere/drmax.ro",
+    "story": "🔥 Reducere Drmax azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/drmax.ro",
+    "perete": "🔥 Reducere activa la Drmax\n\n✅ Max Days – Alimentație Sănătoasă 14-20.07\n⏳ Expiră în 3 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/drmax.ro",
+    "hashtags": "#reduceri #coduri #cupoane #oferte #romania #drmax"
   },
   {
     "magazin": "estel.ro",
     "nume": "Estel",
     "categorie": "Beauty & Îngrijire",
     "cod": "",
-    "procent": "-25%",
-    "zile_ramase": 2,
+    "procent": "-15%",
+    "zile_ramase": 46,
     "link": "https://amcupon.ro/cod-reducere/estel.ro",
-    "story": "🔥 -25% la Estel!\nFara cod necesar 👇\namcupon.ro/cod-reducere/estel.ro",
-    "perete": "🔥 -25% la Estel — activ acum\n\n✅ Prinde soarele in parul tau si reducerea de 25%\n⏳ Expiră în 2 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/estel.ro",
+    "story": "🔥 -15% la Estel!\nFara cod necesar 👇\namcupon.ro/cod-reducere/estel.ro",
+    "perete": "🔥 -15% la Estel — activ acum\n\n✅ August Summer Sale\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/estel.ro",
     "hashtags": "#reduceri #cosmetice #beauty #skincare #romania #estel"
+  },
+  {
+    "magazin": "interlink.ro",
+    "nume": "Interlink",
+    "categorie": "Electronice & IT",
+    "cod": "",
+    "procent": "",
+    "zile_ramase": 1,
+    "link": "https://amcupon.ro/cod-reducere/interlink.ro",
+    "story": "🔥 Reducere Interlink azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/interlink.ro",
+    "perete": "🔥 Reducere activa la Interlink\n\n✅ Sunny Savings\n⏳ Expiră în 1 zi — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/interlink.ro",
+    "hashtags": "#reduceri #coduri #cupoane #oferte #romania #interlink"
   },
   {
     "magazin": "mathaus.ro",
@@ -372,6 +504,18 @@
     "hashtags": "#reduceri #coduri #cupoane #oferte #romania #craftup"
   },
   {
+    "magazin": "moftcollection.ro",
+    "nume": "Moftcollection",
+    "categorie": "Electronice & IT",
+    "cod": "",
+    "procent": "-75%",
+    "zile_ramase": 46,
+    "link": "https://amcupon.ro/cod-reducere/moftcollection.ro",
+    "story": "🔥 -75% la Moftcollection!\nFara cod necesar 👇\namcupon.ro/cod-reducere/moftcollection.ro",
+    "perete": "🔥 -75% la Moftcollection — activ acum\n\n✅ Pana la -75% la huse silicon Iphone + CADOU la fiecare comanda\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/moftcollection.ro",
+    "hashtags": "#reduceri #coduri #cupoane #oferte #romania #moftcollection"
+  },
+  {
     "magazin": "mobidea.ro",
     "nume": "Mobidea",
     "categorie": "Casă & Grădină",
@@ -389,7 +533,7 @@
     "categorie": "Casă & Grădină",
     "cod": "",
     "procent": "",
-    "zile_ramase": 227,
+    "zile_ramase": 226,
     "link": "https://amcupon.ro/cod-reducere/fara-daunatori.ro",
     "story": "🔥 Reducere Fara Daunatori azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/fara-daunatori.ro",
     "perete": "🔥 Reducere activa la Fara Daunatori\n\n✅ Oferta 1+1\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/fara-daunatori.ro",
@@ -413,7 +557,7 @@
     "categorie": "Casă & Grădină",
     "cod": "",
     "procent": "-10%",
-    "zile_ramase": 1263,
+    "zile_ramase": 1262,
     "link": "https://amcupon.ro/cod-reducere/vidaxl.ro",
     "story": "🔥 -10% la Vidaxl!\nFara cod necesar 👇\namcupon.ro/cod-reducere/vidaxl.ro",
     "perete": "🔥 -10% la Vidaxl — activ acum\n\n✅ Deals Page: Reduceri de 10% prin codul OFERTE01\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/vidaxl.ro",
@@ -449,7 +593,7 @@
     "categorie": "Casă & Grădină",
     "cod": "",
     "procent": "",
-    "zile_ramase": 1264,
+    "zile_ramase": 1263,
     "link": "https://amcupon.ro/cod-reducere/vidaxl.bg",
     "story": "🔥 Reducere Vidaxl azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/vidaxl.bg",
     "perete": "🔥 Reducere activa la Vidaxl\n\n✅ Абонирайте се за нашия бюлетин днес & получавате отстъпка от 10 лв. при регистрация!\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/vidaxl.bg",
@@ -466,6 +610,18 @@
     "story": "🔥 -10% la 112Coffee!\nFara cod necesar 👇\namcupon.ro/cod-reducere/112coffee.com",
     "perete": "🔥 -10% la 112Coffee — activ acum\n\n✅ 10% DISCOUNT on first coffee order\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/112coffee.com",
     "hashtags": "#reduceri #coduri #cupoane #oferte #romania #112coffee"
+  },
+  {
+    "magazin": "farmec.ro",
+    "nume": "Farmec",
+    "categorie": "Beauty & Îngrijire",
+    "cod": "",
+    "procent": "-25%",
+    "zile_ramase": 10,
+    "link": "https://amcupon.ro/cod-reducere/farmec.ro",
+    "story": "🔥 -25% la Farmec!\nFara cod necesar 👇\namcupon.ro/cod-reducere/farmec.ro",
+    "perete": "🔥 -25% la Farmec — activ acum\n\n✅ 25% REDUCERE la o selecție de produse pentru Îngrijirea Tenului\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/farmec.ro",
+    "hashtags": "#reduceri #cosmetice #beauty #skincare #romania #farmec"
   },
   {
     "magazin": "mobilalaguna.ro",
@@ -492,6 +648,18 @@
     "hashtags": "#reduceri #moda #fashion #haine #romania #sevensins"
   },
   {
+    "magazin": "studioszel.ro",
+    "nume": "Studioszel",
+    "categorie": "Fashion",
+    "cod": "",
+    "procent": "-20%",
+    "zile_ramase": 14,
+    "link": "https://amcupon.ro/cod-reducere/studioszel.ro",
+    "story": "🔥 -20% la Studioszel!\nFara cod necesar 👇\namcupon.ro/cod-reducere/studioszel.ro",
+    "perete": "🔥 -20% la Studioszel — activ acum\n\n✅ Seturi de mobilier pentru dormitor – reducere de 20%.\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/studioszel.ro",
+    "hashtags": "#reduceri #moda #fashion #haine #romania #studioszel"
+  },
+  {
     "magazin": "librarie.net",
     "nume": "Librarie",
     "categorie": "Cărți & Educație",
@@ -504,28 +672,16 @@
     "hashtags": "#reduceri #coduri #cupoane #oferte #romania #librarie"
   },
   {
-    "magazin": "drmax.ro",
-    "nume": "Drmax",
-    "categorie": "Sănătate & Farmacie",
+    "magazin": "petmart.ro",
+    "nume": "Petmart",
+    "categorie": "Pet Shop",
     "cod": "",
-    "procent": "-50%",
-    "zile_ramase": 14,
-    "link": "https://amcupon.ro/cod-reducere/drmax.ro",
-    "story": "🔥 -50% la Drmax!\nFara cod necesar 👇\namcupon.ro/cod-reducere/drmax.ro",
-    "perete": "🔥 -50% la Drmax — activ acum\n\n✅ Toată lumea câștigă la Dr. Max 1-31.07\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/drmax.ro",
-    "hashtags": "#reduceri #coduri #cupoane #oferte #romania #drmax"
-  },
-  {
-    "magazin": "noriel.ro",
-    "nume": "Noriel",
-    "categorie": "Copii & Familie",
-    "cod": "",
-    "procent": "-50%",
-    "zile_ramase": 17,
-    "link": "https://amcupon.ro/cod-reducere/noriel.ro",
-    "story": "🔥 -50% la Noriel!\nFara cod necesar 👇\namcupon.ro/cod-reducere/noriel.ro",
-    "perete": "🔥 -50% la Noriel — activ acum\n\n✅ Summer Sales | Reduceri de pana la 50%\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/noriel.ro",
-    "hashtags": "#reduceri #coduri #cupoane #oferte #romania #noriel"
+    "procent": "",
+    "zile_ramase": 45,
+    "link": "https://amcupon.ro/cod-reducere/petmart.ro",
+    "story": "🔥 Reducere Petmart azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/petmart.ro",
+    "perete": "🔥 Reducere activa la Petmart\n\n✅ Cadou la achiziția unei zgărzi Foresto pentru câini sau pisici\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/petmart.ro",
+    "hashtags": "#reduceri #coduri #cupoane #oferte #romania #petmart"
   },
   {
     "magazin": "manukashop.ro",
@@ -569,10 +725,10 @@
     "categorie": "Casă & Grădină",
     "cod": "",
     "procent": "",
-    "zile_ramase": 76,
+    "zile_ramase": 15,
     "link": "https://amcupon.ro/cod-reducere/doctorshield.ro",
     "story": "🔥 Reducere Doctorshield azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/doctorshield.ro",
-    "perete": "🔥 Reducere activa la Doctorshield\n\n✅ Livrare si retur GRATUIT la orice comanda de gratare, paturi, birouri si scaune de gaming\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/doctorshield.ro",
+    "perete": "🔥 Reducere activa la Doctorshield\n\n✅ Doctor Shield – Reduceri la produse pentru casa si birou\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/doctorshield.ro",
     "hashtags": "#reduceri #coduri #cupoane #oferte #romania #doctorshield"
   },
   {
@@ -580,12 +736,24 @@
     "nume": "Autobob",
     "categorie": "Auto & Moto",
     "cod": "",
-    "procent": "-35%",
-    "zile_ramase": 107,
+    "procent": "-30%",
+    "zile_ramase": 15,
     "link": "https://amcupon.ro/cod-reducere/autobob.ro",
-    "story": "🔥 -35% la Autobob!\nFara cod necesar 👇\namcupon.ro/cod-reducere/autobob.ro",
-    "perete": "🔥 -35% la Autobob — activ acum\n\n✅ Pachete revizie auto cu reducere de pana la -35%\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/autobob.ro",
+    "story": "🔥 -30% la Autobob!\nFara cod necesar 👇\namcupon.ro/cod-reducere/autobob.ro",
+    "perete": "🔥 -30% la Autobob — activ acum\n\n✅ Reduceri de pana la -30% la brandul Motul\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/autobob.ro",
     "hashtags": "#reduceri #coduri #cupoane #oferte #romania #autobob"
+  },
+  {
+    "magazin": "kamin.ro",
+    "nume": "Kamin",
+    "categorie": "Casă & Grădină",
+    "cod": "",
+    "procent": "",
+    "zile_ramase": 14,
+    "link": "https://amcupon.ro/cod-reducere/kamin.ro",
+    "story": "🔥 Reducere Kamin azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/kamin.ro",
+    "perete": "🔥 Reducere activa la Kamin\n\n✅ Cuptor de pizza gratuit + carte de retete\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/kamin.ro",
+    "hashtags": "#reduceri #coduri #cupoane #oferte #romania #kamin"
   },
   {
     "magazin": "evolutionpowertools.ro",
@@ -600,15 +768,27 @@
     "hashtags": "#reduceri #coduri #cupoane #oferte #romania #evolutionpowertools"
   },
   {
+    "magazin": "prestigehome.ro",
+    "nume": "Prestigehome",
+    "categorie": "Casă & Grădină",
+    "cod": "",
+    "procent": "-20%",
+    "zile_ramase": 15,
+    "link": "https://amcupon.ro/cod-reducere/prestigehome.ro",
+    "story": "🔥 -20% la Prestigehome!\nFara cod necesar 👇\namcupon.ro/cod-reducere/prestigehome.ro",
+    "perete": "🔥 -20% la Prestigehome — activ acum\n\n✅ HOME REFRESH\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/prestigehome.ro",
+    "hashtags": "#reduceri #coduri #cupoane #oferte #romania #prestigehome"
+  },
+  {
     "magazin": "paa-home.ro",
     "nume": "Paa Home",
     "categorie": "Casă & Grădină",
     "cod": "",
-    "procent": "",
-    "zile_ramase": 168,
+    "procent": "-60%",
+    "zile_ramase": 107,
     "link": "https://amcupon.ro/cod-reducere/paa-home.ro",
-    "story": "🔥 Reducere Paa Home azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/paa-home.ro",
-    "perete": "🔥 Reducere activa la Paa Home\n\n✅ Livrare Gratuita la comenzi de peste 350 lei\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/paa-home.ro",
+    "story": "🔥 -60% la Paa Home!\nFara cod necesar 👇\namcupon.ro/cod-reducere/paa-home.ro",
+    "perete": "🔥 -60% la Paa Home — activ acum\n\n✅ Reduceri Paa-Home.ro de pana la -60% la accesorii pentru aspiratoare\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/paa-home.ro",
     "hashtags": "#reduceri #coduri #cupoane #oferte #romania #paahome"
   },
   {
@@ -624,6 +804,30 @@
     "hashtags": "#reduceri #coduri #cupoane #oferte #romania #edituradiana"
   },
   {
+    "magazin": "caraielli.ro",
+    "nume": "Caraielli",
+    "categorie": "Fashion",
+    "cod": "",
+    "procent": "-30%",
+    "zile_ramase": 15,
+    "link": "https://amcupon.ro/cod-reducere/caraielli.ro",
+    "story": "🔥 -30% la Caraielli!\nFara cod necesar 👇\namcupon.ro/cod-reducere/caraielli.ro",
+    "perete": "🔥 -30% la Caraielli — activ acum\n\n✅ Reduceri de până la 30% la încălțămintea de vară selectată\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/caraielli.ro",
+    "hashtags": "#reduceri #moda #fashion #haine #romania #caraielli"
+  },
+  {
+    "magazin": "petit-bebe.ro",
+    "nume": "Petit Bebe",
+    "categorie": "Copii & Familie",
+    "cod": "",
+    "procent": "-20%",
+    "zile_ramase": 10,
+    "link": "https://amcupon.ro/cod-reducere/petit-bebe.ro",
+    "story": "🔥 -20% la Petit Bebe!\nFara cod necesar 👇\namcupon.ro/cod-reducere/petit-bebe.ro",
+    "perete": "🔥 -20% la Petit Bebe — activ acum\n\n✅ Ready, Set, Bebe Discounts – până la -20% reducere!\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/petit-bebe.ro",
+    "hashtags": "#reduceri #coduri #cupoane #oferte #romania #petitbebe"
+  },
+  {
     "magazin": "obio.ro",
     "nume": "Obio",
     "categorie": "Sănătate & Farmacie",
@@ -636,15 +840,39 @@
     "hashtags": "#reduceri #coduri #cupoane #oferte #romania #obio"
   },
   {
+    "magazin": "editura-arthur.ro",
+    "nume": "Editura Arthur",
+    "categorie": "Cărți & Educație",
+    "cod": "",
+    "procent": "",
+    "zile_ramase": 46,
+    "link": "https://amcupon.ro/cod-reducere/editura-arthur.ro",
+    "story": "🔥 Reducere Editura Arthur azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/editura-arthur.ro",
+    "perete": "🔥 Reducere activa la Editura Arthur\n\n✅ Campanie cărți și pachete cu cărți de la Editura Arthur\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/editura-arthur.ro",
+    "hashtags": "#reduceri #coduri #cupoane #oferte #romania #edituraarthur"
+  },
+  {
+    "magazin": "dacris.net",
+    "nume": "Dacris",
+    "categorie": "Marketplace",
+    "cod": "",
+    "procent": "",
+    "zile_ramase": 14,
+    "link": "https://amcupon.ro/cod-reducere/dacris.net",
+    "story": "🔥 Reducere Dacris azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/dacris.net",
+    "perete": "🔥 Reducere activa la Dacris\n\n✅ Produse promotionale personalizate\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/dacris.net",
+    "hashtags": "#reduceri #coduri #cupoane #oferte #romania #dacris"
+  },
+  {
     "magazin": "atomico.ro",
     "nume": "Atomico",
     "categorie": "Casă & Grădină",
     "cod": "",
-    "procent": "-55%",
-    "zile_ramase": 46,
+    "procent": "-50%",
+    "zile_ramase": 15,
     "link": "https://amcupon.ro/cod-reducere/atomico.ro",
-    "story": "🔥 -55% la Atomico!\nFara cod necesar 👇\namcupon.ro/cod-reducere/atomico.ro",
-    "perete": "🔥 -55% la Atomico — activ acum\n\n✅ PromoVARA cu reduceri de până la 55% la produsele selectate pentru casă și grădină\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/atomico.ro",
+    "story": "🔥 -50% la Atomico!\nFara cod necesar 👇\namcupon.ro/cod-reducere/atomico.ro",
+    "perete": "🔥 -50% la Atomico — activ acum\n\n✅ Oferta Lunii Iulie la Atomico cu reduceri de până la 50%\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/atomico.ro",
     "hashtags": "#reduceri #coduri #cupoane #oferte #romania #atomico"
   },
   {
@@ -682,6 +910,18 @@
     "story": "🔥 -54% la Mobonline!\nFara cod necesar 👇\namcupon.ro/cod-reducere/mobonline.ro",
     "perete": "🔥 -54% la Mobonline — activ acum\n\n✅ Summer Sale — cele mai cool oferte, până la -54% ☀️\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/mobonline.ro",
     "hashtags": "#reduceri #coduri #cupoane #oferte #romania #mobonline"
+  },
+  {
+    "magazin": "newpharma.ro",
+    "nume": "Newpharma",
+    "categorie": "Beauty & Îngrijire",
+    "cod": "",
+    "procent": "-50%",
+    "zile_ramase": 8,
+    "link": "https://amcupon.ro/cod-reducere/newpharma.ro",
+    "story": "🔥 -50% la Newpharma!\nFara cod necesar 👇\namcupon.ro/cod-reducere/newpharma.ro",
+    "perete": "🔥 -50% la Newpharma — activ acum\n\n✅ Summer Sale pe Newpharma\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/newpharma.ro",
+    "hashtags": "#reduceri #cosmetice #beauty #skincare #romania #newpharma"
   },
   {
     "magazin": "littlenest.ro",
@@ -780,6 +1020,18 @@
     "hashtags": "#reduceri #coduri #cupoane #oferte #romania #220volti"
   },
   {
+    "magazin": "hobiktoys.ro",
+    "nume": "Hobiktoys",
+    "categorie": "Copii & Familie",
+    "cod": "",
+    "procent": "-12%",
+    "zile_ramase": 45,
+    "link": "https://amcupon.ro/cod-reducere/hobiktoys.ro",
+    "story": "🔥 -12% la Hobiktoys!\nFara cod necesar 👇\namcupon.ro/cod-reducere/hobiktoys.ro",
+    "perete": "🔥 -12% la Hobiktoys — activ acum\n\n✅ Back to School | Câștigă comision de până la 12%\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/hobiktoys.ro",
+    "hashtags": "#reduceri #coduri #cupoane #oferte #romania #hobiktoys"
+  },
+  {
     "magazin": "delaria.ro",
     "nume": "Delaria",
     "categorie": "Marketplace",
@@ -816,28 +1068,28 @@
     "hashtags": "#reduceri #coduri #cupoane #oferte #romania #rebloom"
   },
   {
-    "magazin": "yves-rocher.ro",
-    "nume": "Yves Rocher",
-    "categorie": "Beauty",
+    "magazin": "brainmarket.ro",
+    "nume": "Brainmarket",
+    "categorie": "Sănătate & Farmacie",
     "cod": "",
-    "procent": "-50%",
-    "zile_ramase": 5,
-    "link": "https://amcupon.ro/cod-reducere/yves-rocher.ro",
-    "story": "🔥 -50% la Yves Rocher!\nFara cod necesar 👇\namcupon.ro/cod-reducere/yves-rocher.ro",
-    "perete": "🔥 -50% la Yves Rocher — activ acum\n\n✅ REDUCERI PÂNĂ LA -50%\n⏳ Expiră în 5 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/yves-rocher.ro",
-    "hashtags": "#reduceri #cosmetice #beauty #skincare #romania #yvesrocher"
+    "procent": "-10%",
+    "zile_ramase": 46,
+    "link": "https://amcupon.ro/cod-reducere/brainmarket.ro",
+    "story": "🔥 -10% la Brainmarket!\nFara cod necesar 👇\namcupon.ro/cod-reducere/brainmarket.ro",
+    "perete": "🔥 -10% la Brainmarket — activ acum\n\n✅ -10% SUMMER SALE\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/brainmarket.ro",
+    "hashtags": "#reduceri #coduri #cupoane #oferte #romania #brainmarket"
   },
   {
-    "magazin": "moftcollection.ro",
-    "nume": "Moftcollection",
-    "categorie": "Online Mall",
+    "magazin": "style4street.com",
+    "nume": "Style4Street",
+    "categorie": "Fashion",
     "cod": "",
-    "procent": "",
-    "zile_ramase": 168,
-    "link": "https://amcupon.ro/cod-reducere/moftcollection.ro",
-    "story": "🔥 Reducere Moftcollection azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/moftcollection.ro",
-    "perete": "🔥 Reducere activa la Moftcollection\n\n✅ Livrare Gratuita la comenzi de peste 200 lei\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/moftcollection.ro",
-    "hashtags": "#reduceri #coduri #cupoane #oferte #romania #moftcollection"
+    "procent": "-10%",
+    "zile_ramase": 62,
+    "link": "https://amcupon.ro/cod-reducere/style4street.com",
+    "story": "🔥 -10% la Style4Street!\nFara cod necesar 👇\namcupon.ro/cod-reducere/style4street.com",
+    "perete": "🔥 -10% la Style4Street — activ acum\n\n✅ Geci Statement la Reducere\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/style4street.com",
+    "hashtags": "#reduceri #moda #fashion #haine #romania #style4street"
   },
   {
     "magazin": "geekmall.ro",
