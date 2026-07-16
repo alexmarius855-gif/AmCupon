@@ -53,12 +53,12 @@ export default function FloriPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-[#F7F9FC]">
-        <nav className="bg-[#F7F9FC] border-b border-[#e2e8f0]">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#64748b]">
+      <div className="min-h-screen bg-[#0a0f1a]">
+        <nav className="bg-[#0a0f1a] border-b border-[#1e293b]">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#94a3b8]">
             <Link href="/" className="hover:text-[#0d9488]">Acasă</Link>
             <span className="mx-1">/</span>
-            <span className="text-[#334155] font-medium">Flori & Buchete</span>
+            <span className="text-[#cbd5e1] font-medium">Flori & Buchete</span>
           </div>
         </nav>
 
@@ -72,7 +72,7 @@ export default function FloriPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Trandafiri","Buchete mixte","Cutii cu flori","Aranjamente nuntă","Livrare azi","Coroane"].map(c => (
-                <span key={c} className="bg-slate-100 text-[#0f172a] text-sm font-semibold px-4 py-1.5 rounded-full border border-slate-200">{c}</span>
+                <span key={c} className="bg-slate-100 text-[#f1f5f9] text-sm font-semibold px-4 py-1.5 rounded-full border border-slate-200">{c}</span>
               ))}
             </div>
           </div>
@@ -80,14 +80,14 @@ export default function FloriPage() {
 
         {/* OCAZII */}
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[#0f172a] mb-6 text-center">Flori pentru orice ocazie</h2>
+          <h2 className="text-xl font-black text-[#f1f5f9] mb-6 text-center">Flori pentru orice ocazie</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {OCAZII.map(o => (
               <div key={o.label}
-                className="bg-[#ffffff] border border-[#e2e8f0] rounded-xl p-5 hover:shadow-md transition-all">
+                className="bg-[#111827] border border-[#1e293b] rounded-xl p-5 hover:shadow-md transition-all">
                 <div className="text-3xl mb-2">{o.emoji}</div>
-                <h3 className="font-bold text-[#0f172a] text-sm mb-1">{o.label}</h3>
-                <p className="text-xs text-[#475569]">{o.desc}</p>
+                <h3 className="font-bold text-[#f1f5f9] text-sm mb-1">{o.label}</h3>
+                <p className="text-xs text-[#cbd5e1]">{o.desc}</p>
               </div>
             ))}
           </div>
@@ -96,12 +96,12 @@ export default function FloriPage() {
         {/* MAGAZINE */}
         <section className="max-w-6xl mx-auto px-4 pb-10">
           <div className="flex items-center gap-3 mb-5">
-            <h2 className="text-xl font-black text-[#0f172a]">Florării cu reduceri active</h2>
+            <h2 className="text-xl font-black text-[#f1f5f9]">Florării cu reduceri active</h2>
           </div>
           {magazine.length === 0 ? (
-            <div className="text-center py-10 bg-[#ffffff] rounded-xl">
+            <div className="text-center py-10 bg-[#111827] rounded-xl">
               <p className="text-2xl mb-3">💐</p>
-              <p className="text-[#475569] font-medium mb-2">Explorează ofertele noastre de cadouri</p>
+              <p className="text-[#cbd5e1] font-medium mb-2">Explorează ofertele noastre de cadouri</p>
               <Link href="/idei-cadouri" className="inline-block bg-[#0d9488] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#14b8a6] transition-colors">
                 Vezi idei de cadouri →
               </Link>
@@ -114,28 +114,28 @@ export default function FloriPage() {
                 const promo = m.promotii[0];
                 return (
                   <a key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                    className="group bg-[#ffffff] border border-[#e2e8f0] hover:border-[#14b8a6]/40 rounded-xl p-4 transition-all hover:shadow-md">
+                    className="group bg-[#111827] border border-[#1e293b] hover:border-[#14b8a6]/40 rounded-xl p-4 transition-all hover:shadow-md">
                     <div className="flex items-center gap-3 mb-3">
                       {m.logo_url ? (
-                        <div className="w-10 h-10 rounded-xl overflow-hidden bg-white border border-[#e2e8f0] shrink-0">
+                        <div className="w-10 h-10 rounded-xl overflow-hidden bg-[#ffffff] border border-[#1e293b] shrink-0">
                           {/* eslint-disable-next-line @next/next/no-img-element */}
                           <img src={m.logo_url} alt={`Logo ${nume}`} className="w-full h-full object-contain" loading="lazy" />
                         </div>
                       ) : (
-                        <div className={`w-10 h-10 rounded-xl ${culoare} flex items-center justify-center text-[#0f172a] font-black text-lg shrink-0`}>
+                        <div className={`w-10 h-10 rounded-xl ${culoare} flex items-center justify-center text-[#f1f5f9] font-black text-lg shrink-0`}>
                           {nume[0]}
                         </div>
                       )}
                       <div>
-                        <p className="font-bold text-[#0f172a] text-sm">{nume}</p>
+                        <p className="font-bold text-[#f1f5f9] text-sm">{nume}</p>
                         {m.are_promotie && m.cod_cupon && <span className="text-xs text-[#0f766e] font-bold">COD</span>}
                         {m.are_promotie && !m.cod_cupon && <span className="text-xs text-[#0f766e] font-medium">Ofertă</span>}
                       </div>
                     </div>
                     {promo ? (
-                      <p className="text-[#475569] text-xs line-clamp-2">{promo.nume}</p>
+                      <p className="text-[#cbd5e1] text-xs line-clamp-2">{promo.nume}</p>
                     ) : (
-                      <p className="text-[#64748b] text-xs italic">Verifică ofertele curente</p>
+                      <p className="text-[#94a3b8] text-xs italic">Verifică ofertele curente</p>
                     )}
                     <div className="flex justify-end mt-2">
                       <span className="text-xs text-[#14b8a6] font-semibold group-hover:text-[#14b8a6]">Vezi →</span>
@@ -156,16 +156,16 @@ export default function FloriPage() {
         />
 
         {/* SEO */}
-        <section className="bg-[#ffffff] border-t border-[#e2e8f0] py-10 px-4">
+        <section className="bg-[#111827] border-t border-[#1e293b] py-10 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-[#0f172a] mb-5">Cum alegi florăria potrivită</h2>
-            <div className="space-y-4 text-sm text-[#475569] leading-relaxed">
+            <h2 className="text-xl font-black text-[#f1f5f9] mb-5">Cum alegi florăria potrivită</h2>
+            <div className="space-y-4 text-sm text-[#cbd5e1] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[#0f172a] mb-1">Livrare rapidă vs. programată</h3>
+                <h3 className="font-bold text-[#f1f5f9] mb-1">Livrare rapidă vs. programată</h3>
                 <p>Pentru ocazii de ultim moment, alege florării cu livrare în 2-4 ore în oraș mare. Pentru evenimente planificate (nuntă, aniversare), comandă cu 2-3 zile înainte pentru cele mai proaspete aranjamente și prețuri mai mici.</p>
               </div>
               <div>
-                <h3 className="font-bold text-[#0f172a] mb-1">Sfaturi pentru economii la flori {an}</h3>
+                <h3 className="font-bold text-[#f1f5f9] mb-1">Sfaturi pentru economii la flori {an}</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
                   <li><strong>Abonamente flori</strong> — unele florării oferă reduceri la livrări recurente lunare</li>
                   <li><strong>Sezonalitate</strong> — florile de sezon sunt cu 20-30% mai ieftine decât cele de import</li>
@@ -178,7 +178,7 @@ export default function FloriPage() {
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[#334155] mb-4">Explorează si alte categorii</h2>
+          <h2 className="text-base font-black text-[#cbd5e1] mb-4">Explorează si alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/idei-cadouri", label: "🎁 Idei Cadouri" },
@@ -189,14 +189,14 @@ export default function FloriPage() {
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-[#ffffff] hover:bg-[#e2e8f0] hover:text-[#0f766e] text-[#334155] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#e2e8f0] hover:border-[#14b8a6]">
+                className="bg-[#111827] hover:bg-[#1e293b] hover:text-[#0f766e] text-[#cbd5e1] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#1e293b] hover:border-[#14b8a6]">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-[#e2e8f0] py-6 text-center text-xs text-[#64748b] mt-4">
+        <footer className="border-t border-[#1e293b] py-6 text-center text-xs text-[#94a3b8] mt-4">
           © {an} AmCupon.ro ·{" "}
           <Link href="/blog" className="hover:text-[#0d9488]">Blog</Link>{" · "}
           <Link href="/categorii" className="hover:text-[#0d9488]">Categorii</Link>{" · "}

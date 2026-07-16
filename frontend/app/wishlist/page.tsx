@@ -16,7 +16,7 @@ export default function WishlistPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#F7F9FC]">
+    <div className="min-h-screen bg-[#0a0f1a]">
       <div className="max-w-5xl mx-auto px-4 py-10">
 
         {/* Header */}
@@ -24,13 +24,13 @@ export default function WishlistPage() {
           <span className="text-3xl">&#10084;&#65039;</span>
           <div>
             <h1 className="text-2xl font-black text-[#ffffff]">Produsele mele salvate</h1>
-            <p className="text-sm text-[#64748b]">{items.length} {items.length === 1 ? "produs salvat" : "produse salvate"}</p>
+            <p className="text-sm text-[#94a3b8]">{items.length} {items.length === 1 ? "produs salvat" : "produse salvate"}</p>
           </div>
         </div>
 
         {/* Price drop banner */}
         {priceDrops.length > 0 && (
-          <div className="bg-[#ffffff] border border-emerald-200 rounded-xl p-4 mb-6 flex items-start gap-3">
+          <div className="bg-[#111827] border border-emerald-200 rounded-xl p-4 mb-6 flex items-start gap-3">
             <span className="text-2xl">&#127381;</span>
             <div>
               <p className="font-bold text-emerald-800">
@@ -58,7 +58,7 @@ export default function WishlistPage() {
           <div className="text-center py-20">
             <div className="text-6xl mb-4">&#128722;</div>
             <p className="text-lg font-bold text-[#cbd5e1] mb-2">Niciun produs salvat inca</p>
-            <p className="text-[#64748b] text-sm mb-6">
+            <p className="text-[#94a3b8] text-sm mb-6">
               Apasa iconita &#9825; pe orice produs din sectiunea Produse pentru a-l salva.
             </p>
             <Link href="/produse" className="inline-block bg-[#0d9488] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#14b8a6] transition-colors">
@@ -76,8 +76,8 @@ export default function WishlistPage() {
               const dropped  = item.price > 0 && item.savedPrice > 0 && item.price < item.savedPrice;
 
               return (
-                <div key={item.id} className={`bg-[#ffffff] rounded-xl border overflow-hidden flex flex-col relative
-                    ${dropped ? "border-emerald-300 ring-2 ring-emerald-200" : "border-[#e2e8f0]"}`}>
+                <div key={item.id} className={`bg-[#111827] rounded-xl border overflow-hidden flex flex-col relative
+                    ${dropped ? "border-emerald-300 ring-2 ring-emerald-200" : "border-[#1e293b]"}`}>
 
                   {/* Badge pret scazut */}
                   {dropped && pct && (
@@ -89,7 +89,7 @@ export default function WishlistPage() {
                   {/* Buton remove */}
                   <button
                     onClick={() => remove(item.id)}
-                    className="absolute top-2 right-2 z-10 w-6 h-6 bg-slate-100 hover:bg-[#ffffff] border border-[#e2e8f0] rounded-full flex items-center justify-center text-[#64748b] hover:text-red-400 transition-colors text-xs"
+                    className="absolute top-2 right-2 z-10 w-6 h-6 bg-slate-100 hover:bg-[#111827] border border-[#1e293b] rounded-full flex items-center justify-center text-[#94a3b8] hover:text-red-400 transition-colors text-xs"
                     title="Sterge din lista"
                   >
                     &#x2715;
@@ -113,8 +113,8 @@ export default function WishlistPage() {
 
                   {/* Info */}
                   <div className="p-2 flex flex-col flex-1">
-                    <p className="text-[10px] text-[#475569] truncate mb-0.5">{item.merchant}</p>
-                    <p className="text-xs font-semibold text-[#e2e8f0] line-clamp-2 leading-snug flex-1">{item.title}</p>
+                    <p className="text-[10px] text-[#cbd5e1] truncate mb-0.5">{item.merchant}</p>
+                    <p className="text-xs font-semibold text-[#cbd5e1] line-clamp-2 leading-snug flex-1">{item.title}</p>
 
                     {/* Preturi */}
                     <div className="mt-2">
@@ -124,15 +124,15 @@ export default function WishlistPage() {
                             {item.price.toFixed(2)} lei
                           </span>
                           {dropped && (
-                            <span className="text-[10px] text-[#475569] line-through">
+                            <span className="text-[10px] text-[#cbd5e1] line-through">
                               {item.savedPrice.toFixed(2)}
                             </span>
                           )}
                         </div>
                       ) : (
-                        <span className="text-xs text-[#475569]">Pret indisponibil</span>
+                        <span className="text-xs text-[#cbd5e1]">Pret indisponibil</span>
                       )}
-                      <p className="text-[9px] text-[#334155] mt-0.5">
+                      <p className="text-[9px] text-[#cbd5e1] mt-0.5">
                         Salvat la {item.savedPrice.toFixed(2)} lei
                       </p>
                     </div>

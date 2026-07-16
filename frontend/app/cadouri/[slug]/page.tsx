@@ -351,42 +351,42 @@ export default async function CadouriSlugPage({
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <div className="min-h-screen bg-[#F7F9FC]">
+      <div className="min-h-screen bg-[#0a0f1a]">
 
         {/* Header */}
-        <header className="bg-[#ffffff] border-b border-[#e2e8f0]">
+        <header className="bg-[#111827] border-b border-[#1e293b]">
           <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-2 text-sm flex-wrap">
             <Link href="/" className="flex items-center gap-1.5 shrink-0">
               <div className="bg-[#0d9488] text-white font-black text-sm px-1.5 py-0.5 rounded-md">Am</div>
-              <span className="font-black text-[#0f172a]">Cupon.ro</span>
+              <span className="font-black text-[#f1f5f9]">Cupon.ro</span>
             </Link>
             <span className="text-[#94a3b8]">/</span>
-            <Link href="/cadouri" className="text-[#475569] hover:text-[#0f172a]">Cadouri</Link>
+            <Link href="/cadouri" className="text-[#cbd5e1] hover:text-[#f1f5f9]">Cadouri</Link>
             <span className="text-[#94a3b8]">/</span>
-            <span className="text-[#334155] font-semibold">{oc.titlu}</span>
+            <span className="text-[#cbd5e1] font-semibold">{oc.titlu}</span>
           </div>
         </header>
 
         {/* Hero */}
         <div
-          className="relative py-12 px-4 text-center overflow-hidden border-b border-[#e2e8f0]"
+          className="relative py-12 px-4 text-center overflow-hidden border-b border-[#1e293b]"
           style={{ background: `linear-gradient(135deg, ${oc.from}18 0%, ${oc.to}12 100%)` }}
         >
           <div className="absolute inset-0 pointer-events-none" style={{ background: `radial-gradient(ellipse 70% 60% at 50% 0%, ${oc.from}22 0%, transparent 70%)` }} />
           <div className="relative max-w-3xl mx-auto">
             <div className="text-5xl mb-4">{oc.emoji}</div>
-            <h1 className="text-3xl md:text-4xl font-black text-[#0f172a] mb-3">
+            <h1 className="text-3xl md:text-4xl font-black text-[#f1f5f9] mb-3">
               {oc.titlu}
             </h1>
-            <p className="text-[#475569] text-base mb-4 max-w-xl mx-auto">{oc.desc}</p>
+            <p className="text-[#cbd5e1] text-base mb-4 max-w-xl mx-auto">{oc.desc}</p>
             <div className="flex flex-wrap justify-center gap-3 text-sm">
-              <span className="flex items-center gap-1.5 bg-[#e2e8f0]/80 border border-[#cbd5e1] text-[#334155] px-3 py-1.5 rounded-full">
+              <span className="flex items-center gap-1.5 bg-[#1e293b]/80 border border-[#334155] text-[#cbd5e1] px-3 py-1.5 rounded-full">
                 <span className="text-emerald-400">✓</span> {products.length}+ produse disponibile
               </span>
-              <span className="flex items-center gap-1.5 bg-[#e2e8f0]/80 border border-[#cbd5e1] text-[#334155] px-3 py-1.5 rounded-full">
+              <span className="flex items-center gap-1.5 bg-[#1e293b]/80 border border-[#334155] text-[#cbd5e1] px-3 py-1.5 rounded-full">
                 <span className="text-[#0d9488]">✓</span> Preturi verificate azi
               </span>
-              <span className="flex items-center gap-1.5 bg-[#e2e8f0]/80 border border-[#cbd5e1] text-[#334155] px-3 py-1.5 rounded-full">
+              <span className="flex items-center gap-1.5 bg-[#1e293b]/80 border border-[#334155] text-[#cbd5e1] px-3 py-1.5 rounded-full">
                 <span className="text-[#0f766e]">✓</span> Livrare Romania
               </span>
             </div>
@@ -397,12 +397,12 @@ export default async function CadouriSlugPage({
 
           {/* Idei rapide */}
           <section className="mb-10">
-            <h2 className="text-lg font-black text-[#0f172a] mb-4">Idei populare de cadouri</h2>
+            <h2 className="text-lg font-black text-[#f1f5f9] mb-4">Idei populare de cadouri</h2>
             <div className="flex flex-wrap gap-2">
               {oc.idei.map((idee, i) => (
                 <span
                   key={i}
-                  className="flex items-center gap-1.5 bg-[#ffffff] border border-[#cbd5e1] text-[#334155] text-sm px-3 py-1.5 rounded-xl"
+                  className="flex items-center gap-1.5 bg-[#111827] border border-[#334155] text-[#cbd5e1] text-sm px-3 py-1.5 rounded-xl"
                 >
                   <span style={{ color: oc.from }}>→</span>
                   {idee}
@@ -415,10 +415,10 @@ export default async function CadouriSlugPage({
           {products.length > 0 && (
             <section className="mb-12">
               <div className="flex items-center justify-between mb-5">
-                <h2 className="text-xl font-black text-[#0f172a]">
+                <h2 className="text-xl font-black text-[#f1f5f9]">
                   Produse disponibile — {oc.titlu}
                 </h2>
-                <span className="text-sm text-[#64748b]">{products.length} produse</span>
+                <span className="text-sm text-[#94a3b8]">{products.length} produse</span>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
                 {products.map((p: Produs) => (
@@ -427,10 +427,10 @@ export default async function CadouriSlugPage({
                     href={p.url}
                     target="_blank"
                     rel="sponsored noopener noreferrer"
-                    className="group bg-[#ffffff] border border-[#e2e8f0] hover:border-[#14b8a6]/40 rounded-xl overflow-hidden transition-all hover:shadow-lg hover:shadow-[#14b8a6]/5 hover:-translate-y-0.5"
+                    className="group bg-[#111827] border border-[#1e293b] hover:border-[#14b8a6]/40 rounded-xl overflow-hidden transition-all hover:shadow-lg hover:shadow-[#14b8a6]/5 hover:-translate-y-0.5"
                   >
                     {/* Imagine produs */}
-                    <div className="aspect-square relative bg-[#e2e8f0] overflow-hidden">
+                    <div className="aspect-square relative bg-[#1e293b] overflow-hidden">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         src={p.image}
@@ -447,7 +447,7 @@ export default async function CadouriSlugPage({
 
                     {/* Info produs */}
                     <div className="p-3">
-                      <p className="text-[#334155] text-xs font-medium leading-tight line-clamp-2 mb-2 group-hover:text-[#0f172a] transition-colors">
+                      <p className="text-[#cbd5e1] text-xs font-medium leading-tight line-clamp-2 mb-2 group-hover:text-[#f1f5f9] transition-colors">
                         {p.title}
                       </p>
                       <div className="flex items-baseline gap-1.5">
@@ -466,24 +466,24 @@ export default async function CadouriSlugPage({
 
           {/* Editorial */}
           <section className="mb-10">
-            <div className="bg-[#ffffff] border border-[#e2e8f0] rounded-xl p-6">
-              <h2 className="text-lg font-black text-[#0f172a] mb-3">Cum alegi {oc.titlu.toLowerCase()}?</h2>
-              <p className="text-[#475569] text-sm leading-relaxed mb-4">{oc.editorial}</p>
+            <div className="bg-[#111827] border border-[#1e293b] rounded-xl p-6">
+              <h2 className="text-lg font-black text-[#f1f5f9] mb-3">Cum alegi {oc.titlu.toLowerCase()}?</h2>
+              <p className="text-[#cbd5e1] text-sm leading-relaxed mb-4">{oc.editorial}</p>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                <div className="bg-[#e2e8f0]/50 rounded-xl p-4">
+                <div className="bg-[#1e293b]/50 rounded-xl p-4">
                   <div className="text-2xl mb-2">💡</div>
-                  <h3 className="text-sm font-bold text-[#0f172a] mb-1">Gandeste-te la persoana</h3>
-                  <p className="text-xs text-[#64748b]">Care sunt hobby-urile si pasiunile ei/lui? Un cadou personalizat valoreath mult mai mult decat unul scump dar nepotrivit.</p>
+                  <h3 className="text-sm font-bold text-[#f1f5f9] mb-1">Gandeste-te la persoana</h3>
+                  <p className="text-xs text-[#94a3b8]">Care sunt hobby-urile si pasiunile ei/lui? Un cadou personalizat valoreath mult mai mult decat unul scump dar nepotrivit.</p>
                 </div>
-                <div className="bg-[#e2e8f0]/50 rounded-xl p-4">
+                <div className="bg-[#1e293b]/50 rounded-xl p-4">
                   <div className="text-2xl mb-2">💰</div>
-                  <h3 className="text-sm font-bold text-[#0f172a] mb-1">Stabileste un buget</h3>
-                  <p className="text-xs text-[#64748b]">Nu trebuie sa cheltuiesti mult pentru a impresiona. Cadouri intre 100-300 RON sunt apreciate la fel de mult ca cele mai scumpe.</p>
+                  <h3 className="text-sm font-bold text-[#f1f5f9] mb-1">Stabileste un buget</h3>
+                  <p className="text-xs text-[#94a3b8]">Nu trebuie sa cheltuiesti mult pentru a impresiona. Cadouri intre 100-300 RON sunt apreciate la fel de mult ca cele mai scumpe.</p>
                 </div>
-                <div className="bg-[#e2e8f0]/50 rounded-xl p-4">
+                <div className="bg-[#1e293b]/50 rounded-xl p-4">
                   <div className="text-2xl mb-2">📦</div>
-                  <h3 className="text-sm font-bold text-[#0f172a] mb-1">Verifica livrarea</h3>
-                  <p className="text-xs text-[#64748b]">Asigura-te ca produsul ajunge la timp. Toate magazinele partenere AmCupon livreaza in Romania, cele mai multe in 24-48h.</p>
+                  <h3 className="text-sm font-bold text-[#f1f5f9] mb-1">Verifica livrarea</h3>
+                  <p className="text-xs text-[#94a3b8]">Asigura-te ca produsul ajunge la timp. Toate magazinele partenere AmCupon livreaza in Romania, cele mai multe in 24-48h.</p>
                 </div>
               </div>
             </div>
@@ -492,20 +492,20 @@ export default async function CadouriSlugPage({
           {/* Oferte active din magazine */}
           {promoRelevante.length > 0 && (
             <section className="mb-10">
-              <h2 className="text-lg font-black text-[#0f172a] mb-4">Oferte active azi in magazine</h2>
+              <h2 className="text-lg font-black text-[#f1f5f9] mb-4">Oferte active azi in magazine</h2>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 {promoRelevante.slice(0, 8).map((m: Magazin, i: number) => (
                   <Link
                     key={i}
                     href={`/cod-reducere/${m.magazin}`}
-                    className="bg-[#ffffff] border border-[#e2e8f0] hover:border-[#14b8a6]/40 rounded-xl p-3 flex items-center gap-2 transition-all"
+                    className="bg-[#111827] border border-[#1e293b] hover:border-[#14b8a6]/40 rounded-xl p-3 flex items-center gap-2 transition-all"
                   >
                     {m.logo_url && (
                       // eslint-disable-next-line @next/next/no-img-element
-                      <img src={m.logo_url} alt={m.magazin_display || m.magazin} className="w-8 h-8 rounded-lg object-contain bg-white p-0.5" loading="lazy" />
+                      <img src={m.logo_url} alt={m.magazin_display || m.magazin} className="w-8 h-8 rounded-lg object-contain bg-[#111827] p-0.5" loading="lazy" />
                     )}
                     <div>
-                      <div className="text-[#334155] text-xs font-bold">{m.magazin_display || m.magazin}</div>
+                      <div className="text-[#cbd5e1] text-xs font-bold">{m.magazin_display || m.magazin}</div>
                       {m.promotii?.[0]?.cod_cupon && (
                         <div className="text-[#0d9488] text-[10px] font-mono font-black">{m.promotii[0].cod_cupon}</div>
                       )}
@@ -517,14 +517,14 @@ export default async function CadouriSlugPage({
           )}
 
           {/* Alte ocazii */}
-          <section className="mb-6 border-t border-[#e2e8f0] pt-8">
-            <h2 className="text-base font-bold text-[#0f172a] mb-4">Alte ocazii — mai multe idei</h2>
+          <section className="mb-6 border-t border-[#1e293b] pt-8">
+            <h2 className="text-base font-bold text-[#f1f5f9] mb-4">Alte ocazii — mai multe idei</h2>
             <div className="flex flex-wrap gap-2">
               {altePagini.map(([s, o]) => (
                 <Link
                   key={s}
                   href={`/cadouri/${s}`}
-                  className="flex items-center gap-1.5 bg-[#ffffff] border border-[#e2e8f0] hover:border-[#94a3b8] text-[#475569] hover:text-[#0f172a] text-sm px-3 py-2 rounded-xl transition-all"
+                  className="flex items-center gap-1.5 bg-[#111827] border border-[#1e293b] hover:border-[#475569] text-[#cbd5e1] hover:text-[#f1f5f9] text-sm px-3 py-2 rounded-xl transition-all"
                 >
                   {o.emoji} {o.titlu}
                 </Link>

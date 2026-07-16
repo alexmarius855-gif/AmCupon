@@ -75,13 +75,13 @@ export default function ComparatiiPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <div className="min-h-screen bg-[#F7F9FC] text-[#0f172a]">
+      <div className="min-h-screen bg-[#0a0f1a] text-[#f1f5f9]">
         <div className="max-w-4xl mx-auto px-4 py-10">
 
           {/* Hero */}
           <div className="text-center mb-10">
-            <h1 className="text-4xl font-bold text-[#0f172a] mb-3">Comparatii Magazine Online</h1>
-            <p className="text-[#475569] text-lg max-w-2xl mx-auto">
+            <h1 className="text-4xl font-bold text-[#f1f5f9] mb-3">Comparatii Magazine Online</h1>
+            <p className="text-[#cbd5e1] text-lg max-w-2xl mx-auto">
               Nu stii unde sa cumperi? Comparam cele mai populare magazine online din Romania
               ca sa iei decizia corecta — cu coduri de reducere verificate zilnic.
             </p>
@@ -96,23 +96,23 @@ export default function ComparatiiPage() {
                 <Link
                   key={c.slug}
                   href={`/comparatii/${c.slug}`}
-                  className={`block bg-[#ffffff] border ${cl.border} rounded-xl p-5 hover:bg-[#e2e8f0] transition-colors group`}
+                  className={`block bg-[#111827] border ${cl.border} rounded-xl p-5 hover:bg-[#1e293b] transition-colors group`}
                 >
                   <div className="flex items-start justify-between mb-3">
                     <span className={`text-xs font-semibold px-2 py-1 rounded-full ${cl.badge}`}>
                       {c.categorie}
                     </span>
                     {totalPromo > 0 && (
-                      <span className="text-xs text-[#475569]">{totalPromo} oferte active</span>
+                      <span className="text-xs text-[#cbd5e1]">{totalPromo} oferte active</span>
                     )}
                   </div>
-                  <h2 className="text-[#0f172a] font-bold text-lg mb-1 group-hover:text-[#0f766e] transition-colors">
+                  <h2 className="text-[#f1f5f9] font-bold text-lg mb-1 group-hover:text-[#0f766e] transition-colors">
                     {c.n1} vs {c.n2}
                   </h2>
                   <p className={`text-sm font-medium ${cl.text}`}>
                     {c.luna} {c.an} — Comparatie completa
                   </p>
-                  <p className="text-[#64748b] text-xs mt-2">
+                  <p className="text-[#94a3b8] text-xs mt-2">
                     Oferte, livrare, reduceri, verdict final →
                   </p>
                 </Link>
@@ -121,9 +121,9 @@ export default function ComparatiiPage() {
           </div>
 
           {/* CTA jos */}
-          <div className="mt-12 text-center bg-[#ffffff] border border-[#e2e8f0] rounded-xl p-8">
-            <h2 className="text-xl font-bold text-[#0f172a] mb-2">Cauti un cod de reducere specific?</h2>
-            <p className="text-[#475569] text-sm mb-5">
+          <div className="mt-12 text-center bg-[#111827] border border-[#1e293b] rounded-xl p-8">
+            <h2 className="text-xl font-bold text-[#f1f5f9] mb-2">Cauti un cod de reducere specific?</h2>
+            <p className="text-[#cbd5e1] text-sm mb-5">
               AmCupon.ro verifica zilnic codurile si ofertele de la peste 1000 magazine din Romania.
             </p>
             <Link

@@ -68,7 +68,7 @@ export default function MagazinClient({ magazin: m }: { magazin: Magazin }) {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* HEADER */}
-      <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
+      <header className="bg-[#111827] border-b border-gray-200 sticky top-0 z-50 shadow-sm">
         <div className="max-w-5xl mx-auto px-4 py-3 flex items-center gap-4">
           <Link href="/" className="flex items-center gap-1.5 shrink-0">
             <div className="bg-[#0d9488] text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
@@ -87,7 +87,7 @@ export default function MagazinClient({ magazin: m }: { magazin: Magazin }) {
       <div className="max-w-5xl mx-auto px-4 py-8">
 
         {/* PROFIL MAGAZIN */}
-        <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 mb-8 flex flex-col sm:flex-row items-center sm:items-start gap-6">
+        <div className="bg-[#111827] rounded-xl border border-gray-200 shadow-sm p-6 mb-8 flex flex-col sm:flex-row items-center sm:items-start gap-6">
           <div className="w-24 h-24 rounded-xl overflow-hidden flex items-center justify-center bg-gray-50 border border-gray-100 p-1 shrink-0">
             {m.logo_url && imgOk ? (
               <img
@@ -174,12 +174,12 @@ export default function MagazinClient({ magazin: m }: { magazin: Magazin }) {
                 const isCopiat = copiat === idx;
 
                 return (
-                  <div key={idx} className="bg-white rounded-xl border border-gray-200 shadow-sm p-5">
+                  <div key={idx} className="bg-[#111827] rounded-xl border border-gray-200 shadow-sm p-5">
                     <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
                       <div className="flex-1">
                         <div className="flex flex-wrap items-center gap-2 mb-2">
                           {discount && (
-                            <span className="text-sm font-black text-[#0d9488] bg-[#f0fdfa] px-2 py-0.5 rounded-lg">
+                            <span className="text-sm font-black text-[#0d9488] bg-[#0d9488]/10 px-2 py-0.5 rounded-lg">
                               -{discount}
                             </span>
                           )}
@@ -209,7 +209,7 @@ export default function MagazinClient({ magazin: m }: { magazin: Magazin }) {
                         {promo.cod_cupon ? (
                           isRevealed ? (
                             <div className="space-y-2">
-                              <div className="border-2 border-dashed border-[#0d9488] rounded-xl py-2.5 px-3 text-center bg-[#f0fdfa]">
+                              <div className="border-2 border-dashed border-[#0d9488] rounded-xl py-2.5 px-3 text-center bg-[#0d9488]/10">
                                 <span className="font-mono font-black text-[#0f766e] tracking-widest text-sm">
                                   {promo.cod_cupon}
                                 </span>
@@ -257,7 +257,7 @@ export default function MagazinClient({ magazin: m }: { magazin: Magazin }) {
             </div>
           </section>
         ) : (
-          <div className="bg-white rounded-xl border border-gray-200 p-10 text-center">
+          <div className="bg-[#111827] rounded-xl border border-gray-200 p-10 text-center">
             <p className="text-gray-400 text-lg mb-1">Nicio promoție activă momentan</p>
             <p className="text-gray-300 text-sm mb-5">Revino în curând sau vizitează direct magazinul</p>
             <a

@@ -50,16 +50,16 @@ export default function ElectronicePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-[#F7F9FC]">
-        <nav className="bg-[#F7F9FC] border-b border-[#e2e8f0]">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#64748b]">
+      <div className="min-h-screen bg-[#0a0f1a]">
+        <nav className="bg-[#0a0f1a] border-b border-[#1e293b]">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#94a3b8]">
             <Link href="/" className="hover:text-[#0d9488]">Acasă</Link>
             <span className="mx-1">/</span>
-            <span className="text-[#334155] font-medium">Electronice cu Reducere</span>
+            <span className="text-[#cbd5e1] font-medium">Electronice cu Reducere</span>
           </div>
         </nav>
 
-        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#0f766e] text-[#0f172a] py-12 px-4">
+        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#0f766e] text-[#f1f5f9] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">📱</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Electronice cu Reducere {an}</h1>
@@ -68,20 +68,20 @@ export default function ElectronicePage() {
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Telefoane","Laptopuri","TV 4K","Gaming","Căști","Smartwatch"].map(c => (
-                <span key={c} className="bg-slate-100 text-[#0f172a] text-sm font-semibold px-4 py-1.5 rounded-full border border-slate-200">{c}</span>
+                <span key={c} className="bg-slate-100 text-[#f1f5f9] text-sm font-semibold px-4 py-1.5 rounded-full border border-slate-200">{c}</span>
               ))}
             </div>
           </div>
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[#0f172a] mb-6 text-center">Ce găsești la electronice online</h2>
+          <h2 className="text-xl font-black text-[#f1f5f9] mb-6 text-center">Ce găsești la electronice online</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {AVANTAJE.map(a => (
-              <div key={a.titlu} className="bg-[#ffffff] border border-[#e2e8f0] rounded-xl p-5">
+              <div key={a.titlu} className="bg-[#111827] border border-[#1e293b] rounded-xl p-5">
                 <div className="text-3xl mb-2">{a.icon}</div>
-                <h3 className="font-bold text-[#0f172a] text-sm mb-1">{a.titlu}</h3>
-                <p className="text-xs text-[#475569]">{a.desc}</p>
+                <h3 className="font-bold text-[#f1f5f9] text-sm mb-1">{a.titlu}</h3>
+                <p className="text-xs text-[#cbd5e1]">{a.desc}</p>
               </div>
             ))}
           </div>
@@ -90,7 +90,7 @@ export default function ElectronicePage() {
         <section className="max-w-6xl mx-auto px-4 pb-10">
           <div className="flex items-center gap-3 mb-5">
             
-            <h2 className="text-xl font-black text-[#0f172a]">Magazine electronice cu reduceri active</h2>
+            <h2 className="text-xl font-black text-[#f1f5f9]">Magazine electronice cu reduceri active</h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {magazine.map((m, i) => {
@@ -99,28 +99,28 @@ export default function ElectronicePage() {
               const promo = m.promotii[0];
               return (
                 <a key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                  className="group bg-[#ffffff] border border-[#e2e8f0] hover:border-[#14b8a6]/40 rounded-xl p-4 transition-all hover:shadow-md">
+                  className="group bg-[#111827] border border-[#1e293b] hover:border-[#14b8a6]/40 rounded-xl p-4 transition-all hover:shadow-md">
                   <div className="flex items-center gap-3 mb-3">
                     {m.logo_url ? (
-                      <div className="w-10 h-10 rounded-xl overflow-hidden bg-white border border-[#e2e8f0] shrink-0">
+                      <div className="w-10 h-10 rounded-xl overflow-hidden bg-[#ffffff] border border-[#1e293b] shrink-0">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img src={m.logo_url} alt={`Logo ${nume}`} className="w-full h-full object-contain" loading="lazy" />
                       </div>
                     ) : (
-                      <div className={`w-10 h-10 rounded-xl ${culoare} flex items-center justify-center text-[#0f172a] font-black text-lg shrink-0`}>
+                      <div className={`w-10 h-10 rounded-xl ${culoare} flex items-center justify-center text-[#f1f5f9] font-black text-lg shrink-0`}>
                         {nume[0]}
                       </div>
                     )}
                     <div>
-                      <p className="font-bold text-[#0f172a] text-sm">{nume}</p>
+                      <p className="font-bold text-[#f1f5f9] text-sm">{nume}</p>
                       {m.are_promotie && m.cod_cupon && <span className="text-xs text-[#0d9488] font-bold">COD</span>}
                       {m.are_promotie && !m.cod_cupon && <span className="text-xs text-[#14b8a6] font-medium">Ofertă</span>}
                     </div>
                   </div>
                   {promo ? (
-                    <p className="text-[#475569] text-xs line-clamp-2">{promo.nume}</p>
+                    <p className="text-[#cbd5e1] text-xs line-clamp-2">{promo.nume}</p>
                   ) : (
-                    <p className="text-[#64748b] text-xs italic">Verifică ofertele curente</p>
+                    <p className="text-[#94a3b8] text-xs italic">Verifică ofertele curente</p>
                   )}
                   <div className="flex justify-end mt-2">
                     <span className="text-xs text-[#14b8a6] font-semibold group-hover:text-[#14b8a6]">Vezi →</span>
@@ -139,16 +139,16 @@ export default function ElectronicePage() {
           limit={12}
         />
 
-        <section className="bg-[#ffffff] border-t border-[#e2e8f0] py-10 px-4">
+        <section className="bg-[#111827] border-t border-[#1e293b] py-10 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-[#0f172a] mb-5">Ghid: Electronice ieftine online în România</h2>
-            <div className="space-y-4 text-sm text-[#475569] leading-relaxed">
+            <h2 className="text-xl font-black text-[#f1f5f9] mb-5">Ghid: Electronice ieftine online în România</h2>
+            <div className="space-y-4 text-sm text-[#cbd5e1] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[#0f172a] mb-1">Cele mai bune momente să cumperi</h3>
+                <h3 className="font-bold text-[#f1f5f9] mb-1">Cele mai bune momente să cumperi</h3>
                 <p>Black Friday (noiembrie), Campania 11.11, zilele de naștere ale magazinelor (eMag aniversare, Altex Birthday). Reducerile pot ajunge la 40-60% la telefoane și laptopuri de generație anterioară.</p>
               </div>
               <div>
-                <h3 className="font-bold text-[#0f172a] mb-1">Top magazine electronice România</h3>
+                <h3 className="font-bold text-[#f1f5f9] mb-1">Top magazine electronice România</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
                   <li><strong>eMag</strong> — cel mai mare, livrare rapidă, retur 30 zile</li>
                   <li><strong>Altex</strong> — network fizic + online, prețuri competitive</li>
@@ -158,7 +158,7 @@ export default function ElectronicePage() {
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-[#0f172a] mb-1">Sfaturi economii</h3>
+                <h3 className="font-bold text-[#f1f5f9] mb-1">Sfaturi economii</h3>
                 <p>Compară prețul pe eMag vs Altex vs PCGarage înainte de cumpărare. Activează alertele de preț. Codurile de reducere AmCupon se cumulează deseori cu prețurile deja reduse.</p>
               </div>
             </div>
@@ -166,7 +166,7 @@ export default function ElectronicePage() {
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[#334155] mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-[#cbd5e1] mb-4">Exploreaza si alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/gadgets", label: "📡 Gadgets" },
@@ -177,14 +177,14 @@ export default function ElectronicePage() {
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-[#ffffff] hover:bg-[#e2e8f0] hover:text-[#0f766e] text-[#334155] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#e2e8f0] hover:border-[#e6d5a8]">
+                className="bg-[#111827] hover:bg-[#1e293b] hover:text-[#0f766e] text-[#cbd5e1] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#1e293b] hover:border-[#cbd5e1]">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-[#e2e8f0] py-6 text-center text-xs text-[#64748b] mt-4">
+        <footer className="border-t border-[#1e293b] py-6 text-center text-xs text-[#94a3b8] mt-4">
           © {an} AmCupon.ro ·{" "}
           <Link href="/gadgets" className="hover:text-[#0d9488]">Gadgets</Link>{" · "}
           <Link href="/farmacie" className="hover:text-[#0d9488]">Farmacie</Link>{" · "}

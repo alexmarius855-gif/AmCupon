@@ -115,7 +115,7 @@ export default function NisaProduse({
 
   return (
     <section className="max-w-6xl mx-auto px-4 pb-12">
-      <h2 className="text-xl font-black text-[#0f172a] mb-5">{titlu}</h2>
+      <h2 className="text-xl font-black text-[#f1f5f9] mb-5">{titlu}</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
         {produse.map((p) => {
           const hasPrice   = p.price > 0;
@@ -128,10 +128,10 @@ export default function NisaProduse({
               href={p.url}
               target="_blank"
               rel="sponsored noopener noreferrer"
-              className={`group bg-[#ffffff] border border-[#e2e8f0] ${accent.border} rounded-xl overflow-hidden transition-all hover:shadow-lg hover:shadow-slate-300/60 hover:-translate-y-0.5 duration-200 flex flex-col`}
+              className={`group bg-[#111827] border border-[#1e293b] ${accent.border} rounded-xl overflow-hidden transition-all hover:shadow-lg hover:shadow-black/40 hover:-translate-y-0.5 duration-200 flex flex-col`}
             >
               {/* Imagine */}
-              <div className="relative bg-white aspect-square overflow-hidden">
+              <div className="relative bg-[#111827] aspect-square overflow-hidden">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={p.image}
@@ -140,7 +140,7 @@ export default function NisaProduse({
                   loading="lazy"
                 />
                 {hasDiscount && (
-                  <div className={`absolute top-2 left-2 ${bgAccent} text-[#0f172a] text-xs font-black px-2 py-0.5 rounded-full`}>
+                  <div className={`absolute top-2 left-2 ${bgAccent} text-[#f1f5f9] text-xs font-black px-2 py-0.5 rounded-full`}>
                     -{p.discount_pct}%
                   </div>
                 )}
@@ -153,8 +153,8 @@ export default function NisaProduse({
 
               {/* Info */}
               <div className="p-3 flex flex-col flex-1">
-                <p className="text-xs text-[#64748b] mb-1 truncate">{p.brand || p.merchant}</p>
-                <p className={`text-sm font-semibold text-[#1e293b] line-clamp-2 flex-1 ${accent.groupHoverText} transition-colors leading-snug`}>
+                <p className="text-xs text-[#94a3b8] mb-1 truncate">{p.brand || p.merchant}</p>
+                <p className={`text-sm font-semibold text-[#cbd5e1] line-clamp-2 flex-1 ${accent.groupHoverText} transition-colors leading-snug`}>
                   {p.title}
                 </p>
                 <div className="flex items-center gap-2 mt-2">
@@ -164,7 +164,7 @@ export default function NisaProduse({
                         {p.price.toFixed(0)} lei
                       </span>
                       {hasDiscount && p.old_price && (
-                        <span className="text-xs text-[#64748b] line-through">
+                        <span className="text-xs text-[#94a3b8] line-through">
                           {p.old_price.toFixed(0)} lei
                         </span>
                       )}

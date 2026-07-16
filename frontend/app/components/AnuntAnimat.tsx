@@ -90,7 +90,7 @@ export default function AnuntAnimat() {
   const item = items[idx];
 
   return (
-    <div className="bg-[#ffffff] border-b border-[#e2e8f0] text-[#1e293b] text-xs font-semibold py-2 px-4 text-center flex items-center justify-center gap-3 min-h-[34px]">
+    <div className="bg-[#111827] border-b border-[#1e293b] text-[#cbd5e1] text-xs font-semibold py-2 px-4 text-center flex items-center justify-center gap-3 min-h-[34px]">
       {/* Mesaj rotativ */}
       <div
         className="flex items-center gap-2 transition-all duration-300"
@@ -110,7 +110,7 @@ export default function AnuntAnimat() {
             </span>
           )}
         </a>
-        <span className="hidden sm:inline text-[#64748b]">→</span>
+        <span className="hidden sm:inline text-[#94a3b8]">→</span>
       </div>
 
       {/* Dots indicatori */}
@@ -119,7 +119,7 @@ export default function AnuntAnimat() {
           <button
             key={i}
             onClick={() => { setVisible(false); setTimeout(() => { setIdx(i); setVisible(true); }, 300); }}
-            className={`w-1.5 h-1.5 rounded-full transition-all ${i === idx % Math.min(items.length, 8) ? "bg-[#0d9488]" : "bg-[#94a3b8]"}`}
+            className={`w-1.5 h-1.5 rounded-full transition-all ${i === idx % Math.min(items.length, 8) ? "bg-[#0d9488]" : "bg-[#334155]"}`}
             aria-label={`Anunt ${i + 1}`}
           />
         ))}

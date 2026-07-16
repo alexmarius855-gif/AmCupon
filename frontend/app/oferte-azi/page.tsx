@@ -156,11 +156,11 @@ function OfertaCard({ o }: { o: OfertaFlat }) {
   const urgenta = zile <= 2;
 
   return (
-    <div className="group relative flex flex-col bg-gradient-to-b from-[#ffffff] to-[#ffffff] border border-[#e2e8f0] hover:border-[#14b8a6]/50 rounded-xl p-4 transition-all duration-200 hover:shadow-2xl hover:shadow-slate-300/60 hover:-translate-y-1">
+    <div className="group relative flex flex-col bg-gradient-to-b from-[#111827] to-[#111827] border border-[#1e293b] hover:border-[#14b8a6]/50 rounded-xl p-4 transition-all duration-200 hover:shadow-2xl hover:shadow-black/40 hover:-translate-y-1">
 
       {/* Header magazin */}
       <div className="flex items-start gap-3">
-        <div className="w-12 h-12 rounded-xl overflow-hidden bg-white shrink-0 flex items-center justify-center ring-1 ring-[#14b8a6]/20 shadow-md">
+        <div className="w-12 h-12 rounded-xl overflow-hidden bg-[#ffffff] shrink-0 flex items-center justify-center ring-1 ring-[#14b8a6]/20 shadow-md">
           {o.logo_url ? (
             // eslint-disable-next-line @next/next/no-img-element
             <img src={o.logo_url} alt={`Logo ${nume}`}
@@ -172,8 +172,8 @@ function OfertaCard({ o }: { o: OfertaFlat }) {
           )}
         </div>
         <div className="min-w-0 flex-1 pt-0.5">
-          <p className="text-sm font-black text-[#0f172a] truncate group-hover:text-[#0f766e] transition-colors">{nume}</p>
-          <p className="text-[11px] text-[#64748b] truncate mt-0.5">{CAT_EMOJI[o.categorie_slug] || ""} {CAT_LABELS[o.categorie_slug] || o.categorie}</p>
+          <p className="text-sm font-black text-[#f1f5f9] truncate group-hover:text-[#0f766e] transition-colors">{nume}</p>
+          <p className="text-[11px] text-[#94a3b8] truncate mt-0.5">{CAT_EMOJI[o.categorie_slug] || ""} {CAT_LABELS[o.categorie_slug] || o.categorie}</p>
         </div>
         {discount > 0 && (
           <div className="shrink-0 leading-none bg-gradient-to-br from-[#34d399] to-[#14b8a6] rounded-lg px-2 py-1.5 shadow-sm">
@@ -183,17 +183,17 @@ function OfertaCard({ o }: { o: OfertaFlat }) {
       </div>
 
       {/* Titlu promo — inaltime fixa pentru aliniere */}
-      <p className="text-[13px] text-[#334155] leading-snug mt-3 mb-3 line-clamp-2 min-h-[2.5rem]">{o.promo.nume}</p>
+      <p className="text-[13px] text-[#cbd5e1] leading-snug mt-3 mb-3 line-clamp-2 min-h-[2.5rem]">{o.promo.nume}</p>
 
       {/* Cod box (daca exista) sau eticheta oferta */}
       {o.hasCod && o.promo.cod_cupon ? (
-        <div className="relative bg-[#f0fdfa] border border-dashed border-[#14b8a6]/40 rounded-lg py-2.5 text-center mb-3">
-          <span className="absolute left-2.5 top-1 text-[8px] uppercase tracking-widest text-[#64748b] font-bold">cod</span>
+        <div className="relative bg-[#0d9488]/10 border border-dashed border-[#14b8a6]/40 rounded-lg py-2.5 text-center mb-3">
+          <span className="absolute left-2.5 top-1 text-[8px] uppercase tracking-widest text-[#94a3b8] font-bold">cod</span>
           <span className="font-mono font-black text-[#0f766e] text-sm tracking-[0.22em]">{o.promo.cod_cupon}</span>
         </div>
       ) : (
         <div className="mb-3">
-          <span className="inline-flex items-center gap-1.5 text-[11px] font-semibold text-[#334155] bg-[#f0fdfa] border border-[#e2e8f0] rounded-full px-3 py-1">
+          <span className="inline-flex items-center gap-1.5 text-[11px] font-semibold text-[#cbd5e1] bg-[#0d9488]/10 border border-[#1e293b] rounded-full px-3 py-1">
             <span className="w-1.5 h-1.5 rounded-full bg-[#14b8a6]" /> Ofertă fără cod
           </span>
         </div>
@@ -230,12 +230,12 @@ function OfertaCard({ o }: { o: OfertaFlat }) {
               {zile === 0 ? "Expiră azi" : "Expiră mâine"}
             </span>
           ) : (
-            <span className="text-[10px] text-[#64748b] font-medium">
+            <span className="text-[10px] text-[#94a3b8] font-medium">
               {zile < 99 ? `${zile} zile rămase` : "Verificat azi"}
             </span>
           )}
           <Link href={`/cod-reducere/${o.magazin}`}
-            className="text-[10px] font-semibold text-[#64748b] hover:text-[#0f766e] transition-colors">
+            className="text-[10px] font-semibold text-[#94a3b8] hover:text-[#0f766e] transition-colors">
             Toate codurile →
           </Link>
         </div>
@@ -289,10 +289,10 @@ export default async function OferteAziPage(
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <div className="min-h-screen bg-[#F7F9FC]">
+      <div className="min-h-screen bg-[#0a0f1a]">
 
         {/* Hero ─────────────────────────────────────────────────────────── */}
-        <div className="relative bg-[#F7F9FC] border-b border-[#e2e8f0] overflow-hidden">
+        <div className="relative bg-[#0a0f1a] border-b border-[#1e293b] overflow-hidden">
           <div className="absolute inset-0 pointer-events-none" style={{background:"radial-gradient(ellipse 80% 70% at 50% -20%, rgba(13,148,136,0.14) 0%, transparent 65%)"}} />
           <div className="relative max-w-6xl mx-auto px-4 pt-10 pb-12 text-center">
 
@@ -301,22 +301,22 @@ export default async function OferteAziPage(
               Live — actualizat azi, {luna} {an}
             </div>
 
-            <h1 className="text-4xl md:text-5xl font-black tracking-tight text-[#0f172a] mb-4 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-black tracking-tight text-[#f1f5f9] mb-4 leading-tight">
               {cat && CAT_LABELS[cat]
                 ? <>{CAT_EMOJI[cat] || ""} Oferte <span className="text-[#0d9488]">{CAT_LABELS[cat]}</span> de Azi</>
                 : <>Oferte de Azi <span className="text-[#0d9488]">Romania</span></>
               }
             </h1>
-            <p className="text-[#475569] text-lg mb-8 max-w-xl mx-auto">
+            <p className="text-[#cbd5e1] text-lg mb-8 max-w-xl mx-auto">
               {oferteFiltrate.length} promotii active la {nrMagazine} magazine. Verificate si sortate dupa valoare.
             </p>
 
             <div className="flex flex-wrap justify-center gap-3">
-              <div className="bg-[#ffffff] border border-[#e2e8f0] rounded-xl px-4 py-2.5 text-sm font-bold text-[#0f172a] flex items-center gap-2">
+              <div className="bg-[#111827] border border-[#1e293b] rounded-xl px-4 py-2.5 text-sm font-bold text-[#f1f5f9] flex items-center gap-2">
                 <span className="text-[#0f766e]">🎟</span>
                 {nrCoduri} coduri de reducere
               </div>
-              <div className="bg-[#ffffff] border border-[#e2e8f0] rounded-xl px-4 py-2.5 text-sm font-bold text-[#0f172a] flex items-center gap-2">
+              <div className="bg-[#111827] border border-[#1e293b] rounded-xl px-4 py-2.5 text-sm font-bold text-[#f1f5f9] flex items-center gap-2">
                 <span>🏪</span>
                 {nrMagazineTotal} magazine
               </div>
@@ -331,14 +331,14 @@ export default async function OferteAziPage(
         </div>
 
         {/* Filtre categorii ─────────────────────────────────────────────── */}
-        <div className="bg-[#ffffff] border-b border-[#e2e8f0] sticky top-[64px] z-40">
+        <div className="bg-[#111827] border-b border-[#1e293b] sticky top-[64px] z-40">
           <div className="max-w-6xl mx-auto px-4 py-2.5 overflow-x-auto" style={{scrollbarWidth:"none"}}>
             <div className="flex items-center gap-2 min-w-max">
               <Link href="/oferte-azi"
                 className={`flex items-center gap-1 text-xs font-bold px-3 py-1.5 rounded-full transition-all whitespace-nowrap ${
                   !cat
                     ? "bg-[#0d9488] text-white shadow-md shadow-[#14b8a6]/25"
-                    : "bg-[#e2e8f0] text-[#334155] hover:bg-[#cbd5e1] border border-[#cbd5e1]"
+                    : "bg-[#1e293b] text-[#cbd5e1] hover:bg-[#334155] border border-[#334155]"
                 }`}>
                 🔥 Toate ({toateOfertele.length})
               </Link>
@@ -347,7 +347,7 @@ export default async function OferteAziPage(
                   className={`flex items-center gap-1 text-xs font-bold px-3 py-1.5 rounded-full transition-all whitespace-nowrap ${
                     cat === slug
                       ? "bg-[#0d9488] text-white shadow-md shadow-[#14b8a6]/25"
-                      : "bg-[#e2e8f0] text-[#334155] hover:bg-[#cbd5e1] border border-[#cbd5e1]"
+                      : "bg-[#1e293b] text-[#cbd5e1] hover:bg-[#334155] border border-[#334155]"
                   }`}>
                   {CAT_EMOJI[slug] || ""} {CAT_LABELS[slug] || slug} ({count})
                 </Link>
@@ -359,10 +359,10 @@ export default async function OferteAziPage(
         {/* Grid oferte ─────────────────────────────────────────────────── */}
         <div className="max-w-6xl mx-auto px-4 py-8">
           {oferteFiltrate.length === 0 ? (
-            <div className="text-center py-20 bg-[#ffffff] rounded-xl border border-[#e2e8f0]">
+            <div className="text-center py-20 bg-[#111827] rounded-xl border border-[#1e293b]">
               <p className="text-5xl mb-4">🔍</p>
-              <p className="font-black text-[#0f172a] text-lg mb-2">Nicio oferta activa in aceasta categorie</p>
-              <p className="text-[#475569] text-sm mb-6">Incearca alta categorie sau revino mai tarziu.</p>
+              <p className="font-black text-[#f1f5f9] text-lg mb-2">Nicio oferta activa in aceasta categorie</p>
+              <p className="text-[#cbd5e1] text-sm mb-6">Incearca alta categorie sau revino mai tarziu.</p>
               <Link href="/oferte-azi"
                 className="inline-flex items-center gap-2 bg-[#0d9488] hover:bg-[#14b8a6] text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-colors">
                 Vezi toate ofertele →
@@ -372,8 +372,8 @@ export default async function OferteAziPage(
             <>
               {/* Sub-header grid */}
               <div className="flex items-center justify-between mb-6">
-                <p className="text-sm text-[#475569]">
-                  <span className="font-black text-[#0f172a]">{oferteFiltrate.length}</span> oferte
+                <p className="text-sm text-[#cbd5e1]">
+                  <span className="font-black text-[#f1f5f9]">{oferteFiltrate.length}</span> oferte
                   {cat && CAT_LABELS[cat] ? ` in ${CAT_LABELS[cat]}` : " active"}
                   {" "}— sortate: cod &gt; discount &gt; urgenta
                 </p>
@@ -395,16 +395,16 @@ export default async function OferteAziPage(
 
         {/* CTA Newsletter ──────────────────────────────────────────────── */}
         <div className="max-w-6xl mx-auto px-4 pb-16">
-          <div className="relative bg-gradient-to-r from-[#14b8a6]/10 via-[#ffffff] to-[#14b8a6]/10 border border-[#14b8a6]/15 rounded-xl p-8 md:p-12 text-center overflow-hidden">
+          <div className="relative bg-gradient-to-r from-[#14b8a6]/10 via-[#111827] to-[#14b8a6]/10 border border-[#14b8a6]/15 rounded-xl p-8 md:p-12 text-center overflow-hidden">
             <div className="absolute inset-0 pointer-events-none" style={{background:"radial-gradient(ellipse 80% 100% at 50% 100%, rgba(20,184,166,0.07) 0%, transparent 70%)"}} />
             <div className="relative">
               <span className="inline-flex items-center gap-2 bg-[#14b8a6]/10 border border-[#14b8a6]/20 text-[#0d9488] text-xs font-black px-3 py-1 rounded-full mb-5 uppercase tracking-widest">
                 📬 Nu rata nicio oferta buna
               </span>
-              <h2 className="text-2xl md:text-3xl font-black text-[#0f172a] mb-3">
+              <h2 className="text-2xl md:text-3xl font-black text-[#f1f5f9] mb-3">
                 Primeste top oferte direct pe email
               </h2>
-              <p className="text-[#475569] mb-8 max-w-md mx-auto">
+              <p className="text-[#cbd5e1] mb-8 max-w-md mx-auto">
                 {nrMagazineTotal} magazine monitorizate zilnic. Cele mai bune coduri, o data pe saptamana. Zero spam.
               </p>
               <div className="flex flex-wrap items-center justify-center gap-4">
@@ -413,7 +413,7 @@ export default async function OferteAziPage(
                   Aboneaza-te gratuit →
                 </Link>
                 <Link href="/toate-magazinele"
-                  className="bg-[#e2e8f0] hover:bg-[#cbd5e1] border border-[#cbd5e1] text-[#334155] font-semibold px-6 py-3.5 rounded-xl text-sm transition-colors">
+                  className="bg-[#1e293b] hover:bg-[#334155] border border-[#334155] text-[#cbd5e1] font-semibold px-6 py-3.5 rounded-xl text-sm transition-colors">
                   Toate magazinele
                 </Link>
               </div>

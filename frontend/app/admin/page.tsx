@@ -17,12 +17,12 @@ export default async function AdminPage() {
 
   if (!ADMIN_PASSWORD) {
     return (
-      <div className="min-h-screen bg-[#0b0a07] flex items-center justify-center">
+      <div className="min-h-screen bg-[#0a0f1a] flex items-center justify-center">
         <div className="text-center max-w-sm mx-auto px-4">
           <div className="text-5xl mb-4">⚠️</div>
           <h1 className="text-xl font-black text-white mb-2">ADMIN_PASSWORD neconfigurat</h1>
-          <p className="text-[#a89a78] text-sm">
-            Adauga <code className="bg-[#26211a] px-1.5 py-0.5 rounded text-orange-400">ADMIN_PASSWORD</code> in
+          <p className="text-[#cbd5e1] text-sm">
+            Adauga <code className="bg-[#0a0f1a] px-1.5 py-0.5 rounded text-orange-400">ADMIN_PASSWORD</code> in
             Vercel Environment Variables, apoi redeploy.
           </p>
         </div>

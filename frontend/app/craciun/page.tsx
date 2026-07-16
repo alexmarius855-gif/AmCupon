@@ -130,18 +130,18 @@ export default function CraciunPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(craciunJsonLd) }}
       />
 
-      <div className="min-h-screen bg-[#F7F9FC]">
+      <div className="min-h-screen bg-[#0a0f1a]">
         {/* Header */}
 
         {/* Breadcrumb */}
-        <nav className="max-w-6xl mx-auto px-4 pt-4 pb-0 text-xs text-[#64748b] flex items-center gap-1">
+        <nav className="max-w-6xl mx-auto px-4 pt-4 pb-0 text-xs text-[#94a3b8] flex items-center gap-1">
           <Link href="/" className="hover:text-[#0d9488] transition-colors">Acasă</Link>
           <span className="mx-1">/</span>
-          <span className="text-[#475569]">Reduceri de Crăciun {an}</span>
+          <span className="text-[#cbd5e1]">Reduceri de Crăciun {an}</span>
         </nav>
 
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#0f766e] text-[#0f172a]">
+        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#0f766e] text-[#f1f5f9]">
           <div className="max-w-6xl mx-auto px-4 py-14 text-center">
             <div className="text-5xl mb-4">🎄</div>
             <h1 className="text-4xl md:text-5xl font-black mb-4 leading-tight">
@@ -170,7 +170,7 @@ export default function CraciunPage() {
 
         {/* Idei de cadouri */}
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[#0f172a] mb-5">🎁 Idei de cadouri</h2>
+          <h2 className="text-xl font-black text-[#f1f5f9] mb-5">🎁 Idei de cadouri</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
             {IDEI_CADOURI.map((idee) => (
               <a
@@ -188,10 +188,10 @@ export default function CraciunPage() {
         {/* Magazine grid */}
         <section className="max-w-6xl mx-auto px-4 pb-14">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-xl font-black text-[#0f172a]">
+            <h2 className="text-xl font-black text-[#f1f5f9]">
               🛍️ Magazine cu reduceri active
             </h2>
-            <span className="text-sm text-[#64748b]">{magazine.length} magazine</span>
+            <span className="text-sm text-[#94a3b8]">{magazine.length} magazine</span>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -205,11 +205,11 @@ export default function CraciunPage() {
                 <a
                   key={m.magazin}
                   href={`/cod-reducere/${m.magazin}`}
-                  className="group bg-[#ffffff] border border-[#e2e8f0] hover:border-[#14b8a6]/40 rounded-xl p-4 transition-all hover:shadow-md"
+                  className="group bg-[#111827] border border-[#1e293b] hover:border-[#14b8a6]/40 rounded-xl p-4 transition-all hover:shadow-md"
                 >
                   <div className="flex items-center gap-3 mb-3">
                     {m.logo_url ? (
-                      <div className="w-10 h-10 rounded-xl overflow-hidden bg-white border border-[#e2e8f0] shrink-0 flex items-center justify-center p-0.5">
+                      <div className="w-10 h-10 rounded-xl overflow-hidden bg-[#ffffff] border border-[#1e293b] shrink-0 flex items-center justify-center p-0.5">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
                           src={m.logo_url}
@@ -219,12 +219,12 @@ export default function CraciunPage() {
                         />
                       </div>
                     ) : (
-                      <div className={`w-10 h-10 rounded-xl ${culoare} flex items-center justify-center text-[#0f172a] font-black text-lg shrink-0`}>
+                      <div className={`w-10 h-10 rounded-xl ${culoare} flex items-center justify-center text-[#f1f5f9] font-black text-lg shrink-0`}>
                         {nume.charAt(0)}
                       </div>
                     )}
                     <div className="min-w-0">
-                      <p className="font-bold text-[#0f172a] text-sm truncate">{nume}</p>
+                      <p className="font-bold text-[#f1f5f9] text-sm truncate">{nume}</p>
                       {coduri.length > 0 && (
                         <span className="text-xs font-bold text-[#0d9488]">
                           {coduri.length} cod{coduri.length > 1 ? "uri" : ""}
@@ -234,13 +234,13 @@ export default function CraciunPage() {
                   </div>
 
                   {bestPromo && (
-                    <p className="text-[#475569] text-xs leading-snug line-clamp-2 mb-2">
+                    <p className="text-[#cbd5e1] text-xs leading-snug line-clamp-2 mb-2">
                       {bestPromo.nume}
                     </p>
                   )}
 
                   <div className="flex items-center justify-between">
-                    <span className="text-xs text-[#64748b]">{m.promotii.length} oferte</span>
+                    <span className="text-xs text-[#94a3b8]">{m.promotii.length} oferte</span>
                     <span className="text-xs text-[#14b8a6] group-hover:text-[#0f766e] font-semibold transition-colors">
                       Vezi →
                     </span>
@@ -252,14 +252,14 @@ export default function CraciunPage() {
         </section>
 
         {/* SEO Content */}
-        <section className="bg-[#ffffff] border-t border-[#e2e8f0]">
+        <section className="bg-[#111827] border-t border-[#1e293b]">
           <div className="max-w-3xl mx-auto px-4 py-12">
-            <h2 className="text-2xl font-black text-[#0f172a] mb-6">
+            <h2 className="text-2xl font-black text-[#f1f5f9] mb-6">
               Ghid Cumpărături Crăciun {an}
             </h2>
-            <div className="space-y-6 text-[#475569] text-sm leading-relaxed">
+            <div className="space-y-6 text-[#cbd5e1] text-sm leading-relaxed">
               <div>
-                <h3 className="text-[#0f172a] font-bold mb-2">Când să cumperi cadourile de Crăciun?</h3>
+                <h3 className="text-[#f1f5f9] font-bold mb-2">Când să cumperi cadourile de Crăciun?</h3>
                 <p>
                   Cel mai bun moment este în noiembrie, profitând de ofertele Black Friday, și
                   în primele două săptămâni din decembrie. Apropiindu-te de 25 decembrie,
@@ -268,7 +268,7 @@ export default function CraciunPage() {
                 </p>
               </div>
               <div>
-                <h3 className="text-[#0f172a] font-bold mb-2">Unde găsești cele mai bune cadouri la prețuri mici?</h3>
+                <h3 className="text-[#f1f5f9] font-bold mb-2">Unde găsești cele mai bune cadouri la prețuri mici?</h3>
                 <ul className="list-disc list-inside space-y-1">
                   <li><strong>Jucării:</strong> Noriel, eMAG — reduceri până la 50%</li>
                   <li><strong>Electronice:</strong> eMAG, Altex — oferte speciale de sezon</li>
@@ -278,7 +278,7 @@ export default function CraciunPage() {
                 </ul>
               </div>
               <div>
-                <h3 className="text-[#0f172a] font-bold mb-2">Cum folosești codurile de reducere de Crăciun?</h3>
+                <h3 className="text-[#f1f5f9] font-bold mb-2">Cum folosești codurile de reducere de Crăciun?</h3>
                 <p>
                   Intră pe pagina magazinului de pe AmCupon.ro, copiază codul de reducere
                   activ, adaugă produsele în coș pe site-ul magazinului și introdu codul la
@@ -290,7 +290,7 @@ export default function CraciunPage() {
           </div>
         </section>
 
-        <footer className="border-t border-[#e2e8f0] py-6 text-center text-xs text-[#64748b]">
+        <footer className="border-t border-[#1e293b] py-6 text-center text-xs text-[#94a3b8]">
           © {an} AmCupon.ro ·{" "}
           <Link href="/" className="hover:text-[#0d9488]">Toate reducerile</Link>
           {" · "}

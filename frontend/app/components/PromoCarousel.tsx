@@ -92,12 +92,12 @@ export default function PromoCarousel({ banners }: { banners: PromoBanner[] }) {
               </div>
               <div className="font-black text-lg mt-2.5 truncate">{b.nume}</div>
               <p className="text-white/85 text-sm mt-1 line-clamp-2 leading-snug">{b.text}</p>
-              <span className="inline-flex items-center gap-1 mt-4 bg-white text-[#0f172a] font-bold text-sm px-4 py-2 rounded-lg group-hover:gap-2 transition-all">
+              <span className="inline-flex items-center gap-1 mt-4 bg-[#111827] text-[#f1f5f9] font-bold text-sm px-4 py-2 rounded-lg group-hover:gap-2 transition-all">
                 Vezi oferta →
               </span>
             </div>
             {b.logo && (
-              <div className="w-20 h-20 rounded-xl bg-white flex items-center justify-center p-2 shrink-0 shadow-md">
+              <div className="w-20 h-20 rounded-xl bg-[#ffffff] flex items-center justify-center p-2 shrink-0 shadow-md">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={b.logo} alt={b.nume} className="max-w-full max-h-full object-contain" loading="lazy" />
               </div>
@@ -110,11 +110,11 @@ export default function PromoCarousel({ banners }: { banners: PromoBanner[] }) {
       {banners.length > 2 && (
         <>
           <button onClick={(e) => { e.preventDefault(); nav(-1); }} aria-label="Anterior"
-            className="hidden sm:flex absolute -left-3 top-[85px] -translate-y-1/2 w-10 h-10 rounded-full bg-white shadow-lg border border-[#e2e8f0] items-center justify-center text-[#0f172a] hover:bg-[#f1f5f9] hover:border-[#14b8a6] transition-colors z-10">
+            className="hidden sm:flex absolute -left-3 top-[85px] -translate-y-1/2 w-10 h-10 rounded-full bg-[#111827] shadow-lg border border-[#1e293b] items-center justify-center text-[#f1f5f9] hover:bg-[#f1f5f9] hover:border-[#14b8a6] transition-colors z-10">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" /></svg>
           </button>
           <button onClick={(e) => { e.preventDefault(); nav(1); }} aria-label="Urmator"
-            className="hidden sm:flex absolute -right-3 top-[85px] -translate-y-1/2 w-10 h-10 rounded-full bg-white shadow-lg border border-[#e2e8f0] items-center justify-center text-[#0f172a] hover:bg-[#f1f5f9] hover:border-[#14b8a6] transition-colors z-10">
+            className="hidden sm:flex absolute -right-3 top-[85px] -translate-y-1/2 w-10 h-10 rounded-full bg-[#111827] shadow-lg border border-[#1e293b] items-center justify-center text-[#f1f5f9] hover:bg-[#f1f5f9] hover:border-[#14b8a6] transition-colors z-10">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" /></svg>
           </button>
         </>
@@ -125,7 +125,7 @@ export default function PromoCarousel({ banners }: { banners: PromoBanner[] }) {
         <div className="flex justify-center gap-1.5 mt-3">
           {banners.map((_, i) => (
             <button key={i} onClick={() => { setActive(i); scrollTo(i); }} aria-label={`Banner ${i + 1}`}
-              className={`h-2 rounded-full transition-all ${i === active ? "w-6 bg-[#0d9488]" : "w-2 bg-[#cbd5e1] hover:bg-[#94a3b8]"}`} />
+              className={`h-2 rounded-full transition-all ${i === active ? "w-6 bg-[#0d9488]" : "w-2 bg-[#334155] hover:bg-[#334155]"}`} />
           ))}
         </div>
       )}

@@ -67,18 +67,18 @@ export default function ExtensiePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <div className="min-h-screen bg-[#F7F9FC]">
+      <div className="min-h-screen bg-[#0a0f1a]">
 
-        <nav className="bg-[#F7F9FC] border-b border-[#e2e8f0]">
-          <div className="max-w-5xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#64748b]">
+        <nav className="bg-[#0a0f1a] border-b border-[#1e293b]">
+          <div className="max-w-5xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#94a3b8]">
             <Link href="/" className="hover:text-[#0d9488]">Acasă</Link>
             <span className="mx-1">/</span>
-            <span className="text-[#334155] font-medium">Extensie Chrome</span>
+            <span className="text-[#cbd5e1] font-medium">Extensie Chrome</span>
           </div>
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#0f766e] text-[#0f172a] py-16 px-4">
+        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#0f766e] text-[#f1f5f9] py-16 px-4">
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-[#14b8a6]/15 border border-[#14b8a6]/30 text-[#0f766e] text-xs font-bold px-4 py-1.5 rounded-full mb-6">
               ⏳ În curs de aprobare pe Chrome Web Store
@@ -86,7 +86,7 @@ export default function ExtensiePage() {
             <h1 className="text-3xl md:text-4xl font-black mb-4 leading-tight">
               Coduri de reducere automate<br />pe orice site de shopping
             </h1>
-            <p className="text-[#475569] text-lg mb-8 max-w-xl mx-auto">
+            <p className="text-[#cbd5e1] text-lg mb-8 max-w-xl mx-auto">
               Extensia AmCupon găsește automat codurile active pe fiecare magazin pe care îl vizitezi.
               Momentan e în proces de revizuire la Google — lasă-ți emailul și te anunțăm exact
               când devine disponibilă pentru instalare.
@@ -104,32 +104,32 @@ export default function ExtensiePage() {
 
         {/* CUM FUNCTIONEAZA */}
         <section className="max-w-5xl mx-auto px-4 py-16">
-          <h2 className="text-2xl font-black text-[#0f172a] mb-10 text-center">Cum funcționează</h2>
+          <h2 className="text-2xl font-black text-[#f1f5f9] mb-10 text-center">Cum funcționează</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {PASII.map((p) => (
               <div key={p.nr} className="text-center">
-                <div className="w-14 h-14 bg-[#ffffff] border-2 border-[#e2e8f0] rounded-xl flex items-center justify-center text-2xl mx-auto mb-4">
+                <div className="w-14 h-14 bg-[#111827] border-2 border-[#1e293b] rounded-xl flex items-center justify-center text-2xl mx-auto mb-4">
                   {p.icon}
                 </div>
                 <div className="text-xs font-black text-[#0d9488] mb-1">PAS {p.nr}</div>
-                <h3 className="font-black text-[#0f172a] text-sm mb-2">{p.titlu}</h3>
-                <p className="text-xs text-[#475569] leading-relaxed">{p.desc}</p>
+                <h3 className="font-black text-[#f1f5f9] text-sm mb-2">{p.titlu}</h3>
+                <p className="text-xs text-[#cbd5e1] leading-relaxed">{p.desc}</p>
               </div>
             ))}
           </div>
         </section>
 
         {/* FEATURES */}
-        <section className="bg-[#ffffff] border-y border-[#e2e8f0] py-16 px-4">
+        <section className="bg-[#111827] border-y border-[#1e293b] py-16 px-4">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-black text-[#0f172a] mb-10 text-center">De ce AmCupon Extension?</h2>
+            <h2 className="text-2xl font-black text-[#f1f5f9] mb-10 text-center">De ce AmCupon Extension?</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {FEATURES.map((f) => (
-                <div key={f.titlu} className="bg-[#F7F9FC] rounded-xl border border-[#e2e8f0] p-5 flex items-start gap-4">
+                <div key={f.titlu} className="bg-[#0a0f1a] rounded-xl border border-[#1e293b] p-5 flex items-start gap-4">
                   <div className="text-2xl shrink-0">{f.icon}</div>
                   <div>
-                    <h3 className="font-bold text-[#0f172a] text-sm mb-1">{f.titlu}</h3>
-                    <p className="text-xs text-[#475569]">{f.desc}</p>
+                    <h3 className="font-bold text-[#f1f5f9] text-sm mb-1">{f.titlu}</h3>
+                    <p className="text-xs text-[#cbd5e1]">{f.desc}</p>
                   </div>
                 </div>
               ))}
@@ -139,8 +139,8 @@ export default function ExtensiePage() {
 
         {/* MAGAZINE COMPATIBILE */}
         <section className="max-w-5xl mx-auto px-4 py-16">
-          <h2 className="text-2xl font-black text-[#0f172a] mb-4 text-center">Funcționează pe 1000+ magazine</h2>
-          <p className="text-center text-[#475569] text-sm mb-8">Inclusiv cele mai populare din România</p>
+          <h2 className="text-2xl font-black text-[#f1f5f9] mb-4 text-center">Funcționează pe 1000+ magazine</h2>
+          <p className="text-center text-[#cbd5e1] text-sm mb-8">Inclusiv cele mai populare din România</p>
           <div className="flex flex-wrap justify-center gap-2">
             {[
               "eMag","Altex","Zara","H&M","Notino","Douglas","Sephora",
@@ -148,7 +148,7 @@ export default function ExtensiePage() {
               "PCGarage","Flanco","Dr. Max","Vegis","Booking","Answear",
               "Reserved","Carturesti","Mobexpert","IKEA",
             ].map((m) => (
-              <span key={m} className="bg-[#ffffff] border border-[#e2e8f0] text-[#334155] text-sm font-semibold px-4 py-2 rounded-full">
+              <span key={m} className="bg-[#111827] border border-[#1e293b] text-[#cbd5e1] text-sm font-semibold px-4 py-2 rounded-full">
                 {m}
               </span>
             ))}
@@ -160,7 +160,7 @@ export default function ExtensiePage() {
 
         {/* CTA FINAL */}
         <section className="bg-gradient-to-br from-[#0f766e] to-[#0f766e] py-16 px-4">
-          <div className="max-w-2xl mx-auto text-center text-[#0f172a]">
+          <div className="max-w-2xl mx-auto text-center text-[#f1f5f9]">
             <div className="text-5xl mb-4">🎟</div>
             <h2 className="text-2xl font-black mb-3">Fii primul care o instalează</h2>
             <p className="text-[#ccfbf1] mb-8 text-sm">
@@ -169,15 +169,15 @@ export default function ExtensiePage() {
             </p>
             <Link
               href="/newsletter"
-              className="inline-flex items-center gap-2 bg-white text-[#0f766e] font-black px-8 py-4 rounded-xl text-base hover:bg-[#f0fdfa] transition-colors shadow-xl"
+              className="inline-flex items-center gap-2 bg-[#111827] text-[#0f766e] font-black px-8 py-4 rounded-xl text-base hover:bg-[#0d9488]/10 transition-colors shadow-xl"
             >
               📬 Anunță-mă când e disponibilă →
             </Link>
-            <p className="text-[#e6d5a8] text-xs mt-4">Compatibil cu Chrome, Edge și Brave</p>
+            <p className="text-[#cbd5e1] text-xs mt-4">Compatibil cu Chrome, Edge și Brave</p>
           </div>
         </section>
 
-        <footer className="border-t border-[#e2e8f0] py-6 text-center text-xs text-[#64748b]">
+        <footer className="border-t border-[#1e293b] py-6 text-center text-xs text-[#94a3b8]">
           © {new Date().getFullYear()} AmCupon.ro ·{" "}
           <Link href="/" className="hover:text-[#0d9488]">Acasă</Link>{" · "}
           <Link href="/toate-magazinele" className="hover:text-[#0d9488]">Magazine</Link>{" · "}

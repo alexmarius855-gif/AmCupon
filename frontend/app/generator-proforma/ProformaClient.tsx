@@ -64,14 +64,14 @@ export default function ProformaClient() {
   const completData = emitentNume.trim() !== "" && clientNume.trim() !== "";
 
   return (
-    <div className="min-h-screen bg-[#F7F9FC] print:bg-white">
+    <div className="min-h-screen bg-[#0a0f1a] print:bg-[#111827]">
       <div className="max-w-4xl mx-auto px-4 py-10 print:max-w-none print:px-0 print:py-0">
 
         {/* Hero — ascuns la print */}
         <div className="text-center mb-8 print:hidden">
           <div className="text-5xl mb-3">📄</div>
-          <h1 className="text-3xl font-black text-[#0f172a] mb-2">Generator Proforma Gratuit</h1>
-          <p className="text-[#475569]">Completezi datele, vezi totalul calculat automat, salvezi ca PDF</p>
+          <h1 className="text-3xl font-black text-[#f1f5f9] mb-2">Generator Proforma Gratuit</h1>
+          <p className="text-[#cbd5e1]">Completezi datele, vezi totalul calculat automat, salvezi ca PDF</p>
         </div>
 
         {/* Disclaimer legal — ascuns la print, vizibil clar in UI */}
@@ -91,50 +91,50 @@ export default function ProformaClient() {
           {/* ── FORMULAR (ascuns la print) ─────────────────────────────────── */}
           <div className="space-y-4 print:hidden">
 
-            <div className="bg-[#ffffff] rounded-xl border border-[#e2e8f0] p-5 space-y-3">
-              <h2 className="font-black text-[#0f172a] text-sm uppercase tracking-wide text-[#475569]">Datele tale (emitent)</h2>
+            <div className="bg-[#111827] rounded-xl border border-[#1e293b] p-5 space-y-3">
+              <h2 className="font-black text-[#f1f5f9] text-sm uppercase tracking-wide text-[#cbd5e1]">Datele tale (emitent)</h2>
               <input value={emitentNume} onChange={e => setEmitentNume(e.target.value)} placeholder="Nume / Denumire firma"
-                className="w-full bg-[#e2e8f0] border border-[#cbd5e1] text-[#0f172a] rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40" />
+                className="w-full bg-[#1e293b] border border-[#334155] text-[#f1f5f9] rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40" />
               <input value={emitentCif} onChange={e => setEmitentCif(e.target.value)} placeholder="CUI / CIF (optional)"
-                className="w-full bg-[#e2e8f0] border border-[#cbd5e1] text-[#0f172a] rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40" />
+                className="w-full bg-[#1e293b] border border-[#334155] text-[#f1f5f9] rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40" />
               <input value={emitentAdresa} onChange={e => setEmitentAdresa(e.target.value)} placeholder="Adresa"
-                className="w-full bg-[#e2e8f0] border border-[#cbd5e1] text-[#0f172a] rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40" />
+                className="w-full bg-[#1e293b] border border-[#334155] text-[#f1f5f9] rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40" />
               <div className="grid grid-cols-2 gap-2">
                 <input value={emitentIban} onChange={e => setEmitentIban(e.target.value)} placeholder="IBAN"
-                  className="w-full bg-[#e2e8f0] border border-[#cbd5e1] text-[#0f172a] rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40" />
+                  className="w-full bg-[#1e293b] border border-[#334155] text-[#f1f5f9] rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40" />
                 <input value={emitentBanca} onChange={e => setEmitentBanca(e.target.value)} placeholder="Banca"
-                  className="w-full bg-[#e2e8f0] border border-[#cbd5e1] text-[#0f172a] rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40" />
+                  className="w-full bg-[#1e293b] border border-[#334155] text-[#f1f5f9] rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40" />
               </div>
             </div>
 
-            <div className="bg-[#ffffff] rounded-xl border border-[#e2e8f0] p-5 space-y-3">
-              <h2 className="font-black text-[#0f172a] text-sm uppercase tracking-wide text-[#475569]">Client</h2>
+            <div className="bg-[#111827] rounded-xl border border-[#1e293b] p-5 space-y-3">
+              <h2 className="font-black text-[#f1f5f9] text-sm uppercase tracking-wide text-[#cbd5e1]">Client</h2>
               <input value={clientNume} onChange={e => setClientNume(e.target.value)} placeholder="Nume client / firma"
-                className="w-full bg-[#e2e8f0] border border-[#cbd5e1] text-[#0f172a] rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40" />
+                className="w-full bg-[#1e293b] border border-[#334155] text-[#f1f5f9] rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40" />
               <input value={clientAdresa} onChange={e => setClientAdresa(e.target.value)} placeholder="Adresa client (optional)"
-                className="w-full bg-[#e2e8f0] border border-[#cbd5e1] text-[#0f172a] rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40" />
+                className="w-full bg-[#1e293b] border border-[#334155] text-[#f1f5f9] rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40" />
             </div>
 
-            <div className="bg-[#ffffff] rounded-xl border border-[#e2e8f0] p-5 space-y-3">
-              <h2 className="font-black text-[#0f172a] text-sm uppercase tracking-wide text-[#475569]">Document</h2>
+            <div className="bg-[#111827] rounded-xl border border-[#1e293b] p-5 space-y-3">
+              <h2 className="font-black text-[#f1f5f9] text-sm uppercase tracking-wide text-[#cbd5e1]">Document</h2>
               <div className="grid grid-cols-2 gap-2">
                 <div>
-                  <label className="text-xs text-[#64748b] mb-1 block">Numar</label>
+                  <label className="text-xs text-[#94a3b8] mb-1 block">Numar</label>
                   <input value={numarDoc} onChange={e => setNumarDoc(e.target.value)}
-                    className="w-full bg-[#e2e8f0] border border-[#cbd5e1] text-[#0f172a] rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40" />
+                    className="w-full bg-[#1e293b] border border-[#334155] text-[#f1f5f9] rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40" />
                 </div>
                 <div>
-                  <label className="text-xs text-[#64748b] mb-1 block">Data emiterii</label>
+                  <label className="text-xs text-[#94a3b8] mb-1 block">Data emiterii</label>
                   <input type="date" value={dataEmiterii} onChange={e => setDataEmiterii(e.target.value)}
-                    className="w-full bg-[#e2e8f0] border border-[#cbd5e1] text-[#0f172a] rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40" />
+                    className="w-full bg-[#1e293b] border border-[#334155] text-[#f1f5f9] rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40" />
                 </div>
               </div>
               <div>
-                <label className="text-xs text-[#64748b] mb-1 block">Valabilitate oferta (zile)</label>
+                <label className="text-xs text-[#94a3b8] mb-1 block">Valabilitate oferta (zile)</label>
                 <input type="number" value={valabilitateZile} onChange={e => setValabilitateZile(parseInt(e.target.value) || 0)} min="1"
-                  className="w-full bg-[#e2e8f0] border border-[#cbd5e1] text-[#0f172a] rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40" />
+                  className="w-full bg-[#1e293b] border border-[#334155] text-[#f1f5f9] rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40" />
               </div>
-              <label className="flex items-center gap-2 text-sm text-[#334155] cursor-pointer pt-1">
+              <label className="flex items-center gap-2 text-sm text-[#cbd5e1] cursor-pointer pt-1">
                 <input type="checkbox" checked={aplicaTva} onChange={e => setAplicaTva(e.target.checked)}
                   className="w-4 h-4 accent-[#0d9488]" />
                 Aplic TVA
@@ -142,18 +142,18 @@ export default function ProformaClient() {
               {aplicaTva && (
                 <input type="number" value={tvaProcent} onChange={e => setTvaProcent(parseFloat(e.target.value) || 0)}
                   placeholder="Cota TVA %" min="0" max="100"
-                  className="w-full bg-[#e2e8f0] border border-[#cbd5e1] text-[#0f172a] rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40" />
+                  className="w-full bg-[#1e293b] border border-[#334155] text-[#f1f5f9] rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40" />
               )}
             </div>
 
-            <div className="bg-[#ffffff] rounded-xl border border-[#e2e8f0] p-5 space-y-3">
-              <h2 className="font-black text-[#0f172a] text-sm uppercase tracking-wide text-[#475569]">Produse / servicii</h2>
+            <div className="bg-[#111827] rounded-xl border border-[#1e293b] p-5 space-y-3">
+              <h2 className="font-black text-[#f1f5f9] text-sm uppercase tracking-wide text-[#cbd5e1]">Produse / servicii</h2>
               {items.map((it, idx) => (
-                <div key={idx} className="bg-[#e2e8f0] rounded-xl p-3 space-y-2">
+                <div key={idx} className="bg-[#1e293b] rounded-xl p-3 space-y-2">
                   <div className="flex gap-2">
                     <input value={it.denumire} onChange={e => updateItem(idx, "denumire", e.target.value)}
                       placeholder="Descriere produs/serviciu"
-                      className="flex-1 bg-[#cbd5e1] border border-[#94a3b8] text-[#0f172a] rounded-lg px-3 py-2 text-sm focus:outline-none min-w-0" />
+                      className="flex-1 bg-[#334155] border border-[#475569] text-[#f1f5f9] rounded-lg px-3 py-2 text-sm focus:outline-none min-w-0" />
                     {items.length > 1 && (
                       <button onClick={() => removeItem(idx)} className="text-red-400 hover:text-red-300 px-2 text-sm shrink-0">✕</button>
                     )}
@@ -161,23 +161,23 @@ export default function ProformaClient() {
                   <div className="grid grid-cols-3 gap-2">
                     <input type="number" value={it.cantitate} onChange={e => updateItem(idx, "cantitate", parseFloat(e.target.value) || 0)}
                       placeholder="Cant." min="0"
-                      className="bg-[#cbd5e1] border border-[#94a3b8] text-[#0f172a] rounded-lg px-2 py-2 text-sm focus:outline-none" />
+                      className="bg-[#334155] border border-[#475569] text-[#f1f5f9] rounded-lg px-2 py-2 text-sm focus:outline-none" />
                     <input value={it.um} onChange={e => updateItem(idx, "um", e.target.value)}
                       placeholder="UM"
-                      className="bg-[#cbd5e1] border border-[#94a3b8] text-[#0f172a] rounded-lg px-2 py-2 text-sm focus:outline-none" />
+                      className="bg-[#334155] border border-[#475569] text-[#f1f5f9] rounded-lg px-2 py-2 text-sm focus:outline-none" />
                     <input type="number" value={it.pretUnitar} onChange={e => updateItem(idx, "pretUnitar", parseFloat(e.target.value) || 0)}
                       placeholder="Pret unitar" min="0"
-                      className="bg-[#cbd5e1] border border-[#94a3b8] text-[#0f172a] rounded-lg px-2 py-2 text-sm focus:outline-none" />
+                      className="bg-[#334155] border border-[#475569] text-[#f1f5f9] rounded-lg px-2 py-2 text-sm focus:outline-none" />
                   </div>
                 </div>
               ))}
               <button onClick={addItem}
-                className="w-full bg-[#e2e8f0] hover:bg-[#cbd5e1] text-[#334155] border border-dashed border-[#94a3b8] rounded-xl py-2.5 text-sm font-bold transition-colors">
+                className="w-full bg-[#1e293b] hover:bg-[#334155] text-[#cbd5e1] border border-dashed border-[#475569] rounded-xl py-2.5 text-sm font-bold transition-colors">
                 + Adauga produs/serviciu
               </button>
               <textarea value={mentiuni} onChange={e => setMentiuni(e.target.value)} placeholder="Mentiuni (optional)"
                 rows={2}
-                className="w-full bg-[#e2e8f0] border border-[#cbd5e1] text-[#0f172a] rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40 resize-none" />
+                className="w-full bg-[#1e293b] border border-[#334155] text-[#f1f5f9] rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40 resize-none" />
             </div>
 
             {completData && (
@@ -189,10 +189,10 @@ export default function ProformaClient() {
           </div>
 
           {/* ── PREVIEW DOCUMENT (vizibil mereu + la print) ─────────────────── */}
-          <div id="proforma-preview" className="bg-white text-[#ffffff] rounded-xl print:rounded-none p-8 print:p-0 shadow-2xl print:shadow-none h-fit">
+          <div id="proforma-preview" className="bg-[#111827] text-[#ffffff] rounded-xl print:rounded-none p-8 print:p-0 shadow-2xl print:shadow-none h-fit">
             <div className="flex justify-between items-start mb-8">
               <div>
-                <p className="text-xs uppercase tracking-widest text-[#475569] font-bold">Proforma</p>
+                <p className="text-xs uppercase tracking-widest text-[#cbd5e1] font-bold">Proforma</p>
                 <p className="text-2xl font-black">{numarDoc || "—"}</p>
               </div>
               <div className="text-right text-sm text-[#94a3b8]">
@@ -203,7 +203,7 @@ export default function ProformaClient() {
 
             <div className="grid grid-cols-2 gap-6 mb-8 text-sm">
               <div>
-                <p className="text-xs uppercase tracking-wide text-[#475569] font-bold mb-1.5">Furnizor</p>
+                <p className="text-xs uppercase tracking-wide text-[#cbd5e1] font-bold mb-1.5">Furnizor</p>
                 <p className="font-bold">{emitentNume || "—"}</p>
                 {emitentCif && <p className="text-[#94a3b8]">CUI/CIF: {emitentCif}</p>}
                 {emitentAdresa && <p className="text-[#94a3b8]">{emitentAdresa}</p>}
@@ -211,7 +211,7 @@ export default function ProformaClient() {
                 {emitentBanca && <p className="text-[#94a3b8]">{emitentBanca}</p>}
               </div>
               <div>
-                <p className="text-xs uppercase tracking-wide text-[#475569] font-bold mb-1.5">Client</p>
+                <p className="text-xs uppercase tracking-wide text-[#cbd5e1] font-bold mb-1.5">Client</p>
                 <p className="font-bold">{clientNume || "—"}</p>
                 {clientAdresa && <p className="text-[#94a3b8]">{clientAdresa}</p>}
               </div>
@@ -252,7 +252,7 @@ export default function ProformaClient() {
                     <span className="font-semibold">{fmt(tva)} lei</span>
                   </div>
                 )}
-                <div className="h-px bg-[#ffffff] my-1.5" />
+                <div className="h-px bg-[#111827] my-1.5" />
                 <div className="flex justify-between text-lg">
                   <span className="font-black">Total</span>
                   <span className="font-black">{fmt(total)} lei</span>
@@ -262,7 +262,7 @@ export default function ProformaClient() {
 
             {mentiuni && <p className="text-[#94a3b8] text-xs mb-6 whitespace-pre-wrap">{mentiuni}</p>}
 
-            <p className="text-[#475569] text-[10px] text-center border-t border-[#1e293b] pt-4">
+            <p className="text-[#cbd5e1] text-[10px] text-center border-t border-[#1e293b] pt-4">
               Document cu caracter informativ — nu reprezinta factura fiscala. Generat pe amcupon.ro/generator-proforma
             </p>
           </div>
@@ -270,10 +270,10 @@ export default function ProformaClient() {
 
         {/* Link catre celelalte unelte — ascuns la print */}
         <div className="text-center mt-8 print:hidden space-x-4">
-          <Link href="/calculator-salariu" className="text-[#64748b] hover:text-[#334155] text-sm transition-colors">
+          <Link href="/calculator-salariu" className="text-[#94a3b8] hover:text-[#cbd5e1] text-sm transition-colors">
             💰 Calculator salariu net
           </Link>
-          <Link href="/calculator" className="text-[#64748b] hover:text-[#334155] text-sm transition-colors">
+          <Link href="/calculator" className="text-[#94a3b8] hover:text-[#cbd5e1] text-sm transition-colors">
             🧮 Calculator reduceri
           </Link>
         </div>

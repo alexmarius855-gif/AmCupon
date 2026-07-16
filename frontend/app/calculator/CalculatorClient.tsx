@@ -61,14 +61,14 @@ export default function CalculatorClient() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F7F9FC]">
+    <div className="min-h-screen bg-[#0a0f1a]">
       <div className="max-w-2xl mx-auto px-4 py-10">
 
         {/* Hero */}
         <div className="text-center mb-8">
           <div className="text-5xl mb-3">🧮</div>
-          <h1 className="text-3xl font-black text-[#0f172a] mb-2">Calculator Reduceri</h1>
-          <p className="text-[#475569]">Calculeaza instant cat economisesti cu un cod de reducere</p>
+          <h1 className="text-3xl font-black text-[#f1f5f9] mb-2">Calculator Reduceri</h1>
+          <p className="text-[#cbd5e1]">Calculeaza instant cat economisesti cu un cod de reducere</p>
         </div>
 
         {/* Tab-uri mod */}
@@ -80,7 +80,7 @@ export default function CalculatorClient() {
               className={`p-3 rounded-xl text-sm font-bold transition-all text-center ${
                 mode === m.key
                   ? "bg-[#0d9488] text-white shadow-lg shadow-[#14b8a6]/25"
-                  : "bg-[#e2e8f0] text-[#334155] border border-[#cbd5e1] hover:border-[#14b8a6]/40"
+                  : "bg-[#1e293b] text-[#cbd5e1] border border-[#334155] hover:border-[#14b8a6]/40"
               }`}
             >
               <span className="block text-xl mb-1">{m.icon}</span>
@@ -91,37 +91,37 @@ export default function CalculatorClient() {
 
         {/* ── MOD 1: Economie la cod ── */}
         {mode === "reducere" && (
-          <div className="bg-[#ffffff] rounded-xl border border-[#e2e8f0] p-6 space-y-4">
-            <h2 className="font-black text-[#0f172a] text-lg">Cat economisesc cu codul?</h2>
+          <div className="bg-[#111827] rounded-xl border border-[#1e293b] p-6 space-y-4">
+            <h2 className="font-black text-[#f1f5f9] text-lg">Cat economisesc cu codul?</h2>
             <div>
-              <label className="text-sm text-[#475569] mb-1.5 block">Pretul original (lei)</label>
+              <label className="text-sm text-[#cbd5e1] mb-1.5 block">Pretul original (lei)</label>
               <input
                 type="number" value={pret} onChange={e => setPret(e.target.value)}
                 placeholder="ex: 350" min="0"
-                className="w-full bg-[#e2e8f0] border border-[#cbd5e1] text-[#0f172a] rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40 focus:border-[#14b8a6]/50"
+                className="w-full bg-[#1e293b] border border-[#334155] text-[#f1f5f9] rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40 focus:border-[#14b8a6]/50"
               />
             </div>
             <div>
-              <label className="text-sm text-[#475569] mb-1.5 block">Procentul de reducere (%)</label>
+              <label className="text-sm text-[#cbd5e1] mb-1.5 block">Procentul de reducere (%)</label>
               <input
                 type="number" value={procent} onChange={e => setProcent(e.target.value)}
                 placeholder="ex: 20" min="0" max="100"
-                className="w-full bg-[#e2e8f0] border border-[#cbd5e1] text-[#0f172a] rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40 focus:border-[#14b8a6]/50"
+                className="w-full bg-[#1e293b] border border-[#334155] text-[#f1f5f9] rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40 focus:border-[#14b8a6]/50"
               />
             </div>
             {pretNum > 0 && procentNum > 0 && (
               <div className="bg-emerald-500/10 border border-emerald-500/20 rounded-xl p-5 space-y-2">
                 <div className="flex justify-between text-sm">
-                  <span className="text-[#475569]">Pret original</span>
-                  <span className="text-[#0f172a] font-semibold">{pretNum.toFixed(2)} lei</span>
+                  <span className="text-[#cbd5e1]">Pret original</span>
+                  <span className="text-[#f1f5f9] font-semibold">{pretNum.toFixed(2)} lei</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-[#475569]">Reducere -{procentNum}%</span>
+                  <span className="text-[#cbd5e1]">Reducere -{procentNum}%</span>
                   <span className="text-red-400 font-semibold">-{economie.toFixed(2)} lei</span>
                 </div>
-                <div className="h-px bg-[#cbd5e1] my-1" />
+                <div className="h-px bg-[#334155] my-1" />
                 <div className="flex justify-between">
-                  <span className="text-[#0f172a] font-bold text-lg">Platesti</span>
+                  <span className="text-[#f1f5f9] font-bold text-lg">Platesti</span>
                   <span className="text-[#0d9488] font-black text-2xl">{pretFinal.toFixed(2)} lei</span>
                 </div>
                 <p className="text-emerald-400 text-sm font-bold text-center pt-1">
@@ -134,28 +134,28 @@ export default function CalculatorClient() {
 
         {/* ── MOD 2: Cat platesc final ── */}
         {mode === "pret-final" && (
-          <div className="bg-[#ffffff] rounded-xl border border-[#e2e8f0] p-6 space-y-4">
-            <h2 className="font-black text-[#0f172a] text-lg">Cat platesc dupa reducere?</h2>
-            <p className="text-[#64748b] text-sm">Introduce pretul si procentul reducerii — acelasi calculator, alta perspectiva.</p>
+          <div className="bg-[#111827] rounded-xl border border-[#1e293b] p-6 space-y-4">
+            <h2 className="font-black text-[#f1f5f9] text-lg">Cat platesc dupa reducere?</h2>
+            <p className="text-[#94a3b8] text-sm">Introduce pretul si procentul reducerii — acelasi calculator, alta perspectiva.</p>
             <div>
-              <label className="text-sm text-[#475569] mb-1.5 block">Pretul afisat (lei)</label>
+              <label className="text-sm text-[#cbd5e1] mb-1.5 block">Pretul afisat (lei)</label>
               <input type="number" value={pret} onChange={e => setPret(e.target.value)}
                 placeholder="ex: 500"
-                className="w-full bg-[#e2e8f0] border border-[#cbd5e1] text-[#0f172a] rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40"
+                className="w-full bg-[#1e293b] border border-[#334155] text-[#f1f5f9] rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40"
               />
             </div>
             <div>
-              <label className="text-sm text-[#475569] mb-1.5 block">Reducerea codului (%)</label>
+              <label className="text-sm text-[#cbd5e1] mb-1.5 block">Reducerea codului (%)</label>
               <input type="number" value={procent} onChange={e => setProcent(e.target.value)}
                 placeholder="ex: 15" min="0" max="100"
-                className="w-full bg-[#e2e8f0] border border-[#cbd5e1] text-[#0f172a] rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40"
+                className="w-full bg-[#1e293b] border border-[#334155] text-[#f1f5f9] rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40"
               />
             </div>
             {pretNum > 0 && procentNum > 0 && (
               <div className="bg-[#14b8a6]/10 border border-[#14b8a6]/20 rounded-xl p-5 text-center">
-                <p className="text-[#475569] text-sm mb-1">Platesti efectiv</p>
+                <p className="text-[#cbd5e1] text-sm mb-1">Platesti efectiv</p>
                 <p className="text-[#0d9488] font-black text-4xl">{pretFinal.toFixed(2)} lei</p>
-                <p className="text-[#64748b] text-xs mt-2">
+                <p className="text-[#94a3b8] text-xs mt-2">
                   fata de {pretNum.toFixed(2)} lei — economie {economie.toFixed(2)} lei
                 </p>
               </div>
@@ -165,27 +165,27 @@ export default function CalculatorClient() {
 
         {/* ── MOD 3: Ce procent am ── */}
         {mode === "procent" && (
-          <div className="bg-[#ffffff] rounded-xl border border-[#e2e8f0] p-6 space-y-4">
-            <h2 className="font-black text-[#0f172a] text-lg">Ce procent de reducere am primit?</h2>
+          <div className="bg-[#111827] rounded-xl border border-[#1e293b] p-6 space-y-4">
+            <h2 className="font-black text-[#f1f5f9] text-lg">Ce procent de reducere am primit?</h2>
             <div>
-              <label className="text-sm text-[#475569] mb-1.5 block">Pretul vechi / barat (lei)</label>
+              <label className="text-sm text-[#cbd5e1] mb-1.5 block">Pretul vechi / barat (lei)</label>
               <input type="number" value={pretVechi} onChange={e => setPretVechi(e.target.value)}
                 placeholder="ex: 400"
-                className="w-full bg-[#e2e8f0] border border-[#cbd5e1] text-[#0f172a] rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40"
+                className="w-full bg-[#1e293b] border border-[#334155] text-[#f1f5f9] rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40"
               />
             </div>
             <div>
-              <label className="text-sm text-[#475569] mb-1.5 block">Pretul nou / redus (lei)</label>
+              <label className="text-sm text-[#cbd5e1] mb-1.5 block">Pretul nou / redus (lei)</label>
               <input type="number" value={pretNou} onChange={e => setPretNou(e.target.value)}
                 placeholder="ex: 299"
-                className="w-full bg-[#e2e8f0] border border-[#cbd5e1] text-[#0f172a] rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40"
+                className="w-full bg-[#1e293b] border border-[#334155] text-[#f1f5f9] rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40"
               />
             </div>
             {pretVechiNum > 0 && pretNouNum > 0 && pretNouNum < pretVechiNum && (
               <div className="bg-[#14b8a6]/10 border border-[#14b8a6]/20 rounded-xl p-5 text-center">
-                <p className="text-[#475569] text-sm mb-1">Reducere reala</p>
+                <p className="text-[#cbd5e1] text-sm mb-1">Reducere reala</p>
                 <p className="text-[#0f766e] font-black text-4xl">-{procentCalc}%</p>
-                <p className="text-[#64748b] text-xs mt-2">
+                <p className="text-[#94a3b8] text-xs mt-2">
                   {(pretVechiNum - pretNouNum).toFixed(2)} lei economisiti
                 </p>
               </div>
@@ -198,62 +198,62 @@ export default function CalculatorClient() {
 
         {/* ── MOD 4: Cos ── */}
         {mode === "cos" && (
-          <div className="bg-[#ffffff] rounded-xl border border-[#e2e8f0] p-6 space-y-4">
-            <h2 className="font-black text-[#0f172a] text-lg">Calculator cos de cumparaturi</h2>
+          <div className="bg-[#111827] rounded-xl border border-[#1e293b] p-6 space-y-4">
+            <h2 className="font-black text-[#f1f5f9] text-lg">Calculator cos de cumparaturi</h2>
             <div className="space-y-3">
               {cos.map((item, idx) => (
-                <div key={idx} className="bg-[#e2e8f0] rounded-xl p-3 flex gap-2 items-center">
+                <div key={idx} className="bg-[#1e293b] rounded-xl p-3 flex gap-2 items-center">
                   <input
                     value={item.label}
                     onChange={e => updateCos(idx, "label", e.target.value)}
-                    className="flex-1 bg-transparent text-[#0f172a] text-sm focus:outline-none min-w-0"
+                    className="flex-1 bg-transparent text-[#f1f5f9] text-sm focus:outline-none min-w-0"
                     placeholder="Nume produs"
                   />
                   <input
                     type="number" value={item.pret || ""}
                     onChange={e => updateCos(idx, "pret", parseFloat(e.target.value) || 0)}
                     placeholder="Pret"
-                    className="w-24 bg-[#cbd5e1] text-[#0f172a] text-sm rounded-lg px-2 py-1.5 text-right focus:outline-none"
+                    className="w-24 bg-[#334155] text-[#f1f5f9] text-sm rounded-lg px-2 py-1.5 text-right focus:outline-none"
                   />
-                  <span className="text-[#64748b] text-xs">lei</span>
+                  <span className="text-[#94a3b8] text-xs">lei</span>
                   <input
                     type="number" value={item.qty}
                     onChange={e => updateCos(idx, "qty", parseInt(e.target.value) || 1)}
                     min="1"
-                    className="w-12 bg-[#cbd5e1] text-[#0f172a] text-sm rounded-lg px-2 py-1.5 text-center focus:outline-none"
+                    className="w-12 bg-[#334155] text-[#f1f5f9] text-sm rounded-lg px-2 py-1.5 text-center focus:outline-none"
                   />
                   {cos.length > 1 && (
-                    <button onClick={() => removeCos(idx)} className="text-[#64748b] hover:text-red-400 transition-colors text-lg">×</button>
+                    <button onClick={() => removeCos(idx)} className="text-[#94a3b8] hover:text-red-400 transition-colors text-lg">×</button>
                   )}
                 </div>
               ))}
             </div>
             <button onClick={addCosItem}
-              className="w-full border border-dashed border-[#94a3b8] hover:border-[#14b8a6] text-[#475569] hover:text-[#0d9488] rounded-xl py-2 text-sm font-semibold transition-all">
+              className="w-full border border-dashed border-[#475569] hover:border-[#14b8a6] text-[#cbd5e1] hover:text-[#0d9488] rounded-xl py-2 text-sm font-semibold transition-all">
               + Adauga produs
             </button>
             <div>
-              <label className="text-sm text-[#475569] mb-1.5 block">Cod reducere (%) — optional</label>
+              <label className="text-sm text-[#cbd5e1] mb-1.5 block">Cod reducere (%) — optional</label>
               <input type="number" value={cosDiscount} onChange={e => setCosDiscount(e.target.value)}
                 placeholder="ex: 10" min="0" max="100"
-                className="w-full bg-[#e2e8f0] border border-[#cbd5e1] text-[#0f172a] rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40"
+                className="w-full bg-[#1e293b] border border-[#334155] text-[#f1f5f9] rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40"
               />
             </div>
             {totalCos > 0 && (
               <div className="bg-emerald-500/10 border border-emerald-500/20 rounded-xl p-5 space-y-2">
                 <div className="flex justify-between text-sm">
-                  <span className="text-[#475569]">Total cos</span>
-                  <span className="text-[#0f172a] font-semibold">{totalCos.toFixed(2)} lei</span>
+                  <span className="text-[#cbd5e1]">Total cos</span>
+                  <span className="text-[#f1f5f9] font-semibold">{totalCos.toFixed(2)} lei</span>
                 </div>
                 {cosDiscountNum > 0 && (
                   <div className="flex justify-between text-sm">
-                    <span className="text-[#475569]">Reducere -{cosDiscountNum}%</span>
+                    <span className="text-[#cbd5e1]">Reducere -{cosDiscountNum}%</span>
                     <span className="text-red-400 font-semibold">-{economieCos.toFixed(2)} lei</span>
                   </div>
                 )}
-                <div className="h-px bg-[#cbd5e1]" />
+                <div className="h-px bg-[#334155]" />
                 <div className="flex justify-between">
-                  <span className="text-[#0f172a] font-bold">Total de plata</span>
+                  <span className="text-[#f1f5f9] font-bold">Total de plata</span>
                   <span className="text-[#0d9488] font-black text-2xl">{totalFinalCos.toFixed(2)} lei</span>
                 </div>
                 {cosDiscountNum > 0 && (
@@ -267,10 +267,10 @@ export default function CalculatorClient() {
         )}
 
         {/* CTA */}
-        <div className="mt-8 bg-[#ffffff] rounded-xl border border-[#e2e8f0] p-5 flex flex-col sm:flex-row items-center gap-4">
+        <div className="mt-8 bg-[#111827] rounded-xl border border-[#1e293b] p-5 flex flex-col sm:flex-row items-center gap-4">
           <div>
-            <p className="text-[#0f172a] font-bold text-sm">Cauta un cod de reducere acum</p>
-            <p className="text-[#64748b] text-xs">1000+ magazine, verificate zilnic</p>
+            <p className="text-[#f1f5f9] font-bold text-sm">Cauta un cod de reducere acum</p>
+            <p className="text-[#94a3b8] text-xs">1000+ magazine, verificate zilnic</p>
           </div>
           <Link href="/toate-magazinele"
             className="ml-auto shrink-0 bg-[#0d9488] hover:bg-[#14b8a6] text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-colors">

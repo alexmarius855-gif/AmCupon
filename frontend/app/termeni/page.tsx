@@ -8,25 +8,25 @@ export const metadata: Metadata = {
 
 export default function TermeniPage() {
   return (
-    <div className="min-h-screen bg-[#F7F9FC]">
-      <header className="bg-[#F7F9FC] border-b border-[#e2e8f0]">
+    <div className="min-h-screen bg-[#0a0f1a]">
+      <header className="bg-[#0a0f1a] border-b border-[#1e293b]">
         <div className="max-w-4xl mx-auto px-4 py-3 flex items-center gap-2">
           <Link href="/" className="flex items-center gap-1.5">
             <div className="bg-[#0d9488] text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
-            <span className="font-black text-[#0f172a] text-xl">Cupon</span>
+            <span className="font-black text-[#f1f5f9] text-xl">Cupon</span>
             <span className="text-[#0d9488] font-black text-xl">.ro</span>
           </Link>
         </div>
       </header>
 
       <div className="max-w-4xl mx-auto px-4 py-10">
-        <h1 className="text-3xl font-black text-[#0f172a] mb-2">Termeni și Condiții</h1>
-        <p className="text-sm text-[#64748b] mb-8">Ultima actualizare: Mai 2026</p>
+        <h1 className="text-3xl font-black text-[#f1f5f9] mb-2">Termeni și Condiții</h1>
+        <p className="text-sm text-[#94a3b8] mb-8">Ultima actualizare: Mai 2026</p>
 
-        <div className="bg-[#ffffff] rounded-xl border border-[#e2e8f0] p-8 space-y-8 text-[#334155] leading-relaxed">
+        <div className="bg-[#111827] rounded-xl border border-[#1e293b] p-8 space-y-8 text-[#cbd5e1] leading-relaxed">
 
           <section>
-            <h2 className="text-xl font-black text-[#0f172a] mb-3">1. Despre AmCupon.ro</h2>
+            <h2 className="text-xl font-black text-[#f1f5f9] mb-3">1. Despre AmCupon.ro</h2>
             <p>
               AmCupon.ro este o platformă online care agregă și afișează coduri de reducere, promoții și oferte
               de la magazine partenere din România. Site-ul funcționează ca intermediar afiliat — atunci când
@@ -36,7 +36,7 @@ export default function TermeniPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-black text-[#0f172a] mb-3">2. Linkuri de afiliere</h2>
+            <h2 className="text-xl font-black text-[#f1f5f9] mb-3">2. Linkuri de afiliere</h2>
             <p>
               Toate linkurile către magazinele partenere sunt linkuri de afiliat generate prin platforma
               2Performant (2performant.com). Prin utilizarea acestor linkuri, ești de acord să fii redirecționat
@@ -46,7 +46,7 @@ export default function TermeniPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-black text-[#0f172a] mb-3">3. Valabilitatea codurilor de reducere</h2>
+            <h2 className="text-xl font-black text-[#f1f5f9] mb-3">3. Valabilitatea codurilor de reducere</h2>
             <p>
               AmCupon.ro încearcă să mențină toate codurile și ofertele actualizate. Cu toate acestea,
               nu garantăm că toate codurile sunt funcționale în momentul utilizării. Valabilitatea
@@ -57,7 +57,7 @@ export default function TermeniPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-black text-[#0f172a] mb-3">4. Protecția datelor (GDPR)</h2>
+            <h2 className="text-xl font-black text-[#f1f5f9] mb-3">4. Protecția datelor (GDPR)</h2>
             <p className="mb-3">
               AmCupon.ro respectă Regulamentul General privind Protecția Datelor (GDPR - UE 2016/679).
             </p>
@@ -70,7 +70,7 @@ export default function TermeniPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-black text-[#0f172a] mb-3">5. Cookie-uri</h2>
+            <h2 className="text-xl font-black text-[#f1f5f9] mb-3">5. Cookie-uri</h2>
             <p>
               Site-ul folosește cookie-uri tehnice necesare funcționării și cookie-uri de analiză anonimă
               (Vercel Analytics). Nu folosim cookie-uri de marketing sau tracking individual.
@@ -80,7 +80,7 @@ export default function TermeniPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-black text-[#0f172a] mb-3">6. Răspundere</h2>
+            <h2 className="text-xl font-black text-[#f1f5f9] mb-3">6. Răspundere</h2>
             <p>
               AmCupon.ro nu este responsabil pentru calitatea produselor, politica de returnare,
               livrare sau orice altă problemă apărută în urma achizițiilor efectuate la magazinele
@@ -89,7 +89,7 @@ export default function TermeniPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-black text-[#0f172a] mb-3">7. Contact</h2>
+            <h2 className="text-xl font-black text-[#f1f5f9] mb-3">7. Contact</h2>
             <p>
               Pentru orice întrebare legată de acești termeni sau de datele tale personale,
               ne poți contacta la:{" "}
@@ -102,7 +102,7 @@ export default function TermeniPage() {
         </div>
 
         <div className="mt-8 text-center">
-          <Link href="/" className="text-sm text-[#64748b] hover:text-[#0d9488] transition-colors">
+          <Link href="/" className="text-sm text-[#94a3b8] hover:text-[#0d9488] transition-colors">
             ← Înapoi la AmCupon.ro
           </Link>
         </div>

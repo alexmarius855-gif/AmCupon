@@ -68,21 +68,21 @@ export default function JocuriPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-[#F7F9FC]">
+      <div className="min-h-screen bg-[#0a0f1a]">
 
         {/* Header */}
 
         {/* Breadcrumb */}
-        <nav className="bg-[#F7F9FC] border-b border-[#e2e8f0]">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#64748b]">
+        <nav className="bg-[#0a0f1a] border-b border-[#1e293b]">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#94a3b8]">
             <Link href="/" className="hover:text-[#0d9488]">Acasa</Link>
             <span className="mx-1">/</span>
-            <span className="text-[#334155] font-medium">Jocuri Video & Gaming</span>
+            <span className="text-[#cbd5e1] font-medium">Jocuri Video & Gaming</span>
           </div>
         </nav>
 
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#0f766e] text-[#0f172a] py-12 px-4">
+        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#0f766e] text-[#f1f5f9] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">🎮</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Jocuri Video cu Reducere {an}</h1>
@@ -91,14 +91,14 @@ export default function JocuriPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["PS5","Xbox Series","Nintendo Switch","PC Gaming","Jocuri AAA","Accesorii","VR"].map(c => (
-                <span key={c} className="bg-slate-100 text-[#0f172a] text-sm font-semibold px-4 py-1.5 rounded-full border border-slate-200">{c}</span>
+                <span key={c} className="bg-slate-100 text-[#f1f5f9] text-sm font-semibold px-4 py-1.5 rounded-full border border-slate-200">{c}</span>
               ))}
             </div>
           </div>
         </section>
 
         {/* Stats */}
-        <div className="bg-[#ffffff] border-[#e2e8f0] py-3 px-4">
+        <div className="bg-[#111827] border-[#1e293b] py-3 px-4">
           <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-6 text-sm">
             <span className="text-[#0f766e] font-semibold">
               <span className="font-black text-[#0d9488]">{magazine.length}</span> magazine gaming
@@ -112,13 +112,13 @@ export default function JocuriPage() {
 
         {/* Avantaje */}
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[#0f172a] mb-6 text-center">Ce gasesti la magazinele de gaming online</h2>
+          <h2 className="text-xl font-black text-[#f1f5f9] mb-6 text-center">Ce gasesti la magazinele de gaming online</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {AVANTAJE.map(a => (
-              <div key={a.titlu} className="bg-[#ffffff] border border-[#e2e8f0] rounded-xl p-5">
+              <div key={a.titlu} className="bg-[#111827] border border-[#1e293b] rounded-xl p-5">
                 <div className="text-3xl mb-2">{a.icon}</div>
-                <h3 className="font-bold text-[#0f172a] text-sm mb-1">{a.titlu}</h3>
-                <p className="text-xs text-[#475569]">{a.desc}</p>
+                <h3 className="font-bold text-[#f1f5f9] text-sm mb-1">{a.titlu}</h3>
+                <p className="text-xs text-[#cbd5e1]">{a.desc}</p>
               </div>
             ))}
           </div>
@@ -126,7 +126,7 @@ export default function JocuriPage() {
 
         {/* Magazine */}
         <section className="max-w-6xl mx-auto px-4 pb-10">
-          <h2 className="text-xl font-black text-[#0f172a] mb-5">Magazine gaming cu reduceri active</h2>
+          <h2 className="text-xl font-black text-[#f1f5f9] mb-5">Magazine gaming cu reduceri active</h2>
           {magazine.length > 0 ? (
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
               {magazine.map((m, i) => {
@@ -135,28 +135,28 @@ export default function JocuriPage() {
                 const promo = m.promotii[0];
                 return (
                   <a key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                    className="group bg-[#ffffff] border border-[#e2e8f0] hover:border-[#14b8a6]/40 rounded-xl p-4 transition-all hover:shadow-md">
+                    className="group bg-[#111827] border border-[#1e293b] hover:border-[#14b8a6]/40 rounded-xl p-4 transition-all hover:shadow-md">
                     <div className="flex items-center gap-3 mb-3">
                       {m.logo_url ? (
-                        <div className="w-10 h-10 rounded-xl overflow-hidden bg-white border border-[#e2e8f0] shrink-0">
+                        <div className="w-10 h-10 rounded-xl overflow-hidden bg-[#ffffff] border border-[#1e293b] shrink-0">
                           {/* eslint-disable-next-line @next/next/no-img-element */}
                           <img src={m.logo_url} alt={`Logo ${nume}`} className="w-full h-full object-contain" loading="lazy" />
                         </div>
                       ) : (
-                        <div className={`w-10 h-10 rounded-xl ${culoare} flex items-center justify-center text-[#0f172a] font-black text-lg shrink-0`}>
+                        <div className={`w-10 h-10 rounded-xl ${culoare} flex items-center justify-center text-[#f1f5f9] font-black text-lg shrink-0`}>
                           {nume[0]}
                         </div>
                       )}
                       <div>
-                        <p className="font-bold text-[#0f172a] text-sm">{nume}</p>
+                        <p className="font-bold text-[#f1f5f9] text-sm">{nume}</p>
                         {m.are_promotie && m.cod_cupon && <span className="text-xs text-[#0d9488] font-bold">COD</span>}
                         {m.are_promotie && !m.cod_cupon && <span className="text-xs text-[#0d9488] font-medium">Oferta</span>}
                       </div>
                     </div>
                     {promo ? (
-                      <p className="text-[#475569] text-xs line-clamp-2">{promo.nume}</p>
+                      <p className="text-[#cbd5e1] text-xs line-clamp-2">{promo.nume}</p>
                     ) : (
-                      <p className="text-[#64748b] text-xs italic">Verifica ofertele curente</p>
+                      <p className="text-[#94a3b8] text-xs italic">Verifica ofertele curente</p>
                     )}
                     <div className="flex justify-end mt-2">
                       <span className="text-xs text-[#0d9488] font-semibold group-hover:text-[#0f766e]">Vezi &rarr;</span>
@@ -166,10 +166,10 @@ export default function JocuriPage() {
               })}
             </div>
           ) : (
-            <div className="bg-[#ffffff] border border-[#e2e8f0] rounded-xl p-10 text-center">
+            <div className="bg-[#111827] border border-[#1e293b] rounded-xl p-10 text-center">
               <p className="text-4xl mb-3">🎮</p>
-              <p className="font-bold text-[#334155] mb-2">Magazine actualizate zilnic</p>
-              <p className="text-[#64748b] text-sm mb-4">Revino curand pentru promotii la jocuri si gaming.</p>
+              <p className="font-bold text-[#cbd5e1] mb-2">Magazine actualizate zilnic</p>
+              <p className="text-[#94a3b8] text-sm mb-4">Revino curand pentru promotii la jocuri si gaming.</p>
               <Link href="/toate-magazinele" className="text-[#0d9488] font-bold hover:text-[#0f766e] text-sm">Toate magazinele &rarr;</Link>
             </div>
           )}
@@ -185,16 +185,16 @@ export default function JocuriPage() {
         />
 
         {/* Editorial */}
-        <section className="bg-[#ffffff] border-t border-[#e2e8f0] py-10 px-4">
+        <section className="bg-[#111827] border-t border-[#1e293b] py-10 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-[#0f172a] mb-5">Ghid: Unde cumperi jocuri mai ieftin in Romania</h2>
-            <div className="space-y-4 text-sm text-[#475569] leading-relaxed">
+            <h2 className="text-xl font-black text-[#f1f5f9] mb-5">Ghid: Unde cumperi jocuri mai ieftin in Romania</h2>
+            <div className="space-y-4 text-sm text-[#cbd5e1] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[#0f172a] mb-1">PCGarage vs evoMAG vs Altex pentru gaming</h3>
+                <h3 className="font-bold text-[#f1f5f9] mb-1">PCGarage vs evoMAG vs Altex pentru gaming</h3>
                 <p>PCGarage are cele mai bune preturi la componente PC si accesorii gaming (placi video, procesoare). evoMAG ofera frecvent bundle-uri consola + joc la preturi sub piata. Altex are stocuri mari si livrare rapida pentru console si jocuri fizice.</p>
               </div>
               <div>
-                <h3 className="font-bold text-[#0f172a] mb-1">Jocuri fizice vs digitale — ce e mai ieftin</h3>
+                <h3 className="font-bold text-[#f1f5f9] mb-1">Jocuri fizice vs digitale — ce e mai ieftin</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
                   <li><strong>Jocuri noi (launch)</strong> — pretul e identic fizic/digital; fizic poate fi revandut</li>
                   <li><strong>Dupa 3-6 luni</strong> — reducerile digitale (PS Store, Xbox Game Pass) bat de obicei fizicul</li>
@@ -203,7 +203,7 @@ export default function JocuriPage() {
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-[#0f172a] mb-1">Cand apar cele mai mari reduceri la gaming</h3>
+                <h3 className="font-bold text-[#f1f5f9] mb-1">Cand apar cele mai mari reduceri la gaming</h3>
                 <p>Black Friday (nov) are reduceri record la console si jocuri. Steam Summer Sale (iun-iul) si Winter Sale (dec-ian) pentru PC. PlayStation Store face frecvent flash sale-uri de weekend. Aboneaza-te la newsletter-ul PCGarage si evoMAG pentru alerte imediate.</p>
               </div>
             </div>
@@ -212,7 +212,7 @@ export default function JocuriPage() {
 
         {/* Internal links */}
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[#334155] mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-[#cbd5e1] mb-4">Exploreaza si alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/electronice", label: "💻 Electronice & IT" },
@@ -223,14 +223,14 @@ export default function JocuriPage() {
               { href: "/categorii",   label: "📂 Toate Categoriile" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-[#ffffff] hover:bg-[#e2e8f0] hover:text-[#0f766e] text-[#334155] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#e2e8f0] hover:border-[#e6d5a8]">
+                className="bg-[#111827] hover:bg-[#1e293b] hover:text-[#0f766e] text-[#cbd5e1] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#1e293b] hover:border-[#cbd5e1]">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-[#e2e8f0] py-6 text-center text-xs text-[#64748b] mt-4">
+        <footer className="border-t border-[#1e293b] py-6 text-center text-xs text-[#94a3b8] mt-4">
           &copy; {an} AmCupon.ro &middot;{" "}
           <Link href="/electronice" className="hover:text-[#0d9488]">Electronice</Link>{" · "}
           <Link href="/gadgets" className="hover:text-[#0d9488]">Gadgets</Link>{" · "}

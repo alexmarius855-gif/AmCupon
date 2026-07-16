@@ -12,6 +12,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 16.07.2026 (redesign DARK complet + import CSV 2Performant/Awin):**
+- **Revenire deliberata la tema dark** (peste light/teal din 06.07), decizie explicita Alex ("da dark. fa-l dark") dupa ce am flagat tensiunea cu regula veche "NU reintroduce dark". Vezi sectiunea "Tema vizuala" mai jos pentru paleta completa si scripturile folosite (`retheme_dark_2026.js`, `purge_gold_leftover.js`, `fix_logo_boxes_dark.js`). Accentul teal a ramas neschimbat — doar bg/carduri/text au trecut de la deschis la inchis. 96 fisiere `.tsx` convertite, build + lint verificate (doar erorile pre-existente cunoscute au ramas: `Date.now()` impurity in `produse/[categorie]/page.tsx`, `setState-in-effect` in `ToateMagazineleClient.tsx`).
+- **Fix critic gasit in timpul conversiei**: `:root { --background }` din `globals.css` ramasese `#ffffff` (nefolosit de paginile propriu-zise, dar `<body>` insusi era alb) — corectat la `#0a0f1a`, altfel aparea o margine/flash alb la scroll pe unele pagini.
+- **Fix critic logo-uri**: conversia generala a innegrit si cutiile mici de logo ale magazinelor (erau `bg-[#ffffff]` → deveneau `bg-[#111827]`), facand logo-urile (PNG-uri cu forme inchise la culoare, proiectate pt fundal alb) ilizibile. Reparat separat cu `fix_logo_boxes_dark.js` (30+ cutii in ~30 fisiere) — cutiile de logo raman intentionat albe pe fundal dark.
+- **Import CSV 2Performant** (`data/promotii_2p.csv` inlocuit cu export proaspat) — 973 linii, 113 promotii. Rulat initial contra output.json vechi (+40 magazine noi create), apoi re-rulat contra output.json proaspat din pipeline (dupa sincronizare cu `origin/main`) — de data asta cele 40 de magazine existau deja (aduse separat de pipeline-ul automat), doar promotiile s-au atasat: 1065 magazine / 97 cu promotii active / 22 cu cod real.
+- **Awin — blocat, necesita actiune Alex**: CSV atasat initial era tipul gresit ("Advertiser Directory", fara link-uri de tracking). Alex a aratat un screenshot cu 27 programe aprobate in tab-ul "Joined Programmes" al dashboard-ului Awin, dar inca nu a exportat CSV-ul corect (cu coloana "Click Through Link"). Fara acel export, cele 27 de programe Awin nu pot fi importate cu linkuri reale.
+
 **UPDATE 03.07.2026 (audit dur + curățenie ONESTITATE — NEPUSHED încă):**
 - **Audit complet tehnic + competitori** în `docs/audituri/AUDIT-REMODELARE-2026-07.md`. Descoperire cheie:
   1044 magazine, 75 cu promoții, **0 cu cod real** (`cod_cupon: ""` la toate) — site "de coduri" fără
@@ -290,16 +297,19 @@ Fiecare pagină dinamică are două fișiere:
 
 **Excepție**: `app/page.tsx` (homepage) este full client — face `fetch("/output.json")` în `useEffect` pentru date fără rebuild.
 
-### Tema vizuala — LIGHT / clean / marketplace (din 06.07.2026)
-**Standard ACTUAL pentru orice cod nou** (decizie Alex, redesign inspirat structural de Kuplio.ro dar identitate originala):
-- **background pagina**: `#F7F9FC` (gri foarte deschis) · **carduri**: `#ffffff` alb · **border card**: `#e2e8f0`/`#E5E7EB`
-- **text principal**: `#0f172a` (near-black) · text secundar `#334155`/`#475569` · muted `#64748b`
-- **accent principal (teal)**: `#14b8a6` / `#0d9488` / `#0f766e` (butoane, linkuri, medalioane)
+### Tema vizuala — DARK / teal (din 16.07.2026)
+**Standard ACTUAL pentru orice cod nou** (decizie explicita Alex, "da dark. fa-l dark" — revenire deliberata la dark peste tema light/teal din 06.07, pastrand acelasi accent teal):
+- **background pagina**: `#0a0f1a` (aproape negru, albastrui) · **carduri**: `#111827` · **carduri alt/sectiuni**: `#1e293b` / `#334155`
+- **border card**: `#1e293b` · **border mai vizibil**: `#334155` / `#475569`
+- **text principal**: `#f1f5f9` (aproape alb) · text secundar `#cbd5e1` · muted `#94a3b8`
+- **accent principal (teal, NESCHIMBAT fata de tema light)**: `#14b8a6` / `#0d9488` / `#0f766e` (butoane, linkuri, medalioane)
 - **accent promo (rosu)**: `#ef4444` (urgenta/expira) · **verificat/succes**: `emerald`
 - **radius max 12px** (`rounded-xl`) — NU folosi `rounded-2xl`/`rounded-3xl`
-- **INTERZIS**: tema aurie/sampanie/dark (`#0b0a07`, `#15120c`, `#c9a63e`, `#b8912e` etc.) — ELIMINATA complet 06.07. NU reintroduce auriu sau dark.
-- **Istoric teme** (sa nu se reintroduca din greseala): orange (initial) → indigo/cyan dark → auriu/sampanie dark → **LIGHT/teal (actual)**.
-- Migrari la scara: script regex dedicat (vezi `scripts/retheme_pages.js` ca model — protectie logo box-uri albe), nu editare manuala fisier cu fisier. `.dark` overrides din `globals.css` sunt legacy/dormante (html NU are clasa `.dark`) — tema vine din hexuri hardcodate in pagini.
+- **`:root { --background/--foreground }` din `globals.css`** aliniate la `#0a0f1a`/`#f1f5f9` — altfel `<body>` ramane alb si da flash/margine alba la scroll pe paginile care nu acopera tot ecranul cu wrapper-ul dark.
+- **Cutii logo (`w-N h-N rounded-xl [overflow-hidden] bg-...`) raman ALBE intentionat** (`bg-[#ffffff]`) — logo-urile magazinelor sunt PNG-uri cu fundal transparent, forme/text inchise la culoare, proiectate pentru fundal alb; pe card dark ar deveni ilizibile. Orice cutie noua de logo trebuie sa foloseasca explicit `bg-[#ffffff]`, NU culoarea de card standard.
+- **INTERZIS**: tema aurie/sampanie (`#c9a63e`, `#b8912e`, `#2e2410`, `#15120c`, `#26211a`, `#37301f`, `#0b0a07`, `#e6d5a8`, `#8c8064`, `#d8c091`, `#a89a78`, `#f5ead0`, `#e8e0d0`) — NU reintroduce, indiferent de prefixul Tailwind (bg-/text-/border-/from-/to-/shadow-/hover:).
+- **Istoric teme** (sa nu se reintroduca din greseala): orange (initial) → indigo/cyan dark → auriu/sampanie dark → light/teal (06.07) → **dark/teal (actual, 16.07)**.
+- Migrari la scara: scripturi regex dedicate in `scripts/` — `retheme_dark_2026.js` (conversie hex arbitrar light→dark, pastreaza accentul teal), `purge_gold_leftover.js` (sweep generic pentru orice hex auriu ramas, indiferent de prefix), `fix_logo_boxes_dark.js` (readuce la alb cutiile mici de logo dupa conversia generala). Nu editare manuala fisier cu fisier pentru migrari de 10+ fisiere. `.dark` overrides din `globals.css` (sectiunea "DARK MODE") sunt legacy/dormante (html NU are clasa `.dark`) — tema vine din hexuri hardcodate in pagini, nu din acel bloc.
 
 ### Data loading
 - Server pages: `fs.readFileSync(path.join(process.cwd(), "public", "output.json"))`

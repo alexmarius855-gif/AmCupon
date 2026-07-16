@@ -54,17 +54,17 @@ export default function CalatoriePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-[#F7F9FC]">
-        <nav className="bg-[#F7F9FC] border-b border-[#e2e8f0]">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#64748b]">
+      <div className="min-h-screen bg-[#0a0f1a]">
+        <nav className="bg-[#0a0f1a] border-b border-[#1e293b]">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#94a3b8]">
             <Link href="/" className="hover:text-[#0d9488]">Acasă</Link>
             <span className="mx-1">/</span>
-            <span className="text-[#334155] font-medium">Vacanțe & Călătorii</span>
+            <span className="text-[#cbd5e1] font-medium">Vacanțe & Călătorii</span>
           </div>
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#0f766e] text-[#0f172a] py-12 px-4">
+        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#0f766e] text-[#f1f5f9] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">✈️</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Vacanțe & Călătorii cu Reducere {an}</h1>
@@ -73,7 +73,7 @@ export default function CalatoriePage() {
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Cazare hotel","Bilete avion","Trollere","Car rental","Excursii","Travel gear"].map(c => (
-                <span key={c} className="bg-slate-100 text-[#0f172a] text-sm font-semibold px-4 py-1.5 rounded-full border border-slate-200">{c}</span>
+                <span key={c} className="bg-slate-100 text-[#f1f5f9] text-sm font-semibold px-4 py-1.5 rounded-full border border-slate-200">{c}</span>
               ))}
             </div>
           </div>
@@ -81,14 +81,14 @@ export default function CalatoriePage() {
 
         {/* DESTINATII */}
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[#0f172a] mb-6 text-center">Destinații populare {an}</h2>
+          <h2 className="text-xl font-black text-[#f1f5f9] mb-6 text-center">Destinații populare {an}</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {DESTINATII.map(d => (
               <Link key={d.label} href="/blog/vacanta-ieftina-romania-2026"
-                className="bg-[#ffffff] border border-[#e2e8f0] rounded-xl p-5 hover:shadow-md transition-all group">
+                className="bg-[#111827] border border-[#1e293b] rounded-xl p-5 hover:shadow-md transition-all group">
                 <div className="text-3xl mb-2">{d.emoji}</div>
-                <h3 className="font-bold text-[#0f172a] text-sm mb-1">{d.label}</h3>
-                <p className="text-xs text-[#475569] mb-3">{d.desc}</p>
+                <h3 className="font-bold text-[#f1f5f9] text-sm mb-1">{d.label}</h3>
+                <p className="text-xs text-[#cbd5e1] mb-3">{d.desc}</p>
                 <p className="text-xs font-bold text-[#14b8a6] group-hover:text-[#14b8a6]">Ghid & reduceri →</p>
               </Link>
             ))}
@@ -99,13 +99,13 @@ export default function CalatoriePage() {
         <section className="max-w-6xl mx-auto px-4 pb-10">
           <div className="flex items-center gap-3 mb-5">
             
-            <h2 className="text-xl font-black text-[#0f172a]">Parteneri travel cu reduceri active</h2>
+            <h2 className="text-xl font-black text-[#f1f5f9]">Parteneri travel cu reduceri active</h2>
           </div>
           {magazine.length === 0 ? (
-            <div className="text-center py-10 bg-[#ffffff] rounded-xl">
+            <div className="text-center py-10 bg-[#111827] rounded-xl">
               <p className="text-2xl mb-3">🌍</p>
-              <p className="text-[#475569] font-medium mb-2">Explorează articolele noastre travel</p>
-              <p className="text-[#475569] text-sm mb-4">Ghiduri de destinații, sfaturi economii, itinerarii România și Europa</p>
+              <p className="text-[#cbd5e1] font-medium mb-2">Explorează articolele noastre travel</p>
+              <p className="text-[#cbd5e1] text-sm mb-4">Ghiduri de destinații, sfaturi economii, itinerarii România și Europa</p>
               <Link href="/blog" className="inline-block bg-[#0d9488] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#0d9488] transition-colors">
                 Citește ghiduri travel →
               </Link>
@@ -118,28 +118,28 @@ export default function CalatoriePage() {
                 const promo = m.promotii[0];
                 return (
                   <a key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                    className="group bg-[#ffffff] border border-[#e2e8f0] hover:border-[#14b8a6]/40 rounded-xl p-4 transition-all hover:shadow-md">
+                    className="group bg-[#111827] border border-[#1e293b] hover:border-[#14b8a6]/40 rounded-xl p-4 transition-all hover:shadow-md">
                     <div className="flex items-center gap-3 mb-3">
                       {m.logo_url ? (
-                        <div className="w-10 h-10 rounded-xl overflow-hidden bg-white border border-[#e2e8f0] shrink-0">
+                        <div className="w-10 h-10 rounded-xl overflow-hidden bg-[#ffffff] border border-[#1e293b] shrink-0">
                           {/* eslint-disable-next-line @next/next/no-img-element */}
                           <img src={m.logo_url} alt={`Logo ${nume}`} className="w-full h-full object-contain" loading="lazy" />
                         </div>
                       ) : (
-                        <div className={`w-10 h-10 rounded-xl ${culoare} flex items-center justify-center text-[#0f172a] font-black text-lg shrink-0`}>
+                        <div className={`w-10 h-10 rounded-xl ${culoare} flex items-center justify-center text-[#f1f5f9] font-black text-lg shrink-0`}>
                           {nume[0]}
                         </div>
                       )}
                       <div>
-                        <p className="font-bold text-[#0f172a] text-sm">{nume}</p>
+                        <p className="font-bold text-[#f1f5f9] text-sm">{nume}</p>
                         {m.are_promotie && m.cod_cupon && <span className="text-xs text-[#0d9488] font-bold">COD</span>}
                         {m.are_promotie && !m.cod_cupon && <span className="text-xs text-[#0d9488] font-medium">Ofertă</span>}
                       </div>
                     </div>
                     {promo ? (
-                      <p className="text-[#475569] text-xs line-clamp-2">{promo.nume}</p>
+                      <p className="text-[#cbd5e1] text-xs line-clamp-2">{promo.nume}</p>
                     ) : (
-                      <p className="text-[#64748b] text-xs italic">Verifică ofertele curente</p>
+                      <p className="text-[#94a3b8] text-xs italic">Verifică ofertele curente</p>
                     )}
                     <div className="flex justify-end mt-2">
                       <span className="text-xs text-[#14b8a6] font-semibold group-hover:text-[#14b8a6]">Vezi →</span>
@@ -161,16 +161,16 @@ export default function CalatoriePage() {
 
         {/* Parteneri internationali (Impact.com) */}
         <section className="max-w-6xl mx-auto px-4 pb-10">
-          <h2 className="text-xl font-black text-[#0f172a] mb-5">Excursii & activitati internationale</h2>
+          <h2 className="text-xl font-black text-[#f1f5f9] mb-5">Excursii & activitati internationale</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {PARTENERI_INTL.map(p => (
               <a key={p.nume} href={p.url} target="_blank" rel="sponsored noopener noreferrer"
-                className="bg-[#ffffff] border border-[#e2e8f0] hover:border-[#14b8a6]/40 rounded-xl p-5 transition-all hover:shadow-md flex flex-col gap-2">
+                className="bg-[#111827] border border-[#1e293b] hover:border-[#14b8a6]/40 rounded-xl p-5 transition-all hover:shadow-md flex flex-col gap-2">
                 <div className="flex items-center gap-2">
                   <span className="text-2xl">{p.emoji}</span>
-                  <span className="font-black text-[#0f172a]">{p.nume}</span>
+                  <span className="font-black text-[#f1f5f9]">{p.nume}</span>
                 </div>
-                <p className="text-[#475569] text-xs">{p.desc}</p>
+                <p className="text-[#cbd5e1] text-xs">{p.desc}</p>
                 <p className="text-xs font-bold text-[#14b8a6] mt-1">Vezi oferte →</p>
               </a>
             ))}
@@ -178,16 +178,16 @@ export default function CalatoriePage() {
         </section>
 
         {/* SEO */}
-        <section className="bg-[#ffffff] border-t border-[#e2e8f0] py-10 px-4">
+        <section className="bg-[#111827] border-t border-[#1e293b] py-10 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-[#0f172a] mb-5">Sfaturi pentru vacanță mai ieftină</h2>
-            <div className="space-y-4 text-sm text-[#475569] leading-relaxed">
+            <h2 className="text-xl font-black text-[#f1f5f9] mb-5">Sfaturi pentru vacanță mai ieftină</h2>
+            <div className="space-y-4 text-sm text-[#cbd5e1] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[#0f172a] mb-1">Cum găsești cazarea cea mai ieftină</h3>
+                <h3 className="font-bold text-[#f1f5f9] mb-1">Cum găsești cazarea cea mai ieftină</h3>
                 <p>Rezervă cu 2-3 luni avans pentru prețuri cu 20-40% mai mici. Booking.com și Airbnb oferă reduceri frecvente pentru rezervări cu anulare gratuită. Compară întotdeauna cu prețul de rezervare directă la hotel.</p>
               </div>
               <div>
-                <h3 className="font-bold text-[#0f172a] mb-1">Top destinații România pentru vacanță ieftină {an}</h3>
+                <h3 className="font-bold text-[#f1f5f9] mb-1">Top destinații România pentru vacanță ieftină {an}</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
                   <li><strong>Apuseni</strong> — natură superb ă, prețuri mici, turism rural autentic</li>
                   <li><strong>Sibiu</strong> — city break cultural, medieval, Transfăgărășanul la 30 minute</li>
@@ -200,7 +200,7 @@ export default function CalatoriePage() {
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[#334155] mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-[#cbd5e1] mb-4">Exploreaza si alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/esim", label: "📡 eSIM Calatorie" },
@@ -212,14 +212,14 @@ export default function CalatoriePage() {
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-[#ffffff] hover:bg-[#e2e8f0] hover:text-[#0f766e] text-[#334155] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#e2e8f0] hover:border-[#e6d5a8]">
+                className="bg-[#111827] hover:bg-[#1e293b] hover:text-[#0f766e] text-[#cbd5e1] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#1e293b] hover:border-[#cbd5e1]">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-[#e2e8f0] py-6 text-center text-xs text-[#64748b] mt-4">
+        <footer className="border-t border-[#1e293b] py-6 text-center text-xs text-[#94a3b8] mt-4">
           © {an} AmCupon.ro ·{" "}
           <Link href="/blog" className="hover:text-[#0d9488]">Blog</Link>{" · "}
           <Link href="/categorii" className="hover:text-[#0d9488]">Categorii</Link>{" · "}

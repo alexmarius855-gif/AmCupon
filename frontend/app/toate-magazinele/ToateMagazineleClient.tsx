@@ -102,17 +102,17 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
   const cuCod      = magazine.filter(m => m.cod_cupon).length;
 
   return (
-    <div className="min-h-screen bg-[#F7F9FC]">
+    <div className="min-h-screen bg-[#0a0f1a]">
 
       {/* ── HERO ────────────────────────────────────────────────────────── */}
-      <div className="bg-gradient-to-br from-[#ffffff] via-[#ffffff] to-[#e2e8f0] py-12 px-4 border-b border-[#e2e8f0]">
+      <div className="bg-gradient-to-br from-[#111827] via-[#111827] to-[#1e293b] py-12 px-4 border-b border-[#1e293b]">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-xs font-bold text-[#0d9488] uppercase tracking-widest mb-3">DIRECTORUL REDUCERILOR</p>
-          <h1 className="text-3xl md:text-4xl font-black text-[#0f172a] mb-2 tracking-tight">
+          <h1 className="text-3xl md:text-4xl font-black text-[#f1f5f9] mb-2 tracking-tight">
             Toate magazinele cu reduceri
           </h1>
-          <p className="text-[#475569] text-sm mb-1">
-            <span className="text-[#0f172a] font-bold">{magazine.length} magazine partenere</span>
+          <p className="text-[#cbd5e1] text-sm mb-1">
+            <span className="text-[#f1f5f9] font-bold">{magazine.length} magazine partenere</span>
             {" · "}
             <span className="text-emerald-400 font-bold">{cuPromotii} cu promoții active</span>
             {" · "}
@@ -121,7 +121,7 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
 
           {/* Search */}
           <div className="relative max-w-xl mx-auto mt-6">
-            <svg className="absolute left-4 top-3.5 w-5 h-5 text-[#475569]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="absolute left-4 top-3.5 w-5 h-5 text-[#cbd5e1]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
             <input
@@ -129,11 +129,11 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
               placeholder="Cauta magazin (ex: Zara, eMAG, Notino...)"
               value={cautare}
               onChange={e => setCautare(e.target.value)}
-              className="w-full bg-[#e2e8f0] text-[#0f172a] rounded-xl pl-12 pr-4 py-3.5 text-base focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/50 border border-[#cbd5e1] focus:border-[#14b8a6]/50 placeholder-[#64748b] transition-all"
+              className="w-full bg-[#1e293b] text-[#f1f5f9] rounded-xl pl-12 pr-4 py-3.5 text-base focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/50 border border-[#334155] focus:border-[#14b8a6]/50 placeholder-[#94a3b8] transition-all"
             />
             {cautare && (
               <button onClick={() => setCautare("")}
-                className="absolute right-4 top-3.5 text-[#475569] hover:text-[#0f172a] transition-colors">
+                className="absolute right-4 top-3.5 text-[#cbd5e1] hover:text-[#f1f5f9] transition-colors">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12"/>
                 </svg>
@@ -152,7 +152,7 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
               className={`px-4 py-2 rounded-full text-sm font-bold transition-all ${
                 filtru === f
                   ? "bg-[#0d9488] text-white shadow-lg shadow-[#14b8a6]/25"
-                  : "bg-[#e2e8f0] border border-[#cbd5e1] text-[#334155] hover:border-[#14b8a6]/50 hover:text-white"
+                  : "bg-[#1e293b] border border-[#334155] text-[#cbd5e1] hover:border-[#14b8a6]/50 hover:text-white"
               }`}>
               {f === "toate" ? "Toate" : f === "cod" ? "🎟 Cod cupon" : "⚡ Promoții active"}
             </button>
@@ -161,7 +161,7 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
           <select
             value={sortare}
             onChange={e => setSortare(e.target.value as "az" | "reducere" | "rank")}
-            className="ml-auto bg-[#e2e8f0] border border-[#cbd5e1] text-[#334155] text-sm font-semibold rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40 cursor-pointer hover:border-[#64748b] transition-colors">
+            className="ml-auto bg-[#1e293b] border border-[#334155] text-[#cbd5e1] text-sm font-semibold rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/40 cursor-pointer hover:border-[#64748b] transition-colors">
             <option value="rank">Popularitate</option>
             <option value="reducere">Reducere maximă</option>
             <option value="az">A – Z</option>
@@ -175,7 +175,7 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
               className={`px-3 py-1.5 rounded-full text-xs font-bold transition-all ${
                 categorie === cat.key
                   ? "bg-[#0d9488] text-[#ffffff]"
-                  : "bg-[#e2e8f0]/60 border border-[#cbd5e1] text-[#475569] hover:border-[#64748b] hover:text-[#1e293b]"
+                  : "bg-[#1e293b]/60 border border-[#334155] text-[#cbd5e1] hover:border-[#64748b] hover:text-[#cbd5e1]"
               }`}>
               {cat.label}
             </button>
@@ -183,9 +183,9 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
         </div>
 
         {/* ── REZULTAT COUNT ──────────────────────────────────────────── */}
-        <p className="text-sm text-[#64748b] mb-5">
+        <p className="text-sm text-[#94a3b8] mb-5">
           {filtrate.length} magazine{" "}
-          {cautare ? <span>pentru <span className="text-[#0f172a] font-semibold">&quot;{cautare}&quot;</span></span> : ""}
+          {cautare ? <span>pentru <span className="text-[#f1f5f9] font-semibold">&quot;{cautare}&quot;</span></span> : ""}
           {categorie !== "Toate" ? <span className="text-[#0d9488]"> · {CATEGORII_FILTRE.find(c => c.key === categorie)?.label}</span> : ""}
         </p>
 
@@ -202,11 +202,11 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
               <a
                 key={m.magazin}
                 href={`/cod-reducere/${m.magazin}`}
-                className="group relative bg-gradient-to-b from-[#ffffff] to-[#ffffff]/60 rounded-xl border border-[#e2e8f0]/80 hover:border-[#14b8a6]/50 p-4 flex flex-col items-center gap-3 hover:-translate-y-1 transition-all duration-200"
+                className="group relative bg-gradient-to-b from-[#111827] to-[#111827]/60 rounded-xl border border-[#1e293b]/80 hover:border-[#14b8a6]/50 p-4 flex flex-col items-center gap-3 hover:-translate-y-1 transition-all duration-200"
                 style={{ boxShadow: "0 1px 2px rgba(0,0,0,0.2)" }}
               >
                 {/* Logo */}
-                <div className="relative w-16 h-16 rounded-xl overflow-hidden flex items-center justify-center bg-white shrink-0 p-2 group-hover:ring-2 group-hover:ring-[#0d9488]/40 transition-all">
+                <div className="relative w-16 h-16 rounded-xl overflow-hidden flex items-center justify-center bg-[#ffffff] shrink-0 p-2 group-hover:ring-2 group-hover:ring-[#0d9488]/40 transition-all">
                   {m.logo_url && logoOk ? (
                     <img
                       src={m.logo_url}
@@ -228,7 +228,7 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
                 </div>
 
                 {/* Nume */}
-                <span className="text-xs font-bold text-[#1e293b] text-center group-hover:text-[#0f172a] transition-colors leading-tight line-clamp-2 min-h-[2rem] flex items-center">
+                <span className="text-xs font-bold text-[#cbd5e1] text-center group-hover:text-[#f1f5f9] transition-colors leading-tight line-clamp-2 min-h-[2rem] flex items-center">
                   {nume}
                 </span>
 
@@ -253,9 +253,9 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
 
         {/* EMPTY STATE */}
         {filtrate.length === 0 && (
-          <div className="text-center py-24 text-[#64748b]">
+          <div className="text-center py-24 text-[#94a3b8]">
             <p className="text-5xl mb-4">🔍</p>
-            <p className="font-bold text-lg text-[#334155]">Niciun magazin gasit</p>
+            <p className="font-bold text-lg text-[#cbd5e1]">Niciun magazin gasit</p>
             <p className="text-sm mt-1">Incearca alt termen de cautare sau sterge filtrele</p>
             <button onClick={() => { setCautare(""); setCategorie("Toate"); setFiltru("toate"); }}
               className="mt-4 text-[#0d9488] hover:text-[#0f766e] text-sm font-bold transition-colors">
@@ -265,11 +265,11 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
         )}
 
         {/* FOOTER NAV */}
-        <div className="mt-12 pt-6 border-t border-[#e2e8f0] flex items-center justify-between flex-wrap gap-3">
-          <Link href="/" className="text-sm text-[#64748b] hover:text-[#0d9488] transition-colors">
+        <div className="mt-12 pt-6 border-t border-[#1e293b] flex items-center justify-between flex-wrap gap-3">
+          <Link href="/" className="text-sm text-[#94a3b8] hover:text-[#0d9488] transition-colors">
             &larr; Inapoi la homepage
           </Link>
-          <Link href="/categorii" className="text-sm text-[#64748b] hover:text-[#0d9488] transition-colors">
+          <Link href="/categorii" className="text-sm text-[#94a3b8] hover:text-[#0d9488] transition-colors">
             Exploreaza categorii &rarr;
           </Link>
         </div>

@@ -204,16 +204,16 @@ export default async function TopCategoriePage({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
-      <div className="min-h-screen bg-[#F7F9FC] dark:bg-[#ffffff]">
+      <div className="min-h-screen bg-[#0a0f1a] dark:bg-[#111827]">
         {/* HERO */}
-        <section className={`bg-gradient-to-br ${gradient} text-[#0f172a] py-10 px-4`}>
+        <section className={`bg-gradient-to-br ${gradient} text-[#f1f5f9] py-10 px-4`}>
           <div className="max-w-5xl mx-auto">
             <div className="flex items-center gap-2 mb-3">
-              <Link href="/top" className="text-slate-500 hover:text-[#0f172a] text-sm transition-colors">
+              <Link href="/top" className="text-slate-500 hover:text-[#f1f5f9] text-sm transition-colors">
                 &larr; Top Produse
               </Link>
               {cat.tag && (
-                <span className="bg-slate-100 text-[#0f172a] text-xs font-bold px-2.5 py-0.5 rounded-full ml-2">
+                <span className="bg-slate-100 text-[#f1f5f9] text-xs font-bold px-2.5 py-0.5 rounded-full ml-2">
                   {cat.tag}
                 </span>
               )}
@@ -246,9 +246,9 @@ export default async function TopCategoriePage({
 
         {/* BEST PICK QUICK INFO */}
         {bestPick && (
-          <div className="bg-white dark:bg-[#e2e8f0] border-b border-[#e2e8f0] dark:border-[#cbd5e1]">
-            <div className="max-w-5xl mx-auto px-4 py-3 flex flex-wrap items-center gap-x-6 gap-y-1 text-sm text-[#475569] dark:text-[#475569]">
-              <span className="font-semibold text-[#0f172a] dark:text-[#0f172a]">
+          <div className="bg-[#111827] dark:bg-[#1e293b] border-b border-[#1e293b] dark:border-[#334155]">
+            <div className="max-w-5xl mx-auto px-4 py-3 flex flex-wrap items-center gap-x-6 gap-y-1 text-sm text-[#cbd5e1] dark:text-[#cbd5e1]">
+              <span className="font-semibold text-[#f1f5f9] dark:text-[#f1f5f9]">
                 {cat.emoji} Recomandam:
               </span>
               <span className="font-bold text-[#0d9488]">{bestPick.nume}</span>
@@ -265,8 +265,8 @@ export default async function TopCategoriePage({
           <TopProduseClient produse={cat.produse} culoare={cat.culoare} />
 
           {/* HOW WE TEST */}
-          <section className="mt-10 bg-white dark:bg-[#e2e8f0] border border-[#e2e8f0] dark:border-[#cbd5e1] rounded-xl p-6">
-            <h2 className="text-lg font-black text-[#0f172a] dark:text-[#0f172a] mb-3">
+          <section className="mt-10 bg-[#111827] dark:bg-[#1e293b] border border-[#1e293b] dark:border-[#334155] rounded-xl p-6">
+            <h2 className="text-lg font-black text-[#f1f5f9] dark:text-[#f1f5f9] mb-3">
               Cum testam {cat.titlu_scurt.toLowerCase()}?
             </h2>
             <div className="grid sm:grid-cols-3 gap-4">
@@ -277,19 +277,19 @@ export default async function TopCategoriePage({
               ].map(item => (
                 <div key={item.titlu} className="text-center p-4">
                   <div className="text-3xl mb-2">{item.icon}</div>
-                  <h3 className="font-bold text-[#0f172a] dark:text-[#0f172a] text-sm mb-1">{item.titlu}</h3>
-                  <p className="text-xs text-[#475569] dark:text-[#475569] leading-relaxed">{item.desc}</p>
+                  <h3 className="font-bold text-[#f1f5f9] dark:text-[#f1f5f9] text-sm mb-1">{item.titlu}</h3>
+                  <p className="text-xs text-[#cbd5e1] dark:text-[#cbd5e1] leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
           </section>
 
           {/* PRICE RANGE INFO */}
-          <section className="mt-6 bg-[#f0fdfa] dark:bg-[#ffffff]/20 border border-[#e6d5a8] dark:border-[#5a4718]/30 rounded-xl p-5">
-            <h3 className="font-bold text-[#0f172a] dark:text-[#0f172a] mb-2 text-sm">
+          <section className="mt-6 bg-[#0d9488]/10 dark:bg-[#111827]/20 border border-[#cbd5e1] dark:border-[#1e293b]/30 rounded-xl p-5">
+            <h3 className="font-bold text-[#f1f5f9] dark:text-[#f1f5f9] mb-2 text-sm">
               Interval de preturi {cat.titlu_scurt.toLowerCase()}
             </h3>
-            <p className="text-sm text-[#475569] dark:text-[#334155]">
+            <p className="text-sm text-[#cbd5e1] dark:text-[#cbd5e1]">
               Produsele din acest top costa intre{" "}
               <strong className="text-[#0f766e]">{pretMinim.toLocaleString("ro-RO")} lei</strong> si{" "}
               <strong className="text-[#0f766e]">{pretMaxim.toLocaleString("ro-RO")} lei</strong>.
@@ -306,18 +306,18 @@ export default async function TopCategoriePage({
           </section>
 
           {/* FAQ */}
-          <section className="mt-6 bg-white dark:bg-[#e2e8f0] border border-[#e2e8f0] dark:border-[#cbd5e1] rounded-xl p-6">
-            <h2 className="text-lg font-black text-[#0f172a] dark:text-[#0f172a] mb-4">
+          <section className="mt-6 bg-[#111827] dark:bg-[#1e293b] border border-[#1e293b] dark:border-[#334155] rounded-xl p-6">
+            <h2 className="text-lg font-black text-[#f1f5f9] dark:text-[#f1f5f9] mb-4">
               Intrebari frecvente despre {cat.titlu_scurt.toLowerCase()}
             </h2>
             <div className="space-y-4">
               {faqSchema.mainEntity.map((item, i) => (
-                <details key={i} className="group border-b border-[#e2e8f0] dark:border-[#cbd5e1] last:border-0 pb-4 last:pb-0">
-                  <summary className="flex justify-between items-center cursor-pointer text-sm font-semibold text-[#0f172a] dark:text-[#1e293b] list-none select-none gap-2">
+                <details key={i} className="group border-b border-[#1e293b] dark:border-[#334155] last:border-0 pb-4 last:pb-0">
+                  <summary className="flex justify-between items-center cursor-pointer text-sm font-semibold text-[#f1f5f9] dark:text-[#cbd5e1] list-none select-none gap-2">
                     <span>{item.name}</span>
                     <span className="text-[#0d9488] text-lg shrink-0 group-open:rotate-45 transition-transform">+</span>
                   </summary>
-                  <p className="mt-2 text-sm text-[#475569] dark:text-[#475569] leading-relaxed">
+                  <p className="mt-2 text-sm text-[#cbd5e1] dark:text-[#cbd5e1] leading-relaxed">
                     {item.acceptedAnswer.text}
                   </p>
                 </details>
@@ -326,12 +326,12 @@ export default async function TopCategoriePage({
           </section>
 
           {/* NEWSLETTER */}
-          <section className="mt-6 bg-[#ffffff] dark:bg-[#F7F9FC] rounded-xl p-6 text-center">
+          <section className="mt-6 bg-[#111827] dark:bg-[#0a0f1a] rounded-xl p-6 text-center">
             <p className="text-[#0d9488] text-xs font-black uppercase tracking-widest mb-2">Newsletter gratuit</p>
-            <h3 className="text-xl font-black text-[#0f172a] mb-1">
+            <h3 className="text-xl font-black text-[#f1f5f9] mb-1">
               Primeste review-uri noi + coduri de reducere
             </h3>
-            <p className="text-[#475569] text-sm mb-5">
+            <p className="text-[#cbd5e1] text-sm mb-5">
               1000+ magazine monitorizate. Zero spam.
             </p>
             <Link href="/newsletter"
@@ -343,11 +343,11 @@ export default async function TopCategoriePage({
 
         {/* OTHER CATEGORIES */}
         <div className="max-w-5xl mx-auto px-4 pb-12">
-          <h3 className="text-base font-black text-[#334155] dark:text-[#334155] mb-4">
+          <h3 className="text-base font-black text-[#cbd5e1] dark:text-[#cbd5e1] mb-4">
             Alte categorii recomandate
           </h3>
           <div className="flex flex-wrap gap-2">
-            <Link href="/top" className="bg-white dark:bg-[#e2e8f0] hover:bg-[#f0fdfa] dark:hover:bg-[#cbd5e1] text-[#334155] dark:text-[#334155] text-sm font-semibold px-4 py-2 rounded-xl border border-[#e2e8f0] dark:border-[#94a3b8] hover:border-[#e6d5a8] transition-colors">
+            <Link href="/top" className="bg-[#111827] dark:bg-[#1e293b] hover:bg-[#0d9488]/10 dark:hover:bg-[#334155] text-[#cbd5e1] dark:text-[#cbd5e1] text-sm font-semibold px-4 py-2 rounded-xl border border-[#1e293b] dark:border-[#475569] hover:border-[#cbd5e1] transition-colors">
               Toate topurile &rarr;
             </Link>
             {[
@@ -357,14 +357,14 @@ export default async function TopCategoriePage({
               { href: "/blog",        label: "📖 Blog" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-white dark:bg-[#e2e8f0] hover:bg-[#f0fdfa] dark:hover:bg-[#cbd5e1] hover:text-[#0f766e] text-[#334155] dark:text-[#334155] text-sm font-semibold px-4 py-2 rounded-xl border border-[#e2e8f0] dark:border-[#94a3b8] hover:border-[#e6d5a8] transition-colors">
+                className="bg-[#111827] dark:bg-[#1e293b] hover:bg-[#0d9488]/10 dark:hover:bg-[#334155] hover:text-[#0f766e] text-[#cbd5e1] dark:text-[#cbd5e1] text-sm font-semibold px-4 py-2 rounded-xl border border-[#1e293b] dark:border-[#475569] hover:border-[#cbd5e1] transition-colors">
                 {l.label}
               </a>
             ))}
           </div>
         </div>
 
-        <footer className="border-t border-[#e2e8f0] dark:border-[#cbd5e1] py-6 text-center text-xs text-[#64748b]">
+        <footer className="border-t border-[#1e293b] dark:border-[#334155] py-6 text-center text-xs text-[#94a3b8]">
           &copy; {an} AmCupon.ro &middot;{" "}
           <Link href="/" className="hover:text-[#0d9488]">Acasa</Link>
           {" · "}<Link href="/top" className="hover:text-[#0d9488]">Top Produse</Link>

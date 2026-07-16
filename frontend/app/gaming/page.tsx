@@ -49,19 +49,19 @@ export default function GamingPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-[#F7F9FC]">
+      <div className="min-h-screen bg-[#0a0f1a]">
 
         {/* Breadcrumb */}
-        <nav className="bg-[#ffffff]/80 backdrop-blur-sm border-b border-[#e2e8f0]">
-          <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-1.5 text-xs text-[#64748b]">
+        <nav className="bg-[#111827]/80 backdrop-blur-sm border-b border-[#1e293b]">
+          <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-1.5 text-xs text-[#94a3b8]">
             <Link href="/" className="hover:text-[#0d9488] transition-colors">Acasa</Link>
             <span>/</span>
-            <span className="text-[#334155] font-medium">Gaming</span>
+            <span className="text-[#cbd5e1] font-medium">Gaming</span>
           </div>
         </nav>
 
         {/* Hero */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-[#ffffff] via-[#ffffff] to-[#F7F9FC] py-16 px-4">
+        <section className="relative overflow-hidden bg-gradient-to-br from-[#111827] via-[#111827] to-[#0a0f1a] py-16 px-4">
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#0d9488]/20 rounded-full blur-3xl" />
             <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-[#0d9488]/20 rounded-full blur-3xl" />
@@ -73,10 +73,10 @@ export default function GamingPage() {
               Oferte verificate zilnic
             </div>
             <div className="text-6xl mb-5 drop-shadow-2xl">🎮</div>
-            <h1 className="text-4xl md:text-5xl font-black text-[#0f172a] mb-4 tracking-tight">
+            <h1 className="text-4xl md:text-5xl font-black text-[#f1f5f9] mb-4 tracking-tight">
               Gaming cu Reducere <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #0f766e, #0d9488)"}}>{an}</span>
             </h1>
-            <p className="text-[#334155] text-lg mb-8 max-w-xl mx-auto leading-relaxed">
+            <p className="text-[#cbd5e1] text-lg mb-8 max-w-xl mx-auto leading-relaxed">
               Laptopuri gaming, placi video, monitoare si periferice — coduri reducere verificate la PCGarage, eMAG, Altex
             </p>
             <div className="flex flex-wrap justify-center gap-2 mb-6">
@@ -91,17 +91,17 @@ export default function GamingPage() {
         <section className="max-w-6xl mx-auto px-4 py-12">
           <div className="text-center mb-8">
             <p className="text-xs font-bold text-[#0d9488] uppercase tracking-widest mb-2">CATEGORII</p>
-            <h2 className="text-2xl font-black text-[#0f172a]">Echipament gaming pe categorii</h2>
+            <h2 className="text-2xl font-black text-[#f1f5f9]">Echipament gaming pe categorii</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {CATEGORII_GAMING.map((a, i) => (
               <div key={a.titlu}
-                className="group bg-[#ffffff] border border-[#e2e8f0] hover:border-[#14b8a6]/40 rounded-xl p-5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#14b8a6]/10">
+                className="group bg-[#111827] border border-[#1e293b] hover:border-[#14b8a6]/40 rounded-xl p-5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#14b8a6]/10">
                 <div className="flex items-center gap-3 mb-3">
                   <div className={`w-10 h-10 rounded-xl flex items-center justify-center text-xl ${CULORI_BADGE[i % CULORI_BADGE.length]}`}>{a.emoji}</div>
-                  <h3 className="font-bold text-[#0f172a] text-sm">{a.titlu}</h3>
+                  <h3 className="font-bold text-[#f1f5f9] text-sm">{a.titlu}</h3>
                 </div>
-                <p className="text-xs text-[#475569] leading-relaxed">{a.desc}</p>
+                <p className="text-xs text-[#cbd5e1] leading-relaxed">{a.desc}</p>
               </div>
             ))}
           </div>
@@ -112,7 +112,7 @@ export default function GamingPage() {
           <div className="flex items-center justify-between mb-6">
             <div>
               <p className="text-xs font-bold text-[#0d9488] uppercase tracking-widest mb-1">MAGAZINE PARTENERE</p>
-              <h2 className="text-xl font-black text-[#0f172a]">Magazine gaming cu reduceri active</h2>
+              <h2 className="text-xl font-black text-[#f1f5f9]">Magazine gaming cu reduceri active</h2>
             </div>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
@@ -122,24 +122,24 @@ export default function GamingPage() {
               const promo = m.promotii[0];
               return (
                 <a key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                  className="group bg-[#ffffff] border border-[#e2e8f0] hover:border-[#14b8a6]/50 rounded-xl p-4 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#14b8a6]/10">
+                  className="group bg-[#111827] border border-[#1e293b] hover:border-[#14b8a6]/50 rounded-xl p-4 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#14b8a6]/10">
                   <div className="flex items-center gap-3 mb-3">
                     {m.logo_url ? (
-                      <div className="w-10 h-10 rounded-xl overflow-hidden bg-white flex items-center justify-center shrink-0">
+                      <div className="w-10 h-10 rounded-xl overflow-hidden bg-[#ffffff] flex items-center justify-center shrink-0">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img src={m.logo_url} alt={`Logo ${nume}`} className="w-8 h-8 object-contain" loading="lazy" />
                       </div>
                     ) : (
-                      <div className={`w-10 h-10 rounded-xl ${culoare} flex items-center justify-center text-[#0f172a] font-black text-lg shrink-0`}>{nume[0]}</div>
+                      <div className={`w-10 h-10 rounded-xl ${culoare} flex items-center justify-center text-[#f1f5f9] font-black text-lg shrink-0`}>{nume[0]}</div>
                     )}
                     <div>
-                      <p className="font-bold text-[#0f172a] text-sm group-hover:text-[#0f766e] transition-colors">{nume}</p>
+                      <p className="font-bold text-[#f1f5f9] text-sm group-hover:text-[#0f766e] transition-colors">{nume}</p>
                       {m.are_promotie && m.cod_cupon && <span className="text-[10px] font-black text-[#0d9488] bg-[#14b8a6]/10 border border-[#14b8a6]/20 px-1.5 py-0.5 rounded-full">COD</span>}
                       {m.are_promotie && !m.cod_cupon && <span className="text-[10px] font-medium text-emerald-400">Oferta activa</span>}
                     </div>
                   </div>
                   {promo ? (
-                    <p className="text-[#475569] text-xs line-clamp-2 leading-relaxed">{promo.nume}</p>
+                    <p className="text-[#cbd5e1] text-xs line-clamp-2 leading-relaxed">{promo.nume}</p>
                   ) : (
                     <p className="text-[#94a3b8] text-xs italic">Verifica ofertele curente</p>
                   )}
@@ -163,17 +163,17 @@ export default function GamingPage() {
         />
 
         {/* Ghid */}
-        <section className="bg-[#ffffff] border-t border-[#e2e8f0] py-12 px-4">
+        <section className="bg-[#111827] border-t border-[#1e293b] py-12 px-4">
           <div className="max-w-3xl mx-auto">
             <p className="text-xs font-bold text-[#0d9488] uppercase tracking-widest mb-3">GHID CUMPARATURI</p>
-            <h2 className="text-2xl font-black text-[#0f172a] mb-7">Cum cumperi echipament gaming mai ieftin</h2>
-            <div className="space-y-6 text-sm text-[#475569] leading-relaxed">
-              <div className="bg-[#e2e8f0] border border-[#cbd5e1] rounded-xl p-5">
-                <h3 className="font-bold text-[#0f172a] mb-2 text-base">PCGarage vs eMAG vs Altex — care e mai ieftin?</h3>
+            <h2 className="text-2xl font-black text-[#f1f5f9] mb-7">Cum cumperi echipament gaming mai ieftin</h2>
+            <div className="space-y-6 text-sm text-[#cbd5e1] leading-relaxed">
+              <div className="bg-[#1e293b] border border-[#334155] rounded-xl p-5">
+                <h3 className="font-bold text-[#f1f5f9] mb-2 text-base">PCGarage vs eMAG vs Altex — care e mai ieftin?</h3>
                 <p>PCGarage are cel mai bun pret la componente PC (placi video, procesoare, RAM) — specializati in gaming. eMAG are gama mai larga si frecvent campanii cu reduceri masive. Altex are avantaj la laptopuri gaming prin promotii periodice. Verifica mereu toate trei inainte de orice achizitie.</p>
               </div>
-              <div className="bg-[#e2e8f0] border border-[#cbd5e1] rounded-xl p-5">
-                <h3 className="font-bold text-[#0f172a] mb-3 text-base">Cel mai bun moment sa cumperi echipament gaming</h3>
+              <div className="bg-[#1e293b] border border-[#334155] rounded-xl p-5">
+                <h3 className="font-bold text-[#f1f5f9] mb-3 text-base">Cel mai bun moment sa cumperi echipament gaming</h3>
                 <ul className="space-y-2">
                   {[
                     ["Black Friday (noiembrie)","reduceri 20-40% la laptopuri gaming si monitoare"],
@@ -183,13 +183,13 @@ export default function GamingPage() {
                   ].map(([bold, text]) => (
                     <li key={bold} className="flex gap-2">
                       <span className="text-[#0d9488] mt-0.5 shrink-0">→</span>
-                      <span><strong className="text-[#0f172a]">{bold}</strong> — {text}</span>
+                      <span><strong className="text-[#f1f5f9]">{bold}</strong> — {text}</span>
                     </li>
                   ))}
                 </ul>
               </div>
-              <div className="bg-[#e2e8f0] border border-[#cbd5e1] rounded-xl p-5">
-                <h3 className="font-bold text-[#0f172a] mb-2 text-base">Laptop gaming recomandat sub 4000 lei</h3>
+              <div className="bg-[#1e293b] border border-[#334155] rounded-xl p-5">
+                <h3 className="font-bold text-[#f1f5f9] mb-2 text-base">Laptop gaming recomandat sub 4000 lei</h3>
                 <p>Acer Nitro 5 si Lenovo IdeaPad Gaming ofera cel mai bun raport performanta-pret sub 4000 lei. Cauta modele cu RTX 3050 sau RTX 4050, 16GB RAM, SSD 512GB. Frecvent gasesti reduceri de 300-500 lei la eMAG sau PCGarage cu coduri AmCupon.</p>
               </div>
             </div>
@@ -198,7 +198,7 @@ export default function GamingPage() {
 
         {/* Related */}
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <p className="text-xs font-bold text-[#64748b] uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
+          <p className="text-xs font-bold text-[#94a3b8] uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/electronice", label: "📱 Electronice" },
@@ -208,14 +208,14 @@ export default function GamingPage() {
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-[#e2e8f0] hover:bg-[#cbd5e1] border border-[#cbd5e1] hover:border-[#14b8a6]/40 text-[#334155] hover:text-[#0f172a] text-sm font-semibold px-4 py-2 rounded-xl transition-all duration-200">
+                className="bg-[#1e293b] hover:bg-[#334155] border border-[#334155] hover:border-[#14b8a6]/40 text-[#cbd5e1] hover:text-[#f1f5f9] text-sm font-semibold px-4 py-2 rounded-xl transition-all duration-200">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-[#e2e8f0] py-6 text-center text-xs text-[#94a3b8] mt-4">
+        <footer className="border-t border-[#1e293b] py-6 text-center text-xs text-[#94a3b8] mt-4">
           &copy; {an} AmCupon.ro &middot;{" "}
           <Link href="/electronice" className="hover:text-[#0d9488] transition-colors">Electronice</Link>{" · "}
           <Link href="/gadgets" className="hover:text-[#0d9488] transition-colors">Gadgets</Link>{" · "}

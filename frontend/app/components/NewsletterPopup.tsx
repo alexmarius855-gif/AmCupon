@@ -100,29 +100,29 @@ export default function NewsletterPopup() {
       className="fixed inset-0 z-[100] flex items-end sm:items-center justify-center p-4 bg-black/40 backdrop-blur-sm"
       onClick={(e) => e.target === e.currentTarget && close()}
     >
-      <div className="bg-[#ffffff] border border-[#e2e8f0] rounded-xl shadow-2xl w-full max-w-md overflow-hidden animate-in slide-in-from-bottom-4 duration-300">
+      <div className="bg-[#111827] border border-[#1e293b] rounded-xl shadow-2xl w-full max-w-md overflow-hidden animate-in slide-in-from-bottom-4 duration-300">
 
         {/* Header */}
-        <div className="relative bg-[#F7F9FC] overflow-hidden px-6 pt-6 pb-8 text-center">
+        <div className="relative bg-[#0a0f1a] overflow-hidden px-6 pt-6 pb-8 text-center">
           <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 80% at 50% 0%, rgba(13,148,136,0.25) 0%, transparent 70%)" }} />
           <button
             onClick={close}
-            className="absolute z-10 top-4 right-4 text-[#64748b] hover:text-[#0f172a] transition-colors text-xl font-bold"
+            className="absolute z-10 top-4 right-4 text-[#94a3b8] hover:text-[#f1f5f9] transition-colors text-xl font-bold"
           >
             &#x2715;
           </button>
           <div className="relative z-10">
             <div className="text-4xl mb-2">&#127873;</div>
-            <h2 className="text-xl font-black mb-1 text-[#0f172a]">Reduceri exclusive pe email</h2>
-            <p className="text-[#475569] text-sm">
+            <h2 className="text-xl font-black mb-1 text-[#f1f5f9]">Reduceri exclusive pe email</h2>
+            <p className="text-[#cbd5e1] text-sm">
               Fii primul care afla codurile zilei &mdash; gratuit, fara spam
             </p>
           </div>
         </div>
 
         {/* Beneficii */}
-        <div className="px-6 py-4 bg-[#ffffff] border-b border-[#e2e8f0]">
-          <div className="flex flex-col gap-1.5 text-sm text-[#334155]">
+        <div className="px-6 py-4 bg-[#111827] border-b border-[#1e293b]">
+          <div className="flex flex-col gap-1.5 text-sm text-[#cbd5e1]">
             {[
               "Coduri exclusive inainte de toti",
               "Alert instant cand apare o oferta buna",
@@ -140,8 +140,8 @@ export default function NewsletterPopup() {
           {status === "success" ? (
             <div className="text-center py-4">
               <div className="text-4xl mb-2">&#127881;</div>
-              <p className="font-black text-[#0f172a] text-lg">Multumim!</p>
-              <p className="text-[#475569] text-sm mt-1">
+              <p className="font-black text-[#f1f5f9] text-lg">Multumim!</p>
+              <p className="text-[#cbd5e1] text-sm mt-1">
                 Vei primi cele mai bune oferte pe email.
               </p>
             </div>
@@ -153,7 +153,7 @@ export default function NewsletterPopup() {
                 onChange={(e) => { setEmail(e.target.value); setStatus("idle"); setErrMsg(""); }}
                 placeholder="adresa@email.ro"
                 required
-                className="w-full bg-[#e2e8f0] border-2 border-[#cbd5e1] text-[#0f172a] rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#14b8a6] transition-colors placeholder:text-[#64748b]"
+                className="w-full bg-[#1e293b] border-2 border-[#334155] text-[#f1f5f9] rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#14b8a6] transition-colors placeholder:text-[#94a3b8]"
               />
 
               {status === "error" && errMsg && (
@@ -168,7 +168,7 @@ export default function NewsletterPopup() {
                 {status === "loading" ? "Se trimite..." : "Vreau reduceri exclusive →"}
               </button>
 
-              <p className="text-xs text-[#64748b] text-center">
+              <p className="text-xs text-[#94a3b8] text-center">
                 Prin abonare esti de acord cu{" "}
                 <Link href="/confidentialitate" className="underline hover:text-[#0d9488]">
                   politica de confidentialitate

@@ -51,7 +51,7 @@ function parseCashback(comision: string): number {
 
 function ScorBar({ value, max = 100, color = "bg-[#0d9488]" }: { value: number; max?: number; color?: string }) {
   return (
-    <div className="h-2 bg-[#e2e8f0] rounded-full overflow-hidden">
+    <div className="h-2 bg-[#1e293b] rounded-full overflow-hidden">
       <div className={`h-full ${color} rounded-full transition-all duration-700`} style={{ width: `${Math.min(100, (value / max) * 100)}%` }} />
     </div>
   );
@@ -67,9 +67,9 @@ function MagazinCard({ m, onRemove, onSwap, position }: { m: Magazin; onRemove: 
   const gradients = ["from-[#0d9488] to-[#0f766e]", "from-[#0d9488] to-[#14b8a6]"];
 
   return (
-    <div className="bg-[#ffffff] rounded-xl border border-[#e2e8f0] overflow-hidden shadow-sm">
+    <div className="bg-[#111827] rounded-xl border border-[#1e293b] overflow-hidden shadow-sm">
       {/* Header gradient */}
-      <div className={`bg-gradient-to-r ${gradients[position % 2]} p-5 text-[#0f172a]`}>
+      <div className={`bg-gradient-to-r ${gradients[position % 2]} p-5 text-[#f1f5f9]`}>
         <div className="flex items-center justify-between mb-4">
           <span className="text-xs font-bold bg-slate-100 px-2.5 py-1 rounded-full">Magazin #{position + 1}</span>
           <div className="flex gap-2">
@@ -89,7 +89,7 @@ function MagazinCard({ m, onRemove, onSwap, position }: { m: Magazin; onRemove: 
         </div>
         {/* Logo + Nume */}
         <div className="flex items-center gap-3">
-          <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center shrink-0 overflow-hidden">
+          <div className="w-14 h-14 bg-[#111827] rounded-xl flex items-center justify-center shrink-0 overflow-hidden">
             {m.logo_url && imgOk
               ? <img src={m.logo_url} alt={numeAfisat(m.magazin)} className="w-10 h-10 object-contain" onError={() => setImgOk(false)} />
               : <span className="text-xl font-black text-[#0d9488]">{numeAfisat(m.magazin)[0]}</span>
@@ -107,8 +107,8 @@ function MagazinCard({ m, onRemove, onSwap, position }: { m: Magazin; onRemove: 
         {/* Oferte */}
         <div>
           <div className="flex justify-between items-center mb-1.5">
-            <span className="text-xs font-semibold text-[#64748b] uppercase tracking-wide">Oferte active</span>
-            <span className={`text-sm font-black ${nrOferte > 0 ? "text-emerald-600" : "text-[#475569]"}`}>{nrOferte}</span>
+            <span className="text-xs font-semibold text-[#94a3b8] uppercase tracking-wide">Oferte active</span>
+            <span className={`text-sm font-black ${nrOferte > 0 ? "text-emerald-600" : "text-[#cbd5e1]"}`}>{nrOferte}</span>
           </div>
           <ScorBar value={nrOferte} max={20} color="bg-emerald-500" />
         </div>
@@ -116,8 +116,8 @@ function MagazinCard({ m, onRemove, onSwap, position }: { m: Magazin; onRemove: 
         {/* Coduri cupon */}
         <div>
           <div className="flex justify-between items-center mb-1.5">
-            <span className="text-xs font-semibold text-[#64748b] uppercase tracking-wide">Coduri cupon</span>
-            <span className={`text-sm font-black ${nrCoduri > 0 ? "text-[#14b8a6]" : "text-[#475569]"}`}>{nrCoduri}</span>
+            <span className="text-xs font-semibold text-[#94a3b8] uppercase tracking-wide">Coduri cupon</span>
+            <span className={`text-sm font-black ${nrCoduri > 0 ? "text-[#14b8a6]" : "text-[#cbd5e1]"}`}>{nrCoduri}</span>
           </div>
           <ScorBar value={nrCoduri} max={10} color="bg-[#14b8a6]" />
         </div>
@@ -125,8 +125,8 @@ function MagazinCard({ m, onRemove, onSwap, position }: { m: Magazin; onRemove: 
         {/* Reducere max */}
         <div>
           <div className="flex justify-between items-center mb-1.5">
-            <span className="text-xs font-semibold text-[#64748b] uppercase tracking-wide">Reducere maximă</span>
-            <span className={`text-sm font-black ${discount > 0 ? "text-[#0f766e]" : "text-[#475569]"}`}>{discount > 0 ? `${discount}%` : "—"}</span>
+            <span className="text-xs font-semibold text-[#94a3b8] uppercase tracking-wide">Reducere maximă</span>
+            <span className={`text-sm font-black ${discount > 0 ? "text-[#0f766e]" : "text-[#cbd5e1]"}`}>{discount > 0 ? `${discount}%` : "—"}</span>
           </div>
           <ScorBar value={discount} max={80} color="bg-[#0d9488]" />
         </div>
@@ -134,8 +134,8 @@ function MagazinCard({ m, onRemove, onSwap, position }: { m: Magazin; onRemove: 
         {/* Cashback */}
         <div>
           <div className="flex justify-between items-center mb-1.5">
-            <span className="text-xs font-semibold text-[#64748b] uppercase tracking-wide">Cashback</span>
-            <span className={`text-sm font-black ${cashback > 0 ? "text-[#14b8a6]" : "text-[#475569]"}`}>{cashback > 0 ? `${cashback}%` : "—"}</span>
+            <span className="text-xs font-semibold text-[#94a3b8] uppercase tracking-wide">Cashback</span>
+            <span className={`text-sm font-black ${cashback > 0 ? "text-[#14b8a6]" : "text-[#cbd5e1]"}`}>{cashback > 0 ? `${cashback}%` : "—"}</span>
           </div>
           <ScorBar value={cashback} max={20} color="bg-[#14b8a6]" />
         </div>
@@ -143,14 +143,14 @@ function MagazinCard({ m, onRemove, onSwap, position }: { m: Magazin; onRemove: 
         {/* Trust Score */}
         <div>
           <div className="flex justify-between items-center mb-1.5">
-            <span className="text-xs font-semibold text-[#64748b] uppercase tracking-wide">Trust Score</span>
-            <span className="text-sm font-black text-[#334155]">{trustScore}%</span>
+            <span className="text-xs font-semibold text-[#94a3b8] uppercase tracking-wide">Trust Score</span>
+            <span className="text-sm font-black text-[#cbd5e1]">{trustScore}%</span>
           </div>
           <ScorBar value={trustScore} max={100} color={trustScore >= 80 ? "bg-emerald-500" : trustScore >= 60 ? "bg-[#14b8a6]" : "bg-red-500"} />
         </div>
 
         {/* Badges */}
-        <div className="flex flex-wrap gap-1.5 pt-2 border-t border-[#e2e8f0]">
+        <div className="flex flex-wrap gap-1.5 pt-2 border-t border-[#1e293b]">
           {m.exclusiv    && <span className="text-[10px] font-bold bg-[#14b8a6]/15 text-[#0f766e] px-2 py-0.5 rounded-full">Exclusiv</span>}
           {m.cod_cupon   && <span className="text-[10px] font-bold bg-[#14b8a6]/15 text-[#0f766e] px-2 py-0.5 rounded-full">Cod cupon</span>}
           {m.are_promotie&& <span className="text-[10px] font-bold bg-emerald-500/15 text-emerald-300 px-2 py-0.5 rounded-full">Ofertă activă</span>}
@@ -160,11 +160,11 @@ function MagazinCard({ m, onRemove, onSwap, position }: { m: Magazin; onRemove: 
 
         {/* Top promotii */}
         {m.promotii.length > 0 && (
-          <div className="pt-2 border-t border-[#e2e8f0]">
-            <p className="text-xs font-bold text-[#64748b] uppercase tracking-wide mb-2">Top oferte</p>
+          <div className="pt-2 border-t border-[#1e293b]">
+            <p className="text-xs font-bold text-[#94a3b8] uppercase tracking-wide mb-2">Top oferte</p>
             <ul className="space-y-1.5">
               {m.promotii.slice(0, 3).map((p, i) => (
-                <li key={i} className="flex items-start gap-2 text-xs text-[#475569]">
+                <li key={i} className="flex items-start gap-2 text-xs text-[#cbd5e1]">
                   <span className="text-[#0d9488] shrink-0 mt-0.5">•</span>
                   <span className="line-clamp-2">{p.nume}</span>
                 </li>
@@ -203,27 +203,27 @@ function SearchMagazin({ onSelect, exclude }: { onSelect: (slug: string) => void
   return (
     <div className="relative">
       <div className="relative">
-        <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#475569]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#cbd5e1]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
         </svg>
         <input type="text" value={query} onChange={e => setQuery(e.target.value)}
           onFocus={() => results.length > 0 && setShow(true)}
           onBlur={() => setTimeout(() => setShow(false), 150)}
           placeholder="Cauta magazin (ex: eMAG, Notino...)"
-          className="w-full bg-[#F7F9FC] border border-[#e2e8f0] focus:border-[#0d9488] focus:ring-2 focus:ring-[#0d9488]/20 rounded-xl pl-9 pr-4 py-3 text-sm focus:outline-none transition-all" />
+          className="w-full bg-[#0a0f1a] border border-[#1e293b] focus:border-[#0d9488] focus:ring-2 focus:ring-[#0d9488]/20 rounded-xl pl-9 pr-4 py-3 text-sm focus:outline-none transition-all" />
       </div>
       {show && results.length > 0 && (
-        <div className="absolute top-full mt-1 left-0 right-0 bg-[#ffffff] border border-[#e2e8f0] rounded-xl shadow-xl py-1 z-50">
+        <div className="absolute top-full mt-1 left-0 right-0 bg-[#111827] border border-[#1e293b] rounded-xl shadow-xl py-1 z-50">
           {results.map(m => (
             <button key={m.magazin} onMouseDown={() => { onSelect(m.magazin); setQuery(""); setShow(false); }}
-              className="w-full flex items-center gap-3 px-3 py-2.5 hover:bg-[#e2e8f0] text-left transition-colors">
+              className="w-full flex items-center gap-3 px-3 py-2.5 hover:bg-[#1e293b] text-left transition-colors">
               {m.logo_url
                 ? <img src={m.logo_url} alt={numeAfisat(m.magazin)} className="w-7 h-7 object-contain" />
                 : <div className="w-7 h-7 bg-[#ccfbf1] rounded-lg flex items-center justify-center text-xs font-black text-[#0d9488]">{numeAfisat(m.magazin)[0]}</div>
               }
               <div className="flex-1 min-w-0">
-                <p className="text-sm font-bold text-[#e2e8f0] truncate">{numeAfisat(m.magazin)}</p>
-                <p className="text-xs text-[#475569] truncate">{m.categorie}</p>
+                <p className="text-sm font-bold text-[#cbd5e1] truncate">{numeAfisat(m.magazin)}</p>
+                <p className="text-xs text-[#cbd5e1] truncate">{m.categorie}</p>
               </div>
               {m.are_promotie && <span className="text-[10px] font-bold bg-emerald-500/15 text-emerald-300 px-1.5 py-0.5 rounded-full shrink-0">Activ</span>}
             </button>
@@ -285,13 +285,13 @@ function ComparatorInner() {
     : null;
 
   return (
-    <div className="min-h-screen bg-[#F7F9FC]">
+    <div className="min-h-screen bg-[#0a0f1a]">
       {/* Hero */}
-      <div className="bg-[#ffffff] text-[#0f172a] py-10 px-4">
+      <div className="bg-[#111827] text-[#f1f5f9] py-10 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-xs font-bold text-[#0d9488] uppercase tracking-widest mb-3">INSTRUMENT NOU</p>
           <h1 className="text-3xl md:text-4xl font-black tracking-tight mb-3">Comparator Magazine</h1>
-          <p className="text-[#475569] text-base max-w-xl mx-auto">
+          <p className="text-[#cbd5e1] text-base max-w-xl mx-auto">
             Compară două magazine online side-by-side — oferte, coduri, cashback și trust score
           </p>
         </div>
@@ -319,13 +319,13 @@ function ComparatorInner() {
 
           {/* Slot gol */}
           {selected.length < 2 && (
-            <div className="bg-[#ffffff] rounded-xl border-2 border-dashed border-[#e2e8f0] p-6 flex flex-col items-center justify-center gap-4 min-h-[200px]">
-              <div className="w-12 h-12 rounded-full bg-[#e2e8f0] flex items-center justify-center">
-                <svg className="w-6 h-6 text-[#475569]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-[#111827] rounded-xl border-2 border-dashed border-[#1e293b] p-6 flex flex-col items-center justify-center gap-4 min-h-[200px]">
+              <div className="w-12 h-12 rounded-full bg-[#1e293b] flex items-center justify-center">
+                <svg className="w-6 h-6 text-[#cbd5e1]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4"/>
                 </svg>
               </div>
-              <p className="text-[#475569] text-sm font-semibold text-center">Adaugă al {selected.length + 1}-lea magazin pentru comparație</p>
+              <p className="text-[#cbd5e1] text-sm font-semibold text-center">Adaugă al {selected.length + 1}-lea magazin pentru comparație</p>
               <SearchMagazin onSelect={addMagazin} exclude={selected} />
             </div>
           )}
@@ -333,12 +333,12 @@ function ComparatorInner() {
 
         {/* Adauga alt magazin */}
         {selected.length === 2 && (
-          <div className="bg-[#ffffff] rounded-xl border border-[#e2e8f0] p-4 mb-6">
-            <p className="text-sm font-bold text-[#334155] mb-3">Schimbă un magazin:</p>
+          <div className="bg-[#111827] rounded-xl border border-[#1e293b] p-4 mb-6">
+            <p className="text-sm font-bold text-[#cbd5e1] mb-3">Schimbă un magazin:</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {magazine.map((m, i) => (
                 <div key={m.magazin}>
-                  <p className="text-xs text-[#475569] mb-1">Înlocuiește Magazin #{i + 1} ({numeAfisat(m.magazin)}):</p>
+                  <p className="text-xs text-[#cbd5e1] mb-1">Înlocuiește Magazin #{i + 1} ({numeAfisat(m.magazin)}):</p>
                   <SearchMagazin onSelect={(slug) => {
                     const next = [...selected];
                     next[i] = slug;
@@ -353,11 +353,11 @@ function ComparatorInner() {
         {/* Sugestii rapide */}
         {selected.length < 2 && all.length > 0 && (
           <div>
-            <p className="text-xs font-bold text-[#475569] uppercase tracking-widest mb-3">Sugestii populare</p>
+            <p className="text-xs font-bold text-[#cbd5e1] uppercase tracking-widest mb-3">Sugestii populare</p>
             <div className="flex flex-wrap gap-2">
               {all.filter(m => m.are_promotie && !selected.includes(m.magazin)).slice(0, 10).map(m => (
                 <button key={m.magazin} onClick={() => addMagazin(m.magazin)}
-                  className="flex items-center gap-1.5 px-3 py-1.5 bg-[#ffffff] border border-[#e2e8f0] hover:border-[#14b8a6]/40 hover:bg-[#e2e8f0] rounded-full text-sm font-semibold text-[#334155] hover:text-[#0f766e] transition-all">
+                  className="flex items-center gap-1.5 px-3 py-1.5 bg-[#111827] border border-[#1e293b] hover:border-[#14b8a6]/40 hover:bg-[#1e293b] rounded-full text-sm font-semibold text-[#cbd5e1] hover:text-[#0f766e] transition-all">
                   {m.logo_url && <img src={m.logo_url} alt="" className="w-4 h-4 object-contain" />}
                   {numeAfisat(m.magazin)}
                 </button>
@@ -372,7 +372,7 @@ function ComparatorInner() {
 
 export default function ComparatorClient() {
   return (
-    <Suspense fallback={<div className="min-h-screen bg-[#F7F9FC] flex items-center justify-center"><div className="animate-pulse text-[#475569]">Se încarcă...</div></div>}>
+    <Suspense fallback={<div className="min-h-screen bg-[#0a0f1a] flex items-center justify-center"><div className="animate-pulse text-[#cbd5e1]">Se încarcă...</div></div>}>
       <ComparatorInner />
     </Suspense>
   );

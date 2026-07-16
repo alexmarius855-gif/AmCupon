@@ -50,16 +50,16 @@ export default function CasaPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-[#F7F9FC]">
-        <nav className="bg-[#F7F9FC] border-b border-[#e2e8f0]">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#64748b]">
+      <div className="min-h-screen bg-[#0a0f1a]">
+        <nav className="bg-[#0a0f1a] border-b border-[#1e293b]">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#94a3b8]">
             <Link href="/" className="hover:text-[#0d9488]">Acasa</Link>
             <span className="mx-1">/</span>
-            <span className="text-[#334155] font-medium">Casa & Gradina cu Reducere</span>
+            <span className="text-[#cbd5e1] font-medium">Casa & Gradina cu Reducere</span>
           </div>
         </nav>
 
-        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#0f766e] text-[#0f172a] py-12 px-4">
+        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#0f766e] text-[#f1f5f9] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">🏡</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Casa & Gradina cu Reducere {an}</h1>
@@ -68,20 +68,20 @@ export default function CasaPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Mobila","Bricolaj","Gradina","Electrocasnice","Decoratiuni","Baie"].map(c => (
-                <span key={c} className="bg-slate-100 text-[#0f172a] text-sm font-semibold px-4 py-1.5 rounded-full border border-slate-200">{c}</span>
+                <span key={c} className="bg-slate-100 text-[#f1f5f9] text-sm font-semibold px-4 py-1.5 rounded-full border border-slate-200">{c}</span>
               ))}
             </div>
           </div>
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[#0f172a] mb-6 text-center">Ce gasesti la magazine casa & gradina</h2>
+          <h2 className="text-xl font-black text-[#f1f5f9] mb-6 text-center">Ce gasesti la magazine casa & gradina</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {AVANTAJE.map(a => (
-              <div key={a.titlu} className="bg-[#ffffff] border border-[#e2e8f0] rounded-xl p-5">
+              <div key={a.titlu} className="bg-[#111827] border border-[#1e293b] rounded-xl p-5">
                 <div className="text-3xl mb-2">{a.icon}</div>
-                <h3 className="font-bold text-[#0f172a] text-sm mb-1">{a.titlu}</h3>
-                <p className="text-xs text-[#475569]">{a.desc}</p>
+                <h3 className="font-bold text-[#f1f5f9] text-sm mb-1">{a.titlu}</h3>
+                <p className="text-xs text-[#cbd5e1]">{a.desc}</p>
               </div>
             ))}
           </div>
@@ -90,7 +90,7 @@ export default function CasaPage() {
         <section className="max-w-6xl mx-auto px-4 pb-10">
           <div className="flex items-center gap-3 mb-5">
             
-            <h2 className="text-xl font-black text-[#0f172a]">Magazine casa cu reduceri active</h2>
+            <h2 className="text-xl font-black text-[#f1f5f9]">Magazine casa cu reduceri active</h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {magazine.map((m, i) => {
@@ -99,28 +99,28 @@ export default function CasaPage() {
               const promo = m.promotii[0];
               return (
                 <a key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                  className="group bg-[#ffffff] border border-[#e2e8f0] hover:border-[#14b8a6]/40 rounded-xl p-4 transition-all hover:shadow-md">
+                  className="group bg-[#111827] border border-[#1e293b] hover:border-[#14b8a6]/40 rounded-xl p-4 transition-all hover:shadow-md">
                   <div className="flex items-center gap-3 mb-3">
                     {m.logo_url ? (
-                      <div className="w-10 h-10 rounded-xl overflow-hidden bg-white border border-[#e2e8f0] shrink-0">
+                      <div className="w-10 h-10 rounded-xl overflow-hidden bg-[#ffffff] border border-[#1e293b] shrink-0">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img src={m.logo_url} alt={`Logo ${nume}`} className="w-full h-full object-contain" loading="lazy" />
                       </div>
                     ) : (
-                      <div className={`w-10 h-10 rounded-xl ${culoare} flex items-center justify-center text-[#0f172a] font-black text-lg shrink-0`}>
+                      <div className={`w-10 h-10 rounded-xl ${culoare} flex items-center justify-center text-[#f1f5f9] font-black text-lg shrink-0`}>
                         {nume[0]}
                       </div>
                     )}
                     <div>
-                      <p className="font-bold text-[#0f172a] text-sm">{nume}</p>
+                      <p className="font-bold text-[#f1f5f9] text-sm">{nume}</p>
                       {m.are_promotie && m.cod_cupon && <span className="text-xs text-[#0d9488] font-bold">COD</span>}
                       {m.are_promotie && !m.cod_cupon && <span className="text-xs text-[#0d9488] font-medium">Oferta</span>}
                     </div>
                   </div>
                   {promo ? (
-                    <p className="text-[#475569] text-xs line-clamp-2">{promo.nume}</p>
+                    <p className="text-[#cbd5e1] text-xs line-clamp-2">{promo.nume}</p>
                   ) : (
-                    <p className="text-[#64748b] text-xs italic">Verifica ofertele curente</p>
+                    <p className="text-[#94a3b8] text-xs italic">Verifica ofertele curente</p>
                   )}
                   <div className="flex justify-end mt-2">
                     <span className="text-xs text-[#0d9488] font-semibold group-hover:text-[#0f766e]">Vezi &rarr;</span>
@@ -139,16 +139,16 @@ export default function CasaPage() {
           limit={12}
         />
 
-        <section className="bg-[#ffffff] border-t border-[#e2e8f0] py-10 px-4">
+        <section className="bg-[#111827] border-t border-[#1e293b] py-10 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-[#0f172a] mb-5">Ghid: Amenajari casa mai ieftine in Romania</h2>
-            <div className="space-y-4 text-sm text-[#475569] leading-relaxed">
+            <h2 className="text-xl font-black text-[#f1f5f9] mb-5">Ghid: Amenajari casa mai ieftine in Romania</h2>
+            <div className="space-y-4 text-sm text-[#cbd5e1] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[#0f172a] mb-1">Dedeman vs IKEA vs Leroy Merlin</h3>
+                <h3 className="font-bold text-[#f1f5f9] mb-1">Dedeman vs IKEA vs Leroy Merlin</h3>
                 <p>Dedeman este liderul la materiale de constructii si bricolaj — preturi competitive, retea nationala extinsa. IKEA exceleaza la mobilier functional, design scandinav si pret accesibil. Leroy Merlin are cea mai larga gama de produse gradina si amenajari.</p>
               </div>
               <div>
-                <h3 className="font-bold text-[#0f172a] mb-1">Cand sa cumperi mobila si electrocasnice</h3>
+                <h3 className="font-bold text-[#f1f5f9] mb-1">Cand sa cumperi mobila si electrocasnice</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
                   <li><strong>Black Friday</strong> — reduceri 30-50% la electrocasnice mari si mobilier</li>
                   <li><strong>Ianuarie</strong> — solduri de iarna, stocuri vechi cu discount mare</li>
@@ -157,14 +157,14 @@ export default function CasaPage() {
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-[#0f172a] mb-1">Sfaturi economii amenajari</h3>
+                <h3 className="font-bold text-[#f1f5f9] mb-1">Sfaturi economii amenajari</h3>
                 <p>Cumparati pachete complete de mobilier pentru discount suplimentar. Urmariti sectiunile &quot;Outlet&quot; si &quot;Produse discontinue&quot; la IKEA si Mobexpert — economisesti 40-70%. Codurile de reducere AmCupon se aplica la comenzile online.</p>
               </div>
             </div>
           </div>
         </section>
 
-        <footer className="border-t border-[#e2e8f0] py-6 text-center text-xs text-[#64748b] mt-4">
+        <footer className="border-t border-[#1e293b] py-6 text-center text-xs text-[#94a3b8] mt-4">
           © {an} AmCupon.ro ·{" "}
           <Link href="/electronice" className="hover:text-[#0d9488]">Electronice</Link>{" · "}
           <Link href="/moto" className="hover:text-[#0d9488]">Auto-Moto</Link>{" · "}

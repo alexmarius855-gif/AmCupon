@@ -31,18 +31,18 @@ export default function NewsletterPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <div className="min-h-screen bg-[#F7F9FC]">
+      <div className="min-h-screen bg-[#0a0f1a]">
 
         <div className="max-w-2xl mx-auto px-4 py-16">
           <div className="text-center mb-12">
             <div className="inline-flex items-center justify-center w-20 h-20 rounded-xl bg-gradient-to-br from-[#0d9488] to-[#14b8a6] text-4xl mb-6 shadow-xl shadow-[#14b8a6]/30">
               🎁
             </div>
-            <h1 className="text-3xl md:text-4xl font-black text-[#0f172a] mb-3 tracking-tight">
+            <h1 className="text-3xl md:text-4xl font-black text-[#f1f5f9] mb-3 tracking-tight">
               Reduceri exclusive pe email
             </h1>
-            <p className="text-[#475569] text-lg">
-              Peste <span className="text-[#0f172a] font-bold">1000 magazine</span> monitorizate zilnic.
+            <p className="text-[#cbd5e1] text-lg">
+              Peste <span className="text-[#f1f5f9] font-bold">1000 magazine</span> monitorizate zilnic.
               Fii primul care afla codurile noi.
             </p>
           </div>
@@ -55,15 +55,15 @@ export default function NewsletterPage() {
               { nr: "Zilnic", label: "Actualizare coduri" },
               { nr: "100%",   label: "Gratuit pentru tine" },
             ].map(s => (
-              <div key={s.label} className="bg-[#ffffff] rounded-xl border border-[#e2e8f0] p-4">
+              <div key={s.label} className="bg-[#111827] rounded-xl border border-[#1e293b] p-4">
                 <p className="text-xl font-black text-[#0d9488]">{s.nr}</p>
-                <p className="text-xs text-[#64748b] mt-0.5">{s.label}</p>
+                <p className="text-xs text-[#94a3b8] mt-0.5">{s.label}</p>
               </div>
             ))}
           </div>
 
           <div className="text-center">
-            <Link href="/" className="text-sm text-[#64748b] hover:text-[#0d9488] transition-colors">
+            <Link href="/" className="text-sm text-[#94a3b8] hover:text-[#0d9488] transition-colors">
               &larr; Inapoi la homepage
             </Link>
           </div>

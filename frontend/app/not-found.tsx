@@ -34,13 +34,13 @@ export default function NotFound() {
   const topStores = loadTopStores();
 
   return (
-    <div className="min-h-screen bg-[#F7F9FC] flex flex-col">
+    <div className="min-h-screen bg-[#0a0f1a] flex flex-col">
       {/* Header */}
-      <header className="bg-[#F7F9FC] border-b border-[#e2e8f0]">
+      <header className="bg-[#0a0f1a] border-b border-[#1e293b]">
         <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-1.5">
             <div className="bg-[#0d9488] text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
-            <span className="font-black text-[#0f172a] text-xl">Cupon</span>
+            <span className="font-black text-[#f1f5f9] text-xl">Cupon</span>
             <span className="text-[#0d9488] font-black text-xl">.ro</span>
           </Link>
           <Link
@@ -64,10 +64,10 @@ export default function NotFound() {
           </div>
         </div>
 
-        <h1 className="relative z-10 text-2xl md:text-3xl font-black text-[#0f172a] mb-3">
+        <h1 className="relative z-10 text-2xl md:text-3xl font-black text-[#f1f5f9] mb-3">
           Cuponul s-a pierdut undeva...
         </h1>
-        <p className="relative z-10 text-[#475569] text-base mb-8 max-w-sm">
+        <p className="relative z-10 text-[#cbd5e1] text-base mb-8 max-w-sm">
           Pagina pe care o cauți nu există sau a fost mutată.
           Încearcă una dintre opțiunile de mai jos.
         </p>
@@ -82,13 +82,13 @@ export default function NotFound() {
           </Link>
           <Link
             href="/toate-magazinele"
-            className="bg-[#ffffff] border border-[#cbd5e1] hover:border-[#14b8a6] text-[#334155] hover:text-[#0d9488] font-bold px-7 py-3 rounded-xl transition-colors"
+            className="bg-[#111827] border border-[#334155] hover:border-[#14b8a6] text-[#cbd5e1] hover:text-[#0d9488] font-bold px-7 py-3 rounded-xl transition-colors"
           >
             🏪 Toate magazinele
           </Link>
           <Link
             href="/categorii"
-            className="bg-[#ffffff] border border-[#cbd5e1] hover:border-[#14b8a6] text-[#334155] hover:text-[#0d9488] font-bold px-7 py-3 rounded-xl transition-colors"
+            className="bg-[#111827] border border-[#334155] hover:border-[#14b8a6] text-[#cbd5e1] hover:text-[#0d9488] font-bold px-7 py-3 rounded-xl transition-colors"
           >
             📂 Categorii
           </Link>
@@ -105,10 +105,10 @@ export default function NotFound() {
             <Link
               key={c.href}
               href={c.href}
-              className="flex flex-col items-center gap-2 p-4 bg-[#ffffff] rounded-xl border border-[#e2e8f0] hover:border-[#14b8a6]/50 hover:shadow-lg hover:shadow-slate-300/60 transition-all"
+              className="flex flex-col items-center gap-2 p-4 bg-[#111827] rounded-xl border border-[#1e293b] hover:border-[#14b8a6]/50 hover:shadow-lg hover:shadow-black/40 transition-all"
             >
               <span className="text-2xl">{c.emoji}</span>
-              <span className="text-xs font-semibold text-[#334155]">{c.label}</span>
+              <span className="text-xs font-semibold text-[#cbd5e1]">{c.label}</span>
             </Link>
           ))}
         </div>
@@ -116,7 +116,7 @@ export default function NotFound() {
         {/* Top stores with promos */}
         {topStores.length > 0 && (
           <div className="relative z-10 w-full max-w-2xl">
-            <p className="text-sm font-semibold text-[#64748b] mb-4 uppercase tracking-wide">
+            <p className="text-sm font-semibold text-[#94a3b8] mb-4 uppercase tracking-wide">
               Magazine cu reduceri active acum
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
@@ -127,12 +127,12 @@ export default function NotFound() {
                   <Link
                     key={store.magazin}
                     href={`/cod-reducere/${store.magazin}`}
-                    className="flex flex-col items-center gap-2 p-4 bg-[#ffffff] rounded-xl border border-[#e2e8f0] hover:border-[#14b8a6]/50 hover:shadow-lg hover:shadow-slate-300/60 transition-all group"
+                    className="flex flex-col items-center gap-2 p-4 bg-[#111827] rounded-xl border border-[#1e293b] hover:border-[#14b8a6]/50 hover:shadow-lg hover:shadow-black/40 transition-all group"
                   >
                     <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#14b8a6] to-[#0f766e] flex items-center justify-center text-white font-black text-lg">
                       {nume.charAt(0)}
                     </div>
-                    <span className="text-xs font-semibold text-[#334155] text-center leading-tight">
+                    <span className="text-xs font-semibold text-[#cbd5e1] text-center leading-tight">
                       {nume}
                     </span>
                     {hasCod && (
@@ -146,7 +146,7 @@ export default function NotFound() {
         )}
       </div>
 
-      <footer className="border-t border-[#e2e8f0] py-5 text-center text-xs text-[#64748b]">
+      <footer className="border-t border-[#1e293b] py-5 text-center text-xs text-[#94a3b8]">
         © {new Date().getFullYear()} AmCupon.ro ·{" "}
         <Link href="/contact" className="hover:text-[#0d9488]">Contact</Link>
       </footer>

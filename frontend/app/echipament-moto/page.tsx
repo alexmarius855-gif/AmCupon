@@ -47,22 +47,22 @@ export default function EchipamentMotoPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <div className="min-h-screen bg-[#F7F9FC]">
+      <div className="min-h-screen bg-[#0a0f1a]">
 
         {/* HERO */}
-        <section className="relative bg-[#F7F9FC] border-b border-[#e2e8f0] overflow-hidden">
+        <section className="relative bg-[#0a0f1a] border-b border-[#1e293b] overflow-hidden">
           <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(20,184,166,0.1) 0%, transparent 65%)" }} />
           <div className="relative max-w-4xl mx-auto px-4 pt-12 pb-10 text-center">
-            <nav className="flex justify-center gap-2 text-xs text-[#64748b] mb-8">
-              <Link href="/" className="hover:text-[#334155]">AmCupon.ro</Link>
+            <nav className="flex justify-center gap-2 text-xs text-[#94a3b8] mb-8">
+              <Link href="/" className="hover:text-[#cbd5e1]">AmCupon.ro</Link>
               <span>/</span>
-              <span className="text-[#334155]">Echipament Moto</span>
+              <span className="text-[#cbd5e1]">Echipament Moto</span>
             </nav>
             <div className="text-5xl mb-4">🏍️</div>
-            <h1 className="text-4xl md:text-5xl font-black text-[#0f172a] mb-4">
+            <h1 className="text-4xl md:text-5xl font-black text-[#f1f5f9] mb-4">
               Echipament <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #0d9488, #0d9488)" }}>Moto</span> {an}
             </h1>
-            <p className="text-[#475569] text-lg max-w-2xl mx-auto">
+            <p className="text-[#cbd5e1] text-lg max-w-2xl mx-auto">
               Casti, geci, manusi si piese pentru motociclete si scutere — partenerii nostri verificati.
             </p>
           </div>
@@ -71,17 +71,17 @@ export default function EchipamentMotoPage() {
         <section className="max-w-4xl mx-auto px-4 py-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {MAGAZINE.map(m => (
-              <div key={m.name} className="bg-[#ffffff] border border-[#e2e8f0] hover:border-[#14b8a6]/30 rounded-xl p-6 flex flex-col gap-4 transition-all">
+              <div key={m.name} className="bg-[#111827] border border-[#1e293b] hover:border-[#14b8a6]/30 rounded-xl p-6 flex flex-col gap-4 transition-all">
                 <div>
                   <div className="flex items-center gap-2 mb-1">
-                    <span className="text-lg font-black text-[#0f172a]">{m.name}</span>
+                    <span className="text-lg font-black text-[#f1f5f9]">{m.name}</span>
                     <span className="text-[10px] font-black text-white px-2 py-0.5 rounded-full bg-[#0d9488]">{m.badge}</span>
                   </div>
-                  <p className="text-[#475569] text-xs">{m.tagline}</p>
+                  <p className="text-[#cbd5e1] text-xs">{m.tagline}</p>
                 </div>
                 <ul className="space-y-1">
                   {m.beneficii.map((b, i) => (
-                    <li key={i} className="flex items-start gap-2 text-xs text-[#334155]">
+                    <li key={i} className="flex items-start gap-2 text-xs text-[#cbd5e1]">
                       <span className="text-[#0d9488] shrink-0">✓</span>{b}
                     </li>
                   ))}
@@ -95,13 +95,13 @@ export default function EchipamentMotoPage() {
           </div>
 
           {/* GHID */}
-          <section className="mt-10 bg-[#ffffff] border border-[#e2e8f0] rounded-xl p-6">
-            <h2 className="text-lg font-black text-[#0f172a] mb-4">Cum alegi echipamentul moto potrivit?</h2>
-            <ul className="space-y-2 text-sm text-[#475569]">
-              <li><strong className="text-[#1e293b]">Casca</strong> — verifica intotdeauna omologarea ECE 22.06, marimea corecta conteaza mai mult decat designul</li>
-              <li><strong className="text-[#1e293b]">Geaca si pantaloni</strong> — cauta protectii CE la coate, umeri, genunchi si spate</li>
-              <li><strong className="text-[#1e293b]">Sezonalitate</strong> — echipamentul de iarna (impermeabil, captuseala termica) costa cel mai putin vara</li>
-              <li><strong className="text-[#1e293b]">Piese de schimb</strong> — compara pretul intre 2-3 magazine, diferentele pot fi semnificative</li>
+          <section className="mt-10 bg-[#111827] border border-[#1e293b] rounded-xl p-6">
+            <h2 className="text-lg font-black text-[#f1f5f9] mb-4">Cum alegi echipamentul moto potrivit?</h2>
+            <ul className="space-y-2 text-sm text-[#cbd5e1]">
+              <li><strong className="text-[#cbd5e1]">Casca</strong> — verifica intotdeauna omologarea ECE 22.06, marimea corecta conteaza mai mult decat designul</li>
+              <li><strong className="text-[#cbd5e1]">Geaca si pantaloni</strong> — cauta protectii CE la coate, umeri, genunchi si spate</li>
+              <li><strong className="text-[#cbd5e1]">Sezonalitate</strong> — echipamentul de iarna (impermeabil, captuseala termica) costa cel mai putin vara</li>
+              <li><strong className="text-[#cbd5e1]">Piese de schimb</strong> — compara pretul intre 2-3 magazine, diferentele pot fi semnificative</li>
             </ul>
           </section>
 
@@ -112,7 +112,7 @@ export default function EchipamentMotoPage() {
               { href: "/oferte-azi", label: "🔥 Oferte de azi" },
             ].map(l => (
               <Link key={l.href} href={l.href}
-                className="bg-[#ffffff] hover:bg-[#e2e8f0] text-[#334155] hover:text-[#0f172a] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#e2e8f0]">
+                className="bg-[#111827] hover:bg-[#1e293b] text-[#cbd5e1] hover:text-[#f1f5f9] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#1e293b]">
                 {l.label}
               </Link>
             ))}

@@ -216,28 +216,28 @@ const CATEGORII = [
 
 export default function RecomandariPage() {
   return (
-    <div className="min-h-screen bg-[#F7F9FC]">
+    <div className="min-h-screen bg-[#0a0f1a]">
       {/* Hero */}
-      <section className="relative bg-[#F7F9FC] border-b border-[#e2e8f0] overflow-hidden">
+      <section className="relative bg-[#0a0f1a] border-b border-[#1e293b] overflow-hidden">
         <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(13,148,136,0.08) 0%, transparent 65%)" }} />
         <div className="relative max-w-5xl mx-auto px-4 pt-12 pb-12 text-center">
-          <nav className="flex justify-center gap-2 text-xs text-[#64748b] mb-8">
-            <Link href="/" className="hover:text-[#334155]">AmCupon.ro</Link>
+          <nav className="flex justify-center gap-2 text-xs text-[#94a3b8] mb-8">
+            <Link href="/" className="hover:text-[#cbd5e1]">AmCupon.ro</Link>
             <span>/</span>
-            <span className="text-[#334155]">Recomandari Premium</span>
+            <span className="text-[#cbd5e1]">Recomandari Premium</span>
           </nav>
           <div className="text-5xl mb-5">⭐</div>
-          <h1 className="text-4xl md:text-5xl font-black text-[#0f172a] mb-4">
+          <h1 className="text-4xl md:text-5xl font-black text-[#f1f5f9] mb-4">
             Servicii <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #14b8a6, #0d9488)" }}>Recomandate</span>
           </h1>
-          <p className="text-[#475569] text-lg max-w-2xl mx-auto mb-8">
+          <p className="text-[#cbd5e1] text-lg max-w-2xl mx-auto mb-8">
             VPN, hosting, SEO tools, freelancing si travel — servicii testate si recomandate de echipa AmCupon.ro. Alege ce ti se potriveste.
           </p>
           {/* Jump links */}
           <div className="flex flex-wrap justify-center gap-2">
             {CATEGORII.map((c, i) => (
               <a key={i} href={`#cat-${i}`}
-                className="text-xs bg-[#e2e8f0] hover:bg-[#cbd5e1] text-[#334155] px-3 py-1.5 rounded-full border border-[#cbd5e1] transition-colors">
+                className="text-xs bg-[#1e293b] hover:bg-[#334155] text-[#cbd5e1] px-3 py-1.5 rounded-full border border-[#334155] transition-colors">
                 {c.emoji} {c.titlu.split(" — ")[0]}
               </a>
             ))}
@@ -247,14 +247,14 @@ export default function RecomandariPage() {
 
       {/* Categorii */}
       {CATEGORII.map((cat, ci) => (
-        <section key={ci} id={`cat-${ci}`} className="max-w-5xl mx-auto px-4 py-10 border-b border-[#e2e8f0]/50 last:border-b-0">
+        <section key={ci} id={`cat-${ci}`} className="max-w-5xl mx-auto px-4 py-10 border-b border-[#1e293b]/50 last:border-b-0">
           <div className="flex items-start justify-between mb-6">
             <div>
-              <h2 className="text-2xl font-black text-[#0f172a] flex items-center gap-3">
+              <h2 className="text-2xl font-black text-[#f1f5f9] flex items-center gap-3">
                 <span className="text-3xl">{cat.emoji}</span>
                 {cat.titlu}
               </h2>
-              <p className="text-[#475569] mt-1 text-sm max-w-2xl">{cat.desc}</p>
+              <p className="text-[#cbd5e1] mt-1 text-sm max-w-2xl">{cat.desc}</p>
             </div>
             {cat.slug && (
               <Link href={cat.slug}
@@ -266,14 +266,14 @@ export default function RecomandariPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {cat.servicii.map((s, si) => (
-              <div key={si} className="bg-[#ffffff] border border-[#e2e8f0] hover:border-[#14b8a6]/30 rounded-xl p-6 flex flex-col gap-4 transition-all group">
+              <div key={si} className="bg-[#111827] border border-[#1e293b] hover:border-[#14b8a6]/30 rounded-xl p-6 flex flex-col gap-4 transition-all group">
                 <div className="flex items-start justify-between gap-3">
                   <div>
                     <div className="flex items-center gap-2 mb-1">
-                      <span className="text-xl font-black text-[#0f172a]">{s.name}</span>
-                      <span className={`text-[10px] font-black text-[#0f172a] px-2 py-0.5 rounded-full ${s.badgeColor}`}>{s.badge}</span>
+                      <span className="text-xl font-black text-[#f1f5f9]">{s.name}</span>
+                      <span className={`text-[10px] font-black text-[#f1f5f9] px-2 py-0.5 rounded-full ${s.badgeColor}`}>{s.badge}</span>
                     </div>
-                    <p className="text-[#475569] text-sm">{s.tagline}</p>
+                    <p className="text-[#cbd5e1] text-sm">{s.tagline}</p>
                   </div>
                   <div className="text-right shrink-0">
                     <div className="text-[#0d9488] font-black text-sm">{s.pret}</div>
@@ -282,7 +282,7 @@ export default function RecomandariPage() {
 
                 <ul className="space-y-1.5">
                   {s.beneficii.map((b, bi) => (
-                    <li key={bi} className="flex items-start gap-2 text-sm text-[#334155]">
+                    <li key={bi} className="flex items-start gap-2 text-sm text-[#cbd5e1]">
                       <span className="text-emerald-400 shrink-0 mt-0.5">✓</span>
                       {b}
                     </li>
@@ -304,8 +304,8 @@ export default function RecomandariPage() {
 
       {/* Disclaimer */}
       <section className="max-w-5xl mx-auto px-4 pb-12 pt-4">
-        <div className="bg-[#ffffff]/50 border border-[#e2e8f0] rounded-xl p-5 text-center">
-          <p className="text-[#64748b] text-xs">
+        <div className="bg-[#111827]/50 border border-[#1e293b] rounded-xl p-5 text-center">
+          <p className="text-[#94a3b8] text-xs">
             Unele linkuri de pe aceasta pagina sunt linkuri de afiliat — daca faci o achizitie, AmCupon.ro primeste un comision, fara niciun cost suplimentar pentru tine.
             Recomandam doar servicii pe care le-am testat sau verificat independent. Comisioanele arata afiseaza nu sunt garantate — variaza in functie de programul fiecarui partener.
           </p>

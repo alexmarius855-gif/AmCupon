@@ -164,16 +164,16 @@ export default async function NisaPage(
   };
 
   return (
-    <div className="min-h-screen bg-[#F7F9FC]">
+    <div className="min-h-screen bg-[#0a0f1a]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* Hero */}
-      <div className="bg-gradient-to-br from-[#0f766e] to-[#0f766e] text-[#0f172a] py-12 px-4">
+      <div className="bg-gradient-to-br from-[#0f766e] to-[#0f766e] text-[#f1f5f9] py-12 px-4">
         <div className="max-w-5xl mx-auto text-center">
           <div className="text-5xl mb-3">{nisa.emoji}</div>
           <h1 className="text-3xl font-black mb-2">{nisa.titlu}</h1>
-          <p className="text-[#334155] text-sm max-w-xl mx-auto">{nisa.descriere}</p>
-          <div className="mt-4 flex flex-wrap justify-center gap-3 text-xs text-[#475569]">
+          <p className="text-[#cbd5e1] text-sm max-w-xl mx-auto">{nisa.descriere}</p>
+          <div className="mt-4 flex flex-wrap justify-center gap-3 text-xs text-[#cbd5e1]">
             <span>&#10003; {produseFiltrate.length} produse</span>
             <span>&#10003; {magazineFiltrate.length} magazine</span>
             <span>&#10003; Actualizat zilnic</span>
@@ -193,14 +193,14 @@ export default async function NisaPage(
               {magazineFiltrate.map((m: Magazin) => (
                 <a key={m.magazin} href={m.url_afiliat || m.url}
                   target="_blank" rel="sponsored noopener noreferrer"
-                  className="bg-[#ffffff] border border-[#e2e8f0] hover:border-[#0f766e] rounded-xl p-3 flex items-center gap-3 hover:shadow-md transition-all">
+                  className="bg-[#111827] border border-[#1e293b] hover:border-[#0f766e] rounded-xl p-3 flex items-center gap-3 hover:shadow-md transition-all">
                   {m.logo && (
                     // eslint-disable-next-line @next/next/no-img-element
                     <img src={m.logo} alt={m.magazin_display || m.magazin}
                       className="w-8 h-8 object-contain" loading="lazy" />
                   )}
                   <div className="min-w-0">
-                    <p className="text-xs font-bold text-[#e2e8f0] truncate">
+                    <p className="text-xs font-bold text-[#cbd5e1] truncate">
                       {m.magazin_display || m.magazin}
                     </p>
                     {m.promotie && (
@@ -222,7 +222,7 @@ export default async function NisaPage(
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
               {produseFiltrate.map((p: Produs, i: number) => (
                 <a key={i} href={p.url} target="_blank" rel="sponsored noopener noreferrer"
-                  className="group bg-[#ffffff] border border-[#e2e8f0] hover:border-[#0f766e] rounded-xl overflow-hidden hover:shadow-lg transition-all flex flex-col">
+                  className="group bg-[#111827] border border-[#1e293b] hover:border-[#0f766e] rounded-xl overflow-hidden hover:shadow-lg transition-all flex flex-col">
                   <div className="aspect-square bg-slate-50 flex items-center justify-center overflow-hidden relative">
                     {p.image ? (
                       // eslint-disable-next-line @next/next/no-img-element
@@ -238,8 +238,8 @@ export default async function NisaPage(
                     )}
                   </div>
                   <div className="p-3 flex flex-col flex-1">
-                    <p className="text-[10px] text-[#475569] truncate">{p.brand || p.category}</p>
-                    <p className="text-xs font-semibold text-[#e2e8f0] line-clamp-2 flex-1 leading-snug">{p.title}</p>
+                    <p className="text-[10px] text-[#cbd5e1] truncate">{p.brand || p.category}</p>
+                    <p className="text-xs font-semibold text-[#cbd5e1] line-clamp-2 flex-1 leading-snug">{p.title}</p>
                     <p className="font-black text-[#0f766e] text-sm mt-2">
                       {p.price > 0 ? `${p.price.toFixed(2)} lei` : "Vezi pretul"}
                     </p>
@@ -249,10 +249,10 @@ export default async function NisaPage(
             </div>
           </section>
         ) : (
-          <div className="text-center py-16 bg-[#ffffff] rounded-xl border border-[#e2e8f0]">
+          <div className="text-center py-16 bg-[#111827] rounded-xl border border-[#1e293b]">
             <p className="text-4xl mb-3">{nisa.emoji}</p>
             <p className="font-bold text-[#cbd5e1] mb-2">Produsele se actualizeaza zilnic</p>
-            <p className="text-[#475569] text-sm">Revino maine pentru oferte noi in aceasta categorie.</p>
+            <p className="text-[#cbd5e1] text-sm">Revino maine pentru oferte noi in aceasta categorie.</p>
             <Link href="/produse" className="mt-4 inline-block text-[#0d9488] font-bold hover:text-[#0f766e]">
               Vezi toate produsele &rarr;
             </Link>
