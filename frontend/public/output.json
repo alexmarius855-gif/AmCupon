@@ -879,6 +879,15 @@
         "zile_ramase": 1629,
         "expira": "2030-12-31",
         "sursa": "csv_import"
+      },
+      {
+        "nume": "Flash Sale",
+        "descriere": "Profită de reduceri fulger în Flash Sale-ul Otter, de luni pana vineri, intre 10-13! Încălțăminte și accesorii la prețuri masiv reduse.",
+        "cod_cupon": "",
+        "landing_page": "https://www.otter.ro/flashsale",
+        "zile_ramase": 1628,
+        "expira": "2030-12-31",
+        "sursa": "csv_import"
       }
     ],
     "folosit_de": 274,
@@ -1160,6 +1169,15 @@
         "zile_ramase": 226,
         "expira": "2027-02-28",
         "sursa": "csv_import"
+      },
+      {
+        "nume": "Oferta 1+1",
+        "descriere": "Oferta 1+1",
+        "cod_cupon": "",
+        "landing_page": "https://www.fara-daunatori.ro/search/oferta/?q=oferta",
+        "zile_ramase": 226,
+        "expira": "2027-02-28",
+        "sursa": "csv_import"
       }
     ],
     "folosit_de": 184,
@@ -1297,6 +1315,15 @@
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.sneakerit.ro%2Fsale",
         "zile_ramase": 965
+      },
+      {
+        "nume": "Sale",
+        "descriere": "Toate produsele reduse de pe sneakerit.ro",
+        "cod_cupon": "",
+        "landing_page": "https://www.sneakerit.ro/sale",
+        "zile_ramase": 965,
+        "expira": "2029-03-08",
+        "sursa": "csv_import"
       },
       {
         "nume": "Sale",
@@ -25273,6 +25300,15 @@
         "cod_cupon": "",
         "landing_page": "https://www.interlink.ro/",
         "zile_ramase": 75,
+        "expira": "2026-09-29",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "Interlink",
+        "descriere": "Promovează produsele Interlink și câștigă comisioane din fiecare vânzare validă. Interlink oferă o gamă variată de laptopuri, calculatoare, monitoare, imprimante și alte echipamente IT refurbished și second-hand, de la branduri de renume, la prețuri competitive. Profită de campanii promoționale, materiale de marketing dedicate și un portofoliu atractiv pentru a genera conversii.",
+        "cod_cupon": "",
+        "landing_page": "https://www.interlink.ro/",
+        "zile_ramase": 74,
         "expira": "2026-09-29",
         "sursa": "csv_import"
       }

@@ -2,6 +2,8 @@ import Link from "next/link";
 import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
+import MagazinCard from "../components/MagazinCard";
+import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
@@ -32,9 +34,6 @@ const SUBCATEGORII = [
   { emoji: "🧗", label: "Hiking & Alpinism", href: "/categorii/sport" },
 ];
 
-const NUME_OVERRIDE: Record<string, string> = { "trampolinepartsandsupply.com": "Trampoline Parts & Supply" };
-function numeAfisat(s: string) { return NUME_OVERRIDE[s] ?? s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" "); }
-const CULORI = ["bg-[#0d9488]","bg-[#0d9488]","bg-[#0d9488]","bg-[#0d9488]","bg-[#0d9488]","bg-[#0d9488]"];
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Reduceri Sport & Fitness 2026","url":"https://amcupon.ro/sport" };
 
 export default function SportPage() {
@@ -97,44 +96,14 @@ export default function SportPage() {
             </div>
           ) : (
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-              {magazine.map((m, i) => {
-                const nume = numeAfisat(m.magazin);
-                const culoare = CULORI[i % CULORI.length];
-                const promo = m.promotii[0];
-                return (
-                  <a key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                    className="group bg-[#111827] border border-[#1e293b] hover:border-[#0f766e] rounded-xl p-4 transition-all hover:shadow-md">
-                    <div className="flex items-center gap-3 mb-3">
-                      {m.logo_url ? (
-                        <div className="w-10 h-10 rounded-xl overflow-hidden bg-[#ffffff] border border-[#1e293b] shrink-0">
-                          {/* eslint-disable-next-line @next/next/no-img-element */}
-                          <img src={m.logo_url} alt={`Logo ${nume}`} className="w-full h-full object-contain" loading="lazy" />
-                        </div>
-                      ) : (
-                        <div className={`w-10 h-10 rounded-xl ${culoare} flex items-center justify-center text-[#f1f5f9] font-black text-lg shrink-0`}>
-                          {nume[0]}
-                        </div>
-                      )}
-                      <div>
-                        <p className="font-bold text-[#f1f5f9] text-sm">{nume}</p>
-                        {m.are_promotie && m.cod_cupon && <span className="text-xs text-[#0d9488] font-bold">COD</span>}
-                        {m.are_promotie && !m.cod_cupon && <span className="text-xs text-[#0d9488] font-medium">Ofertă</span>}
-                      </div>
-                    </div>
-                    {promo ? (
-                      <p className="text-[#cbd5e1] text-xs line-clamp-2">{promo.nume}</p>
-                    ) : (
-                      <p className="text-[#94a3b8] text-xs italic">Verifică ofertele curente</p>
-                    )}
-                    <div className="flex justify-end mt-2">
-                      <span className="text-xs text-[#0d9488] font-semibold group-hover:text-[#0f766e]">Vezi →</span>
-                    </div>
-                  </a>
-                );
-              })}
+              {magazine.map((m) => (
+              <MagazinCard key={m.magazin} m={m} />
+            ))}
             </div>
           )}
         </section>
+        <NewsletterCTA />
+
 
         <NisaProduse
           merchantSlugs={["decathlon.ro","sportisimo.ro","sport-vision.ro","intersport.ro","hervis.ro","gigasport.ro"]}

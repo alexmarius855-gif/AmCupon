@@ -2,46 +2,15 @@
 
 import Link from "next/link";
 
-import { useState } from "react";
+import MagazinCard, { type CardMagazin } from "../../components/MagazinCard";
+import NewsletterCTA from "../../components/NewsletterCTA";
 
-interface Promotie {
-  nume: string;
-  descriere: string;
-  cod_cupon: string;
-  landing_page: string;
-  zile_ramase: number;
-}
-
-interface Magazin {
-  magazin: string;
-  url: string;
-  url_afiliat: string;
-  logo_url?: string;
-  categorie: string;
+interface Magazin extends CardMagazin {
   trend: number;
-  are_promotie: boolean;
-  cod_cupon: boolean;
   zile_ramase: number;
-  promotii: Promotie[];
   folosit_de: number;
   procent_succes: number;
-  exclusiv: boolean;
   rank?: number;
-}
-
-function numeAfisat(magazin: string): string {
-  return magazin.split(".")[0].replace(/-/g, " ")
-    .split(" ").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
-}
-
-function maskCod(cod: string): string {
-  if (!cod || cod.length <= 4) return cod;
-  return cod.slice(0, 4) + "*".repeat(Math.max(0, Math.min(cod.length - 4, 6)));
-}
-
-function extractDiscount(text: string): string | null {
-  const m = text?.match(/(\d+)\s*%/);
-  return m ? m[1] + "%" : null;
 }
 
 // Descrieri SEO per categorie
@@ -61,120 +30,6 @@ const DESC_CATEG: Record<string, string> = {
   "pet-supplies": "Coduri reducere pentru hrana și accesorii animale de companie.",
 };
 
-function MagazinCard({ m, revealed, copiat, onCopiere }: {
-  m: Magazin;
-  revealed: boolean;
-  copiat: boolean;
-  onCopiere: (id: string, cod: string) => void;
-}) {
-  const promo = m.promotii[0];
-  const numeMagazin = numeAfisat(m.magazin);
-  const initiala = numeMagazin.charAt(0).toUpperCase();
-
-  // Cascada logo: logo_url din date -> favicon Google al domeniului (slug=domeniu,
-  // arata marca reala; nu da niciodata 404) -> tile cu litera. Repara logo-urile
-  // moarte (clearbit inchis, thumburi wiki trunchiate, SVG cu hotlink blocat).
-  const domeniu = (m.magazin || "").match(/[a-z0-9-]+\.[a-z]{2,}(?:\.[a-z]{2,})?/i)?.[0] || null;
-  const logoSurse = [m.logo_url, domeniu ? `https://www.google.com/s2/favicons?domain=${domeniu}&sz=128` : null].filter(Boolean) as string[];
-  const [logoIdx, setLogoIdx] = useState(0);
-  const logoSrc = logoSurse[logoIdx];
-
-  // Filtrăm linkuri invalide: placeholder NA6 de la Profitshare (cont neaprobat)
-  const isValidAffiliateUrl = (url: string) => {
-    if (!url) return false;
-    if (url.includes("/NA6?") || url.includes("/NA6&")) return false;
-    return true;
-  };
-  const validAffiliateLink = isValidAffiliateUrl(m.url_afiliat) ? m.url_afiliat : m.url;
-  const link = promo?.landing_page || validAffiliateLink;
-  const affiliateLink = validAffiliateLink;
-  const discount = promo ? (extractDiscount(promo.nume) || extractDiscount(promo.descriere || "")) : null;
-
-  const culoare = "bg-gradient-to-br from-[#14b8a6] to-[#0f766e]";
-
-  return (
-    <div className="bg-[#111827] rounded-xl border border-[#1e293b] hover:border-[#14b8a6]/40 shadow-sm hover:shadow-lg hover:shadow-black/40 transition-all duration-200 flex flex-col overflow-hidden">
-      <a href={`/cod-reducere/${m.magazin}`} className="flex flex-col items-center pt-5 pb-3 px-4 group relative">
-        {m.exclusiv && (
-          <span className="absolute top-3 right-3 text-xs font-bold bg-[#0d9488] text-white px-2 py-0.5 rounded-full">Exclusiv</span>
-        )}
-        <div className="w-20 h-20 rounded-xl overflow-hidden flex items-center justify-center mb-3 bg-[#ffffff] border border-[#1e293b] p-1 group-hover:border-[#14b8a6]/50 transition-colors">
-          {logoSrc ? (
-            <img src={logoSrc} alt={numeMagazin} className="w-full h-full object-contain" loading="lazy" decoding="async" onError={() => setLogoIdx((i) => i + 1)} />
-          ) : (
-            <div className={`w-full h-full rounded-xl ${culoare} flex items-center justify-center`}>
-              <span className="text-white font-black text-3xl">{initiala}</span>
-            </div>
-          )}
-        </div>
-        <h3 className="font-black text-[#f1f5f9] text-base text-center group-hover:text-[#0d9488] transition-colors">{numeMagazin}</h3>
-      </a>
-
-      <div className="px-4 pb-2 text-center min-h-[20px]">
-        {promo && (
-          <span className="text-xs font-bold text-[#0d9488] uppercase tracking-wide">
-            {promo.cod_cupon ? "Cod Reducere" : "Ofertă Specială"}
-            {discount && <span className="ml-1 text-[#0d9488]">{discount}</span>}
-          </span>
-        )}
-      </div>
-
-      <div className="px-4 pb-3 flex-1">
-        {promo ? (
-          <p className="text-sm text-[#cbd5e1] text-center line-clamp-2">{promo.nume}</p>
-        ) : (
-          <p className="text-sm text-[#94a3b8] text-center italic">Verifică ofertele curente</p>
-        )}
-      </div>
-
-      <div className="px-4 pb-2 flex flex-wrap justify-center gap-2">
-        {promo && promo.zile_ramase <= 3 && (
-          <span className="text-xs font-semibold text-red-400">⏰ Expiră în {promo.zile_ramase === 0 ? "azi" : `${promo.zile_ramase}z`}</span>
-        )}
-        {m.are_promotie && <span className="text-xs text-emerald-400 font-semibold">✓ verificat azi</span>}
-      </div>
-
-      <div className="px-4 pb-5">
-        {promo?.cod_cupon ? (
-          revealed ? (
-            <div className="space-y-2">
-              <div className="border-2 border-dashed border-[#14b8a6]/50 rounded-xl py-2 text-center bg-[#1e293b]">
-                <span className="font-mono font-black text-[#0d9488] tracking-widest text-sm">{promo.cod_cupon}</span>
-                {copiat && <p className="text-xs text-emerald-400 mt-0.5">✓ Copiat!</p>}
-              </div>
-              <a href={link} target="_blank" rel="sponsored noopener noreferrer"
-                className="flex items-center justify-center w-full bg-gradient-to-r from-[#14b8a6] to-[#0d9488] hover:from-[#0d9488] hover:to-[#14b8a6] text-[#ffffff] font-bold py-2.5 rounded-xl text-sm transition-all">
-                Mergi la {numeMagazin} →
-              </a>
-            </div>
-          ) : (
-            <div className="space-y-2">
-              <div className="border-2 border-dashed border-[#334155] rounded-xl py-2 text-center">
-                <span className="font-mono text-[#94a3b8] text-sm">{maskCod(promo.cod_cupon)}</span>
-              </div>
-              <button onClick={() => onCopiere(m.magazin, promo.cod_cupon)}
-                className="w-full bg-gradient-to-r from-[#14b8a6] to-[#0d9488] hover:from-[#0d9488] hover:to-[#14b8a6] text-[#ffffff] font-bold py-2.5 rounded-xl text-sm transition-all">
-                Copiază codul
-              </button>
-            </div>
-          )
-        ) : promo ? (
-          <a href={link} target="_blank" rel="sponsored noopener noreferrer"
-            className="flex items-center justify-center w-full bg-gradient-to-r from-[#14b8a6] to-[#0d9488] hover:from-[#0d9488] hover:to-[#14b8a6] text-[#ffffff] font-bold py-2.5 rounded-xl text-sm transition-all">
-            Vezi oferta →
-          </a>
-        ) : (
-          /* Fara promotii — link direct afiliat */
-          <a href={affiliateLink} target="_blank" rel="sponsored noopener noreferrer"
-            className="flex items-center justify-center w-full bg-[#1e293b] hover:bg-[#334155] border border-[#334155] text-[#f1f5f9] font-bold py-2.5 rounded-xl text-sm transition-colors">
-            Mergi la {numeMagazin} →
-          </a>
-        )}
-      </div>
-    </div>
-  );
-}
-
 interface Produs {
   title: string; url: string; image: string; price: number;
   old_price?: number | null; discount_pct: number; merchant?: string; merchant_slug?: string;
@@ -186,16 +41,6 @@ export default function CategorieClient({ magazine, numeCategorie, slug, produse
   slug: string;
   produse?: Produs[];
 }) {
-  const [coduriReveal, setCoduriReveal] = useState<Set<string>>(new Set());
-  const [copiat, setCopiat] = useState<string | null>(null);
-
-  function copiazaCod(id: string, cod: string) {
-    setCoduriReveal((prev) => new Set(prev).add(id));
-    navigator.clipboard.writeText(cod).catch(() => {});
-    setCopiat(id);
-    setTimeout(() => setCopiat(null), 3000);
-  }
-
   const cuPromotii = magazine.filter((m) => m.are_promotie);
   const faraPromotii = magazine.filter((m) => !m.are_promotie);
   const an = new Date().getFullYear();
@@ -250,7 +95,7 @@ export default function CategorieClient({ magazine, numeCategorie, slug, produse
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
               {cuPromotii.map((m) => (
-                <MagazinCard key={m.magazin} m={m} revealed={coduriReveal.has(m.magazin)} copiat={copiat === m.magazin} onCopiere={copiazaCod} />
+                <MagazinCard key={m.magazin} m={m} />
               ))}
             </div>
           </section>
@@ -307,12 +152,16 @@ export default function CategorieClient({ magazine, numeCategorie, slug, produse
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
               {faraPromotii.map((m) => (
-                <MagazinCard key={m.magazin} m={m} revealed={coduriReveal.has(m.magazin)} copiat={copiat === m.magazin} onCopiere={copiazaCod} />
+                <MagazinCard key={m.magazin} m={m} />
               ))}
             </div>
           </section>
         )}
+      </div>
 
+      <NewsletterCTA titlu={`Nu rata reducerile ${numeCategorie}`} />
+
+      <div className="max-w-7xl mx-auto px-4 pb-8">
         {/* SEO CONTENT */}
         <section className="mt-14 bg-[#111827] rounded-xl border border-[#1e293b] p-6 md:p-8">
           <h2 className="text-lg font-black text-[#f1f5f9] mb-4">

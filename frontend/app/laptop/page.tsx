@@ -2,6 +2,8 @@ import Link from "next/link";
 import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
+import MagazinCard from "../components/MagazinCard";
+import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
@@ -38,8 +40,6 @@ const BRANDURI = [
   { brand: "Apple", desc: "MacBook Air M3 (eficienta), MacBook Pro (profesional)" },
 ];
 
-function numeAfisat(s: string) { return s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" "); }
-const CULORI_BADGE = ["bg-[#0d9488]","bg-[#0d9488]","bg-[#0d9488]","bg-[#0d9488]","bg-[#14b8a6]","bg-[#14b8a6]","bg-[#0d9488]"];
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Laptop Ieftin Romania 2026","url":"https://amcupon.ro/laptop","description":"Oferte laptopuri Romania 2026 — gaming, business, student la preturi reduse" };
 
 export default function LaptopPage() {
@@ -120,43 +120,13 @@ export default function LaptopPage() {
             </div>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-            {magazine.map((m, i) => {
-              const nume = numeAfisat(m.magazin);
-              const culoare = CULORI_BADGE[i % CULORI_BADGE.length];
-              const promo = m.promotii[0];
-              return (
-                <a key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                  className="group bg-[#111827] border border-[#1e293b] hover:border-[#14b8a6]/50 rounded-xl p-4 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#14b8a6]/10">
-                  <div className="flex items-center gap-3 mb-3">
-                    {m.logo_url ? (
-                      <div className="w-10 h-10 rounded-xl overflow-hidden bg-[#ffffff] flex items-center justify-center shrink-0">
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img src={m.logo_url} alt={`Logo ${nume}`} className="w-8 h-8 object-contain" loading="lazy" />
-                      </div>
-                    ) : (
-                      <div className={`w-10 h-10 rounded-xl ${culoare} flex items-center justify-center text-[#f1f5f9] font-black text-lg shrink-0`}>{nume[0]}</div>
-                    )}
-                    <div>
-                      <p className="font-bold text-[#f1f5f9] text-sm group-hover:text-[#0f766e] transition-colors">{nume}</p>
-                      {m.are_promotie && m.cod_cupon && <span className="text-[10px] font-black text-[#0d9488] bg-[#14b8a6]/10 border border-[#14b8a6]/20 px-1.5 py-0.5 rounded-full">COD</span>}
-                      {m.are_promotie && !m.cod_cupon && <span className="text-[10px] font-medium text-emerald-400">Oferta activa</span>}
-                    </div>
-                  </div>
-                  {promo ? (
-                    <p className="text-[#cbd5e1] text-xs line-clamp-2 leading-relaxed">{promo.nume}</p>
-                  ) : (
-                    <p className="text-[#94a3b8] text-xs italic">Verifica ofertele curente</p>
-                  )}
-                  <div className="flex justify-end mt-3">
-                    <span className="text-xs text-[#0f766e] font-semibold group-hover:text-[#0f766e] flex items-center gap-1">
-                      Vezi <svg className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/></svg>
-                    </span>
-                  </div>
-                </a>
-              );
-            })}
+            {magazine.map((m) => (
+              <MagazinCard key={m.magazin} m={m} />
+            ))}
           </div>
         </section>
+        <NewsletterCTA />
+
 
         <NisaProduse
           merchantSlugs={["emag.ro","altex.ro","pcgarage.ro","flanco.ro","evomag.ro","cel.ro"]}
