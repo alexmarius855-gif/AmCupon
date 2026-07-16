@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: { title: "Casa & Gradina cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/casa", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
-const TOP_CASA = ["dedeman.ro","ikea.com","leroy-merlin.ro","mobexpert.ro","jysk.ro","hornbach.ro","kika.ro","someproducts.ro"];
+const TOP_CASA = ["dedeman.ro","ikea.com","leroy-merlin.ro","mobexpert.ro","jysk.ro","hornbach.ro","kika.ro","someproducts.ro","electrolux.ro","clickandgrow.com"];
 const CAT_CASA = ["home","garden","casa","gradina","home-garden","mobila","decor","furniture"];
 const AVANTAJE = [
   { icon: "🛋️", titlu: "Mobila & Living", desc: "Canapele, paturi, dulapuri — branduri top la preturi reduse" },
@@ -30,7 +30,8 @@ const AVANTAJE = [
   { icon: "💡", titlu: "Iluminat & Decoratiuni", desc: "Lustre, lampi, tablouri, obiecte decorative" },
 ];
 
-function numeAfisat(s: string) { return s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" "); }
+const NUME_OVERRIDE: Record<string, string> = { "clickandgrow.com": "Click & Grow" };
+function numeAfisat(s: string) { return NUME_OVERRIDE[s] ?? s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" "); }
 const CULORI = ["bg-[#0d9488]","bg-[#0d9488]","bg-[#0d9488]","bg-[#0d9488]","bg-[#0d9488]","bg-[#0d9488]"];
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Casa & Gradina cu Reducere 2026","url":"https://amcupon.ro/casa","description":"Coduri reducere casa si gradina Romania — Dedeman, IKEA, Leroy Merlin, Mobexpert" };
 

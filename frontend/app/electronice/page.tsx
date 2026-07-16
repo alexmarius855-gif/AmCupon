@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: { title: "Electronice cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/electronice", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
-const TOP_TECH = ["emag.ro","altex.ro","pcgarage.ro","flanco.ro","cel.ro","mediagalaxy.ro","evomag.ro","vexio.ro"];
+const TOP_TECH = ["emag.ro","altex.ro","pcgarage.ro","flanco.ro","cel.ro","mediagalaxy.ro","evomag.ro","vexio.ro","philips.ro","tenergy.com"];
 const CAT_TECH = ["electronics","itc","electronice","tech","it","gadget","electro"];
 const AVANTAJE = [
   { icon: "📱", titlu: "Telefoane & Tablete", desc: "iPhone, Samsung, Xiaomi — cele mai bune oferte" },

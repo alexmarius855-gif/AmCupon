@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: { title: "Reduceri Sport & Fitness 2026 | AmCupon.ro", url: "https://amcupon.ro/sport", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
-const TOP_SPORT = ["decathlon.ro","sportisimo.ro","sport-vision.ro","intersport.ro","hervis.ro","gigasport.ro"];
+const TOP_SPORT = ["decathlon.ro","sportisimo.ro","sport-vision.ro","intersport.ro","hervis.ro","gigasport.ro","trampolinepartsandsupply.com"];
 const CAT_SPORT = ["sport","outdoor","fitness","running","cycling","hiking","sports"];
 const SUBCATEGORII = [
   { emoji: "🏃", label: "Running", href: "/categorii/sport" },
@@ -32,7 +32,8 @@ const SUBCATEGORII = [
   { emoji: "🧗", label: "Hiking & Alpinism", href: "/categorii/sport" },
 ];
 
-function numeAfisat(s: string) { return s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" "); }
+const NUME_OVERRIDE: Record<string, string> = { "trampolinepartsandsupply.com": "Trampoline Parts & Supply" };
+function numeAfisat(s: string) { return NUME_OVERRIDE[s] ?? s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" "); }
 const CULORI = ["bg-[#0d9488]","bg-[#0d9488]","bg-[#0d9488]","bg-[#0d9488]","bg-[#0d9488]","bg-[#0d9488]"];
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Reduceri Sport & Fitness 2026","url":"https://amcupon.ro/sport" };
 

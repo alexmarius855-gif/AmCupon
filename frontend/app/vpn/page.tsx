@@ -10,6 +10,8 @@ const LINK_EXPRESSVPN = "https://www.expressvpn.com";
 const LINK_ADGUARD_VPN = "https://adguard.sjv.io/c/7401119/3824000/49891";
 const LINK_ICEVPN      = "https://iceprivacyltd.pxf.io/c/7401119/3741732/47094";
 const LINK_IPROYAL     = "https://iproyal.sjv.io/c/7401119/1295570/15731";
+// Linkuri reale, aprobate pe Awin (account 101829567)
+const LINK_HIDEMYNAME  = "https://www.awin1.com/cread.php?awinmid=5887918&awinaffid=101829567&clickref=";
 // ──────────────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
@@ -110,6 +112,13 @@ const ALTE_VPN = [
     desc: "VPN mai mic, optiune buna pentru cei care cauta un pret accesibil fara functii avansate.",
     url: LINK_ICEVPN,
     ideal: "Buget redus, utilizare de baza (navigare sigura, Wi-Fi public)",
+  },
+  {
+    name: "HideMy.Name",
+    emoji: "🕶️",
+    desc: "VPN axat pe confidentialitate, cu aplicatii pentru toate platformele si extensii de browser dedicate.",
+    url: LINK_HIDEMYNAME,
+    ideal: "Cei care vor o alternativa mai putin cunoscuta, cu focus pe anonimizare",
   },
 ];
 

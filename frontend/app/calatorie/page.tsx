@@ -23,6 +23,8 @@ const TOP_TRAVEL = ["booking.com","airbnb.com","trip.com","rentalcars.com","sams
 const PARTENERI_INTL = [
   { nume: "KKday", emoji: "🎟️", desc: "Excursii, tururi ghidate si activitati locale in Asia si nu numai — rezervare instanta.", url: "https://kkday.sjv.io/n4P9qx" },
   { nume: "Pelago by Singapore Airlines", emoji: "✈️", desc: "Experiente si excursii curate de Singapore Airlines — de la city tours la activitati exclusive.", url: "https://pelago.pxf.io/3kyVBv" },
+  { nume: "Air Serbia", emoji: "🛫", desc: "Compania aeriana nationala a Serbiei — zboruri catre Belgrad si conexiuni internationale.", url: "https://www.awin1.com/cread.php?awinmid=5289333&awinaffid=101829567&clickref=" },
+  { nume: "CarmelLimo", emoji: "🚘", desc: "Transfer privat cu sofer in New York si alte orase mari din SUA — alternativa la taxi pentru calatorii de business.", url: "https://www.awin1.com/cread.php?awinmid=2387410&awinaffid=101829567&clickref=" },
 ];
 const CAT_TRAVEL = ["travel","calatorie","vacante","turism","tourism","luggage","transport"];
 const DESTINATII = [

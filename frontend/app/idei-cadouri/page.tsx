@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 const TOP_CADOURI = [
   "noriel.ro","fashiondays.ro","notino.ro","elefant.ro",
-  "libris.ro","emag.ro","floria.ro","answear.ro",
+  "libris.ro","emag.ro","floria.ro","answear.ro","zchocolat.com",
 ];
 const CAT_CADOURI = ["toys","gifts","flower","beauty","fashion","jewelry","books","kids"];
 

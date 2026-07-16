@@ -28,8 +28,9 @@ const AVANTAJE = [
   { icon: "🥈", titlu: "Argint & Cristale", desc: "Bijuterii argint 925, cristale la preturi accesibile" },
 ];
 
+const NUME_OVERRIDE: Record<string, string> = { "silverrushstyle.com": "Silver Rush Style" };
 function numeAfisat(s: string) {
-  return s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" ");
+  return NUME_OVERRIDE[s] ?? s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" ");
 }
 const CULORI = ["bg-[#0d9488]","bg-[#0d9488]","bg-[#0d9488]","bg-[#0d9488]","bg-[#0d9488]","bg-[#0d9488]"];
 
@@ -46,7 +47,7 @@ export default function BijuteriiPage() {
   const all: Magazin[] = JSON.parse(fs.readFileSync(filePath, "utf-8"));
   const an = new Date().getFullYear();
 
-  const magazine = all.filter(m => m.categorie_slug === "jewelry");
+  const magazine = all.filter(m => m.categorie_slug === "jewelry" || ["pandahall.com", "silverrushstyle.com"].includes(m.magazin));
   const cuPromo = magazine.filter(m => m.are_promotie);
 
   return (

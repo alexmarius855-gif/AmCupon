@@ -23,6 +23,7 @@ const TOOLS_INTL = [
     items: [
       { name: "Semrush", desc: "Unealta SEO #1 la nivel mondial. Cercetare cuvinte, audit site, competitor analysis.", pret: "de la 99$/luna", comision: "200$ per vanzare", badge: "Recomandat #1", url: "https://semrush.com", program: "semrush.com/lp/inter-affiliate" },
       { name: "Canva Pro", desc: "Design profesional pentru social media, prezentari, materiale de marketing.", pret: "~13€/luna", comision: "36$ per conversie", badge: "Cel mai usor", url: "https://canva.com", program: "canva.com/affiliates" },
+      { name: "GetResponse", desc: "Platforma completa de email marketing: newslettere, automatizari, landing pages si webinarii.", pret: "de la 15€/luna", comision: "program afiliat Awin", badge: "Email marketing", url: "https://www.awin1.com/cread.php?awinmid=3142111&awinaffid=101829567&clickref=", program: "getresponse.com/partners" },
     ],
   },
   {
@@ -30,6 +31,14 @@ const TOOLS_INTL = [
     items: [
       { name: "Notion", desc: "All-in-one workspace: notite, baze de date, project management, wiki intern.", pret: "de la 8$/user/luna", comision: "program selectiv", badge: "Productivitate", url: "https://notion.so", program: "notion.so/affiliates" },
       { name: "Grammarly", desc: "Corectare gramatica si stil in engleza — esential pentru business international.", pret: "de la 12$/luna", comision: "20$ per Premium", badge: "Scriere profesionala", url: "https://grammarly.com", program: "grammarly.com/affiliates" },
+    ],
+  },
+  {
+    categ: "Securitate & Utilitare PC",
+    items: [
+      { name: "NordPass", desc: "Manager de parole de la echipa NordVPN — stocare criptata, autocompletare si monitorizare breșe de date.", pret: "de la 1.59€/luna", comision: "program afiliat Awin", badge: "Parole & securitate", url: "https://www.awin1.com/cread.php?awinmid=5324242&awinaffid=101829567&clickref=", program: "nordpass.com/partners" },
+      { name: "Abelssoft", desc: "Pachet de utilitare PC: curatare, backup, dezinstalare completa, protectie date — pentru Windows.", pret: "de la 19.90€", comision: "program afiliat Awin", badge: "Utilitare PC", url: "https://www.awin1.com/cread.php?awinmid=6260179&awinaffid=101829567&clickref=", program: "abelssoft.de/affiliates" },
+      { name: "O&O Software", desc: "Utilitare germane pentru optimizare Windows: defragmentare, stergere sigura, backup si migrare sistem.", pret: "de la 29.95€", comision: "program afiliat Awin", badge: "Optimizare Windows", url: "https://www.awin1.com/cread.php?awinmid=2381550&awinaffid=101829567&clickref=", program: "oo-software.com/affiliates" },
     ],
   },
 ];
