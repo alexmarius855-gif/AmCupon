@@ -7127,7 +7127,7 @@
   {
     "magazin": "selenichast.com",
     "url": "http://www.selenichast.com",
-    "url_afiliat": "http://www.jewelhalo.com",
+    "url_afiliat": "https://www.jewelhalo.com",
     "logo_url": "https://logo.clearbit.com/selenichast.com",
     "categorie": "Bijuterii",
     "categorie_slug": "bijuterii",
@@ -9259,7 +9259,7 @@
   {
     "magazin": "Selenichast",
     "url": "http://www.jewelhalo.com",
-    "url_afiliat": "http://www.jewelhalo.com",
+    "url_afiliat": "https://www.jewelhalo.com",
     "logo_url": "",
     "categorie": "Diverse",
     "categorie_slug": "online-mall",
