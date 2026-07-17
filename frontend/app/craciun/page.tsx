@@ -2,6 +2,8 @@ import Link from "next/link";
 import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
+import MagazinCard from "../components/MagazinCard";
+import NewsletterCTA from "../components/NewsletterCTA";
 
 interface Promotie {
   nume: string;
@@ -75,20 +77,6 @@ function loadData(): Magazin[] {
   const filePath = path.join(process.cwd(), "public", "output.json");
   return JSON.parse(fs.readFileSync(filePath, "utf-8"));
 }
-
-function numeAfisat(magazin: string): string {
-  return magazin
-    .split(".")[0]
-    .replace(/-/g, " ")
-    .split(" ")
-    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-    .join(" ");
-}
-
-const CULORI = [
-  "bg-[#0d9488]", "bg-[#0d9488]", "bg-[#0d9488]", "bg-[#0d9488]",
-  "bg-[#0d9488]", "bg-[#0d9488]", "bg-[#0d9488]", "bg-[#14b8a6]",
-];
 
 const craciunJsonLd = {
   "@context": "https://schema.org",
@@ -195,61 +183,15 @@ export default function CraciunPage() {
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-            {magazine.map((m, i) => {
-              const nume = numeAfisat(m.magazin);
-              const culoare = CULORI[i % CULORI.length];
-              const coduri = m.promotii.filter((p) => p.cod_cupon);
-              const bestPromo = m.promotii[0];
-
+            {magazine.map((m) => {
               return (
-                <a
-                  key={m.magazin}
-                  href={`/cod-reducere/${m.magazin}`}
-                  className="group bg-[#111827] border border-[#1e293b] hover:border-[#14b8a6]/40 rounded-xl p-4 transition-all hover:shadow-md"
-                >
-                  <div className="flex items-center gap-3 mb-3">
-                    {m.logo_url ? (
-                      <div className="w-10 h-10 rounded-xl overflow-hidden bg-[#ffffff] border border-[#1e293b] shrink-0 flex items-center justify-center p-0.5">
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img
-                          src={m.logo_url}
-                          alt={`Logo ${nume}`}
-                          className="w-full h-full object-contain"
-                          loading="lazy"
-                        />
-                      </div>
-                    ) : (
-                      <div className={`w-10 h-10 rounded-xl ${culoare} flex items-center justify-center text-[#f1f5f9] font-black text-lg shrink-0`}>
-                        {nume.charAt(0)}
-                      </div>
-                    )}
-                    <div className="min-w-0">
-                      <p className="font-bold text-[#f1f5f9] text-sm truncate">{nume}</p>
-                      {coduri.length > 0 && (
-                        <span className="text-xs font-bold text-[#0d9488]">
-                          {coduri.length} cod{coduri.length > 1 ? "uri" : ""}
-                        </span>
-                      )}
-                    </div>
-                  </div>
-
-                  {bestPromo && (
-                    <p className="text-[#cbd5e1] text-xs leading-snug line-clamp-2 mb-2">
-                      {bestPromo.nume}
-                    </p>
-                  )}
-
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs text-[#94a3b8]">{m.promotii.length} oferte</span>
-                    <span className="text-xs text-[#14b8a6] group-hover:text-[#0f766e] font-semibold transition-colors">
-                      Vezi →
-                    </span>
-                  </div>
-                </a>
+                <MagazinCard key={m.magazin} m={m} />
               );
             })}
           </div>
         </section>
+
+        <NewsletterCTA />
 
         {/* SEO Content */}
         <section className="bg-[#111827] border-t border-[#1e293b]">

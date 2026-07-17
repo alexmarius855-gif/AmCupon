@@ -2,14 +2,9 @@ import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
 import Link from "next/link";
+import MagazinCard, { type CardMagazin } from "../components/MagazinCard";
 
-interface Magazin {
-  magazin: string;
-  logo_url?: string;
-  categorie: string;
-  are_promotie: boolean;
-  cod_cupon: boolean;
-  promotii: { nume: string; cod_cupon: string }[];
+interface Magazin extends CardMagazin {
   procent_succes: number;
 }
 
@@ -104,34 +99,9 @@ export default async function CautarePage({ searchParams }: { searchParams: Prom
               )}
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {rezultate.map(m => {
-                const nume = numeAfisat(m.magazin);
-                const promo = m.promotii[0];
-                return (
-                  <Link key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                    className="group bg-[#111827] border border-[#1e293b] hover:border-[#0f766e] rounded-xl p-4 transition-all hover:shadow-md flex gap-3 items-start">
-                    <div className="w-11 h-11 rounded-xl border border-[#1e293b] bg-[#111827] flex items-center justify-center shrink-0 overflow-hidden">
-                      {m.logo_url ? (
-                        // eslint-disable-next-line @next/next/no-img-element
-                        <img src={m.logo_url} alt={nume} className="w-9 h-9 object-contain" />
-                      ) : (
-                        <span className="font-black text-[#0d9488] text-lg">{nume[0]}</span>
-                      )}
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <p className="font-black text-[#f1f5f9] text-sm group-hover:text-[#0f766e] truncate">{nume}</p>
-                      <p className="text-[11px] text-[#94a3b8] mb-1">{m.categorie}</p>
-                      {m.are_promotie && m.cod_cupon && (
-                        <span className="text-[10px] font-bold text-[#0d9488] bg-[#14b8a6]/10 border border-[#14b8a6]/30 px-1.5 py-0.5 rounded-full">Cod cupon</span>
-                      )}
-                      {m.are_promotie && !m.cod_cupon && (
-                        <span className="text-[10px] font-semibold text-[#0d9488] bg-[#111827] border border-[#1e293b] px-1.5 py-0.5 rounded-full">Oferta activa</span>
-                      )}
-                      {promo && <p className="text-[11px] text-[#cbd5e1] mt-1 line-clamp-1">{promo.nume}</p>}
-                    </div>
-                  </Link>
-                );
-              })}
+              {rezultate.map(m => (
+                <MagazinCard key={m.magazin} m={m} />
+              ))}
             </div>
           </>
         )}

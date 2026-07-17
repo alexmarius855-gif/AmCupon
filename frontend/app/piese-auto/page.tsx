@@ -2,6 +2,8 @@ import Link from "next/link";
 import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
+import MagazinCard from "../components/MagazinCard";
+import NewsletterCTA from "../components/NewsletterCTA";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -27,10 +29,6 @@ const SUBCATEGORII = [
   { emoji: "🔋", label: "Baterii auto" },
 ];
 
-function numeAfisat(s: string) {
-  return s.split(".")[0].replace(/-/g, " ").split(" ").map(w => w[0].toUpperCase() + w.slice(1)).join(" ");
-}
-
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
@@ -45,7 +43,6 @@ export default function PieseAutoPage() {
 
   const magazine = all.filter(m => m.categorie_slug === "automotive");
   const cuPromo = magazine.filter(m => m.are_promotie);
-  const faraPromo = magazine.filter(m => !m.are_promotie);
 
   return (
     <>
@@ -95,70 +92,18 @@ export default function PieseAutoPage() {
         </section>
 
         <div className="max-w-5xl mx-auto px-4 py-8">
-          {cuPromo.length > 0 && (
+          {magazine.length > 0 && (
             <section className="mb-8">
-              <h2 className="text-xl font-black text-[#f1f5f9] mb-5">Oferte active acum</h2>
+              <h2 className="text-xl font-black text-[#f1f5f9] mb-5">Magazine de piese auto</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {cuPromo.map(m => {
-                  const nume = numeAfisat(m.magazin);
-                  const promo = m.promotii[0];
-                  return (
-                    <a key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                      className="group bg-[#111827] border border-[#1e293b] hover:border-[#14b8a6]/40 rounded-xl p-5 transition-all">
-                      <div className="flex items-center gap-3 mb-3">
-                        {m.logo_url ? (
-                          <div className="w-10 h-10 rounded-xl overflow-hidden bg-slate-100 shrink-0 p-1">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img src={m.logo_url} alt={`Logo ${nume}`} className="w-full h-full object-contain" loading="lazy" />
-                          </div>
-                        ) : (
-                          <div className="w-10 h-10 rounded-xl bg-[#0d9488] flex items-center justify-center text-white font-black text-lg shrink-0">
-                            {nume[0]}
-                          </div>
-                        )}
-                        <div>
-                          <p className="font-bold text-[#f1f5f9] text-sm">{nume}</p>
-                          {m.cod_cupon && <span className="text-xs text-[#0d9488] font-bold">COD REDUCERE</span>}
-                        </div>
-                      </div>
-                      {promo && <p className="text-[#cbd5e1] text-xs line-clamp-2 mb-2">{promo.nume}</p>}
-                      <div className="flex justify-between items-center">
-                        <span className="text-xs text-[#94a3b8]">{m.promotii.length} oferte</span>
-                        <span className="text-xs text-[#0d9488] font-semibold group-hover:text-[#0f766e]">Vezi →</span>
-                      </div>
-                    </a>
-                  );
-                })}
+                {magazine.map(m => (
+                  <MagazinCard key={m.magazin} m={m} />
+                ))}
               </div>
             </section>
           )}
 
-          {faraPromo.length > 0 && (
-            <section className="mb-8">
-              <h2 className="text-lg font-black text-[#f1f5f9] mb-4">Toate magazinele de piese auto</h2>
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-                {faraPromo.map(m => {
-                  const nume = numeAfisat(m.magazin);
-                  return (
-                    <a key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                      className="flex items-center gap-3 bg-[#111827] border border-[#1e293b] hover:border-[#14b8a6]/40 rounded-xl p-3 transition-all group">
-                      {m.logo_url ? (
-                        <div className="w-8 h-8 rounded-lg overflow-hidden bg-slate-100 shrink-0 p-1">
-                          {/* eslint-disable-next-line @next/next/no-img-element */}
-                          <img src={m.logo_url} alt={`Logo ${nume}`} className="w-full h-full object-contain" loading="lazy" />
-                        </div>
-                      ) : (
-                        <div className="w-8 h-8 rounded-lg bg-[#0d9488] flex items-center justify-center text-white font-black text-sm shrink-0">
-                          {nume[0]}
-                        </div>
-                      )}
-                      <span className="text-sm font-semibold text-[#cbd5e1] group-hover:text-[#0d9488] transition-colors truncate">{nume}</span>
-                    </a>
-                  );
-                })}
-              </div>
-            </section>
-          )}
+          <NewsletterCTA />
 
           {/* GHID */}
           <section className="mt-10 bg-[#111827] border border-[#1e293b] rounded-xl p-6">

@@ -3,6 +3,8 @@ import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
 import NisaProduse from "../components/NisaProduse";
+import MagazinCard from "../components/MagazinCard";
+import NewsletterCTA from "../components/NewsletterCTA";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -21,9 +23,6 @@ export const metadata: Metadata = {
 
 const GADGET_SLUGS = ["emag.ro", "altex.ro", "flanco.ro", "elefant.ro", "quickmobile.ro", "cel.ro", "pcgarage.ro", "evomag.ro"];
 const CAT_GADGET = ["electronics", "telecom", "games", "software", "gadget"];
-
-function numeAfisat(s: string) { return s.split(".")[0].replace(/-/g," ").split(" ").map(w=>w[0].toUpperCase()+w.slice(1)).join(" "); }
-const CULORI = ["bg-[#0d9488]","bg-[#14b8a6]","bg-[#0d9488]","bg-[#0d9488]","bg-[#14b8a6]","bg-[#0d9488]","bg-[#0d9488]","bg-[#0d9488]"];
 
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Gadgets & Tech — Coduri Reducere 2026","url":"https://amcupon.ro/gadgets" };
 
@@ -109,74 +108,19 @@ export default function GadgetsPage() {
         </section>
 
         <div className="max-w-6xl mx-auto px-4 py-8">
-          {/* MAGAZINE CU PROMOTII */}
-          {cuPromo.length > 0 && (
-            <section className="mb-10">
-              <div className="flex items-center gap-3 mb-5">
-                <h2 className="text-xl font-black text-[#f1f5f9]">Oferte active acum</h2>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {cuPromo.map((m, i) => {
-                  const nume = numeAfisat(m.magazin);
-                  const culoare = CULORI[i % CULORI.length];
-                  const promo = m.promotii[0];
-                  return (
-                    <a key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                      className="group bg-[#111827] border border-[#1e293b] hover:border-[#14b8a6]/40 rounded-xl p-5 transition-all hover:shadow-md">
-                      <div className="flex items-center gap-3 mb-3">
-                        {m.logo_url ? (
-                          <div className="w-10 h-10 rounded-xl overflow-hidden bg-[#ffffff] border border-[#1e293b] shrink-0">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img src={m.logo_url} alt={`Logo ${nume}`} className="w-full h-full object-contain" loading="lazy" />
-                          </div>
-                        ) : (
-                          <div className={`w-10 h-10 rounded-xl ${culoare} flex items-center justify-center text-[#f1f5f9] font-black text-lg shrink-0`}>
-                            {nume[0]}
-                          </div>
-                        )}
-                        <div>
-                          <p className="font-bold text-[#f1f5f9] text-sm">{nume}</p>
-                          {m.cod_cupon && <span className="text-xs text-[#14b8a6] font-bold">COD REDUCERE</span>}
-                        </div>
-                      </div>
-                      {promo && <p className="text-[#cbd5e1] text-xs line-clamp-2 mb-2">{promo.nume}</p>}
-                      <div className="flex justify-between items-center">
-                        <span className="text-xs text-[#94a3b8]">{m.promotii.length} oferte</span>
-                        <span className="text-xs text-[#14b8a6] font-semibold group-hover:text-[#14b8a6]">Vezi →</span>
-                      </div>
-                    </a>
-                  );
-                })}
-              </div>
-            </section>
-          )}
-
-          {/* TOATE MAGAZINELE */}
+          {/* MAGAZINE */}
           <section className="mb-10">
-            <h2 className="text-lg font-black text-[#f1f5f9] mb-4">Toate magazinele tech</h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-              {magazine.filter(m => !m.are_promotie).map((m, i) => {
-                const nume = numeAfisat(m.magazin);
-                const culoare = CULORI[i % CULORI.length];
-                return (
-                  <a key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                    className="flex items-center gap-3 bg-[#111827] border border-[#1e293b] hover:border-[#14b8a6]/40 rounded-xl p-3 transition-all group">
-                    {m.logo_url ? (
-                      <div className="w-8 h-8 rounded-lg overflow-hidden bg-[#ffffff] shrink-0">
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img src={m.logo_url} alt={`Logo ${nume}`} className="w-full h-full object-contain" loading="lazy" />
-                      </div>
-                    ) : (
-                      <div className={`w-8 h-8 rounded-lg ${culoare} flex items-center justify-center text-[#f1f5f9] font-black text-sm shrink-0`}>
-                        {nume[0]}
-                      </div>
-                    )}
-                    <span className="text-sm font-semibold text-[#cbd5e1] group-hover:text-[#14b8a6] transition-colors truncate">{nume}</span>
-                  </a>
-                );
-              })}
+            <div className="flex items-center gap-3 mb-5">
+              <h2 className="text-xl font-black text-[#f1f5f9]">Magazine gadgets & tech</h2>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {magazine.map((m) => (
+                <MagazinCard key={m.magazin} m={m} />
+              ))}
             </div>
           </section>
+
+          <NewsletterCTA />
 
           {/* ARTICOLE */}
           <section className="bg-[#111827] rounded-xl p-6">
