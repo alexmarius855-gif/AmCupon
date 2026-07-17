@@ -106,6 +106,7 @@ const PAGINI_DEDICATE = [
   { href: "/trading",               emoji: "📈", name: "Trading & Investitii", sub: "XTB, Binance, eToro",       from: "#10b981", to: "#059669" },
   { href: "/instrumente-seo",       emoji: "📊", name: "Instrumente SEO",      sub: "Semrush, Ahrefs, Moz",      from: "#14b8a6", to: "#0f766e" },
   { href: "/carduri-bancare",       emoji: "💳", name: "Carduri Bancare",      sub: "Conturi & carduri online",  from: "#0d9488", to: "#0d9488" },
+  { href: "/asigurari",             emoji: "🛡️", name: "Asigurari",           sub: "RCA, CASCO, locuinta",       from: "#0f766e", to: "#14b8a6" },
   { href: "/servicii-internationale", emoji: "🌍", name: "Servicii Internationale", sub: "VPN, hosting, software", from: "#14b8a6", to: "#0f766e" },
   { href: "/calculator",            emoji: "🧮", name: "Calculator Reduceri", sub: "Calculeaza economia reala", from: "#0f766e", to: "#14b8a6" },
   { href: "/calculator-salariu",    emoji: "💼", name: "Calculator Salariu",  sub: "Net-brut 2026",             from: "#0d9488", to: "#0d9488" },

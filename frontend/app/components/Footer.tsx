@@ -70,6 +70,7 @@ const PARTENERI = [
   { href: "/despre-noi",       label: "Colaboreaza cu noi" },
   { href: "/contact",          label: "Listeaza magazinul tau" },
   { href: "/servicii",         label: "Servicii & Software" },
+  { href: "/asigurari",        label: "Asigurari RCA & CASCO" },
   { href: "/instrumente-seo",  label: "Instrumente marketing" },
 ];
 

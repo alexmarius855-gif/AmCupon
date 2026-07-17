@@ -12,7 +12,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
-**UPDATE 16.07.2026 (redesign DARK complet + import CSV 2Performant/Awin):**
+**UPDATE 17.07.2026 (import Awin 16 magazine + redesign carduri magazin + pagina noua /asigurari):**
+- **Import Awin real** (`scripts/import_awin_links.py`, CSV "Linkuri si produse" — format diferit de "Joined Programmes") — 16 magazine noi cu deep-link universal Awin (`cread.php`, nu linkuri de banner specifice/expirate): Abelssoft, Air Serbia, CarmelLimo, Click & Grow, Electrolux.ro, GetResponse, HideMy.Name, NUTRACEUTICS RO/HU, NordPass, O&O Software, PandaHall, Philips.ro, SilverRushStyle, Tenergy, Trampoline Parts, zChocolat. Integrate manual in paginile de nisa relevante (nu doar grid generic). 9 advertiseri Awin sarite (domeniu incert sau deja pe alta retea) — vezi Probleme active.
+- **Redesign complet al cardurilor de magazin** — `frontend/app/components/MagazinCard.tsx` (nou, partajat) inlocuieste cardul bland "logo mic + Verifica ofertele curente + buton simplu" pe **27 de pagini** (23 pagini de nisa + `/categorii/[slug]` + `/craciun`, `/gadgets`, `/piese-auto`, `/cautare` gasite intr-un sweep ulterior). Card nou: logo mai mare, badge categorie, cod cupon mascat/dezvaluit cu copy-to-clipboard (fost doar in `CategorieClient.tsx`, acum peste tot). **Nu inventeaza pro/contra per magazin** — doar date reale din output.json; comparatii editoriale scrise de mana raman doar pe paginile curate (`/vpn` etc.).
+- **`frontend/app/components/NewsletterCTA.tsx`** (nou) — sectiune compacta de abonare (POST direct catre `/api/newsletter`), inserata pe toate cele 27 de pagini de mai sus.
+- **Pagina noua `/asigurari`** — descoperire din audit: `ottobroker.ro` (broker de asigurari RCA/CASCO/locuinta/viata/calatorie, 15 ani experienta, 130k+ clienti) era deja program 2Performant **aprobat si cu link functional**, dar `rank:999`/`scor:0` (niciodata curatat manual) si fara nicio pagina — complet invizibil. Construita cu `BrandPageTemplate.tsx` (acelasi tipar ca `/albire-dinti`), continut verificat direct pe ottobroker.ro (nu inventat). Adaugata in sitemap, `/servicii`, Footer.
+- Build + lint verificate la fiecare pas (0 warning-uri noi). Verificare vizuala in browser pe fiecare pagina modificata.
 - **Revenire deliberata la tema dark** (peste light/teal din 06.07), decizie explicita Alex ("da dark. fa-l dark") dupa ce am flagat tensiunea cu regula veche "NU reintroduce dark". Vezi sectiunea "Tema vizuala" mai jos pentru paleta completa si scripturile folosite (`retheme_dark_2026.js`, `purge_gold_leftover.js`, `fix_logo_boxes_dark.js`). Accentul teal a ramas neschimbat — doar bg/carduri/text au trecut de la deschis la inchis. 96 fisiere `.tsx` convertite, build + lint verificate (doar erorile pre-existente cunoscute au ramas: `Date.now()` impurity in `produse/[categorie]/page.tsx`, `setState-in-effect` in `ToateMagazineleClient.tsx`).
 - **Fix critic gasit in timpul conversiei**: `:root { --background }` din `globals.css` ramasese `#ffffff` (nefolosit de paginile propriu-zise, dar `<body>` insusi era alb) — corectat la `#0a0f1a`, altfel aparea o margine/flash alb la scroll pe unele pagini.
 - **Fix critic logo-uri**: conversia generala a innegrit si cutiile mici de logo ale magazinelor (erau `bg-[#ffffff]` → deveneau `bg-[#111827]`), facand logo-urile (PNG-uri cu forme inchise la culoare, proiectate pt fundal alb) ilizibile. Reparat separat cu `fix_logo_boxes_dark.js` (30+ cutii in ~30 fisiere) — cutiile de logo raman intentionat albe pe fundal dark.
@@ -233,6 +238,8 @@ platite/risc de ban). Schimba vocea cu `--voice ro-RO-AlinaNeural` (feminin).
 | 5 programe 2Performant în așteptare aprobare | Fixato, MxEnduro, Trendiva, Viada, DYFashion | Aplică din 2Performant → Affiliate Programs, apoi înlocuiește constantele `LINK_*` din paginile respective |
 | cursuri-ai.ro se închide | — | De verificat eliminat complet până **07-07-2026** |
 | outfitblack.ro se închide | — | De verificat eliminat complet până **10-07-2026** |
+| **CJ Affiliate — cont creat, 0 date importate** | Alex a aplicat, dar n-a trimis inca export CSV | Exporta din CJ dashboard → Advertisers → programe "joined" (CSV), trimite-l ca sa fie importat la fel ca Awin |
+| **5 magazine Awin sarite — domeniu neconfirmat** | Diecast, GearUP, Tvrzenaskla/Momanio Europe, Unizdrav cz/sk/hu, Skytours US — vezi `scripts/import_awin_links.py` | Alex confirma domeniul real (site.ro/.com) pentru fiecare, sau le lasam sarite definitiv |
 
 ---
 
@@ -328,7 +335,7 @@ Fiecare pagină dinamică are două fișiere:
 `/fashion`, `/frumusete`, `/electronice`, `/gadgets`, `/sport`, `/copii`, `/animale`, `/casa`, `/calatorie`, `/carti`, `/parfumuri`, `/sanatate`, `/farmacie`, `/supermarket`, `/jocuri`, `/idei-cadouri`, `/bijuterii`, `/craciun`, `/extensie`
 
 ### Nise tech & financiar
-`/gaming`, `/laptop`, `/telefoane`, `/antivirus`, `/smart-home`, `/instrumente-seo`, `/trading`, `/carduri-bancare`, `/vpn`, `/hosting`, `/ai-tools`, `/cursuri-online`, `/software-business`, `/servicii`, `/recomandari`, `/albire-dinti`
+`/gaming`, `/laptop`, `/telefoane`, `/antivirus`, `/smart-home`, `/instrumente-seo`, `/trading`, `/carduri-bancare`, `/vpn`, `/hosting`, `/ai-tools`, `/cursuri-online`, `/software-business`, `/servicii`, `/recomandari`, `/albire-dinti`, `/asigurari`
 
 ### Nise adăugate 29.06.2026
 | URL | Status date |
@@ -372,11 +379,14 @@ Fiecare pagină dinamică are două fișiere:
 | Profitshare | Direct | ✅ ACTIV (62 magazine) |
 | Impact.com | Direct (Account 7401119) | ✅ ACTIV — 6+ parteneri reali cu tracking link |
 | Binance | Direct | ✅ ACTIV — ref `205306153`, în `/trading` |
+| Awin | Direct (account 101829567) | ✅ ACTIV — 16 magazine importate 16.07.2026, vezi `scripts/import_awin_links.py` |
+| Otto Broker (asigurări) | 2Performant | ✅ ACTIV — descoperit 17.07.2026 in output.json (aprobat, dar niciodata folosit), acum pe `/asigurari` |
 | Fiverr, Hostinger, NordVPN | Impact.com / direct | 🔄 In review / pending |
 | Semrush | Impact.com | ❌ RESPINS (18.06.2026, "business model mismatch") |
 | pescar-expert.ro | 2Performant | 🔄 Aplicat 29.06.2026 — aprobare in ~31 zile (5-6% comision, 25k produse) |
 | Fixato, MxEnduro, Trendiva, Viada, DYFashion | 2Performant | 🔄 De aplicat — vezi Probleme active |
 | TradeTracker | Direct | ⚠️ cod gata, secrets lipsesc |
+| CJ Affiliate | — | 🔄 Alex a aplicat, export CSV asteptat (seara 17.07.2026) — vezi Probleme active |
 
 **Important**: ChatGPT/OpenAI și Claude/Anthropic NU au program de afiliere public — nu construi link pentru ele indiferent de cerere.
 
