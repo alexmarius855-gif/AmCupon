@@ -1,5 +1,18 @@
 [
   {
+    "id": 271304,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/271263/original/271263.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=47b3eb0f0&aff_code=541547473&campaign_unique=07b5f0fed",
+    "landing_raw": "https://carturesti.ro/offer/cartea-pe-val-fictiune-6622",
+    "width": 1200,
+    "height": 1200,
+    "merchant": "carturesti.ro ",
+    "merchant_slug": "carturesti-ro",
+    "name": "2+1 ficțiune",
+    "category": "2+1 ficțiune",
+    "b_type": "image"
+  },
+  {
     "id": 271302,
     "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/271261/original/271261.jpg",
     "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=292baf687&aff_code=541547473&campaign_unique=4b9a6d5ea",
@@ -10,19 +23,6 @@
     "merchant_slug": "kitunghii-ro",
     "name": "-80% STAR SUMMER, CELEBRITY SECRET BAG GRATUIT",
     "category": "-80% STAR SUMMER, CELEBRITY SECRET BAG GRATUIT",
-    "b_type": "image"
-  },
-  {
-    "id": 271291,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/271250/original/271250.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=6864e686e&aff_code=541547473&campaign_unique=cc08e2536",
-    "landing_raw": "https://www.pensulemachiaj.ro",
-    "width": 1200,
-    "height": 1200,
-    "merchant": "pensulemachiaj.ro",
-    "merchant_slug": "pensulemachiaj-ro",
-    "name": "- 80% STAR SUMMER & CELEBRITY SECRET BAG GRATUIT",
-    "category": "- 80% STAR SUMMER & CELEBRITY SECRET BAG GRATUIT",
     "b_type": "image"
   }
 ]
