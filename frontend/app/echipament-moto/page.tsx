@@ -1,12 +1,9 @@
 import Link from "next/link";
 import { Metadata } from "next";
 
-// ── LINKURI AFILIATE ── de actualizat dupa aprobare pe 2Performant ─────────
-// Fixato si MxEnduro sunt programe REALE pe 2Performant, NU sunt inca aprobate
-// pentru contul AmCupon — aplica din 2Performant > Affiliate Programs, apoi
-// inlocuieste linkul de mai jos cu quicklink-ul real (vezi CLAUDE.md pentru format).
-const LINK_FIXATO = "https://fixato.ro";     // aplicare necesara pe 2Performant
-const LINK_MXENDURO = "https://mxenduro.ro"; // aplicare necesara pe 2Performant
+// ── LINKURI AFILIATE ── quicklink-uri reale 2Performant (aprobate 17.07.2026) ──
+const LINK_FIXATO = "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffixato.ro";
+const LINK_MXENDURO = "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fmxenduro.ro";
 // ─────────────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {

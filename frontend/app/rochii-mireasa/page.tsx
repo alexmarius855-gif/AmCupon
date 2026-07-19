@@ -1,13 +1,10 @@
 import Link from "next/link";
 import { Metadata } from "next";
 
-// ── LINKURI AFILIATE ── de actualizat dupa aprobare pe 2Performant ─────────
-// Trendiva, Viada si DYFashion sunt programe REALE pe 2Performant (categoria
-// Fashion), NU sunt inca aprobate pentru contul AmCupon — aplica din
-// 2Performant > Affiliate Programs, apoi inlocuieste cu quicklink-ul real.
-const LINK_TRENDIVA  = "https://trendiva.ro";  // aplicare necesara pe 2Performant
-const LINK_VIADA     = "https://viada.ro";     // aplicare necesara pe 2Performant
-const LINK_DYFASHION = "https://dyfashion.ro"; // aplicare necesara pe 2Performant
+// ── LINKURI AFILIATE ── quicklink-uri reale 2Performant (aprobate 17.07.2026) ──
+const LINK_TRENDIVA  = "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftrendiva.ro";
+const LINK_VIADA     = "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.viada.ro";
+const LINK_DYFASHION = "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dyfashion.ro";
 // ─────────────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
