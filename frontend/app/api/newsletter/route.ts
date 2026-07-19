@@ -252,18 +252,25 @@ export async function POST(request: Request) {
       }),
     });
 
-    if (res.status === 201 || res.status === 204) {
-      // Email de bun venit doar pt. abonarile generice — alertele de pret
-      // au deja confirmare inline in PriceAlert.tsx, nu trimitem dublu.
+    if (res.status === 201) {
+      // Contact NOU (Brevo intoarce 201 doar la prima creare). Email de bun
+      // venit doar pt. abonarile generice — alertele de pret au deja
+      // confirmare inline in PriceAlert.tsx, nu trimitem dublu.
       // AWAITED (nu fire-and-forget): pe Edge altfel nu apuca sa se trimita.
       const welcomeSent = magazin ? false : await sendWelcomeEmail(email, API_KEY);
       return Response.json({ ok: true, welcomeSent }, { headers: corsHeaders });
     }
+    if (res.status === 204) {
+      // Contact deja existent, actualizat (updateEnabled:true) — NU retrimitem
+      // welcome. Bug fix 20.07.2026: site-ul are 5+ formulare de abonare pe
+      // aceeasi pagina (popup, footer, homepage etc.) — daca cineva se
+      // reaboneaza prin alt formular, primea un al 2-lea email de bun venit.
+      return Response.json({ ok: true, existing: true, welcomeSent: false }, { headers: corsHeaders });
+    }
     const data = await res.json().catch(() => ({}));
     if (res.status === 400 && (data?.code === "duplicate_parameter" || data?.code === "contact_already_in_list")) {
-      // Contact deja existent — trimitem totusi welcome (abonare generica), awaited.
-      const welcomeSent = magazin ? false : await sendWelcomeEmail(email, API_KEY);
-      return Response.json({ ok: true, existing: true, welcomeSent }, { headers: corsHeaders });
+      // Contact deja existent — NU retrimitem welcome (vezi nota de mai sus).
+      return Response.json({ ok: true, existing: true, welcomeSent: false }, { headers: corsHeaders });
     }
     console.error("[newsletter] Brevo API error:", res.status, JSON.stringify(data));
     // Returnam mesaj mai specific in functie de tipul erorii
