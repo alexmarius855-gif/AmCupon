@@ -12,6 +12,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 20.07.2026 (fix email dublu la abonare):**
+- Alex a raportat ca primeste 2 email-uri la abonarea la newsletter. Cauza: site-ul are 5+ formulare
+  de abonare independente (`NewsletterPopup`, `Footer`, `HomeClient`, `NewsletterCTA`, `NewsletterForm`)
+  — daca cineva se reaboneaza printr-un alt formular, `route.ts` trimitea oricum un nou welcome email.
+  Root cause exact: raspunsul Brevo `204` (contact existent, actualizat) era tratat identic cu `201`
+  (contact nou) — ambele declansau `sendWelcomeEmail()`. Acum welcome se trimite DOAR pe `201`.
+- Newsletter-ul pare sa functioneze acum (Alex confirma ca primeste email-uri) — vezi "Probleme active"
+  pentru nota de verificare a sender-ului Brevo, nu presupune inca rezolvat 100% fara confirmare explicita.
+
 **UPDATE 17.07.2026 (import Awin 16 magazine + redesign carduri magazin + pagina noua /asigurari):**
 - **Import Awin real** (`scripts/import_awin_links.py`, CSV "Linkuri si produse" — format diferit de "Joined Programmes") — 16 magazine noi cu deep-link universal Awin (`cread.php`, nu linkuri de banner specifice/expirate): Abelssoft, Air Serbia, CarmelLimo, Click & Grow, Electrolux.ro, GetResponse, HideMy.Name, NUTRACEUTICS RO/HU, NordPass, O&O Software, PandaHall, Philips.ro, SilverRushStyle, Tenergy, Trampoline Parts, zChocolat. Integrate manual in paginile de nisa relevante (nu doar grid generic). 9 advertiseri Awin sarite (domeniu incert sau deja pe alta retea) — vezi Probleme active.
 - **Redesign complet al cardurilor de magazin** — `frontend/app/components/MagazinCard.tsx` (nou, partajat) inlocuieste cardul bland "logo mic + Verifica ofertele curente + buton simplu" pe **27 de pagini** (23 pagini de nisa + `/categorii/[slug]` + `/craciun`, `/gadgets`, `/piese-auto`, `/cautare` gasite intr-un sweep ulterior). Card nou: logo mai mare, badge categorie, cod cupon mascat/dezvaluit cu copy-to-clipboard (fost doar in `CategorieClient.tsx`, acum peste tot). **Nu inventeaza pro/contra per magazin** — doar date reale din output.json; comparatii editoriale scrise de mana raman doar pe paginile curate (`/vpn` etc.).
@@ -230,7 +239,7 @@ platite/risc de ban). Schimba vocea cu `--voice ro-RO-AlinaNeural` (feminin).
 | Problemă | Status | Acțiune necesară |
 |----------|--------|-------------------|
 | **Extensia Chrome = draft nefinalizat, niciodată trimisă la review** | Dashboard 02.07: 2 drafturi "Versiune nefinalizată" din 26.05 | Finalizează listing-ul (screenshot 1280x800 + descriere + privacy URL /confidentialitate + justificare permisiuni) → "Trimite spre examinare". Șterge draftul duplicat. |
-| **Newsletter/welcome email nu se trimit** | Brevo respinge cu `HTTP 400 Sender is invalid/inactive` | Verifică `newsletter@amcupon.ro` în Brevo → Settings → Senders. 4 abonați reali așteaptă. Blochează și alertele de preț (folosesc același sender). |
+| **Newsletter — posibil deblocat (de confirmat)** | Alex a raportat 20.07.2026 că primește email-uri — sender-ul Brevo pare validat de-acum (spre deosebire de blocajul `HTTP 400 Sender is invalid` documentat anterior). Verifică explicit în Brevo → Settings → Senders înainte să presupui rezolvat. | Dacă e confirmat validat, șterge acest rând și marchează alertele de preț ca funcționale. |
 | **Alerte de preț (`check_price_alerts.py`) nu pot citi/scrie abonamentele** | Atributul custom `ALERT_STORES` nu există încă în Brevo | Brevo → Contacts → Settings → Contact attributes → adaugă atribut tip **Text** cu numele exact `ALERT_STORES`. Fără el, tag-ul de magazin se pierde silențios (Brevo ignoră atribute necunoscute). |
 | Proiectul Supabase (`reviews`) se poate re-pauza automat | Free tier — pauzează după ~1 săptămână fără activitate API. **Găsit pauzat + repornit din nou pe 17.07.2026** (al 2-lea episod cunoscut) | Dacă recenziile dispar brusc, verifică status proiect (Supabase dashboard sau MCP `list_projects`) și repornește cu `restore_project`. Risc recurent pe free tier dacă traficul pe `/cod-reducere/*` scade — merită verificat periodic, nu doar cand se sesizeaza o problema. |
 | `FACEBOOK_PAGE_TOKEN` lipsește | Autopost Facebook blocat | Generează token + adaugă în GitHub Secrets. Workaround manual: `POSTEAZA-FB.bat` pe Desktop |
