@@ -12,6 +12,33 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 20.07.2026 (audit vizual complet — 1 bug live + 2 bug-uri pipeline gasite/reparate):**
+- Cerere Alex: verifica fiecare pagina + fiecare banner cum arata. Screenshot-ul din Browser pane nu a
+  functionat deloc in sesiune (a picat si pe example.com — problema de infrastructura, nu de site) —
+  verificarea s-a facut prin DOM (imagini rupte, culori efective) + fetch pe toate rutele + log-uri
+  reale din GitHub Actions. Homepage + fiecare tip de pagina (magazin, categorie, nisa, brand template,
+  cadouri, comparatii, unelte, blog) — 0 imagini rupte, 0 resturi tema veche (auriu/portocaliu), tema
+  dark consistenta peste tot.
+- **BUG live gasit**: `frontend/app/blog/[slug]/page.tsx` construia titlul manual cu `${post.title} |
+  AmCupon.ro`, dar `post.title` (din `generate_blog.py`) include deja " | AmCupon.ro" -> titlul aparea
+  DUBLAT in tab/SERP pe toate cele 200+ articole ("...Iulie 2026 | AmCupon.ro | AmCupon.ro"). Reparat —
+  foloseste direct `post.title`. Verificat ca restul paginilor (`categorii`, `cod-reducere`, `cadouri`,
+  `top`, `oferte-azi` etc.) construiesc titlul din campuri care NU includ deja numele site-ului, deci nu
+  au aceeasi problema.
+- **BUG pipeline gasit (silentios de 3 saptamani)**: fluxul video zilnic (`generate_video_daily.py`,
+  documentat "LIVE" din 29.06.2026) nu a produs NICIODATA `frontend/public/video-today.mp4` — verificat
+  cu `git log` (fisierul n-a existat niciodata in istoric) + log-uri reale din Actions: **ffmpeg nu e
+  preinstalat pe `ubuntu-latest`**, pasul degradeaza silentios ("ffmpeg negasit in PATH — skip video")
+  fara sa pice pipeline-ul, deci nimeni nu observa. Reparat — pas nou `sudo apt-get install ffmpeg` in
+  workflow (doar pe rularea completa de dimineata).
+- **BUG pipeline gasit**: `telegram_daily.py` trimite mesajul cu `parse_mode: Markdown`, dar titlurile
+  reale de promotie pot contine `_`/`*`/`` ` ``/`[` neescapate (ex. Videt: "...soare_15-21.07.2026") care
+  rup parsing-ul Telegram ("can't find end of the entity") — postarea de azi a picat din cauza asta.
+  Reparat — `esc_md()` pe `nume`/`titlu` inainte de interpolare.
+- Alte descoperiri din log-urile Actions (NU reparate, necesita actiune Alex): Facebook posting da
+  `Bad signature` (OAuthException) — tokenul e setat dar invalid/expirat, nu doar "lipseste" cum scria
+  inainte in acest fisier; vezi Probleme active.
+
 **UPDATE 20.07.2026 (email bun-venit cu oferte reale + postari zilnice reorganizate + IndexNow corectat):**
 - **`sendWelcomeEmail()` (`frontend/app/api/newsletter/route.ts`) nu mai afiseaza 5 magazine hardcodate**
   (emag/fashiondays/drmax/noriel/carturesti, static indiferent de ce e activ acum). Functie noua
@@ -269,7 +296,7 @@ platite/risc de ban). Schimba vocea cu `--voice ro-RO-AlinaNeural` (feminin).
 | **Newsletter — posibil deblocat (de confirmat)** | Alex a raportat 20.07.2026 că primește email-uri — sender-ul Brevo pare validat de-acum (spre deosebire de blocajul `HTTP 400 Sender is invalid` documentat anterior). Verifică explicit în Brevo → Settings → Senders înainte să presupui rezolvat. | Dacă e confirmat validat, șterge acest rând și marchează alertele de preț ca funcționale. |
 | **Alerte de preț (`check_price_alerts.py`) nu pot citi/scrie abonamentele** | Atributul custom `ALERT_STORES` nu există încă în Brevo | Brevo → Contacts → Settings → Contact attributes → adaugă atribut tip **Text** cu numele exact `ALERT_STORES`. Fără el, tag-ul de magazin se pierde silențios (Brevo ignoră atribute necunoscute). |
 | Proiectul Supabase (`reviews`) se poate re-pauza automat | Free tier — pauzează după ~1 săptămână fără activitate API. **Găsit pauzat + repornit din nou pe 17.07.2026** (al 2-lea episod cunoscut) | Dacă recenziile dispar brusc, verifică status proiect (Supabase dashboard sau MCP `list_projects`) și repornește cu `restore_project`. Risc recurent pe free tier dacă traficul pe `/cod-reducere/*` scade — merită verificat periodic, nu doar cand se sesizeaza o problema. |
-| `FACEBOOK_PAGE_TOKEN` lipsește | Autopost Facebook blocat | Generează token + adaugă în GitHub Secrets. Workaround manual: `POSTEAZA-FB.bat` pe Desktop |
+| **`FACEBOOK_PAGE_TOKEN` setat dar invalid** | Corectat 20.07.2026: nu "lipsește" cum scria — secretul E setat, dar Actions dă `Bad signature` (OAuthException) la fiecare rulare, adica tokenul a expirat/e gresit | Regenerează Page Access Token (Meta for Developers → tools → Graph API Explorer, cere long-lived token) + actualizează în GitHub Secrets. Workaround manual: `POSTEAZA-FB.bat` pe Desktop |
 | `TRADETRACKER_SITE_ID/API_KEY` lipsesc | Cod gata, neactiv | Adaugă în GitHub Secrets dacă se folosește TradeTracker |
 | **CJ Affiliate — cont creat, 0 date importate** | Alex a aplicat, dar n-a trimis inca export CSV | Exporta din CJ dashboard → Advertisers → programe "joined" (CSV), trimite-l ca sa fie importat la fel ca Awin |
 | **5 magazine Awin sarite — domeniu neconfirmat** | Diecast, GearUP, Tvrzenaskla/Momanio Europe, Unizdrav cz/sk/hu, Skytours US — vezi `scripts/import_awin_links.py` | Alex confirma domeniul real (site.ro/.com) pentru fiecare, sau le lasam sarite definitiv |
@@ -501,7 +528,7 @@ Quicklinks: `https://event.2performant.com/events/click?ad_type=quicklink&aff_co
 | `BREVO_API_KEY` | ✅ (Campaigns/Contacts API — diferit de SMTP, vezi nota jos) |
 | `BREVO_SMTP_USER/PASS` | ✅ (doar pentru `--test` local, NU pentru campanii reale) |
 | `NEXT_PUBLIC_ADSENSE_ID` | ✅ `ca-pub-1744566936173747` |
-| `FACEBOOK_PAGE_TOKEN` | ❌ LIPSEȘTE — blochează autopost Facebook |
+| `FACEBOOK_PAGE_TOKEN` | ⚠️ setat dar EXPIRAT/invalid (`Bad signature`, verificat 20.07.2026) — vezi Probleme active |
 | `TRADETRACKER_SITE_ID/API_KEY` | ❌ LIPSESC |
 
 **Gotcha Brevo**: `BREVO_API_KEY` (Campaigns/Contacts API) și `BREVO_SMTP_USER/PASS` (SMTP) sunt credențiale DIFERITE, nu interschimbabile. Workflow-ul folosește API_KEY pentru trimiterea reală.

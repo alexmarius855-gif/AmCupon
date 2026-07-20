@@ -106,7 +106,9 @@ export async function generateMetadata({
   // nu deprecieze semnalul de calitate al site-ului pentru cele cu continut real.
   const faraPromoActiva = /\b0 promotii active\b/.test(post.excerpt);
   return {
-    title: `${post.title} | AmCupon.ro`,
+    // post.title include deja " | AmCupon.ro" (vezi generate_blog.py) — nu re-adauga,
+    // altfel titlul apare dublat in tab/SERP ("... | AmCupon.ro | AmCupon.ro")
+    title: post.title,
     description: post.excerpt,
     alternates: { canonical: pageUrl },
     ...(faraPromoActiva ? { robots: { index: false, follow: true } } : {}),

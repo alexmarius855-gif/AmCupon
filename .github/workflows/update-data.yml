@@ -37,6 +37,14 @@ jobs:
           python --version
           pip install -r scripts/requirements.txt
 
+      # ffmpeg NU mai vine preinstalat pe ubuntu-latest (verificat 20.07.2026 —
+      # generate_video_daily.py degradeaza silentios cu "ffmpeg negasit in PATH",
+      # fara sa pice pipeline-ul; video-today.mp4 nu a fost generat NICIODATA de
+      # cand a fost construit fluxul pe 29.06.2026). Doar pe rularea completa.
+      - name: Instaleaza ffmpeg (flux video zilnic)
+        if: env.IS_FULL_DAILY == 'true'
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
       # ── 3. 2Performant data — API direct ──────────────────────────────────
       - name: Fetch date 2Performant via API
         working-directory: scripts

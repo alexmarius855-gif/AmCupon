@@ -57,11 +57,20 @@ top5 = valide[:5]
 # ── Formatare mesaj ───────────────────────────────────────────────────────────
 EMOJII = ["🥇", "🥈", "🥉", "4️⃣", "5️⃣"]
 
+def esc_md(s: str) -> str:
+    """Escape caracterele speciale Telegram Markdown (legacy) — altfel un
+    singur '_'/'*'/'`'/'[' nebalansat intr-un titlu real de promotie (ex.
+    "...soare_15-21.07.2026") rupe parsing-ul intregului mesaj (eroare
+    "can't find end of the entity", vazuta in productie 20.07.2026)."""
+    for ch in ("_", "*", "`", "["):
+        s = s.replace(ch, "\\" + ch)
+    return s
+
 def format_oferta(m: dict, pos: int) -> str:
     slug   = m["magazin"]
-    nume   = slug.split(".")[0].replace("-", " ").title()
+    nume   = esc_md(slug.split(".")[0].replace("-", " ").title())
     promo  = m["promotii"][0]
-    titlu  = promo.get("nume", "Promotie activa")
+    titlu  = esc_md(promo.get("nume", "Promotie activa"))
     cod    = promo.get("cod_cupon", "")
     zile   = m.get("zile_ramase", 0)
     succes = m.get("procent_succes", 0)
