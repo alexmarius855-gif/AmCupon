@@ -1,7 +1,14 @@
 """
 IndexNow — anunta motoarele de cautare instant cand apar pagini noi.
-Trimite la api.indexnow.org (distribuit automat la Google, Bing, Yandex)
-+ ping sitemap direct la Google.
+Trimite la api.indexnow.org — distribuit automat la Bing, Yandex, Naver, Seznam.
+
+IMPORTANT (verificat 20.07.2026): Google NU participa la protocolul IndexNow
+(testat de Google din 2021, niciodata adoptat oficial — vezi ppc.land/googles-absence-
+from-indexnow-raises-questions-about-web-indexing-standards). Pentru Google specific,
+singurele mecanisme reale raman: sitemap.xml (deja corect, vezi frontend/app/sitemap.ts)
++ Google Search Console "Request Indexing" manual per URL (doar Alex poate face asta,
+cota ~10-12 URL-uri/zi). Acest script NU rezolva "1 pagina indexata din 2600" — rezolva
+doar viteza de indexare pe Bing/Yandex, care raman surse secundare de trafic fata de Google.
 
 Trimitem URL-uri NOI fata de rularea anterioara (diff vs data/indexnow_seen.json).
 La prima rulare dupa reset: trimite TOATE paginile statice + cele cu promotii.
@@ -26,7 +33,7 @@ COMPARISONS_PATH = os.path.join(repo_root, "frontend", "public", "comparisons.js
 # Toate paginile statice importante — trimise o singura data (raman in seen dupa)
 STATIC_PAGES = [
     "/", "/radar", "/oferte-azi", "/toate-magazinele", "/categorii", "/blog",
-    "/produse", "/top", "/servicii", "/comparatii",
+    "/produse", "/top", "/servicii", "/comparatii", "/asigurari",
     # Nise principale
     "/fashion", "/frumusete", "/electronice", "/gadgets", "/sport", "/copii",
     "/animale", "/casa", "/calatorie", "/carti", "/parfumuri", "/sanatate",
@@ -61,18 +68,6 @@ def load_json(path, default):
     # utf-8-sig: tolereaza BOM-ul UTF-8 (altfel json.load crapa si rupe pasul din pipeline)
     with open(path, encoding="utf-8-sig") as f:
         return json.load(f)
-
-
-def ping_google_sitemap():
-    sitemap_url = f"{BASE_URL}/sitemap.xml"
-    try:
-        resp = requests.get(
-            f"https://www.google.com/ping?sitemap={sitemap_url}",
-            timeout=15
-        )
-        print(f"Google sitemap ping: {resp.status_code}")
-    except Exception as e:
-        print(f"Google sitemap ping eroare: {e}")
 
 
 def main():
@@ -110,7 +105,6 @@ def main():
 
     if not new_urls:
         print("IndexNow: nimic nou de trimis.")
-        ping_google_sitemap()
         return
 
     print(f"IndexNow: {len(new_urls)} URL-uri noi de trimis...")
@@ -135,8 +129,6 @@ def main():
             print(f"IndexNow: raspuns neasteptat — {resp.text[:300]}")
     except Exception as e:
         print(f"IndexNow: eroare la trimitere — {e}")
-
-    ping_google_sitemap()
 
 
 if __name__ == "__main__":

@@ -79,10 +79,56 @@ async function getExistingAlertStores(email: string, apiKey: string): Promise<st
   }
 }
 
+// ── Oferte reale pt. welcome email ──────────────────────────────────────────
+// Edge runtime nu are fs — luam output.json prin fetch (acelasi mecanism ca
+// homepage-ul). Daca fetch-ul pica, blocul de oferte nu se randeaza deloc —
+// NU cadem pe o lista hardcodata (lectie din auditul de onestitate 03.07.2026,
+// vezi CLAUDE.md: nu afisam date fabricate/stale ca fiind reale).
+type OfertaEmail = { slug: string; nume: string; cod: string; procent: string };
+
+function escHtml(s: string): string {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+
+function extrageProcentEmail(...texte: Array<string | undefined>): string {
+  for (const t of texte) {
+    if (!t) continue;
+    const m = t.match(/(\d{1,2})\s*%/);
+    if (m) return `-${m[1]}%`;
+  }
+  return "";
+}
+
+async function getTopOferte(limit = 6): Promise<OfertaEmail[]> {
+  try {
+    const res = await fetch("https://amcupon.ro/output.json", { cache: "no-store" });
+    if (!res.ok) return [];
+    const toate = (await res.json()) as Array<Record<string, unknown>>;
+    const cuOferta = toate.filter(
+      (m) => m?.are_promotie && Array.isArray(m?.promotii) && (m.promotii as unknown[]).length > 0
+    );
+    cuOferta.sort((a, b) => ((b.scor_final as number) || 0) - ((a.scor_final as number) || 0));
+    return cuOferta.slice(0, limit).map((m) => {
+      const slug = String(m.magazin || "");
+      const numeBrut = String(m.magazin_display || slug.split(".")[0].replace(/-/g, " "));
+      const nume = numeBrut.replace(/\b\w/g, (c) => c.toUpperCase());
+      const promos = m.promotii as Array<Record<string, unknown>>;
+      const promo = promos.find((p) => p?.cod_cupon) || promos[0] || {};
+      const cod = String(promo.cod_cupon || "").trim();
+      const titlu = String(promo.nume || promo.descriere || "");
+      const procent = extrageProcentEmail(titlu, promo.descriere as string | undefined);
+      return { slug, nume, cod, procent };
+    }).filter((o) => o.slug);
+  } catch {
+    return [];
+  }
+}
+
 // ── Welcome email ────────────────────────────────────────────────────────────
 // IMPORTANT: pe Vercel Edge trebuie AWAITED inainte de a returna raspunsul,
 // altfel isolate-ul se opreste si emailul nu se trimite. Returneaza succes.
 async function sendWelcomeEmail(email: string, apiKey: string): Promise<boolean> {
+  const oferte = await getTopOferte(6);
   const html = `<!DOCTYPE html>
 <html lang="ro">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bun venit la AmCupon.ro!</title></head>
@@ -124,14 +170,19 @@ async function sendWelcomeEmail(email: string, apiKey: string): Promise<boolean>
           <span>${c.emoji}</span>${c.label}
         </a>`).join("")}
       </div>
-      <!-- Magazine top -->
-      <p style="color:#6b7280;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 12px;">Magazine cu oferte active</p>
+      ${oferte.length ? `
+      <!-- Oferte active chiar acum (reale, din output.json) -->
+      <p style="color:#6b7280;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 12px;">Oferte active chiar acum</p>
       <div style="margin-bottom:32px;">
-        ${["emag.ro","fashiondays.ro","drmax.ro","noriel.ro","carturesti.ro"].map(m => {
-          const label = m.split(".")[0].charAt(0).toUpperCase() + m.split(".")[0].slice(1);
-          return `<a href="https://amcupon.ro/cod-reducere/${m}" style="display:inline-block;margin:4px;padding:6px 14px;background:#f0fdfa;border:1px solid #e6d5a8;border-radius:20px;text-decoration:none;color:#0f766e;font-size:13px;font-weight:700;">Cod ${label}</a>`;
+        ${oferte.map(o => {
+          const tag = escHtml(o.procent || (o.cod ? "COD" : "OFERTĂ"));
+          const detaliu = o.cod ? ` — cod <strong>${escHtml(o.cod)}</strong>` : "";
+          return `<a href="https://amcupon.ro/cod-reducere/${encodeURIComponent(o.slug)}" style="display:flex;align-items:center;gap:10px;padding:12px 14px;margin-bottom:8px;background:#f0fdfa;border:1px solid #99f6e4;border-radius:10px;text-decoration:none;color:#0f766e;font-size:13px;font-weight:600;">
+            <span style="background:#0d9488;color:#fff;font-weight:900;font-size:11px;padding:3px 8px;border-radius:6px;white-space:nowrap;">${tag}</span>
+            <span>${escHtml(o.nume)}${detaliu}</span>
+          </a>`;
         }).join("")}
-      </div>
+      </div>` : ""}
       <!-- Extensie -->
       <div style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:12px;padding:20px;margin-bottom:24px;">
         <p style="margin:0 0 8px;color:#0c4a6e;font-weight:700;font-size:14px;">🧩 Extensia Chrome — reduceri automate</p>

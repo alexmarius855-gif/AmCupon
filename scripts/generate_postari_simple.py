@@ -47,22 +47,61 @@ LUNA = LUNI[azi.month - 1]
 AN   = azi.year
 DATA = azi.strftime("%d.%m.%Y")
 
-# Hashtag-uri pe categorie (fallback generic)
+# Hashtag-uri pe categorie (fallback generic) — sluguri REALE din output.json (categorie_slug),
+# verificate direct pe date (nu coincid cu sluguri-le din CLAUDE.md, care sunt pt /categorii/[slug])
 HASHTAG_CATEG = {
     "fashion": "#reduceri #moda #fashion #haine #romania",
     "beauty": "#reduceri #cosmetice #beauty #skincare #romania",
-    "pharma": "#reduceri #farmacie #sanatate #suplimente #romania",
-    "health-personal-care": "#reduceri #sanatate #ingrijire #romania",
-    "electronics-itc": "#reduceri #electronice #gadgeturi #tech #romania",
-    "sports-outdoors": "#reduceri #sport #fitness #outdoor #romania",
-    "babies-kids-toys": "#reduceri #copii #jucarii #bebelusi #romania",
-    "home-garden": "#reduceri #casa #gradina #mobilier #romania",
-    "automotive": "#reduceri #auto #piese #masina #romania",
-    "travel": "#reduceri #calatorii #vacanta #travel #romania",
-    "hosting": "#reduceri #hosting #website #wordpress #romania",
-    "software-business": "#reduceri #software #ai #tools #romania",
+    "sanatate": "#reduceri #sanatate #farmacie #suplimente #romania",
+    "electronice": "#reduceri #electronice #gadgeturi #tech #romania",
+    "sport": "#reduceri #sport #fitness #outdoor #romania",
+    "copii": "#reduceri #copii #jucarii #bebelusi #romania",
+    "casa-gradina": "#reduceri #casa #gradina #mobilier #romania",
+    "auto-moto": "#reduceri #auto #moto #piese #masina #romania",
+    "calatorii": "#reduceri #calatorii #vacanta #travel #romania",
+    "software": "#reduceri #software #ai #tools #romania",
+    "financiar": "#reduceri #asigurari #financiar #romania",
+    "marketplace": "#reduceri #marketplace #oferte #romania",
+    "carti-educatie": "#reduceri #carti #educatie #romania",
+    "bijuterii": "#reduceri #bijuterii #accesorii #romania",
+    "animale": "#reduceri #animale #petshop #romania",
+    "mancare-bauturi": "#reduceri #mancare #bauturi #romania",
+    "servicii": "#reduceri #servicii #romania",
+    "cadouri-flori": "#reduceri #cadouri #flori #romania",
 }
 HASHTAG_DEFAULT = "#reduceri #coduri #cupoane #oferte #romania"
+
+# Nume RO afisabil per categorie (pentru sectiuni/index)
+CATEG_LABEL = {
+    "fashion": "Fashion", "beauty": "Beauty", "sanatate": "Sanatate",
+    "electronice": "Electronice", "sport": "Sport", "copii": "Copii",
+    "casa-gradina": "Casa & Gradina", "auto-moto": "Auto-Moto",
+    "calatorii": "Calatorii", "software": "Software",
+    "financiar": "Financiar & Asigurari", "marketplace": "Marketplace",
+    "carti-educatie": "Carti", "bijuterii": "Bijuterii", "animale": "Animale",
+    "mancare-bauturi": "Mancare & Bauturi", "servicii": "Servicii",
+    "cadouri-flori": "Cadouri & Flori",
+}
+
+# Calendarul saptamanal (vezi CLAUDE.md / 00-INDEX) — tema zilei apare prima in fisier
+CALENDAR_SAPTAMANAL = {
+    0: ("Fashion & Beauty",     ["fashion", "beauty"]),                # Luni
+    1: ("Tech & Software",      ["electronice", "software"]),          # Marti
+    2: ("Turism",               ["calatorii"]),                        # Miercuri
+    3: ("Software & Financiar", ["software", "financiar"]),            # Joi
+    4: ("Reduceri Mari",        []),                                   # Vineri — toate, sortate
+    5: ("Casa, Pet & Copii",    ["casa-gradina", "animale", "copii"]),  # Sambata
+    6: ("Recap Saptamana",      []),                                   # Duminica — toate, sortate
+}
+
+# Variatie de hook per categorie — evita ca toate postarile sa sune identic
+HOOK_EMOJI_CATEG = {
+    "fashion": "👗", "beauty": "💄", "sanatate": "💊", "electronice": "💻",
+    "sport": "🏃", "copii": "🧸", "casa-gradina": "🏡", "auto-moto": "🚗",
+    "calatorii": "✈️", "software": "⚙️", "financiar": "🛡️", "bijuterii": "💎",
+    "animale": "🐾", "mancare-bauturi": "🍽️", "servicii": "🔧", "cadouri-flori": "🎁",
+    "marketplace": "🛍️", "carti-educatie": "📚",
+}
 
 
 def nume(slug: str) -> str:
@@ -95,13 +134,14 @@ def construieste_blocuri(m: dict):
     zile   = promo.get("zile_ramase", m.get("zile_ramase", 0)) or 0
     proc   = extrage_procent(titlu, promo.get("descriere"))
 
-    # ── HOOK ──
+    # ── HOOK (emoji variat pe categorie, nu tot 🔥 la fel) ──
+    emoji = HOOK_EMOJI_CATEG.get(categ, "🔥")
     if proc:
-        hook_story = f"🔥 {proc} la {n}!"
-        hook_wall  = f"🔥 {proc} la {n} — activ acum"
+        hook_story = f"{emoji} {proc} la {n}!"
+        hook_wall  = f"{emoji} {proc} la {n} — activ acum"
     else:
-        hook_story = f"🔥 Reducere {n} azi!"
-        hook_wall  = f"🔥 Reducere activa la {n}"
+        hook_story = f"{emoji} Reducere {n} azi!"
+        hook_wall  = f"{emoji} Reducere activa la {n}"
 
     # ── STORY (ultra-scurt) ──
     story = [hook_story]
@@ -117,11 +157,17 @@ def construieste_blocuri(m: dict):
     # linia de oferta (taie daca e prea lunga)
     of = titlu if len(titlu) <= 90 else titlu[:87] + "..."
     wall.append(f"✅ {of}")
+    # a 2-a linie de continut real, doar daca descrierea aduce ceva nou fata de titlu
+    descriere = (promo.get("descriere") or "").strip()
+    are_descriere_utila = descriere and descriere.lower() != titlu.lower() and len(descriere) > 10
+    if are_descriere_utila:
+        d = descriere if len(descriere) <= 100 else descriere[:97] + "..."
+        wall.append(f"ℹ️ {d}")
     if cod:
         wall.append(f"🎟️ Cod verificat: {cod}")
     if 0 < zile <= 7:
         wall.append(f"⏳ Expiră în {zile} {'zi' if zile == 1 else 'zile'} — prinde-l până nu zboară")
-    else:
+    elif not are_descriere_utila:
         wall.append("✅ Verificat azi de echipa AmCupon")
     wall += [
         "",
@@ -134,6 +180,7 @@ def construieste_blocuri(m: dict):
         "magazin": slug,
         "nume": n,
         "categorie": m.get("categorie", ""),
+        "categorie_slug": categ,
         "cod": cod,
         "procent": proc,
         "zile_ramase": zile,
@@ -151,18 +198,17 @@ cu_oferta.sort(key=lambda x: -x.get("scor_final", 0))
 
 blocuri = [construieste_blocuri(m) for m in cu_oferta]
 
-linii = [
-    f"POSTĂRI GATA DE COPIAT — AmCupon.ro — {DATA}",
-    f"{len(blocuri)} magazine cu reducere activă · sortate (cele mai bune sus)",
-    "=" * 58,
-    "",
-    "CUM FOLOSEȘTI: alegi un magazin, copiezi blocul STORY (pt insta/fb story)",
-    "sau PERETE (pt postare normală). Linkul duce pe pagina de pe site.",
-    "",
-]
-
+pe_categorie = {}
 for b in blocuri:
-    linii += [
+    pe_categorie.setdefault(b["categorie_slug"], []).append(b)
+
+zi_idx = azi.weekday()  # 0=Luni ... 6=Duminica
+tema_zi, categ_zi = CALENDAR_SAPTAMANAL.get(zi_idx, ("", []))
+azi_blocuri = [b for b in blocuri if b["categorie_slug"] in categ_zi] if categ_zi else []
+
+
+def randuri_bloc(b: dict) -> list:
+    return [
         "═" * 50,
         f"🏪 {b['nume'].upper()}" + (f"   [{b['procent']}]" if b['procent'] else ""),
         "═" * 50,
@@ -177,6 +223,45 @@ for b in blocuri:
         "",
         "",
     ]
+
+
+linii = [
+    f"POSTĂRI GATA DE COPIAT — AmCupon.ro — {DATA}",
+    f"{len(blocuri)} magazine cu reducere activă · {len(pe_categorie)} categorii",
+] + ([f"📅 TEMA ZILEI: {tema_zi}"] if tema_zi else []) + [
+    "=" * 58,
+    "",
+    "CUM FOLOSEȘTI: alegi un magazin, copiezi blocul STORY (pt insta/fb story)",
+    "sau PERETE (pt postare normală). Linkul duce pe pagina de pe site.",
+    "",
+    "📚 INDEX RAPID (Ctrl+F eticheta ca sa sari direct la o categorie):",
+]
+for categ, lista in sorted(pe_categorie.items(), key=lambda kv: -len(kv[1])):
+    label = CATEG_LABEL.get(categ, categ or "Diverse")
+    linii.append(f"   • {label} ({len(lista)})")
+linii += ["", "=" * 58, ""]
+
+if azi_blocuri:
+    linii += [
+        f"🎯🎯🎯 ASTAZI — {tema_zi.upper()} ({len(azi_blocuri)} magazine) 🎯🎯🎯",
+        "Recomandare: posteaza din sectiunea asta azi, restul e pentru alte zile.",
+        "",
+    ]
+    for b in azi_blocuri:
+        linii += randuri_bloc(b)
+    linii += ["", "▔" * 58, "REST — TOATE MAGAZINELE, GRUPATE PE CATEGORIE", "▔" * 58, ""]
+
+for categ, lista in sorted(pe_categorie.items(), key=lambda kv: -len(kv[1])):
+    label = CATEG_LABEL.get(categ, categ or "Diverse")
+    linii += [
+        "",
+        "┌" + "─" * 56 + "┐",
+        f"  📂 {label.upper()} ({len(lista)} magazine)",
+        "└" + "─" * 56 + "┘",
+        "",
+    ]
+    for b in lista:
+        linii += randuri_bloc(b)
 
 OUT_TXT.write_text("\n".join(linii), encoding="utf-8")
 OUT_JSON.write_text(json.dumps(blocuri, ensure_ascii=False, indent=2), encoding="utf-8")

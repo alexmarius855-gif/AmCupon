@@ -12,6 +12,33 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 20.07.2026 (email bun-venit cu oferte reale + postari zilnice reorganizate + IndexNow corectat):**
+- **`sendWelcomeEmail()` (`frontend/app/api/newsletter/route.ts`) nu mai afiseaza 5 magazine hardcodate**
+  (emag/fashiondays/drmax/noriel/carturesti, static indiferent de ce e activ acum). Functie noua
+  `getTopOferte()` face `fetch("https://amcupon.ro/output.json")` (edge runtime nu are `fs`), ia top 6
+  magazine cu promotie activa sortate `scor_final`, extrage cod/procent real. Daca fetch-ul pica, blocul
+  de oferte nu se randeaza deloc — NU cade pe lista veche fabricata (acelasi principiu de onestitate ca
+  auditul din 03.07.2026).
+  - `scripts/generate_postari_simple.py` era un dump plat de 2017 linii / 95 magazine, identic structurat
+  la fiecare magazin ("✅ Verificat azi de echipa AmCupon" ca filler generic). Acum: **index rapid** cu
+  numar de magazine per categorie la inceputul fisierului, **sectiune "ASTAZI"** care extrage magazinele
+  din tema zilei (`CALENDAR_SAPTAMANAL`, aceleasi categorii ca planul de continut), apoi restul grupat pe
+  categorie (nu mai e un flux nediferentiat). Hook-uri cu emoji specific per categorie (👗 fashion, 💊
+  sanatate etc, nu 🔥 la toate), plus o a 2-a linie de continut real din `descriere` promotiei cand difera
+  de titlu (mai putina umplutura identica). **Atentie**: `CATEG_LABEL`/`HASHTAG_CATEG`/`CALENDAR_SAPTAMANAL`
+  din acest script folosesc slug-urile REALE gasite in `categorie_slug` (fashion, beauty, sanatate,
+  electronice, sport, copii, casa-gradina, auto-moto, calatorii, software, financiar, marketplace,
+  carti-educatie, bijuterii, animale, mancare-bauturi, servicii, cadouri-flori) — sunt DIFERITE de slug-urile
+  din sectiunea "Categorii sluguri" mai jos (acelea sunt pt. `/categorii/[slug]`, engleza). Nu unifica din
+  greseala cele doua liste. Format JSON (`postari-zilnice.json`) ramane un array plat (`SocialItem[]`) —
+  `frontend/app/admin/social/page.tsx` il parseaza direct ca atare, nu schimba forma fara sa actualizezi si acel fisier.
+- **IndexNow**: `scripts/submit_indexnow.py` avea o functie moarta de 3 ani (`ping_google_sitemap`, endpoint
+  Google deprecat iunie 2023, 404 silentios) — stearsa. Descoperire importanta: **Google NU participa la
+  protocolul IndexNow** (testat de Google din 2021, niciodata adoptat — doar Bing/Yandex/Naver/Seznam/Yep).
+  Pentru indexare Google specifica, singurele mecanisme reale raman sitemap.xml + GSC "Request Indexing"
+  manual (cota ~10-12 URL/zi, doar Alex poate face asta). `/asigurari` era lipsa din `STATIC_PAGES` de la
+  crearea paginii — adaugata, si s-a rulat o trimitere reala (400 URL-uri noi confirmate la Bing/Yandex).
+
 **UPDATE 20.07.2026 (fix email dublu la abonare):**
 - Alex a raportat ca primeste 2 email-uri la abonarea la newsletter. Cauza: site-ul are 5+ formulare
   de abonare independente (`NewsletterPopup`, `Footer`, `HomeClient`, `NewsletterCTA`, `NewsletterForm`)
