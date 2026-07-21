@@ -1,28 +1,15 @@
 [
   {
-    "id": 271352,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/271311/original/271311.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=ea48a46c4&aff_code=541547473&campaign_unique=cc08e2536",
-    "landing_raw": "https://www.pensulemachiaj.ro",
-    "width": 1200,
-    "height": 1200,
-    "merchant": "pensulemachiaj.ro",
-    "merchant_slug": "pensulemachiaj-ro",
-    "name": "-80% STAR SUMMER & CELEBRITY SECRET BEAUTY BAG",
-    "category": "-80% STAR SUMMER & CELEBRITY SECRET BEAUTY BAG",
-    "b_type": "image"
-  },
-  {
-    "id": 271343,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/271302/original/271302.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=f9c5714fe&aff_code=541547473&campaign_unique=4b9a6d5ea",
-    "landing_raw": "https://www.kitunghii.ro",
-    "width": 1200,
-    "height": 1200,
-    "merchant": "kitunghii.ro",
-    "merchant_slug": "kitunghii-ro",
-    "name": "-80% STAR SUMMER, CELEBRITY SECRET BAG GRATUIT",
-    "category": "-80% STAR SUMMER, CELEBRITY SECRET BAG GRATUIT",
+    "id": 271407,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/271366/original/271366.png",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=d7326c828&aff_code=541547473&campaign_unique=9a6f02fef",
+    "landing_raw": "https://www.libris.ro/lp/transportgratuit",
+    "width": 1080,
+    "height": 1080,
+    "merchant": "libris.ro ",
+    "merchant_slug": "libris-ro",
+    "name": "Transport GRATUIT pentru ORICE colet, ORIUNDE în România!",
+    "category": "Transport GRATUIT pentru ORICE colet, ORIUNDE în România!",
     "b_type": "image"
   }
 ]
