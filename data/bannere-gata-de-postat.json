@@ -1,1 +1,28 @@
-[]
+[
+  {
+    "id": 271476,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/271435/original/271435.JPG",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=0f5bb14ed&aff_code=541547473&campaign_unique=9a6f02fef",
+    "landing_raw": "https://www.libris.ro/editura/nemira",
+    "width": 950,
+    "height": 949,
+    "merchant": "libris.ro ",
+    "merchant_slug": "libris-ro",
+    "name": "Reduceri aniversare  și TRANSPORT la doar 4.99 în Weekendul Nemira!",
+    "category": "Reduceri aniversare  și TRANSPORT la doar 4.99 în Weekendul Nemira!",
+    "b_type": "image"
+  },
+  {
+    "id": 271474,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/271433/original/271433.png",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=b68dd6b38&aff_code=541547473&campaign_unique=a5e9e1225",
+    "landing_raw": "https://answear.ro/s/final-sale?utm_medium=affiliate&utm_source=2parale&utm_campaign=final_sale_072026",
+    "width": 627,
+    "height": 627,
+    "merchant": "answear.ro ",
+    "merchant_slug": "answear-ro",
+    "name": "FINAL SALE ",
+    "category": "FINAL SALE ",
+    "b_type": "image"
+  }
+]
