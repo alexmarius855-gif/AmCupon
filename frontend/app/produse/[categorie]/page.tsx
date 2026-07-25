@@ -99,9 +99,10 @@ export default async function ProduseCategorieePage(
     },
   };
 
-  // Calculat o singura data (nu in interiorul .map) - React 19 flags Date.now() ca impur
-  // daca e apelat repetat in timpul randarii; oricum toate produsele trebuie sa aiba
-  // aceeasi data de valabilitate, nu una recalculata per-item.
+  // Calculat o singura data (nu in interiorul .map) - toate produsele trebuie sa aiba
+  // aceeasi data de valabilitate, nu una recalculata per-item. Server Component, deci
+  // Date.now() e sigur aici, dar regula react-hooks/purity il flags oricum.
+  // eslint-disable-next-line react-hooks/purity -- Server Component, valoare stabila per generare
   const priceValidUntil = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString().split("T")[0];
 
   const itemListJsonLd = topProduse.length > 0 ? {

@@ -56,6 +56,7 @@ export default function Navbar() {
 
   function handleSelect(slug: string) {
     setSearch(""); setShowDropdown(false); setMenuOpen(false);
+    // eslint-disable-next-line react-hooks/immutability -- identic cu handleSearchSubmit de mai jos (nesemnalat acolo); window.location nu e stare React
     window.location.href = `/cod-reducere/${slug}`;
   }
 

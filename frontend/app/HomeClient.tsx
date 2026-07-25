@@ -756,7 +756,8 @@ export default function HomeClient({
                 <div className="relative flex flex-col sm:flex-row items-center gap-6">
                   <div className="w-28 h-28 rounded-xl bg-[#ffffff] flex items-center justify-center p-3 shrink-0 shadow-xl">
                     {best.logo_url
-                      ? /* eslint-disable-next-line @next/next/no-img-element */ <img src={best.logo_url} alt={nume} className="max-w-full max-h-full object-contain" />
+                      // eslint-disable-next-line @next/next/no-img-element -- domenii logo externe variate, nu merita config remotePatterns doar pt acest card
+                      ? <img src={best.logo_url} alt={nume} className="max-w-full max-h-full object-contain" />
                       : <span className="text-4xl font-black text-[#0d9488]">{nume.charAt(0)}</span>}
                   </div>
                   <div className="flex-1 text-center sm:text-left w-full">
@@ -1157,7 +1158,6 @@ export default function HomeClient({
                   const promo = m.promotii?.find((p: {zile_ramase:number;cod_cupon:string}) => p.zile_ramase >= 0 && p.cod_cupon)
                              || m.promotii?.find((p: {zile_ramase:number}) => p.zile_ramase >= 0);
                   const cod = promo?.cod_cupon || '';
-                  const link = promo?.landing_page || m.url_afiliat || m.url || '#';
                   const titlu = (promo?.nume || `Oferta ${m.magazin.split('.')[0]}`).slice(0, 55);
                   const zile = promo?.zile_ramase ?? 0;
                   const slug = m.magazin;
@@ -1698,8 +1698,6 @@ function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
   const numeMagazin    = numeAfisat(m.magazin);
   const initiala       = numeMagazin.charAt(0).toUpperCase();
   const link           = promo?.landing_page || m.url_afiliat || m.url;
-  const nrCupoane      = m.promotii.filter(p => p.cod_cupon).length;
-  const nrOferte       = m.promotii.length;
   const trustScore     = m.are_promotie ? 100 : 45;
 
   const [imgOk, setImgOk] = useState(true);

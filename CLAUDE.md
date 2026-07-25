@@ -12,6 +12,44 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 24.07.2026 (audit calitate cod — lint 53→24 probleme, build verde, NEPUSHED):**
+- Cerere Alex: audit general de calitate/eroare/performanță. `npm run lint` inainte: 53 probleme
+  (14 erori, 39 warnings). Dupa: **24 probleme (11 erori, 14 warnings)**, `npm run build` verde,
+  0 regresii vizuale verificate in dev (homepage, `/copii`, `/altex`, `/produse/fashion`, `/admin`).
+- **Fixate real (nu doar silentiate):** 2× `Date.now()` impur in JSON-LD (`cod-reducere/[magazin]/page.tsx`,
+  `produse/[categorie]/page.tsx`) — Server Components, valoare stabila per generare, disable scoped cu
+  justificare. 1× eroare reala de directiva eslint gresit plasata (`HomeClient.tsx` — `eslint-disable-next-line`
+  pe acelasi rand cu codul, nu pe randul urmator → nu suprima nimic; corectat). 1× comentariu JSX afisat ca
+  text literal (`AdminDashboard.tsx`, `react/jsx-no-comment-textnodes`) — mutat in `{"..."}`. 11 variabile
+  `cuPromo` moarte (calculate, niciodata afisate) sterse din paginile de nisa. Import-uri moarte (`Script`,
+  `ThemeToggle` din `layout.tsx` — tema e hardcodata pe hex, toggle-ul nu mai e randat nicaieri; `redirect`
+  din `admin/page.tsx`; `useMemo` din `MagazinClient.tsx`; `hasCod` din `BrandPageTemplate.tsx`; `lastRun`+
+  `agent` din `AdminDashboard.tsx`; `nrCupoane`+`nrOferte`+`link` duplicat din `HomeClient.tsx`).
+  Eroare "This value cannot be modified" pe `Navbar.tsx:59` (`window.location.href =` intr-un handler) —
+  fals pozitiv al noii reguli `react-hooks/immutability` (acelasi pattern la `handleSearchSubmit` alaturi
+  NU e semnalat) — documentat cu disable scoped, nu schimbat comportamentul.
+- **`eslint.config.mjs`**: adaugat `argsIgnorePattern`/`varsIgnorePattern: "^_"` pt `no-unused-vars` —
+  fixeaza radacina (nu doar simptomul) pt parametri intentionat neutilizati (conventia `_nume` deja
+  folosita in cod, dar config-ul n-o respecta).
+- **Ramas neatins, deliberat (risc > beneficiu pt o trecere automata):** 8 erori `react-hooks/set-state-in-effect`
+  (`HomeClient`, `ReviewSection`, `ComparatorClient`, `AffiliateScript`, `ConsentAnalytics`, `CookieBanner`,
+  `Navbar`, `ThemeToggle`, `useWishlist`, `ToateMagazineleClient`) — toate sunt patternul standard Next.js
+  "citeste din localStorage/window dupa mount, seteaza state" pt a evita hidration mismatch SSR/CSR. Regula
+  noua a React Compiler-ului il considera suboptim (cauzeaza un re-render in plus), dar rescrierea corecta
+  (`useSyncExternalStore`) atinge cod sensibil (consimtamant cookie-uri = legal, cautare navbar = UX central) —
+  nu s-a facut o rescriere mecanica fara testare individuala atenta. 14 warnings `<img>` (next/image) —
+  migrare reala de performanta (LCP/bandwidth), dar necesita configurare `remotePatterns` pt domeniile
+  externe de logo-uri + verificare vizuala per pagina — backlog separat, nu facut acum.
+- **Descoperiri din audit, corectii la documentatia stale de mai jos:** (1) `BrandPageTemplate.tsx` deja
+  are JSON-LD BreadcrumbList+FAQPage si matching de slug pe niveluri (egalitate>prefix>substring) — nota
+  veche din 30.06 care zicea ca lipsesc era **depasita**, corectata. (2) `amazon.com` are acum link afiliat
+  real (Impact, `ggamazon.sjv.io`) — nu mai e money-leak. (3) **Inca nerezolvat, activ chiar acum**: `altex.ro`
+  si `flanco.ro` lipsesc complet din `output.json` (paginile `/altex`, `/flanco` exista cu continut SEO
+  complet dar 0 link de afiliere — CTA-ul se ascunde automat, nu link mort, dar 0 monetizare). **`temu.com`
+  si `shein.com` au `url_afiliat` = URL brut, netrackuit** desi apar cu `are_promotie:true` si sunt promovate
+  activ (inclusiv in batch-ul de Pinterest din 24.07) — clic-uri reale, comision 0. Necesita aplicare Alex
+  la programele de afiliere Temu/Shein (probabil via Awin/CJ/Impact, nu 2Performant).
+
 **UPDATE 20.07.2026 (audit vizual complet — 1 bug live + 2 bug-uri pipeline gasite/reparate):**
 - Cerere Alex: verifica fiecare pagina + fiecare banner cum arata. Screenshot-ul din Browser pane nu a
   functionat deloc in sesiune (a picat si pe example.com — problema de infrastructura, nu de site) —
@@ -152,10 +190,12 @@ Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Pro
 - **Retheme dark**: /comparator era TOT pe light (bg-white/slate-50) → dark complet (logo-uri păstrate albe);
   bug swapMagazin reparat (ștergea ambele). /top: nav+carduri light remnants + CULORI spart → accent uniform.
 - **Counts**: 300+/600+ magazine → 900+ (servicii, categorii, oferte-azi, calculator).
-- **RĂMAS (lower priority, next)**: (1) flori/pescuit hero tonal (low). (2) BrandPageTemplate: lipsă JSON-LD
-  BreadcrumbList+FAQPage (SEO) + slug matching fragil (`.includes` → egalitate). (3) **Money-leak brand
-  pages fără magazin în output.json**: altex, flanco, amazon (lipsesc) + temu/shein (url brut) — necesită
-  Alex să aplice la programe sau link real. (4) calculator-salariu/comparator: lipsă JSON-LD WebApplication.
+- **RĂMAS (lower priority, next)**: (1) flori/pescuit hero tonal (low). (2) ~~BrandPageTemplate: lipsă
+  JSON-LD BreadcrumbList+FAQPage + slug matching fragil~~ **REZOLVAT** (verificat 24.07.2026 — ambele
+  există deja în cod, nota era depășită). (3) **Money-leak brand pages fără magazin în output.json**:
+  altex, flanco lipsesc (amazon REZOLVAT — are link Impact real acum) + temu/shein (url brut, încă activ,
+  vezi update 24.07 mai sus) — necesită Alex să aplice la programe sau link real. (4) calculator-salariu/
+  comparator: lipsă JSON-LD WebApplication — neverificat încă dacă tot mai e valabil.
 
 **UPDATE 30.06.2026 (sesiune amplă — push-uit anterior):**
 - **REDESIGN HOMEPAGE — direcție "premium minimalist" (pass 1+2 DONE).** Decizie Alex: slate uniform,

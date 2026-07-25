@@ -391,7 +391,10 @@ export default async function PaginaMagazin({
     ],
   };
 
-  // Calculat o singura data (nu in interiorul .map) - React 19 flags Date.now() ca impur.
+  // Server Component: randat o singura data per request/ISR, nu re-randat pe client -
+  // Date.now() aici e sigur (nu declanseaza hidratare/reconciliere), dar noua regula
+  // react-hooks/purity il flags oricum. Calculat o singura data (nu in .map).
+  // eslint-disable-next-line react-hooks/purity -- Server Component, valoare stabila per generare
   const acumMs = Date.now();
 
   const offerList = nrPromo > 0 ? {

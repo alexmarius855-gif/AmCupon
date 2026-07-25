@@ -45,7 +45,6 @@ export default function CasaPage() {
     CAT_CASA.some(c => (m.categorie_slug||"").includes(c) || m.categorie.toLowerCase().includes(c))
   ).slice(0, 16);
   const magazine = [...topCasa, ...restCasa];
-  const cuPromo = magazine.filter(m => m.are_promotie);
 
   return (
     <>

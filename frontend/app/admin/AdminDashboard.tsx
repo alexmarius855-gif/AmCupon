@@ -312,7 +312,6 @@ export default function AdminDashboard() {
   const s  = data?.site;
   const g  = data?.github || [];
   const b  = data?.brevo;
-  const lastRun = g[0];
 
   return (
     <div className="flex h-screen overflow-hidden font-sans" style={{ background:"#07071a", ...scanlineBg }}>
@@ -444,7 +443,6 @@ export default function AdminDashboard() {
                     const st       = missionStates[m.id] || "idle";
                     const isRun    = st==="running" || triggering===m.id;
                     const isDone   = st==="done";
-                    const agent    = AGENTS.find(a => a.id===m.agentId)!;
                     return (
                       <div key={m.id}
                         className="rounded-2xl border p-4 transition-all duration-300"
@@ -712,7 +710,7 @@ export default function AdminDashboard() {
             <div>
               <h2 className="font-black tracking-wider mb-4" style={{ color:"#ff3cac" }}>📋 OUTPUT AGENTI</h2>
               <div className="rounded-2xl p-5 border" style={{ background:"#0a0a1e", borderColor:"#1a1a40" }}>
-                <p className="text-xs font-mono mb-3" style={{ color:"#444466" }}>// Ultimul output generat de agenti</p>
+                <p className="text-xs font-mono mb-3" style={{ color:"#444466" }}>{"// Ultimul output generat de agenti"}</p>
                 <Link href="/agent-content-latest.json" target="_blank" rel="noopener noreferrer"
                   className="text-sm font-mono transition-colors hover:underline" style={{ color:"#00f5d4" }}>
                   → /agent-content-latest.json

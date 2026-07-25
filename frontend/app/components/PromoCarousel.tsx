@@ -50,7 +50,6 @@ export default function PromoCarousel({ banners }: { banners: PromoBanner[] }) {
       });
     }, 5000);
     return () => clearInterval(t);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [banners.length]);
 
   function onScroll() {

@@ -64,7 +64,6 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
   const slugs = [config.slug, ...(config.slugAlt ? [config.slugAlt] : [])];
   const magazin = loadMagazin(slugs);
   const promotii = magazin?.promotii || [];
-  const hasCod = promotii.some((p) => !!p.cod_cupon);
 
   const culoare = "bg-gradient-to-br from-[#14b8a6] to-[#0f766e]";
 

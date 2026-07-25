@@ -43,7 +43,6 @@ export default function CopiiPage() {
     CAT_COPII.some(c => (m.categorie_slug||"").includes(c) || m.categorie.toLowerCase().includes(c))
   ).slice(0, 16);
   const magazine = [...topCopii, ...restCopii];
-  const cuPromo = magazine.filter(m => m.are_promotie);
 
   return (
     <>

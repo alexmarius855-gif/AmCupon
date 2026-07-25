@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect } from "react";
 import PriceAlert from "../../components/PriceAlert";
 import ReviewSection from "./ReviewSection";
 import ShareButton from "../../components/ShareButton";

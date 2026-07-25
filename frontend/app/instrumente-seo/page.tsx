@@ -200,7 +200,7 @@ export default function InstrumenteSeoPage() {
               <p className="text-[#cbd5e1] text-sm mt-2">Start ideal daca esti la inceput sau ai un buget limitat</p>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {TOOLS_GRATUITE.map((t, i) => (
+              {TOOLS_GRATUITE.map((t) => (
                 <div key={t.nume} className="bg-[#1e293b] border border-[#334155] rounded-xl p-5 hover:border-[#14b8a6]/30 transition-all duration-200">
                   <div className="flex items-center gap-3 mb-3">
                     <div className="w-10 h-10 bg-[#14b8a6]/20 border border-[#14b8a6]/30 rounded-xl flex items-center justify-center text-xl">{t.emoji}</div>
