@@ -9,6 +9,24 @@
   "oferta": "15% Discount la fibrele de păr din cheratină pentru păr rar și chelie"
  },
  {
+  "magazin": "facturis-online.ro",
+  "nume": "Facturis Online",
+  "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_facturis_online.ro_1430824435.png",
+  "categorie": "Software & Digital",
+  "comision": 35.0,
+  "are_cod": false,
+  "oferta": "Faturis Online e-Factura"
+ },
+ {
+  "magazin": "emag.ro",
+  "nume": "Emag",
+  "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_emag.ro_1570027386.png",
+  "categorie": "Marketplace",
+  "comision": 20.0,
+  "are_cod": false,
+  "oferta": "Cooling Week, 27 iulie-02 august"
+ },
+ {
   "magazin": "moftcollection.ro",
   "nume": "Moftcollection",
   "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13200/medium/13200.png",
@@ -88,23 +106,5 @@
   "comision": 9.0,
   "are_cod": true,
   "oferta": "GiftDesign Summer Sale - Extra 15% cu GDVARA15"
- },
- {
-  "magazin": "lovepadel.ie",
-  "nume": "Lovepadel",
-  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13796/medium/13796.png",
-  "categorie": "Sport & Fitness",
-  "comision": 8.0,
-  "are_cod": true,
-  "oferta": "€5.00 off entire order"
- },
- {
-  "magazin": "bookzone.ro",
-  "nume": "Bookzone",
-  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9309/medium/9309.png",
-  "categorie": "Cărți & Educație",
-  "comision": 10.0,
-  "are_cod": false,
-  "oferta": "Nou pe bookzone.ro: 1200 de titluri în engleză – Un adevărat festin li"
  }
 ]
