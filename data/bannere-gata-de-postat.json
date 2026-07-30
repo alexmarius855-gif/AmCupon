@@ -1,28 +1,15 @@
 [
   {
-    "id": 271515,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/271474/original/271474.png",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=03e4c4c44&aff_code=541547473&campaign_unique=9a6f02fef",
-    "landing_raw": "https://www.libris.ro/lp/targvara",
-    "width": 1080,
-    "height": 1080,
-    "merchant": "libris.ro ",
-    "merchant_slug": "libris-ro",
-    "name": "Start Happy Days!Până la -83% Bucură-te de reduceri!",
-    "category": "Start Happy Days!Până la -83% Bucură-te de reduceri!",
-    "b_type": "image"
-  },
-  {
-    "id": 271510,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/271469/original/271469.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=ad3a494e2&aff_code=541547473&campaign_unique=6390e3cfb",
-    "landing_raw": "https://www.drmax.ro/pachete-de-grija",
-    "width": 1050,
-    "height": 1050,
-    "merchant": "drmax.ro/",
-    "merchant_slug": "drmax-ro",
-    "name": "Pachete de grija",
-    "category": "Pachete de grija",
+    "id": 271532,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/271491/original/271491.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=078a15bf4&aff_code=541547473&campaign_unique=77ba9e67f",
+    "landing_raw": "https://www.chicco.ro/",
+    "width": 1200,
+    "height": 1200,
+    "merchant": "chicco.ro",
+    "merchant_slug": "chicco-ro",
+    "name": "promotii Chicco",
+    "category": "promotii Chicco",
     "b_type": "image"
   }
 ]
