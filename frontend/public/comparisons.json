@@ -40,7 +40,7 @@
     "verdict_m2": "Alege Answear pentru o selectie mai larga de branduri sportive si casual, cu preturi mai constante si disponibilitate buna.",
     "stats1": {
       "promotii_active": 1,
-      "cashback": "vezi site",
+      "cashback": "pana la 5%",
       "logo": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_fashiondays.ro_1713947169.jpg",
       "url_afiliat": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/88736?sub_id=fashiondays.ro"
     },
@@ -203,7 +203,7 @@
     "verdict_m2": "Alege Carturesti pentru experienta completa cititor-librarie, acces la librarii fizice pentru ridicare si colectii editoriale curate.",
     "stats1": {
       "promotii_active": 1,
-      "cashback": "vezi site",
+      "cashback": "pana la 8%",
       "logo": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_libris.ro_1629366879.png",
       "url_afiliat": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/61047?sub_id=libris.ro"
     },
@@ -287,7 +287,7 @@
     "verdict_m2": "Alege Elefant pentru carti, jocuri si produse educationale — selectia este mai curata si preturile la carti sunt adesea mai bune.",
     "stats1": {
       "promotii_active": 2,
-      "cashback": "vezi site",
+      "cashback": "pana la 20%",
       "logo": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_emag.ro_1570027386.png",
       "url_afiliat": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/35?sub_id=emag.ro"
     },
@@ -370,7 +370,7 @@
     "verdict_m2": "Alege Temu pentru accesorii, produse de uz casnic si articole la preturi foarte mici unde calitatea exacta conteaza mai putin. Planifica dinainte — livrarea dureaza.",
     "stats1": {
       "promotii_active": 2,
-      "cashback": "vezi site",
+      "cashback": "pana la 20%",
       "logo": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_emag.ro_1570027386.png",
       "url_afiliat": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/35?sub_id=emag.ro"
     },
@@ -531,7 +531,7 @@
     "verdict_m1": "Alege Dr. Max pentru o gama larga de medicamente OTC, suplimente si cosmetice internationale la preturi competitive cu livrare rapida.",
     "verdict_m2": "Alege Farmec daca vrei produse cosmetice romanesti de calitate (Gerovital, Aslavital) cu ingrediente naturale si preturi accesibile.",
     "stats1": {
-      "promotii_active": 4,
+      "promotii_active": 0,
       "cashback": "pana la 2%",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/8800/medium/8800.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2F"
@@ -542,20 +542,7 @@
       "logo": "https://www.google.com/s2/favicons?domain=farmec.ro&sz=128",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmec.ro"
     },
-    "promo1": [
-      {
-        "nume": "Toată lumea câștigă la Dr. Max 1-31.07",
-        "cod_cupon": ""
-      },
-      {
-        "nume": "Pachet de Grijă – Iulie",
-        "cod_cupon": ""
-      },
-      {
-        "nume": "Campanie Produse Solare - Iulie 2026",
-        "cod_cupon": ""
-      }
-    ],
+    "promo1": [],
     "promo2": [],
     "faq": [
       {
@@ -564,7 +551,7 @@
       },
       {
         "q": "Are Drmax coduri de reducere active?",
-        "a": "Da, Drmax are 4 oferte active pe AmCupon.ro in iulie 2026. Verificam zilnic."
+        "a": "Momentan nu, Drmax are 0 oferte active pe AmCupon.ro in iulie 2026. Verificam zilnic."
       },
       {
         "q": "Are Farmec coduri de reducere active?",
@@ -624,7 +611,7 @@
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnoriel.ro%2F"
     },
     "stats2": {
-      "promotii_active": 1,
+      "promotii_active": 0,
       "cashback": "pana la 5%",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11445/medium/11445.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.decathlon.ro"
@@ -635,12 +622,7 @@
         "cod_cupon": ""
       }
     ],
-    "promo2": [
-      {
-        "nume": "Maratonul Reducerilor începeut la Decathlon în luna Iulie!",
-        "cod_cupon": ""
-      }
-    ],
+    "promo2": [],
     "faq": [
       {
         "q": "Care este mai bun, Noriel sau Decathlon?",
@@ -652,7 +634,7 @@
       },
       {
         "q": "Are Decathlon coduri de reducere active?",
-        "a": "Da, Decathlon are 1 oferta activa pe AmCupon.ro in iulie 2026. Verificam zilnic."
+        "a": "Momentan nu, Decathlon are 0 oferte active pe AmCupon.ro in iulie 2026. Verificam zilnic."
       },
       {
         "q": "Unde gasesc cupoane pentru Noriel si Decathlon?",
@@ -703,7 +685,7 @@
     "verdict_m2": "Alege Shein daca vrei sa testezi tendinte rapid la preturi minime si esti dispus sa astepti livrarea. Perfecta pentru reinnoire frecventa garderoba.",
     "stats1": {
       "promotii_active": 1,
-      "cashback": "vezi site",
+      "cashback": "pana la 5%",
       "logo": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_fashiondays.ro_1713947169.jpg",
       "url_afiliat": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/88736?sub_id=fashiondays.ro"
     },
@@ -787,7 +769,7 @@
     "verdict_m2": "Alege Elefant daca vrei si alte produse (electronice, jocuri) intr-o singura comanda alaturi de carti.",
     "stats1": {
       "promotii_active": 1,
-      "cashback": "vezi site",
+      "cashback": "pana la 8%",
       "logo": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_libris.ro_1629366879.png",
       "url_afiliat": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/61047?sub_id=libris.ro"
     },
