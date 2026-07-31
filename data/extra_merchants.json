@@ -15012,5 +15012,30 @@
     "exclusiv": false,
     "platforma": "impact",
     "descriere": ""
+  },
+  {
+    "magazin": "Wild Canyon Adventures",
+    "url": "http://wildcanyon.com.mx/",
+    "url_afiliat": "https://wildcanyonadventures.sjv.io/c/7401119/3763305/34958",
+    "logo_url": "",
+    "categorie": "Diverse",
+    "categorie_slug": "online-mall",
+    "comision": "Variabil",
+    "rank": null,
+    "scor_afiliere": 50,
+    "scor_final": 50,
+    "prioritate": "standard",
+    "canal_recomandat": "Content, SEO, Social",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 0,
+    "promotii": [],
+    "folosit_de": 0,
+    "procent_succes": 85,
+    "exclusiv": false,
+    "platforma": "impact",
+    "descriere": ""
   }
 ]
