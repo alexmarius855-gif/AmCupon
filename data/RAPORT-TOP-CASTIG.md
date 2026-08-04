@@ -1,5 +1,5 @@
 # 💰 TOP MAGAZINE după POTENȚIAL DE CÂȘTIG
-> Generat automat 03.08.2026 12:03. Pe astea să le împingi (articole, pin-uri, postări).
+> Generat automat 04.08.2026 11:21. Pe astea să le împingi (articole, pin-uri, postări).
 
 **Scor = comision × popularitate × ofertă.** Comisionul mare singur înșală — astea-s banii REALI.
 
