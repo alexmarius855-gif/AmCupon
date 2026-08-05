@@ -10,6 +10,22 @@ import os
 import re
 from urllib.parse import urlparse
 
+# Semnatura unui link cu tracking real de afiliere (Impact/Awin/2P/Profitshare/generice
+# cunoscute). Folosita ca prioritate in dedup: un link REAL castiga mereu in fata unuia
+# fara tracking, indiferent de scor — altfel un merchant importat o data cu link placeholder
+# (ex. vechiul add_impact_merchants.py, ?ref=amcupon ghicit, niciodata verificat) ramane
+# blocat cu link-ul fals la infinit, pt ca merge-ul auto-referential (output.json e si input
+# si output) nu-l mai ia in calcul dupa prima rulare. Gasit + reparat 06.08.2026.
+_REAL_TRACKING_RE = re.compile(
+    r"pxf\.io|sjv\.io|impactradius|impact\.com|7401119|irclickid|prf\.hn|anrdoezrs\.net|"
+    r"2performant\.com|profitshare\.ro|awin1\.com|cread\.php",
+    re.I,
+)
+
+
+def _has_real_tracking(m: dict) -> bool:
+    return bool(_REAL_TRACKING_RE.search(m.get("url_afiliat", "") or ""))
+
 FILES = [
     "../data/output.json",              # 2Performant
     "../data/profitshare_output.json",  # Profitshare
@@ -130,12 +146,21 @@ def main():
                 by_slug[slug] = magazin
                 adaugate += 1
             else:
-                # Dedup: pastram magazinul cu scor_final mai mare (sau cu promotii)
+                # Dedup: un link cu tracking real castiga mereu in fata unuia fara
+                # (indiferent de scor) — altfel un placeholder vechi ramane blocat la
+                # infinit. Doar daca ambele sunt la fel (ambele au / ambele n-au link
+                # real) decidem pe scor_final / nr. promotii, ca inainte.
                 duplicate += 1
-                better = (
-                    magazin.get("scor_final", 0) > prev.get("scor_final", 0)
-                    or (len(magazin.get("promotii") or []) > len(prev.get("promotii") or []))
-                )
+                new_real, prev_real = _has_real_tracking(magazin), _has_real_tracking(prev)
+                if new_real and not prev_real:
+                    better = True
+                elif prev_real and not new_real:
+                    better = False
+                else:
+                    better = (
+                        magazin.get("scor_final", 0) > prev.get("scor_final", 0)
+                        or (len(magazin.get("promotii") or []) > len(prev.get("promotii") or []))
+                    )
                 if better:
                     by_slug[slug] = magazin
 
@@ -159,6 +184,27 @@ def main():
                 v = pr.get(f)
                 if v is not None and not isinstance(v, str):
                     pr[f] = "" if isinstance(v, bool) else str(v)
+
+    # ── Onestitate link-uri: sterge parametri falsi de tracking (?ref=amcupon, ──
+    # REFERRALCODE=AMCUPON, /invite/amcupon, /promo/amcupon) ramasi din import-uri
+    # vechi (add_impact_merchants.py ghicea "probabil au program pe Impact" fara sa
+    # verifice, apoi merge-ul auto-referential ii perpetueaza la infinit — vezi
+    # _has_real_tracking mai sus). Un link asa NU genereaza niciun comision, dar
+    # arata ca si cum ar fi trackuit -> il curatam la un link simplu, onest, catre
+    # magazin. Nu stergem magazinul (ramane vizibil ca recomandare fara comision).
+    _FAKE_PARAM_RE = re.compile(r"[?&](ref|REFERRALCODE|utm_source)=amcupon", re.I)
+    _FAKE_PATH_RE  = re.compile(r"/(invite|promo)/amcupon", re.I)
+    _fake_cleaned = 0
+    for _m in merged:
+        _u = _m.get("url_afiliat", "") or ""
+        if _u and not _has_real_tracking(_m) and (_FAKE_PARAM_RE.search(_u) or _FAKE_PATH_RE.search(_u)):
+            _clean = _FAKE_PARAM_RE.sub("", _u)
+            _clean = _FAKE_PATH_RE.sub("", _clean)
+            _clean = re.sub(r"[?&]$", "", _clean)
+            _m["url_afiliat"] = _clean or _m.get("url", "")
+            _fake_cleaned += 1
+    if _fake_cleaned:
+        print(f"  link-uri false curatate (fara tracking real, aveau parametru fals): {_fake_cleaned}")
 
     # ── Consolidare canonica a categoriilor (40 etichete fragmentate -> 18 RO) ──
     # Prinde toate sursele; reclasifica junk-ul (Online Mall/Diverse) dupa nume.
