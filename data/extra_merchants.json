@@ -15237,5 +15237,30 @@
     "exclusiv": false,
     "platforma": "impact",
     "descriere": ""
+  },
+  {
+    "magazin": "PatPat",
+    "url": "http://www.patpat.com?utm_source=impact&utm_medium=affiliate",
+    "url_afiliat": "https://patpat.sjv.io/c/7401119/972092/12362",
+    "logo_url": "",
+    "categorie": "Diverse",
+    "categorie_slug": "online-mall",
+    "comision": "Variabil",
+    "rank": null,
+    "scor_afiliere": 50,
+    "scor_final": 50,
+    "prioritate": "standard",
+    "canal_recomandat": "Content, SEO, Social",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 0,
+    "promotii": [],
+    "folosit_de": 0,
+    "procent_succes": 85,
+    "exclusiv": false,
+    "platforma": "impact",
+    "descriere": ""
   }
 ]
