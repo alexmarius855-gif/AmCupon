@@ -128,7 +128,9 @@ async function getTopOferte(limit = 6): Promise<OfertaEmail[]> {
 // IMPORTANT: pe Vercel Edge trebuie AWAITED inainte de a returna raspunsul,
 // altfel isolate-ul se opreste si emailul nu se trimite. Returneaza succes.
 async function sendWelcomeEmail(email: string, apiKey: string): Promise<boolean> {
-  const oferte = await getTopOferte(6);
+  const oferte = await getTopOferte(20);
+  const ofertePrincipale = oferte.slice(0, 8);
+  const ofertePlus = oferte.slice(8, 20);
   const html = `<!DOCTYPE html>
 <html lang="ro">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bun venit la AmCupon.ro!</title></head>
@@ -170,11 +172,11 @@ async function sendWelcomeEmail(email: string, apiKey: string): Promise<boolean>
           <span>${c.emoji}</span>${c.label}
         </a>`).join("")}
       </div>
-      ${oferte.length ? `
+      ${ofertePrincipale.length ? `
       <!-- Oferte active chiar acum (reale, din output.json) -->
       <p style="color:#6b7280;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 12px;">Oferte active chiar acum</p>
-      <div style="margin-bottom:32px;">
-        ${oferte.map(o => {
+      <div style="margin-bottom:20px;">
+        ${ofertePrincipale.map(o => {
           const tag = escHtml(o.procent || (o.cod ? "COD" : "OFERTĂ"));
           const detaliu = o.cod ? ` — cod <strong>${escHtml(o.cod)}</strong>` : "";
           return `<a href="https://amcupon.ro/cod-reducere/${encodeURIComponent(o.slug)}" style="display:flex;align-items:center;gap:10px;padding:12px 14px;margin-bottom:8px;background:#f0fdfa;border:1px solid #99f6e4;border-radius:10px;text-decoration:none;color:#0f766e;font-size:13px;font-weight:600;">
@@ -182,7 +184,18 @@ async function sendWelcomeEmail(email: string, apiKey: string): Promise<boolean>
             <span>${escHtml(o.nume)}${detaliu}</span>
           </a>`;
         }).join("")}
-      </div>` : ""}
+      </div>
+      ${ofertePlus.length ? `
+      <p style="color:#6b7280;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 10px;">Încă ${ofertePlus.length} coduri active</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:32px;">
+        ${ofertePlus.map(o => {
+          const tag = escHtml(o.cod ? "COD" : (o.procent || "OFERTĂ"));
+          return `<a href="https://amcupon.ro/cod-reducere/${encodeURIComponent(o.slug)}" style="display:flex;align-items:center;gap:6px;padding:8px 10px;background:#F7F9FC;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#374151;font-size:12px;font-weight:600;">
+            <span style="background:#0d9488;color:#fff;font-weight:900;font-size:9px;padding:2px 6px;border-radius:5px;white-space:nowrap;">${tag}</span>
+            <span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${escHtml(o.nume)}</span>
+          </a>`;
+        }).join("")}
+      </div>` : ""}` : ""}
       <!-- Extensie -->
       <div style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:12px;padding:20px;margin-bottom:24px;">
         <p style="margin:0 0 8px;color:#0c4a6e;font-weight:700;font-size:14px;">🧩 Extensia Chrome — reduceri automate</p>

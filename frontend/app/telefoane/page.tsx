@@ -49,9 +49,9 @@ export default function TelefoaneePage() {
 
   const topTel = TOP_TEL.map(s => all.find(m => m.magazin === s)).filter(Boolean) as Magazin[];
   const restTel = all.filter(m =>
-    !TOP_TEL.includes(m.magazin) && m.are_promotie &&
+    !TOP_TEL.includes(m.magazin) &&
     CAT_TEL.some(c => (m.categorie_slug||"").includes(c) || m.categorie.toLowerCase().includes(c))
-  ).slice(0, 6);
+  ).sort((a,b)=>(b.are_promotie?1:0)-(a.are_promotie?1:0)||(b.scor_final||0)-(a.scor_final||0)).slice(0, 6);
   const magazine = [...topTel, ...restTel];
 
   return (

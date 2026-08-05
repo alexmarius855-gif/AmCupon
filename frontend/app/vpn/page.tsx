@@ -157,11 +157,11 @@ export default function VpnPage() {
             Cel mai bun <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #0d9488, #0f766e)" }}>VPN Romania</span> 2026
           </h1>
           <p className="text-[#cbd5e1] text-lg max-w-2xl mx-auto mb-6">
-            Am testat cele mai populare VPN-uri si ti le prezentam comparativ. Preturi reale, viteza, securitate — tot ce trebuie sa stii inainte sa cumperi.
+            Am comparat public preturile, functiile si recenziile verificate ale celor mai populare VPN-uri, ca sa alegi rapid. Preturi reale, viteza declarata, securitate — tot ce trebuie sa stii inainte sa cumperi.
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm text-[#cbd5e1]">
             <span className="flex items-center gap-1.5"><span className="text-emerald-400">✓</span> Actualizat iunie 2026</span>
-            <span className="flex items-center gap-1.5"><span className="text-emerald-400">✓</span> Testate independent</span>
+            <span className="flex items-center gap-1.5"><span className="text-emerald-400">✓</span> Comparatie actualizata 2026</span>
             <span className="flex items-center gap-1.5"><span className="text-emerald-400">✓</span> Garantie 30 zile toate</span>
           </div>
         </div>

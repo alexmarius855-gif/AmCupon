@@ -52,13 +52,13 @@ export default function AnimalePage() {
     .filter(Boolean) as Magazin[];
 
   const restAnimale = all.filter(m =>
-    !TOP_ANIMALE.includes(m.magazin) && m.are_promotie &&
+    !TOP_ANIMALE.includes(m.magazin) &&
     CAT_ANIMALE.some(c =>
       (m.categorie_slug||"").includes(c) ||
       m.categorie.toLowerCase().includes(c) ||
       m.magazin.toLowerCase().includes(c)
     )
-  ).slice(0, 8);
+  ).sort((a,b)=>(b.are_promotie?1:0)-(a.are_promotie?1:0)||(b.scor_final||0)-(a.scor_final||0)).slice(0, 8);
 
   const magazine = [...topAnimale, ...restAnimale];
   const cuPromo = magazine.filter(m => m.are_promotie);

@@ -139,9 +139,9 @@ def draw_grid(draw: ImageDraw.Draw, w: int, h: int, step: int = 50):
     """Grid subtil indigo."""
     color = (99, 102, 241, 9)  # foarte transparent
     for x in range(0, w, step):
-        draw.line([(x, 0), (x, h)], fill=(249//10, 115//10, 22//10))
+        draw.line([(x, 0), (x, h)], fill=color)
     for y in range(0, h, step):
-        draw.line([(0, y), (w, y)], fill=(249//10, 115//10, 22//10))
+        draw.line([(0, y), (w, y)], fill=color)
 
 
 def draw_glow(img: Image.Image, cx: int, cy: int, radius: int, alpha: int = 30):

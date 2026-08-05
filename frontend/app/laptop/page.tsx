@@ -49,9 +49,9 @@ export default function LaptopPage() {
 
   const topLaptop = TOP_LAPTOP.map(s => all.find(m => m.magazin === s)).filter(Boolean) as Magazin[];
   const restLaptop = all.filter(m =>
-    !TOP_LAPTOP.includes(m.magazin) && m.are_promotie &&
+    !TOP_LAPTOP.includes(m.magazin) &&
     CAT_LAPTOP.some(c => (m.categorie_slug||"").includes(c) || m.categorie.toLowerCase().includes(c))
-  ).slice(0, 8);
+  ).sort((a,b)=>(b.are_promotie?1:0)-(a.are_promotie?1:0)||(b.scor_final||0)-(a.scor_final||0)).slice(0, 8);
   const magazine = [...topLaptop, ...restLaptop];
 
   return (

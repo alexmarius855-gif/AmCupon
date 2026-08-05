@@ -4,7 +4,7 @@ send_newsletter.py — Trimite newsletter saptamanal cu oferte AmCupon.ro via Br
 Utilizare:
   python send_newsletter.py                      # trimite la toti abonatiis din lista Brevo
   python send_newsletter.py --test me@mail.ro    # test la un singur email (SMTP)
-  python send_newsletter.py --n 8                # top 8 oferte in loc de 5
+  python send_newsletter.py --n 8                # top 8 oferte in loc de 20 (default)
 
 Env vars necesare:
   BREVO_API_KEY     -- xkeysib-... din Brevo > Settings > API Keys (pentru campanii + abonati)
@@ -102,7 +102,7 @@ def get_contacts() -> list:
         return []
 
 
-def pick_top_n(magazine: list, n: int = 5) -> list:
+def pick_top_n(magazine: list, n: int = 20) -> list:
     """
     Selecteaza top N magazine cu promotii active.
     Structura reala output.json:
@@ -155,6 +155,24 @@ def format_comision(m: dict) -> str:
 
 
 def make_html(top_n: list, data_str: str, is_test: bool = False, total_magazine: int = 0) -> str:
+    principale = top_n[:8]
+    plus       = top_n[8:]
+
+    def mini_card(m: dict) -> str:
+        name  = m["magazin"].split(".")[0].capitalize()
+        promo = get_best_promo(m)
+        cod   = promo.get("cod_cupon", "")
+        link  = promo.get("landing_page") or m.get("url_afiliat") or m.get("url", SITE_URL)
+        tag   = "COD" if cod else "OFERTA"
+        return f"""
+        <a href="{link}" style="display:flex;align-items:center;gap:6px;padding:8px 10px;
+           background:#F7F9FC;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;
+           color:#374151;font-size:12px;font-weight:600;overflow:hidden;">
+          <span style="background:#0d9488;color:#fff;font-weight:900;font-size:9px;
+             padding:2px 6px;border-radius:5px;white-space:nowrap;">{tag}</span>
+          <span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">{name}</span>
+        </a>"""
+
     def card(m: dict) -> str:
         logo    = m.get("logo_url", "")
         name    = m["magazin"].split(".")[0].capitalize()
@@ -170,13 +188,13 @@ def make_html(top_n: list, data_str: str, is_test: bool = False, total_magazine:
             f'<img src="{logo}" alt="{name}" height="36" '
             f'style="max-height:36px;max-width:110px;object-fit:contain;margin-bottom:6px;">'
             if logo else
-            f'<div style="font-weight:900;font-size:17px;color:#4f46e5;">{name}</div>'
+            f'<div style="font-weight:900;font-size:17px;color:#0d9488;">{name}</div>'
         )
 
         cod_html = (
-            f'<div style="margin:10px 0;padding:8px 16px;background:#eef2ff;'
-            f'border:2px dashed #6366f1;border-radius:6px;text-align:center;'
-            f'font-family:monospace;font-size:16px;font-weight:bold;color:#4338ca;'
+            f'<div style="margin:10px 0;padding:8px 16px;background:#f0fdfa;'
+            f'border:2px dashed #14b8a6;border-radius:6px;text-align:center;'
+            f'font-family:monospace;font-size:16px;font-weight:bold;color:#0f766e;'
             f'letter-spacing:2px;">{cod}</div>'
             if cod else ""
         )
@@ -203,7 +221,7 @@ def make_html(top_n: list, data_str: str, is_test: bool = False, total_magazine:
                   {titlu_scurt}{zile_badge}
                 </div>
                 {cod_html}
-                <a href="{link}" style="display:inline-block;margin-top:10px;background:#4f46e5;
+                <a href="{link}" style="display:inline-block;margin-top:10px;background:#0d9488;
                    color:#fff;text-decoration:none;padding:8px 18px;border-radius:7px;
                    font-size:13px;font-weight:700;">Cumpara acum &rarr;</a>
               </td>
@@ -211,7 +229,15 @@ def make_html(top_n: list, data_str: str, is_test: bool = False, total_magazine:
           </table>
         </div>"""
 
-    cards_html = "\n".join(card(m) for m in top_n)
+    cards_html = "\n".join(card(m) for m in principale)
+    plus_html = ""
+    if plus:
+        plus_html = f"""
+    <p style="color:#6b7280;font-size:12px;font-weight:700;text-transform:uppercase;
+       letter-spacing:1px;margin:18px 0 10px;">Inca {len(plus)} coduri active</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:8px;">
+      {"".join(mini_card(m) for m in plus)}
+    </div>"""
     year = datetime.now().year
 
     test_banner = ""
@@ -228,7 +254,7 @@ def make_html(top_n: list, data_str: str, is_test: bool = False, total_magazine:
 <title>Top oferte &mdash; AmCupon.ro</title></head>
 <body style="margin:0;padding:0;background:#f1f5f9;font-family:Arial,'Helvetica Neue',sans-serif;">
 <div style="max-width:620px;margin:24px auto;padding:0 12px;">
-  <div style="background:linear-gradient(135deg,#4338ca,#4f46e5,#0891b2);
+  <div style="background:linear-gradient(135deg,#0f766e,#0d9488,#14b8a6);
               border-radius:16px 16px 0 0;padding:32px;text-align:center;">
     <a href="{SITE_URL}" style="text-decoration:none;display:inline-block;margin-bottom:14px;">
       <span style="background:rgba(255,255,255,0.2);color:#fff;font-weight:900;font-size:14px;
@@ -248,10 +274,11 @@ def make_html(top_n: list, data_str: str, is_test: bool = False, total_magazine:
       cu coduri de reducere verificate si valabile inca cateva zile.
     </p>
     {cards_html}
+    {plus_html}
     <div style="text-align:center;margin-top:20px;padding-top:16px;border-top:1px solid #e5e7eb;">
-      <a href="{SITE_URL}" style="display:inline-block;background:#4f46e5;color:#fff;
+      <a href="{SITE_URL}" style="display:inline-block;background:#0d9488;color:#fff;
          text-decoration:none;padding:14px 36px;border-radius:12px;font-size:15px;font-weight:900;
-         box-shadow:0 4px 16px rgba(99,102,241,0.25);">
+         box-shadow:0 4px 16px rgba(13,148,136,0.25);">
         Vezi toate ofertele &rarr;
       </a>
       <p style="color:#9ca3af;font-size:12px;margin-top:10px;">
@@ -262,7 +289,7 @@ def make_html(top_n: list, data_str: str, is_test: bool = False, total_magazine:
 
   <div style="background:#1e293b;border-radius:0 0 16px 16px;padding:20px 28px;text-align:center;">
     <p style="color:#94a3b8;font-size:12px;margin:0 0 6px;">
-      <a href="{SITE_URL}" style="color:#22d3ee;text-decoration:none;font-weight:700;">AmCupon.ro</a>
+      <a href="{SITE_URL}" style="color:#5eead4;text-decoration:none;font-weight:700;">AmCupon.ro</a>
       &bull; Coduri reducere verificate zilnic din Romania
     </p>
     <p style="color:#475569;font-size:11px;margin:0 0 10px;line-height:1.5;">
@@ -364,8 +391,8 @@ def main():
     parser = argparse.ArgumentParser(description="Trimite newsletter AmCupon.ro")
     parser.add_argument("--test", metavar="EMAIL",
                         help="Trimite email de test la adresa specificata (nu la abonati)")
-    parser.add_argument("--n", type=int, default=5,
-                        help="Numarul de oferte in newsletter (default: 5)")
+    parser.add_argument("--n", type=int, default=20,
+                        help="Numarul de oferte in newsletter (default: 20)")
     args = parser.parse_args()
 
     # 1. Incarca date

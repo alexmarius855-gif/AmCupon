@@ -52,13 +52,13 @@ export default function SanatatePage() {
     .filter(Boolean) as Magazin[];
 
   const restSanatate = all.filter(m =>
-    !TOP_SANATATE.includes(m.magazin) && m.are_promotie &&
+    !TOP_SANATATE.includes(m.magazin) &&
     CAT_SANATATE.some(c =>
       (m.categorie_slug||"").includes(c) ||
       m.categorie.toLowerCase().includes(c) ||
       m.magazin.toLowerCase().includes(c)
     )
-  ).slice(0, 12);
+  ).sort((a,b)=>(b.are_promotie?1:0)-(a.are_promotie?1:0)||(b.scor_final||0)-(a.scor_final||0)).slice(0, 12);
 
   const magazine = [...topSanatate, ...restSanatate];
   const cuPromo = magazine.filter(m => m.are_promotie);

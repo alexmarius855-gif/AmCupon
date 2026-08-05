@@ -1,15 +1,17 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import fs from "fs";
+import path from "path";
 import NewsletterForm from "./NewsletterForm";
 
 export const metadata: Metadata = {
   title: "Newsletter Gratuit — Coduri Reducere Zilnic | AmCupon.ro",
-  description: "Aboneaza-te gratuit la newsletter-ul AmCupon.ro. Primesti top 5 coduri de reducere verificate in fiecare saptamana, direct in inbox. Zero spam.",
+  description: "Aboneaza-te gratuit la newsletter-ul AmCupon.ro. Primesti peste 20 de coduri de reducere verificate in fiecare saptamana, direct in inbox. Zero spam.",
   keywords: ["newsletter coduri reducere", "alerte oferte romania", "reduceri email gratuit", "amcupon newsletter"],
   alternates: { canonical: "https://amcupon.ro/newsletter" },
   openGraph: {
     title: "Newsletter Gratuit — Coduri Reducere | AmCupon.ro",
-    description: "Top 5 coduri de reducere verificate saptamanal, direct in inbox. Gratuit, zero spam.",
+    description: "Peste 20 de coduri de reducere verificate saptamanal, direct in inbox. Gratuit, zero spam.",
     url: "https://amcupon.ro/newsletter",
     siteName: "AmCupon.ro",
     locale: "ro_RO",
@@ -28,6 +30,11 @@ const jsonLd = {
 };
 
 export default function NewsletterPage() {
+  const filePath = path.join(process.cwd(), "public", "output.json");
+  const all: Array<{ are_promotie?: boolean }> = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+  const totalMagazine = all.length;
+  const cuPromotie = all.filter(m => m.are_promotie).length;
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
@@ -42,8 +49,8 @@ export default function NewsletterPage() {
               Reduceri exclusive pe email
             </h1>
             <p className="text-[#cbd5e1] text-lg">
-              Peste <span className="text-[#f1f5f9] font-bold">1000 magazine</span> monitorizate zilnic.
-              Fii primul care afla codurile noi.
+              Peste <span className="text-[#f1f5f9] font-bold">{totalMagazine}+ magazine</span> monitorizate zilnic.
+              Fii primul care afla codurile noi — peste 20 pe saptamana, direct in inbox.
             </p>
           </div>
 
@@ -51,8 +58,8 @@ export default function NewsletterPage() {
 
           <div className="grid grid-cols-3 gap-4 text-center mb-8">
             {[
-              { nr: "600+",   label: "Magazine monitorizate" },
-              { nr: "Zilnic", label: "Actualizare coduri" },
+              { nr: `${totalMagazine}+`,   label: "Magazine monitorizate" },
+              { nr: `${cuPromotie}+`,      label: "Coduri active acum" },
               { nr: "100%",   label: "Gratuit pentru tine" },
             ].map(s => (
               <div key={s.label} className="bg-[#111827] rounded-xl border border-[#1e293b] p-4">

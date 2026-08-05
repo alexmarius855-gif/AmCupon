@@ -130,7 +130,7 @@ export default function HostingPage() {
             Cel mai bun <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #14b8a6, #0d9488)" }}>Hosting Romania</span> 2026
           </h1>
           <p className="text-[#cbd5e1] text-lg max-w-2xl mx-auto mb-6">
-            Am comparat cei mai populari hosteri pentru site-uri romanesti. Preturi reale, teste de viteza, calitate suport — tot ce trebuie sa stii.
+            Am comparat public cei mai populari hosteri pentru site-uri romanesti. Preturi reale, specificatii de viteza declarate, calitate suport — tot ce trebuie sa stii.
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm text-[#cbd5e1]">
             <span className="flex items-center gap-1.5"><span className="text-emerald-400">✓</span> Actualizat iunie 2026</span>
