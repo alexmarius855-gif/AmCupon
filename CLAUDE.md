@@ -12,6 +12,38 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 06.08.2026 (bug real thin-content pe 12 pagini + redesign newsletter — PUSHED):**
+- **Bug critic gasit + reparat**: `/calatorie` afisa 0 magazine (grila complet goala) — `CAT_TRAVEL`
+  cauta slug-ul `"calatorie"` dar datele reale au `categorie_slug:"calatorii"` (plural, nu se potrivea
+  cu `.includes()`). Adaugat `"calatorii"` in lista.
+- **Bug structural gasit + reparat pe 12 pagini de nisa** (fashion, electronice, casa, copii, animale,
+  sanatate, gaming, laptop, telefoane, antivirus, smart-home, calatorie): filtrul cerea `m.are_promotie`
+  obligatoriu, dar `are_promotie:true` e rar (ex. 0/37 la calatorii, 2/37 la copii) — contrazicea explicit
+  principiul "promoveaza tot, nu doar cupoane". Scos filtrul obligatoriu, adaugat `.sort()` care pune
+  magazinele cu promotie activa primele (fara sa mai excluda restul).
+- **`scripts/generate_banner_auto.py`**: `draw_grid()` desena cu `fill=(249//10,115//10,22//10)` — rest
+  literal din vechiul portocaliu interzis (249,115,22), opac, in loc de variabila `color` (indigo
+  transparent) definita dar niciodata folosita. Corectat.
+- **`sitemap.ts`**: scoase 3 intrari duplicate (`/vpn`,`/hosting`,`/ai-tools` apareau de 2 ori cu
+  priority/frequency diferite), adaugate 2 pagini orfane (`/comparator`, `/servicii-internationale`
+  — existau ca rute reale dar nu erau in niciun sitemap).
+- **`/vpn`, `/hosting`**: copy corectat — pretindea "am testat"/"testate independent" fara nicio dovada
+  de testare reala in cod/date; inlocuit cu "am comparat public preturile/specificatiile".
+- **Newsletter redesign** (cerere Alex: peste 20 coduri in email): welcome email (`api/newsletter/route.ts`)
+  si campania saptamanala (`scripts/send_newsletter.py`) — de la 6/5 oferte la **20** (8 carduri complete
+  cu cod vizibil + grila compacta 2 coloane pt restul de 12). `send_newsletter.py` era ramas complet pe
+  tema veche indigo/violet (`#4338ca` etc.) de la rebranding-ul din vara — rebranduit la tema teal
+  curenta. `/newsletter`: statistici hardcodate stale ("600+ magazine", "top 5 coduri") inlocuite cu
+  numere reale citite din `output.json` la request.
+- Verificat: `npm run build` + `tsc --noEmit` + `eslint` curat pe toate fisierele. Testat generarea reala
+  a HTML-ului newsletter cu date live (20 oferte, grila completa). Pushed pe `main` (rebase curat peste
+  27 de commit-uri automate acumulate).
+- **Networks — status neschimbat, cerere Alex 06.08 sa avanseze**: cod-ul e 100% pregatit pt toate 4
+  retele (`scripts/import_generic_affiliate.py` are preset pt `impact`/`awin`/`cj`/`admitad`) — blocajul
+  e strict pe 2 export-uri CSV pe care doar Alex le poate face: **Awin** (dashboard → Joined Programmes
+  → export cu coloana "Click Through Link" → salveaza ca `data/awin_export.csv`) si **CJ** (dashboard →
+  Advertisers → Export joined → salveaza ca `data/cj_export.csv`). 2Performant si Impact sunt deja ACTIVE.
+
 **UPDATE 24.07.2026 (audit calitate cod — lint 53→24 probleme, build verde, NEPUSHED):**
 - Cerere Alex: audit general de calitate/eroare/performanță. `npm run lint` inainte: 53 probleme
   (14 erori, 39 warnings). Dupa: **24 probleme (11 erori, 14 warnings)**, `npm run build` verde,
