@@ -12,6 +12,36 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 06.08.2026 (Impact.com import proaspat + fix critic onestitate linkuri — PUSHED):**
+- Alex a atasat un export nou Impact.com (`Campaigns.csv`, 530 programe active, fata de 484 din
+  iunie) cu cererea explicita "nu vreau afiliere fara link verificat, nu vreau sa pierd nimic".
+- Import normal (`import_generic_affiliate.py --network impact`): +57 magazine noi. Verificat live
+  (10 linkuri random, toate 200 OK cu tracking real).
+- **Bug critic descoperit in timpul verificarii**: 208 din 567 magazine `platforma:impact` aveau
+  link FALS sau netrackuit — mostenire din `add_impact_merchants.py` (lista veche hardcodata, ghicea
+  "probabil au program pe Impact" fara sa verifice niciodata, folosea `?ref=amcupon`/
+  `REFERRALCODE=AMCUPON` placeholder). **Root cause structural**: `merge_platforms.py` e
+  auto-referential (`data/output.json` e simultan input SI output al scriptului) si dedup-ul pastra
+  intrarea cu scor mai mare — un link fals cu scor 95 (ex. Hostinger) bloca la infinit un link real
+  cu scor mai mic, pe FIECARE rulare viitoare a pipeline-ului, fara sa se auto-repare niciodata.
+- **Fix pe 2 straturi** (permanent, nu doar patch o singura data):
+  1. `scripts/reconcile_impact_links.py` (nou) — cross-referenteaza `extra_merchants.json` cu
+     exportul CSV proaspat: upgradeaza la link real unde exista program activ, curata parametrul
+     fals unde nu exista (NU sterge magazinul — devine recomandare onesta fara comision, politica
+     deja stabilita pt branduri fara program afiliat).
+  2. `merge_platforms.py` — regula noua in dedup: link cu tracking real castiga MEREU in fata unui
+     link fara, indiferent de scor. Plus o pasa finala de siguranta la fiecare merge: orice
+     `url_afiliat` cu parametru fals ramas (din orice sursa veche) se curata automat, de acum
+     incolo — self-healing, nu mai poate reveni tacit.
+- **Rezultat verificat**: 0 linkuri false `ref=amcupon` in tot `output.json` (erau 32+ doar in
+  `extra_merchants.json`, plus altele direct in `data/output.json`). Impact: **359 → 432 magazine
+  cu tracking real**, restul (135) sunt recomandari oneste, nu mai pretind fals ca ar fi trackuite.
+  Build + `npm run build` curate, pushed.
+- **Notă onestitate pentru viitor**: cand se aplica manual la un program nou (Alex, in dashboard-ul
+  unei retele), NU se adauga niciodata magazinul in `extra_merchants.json`/scripturi cu link ghicit
+  "probabil va fi asa" — se asteapta exportul CSV cu linkul REAL, apoi `reconcile_impact_links.py`
+  sau `import_generic_affiliate.py` il adauga corect. Lectie directa din acest bug.
+
 **UPDATE 06.08.2026 (bug real thin-content pe 12 pagini + redesign newsletter — PUSHED):**
 - **Bug critic gasit + reparat**: `/calatorie` afisa 0 magazine (grila complet goala) — `CAT_TRAVEL`
   cauta slug-ul `"calatorie"` dar datele reale au `categorie_slug:"calatorii"` (plural, nu se potrivea
@@ -509,7 +539,7 @@ Fiecare pagină dinamică are două fișiere:
 |---------|----------|--------|
 | 2Performant | Direct | ✅ ACTIV — sursa principală (226+ magazine) |
 | Profitshare | Direct | ✅ ACTIV (62 magazine) |
-| Impact.com | Direct (Account 7401119) | ✅ ACTIV — 6+ parteneri reali cu tracking link |
+| Impact.com | Direct (Account 7401119) | ✅ ACTIV — **432 magazine cu tracking real verificat** (actualizat 06.08.2026, export proaspat Alex, 530 programe active). Restul de 567 magazine `platforma:impact` (135) sunt recomandari oneste fara comision, nu mai au link fals — vezi update 06.08 mai jos. |
 | Binance | Direct | ✅ ACTIV — ref `205306153`, în `/trading` |
 | Awin | Direct (account 101829567) | ✅ ACTIV — 16 magazine importate 16.07.2026, vezi `scripts/import_awin_links.py` |
 | Otto Broker (asigurări) | 2Performant | ✅ ACTIV — descoperit 17.07.2026 in output.json (aprobat, dar niciodata folosit), acum pe `/asigurari` |
