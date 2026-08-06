@@ -210,7 +210,7 @@
     },
     "promo1": [
       {
-        "nume": "Transport gratuit peste 50 lei! -83% -50% -30% -20%",
+        "nume": "Câștigă 2.000 € pentru o vacanță de cititor Cărțile te trimit în călătorie",
         "cod_cupon": ""
       }
     ],
@@ -456,7 +456,7 @@
       "promotii_active": 0,
       "cashback": "pana la 60%",
       "logo": "https://www.google.com/s2/favicons?domain=hostinger.ro&sz=128",
-      "url_afiliat": "https://www.hostinger.ro/?REFERRALCODE=AMCUPON"
+      "url_afiliat": "https://www.hostinger.ro/"
     },
     "promo1": [],
     "promo2": [],
@@ -761,7 +761,7 @@
     },
     "promo1": [
       {
-        "nume": "Transport gratuit peste 50 lei! -83% -50% -30% -20%",
+        "nume": "Câștigă 2.000 € pentru o vacanță de cititor Cărțile te trimit în călătorie",
         "cod_cupon": ""
       }
     ],

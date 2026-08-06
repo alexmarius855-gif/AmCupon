@@ -1,15 +1,28 @@
 [
   {
-    "id": 271694,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/271653/original/271653.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=574359a0b&aff_code=541547473&campaign_unique=ed6e28c6e",
-    "landing_raw": "https://www.inpuff.ro/promotii",
-    "width": 923,
-    "height": 804,
-    "merchant": "inpuff.ro",
-    "merchant_slug": "inpuff-ro",
-    "name": "Reduceri",
-    "category": "Reduceri",
+    "id": 271745,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/271704/original/271704.JPG",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=5655d538e&aff_code=541547473&campaign_unique=9a6f02fef",
+    "landing_raw": "https://www.libris.ro/lp/cadouvoucher",
+    "width": 953,
+    "height": 952,
+    "merchant": "libris.ro ",
+    "merchant_slug": "libris-ro",
+    "name": "Câștigă 2.000 € pentru o vacanță de cititor Cărțile te trimit în călătorie",
+    "category": "Câștigă 2.000 € pentru o vacanță de cititor Cărțile te trimit în călătorie",
+    "b_type": "image"
+  },
+  {
+    "id": 271744,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/271703/original/271703.jpeg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=089908df8&aff_code=541547473&campaign_unique=3fd6221b1",
+    "landing_raw": "https://www.infinitelove.ro",
+    "width": 1080,
+    "height": 1080,
+    "merchant": "infinitelove.ro",
+    "merchant_slug": "infinitelove-ro",
+    "name": "beauty",
+    "category": "beauty",
     "b_type": "image"
   }
 ]
