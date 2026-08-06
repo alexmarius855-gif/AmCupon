@@ -241,7 +241,7 @@ export default function TopReduceriClient({
               <div className="flex items-center gap-1.5 mb-1">
                 <span>{t.icon}</span>
                 <span className={`text-xs px-1.5 py-0.5 rounded-full font-black ${
-                  tab === t.key ? "bg-slate-100" : "bg-[#1e293b]"
+                  tab === t.key ? "bg-[#1e293b]" : "bg-[#1e293b]"
                 }`}>
                   {t.count}
                 </span>

@@ -97,53 +97,69 @@ export default function MagazinCard({ m, numeOverride, astazi }: { m: CardMagazi
   }
 
   return (
-    <div className="group bg-[#111827] rounded-xl border border-[#1e293b] hover:border-[#14b8a6]/40 shadow-sm hover:shadow-lg hover:shadow-black/40 hover:-translate-y-0.5 transition-all duration-200 flex flex-col overflow-hidden">
-      <a href={`/cod-reducere/${m.magazin}`} className="flex items-start gap-3 pt-5 px-4 pb-3 relative">
-        <div className="absolute top-3 right-3 flex flex-col items-end gap-1">
-          {m.exclusiv && (
-            <span className="text-[10px] font-bold bg-[#0d9488] text-white px-2 py-0.5 rounded-full">Exclusiv</span>
-          )}
-          {showDealScore && (
-            <span title="Scor calculat de AmCupon din reducere, cod, prospețime și exclusivitate"
-              className="flex items-center gap-1 text-[10px] font-bold bg-[#1e293b] border border-[#14b8a6]/40 text-[#5eead4] px-2 py-0.5 rounded-full">
-              <Flame className="w-3 h-3" /> {dealScore}
-            </span>
-          )}
-        </div>
-        <div className="w-16 h-16 rounded-xl overflow-hidden flex items-center justify-center shrink-0 bg-[#ffffff] border border-[#1e293b] p-1.5 group-hover:border-[#14b8a6]/50 transition-colors">
+    <div className="group glass elevate elevate-hover rounded-xl hover:-translate-y-1 transition-all duration-200 flex flex-col overflow-hidden">
+      {/* Banda de accent — semnal vizual instant ca are ceva activ, nu doar decor */}
+      {promo && (
+        <div className="h-0.5 w-full bg-gradient-to-r from-[#0f766e] via-[#14b8a6] to-[#5eead4]" />
+      )}
+
+      <a href={`/cod-reducere/${m.magazin}`} className="flex items-start gap-3 pt-4 px-4 pb-3 relative">
+        <div className="w-14 h-14 rounded-xl overflow-hidden flex items-center justify-center shrink-0 bg-[#ffffff] p-1.5 ring-1 ring-[#334155]/60 group-hover:ring-[#14b8a6]/60 transition-all">
           {logoSrc ? (
             // eslint-disable-next-line @next/next/no-img-element
             <img src={logoSrc} alt={numeMagazin} className="w-full h-full object-contain" loading="lazy" decoding="async" onError={() => setLogoIdx((i) => i + 1)} />
           ) : (
-            <div className="w-full h-full rounded-xl bg-gradient-to-br from-[#14b8a6] to-[#0f766e] flex items-center justify-center">
+            <div className="w-full h-full rounded-lg bg-gradient-to-br from-[#14b8a6] to-[#0f766e] flex items-center justify-center">
               <span className="text-white font-black text-2xl">{initiala}</span>
             </div>
           )}
         </div>
-        <div className="min-w-0 pt-1">
-          <h3 className="font-black text-[#f1f5f9] text-base leading-tight group-hover:text-[#0d9488] transition-colors truncate">{numeMagazin}</h3>
-          {m.categorie && (
-            <span className="inline-block mt-1 text-[10px] font-semibold text-[#94a3b8] bg-[#1e293b] px-2 py-0.5 rounded-full truncate max-w-full">{m.categorie}</span>
-          )}
+
+        <div className="min-w-0 flex-1 pt-0.5">
+          <h3 className="font-black text-[#f1f5f9] text-base leading-tight group-hover:text-[#5eead4] transition-colors truncate">{numeMagazin}</h3>
+          <div className="flex items-center gap-1.5 mt-1.5 flex-wrap">
+            {m.categorie && (
+              <span className="text-[10px] font-semibold text-[#94a3b8] bg-[#1e293b]/80 px-2 py-0.5 rounded-full truncate max-w-[9rem]">{m.categorie}</span>
+            )}
+            {m.exclusiv && (
+              <span className="text-[10px] font-bold bg-[#0d9488] text-white px-2 py-0.5 rounded-full shrink-0">Exclusiv</span>
+            )}
+            {showDealScore && (
+              <span title="Scor calculat de AmCupon din reducere, cod, prospețime și exclusivitate"
+                className="flex items-center gap-1 text-[10px] font-bold bg-[#14b8a6]/10 border border-[#14b8a6]/40 text-[#5eead4] px-1.5 py-0.5 rounded-full shrink-0">
+                <Flame className="w-3 h-3" /> {dealScore}
+              </span>
+            )}
+          </div>
         </div>
+
+        {/* Reducerea = ancora vizuala a cardului. Doar cand exista un procent REAL
+            parsat din titlul promotiei — niciodata inventat sau rotunjit optimist. */}
+        {discount && (
+          <div className="shrink-0 text-right leading-none">
+            <div className="text-2xl font-black bg-gradient-to-br from-[#5eead4] to-[#14b8a6] bg-clip-text text-transparent">
+              -{discount}
+            </div>
+            <div className="text-[9px] font-bold uppercase tracking-wider text-[#94a3b8] mt-0.5">reducere</div>
+          </div>
+        )}
       </a>
 
       <div className="px-4 pb-3 flex-1">
         {promo ? (
           <div>
-            <span className="text-xs font-bold text-[#0d9488] uppercase tracking-wide">
+            <span className="text-[10px] font-bold text-[#0d9488] uppercase tracking-widest">
               {promo.cod_cupon ? "Cod reducere" : "Ofertă specială"}
-              {discount && <span className="ml-1">{discount}</span>}
             </span>
-            <p className="text-sm text-[#cbd5e1] mt-1 line-clamp-2">{promo.nume}</p>
+            <p className="text-sm text-[#cbd5e1] mt-1 line-clamp-2 leading-snug">{promo.nume}</p>
             {promo.zile_ramase <= 3 && (
-              <span className="inline-flex items-center gap-1 mt-1.5 text-xs font-semibold text-red-400">
-                <Clock className="w-3.5 h-3.5" /> Expiră {promo.zile_ramase === 0 ? "azi" : `în ${promo.zile_ramase}z`}
+              <span className="inline-flex items-center gap-1 mt-2 text-[11px] font-bold text-red-400 bg-red-500/10 border border-red-500/25 px-2 py-0.5 rounded-full">
+                <Clock className="w-3 h-3" /> Expiră {promo.zile_ramase === 0 ? "azi" : `în ${promo.zile_ramase}z`}
               </span>
             )}
           </div>
         ) : (
-          <p className="text-sm text-[#94a3b8]">Vizitează magazinul prin linkul nostru afiliat — comisionul nu îți crește prețul.</p>
+          <p className="text-sm text-[#94a3b8] leading-snug">Vizitează magazinul prin linkul nostru afiliat — comisionul nu îți crește prețul.</p>
         )}
       </div>
 
@@ -151,13 +167,13 @@ export default function MagazinCard({ m, numeOverride, astazi }: { m: CardMagazi
         {promo?.cod_cupon ? (
           revealed ? (
             <div className="space-y-2">
-              <div className="border-2 border-dashed border-[#14b8a6]/50 rounded-xl py-2 text-center bg-[#1e293b]">
-                <span className="font-mono font-black text-[#0d9488] tracking-widest text-sm">{promo.cod_cupon}</span>
+              <div className="relative border border-dashed border-[#14b8a6]/60 rounded-xl py-2.5 text-center bg-[#14b8a6]/10">
+                <span className="font-mono font-black text-[#5eead4] tracking-[0.2em] text-sm">{promo.cod_cupon}</span>
                 <AnimatePresence>
                   {copiat && (
                     <motion.p
-                      initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.9 }}
-                      className="text-xs text-emerald-400 mt-0.5"
+                      initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -4 }}
+                      className="text-[11px] font-bold text-emerald-400 mt-0.5"
                     >
                       ✓ Copiat!
                     </motion.p>
@@ -165,29 +181,29 @@ export default function MagazinCard({ m, numeOverride, astazi }: { m: CardMagazi
                 </AnimatePresence>
               </div>
               <a href={link} target="_blank" rel="sponsored noopener noreferrer"
-                className="flex items-center justify-center w-full bg-gradient-to-r from-[#14b8a6] to-[#0d9488] hover:from-[#0d9488] hover:to-[#14b8a6] text-white font-bold py-2.5 rounded-xl text-sm transition-all">
+                className="flex items-center justify-center w-full bg-gradient-to-r from-[#14b8a6] to-[#0d9488] hover:from-[#5eead4] hover:to-[#14b8a6] text-white hover:text-[#052e2b] font-bold py-2.5 rounded-xl text-sm transition-all shadow-lg shadow-[#14b8a6]/20">
                 Mergi la {numeMagazin} →
               </a>
             </div>
           ) : (
             <div className="space-y-2">
-              <div className="border-2 border-dashed border-[#334155] rounded-xl py-2 text-center">
-                <span className="font-mono text-[#94a3b8] text-sm">{maskCod(promo.cod_cupon)}</span>
+              <div className="border border-dashed border-[#334155] rounded-xl py-2.5 text-center bg-[#0a0f1a]/40">
+                <span className="font-mono text-[#94a3b8] tracking-[0.2em] text-sm">{maskCod(promo.cod_cupon)}</span>
               </div>
               <button onClick={onCopiazaClick}
-                className="w-full bg-gradient-to-r from-[#14b8a6] to-[#0d9488] hover:from-[#0d9488] hover:to-[#14b8a6] text-white font-bold py-2.5 rounded-xl text-sm transition-all">
+                className="w-full bg-gradient-to-r from-[#14b8a6] to-[#0d9488] hover:from-[#5eead4] hover:to-[#14b8a6] text-white hover:text-[#052e2b] font-bold py-2.5 rounded-xl text-sm transition-all shadow-lg shadow-[#14b8a6]/20 active:scale-[0.98]">
                 Copiază codul
               </button>
             </div>
           )
         ) : promo ? (
           <a href={link} target="_blank" rel="sponsored noopener noreferrer"
-            className="flex items-center justify-center w-full bg-gradient-to-r from-[#14b8a6] to-[#0d9488] hover:from-[#0d9488] hover:to-[#14b8a6] text-white font-bold py-2.5 rounded-xl text-sm transition-all">
+            className="flex items-center justify-center w-full bg-gradient-to-r from-[#14b8a6] to-[#0d9488] hover:from-[#5eead4] hover:to-[#14b8a6] text-white hover:text-[#052e2b] font-bold py-2.5 rounded-xl text-sm transition-all shadow-lg shadow-[#14b8a6]/20">
             Vezi oferta →
           </a>
         ) : (
           <a href={affiliateLink} target="_blank" rel="sponsored noopener noreferrer"
-            className="flex items-center justify-center w-full bg-[#1e293b] hover:bg-[#334155] border border-[#334155] text-[#f1f5f9] font-bold py-2.5 rounded-xl text-sm transition-colors">
+            className="flex items-center justify-center w-full bg-[#1e293b]/80 hover:bg-[#334155] border border-[#334155] hover:border-[#14b8a6]/50 text-[#cbd5e1] hover:text-[#f1f5f9] font-bold py-2.5 rounded-xl text-sm transition-all">
             Mergi la {numeMagazin} →
           </a>
         )}

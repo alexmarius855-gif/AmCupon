@@ -71,7 +71,7 @@ export default function SportPage() {
             <div className="flex flex-wrap justify-center gap-2">
               {SUBCATEGORII.map(s => (
                 <a key={s.label} href={s.href}
-                  className="flex items-center gap-1.5 bg-slate-100 hover:bg-slate-200 text-[#f1f5f9] text-sm font-semibold px-4 py-1.5 rounded-full border border-slate-200 transition-colors">
+                  className="flex items-center gap-1.5 bg-[#1e293b] hover:bg-[#334155] text-[#f1f5f9] text-sm font-semibold px-4 py-1.5 rounded-full border border-[#334155] transition-colors">
                   {s.emoji} {s.label}
                 </a>
               ))}

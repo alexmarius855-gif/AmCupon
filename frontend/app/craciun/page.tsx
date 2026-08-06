@@ -147,7 +147,7 @@ export default function CraciunPage() {
                 { val: `${magazine.reduce((a, m) => a + m.promotii.length, 0)}+`, label: "Oferte" },
                 { val: `${totalCoduri}+`, label: "Coduri" },
               ].map((s) => (
-                <div key={s.label} className="bg-slate-100 backdrop-blur-sm rounded-xl py-3 px-2">
+                <div key={s.label} className="bg-[#1e293b] backdrop-blur-sm rounded-xl py-3 px-2">
                   <div className="text-2xl font-black">{s.val}</div>
                   <div className="text-xs text-[#ccfbf1]">{s.label}</div>
                 </div>

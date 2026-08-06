@@ -3,6 +3,7 @@
 import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Mail, Search, X } from "lucide-react";
 
 interface Promotie {
   nume: string;
@@ -49,8 +50,8 @@ const CATEGORII = [
   { slug: "beauty",          emoji: "💄", label: "Beauty & Îngrijire", desc: "Cosmetice, parfumuri, unghii",   accent: "#d946ef" },
   { slug: "sanatate",        emoji: "💊", label: "Sănătate & Farmacie",desc: "Farmacie, suplimente, optică",   accent: "#14b8a6" },
   { slug: "software",        emoji: "🖥️", label: "Software & Digital",  desc: "VPN, hosting, AI, aplicații",    accent: "#6366f1" },
-  { slug: "sport",           emoji: "🏃", label: "Sport & Fitness",    desc: "Echipament sportiv & fitness",   accent: "#f97316" },
-  { slug: "copii",           emoji: "👶", label: "Copii & Familie",    desc: "Jucării, bebe, îmbrăcăminte",    accent: "#f59e0b" },
+  { slug: "sport",           emoji: "🏃", label: "Sport & Fitness",    desc: "Echipament sportiv & fitness",   accent: "#4ade80" },
+  { slug: "copii",           emoji: "👶", label: "Copii & Familie",    desc: "Jucării, bebe, îmbrăcăminte",    accent: "#c084fc" },
   { slug: "calatorii",       emoji: "✈️", label: "Călătorii",          desc: "Cazare, zboruri, eSIM",          accent: "#0ea5e9" },
   { slug: "auto-moto",       emoji: "🚗", label: "Auto & Moto",        desc: "Piese, anvelope, accesorii",     accent: "#ef4444" },
   { slug: "carti-educatie",  emoji: "📚", label: "Cărți & Educație",   desc: "Cărți, e-books, cursuri",        accent: "#8b5cf6" },
@@ -309,12 +310,12 @@ export default function HomeClient({
         aria-label="Vezi produsele cu reducere"
         className={`fixed bottom-5 left-1/2 -translate-x-1/2 z-40 flex items-center gap-2.5 bg-gradient-to-r from-[#0d9488] to-[#0f766e] hover:from-[#14b8a6] hover:to-[#0d9488] text-white font-black pl-4 pr-5 py-3 rounded-full shadow-2xl shadow-[#14b8a6]/50 ring-2 ring-[#0f766e]/40 transition-all duration-300 hover:scale-105 ${showFab ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 translate-y-6 pointer-events-none"}`}
       >
-        <span className="relative flex items-center justify-center w-8 h-8 rounded-full bg-slate-100 text-lg">
+        <span className="relative flex items-center justify-center w-8 h-8 rounded-full bg-[#1e293b] text-lg">
           🛍️
           <span className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full ring-2 ring-[#14b8a6] animate-pulse" />
         </span>
         <span className="text-sm leading-tight text-left">Produse cu<br/>reducere</span>
-        <span className="bg-slate-100 text-[10px] font-black px-2 py-0.5 rounded-full tracking-wide">HOT</span>
+        <span className="bg-[#1e293b] text-[10px] font-black px-2 py-0.5 rounded-full tracking-wide">HOT</span>
         <span className="text-lg">→</span>
       </Link>
 
@@ -466,8 +467,11 @@ export default function HomeClient({
 
         <div className="relative max-w-3xl mx-auto px-4 pt-20 pb-20 md:pt-28 md:pb-28 text-center">
           {/* Live pill */}
-          <div className="inline-flex items-center gap-2 bg-slate-100 border border-slate-200 rounded-full px-4 py-1.5 text-xs font-medium text-[#cbd5e1] mb-8">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#0d9488] animate-pulse inline-block"/>
+          <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-1.5 text-xs font-semibold text-[#cbd5e1] mb-8">
+            <span className="relative flex w-2 h-2">
+              <span className="absolute inline-flex w-full h-full rounded-full bg-[#5eead4] opacity-60 animate-ping"/>
+              <span className="relative inline-flex w-2 h-2 rounded-full bg-[#14b8a6]"/>
+            </span>
             {cuPromotii.length > 0 ? `${cuPromotii.length} oferte verificate astazi` : "Sute de oferte verificate zilnic"}
           </div>
 
@@ -484,21 +488,19 @@ export default function HomeClient({
           </p>
 
           {/* Search hero */}
-          <div className="max-w-xl mx-auto relative mb-10">
-            <svg className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-500 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
-            </svg>
+          <div className="max-w-xl mx-auto relative mb-10 group">
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#64748b] group-focus-within:text-[#14b8a6] transition-colors pointer-events-none" />
             <input type="text" placeholder="Cauta: eMAG, Answear, Noriel..." value={cautare}
               onChange={e => {
                 setCautare(e.target.value);
                 setTimeout(() => rezultateRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }), 150);
               }}
               onKeyDown={e => { if (e.key === "Enter") rezultateRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }); }}
-              className="w-full bg-slate-100 border border-slate-200 text-[#f1f5f9] rounded-xl pl-12 pr-4 py-4 text-sm focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/60 focus:border-[#14b8a6]/40 placeholder-slate-400 transition-all" />
+              className="w-full glass elevate text-[#f1f5f9] rounded-xl pl-12 pr-10 py-4 text-sm focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/60 placeholder-[#64748b] transition-all" />
             {cautare && (
-              <button onClick={() => setCautare("")}
-                className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 hover:text-[#f1f5f9] transition-colors text-lg leading-none">
-                &times;
+              <button onClick={() => setCautare("")} aria-label="Sterge cautarea"
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-[#64748b] hover:text-[#f1f5f9] transition-colors">
+                <X className="w-4 h-4" />
               </button>
             )}
           </div>
@@ -515,7 +517,7 @@ export default function HomeClient({
               { nume: "Libris",      slug: "libris.ro" },
             ].map(c => (
               <Link key={c.slug} href={`/cod-reducere/${c.slug}`}
-                className="bg-[#111827] border border-slate-200 hover:border-[#14b8a6] hover:text-[#0f766e] text-[#cbd5e1] text-xs font-semibold px-3.5 py-1.5 rounded-full transition-colors shadow-sm">
+                className="glass hover:border-[#14b8a6]/60 hover:text-[#5eead4] text-[#cbd5e1] text-xs font-semibold px-3.5 py-1.5 rounded-full transition-all hover:-translate-y-0.5">
                 {c.nume}
               </Link>
             ))}
@@ -524,12 +526,12 @@ export default function HomeClient({
           {/* CTA row */}
           <div className="flex flex-wrap items-center justify-center gap-3 mb-12">
             <a href="#promotii"
-              className="bg-[#0d9488] hover:bg-[#14b8a6] text-white font-black px-7 py-3.5 rounded-xl text-sm transition-all shadow-lg shadow-[#14b8a6]/25 hover:shadow-[#14b8a6]/40 hover:-translate-y-0.5 duration-200">
+              className="bg-gradient-to-r from-[#14b8a6] to-[#0d9488] hover:from-[#5eead4] hover:to-[#14b8a6] text-white hover:text-[#052e2b] font-black px-7 py-3.5 rounded-xl text-sm transition-all shadow-lg shadow-[#14b8a6]/25 hover:shadow-[#14b8a6]/45 hover:-translate-y-0.5 duration-200">
               Coduri active acum →
             </a>
             <Link href="/newsletter"
-              className="bg-[#111827] hover:bg-slate-50 border border-slate-200 text-[#f1f5f9] font-semibold px-7 py-3.5 rounded-xl text-sm transition-all duration-200 shadow-sm">
-              📬 Top reduceri pe email
+              className="glass hover:border-[#14b8a6]/50 text-[#f1f5f9] font-semibold px-7 py-3.5 rounded-xl text-sm transition-all duration-200 hover:-translate-y-0.5 inline-flex items-center gap-2">
+              <Mail className="w-4 h-4 text-[#5eead4]" /> Top reduceri pe email
             </Link>
           </div>
 
@@ -681,8 +683,8 @@ export default function HomeClient({
               Coduri verificate pentru magazinele tale preferate
             </p>
             <div className="relative">
-              <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-28 z-10 pointer-events-none" style={{background:"linear-gradient(90deg, #F7F9FC 10%, transparent)"}} />
-              <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-28 z-10 pointer-events-none" style={{background:"linear-gradient(270deg, #F7F9FC 10%, transparent)"}} />
+              <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-28 z-10 pointer-events-none" style={{background:"linear-gradient(90deg, #0a0f1a 10%, transparent)"}} />
+              <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-28 z-10 pointer-events-none" style={{background:"linear-gradient(270deg, #0a0f1a 10%, transparent)"}} />
               <div className="marquee-track flex items-center gap-4 w-max">
                 {row.map((m, i) => (
                   <a key={`${m.magazin}-${i}`} href={`/cod-reducere/${m.magazin}`} aria-hidden={i >= logos.length}
@@ -946,7 +948,7 @@ export default function HomeClient({
         const link  = promo?.landing_page || deal.url_afiliat || deal.url;
         const urgency = deal.zile_ramase <= 1;
         return (
-          <div className={`py-6 px-4 border-b ${urgency ? "bg-gradient-to-r from-red-950/60 via-[#111827] to-[#111827] border-red-500/20" : "bg-[#111827] border-slate-200"}`}>
+          <div className={`py-6 px-4 border-b ${urgency ? "bg-gradient-to-r from-red-950/60 via-[#111827] to-[#111827] border-red-500/20" : "bg-[#111827] border-[#334155]"}`}>
             <div className="max-w-7xl mx-auto">
               <div className="flex items-center gap-3 mb-4">
                 <span className={`text-white text-[10px] font-black px-3 py-1 rounded-full tracking-wider ${urgency ? "bg-red-600 animate-pulse" : "bg-[#0d9488]"}`}>
@@ -961,7 +963,7 @@ export default function HomeClient({
                 )}
               </div>
               <a href={link} target="_blank" rel="sponsored noopener noreferrer"
-                className={`group flex flex-col sm:flex-row items-start sm:items-center gap-4 border rounded-xl p-5 transition-all duration-200 hover:-translate-y-0.5 ${urgency ? "bg-red-500/8 hover:bg-red-500/12 border-red-500/30 hover:border-red-400/50 hover:shadow-lg hover:shadow-red-500/10" : "bg-slate-100 hover:bg-slate-200 border-slate-200 hover:border-[#14b8a6]/40 hover:shadow-lg hover:shadow-[#14b8a6]/10"}`}>
+                className={`group flex flex-col sm:flex-row items-start sm:items-center gap-4 border rounded-xl p-5 transition-all duration-200 hover:-translate-y-0.5 ${urgency ? "bg-red-500/8 hover:bg-red-500/12 border-red-500/30 hover:border-red-400/50 hover:shadow-lg hover:shadow-red-500/10" : "bg-[#1e293b] hover:bg-[#334155] border-[#334155] hover:border-[#14b8a6]/40 hover:shadow-lg hover:shadow-[#14b8a6]/10"}`}>
                 <div className="w-16 h-16 rounded-xl bg-[#ffffff] flex items-center justify-center shrink-0 shadow-lg">
                   {deal.logo_url ? (
                     <img src={deal.logo_url} alt={numeAfisat(deal.magazin)} className="w-12 h-12 object-contain" loading="lazy"/>
@@ -1391,7 +1393,7 @@ export default function HomeClient({
         {/* Card extensie Chrome — cauta automat coduri in locul tau */}
         <div className="relative max-w-3xl mx-auto mt-12">
           <Link href="/extensie"
-            className="group flex flex-col sm:flex-row items-center gap-5 bg-[#111827] border border-slate-200 hover:border-[#14b8a6]/60 rounded-xl p-6 sm:p-7 shadow-sm hover:shadow-lg hover:shadow-[#14b8a6]/10 transition-all">
+            className="group flex flex-col sm:flex-row items-center gap-5 bg-[#111827] border border-[#334155] hover:border-[#14b8a6]/60 rounded-xl p-6 sm:p-7 shadow-sm hover:shadow-lg hover:shadow-[#14b8a6]/10 transition-all">
             <span className="w-14 h-14 shrink-0 rounded-xl bg-[#14b8a6]/12 flex items-center justify-center text-3xl">🧩</span>
             <span className="flex-1 text-center sm:text-left">
               <span className="block font-black text-[#f1f5f9] text-lg mb-1">Extensia AmCupon pentru Chrome</span>
@@ -1418,7 +1420,7 @@ export default function HomeClient({
               <p className="text-sm leading-relaxed mb-5">
                 Coduri de reducere verificate zilnic. Cel mai rapid mod de a economisi la cumparaturile online din Romania.
               </p>
-              <div className="flex items-center gap-2 bg-slate-100 rounded-xl px-3 py-2 text-xs mb-5 w-fit">
+              <div className="flex items-center gap-2 bg-[#1e293b] rounded-xl px-3 py-2 text-xs mb-5 w-fit">
                 <svg className="w-3.5 h-3.5 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
                 </svg>
@@ -1431,7 +1433,7 @@ export default function HomeClient({
                   { label: "TikTok",    href: "https://www.tiktok.com/@amcupon.ro",  path: "M9 12a4 4 0 104 4V4a5 5 0 005 5" },
                 ].map(s => (
                   <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.label}
-                    className="w-8 h-8 rounded-lg bg-slate-100 hover:bg-[#0d9488] flex items-center justify-center transition-colors">
+                    className="w-8 h-8 rounded-lg bg-[#1e293b] hover:bg-[#0d9488] flex items-center justify-center transition-colors">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d={s.path}/>
                     </svg>
@@ -1532,7 +1534,7 @@ export default function HomeClient({
             </div>
           </div>
 
-          <div className="border-t border-slate-200 pt-6 space-y-2">
+          <div className="border-t border-[#334155] pt-6 space-y-2">
             <p className="text-xs text-[#cbd5e1] leading-relaxed max-w-4xl">
               Linkurile de pe AmCupon.ro sunt linkuri afiliate generate prin 2Performant. Cand accesezi un magazin partener si efectuezi o achizitie, primim un comision de la magazin fara niciun cost suplimentar pentru tine.
             </p>
@@ -1859,7 +1861,7 @@ function NewsletterForm() {
 
   if (status === "ok") {
     return (
-      <div className="bg-slate-100 backdrop-blur-sm rounded-xl px-8 py-6 text-[#f1f5f9] text-center border border-slate-200">
+      <div className="bg-[#1e293b] backdrop-blur-sm rounded-xl px-8 py-6 text-[#f1f5f9] text-center border border-[#334155]">
         <p className="font-black text-xl mb-1">Multumim!</p>
         <p className="text-sm text-[#cbd5e1]">Te-ai abonat cu succes. Vei primi ofertele zilei pe email.</p>
       </div>
@@ -1871,7 +1873,7 @@ function NewsletterForm() {
       <form onSubmit={trimite} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
         <input type="email" value={email} onChange={e => { setEmail(e.target.value); setStatus("idle"); setErrMsg(""); }}
           placeholder="adresa@email.ro" disabled={status === "loading"}
-          className="flex-1 px-4 py-3.5 rounded-xl bg-slate-100 border border-slate-200 text-[#f1f5f9] text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/50 focus:border-[#14b8a6]/40 disabled:opacity-60 transition-all"/>
+          className="flex-1 px-4 py-3.5 rounded-xl bg-[#1e293b] border border-[#334155] text-[#f1f5f9] text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/50 focus:border-[#14b8a6]/40 disabled:opacity-60 transition-all"/>
         <button type="submit" disabled={status === "loading"}
           className="bg-[#0d9488] hover:bg-[#14b8a6] disabled:opacity-60 text-white font-black px-7 py-3.5 rounded-xl text-sm transition-colors whitespace-nowrap shadow-lg shadow-[#14b8a6]/25">
           {status === "loading" ? "Se trimite..." : "Aboneaza-te"}

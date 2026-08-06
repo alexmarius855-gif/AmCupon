@@ -101,7 +101,7 @@ export default function AntivirusPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["PC & Mac","Android","iOS","5 Dispozitive","Parental Control","VPN Inclus","Dark Web Monitor"].map(c => (
-                <span key={c} className="bg-slate-100 border border-slate-200 text-slate-500 text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
+                <span key={c} className="bg-[#1e293b] border border-[#334155] text-slate-500 text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
               ))}
             </div>
           </div>

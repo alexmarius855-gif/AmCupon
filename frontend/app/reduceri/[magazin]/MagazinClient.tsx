@@ -66,9 +66,9 @@ export default function MagazinClient({ magazin: m }: { magazin: Magazin }) {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#111827]">
       {/* HEADER */}
-      <header className="bg-[#111827] border-b border-gray-200 sticky top-0 z-50 shadow-sm">
+      <header className="bg-[#111827] border-b border-[#334155] sticky top-0 z-50 shadow-sm">
         <div className="max-w-5xl mx-auto px-4 py-3 flex items-center gap-4">
           <Link href="/" className="flex items-center gap-1.5 shrink-0">
             <div className="bg-[#0d9488] text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
@@ -87,8 +87,8 @@ export default function MagazinClient({ magazin: m }: { magazin: Magazin }) {
       <div className="max-w-5xl mx-auto px-4 py-8">
 
         {/* PROFIL MAGAZIN */}
-        <div className="bg-[#111827] rounded-xl border border-gray-200 shadow-sm p-6 mb-8 flex flex-col sm:flex-row items-center sm:items-start gap-6">
-          <div className="w-24 h-24 rounded-xl overflow-hidden flex items-center justify-center bg-gray-50 border border-gray-100 p-1 shrink-0">
+        <div className="bg-[#111827] rounded-xl border border-[#334155] shadow-sm p-6 mb-8 flex flex-col sm:flex-row items-center sm:items-start gap-6">
+          <div className="w-24 h-24 rounded-xl overflow-hidden flex items-center justify-center bg-[#111827] border border-[#1e293b] p-1 shrink-0">
             {m.logo_url && imgOk ? (
               <img
                 src={m.logo_url}
@@ -174,7 +174,7 @@ export default function MagazinClient({ magazin: m }: { magazin: Magazin }) {
                 const isCopiat = copiat === idx;
 
                 return (
-                  <div key={idx} className="bg-[#111827] rounded-xl border border-gray-200 shadow-sm p-5">
+                  <div key={idx} className="bg-[#111827] rounded-xl border border-[#334155] shadow-sm p-5">
                     <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
                       <div className="flex-1">
                         <div className="flex flex-wrap items-center gap-2 mb-2">
@@ -229,7 +229,7 @@ export default function MagazinClient({ magazin: m }: { magazin: Magazin }) {
                           ) : (
                             <button
                               onClick={() => copiazaCod(idx, promo.cod_cupon)}
-                              className="w-full border-2 border-dashed border-gray-300 hover:border-[#0d9488] rounded-xl py-2.5 px-3 text-center transition-colors group"
+                              className="w-full border-2 border-dashed border-[#475569] hover:border-[#0d9488] rounded-xl py-2.5 px-3 text-center transition-colors group"
                             >
                               <span className="font-mono text-gray-400 group-hover:text-[#0d9488] text-sm">
                                 {promo.cod_cupon.slice(0, 4)}{"*".repeat(Math.max(0, Math.min(promo.cod_cupon.length - 4, 6)))}
@@ -257,7 +257,7 @@ export default function MagazinClient({ magazin: m }: { magazin: Magazin }) {
             </div>
           </section>
         ) : (
-          <div className="bg-[#111827] rounded-xl border border-gray-200 p-10 text-center">
+          <div className="bg-[#111827] rounded-xl border border-[#334155] p-10 text-center">
             <p className="text-gray-400 text-lg mb-1">Nicio promoție activă momentan</p>
             <p className="text-gray-300 text-sm mb-5">Revino în curând sau vizitează direct magazinul</p>
             <a
@@ -272,7 +272,7 @@ export default function MagazinClient({ magazin: m }: { magazin: Magazin }) {
         )}
 
         {/* BACK LINK */}
-        <div className="mt-10 pt-6 border-t border-gray-100 text-center">
+        <div className="mt-10 pt-6 border-t border-[#1e293b] text-center">
           <Link href="/" className="text-sm text-gray-400 hover:text-[#0d9488] transition-colors">
             ← Înapoi la toate promoțiile
           </Link>

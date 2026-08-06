@@ -101,12 +101,12 @@ export default function IdeiCadouriPage() {
               {OCAZII.map(o => (
                 o.href ? (
                   <a key={o.label} href={o.href}
-                    className="flex items-center gap-1.5 bg-slate-100 hover:bg-slate-200 text-[#f1f5f9] font-semibold text-sm px-4 py-2 rounded-full transition-colors border border-slate-200">
+                    className="flex items-center gap-1.5 bg-[#1e293b] hover:bg-[#334155] text-[#f1f5f9] font-semibold text-sm px-4 py-2 rounded-full transition-colors border border-[#334155]">
                     {o.emoji} {o.label}
                   </a>
                 ) : (
                   <span key={o.label}
-                    className="flex items-center gap-1.5 bg-slate-100 text-[#f1f5f9] font-semibold text-sm px-4 py-2 rounded-full border border-slate-200">
+                    className="flex items-center gap-1.5 bg-[#1e293b] text-[#f1f5f9] font-semibold text-sm px-4 py-2 rounded-full border border-[#334155]">
                     {o.emoji} {o.label}
                   </span>
                 )

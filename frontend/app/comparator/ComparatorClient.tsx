@@ -71,16 +71,16 @@ function MagazinCard({ m, onRemove, onSwap, position }: { m: Magazin; onRemove: 
       {/* Header gradient */}
       <div className={`bg-gradient-to-r ${gradients[position % 2]} p-5 text-[#f1f5f9]`}>
         <div className="flex items-center justify-between mb-4">
-          <span className="text-xs font-bold bg-slate-100 px-2.5 py-1 rounded-full">Magazin #{position + 1}</span>
+          <span className="text-xs font-bold bg-[#1e293b] px-2.5 py-1 rounded-full">Magazin #{position + 1}</span>
           <div className="flex gap-2">
             {onSwap && (
-              <button onClick={onSwap} title="Schimbă magazin" className="w-7 h-7 bg-slate-100 hover:bg-slate-200 rounded-lg flex items-center justify-center transition-colors">
+              <button onClick={onSwap} title="Schimbă magazin" className="w-7 h-7 bg-[#1e293b] hover:bg-[#334155] rounded-lg flex items-center justify-center transition-colors">
                 <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
                 </svg>
               </button>
             )}
-            <button onClick={onRemove} title="Elimină" className="w-7 h-7 bg-slate-100 hover:bg-slate-200 rounded-lg flex items-center justify-center transition-colors">
+            <button onClick={onRemove} title="Elimină" className="w-7 h-7 bg-[#1e293b] hover:bg-[#334155] rounded-lg flex items-center justify-center transition-colors">
               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12"/>
               </svg>

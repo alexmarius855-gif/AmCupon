@@ -397,7 +397,7 @@ export default function ProduseClient({
           <div className="absolute inset-0 opacity-[0.02]" style={{backgroundImage:"linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px)", backgroundSize:"50px 50px"}}/>
         </div>
         <div className="relative max-w-5xl mx-auto px-4 pt-14 pb-16 text-center">
-          <div className="inline-flex items-center gap-2 bg-slate-100 border border-slate-200 rounded-full px-4 py-1.5 text-xs font-semibold text-slate-500 mb-6">
+          <div className="inline-flex items-center gap-2 bg-[#1e293b] border border-[#334155] rounded-full px-4 py-1.5 text-xs font-semibold text-slate-500 mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse inline-block"/>
             {cuPromotii.length} magazine cu promotii active · {products.length} produse in catalog
           </div>

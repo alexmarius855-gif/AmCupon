@@ -213,7 +213,7 @@ export default async function TopCategoriePage({
                 &larr; Top Produse
               </Link>
               {cat.tag && (
-                <span className="bg-slate-100 text-[#f1f5f9] text-xs font-bold px-2.5 py-0.5 rounded-full ml-2">
+                <span className="bg-[#1e293b] text-[#f1f5f9] text-xs font-bold px-2.5 py-0.5 rounded-full ml-2">
                   {cat.tag}
                 </span>
               )}
@@ -235,7 +235,7 @@ export default async function TopCategoriePage({
                 { val: `${pretMinim.toLocaleString("ro-RO")}+`, label: "Pret de la (lei)" },
                 { val: data.updated,             label: "Actualizat" },
               ].map(s => (
-                <div key={s.label} className="bg-slate-100 rounded-xl py-2.5 px-3">
+                <div key={s.label} className="bg-[#1e293b] rounded-xl py-2.5 px-3">
                   <div className="text-base font-black">{s.val}</div>
                   <div className="text-xs text-slate-500">{s.label}</div>
                 </div>

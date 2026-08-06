@@ -223,7 +223,7 @@ export default async function NisaPage(
               {produseFiltrate.map((p: Produs, i: number) => (
                 <a key={i} href={p.url} target="_blank" rel="sponsored noopener noreferrer"
                   className="group bg-[#111827] border border-[#1e293b] hover:border-[#0f766e] rounded-xl overflow-hidden hover:shadow-lg transition-all flex flex-col">
-                  <div className="aspect-square bg-slate-50 flex items-center justify-center overflow-hidden relative">
+                  <div className="aspect-square bg-[#111827] flex items-center justify-center overflow-hidden relative">
                     {p.image ? (
                       // eslint-disable-next-line @next/next/no-img-element
                       <img src={p.image} alt={p.title} loading="lazy"

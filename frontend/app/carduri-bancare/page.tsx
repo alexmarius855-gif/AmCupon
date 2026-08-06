@@ -169,7 +169,7 @@ export default function CarduriBancarePage() {
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Cont gratuit", "Card virtual", "Schimb valutar", "Transferuri rapide", "Fara birocratie"].map(c => (
-                <span key={c} className="bg-slate-100 border border-slate-200 text-slate-500 text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
+                <span key={c} className="bg-[#1e293b] border border-[#334155] text-slate-500 text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
               ))}
             </div>
           </div>
@@ -189,7 +189,7 @@ export default function CarduriBancarePage() {
                 <div className={`bg-gradient-to-r ${c.culoare} p-6`}>
                   <div className="flex items-start justify-between gap-4">
                     <div className="flex items-center gap-4">
-                      <div className="w-14 h-14 rounded-xl bg-slate-100 backdrop-blur-sm flex items-center justify-center text-3xl font-black text-[#f1f5f9] shrink-0">
+                      <div className="w-14 h-14 rounded-xl bg-[#1e293b] backdrop-blur-sm flex items-center justify-center text-3xl font-black text-[#f1f5f9] shrink-0">
                         {c.emoji}
                       </div>
                       <div>

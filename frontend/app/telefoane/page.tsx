@@ -88,7 +88,7 @@ export default function TelefoaneePage() {
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Samsung Galaxy","iPhone 15","Xiaomi 14","OnePlus 13","Sub 1000 lei","Sub 2000 lei","5G"].map(c => (
-                <span key={c} className="bg-slate-100 border border-slate-200 text-slate-500 text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
+                <span key={c} className="bg-[#1e293b] border border-[#334155] text-slate-500 text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
               ))}
             </div>
           </div>

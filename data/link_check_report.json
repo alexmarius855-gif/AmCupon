@@ -1,0 +1,367 @@
+{
+  "verificate": 60,
+  "vii": 60,
+  "morti": 0,
+  "rezultate": [
+    {
+      "magazin": "libris.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/61047?sub_id=libris.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "mathaus.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/124829?sub_id=mathaus.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "pcmadd.com",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/59438?sub_id=pcmadd.com",
+      "nota": "ok"
+    },
+    {
+      "magazin": "pint.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/128052?sub_id=pint.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "rubyfashion.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/56983?sub_id=rubyfashion.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "exclusive-home.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/160977?sub_id=exclusive-home.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "giftspot.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/167474?sub_id=giftspot.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "vegis.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/58221?sub_id=vegis.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "vapetronic.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/133049?sub_id=vapetronic.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "educlass.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/58867?sub_id=educlass.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "profitshare.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/61861?sub_id=profitshare.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "emag.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/35?sub_id=emag.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "itgalaxy.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/83901?sub_id=itgalaxy.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "abdcomputer.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/62479?sub_id=abdcomputer.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "daedalusonline.eu",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/103212?sub_id=daedalusonline.eu",
+      "nota": "ok"
+    },
+    {
+      "magazin": "perfectbijoux.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/62570?sub_id=perfectbijoux.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "iconicul.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/68331?sub_id=iconicul.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "citgrup.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/67678?sub_id=citgrup.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "conectoo.com",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/71765?sub_id=conectoo.com",
+      "nota": "ok"
+    },
+    {
+      "magazin": "sportpartner.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/81396?sub_id=sportpartner.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "dwyn.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/87557?sub_id=dwyn.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "mycloset.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/69959?sub_id=mycloset.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "techstar.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/88017?sub_id=techstar.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "priveboutique.net",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/63454?sub_id=priveboutique.net",
+      "nota": "ok"
+    },
+    {
+      "magazin": "vonmag.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/88324?sub_id=vonmag.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "emobili.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/100816?sub_id=emobili.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "fashiondays.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/88736?sub_id=fashiondays.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "mindblower.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/74774?sub_id=mindblower.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "alecoair.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/96348?sub_id=alecoair.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "hiris.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/71041?sub_id=hiris.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "beanzcafe.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/107680?sub_id=beanzcafe.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "seku.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/98562?sub_id=seku.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "case-smart.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/111470?sub_id=case-smart.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "scufita-rosie.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/112145?sub_id=scufita-rosie.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "dalisticq-shop.com",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/118697?sub_id=dalisticq-shop.com",
+      "nota": "ok"
+    },
+    {
+      "magazin": "anvelope-oferte.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/124336?sub_id=anvelope-oferte.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "magazinuldegene.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/130078?sub_id=magazinuldegene.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "hostico.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/127700?sub_id=hostico.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "contakt.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/130510?sub_id=contakt.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "geekmall.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/132216?sub_id=geekmall.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "forit.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/138584?sub_id=forit.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "decolandia.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/134190?sub_id=decolandia.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "creditprime.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/141061?sub_id=creditprime.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "axi-card.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/140338?sub_id=axi-card.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "parmashop.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/141953?sub_id=parmashop.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "hotpick.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/142963?sub_id=hotpick.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "vexio.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/103131?sub_id=vexio.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "fornello.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/148979?sub_id=fornello.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "startco.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/149286?sub_id=startco.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "dualstore.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/127683?sub_id=dualstore.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "watch24.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/118702?sub_id=watch24.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "sole.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/150852?sub_id=sole.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "unicorn-naturals.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/159248?sub_id=unicorn-naturals.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "vesa.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/115529?sub_id=vesa.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "anvelino.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/165505?sub_id=anvelino.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "streamstore.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/166230?sub_id=streamstore.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "startdecor.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/166563?sub_id=startdecor.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "coffeepoint.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/163078?sub_id=coffeepoint.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "novodoors.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/166234?sub_id=novodoors.ro",
+      "nota": "ok"
+    },
+    {
+      "magazin": "evrik.ro",
+      "status": 200,
+      "final_url": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/166235?sub_id=evrik.ro",
+      "nota": "ok"
+    }
+  ]
+}

@@ -87,7 +87,7 @@ const ACCENT_CLASSES: Record<string, { text: string; bg: string; border: string;
   indigo:  { text: "text-[#0d9488]",  bg: "bg-[#14b8a6]",  border: "hover:border-[#0f766e]",  groupHoverText: "group-hover:text-[#0d9488]" },
   amber:   { text: "text-[#14b8a6]",   bg: "bg-[#14b8a6]",   border: "hover:border-[#14b8a6]",   groupHoverText: "group-hover:text-[#14b8a6]" },
   rose:    { text: "text-[#14b8a6]",    bg: "bg-[#14b8a6]",    border: "hover:border-[#14b8a6]",    groupHoverText: "group-hover:text-[#14b8a6]" },
-  gray:    { text: "text-gray-600",    bg: "bg-gray-500",    border: "hover:border-gray-300",    groupHoverText: "group-hover:text-gray-600" },
+  gray:    { text: "text-gray-600",    bg: "bg-gray-500",    border: "hover:border-[#475569]",    groupHoverText: "group-hover:text-gray-600" },
   teal:    { text: "text-[#14b8a6]",    bg: "bg-[#14b8a6]",    border: "hover:border-[#14b8a6]",    groupHoverText: "group-hover:text-[#14b8a6]" },
   violet:  { text: "text-[#14b8a6]",  bg: "bg-[#14b8a6]",  border: "hover:border-[#14b8a6]",  groupHoverText: "group-hover:text-[#14b8a6]" },
   cyan:    { text: "text-[#0d9488]",    bg: "bg-[#14b8a6]",    border: "hover:border-[#0f766e]",    groupHoverText: "group-hover:text-[#0d9488]" },

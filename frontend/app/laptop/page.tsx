@@ -88,7 +88,7 @@ export default function LaptopPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Gaming","Student","Business","MacBook","Sub 3000 lei","Sub 5000 lei","Ultrabook"].map(c => (
-                <span key={c} className="bg-slate-100 border border-slate-200 text-slate-500 text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
+                <span key={c} className="bg-[#1e293b] border border-[#334155] text-slate-500 text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
               ))}
             </div>
           </div>

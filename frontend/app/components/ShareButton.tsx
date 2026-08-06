@@ -68,14 +68,14 @@ export default function ShareButton({
 
   const btnColors = isDark
     ? "border border-[#334155] text-[#cbd5e1] hover:border-[#64748b] hover:text-[#cbd5e1]"
-    : "border border-gray-300 text-gray-500 hover:border-[#0d9488] hover:text-[#0d9488]";
+    : "border border-[#475569] text-gray-500 hover:border-[#0d9488] hover:text-[#0d9488]";
 
   const dropdownBg = isDark
     ? "bg-[#1e293b] border-[#334155]"
-    : "bg-[#111827] border-gray-200";
+    : "bg-[#111827] border-[#334155]";
 
-  const itemHover = isDark ? "hover:bg-[#334155]" : "hover:bg-gray-50";
-  const dividerColor = isDark ? "border-[#334155]" : "border-gray-200";
+  const itemHover = isDark ? "hover:bg-[#334155]" : "hover:bg-[#111827]";
+  const dividerColor = isDark ? "border-[#334155]" : "border-[#334155]";
   const copyColor = isDark ? "text-[#cbd5e1]" : "text-gray-600";
 
   return (

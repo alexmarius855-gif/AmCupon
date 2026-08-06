@@ -67,7 +67,7 @@ export default function CasaPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Mobila","Bricolaj","Gradina","Electrocasnice","Decoratiuni","Baie"].map(c => (
-                <span key={c} className="bg-slate-100 text-[#f1f5f9] text-sm font-semibold px-4 py-1.5 rounded-full border border-slate-200">{c}</span>
+                <span key={c} className="bg-[#1e293b] text-[#f1f5f9] text-sm font-semibold px-4 py-1.5 rounded-full border border-[#334155]">{c}</span>
               ))}
             </div>
           </div>

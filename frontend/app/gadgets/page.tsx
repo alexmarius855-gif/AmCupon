@@ -75,7 +75,7 @@ export default function GadgetsPage() {
                 { val: `${cuPromo.length}+`, label: "Oferte active" },
                 { val: "Zilnic", label: "Actualizat" },
               ].map(s => (
-                <div key={s.label} className="bg-slate-100 rounded-xl py-3 px-2">
+                <div key={s.label} className="bg-[#1e293b] rounded-xl py-3 px-2">
                   <div className="text-xl font-black">{s.val}</div>
                   <div className="text-xs text-[#0f766e]">{s.label}</div>
                 </div>

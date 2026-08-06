@@ -89,7 +89,7 @@ export default function WishlistPage() {
                   {/* Buton remove */}
                   <button
                     onClick={() => remove(item.id)}
-                    className="absolute top-2 right-2 z-10 w-6 h-6 bg-slate-100 hover:bg-[#111827] border border-[#1e293b] rounded-full flex items-center justify-center text-[#94a3b8] hover:text-red-400 transition-colors text-xs"
+                    className="absolute top-2 right-2 z-10 w-6 h-6 bg-[#1e293b] hover:bg-[#111827] border border-[#1e293b] rounded-full flex items-center justify-center text-[#94a3b8] hover:text-red-400 transition-colors text-xs"
                     title="Sterge din lista"
                   >
                     &#x2715;
@@ -97,7 +97,7 @@ export default function WishlistPage() {
 
                   {/* Imagine */}
                   <a href={item.url} target="_blank" rel="sponsored noopener noreferrer">
-                    <div className="aspect-square bg-slate-50 flex items-center justify-center overflow-hidden">
+                    <div className="aspect-square bg-[#111827] flex items-center justify-center overflow-hidden">
                       {item.image && !imgFail ? (
                         // eslint-disable-next-line @next/next/no-img-element
                         <img

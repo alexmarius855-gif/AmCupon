@@ -681,7 +681,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
             <h2 className="text-lg font-black text-[#f1f5f9] mb-4">Ghid complet {nume}</h2>
             <a href={`/blog/${blogPost.slug}`}
               className="group flex gap-4 bg-[#111827] border border-[#1e293b] hover:border-[#14b8a6] rounded-xl p-4 hover:shadow-lg hover:shadow-black/40 transition-all">
-              <div className="w-20 h-20 shrink-0 rounded-xl overflow-hidden bg-gray-100">
+              <div className="w-20 h-20 shrink-0 rounded-xl overflow-hidden bg-[#1e293b]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={blogPost.cover} alt={blogPost.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
@@ -717,7 +717,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                 return (
                   <a key={s.magazin} href={`/cod-reducere/${s.magazin}`}
                     className="group flex flex-col items-center gap-1.5 p-2.5 bg-[#111827] rounded-xl border border-[#1e293b] hover:border-[#14b8a6] hover:shadow-sm transition-all text-center">
-                    <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center bg-gray-50 border border-[#1e293b]">
+                    <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center bg-[#111827] border border-[#1e293b]">
                       {s.logo_url ? (
                         // eslint-disable-next-line @next/next/no-img-element
                         <img src={s.logo_url} alt={numeSim} className="w-full h-full object-contain p-0.5" loading="lazy"/>
@@ -771,7 +771,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
           </section>
         )}
 
-        <div className="mt-10 pt-6 border-t border-gray-100 text-center">
+        <div className="mt-10 pt-6 border-t border-[#1e293b] text-center">
           <Link href="/" className="text-sm text-[#94a3b8] hover:text-[#0d9488] transition-colors">
             ← Inapoi la toate promotiile
           </Link>
