@@ -235,6 +235,20 @@ def gen_products():
         and _mkey(p) not in MERCHANT_GRID_BLOCKLIST and _titlu_ok(p)
     ]
 
+    # Dedup pe (titlu, preț) — feed-urile (2Performant etc.) listeaza des acelasi
+    # produs de mai multe ori (variante marime/culoare cu URL diferit doar prin query
+    # param). Fara asta, un singur produs putea umple 6/16 sloturi dintr-o categorie
+    # (gasit 06.08.2026: "Pantofi universali fq7939003" x6 in Fashion) — arata stricat.
+    seen_keys = set()
+    deduped = []
+    for p in valide:
+        key = ((p.get("title") or "").strip().lower(), round(p.get("price") or 0, 2))
+        if key in seen_keys:
+            continue
+        seen_keys.add(key)
+        deduped.append(p)
+    valide = deduped
+
     # Clasificare PER-TITLU (primara) — magazinul doar ca fallback verificat manual.
     # Asa magazinele multi-categorie (foglia=baie, carturesti=figurine) nu mai baga
     # tot intr-o categorie gresita. Produsele neclasificabile raman "other" -> excluse.
