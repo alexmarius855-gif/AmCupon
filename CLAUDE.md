@@ -12,6 +12,38 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 06.08.2026 (fix acces /admin + panou Affiliate Audit + reconciliere Impact extinsa — PUSHED, commits 88e877f+dc26f7c+11b3c9e):**
+- **Bug real gasit + reparat: `/admin` nu se putea accesa cu NICIO parola.** `app/admin/page.tsx`
+  compara cookie-ul de sesiune (hash SHA-256, `deriveSessionToken()`) direct cu `ADMIN_PASSWORD` in
+  clar — `login/route.ts` fusese deja hardened sa stocheze hash-ul, dar aceasta pagina a ramas pe
+  verificarea veche, deci comparatia nu se putea potrivi NICIODATA. Fix: foloseste `checkAuth()`
+  (`lib/adminAuth.ts`), la fel ca `/api/admin/status` si `/api/admin/trigger`.
+- **Panou nou `/admin` — "Affiliate Audit"**: `api/admin/status/route.ts` (`getAffiliateAudit()`) +
+  tab nou in `AdminDashboard.tsx` — lista magazinele fara link de tracking real (acelasi regex ca
+  `merge_platforms.py`), sortate promotie-activa-prima (clicuri reale acum) apoi scor descrescator,
+  breakdown pe platforma, link direct catre pagina publica a fiecarui magazin. Scop: Alex vede mereu
+  exact unde e monetizarea 0, fara sa mai numere manual in output.json.
+- **`reconcile_impact_links.py` extins — verifica acum si `data/output.json`, nu doar
+  `extra_merchants.json`.** Gasit prin panoul de mai sus: 50+ magazine (kkday.com, artlist.io,
+  travala.com, jackery, roborock etc.) aveau program Impact ACTIV in CSV dar traiau in
+  `data/output.json` (fisierul etichetat "2Performant" in `merge_platforms.py`, folosit istoric si
+  pt Impact) — niciun script nu le verifica vreodata. Adaugat si matching eTLD+1/subdomeniu explicit
+  (`MULTI_TLD` — co.uk/com.au/etc, ca sa nu confunde TLD compus cu root real), pt cazuri ca
+  `nl.jackery.com` -> program-ul de baza `jackery.com`.
+  - **Wired in `update-data.yml`, inainte de `merge_platforms.py`** — pana acum scriptul exista dar
+    rula DOAR manual, o singura data; acum e permanent, se auto-corecteaza la fiecare rulare de 4h
+    cand apar magazine noi descoperite (`discover_impact_merchants.py`) fara link inca reconciliat.
+  - **Rezultat verificat**: orfane reale (fara tracking) **138 → 88** (3 direct + 85 impact, din 1178
+    total). Restul de 88 sunt genuine — verificat manual (grep pe CSV) ca temu.com/shein.com/
+    trendyol.com/hostinger.ro/norton/revolut/envato/banggood/logitech/upwork/razer/blinkist NU au
+    program Impact activ acum, nu e o eroare de matching — necesita aplicare noua la retea (actiune
+    Alex, nu se poate reconstrui din date existente fara sa ghicim, exact eroarea reparata pe 06.08).
+- **Descoperire in timpul lucrului**: exista deja `AGENTS.md` (root) + `.codex/agents/*.toml` (3
+  agenti Codex: affiliate-link-auditor, brand-guard, seo-schema-checker) — workflow-ul Codex al lui
+  Alex, separat de acest fisier, nu s-a modificat nimic acolo.
+- Build + `tsc --noEmit` + `eslint` verificate. Testat live in dev (login real cu parola din
+  `.env.local` local, nu afecteaza `ADMIN_PASSWORD`-ul real din Vercel).
+
 **UPDATE 06.08.2026 (Impact.com import proaspat + fix critic onestitate linkuri — PUSHED):**
 - Alex a atasat un export nou Impact.com (`Campaigns.csv`, 530 programe active, fata de 484 din
   iunie) cu cererea explicita "nu vreau afiliere fara link verificat, nu vreau sa pierd nimic".
@@ -539,7 +571,7 @@ Fiecare pagină dinamică are două fișiere:
 |---------|----------|--------|
 | 2Performant | Direct | ✅ ACTIV — sursa principală (226+ magazine) |
 | Profitshare | Direct | ✅ ACTIV (62 magazine) |
-| Impact.com | Direct (Account 7401119) | ✅ ACTIV — **432 magazine cu tracking real verificat** (actualizat 06.08.2026, export proaspat Alex, 530 programe active). Restul de 567 magazine `platforma:impact` (135) sunt recomandari oneste fara comision, nu mai au link fals — vezi update 06.08 mai jos. |
+| Impact.com | Direct (Account 7401119) | ✅ ACTIV — **483 magazine cu tracking real verificat** (actualizat 06.08.2026, reconciliere extinsa la data/output.json). Restul de 568 magazine `platforma:impact` (85, era 135) sunt recomandari oneste fara comision, nu mai au link fals — vezi update 06.08 mai jos. Reconcilierea ruleaza acum automat la fiecare pipeline (nu mai e manuala). |
 | Binance | Direct | ✅ ACTIV — ref `205306153`, în `/trading` |
 | Awin | Direct (account 101829567) | ✅ ACTIV — 16 magazine importate 16.07.2026, vezi `scripts/import_awin_links.py` |
 | Otto Broker (asigurări) | 2Performant | ✅ ACTIV — descoperit 17.07.2026 in output.json (aprobat, dar niciodata folosit), acum pe `/asigurari` |
@@ -566,6 +598,7 @@ Fiecare pagină dinamică are două fișiere:
 | `frontend/app/layout.tsx` | Root layout: GA4, Vercel Analytics, JSON-LD global |
 | `frontend/app/sitemap.ts` | Sitemap dinamic din output.json + blog-posts.json |
 | `frontend/app/api/newsletter/route.ts` | Subscribe + `sendWelcomeEmail()` (Brevo) |
+| `scripts/reconcile_impact_links.py` | Upgradeaza magazine Impact fara link real (extra_merchants.json + data/output.json) la linkul real din CSV cand exista program activ; curata parametri falsi cand nu exista. Ruleaza automat in pipeline, inainte de merge_platforms.py |
 | `scripts/fetch_2p_api.py` | Auth 2Performant + descărcare magazine/promoții |
 | `scripts/fetch_product_feeds.py` | Descărcare produse din API feed-uri |
 | `scripts/send_newsletter.py` | Campanie Brevo către abonați (template indigo/cyan) |
