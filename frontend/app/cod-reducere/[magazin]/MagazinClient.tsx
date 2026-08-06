@@ -3,10 +3,42 @@
 import Link from "next/link";
 
 import { useState, useEffect } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { Ticket, Tag, ShoppingBag, Star, Timer, ClipboardCopy, ShoppingCart, CheckCircle2, Puzzle, Mail, Flame } from "lucide-react";
 import PriceAlert from "../../components/PriceAlert";
 import ReviewSection from "./ReviewSection";
 import ShareButton from "../../components/ShareButton";
 import BannerAd2P from "../../components/BannerAd2P";
+import RedirectModal from "../../components/RedirectModal";
+import { useCopyCod } from "../../hooks/useCopyCod";
+import { calculateDealScore, DEAL_SCORE_VISIBLE_THRESHOLD } from "../../../lib/dealScore";
+
+// ── Deal Score badge cu count-up (0 -> scor) la mount ───────────────────────────
+function DealScoreBadge({ score }: { score: number }) {
+  const [displayed, setDisplayed] = useState(0);
+  useEffect(() => {
+    let raf = 0;
+    const start = performance.now();
+    const duration = 700;
+    function tick(now: number) {
+      const t = Math.min(1, (now - start) / duration);
+      setDisplayed(Math.round(score * (1 - Math.pow(1 - t, 3)))); // ease-out cubic
+      if (t < 1) raf = requestAnimationFrame(tick);
+    }
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
+  }, [score]);
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }}
+      title="Scor calculat de AmCupon din reducere, cod, prospețime și exclusivitate — nu e un rating extern"
+      className="flex items-center gap-1.5 bg-[#1e293b] border border-[#14b8a6]/40 text-[#5eead4] text-xs font-bold px-3 py-1.5 rounded-full"
+    >
+      <Flame className="w-3.5 h-3.5" /> Deal Score {displayed}/100
+    </motion.div>
+  );
+}
 
 // ── Countdown timer ───────────────────────────────────────────────────────────
 function CountdownTimer({ zileRamase }: { zileRamase: number }) {
@@ -30,7 +62,7 @@ function CountdownTimer({ zileRamase }: { zileRamase: number }) {
   }, [zileRamase]);
   return (
     <span className="inline-flex items-center gap-1.5 text-xs font-black text-red-600 bg-red-50 border border-red-200 px-2.5 py-1 rounded-full">
-      ⏱ {zileRamase === 0 ? "Expiră azi" : "Expiră mâine"} — {timeLeft}
+      <Timer className="w-3.5 h-3.5" /> {zileRamase === 0 ? "Expiră azi" : "Expiră mâine"} — {timeLeft}
     </span>
   );
 }
@@ -65,6 +97,7 @@ interface Magazin {
   sales_number?: number;
   scor_afiliere?: number;
   scor_final?: number;
+  ultima_verificare?: string;
 }
 
 interface MagazinSimilar {
@@ -128,7 +161,7 @@ function ProdusCard({ produs: p }: { produs: Produs }) {
           <img src={p.image} alt={p.title} className="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300"
             onError={() => setImgOk(false)} loading="lazy" />
         ) : (
-          <div className="w-full h-full flex items-center justify-center text-4xl">🛍️</div>
+          <div className="w-full h-full flex items-center justify-center"><ShoppingBag className="w-10 h-10 text-[#475569]" /></div>
         )}
         {hasDiscount && (
           <div className="absolute top-2 left-2 bg-gradient-to-br from-[#34d399] to-[#14b8a6] text-[#ffffff] text-xs font-black px-2 py-0.5 rounded-lg shadow-sm">
@@ -167,7 +200,7 @@ interface Banner2P {
   name: string; category: string; b_type: string;
 }
 
-export default function MagazinClient({ magazin: m, produse = [], similare = [], comparatii = [], blogPost = null, banner = null, descriere = null }: {
+export default function MagazinClient({ magazin: m, produse = [], similare = [], comparatii = [], blogPost = null, banner = null, descriere = null, astazi }: {
   magazin: Magazin;
   produse?: Produs[];
   similare?: MagazinSimilar[];
@@ -175,11 +208,14 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
   blogPost?: BlogPostMic | null;
   banner?: Banner2P | null;
   descriere?: { titlu: string; paragrafe: string[] } | null;
+  astazi: string; // data serverului (YYYY-MM-DD), pt comparatie reala cu ultima_verificare
 }) {
   const [revealed, setRevealed]   = useState<Set<number>>(new Set());
-  const [copiat, setCopiat]       = useState<number | null>(null);
   const [imgOk, setImgOk]         = useState(true);
   const [tabActiv, setTabActiv]   = useState<Tab>("coduri");
+  const [modalOpen, setModalOpen] = useState(false);
+  const { copiedKey, redirectFailed, copyAndOpen, retryRedirect } = useCopyCod(trackClick);
+  const copiat = copiedKey !== null ? Number(copiedKey) : null;
 
   const nume      = numeAfisat(m.magazin);
   const an        = new Date().getFullYear();
@@ -188,18 +224,28 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
   const cuCod     = m.promotii.filter(p => p.cod_cupon);
   const faraCodd  = m.promotii.filter(p => !p.cod_cupon);
 
+  // Prospetime REALA fata de ultima_verificare (setat de merge_platforms.py la fiecare
+  // rulare a pipeline-ului) — inainte badge-ul afisa new Date() necondiționat, adica
+  // "azi" pe orice vizita, indiferent cand au fost verificate datele. Omite daca nu avem
+  // data (nu ghici).
+  const zileDeLaVerificare = m.ultima_verificare
+    ? Math.round((Date.parse(astazi) - Date.parse(m.ultima_verificare)) / 86400000)
+    : null;
+
+  // Deal Score onest (lib/dealScore.ts) — un singur badge/pagina (nu pe fiecare card
+  // dintr-un grid, ca in MagazinCard.tsx), cu count-up la mount.
+  const dealScore = calculateDealScore(m, astazi);
+  const showDealScore = dealScore >= DEAL_SCORE_VISIBLE_THRESHOLD;
+
   // Vizualizari deterministe
   const culoare = "bg-gradient-to-br from-[#14b8a6] to-[#0f766e]";
 
   function copiazaCod(idx: number, cod: string, link?: string) {
     setRevealed(prev => new Set(prev).add(idx));
-    navigator.clipboard.writeText(cod).catch(() => {});
-    setCopiat(idx);
-    setTimeout(() => setCopiat(null), 3000);
-    trackClick("copiere_cod", m.magazin, cod);
-    // Deschide magazinul cu link-ul afiliat — seteaza cookie-ul = prinde comisionul.
-    // Sincron (in click handler) ca sa NU fie blocat de popup blocker.
-    if (link) window.open(link, "_blank", "noopener,noreferrer");
+    // copy + open sincron (popup blocker) + tracking, unificat in useCopyCod (folosit
+    // si de MagazinCard.tsx — inainte logica era duplicata separat in fiecare fisier).
+    copyAndOpen(String(idx), cod, link, m.magazin);
+    setModalOpen(true);
   }
 
 
@@ -218,11 +264,11 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
   }
 
   // Tab-uri cu count-uri
-  const tabs: { id: Tab; label: string; count: number; icon: string }[] = [
-    { id: "coduri",   label: "Coduri",   count: cuCod.length,       icon: "🎟" },
-    { id: "oferte",   label: "Oferte",   count: faraCodd.length,    icon: "🏷" },
-    { id: "produse",  label: "Produse",  count: produse.length,     icon: "🛍" },
-    { id: "recenzii", label: "Recenzii", count: 0,                   icon: "⭐" },
+  const tabs: { id: Tab; label: string; count: number; icon: typeof Ticket }[] = [
+    { id: "coduri",   label: "Coduri",   count: cuCod.length,       icon: Ticket },
+    { id: "oferte",   label: "Oferte",   count: faraCodd.length,    icon: Tag },
+    { id: "produse",  label: "Produse",  count: produse.length,     icon: ShoppingBag },
+    { id: "recenzii", label: "Recenzii", count: 0,                   icon: Star },
   ];
 
   return (
@@ -292,9 +338,17 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                     ↑ Trending +{m.trend}%
                   </div>
                 )}
-                <div className="flex items-center gap-1.5 bg-[#14b8a6]/10 border border-[#14b8a6]/20 text-[#0f766e] text-xs font-semibold px-3 py-1.5 rounded-full">
-                  ✓ Verificat {new Date().toLocaleDateString("ro-RO", { day: "numeric", month: "long", year: "numeric" })}
-                </div>
+                {showDealScore && <DealScoreBadge score={dealScore} />}
+                {zileDeLaVerificare !== null && (
+                  <div className="flex items-center gap-1.5 bg-[#14b8a6]/10 border border-[#14b8a6]/20 text-[#0f766e] text-xs font-semibold px-3 py-1.5 rounded-full">
+                    {zileDeLaVerificare <= 0 ? (
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#14b8a6] animate-pulse"/>
+                    ) : null}
+                    ✓ {zileDeLaVerificare <= 0
+                      ? "Verificat azi"
+                      : `Verificat acum ${zileDeLaVerificare} ${zileDeLaVerificare === 1 ? "zi" : "zile"}`}
+                  </div>
+                )}
               </div>
 
               <div className="flex items-center gap-3 flex-wrap">
@@ -333,7 +387,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                     ? "border-[#14b8a6] text-[#f1f5f9]"
                     : "border-transparent text-[#cbd5e1] hover:text-[#cbd5e1] hover:border-[#475569]"
                 }`}>
-                <span>{t.icon}</span>
+                <t.icon className="w-4 h-4" />
                 <span>{t.label}</span>
                 {t.count > 0 && (
                   <span className={`text-xs px-1.5 py-0.5 rounded-full font-black ${
@@ -349,18 +403,19 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
       {/* ── TAB CONTENT ────────────────────────────────────────────────────── */}
       <div className="max-w-5xl mx-auto px-4 py-8 text-[#f1f5f9]">
 
+        <AnimatePresence mode="wait">
         {/* ─── TAB: CODURI ──────────────────────────────────────────────────── */}
         {tabActiv === "coduri" && (
-          <>
+          <motion.div key="coduri" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} transition={{ duration: 0.15 }}>
             {/* ── Cum functioneaza (3 pasi) ─────────────────────────────────── */}
             <div className="flex items-stretch gap-2 sm:gap-4 mb-7 bg-[#111827]/60 border border-[#1e293b] rounded-xl p-4">
               {[
-                { nr: "1", icon: "📋", titlu: "Copiaza codul", desc: "Click pe cod — se copiaza automat" },
-                { nr: "2", icon: "🛒", titlu: "Mergi la magazin", desc: `Te redirectam la ${nume}` },
-                { nr: "3", icon: "✅", titlu: "Aplica la checkout", desc: `Lipeste codul in camp "Voucher"` },
+                { nr: "1", icon: ClipboardCopy, titlu: "Copiaza codul", desc: "Click pe cod — se copiaza automat" },
+                { nr: "2", icon: ShoppingCart, titlu: "Mergi la magazin", desc: `Te redirectam la ${nume}` },
+                { nr: "3", icon: CheckCircle2, titlu: "Aplica la checkout", desc: `Lipeste codul in camp "Voucher"` },
               ].map((pas) => (
                 <div key={pas.nr} className="flex-1 flex flex-col items-center text-center gap-1.5 px-2">
-                  <span className="text-xl">{pas.icon}</span>
+                  <pas.icon className="w-5 h-5 text-[#0d9488]" />
                   <span className="text-[10px] font-black text-[#0d9488] uppercase tracking-widest">Pas {pas.nr}</span>
                   <span className="text-xs font-bold text-[#f1f5f9] leading-tight">{pas.titlu}</span>
                   <span className="text-[11px] text-[#94a3b8] leading-snug hidden sm:block">{pas.desc}</span>
@@ -442,7 +497,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
               </section>
             ) : (
               <div className="bg-[#111827] rounded-xl border border-[#1e293b] p-12 text-center">
-                <div className="text-5xl mb-4">🎟</div>
+                <Ticket className="w-12 h-12 mb-4 mx-auto text-[#475569]" />
                 <h3 className="text-lg font-black text-[#f1f5f9] mb-2">Niciun cod cupon activ</h3>
                 <p className="text-[#94a3b8] text-sm mb-5">Momentan nu avem coduri. Verifica sectiunea Oferte sau viziteaza direct magazinul.</p>
                 <div className="flex flex-wrap justify-center gap-3">
@@ -481,12 +536,12 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                 ))}
               </div>
             </section>
-          </>
+          </motion.div>
         )}
 
         {/* ─── TAB: OFERTE ──────────────────────────────────────────────────── */}
         {tabActiv === "oferte" && (
-          <>
+          <motion.div key="oferte" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} transition={{ duration: 0.15 }}>
             {faraCodd.length > 0 ? (
               <section>
                 <div className="flex items-center gap-3 mb-5">
@@ -540,7 +595,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
               </section>
             ) : (
               <div className="bg-[#111827] rounded-xl border border-[#1e293b] p-12 text-center">
-                <div className="text-5xl mb-4">🏷</div>
+                <Tag className="w-12 h-12 mb-4 mx-auto text-[#475569]" />
                 <h3 className="text-lg font-black text-[#f1f5f9] mb-2">Nicio oferta activa</h3>
                 <p className="text-[#94a3b8] text-sm mb-5">Revino curand. Ofertele se actualizeaza zilnic.</p>
                 {cuCod.length > 0 && (
@@ -551,12 +606,12 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                 )}
               </div>
             )}
-          </>
+          </motion.div>
         )}
 
         {/* ─── TAB: PRODUSE ─────────────────────────────────────────────────── */}
         {tabActiv === "produse" && (
-          <>
+          <motion.div key="produse" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} transition={{ duration: 0.15 }}>
             {produse.length > 0 ? (
               <section>
                 <div className="flex items-center justify-between mb-5">
@@ -572,7 +627,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
               </section>
             ) : (
               <div className="bg-[#111827] rounded-xl border border-[#1e293b] p-12 text-center">
-                <div className="text-5xl mb-4">🛍</div>
+                <ShoppingBag className="w-12 h-12 mb-4 mx-auto text-[#475569]" />
                 <h3 className="text-lg font-black text-[#f1f5f9] mb-2">Feed produse indisponibil</h3>
                 <p className="text-[#94a3b8] text-sm mb-5">Produsele individuale nu sunt disponibile pentru acest magazin. Viziteaza direct site-ul.</p>
                 <a href={m.url_afiliat || m.url} target="_blank" rel="sponsored noopener noreferrer"
@@ -581,18 +636,21 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                 </a>
               </div>
             )}
-          </>
+          </motion.div>
         )}
 
         {/* ─── TAB: RECENZII ────────────────────────────────────────────────── */}
         {tabActiv === "recenzii" && (
-          <ReviewSection magazin={m.magazin} />
+          <motion.div key="recenzii" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} transition={{ duration: 0.15 }}>
+            <ReviewSection magazin={m.magazin} />
+          </motion.div>
         )}
+        </AnimatePresence>
 
         {/* ── BOTTOM CTAs (toate tab-urile) ────────────────────────────────── */}
         <div className="mt-8 space-y-3">
           <div className="bg-gradient-to-r from-[#e2e8f0] to-[#111827] border border-[#334155] rounded-xl p-5 flex flex-col sm:flex-row items-center gap-4">
-            <div className="text-3xl shrink-0">🔌</div>
+            <Puzzle className="w-8 h-8 shrink-0 text-[#0d9488]" />
             <div className="flex-1 text-center sm:text-left">
               <p className="font-black text-[#f1f5f9] text-sm">Extensie Chrome AmCupon — Gratis</p>
               <p className="text-[#cbd5e1] text-xs mt-0.5">Coduri de reducere aplicate automat pe orice site de shopping</p>
@@ -604,7 +662,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
             </a>
           </div>
           <div className="bg-[#14b8a6]/8 border border-[#14b8a6]/25 rounded-xl p-5 flex flex-col sm:flex-row items-center gap-4">
-            <div className="text-2xl shrink-0">📬</div>
+            <Mail className="w-6 h-6 shrink-0 text-[#0d9488]" />
             <div className="flex-1 text-center sm:text-left">
               <p className="font-bold text-[#f1f5f9] text-sm">Nu rata promotiile viitoare {nume}</p>
               <p className="text-[#cbd5e1] text-xs mt-0.5">Saptamanal — cele mai bune coduri pe email. Gratuit.</p>
@@ -719,6 +777,14 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
           </Link>
         </div>
       </div>
+
+      <RedirectModal
+        open={modalOpen}
+        onClose={() => setModalOpen(false)}
+        storeName={nume}
+        redirectFailed={redirectFailed}
+        onRetry={retryRedirect}
+      />
     </div>
   );
 }

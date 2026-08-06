@@ -8,6 +8,7 @@ Output: ../data/output.json + ../frontend/public/output.json
 import json
 import os
 import re
+from datetime import datetime, timezone
 from urllib.parse import urlparse
 
 # Semnatura unui link cu tracking real de afiliere (Impact/Awin/2P/Profitshare/generice
@@ -205,6 +206,16 @@ def main():
             _fake_cleaned += 1
     if _fake_cleaned:
         print(f"  link-uri false curatate (fara tracking real, aveau parametru fals): {_fake_cleaned}")
+
+    # ── ultima_verificare: stampila REALA de "pipeline-ul a confirmat azi acest record" ──
+    # Inainte, campul se seta o singura data la creare (fetch_2p_api.py/import_csv_promotii.py/
+    # process_data.py) si nu se mai actualiza niciodata dupa — deci "verificat" insemna de fapt
+    # "creat candva", nu "verificat azi", pe TOATE magazinele, nu doar pe cele fara camp. Acum
+    # merge_platforms.py (ruleaza de 3x/zi, re-valideaza fiecare record — vezi curatarea de mai
+    # sus) seteaza data reala la fiecare rulare, pe toate cele 1178 magazine, nu doar 2Performant.
+    _azi = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    for _m in merged:
+        _m["ultima_verificare"] = _azi
 
     # ── Consolidare canonica a categoriilor (40 etichete fragmentate -> 18 RO) ──
     # Prinde toate sursele; reclasifica junk-ul (Online Mall/Diverse) dupa nume.

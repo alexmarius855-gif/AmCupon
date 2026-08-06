@@ -1,6 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { Clock, Flame } from "lucide-react";
+import { useCopyCod } from "../hooks/useCopyCod";
+import RedirectModal from "./RedirectModal";
+import { calculateDealScore, DEAL_SCORE_VISIBLE_THRESHOLD } from "../../lib/dealScore";
 
 export interface CardPromotie {
   nume: string;
@@ -21,6 +26,8 @@ export interface CardMagazin {
   cod_cupon: boolean;
   promotii: CardPromotie[];
   exclusiv?: boolean;
+  scor_final?: number;
+  ultima_verificare?: string;
 }
 
 // Domenii fara cratima ale caror slug-uri dau nume ilizibile prin derivare automata
@@ -56,14 +63,19 @@ function maskCod(cod: string): string {
  * promotie, buton CTA unic. Foloseste DOAR date reale din output.json (fara
  * pro/contra inventate per magazin — vezi paginile curate gen /vpn pentru
  * comparatii editoriale scrise de mana, cu informatii verificate).
+ *
+ * `astazi` (opțional, "YYYY-MM-DD"): activeaza bonusul de prospetime in Deal Score.
+ * Fara el, scorul se calculeaza normal, doar fara acel bonus (nu presupunem "azi").
  */
-export default function MagazinCard({ m, numeOverride }: { m: CardMagazin; numeOverride?: string }) {
+export default function MagazinCard({ m, numeOverride, astazi }: { m: CardMagazin; numeOverride?: string; astazi?: string }) {
   const promo = m.promotii?.[0];
   const numeMagazin = numeOverride || numeAfisat(m.magazin);
   const initiala = numeMagazin.charAt(0).toUpperCase();
   const discount = promo ? (extractDiscount(promo.nume) || extractDiscount(promo.descriere)) : null;
   const [revealed, setRevealed] = useState(false);
-  const [copiat, setCopiat] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
+  const { copiedKey, redirectFailed, copyAndOpen, retryRedirect } = useCopyCod();
+  const copiat = copiedKey === m.magazin;
 
   const domeniu = (m.magazin || "").match(/[a-z0-9-]+\.[a-z]{2,}(?:\.[a-z]{2,})?/i)?.[0] || null;
   const logoSurse = [m.logo_url, domeniu ? `https://www.google.com/s2/favicons?domain=${domeniu}&sz=128` : null].filter(Boolean) as string[];
@@ -74,20 +86,30 @@ export default function MagazinCard({ m, numeOverride }: { m: CardMagazin; numeO
   const affiliateLink = isValidAffiliateUrl(m.url_afiliat) ? m.url_afiliat : m.url;
   const link = promo?.landing_page || affiliateLink;
 
-  function copiazaCod() {
+  const dealScore = calculateDealScore(m, astazi);
+  const showDealScore = dealScore >= DEAL_SCORE_VISIBLE_THRESHOLD;
+
+  function onCopiazaClick() {
     if (!promo?.cod_cupon) return;
     setRevealed(true);
-    navigator.clipboard.writeText(promo.cod_cupon).catch(() => {});
-    setCopiat(true);
-    setTimeout(() => setCopiat(false), 3000);
+    copyAndOpen(m.magazin, promo.cod_cupon, link, m.magazin);
+    setModalOpen(true);
   }
 
   return (
     <div className="group bg-[#111827] rounded-xl border border-[#1e293b] hover:border-[#14b8a6]/40 shadow-sm hover:shadow-lg hover:shadow-black/40 hover:-translate-y-0.5 transition-all duration-200 flex flex-col overflow-hidden">
       <a href={`/cod-reducere/${m.magazin}`} className="flex items-start gap-3 pt-5 px-4 pb-3 relative">
-        {m.exclusiv && (
-          <span className="absolute top-3 right-3 text-[10px] font-bold bg-[#0d9488] text-white px-2 py-0.5 rounded-full">Exclusiv</span>
-        )}
+        <div className="absolute top-3 right-3 flex flex-col items-end gap-1">
+          {m.exclusiv && (
+            <span className="text-[10px] font-bold bg-[#0d9488] text-white px-2 py-0.5 rounded-full">Exclusiv</span>
+          )}
+          {showDealScore && (
+            <span title="Scor calculat de AmCupon din reducere, cod, prospețime și exclusivitate"
+              className="flex items-center gap-1 text-[10px] font-bold bg-[#1e293b] border border-[#14b8a6]/40 text-[#5eead4] px-2 py-0.5 rounded-full">
+              <Flame className="w-3 h-3" /> {dealScore}
+            </span>
+          )}
+        </div>
         <div className="w-16 h-16 rounded-xl overflow-hidden flex items-center justify-center shrink-0 bg-[#ffffff] border border-[#1e293b] p-1.5 group-hover:border-[#14b8a6]/50 transition-colors">
           {logoSrc ? (
             // eslint-disable-next-line @next/next/no-img-element
@@ -115,7 +137,9 @@ export default function MagazinCard({ m, numeOverride }: { m: CardMagazin; numeO
             </span>
             <p className="text-sm text-[#cbd5e1] mt-1 line-clamp-2">{promo.nume}</p>
             {promo.zile_ramase <= 3 && (
-              <span className="inline-block mt-1.5 text-xs font-semibold text-red-400">⏰ Expiră {promo.zile_ramase === 0 ? "azi" : `în ${promo.zile_ramase}z`}</span>
+              <span className="inline-flex items-center gap-1 mt-1.5 text-xs font-semibold text-red-400">
+                <Clock className="w-3.5 h-3.5" /> Expiră {promo.zile_ramase === 0 ? "azi" : `în ${promo.zile_ramase}z`}
+              </span>
             )}
           </div>
         ) : (
@@ -129,7 +153,16 @@ export default function MagazinCard({ m, numeOverride }: { m: CardMagazin; numeO
             <div className="space-y-2">
               <div className="border-2 border-dashed border-[#14b8a6]/50 rounded-xl py-2 text-center bg-[#1e293b]">
                 <span className="font-mono font-black text-[#0d9488] tracking-widest text-sm">{promo.cod_cupon}</span>
-                {copiat && <p className="text-xs text-emerald-400 mt-0.5">✓ Copiat!</p>}
+                <AnimatePresence>
+                  {copiat && (
+                    <motion.p
+                      initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.9 }}
+                      className="text-xs text-emerald-400 mt-0.5"
+                    >
+                      ✓ Copiat!
+                    </motion.p>
+                  )}
+                </AnimatePresence>
               </div>
               <a href={link} target="_blank" rel="sponsored noopener noreferrer"
                 className="flex items-center justify-center w-full bg-gradient-to-r from-[#14b8a6] to-[#0d9488] hover:from-[#0d9488] hover:to-[#14b8a6] text-white font-bold py-2.5 rounded-xl text-sm transition-all">
@@ -141,7 +174,7 @@ export default function MagazinCard({ m, numeOverride }: { m: CardMagazin; numeO
               <div className="border-2 border-dashed border-[#334155] rounded-xl py-2 text-center">
                 <span className="font-mono text-[#94a3b8] text-sm">{maskCod(promo.cod_cupon)}</span>
               </div>
-              <button onClick={copiazaCod}
+              <button onClick={onCopiazaClick}
                 className="w-full bg-gradient-to-r from-[#14b8a6] to-[#0d9488] hover:from-[#0d9488] hover:to-[#14b8a6] text-white font-bold py-2.5 rounded-xl text-sm transition-all">
                 Copiază codul
               </button>
@@ -159,6 +192,14 @@ export default function MagazinCard({ m, numeOverride }: { m: CardMagazin; numeO
           </a>
         )}
       </div>
+
+      <RedirectModal
+        open={modalOpen}
+        onClose={() => setModalOpen(false)}
+        storeName={numeMagazin}
+        redirectFailed={redirectFailed}
+        onRetry={retryRedirect}
+      />
     </div>
   );
 }

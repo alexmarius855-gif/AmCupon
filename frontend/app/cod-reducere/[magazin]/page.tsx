@@ -35,6 +35,7 @@ interface Magazin {
   folosit_de: number;
   procent_succes: number;
   exclusiv: boolean;
+  ultima_verificare?: string;
 }
 
 interface MagazinSimilar {
@@ -214,6 +215,20 @@ function loadComparatii(slug: string): { slug: string; label: string }[] {
   } catch { return []; }
 }
 
+interface ReviewSummary { count: number; medie: number }
+
+// Recenzii REALE (Supabase, moderate manual) — sursa onesta pt AggregateRating.
+// NU inlocui cu procent_succes/folosit_de (fabricate, vezi CLAUDE.md 03.07.2026).
+function loadReviewsSummary(slug: string): ReviewSummary | null {
+  try {
+    const p = path.join(process.cwd(), "public", "reviews-summary.json");
+    if (!fs.existsSync(p)) return null;
+    const data: { magazine?: Record<string, ReviewSummary> } = JSON.parse(fs.readFileSync(p, "utf-8"));
+    const r = data.magazine?.[slug.toLowerCase()];
+    return r && r.count > 0 ? r : null;
+  } catch { return null; }
+}
+
 function loadProducts(slug: string): Produs[] {
   try {
     const p = path.join(process.cwd(), "public", "products.json");
@@ -348,6 +363,7 @@ export default async function PaginaMagazin({
   const banner = loadBanner(cleanSlug);
   const descriere = loadDescriere(cleanSlug);
   const comparatii = loadComparatii(cleanSlug);
+  const reviewSummary = loadReviewsSummary(cleanSlug);
 
   // Magazine similare din aceeasi categorie (max 8, prioritate la cele cu promotii)
   const RETELE_AFILIERE = ["profitshare.ro", "2performant.com"];
@@ -414,7 +430,18 @@ export default async function PaginaMagazin({
         url: promo.landing_page || pageUrl,
         availability: "https://schema.org/InStock",
         validThrough: new Date(acumMs + promo.zile_ramase * 86400000).toISOString(),
-        ...(promo.cod_cupon ? { disambiguatingDescription: `Cod: ${promo.cod_cupon}` } : {}),
+        // schema.org nu are tip "Coupon"/"DiscountCode" valid (propunere respinsa oficial) —
+        // additionalProperty/PropertyValue e alternativa reala pt a expune codul in Offer.
+        // Gating pe promo.cod_cupon (per-promotie), NICIODATA pe m.cod_cupon (flag la nivel
+        // de magazin) — temu.com/shein.com/trendyol.com au flagul true cu 0 coduri reale.
+        ...(promo.cod_cupon ? {
+          disambiguatingDescription: `Cod: ${promo.cod_cupon}`,
+          additionalProperty: {
+            "@type": "PropertyValue",
+            name: "Cod reducere",
+            value: promo.cod_cupon,
+          },
+        } : {}),
         seller: {
           "@type": "Organization",
           name: nume,
@@ -425,13 +452,11 @@ export default async function PaginaMagazin({
     })),
   } : null;
 
-  // AggregateRating: calculat din procent_succes (0-100) → scala 1-5
-  // Afișat doar dacă magazinul are date suficiente (folosit_de >= 5 sau procent_succes > 0)
-  const ratingValue = m.procent_succes > 0
-    ? Math.min(5, Math.max(1, 1 + (m.procent_succes / 100) * 4)).toFixed(1)
-    : null;
-  const reviewCount = Math.max(5, m.folosit_de || 5);
-
+  // AggregateRating: DOAR din recenzii reale (Supabase, moderate manual). Inainte se
+  // calcula din procent_succes/folosit_de — fabricate (random.Random(hash(...)) in
+  // fetch_2p_api.py), eliminate din UI pe 03.07.2026 dar ramasesera aici, emitand un
+  // rating fals catre Google pe aproape orice pagina. Fix 06.08.2026: omitem blocul
+  // complet cand nu exista nicio recenzie reala — nu ghicim, nu aproximam.
   const organization = {
     "@context": "https://schema.org",
     "@type": "Store",
@@ -439,11 +464,11 @@ export default async function PaginaMagazin({
     url: m.url,
     ...(m.logo_url ? { logo: m.logo_url } : {}),
     sameAs: [m.url],
-    ...(ratingValue ? {
+    ...(reviewSummary ? {
       aggregateRating: {
         "@type": "AggregateRating",
-        ratingValue,
-        reviewCount,
+        ratingValue: reviewSummary.medie.toFixed(1),
+        reviewCount: reviewSummary.count,
         bestRating: "5",
         worstRating: "1",
       },
@@ -507,7 +532,7 @@ export default async function PaginaMagazin({
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(offerList) }} />
       )}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <MagazinClient magazin={m} produse={produse} similare={similare} comparatii={comparatii} blogPost={blogPost} banner={banner} descriere={descriere} />
+      <MagazinClient magazin={m} produse={produse} similare={similare} comparatii={comparatii} blogPost={blogPost} banner={banner} descriere={descriere} astazi={new Date(acumMs).toISOString().slice(0, 10)} />
     </>
   );
 }
