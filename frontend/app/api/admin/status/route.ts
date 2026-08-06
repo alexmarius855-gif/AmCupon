@@ -8,6 +8,11 @@ const GITHUB_REPO     = process.env.GITHUB_REPO || "alexmarius855-gif/AmCupon";
 const BREVO_API_KEY   = process.env.BREVO_API_KEY || "";
 const BREVO_LIST_ID   = parseInt(process.env.BREVO_LIST_ID || "2", 10);
 
+// Aceeasi semnatura de link "cu tracking real" ca in scripts/merge_platforms.py
+// (_REAL_TRACKING_RE) — pastreaza-le sincronizate, e sursa de adevar pt ce inseamna
+// "link de afiliere functional" in tot proiectul.
+const REAL_TRACKING_RE = /pxf\.io|sjv\.io|impactradius|impact\.com|7401119|irclickid|prf\.hn|anrdoezrs\.net|2performant\.com|profitshare\.ro|awin1\.com|cread\.php/i;
+
 async function getSiteStats() {
   try {
     const filePath = path.join(process.cwd(), "public", "output.json");
@@ -62,6 +67,43 @@ async function getGitHubActions() {
   }
 }
 
+async function getAffiliateAudit() {
+  try {
+    const filePath = path.join(process.cwd(), "public", "output.json");
+    const data: {
+      magazin: string; url_afiliat: string; platforma: string;
+      categorie: string; scor_final?: number; are_promotie: boolean;
+    }[] = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+
+    const orphans = data.filter(m => !REAL_TRACKING_RE.test(m.url_afiliat || ""));
+    const byPlatform: Record<string, number> = {};
+    for (const m of orphans) {
+      const p = m.platforma || "necunoscut";
+      byPlatform[p] = (byPlatform[p] || 0) + 1;
+    }
+
+    return {
+      total:       data.length,
+      orphanCount: orphans.length,
+      byPlatform,
+      orphans: orphans
+        // Cele cu promotie activa (clic-uri reale, chiar acum) primele — mai urgente
+        // decat un scor mare fara nicio promotie live.
+        .sort((a, b) => (Number(b.are_promotie) - Number(a.are_promotie)) || ((b.scor_final || 0) - (a.scor_final || 0)))
+        .map(m => ({
+          magazin:     m.magazin,
+          platforma:   m.platforma || "necunoscut",
+          categorie:   m.categorie,
+          urlAfiliat:  m.url_afiliat,
+          arePromotie: m.are_promotie,
+          scorFinal:   m.scor_final || 0,
+        })),
+    };
+  } catch {
+    return null;
+  }
+}
+
 async function getBrevoStats() {
   if (!BREVO_API_KEY) return null;
   try {
@@ -103,11 +145,12 @@ export async function GET() {
     return Response.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  const [siteStats, githubRuns, brevoStats, topProduse] = await Promise.all([
+  const [siteStats, githubRuns, brevoStats, topProduse, affiliateAudit] = await Promise.all([
     getSiteStats(),
     getGitHubActions(),
     getBrevoStats(),
     getTopProduse(),
+    getAffiliateAudit(),
   ]);
 
   return Response.json({
@@ -117,6 +160,7 @@ export async function GET() {
     github:      githubRuns,
     brevo:       brevoStats,
     topProduse,
+    affiliateAudit,
     env: {
       hasGithubToken: !!GITHUB_TOKEN,
       hasBrevoKey:    !!BREVO_API_KEY,

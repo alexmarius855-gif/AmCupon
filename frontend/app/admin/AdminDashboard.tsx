@@ -7,12 +7,20 @@ import Link from "next/link";
 interface SiteStats { totalMagazine:number; cuPromotii:number; cuCod:number; lastUpdate:string; }
 interface GithubRun { id:number; name:string; status:string; conclusion:string|null; updatedAt:string; url:string; }
 interface BrevoStats { subscribers:number; listName:string; }
+interface AffiliateOrphan {
+  magazin:string; platforma:string; categorie:string;
+  urlAfiliat:string; arePromotie:boolean; scorFinal:number;
+}
+interface AffiliateAudit {
+  total:number; orphanCount:number; byPlatform:Record<string,number>; orphans:AffiliateOrphan[];
+}
 interface StatusData {
   ok:boolean; timestamp:string;
   site:SiteStats|null; github:GithubRun[]|null; brevo:BrevoStats|null;
+  affiliateAudit:AffiliateAudit|null;
   env:{ hasGithubToken:boolean; hasBrevoKey:boolean; };
 }
-type NavItem = "agents"|"tasks"|"memory"|"logs"|"links"|"missions";
+type NavItem = "agents"|"tasks"|"memory"|"logs"|"links"|"missions"|"affiliate";
 
 /* ─── Agent definitions ─────────────────────────────────── */
 const AGENTS = [
@@ -179,6 +187,11 @@ function runLabel(r:GithubRun) {
   if(r.status==="queued")      return "QUEUED";
   return (r.conclusion||r.status).toUpperCase();
 }
+const PLATFORM_COLOR: Record<string,string> = {
+  impact: "#ff3cac", direct: "#00f5d4", "2performant": "#00f5d4",
+  profitshare: "#f7971e", awin: "#784ba0",
+};
+function platformColor(p:string) { return PLATFORM_COLOR[p] || "#666688"; }
 
 /* ─── Avatar SVG ────────────────────────────────────────── */
 function AgentAvatar({ letter, color }: { letter:string; color:string }) {
@@ -198,7 +211,8 @@ function AgentAvatar({ letter, color }: { letter:string; color:string }) {
 
 /* ─── Sidebar nav items ─────────────────────────────────── */
 const NAV = [
-  { id:"missions" as NavItem, icon:"💰", label:"Missions",      sub:"MONETIZARE" },
+  { id:"missions"  as NavItem, icon:"💰", label:"Missions",       sub:"MONETIZARE" },
+  { id:"affiliate" as NavItem, icon:"🚨", label:"Affiliate Audit", sub:"ORFANE" },
   { id:"agents"   as NavItem, icon:"🤖", label:"Agent Roster",  sub:"ECHIPA" },
   { id:"tasks"    as NavItem, icon:"⚙️", label:"GitHub Actions", sub:"TASKS" },
   { id:"memory"   as NavItem, icon:"💾", label:"Site Stats",     sub:"MEMORIE" },
@@ -312,6 +326,7 @@ export default function AdminDashboard() {
   const s  = data?.site;
   const g  = data?.github || [];
   const b  = data?.brevo;
+  const a  = data?.affiliateAudit;
 
   return (
     <div className="flex h-screen overflow-hidden font-sans" style={{ background:"#07071a", ...scanlineBg }}>
@@ -548,6 +563,72 @@ export default function AdminDashboard() {
               </div>
             );
           })()}
+
+          {/* ── AFFILIATE AUDIT VIEW ─────────────────────── */}
+          {nav==="affiliate" && (
+            a ? (
+              <div>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-5">
+                  {[
+                    { l:"Fara tracking real", v:String(a.orphanCount),                                     c:"#ff3cac" },
+                    { l:"Cu tracking verificat", v:String(a.total - a.orphanCount),                        c:"#00f5d4" },
+                    { l:"Din total magazine", v:a.total ? `${Math.round((a.orphanCount/a.total)*100)}%` : "0%", c:"#f7971e" },
+                  ].map(st => (
+                    <div key={st.l} className="rounded-2xl p-4 border" style={{ background:"rgba(13,13,38,0.9)", borderColor:st.c+"33" }}>
+                      <div className="text-2xl font-black mb-1" style={{ color:st.c, textShadow:`0 0 10px ${st.c}55` }}>
+                        {st.v}
+                      </div>
+                      <div className="text-xs font-mono" style={{ color:"#666688" }}>{st.l}</div>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="flex items-center gap-2 mb-4 flex-wrap">
+                  {Object.entries(a.byPlatform).map(([p, count]) => (
+                    <span key={p} className="text-xs font-mono font-bold px-2.5 py-1 rounded-md border"
+                      style={{ color:platformColor(p), borderColor:platformColor(p)+"44", background:platformColor(p)+"11" }}>
+                      {p} · {count}
+                    </span>
+                  ))}
+                </div>
+
+                {a.orphanCount === 0 ? (
+                  <div className="text-center py-12" style={{ color:"#444466" }}>
+                    <p className="font-mono text-sm">✓ Toate magazinele au tracking real. Zero trafic nemonetizat.</p>
+                  </div>
+                ) : (
+                  <>
+                    <p className="text-xs font-mono mb-3" style={{ color:"#444466" }}>
+                      {"// Sortate: promotie activa (clicuri reale acum) primele, apoi scor descrescator"}
+                    </p>
+                    <div className="space-y-1.5 max-h-[60vh] overflow-y-auto pr-1">
+                      {a.orphans.map(o => (
+                        <a key={o.magazin} href={`/cod-reducere/${o.magazin}`} target="_blank" rel="noopener noreferrer"
+                          className="flex items-center justify-between gap-3 px-4 py-2.5 rounded-xl border transition-all hover:border-opacity-60"
+                          style={{ background:"rgba(13,13,38,0.8)", borderColor:"#1a1a40" }}>
+                          <div className="flex items-center gap-3 min-w-0">
+                            <span className="text-xs font-mono font-bold px-2 py-0.5 rounded shrink-0"
+                              style={{ color:platformColor(o.platforma), background:platformColor(o.platforma)+"15", fontSize:"9px" }}>
+                              {o.platforma}
+                            </span>
+                            <span className="text-sm font-semibold text-white truncate">{o.magazin}</span>
+                            {o.arePromotie && (
+                              <span className="text-xs font-mono shrink-0" style={{ color:"#f7971e", fontSize:"9px" }}>● promovat activ</span>
+                            )}
+                          </div>
+                          <span className="text-xs font-mono shrink-0" style={{ color:"#444466" }}>scor {o.scorFinal}</span>
+                        </a>
+                      ))}
+                    </div>
+                  </>
+                )}
+              </div>
+            ) : (
+              <div className="text-center py-12" style={{ color:"#444466" }}>
+                <p className="font-mono text-sm">⚠ Nu s-a putut citi output.json</p>
+              </div>
+            )
+          )}
 
           {/* MISIUNE banner */}
           {nav==="agents" && (

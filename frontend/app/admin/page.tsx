@@ -1,4 +1,4 @@
-import { cookies } from "next/headers";
+import { checkAuth } from "@/lib/adminAuth";
 import AdminDashboard from "./AdminDashboard";
 import AdminLogin from "./AdminLogin";
 
@@ -10,9 +10,14 @@ export const metadata = {
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "";
 
 export default async function AdminPage() {
-  const cookieStore = await cookies();
-  const session     = cookieStore.get("mc_session")?.value;
-  const isAuth      = ADMIN_PASSWORD && session === ADMIN_PASSWORD;
+  // Foloseste helper-ul comun din lib/adminAuth.ts (acelasi folosit deja de
+  // /api/admin/status si /api/admin/trigger). Inainte, pagina asta compara
+  // direct cookie-ul cu ADMIN_PASSWORD in clar — dar login/route.ts seteaza
+  // cookie-ul ca hash SHA-256 (deriveSessionToken), nu parola in clar, de
+  // cand s-a facut hardening-ul de securitate (comentariu in adminAuth.ts).
+  // Rezultat: verificarea veche nu se potrivea NICIODATA, indiferent cat de
+  // corecta era parola introdusa — bug gasit si reparat 06.08.2026.
+  const isAuth = await checkAuth();
 
   if (!ADMIN_PASSWORD) {
     return (
