@@ -104,6 +104,40 @@ async function getAffiliateAudit() {
   }
 }
 
+async function getShockDeal() {
+  try {
+    const filePath = path.join(process.cwd(), "public", "output.json");
+    const data: {
+      magazin: string; are_promotie: boolean; scor_final?: number;
+      promotii: { nume: string; cod_cupon: string; zile_ramase: number }[];
+    }[] = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+
+    // Aceeasi selectie ca "DEAL ZILEI" din HomeClient.tsx — o singura sursa de
+    // adevar pt ce inseamna "cea mai buna oferta reala azi", nu inventam alta.
+    const cuPromotii = data
+      .filter(m => m.are_promotie && m.promotii?.length)
+      .sort((a, b) => (b.scor_final || 0) - (a.scor_final || 0));
+    if (cuPromotii.length === 0) return null;
+
+    const deal = cuPromotii.find(m => m.promotii.some(p => p.cod_cupon && p.zile_ramase <= 3))
+      || cuPromotii.find(m => m.promotii.some(p => p.cod_cupon))
+      || cuPromotii[0];
+    const promo = deal.promotii.find(p => p.cod_cupon) || deal.promotii[0];
+    const discountMatch = promo.nume?.match(/(\d+)\s*%/);
+
+    return {
+      magazin:     deal.magazin,
+      promoNume:   promo.nume,
+      codCupon:    promo.cod_cupon || null,
+      zileRamase:  promo.zile_ramase,
+      discountPct: discountMatch ? parseInt(discountMatch[1], 10) : null,
+      pageUrl:     `https://amcupon.ro/cod-reducere/${deal.magazin}`,
+    };
+  } catch {
+    return null;
+  }
+}
+
 async function getBrevoStats() {
   if (!BREVO_API_KEY) return null;
   try {
@@ -145,12 +179,13 @@ export async function GET() {
     return Response.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  const [siteStats, githubRuns, brevoStats, topProduse, affiliateAudit] = await Promise.all([
+  const [siteStats, githubRuns, brevoStats, topProduse, affiliateAudit, shockDeal] = await Promise.all([
     getSiteStats(),
     getGitHubActions(),
     getBrevoStats(),
     getTopProduse(),
     getAffiliateAudit(),
+    getShockDeal(),
   ]);
 
   return Response.json({
@@ -161,6 +196,7 @@ export async function GET() {
     brevo:       brevoStats,
     topProduse,
     affiliateAudit,
+    shockDeal,
     env: {
       hasGithubToken: !!GITHUB_TOKEN,
       hasBrevoKey:    !!BREVO_API_KEY,

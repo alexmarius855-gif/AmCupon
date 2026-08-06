@@ -119,6 +119,21 @@ jobs:
             echo "IMPACT_ACCOUNT_SID nu e setat — skip discovery"
           fi
 
+      # ── 4d2. Awin — fetch programe via API oficial (fara CSV manual) ────────
+      - name: Fetch programe Awin (API)
+        working-directory: scripts
+        continue-on-error: true
+        env:
+          AWIN_API_TOKEN: ${{ secrets.AWIN_API_TOKEN }}
+          AWIN_PUBLISHER_ID: ${{ secrets.AWIN_PUBLISHER_ID }}
+        run: |
+          if [ -n "$AWIN_API_TOKEN" ]; then
+            echo "Ruleaza fetch_awin_api..."
+            python fetch_awin_api.py
+          else
+            echo "AWIN_API_TOKEN nu e setat — skip Awin API (ramane pe CSV manual)"
+          fi
+
       # ── 4e. Impact.com — reconciliaza linkuri (upgrade la real / curata false) ──
       # Ruleaza mereu (nu doar cand IMPACT_ACCOUNT_SID e setat) — foloseste CSV-ul
       # deja din data/, nu API-ul. Trebuie sa ruleze INAINTE de merge_platforms.py,

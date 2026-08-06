@@ -14,13 +14,17 @@ interface AffiliateOrphan {
 interface AffiliateAudit {
   total:number; orphanCount:number; byPlatform:Record<string,number>; orphans:AffiliateOrphan[];
 }
+interface ShockDeal {
+  magazin:string; promoNume:string; codCupon:string|null; zileRamase:number;
+  discountPct:number|null; pageUrl:string;
+}
 interface StatusData {
   ok:boolean; timestamp:string;
   site:SiteStats|null; github:GithubRun[]|null; brevo:BrevoStats|null;
-  affiliateAudit:AffiliateAudit|null;
+  affiliateAudit:AffiliateAudit|null; shockDeal:ShockDeal|null;
   env:{ hasGithubToken:boolean; hasBrevoKey:boolean; };
 }
-type NavItem = "agents"|"tasks"|"memory"|"logs"|"links"|"missions"|"affiliate";
+type NavItem = "agents"|"tasks"|"memory"|"logs"|"links"|"missions"|"affiliate"|"campanii";
 
 /* ─── Agent definitions ─────────────────────────────────── */
 const AGENTS = [
@@ -213,12 +217,92 @@ function AgentAvatar({ letter, color }: { letter:string; color:string }) {
 const NAV = [
   { id:"missions"  as NavItem, icon:"💰", label:"Missions",       sub:"MONETIZARE" },
   { id:"affiliate" as NavItem, icon:"🚨", label:"Affiliate Audit", sub:"ORFANE" },
+  { id:"campanii"  as NavItem, icon:"📢", label:"Campanii",        sub:"SOCIAL" },
   { id:"agents"   as NavItem, icon:"🤖", label:"Agent Roster",  sub:"ECHIPA" },
   { id:"tasks"    as NavItem, icon:"⚙️", label:"GitHub Actions", sub:"TASKS" },
   { id:"memory"   as NavItem, icon:"💾", label:"Site Stats",     sub:"MEMORIE" },
   { id:"logs"     as NavItem, icon:"📋", label:"Logs & Output",  sub:"LOGS" },
   { id:"links"    as NavItem, icon:"🔗", label:"Quick Links",    sub:"LINKS" },
 ];
+
+/* ─── Campaign Link Builder ─────────────────────────────────
+   Nu construieste un redirect nou (/go/[slug]) — AffiliateClickTracker.tsx
+   trimite deja `affiliate_click` in GA4 pe orice click afiliat, sitewide.
+   UTM params pe URL-ul PUBLIC deja curat (amcupon.ro/cod-reducere/[magazin])
+   sunt suficiente pt segmentare pe campanie in GA4, fara infrastructura noua.
+   Caption-ul e generat DOAR din date reale (nu inventeaza urgenta) si include
+   disclosure explicit — politica "hibrid onest" a site-ului. */
+function CampaignLinkBuilder({ deal }: { deal: ShockDeal }) {
+  const [sursa, setSursa]   = useState<"facebook"|"telegram"|"whatsapp"|"instagram">("facebook");
+  const [nume, setNume]     = useState(() => `oferta_${deal.magazin.split(".")[0]}`);
+  const [copiat, setCopiat] = useState<"link"|"caption"|null>(null);
+
+  const link = `${deal.pageUrl}?utm_source=${sursa}&utm_medium=social&utm_campaign=${encodeURIComponent(nume)}`;
+
+  const caption = [
+    deal.discountPct ? `🔥 ${deal.magazin} are azi ${deal.discountPct}% reducere` : `🔥 Ofertă activă la ${deal.magazin}`,
+    deal.codCupon ? ` cu codul ${deal.codCupon}` : "",
+    ` — ${deal.promoNume}.`,
+    deal.zileRamase <= 1 ? " Expiră azi/mâine." : "",
+    "\n(Link afiliat — comisionul e al meu, prețul tău nu se schimbă)",
+    `\n${link}`,
+  ].join("");
+
+  async function copy(text: string, key: "link"|"caption") {
+    try { await navigator.clipboard.writeText(text); setCopiat(key); setTimeout(() => setCopiat(null), 2000); } catch {}
+  }
+
+  return (
+    <div className="rounded-2xl p-5 border" style={{ background:"rgba(13,13,38,0.9)", borderColor:"#f7971e33" }}>
+      <div className="flex items-center gap-2 mb-3">
+        <span className="text-xs font-mono font-bold px-2 py-0.5 rounded" style={{ color:"#f7971e", background:"#f7971e15", fontSize:"9px" }}>
+          OFERTA ZILEI
+        </span>
+        <span className="font-black text-sm text-white">{deal.magazin}</span>
+        {deal.discountPct && <span className="text-xs font-mono" style={{ color:"#00f5d4" }}>-{deal.discountPct}%</span>}
+      </div>
+      <p className="text-xs mb-4" style={{ color:"#8888aa" }}>{deal.promoNume}</p>
+
+      <div className="flex gap-2 mb-3">
+        <select value={sursa} onChange={e => setSursa(e.target.value as typeof sursa)}
+          className="text-xs font-mono px-2.5 py-1.5 rounded-lg border bg-transparent"
+          style={{ color:"#cbd5e1", borderColor:"#333355", background:"#111128" }}>
+          <option value="facebook">Facebook</option>
+          <option value="telegram">Telegram</option>
+          <option value="whatsapp">WhatsApp</option>
+          <option value="instagram">Instagram</option>
+        </select>
+        <input value={nume} onChange={e => setNume(e.target.value)}
+          className="flex-1 text-xs font-mono px-2.5 py-1.5 rounded-lg border bg-transparent"
+          style={{ color:"#cbd5e1", borderColor:"#333355", background:"#111128" }}
+          placeholder="nume campanie" />
+      </div>
+
+      <div className="space-y-2">
+        <div className="flex items-center gap-2">
+          <code className="flex-1 text-[10px] px-2.5 py-2 rounded-lg border truncate" style={{ color:"#00f5d4", borderColor:"#00f5d433", background:"#0a0a1e" }}>
+            {link}
+          </code>
+          <button onClick={() => copy(link, "link")}
+            className="text-xs font-mono font-bold px-3 py-2 rounded-lg shrink-0"
+            style={{ color:"#00f5d4", border:"1px solid #00f5d444", background:"#00f5d411" }}>
+            {copiat === "link" ? "✓" : "Copy link"}
+          </button>
+        </div>
+        <div className="flex items-start gap-2">
+          <pre className="flex-1 text-[10px] px-2.5 py-2 rounded-lg border whitespace-pre-wrap" style={{ color:"#cbd5e1", borderColor:"#33335533", background:"#0a0a1e" }}>
+            {caption}
+          </pre>
+          <button onClick={() => copy(caption, "caption")}
+            className="text-xs font-mono font-bold px-3 py-2 rounded-lg shrink-0"
+            style={{ color:"#f7971e", border:"1px solid #f7971e44", background:"#f7971e11" }}>
+            {copiat === "caption" ? "✓" : "Copy text"}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 /* ═══════════════════════════════════════════════════════════
    MAIN COMPONENT
@@ -327,6 +411,7 @@ export default function AdminDashboard() {
   const g  = data?.github || [];
   const b  = data?.brevo;
   const a  = data?.affiliateAudit;
+  const sd = data?.shockDeal;
 
   return (
     <div className="flex h-screen overflow-hidden font-sans" style={{ background:"#07071a", ...scanlineBg }}>
@@ -626,6 +711,24 @@ export default function AdminDashboard() {
             ) : (
               <div className="text-center py-12" style={{ color:"#444466" }}>
                 <p className="font-mono text-sm">⚠ Nu s-a putut citi output.json</p>
+              </div>
+            )
+          )}
+
+          {/* ── CAMPANII VIEW ────────────────────────────────── */}
+          {nav==="campanii" && (
+            sd ? (
+              <div>
+                <p className="text-xs font-mono mb-4" style={{ color:"#444466" }}>
+                  {"// Link catre pagina PUBLICA (nu direct la retea) — AffiliateClickTracker.tsx"}
+                  {" trimite deja affiliate_click in GA4 la orice click afiliat de pe ea. UTM-urile"}
+                  {" de mai jos iti dau segmentare pe campanie/sursa in GA4, fara cod nou."}
+                </p>
+                <CampaignLinkBuilder deal={sd} />
+              </div>
+            ) : (
+              <div className="text-center py-12" style={{ color:"#444466" }}>
+                <p className="font-mono text-sm">Niciun magazin cu promoție activă chiar acum.</p>
               </div>
             )
           )}
