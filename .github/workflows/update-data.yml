@@ -119,6 +119,15 @@ jobs:
             echo "IMPACT_ACCOUNT_SID nu e setat — skip discovery"
           fi
 
+      # ── 4e. Impact.com — reconciliaza linkuri (upgrade la real / curata false) ──
+      # Ruleaza mereu (nu doar cand IMPACT_ACCOUNT_SID e setat) — foloseste CSV-ul
+      # deja din data/, nu API-ul. Trebuie sa ruleze INAINTE de merge_platforms.py,
+      # altfel dedup-ul auto-referential ar bloca upgrade-ul un ciclu intreg.
+      - name: Reconciliaza linkuri Impact.com (extra_merchants + output.json)
+        working-directory: scripts
+        continue-on-error: true
+        run: python reconcile_impact_links.py
+
       # ── 5. Merge platforme ─────────────────────────────────────────────────
       - name: Merge 2Performant + Profitshare + TradeTracker + Impact
         working-directory: scripts
