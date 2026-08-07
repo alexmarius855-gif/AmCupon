@@ -1,11 +1,11 @@
 {
-  "data": "2026-08-06",
-  "data_afisata": "6 august 2026",
-  "titlu": "Radarul AmCupon — 6 august 2026",
+  "data": "2026-08-07",
+  "data_afisata": "7 august 2026",
+  "titlu": "Radarul AmCupon — 7 august 2026",
   "intro": "Am trecut azi prin ofertele active si am pastrat doar ce merita. Iese in evidenta Atelier49 si Emag, dar mai jos ai selectia completa, verificata de noi. Toate codurile sunt testate; cele cu termen scurt le-am marcat.",
   "picks": [
     {
-      "scor": 126.6,
+      "scor": 126.0,
       "magazin": "atelier49.ro",
       "nume_afisat": "Atelier49",
       "categorie": "Casă & Grădină",
@@ -15,12 +15,12 @@
       "descriere": "Economiseste pana la 42% pe cadouri de Sfanta Marie unicat, realizate de artizani locali, din materiale naturale, personalizabile. Benecificiaza de reducere suplimentara de 5% cu cod ATELIER49.",
       "cod": "ATELIER49",
       "url": "https://amcupon.ro/cod-reducere/atelier49.ro",
-      "zile_ramase": 4,
-      "procent_succes": 83,
-      "take": "Grabeste-te: expira in 4 zile. Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 3,
+      "procent_succes": 80,
+      "take": "Grabeste-te: expira in 3 zile. Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
-      "scor": 98.25,
+      "scor": 99.55,
       "magazin": "emag.ro",
       "nume_afisat": "Emag",
       "categorie": "Marketplace",
@@ -30,12 +30,12 @@
       "descriere": "Saptamana Mama si Copilul 3 - 9 august 2026",
       "cod": "",
       "url": "https://amcupon.ro/cod-reducere/emag.ro",
-      "zile_ramase": 3,
-      "procent_succes": 97,
-      "take": "Grabeste-te: expira in 3 zile. Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 2,
+      "procent_succes": 93,
+      "take": "Grabeste-te: expira in 2 zile. Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
-      "scor": 97.55,
+      "scor": 91.55,
       "magazin": "hairify.ro",
       "nume_afisat": "Hairify",
       "categorie": "Beauty & Îngrijire",
@@ -45,12 +45,12 @@
       "descriere": "Ai 15% reducere la fibrele de păr Hairify – soluția instant pentru a masca zonele cu păr rar sau chelie.\n\nCe sunt fibrele de păr?\nSunt microparticule din keratină naturală (exact proteina din care este compus și părul tău). Datorită unei încărcări electrostatice, ele se prind ca niște magneți microscopici de firele tale subțiri, îngroșându-le instantaneu. Scalpul devine invizibil, iar părul tău capătă un volum complet natural.\n\nDe ce este o ofertă de neratat?\n\n15% Discount la prima ta comandă.",
       "cod": "BL2016",
       "url": "https://amcupon.ro/cod-reducere/hairify.ro",
-      "zile_ramase": 146,
-      "procent_succes": 95,
+      "zile_ramase": 145,
+      "procent_succes": 91,
       "take": "Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
-      "scor": 97.4,
+      "scor": 90.35,
       "magazin": "incaltamintelamoda.ro",
       "nume_afisat": "Incaltamintelamoda",
       "categorie": "Fashion",
@@ -60,27 +60,12 @@
       "descriere": "Descoperă colecția Incaltamintelamoda.ro și profită de ofertă folosind codul LAMODA. Toate produsele sunt realizate din piele naturală și fabricate în România, fiind create pentru confort, rezistență și un aspect elegant.\n\n✔ Încălțăminte bărbătească din piele naturală\n✔ Produse fabricate în România\n✔ Modele potrivite pentru ținute casual și elegante\n✔ Livrare rapidă din stoc\n✔ Raport excelent calitate-preț\n\nFolosește codul LAMODA la finalizarea comenzii și bucură-te de oferta specială disponibil",
       "cod": "LAMODA",
       "url": "https://amcupon.ro/cod-reducere/incaltamintelamoda.ro",
-      "zile_ramase": 3603,
-      "procent_succes": 87,
+      "zile_ramase": 3602,
+      "procent_succes": 79,
       "take": "Bun de prins daca oricum voiai sa-ti reimprospatezi garderoba."
     },
     {
-      "scor": 96.89999999999999,
-      "magazin": "libris.ro",
-      "nume_afisat": "Libris",
-      "categorie": "Cărți & Educație",
-      "categorie_slug": "carti-educatie",
-      "logo_url": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_libris.ro_1629366879.png",
-      "titlu": "Câștigă 2.000 € pentru o vacanță de cititor Cărțile te trimit în călătorie",
-      "descriere": "Câștigă 2.000 € pentru o vacanță de cititor Cărțile te trimit în călătorie",
-      "cod": "",
-      "url": "https://amcupon.ro/cod-reducere/libris.ro",
-      "zile_ramase": 1,
-      "procent_succes": 94,
-      "take": "Grabeste-te: expira in 1 zi. Oferta verificata — buna daca te incadrezi in categorie."
-    },
-    {
-      "scor": 95.0,
+      "scor": 89.85000000000001,
       "magazin": "e-potion.ro",
       "nume_afisat": "E Potion",
       "categorie": "Sănătate & Farmacie",
@@ -90,8 +75,23 @@
       "descriere": "Folosește codul EPOTION10 și primești 10% reducere pe valoarea totală a coșului, pe tot site-ul e-Potion.ro.\nSute de arome, lichide, dispozitive și accesorii — de la branduri proprii până la cele mai cunoscute nume internaționale.\nLivrare în 24/48h în toată țara, iar comenzile plasate până la ora 15:00 (luni–vineri) se expediază în aceeași zi.\nExcepții: categoria IQOS, kiturile Veev Inprim și produsele aflate deja la promoție.\nFără dată de expirare — codul este valabil permanent.",
       "cod": "epotion10",
       "url": "https://amcupon.ro/cod-reducere/e-potion.ro",
-      "zile_ramase": 337,
-      "procent_succes": 75,
+      "zile_ramase": 336,
+      "procent_succes": 87,
+      "take": "Oferta verificata — buna daca te incadrezi in categorie."
+    },
+    {
+      "scor": 86.0,
+      "magazin": "jollymag.ro",
+      "nume_afisat": "Jollymag",
+      "categorie": "Cărți & Educație",
+      "categorie_slug": "carti-educatie",
+      "logo_url": "https://www.google.com/s2/favicons?domain=jollymag.ro&sz=128",
+      "titlu": "JollyMag - 10% reducere cu codul JOLLY10",
+      "descriere": "Reviste, carti si publicatii la reducere. Foloseste codul JOLLY10 pentru 10% discount la prima comanda.",
+      "cod": "JOLLY10",
+      "url": "https://amcupon.ro/cod-reducere/jollymag.ro",
+      "zile_ramase": 18,
+      "procent_succes": 80,
       "take": "Oferta verificata — buna daca te incadrezi in categorie."
     }
   ],

@@ -276,7 +276,7 @@
     "verdict_m1": "Alege eMAG pentru varietate maxima, livrare rapida si cel mai mare Black Friday din Romania. Ideal pentru electronice, electrocasnice si tot ce ai nevoie intr-un singur loc.",
     "verdict_m2": "Alege Elefant pentru carti, jocuri si produse educationale — selectia este mai curata si preturile la carti sunt adesea mai bune.",
     "stats1": {
-      "promotii_active": 2,
+      "promotii_active": 3,
       "cashback": "pana la 20%",
       "logo": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_emag.ro_1570027386.png",
       "url_afiliat": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/35?sub_id=emag.ro"
@@ -288,6 +288,10 @@
       "url_afiliat": "https://elefant.ro"
     },
     "promo1": [
+      {
+        "nume": "Electro Weekend 07-10 august 2026",
+        "cod_cupon": ""
+      },
       {
         "nume": "Stock Busters 4 - 10 august 2026",
         "cod_cupon": ""
@@ -305,7 +309,7 @@
       },
       {
         "q": "Are Emag coduri de reducere active?",
-        "a": "Da, Emag are 2 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
+        "a": "Da, Emag are 3 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
       },
       {
         "q": "Are Elefant coduri de reducere active?",
@@ -359,7 +363,7 @@
     "verdict_m1": "Alege eMAG cand ai nevoie urgent sau vrei garantii clare si produse verificate. Ideal pentru electronice, electrocasnice si produse de marca.",
     "verdict_m2": "Alege Temu pentru accesorii, produse de uz casnic si articole la preturi foarte mici unde calitatea exacta conteaza mai putin. Planifica dinainte — livrarea dureaza.",
     "stats1": {
-      "promotii_active": 2,
+      "promotii_active": 3,
       "cashback": "pana la 20%",
       "logo": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_emag.ro_1570027386.png",
       "url_afiliat": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/35?sub_id=emag.ro"
@@ -371,6 +375,10 @@
       "url_afiliat": "https://www.temu.com"
     },
     "promo1": [
+      {
+        "nume": "Electro Weekend 07-10 august 2026",
+        "cod_cupon": ""
+      },
       {
         "nume": "Stock Busters 4 - 10 august 2026",
         "cod_cupon": ""
@@ -393,7 +401,7 @@
       },
       {
         "q": "Are Emag coduri de reducere active?",
-        "a": "Da, Emag are 2 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
+        "a": "Da, Emag are 3 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
       },
       {
         "q": "Are Temu coduri de reducere active?",
