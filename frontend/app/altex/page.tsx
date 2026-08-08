@@ -44,6 +44,7 @@ export default function AltexPage() {
         { q: "Cand sunt cele mai bune promotii Altex?", a: "Black Friday (noiembrie) are cele mai mari reduceri — pana la 70% la electronice. Altex mai are campanii importante de Paste, vara si iarna. Urmareste pagina noastra pentru toate promotiile active." },
       ],
       canonical: "/altex",
+      categorieSlug: "electronice",
     }} />
   );
 }

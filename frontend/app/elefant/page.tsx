@@ -44,6 +44,7 @@ export default function ElefantPage() {
         { q: "Pot returna o carte de la Elefant?", a: "Da, Elefant accepta retururi in 30 de zile de la primire pentru carti in starea originala (nefolosite, cu ambalajul intact)." },
       ],
       canonical: "/elefant",
+      categorieSlug: "carti-educatie",
     }} />
   );
 }

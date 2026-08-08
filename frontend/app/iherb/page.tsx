@@ -46,6 +46,7 @@ export default function IherbPage() {
         { q: "Pot returna produse de la iHerb?", a: "iHerb accepta retururi in 60 de zile pentru produse nefolosite si in starea originala. Contacteaza serviciul clienti iHerb pentru a initia returul. Costul returului international poate fi ridicat, asa ca verifica bine produsul inainte de comanda." },
       ],
       canonical: "/iherb",
+      categorieSlug: "sanatate",
     }} />
   );
 }

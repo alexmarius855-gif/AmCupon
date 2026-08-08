@@ -44,6 +44,7 @@ export default function FlancoPage() {
         { q: "Flanco ofera rate fara dobanda?", a: "Da, Flanco are parteneriate cu mai multe banci si IFN-uri pentru rate fara dobanda pe 3-24 luni. Conditiile variaza in functie de banca aleasa si valoarea comenzii." },
       ],
       canonical: "/flanco",
+      categorieSlug: "electronice",
     }} />
   );
 }

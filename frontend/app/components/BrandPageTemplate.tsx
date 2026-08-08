@@ -33,6 +33,10 @@ export interface BrandConfig {
   tips: string[];        // sfaturi cumparatori
   faq: { q: string; a: string }[];
   canonical: string;     // ex: "/altex"
+  // Folosit DOAR cand brandul nu exista in output.json (fara program de afiliere
+  // inca): butonul secundar trimite in categoria asta, unde exista alternative
+  // reale, in loc sa duca la /cod-reducere/<slug> care ar da 404.
+  categorieSlug?: string; // ex: "electronice"
 }
 
 function loadMagazin(slugs: string[]): Magazin | null {
@@ -140,10 +144,25 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
                 Mergi la {config.name} →
               </a>
             )}
-            <Link href={`/cod-reducere/${config.slug}`}
-              className="bg-[#1e293b] hover:bg-[#334155] border border-[#334155] text-[#cbd5e1] font-semibold px-6 py-3 rounded-xl text-sm transition-colors">
-              Toate codurile {config.name}
-            </Link>
+            {/* Linkul catre pagina de magazin exista DOAR daca magazinul e in
+                output.json — /cod-reducere/[magazin] se genereaza din acele date.
+                Inainte se randa neconditionat si dadea 404 pe 6 pagini live
+                (altex, flanco, asos, elefant, iherb, moto — branduri cu pagina
+                editoriala dar fara program de afiliere inca). Fundatura pentru
+                utilizator + linkuri interne moarte pentru Google. Gasit 08.08.2026.
+                Cand magazinul lipseste, trimitem in categoria relevanta, unde chiar
+                exista alternative reale. */}
+            {magazin ? (
+              <Link href={`/cod-reducere/${magazin.magazin}`}
+                className="bg-[#1e293b] hover:bg-[#334155] border border-[#334155] text-[#cbd5e1] font-semibold px-6 py-3 rounded-xl text-sm transition-colors">
+                Toate codurile {config.name}
+              </Link>
+            ) : (
+              <Link href={config.categorieSlug ? `/categorii/${config.categorieSlug}` : "/toate-magazinele"}
+                className="bg-[#1e293b] hover:bg-[#334155] border border-[#334155] text-[#cbd5e1] font-semibold px-6 py-3 rounded-xl text-sm transition-colors">
+                Vezi alternative cu reduceri active
+              </Link>
+            )}
           </div>
         </div>
       </section>

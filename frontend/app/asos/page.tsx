@@ -46,6 +46,7 @@ export default function AsosPage() {
         { q: "ASOS vinde produse originale?", a: "Da, ASOS vinde exclusiv produse originale, fie de la branduri partenere oficiale, fie din propria linie ASOS Design. Nu vinde produse contrafacute sau imitate." },
       ],
       canonical: "/asos",
+      categorieSlug: "fashion",
     }} />
   );
 }

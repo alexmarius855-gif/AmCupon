@@ -4,16 +4,22 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
+// `href` suprascrie tiparul implicit /cod-reducere/<slug>.
+// Necesar pentru brandurile care au pagina editoriala dedicata dar NU sunt in
+// output.json (fara program de afiliere inca): /cod-reducere/<slug> se genereaza
+// din output.json, deci pentru ele dadea 404 — pe TOATE cele 107 pagini, fiindca
+// footerul e global. Gasit 08.08.2026. Paginile /altex, /flanco, /elefant exista
+// si au continut complet, doar linkul folosea tiparul gresit.
 const MAGAZINE_POPULARE = [
   { slug: "emag.ro",         label: "eMAG" },
   { slug: "fashiondays.ro",  label: "FashionDays" },
   { slug: "notino.ro",       label: "Notino" },
-  { slug: "altex.ro",        label: "Altex" },
-  { slug: "flanco.ro",       label: "Flanco" },
+  { slug: "altex.ro",        label: "Altex",    href: "/altex" },
+  { slug: "flanco.ro",       label: "Flanco",   href: "/flanco" },
   { slug: "decathlon.ro",    label: "Decathlon" },
   { slug: "drmax.ro",        label: "Dr. Max" },
   { slug: "noriel.ro",       label: "Noriel" },
-  { slug: "elefant.ro",      label: "Elefant" },
+  { slug: "elefant.ro",      label: "Elefant",  href: "/elefant" },
   { slug: "libris.ro",       label: "Libris" },
   { slug: "carturesti.ro",   label: "Carturesti" },
   { slug: "answear.ro",      label: "Answear" },
@@ -223,7 +229,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {MAGAZINE_POPULARE.map(m => (
                 <li key={m.slug}>
-                  <Link href={`/cod-reducere/${m.slug}`}
+                  <Link href={m.href ?? `/cod-reducere/${m.slug}`}
                     className="text-sm text-[#94a3b8] hover:text-[#0d9488] transition-colors">
                     Cod reducere {m.label}
                   </Link>

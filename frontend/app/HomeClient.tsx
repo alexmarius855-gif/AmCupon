@@ -1471,7 +1471,10 @@ export default function HomeClient({
                   { href: "/cod-reducere/emag.ro",         label: "Cod eMAG" },
                   { href: "/cod-reducere/farmec.ro",       label: "Cod Farmec" },
                   { href: "/cod-reducere/noriel.ro",       label: "Cod Noriel" },
-                  { href: "/cod-reducere/elefant.ro",      label: "Cod Elefant" },
+                  // /elefant, nu /cod-reducere/elefant.ro — Elefant nu e in output.json
+                  // (fara program de afiliere inca), deci pagina de magazin nu se
+                  // genereaza si dadea 404. Pagina editoriala exista si e completa.
+                  { href: "/elefant",                      label: "Cod Elefant" },
                 ].map(l => (
                   <li key={l.href}><a href={l.href} className="hover:text-[#0d9488] transition-colors">{l.label}</a></li>
                 ))}
