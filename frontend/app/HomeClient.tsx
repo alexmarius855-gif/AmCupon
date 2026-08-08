@@ -204,7 +204,9 @@ export default function HomeClient({
   const [coduriReveal, setCoduriReveal]   = useState<Set<string>>(new Set());
   const [copiat, setCopiat]               = useState<string | null>(null);
   const [menuOpen, setMenuOpen]           = useState(false);
-  const [storeLimit, setStoreLimit]       = useState(12);
+  // 24, nu 12: de cand magazinele fara promotie se randeaza ca placi compacte
+  // (nu carduri mari), incap de doua ori mai multe in mai putin spatiu.
+  const [storeLimit, setStoreLimit]       = useState(24);
   const [filtruActiv, setFiltruActiv]     = useState<"toate"|"cod"|"promotie"|"favorite">("toate");
   const [favorite, setFavorite]           = useState<Set<string>>(new Set());
   const [produseCategorii]                = useState<ProdusCategorie[]>(initProd);
@@ -1240,15 +1242,39 @@ export default function HomeClient({
                 Pagina completa →
               </Link>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-              {faraPromotii.slice(0, storeLimit).map(m => (
-                <Card key={m.magazin} m={m} revealed={coduriReveal.has(m.magazin)} copiat={copiat === m.magazin} onCopiere={copiazaCod} isFavorit={favorite.has(m.magazin)} onToggleFavorit={toggleFavorit}/>
-              ))}
+            {/* Grila COMPACTA, nu carduri mari (08.08.2026).
+                Astea sunt magazinele fara promotie activa. Randate ca `Card` complet,
+                fiecare afisa "Fara promotii active momentan" — 12 carduri mari care
+                anunta ca n-au nimic de oferit. Ocupau ~4 ecrane si transformau un
+                atu real (1178 parteneri) intr-o dovada de gol.
+                NU le scoatem — aduc comision pe orice achizitie si asta respecta
+                regula "promoveaza tot". Doar le prezentam ca perete de logo-uri:
+                aceleasi linkuri, aceeasi monetizare, o fractiune din spatiu. */}
+            <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-2.5">
+              {faraPromotii.slice(0, storeLimit).map(m => {
+                const nume = numeAfisat(m.magazin);
+                return (
+                  <Link key={m.magazin} href={`/cod-reducere/${m.magazin}`}
+                    className="group glass rounded-xl p-3 flex flex-col items-center gap-2 hover:border-[#14b8a6]/50 hover:-translate-y-0.5 transition-all">
+                    <span className="w-11 h-11 rounded-lg bg-[#ffffff] p-1.5 flex items-center justify-center shrink-0 ring-1 ring-[#334155]/50 group-hover:ring-[#14b8a6]/50 transition-all">
+                      {m.logo_url ? (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img src={m.logo_url} alt={nume} className="max-w-full max-h-full object-contain" loading="lazy" decoding="async" />
+                      ) : (
+                        <span className="text-[#0f766e] font-black text-lg">{nume.charAt(0)}</span>
+                      )}
+                    </span>
+                    <span className="text-[11px] font-semibold text-[#cbd5e1] group-hover:text-[#5eead4] text-center leading-tight line-clamp-2 transition-colors">
+                      {nume}
+                    </span>
+                  </Link>
+                );
+              })}
             </div>
             {faraPromotii.length > storeLimit && (
-              <div className="text-center mt-10">
-                <button onClick={() => setStoreLimit(l => l + 24)}
-                  className="bg-[#1e293b] border-2 border-[#334155] hover:border-[#0d9488] text-[#cbd5e1] hover:text-[#0d9488] font-bold px-8 py-3 rounded-xl text-sm transition-all hover:shadow-md">
+              <div className="text-center mt-6">
+                <button onClick={() => setStoreLimit(l => l + 36)}
+                  className="glass hover:border-[#14b8a6]/50 text-[#cbd5e1] hover:text-[#5eead4] font-bold px-7 py-2.5 rounded-xl text-sm transition-all">
                   Incarca mai multe ({faraPromotii.length - storeLimit} magazine ramase)
                 </button>
               </div>
