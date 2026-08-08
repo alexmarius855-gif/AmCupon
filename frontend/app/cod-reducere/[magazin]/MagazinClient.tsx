@@ -212,7 +212,18 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
 }) {
   const [revealed, setRevealed]   = useState<Set<number>>(new Set());
   const [imgOk, setImgOk]         = useState(true);
-  const [tabActiv, setTabActiv]   = useState<Tab>("coduri");
+  // Tab-ul implicit = primul care are CONTINUT REAL, nu mereu "coduri".
+  // Bug de conversie gasit 08.08.2026: 55 din 62 de magazine cu oferte active au 0
+  // coduri (temu, shein, emag, trendyol, fashiondays...). Pagina se deschidea pe tabul
+  // "Coduri" — gol — iar ofertele, singurul lucru monetizabil de acolo, stateau ascunse
+  // in spatele unui tab pe care vizitatorul trebuia sa-l descopere si sa-l apese.
+  // Exact paginile cele mai valoroase (singurele cu ceva de vandut) isi ascundeau marfa.
+  const [tabActiv, setTabActiv]   = useState<Tab>(() => {
+    if (m.promotii.some(p => p.cod_cupon)) return "coduri";
+    if (m.promotii.some(p => !p.cod_cupon)) return "oferte";
+    if ((produse?.length ?? 0) > 0) return "produse";
+    return "coduri";
+  });
   const [modalOpen, setModalOpen] = useState(false);
   const { copiedKey, redirectFailed, copyAndOpen, retryRedirect } = useCopyCod(trackClick);
   const copiat = copiedKey !== null ? Number(copiedKey) : null;
