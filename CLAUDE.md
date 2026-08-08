@@ -12,6 +12,51 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 08.08.2026 (atribuire pe pagina + polish vizual + 3 bug-uri live gasite prin verificare, nu raportate — PUSHED):**
+- **BUG GRAV reparat — caseta de cautare de pe homepage avea text INVIZIBIL.** `bg-slate-100`
+  (#f1f5f9) cu `text-[#f1f5f9]` — aceeasi culoare. Oricine tasta acolo nu vedea nimic. Confirmat
+  in DOM (computed styles identice) inainte de fix. **Cauza radacina**: `retheme_dark_2026.js`
+  (migrarea la dark, 16.07) a convertit hexurile arbitrare dar NU si clasele Tailwind NUMITE —
+  112 aparitii ramase in 40 de fisiere, invizibile la orice audit pe hexuri. Curatate cu
+  `scripts/fix_light_leftovers.js` (nou), care NU atinge `bg-white` (cutiile de logo raman
+  intentionat albe). **Daca faci alt rebrand: cauta SI clasele numite, nu doar hexurile.**
+- **Newsletter: comisionul era afisat ca reducere.** `send_newsletter.py` (NU
+  `generate_daily_digest.py`) — `format_comision()` era atribuit variabilei `disc` si randat sub
+  logo, exact unde cititorul asteapta reducerea: "Comision 10%" se citea ca "10% reducere".
+  Aceeasi greseala "cashback fals" eliminata din site pe 03.07, supravietuise aici. Inlocuit cu
+  `badge_onest()`: procent REAL parsat > cod real > verificat CHIAR azi > neutru. NU s-a folosit
+  badge-ul "Cod Exclusiv" (0 magazine au `exclusiv=True` — ar fi fost fabricat). Plus grupare pe
+  4 sectiuni tematice (top 3 fiecare) si HTML rescris **table-based**: versiunea veche folosea
+  `display:flex` SI `display:grid`, niciunul suportat de Outlook. Nou flag `--dry-run`.
+- **Atribuire pe pagina, gratuit (in loc de ~59 EUR/luna).** 1099 din 1178 de linkuri (93%) nu
+  aveau NICIUN sub-id: la o vanzare, reteaua raporta "comision de la AmCupon" fara sa spuna de pe
+  ce pagina. `AffiliateClickTracker.tsx` scrie acum calea paginii in parametrul fiecarei retele
+  — `st=` (2Performant, confirmat in documentatia lor), `subId1=` (Impact), `clickref=` (Awin),
+  `sub_id=` (Profitshare), `sid=` (CJ). Cand exista deja valoare, o pastreaza si adauga pagina
+  dupa `~`. Verificat live: ambele URL-uri modificate raspund 200 (atribuirea nu strica comisionul).
+  **Acelasi fisier avea si `AFFILIATE_HOSTS` doar cu 2performant+profitshare** — click-urile pe
+  Impact/Awin/CJ (~580 magazine) nu generau deloc eveniment GA4. Reparat.
+- **Linkuri interne moarte pe TOATE cele 107 pagini.** `MAGAZINE_POPULARE` din `Footer.tsx`
+  (global) continea altex.ro/flanco.ro/elefant.ro — branduri fara program de afiliere, deci
+  absente din output.json, deci `/cod-reducere/<slug>` = 404 (confirmat pe productie cu curl).
+  Fix: camp optional `href` care suprascrie tiparul; paginile `/altex`,`/flanco`,`/elefant` exista
+  si raspund 200. Acelasi bug in `BrandPageTemplate.tsx` (buton neconditionat, 5 pagini) si
+  `HomeClient.tsx`. **Regula: orice link nou catre `/cod-reducere/X` presupune ca X e in
+  output.json — verifica intai.**
+- **Profitshare — verificat, NU s-a sters nimic.** Alex a cerut stergerea ("nu raspund"), dar
+  `scripts/check_affiliate_links.py` (nou, reutilizabil pe orice retea, cu `--delete-dead`
+  optional) a testat live toate cele 60 de linkuri: **60/60 vii (200 OK), 0 moarte**. "Nu raspund"
+  = suportul, nu linkurile. Semnalat ca eMAG e EXCLUSIV pe Profitshare (nu e pe Impact — ce parea
+  potrivire era `tangemag.pxf.io`, fals pozitiv), deci stergerea ar fi taiat cel mai cautat brand RO.
+- **Polish vizual** (fara Supabase, fara `/go` — decizie explicita Alex dupa ce am aratat ca
+  brief-ul de "rescriere completa" cerea lucruri deja construite): design tokens in `globals.css`
+  (`--surface`/`--border`/`--accent`...), utilitare `.glass` si `.elevate`, focus-visible,
+  `prefers-reduced-motion`. Sters cod mort verificat de 3 ori: `ThemeToggle.tsx` (0 importuri,
+  `layout.tsx:137` sterge activ clasa `dark` la load), `PromoCarousel.tsx`, ~70 linii CSS `.dark`.
+  Portocaliul/amber eliminat de unde mai era (HomeClient accent categorii + /cadouri) — **0 in tot `app/`**.
+- **Gotcha de dev**: dupa modificarea `globals.css`, dev server-ul servea CSS-ul VECHI din cache-ul
+  `.next` (continea inca reguli sterse). Restart simplu nu ajuta — necesita `rm -rf .next`.
+
 **UPDATE 06.08.2026 (fix acces /admin + panou Affiliate Audit + reconciliere Impact extinsa — PUSHED, commits 88e877f+dc26f7c+11b3c9e):**
 - **Bug real gasit + reparat: `/admin` nu se putea accesa cu NICIO parola.** `app/admin/page.tsx`
   compara cookie-ul de sesiune (hash SHA-256, `deriveSessionToken()`) direct cu `ADMIN_PASSWORD` in
@@ -599,6 +644,9 @@ Fiecare pagină dinamică are două fișiere:
 | `frontend/app/sitemap.ts` | Sitemap dinamic din output.json + blog-posts.json |
 | `frontend/app/api/newsletter/route.ts` | Subscribe + `sendWelcomeEmail()` (Brevo) |
 | `scripts/reconcile_impact_links.py` | Upgradeaza magazine Impact fara link real (extra_merchants.json + data/output.json) la linkul real din CSV cand exista program activ; curata parametri falsi cand nu exista. Ruleaza automat in pipeline, inainte de merge_platforms.py |
+| `scripts/check_affiliate_links.py` | Verifica LIVE ca linkurile de afiliere raspund (urmareste redirectul complet). `--platform <nume>` sau `--all`; implicit doar raport, `--delete-dead` sterge mortii. Raport in `data/link_check_report.json` |
+| `scripts/fetch_awin_api.py` | Programe Awin via API oficial (fara CSV manual). Necesita `AWIN_API_TOKEN` — pana atunci face skip elegant. Afiseaza JSON-ul brut al primului program ca sa confirmam denumirile campurilor la prima rulare reala |
+| `scripts/fix_light_leftovers.js` | One-shot: converteste clasele Tailwind NUMITE de tema light ramase (bg-slate-100 etc). Nu atinge `bg-white` (cutii logo). Reruleaza daca apare alt rebrand |
 | `scripts/fetch_2p_api.py` | Auth 2Performant + descărcare magazine/promoții |
 | `scripts/fetch_product_feeds.py` | Descărcare produse din API feed-uri |
 | `scripts/send_newsletter.py` | Campanie Brevo către abonați (template indigo/cyan) |
