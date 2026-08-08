@@ -754,7 +754,20 @@ export default function HomeClient({
         return (
           <section className="reveal bg-[#0a0f1a] border-b border-[#1e293b] py-12 px-4">
             <div className="max-w-5xl mx-auto">
-              <p className="text-xs font-black text-[#0d9488] uppercase tracking-widest mb-4">⭐ Oferta zilei</p>
+              {/* Un SINGUR spotlight de "oferta zilei". Pana pe 08.08.2026 existau doua
+                  sectiuni separate — "Oferta zilei" (aici) si "Deal zilei" (~200 linii mai
+                  jos) — care alegeau magazine DIFERITE si pretindeau amandoua ca sunt
+                  oferta zilei. Mesaj incoerent pentru vizitator. Pastrata aceasta (selectia
+                  ei prefera ofertele cu link de afiliat real, deci si monetizarea e mai
+                  buna), absorbit de la cealalta doar semnalul de urgenta REALA. */}
+              <div className="flex items-center gap-3 mb-4 flex-wrap">
+                <p className="text-xs font-black text-[#0d9488] uppercase tracking-widest">⭐ Oferta zilei</p>
+                {expiraAzi.length > 0 && (
+                  <Link href="/oferte-azi" className="text-xs font-bold text-red-400 hover:text-red-300 transition-colors">
+                    {expiraAzi.length === 1 ? "1 ofertă expiră azi" : `${expiraAzi.length} oferte expiră azi`} →
+                  </Link>
+                )}
+              </div>
               <div className="relative overflow-hidden rounded-xl border border-[#14b8a6]/30 bg-gradient-to-br from-[#111827]/60 via-[#111827] to-[#111827] p-6 sm:p-8">
                 <div className="absolute -top-24 -right-16 w-72 h-72 rounded-full pointer-events-none" style={{background:"radial-gradient(circle, rgba(20,184,166,0.14), transparent 70%)"}} />
                 <div className="relative flex flex-col sm:flex-row items-center gap-6">
@@ -829,10 +842,14 @@ export default function HomeClient({
               ))}
             </div>
 
-            {/* Continut: randuri orizontale (mod Toate) sau grid (mod categorie) */}
+            {/* Continut: randuri orizontale (mod Toate) sau grid (mod categorie).
+                Doar primele 4 randuri in modul "Toate" (08.08.2026): sectiunea ocupa
+                2584px = 3,6 ecrane, adica 23% din toata pagina, cu 6 randuri stivuite.
+                Restul categoriilor raman accesibile prin taburile de deasupra si prin
+                /produse — nu se pierde nimic, doar nu se descarca tot pe prima pagina. */}
             {activeCatTab === "toate" ? (
               <div className="space-y-10">
-                {produseCategorii.map(cat => (
+                {produseCategorii.slice(0, 4).map(cat => (
                   <div key={cat.slug}>
                     {/* Header rand */}
                     <div className="flex items-center justify-between mb-4">
@@ -941,74 +958,6 @@ export default function HomeClient({
           </div>
         </section>
       )}
-
-      {/* ─── DEAL ZILEI ──────────────────────────────────────────────────── */}
-      {!loading && cuPromotii.length > 0 && (() => {
-        const deal  = cuPromotii.find(m => m.cod_cupon && m.zile_ramase <= 3) || cuPromotii.find(m => m.cod_cupon) || cuPromotii[0];
-        const promo = deal.promotii[0];
-        const discountText = maxDiscount(deal.promotii);
-        const link  = promo?.landing_page || deal.url_afiliat || deal.url;
-        const urgency = deal.zile_ramase <= 1;
-        return (
-          <div className={`py-6 px-4 border-b ${urgency ? "bg-gradient-to-r from-red-950/60 via-[#111827] to-[#111827] border-red-500/20" : "bg-[#111827] border-[#334155]"}`}>
-            <div className="max-w-7xl mx-auto">
-              <div className="flex items-center gap-3 mb-4">
-                <span className={`text-white text-[10px] font-black px-3 py-1 rounded-full tracking-wider ${urgency ? "bg-red-600 animate-pulse" : "bg-[#0d9488]"}`}>
-                  {urgency ? "⚡ EXPIRA AZI" : "🔥 DEAL ZILEI"}
-                </span>
-                <span className="text-[#94a3b8] text-xs">{new Date().toLocaleDateString("ro-RO", { day: "numeric", month: "long" })}</span>
-                {deal.zile_ramase <= 1 && <CardCountdown zileRamase={deal.zile_ramase} />}
-                {expiraAzi.length > 1 && (
-                  <Link href="/oferte-azi" className="ml-auto text-xs font-bold text-[#0d9488] hover:text-[#0f766e] transition-colors">
-                    +{expiraAzi.length - 1} oferte expira azi →
-                  </Link>
-                )}
-              </div>
-              <a href={link} target="_blank" rel="sponsored noopener noreferrer"
-                className={`group flex flex-col sm:flex-row items-start sm:items-center gap-4 border rounded-xl p-5 transition-all duration-200 hover:-translate-y-0.5 ${urgency ? "bg-red-500/8 hover:bg-red-500/12 border-red-500/30 hover:border-red-400/50 hover:shadow-lg hover:shadow-red-500/10" : "bg-[#1e293b] hover:bg-[#334155] border-[#334155] hover:border-[#14b8a6]/40 hover:shadow-lg hover:shadow-[#14b8a6]/10"}`}>
-                <div className="w-16 h-16 rounded-xl bg-[#ffffff] flex items-center justify-center shrink-0 shadow-lg">
-                  {deal.logo_url ? (
-                    <img src={deal.logo_url} alt={numeAfisat(deal.magazin)} className="w-12 h-12 object-contain" loading="lazy"/>
-                  ) : (
-                    <span className="text-2xl font-black text-[#0d9488]">{numeAfisat(deal.magazin)[0]}</span>
-                  )}
-                </div>
-                <div className="flex-1 min-w-0">
-                  <div className="flex flex-wrap items-center gap-2 mb-1">
-                    <span className="text-[#f1f5f9] font-black text-xl">{numeAfisat(deal.magazin)}</span>
-                    <span className="text-[#94a3b8] text-xs">{deal.categorie}</span>
-                    {deal.exclusiv && <span className="bg-[#14b8a6]/20 text-[#0f766e] text-[10px] font-black px-2 py-0.5 rounded-full border border-[#14b8a6]/30">EXCLUSIV</span>}
-                  </div>
-                  <p className="text-[#cbd5e1] text-sm line-clamp-2">{promo?.descriere || promo?.nume || "Oferta speciala disponibila"}</p>
-                  <div className="flex flex-wrap items-center gap-2 mt-2">
-                    {discountText && (
-                      <span className="inline-flex items-center gap-1 bg-emerald-500/15 text-emerald-400 text-xs font-bold px-2.5 py-0.5 rounded-full border border-emerald-500/25">
-                        ✓ {discountText}
-                      </span>
-                    )}
-                    {deal.cod_cupon && promo?.cod_cupon && (
-                      <span className="inline-flex items-center gap-1 bg-[#14b8a6]/15 text-[#0d9488] text-xs font-bold px-2.5 py-0.5 rounded-full border border-[#14b8a6]/25">
-                        🏷 Cod disponibil
-                      </span>
-                    )}
-                  </div>
-                </div>
-                <div className="flex items-center gap-3 shrink-0">
-                  {promo?.cod_cupon && (
-                    <div className="hidden sm:block border-2 border-dashed border-[#0d9488]/50 rounded-xl px-4 py-2.5 bg-[#14b8a6]/8">
-                      <p className="text-[9px] text-[#94a3b8] uppercase tracking-widest mb-0.5">Cod reducere</p>
-                      <span className="font-mono font-black text-[#0d9488] text-sm tracking-widest">{promo.cod_cupon}</span>
-                    </div>
-                  )}
-                  <span className={`font-black px-5 py-3 rounded-xl text-sm transition-colors whitespace-nowrap shadow-lg ${urgency ? "bg-red-600 group-hover:bg-red-500 text-white shadow-red-500/30" : "bg-[#0d9488] group-hover:bg-[#14b8a6] text-white shadow-[#14b8a6]/20"}`}>
-                    {deal.cod_cupon ? "Ia codul →" : "Vezi oferta →"}
-                  </span>
-                </div>
-              </a>
-            </div>
-          </div>
-        );
-      })()}
 
       {/* ─── REDUCERI MARI AZI ───────────────────────────────────────────── */}
       {!loading && (() => {
@@ -1180,21 +1129,11 @@ export default function HomeClient({
           </section>
         )}
 
-        {/* EXPIRA AZI */}
-        {!loading && expiraAzi.length > 0 && (
-          <section className="mb-10">
-            <div className="flex items-center gap-3 mb-5">
-              <span className="bg-red-600 text-white text-[10px] font-black px-2.5 py-1 rounded-full animate-pulse tracking-wider">EXPIRA AZI</span>
-              <h2 className="text-xl font-black text-[#f1f5f9] tracking-tight">Oferte care se termina azi</h2>
-              <span className="text-sm text-[#cbd5e1]">{expiraAzi.length} oferte</span>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-              {expiraAzi.map(m => (
-                <Card key={m.magazin+"_azi"} m={m} revealed={coduriReveal.has(m.magazin)} copiat={copiat === m.magazin} onCopiere={copiazaCod} isFavorit={favorite.has(m.magazin)} onToggleFavorit={toggleFavorit}/>
-              ))}
-            </div>
-          </section>
-        )}
+        {/* Sectiunea "Oferte care se termina azi" a fost scoasa pe 08.08.2026: ocupa un
+            header + grila proprie (327px) pentru 4 carduri, iar aceleasi magazine apar
+            oricum mai jos in "Promotii active", cu badge rosu "Expiră azi" pe card.
+            Urgenta se vede acum in CONTEXT (badge pe card + linkul "N oferte expiră azi"
+            din headerul Ofertei zilei), nu ca sectiune subtire separata. */}
 
         {/* PROMOTII ACTIVE */}
         {!loading && cuPromotii.length > 0 && (
