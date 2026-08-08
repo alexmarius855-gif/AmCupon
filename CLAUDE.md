@@ -12,6 +12,31 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 08.08.2026 — partea a 2-a (redesign vizual: iconografie, homepage -50%, fix conversie major — PUSHED):**
+- **BUG DE CONVERSIE, cel mai scump din sesiune: 55 din 62 de pagini cu oferte se
+  deschideau pe un tab GOL.** `MagazinClient.tsx` pornea mereu pe tabul "Coduri", dar din
+  62 de magazine cu promotii active doar **7** au cod real. Restul (emag, temu, shein,
+  trendyol, fashiondays...) aveau doar oferte — deci cine venea din Google pe "Cod Reducere
+  eMAG" ateriza pe un tab gol, iar ofertele reale stateau ascunse in spatele unui tab pe
+  care trebuia sa-l observe. Fix: tabul implicit = primul cu CONTINUT REAL (coduri >
+  oferte > produse). **Verifica asta la orice tab nou** — nu presupune ca primul tab are date.
+- **Iconografie categorii: emoji -> Lucide, 16 culori -> 5 familii.** `CategoryIcon.tsx`
+  (nou). Emoji-ul mare pe patrat cu gradient saturat era cel mai slab element vizual (se
+  randeaza diferit pe fiecare OS, nu poate fi stilizat). Ironic: CLAUDE.md documenta ca
+  "curcubeul" a fost eliminat pe 30.06 — exact el ramasese pe categorii, mutat din
+  `from/to` in `accent`. Acopera AMBELE taxonomii (sluguri RO magazine + EN produse).
+- **Homepage 19657px -> 9926px (-49,5%), 20,6 -> 13,8 ecrane, 12 -> 10 sectiuni.** Taiate,
+  dupa masurarea fiecarei sectiuni in DOM: spotlight-ul DUPLICAT ("Oferta zilei" si "Deal
+  zilei" erau doua sectiuni care alegeau magazine diferite si pretindeau amandoua ca sunt
+  oferta zilei), sectiunea "Oferte care se termina azi" (327px pt 4 carduri care apar
+  oricum mai jos cu badge rosu), si 12 carduri "Fara promotii active momentan" inlocuite
+  cu perete compact de logo-uri (aceleasi magazine si linkuri — regula "promoveaza tot" —
+  dar ~4 ecrane -> 563px). Randurile de produse limitate de la 6 la 4 (ocupau 23% din pagina).
+- **NU am taiat** desi pareau candidati, pentru ca verificarea a aratat valoare reala:
+  "Magazine de incredere" (12, cu oferte) vs "Magazine partenere" (24, fara) — suprapunere
+  masurata **zero**, seturi diferite; "Ghiduri dedicate" — 0 carduri dar linkuri interne
+  SEO catre paginile brand. **Masoara inainte sa tai**, nu presupune redundanta.
+
 **UPDATE 08.08.2026 (atribuire pe pagina + polish vizual + 3 bug-uri live gasite prin verificare, nu raportate — PUSHED):**
 - **BUG GRAV reparat — caseta de cautare de pe homepage avea text INVIZIBIL.** `bg-slate-100`
   (#f1f5f9) cu `text-[#f1f5f9]` — aceeasi culoare. Oricine tasta acolo nu vedea nimic. Confirmat
