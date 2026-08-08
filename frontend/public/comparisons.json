@@ -39,8 +39,8 @@
     "verdict_m1": "Alege FashionDays daca vrei branduri premium si sales masive cu reduceri de pana la 80%. Ideal pentru ocazii speciale sau garderoba de sezon.",
     "verdict_m2": "Alege Answear pentru o selectie mai larga de branduri sportive si casual, cu preturi mai constante si disponibilitate buna.",
     "stats1": {
-      "promotii_active": 0,
-      "cashback": "pana la 5%",
+      "promotii_active": 1,
+      "cashback": "vezi site",
       "logo": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_fashiondays.ro_1713947169.jpg",
       "url_afiliat": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/88736?sub_id=fashiondays.ro"
     },
@@ -50,7 +50,12 @@
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/2561/medium/2561.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fanswear.ro"
     },
-    "promo1": [],
+    "promo1": [
+      {
+        "nume": "Best of EPIC",
+        "cod_cupon": ""
+      }
+    ],
     "promo2": [],
     "faq": [
       {
@@ -59,7 +64,7 @@
       },
       {
         "q": "Are Fashiondays coduri de reducere active?",
-        "a": "Momentan nu, Fashiondays are 0 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
+        "a": "Da, Fashiondays are 1 oferta activa pe AmCupon.ro in august 2026. Verificam zilnic."
       },
       {
         "q": "Are Answear coduri de reducere active?",
@@ -197,8 +202,8 @@
     "verdict_m1": "Alege Libris pentru transport gratuit la comenzi mai mici si reduceri zilnice mai frecvente. Ideal daca comanzi regulat si vrei cel mai mic pret per carte.",
     "verdict_m2": "Alege Carturesti pentru experienta completa cititor-librarie, acces la librarii fizice pentru ridicare si colectii editoriale curate.",
     "stats1": {
-      "promotii_active": 1,
-      "cashback": "pana la 8%",
+      "promotii_active": 0,
+      "cashback": "vezi site",
       "logo": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_libris.ro_1629366879.png",
       "url_afiliat": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/61047?sub_id=libris.ro"
     },
@@ -208,12 +213,7 @@
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11380/medium/11380.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2F"
     },
-    "promo1": [
-      {
-        "nume": "Câștigă 2.000 € pentru o vacanță de cititor Cărțile te trimit în călătorie",
-        "cod_cupon": ""
-      }
-    ],
+    "promo1": [],
     "promo2": [],
     "faq": [
       {
@@ -222,7 +222,7 @@
       },
       {
         "q": "Are Libris coduri de reducere active?",
-        "a": "Da, Libris are 1 oferta activa pe AmCupon.ro in august 2026. Verificam zilnic."
+        "a": "Momentan nu, Libris are 0 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
       },
       {
         "q": "Are Carturesti coduri de reducere active?",
@@ -277,7 +277,7 @@
     "verdict_m2": "Alege Elefant pentru carti, jocuri si produse educationale — selectia este mai curata si preturile la carti sunt adesea mai bune.",
     "stats1": {
       "promotii_active": 3,
-      "cashback": "pana la 20%",
+      "cashback": "vezi site",
       "logo": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_emag.ro_1570027386.png",
       "url_afiliat": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/35?sub_id=emag.ro"
     },
@@ -364,7 +364,7 @@
     "verdict_m2": "Alege Temu pentru accesorii, produse de uz casnic si articole la preturi foarte mici unde calitatea exacta conteaza mai putin. Planifica dinainte — livrarea dureaza.",
     "stats1": {
       "promotii_active": 3,
-      "cashback": "pana la 20%",
+      "cashback": "vezi site",
       "logo": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_emag.ro_1570027386.png",
       "url_afiliat": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/35?sub_id=emag.ro"
     },
@@ -677,8 +677,8 @@
     "verdict_m1": "Alege FashionDays pentru branduri europene de calitate cu livrare rapida si retururi simple. Sales-urile de sezon pot fi chiar mai ieftine decat Shein.",
     "verdict_m2": "Alege Shein daca vrei sa testezi tendinte rapid la preturi minime si esti dispus sa astepti livrarea. Perfecta pentru reinnoire frecventa garderoba.",
     "stats1": {
-      "promotii_active": 0,
-      "cashback": "pana la 5%",
+      "promotii_active": 1,
+      "cashback": "vezi site",
       "logo": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_fashiondays.ro_1713947169.jpg",
       "url_afiliat": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/88736?sub_id=fashiondays.ro"
     },
@@ -688,7 +688,12 @@
       "logo": "https://www.google.com/s2/favicons?domain=shein.com&sz=128",
       "url_afiliat": "https://www.shein.com"
     },
-    "promo1": [],
+    "promo1": [
+      {
+        "nume": "Best of EPIC",
+        "cod_cupon": ""
+      }
+    ],
     "promo2": [
       {
         "nume": "SHEIN - Fashion la preturi mici",
@@ -702,7 +707,7 @@
       },
       {
         "q": "Are Fashiondays coduri de reducere active?",
-        "a": "Momentan nu, Fashiondays are 0 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
+        "a": "Da, Fashiondays are 1 oferta activa pe AmCupon.ro in august 2026. Verificam zilnic."
       },
       {
         "q": "Are Shein coduri de reducere active?",
@@ -756,8 +761,8 @@
     "verdict_m1": "Alege Libris pentru cel mai mare stoc de carti si transport gratuit la comenzi mai mici. Preturile la bestsellers sunt adesea mai bune.",
     "verdict_m2": "Alege Elefant daca vrei si alte produse (electronice, jocuri) intr-o singura comanda alaturi de carti.",
     "stats1": {
-      "promotii_active": 1,
-      "cashback": "pana la 8%",
+      "promotii_active": 0,
+      "cashback": "vezi site",
       "logo": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_libris.ro_1629366879.png",
       "url_afiliat": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/61047?sub_id=libris.ro"
     },
@@ -767,12 +772,7 @@
       "logo": null,
       "url_afiliat": "https://elefant.ro"
     },
-    "promo1": [
-      {
-        "nume": "Câștigă 2.000 € pentru o vacanță de cititor Cărțile te trimit în călătorie",
-        "cod_cupon": ""
-      }
-    ],
+    "promo1": [],
     "promo2": [],
     "faq": [
       {
@@ -781,7 +781,7 @@
       },
       {
         "q": "Are Libris coduri de reducere active?",
-        "a": "Da, Libris are 1 oferta activa pe AmCupon.ro in august 2026. Verificam zilnic."
+        "a": "Momentan nu, Libris are 0 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
       },
       {
         "q": "Are Elefant coduri de reducere active?",
