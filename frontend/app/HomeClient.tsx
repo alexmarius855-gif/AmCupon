@@ -4,6 +4,7 @@ import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Mail, Search, X } from "lucide-react";
+import CategoryIcon, { categoryVisual } from "./components/CategoryIcon";
 
 interface Promotie {
   nume: string;
@@ -357,7 +358,7 @@ export default function HomeClient({
                   {categoriiSortate.slice(0, 8).map(c => (
                     <a key={c.slug} href={`/categorii/${c.slug}`}
                       className="flex items-center gap-3 px-4 py-2 text-sm text-[#cbd5e1] hover:bg-[#14b8a6]/15 hover:text-[#0d9488] transition-colors">
-                      <span className="text-base">{c.emoji}</span>
+                      <CategoryIcon slug={c.slug} size="sm" />
                       <span className="font-medium">{c.label}</span>
                       {promoPerCateg[c.slug] > 0 && (
                         <span className="ml-auto text-[10px] font-bold bg-[#ccfbf1] text-[#0f766e] px-1.5 py-0.5 rounded-full">{promoPerCateg[c.slug]}</span>
@@ -428,7 +429,7 @@ export default function HomeClient({
                   {categoriiSortate.slice(0, 8).map(c => (
                     <a key={c.slug} href={`/categorii/${c.slug}`} onClick={() => setMenuOpen(false)}
                       className="flex flex-col items-center gap-1 p-2 rounded-xl border border-[#334155] bg-[#1e293b] hover:border-[#14b8a6] transition-colors">
-                      <span className="text-xl">{c.emoji}</span>
+                      <CategoryIcon slug={c.slug} size="sm" />
                       <span className="text-[10px] font-semibold text-[#cbd5e1] text-center leading-tight">{c.label}</span>
                     </a>
                   ))}
@@ -552,7 +553,7 @@ export default function HomeClient({
             {CATEGORII.map(c => (
               <a key={c.slug} href={`/categorii/${c.slug}`}
                 className="group shrink-0 flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-sm font-semibold text-[#cbd5e1] hover:text-[#F7F9FC] hover:bg-gradient-to-br hover:from-[#0f766e] hover:to-[#14b8a6] transition-all whitespace-nowrap">
-                <span className="text-base leading-none">{c.emoji}</span>
+                <CategoryIcon slug={c.slug} size="sm" />
                 {c.label}
               </a>
             ))}
@@ -583,27 +584,28 @@ export default function HomeClient({
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
             {categoriiSortate.slice(0, 8).map(c => {
               const nrPromo = promoPerCateg[c.slug] || 0;
+              // Culoarea vine din cele 5 familii cromatice (CategoryIcon.tsx), NU din
+              // vechiul `c.accent` — acela avea 16 nuante independente si producea
+              // exact "curcubeul" pe care CLAUDE.md il declara eliminat pe 30.06.
+              const accent = categoryVisual(c.slug).color;
               return (
                 <a
                   key={c.slug}
                   href={`/categorii/${c.slug}`}
                   className="group relative rounded-xl overflow-hidden bg-[#111827] border border-[#1e293b] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/40"
-                  onMouseEnter={e => (e.currentTarget.style.borderColor = `${c.accent}80`)}
+                  onMouseEnter={e => (e.currentTarget.style.borderColor = `${accent}66`)}
                   onMouseLeave={e => (e.currentTarget.style.borderColor = "")}
                 >
-                  {/* Tenta colorata pe tot cardul — personalitate per categorie */}
-                  <div className="absolute inset-0 pointer-events-none opacity-70 group-hover:opacity-100 transition-opacity duration-300"
-                    style={{ background: `linear-gradient(155deg, ${c.accent}22 0%, transparent 55%)` }} />
-                  {/* Glow colorat in colt */}
-                  <div className="absolute -top-8 -right-8 w-28 h-28 rounded-full pointer-events-none opacity-35 blur-2xl transition-opacity duration-300 group-hover:opacity-60"
-                    style={{ background: c.accent }} />
+                  {/* Tenta discreta — sugereaza familia, nu striga. Fara glow saturat. */}
+                  <div className="absolute inset-0 pointer-events-none opacity-60 group-hover:opacity-100 transition-opacity duration-300"
+                    style={{ background: `linear-gradient(155deg, ${accent}12 0%, transparent 60%)` }} />
 
                   <div className="relative p-5 flex flex-col gap-3 min-h-[140px]">
                     {/* Badge oferte */}
                     {nrPromo > 0 ? (
-                      <div className="inline-flex self-start items-center gap-1 px-2 py-0.5 rounded-full border" style={{ background: `${c.accent}22`, borderColor: `${c.accent}55` }}>
-                        <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: c.accent }} />
-                        <span className="text-[10px] font-bold" style={{ color: c.accent }}>{nrPromo} {nrPromo === 1 ? "oferta" : "oferte"}</span>
+                      <div className="inline-flex self-start items-center gap-1 px-2 py-0.5 rounded-full border" style={{ background: `${accent}1a`, borderColor: `${accent}44` }}>
+                        <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: accent }} />
+                        <span className="text-[10px] font-bold" style={{ color: accent }}>{nrPromo} {nrPromo === 1 ? "oferta" : "oferte"}</span>
                       </div>
                     ) : (
                       <div className="inline-flex self-start bg-[#1e293b] px-2 py-0.5 rounded-full">
@@ -611,12 +613,9 @@ export default function HomeClient({
                       </div>
                     )}
 
-                    {/* Emoji mare pe tile colorat vibrant */}
-                    <div className="relative w-12 h-12 rounded-xl flex items-center justify-center shadow-lg"
-                      style={{ background: `linear-gradient(135deg, ${c.accent}, ${c.accent}bb)`, boxShadow: `0 6px 16px ${c.accent}50` }}>
-                      <span className="text-3xl group-hover:scale-110 transition-transform duration-300 drop-shadow">
-                        {c.emoji}
-                      </span>
+                    {/* Iconita vectoriala (Lucide), nu emoji — vezi CategoryIcon.tsx */}
+                    <div className="group-hover:scale-105 transition-transform duration-300 origin-left">
+                      <CategoryIcon slug={c.slug} size="lg" />
                     </div>
 
                     {/* Nume + descriere */}
@@ -647,14 +646,15 @@ export default function HomeClient({
                   key={c.slug}
                   href={`/categorii/${c.slug}`}
                   className="group relative flex flex-col items-center justify-center gap-1.5 p-3 rounded-xl overflow-hidden bg-[#111827]/60 border border-[#1e293b] transition-all duration-200 hover:-translate-y-0.5"
-                  onMouseEnter={e => (e.currentTarget.style.borderColor = `${c.accent}60`)}
+                  onMouseEnter={e => (e.currentTarget.style.borderColor = `${categoryVisual(c.slug).color}66`)}
                   onMouseLeave={e => (e.currentTarget.style.borderColor = "")}
                 >
-                  <span className="w-9 h-9 rounded-xl flex items-center justify-center text-xl group-hover:scale-110 transition-transform duration-200"
-                    style={{ background: `linear-gradient(135deg, ${c.accent}, ${c.accent}bb)`, boxShadow: `0 4px 10px ${c.accent}44` }}>{c.emoji}</span>
+                  <span className="group-hover:scale-110 transition-transform duration-200">
+                    <CategoryIcon slug={c.slug} size="md" />
+                  </span>
                   <span className="text-[10px] font-bold text-[#cbd5e1] text-center leading-tight">{c.label}</span>
                   {nrPromo > 0 && (
-                    <span className="absolute -top-1 -right-1 text-white text-[9px] font-black rounded-full w-4 h-4 flex items-center justify-center shadow-sm" style={{ background: c.accent }}>
+                    <span className="absolute -top-1 -right-1 text-white text-[9px] font-black rounded-full w-4 h-4 flex items-center justify-center shadow-sm" style={{ background: categoryVisual(c.slug).color }}>
                       {nrPromo > 9 ? "9+" : nrPromo}
                     </span>
                   )}
@@ -822,7 +822,7 @@ export default function HomeClient({
                   onClick={() => setActiveCatTab(cat.slug)}
                   className={`flex-shrink-0 flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-bold transition-all duration-200 ${activeCatTab === cat.slug ? "bg-[#0d9488] text-white shadow-lg shadow-[#14b8a6]/30" : "bg-[#1e293b] text-[#cbd5e1] hover:bg-[#334155] border border-[#334155]/80"}`}
                 >
-                  {cat.emoji} {cat.label}
+                  <CategoryIcon slug={cat.slug} size="sm" /> {cat.label}
                 </button>
               ))}
             </div>
@@ -835,7 +835,7 @@ export default function HomeClient({
                     {/* Header rand */}
                     <div className="flex items-center justify-between mb-4">
                       <div className="flex items-center gap-2.5">
-                        <span className="text-2xl">{cat.emoji}</span>
+                        <CategoryIcon slug={cat.slug} size="md" />
                         <h3 className="text-lg font-black text-[#f1f5f9]">{cat.label}</h3>
                         <span className="text-xs text-[#94a3b8] font-medium">{cat.products.length} produse</span>
                       </div>
