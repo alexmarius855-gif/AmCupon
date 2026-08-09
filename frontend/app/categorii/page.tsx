@@ -22,6 +22,14 @@ export const metadata: Metadata = {
 /* ─── Config categorii ───────────────────────────────────────────────────── */
 // Accent distinct per categorie (recunoastere instanta) — nuante racoroase premium,
 // ZERO portocaliu/galben/amber, fara rosu pur (rezervat pt "expira azi").
+// Sluguri = valorile REALE din output.json (categorie_slug), aceeasi taxonomie RO
+// folosita de CategoryIcon.tsx si de generateStaticParams() din [slug]/page.tsx.
+// Bug gasit 09.08.2026: array-ul folosea sluguri in ENGLEZA (electronics-itc, home-garden
+// etc, mostenite dintr-o taxonomie veche) — generateStaticParams() nu genereaza NICIODATA
+// acele pagini (deriva direct din categorie_slug, care e romanesc), deci toate cele 18
+// linkuri de pe aceasta pagina duceau la 404. NUME_CATEGORIE din [slug]/page.tsx avea
+// aceeasi taxonomie veche (englezeasca) — de-aia bug-ul a trecut neobservat, ambele fisiere
+// erau "consistente" intre ele, doar cu datele reale nu se mai potriveau de mult.
 const CATEGORII = [
   {
     slug: "fashion", label: "Fashion", desc: "Haine & accesorii",
@@ -29,54 +37,24 @@ const CATEGORII = [
     keywords: ["fashion", "clothing", "haine", "shoes", "answear", "aboutyou"],
   },
   {
-    slug: "electronics-itc", label: "Electronice IT&C", desc: "Laptopuri, telefoane, gadgeturi",
-    accent: "#0d9488",
-    keywords: ["electronic", "tech", "it", "laptop", "phone", "ozone", "navstore"],
-  },
-  {
     slug: "beauty", label: "Frumusete", desc: "Cosmetice & parfumuri",
     accent: "#0d9488",
     keywords: ["beauty", "cosmetic", "parfum", "notino", "makeup", "sephora"],
   },
   {
-    slug: "home-garden", label: "Casa & Gradina", desc: "Mobila, decoratiuni, unelte",
-    accent: "#34d399",
-    keywords: ["home", "casa", "garden", "vidaxl", "gradina", "mobila", "dedeman"],
+    slug: "bijuterii", label: "Bijuterii", desc: "Bijuterii & ceasuri",
+    accent: "#c4b5fd",
+    keywords: ["jewel", "bijuterie", "ceas", "argint", "aur"],
   },
   {
-    slug: "sports-outdoors", label: "Sport & Outdoor", desc: "Echipament sportiv & fitness",
+    slug: "electronice", label: "Electronice & IT", desc: "Laptopuri, telefoane, gadgeturi",
     accent: "#0d9488",
-    keywords: ["sport", "fitness", "outdoor", "sportdepot", "decathlon", "running"],
+    keywords: ["electronic", "tech", "it", "laptop", "phone", "ozone", "navstore"],
   },
   {
-    slug: "pharma", label: "Farmacie", desc: "Medicamente & suplimente",
-    accent: "#2dd4bf",
-    keywords: ["pharma", "farmacie", "drmax", "sensiblu", "vegis", "medic"],
-  },
-  {
-    slug: "babies-kids-toys", label: "Copii & Jucarii", desc: "Produse pentru cei mici",
-    accent: "#0d9488",
-    keywords: ["kids", "copii", "toy", "bebe", "noriel", "jucarii"],
-  },
-  {
-    slug: "automotive", label: "Auto-Moto", desc: "Piese & accesorii auto",
-    accent: "#94a3b8",
-    keywords: ["auto", "car", "moto", "automobilus", "piese", "anvelop"],
-  },
-  {
-    slug: "books", label: "Carti & Edu", desc: "Carti, e-books, papetarie",
-    accent: "#0d9488",
-    keywords: ["book", "carte", "libris", "carturesti", "bookzone", "edu"],
-  },
-  {
-    slug: "hypermarket-groceries", label: "Hypermarket", desc: "Alimente & produse zilnice",
-    accent: "#0d9488",
-    keywords: ["hypermarket", "grocery", "aliment", "food", "supermarket"],
-  },
-  {
-    slug: "gifts-flowers", label: "Cadouri & Flori", desc: "Cadouri pentru orice ocazie",
-    accent: "#e879f9",
-    keywords: ["gift", "cadou", "flori", "flower", "cadouri"],
+    slug: "software", label: "Software & Digital", desc: "VPN, hosting, AI, aplicatii",
+    accent: "#7dd3fc",
+    keywords: ["software", "vpn", "hosting", "ai", "app", "digital"],
   },
   {
     slug: "telecom", label: "Telecom", desc: "Abonamente & servicii mobile",
@@ -84,34 +62,64 @@ const CATEGORII = [
     keywords: ["telecom", "mobile", "abonament", "orange", "vodafone", "digi"],
   },
   {
-    slug: "pet-supplies", label: "Animale", desc: "Hrana, jucarii, accesorii",
+    slug: "casa-gradina", label: "Casa & Gradina", desc: "Mobila, decoratiuni, unelte",
+    accent: "#34d399",
+    keywords: ["home", "casa", "garden", "vidaxl", "gradina", "mobila", "dedeman"],
+  },
+  {
+    slug: "animale", label: "Animale", desc: "Hrana, jucarii, accesorii",
     accent: "#fda4af",
     keywords: ["pet", "animal", "caine", "pisica", "zooplus"],
   },
   {
-    slug: "jewelry", label: "Bijuterii", desc: "Bijuterii & ceasuri",
-    accent: "#c4b5fd",
-    keywords: ["jewel", "bijuterie", "ceas", "argint", "aur"],
+    slug: "mancare-bauturi", label: "Mancare & Bauturi", desc: "Alimente & produse zilnice",
+    accent: "#0d9488",
+    keywords: ["hypermarket", "grocery", "aliment", "food", "supermarket", "bautura"],
   },
   {
-    slug: "games", label: "Jocuri & Gaming", desc: "Jocuri video & console",
-    accent: "#0f766e",
-    keywords: ["game", "gaming", "console", "jocuri", "steam", "ps5"],
+    slug: "carti-educatie", label: "Carti & Educatie", desc: "Carti, e-books, papetarie",
+    accent: "#0d9488",
+    keywords: ["book", "carte", "libris", "carturesti", "bookzone", "edu"],
   },
   {
-    slug: "health-personal-care", label: "Sanatate", desc: "Ingrijire personala & wellness",
+    slug: "copii", label: "Copii & Jucarii", desc: "Produse pentru cei mici",
+    accent: "#0d9488",
+    keywords: ["kids", "copii", "toy", "bebe", "noriel", "jucarii"],
+  },
+  {
+    slug: "cadouri-flori", label: "Cadouri & Flori", desc: "Cadouri pentru orice ocazie",
+    accent: "#e879f9",
+    keywords: ["gift", "cadou", "flori", "flower", "cadouri"],
+  },
+  {
+    slug: "calatorii", label: "Calatorii", desc: "Vacante, bilete, cazare",
     accent: "#7dd3fc",
-    keywords: ["health", "sanatate", "wellness", "ingrijire"],
+    keywords: ["travel", "calatorie", "vacanta", "bilet", "esim", "hotel"],
   },
   {
-    slug: "online-mall", label: "Online Mall", desc: "Platforme multi-brand",
+    slug: "sanatate", label: "Sanatate & Farmacie", desc: "Medicamente, suplimente, ingrijire",
+    accent: "#2dd4bf",
+    keywords: ["pharma", "farmacie", "drmax", "sensiblu", "vegis", "medic", "health", "sanatate", "wellness"],
+  },
+  {
+    slug: "financiar", label: "Financiar", desc: "Carduri, banking, asigurari",
     accent: "#94a3b8",
-    keywords: ["mall", "emag", "altex", "flanco", "platform"],
+    keywords: ["financiar", "card", "banking", "asigurare", "credit", "revolut"],
   },
   {
-    slug: "others", label: "Altele", desc: "Diverse categorii",
-    accent: "#0f766e",
-    keywords: [],
+    slug: "sport", label: "Sport & Outdoor", desc: "Echipament sportiv & fitness",
+    accent: "#0d9488",
+    keywords: ["sport", "fitness", "outdoor", "sportdepot", "decathlon", "running"],
+  },
+  {
+    slug: "auto-moto", label: "Auto-Moto", desc: "Piese & accesorii auto",
+    accent: "#94a3b8",
+    keywords: ["auto", "car", "moto", "automobilus", "piese", "anvelop"],
+  },
+  {
+    slug: "marketplace", label: "Online Mall", desc: "Platforme multi-brand",
+    accent: "#94a3b8",
+    keywords: ["mall", "emag", "altex", "flanco", "platform", "marketplace"],
   },
 ];
 

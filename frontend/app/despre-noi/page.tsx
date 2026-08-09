@@ -125,8 +125,9 @@ export default function DespreNoiPage() {
         <section>
           <h2 className="text-2xl font-black text-[#f1f5f9] mb-6">Cum verificăm ofertele?</h2>
           <p className="text-[#cbd5e1] mb-8 leading-relaxed">
-            Validitatea ofertelor este prioritatea noastră. Procesul nostru automat garantează că fiecare
-            cod și promoție afișată este funcțională în momentul vizitei tale.
+            Validitatea ofertelor este prioritatea noastră. Procesul nostru automat verifică zilnic
+            fiecare cod și promoție, dar validitatea finală depinde de magazinul partener — vezi{" "}
+            <Link href="/termeni" className="text-[#0d9488] hover:text-[#0f766e] underline">Termenii și condițiile</Link>.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {PASI.map((p) => (

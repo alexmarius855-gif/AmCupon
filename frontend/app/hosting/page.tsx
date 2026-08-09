@@ -252,7 +252,7 @@ export default function HostingPage() {
 
       <div className="max-w-5xl mx-auto px-4 pb-8">
         <p className="text-[#94a3b8] text-xs text-center">
-          Unele linkuri de pe aceasta pagina sunt linkuri de afiliat. Daca faci o achizitie, AmCupon.ro primeste un comision fara cost suplimentar pentru tine. Recomandam doar servicii pe care le-am testat sau verificat independent.
+          Unele linkuri de pe aceasta pagina sunt linkuri de afiliat. Daca faci o achizitie, AmCupon.ro primeste un comision fara cost suplimentar pentru tine. Am comparat public preturile si specificatiile serviciilor recomandate.
         </p>
       </div>
     </div>

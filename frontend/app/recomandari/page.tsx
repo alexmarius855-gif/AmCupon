@@ -307,7 +307,7 @@ export default function RecomandariPage() {
         <div className="bg-[#111827]/50 border border-[#1e293b] rounded-xl p-5 text-center">
           <p className="text-[#94a3b8] text-xs">
             Unele linkuri de pe aceasta pagina sunt linkuri de afiliat — daca faci o achizitie, AmCupon.ro primeste un comision, fara niciun cost suplimentar pentru tine.
-            Recomandam doar servicii pe care le-am testat sau verificat independent. Comisioanele arata afiseaza nu sunt garantate — variaza in functie de programul fiecarui partener.
+            Am comparat public preturile si specificatiile serviciilor recomandate. Comisioanele afisate nu sunt garantate — variaza in functie de programul fiecarui partener.
           </p>
         </div>
       </section>

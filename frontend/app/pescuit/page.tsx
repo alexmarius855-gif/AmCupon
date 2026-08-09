@@ -176,7 +176,7 @@ export default function PescuitPage() {
           <h2 className="text-base font-black text-[#cbd5e1] mb-4">Exploreaza si alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
-              { href: "/gradina", label: "🌿 Gradina & Plante" },
+              { href: "/casa", label: "🌿 Casa & Gradina" },
               { href: "/decathlon", label: "🏃 Decathlon" },
               { href: "/flori", label: "💐 Flori & Buchete" },
               { href: "/top-reduceri", label: "🏆 Top Reduceri" },
