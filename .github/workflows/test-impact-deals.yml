@@ -1,0 +1,29 @@
+name: Test Impact Deals API (manual, dry-run)
+
+# Doar declansare manuala (buton "Run workflow" in tab-ul Actions) — nu ruleaza
+# niciodata automat, nu atinge pipeline-ul de 4h din update-data.yml. Scopul unic:
+# vedem raw JSON-ul real de la Impact.com (Deals + PromoCodes) folosind secretele
+# deja existente, ca sa confirmam ca fetch_impact_deals.py extrage campurile corecte
+# INAINTE sa scrie vreodata in output.json. --dry-run nu scrie niciun fisier.
+on:
+  workflow_dispatch:
+
+jobs:
+  test-dry-run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instaleaza dependinte
+        run: pip install -r scripts/requirements.txt
+
+      - name: Ruleaza fetch_impact_deals.py --dry-run
+        working-directory: scripts
+        env:
+          IMPACT_ACCOUNT_SID: ${{ secrets.IMPACT_ACCOUNT_SID }}
+          IMPACT_AUTH_TOKEN:  ${{ secrets.IMPACT_AUTH_TOKEN }}
+        run: python fetch_impact_deals.py --dry-run
