@@ -443,21 +443,31 @@ def main():
     campaign_index = impact_api.build_campaign_index(campaigns)
 
     print("\nFetch oferte (Deals) + coduri promo (PromoCodes)...")
+    # Cele 2 endpoint-uri sunt independente — un 403/404 pe unul (ex. Deals nu e
+    # inclus in tier-ul contului) nu are voie sa opreasca testarea celuilalt.
+    deals, deals_payload = [], None
     try:
         deals, deals_payload = fetch_paginat(
             f"/Mediapartners/{ACCOUNT_SID}/Deals", DEALS_LIST_KEYS, "deal-uri")
+    except (requests.RequestException, ValueError) as e:
+        resp = getattr(e, "response", None)
+        if resp is not None:
+            print(f"EROARE HTTP la /Deals: {e}")
+            print(f"  Raspuns: {resp.text[:300]}")
+        else:
+            print(f"EROARE retea / raspuns neparsabil la /Deals: {e}")
+
+    promocodes, codes_payload = [], None
+    try:
         promocodes, codes_payload = fetch_paginat(
             f"/Mediapartners/{ACCOUNT_SID}/PromoCodes", CODES_LIST_KEYS, "coduri promo")
     except (requests.RequestException, ValueError) as e:
         resp = getattr(e, "response", None)
         if resp is not None:
-            print(f"EROARE HTTP: {e}")
+            print(f"EROARE HTTP la /PromoCodes: {e}")
             print(f"  Raspuns: {resp.text[:300]}")
         else:
-            print(f"EROARE retea / raspuns neparsabil: {e}")
-            print("  (timeout, conexiune intrerupta sau body care nu e JSON valid)")
-        print("  Nu s-a scris nimic.")
-        return
+            print(f"EROARE retea / raspuns neparsabil la /PromoCodes: {e}")
 
     # RAW INAINTE DE PARSARE — daca structura difera, se vede aici, nu dupa ce s-a scris gresit.
     _print_raw("Deal", deals, deals_payload)
