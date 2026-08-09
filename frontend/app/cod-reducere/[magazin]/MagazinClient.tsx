@@ -1,10 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Ticket, Tag, ShoppingBag, Star, Timer, ClipboardCopy, ShoppingCart, CheckCircle2, Puzzle, Mail, Flame } from "lucide-react";
+import { Ticket, Tag, ShoppingBag, Star, Timer, ClipboardCopy, ShoppingCart, CheckCircle2, Puzzle, Mail, Flame, Truck } from "lucide-react";
 import PriceAlert from "../../components/PriceAlert";
 import ReviewSection from "./ReviewSection";
 import ShareButton from "../../components/ShareButton";
@@ -148,6 +149,13 @@ function extractDiscount(text: string): string | null {
   return m ? m[1] + "%" : null;
 }
 
+// Detectat din textul REAL al promotiei — nu presupunem transport gratuit fara
+// mentiune explicita in date (acelasi principiu ca MagazinCard.tsx).
+function areTransportGratuit(promo: Promotie): boolean {
+  const text = `${promo.nume} ${promo.descriere || ""}`.toLowerCase();
+  return /transport gratuit|livrare gratuit[aă]|free shipping/.test(text);
+}
+
 // ── Produs card ───────────────────────────────────────────────────────────────
 function ProdusCard({ produs: p }: { produs: Produs }) {
   const [imgOk, setImgOk] = useState(true);
@@ -157,9 +165,9 @@ function ProdusCard({ produs: p }: { produs: Produs }) {
       className="group bg-[#111827] border border-[#1e293b] hover:border-[#14b8a6] rounded-xl overflow-hidden transition-all hover:shadow-xl hover:shadow-black/40 hover:-translate-y-0.5 duration-200 flex flex-col">
       <div className="relative bg-[#1e293b] overflow-hidden" style={{aspectRatio:"1"}}>
         {p.image && imgOk ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img src={p.image} alt={p.title} className="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300"
-            onError={() => setImgOk(false)} loading="lazy" />
+          <Image src={p.image} alt={p.title} fill sizes="(max-width: 640px) 50vw, 176px"
+            className="object-contain p-2 group-hover:scale-105 transition-transform duration-300"
+            onError={() => setImgOk(false)} unoptimized />
         ) : (
           <div className="w-full h-full flex items-center justify-center"><ShoppingBag className="w-10 h-10 text-[#475569]" /></div>
         )}
@@ -311,11 +319,10 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 pb-6">
 
             {/* Logo */}
-            <div className="w-20 h-20 rounded-xl overflow-hidden flex items-center justify-center bg-[#ffffff] border border-[#334155] p-1.5 shrink-0 shadow-xl shadow-black/40">
+            <div className="relative w-20 h-20 rounded-xl overflow-hidden flex items-center justify-center bg-[#ffffff] border border-[#334155] p-1.5 shrink-0 shadow-xl shadow-black/40">
               {m.logo_url && imgOk ? (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img src={m.logo_url} alt={`Logo ${nume}`} className="w-full h-full object-contain"
-                  onError={() => setImgOk(false)} />
+                <Image src={m.logo_url} alt={`Logo ${nume}`} fill sizes="80px" className="object-contain p-1.5"
+                  onError={() => setImgOk(false)} unoptimized />
               ) : (
                 <div className={`w-full h-full rounded-xl ${culoare} flex items-center justify-center`}>
                   <span className="text-white font-black text-3xl">{initiala}</span>
@@ -456,6 +463,11 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                                 <span className="text-sm font-black text-[#0d9488] bg-[#111827]/50 px-2 py-0.5 rounded-lg">-{discount}</span>
                               )}
                               <span className="text-xs font-bold text-[#0d9488] bg-[#14b8a6]/10 px-2 py-0.5 rounded-full uppercase tracking-wide">Cod Reducere</span>
+                              {areTransportGratuit(promo) && (
+                                <span className="flex items-center gap-1 text-xs font-bold text-[#5eead4] bg-[#14b8a6]/10 border border-[#14b8a6]/30 px-2 py-0.5 rounded-full">
+                                  <Truck className="w-3 h-3" /> Transport gratuit
+                                </span>
+                              )}
                               {promo.zile_ramase <= 1 && promo.zile_ramase >= 0 && <CountdownTimer zileRamase={promo.zile_ramase}/>}
                               {promo.zile_ramase > 1 && promo.zile_ramase <= 3 && (
                                 <span className="text-xs font-bold text-[#0d9488] bg-[#111827]/50 px-2 py-0.5 rounded-full">Expira in {promo.zile_ramase} zile</span>
@@ -573,6 +585,11 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                                 <span className="text-sm font-black text-[#0d9488] bg-[#111827]/50 px-2 py-0.5 rounded-lg">-{discount}</span>
                               )}
                               <span className="text-xs font-bold text-[#0f766e] bg-[#14b8a6]/10 px-2 py-0.5 rounded-full uppercase tracking-wide">Oferta</span>
+                              {areTransportGratuit(promo) && (
+                                <span className="flex items-center gap-1 text-xs font-bold text-[#5eead4] bg-[#14b8a6]/10 border border-[#14b8a6]/30 px-2 py-0.5 rounded-full">
+                                  <Truck className="w-3 h-3" /> Transport gratuit
+                                </span>
+                              )}
                               {promo.zile_ramase <= 1 && promo.zile_ramase >= 0 && <CountdownTimer zileRamase={promo.zile_ramase}/>}
                               {promo.zile_ramase > 1 && promo.zile_ramase <= 3 && (
                                 <span className="text-xs font-bold text-[#0d9488] bg-[#111827]/50 px-2 py-0.5 rounded-full">Expira in {promo.zile_ramase} zile</span>
@@ -692,10 +709,9 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
             <h2 className="text-lg font-black text-[#f1f5f9] mb-4">Ghid complet {nume}</h2>
             <a href={`/blog/${blogPost.slug}`}
               className="group flex gap-4 bg-[#111827] border border-[#1e293b] hover:border-[#14b8a6] rounded-xl p-4 hover:shadow-lg hover:shadow-black/40 transition-all">
-              <div className="w-20 h-20 shrink-0 rounded-xl overflow-hidden bg-[#1e293b]">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={blogPost.cover} alt={blogPost.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+              <div className="relative w-20 h-20 shrink-0 rounded-xl overflow-hidden bg-[#1e293b]">
+                <Image src={blogPost.cover} alt={blogPost.title} fill sizes="80px"
+                  className="object-cover group-hover:scale-105 transition-transform duration-300" unoptimized />
               </div>
               <div className="flex-1 min-w-0">
                 <span className="text-xs font-bold text-[#0d9488] uppercase tracking-wide">Articol blog</span>
@@ -728,10 +744,9 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                 return (
                   <a key={s.magazin} href={`/cod-reducere/${s.magazin}`}
                     className="group flex flex-col items-center gap-1.5 p-2.5 bg-[#111827] rounded-xl border border-[#1e293b] hover:border-[#14b8a6] hover:shadow-sm transition-all text-center">
-                    <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center bg-[#111827] border border-[#1e293b]">
+                    <div className="relative w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center bg-[#111827] border border-[#1e293b]">
                       {s.logo_url ? (
-                        // eslint-disable-next-line @next/next/no-img-element
-                        <img src={s.logo_url} alt={numeSim} className="w-full h-full object-contain p-0.5" loading="lazy"/>
+                        <Image src={s.logo_url} alt={numeSim} fill sizes="40px" className="object-contain p-0.5" unoptimized />
                       ) : (
                         <span className="text-base font-black text-[#94a3b8]">{numeSim.charAt(0)}</span>
                       )}

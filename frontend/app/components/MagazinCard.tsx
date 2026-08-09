@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
-import { Clock, Flame } from "lucide-react";
+import { Clock, Flame, Truck, Heart } from "lucide-react";
 import { useCopyCod } from "../hooks/useCopyCod";
 import RedirectModal from "./RedirectModal";
 import { calculateDealScore, DEAL_SCORE_VISIBLE_THRESHOLD } from "../../lib/dealScore";
@@ -52,6 +53,14 @@ function extractDiscount(text?: string): string | null {
   return m ? m[1] + "%" : null;
 }
 
+// Detectat din textul REAL al promotiei (nume/descriere) — nu presupunem niciodata
+// transport gratuit fara mentiune explicita in date.
+function areTransportGratuit(promo?: CardPromotie): boolean {
+  if (!promo) return false;
+  const text = `${promo.nume} ${promo.descriere || ""}`.toLowerCase();
+  return /transport gratuit|livrare gratuit[aă]|free shipping/.test(text);
+}
+
 function maskCod(cod: string): string {
   if (!cod || cod.length <= 4) return cod;
   return cod.slice(0, 4) + "*".repeat(Math.max(0, Math.min(cod.length - 4, 6)));
@@ -66,12 +75,20 @@ function maskCod(cod: string): string {
  *
  * `astazi` (opțional, "YYYY-MM-DD"): activeaza bonusul de prospetime in Deal Score.
  * Fara el, scorul se calculeaza normal, doar fara acel bonus (nu presupunem "azi").
+ *
+ * `isFavorit`/`onToggleFavorit` (opționale): activeaza inima de favorite in colt (folosit
+ * pe homepage). Fara ele, inima nu se randeaza — restul consumatorilor (toate-magazinele,
+ * categorii etc) raman neschimbati.
  */
-export default function MagazinCard({ m, numeOverride, astazi }: { m: CardMagazin; numeOverride?: string; astazi?: string }) {
+export default function MagazinCard({ m, numeOverride, astazi, isFavorit, onToggleFavorit }: {
+  m: CardMagazin; numeOverride?: string; astazi?: string;
+  isFavorit?: boolean; onToggleFavorit?: (slug: string, e: React.MouseEvent) => void;
+}) {
   const promo = m.promotii?.[0];
   const numeMagazin = numeOverride || numeAfisat(m.magazin);
   const initiala = numeMagazin.charAt(0).toUpperCase();
   const discount = promo ? (extractDiscount(promo.nume) || extractDiscount(promo.descriere)) : null;
+  const transportGratuit = areTransportGratuit(promo);
   const [revealed, setRevealed] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
   const { copiedKey, redirectFailed, copyAndOpen, retryRedirect } = useCopyCod();
@@ -104,10 +121,9 @@ export default function MagazinCard({ m, numeOverride, astazi }: { m: CardMagazi
       )}
 
       <a href={`/cod-reducere/${m.magazin}`} className="flex items-start gap-3 pt-4 px-4 pb-3 relative">
-        <div className="w-14 h-14 rounded-xl overflow-hidden flex items-center justify-center shrink-0 bg-[#ffffff] p-1.5 ring-1 ring-[#334155]/60 group-hover:ring-[#14b8a6]/60 transition-all">
+        <div className="relative w-14 h-14 rounded-xl overflow-hidden flex items-center justify-center shrink-0 bg-[#ffffff] p-1.5 ring-1 ring-[#334155]/60 group-hover:ring-[#14b8a6]/60 transition-all">
           {logoSrc ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img src={logoSrc} alt={numeMagazin} className="w-full h-full object-contain" loading="lazy" decoding="async" onError={() => setLogoIdx((i) => i + 1)} />
+            <Image src={logoSrc} alt={numeMagazin} fill sizes="56px" className="object-contain p-1.5" onError={() => setLogoIdx((i) => i + 1)} unoptimized />
           ) : (
             <div className="w-full h-full rounded-lg bg-gradient-to-br from-[#14b8a6] to-[#0f766e] flex items-center justify-center">
               <span className="text-white font-black text-2xl">{initiala}</span>
@@ -116,13 +132,27 @@ export default function MagazinCard({ m, numeOverride, astazi }: { m: CardMagazi
         </div>
 
         <div className="min-w-0 flex-1 pt-0.5">
-          <h3 className="font-black text-[#f1f5f9] text-base leading-tight group-hover:text-[#5eead4] transition-colors truncate">{numeMagazin}</h3>
+          <div className="flex items-center justify-between gap-2">
+            <h3 className="font-black text-[#f1f5f9] text-base leading-tight group-hover:text-[#5eead4] transition-colors truncate">{numeMagazin}</h3>
+            {onToggleFavorit && (
+              <button onClick={e => { e.preventDefault(); e.stopPropagation(); onToggleFavorit(m.magazin, e); }}
+                className="shrink-0 p-1 rounded-full hover:bg-[#1e293b] transition-colors"
+                title={isFavorit ? "Elimina din favorite" : "Adauga la favorite"} aria-label="Favorite">
+                <Heart className={`w-4 h-4 transition-colors ${isFavorit ? "fill-red-500 stroke-red-500" : "fill-none stroke-[#475569] hover:stroke-red-400"}`} strokeWidth={2} />
+              </button>
+            )}
+          </div>
           <div className="flex items-center gap-1.5 mt-1.5 flex-wrap">
             {m.categorie && (
               <span className="text-[10px] font-semibold text-[#94a3b8] bg-[#1e293b]/80 px-2 py-0.5 rounded-full truncate max-w-[9rem]">{m.categorie}</span>
             )}
             {m.exclusiv && (
               <span className="text-[10px] font-bold bg-[#0d9488] text-white px-2 py-0.5 rounded-full shrink-0">Exclusiv</span>
+            )}
+            {transportGratuit && (
+              <span className="flex items-center gap-1 text-[10px] font-bold text-[#5eead4] bg-[#14b8a6]/10 border border-[#14b8a6]/30 px-2 py-0.5 rounded-full shrink-0">
+                <Truck className="w-3 h-3" /> Transport gratuit
+              </span>
             )}
             {showDealScore && (
               <span title="Scor calculat de AmCupon din reducere, cod, prospețime și exclusivitate"

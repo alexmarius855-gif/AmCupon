@@ -3,8 +3,9 @@
 import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Mail, Search, X } from "lucide-react";
+import { Mail } from "lucide-react";
 import CategoryIcon, { categoryVisual } from "./components/CategoryIcon";
+import MagazinCard from "./components/MagazinCard";
 
 interface Promotie {
   nume: string;
@@ -36,6 +37,7 @@ interface Magazin {
   folosit_de: number;
   procent_succes: number;
   exclusiv: boolean;
+  ultima_verificare?: string;
 }
 
 // Paleta curatata: fiecare categorie are un accent distinct (recunoastere instanta),
@@ -124,31 +126,9 @@ const FAQ_ITEMS: { q: string; a: string }[] = [
   },
 ];
 
-function maskCod(cod: string): string {
-  if (!cod || cod.length <= 4) return cod;
-  return cod.slice(0, 4) + "*".repeat(Math.min(cod.length - 4, 6));
-}
-
 function extractDiscount(text: string): string | null {
   const m = text?.match(/(\d+)\s*%/);
   return m ? m[1] + "%" : null;
-}
-
-function maxDiscount(promotii: Promotie[]): string | null {
-  let maxPct = 0;
-  for (const p of promotii) {
-    const texts = [p.nume || "", p.descriere || ""];
-    for (const t of texts) {
-      const m = t.match(/(\d+)\s*%/g);
-      if (m) {
-        for (const match of m) {
-          const val = parseInt(match);
-          if (val > maxPct && val <= 90) maxPct = val;
-        }
-      }
-    }
-  }
-  return maxPct > 0 ? `Pana la ${maxPct}% reducere` : null;
 }
 
 function numeAfisat(magazin: string): string {
@@ -189,6 +169,7 @@ interface HomeClientProps {
   blogPosts: BlogPost[];
   recomandate: { magazin: string; nume: string; logo_url: string; categorie: string; comision: number; are_cod: boolean; oferta: string }[];
   produseCategorii: ProdusCategorie[];
+  astazi: string;
 }
 
 export default function HomeClient({
@@ -196,6 +177,7 @@ export default function HomeClient({
   blogPosts: initBlog,
   recomandate: initRec,
   produseCategorii: initProd,
+  astazi,
 }: HomeClientProps) {
   const [magazine]                        = useState<Magazin[]>(initMag);
   const [blogPosts]                       = useState<BlogPost[]>(initBlog);
@@ -490,23 +472,10 @@ export default function HomeClient({
             {magazine.length > 0 ? `Peste ${magazine.length}` : "Peste 1000"} magazine partenere, verificate zilnic. 100% gratuit.
           </p>
 
-          {/* Search hero */}
-          <div className="max-w-xl mx-auto relative mb-10 group">
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#64748b] group-focus-within:text-[#14b8a6] transition-colors pointer-events-none" />
-            <input type="text" placeholder="Cauta: eMAG, Answear, Noriel..." value={cautare}
-              onChange={e => {
-                setCautare(e.target.value);
-                setTimeout(() => rezultateRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }), 150);
-              }}
-              onKeyDown={e => { if (e.key === "Enter") rezultateRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }); }}
-              className="w-full glass elevate text-[#f1f5f9] rounded-xl pl-12 pr-10 py-4 text-sm focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/60 placeholder-[#64748b] transition-all" />
-            {cautare && (
-              <button onClick={() => setCautare("")} aria-label="Sterge cautarea"
-                className="absolute right-4 top-1/2 -translate-y-1/2 text-[#64748b] hover:text-[#f1f5f9] transition-colors">
-                <X className="w-4 h-4" />
-              </button>
-            )}
-          </div>
+          {/* Cautare eliminata din hero (08.08.2026): scrollIntoView pe fiecare litera
+              tastata facea pagina sa sara continuu cat timp scriai — se simtea ca un bug,
+              nu era. Cautarea reala ramane in bara de sus (header) si in meniul mobil,
+              legate de aceeasi stare `cautare`, fara acest defect. */}
 
           {/* Quick chips — magazine populare, un click distanta */}
           <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
@@ -1157,7 +1126,7 @@ export default function HomeClient({
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
               {(cautare || filtruActiv !== "toate" ? cuPromotii : cuPromotii.slice(0, 12)).map(m => (
-                <Card key={m.magazin} m={m} revealed={coduriReveal.has(m.magazin)} copiat={copiat === m.magazin} onCopiere={copiazaCod} isFavorit={favorite.has(m.magazin)} onToggleFavorit={toggleFavorit}/>
+                <MagazinCard key={m.magazin} m={m} astazi={astazi} isFavorit={favorite.has(m.magazin)} onToggleFavorit={toggleFavorit}/>
               ))}
             </div>
           </section>
@@ -1530,235 +1499,6 @@ function trackAfiliat(tip: string, magazin: string, cod?: string) {
       });
     }
   } catch {}
-}
-
-/* ─── CASHBACK HELPER ────────────────────────────────────────────────────── */
-/* ─── COUNTDOWN TIMER ─────────────────────────────────────────────────────── */
-function CardCountdown({ zileRamase }: { zileRamase: number }) {
-  const [timeLeft, setTimeLeft] = useState("");
-  useEffect(() => {
-    // Doar zileRamase===0 ("Azi") are sens ca numaratoare vie pe secunde — diferenta
-    // fata de miezul noptii e mereu <24h, deci HH:MM:SS se citeste corect. Pentru
-    // zileRamase===1 ("Mâine") diferenta e >24h in cea mai mare parte a zilei (ex.
-    // 31:42:46 la ora 16:17) — un format HH:MM:SS cu ore >23 pare stricat, nu urgent.
-    if (zileRamase !== 0) return;
-    function calc() {
-      const now = new Date();
-      const target = new Date();
-      target.setHours(23, 59, 59, 0);
-      const diff = target.getTime() - now.getTime();
-      if (diff <= 0) { setTimeLeft("Expirat"); return; }
-      const h = Math.floor(diff / 3600000);
-      const m = Math.floor((diff % 3600000) / 60000);
-      const s = Math.floor((diff % 60000) / 1000);
-      setTimeLeft(`${String(h).padStart(2,"0")}:${String(m).padStart(2,"0")}:${String(s).padStart(2,"0")}`);
-    }
-    calc();
-    const interval = setInterval(calc, 1000);
-    return () => clearInterval(interval);
-  }, [zileRamase]);
-  return (
-    <span className="inline-flex items-center gap-1 text-[10px] font-black text-red-400 bg-red-500/15 border border-red-500/30 px-1.5 py-0.5 rounded-full animate-pulse">
-      ⏱ {zileRamase === 0 ? `Azi ${timeLeft}` : "Expira mâine"}
-    </span>
-  );
-}
-
-/* ─── CARD COMPONENT ──────────────────────────────────────────────────────── */
-function Card({ m, revealed, copiat, onCopiere, isFavorit, onToggleFavorit }: {
-  m: Magazin;
-  revealed: boolean;
-  copiat: boolean;
-  onCopiere: (id: string, cod: string, link?: string) => void;
-  isFavorit: boolean;
-  onToggleFavorit: (slug: string, e: React.MouseEvent) => void;
-}) {
-  const promo          = m.promotii[0];
-  const logoSrc        = m.logo_url || "";
-  const badgeReducere  = m.promotii.length > 0 ? maxDiscount(m.promotii) : null;
-  const numeMagazin    = numeAfisat(m.magazin);
-  const initiala       = numeMagazin.charAt(0).toUpperCase();
-  const link           = promo?.landing_page || m.url_afiliat || m.url;
-  const trustScore     = m.are_promotie ? 100 : 45;
-
-  const [imgOk, setImgOk] = useState(true);
-  const [rating, setRating] = useState<"ok"|"nok"|null>(() => {
-    try { return localStorage.getItem(`rating_${m.magazin}`) as "ok"|"nok"|null; } catch { return null; }
-  });
-
-  function voteaza(v: "ok"|"nok", e: React.MouseEvent) {
-    e.preventDefault(); e.stopPropagation();
-    setRating(v);
-    try { localStorage.setItem(`rating_${m.magazin}`, v); } catch {}
-  }
-
-  const logoBg = "bg-gradient-to-br from-[#14b8a6] to-[#0f766e]";
-
-  const expiraAzi   = promo && promo.zile_ramase === 0;
-  const expiraMaine = promo && promo.zile_ramase === 1;
-  const expiraCurand= promo && promo.zile_ramase <= 3 && promo.zile_ramase > 0;
-  const isHot       = m.trend > 2 || (m.sales_number || 0) > 100;
-
-  return (
-    <div className={`bg-[#111827] rounded-xl border shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 flex flex-col overflow-hidden group ${expiraAzi ? "border-red-500/50 ring-1 ring-red-500/30" : "border-[#334155]"}`}>
-
-      {/* Trust Score bar — rosu pentru expira azi, cyan maine, verde normal */}
-      <div className="h-1 bg-[#1e293b] overflow-hidden">
-        <div className={`h-full transition-all duration-700 rounded-r-full ${expiraAzi ? "bg-gradient-to-r from-red-500 to-red-600 animate-pulse" : expiraMaine ? "bg-gradient-to-r from-[#0d9488] to-[#14b8a6]" : "bg-gradient-to-r from-emerald-400 to-emerald-500"}`} style={{width:`${trustScore}%`}}/>
-      </div>
-
-      {/* Header: logo + info + buttons */}
-      <a href={`/cod-reducere/${m.magazin}`} className="flex items-start gap-3 p-4">
-        {/* Logo */}
-        <div className="w-12 h-12 rounded-xl border border-[#334155] bg-[#111827] flex items-center justify-center shrink-0 overflow-hidden group-hover:border-[#0f766e] transition-colors">
-          {logoSrc && imgOk ? (
-            <img src={logoSrc} alt={numeMagazin} className="w-10 h-10 object-contain" loading="lazy" decoding="async" onError={() => setImgOk(false)}/>
-          ) : (
-            <div className={`w-full h-full ${logoBg} flex items-center justify-center`}>
-              <span className="text-white font-black text-xl">{initiala}</span>
-            </div>
-          )}
-        </div>
-
-        {/* Info */}
-        <div className="flex-1 min-w-0">
-          <div className="flex items-start justify-between gap-1">
-            <div className="min-w-0">
-              <h3 className="font-black text-[#f1f5f9] text-sm leading-tight group-hover:text-[#0f766e] transition-colors truncate">
-                {numeMagazin}
-              </h3>
-              <p className="text-[11px] text-[#cbd5e1] mt-0.5 truncate">{m.categorie}</p>
-            </div>
-            <div className="flex items-center gap-1 shrink-0 -mt-0.5">
-              {isHot && !m.exclusiv && (
-                <span className="text-[9px] font-black bg-red-500/15 border border-red-500/25 text-red-400 px-1.5 py-0.5 rounded-full tracking-wide">🔥 HOT</span>
-              )}
-              {m.exclusiv && (
-                <span className="text-[9px] font-black bg-[#14b8a6]/15 border border-[#14b8a6]/25 text-[#0f766e] px-1.5 py-0.5 rounded-full tracking-wide">EXCLUSIV</span>
-              )}
-              <button onClick={e => onToggleFavorit(m.magazin, e)}
-                className="p-1.5 rounded-full hover:bg-[#1e293b] transition-colors z-10"
-                title={isFavorit ? "Elimina din favorite" : "Adauga la favorite"}>
-                <svg className={`w-3.5 h-3.5 transition-colors ${isFavorit ? "fill-red-500 stroke-red-500" : "fill-none stroke-[#334155] hover:stroke-red-400"}`} viewBox="0 0 24 24" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          {/* Badges */}
-          <div className="flex flex-wrap gap-1 mt-2">
-            {badgeReducere && (
-              <span className="text-[10px] font-bold text-emerald-400 bg-emerald-500/15 border border-emerald-500/25 px-1.5 py-0.5 rounded-full">
-                {badgeReducere}
-              </span>
-            )}
-            {!badgeReducere && m.are_promotie && (
-              <span className="text-[10px] font-bold text-[#0d9488] bg-[#14b8a6]/15 border border-[#14b8a6]/25 px-1.5 py-0.5 rounded-full">
-                Oferta activa
-              </span>
-            )}
-            {m.cod_cupon && (
-              <span className="text-[10px] font-semibold text-[#0d9488] bg-[#14b8a6]/15 border border-[#14b8a6]/25 px-1.5 py-0.5 rounded-full">
-                Cod cupon
-              </span>
-            )}
-            {m.trend > 0 && (
-              <span className="text-[10px] font-semibold text-[#0f766e] bg-[#14b8a6]/10 px-1.5 py-0.5 rounded-full">
-                Trending
-              </span>
-            )}
-          </div>
-        </div>
-      </a>
-
-      {/* Promo description */}
-      <div className="px-4 pb-3 flex-1">
-        {promo ? (
-          <p className="text-xs text-[#94a3b8] line-clamp-2 leading-relaxed">{promo.nume}</p>
-        ) : (
-          <p className="text-xs text-[#cbd5e1] italic">Fara promotii active momentan</p>
-        )}
-      </div>
-
-      {/* Trust indicators */}
-      <div className="px-4 pb-3 flex items-center gap-3 flex-wrap">
-        {m.are_promotie && (
-          <div className="flex items-center gap-1 text-emerald-600 text-[10px] font-semibold">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse inline-block"/>
-            Verificat azi
-          </div>
-        )}
-        {expiraAzi && <CardCountdown zileRamase={0} />}
-        {expiraMaine && <CardCountdown zileRamase={1} />}
-        {expiraCurand && !expiraAzi && !expiraMaine && (
-          <span className="text-[10px] font-bold text-[#0f766e] bg-[#14b8a6]/15 border border-[#14b8a6]/25 px-1.5 py-0.5 rounded-full">
-            ⏳ {promo!.zile_ramase}z ramase
-          </span>
-        )}
-      </div>
-
-      {/* CTA */}
-      <div className="px-4 pb-4">
-        {promo?.cod_cupon ? (
-          revealed ? (
-            <div className="space-y-2">
-              <div className="border-2 border-dashed border-[#0d9488] rounded-xl py-2.5 text-center bg-[#14b8a6]/10">
-                <span className="font-mono font-black text-[#0d9488] tracking-widest text-sm">{promo.cod_cupon}</span>
-              </div>
-              <a href={link} target="_blank" rel="noopener noreferrer"
-                className="flex items-center justify-center w-full bg-[#0d9488] hover:bg-[#14b8a6] text-white font-bold py-2.5 rounded-xl text-sm transition-colors">
-                {copiat ? "Copiat! Mergi la magazin" : "Mergi la magazin →"}
-              </a>
-            </div>
-          ) : (
-            <div className="space-y-2">
-              <div className="border-2 border-dashed border-[#334155] rounded-xl py-2.5 text-center bg-[#1e293b]">
-                <span className="font-mono text-[#cbd5e1] text-sm">{maskCod(promo.cod_cupon)}</span>
-              </div>
-              <button onClick={() => onCopiere(m.magazin, promo.cod_cupon, link)}
-                className="w-full bg-[#0d9488] hover:bg-[#14b8a6] text-white font-bold py-2.5 rounded-xl text-sm transition-colors">
-                Copiaza codul + mergi la magazin
-              </button>
-            </div>
-          )
-        ) : promo ? (
-          <a href={link} target="_blank" rel="noopener noreferrer"
-            className="flex items-center justify-center w-full bg-[#0d9488] hover:bg-[#14b8a6] text-white font-bold py-2.5 rounded-xl text-sm transition-colors">
-            Vezi oferta →
-          </a>
-        ) : (
-          <a href={m.url_afiliat || m.url} target="_blank" rel="noopener noreferrer"
-            className="flex items-center justify-center w-full font-medium py-2.5 rounded-xl text-sm transition-colors border border-[#334155] hover:border-[#0d9488] text-[#cbd5e1] hover:text-[#0d9488]">
-            Viziteaza magazinul
-          </a>
-        )}
-      </div>
-
-      {/* Voting */}
-      {promo && (
-        <div className="px-4 pb-4 border-t border-[#1e293b] pt-3">
-          {rating ? (
-            <p className="text-[11px] text-center font-semibold text-emerald-400">
-              {rating === "ok" ? "Multumim pentru feedback!" : "Am notat, verificam!"}
-            </p>
-          ) : (
-            <div className="flex items-center justify-center gap-2">
-              <span className="text-[11px] text-[#cbd5e1]">{promo.cod_cupon ? "A functionat codul?" : "A functionat oferta?"}</span>
-              <button onClick={e => voteaza("ok", e)}
-                className="text-[11px] px-2.5 py-1 rounded-full bg-emerald-500/15 text-emerald-400 hover:bg-emerald-500/25 font-semibold transition-colors border border-emerald-500/30">
-                Da
-              </button>
-              <button onClick={e => voteaza("nok", e)}
-                className="text-[11px] px-2.5 py-1 rounded-full bg-[#1e293b] text-[#cbd5e1] hover:bg-red-500/15 hover:text-red-400 font-semibold transition-colors border border-[#334155] hover:border-red-500/30">
-                Nu
-              </button>
-            </div>
-          )}
-        </div>
-      )}
-    </div>
-  );
 }
 
 /* ─── SKELETON ────────────────────────────────────────────────────────────── */

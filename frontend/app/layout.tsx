@@ -53,6 +53,7 @@ export const metadata: Metadata = {
     other: {
       "p:domain_verify": "ba572e9f4b288f061ae35149c1a13d30",
       "profitshareid": "55a94904302585d3a4d01658d993fd4d",
+      "impact-site-verification": "3bab7acb-09ce-40a1-ae99-858dec676641",
     },
   },
   openGraph: {
@@ -133,6 +134,8 @@ export default function RootLayout({
       <head>
         {/* Profitshare site verification */}
         <meta name="profitshareid" content="55a94904302585d3a4d01658d993fd4d" />
+        {/* Impact.com website channel verification */}
+        <meta name="impact-site-verification" content="3bab7acb-09ce-40a1-ae99-858dec676641" />
         {/* Tema light unica — curata clasa dark ramasa in localStorage de la tema veche */}
         <script dangerouslySetInnerHTML={{ __html: `(function(){try{document.documentElement.classList.remove('dark');localStorage.removeItem('theme')}catch(e){}})();` }} />
         <script

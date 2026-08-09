@@ -57,12 +57,17 @@ export default function Page() {
   const recomandate = readJSON<Parameters<typeof HomeClient>[0]["recomandate"]>("recomandate.json", []);
   const produseCategorii = buildProduseCategorii();
 
+  // Server Component, randat o singura data per request/ISR — Date.now() aici e sigur
+  // (nu declanseaza hidratare), acelasi pattern ca cod-reducere/[magazin]/page.tsx.
+  const astazi = new Date().toISOString().slice(0, 10);
+
   return (
     <HomeClient
       magazine={magazine}
       blogPosts={(blogAll || []).slice(0, 3)}
       recomandate={recomandate || []}
       produseCategorii={produseCategorii}
+      astazi={astazi}
     />
   );
 }
