@@ -15,7 +15,7 @@ const LINK_HIDEMYNAME  = "https://www.awin1.com/cread.php?awinmid=5887918&awinaf
 // ──────────────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: "Cel mai bun VPN Romania 2026 — Comparatie NordVPN vs Surfshark | AmCupon.ro",
+  title: "VPN Romania 2026 — NordVPN vs Surfshark | AmCupon.ro",
   description: "Comparam cele mai bune VPN-uri pentru Romania in 2026. NordVPN, Surfshark, ExpressVPN — preturi, viteza, securitate. Alege VPN-ul potrivit pentru streaming si confidentialitate.",
   keywords: ["cel mai bun vpn romania", "nordvpn romania", "surfshark parere", "vpn streaming", "vpn ieftin romania 2026", "vpn recenzii"],
   alternates: { canonical: "https://amcupon.ro/vpn" },
@@ -136,7 +136,7 @@ const FAQ = [
   { q: "E legal sa folosesti VPN in Romania?", a: "Da, complet legal. VPN-urile sunt instrumente de securitate legitime, folosite de milioane de persoane si de companii. Nu sunt ilegale in Romania sau UE." },
   { q: "Pot folosi VPN pe telefon si laptop simultan?", a: "Da. NordVPN permite 10 dispozitive simultan, Surfshark permite dispozitive NELIMITATE. Un singur abonament acopera toata familia." },
   { q: "VPN-urile gratuite sunt ok?", a: "NU. VPN-urile gratuite iti vand datele de browsing advertiseri, au viteza foarte mica si nu ofera securitate reala. Un VPN platit bun costa 2-3€/luna — mai ieftin decat un Netflix." },
-  { q: "NordVPN sau Surfshark — care e mai bun?", a: "NordVPN e mai complet (mai multi servere, protocol mai rapid, mai sigur). Surfshark e mai ieftin si are dispozitive nelimitate. Daca ai o familie mare sau multi bani putini: Surfshark. Daca vrei cel mai bun: NordVPN." },
+  { q: "NordVPN sau Surfshark — care e mai bun?", a: "NordVPN e mai complet (mai multi servere, protocol mai rapid, mai sigur). Surfshark e mai ieftin si are dispozitive nelimitate. Daca ai o familie mare sau un buget limitat: Surfshark. Daca vrei cel mai bun: NordVPN." },
   { q: "Pot da inapoi banii daca nu sunt multumit?", a: "Da — toate 3 VPN-urile din lista au garantie de rambursare 30 de zile. Dai cerere, primesti banii inapoi, fara intrebari." },
 ];
 
@@ -171,7 +171,7 @@ export default function VpnPage() {
       <section className="max-w-5xl mx-auto px-4 py-10">
         <div className="bg-[#111827] border border-[#1e293b] rounded-xl p-5 mb-8">
           <p className="text-[#cbd5e1] text-sm text-center">
-            <span className="text-[#f1f5f9] font-bold">Concluzia scurta:</span> Alege <strong className="text-[#0f766e]">NordVPN</strong> daca vrei cel mai bun si nu te deranjeaza un pret putin mai mare. Alege <strong className="text-[#0f766e]">Surfshark</strong> daca ai multi bani putini sau vrei dispozitive nelimitate.
+            <span className="text-[#f1f5f9] font-bold">Concluzia scurta:</span> Alege <strong className="text-[#0f766e]">NordVPN</strong> daca vrei cel mai bun si nu te deranjeaza un pret putin mai mare. Alege <strong className="text-[#0f766e]">Surfshark</strong> daca ai un buget limitat sau vrei dispozitive nelimitate.
           </p>
         </div>
 

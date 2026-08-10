@@ -14,7 +14,7 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Reduceri Sport & Fitness 2026 — Coduri Decathlon, Sportisimo | AmCupon.ro",
+  title: "Reduceri Sport & Fitness 2026 | AmCupon.ro",
   description: "Coduri de reducere echipament sport și fitness 2026: Decathlon, Sportisimo, Sport Vision, Intersport. Biciclete, echipament sală, outdoor, running.",
   keywords: ["reduceri sport", "cod reducere decathlon", "echipament fitness ieftin", "bicicleta reducere", "sportisimo reducere", "sport outdoor reducere romania"],
   alternates: { canonical: "https://amcupon.ro/sport" },

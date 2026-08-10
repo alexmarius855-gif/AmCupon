@@ -32,24 +32,29 @@ DEST_JSON   = os.path.join(HERE, "..", "frontend", "public", "store-descriptions
 OLLAMA = "http://localhost:11434"
 
 CATEGORIE_RO = {
+    # Taxonomia REALA din categorie_slug (romana, 18 categorii — vezi CategoryIcon.tsx
+    # si canonicalize_categories.py). Bug gasit 09.08.2026: acest dict avea inca sluguri
+    # englezesti vechi (electronics-itc, home-garden etc) — cat_txt cadea pe fallback-ul
+    # "produse variate" pentru aproape orice magazin, producand text identic pe sute de
+    # pagini (acelasi bug ca in app/categorii/page.tsx, reparat separat).
     "fashion": "modă, haine și accesorii",
-    "electronics-itc": "electronice, IT și gadgeturi",
     "beauty": "cosmetice și produse de îngrijire",
-    "home-garden": "casă, mobilier și grădină",
-    "sports-outdoors": "sport, fitness și echipamente outdoor",
-    "pharma": "farmacie, suplimente și sănătate",
-    "babies-kids-toys": "produse pentru copii, jucării și articole pentru bebeluși",
-    "automotive": "piese auto, accesorii și produse pentru mașini",
-    "books": "cărți, manuale și produse de papetărie",
-    "hypermarket-groceries": "alimente și produse de hipermarket",
-    "gifts-flowers": "cadouri și flori",
+    "bijuterii": "bijuterii și ceasuri",
+    "electronice": "electronice, IT și gadgeturi",
+    "software": "software, VPN, hosting și aplicații digitale",
     "telecom": "telefoane, abonamente și produse telecom",
-    "pet-supplies": "produse pentru animale de companie",
-    "health-personal-care": "sănătate și îngrijire personală",
-    "jewelry": "bijuterii și ceasuri",
-    "games": "jocuri video și console",
-    "online-mall": "produse variate din toate categoriile",
-    "office-supplies": "rechizite și produse de birou",
+    "casa-gradina": "casă, mobilier și grădină",
+    "animale": "produse pentru animale de companie",
+    "mancare-bauturi": "alimente și băuturi",
+    "carti-educatie": "cărți, educație și papetărie",
+    "copii": "produse pentru copii, jucării și articole pentru bebeluși",
+    "cadouri-flori": "cadouri și flori",
+    "calatorii": "călătorii, bilete și cazare",
+    "sanatate": "farmacie, suplimente și sănătate",
+    "financiar": "carduri, banking și asigurări",
+    "sport": "sport, fitness și echipamente outdoor",
+    "auto-moto": "piese auto, accesorii și produse pentru mașini",
+    "marketplace": "produse variate din toate categoriile",
 }
 
 
