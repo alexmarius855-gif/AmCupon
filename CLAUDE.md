@@ -12,6 +12,72 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 09.08.2026 (homepage unificat cu cardul premium + audit strict + bug taxonomie categorii — PUSHED, 4 commits):**
+- **Homepage folosea un card SEPARAT, mai vechi** (`Card` inline în `HomeClient.tsx`), niciodată
+  atins de polish-ul `.glass`/Deal Score aplicat pe `MagazinCard.tsx` (folosit pe /toate-magazinele,
+  categorii etc). Găsit direct de Alex ("nici ca in ss nu imi place aspectul"). Conținea și 2 semnale
+  false: un "Trust Score" hardcodat 100%/45% (nimic real în spate) și un vot "A funcționat oferta?"
+  care scria doar în `localStorage`, fără să ajungă nicăieri — părea că "ascultăm feedback", nu făcea
+  nimic cu el. Homepage-ul folosește acum `MagazinCard.tsx` peste tot (adăugat suport opțional
+  `isFavorit`/`onToggleFavorit` acolo, singurul lucru bun din cardul vechi).
+- **Badge nou "Transport gratuit"**, detectat din textul real al promoției (regex pe nume/descriere),
+  pe `MagazinCard.tsx` + `MagazinClient.tsx`. NU e inventat — doar afișat cand apare explicit în date.
+- **Bara de căutare din hero eliminată** — făcea `scrollIntoView(smooth)` pe FIECARE literă tastată,
+  pagina sărea continuu cât timp scriai. Se simțea ca un bug (userul a raportat "nu funcționează"),
+  dar filtrarea chiar mergea — doar UX-ul de scroll era stricat. Căutarea rămâne în header + meniu
+  mobil, fără acest defect.
+- **`next/image` cu `unoptimized`** pe `MagazinCard.tsx` + `MagazinClient.tsx` (5 imagini) —
+  lazy-loading + zero layout shift, dar FĂRĂ pipeline-ul de optimizare Vercel. Motiv: 1176+ logo-uri
+  externe + zeci de mii de imagini de produse ar putea depăși cota gratuită de "source images" a
+  Vercel Image Optimization foarte repede → risc de factură surpriză. `next.config.ts` are deja
+  `remotePatterns: [{hostname: "**"}]` (nu era blocajul tehnic presupus în audit-ul din 24.07).
+- **BUG DE FOND, gasit prin audit strict, prezent in 2 locuri**: taxonomia de categorii (`categorie_slug`)
+  a migrat demult de la sluguri ENGLEZESTI la ROMANESTI (18 valori reale: fashion, beauty, bijuterii,
+  electronice, software, telecom, casa-gradina, animale, mancare-bauturi, carti-educatie, copii,
+  cadouri-flori, calatorii, sanatate, financiar, sport, auto-moto, marketplace — vezi si
+  `CategoryIcon.tsx`), dar 2 fisiere ramasesera pe taxonomia veche englezeasca:
+  1. `app/categorii/page.tsx` — toate cele 18 linkuri de categorie duceau la 404 (sluguri gen
+     `electronics-itc`/`home-garden` nu exista in `categorie_slug` real, deci `generateStaticParams()`
+     din `[slug]/page.tsx` nu genera niciodata acele pagini). Rescris array-ul cu cele 18 sluguri reale,
+     adaugate `financiar` si `calatorii` (lipseau complet din pagina).
+  2. `scripts/generate_store_descriptions.py` — dictionarul `CATEGORIE_RO` cadea pe fallback-ul
+     generic "produse variate" pentru aproape orice magazin, producand text de deschidere IDENTIC pe
+     237 din 1176 pagini de magazin (continut duplicat = semnal SEO slab). Corectat + regenerat toate
+     cele 1176 descrieri (`--force`) — duplicate ramase: 9, toate marketplace-uri reale unde fraza
+     generica e de fapt corecta.
+  **Lectie**: NUME_CATEGORIE din `[slug]/page.tsx` are ACELASI tabel vechi englezesc, dar acolo e
+  inofensiv (doar fallback pe `mag[0].categorie` daca lipseste cheia) — nu l-am mai atins, dar orice
+  cod nou care mapeaza categorie_slug -> text trebuie sa foloseasca cele 18 sluguri RO, nu cele vechi.
+- **Alte fix-uri gasite prin acelasi audit** (link-uri/copy verificate live cu curl, nu presupuse):
+  `/pescuit` avea link mort catre `/gradina` (-> `/casa`); `/vpn`+`/hosting`+`/recomandari` aveau din
+  nou afirmatia nesustinuta "am testat sau verificat independent" (regresie fata de fix-ul documentat
+  06.08 — verifica periodic ca fix-urile de onestitate nu revin la o rescriere ulterioara de pagina);
+  `/despre-noi` contrazicea direct `/termeni` (promitea "garantam" functionalitate, termenii spun
+  explicit "nu garantam") — aliniat, link direct catre termeni; `/vpn` avea fraza incoerenta "multi
+  bani putini" (-> "buget limitat"); titluri peste 60 caractere pe `/vpn`/`/casa`/`/sport` scurtate.
+- **Metoda de audit**: un workflow cu 4 agenti paraleli (linkuri/imagini/copy/SEO) a gasit 21 candidati,
+  dar faza de verificare adversariala a picat integral pe limita de sesiune Claude. Fiecare fix de mai
+  sus a fost verificat MANUAL cu curl/grep direct pe productie inainte de reparare — 3 din candidati
+  (link typo "cod-reduciere/jollymag", link "/alte-categorii", "Deal Score 0/100" pe eMAG) s-au dovedit
+  halucinatii ale agentului finder, NU probleme reale, si au fost respinse, nu raportate ca reparate.
+- **Impact.com Deals API — cercetat, construit, testat, BLOCAT pe cont**: exista real endpoint-uri
+  `/Mediapartners/{sid}/Deals` si `/PromoCodes` (Partner API) care ar aduce oferte/cupoane reale, nu
+  doar link-uri de tracking. Script nou `scripts/fetch_impact_deals.py` (aceleasi credentiale ca
+  `fetch_impact_api.py`, pattern defensiv identic cu `fetch_awin_api.py` — afiseaza raw JSON inainte
+  de parsare, nu scrie nimic daca schema nu se potriveste). Testat live prin `.github/workflows/
+  test-impact-deals.yml` (workflow manual, doar `workflow_dispatch`, foloseste secretele deja existente
+  fara sa le vad vreodata): **ambele endpoint-uri dau 403 Forbidden ("Access Denied")** — contul Impact
+  (7401119) are acces la `/Campaigns` dar NU la continut promotional. Nu e bug de cod. Actiune Alex:
+  intreaba suportul Impact.com daca poate fi activat accesul la Deals/Content API.
+- **Awin — la fel, are endpoint real de oferte**: `POST /publisher/{id}/promotions` (cod de cupon +
+  interval de valabilitate confirmate in raspuns), dar tokenul Awin curent ar putea avea nevoie de
+  regenerare cu scope de "promotions" — neverificat inca (asteapta `AWIN_API_TOKEN` in secrets).
+- **CJ Affiliate**: API-ul modern GraphQL NU are query de deals/cupoane; exista un API REST legacy
+  ("Link Search") care poate partial, cu Personal Access Token nou din `developers.cj.com`.
+- Tag verificare `impact-site-verification` adaugat in `layout.tsx` (acelasi tipar ca `profitshareid`)
+  — Alex a atasat meta tag-ul din dashboard-ul Impact.com (canal "Website", verificare esuase pt ca
+  tag-ul nu exista inca pe site).
+
 **UPDATE 08.08.2026 — partea a 2-a (redesign vizual: iconografie, homepage -50%, fix conversie major — PUSHED):**
 - **BUG DE CONVERSIE, cel mai scump din sesiune: 55 din 62 de pagini cu oferte se
   deschideau pe un tab GOL.** `MagazinClient.tsx` pornea mereu pe tabul "Coduri", dar din
@@ -745,8 +811,18 @@ Quicklinks: `https://event.2performant.com/events/click?ad_type=quicklink&aff_co
 
 ## Categorii sluguri
 
-Mapping fix `categorie_slug` din output.json → URL `/categorii/{slug}`:
-`fashion`, `electronics-itc`, `beauty`, `home-garden`, `sports-outdoors`, `pharma`, `babies-kids-toys`, `automotive`, `books`, `hypermarket-groceries`, `gifts-flowers`, `telecom`, `pet-supplies`, `health-personal-care`, `jewelry`, `games`, `online-mall`
+**CORECTAT 09.08.2026** — tabelul de mai jos documenta taxonomia veche ENGLEZEASCA, dar
+`categorie_slug` real din output.json foloseste de mult sluguri ROMANESTI. Documentatia stale de aici
+a fost o cauza directa a bug-ului "18 linkuri /categorii moarte" + "237 descrieri magazin duplicate"
+gasite si reparate pe 09.08 (vezi update-ul de mai sus). Aceasta e acum sursa corecta:
+
+Mapping real `categorie_slug` din output.json → URL `/categorii/{slug}` (18 categorii, vezi si
+`CategoryIcon.tsx` pentru iconita+culoare fiecarei categorii):
+`fashion`, `beauty`, `bijuterii`, `electronice`, `software`, `telecom`, `casa-gradina`, `animale`, `mancare-bauturi`, `carti-educatie`, `copii`, `cadouri-flori`, `calatorii`, `sanatate`, `financiar`, `sport`, `auto-moto`, `marketplace`
+
+**Nota reziduala**: `NUME_CATEGORIE` din `app/categorii/[slug]/page.tsx` inca are cheile in engleza
+(fallback inofensiv pe `mag[0].categorie` cand cheia nu se potriveste — pagina tot functioneaza, doar
+nu foloseste eticheta "frumoasa" din acel tabel). De curatat cand se mai atinge fisierul, nu urgent.
 
 ---
 
