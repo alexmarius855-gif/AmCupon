@@ -2,6 +2,7 @@ import { MetadataRoute } from "next";
 import fs from "fs";
 import path from "path";
 import { MACRO_ORDINE, getMacro } from "./blog/categories";
+import { buildMerchantTokens, esteIndexabil, type IndexableProdus } from "../lib/seoIndexable";
 
 const BASE_URL = "https://amcupon.ro";
 
@@ -23,9 +24,24 @@ function getTopSluguriDinamic(): string[] {
 const PRODUSE_CATEGORII = ["fashion", "electronice", "beauty", "sport", "casa", "copii", "farmacie", "carti", "auto", "animale", "alimente", "bijuterii", "jocuri"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const magazine: { magazin: string; are_promotie: boolean; categorie_slug?: string }[] = JSON.parse(
+  const magazine: { magazin: string; are_promotie: boolean; categorie_slug?: string; promotii?: unknown[] }[] = JSON.parse(
     fs.readFileSync(path.join(process.cwd(), "public", "output.json"), "utf-8")
   );
+
+  // Index produse-per-magazin, construit o singura data (vezi lib/seoIndexable.ts).
+  // Sitemap-ul trimite la Google DOAR paginile cu continut real — restul primesc
+  // `noindex, follow` in cod-reducere/[magazin]/page.tsx, prin ACEEASI functie.
+  let produseFeed: IndexableProdus[] = [];
+  try {
+    const pPath = path.join(process.cwd(), "public", "products.json");
+    if (fs.existsSync(pPath)) {
+      const raw = JSON.parse(fs.readFileSync(pPath, "utf-8"));
+      produseFeed = (raw.products || raw) as IndexableProdus[];
+    }
+  } catch {
+    produseFeed = [];
+  }
+  const merchantTokens = buildMerchantTokens(produseFeed);
 
   let blogPosts: { slug: string; date: string; category: string; excerpt?: string }[] = [];
   const blogPath = path.join(process.cwd(), "public", "blog-posts.json");
@@ -238,7 +254,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       })),
 
     // ─── Pagini magazine (/cod-reducere/[magazin]) ────────────────────────────
-    // Filtram sluguri invalide: cu spatii, cu "/" in interior, sau retele afiliere
+    // Filtram sluguri invalide: cu spatii, cu "/" in interior, sau retele afiliere.
+    // SI paginile fara continut real (vezi lib/seoIndexable.ts): din 1177 de magazine
+    // doar ~92 aveau promotie sau produse; restul de ~1085 erau acelasi template gol,
+    // trimis la Google, care pe un domeniu fara autoritate arde tot bugetul de crawl
+    // si semnaleaza "site de calitate mica". Paginile raman LIVE pentru utilizatori
+    // si pastreaza `follow` — doar nu mai cer indexare pana au ceva de aratat.
     ...magazine
       .filter((m) => {
         const slug = m.magazin || "";
@@ -246,13 +267,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
         if (/\s/.test(slug)) return false;           // spatii in slug
         if (slug.split("/").length > 2) return false; // prea multe slash-uri
         if (["profitshare.ro", "2performant.com"].includes(slug)) return false; // retele, nu magazine
-        return true;
+        return esteIndexabil(m, merchantTokens);
       })
       .map((m) => ({
         url: `${BASE_URL}/cod-reducere/${m.magazin}`,
         lastModified: new Date(),
         changeFrequency: "daily" as const,
-        priority: m.are_promotie ? 0.9 : 0.6,
+        priority: m.are_promotie ? 0.9 : 0.7,
       })),
   ];
 }

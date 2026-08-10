@@ -24,7 +24,10 @@ interface AnuntItem {
 }
 
 const MESAJE_STATICE: AnuntItem[] = [
-  { text: "300+ magazine partenere — coduri verificate zilnic", href: "/toate-magazinele", emoji: "🛍️" },
+  // Fara numar hardcodat: numarul REAL vine din nav-index.json in useEffect-ul de mai
+  // jos. Inainte scria "300+" (stale de luni de zile, cand site-ul are 1177) si asta
+  // era exact textul pe care Google il vedea in HTML-ul server-side, pe FIECARE pagina.
+  { text: "Magazine partenere — coduri verificate zilnic", href: "/toate-magazinele", emoji: "🛍️" },
   { text: "Extensie Chrome — in curs de lansare, anunta-te acum", href: "/extensie", emoji: "🧩" },
   { text: "Newsletter gratuit — top 5 oferte zilnic pe email", href: "/newsletter", emoji: "📬" },
 ];

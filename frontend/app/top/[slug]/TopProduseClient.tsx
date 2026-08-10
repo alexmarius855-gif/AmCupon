@@ -220,13 +220,28 @@ export default function TopProduseClient({ produse, culoare }: TopProduseClientP
                     <div className="w-8 h-8 rounded-full bg-[#334155] flex items-center justify-center font-black text-[#cbd5e1]">
                       {p.pozitie}
                     </div>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={p.imagine}
-                      alt={p.nume}
-                      className="w-20 h-14 object-cover rounded-xl border border-[#475569]"
-                      loading="lazy"
-                    />
+                    {/* Imaginea se afiseaza DOAR daca e reala. Inainte, toate cele 142 de
+                        produse aveau `picsum.photos` — poze stock aleatoare prezentate ca
+                        fiind produsul. Eliminate (vezi scripts/fix_top_onestitate.py); pana
+                        avem poze reale, aratam initiala, care nu pretinde ca e produsul. */}
+                    {p.imagine ? (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={p.imagine}
+                        alt={p.nume}
+                        className="w-20 h-14 object-cover rounded-xl border border-[#475569]"
+                        loading="lazy"
+                      />
+                    ) : (
+                      <div
+                        className="w-20 h-14 rounded-xl border border-[#475569] bg-[#1e293b] flex items-center justify-center"
+                        aria-hidden="true"
+                      >
+                        <span className="text-[#64748b] font-black text-lg">
+                          {(p.nume || "?").charAt(0).toUpperCase()}
+                        </span>
+                      </div>
+                    )}
                   </div>
 
                   {/* MAIN INFO */}

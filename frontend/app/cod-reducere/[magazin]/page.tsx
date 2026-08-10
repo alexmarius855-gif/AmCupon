@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
 import MagazinClient from "./MagazinClient";
-import BannerAd2P from "../../components/BannerAd2P";
+import { buildMerchantTokens, esteIndexabil } from "../../../lib/seoIndexable";
 
 interface Promotie {
   nume: string;
@@ -229,12 +229,32 @@ function loadReviewsSummary(slug: string): ReviewSummary | null {
   } catch { return null; }
 }
 
-function loadProducts(slug: string): Produs[] {
+// products.json are ~3.4 MB si se genereaza 1177 de pagini statice — citirea lui
+// la fiecare pagina (de doua ori: generateMetadata + componenta) ar face build-ul
+// inutil de lent. Cache la nivel de modul: o singura citire per proces de build.
+let _produseCache: Produs[] | null = null;
+function loadAllProducts(): Produs[] {
+  if (_produseCache) return _produseCache;
   try {
     const p = path.join(process.cwd(), "public", "products.json");
-    if (!fs.existsSync(p)) return [];
+    if (!fs.existsSync(p)) { _produseCache = []; return _produseCache; }
     const raw = JSON.parse(fs.readFileSync(p, "utf-8"));
-    const all: Produs[] = raw.products || raw;
+    _produseCache = (raw.products || raw) as Produs[];
+  } catch {
+    _produseCache = [];
+  }
+  return _produseCache;
+}
+
+let _tokensCache: Set<string> | null = null;
+function merchantTokens(): Set<string> {
+  if (!_tokensCache) _tokensCache = buildMerchantTokens(loadAllProducts());
+  return _tokensCache;
+}
+
+function loadProducts(slug: string): Produs[] {
+  try {
+    const all: Produs[] = loadAllProducts();
     return all.filter((pr) => {
       const ms = (pr.merchant_slug || "").toLowerCase();
       const mn = (pr.merchant || "").toLowerCase();
@@ -303,9 +323,18 @@ export async function generateMetadata({
     : `Cod reducere ${nume} ${an} — voucher și promoții verificate pe AmCupon.ro. Categorie: ${m.categorie}. Actualizat zilnic.`;
   const description = descCustom || descGeneric;
 
+  // ── Indexare selectiva (vezi lib/seoIndexable.ts pentru masuratori + motiv) ──
+  // Paginile fara continut propriu (fara promotie si fara produse) primesc
+  // `noindex, FOLLOW`: raman live pentru utilizatori, linkul afiliat merge la fel,
+  // link equity trece mai departe — doar nu mai cerem Google sa indexeze un
+  // template gol. Se auto-repara: cand apare o promotie sau produse, pagina
+  // redevine indexabila automat la urmatoarea generare.
+  const indexabil = esteIndexabil(m, merchantTokens());
+
   return {
     title,
     description,
+    ...(indexabil ? {} : { robots: { index: false, follow: true } }),
     keywords: [
       `cod reducere ${nume.toLowerCase()}`,
       `voucher ${nume.toLowerCase()}`,

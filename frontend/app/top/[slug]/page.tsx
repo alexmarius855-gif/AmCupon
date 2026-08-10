@@ -224,14 +224,23 @@ export default async function TopCategoriePage({
               <div>
                 <h1 className="text-3xl md:text-4xl font-black leading-tight mb-2">{cat.titlu}</h1>
                 <p className="text-slate-500 text-base max-w-2xl">{cat.descriere}</p>
+                {/* Metodologie explicita. Pana pe 10.08.2026 paginile scriau "Am analizat
+                    20+ modele" / "testate in bucatarie" — o testare care nu a avut loc
+                    niciodata. Scorurile sunt evaluare EDITORIALA pe date publice, si spunem
+                    asta direct, in loc sa lasam cititorul sa creada ca sunt masuratori. */}
+                <p className="text-xs text-slate-500/80 max-w-2xl mt-2 leading-relaxed">
+                  Selecție editorială pe baza specificațiilor și prețurilor publice. Scorurile
+                  sunt evaluarea noastră, nu rezultate de laborator. Linkurile către magazine
+                  sunt afiliate — prețul tău rămâne același.
+                </p>
               </div>
             </div>
 
             {/* STATS BAR */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-xl">
               {[
-                { val: `${cat.produse.length}`, label: "Produse testate" },
-                { val: scorMediu,               label: "Scor mediu" },
+                { val: `${cat.produse.length}`, label: "Produse comparate" },
+                { val: scorMediu,               label: "Scor editorial mediu" },
                 { val: `${pretMinim.toLocaleString("ro-RO")}+`, label: "Pret de la (lei)" },
                 { val: data.updated,             label: "Actualizat" },
               ].map(s => (
