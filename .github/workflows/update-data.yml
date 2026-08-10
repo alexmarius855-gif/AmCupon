@@ -186,6 +186,23 @@ jobs:
             echo "BREVO_API_KEY nu e setat — skip alerte de pret"
           fi
 
+      # ── 5c. Seria de bun-venit, ziua 3 + ziua 7 (Brevo, WELCOME_STEP) ───────
+      - name: Continua seria de bun-venit (ziua 3 / ziua 7)
+        continue-on-error: true
+        working-directory: scripts
+        env:
+          BREVO_API_KEY:      ${{ secrets.BREVO_API_KEY }}
+          BREVO_LIST_ID:      "2"
+          BREVO_SENDER_EMAIL: newsletter@amcupon.ro
+          BREVO_SENDER_NAME:  AmCupon.ro
+        run: |
+          if [ -n "$BREVO_API_KEY" ]; then
+            echo "Verific abonati eligibili pt ziua 3 / ziua 7..."
+            python send_welcome_series.py
+          else
+            echo "BREVO_API_KEY nu e setat — skip seria de bun-venit"
+          fi
+
       # ── 6. Product Feeds API ──────────────────────────────────────────────
       - name: Fetch product feeds (2Performant API)
         working-directory: scripts

@@ -322,6 +322,18 @@ export async function POST(request: Request) {
       // confirmare inline in PriceAlert.tsx, nu trimitem dublu.
       // AWAITED (nu fire-and-forget): pe Edge altfel nu apuca sa se trimita.
       const welcomeSent = magazin ? false : await sendWelcomeEmail(email, API_KEY);
+      if (welcomeSent) {
+        // WELCOME_STEP=1 marcheaza "a primit emailul de ziua 0" — scripts/send_welcome_series.py
+        // continua seria (ziua 3, ziua 7) DOAR pt contactele cu acest flag, ca sa nu trimita
+        // emailul 2/3 unor abonati care n-au primit niciodata emailul 1 (ex. cei abonati doar
+        // la o alerta de pret, care sar peste sendWelcomeEmail mai sus). Best-effort — daca
+        // update-ul de atribut pica, nu blocam raspunsul catre utilizator.
+        fetch(`${BREVO_API}/${encodeURIComponent(email)}`, {
+          method: "PUT",
+          headers: { "api-key": API_KEY, "Content-Type": "application/json" },
+          body: JSON.stringify({ attributes: { WELCOME_STEP: "1" } }),
+        }).catch(() => {});
+      }
       return Response.json({ ok: true, welcomeSent }, { headers: corsHeaders });
     }
     if (res.status === 204) {
