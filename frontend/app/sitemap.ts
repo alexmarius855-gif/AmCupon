@@ -214,6 +214,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/top-reduceri`,            lastModified: new Date(), changeFrequency: "daily",   priority: 0.85 },
     { url: `${BASE_URL}/calculator`,              lastModified: new Date(), changeFrequency: "monthly", priority: 0.75 },
     { url: `${BASE_URL}/calculator-salariu`,      lastModified: new Date(), changeFrequency: "monthly", priority: 0.8  },
+    { url: `${BASE_URL}/calculator-tva`,          lastModified: new Date(), changeFrequency: "monthly", priority: 0.8  },
     { url: `${BASE_URL}/generator-proforma`,      lastModified: new Date(), changeFrequency: "monthly", priority: 0.8  },
 
     // ─── Pagini utilitare ────────────────────────────────────────────────────

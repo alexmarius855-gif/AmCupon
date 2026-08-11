@@ -110,6 +110,7 @@ const PAGINI_DEDICATE = [
   { href: "/servicii-internationale", emoji: "🌍", name: "Servicii Internationale", sub: "VPN, hosting, software", from: "#14b8a6", to: "#0f766e" },
   { href: "/calculator",            emoji: "🧮", name: "Calculator Reduceri", sub: "Calculeaza economia reala", from: "#0f766e", to: "#14b8a6" },
   { href: "/calculator-salariu",    emoji: "💼", name: "Calculator Salariu",  sub: "Net-brut 2026",             from: "#0d9488", to: "#0d9488" },
+  { href: "/calculator-tva",        emoji: "🧾", name: "Calculator TVA",      sub: "21% si 11%, adauga/extrage", from: "#14b8a6", to: "#0d9488" },
   { href: "/generator-proforma",    emoji: "📄", name: "Generator Proforma",  sub: "Document instant gratuit",  from: "#64748b", to: "#94a3b8" },
 ];
 

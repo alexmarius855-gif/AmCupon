@@ -12,6 +12,70 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 10.08.2026 (SEO: cauza reala a neindexarii gasita + recenzii fabricate eliminate + calculator TVA — PUSHED):**
+- **DESCOPERIREA CENTRALA: 92% din URL-urile trimise la Google erau template gol.** Masurat:
+  din 1177 pagini de magazin, doar **92** au continut propriu (62 cu promotie activa, 80 cu
+  produse in feed, cu suprapunere). Restul de **1085** erau acelasi template cu numele schimbat.
+  Toate cele **1507** URL-uri erau in sitemap. Pentru un domeniu fara autoritate asta e cea mai
+  rea combinatie: Google vede ca aproape tot ce-i trimitem e subtire, trateaza domeniul ca fiind
+  de calitate mica, si bugetul de crawl (mic, proportional cu autoritatea) se arde pe paginile
+  goale. **Asta explica "Discovered – currently not indexed" la scara, mai mult decat backlink-urile.**
+  - Fix: `frontend/lib/seoIndexable.ts` — o SINGURA sursa de adevar, folosita SI de `sitemap.ts`
+    SI de `metadata` din `cod-reducere/[magazin]/page.tsx`. Paginile fara continut primesc
+    `noindex, follow` (raman live, link afiliat functional, link equity trece) si ies din sitemap.
+    Se auto-repara la urmatorul pipeline cand apare o promotie.
+  - **Verificat pe build**: sitemap **1507 → 425** URL; `logitech.com` (gol) = `noindex` + absent
+    din sitemap; `drmax.ro` si `emag.ro` = indexate + prezente. Coerenta perfecta sitemap↔meta.
+- **CORECTIE IMPORTANTA la strategia de continut** (cercetare Semrush, baza `ro`, august 2026):
+  presupunerea "un site nou nu poate prinde «cod reducere X»" e **GRESITA**. Doar eMAG e greu
+  (KD 34). Restul nisei e KD 6–16, cu volum real: `cod reducere about you` 8.100/KD12,
+  `zalando` 6.600/KD14, `trendyol` 5.400/KD10, `fashion days` 3.600/KD12, `dr max` 2.400/KD10,
+  `douglas` 1.600/KD9, `elefant` 880/KD6. **Paginile de magazin SUNT activul principal** — de-aia
+  regula de indexare are si o lista `BRANDURI_CU_CERERE` (drmax, answear, philips, kitunghii,
+  noriel), care raman indexate chiar fara promotie: altfel exact paginile castigabile ar fi disparut.
+  - **A doua rezerva, mai usoara**: calculatoarele. `calculator tva` 18.100/luna KD14,
+    `calculator procente` 12.100/KD14, `calculator impozit auto` 6.600/KD17, `calculator concediu
+    medical` 1.600/KD11, `calculator dividende` 1.300/KD8. Construit primul: **`/calculator-tva`**
+    (cote verificate live: 21% standard + 11% redusa din 01.08.2025; cea de 9% tranzitorie a
+    expirat 31.07.2026). Urmatoarele de construit, in ordinea volumului: procente, impozit auto.
+  - **NU investi in continut Q&A/FAQ** — intrebarile au volum ~0 in RO (verificat), spre deosebire
+    de engleza. Formatul care merge aici e calculator/comparatie/pagina de brand.
+- **RECENZII FABRICATE pe cele 30 de pagini `/top` — eliminate.** Toate cele **142 de produse**
+  aveau `imagine: picsum.photos/...` = poze STOCK ALEATOARE prezentate ca fiind produsul (10 live
+  doar pe `/top/laptopuri`). Plus 14 descrieri care pretindeau testare reala ("Am analizat 20+
+  modele", "testate in bucatarie") si bara de statistici scria "Produse testate" — nicio dovada de
+  testare nicaieri in repo. Acelasi tip de fabricatie eliminat pe 03.07 (procent_succes random,
+  comision afisat ca cashback), reaparut aici. Fix cu `scripts/fix_top_onestitate.py` (reutilizabil):
+  imagini false eliminate, pretentii rescrise in ce s-a intamplat de fapt, nota de metodologie
+  explicita pe pagina. Scorurile raman, dar etichetate ca **editoriale**, nu masuratori.
+  **Verificat ca NU erau emise ca date structurate** → nu exista risc de penalizare manuala.
+- **Backlink-uri — cifra reala, nu "zero"**: 83 linkuri / 68 domenii, Authority Score 2. Mai util:
+  competitorul `cuponescu.ro` (~350k vizite/luna) se tine pe **~5 linkuri editoriale romanesti**
+  reale (retail.ro AS34, startupcafe.ro AS45, carturesti.ro AS55, euplatesc.ro AS35) — restul sunt
+  PBN-uri spam. **Bara e mult mai joasa decat pare.** Ce a functionat la ei: un studiu pe date
+  proprii ("din peste 900 de magazine"), preluat de retail.ro cu link. AmCupon are date pe care
+  nimeni altcineva nu le are (1177 magazine, istoric promotii, comisioane pe categorie) — vezi
+  ideile de continut linkabil in PLAN-MASTER.
+- **CAPCANA DE VERIFICARE (m-a pacalit azi, nu o repeta)**: `npx tsc --noEmit -p . 2>&1 | head -15;
+  echo "EXIT=$?"` raporteaza MEREU 0 — `$?` prinde exit-ul lui `head`, nu al lui `tsc`. Am crezut
+  ca type-check-ul trece, iar `npm run build` a picat imediat dupa. Corect:
+  `npx tsc --noEmit -p . > /tmp/out.txt 2>&1; echo $?` (redirect, nu pipe), apoi citesti fisierul.
+- **GOTCHA `.next` (varianta noua a celui documentat pe 08.08)**: daca opresti dev server-ul in
+  timp ce compileaza, ramane un `.next/dev/types/routes.d.ts` TRUNCHIAT la mijloc, iar `tsc` il
+  include si raporteaza zeci de erori de sintaxa care NU sunt in codul tau. Semnul distinctiv:
+  toate erorile sunt pe acelasi rand dintr-un fisier din `.next/`. Fix: `rm -rf .next` + rebuild.
+- **RAMAS de reparat (gasit, nereparat inca)**:
+  1. **Canibalizare**: `/altex` si `/cod-reducere/altex.ro` tintesc aceeasi fraza, fiecare cu
+     canonical propriu (~25 branduri). De ales una singura + 301 sau canonical catre cealalta.
+  2. **`lastModified: new Date()`** in 123 de locuri din `sitemap.ts` — toate URL-urile par
+     modificate la fiecare build, ceea ce anuleaza semnalul de prospetime. Atentie: `ultima_verificare`
+     NU e o alternativa mai buna (pipeline-ul il seteaza "azi" pe toate magazinele la fiecare rulare).
+  3. **REGRESIE feed produse: 33.096 → 3.468 produse**, din care 3.000 de la UN singur magazin
+     (navstore.ro); restul de 79 au ~20 fiecare. Zero scule/gradina in feed (0 motocoase, 0 drujbe),
+     desi exista 8 magazine partenere reale in nisa cu link de tracking (scule365.ro, sculefix.ro,
+     evolutionpowertools.ro, albertool.com, brico.ro, agroclima.ro, hototools.com, magroup.ro).
+     Asta blocheaza orice pagina noua de tip "top produse" pe categorii de scule.
+
 **UPDATE 09.08.2026 (homepage unificat cu cardul premium + audit strict + bug taxonomie categorii — PUSHED, 4 commits):**
 - **Homepage folosea un card SEPARAT, mai vechi** (`Card` inline în `HomeClient.tsx`), niciodată
   atins de polish-ul `.glass`/Deal Score aplicat pe `MagazinCard.tsx` (folosit pe /toate-magazinele,
