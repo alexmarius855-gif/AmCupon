@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Cod Reducere Banggood Romania 2026 — Gadgeturi & Electronice | AmCupon.ro",
   description: "Coduri reducere Banggood Romania actualizate zilnic. Gadgeturi, electronice, unelte si jucarii RC la preturi mici directe de la producatori. Promotii Banggood verificate.",
   keywords: ["cod reducere banggood", "banggood romania reduceri", "banggood discount", "banggood voucher", "gadgeturi ieftine banggood", "banggood promotii"],
-  alternates: { canonical: "https://amcupon.ro/banggood" },
+  alternates: { canonical: "https://amcupon.ro/cod-reducere/banggood.com" },
   openGraph: {
     title: "Cod Reducere Banggood Romania 2026 | AmCupon.ro",
     description: "Reduceri Banggood actualizate zilnic. Gadgeturi, drone, electronice si unelte cu livrare in Romania.",

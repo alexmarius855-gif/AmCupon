@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Cod Reducere Noriel — Oferte Jucarii 2026 | AmCupon.ro",
   description: "Coduri de reducere Noriel actualizate zilnic. Reduceri la jucarii, jocuri de societate, articole pentru copii si seturi LEGO. Promotii Noriel verificate.",
   keywords: ["cod reducere noriel", "noriel reduceri", "noriel promotii", "jucarii reduceri", "noriel discount"],
-  alternates: { canonical: "https://amcupon.ro/noriel" },
+  alternates: { canonical: "https://amcupon.ro/cod-reducere/noriel.ro" },
   openGraph: {
     title: "Reduceri Noriel 2026 | AmCupon.ro",
     description: "Coduri de reducere si oferte Noriel verificate zilnic. Jucarii, LEGO si jocuri de societate pentru copii la preturi reduse.",

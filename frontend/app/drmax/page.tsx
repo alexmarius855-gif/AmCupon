@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Cod Reducere Dr. Max — Oferte Farmacie 2026 | AmCupon.ro",
   description: "Coduri de reducere Dr. Max actualizate zilnic. Reduceri la medicamente OTC, suplimente, cosmetice si produse de sanatate. Promotii Dr. Max verificate.",
   keywords: ["cod reducere dr max", "drmax reduceri", "dr max promotii", "farmacie online reduceri", "dr max discount"],
-  alternates: { canonical: "https://amcupon.ro/drmax" },
+  alternates: { canonical: "https://amcupon.ro/cod-reducere/drmax.ro" },
   openGraph: {
     title: "Reduceri Dr. Max 2026 | AmCupon.ro",
     description: "Coduri de reducere si oferte Dr. Max farmacie online verificate zilnic. Medicamente, suplimente si cosmetice la preturi reduse.",

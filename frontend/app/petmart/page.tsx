@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Cod Reducere Petmart — Oferte Animale 2026 | AmCupon.ro",
   description: "Coduri de reducere Petmart actualizate zilnic. Reduceri la hrana caini, pisici, accesorii si medicamente veterinare. Promotii Petmart verificate.",
   keywords: ["cod reducere petmart", "petmart reduceri", "petmart promotii", "hrana animale reduceri", "petmart discount"],
-  alternates: { canonical: "https://amcupon.ro/petmart" },
+  alternates: { canonical: "https://amcupon.ro/cod-reducere/petmart.ro" },
   openGraph: {
     title: "Reduceri Petmart 2026 | AmCupon.ro",
     description: "Coduri de reducere si oferte Petmart verificate zilnic. Hrana, accesorii si produse veterinare pentru animale de companie la preturi reduse.",

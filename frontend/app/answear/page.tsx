@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Cod Reducere Answear — Oferte Fashion Online 2026 | AmCupon.ro",
   description: "Coduri de reducere Answear actualizate zilnic. Reduceri la haine, incaltaminte si accesorii de brand. Promotii Answear.ro verificate.",
   keywords: ["cod reducere answear", "answear reduceri", "answear promotii", "haine online reduceri", "answear discount"],
-  alternates: { canonical: "https://amcupon.ro/answear" },
+  alternates: { canonical: "https://amcupon.ro/cod-reducere/answear.ro" },
   openGraph: {
     title: "Reduceri Answear Fashion 2026 | AmCupon.ro",
     description: "Coduri de reducere si oferte Answear verificate zilnic. Haine, incaltaminte si accesorii de brand la preturi reduse.",

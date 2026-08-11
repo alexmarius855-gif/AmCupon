@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Cod Reducere pFarma 2026 — Farmacie Online la Reducere | AmCupon.ro",
   description: "Coduri reducere pFarma actualizate. Medicamente OTC, suplimente, cosmetice farmacie si produse naturiste la preturi mici. Promotii pFarma verificate.",
   keywords: ["cod reducere pfarma", "pfarma reduceri", "farmacie online reducere", "medicamente online ieftine", "pfarma promotii", "suplimente reducere"],
-  alternates: { canonical: "https://amcupon.ro/pfarma" },
+  alternates: { canonical: "https://amcupon.ro/cod-reducere/pfarma.ro" },
   openGraph: {
     title: "Cod Reducere pFarma 2026 | AmCupon.ro",
     description: "Medicamente OTC, suplimente si cosmetice farmacie la reducere. Promotii pFarma verificate zilnic.",

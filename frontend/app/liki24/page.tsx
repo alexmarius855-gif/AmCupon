@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Cod Reducere Liki24 — Farmacie Online 2026 | AmCupon.ro",
   description: "Coduri de reducere Liki24 farmacie online actualizate zilnic. Reduceri la medicamente, suplimente, cosmetice si produse naturiste. Promotii Liki24 verificate.",
   keywords: ["cod reducere liki24", "liki24 reduceri", "liki24 promotii", "farmacie online ieftina", "liki24 discount"],
-  alternates: { canonical: "https://amcupon.ro/liki24" },
+  alternates: { canonical: "https://amcupon.ro/cod-reducere/liki24.ro" },
   openGraph: {
     title: "Reduceri Liki24 Farmacie Online 2026 | AmCupon.ro",
     description: "Coduri de reducere si oferte Liki24 verificate zilnic. Medicamente si suplimente la preturi reduse.",

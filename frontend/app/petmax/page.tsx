@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Cod Reducere Petmax — Produse Animale de Companie 2026 | AmCupon.ro",
   description: "Coduri de reducere Petmax actualizate zilnic. Reduceri la hrana, accesorii si produse pentru caini, pisici si alte animale. Promotii Petmax verificate.",
   keywords: ["cod reducere petmax", "petmax reduceri", "produse animale reduceri", "petmax promotii", "petmax discount"],
-  alternates: { canonical: "https://amcupon.ro/petmax" },
+  alternates: { canonical: "https://amcupon.ro/cod-reducere/petmax.ro" },
   openGraph: { title: "Reduceri Petmax Animale 2026 | AmCupon.ro", url: "https://amcupon.ro/petmax", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
 };
 

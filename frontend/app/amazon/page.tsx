@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Cod Reducere Amazon Romania 2026 — Oferte & Promotii | AmCupon.ro",
   description: "Coduri reducere Amazon Romania actualizate zilnic. Milioane de produse cu livrare rapida. Promotii Amazon Prime, reduceri electronice, carti, fashion si mai mult.",
   keywords: ["cod reducere amazon", "amazon romania reduceri", "amazon prime reduceri", "amazon discount", "amazon voucher", "amazon promotii"],
-  alternates: { canonical: "https://amcupon.ro/amazon" },
+  alternates: { canonical: "https://amcupon.ro/cod-reducere/amazon.com" },
   openGraph: {
     title: "Cod Reducere Amazon Romania 2026 | AmCupon.ro",
     description: "Reduceri Amazon actualizate zilnic. Electronice, carti, fashion, casa si milioane de alte produse cu livrare in Romania.",

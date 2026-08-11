@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Cod Reducere Litera — Carti si Edituri 2026 | AmCupon.ro",
   description: "Coduri de reducere Litera actualizate zilnic. Reduceri la carti Litera, bestsellere si colectii speciale. Promotii Litera verificate.",
   keywords: ["cod reducere litera", "litera reduceri", "carti litera reduceri", "litera promotii", "litera discount"],
-  alternates: { canonical: "https://amcupon.ro/litera" },
+  alternates: { canonical: "https://amcupon.ro/cod-reducere/litera.ro" },
   openGraph: { title: "Reduceri Litera Carti 2026 | AmCupon.ro", url: "https://amcupon.ro/litera", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
 };
 

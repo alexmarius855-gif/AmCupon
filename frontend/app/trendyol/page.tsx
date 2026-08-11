@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Cod Reducere Trendyol Romania 2026 — Moda & Lifestyle | AmCupon.ro",
   description: "Coduri reducere Trendyol Romania actualizate zilnic. Fashion, electronice, cosmetice si produse casa la reducere. Promotii Trendyol verificate.",
   keywords: ["cod reducere trendyol", "trendyol romania", "trendyol promotii", "trendyol voucher", "trendyol discount", "trendyol reduceri"],
-  alternates: { canonical: "https://amcupon.ro/trendyol" },
+  alternates: { canonical: "https://amcupon.ro/cod-reducere/trendyol.com" },
   openGraph: {
     title: "Cod Reducere Trendyol Romania 2026 | AmCupon.ro",
     description: "Reduceri Trendyol Romania actualizate zilnic. Fashion, beauty, electronice si lifestyle la preturi speciale.",

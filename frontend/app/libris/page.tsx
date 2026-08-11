@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Reduceri Libris — Coduri si Oferte Libris.ro 2026 | AmCupon.ro",
   description: "Oferte si coduri de reducere Libris.ro actualizate zilnic. Carti romanesti si straine, manuale, papetarie la preturi mici. Promotii Libris verificate acum.",
   keywords: ["reducere libris", "cod reducere libris", "oferte libris", "libris carti reducere", "libris promotii"],
-  alternates: { canonical: "https://amcupon.ro/libris" },
+  alternates: { canonical: "https://amcupon.ro/cod-reducere/libris.ro" },
   openGraph: {
     title: "Reduceri Libris.ro 2026 | AmCupon.ro",
     description: "Coduri de reducere si oferte Libris verificate zilnic. Carti, papetarie la preturi mici.",

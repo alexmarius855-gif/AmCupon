@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Cod Reducere Scule365 2026 — Unelte & Scule la Reducere | AmCupon.ro",
   description: "Coduri reducere Scule365 actualizate. Scule profesionale, unelte electrice si accesorii la preturi competitive. Promotii Scule365 verificate pe AmCupon.ro.",
   keywords: ["cod reducere scule365", "scule365 reduceri", "scule profesionale online", "unelte electrice reducere", "scule365 promotii"],
-  alternates: { canonical: "https://amcupon.ro/scule365" },
+  alternates: { canonical: "https://amcupon.ro/cod-reducere/scule365.ro" },
   openGraph: {
     title: "Cod Reducere Scule365 2026 | AmCupon.ro",
     description: "Scule profesionale si unelte electrice la reducere. Promotii Scule365 verificate zilnic pe AmCupon.ro.",

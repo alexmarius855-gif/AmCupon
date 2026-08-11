@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Cod Reducere BookZone — Carti Online 2026 | AmCupon.ro",
   description: "Coduri de reducere BookZone actualizate zilnic. Reduceri la carti, audiobooks si e-books. Promotii BookZone verificate.",
   keywords: ["cod reducere bookzone", "bookzone reduceri", "carti online reduceri", "bookzone promotii", "bookzone discount"],
-  alternates: { canonical: "https://amcupon.ro/bookzone" },
+  alternates: { canonical: "https://amcupon.ro/cod-reducere/bookzone.ro" },
   openGraph: { title: "Reduceri BookZone 2026 | AmCupon.ro", url: "https://amcupon.ro/bookzone", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
 };
 

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Reduceri Decathlon — Oferte si Coduri Decathlon 2026 | AmCupon.ro",
   description: "Oferte si coduri de reducere Decathlon actualizate zilnic. Echipamente sportive, biciclete, fitness la preturi mici. Promotii Decathlon verificate acum.",
   keywords: ["reducere decathlon", "cod reducere decathlon", "oferte decathlon", "decathlon promotii", "decathlon sport reducere"],
-  alternates: { canonical: "https://amcupon.ro/decathlon" },
+  alternates: { canonical: "https://amcupon.ro/cod-reducere/decathlon.ro" },
   openGraph: {
     title: "Reduceri Decathlon 2026 | AmCupon.ro",
     description: "Coduri de reducere si oferte Decathlon verificate zilnic. Sport, fitness, biciclete la preturi mici.",

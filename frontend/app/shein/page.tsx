@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Cod Reducere SHEIN Romania 2026 — Fashion la Preturi Mici | AmCupon.ro",
   description: "Coduri reducere SHEIN actualizate zilnic. Haine, accesorii si incaltaminte la reducere de pana la 80%. Promotii SHEIN verificate pe AmCupon.ro.",
   keywords: ["cod reducere shein", "shein romania reduceri", "shein promotii", "shein voucher", "shein discount romania", "haine ieftine online"],
-  alternates: { canonical: "https://amcupon.ro/shein" },
+  alternates: { canonical: "https://amcupon.ro/cod-reducere/shein.com" },
   openGraph: {
     title: "Cod Reducere SHEIN Romania 2026 | AmCupon.ro",
     description: "Reduceri SHEIN actualizate zilnic. Haine, incaltaminte si accesorii de moda la preturi incredibile.",

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Cod Reducere PC Madd — Calculatoare si IT 2026 | AmCupon.ro",
   description: "Coduri de reducere PC Madd actualizate zilnic. Reduceri la calculatoare, componente si periferice IT. Promotii PCMadd verificate.",
   keywords: ["cod reducere pcmadd", "pc madd reduceri", "calculatoare reduceri", "pcmadd promotii", "pc madd discount"],
-  alternates: { canonical: "https://amcupon.ro/pcmadd" },
+  alternates: { canonical: "https://amcupon.ro/cod-reducere/pcmadd.com" },
   openGraph: { title: "Reduceri PC Madd IT 2026 | AmCupon.ro", url: "https://amcupon.ro/pcmadd", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
 };
 

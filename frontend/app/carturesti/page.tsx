@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Cod Reducere Carturesti — Oferte Carti 2026 | AmCupon.ro",
   description: "Coduri de reducere Carturesti actualizate zilnic. Reduceri la carti, jocuri de societate, papetarie si cadouri culturale. Promotii Carturesti verificate.",
   keywords: ["cod reducere carturesti", "carturesti reduceri", "carturesti promotii", "carti reducere", "carturesti discount"],
-  alternates: { canonical: "https://amcupon.ro/carturesti" },
+  alternates: { canonical: "https://amcupon.ro/cod-reducere/carturesti.ro" },
   openGraph: {
     title: "Reduceri Carturesti 2026 | AmCupon.ro",
     description: "Coduri de reducere si oferte Carturesti verificate zilnic. Carti, jocuri de societate si cadouri la preturi reduse.",

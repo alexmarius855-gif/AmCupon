@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Cod Reducere Vegis — Produse Naturiste si Bio 2026 | AmCupon.ro",
   description: "Coduri de reducere Vegis actualizate zilnic. Reduceri la produse naturiste, bio, suplimente si alimente organice. Promotii Vegis verificate.",
   keywords: ["cod reducere vegis", "vegis reduceri", "produse naturiste reduceri", "vegis promotii", "vegis discount"],
-  alternates: { canonical: "https://amcupon.ro/vegis" },
+  alternates: { canonical: "https://amcupon.ro/cod-reducere/vegis.ro" },
   openGraph: { title: "Reduceri Vegis Naturiste 2026 | AmCupon.ro", url: "https://amcupon.ro/vegis", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
 };
 

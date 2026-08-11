@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Cod Reducere Otter — Fashion si Streetwear 2026 | AmCupon.ro",
   description: "Coduri de reducere Otter actualizate zilnic. Reduceri la haine streetwear, incaltaminte si accesorii urbane. Promotii Otter verificate.",
   keywords: ["cod reducere otter", "otter reduceri", "streetwear reduceri", "otter promotii", "otter fashion discount"],
-  alternates: { canonical: "https://amcupon.ro/otter" },
+  alternates: { canonical: "https://amcupon.ro/cod-reducere/otter.ro" },
   openGraph: { title: "Reduceri Otter Fashion 2026 | AmCupon.ro", url: "https://amcupon.ro/otter", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
 };
 

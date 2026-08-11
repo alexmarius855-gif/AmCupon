@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Cod Reducere Brico — Oferte Bricolaj 2026 | AmCupon.ro",
   description: "Coduri de reducere Brico Depot actualizate zilnic. Reduceri la materiale constructii, unelte, gradina si decoratiuni. Promotii Brico verificate.",
   keywords: ["cod reducere brico", "brico reduceri", "brico depot promotii", "bricolaj reduceri", "materiale constructii reducere"],
-  alternates: { canonical: "https://amcupon.ro/brico" },
+  alternates: { canonical: "https://amcupon.ro/cod-reducere/brico.ro" },
   openGraph: {
     title: "Reduceri Brico 2026 | AmCupon.ro",
     description: "Coduri de reducere si oferte Brico Depot verificate zilnic. Materiale constructii, unelte si gradina la preturi reduse.",

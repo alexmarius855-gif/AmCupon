@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Cod Reducere Sport Depot — Echipament Sportiv 2026 | AmCupon.ro",
   description: "Coduri de reducere Sport Depot actualizate zilnic. Reduceri la echipament sportiv, imbracaminte si incaltaminte sport. Promotii SportDepot verificate.",
   keywords: ["cod reducere sport depot", "sportdepot reduceri", "echipament sport reduceri", "sport depot promotii", "sportdepot discount"],
-  alternates: { canonical: "https://amcupon.ro/sportdepot" },
+  alternates: { canonical: "https://amcupon.ro/cod-reducere/sportdepot.ro" },
   openGraph: { title: "Reduceri Sport Depot 2026 | AmCupon.ro", url: "https://amcupon.ro/sportdepot", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
 };
 

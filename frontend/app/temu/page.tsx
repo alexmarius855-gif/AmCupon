@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Cod Reducere Temu Romania 2026 — Oferte & Promotii | AmCupon.ro",
   description: "Coduri reducere Temu Romania actualizate zilnic. Transport gratuit, reduceri de pana la 90% la milioane de produse. Promotii Temu verificate pe AmCupon.ro.",
   keywords: ["cod reducere temu", "temu romania reduceri", "temu promotii", "temu transport gratuit", "temu discount", "temu coupon"],
-  alternates: { canonical: "https://amcupon.ro/temu" },
+  alternates: { canonical: "https://amcupon.ro/cod-reducere/temu.com" },
   openGraph: {
     title: "Cod Reducere Temu Romania 2026 | AmCupon.ro",
     description: "Reduceri Temu actualizate zilnic. Milioane de produse la preturi mici cu transport gratuit in Romania.",

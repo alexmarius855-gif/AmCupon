@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Cod Reducere Fashion Days — Oferte Fashion 2026 | AmCupon.ro",
   description: "Coduri de reducere Fashion Days actualizate zilnic. Reduceri la haine, incaltaminte, accesorii de brand la preturi mici. Promotii Fashion Days verificate.",
   keywords: ["cod reducere fashion days", "fashiondays reduceri", "fashion days promotii", "fashion days discount", "haine reduceri"],
-  alternates: { canonical: "https://amcupon.ro/fashiondays" },
+  alternates: { canonical: "https://amcupon.ro/cod-reducere/fashiondays.ro" },
   openGraph: {
     title: "Reduceri Fashion Days 2026 | AmCupon.ro",
     description: "Coduri de reducere si oferte Fashion Days verificate zilnic. Haine, incaltaminte si accesorii de brand la preturi mici.",

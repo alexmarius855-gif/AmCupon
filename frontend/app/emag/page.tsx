@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Reduceri eMAG — Coduri si Oferte eMAG 2026 | AmCupon.ro",
   description: "Toate ofertele si codurile de reducere eMAG actualizate zilnic. Electronice, moda, casa, carti la cel mai mic pret. Promotii eMAG verificate acum.",
   keywords: ["reducere emag", "cod reducere emag", "oferte emag", "emag promotii", "emag discount"],
-  alternates: { canonical: "https://amcupon.ro/emag" },
+  alternates: { canonical: "https://amcupon.ro/cod-reducere/emag.ro" },
   openGraph: {
     title: "Reduceri eMAG 2026 | AmCupon.ro",
     description: "Coduri de reducere si oferte eMAG verificate zilnic. Cel mai mare magazin online din Romania.",

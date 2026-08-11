@@ -64,13 +64,32 @@ Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Pro
   timp ce compileaza, ramane un `.next/dev/types/routes.d.ts` TRUNCHIAT la mijloc, iar `tsc` il
   include si raporteaza zeci de erori de sintaxa care NU sunt in codul tau. Semnul distinctiv:
   toate erorile sunt pe acelasi rand dintr-un fisier din `.next/`. Fix: `rm -rf .next` + rebuild.
+- **CANIBALIZARE — REPARATA** (`scripts/fix_canibalizare_canonical.py`, reutilizabil): **29 de
+  branduri** aveau DOUA pagini pe aceeasi cautare — una editoriala (`/drmax`, `/answear`,
+  `/noriel`, `/trendyol`, `/temu`, `/fashiondays`, `/decathlon`, `/notino`...) si una generata
+  (`/cod-reducere/drmax.ro` etc), fiecare cu canonical propriu. Semnalul se imparte in loc sa se
+  cumuleze — pe un domeniu cu Authority Score 2, pierdere neta pe exact cuvintele valoroase.
+  Fix: pagina de brand isi declara canonical catre pagina de MAGAZIN. Nimic sters, niciun link
+  rupt — pagina ramane live si utila, doar semnalul se consolideaza intr-o singura adresa.
+  De ce castiga pagina de magazin: se potriveste semantic cu interogarea, se actualizeaza singura
+  cu promotiile (pipeline 4h), are tab-uri/produse/recenzii/comparatii, si e deja tinta linkurilor
+  interne. Cele 7 branduri FARA pagina de magazin (altex, flanco, elefant, asos, iherb, asigurari,
+  albire-dinti) nu se ating — acolo pagina de brand e singura.
+  **Capcana prinsa in propriul script**: pentru brandurile cu mai multe domenii de tara
+  (liki24.co.uk/.pl, vidaxl.ro/.bg) `setdefault` alegea arbitrar dupa ordinea din fisier — putea
+  canonicaliza un site ROMANESC catre `.co.uk`. Acum sorteaza cu preferinta `.ro` > `.com` > restul.
+- **Calculatoare noi** (cea mai usoara rezerva de trafic la autoritate mica): `/calculator-tva`
+  (18.100/luna, KD14 — cote verificate live, 21%+11%) si `/calculator-procente` (12.100/luna, KD14
+  — matematica pura, fiecare exemplu verificat aritmetic, plus sectiunea de capcane: +50% urmat de
+  −50% nu revine la initial, procente vs puncte procentuale, reduceri succesive care nu se aduna).
+  **NEconstruite deliberat**: `impozit auto` (6.600/luna) si `concediu medical` (1.600/luna) — au
+  nevoie de cote/plafoane legale verificate din surse oficiale, iar cercetarea a picat pe limita de
+  sesiune. NU inventa procente intr-un calculator fiscal.
 - **RAMAS de reparat (gasit, nereparat inca)**:
-  1. **Canibalizare**: `/altex` si `/cod-reducere/altex.ro` tintesc aceeasi fraza, fiecare cu
-     canonical propriu (~25 branduri). De ales una singura + 301 sau canonical catre cealalta.
-  2. **`lastModified: new Date()`** in 123 de locuri din `sitemap.ts` — toate URL-urile par
+  1. **`lastModified: new Date()`** in 123 de locuri din `sitemap.ts` — toate URL-urile par
      modificate la fiecare build, ceea ce anuleaza semnalul de prospetime. Atentie: `ultima_verificare`
      NU e o alternativa mai buna (pipeline-ul il seteaza "azi" pe toate magazinele la fiecare rulare).
-  3. **REGRESIE feed produse: 33.096 → 3.468 produse**, din care 3.000 de la UN singur magazin
+  2. **REGRESIE feed produse: 33.096 → 3.468 produse**, din care 3.000 de la UN singur magazin
      (navstore.ro); restul de 79 au ~20 fiecare. Zero scule/gradina in feed (0 motocoase, 0 drujbe),
      desi exista 8 magazine partenere reale in nisa cu link de tracking (scule365.ro, sculefix.ro,
      evolutionpowertools.ro, albertool.com, brico.ro, agroclima.ro, hototools.com, magroup.ro).
