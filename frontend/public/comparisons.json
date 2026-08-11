@@ -202,7 +202,7 @@
     "verdict_m1": "Alege Libris pentru transport gratuit la comenzi mai mici si reduceri zilnice mai frecvente. Ideal daca comanzi regulat si vrei cel mai mic pret per carte.",
     "verdict_m2": "Alege Carturesti pentru experienta completa cititor-librarie, acces la librarii fizice pentru ridicare si colectii editoriale curate.",
     "stats1": {
-      "promotii_active": 0,
+      "promotii_active": 1,
       "cashback": "pana la 8%",
       "logo": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_libris.ro_1629366879.png",
       "url_afiliat": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/61047?sub_id=libris.ro"
@@ -213,7 +213,12 @@
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11380/medium/11380.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2F"
     },
-    "promo1": [],
+    "promo1": [
+      {
+        "nume": "Cupon ACTIV! -20% la orice*  Află codul »",
+        "cod_cupon": ""
+      }
+    ],
     "promo2": [],
     "faq": [
       {
@@ -222,7 +227,7 @@
       },
       {
         "q": "Are Libris coduri de reducere active?",
-        "a": "Momentan nu, Libris are 0 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
+        "a": "Da, Libris are 1 oferta activa pe AmCupon.ro in august 2026. Verificam zilnic."
       },
       {
         "q": "Are Carturesti coduri de reducere active?",
@@ -289,11 +294,11 @@
     },
     "promo1": [
       {
-        "nume": "Electro Weekend 07-10 august 2026",
+        "nume": "Crazy Days 11-19 august 2026",
         "cod_cupon": ""
       },
       {
-        "nume": "Stock Busters 4 - 10 august 2026",
+        "nume": "Campanie Cosul Saptamanal, 11-31 august",
         "cod_cupon": ""
       }
     ],
@@ -372,11 +377,11 @@
     },
     "promo1": [
       {
-        "nume": "Electro Weekend 07-10 august 2026",
+        "nume": "Crazy Days 11-19 august 2026",
         "cod_cupon": ""
       },
       {
-        "nume": "Stock Busters 4 - 10 august 2026",
+        "nume": "Campanie Cosul Saptamanal, 11-31 august",
         "cod_cupon": ""
       }
     ],
@@ -753,7 +758,7 @@
     "verdict_m1": "Alege Libris pentru cel mai mare stoc de carti si transport gratuit la comenzi mai mici. Preturile la bestsellers sunt adesea mai bune.",
     "verdict_m2": "Alege Elefant daca vrei si alte produse (electronice, jocuri) intr-o singura comanda alaturi de carti.",
     "stats1": {
-      "promotii_active": 0,
+      "promotii_active": 1,
       "cashback": "pana la 8%",
       "logo": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_libris.ro_1629366879.png",
       "url_afiliat": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/61047?sub_id=libris.ro"
@@ -764,7 +769,12 @@
       "logo": null,
       "url_afiliat": "https://elefant.ro"
     },
-    "promo1": [],
+    "promo1": [
+      {
+        "nume": "Cupon ACTIV! -20% la orice*  Află codul »",
+        "cod_cupon": ""
+      }
+    ],
     "promo2": [],
     "faq": [
       {
@@ -773,7 +783,7 @@
       },
       {
         "q": "Are Libris coduri de reducere active?",
-        "a": "Momentan nu, Libris are 0 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
+        "a": "Da, Libris are 1 oferta activa pe AmCupon.ro in august 2026. Verificam zilnic."
       },
       {
         "q": "Are Elefant coduri de reducere active?",
