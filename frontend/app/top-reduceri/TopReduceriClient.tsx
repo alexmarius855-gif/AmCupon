@@ -278,20 +278,11 @@ export default function TopReduceriClient({
         )}
 
         {/* CTA tools */}
-        <div className="mt-10 grid sm:grid-cols-2 gap-4">
-          <div className="bg-[#111827] rounded-xl border border-[#1e293b] p-5 flex items-center gap-4">
-            <span className="text-3xl">🧮</span>
-            <div>
-              <p className="text-[#f1f5f9] font-bold text-sm">Calculator Reduceri</p>
-              <p className="text-[#94a3b8] text-xs">Cat economisesti cu un cod?</p>
-            </div>
-            <a
-              href="/calculator"
-              className="ml-auto shrink-0 bg-[#1e293b] hover:bg-[#334155] text-[#cbd5e1] font-bold px-4 py-2 rounded-xl text-sm transition-colors"
-            >
-              Calculeaza
-            </a>
-          </div>
+        {/* Grila era pe 2 coloane pentru 2 carduri. Cardul "Calculator Reduceri" a fost
+            eliminat 11.08.2026 odata cu toate uneltele de calcul (vezi redirects din
+            next.config.ts) — linkul ar fi dus la un 301. Ramas un singur card, deci
+            grila trece la o coloana ca sa nu ramana jumatate de rand goala. */}
+        <div className="mt-10 grid gap-4">
           <div className="bg-[#111827] rounded-xl border border-[#1e293b] p-5 flex items-center gap-4">
             <span className="text-3xl">🏪</span>
             <div>

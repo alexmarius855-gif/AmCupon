@@ -56,7 +56,6 @@ const REDUCERI = [
   { href: "/craciun",         label: "Reduceri Craciun" },
   { href: "/idei-cadouri",    label: "Idei cadouri" },
   { href: "/comparatii",      label: "Comparatii magazine" },
-  { href: "/calculator",      label: "Calculator reduceri" },
 ];
 
 // Pentru utilizatori

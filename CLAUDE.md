@@ -78,13 +78,24 @@ Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Pro
   **Capcana prinsa in propriul script**: pentru brandurile cu mai multe domenii de tara
   (liki24.co.uk/.pl, vidaxl.ro/.bg) `setdefault` alegea arbitrar dupa ordinea din fisier — putea
   canonicaliza un site ROMANESC catre `.co.uk`. Acum sorteaza cu preferinta `.ro` > `.com` > restul.
-- **Calculatoare noi** (cea mai usoara rezerva de trafic la autoritate mica): `/calculator-tva`
-  (18.100/luna, KD14 — cote verificate live, 21%+11%) si `/calculator-procente` (12.100/luna, KD14
-  — matematica pura, fiecare exemplu verificat aritmetic, plus sectiunea de capcane: +50% urmat de
-  −50% nu revine la initial, procente vs puncte procentuale, reduceri succesive care nu se aduna).
-  **NEconstruite deliberat**: `impozit auto` (6.600/luna) si `concediu medical` (1.600/luna) — au
-  nevoie de cote/plafoane legale verificate din surse oficiale, iar cercetarea a picat pe limita de
-  sesiune. NU inventa procente intr-un calculator fiscal.
+- **TOATE UNELTELE DE CALCUL — ELIMINATE 11.08.2026** (decizie explicita Alex: "scoatem calculator
+  si tot ce ne poate fi raportat"). Sterse: `/calculator` (reduceri), `/calculator-salariu`,
+  `/calculator-tva`, `/generator-proforma`. Plus `/calculator-procente`, construit in aceeasi zi si
+  niciodata deployat.
+  - **Motivul**: cele fiscale afiseaza cifre reglementate (cote CAS/CASS/impozit, cote TVA) care se
+    schimba prin lege — daca raman nesincronizate, cineva isi poate calcula gresit obligatiile;
+    generatorul de proforma producea un document cu aspect oficial intr-un context in care
+    e-Factura e obligatorie din 2024.
+  - **NU au fost sterse pur si simplu**: erau indexate, deci **redirect 301 catre `/servicii`** in
+    `next.config.ts` (semnalul SEO se transfera, linkurile vechi nu ajung in 404). Scoase si din
+    `sitemap.ts`, `Navbar.tsx`, `Footer.tsx`, `servicii/page.tsx`, `top-reduceri/TopReduceriClient.tsx`
+    (acolo grila a trecut de la 2 coloane la 1, ca sa nu ramana jumatate de rand goala).
+  - **Costul asumat**: ~40.000 cautari/luna cu dificultate mica (calculator tva 18.100/KD14,
+    procente 12.100/KD14, impozit auto 6.600/KD17) — era cea mai usoara rezerva de trafic pentru un
+    domeniu fara autoritate. Decizie de risc, luata in cunostinta de cauza.
+  - **Daca se reiau vreodata**: varianta FARA risc e aritmetica pura (procente, reduceri), nu cote
+    reglementate. Pentru orice calcul fiscal: sursa oficiala verificata la fiecare rulare +
+    disclaimer explicit. NU inventa procente intr-un calculator fiscal.
 - **RAMAS de reparat (gasit, nereparat inca)**:
   1. **`lastModified: new Date()`** in 123 de locuri din `sitemap.ts` — toate URL-urile par
      modificate la fiecare build, ceea ce anuleaza semnalul de prospetime. Atentie: `ultima_verificare`
