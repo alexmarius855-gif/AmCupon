@@ -1,5 +1,5 @@
 # 💰 TOP MAGAZINE după POTENȚIAL DE CÂȘTIG
-> Generat automat 11.08.2026 09:48. Pe astea să le împingi (articole, pin-uri, postări).
+> Generat automat 12.08.2026 10:11. Pe astea să le împingi (articole, pin-uri, postări).
 
 **Scor = comision × popularitate × ofertă.** Comisionul mare singur înșală — astea-s banii REALI.
 
@@ -22,8 +22,8 @@
 | 15 | Fara Daunatori (fara-daunatori.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
 | 16 | Exclusive Home (exclusive-home.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
 | 17 | Doctorshield (doctorshield.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 18 | Brainmarket (brainmarket.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 19 | Estel (estel.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 18 | Estel (estel.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 19 | Brainmarket (brainmarket.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
 | 20 | Niculescu (niculescu.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
 | 21 | Sanoverde (sanoverde.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
 | 22 | Librarie (librarie.net) | 9% | 0 | 🏷️ ofertă | 12.6 |
