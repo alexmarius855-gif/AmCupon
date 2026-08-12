@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
-import { Clock, Flame, Truck, Heart } from "lucide-react";
+import { Clock, Flame, Truck, Heart, Copy } from "lucide-react";
 import { useCopyCod } from "../hooks/useCopyCod";
 import RedirectModal from "./RedirectModal";
 import { calculateDealScore, DEAL_SCORE_VISIBLE_THRESHOLD } from "../../lib/dealScore";
@@ -86,7 +86,13 @@ export default function MagazinCard({ m, numeOverride, astazi, isFavorit, onTogg
 }) {
   const promo = m.promotii?.[0];
   const numeMagazin = numeOverride || numeAfisat(m.magazin);
-  const initiala = numeMagazin.charAt(0).toUpperCase();
+  // Doua litere, ca in referinta (NO, FA, DR): initialele primelor doua cuvinte daca
+  // numele are doua ("Click & Grow" -> CG), altfel primele doua litere ("Notino" -> NO).
+  const initialeDouble = (() => {
+    const cuvinte = numeMagazin.trim().split(/\s+/).filter(w => /[a-z0-9]/i.test(w));
+    if (cuvinte.length >= 2) return (cuvinte[0][0] + cuvinte[1][0]).toUpperCase();
+    return numeMagazin.slice(0, 2).toUpperCase();
+  })();
   const discount = promo ? (extractDiscount(promo.nume) || extractDiscount(promo.descriere)) : null;
   const transportGratuit = areTransportGratuit(promo);
   const [revealed, setRevealed] = useState(false);
@@ -120,73 +126,81 @@ export default function MagazinCard({ m, numeOverride, astazi, isFavorit, onTogg
         <div className="h-0.5 w-full bg-gradient-to-r from-[#c3dd2c] via-[#ddf93c] to-[#ecff7a]" />
       )}
 
+      {/* ── Antet: identitate magazin ──────────────────────────────────────
+          Structura urmeaza referinta: avatar rotund + nume + domeniu dedesubt,
+          discret. Logo-ul REAL are prioritate (recunoasterea brandului conteaza);
+          initiala e doar fallback. Inainte fallback-ul era initiala ALBA pe fundal
+          lime — ilizibil dupa schimbarea temei, pentru ca fundalul si textul stau
+          pe elemente DIFERITE, iar migrarea automata cauta perechea in acelasi
+          className. Acum e text inchis pe lime, verificat. */}
       <a href={`/cod-reducere/${m.magazin}`} className="flex items-start gap-3 pt-4 px-4 pb-3 relative">
-        <div className="relative w-14 h-14 rounded-xl overflow-hidden flex items-center justify-center shrink-0 bg-[#ffffff] p-1.5 ring-1 ring-[#2a2f36]/60 group-hover:ring-[#ddf93c]/60 transition-all">
+        <div className="relative w-11 h-11 rounded-full overflow-hidden flex items-center justify-center shrink-0 bg-[#ffffff] ring-1 ring-[#2a2f36]/60 group-hover:ring-[#ddf93c]/60 transition-all">
           {logoSrc ? (
-            <Image src={logoSrc} alt={numeMagazin} fill sizes="56px" className="object-contain p-1.5" onError={() => setLogoIdx((i) => i + 1)} unoptimized />
+            <Image src={logoSrc} alt={numeMagazin} fill sizes="44px" className="object-contain p-1.5" onError={() => setLogoIdx((i) => i + 1)} unoptimized />
           ) : (
-            <div className="w-full h-full rounded-lg bg-gradient-to-br from-[#ddf93c] to-[#c3dd2c] flex items-center justify-center">
-              <span className="text-white font-black text-2xl">{initiala}</span>
+            <div className="w-full h-full bg-[#ddf93c] flex items-center justify-center">
+              <span className="text-[#0c1000] font-black text-sm tracking-tight">{initialeDouble}</span>
             </div>
           )}
         </div>
 
-        <div className="min-w-0 flex-1 pt-0.5">
-          <div className="flex items-center justify-between gap-2">
-            <h3 className="font-black text-[#ffffff] text-base leading-tight group-hover:text-[#ecff7a] transition-colors truncate">{numeMagazin}</h3>
-            {onToggleFavorit && (
-              <button onClick={e => { e.preventDefault(); e.stopPropagation(); onToggleFavorit(m.magazin, e); }}
-                className="shrink-0 p-1 rounded-full hover:bg-[#1f2329] transition-colors"
-                title={isFavorit ? "Elimina din favorite" : "Adauga la favorite"} aria-label="Favorite">
-                <Heart className={`w-4 h-4 transition-colors ${isFavorit ? "fill-red-500 stroke-red-500" : "fill-none stroke-[#3a4048] hover:stroke-red-400"}`} strokeWidth={2} />
-              </button>
-            )}
-          </div>
-          <div className="flex items-center gap-1.5 mt-1.5 flex-wrap">
-            {m.categorie && (
-              <span className="text-[10px] font-semibold text-[#9399a0] bg-[#1f2329]/80 px-2 py-0.5 rounded-full truncate max-w-[9rem]">{m.categorie}</span>
-            )}
-            {m.exclusiv && (
-              <span className="text-[10px] font-bold bg-[#ddf93c] text-[#0c1000] px-2 py-0.5 rounded-full shrink-0">Exclusiv</span>
-            )}
-            {transportGratuit && (
-              <span className="flex items-center gap-1 text-[10px] font-bold text-[#ecff7a] bg-[#ddf93c]/10 border border-[#ddf93c]/30 px-2 py-0.5 rounded-full shrink-0">
-                <Truck className="w-3 h-3" /> Transport gratuit
-              </span>
-            )}
-            {showDealScore && (
-              <span title="Scor calculat de AmCupon din reducere, cod, prospețime și exclusivitate"
-                className="flex items-center gap-1 text-[10px] font-bold bg-[#ddf93c]/10 border border-[#ddf93c]/40 text-[#ecff7a] px-1.5 py-0.5 rounded-full shrink-0">
-                <Flame className="w-3 h-3" /> {dealScore}
-              </span>
-            )}
+        <div className="min-w-0 flex-1">
+          <div className="flex items-start justify-between gap-2">
+            <div className="min-w-0">
+              <h3 className="font-bold text-[#ffffff] text-[15px] leading-tight group-hover:text-[#ddf93c] transition-colors truncate">{numeMagazin}</h3>
+              <p className="text-[11px] text-[#6b7178] truncate mt-0.5">{m.magazin}</p>
+            </div>
+            <div className="flex items-center gap-1 shrink-0">
+              {showDealScore && (
+                <span title="Scor calculat de AmCupon din reducere, cod, prospețime și exclusivitate"
+                  className="flex items-center gap-1 text-[10px] font-bold bg-[#ddf93c]/12 border border-[#ddf93c]/30 text-[#ddf93c] px-2 py-0.5 rounded-full">
+                  <Flame className="w-3 h-3" /> {dealScore}
+                </span>
+              )}
+              {onToggleFavorit && (
+                <button onClick={e => { e.preventDefault(); e.stopPropagation(); onToggleFavorit(m.magazin, e); }}
+                  className="p-1 rounded-full hover:bg-[#1f2329] transition-colors"
+                  title={isFavorit ? "Elimina din favorite" : "Adauga la favorite"} aria-label="Favorite">
+                  <Heart className={`w-4 h-4 transition-colors ${isFavorit ? "fill-red-500 stroke-red-500" : "fill-none stroke-[#3a4048] hover:stroke-red-400"}`} strokeWidth={2} />
+                </button>
+              )}
+            </div>
           </div>
         </div>
-
-        {/* Reducerea = ancora vizuala a cardului. Doar cand exista un procent REAL
-            parsat din titlul promotiei — niciodata inventat sau rotunjit optimist. */}
-        {discount && (
-          <div className="shrink-0 text-right leading-none">
-            <div className="text-2xl font-black bg-gradient-to-br from-[#ecff7a] to-[#ddf93c] bg-clip-text text-transparent">
-              -{discount}
-            </div>
-            <div className="text-[9px] font-bold uppercase tracking-wider text-[#9399a0] mt-0.5">reducere</div>
-          </div>
-        )}
       </a>
 
+      {/* ── Corp: reducerea e eroul cardului, ca in referinta ─────────────── */}
       <div className="px-4 pb-3 flex-1">
         {promo ? (
           <div>
-            <span className="text-[10px] font-bold text-[#ddf93c] uppercase tracking-widest">
-              {promo.cod_cupon ? "Cod reducere" : "Ofertă specială"}
-            </span>
-            <p className="text-sm text-[#c9ced5] mt-1 line-clamp-2 leading-snug">{promo.nume}</p>
-            {promo.zile_ramase <= 3 && (
-              <span className="inline-flex items-center gap-1 mt-2 text-[11px] font-bold text-red-400 bg-red-500/10 border border-red-500/25 px-2 py-0.5 rounded-full">
-                <Clock className="w-3 h-3" /> Expiră {promo.zile_ramase === 0 ? "azi" : `în ${promo.zile_ramase}z`}
-              </span>
+            {/* Procentul URIAS, lime plin (nu gradient-text — se citeste mai bine).
+                Afisat DOAR cand exista un procent real parsat din titlul promotiei. */}
+            {discount && (
+              <div className="text-[2.5rem] leading-[1.05] font-black text-[#ddf93c] tracking-tight mb-1">
+                -{discount}
+              </div>
             )}
+            <p className={`font-bold text-[#ffffff] leading-snug line-clamp-2 ${discount ? "text-[15px]" : "text-base"}`}>
+              {promo.nume}
+            </p>
+            <div className="flex items-center gap-1.5 mt-2 flex-wrap">
+              {m.categorie && (
+                <span className="text-[10px] font-semibold text-[#9399a0] bg-[#1f2329] px-2 py-0.5 rounded-full truncate max-w-[9rem]">{m.categorie}</span>
+              )}
+              {m.exclusiv && (
+                <span className="text-[10px] font-bold bg-[#ddf93c] text-[#0c1000] px-2 py-0.5 rounded-full shrink-0">Exclusiv</span>
+              )}
+              {transportGratuit && (
+                <span className="flex items-center gap-1 text-[10px] font-bold text-[#ddf93c] bg-[#ddf93c]/10 border border-[#ddf93c]/25 px-2 py-0.5 rounded-full shrink-0">
+                  <Truck className="w-3 h-3" /> Transport gratuit
+                </span>
+              )}
+              {promo.zile_ramase <= 3 && (
+                <span className="inline-flex items-center gap-1 text-[10px] font-bold text-[#e64343] bg-[#e64343]/10 border border-[#e64343]/25 px-2 py-0.5 rounded-full">
+                  <Clock className="w-3 h-3" /> Expiră {promo.zile_ramase === 0 ? "azi" : `în ${promo.zile_ramase}z`}
+                </span>
+              )}
+            </div>
           </div>
         ) : (
           <p className="text-sm text-[#9399a0] leading-snug">Vizitează magazinul prin linkul nostru afiliat — comisionul nu îți crește prețul.</p>
@@ -216,15 +230,19 @@ export default function MagazinCard({ m, numeOverride, astazi, isFavorit, onTogg
               </a>
             </div>
           ) : (
-            <div className="space-y-2">
-              <div className="border border-dashed border-[#2a2f36] rounded-xl py-2.5 text-center bg-[#06080b]/40">
-                <span className="font-mono text-[#9399a0] tracking-[0.2em] text-sm">{maskCod(promo.cod_cupon)}</span>
-              </div>
-              <button onClick={onCopiazaClick}
-                className="w-full bg-gradient-to-r from-[#ddf93c] to-[#ddf93c] hover:from-[#ecff7a] hover:to-[#ddf93c] text-[#0c1000] hover:text-[#0c1000] font-bold py-2.5 rounded-xl text-sm transition-all shadow-lg shadow-[#ddf93c]/20 active:scale-[0.98]">
-                Copiază codul
-              </button>
-            </div>
+            /* Codul si actiunea pe ACELASI rand, in caseta punctata — tiparul din
+               referinta. Un singur click: dezvaluie codul, il copiaza si deschide
+               magazinul (useCopyCod pastreaza copy+open sincrone, altfel browserul
+               blocheaza popup-ul). */
+            <button onClick={onCopiazaClick}
+              className="w-full flex items-center justify-between gap-2 border border-dashed border-[#ddf93c]/50 hover:border-[#ddf93c] rounded-xl pl-3.5 pr-2 py-2 bg-[#ddf93c]/[0.06] hover:bg-[#ddf93c]/10 transition-all active:scale-[0.99] group/cod">
+              <span className="font-mono font-bold text-[#ddf93c] tracking-[0.15em] text-sm truncate">
+                {maskCod(promo.cod_cupon)}
+              </span>
+              <span className="flex items-center gap-1.5 shrink-0 text-[11px] font-black uppercase tracking-wider text-[#0c1000] bg-[#ddf93c] group-hover/cod:bg-[#ecff7a] px-2.5 py-1.5 rounded-lg transition-colors">
+                <Copy className="w-3 h-3" /> Copiază
+              </span>
+            </button>
           )
         ) : promo ? (
           <a href={link} target="_blank" rel="sponsored noopener noreferrer"
