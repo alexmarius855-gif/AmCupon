@@ -101,7 +101,7 @@ async function createStoryBlob(item: SocialItem, tone: Tone, url: string): Promi
   ctx.lineWidth = 4;
   ctx.strokeRect(70, 70, 940, 1780);
 
-  ctx.fillStyle = "#14b8a6";
+  ctx.fillStyle = "#ddf93c";
   ctx.font = "900 42px Arial";
   ctx.fillText("AmCupon.ro", 110, 170);
 
@@ -118,7 +118,7 @@ async function createStoryBlob(item: SocialItem, tone: Tone, url: string): Promi
     y += 92;
   }
 
-  ctx.fillStyle = "#cbd5e1";
+  ctx.fillStyle = "#c9ced5";
   ctx.font = "700 42px Arial";
   const subLines = wrapLines(ctx, storySubtitle(item, tone), 830).slice(0, 3);
   y += 28;
@@ -128,7 +128,7 @@ async function createStoryBlob(item: SocialItem, tone: Tone, url: string): Promi
   }
 
   if (item.procent) {
-    ctx.fillStyle = "#14b8a6";
+    ctx.fillStyle = "#ddf93c";
     ctx.fillRect(110, y + 70, 320, 124);
     ctx.fillStyle = "#080712";
     ctx.font = "900 70px Arial";
@@ -140,7 +140,7 @@ async function createStoryBlob(item: SocialItem, tone: Tone, url: string): Promi
   ctx.fillStyle = "#ffffff";
   ctx.font = "800 40px Arial";
   ctx.fillText("Link:", 150, 1455);
-  ctx.fillStyle = "#cbd5e1";
+  ctx.fillStyle = "#c9ced5";
   ctx.font = "700 34px Arial";
   const cleanUrl = url.replace(/^https?:\/\//, "");
   const urlLines = wrapLines(ctx, cleanUrl, 760).slice(0, 3);
@@ -212,8 +212,8 @@ export default function SocialStudio({ items }: { items: SocialItem[] }) {
       <main className="min-h-screen bg-[#070a0f] text-white flex items-center justify-center px-4">
         <div className="max-w-md text-center">
           <h1 className="text-2xl font-black mb-3">Social Studio</h1>
-          <p className="text-[#cbd5e1]">Nu am gasit postari in data/postari-zilnice.json.</p>
-          <Link href="/admin" className="inline-block mt-6 text-[#cbd5e1] underline">Inapoi la admin</Link>
+          <p className="text-[#c9ced5]">Nu am gasit postari in data/postari-zilnice.json.</p>
+          <Link href="/admin" className="inline-block mt-6 text-[#c9ced5] underline">Inapoi la admin</Link>
         </div>
       </main>
     );
@@ -224,21 +224,21 @@ export default function SocialStudio({ items }: { items: SocialItem[] }) {
       <div className="max-w-6xl mx-auto px-4 py-5 sm:py-8">
         <div className="flex items-center justify-between gap-4 mb-5">
           <div>
-            <p className="text-xs font-black uppercase tracking-widest text-[#14b8a6]">AmCupon.ro</p>
+            <p className="text-xs font-black uppercase tracking-widest text-[#ddf93c]">AmCupon.ro</p>
             <h1 className="text-2xl sm:text-4xl font-black">Social Studio</h1>
-            <p className="text-sm text-[#cbd5e1] mt-1">Story evergreen pentru telefon: alege, genereaza, share.</p>
+            <p className="text-sm text-[#c9ced5] mt-1">Story evergreen pentru telefon: alege, genereaza, share.</p>
           </div>
-          <Link href="/admin" className="shrink-0 rounded-xl border border-[#1e293b] px-4 py-2 text-sm font-bold text-[#cbd5e1]">Admin</Link>
+          <Link href="/admin" className="shrink-0 rounded-xl border border-[#1f2329] px-4 py-2 text-sm font-bold text-[#c9ced5]">Admin</Link>
         </div>
 
         <div className="grid lg:grid-cols-[380px_1fr] gap-5 items-start">
-          <section className="rounded-2xl border border-[#1e293b] bg-[#11100c] p-4 space-y-4">
+          <section className="rounded-2xl border border-[#1f2329] bg-[#11100c] p-4 space-y-4">
             <div>
-              <label className="block text-xs font-bold uppercase tracking-widest text-[#cbd5e1] mb-2">Oferta</label>
+              <label className="block text-xs font-bold uppercase tracking-widest text-[#c9ced5] mb-2">Oferta</label>
               <select
                 value={selectedIndex}
                 onChange={(e) => setSelectedIndex(Number(e.target.value))}
-                className="w-full rounded-xl bg-[#201c14] border border-[#1e293b] px-3 py-3 text-sm text-white"
+                className="w-full rounded-xl bg-[#201c14] border border-[#1f2329] px-3 py-3 text-sm text-white"
               >
                 {items.map((it, idx) => (
                   <option key={`${it.magazin}-${idx}`} value={idx}>{it.nume} {it.procent ? `(${it.procent})` : ""}</option>
@@ -247,7 +247,7 @@ export default function SocialStudio({ items }: { items: SocialItem[] }) {
             </div>
 
             <div>
-              <p className="block text-xs font-bold uppercase tracking-widest text-[#cbd5e1] mb-2">Tip story</p>
+              <p className="block text-xs font-bold uppercase tracking-widest text-[#c9ced5] mb-2">Tip story</p>
               <div className="grid grid-cols-3 gap-2">
                 {[
                   ["evergreen", "Evergreen"],
@@ -258,7 +258,7 @@ export default function SocialStudio({ items }: { items: SocialItem[] }) {
                     key={value}
                     onClick={() => setTone(value as Tone)}
                     className="rounded-xl border px-3 py-2 text-xs font-black"
-                    style={{ borderColor: tone === value ? "#14b8a6" : "#1e293b", color: tone === value ? "#f8e7b0" : "#94a3b8", background: tone === value ? "#2a2110" : "#0a0f1a" }}
+                    style={{ borderColor: tone === value ? "#ddf93c" : "#1f2329", color: tone === value ? "#f8e7b0" : "#9399a0", background: tone === value ? "#2a2110" : "#06080b" }}
                   >
                     {label}
                   </button>
@@ -266,48 +266,48 @@ export default function SocialStudio({ items }: { items: SocialItem[] }) {
               </div>
             </div>
 
-            <div className="rounded-xl bg-[#0a0f1a] border border-[#1e293b] p-3 text-sm text-[#c8bda2]">
-              <p><span className="text-[#cbd5e1]">Magazin:</span> {item.nume}</p>
-              <p><span className="text-[#cbd5e1]">Categorie:</span> {item.categorie || "-"}</p>
-              <p><span className="text-[#cbd5e1]">Link:</span> {shareUrl.replace(/^https?:\/\//, "")}</p>
+            <div className="rounded-xl bg-[#06080b] border border-[#1f2329] p-3 text-sm text-[#c8bda2]">
+              <p><span className="text-[#c9ced5]">Magazin:</span> {item.nume}</p>
+              <p><span className="text-[#c9ced5]">Categorie:</span> {item.categorie || "-"}</p>
+              <p><span className="text-[#c9ced5]">Link:</span> {shareUrl.replace(/^https?:\/\//, "")}</p>
             </div>
 
             <div>
-              <label className="block text-xs font-bold uppercase tracking-widest text-[#cbd5e1] mb-2">Caption</label>
-              <textarea readOnly value={caption} className="h-44 w-full rounded-xl bg-[#201c14] border border-[#1e293b] px-3 py-3 text-sm text-[#cbd5e1]" />
+              <label className="block text-xs font-bold uppercase tracking-widest text-[#c9ced5] mb-2">Caption</label>
+              <textarea readOnly value={caption} className="h-44 w-full rounded-xl bg-[#201c14] border border-[#1f2329] px-3 py-3 text-sm text-[#c9ced5]" />
             </div>
 
             <div className="grid grid-cols-2 gap-2">
-              <button onClick={() => copyText(caption, "Caption copiat.")} className="rounded-xl bg-[#0a0f1a] px-3 py-3 text-sm font-black text-[#cbd5e1]">Copiaza caption</button>
-              <button onClick={() => copyText(shareUrl, "Link copiat.")} className="rounded-xl bg-[#0a0f1a] px-3 py-3 text-sm font-black text-[#cbd5e1]">Copiaza link</button>
-              <button onClick={downloadStory} className="rounded-xl bg-[#0d9488] px-3 py-3 text-sm font-black text-white">Descarca Story</button>
-              <button onClick={shareStory} className="rounded-xl bg-[#f1f5f9] px-3 py-3 text-sm font-black text-[#0a0f1a]">Share telefon</button>
+              <button onClick={() => copyText(caption, "Caption copiat.")} className="rounded-xl bg-[#06080b] px-3 py-3 text-sm font-black text-[#c9ced5]">Copiaza caption</button>
+              <button onClick={() => copyText(shareUrl, "Link copiat.")} className="rounded-xl bg-[#06080b] px-3 py-3 text-sm font-black text-[#c9ced5]">Copiaza link</button>
+              <button onClick={downloadStory} className="rounded-xl bg-[#ddf93c] px-3 py-3 text-sm font-black text-[#0c1000]">Descarca Story</button>
+              <button onClick={shareStory} className="rounded-xl bg-[#ffffff] px-3 py-3 text-sm font-black text-[#06080b]">Share telefon</button>
             </div>
 
-            {status && <p className="rounded-xl border border-[#3d331e] bg-[#19150e] p-3 text-sm text-[#cbd5e1]">{status}</p>}
+            {status && <p className="rounded-xl border border-[#3d331e] bg-[#19150e] p-3 text-sm text-[#c9ced5]">{status}</p>}
           </section>
 
           <section className="lg:sticky lg:top-6">
             <div className="mx-auto w-full max-w-[360px]">
-              <div ref={previewRef} className="aspect-[9/16] overflow-hidden rounded-[2rem] border border-[#14b8a6]/40 bg-[#080712] p-7 shadow-2xl shadow-black/40">
-                <div className="h-full rounded-[1.5rem] border border-[#14b8a6]/30 bg-[radial-gradient(circle_at_top_right,rgba(201,166,62,0.26),transparent_34%),linear-gradient(160deg,#070a0f,#171008_55%,#05060a)] p-6 flex flex-col">
+              <div ref={previewRef} className="aspect-[9/16] overflow-hidden rounded-[2rem] border border-[#ddf93c]/40 bg-[#080712] p-7 shadow-2xl shadow-black/40">
+                <div className="h-full rounded-[1.5rem] border border-[#ddf93c]/30 bg-[radial-gradient(circle_at_top_right,rgba(201,166,62,0.26),transparent_34%),linear-gradient(160deg,#070a0f,#171008_55%,#05060a)] p-6 flex flex-col">
                   <div>
-                    <p className="text-[#14b8a6] font-black text-lg">AmCupon.ro</p>
+                    <p className="text-[#ddf93c] font-black text-lg">AmCupon.ro</p>
                     <p className="text-white/60 text-xs font-bold mt-1">story de salvat</p>
                   </div>
                   <div className="mt-auto mb-auto">
                     <h2 className="text-4xl font-black leading-tight">{storyTitle(item, tone)}</h2>
-                    <p className="mt-5 text-[#cbd5e1] text-lg font-bold leading-snug">{storySubtitle(item, tone)}</p>
-                    {item.procent && <div className="mt-7 inline-flex bg-[#14b8a6] text-[#080712] px-5 py-3 rounded-xl text-3xl font-black">{item.procent}</div>}
+                    <p className="mt-5 text-[#c9ced5] text-lg font-bold leading-snug">{storySubtitle(item, tone)}</p>
+                    {item.procent && <div className="mt-7 inline-flex bg-[#ddf93c] text-[#080712] px-5 py-3 rounded-xl text-3xl font-black">{item.procent}</div>}
                   </div>
                   <div className="rounded-2xl bg-white/10 p-4">
                     <p className="text-white font-black text-sm">Link:</p>
-                    <p className="text-[#cbd5e1] text-sm break-words mt-1">{shareUrl.replace(/^https?:\/\//, "")}</p>
+                    <p className="text-[#c9ced5] text-sm break-words mt-1">{shareUrl.replace(/^https?:\/\//, "")}</p>
                   </div>
                   <p className="text-white/70 text-xs font-bold mt-5">Salveaza pentru urmatoarea comanda</p>
                 </div>
               </div>
-              <p className="mt-3 text-center text-xs text-[#cbd5e1]">Preview. Butonul descarca PNG real 1080x1920.</p>
+              <p className="mt-3 text-center text-xs text-[#c9ced5]">Preview. Butonul descarca PNG real 1080x1920.</p>
             </div>
           </section>
         </div>

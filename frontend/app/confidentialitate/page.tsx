@@ -8,41 +8,41 @@ export const metadata: Metadata = {
 
 export default function ConfidentialitatePage() {
   return (
-    <div className="min-h-screen bg-[#0a0f1a]">
-      <header className="bg-[#0a0f1a] border-b border-[#1e293b]">
+    <div className="min-h-screen bg-[#06080b]">
+      <header className="bg-[#06080b] border-b border-[#1f2329]">
         <div className="max-w-4xl mx-auto px-4 py-3 flex items-center gap-2">
           <Link href="/" className="flex items-center gap-1.5">
-            <div className="bg-[#0d9488] text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
-            <span className="font-black text-[#f1f5f9] text-xl">Cupon</span>
-            <span className="text-[#0d9488] font-black text-xl">.ro</span>
+            <div className="bg-[#ddf93c] text-[#0c1000] font-black text-base px-2 py-1 rounded-lg">Am</div>
+            <span className="font-black text-[#ffffff] text-xl">Cupon</span>
+            <span className="text-[#ddf93c] font-black text-xl">.ro</span>
           </Link>
-          <span className="text-[#94a3b8] mx-1">/</span>
-          <span className="text-sm font-semibold text-[#cbd5e1]">Politică de Confidențialitate</span>
+          <span className="text-[#9399a0] mx-1">/</span>
+          <span className="text-sm font-semibold text-[#c9ced5]">Politică de Confidențialitate</span>
         </div>
       </header>
 
       <div className="max-w-4xl mx-auto px-4 py-10">
-        <h1 className="text-3xl font-black text-[#f1f5f9] mb-2">Politică de Confidențialitate</h1>
-        <p className="text-sm text-[#94a3b8] mb-8">Ultima actualizare: Mai 2026 · Conform GDPR (Regulamentul UE 2016/679)</p>
+        <h1 className="text-3xl font-black text-[#ffffff] mb-2">Politică de Confidențialitate</h1>
+        <p className="text-sm text-[#9399a0] mb-8">Ultima actualizare: Mai 2026 · Conform GDPR (Regulamentul UE 2016/679)</p>
 
-        <div className="bg-[#111827] rounded-xl border border-[#1e293b] p-8 space-y-8 text-[#cbd5e1] leading-relaxed">
+        <div className="bg-[#14181c] rounded-xl border border-[#1f2329] p-8 space-y-8 text-[#c9ced5] leading-relaxed">
 
           <section>
-            <h2 className="text-xl font-black text-[#f1f5f9] mb-3">1. Cine suntem (Operatorul de date)</h2>
+            <h2 className="text-xl font-black text-[#ffffff] mb-3">1. Cine suntem (Operatorul de date)</h2>
             <p>
               <strong>AmCupon.ro</strong> este o platformă de agregare a codurilor de reducere și ofertelor afiliate din România,
               operată prin platforma de afiliere <strong>2Performant</strong>.
             </p>
             <p className="mt-2">
               <strong>Contact:</strong>{" "}
-              <a href="mailto:contact@amcupon.ro" className="text-[#0d9488] hover:underline">contact@amcupon.ro</a>
+              <a href="mailto:contact@amcupon.ro" className="text-[#ddf93c] hover:underline">contact@amcupon.ro</a>
               <br />
               <strong>Website:</strong> https://amcupon.ro
             </p>
           </section>
 
           <section>
-            <h2 className="text-xl font-black text-[#f1f5f9] mb-3">2. Ce date colectăm</h2>
+            <h2 className="text-xl font-black text-[#ffffff] mb-3">2. Ce date colectăm</h2>
             <p className="mb-3">AmCupon.ro nu solicită crearea unui cont și nu colectează date personale identificabile în mod direct. Datele tehnice colectate automat includ:</p>
             <ul className="list-disc ml-6 space-y-2">
               <li><strong>Date de navigare anonime:</strong> paginile vizitate, durata sesiunii, tipul dispozitivului, țara de origine — colectate prin Vercel Analytics în mod agregat și anonim.</li>
@@ -53,13 +53,13 @@ export default function ConfidentialitatePage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-black text-[#f1f5f9] mb-3">3. Scopul prelucrării datelor</h2>
+            <h2 className="text-xl font-black text-[#ffffff] mb-3">3. Scopul prelucrării datelor</h2>
             <table className="w-full text-sm border-collapse">
               <thead>
-                <tr className="bg-[#1e293b]">
-                  <th className="text-left p-3 border border-[#1e293b] font-bold">Date</th>
-                  <th className="text-left p-3 border border-[#1e293b] font-bold">Scop</th>
-                  <th className="text-left p-3 border border-[#1e293b] font-bold">Temei legal</th>
+                <tr className="bg-[#1f2329]">
+                  <th className="text-left p-3 border border-[#1f2329] font-bold">Date</th>
+                  <th className="text-left p-3 border border-[#1f2329] font-bold">Scop</th>
+                  <th className="text-left p-3 border border-[#1f2329] font-bold">Temei legal</th>
                 </tr>
               </thead>
               <tbody>
@@ -69,10 +69,10 @@ export default function ConfidentialitatePage() {
                   ["Cookie-uri 2Performant", "Atribuirea comisioanelor afiliate la cumpărăturile efectuate", "Consimțământ (GDPR Art. 6(1)(a))"],
                   ["Adresa de email (dacă ne contactezi)", "Răspunsul la solicitări și suport", "Consimțământ (GDPR Art. 6(1)(a))"],
                 ].map(([d, s, t]) => (
-                  <tr key={d} className="border-b border-[#1e293b]">
-                    <td className="p-3 border border-[#1e293b] font-medium">{d}</td>
-                    <td className="p-3 border border-[#1e293b]">{s}</td>
-                    <td className="p-3 border border-[#1e293b] text-xs text-[#cbd5e1]">{t}</td>
+                  <tr key={d} className="border-b border-[#1f2329]">
+                    <td className="p-3 border border-[#1f2329] font-medium">{d}</td>
+                    <td className="p-3 border border-[#1f2329]">{s}</td>
+                    <td className="p-3 border border-[#1f2329] text-xs text-[#c9ced5]">{t}</td>
                   </tr>
                 ))}
               </tbody>
@@ -80,7 +80,7 @@ export default function ConfidentialitatePage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-black text-[#f1f5f9] mb-3">4. Durata stocării datelor</h2>
+            <h2 className="text-xl font-black text-[#ffffff] mb-3">4. Durata stocării datelor</h2>
             <ul className="list-disc ml-6 space-y-2">
               <li><strong>Date Analytics Vercel:</strong> maxim 30 de zile, în mod agregat și anonim</li>
               <li><strong>Cookie-uri tehnice (localStorage):</strong> până la ștergerea manuală de către utilizator sau expirarea browserului</li>
@@ -90,7 +90,7 @@ export default function ConfidentialitatePage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-black text-[#f1f5f9] mb-3">5. Destinatarii datelor (cui le transmitem)</h2>
+            <h2 className="text-xl font-black text-[#ffffff] mb-3">5. Destinatarii datelor (cui le transmitem)</h2>
             <ul className="list-disc ml-6 space-y-2">
               <li><strong>Vercel Inc.</strong> (SUA) — furnizor de hosting și analytics; operează sub Privacy Shield / Clauze Contractuale Standard UE</li>
               <li><strong>2Performant Network SRL</strong> (România, București) — platforma de afiliere prin care funcționăm</li>
@@ -99,7 +99,7 @@ export default function ConfidentialitatePage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-black text-[#f1f5f9] mb-3">6. Drepturile tale (GDPR)</h2>
+            <h2 className="text-xl font-black text-[#ffffff] mb-3">6. Drepturile tale (GDPR)</h2>
             <p className="mb-3">Conform GDPR, ai următoarele drepturi în legătură cu datele tale personale:</p>
             <ul className="list-disc ml-6 space-y-2">
               <li><strong>Dreptul de acces</strong> — poți solicita o copie a datelor pe care le deținem despre tine</li>
@@ -112,13 +112,13 @@ export default function ConfidentialitatePage() {
             </ul>
             <p className="mt-3">
               Pentru exercitarea acestor drepturi, contactează-ne la:{" "}
-              <a href="mailto:contact@amcupon.ro" className="text-[#0d9488] hover:underline">contact@amcupon.ro</a>.
+              <a href="mailto:contact@amcupon.ro" className="text-[#ddf93c] hover:underline">contact@amcupon.ro</a>.
               Răspundem în maxim <strong>30 de zile</strong>.
             </p>
           </section>
 
           <section>
-            <h2 className="text-xl font-black text-[#f1f5f9] mb-3">7. Cookie-uri</h2>
+            <h2 className="text-xl font-black text-[#ffffff] mb-3">7. Cookie-uri</h2>
             <p className="mb-3">Site-ul folosește următoarele tipuri de cookie-uri:</p>
             <ul className="list-disc ml-6 space-y-2">
               <li><strong>Cookie-uri strict necesare:</strong> salvarea preferințelor (temă, favorite, consimțământ) în localStorage — nu necesită consimțământ</li>
@@ -129,7 +129,7 @@ export default function ConfidentialitatePage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-black text-[#f1f5f9] mb-3">8. Securitatea datelor</h2>
+            <h2 className="text-xl font-black text-[#ffffff] mb-3">8. Securitatea datelor</h2>
             <p>
               Site-ul funcționează exclusiv prin HTTPS (conexiune criptată). Nu stocăm parole, date de card sau date
               financiare. Infrastructura este găzduită pe Vercel, care respectă standardele SOC 2 Type 2.
@@ -137,20 +137,20 @@ export default function ConfidentialitatePage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-black text-[#f1f5f9] mb-3">9. Plângeri și autoritate de supraveghere</h2>
+            <h2 className="text-xl font-black text-[#ffffff] mb-3">9. Plângeri și autoritate de supraveghere</h2>
             <p>
               Dacă consideri că drepturile tale au fost încălcate, poți depune o plângere la:
             </p>
             <ul className="list-disc ml-6 mt-2 space-y-1">
               <li>
                 <strong>ANSPDCP</strong> (Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal):{" "}
-                <a href="https://www.dataprotection.ro" target="_blank" rel="noopener noreferrer" className="text-[#0d9488] hover:underline">
+                <a href="https://www.dataprotection.ro" target="_blank" rel="noopener noreferrer" className="text-[#ddf93c] hover:underline">
                   www.dataprotection.ro
                 </a>
               </li>
               <li>
                 <strong>ANPC:</strong>{" "}
-                <a href="https://anpc.ro" target="_blank" rel="noopener noreferrer" className="text-[#0d9488] hover:underline">
+                <a href="https://anpc.ro" target="_blank" rel="noopener noreferrer" className="text-[#ddf93c] hover:underline">
                   anpc.ro
                 </a>
               </li>
@@ -158,7 +158,7 @@ export default function ConfidentialitatePage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-black text-[#f1f5f9] mb-3">10. Modificări ale acestei politici</h2>
+            <h2 className="text-xl font-black text-[#ffffff] mb-3">10. Modificări ale acestei politici</h2>
             <p>
               Ne rezervăm dreptul de a actualiza această politică. Modificările importante vor fi anunțate
               prin actualizarea datei din antetul acestei pagini. Continuarea utilizării site-ului după
@@ -169,7 +169,7 @@ export default function ConfidentialitatePage() {
         </div>
 
         <div className="mt-8 text-center">
-          <Link href="/" className="text-sm text-[#94a3b8] hover:text-[#0d9488] transition-colors">
+          <Link href="/" className="text-sm text-[#9399a0] hover:text-[#ddf93c] transition-colors">
             ← Înapoi la AmCupon.ro
           </Link>
         </div>

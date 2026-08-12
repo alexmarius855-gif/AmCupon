@@ -31,7 +31,7 @@ export default function AdminLogin() {
   }
 
   return (
-    <div className="min-h-screen bg-[#0a0f1a] flex items-center justify-center px-4">
+    <div className="min-h-screen bg-[#06080b] flex items-center justify-center px-4">
       <div className="w-full max-w-sm">
         {/* Logo */}
         <div className="text-center mb-8">
@@ -39,10 +39,10 @@ export default function AdminLogin() {
             🎛️
           </div>
           <h1 className="text-2xl font-black text-white">Mission Control</h1>
-          <p className="text-[#cbd5e1] text-sm mt-1">AmCupon.ro · Admin Panel</p>
+          <p className="text-[#c9ced5] text-sm mt-1">AmCupon.ro · Admin Panel</p>
         </div>
 
-        <form onSubmit={handleLogin} className="bg-[#0a0f1a] border border-[#1e293b] rounded-2xl p-6 space-y-4 shadow-2xl">
+        <form onSubmit={handleLogin} className="bg-[#06080b] border border-[#1f2329] rounded-2xl p-6 space-y-4 shadow-2xl">
           <div>
             <label className="block text-sm font-semibold text-[#c8bda2] mb-2">
               Parola admin
@@ -54,7 +54,7 @@ export default function AdminLogin() {
               placeholder="••••••••"
               required
               autoFocus
-              className="w-full bg-[#0a0f1a] border border-[#1e293b] text-white rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500/50 placeholder-[#473d28] transition-all"
+              className="w-full bg-[#06080b] border border-[#1f2329] text-white rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500/50 placeholder-[#473d28] transition-all"
             />
           </div>
 
@@ -73,7 +73,7 @@ export default function AdminLogin() {
           </button>
         </form>
 
-        <p className="text-center text-xs text-[#1e293b] mt-6">
+        <p className="text-center text-xs text-[#1f2329] mt-6">
           Session valabila 24h · Acces restricționat
         </p>
       </div>

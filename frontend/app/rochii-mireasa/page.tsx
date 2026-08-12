@@ -52,22 +52,22 @@ export default function RochiiMireasaPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <div className="min-h-screen bg-[#0a0f1a]">
+      <div className="min-h-screen bg-[#06080b]">
 
         {/* HERO */}
-        <section className="relative bg-[#0a0f1a] border-b border-[#1e293b] overflow-hidden">
+        <section className="relative bg-[#06080b] border-b border-[#1f2329] overflow-hidden">
           <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(13,148,136,0.1) 0%, transparent 65%)" }} />
           <div className="relative max-w-4xl mx-auto px-4 pt-12 pb-10 text-center">
-            <nav className="flex justify-center gap-2 text-xs text-[#94a3b8] mb-8">
-              <Link href="/" className="hover:text-[#cbd5e1]">AmCupon.ro</Link>
+            <nav className="flex justify-center gap-2 text-xs text-[#9399a0] mb-8">
+              <Link href="/" className="hover:text-[#c9ced5]">AmCupon.ro</Link>
               <span>/</span>
-              <span className="text-[#cbd5e1]">Rochii Mireasa & Ocazie</span>
+              <span className="text-[#c9ced5]">Rochii Mireasa & Ocazie</span>
             </nav>
             <div className="text-5xl mb-4">👰</div>
-            <h1 className="text-4xl md:text-5xl font-black text-[#f1f5f9] mb-4">
-              Rochii de <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #0d9488, #0d9488)" }}>Mireasa</span> & Ocazie {an}
+            <h1 className="text-4xl md:text-5xl font-black text-[#ffffff] mb-4">
+              Rochii de <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #ddf93c, #ddf93c)" }}>Mireasa</span> & Ocazie {an}
             </h1>
-            <p className="text-[#cbd5e1] text-lg max-w-2xl mx-auto">
+            <p className="text-[#c9ced5] text-lg max-w-2xl mx-auto">
               Pentru mireasa, domnisoare de onoare sau invitati — magazine romanesti verificate.
             </p>
           </div>
@@ -76,23 +76,23 @@ export default function RochiiMireasaPage() {
         <section className="max-w-5xl mx-auto px-4 py-10">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {MAGAZINE.map(m => (
-              <div key={m.name} className="bg-[#111827] border border-[#1e293b] hover:border-[#14b8a6]/30 rounded-xl p-6 flex flex-col gap-4 transition-all">
+              <div key={m.name} className="bg-[#14181c] border border-[#1f2329] hover:border-[#ddf93c]/30 rounded-xl p-6 flex flex-col gap-4 transition-all">
                 <div>
                   <div className="flex items-center gap-2 mb-1">
-                    <span className="text-lg font-black text-[#f1f5f9]">{m.name}</span>
-                    <span className="text-[10px] font-black text-white px-2 py-0.5 rounded-full bg-[#0d9488]">{m.badge}</span>
+                    <span className="text-lg font-black text-[#ffffff]">{m.name}</span>
+                    <span className="text-[10px] font-black text-[#0c1000] px-2 py-0.5 rounded-full bg-[#ddf93c]">{m.badge}</span>
                   </div>
-                  <p className="text-[#cbd5e1] text-xs">{m.tagline}</p>
+                  <p className="text-[#c9ced5] text-xs">{m.tagline}</p>
                 </div>
                 <ul className="space-y-1">
                   {m.beneficii.map((b, i) => (
-                    <li key={i} className="flex items-start gap-2 text-xs text-[#cbd5e1]">
-                      <span className="text-[#0d9488] shrink-0">✓</span>{b}
+                    <li key={i} className="flex items-start gap-2 text-xs text-[#c9ced5]">
+                      <span className="text-[#ddf93c] shrink-0">✓</span>{b}
                     </li>
                   ))}
                 </ul>
                 <a href={m.url} target="_blank" rel="sponsored noopener noreferrer"
-                  className="mt-auto bg-[#0d9488] hover:bg-[#14b8a6] text-white font-black px-4 py-3 rounded-xl text-sm transition-all text-center hover:-translate-y-0.5">
+                  className="mt-auto bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] font-black px-4 py-3 rounded-xl text-sm transition-all text-center hover:-translate-y-0.5">
                   Vezi {m.name} →
                 </a>
               </div>
@@ -100,13 +100,13 @@ export default function RochiiMireasaPage() {
           </div>
 
           {/* GHID */}
-          <section className="mt-10 bg-[#111827] border border-[#1e293b] rounded-xl p-6">
-            <h2 className="text-lg font-black text-[#f1f5f9] mb-4">Cum alegi rochia potrivita pentru nunta?</h2>
-            <ul className="space-y-2 text-sm text-[#cbd5e1]">
-              <li><strong className="text-[#cbd5e1]">Comanda din timp</strong> — rochiile de mireasa personalizate pot dura 4-8 saptamani de la comanda</li>
-              <li><strong className="text-[#cbd5e1]">Domnisoare de onoare</strong> — alege un model usor de reprodus in mai multe marimi, nu personalizat excesiv</li>
-              <li><strong className="text-[#cbd5e1]">Invitata la nunta</strong> — evita albul si nuantele foarte deschise, verifica dress code-ul</li>
-              <li><strong className="text-[#cbd5e1]">Reduceri sezoniere</strong> — cele mai mari reduceri la rochii de ocazie apar dupa Craciun si dupa sezonul de nunti (sept-oct)</li>
+          <section className="mt-10 bg-[#14181c] border border-[#1f2329] rounded-xl p-6">
+            <h2 className="text-lg font-black text-[#ffffff] mb-4">Cum alegi rochia potrivita pentru nunta?</h2>
+            <ul className="space-y-2 text-sm text-[#c9ced5]">
+              <li><strong className="text-[#c9ced5]">Comanda din timp</strong> — rochiile de mireasa personalizate pot dura 4-8 saptamani de la comanda</li>
+              <li><strong className="text-[#c9ced5]">Domnisoare de onoare</strong> — alege un model usor de reprodus in mai multe marimi, nu personalizat excesiv</li>
+              <li><strong className="text-[#c9ced5]">Invitata la nunta</strong> — evita albul si nuantele foarte deschise, verifica dress code-ul</li>
+              <li><strong className="text-[#c9ced5]">Reduceri sezoniere</strong> — cele mai mari reduceri la rochii de ocazie apar dupa Craciun si dupa sezonul de nunti (sept-oct)</li>
             </ul>
           </section>
 
@@ -118,13 +118,13 @@ export default function RochiiMireasaPage() {
               { href: "/oferte-azi", label: "🔥 Oferte de azi" },
             ].map(l => (
               <Link key={l.href} href={l.href}
-                className="bg-[#111827] hover:bg-[#1e293b] text-[#cbd5e1] hover:text-[#f1f5f9] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#1e293b]">
+                className="bg-[#14181c] hover:bg-[#1f2329] text-[#c9ced5] hover:text-[#ffffff] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#1f2329]">
                 {l.label}
               </Link>
             ))}
           </div>
 
-          <p className="text-[#94a3b8] text-xs text-center mt-8">Unele linkuri sunt linkuri de afiliat. Daca faci o achizitie, AmCupon.ro primeste un comision fara cost suplimentar pentru tine.</p>
+          <p className="text-[#9399a0] text-xs text-center mt-8">Unele linkuri sunt linkuri de afiliat. Daca faci o achizitie, AmCupon.ro primeste un comision fara cost suplimentar pentru tine.</p>
         </section>
       </div>
     </>

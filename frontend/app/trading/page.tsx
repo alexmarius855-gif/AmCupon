@@ -40,7 +40,7 @@ const PLATFORME = [
     name: "XTB",
     tagline: "Actiuni & ETF-uri la 0% comision — brokerul preferat al romanilor",
     badge: "Recomandat #1",
-    badgeColor: "bg-[#0d9488]",
+    badgeColor: "bg-[#ddf93c]",
     emoji: "📈",
     tip: "Actiuni, ETF-uri, Forex, Crypto",
     pret_min: "0 RON minim",
@@ -60,7 +60,7 @@ const PLATFORME = [
     ],
     dezavantaje: ["Spread criptomonede mai mare decat pe exchange-uri", "Comision actiuni dupa 100.000€/luna"],
     ideal: "Investitori pe termen lung, DCA, ETF-uri indice",
-    culoare: "from-[#0f766e] to-[#0a0f1a]",
+    culoare: "from-[#c3dd2c] to-[#06080b]",
     culoare_accent: "indigo",
   },
   {
@@ -88,7 +88,7 @@ const PLATFORME = [
     ],
     dezavantaje: ["Interfata complexa pentru incepatori", "Nu e disponibil app pe unele tari UE"],
     ideal: "Traderi activi crypto, staking pe termen lung",
-    culoare: "from-yellow-600 to-[#111827]",
+    culoare: "from-yellow-600 to-[#14181c]",
     culoare_accent: "yellow",
   },
   {
@@ -114,7 +114,7 @@ const PLATFORME = [
     ],
     dezavantaje: ["Spread mai mare la crypto vs Binance", "Comision retragere $5", "USD ca moneda de baza"],
     ideal: "Incepatori, copy trading, portofolii diversificate",
-    culoare: "from-green-700 to-[#111827]",
+    culoare: "from-green-700 to-[#14181c]",
     culoare_accent: "green",
   },
   {
@@ -122,7 +122,7 @@ const PLATFORME = [
     name: "Trading212",
     tagline: "Actiuni fractionate si ISA — ideal pentru incepatori europeni",
     badge: "Fractionale",
-    badgeColor: "bg-[#0d9488]",
+    badgeColor: "bg-[#ddf93c]",
     emoji: "📊",
     tip: "Actiuni, ETF-uri, CFD-uri",
     pret_min: "1 EUR minim",
@@ -140,7 +140,7 @@ const PLATFORME = [
     ],
     dezavantaje: ["Fara suport telefonic", "Selectie mai mica decat XTB"],
     ideal: "Incepatori cu bugete mici, DCA fractionate",
-    culoare: "from-[#14b8a6] to-[#0a0f1a]",
+    culoare: "from-[#ddf93c] to-[#06080b]",
     culoare_accent: "blue",
   },
 ];
@@ -170,22 +170,22 @@ export default function TradingPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <div className="min-h-screen bg-[#0a0f1a]">
+      <div className="min-h-screen bg-[#06080b]">
 
         {/* Breadcrumb */}
-        <nav className="bg-[#111827]/80 backdrop-blur-sm border-b border-[#1e293b]">
-          <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-1.5 text-xs text-[#94a3b8]">
-            <Link href="/" className="hover:text-[#0d9488] transition-colors">Acasa</Link>
+        <nav className="bg-[#14181c]/80 backdrop-blur-sm border-b border-[#1f2329]">
+          <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-1.5 text-xs text-[#9399a0]">
+            <Link href="/" className="hover:text-[#ddf93c] transition-colors">Acasa</Link>
             <span>/</span>
-            <span className="text-[#cbd5e1] font-medium">Trading & Investitii</span>
+            <span className="text-[#c9ced5] font-medium">Trading & Investitii</span>
           </div>
         </nav>
 
         {/* Hero */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-emerald-950 via-[#111827] to-[#111827] py-16 px-4">
+        <section className="relative overflow-hidden bg-gradient-to-br from-emerald-950 via-[#14181c] to-[#14181c] py-16 px-4">
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute top-0 left-1/4 w-96 h-96 bg-emerald-600/15 rounded-full blur-3xl" />
-            <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-[#14b8a6]/15 rounded-full blur-3xl" />
+            <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-[#ddf93c]/15 rounded-full blur-3xl" />
           </div>
           <div className="relative max-w-6xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
@@ -193,26 +193,26 @@ export default function TradingPage() {
               Ghid actualizat {an}
             </div>
             <div className="text-6xl mb-5 drop-shadow-2xl">📈</div>
-            <h1 className="text-4xl md:text-5xl font-black text-[#f1f5f9] mb-4 tracking-tight">
+            <h1 className="text-4xl md:text-5xl font-black text-[#ffffff] mb-4 tracking-tight">
               Cel mai bun Broker Romania{" "}
-              <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #34d399, #0d9488)" }}>
+              <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #34d399, #ddf93c)" }}>
                 {an}
               </span>
             </h1>
-            <p className="text-[#cbd5e1] text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-[#c9ced5] text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
               Am testat XTB, Binance, eToro si Trading212. Comparatie completa: comisioane, siguranta, usurinta utilizare — ghid honest pentru romani.
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Actiuni 0%", "ETF-uri", "Crypto", "Copy Trading", "Staking", "Cont Demo"].map(c => (
-                <span key={c} className="bg-[#1e293b] border border-[#334155] text-slate-500 text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
+                <span key={c} className="bg-[#1f2329] border border-[#2a2f36] text-slate-500 text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
               ))}
             </div>
           </div>
         </section>
 
         {/* Disclaimer */}
-        <div className="bg-[#14b8a6]/50 border-b border-[#14b8a6]/40">
-          <div className="max-w-6xl mx-auto px-4 py-3 text-xs text-[#0f766e]/80 text-center">
+        <div className="bg-[#ddf93c]/50 border-b border-[#ddf93c]/40">
+          <div className="max-w-6xl mx-auto px-4 py-3 text-xs text-[#c3dd2c]/80 text-center">
             ⚠️ Investitiile implica riscuri. Acest ghid are scop informativ, nu constituie sfat financiar. Tranzactionarea produselor leverage comporta risc ridicat de pierdere a capitalului.
           </div>
         </div>
@@ -221,31 +221,31 @@ export default function TradingPage() {
         <section className="max-w-6xl mx-auto px-4 py-12">
           <div className="text-center mb-10">
             <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-2">COMPARATIE PLATFORME</p>
-            <h2 className="text-3xl font-black text-[#f1f5f9]">Top 4 platforme de investitii pentru romani</h2>
-            <p className="text-[#cbd5e1] text-sm mt-2">Testate personal — actualizat {an}</p>
+            <h2 className="text-3xl font-black text-[#ffffff]">Top 4 platforme de investitii pentru romani</h2>
+            <p className="text-[#c9ced5] text-sm mt-2">Testate personal — actualizat {an}</p>
           </div>
 
           <div className="space-y-6">
             {PLATFORME.map((p) => (
-              <div key={p.name} className="bg-[#111827] border border-[#1e293b] hover:border-[#334155] rounded-xl overflow-hidden transition-all duration-200">
+              <div key={p.name} className="bg-[#14181c] border border-[#1f2329] hover:border-[#2a2f36] rounded-xl overflow-hidden transition-all duration-200">
                 {/* Header */}
                 <div className={`bg-gradient-to-r ${p.culoare} p-6`}>
                   <div className="flex items-start justify-between gap-4">
                     <div className="flex items-center gap-4">
-                      <div className="w-14 h-14 rounded-xl bg-[#1e293b] backdrop-blur-sm flex items-center justify-center text-3xl font-black text-[#f1f5f9] shrink-0">
+                      <div className="w-14 h-14 rounded-xl bg-[#1f2329] backdrop-blur-sm flex items-center justify-center text-3xl font-black text-[#ffffff] shrink-0">
                         {p.emoji}
                       </div>
                       <div>
                         <div className="flex items-center gap-2 mb-1">
-                          <span className={`text-[10px] font-black text-[#f1f5f9] ${p.badgeColor} px-2 py-0.5 rounded-full`}>#{p.rank} {p.badge}</span>
+                          <span className={`text-[10px] font-black text-[#ffffff] ${p.badgeColor} px-2 py-0.5 rounded-full`}>#{p.rank} {p.badge}</span>
                           <span className="text-slate-500 text-xs">{p.reglementat}</span>
                         </div>
-                        <h2 className="text-2xl font-black text-[#f1f5f9]">{p.name}</h2>
+                        <h2 className="text-2xl font-black text-[#ffffff]">{p.name}</h2>
                         <p className="text-slate-500 text-sm mt-0.5">{p.tagline}</p>
                       </div>
                     </div>
                     <div className="text-right shrink-0 hidden sm:block">
-                      <div className="text-3xl font-black text-[#f1f5f9]">{p.rating}</div>
+                      <div className="text-3xl font-black text-[#ffffff]">{p.rating}</div>
                       <div className="text-slate-500 text-xs">/ 10</div>
                     </div>
                   </div>
@@ -254,26 +254,26 @@ export default function TradingPage() {
                 {/* Body */}
                 <div className="p-6">
                   <div className="grid sm:grid-cols-3 gap-4 mb-5">
-                    <div className="bg-[#1e293b]/50 rounded-xl p-3 text-center">
-                      <p className="text-xs text-[#94a3b8] mb-1">Tip active</p>
-                      <p className="text-[#f1f5f9] font-bold text-sm">{p.tip}</p>
+                    <div className="bg-[#1f2329]/50 rounded-xl p-3 text-center">
+                      <p className="text-xs text-[#9399a0] mb-1">Tip active</p>
+                      <p className="text-[#ffffff] font-bold text-sm">{p.tip}</p>
                     </div>
-                    <div className="bg-[#1e293b]/50 rounded-xl p-3 text-center">
-                      <p className="text-xs text-[#94a3b8] mb-1">Depozit minim</p>
-                      <p className="text-[#f1f5f9] font-bold text-sm">{p.pret_min}</p>
+                    <div className="bg-[#1f2329]/50 rounded-xl p-3 text-center">
+                      <p className="text-xs text-[#9399a0] mb-1">Depozit minim</p>
+                      <p className="text-[#ffffff] font-bold text-sm">{p.pret_min}</p>
                     </div>
-                    <div className="bg-[#1e293b]/50 rounded-xl p-3 text-center">
-                      <p className="text-xs text-[#94a3b8] mb-1">Comision</p>
+                    <div className="bg-[#1f2329]/50 rounded-xl p-3 text-center">
+                      <p className="text-xs text-[#9399a0] mb-1">Comision</p>
                       <p className="text-emerald-400 font-bold text-sm">{p.comision}</p>
                     </div>
                   </div>
 
                   <div className="grid sm:grid-cols-2 gap-4 mb-5">
                     <div>
-                      <p className="text-xs font-bold text-[#94a3b8] uppercase tracking-wider mb-2">Avantaje</p>
+                      <p className="text-xs font-bold text-[#9399a0] uppercase tracking-wider mb-2">Avantaje</p>
                       <ul className="space-y-1.5">
                         {p.avantaje.map(a => (
-                          <li key={a} className="flex items-start gap-2 text-sm text-[#cbd5e1]">
+                          <li key={a} className="flex items-start gap-2 text-sm text-[#c9ced5]">
                             <span className="text-emerald-400 mt-0.5 shrink-0">✓</span>
                             {a}
                           </li>
@@ -281,29 +281,29 @@ export default function TradingPage() {
                       </ul>
                     </div>
                     <div>
-                      <p className="text-xs font-bold text-[#94a3b8] uppercase tracking-wider mb-2">De stiut</p>
+                      <p className="text-xs font-bold text-[#9399a0] uppercase tracking-wider mb-2">De stiut</p>
                       <ul className="space-y-1.5">
                         {p.dezavantaje.map(d => (
-                          <li key={d} className="flex items-start gap-2 text-sm text-[#cbd5e1]">
-                            <span className="text-[#0f766e] mt-0.5 shrink-0">!</span>
+                          <li key={d} className="flex items-start gap-2 text-sm text-[#c9ced5]">
+                            <span className="text-[#c3dd2c] mt-0.5 shrink-0">!</span>
                             {d}
                           </li>
                         ))}
                       </ul>
-                      <div className="mt-4 bg-[#1e293b] rounded-xl p-3">
-                        <p className="text-xs text-[#94a3b8]">Ideal pentru</p>
-                        <p className="text-[#f1f5f9] text-sm font-semibold mt-0.5">{p.ideal}</p>
+                      <div className="mt-4 bg-[#1f2329] rounded-xl p-3">
+                        <p className="text-xs text-[#9399a0]">Ideal pentru</p>
+                        <p className="text-[#ffffff] text-sm font-semibold mt-0.5">{p.ideal}</p>
                       </div>
                     </div>
                   </div>
 
                   <div className="flex flex-col sm:flex-row gap-3">
                     <a href={p.url} target="_blank" rel="nofollow noopener noreferrer"
-                      className="flex-1 bg-[#0d9488] hover:bg-[#14b8a6] text-white font-black text-sm py-3 px-6 rounded-xl text-center transition-colors">
+                      className="flex-1 bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] font-black text-sm py-3 px-6 rounded-xl text-center transition-colors">
                       Deschide cont {p.name} gratuit →
                     </a>
                     <a href={p.program_url} target="_blank" rel="nofollow noopener noreferrer"
-                      className="bg-[#1e293b] hover:bg-[#334155] border border-[#334155] text-[#cbd5e1] hover:text-[#f1f5f9] font-semibold text-sm py-3 px-5 rounded-xl text-center transition-colors">
+                      className="bg-[#1f2329] hover:bg-[#2a2f36] border border-[#2a2f36] text-[#c9ced5] hover:text-[#ffffff] font-semibold text-sm py-3 px-5 rounded-xl text-center transition-colors">
                       Program afiliere
                     </a>
                   </div>
@@ -314,27 +314,27 @@ export default function TradingPage() {
         </section>
 
         {/* Tabel comparatie */}
-        <section className="bg-[#111827] border-t border-b border-[#1e293b] py-12 px-4">
+        <section className="bg-[#14181c] border-t border-b border-[#1f2329] py-12 px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8">
               <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-2">COMPARATIE RAPIDA</p>
-              <h2 className="text-2xl font-black text-[#f1f5f9]">XTB vs Binance vs eToro vs Trading212</h2>
+              <h2 className="text-2xl font-black text-[#ffffff]">XTB vs Binance vs eToro vs Trading212</h2>
             </div>
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="border-b border-[#334155]">
-                    <th className="text-left py-3 px-4 text-[#cbd5e1] font-semibold">Caracteristica</th>
-                    <th className="py-3 px-4 text-[#0d9488] font-bold">XTB</th>
+                  <tr className="border-b border-[#2a2f36]">
+                    <th className="text-left py-3 px-4 text-[#c9ced5] font-semibold">Caracteristica</th>
+                    <th className="py-3 px-4 text-[#ddf93c] font-bold">XTB</th>
                     <th className="py-3 px-4 text-yellow-400 font-bold">Binance</th>
                     <th className="py-3 px-4 text-green-400 font-bold">eToro</th>
-                    <th className="py-3 px-4 text-[#0f766e] font-bold">T212</th>
+                    <th className="py-3 px-4 text-[#c3dd2c] font-bold">T212</th>
                   </tr>
                 </thead>
                 <tbody>
                   {COMPARATIE.map((row, i) => (
-                    <tr key={row.feature} className={`border-b border-[#1e293b] ${i % 2 === 0 ? "bg-[#111827]/50" : ""}`}>
-                      <td className="py-3 px-4 text-[#cbd5e1]">{row.feature}</td>
+                    <tr key={row.feature} className={`border-b border-[#1f2329] ${i % 2 === 0 ? "bg-[#14181c]/50" : ""}`}>
+                      <td className="py-3 px-4 text-[#c9ced5]">{row.feature}</td>
                       <td className="py-3 px-4 text-center">{row.xtb ? "✅" : "—"}</td>
                       <td className="py-3 px-4 text-center">{row.binance ? "✅" : "—"}</td>
                       <td className="py-3 px-4 text-center">{row.etoro ? "✅" : "—"}</td>
@@ -349,8 +349,8 @@ export default function TradingPage() {
 
         {/* Ghid alegere */}
         <section className="max-w-4xl mx-auto px-4 py-12">
-          <p className="text-xs font-bold text-[#94a3b8] uppercase tracking-widest mb-3">GHID ALEGERE</p>
-          <h2 className="text-2xl font-black text-[#f1f5f9] mb-7">Ce platforma sa alegi in {an}?</h2>
+          <p className="text-xs font-bold text-[#9399a0] uppercase tracking-widest mb-3">GHID ALEGERE</p>
+          <h2 className="text-2xl font-black text-[#ffffff] mb-7">Ce platforma sa alegi in {an}?</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {[
               { icon: "🏆", titlu: "Vrei ETF-uri (VWCE, CSPX)?", raspuns: "XTB este alegerea clara — 0% comision, interfata in romana, cont in RON. Alternativa: Trading212." },
@@ -358,10 +358,10 @@ export default function TradingPage() {
               { icon: "🤝", titlu: "Esti incepator si vrei sa copiezi?", raspuns: "eToro CopyTrader — copiezi automat portofoliul unui expert, fara sa stii nimic despre trading." },
               { icon: "💰", titlu: "Ai sub 100 EUR si vrei actiuni?", raspuns: "Trading212 — actiuni fractionate de la 1 EUR. Alternativ XTB cu orice suma in RON." },
             ].map(g => (
-              <div key={g.titlu} className="bg-[#111827] border border-[#1e293b] rounded-xl p-5">
+              <div key={g.titlu} className="bg-[#14181c] border border-[#1f2329] rounded-xl p-5">
                 <div className="text-2xl mb-3">{g.icon}</div>
-                <h3 className="font-bold text-[#f1f5f9] text-sm mb-2">{g.titlu}</h3>
-                <p className="text-xs text-[#cbd5e1] leading-relaxed">{g.raspuns}</p>
+                <h3 className="font-bold text-[#ffffff] text-sm mb-2">{g.titlu}</h3>
+                <p className="text-xs text-[#c9ced5] leading-relaxed">{g.raspuns}</p>
               </div>
             ))}
           </div>
@@ -369,14 +369,14 @@ export default function TradingPage() {
 
         {/* Revolut bonus */}
         <section className="max-w-6xl mx-auto px-4 pb-8">
-          <div className="bg-gradient-to-r from-[#111827] to-[#0a0f1a] border border-[#14b8a6]/40 rounded-xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="bg-gradient-to-r from-[#14181c] to-[#06080b] border border-[#ddf93c]/40 rounded-xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div>
-              <p className="text-xs font-bold text-[#0f766e] uppercase tracking-widest mb-1">BONUS</p>
-              <h3 className="text-xl font-black text-[#f1f5f9] mb-1">Revolut — actiuni si crypto in aplicatie</h3>
-              <p className="text-[#cbd5e1] text-sm">Deschizi cont gratuit si cumperi actiuni fractionate + crypto direct din app. Ideal ca portofel secundar.</p>
+              <p className="text-xs font-bold text-[#c3dd2c] uppercase tracking-widest mb-1">BONUS</p>
+              <h3 className="text-xl font-black text-[#ffffff] mb-1">Revolut — actiuni si crypto in aplicatie</h3>
+              <p className="text-[#c9ced5] text-sm">Deschizi cont gratuit si cumperi actiuni fractionate + crypto direct din app. Ideal ca portofel secundar.</p>
             </div>
             <a href={LINK_REVOLUT} target="_blank" rel="nofollow noopener noreferrer"
-              className="shrink-0 bg-[#111827] text-[#14b8a6] font-black text-sm py-3 px-6 rounded-xl hover:bg-[#14b8a6] transition-colors whitespace-nowrap">
+              className="shrink-0 bg-[#14181c] text-[#ddf93c] font-black text-sm py-3 px-6 rounded-xl hover:bg-[#ddf93c] transition-colors whitespace-nowrap">
               Cont Revolut gratuit →
             </a>
           </div>
@@ -384,7 +384,7 @@ export default function TradingPage() {
 
         {/* Related */}
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <p className="text-xs font-bold text-[#94a3b8] uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
+          <p className="text-xs font-bold text-[#9399a0] uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/vpn", label: "🔒 VPN & Securitate" },
@@ -394,18 +394,18 @@ export default function TradingPage() {
               { href: "/servicii", label: "⚙️ Servicii Online" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-[#1e293b] hover:bg-[#334155] border border-[#334155] hover:border-emerald-500/40 text-[#cbd5e1] hover:text-[#f1f5f9] text-sm font-semibold px-4 py-2 rounded-xl transition-all duration-200">
+                className="bg-[#1f2329] hover:bg-[#2a2f36] border border-[#2a2f36] hover:border-emerald-500/40 text-[#c9ced5] hover:text-[#ffffff] text-sm font-semibold px-4 py-2 rounded-xl transition-all duration-200">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-[#1e293b] py-6 text-center text-xs text-[#94a3b8]">
+        <footer className="border-t border-[#1f2329] py-6 text-center text-xs text-[#9399a0]">
           &copy; {an} AmCupon.ro &middot;{" "}
-          <Link href="/servicii" className="hover:text-[#0d9488] transition-colors">Servicii Online</Link>{" · "}
-          <Link href="/vpn" className="hover:text-[#0d9488] transition-colors">VPN</Link>{" · "}
-          <Link href="/categorii" className="hover:text-[#0d9488] transition-colors">Categorii</Link>
+          <Link href="/servicii" className="hover:text-[#ddf93c] transition-colors">Servicii Online</Link>{" · "}
+          <Link href="/vpn" className="hover:text-[#ddf93c] transition-colors">VPN</Link>{" · "}
+          <Link href="/categorii" className="hover:text-[#ddf93c] transition-colors">Categorii</Link>
         </footer>
       </div>
     </>

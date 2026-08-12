@@ -33,7 +33,7 @@ const CATEGORII = [
         pret: "de la 2.99€/luna",
         comision: "40% recurring",
         badge: "Recomandat",
-        badgeColor: "bg-[#0d9488]",
+        badgeColor: "bg-[#ddf93c]",
         program: "partners.nordvpn.com",
         url: "https://nordvpn.com",
         // ACTUALIZARE: https://go.nordvpn.net/aff_c?offer_id=15&aff_id=TU_ID_NORDVPN
@@ -45,7 +45,7 @@ const CATEGORII = [
         pret: "de la 2.39€/luna",
         comision: "40% recurring",
         badge: "Dispozitive nelimitate",
-        badgeColor: "bg-[#0d9488]",
+        badgeColor: "bg-[#ddf93c]",
         program: "impact.com (Surfshark)",
         url: "https://surfshark.com",
         // ACTUALIZARE: https://get.surfshark.net/aff_c?offer_id=926&aff_id=TU_ID_SURFSHARK
@@ -65,7 +65,7 @@ const CATEGORII = [
         pret: "de la 1.99€/luna",
         comision: "60% din prima achizitie",
         badge: "Cel mai accesibil",
-        badgeColor: "bg-[#0d9488]",
+        badgeColor: "bg-[#ddf93c]",
         program: "hostinger.com/affiliates",
         url: "https://hostinger.com",
         // ACTUALIZARE: https://www.hostinger.com/partners/TU_ID_HOSTINGER
@@ -77,7 +77,7 @@ const CATEGORII = [
         pret: "de la 3.99€/luna",
         comision: "~75$ per signup",
         badge: "Performanta top",
-        badgeColor: "bg-[#14b8a6]",
+        badgeColor: "bg-[#ddf93c]",
         program: "siteground.com/affiliates",
         url: "https://siteground.com",
         // ACTUALIZARE: https://www.siteground.com/go/TU_ID_SITEGROUND
@@ -97,7 +97,7 @@ const CATEGORII = [
         pret: "de la 99$/luna",
         comision: "200$ per vanzare + 10$ per lead",
         badge: "Recomandat #1",
-        badgeColor: "bg-[#0d9488]",
+        badgeColor: "bg-[#ddf93c]",
         program: "semrush.com/lp/inter-affiliate",
         url: "https://semrush.com",
         // ACTUALIZARE: link din programul Impact al Semrush
@@ -109,7 +109,7 @@ const CATEGORII = [
         pret: "de la 99$/luna",
         comision: "program selectiv — aplica direct",
         badge: "Standard industrie",
-        badgeColor: "bg-[#0d9488]",
+        badgeColor: "bg-[#ddf93c]",
         program: "ahrefs.com (program intern)",
         url: "https://ahrefs.com",
         beneficii: ["Index backlink-uri masiv", "Content Explorer unic", "Site Explorer detaliat", "Keywords Explorer avansat", "Rank Tracker precis"],
@@ -128,7 +128,7 @@ const CATEGORII = [
         pret: "~13€/luna",
         comision: "36$ per conversie Pro",
         badge: "Cel mai usor",
-        badgeColor: "bg-[#0d9488]",
+        badgeColor: "bg-[#ddf93c]",
         program: "canva.com/affiliates",
         url: "https://canva.com",
         // ACTUALIZARE: link din programul Canva Affiliates
@@ -172,7 +172,7 @@ const CATEGORII = [
         pret: "de la 49$/luna (Plus)",
         comision: "45% din abonament",
         badge: "Certificari globale",
-        badgeColor: "bg-[#14b8a6]",
+        badgeColor: "bg-[#ddf93c]",
         program: "coursera.org/affiliates",
         url: "https://coursera.org",
         // ACTUALIZARE: link din programul Coursera Affiliates (Impact)
@@ -192,7 +192,7 @@ const CATEGORII = [
         pret: "fara taxe extra",
         comision: "4% din valoarea rezervarii",
         badge: "Cele mai multe optiuni",
-        badgeColor: "bg-[#14b8a6]",
+        badgeColor: "bg-[#ddf93c]",
         program: "booking.com/affiliate-partner",
         url: "https://booking.com",
         // ACTUALIZARE: https://www.booking.com/index.html?aid=TU_ID_BOOKING
@@ -216,28 +216,28 @@ const CATEGORII = [
 
 export default function RecomandariPage() {
   return (
-    <div className="min-h-screen bg-[#0a0f1a]">
+    <div className="min-h-screen bg-[#06080b]">
       {/* Hero */}
-      <section className="relative bg-[#0a0f1a] border-b border-[#1e293b] overflow-hidden">
+      <section className="relative bg-[#06080b] border-b border-[#1f2329] overflow-hidden">
         <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(13,148,136,0.08) 0%, transparent 65%)" }} />
         <div className="relative max-w-5xl mx-auto px-4 pt-12 pb-12 text-center">
-          <nav className="flex justify-center gap-2 text-xs text-[#94a3b8] mb-8">
-            <Link href="/" className="hover:text-[#cbd5e1]">AmCupon.ro</Link>
+          <nav className="flex justify-center gap-2 text-xs text-[#9399a0] mb-8">
+            <Link href="/" className="hover:text-[#c9ced5]">AmCupon.ro</Link>
             <span>/</span>
-            <span className="text-[#cbd5e1]">Recomandari Premium</span>
+            <span className="text-[#c9ced5]">Recomandari Premium</span>
           </nav>
           <div className="text-5xl mb-5">⭐</div>
-          <h1 className="text-4xl md:text-5xl font-black text-[#f1f5f9] mb-4">
-            Servicii <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #14b8a6, #0d9488)" }}>Recomandate</span>
+          <h1 className="text-4xl md:text-5xl font-black text-[#ffffff] mb-4">
+            Servicii <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #ddf93c, #ddf93c)" }}>Recomandate</span>
           </h1>
-          <p className="text-[#cbd5e1] text-lg max-w-2xl mx-auto mb-8">
+          <p className="text-[#c9ced5] text-lg max-w-2xl mx-auto mb-8">
             VPN, hosting, SEO tools, freelancing si travel — servicii testate si recomandate de echipa AmCupon.ro. Alege ce ti se potriveste.
           </p>
           {/* Jump links */}
           <div className="flex flex-wrap justify-center gap-2">
             {CATEGORII.map((c, i) => (
               <a key={i} href={`#cat-${i}`}
-                className="text-xs bg-[#1e293b] hover:bg-[#334155] text-[#cbd5e1] px-3 py-1.5 rounded-full border border-[#334155] transition-colors">
+                className="text-xs bg-[#1f2329] hover:bg-[#2a2f36] text-[#c9ced5] px-3 py-1.5 rounded-full border border-[#2a2f36] transition-colors">
                 {c.emoji} {c.titlu.split(" — ")[0]}
               </a>
             ))}
@@ -247,18 +247,18 @@ export default function RecomandariPage() {
 
       {/* Categorii */}
       {CATEGORII.map((cat, ci) => (
-        <section key={ci} id={`cat-${ci}`} className="max-w-5xl mx-auto px-4 py-10 border-b border-[#1e293b]/50 last:border-b-0">
+        <section key={ci} id={`cat-${ci}`} className="max-w-5xl mx-auto px-4 py-10 border-b border-[#1f2329]/50 last:border-b-0">
           <div className="flex items-start justify-between mb-6">
             <div>
-              <h2 className="text-2xl font-black text-[#f1f5f9] flex items-center gap-3">
+              <h2 className="text-2xl font-black text-[#ffffff] flex items-center gap-3">
                 <span className="text-3xl">{cat.emoji}</span>
                 {cat.titlu}
               </h2>
-              <p className="text-[#cbd5e1] mt-1 text-sm max-w-2xl">{cat.desc}</p>
+              <p className="text-[#c9ced5] mt-1 text-sm max-w-2xl">{cat.desc}</p>
             </div>
             {cat.slug && (
               <Link href={cat.slug}
-                className="text-xs text-[#0d9488] hover:text-[#0f766e] border border-[#14b8a6]/30 hover:border-[#0d9488]/50 px-3 py-1.5 rounded-lg transition-all shrink-0 ml-4">
+                className="text-xs text-[#ddf93c] hover:text-[#c3dd2c] border border-[#ddf93c]/30 hover:border-[#ddf93c]/50 px-3 py-1.5 rounded-lg transition-all shrink-0 ml-4">
                 Ghid complet →
               </Link>
             )}
@@ -266,23 +266,23 @@ export default function RecomandariPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {cat.servicii.map((s, si) => (
-              <div key={si} className="bg-[#111827] border border-[#1e293b] hover:border-[#14b8a6]/30 rounded-xl p-6 flex flex-col gap-4 transition-all group">
+              <div key={si} className="bg-[#14181c] border border-[#1f2329] hover:border-[#ddf93c]/30 rounded-xl p-6 flex flex-col gap-4 transition-all group">
                 <div className="flex items-start justify-between gap-3">
                   <div>
                     <div className="flex items-center gap-2 mb-1">
-                      <span className="text-xl font-black text-[#f1f5f9]">{s.name}</span>
-                      <span className={`text-[10px] font-black text-[#f1f5f9] px-2 py-0.5 rounded-full ${s.badgeColor}`}>{s.badge}</span>
+                      <span className="text-xl font-black text-[#ffffff]">{s.name}</span>
+                      <span className={`text-[10px] font-black text-[#ffffff] px-2 py-0.5 rounded-full ${s.badgeColor}`}>{s.badge}</span>
                     </div>
-                    <p className="text-[#cbd5e1] text-sm">{s.tagline}</p>
+                    <p className="text-[#c9ced5] text-sm">{s.tagline}</p>
                   </div>
                   <div className="text-right shrink-0">
-                    <div className="text-[#0d9488] font-black text-sm">{s.pret}</div>
+                    <div className="text-[#ddf93c] font-black text-sm">{s.pret}</div>
                   </div>
                 </div>
 
                 <ul className="space-y-1.5">
                   {s.beneficii.map((b, bi) => (
-                    <li key={bi} className="flex items-start gap-2 text-sm text-[#cbd5e1]">
+                    <li key={bi} className="flex items-start gap-2 text-sm text-[#c9ced5]">
                       <span className="text-emerald-400 shrink-0 mt-0.5">✓</span>
                       {b}
                     </li>
@@ -291,10 +291,10 @@ export default function RecomandariPage() {
 
                 <div className="mt-auto flex flex-col gap-2">
                   <a href={s.url} target="_blank" rel="sponsored noopener noreferrer"
-                    className="bg-[#0d9488] hover:bg-[#14b8a6] text-white font-black px-5 py-3 rounded-xl text-sm transition-all text-center shadow-lg shadow-[#14b8a6]/20 hover:-translate-y-0.5 duration-200">
+                    className="bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] font-black px-5 py-3 rounded-xl text-sm transition-all text-center shadow-lg shadow-[#ddf93c]/20 hover:-translate-y-0.5 duration-200">
                     Incearca {s.name} →
                   </a>
-                  <p className="text-[10px] text-[#94a3b8] text-center">Program afiliere: {s.program}</p>
+                  <p className="text-[10px] text-[#9399a0] text-center">Program afiliere: {s.program}</p>
                 </div>
               </div>
             ))}
@@ -304,8 +304,8 @@ export default function RecomandariPage() {
 
       {/* Disclaimer */}
       <section className="max-w-5xl mx-auto px-4 pb-12 pt-4">
-        <div className="bg-[#111827]/50 border border-[#1e293b] rounded-xl p-5 text-center">
-          <p className="text-[#94a3b8] text-xs">
+        <div className="bg-[#14181c]/50 border border-[#1f2329] rounded-xl p-5 text-center">
+          <p className="text-[#9399a0] text-xs">
             Unele linkuri de pe aceasta pagina sunt linkuri de afiliat — daca faci o achizitie, AmCupon.ro primeste un comision, fara niciun cost suplimentar pentru tine.
             Am comparat public preturile si specificatiile serviciilor recomandate. Comisioanele afisate nu sunt garantate — variaza in functie de programul fiecarui partener.
           </p>

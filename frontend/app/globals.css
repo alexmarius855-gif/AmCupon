@@ -1,37 +1,50 @@
 @import "tailwindcss";
 
 /* ═══════════════════════════════════════════════════════════════════════════
-   DESIGN TOKENS — tema dark/teal (decizie Alex 16.07.2026)
-   Hexurile raman hardcodate in pagini (istoric), dar orice cod NOU foloseste
-   variabilele de aici. Istoric teme, ca sa nu se reintroduca din greseala:
-   orange -> indigo/cyan -> auriu -> light/teal -> dark/teal (actual).
+   DESIGN TOKENS — tema dark/LIME (decizie Alex 11.08.2026)
+
+   Paleta e extrasa EXACT din referinta aleasa de Alex (deal-findr-spark.lovable.app),
+   nu aproximata din screenshot: i-am descarcat bundle-ul CSS si i-am convertit
+   valorile oklch in hex. De-aia fundalul e neutru-rece (#06080b), nu bleumarin ca
+   inainte, iar accentul e un lime foarte luminos.
+
+   ⚠️ REGULA DE CONTRAST, cea mai importanta la aceasta tema: accentul (#ddf93c) e
+   FOARTE DESCHIS (L=93%). Textul pe accent trebuie sa fie INCHIS (--on-accent), nu
+   alb — altfel butoanele devin ilizibile. La tema teal era invers (accent inchis,
+   text alb), deci orice `bg-accent text-white` mostenit e un bug de contrast.
+
+   Istoric teme, ca sa nu se reintroduca din greseala:
+   orange -> indigo/cyan -> auriu -> light/teal -> dark/teal -> dark/lime (actual).
+   Portocaliul/amberul raman INTERZISE (referinta ii folosea pentru badge-ul "HOT";
+   noi folosim lime acolo).
    ══════════════════════════════════════════════════════════════════════════ */
 :root {
-  --background: #0a0f1a;
-  --foreground: #f1f5f9;
+  --background: #06080b;
+  --foreground: #ffffff;
 
   /* Suprafete */
-  --surface:      #111827; /* card */
-  --surface-alt:  #1e293b; /* sectiune / card secundar */
-  --surface-high: #334155; /* hover / element ridicat */
+  --surface:      #14181c; /* card */
+  --surface-alt:  #1f2329; /* sectiune / card secundar */
+  --surface-high: #2a2f36; /* hover / element ridicat */
 
   /* Borduri */
-  --border:        #1e293b;
-  --border-strong: #334155;
+  --border:        #1f2329;
+  --border-strong: #2a2f36;
 
   /* Text */
-  --text-muted:  #94a3b8;
-  --text-soft:   #cbd5e1;
+  --text-muted:  #9399a0;
+  --text-soft:   #c9ced5;
 
-  /* Accent teal — NU schimba fara decizie explicita */
-  --accent:       #14b8a6;
-  --accent-deep:  #0d9488;
-  --accent-dark:  #0f766e;
-  --accent-light: #5eead4;
+  /* Accent lime — vezi regula de contrast de mai sus */
+  --accent:       #ddf93c;
+  --accent-deep:  #c3dd2c; /* hover/apasat */
+  --accent-dark:  #a8c018; /* varianta pentru text pe fundal deschis */
+  --accent-light: #ecff7a;
+  --on-accent:    #0c1000; /* text/iconita ASEZATE PE accent */
 
   /* Semantice */
-  --danger:  #ef4444; /* expira / urgenta reala */
-  --success: #34d399; /* verificat / activ */
+  --danger:  #e64343; /* expira / urgenta reala */
+  --success: #ddf93c; /* verificat / activ — acelasi lime, o singura voce vizuala */
 }
 
 @theme inline {

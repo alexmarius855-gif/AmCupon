@@ -67,16 +67,16 @@ export default function ShareButton({
     : "flex items-center gap-1.5 text-sm px-3 py-2 rounded-xl";
 
   const btnColors = isDark
-    ? "border border-[#334155] text-[#cbd5e1] hover:border-[#64748b] hover:text-[#cbd5e1]"
-    : "border border-[#475569] text-gray-500 hover:border-[#0d9488] hover:text-[#0d9488]";
+    ? "border border-[#2a2f36] text-[#c9ced5] hover:border-[#6b7178] hover:text-[#c9ced5]"
+    : "border border-[#3a4048] text-gray-500 hover:border-[#ddf93c] hover:text-[#ddf93c]";
 
   const dropdownBg = isDark
-    ? "bg-[#1e293b] border-[#334155]"
-    : "bg-[#111827] border-[#334155]";
+    ? "bg-[#1f2329] border-[#2a2f36]"
+    : "bg-[#14181c] border-[#2a2f36]";
 
-  const itemHover = isDark ? "hover:bg-[#334155]" : "hover:bg-[#111827]";
-  const dividerColor = isDark ? "border-[#334155]" : "border-[#334155]";
-  const copyColor = isDark ? "text-[#cbd5e1]" : "text-gray-600";
+  const itemHover = isDark ? "hover:bg-[#2a2f36]" : "hover:bg-[#14181c]";
+  const dividerColor = isDark ? "border-[#2a2f36]" : "border-[#2a2f36]";
+  const copyColor = isDark ? "text-[#c9ced5]" : "text-gray-600";
 
   return (
     <div className="relative inline-block">

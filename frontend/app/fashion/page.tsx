@@ -49,38 +49,38 @@ export default function FashionPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-[#0a0f1a]">
-        <nav className="bg-[#0a0f1a] border-b border-[#1e293b]">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#94a3b8]">
-            <Link href="/" className="hover:text-[#0d9488]">Acasa</Link>
+      <div className="min-h-screen bg-[#06080b]">
+        <nav className="bg-[#06080b] border-b border-[#1f2329]">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#9399a0]">
+            <Link href="/" className="hover:text-[#ddf93c]">Acasa</Link>
             <span className="mx-1">/</span>
-            <span className="text-[#cbd5e1] font-medium">Fashion & Haine cu Reducere</span>
+            <span className="text-[#c9ced5] font-medium">Fashion & Haine cu Reducere</span>
           </div>
         </nav>
 
-        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#0f766e] text-[#f1f5f9] py-12 px-4">
+        <section className="bg-gradient-to-br from-[#c3dd2c] via-[#ddf93c] to-[#c3dd2c] text-[#0c1000] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">👗</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Fashion & Haine cu Reducere {an}</h1>
-            <p className="text-[#ccfbf1] text-lg mb-6 max-w-xl mx-auto">
+            <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
               Coduri de reducere verificate la FashionDays, Answear, H&M si alte magazine de moda din Romania
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Haine Dama","Haine Barbati","Pantofi","Genti","Geci","Lenjerie","Accesorii"].map(c => (
-                <span key={c} className="bg-[#1e293b] text-[#f1f5f9] text-sm font-semibold px-4 py-1.5 rounded-full border border-[#334155]">{c}</span>
+                <span key={c} className="bg-[#1f2329] text-[#ffffff] text-sm font-semibold px-4 py-1.5 rounded-full border border-[#2a2f36]">{c}</span>
               ))}
             </div>
           </div>
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[#f1f5f9] mb-6 text-center">Ce gasesti la magazine fashion online</h2>
+          <h2 className="text-xl font-black text-[#ffffff] mb-6 text-center">Ce gasesti la magazine fashion online</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {AVANTAJE.map(a => (
-              <div key={a.titlu} className="bg-[#111827] border border-[#1e293b] rounded-xl p-5">
+              <div key={a.titlu} className="bg-[#14181c] border border-[#1f2329] rounded-xl p-5">
                 <div className="text-3xl mb-2">{a.icon}</div>
-                <h3 className="font-bold text-[#f1f5f9] text-sm mb-1">{a.titlu}</h3>
-                <p className="text-xs text-[#cbd5e1]">{a.desc}</p>
+                <h3 className="font-bold text-[#ffffff] text-sm mb-1">{a.titlu}</h3>
+                <p className="text-xs text-[#c9ced5]">{a.desc}</p>
               </div>
             ))}
           </div>
@@ -89,7 +89,7 @@ export default function FashionPage() {
         <section className="max-w-6xl mx-auto px-4 pb-10">
           <div className="flex items-center gap-3 mb-5">
             
-            <h2 className="text-xl font-black text-[#f1f5f9]">Magazine fashion cu reduceri active</h2>
+            <h2 className="text-xl font-black text-[#ffffff]">Magazine fashion cu reduceri active</h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {magazine.map((m) => (
@@ -108,16 +108,16 @@ export default function FashionPage() {
           limit={12}
         />
 
-        <section className="bg-[#111827] border-t border-[#1e293b] py-10 px-4">
+        <section className="bg-[#14181c] border-t border-[#1f2329] py-10 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-[#f1f5f9] mb-5">Ghid: Haine online mai ieftine in Romania</h2>
-            <div className="space-y-4 text-sm text-[#cbd5e1] leading-relaxed">
+            <h2 className="text-xl font-black text-[#ffffff] mb-5">Ghid: Haine online mai ieftine in Romania</h2>
+            <div className="space-y-4 text-sm text-[#c9ced5] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[#f1f5f9] mb-1">FashionDays vs Answear vs H&M</h3>
+                <h3 className="font-bold text-[#ffffff] mb-1">FashionDays vs Answear vs H&M</h3>
                 <p>FashionDays are cele mai frecvente reduceri flash (24-48h) cu discount de 50-70%. Answear exceleaza la branduri premium internationale. H&M are mereu o sectiune Sale cu articole sub 50 lei, plus promotii pentru membrii club.</p>
               </div>
               <div>
-                <h3 className="font-bold text-[#f1f5f9] mb-1">Cele mai bune perioade pentru cumparaturi fashion</h3>
+                <h3 className="font-bold text-[#ffffff] mb-1">Cele mai bune perioade pentru cumparaturi fashion</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
                   <li><strong>Solduri de iarna (ianuarie)</strong> — reduceri 50-80% la colectiile de toamna-iarna</li>
                   <li><strong>Solduri de vara (iulie)</strong> — lichidare stocuri primavara-vara</li>
@@ -126,18 +126,18 @@ export default function FashionPage() {
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-[#f1f5f9] mb-1">Cum economisesti la haine online</h3>
+                <h3 className="font-bold text-[#ffffff] mb-1">Cum economisesti la haine online</h3>
                 <p>Adauga produsele in wishlist si asteapta promotii. FashionDays trimite notificari cand un produs din wishlist intra la reducere. Cumparaturile de la sfarsit de sezon pot economisi 60-80% fata de pretul initial.</p>
               </div>
             </div>
           </div>
         </section>
 
-        <footer className="border-t border-[#1e293b] py-6 text-center text-xs text-[#94a3b8] mt-4">
+        <footer className="border-t border-[#1f2329] py-6 text-center text-xs text-[#9399a0] mt-4">
           © {an} AmCupon.ro ·{" "}
-          <Link href="/frumusete" className="hover:text-[#0d9488]">Frumusete</Link>{" · "}
-          <Link href="/idei-cadouri" className="hover:text-[#0d9488]">Idei Cadouri</Link>{" · "}
-          <Link href="/categorii" className="hover:text-[#0d9488]">Categorii</Link>
+          <Link href="/frumusete" className="hover:text-[#ddf93c]">Frumusete</Link>{" · "}
+          <Link href="/idei-cadouri" className="hover:text-[#ddf93c]">Idei Cadouri</Link>{" · "}
+          <Link href="/categorii" className="hover:text-[#ddf93c]">Categorii</Link>
         </footer>
       </div>
     </>

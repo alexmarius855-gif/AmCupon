@@ -28,7 +28,7 @@ const FAMILII = {
   moda:    "#f472b6", // pink  — fashion, beauty, bijuterii
   casa:    "#4ade80", // green — casa, animale, mancare
   viata:   "#c084fc", // purple— carti, copii, cadouri, calatorii
-  brand:   "#14b8a6", // teal  — accentul site-ului: sanatate, financiar, restul
+  brand:   "#ddf93c", // teal  — accentul site-ului: sanatate, financiar, restul
 } as const;
 
 interface CatVisual { icon: LucideIcon; color: string }

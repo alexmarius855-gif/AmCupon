@@ -34,9 +34,9 @@ const AGENTS = [
     role:    "Data & Sync",
     model:   "claude-haiku",
     color:   "#00f5d4",
-    bg:      "from-[#0a0f1a]/40 to-[#0a0f1a]",
-    border:  "border-[#14b8a6]/30",
-    glow:    "shadow-[#14b8a6]/20",
+    bg:      "from-[#06080b]/40 to-[#06080b]",
+    border:  "border-[#ddf93c]/30",
+    glow:    "shadow-[#ddf93c]/20",
     desc:    "NEXUS actualizeaza magazine, promotii si merge toate platformele de afiliere. Ruleaza de 4 ori pe zi.",
     skills:  ["Scraper","Merge","2Performant","Profitshare","Auto"],
     avatar:  "N",
@@ -51,7 +51,7 @@ const AGENTS = [
     role:    "Content & YouTube",
     model:   "claude-sonnet",
     color:   "#ff3cac",
-    bg:      "from-pink-900/40 to-[#0a0f1a]",
+    bg:      "from-pink-900/40 to-[#06080b]",
     border:  "border-pink-500/30",
     glow:    "shadow-pink-500/20",
     desc:    "ECHO genereaza scripturi complete YouTube, articole SEO, idei blog si ghiduri de cumparare.",
@@ -68,7 +68,7 @@ const AGENTS = [
     role:    "Social & Newsletter",
     model:   "claude-haiku",
     color:   "#f7971e",
-    bg:      "from-orange-900/40 to-[#0a0f1a]",
+    bg:      "from-orange-900/40 to-[#06080b]",
     border:  "border-orange-500/30",
     glow:    "shadow-orange-500/20",
     desc:    "PULSE creeaza continut pentru Instagram, TikTok, Facebook si campanii email pentru abonati.",
@@ -85,7 +85,7 @@ const AGENTS = [
     role:    "Business & Strategy",
     model:   "claude-opus",
     color:   "#784ba0",
-    bg:      "from-violet-900/40 to-[#0a0f1a]",
+    bg:      "from-violet-900/40 to-[#06080b]",
     border:  "border-violet-500/30",
     glow:    "shadow-violet-500/20",
     desc:    "SIGMA analizeaza oportunitati de business, strategii de crestere si idei de monetizare noi.",
@@ -266,7 +266,7 @@ function CampaignLinkBuilder({ deal }: { deal: ShockDeal }) {
       <div className="flex gap-2 mb-3">
         <select value={sursa} onChange={e => setSursa(e.target.value as typeof sursa)}
           className="text-xs font-mono px-2.5 py-1.5 rounded-lg border bg-transparent"
-          style={{ color:"#cbd5e1", borderColor:"#333355", background:"#111128" }}>
+          style={{ color:"#c9ced5", borderColor:"#333355", background:"#111128" }}>
           <option value="facebook">Facebook</option>
           <option value="telegram">Telegram</option>
           <option value="whatsapp">WhatsApp</option>
@@ -274,7 +274,7 @@ function CampaignLinkBuilder({ deal }: { deal: ShockDeal }) {
         </select>
         <input value={nume} onChange={e => setNume(e.target.value)}
           className="flex-1 text-xs font-mono px-2.5 py-1.5 rounded-lg border bg-transparent"
-          style={{ color:"#cbd5e1", borderColor:"#333355", background:"#111128" }}
+          style={{ color:"#c9ced5", borderColor:"#333355", background:"#111128" }}
           placeholder="nume campanie" />
       </div>
 
@@ -290,7 +290,7 @@ function CampaignLinkBuilder({ deal }: { deal: ShockDeal }) {
           </button>
         </div>
         <div className="flex items-start gap-2">
-          <pre className="flex-1 text-[10px] px-2.5 py-2 rounded-lg border whitespace-pre-wrap" style={{ color:"#cbd5e1", borderColor:"#33335533", background:"#0a0a1e" }}>
+          <pre className="flex-1 text-[10px] px-2.5 py-2 rounded-lg border whitespace-pre-wrap" style={{ color:"#c9ced5", borderColor:"#33335533", background:"#0a0a1e" }}>
             {caption}
           </pre>
           <button onClick={() => copy(caption, "caption")}

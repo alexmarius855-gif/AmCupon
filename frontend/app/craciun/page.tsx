@@ -65,12 +65,12 @@ const TOP_CRACIUN = [
 ];
 
 const IDEI_CADOURI = [
-  { emoji: "🧸", titlu: "Jucării copii", href: "/categorii/copii", culoare: "bg-yellow-100 text-[#0f766e]" },
-  { emoji: "💄", titlu: "Parfumuri & Beauty", href: "/categorii/beauty", culoare: "bg-[#14b8a6] text-[#0f766e]" },
-  { emoji: "📱", titlu: "Electronice", href: "/categorii/electronice", culoare: "bg-[#14b8a6] text-[#0f766e]" },
-  { emoji: "👗", titlu: "Modă & Fashion", href: "/categorii/fashion", culoare: "bg-[#14b8a6] text-[#0f766e]" },
-  { emoji: "📚", titlu: "Cărți & Jocuri", href: "/categorii/carti-educatie", culoare: "bg-green-100 text-[#0f766e]" },
-  { emoji: "🏋️", titlu: "Sport & Outdoor", href: "/categorii/sport", culoare: "bg-[#14b8a6] text-[#0f766e]" },
+  { emoji: "🧸", titlu: "Jucării copii", href: "/categorii/copii", culoare: "bg-yellow-100 text-[#c3dd2c]" },
+  { emoji: "💄", titlu: "Parfumuri & Beauty", href: "/categorii/beauty", culoare: "bg-[#ddf93c] text-[#c3dd2c]" },
+  { emoji: "📱", titlu: "Electronice", href: "/categorii/electronice", culoare: "bg-[#ddf93c] text-[#c3dd2c]" },
+  { emoji: "👗", titlu: "Modă & Fashion", href: "/categorii/fashion", culoare: "bg-[#ddf93c] text-[#c3dd2c]" },
+  { emoji: "📚", titlu: "Cărți & Jocuri", href: "/categorii/carti-educatie", culoare: "bg-green-100 text-[#c3dd2c]" },
+  { emoji: "🏋️", titlu: "Sport & Outdoor", href: "/categorii/sport", culoare: "bg-[#ddf93c] text-[#c3dd2c]" },
 ];
 
 function loadData(): Magazin[] {
@@ -118,24 +118,24 @@ export default function CraciunPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(craciunJsonLd) }}
       />
 
-      <div className="min-h-screen bg-[#0a0f1a]">
+      <div className="min-h-screen bg-[#06080b]">
         {/* Header */}
 
         {/* Breadcrumb */}
-        <nav className="max-w-6xl mx-auto px-4 pt-4 pb-0 text-xs text-[#94a3b8] flex items-center gap-1">
-          <Link href="/" className="hover:text-[#0d9488] transition-colors">Acasă</Link>
+        <nav className="max-w-6xl mx-auto px-4 pt-4 pb-0 text-xs text-[#9399a0] flex items-center gap-1">
+          <Link href="/" className="hover:text-[#ddf93c] transition-colors">Acasă</Link>
           <span className="mx-1">/</span>
-          <span className="text-[#cbd5e1]">Reduceri de Crăciun {an}</span>
+          <span className="text-[#c9ced5]">Reduceri de Crăciun {an}</span>
         </nav>
 
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#0f766e] text-[#f1f5f9]">
+        <section className="bg-gradient-to-br from-[#c3dd2c] via-[#ddf93c] to-[#c3dd2c] text-[#0c1000]">
           <div className="max-w-6xl mx-auto px-4 py-14 text-center">
             <div className="text-5xl mb-4">🎄</div>
             <h1 className="text-4xl md:text-5xl font-black mb-4 leading-tight">
               Reduceri de Crăciun {an}
             </h1>
-            <p className="text-[#ccfbf1] text-lg mb-8 max-w-xl mx-auto">
+            <p className="text-[#2a2f10] text-lg mb-8 max-w-xl mx-auto">
               Coduri de reducere verificate pentru cadourile perfecte — jucării, fashion,
               electronice, parfumuri și multe altele
             </p>
@@ -147,9 +147,9 @@ export default function CraciunPage() {
                 { val: `${magazine.reduce((a, m) => a + m.promotii.length, 0)}+`, label: "Oferte" },
                 { val: `${totalCoduri}+`, label: "Coduri" },
               ].map((s) => (
-                <div key={s.label} className="bg-[#1e293b] backdrop-blur-sm rounded-xl py-3 px-2">
+                <div key={s.label} className="bg-[#1f2329] backdrop-blur-sm rounded-xl py-3 px-2">
                   <div className="text-2xl font-black">{s.val}</div>
-                  <div className="text-xs text-[#ccfbf1]">{s.label}</div>
+                  <div className="text-xs text-[#2a2f10]">{s.label}</div>
                 </div>
               ))}
             </div>
@@ -158,7 +158,7 @@ export default function CraciunPage() {
 
         {/* Idei de cadouri */}
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[#f1f5f9] mb-5">🎁 Idei de cadouri</h2>
+          <h2 className="text-xl font-black text-[#ffffff] mb-5">🎁 Idei de cadouri</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
             {IDEI_CADOURI.map((idee) => (
               <a
@@ -176,10 +176,10 @@ export default function CraciunPage() {
         {/* Magazine grid */}
         <section className="max-w-6xl mx-auto px-4 pb-14">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-xl font-black text-[#f1f5f9]">
+            <h2 className="text-xl font-black text-[#ffffff]">
               🛍️ Magazine cu reduceri active
             </h2>
-            <span className="text-sm text-[#94a3b8]">{magazine.length} magazine</span>
+            <span className="text-sm text-[#9399a0]">{magazine.length} magazine</span>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -194,14 +194,14 @@ export default function CraciunPage() {
         <NewsletterCTA />
 
         {/* SEO Content */}
-        <section className="bg-[#111827] border-t border-[#1e293b]">
+        <section className="bg-[#14181c] border-t border-[#1f2329]">
           <div className="max-w-3xl mx-auto px-4 py-12">
-            <h2 className="text-2xl font-black text-[#f1f5f9] mb-6">
+            <h2 className="text-2xl font-black text-[#ffffff] mb-6">
               Ghid Cumpărături Crăciun {an}
             </h2>
-            <div className="space-y-6 text-[#cbd5e1] text-sm leading-relaxed">
+            <div className="space-y-6 text-[#c9ced5] text-sm leading-relaxed">
               <div>
-                <h3 className="text-[#f1f5f9] font-bold mb-2">Când să cumperi cadourile de Crăciun?</h3>
+                <h3 className="text-[#ffffff] font-bold mb-2">Când să cumperi cadourile de Crăciun?</h3>
                 <p>
                   Cel mai bun moment este în noiembrie, profitând de ofertele Black Friday, și
                   în primele două săptămâni din decembrie. Apropiindu-te de 25 decembrie,
@@ -210,7 +210,7 @@ export default function CraciunPage() {
                 </p>
               </div>
               <div>
-                <h3 className="text-[#f1f5f9] font-bold mb-2">Unde găsești cele mai bune cadouri la prețuri mici?</h3>
+                <h3 className="text-[#ffffff] font-bold mb-2">Unde găsești cele mai bune cadouri la prețuri mici?</h3>
                 <ul className="list-disc list-inside space-y-1">
                   <li><strong>Jucării:</strong> Noriel, eMAG — reduceri până la 50%</li>
                   <li><strong>Electronice:</strong> eMAG, Altex — oferte speciale de sezon</li>
@@ -220,7 +220,7 @@ export default function CraciunPage() {
                 </ul>
               </div>
               <div>
-                <h3 className="text-[#f1f5f9] font-bold mb-2">Cum folosești codurile de reducere de Crăciun?</h3>
+                <h3 className="text-[#ffffff] font-bold mb-2">Cum folosești codurile de reducere de Crăciun?</h3>
                 <p>
                   Intră pe pagina magazinului de pe AmCupon.ro, copiază codul de reducere
                   activ, adaugă produsele în coș pe site-ul magazinului și introdu codul la
@@ -232,13 +232,13 @@ export default function CraciunPage() {
           </div>
         </section>
 
-        <footer className="border-t border-[#1e293b] py-6 text-center text-xs text-[#94a3b8]">
+        <footer className="border-t border-[#1f2329] py-6 text-center text-xs text-[#9399a0]">
           © {an} AmCupon.ro ·{" "}
-          <Link href="/" className="hover:text-[#0d9488]">Toate reducerile</Link>
+          <Link href="/" className="hover:text-[#ddf93c]">Toate reducerile</Link>
           {" · "}
-          <Link href="/black-friday" className="hover:text-[#0d9488]">Black Friday</Link>
+          <Link href="/black-friday" className="hover:text-[#ddf93c]">Black Friday</Link>
           {" · "}
-          <Link href="/contact" className="hover:text-[#0d9488]">Contact</Link>
+          <Link href="/contact" className="hover:text-[#ddf93c]">Contact</Link>
         </footer>
       </div>
     </>

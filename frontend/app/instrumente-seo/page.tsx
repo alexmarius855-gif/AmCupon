@@ -27,7 +27,7 @@ const TOOLS_SEO = [
     nota: "9.8/10",
     pret: "de la 99$/luna",
     highlight: "All-in-one SEO suite",
-    culoare: "bg-[#0d9488]",
+    culoare: "bg-[#ddf93c]",
     desc: "Cea mai completa platforma SEO: research cuvinte cheie, audit site, analiza backlink-uri, monitorizare pozitii, analiza concurenta. Over 55+ instrumente intr-un singur abonament.",
     features: ["Keyword Research", "Site Audit", "Backlink Analysis", "Rank Tracking", "Competitor Analysis", "Content Marketing"],
   },
@@ -38,7 +38,7 @@ const TOOLS_SEO = [
     nota: "9.6/10",
     pret: "de la 99$/luna",
     highlight: "Best backlink database",
-    culoare: "bg-[#0d9488]",
+    culoare: "bg-[#ddf93c]",
     desc: "Cea mai mare baza de date de backlink-uri din lume. Perfect pentru link building, analiza site-urilor concurentilor si research de continut. Site Explorer, Keywords Explorer, Site Audit.",
     features: ["Site Explorer", "Keywords Explorer", "Content Explorer", "Site Audit", "Rank Tracker", "Web Explorer"],
   },
@@ -49,7 +49,7 @@ const TOOLS_SEO = [
     nota: "9.2/10",
     pret: "de la 99$/luna",
     highlight: "Domain Authority inventor",
-    culoare: "bg-[#14b8a6]",
+    culoare: "bg-[#ddf93c]",
     desc: "Inventatorul metricii Domain Authority. Moz Pro ofera keyword research, site crawl, rank tracking si link research. Ideal pentru agentii SEO si freelanceri.",
     features: ["Keyword Research", "Link Explorer", "Site Crawl", "Rank Tracking", "On-Page Grader", "MozBar Extension"],
   },
@@ -97,24 +97,24 @@ export default function InstrumenteSeoPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-[#0a0f1a]">
+      <div className="min-h-screen bg-[#06080b]">
 
         {/* Breadcrumb */}
-        <nav className="bg-[#111827]/80 backdrop-blur-sm border-b border-[#1e293b]">
-          <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-1.5 text-xs text-[#94a3b8]">
-            <Link href="/" className="hover:text-[#0d9488] transition-colors">Acasa</Link>
+        <nav className="bg-[#14181c]/80 backdrop-blur-sm border-b border-[#1f2329]">
+          <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-1.5 text-xs text-[#9399a0]">
+            <Link href="/" className="hover:text-[#ddf93c] transition-colors">Acasa</Link>
             <span>/</span>
-            <Link href="/servicii" className="hover:text-[#0d9488] transition-colors">Servicii</Link>
+            <Link href="/servicii" className="hover:text-[#ddf93c] transition-colors">Servicii</Link>
             <span>/</span>
-            <span className="text-[#cbd5e1] font-medium">Instrumente SEO</span>
+            <span className="text-[#c9ced5] font-medium">Instrumente SEO</span>
           </div>
         </nav>
 
         {/* Hero */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-emerald-950 via-[#111827] to-[#111827] py-16 px-4">
+        <section className="relative overflow-hidden bg-gradient-to-br from-emerald-950 via-[#14181c] to-[#14181c] py-16 px-4">
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute top-0 left-1/3 w-80 h-80 bg-emerald-600/20 rounded-full blur-3xl" />
-            <div className="absolute bottom-0 right-1/3 w-64 h-64 bg-[#14b8a6]/15 rounded-full blur-3xl" />
+            <div className="absolute bottom-0 right-1/3 w-64 h-64 bg-[#ddf93c]/15 rounded-full blur-3xl" />
           </div>
           <div className="relative max-w-6xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
@@ -122,15 +122,15 @@ export default function InstrumenteSeoPage() {
               Trial gratuit disponibil
             </div>
             <div className="text-6xl mb-5 drop-shadow-2xl">📊</div>
-            <h1 className="text-4xl md:text-5xl font-black text-[#f1f5f9] mb-4 tracking-tight">
-              Instrumente SEO cu Reducere <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #34d399, #0d9488)"}}>{an}</span>
+            <h1 className="text-4xl md:text-5xl font-black text-[#ffffff] mb-4 tracking-tight">
+              Instrumente SEO cu Reducere <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #34d399, #ddf93c)"}}>{an}</span>
             </h1>
-            <p className="text-[#cbd5e1] text-lg mb-8 max-w-xl mx-auto leading-relaxed">
+            <p className="text-[#c9ced5] text-lg mb-8 max-w-xl mx-auto leading-relaxed">
               Semrush, Ahrefs, Moz — tool-uri SEO profesionale cu trial gratuit si reduceri pana la 40%
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Semrush","Ahrefs","Moz Pro","SE Ranking","Trial Gratuit","Keyword Research","Audit Site","Backlink Analysis"].map(c => (
-                <span key={c} className="bg-[#1e293b] border border-[#334155] text-slate-500 text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
+                <span key={c} className="bg-[#1f2329] border border-[#2a2f36] text-slate-500 text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
               ))}
             </div>
           </div>
@@ -140,46 +140,46 @@ export default function InstrumenteSeoPage() {
         <section className="max-w-6xl mx-auto px-4 py-12">
           <div className="text-center mb-8">
             <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-2">TOP INSTRUMENTE</p>
-            <h2 className="text-2xl font-black text-[#f1f5f9]">Cele mai bune tool-uri SEO in {an}</h2>
+            <h2 className="text-2xl font-black text-[#ffffff]">Cele mai bune tool-uri SEO in {an}</h2>
           </div>
           <div className="space-y-4">
             {TOOLS_SEO.map(t => {
               const mag = topTools.find(m => m.magazin === t.slug);
               const promo = mag?.promotii[0];
               return (
-                <div key={t.slug} className="bg-[#111827] border border-[#1e293b] hover:border-emerald-500/30 rounded-xl p-6 transition-all duration-200">
+                <div key={t.slug} className="bg-[#14181c] border border-[#1f2329] hover:border-emerald-500/30 rounded-xl p-6 transition-all duration-200">
                   <div className="flex flex-col sm:flex-row sm:items-start gap-5">
                     <div className={`w-14 h-14 ${t.culoare} rounded-xl flex items-center justify-center text-3xl shrink-0`}>{t.emoji}</div>
                     <div className="flex-1">
                       <div className="flex flex-wrap items-center gap-3 mb-2">
-                        <h3 className="text-xl font-black text-[#f1f5f9]">{t.name}</h3>
+                        <h3 className="text-xl font-black text-[#ffffff]">{t.name}</h3>
                         <span className="bg-emerald-500/15 border border-emerald-500/25 text-emerald-400 text-xs font-bold px-2 py-0.5 rounded-full">{t.nota}</span>
-                        <span className="text-[#cbd5e1] text-xs">{t.highlight}</span>
+                        <span className="text-[#c9ced5] text-xs">{t.highlight}</span>
                       </div>
-                      <p className="text-[#cbd5e1] text-sm leading-relaxed mb-4">{t.desc}</p>
+                      <p className="text-[#c9ced5] text-sm leading-relaxed mb-4">{t.desc}</p>
                       <div className="flex flex-wrap gap-2 mb-4">
                         {t.features.map(f => (
-                          <span key={f} className="bg-[#1e293b] border border-[#334155] text-[#cbd5e1] text-xs px-2.5 py-1 rounded-full">{f}</span>
+                          <span key={f} className="bg-[#1f2329] border border-[#2a2f36] text-[#c9ced5] text-xs px-2.5 py-1 rounded-full">{f}</span>
                         ))}
                       </div>
                       <div className="flex flex-wrap items-center gap-3">
-                        <span className="text-[#0d9488] font-black text-base">{t.pret}</span>
+                        <span className="text-[#ddf93c] font-black text-base">{t.pret}</span>
                         {mag ? (
                           <a href={`/cod-reducere/${t.slug}`}
-                            className="inline-flex items-center gap-2 bg-[#0d9488] hover:bg-[#14b8a6] text-white text-sm font-bold px-4 py-2 rounded-xl transition-colors shadow-lg shadow-[#14b8a6]/20">
+                            className="inline-flex items-center gap-2 bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] text-sm font-bold px-4 py-2 rounded-xl transition-colors shadow-lg shadow-[#ddf93c]/20">
                             {mag.are_promotie ? (mag.cod_cupon ? "Cod reducere activ" : "Oferta activa") : "Vezi oferta"}
                             <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/></svg>
                           </a>
                         ) : (
                           <a href={`https://www.${t.slug}`} target="_blank" rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 bg-[#334155] hover:bg-[#334155] text-[#f1f5f9] text-sm font-bold px-4 py-2 rounded-xl transition-colors">
+                            className="inline-flex items-center gap-2 bg-[#2a2f36] hover:bg-[#2a2f36] text-[#ffffff] text-sm font-bold px-4 py-2 rounded-xl transition-colors">
                             Site oficial
                             <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                           </a>
                         )}
                         {promo?.cod_cupon && (
-                          <div className="border border-dashed border-[#0d9488]/50 rounded-xl px-3 py-1.5 bg-[#14b8a6]/8">
-                            <span className="font-mono font-black text-[#0d9488] text-sm tracking-widest">{promo.cod_cupon}</span>
+                          <div className="border border-dashed border-[#ddf93c]/50 rounded-xl px-3 py-1.5 bg-[#ddf93c]/8">
+                            <span className="font-mono font-black text-[#ddf93c] text-sm tracking-widest">{promo.cod_cupon}</span>
                           </div>
                         )}
                       </div>
@@ -192,21 +192,21 @@ export default function InstrumenteSeoPage() {
         </section>
 
         {/* Instrumente gratuite */}
-        <section className="bg-[#111827] border-t border-[#1e293b] py-12 px-4">
+        <section className="bg-[#14181c] border-t border-[#1f2329] py-12 px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-8">
-              <p className="text-xs font-bold text-[#0f766e] uppercase tracking-widest mb-2">100% GRATUIT</p>
-              <h2 className="text-2xl font-black text-[#f1f5f9]">Instrumente SEO gratuite recomandate</h2>
-              <p className="text-[#cbd5e1] text-sm mt-2">Start ideal daca esti la inceput sau ai un buget limitat</p>
+              <p className="text-xs font-bold text-[#c3dd2c] uppercase tracking-widest mb-2">100% GRATUIT</p>
+              <h2 className="text-2xl font-black text-[#ffffff]">Instrumente SEO gratuite recomandate</h2>
+              <p className="text-[#c9ced5] text-sm mt-2">Start ideal daca esti la inceput sau ai un buget limitat</p>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {TOOLS_GRATUITE.map((t) => (
-                <div key={t.nume} className="bg-[#1e293b] border border-[#334155] rounded-xl p-5 hover:border-[#14b8a6]/30 transition-all duration-200">
+                <div key={t.nume} className="bg-[#1f2329] border border-[#2a2f36] rounded-xl p-5 hover:border-[#ddf93c]/30 transition-all duration-200">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 bg-[#14b8a6]/20 border border-[#14b8a6]/30 rounded-xl flex items-center justify-center text-xl">{t.emoji}</div>
-                    <h3 className="font-bold text-[#f1f5f9] text-sm">{t.nume}</h3>
+                    <div className="w-10 h-10 bg-[#ddf93c]/20 border border-[#ddf93c]/30 rounded-xl flex items-center justify-center text-xl">{t.emoji}</div>
+                    <h3 className="font-bold text-[#ffffff] text-sm">{t.nume}</h3>
                   </div>
-                  <p className="text-xs text-[#cbd5e1] leading-relaxed">{t.desc}</p>
+                  <p className="text-xs text-[#c9ced5] leading-relaxed">{t.desc}</p>
                   <div className="mt-3">
                     <span className="text-xs font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded-full">GRATUIT</span>
                   </div>
@@ -219,28 +219,28 @@ export default function InstrumenteSeoPage() {
         {/* Ghid */}
         <section className="max-w-6xl mx-auto px-4 py-12">
           <div className="text-center mb-8">
-            <p className="text-xs font-bold text-[#0d9488] uppercase tracking-widest mb-2">GHID ALEGERE</p>
-            <h2 className="text-2xl font-black text-[#f1f5f9]">Cum alegi tool-ul SEO potrivit</h2>
+            <p className="text-xs font-bold text-[#ddf93c] uppercase tracking-widest mb-2">GHID ALEGERE</p>
+            <h2 className="text-2xl font-black text-[#ffffff]">Cum alegi tool-ul SEO potrivit</h2>
           </div>
           <div className="space-y-4">
             {GHID_SEO.map((g, i) => (
-              <div key={i} className="bg-[#111827] border border-[#1e293b] rounded-xl p-6">
-                <h3 className="font-bold text-[#f1f5f9] text-base mb-3 flex items-center gap-2">
-                  <span className="w-6 h-6 bg-[#14b8a6]/20 border border-[#14b8a6]/30 rounded-full flex items-center justify-center text-[#0d9488] text-xs font-black">{i+1}</span>
+              <div key={i} className="bg-[#14181c] border border-[#1f2329] rounded-xl p-6">
+                <h3 className="font-bold text-[#ffffff] text-base mb-3 flex items-center gap-2">
+                  <span className="w-6 h-6 bg-[#ddf93c]/20 border border-[#ddf93c]/30 rounded-full flex items-center justify-center text-[#ddf93c] text-xs font-black">{i+1}</span>
                   {g.titlu}
                 </h3>
-                <p className="text-sm text-[#cbd5e1] leading-relaxed">{g.continut}</p>
+                <p className="text-sm text-[#c9ced5] leading-relaxed">{g.continut}</p>
               </div>
             ))}
           </div>
         </section>
 
         {/* CTA Newsletter / Alerte */}
-        <section className="bg-gradient-to-r from-emerald-900/50 to-[#14b8a6]/50 border-t border-emerald-500/20 py-10 px-4">
+        <section className="bg-gradient-to-r from-emerald-900/50 to-[#ddf93c]/50 border-t border-emerald-500/20 py-10 px-4">
           <div className="max-w-2xl mx-auto text-center">
             <div className="text-3xl mb-3">🔔</div>
-            <h2 className="text-xl font-black text-[#f1f5f9] mb-2">Vrei alerte cand apare un cod Semrush?</h2>
-            <p className="text-[#cbd5e1] text-sm mb-5">Abonat-te la newsletter-ul AmCupon — trimitem alerte gratuite cand apar coduri de reducere la tool-uri SEO si software.</p>
+            <h2 className="text-xl font-black text-[#ffffff] mb-2">Vrei alerte cand apare un cod Semrush?</h2>
+            <p className="text-[#c9ced5] text-sm mb-5">Abonat-te la newsletter-ul AmCupon — trimitem alerte gratuite cand apar coduri de reducere la tool-uri SEO si software.</p>
             <Link href="/#newsletter"
               className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-6 py-3 rounded-xl transition-colors shadow-lg shadow-emerald-500/25">
               Vreau alerte gratuite
@@ -251,7 +251,7 @@ export default function InstrumenteSeoPage() {
 
         {/* Related */}
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <p className="text-xs font-bold text-[#94a3b8] uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
+          <p className="text-xs font-bold text-[#9399a0] uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/hosting", label: "🌐 Hosting Web" },
@@ -261,18 +261,18 @@ export default function InstrumenteSeoPage() {
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-[#1e293b] hover:bg-[#334155] border border-[#334155] hover:border-emerald-500/40 text-[#cbd5e1] hover:text-[#f1f5f9] text-sm font-semibold px-4 py-2 rounded-xl transition-all duration-200">
+                className="bg-[#1f2329] hover:bg-[#2a2f36] border border-[#2a2f36] hover:border-emerald-500/40 text-[#c9ced5] hover:text-[#ffffff] text-sm font-semibold px-4 py-2 rounded-xl transition-all duration-200">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-[#1e293b] py-6 text-center text-xs text-[#94a3b8]">
+        <footer className="border-t border-[#1f2329] py-6 text-center text-xs text-[#9399a0]">
           &copy; {an} AmCupon.ro &middot;{" "}
-          <Link href="/hosting" className="hover:text-[#0d9488] transition-colors">Hosting</Link>{" · "}
-          <Link href="/vpn" className="hover:text-[#0d9488] transition-colors">VPN</Link>{" · "}
-          <Link href="/categorii" className="hover:text-[#0d9488] transition-colors">Categorii</Link>
+          <Link href="/hosting" className="hover:text-[#ddf93c] transition-colors">Hosting</Link>{" · "}
+          <Link href="/vpn" className="hover:text-[#ddf93c] transition-colors">VPN</Link>{" · "}
+          <Link href="/categorii" className="hover:text-[#ddf93c] transition-colors">Categorii</Link>
         </footer>
       </div>
     </>

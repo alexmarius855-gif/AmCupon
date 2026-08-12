@@ -49,7 +49,7 @@ function parseInline(text: string, baseKey: string): React.ReactNode[] {
       const isExt = match[3].startsWith("http");
       nodes.push(
         <a key={`${baseKey}-l${i}`} href={match[3]}
-          className="text-[#0d9488] hover:text-[#0f766e] underline underline-offset-2 font-medium"
+          className="text-[#ddf93c] hover:text-[#c3dd2c] underline underline-offset-2 font-medium"
           {...(isExt ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
           {match[2]}
         </a>
@@ -66,22 +66,22 @@ function renderContent(content: string) {
   return content.split("\n\n").map((block, i) => {
     const key = `b${i}`;
     if (block.startsWith("## ")) {
-      return <h2 key={key} className="text-xl font-black text-[#f1f5f9] mt-8 mb-3">{parseInline(block.slice(3), key)}</h2>;
+      return <h2 key={key} className="text-xl font-black text-[#ffffff] mt-8 mb-3">{parseInline(block.slice(3), key)}</h2>;
     }
     if (block.startsWith("### ")) {
-      return <h3 key={key} className="text-lg font-bold text-[#f1f5f9] mt-6 mb-2">{parseInline(block.slice(4), key)}</h3>;
+      return <h3 key={key} className="text-lg font-bold text-[#ffffff] mt-6 mb-2">{parseInline(block.slice(4), key)}</h3>;
     }
     if (block.startsWith("- ") || block.includes("\n- ")) {
       const items = block.split("\n").filter((l) => l.startsWith("- ")).map((l) => l.slice(2));
       return (
-        <ul key={key} className="list-disc list-inside space-y-1.5 my-4 text-[#cbd5e1]">
+        <ul key={key} className="list-disc list-inside space-y-1.5 my-4 text-[#c9ced5]">
           {items.map((item, j) => (
             <li key={j}>{parseInline(item, `${key}-li${j}`)}</li>
           ))}
         </ul>
       );
     }
-    return <p key={key} className="text-[#cbd5e1] leading-relaxed my-3">{parseInline(block, key)}</p>;
+    return <p key={key} className="text-[#c9ced5] leading-relaxed my-3">{parseInline(block, key)}</p>;
   });
 }
 
@@ -201,31 +201,31 @@ export default async function ArticolPage({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
-      <div className="min-h-screen bg-[#0a0f1a]">
+      <div className="min-h-screen bg-[#06080b]">
         <article className="max-w-3xl mx-auto px-4 py-10">
           <div className="mb-6">
-            <span className="bg-[#0d9488] text-white text-xs font-bold px-3 py-1 rounded-full">{post.category}</span>
+            <span className="bg-[#ddf93c] text-[#0c1000] text-xs font-bold px-3 py-1 rounded-full">{post.category}</span>
           </div>
 
-          <h1 className="text-2xl md:text-3xl font-black text-[#f1f5f9] leading-tight mb-4">{post.title}</h1>
+          <h1 className="text-2xl md:text-3xl font-black text-[#ffffff] leading-tight mb-4">{post.title}</h1>
 
-          <div className="flex items-center gap-4 text-sm text-[#94a3b8] mb-8 pb-6 border-b border-[#1e293b]">
+          <div className="flex items-center gap-4 text-sm text-[#9399a0] mb-8 pb-6 border-b border-[#1f2329]">
             <div className="flex items-center gap-2 shrink-0">
               <Image
                 src="/logo-profile.svg"
                 alt="AmCupon.ro"
                 width={28}
                 height={28}
-                className="rounded-full ring-2 ring-[#14b8a6]/20"
+                className="rounded-full ring-2 ring-[#ddf93c]/20"
               />
-              <span className="font-semibold text-[#cbd5e1]">AmCupon.ro</span>
+              <span className="font-semibold text-[#c9ced5]">AmCupon.ro</span>
             </div>
             <span>·</span>
             <span>{formatDate(post.date)}</span>
             {post.magazin && (
               <>
                 <span>·</span>
-                <a href={`/cod-reducere/${post.magazin}`} className="text-[#0d9488] font-semibold hover:underline">
+                <a href={`/cod-reducere/${post.magazin}`} className="text-[#ddf93c] font-semibold hover:underline">
                   {numeAfisat(post.magazin)}
                 </a>
               </>
@@ -236,7 +236,7 @@ export default async function ArticolPage({
             <Image src={post.cover} alt={post.title} fill className="object-cover" priority sizes="(max-width: 768px) 100vw, 768px" />
           </div>
 
-          <p className="text-lg text-[#cbd5e1] font-medium leading-relaxed mb-8 p-5 bg-[#111827] rounded-xl border-l-4 border-[#14b8a6] border-y border-r border-y-[#e2e8f0] border-r-[#e2e8f0]">
+          <p className="text-lg text-[#c9ced5] font-medium leading-relaxed mb-8 p-5 bg-[#14181c] rounded-xl border-l-4 border-[#ddf93c] border-y border-r border-y-[#e2e8f0] border-r-[#e2e8f0]">
             {post.excerpt}
           </p>
 
@@ -245,30 +245,30 @@ export default async function ArticolPage({
           </div>
 
           {post.magazin && (
-            <div className="mt-10 p-6 bg-gradient-to-r from-[#0d9488] to-[#14b8a6] rounded-xl text-white text-center">
+            <div className="mt-10 p-6 bg-gradient-to-r from-[#ddf93c] to-[#ddf93c] rounded-xl text-[#0c1000] text-center">
               <p className="font-black text-xl mb-2">Vezi toate promoțiile {numeAfisat(post.magazin)}</p>
-              <p className="text-[#ccfbf1] text-sm mb-4">Coduri verificate, actualizate zilnic</p>
+              <p className="text-[#2a2f10] text-sm mb-4">Coduri verificate, actualizate zilnic</p>
               <a href={`/cod-reducere/${post.magazin}`}
-                className="inline-block bg-[#111827] text-[#0f766e] font-bold px-6 py-2.5 rounded-xl text-sm hover:bg-[#0a0f1a] transition-colors">
+                className="inline-block bg-[#14181c] text-[#c3dd2c] font-bold px-6 py-2.5 rounded-xl text-sm hover:bg-[#06080b] transition-colors">
                 Deschide pagina →
               </a>
             </div>
           )}
 
           {/* Newsletter CTA */}
-          <div className="mt-10 p-6 bg-[#0a0f1a] rounded-xl text-center">
-            <p className="text-sm font-black text-[#0d9488] uppercase tracking-widest mb-2">Newsletter gratuit</p>
-            <h3 className="text-xl font-black text-[#f1f5f9] mb-2">Primeste coduri noi direct pe email</h3>
-            <p className="text-[#cbd5e1] text-sm mb-5">1000+ magazine monitorizate zilnic. Zero spam.</p>
+          <div className="mt-10 p-6 bg-[#06080b] rounded-xl text-center">
+            <p className="text-sm font-black text-[#ddf93c] uppercase tracking-widest mb-2">Newsletter gratuit</p>
+            <h3 className="text-xl font-black text-[#ffffff] mb-2">Primeste coduri noi direct pe email</h3>
+            <p className="text-[#c9ced5] text-sm mb-5">1000+ magazine monitorizate zilnic. Zero spam.</p>
             <Link href="/newsletter"
-              className="inline-flex items-center gap-2 bg-[#0d9488] hover:bg-[#14b8a6] text-white font-bold px-6 py-3 rounded-xl text-sm transition-colors">
+              className="inline-flex items-center gap-2 bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] font-bold px-6 py-3 rounded-xl text-sm transition-colors">
               Aboneaza-te gratuit &rarr;
             </Link>
           </div>
 
           {/* Share buttons */}
-          <div className="mt-10 pt-6 border-t border-[#1e293b]">
-            <p className="text-sm font-bold text-[#cbd5e1] mb-3 text-center">Distribuie articolul</p>
+          <div className="mt-10 pt-6 border-t border-[#1f2329]">
+            <p className="text-sm font-bold text-[#c9ced5] mb-3 text-center">Distribuie articolul</p>
             <div className="flex justify-center gap-3">
               <a
                 href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`https://amcupon.ro/blog/${slug}`)}`}
@@ -297,17 +297,17 @@ export default async function ArticolPage({
 
         {altePosts.length > 0 && (
           <div className="max-w-3xl mx-auto px-4 pb-12">
-            <h2 className="text-xl font-black text-[#f1f5f9] mb-5">Articole recomandate</h2>
+            <h2 className="text-xl font-black text-[#ffffff] mb-5">Articole recomandate</h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {altePosts.map((p) => (
                 <a key={p.slug} href={`/blog/${p.slug}`}
-                  className="bg-[#111827] rounded-xl border border-[#1e293b] hover:border-[#14b8a6]/50 overflow-hidden hover:shadow-lg hover:shadow-black/40 transition-all group">
+                  className="bg-[#14181c] rounded-xl border border-[#1f2329] hover:border-[#ddf93c]/50 overflow-hidden hover:shadow-lg hover:shadow-black/40 transition-all group">
                   <div className="relative h-32 overflow-hidden">
                     <Image src={p.cover} alt={p.title} fill className="object-cover group-hover:scale-105 transition-transform duration-300" sizes="300px" />
                   </div>
                   <div className="p-4">
-                    <span className="text-xs font-bold text-[#0d9488]">{p.category}</span>
-                    <p className="text-sm font-bold text-[#f1f5f9] mt-1 line-clamp-2 group-hover:text-[#0d9488] transition-colors">{p.title}</p>
+                    <span className="text-xs font-bold text-[#ddf93c]">{p.category}</span>
+                    <p className="text-sm font-bold text-[#ffffff] mt-1 line-clamp-2 group-hover:text-[#ddf93c] transition-colors">{p.title}</p>
                   </div>
                 </a>
               ))}
@@ -316,7 +316,7 @@ export default async function ArticolPage({
         )}
 
         <div className="max-w-3xl mx-auto px-4 pb-10 text-center">
-          <Link href="/blog" className="text-sm text-[#94a3b8] hover:text-[#0d9488] transition-colors">← Înapoi la Blog</Link>
+          <Link href="/blog" className="text-sm text-[#9399a0] hover:text-[#ddf93c] transition-colors">← Înapoi la Blog</Link>
         </div>
       </div>
     </>

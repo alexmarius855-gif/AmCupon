@@ -49,38 +49,38 @@ export default function ParfumuriPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-[#0a0f1a]">
-        <nav className="bg-[#0a0f1a] border-b border-[#1e293b]">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#94a3b8]">
-            <Link href="/" className="hover:text-[#0d9488]">Acasă</Link>
+      <div className="min-h-screen bg-[#06080b]">
+        <nav className="bg-[#06080b] border-b border-[#1f2329]">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#9399a0]">
+            <Link href="/" className="hover:text-[#ddf93c]">Acasă</Link>
             <span className="mx-1">/</span>
-            <span className="text-[#cbd5e1] font-medium">Parfumuri cu Reducere</span>
+            <span className="text-[#c9ced5] font-medium">Parfumuri cu Reducere</span>
           </div>
         </nav>
 
-        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#0f766e] text-[#f1f5f9] py-12 px-4">
+        <section className="bg-gradient-to-br from-[#c3dd2c] via-[#ddf93c] to-[#c3dd2c] text-[#0c1000] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">🌹</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Parfumuri cu Reducere {an}</h1>
-            <p className="text-[#ccfbf1] text-lg mb-6 max-w-xl mx-auto">
+            <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
               Coduri de reducere verificate la Douglas, Notino, Sephora și alte magazine de cosmetice din România
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Parfumuri originale","Machiaj","Skincare","Îngrijire corp","Seturi cadou","Nail art"].map(c => (
-                <span key={c} className="bg-[#1e293b] text-[#f1f5f9] text-sm font-semibold px-4 py-1.5 rounded-full border border-[#334155]">{c}</span>
+                <span key={c} className="bg-[#1f2329] text-[#ffffff] text-sm font-semibold px-4 py-1.5 rounded-full border border-[#2a2f36]">{c}</span>
               ))}
             </div>
           </div>
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[#f1f5f9] mb-6 text-center">Ce găsești la parfumuri online</h2>
+          <h2 className="text-xl font-black text-[#ffffff] mb-6 text-center">Ce găsești la parfumuri online</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {AVANTAJE.map(a => (
-              <div key={a.titlu} className="bg-[#111827] border border-[#1e293b] rounded-xl p-5">
+              <div key={a.titlu} className="bg-[#14181c] border border-[#1f2329] rounded-xl p-5">
                 <div className="text-3xl mb-2">{a.icon}</div>
-                <h3 className="font-bold text-[#f1f5f9] text-sm mb-1">{a.titlu}</h3>
-                <p className="text-xs text-[#cbd5e1]">{a.desc}</p>
+                <h3 className="font-bold text-[#ffffff] text-sm mb-1">{a.titlu}</h3>
+                <p className="text-xs text-[#c9ced5]">{a.desc}</p>
               </div>
             ))}
           </div>
@@ -89,7 +89,7 @@ export default function ParfumuriPage() {
         <section className="max-w-6xl mx-auto px-4 pb-10">
           <div className="flex items-center gap-3 mb-5">
             
-            <h2 className="text-xl font-black text-[#f1f5f9]">Magazine parfumuri cu reduceri active</h2>
+            <h2 className="text-xl font-black text-[#ffffff]">Magazine parfumuri cu reduceri active</h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {magazine.map((m) => (
@@ -108,16 +108,16 @@ export default function ParfumuriPage() {
           limit={12}
         />
 
-        <section className="bg-[#111827] border-t border-[#1e293b] py-10 px-4">
+        <section className="bg-[#14181c] border-t border-[#1f2329] py-10 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-[#f1f5f9] mb-5">Ghid: Parfumuri originale ieftine în România</h2>
-            <div className="space-y-4 text-sm text-[#cbd5e1] leading-relaxed">
+            <h2 className="text-xl font-black text-[#ffffff] mb-5">Ghid: Parfumuri originale ieftine în România</h2>
+            <div className="space-y-4 text-sm text-[#c9ced5] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[#f1f5f9] mb-1">Douglas vs Notino vs Sephora</h3>
+                <h3 className="font-bold text-[#ffffff] mb-1">Douglas vs Notino vs Sephora</h3>
                 <p>Douglas are cele mai frecvente reduceri și o gamă largă de branduri premium. Notino excelează la parfumuri de nișă și prețuri competitive. Sephora atrage cu seturi exclusive și produse limitată.</p>
               </div>
               <div>
-                <h3 className="font-bold text-[#f1f5f9] mb-1">Parfumuri populare cu reduceri frecvente</h3>
+                <h3 className="font-bold text-[#ffffff] mb-1">Parfumuri populare cu reduceri frecvente</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
                   <li><strong>Chanel Coco Mademoiselle</strong> — bestseller cu -15% periodic</li>
                   <li><strong>Dior Sauvage</strong> — cel mai vândut parfum masculin</li>
@@ -126,7 +126,7 @@ export default function ParfumuriPage() {
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-[#f1f5f9] mb-1">Când să cumperi</h3>
+                <h3 className="font-bold text-[#ffffff] mb-1">Când să cumperi</h3>
                 <p>Cele mai mari reduceri la parfumuri apar în noiembrie (Black Friday), înainte de Crăciun și de Valentine&apos;s Day. Douglas lansează frecvent promoții pentru membrii clubului de fidelitate.</p>
               </div>
             </div>
@@ -134,7 +134,7 @@ export default function ParfumuriPage() {
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[#cbd5e1] mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-[#c9ced5] mb-4">Exploreaza si alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/frumusete", label: "💄 Frumusete" },
@@ -145,18 +145,18 @@ export default function ParfumuriPage() {
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-[#111827] hover:bg-[#1e293b] hover:text-[#0f766e] text-[#cbd5e1] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#1e293b] hover:border-[#cbd5e1]">
+                className="bg-[#14181c] hover:bg-[#1f2329] hover:text-[#c3dd2c] text-[#c9ced5] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#1f2329] hover:border-[#c9ced5]">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-[#1e293b] py-6 text-center text-xs text-[#94a3b8] mt-4">
+        <footer className="border-t border-[#1f2329] py-6 text-center text-xs text-[#9399a0] mt-4">
           © {an} AmCupon.ro ·{" "}
-          <Link href="/frumusete" className="hover:text-[#0d9488]">Frumusețe</Link>{" · "}
-          <Link href="/farmacie" className="hover:text-[#0d9488]">Farmacie</Link>{" · "}
-          <Link href="/categorii" className="hover:text-[#0d9488]">Categorii</Link>
+          <Link href="/frumusete" className="hover:text-[#ddf93c]">Frumusețe</Link>{" · "}
+          <Link href="/farmacie" className="hover:text-[#ddf93c]">Farmacie</Link>{" · "}
+          <Link href="/categorii" className="hover:text-[#ddf93c]">Categorii</Link>
         </footer>
       </div>
     </>

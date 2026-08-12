@@ -35,7 +35,7 @@ const VPN_LIST = [
     name: "NordVPN",
     tagline: "Cel mai complet VPN — lider mondial cu 6000+ servere",
     badge: "Recomandat #1",
-    badgeColor: "bg-[#0d9488]",
+    badgeColor: "bg-[#ddf93c]",
     emoji: "🏆",
     pret_luna: "2.99€",
     pret_nota: "plan 2 ani",
@@ -58,7 +58,7 @@ const VPN_LIST = [
     name: "Surfshark",
     tagline: "Dispozitive nelimitate — cel mai bun raport calitate/pret",
     badge: "Cel mai accesibil",
-    badgeColor: "bg-[#0d9488]",
+    badgeColor: "bg-[#ddf93c]",
     emoji: "💰",
     pret_luna: "2.39€",
     pret_nota: "plan 2 ani",
@@ -142,24 +142,24 @@ const FAQ = [
 
 export default function VpnPage() {
   return (
-    <div className="min-h-screen bg-[#0a0f1a]">
+    <div className="min-h-screen bg-[#06080b]">
       {/* Hero */}
-      <section className="relative bg-[#0a0f1a] border-b border-[#1e293b] overflow-hidden">
+      <section className="relative bg-[#06080b] border-b border-[#1f2329] overflow-hidden">
         <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(13,148,136,0.08) 0%, transparent 65%)" }} />
         <div className="relative max-w-4xl mx-auto px-4 pt-12 pb-10 text-center">
-          <nav className="flex justify-center gap-2 text-xs text-[#94a3b8] mb-8">
-            <Link href="/" className="hover:text-[#cbd5e1]">AmCupon.ro</Link>
+          <nav className="flex justify-center gap-2 text-xs text-[#9399a0] mb-8">
+            <Link href="/" className="hover:text-[#c9ced5]">AmCupon.ro</Link>
             <span>/</span>
-            <span className="text-[#cbd5e1]">Cel mai bun VPN Romania</span>
+            <span className="text-[#c9ced5]">Cel mai bun VPN Romania</span>
           </nav>
           <div className="text-5xl mb-4">🔒</div>
-          <h1 className="text-4xl md:text-5xl font-black text-[#f1f5f9] mb-4">
-            Cel mai bun <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #0d9488, #0f766e)" }}>VPN Romania</span> 2026
+          <h1 className="text-4xl md:text-5xl font-black text-[#ffffff] mb-4">
+            Cel mai bun <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #ddf93c, #c3dd2c)" }}>VPN Romania</span> 2026
           </h1>
-          <p className="text-[#cbd5e1] text-lg max-w-2xl mx-auto mb-6">
+          <p className="text-[#c9ced5] text-lg max-w-2xl mx-auto mb-6">
             Am comparat public preturile, functiile si recenziile verificate ale celor mai populare VPN-uri, ca sa alegi rapid. Preturi reale, viteza declarata, securitate — tot ce trebuie sa stii inainte sa cumperi.
           </p>
-          <div className="flex flex-wrap justify-center gap-4 text-sm text-[#cbd5e1]">
+          <div className="flex flex-wrap justify-center gap-4 text-sm text-[#c9ced5]">
             <span className="flex items-center gap-1.5"><span className="text-emerald-400">✓</span> Actualizat iunie 2026</span>
             <span className="flex items-center gap-1.5"><span className="text-emerald-400">✓</span> Comparatie actualizata 2026</span>
             <span className="flex items-center gap-1.5"><span className="text-emerald-400">✓</span> Garantie 30 zile toate</span>
@@ -169,17 +169,17 @@ export default function VpnPage() {
 
       {/* Comparatie rapida */}
       <section className="max-w-5xl mx-auto px-4 py-10">
-        <div className="bg-[#111827] border border-[#1e293b] rounded-xl p-5 mb-8">
-          <p className="text-[#cbd5e1] text-sm text-center">
-            <span className="text-[#f1f5f9] font-bold">Concluzia scurta:</span> Alege <strong className="text-[#0f766e]">NordVPN</strong> daca vrei cel mai bun si nu te deranjeaza un pret putin mai mare. Alege <strong className="text-[#0f766e]">Surfshark</strong> daca ai un buget limitat sau vrei dispozitive nelimitate.
+        <div className="bg-[#14181c] border border-[#1f2329] rounded-xl p-5 mb-8">
+          <p className="text-[#c9ced5] text-sm text-center">
+            <span className="text-[#ffffff] font-bold">Concluzia scurta:</span> Alege <strong className="text-[#c3dd2c]">NordVPN</strong> daca vrei cel mai bun si nu te deranjeaza un pret putin mai mare. Alege <strong className="text-[#c3dd2c]">Surfshark</strong> daca ai un buget limitat sau vrei dispozitive nelimitate.
           </p>
         </div>
 
         <div className="space-y-6">
           {VPN_LIST.map((vpn) => (
-            <div key={vpn.name} className={`bg-[#111827] border rounded-xl p-6 transition-all ${vpn.rank === 1 ? "border-[#14b8a6]/40 shadow-lg shadow-[#14b8a6]/10" : "border-[#1e293b] hover:border-[#334155]"}`}>
+            <div key={vpn.name} className={`bg-[#14181c] border rounded-xl p-6 transition-all ${vpn.rank === 1 ? "border-[#ddf93c]/40 shadow-lg shadow-[#ddf93c]/10" : "border-[#1f2329] hover:border-[#2a2f36]"}`}>
               {vpn.rank === 1 && (
-                <div className="text-xs text-[#0f766e] font-bold mb-3 flex items-center gap-2">
+                <div className="text-xs text-[#c3dd2c] font-bold mb-3 flex items-center gap-2">
                   <span>⭐ EDITORUL NOSTRU RECOMANDA</span>
                 </div>
               )}
@@ -187,17 +187,17 @@ export default function VpnPage() {
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-2">
                     <span className="text-2xl">{vpn.emoji}</span>
-                    <h2 className="text-xl font-black text-[#f1f5f9]">#{vpn.rank} {vpn.name}</h2>
-                    <span className={`text-[10px] font-black text-[#f1f5f9] px-2 py-0.5 rounded-full ${vpn.badgeColor}`}>{vpn.badge}</span>
+                    <h2 className="text-xl font-black text-[#ffffff]">#{vpn.rank} {vpn.name}</h2>
+                    <span className={`text-[10px] font-black text-[#ffffff] px-2 py-0.5 rounded-full ${vpn.badgeColor}`}>{vpn.badge}</span>
                   </div>
-                  <p className="text-[#cbd5e1] text-sm mb-4">{vpn.tagline}</p>
+                  <p className="text-[#c9ced5] text-sm mb-4">{vpn.tagline}</p>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <p className="text-xs text-emerald-400 font-bold mb-2">AVANTAJE</p>
                       <ul className="space-y-1">
                         {vpn.pros.map((p, i) => (
-                          <li key={i} className="flex items-start gap-2 text-sm text-[#cbd5e1]">
+                          <li key={i} className="flex items-start gap-2 text-sm text-[#c9ced5]">
                             <span className="text-emerald-400 shrink-0 mt-0.5">+</span>{p}
                           </li>
                         ))}
@@ -207,31 +207,31 @@ export default function VpnPage() {
                       <p className="text-xs text-red-400 font-bold mb-2">DEZAVANTAJE</p>
                       <ul className="space-y-1 mb-3">
                         {vpn.cons.map((c, i) => (
-                          <li key={i} className="flex items-start gap-2 text-sm text-[#cbd5e1]">
+                          <li key={i} className="flex items-start gap-2 text-sm text-[#c9ced5]">
                             <span className="text-red-400 shrink-0 mt-0.5">-</span>{c}
                           </li>
                         ))}
                       </ul>
-                      <p className="text-xs text-[#94a3b8]">Ideal pentru: <span className="text-[#cbd5e1]">{vpn.ideal}</span></p>
+                      <p className="text-xs text-[#9399a0]">Ideal pentru: <span className="text-[#c9ced5]">{vpn.ideal}</span></p>
                     </div>
                   </div>
                 </div>
 
                 <div className="md:w-44 flex flex-col items-center gap-3 shrink-0">
                   <div className="text-center">
-                    <div className="text-3xl font-black text-[#f1f5f9]">{vpn.pret_luna}</div>
-                    <div className="text-xs text-[#94a3b8]">/luna ({vpn.pret_nota})</div>
+                    <div className="text-3xl font-black text-[#ffffff]">{vpn.pret_luna}</div>
+                    <div className="text-xs text-[#9399a0]">/luna ({vpn.pret_nota})</div>
                     <div className="flex items-center justify-center gap-1 mt-1">
                       <span className="text-yellow-400 text-sm">★</span>
-                      <span className="text-[#f1f5f9] font-bold text-sm">{vpn.rating}</span>
-                      <span className="text-[#94a3b8] text-xs">/10</span>
+                      <span className="text-[#ffffff] font-bold text-sm">{vpn.rating}</span>
+                      <span className="text-[#9399a0] text-xs">/10</span>
                     </div>
                   </div>
                   <a href={vpn.url} target="_blank" rel="sponsored noopener noreferrer"
-                    className={`w-full text-center py-3 px-4 rounded-xl font-black text-sm text-white transition-all hover:-translate-y-0.5 shadow-lg ${vpn.rank === 1 ? "bg-[#0d9488] hover:bg-[#14b8a6] shadow-[#14b8a6]/20" : "bg-[#334155] hover:bg-[#1e293b]"}`}>
+                    className={`w-full text-center py-3 px-4 rounded-xl font-black text-sm text-[#0c1000] transition-all hover:-translate-y-0.5 shadow-lg ${vpn.rank === 1 ? "bg-[#ddf93c] hover:bg-[#ddf93c] shadow-[#ddf93c]/20" : "bg-[#2a2f36] hover:bg-[#1f2329]"}`}>
                     Incearca {vpn.name} →
                   </a>
-                  <p className="text-[10px] text-[#94a3b8] text-center">Garantie ramburs 30 zile</p>
+                  <p className="text-[10px] text-[#9399a0] text-center">Garantie ramburs 30 zile</p>
                 </div>
               </div>
             </div>
@@ -240,82 +240,82 @@ export default function VpnPage() {
       </section>
 
       {/* Alte VPN-uri verificate */}
-      <section className="max-w-5xl mx-auto px-4 py-8 border-t border-[#1e293b]">
-        <h2 className="text-xl font-black text-[#f1f5f9] mb-2">Alte VPN-uri verificate</h2>
-        <p className="text-[#94a3b8] text-sm mb-5">Optiuni suplimentare, pentru cazuri specifice sau buget mai mic.</p>
+      <section className="max-w-5xl mx-auto px-4 py-8 border-t border-[#1f2329]">
+        <h2 className="text-xl font-black text-[#ffffff] mb-2">Alte VPN-uri verificate</h2>
+        <p className="text-[#9399a0] text-sm mb-5">Optiuni suplimentare, pentru cazuri specifice sau buget mai mic.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {ALTE_VPN.map((v) => (
-            <div key={v.name} className="bg-[#111827] border border-[#1e293b] rounded-xl p-5 flex flex-col gap-3">
+            <div key={v.name} className="bg-[#14181c] border border-[#1f2329] rounded-xl p-5 flex flex-col gap-3">
               <div className="flex items-center gap-2">
                 <span className="text-xl">{v.emoji}</span>
-                <span className="font-black text-[#f1f5f9]">{v.name}</span>
+                <span className="font-black text-[#ffffff]">{v.name}</span>
               </div>
-              <p className="text-[#cbd5e1] text-xs">{v.desc}</p>
-              <p className="text-[11px] text-[#94a3b8]">Ideal pentru: <span className="text-[#cbd5e1]">{v.ideal}</span></p>
+              <p className="text-[#c9ced5] text-xs">{v.desc}</p>
+              <p className="text-[11px] text-[#9399a0]">Ideal pentru: <span className="text-[#c9ced5]">{v.ideal}</span></p>
               <a href={v.url} target="_blank" rel="sponsored noopener noreferrer"
-                className="mt-auto bg-[#334155] hover:bg-[#334155] text-[#f1f5f9] text-sm font-bold py-2.5 rounded-lg text-center transition-all">
+                className="mt-auto bg-[#2a2f36] hover:bg-[#2a2f36] text-[#ffffff] text-sm font-bold py-2.5 rounded-lg text-center transition-all">
                 Incearca {v.name} →
               </a>
             </div>
           ))}
         </div>
-        <div className="mt-4 bg-[#111827]/60 border border-[#1e293b] rounded-xl p-4 flex items-center justify-between gap-4 flex-wrap">
-          <p className="text-xs text-[#cbd5e1]">
-            <strong className="text-[#cbd5e1]">IPRoyal</strong> — nu e un VPN clasic, ci o retea de proxy rezidential. Util pentru web scraping, verificare reclame sau administrare de conturi multiple, nu pentru streaming general.
+        <div className="mt-4 bg-[#14181c]/60 border border-[#1f2329] rounded-xl p-4 flex items-center justify-between gap-4 flex-wrap">
+          <p className="text-xs text-[#c9ced5]">
+            <strong className="text-[#c9ced5]">IPRoyal</strong> — nu e un VPN clasic, ci o retea de proxy rezidential. Util pentru web scraping, verificare reclame sau administrare de conturi multiple, nu pentru streaming general.
           </p>
           <a href={LINK_IPROYAL} target="_blank" rel="sponsored noopener noreferrer"
-            className="shrink-0 text-xs font-bold text-[#cbd5e1] hover:text-[#f1f5f9] bg-[#1e293b] hover:bg-[#334155] px-3 py-1.5 rounded-lg transition-all">
+            className="shrink-0 text-xs font-bold text-[#c9ced5] hover:text-[#ffffff] bg-[#1f2329] hover:bg-[#2a2f36] px-3 py-1.5 rounded-lg transition-all">
             Vezi IPRoyal →
           </a>
         </div>
       </section>
 
       {/* Cazuri de utilizare */}
-      <section className="max-w-5xl mx-auto px-4 py-8 border-t border-[#1e293b]">
-        <h2 className="text-2xl font-black text-[#f1f5f9] mb-6">Pentru ce ai nevoie de VPN?</h2>
+      <section className="max-w-5xl mx-auto px-4 py-8 border-t border-[#1f2329]">
+        <h2 className="text-2xl font-black text-[#ffffff] mb-6">Pentru ce ai nevoie de VPN?</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {CAZURI_UTILIZARE.map((c, i) => (
-            <div key={i} className="bg-[#111827] border border-[#1e293b] rounded-xl p-4">
+            <div key={i} className="bg-[#14181c] border border-[#1f2329] rounded-xl p-4">
               <div className="text-2xl mb-2">{c.emoji}</div>
-              <h3 className="text-sm font-bold text-[#f1f5f9] mb-1">{c.titlu}</h3>
-              <p className="text-xs text-[#cbd5e1]">{c.desc}</p>
+              <h3 className="text-sm font-bold text-[#ffffff] mb-1">{c.titlu}</h3>
+              <p className="text-xs text-[#c9ced5]">{c.desc}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* De ce sa NU folosesti VPN gratuit */}
-      <section className="max-w-5xl mx-auto px-4 py-8 border-t border-[#1e293b]">
+      <section className="max-w-5xl mx-auto px-4 py-8 border-t border-[#1f2329]">
         <div className="bg-red-950/30 border border-red-800/40 rounded-xl p-6">
-          <h2 className="text-xl font-black text-[#f1f5f9] mb-3 flex items-center gap-2">
+          <h2 className="text-xl font-black text-[#ffffff] mb-3 flex items-center gap-2">
             <span>⚠️</span> De ce VPN-urile gratuite sunt periculoase
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
             <div>
               <p className="text-red-400 font-bold mb-1">Iti vand datele</p>
-              <p className="text-[#cbd5e1]">VPN-urile gratuite sunt gratuite pentru ca iti vand istoricul de browsing advertiseri. Tu esti produsul.</p>
+              <p className="text-[#c9ced5]">VPN-urile gratuite sunt gratuite pentru ca iti vand istoricul de browsing advertiseri. Tu esti produsul.</p>
             </div>
             <div>
               <p className="text-red-400 font-bold mb-1">Viteza extrem de mica</p>
-              <p className="text-[#cbd5e1]">Servere aglomerate, bandwidth limitat la 500MB/zi sau 2GB/luna. Inutile pentru streaming.</p>
+              <p className="text-[#c9ced5]">Servere aglomerate, bandwidth limitat la 500MB/zi sau 2GB/luna. Inutile pentru streaming.</p>
             </div>
             <div>
               <p className="text-red-400 font-bold mb-1">Securitate falsa</p>
-              <p className="text-[#cbd5e1]">Unele VPN-uri &quot;gratuite&quot; injecteaza reclame in paginile web sau contin malware. Mai periculos decat fara VPN.</p>
+              <p className="text-[#c9ced5]">Unele VPN-uri &quot;gratuite&quot; injecteaza reclame in paginile web sau contin malware. Mai periculos decat fara VPN.</p>
             </div>
           </div>
-          <p className="text-[#cbd5e1] text-sm mt-4">Un VPN platit bun costa <strong className="text-[#f1f5f9]">2.39-3€/luna</strong> — mai ieftin decat un Netflix. Nu merita riscul pentru cateva euro.</p>
+          <p className="text-[#c9ced5] text-sm mt-4">Un VPN platit bun costa <strong className="text-[#ffffff]">2.39-3€/luna</strong> — mai ieftin decat un Netflix. Nu merita riscul pentru cateva euro.</p>
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="max-w-5xl mx-auto px-4 py-10 border-t border-[#1e293b]">
-        <h2 className="text-2xl font-black text-[#f1f5f9] mb-6">Intrebari frecvente despre VPN</h2>
+      <section className="max-w-5xl mx-auto px-4 py-10 border-t border-[#1f2329]">
+        <h2 className="text-2xl font-black text-[#ffffff] mb-6">Intrebari frecvente despre VPN</h2>
         <div className="space-y-4">
           {FAQ.map((item, i) => (
-            <div key={i} className="bg-[#111827] border border-[#1e293b] rounded-xl p-5">
-              <h3 className="font-bold text-[#f1f5f9] mb-2">{item.q}</h3>
-              <p className="text-[#cbd5e1] text-sm">{item.a}</p>
+            <div key={i} className="bg-[#14181c] border border-[#1f2329] rounded-xl p-5">
+              <h3 className="font-bold text-[#ffffff] mb-2">{item.q}</h3>
+              <p className="text-[#c9ced5] text-sm">{item.a}</p>
             </div>
           ))}
         </div>
@@ -323,16 +323,16 @@ export default function VpnPage() {
 
       {/* CTA final */}
       <section className="max-w-5xl mx-auto px-4 pb-12">
-        <div className="bg-gradient-to-r from-[#14b8a6]/40 to-[#14b8a6]/30 border border-[#14b8a6]/30 rounded-xl p-8 text-center">
-          <h2 className="text-2xl font-black text-[#f1f5f9] mb-3">Gata sa iti protejezi conexiunea?</h2>
-          <p className="text-[#cbd5e1] mb-6 text-sm max-w-xl mx-auto">Oricare ai alege, ai garantie de ramburs 30 zile. Incearca fara risc — daca nu esti multumit, primesti banii inapoi.</p>
+        <div className="bg-gradient-to-r from-[#ddf93c]/40 to-[#ddf93c]/30 border border-[#ddf93c]/30 rounded-xl p-8 text-center">
+          <h2 className="text-2xl font-black text-[#ffffff] mb-3">Gata sa iti protejezi conexiunea?</h2>
+          <p className="text-[#c9ced5] mb-6 text-sm max-w-xl mx-auto">Oricare ai alege, ai garantie de ramburs 30 zile. Incearca fara risc — daca nu esti multumit, primesti banii inapoi.</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a href="https://nordvpn.com" target="_blank" rel="sponsored noopener noreferrer"
-              className="bg-[#0d9488] hover:bg-[#14b8a6] text-white font-black px-8 py-3 rounded-xl transition-all hover:-translate-y-0.5 shadow-lg shadow-[#14b8a6]/20">
+              className="bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] font-black px-8 py-3 rounded-xl transition-all hover:-translate-y-0.5 shadow-lg shadow-[#ddf93c]/20">
               NordVPN — de la 2.99€/luna →
             </a>
             <a href="https://surfshark.com" target="_blank" rel="sponsored noopener noreferrer"
-              className="bg-[#334155] hover:bg-[#334155] text-[#f1f5f9] font-bold px-8 py-3 rounded-xl transition-all hover:-translate-y-0.5">
+              className="bg-[#2a2f36] hover:bg-[#2a2f36] text-[#ffffff] font-bold px-8 py-3 rounded-xl transition-all hover:-translate-y-0.5">
               Surfshark — de la 2.39€/luna →
             </a>
           </div>
@@ -341,7 +341,7 @@ export default function VpnPage() {
 
       {/* Disclaimer */}
       <div className="max-w-5xl mx-auto px-4 pb-8">
-        <p className="text-[#94a3b8] text-xs text-center">
+        <p className="text-[#9399a0] text-xs text-center">
           Unele linkuri de pe aceasta pagina sunt linkuri de afiliat. Daca faci o achizitie, AmCupon.ro primeste un comision fara cost suplimentar pentru tine. Am comparat public preturile si specificatiile serviciilor recomandate.
         </p>
       </div>

@@ -26,7 +26,7 @@ const OCAZII: Record<string, {
     desc: "Bijuterii, fashion, parfumuri — cadouri perfecte pentru femeia speciala din viata ta",
     descMeta: "Top idei cadouri pentru femei: bijuterii, parfumuri, fashion. Preturi de la 50 RON. Livrare rapida din magazinele partenere.",
     emoji: "💝",
-    from: "#14b8a6", to: "#0d9488",
+    from: "#ddf93c", to: "#ddf93c",
     catSluguri: ["bijuterii", "fashion"],
     keywords: ["bijuterie", "colier", "cercei", "bratara", "inel", "parfum", "rochie", "poseta"],
     editorial: "Alege un cadou care sa o surprinda cu adevarat. Bijuteriile raman intotdeauna o alegere sigura — de la cercei delicati la coliere cu pandantiv. Daca o cunosti bine, o piesa fashion sau un parfum de calitate sunt cadouri memorabile.",
@@ -38,7 +38,7 @@ const OCAZII: Record<string, {
     desc: "Electronice, auto, sport — cadouri practice si utile pentru barbatul din viata ta",
     descMeta: "Idei cadouri barbati: gadgeturi, accesorii auto, echipamente sport. Preturi reale din magazine partenere. Livrare Romania.",
     emoji: "🎁",
-    from: "#0d9488", to: "#0d9488",
+    from: "#ddf93c", to: "#ddf93c",
     catSluguri: ["auto", "electronice", "sport"],
     keywords: ["navigatie", "gadget", "accesoriu", "sport", "fitness", "smartwatch"],
     editorial: "Gadgeturile si accesoriile auto sunt mereu binevenite pentru barbati. Daca e pasionat de sport, echipamentele de fitness sunt o alegere practica. Electronicele — smartwatch, casti, accesorii — raman cadouri sigure.",
@@ -50,7 +50,7 @@ const OCAZII: Record<string, {
     desc: "Jucarii educative, carti si echipamente sport pentru copii de toate varstele",
     descMeta: "Cele mai bune cadouri pentru copii: jucarii educative, carti, echipamente sport. Toate cu livrare rapida in Romania.",
     emoji: "🧸",
-    from: "#14b8a6", to: "#0d9488",
+    from: "#ddf93c", to: "#ddf93c",
     catSluguri: ["fashion", "sport", "bijuterii"],
     keywords: ["copil", "bebe", "jucarie", "carte", "educativ", "sport", "noriel"],
     editorial: "Jucariile educative stimuleaza creativitatea si imaginatia. Cartile sunt mereu un cadou cu valoare pe termen lung. Pentru copiii mai mari, echipamentele sport sau jocurile de strategie sunt perfecte.",
@@ -62,7 +62,7 @@ const OCAZII: Record<string, {
     desc: "Cadouri elegante si memorabile pentru ocazia botezului — bijuterii, jucarii si decoratiuni speciale",
     descMeta: "Cele mai frumoase cadouri de botez: bijuterii argint cu gravura, jucarii de plus, cadouri personalizate. Preturi si livrare Romania.",
     emoji: "👶",
-    from: "#0d9488", to: "#0f766e",
+    from: "#ddf93c", to: "#c3dd2c",
     catSluguri: ["bijuterii", "fashion"],
     keywords: ["botez", "bebelus", "argint", "gravura", "bijuterie", "set cadou"],
     editorial: "Botezul este una dintre cele mai speciale ocazii din viata unui copil. Cadourile traditionale — bijuterii din argint cu gravura, seturi de haine premium sau jucarii de plus de calitate — raman amintiri pretioase pentru parinti si copil deopotriva.",
@@ -86,7 +86,7 @@ const OCAZII: Record<string, {
     desc: "Bijuterii, cosmetice si mici rasfaturi pentru cea mai importanta femeie din viata ta",
     descMeta: "Idei cadouri mama: bijuterii, parfumuri, cosmetice. De la 50 RON la 500 RON. Livrare rapida in Romania din magazine partenere.",
     emoji: "🌸",
-    from: "#14b8a6", to: "#14b8a6",
+    from: "#ddf93c", to: "#ddf93c",
     catSluguri: ["bijuterii", "fashion"],
     keywords: ["mama", "bijuterie", "colier", "cercei", "parfum", "cosmetice", "ingrijire"],
     editorial: "Mama merita sa se simta speciala in fiecare zi, nu doar de ziua ei. Un colier cu pandantiv personalizat, un parfum preferat sau un set de cosmetice premium sunt cadouri care ii amintesc ca este iubita si apreciata.",
@@ -98,7 +98,7 @@ const OCAZII: Record<string, {
     desc: "Gadgeturi, accesorii auto si unelte — cadouri practice pentru tatal tau",
     descMeta: "Cele mai bune cadouri pentru tata: accesorii auto, gadgeturi tech, unelte. Livrare rapida in Romania. Preturi de la 100 RON.",
     emoji: "👨",
-    from: "#1e293b", to: "#0d9488",
+    from: "#1f2329", to: "#ddf93c",
     catSluguri: ["auto", "electronice", "sport"],
     keywords: ["tata", "auto", "navigatie", "gadget", "smartwatch", "unelte", "sport"],
     editorial: "Tatii apreciaza cadourile practice si utile. Accesoriile auto, gadgeturile tech sau echipamentele pentru hobby-urile lui sunt alegeri sigure. Daca e pasionat de sport sau de bricolaj, optiunile sunt nelimitate.",
@@ -110,7 +110,7 @@ const OCAZII: Record<string, {
     desc: "Bijuterii, parfumuri si surprize romantice pentru ziua indragostitilor",
     descMeta: "Cadouri Valentine's Day: bijuterii, parfumuri, set romantic. Idei originale cu livrare rapida in Romania. De la 50 RON.",
     emoji: "❤️",
-    from: "#ef4444", to: "#14b8a6",
+    from: "#e64343", to: "#ddf93c",
     catSluguri: ["bijuterii", "fashion"],
     keywords: ["valentine", "bijuterie", "inima", "colier", "parfum", "romantic", "dragoste"],
     editorial: "Valentine's Day este momentul perfect sa arati cat de mult tii la persoana iubita. O bijuterie cu motiv inimioara, un parfum special sau un set romantic de cosmetice sunt cadouri care transmit emotie si afectiune.",
@@ -134,7 +134,7 @@ const OCAZII: Record<string, {
     desc: "Bijuterii, fashion si surprize originale pentru ziua de nastere a cuiva drag",
     descMeta: "Idei originale cadouri zi de nastere: bijuterii, parfumuri, gadgeturi. Preturi de la 50 RON. Magazine partenere cu livrare rapida.",
     emoji: "🎂",
-    from: "#0d9488", to: "#0f766e",
+    from: "#ddf93c", to: "#c3dd2c",
     catSluguri: ["bijuterii", "fashion", "electronice"],
     keywords: ["nastere", "zi nastere", "aniversare", "bijuterie", "cadou", "surprise"],
     editorial: "Ziua de nastere este momentul in care un cadou atent ales face diferenta. Gandeste-te la ce isi doreste persoana respectiva sau ce ar folosi zilnic. O bijuterie cu semnificatie, un gadget dorit sau un parfum preferat sunt mereu binevenit.",
@@ -146,7 +146,7 @@ const OCAZII: Record<string, {
     desc: "Cadouri practice si memorabile pentru absolvirea scolii, liceului sau facultatii",
     descMeta: "Idei cadouri absolvire: bijuterii, gadgeturi, carti, accesorii. Felicita absolventi cu un cadou memorabil. Livrare Romania.",
     emoji: "🎓",
-    from: "#0d9488", to: "#0d9488",
+    from: "#ddf93c", to: "#ddf93c",
     catSluguri: ["electronice", "bijuterii", "sport"],
     keywords: ["absolvire", "diploma", "facultate", "liceu", "scoala", "cadou"],
     editorial: "Absolvirea este o realizare majora care merita sarbatorita. Un gadget util pentru urmatoarea etapa a vietii, o bijuterie memorabila sau un voucher de calatorie sunt cadouri care marcat inceputul unui nou capitol.",
@@ -185,7 +185,7 @@ const OCAZII: Record<string, {
     desc: "Cadouri de calitate cu buget de maxim 200 lei — bijuterii, fashion, sport",
     descMeta: "Idei cadouri sub 200 lei: bijuterii, accesorii premium, fashion. Cadouri originale cu pret bun. Livrare rapida Romania.",
     emoji: "🎁",
-    from: "#0d9488", to: "#0f766e",
+    from: "#ddf93c", to: "#c3dd2c",
     catSluguri: ["bijuterii", "fashion", "sport"],
     keywords: ["cadou sub 200 lei", "cadou pret mediu", "cadou original", "cadou 150 lei"],
     pretMax: 200,
@@ -198,7 +198,7 @@ const OCAZII: Record<string, {
     desc: "Cadouri premium si memorabile cu buget de maxim 500 lei — bijuterii, electronice, fashion",
     descMeta: "Cadouri sub 500 lei: bijuterii premium, electronice, accesorii auto. Cadouri de impact fara a rupe bugetul. Livrare Romania.",
     emoji: "💎",
-    from: "#14b8a6", to: "#0d9488",
+    from: "#ddf93c", to: "#ddf93c",
     catSluguri: ["bijuterii", "auto", "electronice", "sport", "fashion"],
     keywords: ["cadou sub 500 lei", "cadou premium", "cadou 400 lei", "cadou calitate"],
     pretMax: 500,
@@ -351,43 +351,43 @@ export default async function CadouriSlugPage({
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <div className="min-h-screen bg-[#0a0f1a]">
+      <div className="min-h-screen bg-[#06080b]">
 
         {/* Header */}
-        <header className="bg-[#111827] border-b border-[#1e293b]">
+        <header className="bg-[#14181c] border-b border-[#1f2329]">
           <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-2 text-sm flex-wrap">
             <Link href="/" className="flex items-center gap-1.5 shrink-0">
-              <div className="bg-[#0d9488] text-white font-black text-sm px-1.5 py-0.5 rounded-md">Am</div>
-              <span className="font-black text-[#f1f5f9]">Cupon.ro</span>
+              <div className="bg-[#ddf93c] text-[#0c1000] font-black text-sm px-1.5 py-0.5 rounded-md">Am</div>
+              <span className="font-black text-[#ffffff]">Cupon.ro</span>
             </Link>
-            <span className="text-[#94a3b8]">/</span>
-            <Link href="/cadouri" className="text-[#cbd5e1] hover:text-[#f1f5f9]">Cadouri</Link>
-            <span className="text-[#94a3b8]">/</span>
-            <span className="text-[#cbd5e1] font-semibold">{oc.titlu}</span>
+            <span className="text-[#9399a0]">/</span>
+            <Link href="/cadouri" className="text-[#c9ced5] hover:text-[#ffffff]">Cadouri</Link>
+            <span className="text-[#9399a0]">/</span>
+            <span className="text-[#c9ced5] font-semibold">{oc.titlu}</span>
           </div>
         </header>
 
         {/* Hero */}
         <div
-          className="relative py-12 px-4 text-center overflow-hidden border-b border-[#1e293b]"
+          className="relative py-12 px-4 text-center overflow-hidden border-b border-[#1f2329]"
           style={{ background: `linear-gradient(135deg, ${oc.from}18 0%, ${oc.to}12 100%)` }}
         >
           <div className="absolute inset-0 pointer-events-none" style={{ background: `radial-gradient(ellipse 70% 60% at 50% 0%, ${oc.from}22 0%, transparent 70%)` }} />
           <div className="relative max-w-3xl mx-auto">
             <div className="text-5xl mb-4">{oc.emoji}</div>
-            <h1 className="text-3xl md:text-4xl font-black text-[#f1f5f9] mb-3">
+            <h1 className="text-3xl md:text-4xl font-black text-[#ffffff] mb-3">
               {oc.titlu}
             </h1>
-            <p className="text-[#cbd5e1] text-base mb-4 max-w-xl mx-auto">{oc.desc}</p>
+            <p className="text-[#c9ced5] text-base mb-4 max-w-xl mx-auto">{oc.desc}</p>
             <div className="flex flex-wrap justify-center gap-3 text-sm">
-              <span className="flex items-center gap-1.5 bg-[#1e293b]/80 border border-[#334155] text-[#cbd5e1] px-3 py-1.5 rounded-full">
+              <span className="flex items-center gap-1.5 bg-[#1f2329]/80 border border-[#2a2f36] text-[#c9ced5] px-3 py-1.5 rounded-full">
                 <span className="text-emerald-400">✓</span> {products.length}+ produse disponibile
               </span>
-              <span className="flex items-center gap-1.5 bg-[#1e293b]/80 border border-[#334155] text-[#cbd5e1] px-3 py-1.5 rounded-full">
-                <span className="text-[#0d9488]">✓</span> Preturi verificate azi
+              <span className="flex items-center gap-1.5 bg-[#1f2329]/80 border border-[#2a2f36] text-[#c9ced5] px-3 py-1.5 rounded-full">
+                <span className="text-[#ddf93c]">✓</span> Preturi verificate azi
               </span>
-              <span className="flex items-center gap-1.5 bg-[#1e293b]/80 border border-[#334155] text-[#cbd5e1] px-3 py-1.5 rounded-full">
-                <span className="text-[#0f766e]">✓</span> Livrare Romania
+              <span className="flex items-center gap-1.5 bg-[#1f2329]/80 border border-[#2a2f36] text-[#c9ced5] px-3 py-1.5 rounded-full">
+                <span className="text-[#c3dd2c]">✓</span> Livrare Romania
               </span>
             </div>
           </div>
@@ -397,12 +397,12 @@ export default async function CadouriSlugPage({
 
           {/* Idei rapide */}
           <section className="mb-10">
-            <h2 className="text-lg font-black text-[#f1f5f9] mb-4">Idei populare de cadouri</h2>
+            <h2 className="text-lg font-black text-[#ffffff] mb-4">Idei populare de cadouri</h2>
             <div className="flex flex-wrap gap-2">
               {oc.idei.map((idee, i) => (
                 <span
                   key={i}
-                  className="flex items-center gap-1.5 bg-[#111827] border border-[#334155] text-[#cbd5e1] text-sm px-3 py-1.5 rounded-xl"
+                  className="flex items-center gap-1.5 bg-[#14181c] border border-[#2a2f36] text-[#c9ced5] text-sm px-3 py-1.5 rounded-xl"
                 >
                   <span style={{ color: oc.from }}>→</span>
                   {idee}
@@ -415,10 +415,10 @@ export default async function CadouriSlugPage({
           {products.length > 0 && (
             <section className="mb-12">
               <div className="flex items-center justify-between mb-5">
-                <h2 className="text-xl font-black text-[#f1f5f9]">
+                <h2 className="text-xl font-black text-[#ffffff]">
                   Produse disponibile — {oc.titlu}
                 </h2>
-                <span className="text-sm text-[#94a3b8]">{products.length} produse</span>
+                <span className="text-sm text-[#9399a0]">{products.length} produse</span>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
                 {products.map((p: Produs) => (
@@ -427,10 +427,10 @@ export default async function CadouriSlugPage({
                     href={p.url}
                     target="_blank"
                     rel="sponsored noopener noreferrer"
-                    className="group bg-[#111827] border border-[#1e293b] hover:border-[#14b8a6]/40 rounded-xl overflow-hidden transition-all hover:shadow-lg hover:shadow-[#14b8a6]/5 hover:-translate-y-0.5"
+                    className="group bg-[#14181c] border border-[#1f2329] hover:border-[#ddf93c]/40 rounded-xl overflow-hidden transition-all hover:shadow-lg hover:shadow-[#ddf93c]/5 hover:-translate-y-0.5"
                   >
                     {/* Imagine produs */}
-                    <div className="aspect-square relative bg-[#1e293b] overflow-hidden">
+                    <div className="aspect-square relative bg-[#1f2329] overflow-hidden">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         src={p.image}
@@ -447,16 +447,16 @@ export default async function CadouriSlugPage({
 
                     {/* Info produs */}
                     <div className="p-3">
-                      <p className="text-[#cbd5e1] text-xs font-medium leading-tight line-clamp-2 mb-2 group-hover:text-[#f1f5f9] transition-colors">
+                      <p className="text-[#c9ced5] text-xs font-medium leading-tight line-clamp-2 mb-2 group-hover:text-[#ffffff] transition-colors">
                         {p.title}
                       </p>
                       <div className="flex items-baseline gap-1.5">
-                        <span className="text-[#0d9488] font-black text-sm">{p.price} RON</span>
+                        <span className="text-[#ddf93c] font-black text-sm">{p.price} RON</span>
                         {p.old_price && (
-                          <span className="text-[#94a3b8] text-xs line-through">{p.old_price}</span>
+                          <span className="text-[#9399a0] text-xs line-through">{p.old_price}</span>
                         )}
                       </div>
-                      <p className="text-[#94a3b8] text-[10px] mt-1">{p.merchant_slug?.replace(".ro", "").replace(".com", "")}</p>
+                      <p className="text-[#9399a0] text-[10px] mt-1">{p.merchant_slug?.replace(".ro", "").replace(".com", "")}</p>
                     </div>
                   </a>
                 ))}
@@ -466,24 +466,24 @@ export default async function CadouriSlugPage({
 
           {/* Editorial */}
           <section className="mb-10">
-            <div className="bg-[#111827] border border-[#1e293b] rounded-xl p-6">
-              <h2 className="text-lg font-black text-[#f1f5f9] mb-3">Cum alegi {oc.titlu.toLowerCase()}?</h2>
-              <p className="text-[#cbd5e1] text-sm leading-relaxed mb-4">{oc.editorial}</p>
+            <div className="bg-[#14181c] border border-[#1f2329] rounded-xl p-6">
+              <h2 className="text-lg font-black text-[#ffffff] mb-3">Cum alegi {oc.titlu.toLowerCase()}?</h2>
+              <p className="text-[#c9ced5] text-sm leading-relaxed mb-4">{oc.editorial}</p>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                <div className="bg-[#1e293b]/50 rounded-xl p-4">
+                <div className="bg-[#1f2329]/50 rounded-xl p-4">
                   <div className="text-2xl mb-2">💡</div>
-                  <h3 className="text-sm font-bold text-[#f1f5f9] mb-1">Gandeste-te la persoana</h3>
-                  <p className="text-xs text-[#94a3b8]">Care sunt hobby-urile si pasiunile ei/lui? Un cadou personalizat valoreath mult mai mult decat unul scump dar nepotrivit.</p>
+                  <h3 className="text-sm font-bold text-[#ffffff] mb-1">Gandeste-te la persoana</h3>
+                  <p className="text-xs text-[#9399a0]">Care sunt hobby-urile si pasiunile ei/lui? Un cadou personalizat valoreath mult mai mult decat unul scump dar nepotrivit.</p>
                 </div>
-                <div className="bg-[#1e293b]/50 rounded-xl p-4">
+                <div className="bg-[#1f2329]/50 rounded-xl p-4">
                   <div className="text-2xl mb-2">💰</div>
-                  <h3 className="text-sm font-bold text-[#f1f5f9] mb-1">Stabileste un buget</h3>
-                  <p className="text-xs text-[#94a3b8]">Nu trebuie sa cheltuiesti mult pentru a impresiona. Cadouri intre 100-300 RON sunt apreciate la fel de mult ca cele mai scumpe.</p>
+                  <h3 className="text-sm font-bold text-[#ffffff] mb-1">Stabileste un buget</h3>
+                  <p className="text-xs text-[#9399a0]">Nu trebuie sa cheltuiesti mult pentru a impresiona. Cadouri intre 100-300 RON sunt apreciate la fel de mult ca cele mai scumpe.</p>
                 </div>
-                <div className="bg-[#1e293b]/50 rounded-xl p-4">
+                <div className="bg-[#1f2329]/50 rounded-xl p-4">
                   <div className="text-2xl mb-2">📦</div>
-                  <h3 className="text-sm font-bold text-[#f1f5f9] mb-1">Verifica livrarea</h3>
-                  <p className="text-xs text-[#94a3b8]">Asigura-te ca produsul ajunge la timp. Toate magazinele partenere AmCupon livreaza in Romania, cele mai multe in 24-48h.</p>
+                  <h3 className="text-sm font-bold text-[#ffffff] mb-1">Verifica livrarea</h3>
+                  <p className="text-xs text-[#9399a0]">Asigura-te ca produsul ajunge la timp. Toate magazinele partenere AmCupon livreaza in Romania, cele mai multe in 24-48h.</p>
                 </div>
               </div>
             </div>
@@ -492,22 +492,22 @@ export default async function CadouriSlugPage({
           {/* Oferte active din magazine */}
           {promoRelevante.length > 0 && (
             <section className="mb-10">
-              <h2 className="text-lg font-black text-[#f1f5f9] mb-4">Oferte active azi in magazine</h2>
+              <h2 className="text-lg font-black text-[#ffffff] mb-4">Oferte active azi in magazine</h2>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 {promoRelevante.slice(0, 8).map((m: Magazin, i: number) => (
                   <Link
                     key={i}
                     href={`/cod-reducere/${m.magazin}`}
-                    className="bg-[#111827] border border-[#1e293b] hover:border-[#14b8a6]/40 rounded-xl p-3 flex items-center gap-2 transition-all"
+                    className="bg-[#14181c] border border-[#1f2329] hover:border-[#ddf93c]/40 rounded-xl p-3 flex items-center gap-2 transition-all"
                   >
                     {m.logo_url && (
                       // eslint-disable-next-line @next/next/no-img-element
-                      <img src={m.logo_url} alt={m.magazin_display || m.magazin} className="w-8 h-8 rounded-lg object-contain bg-[#111827] p-0.5" loading="lazy" />
+                      <img src={m.logo_url} alt={m.magazin_display || m.magazin} className="w-8 h-8 rounded-lg object-contain bg-[#14181c] p-0.5" loading="lazy" />
                     )}
                     <div>
-                      <div className="text-[#cbd5e1] text-xs font-bold">{m.magazin_display || m.magazin}</div>
+                      <div className="text-[#c9ced5] text-xs font-bold">{m.magazin_display || m.magazin}</div>
                       {m.promotii?.[0]?.cod_cupon && (
-                        <div className="text-[#0d9488] text-[10px] font-mono font-black">{m.promotii[0].cod_cupon}</div>
+                        <div className="text-[#ddf93c] text-[10px] font-mono font-black">{m.promotii[0].cod_cupon}</div>
                       )}
                     </div>
                   </Link>
@@ -517,21 +517,21 @@ export default async function CadouriSlugPage({
           )}
 
           {/* Alte ocazii */}
-          <section className="mb-6 border-t border-[#1e293b] pt-8">
-            <h2 className="text-base font-bold text-[#f1f5f9] mb-4">Alte ocazii — mai multe idei</h2>
+          <section className="mb-6 border-t border-[#1f2329] pt-8">
+            <h2 className="text-base font-bold text-[#ffffff] mb-4">Alte ocazii — mai multe idei</h2>
             <div className="flex flex-wrap gap-2">
               {altePagini.map(([s, o]) => (
                 <Link
                   key={s}
                   href={`/cadouri/${s}`}
-                  className="flex items-center gap-1.5 bg-[#111827] border border-[#1e293b] hover:border-[#475569] text-[#cbd5e1] hover:text-[#f1f5f9] text-sm px-3 py-2 rounded-xl transition-all"
+                  className="flex items-center gap-1.5 bg-[#14181c] border border-[#1f2329] hover:border-[#3a4048] text-[#c9ced5] hover:text-[#ffffff] text-sm px-3 py-2 rounded-xl transition-all"
                 >
                   {o.emoji} {o.titlu}
                 </Link>
               ))}
               <Link
                 href="/cadouri"
-                className="flex items-center gap-1.5 bg-[#14b8a6]/10 border border-[#14b8a6]/30 text-[#0d9488] hover:text-[#0f766e] text-sm px-3 py-2 rounded-xl transition-all font-bold"
+                className="flex items-center gap-1.5 bg-[#ddf93c]/10 border border-[#ddf93c]/30 text-[#ddf93c] hover:text-[#c3dd2c] text-sm px-3 py-2 rounded-xl transition-all font-bold"
               >
                 Toate ocaziile →
               </Link>

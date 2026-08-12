@@ -82,11 +82,11 @@ function RadarEntry({ p, rank }: { p: Pick; rank: number }) {
   const zileText = p.zile_ramase === 1 ? "1 zi" : `${p.zile_ramase} zile`;
 
   return (
-    <article className="relative bg-[#111827] border border-[#1e293b] hover:border-[#14b8a6]/40 rounded-xl p-5 transition-all duration-200 hover:shadow-xl hover:shadow-black/40">
+    <article className="relative bg-[#14181c] border border-[#1f2329] hover:border-[#ddf93c]/40 rounded-xl p-5 transition-all duration-200 hover:shadow-xl hover:shadow-black/40">
       <div className="flex gap-4">
         {/* Numar rang */}
         <div className="shrink-0">
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#14b8a6] to-[#14b8a6] flex items-center justify-center text-white font-black text-base shadow-lg shadow-[#14b8a6]/20">
+          <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#ddf93c] to-[#ddf93c] flex items-center justify-center text-[#0c1000] font-black text-base shadow-lg shadow-[#ddf93c]/20">
             {rank}
           </div>
         </div>
@@ -103,20 +103,20 @@ function RadarEntry({ p, rank }: { p: Pick; rank: number }) {
               )}
             </div>
             <div className="min-w-0">
-              <h2 className="text-base font-black text-[#f1f5f9] truncate">{p.nume_afisat}</h2>
-              <p className="text-[11px] text-[#94a3b8]">{CAT_EMOJI[p.categorie_slug] || "🏷️"} {p.categorie}</p>
+              <h2 className="text-base font-black text-[#ffffff] truncate">{p.nume_afisat}</h2>
+              <p className="text-[11px] text-[#9399a0]">{CAT_EMOJI[p.categorie_slug] || "🏷️"} {p.categorie}</p>
             </div>
           </div>
 
           {/* Verdictul editorial — vedeta */}
           {p.take && (
-            <p className="text-sm text-[#cbd5e1] leading-relaxed mb-3">{p.take}</p>
+            <p className="text-sm text-[#c9ced5] leading-relaxed mb-3">{p.take}</p>
           )}
 
           {/* Linia de jos: cod + urgenta + link */}
           <div className="flex flex-wrap items-center gap-2">
             {p.cod && (
-              <span className="font-mono font-black text-[#0d9488] text-sm tracking-wider bg-[#1e293b] border border-dashed border-[#0d9488]/50 rounded-lg px-2.5 py-1">
+              <span className="font-mono font-black text-[#ddf93c] text-sm tracking-wider bg-[#1f2329] border border-dashed border-[#ddf93c]/50 rounded-lg px-2.5 py-1">
                 {p.cod}
               </span>
             )}
@@ -128,7 +128,7 @@ function RadarEntry({ p, rank }: { p: Pick; rank: number }) {
             )}
             <Link
               href={`/cod-reducere/${p.magazin}`}
-              className="ml-auto text-xs font-bold text-white bg-[#0d9488] hover:bg-[#14b8a6] px-3.5 py-1.5 rounded-full transition-colors"
+              className="ml-auto text-xs font-bold text-[#0c1000] bg-[#ddf93c] hover:bg-[#ddf93c] px-3.5 py-1.5 rounded-full transition-colors"
             >
               Vezi oferta →
             </Link>
@@ -147,12 +147,12 @@ export default function RadarPage() {
 
   if (!digest) {
     return (
-      <main className="min-h-screen bg-[#0a0f1a] text-[#f1f5f9] flex items-center justify-center px-6">
+      <main className="min-h-screen bg-[#06080b] text-[#ffffff] flex items-center justify-center px-6">
         <div className="text-center max-w-md">
           <div className="text-5xl mb-4">📡</div>
           <h1 className="text-2xl font-black mb-2">Radarul se incarca</h1>
-          <p className="text-[#cbd5e1] mb-6">Selectia de azi nu e inca gata. Revino in cateva minute sau vezi toate ofertele active.</p>
-          <Link href="/oferte-azi" className="inline-block text-sm font-bold text-white bg-[#0d9488] hover:bg-[#14b8a6] px-5 py-2.5 rounded-full transition-colors">
+          <p className="text-[#c9ced5] mb-6">Selectia de azi nu e inca gata. Revino in cateva minute sau vezi toate ofertele active.</p>
+          <Link href="/oferte-azi" className="inline-block text-sm font-bold text-[#0c1000] bg-[#ddf93c] hover:bg-[#ddf93c] px-5 py-2.5 rounded-full transition-colors">
             Vezi ofertele active →
           </Link>
         </div>
@@ -183,23 +183,23 @@ export default function RadarPage() {
   };
 
   return (
-    <main className="min-h-screen bg-[#0a0f1a] text-[#f1f5f9]">
+    <main className="min-h-screen bg-[#06080b] text-[#ffffff]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
 
       <div className="max-w-2xl mx-auto px-4 sm:px-6 py-10">
         {/* Hero */}
         <header className="mb-8">
-          <div className="inline-flex items-center gap-2 text-xs font-bold text-[#0d9488] bg-[#0d9488]/10 border border-[#0d9488]/20 px-3 py-1 rounded-full mb-4">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#0d9488] animate-pulse" />
+          <div className="inline-flex items-center gap-2 text-xs font-bold text-[#ddf93c] bg-[#ddf93c]/10 border border-[#ddf93c]/20 px-3 py-1 rounded-full mb-4">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#ddf93c] animate-pulse" />
             RADARUL AMCUPON · {digest.data_afisata}
           </div>
           <h1 className="text-3xl sm:text-4xl font-black leading-tight mb-4">
             Ce merita azi, ales si verificat de noi
           </h1>
           {/* Vocea — intro editorial */}
-          <div className="bg-[#111827] border-l-4 border-[#14b8a6] rounded-r-xl p-4 sm:p-5">
-            <p className="text-[#cbd5e1] leading-relaxed">{digest.intro}</p>
+          <div className="bg-[#14181c] border-l-4 border-[#ddf93c] rounded-r-xl p-4 sm:p-5">
+            <p className="text-[#c9ced5] leading-relaxed">{digest.intro}</p>
           </div>
         </header>
 
@@ -213,15 +213,15 @@ export default function RadarPage() {
         {/* Outro */}
         {digest.outro && (
           <div className="mt-8 text-center">
-            <p className="text-[#cbd5e1] italic mb-5">{digest.outro}</p>
-            <Link href="/oferte-azi" className="inline-block text-sm font-bold text-white bg-gradient-to-r from-[#0d9488] to-[#0d9488] hover:opacity-90 px-6 py-3 rounded-full transition-opacity">
+            <p className="text-[#c9ced5] italic mb-5">{digest.outro}</p>
+            <Link href="/oferte-azi" className="inline-block text-sm font-bold text-[#0c1000] bg-gradient-to-r from-[#ddf93c] to-[#ddf93c] hover:opacity-90 px-6 py-3 rounded-full transition-opacity">
               Vezi toate ofertele active →
             </Link>
           </div>
         )}
 
         {/* Nota de subsol — rolul editorial */}
-        <p className="mt-10 text-center text-xs text-[#94a3b8]">
+        <p className="mt-10 text-center text-xs text-[#9399a0]">
           Radarul AmCupon e selectia noastra zilnica din sute de oferte active. Verificam codurile, alegem ce merita, iti spunem pe scurt de ce. Actualizat zilnic, {luna} {an}.
         </p>
       </div>

@@ -33,10 +33,10 @@ export default function OGImage() {
         <div style={{ color: "white", fontSize: 76, fontWeight: 900, display: "flex" }}>
           AmCupon.ro
         </div>
-        <div style={{ color: "#cbd5e1", fontSize: 30, marginTop: 20, display: "flex" }}>
+        <div style={{ color: "#c9ced5", fontSize: 30, marginTop: 20, display: "flex" }}>
           Coduri de reducere verificate zilnic
         </div>
-        <div style={{ color: "#64748b", fontSize: 20, marginTop: 28, display: "flex" }}>
+        <div style={{ color: "#6b7178", fontSize: 20, marginTop: 28, display: "flex" }}>
           1000+ magazine partenere
         </div>
       </div>

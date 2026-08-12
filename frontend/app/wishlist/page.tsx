@@ -16,7 +16,7 @@ export default function WishlistPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#0a0f1a]">
+    <div className="min-h-screen bg-[#06080b]">
       <div className="max-w-5xl mx-auto px-4 py-10">
 
         {/* Header */}
@@ -24,13 +24,13 @@ export default function WishlistPage() {
           <span className="text-3xl">&#10084;&#65039;</span>
           <div>
             <h1 className="text-2xl font-black text-[#ffffff]">Produsele mele salvate</h1>
-            <p className="text-sm text-[#94a3b8]">{items.length} {items.length === 1 ? "produs salvat" : "produse salvate"}</p>
+            <p className="text-sm text-[#9399a0]">{items.length} {items.length === 1 ? "produs salvat" : "produse salvate"}</p>
           </div>
         </div>
 
         {/* Price drop banner */}
         {priceDrops.length > 0 && (
-          <div className="bg-[#111827] border border-emerald-200 rounded-xl p-4 mb-6 flex items-start gap-3">
+          <div className="bg-[#14181c] border border-emerald-200 rounded-xl p-4 mb-6 flex items-start gap-3">
             <span className="text-2xl">&#127381;</span>
             <div>
               <p className="font-bold text-emerald-800">
@@ -40,10 +40,10 @@ export default function WishlistPage() {
                 {priceDrops.map((p) => {
                   const pct = formatPct(p.savedPrice, p.price);
                   return (
-                    <li key={p.id} className="text-sm text-[#0f766e]">
+                    <li key={p.id} className="text-sm text-[#c3dd2c]">
                       <span className="font-semibold">{p.title.slice(0, 50)}</span>
                       {" "}&mdash; era {p.savedPrice.toFixed(2)} lei, acum{" "}
-                      <span className="font-black text-[#0d9488]">{p.price.toFixed(2)} lei</span>
+                      <span className="font-black text-[#ddf93c]">{p.price.toFixed(2)} lei</span>
                       {pct && <span className="ml-1 text-xs bg-emerald-200 text-emerald-800 px-1.5 py-0.5 rounded-full font-bold">-{pct}%</span>}
                     </li>
                   );
@@ -57,11 +57,11 @@ export default function WishlistPage() {
         {items.length === 0 && (
           <div className="text-center py-20">
             <div className="text-6xl mb-4">&#128722;</div>
-            <p className="text-lg font-bold text-[#cbd5e1] mb-2">Niciun produs salvat inca</p>
-            <p className="text-[#94a3b8] text-sm mb-6">
+            <p className="text-lg font-bold text-[#c9ced5] mb-2">Niciun produs salvat inca</p>
+            <p className="text-[#9399a0] text-sm mb-6">
               Apasa iconita &#9825; pe orice produs din sectiunea Produse pentru a-l salva.
             </p>
-            <Link href="/produse" className="inline-block bg-[#0d9488] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#14b8a6] transition-colors">
+            <Link href="/produse" className="inline-block bg-[#ddf93c] text-[#0c1000] font-bold px-6 py-3 rounded-xl hover:bg-[#ddf93c] transition-colors">
               Exploreaza produse
             </Link>
           </div>
@@ -76,12 +76,12 @@ export default function WishlistPage() {
               const dropped  = item.price > 0 && item.savedPrice > 0 && item.price < item.savedPrice;
 
               return (
-                <div key={item.id} className={`bg-[#111827] rounded-xl border overflow-hidden flex flex-col relative
-                    ${dropped ? "border-emerald-300 ring-2 ring-emerald-200" : "border-[#1e293b]"}`}>
+                <div key={item.id} className={`bg-[#14181c] rounded-xl border overflow-hidden flex flex-col relative
+                    ${dropped ? "border-emerald-300 ring-2 ring-emerald-200" : "border-[#1f2329]"}`}>
 
                   {/* Badge pret scazut */}
                   {dropped && pct && (
-                    <div className="absolute top-2 left-2 z-10 bg-[#0d9488] text-white text-[10px] font-black px-2 py-0.5 rounded-full">
+                    <div className="absolute top-2 left-2 z-10 bg-[#ddf93c] text-[#0c1000] text-[10px] font-black px-2 py-0.5 rounded-full">
                       -{pct}% SCAZUT
                     </div>
                   )}
@@ -89,7 +89,7 @@ export default function WishlistPage() {
                   {/* Buton remove */}
                   <button
                     onClick={() => remove(item.id)}
-                    className="absolute top-2 right-2 z-10 w-6 h-6 bg-[#1e293b] hover:bg-[#111827] border border-[#1e293b] rounded-full flex items-center justify-center text-[#94a3b8] hover:text-red-400 transition-colors text-xs"
+                    className="absolute top-2 right-2 z-10 w-6 h-6 bg-[#1f2329] hover:bg-[#14181c] border border-[#1f2329] rounded-full flex items-center justify-center text-[#9399a0] hover:text-red-400 transition-colors text-xs"
                     title="Sterge din lista"
                   >
                     &#x2715;
@@ -97,7 +97,7 @@ export default function WishlistPage() {
 
                   {/* Imagine */}
                   <a href={item.url} target="_blank" rel="sponsored noopener noreferrer">
-                    <div className="aspect-square bg-[#111827] flex items-center justify-center overflow-hidden">
+                    <div className="aspect-square bg-[#14181c] flex items-center justify-center overflow-hidden">
                       {item.image && !imgFail ? (
                         // eslint-disable-next-line @next/next/no-img-element
                         <img
@@ -113,33 +113,33 @@ export default function WishlistPage() {
 
                   {/* Info */}
                   <div className="p-2 flex flex-col flex-1">
-                    <p className="text-[10px] text-[#cbd5e1] truncate mb-0.5">{item.merchant}</p>
-                    <p className="text-xs font-semibold text-[#cbd5e1] line-clamp-2 leading-snug flex-1">{item.title}</p>
+                    <p className="text-[10px] text-[#c9ced5] truncate mb-0.5">{item.merchant}</p>
+                    <p className="text-xs font-semibold text-[#c9ced5] line-clamp-2 leading-snug flex-1">{item.title}</p>
 
                     {/* Preturi */}
                     <div className="mt-2">
                       {item.price > 0 ? (
                         <div className="flex items-baseline gap-1.5 flex-wrap">
-                          <span className={`font-black text-sm ${dropped ? "text-[#0d9488]" : "text-[#0f766e]"}`}>
+                          <span className={`font-black text-sm ${dropped ? "text-[#ddf93c]" : "text-[#c3dd2c]"}`}>
                             {item.price.toFixed(2)} lei
                           </span>
                           {dropped && (
-                            <span className="text-[10px] text-[#cbd5e1] line-through">
+                            <span className="text-[10px] text-[#c9ced5] line-through">
                               {item.savedPrice.toFixed(2)}
                             </span>
                           )}
                         </div>
                       ) : (
-                        <span className="text-xs text-[#cbd5e1]">Pret indisponibil</span>
+                        <span className="text-xs text-[#c9ced5]">Pret indisponibil</span>
                       )}
-                      <p className="text-[9px] text-[#cbd5e1] mt-0.5">
+                      <p className="text-[9px] text-[#c9ced5] mt-0.5">
                         Salvat la {item.savedPrice.toFixed(2)} lei
                       </p>
                     </div>
 
                     <a
                       href={item.url} target="_blank" rel="sponsored noopener noreferrer"
-                      className="mt-2 block text-center text-[10px] font-bold text-white bg-[#0d9488] hover:bg-[#14b8a6] py-1.5 rounded-lg transition-colors"
+                      className="mt-2 block text-center text-[10px] font-bold text-[#0c1000] bg-[#ddf93c] hover:bg-[#ddf93c] py-1.5 rounded-lg transition-colors"
                     >
                       Cumpara acum
                     </a>

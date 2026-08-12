@@ -59,27 +59,27 @@ const FAQ = [
 
 export default function AiToolsPage() {
   return (
-    <div className="min-h-screen bg-[#0a0f1a]">
+    <div className="min-h-screen bg-[#06080b]">
       {/* Hero */}
-      <section className="relative bg-[#0a0f1a] border-b border-[#1e293b] overflow-hidden">
+      <section className="relative bg-[#06080b] border-b border-[#1f2329] overflow-hidden">
         <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(13,148,136,0.10) 0%, transparent 65%)" }} />
         <div className="relative max-w-4xl mx-auto px-4 pt-12 pb-10 text-center">
-          <nav className="flex justify-center gap-2 text-xs text-[#94a3b8] mb-8">
-            <Link href="/" className="hover:text-[#cbd5e1]">AmCupon.ro</Link>
+          <nav className="flex justify-center gap-2 text-xs text-[#9399a0] mb-8">
+            <Link href="/" className="hover:text-[#c9ced5]">AmCupon.ro</Link>
             <span>/</span>
-            <span className="text-[#cbd5e1]">AI Tools</span>
+            <span className="text-[#c9ced5]">AI Tools</span>
           </nav>
           <div className="text-5xl mb-4">🧠</div>
-          <h1 className="text-4xl md:text-5xl font-black text-[#f1f5f9] mb-4">
-            Cele mai bune <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #0f766e, #0d9488)" }}>AI Tools</span> 2026
+          <h1 className="text-4xl md:text-5xl font-black text-[#ffffff] mb-4">
+            Cele mai bune <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #c3dd2c, #ddf93c)" }}>AI Tools</span> 2026
           </h1>
-          <p className="text-[#cbd5e1] text-lg max-w-2xl mx-auto mb-6">
+          <p className="text-[#c9ced5] text-lg max-w-2xl mx-auto mb-6">
             16 unelte AI pentru text, video, voce, SEO și design. Ce face fiecare, cât costă și pentru cine e potrivit — alege în funcție de ce ai nevoie.
           </p>
-          <div className="flex flex-wrap justify-center gap-4 text-sm text-[#cbd5e1]">
-            <span className="flex items-center gap-1.5"><span className="text-[#0d9488]">✓</span> Majoritatea au plan gratuit</span>
-            <span className="flex items-center gap-1.5"><span className="text-[#0d9488]">✓</span> Testate și recomandate</span>
-            <span className="flex items-center gap-1.5"><span className="text-[#0d9488]">✓</span> Actualizat 2026</span>
+          <div className="flex flex-wrap justify-center gap-4 text-sm text-[#c9ced5]">
+            <span className="flex items-center gap-1.5"><span className="text-[#ddf93c]">✓</span> Majoritatea au plan gratuit</span>
+            <span className="flex items-center gap-1.5"><span className="text-[#ddf93c]">✓</span> Testate și recomandate</span>
+            <span className="flex items-center gap-1.5"><span className="text-[#ddf93c]">✓</span> Actualizat 2026</span>
           </div>
         </div>
       </section>
@@ -89,22 +89,22 @@ export default function AiToolsPage() {
         const items = TOOLS.filter((t) => t.cat === cat);
         if (!items.length) return null;
         return (
-          <section key={cat} className="max-w-5xl mx-auto px-4 py-8 border-b border-[#1e293b]">
-            <h2 className="text-xl font-black text-[#f1f5f9] mb-5">{cat}</h2>
+          <section key={cat} className="max-w-5xl mx-auto px-4 py-8 border-b border-[#1f2329]">
+            <h2 className="text-xl font-black text-[#ffffff] mb-5">{cat}</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {items.map((t) => (
-                <div key={t.name} className="bg-[#111827] border border-[#1e293b] hover:border-[#14b8a6]/40 rounded-xl p-5 flex flex-col transition-all hover:-translate-y-0.5">
+                <div key={t.name} className="bg-[#14181c] border border-[#1f2329] hover:border-[#ddf93c]/40 rounded-xl p-5 flex flex-col transition-all hover:-translate-y-0.5">
                   <div className="flex items-center gap-3 mb-3">
                     <span className="text-2xl">{t.emoji}</span>
-                    <span className="font-black text-[#f1f5f9] text-lg">{t.name}</span>
+                    <span className="font-black text-[#ffffff] text-lg">{t.name}</span>
                   </div>
-                  <p className="text-sm text-[#cbd5e1] flex-1 leading-relaxed">{t.face}</p>
+                  <p className="text-sm text-[#c9ced5] flex-1 leading-relaxed">{t.face}</p>
                   <div className="mt-4 space-y-1.5 text-xs">
-                    <p className="text-[#cbd5e1]"><span className="text-[#94a3b8]">Preț:</span> <span className="text-[#0d9488] font-bold">{t.pret}</span></p>
-                    <p className="text-[#cbd5e1]"><span className="text-[#94a3b8]">Ideal pentru:</span> {t.ideal}</p>
+                    <p className="text-[#c9ced5]"><span className="text-[#9399a0]">Preț:</span> <span className="text-[#ddf93c] font-bold">{t.pret}</span></p>
+                    <p className="text-[#c9ced5]"><span className="text-[#9399a0]">Ideal pentru:</span> {t.ideal}</p>
                   </div>
                   <a href={t.url} target="_blank" rel="sponsored noopener noreferrer"
-                    className="mt-4 bg-[#0d9488] hover:bg-[#14b8a6] text-white text-sm font-bold py-2.5 rounded-xl text-center transition-all">
+                    className="mt-4 bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] text-sm font-bold py-2.5 rounded-xl text-center transition-all">
                     Încearcă {t.name} →
                   </a>
                 </div>
@@ -115,13 +115,13 @@ export default function AiToolsPage() {
       })}
 
       {/* FAQ */}
-      <section className="max-w-5xl mx-auto px-4 py-10 border-t border-[#1e293b]">
-        <h2 className="text-2xl font-black text-[#f1f5f9] mb-6">Întrebări frecvente</h2>
+      <section className="max-w-5xl mx-auto px-4 py-10 border-t border-[#1f2329]">
+        <h2 className="text-2xl font-black text-[#ffffff] mb-6">Întrebări frecvente</h2>
         <div className="space-y-4">
           {FAQ.map((item, i) => (
-            <div key={i} className="bg-[#111827] border border-[#1e293b] rounded-xl p-5">
-              <h3 className="font-bold text-[#f1f5f9] mb-2">{item.q}</h3>
-              <p className="text-[#cbd5e1] text-sm leading-relaxed">{item.a}</p>
+            <div key={i} className="bg-[#14181c] border border-[#1f2329] rounded-xl p-5">
+              <h3 className="font-bold text-[#ffffff] mb-2">{item.q}</h3>
+              <p className="text-[#c9ced5] text-sm leading-relaxed">{item.a}</p>
             </div>
           ))}
         </div>
@@ -129,13 +129,13 @@ export default function AiToolsPage() {
 
       {/* CTA */}
       <section className="max-w-5xl mx-auto px-4 pb-12">
-        <div className="rounded-xl p-8 text-center border border-[#0f766e]/25" style={{ background: "linear-gradient(135deg, rgba(13,148,136,0.10), rgba(20,184,166,0.04))" }}>
+        <div className="rounded-xl p-8 text-center border border-[#c3dd2c]/25" style={{ background: "linear-gradient(135deg, rgba(13,148,136,0.10), rgba(20,184,166,0.04))" }}>
           <div className="text-4xl mb-3">🎁</div>
-          <h2 className="text-2xl font-black text-[#f1f5f9] mb-3">Vezi toate ofertele la software</h2>
-          <p className="text-[#cbd5e1] mb-6 text-sm max-w-xl mx-auto">
+          <h2 className="text-2xl font-black text-[#ffffff] mb-3">Vezi toate ofertele la software</h2>
+          <p className="text-[#c9ced5] mb-6 text-sm max-w-xl mx-auto">
             Coduri și reduceri la unelte AI, hosting, VPN și software de business — verificate pe AmCupon.
           </p>
-          <Link href="/software-business" className="inline-block bg-[#0d9488] hover:bg-[#14b8a6] text-white font-black px-7 py-3 rounded-xl text-sm transition-all">
+          <Link href="/software-business" className="inline-block bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] font-black px-7 py-3 rounded-xl text-sm transition-all">
             Software cu reduceri →
           </Link>
         </div>

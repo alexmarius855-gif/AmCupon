@@ -51,22 +51,22 @@ export default function GadgetsPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-[#0a0f1a]">
+      <div className="min-h-screen bg-[#06080b]">
 
-        <nav className="bg-[#0a0f1a] border-b border-[#1e293b]">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#94a3b8] flex-wrap">
-            <Link href="/" className="hover:text-[#0d9488] transition-colors">Acasă</Link>
+        <nav className="bg-[#06080b] border-b border-[#1f2329]">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#9399a0] flex-wrap">
+            <Link href="/" className="hover:text-[#ddf93c] transition-colors">Acasă</Link>
             <span className="mx-1 text-gray-300">/</span>
-            <span className="text-[#cbd5e1] font-medium">Gadgets & Tech</span>
+            <span className="text-[#c9ced5] font-medium">Gadgets & Tech</span>
           </div>
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#0f766e] text-[#f1f5f9] py-12 px-4">
+        <section className="bg-gradient-to-br from-[#c3dd2c] via-[#ddf93c] to-[#c3dd2c] text-[#0c1000] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">📡</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Gadgets & Tech {an}</h1>
-            <p className="text-[#ccfbf1] text-lg mb-8 max-w-xl mx-auto">
+            <p className="text-[#2a2f10] text-lg mb-8 max-w-xl mx-auto">
               Smartwatch-uri, căști wireless, drone, smart home — coduri de reducere verificate pentru tot ce e nou în tech
             </p>
             <div className="grid grid-cols-3 gap-4 max-w-sm mx-auto">
@@ -75,9 +75,9 @@ export default function GadgetsPage() {
                 { val: `${cuPromo.length}+`, label: "Oferte active" },
                 { val: "Zilnic", label: "Actualizat" },
               ].map(s => (
-                <div key={s.label} className="bg-[#1e293b] rounded-xl py-3 px-2">
+                <div key={s.label} className="bg-[#1f2329] rounded-xl py-3 px-2">
                   <div className="text-xl font-black">{s.val}</div>
-                  <div className="text-xs text-[#0f766e]">{s.label}</div>
+                  <div className="text-xs text-[#c3dd2c]">{s.label}</div>
                 </div>
               ))}
             </div>
@@ -85,7 +85,7 @@ export default function GadgetsPage() {
         </section>
 
         {/* CATEGORII GADGET */}
-        <section className="bg-[#111827] border-b border-[#1e293b] py-6 px-4">
+        <section className="bg-[#14181c] border-b border-[#1f2329] py-6 px-4">
           <div className="max-w-6xl mx-auto">
             <div className="flex flex-wrap gap-2 justify-center">
               {[
@@ -99,7 +99,7 @@ export default function GadgetsPage() {
                 { emoji:"📱", label:"Telefoane", href:"/blog/cel-mai-bun-telefon-pentru-poze-2026" },
               ].map(c => (
                 <a key={c.label} href={c.href}
-                  className="flex items-center gap-2 bg-[#111827] hover:bg-[#14b8a6] text-[#14b8a6] font-semibold text-sm px-4 py-2 rounded-full transition-colors border border-[#14b8a6]">
+                  className="flex items-center gap-2 bg-[#14181c] hover:bg-[#ddf93c] text-[#ddf93c] font-semibold text-sm px-4 py-2 rounded-full transition-colors border border-[#ddf93c]">
                   <span>{c.emoji}</span>{c.label}
                 </a>
               ))}
@@ -111,7 +111,7 @@ export default function GadgetsPage() {
           {/* MAGAZINE */}
           <section className="mb-10">
             <div className="flex items-center gap-3 mb-5">
-              <h2 className="text-xl font-black text-[#f1f5f9]">Magazine gadgets & tech</h2>
+              <h2 className="text-xl font-black text-[#ffffff]">Magazine gadgets & tech</h2>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {magazine.map((m) => (
@@ -123,13 +123,13 @@ export default function GadgetsPage() {
           <NewsletterCTA />
 
           {/* ARTICOLE */}
-          <section className="bg-[#111827] rounded-xl p-6">
-            <h2 className="text-lg font-black text-[#f1f5f9] mb-4">📖 Ghiduri & Recenzii Gadgets</h2>
+          <section className="bg-[#14181c] rounded-xl p-6">
+            <h2 className="text-lg font-black text-[#ffffff] mb-4">📖 Ghiduri & Recenzii Gadgets</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {ARTICOLE_GADGET.map(a => (
                 <a key={a.href} href={a.href}
-                  className="flex items-center gap-2 bg-[#111827] rounded-xl px-4 py-3 text-sm font-semibold text-[#cbd5e1] hover:text-[#14b8a6] hover:border-[#14b8a6]/40 border border-[#1e293b] transition-all group">
-                  <span className="text-[#0f766e] group-hover:text-[#14b8a6]">→</span>
+                  className="flex items-center gap-2 bg-[#14181c] rounded-xl px-4 py-3 text-sm font-semibold text-[#c9ced5] hover:text-[#ddf93c] hover:border-[#ddf93c]/40 border border-[#1f2329] transition-all group">
+                  <span className="text-[#c3dd2c] group-hover:text-[#ddf93c]">→</span>
                   {a.title}
                 </a>
               ))}
@@ -146,7 +146,7 @@ export default function GadgetsPage() {
         />
 
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[#cbd5e1] mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-[#c9ced5] mb-4">Exploreaza si alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/electronice", label: "💻 Electronice" },
@@ -157,17 +157,17 @@ export default function GadgetsPage() {
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-[#111827] hover:bg-[#1e293b] hover:text-[#0f766e] text-[#cbd5e1] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#1e293b] hover:border-[#cbd5e1]">
+                className="bg-[#14181c] hover:bg-[#1f2329] hover:text-[#c3dd2c] text-[#c9ced5] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#1f2329] hover:border-[#c9ced5]">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-[#1e293b] py-6 text-center text-xs text-[#94a3b8] mt-4">
-          © {an} AmCupon.ro · <Link href="/" className="hover:text-[#0d9488]">Acasă</Link>
-          {" · "}<Link href="/black-friday" className="hover:text-[#0d9488]">Black Friday</Link>
-          {" · "}<Link href="/moto" className="hover:text-[#0d9488]">Auto-Moto</Link>
+        <footer className="border-t border-[#1f2329] py-6 text-center text-xs text-[#9399a0] mt-4">
+          © {an} AmCupon.ro · <Link href="/" className="hover:text-[#ddf93c]">Acasă</Link>
+          {" · "}<Link href="/black-friday" className="hover:text-[#ddf93c]">Black Friday</Link>
+          {" · "}<Link href="/moto" className="hover:text-[#ddf93c]">Auto-Moto</Link>
         </footer>
       </div>
     </>

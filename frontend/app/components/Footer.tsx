@@ -115,12 +115,12 @@ function NewsletterMini() {
         onChange={e => { setEmail(e.target.value); setStatus("idle"); }}
         placeholder="email@tau.ro"
         required
-        className="flex-1 bg-[#1e293b] border border-[#334155] focus:border-[#14b8a6] text-[#cbd5e1] placeholder-[#94a3b8] rounded-xl px-3 py-2.5 text-sm focus:outline-none transition-colors min-w-0"
+        className="flex-1 bg-[#1f2329] border border-[#2a2f36] focus:border-[#ddf93c] text-[#c9ced5] placeholder-[#9399a0] rounded-xl px-3 py-2.5 text-sm focus:outline-none transition-colors min-w-0"
       />
       <button
         type="submit"
         disabled={status === "loading"}
-        className="bg-[#0d9488] hover:bg-[#14b8a6] disabled:opacity-60 text-white font-bold px-4 py-2.5 rounded-xl text-sm transition-colors whitespace-nowrap shrink-0"
+        className="bg-[#ddf93c] hover:bg-[#ddf93c] disabled:opacity-60 text-[#0c1000] font-bold px-4 py-2.5 rounded-xl text-sm transition-colors whitespace-nowrap shrink-0"
       >
         {status === "loading" ? "..." : "Abonare"}
       </button>
@@ -136,10 +136,10 @@ export default function Footer() {
   if (pathname === "/") return null;
 
   return (
-    <footer className="bg-[#111827] text-[#cbd5e1] border-t border-[#1e293b] mt-auto">
+    <footer className="bg-[#14181c] text-[#c9ced5] border-t border-[#1f2329] mt-auto">
 
       {/* Facebook Follow banner */}
-      <div className="border-b border-[#1e293b]/60 bg-[#1877F2]/10">
+      <div className="border-b border-[#1f2329]/60 bg-[#1877F2]/10">
         <div className="max-w-7xl mx-auto px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl bg-[#1877F2] flex items-center justify-center shrink-0">
@@ -148,8 +148,8 @@ export default function Footer() {
               </svg>
             </div>
             <div>
-              <p className="text-[#f1f5f9] font-bold text-sm">Urmareste AmCupon.ro pe Facebook</p>
-              <p className="text-[#cbd5e1] text-xs">Oferte zilnice, coduri exclusive si concursuri</p>
+              <p className="text-[#ffffff] font-bold text-sm">Urmareste AmCupon.ro pe Facebook</p>
+              <p className="text-[#c9ced5] text-xs">Oferte zilnice, coduri exclusive si concursuri</p>
             </div>
           </div>
           <a
@@ -167,11 +167,11 @@ export default function Footer() {
       </div>
 
       {/* Newsletter banner */}
-      <div className="border-b border-[#1e293b]/60">
+      <div className="border-b border-[#1f2329]/60">
         <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div>
-            <p className="text-[#f1f5f9] font-black text-lg">📧 Reduceri zilnice pe email</p>
-            <p className="text-[#cbd5e1] text-sm mt-0.5">
+            <p className="text-[#ffffff] font-black text-lg">📧 Reduceri zilnice pe email</p>
+            <p className="text-[#c9ced5] text-sm mt-0.5">
               Fii primul care afla codurile active — gratuit, fara spam
             </p>
           </div>
@@ -188,10 +188,10 @@ export default function Footer() {
           {/* Brand col */}
           <div className="col-span-2 md:col-span-4 lg:col-span-1">
             <Link href="/" className="flex items-center gap-1.5 mb-4">
-              <div className="bg-[#0d9488] text-white font-black text-sm px-2 py-0.5 rounded-lg">Am</div>
-              <span className="font-black text-[#f1f5f9] text-xl">Cupon<span className="text-[#0d9488]">.ro</span></span>
+              <div className="bg-[#ddf93c] text-[#0c1000] font-black text-sm px-2 py-0.5 rounded-lg">Am</div>
+              <span className="font-black text-[#ffffff] text-xl">Cupon<span className="text-[#ddf93c]">.ro</span></span>
             </Link>
-            <p className="text-sm leading-relaxed text-[#94a3b8] mb-5">
+            <p className="text-sm leading-relaxed text-[#9399a0] mb-5">
               Coduri de reducere verificate zilnic de la cele mai mari magazine online din Romania.
               100% gratuit.
             </p>
@@ -209,14 +209,14 @@ export default function Footer() {
               ].map(s => (
                 <a key={s.href} href={s.href} target="_blank" rel="noopener noreferrer"
                   aria-label={s.label}
-                  className="w-9 h-9 rounded-xl bg-[#1e293b] hover:bg-[#0d9488] flex items-center justify-center transition-colors group">
-                  <svg className="w-4 h-4 text-[#cbd5e1] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                  className="w-9 h-9 rounded-xl bg-[#1f2329] hover:bg-[#ddf93c] flex items-center justify-center transition-colors group">
+                  <svg className="w-4 h-4 text-[#c9ced5] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                     {s.svg}
                   </svg>
                 </a>
               ))}
               <Link href="/extensie"
-                className="w-9 h-9 rounded-xl bg-[#1e293b] hover:bg-[#0d9488] flex items-center justify-center transition-colors" title="Extensie Chrome">
+                className="w-9 h-9 rounded-xl bg-[#1f2329] hover:bg-[#ddf93c] flex items-center justify-center transition-colors" title="Extensie Chrome">
                 <span className="text-sm">🧩</span>
               </Link>
             </div>
@@ -224,12 +224,12 @@ export default function Footer() {
 
           {/* Magazine */}
           <div>
-            <p className="text-[#f1f5f9] font-bold text-xs uppercase tracking-widest mb-4">Magazine populare</p>
+            <p className="text-[#ffffff] font-bold text-xs uppercase tracking-widest mb-4">Magazine populare</p>
             <ul className="space-y-2">
               {MAGAZINE_POPULARE.map(m => (
                 <li key={m.slug}>
                   <Link href={m.href ?? `/cod-reducere/${m.slug}`}
-                    className="text-sm text-[#94a3b8] hover:text-[#0d9488] transition-colors">
+                    className="text-sm text-[#9399a0] hover:text-[#ddf93c] transition-colors">
                     Cod reducere {m.label}
                   </Link>
                 </li>
@@ -239,11 +239,11 @@ export default function Footer() {
 
           {/* Categorii */}
           <div>
-            <p className="text-[#f1f5f9] font-bold text-xs uppercase tracking-widest mb-4">Categorii</p>
+            <p className="text-[#ffffff] font-bold text-xs uppercase tracking-widest mb-4">Categorii</p>
             <ul className="space-y-2">
               {CATEGORII.map(c => (
                 <li key={c.href}>
-                  <Link href={c.href} className="text-sm text-[#94a3b8] hover:text-[#0d9488] transition-colors">
+                  <Link href={c.href} className="text-sm text-[#9399a0] hover:text-[#ddf93c] transition-colors">
                     {c.label}
                   </Link>
                 </li>
@@ -253,11 +253,11 @@ export default function Footer() {
 
           {/* Reduceri preferate */}
           <div>
-            <p className="text-[#f1f5f9] font-bold text-xs uppercase tracking-widest mb-4">Reduceri preferate</p>
+            <p className="text-[#ffffff] font-bold text-xs uppercase tracking-widest mb-4">Reduceri preferate</p>
             <ul className="space-y-2">
               {REDUCERI.map(g => (
                 <li key={g.label}>
-                  <Link href={g.href} className="text-sm text-[#94a3b8] hover:text-[#0d9488] transition-colors">
+                  <Link href={g.href} className="text-sm text-[#9399a0] hover:text-[#ddf93c] transition-colors">
                     {g.label}
                   </Link>
                 </li>
@@ -267,11 +267,11 @@ export default function Footer() {
 
           {/* Pentru utilizatori */}
           <div>
-            <p className="text-[#f1f5f9] font-bold text-xs uppercase tracking-widest mb-4">Pentru utilizatori</p>
+            <p className="text-[#ffffff] font-bold text-xs uppercase tracking-widest mb-4">Pentru utilizatori</p>
             <ul className="space-y-2">
               {UTILIZATORI.map(i => (
                 <li key={i.label}>
-                  <Link href={i.href} className="text-sm text-[#94a3b8] hover:text-[#0d9488] transition-colors">
+                  <Link href={i.href} className="text-sm text-[#9399a0] hover:text-[#ddf93c] transition-colors">
                     {i.label}
                   </Link>
                 </li>
@@ -281,11 +281,11 @@ export default function Footer() {
 
           {/* Pentru parteneri */}
           <div>
-            <p className="text-[#f1f5f9] font-bold text-xs uppercase tracking-widest mb-4">Pentru parteneri</p>
+            <p className="text-[#ffffff] font-bold text-xs uppercase tracking-widest mb-4">Pentru parteneri</p>
             <ul className="space-y-2">
               {PARTENERI.map((p, i) => (
                 <li key={i}>
-                  <Link href={p.href} className="text-sm text-[#94a3b8] hover:text-[#0d9488] transition-colors">
+                  <Link href={p.href} className="text-sm text-[#9399a0] hover:text-[#ddf93c] transition-colors">
                     {p.label}
                   </Link>
                 </li>
@@ -297,17 +297,17 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-[#1e293b]/60">
-        <div className="max-w-7xl mx-auto px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[#94a3b8]">
+      <div className="border-t border-[#1f2329]/60">
+        <div className="max-w-7xl mx-auto px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[#9399a0]">
           <p>© {an} AmCupon.ro — Toate drepturile rezervate</p>
           <p className="text-center">
             AmCupon.ro conține linkuri de afiliere. Primim un comision din bugetul de marketing
             al magazinelor, fără costuri suplimentare pentru tine.
           </p>
           <div className="flex items-center gap-4">
-            <Link href="/confidentialitate" className="hover:text-[#cbd5e1] transition-colors">GDPR</Link>
-            <Link href="/termeni" className="hover:text-[#cbd5e1] transition-colors">Termeni</Link>
-            <Link href="/contact" className="hover:text-[#cbd5e1] transition-colors">Contact</Link>
+            <Link href="/confidentialitate" className="hover:text-[#c9ced5] transition-colors">GDPR</Link>
+            <Link href="/termeni" className="hover:text-[#c9ced5] transition-colors">Termeni</Link>
+            <Link href="/contact" className="hover:text-[#c9ced5] transition-colors">Contact</Link>
           </div>
         </div>
       </div>

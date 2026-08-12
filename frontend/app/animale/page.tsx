@@ -66,45 +66,45 @@ export default function AnimalePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-[#0a0f1a]">
+      <div className="min-h-screen bg-[#06080b]">
 
         {/* Header */}
 
         {/* Breadcrumb */}
-        <nav className="bg-[#0a0f1a] border-b border-[#1e293b]">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#94a3b8]">
-            <Link href="/" className="hover:text-[#0d9488]">Acasa</Link>
+        <nav className="bg-[#06080b] border-b border-[#1f2329]">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#9399a0]">
+            <Link href="/" className="hover:text-[#ddf93c]">Acasa</Link>
             <span className="mx-1">/</span>
-            <span className="text-[#cbd5e1] font-medium">Animale de Companie</span>
+            <span className="text-[#c9ced5] font-medium">Animale de Companie</span>
           </div>
         </nav>
 
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#0f766e] text-[#f1f5f9] py-12 px-4">
+        <section className="bg-gradient-to-br from-[#c3dd2c] via-[#ddf93c] to-[#c3dd2c] text-[#0c1000] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">🐾</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Pet Shop cu Reducere {an}</h1>
-            <p className="text-[#ccfbf1] text-lg mb-6 max-w-xl mx-auto">
+            <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
               Hrana, jucarii si accesorii pentru animalele tale de companie la preturi mici. Petmart, Petmax, Bravapet si alte magazine verificate zilnic.
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Caini","Pisici","Pasari","Rozatoare","Pesti","Reptile","Accesorii"].map(c => (
-                <span key={c} className="bg-[#1e293b] text-[#f1f5f9] text-sm font-semibold px-4 py-1.5 rounded-full border border-[#334155]">{c}</span>
+                <span key={c} className="bg-[#1f2329] text-[#ffffff] text-sm font-semibold px-4 py-1.5 rounded-full border border-[#2a2f36]">{c}</span>
               ))}
             </div>
           </div>
         </section>
 
         {/* Stats bar */}
-        <div className="bg-[#111827] border-[#1e293b] py-3 px-4">
+        <div className="bg-[#14181c] border-[#1f2329] py-3 px-4">
           <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-6 text-sm">
-            <span className="text-[#0f766e] font-semibold">
-              <span className="font-black text-[#0d9488]">{magazine.length}</span> magazine pet shop
+            <span className="text-[#c3dd2c] font-semibold">
+              <span className="font-black text-[#ddf93c]">{magazine.length}</span> magazine pet shop
             </span>
-            <span className="text-[#0f766e] font-semibold">
-              <span className="font-black text-[#0d9488]">{cuPromo.length}</span> cu promotii active
+            <span className="text-[#c3dd2c] font-semibold">
+              <span className="font-black text-[#ddf93c]">{cuPromo.length}</span> cu promotii active
             </span>
-            <span className="text-[#0f766e] font-semibold">
+            <span className="text-[#c3dd2c] font-semibold">
               &#10003; Actualizat zilnic
             </span>
           </div>
@@ -112,13 +112,13 @@ export default function AnimalePage() {
 
         {/* Avantaje */}
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[#f1f5f9] mb-6 text-center">Ce gasesti la pet shop-urile online din Romania</h2>
+          <h2 className="text-xl font-black text-[#ffffff] mb-6 text-center">Ce gasesti la pet shop-urile online din Romania</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {AVANTAJE.map(a => (
-              <div key={a.titlu} className="bg-[#111827] border border-[#1e293b] rounded-xl p-5">
+              <div key={a.titlu} className="bg-[#14181c] border border-[#1f2329] rounded-xl p-5">
                 <div className="text-3xl mb-2">{a.icon}</div>
-                <h3 className="font-bold text-[#f1f5f9] text-sm mb-1">{a.titlu}</h3>
-                <p className="text-xs text-[#cbd5e1]">{a.desc}</p>
+                <h3 className="font-bold text-[#ffffff] text-sm mb-1">{a.titlu}</h3>
+                <p className="text-xs text-[#c9ced5]">{a.desc}</p>
               </div>
             ))}
           </div>
@@ -127,7 +127,7 @@ export default function AnimalePage() {
         {/* Magazine */}
         <section className="max-w-6xl mx-auto px-4 pb-10">
           <div className="flex items-center gap-3 mb-5">
-            <h2 className="text-xl font-black text-[#f1f5f9]">Magazine pet shop cu reduceri active</h2>
+            <h2 className="text-xl font-black text-[#ffffff]">Magazine pet shop cu reduceri active</h2>
           </div>
 
           {magazine.length > 0 ? (
@@ -137,11 +137,11 @@ export default function AnimalePage() {
             ))}
             </div>
           ) : (
-            <div className="bg-[#111827] border border-[#1e293b] rounded-xl p-10 text-center">
+            <div className="bg-[#14181c] border border-[#1f2329] rounded-xl p-10 text-center">
               <p className="text-4xl mb-3">🐾</p>
-              <p className="font-bold text-[#cbd5e1] mb-2">Magazine actualizate zilnic</p>
-              <p className="text-[#94a3b8] text-sm mb-4">Revino curand pentru promotii noi la pet shop-uri.</p>
-              <Link href="/toate-magazinele" className="text-[#0d9488] font-bold hover:text-[#0f766e] text-sm">
+              <p className="font-bold text-[#c9ced5] mb-2">Magazine actualizate zilnic</p>
+              <p className="text-[#9399a0] text-sm mb-4">Revino curand pentru promotii noi la pet shop-uri.</p>
+              <Link href="/toate-magazinele" className="text-[#ddf93c] font-bold hover:text-[#c3dd2c] text-sm">
                 Toate magazinele &rarr;
               </Link>
             </div>
@@ -160,16 +160,16 @@ export default function AnimalePage() {
         />
 
         {/* Editorial */}
-        <section className="bg-[#111827] border-t border-[#1e293b] py-10 px-4">
+        <section className="bg-[#14181c] border-t border-[#1f2329] py-10 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-[#f1f5f9] mb-5">Ghid: Cum economisesti la cumparaturile pentru animale</h2>
-            <div className="space-y-4 text-sm text-[#cbd5e1] leading-relaxed">
+            <h2 className="text-xl font-black text-[#ffffff] mb-5">Ghid: Cum economisesti la cumparaturile pentru animale</h2>
+            <div className="space-y-4 text-sm text-[#c9ced5] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[#f1f5f9] mb-1">Petmart vs Petmax vs Bravapet</h3>
+                <h3 className="font-bold text-[#ffffff] mb-1">Petmart vs Petmax vs Bravapet</h3>
                 <p>Petmart are cel mai larg catalog si frecvent promotii la saci mari de hrana. Petmax se remarca prin livrare rapida si oferte flash. Bravapet este o alegere buna pentru hrana premium (Royal Canin, Hill&apos;s, Purina Pro Plan) cu preturi competitive.</p>
               </div>
               <div>
-                <h3 className="font-bold text-[#f1f5f9] mb-1">Sfaturi pentru economii la hrana pentru animale</h3>
+                <h3 className="font-bold text-[#ffffff] mb-1">Sfaturi pentru economii la hrana pentru animale</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
                   <li><strong>Cumpara saci mari</strong> — pretul per kg scade semnificativ la cantitatile de 12-15 kg</li>
                   <li><strong>Aboneaza-te la newsletter</strong> — pet shop-urile trimit frecvent coduri de 10-15% off</li>
@@ -178,7 +178,7 @@ export default function AnimalePage() {
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-[#f1f5f9] mb-1">Branduri premium la preturi mai mici</h3>
+                <h3 className="font-bold text-[#ffffff] mb-1">Branduri premium la preturi mai mici</h3>
                 <p>Royal Canin, Hill&apos;s Science Diet si Purina Pro Plan sunt disponibile pe toate platformele mari de pet shop. Preturile variaza cu 20-30% intre magazine — compara inainte sa cumperi si foloseste codurile de reducere de pe AmCupon.ro.</p>
               </div>
             </div>
@@ -187,7 +187,7 @@ export default function AnimalePage() {
 
         {/* Internal links */}
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[#cbd5e1] mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-[#c9ced5] mb-4">Exploreaza si alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/sanatate",   label: "🌿 Sanatate & Naturiste" },
@@ -198,18 +198,18 @@ export default function AnimalePage() {
               { href: "/categorii",  label: "📂 Toate Categoriile" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-[#111827] hover:bg-[#1e293b] hover:text-[#0f766e] text-[#cbd5e1] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#1e293b] hover:border-[#cbd5e1]">
+                className="bg-[#14181c] hover:bg-[#1f2329] hover:text-[#c3dd2c] text-[#c9ced5] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#1f2329] hover:border-[#c9ced5]">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-[#1e293b] py-6 text-center text-xs text-[#94a3b8] mt-4">
+        <footer className="border-t border-[#1f2329] py-6 text-center text-xs text-[#9399a0] mt-4">
           &copy; {an} AmCupon.ro &middot;{" "}
-          <Link href="/sanatate" className="hover:text-[#0d9488]">Sanatate</Link>{" · "}
-          <Link href="/farmacie" className="hover:text-[#0d9488]">Farmacie</Link>{" · "}
-          <Link href="/categorii" className="hover:text-[#0d9488]">Categorii</Link>
+          <Link href="/sanatate" className="hover:text-[#ddf93c]">Sanatate</Link>{" · "}
+          <Link href="/farmacie" className="hover:text-[#ddf93c]">Farmacie</Link>{" · "}
+          <Link href="/categorii" className="hover:text-[#ddf93c]">Categorii</Link>
         </footer>
       </div>
     </>

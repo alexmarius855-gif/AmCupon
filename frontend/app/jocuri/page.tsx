@@ -66,57 +66,57 @@ export default function JocuriPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-[#0a0f1a]">
+      <div className="min-h-screen bg-[#06080b]">
 
         {/* Header */}
 
         {/* Breadcrumb */}
-        <nav className="bg-[#0a0f1a] border-b border-[#1e293b]">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#94a3b8]">
-            <Link href="/" className="hover:text-[#0d9488]">Acasa</Link>
+        <nav className="bg-[#06080b] border-b border-[#1f2329]">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#9399a0]">
+            <Link href="/" className="hover:text-[#ddf93c]">Acasa</Link>
             <span className="mx-1">/</span>
-            <span className="text-[#cbd5e1] font-medium">Jocuri Video & Gaming</span>
+            <span className="text-[#c9ced5] font-medium">Jocuri Video & Gaming</span>
           </div>
         </nav>
 
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#0f766e] text-[#f1f5f9] py-12 px-4">
+        <section className="bg-gradient-to-br from-[#c3dd2c] via-[#ddf93c] to-[#c3dd2c] text-[#0c1000] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">🎮</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Jocuri Video cu Reducere {an}</h1>
-            <p className="text-[#ccfbf1] text-lg mb-6 max-w-xl mx-auto">
+            <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
               Console, jocuri si accesorii gaming la preturi mici. PCGarage, evoMAG, Altex si alte magazine cu stocuri verificate zilnic.
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["PS5","Xbox Series","Nintendo Switch","PC Gaming","Jocuri AAA","Accesorii","VR"].map(c => (
-                <span key={c} className="bg-[#1e293b] text-[#f1f5f9] text-sm font-semibold px-4 py-1.5 rounded-full border border-[#334155]">{c}</span>
+                <span key={c} className="bg-[#1f2329] text-[#ffffff] text-sm font-semibold px-4 py-1.5 rounded-full border border-[#2a2f36]">{c}</span>
               ))}
             </div>
           </div>
         </section>
 
         {/* Stats */}
-        <div className="bg-[#111827] border-[#1e293b] py-3 px-4">
+        <div className="bg-[#14181c] border-[#1f2329] py-3 px-4">
           <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-6 text-sm">
-            <span className="text-[#0f766e] font-semibold">
-              <span className="font-black text-[#0d9488]">{magazine.length}</span> magazine gaming
+            <span className="text-[#c3dd2c] font-semibold">
+              <span className="font-black text-[#ddf93c]">{magazine.length}</span> magazine gaming
             </span>
-            <span className="text-[#0f766e] font-semibold">
-              <span className="font-black text-[#0d9488]">{cuPromo.length}</span> cu promotii active
+            <span className="text-[#c3dd2c] font-semibold">
+              <span className="font-black text-[#ddf93c]">{cuPromo.length}</span> cu promotii active
             </span>
-            <span className="text-[#0f766e] font-semibold">&#10003; Actualizat zilnic</span>
+            <span className="text-[#c3dd2c] font-semibold">&#10003; Actualizat zilnic</span>
           </div>
         </div>
 
         {/* Avantaje */}
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[#f1f5f9] mb-6 text-center">Ce gasesti la magazinele de gaming online</h2>
+          <h2 className="text-xl font-black text-[#ffffff] mb-6 text-center">Ce gasesti la magazinele de gaming online</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {AVANTAJE.map(a => (
-              <div key={a.titlu} className="bg-[#111827] border border-[#1e293b] rounded-xl p-5">
+              <div key={a.titlu} className="bg-[#14181c] border border-[#1f2329] rounded-xl p-5">
                 <div className="text-3xl mb-2">{a.icon}</div>
-                <h3 className="font-bold text-[#f1f5f9] text-sm mb-1">{a.titlu}</h3>
-                <p className="text-xs text-[#cbd5e1]">{a.desc}</p>
+                <h3 className="font-bold text-[#ffffff] text-sm mb-1">{a.titlu}</h3>
+                <p className="text-xs text-[#c9ced5]">{a.desc}</p>
               </div>
             ))}
           </div>
@@ -124,7 +124,7 @@ export default function JocuriPage() {
 
         {/* Magazine */}
         <section className="max-w-6xl mx-auto px-4 pb-10">
-          <h2 className="text-xl font-black text-[#f1f5f9] mb-5">Magazine gaming cu reduceri active</h2>
+          <h2 className="text-xl font-black text-[#ffffff] mb-5">Magazine gaming cu reduceri active</h2>
           {magazine.length > 0 ? (
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
               {magazine.map((m) => (
@@ -132,11 +132,11 @@ export default function JocuriPage() {
             ))}
             </div>
           ) : (
-            <div className="bg-[#111827] border border-[#1e293b] rounded-xl p-10 text-center">
+            <div className="bg-[#14181c] border border-[#1f2329] rounded-xl p-10 text-center">
               <p className="text-4xl mb-3">🎮</p>
-              <p className="font-bold text-[#cbd5e1] mb-2">Magazine actualizate zilnic</p>
-              <p className="text-[#94a3b8] text-sm mb-4">Revino curand pentru promotii la jocuri si gaming.</p>
-              <Link href="/toate-magazinele" className="text-[#0d9488] font-bold hover:text-[#0f766e] text-sm">Toate magazinele &rarr;</Link>
+              <p className="font-bold text-[#c9ced5] mb-2">Magazine actualizate zilnic</p>
+              <p className="text-[#9399a0] text-sm mb-4">Revino curand pentru promotii la jocuri si gaming.</p>
+              <Link href="/toate-magazinele" className="text-[#ddf93c] font-bold hover:text-[#c3dd2c] text-sm">Toate magazinele &rarr;</Link>
             </div>
           )}
         </section>
@@ -153,16 +153,16 @@ export default function JocuriPage() {
         />
 
         {/* Editorial */}
-        <section className="bg-[#111827] border-t border-[#1e293b] py-10 px-4">
+        <section className="bg-[#14181c] border-t border-[#1f2329] py-10 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-[#f1f5f9] mb-5">Ghid: Unde cumperi jocuri mai ieftin in Romania</h2>
-            <div className="space-y-4 text-sm text-[#cbd5e1] leading-relaxed">
+            <h2 className="text-xl font-black text-[#ffffff] mb-5">Ghid: Unde cumperi jocuri mai ieftin in Romania</h2>
+            <div className="space-y-4 text-sm text-[#c9ced5] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[#f1f5f9] mb-1">PCGarage vs evoMAG vs Altex pentru gaming</h3>
+                <h3 className="font-bold text-[#ffffff] mb-1">PCGarage vs evoMAG vs Altex pentru gaming</h3>
                 <p>PCGarage are cele mai bune preturi la componente PC si accesorii gaming (placi video, procesoare). evoMAG ofera frecvent bundle-uri consola + joc la preturi sub piata. Altex are stocuri mari si livrare rapida pentru console si jocuri fizice.</p>
               </div>
               <div>
-                <h3 className="font-bold text-[#f1f5f9] mb-1">Jocuri fizice vs digitale — ce e mai ieftin</h3>
+                <h3 className="font-bold text-[#ffffff] mb-1">Jocuri fizice vs digitale — ce e mai ieftin</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
                   <li><strong>Jocuri noi (launch)</strong> — pretul e identic fizic/digital; fizic poate fi revandut</li>
                   <li><strong>Dupa 3-6 luni</strong> — reducerile digitale (PS Store, Xbox Game Pass) bat de obicei fizicul</li>
@@ -171,7 +171,7 @@ export default function JocuriPage() {
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-[#f1f5f9] mb-1">Cand apar cele mai mari reduceri la gaming</h3>
+                <h3 className="font-bold text-[#ffffff] mb-1">Cand apar cele mai mari reduceri la gaming</h3>
                 <p>Black Friday (nov) are reduceri record la console si jocuri. Steam Summer Sale (iun-iul) si Winter Sale (dec-ian) pentru PC. PlayStation Store face frecvent flash sale-uri de weekend. Aboneaza-te la newsletter-ul PCGarage si evoMAG pentru alerte imediate.</p>
               </div>
             </div>
@@ -180,7 +180,7 @@ export default function JocuriPage() {
 
         {/* Internal links */}
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[#cbd5e1] mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-[#c9ced5] mb-4">Exploreaza si alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/electronice", label: "💻 Electronice & IT" },
@@ -191,18 +191,18 @@ export default function JocuriPage() {
               { href: "/categorii",   label: "📂 Toate Categoriile" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-[#111827] hover:bg-[#1e293b] hover:text-[#0f766e] text-[#cbd5e1] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#1e293b] hover:border-[#cbd5e1]">
+                className="bg-[#14181c] hover:bg-[#1f2329] hover:text-[#c3dd2c] text-[#c9ced5] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#1f2329] hover:border-[#c9ced5]">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-[#1e293b] py-6 text-center text-xs text-[#94a3b8] mt-4">
+        <footer className="border-t border-[#1f2329] py-6 text-center text-xs text-[#9399a0] mt-4">
           &copy; {an} AmCupon.ro &middot;{" "}
-          <Link href="/electronice" className="hover:text-[#0d9488]">Electronice</Link>{" · "}
-          <Link href="/gadgets" className="hover:text-[#0d9488]">Gadgets</Link>{" · "}
-          <Link href="/categorii" className="hover:text-[#0d9488]">Categorii</Link>
+          <Link href="/electronice" className="hover:text-[#ddf93c]">Electronice</Link>{" · "}
+          <Link href="/gadgets" className="hover:text-[#ddf93c]">Gadgets</Link>{" · "}
+          <Link href="/categorii" className="hover:text-[#ddf93c]">Categorii</Link>
         </footer>
       </div>
     </>

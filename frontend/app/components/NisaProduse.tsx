@@ -78,19 +78,19 @@ function getProduse(merchantSlugs: string[], catSlug: string, limit: number): Pr
 // dinamic prin interpolare (ex. `text-${culoareAccent}-600`), asa ca avem nevoie
 // de un lookup cu fiecare combinatie scrisa literal.
 const ACCENT_CLASSES: Record<string, { text: string; bg: string; border: string; groupHoverText: string }> = {
-  purple:  { text: "text-[#14b8a6]",  bg: "bg-[#14b8a6]",  border: "hover:border-[#14b8a6]",  groupHoverText: "group-hover:text-[#14b8a6]" },
+  purple:  { text: "text-[#ddf93c]",  bg: "bg-[#ddf93c]",  border: "hover:border-[#ddf93c]",  groupHoverText: "group-hover:text-[#ddf93c]" },
   green:   { text: "text-green-600",   bg: "bg-green-500",   border: "hover:border-green-300",   groupHoverText: "group-hover:text-green-600" },
-  blue:    { text: "text-[#14b8a6]",    bg: "bg-[#14b8a6]",    border: "hover:border-[#14b8a6]",    groupHoverText: "group-hover:text-[#14b8a6]" },
-  pink:    { text: "text-[#14b8a6]",    bg: "bg-[#14b8a6]",    border: "hover:border-[#14b8a6]",    groupHoverText: "group-hover:text-[#14b8a6]" },
+  blue:    { text: "text-[#ddf93c]",    bg: "bg-[#ddf93c]",    border: "hover:border-[#ddf93c]",    groupHoverText: "group-hover:text-[#ddf93c]" },
+  pink:    { text: "text-[#ddf93c]",    bg: "bg-[#ddf93c]",    border: "hover:border-[#ddf93c]",    groupHoverText: "group-hover:text-[#ddf93c]" },
   emerald: { text: "text-emerald-600", bg: "bg-emerald-500", border: "hover:border-emerald-300", groupHoverText: "group-hover:text-emerald-600" },
   yellow:  { text: "text-yellow-600",  bg: "bg-yellow-500",  border: "hover:border-yellow-300",  groupHoverText: "group-hover:text-yellow-600" },
-  indigo:  { text: "text-[#0d9488]",  bg: "bg-[#14b8a6]",  border: "hover:border-[#0f766e]",  groupHoverText: "group-hover:text-[#0d9488]" },
-  amber:   { text: "text-[#14b8a6]",   bg: "bg-[#14b8a6]",   border: "hover:border-[#14b8a6]",   groupHoverText: "group-hover:text-[#14b8a6]" },
-  rose:    { text: "text-[#14b8a6]",    bg: "bg-[#14b8a6]",    border: "hover:border-[#14b8a6]",    groupHoverText: "group-hover:text-[#14b8a6]" },
-  gray:    { text: "text-gray-600",    bg: "bg-gray-500",    border: "hover:border-[#475569]",    groupHoverText: "group-hover:text-gray-600" },
-  teal:    { text: "text-[#14b8a6]",    bg: "bg-[#14b8a6]",    border: "hover:border-[#14b8a6]",    groupHoverText: "group-hover:text-[#14b8a6]" },
-  violet:  { text: "text-[#14b8a6]",  bg: "bg-[#14b8a6]",  border: "hover:border-[#14b8a6]",  groupHoverText: "group-hover:text-[#14b8a6]" },
-  cyan:    { text: "text-[#0d9488]",    bg: "bg-[#14b8a6]",    border: "hover:border-[#0f766e]",    groupHoverText: "group-hover:text-[#0d9488]" },
+  indigo:  { text: "text-[#ddf93c]",  bg: "bg-[#ddf93c]",  border: "hover:border-[#c3dd2c]",  groupHoverText: "group-hover:text-[#ddf93c]" },
+  amber:   { text: "text-[#ddf93c]",   bg: "bg-[#ddf93c]",   border: "hover:border-[#ddf93c]",   groupHoverText: "group-hover:text-[#ddf93c]" },
+  rose:    { text: "text-[#ddf93c]",    bg: "bg-[#ddf93c]",    border: "hover:border-[#ddf93c]",    groupHoverText: "group-hover:text-[#ddf93c]" },
+  gray:    { text: "text-gray-600",    bg: "bg-gray-500",    border: "hover:border-[#3a4048]",    groupHoverText: "group-hover:text-gray-600" },
+  teal:    { text: "text-[#ddf93c]",    bg: "bg-[#ddf93c]",    border: "hover:border-[#ddf93c]",    groupHoverText: "group-hover:text-[#ddf93c]" },
+  violet:  { text: "text-[#ddf93c]",  bg: "bg-[#ddf93c]",  border: "hover:border-[#ddf93c]",  groupHoverText: "group-hover:text-[#ddf93c]" },
+  cyan:    { text: "text-[#ddf93c]",    bg: "bg-[#ddf93c]",    border: "hover:border-[#c3dd2c]",    groupHoverText: "group-hover:text-[#ddf93c]" },
 };
 
 export default function NisaProduse({
@@ -115,7 +115,7 @@ export default function NisaProduse({
 
   return (
     <section className="max-w-6xl mx-auto px-4 pb-12">
-      <h2 className="text-xl font-black text-[#f1f5f9] mb-5">{titlu}</h2>
+      <h2 className="text-xl font-black text-[#ffffff] mb-5">{titlu}</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
         {produse.map((p) => {
           const hasPrice   = p.price > 0;
@@ -128,10 +128,10 @@ export default function NisaProduse({
               href={p.url}
               target="_blank"
               rel="sponsored noopener noreferrer"
-              className={`group bg-[#111827] border border-[#1e293b] ${accent.border} rounded-xl overflow-hidden transition-all hover:shadow-lg hover:shadow-black/40 hover:-translate-y-0.5 duration-200 flex flex-col`}
+              className={`group bg-[#14181c] border border-[#1f2329] ${accent.border} rounded-xl overflow-hidden transition-all hover:shadow-lg hover:shadow-black/40 hover:-translate-y-0.5 duration-200 flex flex-col`}
             >
               {/* Imagine */}
-              <div className="relative bg-[#111827] aspect-square overflow-hidden">
+              <div className="relative bg-[#14181c] aspect-square overflow-hidden">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={p.image}
@@ -140,7 +140,7 @@ export default function NisaProduse({
                   loading="lazy"
                 />
                 {hasDiscount && (
-                  <div className={`absolute top-2 left-2 ${bgAccent} text-[#f1f5f9] text-xs font-black px-2 py-0.5 rounded-full`}>
+                  <div className={`absolute top-2 left-2 ${bgAccent} text-[#ffffff] text-xs font-black px-2 py-0.5 rounded-full`}>
                     -{p.discount_pct}%
                   </div>
                 )}
@@ -153,8 +153,8 @@ export default function NisaProduse({
 
               {/* Info */}
               <div className="p-3 flex flex-col flex-1">
-                <p className="text-xs text-[#94a3b8] mb-1 truncate">{p.brand || p.merchant}</p>
-                <p className={`text-sm font-semibold text-[#cbd5e1] line-clamp-2 flex-1 ${accent.groupHoverText} transition-colors leading-snug`}>
+                <p className="text-xs text-[#9399a0] mb-1 truncate">{p.brand || p.merchant}</p>
+                <p className={`text-sm font-semibold text-[#c9ced5] line-clamp-2 flex-1 ${accent.groupHoverText} transition-colors leading-snug`}>
                   {p.title}
                 </p>
                 <div className="flex items-center gap-2 mt-2">
@@ -164,7 +164,7 @@ export default function NisaProduse({
                         {p.price.toFixed(0)} lei
                       </span>
                       {hasDiscount && p.old_price && (
-                        <span className="text-xs text-[#94a3b8] line-through">
+                        <span className="text-xs text-[#9399a0] line-through">
                           {p.old_price.toFixed(0)} lei
                         </span>
                       )}

@@ -33,7 +33,7 @@ const CATEGORII_SMART = [
   { emoji: "🚪", titlu: "Siguranta Casa", desc: "Incuietori smart, senzori usa/fereastra, alarme WiFi" },
 ];
 
-const CULORI_BADGE = ["bg-[#0d9488]"];
+const CULORI_BADGE = ["bg-[#ddf93c]"];
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Smart Home Romania 2026","url":"https://amcupon.ro/smart-home","description":"Oferte smart home Romania 2026 — becuri, prize, camere, termostate inteligente" };
 
 export default function SmartHomePage() {
@@ -51,38 +51,38 @@ export default function SmartHomePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-[#0a0f1a]">
+      <div className="min-h-screen bg-[#06080b]">
 
         {/* Breadcrumb */}
-        <nav className="bg-[#111827]/80 backdrop-blur-sm border-b border-[#1e293b]">
-          <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-1.5 text-xs text-[#94a3b8]">
-            <Link href="/" className="hover:text-[#0d9488] transition-colors">Acasa</Link>
+        <nav className="bg-[#14181c]/80 backdrop-blur-sm border-b border-[#1f2329]">
+          <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-1.5 text-xs text-[#9399a0]">
+            <Link href="/" className="hover:text-[#ddf93c] transition-colors">Acasa</Link>
             <span>/</span>
-            <span className="text-[#cbd5e1] font-medium">Smart Home</span>
+            <span className="text-[#c9ced5] font-medium">Smart Home</span>
           </div>
         </nav>
 
         {/* Hero */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-[#111827] via-[#111827] to-[#0a0f1a] py-16 px-4">
+        <section className="relative overflow-hidden bg-gradient-to-br from-[#14181c] via-[#14181c] to-[#06080b] py-16 px-4">
           <div className="absolute inset-0 pointer-events-none">
-            <div className="absolute top-0 left-1/3 w-80 h-80 bg-[#0d9488]/20 rounded-full blur-3xl" />
-            <div className="absolute bottom-0 right-1/3 w-64 h-64 bg-[#0d9488]/15 rounded-full blur-3xl" />
+            <div className="absolute top-0 left-1/3 w-80 h-80 bg-[#ddf93c]/20 rounded-full blur-3xl" />
+            <div className="absolute bottom-0 right-1/3 w-64 h-64 bg-[#ddf93c]/15 rounded-full blur-3xl" />
           </div>
           <div className="relative max-w-6xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 bg-[#14b8a6]/20 border border-[#14b8a6]/30 text-[#0f766e] text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#0d9488] animate-pulse"/>
+            <div className="inline-flex items-center gap-2 bg-[#ddf93c]/20 border border-[#ddf93c]/30 text-[#c3dd2c] text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#ddf93c] animate-pulse"/>
               Casa mai inteligenta
             </div>
             <div className="text-6xl mb-5 drop-shadow-2xl">🏠</div>
-            <h1 className="text-4xl md:text-5xl font-black text-[#f1f5f9] mb-4 tracking-tight">
-              Smart Home Romania <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #0f766e, #0d9488)"}}>{an}</span>
+            <h1 className="text-4xl md:text-5xl font-black text-[#ffffff] mb-4 tracking-tight">
+              Smart Home Romania <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #c3dd2c, #ddf93c)"}}>{an}</span>
             </h1>
-            <p className="text-[#cbd5e1] text-lg mb-8 max-w-xl mx-auto leading-relaxed">
+            <p className="text-[#c9ced5] text-lg mb-8 max-w-xl mx-auto leading-relaxed">
               Becuri inteligente, prize smart, camere WiFi — transforma-ti casa cu coduri reducere verificate zilnic
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Alexa","Google Home","Apple HomeKit","Philips Hue","Tuya","Zigbee","Wi-Fi Direct"].map(c => (
-                <span key={c} className="bg-[#1e293b] border border-[#334155] text-slate-500 text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
+                <span key={c} className="bg-[#1f2329] border border-[#2a2f36] text-slate-500 text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
               ))}
             </div>
           </div>
@@ -91,17 +91,17 @@ export default function SmartHomePage() {
         {/* Categorii smart */}
         <section className="max-w-6xl mx-auto px-4 py-12">
           <div className="text-center mb-8">
-            <p className="text-xs font-bold text-[#0d9488] uppercase tracking-widest mb-2">CATEGORII</p>
-            <h2 className="text-2xl font-black text-[#f1f5f9]">Categorii smart home populare</h2>
+            <p className="text-xs font-bold text-[#ddf93c] uppercase tracking-widest mb-2">CATEGORII</p>
+            <h2 className="text-2xl font-black text-[#ffffff]">Categorii smart home populare</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {CATEGORII_SMART.map((a, i) => (
-              <div key={a.titlu} className="group bg-[#111827] border border-[#1e293b] hover:border-[#14b8a6]/40 rounded-xl p-5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#14b8a6]/10">
+              <div key={a.titlu} className="group bg-[#14181c] border border-[#1f2329] hover:border-[#ddf93c]/40 rounded-xl p-5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#ddf93c]/10">
                 <div className="flex items-center gap-3 mb-3">
                   <div className={`w-10 h-10 rounded-xl flex items-center justify-center text-xl ${CULORI_BADGE[i % CULORI_BADGE.length]}`}>{a.emoji}</div>
-                  <h3 className="font-bold text-[#f1f5f9] text-sm">{a.titlu}</h3>
+                  <h3 className="font-bold text-[#ffffff] text-sm">{a.titlu}</h3>
                 </div>
-                <p className="text-xs text-[#cbd5e1] leading-relaxed">{a.desc}</p>
+                <p className="text-xs text-[#c9ced5] leading-relaxed">{a.desc}</p>
               </div>
             ))}
           </div>
@@ -111,8 +111,8 @@ export default function SmartHomePage() {
         <section className="max-w-6xl mx-auto px-4 pb-12">
           <div className="flex items-center justify-between mb-6">
             <div>
-              <p className="text-xs font-bold text-[#0d9488] uppercase tracking-widest mb-1">MAGAZINE PARTENERE</p>
-              <h2 className="text-xl font-black text-[#f1f5f9]">Magazine smart home cu reduceri active</h2>
+              <p className="text-xs font-bold text-[#ddf93c] uppercase tracking-widest mb-1">MAGAZINE PARTENERE</p>
+              <h2 className="text-xl font-black text-[#ffffff]">Magazine smart home cu reduceri active</h2>
             </div>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
@@ -133,18 +133,18 @@ export default function SmartHomePage() {
         />
 
         {/* Ghid */}
-        <section className="bg-[#111827] border-t border-[#1e293b] py-12 px-4">
+        <section className="bg-[#14181c] border-t border-[#1f2329] py-12 px-4">
           <div className="max-w-3xl mx-auto">
-            <p className="text-xs font-bold text-[#0d9488] uppercase tracking-widest mb-3">GHID INCEPUT</p>
-            <h2 className="text-2xl font-black text-[#f1f5f9] mb-7">Cum incepi cu Smart Home in {an}</h2>
+            <p className="text-xs font-bold text-[#ddf93c] uppercase tracking-widest mb-3">GHID INCEPUT</p>
+            <h2 className="text-2xl font-black text-[#ffffff] mb-7">Cum incepi cu Smart Home in {an}</h2>
             <div className="space-y-5">
-              <div className="bg-[#1e293b] border border-[#334155] rounded-xl p-5">
-                <h3 className="font-bold text-[#f1f5f9] mb-2 text-base">Ecosistem: Alexa, Google Home sau Apple HomeKit?</h3>
-                <p className="text-sm text-[#cbd5e1] leading-relaxed">Alexa (Amazon Echo) — cel mai mare ecosistem, compatibil cu 99% din dispozitivele smart. Google Home — integrat cu Android si serviciile Google. Apple HomeKit — securitate maxima, necesar iPhone. Recomandam Alexa sau Google pentru prima instalare — produsele sunt mai ieftine si mai disponibile in Romania.</p>
+              <div className="bg-[#1f2329] border border-[#2a2f36] rounded-xl p-5">
+                <h3 className="font-bold text-[#ffffff] mb-2 text-base">Ecosistem: Alexa, Google Home sau Apple HomeKit?</h3>
+                <p className="text-sm text-[#c9ced5] leading-relaxed">Alexa (Amazon Echo) — cel mai mare ecosistem, compatibil cu 99% din dispozitivele smart. Google Home — integrat cu Android si serviciile Google. Apple HomeKit — securitate maxima, necesar iPhone. Recomandam Alexa sau Google pentru prima instalare — produsele sunt mai ieftine si mai disponibile in Romania.</p>
               </div>
-              <div className="bg-[#1e293b] border border-[#334155] rounded-xl p-5">
-                <h3 className="font-bold text-[#f1f5f9] mb-3 text-base">De unde sa incepi</h3>
-                <ul className="space-y-2 text-sm text-[#cbd5e1]">
+              <div className="bg-[#1f2329] border border-[#2a2f36] rounded-xl p-5">
+                <h3 className="font-bold text-[#ffffff] mb-3 text-base">De unde sa incepi</h3>
+                <ul className="space-y-2 text-sm text-[#c9ced5]">
                   {[
                     ["Becuri inteligente","cel mai simplu start, Tuya/Philips Hue, 30-60 lei/bec"],
                     ["Priza smart","monitorizare consum, automatizare orice aparat"],
@@ -152,15 +152,15 @@ export default function SmartHomePage() {
                     ["Termostat","cel mai mare ROI: economii 20-30% la factura gaz/curent"],
                   ].map(([bold, text]) => (
                     <li key={bold} className="flex gap-2">
-                      <span className="text-[#0d9488] mt-0.5 shrink-0">→</span>
-                      <span><strong className="text-[#f1f5f9]">{bold}</strong> — {text}</span>
+                      <span className="text-[#ddf93c] mt-0.5 shrink-0">→</span>
+                      <span><strong className="text-[#ffffff]">{bold}</strong> — {text}</span>
                     </li>
                   ))}
                 </ul>
               </div>
-              <div className="bg-[#1e293b] border border-[#334155] rounded-xl p-5">
-                <h3 className="font-bold text-[#f1f5f9] mb-2 text-base">Protocol: Zigbee vs WiFi vs Z-Wave</h3>
-                <p className="text-sm text-[#cbd5e1] leading-relaxed">WiFi e cel mai simplu (conectare directa, fara hub), dar poate incarca reteaua cu multe dispozitive. Zigbee (Philips Hue, IKEA) consuma putin curent si este mai stabil, dar necesita un hub/bridge. Pentru inceput, WiFi e alegerea pragmatica.</p>
+              <div className="bg-[#1f2329] border border-[#2a2f36] rounded-xl p-5">
+                <h3 className="font-bold text-[#ffffff] mb-2 text-base">Protocol: Zigbee vs WiFi vs Z-Wave</h3>
+                <p className="text-sm text-[#c9ced5] leading-relaxed">WiFi e cel mai simplu (conectare directa, fara hub), dar poate incarca reteaua cu multe dispozitive. Zigbee (Philips Hue, IKEA) consuma putin curent si este mai stabil, dar necesita un hub/bridge. Pentru inceput, WiFi e alegerea pragmatica.</p>
               </div>
             </div>
           </div>
@@ -168,7 +168,7 @@ export default function SmartHomePage() {
 
         {/* Related */}
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <p className="text-xs font-bold text-[#94a3b8] uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
+          <p className="text-xs font-bold text-[#9399a0] uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/electronice", label: "📱 Electronice" },
@@ -178,18 +178,18 @@ export default function SmartHomePage() {
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-[#1e293b] hover:bg-[#334155] border border-[#334155] hover:border-[#14b8a6]/40 text-[#cbd5e1] hover:text-[#f1f5f9] text-sm font-semibold px-4 py-2 rounded-xl transition-all duration-200">
+                className="bg-[#1f2329] hover:bg-[#2a2f36] border border-[#2a2f36] hover:border-[#ddf93c]/40 text-[#c9ced5] hover:text-[#ffffff] text-sm font-semibold px-4 py-2 rounded-xl transition-all duration-200">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-[#1e293b] py-6 text-center text-xs text-[#94a3b8]">
+        <footer className="border-t border-[#1f2329] py-6 text-center text-xs text-[#9399a0]">
           &copy; {an} AmCupon.ro &middot;{" "}
-          <Link href="/electronice" className="hover:text-[#0d9488] transition-colors">Electronice</Link>{" · "}
-          <Link href="/casa" className="hover:text-[#0d9488] transition-colors">Casa & Gradina</Link>{" · "}
-          <Link href="/categorii" className="hover:text-[#0d9488] transition-colors">Categorii</Link>
+          <Link href="/electronice" className="hover:text-[#ddf93c] transition-colors">Electronice</Link>{" · "}
+          <Link href="/casa" className="hover:text-[#ddf93c] transition-colors">Casa & Gradina</Link>{" · "}
+          <Link href="/categorii" className="hover:text-[#ddf93c] transition-colors">Categorii</Link>
         </footer>
       </div>
     </>

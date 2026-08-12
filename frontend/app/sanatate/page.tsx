@@ -66,45 +66,45 @@ export default function SanatatePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-[#0a0f1a]">
+      <div className="min-h-screen bg-[#06080b]">
 
         {/* Header */}
 
         {/* Breadcrumb */}
-        <nav className="bg-[#0a0f1a] border-b border-[#1e293b]">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#94a3b8]">
-            <Link href="/" className="hover:text-[#0d9488]">Acasa</Link>
+        <nav className="bg-[#06080b] border-b border-[#1f2329]">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#9399a0]">
+            <Link href="/" className="hover:text-[#ddf93c]">Acasa</Link>
             <span className="mx-1">/</span>
-            <span className="text-[#cbd5e1] font-medium">Sanatate & Naturiste</span>
+            <span className="text-[#c9ced5] font-medium">Sanatate & Naturiste</span>
           </div>
         </nav>
 
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#0f766e] via-[#14b8a6] to-[#0f766e] text-[#f1f5f9] py-12 px-4">
+        <section className="bg-gradient-to-br from-[#c3dd2c] via-[#ddf93c] to-[#c3dd2c] text-[#0c1000] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">🌿</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Sanatate & Naturiste cu Reducere {an}</h1>
-            <p className="text-[#ccfbf1] text-lg mb-6 max-w-xl mx-auto">
+            <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
               Vitamine, suplimente si produse naturiste la preturi mici. Verificate zilnic la Pronaturiste, GoldNutrition, Vitamix si alte magazine.
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Vitamine","Suplimente Sport","Naturiste","Bio","Omega-3","Probiotice","Collagen"].map(c => (
-                <span key={c} className="bg-[#1e293b] text-[#f1f5f9] text-sm font-semibold px-4 py-1.5 rounded-full border border-[#334155]">{c}</span>
+                <span key={c} className="bg-[#1f2329] text-[#ffffff] text-sm font-semibold px-4 py-1.5 rounded-full border border-[#2a2f36]">{c}</span>
               ))}
             </div>
           </div>
         </section>
 
         {/* Stats bar */}
-        <div className="bg-[#111827] border-[#1e293b] py-3 px-4">
+        <div className="bg-[#14181c] border-[#1f2329] py-3 px-4">
           <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-6 text-sm">
-            <span className="text-[#0f766e] font-semibold">
-              <span className="font-black text-[#0d9488]">{magazine.length}</span> magazine sanatate
+            <span className="text-[#c3dd2c] font-semibold">
+              <span className="font-black text-[#ddf93c]">{magazine.length}</span> magazine sanatate
             </span>
-            <span className="text-[#0f766e] font-semibold">
-              <span className="font-black text-[#0d9488]">{cuPromo.length}</span> cu promotii active
+            <span className="text-[#c3dd2c] font-semibold">
+              <span className="font-black text-[#ddf93c]">{cuPromo.length}</span> cu promotii active
             </span>
-            <span className="text-[#0f766e] font-semibold">
+            <span className="text-[#c3dd2c] font-semibold">
               &#10003; Actualizat zilnic
             </span>
           </div>
@@ -112,13 +112,13 @@ export default function SanatatePage() {
 
         {/* Avantaje */}
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[#f1f5f9] mb-6 text-center">Ce gasesti la magazinele de sanatate online</h2>
+          <h2 className="text-xl font-black text-[#ffffff] mb-6 text-center">Ce gasesti la magazinele de sanatate online</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {AVANTAJE.map(a => (
-              <div key={a.titlu} className="bg-[#111827] border border-[#1e293b] rounded-xl p-5">
+              <div key={a.titlu} className="bg-[#14181c] border border-[#1f2329] rounded-xl p-5">
                 <div className="text-3xl mb-2">{a.icon}</div>
-                <h3 className="font-bold text-[#f1f5f9] text-sm mb-1">{a.titlu}</h3>
-                <p className="text-xs text-[#cbd5e1]">{a.desc}</p>
+                <h3 className="font-bold text-[#ffffff] text-sm mb-1">{a.titlu}</h3>
+                <p className="text-xs text-[#c9ced5]">{a.desc}</p>
               </div>
             ))}
           </div>
@@ -127,7 +127,7 @@ export default function SanatatePage() {
         {/* Magazine */}
         <section className="max-w-6xl mx-auto px-4 pb-10">
           <div className="flex items-center gap-3 mb-5">
-            <h2 className="text-xl font-black text-[#f1f5f9]">Magazine sanatate cu reduceri active</h2>
+            <h2 className="text-xl font-black text-[#ffffff]">Magazine sanatate cu reduceri active</h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {magazine.map((m) => (
@@ -148,16 +148,16 @@ export default function SanatatePage() {
         />
 
         {/* Editorial */}
-        <section className="bg-[#111827] border-t border-[#1e293b] py-10 px-4">
+        <section className="bg-[#14181c] border-t border-[#1f2329] py-10 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-[#f1f5f9] mb-5">Ghid: Suplimente si naturiste — ce sa alegi</h2>
-            <div className="space-y-4 text-sm text-[#cbd5e1] leading-relaxed">
+            <h2 className="text-xl font-black text-[#ffffff] mb-5">Ghid: Suplimente si naturiste — ce sa alegi</h2>
+            <div className="space-y-4 text-sm text-[#c9ced5] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[#f1f5f9] mb-1">Pronaturiste vs Vitamix vs GoldNutrition</h3>
+                <h3 className="font-bold text-[#ffffff] mb-1">Pronaturiste vs Vitamix vs GoldNutrition</h3>
                 <p>Pronaturiste are cel mai mare catalog de produse naturiste romanesti (plante, tincturi, ceaiuri). Vitamix se specializeaza in suplimente importate la preturi competitive. GoldNutrition este lider in suplimente pentru sportivi — proteine, aminoacizi, creatina.</p>
               </div>
               <div>
-                <h3 className="font-bold text-[#f1f5f9] mb-1">Vitamine esentiale in Romania</h3>
+                <h3 className="font-bold text-[#ffffff] mb-1">Vitamine esentiale in Romania</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
                   <li><strong>Vitamina D3</strong> — esentiala iarna cand soarele lipseste, deficienta larg raspandita</li>
                   <li><strong>Magneziu</strong> — pentru somn, stress si muschi; lipseste din dieta moderna</li>
@@ -166,7 +166,7 @@ export default function SanatatePage() {
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-[#f1f5f9] mb-1">Cum economisesti la suplimente</h3>
+                <h3 className="font-bold text-[#ffffff] mb-1">Cum economisesti la suplimente</h3>
                 <p>Cumpara in cantitati mai mari (3-6 luni) cand gasesti promotii — suplimentele au termen lung de valabilitate. Newsletter-urile magazinelor anunta frecvent reduceri de 20-30%. Pachetele combo sunt intotdeauna mai ieftine decat produsele individuale.</p>
               </div>
             </div>
@@ -175,7 +175,7 @@ export default function SanatatePage() {
 
         {/* Internal links */}
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[#cbd5e1] mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-[#c9ced5] mb-4">Exploreaza si alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/farmacie",   label: "💊 Farmacie Online" },
@@ -186,18 +186,18 @@ export default function SanatatePage() {
               { href: "/oferte-azi", label: "🔥 Toate Ofertele de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-[#111827] hover:bg-[#1e293b] hover:text-[#0f766e] text-[#cbd5e1] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#1e293b] hover:border-[#cbd5e1]">
+                className="bg-[#14181c] hover:bg-[#1f2329] hover:text-[#c3dd2c] text-[#c9ced5] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#1f2329] hover:border-[#c9ced5]">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-[#1e293b] py-6 text-center text-xs text-[#94a3b8] mt-4">
+        <footer className="border-t border-[#1f2329] py-6 text-center text-xs text-[#9399a0] mt-4">
           &copy; {an} AmCupon.ro &middot;{" "}
-          <Link href="/farmacie" className="hover:text-[#0d9488]">Farmacie</Link>{" · "}
-          <Link href="/frumusete" className="hover:text-[#0d9488]">Frumusete</Link>{" · "}
-          <Link href="/categorii" className="hover:text-[#0d9488]">Categorii</Link>
+          <Link href="/farmacie" className="hover:text-[#ddf93c]">Farmacie</Link>{" · "}
+          <Link href="/frumusete" className="hover:text-[#ddf93c]">Frumusete</Link>{" · "}
+          <Link href="/categorii" className="hover:text-[#ddf93c]">Categorii</Link>
         </footer>
       </div>
     </>

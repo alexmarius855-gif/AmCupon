@@ -53,26 +53,26 @@ export default function FloriPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-[#0a0f1a]">
-        <nav className="bg-[#0a0f1a] border-b border-[#1e293b]">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#94a3b8]">
-            <Link href="/" className="hover:text-[#0d9488]">Acasă</Link>
+      <div className="min-h-screen bg-[#06080b]">
+        <nav className="bg-[#06080b] border-b border-[#1f2329]">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#9399a0]">
+            <Link href="/" className="hover:text-[#ddf93c]">Acasă</Link>
             <span className="mx-1">/</span>
-            <span className="text-[#cbd5e1] font-medium">Flori & Buchete</span>
+            <span className="text-[#c9ced5] font-medium">Flori & Buchete</span>
           </div>
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-[#14b8a6] via-[#14b8a6] to-[#14b8a6] text-white py-12 px-4">
+        <section className="bg-gradient-to-br from-[#ddf93c] via-[#ddf93c] to-[#ddf93c] text-[#0c1000] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">💐</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Flori & Buchete cu Reducere {an}</h1>
-            <p className="text-[#0f766e] text-lg mb-6 max-w-xl mx-auto">
+            <p className="text-[#c3dd2c] text-lg mb-6 max-w-xl mx-auto">
               Livrare rapidă, aranjamente proaspete și reduceri verificate pentru orice ocazie
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Trandafiri","Buchete mixte","Cutii cu flori","Aranjamente nuntă","Livrare azi","Coroane"].map(c => (
-                <span key={c} className="bg-[#1e293b] text-[#f1f5f9] text-sm font-semibold px-4 py-1.5 rounded-full border border-[#334155]">{c}</span>
+                <span key={c} className="bg-[#1f2329] text-[#ffffff] text-sm font-semibold px-4 py-1.5 rounded-full border border-[#2a2f36]">{c}</span>
               ))}
             </div>
           </div>
@@ -80,14 +80,14 @@ export default function FloriPage() {
 
         {/* OCAZII */}
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[#f1f5f9] mb-6 text-center">Flori pentru orice ocazie</h2>
+          <h2 className="text-xl font-black text-[#ffffff] mb-6 text-center">Flori pentru orice ocazie</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {OCAZII.map(o => (
               <div key={o.label}
-                className="bg-[#111827] border border-[#1e293b] rounded-xl p-5 hover:shadow-md transition-all">
+                className="bg-[#14181c] border border-[#1f2329] rounded-xl p-5 hover:shadow-md transition-all">
                 <div className="text-3xl mb-2">{o.emoji}</div>
-                <h3 className="font-bold text-[#f1f5f9] text-sm mb-1">{o.label}</h3>
-                <p className="text-xs text-[#cbd5e1]">{o.desc}</p>
+                <h3 className="font-bold text-[#ffffff] text-sm mb-1">{o.label}</h3>
+                <p className="text-xs text-[#c9ced5]">{o.desc}</p>
               </div>
             ))}
           </div>
@@ -96,13 +96,13 @@ export default function FloriPage() {
         {/* MAGAZINE */}
         <section className="max-w-6xl mx-auto px-4 pb-10">
           <div className="flex items-center gap-3 mb-5">
-            <h2 className="text-xl font-black text-[#f1f5f9]">Florării cu reduceri active</h2>
+            <h2 className="text-xl font-black text-[#ffffff]">Florării cu reduceri active</h2>
           </div>
           {magazine.length === 0 ? (
-            <div className="text-center py-10 bg-[#111827] rounded-xl">
+            <div className="text-center py-10 bg-[#14181c] rounded-xl">
               <p className="text-2xl mb-3">💐</p>
-              <p className="text-[#cbd5e1] font-medium mb-2">Explorează ofertele noastre de cadouri</p>
-              <Link href="/idei-cadouri" className="inline-block bg-[#0d9488] text-white font-bold px-6 py-3 rounded-xl hover:bg-[#14b8a6] transition-colors">
+              <p className="text-[#c9ced5] font-medium mb-2">Explorează ofertele noastre de cadouri</p>
+              <Link href="/idei-cadouri" className="inline-block bg-[#ddf93c] text-[#0c1000] font-bold px-6 py-3 rounded-xl hover:bg-[#ddf93c] transition-colors">
                 Vezi idei de cadouri →
               </Link>
             </div>
@@ -126,16 +126,16 @@ export default function FloriPage() {
         />
 
         {/* SEO */}
-        <section className="bg-[#111827] border-t border-[#1e293b] py-10 px-4">
+        <section className="bg-[#14181c] border-t border-[#1f2329] py-10 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-[#f1f5f9] mb-5">Cum alegi florăria potrivită</h2>
-            <div className="space-y-4 text-sm text-[#cbd5e1] leading-relaxed">
+            <h2 className="text-xl font-black text-[#ffffff] mb-5">Cum alegi florăria potrivită</h2>
+            <div className="space-y-4 text-sm text-[#c9ced5] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[#f1f5f9] mb-1">Livrare rapidă vs. programată</h3>
+                <h3 className="font-bold text-[#ffffff] mb-1">Livrare rapidă vs. programată</h3>
                 <p>Pentru ocazii de ultim moment, alege florării cu livrare în 2-4 ore în oraș mare. Pentru evenimente planificate (nuntă, aniversare), comandă cu 2-3 zile înainte pentru cele mai proaspete aranjamente și prețuri mai mici.</p>
               </div>
               <div>
-                <h3 className="font-bold text-[#f1f5f9] mb-1">Sfaturi pentru economii la flori {an}</h3>
+                <h3 className="font-bold text-[#ffffff] mb-1">Sfaturi pentru economii la flori {an}</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
                   <li><strong>Abonamente flori</strong> — unele florării oferă reduceri la livrări recurente lunare</li>
                   <li><strong>Sezonalitate</strong> — florile de sezon sunt cu 20-30% mai ieftine decât cele de import</li>
@@ -148,7 +148,7 @@ export default function FloriPage() {
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[#cbd5e1] mb-4">Explorează si alte categorii</h2>
+          <h2 className="text-base font-black text-[#c9ced5] mb-4">Explorează si alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/idei-cadouri", label: "🎁 Idei Cadouri" },
@@ -159,18 +159,18 @@ export default function FloriPage() {
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-[#111827] hover:bg-[#1e293b] hover:text-[#0f766e] text-[#cbd5e1] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#1e293b] hover:border-[#14b8a6]">
+                className="bg-[#14181c] hover:bg-[#1f2329] hover:text-[#c3dd2c] text-[#c9ced5] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#1f2329] hover:border-[#ddf93c]">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-[#1e293b] py-6 text-center text-xs text-[#94a3b8] mt-4">
+        <footer className="border-t border-[#1f2329] py-6 text-center text-xs text-[#9399a0] mt-4">
           © {an} AmCupon.ro ·{" "}
-          <Link href="/blog" className="hover:text-[#0d9488]">Blog</Link>{" · "}
-          <Link href="/categorii" className="hover:text-[#0d9488]">Categorii</Link>{" · "}
-          <Link href="/" className="hover:text-[#0d9488]">Acasă</Link>
+          <Link href="/blog" className="hover:text-[#ddf93c]">Blog</Link>{" · "}
+          <Link href="/categorii" className="hover:text-[#ddf93c]">Categorii</Link>{" · "}
+          <Link href="/" className="hover:text-[#ddf93c]">Acasă</Link>
         </footer>
       </div>
     </>

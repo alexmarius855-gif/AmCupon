@@ -34,7 +34,7 @@ function DealScoreBadge({ score }: { score: number }) {
     <motion.div
       initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }}
       title="Scor calculat de AmCupon din reducere, cod, prospețime și exclusivitate — nu e un rating extern"
-      className="flex items-center gap-1.5 bg-[#1e293b] border border-[#14b8a6]/40 text-[#5eead4] text-xs font-bold px-3 py-1.5 rounded-full"
+      className="flex items-center gap-1.5 bg-[#1f2329] border border-[#ddf93c]/40 text-[#ecff7a] text-xs font-bold px-3 py-1.5 rounded-full"
     >
       <Flame className="w-3.5 h-3.5" /> Deal Score {displayed}/100
     </motion.div>
@@ -162,33 +162,33 @@ function ProdusCard({ produs: p }: { produs: Produs }) {
   const hasDiscount = p.discount_pct > 0 && p.old_price;
   return (
     <a href={p.url} target="_blank" rel="sponsored noopener noreferrer"
-      className="group bg-[#111827] border border-[#1e293b] hover:border-[#14b8a6] rounded-xl overflow-hidden transition-all hover:shadow-xl hover:shadow-black/40 hover:-translate-y-0.5 duration-200 flex flex-col">
-      <div className="relative bg-[#1e293b] overflow-hidden" style={{aspectRatio:"1"}}>
+      className="group bg-[#14181c] border border-[#1f2329] hover:border-[#ddf93c] rounded-xl overflow-hidden transition-all hover:shadow-xl hover:shadow-black/40 hover:-translate-y-0.5 duration-200 flex flex-col">
+      <div className="relative bg-[#1f2329] overflow-hidden" style={{aspectRatio:"1"}}>
         {p.image && imgOk ? (
           <Image src={p.image} alt={p.title} fill sizes="(max-width: 640px) 50vw, 176px"
             className="object-contain p-2 group-hover:scale-105 transition-transform duration-300"
             onError={() => setImgOk(false)} unoptimized />
         ) : (
-          <div className="w-full h-full flex items-center justify-center"><ShoppingBag className="w-10 h-10 text-[#475569]" /></div>
+          <div className="w-full h-full flex items-center justify-center"><ShoppingBag className="w-10 h-10 text-[#3a4048]" /></div>
         )}
         {hasDiscount && (
-          <div className="absolute top-2 left-2 bg-gradient-to-br from-[#34d399] to-[#14b8a6] text-[#ffffff] text-xs font-black px-2 py-0.5 rounded-lg shadow-sm">
+          <div className="absolute top-2 left-2 bg-gradient-to-br from-[#34d399] to-[#ddf93c] text-[#0c1000] text-xs font-black px-2 py-0.5 rounded-lg shadow-sm">
             -{p.discount_pct}%
           </div>
         )}
       </div>
       <div className="p-3 flex flex-col flex-1">
-        <p className="text-xs text-[#94a3b8] mb-1 line-clamp-1">{p.brand || p.category}</p>
-        <p className="text-sm font-semibold text-[#cbd5e1] line-clamp-2 flex-1 group-hover:text-[#0d9488] transition-colors leading-snug">{p.title}</p>
+        <p className="text-xs text-[#9399a0] mb-1 line-clamp-1">{p.brand || p.category}</p>
+        <p className="text-sm font-semibold text-[#c9ced5] line-clamp-2 flex-1 group-hover:text-[#ddf93c] transition-colors leading-snug">{p.title}</p>
         <div className="flex items-center gap-2 mt-2">
-          <span className="font-black text-[#0d9488] text-base">
+          <span className="font-black text-[#ddf93c] text-base">
             {p.price > 0 ? `${p.price.toFixed(2)} lei` : "Vezi pretul"}
           </span>
           {hasDiscount && p.old_price && (
-            <span className="text-xs text-[#94a3b8] line-through">{p.old_price.toFixed(2)} lei</span>
+            <span className="text-xs text-[#9399a0] line-through">{p.old_price.toFixed(2)} lei</span>
           )}
         </div>
-        <div className="mt-2 text-xs font-bold text-[#0d9488] group-hover:text-[#0f766e] flex items-center gap-1">
+        <div className="mt-2 text-xs font-bold text-[#ddf93c] group-hover:text-[#c3dd2c] flex items-center gap-1">
           Cumpara acum
           <svg className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
@@ -257,7 +257,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
   const showDealScore = dealScore >= DEAL_SCORE_VISIBLE_THRESHOLD;
 
   // Vizualizari deterministe
-  const culoare = "bg-gradient-to-br from-[#14b8a6] to-[#0f766e]";
+  const culoare = "bg-gradient-to-br from-[#ddf93c] to-[#c3dd2c]";
 
   function copiazaCod(idx: number, cod: string, link?: string) {
     setRevealed(prev => new Set(prev).add(idx));
@@ -291,21 +291,21 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
   ];
 
   return (
-    <div className="min-h-screen bg-[#0a0f1a]">
+    <div className="min-h-screen bg-[#06080b]">
 
       {/* ── HEADER ─────────────────────────────────────────────────────────── */}
-      <header className="bg-[#111827] border-b border-[#1e293b] sticky top-0 z-50">
+      <header className="bg-[#14181c] border-b border-[#1f2329] sticky top-0 z-50">
         <div className="max-w-5xl mx-auto px-4 py-3 flex items-center gap-3">
           <Link href="/" className="flex items-center gap-1.5 shrink-0">
-            <div className="bg-[#0d9488] text-white font-black text-base px-2 py-1 rounded-lg">Am</div>
-            <span className="font-black text-[#f1f5f9] text-xl">Cupon</span>
-            <span className="text-[#0d9488] font-black text-xl">.ro</span>
+            <div className="bg-[#ddf93c] text-[#0c1000] font-black text-base px-2 py-1 rounded-lg">Am</div>
+            <span className="font-black text-[#ffffff] text-xl">Cupon</span>
+            <span className="text-[#ddf93c] font-black text-xl">.ro</span>
           </Link>
-          <span className="text-[#94a3b8]">/</span>
-          <Link href="/toate-magazinele" className="text-sm text-[#cbd5e1] hover:text-[#f1f5f9] transition-colors">Magazine</Link>
-          <span className="text-[#94a3b8]">/</span>
-          <span className="text-sm font-semibold text-[#cbd5e1] truncate max-w-[160px]">{nume}</span>
-          <Link href="/toate-magazinele" className="ml-auto text-[#cbd5e1] hover:text-[#f1f5f9] transition-colors" title="Cauta magazin">
+          <span className="text-[#9399a0]">/</span>
+          <Link href="/toate-magazinele" className="text-sm text-[#c9ced5] hover:text-[#ffffff] transition-colors">Magazine</Link>
+          <span className="text-[#9399a0]">/</span>
+          <span className="text-sm font-semibold text-[#c9ced5] truncate max-w-[160px]">{nume}</span>
+          <Link href="/toate-magazinele" className="ml-auto text-[#c9ced5] hover:text-[#ffffff] transition-colors" title="Cauta magazin">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
             </svg>
@@ -314,12 +314,12 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
       </header>
 
       {/* ── HERO ───────────────────────────────────────────────────────────── */}
-      <div className="bg-gradient-to-br from-[#111827] via-[#111827] to-[#1e293b] border-b border-[#334155] pt-8 pb-0 px-4">
+      <div className="bg-gradient-to-br from-[#14181c] via-[#14181c] to-[#1f2329] border-b border-[#2a2f36] pt-8 pb-0 px-4">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 pb-6">
 
             {/* Logo */}
-            <div className="relative w-20 h-20 rounded-xl overflow-hidden flex items-center justify-center bg-[#ffffff] border border-[#334155] p-1.5 shrink-0 shadow-xl shadow-black/40">
+            <div className="relative w-20 h-20 rounded-xl overflow-hidden flex items-center justify-center bg-[#ffffff] border border-[#2a2f36] p-1.5 shrink-0 shadow-xl shadow-black/40">
               {m.logo_url && imgOk ? (
                 <Image src={m.logo_url} alt={`Logo ${nume}`} fill sizes="80px" className="object-contain p-1.5"
                   onError={() => setImgOk(false)} unoptimized />
@@ -333,15 +333,15 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
             {/* Info */}
             <div className="flex-1 text-center sm:text-left">
               <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 mb-1">
-                <h1 className="text-2xl md:text-3xl font-black text-[#f1f5f9]">Cod Reducere {nume} {an}</h1>
+                <h1 className="text-2xl md:text-3xl font-black text-[#ffffff]">Cod Reducere {nume} {an}</h1>
                 {m.rank && m.rank <= 20 && (
-                  <span className="text-xs font-bold bg-[#14b8a6]/15 text-[#0f766e] border border-[#14b8a6]/30 px-2 py-0.5 rounded-full">Top #{m.rank} Romania</span>
+                  <span className="text-xs font-bold bg-[#ddf93c]/15 text-[#c3dd2c] border border-[#ddf93c]/30 px-2 py-0.5 rounded-full">Top #{m.rank} Romania</span>
                 )}
                 {m.exclusiv && (
-                  <span className="text-xs font-bold bg-[#0d9488] text-[#ffffff] px-2 py-0.5 rounded-full">Exclusiv</span>
+                  <span className="text-xs font-bold bg-[#ddf93c] text-[#0c1000] px-2 py-0.5 rounded-full">Exclusiv</span>
                 )}
               </div>
-              <p className="text-[#cbd5e1] text-sm mb-3">{m.categorie}</p>
+              <p className="text-[#c9ced5] text-sm mb-3">{m.categorie}</p>
 
               {/* Stats pills */}
               <div className="flex flex-wrap justify-center sm:justify-start gap-2 mb-4">
@@ -352,15 +352,15 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                   </div>
                 )}
                 {m.trend > 0 && (
-                  <div className="flex items-center gap-1.5 bg-[#14b8a6]/10 border border-[#14b8a6]/20 text-[#0f766e] text-xs font-semibold px-3 py-1.5 rounded-full">
+                  <div className="flex items-center gap-1.5 bg-[#ddf93c]/10 border border-[#ddf93c]/20 text-[#c3dd2c] text-xs font-semibold px-3 py-1.5 rounded-full">
                     ↑ Trending +{m.trend}%
                   </div>
                 )}
                 {showDealScore && <DealScoreBadge score={dealScore} />}
                 {zileDeLaVerificare !== null && (
-                  <div className="flex items-center gap-1.5 bg-[#14b8a6]/10 border border-[#14b8a6]/20 text-[#0f766e] text-xs font-semibold px-3 py-1.5 rounded-full">
+                  <div className="flex items-center gap-1.5 bg-[#ddf93c]/10 border border-[#ddf93c]/20 text-[#c3dd2c] text-xs font-semibold px-3 py-1.5 rounded-full">
                     {zileDeLaVerificare <= 0 ? (
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#14b8a6] animate-pulse"/>
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#ddf93c] animate-pulse"/>
                     ) : null}
                     ✓ {zileDeLaVerificare <= 0
                       ? "Verificat azi"
@@ -371,7 +371,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
 
               <div className="flex items-center gap-3 flex-wrap">
                 <a href={m.url_afiliat || m.url} target="_blank" rel="sponsored noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-gradient-to-r from-[#14b8a6] to-[#0d9488] hover:from-[#0d9488] hover:to-[#14b8a6] text-[#ffffff] font-bold px-5 py-2.5 rounded-xl text-sm transition-colors shadow-lg shadow-[#0d9488]/25" onClick={() => trackClick("vizita_magazin", m.magazin)}>
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-[#ddf93c] to-[#ddf93c] hover:from-[#ddf93c] hover:to-[#ddf93c] text-[#0c1000] font-bold px-5 py-2.5 rounded-xl text-sm transition-colors shadow-lg shadow-[#ddf93c]/25" onClick={() => trackClick("vizita_magazin", m.magazin)}>
                   Viziteaza {nume}
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
@@ -397,19 +397,19 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
           )}
 
           {/* ── TAB NAVIGATION ─────────────────────────────────────────────── */}
-          <div className="flex gap-0 border-t border-[#1e293b] overflow-x-auto" style={{scrollbarWidth:"none"}}>
+          <div className="flex gap-0 border-t border-[#1f2329] overflow-x-auto" style={{scrollbarWidth:"none"}}>
             {tabs.map(t => (
               <button key={t.id} onClick={() => setTabActiv(t.id)}
                 className={`flex items-center gap-2 px-5 py-3.5 text-sm font-bold border-b-2 transition-all whitespace-nowrap ${
                   tabActiv === t.id
-                    ? "border-[#14b8a6] text-[#f1f5f9]"
-                    : "border-transparent text-[#cbd5e1] hover:text-[#cbd5e1] hover:border-[#475569]"
+                    ? "border-[#ddf93c] text-[#ffffff]"
+                    : "border-transparent text-[#c9ced5] hover:text-[#c9ced5] hover:border-[#3a4048]"
                 }`}>
                 <t.icon className="w-4 h-4" />
                 <span>{t.label}</span>
                 {t.count > 0 && (
                   <span className={`text-xs px-1.5 py-0.5 rounded-full font-black ${
-                    tabActiv === t.id ? "bg-[#0d9488] text-white" : "bg-[#334155] text-[#cbd5e1]"
+                    tabActiv === t.id ? "bg-[#ddf93c] text-[#0c1000]" : "bg-[#2a2f36] text-[#c9ced5]"
                   }`}>{t.count}</span>
                 )}
               </button>
@@ -419,24 +419,24 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
       </div>
 
       {/* ── TAB CONTENT ────────────────────────────────────────────────────── */}
-      <div className="max-w-5xl mx-auto px-4 py-8 text-[#f1f5f9]">
+      <div className="max-w-5xl mx-auto px-4 py-8 text-[#ffffff]">
 
         <AnimatePresence mode="wait">
         {/* ─── TAB: CODURI ──────────────────────────────────────────────────── */}
         {tabActiv === "coduri" && (
           <motion.div key="coduri" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} transition={{ duration: 0.15 }}>
             {/* ── Cum functioneaza (3 pasi) ─────────────────────────────────── */}
-            <div className="flex items-stretch gap-2 sm:gap-4 mb-7 bg-[#111827]/60 border border-[#1e293b] rounded-xl p-4">
+            <div className="flex items-stretch gap-2 sm:gap-4 mb-7 bg-[#14181c]/60 border border-[#1f2329] rounded-xl p-4">
               {[
                 { nr: "1", icon: ClipboardCopy, titlu: "Copiaza codul", desc: "Click pe cod — se copiaza automat" },
                 { nr: "2", icon: ShoppingCart, titlu: "Mergi la magazin", desc: `Te redirectam la ${nume}` },
                 { nr: "3", icon: CheckCircle2, titlu: "Aplica la checkout", desc: `Lipeste codul in camp "Voucher"` },
               ].map((pas) => (
                 <div key={pas.nr} className="flex-1 flex flex-col items-center text-center gap-1.5 px-2">
-                  <pas.icon className="w-5 h-5 text-[#0d9488]" />
-                  <span className="text-[10px] font-black text-[#0d9488] uppercase tracking-widest">Pas {pas.nr}</span>
-                  <span className="text-xs font-bold text-[#f1f5f9] leading-tight">{pas.titlu}</span>
-                  <span className="text-[11px] text-[#94a3b8] leading-snug hidden sm:block">{pas.desc}</span>
+                  <pas.icon className="w-5 h-5 text-[#ddf93c]" />
+                  <span className="text-[10px] font-black text-[#ddf93c] uppercase tracking-widest">Pas {pas.nr}</span>
+                  <span className="text-xs font-bold text-[#ffffff] leading-tight">{pas.titlu}</span>
+                  <span className="text-[11px] text-[#9399a0] leading-snug hidden sm:block">{pas.desc}</span>
                 </div>
               ))}
             </div>
@@ -444,8 +444,8 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
             {cuCod.length > 0 ? (
               <section>
                 <div className="flex items-center gap-3 mb-5">
-                  <h2 className="text-xl font-black text-[#f1f5f9]">Coduri Reducere {nume} {an}</h2>
-                  <span className="text-sm text-[#94a3b8]">{cuCod.length} coduri active</span>
+                  <h2 className="text-xl font-black text-[#ffffff]">Coduri Reducere {nume} {an}</h2>
+                  <span className="text-sm text-[#9399a0]">{cuCod.length} coduri active</span>
                 </div>
                 <div className="space-y-4">
                   {cuCod.map((promo, idx) => {
@@ -455,41 +455,41 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                     const isRevealed = revealed.has(idx);
                     const isCopiat   = copiat === idx;
                     return (
-                      <div key={idx} className="bg-[#111827] rounded-xl border border-[#1e293b] hover:shadow-lg hover:shadow-black/40 transition-all hover:border-[#334155] p-5">
+                      <div key={idx} className="bg-[#14181c] rounded-xl border border-[#1f2329] hover:shadow-lg hover:shadow-black/40 transition-all hover:border-[#2a2f36] p-5">
                         <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
                           <div className="flex-1">
                             <div className="flex flex-wrap items-center gap-2 mb-2">
                               {discount && (
-                                <span className="text-sm font-black text-[#0d9488] bg-[#111827]/50 px-2 py-0.5 rounded-lg">-{discount}</span>
+                                <span className="text-sm font-black text-[#ddf93c] bg-[#14181c]/50 px-2 py-0.5 rounded-lg">-{discount}</span>
                               )}
-                              <span className="text-xs font-bold text-[#0d9488] bg-[#14b8a6]/10 px-2 py-0.5 rounded-full uppercase tracking-wide">Cod Reducere</span>
+                              <span className="text-xs font-bold text-[#ddf93c] bg-[#ddf93c]/10 px-2 py-0.5 rounded-full uppercase tracking-wide">Cod Reducere</span>
                               {areTransportGratuit(promo) && (
-                                <span className="flex items-center gap-1 text-xs font-bold text-[#5eead4] bg-[#14b8a6]/10 border border-[#14b8a6]/30 px-2 py-0.5 rounded-full">
+                                <span className="flex items-center gap-1 text-xs font-bold text-[#ecff7a] bg-[#ddf93c]/10 border border-[#ddf93c]/30 px-2 py-0.5 rounded-full">
                                   <Truck className="w-3 h-3" /> Transport gratuit
                                 </span>
                               )}
                               {promo.zile_ramase <= 1 && promo.zile_ramase >= 0 && <CountdownTimer zileRamase={promo.zile_ramase}/>}
                               {promo.zile_ramase > 1 && promo.zile_ramase <= 3 && (
-                                <span className="text-xs font-bold text-[#0d9488] bg-[#111827]/50 px-2 py-0.5 rounded-full">Expira in {promo.zile_ramase} zile</span>
+                                <span className="text-xs font-bold text-[#ddf93c] bg-[#14181c]/50 px-2 py-0.5 rounded-full">Expira in {promo.zile_ramase} zile</span>
                               )}
                               {promo.zile_ramase > 3 && (
-                                <span className="text-xs text-[#94a3b8]">{promo.zile_ramase} zile ramase</span>
+                                <span className="text-xs text-[#9399a0]">{promo.zile_ramase} zile ramase</span>
                               )}
                             </div>
-                            <h3 className="font-bold text-[#f1f5f9] text-base mb-1">{promo.nume}</h3>
+                            <h3 className="font-bold text-[#ffffff] text-base mb-1">{promo.nume}</h3>
                             {promo.descriere && promo.descriere !== promo.nume && (
-                              <p className="text-sm text-[#cbd5e1]">{promo.descriere}</p>
+                              <p className="text-sm text-[#c9ced5]">{promo.descriere}</p>
                             )}
                           </div>
                           <div className="shrink-0 w-full sm:w-48">
                             {isRevealed ? (
                               <div className="space-y-2">
-                                <div className="border-2 border-dashed border-[#0d9488] rounded-xl py-2.5 px-3 text-center bg-[#14b8a6]/10">
-                                  <span className="font-mono font-black text-[#0f766e] tracking-widest text-sm">{promo.cod_cupon}</span>
+                                <div className="border-2 border-dashed border-[#ddf93c] rounded-xl py-2.5 px-3 text-center bg-[#ddf93c]/10">
+                                  <span className="font-mono font-black text-[#c3dd2c] tracking-widest text-sm">{promo.cod_cupon}</span>
                                   {isCopiat && <p className="text-xs text-green-600 mt-0.5">✓ Copiat!</p>}
                                 </div>
                                 <a href={link} target="_blank" rel="sponsored noopener noreferrer"
-                                  className="flex items-center justify-center w-full bg-gradient-to-r from-[#14b8a6] to-[#0d9488] hover:from-[#0d9488] hover:to-[#14b8a6] text-[#ffffff] font-bold py-2.5 rounded-xl text-sm transition-colors" onClick={() => trackClick("cod", m.magazin, promo.cod_cupon)}>
+                                  className="flex items-center justify-center w-full bg-gradient-to-r from-[#ddf93c] to-[#ddf93c] hover:from-[#ddf93c] hover:to-[#ddf93c] text-[#0c1000] font-bold py-2.5 rounded-xl text-sm transition-colors" onClick={() => trackClick("cod", m.magazin, promo.cod_cupon)}>
                                   Mergi la magazin →
                                 </a>
                                 <div className="flex justify-center">
@@ -504,11 +504,11 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                               </div>
                             ) : (
                               <button onClick={() => copiazaCod(idx, promo.cod_cupon, link)}
-                                className="w-full border-2 border-dashed border-[#334155] hover:border-[#0d9488] rounded-xl bg-[#1e293b] py-2.5 px-3 text-center transition-colors group">
-                                <span className="font-mono text-[#94a3b8] group-hover:text-[#0d9488] text-sm">
+                                className="w-full border-2 border-dashed border-[#2a2f36] hover:border-[#ddf93c] rounded-xl bg-[#1f2329] py-2.5 px-3 text-center transition-colors group">
+                                <span className="font-mono text-[#9399a0] group-hover:text-[#ddf93c] text-sm">
                                   {promo.cod_cupon.slice(0,4)}{"*".repeat(Math.max(0, Math.min(promo.cod_cupon.length - 4, 6)))}
                                 </span>
-                                <p className="text-xs text-[#94a3b8] mt-0.5 group-hover:text-[#0d9488]">Click → cod + mergi la magazin</p>
+                                <p className="text-xs text-[#9399a0] mt-0.5 group-hover:text-[#ddf93c]">Click → cod + mergi la magazin</p>
                               </button>
                             )}
                           </div>
@@ -519,19 +519,19 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                 </div>
               </section>
             ) : (
-              <div className="bg-[#111827] rounded-xl border border-[#1e293b] p-12 text-center">
-                <Ticket className="w-12 h-12 mb-4 mx-auto text-[#475569]" />
-                <h3 className="text-lg font-black text-[#f1f5f9] mb-2">Niciun cod cupon activ</h3>
-                <p className="text-[#94a3b8] text-sm mb-5">Momentan nu avem coduri. Verifica sectiunea Oferte sau viziteaza direct magazinul.</p>
+              <div className="bg-[#14181c] rounded-xl border border-[#1f2329] p-12 text-center">
+                <Ticket className="w-12 h-12 mb-4 mx-auto text-[#3a4048]" />
+                <h3 className="text-lg font-black text-[#ffffff] mb-2">Niciun cod cupon activ</h3>
+                <p className="text-[#9399a0] text-sm mb-5">Momentan nu avem coduri. Verifica sectiunea Oferte sau viziteaza direct magazinul.</p>
                 <div className="flex flex-wrap justify-center gap-3">
                   {faraCodd.length > 0 && (
                     <button onClick={() => setTabActiv("oferte")}
-                      className="bg-[#0d9488] text-white font-bold px-5 py-2.5 rounded-xl text-sm hover:bg-[#14b8a6] transition-colors">
+                      className="bg-[#ddf93c] text-[#0c1000] font-bold px-5 py-2.5 rounded-xl text-sm hover:bg-[#ddf93c] transition-colors">
                       Vezi {faraCodd.length} oferte active
                     </button>
                   )}
                   <a href={m.url_afiliat || m.url} target="_blank" rel="sponsored noopener noreferrer"
-                    className="bg-[#1e293b] border border-[#334155] text-[#cbd5e1] font-bold px-5 py-2.5 rounded-xl text-sm hover:border-[#14b8a6] hover:text-[#f1f5f9] transition-colors">
+                    className="bg-[#1f2329] border border-[#2a2f36] text-[#c9ced5] font-bold px-5 py-2.5 rounded-xl text-sm hover:border-[#ddf93c] hover:text-[#ffffff] transition-colors">
                     Viziteaza {nume}
                   </a>
                 </div>
@@ -540,21 +540,21 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
 
             {/* FAQ compact in tab coduri */}
             <section className="mt-10">
-              <h2 className="text-lg font-black text-[#f1f5f9] mb-4">Intrebari frecvente</h2>
+              <h2 className="text-lg font-black text-[#ffffff] mb-4">Intrebari frecvente</h2>
               <div className="space-y-2">
                 {[
                   { q: `Cum folosesc un cod de reducere ${nume}?`, a: `Copiaza codul de pe aceasta pagina, adauga produsele in cos pe ${m.url}, iar la checkout introdu codul in campul "Cod promotional" si apasa Aplica. Reducerea se scade automat.` },
                   { q: `Codurile ${nume} sunt verificate?`, a: `Da. Actualizate zilnic din platforma 2Performant. Fiecare cod afiseaza rata de succes si data de expirare.` },
                   { q: `Ce fac daca codul nu functioneaza?`, a: `Verifica daca nu a expirat si daca indeplinesti conditiile (cos minim, produse eligibile). Incearca un alt cod activ de pe pagina.` },
                 ].map((item, i) => (
-                  <details key={i} className="bg-[#111827] border border-[#1e293b] rounded-xl group">
-                    <summary className="px-5 py-4 font-semibold text-[#f1f5f9] text-sm cursor-pointer list-none flex items-center justify-between gap-4 hover:text-[#0d9488] transition-colors">
+                  <details key={i} className="bg-[#14181c] border border-[#1f2329] rounded-xl group">
+                    <summary className="px-5 py-4 font-semibold text-[#ffffff] text-sm cursor-pointer list-none flex items-center justify-between gap-4 hover:text-[#ddf93c] transition-colors">
                       {item.q}
                       <svg className="w-4 h-4 shrink-0 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7"/>
                       </svg>
                     </summary>
-                    <p className="px-5 pb-4 text-[#cbd5e1] text-sm leading-relaxed">{item.a}</p>
+                    <p className="px-5 pb-4 text-[#c9ced5] text-sm leading-relaxed">{item.a}</p>
                   </details>
                 ))}
               </div>
@@ -568,8 +568,8 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
             {faraCodd.length > 0 ? (
               <section>
                 <div className="flex items-center gap-3 mb-5">
-                  <h2 className="text-xl font-black text-[#f1f5f9]">Oferte {nume} {an}</h2>
-                  <span className="text-sm text-[#94a3b8]">{faraCodd.length} oferte active</span>
+                  <h2 className="text-xl font-black text-[#ffffff]">Oferte {nume} {an}</h2>
+                  <span className="text-sm text-[#9399a0]">{faraCodd.length} oferte active</span>
                 </div>
                 <div className="space-y-4">
                   {faraCodd.map((promo, idx) => {
@@ -577,35 +577,35 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                     const link     = (promo.zile_ramase >= 0 && promo.landing_page) ? promo.landing_page : (m.url_afiliat || m.url);
                     const discount = extractDiscount(promo.nume) || extractDiscount(promo.descriere || "");
                     return (
-                      <div key={idx} className="bg-[#111827] rounded-xl border border-[#1e293b] hover:shadow-lg hover:shadow-black/40 transition-all hover:border-[#334155] p-5">
+                      <div key={idx} className="bg-[#14181c] rounded-xl border border-[#1f2329] hover:shadow-lg hover:shadow-black/40 transition-all hover:border-[#2a2f36] p-5">
                         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                           <div className="flex-1">
                             <div className="flex flex-wrap items-center gap-2 mb-2">
                               {discount && (
-                                <span className="text-sm font-black text-[#0d9488] bg-[#111827]/50 px-2 py-0.5 rounded-lg">-{discount}</span>
+                                <span className="text-sm font-black text-[#ddf93c] bg-[#14181c]/50 px-2 py-0.5 rounded-lg">-{discount}</span>
                               )}
-                              <span className="text-xs font-bold text-[#0f766e] bg-[#14b8a6]/10 px-2 py-0.5 rounded-full uppercase tracking-wide">Oferta</span>
+                              <span className="text-xs font-bold text-[#c3dd2c] bg-[#ddf93c]/10 px-2 py-0.5 rounded-full uppercase tracking-wide">Oferta</span>
                               {areTransportGratuit(promo) && (
-                                <span className="flex items-center gap-1 text-xs font-bold text-[#5eead4] bg-[#14b8a6]/10 border border-[#14b8a6]/30 px-2 py-0.5 rounded-full">
+                                <span className="flex items-center gap-1 text-xs font-bold text-[#ecff7a] bg-[#ddf93c]/10 border border-[#ddf93c]/30 px-2 py-0.5 rounded-full">
                                   <Truck className="w-3 h-3" /> Transport gratuit
                                 </span>
                               )}
                               {promo.zile_ramase <= 1 && promo.zile_ramase >= 0 && <CountdownTimer zileRamase={promo.zile_ramase}/>}
                               {promo.zile_ramase > 1 && promo.zile_ramase <= 3 && (
-                                <span className="text-xs font-bold text-[#0d9488] bg-[#111827]/50 px-2 py-0.5 rounded-full">Expira in {promo.zile_ramase} zile</span>
+                                <span className="text-xs font-bold text-[#ddf93c] bg-[#14181c]/50 px-2 py-0.5 rounded-full">Expira in {promo.zile_ramase} zile</span>
                               )}
                               {promo.zile_ramase > 3 && (
-                                <span className="text-xs text-[#94a3b8]">{promo.zile_ramase} zile ramase</span>
+                                <span className="text-xs text-[#9399a0]">{promo.zile_ramase} zile ramase</span>
                               )}
                             </div>
-                            <h3 className="font-bold text-[#f1f5f9] text-base mb-1">{promo.nume}</h3>
+                            <h3 className="font-bold text-[#ffffff] text-base mb-1">{promo.nume}</h3>
                             {promo.descriere && promo.descriere !== promo.nume && (
-                              <p className="text-sm text-[#cbd5e1]">{promo.descriere}</p>
+                              <p className="text-sm text-[#c9ced5]">{promo.descriere}</p>
                             )}
                           </div>
                           <div className="flex items-center gap-2 shrink-0">
                             <a href={link} target="_blank" rel="sponsored noopener noreferrer"
-                              className="bg-gradient-to-r from-[#14b8a6] to-[#0d9488] hover:from-[#0d9488] hover:to-[#14b8a6] text-[#ffffff] font-bold px-5 py-2.5 rounded-xl text-sm transition-colors whitespace-nowrap">
+                              className="bg-gradient-to-r from-[#ddf93c] to-[#ddf93c] hover:from-[#ddf93c] hover:to-[#ddf93c] text-[#0c1000] font-bold px-5 py-2.5 rounded-xl text-sm transition-colors whitespace-nowrap">
                               Vezi oferta →
                             </a>
                             <ShareButton
@@ -622,13 +622,13 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                 </div>
               </section>
             ) : (
-              <div className="bg-[#111827] rounded-xl border border-[#1e293b] p-12 text-center">
-                <Tag className="w-12 h-12 mb-4 mx-auto text-[#475569]" />
-                <h3 className="text-lg font-black text-[#f1f5f9] mb-2">Nicio oferta activa</h3>
-                <p className="text-[#94a3b8] text-sm mb-5">Revino curand. Ofertele se actualizeaza zilnic.</p>
+              <div className="bg-[#14181c] rounded-xl border border-[#1f2329] p-12 text-center">
+                <Tag className="w-12 h-12 mb-4 mx-auto text-[#3a4048]" />
+                <h3 className="text-lg font-black text-[#ffffff] mb-2">Nicio oferta activa</h3>
+                <p className="text-[#9399a0] text-sm mb-5">Revino curand. Ofertele se actualizeaza zilnic.</p>
                 {cuCod.length > 0 && (
                   <button onClick={() => setTabActiv("coduri")}
-                    className="bg-[#0d9488] text-white font-bold px-5 py-2.5 rounded-xl text-sm hover:bg-[#14b8a6] transition-colors">
+                    className="bg-[#ddf93c] text-[#0c1000] font-bold px-5 py-2.5 rounded-xl text-sm hover:bg-[#ddf93c] transition-colors">
                     Vezi {cuCod.length} coduri disponibile
                   </button>
                 )}
@@ -644,22 +644,22 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
               <section>
                 <div className="flex items-center justify-between mb-5">
                   <div className="flex items-center gap-3">
-                    <h2 className="text-xl font-black text-[#f1f5f9]">Produse {nume} cu reducere</h2>
-                    <span className="text-sm text-[#94a3b8]">{produse.length} produse</span>
+                    <h2 className="text-xl font-black text-[#ffffff]">Produse {nume} cu reducere</h2>
+                    <span className="text-sm text-[#9399a0]">{produse.length} produse</span>
                   </div>
-                  <Link href="/produse" className="text-sm font-semibold text-[#0d9488] hover:text-[#0f766e]">Toate produsele →</Link>
+                  <Link href="/produse" className="text-sm font-semibold text-[#ddf93c] hover:text-[#c3dd2c]">Toate produsele →</Link>
                 </div>
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
                   {produse.map((p, i) => <ProdusCard key={i} produs={p}/>)}
                 </div>
               </section>
             ) : (
-              <div className="bg-[#111827] rounded-xl border border-[#1e293b] p-12 text-center">
-                <ShoppingBag className="w-12 h-12 mb-4 mx-auto text-[#475569]" />
-                <h3 className="text-lg font-black text-[#f1f5f9] mb-2">Feed produse indisponibil</h3>
-                <p className="text-[#94a3b8] text-sm mb-5">Produsele individuale nu sunt disponibile pentru acest magazin. Viziteaza direct site-ul.</p>
+              <div className="bg-[#14181c] rounded-xl border border-[#1f2329] p-12 text-center">
+                <ShoppingBag className="w-12 h-12 mb-4 mx-auto text-[#3a4048]" />
+                <h3 className="text-lg font-black text-[#ffffff] mb-2">Feed produse indisponibil</h3>
+                <p className="text-[#9399a0] text-sm mb-5">Produsele individuale nu sunt disponibile pentru acest magazin. Viziteaza direct site-ul.</p>
                 <a href={m.url_afiliat || m.url} target="_blank" rel="sponsored noopener noreferrer"
-                  className="bg-[#0d9488] text-white font-bold px-5 py-2.5 rounded-xl text-sm hover:bg-[#14b8a6] transition-colors">
+                  className="bg-[#ddf93c] text-[#0c1000] font-bold px-5 py-2.5 rounded-xl text-sm hover:bg-[#ddf93c] transition-colors">
                   Viziteaza {nume}
                 </a>
               </div>
@@ -677,26 +677,26 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
 
         {/* ── BOTTOM CTAs (toate tab-urile) ────────────────────────────────── */}
         <div className="mt-8 space-y-3">
-          <div className="bg-gradient-to-r from-[#e2e8f0] to-[#111827] border border-[#334155] rounded-xl p-5 flex flex-col sm:flex-row items-center gap-4">
-            <Puzzle className="w-8 h-8 shrink-0 text-[#0d9488]" />
+          <div className="bg-gradient-to-r from-[#e2e8f0] to-[#14181c] border border-[#2a2f36] rounded-xl p-5 flex flex-col sm:flex-row items-center gap-4">
+            <Puzzle className="w-8 h-8 shrink-0 text-[#ddf93c]" />
             <div className="flex-1 text-center sm:text-left">
-              <p className="font-black text-[#f1f5f9] text-sm">Extensie Chrome AmCupon — Gratis</p>
-              <p className="text-[#cbd5e1] text-xs mt-0.5">Coduri de reducere aplicate automat pe orice site de shopping</p>
+              <p className="font-black text-[#ffffff] text-sm">Extensie Chrome AmCupon — Gratis</p>
+              <p className="text-[#c9ced5] text-xs mt-0.5">Coduri de reducere aplicate automat pe orice site de shopping</p>
             </div>
             <a href="https://chromewebstore.google.com/detail/mahfankpalkgognhnllkgdkjncmmkllb"
               target="_blank" rel="noopener noreferrer"
-              className="shrink-0 bg-gradient-to-r from-[#14b8a6] to-[#0d9488] hover:from-[#0d9488] hover:to-[#14b8a6] text-[#ffffff] font-bold text-xs px-5 py-2.5 rounded-xl transition-colors whitespace-nowrap">
+              className="shrink-0 bg-gradient-to-r from-[#ddf93c] to-[#ddf93c] hover:from-[#ddf93c] hover:to-[#ddf93c] text-[#0c1000] font-bold text-xs px-5 py-2.5 rounded-xl transition-colors whitespace-nowrap">
               Instaleaza gratuit →
             </a>
           </div>
-          <div className="bg-[#14b8a6]/8 border border-[#14b8a6]/25 rounded-xl p-5 flex flex-col sm:flex-row items-center gap-4">
-            <Mail className="w-6 h-6 shrink-0 text-[#0d9488]" />
+          <div className="bg-[#ddf93c]/8 border border-[#ddf93c]/25 rounded-xl p-5 flex flex-col sm:flex-row items-center gap-4">
+            <Mail className="w-6 h-6 shrink-0 text-[#ddf93c]" />
             <div className="flex-1 text-center sm:text-left">
-              <p className="font-bold text-[#f1f5f9] text-sm">Nu rata promotiile viitoare {nume}</p>
-              <p className="text-[#cbd5e1] text-xs mt-0.5">Saptamanal — cele mai bune coduri pe email. Gratuit.</p>
+              <p className="font-bold text-[#ffffff] text-sm">Nu rata promotiile viitoare {nume}</p>
+              <p className="text-[#c9ced5] text-xs mt-0.5">Saptamanal — cele mai bune coduri pe email. Gratuit.</p>
             </div>
             <Link href="/newsletter"
-              className="shrink-0 bg-gradient-to-r from-[#14b8a6] to-[#0d9488] hover:from-[#0d9488] hover:to-[#14b8a6] text-[#ffffff] font-bold text-xs px-5 py-2.5 rounded-xl transition-colors whitespace-nowrap">
+              className="shrink-0 bg-gradient-to-r from-[#ddf93c] to-[#ddf93c] hover:from-[#ddf93c] hover:to-[#ddf93c] text-[#0c1000] font-bold text-xs px-5 py-2.5 rounded-xl transition-colors whitespace-nowrap">
               Aboneaza-te →
             </Link>
           </div>
@@ -706,20 +706,20 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
         {/* ── ARTICOL BLOG ─────────────────────────────────────────────────── */}
         {blogPost && (
           <section className="mt-10">
-            <h2 className="text-lg font-black text-[#f1f5f9] mb-4">Ghid complet {nume}</h2>
+            <h2 className="text-lg font-black text-[#ffffff] mb-4">Ghid complet {nume}</h2>
             <a href={`/blog/${blogPost.slug}`}
-              className="group flex gap-4 bg-[#111827] border border-[#1e293b] hover:border-[#14b8a6] rounded-xl p-4 hover:shadow-lg hover:shadow-black/40 transition-all">
-              <div className="relative w-20 h-20 shrink-0 rounded-xl overflow-hidden bg-[#1e293b]">
+              className="group flex gap-4 bg-[#14181c] border border-[#1f2329] hover:border-[#ddf93c] rounded-xl p-4 hover:shadow-lg hover:shadow-black/40 transition-all">
+              <div className="relative w-20 h-20 shrink-0 rounded-xl overflow-hidden bg-[#1f2329]">
                 <Image src={blogPost.cover} alt={blogPost.title} fill sizes="80px"
                   className="object-cover group-hover:scale-105 transition-transform duration-300" unoptimized />
               </div>
               <div className="flex-1 min-w-0">
-                <span className="text-xs font-bold text-[#0d9488] uppercase tracking-wide">Articol blog</span>
-                <p className="text-sm font-bold text-[#f1f5f9] mt-0.5 line-clamp-2 group-hover:text-[#0d9488] transition-colors leading-snug">
+                <span className="text-xs font-bold text-[#ddf93c] uppercase tracking-wide">Articol blog</span>
+                <p className="text-sm font-bold text-[#ffffff] mt-0.5 line-clamp-2 group-hover:text-[#ddf93c] transition-colors leading-snug">
                   {blogPost.title}
                 </p>
-                <p className="text-xs text-[#cbd5e1] mt-1 line-clamp-2 leading-relaxed">{blogPost.excerpt}</p>
-                <span className="inline-flex items-center gap-1 mt-2 text-xs font-bold text-[#0d9488] group-hover:text-[#0f766e]">
+                <p className="text-xs text-[#c9ced5] mt-1 line-clamp-2 leading-relaxed">{blogPost.excerpt}</p>
+                <span className="inline-flex items-center gap-1 mt-2 text-xs font-bold text-[#ddf93c] group-hover:text-[#c3dd2c]">
                   Citeste ghidul
                   <svg className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
@@ -734,8 +734,8 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
         {similare.length > 0 && (
           <section className="mt-10">
             <div className="flex items-center justify-between mb-4">
-              <h2 className="text-lg font-black text-[#f1f5f9]">Magazine similare</h2>
-              <Link href="/toate-magazinele" className="text-sm font-semibold text-[#0d9488] hover:text-[#0f766e]">Toate →</Link>
+              <h2 className="text-lg font-black text-[#ffffff]">Magazine similare</h2>
+              <Link href="/toate-magazinele" className="text-sm font-semibold text-[#ddf93c] hover:text-[#c3dd2c]">Toate →</Link>
             </div>
             <div className="grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-8 gap-3">
               {similare.map(s => {
@@ -743,21 +743,21 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                 const pctSim  = maxPct(s.promotii);
                 return (
                   <a key={s.magazin} href={`/cod-reducere/${s.magazin}`}
-                    className="group flex flex-col items-center gap-1.5 p-2.5 bg-[#111827] rounded-xl border border-[#1e293b] hover:border-[#14b8a6] hover:shadow-sm transition-all text-center">
-                    <div className="relative w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center bg-[#111827] border border-[#1e293b]">
+                    className="group flex flex-col items-center gap-1.5 p-2.5 bg-[#14181c] rounded-xl border border-[#1f2329] hover:border-[#ddf93c] hover:shadow-sm transition-all text-center">
+                    <div className="relative w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center bg-[#14181c] border border-[#1f2329]">
                       {s.logo_url ? (
                         <Image src={s.logo_url} alt={numeSim} fill sizes="40px" className="object-contain p-0.5" unoptimized />
                       ) : (
-                        <span className="text-base font-black text-[#94a3b8]">{numeSim.charAt(0)}</span>
+                        <span className="text-base font-black text-[#9399a0]">{numeSim.charAt(0)}</span>
                       )}
                     </div>
-                    <span className="text-[11px] font-semibold text-[#cbd5e1] group-hover:text-[#0d9488] leading-tight line-clamp-1 w-full">{numeSim}</span>
+                    <span className="text-[11px] font-semibold text-[#c9ced5] group-hover:text-[#ddf93c] leading-tight line-clamp-1 w-full">{numeSim}</span>
                     {pctSim > 0 ? (
-                      <span className="text-[10px] font-black text-[#0d9488]">-{pctSim}%</span>
+                      <span className="text-[10px] font-black text-[#ddf93c]">-{pctSim}%</span>
                     ) : s.cod_cupon ? (
                       <span className="text-[10px] font-bold text-emerald-600">Cod</span>
                     ) : s.are_promotie ? (
-                      <span className="text-[10px] text-[#94a3b8]">Oferta</span>
+                      <span className="text-[10px] text-[#9399a0]">Oferta</span>
                     ) : null}
                   </a>
                 );
@@ -770,15 +770,15 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
         {comparatii.length > 0 && (
           <section className="mt-10">
             <div className="flex items-center justify-between mb-4">
-              <h2 className="text-lg font-black text-[#f1f5f9]">{nume} vs alte magazine</h2>
-              <Link href="/comparatii" className="text-sm font-semibold text-[#0d9488] hover:text-[#0f766e]">Toate comparatiile →</Link>
+              <h2 className="text-lg font-black text-[#ffffff]">{nume} vs alte magazine</h2>
+              <Link href="/comparatii" className="text-sm font-semibold text-[#ddf93c] hover:text-[#c3dd2c]">Toate comparatiile →</Link>
             </div>
             <div className="grid sm:grid-cols-2 gap-3">
               {comparatii.map(c => (
                 <Link key={c.slug} href={`/comparatii/${c.slug}`}
-                  className="group flex items-center justify-between gap-3 p-4 bg-[#111827] rounded-xl border border-[#1e293b] hover:border-[#14b8a6] transition-all">
-                  <span className="text-sm font-bold text-[#cbd5e1] group-hover:text-[#0f766e]">{c.label}</span>
-                  <span className="text-xs font-semibold text-[#94a3b8] group-hover:text-[#0d9488] whitespace-nowrap">Compara →</span>
+                  className="group flex items-center justify-between gap-3 p-4 bg-[#14181c] rounded-xl border border-[#1f2329] hover:border-[#ddf93c] transition-all">
+                  <span className="text-sm font-bold text-[#c9ced5] group-hover:text-[#c3dd2c]">{c.label}</span>
+                  <span className="text-xs font-semibold text-[#9399a0] group-hover:text-[#ddf93c] whitespace-nowrap">Compara →</span>
                 </Link>
               ))}
             </div>
@@ -787,9 +787,9 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
 
         {/* ── DESPRE MAGAZIN (text editorial SEO) ──────────────────────────── */}
         {descriere && descriere.paragrafe?.length > 0 && (
-          <section className="mt-12 bg-[#111827] border border-[#1e293b] rounded-xl p-6 sm:p-8">
-            <h2 className="text-lg sm:text-xl font-black text-[#f1f5f9] mb-4">{descriere.titlu}</h2>
-            <div className="space-y-3 text-sm sm:text-[15px] text-[#cbd5e1] leading-relaxed">
+          <section className="mt-12 bg-[#14181c] border border-[#1f2329] rounded-xl p-6 sm:p-8">
+            <h2 className="text-lg sm:text-xl font-black text-[#ffffff] mb-4">{descriere.titlu}</h2>
+            <div className="space-y-3 text-sm sm:text-[15px] text-[#c9ced5] leading-relaxed">
               {descriere.paragrafe.map((p, i) => (
                 <p key={i}>{p}</p>
               ))}
@@ -797,8 +797,8 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
           </section>
         )}
 
-        <div className="mt-10 pt-6 border-t border-[#1e293b] text-center">
-          <Link href="/" className="text-sm text-[#94a3b8] hover:text-[#0d9488] transition-colors">
+        <div className="mt-10 pt-6 border-t border-[#1f2329] text-center">
+          <Link href="/" className="text-sm text-[#9399a0] hover:text-[#ddf93c] transition-colors">
             ← Inapoi la toate promotiile
           </Link>
         </div>

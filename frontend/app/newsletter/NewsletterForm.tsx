@@ -49,16 +49,16 @@ export default function NewsletterForm() {
   }
 
   return (
-    <div className="bg-[#111827] rounded-xl border border-[#1e293b] overflow-hidden shadow-2xl mb-8">
+    <div className="bg-[#14181c] rounded-xl border border-[#1f2329] overflow-hidden shadow-2xl mb-8">
       {/* Beneficii */}
-      <div className="p-8 border-b border-[#1e293b]">
+      <div className="p-8 border-b border-[#1f2329]">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {BENEFICII.map(b => (
             <div key={b.titlu} className="flex items-start gap-3">
               <span className="text-2xl shrink-0">{b.icon}</span>
               <div>
-                <p className="font-bold text-[#f1f5f9] text-sm">{b.titlu}</p>
-                <p className="text-[#cbd5e1] text-xs mt-0.5">{b.desc}</p>
+                <p className="font-bold text-[#ffffff] text-sm">{b.titlu}</p>
+                <p className="text-[#c9ced5] text-xs mt-0.5">{b.desc}</p>
               </div>
             </div>
           ))}
@@ -70,16 +70,16 @@ export default function NewsletterForm() {
         {status === "success" ? (
           <div className="text-center py-6">
             <div className="text-5xl mb-4">🎉</div>
-            <h2 className="text-2xl font-black text-[#f1f5f9] mb-2">Esti abonat!</h2>
-            <p className="text-[#cbd5e1] mb-6">Vei primi cele mai bune coduri reducere direct in inbox.</p>
-            <Link href="/" className="inline-flex items-center gap-2 bg-[#0d9488] hover:bg-[#14b8a6] text-white font-bold px-6 py-3 rounded-xl transition-colors">
+            <h2 className="text-2xl font-black text-[#ffffff] mb-2">Esti abonat!</h2>
+            <p className="text-[#c9ced5] mb-6">Vei primi cele mai bune coduri reducere direct in inbox.</p>
+            <Link href="/" className="inline-flex items-center gap-2 bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] font-bold px-6 py-3 rounded-xl transition-colors">
               Descopera ofertele de azi &rarr;
             </Link>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label htmlFor="email-nl" className="block text-sm font-semibold text-[#cbd5e1] mb-2">
+              <label htmlFor="email-nl" className="block text-sm font-semibold text-[#c9ced5] mb-2">
                 Adresa ta de email
               </label>
               <input
@@ -89,7 +89,7 @@ export default function NewsletterForm() {
                 onChange={e => { setEmail(e.target.value); setStatus("idle"); setErrMsg(""); }}
                 placeholder="adresa@email.ro"
                 required
-                className="w-full bg-[#1e293b] border border-[#334155] text-[#f1f5f9] rounded-xl px-4 py-3.5 text-base focus:outline-none focus:ring-2 focus:ring-[#14b8a6]/50 focus:border-[#14b8a6]/50 placeholder-[#94a3b8] transition-all"
+                className="w-full bg-[#1f2329] border border-[#2a2f36] text-[#ffffff] rounded-xl px-4 py-3.5 text-base focus:outline-none focus:ring-2 focus:ring-[#ddf93c]/50 focus:border-[#ddf93c]/50 placeholder-[#9399a0] transition-all"
               />
             </div>
             {status === "error" && errMsg && (
@@ -98,13 +98,13 @@ export default function NewsletterForm() {
             <button
               type="submit"
               disabled={status === "loading"}
-              className="w-full bg-[#0d9488] hover:bg-[#14b8a6] disabled:opacity-60 text-white font-black py-4 rounded-xl text-base transition-colors shadow-lg shadow-[#14b8a6]/25"
+              className="w-full bg-[#ddf93c] hover:bg-[#ddf93c] disabled:opacity-60 text-[#0c1000] font-black py-4 rounded-xl text-base transition-colors shadow-lg shadow-[#ddf93c]/25"
             >
               {status === "loading" ? "Se proceseaza..." : "Aboneaza-ma gratuit →"}
             </button>
-            <p className="text-xs text-[#94a3b8] text-center leading-relaxed">
+            <p className="text-xs text-[#9399a0] text-center leading-relaxed">
               Prin abonare esti de acord cu{" "}
-              <Link href="/confidentialitate" className="text-[#0d9488] hover:underline">politica de confidentialitate</Link>
+              <Link href="/confidentialitate" className="text-[#ddf93c] hover:underline">politica de confidentialitate</Link>
               . Dezabonare oricand cu un click.
             </p>
           </form>

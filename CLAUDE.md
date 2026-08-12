@@ -729,7 +729,49 @@ Fiecare pagină dinamică are două fișiere:
 
 **Excepție**: `app/page.tsx` (homepage) este full client — face `fetch("/output.json")` în `useEffect` pentru date fără rebuild.
 
-### Tema vizuala — DARK / teal (din 16.07.2026)
+### Tema vizuala — DARK / LIME (din 11.08.2026) ⬅ ACTUALA
+
+Alex a ales o referinta concreta (`deal-findr-spark.lovable.app`) si a cerut modernizarea
+dupa ea. Paleta NU e ghicita din screenshot: i-am descarcat bundle-ul CSS si i-am convertit
+valorile `oklch` in hex.
+
+- **fundal pagina**: `#06080b` (neutru rece, aproape negru — NU mai e bleumarin)
+- **card**: `#14181c` · **card secundar / border**: `#1f2329` · **hover / border vizibil**: `#2a2f36`
+- **border slab**: `#3a4048` · **text foarte estompat**: `#6b7178`
+- **text principal**: `#ffffff` · secundar `#c9ced5` · muted `#9399a0`
+- **ACCENT lime**: `#ddf93c` · hover/apasat `#c3dd2c` · deschis `#ecff7a`
+- **⚠️ TEXT PE ACCENT**: `#0c1000` (inchis!). Vezi regula de contrast mai jos.
+- **rosu urgenta**: `#e64343` · **succes/verificat**: acelasi lime (o singura voce vizuala)
+- **radius max 12px** (`rounded-xl`) — neschimbat
+- **Cutii logo raman ALBE** (`bg-[#ffffff]`) — regula neschimbata, logo-urile sunt PNG-uri
+  proiectate pentru fundal alb.
+
+**⚠️ REGULA DE CONTRAST — cea mai importanta la aceasta tema.** La teal accentul era INCHIS
+(`#0d9488`), deci butoanele erau `bg-accent text-white`. Lime-ul e FOARTE DESCHIS (L=93%), deci
+alb pe el e ilizibil. Orice `bg-[#ddf93c] text-white` mostenit e un BUG de contrast.
+Migrarea a reparat 159 + 15 astfel de cazuri automat.
+
+**Ce NU prinde o migrare automata de culori** (lectie din 11.08, valabila la orice retema
+viitoare): scriptul cauta perechea "fundal accent + text alb" in text, deci rateaza
+  1. clase intr-un **ternar** (`cond ? "bg-[#ddf93c] text-white" : ...`) — nu sunt in `className="..."`;
+     rezolvat cu `scripts/fix_contrast_lime.js`, care scaneaza ORICE literal de string;
+  2. clase venite dintr-o **variabila** (`` `bg-gradient-to-br ${gradient} text-white` ``) — culoarea
+     nici nu apare in string, deci e imposibil de detectat prin cautare de text. Alea se gasesc
+     doar cautand `bg-gradient.*\$\{` si verificand manual (au fost 2: `/top/[slug]` si `/comparator`).
+- **Lime e ACCENT, nu suprafata.** In referinta, lime apare pe cifre, butoane si badge-uri, pe
+  fundal inchis — niciodata ca hero plin pe toata latimea. Cele 2 hero-uri care erau gradient
+  colorat plin au fost facute inchise (rezolva si contrastul, si aspectul).
+- Scripturi: `retheme_lime_2026.js` (migrarea de culori + prima trecere de contrast),
+  `fix_contrast_lime.js` (a doua trecere, string-uri in ternar).
+
+**Istoric teme** (sa nu se reintroduca din greseala): orange (initial) → indigo/cyan dark →
+auriu/sampanie dark → light/teal (06.07) → dark/teal (16.07) → **dark/lime (11.08, actuala)**.
+Portocaliul/amberul raman **INTERZISE** — referinta le folosea pentru badge-ul "HOT", noi
+folosim lime acolo.
+
+---
+
+### Tema veche — DARK / teal (16.07.2026 – 11.08.2026), pastrata ca referinta istorica
 **Standard ACTUAL pentru orice cod nou** (decizie explicita Alex, "da dark. fa-l dark" — revenire deliberata la dark peste tema light/teal din 06.07, pastrand acelasi accent teal):
 - **background pagina**: `#0a0f1a` (aproape negru, albastrui) · **carduri**: `#111827` · **carduri alt/sectiuni**: `#1e293b` / `#334155`
 - **border card**: `#1e293b` · **border mai vizibil**: `#334155` / `#475569`

@@ -137,7 +137,7 @@ async function sendWelcomeEmail(email: string, apiKey: string): Promise<boolean>
 <body style="margin:0;padding:0;background:#F7F9FC;font-family:Arial,sans-serif;">
   <div style="max-width:600px;margin:0 auto;background:#ffffff;border-radius:16px;overflow:hidden;margin-top:24px;margin-bottom:24px;box-shadow:0 4px 24px rgba(0,0,0,0.08);">
     <!-- Header -->
-    <div style="background:linear-gradient(135deg,#0d9488 0%,#14b8a6 100%);padding:40px 32px;text-align:center;">
+    <div style="background:linear-gradient(135deg,#ddf93c 0%,#ddf93c 100%);padding:40px 32px;text-align:center;">
       <div style="display:inline-flex;align-items:center;gap:8px;margin-bottom:16px;">
         <span style="background:rgba(255,255,255,0.2);color:#fff;font-weight:900;font-size:16px;padding:4px 10px;border-radius:8px;">Am</span>
         <span style="color:#fff;font-weight:900;font-size:24px;">Cupon.ro</span>
@@ -153,7 +153,7 @@ async function sendWelcomeEmail(email: string, apiKey: string): Promise<boolean>
       </p>
       <!-- CTA principal -->
       <div style="text-align:center;margin:32px 0;">
-        <a href="https://amcupon.ro/#promotii" style="background:#0d9488;color:#fff;font-weight:900;font-size:16px;padding:16px 40px;border-radius:12px;text-decoration:none;display:inline-block;">
+        <a href="https://amcupon.ro/#promotii" style="background:#ddf93c;color:#fff;font-weight:900;font-size:16px;padding:16px 40px;border-radius:12px;text-decoration:none;display:inline-block;">
           Vezi ofertele active acum →
         </a>
       </div>
@@ -179,8 +179,8 @@ async function sendWelcomeEmail(email: string, apiKey: string): Promise<boolean>
         ${ofertePrincipale.map(o => {
           const tag = escHtml(o.procent || (o.cod ? "COD" : "OFERTĂ"));
           const detaliu = o.cod ? ` — cod <strong>${escHtml(o.cod)}</strong>` : "";
-          return `<a href="https://amcupon.ro/cod-reducere/${encodeURIComponent(o.slug)}" style="display:flex;align-items:center;gap:10px;padding:12px 14px;margin-bottom:8px;background:#f0fdfa;border:1px solid #99f6e4;border-radius:10px;text-decoration:none;color:#0f766e;font-size:13px;font-weight:600;">
-            <span style="background:#0d9488;color:#fff;font-weight:900;font-size:11px;padding:3px 8px;border-radius:6px;white-space:nowrap;">${tag}</span>
+          return `<a href="https://amcupon.ro/cod-reducere/${encodeURIComponent(o.slug)}" style="display:flex;align-items:center;gap:10px;padding:12px 14px;margin-bottom:8px;background:#f0fdfa;border:1px solid #99f6e4;border-radius:10px;text-decoration:none;color:#c3dd2c;font-size:13px;font-weight:600;">
+            <span style="background:#ddf93c;color:#fff;font-weight:900;font-size:11px;padding:3px 8px;border-radius:6px;white-space:nowrap;">${tag}</span>
             <span>${escHtml(o.nume)}${detaliu}</span>
           </a>`;
         }).join("")}
@@ -191,7 +191,7 @@ async function sendWelcomeEmail(email: string, apiKey: string): Promise<boolean>
         ${ofertePlus.map(o => {
           const tag = escHtml(o.cod ? "COD" : (o.procent || "OFERTĂ"));
           return `<a href="https://amcupon.ro/cod-reducere/${encodeURIComponent(o.slug)}" style="display:flex;align-items:center;gap:6px;padding:8px 10px;background:#F7F9FC;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#374151;font-size:12px;font-weight:600;">
-            <span style="background:#0d9488;color:#fff;font-weight:900;font-size:9px;padding:2px 6px;border-radius:5px;white-space:nowrap;">${tag}</span>
+            <span style="background:#ddf93c;color:#fff;font-weight:900;font-size:9px;padding:2px 6px;border-radius:5px;white-space:nowrap;">${tag}</span>
             <span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${escHtml(o.nume)}</span>
           </a>`;
         }).join("")}
@@ -200,7 +200,7 @@ async function sendWelcomeEmail(email: string, apiKey: string): Promise<boolean>
       <div style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:12px;padding:20px;margin-bottom:24px;">
         <p style="margin:0 0 8px;color:#0c4a6e;font-weight:700;font-size:14px;">🧩 Extensia Chrome — reduceri automate</p>
         <p style="margin:0 0 12px;color:#0369a1;font-size:13px;">Instalează extensia AmCupon și primești automat cele mai bune coduri când ești pe orice site partener.</p>
-        <a href="https://chromewebstore.google.com/detail/mahfankpalkgognhnllkgdkjncmmkllb" style="background:#0d9488;color:#fff;font-weight:700;font-size:13px;padding:8px 20px;border-radius:8px;text-decoration:none;display:inline-block;">Instalează gratuit</a>
+        <a href="https://chromewebstore.google.com/detail/mahfankpalkgognhnllkgdkjncmmkllb" style="background:#ddf93c;color:#fff;font-weight:700;font-size:13px;padding:8px 20px;border-radius:8px;text-decoration:none;display:inline-block;">Instalează gratuit</a>
       </div>
     </div>
     <!-- Footer -->
