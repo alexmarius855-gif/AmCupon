@@ -176,8 +176,8 @@ function OfertaCard({ o }: { o: OfertaFlat }) {
           <p className="text-[11px] text-[#9399a0] truncate mt-0.5">{CAT_EMOJI[o.categorie_slug] || ""} {CAT_LABELS[o.categorie_slug] || o.categorie}</p>
         </div>
         {discount > 0 && (
-          <div className="shrink-0 leading-none bg-gradient-to-br from-[#34d399] to-[#ddf93c] rounded-lg px-2 py-1.5 shadow-sm">
-            <span className="block text-[15px] font-black text-[#ffffff] tracking-tight">-{discount}%</span>
+          <div className="shrink-0 leading-none bg-[#ddf93c] rounded-lg px-2 py-1.5 shadow-sm">
+            <span className="block text-[15px] font-black text-[#0c1000] tracking-tight">-{discount}%</span>
           </div>
         )}
       </div>

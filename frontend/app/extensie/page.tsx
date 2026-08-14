@@ -160,7 +160,10 @@ export default function ExtensiePage() {
 
         {/* CTA FINAL */}
         <section className="bg-gradient-to-br from-[#c3dd2c] to-[#c3dd2c] py-16 px-4">
-          <div className="max-w-2xl mx-auto text-center text-[#ffffff]">
+          {/* Sectiune cu fundal lime PLIN: textul trebuie sa fie INCHIS. Migrarea automata
+              prinsese paragraful (avea text-[#2a2f10]) dar nu si containerul, pentru ca
+              fundalul sta pe <section>, iar textul pe <div>-ul copil. */}
+          <div className="max-w-2xl mx-auto text-center text-[#0c1000]">
             <div className="text-5xl mb-4">🎟</div>
             <h2 className="text-2xl font-black mb-3">Fii primul care o instalează</h2>
             <p className="text-[#2a2f10] mb-8 text-sm">
