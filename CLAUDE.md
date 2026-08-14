@@ -751,13 +751,23 @@ valorile `oklch` in hex.
 alb pe el e ilizibil. Orice `bg-[#ddf93c] text-white` mostenit e un BUG de contrast.
 Migrarea a reparat 159 + 15 astfel de cazuri automat.
 
-**Ce NU prinde o migrare automata de culori** (lectie din 11.08, valabila la orice retema
-viitoare): scriptul cauta perechea "fundal accent + text alb" in text, deci rateaza
+**Ce NU prinde o migrare automata de culori** (lectie din 11.08 — PATRU tipare, valabile la
+orice retema viitoare). Scriptul cauta perechea "fundal accent + text alb" ca TEXT, deci rateaza:
   1. clase intr-un **ternar** (`cond ? "bg-[#ddf93c] text-white" : ...`) — nu sunt in `className="..."`;
      rezolvat cu `scripts/fix_contrast_lime.js`, care scaneaza ORICE literal de string;
   2. clase venite dintr-o **variabila** (`` `bg-gradient-to-br ${gradient} text-white` ``) — culoarea
-     nici nu apare in string, deci e imposibil de detectat prin cautare de text. Alea se gasesc
-     doar cautand `bg-gradient.*\$\{` si verificand manual (au fost 2: `/top/[slug]` si `/comparator`).
+     nici nu apare in string. Se gasesc doar cautand `bg-gradient.*\$\{` + verificare manuala
+     (au fost 2: `/top/[slug]` si `/comparator`);
+  3. **fundal pe parinte, text pe copil** (`<div class="bg-lime"><span class="text-white">`) — cele
+     doua clase sunt in className-uri DIFERITE, deci nicio cautare de pereche nu le vede. A fost
+     fallback-ul cu initiala din `MagazinCard.tsx`;
+  4. **culoare din JS**, prin `style={{ background: functie(...) }}` — culoarea nu exista nicaieri
+     ca text in cod, deci e invizibila oricarei cautari. A fost badge-ul cu numarul de oferte de pe
+     chip-urile de categorii. Rezolvat la radacina: `CategoryIcon.tsx` exporta acum
+     `TEXT_PE_CATEGORIE`, ca sa nu se mai ghiceasca in fiecare loc.
+
+**Concluzie operationala**: dupa orice retema, cele 4 tipare de mai sus se verifica MANUAL. Faptul
+ca `tsc` + `build` trec nu spune nimic despre contrast — un text invizibil compileaza perfect.
 - **Lime e ACCENT, nu suprafata.** In referinta, lime apare pe cifre, butoane si badge-uri, pe
   fundal inchis — niciodata ca hero plin pe toata latimea. Cele 2 hero-uri care erau gradient
   colorat plin au fost facute inchise (rezolva si contrastul, si aspectul).

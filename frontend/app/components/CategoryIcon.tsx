@@ -28,8 +28,23 @@ const FAMILII = {
   moda:    "#f472b6", // pink  — fashion, beauty, bijuterii
   casa:    "#4ade80", // green — casa, animale, mancare
   viata:   "#c084fc", // purple— carti, copii, cadouri, calatorii
-  brand:   "#ddf93c", // teal  — accentul site-ului: sanatate, financiar, restul
+  brand:   "#ddf93c", // lime  — accentul site-ului: sanatate, financiar, restul
 } as const;
+
+/**
+ * Culoarea de TEXT care se aseaza peste o culoare de familie.
+ *
+ * Toate cele 5 nuante sunt DESCHISE — pe niciuna nu se citeste bine text alb, iar pe
+ * lime (#ddf93c, L=93%) e practic invizibil. Bug-ul a devenit vizibil la trecerea pe
+ * tema lime (11.08.2026): badge-ul cu numarul de oferte folosea `text-white` peste o
+ * culoare venita din JS (`style={{background: ...}}`), deci nici migrarea automata de
+ * culori, nici cele doua treceri de contrast nu aveau cum sa-l vada — culoarea nu
+ * exista nicaieri ca text in cod.
+ *
+ * Exportat ca sa nu se mai ghiceasca in fiecare loc unde se foloseste o culoare de
+ * familie ca fundal.
+ */
+export const TEXT_PE_CATEGORIE = "#0c1000";
 
 interface CatVisual { icon: LucideIcon; color: string }
 

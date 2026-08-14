@@ -4,7 +4,7 @@ import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Mail } from "lucide-react";
-import CategoryIcon, { categoryVisual } from "./components/CategoryIcon";
+import CategoryIcon, { categoryVisual, TEXT_PE_CATEGORIE } from "./components/CategoryIcon";
 import MagazinCard from "./components/MagazinCard";
 
 interface Promotie {
@@ -314,13 +314,16 @@ export default function HomeClient({
             <span className="font-black text-[#ffffff] text-xl tracking-tight">Cupon<span className="text-[#ddf93c]">.ro</span></span>
           </Link>
 
-          <div className="flex-1 relative max-w-2xl hidden sm:block">
-            <svg className="absolute left-3 top-2.5 w-4 h-4 text-[#c9ced5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          {/* Cautarea e elementul central al header-ului, ca in referinta: pilula
+              lata, inalta, cu placeholder care spune CE poti cauta (magazine sau
+              cupoane), nu doar exemple de branduri. */}
+          <div className="flex-1 relative max-w-2xl hidden sm:block group/search">
+            <svg className="absolute left-4 top-1/2 -translate-y-1/2 w-[18px] h-[18px] text-[#6b7178] group-focus-within/search:text-[#ddf93c] transition-colors pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
             </svg>
-            <input type="text" placeholder="Answear, eMAG, Notino..." value={cautare}
+            <input type="text" placeholder="Caută magazine sau cupoane..." value={cautare}
               onChange={e => { setCautare(e.target.value); setMenuOpen(false); }}
-              className="w-full bg-[#1f2329] border border-[#2a2f36] text-[#ffffff] placeholder-[#9399a0] rounded-full pl-9 pr-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#ddf93c] focus:border-[#ddf93c] transition-all" />
+              className="w-full bg-[#1f2329] border border-[#2a2f36] hover:border-[#3a4048] text-[#ffffff] placeholder-[#6b7178] rounded-full pl-11 pr-4 py-2.5 text-sm focus:outline-none focus:border-[#ddf93c] focus:ring-2 focus:ring-[#ddf93c]/25 transition-all" />
           </div>
 
           <nav className="hidden md:flex items-center gap-5 text-sm font-semibold text-[#c9ced5] ml-auto">
@@ -540,7 +543,7 @@ export default function HomeClient({
           <div className="flex items-end justify-between mb-8">
             <div>
               <p className="text-xs font-bold text-[#ddf93c] uppercase tracking-widest mb-2">CATEGORII</p>
-              <h2 className="text-3xl font-black tracking-tight text-[#ffffff]">Exploreaza dupa categorie</h2>
+              <h2 className="text-[2rem] md:text-[2.5rem] leading-[1.08] font-black tracking-tight text-[#ffffff]">Exploreaza dupa categorie</h2>
               <p className="text-[#c9ced5] text-sm mt-1.5">Coduri verificate zilnic in fiecare categorie</p>
             </div>
             <Link href="/categorii" className="hidden sm:flex items-center gap-1.5 text-sm font-bold text-[#ddf93c] hover:text-[#c3dd2c] transition-colors border border-[#ddf93c]/30 hover:border-[#ddf93c]/60 bg-[#ddf93c]/10 hover:bg-[#ddf93c]/20 px-4 py-2 rounded-full whitespace-nowrap">
@@ -625,7 +628,7 @@ export default function HomeClient({
                   </span>
                   <span className="text-[10px] font-bold text-[#c9ced5] text-center leading-tight">{c.label}</span>
                   {nrPromo > 0 && (
-                    <span className="absolute -top-1 -right-1 text-white text-[9px] font-black rounded-full w-4 h-4 flex items-center justify-center shadow-sm" style={{ background: categoryVisual(c.slug).color }}>
+                    <span className="absolute -top-1 -right-1 text-[9px] font-black rounded-full w-4 h-4 flex items-center justify-center shadow-sm" style={{ background: categoryVisual(c.slug).color, color: TEXT_PE_CATEGORIE }}>
                       {nrPromo > 9 ? "9+" : nrPromo}
                     </span>
                   )}
@@ -784,7 +787,7 @@ export default function HomeClient({
             <div className="flex items-end justify-between mb-7">
               <div>
                 <p className="text-xs font-bold text-[#ddf93c] uppercase tracking-widest mb-2">PRODUSE CU REDUCERE</p>
-                <h2 className="text-3xl font-black tracking-tight text-[#ffffff]">Produse pe categorii</h2>
+                <h2 className="text-[2rem] md:text-[2.5rem] leading-[1.08] font-black tracking-tight text-[#ffffff]">Produse pe categorii</h2>
                 <p className="text-[#c9ced5] text-sm mt-1.5">Cele mai bune oferte, organizate pe nise</p>
               </div>
               <Link href="/produse" className="hidden sm:flex items-center gap-1.5 text-sm font-bold text-[#ddf93c] hover:text-[#c3dd2c] border border-[#ddf93c]/30 hover:border-[#ddf93c]/60 bg-[#ddf93c]/10 hover:bg-[#ddf93c]/20 px-4 py-2 rounded-full whitespace-nowrap transition-all">
@@ -996,7 +999,7 @@ export default function HomeClient({
             <div className="flex items-end justify-between mb-7">
               <div>
                 <p className="text-xs font-bold text-[#ddf93c] uppercase tracking-widest mb-2">⭐ RECOMANDATE DE NOI</p>
-                <h2 className="text-3xl font-black tracking-tight text-[#ffffff]">Magazine de incredere</h2>
+                <h2 className="text-[2rem] md:text-[2.5rem] leading-[1.08] font-black tracking-tight text-[#ffffff]">Magazine de incredere</h2>
                 <p className="text-[#c9ced5] text-sm mt-1.5">Magazine cu oferte active, verificate zilnic</p>
               </div>
               <Link href="/toate-magazinele" className="hidden sm:flex items-center gap-1.5 text-sm font-bold text-[#ddf93c] hover:text-[#c3dd2c] border border-[#ddf93c]/30 hover:border-[#ddf93c]/60 bg-[#ddf93c]/10 px-4 py-2 rounded-full whitespace-nowrap transition-colors">Toate magazinele →</Link>
@@ -1113,7 +1116,7 @@ export default function HomeClient({
                   <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse inline-block"/>
                   {cautare || filtruActiv !== "toate" ? "FILTRAT" : "LIVE"}
                 </p>
-                <h2 className="text-2xl font-black text-[#ffffff] tracking-tight">
+                <h2 className="text-[1.75rem] md:text-[2.25rem] leading-[1.1] font-black text-[#ffffff] tracking-tight">
                   {cautare ? `Rezultate pentru "${cautare}"` : "Promotii active"}
                 </h2>
                 <p className="text-[#c9ced5] text-sm mt-0.5">{cuPromotii.length} oferte verificate</p>
@@ -1138,7 +1141,7 @@ export default function HomeClient({
             <div className="flex items-end justify-between mb-6">
               <div>
                 <p className="text-xs font-bold text-[#c9ced5] uppercase tracking-widest mb-1.5">TOATE MAGAZINELE</p>
-                <h2 className="text-2xl font-black text-[#ffffff] tracking-tight">Magazine partenere</h2>
+                <h2 className="text-[1.75rem] md:text-[2.25rem] leading-[1.1] font-black text-[#ffffff] tracking-tight">Magazine partenere</h2>
                 <p className="text-[#c9ced5] text-sm mt-0.5">
                   {cautare || filtruActiv !== "toate"
                     ? <>{faraPromotii.length} din {magazine.length} magazine</>
@@ -1217,7 +1220,7 @@ export default function HomeClient({
             <div className="flex items-end justify-between mb-8">
               <div>
                 <p className="text-xs font-bold text-[#ddf93c] uppercase tracking-widest mb-2">BLOG</p>
-                <h2 className="text-3xl font-black tracking-tight text-[#ffffff]">Ghiduri si sfaturi</h2>
+                <h2 className="text-[2rem] md:text-[2.5rem] leading-[1.08] font-black tracking-tight text-[#ffffff]">Ghiduri si sfaturi</h2>
                 <p className="text-[#c9ced5] text-sm mt-1.5">Cum sa economisesti mai mult la cumparaturile online</p>
               </div>
               <Link href="/blog" className="hidden sm:flex items-center gap-1 text-sm font-bold text-[#ddf93c] hover:text-[#ddf93c] transition-colors">
@@ -1278,7 +1281,7 @@ export default function HomeClient({
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-8">
             <p className="text-xs font-bold text-[#ddf93c] uppercase tracking-widest mb-2">INTREBARI FRECVENTE</p>
-            <h2 className="text-3xl font-black tracking-tight text-[#ffffff]">Tot ce vrei sa stii despre codurile de reducere</h2>
+            <h2 className="text-[2rem] md:text-[2.5rem] leading-[1.08] font-black tracking-tight text-[#ffffff]">Tot ce vrei sa stii despre codurile de reducere</h2>
           </div>
           <div className="space-y-3">
             {FAQ_ITEMS.map((item, i) => (
