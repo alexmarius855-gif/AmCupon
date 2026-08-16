@@ -143,18 +143,25 @@ function loadMagazine(): Magazin[] {
   }
 }
 
+/**
+ * Magazinele unei categorii — potrivire EXACTA pe `categorie_slug`.
+ *
+ * Inainte se cadea si pe `keywords`, cu `includes()` pe slug/nume/nume-afisat.
+ * Doua consecinte reale, ambele masurate pe productie (16.08.2026):
+ *  1. numerele afisate aici erau umflate — un magazin ajungea in mai multe
+ *     categorii pentru ca numele lui continea intamplator un cuvant-cheie;
+ *  2. `telecom` parea sa aiba magazine (de la "orange"/"digi"/"mobile" gasite in
+ *     nume), dar `/categorii/telecom` raspundea 404: rutele se genereaza din
+ *     `categorie_slug` REAL prin `generateStaticParams`, iar NICIUN magazin nu are
+ *     slug-ul `telecom`. Deci cardul trimitea garantat intr-un 404.
+ *
+ * Acelasi tipar de bug ca pe paginile de nisa (vezi lib/categoriiNisa.ts):
+ * potrivire pe subsir acolo unde exista deja un camp exact.
+ */
 function getMagazineForCategory(magazine: Magazin[], cat: typeof CATEGORII[0]) {
-  return magazine.filter((m: Magazin) => {
-    const slugM  = (m.categorie_slug || m.categorie || "").toLowerCase();
-    const nameM  = (m.magazin || "").toLowerCase();
-    const dispM  = (m.magazin_display || "").toLowerCase();
-    // Match dupa slug exact
-    if (slugM === cat.slug) return true;
-    // Match dupa keywords
-    return cat.keywords.some(kw =>
-      slugM.includes(kw) || nameM.includes(kw) || dispM.includes(kw)
-    );
-  });
+  return magazine.filter(
+    (m: Magazin) => (m.categorie_slug || "").toLowerCase().trim() === cat.slug
+  );
 }
 
 /* ─── Page ───────────────────────────────────────────────────────────────── */
@@ -170,7 +177,11 @@ export default function CategoriPage() {
       .slice(0, 3)
       .map((m: Magazin) => ({ logo: m.logo_url, name: m.magazin_display || m.magazin }));
     return { ...cat, nrMag: mag.length, nrOff, logos };
-  });
+  })
+  // O categorie fara niciun magazin nu are pagina generata (generateStaticParams
+  // deriva din datele reale), deci cardul ei ar duce in 404. Se ascunde singura,
+  // si reapare automat daca apar magazine pe acel slug.
+  .filter((c) => c.nrMag > 0);
 
   const totalOff = magazine.filter((m: Magazin) => m.are_promotie || m.cod_cupon).length;
 
@@ -179,7 +190,11 @@ export default function CategoriPage() {
     "@type": "ItemList",
     "name": "Categorii Coduri Reducere Romania",
     "url": "https://amcupon.ro/categorii",
-    "itemListElement": CATEGORII.map((c, i) => ({
+    // categoriiCuDate, NU CATEGORII: altfel am declara lui Google, in date
+    // structurate, un URL care raspunde 404 (cazul /categorii/telecom — slug fara
+    // niciun magazin, deci fara pagina generata). Un link vizibil rupt e o problema;
+    // acelasi link intr-un ItemList trimis motorului de cautare e mai rau.
+    "itemListElement": categoriiCuDate.map((c, i) => ({
       "@type": "ListItem",
       "position": i + 1,
       "name": c.label,
@@ -234,7 +249,7 @@ export default function CategoriPage() {
           <p className="text-[#c9ced5] text-sm">
             <span className="text-emerald-400 font-bold">{totalOff} oferte active</span>
             {" "}in{" "}
-            <span className="text-[#ffffff] font-bold">{CATEGORII.length} categorii</span>
+            <span className="text-[#ffffff] font-bold">{categoriiCuDate.length} categorii</span>
             {" "}&mdash; actualizat zilnic
           </p>
         </div>

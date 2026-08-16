@@ -1043,7 +1043,10 @@ def main():
         feed_id   = feed.get("id", "")
         feed_name = feed.get("name", "") or ""
         prog      = feed.get("program", {}) or {}
-        merchant  = prog.get("name", "") or prog.get("slug", "") or feed_name
+        # .strip().rstrip("/") la SURSA: 2Performant intoarce nume cu spatiu sau slash
+        # in coada ("libris.ro ", "autoeqt.ro/"). Nenormalizate, acelasi magazin apare
+        # de doua ori si nu se mai potriveste cu slug_map — vazut in rularea de test.
+        merchant  = (prog.get("name", "") or prog.get("slug", "") or feed_name).strip().rstrip("/")
         mn        = merchant.strip().lower()
 
         print(f"\n  [{idx+1}/{len(feeds_to_process)}] '{feed_name}' ({merchant})")
@@ -1088,11 +1091,18 @@ def main():
         for feed in feeds_fara_url[:20]:
             feed_id  = feed.get("id", "")
             prog     = feed.get("program", {}) or {}
-            merchant = prog.get("name", "") or feed.get("name", "")
+            merchant = (prog.get("name", "") or feed.get("name", "")).strip().rstrip("/")
             mn       = merchant.strip().lower().rstrip("/")
             # AmCupon e pentru cumparatori din Romania — sarim magazinele pe domeniu
             # de tara straina (ex: fragranza.hu, liki24.pl) gasite in My Feeds 2P
-            if any(mn.endswith(t) for t in (".hu", ".pl", ".bg", ".gr", ".cz", ".sk", ".ua", ".md", ".rs", ".hr", ".si")):
+            # Lista completata 16.08.2026: lipsea ".nl", si de-aia liki24.nl a ajuns
+            # in feed alaturi de liki24.ro — acelasi magazin, versiunea olandeza,
+            # servita cumparatorilor din Romania. Descoperit in rularea de test.
+            if any(mn.endswith(t) for t in (
+                ".hu", ".pl", ".bg", ".gr", ".cz", ".sk", ".ua", ".md", ".rs", ".hr", ".si",
+                ".nl", ".be", ".de", ".fr", ".it", ".es", ".pt", ".at", ".ch",
+                ".se", ".dk", ".fi", ".no", ".ie", ".lt", ".lv", ".ee", ".tr", ".co.uk",
+            )):
                 print(f"    - {merchant[:30]:30} magazin strain — sarit")
                 continue
             slug     = slug_map.get(mn, slug_map.get(mn.split(".")[0], mn))

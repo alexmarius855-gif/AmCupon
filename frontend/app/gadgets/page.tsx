@@ -34,7 +34,6 @@ const ARTICOLE_GADGET = [
   { title: "Smart home — ghid complet", href: "/blog/cel-mai-bun-sistem-smart-home-2026" },
   { title: "Cel mai bun power bank 2026", href: "/blog/cel-mai-bun-power-bank-2026" },
   { title: "Drone pentru începători", href: "/blog/cea-mai-buna-drona-2026" },
-  { title: "Gadgeturi utile sub 100 lei", href: "/blog/cele-mai-bune-gadgeturi-ieftine-2026" },
 ];
 
 export default function GadgetsPage() {
@@ -96,7 +95,7 @@ export default function GadgetsPage() {
                 { emoji:"🏠", label:"Smart Home", href:"/blog/cel-mai-bun-sistem-smart-home-2026" },
                 { emoji:"🔋", label:"Power Bank", href:"/blog/cel-mai-bun-power-bank-2026" },
                 { emoji:"🚁", label:"Drone", href:"/blog/cea-mai-buna-drona-2026" },
-                { emoji:"📷", label:"Camere acțiune", href:"/blog/cea-mai-buna-camera-video-sport-2026" },
+                { emoji:"📷", label:"Camere acțiune", href:"/top/camere-actiune" },
                 { emoji:"🎮", label:"Gaming", href:"/categorii/electronice" },
                 { emoji:"📱", label:"Telefoane", href:"/blog/cel-mai-bun-telefon-pentru-poze-2026" },
               ].map(c => (
