@@ -28,7 +28,7 @@ export interface CategorieStudiu {
 }
 
 export default function ContextMagazin({
-  nume, produse, categorieSlug, categorie, urlSite, categorieStudiu, intrebari = [],
+  nume, produse, categorieSlug, categorie, urlSite, categorieStudiu, intrebari = [], pasi = [],
 }: {
   nume: string;
   produse: ProdusStat[];
@@ -38,12 +38,14 @@ export default function ContextMagazin({
   categorieStudiu?: CategorieStudiu | null;
   /** Intrebarile frecvente — ACELEASI care intra in schema FAQPage (vezi page.tsx). */
   intrebari?: { i: string; r: string }[];
+  /** Pasii de folosire a codului — ACEIASI care intra in schema HowTo (page.tsx). */
+  pasi?: { titlu: string; text: string }[];
 }) {
   const stat = statisticiFeed(produse);
   const cat = categorieStudiu;
   const numeCat = cat?.nume || categorie;
 
-  if (!stat && !cat && intrebari.length === 0) return null;
+  if (!stat && !cat && intrebari.length === 0 && pasi.length === 0) return null;
 
   return (
     <section className="max-w-5xl mx-auto px-4 pb-8">
@@ -140,6 +142,30 @@ export default function ContextMagazin({
         )}
       </div>
 
+      {/* ── Cum folosesti codul, VIZIBIL ───────────────────────────────────
+          Aceleasi date din care se construieste schema HowTo in page.tsx, ca sa
+          nu poata diverge — aceeasi regula ca la FAQ. Google a retras rezultatele
+          imbogatite HowTo, deci valoarea e in textul citit de om, nu in marcaj. */}
+      {pasi.length > 0 && (
+        <div id="cum-folosesti" className="mt-4 bg-[#14181c] border border-[#1f2329] rounded-xl p-5">
+          <h2 className="text-lg font-black text-[#ffffff] mb-1">Cum aplici un cod de reducere pe {nume}</h2>
+          <p className="text-xs text-[#9399a0] mb-4">Dureaza sub doua minute.</p>
+          <ol className="space-y-3">
+            {pasi.map((p, i) => (
+              <li key={p.titlu} className="flex gap-3">
+                <span className="shrink-0 w-6 h-6 rounded-full bg-[#ddf93c] text-[#0c1000] font-black text-xs flex items-center justify-center tabular-nums">
+                  {i + 1}
+                </span>
+                <span className="min-w-0">
+                  <h3 className="text-sm font-bold text-[#ffffff] mb-0.5">{p.titlu}</h3>
+                  <p className="text-sm text-[#c9ced5] leading-relaxed">{p.text}</p>
+                </span>
+              </li>
+            ))}
+          </ol>
+        </div>
+      )}
+
       {/* ── Intrebari frecvente, VIZIBILE ──────────────────────────────────
           Pana pe 16.08.2026 aceste 5 intrebari existau DOAR in schema FAQPage,
           pe toate cele 1.162 de pagini de magazin, fara sa apara nicaieri pe
@@ -149,12 +175,19 @@ export default function ContextMagazin({
       {intrebari.length > 0 && (
         <div className="mt-4 bg-[#14181c] border border-[#1f2329] rounded-xl p-5">
           <h2 className="text-lg font-black text-[#ffffff] mb-4">Intrebari frecvente despre {nume}</h2>
+          {/* `details` nativ, nu accordion pe JS: continutul ramane in DOM chiar
+              inchis, deci Google il vede — cerinta pentru marcajul FAQPage. Un
+              accordion care randeaza doar la click ar reintroduce exact problema
+              „schema fara continut vizibil" reparata azi. */}
           <div className="divide-y divide-[#1f2329]">
-            {intrebari.map((q) => (
-              <div key={q.i} className="py-3.5 first:pt-0 last:pb-0">
-                <h3 className="text-sm font-bold text-[#ffffff] mb-1.5">{q.i}</h3>
-                <p className="text-sm text-[#c9ced5] leading-relaxed">{q.r}</p>
-              </div>
+            {intrebari.map((q, i) => (
+              <details key={q.i} open={i === 0} className="py-3.5 first:pt-0 last:pb-0 group">
+                <summary className="text-sm font-bold text-[#ffffff] cursor-pointer list-none flex items-start justify-between gap-3 hover:text-[#ddf93c] transition-colors">
+                  <h3 className="text-sm font-bold">{q.i}</h3>
+                  <span className="shrink-0 text-[#6b7178] group-open:rotate-180 transition-transform" aria-hidden="true">&#9662;</span>
+                </summary>
+                <p className="text-sm text-[#c9ced5] leading-relaxed mt-1.5">{q.r}</p>
+              </details>
             ))}
           </div>
         </div>

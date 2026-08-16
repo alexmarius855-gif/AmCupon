@@ -566,6 +566,49 @@ export default async function PaginaMagazin({
     },
   ];
 
+  /**
+   * Pasii de folosire a codului — o SINGURA sursa pentru textul VIZIBIL si pentru
+   * schema HowTo, exact ca la `intrebari`.
+   *
+   * NOTA ONESTA despre valoarea SEO: Google a retras rezultatele imbogatite de tip
+   * HowTo. Schema ramane valida si nu strica, dar castigul real e in textul vizibil
+   * (raspunde la o intrebare pe care omul chiar o are), nu in marcaj. Nu o adaugam
+   * pretinzand ca aduce stelute in SERP.
+   */
+  const pasiFolosire: { titlu: string; text: string }[] = [
+    {
+      titlu: `Copiaza codul de pe pagina ${nume}`,
+      text: `Apasa pe codul de reducere de mai sus. Se copiaza automat si te trimitem pe ${m.url} in acelasi timp.`,
+    },
+    {
+      titlu: "Adauga produsele in cos",
+      text: `Alege ce vrei sa cumperi de pe ${m.url} si mergi la finalizarea comenzii. Codul nu se aplica in cos, ci la ultimul pas.`,
+    },
+    {
+      titlu: "Lipeste codul la finalizarea comenzii",
+      text: 'Cauta campul "Cod promotional", "Voucher" sau "Cod reducere" si lipeste codul copiat. Apasa Aplica.',
+    },
+    {
+      titlu: "Verifica reducerea inainte de plata",
+      text: "Totalul trebuie sa scada pe loc. Daca nu scade, codul poate fi expirat sau conditionat de o valoare minima a comenzii — incearca alt cod din lista.",
+    },
+  ];
+
+  const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: `Cum aplici un cod de reducere pe ${nume}`,
+    description: `Pasii pentru a folosi un cod de reducere ${nume} la finalizarea comenzii.`,
+    totalTime: "PT2M",
+    step: pasiFolosire.map((p, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      name: p.titlu,
+      text: p.text,
+      url: `${pageUrl}#cum-folosesti`,
+    })),
+  };
+
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -584,6 +627,7 @@ export default async function PaginaMagazin({
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(offerList) }} />
       )}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <MagazinClient magazin={m} produse={produse} similare={similare} comparatii={comparatii} blogPost={blogPost} banner={banner} descriere={descriere} astazi={new Date(acumMs).toISOString().slice(0, 10)}
         context={
           <ContextMagazin
@@ -594,6 +638,7 @@ export default async function PaginaMagazin({
             urlSite={m.url}
             categorieStudiu={m.categorie_slug ? loadStudiu()[m.categorie_slug] ?? null : null}
             intrebari={intrebari}
+            pasi={pasiFolosire}
           />
         }
       />
