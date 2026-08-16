@@ -436,6 +436,11 @@ export default async function PaginaMagazin({
       are_promotie: x.are_promotie,
       cod_cupon: x.cod_cupon,
       promotii: x.promotii.map((p) => ({ nume: p.nume })),
+      // `are_promotie` NU inseamna "are cod": din 66 de magazine cu promotie, doar
+      // 6 au cod real. Fara distinctia asta, sectiunea "zero dead ends" ar trimite
+      // omul de la o pagina fara coduri la ALTA pagina fara coduri.
+      cod_real: (x.promotii || []).some((p) => (p.cod_cupon || "").trim().length > 0),
+      ultima_verificare: x.ultima_verificare,
     }));
 
   const nume = numeAfisat(m.magazin);

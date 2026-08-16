@@ -108,6 +108,10 @@ interface MagazinSimilar {
   are_promotie: boolean;
   cod_cupon: boolean;
   promotii: { nume: string }[];
+  /** Are cel putin un cod NEVID. Diferit de `are_promotie`: din 66 de magazine
+   *  cu promotie, doar 6 au cod real (masurat 16.08.2026). */
+  cod_real?: boolean;
+  ultima_verificare?: string;
 }
 
 interface BlogPostMic {
@@ -561,10 +565,51 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                 </div>
               </section>
             ) : (
-              <div className="bg-[#14181c] rounded-xl border border-[#1f2329] p-12 text-center">
-                <Ticket className="w-12 h-12 mb-4 mx-auto text-[#3a4048]" />
-                <h3 className="text-lg font-black text-[#ffffff] mb-2">Niciun cod cupon activ</h3>
-                <p className="text-[#9399a0] text-sm mb-5">Momentan nu avem coduri. Verifica sectiunea Oferte sau viziteaza direct magazinul.</p>
+              <div className="bg-[#14181c] rounded-xl border border-[#1f2329] p-8 sm:p-10">
+                {/* ZERO DEAD ENDS: cine ajunge aici a cautat un cod si nu exista.
+                    In loc de o fundatura, ii dam magazine din ACEEASI categorie
+                    care chiar au cod — filtrate pe `cod_real`, nu pe `are_promotie`
+                    (altfel l-am trimite de la o pagina fara coduri la alta). */}
+                <div className="text-center">
+                  <Ticket className="w-12 h-12 mb-4 mx-auto text-[#3a4048]" />
+                  <h3 className="text-lg font-black text-[#ffffff] mb-2">Niciun cod activ la {nume} acum</h3>
+                  <p className="text-[#9399a0] text-sm mb-5">
+                    Verificam zilnic. Pana apare unul, mai jos sunt magazine din aceeasi
+                    categorie care au cod chiar acum.
+                  </p>
+                </div>
+
+                {(() => {
+                  const cuCod = similare.filter((x) => x.cod_real).slice(0, 4);
+                  if (cuCod.length === 0) return null;
+                  return (
+                    <div className="mt-2 mb-6">
+                      <h4 className="text-xs font-bold uppercase tracking-wider text-[#c3dd2c] mb-3 text-center">
+                        Au cod activ acum
+                      </h4>
+                      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                        {cuCod.map((x) => (
+                          <a key={x.magazin} href={`/cod-reducere/${x.magazin}`}
+                            className="group bg-[#1f2329] border border-[#2a2f36] hover:border-[#ddf93c] rounded-xl p-3 text-center transition-colors">
+                            <span className="relative block w-10 h-10 mx-auto mb-2 rounded-full overflow-hidden bg-[#ffffff]">
+                              {x.logo_url && (
+                                <Image src={x.logo_url} alt="" fill sizes="40px" className="object-contain p-1" unoptimized />
+                              )}
+                            </span>
+                            <span className="block text-xs font-bold text-[#ffffff] truncate group-hover:text-[#ddf93c] transition-colors">
+                              {numeAfisat(x.magazin)}
+                            </span>
+                            <span className="block text-[10px] font-black text-[#0c1000] bg-[#ddf93c] rounded-md mt-1.5 py-0.5">
+                              COD
+                            </span>
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  );
+                })()}
+
+                <div className="text-center">
                 <div className="flex flex-wrap justify-center gap-3">
                   {faraCodd.length > 0 && (
                     <button onClick={() => setTabActiv("oferte")}
@@ -576,6 +621,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                     className="bg-[#1f2329] border border-[#2a2f36] text-[#c9ced5] font-bold px-5 py-2.5 rounded-xl text-sm hover:border-[#ddf93c] hover:text-[#ffffff] transition-colors">
                     Viziteaza {nume}
                   </a>
+                </div>
                 </div>
               </div>
             )}
