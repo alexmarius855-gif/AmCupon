@@ -12,6 +12,56 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 16.08.2026 (sitemap cu date reale + regresia feed produse REZOLVATA + linkuri interne — PUSHED):**
+- **REGRESIA FEED PRODUSE (33.096 -> 3.468) — cauza gasita, reparata, VERIFICATA pe API-ul real.**
+  E acelasi bug de paginare documentat mai jos pentru `/affiliate/programs.json`, reaparut in
+  `fetch_product_feeds.py`: **API-ul 2Performant capeaza la 20 de elemente pe pagina si ignora
+  `per_page`**. Codul cerea `per_page=50` si se oprea cu `if len(items) < 50: break` — primea 20,
+  20 < 50, deci se oprea dupa PRIMA pagina, aducand fix 20 de produse din fiecare feed.
+  - **Dovada in date, nu deductie**: din cele 86 de magazine, **20 aveau EXACT 20 de produse**.
+  - Fix: oprire pe `metadata.pagination.pages`, ca in `fetch_all_pages` din `fetch_2p_api.py`.
+    Rezerva pe `len(items) == 0` cand lipseste metadata — **niciodata pe `len(items) < per_page`**.
+  - **Verificat live** prin `.github/workflows/test-product-feeds.yml` (nou, `workflow_dispatch`,
+    `--dry-run`, nu scrie si nu comite nimic — acelasi tipar ca `test-impact-deals.yml`, fiindca
+    credentialele 2P sunt doar in Secrets si nu se poate testa local):
+    **3.512 -> 19.220 produse**, 14 feed-uri. Feed-urile au cataloage uriase (12.367 / 65.736 pagini),
+    deci plafonul e acum al nostru: `MAX_PRODUSE_PER_FEED = 1200`, ales pentru DIVERSITATE intre
+    magazine, nu ca sa umple un singur feed tot fisierul. Durata pasului: ~14 min.
+  - **Garda anti-regresie intarita**: cea existenta se declanseaza doar sub 4 MAGAZINE, si de-aia
+    regresia asta i-a trecut pe sub nas (magazinele erau 86, doar produsele se prabusisera).
+    Adaugata o garda pe numarul de PRODUSE: cadere sub 40% dintr-un fisier cu peste 1000 de produse
+    = sursa stricata, se pastreaza fisierul vechi. Ar fi prins-o din prima.
+  - Tot din rularea de test: **`liki24.nl`** intra in feed alaturi de `liki24.ro` (filtrul de
+    magazine straine exista, dar `.nl` lipsea — completat cu TLD-urile europene lipsa), si nume cu
+    spatiu/slash in coada (`"libris.ro "`, `"autoeqt.ro/"`) care produceau dubluri — normalizate la sursa.
+- **`sitemap.ts`: `lastModified: new Date()` in 120 de locuri — REPARAT.** Pipeline-ul ruleaza la 4h,
+  deci Google primea "toate cele 429 de URL-uri s-au modificat acum", de 6 ori pe zi. Cand totul pare
+  mereu proaspat, nimic nu mai pare proaspat.
+  - `scripts/track_sitemap_dates.py` (nou, in pipeline inainte de commit) -> `public/sitemap-dates.json`:
+    pagini de DATE (1210) prin **amprenta de continut** persistata in `data/sitemap_fingerprints.json`
+    (data se muta doar la schimbare reala — o promotie noua la drmax.ro muta doar drmax.ro);
+    articole (514) cu data reala de publicare; pagini statice (98) cu data ultimului commit git.
+  - Rezultat pe sitemap-ul generat: **de la 1 data unica la 20**.
+  - **CAPCANA prinsa inainte sa ajunga in CI**: `actions/checkout` cloneaza implicit cu
+    `fetch-depth: 1`, deci in Actions `git log -1 -- <fisier>` intoarce singurul commit disponibil —
+    data ultimei rulari, identica pe toate paginile. Adica exact bug-ul reparat, reintrodus tacit.
+    Scriptul detecteaza clona shallow (`git rev-parse --is-shallow-repository`) si pastreaza datele
+    calculate anterior. **Nu folosi `git log` in CI fara sa verifici asta.**
+- **Linkuri interne verificate SISTEMATIC, prima data** (`scripts/check_internal_links.py`, nou si
+  reutilizabil): 98 de pagini live, 806 linkuri interne distincte, fiecare cerut efectiv -> **3 rupte**.
+  Toate linkurile moarte de pana acum fusesera gasite din intamplare; scriptul iese cu cod 1, deci
+  poate fi pus si intr-un workflow.
+  1. **`/categorii/telecom` (404)** — ACELASI bug de subsir, a treia oara: `/categorii` numara
+     magazinele cu `includes(kw)` pe slug/nume, deci `telecom` parea populat (de la "orange"/"digi"
+     gasite in numele ALTOR magazine), dar pagina nu se genereaza niciodata (`generateStaticParams`
+     deriva din `categorie_slug` real). Fix: potrivire exacta + categoriile fara magazine se ascund
+     singure. **Mai grav decat linkul vizibil**: acelasi URL inexistent era emis si in JSON-LD
+     (`ItemList`) — il declaram lui Google ca pagina reala. Acum si ItemList, si numarul "N categorii"
+     folosesc lista filtrata. Verificat pe build: 0 aparitii, 17 categorii reale.
+  2-3. Doua linkuri de pe `/gadgets` catre articole inexistente: "Camere actiune" -> `/top/camere-actiune`
+     (pagina reala), "Gadgeturi sub 100 lei" **sters** (articolul nu exista si n-are echivalent — o
+     redirectare aiurea ar fi fost o promisiune falsa).
+
 **UPDATE 14.08.2026 (categorii reale pe paginile de nisa + 58 logo-uri rupte — PUSHED, 3 commits):**
 - **CAUZA RADACINA, acelasi tipar in 3 straturi: potrivire pe SUBSIR acolo unde exista un camp EXACT.**
   22 de pagini de nisa filtrau magazinele cu liste de cuvinte-cheie scrise de mana
