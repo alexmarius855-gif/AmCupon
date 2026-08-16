@@ -93,6 +93,28 @@ def main():
         ids = {p.get("advertiser_id") for p in prod if isinstance(p, dict)}
         return ids, len(prod), (rez.get("total_pages") if isinstance(rez, dict) else None)
 
+    # TEST DECISIV, adaugat dupa ce doua strategii de esantionare au esuat:
+    # e paginarea STABILA? Faza 1 gasea 18 magazine, dar faza 2 lua produse doar
+    # de la 3 — chiar si citind in ambele directii din pagina-ancora. Daca aceeasi
+    # pagina intoarce alt continut la a doua cerere, orice strategie bazata pe
+    # "magazinul X sta la pagina N" e invalida din start, si atunci nu are rost
+    # sa mai caut al treilea truc de esantionare.
+    print("")
+    print("=" * 66)
+    print("Paginarea e STABILA? (aceeasi pagina, doua cereri)")
+    print("=" * 66)
+    for nr in (1, 500, 5000):
+        a, _ = (lambda r: (r.get("result", {}).get("products", []) if isinstance(r, dict) else [], None))(
+            ps_get("affiliate-products", {"page": nr, "results_per_page": 20}))
+        b, _ = (lambda r: (r.get("result", {}).get("products", []) if isinstance(r, dict) else [], None))(
+            ps_get("affiliate-products", {"page": nr, "results_per_page": 20}))
+        na = [x.get("advertiser_name") for x in a]
+        nb = [x.get("advertiser_name") for x in b]
+        ta = [x.get("name") for x in a]
+        tb = [x.get("name") for x in b]
+        print(f"  pagina {nr:5d}: magazine {sorted(set(na))[:2]} vs {sorted(set(nb))[:2]}"
+              f"  |  produse identice: {'DA' if ta == tb else 'NU'}")
+
     print("")
     print("=" * 66)
     print("Se poate FILTRA pe magazin? (altfel: 17.220 de pagini de parcurs)")
