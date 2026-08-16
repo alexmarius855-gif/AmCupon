@@ -4,6 +4,7 @@ import fs from "fs";
 import path from "path";
 import MagazinClient from "./MagazinClient";
 import { buildMerchantTokens, esteIndexabil } from "../../../lib/seoIndexable";
+import ContextMagazin, { type CategorieStudiu } from "./ContextMagazin";
 
 interface Promotie {
   nume: string;
@@ -250,6 +251,26 @@ let _tokensCache: Set<string> | null = null;
 function merchantTokens(): Set<string> {
   if (!_tokensCache) _tokensCache = buildMerchantTokens(loadAllProducts());
   return _tokensCache;
+}
+
+let _studiuCache: Record<string, CategorieStudiu> | null = null;
+/**
+ * Datele studiului propriu, indexate pe slug de categorie. Alimenteaza sectiunea
+ * "X fata de restul categoriei" — context real pe FIECARE pagina de magazin, nu
+ * doar pe cele cu produse in feed.
+ */
+function loadStudiu(): Record<string, CategorieStudiu> {
+  if (_studiuCache) return _studiuCache;
+  try {
+    const p = path.join(process.cwd(), "public", "studiu-cupoane.json");
+    const raw = JSON.parse(fs.readFileSync(p, "utf-8"));
+    _studiuCache = Object.fromEntries(
+      (raw.categorii || []).map((c: CategorieStudiu) => [c.slug, c])
+    );
+  } catch {
+    _studiuCache = {};
+  }
+  return _studiuCache;
 }
 
 function loadProducts(slug: string): Produs[] {
@@ -504,53 +525,50 @@ export default async function PaginaMagazin({
     } : {}),
   };
 
+  /**
+   * Intrebarile frecvente — o SINGURA sursa pentru textul VIZIBIL si pentru schema.
+   *
+   * Bug reparat 16.08.2026: emiteam `FAQPage` cu 5 intrebari pe toate cele 1.162 de
+   * pagini de magazin, dar NICIUNA nu aparea pe pagina. Google cere explicit ca
+   * un continut marcat FAQPage sa fie vizibil utilizatorului; marcaj ascuns e
+   * motiv de actiune manuala, nu doar de ignorare. Verificat pe HTML-ul generat
+   * inainte de fix: 5 intrebari in schema, 0 in textul paginii.
+   *
+   * Acum schema se DERIVA din acest array, deci cele doua nu mai pot diverge.
+   */
+  const intrebari: { i: string; r: string }[] = [
+    {
+      i: `Cum folosesc codul de reducere ${nume}?`,
+      r: `Copiază codul de reducere ${nume} de pe AmCupon.ro, adaugă produsele în coș pe ${m.url}, iar la finalizarea comenzii introdu codul în câmpul "Cod promoțional" sau "Voucher". Reducerea se aplică automat înainte de plată.`,
+    },
+    {
+      i: `Codul de reducere ${nume} este verificat?`,
+      r: `Da. AmCupon.ro verifică și actualizează zilnic toate codurile ${nume}, împreună cu zilele rămase de valabilitate pentru fiecare cod în parte.`,
+    },
+    {
+      i: `Câte oferte active are ${nume} acum?`,
+      r: nrPromo > 0
+        ? `${nume} are ${nrPromo} ofert${nrPromo > 1 ? "e" : "ă"} active în ${luna} ${an}${nrCod > 0 ? `, dintre care ${nrCod} cu cod de reducere` : ""}. Toate sunt verificate și actualizate zilnic pe AmCupon.ro.`
+        : `Verificăm zilnic promoțiile ${nume}. Revino în curând pentru oferte noi.`,
+    },
+    {
+      i: "Este AmCupon.ro gratuit?",
+      r: "Da, AmCupon.ro este 100% gratuit pentru utilizatori. Nu plătești nimic în plus față de prețul normal al produselor. Noi primim un mic comision de la magazine din bugetul lor de marketing, fără costuri suplimentare pentru tine.",
+    },
+    {
+      i: `Ce categorie de produse oferă ${nume}?`,
+      r: `${nume} este un magazin din categoria ${m.categorie}. ${descCustom ? descCustom.split(".")[0] + "." : `Găsești coduri de reducere ${nume} actualizate zilnic pe AmCupon.ro.`}`,
+    },
+  ];
+
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: `Cum folosesc codul de reducere ${nume}?`,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: `Copiază codul de reducere ${nume} de pe AmCupon.ro, adaugă produsele în coș pe ${m.url}, iar la finalizarea comenzii introdu codul în câmpul „Cod promoțional" sau „Voucher". Reducerea se aplică automat înainte de plată.`,
-        },
-      },
-      {
-        "@type": "Question",
-        name: `Codul de reducere ${nume} este verificat?`,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: `Da. AmCupon.ro verifică și actualizează zilnic toate codurile ${nume}, împreună cu zilele rămase de valabilitate pentru fiecare cod în parte.`,
-        },
-      },
-      {
-        "@type": "Question",
-        name: `Câte oferte active are ${nume} acum?`,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: nrPromo > 0
-            ? `${nume} are ${nrPromo} ofert${nrPromo > 1 ? "e" : "ă"} active în ${luna} ${an}${nrCod > 0 ? `, dintre care ${nrCod} cu cod de reducere` : ""}. Toate sunt verificate și actualizate zilnic pe AmCupon.ro.`
-            : `Verificăm zilnic promoțiile ${nume}. Revino în curând pentru oferte noi.`,
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Este AmCupon.ro gratuit?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Da, AmCupon.ro este 100% gratuit pentru utilizatori. Nu plătești nimic în plus față de prețul normal al produselor. Noi primim un mic comision de la magazine din bugetul lor de marketing, fără costuri suplimentare pentru tine.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: `Ce categorie de produse oferă ${nume}?`,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: `${nume} este un magazin din categoria ${m.categorie}. ${descCustom ? descCustom.split(".")[0] + "." : `Găsești coduri de reducere ${nume} actualizate zilnic pe AmCupon.ro.`}`,
-        },
-      },
-    ],
+    mainEntity: intrebari.map((q) => ({
+      "@type": "Question",
+      name: q.i,
+      acceptedAnswer: { "@type": "Answer", text: q.r },
+    })),
   };
 
   return (
@@ -561,7 +579,19 @@ export default async function PaginaMagazin({
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(offerList) }} />
       )}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <MagazinClient magazin={m} produse={produse} similare={similare} comparatii={comparatii} blogPost={blogPost} banner={banner} descriere={descriere} astazi={new Date(acumMs).toISOString().slice(0, 10)} />
+      <MagazinClient magazin={m} produse={produse} similare={similare} comparatii={comparatii} blogPost={blogPost} banner={banner} descriere={descriere} astazi={new Date(acumMs).toISOString().slice(0, 10)}
+        context={
+          <ContextMagazin
+            nume={m.magazin}
+            produse={produse}
+            categorieSlug={m.categorie_slug}
+            categorie={m.categorie}
+            urlSite={m.url}
+            categorieStudiu={m.categorie_slug ? loadStudiu()[m.categorie_slug] ?? null : null}
+            intrebari={intrebari}
+          />
+        }
+      />
     </>
   );
 }

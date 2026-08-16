@@ -208,7 +208,7 @@ interface Banner2P {
   name: string; category: string; b_type: string;
 }
 
-export default function MagazinClient({ magazin: m, produse = [], similare = [], comparatii = [], blogPost = null, banner = null, descriere = null, astazi }: {
+export default function MagazinClient({ magazin: m, produse = [], similare = [], comparatii = [], blogPost = null, banner = null, descriere = null, astazi, context = null }: {
   magazin: Magazin;
   produse?: Produs[];
   similare?: MagazinSimilar[];
@@ -217,6 +217,9 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
   banner?: Banner2P | null;
   descriere?: { titlu: string; paragrafe: string[] } | null;
   astazi: string; // data serverului (YYYY-MM-DD), pt comparatie reala cu ultima_verificare
+  /** Slot SERVER-rendered (ContextMagazin) — textul trebuie sa fie in HTML, nu
+   *  adaugat dupa hidratare, altfel nu conteaza pentru indexare. */
+  context?: React.ReactNode;
 }) {
   const [revealed, setRevealed]   = useState<Set<number>>(new Set());
   // Cascada de logo, ca in MagazinCard: sursa din date -> favicon Google ->
@@ -718,6 +721,11 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
           </div>
         </div>
 
+
+        {/* ── CONTEXT REAL (server-rendered) ───────────────────────────────
+            Preturi din feed + pozitia magazinului in categoria lui. Vine ca slot
+            din page.tsx ca sa fie in HTML-ul livrat, nu adaugat dupa hidratare. */}
+        {context}
 
         {/* ── ARTICOL BLOG ─────────────────────────────────────────────────── */}
         {blogPost && (
