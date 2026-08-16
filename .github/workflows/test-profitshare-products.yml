@@ -43,3 +43,10 @@ jobs:
             echo "PROFITSHARE_USER nu e setat — nu se poate sonda"; exit 1
           fi
           python probe_profitshare_products.py
+
+      - name: Test fetcher-ul real (dry-run, nu scrie nimic)
+        working-directory: scripts
+        env:
+          PROFITSHARE_USER: ${{ secrets.PROFITSHARE_USER }}
+          PROFITSHARE_KEY:  ${{ secrets.PROFITSHARE_KEY }}
+        run: python fetch_profitshare_products.py --dry-run
