@@ -413,12 +413,23 @@ jobs:
       # ── 14. Commit & Push ─────────────────────────────────────────────────
       # IMPORTANT: commit INAINTE de social posting
       # Asa bannerele sunt live pe amcupon.ro cand postam pe Instagram
+      # ── lastModified real in sitemap ──────────────────────────────────────
+      # Ruleaza DUPA ce toate datele sunt generate si INAINTE de commit: paginile
+      # de date isi muta data doar cand amprenta de continut chiar s-a schimbat,
+      # nu la fiecare rulare de 4h (vezi scripts/track_sitemap_dates.py).
+      - name: Calculeaza lastModified real pentru sitemap
+        continue-on-error: true
+        working-directory: scripts
+        run: python track_sitemap_dates.py
+
       - name: Commit si push date actualizate
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           git add frontend/public/output.json          || true
+          git add frontend/public/sitemap-dates.json   || true
+          git add data/sitemap_fingerprints.json       || true
           git add data/extra_merchants.json            || true
           git add frontend/public/digest-today.json    || true
           git add data/digest-today.txt                || true
