@@ -12,6 +12,58 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 17.08.2026 (5 module CRO + ruta `/go` — PUSHED, 6 commits):**
+- **Cautare globala cu Cmd+K** (`app/components/SearchModal.tsx`, nou). O SINGURA implementare:
+  cautarea inline din `Navbar.tsx` a fost **stearsa complet** (stari, efecte, dropdown, `MagazinMini`),
+  navbarul doar emite `window.dispatchEvent(new Event("amcupon:cauta"))`. Doua cautari paralele s-ar
+  fi desincronizat — tiparul deja lovit de doua ori aici.
+  - Indexul (`nav-index.json`) se incarca **lazy, la prima deschidere**, nu la fiecare pagina.
+  - Scoring propriu (~30 de linii), fara librarie de fuzzy — un pachet in plus pentru atat n-avea sens.
+  - **NU are badge "Exclusiv"** desi brief-ul il cerea: 0 magazine au campul `exclusiv`. Ar fi fost
+    fabricat.
+  - Gotcha rezolvat la radacina, nu suprimat: `react-hooks/set-state-in-effect` — incarcarea datelor si
+    resetarea selectiei se fac in ACTIUNEA de deschidere, nu intr-un efect.
+- **Vot comunitar pe cupoane, cu rate-limiting REAL** (modulul 2). Reconstruieste ceva **sters pe 09.08**
+  (widget-ul care scria doar in `localStorage`) — legitim doar fiindca acum voturile ajung intr-o baza reala.
+  - Supabase: tabela `voturi_cupoane` + `unique index voturi_unic_per_ip on (magazin, cupon_hash, ip_hash)`
+    — **rate-limitul e o constrangere de Postgres, nu un cookie** (cookie-ul se sterge, constrangerea nu).
+    `revoke all ... from anon` + doua functii `SECURITY DEFINER` (`voteaza_cupon`, `totaluri_voturi`);
+    clientul nu atinge tabela direct. Testat: doua voturi de pe acelasi IP = unul singur.
+  - `api/vote/route.ts` — `runtime = "nodejs"`, IP-ul se **hasheaza cu salt** (nu se stocheaza brut),
+    si intoarce **503 cand baza pica** — NU pretinde succes. Nu e teoretic: Supabase free tier s-a
+    auto-pauzat a **4-a oara** (era INACTIVE si in ziua asta, repornit).
+  - `VotCupon.tsx`: `PRAG_AFISARE = 3` — sub 3 voturi nu se afiseaza niciun procent (un "100%" din 1 vot
+    ar fi exact cifra inventata eliminata pe 03.07). `hashCupon(cod, nume)` — amprenta pe **cod+nume**,
+    NU pe indexul din array: la reordonarea promotiilor voturile ar fi sarit pe alt cupon.
+- **Zero fundaturi** (modulul 3): pagina de magazin fara cod propune acum magazine cu **cod REAL**, nu cu
+  `are_promotie`. Din 66 de magazine cu promotie, doar **6** au cod nevid — filtrarea "naturala" pe
+  `are_promotie` ar fi trimis omul de la o pagina fara coduri la ALTA pagina fara coduri. Daca in categorie
+  nu exista niciun cod, grila **nu se randeaza deloc**.
+- **Filtre rapide** (`FiltreRapide.tsx`, nou) — **fiecare filtru se afiseaza doar daca are rezultate**, si
+  isi arata numarul; cele goale dispar singure si reapar cand datele se imbogatesc. Brief-ul cerea si
+  "Exclusive" — 0 rezultate, deci nu exista. Numere reale: cod 6 · reducere >=50% 15 · transport 6 ·
+  expira 2. **Capcana**: `zile_ramase: 0` e valoarea HARDCODATA la importurile Awin/generice, deci
+  inseamna "necunoscut", nu "expira azi" — fara conditia `z > 0` am fi afisat fals "expira curand" la sute
+  de magazine.
+- **HowTo + FAQ vizibile** (modulul 5), in `ContextMagazin.tsx`. Doua note:
+  - **Google a retras rezultatele imbogatite HowTo** — schema ramane valida, dar castigul real e textul
+    citit de om. Nu a fost adaugata pretinzand stelute in SERP.
+  - Accordionul e **`details`/`summary` NATIV**, nu unul pe JS: un accordion care monteaza continutul abia
+    la click ar fi reintrodus pe alta usa exact bug-ul reparat pe 16.08 ("FAQPage fara continut vizibil").
+    Cu `details`, textul e in DOM si cand e inchis.
+- **`/go/[magazin]`** (`app/go/[magazin]/route.ts`, nou) — redirect de afiliere pe SERVER. Ruta fusese
+  **respinsa explicit pe 08.08**; Alex a cerut-o din nou si a confirmat. Ce adauga: componenta client
+  rescrie linkurile la click, deci merge doar pe site cu JS pornit — ruta merge in **newsletter, social,
+  Telegram, WhatsApp**. **NU rescrie linkurile existente de pe site** (acelea merg si aduc comision; un hop
+  in plus n-ar castiga nimic) — e o a doua intrare, nu un inlocuitor.
+  - Sub-id-ul s-a mutat in **`frontend/lib/subId.ts`**, importat SI de ruta SI de `AffiliateClickTracker` —
+    altfel doua harti de parametri care se desincronizeaza.
+  - Verificat pe build de productie: `/go/drmax.ro` -> 302 catre 2Performant cu `&st=go`;
+    `/go/emag.ro?de=newsletter_august` -> `sub_id=emag.ro~newsletter_august` (valoarea existenta se
+    PASTREAZA, eticheta se adauga dupa `~`); magazin necunoscut -> `/cautare?q=...`, nu 404 sec.
+    Headere: `X-Robots-Tag: noindex, nofollow` + `Cache-Control: no-store`; `/go/` in `robots.txt`.
+  - **302, nu 301**: linkul de tracking se poate schimba, iar un 301 ramane in cache-ul browserului la infinit.
+
 **UPDATE 16.08.2026 — partea a 3-a (adancime pagina magazin + de ce indexarea NU se poate forta — PUSHED):**
 - **De ce nu deschidem cele 1.075 de pagini `noindex` — masurat, nu presupus.** Doar **87 din 1.162**
   de pagini de magazin sunt indexabile. Am verificat daca decizia din 10.08 mai e valida acum ca
@@ -853,7 +905,7 @@ platite/risc de ban). Schimba vocea cu `--voice ro-RO-AlinaNeural` (feminin).
 | **Newsletter — posibil deblocat (de confirmat)** | Alex a raportat 20.07.2026 că primește email-uri — sender-ul Brevo pare validat de-acum (spre deosebire de blocajul `HTTP 400 Sender is invalid` documentat anterior). Verifică explicit în Brevo → Settings → Senders înainte să presupui rezolvat. | Dacă e confirmat validat, șterge acest rând și marchează alertele de preț ca funcționale. |
 | **Alerte de preț (`check_price_alerts.py`) nu pot citi/scrie abonamentele** | Atributul custom `ALERT_STORES` nu există încă în Brevo | Brevo → Contacts → Settings → Contact attributes → adaugă atribut tip **Text** cu numele exact `ALERT_STORES`. Fără el, tag-ul de magazin se pierde silențios (Brevo ignoră atribute necunoscute). |
 | **Seria de bun-venit (ziua 3/7, `send_welcome_series.py`, nou 09.08.2026) nu poate funcționa încă** | Atributul custom `WELCOME_STEP` nu există încă în Brevo — același gotcha ca `ALERT_STORES` | Brevo → Contacts → Settings → Contact attributes → adaugă atribut tip **Text** cu numele exact `WELCOME_STEP`. Fără el, `route.ts` nu poate marca "a primit ziua 0" și scriptul nu găsește niciodată contacte eligibile. |
-| Proiectul Supabase (`reviews`) se poate re-pauza automat | Free tier — pauzează după ~1 săptămână fără activitate API. **Găsit pauzat + repornit din nou pe 17.07.2026** (al 2-lea episod cunoscut) | Dacă recenziile dispar brusc, verifică status proiect (Supabase dashboard sau MCP `list_projects`) și repornește cu `restore_project`. Risc recurent pe free tier dacă traficul pe `/cod-reducere/*` scade — merită verificat periodic, nu doar cand se sesizeaza o problema. |
+| Proiectul Supabase (`reviews`) se poate re-pauza automat | Free tier — pauzează după ~1 săptămână fără activitate API. **Găsit pauzat + repornit din nou pe 16.08.2026** (al 4-lea episod cunoscut). Din 16.08 baza tine si tabela `voturi_cupoane` — daca voturile nu se mai inregistreaza, primul lucru de verificat e statusul proiectului | Dacă recenziile dispar brusc, verifică status proiect (Supabase dashboard sau MCP `list_projects`) și repornește cu `restore_project`. Risc recurent pe free tier dacă traficul pe `/cod-reducere/*` scade — merită verificat periodic, nu doar cand se sesizeaza o problema. |
 | **`FACEBOOK_PAGE_TOKEN` setat dar invalid** | Corectat 20.07.2026: nu "lipsește" cum scria — secretul E setat, dar Actions dă `Bad signature` (OAuthException) la fiecare rulare, adica tokenul a expirat/e gresit | Regenerează Page Access Token (Meta for Developers → tools → Graph API Explorer, cere long-lived token) + actualizează în GitHub Secrets. Workaround manual: `POSTEAZA-FB.bat` pe Desktop |
 | `TRADETRACKER_SITE_ID/API_KEY` lipsesc | Cod gata, neactiv | Adaugă în GitHub Secrets dacă se folosește TradeTracker |
 | **CJ Affiliate — cont creat, 0 date importate** | Alex a aplicat, dar n-a trimis inca export CSV | Exporta din CJ dashboard → Advertisers → programe "joined" (CSV), trimite-l ca sa fie importat la fel ca Awin |
@@ -1087,6 +1139,12 @@ folosim lime acolo.
 | `data/price_alert_snapshot.json` | Snapshot coduri active per magazin, folosit pentru detectarea codurilor noi |
 | `frontend/lib/supabase.ts` | Client Supabase (proiect `ktfoaqprezeqzoeuohnh`) pentru `reviews` — URL + cheie anon hardcodate ca fallback |
 | `frontend/app/cod-reducere/[magazin]/ReviewSection.tsx` | Tab Recenzii pe pagina de magazin — citire + formular submit, moderare manuală din Supabase dashboard |
+| `frontend/lib/subId.ts` | Sub-id de atribuire pe retele — SURSA UNICA, importata si de `/go/[magazin]/route.ts` si de `AffiliateClickTracker.tsx`. Orice retea noua se adauga AICI, nu in doua locuri |
+| `frontend/app/go/[magazin]/route.ts` | Redirect de afiliere pe server (302 + noindex). Pentru newsletter/social/Telegram, unde JS-ul nostru nu ruleaza. `?de=eticheta` marcheaza sursa clicului |
+| `frontend/app/components/SearchModal.tsx` | Cautare globala Cmd+K. Singura cautare din site (navbarul doar emite evenimentul `amcupon:cauta`) |
+| `frontend/app/components/VotCupon.tsx` | Vot "a functionat / n-a functionat" pe cupon. Nu afiseaza procent sub 3 voturi |
+| `frontend/app/api/vote/route.ts` | Primeste votul, hasheaza IP-ul cu salt, apeleaza RPC-ul Supabase. 503 daca baza pica — nu pretinde succes |
+| `frontend/app/components/FiltreRapide.tsx` | Filtre rapide care se ascund singure cand n-au rezultate; `trecePrinFiltru()` e reutilizabil pe orice lista de magazine |
 | `scripts/retheme_pages.js` | Transformator regex bulk pentru rebrand-uri de scară mare |
 | `.github/workflows/update-data.yml` | Pipeline cron GitHub Actions |
 
