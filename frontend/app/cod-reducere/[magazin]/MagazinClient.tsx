@@ -219,7 +219,12 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
   astazi: string; // data serverului (YYYY-MM-DD), pt comparatie reala cu ultima_verificare
 }) {
   const [revealed, setRevealed]   = useState<Set<number>>(new Set());
-  const [imgOk, setImgOk]         = useState(true);
+  // Cascada de logo, ca in MagazinCard: sursa din date -> favicon Google ->
+  // favicon DuckDuckGo -> initiala. Masurat pe 1167 magazine (14.08.2026): 58 de
+  // logo_url dau non-200, iar dintre acestea Google acopera 0 (43 erau DEJA
+  // favicon Google mort) si DuckDuckGo recupereaza 33. Pagina asta avea un singur
+  // pas, deci pica direct pe initiala inclusiv acolo unde exista logo real.
+  const [logoIdx, setLogoIdx] = useState(0);
   // Tab-ul implicit = primul care are CONTINUT REAL, nu mereu "coduri".
   // Bug de conversie gasit 08.08.2026: 55 din 62 de magazine cu oferte active au 0
   // coduri (temu, shein, emag, trendyol, fashiondays...). Pagina se deschidea pe tabul
@@ -258,6 +263,13 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
 
   // Vizualizari deterministe
   const culoare = "bg-gradient-to-br from-[#ddf93c] to-[#c3dd2c]";
+  const domeniuLogo = (m.magazin || "").match(/[a-z0-9-]+\.[a-z]{2,}(?:\.[a-z]{2,})?/i)?.[0] || null;
+  const logoSurse = [
+    m.logo_url,
+    domeniuLogo ? `https://www.google.com/s2/favicons?domain=${domeniuLogo}&sz=128` : null,
+    domeniuLogo ? `https://icons.duckduckgo.com/ip3/${domeniuLogo}.ico` : null,
+  ].filter(Boolean) as string[];
+  const logoSrc = logoSurse[logoIdx];
 
   function copiazaCod(idx: number, cod: string, link?: string) {
     setRevealed(prev => new Set(prev).add(idx));
@@ -320,12 +332,16 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
 
             {/* Logo */}
             <div className="relative w-20 h-20 rounded-xl overflow-hidden flex items-center justify-center bg-[#ffffff] border border-[#2a2f36] p-1.5 shrink-0 shadow-xl shadow-black/40">
-              {m.logo_url && imgOk ? (
-                <Image src={m.logo_url} alt={`Logo ${nume}`} fill sizes="80px" className="object-contain p-1.5"
-                  onError={() => setImgOk(false)} unoptimized />
+              {logoSrc ? (
+                <Image src={logoSrc} alt={`Logo ${nume}`} fill sizes="80px" className="object-contain p-1.5"
+                  onError={() => setLogoIdx((i) => i + 1)} unoptimized />
               ) : (
                 <div className={`w-full h-full rounded-xl ${culoare} flex items-center justify-center`}>
-                  <span className="text-white font-black text-3xl">{initiala}</span>
+                  {/* Text INCHIS pe lime: `culoare` vine dintr-o variabila, deci perechea
+                      fundal+text nu apare in acelasi className si nicio migrare automata
+                      de culori n-avea cum s-o vada (tiparul 2 din CLAUDE.md). Alb pe
+                      #ddf93c era invizibil — pe pagina care aduce comisionul. */}
+                  <span className="text-[#0c1000] font-black text-3xl">{initiala}</span>
                 </div>
               )}
             </div>

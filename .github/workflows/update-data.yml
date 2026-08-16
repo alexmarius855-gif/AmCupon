@@ -162,6 +162,19 @@ jobs:
             echo "data/promotii_2p.csv lipsa — skip import CSV"
           fi
 
+      # ── 5a-0. Repara logo-urile moarte (imagini rupte pe carduri) ──────────
+      # Ruleaza doar pe rularea completa de dimineata: face ~1170 de cereri HTTP.
+      # merge_platforms.py trimite logo-urile cu sursa moarta catre faviconul
+      # Google, dar nimeni nu verifica daca ACELA raspunde — masurat 14.08.2026:
+      # 43 din 58 de logo-uri rupte erau exact acel fallback, mort. Scriptul
+      # verifica live si cade in ordine: pastreaza > Google > DuckDuckGo > gol
+      # (gol = initialele magazinului in UI, mai curat decat imagine stricata).
+      - name: Repara logo-uri de magazin care nu se incarca
+        if: env.IS_FULL_DAILY == 'true'
+        continue-on-error: true
+        working-directory: scripts
+        run: python fix_logo_urls.py
+
       # ── 5a-1. Scor comercianti + postari zilnice gata de copiat ─────────────
       - name: Calculeaza scor comercianti si genereaza postari zilnice
         working-directory: scripts

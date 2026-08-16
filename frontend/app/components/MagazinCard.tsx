@@ -101,7 +101,14 @@ export default function MagazinCard({ m, numeOverride, astazi, isFavorit, onTogg
   const copiat = copiedKey === m.magazin;
 
   const domeniu = (m.magazin || "").match(/[a-z0-9-]+\.[a-z]{2,}(?:\.[a-z]{2,})?/i)?.[0] || null;
-  const logoSurse = [m.logo_url, domeniu ? `https://www.google.com/s2/favicons?domain=${domeniu}&sz=128` : null].filter(Boolean) as string[];
+  const logoSurse = [
+    m.logo_url,
+    domeniu ? `https://www.google.com/s2/favicons?domain=${domeniu}&sz=128` : null,
+    // DuckDuckGo ca al treilea pas: din 58 de logo-uri rupte masurate pe date
+    // reale, 43 erau deja favicon Google mort (deci pasul 2 nu ajuta), iar
+    // DuckDuckGo recupereaza 33 dintre ele. Restul cad pe initiale, corect.
+    domeniu ? `https://icons.duckduckgo.com/ip3/${domeniu}.ico` : null,
+  ].filter(Boolean) as string[];
   const [logoIdx, setLogoIdx] = useState(0);
   const logoSrc = logoSurse[logoIdx];
 
