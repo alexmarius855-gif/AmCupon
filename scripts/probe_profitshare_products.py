@@ -78,31 +78,62 @@ def main():
     print(f"\n{len(programe)} programe. Testez pe: "
           + ", ".join(f"{n} (id {i})" for i, n in candidati))
 
-    for endpoint in ENDPOINTURI:
-        for param in NUME_PARAM_ADVERTISER:
-            for pid, nume in candidati:
-                raspuns = ps_get(endpoint, {param: pid, "page": 1, "results_per_page": 5})
-                # ps_get intoarce None la eroare si [] la 500 (cont fara acces)
-                if not raspuns:
-                    continue
+    # RUNDA 1 confirmata (16.08.2026): endpoint 'affiliate-products' cu param
+    # 'advertiser' RASPUNDE, dar FILTRUL E IGNORAT — am cerut eMAG (id 35) si am
+    # primit produse Anvelino (advertiser_id 165505). Raspunsul are 17.220 pagini
+    # x 20 = ~344.400 de produse din TOATE magazinele, amestecate. Campurile sunt
+    # mai bogate decat la 2P: categorie in ROMANA, affiliate_link deja cu tracking,
+    # free_shipping, price_discounted.
+    #
+    # Intrebarea care decide arhitectura: se poate cere pe magazin, sau trebuie
+    # parcurse 17.220 de pagini? Diferenta e intre ~60 de cereri si ~17.000.
+    def desfa(raspuns):
+        rez = raspuns.get("result", raspuns) if isinstance(raspuns, dict) else {}
+        prod = rez.get("products", []) if isinstance(rez, dict) else []
+        ids = {p.get("advertiser_id") for p in prod if isinstance(p, dict)}
+        return ids, len(prod), (rez.get("total_pages") if isinstance(rez, dict) else None)
 
-                print("\n" + "=" * 66)
-                print(f"RASPUNS BUN: endpoint='{endpoint}'  parametru='{param}'  advertiser={pid} ({nume})")
-                print("=" * 66)
-                brut = json.dumps(raspuns, ensure_ascii=False, indent=2)
-                print(brut[:4000])
-                if len(brut) > 4000:
-                    print(f"\n... ({len(brut)} caractere in total, trunchiat)")
-                print("\n" + "=" * 66)
-                print("NU s-a scris nimic. Cu forma asta a raspunsului se poate scrie")
-                print("acum parserul si integrarea in fetch_product_feeds.py.")
-                return 0
+    print("")
+    print("=" * 66)
+    print("Se poate FILTRA pe magazin? (altfel: 17.220 de pagini de parcurs)")
+    print("=" * 66)
+    ep = "affiliate-products"
+    tinta, nume_tinta = candidati[0]
+    print(f"Cer produse pentru {nume_tinta} (id {tinta}) si verific ce advertiser_id vine inapoi.")
+    for param in ["advertiser", "advertiser_id", "advertisers", "id",
+                  "filter[advertiser]", "advertiser_ids"]:
+        r = ps_get(ep, {param: tinta, "page": 1, "results_per_page": 20})
+        if not r:
+            print(f"  {param:18s} fara raspuns")
+            continue
+        ids, n, tp = desfa(r)
+        if ids == {tinta}:
+            print(f"  {param:18s} {n:2d} produse, doar advertiser {tinta} -> FILTREAZA")
+            print("")
+            print(f"  => se poate cere pe magazin cu '{param}'. Cateva cereri per magazin.")
+            return 0
+        print(f"  {param:18s} {n:2d} produse, id-uri primite {sorted(i for i in ids if i)[:3]}, "
+              f"total_pages={tp} -> ignorat")
 
-    print("\n" + "=" * 66)
-    print("Niciun endpoint de produse nu a raspuns.")
-    print("Inseamna sau ca planul contului nu are acces la produse, sau ca")
-    print("endpoint-ul se numeste altfel. Nu e o eroare de cod si NU s-a scris nimic.")
-    print("Pas urmator: intreaba suportul Profitshare care e ruta pentru getProducts.")
+    print("")
+    print("  => niciun parametru nu filtreaza. Verific cat de repede apar magazine")
+    print("     noi la parcurgere secventiala, ca sa stiu daca strategia e fezabila:")
+    vazute = {}
+    pagini = 0
+    for pagina in range(1, 41):
+        r = ps_get(ep, {"page": pagina, "results_per_page": 20})
+        if not r:
+            break
+        pagini += 1
+        rez = r.get("result", {}) if isinstance(r, dict) else {}
+        for p in rez.get("products", []):
+            k = p.get("advertiser_name") or str(p.get("advertiser_id"))
+            vazute[k] = vazute.get(k, 0) + 1
+    print(f"     dupa {pagini} pagini ({pagini * 20} produse): {len(vazute)} magazine distincte")
+    for k, v in sorted(vazute.items(), key=lambda x: -x[1])[:12]:
+        print(f"       {v:4d}  {k}")
+    print("")
+    print("  NU s-a scris nimic.")
     return 0
 
 
