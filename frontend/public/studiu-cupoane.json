@@ -1,0 +1,191 @@
+{
+  "generat": "2026-08-16",
+  "total_magazine": 1162,
+  "cu_promotie": 66,
+  "cu_cod_real": 6,
+  "doar_oferta": 60,
+  "procent_cu_promotie": 5.7,
+  "procent_cu_cod": 0.5,
+  "reducere_mediana_generala": 29.0,
+  "magazine_cu_procent_declarat": 38,
+  "categorii": [
+    {
+      "slug": "carti-educatie",
+      "nume": "Cărți & educație",
+      "magazine": 36,
+      "cu_promotie": 8,
+      "reducere_mediana": 50,
+      "reducere_max": 90,
+      "esantion": 5
+    },
+    {
+      "slug": "fashion",
+      "nume": "Fashion",
+      "magazine": 108,
+      "cu_promotie": 10,
+      "reducere_mediana": 48.5,
+      "reducere_max": 80,
+      "esantion": 6
+    },
+    {
+      "slug": "sanatate",
+      "nume": "Sănătate & farmacie",
+      "magazine": 61,
+      "cu_promotie": 10,
+      "reducere_mediana": 21.5,
+      "reducere_max": 35,
+      "esantion": 6
+    },
+    {
+      "slug": "casa-gradina",
+      "nume": "Casă & grădină",
+      "magazine": 143,
+      "cu_promotie": 16,
+      "reducere_mediana": 12.5,
+      "reducere_max": 70,
+      "esantion": 10
+    },
+    {
+      "slug": "marketplace",
+      "nume": "Marketplace",
+      "magazine": 219,
+      "cu_promotie": 4,
+      "reducere_mediana": null,
+      "reducere_max": null,
+      "esantion": 1
+    },
+    {
+      "slug": "electronice",
+      "nume": "Electronice & IT",
+      "magazine": 120,
+      "cu_promotie": 5,
+      "reducere_mediana": null,
+      "reducere_max": null,
+      "esantion": 2
+    },
+    {
+      "slug": "animale",
+      "nume": "Pet shop",
+      "magazine": 17,
+      "cu_promotie": 2,
+      "reducere_mediana": null,
+      "reducere_max": null,
+      "esantion": 1
+    },
+    {
+      "slug": "auto-moto",
+      "nume": "Auto & moto",
+      "magazine": 30,
+      "cu_promotie": 2,
+      "reducere_mediana": null,
+      "reducere_max": null,
+      "esantion": 1
+    },
+    {
+      "slug": "cadouri-flori",
+      "nume": "Cadouri & flori",
+      "magazine": 15,
+      "cu_promotie": 2,
+      "reducere_mediana": null,
+      "reducere_max": null,
+      "esantion": 1
+    },
+    {
+      "slug": "mancare-bauturi",
+      "nume": "Mâncare & băuturi",
+      "magazine": 16,
+      "cu_promotie": 1,
+      "reducere_mediana": null,
+      "reducere_max": null,
+      "esantion": 1
+    },
+    {
+      "slug": "software",
+      "nume": "Software & digital",
+      "magazine": 86,
+      "cu_promotie": 0,
+      "reducere_mediana": null,
+      "reducere_max": null,
+      "esantion": 0
+    },
+    {
+      "slug": "financiar",
+      "nume": "Financiar & asigurări",
+      "magazine": 14,
+      "cu_promotie": 0,
+      "reducere_mediana": null,
+      "reducere_max": null,
+      "esantion": 0
+    },
+    {
+      "slug": "calatorii",
+      "nume": "Călătorii",
+      "magazine": 85,
+      "cu_promotie": 0,
+      "reducere_mediana": null,
+      "reducere_max": null,
+      "esantion": 0
+    },
+    {
+      "slug": "servicii",
+      "nume": "Servicii",
+      "magazine": 22,
+      "cu_promotie": 0,
+      "reducere_mediana": null,
+      "reducere_max": null,
+      "esantion": 0
+    },
+    {
+      "slug": "sport",
+      "nume": "Sport & fitness",
+      "magazine": 49,
+      "cu_promotie": 1,
+      "reducere_mediana": null,
+      "reducere_max": null,
+      "esantion": 0
+    },
+    {
+      "slug": "copii",
+      "nume": "Copii & familie",
+      "magazine": 35,
+      "cu_promotie": 1,
+      "reducere_mediana": null,
+      "reducere_max": null,
+      "esantion": 1
+    },
+    {
+      "slug": "beauty",
+      "nume": "Beauty & îngrijire",
+      "magazine": 83,
+      "cu_promotie": 3,
+      "reducere_mediana": null,
+      "reducere_max": null,
+      "esantion": 2
+    },
+    {
+      "slug": "bijuterii",
+      "nume": "Bijuterii & ceasuri",
+      "magazine": 22,
+      "cu_promotie": 0,
+      "reducere_mediana": null,
+      "reducere_max": null,
+      "esantion": 0
+    },
+    {
+      "slug": "online-mall",
+      "nume": "online-mall",
+      "magazine": 1,
+      "cu_promotie": 1,
+      "reducere_mediana": null,
+      "reducere_max": null,
+      "esantion": 1
+    }
+  ],
+  "retele": [
+    "2Performant",
+    "Profitshare",
+    "Impact.com",
+    "Awin"
+  ],
+  "prag_esantion": 3
+}

@@ -96,6 +96,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     // ─── Pagini principale ───────────────────────────────────────────────────
     { url: BASE_URL,                             lastModified: ultimaModificare(BASE_URL), changeFrequency: "daily",   priority: 1.0 },
+    { url: `${BASE_URL}/studiu/coduri-reducere-romania`, lastModified: ultimaModificare(`${BASE_URL}/studiu/coduri-reducere-romania`), changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE_URL}/radar`,                  lastModified: ultimaModificare(`${BASE_URL}/radar`), changeFrequency: "daily",   priority: 0.95 },
     { url: `${BASE_URL}/oferte-azi`,             lastModified: ultimaModificare(`${BASE_URL}/oferte-azi`), changeFrequency: "daily",   priority: 0.95 },
     { url: `${BASE_URL}/black-friday`,           lastModified: ultimaModificare(`${BASE_URL}/black-friday`), changeFrequency: "daily",   priority: 0.95 },

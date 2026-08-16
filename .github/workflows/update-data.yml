@@ -417,6 +417,13 @@ jobs:
       # Ruleaza DUPA ce toate datele sunt generate si INAINTE de commit: paginile
       # de date isi muta data doar cand amprenta de continut chiar s-a schimbat,
       # nu la fiecare rulare de 4h (vezi scripts/track_sitemap_dates.py).
+      # ── Studiu public pe date proprii (activ de backlink) ─────────────────
+      # Ruleaza dupa merge, ca sa reflecte magazinele si promotiile curente.
+      - name: Genereaza datele studiului despre coduri de reducere
+        continue-on-error: true
+        working-directory: scripts
+        run: python generate_studiu_cupoane.py
+
       - name: Calculeaza lastModified real pentru sitemap
         continue-on-error: true
         working-directory: scripts
@@ -429,6 +436,7 @@ jobs:
 
           git add frontend/public/output.json          || true
           git add frontend/public/sitemap-dates.json   || true
+          git add frontend/public/studiu-cupoane.json  || true
           git add data/sitemap_fingerprints.json       || true
           git add data/extra_merchants.json            || true
           git add frontend/public/digest-today.json    || true
