@@ -42,6 +42,7 @@ STATIC_PAGES = [
     "/instrumente-seo", "/trading", "/carduri-bancare", "/vpn", "/hosting",
     "/ai-tools", "/cursuri-online", "/software-business", "/flori", "/pescuit",
     "/piese-auto", "/echipament-moto", "/rochii-mireasa", "/albire-dinti",
+    "/studiu/coduri-reducere-romania",
     "/black-friday", "/craciun", "/moto",
     # Cadouri
     "/cadouri", "/cadouri/ea", "/cadouri/el", "/cadouri/copii", "/cadouri/mama",
