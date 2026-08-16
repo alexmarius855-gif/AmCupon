@@ -12,6 +12,62 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 14.08.2026 (categorii reale pe paginile de nisa + 58 logo-uri rupte — COMMIT LOCAL, NEPUSHED):**
+- **CAUZA RADACINA, acelasi tipar in 3 straturi: potrivire pe SUBSIR acolo unde exista un camp EXACT.**
+  22 de pagini de nisa filtrau magazinele cu liste de cuvinte-cheie scrise de mana
+  (`["pet","animal","zoo","dog","cat"]`) trecute prin `.includes()`, desi `output.json` are deja
+  `categorie_slug`. Coliziuni reale, live: `"cat"` se potrivea cu `"eduCATie"` → **8 din 14 magazine
+  de pe `/animale` erau librarii**, badge-uite "Cărți & Educație"; `"marke"` cu `"MARKEtplace"` →
+  `/supermarket` arata eMAG/Temu; `/gadgets` avea **20 din 22 "magazine de gadgets" = firme SaaS**.
+  - Fix: **`frontend/lib/categoriiNisa.ts`** (nou) — o singura sursa de adevar pagina → slug real, cu
+    `esteInCategorie()` care compara EXACT. Aplicat pe 21 de pagini. **Orice pagina noua de nisa
+    foloseste asta, nu inventa alta lista de cuvinte-cheie.**
+  - **Verifica INAINTE ca fix-ul sa nu goleasca paginile** — masurat pe date reale ca fiecare din cele
+    21 ramane cu continut (a fost si castig: `/bijuterii` 2 → 12, `/supermarket` 2 → 11).
+- **Taxonomia moarta englezeasca — inca 5 fisiere**, supravietuitoare ale migrarii din 09.08 (care
+  reparase doar 2): `categorie_slug === "jewelry"` / `"gifts-flowers"` / `"automotive"` (×2) /
+  `"office-supplies"` — valori care nu exista in date, deci paginile erau aproape goale.
+  `/flori` avea chiar **dubla conditie moarta** (slug EN + `categorie.includes("flower")`, iar
+  eticheta reala e "Cadouri & Flori") → 0 magazine mereu. **Cand cauti resturi, grepeaza `categorie_slug ===`
+  si compara cu cele 18 sluguri RO** — nu presupune ca o migrare trecuta le-a prins pe toate.
+- **Filtrul obligatoriu `are_promotie` scos de pe 8 pagini de nisa** (contrazicea "promoveaza tot",
+  acelasi fix ca pe 06.08 dar pe alte pagini): promotiile raman primele prin sortare, nu mai exclud
+  restul. `/sport` 3 → 12. Ramane obligatoriu, corect, pe `/black-friday`, `/craciun`, `/top-reduceri`.
+- **`canonicalize_categories.py` — doua bug-uri, unul foarte urat:**
+  1. **NU era idempotent.** Cheile din `LABEL_TO_CANON` sunt ASCII (`"casa"`, `"calatori"`, `"carti"`,
+     `"mancare"`), dar `CANON` scrie etichete CU diacritice (`"Casă & Grădină"`, `"Călătorii"`). La a
+     doua trecere peste propriul output acele 5 categorii nu se mai recunosteau si cadeau in
+     `marketplace`. **Am declansat-o eu rulandu-l standalone** (mod suportat, documentat in docstring):
+     casa-gradina 145 → 35, calatorii 81 → 51, carti-educatie 37 → 19, marketplace 208 → 365.
+     Restaurat cu `git checkout`. Reparat cu normalizare de diacritice inainte de potrivire.
+  2. Acelasi bug de subsir, o treapta mai sus, in `_canon_from_name`: cuvintele-cheie de **≤3 litere**
+     se cauta acum la granita de cuvant (vaPETronic/kosPET nu mai sunt pet shop). Cele mai lungi raman
+     pe subsir **deliberat** — o regula de granita globala ar fi rupt 30+ hoteluri clasificate corect
+     (`zenhotels`, `savelectro`); masurat inainte de a schimba ceva.
+  3. **`OVERRIDE` explicit** (nou): `output.json` e SI intrare SI iesire, iar `_canon_from_label` citeste
+     eticheta scrisa la rularea precedenta → **o categorie gresita se auto-confirma la infinit** si nicio
+     ghicire dupa nume n-o mai poate corecta. Lista de override e singurul mod de a desface o
+     clasificare blocata. Extinde-o cand gasesti altele.
+- **58 de logo-uri rupte — si fallback-ul oficial era el insusi mort.** Testat live fiecare din cele
+  1167 `logo_url`. **43 din 58 erau DEJA faviconul Google** catre care `merge_platforms.py` trimite
+  orice logo cu sursa moarta (comentariul de acolo zicea "nu da niciodata 404" — ba da, pentru
+  domeniile pe care nu le rezolva). Restul de 15: URL-uri de brand hardcodate, moarte intre timp.
+  - **`scripts/fix_logo_urls.py`** (nou, in pipeline pe rularea de dimineata): verifica live, cade in
+    ordine **pastreaza > Google > DuckDuckGo > gol**. Rezultat: 34 recuperate (15 Google, 19 DDG),
+    24 fara iconita nicaieri → gol. **Gol e intentionat** (UI-ul arata initialele, curat); un URL rupt
+    lasat in date afiseaza iconita de imagine stricata. Guard: daca >30% din probe pica, nu scrie nimic.
+  - **`MagazinClient.tsx` (pagina care aduce comisionul) avea UN SINGUR pas de logo** — acum cascada
+    completa, ca in `MagazinCard.tsx`.
+  - **Al 5-lea caz al tiparului de contrast**: initiala de rezerva era `text-white` peste `${culoare}`
+    = gradient lime → invizibila. Tiparul 2 din sectiunea de tema (clasa dintr-o variabila).
+  - **Imaginile de PRODUSE sunt sanatoase** — verificat separat, 120/120 raspund 200 pe esantion
+    aleator, 2 din 3473 fara imagine. Nu necesita interventie.
+- **Nota de taxonomie**: NU exista categoria `telecom` in date, desi apare in tabelul de sluguri de mai
+  jos si in `CategoryIcon.tsx`. Cele 18 valori reale, cu numarul de magazine (14.08.2026): marketplace
+  212, casa-gradina 145, electronice 122, fashion 109, software 95, beauty 84, calatorii 82, sanatate 61,
+  sport 48, carti-educatie 37, copii 35, auto-moto 30, bijuterii 22, servicii 22, animale 17,
+  mancare-bauturi 17, cadouri-flori 15, financiar 14.
+
 **UPDATE 10.08.2026 (SEO: cauza reala a neindexarii gasita + recenzii fabricate eliminate + calculator TVA — PUSHED):**
 - **DESCOPERIREA CENTRALA: 92% din URL-urile trimise la Google erau template gol.** Masurat:
   din 1177 pagini de magazin, doar **92** au continut propriu (62 cu promotie activa, 80 cu
