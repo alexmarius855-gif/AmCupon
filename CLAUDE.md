@@ -12,6 +12,45 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 16.08.2026 — partea a 2-a (studiu public + orfane + ce face CONCURENTA — PUSHED):**
+- **ANALIZA CONCURENTEI, masurata pe sitemap-ul lor, nu presupusa.** `cuponescu.ro` (~350k
+  vizite/luna) are in TOT sitemap-ul: **998 de pagini de magazin si exact 4 alte pagini**. Zero blog,
+  zero categorii, zero nise, zero topuri, zero comparatii. **Pagina de magazin E toata afacerea.**
+  Pentru comparatie, AmCupon are 423 URL in sitemap, din care 514 articole de blog + ~90 pagini de
+  categorii/nise/topuri — adica efortul e imprastiat exact invers fata de singurul concurent care
+  chiar are trafic.
+  - Comparatie cap la cap pe acelasi magazin (`112coffee.com`): la ei **9.762 caractere de text si
+    19 titluri**, la noi **3.273 caractere si 6 titluri**. Au sectiuni pe care noi nu le avem:
+    fiecare cupon ca bloc separat cu titlu propriu, "Despre X", "Contact X", "Intrebari frecvente X".
+  - Au si `AggregateRating` in schema (stelute in SERP). **NU-l reintroduce fabricat** — a fost
+    eliminat pe 03.07 tocmai pentru ca era inventat. Ruta onesta e sistemul de recenzii Supabase,
+    deja construit si gol.
+  - **Concluzie operationala**: urmatoarea investitie mare de continut merge in ADANCIMEA paginii de
+    magazin, nu in pagini noi. Tinta e sa triplam textul cu date REALE pe care le avem deja
+    (categorii de produse din feed, interval de pret, cate produse urmarim), nu cu umplutura.
+  - Confirmarea metodei de sitemap: `lastmod`-urile lor sunt REALE si variate (2025-11, 2026-03,
+    2026-08) — exact ce am implementat noi azi in locul lui `new Date()`.
+- **12 pagini ORFANE reparate** (in sitemap, zero link intern de nicaieri): `/supermarket`,
+  `/smart-home`, `/antivirus`, `/pescuit`, `/rochii-mireasa`, pagina noua de studiu + cele 7
+  `/nisa/*`. Metoda: comparatie intre URL-urile din sitemap si toate linkurile din cod.
+  **13 din cele 25 de "orfane" gasite initial erau false pozitive** (`/blog?cat=X` — regexul meu
+  ignora URL-urile cu parametru), verificate pe productie inainte de a repara ceva nestricat.
+- **`/nisa/*` — canibalizare, acelasi tipar ca la paginile de brand (10.08).** `/nisa/fashion` si
+  `/fashion` tintesc aceeasi cautare, fiecare cu canonical propriu. NU sterse (au continut real, 19
+  magazine): canonical catre pagina principala (`CANONIC_PRINCIPAL` in `nisa/[slug]/page.tsx`) +
+  **scoase din sitemap** — a trimite la indexare un URL care se declara duplicat e contradictoriu.
+- **Homepage-ul primea linkurile noi ultima, sau deloc.** `Footer.tsx` se ascunde explicit pe `/`
+  (`if (pathname === "/") return null`) fiindca `HomeClient` are footer propriu cu liste COPIATE —
+  acelasi tipar ca la cardul separat de homepage din 09.08. Lista se exporta acum din `Footer.tsx`
+  si se importa in `HomeClient`: o singura sursa, orice link viitor ajunge automat si pe homepage.
+- **`/studiu/coduri-reducere-romania`** (nou) — activul pentru backlink editorial, generat de
+  `scripts/generate_studiu_cupoane.py` in pipeline. Cifra centrala ne contrazice interesul comercial
+  (din 1.162 magazine, 6 au cod real) — de-aia e credibila. Mediana pe categorie se publica DOAR cu
+  esantion >= 3; azi trec pragul 4 din 19 categorii, iar pagina scrie explicit "date insuficiente"
+  pentru restul. Date brute la `/studiu-cupoane.json`, JSON-LD `Dataset` + CC-BY.
+- **`scripts/check_internal_links.py`** (nou, reutilizabil, iese cu cod 1 la eroare) — 98 pagini,
+  911 linkuri interne verificate live. IndexNow rulat: 346 URL acceptate.
+
 **UPDATE 16.08.2026 (sitemap cu date reale + regresia feed produse REZOLVATA + linkuri interne — PUSHED):**
 - **REGRESIA FEED PRODUSE (33.096 -> 3.468) — cauza gasita, reparata, VERIFICATA pe API-ul real.**
   E acelasi bug de paginare documentat mai jos pentru `/affiliate/programs.json`, reaparut in
