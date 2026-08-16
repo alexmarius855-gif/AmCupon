@@ -13,6 +13,7 @@ import BannerAd2P from "../../components/BannerAd2P";
 import RedirectModal from "../../components/RedirectModal";
 import { useCopyCod } from "../../hooks/useCopyCod";
 import { calculateDealScore, DEAL_SCORE_VISIBLE_THRESHOLD } from "../../../lib/dealScore";
+import VotCupon, { hashCupon } from "../../components/VotCupon";
 
 // ── Deal Score badge cu count-up (0 -> scor) la mount ───────────────────────────
 function DealScoreBadge({ score }: { score: number }) {
@@ -228,6 +229,9 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
   // favicon Google mort) si DuckDuckGo recupereaza 33. Pagina asta avea un singur
   // pas, deci pica direct pe initiala inclusiv acolo unde exista logo real.
   const [logoIdx, setLogoIdx] = useState(0);
+  // Totalurile de voturi, o singura cerere per pagina. Daca baza e picata,
+  // ramane gol si UI-ul nu arata niciun scor — corect, nu inventam.
+  const [voturi, setVoturi] = useState<Record<string, { da: number; nu: number }>>({});
   // Tab-ul implicit = primul care are CONTINUT REAL, nu mereu "coduri".
   // Bug de conversie gasit 08.08.2026: 55 din 62 de magazine cu oferte active au 0
   // coduri (temu, shein, emag, trendyol, fashiondays...). Pagina se deschidea pe tabul
@@ -261,6 +265,15 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
 
   // Deal Score onest (lib/dealScore.ts) — un singur badge/pagina (nu pe fiecare card
   // dintr-un grid, ca in MagazinCard.tsx), cu count-up la mount.
+  useEffect(() => {
+    let anulat = false;
+    fetch(`/api/vote?magazin=${encodeURIComponent(m.magazin)}`)
+      .then((r) => r.json())
+      .then((d) => { if (!anulat && d?.totaluri) setVoturi(d.totaluri); })
+      .catch(() => {});      // fara totaluri = fara scor afisat, nu scor inventat
+    return () => { anulat = true; };
+  }, [m.magazin]);
+
   const dealScore = calculateDealScore(m, astazi);
   const showDealScore = dealScore >= DEAL_SCORE_VISIBLE_THRESHOLD;
 
@@ -499,6 +512,16 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                             {promo.descriere && promo.descriere !== promo.nume && (
                               <p className="text-sm text-[#c9ced5]">{promo.descriere}</p>
                             )}
+                            {/* Vot comunitar. Amprenta pe (cod + nume), NU pe index:
+                                indexul se schimba la fiecare rulare de pipeline, deci
+                                voturile s-ar lipi de alt cupon. */}
+                            <div className="mt-2.5">
+                              <VotCupon
+                                magazin={m.magazin}
+                                cuponHash={hashCupon(promo.cod_cupon, promo.nume)}
+                                initial={voturi[hashCupon(promo.cod_cupon, promo.nume)]}
+                              />
+                            </div>
                           </div>
                           <div className="shrink-0 w-full sm:w-48">
                             {isRevealed ? (
