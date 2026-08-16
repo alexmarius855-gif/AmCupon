@@ -7,6 +7,7 @@ import { Mail } from "lucide-react";
 import CategoryIcon, { categoryVisual, TEXT_PE_CATEGORIE } from "./components/CategoryIcon";
 import MagazinCard from "./components/MagazinCard";
 import { REDUCERI } from "./components/Footer";
+import FiltreRapide, { trecePrinFiltru, type CheieFiltru } from "./components/FiltreRapide";
 
 interface Promotie {
   nume: string;
@@ -190,7 +191,7 @@ export default function HomeClient({
   // 24, nu 12: de cand magazinele fara promotie se randeaza ca placi compacte
   // (nu carduri mari), incap de doua ori mai multe in mai putin spatiu.
   const [storeLimit, setStoreLimit]       = useState(24);
-  const [filtruActiv, setFiltruActiv]     = useState<"toate"|"cod"|"promotie"|"favorite">("toate");
+  const [filtruActiv, setFiltruActiv]     = useState<CheieFiltru | "favorite">("toate");
   const [favorite, setFavorite]           = useState<Set<string>>(new Set());
   const [produseCategorii]                = useState<ProdusCategorie[]>(initProd);
   const [activeCatTab, setActiveCatTab]         = useState<string>("toate");
@@ -243,10 +244,12 @@ export default function HomeClient({
   const filtrate = magazine.filter(m => {
     const matchCautare = cautare === "" || m.magazin.toLowerCase().includes(cautare.toLowerCase()) || numeAfisat(m.magazin).toLowerCase().includes(cautare.toLowerCase());
     if (!matchCautare) return false;
-    if (filtruActiv === "cod")       return m.cod_cupon;
-    if (filtruActiv === "promotie")  return m.are_promotie;
     if (filtruActiv === "favorite")  return favorite.has(m.magazin);
-    return true;
+    // BUG REPARAT 16.08: filtrul "cod" folosea flagul `m.cod_cupon`, dar temu.com/
+    // shein.com/trendyol.com au flagul true cu ZERO coduri reale (documentat in
+    // CLAUDE.md). Filtrul promitea coduri si livra magazine fara. `trecePrinFiltru`
+    // se uita in promotii, la codul efectiv.
+    return trecePrinFiltru(m, filtruActiv as CheieFiltru);
   });
 
   const expiraAzi   = filtrate.filter(m => m.are_promotie && m.zile_ramase <= 1);
@@ -1075,17 +1078,21 @@ export default function HomeClient({
         {/* FILTRE RAPIDE */}
         {!loading && (
           <div className="flex flex-wrap gap-2 mb-8 items-center">
-            {([
-              { key: "toate",    label: "Toate" },
-              { key: "cod",      label: `Cod cupon` },
-              { key: "promotie", label: `Promotii active` },
-              { key: "favorite", label: `Favorite${favorite.size > 0 ? ` (${favorite.size})` : ""}` },
-            ] as { key: "toate"|"cod"|"promotie"|"favorite"; label: string }[]).map(f => (
-              <button key={f.key} onClick={() => { setFiltruActiv(f.key); setStoreLimit(12); }}
-                className={`px-4 py-2 rounded-full text-sm font-semibold transition-all ${filtruActiv === f.key ? "bg-[#14181c] text-[#ffffff] shadow-sm" : "bg-[#1f2329] border border-[#2a2f36] text-[#c9ced5] hover:border-[#3a4048] hover:bg-[#2a2f36]"}`}>
-                {f.label}
+            {/* Filtrele se calculeaza pe magazinele cu promotie si SE ASCUND cand
+                n-au niciun rezultat — vezi FiltreRapide. „Exclusive" din brief a
+                fost scos: 0 magazine au campul, ar fi fost buton mort. */}
+            <FiltreRapide
+              magazine={magazine.filter(m => m.are_promotie)}
+              activ={filtruActiv === "favorite" ? "toate" : (filtruActiv as CheieFiltru)}
+              onSchimba={(f) => { setFiltruActiv(f); setStoreLimit(12); }}
+            />
+            {favorite.size > 0 && (
+              <button onClick={() => { setFiltruActiv("favorite"); setStoreLimit(12); }}
+                aria-pressed={filtruActiv === "favorite"}
+                className={`inline-flex items-center gap-1.5 text-sm font-bold px-3.5 py-2 rounded-xl border transition-colors ${filtruActiv === "favorite" ? "bg-[#ddf93c] text-[#0c1000] border-[#ddf93c]" : "bg-[#14181c] text-[#c9ced5] border-[#1f2329] hover:border-[#c9ced5] hover:text-[#ffffff]"}`}>
+                Favorite <span className="tabular-nums text-xs font-black">{favorite.size}</span>
               </button>
-            ))}
+            )}
             <Link href="/toate-magazinele" className="ml-auto text-sm text-[#ddf93c] hover:text-[#c3dd2c] font-semibold transition-colors">
               Vezi toate ({magazine.length}) →
             </Link>
