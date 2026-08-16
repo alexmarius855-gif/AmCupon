@@ -53,7 +53,7 @@ ENDPOINT = "affiliate-products"
 IESIRE = Path(__file__).parent.parent / "data" / "profitshare_products.json"
 
 CERERI_MAX = 400          # felia citita la o rulare (400 x 20 = 8.000 produse)
-PAUZA = 0.25              # politete fata de API
+PAUZA = 0.6               # politete fata de API (la 0.25 aparea limitare de rata)
 
 # Magazine straine — AmCupon e pentru cumparatori din Romania (aceeasi regula ca
 # in fetch_product_feeds.py, unde lipsa lui ".nl" a lasat liki24.nl sa intre)
@@ -148,11 +148,25 @@ def main():
             print(f"  (nu am putut citi fisierul anterior: {e})")
     print(f"Acumulat pana acum: {len(vechi):,} produse")
 
+    # NU ne oprim la prima pagina goala. `ps_get` intoarce lista goala si cand
+    # API-ul da 500 (rate limit), nu doar cand chiar nu mai sunt produse — iar la
+    # sute de cereri rapide limitarea apare sigur. Prima versiune se oprea la primul
+    # gol si a adus 160 de produse din 400 de cereri, adica s-a oprit pe la pagina 8.
+    # Acum tolereaza goluri izolate si renunta doar dupa mai multe la rand.
+    GOLURI_TOLERATE = 5
     noi = 0
+    goluri = 0
     for nr in range(1, min(total, CERERI_MAX) + 1):
         pp, _ = pagina(nr)
         if not pp:
-            break
+            goluri += 1
+            if goluri >= GOLURI_TOLERATE:
+                print(f"  oprit la pagina {nr}: {GOLURI_TOLERATE} raspunsuri goale la rand "
+                      f"(probabil limitare de rata)")
+                break
+            time.sleep(PAUZA * 8)     # respiram si incercam mai departe
+            continue
+        goluri = 0
         for p in pp:
             s_slug = slug_din(p)
             if not s_slug or s_slug.endswith(TLD_STRAINE):
