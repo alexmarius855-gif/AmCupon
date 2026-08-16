@@ -12,6 +12,47 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 16.08.2026 — partea a 3-a (adancime pagina magazin + de ce indexarea NU se poate forta — PUSHED):**
+- **De ce nu deschidem cele 1.075 de pagini `noindex` — masurat, nu presupus.** Doar **87 din 1.162**
+  de pagini de magazin sunt indexabile. Am verificat daca decizia din 10.08 mai e valida acum ca
+  paginile au mai mult continut: doua pagini subtiri sunt **77-89% IDENTICE** intre ele (5.500 de
+  caractere, dar ~80% acelasi sablon cu numele schimbat). Deschiderea lor ar reintroduce exact
+  problema de thin content care a cauzat criza. **Decizia ramane corecta.**
+  - Verificat si pragul: la 1 sau la 10 produse in feed, tot 87 de pagini ies indexabile — magazinele
+    cu 1-4 produse au oricum promotie (produsele lor vin din `enrich_products_from_promos.py`).
+    Deci `esteIndexabil` nu are nevoie de reglaj.
+  - **Parghia nu e sa deschidem pagini, ci sa le facem sa merite**: continut propriu = promotii (66
+    magazine) sau produse in feed (20 reale). Ambele depind de surse noi, nu de cod.
+- **`FAQPage` fara continut vizibil — bug de conformitate reparat.** Emiteam 5 intrebari in schema pe
+  TOATE cele 1.162 de pagini de magazin, dar niciuna nu aparea pe pagina (verificat pe HTML: 5 in
+  schema, 0 in text). Google cere ca un continut marcat FAQPage sa fie **vizibil**; marcaj ascuns e
+  motiv de actiune manuala. Reparat cu o sursa unica (`intrebari` in `page.tsx`) din care se deriva
+  si schema, si textul — nu mai pot diverge.
+- **`ContextMagazin.tsx`** (nou, SERVER component pasat ca slot catre `MagazinClient`, ca textul sa
+  fie in HTML nu adaugat dupa hidratare): "Ce preturi are X" (min/median/max din feed, doar cu >=5
+  produse cu pret valid) + "X fata de restul categoriei" (din studiul propriu, deci pe FIECARE
+  pagina). Rezultat masurat: 112coffee.com **3.273 -> 4.869 caractere**, 6 -> 13 titluri;
+  libris.ro 5.478 si 15 titluri. Concurenta e la 9.762 si 19.
+  - **NU am afisat `brand` si `category` desi campurile exista**: la librarii `brand` contine AUTORUL
+    ("Brian Michael Bendis" la libris.ro), iar `category` vine in ENGLEZA din feed. Ar fi fost gresit
+    pe orice magazin de carti, respectiv neingrijit pe o pagina romaneasca.
+- **Profitshare `affiliate-products` — descoperit, sondat, LIMITAT DE CONT.** Cautam o a doua sursa de
+  produse (2P acopera doar ~20 de magazine). Endpoint-ul exista, are campuri mai bune decat 2P
+  (categorie in ROMANA, `affiliate_link` deja cu tracking, `free_shipping`, `price_discounted`) si
+  raporteaza **17.220 pagini (~344.000 produse)**. Trei constatari, toate verificate in raspuns:
+  1. **nu se poate filtra pe magazin** — 6 nume de parametru testate, toate ignorate (am cerut eMAG,
+     am primit constant Anvelino);
+  2. **paginarea E stabila** (aceeasi pagina de doua ori la rand = aceleasi produse), dar catalogul
+     e ordonat dupa `last_update` si se rearanjeaza in cateva minute — deci orice strategie de tip
+     "retine ca magazinul X sta la pagina N si intoarce-te acolo" e gresita din PRINCIPIU. Am pierdut
+     doua iteratii pe asta inainte sa testez presupunerea de baza; **testeaz-o prima data**;
+  3. **contul citeste doar primele ~10-13 pagini** din cele 17.220 raportate, indiferent de pauza —
+     nu e rate limit, e limita de acces, acelasi tipar ca 403-ul de la Impact Deals.
+  - Randament efectiv: ~160 de produse din 3 magazine. Prea putin pentru ~8 min/rulare, deci
+    `scripts/fetch_profitshare_products.py` ramane MANUAL, in afara pipeline-ului, gata de pornit
+    daca se deblocheaza contul. **Actiune Alex**: intreaba suportul Profitshare de ce endpoint-ul se
+    opreste dupa ~10 pagini desi raporteaza 17.220, si daca se poate activa filtrarea pe advertiser.
+
 **UPDATE 16.08.2026 — partea a 2-a (studiu public + orfane + ce face CONCURENTA — PUSHED):**
 - **ANALIZA CONCURENTEI, masurata pe sitemap-ul lor, nu presupusa.** `cuponescu.ro` (~350k
   vizite/luna) are in TOT sitemap-ul: **998 de pagini de magazin si exact 4 alte pagini**. Zero blog,

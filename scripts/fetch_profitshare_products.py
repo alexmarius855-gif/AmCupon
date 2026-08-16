@@ -35,6 +35,20 @@ e mai mic decat pasul de esantionare poate fi ratat. E un compromis constient
 intre acoperire si timp, nu o scapare. Se poate reduce PAS pe rularea de dimineata
 daca vrem acoperire mai buna.
 
+REZULTAT REAL, 16.08.2026 — NU e in pipeline, si iata de ce:
+API-ul declara `total_pages: 17220`, dar contul poate citi doar primele ~10-13
+pagini. Dupa aceea intoarce constant gol, chiar si cu pauza de 0,6s intre cereri
+si backoff de ~5s la fiecare gol. Nu e limitare de rata (am testat), e o limita
+de acces a contului — acelasi tipar ca 403-ul de la Impact Deals API.
+
+Randament efectiv: ~160 de produse din 3 magazine (FashionDays, Anvelino, Vexio),
+nu cele ~60 de magazine sperate. Prea putin ca sa merite ~8 minute in fiecare
+rulare de pipeline, deci scriptul ramane manual pana se deblocheaza contul.
+
+ACTIUNE ALEX: intreaba suportul Profitshare de ce `affiliate-products` se opreste
+dupa ~10 pagini desi raporteaza 17.220, si daca se poate activa accesul complet
+sau filtrarea pe advertiser. Cu oricare din ele, scriptul e gata de pornit.
+
     python scripts/fetch_profitshare_products.py [--dry-run]
 """
 import json
