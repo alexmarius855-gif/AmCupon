@@ -677,6 +677,13 @@ Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Pro
 - **Iconita extensie Chrome** (`extension/generate_icons.py`): fundal slate + litera "A" emerald + punct
   verde → fundal indigo solid + litera alba + punct cyan (aliniat cu wordmark-ul "Am" din navbar).
 
+> **⭐ LECȚII TEHNICE:** vezi **`docs/LECTII-TEHNICE.md`** — tiparele de bug care se REPETĂ în acest
+> proiect, organizate pe tipar, nu pe dată. Fișierul de față e jurnal cronologic (bun pentru „ce s-a
+> întâmplat"), acela e util înainte să scrii cod nou (bun pentru „ce tinde să se strice aici").
+> Cele mai frecvente: potrivire pe subșir unde există câmp exact (4 apariții), taxonomie moartă
+> după migrare (3 valuri), liste duplicate care se desincronizează, paginare presupusă greșit
+> (2 apariții), și capcanele de verificare care m-au păcălit pe mine.
+
 > **⭐ PLAN MASTER (strategie):** vezi `docs/strategie/PLAN-MASTER.md` — busola pentru 1000 afiliați,
 > 100 site-uri, 200-500€/site/lună. Oglindit în Notion (hub "IMPERIU CLAUDE"). Citește-l la
 > începutul oricărei sesiuni strategice. `CLAUDE.md` = adevărul TEHNIC, `docs/strategie/PLAN-MASTER.md` = adevărul de BUSINESS.
