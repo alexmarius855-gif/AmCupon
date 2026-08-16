@@ -1,48 +1,25 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-interface MagazinMini {
-  magazin: string;
-  logo_url?: string;
-  are_promotie: boolean;
-  cod_cupon: boolean;
-}
-
-function numeAfisat(slug: string) {
-  return slug.split(".")[0].replace(/-/g, " ").split(" ").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
-}
-
 export default function Navbar() {
   const pathname = usePathname();
-  const [search, setSearch] = useState("");
-  const [results, setResults] = useState<MagazinMini[]>([]);
-  const [allStores, setAllStores] = useState<MagazinMini[]>([]);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [showDropdown, setShowDropdown] = useState(false);
-  const [focused, setFocused] = useState(false);
-  const inputRef = useRef<HTMLInputElement>(null);
 
-  useEffect(() => {
-    fetch("/nav-index.json").then(r => r.json()).then(setAllStores).catch(() => {});
-  }, []);
-
-  useEffect(() => {
-    if (search.length < 2) { setResults([]); setShowDropdown(false); return; }
-    const q = search.toLowerCase();
-    const filtered = allStores
-      .filter(m => m.magazin.toLowerCase().includes(q) || numeAfisat(m.magazin).toLowerCase().includes(q))
-      .sort((a, b) => {
-        const aExact = a.magazin.toLowerCase().startsWith(q) ? 1 : 0;
-        const bExact = b.magazin.toLowerCase().startsWith(q) ? 1 : 0;
-        return bExact - aExact || (b.are_promotie ? 1 : 0) - (a.are_promotie ? 1 : 0);
-      })
-      .slice(0, 7);
-    setResults(filtered);
-    setShowDropdown(focused && filtered.length > 0);
-  }, [search, allStores, focused]);
+  /**
+   * Cautarea a fost mutata in `SearchModal` (Cmd+K), montat global in layout.
+   *
+   * Doua motive, ambele masurate:
+   *  1. Navbar-ul avea PROPRIA implementare (fetch + filtrare + dropdown), deci
+   *     existau doua cautari care trebuiau tinute sincron manual — exact tiparul
+   *     care s-a desincronizat deja de doua ori in proiect (cardul de homepage
+   *     09.08, footerul 16.08). Acum e una singura.
+   *  2. `nav-index.json` (196 KB) se descarca la FIECARE incarcare de pagina,
+   *     inclusiv pentru cei care nu cauta niciodata. Acum se incarca lenes, la
+   *     prima deschidere a modalului.
+   */
 
   // Nu arata pe pagini cu propriul header.
   // IMPORTANT: acest return TREBUIE sa fie DUPA toate hook-urile, altfel cand
@@ -53,20 +30,6 @@ export default function Navbar() {
     pathname.startsWith("/cod-reducere/") ||
     pathname.startsWith("/reduceri/")
   ) return null;
-
-  function handleSelect(slug: string) {
-    setSearch(""); setShowDropdown(false); setMenuOpen(false);
-    // eslint-disable-next-line react-hooks/immutability -- identic cu handleSearchSubmit de mai jos (nesemnalat acolo); window.location nu e stare React
-    window.location.href = `/cod-reducere/${slug}`;
-  }
-
-  function handleSearchSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    if (search.trim()) {
-      setShowDropdown(false);
-      window.location.href = `/cautare?q=${encodeURIComponent(search.trim())}`;
-    }
-  }
 
   const navLinks = [
     { href: "/", label: "Acasa" },
@@ -106,71 +69,23 @@ export default function Navbar() {
           <span className="font-black text-[#ffffff] text-xl tracking-tight">Cupon<span className="text-[#ddf93c]">.ro</span></span>
         </Link>
 
-        {/* Search cu autocomplete */}
-        <div className="flex-1 relative max-w-2xl hidden sm:block">
-          <form onSubmit={handleSearchSubmit}>
-            <div className="relative">
-              <svg className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-[#9399a0] pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
-              </svg>
-              <input
-                ref={inputRef}
-                type="text"
-                value={search}
-                onChange={e => setSearch(e.target.value)}
-                onFocus={() => { setFocused(true); if (results.length > 0) setShowDropdown(true); }}
-                onBlur={() => { setFocused(false); setTimeout(() => setShowDropdown(false), 160); }}
-                placeholder="Cauta: eMAG, Answear, Notino..."
-                className="w-full bg-[#1f2329] border border-[#2a2f36] hover:border-[#3a4048] focus:border-[#ddf93c] focus:ring-2 focus:ring-[#ddf93c]/20 text-[#ffffff] placeholder-[#9399a0] rounded-full pl-10 pr-10 py-2.5 text-sm focus:outline-none transition-all"
-              />
-              {search && (
-                <button type="button" onClick={() => { setSearch(""); setShowDropdown(false); inputRef.current?.focus(); }}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-[#9399a0] hover:text-[#c9ced5] transition-colors">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12"/>
-                  </svg>
-                </button>
-              )}
-            </div>
-          </form>
-
-          {/* Dropdown autocomplete */}
-          {showDropdown && results.length > 0 && (
-            <div className="absolute top-full mt-2 left-0 right-0 bg-[#14181c] border border-[#2a2f36] rounded-xl shadow-2xl shadow-black/40 py-2 z-50 overflow-hidden animate-in fade-in slide-in-from-top-1 duration-150">
-              {results.map(m => (
-                <button key={m.magazin} onMouseDown={() => handleSelect(m.magazin)}
-                  className="w-full flex items-center gap-3 px-4 py-2.5 hover:bg-[#1f2329] transition-colors text-left group/item">
-                  <div className="w-8 h-8 rounded-lg bg-[#1f2329] flex items-center justify-center shrink-0 overflow-hidden border border-[#2a2f36]">
-                    {m.logo_url
-                      ? <img src={m.logo_url} alt={numeAfisat(m.magazin)} className="w-6 h-6 object-contain"/>
-                      : <span className="text-xs font-black text-[#ddf93c]">{numeAfisat(m.magazin)[0]}</span>
-                    }
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <p className="text-sm font-bold text-[#ffffff] truncate group-hover/item:text-[#ddf93c] transition-colors">{numeAfisat(m.magazin)}</p>
-                    <p className="text-xs text-[#c9ced5] truncate">{m.magazin}</p>
-                  </div>
-                  <div className="flex items-center gap-1.5 shrink-0">
-                    {m.cod_cupon && (
-                      <span className="text-[10px] font-black bg-[#ddf93c]/50 text-[#c3dd2c] px-1.5 py-0.5 rounded-full">Cod</span>
-                    )}
-                    {m.are_promotie && (
-                      <span className="text-[10px] font-black bg-emerald-900/50 text-emerald-400 px-1.5 py-0.5 rounded-full">Activ</span>
-                    )}
-                  </div>
-                </button>
-              ))}
-              <div className="border-t border-[#2a2f36] mt-1 pt-1">
-                <button onMouseDown={handleSearchSubmit as never}
-                  className="w-full flex items-center gap-2 px-4 py-2.5 text-sm text-[#ddf93c] font-bold hover:bg-[#1f2329] transition-colors">
-                  <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
-                  </svg>
-                  Cauta <span className="text-[#c9ced5]">&quot;{search}&quot;</span> in toate magazinele
-                </button>
-              </div>
-            </div>
-          )}
+        {/* Cautare — deschide SearchModal (Cmd+K). Arata ca un camp, e buton:
+            o singura implementare de cautare in tot proiectul. */}
+        <div className="flex-1 max-w-2xl hidden sm:block">
+          <button
+            type="button"
+            onClick={() => window.dispatchEvent(new Event("amcupon:cauta"))}
+            className="group w-full flex items-center gap-3 bg-[#1f2329] border border-[#2a2f36] hover:border-[#ddf93c]/50 rounded-full pl-10 pr-3 py-2.5 text-sm text-left relative transition-colors"
+            aria-label="Cauta un magazin"
+          >
+            <svg className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-[#9399a0] group-hover:text-[#ddf93c] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+            </svg>
+            <span className="flex-1 text-[#9399a0]">Cauta: eMAG, Answear, Notino...</span>
+            <kbd className="hidden md:inline-flex items-center gap-0.5 text-[10px] font-mono font-bold text-[#6b7178] bg-[#14181c] border border-[#2a2f36] rounded px-1.5 py-0.5">
+              Ctrl K
+            </kbd>
+          </button>
         </div>
 
         {/* Desktop nav */}
@@ -221,14 +136,16 @@ export default function Navbar() {
       {/* Mobile menu */}
       {menuOpen && (
         <div className="md:hidden border-t border-[#1f2329] bg-[#14181c] px-4 py-4 space-y-3 shadow-lg">
-          <form onSubmit={handleSearchSubmit} className="relative">
-            <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#9399a0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <button
+            type="button"
+            onClick={() => { setMenuOpen(false); window.dispatchEvent(new Event("amcupon:cauta")); }}
+            className="w-full flex items-center gap-2 bg-[#1f2329] border border-[#2a2f36] text-[#9399a0] rounded-full px-4 py-2.5 text-sm text-left"
+          >
+            <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
             </svg>
-            <input type="text" value={search} onChange={e => setSearch(e.target.value)}
-              placeholder="Cauta magazin..."
-              className="w-full bg-[#1f2329] border border-[#2a2f36] text-[#ffffff] placeholder-[#9399a0] rounded-full pl-9 pr-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#ddf93c]" />
-          </form>
+            Cauta magazin...
+          </button>
           <nav className="space-y-0.5">
             {mobileLinks.map(l => (
               <Link key={l.href} href={l.href} onClick={() => setMenuOpen(false)}

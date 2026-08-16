@@ -16,6 +16,7 @@ const NewsletterPopup = dynamic(() => import("./components/NewsletterPopup"));
 import WebPushInit from "./components/WebPushInit";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import SearchModal from "./components/SearchModal";
 import AffiliateClickTracker from "./components/AffiliateClickTracker";
 import "./globals.css";
 import AnuntAnimat from "./components/AnuntAnimat";
@@ -151,6 +152,8 @@ export default function RootLayout({
         <Navbar />
         <AnuntAnimat />
         {children}
+        {/* Cautare globala (Cmd+K). Montata o data, aici — nu duplicata pe pagini. */}
+        <SearchModal />
         <Footer />
         <CookieBanner />
         <AffiliateScript />
