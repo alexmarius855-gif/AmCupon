@@ -52,9 +52,7 @@ except ImportError:
 ENDPOINT = "affiliate-products"
 IESIRE = Path(__file__).parent.parent / "data" / "profitshare_products.json"
 
-PAS = 120                 # din cate in cate pagini esantionam in faza 1
-PROBE_MAX = 150           # cereri maxime in faza 1
-PAGINI_PER_MAGAZIN = 8    # cate pagini citim per magazin gasit (8 x 20 = 160 produse)
+CERERI_MAX = 400          # felia citita la o rulare (400 x 20 = 8.000 produse)
 PAUZA = 0.25              # politete fata de API
 
 # Magazine straine — AmCupon e pentru cumparatori din Romania (aceeasi regula ca
@@ -111,7 +109,7 @@ def curata(p, slug):
 def main():
     dry = "--dry-run" in sys.argv
     print("=" * 66)
-    print("Produse Profitshare — esantionare + citire pe blocuri")
+    print("Produse Profitshare — o trecere, cu acumulare intre rulari")
     print("=" * 66)
 
     prod, total = pagina(1)
@@ -121,69 +119,68 @@ def main():
     total = total or 1
     print(f"Catalog: {total} pagini (~{total * 20:,} produse)")
 
-    # ── Faza 1: unde sta fiecare magazin ────────────────────────────────────
-    harta = {}                       # slug -> prima pagina la care l-am vazut
-    nume_real = {}
-    probe = 0
-    for nr in range(1, total + 1, PAS):
-        if probe >= PROBE_MAX:
-            break
-        pp, _ = pagina(nr)
-        probe += 1
-        for p in pp:
-            s = slug_din(p)
-            if s and s not in harta:
-                harta[s] = nr
-                nume_real[s] = p.get("advertiser_name") or s
-        time.sleep(PAUZA)
-    print(f"Faza 1: {probe} cereri (din {PAS} in {PAS} pagini) -> {len(harta)} magazine gasite")
-
-    straine = [s for s in harta if s.endswith(TLD_STRAINE)]
-    for s in straine:
-        del harta[s]
-    if straine:
-        print(f"  sarite ca magazine straine: {len(straine)} ({', '.join(straine[:5])})")
-
-    # ── Faza 2: cate un bloc mic din fiecare ────────────────────────────────
-    # Citim in AMBELE directii din pagina-ancora.
+    # DE CE O SINGURA TRECERE, dupa ce doua strategii de esantionare au esuat:
     #
-    # Prima versiune citea doar inainte si a iesit cu 0 produse la 15 din 18
-    # magazine. Cauza: ancora e pagina unde am VAZUT prima data magazinul, dar
-    # esantionarea poate sa-l prinda la SFARSITUL blocului lui — atunci pagina
-    # urmatoare e deja alt magazin si citirea se opreste imediat. Blocul real e
-    # in spate. Verificat pe rularea reala, nu dedus: FashionDays/Anvelino/
-    # ITGalaxy (prinse la inceput de bloc) aveau produse, restul zero.
-    produse = []
-    for s, ancora in sorted(harta.items(), key=lambda x: x[1]):
-        luate = 0
-        pagini_ramase = PAGINI_PER_MAGAZIN
-        for directie in (1, -1):
-            nr = ancora if directie == 1 else ancora - 1
-            while pagini_ramase > 0 and 1 <= nr <= total:
-                pp, _ = pagina(nr)
-                ale_lui = [p for p in pp if slug_din(p) == s] if pp else []
-                if not ale_lui:
-                    break            # am iesit din blocul magazinului pe directia asta
-                produse.extend(curata(p, s) for p in ale_lui)
-                luate += len(ale_lui)
-                pagini_ramase -= 1
-                nr += directie
-                time.sleep(PAUZA)
-        print(f"  {nume_real.get(s, s):28s} {luate:4d} produse")
+    # Am incercat "esantioneaza rar ca sa afli unde sta fiecare magazin, apoi
+    # citeste blocul lui". A dat 18-20 de magazine in faza 1 si produse doar de la
+    # 2-3 in faza 2, si de fiecare data ALTELE. Am verificat intai daca paginarea
+    # e instabila: NU e — aceeasi pagina ceruta de doua ori la rand intoarce exact
+    # aceleasi produse.
+    #
+    # Explicatia e in datele insesi: fiecare produs are `last_update` de acum
+    # cateva minute, deci catalogul e ordonat dupa ultima actualizare si se
+    # rearanjeaza continuu. E stabil pe secunde si instabil pe minute — adica
+    # exact pe intervalul dintre faza 1 si faza 2. Orice strategie care retine
+    # "magazinul X sta la pagina N" si se intoarce acolo mai tarziu e gresita din
+    # principiu, nu din implementare.
+    #
+    # Ce functioneaza cu un catalog nefiltrabil si in continua rearanjare: iei o
+    # felie contigua, pastrezi ce gasesti, si ACUMULEZI intre rulari. Pipeline-ul
+    # ruleaza zilnic, catalogul se roteste, deci acoperirea creste in timp in loc
+    # sa fie rejucata de la zero la fiecare rulare.
+    vechi = {}
+    if IESIRE.exists():
+        try:
+            for p in json.loads(IESIRE.read_text(encoding="utf-8")).get("produse", []):
+                if p.get("url"):
+                    vechi[p["url"]] = p
+        except Exception as e:
+            print(f"  (nu am putut citi fisierul anterior: {e})")
+    print(f"Acumulat pana acum: {len(vechi):,} produse")
+
+    noi = 0
+    for nr in range(1, min(total, CERERI_MAX) + 1):
+        pp, _ = pagina(nr)
+        if not pp:
+            break
+        for p in pp:
+            s_slug = slug_din(p)
+            if not s_slug or s_slug.endswith(TLD_STRAINE):
+                continue
+            c = curata(p, s_slug)
+            if c["url"] and c["url"] not in vechi:
+                vechi[c["url"]] = c
+                noi += 1
+        time.sleep(PAUZA)
 
     pe_magazin = {}
-    for p in produse:
+    for p in vechi.values():
         pe_magazin[p["merchant_slug"]] = pe_magazin.get(p["merchant_slug"], 0) + 1
 
     print("")
-    print(f"TOTAL: {len(produse):,} produse din {len(pe_magazin)} magazine Profitshare")
+    print(f"Adaugate acum: {noi:,} produse noi")
+    print(f"TOTAL acumulat: {len(vechi):,} produse din {len(pe_magazin)} magazine")
+    for k, v in sorted(pe_magazin.items(), key=lambda x: -x[1])[:20]:
+        print(f"  {v:5d}  {k}")
 
     if dry:
+        print("")
         print("(--dry-run: nu s-a scris nimic)")
         return 0
 
     IESIRE.parent.mkdir(parents=True, exist_ok=True)
-    IESIRE.write_text(json.dumps({"produse": produse}, ensure_ascii=False), encoding="utf-8")
+    IESIRE.write_text(json.dumps({"produse": list(vechi.values())}, ensure_ascii=False),
+                      encoding="utf-8")
     print(f"Scris: {IESIRE}")
     return 0
 
