@@ -47,8 +47,11 @@ const CATEGORII = [
   { href: "/categorii/bijuterii",       label: "Bijuterii & Ceasuri" },
 ];
 
-// Reduceri preferate — hub-uri de reduceri (ce cauta userii)
-const REDUCERI = [
+// Reduceri preferate — hub-uri de reduceri (ce cauta userii).
+// EXPORTAT: homepage-ul are footer propriu (vezi HomeClient) si isi importa de
+// aici nisele, ca sa nu existe doua liste care se desincronizeaza. Dublarea asta
+// a mai costat proiectul o data — cardul separat de homepage, 09.08.2026.
+export const REDUCERI = [
   { href: "/oferte-azi",      label: "Oferte de azi" },
   { href: "/top-reduceri",    label: "Top reduceri" },
   { href: "/produse",         label: "Produse la reducere" },

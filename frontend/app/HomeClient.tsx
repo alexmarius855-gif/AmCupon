@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Mail } from "lucide-react";
 import CategoryIcon, { categoryVisual, TEXT_PE_CATEGORIE } from "./components/CategoryIcon";
 import MagazinCard from "./components/MagazinCard";
+import { REDUCERI } from "./components/Footer";
 
 interface Promotie {
   nume: string;
@@ -1392,6 +1393,18 @@ export default function HomeClient({
                   { href: "/categorii/sanatate",            label: "Farmacie" },
                   { href: "/categorii",                   label: "Toate categoriile →" },
                 ].map(l => (
+                  <li key={l.href}><a href={l.href} className="hover:text-[#ddf93c] transition-colors">{l.label}</a></li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Nise & hub-uri — aceeasi lista ca in Footer-ul comun, importata, NU
+                copiata: altfel homepage-ul (pagina cu cea mai multa autoritate) ramane
+                singura fara linkurile noi, exact cum s-a intamplat pana acum. */}
+            <div>
+              <h3 className="text-[#c9ced5] font-bold text-xs mb-4 uppercase tracking-wider">Reduceri &amp; nise</h3>
+              <ul className="space-y-2.5 text-sm">
+                {REDUCERI.map(l => (
                   <li key={l.href}><a href={l.href} className="hover:text-[#ddf93c] transition-colors">{l.label}</a></li>
                 ))}
               </ul>
