@@ -1,0 +1,45 @@
+# Sonda manuala: are Profitshare feed de produse?
+#
+# Miza: doar 87 din 1.162 de pagini de magazin sunt indexabile, pentru ca restul
+# n-au continut propriu. Sursa de produse de azi e doar 2Performant. Profitshare
+# are 60 de magazine active (inclusiv eMAG) si un getProducts documentat, pe care
+# nu l-am cerut niciodata. Daca raspunde, aproape dublam paginile indexabile.
+#
+# Scriptul DOAR sondeaza: afiseaza JSON-ul brut al primului raspuns bun si se
+# opreste. Nu scrie niciun fisier, nu face commit. Parserul se scrie dupa ce
+# vedem forma reala — acelasi tipar ca test-impact-deals.yml.
+#
+# Actions -> "Sonda produse Profitshare" -> Run workflow.
+name: Sonda produse Profitshare
+
+on:
+  workflow_dispatch:
+
+jobs:
+  sonda:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instaleaza dependinte
+        working-directory: scripts
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Sondeaza endpoint-urile de produse
+        working-directory: scripts
+        env:
+          PROFITSHARE_USER: ${{ secrets.PROFITSHARE_USER }}
+          PROFITSHARE_KEY:  ${{ secrets.PROFITSHARE_KEY }}
+        run: |
+          if [ -z "$PROFITSHARE_USER" ]; then
+            echo "PROFITSHARE_USER nu e setat — nu se poate sonda"; exit 1
+          fi
+          python probe_profitshare_products.py
