@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { HOSTURI_AFILIERE, PARAM_SUBID } from "../../lib/subId";
 
 /**
  * Tracker global de click-uri afiliate + injectare sub-id pentru ATRIBUIRE.
@@ -31,26 +32,11 @@ import { useEffect } from "react";
 
 // Gazdele prin care trec link-urile afiliate. Inainte lipseau Impact/Awin/CJ, deci
 // ~580 de magazine nu generau deloc eveniment in GA4 (gasit 06.08.2026).
-const AFFILIATE_HOSTS = [
-  "event.2performant.com",
-  "l.profitshare.ro",
-  "pxf.io",
-  "sjv.io",
-  "impactradius",
-  "impact.com",
-  "awin1.com",
-  "anrdoezrs.net",
-  "prf.hn",
-];
-
-// host (sau fragment de host) -> numele parametrului de sub-tracking al retelei
-const SUBID_PARAM: [RegExp, string][] = [
-  [/event\.2performant\.com/i, "st"],
-  [/l\.profitshare\.ro/i, "sub_id"],
-  [/pxf\.io|sjv\.io|impactradius|impact\.com/i, "subId1"],
-  [/awin1\.com/i, "clickref"],
-  [/anrdoezrs\.net|prf\.hn/i, "sid"],
-];
+// Hosturile si parametrii de sub-id vin din `lib/subId.ts` — SURSA UNICA,
+// partajata cu ruta server `/go/[magazin]`. Doua harti separate s-ar
+// desincroniza; tiparul a lovit deja proiectul de doua ori.
+const AFFILIATE_HOSTS = HOSTURI_AFILIERE;
+const SUBID_PARAM = PARAM_SUBID;
 
 /** Calea paginii curente, curatata ca sa fie citibila in rapoartele retelei. */
 function pageTag(): string {
