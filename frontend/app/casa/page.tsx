@@ -5,6 +5,7 @@ import path from "path";
 import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
+import { esteInCategorie } from "../../lib/categoriiNisa";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -22,7 +23,8 @@ export const metadata: Metadata = {
 };
 
 const TOP_CASA = ["dedeman.ro","ikea.com","leroy-merlin.ro","mobexpert.ro","jysk.ro","hornbach.ro","kika.ro","someproducts.ro","electrolux.ro","clickandgrow.com"];
-const CAT_CASA = ["home","garden","casa","gradina","home-garden","mobila","decor","furniture"];
+// Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
+const CAT_CASA = ["casa-gradina"];
 const AVANTAJE = [
   { icon: "🛋️", titlu: "Mobila & Living", desc: "Canapele, paturi, dulapuri — branduri top la preturi reduse" },
   { icon: "🌿", titlu: "Gradina & Terasa", desc: "Mobilier gradina, plante, unelte — tot ce ai nevoie" },
@@ -42,7 +44,7 @@ export default function CasaPage() {
   const topCasa = TOP_CASA.map(s => all.find(m => m.magazin === s)).filter(Boolean) as Magazin[];
   const restCasa = all.filter(m =>
     !TOP_CASA.includes(m.magazin) &&
-    CAT_CASA.some(c => (m.categorie_slug||"").includes(c) || m.categorie.toLowerCase().includes(c))
+    esteInCategorie(m, CAT_CASA)
   ).sort((a,b)=>(b.are_promotie?1:0)-(a.are_promotie?1:0)||(b.scor_final||0)-(a.scor_final||0)).slice(0, 16);
   const magazine = [...topCasa, ...restCasa];
 

@@ -41,7 +41,7 @@ export default function PieseAutoPage() {
   const all: Magazin[] = JSON.parse(fs.readFileSync(filePath, "utf-8"));
   const an = new Date().getFullYear();
 
-  const magazine = all.filter(m => m.categorie_slug === "automotive");
+  const magazine = all.filter(m => m.categorie_slug === "auto-moto");
   const cuPromo = magazine.filter(m => m.are_promotie);
 
   return (

@@ -5,6 +5,7 @@ import path from "path";
 import NisaProduse from "../components/NisaProduse";
 import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
+import { esteInCategorie } from "../../lib/categoriiNisa";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -22,7 +23,8 @@ export const metadata: Metadata = {
 };
 
 const GADGET_SLUGS = ["emag.ro", "altex.ro", "flanco.ro", "elefant.ro", "quickmobile.ro", "cel.ro", "pcgarage.ro", "evomag.ro"];
-const CAT_GADGET = ["electronics", "telecom", "games", "software", "gadget"];
+// Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
+const CAT_GADGET = ["electronice"];
 
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Gadgets & Tech — Coduri Reducere 2026","url":"https://amcupon.ro/gadgets" };
 
@@ -43,7 +45,7 @@ export default function GadgetsPage() {
   const topGadget = GADGET_SLUGS.map(s => all.find(m => m.magazin === s)).filter(Boolean) as Magazin[];
   const restTech = all.filter(m =>
     !GADGET_SLUGS.includes(m.magazin) &&
-    CAT_GADGET.some(c => (m.categorie_slug||"").includes(c) || m.categorie.toLowerCase().includes(c))
+    esteInCategorie(m, CAT_GADGET)
   ).slice(0, 20);
   const magazine = [...topGadget, ...restTech];
   const cuPromo = magazine.filter(m => m.are_promotie);
@@ -111,7 +113,7 @@ export default function GadgetsPage() {
           {/* MAGAZINE */}
           <section className="mb-10">
             <div className="flex items-center gap-3 mb-5">
-              <h2 className="text-xl font-black text-[#ffffff]">Magazine gadgets & tech</h2>
+              <h2 className="text-xl font-black text-[#ffffff]">Magazine de gadgets si electronice</h2>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {magazine.map((m) => (

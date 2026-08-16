@@ -5,6 +5,7 @@ import path from "path";
 import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
+import { esteInCategorie } from "../../lib/categoriiNisa";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -22,7 +23,8 @@ export const metadata: Metadata = {
 };
 
 const TOP_BEAUTY = ["douglas.ro","notino.ro","sephora.ro","makeup.ro","marionnaud.ro","kiehl.ro","parfumexpress.ro"];
-const CAT_BEAUTY = ["beauty","parfum","cosmet","frumus","makeup","skincare"];
+// Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
+const CAT_BEAUTY = ["beauty"];
 const AVANTAJE = [
   { icon: "🌹", titlu: "Parfumuri de Lux", desc: "Chanel, Dior, YSL, Gucci — originale certificate" },
   { icon: "💄", titlu: "Machiaj", desc: "Fond de ten, ruj, rimel — branduri premium" },
@@ -41,9 +43,9 @@ export default function ParfumuriPage() {
 
   const topBeauty = TOP_BEAUTY.map(s => all.find(m => m.magazin === s)).filter(Boolean) as Magazin[];
   const restBeauty = all.filter(m =>
-    !TOP_BEAUTY.includes(m.magazin) && m.are_promotie &&
-    CAT_BEAUTY.some(c => (m.categorie_slug||"").includes(c) || m.categorie.toLowerCase().includes(c))
-  ).slice(0, 16);
+    !TOP_BEAUTY.includes(m.magazin) &&
+    esteInCategorie(m, CAT_BEAUTY)
+  ).sort((a,b)=>(b.are_promotie?1:0)-(a.are_promotie?1:0)||(b.scor_final||0)-(a.scor_final||0)).slice(0, 16);
   const magazine = [...topBeauty, ...restBeauty];
 
   return (
@@ -89,7 +91,7 @@ export default function ParfumuriPage() {
         <section className="max-w-6xl mx-auto px-4 pb-10">
           <div className="flex items-center gap-3 mb-5">
             
-            <h2 className="text-xl font-black text-[#ffffff]">Magazine parfumuri cu reduceri active</h2>
+            <h2 className="text-xl font-black text-[#ffffff]">Magazine cu parfumuri si cosmetice</h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {magazine.map((m) => (

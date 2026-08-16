@@ -5,6 +5,7 @@ import path from "path";
 import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
+import { esteInCategorie } from "../../lib/categoriiNisa";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -22,7 +23,8 @@ export const metadata: Metadata = {
 };
 
 const TOP_ANIMALE = ["petmart.ro","petmax.ro","bravapet.ro","ehranaanimale.ro","mobilepet.ro","husse.ro","novapet.ro","gopet.ro"];
-const CAT_ANIMALE = ["pet","animal","zoo","dog","cat","fur"];
+// Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
+const CAT_ANIMALE = ["animale"];
 
 const AVANTAJE = [
   { icon: "🐶", titlu: "Hrana Caini", desc: "Kibble, conserve, trate pentru caini de toate rasele si varstele" },
@@ -53,11 +55,7 @@ export default function AnimalePage() {
 
   const restAnimale = all.filter(m =>
     !TOP_ANIMALE.includes(m.magazin) &&
-    CAT_ANIMALE.some(c =>
-      (m.categorie_slug||"").includes(c) ||
-      m.categorie.toLowerCase().includes(c) ||
-      m.magazin.toLowerCase().includes(c)
-    )
+    esteInCategorie(m, CAT_ANIMALE)
   ).sort((a,b)=>(b.are_promotie?1:0)-(a.are_promotie?1:0)||(b.scor_final||0)-(a.scor_final||0)).slice(0, 8);
 
   const magazine = [...topAnimale, ...restAnimale];

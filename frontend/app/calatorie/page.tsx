@@ -5,6 +5,7 @@ import path from "path";
 import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
+import { esteInCategorie } from "../../lib/categoriiNisa";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -28,7 +29,8 @@ const PARTENERI_INTL = [
   { nume: "Air Serbia", emoji: "🛫", desc: "Compania aeriana nationala a Serbiei — zboruri catre Belgrad si conexiuni internationale.", url: "https://www.awin1.com/cread.php?awinmid=5289333&awinaffid=101829567&clickref=" },
   { nume: "CarmelLimo", emoji: "🚘", desc: "Transfer privat cu sofer in New York si alte orase mari din SUA — alternativa la taxi pentru calatorii de business.", url: "https://www.awin1.com/cread.php?awinmid=2387410&awinaffid=101829567&clickref=" },
 ];
-const CAT_TRAVEL = ["travel","calatorie","calatorii","vacante","turism","tourism","luggage","transport"];
+// Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
+const CAT_TRAVEL = ["calatorii"];
 const DESTINATII = [
   { emoji: "🏔️", label: "Munte Romania", desc: "Bucegi, Retezat, Apuseni" },
   { emoji: "🌊", label: "Litoral Romania", desc: "Mamaia, Vama Veche, Neptun" },
@@ -48,7 +50,7 @@ export default function CalatoriePage() {
   const topTravel = TOP_TRAVEL.map(s => all.find(m => m.magazin === s)).filter(Boolean) as Magazin[];
   const restTravel = all.filter(m =>
     !TOP_TRAVEL.includes(m.magazin) &&
-    CAT_TRAVEL.some(c => (m.categorie_slug||"").includes(c) || m.categorie.toLowerCase().includes(c))
+    esteInCategorie(m, CAT_TRAVEL)
   ).sort((a,b)=>(b.are_promotie?1:0)-(a.are_promotie?1:0)||(b.scor_final||0)-(a.scor_final||0)).slice(0, 12);
   const magazine = [...topTravel, ...restTravel];
 

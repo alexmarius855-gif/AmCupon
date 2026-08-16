@@ -5,6 +5,7 @@ import path from "path";
 import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
+import { esteInCategorie } from "../../lib/categoriiNisa";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -22,7 +23,8 @@ export const metadata: Metadata = {
 };
 
 const TOP_BOOKS = ["libris.ro","elefant.ro","carturesti.ro","librarie.net","bookhub.ro"];
-const CAT_BOOKS = ["books","carte","carti","librarie","educational","book"];
+// Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
+const CAT_BOOKS = ["carti-educatie"];
 const AVANTAJE = [
   { icon: "📚", titlu: "Ficțiune & Romane", desc: "Bestselleruri românești și internaționale" },
   { icon: "🧠", titlu: "Non-ficțiune", desc: "Dezvoltare personală, business, psihologie" },
@@ -41,9 +43,9 @@ export default function CartiPage() {
 
   const topBooks = TOP_BOOKS.map(s => all.find(m => m.magazin === s)).filter(Boolean) as Magazin[];
   const restBooks = all.filter(m =>
-    !TOP_BOOKS.includes(m.magazin) && m.are_promotie &&
-    CAT_BOOKS.some(c => (m.categorie_slug||"").includes(c) || m.categorie.toLowerCase().includes(c))
-  ).slice(0, 12);
+    !TOP_BOOKS.includes(m.magazin) &&
+    esteInCategorie(m, CAT_BOOKS)
+  ).sort((a,b)=>(b.are_promotie?1:0)-(a.are_promotie?1:0)||(b.scor_final||0)-(a.scor_final||0)).slice(0, 12);
   const magazine = [...topBooks, ...restBooks];
 
   return (

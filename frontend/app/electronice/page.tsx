@@ -5,6 +5,7 @@ import path from "path";
 import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
+import { esteInCategorie } from "../../lib/categoriiNisa";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -22,7 +23,8 @@ export const metadata: Metadata = {
 };
 
 const TOP_TECH = ["emag.ro","altex.ro","pcgarage.ro","flanco.ro","cel.ro","mediagalaxy.ro","evomag.ro","vexio.ro","philips.ro","tenergy.com"];
-const CAT_TECH = ["electronics","itc","electronice","tech","it","gadget","electro"];
+// Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
+const CAT_TECH = ["electronice"];
 const AVANTAJE = [
   { icon: "📱", titlu: "Telefoane & Tablete", desc: "iPhone, Samsung, Xiaomi — cele mai bune oferte" },
   { icon: "💻", titlu: "Laptopuri & PC", desc: "Gaming, office, ultrabook-uri la prețuri reduse" },
@@ -42,7 +44,7 @@ export default function ElectronicePage() {
   const topTech = TOP_TECH.map(s => all.find(m => m.magazin === s)).filter(Boolean) as Magazin[];
   const restTech = all.filter(m =>
     !TOP_TECH.includes(m.magazin) &&
-    CAT_TECH.some(c => (m.categorie_slug||"").includes(c) || m.categorie.toLowerCase().includes(c))
+    esteInCategorie(m, CAT_TECH)
   ).sort((a,b)=>(b.are_promotie?1:0)-(a.are_promotie?1:0)||(b.scor_final||0)-(a.scor_final||0)).slice(0, 16);
   const magazine = [...topTech, ...restTech];
 

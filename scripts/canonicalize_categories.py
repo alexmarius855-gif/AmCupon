@@ -8,7 +8,7 @@ Poate rula standalone (pe output.json existent) SAU importat din merge_platforms
     from canonicalize_categories import canonicalize
     canonicalize(magazine_list)   # muteaza in loc
 """
-import sys, json, re
+import sys, json, re, unicodedata
 from pathlib import Path
 
 # ── 16 categorii canonice: (eticheta RO, slug) ──────────────────────────────
@@ -76,19 +76,76 @@ NAME_KEYWORDS = [
 ]
 
 
+def _fara_diacritice(t: str) -> str:
+    """ă/â/î/ș/ț -> a/a/i/s/t. Vezi _canon_from_label pentru motiv."""
+    return unicodedata.normalize("NFKD", t or "").encode("ascii", "ignore").decode("ascii")
+
+
 def _canon_from_label(cat: str):
-    cl = (cat or "").lower()
+    """Eticheta -> categorie canonica.
+
+    Normalizeaza diacriticele INAINTE de potrivire. Fara asta scriptul nu era
+    IDEMPOTENT: cheile din LABEL_TO_CANON sunt ASCII («casa», «sanatate»,
+    «calatori», «carti», «mancare»), dar CANON scrie etichete CU diacritice
+    («Casă & Grădină», «Sănătate & Farmacie», «Călătorii»...). La a doua trecere
+    peste propriul output, acele 5 categorii nu se mai recunosteau si cadeau in
+    «marketplace» — masurat pe datele reale: casa-gradina 145 -> 35,
+    calatorii 81 -> 51, carti-educatie 37 -> 19, mancare-bauturi 17 -> 6,
+    marketplace 208 -> 365. Scriptul se poate rula standalone (vezi __main__),
+    deci era o mina activa pentru oricine il rula a doua oara.
+    """
+    cl = _fara_diacritice((cat or "").lower())
     for key, canon in LABEL_TO_CANON.items():
-        if key in cl:
+        if _fara_diacritice(key) in cl:
             return canon
     return None
 
 
+# ── Corectii explicite, verificate manual ───────────────────────────────────
+# De ce exista lista asta (14.08.2026): output.json e SI intrare SI iesire pentru
+# pipeline (documentat in CLAUDE.md), iar `_canon_from_label` citeste eticheta deja
+# scrisa la rularea precedenta. Consecinta: o categorie gresita o data ramane
+# gresita LA INFINIT — se auto-confirma la fiecare rulare de 4h si nicio ghicire
+# dupa nume n-o mai poate corecta, pentru ca numele nici nu se mai consulta.
+# Lista de mai jos are prioritate maxima (bate si eticheta, si numele), deci e
+# singurul mod de a desface o clasificare blocata. Extinde-o cand gasesti altele.
+OVERRIDE = {
+    # nu erau magazine de animale — ajunsesera acolo prin potrivire pe subsir
+    "aqua-mail.com":   "software",     # client de email Android («aqua»)
+    "artemisads.com":  "software",     # platforma de reclame Amazon
+    "zoombo.ai":       "software",     # produs AI («zoo»)
+    "kospet.com":      "electronice",  # ceasuri smart («pet»)
+    "vapetronic.ro":   "marketplace",  # magazin de vape («pet» in «vaPETronic»)
+    # nu erau magazine de sport
+    "omio.com":        "calatorii",    # rezervari transport/calatorii
+    "geekbuying.com":  "electronice",
+    "torraslife.com":  "electronice",  # accesorii telefoane
+    "acebeam.com":     "electronice",  # lanterne
+    "us.fossibot.com": "electronice",  # statii de energie
+    "incerunmen.com":  "fashion",
+    "nbatopshot.com":  "marketplace",  # colectibile digitale
+    # diverse
+    "greekmoving.com": "servicii",     # firma de mutari, nu financiar
+    "ebrands.com":     "marketplace",  # agregator de branduri, nu copii
+}
+
+
 def _canon_from_name(magazin: str):
+    """Ghiceste categoria din numele magazinului.
+
+    Cuvintele-cheie de <=3 litere se cauta doar la GRANITA de cuvant. Un subsir de
+    3 litere apare accidental in prea multe domenii: «pet» in vaPETronic/kosPET,
+    «cat» in vivazCATaratas, «tea» in curTEAveche, «ai» in lAIcashop, «app» in
+    frAPPerie. Cuvintele mai lungi raman pe subsir — domeniile concateneaza cuvinte
+    («zenhotels», «savelectro»), iar o regula de granita aplicata peste tot ar rupe
+    30+ hoteluri clasificate corect (masurat inainte de a schimba ceva).
+    """
     ml = (magazin or "").lower()
     for kws, canon in NAME_KEYWORDS:
-        if any(k in ml for k in kws):
-            return canon
+        for k in kws:
+            gasit = re.search(r"(?<![a-z0-9])" + re.escape(k), ml) if len(k) <= 3 else (k in ml)
+            if gasit:
+                return canon
     return None
 
 
@@ -96,7 +153,9 @@ def canonicalize(mags: list) -> dict:
     """Muteaza fiecare magazin la categorie/categorie_slug canonice. Returneaza stats."""
     stats = {}
     for m in mags:
-        canon = _canon_from_label(m.get("categorie", ""))
+        canon = OVERRIDE.get((m.get("magazin") or "").lower())
+        if canon is None:
+            canon = _canon_from_label(m.get("categorie", ""))
         # junk (mall/diverse/necunoscut) -> incearca dupa numele magazinului
         if canon in (None, "marketplace"):
             by_name = _canon_from_name(m.get("magazin", ""))

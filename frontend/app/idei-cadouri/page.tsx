@@ -5,6 +5,7 @@ import path from "path";
 import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
+import { esteInCategorie } from "../../lib/categoriiNisa";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -25,7 +26,8 @@ const TOP_CADOURI = [
   "noriel.ro","fashiondays.ro","notino.ro","elefant.ro",
   "libris.ro","emag.ro","floria.ro","answear.ro","zchocolat.com",
 ];
-const CAT_CADOURI = ["toys","gifts","flower","beauty","fashion","jewelry","books","kids"];
+// Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
+const CAT_CADOURI = ["cadouri-flori"];
 
 const OCAZII = [
   { emoji:"🎂", label:"Ziua de naștere", culoare:"bg-[#ddf93c] text-[#c3dd2c]" },
@@ -71,9 +73,9 @@ export default function IdeiCadouriPage() {
   const topCadouri = TOP_CADOURI.map(s => all.find(m => m.magazin === s)).filter(Boolean) as Magazin[];
   const restCadouri = all.filter(m =>
     !TOP_CADOURI.includes(m.magazin) &&
-    m.are_promotie &&
-    CAT_CADOURI.some(c => (m.categorie_slug||"").includes(c) || m.categorie.toLowerCase().includes(c))
-  ).slice(0, 20);
+   
+    esteInCategorie(m, CAT_CADOURI)
+  ).sort((a,b)=>(b.are_promotie?1:0)-(a.are_promotie?1:0)||(b.scor_final||0)-(a.scor_final||0)).slice(0, 20);
   const magazine = [...topCadouri, ...restCadouri];
 
   return (

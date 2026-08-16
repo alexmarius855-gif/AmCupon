@@ -5,6 +5,7 @@ import path from "path";
 import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
+import { esteInCategorie } from "../../lib/categoriiNisa";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -22,7 +23,8 @@ export const metadata: Metadata = {
 };
 
 const TOP_GAMING = ["pcgarage.ro","emag.ro","altex.ro","evomag.ro","flanco.ro","cel.ro","quickmobile.ro"];
-const CAT_GAMING = ["gaming","periferice","electronics","electronice"];
+// Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
+const CAT_GAMING = ["electronice"];
 const CATEGORII_GAMING = [
   { emoji: "💻", titlu: "Laptopuri Gaming", desc: "ASUS ROG, Lenovo Legion, MSI, Acer Nitro — performanta maxima portabila" },
   { emoji: "🖥️", titlu: "Monitoare Gaming", desc: "144Hz, 240Hz, 4K — pentru gaming competitiv sau casual" },
@@ -43,7 +45,7 @@ export default function GamingPage() {
   const topGaming = TOP_GAMING.map(s => all.find(m => m.magazin === s)).filter(Boolean) as Magazin[];
   const restGaming = all.filter(m =>
     !TOP_GAMING.includes(m.magazin) &&
-    CAT_GAMING.some(c => (m.categorie_slug||"").includes(c) || m.categorie.toLowerCase().includes(c))
+    esteInCategorie(m, CAT_GAMING)
   ).sort((a,b)=>(b.are_promotie?1:0)-(a.are_promotie?1:0)||(b.scor_final||0)-(a.scor_final||0)).slice(0, 8);
   const magazine = [...topGaming, ...restGaming];
 
@@ -113,7 +115,7 @@ export default function GamingPage() {
           <div className="flex items-center justify-between mb-6">
             <div>
               <p className="text-xs font-bold text-[#ddf93c] uppercase tracking-widest mb-1">MAGAZINE PARTENERE</p>
-              <h2 className="text-xl font-black text-[#ffffff]">Magazine gaming cu reduceri active</h2>
+              <h2 className="text-xl font-black text-[#ffffff]">Magazine gaming si electronice</h2>
             </div>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">

@@ -44,7 +44,7 @@ export default function BijuteriiPage() {
   const all: Magazin[] = JSON.parse(fs.readFileSync(filePath, "utf-8"));
   const an = new Date().getFullYear();
 
-  const magazine = all.filter(m => m.categorie_slug === "jewelry" || ["pandahall.com", "silverrushstyle.com"].includes(m.magazin));
+  const magazine = all.filter(m => m.categorie_slug === "bijuterii" || ["pandahall.com", "silverrushstyle.com"].includes(m.magazin));
   const cuPromo = magazine.filter(m => m.are_promotie);
 
   return (

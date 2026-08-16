@@ -24,7 +24,7 @@ export default function MotoPage() {
   const filePath = path.join(process.cwd(), "public", "output.json");
   const all: Magazin[] = JSON.parse(fs.readFileSync(filePath, "utf-8"));
   const an = new Date().getFullYear();
-  const magazineAuto = all.filter(m => m.categorie_slug === "automotive");
+  const magazineAuto = all.filter(m => m.categorie_slug === "auto-moto");
   const cuPromo = magazineAuto.filter(m => m.are_promotie).length;
 
   return (

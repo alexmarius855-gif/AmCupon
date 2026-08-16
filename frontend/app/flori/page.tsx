@@ -45,8 +45,7 @@ export default function FloriPage() {
   const topFlori = TOP_FLORI.map(s => all.find(m => m.magazin === s)).filter(Boolean) as Magazin[];
   const restFlori = all.filter(m =>
     !TOP_FLORI.includes(m.magazin) && !EXCLUSE.has(m.magazin) &&
-    m.categorie_slug === "gifts-flowers" &&
-    (m.categorie || "").toLowerCase().includes("flower")
+    m.categorie_slug === "cadouri-flori"
   ).slice(0, 8);
   const magazine = [...topFlori, ...restFlori];
 

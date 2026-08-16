@@ -5,6 +5,7 @@ import path from "path";
 import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
+import { esteInCategorie } from "../../lib/categoriiNisa";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -22,7 +23,8 @@ export const metadata: Metadata = {
 };
 
 const TOP_SPORT = ["decathlon.ro","sportisimo.ro","sport-vision.ro","intersport.ro","hervis.ro","gigasport.ro","trampolinepartsandsupply.com"];
-const CAT_SPORT = ["sport","outdoor","fitness","running","cycling","hiking","sports"];
+// Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
+const CAT_SPORT = ["sport"];
 const SUBCATEGORII = [
   { emoji: "🏃", label: "Running", href: "/categorii/sport" },
   { emoji: "🚴", label: "Ciclism", href: "/categorii/sport" },
@@ -43,9 +45,9 @@ export default function SportPage() {
 
   const topSport = TOP_SPORT.map(s => all.find(m => m.magazin === s)).filter(Boolean) as Magazin[];
   const restSport = all.filter(m =>
-    !TOP_SPORT.includes(m.magazin) && m.are_promotie &&
-    CAT_SPORT.some(c => (m.categorie_slug||"").includes(c) || m.categorie.toLowerCase().includes(c))
-  ).slice(0, 16);
+    !TOP_SPORT.includes(m.magazin) &&
+    esteInCategorie(m, CAT_SPORT)
+  ).sort((a,b)=>(b.are_promotie?1:0)-(a.are_promotie?1:0)||(b.scor_final||0)-(a.scor_final||0)).slice(0, 16);
   const magazine = [...topSport, ...restSport];
 
   return (

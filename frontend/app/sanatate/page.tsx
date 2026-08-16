@@ -5,6 +5,7 @@ import path from "path";
 import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
+import { esteInCategorie } from "../../lib/categoriiNisa";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -22,7 +23,8 @@ export const metadata: Metadata = {
 };
 
 const TOP_SANATATE = ["pronaturiste.ro","vitamix.ro","goldnutrition.ro","apiland.ro","botaniq.ro","republicabio.ro","zephyrlabs.ro","tratamentenaturiste.ro","vioi.ro","biomag.ro","unicorn-naturals.ro","minuneanaturii.ro","nutraceutics.ro"];
-const CAT_SANATATE = ["health","personal care","sanatate","natur","bio","wellness","supli","vita"];
+// Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
+const CAT_SANATATE = ["sanatate"];
 
 const AVANTAJE = [
   { icon: "💊", titlu: "Vitamine & Minerale", desc: "Multivitamine, vitamina D, C, zinc, magneziu — oferte permanente" },
@@ -53,11 +55,7 @@ export default function SanatatePage() {
 
   const restSanatate = all.filter(m =>
     !TOP_SANATATE.includes(m.magazin) &&
-    CAT_SANATATE.some(c =>
-      (m.categorie_slug||"").includes(c) ||
-      m.categorie.toLowerCase().includes(c) ||
-      m.magazin.toLowerCase().includes(c)
-    )
+    esteInCategorie(m, CAT_SANATATE)
   ).sort((a,b)=>(b.are_promotie?1:0)-(a.are_promotie?1:0)||(b.scor_final||0)-(a.scor_final||0)).slice(0, 12);
 
   const magazine = [...topSanatate, ...restSanatate];

@@ -5,6 +5,7 @@ import path from "path";
 import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
+import { esteInCategorie } from "../../lib/categoriiNisa";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -22,7 +23,8 @@ export const metadata: Metadata = {
 };
 
 const TOP_LAPTOP = ["emag.ro","altex.ro","pcgarage.ro","flanco.ro","evomag.ro","cel.ro","quickmobile.ro"];
-const CAT_LAPTOP = ["electronics","electronice","laptop","it"];
+// Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
+const CAT_LAPTOP = ["electronice"];
 
 const BUGETE = [
   { pret: "Sub 2.000 lei", emoji: "💰", desc: "Chromebook, student basic, navigare web", culoare: "bg-emerald-600" },
@@ -50,7 +52,7 @@ export default function LaptopPage() {
   const topLaptop = TOP_LAPTOP.map(s => all.find(m => m.magazin === s)).filter(Boolean) as Magazin[];
   const restLaptop = all.filter(m =>
     !TOP_LAPTOP.includes(m.magazin) &&
-    CAT_LAPTOP.some(c => (m.categorie_slug||"").includes(c) || m.categorie.toLowerCase().includes(c))
+    esteInCategorie(m, CAT_LAPTOP)
   ).sort((a,b)=>(b.are_promotie?1:0)-(a.are_promotie?1:0)||(b.scor_final||0)-(a.scor_final||0)).slice(0, 8);
   const magazine = [...topLaptop, ...restLaptop];
 
@@ -116,7 +118,7 @@ export default function LaptopPage() {
           <div className="flex items-center justify-between mb-6">
             <div>
               <p className="text-xs font-bold text-[#ddf93c] uppercase tracking-widest mb-1">MAGAZINE PARTENERE</p>
-              <h2 className="text-xl font-black text-[#ffffff]">Magazine laptopuri cu reduceri active</h2>
+              <h2 className="text-xl font-black text-[#ffffff]">Magazine cu laptopuri si electronice</h2>
             </div>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">

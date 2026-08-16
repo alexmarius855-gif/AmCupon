@@ -5,6 +5,7 @@ import path from "path";
 import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
+import { esteInCategorie } from "../../lib/categoriiNisa";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -22,7 +23,8 @@ export const metadata: Metadata = {
 };
 
 const TOP_JOCURI = ["pcgarage.ro","evomag.ro","altex.ro","emag.ro","gamers.ro","gaming-gear.ro","nexus.ro","toysrus.ro"];
-const CAT_JOCURI = ["game","gaming","joc","consol","playstation","xbox","nintendo","steam"];
+// Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
+const CAT_JOCURI = ["electronice"];
 
 const AVANTAJE = [
   { icon: "🎮", titlu: "Console Gaming", desc: "PS5, Xbox Series X/S, Nintendo Switch — console noi si bundle-uri speciale" },
@@ -52,13 +54,9 @@ export default function JocuriPage() {
     .filter(Boolean) as Magazin[];
 
   const restJocuri = all.filter(m =>
-    !TOP_JOCURI.includes(m.magazin) && m.are_promotie &&
-    CAT_JOCURI.some(c =>
-      (m.categorie_slug||"").includes(c) ||
-      m.categorie.toLowerCase().includes(c) ||
-      m.magazin.toLowerCase().includes(c)
-    )
-  ).slice(0, 10);
+    !TOP_JOCURI.includes(m.magazin) &&
+    esteInCategorie(m, CAT_JOCURI)
+  ).sort((a,b)=>(b.are_promotie?1:0)-(a.are_promotie?1:0)||(b.scor_final||0)-(a.scor_final||0)).slice(0, 10);
 
   const magazine = [...topJocuri, ...restJocuri];
   const cuPromo = magazine.filter(m => m.are_promotie);
@@ -124,7 +122,7 @@ export default function JocuriPage() {
 
         {/* Magazine */}
         <section className="max-w-6xl mx-auto px-4 pb-10">
-          <h2 className="text-xl font-black text-[#ffffff] mb-5">Magazine gaming cu reduceri active</h2>
+          <h2 className="text-xl font-black text-[#ffffff] mb-5">Magazine cu jocuri si electronice</h2>
           {magazine.length > 0 ? (
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
               {magazine.map((m) => (

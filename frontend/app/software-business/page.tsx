@@ -54,8 +54,7 @@ export default function SoftwareBusinessPage() {
   // Software/SaaS românesc din 2Performant
   const sw2p = allMag.filter(m =>
     ["facturis-online.ro", "hostico.ro", "chroot.ro"].includes(m.magazin) ||
-    m.categorie_slug === "software" ||
-    m.categorie_slug === "office-supplies"
+    m.categorie_slug === "software"
   ).sort((a, b) => {
     // facturis primul (comision 35%)
     if (a.magazin === "facturis-online.ro") return -1;
