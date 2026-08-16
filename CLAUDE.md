@@ -12,7 +12,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
-**UPDATE 14.08.2026 (categorii reale pe paginile de nisa + 58 logo-uri rupte — COMMIT LOCAL, NEPUSHED):**
+**UPDATE 14.08.2026 (categorii reale pe paginile de nisa + 58 logo-uri rupte — PUSHED, 3 commits):**
 - **CAUZA RADACINA, acelasi tipar in 3 straturi: potrivire pe SUBSIR acolo unde exista un camp EXACT.**
   22 de pagini de nisa filtrau magazinele cu liste de cuvinte-cheie scrise de mana
   (`["pet","animal","zoo","dog","cat"]`) trecute prin `.includes()`, desi `output.json` are deja
