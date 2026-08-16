@@ -21,6 +21,7 @@ import gzip
 import hashlib
 import io
 import json
+import sys
 import os
 import re
 import time
@@ -840,20 +841,47 @@ def get_products_from_feed_url(url: str, merchant: str, feed_id) -> list:
 
 # ─── Fallback: API endpoint (fara imagini) ────────────────────────────────────
 
+# Cate produse luam, cel mult, dintr-un singur feed. Nu e o limita a API-ului, ci
+# o alegere: feed-urile mari au sute de mii de produse, iar noi vrem DIVERSITATE
+# intre magazine, nu un singur magazin care umple tot fisierul (exact ce s-a
+# intamplat cu navstore.ro: 3000 din 3512 produse).
+MAX_PRODUSE_PER_FEED = 1200
+
+
 def get_products_from_api(feed_id, merchant: str) -> list:
-    """Fallback: foloseste endpoint-ul API (nu are imagini de obicei)."""
+    """Produse dintr-un feed 2Performant, prin API-ul autentificat.
+
+    ATENTIE LA PAGINARE — bug reparat 16.08.2026, identic cu cel documentat in
+    CLAUDE.md pentru `/affiliate/programs.json`: **API-ul 2Performant capeaza la
+    20 de elemente pe pagina si ignora `per_page`**. Codul vechi cerea `per_page=50`
+    si se oprea cu `if len(items) < 50: break` — primea 20, 20 < 50, deci se oprea
+    dupa PRIMA pagina si aducea fix 20 de produse din fiecare feed.
+
+    Dovada in datele reale de dinainte de fix: din 86 de magazine, **20 aveau exact
+    20 de produse** — nu o coincidenta, ci capul de paginare. Total 3512 produse,
+    din care 3000 de la un singur magazin luat pe alta cale (navstore.ro), fata de
+    33.096 cat aducea feed-ul combinat inainte sa fie blocat pe IP in CI.
+
+    Corect (la fel ca `fetch_all_pages` din fetch_2p_api.py): numarul real de pagini
+    vine din `metadata.pagination.pages`. Rezerva pe `len(items) == 0` doar daca
+    raspunsul nu are metadata — NICIODATA pe `len(items) < per_page`.
+    """
     products = []
     page = 1
-    while len(products) < 200:
+    total_pages = None
+    while len(products) < MAX_PRODUSE_PER_FEED:
         data = api_get(
             f"affiliate/product_feeds/{feed_id}/products",
             {"page": page, "per_page": 50}
         )
         if data is None:
             break
-        items = data if isinstance(data, list) else next(
-            (v for v in data.values() if isinstance(v, list)), []
-        )
+        if isinstance(data, list):
+            items = data
+        else:
+            items = next((v for v in data.values() if isinstance(v, list)), [])
+            pg = (data.get("metadata") or {}).get("pagination", {}) or {}
+            total_pages = pg.get("pages") or total_pages
         if not items:
             break
         for prod in items:
@@ -890,10 +918,17 @@ def get_products_from_api(feed_id, merchant: str) -> list:
                 "merchant":     merchant,
                 "feed_id":      feed_id,
             })
-        if len(items) < 50:
+        # Oprire pe numarul REAL de pagini, nu pe dimensiunea ultimei pagini.
+        if total_pages is not None:
+            if page >= total_pages:
+                break
+        elif len(items) < 20:
+            # fara metadata: 20 e dimensiunea reala de pagina a API-ului, nu 50
             break
         page += 1
         time.sleep(0.2)
+    if total_pages and total_pages > 1:
+        print(f"    API: {len(products)} produse din {min(page, total_pages)}/{total_pages} pagini")
     return products
 
 
@@ -1110,6 +1145,26 @@ def main():
     # fiindca feed-ul combinat a fost blocat in CI si API-ul n-a raspuns), NU
     # suprascriem un products.json existent mai bogat. Mai bine date stabile
     # (chiar usor invechite) decat un fisier cu un singur magazin.
+    # Garda pe NUMARUL DE PRODUSE (16.08.2026). Cea de mai jos se uita DOAR la
+    # numarul de MAGAZINE si de-aia n-a prins regresia reala 33.096 -> 3.468:
+    # magazinele erau 86, doar produsele se prabusisera (bug de paginare — fiecare
+    # feed dadea fix 20 de produse). O cadere sub 40% dintr-un fisier deja bogat nu
+    # e o variatie normala de catalog, e o sursa stricata.
+    if os.path.exists(output_path):
+        try:
+            with open(output_path, "r", encoding="utf-8") as _f:
+                _old = json.load(_f)
+            _old_prods = _old.get("products", []) if isinstance(_old, dict) else _old
+            if len(_old_prods) >= 1000 and len(all_products) < len(_old_prods) * 0.40:
+                print("")
+                print(f"  !! CADERE DE PRODUSE: {len(all_products)} acum vs "
+                      f"{len(_old_prods)} in fisierul existent "
+                      f"({len(all_products)/len(_old_prods)*100:.0f}%). O sursa e probabil "
+                      f"stricata (paginare/feed blocat/auth). PASTREZ fisierul vechi.")
+                return
+        except Exception as _e:
+            print(f"  (guard produse: nu am putut citi fisierul existent: {_e})")
+
     MIN_MERCHANTS_OK = 4
     if merchants_finali < MIN_MERCHANTS_OK and os.path.exists(output_path):
         try:
@@ -1129,6 +1184,13 @@ def main():
             print(f"  (nu am putut citi products.json existent pt. guard: {e})")
 
     # ── Salveaza ──────────────────────────────────────────────────────────────
+    if "--dry-run" in sys.argv:
+        _m = sorted({p.get("merchant", "?") for p in all_products})
+        print("")
+        print(f"  --dry-run: NU s-a scris nimic. {len(all_products)} produse, {len(_m)} magazine.")
+        for _x in _m[:40]:
+            print(f"     {sum(1 for p in all_products if p.get('merchant') == _x):6d}  {_x}")
+        return
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump({

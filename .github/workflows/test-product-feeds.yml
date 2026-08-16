@@ -1,0 +1,58 @@
+# Test manual pentru fetch_product_feeds.py — NU scrie nimic, NU face commit.
+#
+# De ce exista: bug-ul de paginare (fiecare feed 2Performant returna fix 20 de
+# produse) nu se poate reproduce local — credentialele 2P sunt doar in GitHub
+# Secrets. Acelasi tipar ca test-impact-deals.yml: rulare manuala, foloseste
+# secretele existente fara ca cineva sa le vada, si ruleaza cu --dry-run ca sa
+# nu atinga products.json.
+#
+# Se ruleaza din Actions -> "Test product feeds (dry-run)" -> Run workflow.
+name: Test product feeds (dry-run)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instaleaza dependinte
+        working-directory: scripts
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Cate produse are products.json ACUM (referinta)
+        run: |
+          python - <<'EOF'
+          import json
+          d = json.load(open("frontend/public/products.json", encoding="utf-8"))
+          p = d.get("products", d) if isinstance(d, dict) else d
+          m = {}
+          for x in p:
+              k = x.get("merchant") or "?"
+              m[k] = m.get(k, 0) + 1
+          print(f"INAINTE: {len(p)} produse, {len(m)} magazine")
+          exact20 = sum(1 for v in m.values() if v == 20)
+          print(f"  magazine cu EXACT 20 de produse (semnatura bug-ului de paginare): {exact20}")
+          EOF
+
+      - name: Ruleaza fetch_product_feeds.py --dry-run
+        working-directory: scripts
+        env:
+          TWOPEFORMANT_USER:  ${{ secrets.TWOPEFORMANT_USER }}
+          TWOPEFORMANT_EMAIL: ${{ secrets.TWOPEFORMANT_EMAIL }}
+          TWOPEFORMANT_PASS:  ${{ secrets.TWOPEFORMANT_PASS }}
+        run: |
+          if [ -z "$TWOPEFORMANT_EMAIL" ]; then
+            echo "TWOPEFORMANT_EMAIL nu e setat — nu se poate testa"; exit 1
+          fi
+          python fetch_product_feeds.py --dry-run
