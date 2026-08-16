@@ -6,9 +6,6 @@ import { buildMerchantTokens, esteIndexabil, type IndexableProdus } from "../lib
 
 const BASE_URL = "https://amcupon.ro";
 
-// Sluguri pagini multi-nisa (/nisa/[slug])
-const NISA_SLUGURI = ["auto", "carti", "casa", "tech", "fashion", "sport", "frumusete"];
-
 // Sluguri pagini /top/[slug] — citite dinamic din top-produse.json
 function getTopSluguriDinamic(): string[] {
   try {
@@ -152,13 +149,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     })),
 
-    // ─── Pagini nisa (/nisa/[slug]) ──────────────────────────────────────────
-    ...NISA_SLUGURI.map((slug) => ({
-      url: `${BASE_URL}/nisa/${slug}`,
-      lastModified: ultimaModificare(`${BASE_URL}/nisa/${slug}`),
-      changeFrequency: "daily" as const,
-      priority: 0.8,
-    })),
+    // /nisa/[slug] NU e in sitemap intentionat: paginile isi declara canonical catre
+    // pagina de nisa principala (/fashion, /electronice...), iar a trimite la indexare
+    // un URL care se declara duplicat e un semnal contradictoriu. Raman live si linkuite.
 
     // ─── Top Produse (/top si /top/[slug]) ───────────────────────────────────
     { url: `${BASE_URL}/top`,                     lastModified: ultimaModificare(`${BASE_URL}/top`), changeFrequency: "weekly",  priority: 0.9 },

@@ -56,6 +56,15 @@ const REDUCERI = [
   { href: "/craciun",         label: "Reduceri Craciun" },
   { href: "/idei-cadouri",    label: "Idei cadouri" },
   { href: "/comparatii",      label: "Comparatii magazine" },
+  // Nise care erau ORFANE — zero linkuri interne pe tot site-ul, deci Google le
+  // gasea doar din sitemap si nu primeau niciun semnal de la restul paginilor.
+  // Footer-ul apare pe toate cele ~100 de pagini, deci e cea mai ieftina reparatie.
+  { href: "/supermarket",     label: "Supermarket online" },
+  { href: "/smart-home",      label: "Smart Home" },
+  { href: "/antivirus",       label: "Antivirus & securitate" },
+  { href: "/pescuit",         label: "Echipament pescuit" },
+  { href: "/rochii-mireasa",  label: "Rochii de mireasa" },
+  { href: "/studiu/coduri-reducere-romania", label: "Studiu: coduri de reducere" },
 ];
 
 // Pentru utilizatori

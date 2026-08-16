@@ -4,6 +4,12 @@ import fs from "fs";
 import path from "path";
 import type { Metadata } from "next";
 
+/** Pagina principala care castiga semnalul pentru fiecare nisa (vezi canonical mai jos). */
+const CANONIC_PRINCIPAL: Record<string, string> = {
+  auto: "/moto", carti: "/carti", casa: "/casa", tech: "/electronice",
+  fashion: "/fashion", sport: "/sport", frumusete: "/frumusete",
+};
+
 /* ─── Config nise ────────────────────────────────────────────────────────── */
 const NISE: Record<string, {
   titlu: string;
@@ -107,7 +113,15 @@ export async function generateMetadata(
       description: nisa.descriere,
       url:         `https://amcupon.ro/nisa/${slug}`,
     },
-    alternates: { canonical: `https://amcupon.ro/nisa/${slug}` },
+    // Canonical catre pagina de nisa PRINCIPALA, nu catre sine.
+    // /nisa/fashion si /fashion tintesc aceeasi cautare ("reduceri fashion"), fiecare
+    // cu canonical propriu -> semnalul se imparte in loc sa se cumuleze. Pe un domeniu
+    // cu autoritate mica e pierdere neta exact pe cuvintele valoroase. Acelasi tipar
+    // reparat pe 10.08 la cele 29 de pagini de brand (fix_canibalizare_canonical.py).
+    // Pagina ramane live si utila (19 magazine, produse) — doar semnalul se consolideaza.
+    // Consecinta obligatorie: /nisa/* NU mai are voie in sitemap (vezi sitemap.ts) —
+    // a trimite la indexare un URL care se declara duplicat e un semnal contradictoriu.
+    alternates: { canonical: `https://amcupon.ro${CANONIC_PRINCIPAL[slug] ?? `/nisa/${slug}`}` },
   };
 }
 
