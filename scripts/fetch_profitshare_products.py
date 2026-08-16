@@ -145,19 +145,30 @@ def main():
         print(f"  sarite ca magazine straine: {len(straine)} ({', '.join(straine[:5])})")
 
     # ── Faza 2: cate un bloc mic din fiecare ────────────────────────────────
+    # Citim in AMBELE directii din pagina-ancora.
+    #
+    # Prima versiune citea doar inainte si a iesit cu 0 produse la 15 din 18
+    # magazine. Cauza: ancora e pagina unde am VAZUT prima data magazinul, dar
+    # esantionarea poate sa-l prinda la SFARSITUL blocului lui — atunci pagina
+    # urmatoare e deja alt magazin si citirea se opreste imediat. Blocul real e
+    # in spate. Verificat pe rularea reala, nu dedus: FashionDays/Anvelino/
+    # ITGalaxy (prinse la inceput de bloc) aveau produse, restul zero.
     produse = []
-    for s, start in sorted(harta.items(), key=lambda x: x[1]):
+    for s, ancora in sorted(harta.items(), key=lambda x: x[1]):
         luate = 0
-        for k in range(PAGINI_PER_MAGAZIN):
-            pp, _ = pagina(start + k)
-            if not pp:
-                break
-            ale_lui = [p for p in pp if slug_din(p) == s]
-            if not ale_lui:
-                break                # am iesit din blocul magazinului
-            produse.extend(curata(p, s) for p in ale_lui)
-            luate += len(ale_lui)
-            time.sleep(PAUZA)
+        pagini_ramase = PAGINI_PER_MAGAZIN
+        for directie in (1, -1):
+            nr = ancora if directie == 1 else ancora - 1
+            while pagini_ramase > 0 and 1 <= nr <= total:
+                pp, _ = pagina(nr)
+                ale_lui = [p for p in pp if slug_din(p) == s] if pp else []
+                if not ale_lui:
+                    break            # am iesit din blocul magazinului pe directia asta
+                produse.extend(curata(p, s) for p in ale_lui)
+                luate += len(ale_lui)
+                pagini_ramase -= 1
+                nr += directie
+                time.sleep(PAUZA)
         print(f"  {nume_real.get(s, s):28s} {luate:4d} produse")
 
     pe_magazin = {}
