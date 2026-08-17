@@ -1,26 +1,11 @@
 {
-  "data": "2026-08-16",
-  "data_afisata": "16 august 2026",
-  "titlu": "Radarul AmCupon — 16 august 2026",
-  "intro": "Am trecut azi prin ofertele active si am pastrat doar ce merita. Iese in evidenta Hairify si Emag, dar mai jos ai selectia completa, verificata de noi. Toate codurile sunt testate; cele cu termen scurt le-am marcat.",
+  "data": "2026-08-17",
+  "data_afisata": "17 august 2026",
+  "titlu": "Radarul AmCupon — 17 august 2026",
+  "intro": "Am trecut azi prin ofertele active si am pastrat doar ce merita. Iese in evidenta Emag si Hairify, dar mai jos ai selectia completa, verificata de noi. Toate codurile sunt testate; cele cu termen scurt le-am marcat.",
   "picks": [
     {
-      "scor": 96.2,
-      "magazin": "hairify.ro",
-      "nume_afisat": "Hairify",
-      "categorie": "Beauty & Îngrijire",
-      "categorie_slug": "beauty",
-      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14301/medium/14301.png",
-      "titlu": "15% Discount la fibrele de păr din cheratină pentru păr rar și chelie",
-      "descriere": "Ai 15% reducere la fibrele de păr Hairify – soluția instant pentru a masca zonele cu păr rar sau chelie.\n\nCe sunt fibrele de păr?\nSunt microparticule din keratină naturală (exact proteina din care este compus și părul tău). Datorită unei încărcări electrostatice, ele se prind ca niște magneți microscopici de firele tale subțiri, îngroșându-le instantaneu. Scalpul devine invizibil, iar părul tău capătă un volum complet natural.\n\nDe ce este o ofertă de neratat?\n\n15% Discount la prima ta comandă.",
-      "cod": "BL2016",
-      "url": "https://amcupon.ro/cod-reducere/hairify.ro",
-      "zile_ramase": 136,
-      "procent_succes": 81,
-      "take": "Oferta verificata — buna daca te incadrezi in categorie."
-    },
-    {
-      "scor": 96.14999999999999,
+      "scor": 104.0,
       "magazin": "emag.ro",
       "nume_afisat": "Emag",
       "categorie": "Marketplace",
@@ -30,9 +15,39 @@
       "descriere": "Crazy Days 11-19 august 2026",
       "cod": "",
       "url": "https://amcupon.ro/cod-reducere/emag.ro",
-      "zile_ramase": 3,
-      "procent_succes": 93,
-      "take": "Grabeste-te: expira in 3 zile. Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 2,
+      "procent_succes": 95,
+      "take": "Grabeste-te: expira in 2 zile. Oferta verificata — buna daca te incadrezi in categorie."
+    },
+    {
+      "scor": 97.4,
+      "magazin": "hairify.ro",
+      "nume_afisat": "Hairify",
+      "categorie": "Beauty & Îngrijire",
+      "categorie_slug": "beauty",
+      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14301/medium/14301.png",
+      "titlu": "15% Discount la fibrele de păr din cheratină pentru păr rar și chelie",
+      "descriere": "Ai 15% reducere la fibrele de păr Hairify – soluția instant pentru a masca zonele cu păr rar sau chelie.\n\nCe sunt fibrele de păr?\nSunt microparticule din keratină naturală (exact proteina din care este compus și părul tău). Datorită unei încărcări electrostatice, ele se prind ca niște magneți microscopici de firele tale subțiri, îngroșându-le instantaneu. Scalpul devine invizibil, iar părul tău capătă un volum complet natural.\n\nDe ce este o ofertă de neratat?\n\n15% Discount la prima ta comandă.",
+      "cod": "BL2016",
+      "url": "https://amcupon.ro/cod-reducere/hairify.ro",
+      "zile_ramase": 135,
+      "procent_succes": 87,
+      "take": "Oferta verificata — buna daca te incadrezi in categorie."
+    },
+    {
+      "scor": 96.2,
+      "magazin": "e-potion.ro",
+      "nume_afisat": "E Potion",
+      "categorie": "Sănătate & Farmacie",
+      "categorie_slug": "sanatate",
+      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14406/medium/14406.jpg",
+      "titlu": "10% reducere pe tot site-ul e-Potion.ro",
+      "descriere": "Folosește codul EPOTION10 și primești 10% reducere pe valoarea totală a coșului, pe tot site-ul e-Potion.ro.\nSute de arome, lichide, dispozitive și accesorii — de la branduri proprii până la cele mai cunoscute nume internaționale.\nLivrare în 24/48h în toată țara, iar comenzile plasate până la ora 15:00 (luni–vineri) se expediază în aceeași zi.\nExcepții: categoria IQOS, kiturile Veev Inprim și produsele aflate deja la promoție.\nFără dată de expirare — codul este valabil permanent.",
+      "cod": "epotion10",
+      "url": "https://amcupon.ro/cod-reducere/e-potion.ro",
+      "zile_ramase": 326,
+      "procent_succes": 81,
+      "take": "Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
       "scor": 96.0,
@@ -50,22 +65,7 @@
       "take": "Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
-      "scor": 89.65,
-      "magazin": "e-potion.ro",
-      "nume_afisat": "E Potion",
-      "categorie": "Sănătate & Farmacie",
-      "categorie_slug": "sanatate",
-      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14406/medium/14406.jpg",
-      "titlu": "10% reducere pe tot site-ul e-Potion.ro",
-      "descriere": "Folosește codul EPOTION10 și primești 10% reducere pe valoarea totală a coșului, pe tot site-ul e-Potion.ro.\nSute de arome, lichide, dispozitive și accesorii — de la branduri proprii până la cele mai cunoscute nume internaționale.\nLivrare în 24/48h în toată țara, iar comenzile plasate până la ora 15:00 (luni–vineri) se expediază în aceeași zi.\nExcepții: categoria IQOS, kiturile Veev Inprim și produsele aflate deja la promoție.\nFără dată de expirare — codul este valabil permanent.",
-      "cod": "epotion10",
-      "url": "https://amcupon.ro/cod-reducere/e-potion.ro",
-      "zile_ramase": 327,
-      "procent_succes": 75,
-      "take": "Oferta verificata — buna daca te incadrezi in categorie."
-    },
-    {
-      "scor": 89.10000000000001,
+      "scor": 94.4,
       "magazin": "incaltamintelamoda.ro",
       "nume_afisat": "Incaltamintelamoda",
       "categorie": "Fashion",
@@ -75,8 +75,8 @@
       "descriere": "Descoperă colecția Incaltamintelamoda.ro și profită de ofertă folosind codul LAMODA. Toate produsele sunt realizate din piele naturală și fabricate în România, fiind create pentru confort, rezistență și un aspect elegant.\n\n✔ Încălțăminte bărbătească din piele naturală\n✔ Produse fabricate în România\n✔ Modele potrivite pentru ținute casual și elegante\n✔ Livrare rapidă din stoc\n✔ Raport excelent calitate-preț\n\nFolosește codul LAMODA la finalizarea comenzii și bucură-te de oferta specială disponibil",
       "cod": "LAMODA",
       "url": "https://amcupon.ro/cod-reducere/incaltamintelamoda.ro",
-      "zile_ramase": 3593,
-      "procent_succes": 81,
+      "zile_ramase": 3592,
+      "procent_succes": 72,
       "take": "Bun de prins daca oricum voiai sa-ti reimprospatezi garderoba."
     },
     {

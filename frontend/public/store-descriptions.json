@@ -53,15 +53,6 @@
   ],
   "sursa": "data-template"
  },
- "libris.ro": {
-  "titlu": "Despre codurile de reducere Libris",
-  "paragrafe": [
-   "Libris este un magazin online din categoria cărți, educație și papetărie, unde găsești o gamă variată de produse la prețuri competitive.",
-   "Momentan găsești 1 ofertă activă pentru Libris, inclusiv „English Weekend -20%-50% & Transport GRATUIT*!”. Pe AmCupon.ro actualizăm aceste reduceri zilnic, ca informația să fie mereu corectă.",
-   "Ca să economisești, copiază codul Libris de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
-  ],
-  "sursa": "data-template"
- },
  "gsmnet.ro": {
   "titlu": "Despre codurile de reducere Gsmnet",
   "paragrafe": [
@@ -161,15 +152,6 @@
   ],
   "sursa": "data-template"
  },
- "bookzone.ro": {
-  "titlu": "Despre codurile de reducere Bookzone",
-  "paragrafe": [
-   "Bookzone se numără printre magazinele de cărți, educație și papetărie apreciate în România pentru raportul bun dintre calitate și preț.",
-   "Bookzone are în acest moment 1 ofertă activă, cum este „Nou pe bookzone.ro: 1200 de titluri în engleză – Un adevărat festin…”. Toate sunt verificate și reîmprospătate zilnic pe AmCupon.ro.",
-   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Bookzone, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
-  ],
-  "sursa": "data-template"
- },
  "otter.ro": {
   "titlu": "Despre codurile de reducere Otter",
   "paragrafe": [
@@ -266,6 +248,15 @@
    "Dacă te interesează casă, mobilier și grădină, Vidaxl este o opțiune solidă pentru cumpărăturile tale online.",
    "Momentan găsești 2 oferte active pentru Vidaxl, inclusiv „Абонирайте се за нашия бюлетин днес & получавате отстъпка от 10 лв.…”. Pe AmCupon.ro actualizăm aceste reduceri zilnic, ca informația să fie mereu corectă.",
    "Ca să economisești, copiază codul Vidaxl de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
+  ],
+  "sursa": "data-template"
+ },
+ "afisport.ro": {
+  "titlu": "Despre codurile de reducere Afisport",
+  "paragrafe": [
+   "Dacă te interesează sport, fitness și echipamente outdoor, Afisport este o opțiune solidă pentru cumpărăturile tale online.",
+   "Chiar acum, Afisport are 1 ofertă activă pe AmCupon.ro, printre care „Extragarantie 2+3 ani la Biciclete Afisport.ro”. Verificăm zilnic codurile de reducere ca să prinzi cel mai bun preț înainte să finalizezi comanda.",
+   "Folosirea unui cod Afisport este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
   ],
   "sursa": "data-template"
  },
@@ -5732,6 +5723,15 @@
   ],
   "sursa": "data-template"
  },
+ "libris.ro": {
+  "titlu": "Despre codurile de reducere Libris",
+  "paragrafe": [
+   "Libris este un magazin online din categoria cărți, educație și papetărie, unde găsești o gamă variată de produse la prețuri competitive.",
+   "În acest moment nu există un cod activ pentru Libris, dar verificăm zilnic. Adaugă pagina la favorite ca să fii primul care prinde următoarea reducere de cărți, educație și papetărie.",
+   "Ca să economisești, copiază codul Libris de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
+  ],
+  "sursa": "data-template"
+ },
  "sevensins.ro": {
   "titlu": "Despre codurile de reducere Sevensins",
   "paragrafe": [
@@ -6578,21 +6578,21 @@
   ],
   "sursa": "data-template"
  },
- "liki24.it": {
-  "titlu": "Despre codurile de reducere Liki24",
-  "paragrafe": [
-   "Liki24 se numără printre magazinele de farmacie, suplimente și sănătate apreciate în România pentru raportul bun dintre calitate și preț.",
-   "Codurile Liki24 se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de farmacie, suplimente și sănătate și le publicăm aici de îndată ce apar.",
-   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Liki24, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
-  ],
-  "sursa": "data-template"
- },
  "pfarma.ro": {
   "titlu": "Despre codurile de reducere Pfarma",
   "paragrafe": [
    "Pfarma se numără printre magazinele de farmacie, suplimente și sănătate apreciate în România pentru raportul bun dintre calitate și preț.",
    "Codurile Pfarma se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de farmacie, suplimente și sănătate și le publicăm aici de îndată ce apar.",
    "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Pfarma, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
+  ],
+  "sursa": "data-template"
+ },
+ "liki24.it": {
+  "titlu": "Despre codurile de reducere Liki24",
+  "paragrafe": [
+   "Liki24 se numără printre magazinele de farmacie, suplimente și sănătate apreciate în România pentru raportul bun dintre calitate și preț.",
+   "Codurile Liki24 se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de farmacie, suplimente și sănătate și le publicăm aici de îndată ce apar.",
+   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Liki24, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
   ],
   "sursa": "data-template"
  },
@@ -6686,12 +6686,12 @@
   ],
   "sursa": "data-template"
  },
- "liki24.be": {
-  "titlu": "Despre codurile de reducere Liki24",
+ "xxxlutz.ro": {
+  "titlu": "Despre codurile de reducere Xxxlutz",
   "paragrafe": [
-   "Liki24 este un magazin online din categoria farmacie, suplimente și sănătate, unde găsești o gamă variată de produse la prețuri competitive.",
-   "În acest moment nu există un cod activ pentru Liki24, dar verificăm zilnic. Adaugă pagina la favorite ca să fii primul care prinde următoarea reducere de farmacie, suplimente și sănătate.",
-   "Ca să economisești, copiază codul Liki24 de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
+   "Xxxlutz se numără printre magazinele de casă, mobilier și grădină apreciate în România pentru raportul bun dintre calitate și preț.",
+   "Codurile Xxxlutz se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de casă, mobilier și grădină și le publicăm aici de îndată ce apar.",
+   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Xxxlutz, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
   ],
   "sursa": "data-template"
  },
@@ -6713,12 +6713,12 @@
   ],
   "sursa": "data-template"
  },
- "xxxlutz.ro": {
-  "titlu": "Despre codurile de reducere Xxxlutz",
+ "liki24.be": {
+  "titlu": "Despre codurile de reducere Liki24",
   "paragrafe": [
-   "Xxxlutz se numără printre magazinele de casă, mobilier și grădină apreciate în România pentru raportul bun dintre calitate și preț.",
-   "Codurile Xxxlutz se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de casă, mobilier și grădină și le publicăm aici de îndată ce apar.",
-   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Xxxlutz, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
+   "Liki24 este un magazin online din categoria farmacie, suplimente și sănătate, unde găsești o gamă variată de produse la prețuri competitive.",
+   "În acest moment nu există un cod activ pentru Liki24, dar verificăm zilnic. Adaugă pagina la favorite ca să fii primul care prinde următoarea reducere de farmacie, suplimente și sănătate.",
+   "Ca să economisești, copiază codul Liki24 de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
   ],
   "sursa": "data-template"
  },
@@ -6740,30 +6740,21 @@
   ],
   "sursa": "data-template"
  },
- "picadili.ro": {
-  "titlu": "Despre codurile de reducere Picadili",
-  "paragrafe": [
-   "Picadili se numără printre magazinele de modă, haine și accesorii apreciate în România pentru raportul bun dintre calitate și preț.",
-   "În acest moment nu există un cod activ pentru Picadili, dar verificăm zilnic. Adaugă pagina la favorite ca să fii primul care prinde următoarea reducere de modă, haine și accesorii.",
-   "Ca să economisești, copiază codul Picadili de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
-  ],
-  "sursa": "data-template"
- },
- "pieseautoscan.ro": {
-  "titlu": "Despre codurile de reducere Pieseautoscan",
-  "paragrafe": [
-   "Dacă te interesează piese auto, accesorii și produse pentru mașini, Pieseautoscan este o opțiune solidă pentru cumpărăturile tale online.",
-   "Codurile Pieseautoscan se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de piese auto, accesorii și produse pentru mașini și le publicăm aici de îndată ce apar.",
-   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Pieseautoscan, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
-  ],
-  "sursa": "data-template"
- },
  "autobob.ro": {
   "titlu": "Despre codurile de reducere Autobob",
   "paragrafe": [
    "Dacă te interesează piese auto, accesorii și produse pentru mașini, Autobob este o opțiune solidă pentru cumpărăturile tale online.",
    "Autobob are în acest moment 1 ofertă activă, cum este „Pachete revizie auto cu reducere de pana la -35%”. Toate sunt verificate și reîmprospătate zilnic pe AmCupon.ro.",
    "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Autobob, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
+  ],
+  "sursa": "data-template"
+ },
+ "picadili.ro": {
+  "titlu": "Despre codurile de reducere Picadili",
+  "paragrafe": [
+   "Picadili se numără printre magazinele de modă, haine și accesorii apreciate în România pentru raportul bun dintre calitate și preț.",
+   "În acest moment nu există un cod activ pentru Picadili, dar verificăm zilnic. Adaugă pagina la favorite ca să fii primul care prinde următoarea reducere de modă, haine și accesorii.",
+   "Ca să economisești, copiază codul Picadili de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
   ],
   "sursa": "data-template"
  },
@@ -6785,12 +6776,12 @@
   ],
   "sursa": "data-template"
  },
- "liki24.nl": {
-  "titlu": "Despre codurile de reducere Liki24",
+ "pieseautoscan.ro": {
+  "titlu": "Despre codurile de reducere Pieseautoscan",
   "paragrafe": [
-   "Dacă te interesează farmacie, suplimente și sănătate, Liki24 este o opțiune solidă pentru cumpărăturile tale online.",
-   "Codurile Liki24 se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de farmacie, suplimente și sănătate și le publicăm aici de îndată ce apar.",
-   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Liki24, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
+   "Dacă te interesează piese auto, accesorii și produse pentru mașini, Pieseautoscan este o opțiune solidă pentru cumpărăturile tale online.",
+   "Codurile Pieseautoscan se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de piese auto, accesorii și produse pentru mașini și le publicăm aici de îndată ce apar.",
+   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Pieseautoscan, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
   ],
   "sursa": "data-template"
  },
@@ -6803,12 +6794,12 @@
   ],
   "sursa": "data-template"
  },
- "librex.ro": {
-  "titlu": "Despre codurile de reducere Librex",
+ "liki24.nl": {
+  "titlu": "Despre codurile de reducere Liki24",
   "paragrafe": [
-   "Pe Librex descoperi cărți, educație și papetărie, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
-   "Codurile Librex se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de cărți, educație și papetărie și le publicăm aici de îndată ce apar.",
-   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Librex, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
+   "Dacă te interesează farmacie, suplimente și sănătate, Liki24 este o opțiune solidă pentru cumpărăturile tale online.",
+   "Codurile Liki24 se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de farmacie, suplimente și sănătate și le publicăm aici de îndată ce apar.",
+   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Liki24, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
   ],
   "sursa": "data-template"
  },
@@ -6818,6 +6809,15 @@
    "Dacă te interesează casă, mobilier și grădină, Doctorshield este o opțiune solidă pentru cumpărăturile tale online.",
    "Momentan găsești 1 ofertă activă pentru Doctorshield, inclusiv „Livrare si retur GRATUIT la orice comanda de gratare, paturi, birou…”. Pe AmCupon.ro actualizăm aceste reduceri zilnic, ca informația să fie mereu corectă.",
    "Ca să economisești, copiază codul Doctorshield de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
+  ],
+  "sursa": "data-template"
+ },
+ "librex.ro": {
+  "titlu": "Despre codurile de reducere Librex",
+  "paragrafe": [
+   "Pe Librex descoperi cărți, educație și papetărie, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
+   "Codurile Librex se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de cărți, educație și papetărie și le publicăm aici de îndată ce apar.",
+   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Librex, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
   ],
   "sursa": "data-template"
  },
@@ -6875,15 +6875,6 @@
   ],
   "sursa": "data-template"
  },
- "edituracorint.ro": {
-  "titlu": "Despre codurile de reducere Edituracorint",
-  "paragrafe": [
-   "Edituracorint este un magazin online din categoria cărți, educație și papetărie, unde găsești o gamă variată de produse la prețuri competitive.",
-   "Codurile Edituracorint se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de cărți, educație și papetărie și le publicăm aici de îndată ce apar.",
-   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Edituracorint, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
-  ],
-  "sursa": "data-template"
- },
  "dezmembraru.ro": {
   "titlu": "Despre codurile de reducere Dezmembraru",
   "paragrafe": [
@@ -6899,6 +6890,15 @@
    "Ortopedicus se numără printre magazinele de casă, mobilier și grădină apreciate în România pentru raportul bun dintre calitate și preț.",
    "Pe AmCupon.ro urmărim zilnic promoțiile Ortopedicus și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de casă, mobilier și grădină apar frecvent.",
    "Folosirea unui cod Ortopedicus este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
+  ],
+  "sursa": "data-template"
+ },
+ "edituracorint.ro": {
+  "titlu": "Despre codurile de reducere Edituracorint",
+  "paragrafe": [
+   "Edituracorint este un magazin online din categoria cărți, educație și papetărie, unde găsești o gamă variată de produse la prețuri competitive.",
+   "Codurile Edituracorint se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de cărți, educație și papetărie și le publicăm aici de îndată ce apar.",
+   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Edituracorint, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
   ],
   "sursa": "data-template"
  },
@@ -6938,21 +6938,21 @@
   ],
   "sursa": "data-template"
  },
- "ufit.ro": {
-  "titlu": "Despre codurile de reducere Ufit",
-  "paragrafe": [
-   "Dacă te interesează modă, haine și accesorii, Ufit este o opțiune solidă pentru cumpărăturile tale online.",
-   "Pe AmCupon.ro urmărim zilnic promoțiile Ufit și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de modă, haine și accesorii apar frecvent.",
-   "Folosirea unui cod Ufit este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
-  ],
-  "sursa": "data-template"
- },
  "baseone.ro": {
   "titlu": "Despre codurile de reducere Baseone",
   "paragrafe": [
    "Baseone este un magazin online din categoria cosmetice și produse de îngrijire, unde găsești o gamă variată de produse la prețuri competitive.",
    "Codurile Baseone se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de cosmetice și produse de îngrijire și le publicăm aici de îndată ce apar.",
    "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Baseone, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
+  ],
+  "sursa": "data-template"
+ },
+ "ufit.ro": {
+  "titlu": "Despre codurile de reducere Ufit",
+  "paragrafe": [
+   "Dacă te interesează modă, haine și accesorii, Ufit este o opțiune solidă pentru cumpărăturile tale online.",
+   "Pe AmCupon.ro urmărim zilnic promoțiile Ufit și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de modă, haine și accesorii apar frecvent.",
+   "Folosirea unui cod Ufit este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
   ],
   "sursa": "data-template"
  },
@@ -6983,6 +6983,15 @@
   ],
   "sursa": "data-template"
  },
+ "anticexlibris.ro": {
+  "titlu": "Despre codurile de reducere Anticexlibris",
+  "paragrafe": [
+   "Anticexlibris este un magazin online din categoria cărți, educație și papetărie, unde găsești o gamă variată de produse la prețuri competitive.",
+   "Codurile Anticexlibris se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de cărți, educație și papetărie și le publicăm aici de îndată ce apar.",
+   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Anticexlibris, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
+  ],
+  "sursa": "data-template"
+ },
  "kamin.ro": {
   "titlu": "Despre codurile de reducere Kamin",
   "paragrafe": [
@@ -6998,15 +7007,6 @@
    "Dacă te interesează casă, mobilier și grădină, Vopsinel este o opțiune solidă pentru cumpărăturile tale online.",
    "Codurile Vopsinel se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de casă, mobilier și grădină și le publicăm aici de îndată ce apar.",
    "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Vopsinel, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
-  ],
-  "sursa": "data-template"
- },
- "anticexlibris.ro": {
-  "titlu": "Despre codurile de reducere Anticexlibris",
-  "paragrafe": [
-   "Anticexlibris este un magazin online din categoria cărți, educație și papetărie, unde găsești o gamă variată de produse la prețuri competitive.",
-   "Codurile Anticexlibris se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de cărți, educație și papetărie și le publicăm aici de îndată ce apar.",
-   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Anticexlibris, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
   ],
   "sursa": "data-template"
  },
@@ -7118,6 +7118,15 @@
   ],
   "sursa": "data-template"
  },
+ "atelierulfamiliei.ro": {
+  "titlu": "Despre codurile de reducere Atelierulfamiliei",
+  "paragrafe": [
+   "Atelierulfamiliei se numără printre magazinele de produse pentru copii, jucării și articole pentru bebeluși apreciate în România pentru raportul bun dintre calitate și preț.",
+   "Pe AmCupon.ro urmărim zilnic promoțiile Atelierulfamiliei și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de produse pentru copii, jucării și articole pentru bebeluși apar frecvent.",
+   "Folosirea unui cod Atelierulfamiliei este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
+  ],
+  "sursa": "data-template"
+ },
  "petmagazin.ro": {
   "titlu": "Despre codurile de reducere Petmagazin",
   "paragrafe": [
@@ -7154,15 +7163,6 @@
   ],
   "sursa": "data-template"
  },
- "atelierulfamiliei.ro": {
-  "titlu": "Despre codurile de reducere Atelierulfamiliei",
-  "paragrafe": [
-   "Atelierulfamiliei se numără printre magazinele de produse pentru copii, jucării și articole pentru bebeluși apreciate în România pentru raportul bun dintre calitate și preț.",
-   "Pe AmCupon.ro urmărim zilnic promoțiile Atelierulfamiliei și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de produse pentru copii, jucării și articole pentru bebeluși apar frecvent.",
-   "Folosirea unui cod Atelierulfamiliei este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
-  ],
-  "sursa": "data-template"
- },
  "tamos.ro": {
   "titlu": "Despre codurile de reducere Tamos",
   "paragrafe": [
@@ -7190,15 +7190,6 @@
   ],
   "sursa": "data-template"
  },
- "viada.ro": {
-  "titlu": "Despre codurile de reducere Viada",
-  "paragrafe": [
-   "Viada este un magazin online din categoria modă, haine și accesorii, unde găsești o gamă variată de produse la prețuri competitive.",
-   "Codurile Viada se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de modă, haine și accesorii și le publicăm aici de îndată ce apar.",
-   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Viada, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
-  ],
-  "sursa": "data-template"
- },
  "farmaciilenapofarm.ro": {
   "titlu": "Despre codurile de reducere Farmaciilenapofarm",
   "paragrafe": [
@@ -7208,12 +7199,30 @@
   ],
   "sursa": "data-template"
  },
+ "viada.ro": {
+  "titlu": "Despre codurile de reducere Viada",
+  "paragrafe": [
+   "Viada este un magazin online din categoria modă, haine și accesorii, unde găsești o gamă variată de produse la prețuri competitive.",
+   "Codurile Viada se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de modă, haine și accesorii și le publicăm aici de îndată ce apar.",
+   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Viada, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
+  ],
+  "sursa": "data-template"
+ },
  "tenq.ro": {
   "titlu": "Despre codurile de reducere Tenq",
   "paragrafe": [
    "Dacă te interesează produse variate din toate categoriile, Tenq este o opțiune solidă pentru cumpărăturile tale online.",
    "Pe AmCupon.ro urmărim zilnic promoțiile Tenq și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de produse variate din toate categoriile apar frecvent.",
    "Folosirea unui cod Tenq este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
+  ],
+  "sursa": "data-template"
+ },
+ "elindor.ro": {
+  "titlu": "Despre codurile de reducere Elindor",
+  "paragrafe": [
+   "Elindor este un magazin online din categoria produse variate din toate categoriile, unde găsești o gamă variată de produse la prețuri competitive.",
+   "Pe AmCupon.ro urmărim zilnic promoțiile Elindor și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de produse variate din toate categoriile apar frecvent.",
+   "Folosirea unui cod Elindor este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
   ],
   "sursa": "data-template"
  },
@@ -7235,15 +7244,6 @@
   ],
   "sursa": "data-template"
  },
- "elindor.ro": {
-  "titlu": "Despre codurile de reducere Elindor",
-  "paragrafe": [
-   "Elindor este un magazin online din categoria produse variate din toate categoriile, unde găsești o gamă variată de produse la prețuri competitive.",
-   "Pe AmCupon.ro urmărim zilnic promoțiile Elindor și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de produse variate din toate categoriile apar frecvent.",
-   "Folosirea unui cod Elindor este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
-  ],
-  "sursa": "data-template"
- },
  "ottobroker.ro": {
   "titlu": "Despre codurile de reducere Ottobroker",
   "paragrafe": [
@@ -7253,12 +7253,12 @@
   ],
   "sursa": "data-template"
  },
- "gorillasports.ro": {
-  "titlu": "Despre codurile de reducere Gorillasports",
+ "pescar-expert.ro": {
+  "titlu": "Despre codurile de reducere Pescar Expert",
   "paragrafe": [
-   "Gorillasports este un magazin online din categoria sport, fitness și echipamente outdoor, unde găsești o gamă variată de produse la prețuri competitive.",
-   "Codurile Gorillasports se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de sport, fitness și echipamente outdoor și le publicăm aici de îndată ce apar.",
-   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Gorillasports, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
+   "Pescar Expert se numără printre magazinele de sport, fitness și echipamente outdoor apreciate în România pentru raportul bun dintre calitate și preț.",
+   "În acest moment nu există un cod activ pentru Pescar Expert, dar verificăm zilnic. Adaugă pagina la favorite ca să fii primul care prinde următoarea reducere de sport, fitness și echipamente outdoor.",
+   "Ca să economisești, copiază codul Pescar Expert de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
   ],
   "sursa": "data-template"
  },
@@ -7268,6 +7268,24 @@
    "Dacă te interesează casă, mobilier și grădină, Masif este o opțiune solidă pentru cumpărăturile tale online.",
    "În acest moment nu există un cod activ pentru Masif, dar verificăm zilnic. Adaugă pagina la favorite ca să fii primul care prinde următoarea reducere de casă, mobilier și grădină.",
    "Ca să economisești, copiază codul Masif de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
+  ],
+  "sursa": "data-template"
+ },
+ "aleo.ro": {
+  "titlu": "Despre codurile de reducere Aleo",
+  "paragrafe": [
+   "Aleo este un magazin online din categoria sport, fitness și echipamente outdoor, unde găsești o gamă variată de produse la prețuri competitive.",
+   "În acest moment nu există un cod activ pentru Aleo, dar verificăm zilnic. Adaugă pagina la favorite ca să fii primul care prinde următoarea reducere de sport, fitness și echipamente outdoor.",
+   "Ca să economisești, copiază codul Aleo de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
+  ],
+  "sursa": "data-template"
+ },
+ "gorillasports.ro": {
+  "titlu": "Despre codurile de reducere Gorillasports",
+  "paragrafe": [
+   "Gorillasports este un magazin online din categoria sport, fitness și echipamente outdoor, unde găsești o gamă variată de produse la prețuri competitive.",
+   "Codurile Gorillasports se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de sport, fitness și echipamente outdoor și le publicăm aici de îndată ce apar.",
+   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Gorillasports, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
   ],
   "sursa": "data-template"
  },
@@ -7289,39 +7307,12 @@
   ],
   "sursa": "data-template"
  },
- "aleo.ro": {
-  "titlu": "Despre codurile de reducere Aleo",
-  "paragrafe": [
-   "Aleo este un magazin online din categoria sport, fitness și echipamente outdoor, unde găsești o gamă variată de produse la prețuri competitive.",
-   "În acest moment nu există un cod activ pentru Aleo, dar verificăm zilnic. Adaugă pagina la favorite ca să fii primul care prinde următoarea reducere de sport, fitness și echipamente outdoor.",
-   "Ca să economisești, copiază codul Aleo de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
-  ],
-  "sursa": "data-template"
- },
- "hemerama.com": {
-  "titlu": "Despre codurile de reducere Hemerama",
-  "paragrafe": [
-   "Pe Hemerama descoperi cosmetice și produse de îngrijire, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
-   "Pe AmCupon.ro urmărim zilnic promoțiile Hemerama și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de cosmetice și produse de îngrijire apar frecvent.",
-   "Folosirea unui cod Hemerama este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
-  ],
-  "sursa": "data-template"
- },
  "magazinuldesah.ro": {
   "titlu": "Despre codurile de reducere Magazinuldesah",
   "paragrafe": [
    "Magazinuldesah este un magazin online din categoria produse variate din toate categoriile, unde găsești o gamă variată de produse la prețuri competitive.",
    "În acest moment nu există un cod activ pentru Magazinuldesah, dar verificăm zilnic. Adaugă pagina la favorite ca să fii primul care prinde următoarea reducere de produse variate din toate categoriile.",
    "Ca să economisești, copiază codul Magazinuldesah de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
-  ],
-  "sursa": "data-template"
- },
- "watchshop.ro": {
-  "titlu": "Despre codurile de reducere Watchshop",
-  "paragrafe": [
-   "Watchshop este un magazin online din categoria bijuterii și ceasuri, unde găsești o gamă variată de produse la prețuri competitive.",
-   "Pe AmCupon.ro urmărim zilnic promoțiile Watchshop și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de bijuterii și ceasuri apar frecvent.",
-   "Folosirea unui cod Watchshop este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
   ],
   "sursa": "data-template"
  },
@@ -7343,15 +7334,6 @@
   ],
   "sursa": "data-template"
  },
- "babyroll.ro": {
-  "titlu": "Despre codurile de reducere Babyroll",
-  "paragrafe": [
-   "Babyroll se numără printre magazinele de produse pentru copii, jucării și articole pentru bebeluși apreciate în România pentru raportul bun dintre calitate și preț.",
-   "În acest moment nu există un cod activ pentru Babyroll, dar verificăm zilnic. Adaugă pagina la favorite ca să fii primul care prinde următoarea reducere de produse pentru copii, jucării și articole pentru bebeluși.",
-   "Ca să economisești, copiază codul Babyroll de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
-  ],
-  "sursa": "data-template"
- },
  "cadourisiperle.ro": {
   "titlu": "Despre codurile de reducere Cadourisiperle",
   "paragrafe": [
@@ -7361,12 +7343,30 @@
   ],
   "sursa": "data-template"
  },
- "myown.ro": {
-  "titlu": "Despre codurile de reducere Myown",
+ "watchshop.ro": {
+  "titlu": "Despre codurile de reducere Watchshop",
   "paragrafe": [
-   "Pe Myown descoperi modă, haine și accesorii, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
-   "În acest moment nu există un cod activ pentru Myown, dar verificăm zilnic. Adaugă pagina la favorite ca să fii primul care prinde următoarea reducere de modă, haine și accesorii.",
-   "Ca să economisești, copiază codul Myown de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
+   "Watchshop este un magazin online din categoria bijuterii și ceasuri, unde găsești o gamă variată de produse la prețuri competitive.",
+   "Pe AmCupon.ro urmărim zilnic promoțiile Watchshop și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de bijuterii și ceasuri apar frecvent.",
+   "Folosirea unui cod Watchshop este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
+  ],
+  "sursa": "data-template"
+ },
+ "hemerama.com": {
+  "titlu": "Despre codurile de reducere Hemerama",
+  "paragrafe": [
+   "Pe Hemerama descoperi cosmetice și produse de îngrijire, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
+   "Pe AmCupon.ro urmărim zilnic promoțiile Hemerama și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de cosmetice și produse de îngrijire apar frecvent.",
+   "Folosirea unui cod Hemerama este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
+  ],
+  "sursa": "data-template"
+ },
+ "babyroll.ro": {
+  "titlu": "Despre codurile de reducere Babyroll",
+  "paragrafe": [
+   "Babyroll se numără printre magazinele de produse pentru copii, jucării și articole pentru bebeluși apreciate în România pentru raportul bun dintre calitate și preț.",
+   "În acest moment nu există un cod activ pentru Babyroll, dar verificăm zilnic. Adaugă pagina la favorite ca să fii primul care prinde următoarea reducere de produse pentru copii, jucării și articole pentru bebeluși.",
+   "Ca să economisești, copiază codul Babyroll de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
   ],
   "sursa": "data-template"
  },
@@ -7376,6 +7376,15 @@
    "Pe Edituradph descoperi cărți, educație și papetărie, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
    "Codurile Edituradph se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de cărți, educație și papetărie și le publicăm aici de îndată ce apar.",
    "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Edituradph, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
+  ],
+  "sursa": "data-template"
+ },
+ "myown.ro": {
+  "titlu": "Despre codurile de reducere Myown",
+  "paragrafe": [
+   "Pe Myown descoperi modă, haine și accesorii, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
+   "În acest moment nu există un cod activ pentru Myown, dar verificăm zilnic. Adaugă pagina la favorite ca să fii primul care prinde următoarea reducere de modă, haine și accesorii.",
+   "Ca să economisești, copiază codul Myown de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
   ],
   "sursa": "data-template"
  },
@@ -7394,15 +7403,6 @@
    "Pe Creativ descoperi cadouri și flori, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
    "În acest moment nu există un cod activ pentru Creativ, dar verificăm zilnic. Adaugă pagina la favorite ca să fii primul care prinde următoarea reducere de cadouri și flori.",
    "Ca să economisești, copiază codul Creativ de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
-  ],
-  "sursa": "data-template"
- },
- "pescar-expert.ro": {
-  "titlu": "Despre codurile de reducere Pescar Expert",
-  "paragrafe": [
-   "Pescar Expert se numără printre magazinele de sport, fitness și echipamente outdoor apreciate în România pentru raportul bun dintre calitate și preț.",
-   "În acest moment nu există un cod activ pentru Pescar Expert, dar verificăm zilnic. Adaugă pagina la favorite ca să fii primul care prinde următoarea reducere de sport, fitness și echipamente outdoor.",
-   "Ca să economisești, copiază codul Pescar Expert de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
   ],
   "sursa": "data-template"
  },
@@ -7478,24 +7478,6 @@
   ],
   "sursa": "data-template"
  },
- "decryso.ro": {
-  "titlu": "Despre codurile de reducere Decryso",
-  "paragrafe": [
-   "Decryso este un magazin online din categoria farmacie, suplimente și sănătate, unde găsești o gamă variată de produse la prețuri competitive.",
-   "Pe AmCupon.ro urmărim zilnic promoțiile Decryso și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de farmacie, suplimente și sănătate apar frecvent.",
-   "Folosirea unui cod Decryso este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
-  ],
-  "sursa": "data-template"
- },
- "libhumanitas.ro": {
-  "titlu": "Despre codurile de reducere Libhumanitas",
-  "paragrafe": [
-   "Libhumanitas este un magazin online din categoria cărți, educație și papetărie, unde găsești o gamă variată de produse la prețuri competitive.",
-   "În acest moment nu există un cod activ pentru Libhumanitas, dar verificăm zilnic. Adaugă pagina la favorite ca să fii primul care prinde următoarea reducere de cărți, educație și papetărie.",
-   "Ca să economisești, copiază codul Libhumanitas de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
-  ],
-  "sursa": "data-template"
- },
  "shinefashion.ro": {
   "titlu": "Despre codurile de reducere Shinefashion",
   "paragrafe": [
@@ -7514,6 +7496,15 @@
   ],
   "sursa": "data-template"
  },
+ "libhumanitas.ro": {
+  "titlu": "Despre codurile de reducere Libhumanitas",
+  "paragrafe": [
+   "Libhumanitas este un magazin online din categoria cărți, educație și papetărie, unde găsești o gamă variată de produse la prețuri competitive.",
+   "În acest moment nu există un cod activ pentru Libhumanitas, dar verificăm zilnic. Adaugă pagina la favorite ca să fii primul care prinde următoarea reducere de cărți, educație și papetărie.",
+   "Ca să economisești, copiază codul Libhumanitas de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
+  ],
+  "sursa": "data-template"
+ },
  "targetdeal.ro": {
   "titlu": "Despre codurile de reducere Targetdeal",
   "paragrafe": [
@@ -7529,6 +7520,15 @@
    "Dacă te interesează cărți, educație și papetărie, Edituragama este o opțiune solidă pentru cumpărăturile tale online.",
    "Codurile Edituragama se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de cărți, educație și papetărie și le publicăm aici de îndată ce apar.",
    "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Edituragama, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
+  ],
+  "sursa": "data-template"
+ },
+ "decryso.ro": {
+  "titlu": "Despre codurile de reducere Decryso",
+  "paragrafe": [
+   "Decryso este un magazin online din categoria farmacie, suplimente și sănătate, unde găsești o gamă variată de produse la prețuri competitive.",
+   "Pe AmCupon.ro urmărim zilnic promoțiile Decryso și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de farmacie, suplimente și sănătate apar frecvent.",
+   "Folosirea unui cod Decryso este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
   ],
   "sursa": "data-template"
  },
@@ -7604,21 +7604,21 @@
   ],
   "sursa": "data-template"
  },
- "chicbijoux.ro": {
-  "titlu": "Despre codurile de reducere Chicbijoux",
-  "paragrafe": [
-   "Dacă te interesează bijuterii și ceasuri, Chicbijoux este o opțiune solidă pentru cumpărăturile tale online.",
-   "Pe AmCupon.ro urmărim zilnic promoțiile Chicbijoux și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de bijuterii și ceasuri apar frecvent.",
-   "Folosirea unui cod Chicbijoux este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
-  ],
-  "sursa": "data-template"
- },
  "smartheater.ro": {
   "titlu": "Despre codurile de reducere Smartheater",
   "paragrafe": [
    "Dacă te interesează casă, mobilier și grădină, Smartheater este o opțiune solidă pentru cumpărăturile tale online.",
    "Pe AmCupon.ro urmărim zilnic promoțiile Smartheater și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de casă, mobilier și grădină apar frecvent.",
    "Folosirea unui cod Smartheater este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
+  ],
+  "sursa": "data-template"
+ },
+ "chicbijoux.ro": {
+  "titlu": "Despre codurile de reducere Chicbijoux",
+  "paragrafe": [
+   "Dacă te interesează bijuterii și ceasuri, Chicbijoux este o opțiune solidă pentru cumpărăturile tale online.",
+   "Pe AmCupon.ro urmărim zilnic promoțiile Chicbijoux și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de bijuterii și ceasuri apar frecvent.",
+   "Folosirea unui cod Chicbijoux este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
   ],
   "sursa": "data-template"
  },
@@ -7631,21 +7631,21 @@
   ],
   "sursa": "data-template"
  },
- "ehranaanimale.ro": {
-  "titlu": "Despre codurile de reducere Ehranaanimale",
-  "paragrafe": [
-   "Pe Ehranaanimale descoperi produse pentru animale de companie, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
-   "În acest moment nu există un cod activ pentru Ehranaanimale, dar verificăm zilnic. Adaugă pagina la favorite ca să fii primul care prinde următoarea reducere de produse pentru animale de companie.",
-   "Ca să economisești, copiază codul Ehranaanimale de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
-  ],
-  "sursa": "data-template"
- },
  "enigma-plant.ro": {
   "titlu": "Despre codurile de reducere Enigma Plant",
   "paragrafe": [
    "Enigma Plant este un magazin online din categoria farmacie, suplimente și sănătate, unde găsești o gamă variată de produse la prețuri competitive.",
    "Codurile Enigma Plant se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de farmacie, suplimente și sănătate și le publicăm aici de îndată ce apar.",
    "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Enigma Plant, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
+  ],
+  "sursa": "data-template"
+ },
+ "ehranaanimale.ro": {
+  "titlu": "Despre codurile de reducere Ehranaanimale",
+  "paragrafe": [
+   "Pe Ehranaanimale descoperi produse pentru animale de companie, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
+   "În acest moment nu există un cod activ pentru Ehranaanimale, dar verificăm zilnic. Adaugă pagina la favorite ca să fii primul care prinde următoarea reducere de produse pentru animale de companie.",
+   "Ca să economisești, copiază codul Ehranaanimale de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
   ],
   "sursa": "data-template"
  },
@@ -7739,6 +7739,15 @@
   ],
   "sursa": "data-template"
  },
+ "bonami.ro": {
+  "titlu": "Despre codurile de reducere Bonami",
+  "paragrafe": [
+   "Pe Bonami descoperi casă, mobilier și grădină, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
+   "În acest moment nu există un cod activ pentru Bonami, dar verificăm zilnic. Adaugă pagina la favorite ca să fii primul care prinde următoarea reducere de casă, mobilier și grădină.",
+   "Ca să economisești, copiază codul Bonami de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
+  ],
+  "sursa": "data-template"
+ },
  "lifebox.ro": {
   "titlu": "Despre codurile de reducere Lifebox",
   "paragrafe": [
@@ -7748,12 +7757,12 @@
   ],
   "sursa": "data-template"
  },
- "bonami.ro": {
-  "titlu": "Despre codurile de reducere Bonami",
+ "mobilemedical.ro": {
+  "titlu": "Despre codurile de reducere Mobilemedical",
   "paragrafe": [
-   "Pe Bonami descoperi casă, mobilier și grădină, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
-   "În acest moment nu există un cod activ pentru Bonami, dar verificăm zilnic. Adaugă pagina la favorite ca să fii primul care prinde următoarea reducere de casă, mobilier și grădină.",
-   "Ca să economisești, copiază codul Bonami de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
+   "Mobilemedical se numără printre magazinele de farmacie, suplimente și sănătate apreciate în România pentru raportul bun dintre calitate și preț.",
+   "Codurile Mobilemedical se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de farmacie, suplimente și sănătate și le publicăm aici de îndată ce apar.",
+   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Mobilemedical, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
   ],
   "sursa": "data-template"
  },
@@ -7820,6 +7829,15 @@
   ],
   "sursa": "data-template"
  },
+ "navigatiiandroid.ro": {
+  "titlu": "Despre codurile de reducere Navigatiiandroid",
+  "paragrafe": [
+   "Navigatiiandroid este un magazin online din categoria piese auto, accesorii și produse pentru mașini, unde găsești o gamă variată de produse la prețuri competitive.",
+   "Codurile Navigatiiandroid se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de piese auto, accesorii și produse pentru mașini și le publicăm aici de îndată ce apar.",
+   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Navigatiiandroid, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
+  ],
+  "sursa": "data-template"
+ },
  "dacris.net": {
   "titlu": "Despre codurile de reducere Dacris",
   "paragrafe": [
@@ -7856,15 +7874,6 @@
   ],
   "sursa": "data-template"
  },
- "navigatiiandroid.ro": {
-  "titlu": "Despre codurile de reducere Navigatiiandroid",
-  "paragrafe": [
-   "Navigatiiandroid este un magazin online din categoria piese auto, accesorii și produse pentru mașini, unde găsești o gamă variată de produse la prețuri competitive.",
-   "Codurile Navigatiiandroid se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de piese auto, accesorii și produse pentru mașini și le publicăm aici de îndată ce apar.",
-   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Navigatiiandroid, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
-  ],
-  "sursa": "data-template"
- },
  "ada-shoes.ro": {
   "titlu": "Despre codurile de reducere Ada Shoes",
   "paragrafe": [
@@ -7874,12 +7883,12 @@
   ],
   "sursa": "data-template"
  },
- "mobilemedical.ro": {
-  "titlu": "Despre codurile de reducere Mobilemedical",
+ "pufrelax.com": {
+  "titlu": "Despre codurile de reducere Pufrelax",
   "paragrafe": [
-   "Mobilemedical se numără printre magazinele de farmacie, suplimente și sănătate apreciate în România pentru raportul bun dintre calitate și preț.",
-   "Codurile Mobilemedical se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de farmacie, suplimente și sănătate și le publicăm aici de îndată ce apar.",
-   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Mobilemedical, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
+   "Pufrelax este un magazin online din categoria casă, mobilier și grădină, unde găsești o gamă variată de produse la prețuri competitive.",
+   "Pe AmCupon.ro urmărim zilnic promoțiile Pufrelax și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de casă, mobilier și grădină apar frecvent.",
+   "Folosirea unui cod Pufrelax este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
   ],
   "sursa": "data-template"
  },
@@ -7901,15 +7910,6 @@
   ],
   "sursa": "data-template"
  },
- "rik.ro": {
-  "titlu": "Despre codurile de reducere Rik",
-  "paragrafe": [
-   "Pe Rik descoperi produse variate din toate categoriile, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
-   "Pe AmCupon.ro urmărim zilnic promoțiile Rik și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de produse variate din toate categoriile apar frecvent.",
-   "Folosirea unui cod Rik este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
-  ],
-  "sursa": "data-template"
- },
  "mirano.ro": {
   "titlu": "Despre codurile de reducere Mirano",
   "paragrafe": [
@@ -7928,24 +7928,6 @@
   ],
   "sursa": "data-template"
  },
- "topline.ro": {
-  "titlu": "Despre codurile de reducere Topline",
-  "paragrafe": [
-   "Topline se numără printre magazinele de cosmetice și produse de îngrijire apreciate în România pentru raportul bun dintre calitate și preț.",
-   "Codurile Topline se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de cosmetice și produse de îngrijire și le publicăm aici de îndată ce apar.",
-   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Topline, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
-  ],
-  "sursa": "data-template"
- },
- "janta.ro": {
-  "titlu": "Despre codurile de reducere Janta",
-  "paragrafe": [
-   "Pe Janta descoperi piese auto, accesorii și produse pentru mașini, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
-   "Codurile Janta se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de piese auto, accesorii și produse pentru mașini și le publicăm aici de îndată ce apar.",
-   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Janta, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
-  ],
-  "sursa": "data-template"
- },
  "trada.ro": {
   "titlu": "Despre codurile de reducere Trada",
   "paragrafe": [
@@ -7955,12 +7937,30 @@
   ],
   "sursa": "data-template"
  },
- "pufrelax.com": {
-  "titlu": "Despre codurile de reducere Pufrelax",
+ "topline.ro": {
+  "titlu": "Despre codurile de reducere Topline",
   "paragrafe": [
-   "Pufrelax este un magazin online din categoria casă, mobilier și grădină, unde găsești o gamă variată de produse la prețuri competitive.",
-   "Pe AmCupon.ro urmărim zilnic promoțiile Pufrelax și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de casă, mobilier și grădină apar frecvent.",
-   "Folosirea unui cod Pufrelax este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
+   "Topline se numără printre magazinele de cosmetice și produse de îngrijire apreciate în România pentru raportul bun dintre calitate și preț.",
+   "Codurile Topline se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de cosmetice și produse de îngrijire și le publicăm aici de îndată ce apar.",
+   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Topline, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
+  ],
+  "sursa": "data-template"
+ },
+ "rik.ro": {
+  "titlu": "Despre codurile de reducere Rik",
+  "paragrafe": [
+   "Pe Rik descoperi produse variate din toate categoriile, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
+   "Pe AmCupon.ro urmărim zilnic promoțiile Rik și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de produse variate din toate categoriile apar frecvent.",
+   "Folosirea unui cod Rik este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
+  ],
+  "sursa": "data-template"
+ },
+ "janta.ro": {
+  "titlu": "Despre codurile de reducere Janta",
+  "paragrafe": [
+   "Pe Janta descoperi piese auto, accesorii și produse pentru mașini, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
+   "Codurile Janta se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de piese auto, accesorii și produse pentru mașini și le publicăm aici de îndată ce apar.",
+   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Janta, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
   ],
   "sursa": "data-template"
  },
@@ -8018,6 +8018,15 @@
   ],
   "sursa": "data-template"
  },
+ "editura-arthur.ro": {
+  "titlu": "Despre codurile de reducere Editura Arthur",
+  "paragrafe": [
+   "Editura Arthur este un magazin online din categoria cărți, educație și papetărie, unde găsești o gamă variată de produse la prețuri competitive.",
+   "Chiar acum, Editura Arthur are 1 ofertă activă pe AmCupon.ro, printre care „Campanie cărți și pachete cu cărți de la Editura Arthur”. Verificăm zilnic codurile de reducere ca să prinzi cel mai bun preț înainte să finalizezi comanda.",
+   "Folosirea unui cod Editura Arthur este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
+  ],
+  "sursa": "data-template"
+ },
  "underarmour.ro": {
   "titlu": "Despre codurile de reducere Underarmour",
   "paragrafe": [
@@ -8033,15 +8042,6 @@
    "Vioi se numără printre magazinele de farmacie, suplimente și sănătate apreciate în România pentru raportul bun dintre calitate și preț.",
    "Codurile Vioi se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de farmacie, suplimente și sănătate și le publicăm aici de îndată ce apar.",
    "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Vioi, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
-  ],
-  "sursa": "data-template"
- },
- "editura-arthur.ro": {
-  "titlu": "Despre codurile de reducere Editura Arthur",
-  "paragrafe": [
-   "Editura Arthur este un magazin online din categoria cărți, educație și papetărie, unde găsești o gamă variată de produse la prețuri competitive.",
-   "Chiar acum, Editura Arthur are 1 ofertă activă pe AmCupon.ro, printre care „Campanie cărți și pachete cu cărți de la Editura Arthur”. Verificăm zilnic codurile de reducere ca să prinzi cel mai bun preț înainte să finalizezi comanda.",
-   "Folosirea unui cod Editura Arthur este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
   ],
   "sursa": "data-template"
  },
@@ -8081,21 +8081,21 @@
   ],
   "sursa": "data-template"
  },
- "casaidea.ro": {
-  "titlu": "Despre codurile de reducere Casaidea",
-  "paragrafe": [
-   "Casaidea se numără printre magazinele de casă, mobilier și grădină apreciate în România pentru raportul bun dintre calitate și preț.",
-   "Codurile Casaidea se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de casă, mobilier și grădină și le publicăm aici de îndată ce apar.",
-   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Casaidea, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
-  ],
-  "sursa": "data-template"
- },
  "brasty.ro": {
   "titlu": "Despre codurile de reducere Brasty",
   "paragrafe": [
    "Brasty este un magazin online din categoria cosmetice și produse de îngrijire, unde găsești o gamă variată de produse la prețuri competitive.",
    "Codurile Brasty se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de cosmetice și produse de îngrijire și le publicăm aici de îndată ce apar.",
    "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Brasty, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
+  ],
+  "sursa": "data-template"
+ },
+ "casaidea.ro": {
+  "titlu": "Despre codurile de reducere Casaidea",
+  "paragrafe": [
+   "Casaidea se numără printre magazinele de casă, mobilier și grădină apreciate în România pentru raportul bun dintre calitate și preț.",
+   "Codurile Casaidea se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de casă, mobilier și grădină și le publicăm aici de îndată ce apar.",
+   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Casaidea, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
   ],
   "sursa": "data-template"
  },
@@ -8126,21 +8126,21 @@
   ],
   "sursa": "data-template"
  },
- "cumparamisim.ro": {
-  "titlu": "Despre codurile de reducere Cumparamisim",
-  "paragrafe": [
-   "Dacă te interesează casă, mobilier și grădină, Cumparamisim este o opțiune solidă pentru cumpărăturile tale online.",
-   "Codurile Cumparamisim se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de casă, mobilier și grădină și le publicăm aici de îndată ce apar.",
-   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Cumparamisim, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
-  ],
-  "sursa": "data-template"
- },
  "curteaveche.ro": {
   "titlu": "Despre codurile de reducere Curteaveche",
   "paragrafe": [
    "Curteaveche se numără printre magazinele de cărți, educație și papetărie apreciate în România pentru raportul bun dintre calitate și preț.",
    "Momentan găsești 1 ofertă activă pentru Curteaveche, inclusiv „Pana la 90% reducere”. Pe AmCupon.ro actualizăm aceste reduceri zilnic, ca informația să fie mereu corectă.",
    "Ca să economisești, copiază codul Curteaveche de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
+  ],
+  "sursa": "data-template"
+ },
+ "cumparamisim.ro": {
+  "titlu": "Despre codurile de reducere Cumparamisim",
+  "paragrafe": [
+   "Dacă te interesează casă, mobilier și grădină, Cumparamisim este o opțiune solidă pentru cumpărăturile tale online.",
+   "Codurile Cumparamisim se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de casă, mobilier și grădină și le publicăm aici de îndată ce apar.",
+   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Cumparamisim, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
   ],
   "sursa": "data-template"
  },
@@ -8216,6 +8216,15 @@
   ],
   "sursa": "data-template"
  },
+ "airsoft.ro": {
+  "titlu": "Despre codurile de reducere Airsoft",
+  "paragrafe": [
+   "Dacă te interesează sport, fitness și echipamente outdoor, Airsoft este o opțiune solidă pentru cumpărăturile tale online.",
+   "Codurile Airsoft se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de sport, fitness și echipamente outdoor și le publicăm aici de îndată ce apar.",
+   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Airsoft, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
+  ],
+  "sursa": "data-template"
+ },
  "autodrop.ro": {
   "titlu": "Despre codurile de reducere Autodrop",
   "paragrafe": [
@@ -8231,15 +8240,6 @@
    "Glowmania se numără printre magazinele de casă, mobilier și grădină apreciate în România pentru raportul bun dintre calitate și preț.",
    "Pe AmCupon.ro urmărim zilnic promoțiile Glowmania și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de casă, mobilier și grădină apar frecvent.",
    "Folosirea unui cod Glowmania este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
-  ],
-  "sursa": "data-template"
- },
- "airsoft.ro": {
-  "titlu": "Despre codurile de reducere Airsoft",
-  "paragrafe": [
-   "Dacă te interesează sport, fitness și echipamente outdoor, Airsoft este o opțiune solidă pentru cumpărăturile tale online.",
-   "Codurile Airsoft se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de sport, fitness și echipamente outdoor și le publicăm aici de îndată ce apar.",
-   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Airsoft, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
   ],
   "sursa": "data-template"
  },
@@ -8261,6 +8261,15 @@
   ],
   "sursa": "data-template"
  },
+ "verohairshop.com": {
+  "titlu": "Despre codurile de reducere Verohairshop",
+  "paragrafe": [
+   "Dacă te interesează farmacie, suplimente și sănătate, Verohairshop este o opțiune solidă pentru cumpărăturile tale online.",
+   "Pe AmCupon.ro urmărim zilnic promoțiile Verohairshop și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de farmacie, suplimente și sănătate apar frecvent.",
+   "Folosirea unui cod Verohairshop este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
+  ],
+  "sursa": "data-template"
+ },
  "atomico.ro": {
   "titlu": "Despre codurile de reducere Atomico",
   "paragrafe": [
@@ -8279,12 +8288,12 @@
   ],
   "sursa": "data-template"
  },
- "verohairshop.com": {
-  "titlu": "Despre codurile de reducere Verohairshop",
+ "spectral.ro": {
+  "titlu": "Despre codurile de reducere Spectral",
   "paragrafe": [
-   "Dacă te interesează farmacie, suplimente și sănătate, Verohairshop este o opțiune solidă pentru cumpărăturile tale online.",
-   "Pe AmCupon.ro urmărim zilnic promoțiile Verohairshop și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de farmacie, suplimente și sănătate apar frecvent.",
-   "Folosirea unui cod Verohairshop este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
+   "Pe Spectral descoperi casă, mobilier și grădină, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
+   "Codurile Spectral se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de casă, mobilier și grădină și le publicăm aici de îndată ce apar.",
+   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Spectral, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
   ],
   "sursa": "data-template"
  },
@@ -8294,15 +8303,6 @@
    "Lasebiacasa este un magazin online din categoria alimente și băuturi, unde găsești o gamă variată de produse la prețuri competitive.",
    "Codurile Lasebiacasa se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de alimente și băuturi și le publicăm aici de îndată ce apar.",
    "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Lasebiacasa, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
-  ],
-  "sursa": "data-template"
- },
- "spectral.ro": {
-  "titlu": "Despre codurile de reducere Spectral",
-  "paragrafe": [
-   "Pe Spectral descoperi casă, mobilier și grădină, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
-   "Codurile Spectral se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de casă, mobilier și grădină și le publicăm aici de îndată ce apar.",
-   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Spectral, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
   ],
   "sursa": "data-template"
  },
@@ -8441,21 +8441,21 @@
   ],
   "sursa": "data-template"
  },
- "redgoblin.ro": {
-  "titlu": "Despre codurile de reducere Redgoblin",
-  "paragrafe": [
-   "Pe Redgoblin descoperi produse variate din toate categoriile, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
-   "Pe AmCupon.ro urmărim zilnic promoțiile Redgoblin și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de produse variate din toate categoriile apar frecvent.",
-   "Folosirea unui cod Redgoblin este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
-  ],
-  "sursa": "data-template"
- },
  "interlink.ro": {
   "titlu": "Despre codurile de reducere Interlink",
   "paragrafe": [
    "Dacă te interesează electronice, IT și gadgeturi, Interlink este o opțiune solidă pentru cumpărăturile tale online.",
    "Interlink are în acest moment 1 ofertă activă, cum este „Interlink”. Toate sunt verificate și reîmprospătate zilnic pe AmCupon.ro.",
    "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Interlink, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
+  ],
+  "sursa": "data-template"
+ },
+ "redgoblin.ro": {
+  "titlu": "Despre codurile de reducere Redgoblin",
+  "paragrafe": [
+   "Pe Redgoblin descoperi produse variate din toate categoriile, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
+   "Pe AmCupon.ro urmărim zilnic promoțiile Redgoblin și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de produse variate din toate categoriile apar frecvent.",
+   "Folosirea unui cod Redgoblin este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
   ],
   "sursa": "data-template"
  },
@@ -8474,6 +8474,15 @@
    "Pe Krista descoperi produse pentru copii, jucării și articole pentru bebeluși, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
    "În acest moment nu există un cod activ pentru Krista, dar verificăm zilnic. Adaugă pagina la favorite ca să fii primul care prinde următoarea reducere de produse pentru copii, jucării și articole pentru bebeluși.",
    "Ca să economisești, copiază codul Krista de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
+  ],
+  "sursa": "data-template"
+ },
+ "iclothing.com": {
+  "titlu": "Despre codurile de reducere Iclothing",
+  "paragrafe": [
+   "Iclothing se numără printre magazinele de modă, haine și accesorii apreciate în România pentru raportul bun dintre calitate și preț.",
+   "Pe AmCupon.ro urmărim zilnic promoțiile Iclothing și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de modă, haine și accesorii apar frecvent.",
+   "Folosirea unui cod Iclothing este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
   ],
   "sursa": "data-template"
  },
@@ -8519,15 +8528,6 @@
    "Yves Rocher se numără printre magazinele de cosmetice și produse de îngrijire apreciate în România pentru raportul bun dintre calitate și preț.",
    "În acest moment nu există un cod activ pentru Yves Rocher, dar verificăm zilnic. Adaugă pagina la favorite ca să fii primul care prinde următoarea reducere de cosmetice și produse de îngrijire.",
    "Ca să economisești, copiază codul Yves Rocher de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
-  ],
-  "sursa": "data-template"
- },
- "iclothing.com": {
-  "titlu": "Despre codurile de reducere Iclothing",
-  "paragrafe": [
-   "Iclothing se numără printre magazinele de modă, haine și accesorii apreciate în România pentru raportul bun dintre calitate și preț.",
-   "Pe AmCupon.ro urmărim zilnic promoțiile Iclothing și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de modă, haine și accesorii apar frecvent.",
-   "Folosirea unui cod Iclothing este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
   ],
   "sursa": "data-template"
  },
@@ -8603,21 +8603,21 @@
   ],
   "sursa": "data-template"
  },
- "melimeloparis.ro": {
-  "titlu": "Despre codurile de reducere Melimeloparis",
-  "paragrafe": [
-   "Melimeloparis se numără printre magazinele de bijuterii și ceasuri apreciate în România pentru raportul bun dintre calitate și preț.",
-   "În acest moment nu există un cod activ pentru Melimeloparis, dar verificăm zilnic. Adaugă pagina la favorite ca să fii primul care prinde următoarea reducere de bijuterii și ceasuri.",
-   "Ca să economisești, copiază codul Melimeloparis de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
-  ],
-  "sursa": "data-template"
- },
  "meia.ro": {
   "titlu": "Despre codurile de reducere Meia",
   "paragrafe": [
    "Dacă te interesează modă, haine și accesorii, Meia este o opțiune solidă pentru cumpărăturile tale online.",
    "Codurile Meia se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de modă, haine și accesorii și le publicăm aici de îndată ce apar.",
    "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Meia, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
+  ],
+  "sursa": "data-template"
+ },
+ "melimeloparis.ro": {
+  "titlu": "Despre codurile de reducere Melimeloparis",
+  "paragrafe": [
+   "Melimeloparis se numără printre magazinele de bijuterii și ceasuri apreciate în România pentru raportul bun dintre calitate și preț.",
+   "În acest moment nu există un cod activ pentru Melimeloparis, dar verificăm zilnic. Adaugă pagina la favorite ca să fii primul care prinde următoarea reducere de bijuterii și ceasuri.",
+   "Ca să economisești, copiază codul Melimeloparis de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
   ],
   "sursa": "data-template"
  },
@@ -8801,21 +8801,21 @@
   ],
   "sursa": "data-template"
  },
+ "e-potion.ro": {
+  "titlu": "Despre codurile de reducere E Potion",
+  "paragrafe": [
+   "E Potion se numără printre magazinele de farmacie, suplimente și sănătate apreciate în România pentru raportul bun dintre calitate și preț.",
+   "E Potion are în acest moment 1 ofertă activă, cum este „10% reducere pe tot site-ul e-Potion.ro”. Toate sunt verificate și reîmprospătate zilnic pe AmCupon.ro.",
+   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul E Potion, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
+  ],
+  "sursa": "data-template"
+ },
  "foliecubule.ro": {
   "titlu": "Despre codurile de reducere Foliecubule",
   "paragrafe": [
    "Foliecubule se numără printre magazinele de produse variate din toate categoriile apreciate în România pentru raportul bun dintre calitate și preț.",
    "În acest moment nu există un cod activ pentru Foliecubule, dar verificăm zilnic. Adaugă pagina la favorite ca să fii primul care prinde următoarea reducere de produse variate din toate categoriile.",
    "Ca să economisești, copiază codul Foliecubule de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
-  ],
-  "sursa": "data-template"
- },
- "coltdesanatate.ro": {
-  "titlu": "Despre codurile de reducere Coltdesanatate",
-  "paragrafe": [
-   "Dacă te interesează farmacie, suplimente și sănătate, Coltdesanatate este o opțiune solidă pentru cumpărăturile tale online.",
-   "Pe AmCupon.ro urmărim zilnic promoțiile Coltdesanatate și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de farmacie, suplimente și sănătate apar frecvent.",
-   "Folosirea unui cod Coltdesanatate este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
   ],
   "sursa": "data-template"
  },
@@ -8828,12 +8828,12 @@
   ],
   "sursa": "data-template"
  },
- "e-potion.ro": {
-  "titlu": "Despre codurile de reducere E Potion",
+ "coltdesanatate.ro": {
+  "titlu": "Despre codurile de reducere Coltdesanatate",
   "paragrafe": [
-   "E Potion se numără printre magazinele de farmacie, suplimente și sănătate apreciate în România pentru raportul bun dintre calitate și preț.",
-   "E Potion are în acest moment 1 ofertă activă, cum este „10% reducere pe tot site-ul e-Potion.ro”. Toate sunt verificate și reîmprospătate zilnic pe AmCupon.ro.",
-   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul E Potion, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
+   "Dacă te interesează farmacie, suplimente și sănătate, Coltdesanatate este o opțiune solidă pentru cumpărăturile tale online.",
+   "Pe AmCupon.ro urmărim zilnic promoțiile Coltdesanatate și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de farmacie, suplimente și sănătate apar frecvent.",
+   "Folosirea unui cod Coltdesanatate este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
   ],
   "sursa": "data-template"
  },
@@ -8873,6 +8873,15 @@
   ],
   "sursa": "data-template"
  },
+ "apolino.ro": {
+  "titlu": "Despre codurile de reducere Apolino",
+  "paragrafe": [
+   "Pe Apolino descoperi cosmetice și produse de îngrijire, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
+   "Codurile Apolino se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de cosmetice și produse de îngrijire și le publicăm aici de îndată ce apar.",
+   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Apolino, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
+  ],
+  "sursa": "data-template"
+ },
  "zapatos.hu": {
   "titlu": "Despre codurile de reducere Zapatos",
   "paragrafe": [
@@ -8900,12 +8909,12 @@
   ],
   "sursa": "data-template"
  },
- "apolino.ro": {
-  "titlu": "Despre codurile de reducere Apolino",
+ "avatar-shop.ro": {
+  "titlu": "Despre codurile de reducere Avatar Shop",
   "paragrafe": [
-   "Pe Apolino descoperi cosmetice și produse de îngrijire, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
-   "Codurile Apolino se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de cosmetice și produse de îngrijire și le publicăm aici de îndată ce apar.",
-   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Apolino, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
+   "Pe Avatar Shop descoperi electronice, IT și gadgeturi, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
+   "Codurile Avatar Shop se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de electronice, IT și gadgeturi și le publicăm aici de îndată ce apar.",
+   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Avatar Shop, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
   ],
   "sursa": "data-template"
  },
@@ -8915,15 +8924,6 @@
    "Republicabio este un magazin online din categoria farmacie, suplimente și sănătate, unde găsești o gamă variată de produse la prețuri competitive.",
    "Pe AmCupon.ro urmărim zilnic promoțiile Republicabio și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de farmacie, suplimente și sănătate apar frecvent.",
    "Folosirea unui cod Republicabio este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
-  ],
-  "sursa": "data-template"
- },
- "avatar-shop.ro": {
-  "titlu": "Despre codurile de reducere Avatar Shop",
-  "paragrafe": [
-   "Pe Avatar Shop descoperi electronice, IT și gadgeturi, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
-   "Codurile Avatar Shop se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de electronice, IT și gadgeturi și le publicăm aici de îndată ce apar.",
-   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Avatar Shop, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
   ],
   "sursa": "data-template"
  },
@@ -9026,15 +9026,6 @@
   ],
   "sursa": "data-template"
  },
- "afisport.ro": {
-  "titlu": "Despre codurile de reducere Afisport",
-  "paragrafe": [
-   "Dacă te interesează sport, fitness și echipamente outdoor, Afisport este o opțiune solidă pentru cumpărăturile tale online.",
-   "Chiar acum, Afisport are 1 ofertă activă pe AmCupon.ro, printre care „Extragarantie 2+3 ani la Biciclete Afisport.ro”. Verificăm zilnic codurile de reducere ca să prinzi cel mai bun preț înainte să finalizezi comanda.",
-   "Folosirea unui cod Afisport este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
-  ],
-  "sursa": "data-template"
- },
  "primefarma.ro": {
   "titlu": "Despre codurile de reducere Primefarma",
   "paragrafe": [
@@ -9080,6 +9071,15 @@
   ],
   "sursa": "data-template"
  },
+ "importdirect.ro": {
+  "titlu": "Despre codurile de reducere Importdirect",
+  "paragrafe": [
+   "Pe Importdirect descoperi cosmetice și produse de îngrijire, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
+   "În acest moment nu există un cod activ pentru Importdirect, dar verificăm zilnic. Adaugă pagina la favorite ca să fii primul care prinde următoarea reducere de cosmetice și produse de îngrijire.",
+   "Ca să economisești, copiază codul Importdirect de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
+  ],
+  "sursa": "data-template"
+ },
  "sculefix.ro": {
   "titlu": "Despre codurile de reducere Sculefix",
   "paragrafe": [
@@ -9095,15 +9095,6 @@
    "Boost4life se numără printre magazinele de farmacie, suplimente și sănătate apreciate în România pentru raportul bun dintre calitate și preț.",
    "Pe AmCupon.ro urmărim zilnic promoțiile Boost4life și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de farmacie, suplimente și sănătate apar frecvent.",
    "Folosirea unui cod Boost4life este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
-  ],
-  "sursa": "data-template"
- },
- "importdirect.ro": {
-  "titlu": "Despre codurile de reducere Importdirect",
-  "paragrafe": [
-   "Pe Importdirect descoperi cosmetice și produse de îngrijire, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
-   "În acest moment nu există un cod activ pentru Importdirect, dar verificăm zilnic. Adaugă pagina la favorite ca să fii primul care prinde următoarea reducere de cosmetice și produse de îngrijire.",
-   "Ca să economisești, copiază codul Importdirect de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
   ],
   "sursa": "data-template"
  },
@@ -9134,21 +9125,21 @@
   ],
   "sursa": "data-template"
  },
- "baristelli.ro": {
-  "titlu": "Despre codurile de reducere Baristelli",
-  "paragrafe": [
-   "Baristelli se numără printre magazinele de alimente și băuturi apreciate în România pentru raportul bun dintre calitate și preț.",
-   "Pe AmCupon.ro urmărim zilnic promoțiile Baristelli și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de alimente și băuturi apar frecvent.",
-   "Folosirea unui cod Baristelli este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
-  ],
-  "sursa": "data-template"
- },
  "edez.ro": {
   "titlu": "Despre codurile de reducere Edez",
   "paragrafe": [
    "Dacă te interesează piese auto, accesorii și produse pentru mașini, Edez este o opțiune solidă pentru cumpărăturile tale online.",
    "Codurile Edez se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de piese auto, accesorii și produse pentru mașini și le publicăm aici de îndată ce apar.",
    "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Edez, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
+  ],
+  "sursa": "data-template"
+ },
+ "baristelli.ro": {
+  "titlu": "Despre codurile de reducere Baristelli",
+  "paragrafe": [
+   "Baristelli se numără printre magazinele de alimente și băuturi apreciate în România pentru raportul bun dintre calitate și preț.",
+   "Pe AmCupon.ro urmărim zilnic promoțiile Baristelli și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de alimente și băuturi apar frecvent.",
+   "Folosirea unui cod Baristelli este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
   ],
   "sursa": "data-template"
  },
@@ -9230,6 +9221,15 @@
    "Pe Kamu descoperi cosmetice și produse de îngrijire, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
    "Codurile Kamu se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de cosmetice și produse de îngrijire și le publicăm aici de îndată ce apar.",
    "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Kamu, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
+  ],
+  "sursa": "data-template"
+ },
+ "elegance-decor.ro": {
+  "titlu": "Despre codurile de reducere Elegance Decor",
+  "paragrafe": [
+   "Pe Elegance Decor descoperi casă, mobilier și grădină, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
+   "Codurile Elegance Decor se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de casă, mobilier și grădină și le publicăm aici de îndată ce apar.",
+   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Elegance Decor, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
   ],
   "sursa": "data-template"
  },
@@ -9338,15 +9338,6 @@
    "Pe Centini descoperi modă, haine și accesorii, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
    "Pe AmCupon.ro urmărim zilnic promoțiile Centini și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de modă, haine și accesorii apar frecvent.",
    "Folosirea unui cod Centini este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
-  ],
-  "sursa": "data-template"
- },
- "elegance-decor.ro": {
-  "titlu": "Despre codurile de reducere Elegance Decor",
-  "paragrafe": [
-   "Pe Elegance Decor descoperi casă, mobilier și grădină, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
-   "Codurile Elegance Decor se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de casă, mobilier și grădină și le publicăm aici de îndată ce apar.",
-   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Elegance Decor, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
   ],
   "sursa": "data-template"
  },
@@ -9710,21 +9701,21 @@
   ],
   "sursa": "data-template"
  },
- "incaltamintelamoda.ro": {
-  "titlu": "Despre codurile de reducere Incaltamintelamoda",
-  "paragrafe": [
-   "Incaltamintelamoda se numără printre magazinele de modă, haine și accesorii apreciate în România pentru raportul bun dintre calitate și preț.",
-   "Chiar acum, Incaltamintelamoda are 2 oferte active pe AmCupon.ro, printre care „Reduceri de până la 47% la încălțăminte din piele naturală”. Verificăm zilnic codurile de reducere ca să prinzi cel mai bun preț înainte să finalizezi comanda.",
-   "Folosirea unui cod Incaltamintelamoda este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
-  ],
-  "sursa": "data-template"
- },
  "12note.ro": {
   "titlu": "Despre codurile de reducere 12note",
   "paragrafe": [
    "12note este un magazin online din categoria cosmetice și produse de îngrijire, unde găsești o gamă variată de produse la prețuri competitive.",
    "În acest moment nu există un cod activ pentru 12note, dar verificăm zilnic. Adaugă pagina la favorite ca să fii primul care prinde următoarea reducere de cosmetice și produse de îngrijire.",
    "Ca să economisești, copiază codul 12note de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
+  ],
+  "sursa": "data-template"
+ },
+ "incaltamintelamoda.ro": {
+  "titlu": "Despre codurile de reducere Incaltamintelamoda",
+  "paragrafe": [
+   "Incaltamintelamoda se numără printre magazinele de modă, haine și accesorii apreciate în România pentru raportul bun dintre calitate și preț.",
+   "Chiar acum, Incaltamintelamoda are 2 oferte active pe AmCupon.ro, printre care „Reduceri de până la 47% la încălțăminte din piele naturală”. Verificăm zilnic codurile de reducere ca să prinzi cel mai bun preț înainte să finalizezi comanda.",
+   "Folosirea unui cod Incaltamintelamoda este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
   ],
   "sursa": "data-template"
  },
@@ -9878,15 +9869,6 @@
    "Dacă te interesează sport, fitness și echipamente outdoor, Padelboost este o opțiune solidă pentru cumpărăturile tale online.",
    "Codurile Padelboost se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de sport, fitness și echipamente outdoor și le publicăm aici de îndată ce apar.",
    "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Padelboost, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
-  ],
-  "sursa": "data-template"
- },
- "drbronner.ro": {
-  "titlu": "Despre codurile de reducere Drbronner",
-  "paragrafe": [
-   "Dacă te interesează farmacie, suplimente și sănătate, Drbronner este o opțiune solidă pentru cumpărăturile tale online.",
-   "În acest moment nu există un cod activ pentru Drbronner, dar verificăm zilnic. Adaugă pagina la favorite ca să fii primul care prinde următoarea reducere de farmacie, suplimente și sănătate.",
-   "Ca să economisești, copiază codul Drbronner de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
   ],
   "sursa": "data-template"
  },
@@ -10445,6 +10427,15 @@
    "Trendyup se numără printre magazinele de modă, haine și accesorii apreciate în România pentru raportul bun dintre calitate și preț.",
    "Momentan găsești 1 ofertă activă pentru Trendyup, inclusiv „Women fashion bag/ Gentii dama”. Pe AmCupon.ro actualizăm aceste reduceri zilnic, ca informația să fie mereu corectă.",
    "Ca să economisești, copiază codul Trendyup de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
+  ],
+  "sursa": "data-template"
+ },
+ "bookzone.ro": {
+  "titlu": "Despre codurile de reducere Bookzone",
+  "paragrafe": [
+   "Bookzone se numără printre magazinele de produse variate apreciate în România pentru raportul bun dintre calitate și preț.",
+   "Bookzone are în acest moment 1 ofertă activă, cum este „Nou pe bookzone.ro: 1200 de titluri în engleză – Un adevărat festin…”. Toate sunt verificate și reîmprospătate zilnic pe AmCupon.ro.",
+   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Bookzone, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
   ],
   "sursa": "data-template"
  }
