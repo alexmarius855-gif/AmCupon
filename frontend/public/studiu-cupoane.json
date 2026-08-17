@@ -1,6 +1,6 @@
 {
   "generat": "2026-08-17",
-  "total_magazine": 1161,
+  "total_magazine": 1159,
   "cu_promotie": 65,
   "cu_cod_real": 6,
   "doar_oferta": 59,
@@ -39,7 +39,7 @@
     {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
-      "magazine": 143,
+      "magazine": 141,
       "cu_promotie": 16,
       "reducere_mediana": 12.5,
       "reducere_max": 70,
@@ -120,7 +120,7 @@
     {
       "slug": "financiar",
       "nume": "Financiar & asigurări",
-      "magazine": 14,
+      "magazine": 15,
       "cu_promotie": 0,
       "reducere_mediana": null,
       "reducere_max": null,
@@ -147,7 +147,7 @@
     {
       "slug": "copii",
       "nume": "Copii & familie",
-      "magazine": 35,
+      "magazine": 34,
       "cu_promotie": 1,
       "reducere_mediana": null,
       "reducere_max": null,

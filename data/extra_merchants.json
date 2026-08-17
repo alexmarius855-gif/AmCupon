@@ -16912,5 +16912,30 @@
     "exclusiv": false,
     "platforma": "impact",
     "descriere": ""
+  },
+  {
+    "magazin": "Multitude Bank p.l.c",
+    "url": "https://www.ferratumbank.fi/",
+    "url_afiliat": "https://ferratumfi.sjv.io/c/7401119/3861674/46443",
+    "logo_url": "",
+    "categorie": "Diverse",
+    "categorie_slug": "online-mall",
+    "comision": "Variabil",
+    "rank": null,
+    "scor_afiliere": 50,
+    "scor_final": 50,
+    "prioritate": "standard",
+    "canal_recomandat": "Content, SEO, Social",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 0,
+    "promotii": [],
+    "folosit_de": 0,
+    "procent_succes": 85,
+    "exclusiv": false,
+    "platforma": "impact",
+    "descriere": ""
   }
 ]
