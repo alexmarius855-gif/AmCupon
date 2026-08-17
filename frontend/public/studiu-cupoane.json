@@ -1,22 +1,22 @@
 {
-  "generat": "2026-08-16",
+  "generat": "2026-08-17",
   "total_magazine": 1161,
-  "cu_promotie": 66,
+  "cu_promotie": 65,
   "cu_cod_real": 6,
-  "doar_oferta": 60,
-  "procent_cu_promotie": 5.7,
+  "doar_oferta": 59,
+  "procent_cu_promotie": 5.6,
   "procent_cu_cod": 0.5,
-  "reducere_mediana_generala": 29.0,
-  "magazine_cu_procent_declarat": 38,
+  "reducere_mediana_generala": 25,
+  "magazine_cu_procent_declarat": 37,
   "categorii": [
     {
       "slug": "carti-educatie",
       "nume": "Cărți & educație",
-      "magazine": 36,
-      "cu_promotie": 8,
-      "reducere_mediana": 50,
+      "magazine": 35,
+      "cu_promotie": 6,
+      "reducere_mediana": 65.0,
       "reducere_max": 90,
-      "esantion": 5
+      "esantion": 4
     },
     {
       "slug": "fashion",
@@ -91,6 +91,15 @@
       "esantion": 1
     },
     {
+      "slug": "sport",
+      "nume": "Sport & fitness",
+      "magazine": 49,
+      "cu_promotie": 1,
+      "reducere_mediana": null,
+      "reducere_max": null,
+      "esantion": 0
+    },
+    {
       "slug": "mancare-bauturi",
       "nume": "Mâncare & băuturi",
       "magazine": 16,
@@ -136,15 +145,6 @@
       "esantion": 0
     },
     {
-      "slug": "sport",
-      "nume": "Sport & fitness",
-      "magazine": 49,
-      "cu_promotie": 1,
-      "reducere_mediana": null,
-      "reducere_max": null,
-      "esantion": 0
-    },
-    {
       "slug": "copii",
       "nume": "Copii & familie",
       "magazine": 35,
@@ -179,6 +179,15 @@
       "reducere_mediana": null,
       "reducere_max": null,
       "esantion": 1
+    },
+    {
+      "slug": "books",
+      "nume": "books",
+      "magazine": 1,
+      "cu_promotie": 1,
+      "reducere_mediana": null,
+      "reducere_max": null,
+      "esantion": 0
     }
   ],
   "retele": [
