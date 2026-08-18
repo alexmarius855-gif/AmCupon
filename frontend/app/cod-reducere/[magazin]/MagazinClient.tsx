@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { useState, useEffect } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { Ticket, Tag, ShoppingBag, Star, Timer, ClipboardCopy, ShoppingCart, CheckCircle2, Puzzle, Mail, Flame, Truck } from "lucide-react";
 import PriceAlert from "../../components/PriceAlert";
 import ReviewSection from "./ReviewSection";
@@ -433,9 +433,12 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
           )}
 
           {/* ── TAB NAVIGATION ─────────────────────────────────────────────── */}
-          <div className="flex gap-0 border-t border-[#1f2329] overflow-x-auto" style={{scrollbarWidth:"none"}}>
+          <div role="tablist" aria-label="Sectiuni magazin" className="flex gap-0 border-t border-[#1f2329] overflow-x-auto" style={{scrollbarWidth:"none"}}>
             {tabs.map(t => (
-              <button key={t.id} onClick={() => setTabActiv(t.id)}
+              <button
+                key={t.id} id={`tab-${t.id}`} role="tab"
+                aria-selected={tabActiv === t.id} aria-controls={`panou-${t.id}`}
+                onClick={() => setTabActiv(t.id)}
                 className={`flex items-center gap-2 px-5 py-3.5 text-sm font-bold border-b-2 transition-all whitespace-nowrap ${
                   tabActiv === t.id
                     ? "border-[#ddf93c] text-[#ffffff]"
@@ -457,10 +460,20 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
       {/* ── TAB CONTENT ────────────────────────────────────────────────────── */}
       <div className="max-w-5xl mx-auto px-4 py-8 text-[#ffffff]">
 
-        <AnimatePresence mode="wait">
+        {/* Toate panourile stau in DOM, ascunse cu `hidden` (= display:none), NU montate
+            conditionat. Motivul e masurat, nu stilistic: cu montare conditionata, in HTML
+            ajungea DOAR tabul implicit, deci titlurile a 1.201 produse reale de la libris.ro
+            (si ale celorlalte 72 de magazine cu feed) nu existau nicaieri pentru Google —
+            ~900-2.400 caractere de text UNIC pe pagina, exact ce ne lipsea fata de concurenta.
+            Continutul din tab-uri e indexat normal; `hidden` e si corect pentru cititoarele
+            de ecran, care sar peste panourile inactive. */}
         {/* ─── TAB: CODURI ──────────────────────────────────────────────────── */}
-        {tabActiv === "coduri" && (
-          <motion.div key="coduri" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} transition={{ duration: 0.15 }}>
+        <motion.div
+          key="coduri" id="panou-coduri" role="tabpanel" aria-labelledby="tab-coduri"
+          hidden={tabActiv !== "coduri"}
+          animate={{ opacity: tabActiv === "coduri" ? 1 : 0 }}
+          transition={{ duration: 0.15 }}
+        >
             {/* ── Cum functioneaza (3 pasi) ─────────────────────────────────── */}
             <div className="flex items-stretch gap-2 sm:gap-4 mb-7 bg-[#14181c]/60 border border-[#1f2329] rounded-xl p-4">
               {[
@@ -648,11 +661,14 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
               </div>
             </section>
           </motion.div>
-        )}
 
         {/* ─── TAB: OFERTE ──────────────────────────────────────────────────── */}
-        {tabActiv === "oferte" && (
-          <motion.div key="oferte" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} transition={{ duration: 0.15 }}>
+        <motion.div
+          key="oferte" id="panou-oferte" role="tabpanel" aria-labelledby="tab-oferte"
+          hidden={tabActiv !== "oferte"}
+          animate={{ opacity: tabActiv === "oferte" ? 1 : 0 }}
+          transition={{ duration: 0.15 }}
+        >
             {faraCodd.length > 0 ? (
               <section>
                 <div className="flex items-center gap-3 mb-5">
@@ -723,11 +739,14 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
               </div>
             )}
           </motion.div>
-        )}
 
         {/* ─── TAB: PRODUSE ─────────────────────────────────────────────────── */}
-        {tabActiv === "produse" && (
-          <motion.div key="produse" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} transition={{ duration: 0.15 }}>
+        <motion.div
+          key="produse" id="panou-produse" role="tabpanel" aria-labelledby="tab-produse"
+          hidden={tabActiv !== "produse"}
+          animate={{ opacity: tabActiv === "produse" ? 1 : 0 }}
+          transition={{ duration: 0.15 }}
+        >
             {produse.length > 0 ? (
               <section>
                 <div className="flex items-center justify-between mb-5">
@@ -753,15 +772,16 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
               </div>
             )}
           </motion.div>
-        )}
 
         {/* ─── TAB: RECENZII ────────────────────────────────────────────────── */}
-        {tabActiv === "recenzii" && (
-          <motion.div key="recenzii" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} transition={{ duration: 0.15 }}>
+        <motion.div
+          key="recenzii" id="panou-recenzii" role="tabpanel" aria-labelledby="tab-recenzii"
+          hidden={tabActiv !== "recenzii"}
+          animate={{ opacity: tabActiv === "recenzii" ? 1 : 0 }}
+          transition={{ duration: 0.15 }}
+        >
             <ReviewSection magazin={m.magazin} />
           </motion.div>
-        )}
-        </AnimatePresence>
 
         {/* ── BOTTOM CTAs (toate tab-urile) ────────────────────────────────── */}
         <div className="mt-8 space-y-3">
