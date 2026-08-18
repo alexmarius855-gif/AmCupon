@@ -64,6 +64,37 @@ Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Pro
     Headere: `X-Robots-Tag: noindex, nofollow` + `Cache-Control: no-store`; `/go/` in `robots.txt`.
   - **302, nu 301**: linkul de tracking se poate schimba, iar un 301 ramane in cache-ul browserului la infinit.
 
+**UPDATE 17.08.2026 — partea a 2-a (continutul tab-urilor ajunge in HTML: +52% text — PUSHED):**
+- **Tab-urile de pe pagina de magazin erau montate CONDITIONAT** (`{tabActiv === "produse" && ...}`),
+  deci in HTML ajungea DOAR tabul implicit. Titlurile a 1.201 produse reale de la libris.ro — si ale
+  celorlalte 72 de magazine cu feed — **nu existau nicaieri pentru Google**. Verificat pe productie
+  INAINTE de fix: 0 din 10 titluri de produs se regaseau in pagina libris.ro.
+- **Asta era exact golul fata de concurenta** documentat pe 16.08 (ei 9.762 caractere, noi ~5.400).
+  Masurat live dupa deploy:
+  | magazin | inainte | dupa |
+  |---|---|---|
+  | libris.ro | 6.164 / 20 titluri | **9.731 / 26** (+58%) |
+  | emag.ro | 5.659 / 20 | 6.863 / 25 (+21%) |
+  | 112coffee.com | 5.413 / 17 | 6.589 / 22 (+22%) |
+  | vidaxl.ro | — | 10.253 / 27 |
+  | navstore.ro | — | 9.970 / 22 |
+  | mathaus.ro | — | 9.070 / **43** |
+  Concurenta pe acelasi magazin (`cuponescu.ro/magazin/112coffee-com`): **9.907 / 27**. Magazinele
+  cu feed sunt acum la nivelul lor sau peste.
+- Panourile stau in DOM si se ascund cu **`hidden`** (= `display:none`). Continutul din tab-uri e
+  indexat normal de Google, iar `hidden` e si comportamentul corect pentru cititoarele de ecran.
+  **Regula generala: nu monta conditionat continut care merita indexat** — ascunde-l, nu-l demonta.
+- **Pierdut deliberat**: animatia de montare intre tab-uri (`AnimatePresence` nu mai are ce anima cand
+  nimic nu se demonteaza). Ramane un fade pe opacitate. Text unic in HTML > o tranzitie de 150ms.
+- Adaugat ARIA-ul care lipsea: `role="tablist"/"tab"/"tabpanel"`, `aria-selected`, `aria-controls`.
+- **`docs/operational/BRIEF-LOVABLE-DESIGN.md`** (nou) — brief de lipit in Lovable pentru o
+  REFERINTA de design (nu o rescriere: Lovable nu poate prelua pipeline-ul, output.json sau regula
+  de indexare). Acelasi flux care a produs tema lime pe 11.08.
+- **Comenzi rapide noi in `~/.claude/commands/`**: `/reclame` (texte pentru Meta + TikTok, cu
+  limitele reale de caractere si filtrul obligatoriu „doar magazine cu link de comision real" —
+  altfel platesti clicul si castigi zero) si `/postari` rescris pe trei platforme (FB / Instagram
+  cu limita de 125 caractere si CTA „link in bio" / TikTok cu caption sub 100 + script vocal).
+
 **UPDATE 16.08.2026 — partea a 3-a (adancime pagina magazin + de ce indexarea NU se poate forta — PUSHED):**
 - **De ce nu deschidem cele 1.075 de pagini `noindex` — masurat, nu presupus.** Doar **87 din 1.162**
   de pagini de magazin sunt indexabile. Am verificat daca decizia din 10.08 mai e valida acum ca
