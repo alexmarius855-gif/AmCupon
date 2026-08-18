@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-18T06:32:24Z",
+  "updated": "2026-08-18T17:24:38Z",
   "count": 14532,
   "products": [
     {
@@ -121,7 +121,7 @@
       "title": "Summer - travel, hair products discount",
       "url": "https://cezi.ro/reduceri/",
       "url_original": "https://cezi.ro/reduceri/",
-      "image": "https://www.google.com/s2/favicons?domain=cezi.ro&sz=128",
+      "image": "",
       "price": 150.0,
       "old_price": 500.0,
       "discount_pct": 70,
@@ -254,7 +254,7 @@
       "title": "Women fashion bag/ Gentii dama",
       "url": "https://trendyup.ro/collections/genti",
       "url_original": "https://trendyup.ro/collections/genti",
-      "image": "https://www.google.com/s2/favicons?domain=trendyup.ro&sz=128",
+      "image": "",
       "price": 250.0,
       "old_price": 500.0,
       "discount_pct": 50,
@@ -406,7 +406,7 @@
       "title": "MedimFarm - 18% reducere vara cu codul SUMMER18 — Cod: SUMMER18",
       "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.medimfarm.ro",
       "url_original": "https://www.medimfarm.ro",
-      "image": "",
+      "image": "https://www.google.com/s2/favicons?domain=medimfarm.ro&sz=128",
       "price": 0.0,
       "old_price": null,
       "discount_pct": 18,
@@ -589,7 +589,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 1230
+      "zile_ramase": 1229
     },
     {
       "id": "promo_vidaxl.ro_2",
@@ -608,7 +608,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 1230
+      "zile_ramase": 1229
     },
     {
       "id": "promo_vidaxl.bg_1",
@@ -627,7 +627,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 1230
+      "zile_ramase": 1229
     },
     {
       "id": "promo_112coffee.com_0",
@@ -748,7 +748,7 @@
       "title": "Fera.ro - 5% reducere la prima comanda hrana Hills",
       "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.fera.ro",
       "url_original": "https://www.fera.ro",
-      "image": "",
+      "image": "https://www.google.com/s2/favicons?domain=fera.ro&sz=128",
       "price": 0.0,
       "old_price": null,
       "discount_pct": 5,
@@ -855,7 +855,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 1231
+      "zile_ramase": 1230
     },
     {
       "id": "promo_vidaxl.bg_0",
@@ -874,7 +874,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 1231
+      "zile_ramase": 1230
     },
     {
       "id": "promo_sneakerit.ro_0",
@@ -931,7 +931,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 866
+      "zile_ramase": 865
     },
     {
       "id": "promo_mathaus.ro_1",
@@ -1660,7 +1660,7 @@
       "title": "Nou pe bookzone.ro: 1200 de titluri în engleză – Un adevărat festin literar!",
       "url": "https://bookzone.ro/carti/carti-in-limba-engleza",
       "url_original": "https://bookzone.ro/carti/carti-in-limba-engleza",
-      "image": "https://www.google.com/s2/favicons?domain=bookzone.ro&sz=128",
+      "image": "",
       "price": 0.0,
       "old_price": null,
       "discount_pct": 0,
