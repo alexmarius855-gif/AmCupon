@@ -1,10 +1,10 @@
 {
-  "generat": "2026-08-17",
+  "generat": "2026-08-18",
   "total_magazine": 1159,
-  "cu_promotie": 65,
+  "cu_promotie": 66,
   "cu_cod_real": 6,
-  "doar_oferta": 59,
-  "procent_cu_promotie": 5.6,
+  "doar_oferta": 60,
+  "procent_cu_promotie": 5.7,
   "procent_cu_cod": 0.5,
   "reducere_mediana_generala": 25,
   "magazine_cu_procent_declarat": 37,
@@ -13,7 +13,7 @@
       "slug": "carti-educatie",
       "nume": "Cărți & educație",
       "magazine": 35,
-      "cu_promotie": 6,
+      "cu_promotie": 7,
       "reducere_mediana": 65.0,
       "reducere_max": 90,
       "esantion": 4
@@ -21,7 +21,7 @@
     {
       "slug": "fashion",
       "nume": "Fashion",
-      "magazine": 108,
+      "magazine": 109,
       "cu_promotie": 10,
       "reducere_mediana": 48.5,
       "reducere_max": 80,
@@ -39,7 +39,7 @@
     {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
-      "magazine": 141,
+      "magazine": 140,
       "cu_promotie": 16,
       "reducere_mediana": 12.5,
       "reducere_max": 70,
