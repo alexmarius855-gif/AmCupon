@@ -229,12 +229,52 @@ def load_existing_slugs():
     return existing
 
 
+# Denumiri ALTERNATIVE de coloane, per camp.
+# Motiv real: dashboard-urile retelelor se localizeaza. Contul CJ al lui Alex e in
+# ROMANA, deci exportul poate veni cu "Agent de publicitate" in loc de "Advertiser
+# Name" — iar un import care cade pe un titlu de coloana pare "CSV gol" si trimite
+# pe piste false. Cautam pe rand fiecare varianta, apoi cadem pe potrivire partiala.
+ALIAS_COLOANE = {
+    "col_url": ["Advertiser URL", "Advertiser Display URL", "Site", "Website", "URL",
+                "Site web", "Adresa site", "Domeniu", "Program URL"],
+    "col_name": ["Program Name", "Advertiser Name", "Name", "Nume", "Denumire",
+                 "Agent de publicitate", "Numele agentului de publicitate",
+                 "Nume program", "Advertiser", "Partener"],
+    "col_category": ["Advertiser Category", "Primary Sector", "Category", "Categories",
+                     "Categorie", "Categoria agentului de publicitate", "Sector"],
+    "col_link": ["Tracking Link", "Click Through Link", "Link", "GoToLink",
+                 "Legatura", "Legătură", "Link de urmarire", "Link afiliat",
+                 "Destination URL", "Tracking URL"],
+    "col_payout": ["Payout", "Commission", "Actions", "Rate", "Comision",
+                   "Comisia editorului", "Comision editor"],
+    "col_status": ["Contract Status", "Status", "Relationship Status", "Stare",
+                   "Statut", "Stare relatie", "Stare relație"],
+}
+
+
+def _valoare(row: dict, cfg: dict, camp: str) -> str:
+    """Citeste un camp incercand, in ordine: coloana din preset, apoi aliasurile,
+    apoi o potrivire partiala case-insensitive pe titlurile reale din fisier."""
+    principal = cfg.get(camp)
+    if principal and principal in row:
+        return (row.get(principal) or "").strip()
+    for alt in ALIAS_COLOANE.get(camp, []):
+        if alt in row:
+            return (row.get(alt) or "").strip()
+    tinte = [t.lower() for t in ([principal] if principal else []) + ALIAS_COLOANE.get(camp, [])]
+    for cheie in row:
+        k = (cheie or "").strip().lower()
+        if any(t and (t in k or k in t) for t in tinte):
+            return (row.get(cheie) or "").strip()
+    return ""
+
+
 def build_merchant(row, cfg, existing):
-    url = (row.get(cfg["col_url"]) or "").strip()
-    name = (row.get(cfg["col_name"]) or "").strip()
-    category = (row.get(cfg["col_category"]) or "").strip()
-    link = (row.get(cfg["col_link"]) or "").strip()
-    payout = (row.get(cfg["col_payout"]) or "").strip()
+    url = _valoare(row, cfg, "col_url")
+    name = _valoare(row, cfg, "col_name")
+    category = _valoare(row, cfg, "col_category")
+    link = _valoare(row, cfg, "col_link")
+    payout = _valoare(row, cfg, "col_payout")
 
     if not link or not url:
         return None
@@ -310,12 +350,20 @@ def main():
         rows = list(csv.DictReader(f))
 
     # Filtreaza pe status activ daca exista coloana
-    status_col = cfg.get("col_status")
-    if status_col and rows and status_col in rows[0]:
-        active = [r for r in rows if (r.get(status_col) or "").strip().lower() == cfg["status_active"].lower()]
+    if rows:
+        active = [r for r in rows
+                  if not _valoare(r, cfg, "col_status")
+                  or _valoare(r, cfg, "col_status").lower() == cfg["status_active"].lower()]
     else:
         active = rows
     print(f"Randuri: {len(rows)} total, {len(active)} active")
+    if rows:
+        print(f"Coloane gasite in fisier: {', '.join(list(rows[0].keys())[:12])}")
+        lipsa = [c for c in ("col_url", "col_name", "col_link") if not _valoare(rows[0], cfg, c)]
+        if lipsa:
+            print(f"  ATENTIE: nu gasesc coloana pentru {lipsa}. "
+                  f"Probabil e exportul gresit (raport de performanta in loc de lista de programe)"
+                  f" — vezi docs/operational/GHID-EXPORT-RETELE.md")
 
     new_merchants = [m for m in (build_merchant(r, cfg, existing) for r in active) if m]
     print(f"Magazine noi: {len(new_merchants)}")
