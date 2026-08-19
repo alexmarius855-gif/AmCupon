@@ -12,6 +12,56 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 19.08.2026 (uzina de continut social + 1 bug de acces gasit in audit — PUSHED):**
+- **`scripts/social_content_factory.py`** (nou) — UN modul in locul celor 7 fragmentate
+  (`generate_banner_auto`, `generate_niche_banners`, `generate_social_content`,
+  `generate_postari_simple`, `postari_zi`...). Produce zilnic: **10 postari** (story 1080x1920 +
+  feed 1080x1080, cu text pe FB/Instagram/TikTok), **digest single** 1080x1350 si **carusel de
+  10 slide-uri**, in `public/daily-content/<data>/` + manifest.
+- **DE CE prima versiune a dat numai magazine obscure** (feedback Alex, corect): sortam dupa
+  PROCENT, iar procentele mari le au magazinele necunoscute ("pana la 90%" la curteaveche.ro).
+  **Mai grav — filtrul CEREA un procent**, iar `emag.ro` ("Crazy Days"), `libris.ro` si
+  `fashiondays.ro` ("Best of EPIC") **n-au procent in text**, deci exact cele mai puternice
+  branduri erau excluse de propriul filtru.
+  - Fix: sortare implicita dupa **`scor_final`** (emag 70, vegis 68, libris 65, fashiondays 50);
+    filtrul cere doar o promotie cu titlu real.
+  - **Selectie manuala** (cerinta explicita): `--lista` arata catalogul celor **63 de magazine
+    eligibile** cu scor/oferta/cod, iar `--magazine emag.ro,libris.ro,...` genereaza DOAR pentru
+    alese, in ordinea data. Plus `--sort brand|procent`.
+- **Bannerele au acum LOGO real + poza REALA de produs.** 60 din 63 de magazine au `logo_url`;
+  logo-ul sta pe cutie ALBA (regula de brand — PNG-urile sunt facute pentru fundal alb).
+  - **Capcana din date**: `enrich_products_from_promos.py` injecteaza PROMOTIILE in `products.json`
+    ca produse, cu **pret 0 si imaginea = logo-ul magazinului**. Filtrate pe `price > 0` +
+    imagine care nu e din `advertiser-logos/` — altfel banner-ul afisa logo-ul de doua ori si un
+    pret inexistent. Produse reale au doar **11 magazine** din 63 (libris 1.200, vidaxl 1.201).
+  - **Trei bug-uri de layout gasite PRIVIND imaginile generate, nu presupunand**: logo-ul acoperea
+    wordmark-ul; pastila "EXPIRA" se suprapunea peste "Verificat"; poza taiata in banda distrugea
+    coperta. Layout-ul **masoara acum inaltimea continutului inainte de desen**, iar poza e
+    "contain" intr-o miniatura, nu crop.
+- **Onestitate, prin constructie**: doar magazine cu link de comision REAL (158 din 1.161 n-au);
+  **"PANA LA 90%" cand asa scrie sursa**, nu "-90%" (diferenta pare mica pe un banner si exact
+  asa se arde increderea); "expira" doar cand `zile_ramase > 0`; comisionul nu apare nicaieri.
+- **Cost de repo, masurat si limitat**: 31 de imagini/zi. Paleta de **128 de culori** (verificat
+  vizual ca nu apare banding pe halou) a taiat **2,4 MB -> 1,4 MB/zi**, iar retentia pastreaza
+  doar **ultimele 3 zile**. Fara asta, repo-ul — care TREBUIE sa ramana public pentru Actions
+  gratuite — ar fi crescut cu ~875 MB/an in istoric, permanent.
+- **`/admin/social-content`** (nou) — previzualizare + **download 1-click** pentru fiecare
+  material, cu comutator FB/Instagram/TikTok pe textul postarii. Livrare si pe **Telegram**
+  (`sendMediaGroup`, transe de 10), cu skip elegant daca tokenul lipseste.
+- **BUG REAL gasit in audit**: `app/admin/social/page.tsx` compara cookie-ul de sesiune (hash
+  SHA-256) **direct cu `ADMIN_PASSWORD` in clar** — deci pagina era inaccesibila cu ORICE parola.
+  **Exact bug-ul reparat pe 06.08 in `app/admin/page.tsx`**, supravietuit aici necontrolat.
+  Trece acum prin `checkAuth()`. **Regula: autentificarea de admin trece MEREU prin `checkAuth()`.**
+- **Ce NU a trebuit construit din brief** (verificat, nu presupus): `/go/[magazin]`, SearchModal
+  Cmd+K, `/api/vote` cu rate-limiting, zero-dead-ends si schema Offer+HowTo+FAQ **existau deja**
+  (construite 16-17.08). `AggregateRating` e deja legat de recenzii reale. "Comision X%" fusese
+  deja eliminat din newsletter pe 08.08 — ce a ramas e **mentiunea legala obligatorie** de
+  afiliere, care TREBUIE sa ramana.
+- **Nota despre chei**: `.env.local` contine DOAR `ADMIN_PASSWORD`. Supabase/Brevo/Anthropic/
+  Telegram sunt in **GitHub Secrets** (24), iar Supabase URL+anon in `lib/supabase.ts`.
+  `SUPABASE_SERVICE_ROLE_KEY` nu exista nicaieri — si nici nu trebuie intr-un frontend; protectia
+  reala e RLS + functiile `SECURITY DEFINER`.
+
 **UPDATE 17.08.2026 (5 module CRO + ruta `/go` — PUSHED, 6 commits):**
 - **Cautare globala cu Cmd+K** (`app/components/SearchModal.tsx`, nou). O SINGURA implementare:
   cautarea inline din `Navbar.tsx` a fost **stearsa complet** (stari, efecte, dropdown, `MagazinMini`),
