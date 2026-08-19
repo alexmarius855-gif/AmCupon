@@ -59,10 +59,6 @@ function lunaRo(): string {
 
 // ─── Descrieri custom pentru magazinele cele mai căutate ──────────────────────
 const DESCRIERI_CUSTOM: Record<string, string> = {
-  "emag.ro":
-    "Cele mai noi coduri de reducere eMAG verificate zilnic. Voucher eMAG activ pentru electronice, electrocasnice, fashion și mii de alte produse. Economisește cu AmCupon.ro.",
-  "fashiondays.ro":
-    "Cod reducere FashionDays verificat — reduceri la fashion, încălțăminte și accesorii premium. Voucher FashionDays actualizat zilnic pe AmCupon.ro.",
   "notino.ro":
     "Cod reducere Notino pentru parfumuri, cosmetice și produse de îngrijire. Voucher Notino verificat și actualizat zilnic. Cele mai bune oferte beauty pe AmCupon.ro.",
   "answear.ro":
@@ -73,8 +69,6 @@ const DESCRIERI_CUSTOM: Record<string, string> = {
     "Cod reducere Dr. Max pentru medicamente OTC, suplimente și produse farmaceutice. Voucher Dr. Max activ pe AmCupon.ro.",
   "elefant.ro":
     "Cod reducere Elefant pentru cărți, electronice și jocuri. Voucher Elefant verificat zilnic pe AmCupon.ro.",
-  "libris.ro":
-    "Cod reducere Libris pentru cărți, manuale și audiobook-uri. Voucher Libris verificat pe AmCupon.ro — cele mai bune prețuri la cărți.",
   "sportisimo.ro":
     "Cod reducere Sportisimo pentru echipamente sportive, îmbrăcăminte și încălțăminte sport. Voucher Sportisimo verificat pe AmCupon.ro.",
   "altex.ro":
@@ -87,8 +81,6 @@ const DESCRIERI_CUSTOM: Record<string, string> = {
     "Cod reducere Zara pentru fashion și accesorii. Voucher Zara verificat pe AmCupon.ro — colecțiile noi la prețuri reduse.",
   "hm.com":
     "Cod reducere H&M pentru haine, accesorii și cosmetice. Voucher H&M verificat zilnic pe AmCupon.ro.",
-  "vegis.ro":
-    "Cod reducere Vegis pentru produse bio, suplimente naturale și alimente sănătoase. Voucher Vegis verificat pe AmCupon.ro.",
   "temu.com":
     "Cod reducere Temu verificat pentru mii de produse la prețuri mici. Voucher Temu activ pe AmCupon.ro — economii garantate.",
   "aliexpress.com":
@@ -416,7 +408,7 @@ export default async function PaginaMagazin({
   const reviewSummary = loadReviewsSummary(cleanSlug);
 
   // Magazine similare din aceeasi categorie (max 8, prioritate la cele cu promotii)
-  const RETELE_AFILIERE = ["profitshare.ro", "2performant.com"];
+  const RETELE_AFILIERE = ["2performant.com"];
   const similare: MagazinSimilar[] = magazine
     .filter((x) =>
       x.magazin !== slug &&

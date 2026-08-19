@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: { title: "Laptop Ieftin Romania 2026 | AmCupon.ro", url: "https://amcupon.ro/laptop", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
-const TOP_LAPTOP = ["emag.ro","altex.ro","pcgarage.ro","flanco.ro","evomag.ro","cel.ro","quickmobile.ro"];
+const TOP_LAPTOP = ["altex.ro","pcgarage.ro","flanco.ro","evomag.ro","cel.ro","quickmobile.ro"];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_LAPTOP = ["electronice"];
 
@@ -131,7 +131,7 @@ export default function LaptopPage() {
 
 
         <NisaProduse
-          merchantSlugs={["emag.ro","altex.ro","pcgarage.ro","flanco.ro","evomag.ro","cel.ro"]}
+          merchantSlugs={["altex.ro","pcgarage.ro","flanco.ro","evomag.ro","cel.ro"]}
           catSlug="electronice"
           titlu="Laptopuri populare cu reducere"
           culoareAccent="blue"

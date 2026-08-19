@@ -62,19 +62,6 @@ jobs:
           fi
 
       # ── 4. Profitshare (optional) ─────────────────────────────────────────
-      - name: Proceseaza date Profitshare
-        working-directory: scripts
-        env:
-          PROFITSHARE_USER: ${{ secrets.PROFITSHARE_USER }}
-          PROFITSHARE_KEY:  ${{ secrets.PROFITSHARE_KEY }}
-        run: |
-          if [ -n "$PROFITSHARE_USER" ]; then
-            echo "Ruleaza Profitshare..."
-            python process_profitshare.py
-          else
-            echo "PROFITSHARE_USER nu e setat — skip Profitshare"
-          fi
-
       # ── 4b. TradeTracker (optional) ───────────────────────────────────────
       - name: Fetch date TradeTracker Romania
         working-directory: scripts
@@ -372,6 +359,14 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python generate_daily_digest.py
 
+      # ── 11.5x Curata retelele excluse (Profitshare — cont respins 19.08.2026) ──
+      # merge_platforms.py are deja garda pe magazine; pasul asta prinde si
+      # produsele + fisierele derivate, scrise de alte scripturi.
+      - name: Curata retelele excluse din date
+        continue-on-error: true
+        working-directory: scripts
+        run: python curata_retele_excluse.py
+
       # ── 11.55 Uzina de continut social — pachetul zilnic ─────────────────
       # 10 postari (story + feed) + digest single + carusel 10 slide-uri, in
       # frontend/public/daily-content/<data>/. Trimite si pe Telegram daca tokenul
@@ -471,7 +466,6 @@ jobs:
           git add frontend/public/top-produse.json     || true
           git add data/output.json                     || true
           git add data/price_alert_snapshot.json       || true
-          git add data/profitshare_output.json         || true
           git add data/banners_raw_debug.json          || true
           git add data/social-content.json             || true
           git add data/social-content-today.txt        || true

@@ -15,7 +15,6 @@
 
 export const HOSTURI_AFILIERE = [
   "event.2performant.com",
-  "l.profitshare.ro",
   "pxf.io",
   "sjv.io",
   "impactradius",
@@ -27,7 +26,6 @@ export const HOSTURI_AFILIERE = [
 
 export const PARAM_SUBID: [RegExp, string][] = [
   [/event\.2performant\.com/i, "st"],
-  [/l\.profitshare\.ro/i, "sub_id"],
   [/pxf\.io|sjv\.io|impactradius|impact\.com/i, "subId1"],
   [/awin1\.com/i, "clickref"],
   [/anrdoezrs\.net|prf\.hn/i, "sid"],

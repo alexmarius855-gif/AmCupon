@@ -23,8 +23,8 @@ export const metadata: Metadata = {
 };
 
 const TOP_CADOURI = [
-  "noriel.ro","fashiondays.ro","notino.ro","elefant.ro",
-  "libris.ro","emag.ro","floria.ro","answear.ro","zchocolat.com",
+  "noriel.ro","notino.ro","elefant.ro",
+  "floria.ro","answear.ro","zchocolat.com",
 ];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_CADOURI = ["cadouri-flori"];
@@ -156,7 +156,7 @@ export default function IdeiCadouriPage() {
 
 
         <NisaProduse
-          merchantSlugs={["noriel.ro","fashiondays.ro","notino.ro","elefant.ro","libris.ro","emag.ro","floria.ro"]}
+          merchantSlugs={["noriel.ro","notino.ro","elefant.ro","floria.ro"]}
           catSlug="bijuterii"
           titlu="Idei cadouri populare cu reducere"
           culoareAccent="indigo"

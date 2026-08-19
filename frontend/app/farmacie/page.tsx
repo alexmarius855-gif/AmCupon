@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: { title: "Farmacie Online cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/farmacie", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
-const TOP_PHARMA = ["drmax.ro","vegis.ro","catena.ro","helpnet.ro","farmaciatei.ro","farmacia.ro"];
+const TOP_PHARMA = ["drmax.ro","catena.ro","helpnet.ro","farmaciatei.ro","farmacia.ro"];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_PHARMA = ["sanatate"];
 const AVANTAJE = [
@@ -106,7 +106,7 @@ export default function FarmaciePage() {
 
 
         <NisaProduse
-          merchantSlugs={["drmax.ro","vegis.ro","catena.ro","helpnet.ro","farmaciatei.ro","farmacia.ro"]}
+          merchantSlugs={["drmax.ro","catena.ro","helpnet.ro","farmaciatei.ro","farmacia.ro"]}
           catSlug="farmacie"
           titlu="Produse populare — Farmacie Online cu reducere"
           culoareAccent="indigo"

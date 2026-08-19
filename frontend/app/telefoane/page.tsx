@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: { title: "Telefon Ieftin Romania 2026 | AmCupon.ro", url: "https://amcupon.ro/telefoane", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
-const TOP_TEL = ["emag.ro","altex.ro","flanco.ro","evomag.ro","cel.ro","orange.ro","vodafone.ro","quickmobile.ro"];
+const TOP_TEL = ["altex.ro","flanco.ro","evomag.ro","cel.ro","orange.ro","vodafone.ro","quickmobile.ro"];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_TEL = ["electronice"];
 
@@ -131,7 +131,7 @@ export default function TelefoaneePage() {
 
 
         <NisaProduse
-          merchantSlugs={["emag.ro","altex.ro","flanco.ro","evomag.ro","cel.ro","orange.ro","quickmobile.ro"]}
+          merchantSlugs={["altex.ro","flanco.ro","evomag.ro","cel.ro","orange.ro","quickmobile.ro"]}
           catSlug="electronice"
           titlu="Telefoane populare cu reducere"
           culoareAccent="teal"

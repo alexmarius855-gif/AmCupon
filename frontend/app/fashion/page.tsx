@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: { title: "Fashion & Haine cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/fashion", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
-const TOP_FASHION = ["fashiondays.ro","answear.ro","hm.com","reserved.com","about-you.ro","lc-waikiki.ro","zara.com","peek-cloppenburg.ro"];
+const TOP_FASHION = ["answear.ro","hm.com","reserved.com","about-you.ro","lc-waikiki.ro","zara.com","peek-cloppenburg.ro"];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_FASHION = ["fashion"];
 const AVANTAJE = [
@@ -103,7 +103,7 @@ export default function FashionPage() {
 
 
         <NisaProduse
-          merchantSlugs={["fashiondays.ro","answear.ro","hm.com","reserved.com","about-you.ro","lc-waikiki.ro"]}
+          merchantSlugs={["answear.ro","hm.com","reserved.com","about-you.ro","lc-waikiki.ro"]}
           catSlug="fashion"
           titlu="Haine & accesorii populare cu reducere"
           culoareAccent="indigo"

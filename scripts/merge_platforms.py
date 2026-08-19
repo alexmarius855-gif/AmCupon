@@ -19,9 +19,12 @@ from urllib.parse import urlparse
 # si output) nu-l mai ia in calcul dupa prima rulare. Gasit + reparat 06.08.2026.
 _REAL_TRACKING_RE = re.compile(
     r"pxf\.io|sjv\.io|impactradius|impact\.com|7401119|irclickid|prf\.hn|anrdoezrs\.net|"
-    r"2performant\.com|profitshare\.ro|awin1\.com|cread\.php",
+    r"2performant\.com|awin1\.com|cread\.php",
     re.I,
 )
+# `profitshare.ro` a fost SCOS din lista de mai sus pe 19.08.2026 — contul a fost
+# respins, deci un link Profitshare nu mai e "tracking real", e trafic dat gratis.
+from retele_excluse import este_magazin_exclus  # noqa: E402
 
 
 def _has_real_tracking(m: dict) -> bool:
@@ -29,7 +32,7 @@ def _has_real_tracking(m: dict) -> bool:
 
 FILES = [
     "../data/output.json",              # 2Performant
-    "../data/profitshare_output.json",  # Profitshare
+    # "../data/profitshare_output.json",  # Profitshare — EXCLUS 19.08.2026 (cont respins)
     "../data/tradetracker_output.json", # TradeTracker
     "../data/extra_merchants.json",     # Magazine adaugate manual (studioszel, sevensins, depox etc.)
 ]
@@ -118,9 +121,16 @@ def main():
         adaugate = 0
         duplicate = 0
         invalide = 0
+        excluse = 0
         for magazin in data:
             raw = (magazin.get("magazin", "") or "").strip()
             if not raw:
+                continue
+            # Garda permanenta pentru retelele excluse. Trebuie sa fie AICI, in
+            # bucla de merge: `data/output.json` e si intrare si iesire, deci o
+            # curatare facuta o singura data ar fi anulata de urmatoarea rulare.
+            if este_magazin_exclus(magazin):
+                excluse += 1
                 continue
             url_val = (magazin.get("url") or "").strip()
             if url_val and any(c.isspace() for c in url_val):
@@ -166,7 +176,7 @@ def main():
                     by_slug[slug] = magazin
 
         print(f"  {os.path.basename(fpath)}: +{adaugate} magazine "
-              f"({duplicate} duplicate, {invalide} invalide sarite)")
+              f"({duplicate} duplicate, {invalide} invalide, {excluse} retea exclusa)")
 
     merged: list[dict] = list(by_slug.values())
 

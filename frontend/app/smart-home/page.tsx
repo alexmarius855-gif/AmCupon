@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: { title: "Smart Home Romania 2026 | AmCupon.ro", url: "https://amcupon.ro/smart-home", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
-const TOP_SMART = ["emag.ro","altex.ro","dedeman.ro","flanco.ro","evomag.ro","cel.ro"];
+const TOP_SMART = ["altex.ro","dedeman.ro","flanco.ro","evomag.ro","cel.ro"];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_SMART = ["electronice", "casa-gradina"];
 
@@ -127,7 +127,7 @@ export default function SmartHomePage() {
 
 
         <NisaProduse
-          merchantSlugs={["emag.ro","altex.ro","dedeman.ro","flanco.ro","evomag.ro"]}
+          merchantSlugs={["altex.ro","dedeman.ro","flanco.ro","evomag.ro"]}
           catSlug="electronice"
           titlu="Produse smart home populare cu reducere"
           culoareAccent="indigo"

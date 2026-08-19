@@ -60,8 +60,8 @@ const CAT_CRACIUN = [
 
 // Magazine de top pentru Crăciun
 const TOP_CRACIUN = [
-  "noriel.ro", "fashiondays.ro", "notino.ro", "emag.ro",
-  "elefant.ro", "libris.ro", "sportisimo.ro", "answear.ro",
+  "noriel.ro", "notino.ro",
+  "elefant.ro", "sportisimo.ro", "answear.ro",
 ];
 
 const IDEI_CADOURI = [

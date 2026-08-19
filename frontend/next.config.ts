@@ -38,6 +38,29 @@ const nextConfig: NextConfig = {
       { source: "/calculator-tva",      destination: "/servicii", permanent: true },
       { source: "/calculator-procente", destination: "/servicii", permanent: true },
       { source: "/generator-proforma",  destination: "/servicii", permanent: true },
+
+      // ── Profitshare EXCLUS 19.08.2026 (cont respins) ──────────────────
+      // Cele 60 de magazine au disparut din date. Astea sunt paginile care
+      // ERAU in sitemap, deci indexate: fara 301 ar fi devenit 404-uri, adica
+      // exact semnalul de calitate slaba pe care l-am reparat in august.
+      // Destinatia e categoria reala a fiecaruia, nu homepage-ul.
+      { source: "/cod-reducere/daedalusonline.eu", destination: "/categorii/casa-gradina", permanent: true },
+      { source: "/cod-reducere/emag.ro", destination: "/categorii/marketplace", permanent: true },
+      { source: "/cod-reducere/evrik.ro", destination: "/categorii/casa-gradina", permanent: true },
+      { source: "/cod-reducere/exclusive-home.ro", destination: "/categorii/casa-gradina", permanent: true },
+      { source: "/cod-reducere/fashiondays.ro", destination: "/categorii/fashion", permanent: true },
+      { source: "/cod-reducere/giftspot.ro", destination: "/categorii/cadouri-flori", permanent: true },
+      { source: "/cod-reducere/itgalaxy.ro", destination: "/categorii/electronice", permanent: true },
+      { source: "/cod-reducere/libris.ro", destination: "/categorii/carti-educatie", permanent: true },
+      { source: "/cod-reducere/mathaus.ro", destination: "/categorii/casa-gradina", permanent: true },
+      { source: "/cod-reducere/pcmadd.com", destination: "/categorii/electronice", permanent: true },
+      { source: "/cod-reducere/pint.ro", destination: "/categorii/auto-moto", permanent: true },
+      { source: "/cod-reducere/vapetronic.ro", destination: "/categorii/marketplace", permanent: true },
+      { source: "/cod-reducere/vegis.ro", destination: "/categorii/marketplace", permanent: true },
+      { source: "/emag", destination: "/categorii/marketplace", permanent: true },
+      { source: "/fashiondays", destination: "/fashion", permanent: true },
+      { source: "/libris", destination: "/carti", permanent: true },
+      { source: "/vegis", destination: "/sanatate", permanent: true },
     ];
   },
 

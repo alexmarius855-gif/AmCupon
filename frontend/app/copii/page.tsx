@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: { title: "Reduceri Copii & Jucării 2026 | AmCupon.ro", url: "https://amcupon.ro/copii", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
-const TOP_COPII = ["noriel.ro","emag.ro","smythstoys.com","bebetei.ro","bebe-tei.ro","mothercare.ro","chicco.ro"];
+const TOP_COPII = ["noriel.ro","smythstoys.com","bebetei.ro","bebe-tei.ro","mothercare.ro","chicco.ro"];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_COPII = ["copii"];
 const GRUPE_VARSTA = [
@@ -106,7 +106,7 @@ export default function CopiiPage() {
 
 
         <NisaProduse
-          merchantSlugs={["noriel.ro","emag.ro","smythstoys.com","bebetei.ro","bebe-tei.ro","chicco.ro"]}
+          merchantSlugs={["noriel.ro","smythstoys.com","bebetei.ro","bebe-tei.ro","chicco.ro"]}
           catSlug="copii"
           titlu="Jucarii si produse copii cu reducere"
           culoareAccent="indigo"

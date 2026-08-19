@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: { title: "Antivirus Ieftin Romania 2026 | AmCupon.ro", url: "https://amcupon.ro/antivirus", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
-const TOP_ANTIVIRUS = ["bitdefender.com","norton.com","eset.com","kaspersky.com","malwarebytes.com","emag.ro","altex.ro"];
+const TOP_ANTIVIRUS = ["bitdefender.com","norton.com","eset.com","kaspersky.com","malwarebytes.com","altex.ro"];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_AV = ["software"];
 
@@ -170,7 +170,7 @@ export default function AntivirusPage() {
 
 
         <NisaProduse
-          merchantSlugs={["bitdefender.com","norton.com","eset.com","emag.ro","altex.ro","pcgarage.ro"]}
+          merchantSlugs={["bitdefender.com","norton.com","eset.com","altex.ro","pcgarage.ro"]}
           catSlug="electronice"
           titlu="Licente antivirus cu reducere"
           culoareAccent="red"

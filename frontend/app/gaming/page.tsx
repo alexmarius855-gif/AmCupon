@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: { title: "Reduceri Gaming 2026 | AmCupon.ro", url: "https://amcupon.ro/gaming", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
-const TOP_GAMING = ["pcgarage.ro","emag.ro","altex.ro","evomag.ro","flanco.ro","cel.ro","quickmobile.ro"];
+const TOP_GAMING = ["pcgarage.ro","altex.ro","evomag.ro","flanco.ro","cel.ro","quickmobile.ro"];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_GAMING = ["electronice"];
 const CATEGORII_GAMING = [
@@ -128,7 +128,7 @@ export default function GamingPage() {
 
 
         <NisaProduse
-          merchantSlugs={["pcgarage.ro","emag.ro","altex.ro","evomag.ro","flanco.ro","cel.ro"]}
+          merchantSlugs={["pcgarage.ro","altex.ro","evomag.ro","flanco.ro","cel.ro"]}
           catSlug="electronice"
           titlu="Produse gaming populare cu reducere"
           culoareAccent="indigo"

@@ -6,20 +6,20 @@ import CategorieClient from "./CategorieClient";
 import NisaProduse from "../../components/NisaProduse";
 
 const CATEG_MERCHANTS: Record<string, string[]> = {
-  "fashion":            ["fashiondays.ro","answear.ro","hm.com","reserved.com","about-you.ro","lc-waikiki.ro","zara.com"],
+  "fashion":            ["answear.ro","hm.com","reserved.com","about-you.ro","lc-waikiki.ro","zara.com"],
   "home-garden":        ["dedeman.ro","ikea.com","leroy-merlin.ro","mobexpert.ro","jysk.ro","hornbach.ro"],
-  "electronics-itc":   ["emag.ro","altex.ro","pcgarage.ro","flanco.ro","cel.ro","evomag.ro"],
+  "electronics-itc":   ["altex.ro","pcgarage.ro","flanco.ro","cel.ro","evomag.ro"],
   "beauty":             ["notino.ro","douglas.ro","sephora.ro","makeup.ro","beautik.ro"],
-  "pharma":             ["drmax.ro","vegis.ro","catena.ro","helpnet.ro","farmaciatei.ro"],
-  "babies-kids-toys":  ["noriel.ro","emag.ro","smythstoys.com","bebetei.ro","chicco.ro"],
+  "pharma":             ["drmax.ro","catena.ro","helpnet.ro","farmaciatei.ro"],
+  "babies-kids-toys":  ["noriel.ro","smythstoys.com","bebetei.ro","chicco.ro"],
   "sports-outdoors":   ["decathlon.ro","sportisimo.ro","sport-vision.ro","intersport.ro","hervis.ro"],
-  "books":              ["libris.ro","elefant.ro","carturesti.ro","librarie.net","bookhub.ro"],
-  "gifts-flowers":     ["floria.ro","noriel.ro","elefant.ro","fashiondays.ro","notino.ro"],
+  "books":              ["elefant.ro","carturesti.ro","librarie.net","bookhub.ro"],
+  "gifts-flowers":     ["floria.ro","noriel.ro","elefant.ro","notino.ro"],
   "automotive":         ["autonom.ro","autodoc.ro","kfzteile24.ro"],
-  "health-personal-care": ["drmax.ro","vegis.ro","catena.ro"],
+  "health-personal-care": ["drmax.ro","catena.ro"],
   "pet-supplies":       ["zooplus.ro","animax.ro","petshop.ro"],
   "jewelry":            ["bijuteria.ro","teilor.ro"],
-  "games":              ["pcgarage.ro","emag.ro"],
+  "games":              ["pcgarage.ro"],
 };
 
 const CATEG_CULORI: Record<string, string> = {

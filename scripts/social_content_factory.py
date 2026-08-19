@@ -83,7 +83,7 @@ ZILE_RO = ["Luni", "Marti", "Miercuri", "Joi", "Vineri", "Sambata", "Duminica"]
 
 # Regex de tracking — ACELASI ca in merge_platforms.py si /admin Affiliate Audit.
 RE_TRACKING = re.compile(
-    r"2performant|profitshare|pxf\.io|sjv\.io|impactradius|impact\.com|awin1|anrdoezrs|prf\.hn",
+    r"2performant|pxf\.io|sjv\.io|impactradius|impact\.com|awin1|anrdoezrs|prf\.hn",
     re.I,
 )
 RE_PROCENT = re.compile(r"(\d{1,2})\s*%")

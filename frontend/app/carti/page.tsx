@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: { title: "Cărți Online cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/carti", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
-const TOP_BOOKS = ["libris.ro","elefant.ro","carturesti.ro","librarie.net","bookhub.ro"];
+const TOP_BOOKS = ["elefant.ro","carturesti.ro","librarie.net","bookhub.ro"];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_BOOKS = ["carti-educatie"];
 const AVANTAJE = [
@@ -103,7 +103,7 @@ export default function CartiPage() {
 
 
         <NisaProduse
-          merchantSlugs={["libris.ro","elefant.ro","carturesti.ro","librarie.net","bookhub.ro"]}
+          merchantSlugs={["elefant.ro","carturesti.ro","librarie.net","bookhub.ro"]}
           catSlug="carti"
           titlu="Cărți populare cu reducere"
           culoareAccent="indigo"

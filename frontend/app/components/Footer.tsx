@@ -11,8 +11,6 @@ import Link from "next/link";
 // footerul e global. Gasit 08.08.2026. Paginile /altex, /flanco, /elefant exista
 // si au continut complet, doar linkul folosea tiparul gresit.
 const MAGAZINE_POPULARE = [
-  { slug: "emag.ro",         label: "eMAG" },
-  { slug: "fashiondays.ro",  label: "FashionDays" },
   { slug: "notino.ro",       label: "Notino" },
   { slug: "altex.ro",        label: "Altex",    href: "/altex" },
   { slug: "flanco.ro",       label: "Flanco",   href: "/flanco" },
@@ -20,7 +18,6 @@ const MAGAZINE_POPULARE = [
   { slug: "drmax.ro",        label: "Dr. Max" },
   { slug: "noriel.ro",       label: "Noriel" },
   { slug: "elefant.ro",      label: "Elefant",  href: "/elefant" },
-  { slug: "libris.ro",       label: "Libris" },
   { slug: "carturesti.ro",   label: "Carturesti" },
   { slug: "answear.ro",      label: "Answear" },
   { slug: "temu.com",        label: "Temu" },
@@ -28,7 +25,6 @@ const MAGAZINE_POPULARE = [
   { slug: "vidaxl.ro",       label: "vidaXL" },
   { slug: "sportdepot.ro",   label: "Sport Depot" },
   { slug: "bookzone.ro",     label: "BookZone" },
-  { slug: "vegis.ro",        label: "Vegis" },
   { slug: "trendyol.com",    label: "Trendyol" },
   { slug: "petmart.ro",      label: "Petmart" },
 ];

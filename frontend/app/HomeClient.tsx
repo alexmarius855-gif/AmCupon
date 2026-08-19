@@ -488,12 +488,9 @@ export default function HomeClient({
           <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
             <span className="text-xs text-[#9399a0] font-medium mr-1">Populare:</span>
             {[
-              { nume: "eMAG",        slug: "emag.ro" },
               { nume: "Notino",      slug: "notino.ro" },
-              { nume: "FashionDays", slug: "fashiondays.ro" },
               { nume: "Dr.Max",      slug: "drmax.ro" },
               { nume: "Noriel",      slug: "noriel.ro" },
-              { nume: "Libris",      slug: "libris.ro" },
             ].map(c => (
               <Link key={c.slug} href={`/cod-reducere/${c.slug}`}
                 className="glass hover:border-[#ddf93c]/60 hover:text-[#ecff7a] text-[#c9ced5] text-xs font-semibold px-3.5 py-1.5 rounded-full transition-all hover:-translate-y-0.5">
@@ -1423,9 +1420,7 @@ export default function HomeClient({
               <ul className="space-y-2.5 text-sm">
                 {[
                   { href: "/cod-reducere/answear.ro",      label: "Cod Answear" },
-                  { href: "/cod-reducere/fashiondays.ro",  label: "Cod Fashion Days" },
                   { href: "/cod-reducere/notino.ro",       label: "Cod Notino" },
-                  { href: "/cod-reducere/emag.ro",         label: "Cod eMAG" },
                   { href: "/cod-reducere/farmec.ro",       label: "Cod Farmec" },
                   { href: "/cod-reducere/noriel.ro",       label: "Cod Noriel" },
                   // /elefant, nu /cod-reducere/elefant.ro — Elefant nu e in output.json
