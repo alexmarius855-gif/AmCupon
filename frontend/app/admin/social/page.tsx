@@ -1,7 +1,7 @@
-﻿import { cookies } from "next/headers";
-import { redirect } from "next/navigation";
+﻿import { redirect } from "next/navigation";
 import fs from "fs";
 import path from "path";
+import { checkAuth } from "../../../lib/adminAuth";
 import SocialStudio, { type SocialItem } from "./SocialStudio";
 
 export const metadata = {
@@ -33,9 +33,13 @@ function loadSocialItems(): SocialItem[] {
 }
 
 export default async function AdminSocialPage() {
-  const cookieStore = await cookies();
-  const session = cookieStore.get("mc_session")?.value;
-  const isAuth = ADMIN_PASSWORD && session === ADMIN_PASSWORD;
+  // BUG REPARAT 19.08.2026: aici se compara cookie-ul de sesiune DIRECT cu
+  // `ADMIN_PASSWORD` in clar. Dar `login/route.ts` stocheaza un HASH derivat
+  // (`deriveSessionToken()`), deci comparatia nu se putea potrivi NICIODATA —
+  // pagina era inaccesibila cu orice parola. Exact acelasi bug a fost reparat
+  // pe 06.08 in `app/admin/page.tsx`; supravietuise aici, necontrolat.
+  // Regula: autentificarea de admin trece MEREU prin `checkAuth()`.
+  const isAuth = await checkAuth();
 
   if (!ADMIN_PASSWORD) {
     return (

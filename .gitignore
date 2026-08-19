@@ -38,3 +38,6 @@ data/video-today/
 .DS_Store
 Thumbs.db
 *-ORIGINAL-BACKUP.png
+
+# Cache local pentru logo-uri/poze de produs (uzina de continut social)
+data/.cache-imagini/

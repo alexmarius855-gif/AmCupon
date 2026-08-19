@@ -372,6 +372,20 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python generate_daily_digest.py
 
+      # ── 11.55 Uzina de continut social — pachetul zilnic ─────────────────
+      # 10 postari (story + feed) + digest single + carusel 10 slide-uri, in
+      # frontend/public/daily-content/<data>/. Trimite si pe Telegram daca tokenul
+      # exista. Pastreaza doar ultimele 3 zile — altfel repo-ul (PUBLIC, ca sa aiba
+      # Actions gratuite) ar creste cu ~1,4 MB in fiecare zi, permanent.
+      - name: Uzina de continut social (10 postari + digest + carusel)
+        if: env.IS_FULL_DAILY == 'true'
+        continue-on-error: true
+        working-directory: scripts
+        env:
+          TELEGRAM_BOT_TOKEN:  ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+        run: python social_content_factory.py
+
       # ── 11.6 Flux video AI zilnic — TikTok / Reels / Shorts ──────────────
       # digest-today.json -> script vocal -> edge-tts (voce RO + subtitrari) ->
       # ffmpeg (MP4 vertical 1080x1920 pe brand). 100% gratuit, fara API key platit.
@@ -462,6 +476,7 @@ jobs:
           git add data/social-content.json             || true
           git add data/social-content-today.txt        || true
           git add "data/social-nisa-*.txt"             || true
+          git add frontend/public/daily-content        || true
           git add frontend/public/video-today.mp4      || true
           git add frontend/public/video-captions.txt   || true
           git add frontend/public/video-script.txt     || true
