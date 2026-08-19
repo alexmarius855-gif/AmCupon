@@ -216,14 +216,14 @@
     "comision": "Variabil",
     "rank": null,
     "scor_afiliere": 55,
-    "scor_final": 55,
+    "scor_final": 50.0,
     "prioritate": "standard",
     "canal_recomandat": "Content, Coupon",
     "sales_number": 0,
     "trend": 0,
     "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 20,
+    "cod_cupon": true,
+    "zile_ramase": 10,
     "promotii": [
       {
         "nume": "Fera.ro - 5% reducere la prima comanda hrana Hills",
@@ -231,9 +231,45 @@
         "cod_cupon": "",
         "landing_page": "https://www.fera.ro",
         "zile_ramase": 20
+      },
+      {
+        "nume": "-20% la al doilea sac comandat",
+        "descriere": "La achiziția a doi saci mari identici, al doilea sac beneficiază de 20% reducere. Oferta este ideală pentru clienții care vor să cumpere mai avantajos hrana preferată a animalului lor de companie.",
+        "cod_cupon": "",
+        "landing_page": "https://fera.ro/oferta-speciala-al-doilea-sac-cu-20-reducere/",
+        "zile_ramase": 10,
+        "expira": "2026-08-30",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "-10% reducere la Hill's pentru câini",
+        "descriere": "Achiziționează 2 saci mari identici Hill’s Prescription Diet și beneficiezi de 10% reducere.",
+        "cod_cupon": "",
+        "landing_page": "https://fera.ro/promotie-hills-10-reducere-la-achizitionarea-a-2-saci-mari/",
+        "zile_ramase": 10,
+        "expira": "2026-08-30",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "5% discount prima comanda",
+        "descriere": "5% discount la prima comandă plasată pe site. Discount-ul se aplică per întreg coșul de cumpărături.",
+        "cod_cupon": "FERANEW",
+        "landing_page": "https://fera.ro/5-reducere.html",
+        "zile_ramase": 24,
+        "expira": "2026-09-13",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "HILL'S 9+3 conserve GRATIS",
+        "descriere": "Vara aceasta, hidratarea animalului tău de companie devine mai simplă și mai avantajoasă. Alege pachetele Hill’s Prescription Diet și Hill’s Science Plan și bucură-te de beneficiile promoției.\n\nOferta este valabilă în limita stocului disponibil, doar pentru produsele participante.",
+        "cod_cupon": "",
+        "landing_page": "https://fera.ro/promotie-hills-set-93-conserve-gratis/",
+        "zile_ramase": 10,
+        "expira": "2026-08-30",
+        "sursa": "csv_import"
       }
     ],
-    "folosit_de": 0,
+    "folosit_de": 241,
     "procent_succes": 80,
     "exclusiv": false,
     "platforma": "2performant",
@@ -249,7 +285,7 @@
     "comision": "Variabil",
     "rank": null,
     "scor_afiliere": 55,
-    "scor_final": 55,
+    "scor_final": 30.0,
     "prioritate": "standard",
     "canal_recomandat": "Content, Coupon",
     "sales_number": 0,
@@ -264,9 +300,27 @@
         "cod_cupon": "",
         "landing_page": "https://www.herbagetica.ro",
         "zile_ramase": 10
+      },
+      {
+        "nume": "Starea de bine cu Herbagetica vine! 3 vacanțe în Maldive + premii zilnice",
+        "descriere": "Ai cumpărat un produs Herbagetica? \n\nÎnscrie-te în campanie pe pagina herbagetica.ro/concurs și poți câștiga unul din cele 120 de vouchere Herbagetica în valoare de 210 lei (valabile pe site-ul herbagetica.ro) sau una din cele 3 vacanțe în Maldive! 🌴☀️\n\n🎁 Cum participi la campanie?\n\n1️⃣ Cumpără un produs Herbagetica:\nde pe herbagetica.ro, magazine online, plafare și farmacii.\n\n2️⃣ Înscrie-te în campanie:\nAccesează pagina campaniei și completează formularul cu:\n• numărul bonului fiscal sau număru",
+        "cod_cupon": "",
+        "landing_page": "https://herbagetica.ro/concurs",
+        "zile_ramase": 134,
+        "expira": "2026-12-31",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "🏷️ Până la 40% reducere! ☀️ Produsele verii la prețuri speciale!",
+        "descriere": "Profită de ultimele reduceri ale verii! ☀️\n\nÎn perioada 3–31 august, te așteaptă reduceri de până la 40% la unele dintre cele mai apreciate produse ale verii.\n\nIntră pe herbagetica.ro și profită de prețurile speciale.",
+        "cod_cupon": "",
+        "landing_page": "https://herbagetica.ro/promotii-sanatate.html",
+        "zile_ramase": 11,
+        "expira": "2026-08-31",
+        "sursa": "csv_import"
       }
     ],
-    "folosit_de": 0,
+    "folosit_de": 378,
     "procent_succes": 80,
     "exclusiv": false,
     "platforma": "2performant",
@@ -282,14 +336,14 @@
     "comision": "Variabil",
     "rank": null,
     "scor_afiliere": 55,
-    "scor_final": 55,
+    "scor_final": 50.0,
     "prioritate": "standard",
     "canal_recomandat": "Content, Coupon",
     "sales_number": 0,
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 14,
+    "zile_ramase": 11,
     "promotii": [
       {
         "nume": "MedimFarm - 18% reducere vara cu codul SUMMER18",
@@ -297,9 +351,18 @@
         "cod_cupon": "SUMMER18",
         "landing_page": "https://www.medimfarm.ro",
         "zile_ramase": 14
+      },
+      {
+        "nume": "🌞 Black Friday de Vara la Medimfarm.ro – reduceri de pana la 40% toata luna august",
+        "descriere": "In luna august, Medimfarm.ro desfasoara campania Black Friday de Vara, cu reduceri de pana la 40% la peste 2.500 de produse din cele mai cautate categorii.\n\nDetalii campanie:\n\n* 📅 Perioada: 1 – 31 august 2026\n* 🔥 Reducere: pana la 40%\n* ❌ Fara cod promotional – preturile reduse sunt aplicate direct pe site\n* 🛍️ Peste 2.500 de produse incluse in promotie\n\nCategorii participante:\n\n* Vitamine si suplimente\n* Dermatocosmetice\n* Produse pentru ingrijire personala\n\nProfitati de interesul crescut pentr",
+        "cod_cupon": "Fără cod",
+        "landing_page": "https://medimfarm.ro",
+        "zile_ramase": 11,
+        "expira": "2026-08-31",
+        "sursa": "csv_import"
       }
     ],
-    "folosit_de": 0,
+    "folosit_de": 772,
     "procent_succes": 80,
     "exclusiv": false,
     "platforma": "2performant",
@@ -321,7 +384,7 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 1595,
+    "zile_ramase": 1594,
     "promotii": [
       {
         "nume": "Flash Sale",
@@ -336,6 +399,15 @@
         "cod_cupon": "",
         "landing_page": "https://www.otter.ro/flashsale",
         "zile_ramase": 1595,
+        "expira": "2030-12-31",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "Flash Sale",
+        "descriere": "Profită de reduceri fulger în Flash Sale-ul Otter, de luni pana vineri, intre 10-13! Încălțăminte și accesorii la prețuri masiv reduse.",
+        "cod_cupon": "",
+        "landing_page": "https://www.otter.ro/flashsale",
+        "zile_ramase": 1594,
         "expira": "2030-12-31",
         "sursa": "csv_import"
       }
@@ -364,8 +436,8 @@
     "sales_number": 0,
     "trend": 0,
     "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 1595,
+    "cod_cupon": true,
+    "zile_ramase": 10,
     "promotii": [
       {
         "nume": "Cupon reducere 5%",
@@ -373,6 +445,15 @@
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fregata.ro%2F",
         "zile_ramase": 1595
+      },
+      {
+        "nume": "Black Friday de vara pe regata.ro",
+        "descriere": "Black Friday de Vară a început la Regata! Până pe 31 august, te așteaptă reduceri de peste 60% la sute de produse pentru amenajări și construcții. Descoperă oferte speciale la gresie și faianță, parchet laminat, mobilier de baie, lavoare și vase WC, baterii pentru baie și bucătărie, căzi și cabine de duș, uși metalice și de interior, precum și produse pentru încălzire și confort termic.\n\nFie că renovezi o încăpere, îți amenajezi întreaga locuință sau pregătești un nou proiect, acum este momentul",
+        "cod_cupon": "EXTRA2",
+        "landing_page": "https://regata.ro/black-friday-vara",
+        "zile_ramase": 10,
+        "expira": "2026-08-30",
+        "sursa": "csv_import"
       }
     ],
     "folosit_de": 567,
@@ -380,7 +461,7 @@
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 30.0,
+    "scor_final": 50.0,
     "program_id": 10273,
     "unique_code": "93bdc07c4"
   },
@@ -479,7 +560,7 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 12,
+    "zile_ramase": 11,
     "promotii": [
       {
         "nume": "Pana la -75% la huse silicon Iphone + CADOU la fiecare comanda",
@@ -487,6 +568,24 @@
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fmoftcollection.ro%2Fcollections%2Foferta-limitata",
         "zile_ramase": 12
+      },
+      {
+        "nume": "Livrare Gratuita la comenzi de peste 200 lei",
+        "descriere": "E timpul pentru un upgrade! Comanda accesoriile tale preferate de pe Moft Collection si, daca depasesti pragul de 200 lei, noi iti platim transportul!\n\nNu uita: la fiecare comanda primesti setul complet de protectie (folie de sticla + protectie camera) CADOU.\n👉Transport Gratuit (>200 lei)\n👉Cadouri incluse la orice comanda\n👉Huse, curele si accesorii de top.\nComanda acum si economiseste!",
+        "cod_cupon": "",
+        "landing_page": "https://moftcollection.ro/",
+        "zile_ramase": 134,
+        "expira": "2026-12-31",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "Folie de sticla si protectie camera CADOU la fiecare comanda",
+        "descriere": "Acum este momentul perfect sa iti accesorizezi telefonul si sa beneficiezi de un pachet de protectie premium fara niciun cost suplimentar. La fiecare comanda plasata pe site-ul MoftCollection.ro, primesti cadou atat o folie de sticla securizata pentru ecran, cat si o protectie dedicata pentru camera foto. Ne dorim sa te bucuri de dispozitivul tau fara grija zgarieturilor sau a loviturilor accidentale, oferindu-ti aceste accesorii esentiale direct in colet.\n\nFolia de sticla asigura o claritate ma",
+        "cod_cupon": "",
+        "landing_page": "https://moftcollection.ro/",
+        "zile_ramase": 11,
+        "expira": "2026-08-31",
+        "sursa": "csv_import"
       }
     ],
     "folosit_de": 388,
@@ -602,7 +701,7 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 133,
+    "zile_ramase": 20,
     "promotii": [
       {
         "nume": "Provocarea Femieko 2026 – Câștigă premii și comision de 19%!",
@@ -617,6 +716,15 @@
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffemieko.ro%2Fpages%2Fabonamente-femieko",
         "zile_ramase": 133
+      },
+      {
+        "nume": "Promotie 1+1 Cadou",
+        "descriere": "In perioada 10 august - 10 septembrie, la Femi.Eko® ai 1+1 CADOU la produsele eligibile din campanie. Cumperi o pereche de chiloti menstruali Seamless sau o cupa menstruala si primesti inca una identica, cadou. Este ocazia ideala sa alegi produse reutilizabile create pentru mai mult confort, protectie si libertate de miscare. Descopera oferta pe pagina dedicata campaniei si profita acum de promotie.",
+        "cod_cupon": "",
+        "landing_page": "https://femieko.ro/pages/unul-pentru-tine-unul-cadou",
+        "zile_ramase": 20,
+        "expira": "2026-09-09",
+        "sursa": "csv_import"
       }
     ],
     "folosit_de": 505,
@@ -644,7 +752,7 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 193,
+    "zile_ramase": 192,
     "promotii": [
       {
         "nume": "Oferta 1+1",
@@ -659,6 +767,15 @@
         "cod_cupon": "",
         "landing_page": "https://www.fara-daunatori.ro/search/oferta/?q=oferta",
         "zile_ramase": 193,
+        "expira": "2027-02-28",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "Oferta 1+1",
+        "descriere": "Oferta 1+1",
+        "cod_cupon": "",
+        "landing_page": "https://www.fara-daunatori.ro/search/oferta/?q=oferta",
+        "zile_ramase": 192,
         "expira": "2027-02-28",
         "sursa": "csv_import"
       }
@@ -903,6 +1020,15 @@
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.sneakerit.ro%2Fsale",
         "zile_ramase": 931
+      },
+      {
+        "nume": "Sale",
+        "descriere": "Toate produsele reduse de pe sneakerit.ro",
+        "cod_cupon": "",
+        "landing_page": "https://www.sneakerit.ro/sale",
+        "zile_ramase": 931,
+        "expira": "2029-03-08",
+        "sursa": "csv_import"
       },
       {
         "nume": "Sale",
@@ -3893,16 +4019,26 @@
     "comision": "Variabil",
     "rank": null,
     "scor_afiliere": 70,
-    "scor_final": 70,
+    "scor_final": 30.0,
     "prioritate": "standard",
     "canal_recomandat": "Content, Coupon",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 0,
-    "promotii": [],
-    "folosit_de": 0,
+    "zile_ramase": 11,
+    "promotii": [
+      {
+        "nume": "InPuff Summer Sale – reduceri de până la 40% la toate Rochiile",
+        "descriere": "Summer Sale la InPuff! Descoperă rochii elegante, ținute de eveniment și articole din colecțiile InPuff cu reduceri de până la 40%. O selecție atractivă pentru sezonul evenimentelor, disponibilă în limita stocului.",
+        "cod_cupon": "",
+        "landing_page": "https://www.inpuff.ro/produse/rochii-elegante",
+        "zile_ramase": 11,
+        "expira": "2026-08-31",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 141,
     "procent_succes": 80,
     "exclusiv": false,
     "platforma": "2performant",
@@ -16751,16 +16887,26 @@
     "comision": "Variabil",
     "rank": null,
     "scor_afiliere": 45,
-    "scor_final": 45,
+    "scor_final": 30.0,
     "prioritate": "standard",
     "canal_recomandat": "Content, Coupon",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 0,
-    "promotii": [],
-    "folosit_de": 0,
+    "zile_ramase": 11,
+    "promotii": [
+      {
+        "nume": "Reduceri Mobila Luna August 2026",
+        "descriere": "Prinde reducerile la mobila din luna aceasta! Am ales cele mai cautate produse din gama noastra la care am aplicat super reduceri. Astfel poti sa iti pregatesti casa asa cum doresti fara grija bugetului pentru mobila. Vei gasi aceste oferte semnalate cu etichete speciale in categoriile dormitor, canapele, living, coltare, bucatarie si multe altele. Poti vedea mai rapid produsele intrand in pagina dedicata campaniei de Super Reduceri. \nSuntem producatori de mobilier inca din 1994 din Maramures, R",
+        "cod_cupon": "",
+        "landing_page": "https://mobilalaguna.ro/super-reduceri-la-mobila-si-canapele/",
+        "zile_ramase": 11,
+        "expira": "2026-08-31",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 682,
     "procent_succes": 80,
     "exclusiv": false,
     "platforma": "2performant",
@@ -16827,16 +16973,26 @@
     "comision": "Variabil",
     "rank": null,
     "scor_afiliere": 40,
-    "scor_final": 40,
+    "scor_final": 30.0,
     "prioritate": "standard",
     "canal_recomandat": "Content, Coupon",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 0,
-    "promotii": [],
-    "folosit_de": 0,
+    "zile_ramase": 10,
+    "promotii": [
+      {
+        "nume": "10% REDUCERE LA TOATE PRODUSELE",
+        "descriere": "Beneficiază de o reducere de 10% la toate produsele noastre de mobilier, pe toată durata lunii! Descoperă colecția noastră și profită de această ofertă specială. Reducerea se aplică automat tuturor produselor, fără cod promoțional.",
+        "cod_cupon": "",
+        "landing_page": "https://studioszel.ro/",
+        "zile_ramase": 10,
+        "expira": "2026-08-30",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 620,
     "procent_succes": 80,
     "exclusiv": false,
     "platforma": "2performant",
@@ -16983,16 +17139,35 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "zile_ramase": 11,
+    "promotii": [
+      {
+        "nume": "Vara cu Aronia",
+        "descriere": "🌞 Vara cu Aronia e aici! 🌞\nȚi-ai făcut bagajul. Ai luat și suplimentele?\nObiceiurile bune nu iau pauză în vacanță. În perioada 1–31 august, ai reduceri de până la 40% la o selecție de produse Aronia, pentru un concediu fără griji.\nProduse din gama pentru care clienții noștri au lăsat peste 60.000 de recenzii.\n💳 Plătești cu cardul? Primești încă 3,5% reducere, peste prețul deja redus. ❤️\nÎn selecția de vară te poți bucura de:\n🍷 Sucuri medicinale — PROMO: 3x3L Suc Aronia și Sucul de Acerola \n💊 Vit",
+        "cod_cupon": "",
+        "landing_page": "https://aronia-charlottenburg.ro/vara-cu-aronia/",
+        "zile_ramase": 11,
+        "expira": "2026-08-31",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "Promotie Aronino",
+        "descriere": "Imunitatea micuțului tău se construiește în timp. Pregătește-l pentru începerea școlii cu cel puțin o lună înainte! 📚👧🧒\nAronino te așteaptă cu oferta 1+1 GRATIS ca să-i asiguri tot ce are nevoie.\nAsta înseamnă că la fiecare produs cumpărat mai primești încă unul cadou din partea noastră, în limita stocului disponibil.\nVorbim despre:\n💜 Aronino Mini Biotic, 30 plicuri, cu doar 103 lei \n💜 Aronino Baby Biotic, 30 plicuri, cu doar 103 lei \n💜 Aronino Kids Multivitamins & Minerals, 60 tablete masticabi",
+        "cod_cupon": "",
+        "landing_page": "https://l.facebook.com/l.php?u=https%3A%2F%2Faronia-charlottenburg.ro%2Fvitamine-suplimente-copii%2F%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExUXJ5TU5mMGpOWmpJY3FoanNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR5j2DM-L9OuylGTdiQ99dnYnHXpIJ5jxNxImTuaDXdihjxSD4aY7_kB7loIFw_aem_A4qQFysHrcv4DaPuclHz1A&h=AUD88vuWvtUK7gkDK5pOvMRigA6U8BTLKqxIsWKXGGCCf2y_SWj3Pkau2f0MUDa52OHMbcXImklLwANE7VdGODmPsZOel8JE_97EtjWHOtbYQxtAhQlNx6ooImC5e7gUBfdzdfCZTjEiu7WZ&__tn__=-UK-R&c[0]=AUC8Oq8YjXsO-3bJ3O-UjgUTnFPValOB9jD2877cKLawKG21wEz-4Zlu8OAADQn2t8VOEOTKb0MsCpoXLTpN_av9zKMEcQHE9CPMToXR-IdE_p8Km0NPOG1u9QX8ky6kiknYkgsmVqldMWPZikiVSC2-Rd3nGWo2CTzGC_eoujuvte9S90wUd8xUN7WtEq32hauPWnyRe2HOFQW2IqziqLO-VQ",
+        "zile_ramase": 41,
+        "expira": "2026-09-30",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 120,
     "procent_succes": 82,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 30.0,
     "program_id": 7875,
     "unique_code": "9abbbd0e9"
   },
@@ -17064,16 +17239,62 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "zile_ramase": 3,
+    "promotii": [
+      {
+        "nume": "Târg de carte III",
+        "descriere": "Nu toate călătoriile de vara aceasta au nevoie de bagaj. Unele încap într-o carte, iar călătoria poate începe chiar de pe canapea, de pe plajă sau din grădină — oriunde ai de gând să te ascunzi puțin de căldură, cu o poveste bună.\n\nDin 18 până pe 24 august, ai 20% reducere la mii de titluri în limba română, din toate domeniile, pe carturesti.ro. Târgul de carte a venit la tine acasă: explorează în ritmul tău, fără cozi și fără grabă. În luna august, săptămână de săptămână, vei găsi o nouă selecț",
+        "cod_cupon": "",
+        "landing_page": "https://carturesti.ro/offer/targ-de-carte-la-tine-acasa-6648",
+        "zile_ramase": 3,
+        "expira": "2026-08-23",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "Vacanță cu joacă",
+        "descriere": "Câte jocuri și jucării încap într-o valiză de vacanță? Depinde pe cine întrebi, firește: copiii sau părinții. Pe carturesti.ro găsești de toate: jocuri mici, pentru rucsacuri mititele și board games mari, pentru valize încăpătoare. Oricare ar fi răspunsul în cazul familiei tale, noi venim în ajutor cu 20% reducere la întreaga ofertă de jocuri, jucării și board games în stoc 24h în perioada 18-24 august.\n\nOferta este valabilă doar pe carturesti.ro, în limita stocului disponibil, cu excepția figur",
+        "cod_cupon": "",
+        "landing_page": "https://carturesti.ro/offer/vacanta-cu-joaca-6654",
+        "zile_ramase": 3,
+        "expira": "2026-08-23",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "2+1 Editura Nemira",
+        "descriere": "Se spune că verile bune se recunosc după numărul de cărți terminate. Mai sunt câteva săptămâni până se închide sezonul lecturii pe plajă și pe terasă — timp suficient pentru încă o carte, sau trei. Editura Nemira, care anul acesta împlinește 35 de ani de povești memorabile, îți ține companie la cafeaua de dimineață, cu tot ce are mai bun în stoc.\n\nÎntre 18 august și 7 septembrie, întreaga ofertă în stoc a editurii Nemira e la 2+1: alegi trei, plătești două. #CarteaPeVal\n\nProdusul pe care nu îl p",
+        "cod_cupon": "",
+        "landing_page": "https://carturesti.ro/offer/cartea-pe-val-nemira-6651",
+        "zile_ramase": 17,
+        "expira": "2026-09-06",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "Back to School 2026",
+        "descriere": "Școlărești la Cărturești a sosit!\n\nȘtim că urmează perioada în care ghiozdanul devine piesa de rezistență a fiecărei zile, așa că am pregătit o ofertă back to school irezistibilă: ai 20% reducere la cumpărături de peste 200 de lei din selecția specială de rechizite și ghiozdane!\n\nȘi pentru că ești la Cărturești, înseamnă că vrei și să dăruiești. Între 11 august și 28 septembrie, cumpărăturile din Școlărești la Cărturești vor susține inițiativa byron de a dezvolta și echipa biblioteci dedicate ti",
+        "cod_cupon": "",
+        "landing_page": "https://carturesti.ro/offer/scolaresti-la-carturesti-2026-6645",
+        "zile_ramase": 38,
+        "expira": "2026-09-27",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "Kilipir Merch Fandom",
+        "descriere": "De la Konohagakure până la Hogwarts, de la Grand Line până la galaxia îndepărtată, fandom-ul tău are acum un loc unde poate exista în afara ecranului. Kilipir Merch Fandom adună într-un singur raft virtual universurile care te-au marcat — Naruto, One Piece, Dragon Ball, Harry Potter, Marvel, DC Comics, Star Wars sau Lord of the Rings — sub formă de căni, tricouri, rucsacuri, figurine și accesorii pe care le poți purta sau expune cu mândrie.\nTe invităm să explorezi oferta cu ochii mari, ca într-u",
+        "cod_cupon": "",
+        "landing_page": "https://carturesti.ro/offer/kilipir-merch-fandom-6642",
+        "zile_ramase": 72,
+        "expira": "2026-10-30",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 667,
     "procent_succes": 87,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 40.0,
     "program_id": 1677,
     "unique_code": "07b5f0fed"
   },
@@ -17229,6 +17450,15 @@
         "zile_ramase": 11,
         "expira": "2026-08-30",
         "sursa": "csv_import"
+      },
+      {
+        "nume": "Back To School 2026 Rechizite",
+        "descriere": "Buna ziua,\n\nincepand de astazi si pana la 31 octombrie, am activat promotia Back To School pentru rechizite care contine peste 2500 de produse.\n\nLink promotie:\n\nhttps://www.librarie.net/c/4661/\n\nSpor la conversii,\nechipa LIBRARIE.net",
+        "cod_cupon": "",
+        "landing_page": "https://www.librarie.net/c/4661/",
+        "zile_ramase": 72,
+        "expira": "2026-10-30",
+        "sursa": "csv_import"
       }
     ],
     "folosit_de": 355,
@@ -17308,16 +17538,53 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "zile_ramase": 3,
+    "promotii": [
+      {
+        "nume": "Max Days – Machiaj 18-24.08",
+        "descriere": "🌟 Ce aduce această ediție:\n• Reduceri de până la 25% la produse de machiaj selectate\n• Branduri cunoscute și apreciate de clienți\n• Produse pentru un look complet, de la machiajul de zi cu zi până la look-uri speciale",
+        "cod_cupon": "",
+        "landing_page": "www.drmax.ro/max-days-machiaj",
+        "zile_ramase": 3,
+        "expira": "2026-08-23",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "Pachet de Grijă – August",
+        "descriere": "☀️ În luna august, oferă-le clienților un plus de protecție și confort cu Pachetul de Grijă pentru Protecția Ficatului!\n\n🌿 Dr. Max Silimarină Premium 30 capsule + Dr. Max Anghinare 250 mg, 30 comprimate filmate\n\nDouă produse complementare, reunite într-un singur pachet pentru susținerea sănătății ficatului.",
+        "cod_cupon": "",
+        "landing_page": "www.drmax.ro/pachete-de-grija",
+        "zile_ramase": 10,
+        "expira": "2026-08-30",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "Ofertele Lunii August",
+        "descriere": "Luna august aduce oferte speciale la produse pentru sănătate, frumusețe, îngrijire și pentru mama & copilul. Pe tot parcursul lunii, clienții pot descoperi reduceri de până la 50% la branduri apreciate și produse potrivite pentru întreaga familie.",
+        "cod_cupon": "",
+        "landing_page": "https://www.drmax.ro/ofertele-lunii",
+        "zile_ramase": 10,
+        "expira": "2026-08-30",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "50% reducere la produsele marca proprie Dr. Max",
+        "descriere": "Pe tot parcursul lunii, clienții pot beneficia de 50% reducere la o selecție variată de produse marca proprie Dr. Max, dedicate unor nevoi diverse de sănătate, wellness și îngrijire personală.",
+        "cod_cupon": "",
+        "landing_page": "https://www.drmax.ro/promo-dr-max",
+        "zile_ramase": 10,
+        "expira": "2026-08-30",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 565,
     "procent_succes": 81,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 40.0,
     "program_id": 8139,
     "unique_code": "6390e3cfb"
   },
@@ -17362,16 +17629,44 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "are_promotie": true,
+    "cod_cupon": true,
+    "zile_ramase": 10,
+    "promotii": [
+      {
+        "nume": "10% reducere la TOATE produsele de pe automobilus.ro cu codul VACANTA !",
+        "descriere": "codul VARA10 se aplică pe tot magazinul, inclusiv piese auto și uleiuri, mai puțin produsele deja aflate la reducere.",
+        "cod_cupon": "VACANTA",
+        "landing_page": "https://automobilus.ro",
+        "zile_ramase": 11,
+        "expira": "2026-08-31",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "15% reducere la Kitul de  restaurare faruri cu polimer lichid",
+        "descriere": "Kitul de  restaurare faruri cu polimer lichid Automobilus - include 600ml substanță!\n\nSetul de restaurare a farurilor AUTOMOBILUS cu polimer lichid este un sistem inovator ce vă permite să restaurați farurile arse sau matuite, restabilind din nou starea lor originală, cu luminozitatea originală și un finisaj perfect într-un mod foarte rapid și economic.\n\nKit-ul conține tot ce aveți nevoie pentru a restaura farurile:\n\nsticlă de 600ml cu polimer lichid\ncană specială pentru încălzit polimerul\n6 col",
+        "cod_cupon": "",
+        "landing_page": "https://automobilus.ro/kit-restaurare-faruri-cu-polimer-lichid-automobilusinclude-600ml-substanta",
+        "zile_ramase": 10,
+        "expira": "2026-08-30",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "Gama Meguiar's cu -19% pe Automobilus.ro",
+        "descriere": "Dacă îți pasă de aspectul mașinii tale, știi deja că Meguiar's este regele detailingului auto încă din 1901. Acum ai ocazia să îți faci stocul cu produse profesionale la prețuri mult mai mici!\nPe Automobilus.ro găsești reduceri directe de 19% la cele mai căutate produse!",
+        "cod_cupon": "",
+        "landing_page": "https://automobilus.ro/polish-si-detailing?marca%5B0%5D=Meguiar%27s&page=1",
+        "zile_ramase": 11,
+        "expira": "2026-08-31",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 277,
     "procent_succes": 89,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 50.0,
     "program_id": 10862,
     "unique_code": "ef2621c0a"
   },
@@ -17416,16 +17711,26 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "zile_ramase": 6,
+    "promotii": [
+      {
+        "nume": "🌞 Lichidare de vară - până la -90% (20-26 august) 🌞",
+        "descriere": "🧡 Vara asta ai mai mult timp de citit și prețuri la care nu trebuie să te gândești de două ori pe litera.ro. \nRomane care te țin cu sufletul la gură, dezvoltare personală și povești pentru copii, toate cu reduceri de până la -90%. 📖\n📦 Stocurile sunt limitate.\n📅 Oferta e valabilă în perioada 20 - 26 august",
+        "cod_cupon": "",
+        "landing_page": "https://www.litera.ro/",
+        "zile_ramase": 6,
+        "expira": "2026-08-26",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 223,
     "procent_succes": 80,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 30.0,
     "program_id": 873,
     "unique_code": "0a8a2c4d9"
   },
@@ -17443,16 +17748,53 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "zile_ramase": 19,
+    "promotii": [
+      {
+        "nume": "Concurs Lego Back to School | 10.08-08.09.2026",
+        "descriere": "🧱 Joaca vine cu super premii LEGO®! 🎉 💙 Cumpara produse LEGO® de minimum 99 Lei, inscrie bonul pe noriel.ro si intra in cursa pentru premii spectaculoase!\n🎁 50 seturi LEGO® City – Experienta livrarii de pizza cu vehicule (60496)\n🌱 50 seturi LEGO® Super Heroes – Groot in uniforma Ravager (76341)\n💛 1 voucher LEGO® in valoare de 1.500 Lei\nCampania se desfasoara in perioada 10.08 – 08.09.2026. >> https://noriel.ro/blog/concurs-lego \nRegulamentul concursului este disponibil pe noriel.ro.",
+        "cod_cupon": "",
+        "landing_page": "https://noriel.ro/blog/concurs-lego",
+        "zile_ramase": 19,
+        "expira": "2026-09-08",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "Catalog Oferte Back to school 2026 | 06.08-30.09.2026",
+        "descriere": "Rasfoieste catalogul si descopera noutatile si ofertele de neratat pentru noul an scolar! 🎒 📓🖊️ 🎨 >> https://noriel.ro/catalog-back-to-school\nPregateste-te pentru nou an scolar plin de aventuri! Campanie valabila in perioada 06.08-30.09.2026, in limita stocului disponbil.",
+        "cod_cupon": "",
+        "landing_page": "https://noriel.ro/catalog-back-to-school",
+        "zile_ramase": 41,
+        "expira": "2026-09-30",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "Back to School | 30% REDUCERE la TOATE Ghiozdanele |06.08-30.09.2026",
+        "descriere": "Hei, hei, hei! 🔔Suna clopotelul pentru cele mai tari reduceri de Back to School! 📚🎒Pregateste-te de aventura cu 30% REDUCERE la TOATE ghiozdanele! Alege modelul preferat si completeaza-ti stilul cu penare cool si accesorii de poveste. Promotie valabila in perioada 06.08-30.09.2025, in limita stocului disponibil. >>https://noriel.ro/ghiozdane-si-genti-scoala",
+        "cod_cupon": "",
+        "landing_page": "https://noriel.ro/scoala-si-gradinita",
+        "zile_ramase": 41,
+        "expira": "2026-09-30",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "Reduceri de pana la 70% |  1.08-14.09.2026",
+        "descriere": "Cu jucariile potrivite, distractia nu se opreste niciodata!😍🎉 In magazinele Noriel si pe noriel.ro gasesti acum cele mai tari oferte din an! 🔥 Profita de reducerile de pana la 70% si ofera-le micutilor tai o vacanta de neuitat! 💖 >> https://noriel.ro/promotii?product_list_order=discount.percent",
+        "cod_cupon": "",
+        "landing_page": "https://noriel.ro/promotii?p=3&product_list_order=discount.percent",
+        "zile_ramase": 25,
+        "expira": "2026-09-14",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 209,
     "procent_succes": 72,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 30.0,
     "program_id": 2615,
     "unique_code": "bb3071a7d"
   },
@@ -17831,16 +18173,26 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "are_promotie": true,
+    "cod_cupon": true,
+    "zile_ramase": 11,
+    "promotii": [
+      {
+        "nume": "Liki24 SuperDeal – Reducere Extra de 5% la Produsele din Categorie",
+        "descriere": "Profită de campania Liki24 SuperDeal! Folosește codul promoțional și obține o reducere suplimentară de 5% la produsele eligibile din categoria promoției. Economisește mai mult la produsele preferate pentru sănătate și îngrijire. Oferta este valabilă doar pentru o perioadă limitată!",
+        "cod_cupon": "SUPER5OFF",
+        "landing_page": "https://liki24.ro/category/8000923/?sort=price",
+        "zile_ramase": 11,
+        "expira": "2026-08-31",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 800,
     "procent_succes": 72,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 50.0,
     "program_id": 11472,
     "unique_code": "0e50d3a6f"
   },
@@ -17885,16 +18237,26 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "zile_ramase": 19,
+    "promotii": [
+      {
+        "nume": "𝐁𝐚𝐜𝐤 𝐭𝐨 𝐒𝐜𝐡𝐨𝐨𝐥 la F64 cu reduceri de până la -70%🏷️",
+        "descriere": "Back to School la F64 aduce reduceri de până la 70% la camere foto, lumini, microfoane, trepiede și accesorii pentru creatori. Produsele participante sunt actualizate constant, iar promoțiile sunt valabile pe durata campaniei. Perfect pentru orice tip de content creator, fotograf sau vlogger.",
+        "cod_cupon": "",
+        "landing_page": "https://www.f64.ro/back-to-school",
+        "zile_ramase": 19,
+        "expira": "2026-09-08",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 770,
     "procent_succes": 96,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 30.0,
     "program_id": 1573,
     "unique_code": "5baacfa1f"
   },
@@ -18327,16 +18689,26 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "zile_ramase": 40,
+    "promotii": [
+      {
+        "nume": "Promotie Karcher este valabilă în perioada 01 iulie 2026 - 30 septembrie 2026",
+        "descriere": "Descopera promotiile speciale pe magazinul oficial Kärcher Romania!\n\nIn perioada 01 Iulie - 30 Septembrie 2026, profitati de oferte exclusive si preturi speciale la o gama variata de echipamente si accesorii de curatenie pentru casa, gradina si uz profesional:\n\n• Reduceri la aparate de curatat cu presiune, aspiratoare umed-uscate si mopuri electrice.\n• Pachete promotionale si accesorii cadou la modelele participante.\n• Garantie oficiala de producator si livrare rapida direct din depozitul Kärche",
+        "cod_cupon": "",
+        "landing_page": "https://www.karcher.com/ro/ro/promotii",
+        "zile_ramase": 40,
+        "expira": "2026-09-29",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 383,
     "procent_succes": 73,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 30.0,
     "program_id": 8194,
     "unique_code": "fef3ef7dc"
   },
@@ -18499,16 +18871,26 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "zile_ramase": 11,
+    "promotii": [
+      {
+        "nume": "Campanii Back to School - Vegis.ro",
+        "descriere": "-",
+        "cod_cupon": "",
+        "landing_page": "https://vegis.ro/",
+        "zile_ramase": 11,
+        "expira": "2026-08-31",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 295,
     "procent_succes": 80,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 30.0,
     "program_id": 1961,
     "unique_code": "861f9e301"
   },
@@ -19329,16 +19711,44 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "are_promotie": true,
+    "cod_cupon": true,
+    "zile_ramase": 11,
+    "promotii": [
+      {
+        "nume": "Reduceri de stoc: Până la -70% la ochelarii de soare",
+        "descriere": "Bună,\n\nAm dat startul campaniei „Reduceri de stoc”, iar acum te poți bucura de reduceri pe bune de până la -70% la ochelarii de soare, în perioada 03–31.08.2026.\n\nDescoperă modelele incluse în campanie aici:\n- https://www.videt.ro/reduceri-soare.html\n\nMulțumesc!",
+        "cod_cupon": "",
+        "landing_page": "https://www.videt.ro/reduceri-soare.html",
+        "zile_ramase": 11,
+        "expira": "2026-08-31",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "Reduceri de stoc: până la -70% la rame și -25% la toate lentilele de vedere",
+        "descriere": "Bună,\n\nAm dat startul campaniei „Reduceri de stoc”, iar acum te poți bucura de reduceri pe bune de până la -70% la rame și -25% la toate lentilele de vedere, în perioada 03–31.08.2026.\n\nDescoperă produsele incluse în campanie aici:\n- https://www.videt.ro/reduceri-vedere.html\n\nMulțumesc!",
+        "cod_cupon": "",
+        "landing_page": "https://www.videt.ro/reduceri-vedere.html",
+        "zile_ramase": 11,
+        "expira": "2026-08-31",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "Până la -35% la o selecție de ochelari de soare și -25% la toate lentilele de vedere",
+        "descriere": "Bună!\n\nPe parcursul lunii august avem o promoție specială:\nPână la -35% la o selecție de ochelari de soare și -25% la toate lentilele de vedere, folosind codul promoțional AUGUST.\n\nMulțumesc!",
+        "cod_cupon": "AUGUST",
+        "landing_page": "https://www.videt.ro/ochelari-de-soare-polaroid.html?dc_code=august",
+        "zile_ramase": 11,
+        "expira": "2026-08-31",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 428,
     "procent_succes": 87,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 50.0,
     "program_id": 7894,
     "unique_code": "27ec4b078"
   },
@@ -19437,16 +19847,26 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "zile_ramase": 13,
+    "promotii": [
+      {
+        "nume": "Sport Depor Final Sale: Munte si Mare – reduceri de pana la 60%",
+        "descriere": "Pregateste-te pentru urmatoarea aventura cu reduceri de pana la 60% la peste 4.000 de produse pentru munte si mare. Descopera imbracaminte, incaltaminte, echipamente sportive si accesorii de la branduri precum Columbia, Helly Hansen, Jack Wolfskin, The North Face, Quiksilver, Roxy, Speedo si multe altele. Oferta este valabila pana pe 02.09.2026, in limita stocului disponibil.",
+        "cod_cupon": "",
+        "landing_page": "https://www.sportdepot.ro/final_sale_munte_si_mare/promotion-94153dca2ef04b1b8e48422594b2aaea",
+        "zile_ramase": 13,
+        "expira": "2026-09-02",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 87,
     "procent_succes": 84,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 30.0,
     "program_id": 10669,
     "unique_code": "d131c7dfb"
   },
@@ -19518,16 +19938,26 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "are_promotie": true,
+    "cod_cupon": true,
+    "zile_ramase": 1,
+    "promotii": [
+      {
+        "nume": "Hot Reads!",
+        "descriere": "🔥 Descoperă Hot Reads: pasiuni intense, atracții periculoase și 45% reducere. Aplică în coș codul ARDE chiar azi.",
+        "cod_cupon": "ARDE",
+        "landing_page": "https://edituracorint.ro/hot-reads.html",
+        "zile_ramase": 1,
+        "expira": "2026-08-21",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 643,
     "procent_succes": 72,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 60.0,
     "program_id": 10361,
     "unique_code": "8dad9830f"
   },
@@ -19709,7 +20139,7 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 73,
+    "zile_ramase": 41,
     "promotii": [
       {
         "nume": "Reduceri Paa-Home.ro de pana la -60% la accesorii pentru aspiratoare",
@@ -19727,6 +20157,24 @@
         "landing_page": "https://paa-home.ro/",
         "zile_ramase": 134,
         "expira": "2026-12-31",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "Reduceri de pana la 40% la detergenti pentru aspiratoare robot",
+        "descriere": "Descopera detergentii PAA-Home pentru aspiratoare robot, acum la preturi reduse cu pana la 40%. Sunt disponibile solutii compatibile cu modele populare de la Roborock, Dreame, Ecovacs, Tineco si Narwal, precum si detergenti concentrati pentru curatarea pardoselilor. Alege produsul potrivit si bucura-te de o curatenie eficienta si un parfum placut in intreaga locuinta.",
+        "cod_cupon": "",
+        "landing_page": "https://paa-home.ro/product-category/detergenti-aspiratoare/",
+        "zile_ramase": 41,
+        "expira": "2026-09-30",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "Produse Resigilate Paa-Home.ro cu reducere de pana la -50%",
+        "descriere": "Economiseste inteligent cu produsele resigilate PAA-home! Descopera accesorii pentru aspiratoare si roboti de aspirare, filtre, perii, rezervoare si multe alte produse verificate, complet functionale, disponibile cu reduceri de pana la 50%. Stocurile sunt limitate, iar ofertele sunt valabile doar in limita disponibilitatii.",
+        "cod_cupon": "",
+        "landing_page": "https://paa-home.ro/product-category/produse-resigilate-filtre-si-accesorii/",
+        "zile_ramase": 133,
+        "expira": "2026-12-30",
         "sursa": "csv_import"
       }
     ],
@@ -20185,16 +20633,26 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "zile_ramase": 10,
+    "promotii": [
+      {
+        "nume": "Late Summer Sale",
+        "descriere": "Pana la -20% reducere la o selectie de produse Prestige cu livrare rapida din stoc: saltele, paturi, canapele si coltare.",
+        "cod_cupon": "",
+        "landing_page": "https://www.prestigehome.ro/collections/reduceri-de-20-%C8%99i-livrare-rapida-din-stoc-august",
+        "zile_ramase": 10,
+        "expira": "2026-08-30",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 296,
     "procent_succes": 81,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 30.0,
     "program_id": 10116,
     "unique_code": "07a2ce605"
   },
@@ -21589,16 +22047,26 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "zile_ramase": 11,
+    "promotii": [
+      {
+        "nume": "Last Days of Summer – până la 20% reducere ☀️la produse pentru bebelusi",
+        "descriere": "Ultimele zile de vară vin cu oferte speciale la Petit Bebe! ☀️\n\nÎn perioada 10–31 august 2026, te bucuri de reduceri de până la 20% la o selecție de produse pentru bebe și părinți.\n\nDescoperă produse potrivite pentru confort, joacă și plimbări și profită de ultimele oferte ale verii.\n\n✔ Reduceri de până la 20%\n✔ Reducerile sunt aplicate direct pe site, fără cod promoțional\n✔ Ofertele sunt disponibile în limita stocului\n\nÎncheie vara cu tot ce ai nevoie pentru momente frumoase alături de bebe! 💛",
+        "cod_cupon": "",
+        "landing_page": "https://www.petit-bebe.ro/last-days-of-summer-reduceri-de-pana-la-20.html",
+        "zile_ramase": 11,
+        "expira": "2026-08-31",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 775,
     "procent_succes": 91,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 30.0,
     "program_id": 10512,
     "unique_code": "44ad2ee96"
   },
@@ -22230,16 +22698,26 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "are_promotie": true,
+    "cod_cupon": true,
+    "zile_ramase": 40,
+    "promotii": [
+      {
+        "nume": "PB20 - Sezon banchet & majorat: -20% la toate rochiile PRIVE",
+        "descriere": "-20% la toate rochiile PRIVE Boutique cu codul PB20, valabil pe tot sezonul de banchete, majorate si nunti (august - septembrie). Rochii de ocazie fabricate in Romania, livrare 24-48h, schimb si retur simplu in 14 zile. Codul se aplica in cos si functioneaza pentru orice comanda de pe site.",
+        "cod_cupon": "PB20",
+        "landing_page": "https://priveboutique.net/rochii-de-ocazie/",
+        "zile_ramase": 40,
+        "expira": "2026-09-29",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 735,
     "procent_succes": 74,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 50.0,
     "program_id": 935,
     "unique_code": "cb588f07f"
   },
@@ -22581,16 +23059,26 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "zile_ramase": 10,
+    "promotii": [
+      {
+        "nume": "40% reducere",
+        "descriere": "25% reducere la incaltaminte\n15% reducere la posete/rucsacuri\n40% reducere la fiecare pereche daca se achizitioneaza minim 2 produse, iar reducerea de 40% se aplica pe foecare pereche in parte de la minim 2 perechi in sus\nBranduri precum: SKECHERS, GRYXX, OTTER, RIEKER, ADA SHOES, ANEKKE si multe altele.",
+        "cod_cupon": "",
+        "landing_page": "https://ada-shoes.ro/",
+        "zile_ramase": 10,
+        "expira": "2026-08-30",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 797,
     "procent_succes": 94,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 30.0,
     "program_id": 10992,
     "unique_code": "81a821097"
   },
@@ -23502,16 +23990,44 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "zile_ramase": 1,
+    "promotii": [
+      {
+        "nume": "Back to School, Back to Cool!",
+        "descriere": "Anul acesta bifezi lista de rechizite simplu și rapid. Back to School, Back to Cool! Am pregătit pentru copilul tău o ofertă completă: de la ghiozdane, penare și caiete, până la instrumente pentru desen și lucru manual. Rezolvă toate cumpărăturile dintr-o singură comandă, la prețuri avantajoase.",
+        "cod_cupon": "",
+        "landing_page": "https://www.infinity.ro/carti-si-birotica/rechizite",
+        "zile_ramase": 17,
+        "expira": "2026-09-06",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "Echipează-ți garajul: Scule și accesorii auto de top",
+        "descriere": "Bucuria de a conduce fără griji! 🚗 Ai la dispoziție sute de produse pentru mașina și garajul tău, dar și o gamă foarte variată de scule și utilaje de lucru. Descoperă o selecție de top, cu o mulțime de produse cu recenzii de 5 stele de la clienți mulțumiți. Echipează-te complet cu produsele de care ai nevoie, toate într-un singur loc!",
+        "cod_cupon": "",
+        "landing_page": "https://www.infinity.ro/seller-topstrong942",
+        "zile_ramase": 17,
+        "expira": "2026-09-06",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "Scurt-Circuit la prețuri",
+        "descriere": "Prețuri mici, viteză maximă! 🏎️\nPrinde reducerile lunii august pe Infinity.ro! Te așteptăm cu oferte speciale la zeci de mii de produse din toate categoriile. Cele mai bune oferte dispar repede, așa că nu mai sta pe gânduri. \nExplorează acum selecția și comandă tot ce îți dorești la super preț!",
+        "cod_cupon": "",
+        "landing_page": "https://www.infinity.ro/scurt-circuit-august",
+        "zile_ramase": 1,
+        "expira": "2026-08-21",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 414,
     "procent_succes": 83,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 40.0,
     "program_id": 8350,
     "unique_code": "a11b7b0d7"
   },
@@ -24432,7 +24948,7 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 41,
+    "zile_ramase": 40,
     "promotii": [
       {
         "nume": "Interlink",
@@ -24440,6 +24956,15 @@
         "cod_cupon": "",
         "landing_page": "https://www.interlink.ro/",
         "zile_ramase": 41,
+        "expira": "2026-09-29",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "Interlink",
+        "descriere": "Promovează produsele Interlink și câștigă comisioane din fiecare vânzare validă. Interlink oferă o gamă variată de laptopuri, calculatoare, monitoare, imprimante și alte echipamente IT refurbished și second-hand, de la branduri de renume, la prețuri competitive. Profită de campanii promoționale, materiale de marketing dedicate și un portofoliu atractiv pentru a genera conversii.",
+        "cod_cupon": "",
+        "landing_page": "https://www.interlink.ro/campanie",
+        "zile_ramase": 40,
         "expira": "2026-09-29",
         "sursa": "csv_import"
       }
@@ -24683,16 +25208,35 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "are_promotie": true,
+    "cod_cupon": true,
+    "zile_ramase": 4,
+    "promotii": [
+      {
+        "nume": "-50 % LA CELE MAI SCUMPE 5 PRODUSE!",
+        "descriere": "-50 % LA CELE MAI SCUMPE 5 PRODUSE! Folosește codul promo: 5OFF50. Profită!",
+        "cod_cupon": "5OFF50",
+        "landing_page": "https://www.yves-rocher.ro/",
+        "zile_ramase": 4,
+        "expira": "2026-08-23",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "1+1 OFERIT la îngrijire ten",
+        "descriere": "Achiziționezi un produs pentru îngrijirea tenului, iar al 2-lea, mai ieftin, îți este Oferit!",
+        "cod_cupon": "",
+        "landing_page": "https://www.yves-rocher.ro/1-plus-1-oferit/c/1plus1-face-care",
+        "zile_ramase": 6,
+        "expira": "2026-08-25",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 351,
     "procent_succes": 79,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 50.0,
     "program_id": 1368,
     "unique_code": "0abf54346"
   },
@@ -25513,16 +26057,35 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "zile_ramase": 11,
+    "promotii": [
+      {
+        "nume": "Folie protectie solara pentru ferestre",
+        "descriere": "Descriere\nSe ofera 10% extra discount la prima comanda dupa abonare. Pentru plata efectuata cu cardul online, se ofera 5% extra discount. Orice comanda mai mare de 190 lei beneficiaza de transport gratuit oriunde in Romania. Pentru comenzile mai mari de 500 lei, se ofera extra discount de 10%. Oferim si serviciul de plata in rate, prin partenerii nostri, TBI Bank si Pay Po.",
+        "cod_cupon": "",
+        "landing_page": "https://davopro.ro/folie-solara",
+        "zile_ramase": 11,
+        "expira": "2026-08-31",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "Profile si treceri de pardoseala din aluminiu - culori noi: gri antracit, gri ciment si imitatie lemn natural",
+        "descriere": "Se ofera 10% extra discount la prima comanda dupa abonare. Pentru plata efectuata cu cardul online, se ofera 5% extra discount. Orice comanda mai mare de 190 lei beneficiaza de transport gratuit oriunde in Romania. Pentru comenzile mai mari de 500 lei, se ofera extra discount de 10%. Suplimentar, se aplica discount de pana la 15% in functie de cantitatea de seturi achizitionate (pentru 2 seturi se aplica 5% discount extra, pentru 3 seturi 10%, iar pentru 4 seturi - 15%)",
+        "cod_cupon": "",
+        "landing_page": "https://davopro.ro/profil-de-trecere-la-nivel-aluminiu",
+        "zile_ramase": 11,
+        "expira": "2026-08-31",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 449,
     "procent_succes": 94,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 30.0,
     "program_id": 2070,
     "unique_code": "b102aee32"
   },
@@ -25740,6 +26303,15 @@
         "landing_page": "https://www.estel.ro/ro/promotions/promotia-de-vara-reduceri-la-produsele-pe-site",
         "zile_ramase": 12,
         "expira": "2026-08-31",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "Provocarea parului sanatos – Întoarcerea la rutina de toamnă",
+        "descriere": "Toamna este sezonul tratamentelor pentru toate tipurile de par, mai ales cel slabit, uscat si deteriorat. Tot în această perioadă sensibilitatea scalpului este mai ridicată și ca urmare avem cadere excesiva a parului si senzatii de discomfort. Dacă dorești ca părul tău să fie frumos și sănătos - asigura-i creștere și forta, de la radacini pana la varfuri. Cauta produsele ce conțin ingrediente hrănitoare și reparatoare precum ulei de argan, keratină și vitamine, pentru un păr mai puternic, strălu",
+        "cod_cupon": "",
+        "landing_page": "https://www.estel.ro/ro/promotions/provocarea-parului-sanatos-intoarcerea-la-rutina-de-toamna",
+        "zile_ramase": 56,
+        "expira": "2026-10-15",
         "sursa": "csv_import"
       }
     ],
@@ -26603,16 +27175,35 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "are_promotie": true,
+    "cod_cupon": true,
+    "zile_ramase": 2,
+    "promotii": [
+      {
+        "nume": "Vara10",
+        "descriere": "Promo Business League x NanoMax\nBeneficiu: 10% reducere pe www.nano-auto.ro\nCod: VARA10\nProduse incluse: HYDROSEAL, ThermoDry Roof și ROCK PLUS\nPromo Business League – 10% reducere cu codul VARA10 pe www.nano-auto.ro\n\nHYDROSEAL• Redă pavajului aspectul proaspăt, cu efect umed semi-lucios.• Protejează betonul împotriva apei, uzurii și substanțelor chimice.• Consolidează suprafața și reduce formarea prafului.\n\nTHERMDRY ROOF• Hidroizolează acoperișul și îl protejează împotriva infiltrațiilor.• Refl",
+        "cod_cupon": "VARA10",
+        "landing_page": "",
+        "zile_ramase": 2,
+        "expira": "2026-08-22",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "Promotiile Saptamanii la Nanomax",
+        "descriere": "Discounturi de pana la 58% la mai multe produse Nanomax: detergenti, adezivi, chit pentru reparatii, kituri curatare, tratamente piatra, vopsea, impermeabilizant Nano hidrofob, si nu numai, gata implementate pe site.",
+        "cod_cupon": "",
+        "landing_page": "https://www.nano-auto.ro/promotiile-saptamanii",
+        "zile_ramase": 11,
+        "expira": "2026-08-31",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 660,
     "procent_succes": 78,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 60.0,
     "program_id": 13116,
     "unique_code": "59076b6bf"
   },
@@ -26765,16 +27356,26 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "zile_ramase": 15,
+    "promotii": [
+      {
+        "nume": "Cumpara 2 parfumuri al -3lea este gratuit",
+        "descriere": "Cumpara oricare 2 parfumuri ( apa de parfum 50ml si al 3-lea il primiti gratuit+ cadou 1 balsam de rufe 500 ml Nuvien Fresh Touch), Oferta se aplica automat in cos in momentul in care aveti adaugate 3 parfumuri la 50 ml.",
+        "cod_cupon": "",
+        "landing_page": "https://www.nuvien.ro/",
+        "zile_ramase": 15,
+        "expira": "2026-09-04",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 28,
     "procent_succes": 94,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 30.0,
     "program_id": 12160,
     "unique_code": "be968acd9"
   },
@@ -26846,16 +27447,26 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "zile_ramase": 10,
+    "promotii": [
+      {
+        "nume": "Pana la 50% reducere la produse din ceramica",
+        "descriere": "Economiseste pana la 50% la tavile si oalele din lut si butoaiele de vin si platourile din ceramica de la Atelier49.",
+        "cod_cupon": "",
+        "landing_page": "https://www.atelier49.ro/ceramica",
+        "zile_ramase": 10,
+        "expira": "2026-08-30",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 329,
     "procent_succes": 72,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 30.0,
     "program_id": 12855,
     "unique_code": "f134fe0e1"
   },
@@ -26873,16 +27484,26 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "zile_ramase": 11,
+    "promotii": [
+      {
+        "nume": "Parfumuri arabești cu reduceri de până la 37% pe kamu.ro",
+        "descriere": "Descoperă universul fascinant al parfumurilor arăbești, unde tradiția orientală se întâlnește cu rafinamentul modern.",
+        "cod_cupon": "",
+        "landing_page": "https://www.kamu.ro/parfumuri-arabesti.html",
+        "zile_ramase": 11,
+        "expira": "2026-08-31",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 640,
     "procent_succes": 92,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 30.0,
     "program_id": 12094,
     "unique_code": "7e72e651f"
   },
@@ -27521,16 +28142,35 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "zile_ramase": 10,
+    "promotii": [
+      {
+        "nume": "🎒 Campanie exclusiva afiliati: -30% | Affiliate Exclusive: 30% OFF",
+        "descriere": "RO: 🎒 Saptamana Ghiozdanelor | 24–31 august\nPregateste-te de Back to School cu 30% reducere la ghiozdane si genti pentru pranz!\nFoloseste codul de reducere al partenerului la finalizarea comenzii si profita de oferta pana pe 31 august.\n\nEN: 🎒 Backpack Week | 24–31 August\nGet ready for Back to School with 30% OFF backpacks and lunch bags!\nUse the partner discount code at checkout and enjoy the offer until 31 August.",
+        "cod_cupon": "",
+        "landing_page": "https://www.giftdesign.ro/info/ghiozdane-si-genti-pentru-pranz?utm_source=2performant&utm_medium=affiliate&utm_campaign=ghiozdane30",
+        "zile_ramase": 10,
+        "expira": "2026-08-30",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "Back to School | -15% la intreaga comanda / 15% OFF Your Order | 10 Aug - 15 Sep 2026",
+        "descriere": "RO: Back to School: -15% la intreaga comanda. Reducerea se aplica automat in cos. Valabil: 10 aug - 15 sep 2026.\n\nEN: Back to School: 15% OFF your order. Discount applied automatically at checkout. Valid: Aug 10 - Sep 15, 2026.",
+        "cod_cupon": "",
+        "landing_page": "https://www.giftdesign.ro/?utm_source=2performant&utm_medium=affiliate&utm_campaign=back_to_school_2026",
+        "zile_ramase": 25,
+        "expira": "2026-09-14",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 513,
     "procent_succes": 84,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 30.0,
     "program_id": 12965,
     "unique_code": "4cc1a3cf7"
   },
@@ -27902,16 +28542,44 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "zile_ramase": 17,
+    "promotii": [
+      {
+        "nume": "Reducere 15% la Mop cu găleată electrică Dreamramp® Pro – Separă apa curată de cea murdară",
+        "descriere": "Mop cu găleată electrică Dreamramp® Pro – Separă apa curată de cea murdară\n\nCum funcționează?\nMopul electric Dreamramp® Pro ridică standardele curățeniei printr-un sistem automatizat de separare a apei. Printr-o simplă apăsare de buton, tehnologia inteligentă gestionează fluxul de apă, asigurându-se că podelele tale sunt spălate de fiecare dată cu apă 100% curată. Dacă vrei să treci de la un mop plat clasic la o tehnologie superioară, acesta este upgrade-ul perfect.\n\nSpre deosebire de mopurile r",
+        "cod_cupon": "",
+        "landing_page": "https://dreamramp.ro/products/mop-electric-rotativ-cu-galeata-dreamramp-separare-apa-curata-doua-rezerve",
+        "zile_ramase": 23,
+        "expira": "2026-09-12",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "34% reducere la Perie electrică multifuncțională Dreamramp® 7-în-1 cu mâner extensibil",
+        "descriere": "34% reducere la Peria electrică multifuncțională Dreamramp® 7-în-1 cu mâner extensibil",
+        "cod_cupon": "",
+        "landing_page": "https://dreamramp.ro/products/perie-electrica-multifunctionala-dreamramp-7-in-1-maner-extensibil",
+        "zile_ramase": 20,
+        "expira": "2026-09-09",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "Mop rotativ cu găleată electrică Dreamramp® Pro – Separare apa curata + TRANSPORT GRATUIT",
+        "descriere": "Comandă mopul rotativ cu găleată electrică Dreamramp® Pro și ai TRANSPORT GRATUIT!",
+        "cod_cupon": "",
+        "landing_page": "https://dreamramp.ro/products/mop-electric-rotativ-cu-galeata-dreamramp-separare-apa-curata-doua-rezerve",
+        "zile_ramase": 17,
+        "expira": "2026-09-06",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 656,
     "procent_succes": 78,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 30.0,
     "program_id": 13149,
     "unique_code": "075c88ccf"
   },
@@ -28687,16 +29355,35 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "zile_ramase": 41,
+    "promotii": [
+      {
+        "nume": "Lichidare de stoc LNB – reduceri de pana la 70%",
+        "descriere": "Profita de lichidarea de stoc LNB si descopera peste 500 de produse profesionale pentru manichiura, la preturi reduse cu pana la 70%. Oferta include accesorii nail art, stickere, folii de transfer si produse din colectii care nu vor mai reveni. Stocurile sunt limitate, iar promotia este valabila pana la epuizarea acestora si nu se cumuleaza cu alte oferte.",
+        "cod_cupon": "",
+        "landing_page": "https://linailsboutique.ro/lichidare-de-stoc/",
+        "zile_ramase": 41,
+        "expira": "2026-09-30",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "Geluri UV LNB cu reduceri de pana la 50%",
+        "descriere": "Descopera gama de geluri UV LNB la preturi reduse cu pana la 50%. Alege dintre geluri de constructie, fiber gel, soft gel, forming gel, painting gel si baze profesionale, disponibile in numeroase nuante si texturi. Profita acum de oferta si completeaza-ti trusa cu produsele potrivite pentru manichiuri rezistente si rezultate impecabile.",
+        "cod_cupon": "",
+        "landing_page": "https://linailsboutique.ro/geluri-lnb",
+        "zile_ramase": 41,
+        "expira": "2026-09-30",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 404,
     "procent_succes": 92,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 30.0,
     "program_id": 13063,
     "unique_code": "54f9cf4f5"
   },
@@ -28940,16 +29627,26 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "are_promotie": true,
+    "cod_cupon": true,
+    "zile_ramase": 41,
+    "promotii": [
+      {
+        "nume": "5% Off Discount Code",
+        "descriere": "Code: BLEAGUE5\nType: Amount off order\nDetails\n\n    All customers\n    For Online Store\n    5% off entire order\n    No minimum purchase requirement\n    One use per customer\n    Can’t combine with other discounts\n    Active from 29 Sept 2025 to 30 Sept",
+        "cod_cupon": "BLEAGUE5",
+        "landing_page": "https://www.padelboost.co.uk/discount/BLEAGUE5",
+        "zile_ramase": 41,
+        "expira": "2026-09-29",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 301,
     "procent_succes": 81,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 50.0,
     "program_id": 13074,
     "unique_code": "c10249894"
   },
@@ -28967,16 +29664,26 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "zile_ramase": 10,
+    "promotii": [
+      {
+        "nume": "🔥 Pachete speciale IRON °FLASK: Seturi 2 in 1 Sticle Termice & Pahare de la 115 RON (Până la 63% Reducere)",
+        "descriere": "Ofertă de top pe Re-Bloom.ro: Seturi 2-în-1 de Sticle Termice & Pahare din Oțel Inoxidabil IRON °FLASK – Reduceri masive de până la 63%!\n\nOferă-le clienților tăi opțiunea ideală de smart-shopping: pachete duo cu sticle și pahare termice din oțel inoxidabil premium 18/8 (fără BPA), ideale pentru sport, birou, drumeții sau cadouri.\n\nPachete vedetă disponibile în campanie:\n\n💧 Set Sticlă 950 ml + Pahar 830 ml (cu pai & 2 capace) – 120 RON (Preț de bază 180 RON)\n\n💧 Set 2 Sticle Termice 950 ml + 650 m",
+        "cod_cupon": "",
+        "landing_page": "https://www.re-bloom.ro/catalog/brand/iron-%C2%B0flask-11000076",
+        "zile_ramase": 10,
+        "expira": "2026-08-30",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 576,
     "procent_succes": 73,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 30.0,
     "program_id": 13039,
     "unique_code": "1902d7d5b"
   },
@@ -29031,16 +29738,26 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "zile_ramase": 133,
+    "promotii": [
+      {
+        "nume": "Promotii periodice",
+        "descriere": "Preturi reduse, aceeasi calitate, profita de reducerile periodice la anumite produse! promotiile sunt in limita stocului disponibil si nu se cumuleaza cu alte oferte",
+        "cod_cupon": "",
+        "landing_page": "https://sofipex.ro/collections/promo%C8%9Bii",
+        "zile_ramase": 133,
+        "expira": "2026-12-30",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 544,
     "procent_succes": 85,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 30.0,
     "program_id": 13147,
     "unique_code": "598e2955a"
   },
@@ -29274,16 +29991,26 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "zile_ramase": 10,
+    "promotii": [
+      {
+        "nume": "Summer Sale - Reduceri de pana 50%",
+        "descriere": "Summer Sale la Onixbox! Reduceri de până la 50% la o gamă largă de bijuterii, numai bune de promovat în sezonul cald.\n\nCe oferim clienților:\n- până la 50% la bijuteriile personalizate prin gravare\n- 30% la bijuteriile din argint\n- 15% la bijuteriile din aur\n- livrare gratuită la comenzile peste 250 lei\n\nBijuteriile personalizate sunt cadoul perfect de vară, pentru aniversări, nunți, botezuri sau pur și simplu pentru răsfăț. Cu reduceri de până la 50% și livrare gratuită, sunt exact tipul de ofer",
+        "cod_cupon": "",
+        "landing_page": "https://www.onixbox.ro/",
+        "zile_ramase": 10,
+        "expira": "2026-08-30",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 158,
     "procent_succes": 73,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 30.0,
     "program_id": 10387,
     "unique_code": "8268bf1be"
   },
@@ -29760,16 +30487,26 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "zile_ramase": 10,
+    "promotii": [
+      {
+        "nume": "Up to 60% off",
+        "descriere": "Profită de campania de reduceri IntimPlay, unde clienții pot găsi o selecție de produse la prețuri reduse cu până la 60%. Categoria Promo include oferte din mai multe categorii, ideale pentru cei care caută produse de calitate la prețuri avantajoase.",
+        "cod_cupon": "",
+        "landing_page": "https://www.intimplay.ro/19-promotii?order=product.price.asc&page=2",
+        "zile_ramase": 10,
+        "expira": "2026-08-30",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 420,
     "procent_succes": 74,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 30.0,
     "program_id": 12986,
     "unique_code": "0602efbbe"
   },
@@ -29932,16 +30669,26 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "are_promotie": true,
+    "cod_cupon": true,
+    "zile_ramase": 12,
+    "promotii": [
+      {
+        "nume": "VerdaFlex: 2 flacoane la 209 lei + transport gratuit",
+        "descriere": "Nu doar colagen. VerdaFlex reunește 10 ingrediente într-o singură formulă, cu cantități clar declarate.\n\nPachetul Recomandat include 2 flacoane VerdaFlex la prețul final de 209 lei cu codul VERDA40, plus transport gratuit.\n\nCampania este valabilă până la 31 august 2026. Codul poate fi folosit de mai multe ori și nu este necesară crearea unui cont. Pe pagina produsului poate apărea mai întâi prețul standard; reducerea și totalul final de 209 lei sunt afișate în coș după aplicarea codului.",
+        "cod_cupon": "VERDA40",
+        "landing_page": "https://www.verdalis.ro/verdaflex-nu-doar-colagen",
+        "zile_ramase": 12,
+        "expira": "2026-08-31",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 641,
     "procent_succes": 83,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 50.0,
     "program_id": 13058,
     "unique_code": "ac0727a86"
   },
@@ -30131,16 +30878,26 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "zile_ramase": 133,
+    "promotii": [
+      {
+        "nume": "🔥Buy One, Get One Free Miniature",
+        "descriere": "Double your adventure with our Deals 1+1 collection! Browse a selection of premium fantasy miniatures included in our Buy One, Get One Free promotion and grow your collection for even greater value.\n\nChoose your favorite heroes, monsters, dragons, and creatures, then receive another eligible miniature for free. It's the perfect opportunity to expand your tabletop collection, prepare for your next Dungeons &amp; Dragons campaign, or add more high-quality 3D printed miniatures to your painting pro",
+        "cod_cupon": "",
+        "landing_page": "https://fantasyforge.ro/collections/promo-1-1",
+        "zile_ramase": 133,
+        "expira": "2026-12-30",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 397,
     "procent_succes": 77,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 30.0,
     "program_id": 13118,
     "unique_code": "3e883fd6f"
   },
@@ -30320,16 +31077,26 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "zile_ramase": 10,
+    "promotii": [
+      {
+        "nume": "Promotiile lunii 2026",
+        "descriere": "Aproape tot catalogul nostru este intr-o promotie, in acest moment, de pana la 55% discount la peste 700 de produse.",
+        "cod_cupon": "",
+        "landing_page": "https://www.kitchentools.ro/collections/reduceri",
+        "zile_ramase": 10,
+        "expira": "2026-08-30",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 18,
     "procent_succes": 75,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 30.0,
     "program_id": 13182,
     "unique_code": "af65ec007"
   },
@@ -30347,16 +31114,26 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "folosit_de": 0,
+    "are_promotie": true,
+    "cod_cupon": true,
+    "zile_ramase": 3,
+    "promotii": [
+      {
+        "nume": "10% reducere la produsele selectate Wolfy",
+        "descriere": "Folosește codul WOLFy-10 și beneficiezi de 10% reducere la produsele selectate din magazinul Wolfy.\n\nOferta include o gamă variată de echipamente și accesorii Wolfy din categoriile centuri, curele sling, pouch-uri și buzunare tactice, tocuri, veste, echipamente K9, genți și patch-uri.\n\nAlege produsele preferate din categoriile participante, adaugă-le în coș și introdu codul WOLFy-10  pentru a beneficia de reducere. Reducerea se aplică produselor eligibile din coș și nu se aplică costului de tran",
+        "cod_cupon": "WOLFy-10",
+        "landing_page": "https://wolfy.ro",
+        "zile_ramase": 3,
+        "expira": "2026-08-23",
+        "sursa": "csv_import"
+      }
+    ],
+    "folosit_de": 744,
     "procent_succes": 92,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-08-19",
-    "scor_final": 0.0,
+    "scor_final": 60.0,
     "program_id": 13188,
     "unique_code": "2757eb377"
   },
