@@ -1,0 +1,26 @@
+name: Programe 2Performant neaplicate
+
+# Manual. Cere catalogul COMPLET 2Performant si scade programele deja acceptate,
+# ordonand rezultatul dupa cati competitori au brandul (data/cerere-concurenta.json).
+# NU scrie si NU comite nimic — doar afiseaza raportul in log.
+# Ruleaza aici, nu local, fiindca datele de autentificare 2P sunt doar in Secrets.
+on:
+  workflow_dispatch:
+
+jobs:
+  raport:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Instaleaza dependinte
+        run: pip install requests
+      - name: Raport programe neaplicate
+        working-directory: scripts
+        env:
+          TWOPEFORMANT_EMAIL: ${{ secrets.TWOPEFORMANT_EMAIL }}
+          TWOPEFORMANT_PASS:  ${{ secrets.TWOPEFORMANT_PASS }}
+          TWOPEFORMANT_USER:  ${{ secrets.TWOPEFORMANT_USER }}
+        run: python programe_2p_neaplicate.py
