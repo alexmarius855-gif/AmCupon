@@ -39,10 +39,10 @@
     "verdict_m1": "Alege FashionDays daca vrei branduri premium si sales masive cu reduceri de pana la 80%. Ideal pentru ocazii speciale sau garderoba de sezon.",
     "verdict_m2": "Alege Answear pentru o selectie mai larga de branduri sportive si casual, cu preturi mai constante si disponibilitate buna.",
     "stats1": {
-      "promotii_active": 1,
-      "cashback": "pana la 5%",
-      "logo": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_fashiondays.ro_1713947169.jpg",
-      "url_afiliat": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/88736?sub_id=fashiondays.ro"
+      "promotii_active": 0,
+      "cashback": "vezi site",
+      "logo": null,
+      "url_afiliat": "https://fashiondays.ro"
     },
     "stats2": {
       "promotii_active": 0,
@@ -50,12 +50,7 @@
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/2561/medium/2561.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fanswear.ro"
     },
-    "promo1": [
-      {
-        "nume": "Best of EPIC",
-        "cod_cupon": ""
-      }
-    ],
+    "promo1": [],
     "promo2": [],
     "faq": [
       {
@@ -64,7 +59,7 @@
       },
       {
         "q": "Are Fashiondays coduri de reducere active?",
-        "a": "Da, Fashiondays are 1 oferta activa pe AmCupon.ro in august 2026. Verificam zilnic."
+        "a": "Momentan nu, Fashiondays are 0 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
       },
       {
         "q": "Are Answear coduri de reducere active?",
@@ -202,24 +197,32 @@
     "verdict_m1": "Alege Libris pentru transport gratuit la comenzi mai mici si reduceri zilnice mai frecvente. Ideal daca comanzi regulat si vrei cel mai mic pret per carte.",
     "verdict_m2": "Alege Carturesti pentru experienta completa cititor-librarie, acces la librarii fizice pentru ridicare si colectii editoriale curate.",
     "stats1": {
-      "promotii_active": 1,
+      "promotii_active": 0,
       "cashback": "pana la 8%",
-      "logo": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_libris.ro_1629366879.png",
-      "url_afiliat": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/61047?sub_id=libris.ro"
+      "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9868/medium/9868.gif",
+      "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro"
     },
     "stats2": {
-      "promotii_active": 0,
+      "promotii_active": 5,
       "cashback": "pana la 9%",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11380/medium/11380.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2F"
     },
-    "promo1": [
+    "promo1": [],
+    "promo2": [
       {
-        "nume": "Transport GRATUIT pentru ORICE colet, ORIUNDE în România!",
+        "nume": "Târg de carte III",
+        "cod_cupon": ""
+      },
+      {
+        "nume": "Vacanță cu joacă",
+        "cod_cupon": ""
+      },
+      {
+        "nume": "2+1 Editura Nemira",
         "cod_cupon": ""
       }
     ],
-    "promo2": [],
     "faq": [
       {
         "q": "Care este mai bun, Libris sau Carturesti?",
@@ -227,11 +230,11 @@
       },
       {
         "q": "Are Libris coduri de reducere active?",
-        "a": "Da, Libris are 1 oferta activa pe AmCupon.ro in august 2026. Verificam zilnic."
+        "a": "Momentan nu, Libris are 0 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
       },
       {
         "q": "Are Carturesti coduri de reducere active?",
-        "a": "Momentan nu, Carturesti are 0 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
+        "a": "Da, Carturesti are 5 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
       },
       {
         "q": "Unde gasesc cupoane pentru Libris si Carturesti?",
@@ -281,10 +284,10 @@
     "verdict_m1": "Alege eMAG pentru varietate maxima, livrare rapida si cel mai mare Black Friday din Romania. Ideal pentru electronice, electrocasnice si tot ce ai nevoie intr-un singur loc.",
     "verdict_m2": "Alege Elefant pentru carti, jocuri si produse educationale — selectia este mai curata si preturile la carti sunt adesea mai bune.",
     "stats1": {
-      "promotii_active": 2,
-      "cashback": "pana la 20%",
-      "logo": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_emag.ro_1570027386.png",
-      "url_afiliat": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/35?sub_id=emag.ro"
+      "promotii_active": 0,
+      "cashback": "vezi site",
+      "logo": null,
+      "url_afiliat": "https://emag.ro"
     },
     "stats2": {
       "promotii_active": 0,
@@ -292,16 +295,7 @@
       "logo": null,
       "url_afiliat": "https://elefant.ro"
     },
-    "promo1": [
-      {
-        "nume": "Crazy Days 11-19 august 2026",
-        "cod_cupon": ""
-      },
-      {
-        "nume": "Campanie Cosul Saptamanal, 11-31 august",
-        "cod_cupon": ""
-      }
-    ],
+    "promo1": [],
     "promo2": [],
     "faq": [
       {
@@ -310,7 +304,7 @@
       },
       {
         "q": "Are Emag coduri de reducere active?",
-        "a": "Da, Emag are 2 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
+        "a": "Momentan nu, Emag are 0 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
       },
       {
         "q": "Are Elefant coduri de reducere active?",
@@ -364,10 +358,10 @@
     "verdict_m1": "Alege eMAG cand ai nevoie urgent sau vrei garantii clare si produse verificate. Ideal pentru electronice, electrocasnice si produse de marca.",
     "verdict_m2": "Alege Temu pentru accesorii, produse de uz casnic si articole la preturi foarte mici unde calitatea exacta conteaza mai putin. Planifica dinainte — livrarea dureaza.",
     "stats1": {
-      "promotii_active": 2,
-      "cashback": "pana la 20%",
-      "logo": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_emag.ro_1570027386.png",
-      "url_afiliat": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/35?sub_id=emag.ro"
+      "promotii_active": 0,
+      "cashback": "vezi site",
+      "logo": null,
+      "url_afiliat": "https://emag.ro"
     },
     "stats2": {
       "promotii_active": 1,
@@ -375,16 +369,7 @@
       "logo": "https://www.google.com/s2/favicons?domain=temu.com&sz=128",
       "url_afiliat": "https://www.temu.com"
     },
-    "promo1": [
-      {
-        "nume": "Crazy Days 11-19 august 2026",
-        "cod_cupon": ""
-      },
-      {
-        "nume": "Campanie Cosul Saptamanal, 11-31 august",
-        "cod_cupon": ""
-      }
-    ],
+    "promo1": [],
     "promo2": [
       {
         "nume": "Temu - Reduceri pana la 90%",
@@ -398,7 +383,7 @@
       },
       {
         "q": "Are Emag coduri de reducere active?",
-        "a": "Da, Emag are 2 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
+        "a": "Momentan nu, Emag are 0 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
       },
       {
         "q": "Are Temu coduri de reducere active?",
@@ -526,7 +511,7 @@
     "verdict_m1": "Alege Dr. Max pentru o gama larga de medicamente OTC, suplimente si cosmetice internationale la preturi competitive cu livrare rapida.",
     "verdict_m2": "Alege Farmec daca vrei produse cosmetice romanesti de calitate (Gerovital, Aslavital) cu ingrediente naturale si preturi accesibile.",
     "stats1": {
-      "promotii_active": 0,
+      "promotii_active": 4,
       "cashback": "pana la 2%",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/8800/medium/8800.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2F"
@@ -537,7 +522,20 @@
       "logo": "https://www.google.com/s2/favicons?domain=farmec.ro&sz=128",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmec.ro"
     },
-    "promo1": [],
+    "promo1": [
+      {
+        "nume": "Max Days – Machiaj 18-24.08",
+        "cod_cupon": ""
+      },
+      {
+        "nume": "Pachet de Grijă – August",
+        "cod_cupon": ""
+      },
+      {
+        "nume": "Ofertele Lunii August",
+        "cod_cupon": ""
+      }
+    ],
     "promo2": [],
     "faq": [
       {
@@ -546,7 +544,7 @@
       },
       {
         "q": "Are Drmax coduri de reducere active?",
-        "a": "Momentan nu, Drmax are 0 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
+        "a": "Da, Drmax are 4 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
       },
       {
         "q": "Are Farmec coduri de reducere active?",
@@ -600,7 +598,7 @@
     "verdict_m1": "Alege Noriel pentru cadouri copii, jucarii educative si jocuri de societate. Selectia este neinegalata in Romania.",
     "verdict_m2": "Alege Decathlon pentru echipament sportiv copii si adulti la preturi imbatabile. Ideal pentru biciclete, camping, fotbal, inot.",
     "stats1": {
-      "promotii_active": 0,
+      "promotii_active": 4,
       "cashback": "pana la 7%",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/7926/medium/7926.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnoriel.ro%2F"
@@ -611,7 +609,20 @@
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11445/medium/11445.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.decathlon.ro"
     },
-    "promo1": [],
+    "promo1": [
+      {
+        "nume": "Concurs Lego Back to School | 10.08-08.09.2026",
+        "cod_cupon": ""
+      },
+      {
+        "nume": "Catalog Oferte Back to school 2026 | 06.08-30.09.2026",
+        "cod_cupon": ""
+      },
+      {
+        "nume": "Back to School | 30% REDUCERE la TOATE Ghiozdanele |06.08-30.09.2026",
+        "cod_cupon": ""
+      }
+    ],
     "promo2": [],
     "faq": [
       {
@@ -620,7 +631,7 @@
       },
       {
         "q": "Are Noriel coduri de reducere active?",
-        "a": "Momentan nu, Noriel are 0 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
+        "a": "Da, Noriel are 4 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
       },
       {
         "q": "Are Decathlon coduri de reducere active?",
@@ -674,10 +685,10 @@
     "verdict_m1": "Alege FashionDays pentru branduri europene de calitate cu livrare rapida si retururi simple. Sales-urile de sezon pot fi chiar mai ieftine decat Shein.",
     "verdict_m2": "Alege Shein daca vrei sa testezi tendinte rapid la preturi minime si esti dispus sa astepti livrarea. Perfecta pentru reinnoire frecventa garderoba.",
     "stats1": {
-      "promotii_active": 1,
-      "cashback": "pana la 5%",
-      "logo": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_fashiondays.ro_1713947169.jpg",
-      "url_afiliat": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/88736?sub_id=fashiondays.ro"
+      "promotii_active": 0,
+      "cashback": "vezi site",
+      "logo": null,
+      "url_afiliat": "https://fashiondays.ro"
     },
     "stats2": {
       "promotii_active": 1,
@@ -685,12 +696,7 @@
       "logo": "https://www.google.com/s2/favicons?domain=shein.com&sz=128",
       "url_afiliat": "https://www.shein.com"
     },
-    "promo1": [
-      {
-        "nume": "Best of EPIC",
-        "cod_cupon": ""
-      }
-    ],
+    "promo1": [],
     "promo2": [
       {
         "nume": "SHEIN - Fashion la preturi mici",
@@ -704,7 +710,7 @@
       },
       {
         "q": "Are Fashiondays coduri de reducere active?",
-        "a": "Da, Fashiondays are 1 oferta activa pe AmCupon.ro in august 2026. Verificam zilnic."
+        "a": "Momentan nu, Fashiondays are 0 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
       },
       {
         "q": "Are Shein coduri de reducere active?",
@@ -758,10 +764,10 @@
     "verdict_m1": "Alege Libris pentru cel mai mare stoc de carti si transport gratuit la comenzi mai mici. Preturile la bestsellers sunt adesea mai bune.",
     "verdict_m2": "Alege Elefant daca vrei si alte produse (electronice, jocuri) intr-o singura comanda alaturi de carti.",
     "stats1": {
-      "promotii_active": 1,
+      "promotii_active": 0,
       "cashback": "pana la 8%",
-      "logo": "https://app.profitshare.ro/files_shared/advertiser-logos/logo_libris.ro_1629366879.png",
-      "url_afiliat": "https://l.profitshare.ro/l/marinescu_alex_marius_6a1454f45dc33/61047?sub_id=libris.ro"
+      "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9868/medium/9868.gif",
+      "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro"
     },
     "stats2": {
       "promotii_active": 0,
@@ -769,12 +775,7 @@
       "logo": null,
       "url_afiliat": "https://elefant.ro"
     },
-    "promo1": [
-      {
-        "nume": "Transport GRATUIT pentru ORICE colet, ORIUNDE în România!",
-        "cod_cupon": ""
-      }
-    ],
+    "promo1": [],
     "promo2": [],
     "faq": [
       {
@@ -783,7 +784,7 @@
       },
       {
         "q": "Are Libris coduri de reducere active?",
-        "a": "Da, Libris are 1 oferta activa pe AmCupon.ro in august 2026. Verificam zilnic."
+        "a": "Momentan nu, Libris are 0 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
       },
       {
         "q": "Are Elefant coduri de reducere active?",

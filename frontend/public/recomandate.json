@@ -1,74 +1,110 @@
 [
-  {
-    "magazin": "hairify.ro",
-    "nume": "Hairify",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14301/medium/14301.png",
-    "categorie": "Beauty & Îngrijire",
-    "comision": 24.0,
-    "are_cod": true,
-    "oferta": "15% Discount la fibrele de păr din cheratină pentru păr rar și chelie"
-  },
-  {
-    "magazin": "moftcollection.ro",
-    "nume": "Moftcollection",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13200/medium/13200.png",
-    "categorie": "Electronice & IT",
-    "comision": 20.0,
-    "are_cod": false,
-    "oferta": "Pana la -75% la huse silicon Iphone + CADOU la fiecare comanda"
-  },
-  {
-    "magazin": "femieko.ro",
-    "nume": "Femieko",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/10996/medium/10996.png",
-    "categorie": "Sănătate & Farmacie",
-    "comision": 19.0,
-    "are_cod": false,
-    "oferta": "Provocarea Femieko 2026 – Câștigă premii și comision de 19%!"
-  },
-  {
-    "magazin": "manukashop.ro",
-    "nume": "Manukashop",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/8626/medium/8626.png",
-    "categorie": "Sănătate & Farmacie",
-    "comision": 18.0,
-    "are_cod": false,
-    "oferta": "Transport gratuit la orice comanda!"
-  },
-  {
-    "magazin": "e-potion.ro",
-    "nume": "E Potion",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14406/medium/14406.jpg",
-    "categorie": "Sănătate & Farmacie",
-    "comision": 12.0,
-    "are_cod": true,
-    "oferta": "10% reducere pe tot site-ul e-Potion.ro"
-  },
-  {
-    "magazin": "incaltamintelamoda.ro",
-    "nume": "Incaltamintelamoda",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14335/medium/14335.jpg",
-    "categorie": "Fashion",
-    "comision": 12.0,
-    "are_cod": true,
-    "oferta": "Reduceri de până la 47% la încălțăminte din piele naturală"
-  },
-  {
-    "magazin": "labelshop.ro",
-    "nume": "Labelshop",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9364/medium/9364.png",
-    "categorie": "Fashion",
-    "comision": 15.0,
-    "are_cod": false,
-    "oferta": "Profita acum de reduceri intre 5% si 15% la echipamente si consumabile"
-  },
-  {
-    "magazin": "curteaveche.ro",
-    "nume": "Curteaveche",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11045/medium/11045.png",
-    "categorie": "Cărți & Educație",
-    "comision": 15.0,
-    "are_cod": false,
-    "oferta": "Pana la 90% reducere"
-  }
+ {
+  "magazin": "hairify.ro",
+  "nume": "Hairify",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14301/medium/14301.png",
+  "categorie": "Beauty & Îngrijire",
+  "comision": 24.0,
+  "are_cod": true,
+  "oferta": "15% Discount la fibrele de păr din cheratină pentru păr rar și chelie"
+ },
+ {
+  "magazin": "priveboutique.net",
+  "nume": "Priveboutique",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/1570/medium/1570.png",
+  "categorie": "Fashion",
+  "comision": 15.0,
+  "are_cod": true,
+  "oferta": "PB20 - Sezon banchet & majorat: -20% la toate rochiile PRIVE"
+ },
+ {
+  "magazin": "verdalis.ro",
+  "nume": "Verdalis",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14403/medium/14403.png",
+  "categorie": "Sănătate & Farmacie",
+  "comision": 15.0,
+  "are_cod": true,
+  "oferta": "VerdaFlex: 2 flacoane la 209 lei + transport gratuit"
+ },
+ {
+  "magazin": "moftcollection.ro",
+  "nume": "Moftcollection",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13200/medium/13200.png",
+  "categorie": "Electronice & IT",
+  "comision": 20.0,
+  "are_cod": false,
+  "oferta": "Pana la -75% la huse silicon Iphone + CADOU la fiecare comanda"
+ },
+ {
+  "magazin": "dreamramp.ro",
+  "nume": "Dreamramp",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14473/medium/14473.png",
+  "categorie": "Casă & Grădină",
+  "comision": 20.0,
+  "are_cod": false,
+  "oferta": "Reducere 15% la Mop cu găleată electrică Dreamramp® Pro – Separă apa c"
+ },
+ {
+  "magazin": "femieko.ro",
+  "nume": "Femieko",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/10996/medium/10996.png",
+  "categorie": "Sănătate & Farmacie",
+  "comision": 19.0,
+  "are_cod": false,
+  "oferta": "Provocarea Femieko 2026 – Câștigă premii și comision de 19%!"
+ },
+ {
+  "magazin": "manukashop.ro",
+  "nume": "Manukashop",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/8626/medium/8626.png",
+  "categorie": "Sănătate & Farmacie",
+  "comision": 18.0,
+  "are_cod": false,
+  "oferta": "Transport gratuit la orice comanda!"
+ },
+ {
+  "magazin": "e-potion.ro",
+  "nume": "E Potion",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14406/medium/14406.jpg",
+  "categorie": "Sănătate & Farmacie",
+  "comision": 12.0,
+  "are_cod": true,
+  "oferta": "10% reducere pe tot site-ul e-Potion.ro"
+ },
+ {
+  "magazin": "incaltamintelamoda.ro",
+  "nume": "Incaltamintelamoda",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14335/medium/14335.jpg",
+  "categorie": "Fashion",
+  "comision": 12.0,
+  "are_cod": true,
+  "oferta": "Reduceri de până la 47% la încălțăminte din piele naturală"
+ },
+ {
+  "magazin": "labelshop.ro",
+  "nume": "Labelshop",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9364/medium/9364.png",
+  "categorie": "Fashion",
+  "comision": 15.0,
+  "are_cod": false,
+  "oferta": "Profita acum de reduceri intre 5% si 15% la echipamente si consumabile"
+ },
+ {
+  "magazin": "curteaveche.ro",
+  "nume": "Curteaveche",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11045/medium/11045.png",
+  "categorie": "Cărți & Educație",
+  "comision": 15.0,
+  "are_cod": false,
+  "oferta": "Pana la 90% reducere"
+ },
+ {
+  "magazin": "intimplay.ro",
+  "nume": "Intimplay",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14306/medium/14306.jpg",
+  "categorie": "Marketplace",
+  "comision": 15.0,
+  "are_cod": false,
+  "oferta": "Up to 60% off"
+ }
 ]

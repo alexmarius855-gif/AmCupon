@@ -1,40 +1,40 @@
 # 💰 TOP MAGAZINE după POTENȚIAL DE CÂȘTIG
-> Generat automat 19.08.2026 09:43. Pe astea să le împingi (articole, pin-uri, postări).
+> Generat automat 20.08.2026 09:43. Pe astea să le împingi (articole, pin-uri, postări).
 
 **Scor = comision × popularitate × ofertă.** Comisionul mare singur înșală — astea-s banii REALI.
 
 | # | Magazin | Comision | Vânzări | Are ofertă? | Scor |
 |---|---------|----------|---------|-------------|------|
 | 1 | Hairify (hairify.ro) | 24% | 0 | ✅ COD | 48.0 |
-| 2 | Emag (emag.ro) | 20% | 0 | 🏷️ ofertă | 28.0 |
-| 3 | Moftcollection (moftcollection.ro) | 20% | 0 | 🏷️ ofertă | 28.0 |
-| 4 | Femieko (femieko.ro) | 19% | 0 | 🏷️ ofertă | 26.6 |
-| 5 | Manukashop (manukashop.ro) | 18% | 0 | 🏷️ ofertă | 25.2 |
-| 6 | E Potion (e-potion.ro) | 12% | 0 | ✅ COD | 24.0 |
-| 7 | Incaltamintelamoda (incaltamintelamoda.ro) | 12% | 0 | ✅ COD | 24.0 |
-| 8 | Labelshop (labelshop.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 9 | Curteaveche (curteaveche.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 10 | Evrik (evrik.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
-| 11 | Itgalaxy (itgalaxy.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 12 | Pint (pint.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 13 | Craftup (craftup.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 14 | Fara Daunatori (fara-daunatori.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 15 | Jojofashion (jojofashion.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 16 | Exclusive Home (exclusive-home.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 17 | Doctorshield (doctorshield.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 18 | Brainmarket (brainmarket.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 19 | Estel (estel.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 20 | Niculescu (niculescu.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 21 | Sanoverde (sanoverde.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 22 | Librarie (librarie.net) | 9% | 0 | 🏷️ ofertă | 12.6 |
-| 23 | Editura Arthur (editura-arthur.ro) | 9% | 0 | 🏷️ ofertă | 12.6 |
-| 24 | Surfshark (surfshark.com) | 40% | 0 | — | 12.5 |
-| 25 | Hostinger (hostinger.ro) | 60% | 0 | — | 12.5 |
-| 26 | Shopify (shopify.com) | 150% | 0 | — | 12.5 |
-| 27 | Bitdefender (bitdefender.ro) | 40% | 0 | — | 12.5 |
-| 28 | Us (us.norton.com) | 25% | 0 | — | 12.5 |
-| 29 | Coursera (coursera.org) | 45% | 0 | — | 12.5 |
-| 30 | Revolut (revolut.com) | 200% | 0 | — | 12.5 |
+| 2 | Priveboutique (priveboutique.net) | 15% | 0 | ✅ COD | 30.0 |
+| 3 | Verdalis (verdalis.ro) | 15% | 0 | ✅ COD | 30.0 |
+| 4 | Moftcollection (moftcollection.ro) | 20% | 0 | 🏷️ ofertă | 28.0 |
+| 5 | Dreamramp (dreamramp.ro) | 20% | 0 | 🏷️ ofertă | 28.0 |
+| 6 | Femieko (femieko.ro) | 19% | 0 | 🏷️ ofertă | 26.6 |
+| 7 | Manukashop (manukashop.ro) | 18% | 0 | 🏷️ ofertă | 25.2 |
+| 8 | E Potion (e-potion.ro) | 12% | 0 | ✅ COD | 24.0 |
+| 9 | Incaltamintelamoda (incaltamintelamoda.ro) | 12% | 0 | ✅ COD | 24.0 |
+| 10 | Labelshop (labelshop.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 11 | Curteaveche (curteaveche.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 12 | Intimplay (intimplay.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 13 | Liki24 (liki24.co.uk) | 10% | 0 | ✅ COD | 20.0 |
+| 14 | Videt (videt.ro) | 10% | 0 | ✅ COD | 20.0 |
+| 15 | Edituracorint (edituracorint.ro) | 10% | 0 | ✅ COD | 20.0 |
+| 16 | Nano Auto (nano-auto.ro) | 10% | 0 | ✅ COD | 20.0 |
+| 17 | Aronia Charlottenburg (aronia-charlottenburg.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
+| 18 | Yves Rocher (yves-rocher.ro) | 8% | 0 | ✅ COD | 16.0 |
+| 19 | Wolfy (wolfy.ro) | 8% | 0 | ✅ COD | 16.0 |
+| 20 | Craftup (craftup.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 21 | Fara Daunatori (fara-daunatori.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 22 | Jojofashion (jojofashion.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 23 | Doctorshield (doctorshield.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 24 | Brainmarket (brainmarket.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 25 | Davopro (davopro.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 26 | Estel (estel.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 27 | Nuvien (nuvien.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 28 | Re Bloom (re-bloom.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 29 | Niculescu (niculescu.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 30 | Linailsboutique (linailsboutique.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
 
 ## 🎯 Cum folosești raportul
 - **Top 10** = prioritate maximă pentru articole „cel mai bun X" + pin-uri Pinterest
