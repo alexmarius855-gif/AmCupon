@@ -16962,5 +16962,30 @@
     "exclusiv": false,
     "platforma": "impact",
     "descriere": ""
+  },
+  {
+    "magazin": "Luxxury beauty Ltd",
+    "url": "https://www.vixxar.com",
+    "url_afiliat": "https://luxxurybeautyltd.pxf.io/c/7401119/3865097/51511",
+    "logo_url": "",
+    "categorie": "Beauty",
+    "categorie_slug": "beauty",
+    "comision": "Variabil",
+    "rank": null,
+    "scor_afiliere": 50,
+    "scor_final": 50,
+    "prioritate": "standard",
+    "canal_recomandat": "Content, SEO, Social",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 0,
+    "promotii": [],
+    "folosit_de": 0,
+    "procent_succes": 85,
+    "exclusiv": false,
+    "platforma": "impact",
+    "descriere": ""
   }
 ]

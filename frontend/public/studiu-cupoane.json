@@ -1,6 +1,6 @@
 {
   "generat": "2026-08-20",
-  "total_magazine": 1116,
+  "total_magazine": 1115,
   "cu_promotie": 89,
   "cu_cod_real": 18,
   "doar_oferta": 71,
@@ -12,7 +12,7 @@
     {
       "slug": "electronice",
       "nume": "Electronice & IT",
-      "magazine": 113,
+      "magazine": 114,
       "cu_promotie": 4,
       "reducere_mediana": 75,
       "reducere_max": 80,
@@ -30,7 +30,7 @@
     {
       "slug": "marketplace",
       "nume": "Marketplace",
-      "magazine": 208,
+      "magazine": 207,
       "cu_promotie": 5,
       "reducere_mediana": 60,
       "reducere_max": 90,
@@ -165,7 +165,7 @@
     {
       "slug": "auto-moto",
       "nume": "Auto & moto",
-      "magazine": 28,
+      "magazine": 27,
       "cu_promotie": 2,
       "reducere_mediana": null,
       "reducere_max": null,
