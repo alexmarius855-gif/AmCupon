@@ -57,6 +57,50 @@ export const REDIRECTURI: Redirect[] = [
   { source: "/cod-reducere/mathaus.ro",        destination: "/categorii/casa-gradina",  permanent: true },
   { source: "/cod-reducere/vapetronic.ro",     destination: "/categorii/marketplace",   permanent: true },
 
+
+  // -- Taxonomie veche, ELIMINATA la commit b048300 --------------------------
+  // "Taxonomie canonica: 40 etichete fragmentate -> 18 categorii RO curate".
+  // Slugurile vechi (jumatate in engleza) au ramas 404 de atunci. Descoperit
+  // 21.08.2026 din GSC: "Nu a fost gasita (404) - 35 pagini, validare esuata".
+  // Am testat live toate cele 38 de sluguri vechi: 29 raspundeau 404.
+  //
+  // A PATRA oara cand tiparul asta loveste proiectul (vezi docs/LECTII-TEHNICE.md).
+  // Regula: cand redenumesti un slug care a fost VREODATA public, redirectul se scrie
+  // in ACELASI commit cu redenumirea. Un 404 pe o pagina indexata nu e o pagina lipsa,
+  // e un semnal de calitate slaba trimis lui Google.
+  //
+  // Fiecare destinatie a fost verificata live ca raspunde 200 inainte de commit -
+  // un redirect catre alt 404 ar fi fost mai rau decat 404-ul original.
+  { source: "/categorii/ai-tools",            destination: "/ai-tools", permanent: true },
+  { source: "/categorii/automotive",          destination: "/categorii/auto-moto", permanent: true },
+  { source: "/categorii/babies-kids-toys",    destination: "/categorii/copii", permanent: true },
+  { source: "/categorii/books",               destination: "/categorii/carti-educatie", permanent: true },
+  { source: "/categorii/calatorie",           destination: "/categorii/calatorii", permanent: true },
+  { source: "/categorii/carduri-bancare",     destination: "/carduri-bancare", permanent: true },
+  { source: "/categorii/casa",                destination: "/categorii/casa-gradina", permanent: true },
+  { source: "/categorii/cursuri-online",      destination: "/cursuri-online", permanent: true },
+  { source: "/categorii/diverse",             destination: "/categorii", permanent: true },
+  { source: "/categorii/electronics-itc",     destination: "/categorii/electronice", permanent: true },
+  { source: "/categorii/farmacie",            destination: "/categorii/sanatate", permanent: true },
+  { source: "/categorii/flowers-gifts",       destination: "/categorii/cadouri-flori", permanent: true },
+  { source: "/categorii/food-beverages",      destination: "/categorii/mancare-bauturi", permanent: true },
+  { source: "/categorii/frumusete",           destination: "/categorii/beauty", permanent: true },
+  { source: "/categorii/games",               destination: "/jocuri", permanent: true },
+  { source: "/categorii/gifts-flowers",       destination: "/categorii/cadouri-flori", permanent: true },
+  { source: "/categorii/health-personal-care", destination: "/categorii/sanatate", permanent: true },
+  { source: "/categorii/home-garden",         destination: "/categorii/casa-gradina", permanent: true },
+  { source: "/categorii/hosting",             destination: "/hosting", permanent: true },
+  { source: "/categorii/idei-cadouri",        destination: "/idei-cadouri", permanent: true },
+  { source: "/categorii/jewelry-accessories", destination: "/categorii/bijuterii", permanent: true },
+  { source: "/categorii/jocuri",              destination: "/jocuri", permanent: true },
+  { source: "/categorii/online-mall",         destination: "/categorii/marketplace", permanent: true },
+  { source: "/categorii/pet-supplies",        destination: "/categorii/animale", permanent: true },
+  { source: "/categorii/pharma",              destination: "/categorii/sanatate", permanent: true },
+  { source: "/categorii/software-business",   destination: "/software-business", permanent: true },
+  { source: "/categorii/sports-outdoors",     destination: "/categorii/sport", permanent: true },
+  { source: "/categorii/supermarket",         destination: "/supermarket", permanent: true },
+  { source: "/categorii/telecom",             destination: "/categorii/servicii", permanent: true },
+
   // ── Pagini de brand STERSE fizic (app/emag/, app/libris/ etc. nu mai exista) ──
   { source: "/emag",        destination: "/categorii/marketplace",  permanent: true },
   { source: "/fashiondays", destination: "/fashion",                permanent: true },

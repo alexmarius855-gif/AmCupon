@@ -42,7 +42,7 @@ fi rupt 30+ hoteluri clasificate corect (`zenhotels`, `savelectro`) — măsurat
 ## 2. Taxonomie moartă care supraviețuiește migrărilor
 
 `categorie_slug` a migrat demult din engleză în română. Resturile englezești au fost găsite în
-**3 valuri**, la săptămâni distanță — de fiecare dată credeam că le-am prins pe toate.
+**4 valuri**, la săptămâni distanță — de fiecare dată credeam că le-am prins pe toate.
 
 - 09.08: `app/categorii/page.tsx` (18 linkuri → 404) + `generate_store_descriptions.py` (237 de
   descrieri identice)
@@ -50,10 +50,22 @@ fi rupt 30+ hoteluri clasificate corect (`zenhotels`, `savelectro`) — măsurat
   `/flori` avea chiar **dublă condiție moartă** (slug EN + `categorie.includes("flower")`, dar
   eticheta reală e „Cadouri & Flori") → 0 magazine, mereu.
 
+- 21.08: **al 4-lea val, cel mai scump** — de data asta nu în cod, ci în URL-uri publice.
+  Exportul GSC a arătat „Nu a fost găsită (404) — 35 de pagini, validare eșuată". Am testat live
+  toate cele 38 de sluguri de dinainte de commit `b048300`: **29 răspundeau 404**, din iulie.
+  Nu erau linkuri moarte în cod (alea fuseseră reparate în valurile 1-3) — erau adresele vechi,
+  pe care Google le avea deja indexate, rămase fără redirect.
+
 **Regula:** după orice migrare de taxonomie, `grep` pe `categorie_slug ===` și compară fiecare
 valoare cu lista reală din date. Nu presupune că o migrare anterioară le-a prins pe toate.
 Documentația stale a fost ea însăși cauza — tabelul din `CLAUDE.md` a rămas pe engleză luni întregi
 și a indus în eroare.
+
+**Regula a doua, adăugată 21.08:** reparatul linkurilor interne NU e suficient. Când redenumești
+un slug care a fost vreodată public, redirectul 301 se scrie în **același commit** cu redenumirea.
+Un link intern rupt îl vezi la primul click; o adresă veche fără redirect e invizibilă local și
+trăiește luni întregi ca semnal de calitate slabă către Google. Valurile 1-3 au reparat codul.
+Valul 4 a fost tot ce codul nu putea arăta.
 
 ---
 
