@@ -91,7 +91,6 @@ const BRAND_PAGES = [
   { href: "/sportdepot",  name: "Sport Depot",  emoji: "⚽" },
   { href: "/automobilus", name: "Automobilus",  emoji: "🚗" },
   { href: "/litera",      name: "Litera",       emoji: "📚" },
-  { href: "/pcmadd",      name: "PC Madd",      emoji: "💻" },
   { href: "/otter",       name: "Otter",        emoji: "🧢" },
   { href: "/temu",        name: "Temu",         emoji: "🛍️" },
   { href: "/shein",       name: "SHEIN",        emoji: "👗" },

@@ -5,7 +5,11 @@ export const metadata: Metadata = {
   title: "Cod Reducere BookZone — Carti Online 2026 | AmCupon.ro",
   description: "Coduri de reducere BookZone actualizate zilnic. Reduceri la carti, audiobooks si e-books. Promotii BookZone verificate.",
   keywords: ["cod reducere bookzone", "bookzone reduceri", "carti online reduceri", "bookzone promotii", "bookzone discount"],
-  alternates: { canonical: "https://amcupon.ro/cod-reducere/bookzone.ro" },
+  // bookzone.ro a iesit din output.json (programul 2P nu mai e activ), deci
+  // pagina de magazin da 404. Canonical catre un 404 e mai rau decat un link
+  // rupt — ii spune lui Google ca adresa canonica nu exista. Regula din 10.08:
+  // brandurile fara pagina de magazin isi pastreaza canonical propriu.
+  alternates: { canonical: "https://amcupon.ro/bookzone" },
   openGraph: { title: "Reduceri BookZone 2026 | AmCupon.ro", url: "https://amcupon.ro/bookzone", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
 };
 

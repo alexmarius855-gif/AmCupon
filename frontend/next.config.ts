@@ -61,6 +61,7 @@ const nextConfig: NextConfig = {
       { source: "/fashiondays", destination: "/fashion", permanent: true },
       { source: "/libris", destination: "/carti", permanent: true },
       { source: "/vegis", destination: "/sanatate", permanent: true },
+      { source: "/pcmadd", destination: "/categorii/electronice", permanent: true },
     ];
   },
 
