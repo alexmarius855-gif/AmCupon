@@ -125,7 +125,8 @@ NETWORKS = {
         "platforma": "impact",
     },
     "awin": {
-        # Awin export: "My Account > Toolbox > Create-a-Feed" sau "Joined Programmes" CSV
+        # Awin export: "Joined Programmes" CSV (are `Click Through Link`) SAU
+        # "Advertiser Directory" (NU are link, dar are `advertiserId`).
         "file": "awin_export.csv",
         "encoding": "utf-8-sig",
         "col_url": "Advertiser Display URL",
@@ -136,6 +137,12 @@ NETWORKS = {
         "col_status": "Status",
         "status_active": "Active",
         "platforma": "awin",
+        # Cand lipseste coloana de link, il CONSTRUIM din id-ul advertiserului.
+        # Formatul nu e ghicit: e identic cu cele 16 linkuri Awin care functioneaza
+        # deja in output.json din iulie (`cread.php?awinmid=...&awinaffid=101829567&clickref=`).
+        # `clickref` ramane gol intentionat — acolo scrie `subId.ts` pagina de origine.
+        "col_id": "advertiserId",
+        "link_template": "https://www.awin1.com/cread.php?awinmid={id}&awinaffid=101829567&clickref=",
     },
     "cj": {
         # CJ Affiliate: "Advertisers > Export joined" CSV
@@ -235,13 +242,13 @@ def load_existing_slugs():
 # Name" — iar un import care cade pe un titlu de coloana pare "CSV gol" si trimite
 # pe piste false. Cautam pe rand fiecare varianta, apoi cadem pe potrivire partiala.
 ALIAS_COLOANE = {
-    "col_url": ["Advertiser URL", "Advertiser Display URL", "Site", "Website", "URL",
-                "Site web", "Adresa site", "Domeniu", "Program URL"],
-    "col_name": ["Program Name", "Advertiser Name", "Name", "Nume", "Denumire",
-                 "Agent de publicitate", "Numele agentului de publicitate",
-                 "Nume program", "Advertiser", "Partener"],
-    "col_category": ["Advertiser Category", "Primary Sector", "Category", "Categories",
-                     "Categorie", "Categoria agentului de publicitate", "Sector"],
+    "col_url": ["Advertiser URL", "Advertiser Display URL", "displayUrl", "Site",
+                "Website", "URL", "Site web", "Adresa site", "Domeniu", "Program URL"],
+    "col_name": ["Program Name", "Advertiser Name", "programmeName", "Advertiser_Name",
+                 "Name", "Nume", "Denumire", "Agent de publicitate",
+                 "Numele agentului de publicitate", "Nume program", "Advertiser", "Partener"],
+    "col_category": ["Advertiser Category", "Primary Sector", "primarySector", "Category",
+                     "Categories", "Categorie", "Categoria agentului de publicitate", "Sector"],
     "col_link": ["Tracking Link", "Click Through Link", "Link", "GoToLink",
                  "Legatura", "Legătură", "Link de urmarire", "Link afiliat",
                  "Destination URL", "Tracking URL"],
@@ -249,22 +256,41 @@ ALIAS_COLOANE = {
                    "Comisia editorului", "Comision editor"],
     "col_status": ["Contract Status", "Status", "Relationship Status", "Stare",
                    "Statut", "Stare relatie", "Stare relație"],
+    "col_id": ["advertiserId", "Advertiser_ID", "Advertiser ID", "Program ID",
+               "ID", "Id agent de publicitate", "mid", "CID"],
 }
+
+
+# Campuri la care potrivirea PARTIALA de titlu e periculoasa. Exemplu real, prins
+# la primul import Awin: exportul are `paymentStatus` ("amber"/"green"), care s-a
+# potrivit cu aliasul "Status" si a filtrat TOATE cele 49 de randuri ca "inactive".
+# Statusul relatiei se citeste doar din titluri exacte.
+DOAR_EXACT = {"col_status"}
 
 
 def _valoare(row: dict, cfg: dict, camp: str) -> str:
     """Citeste un camp incercand, in ordine: coloana din preset, apoi aliasurile,
-    apoi o potrivire partiala case-insensitive pe titlurile reale din fisier."""
+    apoi (unde e sigur) o potrivire partiala pe titlurile reale din fisier."""
     principal = cfg.get(camp)
     if principal and principal in row:
         return (row.get(principal) or "").strip()
     for alt in ALIAS_COLOANE.get(camp, []):
         if alt in row:
             return (row.get(alt) or "").strip()
-    tinte = [t.lower() for t in ([principal] if principal else []) + ALIAS_COLOANE.get(camp, [])]
+    if camp in DOAR_EXACT:
+        return ""
+
+    # Potrivire NORMALIZATA EXACTA (fara spatii/underscore/liniute/case) — NU pe subsir.
+    # Subsirul a produs exact bug-ul documentat de 4 ori in docs/LECTII-TEHNICE.md:
+    # cautand "URL" s-a potrivit `logoUrl`, deci toate cele 49 de randuri Awin au
+    # primit ca domeniu `ui.awin.com` (gazda logo-urilor) si a intrat un magazin fals
+    # in date. Cand exista un titlu de coloana potrivit, se potriveste EXACT.
+    def _norm(x: str) -> str:
+        return "".join(ch for ch in (x or "").lower() if ch.isalnum())
+
+    tinte = {_norm(t) for t in ([principal] if principal else []) + ALIAS_COLOANE.get(camp, []) if t}
     for cheie in row:
-        k = (cheie or "").strip().lower()
-        if any(t and (t in k or k in t) for t in tinte):
+        if _norm(cheie) in tinte:
             return (row.get(cheie) or "").strip()
     return ""
 
@@ -274,6 +300,13 @@ def build_merchant(row, cfg, existing):
     name = _valoare(row, cfg, "col_name")
     category = _valoare(row, cfg, "col_category")
     link = _valoare(row, cfg, "col_link")
+    # Fallback: unele exporturi (Awin "Advertiser Directory", CJ "Advertisers") nu
+    # contin coloana de link, dar contin ID-ul programului. Il construim DOAR daca
+    # reteaua are un sablon declarat explicit — niciodata inventat pe loc.
+    if not link and cfg.get("link_template") and cfg.get("col_id"):
+        id_prog = _valoare(row, cfg, "col_id")
+        if id_prog:
+            link = cfg["link_template"].format(id=id_prog)
     payout = _valoare(row, cfg, "col_payout")
 
     if not link or not url:
@@ -359,7 +392,10 @@ def main():
     print(f"Randuri: {len(rows)} total, {len(active)} active")
     if rows:
         print(f"Coloane gasite in fisier: {', '.join(list(rows[0].keys())[:12])}")
-        lipsa = [c for c in ("col_url", "col_name", "col_link") if not _valoare(rows[0], cfg, c)]
+        obligatorii = ["col_url", "col_name"]
+        if not (cfg.get("link_template") and cfg.get("col_id")):
+            obligatorii.append("col_link")
+        lipsa = [c for c in obligatorii if not _valoare(rows[0], cfg, c)]
         if lipsa:
             print(f"  ATENTIE: nu gasesc coloana pentru {lipsa}. "
                   f"Probabil e exportul gresit (raport de performanta in loc de lista de programe)"
