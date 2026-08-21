@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { REDIRECTURI } from "./lib/redirecturi";
 
 const ALLOWED_ORIGINS = [
   "https://amcupon.ro",
@@ -20,49 +21,11 @@ const nextConfig: NextConfig = {
   },
 
   // ── Redirecturi permanente ──────────────────────────────────────────────
-  // Uneltele de calcul (reduceri, salariu net, TVA, generator proforma) au fost
-  // ELIMINATE 11.08.2026, decizie explicita Alex: cele fiscale dadeau cifre care
-  // se schimba prin lege (cote CAS/CASS/impozit, cote TVA) si te pot expune daca
-  // cineva isi calculeaza gresit obligatiile, iar generatorul de proforma producea
-  // un document cu aspect oficial intr-un context in care e-Factura e obligatorie
-  // din 2024. Nu au fost sterse pur si simplu: erau indexate si primeau trafic, deci
-  // redirect 301 catre /servicii — semnalul SEO acumulat se transfera catre o pagina
-  // utila, iar linkurile vechi (interne sau externe) nu ajung in 404.
-  // Daca se reiau vreodata: NU repune calcule fiscale fara sursa oficiala verificata
-  // la fiecare rulare + disclaimer explicit; varianta fara risc e aritmetica pura
-  // (procente, reduceri), nu cote reglementate.
+  // Lista traieste in `lib/redirecturi.ts`, ca sa fie ACEEASI sursa citita si de
+  // `app/sitemap.ts`. Doua liste manuale au divergat odata (21.08.2026: 7 URL-uri
+  // redirectionate erau inca trimise la indexare) — de aia e un singur fisier.
   async redirects() {
-    return [
-      { source: "/calculator",          destination: "/servicii", permanent: true },
-      { source: "/calculator-salariu",  destination: "/servicii", permanent: true },
-      { source: "/calculator-tva",      destination: "/servicii", permanent: true },
-      { source: "/calculator-procente", destination: "/servicii", permanent: true },
-      { source: "/generator-proforma",  destination: "/servicii", permanent: true },
-
-      // ── Profitshare EXCLUS 19.08.2026 (cont respins) ──────────────────
-      // Cele 60 de magazine au disparut din date. Astea sunt paginile care
-      // ERAU in sitemap, deci indexate: fara 301 ar fi devenit 404-uri, adica
-      // exact semnalul de calitate slaba pe care l-am reparat in august.
-      // Destinatia e categoria reala a fiecaruia, nu homepage-ul.
-      { source: "/cod-reducere/daedalusonline.eu", destination: "/categorii/casa-gradina", permanent: true },
-      { source: "/cod-reducere/emag.ro", destination: "/categorii/marketplace", permanent: true },
-      { source: "/cod-reducere/evrik.ro", destination: "/categorii/casa-gradina", permanent: true },
-      { source: "/cod-reducere/exclusive-home.ro", destination: "/categorii/casa-gradina", permanent: true },
-      { source: "/cod-reducere/fashiondays.ro", destination: "/categorii/fashion", permanent: true },
-      { source: "/cod-reducere/giftspot.ro", destination: "/categorii/cadouri-flori", permanent: true },
-      { source: "/cod-reducere/itgalaxy.ro", destination: "/categorii/electronice", permanent: true },
-      { source: "/cod-reducere/libris.ro", destination: "/categorii/carti-educatie", permanent: true },
-      { source: "/cod-reducere/mathaus.ro", destination: "/categorii/casa-gradina", permanent: true },
-      { source: "/cod-reducere/pcmadd.com", destination: "/categorii/electronice", permanent: true },
-      { source: "/cod-reducere/pint.ro", destination: "/categorii/auto-moto", permanent: true },
-      { source: "/cod-reducere/vapetronic.ro", destination: "/categorii/marketplace", permanent: true },
-      { source: "/cod-reducere/vegis.ro", destination: "/categorii/marketplace", permanent: true },
-      { source: "/emag", destination: "/categorii/marketplace", permanent: true },
-      { source: "/fashiondays", destination: "/fashion", permanent: true },
-      { source: "/libris", destination: "/carti", permanent: true },
-      { source: "/vegis", destination: "/sanatate", permanent: true },
-      { source: "/pcmadd", destination: "/categorii/electronice", permanent: true },
-    ];
+    return REDIRECTURI;
   },
 
   // ── Security headers ────────────────────────────────────────────────────

@@ -68,15 +68,20 @@ const CATEGORII = [
 ];
 
 
+// eMAG si Fashion Days au fost scoase 21.08.2026: sunt Profitshare, cont respins —
+// n-avem nici pagina, nici comision, deci linkul de pe homepage ducea intr-un redirect.
+// Libris si Vegis raman, dar catre paginile lor REALE de magazin (2Performant, comision
+// 8%, promotie activa) — nu catre paginile de brand sterse.
+// Conteaza mai mult decat pare: homepage-ul e singura pagina pe care Google o viziteaza
+// des (ultima accesare 18.08; restul site-ului, in iulie), deci astea erau cele mai
+// crawl-ate 4 linkuri de pe site si toate 4 faceau un salt inutil.
 const BRAND_PAGES = [
-  { href: "/emag",        name: "eMAG",         emoji: "🛒" },
   { href: "/altex",       name: "Altex",        emoji: "📺" },
-  { href: "/fashiondays", name: "Fashion Days", emoji: "👗" },
   { href: "/decathlon",   name: "Decathlon",    emoji: "🏃" },
   { href: "/noriel",      name: "Noriel",       emoji: "🧸" },
   { href: "/carturesti",  name: "Carturesti",   emoji: "📚" },
   { href: "/drmax",       name: "Dr. Max",      emoji: "💊" },
-  { href: "/libris",      name: "Libris",       emoji: "📖" },
+  { href: "/cod-reducere/libris.ro", name: "Libris",  emoji: "📖" },
   { href: "/petmart",     name: "Petmart",      emoji: "🐾" },
   { href: "/elefant",     name: "Elefant",      emoji: "🐘" },
   { href: "/brico",       name: "Brico",        emoji: "🔨" },
@@ -86,7 +91,7 @@ const BRAND_PAGES = [
   { href: "/notino",      name: "Notino",       emoji: "🌸" },
   { href: "/flanco",      name: "Flanco",       emoji: "📺" },
   { href: "/bookzone",    name: "BookZone",     emoji: "📖" },
-  { href: "/vegis",       name: "Vegis",        emoji: "🌿" },
+  { href: "/cod-reducere/vegis.ro",  name: "Vegis",   emoji: "🌿" },
   { href: "/petmax",      name: "Petmax",       emoji: "🐕" },
   { href: "/sportdepot",  name: "Sport Depot",  emoji: "⚽" },
   { href: "/automobilus", name: "Automobilus",  emoji: "🚗" },

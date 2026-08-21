@@ -193,7 +193,7 @@ export default function CadouriPage() {
               { href: "/noriel", label: "Noriel — Jucarii" },
               { href: "/elefant", label: "Elefant — Carti & Cadouri" },
               { href: "/notino", label: "Notino — Parfumuri" },
-              { href: "/fashiondays", label: "FashionDays — Fashion" },
+              { href: "/answear", label: "Answear — Fashion" },
               { href: "/bijuterii", label: "Bijuterii & Ceasuri" },
               { href: "/sport", label: "Sport & Fitness" },
               { href: "/idei-cadouri", label: "Idei Cadouri — Ghid complet" },

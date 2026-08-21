@@ -3,6 +3,7 @@ import fs from "fs";
 import path from "path";
 import { MACRO_ORDINE, getMacro } from "./blog/categories";
 import { buildMerchantTokens, esteIndexabil, type IndexableProdus } from "../lib/seoIndexable";
+import { CAI_REDIRECTIONATE } from "../lib/redirecturi";
 
 const BASE_URL = "https://amcupon.ro";
 
@@ -90,7 +91,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const categoriiSluguri = [...new Set(magazine.map((m) => m.categorie_slug).filter(Boolean))];
 
-  return [
+  const intrari: MetadataRoute.Sitemap = [
     // ─── Pagini principale ───────────────────────────────────────────────────
     { url: BASE_URL,                             lastModified: ultimaModificare(BASE_URL), changeFrequency: "daily",   priority: 1.0 },
     { url: `${BASE_URL}/studiu/coduri-reducere-romania`, lastModified: ultimaModificare(`${BASE_URL}/studiu/coduri-reducere-romania`), changeFrequency: "weekly", priority: 0.9 },
@@ -164,11 +165,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // ─── Pagini brand-uri mari ───────────────────────────────────────────────
     { url: `${BASE_URL}/altex`,                   lastModified: ultimaModificare(`${BASE_URL}/altex`), changeFrequency: "daily",   priority: 0.85 },
-    { url: `${BASE_URL}/emag`,                    lastModified: ultimaModificare(`${BASE_URL}/emag`), changeFrequency: "daily",   priority: 0.85 },
     { url: `${BASE_URL}/elefant`,                 lastModified: ultimaModificare(`${BASE_URL}/elefant`), changeFrequency: "daily",   priority: 0.8  },
     { url: `${BASE_URL}/decathlon`,               lastModified: ultimaModificare(`${BASE_URL}/decathlon`), changeFrequency: "daily",   priority: 0.8  },
-    { url: `${BASE_URL}/libris`,                  lastModified: ultimaModificare(`${BASE_URL}/libris`), changeFrequency: "daily",   priority: 0.8  },
-    { url: `${BASE_URL}/fashiondays`,             lastModified: ultimaModificare(`${BASE_URL}/fashiondays`), changeFrequency: "daily",   priority: 0.8  },
     { url: `${BASE_URL}/carturesti`,              lastModified: ultimaModificare(`${BASE_URL}/carturesti`), changeFrequency: "daily",   priority: 0.8  },
     { url: `${BASE_URL}/drmax`,                   lastModified: ultimaModificare(`${BASE_URL}/drmax`), changeFrequency: "daily",   priority: 0.8  },
     { url: `${BASE_URL}/noriel`,                  lastModified: ultimaModificare(`${BASE_URL}/noriel`), changeFrequency: "daily",   priority: 0.8  },
@@ -180,12 +178,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/notino`,                  lastModified: ultimaModificare(`${BASE_URL}/notino`), changeFrequency: "daily",   priority: 0.8  },
     { url: `${BASE_URL}/flanco`,                  lastModified: ultimaModificare(`${BASE_URL}/flanco`), changeFrequency: "daily",   priority: 0.8  },
     { url: `${BASE_URL}/bookzone`,                lastModified: ultimaModificare(`${BASE_URL}/bookzone`), changeFrequency: "daily",   priority: 0.8  },
-    { url: `${BASE_URL}/vegis`,                   lastModified: ultimaModificare(`${BASE_URL}/vegis`), changeFrequency: "daily",   priority: 0.75 },
     { url: `${BASE_URL}/petmax`,                  lastModified: ultimaModificare(`${BASE_URL}/petmax`), changeFrequency: "daily",   priority: 0.75 },
     { url: `${BASE_URL}/sportdepot`,              lastModified: ultimaModificare(`${BASE_URL}/sportdepot`), changeFrequency: "daily",   priority: 0.8  },
     { url: `${BASE_URL}/automobilus`,             lastModified: ultimaModificare(`${BASE_URL}/automobilus`), changeFrequency: "daily",   priority: 0.75 },
     { url: `${BASE_URL}/litera`,                  lastModified: ultimaModificare(`${BASE_URL}/litera`), changeFrequency: "daily",   priority: 0.75 },
-    { url: `${BASE_URL}/pcmadd`,                  lastModified: ultimaModificare(`${BASE_URL}/pcmadd`), changeFrequency: "daily",   priority: 0.75 },
     { url: `${BASE_URL}/otter`,                   lastModified: ultimaModificare(`${BASE_URL}/otter`), changeFrequency: "daily",   priority: 0.75 },
     { url: `${BASE_URL}/recomandari`,             lastModified: ultimaModificare(`${BASE_URL}/recomandari`), changeFrequency: "monthly", priority: 0.7  },
     { url: `${BASE_URL}/servicii`,                lastModified: ultimaModificare(`${BASE_URL}/servicii`), changeFrequency: "daily",   priority: 0.85 },
@@ -298,4 +294,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: m.are_promotie ? 0.9 : 0.7,
       })),
   ];
+
+  // ─── Plasa de siguranta: nimic redirectionat nu pleaca la indexare ────────
+  // Un sitemap trebuie sa contina DOAR URL-uri care raspund 200. Pe 21.08.2026
+  // exportul GSC a aratat 7 URL-uri din 462 care raspundeau 308 — pagini sterse
+  // si redirectionate in next.config.ts, dar ramase in lista de mai sus. Filtrul
+  // citeste ACEEASI sursa ca redirecturile (lib/redirecturi.ts), deci de acum
+  // divergenta e imposibila: adaugi un redirect si URL-ul iese singur din sitemap.
+  return intrari.filter(
+    (i) => !CAI_REDIRECTIONATE.has(i.url.replace(BASE_URL, "") || "/")
+  );
 }
