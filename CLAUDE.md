@@ -12,6 +12,51 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 21.08.2026 (AUDIT COMPLET: Supabase + GitHub + date + live — PUSHED):**
+- **STARE REALA, masurata azi**: **1.155 magazine** · **997 cu comision** (158 fara) ·
+  **89 cu promotie** · **18 cu cod REAL** · **15.704 produse** din 99 magazine ·
+  sitemap **462 URL** din care **198 pagini de magazin**.
+  Pentru context: pe 17.08 sitemap-ul avea 355 URL si doar **82** pagini de magazin —
+  importul de promotii 2P a **mai mult decat dublat** paginile indexabile.
+- **Importuri noi**: `promotions (1).csv` (2P) -> **117 promotii**, magazinele cu cod real
+  **6 -> 18**; `advertiser-directory (7).csv` (Awin) -> **+41 magazine**, Awin **16 -> 57**.
+- **CORECTII LA DOCUMENTATIA DE MAI JOS, gasite in audit:**
+  1. **NU e "cron 4h"** — asa scrie peste tot in acest fisier, dar `update-data.yml` are
+     `0 5,17 * * *` + `0 6 * * *` = **3 rulari/zi**, nu 6. Verificat si in istoricul de rulari.
+  2. **Profitshare NU mai e ACTIV** — cont RESPINS, exclus complet pe 19.08 (60 magazine).
+     Secretele `PROFITSHARE_USER/KEY` sunt inca in GitHub dar nefolosite.
+  3. **Newsletter-ul FUNCTIONEAZA** — confirmat in log-ul rularii din 21.08:
+     „Newsletter trimis la **12 abonati**". Randul din Probleme active era stale.
+- **Supabase — SANATOS** (`ACTIVE_HEALTHY`, Postgres 17.6). `reviews` si `voturi_cupoane`
+  exista, RLS activ, **0 randuri** (normal: fara trafic). Advisorii raporteaza
+  `SECURITY DEFINER` executabil de `anon` si `rls_enabled_no_policy` pe `voturi_cupoane` —
+  **ambele sunt PRIN DESIGN**, nu bug-uri: `anon` n-are voie la tabela, doar la cele doua
+  functii RPC. **Nu le "repara"** — ai strica rate-limitul.
+- **GitHub Actions — 15/15 rulari verzi**, ultimul run cu **49 pasi, 0 esecuri**.
+  Uzina de continut social ruleaza zilnic si retentia de 3 zile functioneaza (19, 20, 21).
+- **Secrete LIPSA, confirmate cu `gh secret list`** (workflow-ul le referentiaza, dar nu exista):
+  `ANTHROPIC_API_KEY` (deci `/radar` merge pe generatorul determinist, nu pe Claude),
+  `AWIN_API_TOKEN`, `AWIN_PUBLISHER_ID`, `TRADETRACKER_*`, `INSTAGRAM_ACCESS_TOKEN`,
+  `INSTAGRAM_ACCOUNT_ID`, `NEXT_PUBLIC_ADSENSE_ID`.
+- **Facebook — inca picat, zilnic**: `Bad signature` (OAuthException 190), „0 posturi
+  publicate". Tokenul e setat din 29.05 si a expirat. Nu e bug de cod.
+- **2 linkuri rupte gasite live** (`check_internal_links.py`, 94 pagini / 955 linkuri) si reparate:
+  `/pcmadd` (404 de pe homepage — redirectul 301 lipsea fiindca o comanda picase pe `git rm`
+  si lantul `&&` oprise pasul) si `/cod-reducere/bookzone.ro` (404 din FOOTER, deci de pe toate
+  paginile). **Mai grav la al doilea**: `/bookzone` isi declara `canonical` catre acel 404 —
+  ii spunea lui Google ca adresa canonica nu exista. Verificat ca nu e sistemic: o singura
+  pagina de brand din 20+ avea problema.
+- **Al 5-lea caz al tiparului "potrivire pe subsir"** (docs/LECTII-TEHNICE.md) — introdus si
+  reparat de mine in aceeasi zi, in `import_generic_affiliate.py`: cautand coloana de URL pe
+  subsir, `"url"` s-a potrivit cu **`logoUrl`**, deci toate cele 49 de randuri Awin au primit
+  domeniul `ui.awin.com` si a intrat un magazin fals in date. Potrivirea e acum
+  **normalizata EXACTA**, nu pe subsir. Al doilea caz in aceeasi functie: `paymentStatus`
+  ("amber"/"green") se potrivea cu aliasul "Status" si filtra TOATE randurile ca inactive.
+- **CJ — blocat, dar NU din vina exportului**: `advertisers (2).csv` e directorul de advertiseri
+  (111 intrari, 1 singur romanesc — Marionnaud RO). N-are coloana de link SI n-are publisher id,
+  deci linkurile nu se pot construi. **Actiune Alex**: PID-ul din CJ (Cont -> Website/Property ID).
+  Cu el, linkurile se construiesc ca la Awin: `anrdoezrs.net/links/{PID}/type/dlg/{url}`.
+
 **UPDATE 19.08.2026 (uzina de continut social + 1 bug de acces gasit in audit — PUSHED):**
 - **`scripts/social_content_factory.py`** (nou) — UN modul in locul celor 7 fragmentate
   (`generate_banner_auto`, `generate_niche_banners`, `generate_social_content`,
@@ -1179,10 +1224,10 @@ folosim lime acolo.
 | Program | Platformă | Status |
 |---------|----------|--------|
 | 2Performant | Direct | ✅ ACTIV — sursa principală (226+ magazine) |
-| Profitshare | Direct | ✅ ACTIV (62 magazine) |
+| Profitshare | Direct | ❌ **RESPINS + EXCLUS COMPLET 19.08.2026** — 60 magazine sterse, garda permanenta in `merge_platforms.py`, 301-uri pentru cele 13 pagini indexate |
 | Impact.com | Direct (Account 7401119) | ✅ ACTIV — **483 magazine cu tracking real verificat** (actualizat 06.08.2026, reconciliere extinsa la data/output.json). Restul de 568 magazine `platforma:impact` (85, era 135) sunt recomandari oneste fara comision, nu mai au link fals — vezi update 06.08 mai jos. Reconcilierea ruleaza acum automat la fiecare pipeline (nu mai e manuala). |
 | Binance | Direct | ✅ ACTIV — ref `205306153`, în `/trading` |
-| Awin | Direct (account 101829567) | ✅ ACTIV — 16 magazine importate 16.07.2026, vezi `scripts/import_awin_links.py` |
+| Awin | Direct (account 101829567) | ✅ ACTIV — **57 magazine** (16 in iulie + 41 pe 21.08 din Advertiser Directory, link construit din `advertiserId`) |
 | Otto Broker (asigurări) | 2Performant | ✅ ACTIV — descoperit 17.07.2026 in output.json (aprobat, dar niciodata folosit), acum pe `/asigurari` |
 | Fiverr, Hostinger, NordVPN | Impact.com / direct | 🔄 In review / pending |
 | Semrush | Impact.com | ❌ RESPINS (18.06.2026, "business model mismatch") |
@@ -1284,6 +1329,10 @@ Quicklinks: `https://event.2performant.com/events/click?ad_type=quicklink&aff_co
 | `NEXT_PUBLIC_ADSENSE_ID` | ✅ `ca-pub-1744566936173747` |
 | `FACEBOOK_PAGE_TOKEN` | ⚠️ setat dar EXPIRAT/invalid (`Bad signature`, verificat 20.07.2026) — vezi Probleme active |
 | `TRADETRACKER_SITE_ID/API_KEY` | ❌ LIPSESC |
+| `ANTHROPIC_API_KEY` | ❌ LIPSESTE — `/radar` merge pe generatorul determinist |
+| `AWIN_API_TOKEN` / `AWIN_PUBLISHER_ID` | ❌ LIPSESC — Awin ramane pe CSV manual |
+| `INSTAGRAM_ACCESS_TOKEN` / `INSTAGRAM_ACCOUNT_ID` | ❌ LIPSESC — postarea Instagram nu ruleaza |
+| `PROFITSHARE_USER/KEY` | ⚠️ setate dar NEFOLOSITE (cont respins, retea exclusa) |
 
 **Gotcha Brevo**: `BREVO_API_KEY` (Campaigns/Contacts API) și `BREVO_SMTP_USER/PASS` (SMTP) sunt credențiale DIFERITE, nu interschimbabile. Workflow-ul folosește API_KEY pentru trimiterea reală.
 
