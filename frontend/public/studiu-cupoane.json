@@ -1,6 +1,6 @@
 {
-  "generat": "2026-08-20",
-  "total_magazine": 1115,
+  "generat": "2026-08-21",
+  "total_magazine": 1114,
   "cu_promotie": 89,
   "cu_cod_real": 18,
   "doar_oferta": 71,
@@ -39,7 +39,7 @@
     {
       "slug": "carti-educatie",
       "nume": "Cărți & educație",
-      "magazine": 35,
+      "magazine": 34,
       "cu_promotie": 9,
       "reducere_mediana": 50,
       "reducere_max": 90,
