@@ -33,6 +33,8 @@ data/*_debug.json
 
 # Flux video — folder de lucru (livrabilele finale merg in frontend/public/)
 data/video-today/
+# Imagini generate pentru submisii manuale in directoare — livrabile, nu asseturi
+data/imagini-articol/
 
 # OS
 .DS_Store
