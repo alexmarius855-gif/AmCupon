@@ -81,9 +81,21 @@ def etld1(domain):
     return last_two
 
 
+# Campanie/ad "1" sau "0" intr-un link Impact = placeholder, nu o campanie reala.
+# `add_impact_merchants.py` a generat candva linkuri de forma
+# https://<brand>.pxf.io/c/7761435/1/0 construite din sablon, fara sa fi existat
+# vreodata o campanie. Arata exact ca un link bun (are pxf.io, are /c/), deci
+# treceau de REAL_TRACKING_RE si reconcile le lasa in pace la fiecare rulare.
+# Verificat live 22.08.2026: raspund 404. Un link rupt care pare valid e mai rau
+# decat unul lipsa — nu se repara singur si nu se vede in niciun raport.
+PLACEHOLDER_IMPACT_RE = re.compile(r"/c/\d+/[01]/[01]\b")
+
+
 def looks_fake_or_untracked(url_afiliat):
     if not url_afiliat:
         return True
+    if PLACEHOLDER_IMPACT_RE.search(url_afiliat):
+        return True                      # sablon negoncretizat, nu link real
     if REAL_TRACKING_RE.search(url_afiliat):
         return False
     return True  # fara semnatura reala Impact = suspect (fals sau pur si simplu netrackuit)
@@ -122,6 +134,62 @@ def load_csv_map():
     return by_domain, by_etld1
 
 
+def domenii_candidate(m):
+    """
+    Toate domeniile prin care un magazin poate fi identificat in CSV.
+
+    BUG REPARAT 22.08.2026 — versiunea anterioara facea:
+        domain = m.get("magazin") or domain_from_url(m.get("url", ""))
+    In `data/output.json` slug-ul E domeniul ("kkday.com"), deci mergea. Dar in
+    `extra_merchants.json` slug-ul e numele afisat ("KKday", "Air Serbia") —
+    o valoare ADEVARATA care nu e domeniu, deci `or` nu ajungea niciodata la
+    fallback. Rezultat: 0 upgrade-uri pe extra_merchants.json, la fiecare rulare,
+    tacut. Reconcile raporta "neschimbate: 712" si parea ca lucreaza.
+
+    Efect masurat: 43 de magazine cu contract Impact ACTIV si link real in CSV
+    livrau linkul curat, fara tracking. Fiecare click pe ele = comision 0.
+
+    Un `or` intre "valoare care poate fi gresita" si "fallback" e o capcana:
+    ascunde cazul in care prima valoare exista dar e de alt tip. Aici incercam
+    toti candidatii, in ordinea increderii.
+    """
+    cand = []
+
+    mg = str(m.get("magazin") or "").strip().lower()
+    if "." in mg and " " not in mg:          # slug care chiar e domeniu
+        d = domain_from_url(mg)
+        if d:
+            cand.append(d)
+
+    d = domain_from_url(m.get("url", ""))    # site-ul real al magazinului
+    if d:
+        cand.append(d)
+
+    # url_afiliat doar ca ultima solutie, si doar daca NU e link de retea
+    # (ajungem aici doar cand linkul e netrackuit, dar nu ne bazam pe asta).
+    ua = m.get("url_afiliat", "")
+    if ua and not REAL_TRACKING_RE.search(ua):
+        d = domain_from_url(ua)
+        if d:
+            cand.append(d)
+
+    vazute = set()
+    return [x for x in cand if not (x in vazute or vazute.add(x))]
+
+
+def cauta_in_csv(m, csv_by_domain, csv_by_etld1):
+    """Potrivire exacta pe domeniu intai, eTLD+1 doar ca fallback."""
+    cand = domenii_candidate(m)
+    for d in cand:
+        if d in csv_by_domain:
+            return csv_by_domain[d]
+    for d in cand:
+        e = etld1(d)
+        if e in csv_by_etld1:
+            return csv_by_etld1[e]
+    return None
+
+
 def reconcile_file(path, csv_by_domain, csv_by_etld1, label):
     if not os.path.exists(path):
         print(f"[SKIP] {path} nu exista")
@@ -137,8 +205,7 @@ def reconcile_file(path, csv_by_domain, csv_by_etld1, label):
             untouched += 1
             continue
 
-        domain = m.get("magazin") or domain_from_url(m.get("url", ""))
-        hit = csv_by_domain.get(domain) or csv_by_etld1.get(etld1(domain))
+        hit = cauta_in_csv(m, csv_by_domain, csv_by_etld1)
         if hit:
             m["url_afiliat"] = hit["link"]
             m["platforma"] = "impact"

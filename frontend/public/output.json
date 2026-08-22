@@ -134,7 +134,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 138,
+    "folosit_de": 427,
     "procent_succes": 80,
     "exclusiv": false,
     "platforma": "2performant",
@@ -209,7 +209,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 593,
+    "folosit_de": 247,
     "procent_succes": 80,
     "exclusiv": false,
     "platforma": "2performant",
@@ -219,7 +219,7 @@
     "magazin": "fera.ro",
     "url": "https://www.fera.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.fera.ro",
-    "logo_url": "https://icons.duckduckgo.com/ip3/fera.ro.ico",
+    "logo_url": "https://www.google.com/s2/favicons?domain=fera.ro&sz=128",
     "categorie": "Pet Shop",
     "categorie_slug": "animale",
     "comision": "Variabil",
@@ -278,7 +278,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 370,
+    "folosit_de": 656,
     "procent_succes": 80,
     "exclusiv": false,
     "platforma": "2performant",
@@ -329,7 +329,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 260,
+    "folosit_de": 547,
     "procent_succes": 80,
     "exclusiv": false,
     "platforma": "2performant",
@@ -371,7 +371,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 784,
+    "folosit_de": 189,
     "procent_succes": 80,
     "exclusiv": false,
     "platforma": "2performant",
@@ -1162,7 +1162,7 @@
   {
     "magazin": "coursera.org",
     "url": "https://www.coursera.org",
-    "url_afiliat": "https://coursera.pxf.io/c/7761435/1/0",
+    "url_afiliat": "https://www.coursera.org",
     "logo_url": "https://www.google.com/s2/favicons?domain=coursera.org&sz=128",
     "categorie": "Cărți & Educație",
     "categorie_slug": "carti-educatie",
@@ -1345,7 +1345,7 @@
     "magazin": "upwork.com",
     "url": "https://www.upwork.com",
     "url_afiliat": "https://www.upwork.com/",
-    "logo_url": "https://www.google.com/s2/favicons?domain=upwork.com&sz=128",
+    "logo_url": "https://www.upwork.com/favicon.ico",
     "categorie": "Software & Digital",
     "categorie_slug": "software",
     "comision": "$150 per client nou",
@@ -1423,7 +1423,7 @@
     "magazin": "dhgate.com",
     "url": "https://www.dhgate.com",
     "url_afiliat": "https://dhgate.sjv.io/c/7401119/1466364/12108",
-    "logo_url": "https://www.dhgate.com/favicon.ico",
+    "logo_url": "https://www.google.com/s2/favicons?domain=dhgate.com&sz=128",
     "categorie": "Fashion",
     "categorie_slug": "fashion",
     "comision": "2-50%",
@@ -1692,7 +1692,7 @@
     "magazin": "menavpn1.com",
     "url": "https://menavpn1.com",
     "url_afiliat": "https://goto.menavpn1.com/c/7401119/3140963/37004",
-    "logo_url": "https://www.google.com/s2/favicons?domain=menavpn1.com&sz=128",
+    "logo_url": "https://icons.duckduckgo.com/ip3/menavpn1.com.ico",
     "categorie": "Software & Digital",
     "categorie_slug": "software",
     "comision": "50% comision",
@@ -1881,7 +1881,7 @@
     "magazin": "datacamp.com",
     "url": "https://www.datacamp.com",
     "url_afiliat": "https://www.datacamp.com",
-    "logo_url": "https://www.google.com/s2/favicons?domain=datacamp.com&sz=128",
+    "logo_url": "https://www.datacamp.com/favicon.ico",
     "categorie": "Cărți & Educație",
     "categorie_slug": "carti-educatie",
     "comision": "35%",
@@ -3029,7 +3029,7 @@
   {
     "magazin": "kkday.com",
     "url": "https://www.kkday.com",
-    "url_afiliat": "http://www.kkday.com/en",
+    "url_afiliat": "https://kkday.sjv.io/c/7401119/840050/11745",
     "logo_url": "https://www.google.com/s2/favicons?domain=kkday.com&sz=128",
     "categorie": "Călătorii",
     "categorie_slug": "calatorii",
@@ -3647,7 +3647,7 @@
     "magazin": "proxy-cheap.com",
     "url": "https://proxy-cheap.com",
     "url_afiliat": "https://lietparkasuab.pxf.io/c/7401119/3790254/47563",
-    "logo_url": "",
+    "logo_url": "https://www.google.com/s2/favicons?domain=proxy-cheap.com&sz=128",
     "categorie": "Software & Digital",
     "categorie_slug": "software",
     "comision": "25% comision",
@@ -4018,7 +4018,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 655,
+    "folosit_de": 136,
     "procent_succes": 80,
     "exclusiv": false,
     "platforma": "2performant",
@@ -4263,7 +4263,7 @@
     "magazin": "8000kicks.com",
     "url": "https://8000kicks.com",
     "url_afiliat": "https://8000kicks.sjv.io/c/7401119/3359384/44202",
-    "logo_url": "https://www.google.com/s2/favicons?domain=8000kicks.com&sz=128",
+    "logo_url": "https://icons.duckduckgo.com/ip3/8000kicks.com.ico",
     "categorie": "Fashion",
     "categorie_slug": "fashion",
     "comision": "10% comision",
@@ -5559,7 +5559,7 @@
     "magazin": "incerunmen.com",
     "url": "https://www.incerunmen.com/",
     "url_afiliat": "https://www.incerunmen.com/",
-    "logo_url": "https://www.google.com/s2/favicons?domain=incerunmen.com&sz=128",
+    "logo_url": "https://icons.duckduckgo.com/ip3/incerunmen.com.ico",
     "categorie": "Fashion",
     "categorie_slug": "fashion",
     "comision": "12% comision",
@@ -7673,7 +7673,7 @@
     "magazin": "jackery.com",
     "url": "http://www.jackery.com",
     "url_afiliat": "https://itjackery.pxf.io/c/7401119/1762660/20686",
-    "logo_url": "https://www.google.com/s2/favicons?domain=jackery.com&sz=128",
+    "logo_url": "https://icons.duckduckgo.com/ip3/jackery.com.ico",
     "categorie": "Electronice & IT",
     "categorie_slug": "electronice",
     "comision": "8% comision",
@@ -9371,7 +9371,7 @@
     "magazin": "theleela.com",
     "url": "http://www.theleela.com/",
     "url_afiliat": "https://theleelapalaceshotelsresorts.pxf.io/c/7401119/3864446/28441",
-    "logo_url": "https://www.google.com/s2/favicons?domain=theleela.com&sz=128",
+    "logo_url": "https://icons.duckduckgo.com/ip3/theleela.com.ico",
     "categorie": "Călătorii",
     "categorie_slug": "calatorii",
     "comision": "5% comision",
@@ -9448,7 +9448,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 280,
+    "folosit_de": 440,
     "procent_succes": 80,
     "exclusiv": false,
     "platforma": "2performant",
@@ -10602,7 +10602,7 @@
     "magazin": "dymocks.com.au",
     "url": "http://dymocks.com.au",
     "url_afiliat": "https://dymocks-australia.pxf.io/c/7401119/2988983/16665",
-    "logo_url": "",
+    "logo_url": "https://www.google.com/s2/favicons?domain=dymocks.com.au&sz=128",
     "categorie": "Electronice & IT",
     "categorie_slug": "electronice",
     "comision": "Variabil",
@@ -10944,7 +10944,7 @@
     "magazin": "wordperfect.com",
     "url": "http://www.wordperfect.com/",
     "url_afiliat": "https://productivityprogram.sjv.io/c/7401119/1819457/21244",
-    "logo_url": "https://www.google.com/s2/favicons?domain=wordperfect.com&sz=128",
+    "logo_url": "https://icons.duckduckgo.com/ip3/wordperfect.com.ico",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "comision": "Variabil",
@@ -11048,7 +11048,7 @@
     "magazin": "hardaddy.com",
     "url": "http://hardaddy.com",
     "url_afiliat": "https://kollyy.sjv.io/c/7401119/1622320/18221",
-    "logo_url": "https://www.google.com/s2/favicons?domain=hardaddy.com&sz=128",
+    "logo_url": "https://icons.duckduckgo.com/ip3/hardaddy.com.ico",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "comision": "Variabil",
@@ -11074,7 +11074,7 @@
     "magazin": "kollyy.com",
     "url": "https://www.kollyy.com",
     "url_afiliat": "https://kollyy.sjv.io/c/7401119/1622320/18221",
-    "logo_url": "https://www.google.com/s2/favicons?domain=kollyy.com&sz=128",
+    "logo_url": "",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "comision": "Variabil",
@@ -11177,7 +11177,7 @@
   {
     "magazin": "lumibricks.com",
     "url": "https://www.lumibricks.com",
-    "url_afiliat": "https://www.lightailing.com/",
+    "url_afiliat": "https://lightailing.sjv.io/c/7401119/1448258/17190",
     "logo_url": "https://www.google.com/s2/favicons?domain=lumibricks.com&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
@@ -11360,7 +11360,7 @@
     "magazin": "bodyotics.com",
     "url": "https://www.bodyotics.com",
     "url_afiliat": "http://babysunnies.com/",
-    "logo_url": "https://www.google.com/s2/favicons?domain=bodyotics.com&sz=128",
+    "logo_url": "https://icons.duckduckgo.com/ip3/bodyotics.com.ico",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "comision": "Variabil",
@@ -11412,7 +11412,7 @@
     "magazin": "penchantforpleasure.com",
     "url": "https://penchantforpleasure.com/",
     "url_afiliat": "http://babysunnies.com/",
-    "logo_url": "https://www.google.com/s2/favicons?domain=penchantforpleasure.com&sz=128",
+    "logo_url": "https://icons.duckduckgo.com/ip3/penchantforpleasure.com.ico",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "comision": "Variabil",
@@ -11490,7 +11490,7 @@
     "magazin": "ontaki.com",
     "url": "https://ontaki.com/",
     "url_afiliat": "http://babysunnies.com/",
-    "logo_url": "https://www.google.com/s2/favicons?domain=ontaki.com&sz=128",
+    "logo_url": "https://icons.duckduckgo.com/ip3/ontaki.com.ico",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "comision": "Variabil",
@@ -11697,7 +11697,7 @@
   {
     "magazin": "malaysiaairlines.com",
     "url": "https://www.malaysiaairlines.com",
-    "url_afiliat": "https://www.fireflyz.com",
+    "url_afiliat": "https://firefly.pxf.io/c/7401119/3814778/49591",
     "logo_url": "https://www.google.com/s2/favicons?domain=malaysiaairlines.com&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
@@ -12009,7 +12009,7 @@
   {
     "magazin": "12go.asia",
     "url": "https://12go.asia/en",
-    "url_afiliat": "https://12go.asia/en",
+    "url_afiliat": "https://12goasiapteltd.sjv.io/c/7401119/2134440/27128",
     "logo_url": "https://www.google.com/s2/favicons?domain=12go.asia&sz=128",
     "categorie": "Călătorii",
     "categorie_slug": "calatorii",
@@ -12477,7 +12477,7 @@
   {
     "magazin": "sheets.popai.pro",
     "url": "https://sheets.popai.pro",
-    "url_afiliat": "https://sheets.popai.pro",
+    "url_afiliat": "https://01aipteltd.pxf.io/c/7401119/3106551/38580",
     "logo_url": "https://www.google.com/s2/favicons?domain=sheets.popai.pro&sz=128",
     "categorie": "Electronice & IT",
     "categorie_slug": "electronice",
@@ -12555,7 +12555,7 @@
   {
     "magazin": "wooeyeshop.com",
     "url": "https://wooeyeshop.com",
-    "url_afiliat": "https://wooeyeshop.com",
+    "url_afiliat": "https://jingjiangzhizaoeyewearindustryshenzhencoltd.sjv.io/c/7401119/3248180/41189",
     "logo_url": "https://www.google.com/s2/favicons?domain=wooeyeshop.com&sz=128",
     "categorie": "Fashion",
     "categorie_slug": "fashion",
@@ -12581,7 +12581,7 @@
   {
     "magazin": "artlist.io",
     "url": "https://artlist.io",
-    "url_afiliat": "https://artlist.io",
+    "url_afiliat": "https://artlist.pxf.io/c/7401119/3257033/41474",
     "logo_url": "https://www.google.com/s2/favicons?domain=artlist.io&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
@@ -12686,7 +12686,7 @@
     "magazin": "moresoo.com",
     "url": "https://moresoo.com",
     "url_afiliat": "https://vivienhair.sjv.io/c/7401119/3861394/51252",
-    "logo_url": "https://www.google.com/s2/favicons?domain=moresoo.com&sz=128",
+    "logo_url": "https://icons.duckduckgo.com/ip3/moresoo.com.ico",
     "categorie": "Beauty & Îngrijire",
     "categorie_slug": "beauty",
     "comision": "Variabil",
@@ -12867,7 +12867,7 @@
   {
     "magazin": "kisslovehair.com",
     "url": "https://www.kisslovehair.com",
-    "url_afiliat": "https://www.ashimaryhair.com",
+    "url_afiliat": "https://hongkongossileetradinglimited.sjv.io/c/7401119/3816472/49652",
     "logo_url": "https://www.google.com/s2/favicons?domain=kisslovehair.com&sz=128",
     "categorie": "Beauty & Îngrijire",
     "categorie_slug": "beauty",
@@ -12920,7 +12920,7 @@
     "magazin": "redodopower.de",
     "url": "https://www.redodopower.de",
     "url_afiliat": "https://redodopowerde.sjv.io/c/7401119/3864250/49142",
-    "logo_url": "https://icons.duckduckgo.com/ip3/redodopower.de.ico",
+    "logo_url": "https://www.google.com/s2/favicons?domain=redodopower.de&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "comision": "Variabil",
@@ -13179,7 +13179,7 @@
   {
     "magazin": "hyper3d.ai",
     "url": "https://hyper3d.ai",
-    "url_afiliat": "https://hyper3d.ai",
+    "url_afiliat": "https://deemoscorporation.sjv.io/c/7401119/3895845/52860",
     "logo_url": "https://www.google.com/s2/favicons?domain=hyper3d.ai&sz=128",
     "categorie": "Software & Digital",
     "categorie_slug": "software",
@@ -13439,7 +13439,7 @@
   {
     "magazin": "aqua-mail.com",
     "url": "https://www.aqua-mail.com/",
-    "url_afiliat": "https://www.aqua-mail.com/",
+    "url_afiliat": "https://aquamailinc.sjv.io/c/7401119/3379088/44822",
     "logo_url": "",
     "categorie": "Software & Digital",
     "categorie_slug": "software",
@@ -13465,7 +13465,7 @@
   {
     "magazin": "travala.com",
     "url": "https://www.travala.com",
-    "url_afiliat": "https://www.travala.com",
+    "url_afiliat": "https://travala.sjv.io/c/7401119/1486860/17543",
     "logo_url": "https://www.google.com/s2/favicons?domain=travala.com&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
@@ -13491,7 +13491,7 @@
   {
     "magazin": "healerlabs.co.uk",
     "url": "https://www.healerlabs.co.uk/",
-    "url_afiliat": "https://www.healerlabs.co.uk/",
+    "url_afiliat": "https://hlabs.sjv.io/c/7401119/1717808/19970",
     "logo_url": "https://www.google.com/s2/favicons?domain=healerlabs.co.uk&sz=128",
     "categorie": "Beauty & Îngrijire",
     "categorie_slug": "beauty",
@@ -13517,7 +13517,7 @@
   {
     "magazin": "kugooescooters.com",
     "url": "https://www.kugooescooters.com/",
-    "url_afiliat": "https://www.kugooescooters.com/",
+    "url_afiliat": "https://joyorescooter.pxf.io/c/7401119/2591712/30705",
     "logo_url": "https://www.google.com/s2/favicons?domain=kugooescooters.com&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
@@ -13621,7 +13621,7 @@
   {
     "magazin": "wecreat.com",
     "url": "https://wecreat.com/",
-    "url_afiliat": "https://eu.wecreat.com/",
+    "url_afiliat": "https://wecreateu.sjv.io/c/7401119/3100697/38430",
     "logo_url": "https://www.google.com/s2/favicons?domain=wecreat.com&sz=128",
     "categorie": "Electronice & IT",
     "categorie_slug": "electronice",
@@ -13647,7 +13647,7 @@
   {
     "magazin": "imagine.art",
     "url": "https://imagine.art",
-    "url_afiliat": "https://imagine.art",
+    "url_afiliat": "https://imagineartinc.pxf.io/c/7401119/3322109/43678",
     "logo_url": "https://www.google.com/s2/favicons?domain=imagine.art&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
@@ -13673,7 +13673,7 @@
   {
     "magazin": "surveysparrow.com",
     "url": "https://surveysparrow.com",
-    "url_afiliat": "https://surveysparrow.com",
+    "url_afiliat": "https://surveysparrowinc.pxf.io/c/7401119/3771210/48073",
     "logo_url": "https://www.google.com/s2/favicons?domain=surveysparrow.com&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
@@ -13751,7 +13751,7 @@
   {
     "magazin": "arbaglobal.store",
     "url": "https://www.arbaglobal.store",
-    "url_afiliat": "https://www.arbaglobal.store",
+    "url_afiliat": "https://arbagloablllc.sjv.io/c/7401119/3953021/54756",
     "logo_url": "https://www.google.com/s2/favicons?domain=arbaglobal.store&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
@@ -13907,7 +13907,7 @@
   {
     "magazin": "fontlab.com",
     "url": "https://www.fontlab.com",
-    "url_afiliat": "https://www.fontlab.com",
+    "url_afiliat": "https://fontlabaffiliateprogram.pxf.io/c/7401119/1671642/19378",
     "logo_url": "https://www.google.com/s2/favicons?domain=fontlab.com&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
@@ -13985,7 +13985,7 @@
   {
     "magazin": "absence.io",
     "url": "https://www.absence.io",
-    "url_afiliat": "https://www.absence.io",
+    "url_afiliat": "https://absenceiogmbh.pxf.io/c/7401119/2076623/26040",
     "logo_url": "https://www.google.com/s2/favicons?domain=absence.io&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
@@ -14037,7 +14037,7 @@
   {
     "magazin": "pickrelay.com",
     "url": "https://pickrelay.com/",
-    "url_afiliat": "https://pickrelay.com/",
+    "url_afiliat": "https://pickrelay.pxf.io/c/7401119/3914964/53482",
     "logo_url": "https://www.google.com/s2/favicons?domain=pickrelay.com&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
@@ -14063,7 +14063,7 @@
   {
     "magazin": "oobyte.net",
     "url": "https://oobyte.net",
-    "url_afiliat": "https://ai.oobyte.net/",
+    "url_afiliat": "https://oobyte.pxf.io/c/7401119/3253528/41310",
     "logo_url": "https://www.google.com/s2/favicons?domain=oobyte.net&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
@@ -14193,7 +14193,7 @@
   {
     "magazin": "hbdjewellery.com",
     "url": "https://hbdjewellery.com/",
-    "url_afiliat": "https://hbdjewellery.com/",
+    "url_afiliat": "https://hbdltd.sjv.io/c/7401119/3742831/47146?tw_source=impact&tw_campaign=%7Birpid%7D",
     "logo_url": "https://www.google.com/s2/favicons?domain=hbdjewellery.com&sz=128",
     "categorie": "Bijuterii & Ceasuri",
     "categorie_slug": "bijuterii",
@@ -14219,7 +14219,7 @@
   {
     "magazin": "international-sim.com",
     "url": "https://international-sim.com",
-    "url_afiliat": "https://international-sim.com",
+    "url_afiliat": "https://bouyguestelecom.pxf.io/c/7401119/3059189/37373",
     "logo_url": "https://www.google.com/s2/favicons?domain=international-sim.com&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
@@ -14427,7 +14427,7 @@
   {
     "magazin": "ro.roborock.com",
     "url": "https://ro.roborock.com",
-    "url_afiliat": "https://ro.roborock.com",
+    "url_afiliat": "https://roroborock.pxf.io/c/7401119/3195044/39935",
     "logo_url": "https://www.google.com/s2/favicons?domain=ro.roborock.com&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
@@ -14453,7 +14453,7 @@
   {
     "magazin": "eu.wecreat.com",
     "url": "https://eu.wecreat.com/",
-    "url_afiliat": "https://eu.wecreat.com/",
+    "url_afiliat": "https://wecreattechltd.pxf.io/c/7401119/2107732/26691",
     "logo_url": "https://www.google.com/s2/favicons?domain=eu.wecreat.com&sz=128",
     "categorie": "Electronice & IT",
     "categorie_slug": "electronice",
@@ -14479,7 +14479,7 @@
   {
     "magazin": "studioalura.com",
     "url": "https://studioalura.com",
-    "url_afiliat": "https://studioalura.com",
+    "url_afiliat": "https://alurastudio.pxf.io/c/7401119/3779797/48320",
     "logo_url": "https://www.google.com/s2/favicons?domain=studioalura.com&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
@@ -14583,8 +14583,8 @@
   {
     "magazin": "simplycarbonfiber.com",
     "url": "https://www.simplycarbonfiber.com",
-    "url_afiliat": "https://www.simplycarbonfiber.com",
-    "logo_url": "https://www.google.com/s2/favicons?domain=simplycarbonfiber.com&sz=128",
+    "url_afiliat": "https://simplycarbonfiber.sjv.io/c/7401119/1754737/20529",
+    "logo_url": "https://icons.duckduckgo.com/ip3/simplycarbonfiber.com.ico",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "comision": "Variabil",
@@ -14688,7 +14688,7 @@
     "magazin": "casa-andina.com",
     "url": "https://www.casa-andina.com/",
     "url_afiliat": "https://casaandina.pxf.io/c/7401119/3808525/19416",
-    "logo_url": "https://www.google.com/s2/favicons?domain=casa-andina.com&sz=128",
+    "logo_url": "https://icons.duckduckgo.com/ip3/casa-andina.com.ico",
     "categorie": "Casă & Grădină",
     "categorie_slug": "casa-gradina",
     "comision": "Variabil",
@@ -14739,7 +14739,7 @@
   {
     "magazin": "carrentalexpress.com",
     "url": "http://www.carrentalexpress.com/",
-    "url_afiliat": "http://www.carrentalexpress.com/",
+    "url_afiliat": "https://crx.pxf.io/c/7401119/3106434/38573",
     "logo_url": "https://www.google.com/s2/favicons?domain=carrentalexpress.com&sz=128",
     "categorie": "Auto & Moto",
     "categorie_slug": "auto-moto",
@@ -14765,7 +14765,7 @@
   {
     "magazin": "anticavilla.com",
     "url": "http://www.anticavilla.com/",
-    "url_afiliat": "http://www.anticavilla.com/",
+    "url_afiliat": "https://anticavilla.sjv.io/c/7401119/3106761/38583",
     "logo_url": "https://www.google.com/s2/favicons?domain=anticavilla.com&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
@@ -14973,8 +14973,8 @@
   {
     "magazin": "ourpanama.com",
     "url": "http://www.ourpanama.com/",
-    "url_afiliat": "http://www.ourpanama.com/",
-    "logo_url": "https://icons.duckduckgo.com/ip3/ourpanama.com.ico",
+    "url_afiliat": "https://ourpanama.pxf.io/c/7401119/3055957/37304",
+    "logo_url": "",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "comision": "Variabil",
@@ -15051,7 +15051,7 @@
   {
     "magazin": "rosesdelfuego.com",
     "url": "https://rosesdelfuego.com",
-    "url_afiliat": "https://rosesdelfuego.com",
+    "url_afiliat": "https://rosesdelfuego.sjv.io/c/7401119/3890395/52695",
     "logo_url": "https://www.google.com/s2/favicons?domain=rosesdelfuego.com&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
@@ -15129,7 +15129,7 @@
   {
     "magazin": "ultrahuman.com",
     "url": "https://www.ultrahuman.com/",
-    "url_afiliat": "https://www.ultrahuman.com/",
+    "url_afiliat": "https://ultrahumanhealthcare.pxf.io/c/7401119/3281895/42406",
     "logo_url": "https://www.google.com/s2/favicons?domain=ultrahuman.com&sz=128",
     "categorie": "Sănătate & Farmacie",
     "categorie_slug": "sanatate",
@@ -15181,7 +15181,7 @@
   {
     "magazin": "ai.oobyte.net",
     "url": "https://ai.oobyte.net/",
-    "url_afiliat": "https://ai.oobyte.net/",
+    "url_afiliat": "https://oobyte.pxf.io/c/7401119/3253528/41310",
     "logo_url": "https://icons.duckduckgo.com/ip3/ai.oobyte.net.ico",
     "categorie": "Software & Digital",
     "categorie_slug": "software",
@@ -15207,7 +15207,7 @@
   {
     "magazin": "verdent.ai",
     "url": "https://www.verdent.ai",
-    "url_afiliat": "https://www.verdent.ai",
+    "url_afiliat": "https://coderdecktechnologieshklimited.sjv.io/c/7401119/3917596/53578",
     "logo_url": "https://www.google.com/s2/favicons?domain=verdent.ai&sz=128",
     "categorie": "Electronice & IT",
     "categorie_slug": "electronice",
@@ -15259,7 +15259,7 @@
   {
     "magazin": "zoombo.ai",
     "url": "https://zoombo.ai/",
-    "url_afiliat": "https://zoombo.ai/",
+    "url_afiliat": "https://zoombo.sjv.io/c/7401119/3930501/54009",
     "logo_url": "https://www.google.com/s2/favicons?domain=zoombo.ai&sz=128",
     "categorie": "Software & Digital",
     "categorie_slug": "software",
@@ -15311,7 +15311,7 @@
   {
     "magazin": "riibase.com",
     "url": "https://www.riibase.com",
-    "url_afiliat": "https://www.riibase.com",
+    "url_afiliat": "https://riibase.pxf.io/c/7401119/3971637/55630",
     "logo_url": "https://www.google.com/s2/favicons?domain=riibase.com&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
@@ -15389,7 +15389,7 @@
   {
     "magazin": "italki.com",
     "url": "https://www.italki.com",
-    "url_afiliat": "https://www.italki.com",
+    "url_afiliat": "https://italkidach.sjv.io/c/7401119/3870094/51770",
     "logo_url": "https://www.google.com/s2/favicons?domain=italki.com&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
@@ -15623,7 +15623,7 @@
   {
     "magazin": "educative.io",
     "url": "https://www.educative.io/",
-    "url_afiliat": "https://www.educative.io/",
+    "url_afiliat": "https://educative.pxf.io/c/7401119/3721030/46512",
     "logo_url": "https://www.google.com/s2/favicons?domain=educative.io&sz=128",
     "categorie": "Cărți & Educație",
     "categorie_slug": "carti-educatie",
@@ -15727,7 +15727,7 @@
   {
     "magazin": "vipcars.com",
     "url": "https://www.vipcars.com",
-    "url_afiliat": "https://www.vipcars.com",
+    "url_afiliat": "https://vipcars.sjv.io/c/7401119/3914373/53465",
     "logo_url": "https://www.google.com/s2/favicons?domain=vipcars.com&sz=128",
     "categorie": "Auto & Moto",
     "categorie_slug": "auto-moto",
@@ -15779,7 +15779,7 @@
   {
     "magazin": "bluecypress.com",
     "url": "https://bluecypress.com",
-    "url_afiliat": "https://bluecypress.com",
+    "url_afiliat": "https://bluecypress.sjv.io/c/7401119/3954241/54844",
     "logo_url": "https://www.google.com/s2/favicons?domain=bluecypress.com&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
@@ -15857,7 +15857,7 @@
   {
     "magazin": "viperiumtrading.com",
     "url": "https://viperiumtrading.com",
-    "url_afiliat": "https://viperiumtrading.com",
+    "url_afiliat": "https://viperiumllc.pxf.io/c/7401119/3862031/51448",
     "logo_url": "https://www.google.com/s2/favicons?domain=viperiumtrading.com&sz=128",
     "categorie": "Financiar & Asigurări",
     "categorie_slug": "financiar",
@@ -15883,7 +15883,7 @@
   {
     "magazin": "cosim.io",
     "url": "https://cosim.io",
-    "url_afiliat": "https://cosim.io",
+    "url_afiliat": "https://impact.cosim.io/c/7401119/3975336/55758",
     "logo_url": "https://www.google.com/s2/favicons?domain=cosim.io&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
@@ -15935,7 +15935,7 @@
   {
     "magazin": "readdy.ai",
     "url": "https://readdy.ai/",
-    "url_afiliat": "https://readdy.ai/",
+    "url_afiliat": "https://interactivelinkpteltd.sjv.io/c/7401119/3405242/45423",
     "logo_url": "https://www.google.com/s2/favicons?domain=readdy.ai&sz=128",
     "categorie": "Software & Digital",
     "categorie_slug": "software",
@@ -15961,7 +15961,7 @@
   {
     "magazin": "thunderbit.com",
     "url": "https://thunderbit.com",
-    "url_afiliat": "https://thunderbit.com",
+    "url_afiliat": "https://thunderbit.pxf.io/c/7401119/3842233/50662",
     "logo_url": "https://www.google.com/s2/favicons?domain=thunderbit.com&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
@@ -16013,7 +16013,7 @@
   {
     "magazin": "gameseal.com",
     "url": "https://www.gameseal.com",
-    "url_afiliat": "https://www.gameseal.com",
+    "url_afiliat": "https://impact.gameseal.com/c/7401119/3281317/42332",
     "logo_url": "https://www.google.com/s2/favicons?domain=gameseal.com&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
@@ -16039,7 +16039,7 @@
   {
     "magazin": "entertainment.emaar.com",
     "url": "https://entertainment.emaar.com",
-    "url_afiliat": "https://entertainment.emaar.com",
+    "url_afiliat": "https://emaarentertainment.sjv.io/c/7401119/3729367/46763",
     "logo_url": "https://www.google.com/s2/favicons?domain=entertainment.emaar.com&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
@@ -16299,7 +16299,7 @@
   {
     "magazin": "eu.htvront.com",
     "url": "https://eu.htvront.com/",
-    "url_afiliat": "https://eu.htvront.com/",
+    "url_afiliat": "https://htvronteu.pxf.io/c/7401119/3989932/56322",
     "logo_url": "https://icons.duckduckgo.com/ip3/eu.htvront.com.ico",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
@@ -16429,7 +16429,7 @@
   {
     "magazin": "plungechill.com",
     "url": "https://plungechill.com",
-    "url_afiliat": "https://plungechill.com",
+    "url_afiliat": "https://plungechill.pxf.io/c/7401119/3983406/56066",
     "logo_url": "https://www.google.com/s2/favicons?domain=plungechill.com&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
@@ -16508,7 +16508,7 @@
     "magazin": "shop.oobyte.net",
     "url": "https://shop.oobyte.net",
     "url_afiliat": "https://oobyte.pxf.io/c/7401119/3439368/41310",
-    "logo_url": "https://icons.duckduckgo.com/ip3/shop.oobyte.net.ico",
+    "logo_url": "",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "comision": "$4.00 per conversie",
@@ -16637,8 +16637,8 @@
   {
     "magazin": "ikier.com",
     "url": "https://www.ikier.com",
-    "url_afiliat": "https://www.ikier.com",
-    "logo_url": "https://www.google.com/s2/favicons?domain=ikier.com&sz=128",
+    "url_afiliat": "https://ikier.sjv.io/c/7401119/3962536/55245",
+    "logo_url": "https://icons.duckduckgo.com/ip3/ikier.com.ico",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "comision": "Variabil",
@@ -16663,7 +16663,7 @@
   {
     "magazin": "luderejewelry.com",
     "url": "https://www.luderejewelry.com",
-    "url_afiliat": "https://www.luderejewelry.com",
+    "url_afiliat": "https://ldere.sjv.io/c/7401119/2171506/27846",
     "logo_url": "https://www.google.com/s2/favicons?domain=luderejewelry.com&sz=128",
     "categorie": "Bijuterii & Ceasuri",
     "categorie_slug": "bijuterii",
@@ -16690,7 +16690,7 @@
     "magazin": "onebioshop.com",
     "url": "https://onebioshop.com/",
     "url_afiliat": "https://aqqasrl.pxf.io/c/7401119/2920914/33699",
-    "logo_url": "",
+    "logo_url": "https://www.google.com/s2/favicons?domain=onebioshop.com&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "comision": "Variabil",
@@ -17080,7 +17080,7 @@
     "magazin": "yaasa.com",
     "url": "https://yaasa.com/",
     "url_afiliat": "https://www.awin1.com/cread.php?awinmid=122032&awinaffid=101829567&clickref=",
-    "logo_url": "https://icons.duckduckgo.com/ip3/yaasa.com.ico",
+    "logo_url": "https://www.google.com/s2/favicons?domain=yaasa.com&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "comision": "Variabil",
@@ -17730,7 +17730,7 @@
     "magazin": "sexonic.eu",
     "url": "https://sexonic.eu/",
     "url_afiliat": "https://www.awin1.com/cread.php?awinmid=113886&awinaffid=101829567&clickref=",
-    "logo_url": "",
+    "logo_url": "https://www.google.com/s2/favicons?domain=sexonic.eu&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "comision": "Variabil",
@@ -18066,7 +18066,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 245,
+    "folosit_de": 410,
     "procent_succes": 80,
     "exclusiv": false,
     "platforma": "2performant",
@@ -18152,7 +18152,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 509,
+    "folosit_de": 248,
     "procent_succes": 80,
     "exclusiv": false,
     "platforma": "2performant",
@@ -18286,7 +18286,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 60,
+    "folosit_de": 400,
     "procent_succes": 74,
     "exclusiv": false,
     "platforma": "2performant",
@@ -18332,7 +18332,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 350,
+    "folosit_de": 783,
     "procent_succes": 84,
     "exclusiv": false,
     "platforma": "2performant",
@@ -18459,7 +18459,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 356,
+    "folosit_de": 601,
     "procent_succes": 86,
     "exclusiv": false,
     "platforma": "2performant",
@@ -18631,7 +18631,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 93,
+    "folosit_de": 18,
     "procent_succes": 77,
     "exclusiv": false,
     "platforma": "2performant",
@@ -18749,7 +18749,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 44,
+    "folosit_de": 290,
     "procent_succes": 87,
     "exclusiv": false,
     "platforma": "2performant",
@@ -18813,7 +18813,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 86,
+    "folosit_de": 99,
     "procent_succes": 77,
     "exclusiv": false,
     "platforma": "2performant",
@@ -18913,7 +18913,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 322,
+    "folosit_de": 476,
     "procent_succes": 80,
     "exclusiv": false,
     "platforma": "2performant",
@@ -19058,7 +19058,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 274,
+    "folosit_de": 409,
     "procent_succes": 81,
     "exclusiv": false,
     "platforma": "2performant",
@@ -19122,7 +19122,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 150,
+    "folosit_de": 30,
     "procent_succes": 75,
     "exclusiv": false,
     "platforma": "2performant",
@@ -19294,7 +19294,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 192,
+    "folosit_de": 221,
     "procent_succes": 90,
     "exclusiv": false,
     "platforma": "2performant",
@@ -19385,7 +19385,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 356,
+    "folosit_de": 769,
     "procent_succes": 77,
     "exclusiv": false,
     "platforma": "2performant",
@@ -19449,7 +19449,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 215,
+    "folosit_de": 89,
     "procent_succes": 75,
     "exclusiv": false,
     "platforma": "2performant",
@@ -19567,7 +19567,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 258,
+    "folosit_de": 627,
     "procent_succes": 87,
     "exclusiv": false,
     "platforma": "2performant",
@@ -19901,7 +19901,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 341,
+    "folosit_de": 199,
     "procent_succes": 87,
     "exclusiv": false,
     "platforma": "2performant",
@@ -19938,7 +19938,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 486,
+    "folosit_de": 247,
     "procent_succes": 96,
     "exclusiv": false,
     "platforma": "2performant",
@@ -20083,7 +20083,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 53,
+    "folosit_de": 766,
     "procent_succes": 77,
     "exclusiv": false,
     "platforma": "2performant",
@@ -20363,7 +20363,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 679,
+    "folosit_de": 575,
     "procent_succes": 85,
     "exclusiv": false,
     "platforma": "2performant",
@@ -20589,7 +20589,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 799,
+    "folosit_de": 317,
     "procent_succes": 87,
     "exclusiv": false,
     "platforma": "2performant",
@@ -20653,7 +20653,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 525,
+    "folosit_de": 56,
     "procent_succes": 83,
     "exclusiv": false,
     "platforma": "2performant",
@@ -20852,7 +20852,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 408,
+    "folosit_de": 17,
     "procent_succes": 80,
     "exclusiv": false,
     "platforma": "2performant",
@@ -20988,7 +20988,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 134,
+    "folosit_de": 229,
     "procent_succes": 86,
     "exclusiv": false,
     "platforma": "2performant",
@@ -21133,7 +21133,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 759,
+    "folosit_de": 530,
     "procent_succes": 86,
     "exclusiv": false,
     "platforma": "2performant",
@@ -21386,7 +21386,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 510,
+    "folosit_de": 540,
     "procent_succes": 80,
     "exclusiv": false,
     "platforma": "2performant",
@@ -21720,7 +21720,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 108,
+    "folosit_de": 611,
     "procent_succes": 84,
     "exclusiv": false,
     "platforma": "2performant",
@@ -21865,7 +21865,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 532,
+    "folosit_de": 341,
     "procent_succes": 79,
     "exclusiv": false,
     "platforma": "2performant",
@@ -23225,7 +23225,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 216,
+    "folosit_de": 629,
     "procent_succes": 88,
     "exclusiv": false,
     "platforma": "2performant",
@@ -23667,7 +23667,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 360,
+    "folosit_de": 225,
     "procent_succes": 89,
     "exclusiv": false,
     "platforma": "2performant",
@@ -23731,7 +23731,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 357,
+    "folosit_de": 620,
     "procent_succes": 91,
     "exclusiv": false,
     "platforma": "2performant",
@@ -23858,7 +23858,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 703,
+    "folosit_de": 612,
     "procent_succes": 76,
     "exclusiv": false,
     "platforma": "2performant",
@@ -24003,7 +24003,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 45,
+    "folosit_de": 486,
     "procent_succes": 72,
     "exclusiv": false,
     "platforma": "2performant",
@@ -24121,7 +24121,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 48,
+    "folosit_de": 609,
     "procent_succes": 95,
     "exclusiv": false,
     "platforma": "2performant",
@@ -24779,7 +24779,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 36,
+    "folosit_de": 272,
     "procent_succes": 79,
     "exclusiv": false,
     "platforma": "2performant",
@@ -24951,7 +24951,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 385,
+    "folosit_de": 668,
     "procent_succes": 90,
     "exclusiv": false,
     "platforma": "2performant",
@@ -25186,7 +25186,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 762,
+    "folosit_de": 272,
     "procent_succes": 85,
     "exclusiv": false,
     "platforma": "2performant",
@@ -25547,7 +25547,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 428,
+    "folosit_de": 573,
     "procent_succes": 76,
     "exclusiv": false,
     "platforma": "2performant",
@@ -26043,7 +26043,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 485,
+    "folosit_de": 781,
     "procent_succes": 91,
     "exclusiv": false,
     "platforma": "2performant",
@@ -26458,7 +26458,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 316,
+    "folosit_de": 549,
     "procent_succes": 95,
     "exclusiv": false,
     "platforma": "2performant",
@@ -26504,7 +26504,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 17,
+    "folosit_de": 194,
     "procent_succes": 72,
     "exclusiv": false,
     "platforma": "2performant",
@@ -26865,7 +26865,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 198,
+    "folosit_de": 795,
     "procent_succes": 95,
     "exclusiv": false,
     "platforma": "2performant",
@@ -27316,7 +27316,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 590,
+    "folosit_de": 577,
     "procent_succes": 86,
     "exclusiv": false,
     "platforma": "2performant",
@@ -27605,7 +27605,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 576,
+    "folosit_de": 71,
     "procent_succes": 78,
     "exclusiv": false,
     "platforma": "2performant",
@@ -28353,7 +28353,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 552,
+    "folosit_de": 502,
     "procent_succes": 86,
     "exclusiv": false,
     "platforma": "2performant",
@@ -28471,7 +28471,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 558,
+    "folosit_de": 699,
     "procent_succes": 88,
     "exclusiv": false,
     "platforma": "2performant",
@@ -28535,7 +28535,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 621,
+    "folosit_de": 425,
     "procent_succes": 95,
     "exclusiv": false,
     "platforma": "2performant",
@@ -28572,7 +28572,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 290,
+    "folosit_de": 465,
     "procent_succes": 83,
     "exclusiv": false,
     "platforma": "2performant",
@@ -29257,7 +29257,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 58,
+    "folosit_de": 780,
     "procent_succes": 90,
     "exclusiv": false,
     "platforma": "2performant",
@@ -29303,7 +29303,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 277,
+    "folosit_de": 400,
     "procent_succes": 72,
     "exclusiv": false,
     "platforma": "2performant",
@@ -29475,7 +29475,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 305,
+    "folosit_de": 235,
     "procent_succes": 72,
     "exclusiv": false,
     "platforma": "2performant",
@@ -29539,7 +29539,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 748,
+    "folosit_de": 309,
     "procent_succes": 91,
     "exclusiv": false,
     "platforma": "2performant",
@@ -29603,7 +29603,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 306,
+    "folosit_de": 82,
     "procent_succes": 81,
     "exclusiv": false,
     "platforma": "2performant",
@@ -29640,7 +29640,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 32,
+    "folosit_de": 83,
     "procent_succes": 73,
     "exclusiv": false,
     "platforma": "2performant",
@@ -29749,7 +29749,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 697,
+    "folosit_de": 134,
     "procent_succes": 75,
     "exclusiv": false,
     "platforma": "2performant",
@@ -30281,7 +30281,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 97,
+    "folosit_de": 564,
     "procent_succes": 73,
     "exclusiv": false,
     "platforma": "2performant",
@@ -30570,7 +30570,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 663,
+    "folosit_de": 480,
     "procent_succes": 79,
     "exclusiv": false,
     "platforma": "2performant",
@@ -30715,7 +30715,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 697,
+    "folosit_de": 432,
     "procent_succes": 95,
     "exclusiv": false,
     "platforma": "2performant",
@@ -30806,7 +30806,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 258,
+    "folosit_de": 139,
     "procent_succes": 96,
     "exclusiv": false,
     "platforma": "2performant",
@@ -30843,7 +30843,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 168,
+    "folosit_de": 120,
     "procent_succes": 91,
     "exclusiv": false,
     "platforma": "2performant",
@@ -30880,7 +30880,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 213,
+    "folosit_de": 267,
     "procent_succes": 88,
     "exclusiv": false,
     "platforma": "2performant",
@@ -31079,7 +31079,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 300,
+    "folosit_de": 743,
     "procent_succes": 73,
     "exclusiv": false,
     "platforma": "2performant",
@@ -31521,7 +31521,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 393,
+    "folosit_de": 492,
     "procent_succes": 73,
     "exclusiv": false,
     "platforma": "2performant",
@@ -31558,7 +31558,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 532,
+    "folosit_de": 79,
     "procent_succes": 83,
     "exclusiv": false,
     "platforma": "2performant",
@@ -31703,7 +31703,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 132,
+    "folosit_de": 719,
     "procent_succes": 84,
     "exclusiv": false,
     "platforma": "2performant",
@@ -31821,7 +31821,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 597,
+    "folosit_de": 60,
     "procent_succes": 96,
     "exclusiv": false,
     "platforma": "2performant",
@@ -31885,7 +31885,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 98,
+    "folosit_de": 134,
     "procent_succes": 77,
     "exclusiv": false,
     "platforma": "2performant",
@@ -32084,7 +32084,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 646,
+    "folosit_de": 485,
     "procent_succes": 78,
     "exclusiv": false,
     "platforma": "2performant",
@@ -32121,7 +32121,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 106,
+    "folosit_de": 579,
     "procent_succes": 77,
     "exclusiv": false,
     "platforma": "2performant",
