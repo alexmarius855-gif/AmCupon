@@ -215,7 +215,11 @@ Apasati "Raporteaza cod" pe AmCupon.ro si il vom verifica si actualiza in maxim 
 Da! Unele promotii {nume} se aplica automat prin link-ul afiliat — fara sa fie nevoie sa introduceti un cod. Le puteti recunoaste dupa eticheta "Reducere automata" de pe AmCupon.ro.
 
 **Cat de des actualizeaza AmCupon.ro codurile {nume}?**
-Sistemul nostru verifica promotiile de la {nume} de **6 ori pe zi** (la fiecare 4 ore). Codul pe care il gasiti pe aceasta pagina este valid in momentul in care il accesati.
+<!-- FRECVENTA REALA: update-data.yml are "0 5,17 * * *" + "0 6 * * *" = 3 rulari/zi.
+     Scria "6 ori pe zi (la fiecare 4 ore)" pe 434 din 500 de articole live, in FAQ,
+     adica exact intr-un raspuns pe care cititorul il ia ca fapt. Corectat 22.08.2026.
+     Daca schimbi cron-ul, schimba si textul asta. -->
+Sistemul nostru verifica promotiile de la {nume} de **trei ori pe zi**. Codul pe care il gasiti pe aceasta pagina este valid in momentul in care il accesati.
 
 ---
 

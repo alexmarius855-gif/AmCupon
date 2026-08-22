@@ -190,7 +190,7 @@ export default function StudiuPage() {
           <p className="text-[#c9ced5] mt-6 leading-relaxed">
             Diferenta conteaza pentru cumparator: <strong className="text-[#ffffff]">{s.doar_oferta} magazine</strong>{" "}
             au reduceri active, dar afisate direct in pret, fara cod de introdus la finalizarea
-            comenzii. Doar <strong className="text-[#ffffff]">{s.cu_cod_real}</strong> cer un cod.
+            comenzii. Doar <strong className="text-[#ffffff]">{s.cu_cod_real}</strong>{" "}cer un cod.
             Cine cauta &quot;cod reducere X&quot; pe Google gaseste, in marea majoritate a cazurilor,
             pagini care promit un cod ce nu exista.
           </p>
@@ -226,7 +226,7 @@ export default function StudiuPage() {
                     </td>
                     <td className="px-4 py-3 text-right text-[#c9ced5] tabular-nums">{c.magazine}</td>
                     <td className="px-4 py-3 text-right text-[#c9ced5] tabular-nums">{c.cu_promotie}</td>
-                    <td className="px-4 py-3 text-right font-black text-[#ddf93c] tabular-nums">{c.reducere_mediana}%</td>
+                    <td className="px-4 py-3 text-right font-black text-[#ddf93c] tabular-nums">{String(c.reducere_mediana).replace(".", ",")}%</td>
                     <td className="px-4 py-3 text-right text-[#c9ced5] tabular-nums">{c.reducere_max}%</td>
                   </tr>
                 ))}
@@ -253,7 +253,7 @@ export default function StudiuPage() {
                 <h3 className="font-bold text-[#ffffff] mb-1">Sursa datelor</h3>
                 <p>
                   Magazinele si promotiile vin din retelele de afiliere in care AmCupon.ro e partener:{" "}
-                  {s.retele.join(", ")}. Datele se reimprospateaza automat la fiecare 4 ore.
+                  {s.retele.join(", ")}. Datele se reimprospateaza automat de trei ori pe zi.
                   Cifrele de pe aceasta pagina sunt cele de la {s.generat}.
                 </p>
               </div>
@@ -270,7 +270,7 @@ export default function StudiuPage() {
                 <p>
                   Acopera magazinele accesibile prin retelele de mai sus si codurile publice
                   distribuite acolo. Un magazin care trimite coduri <strong className="text-[#ffffff]">doar
-                  pe newsletter, in aplicatie sau catre clienti individuali</strong> nu apare in
+                  pe newsletter, in aplicatie sau catre clienti individuali</strong>{" "}nu apare in
                   aceste cifre. Nu masuram tot comertul online romanesc, ci partea lui vizibila
                   prin afiliere &mdash; care e, totusi, exact partea pe care o vede oricine cauta
                   un cod de reducere pe Google.
