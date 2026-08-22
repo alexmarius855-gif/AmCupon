@@ -12,6 +12,63 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 22.08.2026 (primele date GSC reale + bug de bani + 2 valuri de taxonomie — PUSHED):**
+- **STARE**: 1.156 magazine · **94 cu promotie** · **18 cu cod real** · sitemap **463 URL, toate 200**
+  (verificat prin crawl live pe fiecare) · **money leak 138 -> 89**.
+- **CEL MAI SCUMP BUG: 49 de magazine Impact incasau 0 comision.** `reconcile_impact_links.py` rula
+  la fiecare ciclu, raporta „neschimbate: 712" si parea ca lucreaza. Cauza:
+  `domain = m.get("magazin") or domain_from_url(m.get("url",""))`. In `data/output.json` slug-ul E
+  domeniul, deci mergea; in `extra_merchants.json` slug-ul e numele afisat („KKday", „Air Serbia") —
+  o valoare ADEVARATA care nu e domeniu, deci `or` nu ajungea NICIODATA la fallback.
+  **Regula: `or` intre „valoare care poate fi de alt tip" si „fallback" ascunde exact cazul in care
+  prima valoare exista dar e gresita.** Inlocuit cu `domenii_candidate()` care incearca toti candidatii.
+  Verificat live 12 din linkurile noi: 302 catre `ojrq.net` (trackerul Impact).
+- **Al doilea bug de bani**: `coursera.org` avea `pxf.io/c/7761435/1/0` — sablon din
+  `add_impact_merchants.py`, campanie „1", ad „0", niciodata concretizat, **404 live**. Trecea de
+  `REAL_TRACKING_RE` fiindca ARATA a link bun. Adaugat `PLACEHOLDER_IMPACT_RE`. **Un link rupt care
+  pare valid e mai rau decat unul lipsa** — nu se repara singur si nu apare in niciun raport.
+  Verificate toate cele 496 de linkuri Impact: e singurul caz.
+- **PRIMELE DATE REALE DIN SEARCH CONSOLE** (3 luni). 22 clicuri, 229 expuneri, 64 pagini indexate,
+  13 pagini accesate vreodata de Google. Detalii in `docs/operational/CERERE-REALA-GSC-22-08-2026.md`.
+  - **Forma cererii e descoperirea, nu cifrele**: aproape fiecare interogare e
+    „cod reducere <magazin mic romanesc>" (dalisticq, ginsari, sevich, orisee, olfactiv, everin...).
+    Nimeni nu ne cauta pentru eMAG. **Acolo se poate castiga pe un domeniu fara autoritate.**
+  - **13 din ~26 de magazine cautate nu le avem**; **7 le au si competitorii** (dedeman, luxury
+    beauty, color cosmetics, dalisticq, ginsari, orisee, olfactiv) = lista de aplicat cu doua semnale
+    independente.
+  - `albirea-dintilor.com`: 34 expuneri, 1 clic, pozitia 17 — a 4-a pagina dupa clicuri, si era
+    `noindex`. Adaugata in `BRANDURI_CU_CERERE` (prima intrare pe date proprii, nu estimari Semrush).
+  - **Zgomot de ignorat**: `"underarmour" -site:reddit.com...` (25 expuneri, 11% din total) e un
+    instrument de rank-tracking, nu oameni.
+  - **NU optimiza CTR pe titluri acum**: la 46-52 expuneri/pagina, diferenta dintre 0 si 2 clicuri e
+    zgomot. Verificat, nu se sustine ca problema.
+- **29 de adrese vechi de categorie dadeau 404 din iulie** (al 4-lea val de taxonomie moarta).
+  Slugurile de dinainte de `b048300`, testate live toate 38 din istoricul git. Fiecare are acum 301,
+  cu **destinatia verificata live ca raspunde 200 inainte de commit** — 7 dintre destinatiile
+  „evidente" (`/farmacie`, `/casa`, `/jocuri`) exista doar ca pagini top-level, nu ca `/categorii/*`.
+- **Al 5-lea val, in aceeasi zi**: `DESC_CATEG` din `categorii/[slug]/CategorieClient.tsx` — 11 din 13
+  descrieri SEO cheiate pe sluguri moarte, deci nu s-au afisat NICIODATA; cele 2 vii numeau
+  FashionDays/Zara/H&M/Douglas/Sephora, magazine pe care nu le avem. **Reparat structural: textul nu
+  mai numeste niciun magazin**; numele vin dintr-o propozitie generata din date. O propozitie generata
+  nu poate deveni falsa. Plus `FiltreRapide` pe cele 18 pagini de categorie (Modulul 4 din PDF-ul lui
+  Alex — celelalte 4 module existau deja construite).
+- **Sitemap: sursa unica.** `lib/redirecturi.ts` e citit SI de `next.config.ts` SI de `sitemap.ts`,
+  plus un filtru final care scoate orice cale redirectionata. Inainte, 7 URL-uri din sitemap raspundeau
+  308. Doua liste manuale nu mai pot diverge.
+- **REGRESIE PROPRIE, reparata**: pe 19.08 am redirectionat `libris.ro`, `vegis.ro`, `pint.ro`,
+  `pcmadd.com` la excluderea Profitshare. Nu erau Profitshare-only — exista si pe 2Performant, comision
+  8%, promotii active. **Am filtrat dupa numele magazinului, nu dupa platforma.** Exclude MEREU dupa
+  `platforma` din inregistrare: acelasi brand poate fi in mai multe retele.
+- **2Performant NU expune catalogul prin API** — masurat cu `sonda_2p_catalog.py`: sase valori de
+  `filter[affrequest_status]` si cinci endpointuri intorc toate **exact 513** (relatiile contului).
+  `programe_2p_neaplicate.py` nu putea functiona, indiferent cate bug-uri reparam in el — si reparasem
+  trei inainte sa verific premisa. **Ordinea corecta: intai verifici ca datele exista, apoi scrii codul.**
+  Reorientat catre „ce e aprobat dar nu produce bani"; rulat: 0 gauri, totul e conectat.
+- **GSC — proprietate schimbata**: Alex a trimis sitemap-ul in proprietatea de DOMENIU (`amcupon.ro`),
+  nu in cea de prefix (`https://amcupon.ro/`) de unde vin exporturile de mai sus. Citit 22.08, **463
+  pagini descoperite** — prima citire proaspata din 6 iulie. Rapoartele sunt separate: **foloseste de
+  acum proprietatea de domeniu**, altfel comparam cifre din surse diferite.
+
 **UPDATE 21.08.2026 (AUDIT COMPLET: Supabase + GitHub + date + live — PUSHED):**
 - **STARE REALA, masurata azi**: **1.155 magazine** · **997 cu comision** (158 fara) ·
   **89 cu promotie** · **18 cu cod REAL** · **15.704 produse** din 99 magazine ·
