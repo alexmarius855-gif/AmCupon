@@ -54,6 +54,16 @@ NUME_CATEGORIE = {
     "auto-moto": "Auto & moto", "marketplace": "Marketplace", "servicii": "Servicii",
 }
 
+# Numele afisabile ale retelelor. Cheile sunt valorile REALE din campul `platforma`.
+NUME_RETEA = {
+    "2performant": "2Performant",
+    "impact": "Impact.com",
+    "awin": "Awin",
+    "tradetracker": "TradeTracker",
+    "tradedoubler": "TradeDoubler",
+    "cj": "CJ Affiliate",
+}
+
 
 def procent_din_promotii(magazin) -> int | None:
     """Cel mai mare procent de reducere scris EXPLICIT in textul promotiei.
@@ -121,7 +131,15 @@ def main():
         "reducere_mediana_generala": round(statistics.median(toate_procentele), 1) if toate_procentele else None,
         "magazine_cu_procent_declarat": len(toate_procentele),
         "categorii": categorii,
-        "retele": ["2Performant", "Profitshare", "Impact.com", "Awin"],
+        # Derivat din DATE, nu scris de mana. Lista hardcodata a ramas cu
+        # "Profitshare" dupa excluderea din 19.08.2026 si a publicat o afirmatie
+        # falsa pe o pagina destinata sa fie citata de altii — exact pagina unde
+        # o inexactitate costa cel mai mult.
+        "retele": sorted({
+            NUME_RETEA.get(p, p.title())
+            for p in ((m.get("platforma") or "").strip().lower() for m in magazine)
+            if p and p != "direct"
+        }),
         "prag_esantion": PRAG_ESANTION,
     }
 
