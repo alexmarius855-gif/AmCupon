@@ -34,11 +34,12 @@ niciun link extern nu primește buget de crawl, indiferent cât de curat e.
       deci link **nofollow**. Titlu: „Cate magazine online din Romania au cu adevarat un cod
       de reducere activ?", URL către pagina de studiu, imagine generată cu
       `scripts/generate_imagine_articol.py`.
-      **Pe același site mai sunt două submisii gratuite**, la 2-3 zile distanță:
-      „Adaugă site gratuit", apoi „Adaugă Comunicat gratuit". Textele sunt gata în
-      `docs/operational/TEXTE-DIRECTOARE.md`.
-      *Opțiunea plătită (35 lei, 3 linkuri dofollow) a fost respinsă deliberat — vezi nota
-      de la finalul secțiunii.*
+      **LISTARE SITE trimisă tot pe 22.08** (descriere diferită de a articolului — formularul
+      avertizează „Nu adaugati acelasi site de mai multe ori", iar conținut duplicat între două
+      listări pe același domeniu le devalorizează pe amândouă).
+      **Rămas: „Adaugă Comunicat gratuit"** — textul e gata în `TEXTE-DIRECTOARE.md`.
+      *Ambele opțiuni plătite (35 lei la articol, 25 lei la site) și „listarea reciprocă"
+      au fost respinse deliberat — vezi nota de la finalul secțiunii.*
 - [ ] [dirpedia.ro](https://www.dirpedia.ro/directoare-generale.html) — verifică 5-10 din listă
 - [ ] [PROMOdesk — 70 de directoare românești](https://www.promodesk.ro/directoare-web/lista-directoare-web-romanesti)
       — primele 10-15 cu trafic real, sari peste cele moarte
@@ -77,6 +78,13 @@ Email contact: alexmarius855@gmail.com
 >
 > Nofollow-ul gratuit rămâne util: din 2019 Google tratează `nofollow` ca **sugestie**, nu ordin,
 > deci tot crawlează linkul, iar un profil 100% dofollow arată nenatural.
+>
+> **A treia variantă, apărută abia la formularul de site: „listare reciprocă dofollow"** — primești
+> dofollow dacă pui tu un link dofollow către director pe amcupon.ro. Respinsă, și nu în principal
+> pentru că schimburile de linkuri sunt numite explicit în politica Google. Motivul practic e mai
+> simplu: **dai mai mult decât primești.** Linkurile pe care le dai TU spun lui Google în ce companie
+> stă site-ul tău — a trimite autoritate către un director de linkuri e un semnal mai prost decât e
+> de bun linkul primit înapoi. Plus clutter pe un site care trebuie să rămână curat.
 
 ---
 
@@ -148,8 +156,8 @@ Detaliile complete: `docs/operational/CERERE-REALA-GSC-22-08-2026.md`.
 ## Progres
 
 **12.07.2026** — plan creat; cross-link AlexMarinescu.ro confirmat activ.
-**22.08.2026** — **primul backlink trimis** (articol pe linkpro.ro, nofollow). Awin bifat (57 magazine). Text de înscriere corectat (conținea Profitshare
+**22.08.2026** — **primele două backlink-uri trimise** (articol + listare site pe linkpro.ro, nofollow). Awin bifat (57 magazine). Text de înscriere corectat (conținea Profitshare
 și cifre vechi). Adăugată secțiunea D din date Search Console. Notat de ce board-ul eMAG
 din planul vechi nu trebuie făcut.
 
-**Bifate: 3 din 20.** Asta e, în continuare, cel mai important număr din tot proiectul.
+**Bifate: 4 din 20.** Asta e, în continuare, cel mai important număr din tot proiectul.
