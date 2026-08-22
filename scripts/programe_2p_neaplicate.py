@@ -69,14 +69,22 @@ def are_tracking(url: str) -> bool:
 
 
 def domeniu(text: str) -> str:
-    """Domeniu curat dintr-un URL sau dintr-un slug. Fara ghicit."""
+    """
+    Domeniu curat dintr-un URL sau dintr-un slug. Fara ghicit.
+
+    Ramura fara schema trebuie sa taie calea si slash-ul final la fel ca cea cu
+    schema. Prima versiune returna "drmax.ro/" pentru intrarea "drmax.ro/" si
+    "benvenuti.com/ro" pentru "benvenuti.com/ro" — care nu se potriveau cu
+    slug-urile de pe site, deci 84 de programe pareau lipsa cand de fapt existau.
+    """
     t = str(text or "").strip().lower()
     m = re.search(r"https?://(?:www\.)?([^/?#]+)", t)
     if m:
         return m.group(1)
-    if "." in t and " " not in t:
-        return t[4:] if t.startswith("www.") else t
-    return ""
+    t = t.split("?")[0].split("#")[0].split("/")[0]
+    if t.startswith("www."):
+        t = t[4:]
+    return t if ("." in t and " " not in t) else ""
 
 
 def main() -> int:
