@@ -1,8 +1,10 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 
-import MagazinCard, { type CardMagazin } from "../../components/MagazinCard";
+import MagazinCard, { numeAfisat, type CardMagazin } from "../../components/MagazinCard";
+import FiltreRapide, { trecePrinFiltru, type CheieFiltru } from "../../components/FiltreRapide";
 import NewsletterCTA from "../../components/NewsletterCTA";
 
 interface Magazin extends CardMagazin {
@@ -13,21 +15,41 @@ interface Magazin extends CardMagazin {
   rank?: number;
 }
 
-// Descrieri SEO per categorie
+/**
+ * Descrieri SEO per categorie.
+ *
+ * REPARAT 22.08.2026 - al 5-lea val al aceluiasi tipar (docs/LECTII-TEHNICE.md).
+ * Versiunea anterioara era cheiata pe slugurile de dinainte de migrarea taxonomiei:
+ * din 13 descrieri, 11 nu s-au afisat NICIODATA (electronics-itc, pet-supplies,
+ * home-garden...). Iar cele 2 care se afisau numeau magazine pe care nu le avem:
+ * FashionDays (Profitshare, cont respins), Zara, H&M, Douglas, Sephora.
+ *
+ * Doua schimbari care fac imposibila repetarea:
+ *   1. cheile sunt cele 18 sluguri REALE din output.json;
+ *   2. textul NU mai numeste niciun magazin. Numele apar dintr-o propozitie
+ *      generata din date (magazineMentionate mai jos), deci nu pot deveni false
+ *      cand un program e respins sau adaugat. Ce e scris de mana se poate invechi;
+ *      ce e citit din date, nu.
+ */
 const DESC_CATEG: Record<string, string> = {
-  "fashion": "Găsești coduri de reducere pentru haine, pantofi și accesorii de la branduri precum FashionDays, Answear, Zara, H&M și multe altele. Actualizăm reducerile zilnic.",
-  "electronics-itc": "Coduri reducere pentru electronice, laptopuri, telefoane și IT. Parteneri: eMAG, Altex, Flanco și alte magazine de top.",
-  "beauty": "Voucher și coduri de reducere pentru parfumuri, cosmetice și produse de îngrijire. Parteneri: Notino, Douglas, Sephora.",
-  "babies-kids-toys": "Reduceri la jucării, haine și produse pentru copii. Parteneri: Noriel, eMAG Kids, Smyths Toys.",
-  "sports-outdoors": "Coduri reducere pentru echipament sportiv, îmbrăcăminte și outdoor. Parteneri: Decathlon, Sportisimo, Sport Vision.",
-  "home-garden": "Voucher reducere pentru mobilă, decorațiuni și grădină. Parteneri: Dedeman, IKEA, Leroy Merlin.",
-  "books": "Coduri reducere pentru cărți, audiobook-uri și manuale. Parteneri: Elefant, Libris, Bookzone.",
-  "health-personal-care": "Reduceri la suplimente, vitamine și produse de îngrijire personală.",
-  "pharma": "Coduri reducere la farmacii online: Dr. Max, Catena, Helpnet.",
-  "gifts-flowers": "Reduceri pentru cadouri, flori și produse personalizate. Parteneri: Floria, Cadouri.ro.",
-  "hypermarket-groceries": "Coduri reducere la supermarketuri și livrare alimente online.",
-  "automotive": "Reduceri piese auto, accesorii și servicii auto.",
-  "pet-supplies": "Coduri reducere pentru hrana și accesorii animale de companie.",
+  "marketplace":     "Coduri de reducere pentru marketplace-uri si magazine generaliste, unde gasesti de toate intr-un singur loc. Verificam ofertele zilnic si pastram doar ce e activ.",
+  "casa-gradina":    "Reduceri la mobila, decoratiuni, unelte si tot ce tine de casa si gradina. De la amenajari complete pana la obiecte mici care schimba o camera.",
+  "electronice":     "Coduri reducere pentru laptopuri, telefoane, televizoare si electronice IT. Categoria cu cele mai frecvente campanii din an.",
+  "fashion":         "Voucher si coduri de reducere pentru haine, incaltaminte si accesorii. Colectii noi, stocuri la final de sezon si reduceri care se schimba saptamanal.",
+  "software":        "Reduceri la licente software, aplicatii si servicii digitale - de la antivirus si VPN pana la unelte de productivitate.",
+  "calatorii":       "Coduri reducere pentru cazare, zboruri, eSIM si servicii de calatorie. Utile mai ales cand rezervi din timp.",
+  "beauty":          "Voucher si coduri de reducere pentru parfumuri, cosmetice si produse de ingrijire. Una dintre cele mai active categorii ca numar de promotii.",
+  "sanatate":        "Reduceri la farmacii online, suplimente, vitamine si produse de ingrijire personala.",
+  "sport":           "Coduri reducere pentru echipament sportiv, imbracaminte de antrenament si articole outdoor.",
+  "carti-educatie":  "Reduceri la carti, manuale, audiobook-uri si cursuri online. Campaniile cresc vizibil in perioada de inceput de scoala.",
+  "copii":           "Coduri reducere la jucarii, haine si produse pentru copii si bebelusi.",
+  "auto-moto":       "Reduceri la piese auto, anvelope, accesorii si echipament moto.",
+  "servicii":        "Coduri reducere pentru servicii online: gazduire, unelte de business, abonamente si platforme digitale.",
+  "bijuterii":       "Voucher si reduceri la bijuterii, ceasuri si accesorii - de la piese de zi cu zi pana la cadouri.",
+  "animale":         "Coduri reducere pentru hrana, accesorii si produse de ingrijire pentru animale de companie.",
+  "mancare-bauturi": "Reduceri la livrare de mancare, cafea, vin si bauturi. Categorie mica la noi deocamdata, dar in crestere.",
+  "cadouri-flori":   "Coduri reducere pentru flori, cadouri personalizate si experiente. Cerere concentrata in jurul sarbatorilor.",
+  "financiar":       "Reduceri si oferte la carduri, credite, asigurari si servicii financiare.",
 };
 
 interface Produs {
@@ -41,10 +63,19 @@ export default function CategorieClient({ magazine, numeCategorie, slug, produse
   slug: string;
   produse?: Produs[];
 }) {
+  const [filtruActiv, setFiltruActiv] = useState<CheieFiltru>("toate");
+
   const cuPromotii = magazine.filter((m) => m.are_promotie);
   const faraPromotii = magazine.filter((m) => !m.are_promotie);
   const an = new Date().getFullYear();
   const descCateg = DESC_CATEG[slug];
+
+  // Numele magazinelor vin din DATE, nu din text scris de mana - asa nu pot deveni
+  // false. Doar cele cu promotie activa, ca propozitia sa fie utila, nu decorativa.
+  const magazineMentionate = cuPromotii.slice(0, 5).map((m) => numeAfisat(m.magazin));
+  const restulCuPromotii = cuPromotii.length - magazineMentionate.length;
+
+  const cuPromotiiFiltrate = cuPromotii.filter((m) => trecePrinFiltru(m, filtruActiv));
 
   return (
     <div className="min-h-screen bg-[#06080b]">
@@ -81,6 +112,12 @@ export default function CategorieClient({ magazine, numeCategorie, slug, produse
           {descCateg && (
             <p className="text-[#c9ced5] text-sm mt-2 max-w-2xl opacity-90">{descCateg}</p>
           )}
+          {magazineMentionate.length > 0 && (
+            <p className="text-[#9399a0] text-sm mt-1.5 max-w-2xl">
+              Magazine cu oferte active acum: {magazineMentionate.join(", ")}
+              {restulCuPromotii > 0 ? " si inca " + restulCuPromotii : ""}.
+            </p>
+          )}
         </div>
       </div>
 
@@ -89,15 +126,36 @@ export default function CategorieClient({ magazine, numeCategorie, slug, produse
         {/* CU PROMOTII */}
         {cuPromotii.length > 0 && (
           <section className="mb-10">
-            <div className="flex items-center gap-3 mb-5">
+            <div className="flex items-center gap-3 mb-4">
               <h2 className="text-xl font-black text-[#ffffff]">Promoții Active {an}</h2>
-              <span className="text-sm text-[#9399a0]">{cuPromotii.length} oferte</span>
+              <span className="text-sm text-[#9399a0]">
+                {filtruActiv === "toate"
+                  ? cuPromotii.length + " oferte"
+                  : cuPromotiiFiltrate.length + " din " + cuPromotii.length + " oferte"}
+              </span>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-              {cuPromotii.map((m) => (
-                <MagazinCard key={m.magazin} m={m} />
-              ))}
+
+            {/* Aceleasi filtre ca pe homepage - component partajat, nu o copie.
+                FiltreRapide ascunde singur filtrele fara rezultate, deci pe o
+                categorie fara niciun cod nu apare un buton care nu face nimic. */}
+            <div className="mb-5">
+              <FiltreRapide magazine={cuPromotii} activ={filtruActiv} onSchimba={setFiltruActiv} />
             </div>
+
+            {cuPromotiiFiltrate.length > 0 ? (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                {cuPromotiiFiltrate.map((m) => (
+                  <MagazinCard key={m.magazin} m={m} />
+                ))}
+              </div>
+            ) : (
+              <p className="text-sm text-[#9399a0] py-6">
+                Niciun magazin din {numeCategorie} nu are acest tip de ofertă acum.{" "}
+                <button onClick={() => setFiltruActiv("toate")} className="text-[#ddf93c] font-bold hover:underline">
+                  Vezi toate cele {cuPromotii.length}
+                </button>
+              </p>
+            )}
           </section>
         )}
 

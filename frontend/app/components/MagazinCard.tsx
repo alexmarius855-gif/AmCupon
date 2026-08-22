@@ -41,7 +41,9 @@ const NUME_OVERRIDE: Record<string, string> = {
   "carmellimo.com": "Carmel Limo",
 };
 
-function numeAfisat(magazin: string): string {
+/** Nume afisabil dintr-un slug de domeniu. Exportat ca sa fie o singura sursa
+ *  (paginile de categorie il refolosesc — altfel s-ar duplica si NUME_OVERRIDE). */
+export function numeAfisat(magazin: string): string {
   if (NUME_OVERRIDE[magazin]) return NUME_OVERRIDE[magazin];
   return magazin.split(".")[0].replace(/-/g, " ")
     .split(" ").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
