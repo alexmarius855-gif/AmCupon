@@ -1,13 +1,13 @@
 {
-  "generat": "2026-08-21",
+  "generat": "2026-08-22",
   "total_magazine": 1156,
-  "cu_promotie": 89,
+  "cu_promotie": 94,
   "cu_cod_real": 18,
-  "doar_oferta": 71,
-  "procent_cu_promotie": 7.7,
+  "doar_oferta": 76,
+  "procent_cu_promotie": 8.1,
   "procent_cu_cod": 1.6,
   "reducere_mediana_generala": 40,
-  "magazine_cu_procent_declarat": 65,
+  "magazine_cu_procent_declarat": 67,
   "categorii": [
     {
       "slug": "electronice",
@@ -40,8 +40,8 @@
       "slug": "carti-educatie",
       "nume": "Cărți & educație",
       "magazine": 35,
-      "cu_promotie": 9,
-      "reducere_mediana": 50,
+      "cu_promotie": 10,
+      "reducere_mediana": 60,
       "reducere_max": 90,
       "esantion": 7
     },
@@ -49,19 +49,10 @@
       "slug": "fashion",
       "nume": "Fashion",
       "magazine": 103,
-      "cu_promotie": 13,
-      "reducere_mediana": 43.5,
+      "cu_promotie": 14,
+      "reducere_mediana": 40,
       "reducere_max": 80,
-      "esantion": 10
-    },
-    {
-      "slug": "beauty",
-      "nume": "Beauty & îngrijire",
-      "magazine": 80,
-      "cu_promotie": 7,
-      "reducere_mediana": 37,
-      "reducere_max": 70,
-      "esantion": 5
+      "esantion": 11
     },
     {
       "slug": "casa-gradina",
@@ -73,10 +64,19 @@
       "esantion": 15
     },
     {
+      "slug": "beauty",
+      "nume": "Beauty & îngrijire",
+      "magazine": 80,
+      "cu_promotie": 8,
+      "reducere_mediana": 33.5,
+      "reducere_max": 70,
+      "esantion": 6
+    },
+    {
       "slug": "sanatate",
       "nume": "Sănătate & farmacie",
       "magazine": 61,
-      "cu_promotie": 15,
+      "cu_promotie": 16,
       "reducere_mediana": 33,
       "reducere_max": 50,
       "esantion": 9
@@ -85,7 +85,7 @@
       "slug": "copii",
       "nume": "Copii & familie",
       "magazine": 33,
-      "cu_promotie": 3,
+      "cu_promotie": 4,
       "reducere_mediana": 20,
       "reducere_max": 70,
       "esantion": 3
