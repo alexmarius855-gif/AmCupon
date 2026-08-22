@@ -30,7 +30,15 @@ niciun link extern nu primește buget de crawl, indiferent cât de curat e.
 Înscriere directă, fără aprobare complexă.
 
 - [ ] [web-trafic.ro](https://web-trafic.ro)
-- [ ] [linkpro.ro](https://linkpro.ro) — permite și un articol scurt
+- [x] **[linkpro.ro](https://linkpro.ro) — ARTICOL TRIMIS 22.08.2026.** Listare gratuită,
+      deci link **nofollow**. Titlu: „Cate magazine online din Romania au cu adevarat un cod
+      de reducere activ?", URL către pagina de studiu, imagine generată cu
+      `scripts/generate_imagine_articol.py`.
+      **Pe același site mai sunt două submisii gratuite**, la 2-3 zile distanță:
+      „Adaugă site gratuit", apoi „Adaugă Comunicat gratuit". Textele sunt gata în
+      `docs/operational/TEXTE-DIRECTOARE.md`.
+      *Opțiunea plătită (35 lei, 3 linkuri dofollow) a fost respinsă deliberat — vezi nota
+      de la finalul secțiunii.*
 - [ ] [dirpedia.ro](https://www.dirpedia.ro/directoare-generale.html) — verifică 5-10 din listă
 - [ ] [PROMOdesk — 70 de directoare românești](https://www.promodesk.ro/directoare-web/lista-directoare-web-romanesti)
       — primele 10-15 cu trafic real, sari peste cele moarte
@@ -59,6 +67,16 @@ Email contact: alexmarius855@gmail.com
 > (cont respins 19.08) și s-au adăugat **Impact.com** și **Awin**, care sunt rețelele reale
 > de azi; „la fiecare 4 ore" → „de trei ori pe zi", care e ritmul adevărat al pipeline-ului.
 > Un director care verifică și găsește o afirmație falsă respinge înscrierea.
+
+> **De ce nu cumpărăm linkuri dofollow din directoare.** Două motive, ambele verificate:
+> (1) e exact clasa de link pe care Google o devalorizează — `cuponescu.ro`, cu ~350k vizite/lună,
+> se ține pe **~5 linkuri editoriale reale** (retail.ro, startupcafe.ro, carturesti.ro,
+> euplatesc.ro), nu pe directoare; (2) un dofollow **plătit** încalcă politica Google de link spam
+> — linkurile cumpărate trebuie marcate `nofollow` sau `sponsored`. Cine vinde dofollow pe 35 de lei
+> vinde ceva ce n-ar trebui să vândă.
+>
+> Nofollow-ul gratuit rămâne util: din 2019 Google tratează `nofollow` ca **sugestie**, nu ordin,
+> deci tot crawlează linkul, iar un profil 100% dofollow arată nenatural.
 
 ---
 
@@ -130,8 +148,8 @@ Detaliile complete: `docs/operational/CERERE-REALA-GSC-22-08-2026.md`.
 ## Progres
 
 **12.07.2026** — plan creat; cross-link AlexMarinescu.ro confirmat activ.
-**22.08.2026** — Awin bifat (57 magazine). Text de înscriere corectat (conținea Profitshare
+**22.08.2026** — **primul backlink trimis** (articol pe linkpro.ro, nofollow). Awin bifat (57 magazine). Text de înscriere corectat (conținea Profitshare
 și cifre vechi). Adăugată secțiunea D din date Search Console. Notat de ce board-ul eMAG
 din planul vechi nu trebuie făcut.
 
-**Bifate: 2 din 20.** Asta e, în continuare, cel mai important număr din tot proiectul.
+**Bifate: 3 din 20.** Asta e, în continuare, cel mai important număr din tot proiectul.
