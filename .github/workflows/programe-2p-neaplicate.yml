@@ -24,3 +24,16 @@ jobs:
           TWOPEFORMANT_PASS:  ${{ secrets.TWOPEFORMANT_PASS }}
           TWOPEFORMANT_USER:  ${{ secrets.TWOPEFORMANT_USER }}
         run: python programe_2p_neaplicate.py
+
+      # Sonda ruleaza INTOTDEAUNA, si cand raportul de mai sus intoarce 0.
+      # Pe 22.08.2026 raportul a zis linistit "0 neaplicate" pentru ca endpointul
+      # returna doar relatiile contului — un rezultat gol care nu arata ca o eroare.
+      # Sonda spune CARE varianta de endpoint chiar da catalogul complet.
+      - name: Sonda catalog (ce endpoint da tot catalogul)
+        if: always()
+        working-directory: scripts
+        env:
+          TWOPEFORMANT_EMAIL: ${{ secrets.TWOPEFORMANT_EMAIL }}
+          TWOPEFORMANT_PASS:  ${{ secrets.TWOPEFORMANT_PASS }}
+          TWOPEFORMANT_USER:  ${{ secrets.TWOPEFORMANT_USER }}
+        run: python sonda_2p_catalog.py
