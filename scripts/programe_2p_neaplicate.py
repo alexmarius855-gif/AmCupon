@@ -47,8 +47,8 @@ def main() -> int:
         return 1
 
     # Catalogul COMPLET (fara filtrul de 'accepted') vs. ce avem deja.
-    toate = fetch_all_pages("/affiliate/programs.json", per_page=100)
-    acceptate = fetch_all_pages("/affiliate/programs.json", per_page=100,
+    toate = fetch_all_pages("affiliate/programs", per_page=100)
+    acceptate = fetch_all_pages("affiliate/programs", per_page=100,
                                 extra_params={"filter[affrequest_status]": "accepted"})
     print(f"\n  Catalog 2Performant : {len(toate)} programe")
     print(f"  Deja acceptate      : {len(acceptate)}")

@@ -1,90 +1,137 @@
 # 🔗 Plan Backlink-uri AmCupon.ro
 
-> **De ce contează asta mai mult decât orice altceva acum**: audit live (12.07.2026,
-> `site:amcupon.ro`) arată **1 pagină indexată din 2600+**. Sitemap valid, robots.txt corect,
-> Google Search Console conectat, 0 `noindex` accidental — nu e bug tehnic. E domeniu nou cu
-> **0 backlinkuri externe**. Google nu are niciun semnal că site-ul merită crawlat masiv.
-> Fără backlink-uri, orice alt fix de cod are efect limitat. Actualizează bifele pe măsură ce
-> avansezi — nu șterge istoricul, doar marchează [x].
+> **Actualizat 22.08.2026** cu date reale din Search Console. Versiunea din iulie conținea
+> cifre vechi (1055 magazine, 78 cu ofertă) și menționa Profitshare — cont respins pe 19.08.
+> Textul de înscriere de mai jos era, la data asta, parțial fals.
 
 ---
 
-## Ordinea de impact / efort
+## De ce contează mai mult decât orice altceva
 
-### A. Zero cost, azi, ~45 min — directoare românești
+Măsurat pe 22.08.2026, din exportul GSC:
 
-Backlink-uri gratuite, înscriere directă, fără aprobare complexă. Folosește textul de mai jos
-la fiecare (copy-paste, ajustează dacă cere câmpuri diferite):
+| | |
+|---|---|
+| Pagini indexate | **64** |
+| Clicuri din Google, în 3 luni | **22** |
+| Pagini pe care Google le-a accesat vreodată | **13** |
+| Backlink-uri externe | **0** (în afară de AlexMarinescu.ro) |
 
-- [ ] [web-trafic.ro](https://web-trafic.ro) — director SEO-friendly, transfer PageRank
-- [ ] [linkpro.ro](https://linkpro.ro) — director + poți publica și un articol scurt
-- [ ] [dirpedia.ro](https://www.dirpedia.ro/directoare-generale.html) — listă de directoare cu
-      înscriere gratuită (verifică 5-10 din listă)
-- [ ] [PROMOdesk — lista celor 70 de directoare web românești](https://www.promodesk.ro/directoare-web/lista-directoare-web-romanesti)
-      — parcurge lista, înscrie-te la primele 10-15 cu PageRank/trafic real (skip cele moarte)
+Partea tehnică e rezolvată: sitemap 463 URL-uri, toate 200, citit de Google pe 22.08.
+Nu mai există niciun 404 în sitemap, niciun redirect trimis la indexare, nicio pagină goală.
 
-**Text de înscriere (copy-paste):**
+**Ce lipsește nu e cod. E ca Google să aibă un motiv să ne crawleze.** Un domeniu fără
+niciun link extern nu primește buget de crawl, indiferent cât de curat e.
+
+---
+
+## A. Directoare românești — zero cost, ~45 min, azi
+
+Înscriere directă, fără aprobare complexă.
+
+- [ ] [web-trafic.ro](https://web-trafic.ro)
+- [ ] [linkpro.ro](https://linkpro.ro) — permite și un articol scurt
+- [ ] [dirpedia.ro](https://www.dirpedia.ro/directoare-generale.html) — verifică 5-10 din listă
+- [ ] [PROMOdesk — 70 de directoare românești](https://www.promodesk.ro/directoare-web/lista-directoare-web-romanesti)
+      — primele 10-15 cu trafic real, sari peste cele moarte
+
+### Text de înscriere — verificat 22.08.2026, copy-paste direct
+
 ```
 Nume site: AmCupon.ro
 URL: https://amcupon.ro
 Categorie: Cupoane și reduceri / E-commerce
-Descriere scurtă (50 car.): Coduri de reducere verificate zilnic din România
+
+Descriere scurtă (50 car.):
+Coduri de reducere verificate zilnic din România
+
 Descriere lungă:
 AmCupon.ro este o platformă românească de coduri de reducere și oferte
-verificate zilnic, cu peste 1000 de magazine partenere (2Performant,
-Profitshare, Impact.com). Actualizare automată la fiecare 4 ore. 100%
-gratuit pentru utilizatori, fără cont necesar.
+verificate zilnic, cu peste 1150 de magazine partenere prin rețelele
+2Performant, Impact.com și Awin. Datele se actualizează automat de trei
+ori pe zi. Gratuit, fără cont necesar și fără reclame invazive.
+
+Cuvinte cheie: coduri reducere, cupoane, oferte, discount, promotii, romania
+Email contact: alexmarius855@gmail.com
 ```
 
-### B. Rețele de afiliere — dublu efect (venit + prezență)
+> **Ce s-a schimbat față de versiunea veche:** „1000+" → 1150; s-a scos **Profitshare**
+> (cont respins 19.08) și s-au adăugat **Impact.com** și **Awin**, care sunt rețelele reale
+> de azi; „la fiecare 4 ore" → „de trei ori pe zi", care e ritmul adevărat al pipeline-ului.
+> Un director care verifică și găsește o afirmație falsă respinge înscrierea.
 
-- [ ] **Awin — termină înscrierea ca publisher** (deja început, neterminat — vezi
-      `ACTIUNI-VENIT.md`). 25.000+ branduri disponibile. Efect: (1) acces la branduri pe care
-      2P/Profitshare nu le au, (2) mai puține pagini fără ofertă activă (azi **78 din 1055
-      magazine au ofertă activă** — restul sunt pagini "fără promoție momentan", tocmai ce am
-      pus `noindex` pe cele mai goale 237 articole de blog corespunzătoare)
-- [ ] **Temu — aplică la programul de afiliere direct**: `temu.com/affiliate_recruit.html`.
-      Comision 5-20% (crescător cu valoarea comenzii). Are deja pagină pe site dar link
-      neafiliat (money-leak pe unul din cele mai căutate branduri)
-- [ ] **CJ (Commission Junction)** — pe lista veche, neterminat
+---
 
-### C. Pinterest — cel mai mare payoff pe termen mediu
+## B. Pinterest — cel mai mare payoff pe termen mediu
 
-Cuponeria.ro (liderul pieței RO, ~350k vizite/lună) face asta masiv — fiecare pin = un backlink
-+ trafic direct. Nu necesită cod, doar cont + ritm constant.
+Cuponeria.ro (liderul, ~350k vizite/lună) face asta masiv. Fiecare pin = backlink + trafic
+direct. Nu necesită cod.
 
-- [ ] Creează cont Pinterest Business `AmCupon.ro` (dacă nu există deja)
-- [ ] Board-uri sugerate (per nișă, ușor de umplut din datele deja existente):
-      "Reduceri Fashion", "Coduri Reducere eMAG & Electronice", "Oferte Beauty",
-      "Cadouri sub 100 lei" (ai deja pagina), "Reduceri Black Friday România"
-- [ ] Ritm: 3-5 pin-uri/săptămână, fiecare cu link direct spre `/cod-reducere/[magazin]` sau
-      `/cadouri/[slug]` — pot genera eu titluri + descrieri optimizate SEO în bloc dacă vrei,
-      la fel cum generez `postari-zilnice.txt`
+- [ ] Cont Pinterest Business `AmCupon.ro`
+- [ ] Board-uri, alese după categoriile care CHIAR au oferte acum (nu după intuiție):
+      **Fashion** (14 oferte) · **Casă & Grădină** (21) · **Sănătate & Farmacie** (16) ·
+      **Beauty** (8) · **Cadouri sub 100 lei** (pagina există deja)
+- [ ] Ritm: 3-5 pin-uri/săptămână, link direct spre `/cod-reducere/[magazin]`
+- [ ] Pot genera titluri + descrieri în bloc, ca la `postari-zilnice.txt` — cere-mi
 
-### D. Organic, lent, dar real
+> **Nu face board „Coduri Reducere eMAG"** (era în planul vechi). eMAG e Profitshare,
+> cont respins — n-avem nici pagină, nici comision. Un board care duce în gol strică
+> și contul de Pinterest, și încrederea.
 
-- [ ] **Reddit r/Romania** — răspunsuri genuine la întrebări de tip "unde găsesc cod reducere
-      X", link doar când e relevant (spam = ban + zero valoare). Nu poate fi automatizat onest.
-- [ ] **Link din bio Instagram @alexmarinescu98** (15k) — verifică dacă e deja acolo
-- [ ] **Cross-link AlexMarinescu.ro → AmCupon.ro** — ✅ deja există (verificat 12.07.2026,
-      dofollow, 4 locuri: footer, /despre, /proiecte, /link). Am actualizat pe alex-marinescu-ro
-      numărul de magazine "291+" → "1000+" (era vechi de acum 3 săptămâni), commit local
-      `025424d`, **neîmpins** — spune dacă vrei push.
+---
+
+## C. Rețele de afiliere — dublu efect (venit + prezență)
+
+- [x] **Awin** — ✅ terminat. 57 de magazine importate (16.07 și 19.08).
+- [ ] **CJ (Commission Junction)** — **blocat pe un singur lucru**: PID-ul contului
+      (Cont → Website/Property ID). Cu el, 111 advertiseri intră în site. 2 minute de lucru.
+- [ ] **Temu** — aplică direct la `temu.com/affiliate_recruit.html`. Are pagină pe site,
+      dar linkul nu e afiliat (money-leak pe un brand căutat).
+- [ ] **TradeDoubler** — cont nou. `cuponescu.ro` (liderul) o folosește, noi n-o avem deloc.
+
+---
+
+## D. Magazine cu cerere DOVEDITĂ — nou, 22.08
+
+Din Search Console: Google ne arată deja în rezultate pentru magazinele astea, dar **nu le
+avem**. Iar competitorii le au. Două semnale independente pe același brand.
+
+- [ ] **dedeman** — „cod reducere dedeman", „cupoane dedeman"
+- [ ] **luxury beauty** — 8 expuneri pe 2 variante de interogare
+- [ ] **color cosmetics** — poziția 17
+- [ ] **dalisticq** — poziția 11
+- [ ] **ginsari** — poziția 19
+- [ ] **orisee** — poziția 33
+- [ ] **olfactiv** — poziția 78
+
+Detaliile complete: `docs/operational/CERERE-REALA-GSC-22-08-2026.md`.
+
+---
+
+## E. Organic, lent, dar real
+
+- [ ] **Reddit r/Romania** — răspunsuri genuine, link doar când e relevant. Spam = ban.
+- [ ] **Link din bio Instagram** @alexmarinescu98 (15k) — verifică dacă e acolo
+- [x] **Cross-link AlexMarinescu.ro → AmCupon.ro** — ✅ dofollow, 4 locuri (footer,
+      /despre, /proiecte, /link). Verificat 12.07.2026.
 
 ---
 
 ## Ce NU merită timp acum
 
-- Tool-uri SEO plătite (Surfer, Ahrefs etc.) — regula `feedback_evolutie_cost_minim`: cost minim
-  până curg venituri. Backlink-urile gratuite de mai sus au impact mai mare per oră investită.
-- Guest posting / outreach la bloguri mari — necesită relații/timp pe care nu le ai acum;
-  reia dacă backlink-urile gratuite se epuizează și tot ai nevoie de mai multe.
+- **Tool-uri SEO plătite** (Ahrefs, Surfer) — cost minim până curg venituri.
+- **Guest posting la bloguri mari** — necesită relații pe care nu le ai încă.
+- **Optimizări de CTR pe titluri.** Am verificat pe 22.08: la 46-52 de expuneri pe pagină,
+  diferența dintre 0 și 2 clicuri e zgomot statistic, nu un defect de titlu. Revenim la asta
+  când avem volum destul cât să însemne ceva.
 
 ---
 
 ## Progres
 
-_(actualizează manual sau cere-mi să bifez pe măsură ce facem pași împreună)_
+**12.07.2026** — plan creat; cross-link AlexMarinescu.ro confirmat activ.
+**22.08.2026** — Awin bifat (57 magazine). Text de înscriere corectat (conținea Profitshare
+și cifre vechi). Adăugată secțiunea D din date Search Console. Notat de ce board-ul eMAG
+din planul vechi nu trebuie făcut.
 
-**12.07.2026** — plan creat, cross-link AlexMarinescu.ro confirmat activ + număr magazine
-actualizat acolo (neîmpins).
+**Bifate: 2 din 20.** Asta e, în continuare, cel mai important număr din tot proiectul.
