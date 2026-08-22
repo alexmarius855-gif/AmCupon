@@ -97,6 +97,25 @@ export const BRANDURI_CU_CERERE = new Set<string>([
   "philips.ro",    // 1.300/luna, KD 14
   "kitunghii.ro",  //   880/luna, KD  7
   "noriel.ro",     //   ~400/luna, KD 10
+
+  // Adaugat 22.08.2026 pe baza datelor REALE din Search Console (nu estimari Semrush):
+  // in 3 luni, pagina /cod-reducere/albirea-dintilor.com a strans 34 de expuneri si
+  // 1 clic la pozitia medie 17 — a 4-a pagina a site-ului dupa clicuri. Cererea vine
+  // din 6 variante distincte de interogare, toate pe numele magazinului:
+  //   "cod reducere albirea dintilor" (10 expuneri, poz 23,3)
+  //   "cod reducere albirea-dintilor" ( 7 expuneri, poz 19,1)
+  //   "albirea dintilor voucher"      ( 5 expuneri, poz 17,2)
+  //   + "cupon reducere albirea dintilor", "albirea-dintilor voucher", "cupon albirea dintilor"
+  // Total 25 de expuneri pe interogari, pozitii 16-28. Magazinul are link afiliat real.
+  //
+  // Pagina era `noindex` de pe 10.08 (0 promotii active) — adica tocmai paginii care
+  // aducea cel mai constant trafic din tot site-ul ii spuneam sa nu fie indexata.
+  //
+  // Nota importanta: NU adaug si celelalte magazine mici din interogari (sevich, everin,
+  // optiblu, uniquestore, barber-store, makeupshop, fsm-romania, sportpartner). Fiecare
+  // are 1-2 expuneri in 3 luni — zgomot statistic, nu cerere dovedita. Tiparul e real,
+  // instantele individuale nu sunt inca. Regula fisierului ramane: doar volum masurat.
+  "albirea-dintilor.com",
 ]);
 
 /**
