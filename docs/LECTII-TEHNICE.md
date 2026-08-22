@@ -42,7 +42,7 @@ fi rupt 30+ hoteluri clasificate corect (`zenhotels`, `savelectro`) — măsurat
 ## 2. Taxonomie moartă care supraviețuiește migrărilor
 
 `categorie_slug` a migrat demult din engleză în română. Resturile englezești au fost găsite în
-**4 valuri**, la săptămâni distanță — de fiecare dată credeam că le-am prins pe toate.
+**5 valuri**, la săptămâni distanță — de fiecare dată credeam că le-am prins pe toate.
 
 - 09.08: `app/categorii/page.tsx` (18 linkuri → 404) + `generate_store_descriptions.py` (237 de
   descrieri identice)
@@ -55,6 +55,19 @@ fi rupt 30+ hoteluri clasificate corect (`zenhotels`, `savelectro`) — măsurat
   toate cele 38 de sluguri de dinainte de commit `b048300`: **29 răspundeau 404**, din iulie.
   Nu erau linkuri moarte în cod (alea fuseseră reparate în valurile 1-3) — erau adresele vechi,
   pe care Google le avea deja indexate, rămase fără redirect.
+
+- 22.08, **al 5-lea val, în aceeași zi cu al 4-lea** — `DESC_CATEG` din
+  `app/categorii/[slug]/CategorieClient.tsx`: 11 din 13 descrieri SEO cheiate pe sluguri moarte,
+  deci nu s-au afișat niciodată. Iar cele 2 vii numeau magazine inexistente (FashionDays,
+  Zara, H&M, Douglas, Sephora) — singurul text SEO vizibil de pe acele pagini era parțial fals.
+  Găsit accidental, căutând altceva. Asta spune ceva: patru „curățări complete" anterioare
+  n-au găsit-o, pentru că nimeni nu caută un `Record` de descrieri când vânează linkuri rupte.
+
+**Regula a treia, adăugată 22.08:** nu mai repara instanțe — schimbă ce face repararea posibilă.
+Textul scris de mână care numește date (magazine, categorii, cifre) se învechește tăcut, pentru
+că nimic nu-l verifică. `DESC_CATEG` a fost rescris ca să NU mai numească niciun magazin; numele
+vin acum dintr-o propoziție generată din `output.json`. O propoziție generată nu poate deveni
+falsă. Aplică asta oriunde textul editorial pomenește date reale.
 
 **Regula:** după orice migrare de taxonomie, `grep` pe `categorie_slug ===` și compară fiecare
 valoare cu lista reală din date. Nu presupune că o migrare anterioară le-a prins pe toate.
