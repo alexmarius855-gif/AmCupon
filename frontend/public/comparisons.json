@@ -45,13 +45,18 @@
       "url_afiliat": "https://fashiondays.ro"
     },
     "stats2": {
-      "promotii_active": 0,
+      "promotii_active": 1,
       "cashback": "pana la 7%",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/2561/medium/2561.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fanswear.ro"
     },
     "promo1": [],
-    "promo2": [],
+    "promo2": [
+      {
+        "nume": "BACK TO SCHOOL",
+        "cod_cupon": "BTS"
+      }
+    ],
     "faq": [
       {
         "q": "Care este mai bun, Fashiondays sau Answear?",
@@ -63,7 +68,7 @@
       },
       {
         "q": "Are Answear coduri de reducere active?",
-        "a": "Momentan nu, Answear are 0 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
+        "a": "Da, Answear are 1 oferta activa pe AmCupon.ro in august 2026. Verificam zilnic."
       },
       {
         "q": "Unde gasesc cupoane pentru Fashiondays si Answear?",
@@ -197,7 +202,7 @@
     "verdict_m1": "Alege Libris pentru transport gratuit la comenzi mai mici si reduceri zilnice mai frecvente. Ideal daca comanzi regulat si vrei cel mai mic pret per carte.",
     "verdict_m2": "Alege Carturesti pentru experienta completa cititor-librarie, acces la librarii fizice pentru ridicare si colectii editoriale curate.",
     "stats1": {
-      "promotii_active": 0,
+      "promotii_active": 1,
       "cashback": "pana la 8%",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9868/medium/9868.gif",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro"
@@ -208,7 +213,12 @@
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11380/medium/11380.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2F"
     },
-    "promo1": [],
+    "promo1": [
+      {
+        "nume": "Pregătit de școală? Hai cu lista și ai totul gata până sună clopoțelul!",
+        "cod_cupon": ""
+      }
+    ],
     "promo2": [
       {
         "nume": "Târg de carte III",
@@ -230,7 +240,7 @@
       },
       {
         "q": "Are Libris coduri de reducere active?",
-        "a": "Momentan nu, Libris are 0 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
+        "a": "Da, Libris are 1 oferta activa pe AmCupon.ro in august 2026. Verificam zilnic."
       },
       {
         "q": "Are Carturesti coduri de reducere active?",
@@ -517,7 +527,7 @@
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2F"
     },
     "stats2": {
-      "promotii_active": 0,
+      "promotii_active": 1,
       "cashback": "vezi site",
       "logo": "https://www.google.com/s2/favicons?domain=farmec.ro&sz=128",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmec.ro"
@@ -536,7 +546,12 @@
         "cod_cupon": ""
       }
     ],
-    "promo2": [],
+    "promo2": [
+      {
+        "nume": "Summer Shopping Airlines - Weekend - -30% REDUCERE direct în coș la cumpărături de minimum 150 lei.",
+        "cod_cupon": ""
+      }
+    ],
     "faq": [
       {
         "q": "Care este mai bun, Drmax sau Farmec?",
@@ -548,7 +563,7 @@
       },
       {
         "q": "Are Farmec coduri de reducere active?",
-        "a": "Momentan nu, Farmec are 0 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
+        "a": "Da, Farmec are 1 oferta activa pe AmCupon.ro in august 2026. Verificam zilnic."
       },
       {
         "q": "Unde gasesc cupoane pentru Drmax si Farmec?",
@@ -764,7 +779,7 @@
     "verdict_m1": "Alege Libris pentru cel mai mare stoc de carti si transport gratuit la comenzi mai mici. Preturile la bestsellers sunt adesea mai bune.",
     "verdict_m2": "Alege Elefant daca vrei si alte produse (electronice, jocuri) intr-o singura comanda alaturi de carti.",
     "stats1": {
-      "promotii_active": 0,
+      "promotii_active": 1,
       "cashback": "pana la 8%",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9868/medium/9868.gif",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro"
@@ -775,7 +790,12 @@
       "logo": null,
       "url_afiliat": "https://elefant.ro"
     },
-    "promo1": [],
+    "promo1": [
+      {
+        "nume": "Pregătit de școală? Hai cu lista și ai totul gata până sună clopoțelul!",
+        "cod_cupon": ""
+      }
+    ],
     "promo2": [],
     "faq": [
       {
@@ -784,7 +804,7 @@
       },
       {
         "q": "Are Libris coduri de reducere active?",
-        "a": "Momentan nu, Libris are 0 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
+        "a": "Da, Libris are 1 oferta activa pe AmCupon.ro in august 2026. Verificam zilnic."
       },
       {
         "q": "Are Elefant coduri de reducere active?",
