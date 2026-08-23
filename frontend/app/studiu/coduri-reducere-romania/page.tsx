@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
+import GraficCategorii from "./GraficCategorii";
 
 /**
  * Studiu public pe datele proprii — pagina construita ca sa poata fi CITATA.
@@ -204,6 +205,8 @@ export default function StudiuPage() {
             Publicam mediana doar unde avem cel putin {s.prag_esantion} magazine care declara
             un procent &mdash; sub atat, o mediana ar fi zgomot prezentat ca masuratoare.
           </p>
+
+          <GraficCategorii categorii={s.categorii} />
 
           <div className="overflow-x-auto rounded-xl border border-[#1f2329]">
             <table className="w-full text-sm min-w-[520px]">
