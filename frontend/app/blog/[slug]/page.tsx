@@ -6,6 +6,9 @@ import Image from "next/image";
 import fs from "fs";
 import path from "path";
 
+import { canonicalArticol, construiesteIndexMagazine } from "../../../lib/blogCanonical";
+import type { IndexableProdus } from "../../../lib/seoIndexable";
+
 interface BlogPost {
   slug: string;
   title: string;
@@ -15,12 +18,38 @@ interface BlogPost {
   magazin: string | null;
   cover: string;
   content: string;
+  /** `magazin` | `best-of` | `categorie` | `roundup` — vezi generate_blog.py */
+  tip?: string | null;
 }
 
 function loadPosts(): BlogPost[] {
   const filePath = path.join(process.cwd(), "public", "blog-posts.json");
   if (!fs.existsSync(filePath)) return [];
   return JSON.parse(fs.readFileSync(filePath, "utf-8"));
+}
+
+/**
+ * Magazinele care merita indexate, pentru decizia de canonical.
+ * Citeste aceleasi fisiere ca sitemap-ul, prin ACELASI helper — daca ar diverge,
+ * am avea articole care se declara duplicat fara ca sitemap-ul sa stie.
+ */
+function magazineIndexabile(): Set<string> {
+  try {
+    const magazine = JSON.parse(
+      fs.readFileSync(path.join(process.cwd(), "public", "output.json"), "utf-8")
+    );
+    let produse: IndexableProdus[] = [];
+    const pPath = path.join(process.cwd(), "public", "products.json");
+    if (fs.existsSync(pPath)) {
+      const raw = JSON.parse(fs.readFileSync(pPath, "utf-8"));
+      produse = (raw.products || raw) as IndexableProdus[];
+    }
+    return construiesteIndexMagazine(magazine, produse);
+  } catch {
+    // Fara date nu putem decide — articolul isi pastreaza canonicalul propriu.
+    // Mai bine un semnal neconsolidat decat un canonical catre o pagina necunoscuta.
+    return new Set<string>();
+  }
 }
 
 function numeAfisat(magazin: string): string {
@@ -101,6 +130,10 @@ export async function generateMetadata({
   if (!post) return { title: "Articol negăsit | AmCupon.ro" };
 
   const pageUrl = `https://amcupon.ro/blog/${slug}`;
+  // Canonical catre pagina de MAGAZIN cand articolul e un sablon lunar despre acelasi
+  // magazin (masurat 23.08: 96 astfel de articole, 88,1% identice intre ele, fiecare
+  // canibalizand propria pagina de magazin). Vezi lib/blogCanonical.ts.
+  const canonic = canonicalArticol(post, magazineIndexabile());
   // Articol auto-generat despre un magazin fara nicio promotie activa = continut subtire,
   // aproape identic intre articole (doar numele magazinului difera). Scos din index ca sa
   // nu deprecieze semnalul de calitate al site-ului pentru cele cu continut real.
@@ -110,7 +143,7 @@ export async function generateMetadata({
     // altfel titlul apare dublat in tab/SERP ("... | AmCupon.ro | AmCupon.ro")
     title: post.title,
     description: post.excerpt,
-    alternates: { canonical: pageUrl },
+    alternates: { canonical: canonic },
     ...(faraPromoActiva ? { robots: { index: false, follow: true } } : {}),
     openGraph: {
       title: post.title,

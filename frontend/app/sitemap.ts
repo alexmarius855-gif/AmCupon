@@ -4,6 +4,7 @@ import path from "path";
 import { MACRO_ORDINE, getMacro } from "./blog/categories";
 import { buildMerchantTokens, esteIndexabil, type IndexableProdus } from "../lib/seoIndexable";
 import { CAI_REDIRECTIONATE } from "../lib/redirecturi";
+import { ceruteInSitemap, construiesteIndexMagazine } from "../lib/blogCanonical";
 
 const BASE_URL = "https://amcupon.ro";
 
@@ -71,8 +72,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     produseFeed = [];
   }
   const merchantTokens = buildMerchantTokens(produseFeed);
+  // Construit O SINGURA DATA. Prima versiune il apela din interiorul filtrului de
+  // articole, deci reconstruia indexul celor 1.156 de magazine pentru fiecare din
+  // cele 163 de articole — 188.000 de verificari in loc de 1.156.
+  const magazineIndexabile = construiesteIndexMagazine(magazine, produseFeed);
 
-  let blogPosts: { slug: string; date: string; category: string; excerpt?: string }[] = [];
+  let blogPosts: { slug: string; date: string; category: string; excerpt?: string; magazin?: string | null; tip?: string | null }[] = [];
   const blogPath = path.join(process.cwd(), "public", "blog-posts.json");
   if (fs.existsSync(blogPath)) {
     blogPosts = JSON.parse(fs.readFileSync(blogPath, "utf-8"));
@@ -264,6 +269,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // sa nu iroseasca bugetul de crawl Google pe pagini fara valoare unica.
     ...blogPosts
       .filter((p) => !/\b0 promotii active\b/.test(p.excerpt || ""))
+      // Si articolele care isi declara canonical catre pagina de magazin: a trimite
+      // la indexare un URL care se declara duplicat e un semnal care se contrazice
+      // singur. Aceeasi regula aplicata paginilor /nisa/* pe 16.08.
+      .filter((p) => ceruteInSitemap(p, magazineIndexabile))
       .map((p) => ({
         url: `${BASE_URL}/blog/${p.slug}`,
         lastModified: new Date(p.date),
