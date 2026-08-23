@@ -1,11 +1,11 @@
 {
-  "generat": "2026-08-22",
-  "total_magazine": 1157,
+  "generat": "2026-08-23",
+  "total_magazine": 1156,
   "cu_promotie": 94,
-  "cu_cod_real": 18,
-  "doar_oferta": 76,
+  "cu_cod_real": 17,
+  "doar_oferta": 77,
   "procent_cu_promotie": 8.1,
-  "procent_cu_cod": 1.6,
+  "procent_cu_cod": 1.5,
   "reducere_mediana_generala": 40,
   "magazine_cu_procent_declarat": 67,
   "categorii": [
@@ -30,7 +30,7 @@
     {
       "slug": "marketplace",
       "nume": "Marketplace",
-      "magazine": 238,
+      "magazine": 237,
       "cu_promotie": 5,
       "reducere_mediana": 60,
       "reducere_max": 90,
