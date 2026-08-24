@@ -208,7 +208,7 @@
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro"
     },
     "stats2": {
-      "promotii_active": 5,
+      "promotii_active": 3,
       "cashback": "pana la 9%",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11380/medium/11380.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2F"
@@ -221,15 +221,15 @@
     ],
     "promo2": [
       {
-        "nume": "Târg de carte III",
-        "cod_cupon": ""
-      },
-      {
-        "nume": "Vacanță cu joacă",
-        "cod_cupon": ""
-      },
-      {
         "nume": "2+1 Editura Nemira",
+        "cod_cupon": ""
+      },
+      {
+        "nume": "Back to School 2026",
+        "cod_cupon": ""
+      },
+      {
+        "nume": "Kilipir Merch Fandom",
         "cod_cupon": ""
       }
     ],
@@ -244,7 +244,7 @@
       },
       {
         "q": "Are Carturesti coduri de reducere active?",
-        "a": "Da, Carturesti are 5 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
+        "a": "Da, Carturesti are 3 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
       },
       {
         "q": "Unde gasesc cupoane pentru Libris si Carturesti?",
@@ -521,7 +521,7 @@
     "verdict_m1": "Alege Dr. Max pentru o gama larga de medicamente OTC, suplimente si cosmetice internationale la preturi competitive cu livrare rapida.",
     "verdict_m2": "Alege Farmec daca vrei produse cosmetice romanesti de calitate (Gerovital, Aslavital) cu ingrediente naturale si preturi accesibile.",
     "stats1": {
-      "promotii_active": 4,
+      "promotii_active": 3,
       "cashback": "pana la 2%",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/8800/medium/8800.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2F"
@@ -534,15 +534,15 @@
     },
     "promo1": [
       {
-        "nume": "Max Days – Machiaj 18-24.08",
-        "cod_cupon": ""
-      },
-      {
         "nume": "Pachet de Grijă – August",
         "cod_cupon": ""
       },
       {
         "nume": "Ofertele Lunii August",
+        "cod_cupon": ""
+      },
+      {
+        "nume": "50% reducere la produsele marca proprie Dr. Max",
         "cod_cupon": ""
       }
     ],
@@ -559,7 +559,7 @@
       },
       {
         "q": "Are Drmax coduri de reducere active?",
-        "a": "Da, Drmax are 4 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
+        "a": "Da, Drmax are 3 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
       },
       {
         "q": "Are Farmec coduri de reducere active?",

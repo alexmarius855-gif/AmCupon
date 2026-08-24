@@ -1,5 +1,5 @@
 # 💰 TOP MAGAZINE după POTENȚIAL DE CÂȘTIG
-> Generat automat 23.08.2026 09:33. Pe astea să le împingi (articole, pin-uri, postări).
+> Generat automat 24.08.2026 09:43. Pe astea să le împingi (articole, pin-uri, postări).
 
 **Scor = comision × popularitate × ofertă.** Comisionul mare singur înșală — astea-s banii REALI.
 
@@ -20,21 +20,21 @@
 | 13 | Liki24 (liki24.co.uk) | 10% | 0 | ✅ COD | 20.0 |
 | 14 | Videt (videt.ro) | 10% | 0 | ✅ COD | 20.0 |
 | 15 | Aronia Charlottenburg (aronia-charlottenburg.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
-| 16 | Yves Rocher (yves-rocher.ro) | 8% | 0 | ✅ COD | 16.0 |
-| 17 | Wolfy (wolfy.ro) | 8% | 0 | ✅ COD | 16.0 |
-| 18 | Craftup (craftup.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 19 | Fara Daunatori (fara-daunatori.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 20 | Jojofashion (jojofashion.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 21 | Answear (answear.ro) | 7% | 0 | ✅ COD | 14.0 |
-| 22 | Doctorshield (doctorshield.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 23 | Librex (librex.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 24 | Apiland (apiland.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 25 | Brainmarket (brainmarket.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 26 | Davopro (davopro.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 27 | Estel (estel.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 28 | Nano Auto (nano-auto.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 29 | Nuvien (nuvien.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 30 | Re Bloom (re-bloom.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 16 | Doctorshield (doctorshield.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 17 | Craftup (craftup.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 18 | Fara Daunatori (fara-daunatori.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 19 | Jojofashion (jojofashion.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 20 | Answear (answear.ro) | 7% | 0 | ✅ COD | 14.0 |
+| 21 | Apiland (apiland.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 22 | Brainmarket (brainmarket.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 23 | Davopro (davopro.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 24 | Estel (estel.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 25 | Nano Auto (nano-auto.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 26 | Nuvien (nuvien.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 27 | Re Bloom (re-bloom.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 28 | Niculescu (niculescu.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 29 | Linailsboutique (linailsboutique.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 30 | Padelboost (padelboost.co.uk) | 7% | 0 | ✅ COD | 14.0 |
 
 ## 🎯 Cum folosești raportul
 - **Top 10** = prioritate maximă pentru articole „cel mai bun X" + pin-uri Pinterest
