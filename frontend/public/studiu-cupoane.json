@@ -1,6 +1,6 @@
 {
   "generat": "2026-08-24",
-  "total_magazine": 1154,
+  "total_magazine": 1153,
   "cu_promotie": 91,
   "cu_cod_real": 15,
   "doar_oferta": 76,
@@ -12,7 +12,7 @@
     {
       "slug": "electronice",
       "nume": "Electronice & IT",
-      "magazine": 119,
+      "magazine": 117,
       "cu_promotie": 4,
       "reducere_mediana": 75,
       "reducere_max": 80,
@@ -48,7 +48,7 @@
     {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
-      "magazine": 134,
+      "magazine": 135,
       "cu_promotie": 20,
       "reducere_mediana": 42.0,
       "reducere_max": 70,
@@ -66,7 +66,7 @@
     {
       "slug": "sanatate",
       "nume": "Sănătate & farmacie",
-      "magazine": 61,
+      "magazine": 60,
       "cu_promotie": 16,
       "reducere_mediana": 33,
       "reducere_max": 50,
@@ -75,7 +75,7 @@
     {
       "slug": "beauty",
       "nume": "Beauty & îngrijire",
-      "magazine": 79,
+      "magazine": 80,
       "cu_promotie": 8,
       "reducere_mediana": 30,
       "reducere_max": 70,
