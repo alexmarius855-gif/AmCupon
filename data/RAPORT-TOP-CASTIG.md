@@ -1,5 +1,5 @@
 # 💰 TOP MAGAZINE după POTENȚIAL DE CÂȘTIG
-> Generat automat 24.08.2026 09:43. Pe astea să le împingi (articole, pin-uri, postări).
+> Generat automat 25.08.2026 09:41. Pe astea să le împingi (articole, pin-uri, postări).
 
 **Scor = comision × popularitate × ofertă.** Comisionul mare singur înșală — astea-s banii REALI.
 
@@ -20,16 +20,16 @@
 | 13 | Liki24 (liki24.co.uk) | 10% | 0 | ✅ COD | 20.0 |
 | 14 | Videt (videt.ro) | 10% | 0 | ✅ COD | 20.0 |
 | 15 | Aronia Charlottenburg (aronia-charlottenburg.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
-| 16 | Doctorshield (doctorshield.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 17 | Craftup (craftup.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 18 | Fara Daunatori (fara-daunatori.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 19 | Jojofashion (jojofashion.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 20 | Answear (answear.ro) | 7% | 0 | ✅ COD | 14.0 |
+| 16 | Craftup (craftup.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 17 | Fara Daunatori (fara-daunatori.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 18 | Jojofashion (jojofashion.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 19 | Answear (answear.ro) | 7% | 0 | ✅ COD | 14.0 |
+| 20 | Doctorshield (doctorshield.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
 | 21 | Apiland (apiland.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
 | 22 | Brainmarket (brainmarket.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 23 | Davopro (davopro.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 24 | Estel (estel.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 25 | Nano Auto (nano-auto.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 23 | Nano Auto (nano-auto.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 24 | Davopro (davopro.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 25 | Estel (estel.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
 | 26 | Nuvien (nuvien.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
 | 27 | Re Bloom (re-bloom.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
 | 28 | Niculescu (niculescu.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |

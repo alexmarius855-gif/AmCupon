@@ -527,7 +527,7 @@
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2F"
     },
     "stats2": {
-      "promotii_active": 1,
+      "promotii_active": 0,
       "cashback": "vezi site",
       "logo": "https://www.google.com/s2/favicons?domain=farmec.ro&sz=128",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmec.ro"
@@ -546,12 +546,7 @@
         "cod_cupon": ""
       }
     ],
-    "promo2": [
-      {
-        "nume": "Summer Shopping Airlines - Weekend - -30% REDUCERE direct în coș la cumpărături de minimum 150 lei.",
-        "cod_cupon": ""
-      }
-    ],
+    "promo2": [],
     "faq": [
       {
         "q": "Care este mai bun, Drmax sau Farmec?",
@@ -563,7 +558,7 @@
       },
       {
         "q": "Are Farmec coduri de reducere active?",
-        "a": "Da, Farmec are 1 oferta activa pe AmCupon.ro in august 2026. Verificam zilnic."
+        "a": "Momentan nu, Farmec are 0 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
       },
       {
         "q": "Unde gasesc cupoane pentru Drmax si Farmec?",
