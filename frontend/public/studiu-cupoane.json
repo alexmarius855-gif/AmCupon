@@ -1,6 +1,6 @@
 {
   "generat": "2026-08-25",
-  "total_magazine": 1153,
+  "total_magazine": 1151,
   "cu_promotie": 90,
   "cu_cod_real": 15,
   "doar_oferta": 75,
@@ -21,7 +21,7 @@
     {
       "slug": "cadouri-flori",
       "nume": "Cadouri & flori",
-      "magazine": 14,
+      "magazine": 13,
       "cu_promotie": 3,
       "reducere_mediana": 63,
       "reducere_max": 66,
@@ -48,7 +48,7 @@
     {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
-      "magazine": 134,
+      "magazine": 135,
       "cu_promotie": 20,
       "reducere_mediana": 42.0,
       "reducere_max": 70,
@@ -66,7 +66,7 @@
     {
       "slug": "sanatate",
       "nume": "Sănătate & farmacie",
-      "magazine": 61,
+      "magazine": 60,
       "cu_promotie": 16,
       "reducere_mediana": 33,
       "reducere_max": 50,
@@ -75,7 +75,7 @@
     {
       "slug": "beauty",
       "nume": "Beauty & îngrijire",
-      "magazine": 80,
+      "magazine": 79,
       "cu_promotie": 7,
       "reducere_mediana": 26.0,
       "reducere_max": 70,
