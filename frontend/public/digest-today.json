@@ -1,11 +1,11 @@
 {
-  "data": "2026-08-25",
-  "data_afisata": "25 august 2026",
-  "titlu": "Radarul AmCupon — 25 august 2026",
-  "intro": "Am trecut azi prin ofertele active si am pastrat doar ce merita. Iese in evidenta Verdalis si Regata, dar mai jos ai selectia completa, verificata de noi. Toate codurile sunt testate; cele cu termen scurt le-am marcat.",
+  "data": "2026-08-26",
+  "data_afisata": "26 august 2026",
+  "titlu": "Radarul AmCupon — 26 august 2026",
+  "intro": "Am trecut azi prin ofertele active si am pastrat doar ce merita. Iese in evidenta Verdalis si Videt, dar mai jos ai selectia completa, verificata de noi. Toate codurile sunt testate; cele cu termen scurt le-am marcat.",
   "picks": [
     {
-      "scor": 128.0,
+      "scor": 127.2,
       "magazin": "verdalis.ro",
       "nume_afisat": "Verdalis",
       "categorie": "Sănătate & Farmacie",
@@ -15,27 +15,12 @@
       "descriere": "Nu doar colagen. VerdaFlex reunește 10 ingrediente într-o singură formulă, cu cantități clar declarate.\n\nPachetul Recomandat include 2 flacoane VerdaFlex la prețul final de 209 lei cu codul VERDA40, plus transport gratuit.\n\nCampania este valabilă până la 31 august 2026. Codul poate fi folosit de mai multe ori și nu este necesară crearea unui cont. Pe pagina produsului poate apărea mai întâi prețul standard; reducerea și totalul final de 209 lei sunt afișate în coș după aplicarea codului.",
       "cod": "VERDA40",
       "url": "https://amcupon.ro/cod-reducere/verdalis.ro",
-      "zile_ramase": 6,
-      "procent_succes": 90,
-      "take": "Oferta verificata — buna daca te incadrezi in categorie."
-    },
-    {
-      "scor": 124.8,
-      "magazin": "regata.ro",
-      "nume_afisat": "Regata",
-      "categorie": "Casă & Grădină",
-      "categorie_slug": "casa-gradina",
-      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14376/medium/14376.jpg",
-      "titlu": "Black Friday de vara pe regata.ro",
-      "descriere": "Black Friday de Vară a început la Regata! Până pe 31 august, te așteaptă reduceri de peste 60% la sute de produse pentru amenajări și construcții. Descoperă oferte speciale la gresie și faianță, parchet laminat, mobilier de baie, lavoare și vase WC, baterii pentru baie și bucătărie, căzi și cabine de duș, uși metalice și de interior, precum și produse pentru încălzire și confort termic.\n\nFie că renovezi o încăpere, îți amenajezi întreaga locuință sau pregătești un nou proiect, acum este momentul",
-      "cod": "EXTRA2",
-      "url": "https://amcupon.ro/cod-reducere/regata.ro",
       "zile_ramase": 5,
-      "procent_succes": 74,
+      "procent_succes": 86,
       "take": "Grabeste-te: expira in 5 zile. Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
-      "scor": 124.4,
+      "scor": 126.0,
       "magazin": "videt.ro",
       "nume_afisat": "Videt",
       "categorie": "Fashion",
@@ -45,12 +30,27 @@
       "descriere": "Bună!\n\nPe parcursul lunii august avem o promoție specială:\nPână la -35% la o selecție de ochelari de soare și -25% la toate lentilele de vedere, folosind codul promoțional AUGUST.\n\nMulțumesc!",
       "cod": "AUGUST",
       "url": "https://amcupon.ro/cod-reducere/videt.ro",
-      "zile_ramase": 6,
-      "procent_succes": 72,
-      "take": "Bun de prins daca oricum voiai sa-ti reimprospatezi garderoba."
+      "zile_ramase": 5,
+      "procent_succes": 80,
+      "take": "Grabeste-te: expira in 5 zile. Bun de prins daca oricum voiai sa-ti reimprospatezi garderoba."
     },
     {
-      "scor": 120.9,
+      "scor": 119.85,
+      "magazin": "regata.ro",
+      "nume_afisat": "Regata",
+      "categorie": "Casă & Grădină",
+      "categorie_slug": "casa-gradina",
+      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14376/medium/14376.jpg",
+      "titlu": "Black Friday de vara pe regata.ro",
+      "descriere": "Black Friday de Vară a început la Regata! Până pe 31 august, te așteaptă reduceri de peste 60% la sute de produse pentru amenajări și construcții. Descoperă oferte speciale la gresie și faianță, parchet laminat, mobilier de baie, lavoare și vase WC, baterii pentru baie și bucătărie, căzi și cabine de duș, uși metalice și de interior, precum și produse pentru încălzire și confort termic.\n\nFie că renovezi o încăpere, îți amenajezi întreaga locuință sau pregătești un nou proiect, acum este momentul",
+      "cod": "EXTRA2",
+      "url": "https://amcupon.ro/cod-reducere/regata.ro",
+      "zile_ramase": 4,
+      "procent_succes": 94,
+      "take": "Grabeste-te: expira in 4 zile. Oferta verificata — buna daca te incadrezi in categorie."
+    },
+    {
+      "scor": 116.5,
       "magazin": "automobilus.ro",
       "nume_afisat": "Automobilus",
       "categorie": "Auto & Moto",
@@ -60,12 +60,12 @@
       "descriere": "codul VARA10 se aplică pe tot magazinul, inclusiv piese auto și uleiuri, mai puțin produsele deja aflate la reducere.",
       "cod": "VACANTA",
       "url": "https://amcupon.ro/cod-reducere/automobilus.ro",
-      "zile_ramase": 6,
-      "procent_succes": 85,
-      "take": "Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 5,
+      "procent_succes": 72,
+      "take": "Grabeste-te: expira in 5 zile. Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
-      "scor": 96.8,
+      "scor": 98.8,
       "magazin": "padelboost.co.uk",
       "nume_afisat": "Padelboost",
       "categorie": "Sport & Fitness",
@@ -75,8 +75,8 @@
       "descriere": "Code: BLEAGUE5\nType: Amount off order\nDetails\n\n    All customers\n    For Online Store\n    5% off entire order\n    No minimum purchase requirement\n    One use per customer\n    Can’t combine with other discounts\n    Active from 29 Sept 2025 to 30 Sept",
       "cod": "BLEAGUE5",
       "url": "https://amcupon.ro/cod-reducere/padelboost.co.uk",
-      "zile_ramase": 35,
-      "procent_succes": 84,
+      "zile_ramase": 34,
+      "procent_succes": 94,
       "take": "Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
@@ -90,7 +90,7 @@
       "descriere": "5% discount la prima comandă plasată pe site. Discount-ul se aplică per întreg coșul de cumpărături.",
       "cod": "FERANEW",
       "url": "https://amcupon.ro/cod-reducere/fera.ro",
-      "zile_ramase": 19,
+      "zile_ramase": 18,
       "procent_succes": 80,
       "take": "Oferta verificata — buna daca te incadrezi in categorie."
     }

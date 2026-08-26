@@ -1,5 +1,5 @@
 # 💰 TOP MAGAZINE după POTENȚIAL DE CÂȘTIG
-> Generat automat 25.08.2026 09:41. Pe astea să le împingi (articole, pin-uri, postări).
+> Generat automat 26.08.2026 09:39. Pe astea să le împingi (articole, pin-uri, postări).
 
 **Scor = comision × popularitate × ofertă.** Comisionul mare singur înșală — astea-s banii REALI.
 
@@ -34,7 +34,7 @@
 | 27 | Re Bloom (re-bloom.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
 | 28 | Niculescu (niculescu.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
 | 29 | Linailsboutique (linailsboutique.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 30 | Padelboost (padelboost.co.uk) | 7% | 0 | ✅ COD | 14.0 |
+| 30 | Onixbox (onixbox.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
 
 ## 🎯 Cum folosești raportul
 - **Top 10** = prioritate maximă pentru articole „cel mai bun X" + pin-uri Pinterest
