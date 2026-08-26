@@ -2891,10 +2891,6 @@
   "fp": "49978ce921eae221",
   "data": "2026-08-19"
  },
- "/cod-reducere/notino.ro": {
-  "fp": "8c2041ec5de0f639",
-  "data": "2026-08-26"
- },
  "/cod-reducere/karcher.com": {
   "fp": "bdfaa450745dc8a5",
   "data": "2026-08-20"
@@ -2936,7 +2932,7 @@
   "data": "2026-08-16"
  },
  "/cod-reducere/liki24.ro": {
-  "fp": "93224fc887ef1101",
+  "fp": "9c7844908c8955cc",
   "data": "2026-08-26"
  },
  "/cod-reducere/dehaine.ro": {
@@ -3066,6 +3062,10 @@
  "/cod-reducere/somnart.ro": {
   "fp": "469c440fa9ad6f0c",
   "data": "2026-08-16"
+ },
+ "/cod-reducere/craftmystic.ro": {
+  "fp": "b882e8c4095c6fe4",
+  "data": "2026-08-26"
  },
  "/cod-reducere/liki24.it": {
   "fp": "9c7844908c8955cc",
@@ -3363,6 +3363,10 @@
   "fp": "ab1092215d291cef",
   "data": "2026-08-16"
  },
+ "/cod-reducere/shinefashion.ro": {
+  "fp": "e80bf72baffd1929",
+  "data": "2026-08-26"
+ },
  "/cod-reducere/21collagen.ro": {
   "fp": "9c7844908c8955cc",
   "data": "2026-08-16"
@@ -3635,10 +3639,6 @@
   "fp": "469c440fa9ad6f0c",
   "data": "2026-08-16"
  },
- "/cod-reducere/glowmania.ro": {
-  "fp": "469c440fa9ad6f0c",
-  "data": "2026-08-26"
- },
  "/cod-reducere/blacktech.ro": {
   "fp": "ad22dd72d43ecddc",
   "data": "2026-08-16"
@@ -3799,6 +3799,10 @@
   "fp": "469c440fa9ad6f0c",
   "data": "2026-08-16"
  },
+ "/cod-reducere/izziepublishing.com": {
+  "fp": "ab1092215d291cef",
+  "data": "2026-08-26"
+ },
  "/cod-reducere/uniquestore.ro": {
   "fp": "e80bf72baffd1929",
   "data": "2026-08-16"
@@ -3852,8 +3856,8 @@
   "data": "2026-08-16"
  },
  "/cod-reducere/materialeelectrice.ro": {
-  "fp": "469c440fa9ad6f0c",
-  "data": "2026-08-25"
+  "fp": "b2e30c3bff901106",
+  "data": "2026-08-26"
  },
  "/cod-reducere/nano-auto.ro": {
   "fp": "d6bfb3be8b633bab",
@@ -4026,6 +4030,10 @@
  "/cod-reducere/reyze.ro": {
   "fp": "469c440fa9ad6f0c",
   "data": "2026-08-16"
+ },
+ "/cod-reducere/europroduse.ro": {
+  "fp": "469c440fa9ad6f0c",
+  "data": "2026-08-26"
  },
  "/cod-reducere/dwyn.ro": {
   "fp": "ad22dd72d43ecddc",
@@ -4296,7 +4304,7 @@
   "data": "2026-08-16"
  },
  "/cod-reducere/printrecarti.ro": {
-  "fp": "e9029f992486a1e5",
+  "fp": "90cd62fc3f76a189",
   "data": "2026-08-26"
  },
  "/cod-reducere/husdago.ro": {
@@ -4324,8 +4332,8 @@
   "data": "2026-08-16"
  },
  "/cod-reducere/olmarkt.ro": {
-  "fp": "8c2041ec5de0f639",
-  "data": "2026-08-25"
+  "fp": "3cf3335017fcb841",
+  "data": "2026-08-26"
  },
  "/cod-reducere/vedrashop.ro": {
   "fp": "9c7844908c8955cc",
@@ -4475,6 +4483,10 @@
   "fp": "bbcad4ad79bfc25e",
   "data": "2026-08-16"
  },
+ "/cod-reducere/pet.eurolife-asigurari.ro": {
+  "fp": "68f4916a7e63410d",
+  "data": "2026-08-26"
+ },
  "/cod-reducere/edogkalypsoland.ro": {
   "fp": "68f4916a7e63410d",
   "data": "2026-08-16"
@@ -4555,6 +4567,10 @@
   "fp": "bbcad4ad79bfc25e",
   "data": "2026-08-16"
  },
+ "/cod-reducere/laudsleep.com": {
+  "fp": "469c440fa9ad6f0c",
+  "data": "2026-08-26"
+ },
  "/cod-reducere/style4street.com": {
   "fp": "9f6207f3c2119112",
   "data": "2026-08-16"
@@ -4612,24 +4628,24 @@
   "data": "2026-08-23"
  },
  "/categorii/fashion": {
-  "fp": "97cd3a9c302bf0f2",
-  "data": "2026-08-21"
+  "fp": "f17562ec856e11ea",
+  "data": "2026-08-26"
  },
  "/categorii/electronice": {
   "fp": "40799961ea6cbb9b",
   "data": "2026-08-24"
  },
  "/categorii/carti-educatie": {
-  "fp": "6da982909b05513d",
-  "data": "2026-08-21"
+  "fp": "aef9b721e9c06a84",
+  "data": "2026-08-26"
  },
  "/categorii/casa-gradina": {
-  "fp": "47ae58e095347022",
+  "fp": "b3a8aaaf98476085",
   "data": "2026-08-26"
  },
  "/categorii/animale": {
-  "fp": "61ca2b0f33ba191e",
-  "data": "2026-08-16"
+  "fp": "6c52d48dd5756097",
+  "data": "2026-08-26"
  },
  "/categorii/sanatate": {
   "fp": "40cb460ef4b142ea",
@@ -4668,12 +4684,12 @@
   "data": "2026-08-19"
  },
  "/categorii/beauty": {
-  "fp": "4424e789704ae4cd",
-  "data": "2026-08-25"
+  "fp": "8f7c8e519aef070b",
+  "data": "2026-08-26"
  },
  "/categorii/bijuterii": {
-  "fp": "6bf4dbd7603b516f",
-  "data": "2026-08-21"
+  "fp": "bade2fb22959f3f0",
+  "data": "2026-08-26"
  },
  "/categorii/auto-moto": {
   "fp": "68c892e16fa9083a",
