@@ -1,10 +1,10 @@
 {
-  "generat": "2026-08-25",
-  "total_magazine": 1151,
-  "cu_promotie": 90,
+  "generat": "2026-08-26",
+  "total_magazine": 1150,
+  "cu_promotie": 89,
   "cu_cod_real": 15,
-  "doar_oferta": 75,
-  "procent_cu_promotie": 7.8,
+  "doar_oferta": 74,
+  "procent_cu_promotie": 7.7,
   "procent_cu_cod": 1.3,
   "reducere_mediana_generala": 40,
   "magazine_cu_procent_declarat": 63,
@@ -48,7 +48,7 @@
     {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
-      "magazine": 135,
+      "magazine": 134,
       "cu_promotie": 20,
       "reducere_mediana": 42.0,
       "reducere_max": 70,
@@ -76,7 +76,7 @@
       "slug": "beauty",
       "nume": "Beauty & îngrijire",
       "magazine": 79,
-      "cu_promotie": 7,
+      "cu_promotie": 6,
       "reducere_mediana": 26.0,
       "reducere_max": 70,
       "esantion": 4
