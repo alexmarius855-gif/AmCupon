@@ -1,6 +1,6 @@
 {
   "generat": "2026-08-29",
-  "total_magazine": 1154,
+  "total_magazine": 1155,
   "cu_promotie": 88,
   "cu_cod_real": 15,
   "doar_oferta": 73,
@@ -48,7 +48,7 @@
     {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
-      "magazine": 133,
+      "magazine": 134,
       "cu_promotie": 20,
       "reducere_mediana": 42.0,
       "reducere_max": 70,

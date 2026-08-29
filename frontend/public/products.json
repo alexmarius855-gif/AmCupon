@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-29T12:02:59Z",
+  "updated": "2026-08-29T19:38:52Z",
   "count": 13300,
   "products": [
     {
@@ -615,7 +615,7 @@
       "title": "🌞 Black Friday de Vara la Medimfarm.ro – reduceri de pana la 40% toata luna august — Cod: Fără cod",
       "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.medimfarm.ro",
       "url_original": "https://medimfarm.ro",
-      "image": "",
+      "image": "https://www.google.com/s2/favicons?domain=medimfarm.ro&sz=128",
       "price": 0.0,
       "old_price": null,
       "discount_pct": 40,
@@ -1071,7 +1071,7 @@
       "title": "MedimFarm - 18% reducere vara cu codul SUMMER18 — Cod: SUMMER18",
       "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.medimfarm.ro",
       "url_original": "https://www.medimfarm.ro",
-      "image": "",
+      "image": "https://www.google.com/s2/favicons?domain=medimfarm.ro&sz=128",
       "price": 0.0,
       "old_price": null,
       "discount_pct": 18,
@@ -1311,7 +1311,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 1219
+      "zile_ramase": 1218
     },
     {
       "id": "promo_vidaxl.bg_3",
@@ -1330,7 +1330,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 1219
+      "zile_ramase": 1218
     },
     {
       "id": "promo_112coffee.com_0",
@@ -1710,7 +1710,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 1220
+      "zile_ramase": 1219
     },
     {
       "id": "promo_sneakerit.ro_0",
@@ -1767,7 +1767,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 855
+      "zile_ramase": 854
     },
     {
       "id": "promo_fara-daunatori.ro_0",
@@ -1786,7 +1786,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 183
+      "zile_ramase": 182
     },
     {
       "id": "promo_fara-daunatori.ro_1",
@@ -1805,7 +1805,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 183
+      "zile_ramase": 182
     },
     {
       "id": "promo_manukashop.ro_0",
@@ -2299,7 +2299,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 9
+      "zile_ramase": 8
     },
     {
       "id": "promo_carturesti.ro_0",
