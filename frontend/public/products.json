@@ -1,6 +1,6 @@
 {
-  "updated": "2026-08-31T12:07:18Z",
-  "count": 11064,
+  "updated": "2026-08-31T21:46:22Z",
+  "count": 11040,
   "products": [
     {
       "id": "promo_curteaveche.ro_0",
@@ -79,25 +79,6 @@
       "zile_ramase": 7
     },
     {
-      "id": "promo_moftcollection.ro_0",
-      "title": "Pana la -75% la huse silicon Iphone + CADOU la fiecare comanda",
-      "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fmoftcollection.ro%2Fcollections%2Foferta-limitata",
-      "url_original": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fmoftcollection.ro%2Fcollections%2Foferta-limitata",
-      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13200/medium/13200.png",
-      "price": 0.0,
-      "old_price": null,
-      "discount_pct": 75,
-      "category": "Electronice & IT",
-      "cat_slug": "electronice",
-      "brand": "Moftcollection",
-      "merchant": "Moftcollection",
-      "merchant_slug": "moftcollection.ro",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "",
-      "zile_ramase": 0
-    },
-    {
       "id": "promo_expomob.ro_1",
       "title": "Outlet Expomob – Reduceri de pana la -70% la mobilier pentru casa",
       "url": "https://www.expomob.ro/outlet-mobila",
@@ -114,7 +95,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 122
+      "zile_ramase": 121
     },
     {
       "id": "promo_expomob.ro_0",
@@ -152,7 +133,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 30
+      "zile_ramase": 29
     },
     {
       "id": "promo_noriel.ro_3",
@@ -171,7 +152,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 14
+      "zile_ramase": 13
     },
     {
       "id": "promo_f64.ro_0",
@@ -190,45 +171,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 8
-    },
-    {
-      "id": "promo_videt.ro_0",
-      "title": "Reduceri de stoc: Până la -70% la ochelarii de soare",
-      "url": "https://www.videt.ro/reduceri-soare.html",
-      "url_original": "https://www.videt.ro/reduceri-soare.html",
-      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9884/medium/9884.png",
-      "price": 0.0,
-      "old_price": null,
-      "discount_pct": 70,
-      "category": "Fashion",
-      "cat_slug": "fashion",
-      "brand": "Videt",
-      "merchant": "Videt",
-      "merchant_slug": "videt.ro",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "",
-      "zile_ramase": 0
-    },
-    {
-      "id": "promo_videt.ro_1",
-      "title": "Reduceri de stoc: până la -70% la rame și -25% la toate lentilele de vedere",
-      "url": "https://www.videt.ro/reduceri-vedere.html",
-      "url_original": "https://www.videt.ro/reduceri-vedere.html",
-      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9884/medium/9884.png",
-      "price": 0.0,
-      "old_price": null,
-      "discount_pct": 70,
-      "category": "Fashion",
-      "cat_slug": "fashion",
-      "brand": "Videt",
-      "merchant": "Videt",
-      "merchant_slug": "videt.ro",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "",
-      "zile_ramase": 0
+      "zile_ramase": 7
     },
     {
       "id": "promo_craftup.ro_0",
@@ -247,7 +190,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 30
+      "zile_ramase": 29
     },
     {
       "id": "promo_paa-home.ro_2",
@@ -266,7 +209,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 61
+      "zile_ramase": 60
     },
     {
       "id": "promo_edituradiana.ro_0",
@@ -285,64 +228,26 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 29
+      "zile_ramase": 28
     },
     {
       "id": "promo_sportdepot.ro_0",
       "title": "Sport Depor Final Sale: Munte si Mare – reduceri de pana la 60%",
       "url": "https://www.sportdepot.ro/final_sale_munte_si_mare/promotion-94153dca2ef04b1b8e48422594b2aaea",
       "url_original": "https://www.sportdepot.ro/final_sale_munte_si_mare/promotion-94153dca2ef04b1b8e48422594b2aaea",
-      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/12062/medium/12062.png",
+      "image": "",
       "price": 0.0,
       "old_price": null,
       "discount_pct": 60,
-      "category": "Fashion",
-      "cat_slug": "fashion",
+      "category": "Sport",
+      "cat_slug": "sport",
       "brand": "Sportdepot",
       "merchant": "Sportdepot",
       "merchant_slug": "sportdepot.ro",
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 2
-    },
-    {
-      "id": "promo_nano-auto.ro_0",
-      "title": "Promotiile Saptamanii la Nanomax",
-      "url": "https://www.nano-auto.ro/promotiile-saptamanii",
-      "url_original": "https://www.nano-auto.ro/promotiile-saptamanii",
-      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14437/medium/14437.jpg",
-      "price": 0.0,
-      "old_price": null,
-      "discount_pct": 58,
-      "category": "Casă & Grădină",
-      "cat_slug": "casa-gradina",
-      "brand": "Nano-auto",
-      "merchant": "Nano-auto",
-      "merchant_slug": "nano-auto.ro",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "",
-      "zile_ramase": 0
-    },
-    {
-      "id": "promo_atomico.ro_0",
-      "title": "PromoVARA cu reduceri de până la 55% la produsele selectate pentru casă și grădină",
-      "url": "https://www.atomico.ro/collections/promovara",
-      "url_original": "https://www.atomico.ro/collections/promovara",
-      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13237/medium/13237.png",
-      "price": 0.0,
-      "old_price": null,
-      "discount_pct": 55,
-      "category": "Casă & Grădină",
-      "cat_slug": "casa-gradina",
-      "brand": "Atomico",
-      "merchant": "Atomico",
-      "merchant_slug": "atomico.ro",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "",
-      "zile_ramase": 0
+      "zile_ramase": 1
     },
     {
       "id": "promo_jojofashion.ro_0",
@@ -399,7 +304,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 30
+      "zile_ramase": 29
     },
     {
       "id": "promo_incaltamintelamoda.ro_0",
@@ -418,26 +323,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 288
-    },
-    {
-      "id": "promo_medimfarm.ro_1",
-      "title": "🌞 Black Friday de Vara la Medimfarm.ro – reduceri de pana la 40% toata luna august — Cod: Fără cod",
-      "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.medimfarm.ro",
-      "url_original": "https://medimfarm.ro",
-      "image": "",
-      "price": 0.0,
-      "old_price": null,
-      "discount_pct": 40,
-      "category": "Sănătate & Farmacie",
-      "cat_slug": "sanatate",
-      "brand": "Medimfarm",
-      "merchant": "Medimfarm",
-      "merchant_slug": "medimfarm.ro",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "Fără cod",
-      "zile_ramase": 0
+      "zile_ramase": 287
     },
     {
       "id": "promo_paa-home.ro_0",
@@ -456,102 +342,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 30
-    },
-    {
-      "id": "promo_herbagetica.ro_2",
-      "title": "🏷️ Până la 40% reducere! ☀️ Produsele verii la prețuri speciale!",
-      "url": "https://herbagetica.ro/promotii-sanatate.html",
-      "url_original": "https://herbagetica.ro/promotii-sanatate.html",
-      "image": "https://www.google.com/s2/favicons?domain=herbagetica.ro&sz=128",
-      "price": 0.0,
-      "old_price": null,
-      "discount_pct": 40,
-      "category": "Sănătate & Farmacie",
-      "cat_slug": "sanatate",
-      "brand": "Herbagetica",
-      "merchant": "Herbagetica",
-      "merchant_slug": "herbagetica.ro",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "",
-      "zile_ramase": 0
-    },
-    {
-      "id": "promo_inpuff.ro_0",
-      "title": "InPuff Summer Sale – reduceri de până la 40% la toate Rochiile",
-      "url": "https://www.inpuff.ro/produse/rochii-elegante",
-      "url_original": "https://www.inpuff.ro/produse/rochii-elegante",
-      "image": "https://www.google.com/s2/favicons?domain=inpuff.ro&sz=128",
-      "price": 0.0,
-      "old_price": null,
-      "discount_pct": 40,
-      "category": "Marketplace",
-      "cat_slug": "marketplace",
-      "brand": "Inpuff",
-      "merchant": "Inpuff",
-      "merchant_slug": "inpuff.ro",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "",
-      "zile_ramase": 0
-    },
-    {
-      "id": "promo_aronia-charlottenburg.ro_0",
-      "title": "Vara cu Aronia",
-      "url": "https://aronia-charlottenburg.ro/vara-cu-aronia/",
-      "url_original": "https://aronia-charlottenburg.ro/vara-cu-aronia/",
-      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/8498/medium/8498.png",
-      "price": 0.0,
-      "old_price": null,
-      "discount_pct": 40,
-      "category": "Sănătate & Farmacie",
-      "cat_slug": "sanatate",
-      "brand": "Aronia-charlottenburg",
-      "merchant": "Aronia-charlottenburg",
-      "merchant_slug": "aronia-charlottenburg.ro",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "",
-      "zile_ramase": 0
-    },
-    {
-      "id": "promo_kamu.ro_0",
-      "title": "Parfumuri arabești cu reduceri de până la 37% pe kamu.ro",
-      "url": "https://www.kamu.ro/parfumuri-arabesti.html",
-      "url_original": "https://www.kamu.ro/parfumuri-arabesti.html",
-      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13474/medium/13474.png",
-      "price": 0.0,
-      "old_price": null,
-      "discount_pct": 37,
-      "category": "Beauty & Îngrijire",
-      "cat_slug": "beauty",
-      "brand": "Kamu",
-      "merchant": "Kamu",
-      "merchant_slug": "kamu.ro",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "",
-      "zile_ramase": 0
-    },
-    {
-      "id": "promo_videt.ro_2",
-      "title": "Până la -35% la o selecție de ochelari de soare și -25% la toate lentilele de vedere — Cod: AUGUST",
-      "url": "https://www.videt.ro/ochelari-de-soare-polaroid.html?dc_code=august",
-      "url_original": "https://www.videt.ro/ochelari-de-soare-polaroid.html?dc_code=august",
-      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9884/medium/9884.png",
-      "price": 0.0,
-      "old_price": null,
-      "discount_pct": 35,
-      "category": "Fashion",
-      "cat_slug": "fashion",
-      "brand": "Videt",
-      "merchant": "Videt",
-      "merchant_slug": "videt.ro",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "AUGUST",
-      "zile_ramase": 0
+      "zile_ramase": 29
     },
     {
       "id": "promo_autobob.ro_0",
@@ -608,7 +399,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 9
+      "zile_ramase": 8
     },
     {
       "id": "promo_zephyrlabs.ro_0",
@@ -627,7 +418,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 29
+      "zile_ramase": 28
     },
     {
       "id": "promo_noriel.ro_2",
@@ -646,7 +437,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 30
+      "zile_ramase": 29
     },
     {
       "id": "promo_answear.ro_0",
@@ -665,7 +456,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "BTS",
-      "zile_ramase": 9
+      "zile_ramase": 8
     },
     {
       "id": "promo_femieko.ro_1",
@@ -703,7 +494,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "PB20",
-      "zile_ramase": 29
+      "zile_ramase": 28
     },
     {
       "id": "promo_carturesti.ro_1",
@@ -722,10 +513,10 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 27
+      "zile_ramase": 26
     },
     {
-      "id": "promo_automobilus.ro_3",
+      "id": "promo_automobilus.ro_0",
       "title": "Reducere 20% la Vopseaua pentru etriere FOLIATEC Pastell",
       "url": "https://automobilus.ro/foliatec-pastel?utm_source=newsletter&utm_medium=email&utm_campaign=foliatec-2026&utm_content=pastell",
       "url_original": "https://automobilus.ro/foliatec-pastel?utm_source=newsletter&utm_medium=email&utm_campaign=foliatec-2026&utm_content=pastell",
@@ -741,26 +532,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 13
-    },
-    {
-      "id": "promo_petit-bebe.ro_0",
-      "title": "Last Days of Summer – până la 20% reducere ☀️la produse pentru bebelusi",
-      "url": "https://www.petit-bebe.ro/last-days-of-summer-reduceri-de-pana-la-20.html",
-      "url_original": "https://www.petit-bebe.ro/last-days-of-summer-reduceri-de-pana-la-20.html",
-      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11672/medium/11672.jpg",
-      "price": 0.0,
-      "old_price": null,
-      "discount_pct": 20,
-      "category": "Copii & Familie",
-      "cat_slug": "copii",
-      "brand": "Petit-bebe",
-      "merchant": "Petit-bebe",
-      "merchant_slug": "petit-bebe.ro",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "",
-      "zile_ramase": 0
+      "zile_ramase": 12
     },
     {
       "id": "promo_femieko.ro_0",
@@ -782,30 +554,11 @@
       "zile_ramase": 121
     },
     {
-      "id": "promo_automobilus.ro_1",
-      "title": "Gama Meguiar's cu -19% pe Automobilus.ro",
-      "url": "https://automobilus.ro/polish-si-detailing?marca%5B0%5D=Meguiar%27s&page=1",
-      "url_original": "https://automobilus.ro/polish-si-detailing?marca%5B0%5D=Meguiar%27s&page=1",
-      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/12225/medium/12225.png",
-      "price": 0.0,
-      "old_price": null,
-      "discount_pct": 19,
-      "category": "Auto & Moto",
-      "cat_slug": "auto-moto",
-      "brand": "Automobilus",
-      "merchant": "Automobilus",
-      "merchant_slug": "automobilus.ro",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "",
-      "zile_ramase": 0
-    },
-    {
       "id": "promo_medimfarm.ro_0",
       "title": "MedimFarm - 18% reducere vara cu codul SUMMER18 — Cod: SUMMER18",
       "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.medimfarm.ro",
       "url_original": "https://www.medimfarm.ro",
-      "image": "",
+      "image": "https://www.google.com/s2/favicons?domain=medimfarm.ro&sz=128",
       "price": 0.0,
       "old_price": null,
       "discount_pct": 18,
@@ -874,7 +627,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 61
+      "zile_ramase": 60
     },
     {
       "id": "promo_giftdesign.ro_0",
@@ -893,7 +646,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 14
+      "zile_ramase": 13
     },
     {
       "id": "promo_dreamramp.ro_0",
@@ -912,26 +665,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 12
-    },
-    {
-      "id": "promo_estel.ro_1",
-      "title": "August Summer Sale",
-      "url": "https://www.estel.ro/ro/promotions/promotia-de-vara-reduceri-la-produsele-pe-site",
-      "url_original": "https://www.estel.ro/ro/promotions/promotia-de-vara-reduceri-la-produsele-pe-site",
-      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/12670/medium/12670.png",
-      "price": 0.0,
-      "old_price": null,
-      "discount_pct": 15,
-      "category": "Beauty & Îngrijire",
-      "cat_slug": "beauty",
-      "brand": "Estel",
-      "merchant": "Estel",
-      "merchant_slug": "estel.ro",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "",
-      "zile_ramase": 0
+      "zile_ramase": 11
     },
     {
       "id": "promo_e-potion.ro_0",
@@ -950,7 +684,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "epotion10",
-      "zile_ramase": 312
+      "zile_ramase": 311
     },
     {
       "id": "promo_jollymag.ro_0",
@@ -972,25 +706,6 @@
       "zile_ramase": 18
     },
     {
-      "id": "promo_automobilus.ro_0",
-      "title": "10% reducere la TOATE produsele de pe automobilus.ro cu codul VACANTA ! — Cod: VACANTA",
-      "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fautomobilus.ro",
-      "url_original": "https://automobilus.ro",
-      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/12225/medium/12225.png",
-      "price": 0.0,
-      "old_price": null,
-      "discount_pct": 10,
-      "category": "Auto & Moto",
-      "cat_slug": "auto-moto",
-      "brand": "Automobilus",
-      "merchant": "Automobilus",
-      "merchant_slug": "automobilus.ro",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "VACANTA",
-      "zile_ramase": 0
-    },
-    {
       "id": "promo_vidaxl.bg_1",
       "title": "10% намаление",
       "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vidaxl.bg%2Fcampaign-s-oferti",
@@ -1007,7 +722,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 1217
+      "zile_ramase": 1216
     },
     {
       "id": "promo_vidaxl.bg_3",
@@ -1026,7 +741,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 1217
+      "zile_ramase": 1216
     },
     {
       "id": "promo_112coffee.com_0",
@@ -1064,64 +779,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 16
-    },
-    {
-      "id": "promo_brainmarket.ro_0",
-      "title": "-10% SUMMER SALE",
-      "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brainmarket.ro%2F",
-      "url_original": "https://www.brainmarket.ro/",
-      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14432/medium/14432.jpg",
-      "price": 0.0,
-      "old_price": null,
-      "discount_pct": 10,
-      "category": "Sănătate & Farmacie",
-      "cat_slug": "sanatate",
-      "brand": "Brainmarket",
-      "merchant": "Brainmarket",
-      "merchant_slug": "brainmarket.ro",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "",
-      "zile_ramase": 0
-    },
-    {
-      "id": "promo_davopro.ro_0",
-      "title": "Folie protectie solara pentru ferestre",
-      "url": "https://davopro.ro/folie-solara",
-      "url_original": "https://davopro.ro/folie-solara",
-      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/2953/medium/2953.jpg",
-      "price": 190.0,
-      "old_price": 211.11,
-      "discount_pct": 10,
-      "category": "Casă & Grădină",
-      "cat_slug": "casa-gradina",
-      "brand": "Davopro",
-      "merchant": "Davopro",
-      "merchant_slug": "davopro.ro",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "",
-      "zile_ramase": 0
-    },
-    {
-      "id": "promo_davopro.ro_1",
-      "title": "Profile si treceri de pardoseala din aluminiu - culori noi: gri antracit, gri ciment si imitatie lemn natural",
-      "url": "https://davopro.ro/profil-de-trecere-la-nivel-aluminiu",
-      "url_original": "https://davopro.ro/profil-de-trecere-la-nivel-aluminiu",
-      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/2953/medium/2953.jpg",
-      "price": 190.0,
-      "old_price": 211.11,
-      "discount_pct": 10,
-      "category": "Casă & Grădină",
-      "cat_slug": "casa-gradina",
-      "brand": "Davopro",
-      "merchant": "Davopro",
-      "merchant_slug": "davopro.ro",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "",
-      "zile_ramase": 0
+      "zile_ramase": 15
     },
     {
       "id": "promo_padelboost.co.uk_0",
@@ -1159,26 +817,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "FERANEW",
-      "zile_ramase": 13
-    },
-    {
-      "id": "promo_liki24.co.uk_0",
-      "title": "Liki24 SuperDeal – Reducere Extra de 5% la Produsele din Categorie — Cod: SUPER5OFF",
-      "url": "https://liki24.ro/category/8000923/?sort=price",
-      "url_original": "https://liki24.ro/category/8000923/?sort=price",
-      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/12916/medium/12916.png",
-      "price": 0.0,
-      "old_price": null,
-      "discount_pct": 5,
-      "category": "Sănătate & Farmacie",
-      "cat_slug": "sanatate",
-      "brand": "Liki24",
-      "merchant": "Liki24",
-      "merchant_slug": "liki24.co.uk",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "SUPER5OFF",
-      "zile_ramase": 0
+      "zile_ramase": 12
     },
     {
       "id": "promo_regata.ro_0",
@@ -1197,7 +836,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 1583
+      "zile_ramase": 1582
     },
     {
       "id": "promo_labelshop.ro_0",
@@ -1216,7 +855,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 1583
+      "zile_ramase": 1582
     },
     {
       "id": "promo_fera.ro_0",
@@ -1254,7 +893,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "LAMODA",
-      "zile_ramase": 3578
+      "zile_ramase": 3577
     },
     {
       "id": "promo_verdalis.ro_0",
@@ -1292,7 +931,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 1583
+      "zile_ramase": 1582
     },
     {
       "id": "promo_otter.ro_1",
@@ -1311,7 +950,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 1583
+      "zile_ramase": 1582
     },
     {
       "id": "promo_vidaxl.bg_0",
@@ -1330,7 +969,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 1218
+      "zile_ramase": 1217
     },
     {
       "id": "promo_sneakerit.ro_0",
@@ -1387,7 +1026,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 853
+      "zile_ramase": 852
     },
     {
       "id": "promo_fara-daunatori.ro_0",
@@ -1406,7 +1045,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 181
+      "zile_ramase": 180
     },
     {
       "id": "promo_fara-daunatori.ro_1",
@@ -1425,7 +1064,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 181
+      "zile_ramase": 180
     },
     {
       "id": "promo_manukashop.ro_0",
@@ -1447,6 +1086,25 @@
       "zile_ramase": 152
     },
     {
+      "id": "promo_moftcollection.ro_0",
+      "title": "Livrare Gratuita la comenzi de peste 200 lei",
+      "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fmoftcollection.ro%2F",
+      "url_original": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fmoftcollection.ro%2F",
+      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13200/medium/13200.png",
+      "price": 200.0,
+      "old_price": null,
+      "discount_pct": 0,
+      "category": "Electronice & IT",
+      "cat_slug": "electronice",
+      "brand": "Moftcollection",
+      "merchant": "Moftcollection",
+      "merchant_slug": "moftcollection.ro",
+      "feed_id": "promo",
+      "is_promo": true,
+      "cod_cupon": "",
+      "zile_ramase": 122
+    },
+    {
       "id": "promo_nobilacasa.ro_1",
       "title": "REDUCERI COMBO",
       "url": "https://www.nobilacasa.ro/sale/reduceri-combo",
@@ -1463,7 +1121,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 122
+      "zile_ramase": 121
     },
     {
       "id": "promo_herbagetica.ro_1",
@@ -1482,26 +1140,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 122
-    },
-    {
-      "id": "promo_moftcollection.ro_2",
-      "title": "Livrare Gratuita la comenzi de peste 200 lei",
-      "url": "https://moftcollection.ro/",
-      "url_original": "https://moftcollection.ro/",
-      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13200/medium/13200.png",
-      "price": 200.0,
-      "old_price": null,
-      "discount_pct": 0,
-      "category": "Electronice & IT",
-      "cat_slug": "electronice",
-      "brand": "Moftcollection",
-      "merchant": "Moftcollection",
-      "merchant_slug": "moftcollection.ro",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "",
-      "zile_ramase": 122
+      "zile_ramase": 121
     },
     {
       "id": "promo_paa-home.ro_3",
@@ -1520,7 +1159,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 122
+      "zile_ramase": 121
     },
     {
       "id": "promo_sofipex.ro_0",
@@ -1634,7 +1273,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 45
+      "zile_ramase": 44
     },
     {
       "id": "promo_trendyol.com_0",
@@ -1672,7 +1311,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 30
+      "zile_ramase": 29
     },
     {
       "id": "promo_craftup.ro_1",
@@ -1691,10 +1330,10 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 30
+      "zile_ramase": 29
     },
     {
-      "id": "promo_aronia-charlottenburg.ro_1",
+      "id": "promo_aronia-charlottenburg.ro_0",
       "title": "Promotie Aronino",
       "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Faronia-charlottenburg.ro%2Fvitamine-suplimente-copii%2F%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExUXJ5TU5mMGpOWmpJY3FoanNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR5j2DM-L9OuylGTdiQ99dnYnHXpIJ5jxNxImTuaDXdihjxSD4aY7_kB7loIFw_aem_A4qQFysHrcv4DaPuclHz1A&h=AUD88vuWvtUK7gkDK5pOvMRigA6U8BTLKqxIsWKXGGCCf2y_SWj3Pkau2f0MUDa52OHMbcXImklLwANE7VdGODmPsZOel8JE_97EtjWHOtbYQxtAhQlNx6ooImC5e7gUBfdzdfCZTjEiu7WZ&__tn__=-UK-R&c[0]=AUC8Oq8YjXsO-3bJ3O-UjgUTnFPValOB9jD2877cKLawKG21wEz-4Zlu8OAADQn2t8VOEOTKb0MsCpoXLTpN_av9zKMEcQHE9CPMToXR-IdE_p8Km0NPOG1u9QX8ky6kiknYkgsmVqldMWPZikiVSC2-Rd3nGWo2CTzGC_eoujuvte9S90wUd8xUN7WtEq32hauPWnyRe2HOFQW2IqziqLO-VQ",
       "url_original": "https://l.facebook.com/l.php?u=https%3A%2F%2Faronia-charlottenburg.ro%2Fvitamine-suplimente-copii%2F%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExUXJ5TU5mMGpOWmpJY3FoanNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR5j2DM-L9OuylGTdiQ99dnYnHXpIJ5jxNxImTuaDXdihjxSD4aY7_kB7loIFw_aem_A4qQFysHrcv4DaPuclHz1A&h=AUD88vuWvtUK7gkDK5pOvMRigA6U8BTLKqxIsWKXGGCCf2y_SWj3Pkau2f0MUDa52OHMbcXImklLwANE7VdGODmPsZOel8JE_97EtjWHOtbYQxtAhQlNx6ooImC5e7gUBfdzdfCZTjEiu7WZ&__tn__=-UK-R&c[0]=AUC8Oq8YjXsO-3bJ3O-UjgUTnFPValOB9jD2877cKLawKG21wEz-4Zlu8OAADQn2t8VOEOTKb0MsCpoXLTpN_av9zKMEcQHE9CPMToXR-IdE_p8Km0NPOG1u9QX8ky6kiknYkgsmVqldMWPZikiVSC2-Rd3nGWo2CTzGC_eoujuvte9S90wUd8xUN7WtEq32hauPWnyRe2HOFQW2IqziqLO-VQ",
@@ -1710,7 +1349,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 30
+      "zile_ramase": 29
     },
     {
       "id": "promo_noriel.ro_1",
@@ -1729,7 +1368,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 30
+      "zile_ramase": 29
     },
     {
       "id": "promo_afisport.ro_0",
@@ -1748,7 +1387,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 29
+      "zile_ramase": 28
     },
     {
       "id": "promo_karcher.com_0",
@@ -1767,7 +1406,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 29
+      "zile_ramase": 28
     },
     {
       "id": "promo_arabescu.ro_0",
@@ -1786,7 +1425,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 29
+      "zile_ramase": 28
     },
     {
       "id": "promo_interlink.ro_0",
@@ -1805,7 +1444,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 29
+      "zile_ramase": 28
     },
     {
       "id": "promo_ookee.ro_0",
@@ -1824,7 +1463,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 13
+      "zile_ramase": 12
     },
     {
       "id": "promo_apiland.ro_0",
@@ -1843,7 +1482,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 13
+      "zile_ramase": 12
     },
     {
       "id": "promo_femieko.ro_2",
@@ -1862,7 +1501,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 9
+      "zile_ramase": 8
     },
     {
       "id": "promo_libris.ro_0",
@@ -1881,7 +1520,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 9
+      "zile_ramase": 8
     },
     {
       "id": "promo_noriel.ro_0",
@@ -1900,7 +1539,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 8
+      "zile_ramase": 7
     },
     {
       "id": "promo_gsmnet.ro_1",
@@ -1919,7 +1558,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 7
+      "zile_ramase": 6
     },
     {
       "id": "promo_carturesti.ro_0",
@@ -1938,7 +1577,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 6
+      "zile_ramase": 5
     },
     {
       "id": "promo_infinity.ro_0",
@@ -1957,26 +1596,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 6
-    },
-    {
-      "id": "promo_dreamramp.ro_2",
-      "title": "Mop rotativ cu găleată electrică Dreamramp® Pro – Separare apa curata + TRANSPORT GRATUIT",
-      "url": "https://dreamramp.ro/products/mop-electric-rotativ-cu-galeata-dreamramp-separare-apa-curata-doua-rezerve",
-      "url_original": "https://dreamramp.ro/products/mop-electric-rotativ-cu-galeata-dreamramp-separare-apa-curata-doua-rezerve",
-      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14473/medium/14473.png",
-      "price": 0.0,
-      "old_price": null,
-      "discount_pct": 0,
-      "category": "Casă & Grădină",
-      "cat_slug": "casa-gradina",
-      "brand": "Dreamramp",
-      "merchant": "Dreamramp",
-      "merchant_slug": "dreamramp.ro",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "",
-      "zile_ramase": 6
+      "zile_ramase": 5
     },
     {
       "id": "promo_infinity.ro_1",
@@ -1992,6 +1612,25 @@
       "brand": "Infinity",
       "merchant": "Infinity",
       "merchant_slug": "infinity.ro",
+      "feed_id": "promo",
+      "is_promo": true,
+      "cod_cupon": "",
+      "zile_ramase": 5
+    },
+    {
+      "id": "promo_dreamramp.ro_2",
+      "title": "Mop rotativ cu găleată electrică Dreamramp® Pro – Separare apa curata + TRANSPORT GRATUIT",
+      "url": "https://dreamramp.ro/products/mop-electric-rotativ-cu-galeata-dreamramp-separare-apa-curata-doua-rezerve",
+      "url_original": "https://dreamramp.ro/products/mop-electric-rotativ-cu-galeata-dreamramp-separare-apa-curata-doua-rezerve",
+      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14473/medium/14473.png",
+      "price": 0.0,
+      "old_price": null,
+      "discount_pct": 0,
+      "category": "Casă & Grădină",
+      "cat_slug": "casa-gradina",
+      "brand": "Dreamramp",
+      "merchant": "Dreamramp",
+      "merchant_slug": "dreamramp.ro",
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
@@ -2014,102 +1653,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 4
-    },
-    {
-      "id": "promo_moftcollection.ro_1",
-      "title": "Folie de sticla si protectie camera CADOU la fiecare comanda",
-      "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fmoftcollection.ro%2F",
-      "url_original": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fmoftcollection.ro%2F",
-      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13200/medium/13200.png",
-      "price": 0.0,
-      "old_price": null,
-      "discount_pct": 0,
-      "category": "Electronice & IT",
-      "cat_slug": "electronice",
-      "brand": "Moftcollection",
-      "merchant": "Moftcollection",
-      "merchant_slug": "moftcollection.ro",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "",
-      "zile_ramase": 0
-    },
-    {
-      "id": "promo_mobilalaguna.ro_0",
-      "title": "Reduceri Mobila Luna August 2026",
-      "url": "https://mobilalaguna.ro/super-reduceri-la-mobila-si-canapele/",
-      "url_original": "https://mobilalaguna.ro/super-reduceri-la-mobila-si-canapele/",
-      "image": "https://www.google.com/s2/favicons?domain=mobilalaguna.ro&sz=128",
-      "price": 0.0,
-      "old_price": null,
-      "discount_pct": 0,
-      "category": "Casă & Grădină",
-      "cat_slug": "casa-gradina",
-      "brand": "Mobilalaguna",
-      "merchant": "Mobilalaguna",
-      "merchant_slug": "mobilalaguna.ro",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "",
-      "zile_ramase": 0
-    },
-    {
-      "id": "promo_automobilus.ro_2",
-      "title": "La orice set de discuri de frână comandat, ai  Cadou un spray de curatat frana",
-      "url": "https://automobilus.ro/piese-auto/instalatie-de-franare/frana-disc/disc-frana?utm_source=newsletter&utm_medium=email&utm_campaign=foliatec-2026&utm_content=foliatec",
-      "url_original": "https://automobilus.ro/piese-auto/instalatie-de-franare/frana-disc/disc-frana?utm_source=newsletter&utm_medium=email&utm_campaign=foliatec-2026&utm_content=foliatec",
-      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/12225/medium/12225.png",
-      "price": 0.0,
-      "old_price": null,
-      "discount_pct": 0,
-      "category": "Auto & Moto",
-      "cat_slug": "auto-moto",
-      "brand": "Automobilus",
-      "merchant": "Automobilus",
-      "merchant_slug": "automobilus.ro",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "",
-      "zile_ramase": 0
-    },
-    {
-      "id": "promo_vegis.ro_0",
-      "title": "Campanii Back to School - Vegis.ro",
-      "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fvegis.ro%2F",
-      "url_original": "https://vegis.ro/",
-      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/10298/medium/10298.png",
-      "price": 0.0,
-      "old_price": null,
-      "discount_pct": 0,
-      "category": "Sănătate & Farmacie",
-      "cat_slug": "sanatate",
-      "brand": "Vegis",
-      "merchant": "Vegis",
-      "merchant_slug": "vegis.ro",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "",
-      "zile_ramase": 0
-    },
-    {
-      "id": "promo_editura-arthur.ro_0",
-      "title": "Campanie cărți și pachete cu cărți de la Editura Arthur",
-      "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Feditura-arthur.ro",
-      "url_original": "https://editura-arthur.ro",
-      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11090/medium/11090.png",
-      "price": 0.0,
-      "old_price": null,
-      "discount_pct": 0,
-      "category": "Cărți & Educație",
-      "cat_slug": "carti-educatie",
-      "brand": "Editura-arthur",
-      "merchant": "Editura-arthur",
-      "merchant_slug": "editura-arthur.ro",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "",
-      "zile_ramase": 0
+      "zile_ramase": 3
     },
     {
       "title": "Clara Toma - Comunicarea nonverbala sau adevarul de dincolo de cuvinte",
