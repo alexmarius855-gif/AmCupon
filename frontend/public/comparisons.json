@@ -521,7 +521,7 @@
     "verdict_m1": "Alege Dr. Max pentru o gama larga de medicamente OTC, suplimente si cosmetice internationale la preturi competitive cu livrare rapida.",
     "verdict_m2": "Alege Farmec daca vrei produse cosmetice romanesti de calitate (Gerovital, Aslavital) cu ingrediente naturale si preturi accesibile.",
     "stats1": {
-      "promotii_active": 3,
+      "promotii_active": 0,
       "cashback": "pana la 2%",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/8800/medium/8800.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2F"
@@ -532,20 +532,7 @@
       "logo": "https://www.google.com/s2/favicons?domain=farmec.ro&sz=128",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmec.ro"
     },
-    "promo1": [
-      {
-        "nume": "Pachet de Grijă – August",
-        "cod_cupon": ""
-      },
-      {
-        "nume": "Ofertele Lunii August",
-        "cod_cupon": ""
-      },
-      {
-        "nume": "50% reducere la produsele marca proprie Dr. Max",
-        "cod_cupon": ""
-      }
-    ],
+    "promo1": [],
     "promo2": [],
     "faq": [
       {
@@ -554,7 +541,7 @@
       },
       {
         "q": "Are Drmax coduri de reducere active?",
-        "a": "Da, Drmax are 3 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
+        "a": "Momentan nu, Drmax are 0 oferte active pe AmCupon.ro in august 2026. Verificam zilnic."
       },
       {
         "q": "Are Farmec coduri de reducere active?",
