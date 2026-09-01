@@ -1,13 +1,13 @@
 {
-  "generat": "2026-08-31",
-  "total_magazine": 1154,
+  "generat": "2026-09-01",
+  "total_magazine": 1152,
   "cu_promotie": 59,
-  "cu_cod_real": 11,
-  "doar_oferta": 48,
+  "cu_cod_real": 10,
+  "doar_oferta": 49,
   "procent_cu_promotie": 5.1,
-  "procent_cu_cod": 1.0,
-  "reducere_mediana_generala": 29.0,
-  "magazine_cu_procent_declarat": 36,
+  "procent_cu_cod": 0.9,
+  "reducere_mediana_generala": 25,
+  "magazine_cu_procent_declarat": 37,
   "categorii": [
     {
       "slug": "carti-educatie",
@@ -21,17 +21,17 @@
     {
       "slug": "fashion",
       "nume": "Fashion",
-      "magazine": 103,
-      "cu_promotie": 10,
-      "reducere_mediana": 25,
+      "magazine": 104,
+      "cu_promotie": 11,
+      "reducere_mediana": 36.0,
       "reducere_max": 80,
-      "esantion": 7
+      "esantion": 8
     },
     {
       "slug": "sanatate",
       "nume": "Sănătate & farmacie",
       "magazine": 62,
-      "cu_promotie": 9,
+      "cu_promotie": 8,
       "reducere_mediana": 25,
       "reducere_max": 35,
       "esantion": 5
@@ -40,10 +40,10 @@
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
       "magazine": 133,
-      "cu_promotie": 11,
-      "reducere_mediana": 24.5,
+      "cu_promotie": 12,
+      "reducere_mediana": 15,
       "reducere_max": 70,
-      "esantion": 6
+      "esantion": 7
     },
     {
       "slug": "marketplace",
@@ -66,25 +66,25 @@
     {
       "slug": "animale",
       "nume": "Pet shop",
-      "magazine": 17,
+      "magazine": 16,
       "cu_promotie": 1,
       "reducere_mediana": null,
       "reducere_max": null,
       "esantion": 1
     },
     {
-      "slug": "cadouri-flori",
-      "nume": "Cadouri & flori",
-      "magazine": 13,
+      "slug": "auto-moto",
+      "nume": "Auto & moto",
+      "magazine": 27,
       "cu_promotie": 2,
       "reducere_mediana": null,
       "reducere_max": null,
       "esantion": 2
     },
     {
-      "slug": "auto-moto",
-      "nume": "Auto & moto",
-      "magazine": 27,
+      "slug": "cadouri-flori",
+      "nume": "Cadouri & flori",
+      "magazine": 12,
       "cu_promotie": 2,
       "reducere_mediana": null,
       "reducere_max": null,
@@ -170,15 +170,6 @@
       "reducere_mediana": null,
       "reducere_max": null,
       "esantion": 0
-    },
-    {
-      "slug": "sports-outdoors",
-      "nume": "sports-outdoors",
-      "magazine": 1,
-      "cu_promotie": 1,
-      "reducere_mediana": null,
-      "reducere_max": null,
-      "esantion": 1
     }
   ],
   "retele": [
