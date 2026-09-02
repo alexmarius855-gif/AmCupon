@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-02T10:13:16Z",
+  "updated": "2026-09-02T19:39:28Z",
   "count": 11387,
   "products": [
     {
@@ -558,7 +558,7 @@
       "title": "MedimFarm - 18% reducere vara cu codul SUMMER18 — Cod: SUMMER18",
       "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.medimfarm.ro",
       "url_original": "https://www.medimfarm.ro",
-      "image": "",
+      "image": "https://www.google.com/s2/favicons?domain=medimfarm.ro&sz=128",
       "price": 0.0,
       "old_price": null,
       "discount_pct": 18,
@@ -722,7 +722,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 1215
+      "zile_ramase": 1214
     },
     {
       "id": "promo_vidaxl.bg_3",
@@ -741,7 +741,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 1215
+      "zile_ramase": 1214
     },
     {
       "id": "promo_112coffee.com_0",
@@ -969,7 +969,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 1216
+      "zile_ramase": 1215
     },
     {
       "id": "promo_sneakerit.ro_0",
@@ -1026,7 +1026,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 851
+      "zile_ramase": 850
     },
     {
       "id": "promo_fara-daunatori.ro_0",
@@ -1045,7 +1045,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 179
+      "zile_ramase": 178
     },
     {
       "id": "promo_fara-daunatori.ro_1",
@@ -1064,7 +1064,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 179
+      "zile_ramase": 178
     },
     {
       "id": "promo_manukashop.ro_0",
@@ -1558,7 +1558,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 5
+      "zile_ramase": 4
     },
     {
       "id": "promo_carturesti.ro_0",
@@ -1599,25 +1599,6 @@
       "zile_ramase": 4
     },
     {
-      "id": "promo_infinity.ro_1",
-      "title": "Echipează-ți garajul: Scule și accesorii auto de top",
-      "url": "https://www.infinity.ro/seller-topstrong942",
-      "url_original": "https://www.infinity.ro/seller-topstrong942",
-      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11281/medium/11281.png",
-      "price": 0.0,
-      "old_price": null,
-      "discount_pct": 0,
-      "category": "Marketplace",
-      "cat_slug": "marketplace",
-      "brand": "Infinity",
-      "merchant": "Infinity",
-      "merchant_slug": "infinity.ro",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "",
-      "zile_ramase": 4
-    },
-    {
       "id": "promo_dreamramp.ro_2",
       "title": "Mop rotativ cu găleată electrică Dreamramp® Pro – Separare apa curata + TRANSPORT GRATUIT",
       "url": "https://dreamramp.ro/products/mop-electric-rotativ-cu-galeata-dreamramp-separare-apa-curata-doua-rezerve",
@@ -1635,6 +1616,25 @@
       "is_promo": true,
       "cod_cupon": "",
       "zile_ramase": 4
+    },
+    {
+      "id": "promo_infinity.ro_1",
+      "title": "Echipează-ți garajul: Scule și accesorii auto de top",
+      "url": "https://www.infinity.ro/seller-topstrong942",
+      "url_original": "https://www.infinity.ro/seller-topstrong942",
+      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11281/medium/11281.png",
+      "price": 0.0,
+      "old_price": null,
+      "discount_pct": 0,
+      "category": "Marketplace",
+      "cat_slug": "marketplace",
+      "brand": "Infinity",
+      "merchant": "Infinity",
+      "merchant_slug": "infinity.ro",
+      "feed_id": "promo",
+      "is_promo": true,
+      "cod_cupon": "",
+      "zile_ramase": 3
     },
     {
       "id": "promo_nuvien.ro_0",

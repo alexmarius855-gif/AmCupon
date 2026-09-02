@@ -30,7 +30,7 @@
     {
       "slug": "sanatate",
       "nume": "Sănătate & farmacie",
-      "magazine": 62,
+      "magazine": 61,
       "cu_promotie": 8,
       "reducere_mediana": 25,
       "reducere_max": 35,
@@ -39,7 +39,7 @@
     {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
-      "magazine": 134,
+      "magazine": 135,
       "cu_promotie": 12,
       "reducere_mediana": 15,
       "reducere_max": 70,

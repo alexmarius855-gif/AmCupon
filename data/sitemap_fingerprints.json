@@ -2899,6 +2899,10 @@
   "fp": "469c440fa9ad6f0c",
   "data": "2026-08-16"
  },
+ "/cod-reducere/maranc.ro": {
+  "fp": "469c440fa9ad6f0c",
+  "data": "2026-09-02"
+ },
  "/cod-reducere/karcher.com": {
   "fp": "bdfaa450745dc8a5",
   "data": "2026-08-20"
@@ -3198,10 +3202,6 @@
  "/cod-reducere/atelierulfamiliei.ro": {
   "fp": "6e66a0b46a8af42e",
   "data": "2026-08-23"
- },
- "/cod-reducere/magazin-bbraun.ro": {
-  "fp": "9c7844908c8955cc",
-  "data": "2026-08-31"
  },
  "/cod-reducere/edituratrei.ro": {
   "fp": "ab1092215d291cef",
@@ -4015,10 +4015,6 @@
   "fp": "e80bf72baffd1929",
   "data": "2026-08-16"
  },
- "/cod-reducere/twindeco.ro": {
-  "fp": "6e66a0b46a8af42e",
-  "data": "2026-08-16"
- },
  "/cod-reducere/apolino.ro": {
   "fp": "8c2041ec5de0f639",
   "data": "2026-08-16"
@@ -4254,6 +4250,10 @@
  "/cod-reducere/12note.ro": {
   "fp": "8c2041ec5de0f639",
   "data": "2026-08-16"
+ },
+ "/cod-reducere/kidsly.ro": {
+  "fp": "6e66a0b46a8af42e",
+  "data": "2026-09-02"
  },
  "/cod-reducere/sabora.ro": {
   "fp": "bbcad4ad79bfc25e",
@@ -4632,7 +4632,7 @@
   "data": "2026-09-02"
  },
  "/categorii/casa-gradina": {
-  "fp": "ade642ab7accf905",
+  "fp": "0c84b93bf3e94925",
   "data": "2026-09-02"
  },
  "/categorii/animale": {
@@ -4640,8 +4640,8 @@
   "data": "2026-09-01"
  },
  "/categorii/sanatate": {
-  "fp": "9895ce0d03915fbc",
-  "data": "2026-08-31"
+  "fp": "66332b66984fcfe0",
+  "data": "2026-09-02"
  },
  "/categorii/auto-moto": {
   "fp": "68c892e16fa9083a",
@@ -4676,7 +4676,7 @@
   "data": "2026-08-16"
  },
  "/categorii/copii": {
-  "fp": "cac26c26add4d4fc",
+  "fp": "35728b50079aaf76",
   "data": "2026-09-02"
  },
  "/categorii/beauty": {
