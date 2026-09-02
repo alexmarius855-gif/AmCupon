@@ -3183,6 +3183,10 @@
   "fp": "e80bf72baffd1929",
   "data": "2026-08-18"
  },
+ "/cod-reducere/bagstodoor.ro": {
+  "fp": "469c440fa9ad6f0c",
+  "data": "2026-09-02"
+ },
  "/cod-reducere/elindor.ro": {
   "fp": "bbcad4ad79bfc25e",
   "data": "2026-08-16"
@@ -3864,7 +3868,7 @@
   "data": "2026-09-01"
  },
  "/cod-reducere/autoeqt.ro": {
-  "fp": "d3685d655b1bcce4",
+  "fp": "a1cbc0c9d87da49c",
   "data": "2026-09-02"
  },
  "/cod-reducere/optiblu.ro": {
@@ -4251,10 +4255,6 @@
   "fp": "8c2041ec5de0f639",
   "data": "2026-08-16"
  },
- "/cod-reducere/kidsly.ro": {
-  "fp": "6e66a0b46a8af42e",
-  "data": "2026-08-16"
- },
  "/cod-reducere/sabora.ro": {
   "fp": "bbcad4ad79bfc25e",
   "data": "2026-08-16"
@@ -4632,8 +4632,8 @@
   "data": "2026-09-02"
  },
  "/categorii/casa-gradina": {
-  "fp": "17ae18b8b6e7b23e",
-  "data": "2026-08-31"
+  "fp": "ade642ab7accf905",
+  "data": "2026-09-02"
  },
  "/categorii/animale": {
   "fp": "1ea15fe04aa780fb",
@@ -4676,8 +4676,8 @@
   "data": "2026-08-16"
  },
  "/categorii/copii": {
-  "fp": "d2aac642fa0bdf72",
-  "data": "2026-08-19"
+  "fp": "cac26c26add4d4fc",
+  "data": "2026-09-02"
  },
  "/categorii/beauty": {
   "fp": "8f7c8e519aef070b",

@@ -39,7 +39,7 @@
     {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
-      "magazine": 133,
+      "magazine": 134,
       "cu_promotie": 12,
       "reducere_mediana": 15,
       "reducere_max": 70,
@@ -147,7 +147,7 @@
     {
       "slug": "copii",
       "nume": "Copii & familie",
-      "magazine": 33,
+      "magazine": 32,
       "cu_promotie": 2,
       "reducere_mediana": null,
       "reducere_max": null,
