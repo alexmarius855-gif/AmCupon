@@ -1,6 +1,6 @@
 {
   "generat": "2026-09-03",
-  "total_magazine": 1152,
+  "total_magazine": 1153,
   "cu_promotie": 58,
   "cu_cod_real": 10,
   "doar_oferta": 48,
@@ -111,7 +111,7 @@
     {
       "slug": "software",
       "nume": "Software & digital",
-      "magazine": 87,
+      "magazine": 88,
       "cu_promotie": 0,
       "reducere_mediana": null,
       "reducere_max": null,
