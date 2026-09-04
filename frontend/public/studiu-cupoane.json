@@ -1,5 +1,5 @@
 {
-  "generat": "2026-09-03",
+  "generat": "2026-09-04",
   "total_magazine": 1153,
   "cu_promotie": 58,
   "cu_cod_real": 10,
@@ -30,7 +30,7 @@
     {
       "slug": "sanatate",
       "nume": "Sănătate & farmacie",
-      "magazine": 61,
+      "magazine": 62,
       "cu_promotie": 8,
       "reducere_mediana": 25,
       "reducere_max": 35,
@@ -147,7 +147,7 @@
     {
       "slug": "copii",
       "nume": "Copii & familie",
-      "magazine": 32,
+      "magazine": 31,
       "cu_promotie": 2,
       "reducere_mediana": null,
       "reducere_max": null,
