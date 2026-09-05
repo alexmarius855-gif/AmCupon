@@ -1,10 +1,10 @@
 {
-  "generat": "2026-09-04",
-  "total_magazine": 1155,
-  "cu_promotie": 58,
+  "generat": "2026-09-05",
+  "total_magazine": 1153,
+  "cu_promotie": 57,
   "cu_cod_real": 10,
-  "doar_oferta": 48,
-  "procent_cu_promotie": 5.0,
+  "doar_oferta": 47,
+  "procent_cu_promotie": 4.9,
   "procent_cu_cod": 0.9,
   "reducere_mediana_generala": 25.0,
   "magazine_cu_procent_declarat": 36,
@@ -30,7 +30,7 @@
     {
       "slug": "sanatate",
       "nume": "Sănătate & farmacie",
-      "magazine": 62,
+      "magazine": 61,
       "cu_promotie": 8,
       "reducere_mediana": 25,
       "reducere_max": 35,
@@ -156,8 +156,8 @@
     {
       "slug": "beauty",
       "nume": "Beauty & îngrijire",
-      "magazine": 78,
-      "cu_promotie": 5,
+      "magazine": 77,
+      "cu_promotie": 4,
       "reducere_mediana": null,
       "reducere_max": null,
       "esantion": 2
