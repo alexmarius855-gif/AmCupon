@@ -1,5 +1,5 @@
 # 💰 TOP MAGAZINE după POTENȚIAL DE CÂȘTIG
-> Generat automat 04.09.2026 13:12. Pe astea să le împingi (articole, pin-uri, postări).
+> Generat automat 05.09.2026 12:41. Pe astea să le împingi (articole, pin-uri, postări).
 
 **Scor = comision × popularitate × ofertă.** Comisionul mare singur înșală — astea-s banii REALI.
 
@@ -22,19 +22,19 @@
 | 15 | Jojofashion (jojofashion.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
 | 16 | Answear (answear.ro) | 7% | 0 | ✅ COD | 14.0 |
 | 17 | Apiland (apiland.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 18 | Estel (estel.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 19 | Linailsboutique (linailsboutique.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 20 | Nuvien (nuvien.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 21 | Padelboost (padelboost.co.uk) | 7% | 0 | ✅ COD | 14.0 |
-| 22 | Fantasyforge (fantasyforge.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 23 | Carturesti (carturesti.ro) | 9% | 0 | 🏷️ ofertă | 12.6 |
-| 24 | Librarie (librarie.net) | 9% | 0 | 🏷️ ofertă | 12.6 |
-| 25 | Giftdesign (giftdesign.ro) | 9% | 0 | 🏷️ ofertă | 12.6 |
-| 26 | Surfshark (surfshark.com) | 40% | 0 | — | 12.5 |
-| 27 | Hostinger (hostinger.ro) | 60% | 0 | — | 12.5 |
-| 28 | Shopify (shopify.com) | 150% | 0 | — | 12.5 |
-| 29 | Bitdefender (bitdefender.ro) | 40% | 0 | — | 12.5 |
-| 30 | Us (us.norton.com) | 25% | 0 | — | 12.5 |
+| 18 | Linailsboutique (linailsboutique.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 19 | Estel (estel.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 20 | Padelboost (padelboost.co.uk) | 7% | 0 | ✅ COD | 14.0 |
+| 21 | Fantasyforge (fantasyforge.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 22 | Carturesti (carturesti.ro) | 9% | 0 | 🏷️ ofertă | 12.6 |
+| 23 | Librarie (librarie.net) | 9% | 0 | 🏷️ ofertă | 12.6 |
+| 24 | Giftdesign (giftdesign.ro) | 9% | 0 | 🏷️ ofertă | 12.6 |
+| 25 | Surfshark (surfshark.com) | 40% | 0 | — | 12.5 |
+| 26 | Hostinger (hostinger.ro) | 60% | 0 | — | 12.5 |
+| 27 | Shopify (shopify.com) | 150% | 0 | — | 12.5 |
+| 28 | Bitdefender (bitdefender.ro) | 40% | 0 | — | 12.5 |
+| 29 | Us (us.norton.com) | 25% | 0 | — | 12.5 |
+| 30 | Coursera (coursera.org) | 45% | 0 | — | 12.5 |
 
 ## 🎯 Cum folosești raportul
 - **Top 10** = prioritate maximă pentru articole „cel mai bun X" + pin-uri Pinterest
