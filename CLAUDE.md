@@ -34,6 +34,11 @@ Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Pro
   2. Magazinele din `CAI_REDIRECTIONATE` produceau 301-uri inutile din linkuri interne — filtrate.
 - Filtrarea pe categorie foloseste `esteInCategorie` (potrivire EXACTA) din `lib/categoriiNisa.ts`,
   **nu o lista noua de cuvinte-cheie** — tiparul #1 din lectii, gasit deja in 5 straturi.
+- **Scoase din starea de ORFANE**: adaugat `/calculatoare` in `REDUCERI` din `Footer.tsx` — lista e
+  exportata si importata de `HomeClient`, deci un singur link ajunge pe toate cele ~100 de pagini
+  SI pe homepage. Verificat pe HTML-ul de build (`despre-noi`, `contact`, `index`: cate 1 aparitie).
+  Hub-ul le linkuieste mai departe pe celelalte doua. Fara asta erau in sitemap, dar fara niciun
+  semnal intern — exact cazul celor 12 pagini orfane reparate pe 16.08.
 - **Sitemap actualizat in ACELASI commit** (regula din valul 4). Verificat: `tsc --noEmit` exit 0
   (cu **redirect in fisier, nu pipe** — capcana `$?` documentata pe 10.08), `npm run build` exit 0,
   `npm run lint` curat pe fisierele noi (exit 1 global vine din `ReviewSection.tsx`, pre-existent).

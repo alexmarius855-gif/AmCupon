@@ -64,6 +64,10 @@ export const REDUCERI = [
   { href: "/pescuit",         label: "Echipament pescuit" },
   { href: "/rochii-mireasa",  label: "Rochii de mireasa" },
   { href: "/studiu/coduri-reducere-romania", label: "Studiu: coduri de reducere" },
+  // Hub-ul de unelte (06.09) — el linkuieste mai departe catre /calculatoare/reducere
+  // si /calculatoare/marimi, deci un singur link de aici le scoate pe toate trei
+  // din starea de orfane. Aceeasi reparatie ca la nisele de mai sus.
+  { href: "/calculatoare",    label: "Calculatoare si unelte" },
 ];
 
 // Pentru utilizatori
