@@ -1,6 +1,6 @@
 {
-  "generat": "2026-09-05",
-  "total_magazine": 1151,
+  "generat": "2026-09-06",
+  "total_magazine": 1148,
   "cu_promotie": 57,
   "cu_cod_real": 10,
   "doar_oferta": 47,
@@ -30,7 +30,7 @@
     {
       "slug": "sanatate",
       "nume": "Sănătate & farmacie",
-      "magazine": 61,
+      "magazine": 60,
       "cu_promotie": 8,
       "reducere_mediana": 25,
       "reducere_max": 35,
@@ -57,7 +57,7 @@
     {
       "slug": "electronice",
       "nume": "Electronice & IT",
-      "magazine": 119,
+      "magazine": 118,
       "cu_promotie": 4,
       "reducere_mediana": null,
       "reducere_max": null,
@@ -102,7 +102,7 @@
     {
       "slug": "mancare-bauturi",
       "nume": "Mâncare & băuturi",
-      "magazine": 16,
+      "magazine": 15,
       "cu_promotie": 1,
       "reducere_mediana": null,
       "reducere_max": null,
