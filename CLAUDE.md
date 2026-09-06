@@ -12,6 +12,39 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 06.09.2026 (modul de unelte gratuite `/calculatoare` — PUSHED):**
+- **Trei pagini noi**: `/calculatoare` (hub), `/calculatoare/reducere`, `/calculatoare/marimi`.
+  Toate **prerenderate STATIC** (verificat in output-ul de build), zero dependinte noi in `package.json`.
+- **DE CE reintroduc un calculator desi au fost ELIMINATE toate pe 11.08**: nota de atunci spune
+  explicit „daca se reiau vreodata, varianta FARA risc e **aritmetica pura** (procente, reduceri),
+  nu cote reglementate". Calculatorul asta e strict aritmetica: **zero cote fiscale, zero cifre care
+  se schimba prin lege**, deci nu poate deveni fals si nu poate fi raportat. Decizia din 11.08 privea
+  TVA/salariu/proforma — acelea raman sterse. Redirecturile lor (`/calculator`, `/calculator-tva`...)
+  sunt **exacte, nu wildcard**, deci `/calculatoare` nu intra in conflict — verificat inainte de scris.
+- **Continut, nu doar un input**: pagina de reduceri explica **capcana celor doua reduceri**
+  (30% + 20% = 44%, nu 50%) cu tabel si FAQ vizibil + `FAQPage`/`WebApplication`/`BreadcrumbList`
+  in JSON-LD. FAQ-ul e in `details`/`summary` NATIV, deci textul e in DOM si cand e inchis —
+  aceeasi regula ca la `ContextMagazin` (marcaj FAQPage fara text vizibil = motiv de actiune manuala).
+- **Textul nu numeste niciun magazin.** Cifrele („94 magazine cu promotii, 20 cu cod verificat") si
+  lista de magazine fashion vin **generate din `output.json` la build**. Aplicarea directa a regulii
+  din valul 5 de taxonomie moarta: o propozitie generata nu poate deveni falsa.
+- **Doua bug-uri prinse INAINTE de commit**, ambele tipare cunoscute din `docs/LECTII-TEHNICE.md`:
+  1. Linkul catre `/cod-reducere` — **pagina index NU exista**, doar `[magazin]`. Ar fi fost 404 pe
+     toate cele 3 pagini noi. Schimbat pe `/top-reduceri`, verificat ca are `page.tsx`.
+  2. Magazinele din `CAI_REDIRECTIONATE` produceau 301-uri inutile din linkuri interne — filtrate.
+- Filtrarea pe categorie foloseste `esteInCategorie` (potrivire EXACTA) din `lib/categoriiNisa.ts`,
+  **nu o lista noua de cuvinte-cheie** — tiparul #1 din lectii, gasit deja in 5 straturi.
+- **Sitemap actualizat in ACELASI commit** (regula din valul 4). Verificat: `tsc --noEmit` exit 0
+  (cu **redirect in fisier, nu pipe** — capcana `$?` documentata pe 10.08), `npm run build` exit 0,
+  `npm run lint` curat pe fisierele noi (exit 1 global vine din `ReviewSection.tsx`, pre-existent).
+- **Testat in browser pe dev server, nu presupus**: 249 lei −30% −20% -> **139,44 lei, economie
+  109,56, reducere reala 44%**; tabelul de marimi comuta corect (dama `32|4|0|36` -> incaltaminte
+  `35|2,5|5|22,5cm`). Cele 14 magazine fashion cu promotie vin din date reale.
+- **Ce ramane blocat pe actiuni manuale** (neschimbat, dar merita repetat — sunt mai valoroase decat
+  cod nou): `NEXT_PUBLIC_ADSENSE_ID` lipsa din Secrets (AdSense nu ruleaza deloc), atributele Brevo
+  `ALERT_STORES` + `WELCOME_STEP` inexistente (alertele si seria de bun-venit sunt scrise si moarte),
+  token Facebook expirat din 29.05, PID-ul CJ.
+
 **UPDATE 22.08.2026 (primele date GSC reale + bug de bani + 2 valuri de taxonomie — PUSHED):**
 - **STARE**: 1.156 magazine · **94 cu promotie** · **18 cu cod real** · sitemap **463 URL, toate 200**
   (verificat prin crawl live pe fiecare) · **money leak 138 -> 89**.

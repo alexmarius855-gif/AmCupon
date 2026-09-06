@@ -192,6 +192,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/servicii`,                lastModified: ultimaModificare(`${BASE_URL}/servicii`), changeFrequency: "daily",   priority: 0.85 },
     { url: `${BASE_URL}/servicii-internationale`, lastModified: ultimaModificare(`${BASE_URL}/servicii-internationale`), changeFrequency: "weekly",  priority: 0.75 },
     { url: `${BASE_URL}/comparator`,              lastModified: ultimaModificare(`${BASE_URL}/comparator`), changeFrequency: "weekly",  priority: 0.75 },
+
+    // ─── Unelte gratuite (aritmetica pura — fara cote reglementate, vezi CLAUDE.md 11.08) ───
+    { url: `${BASE_URL}/calculatoare`,            lastModified: ultimaModificare(`${BASE_URL}/calculatoare`), changeFrequency: "monthly", priority: 0.8  },
+    { url: `${BASE_URL}/calculatoare/reducere`,   lastModified: ultimaModificare(`${BASE_URL}/calculatoare/reducere`), changeFrequency: "monthly", priority: 0.85 },
+    { url: `${BASE_URL}/calculatoare/marimi`,     lastModified: ultimaModificare(`${BASE_URL}/calculatoare/marimi`), changeFrequency: "monthly", priority: 0.8  },
     { url: `${BASE_URL}/albire-dinti`,            lastModified: ultimaModificare(`${BASE_URL}/albire-dinti`), changeFrequency: "weekly",  priority: 0.75 },
     { url: `${BASE_URL}/asigurari`,               lastModified: ultimaModificare(`${BASE_URL}/asigurari`), changeFrequency: "weekly",  priority: 0.8  },
     { url: `${BASE_URL}/cursuri-online`,          lastModified: ultimaModificare(`${BASE_URL}/cursuri-online`), changeFrequency: "weekly",  priority: 0.8  },
