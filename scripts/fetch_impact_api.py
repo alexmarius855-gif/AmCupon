@@ -2,9 +2,16 @@
 Fetch tracking links pentru toate brandurile Impact.com via API oficial.
 Endpoint corect: /Mediapartners/{AccountSid}/Campaigns
 
-Necesita:
-  IMPACT_ACCOUNT_SID=IRwCVg5HgvQ87401119VZWoLrE29We7og1
-  IMPACT_AUTH_TOKEN=hTy.pMbA6CsNkd_HtezJmgpLqK9gDfDt  (din GitHub Secrets)
+Necesita (ambele din GitHub Secrets, NU se scriu niciodata aici):
+  IMPACT_ACCOUNT_SID
+  IMPACT_AUTH_TOKEN
+
+07.09.2026: aici erau VALORILE REALE ale ambelor, in clar, intr-un repo PUBLIC,
+comise din 06.08. Sterse. Stergerea NU e suficienta — raman in istoricul git si
+au fost expuse public ~o luna, deci tokenul TREBUIE regenerat din contul Impact.
+Regula: un comentariu care 'documenteaza' o variabila de mediu ii scrie NUMELE,
+niciodata valoarea. Daca ai nevoie de valoare ca sa testezi local, pune-o in .env
+(care e in .gitignore), nu in docstring.
 
 UPDATE 06.08.2026: procesa DOAR extra_merchants.json — 45+ magazine cu campanie
 Impact activa (verificat live, acelasi gol structural gasit in reconcile_impact_links.py)
