@@ -495,7 +495,9 @@ def main():
     valide = [
         m for m in magazine
         if m.get("are_promotie") and m.get("promotii")
-        and m.get("procent_succes", 0) >= 50
+        # 07.09: aici era `and m.get("procent_succes", 0) >= 50`. `procent_succes` e
+        # random intre 72 si 96, deci conditia trecea INTOTDEAUNA — filtru care parea
+        # ca selecteaza calitate, dar nu excludea nimic. Scos, comportament neschimbat.
     ]
 
     print(f"Genereaza banner 1080x1080 ({len(valide)} magazine valide)...")

@@ -10,7 +10,7 @@
 > existent**, nu crea o secțiune nouă. Numărul de apariții e informația cea mai valoroasă din
 > fișier — arată ce se repetă cu adevărat.
 >
-> Ultima actualizare: 16.08.2026.
+> Ultima actualizare: 07.09.2026.
 
 ---
 
@@ -93,8 +93,32 @@ de timp.
   `HomeClient` are footer propriu cu liste **copiate**. Cele 6 linkuri noi au apărut pe ~100 de
   pagini, dar nu pe homepage — adică exact pagina cu cea mai multă autoritate.
 
+- **07.09:** eticheta de expirare a promoțiilor era scrisă de mână în **5 locuri**, cu praguri
+  diferite. `BrandPageTemplate` și `oferte-azi` plafonau corect afișarea (`< 99` → text fără cifră);
+  `cod-reducere/[magazin]` (×2 blocuri) și `reduceri/[magazin]` **n-aveau nicio limită superioară**
+  și afișau brut valoarea din date. Rezultat măsurat live: `incaltamintelamoda.ro` → **„3571 zile
+  ramase"**, `jojofashion.ro` → 4924 în date. 17 promoții pe 10 magazine. Cea mai importantă pagină
+  a site-ului (`/cod-reducere/*`) era printre cele nereparate.
+  **Ce spune tiparul aici:** cineva reparase deja bug-ul — de două ori — dar în instanțe, nu
+  centralizat. A treia pagină care a avut nevoie de un countdown l-a rescris de la zero, fără plafon.
+  Reparațiile pe instanță nu se propagă; sursa unică se propagă. Acum: `lib/expirarePromo.ts`.
+
+- **07.09, în aceeași zi: DOUĂ secțiuni „Întrebări frecvente" pe aceeași pagină de magazin.**
+  Măsurat pe HTML-ul live: titlul apărea de 2 ori, iar întrebarea „e verificat?" primea **două
+  răspunsuri diferite** — unul corect (`intrebari` din `page.tsx`, reparat pe 16.08 și declarat
+  acolo „o SINGURĂ sursă pentru textul vizibil și pentru schemă"), altul, mai jos în
+  `MagazinClient.tsx`, care afirma două neadevăruri pe toate cele 1.148 de pagini:
+  „Actualizate zilnic din platforma 2Performant" (fals pentru 644 de magazine — Impact, Awin,
+  directe) și „Fiecare cod afișează rata de succes" (semnal eliminat pe 03.07).
+  **Nota din 16.08 spunea adevărul despre propriul array, dar nimeni nu s-a uitat dacă mai există
+  un al doilea FAQ în componenta-copil.** „Sursă unică" e o afirmație verificabilă: numără
+  aparițiile în HTML-ul generat, nu te baza pe comentariul care spune că e unică.
+
 **Regula:** o listă folosită în două locuri se **exportă dintr-unul și se importă în celălalt**.
-Nu se copiază, oricât de mică e.
+Nu se copiază, oricât de mică e. **Același lucru pentru o REGULĂ de afișare**, nu doar pentru o
+listă de date: un prag, un format, o condiție de vizibilitate copiate în două componente diverg la
+fel de sigur. Dacă repari același comportament a doua oară, semnul e că trebuie centralizat, nu
+reparat încă o dată.
 
 ---
 
@@ -203,13 +227,38 @@ lucruri inexistente e mai scump decât niciun audit, pentru că produce modific�
 
 ## 10. Onestitatea datelor — regresii care revin
 
-Fabricația a fost eliminată de trei ori și a reapărut de fiecare dată în alt loc:
+Fabricația a fost eliminată de patru ori și a reapărut de fiecare dată în alt loc:
 
 - 03.07: contoare random afișate ca statistici, comisionul afișat ca „cashback"
 - 08.08: același comision afișat ca reducere, dar în newsletter
 - 10.08: 142 de produse cu poze stock prezentate ca fiind produsul, plus 14 pretenții de testare
 - 09.08: afirmația „am testat independent" reapăruse pe `/vpn`, `/hosting`, `/recomandari` după o
   rescriere ulterioară de pagină
+- **07.09: curățarea din 03.07 nu prinsese trei locuri VII.** `procent_succes`
+  (`random.Random(hash(m)).randint(72,96)`) și `folosit_de` (`randint(15,800)`) erau încă folosite:
+  1. `/comparator` — afișa `procent_succes` sub eticheta **„Trust Score"**, cu bară verde/roșie și
+     prag 80/60. Când lipsea, cădea pe `are_promotie ? 78 : 50` — un număr inventat direct în
+     componentă, deci nici măcar din date. Pagina răspunde 200, e în meniu.
+  2. `/top-reduceri` — **sorta „cele mai bune coduri" după `procent_succes`**, adică ordinea era
+     literal aleatorie. Seed pe hash ⇒ stabilă între rulări, deci nimeni n-avea cum să observe.
+     Titlul vizibil promitea explicit „sortate după rata de succes".
+  3. `/reduceri/[magazin]` — afișa toate trei semnalele; salvat doar de faptul că ruta e 308.
+
+  Plus **patru texte** care promiteau „rata de succes" — inclusiv `/despre-noi`, la secțiunea
+  numită chiar **„Statistici reale"**: „Calculăm rata de succes și contorizăm de câte ori a fost
+  folosit fiecare cod, **direct din date**". Pagina care explică de ce să ai încredere în noi
+  descria cel mai bine exact semnalul inventat.
+
+  **Ce a făcut posibilă supraviețuirea:** pe 03.07 s-a curățat *afișarea* semnalului, dar câmpul a
+  rămas în `output.json` și în `interface Magazin` din fiecare pagină. Un câmp care există într-un
+  tip e o invitație permanentă să fie folosit — a doua oară nu ca statistică, ci ca *sortare* și ca
+  *scor*, unde nu-l caută nimeni când vânează „cifre fabricate afișate".
+
+  **Regula nouă:** când elimini un semnal fals, `grep` după **numele câmpului**, nu după textul
+  afișat — și verifică cele trei forme în care poate trăi mai departe: afișat, **folosit la
+  sortare**, intrat într-un **scor compus**. Ideal, scoate-l și din generator, nu doar din UI.
+  `trend` e cazul-limită: e `0` hardcodat în `fetch_2p_api.py`, deci nu minte, dar face `/top-reduceri`
+  să aibă o secțiune „Trending" care nu s-a randat niciodată — cod mort care arată ca funcționalitate.
 
 **Reguli stabilite:**
 - nu se afișează niciodată o cifră pe care nu o putem susține din date reale;

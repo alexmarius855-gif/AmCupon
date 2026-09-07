@@ -23,8 +23,6 @@ interface Magazin {
   cod_cupon: boolean;
   zile_ramase: number;
   promotii: Promotie[];
-  folosit_de: number;
-  procent_succes: number;
   trend: number;
 }
 
@@ -204,7 +202,7 @@ export default function TopReduceriClient({
             Top Reduceri {luna} {an}
           </h1>
           <p className="text-[#c9ced5] max-w-xl mx-auto">
-            Selectia celor mai bune coduri si reduceri active, sortate dupa rata de succes. Verificate zilnic.
+            Selectia celor mai bune coduri si reduceri active, sortate dupa Deal Score. Verificate zilnic.
           </p>
 
           {/* Stats */}

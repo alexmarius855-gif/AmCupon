@@ -96,8 +96,6 @@ def genereaza_articol_magazin(store: dict, luna: str, an: int) -> dict:
     nume      = nume_afisat(slug_mag)
     promotii  = store.get("promotii", [])
     categorie = store.get("categorie", "Magazine")
-    procent   = store.get("procent_succes", 80)
-    folosit   = store.get("folosit_de", 0)
     comision  = store.get("comision", "")
     trend     = store.get("trend", 0)
     exclusiv  = store.get("exclusiv", False)
@@ -244,7 +242,10 @@ def genereaza_articol_categorie(cat_slug: str, cat_name: str, magazine: list, lu
         m for m in magazine
         if m.get("categorie_slug") == cat_slug and m.get("are_promotie") and m.get("promotii")
     ]
-    mag_cat.sort(key=lambda x: (x.get("cod_cupon", False), x.get("procent_succes", 0)), reverse=True)
+    # 07.09: al doilea criteriu era `procent_succes` = random.Random(hash(m)).randint(72,96).
+    # Ordinea magazinelor din articolele generate era deci arbitrara. `scor_final` e real
+    # (rule-based in calculeaza_scor: promotie + cod + urgenta).
+    mag_cat.sort(key=lambda x: (x.get("cod_cupon", False), x.get("scor_final", 0)), reverse=True)
     top = mag_cat[:7]
 
     if len(top) < 3:
@@ -302,7 +303,7 @@ AmCupon.ro agrega zilnic ofertele de la peste 600 de magazine romanesti. Nu plat
 def genereaza_articol_roundup(magazine: list, luna: str, an: int) -> dict:
     """Articol general lunar — 'Cele mai bune coduri reducere din Mai 2026'."""
     cu_cod = [m for m in magazine if m.get("cod_cupon") and m.get("promotii")]
-    cu_cod.sort(key=lambda x: x.get("procent_succes", 0), reverse=True)
+    cu_cod.sort(key=lambda x: x.get("scor_final", 0), reverse=True)  # 07.09: era random
     top15 = cu_cod[:15]
 
     if not top15:
@@ -418,7 +419,7 @@ def main():
         m for m in magazine
         if m.get("are_promotie") and m.get("promotii")
     ]
-    cu_promotii.sort(key=lambda x: x.get("procent_succes", 0), reverse=True)
+    cu_promotii.sort(key=lambda x: x.get("scor_final", 0), reverse=True)  # 07.09: era random
 
     for store in cu_promotii:
         if generate_count >= POSTS_PER_RUN:

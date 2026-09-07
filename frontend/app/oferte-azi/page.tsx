@@ -3,6 +3,7 @@ import fs from "fs";
 import path from "path";
 import Link from "next/link";
 import ShareButton from "../components/ShareButton";
+import { etichetaExpirare } from "../../lib/expirarePromo";
 
 /* ── Tipuri ──────────────────────────────────────────────────────────────── */
 interface Promotie {
@@ -153,7 +154,8 @@ function OfertaCard({ o }: { o: OfertaFlat }) {
   const nume = numeAfisat(o.magazin);
   const discount = extractDiscount(o.promo.nume) || extractDiscount(o.promo.descriere || "");
   const zile = o.promo.zile_ramase ?? 99;
-  const urgenta = zile <= 2;
+  const eticheta = etichetaExpirare(zile);
+  const urgenta = eticheta?.esteImediata ?? false;
 
   return (
     <div className="group relative flex flex-col bg-gradient-to-b from-[#14181c] to-[#14181c] border border-[#1f2329] hover:border-[#ddf93c]/50 rounded-xl p-4 transition-all duration-200 hover:shadow-2xl hover:shadow-black/40 hover:-translate-y-1">
@@ -224,16 +226,16 @@ function OfertaCard({ o }: { o: OfertaFlat }) {
 
         {/* Meta */}
         <div className="flex items-center justify-between gap-2 mt-3 pt-3 border-t border-[#f0fdfa]">
-          {urgenta ? (
+          {eticheta && (urgenta ? (
             <span className="text-[10px] font-bold text-[#e8956f] flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-[#e8956f] animate-pulse" />
-              {zile === 0 ? "Expiră azi" : "Expiră mâine"}
+              {eticheta.text}
             </span>
           ) : (
             <span className="text-[10px] text-[#9399a0] font-medium">
-              {zile < 99 ? `${zile} zile rămase` : "Verificat azi"}
+              {eticheta.text}
             </span>
-          )}
+          ))}
           <Link href={`/cod-reducere/${o.magazin}`}
             className="text-[10px] font-semibold text-[#9399a0] hover:text-[#c3dd2c] transition-colors">
             Toate codurile →

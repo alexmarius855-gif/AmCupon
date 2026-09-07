@@ -15,7 +15,6 @@ interface Pick {
   cod: string;
   url: string;
   zile_ramase: number;
-  procent_succes?: number;
   take?: string;
 }
 

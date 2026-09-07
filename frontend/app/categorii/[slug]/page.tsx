@@ -56,8 +56,6 @@ interface Magazin {
   cod_cupon: boolean;
   zile_ramase: number;
   promotii: { nume: string; descriere: string; cod_cupon: string; landing_page: string; zile_ramase: number }[];
-  folosit_de: number;
-  procent_succes: number;
   exclusiv: boolean;
 }
 

@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import Link from "next/link";
+import { etichetaExpirare } from "../../lib/expirarePromo";
 
 interface Promotie {
   nume: string;
@@ -176,7 +177,8 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {promotii.map((promo, i) => {
               const discount = extractDiscount(promo.nume) || extractDiscount(promo.descriere || "");
-              const urgenta = (promo.zile_ramase ?? 99) <= 2;
+              const eticheta = etichetaExpirare(promo.zile_ramase ?? 99);
+              const urgenta = eticheta?.esteImediata ?? false;
               return (
                 <div key={i} className="bg-[#14181c] border border-[#1f2329] hover:border-[#ddf93c]/40 rounded-xl p-4 flex flex-col gap-3 transition-all hover:shadow-lg">
                   <div className="flex items-start justify-between gap-2">
@@ -198,16 +200,16 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
                   )}
 
                   <div className="flex items-center justify-between mt-auto pt-2 border-t border-[#1f2329]">
-                    {urgenta ? (
+                    {eticheta && (urgenta ? (
                       <span className="text-[10px] font-bold text-[#e8956f] flex items-center gap-1.5">
                         <span className="w-1.5 h-1.5 rounded-full bg-[#e8956f] animate-pulse" />
-                        {(promo.zile_ramase ?? 0) === 0 ? "Expiră azi" : "Expiră mâine"}
+                        {eticheta.text}
                       </span>
                     ) : (
                       <span className="text-[10px] text-[#9399a0]">
-                        {(promo.zile_ramase ?? 99) < 99 ? `${promo.zile_ramase} zile rămase` : "Verificat azi"}
+                        {eticheta.text}
                       </span>
-                    )}
+                    ))}
                     <a href={promo.landing_page || magazin?.url_afiliat || "#"}
                       target="_blank" rel="sponsored noopener noreferrer"
                       className="text-xs font-black bg-gradient-to-r from-[#ddf93c] to-[#ddf93c] hover:from-[#ddf93c] hover:to-[#ddf93c] text-[#0c1000] px-4 py-1.5 rounded-xl transition-all">

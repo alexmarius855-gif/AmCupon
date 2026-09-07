@@ -42,7 +42,6 @@ export interface Magazin {
   cod_cupon: boolean;
   zile_ramase: number;
   promotii: Promotie[];
-  procent_succes: number;
   trend: number;
   exclusiv: boolean;
 }

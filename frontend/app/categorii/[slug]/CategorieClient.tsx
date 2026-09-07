@@ -10,8 +10,6 @@ import NewsletterCTA from "../../components/NewsletterCTA";
 interface Magazin extends CardMagazin {
   trend: number;
   zile_ramase: number;
-  folosit_de: number;
-  procent_succes: number;
   rank?: number;
 }
 
@@ -230,7 +228,7 @@ export default function CategorieClient({ magazine, numeCategorie, slug, produse
               <h3 className="font-bold text-[#ffffff] mb-2">✅ Coduri verificate zilnic</h3>
               <p>
                 Toate codurile de reducere {numeCategorie} de pe AmCupon.ro sunt verificate automat.
-                Afișăm rata de succes și data expirării pentru fiecare cod în parte.
+                Afișăm zilele rămase până la expirare pentru fiecare cod în parte.
               </p>
             </div>
             <div>

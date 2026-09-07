@@ -12,6 +12,98 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 07.09.2026, partea a 3-a (CURATARE LA SURSA a fabricatiei — NEPUSHED):**
+- Dupa ce partea a 2-a a curatat AFISAREA, am cautat cine mai **consuma** campurile. Erau mai multe
+  decat in UI, si tocmai in generatoarele de continut:
+  - `generate_blog.py` — **trei sortari** dupa `procent_succes` (liniile ~247, ~305, ~421). Ordinea
+    magazinelor din articolele generate automat era deci arbitrara. Trecute pe `scor_final` (real,
+    rule-based). Plus doua variabile moarte (`procent`, `folosit`) — setate, niciodata folosite.
+  - `generate_daily_digest.py` — aduna `procent_succes/5` (14-19 puncte) + `folosit_de/20` (0-40) la
+    scorul editorial, peste semnalele reale (cod=50, promotie=20, urgenta=30). **Pana la ~59 de
+    puncte de zgomot random**, suficient sa rastoarne clasamentul digest-ului. Scoase.
+  - `generate_banner_auto.py` si `generate_post_ollama.py` — filtrau `procent_succes >= 50`. Cum
+    valoarea era random **72-96**, conditia trecea INTOTDEAUNA: filtre decorative, zero selectie.
+    Scoase; comportamentul nu se schimba.
+  - `add_impact_merchants.py`, `discover_impact_merchants.py`, `extract_merchants_from_feed.py` —
+    scriau constante inventate (`85`, `85`, `80`) ca sa semene cu magazinele 2P. Scoase.
+- **SURSA**: `fetch_2p_api.py` nu mai genereaza deloc `folosit_de` / `procent_succes` — sterse si
+  functiile `calculeaza_folosit` / `calculeaza_succes`, si `import random` (nemaifiind folosit).
+  **`calculeaza_scor` (scor_final) RAMANE** — acela e real: promotie + cod + urgenta, fara random.
+- **Sterse si din `interface Magazin`** in 13 fisiere TSX. Cat timp campul e declarat intr-un tip,
+  e o invitatie sa fie refolosit — exact cum s-a intamplat de trei ori dupa curatarea din 03.07.
+- **VERIFICAT ca pipeline-ul poate rula fara ele**: am sters campurile din `output.json` (2.296 de
+  valori pe 1.148 de magazine), am dat `npm run build` -> **exit 0, toate cele 1.148 de pagini
+  generate**, zero `undefined`. Apoi am restaurat `output.json` din backup. `tsc` 0 dupa stergerea
+  din interfete = nicio utilizare ramasa. Toate cele 8 scripturi Python trec `py_compile`.
+- **De ce conteaza pentru bani, nu doar pentru igiena**: ordinea din `/top-reduceri`, din articolele
+  de blog si din digest decide CE VEDE OMUL PRIMUL. Cand cheia de sortare e random, cel mai bun
+  cupon ajunge al 15-lea la fel de des ca primul. Acum ordinea reflecta reducerea reala.
+
+**UPDATE 07.09.2026, partea a 2-a (SEMNALE FABRICATE inca vii + FAQ dublu — NEPUSHED):**
+- **Curatarea de fabricatie din 03.07.2026 NU prinsese trei locuri.** `procent_succes` =
+  `random.Random(hash(m)).randint(72,96)` si `folosit_de` = `randint(15,800)` (`fetch_2p_api.py`
+  liniile 298-309) erau inca folosite:
+  1. **`/comparator` (LIVE, 200, in meniu)** — afisa `procent_succes` ca **„Trust Score"**, cu bara
+     verde/rosie si praguri 80/60. Fallback cand lipsea: `are_promotie ? 78 : 50` — numar inventat
+     direct in componenta. Inlocuit cu `calculateDealScore` (sursa onesta, deja pe /cod-reducere).
+  2. **`/top-reduceri` (LIVE)** — **sorta „cele mai bune coduri" dupa `procent_succes`**, deci
+     ordinea era ALEATORIE. Seed pe hash ⇒ stabila intre rulari, deci invizibila. Titlul vizibil
+     promitea „sortate dupa rata de succes". Acum sorteaza dupa Deal Score, iar textul zice asta.
+  3. `/reduceri/[magazin]` — afisa toate trei semnalele; nu ajungea la nimeni doar fiindca ruta e
+     redirectionata (verificat: 308 -> `/cod-reducere/*`). Scoase oricum, ca sa nu revina.
+- **Sectiunea „Trending" de pe `/top-reduceri` n-a functionat NICIODATA**: filtreaza `m.trend > 0`,
+  dar `trend` e `0` hardcodat in `fetch_2p_api.py`. Verificat live: cuvantul „Trending" apare de
+  **0 ori** pe pagina. Lasata goala explicit, cu motivul scris — NU inventam un trend din alte date.
+- **DOUA sectiuni „Intrebari frecvente" pe fiecare pagina de magazin.** Masurat pe HTML live:
+  titlul de 2 ori, intrebarea „e verificat?" cu **doua raspunsuri diferite**. Cel din
+  `MagazinClient.tsx` afirma: „Actualizate zilnic din platforma 2Performant" — **fals pe 644 din
+  1.148 de magazine** (584 Impact + 57 Awin + 3 directe) — si „Fiecare cod afiseaza rata de succes",
+  semnal scos din UI din 03.07. Eliminat; ramane sursa unica `intrebari` din `page.tsx` (corecta,
+  generata din date, alimenteaza si schema `FAQPage`).
+- **Patru texte promiteau „rata de succes"**, inclusiv `/despre-noi` la sectiunea numita chiar
+  **„Statistici reale"** („Calculam rata de succes... direct din date"). Toate rescrise pe Deal Score.
+- **VERIFICAT pe build, pe toate paginile**: `tsc` 0, `build` 0. Pe cele 1.148 de pagini de magazin:
+  „2Performant" **0**, „rata de succes" **0**, countdown >=100 zile **0**. FAQ vizibil: 2 -> **1**.
+  Lint: singura eroare (`set-state-in-effect` in ComparatorClient:209) e **pre-existenta** —
+  confirmat ruland eslint pe codul original cu `git stash`.
+- **CE RAMANE FALS SI NU AM ATINS**: campurile `procent_succes`/`folosit_de` inca se GENEREAZA in
+  `fetch_2p_api.py` si stau in `output.json`. Cat timp exista in date si in `interface Magazin`,
+  pot fi refolosite a patra oara. Curatarea la sursa e pasul urmator firesc.
+
+**UPDATE 07.09.2026 (countdown fals pe pagini + erodare masurata a inventarului — NEPUSHED):**
+- **STARE masurata azi**: **1.148 magazine** · **57 cu promotie** · **10 cu cod real** ·
+  85 obiecte-promotie in total. Pipeline-ul ruleaza normal (ultima rulare 06.09 09:57).
+- **BUG DE CREDIBILITATE, era LIVE**: `/cod-reducere/incaltamintelamoda.ro` afisa
+  **„3571 zile ramase"** la codul `LAMODA` — adica ~9 ani si 9 luni. Verificat live cu curl
+  inainte de orice modificare, nu presupus. In date: `jojofashion.ro` 4924 zile, `otter.ro` /
+  `regata.ro` / `labelshop.ro` 1577, `vidaxl.bg` 1211-1212, `sneakerit.ro` 913.
+  **17 promotii pe 10 magazine.**
+- **Cauza e tiparul #3 din `docs/LECTII-TEHNICE.md`**, nu o valoare gresita: eticheta era scrisa
+  de mana in **5 locuri**. `BrandPageTemplate` si `oferte-azi` **plafonau deja corect** (`< 99`);
+  `cod-reducere/[magazin]` (2 blocuri) si `reduceri/[magazin]` n-aveau nicio limita superioara.
+  Bug-ul fusese deci reparat de doua ori — dar in instante, nu centralizat, deci n-a ajuns pe
+  pagina cea mai importanta a site-ului.
+- **Reparat prin sursa unica**: `frontend/lib/expirarePromo.ts` (`etichetaExpirare`), importata in
+  toate cele 4 fisiere. Functie PURA (nu citeste `Date.now()`) — respecta regula de puritate
+  Server/Client din auditul 24.07. Pragurile NU sunt inventate: `99` e valoarea care exista deja
+  in cele doua pagini corecte.
+- **„Verificat azi" -> „Ofertă activă"** peste prag. Motiv: „verificat azi" e o afirmatie despre
+  ACTIUNEA noastra, falsa daca pipeline-ul sta (a stat 6 zile in iunie, cf. mai jos). „Ofertă
+  activă" e adevarat cat timp inregistrarea e in `output.json` — aceeasi regula ca la `DESC_CATEG`.
+- **VERIFICAT pe toate cele 1.148 de pagini prerandate**, nu pe un exemplu: `tsc --noEmit` exit 0
+  (redirect in fisier, nu pipe), `npm run build` exit 0, lint exit 0 pe fisierele atinse.
+  Dupa fix: **zero cifre >= 100**, cifra maxima afisata **55 zile**, 31 „Ofertă activă",
+  11 etichete de urgenta reala. Total 85 = exact numarul de promotii din date.
+- **Cele 4 promotii cu `zile_ramase: 0` NU erau bug** — afiseaza „Expiră azi", corect.
+- **EROZIUNE, de decis separat**: promotiile scad continuu — **94 (22.08) -> 71 (31.08) -> 57 azi**;
+  codurile reale **18 -> 10**. Sursa lor a fost importul CSV manual din 21.08; expira una cate una
+  si nu intra altele. **`fetch_impact_deals.py` exista scris, dar NU e in `update-data.yml`** —
+  deci Impact (584 magazine, 51% din site) contribuie **0 promotii**. Awin (57) la fel: 0.
+  Singura sursa vie de promotii e 2Performant (54 din 504 magazine = 11%).
+- **Comisioane**: toate cele 1.148 au camp completat, dar **2Performant si Awin (561 magazine, 49%)
+  au literal „Variabil"**, care se si AFISEAZA live pe pagina. Doar Impact are cifre reale
+  („40% + recurent", „$25-$150 per referral", „15-45%").
+
 **UPDATE 06.09.2026 (modul de unelte gratuite `/calculatoare` — PUSHED):**
 - **Trei pagini noi**: `/calculatoare` (hub), `/calculatoare/reducere`, `/calculatoare/marimi`.
   Toate **prerenderate STATIC** (verificat in output-ul de build), zero dependinte noi in `package.json`.

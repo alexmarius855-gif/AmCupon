@@ -5,7 +5,6 @@ import Link from "next/link";
 import MagazinCard, { type CardMagazin } from "../components/MagazinCard";
 
 interface Magazin extends CardMagazin {
-  procent_succes: number;
 }
 
 function numeAfisat(s: string) {

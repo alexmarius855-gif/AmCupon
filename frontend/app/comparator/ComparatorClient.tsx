@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import { Suspense } from "react";
+import { calculateDealScore } from "../../lib/dealScore";
 
 interface Promotie {
   nume: string;
@@ -25,8 +26,6 @@ interface Magazin {
   cod_cupon: boolean;
   zile_ramase: number;
   promotii: Promotie[];
-  folosit_de: number;
-  procent_succes: number;
   exclusiv: boolean;
   trend: number;
 }
@@ -63,7 +62,14 @@ function MagazinCard({ m, onRemove, onSwap, position }: { m: Magazin; onRemove: 
   const cashback  = parseCashback(m.comision);
   const nrCoduri  = m.promotii.filter(p => p.cod_cupon).length;
   const nrOferte  = m.promotii.length;
-  const trustScore = m.procent_succes || (m.are_promotie ? 78 : 50);
+  // 07.09: era `m.procent_succes || (m.are_promotie ? 78 : 50)` — ambele fabricate.
+  // `procent_succes` vine din `random.Random(hash(...))` in fetch_2p_api.py si a fost scos
+  // din UI pe 03.07.2026 ca semnal fals; comparatorul a ramas singurul loc care il mai
+  // afisa, si inca sub eticheta „Trust Score", cu bara verde/rosie. Iar fallback-ul 78/50
+  // era un numar inventat direct in componenta. Inlocuit cu `calculateDealScore` —
+  // aceeasi sursa onesta folosita pe `/cod-reducere` (doar reducere reala, prospetime
+  // reala, exclusivitate reala). Vezi lib/dealScore.ts pentru ce NU intra in formula.
+  const dealScore = calculateDealScore(m);
   // Header-ul era un gradient lime plin cu text alb peste — ilizibil dupa trecerea la
   // tema lime (accentul are L=93%). Lime ramane accent, nu suprafata: header inchis.
   const gradients = ["from-[#1f2329] to-[#14181c]", "from-[#14181c] to-[#1f2329]"];
@@ -142,13 +148,15 @@ function MagazinCard({ m, onRemove, onSwap, position }: { m: Magazin; onRemove: 
           <ScorBar value={cashback} max={20} color="bg-[#ddf93c]" />
         </div>
 
-        {/* Trust Score */}
+        {/* Deal Score — calculat din date reale, nu din procent_succes (fabricat). Eticheta
+            nu mai spune „Trust Score": nu masuram increderea in magazin, ci cat de buna e
+            oferta lui acum. Fara „%" — e un scor 0-100, nu un procent din ceva. */}
         <div>
           <div className="flex justify-between items-center mb-1.5">
-            <span className="text-xs font-semibold text-[#9399a0] uppercase tracking-wide">Trust Score</span>
-            <span className="text-sm font-black text-[#c9ced5]">{trustScore}%</span>
+            <span className="text-xs font-semibold text-[#9399a0] uppercase tracking-wide">Deal Score</span>
+            <span className="text-sm font-black text-[#c9ced5]">{dealScore}</span>
           </div>
-          <ScorBar value={trustScore} max={100} color={trustScore >= 80 ? "bg-emerald-500" : trustScore >= 60 ? "bg-[#ddf93c]" : "bg-red-500"} />
+          <ScorBar value={dealScore} max={100} color={dealScore >= 80 ? "bg-emerald-500" : dealScore >= 60 ? "bg-[#ddf93c]" : "bg-red-500"} />
         </div>
 
         {/* Badges */}
@@ -278,9 +286,14 @@ function ComparatorInner() {
 
   const magazine = selected.map(s => all.find(m => m.magazin === s)).filter(Boolean) as Magazin[];
 
-  // Scor final comparativ
+  // Scor final comparativ — decide ce magazin e declarat castigator, deci nu poate contine
+  // semnale fabricate. 07.09: scos `m.procent_succes` (random, vezi mai sus) si inlocuit cu
+  // Deal Score-ul real. `parseCashback(comision)` RAMANE eliminat din formula deliberat:
+  // comisionul e ce castigam NOI, nu o masura a ofertei pentru cumparator — includerea lui
+  // ar face ca „magazinul castigator" sa fie cel mai profitabil pentru noi, nu cel mai bun
+  // pentru vizitator. Aceeasi regula e scrisa explicit in lib/dealScore.ts.
   function totalScore(m: Magazin) {
-    return (m.promotii.length * 5) + (m.procent_succes || 0) + maxDiscount(m.promotii) + parseCashback(m.comision) * 2;
+    return (m.promotii.length * 5) + calculateDealScore(m) + maxDiscount(m.promotii);
   }
   const winner = magazine.length === 2
     ? totalScore(magazine[0]) >= totalScore(magazine[1]) ? magazine[0] : magazine[1]

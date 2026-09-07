@@ -18,7 +18,6 @@ import os
 import json
 import re
 import hashlib
-import random
 import time
 from datetime import datetime, timezone
 from urllib.parse import quote, unquote
@@ -297,18 +296,6 @@ def make_afiliat_url(url: str) -> str:
             f"&unique={QUICKLINK_UNIQUE}&redirect_to={encoded}")
 
 
-def calculeaza_folosit(magazin: str, are_promotie: bool) -> int:
-    if not are_promotie:
-        return 0
-    rng = random.Random(abs(hash(magazin)) % 99991)
-    return rng.randint(15, 800)
-
-
-def calculeaza_succes(magazin: str) -> int:
-    rng = random.Random(abs(hash(magazin + "_s")) % 99991)
-    return rng.randint(72, 96)
-
-
 def calculeaza_scor(are_promotie: bool, cod_cupon: bool, zile_ramase: int) -> float:
     scor = 0.0
     if are_promotie:
@@ -436,8 +423,12 @@ def program_to_magazin(prog: dict, promo_map: dict) -> dict:
         "cod_cupon":        are_cod,
         "zile_ramase":      zile_ramase,
         "promotii":         promotii_raw,
-        "folosit_de":       calculeaza_folosit(slug, are_promotie),
-        "procent_succes":   calculeaza_succes(slug),
+        # 07.09.2026: "folosit_de" si "procent_succes" NU se mai genereaza.
+        # Erau random.Random(hash(slug)).randint(...) — numere inventate care aratau a
+        # masuratori. Scoase din UI pe 03.07.2026, dar au supravietuit in date si au
+        # reaparut de trei ori ca sortare/scor (/comparator, /top-reduceri, blog, digest).
+        # Cat timp campul exista in output.json, cineva il refoloseste. Vezi
+        # docs/LECTII-TEHNICE.md sectiunea 10.
         "exclusiv":         are_cod,
         "platforma":        "2performant",
         "ultima_verificare": datetime.now(timezone.utc).strftime("%Y-%m-%d"),

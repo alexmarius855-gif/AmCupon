@@ -266,7 +266,8 @@ def main():
     valide = [
         m for m in magazine
         if m.get("are_promotie") and m.get("promotii")
-        and m.get("procent_succes", 0) >= 50
+        # 07.09: scos `and m.get("procent_succes", 0) >= 50` — random 72-96, deci mereu
+        # adevarat. Filtru decorativ, nu selectie reala.
         and " " not in m.get("magazin", "")
     ]
 

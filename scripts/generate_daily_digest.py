@@ -108,8 +108,10 @@ def select_deals(magazine: list) -> list:
             scor += 20
         if 0 < zile <= 7:
             scor += 30  # urgenta = valoare editoriala
-        scor += min(m.get("procent_succes", 0), 100) / 5
-        scor += min(m.get("folosit_de", 0), 200) / 20
+        # 07.09: aici se adunau `procent_succes/5` (14-19 puncte) si `folosit_de/20`
+        # (0-40 puncte) — ambele random (fetch_2p_api.py). Insemnau pana la ~59 de puncte
+        # de zgomot peste semnalele reale (cod=50, promotie=20, urgenta=30), deci puteau
+        # rasturna clasamentul digest-ului zilnic. Scoase.
         if slug in BRANDURI_MARI:
             scor += 25  # nume cunoscut = valoare editoriala
         candidati.append({
@@ -124,7 +126,6 @@ def select_deals(magazine: list) -> list:
             "cod": (best.get("cod_cupon") or "").strip() if isinstance(best.get("cod_cupon"), str) else "",
             "url": f"https://amcupon.ro/cod-reducere/{slug}",
             "zile_ramase": zile,
-            "procent_succes": m.get("procent_succes", 0),
         })
 
     candidati.sort(key=lambda c: -c["scor"])

@@ -3,6 +3,7 @@
 import Link from "next/link";
 
 import { useState } from "react";
+import { etichetaExpirare } from "../../../lib/expirarePromo";
 
 interface Promotie {
   nume: string;
@@ -25,8 +26,6 @@ interface Magazin {
   cod_cupon: boolean;
   zile_ramase: number;
   promotii: Promotie[];
-  folosit_de: number;
-  procent_succes: number;
   exclusiv: boolean;
 }
 
@@ -120,24 +119,17 @@ export default function MagazinClient({ magazin: m }: { magazin: Magazin }) {
             <p className="text-gray-500 text-sm mb-3">{m.categorie}</p>
 
             <div className="flex flex-wrap justify-center sm:justify-start gap-4 text-sm mb-4">
-              {m.cod_cupon && (
-                <div className="flex items-center gap-1">
-                  <span className="text-green-500">✓</span>
-                  <span className="font-semibold text-green-600">{m.procent_succes}% rată succes</span>
-                </div>
-              )}
-              {m.folosit_de > 0 && (
-                <div>
-                  <span className="text-gray-400">Folosit de </span>
-                  <span className="font-semibold text-gray-700">{m.folosit_de}x</span>
-                </div>
-              )}
-              {m.trend > 0 && (
-                <div>
-                  <span className="text-[#ddf93c]">↑ Trending </span>
-                  <span className="font-semibold text-[#ddf93c]">+{m.trend}%</span>
-                </div>
-              )}
+              {/*
+                07.09: scoase trei semnale FABRICATE care erau afisate ca masuratori:
+                  „X% rată succes"  <- procent_succes = random.Random(hash(m)).randint(72,96)
+                  „Folosit de Nx"   <- folosit_de     = random.Random(hash(m)).randint(15,800)
+                  „↑ Trending +X%"  <- trend          = hardcodat 0 in fetch_2p_api.py
+                Ruta asta e redirectionata (308 -> /cod-reducere/*), deci nu ajungeau la
+                nimeni ACUM — dar restul site-ului fusese curatat de ele pe 03.07.2026 si
+                aici au supravietuit. Le las scoase, nu comentate cu „poate revin": daca
+                ruta se reactiveaza vreodata, nu vrem sa reapara cifre inventate.
+                Ce ramane mai jos (numarul de promotii active) e numarat din date reale.
+              */}
               <div>
                 <span className="text-gray-400">Promoții: </span>
                 <span className="font-semibold text-[#c3dd2c]">{m.promotii.length} active</span>
@@ -172,6 +164,7 @@ export default function MagazinClient({ magazin: m }: { magazin: Magazin }) {
                 const discount = extractDiscount(promo.nume) || extractDiscount(promo.descriere || "");
                 const isRevealed = revealed.has(idx);
                 const isCopiat = copiat === idx;
+                const eticheta = etichetaExpirare(promo.zile_ramase);
 
                 return (
                   <div key={idx} className="bg-[#14181c] rounded-xl border border-[#2a2f36] shadow-sm p-5">
@@ -188,14 +181,11 @@ export default function MagazinClient({ magazin: m }: { magazin: Magazin }) {
                               Cod Reducere
                             </span>
                           )}
-                          {promo.zile_ramase <= 3 && (
-                            <span className="text-xs font-bold text-red-500 bg-red-50 px-2 py-0.5 rounded-full">
-                              Expiră în {promo.zile_ramase}z
-                            </span>
-                          )}
-                          {promo.zile_ramase > 3 && (
-                            <span className="text-xs text-gray-400">
-                              {promo.zile_ramase} zile rămase
+                          {eticheta && (
+                            <span className={eticheta.ton === "urgent"
+                              ? "text-xs font-bold text-red-500 bg-red-50 px-2 py-0.5 rounded-full"
+                              : "text-xs text-gray-400"}>
+                              {eticheta.text}
                             </span>
                           )}
                         </div>

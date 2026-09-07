@@ -167,8 +167,9 @@ def main():
             "cod_cupon": False,
             "zile_ramase": 0,
             "promotii": [],
-            "folosit_de": 0,
-            "procent_succes": 80,
+            # 07.09.2026: nu mai scriem "folosit_de"/"procent_succes". Erau constante
+            # inventate (85, respectiv 80) puse ca sa semene cu magazinele 2P, care aveau
+            # la randul lor valori random. Campurile nu mai exista in pipeline.
             "exclusiv": False,
             "platforma": "2performant",
             "produse_in_feed": prod_count,

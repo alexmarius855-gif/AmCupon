@@ -172,8 +172,9 @@ def make_entry(name, url, url_afiliat, categorie, categorie_slug):
         "cod_cupon": False,
         "zile_ramase": 0,
         "promotii": [],
-        "folosit_de": 0,
-        "procent_succes": 85,
+        # 07.09.2026: nu mai scriem "folosit_de"/"procent_succes". Erau constante
+        # inventate (85, respectiv 80) puse ca sa semene cu magazinele 2P, care aveau
+        # la randul lor valori random. Campurile nu mai exista in pipeline.
         "exclusiv": False,
         "platforma": "impact",
         "descriere": "",

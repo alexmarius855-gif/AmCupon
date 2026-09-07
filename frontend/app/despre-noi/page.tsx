@@ -31,7 +31,7 @@ const PASI = [
   {
     nr: "3",
     titlu: "Statistici reale",
-    desc: "Calculăm rata de succes și contorizăm de câte ori a fost folosit fiecare cod, direct din date.",
+    desc: "Calculăm un Deal Score din reducerea reală, prospețimea datelor și exclusivitate — niciun semnal inventat.",
   },
   {
     nr: "4",
@@ -41,7 +41,7 @@ const PASI = [
   {
     nr: "5",
     titlu: "Afișare transparentă",
-    desc: "Arătăm zilele rămase, rata de succes și marcăm ofertele care expiră curând — fără surprize.",
+    desc: "Arătăm zilele rămase și marcăm ofertele care expiră curând — fără surprize.",
   },
 ];
 

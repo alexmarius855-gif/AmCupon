@@ -14,7 +14,6 @@ interface Magazin {
   are_promotie: boolean;
   cod_cupon: boolean;
   promotii: { nume: string; descriere: string }[];
-  procent_succes: number;
   rank?: number;
   scor_final?: number;
 }

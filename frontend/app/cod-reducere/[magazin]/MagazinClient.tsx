@@ -13,6 +13,7 @@ import BannerAd2P from "../../components/BannerAd2P";
 import RedirectModal from "../../components/RedirectModal";
 import { useCopyCod } from "../../hooks/useCopyCod";
 import { calculateDealScore, DEAL_SCORE_VISIBLE_THRESHOLD } from "../../../lib/dealScore";
+import { etichetaExpirare } from "../../../lib/expirarePromo";
 import VotCupon, { hashCupon } from "../../components/VotCupon";
 
 // ── Deal Score badge cu count-up (0 -> scor) la mount ───────────────────────────
@@ -91,8 +92,6 @@ interface Magazin {
   cod_cupon: boolean;
   zile_ramase: number;
   promotii: Promotie[];
-  folosit_de: number;
-  procent_succes: number;
   exclusiv: boolean;
   canal_recomandat?: string;
   prioritate?: string;
@@ -503,6 +502,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                     const discount = extractDiscount(promo.nume) || extractDiscount(promo.descriere || "");
                     const isRevealed = revealed.has(idx);
                     const isCopiat   = copiat === idx;
+                    const eticheta   = etichetaExpirare(promo.zile_ramase);
                     return (
                       <div key={idx} className="bg-[#14181c] rounded-xl border border-[#1f2329] hover:shadow-lg hover:shadow-black/40 transition-all hover:border-[#2a2f36] p-5">
                         <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
@@ -518,11 +518,10 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                                 </span>
                               )}
                               {promo.zile_ramase <= 1 && promo.zile_ramase >= 0 && <CountdownTimer zileRamase={promo.zile_ramase}/>}
-                              {promo.zile_ramase > 1 && promo.zile_ramase <= 3 && (
-                                <span className="text-xs font-bold text-[#ddf93c] bg-[#14181c]/50 px-2 py-0.5 rounded-full">Expira in {promo.zile_ramase} zile</span>
-                              )}
-                              {promo.zile_ramase > 3 && (
-                                <span className="text-xs text-[#9399a0]">{promo.zile_ramase} zile ramase</span>
+                              {promo.zile_ramase > 1 && eticheta && (
+                                <span className={eticheta.ton === "urgent"
+                                  ? "text-xs font-bold text-[#ddf93c] bg-[#14181c]/50 px-2 py-0.5 rounded-full"
+                                  : "text-xs text-[#9399a0]"}>{eticheta.text}</span>
                               )}
                             </div>
                             <h3 className="font-bold text-[#ffffff] text-base mb-1">{promo.nume}</h3>
@@ -639,27 +638,21 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
               </div>
             )}
 
-            {/* FAQ compact in tab coduri */}
-            <section className="mt-10">
-              <h2 className="text-lg font-black text-[#ffffff] mb-4">Intrebari frecvente</h2>
-              <div className="space-y-2">
-                {[
-                  { q: `Cum folosesc un cod de reducere ${nume}?`, a: `Copiaza codul de pe aceasta pagina, adauga produsele in cos pe ${m.url}, iar la checkout introdu codul in campul "Cod promotional" si apasa Aplica. Reducerea se scade automat.` },
-                  { q: `Codurile ${nume} sunt verificate?`, a: `Da. Actualizate zilnic din platforma 2Performant. Fiecare cod afiseaza rata de succes si data de expirare.` },
-                  { q: `Ce fac daca codul nu functioneaza?`, a: `Verifica daca nu a expirat si daca indeplinesti conditiile (cos minim, produse eligibile). Incearca un alt cod activ de pe pagina.` },
-                ].map((item, i) => (
-                  <details key={i} className="bg-[#14181c] border border-[#1f2329] rounded-xl group">
-                    <summary className="px-5 py-4 font-semibold text-[#ffffff] text-sm cursor-pointer list-none flex items-center justify-between gap-4 hover:text-[#ddf93c] transition-colors">
-                      {item.q}
-                      <svg className="w-4 h-4 shrink-0 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7"/>
-                      </svg>
-                    </summary>
-                    <p className="px-5 pb-4 text-[#c9ced5] text-sm leading-relaxed">{item.a}</p>
-                  </details>
-                ))}
-              </div>
-            </section>
+            {/*
+              AL DOILEA FAQ, ELIMINAT 07.09.2026.
+              Pagina avea DOUA sectiuni „Intrebari frecvente" — verificat pe HTML-ul live:
+              titlul aparea de 2 ori, iar intrebarea „e verificat?" primea doua raspunsuri
+              DIFERITE. Cel de aici afirma doua neadevaruri, pe toate paginile de magazin:
+                1. „Actualizate zilnic din platforma 2Performant" — fals pentru 644 din 1.148
+                   de magazine (584 Impact + 57 Awin + 3 directe), care nu vin de la 2P.
+                2. „Fiecare cod afiseaza rata de succes" — rata de succes a fost ELIMINATA
+                   din UI pe 03.07.2026 fiindca era fabricata (`random.Random(hash(...))`).
+                   FAQ-ul promitea deci ceva ce pagina nu are si nu trebuie sa aiba.
+              Sursa unica ramane `intrebari` din `page.tsx` — corecta, generata din datele
+              magazinului, si din ea se deriva SI schema `FAQPage` (vezi nota de acolo,
+              16.08.2026). Doua FAQ-uri pe aceeasi pagina nu se puteau mentine sincron:
+              exact tiparul #3 din docs/LECTII-TEHNICE.md.
+            */}
           </motion.div>
 
         {/* ─── TAB: OFERTE ──────────────────────────────────────────────────── */}
@@ -680,6 +673,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                     // Daca promotia a expirat (zile_ramase < 0) folosim quicklink magazin
                     const link     = (promo.zile_ramase >= 0 && promo.landing_page) ? promo.landing_page : (m.url_afiliat || m.url);
                     const discount = extractDiscount(promo.nume) || extractDiscount(promo.descriere || "");
+                    const eticheta = etichetaExpirare(promo.zile_ramase);
                     return (
                       <div key={idx} className="bg-[#14181c] rounded-xl border border-[#1f2329] hover:shadow-lg hover:shadow-black/40 transition-all hover:border-[#2a2f36] p-5">
                         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
@@ -695,11 +689,10 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                                 </span>
                               )}
                               {promo.zile_ramase <= 1 && promo.zile_ramase >= 0 && <CountdownTimer zileRamase={promo.zile_ramase}/>}
-                              {promo.zile_ramase > 1 && promo.zile_ramase <= 3 && (
-                                <span className="text-xs font-bold text-[#ddf93c] bg-[#14181c]/50 px-2 py-0.5 rounded-full">Expira in {promo.zile_ramase} zile</span>
-                              )}
-                              {promo.zile_ramase > 3 && (
-                                <span className="text-xs text-[#9399a0]">{promo.zile_ramase} zile ramase</span>
+                              {promo.zile_ramase > 1 && eticheta && (
+                                <span className={eticheta.ton === "urgent"
+                                  ? "text-xs font-bold text-[#ddf93c] bg-[#14181c]/50 px-2 py-0.5 rounded-full"
+                                  : "text-xs text-[#9399a0]"}>{eticheta.text}</span>
                               )}
                             </div>
                             <h3 className="font-bold text-[#ffffff] text-base mb-1">{promo.nume}</h3>
