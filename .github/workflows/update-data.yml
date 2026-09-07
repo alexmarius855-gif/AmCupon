@@ -106,6 +106,31 @@ jobs:
             echo "IMPACT_ACCOUNT_SID nu e setat — skip discovery"
           fi
 
+      # ── 4d1. Impact.com — OFERTE REALE (cupoane) ───────────────────────────
+      # 07.09.2026. Scriptul exista din august dar NU era conectat: autorul lui nu
+      # putuse verifica schema fara credentiale, iar endpointul pe care miza, /Deals,
+      # NU EXISTA pe contul nostru (404 "No handler found"). Masurat live in ziua
+      # conectarii: ofertele Impact stau in /Ads?Type=COUPON (814 intrari), unde
+      # fiecare reclama poarta campurile ofertei (DealName / DealEndDate /
+      # DealDefaultPromoCode / DiscountPercent).
+      # Prima rulare reala: 313 promotii valide pe 63 de campanii, din care 84 cu cod
+      # REAL. Efect pe site: promotii 57 -> 92, coduri 10 -> 34.
+      # Ruleaza INAINTE de merge_platforms.py — scrie in data/output.json si
+      # data/extra_merchants.json, de unde merge-ul propaga in frontend/public/.
+      - name: Oferte reale Impact.com (cupoane)
+        working-directory: scripts
+        continue-on-error: true
+        env:
+          IMPACT_ACCOUNT_SID: ${{ secrets.IMPACT_ACCOUNT_SID }}
+          IMPACT_AUTH_TOKEN:  ${{ secrets.IMPACT_AUTH_TOKEN }}
+        run: |
+          if [ -n "$IMPACT_ACCOUNT_SID" ]; then
+            echo "Ruleaza fetch_impact_deals..."
+            python fetch_impact_deals.py
+          else
+            echo "IMPACT_ACCOUNT_SID nu e setat — skip oferte Impact"
+          fi
+
       # ── 4d2. Awin — fetch programe via API oficial (fara CSV manual) ────────
       - name: Fetch programe Awin (API)
         working-directory: scripts

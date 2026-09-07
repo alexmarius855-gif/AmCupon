@@ -40,6 +40,7 @@ Rulare:
 """
 
 import argparse
+import html
 import json
 import os
 import re
@@ -67,19 +68,25 @@ AUTH = None
 NOW  = datetime.now(timezone.utc)
 
 # Denumiri plauzibile de campuri — nimic nu e presupus sigur, se incearca pe rand (vezi _first).
-DEAL_ID_KEYS    = ("Id", "DealId", "Deal_Id", "id")
-DEAL_NAME_KEYS  = ("Name", "DealName", "Title", "PromotionName", "name")
-DEAL_DESC_KEYS  = ("Description", "DealDescription", "ShortDescription", "Summary", "Details")
-DEAL_URL_KEYS   = ("LandingPageUrl", "LandingPage", "TrackingLink", "DealUrl", "Url", "Link")
+# ORDINEA CONTEAZA (07.09.2026, dupa prima rulare reala pe contul lui Alex):
+# sursa nu mai e /Deals, ci /Ads?Type=COUPON, iar acolo campurile `Deal*` descriu OFERTA,
+# in timp ce `Name`/`Description`/`EndDate` descriu RECLAMA care o promoveaza. Sunt lucruri
+# diferite: `Name` e adesea "Banner 300x250", iar `EndDate` e cat timp mai e afisat bannerul.
+# Deci `Deal*` se incearca PRIMUL, cu campul reclamei doar ca rezerva.
+DEAL_ID_KEYS    = ("DealId", "Id", "Deal_Id", "id")
+DEAL_NAME_KEYS  = ("DealName", "Name", "Title", "PromotionName", "name")
+DEAL_DESC_KEYS  = ("DealDescription", "Description", "ShortDescription", "Summary", "Details")
+DEAL_URL_KEYS   = ("LandingPageUrl", "TrackingLink", "LandingPage", "DealUrl", "Url", "Link")
 CAMPAIGN_KEYS   = ("CampaignId", "Campaign", "AdvertiserId", "ProgramId", "CampaignID")
-START_KEYS      = ("StartDate", "StartDateTime", "BeginDate", "DateStart", "EffectiveDate")
-END_KEYS        = ("EndDate", "EndDateTime", "ExpirationDate", "ExpiryDate", "DateEnd",
-                   "StopDate", "ExpiresOn")
-CODE_KEYS       = ("Code", "PromoCode", "CouponCode", "PromoCodeText", "Coupon", "DiscountCode")
+START_KEYS      = ("DealStartDate", "StartDate", "StartDateTime", "BeginDate", "DateStart", "EffectiveDate")
+END_KEYS        = ("DealEndDate", "EndDate", "EndDateTime", "ExpirationDate", "ExpiryDate",
+                   "DateEnd", "StopDate", "ExpiresOn")
+CODE_KEYS       = ("DealDefaultPromoCode", "Code", "PromoCode", "CouponCode", "PromoCodeText",
+                   "Coupon", "DiscountCode")
 PROMO_DEAL_KEYS = ("DealId", "Deal", "DealID")
 
 # Cheile plauzibile sub care API-ul returneaza lista propriu-zisa in payload.
-DEALS_LIST_KEYS  = ("Deals", "deals", "Records", "Items", "Results")
+DEALS_LIST_KEYS  = ("Ads", "Deals", "deals", "Records", "Items", "Results")
 CODES_LIST_KEYS  = ("PromoCodes", "promoCodes", "promocodes", "Records", "Items", "Results")
 
 
@@ -164,14 +171,16 @@ def api_get(path, params=None):
     return r.json()
 
 
-def fetch_paginat(path, list_keys, eticheta, max_pagini=40):
+def fetch_paginat(path, list_keys, eticheta, max_pagini=40, extra_params=None):
     """Fetch paginat (Impact: Page/PageSize, metadate @numpages/@total).
     Returneaza (elemente, primul_payload_brut) — payload-ul brut e util la debug."""
     elemente = []
     primul_payload = None
     page = 1
     while page <= max_pagini:
-        payload = api_get(path, {"PageSize": 100, "Page": page})
+        # `extra_params` = filtrare server-side (ex. Type=COUPON pe /Ads). Fara ea am
+        # descarca 31.554 de reclame ca sa gasim 814 cupoane.
+        payload = api_get(path, {"PageSize": 100, "Page": page, **(extra_params or {})})
         if primul_payload is None:
             primul_payload = payload
         batch = _extract_list(payload, *list_keys)
@@ -221,6 +230,33 @@ def _print_raw(eticheta: str, elemente: list, payload):
 
 # ─── Parsare deal-uri + coduri promo ──────────────────────────────────────────
 
+def cod_valid(brut) -> str:
+    """Returneaza codul curatat, sau "" daca valoarea NU e un cod de reducere.
+
+    07.09.2026 — masurat pe cele 814 cupoane reale ale contului: campul
+    `DealDefaultPromoCode` NU contine mereu un cod. La geetahair venea "20% Off" si
+    chiar "Cod"; la vilagale venea "AVOS&amp;NET" (entitate HTML neescapata, care
+    afisata ar fi aratat literalmente asa pe pagina).
+
+    Un cod pe care userul il copiaza si il lipeste la checkout nu contine spatii si nu
+    e o propozitie. Daca nu putem spune cu certitudine ca e cod, intoarcem "" —
+    oferta ramane valida, doar fara cod, exact ca regula generala a scriptului:
+    mai bine lipsa decat fals (vezi si docstring-ul de sus).
+    """
+    if not brut:
+        return ""
+    cod = html.unescape(str(brut)).strip()
+    if not cod or " " in cod:            # "20% Off", "Free Shipping" -> nu sunt coduri
+        return ""
+    if len(cod) < 3 or len(cod) > 30:    # "Cod" e prea generic; >30 e alt tip de date
+        return ""
+    if not re.search(r"[A-Za-z0-9]", cod):
+        return ""
+    if cod.lower() in {"cod", "code", "promo", "coupon", "cupon", "none", "n/a", "null"}:
+        return ""
+    return cod
+
+
 def index_coduri(promocodes: list) -> tuple[dict, dict]:
     """Indexeaza codurile promo reale pe DealId si pe CampaignId.
     Codurile fara text de cod real sunt ignorate (nu punem placeholder)."""
@@ -228,8 +264,7 @@ def index_coduri(promocodes: list) -> tuple[dict, dict]:
     for pc in promocodes:
         if not isinstance(pc, dict):
             continue
-        cod = _first(pc, *CODE_KEYS)
-        cod = str(cod).strip() if cod else ""
+        cod = cod_valid(_first(pc, *CODE_KEYS))
         if not cod:
             continue
         end_dt = _parse_data(_first(pc, *END_KEYS))
@@ -269,7 +304,12 @@ def construieste_promotii(deals: list, pe_deal: dict, pe_campanie: dict) -> tupl
             continue
 
         deal_id = _norm_id(_first(d, *DEAL_ID_KEYS))
+        # Codul poate veni din DOUA locuri. Pe /Ads?Type=COUPON el e chiar pe obiect
+        # (`DealDefaultPromoCode`) — asta e sursa primara si cea mai de incredere,
+        # fiindca apartine exact ofertei. Indexul din /PromoCodes ramane doar rezerva
+        # (are 5 intrari pe contul asta, deci acopera aproape nimic singur).
         cod_rec = pe_deal.get(deal_id) or pe_campanie.get(camp_id) or {}
+        cod_direct = cod_valid(_first(d, *CODE_KEYS))
 
         # ── zile_ramase DOAR din camp real de expirare (deal, altfel codul promo atasat) ──
         end_dt = _parse_data(_first(d, *END_KEYS)) or cod_rec.get("expira")
@@ -297,7 +337,7 @@ def construieste_promotii(deals: list, pe_deal: dict, pe_campanie: dict) -> tupl
         per_campanie.setdefault(camp_id, []).append({
             "nume":         nume[:200],
             "descriere":    descriere,
-            "cod_cupon":    cod_rec.get("cod", ""),   # "" daca nu exista cod REAL
+            "cod_cupon":    cod_direct or cod_rec.get("cod", ""),  # "" daca nu exista cod REAL
             "landing_page": url_deal,                 # completat cu url_afiliat la atasare
             "zile_ramase":  max(0, zile_ramase),
             "expira":       end_dt.strftime("%Y-%m-%d"),
@@ -442,20 +482,29 @@ def main():
     print(f"  {len(campaigns)} campanii active gasite")
     campaign_index = impact_api.build_campaign_index(campaigns)
 
-    print("\nFetch oferte (Deals) + coduri promo (PromoCodes)...")
+    print("\nFetch oferte (/Ads?Type=COUPON) + coduri promo (PromoCodes)...")
     # Cele 2 endpoint-uri sunt independente — un 403/404 pe unul (ex. Deals nu e
     # inclus in tier-ul contului) nu are voie sa opreasca testarea celuilalt.
     deals, deals_payload = [], None
     try:
+        # 07.09.2026 — MASURAT pe contul real, nu presupus:
+        #   /Deals -> 404 "No handler found";  /Promos -> 404;  /Offers -> 404
+        #   /PromoCodes -> 200 dar total=5 si FARA camp de expirare (inutilizabil singur)
+        #   /Ads -> 200, total=31.554, si FIECARE Ad poarta campurile ofertei:
+        #     DealName / DealDescription / DealStartDate / DealEndDate / DealState /
+        #     DealDefaultPromoCode / DiscountPercent / LandingPageUrl
+        #   /Ads?Type=COUPON -> total=814 (filtrare server-side, confirmata)
+        # Ofertele Impact exista, dar nu sub numele "Deals". Aici era blocajul real.
         deals, deals_payload = fetch_paginat(
-            f"/Mediapartners/{ACCOUNT_SID}/Deals", DEALS_LIST_KEYS, "deal-uri")
+            f"/Mediapartners/{ACCOUNT_SID}/Ads", DEALS_LIST_KEYS, "cupoane",
+            extra_params={"Type": "COUPON"})
     except (requests.RequestException, ValueError) as e:
         resp = getattr(e, "response", None)
         if resp is not None:
-            print(f"EROARE HTTP la /Deals: {e}")
+            print(f"EROARE HTTP la /Ads: {e}")
             print(f"  Raspuns: {resp.text[:300]}")
         else:
-            print(f"EROARE retea / raspuns neparsabil la /Deals: {e}")
+            print(f"EROARE retea / raspuns neparsabil la /Ads: {e}")
 
     promocodes, codes_payload = [], None
     try:

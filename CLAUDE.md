@@ -12,6 +12,44 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 07.09.2026, partea a 4-a (OFERTE IMPACT CONECTATE — inventarul creste — NEPUSHED):**
+- **STARE NOUA**: **92 magazine cu promotie** (era 57) · **34 cu cod real** (era 10).
+  Prima crestere de inventar din 21.08, si prima care vine dintr-o sursa AUTOMATA,
+  nu dintr-un import CSV manual care se erodeaza.
+- **De ce statea blocat**: `fetch_impact_deals.py` exista din august, dar nu era in workflow.
+  Nota autorului: „se integreaza doar dupa ce Alex confirma la prima rulare ca schema se
+  potriveste". Cu credentialele primite azi am rulat `--dry-run` si am aflat ca **premisa era
+  gresita, nu schema**: endpointul `/Deals` **NU EXISTA** pe contul nostru — `404 "No handler
+  found"`. La fel `/Promos`, `/Offers`. `/PromoCodes` merge, dar are **total=5** si **niciun
+  camp de expirare**, deci inutilizabil singur.
+- **Unde erau de fapt ofertele**: in **`/Ads`** (total 31.554). Fiecare reclama poarta campurile
+  ofertei: `DealName`, `DealDescription`, `DealStartDate`, `DealEndDate`, `DealState`,
+  `DealDefaultPromoCode`, `DiscountPercent`, `LandingPageUrl`. Si se poate filtra server-side:
+  **`/Ads?Type=COUPON` -> total=814**. Aceeasi lectie ca la `sonda_2p_catalog.py` (22.08):
+  **intai verifici ce date exista, apoi scrii codul** — aici trei luni de script bun au stat
+  degeaba fiindca tintea un endpoint inexistent.
+- **Modificari in script**: sursa `/Deals` -> `/Ads?Type=COUPON`; `fetch_paginat` accepta acum
+  `extra_params` (filtrare server-side); cheile `Deal*` se incearca **inaintea** celor ale
+  reclamei (`Name` la un Ad e adesea „Default tracking link", `EndDate` e cat mai ruleaza
+  bannerul — nu expirarea ofertei); codul se ia direct din `DealDefaultPromoCode`, cu indexul
+  `/PromoCodes` doar ca rezerva.
+- **`cod_valid()` — helper nou**: masurat pe cele 814 cupoane, `DealDefaultPromoCode` **nu e mereu
+  un cod**. Venea „20% Off", „Cod", si `AVOS&amp;NET` (entitate HTML neescapata, care s-ar fi
+  afisat literal pe pagina). Filtru: fara spatii, 3-30 caractere, nu cuvant generic, cu
+  `html.unescape`. Ce nu trece = oferta ramane, dar fara cod. Mai bine lipsa decat fals.
+- **Rezultat masurat**: 814 cupoane primite -> **313 promotii valide pe 63 de campanii**, din care
+  **84 cu cod real**. Sarite corect: **406 fara data reala de expirare** (regula: fara data, nu
+  inventam) si **95 expirate**. Zero promotii cu nume-artefact — verificat pe numele generate.
+- **Validare a fix-ului de countdown din aceeasi zi**: 135 din promotiile noi au **peste 99 de
+  zile** ramase (una are 4924). Fara plafonul introdus dimineata, importul asta ar fi pus pe site
+  zeci de „4924 zile ramase". Cele doua lucrari s-au prins una pe alta.
+- **CONECTAT in `update-data.yml`** ca pasul 4d1, inainte de `merge_platforms.py` (scrie in
+  `data/`, de unde merge-ul propaga in `frontend/public/`). YAML validat, 46 de pasi.
+- **Verificat**: `npm run build` exit 0, 1.148 pagini generate, **0 pagini cu countdown >= 100**,
+  51 de pagini afiseaza „Ofertă activă".
+- **Ce NU rezolva asta**: cele 584 de magazine Impact nu primesc toate oferte — doar 63 de
+  campanii au cupoane. Restul raman pagini fara promotie. E o crestere reala, nu o rezolvare.
+
 **UPDATE 07.09.2026, partea a 3-a (CURATARE LA SURSA a fabricatiei — NEPUSHED):**
 - Dupa ce partea a 2-a a curatat AFISAREA, am cautat cine mai **consuma** campurile. Erau mai multe
   decat in UI, si tocmai in generatoarele de continut:
