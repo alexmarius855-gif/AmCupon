@@ -1,6 +1,6 @@
 {
-  "updated": "2026-09-07T10:59:55Z",
-  "count": 9741,
+  "updated": "2026-09-07T20:23:11Z",
+  "count": 9740,
   "products": [
     {
       "id": "promo_curteaveche.ro_0",
@@ -539,7 +539,7 @@
       "title": "MedimFarm - 18% reducere vara cu codul SUMMER18 — Cod: SUMMER18",
       "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.medimfarm.ro",
       "url_original": "https://www.medimfarm.ro",
-      "image": "",
+      "image": "https://www.google.com/s2/favicons?domain=medimfarm.ro&sz=128",
       "price": 0.0,
       "old_price": null,
       "discount_pct": 18,
@@ -703,7 +703,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 1210
+      "zile_ramase": 1209
     },
     {
       "id": "promo_vidaxl.bg_3",
@@ -722,7 +722,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 1210
+      "zile_ramase": 1209
     },
     {
       "id": "promo_112coffee.com_0",
@@ -950,7 +950,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 1211
+      "zile_ramase": 1210
     },
     {
       "id": "promo_sneakerit.ro_0",
@@ -1007,7 +1007,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 846
+      "zile_ramase": 845
     },
     {
       "id": "promo_fara-daunatori.ro_0",
@@ -1026,7 +1026,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 174
+      "zile_ramase": 173
     },
     {
       "id": "promo_fara-daunatori.ro_1",
@@ -1045,7 +1045,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 174
+      "zile_ramase": 173
     },
     {
       "id": "promo_manukashop.ro_0",
@@ -1521,25 +1521,6 @@
       "is_promo": true,
       "cod_cupon": "",
       "zile_ramase": 1
-    },
-    {
-      "id": "promo_gsmnet.ro_1",
-      "title": "Back to School",
-      "url": "https://www.gsmnet.ro/campaigns/374/index.html",
-      "url_original": "https://www.gsmnet.ro/campaigns/374/index.html",
-      "image": "https://www.google.com/s2/favicons?domain=gsmnet.ro&sz=128",
-      "price": 0.0,
-      "old_price": null,
-      "discount_pct": 0,
-      "category": "Electronice & IT",
-      "cat_slug": "electronice",
-      "brand": "Gsmnet",
-      "merchant": "Gsmnet",
-      "merchant_slug": "gsmnet.ro",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "",
-      "zile_ramase": 0
     },
     {
       "title": "Property and Dispossession - Allan Greer",
