@@ -81,15 +81,24 @@ def get_best_promo(m: dict) -> dict:
 
 
 def format_discount(m: dict, max_len: int = 70) -> str:
-    import re
-    promo = get_best_promo(m)
-    if promo.get("nume"):
-        return promo["nume"][:max_len]
-    c = m.get("comision", "")
-    nums = [float(x) for x in re.findall(r"[\d.]+", c)]
-    if nums:
+    """Textul ofertei, DOAR din promotia reala a magazinului.
+
+    07.09.2026 — aici era, ca fallback cand magazinul n-avea promotie:
+        c = m.get("comision", ""); ...
         return f"Cashback pana la {max(nums):.0f}%"
-    return "Oferta speciala"
+    Adica lua COMISIONUL NOSTRU si il publica pe Facebook drept "cashback".
+    Cine citea "Cashback pana la 40%" intelegea ca primeste el 40% inapoi.
+    Nu primeste nimic — banii aia sunt comisionul nostru de afiliat.
+
+    A treia reaparitie a aceleiasi greseli (03.07 pe site, 08.08 in newsletter,
+    07.09 aici + in generate_comparisons.py). Vezi docs/LECTII-TEHNICE.md #10:
+    comisionul nu se publica NICIODATA ca beneficiu al cumparatorului.
+
+    Fara promotie reala nu inventam una: intoarcem "" si apelantul sare magazinul.
+    """
+    promo = get_best_promo(m)
+    nume = (promo.get("nume") or "").strip()
+    return nume[:max_len] if nume else ""
 
 
 def pick_top(magazine: list[dict], n: int = 5, categorie: str = None) -> list[dict]:
@@ -116,6 +125,65 @@ def pick_top(magazine: list[dict], n: int = 5, categorie: str = None) -> list[di
 
 # ── Generatoare de posturi tematice ─────────────────────────────────────────
 
+
+def _zile_promo(m: dict) -> int:
+    p = get_best_promo(m)
+    z = p.get("zile_ramase")
+    return z if isinstance(z, int) else 999
+
+
+def post_focus(m: dict, data_str: str) -> str:
+    """UN singur magazin, nu o lista de 5.
+
+    De ce exista formatul asta (07.09.2026), pe scurt:
+
+    1. Facebook taie textul dupa ~3 randuri, la „Vezi mai mult". Intr-o lista de 5
+       magazine, primul rand vizibil e antetul („TOP OFERTE MARTI — 07.09"), care nu
+       spune nimic. Aici primul rand e chiar oferta.
+    2. Linkul duce DIRECT la pagina magazinului, nu la /oferte-azi. Daca postarea
+       promite un cod anume, omul trebuie sa-l gaseasca acolo unde ajunge — altfel
+       reclama zice un lucru si pagina altul.
+    3. Nu inlocuieste lista, ci alterneaza cu ea: doua formate care ruleaza in
+       paralel bat un sablon repetat la infinit.
+
+    Nu afirma nimic ce nu e in date: numele ofertei si zilele ramase vin din
+    `promotii`, codul doar daca exista cu adevarat.
+    """
+    promo = get_best_promo(m)
+    nume_oferta = (promo.get("nume") or "").strip()
+    if not nume_oferta:
+        return ""
+    brand = m["magazin"].split(".")[0].capitalize()
+    cod   = (promo.get("cod_cupon") or "").strip()
+    zile  = _zile_promo(m)
+
+    # Carligul se alege dupa ce e ADEVARAT despre oferta, nu la intamplare.
+    if zile == 0:
+        carlig = f"Ultima zi pentru oferta {brand}."
+    elif zile == 1:
+        carlig = f"Mai e o zi la oferta asta de la {brand}."
+    elif zile <= 3:
+        carlig = f"Mai sunt {zile} zile: {nume_oferta}"
+    elif cod:
+        carlig = f"Cod {brand} activ acum: {cod}"
+    else:
+        carlig = f"{brand} — {nume_oferta}"
+
+    linii = [carlig, ""]
+    if carlig != f"{brand} — {nume_oferta}" and nume_oferta not in carlig:
+        linii += [nume_oferta, ""]
+    if cod:
+        linii += [f"Cod: {cod}", ""]
+    linii += [
+        f"{SITE_URL}/cod-reducere/{m['magazin']}",
+        "",
+        f"#{brand.lower()} #codreducere #reduceri #romania #amcupon",
+    ]
+    return "\n".join(linii)
+
+
+
+
 def post_ocazie(top: list[dict], titlu: str, emoji: str, data_str: str) -> str:
     """Post special pentru o ocazie (1 Iunie, 8 Martie etc.)"""
     lines = [
@@ -129,6 +197,8 @@ def post_ocazie(top: list[dict], titlu: str, emoji: str, data_str: str) -> str:
         promo = get_best_promo(m)
         cod   = promo.get("cod_cupon", "")
         disc  = format_discount(m, 65)
+        if not disc:      # fara oferta reala nu inventam un text — sarim magazinul
+            continue
         line  = f"{emoji} {name} — {disc}"
         if cod:
             line += f"\n   Cod: {cod}"
@@ -161,6 +231,8 @@ def post_weekend(top: list[dict], data_str: str) -> str:
         promo = get_best_promo(m)
         cod   = promo.get("cod_cupon", "")
         disc  = format_discount(m, 65)
+        if not disc:      # fara oferta reala nu inventam un text — sarim magazinul
+            continue
         slug  = m.get("magazin", "")
         line  = f"{i}. {name} — {disc}"
         if cod:
@@ -197,6 +269,8 @@ def post_zi_saptamana(top: list[dict], zi: str, data_str: str) -> str:
         promo = get_best_promo(m)
         cod   = promo.get("cod_cupon", "")
         disc  = format_discount(m, 65)
+        if not disc:      # fara oferta reala nu inventam un text — sarim magazinul
+            continue
         line  = f"{i}. {name} — {disc}"
         if cod:
             line += f"\n   Cod: {cod}"
@@ -224,6 +298,8 @@ def post_nisa(nisa: str, top: list[dict], data_str: str) -> str:
         cod   = promo.get("cod_cupon", "")
         slug  = m.get("magazin", "")
         disc  = format_discount(m, 60)
+        if not disc:      # fara oferta reala nu inventam un text — sarim magazinul
+            continue
         line  = f"• {name}: {disc}"
         if cod:
             line += f" — cod: {cod}"
@@ -364,8 +440,28 @@ def main():
             posted += 1
 
     # ── 3. Post principal zilnic ──────────────────────────────────────────────
+    #
+    # 07.09.2026 — DOUA formate care alterneaza, in loc de unul singur repetat:
+    #   par   -> „focus": o singura oferta, cu link DIRECT la pagina magazinului
+    #   impar -> lista de 5, cu link la /oferte-azi
+    #
+    # De ce alternanta si nu inlocuire: un sablon unic repetat zilnic devine invizibil
+    # pentru cititor SI pentru algoritm, oricat de bun ar fi sablonul. Doua formate in
+    # rotatie inseamna productie continua de variante, nu o singura varianta „castigatoare"
+    # pastrata pana se uzeaza.
+    #
+    # Alternanta e pe ZIUA LUNII, nu random: rulam de mai multe ori pe zi, iar `random`
+    # ar putea da acelasi format de trei ori la rand. Ziua lunii e stabila si verificabila.
     top5 = pick_top(valide, n=5)
-    if zi_idx in (5, 6):  # sambata, duminica
+    zi_luna = datetime.now(timezone.utc).day
+    focus_msg = post_focus(top5[0], data_str) if top5 else ""
+
+    if focus_msg and zi_luna % 2 == 0:
+        msg  = focus_msg
+        # Linkul trebuie sa duca unde e codul promis in text, nu pe o pagina generala:
+        # daca postarea zice „Cod: X", omul trebuie sa gaseasca X acolo unde ajunge.
+        link = f"{SITE_URL}/cod-reducere/{top5[0]['magazin']}"
+    elif zi_idx in (5, 6):  # sambata, duminica
         msg  = post_weekend(top5, data_str)
         link = f"{SITE_URL}/oferte-azi"
     else:

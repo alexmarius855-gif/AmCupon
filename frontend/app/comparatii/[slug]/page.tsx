@@ -12,7 +12,7 @@ interface Punct {
 
 interface Stats {
   promotii_active: number;
-  cashback: string;
+  coduri?: string;
   logo?: string;
   url_afiliat: string;
 }
@@ -160,10 +160,23 @@ export default async function ComparatiePage(
                       {side.stats.promotii_active > 0 ? `${side.stats.promotii_active} oferte` : "Nicio oferta"}
                     </span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-[#c9ced5]">Cashback</span>
-                    <span className="text-[#c3dd2c] font-semibold">{side.stats.cashback}</span>
-                  </div>
+                  {/* 07.09: aici scria „Cashback: pana la X%", unde X era COMISIONUL nostru
+                      din `comision`. Pe surfshark-vs-hostinger arata live „pana la 60%" —
+                      cititorul intelegea ca primeste el 60% inapoi. Nu primeste nimic.
+                      Inlocuit cu un numar sustinut din date: cate coduri are magazinul.
+
+                      Randul se afiseaza DOAR daca exista cifra. La regenerare, 0 din cele
+                      20 de magazine din comparatii aveau coduri, deci neconditionat ar fi
+                      fost un rand „—" pe toate paginile: acelasi tipar ca sectiunea
+                      „Trending" de pe /top-reduceri, care filtra un camp mereu gol si nu
+                      s-a randat niciodata. Un rand fara informatie nu e neutru, ocupa
+                      spatiu si spune cititorului ca n-avem nimic. */}
+                  {side.stats.coduri && side.stats.coduri !== "—" && (
+                    <div className="flex justify-between">
+                      <span className="text-[#c9ced5]">Coduri active</span>
+                      <span className="text-[#c3dd2c] font-semibold">{side.stats.coduri}</span>
+                    </div>
+                  )}
                 </div>
                 {side.promo.length > 0 && (
                   <div className="mb-4 space-y-2">

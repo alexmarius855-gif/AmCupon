@@ -4,7 +4,7 @@ Output: frontend/public/comparisons.json
 
 Fiecare comparatie = o pagina /comparatii/[slug] cu:
 - Titlu + meta SEO
-- Tabel side-by-side (promotii, cashback, categorii)
+- Tabel side-by-side (promotii, coduri active, categorii)
 - Promotii active din fiecare magazin
 - Verdict editorial
 - FAQ schema
@@ -190,16 +190,26 @@ def _num_afisat(slug: str) -> str:
     return " ".join(w.capitalize() for w in slug.split(".")[0].replace("-", " ").split())
 
 
-def _max_cashback(m: dict) -> str:
-    nums = []
-    comision = m.get("comision", "") or ""
-    import re
-    found = re.findall(r"[\d.]+", comision)
-    if found:
-        val = max(float(x) for x in found)
-        if val > 0:
-            return f"pana la {val:.0f}%"
-    return "vezi site"
+def _coduri_active(m: dict) -> str:
+    """Cate coduri REALE are magazinul acum. Numarat din date, nu estimat.
+
+    07.09.2026 — inlocuieste `_max_cashback()`, care lua `comision` (CE CASTIGAM NOI)
+    si il publica drept "Cashback: pana la X%". Pe `surfshark-vs-hostinger` scria
+    LIVE "pana la 40%" si "pana la 60%" — cifre reale, dar ale comisionului nostru.
+    Cititorul intelege ca primeste el 60% inapoi. Nu primeste nimic.
+
+    E a treia reaparitie a aceleiasi greseli (03.07 pe site, 08.08 in newsletter,
+    acum in comparatii + post_facebook). Regula, scrisa deja in
+    docs/LECTII-TEHNICE.md sectiunea 10: comisionul nostru NU se publica —
+    nu e o masura a ofertei pentru cumparator.
+
+    Inlocuitorul e un numar pe care il putem sustine: cate coduri are magazinul.
+    """
+    coduri = [p for p in (m.get("promotii") or [])
+              if str(p.get("cod_cupon") or "").strip() and p.get("zile_ramase", -1) >= 0]
+    if not coduri:
+        return "—"
+    return f"{len(coduri)} cod" + ("uri" if len(coduri) > 1 else "")
 
 
 def build_comparison(pereche: dict, magazin_map: dict, luna: str, an: int) -> dict:
@@ -222,13 +232,13 @@ def build_comparison(pereche: dict, magazin_map: dict, luna: str, an: int) -> di
 
     stats1 = {
         "promotii_active": len(m1.get("promotii") or []),
-        "cashback": _max_cashback(m1),
+        "coduri": _coduri_active(m1),
         "logo": m1.get("logo_url"),
         "url_afiliat": m1.get("url_afiliat") or m1.get("url") or f"https://{m1_slug}",
     }
     stats2 = {
         "promotii_active": len(m2.get("promotii") or []),
-        "cashback": _max_cashback(m2),
+        "coduri": _coduri_active(m2),
         "logo": m2.get("logo_url"),
         "url_afiliat": m2.get("url_afiliat") or m2.get("url") or f"https://{m2_slug}",
     }

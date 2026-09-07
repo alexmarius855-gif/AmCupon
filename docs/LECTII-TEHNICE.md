@@ -234,6 +234,25 @@ Fabricația a fost eliminată de patru ori și a reapărut de fiecare dată în 
 - 10.08: 142 de produse cu poze stock prezentate ca fiind produsul, plus 14 pretenții de testare
 - 09.08: afirmația „am testat independent" reapăruse pe `/vpn`, `/hosting`, `/recomandari` după o
   rescriere ulterioară de pagină
+- **07.09, mai târziu în aceeași zi: comisionul publicat ca „Cashback", a treia oară.**
+  Regula „comisionul nostru NU se publică" e scrisă mai jos din 03.07 și repetată pe 08.08.
+  A reapărut totuși în **două locuri noi**, ambele publice:
+  - `generate_comparisons.py::_max_cashback()` → paginile `/comparatii/*`. Pe
+    `surfshark-vs-hostinger` scria **LIVE „Cashback: până la 40%" și „până la 60%"**. Cifrele
+    erau reale — dar erau *comisionul nostru*. Cititorul înțelege că primește el 60% înapoi.
+  - `post_facebook.py::format_discount()` → același lucru, publicat pe Facebook, ca text de
+    ofertă pentru orice magazin care n-avea promoție reală.
+
+  **De ce a revenit exact la fel:** ambele erau *fallback-uri*. Nimeni nu scrie intenționat
+  „afișează comisionul ca reducere"; scrie „dacă n-avem ofertă, pune ceva acolo" — și singura
+  cifră la îndemână în obiectul magazinului e `comision`. Regula, ca să reziste, trebuie pusă
+  nu la „ce afișăm", ci la **„ce facem când n-avem ce afișa": nimic.** Ambele funcții întorc
+  acum `""` / `"—"`, iar apelantul sare elementul.
+
+  **Regula de căutare, pentru data viitoare:** `grep` după `comision` în ORICE script care
+  produce text pentru public (postări, newsletter, comparații, meta description), nu doar în
+  componentele care afișează prețuri.
+
 - **07.09: curățarea din 03.07 nu prinsese trei locuri VII.** `procent_succes`
   (`random.Random(hash(m)).randint(72,96)`) și `folosit_de` (`randint(15,800)`) erau încă folosite:
   1. `/comparator` — afișa `procent_succes` sub eticheta **„Trust Score"**, cu bară verde/roșie și

@@ -12,6 +12,40 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 07.09.2026, partea a 5-a (COMISION publicat ca „Cashback" + FB si newsletter — NEPUSHED):**
+- **A TREIA reaparitie a aceleiasi fabricatii** (dupa 03.07 pe site si 08.08 in newsletter),
+  in doua locuri noi, ambele PUBLICE:
+  1. **`/comparatii/*` — LIVE**: `_max_cashback()` lua `comision` si scria „Cashback: pana la
+     X%". Pe `surfshark-vs-hostinger`: **„pana la 40%" si „pana la 60%"**. Cifre reale, dar ale
+     comisionului NOSTRU. Cititorul intelege ca primeste el 60% inapoi. Nu primeste nimic.
+  2. **`post_facebook.py`**: acelasi lucru, publicat pe Facebook ca text de oferta pentru orice
+     magazin fara promotie reala.
+- **De ce a revenit identic**: ambele erau FALLBACK-uri. Nimeni nu scrie „afiseaza comisionul ca
+  reducere"; scrie „daca n-avem oferta, pune ceva" — si singura cifra la indemana in obiectul
+  magazinului e `comision`. Reparat la nivelul potrivit: cand nu exista oferta reala, functiile
+  intorc `""` / `"—"` si apelantul SARE elementul. Vezi LECTII-TEHNICE #10.
+- Randul „Coduri active" din comparatii e **conditionat**: la regenerare, 0 din cele 20 de
+  magazine aveau coduri, deci neconditionat ar fi fost un rand „—" pe toate paginile — acelasi
+  tipar ca sectiunea „Trending". Un rand fara informatie nu e neutru.
+- **FACEBOOK — format nou `post_focus()`**, care ALTERNEAZA cu lista (pe ziua lunii, nu random —
+  rulam de mai multe ori pe zi si random ar repeta acelasi format):
+  - o SINGURA oferta, nu lista de 5: FB taie textul dupa ~3 randuri, iar in lista primul rand
+    vizibil era antetul („TOP OFERTE MARTI — 07.09"), care nu spune nimic;
+  - carligul se alege dupa ce e ADEVARAT despre oferta (ultima zi / mai sunt N zile / cod activ);
+  - **linkul duce DIRECT la `/cod-reducere/{magazin}`**, nu la `/oferte-azi`: daca postarea
+    promite „Cod: X", omul trebuie sa gaseasca X exact unde ajunge.
+  - Testat pe date reale: „Cod Orbitmobile activ acum: QUBER10" / „Best Seller 25% off!" / cod +
+    link direct.
+- **NEWSLETTER — rebrand complet la tema site-ului.** Folosea teal/slate (`#0f766e`, `#0d9488`,
+  `#5eead4`, `#0f172a`) — arata ca alt brand. Acum: suprafete `#14181c`, accente `#ddf93c`.
+  **Lime ramane accent, nu suprafata** — exceptie badge-ul si butonul, unde textul de pe el e
+  INCHIS (`#14181c`), fiindca lime are L=93% si text alb pe el e ilizibil (aceeasi regula
+  descoperita la headerul comparatorului). Structura pe `<table>` + `bgcolor` dublat pentru
+  Outlook a ramas neatinsa — era deja corect facuta pe 07.08.
+  Verificat vizual pe HTML-ul generat, nu doar in cod: 0 culori din paleta veche.
+- **Verificat**: `tsc` 0, `build` 0, cele 10 pagini `/comparatii/*` regenerate — **0 apar cu
+  „Cashback"**. `py_compile` OK pe scripturile atinse.
+
 **UPDATE 07.09.2026, partea a 4-a (OFERTE IMPACT CONECTATE — inventarul creste — NEPUSHED):**
 - **STARE NOUA**: **92 magazine cu promotie** (era 57) · **34 cu cod real** (era 10).
   Prima crestere de inventar din 21.08, si prima care vine dintr-o sursa AUTOMATA,

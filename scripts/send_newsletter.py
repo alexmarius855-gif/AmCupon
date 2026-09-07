@@ -179,11 +179,11 @@ def badge_onest(m: dict) -> tuple:
     """
     disc = extrage_reducere(m)
     if disc:
-        return (disc, "#0d9488", "#ffffff")
+        return (disc, "#ddf93c", "#14181c")
 
     promo = get_best_promo(m)
     if promo.get("cod_cupon"):
-        return ("COD", "#0f766e", "#ffffff")
+        return ("COD", "#14181c", "#ddf93c")
 
     # "Verificat azi" doar daca data chiar e de azi — altfel e un semnal fals
     if m.get("ultima_verificare") == _azi():
@@ -261,16 +261,16 @@ def make_html(top_n: list, data_str: str, is_test: bool = False, total_magazine:
             f'margin:0 auto 6px;border:0;outline:none;text-decoration:none;">'
             if logo else
             f'<div style="font-family:Arial,sans-serif;font-weight:bold;font-size:15px;'
-            f'color:#0f766e;margin-bottom:6px;">{name}</div>'
+            f'color:#3f6212;margin-bottom:6px;">{name}</div>'
         )
 
         # Cod de reducere — box cu contur punctat, usor de citit si de selectat
         cod_html = (
             f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" '
             f'style="margin:12px 0;"><tr><td align="center" '
-            f'style="padding:10px 14px;background:#f0fdfa;border:2px dashed #14b8a6;'
+            f'style="padding:10px 14px;background:#f7fee7;border:2px dashed #a3bd18;'
             f'border-radius:8px;font-family:Consolas,Menlo,monospace;font-size:17px;'
-            f'font-weight:bold;color:#0f766e;letter-spacing:2px;">{cod}</td></tr></table>'
+            f'font-weight:bold;color:#3f6212;letter-spacing:2px;">{cod}</td></tr></table>'
             if cod else ""
         )
 
@@ -299,16 +299,16 @@ def make_html(top_n: list, data_str: str, is_test: bool = False, total_magazine:
                         </td>
                         <td valign="top">
                           <div style="font-family:Arial,sans-serif;font-size:15px;font-weight:bold;
-                                      color:#0f172a;line-height:1.4;">{titlu_scurt}</div>
+                                      color:#14181c;line-height:1.4;">{titlu_scurt}</div>
                           <div style="font-family:Arial,sans-serif;font-size:12px;color:#64748b;
                                       margin-top:3px;">{name}{' &bull; ' + zile_html if zile_html else ''}</div>
                           {cod_html}
                           <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;">
                             <tr>
-                              <td align="center" bgcolor="#0d9488" style="border-radius:10px;">
+                              <td align="center" bgcolor="#ddf93c" style="border-radius:10px;">
                                 <a href="{link}" target="_blank"
                                    style="display:inline-block;padding:11px 22px;font-family:Arial,sans-serif;
-                                          font-size:14px;font-weight:bold;color:#ffffff;text-decoration:none;
+                                          font-size:14px;font-weight:bold;color:#14181c;text-decoration:none;
                                           border-radius:10px;">{cta_text} &rarr;</a>
                               </td>
                             </tr>
@@ -326,9 +326,9 @@ def make_html(top_n: list, data_str: str, is_test: bool = False, total_magazine:
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
                      style="margin:26px 0 12px;">
                 <tr>
-                  <td style="padding:11px 16px;background:#0f172a;border-radius:10px;">
+                  <td style="padding:11px 16px;background:#14181c;border-radius:10px;">
                     <span style="font-family:Arial,sans-serif;font-size:14px;font-weight:bold;
-                                 color:#5eead4;letter-spacing:0.4px;">{titlu}</span>
+                                 color:#ddf93c;letter-spacing:0.4px;">{titlu}</span>
                   </td>
                 </tr>
               </table>
@@ -370,7 +370,7 @@ def make_html(top_n: list, data_str: str, is_test: bool = False, total_magazine:
              style="width:100%;max-width:600px;">
 
         <tr>
-          <td bgcolor="#0f766e" style="background:#0f766e;border-radius:16px 16px 0 0;padding:30px 24px;text-align:center;">
+          <td bgcolor="#14181c" style="background:#14181c;border-radius:16px 16px 0 0;padding:30px 24px;text-align:center;">
             <a href="{SITE_URL}" target="_blank" style="text-decoration:none;">
               <span style="background:rgba(255,255,255,0.22);color:#ffffff;font-family:Arial,sans-serif;
                     font-weight:bold;font-size:14px;padding:3px 9px;border-radius:6px;">Am</span><span
@@ -400,7 +400,7 @@ def make_html(top_n: list, data_str: str, is_test: bool = False, total_magazine:
                 <td align="center" style="padding-top:20px;">
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0">
                     <tr>
-                      <td align="center" bgcolor="#0f766e" style="border-radius:12px;">
+                      <td align="center" bgcolor="#14181c" style="border-radius:12px;">
                         <a href="{SITE_URL}" target="_blank"
                            style="display:inline-block;padding:15px 38px;font-family:Arial,sans-serif;
                                   font-size:15px;font-weight:bold;color:#ffffff;text-decoration:none;
@@ -418,9 +418,9 @@ def make_html(top_n: list, data_str: str, is_test: bool = False, total_magazine:
         </tr>
 
         <tr>
-          <td bgcolor="#0f172a" style="background:#0f172a;border-radius:0 0 16px 16px;padding:22px 26px;text-align:center;">
+          <td bgcolor="#14181c" style="background:#14181c;border-radius:0 0 16px 16px;padding:22px 26px;text-align:center;">
             <div style="font-family:Arial,sans-serif;font-size:12px;color:#94a3b8;">
-              <a href="{SITE_URL}" target="_blank" style="color:#5eead4;text-decoration:none;font-weight:bold;">AmCupon.ro</a>
+              <a href="{SITE_URL}" target="_blank" style="color:#ddf93c;text-decoration:none;font-weight:bold;">AmCupon.ro</a>
               &bull; coduri de reducere verificate zilnic
             </div>
             <div style="font-family:Arial,sans-serif;font-size:11px;color:#64748b;margin-top:9px;line-height:1.6;">

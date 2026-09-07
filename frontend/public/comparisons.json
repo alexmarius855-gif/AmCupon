@@ -40,23 +40,18 @@
     "verdict_m2": "Alege Answear pentru o selectie mai larga de branduri sportive si casual, cu preturi mai constante si disponibilitate buna.",
     "stats1": {
       "promotii_active": 0,
-      "cashback": "vezi site",
+      "coduri": "—",
       "logo": null,
       "url_afiliat": "https://fashiondays.ro"
     },
     "stats2": {
-      "promotii_active": 1,
-      "cashback": "pana la 7%",
+      "promotii_active": 0,
+      "coduri": "—",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/2561/medium/2561.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fanswear.ro"
     },
     "promo1": [],
-    "promo2": [
-      {
-        "nume": "BACK TO SCHOOL",
-        "cod_cupon": "BTS"
-      }
-    ],
+    "promo2": [],
     "faq": [
       {
         "q": "Care este mai bun, Fashiondays sau Answear?",
@@ -68,7 +63,7 @@
       },
       {
         "q": "Are Answear coduri de reducere active?",
-        "a": "Da, Answear are 1 oferta activa pe AmCupon.ro in septembrie 2026. Verificam zilnic."
+        "a": "Momentan nu, Answear are 0 oferte active pe AmCupon.ro in septembrie 2026. Verificam zilnic."
       },
       {
         "q": "Unde gasesc cupoane pentru Fashiondays si Answear?",
@@ -119,13 +114,13 @@
     "verdict_m2": "Alege Shein daca esti orientat spre moda feminina, accesorii si cosmetice. Selectia de fashion este mai curata si mai usor de navigat.",
     "stats1": {
       "promotii_active": 1,
-      "cashback": "vezi site",
+      "coduri": "—",
       "logo": "https://www.google.com/s2/favicons?domain=temu.com&sz=128",
       "url_afiliat": "https://www.temu.com"
     },
     "stats2": {
       "promotii_active": 1,
-      "cashback": "vezi site",
+      "coduri": "—",
       "logo": "https://www.google.com/s2/favicons?domain=shein.com&sz=128",
       "url_afiliat": "https://www.shein.com"
     },
@@ -202,37 +197,19 @@
     "verdict_m1": "Alege Libris pentru transport gratuit la comenzi mai mici si reduceri zilnice mai frecvente. Ideal daca comanzi regulat si vrei cel mai mic pret per carte.",
     "verdict_m2": "Alege Carturesti pentru experienta completa cititor-librarie, acces la librarii fizice pentru ridicare si colectii editoriale curate.",
     "stats1": {
-      "promotii_active": 1,
-      "cashback": "pana la 8%",
+      "promotii_active": 0,
+      "coduri": "—",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9868/medium/9868.gif",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro"
     },
     "stats2": {
-      "promotii_active": 3,
-      "cashback": "pana la 9%",
+      "promotii_active": 0,
+      "coduri": "—",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11380/medium/11380.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2F"
     },
-    "promo1": [
-      {
-        "nume": "Pregătit de școală? Hai cu lista și ai totul gata până sună clopoțelul!",
-        "cod_cupon": ""
-      }
-    ],
-    "promo2": [
-      {
-        "nume": "2+1 Editura Nemira",
-        "cod_cupon": ""
-      },
-      {
-        "nume": "Back to School 2026",
-        "cod_cupon": ""
-      },
-      {
-        "nume": "Kilipir Merch Fandom",
-        "cod_cupon": ""
-      }
-    ],
+    "promo1": [],
+    "promo2": [],
     "faq": [
       {
         "q": "Care este mai bun, Libris sau Carturesti?",
@@ -240,11 +217,11 @@
       },
       {
         "q": "Are Libris coduri de reducere active?",
-        "a": "Da, Libris are 1 oferta activa pe AmCupon.ro in septembrie 2026. Verificam zilnic."
+        "a": "Momentan nu, Libris are 0 oferte active pe AmCupon.ro in septembrie 2026. Verificam zilnic."
       },
       {
         "q": "Are Carturesti coduri de reducere active?",
-        "a": "Da, Carturesti are 3 oferte active pe AmCupon.ro in septembrie 2026. Verificam zilnic."
+        "a": "Momentan nu, Carturesti are 0 oferte active pe AmCupon.ro in septembrie 2026. Verificam zilnic."
       },
       {
         "q": "Unde gasesc cupoane pentru Libris si Carturesti?",
@@ -295,13 +272,13 @@
     "verdict_m2": "Alege Elefant pentru carti, jocuri si produse educationale — selectia este mai curata si preturile la carti sunt adesea mai bune.",
     "stats1": {
       "promotii_active": 0,
-      "cashback": "vezi site",
+      "coduri": "—",
       "logo": null,
       "url_afiliat": "https://emag.ro"
     },
     "stats2": {
       "promotii_active": 0,
-      "cashback": "vezi site",
+      "coduri": "—",
       "logo": null,
       "url_afiliat": "https://elefant.ro"
     },
@@ -369,13 +346,13 @@
     "verdict_m2": "Alege Temu pentru accesorii, produse de uz casnic si articole la preturi foarte mici unde calitatea exacta conteaza mai putin. Planifica dinainte — livrarea dureaza.",
     "stats1": {
       "promotii_active": 0,
-      "cashback": "vezi site",
+      "coduri": "—",
       "logo": null,
       "url_afiliat": "https://emag.ro"
     },
     "stats2": {
       "promotii_active": 1,
-      "cashback": "vezi site",
+      "coduri": "—",
       "logo": "https://www.google.com/s2/favicons?domain=temu.com&sz=128",
       "url_afiliat": "https://www.temu.com"
     },
@@ -448,13 +425,13 @@
     "verdict_m2": "Alege Hostinger daca vrei sa lansezi un site, blog sau magazin online. Cel mai bun raport performanta/pret din hosting-ul romanesc.",
     "stats1": {
       "promotii_active": 0,
-      "cashback": "pana la 40%",
+      "coduri": "—",
       "logo": "https://www.google.com/s2/favicons?domain=surfshark.com&sz=128",
       "url_afiliat": "https://surfshark.sjv.io/c/7401119/535269/9043"
     },
     "stats2": {
       "promotii_active": 0,
-      "cashback": "pana la 60%",
+      "coduri": "—",
       "logo": "https://www.google.com/s2/favicons?domain=hostinger.ro&sz=128",
       "url_afiliat": "https://www.hostinger.ro/"
     },
@@ -522,13 +499,13 @@
     "verdict_m2": "Alege Farmec daca vrei produse cosmetice romanesti de calitate (Gerovital, Aslavital) cu ingrediente naturale si preturi accesibile.",
     "stats1": {
       "promotii_active": 0,
-      "cashback": "pana la 2%",
+      "coduri": "—",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/8800/medium/8800.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2F"
     },
     "stats2": {
       "promotii_active": 0,
-      "cashback": "vezi site",
+      "coduri": "—",
       "logo": "https://www.google.com/s2/favicons?domain=farmec.ro&sz=128",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmec.ro"
     },
@@ -595,31 +572,18 @@
     "verdict_m1": "Alege Noriel pentru cadouri copii, jucarii educative si jocuri de societate. Selectia este neinegalata in Romania.",
     "verdict_m2": "Alege Decathlon pentru echipament sportiv copii si adulti la preturi imbatabile. Ideal pentru biciclete, camping, fotbal, inot.",
     "stats1": {
-      "promotii_active": 4,
-      "cashback": "pana la 7%",
+      "promotii_active": 0,
+      "coduri": "—",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/7926/medium/7926.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnoriel.ro%2F"
     },
     "stats2": {
       "promotii_active": 0,
-      "cashback": "pana la 5%",
+      "coduri": "—",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11445/medium/11445.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.decathlon.ro"
     },
-    "promo1": [
-      {
-        "nume": "Concurs Lego Back to School | 10.08-08.09.2026",
-        "cod_cupon": ""
-      },
-      {
-        "nume": "Catalog Oferte Back to school 2026 | 06.08-30.09.2026",
-        "cod_cupon": ""
-      },
-      {
-        "nume": "Back to School | 30% REDUCERE la TOATE Ghiozdanele |06.08-30.09.2026",
-        "cod_cupon": ""
-      }
-    ],
+    "promo1": [],
     "promo2": [],
     "faq": [
       {
@@ -628,7 +592,7 @@
       },
       {
         "q": "Are Noriel coduri de reducere active?",
-        "a": "Da, Noriel are 4 oferte active pe AmCupon.ro in septembrie 2026. Verificam zilnic."
+        "a": "Momentan nu, Noriel are 0 oferte active pe AmCupon.ro in septembrie 2026. Verificam zilnic."
       },
       {
         "q": "Are Decathlon coduri de reducere active?",
@@ -683,13 +647,13 @@
     "verdict_m2": "Alege Shein daca vrei sa testezi tendinte rapid la preturi minime si esti dispus sa astepti livrarea. Perfecta pentru reinnoire frecventa garderoba.",
     "stats1": {
       "promotii_active": 0,
-      "cashback": "vezi site",
+      "coduri": "—",
       "logo": null,
       "url_afiliat": "https://fashiondays.ro"
     },
     "stats2": {
       "promotii_active": 1,
-      "cashback": "vezi site",
+      "coduri": "—",
       "logo": "https://www.google.com/s2/favicons?domain=shein.com&sz=128",
       "url_afiliat": "https://www.shein.com"
     },
@@ -761,23 +725,18 @@
     "verdict_m1": "Alege Libris pentru cel mai mare stoc de carti si transport gratuit la comenzi mai mici. Preturile la bestsellers sunt adesea mai bune.",
     "verdict_m2": "Alege Elefant daca vrei si alte produse (electronice, jocuri) intr-o singura comanda alaturi de carti.",
     "stats1": {
-      "promotii_active": 1,
-      "cashback": "pana la 8%",
+      "promotii_active": 0,
+      "coduri": "—",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9868/medium/9868.gif",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro"
     },
     "stats2": {
       "promotii_active": 0,
-      "cashback": "vezi site",
+      "coduri": "—",
       "logo": null,
       "url_afiliat": "https://elefant.ro"
     },
-    "promo1": [
-      {
-        "nume": "Pregătit de școală? Hai cu lista și ai totul gata până sună clopoțelul!",
-        "cod_cupon": ""
-      }
-    ],
+    "promo1": [],
     "promo2": [],
     "faq": [
       {
@@ -786,7 +745,7 @@
       },
       {
         "q": "Are Libris coduri de reducere active?",
-        "a": "Da, Libris are 1 oferta activa pe AmCupon.ro in septembrie 2026. Verificam zilnic."
+        "a": "Momentan nu, Libris are 0 oferte active pe AmCupon.ro in septembrie 2026. Verificam zilnic."
       },
       {
         "q": "Are Elefant coduri de reducere active?",
