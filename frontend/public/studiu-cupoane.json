@@ -1,6 +1,6 @@
 {
   "generat": "2026-09-07",
-  "total_magazine": 1147,
+  "total_magazine": 1148,
   "cu_promotie": 56,
   "cu_cod_real": 10,
   "doar_oferta": 46,
@@ -156,7 +156,7 @@
     {
       "slug": "beauty",
       "nume": "Beauty & îngrijire",
-      "magazine": 77,
+      "magazine": 78,
       "cu_promotie": 4,
       "reducere_mediana": null,
       "reducere_max": null,

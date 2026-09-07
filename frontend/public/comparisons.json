@@ -208,7 +208,7 @@
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro"
     },
     "stats2": {
-      "promotii_active": 3,
+      "promotii_active": 2,
       "cashback": "pana la 9%",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11380/medium/11380.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2F"
@@ -220,10 +220,6 @@
       }
     ],
     "promo2": [
-      {
-        "nume": "2+1 Editura Nemira",
-        "cod_cupon": ""
-      },
       {
         "nume": "Back to School 2026",
         "cod_cupon": ""
@@ -244,7 +240,7 @@
       },
       {
         "q": "Are Carturesti coduri de reducere active?",
-        "a": "Da, Carturesti are 3 oferte active pe AmCupon.ro in septembrie 2026. Verificam zilnic."
+        "a": "Da, Carturesti are 2 oferte active pe AmCupon.ro in septembrie 2026. Verificam zilnic."
       },
       {
         "q": "Unde gasesc cupoane pentru Libris si Carturesti?",
