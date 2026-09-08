@@ -9465,7 +9465,7 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 266,
+    "zile_ramase": 265,
     "promotii": [
       {
         "nume": "XMIND10OFF",
@@ -9473,6 +9473,15 @@
         "cod_cupon": "",
         "landing_page": "https://xmind.com",
         "zile_ramase": 266,
+        "expira": "2027-06-01",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "Xmind 10% Off | XMIND10OFF",
+        "descriere": "Save 10% on eligible Xmind subscriptions with code XMIND10OFF. Valid through June 1, 2027. See the landing page for current pricing and eligibility.",
+        "cod_cupon": "",
+        "landing_page": "https://xmind.com/pricing",
+        "zile_ramase": 265,
         "expira": "2027-06-01",
         "sursa": "impact_deals_api"
       }
@@ -20336,6 +20345,29 @@
     "promotii": [],
     "folosit_de": 0,
     "procent_succes": 85,
+    "exclusiv": false,
+    "platforma": "impact",
+    "descriere": ""
+  },
+  {
+    "magazin": "BeachSIM",
+    "url": "https://www.beachsim.com",
+    "url_afiliat": "https://www.beachsim.com",
+    "logo_url": "",
+    "categorie": "Telecom",
+    "categorie_slug": "telecom",
+    "comision": "Variabil",
+    "rank": null,
+    "scor_afiliere": 50,
+    "scor_final": 50,
+    "prioritate": "standard",
+    "canal_recomandat": "Content, SEO, Social",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 0,
+    "promotii": [],
     "exclusiv": false,
     "platforma": "impact",
     "descriere": ""
