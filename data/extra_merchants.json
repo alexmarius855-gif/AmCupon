@@ -20371,5 +20371,28 @@
     "exclusiv": false,
     "platforma": "impact",
     "descriere": ""
+  },
+  {
+    "magazin": "Villas Sol",
+    "url": "https://www.villassol.com/en",
+    "url_afiliat": "https://villassol.pxf.io/c/7401119/3981773/55886",
+    "logo_url": "",
+    "categorie": "Diverse",
+    "categorie_slug": "online-mall",
+    "comision": "Variabil",
+    "rank": null,
+    "scor_afiliere": 50,
+    "scor_final": 50,
+    "prioritate": "standard",
+    "canal_recomandat": "Content, SEO, Social",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 0,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "impact",
+    "descriere": ""
   }
 ]
