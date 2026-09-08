@@ -45,13 +45,18 @@
       "url_afiliat": "https://fashiondays.ro"
     },
     "stats2": {
-      "promotii_active": 0,
-      "coduri": "—",
+      "promotii_active": 1,
+      "coduri": "1 cod",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/2561/medium/2561.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fanswear.ro"
     },
     "promo1": [],
-    "promo2": [],
+    "promo2": [
+      {
+        "nume": "BACK TO SCHOOL",
+        "cod_cupon": "BTS"
+      }
+    ],
     "faq": [
       {
         "q": "Care este mai bun, Fashiondays sau Answear?",
@@ -63,7 +68,7 @@
       },
       {
         "q": "Are Answear coduri de reducere active?",
-        "a": "Momentan nu, Answear are 0 oferte active pe AmCupon.ro in septembrie 2026. Verificam zilnic."
+        "a": "Da, Answear are 1 oferta activa pe AmCupon.ro in septembrie 2026. Verificam zilnic."
       },
       {
         "q": "Unde gasesc cupoane pentru Fashiondays si Answear?",
@@ -197,19 +202,33 @@
     "verdict_m1": "Alege Libris pentru transport gratuit la comenzi mai mici si reduceri zilnice mai frecvente. Ideal daca comanzi regulat si vrei cel mai mic pret per carte.",
     "verdict_m2": "Alege Carturesti pentru experienta completa cititor-librarie, acces la librarii fizice pentru ridicare si colectii editoriale curate.",
     "stats1": {
-      "promotii_active": 0,
+      "promotii_active": 1,
       "coduri": "—",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9868/medium/9868.gif",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro"
     },
     "stats2": {
-      "promotii_active": 0,
+      "promotii_active": 2,
       "coduri": "—",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11380/medium/11380.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2F"
     },
-    "promo1": [],
-    "promo2": [],
+    "promo1": [
+      {
+        "nume": "Pregătit de școală? Hai cu lista și ai totul gata până sună clopoțelul!",
+        "cod_cupon": ""
+      }
+    ],
+    "promo2": [
+      {
+        "nume": "Back to School 2026",
+        "cod_cupon": ""
+      },
+      {
+        "nume": "Kilipir Merch Fandom",
+        "cod_cupon": ""
+      }
+    ],
     "faq": [
       {
         "q": "Care este mai bun, Libris sau Carturesti?",
@@ -217,11 +236,11 @@
       },
       {
         "q": "Are Libris coduri de reducere active?",
-        "a": "Momentan nu, Libris are 0 oferte active pe AmCupon.ro in septembrie 2026. Verificam zilnic."
+        "a": "Da, Libris are 1 oferta activa pe AmCupon.ro in septembrie 2026. Verificam zilnic."
       },
       {
         "q": "Are Carturesti coduri de reducere active?",
-        "a": "Momentan nu, Carturesti are 0 oferte active pe AmCupon.ro in septembrie 2026. Verificam zilnic."
+        "a": "Da, Carturesti are 2 oferte active pe AmCupon.ro in septembrie 2026. Verificam zilnic."
       },
       {
         "q": "Unde gasesc cupoane pentru Libris si Carturesti?",
@@ -572,7 +591,7 @@
     "verdict_m1": "Alege Noriel pentru cadouri copii, jucarii educative si jocuri de societate. Selectia este neinegalata in Romania.",
     "verdict_m2": "Alege Decathlon pentru echipament sportiv copii si adulti la preturi imbatabile. Ideal pentru biciclete, camping, fotbal, inot.",
     "stats1": {
-      "promotii_active": 0,
+      "promotii_active": 4,
       "coduri": "—",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/7926/medium/7926.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnoriel.ro%2F"
@@ -583,7 +602,20 @@
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11445/medium/11445.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.decathlon.ro"
     },
-    "promo1": [],
+    "promo1": [
+      {
+        "nume": "Concurs Lego Back to School | 10.08-08.09.2026",
+        "cod_cupon": ""
+      },
+      {
+        "nume": "Catalog Oferte Back to school 2026 | 06.08-30.09.2026",
+        "cod_cupon": ""
+      },
+      {
+        "nume": "Back to School | 30% REDUCERE la TOATE Ghiozdanele |06.08-30.09.2026",
+        "cod_cupon": ""
+      }
+    ],
     "promo2": [],
     "faq": [
       {
@@ -592,7 +624,7 @@
       },
       {
         "q": "Are Noriel coduri de reducere active?",
-        "a": "Momentan nu, Noriel are 0 oferte active pe AmCupon.ro in septembrie 2026. Verificam zilnic."
+        "a": "Da, Noriel are 4 oferte active pe AmCupon.ro in septembrie 2026. Verificam zilnic."
       },
       {
         "q": "Are Decathlon coduri de reducere active?",
@@ -725,7 +757,7 @@
     "verdict_m1": "Alege Libris pentru cel mai mare stoc de carti si transport gratuit la comenzi mai mici. Preturile la bestsellers sunt adesea mai bune.",
     "verdict_m2": "Alege Elefant daca vrei si alte produse (electronice, jocuri) intr-o singura comanda alaturi de carti.",
     "stats1": {
-      "promotii_active": 0,
+      "promotii_active": 1,
       "coduri": "—",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9868/medium/9868.gif",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro"
@@ -736,7 +768,12 @@
       "logo": null,
       "url_afiliat": "https://elefant.ro"
     },
-    "promo1": [],
+    "promo1": [
+      {
+        "nume": "Pregătit de școală? Hai cu lista și ai totul gata până sună clopoțelul!",
+        "cod_cupon": ""
+      }
+    ],
     "promo2": [],
     "faq": [
       {
@@ -745,7 +782,7 @@
       },
       {
         "q": "Are Libris coduri de reducere active?",
-        "a": "Momentan nu, Libris are 0 oferte active pe AmCupon.ro in septembrie 2026. Verificam zilnic."
+        "a": "Da, Libris are 1 oferta activa pe AmCupon.ro in septembrie 2026. Verificam zilnic."
       },
       {
         "q": "Are Elefant coduri de reducere active?",
