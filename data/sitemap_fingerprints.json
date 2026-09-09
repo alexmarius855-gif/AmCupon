@@ -2895,6 +2895,10 @@
   "fp": "e80bf72baffd1929",
   "data": "2026-08-16"
  },
+ "/cod-reducere/parmashop.ro": {
+  "fp": "49978ce921eae221",
+  "data": "2026-09-09"
+ },
  "/cod-reducere/autoeco.ro": {
   "fp": "fd25f64aa6fe9ef0",
   "data": "2026-09-08"
@@ -3795,6 +3799,10 @@
   "fp": "d5d39bdc2297de73",
   "data": "2026-08-16"
  },
+ "/cod-reducere/krista.ro": {
+  "fp": "6e66a0b46a8af42e",
+  "data": "2026-09-09"
+ },
  "/cod-reducere/kiehls.ro": {
   "fp": "8c2041ec5de0f639",
   "data": "2026-08-16"
@@ -4607,6 +4615,14 @@
   "fp": "ad22dd72d43ecddc",
   "data": "2026-08-27"
  },
+ "/cod-reducere/boabe.ro": {
+  "fp": "49978ce921eae221",
+  "data": "2026-09-09"
+ },
+ "/cod-reducere/endro.ro": {
+  "fp": "8c2041ec5de0f639",
+  "data": "2026-09-09"
+ },
  "/categorii/fashion": {
   "fp": "1dd95871f1d01e6a",
   "data": "2026-09-03"
@@ -4632,7 +4648,7 @@
   "data": "2026-09-07"
  },
  "/categorii/beauty": {
-  "fp": "b37afbe396052b88",
+  "fp": "f290a8472a7562bc",
   "data": "2026-09-09"
  },
  "/categorii/sport": {
@@ -4664,15 +4680,15 @@
   "data": "2026-09-09"
  },
  "/categorii/copii": {
-  "fp": "4fe4870bc8c239cf",
-  "data": "2026-09-08"
+  "fp": "c68d3b747a102056",
+  "data": "2026-09-09"
  },
  "/categorii/cadouri-flori": {
   "fp": "e7a158b95c08f1ce",
   "data": "2026-09-09"
  },
  "/categorii/mancare-bauturi": {
-  "fp": "2facaf533eef5dc1",
+  "fp": "fe41ad1f2263fe08",
   "data": "2026-09-09"
  },
  "/categorii/financiar": {

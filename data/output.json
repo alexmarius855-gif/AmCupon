@@ -4537,14 +4537,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 172,
+    "zile_ramase": 171,
     "promotii": [
       {
         "nume": "Oferta 1+1",
         "descriere": null,
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.fara-daunatori.ro%2Fsearch%2Foferta%2F%3Fq%3Doferta",
-        "zile_ramase": 172
+        "zile_ramase": 171
       }
     ],
     "exclusiv": false,
@@ -4603,21 +4603,21 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 1208,
+    "zile_ramase": 1207,
     "promotii": [
       {
         "nume": "Абонирайте се за нашия бюлетин днес & получавате отстъпка от 10 лв. при регистрация!",
         "descriere": null,
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vidaxl.bg%2Fsubscribe-to-newsletter.html",
-        "zile_ramase": 1209
+        "zile_ramase": 1208
       },
       {
         "nume": "10% намаление",
         "descriere": null,
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vidaxl.bg%2Fcampaign-s-oferti",
-        "zile_ramase": 1208
+        "zile_ramase": 1207
       }
     ],
     "exclusiv": false,
@@ -21348,6 +21348,31 @@
     "unique_code": "0c1a7057d"
   },
   {
+    "magazin": "parmashop.ro",
+    "url": "https://parmashop.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fparmashop.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13304/medium/13304.jpg",
+    "categorie": "Mâncare & Băuturi",
+    "categorie_slug": "mancare-bauturi",
+    "comision": "7.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "#999",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-09-09",
+    "scor_final": 0.0,
+    "program_id": 11817,
+    "unique_code": "bc660cd87"
+  },
+  {
     "magazin": "autoeco.ro",
     "url": "https://www.autoeco.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.autoeco.ro",
@@ -26973,6 +26998,31 @@
     "unique_code": "4eed54264"
   },
   {
+    "magazin": "krista.ro",
+    "url": "https://krista.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fkrista.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/12222/medium/12222.png",
+    "categorie": "Copii & Familie",
+    "categorie_slug": "copii",
+    "comision": "8.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "#999",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-09-09",
+    "scor_final": 0.0,
+    "program_id": 9246,
+    "unique_code": "fc562044c"
+  },
+  {
     "magazin": "kiehls.ro",
     "url": "https://www.kiehls.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.kiehls.ro%2F",
@@ -32046,5 +32096,55 @@
     "scor_final": 0.0,
     "program_id": 13207,
     "unique_code": "f38e19276"
+  },
+  {
+    "magazin": "boabe.ro",
+    "url": "https://boabe.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fboabe.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14546/medium/14546.png",
+    "categorie": "Mâncare & Băuturi",
+    "categorie_slug": "mancare-bauturi",
+    "comision": "7.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "#999",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-09-09",
+    "scor_final": 0.0,
+    "program_id": 13222,
+    "unique_code": "c5a703525"
+  },
+  {
+    "magazin": "endro.ro",
+    "url": "https://endro.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fendro.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14552/medium/14552.png",
+    "categorie": "Beauty & Îngrijire",
+    "categorie_slug": "beauty",
+    "comision": "10.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "#999",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-09-09",
+    "scor_final": 0.0,
+    "program_id": 13230,
+    "unique_code": "6c37ded61"
   }
 ]

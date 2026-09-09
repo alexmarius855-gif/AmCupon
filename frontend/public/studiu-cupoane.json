@@ -1,6 +1,6 @@
 {
   "generat": "2026-09-09",
-  "total_magazine": 1152,
+  "total_magazine": 1156,
   "cu_promotie": 122,
   "cu_cod_real": 35,
   "doar_oferta": 87,
@@ -48,7 +48,7 @@
     {
       "slug": "beauty",
       "nume": "Beauty & îngrijire",
-      "magazine": 79,
+      "magazine": 80,
       "cu_promotie": 12,
       "reducere_mediana": 22,
       "reducere_max": 70,
@@ -138,7 +138,7 @@
     {
       "slug": "copii",
       "nume": "Copii & familie",
-      "magazine": 32,
+      "magazine": 33,
       "cu_promotie": 3,
       "reducere_mediana": null,
       "reducere_max": null,
@@ -156,7 +156,7 @@
     {
       "slug": "mancare-bauturi",
       "nume": "Mâncare & băuturi",
-      "magazine": 14,
+      "magazine": 16,
       "cu_promotie": 1,
       "reducere_mediana": null,
       "reducere_max": null,
