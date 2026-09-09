@@ -1,18 +1,18 @@
 {
-  "generat": "2026-09-08",
-  "total_magazine": 1153,
-  "cu_promotie": 123,
+  "generat": "2026-09-09",
+  "total_magazine": 1150,
+  "cu_promotie": 122,
   "cu_cod_real": 35,
-  "doar_oferta": 88,
-  "procent_cu_promotie": 10.7,
+  "doar_oferta": 87,
+  "procent_cu_promotie": 10.6,
   "procent_cu_cod": 3.0,
-  "reducere_mediana_generala": 20.0,
-  "magazine_cu_procent_declarat": 84,
+  "reducere_mediana_generala": 20,
+  "magazine_cu_procent_declarat": 83,
   "categorii": [
     {
       "slug": "carti-educatie",
       "nume": "Cărți & educație",
-      "magazine": 36,
+      "magazine": 35,
       "cu_promotie": 6,
       "reducere_mediana": 40.0,
       "reducere_max": 90,
@@ -22,10 +22,10 @@
       "slug": "electronice",
       "nume": "Electronice & IT",
       "magazine": 116,
-      "cu_promotie": 14,
-      "reducere_mediana": 37.0,
+      "cu_promotie": 13,
+      "reducere_mediana": 30,
       "reducere_max": 80,
-      "esantion": 8
+      "esantion": 7
     },
     {
       "slug": "sanatate",
@@ -147,7 +147,7 @@
     {
       "slug": "cadouri-flori",
       "nume": "Cadouri & flori",
-      "magazine": 13,
+      "magazine": 12,
       "cu_promotie": 2,
       "reducere_mediana": null,
       "reducere_max": null,
@@ -156,7 +156,7 @@
     {
       "slug": "mancare-bauturi",
       "nume": "Mâncare & băuturi",
-      "magazine": 15,
+      "magazine": 14,
       "cu_promotie": 1,
       "reducere_mediana": null,
       "reducere_max": null,
