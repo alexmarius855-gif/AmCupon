@@ -1,6 +1,6 @@
 {
   "generat": "2026-09-09",
-  "total_magazine": 1150,
+  "total_magazine": 1152,
   "cu_promotie": 122,
   "cu_cod_real": 35,
   "doar_oferta": 87,
@@ -12,7 +12,7 @@
     {
       "slug": "carti-educatie",
       "nume": "Cărți & educație",
-      "magazine": 35,
+      "magazine": 36,
       "cu_promotie": 6,
       "reducere_mediana": 40.0,
       "reducere_max": 90,
@@ -48,7 +48,7 @@
     {
       "slug": "beauty",
       "nume": "Beauty & îngrijire",
-      "magazine": 78,
+      "magazine": 79,
       "cu_promotie": 12,
       "reducere_mediana": 22,
       "reducere_max": 70,

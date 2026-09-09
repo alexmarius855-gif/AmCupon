@@ -2948,7 +2948,7 @@
   "data": "2026-08-25"
  },
  "/cod-reducere/liki24.ro": {
-  "fp": "32bcc53870e9fe42",
+  "fp": "9c7844908c8955cc",
   "data": "2026-09-09"
  },
  "/cod-reducere/pfarma.ro": {
@@ -3034,6 +3034,10 @@
  "/cod-reducere/nailsup.ro": {
   "fp": "8c2041ec5de0f639",
   "data": "2026-08-16"
+ },
+ "/cod-reducere/librex.ro": {
+  "fp": "ab1092215d291cef",
+  "data": "2026-09-09"
  },
  "/cod-reducere/ihunt.ro": {
   "fp": "469c440fa9ad6f0c",
@@ -3832,8 +3836,8 @@
   "data": "2026-09-08"
  },
  "/cod-reducere/autoeqt.ro": {
-  "fp": "fd25f64aa6fe9ef0",
-  "data": "2026-09-08"
+  "fp": "eb11f1d3200d74a2",
+  "data": "2026-09-09"
  },
  "/cod-reducere/casamob.ro": {
   "fp": "469c440fa9ad6f0c",
@@ -4267,6 +4271,10 @@
   "fp": "dee465db33f4d51e",
   "data": "2026-08-31"
  },
+ "/cod-reducere/nobelo.ro": {
+  "fp": "dc59b72ffba06c39",
+  "data": "2026-09-09"
+ },
  "/cod-reducere/kidsly.ro": {
   "fp": "6e66a0b46a8af42e",
   "data": "2026-09-02"
@@ -4624,8 +4632,8 @@
   "data": "2026-09-07"
  },
  "/categorii/beauty": {
-  "fp": "cb929ed6b2987864",
-  "data": "2026-09-07"
+  "fp": "b37afbe396052b88",
+  "data": "2026-09-09"
  },
  "/categorii/sport": {
   "fp": "7976736a1cd8ed43",
@@ -4636,7 +4644,7 @@
   "data": "2026-08-26"
  },
  "/categorii/carti-educatie": {
-  "fp": "9353b4fb54cfbe09",
+  "fp": "aef9b721e9c06a84",
   "data": "2026-09-09"
  },
  "/categorii/calatorii": {

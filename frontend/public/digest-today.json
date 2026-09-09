@@ -1,23 +1,9 @@
 {
-  "data": "2026-09-08",
-  "data_afisata": "8 septembrie 2026",
-  "titlu": "Radarul AmCupon — 8 septembrie 2026",
-  "intro": "Am trecut azi prin ofertele active si am pastrat doar ce merita. Iese in evidenta Answear si Laavooextensions, dar mai jos ai selectia completa, verificata de noi. Toate codurile sunt testate; cele cu termen scurt le-am marcat.",
+  "data": "2026-09-09",
+  "data_afisata": "9 septembrie 2026",
+  "titlu": "Radarul AmCupon — 9 septembrie 2026",
+  "intro": "Am trecut azi prin ofertele active si am pastrat doar ce merita. Iese in evidenta Laavooextensions si Wiskiiactive, dar mai jos ai selectia completa, verificata de noi. Toate codurile sunt testate; cele cu termen scurt le-am marcat.",
   "picks": [
-    {
-      "scor": 125,
-      "magazin": "answear.ro",
-      "nume_afisat": "Answear",
-      "categorie": "Fashion",
-      "categorie_slug": "fashion",
-      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/2561/medium/2561.png",
-      "titlu": "BACK TO SCHOOL",
-      "descriere": "*PÂNĂ LA -25%\n\nVacanța s-a terminat. Ți-ai pregătit ținutele pentru birou? Cumpără de min. 449 RON și ai până la -20% cu codul BTS. \n\n*În aplicație până la -25%.",
-      "cod": "BTS",
-      "url": "https://amcupon.ro/cod-reducere/answear.ro",
-      "zile_ramase": 1,
-      "take": "Grabeste-te: expira in 1 zi. Bun de prins daca oricum voiai sa-ti reimprospatezi garderoba."
-    },
     {
       "scor": 100,
       "magazin": "laavooextensions.com",
@@ -85,8 +71,22 @@
       "descriere": "5% discount la prima comandă plasată pe site. Discount-ul se aplică per întreg coșul de cumpărături.",
       "cod": "FERANEW",
       "url": "https://amcupon.ro/cod-reducere/fera.ro",
-      "zile_ramase": 5,
-      "take": "Grabeste-te: expira in 5 zile. Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 4,
+      "take": "Grabeste-te: expira in 4 zile. Oferta verificata — buna daca te incadrezi in categorie."
+    },
+    {
+      "scor": 95,
+      "magazin": "answear.ro",
+      "nume_afisat": "Answear",
+      "categorie": "Fashion",
+      "categorie_slug": "fashion",
+      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/2561/medium/2561.png",
+      "titlu": "BACK TO SCHOOL",
+      "descriere": "*PÂNĂ LA -25%\n\nVacanța s-a terminat. Ți-ai pregătit ținutele pentru birou? Cumpără de min. 449 RON și ai până la -20% cu codul BTS. \n\n*În aplicație până la -25%.",
+      "cod": "BTS",
+      "url": "https://amcupon.ro/cod-reducere/answear.ro",
+      "zile_ramase": 0,
+      "take": "Bun de prins daca oricum voiai sa-ti reimprospatezi garderoba."
     }
   ],
   "outro": "Revino maine la Radar — alegem din nou ce merita, ca sa nu cauti tu prin sute de oferte.",
