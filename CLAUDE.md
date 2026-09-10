@@ -12,6 +12,29 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 08.09.2026 (Artifactul „Deblocare AmCupon" mutat IN repo ca document viu — NEPUSHED):**
+- **Fisier nou: `docs/operational/DEBLOCARE-AMCUPON.md`.** Planul celor trei actiuni manuale
+  traia doar intr-un artifact publicat pe 16.08. Un plan pe care nu-l deschide nimeni nu e plan.
+  Mutat in repo si REVERIFICAT pe date, nu copiat: din trei actiuni, una era deja facuta, iar
+  cifra centrala se mutase de peste patru ori.
+- **Script nou: `scripts/verifica_deblocare.py`** — citeste `output.json`, nu textul documentului.
+  Fara el, documentul devine in cateva zile inca un plan cu cifre vechi. `--leak` da lista
+  completa de magazine fara link afiliat.
+- **Ce a aratat verificarea la 08.09** (toate reproductibile cu scriptul):
+  1. **36 de magazine live au `url_afiliat` identic cu `url`**, nu 3 cum spunea artifactul.
+     33 sunt Impact (aprobate, dar exportul n-a adus linkul) + temu/shein/trendyol (`direct`).
+     Sase dintre ele au si promotie afisata, deci iau clicurile bune. Comision zero pe toate.
+  2. **A PATRA aparitie a semnalului fabricat**, tot in acelasi loc cu „Cashback" de pe 07.09:
+     temu/shein/trendyol au `cod_cupon: true` in `output.json` cu promotia fara niciun cod
+     (`cod_cupon: ""`). Pe site apar cu semn de „are cod" fara sa aiba. Se repara in
+     `data/extra_merchants.json`, odata cu linkurile de afiliere.
+  3. **`studiu-cupoane.json` e cu o rulare in urma lui `output.json`**: pagina publica arata
+     10 magazine cu cod (0,9%), datele spun 31 (2,7%) — diferenta vine din `f5fc780`, care a
+     conectat ofertele Impact dupa ultima generare a studiului. Se repara singur la urmatoarea
+     rulare de pipeline; `python scripts/generate_studiu_cupoane.py` il forteaza acum.
+     **Nimic nu pleaca spre presa cat timp pagina si datele nu spun acelasi lucru** — cifra
+     din `PITCH-PRESA.md` (1,6%) si cea din artifact (0,5%) sunt amandoua depasite.
+
 **UPDATE 07.09.2026, partea a 5-a (COMISION publicat ca „Cashback" + FB si newsletter — NEPUSHED):**
 - **A TREIA reaparitie a aceleiasi fabricatii** (dupa 03.07 pe site si 08.08 in newsletter),
   in doua locuri noi, ambele PUBLICE:
@@ -1129,6 +1152,12 @@ Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Pro
 > (PLAN-MASTER, STRATEGIE, NISE-MASTER, PLAN-REPLICARE-SITEURI-AFACERI), `docs/audituri/`
 > (AUDIT-PAGINI-SITE, AUDIT-REMODELARE-2026-07, CATEGORII-SEO-MASTER), `docs/operational/`
 > (ACTIUNI-VENIT, SABLON-POSTARI). Rămân în root: `AGENTS.md`, `CLAUDE.md`, `PROMPT-SESIUNE.md`.
+>
+> **⭐ BLOCAJE MANUALE:** `docs/operational/DEBLOCARE-AMCUPON.md` (08.09.2026) — cele trei lucruri
+> pe care numai Alex le poate face (linkuri de afiliere lipsă, atribute Brevo, email-urile de
+> presă). Citește-l ÎNAINTE să propui cod nou: de trei ori până acum blocajul real era într-un
+> cont extern, nu în repo. Stările se verifică cu `python scripts/verifica_deblocare.py`, nu
+> din text.
 
 **UPDATE 30.06.2026 (UPDATE MASIV UI — PUSHED + LIVE):**
 - **Audit workflow (8 agenți paraleli) → 57 findings, reparate cele high/medium.** Plan complet în

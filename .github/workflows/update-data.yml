@@ -2,7 +2,7 @@ name: Actualizare Automata Date & Blog
 
 # Optimizat 19.06.2026: 3 rulări/zi (nu 9) → ~70% mai puține minute GitHub Actions.
 # - 05:00 + 17:00 UTC = sync date (07:00 + 19:00 RO) — doar API + merge + commit
-# - 06:00 UTC = pipeline complet (08:00 RO) — blog, social, newsletter, video
+# - 06:00 UTC = pipeline complet (08:00 RO) — blog, social, newsletter
 on:
   schedule:
     - cron: '0 5,17 * * *'  # Sync date de 2 ori/zi (07:00 + 19:00 ora Romaniei)
@@ -37,13 +37,11 @@ jobs:
           python --version
           pip install -r scripts/requirements.txt
 
-      # ffmpeg NU mai vine preinstalat pe ubuntu-latest (verificat 20.07.2026 —
-      # generate_video_daily.py degradeaza silentios cu "ffmpeg negasit in PATH",
-      # fara sa pice pipeline-ul; video-today.mp4 nu a fost generat NICIODATA de
-      # cand a fost construit fluxul pe 29.06.2026). Doar pe rularea completa.
-      - name: Instaleaza ffmpeg (flux video zilnic)
-        if: env.IS_FULL_DAILY == 'true'
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      # Fluxul video zilnic (ffmpeg + edge-tts + generate_video_daily.py) a fost
+      # SCOS pe 09.09.2026, la cererea lui Alex. Genera un clip vertical in fiecare
+      # dimineata pe care nu-l posta nimeni — CSP-ul site-ului (media-src 'none')
+      # il facea si nedeschizabil de pe telefon. Continut produs zilnic si aruncat
+      # zilnic nu e continut, e cost. Daca revine, revine cu un canal in spate.
 
       # ── 3. 2Performant data — API direct ──────────────────────────────────
       - name: Fetch date 2Performant via API
@@ -406,27 +404,6 @@ jobs:
           TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
         run: python social_content_factory.py
 
-      # ── 11.6 Flux video AI zilnic — TikTok / Reels / Shorts ──────────────
-      # digest-today.json -> script vocal -> edge-tts (voce RO + subtitrari) ->
-      # ffmpeg (MP4 vertical 1080x1920 pe brand). 100% gratuit, fara API key platit.
-      # Ruleaza doar dimineata (un clip/zi e suficient). ffmpeg e preinstalat in
-      # ubuntu-latest; edge-tts vine din requirements.txt.
-      - name: Genereaza video zilnic (TikTok/Reels/Shorts)
-        if: env.IS_FULL_DAILY == 'true'
-        continue-on-error: true
-        working-directory: scripts
-        run: |
-          python generate_video_daily.py
-          # Copiaza in public/ ca sa fie descarcabile de pe telefon (amcupon.ro/...)
-          if [ -f ../data/video-today/video-today.mp4 ]; then
-            cp ../data/video-today/video-today.mp4 ../frontend/public/video-today.mp4
-            cp ../data/video-today/captions.txt    ../frontend/public/video-captions.txt
-            cp ../data/video-today/script.txt      ../frontend/public/video-script.txt
-            echo "Video zilnic gata: https://amcupon.ro/video-today.mp4"
-          else
-            echo "Video negenerat (edge-tts/ffmpeg indisponibil) — skip copiere"
-          fi
-
       # ── 12. Genereaza bannere (Pillow) ────────────────────────────────────
       # Salveaza in data/ SI frontend/public/ (servit de Vercel)
       - name: Genereaza bannere sociale (Pillow)
@@ -496,9 +473,6 @@ jobs:
           git add data/social-content-today.txt        || true
           git add "data/social-nisa-*.txt"             || true
           git add frontend/public/daily-content        || true
-          git add frontend/public/video-today.mp4      || true
-          git add frontend/public/video-captions.txt   || true
-          git add frontend/public/video-script.txt     || true
           git add data/banner_daily.png                || true
           git add data/banner_story.png                || true
           git add data/indexnow_seen.json               || true

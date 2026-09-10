@@ -4,6 +4,7 @@ import path from "path";
 import Link from "next/link";
 import ShareButton from "../components/ShareButton";
 import { etichetaExpirare } from "../../lib/expirarePromo";
+import { linkAfiliat, linkPromotie } from "@/lib/linkMagazin";
 
 /* ── Tipuri ──────────────────────────────────────────────────────────────── */
 interface Promotie {
@@ -97,7 +98,7 @@ function loadOferte(): OfertaFlat[] {
       oferte.push({
         magazin:        m.magazin,
         logo_url:       m.logo_url,
-        url_afiliat:    promo.landing_page || m.url_afiliat || m.url,
+        url_afiliat:    linkPromotie(m, promo) || "",
         categorie:      m.categorie,
         categorie_slug: m.categorie_slug || "others",
         promo,

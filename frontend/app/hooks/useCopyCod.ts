@@ -23,7 +23,10 @@ export function useCopyCod(track?: TrackFn) {
   const [lastLink, setLastLink] = useState<string | null>(null);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const copyAndOpen = useCallback((key: string, cod: string, link: string | undefined, magazinSlug: string) => {
+  // `link` accepta si null: magazinele fara link afiliat n-au unde trimite omul. Codul se
+  // copiaza oricum (ii e util), dar nu deschidem un click nemonetizat. Corpul functiei
+  // trata deja cazul lipsa — doar tipul era prea ingust. Vezi lib/linkMagazin.ts.
+  const copyAndOpen = useCallback((key: string, cod: string, link: string | undefined | null, magazinSlug: string) => {
     navigator.clipboard.writeText(cod).catch(() => {});
     setCopiedKey(key);
     setRedirectFailed(false);

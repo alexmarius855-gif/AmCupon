@@ -15,6 +15,7 @@ import { useCopyCod } from "../../hooks/useCopyCod";
 import { calculateDealScore, DEAL_SCORE_VISIBLE_THRESHOLD } from "../../../lib/dealScore";
 import { etichetaExpirare } from "../../../lib/expirarePromo";
 import VotCupon, { hashCupon } from "../../components/VotCupon";
+import { linkAfiliat, linkPromotie } from "@/lib/linkMagazin";
 
 // ── Deal Score badge cu count-up (0 -> scor) la mount ───────────────────────────
 function DealScoreBadge({ score }: { score: number }) {
@@ -262,6 +263,10 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
   // rulare a pipeline-ului) — inainte badge-ul afisa new Date() necondiționat, adica
   // "azi" pe orice vizita, indiferent cand au fost verificate datele. Omite daca nu avem
   // data (nu ghici).
+  // null cand magazinul n-are link afiliat real. Butoanele de vizitare se ascund
+  // atunci, in loc sa trimita un click pe care nu-l plateste nimeni. Vezi lib/linkMagazin.ts.
+  const linkIesire = linkAfiliat(m);
+
   const zileDeLaVerificare = m.ultima_verificare
     ? Math.round((Date.parse(astazi) - Date.parse(m.ultima_verificare)) / 86400000)
     : null;
@@ -290,11 +295,14 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
   ].filter(Boolean) as string[];
   const logoSrc = logoSurse[logoIdx];
 
-  function copiazaCod(idx: number, cod: string, link?: string) {
+  // `link` poate fi null: magazinele fara link afiliat nu primesc destinatie. Codul se
+  // copiaza oricum — omul il poate folosi — dar nu trimitem un click pe care nu-l plateste
+  // nimeni. Vezi lib/linkMagazin.ts.
+  function copiazaCod(idx: number, cod: string, link?: string | null) {
     setRevealed(prev => new Set(prev).add(idx));
     // copy + open sincron (popup blocker) + tracking, unificat in useCopyCod (folosit
     // si de MagazinCard.tsx — inainte logica era duplicata separat in fiecare fisier).
-    copyAndOpen(String(idx), cod, link, m.magazin);
+    copyAndOpen(String(idx), cod, link ?? undefined, m.magazin);
     setModalOpen(true);
   }
 
@@ -405,13 +413,15 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
               </div>
 
               <div className="flex items-center gap-3 flex-wrap">
-                <a href={m.url_afiliat || m.url} target="_blank" rel="sponsored noopener noreferrer"
+                {linkIesire && (
+                <a href={linkIesire} target="_blank" rel="sponsored noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-gradient-to-r from-[#ddf93c] to-[#ddf93c] hover:from-[#ddf93c] hover:to-[#ddf93c] text-[#0c1000] font-bold px-5 py-2.5 rounded-xl text-sm transition-colors shadow-lg shadow-[#ddf93c]/25" onClick={() => trackClick("vizita_magazin", m.magazin)}>
                   Viziteaza {nume}
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                   </svg>
                 </a>
+                )}
                 <ShareButton
                   pageSlug={`/cod-reducere/${m.magazin}`}
                   title={`Cod reducere ${nume} — AmCupon.ro`}
@@ -498,7 +508,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                 <div className="space-y-4">
                   {cuCod.map((promo, idx) => {
                     // Daca promotia a expirat (zile_ramase < 0) folosim quicklink magazin
-                    const link     = (promo.zile_ramase >= 0 && promo.landing_page) ? promo.landing_page : (m.url_afiliat || m.url);
+                    const link     = linkPromotie(m, promo);
                     const discount = extractDiscount(promo.nume) || extractDiscount(promo.descriere || "");
                     const isRevealed = revealed.has(idx);
                     const isCopiat   = copiat === idx;
@@ -546,10 +556,12 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                                   <span className="font-mono font-black text-[#c3dd2c] tracking-widest text-sm">{promo.cod_cupon}</span>
                                   {isCopiat && <p className="text-xs text-green-600 mt-0.5">✓ Copiat!</p>}
                                 </div>
+                                {link && (
                                 <a href={link} target="_blank" rel="sponsored noopener noreferrer"
                                   className="flex items-center justify-center w-full bg-gradient-to-r from-[#ddf93c] to-[#ddf93c] hover:from-[#ddf93c] hover:to-[#ddf93c] text-[#0c1000] font-bold py-2.5 rounded-xl text-sm transition-colors" onClick={() => trackClick("cod", m.magazin, promo.cod_cupon)}>
                                   Mergi la magazin →
                                 </a>
+                                )}
                                 <div className="flex justify-center">
                                   <ShareButton
                                     pageSlug={`/cod-reducere/${m.magazin}`}
@@ -629,10 +641,12 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                       Vezi {faraCodd.length} oferte active
                     </button>
                   )}
-                  <a href={m.url_afiliat || m.url} target="_blank" rel="sponsored noopener noreferrer"
+                  {linkIesire && (
+                  <a href={linkIesire} target="_blank" rel="sponsored noopener noreferrer"
                     className="bg-[#1f2329] border border-[#2a2f36] text-[#c9ced5] font-bold px-5 py-2.5 rounded-xl text-sm hover:border-[#ddf93c] hover:text-[#ffffff] transition-colors">
                     Viziteaza {nume}
                   </a>
+                  )}
                 </div>
                 </div>
               </div>
@@ -671,7 +685,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                 <div className="space-y-4">
                   {faraCodd.map((promo, idx) => {
                     // Daca promotia a expirat (zile_ramase < 0) folosim quicklink magazin
-                    const link     = (promo.zile_ramase >= 0 && promo.landing_page) ? promo.landing_page : (m.url_afiliat || m.url);
+                    const link     = linkPromotie(m, promo);
                     const discount = extractDiscount(promo.nume) || extractDiscount(promo.descriere || "");
                     const eticheta = etichetaExpirare(promo.zile_ramase);
                     return (
@@ -701,10 +715,12 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                             )}
                           </div>
                           <div className="flex items-center gap-2 shrink-0">
+                            {link && (
                             <a href={link} target="_blank" rel="sponsored noopener noreferrer"
                               className="bg-gradient-to-r from-[#ddf93c] to-[#ddf93c] hover:from-[#ddf93c] hover:to-[#ddf93c] text-[#0c1000] font-bold px-5 py-2.5 rounded-xl text-sm transition-colors whitespace-nowrap">
                               Vezi oferta →
                             </a>
+                            )}
                             <ShareButton
                               pageSlug={`/cod-reducere/${m.magazin}`}
                               title={`Oferta${discount ? " " + discount : ""} ${nume}`}
@@ -757,11 +773,13 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
               <div className="bg-[#14181c] rounded-xl border border-[#1f2329] p-12 text-center">
                 <ShoppingBag className="w-12 h-12 mb-4 mx-auto text-[#3a4048]" />
                 <h3 className="text-lg font-black text-[#ffffff] mb-2">Feed produse indisponibil</h3>
-                <p className="text-[#9399a0] text-sm mb-5">Produsele individuale nu sunt disponibile pentru acest magazin. Viziteaza direct site-ul.</p>
-                <a href={m.url_afiliat || m.url} target="_blank" rel="sponsored noopener noreferrer"
+                <p className="text-[#9399a0] text-sm mb-5">Produsele individuale nu sunt disponibile pentru acest magazin{linkIesire ? ". Viziteaza direct site-ul." : "."}</p>
+                {linkIesire && (
+                <a href={linkIesire} target="_blank" rel="sponsored noopener noreferrer"
                   className="bg-[#ddf93c] text-[#0c1000] font-bold px-5 py-2.5 rounded-xl text-sm hover:bg-[#ddf93c] transition-colors">
                   Viziteaza {nume}
                 </a>
+                )}
               </div>
             )}
           </motion.div>

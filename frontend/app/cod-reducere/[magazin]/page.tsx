@@ -5,6 +5,7 @@ import path from "path";
 import MagazinClient from "./MagazinClient";
 import { buildMerchantTokens, esteIndexabil } from "../../../lib/seoIndexable";
 import ContextMagazin, { type CategorieStudiu } from "./ContextMagazin";
+import { linkAfiliat } from "@/lib/linkMagazin";
 
 interface Promotie {
   nume: string;
@@ -625,7 +626,7 @@ export default async function PaginaMagazin({
             produse={produse}
             categorieSlug={m.categorie_slug}
             categorie={m.categorie}
-            urlSite={m.url}
+            urlSite={linkAfiliat(m) || m.url}
             categorieStudiu={m.categorie_slug ? loadStudiu()[m.categorie_slug] ?? null : null}
             intrebari={intrebari}
             pasi={pasiFolosire}

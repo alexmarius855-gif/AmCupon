@@ -49,12 +49,22 @@ const nextConfig: NextConfig = {
             key: "Content-Security-Policy",
             value: [
               "default-src 'self'",
-              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://pagead2.googlesyndication.com https://www.googletagmanager.com https://www.google-analytics.com https://cdn.onesignal.com https://onesignal.com",
+              // va.vercel-scripts.com = Vercel Analytics + Speed Insights (importate in
+              // layout.tsx). cdn.2performant.com = scriptul Link2 din AffiliateScript.tsx.
+              // Lipseau amandoua din lista, deci propriul CSP le bloca la fiecare vizita:
+              // analytics nu a inregistrat NIMIC de cand exista headerul, iar scriptul
+              // retelei cu cele mai multe magazine nu a rulat niciodata. Un site care isi
+              // blocheaza singur masurarea nu poate raspunde la "merita sau nu".
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://pagead2.googlesyndication.com https://www.googletagmanager.com https://www.google-analytics.com https://cdn.onesignal.com https://onesignal.com https://va.vercel-scripts.com https://cdn.2performant.com",
               "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
               "font-src 'self' https://fonts.gstatic.com",
               "img-src 'self' data: blob: https:",
               "connect-src 'self' https://api.brevo.com https://api.supabase.co https://*.supabase.co https://www.google-analytics.com https://analytics.google.com https://onesignal.com https:",
               "frame-src https://pagead2.googlesyndication.com https://tpc.googlesyndication.com",
+              // Site-ul nu serveste niciun video sau audio (fluxul video zilnic a fost
+              // scos pe 09.09.2026), deci 'none' e corect. Daca revine media pe site,
+              // muta pe 'self' — altfel browserul refuza sa redea fisierul chiar daca
+              // serverul il livreaza corect, si pe telefon pare fisier stricat.
               "media-src 'none'",
             ].join("; "),
           },

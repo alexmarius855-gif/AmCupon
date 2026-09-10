@@ -7,6 +7,7 @@ import { Clock, Flame, Truck, Heart, Copy } from "lucide-react";
 import { useCopyCod } from "../hooks/useCopyCod";
 import RedirectModal from "./RedirectModal";
 import { calculateDealScore, DEAL_SCORE_VISIBLE_THRESHOLD } from "../../lib/dealScore";
+import { linkAfiliat, linkPromotie } from "@/lib/linkMagazin";
 
 export interface CardPromotie {
   nume: string;
@@ -114,9 +115,17 @@ export default function MagazinCard({ m, numeOverride, astazi, isFavorit, onTogg
   const [logoIdx, setLogoIdx] = useState(0);
   const logoSrc = logoSurse[logoIdx];
 
-  const isValidAffiliateUrl = (url: string) => !!url && !url.includes("/NA6?") && !url.includes("/NA6&");
-  const affiliateLink = isValidAffiliateUrl(m.url_afiliat) ? m.url_afiliat : m.url;
-  const link = promo?.landing_page || affiliateLink;
+  // Sursa unica: lib/linkMagazin.ts. Verificarea locala de dinainte prindea doar linkurile
+  // Impact stricate (/NA6?) si cadea inapoi pe `m.url` — un click nemonetizat — cand
+  // magazinul n-avea link afiliat deloc.
+  const link = linkPromotie(m, promo);
+  // Cand magazinul n-are link afiliat, butonul NU dispare — duce pe pagina noastra de
+  // magazin. Omul isi continua drumul, noi nu dam un click nemonetizat catre magazin.
+  const dest = link || `/cod-reducere/${m.magazin}`;
+  const extern = Boolean(link);
+  const atributeExterne = extern
+    ? { target: "_blank" as const, rel: "sponsored noopener noreferrer" }
+    : {};
 
   const dealScore = calculateDealScore(m, astazi);
   const showDealScore = dealScore >= DEAL_SCORE_VISIBLE_THRESHOLD;
@@ -233,9 +242,9 @@ export default function MagazinCard({ m, numeOverride, astazi, isFavorit, onTogg
                   )}
                 </AnimatePresence>
               </div>
-              <a href={link} target="_blank" rel="sponsored noopener noreferrer"
+              <a href={dest} {...atributeExterne}
                 className="flex items-center justify-center w-full bg-gradient-to-r from-[#ddf93c] to-[#ddf93c] hover:from-[#ecff7a] hover:to-[#ddf93c] text-[#0c1000] hover:text-[#0c1000] font-bold py-2.5 rounded-xl text-sm transition-all shadow-lg shadow-[#ddf93c]/20">
-                Mergi la {numeMagazin} →
+                {extern ? `Mergi la ${numeMagazin} →` : `Vezi ${numeMagazin} →`}
               </a>
             </div>
           ) : (
@@ -254,12 +263,12 @@ export default function MagazinCard({ m, numeOverride, astazi, isFavorit, onTogg
             </button>
           )
         ) : promo ? (
-          <a href={link} target="_blank" rel="sponsored noopener noreferrer"
+          <a href={dest} {...atributeExterne}
             className="flex items-center justify-center w-full bg-gradient-to-r from-[#ddf93c] to-[#ddf93c] hover:from-[#ecff7a] hover:to-[#ddf93c] text-[#0c1000] hover:text-[#0c1000] font-bold py-2.5 rounded-xl text-sm transition-all shadow-lg shadow-[#ddf93c]/20">
             Vezi oferta →
           </a>
         ) : (
-          <a href={affiliateLink} target="_blank" rel="sponsored noopener noreferrer"
+          <a href={dest} {...atributeExterne}
             className="flex items-center justify-center w-full bg-[#1f2329]/80 hover:bg-[#2a2f36] border border-[#2a2f36] hover:border-[#ddf93c]/50 text-[#c9ced5] hover:text-[#ffffff] font-bold py-2.5 rounded-xl text-sm transition-all">
             Mergi la {numeMagazin} →
           </a>

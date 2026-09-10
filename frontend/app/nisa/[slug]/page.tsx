@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import fs from "fs";
 import path from "path";
 import type { Metadata } from "next";
+import { linkAfiliat, linkPromotie } from "@/lib/linkMagazin";
 
 /** Pagina principala care castiga semnalul pentru fiecare nisa (vezi canonical mai jos). */
 const CANONIC_PRINCIPAL: Record<string, string> = {
@@ -205,7 +206,7 @@ export default async function NisaPage(
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
               {magazineFiltrate.map((m: Magazin) => (
-                <a key={m.magazin} href={m.url_afiliat || m.url}
+                <a key={m.magazin} href={linkAfiliat(m) || `/cod-reducere/${m.magazin}`}
                   target="_blank" rel="sponsored noopener noreferrer"
                   className="bg-[#14181c] border border-[#1f2329] hover:border-[#c3dd2c] rounded-xl p-3 flex items-center gap-3 hover:shadow-md transition-all">
                   {m.logo && (

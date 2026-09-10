@@ -3,6 +3,10 @@
 > Bottleneck-ul nu mai e site-ul. E **traficul**. 1031 magazine × 0 vizitatori = 0 lei.
 > SEO durează 2-4 luni pe domeniu nou. Primii bani vin din **trafic împins de mine**.
 > Actualizat: 30.06.2026
+>
+> **Lista de aici e lungă și veche. Dacă ai 20 de minute, nu o citi — deschide
+> [`DEBLOCARE-AMCUPON.md`](DEBLOCARE-AMCUPON.md)** (08.09.2026): trei acțiuni, cu starea
+> reverificată pe datele de azi și o comandă care spune ce s-a mișcat.
 
 ---
 

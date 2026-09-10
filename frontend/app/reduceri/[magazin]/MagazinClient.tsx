@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import { useState } from "react";
 import { etichetaExpirare } from "../../../lib/expirarePromo";
+import { linkAfiliat, linkPromotie } from "@/lib/linkMagazin";
 
 interface Promotie {
   nume: string;
@@ -137,7 +138,7 @@ export default function MagazinClient({ magazin: m }: { magazin: Magazin }) {
             </div>
 
             <a
-              href={m.url_afiliat || m.url}
+              href={linkAfiliat(m) || `/cod-reducere/${m.magazin}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] font-bold px-5 py-2.5 rounded-xl text-sm transition-colors"
@@ -251,7 +252,7 @@ export default function MagazinClient({ magazin: m }: { magazin: Magazin }) {
             <p className="text-gray-400 text-lg mb-1">Nicio promoție activă momentan</p>
             <p className="text-gray-300 text-sm mb-5">Revino în curând sau vizitează direct magazinul</p>
             <a
-              href={m.url_afiliat || m.url}
+              href={linkAfiliat(m) || `/cod-reducere/${m.magazin}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] font-bold px-5 py-2.5 rounded-xl text-sm transition-colors"

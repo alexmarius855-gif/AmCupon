@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState, useMemo, useEffect } from "react";
 import { useWishlist } from "../hooks/useWishlist";
 import { CAT_META } from "./categorie-meta";
+import { linkAfiliat, linkPromotie } from "@/lib/linkMagazin";
 
 /* ─── Types ──────────────────────────────────────────────────────────────── */
 export interface Produs {
@@ -215,12 +216,15 @@ function DealCard({ m, rank }: { m: Magazin; rank?: number }) {
   const [imgOk, setImgOk] = useState(true);
   const promo = m.promotii[0];
   const disc  = maxDiscount(m.promotii);
-  const link  = promo?.landing_page || m.url_afiliat || m.url;
+  const link  = linkPromotie(m, promo);
+  // Fara link afiliat, cardul duce pe pagina noastra de magazin, nu catre magazin gratis.
+  const dest  = link || `/cod-reducere/${m.magazin}`;
+  const ext   = Boolean(link);
   const name  = numeAfisat(m.magazin);
   const initial = name.charAt(0).toUpperCase();
 
   return (
-    <a href={link} target="_blank" rel="sponsored noopener noreferrer"
+    <a href={dest} {...(ext ? { target: "_blank" as const, rel: "sponsored noopener noreferrer" } : {})}
       className="group bg-[#14181c] border border-[#2a2f36] hover:border-[#ddf93c]/50 rounded-xl overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-200 flex flex-col">
       {/* Colored top bar */}
       <div className="h-1 bg-gradient-to-r from-[#ddf93c] to-[#ddf93c]"/>
