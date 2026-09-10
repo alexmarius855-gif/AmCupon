@@ -4573,14 +4573,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 171,
+    "zile_ramase": 170,
     "promotii": [
       {
         "nume": "Oferta 1+1",
         "descriere": null,
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.fara-daunatori.ro%2Fsearch%2Foferta%2F%3Fq%3Doferta",
-        "zile_ramase": 171
+        "zile_ramase": 170
       }
     ],
     "exclusiv": false,
@@ -4639,21 +4639,21 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 1207,
+    "zile_ramase": 1206,
     "promotii": [
       {
         "nume": "Абонирайте се за нашия бюлетин днес & получавате отстъпка от 10 лв. при регистрация!",
         "descriere": null,
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vidaxl.bg%2Fsubscribe-to-newsletter.html",
-        "zile_ramase": 1208
+        "zile_ramase": 1207
       },
       {
         "nume": "10% намаление",
         "descriere": null,
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vidaxl.bg%2Fcampaign-s-oferti",
-        "zile_ramase": 1207
+        "zile_ramase": 1206
       }
     ],
     "exclusiv": false,
@@ -20083,6 +20083,30 @@
     "ultima_verificare": "2026-09-10"
   },
   {
+    "magazin": "beachpark.com.br",
+    "url": "https://beachpark.com.br/en/",
+    "url_afiliat": "https://beachparkbrus.sjv.io/c/7401119/3827168/49934",
+    "logo_url": "https://www.google.com/s2/favicons?domain=beachpark.com.br&sz=128",
+    "categorie": "Marketplace",
+    "categorie_slug": "marketplace",
+    "comision": "Variabil",
+    "rank": null,
+    "scor_afiliere": 50,
+    "scor_final": 50,
+    "prioritate": "standard",
+    "canal_recomandat": "Content, SEO, Social",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 0,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "impact",
+    "descriere": "",
+    "ultima_verificare": "2026-09-10"
+  },
+  {
     "magazin": "chanalai.com",
     "url": "http://www.chanalai.com/en/special-offers.html",
     "url_afiliat": "https://chanalaihotelsresorts.pxf.io/c/7401119/2025075/25189",
@@ -29759,6 +29783,31 @@
     "unique_code": "d9553270a"
   },
   {
+    "magazin": "topsport.ro",
+    "url": "https://www.topsport.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.topsport.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/10354/medium/10354.jpg",
+    "categorie": "Fashion",
+    "categorie_slug": "fashion",
+    "comision": "12.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "#999",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-09-10",
+    "scor_final": 0.0,
+    "program_id": 9353,
+    "unique_code": "ccbf91def"
+  },
+  {
     "magazin": "pcmadd.com",
     "url": "https://www.pcmadd.com/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.pcmadd.com%2F",
@@ -30207,31 +30256,6 @@
     "scor_final": 0.0,
     "program_id": 12981,
     "unique_code": "dbde49f67"
-  },
-  {
-    "magazin": "homebotireland.ie",
-    "url": "https://homebotireland.ie",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fhomebotireland.ie",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14003/medium/14003.jpg",
-    "categorie": "Casă & Grădină",
-    "categorie_slug": "casa-gradina",
-    "comision": "3.5",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "#999",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-09-10",
-    "scor_final": 0.0,
-    "program_id": 12690,
-    "unique_code": "4a2e4ac38"
   },
   {
     "magazin": "truemedicalcare.ro",
@@ -32107,6 +32131,31 @@
     "scor_final": 0.0,
     "program_id": 13207,
     "unique_code": "f38e19276"
+  },
+  {
+    "magazin": "bioluna.ro",
+    "url": "https://bioluna.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbioluna.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14535/medium/14535.jpeg",
+    "categorie": "Sănătate & Farmacie",
+    "categorie_slug": "sanatate",
+    "comision": "10.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "#999",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-09-10",
+    "scor_final": 0.0,
+    "program_id": 13210,
+    "unique_code": "908b215fe"
   },
   {
     "magazin": "boabe.ro",

@@ -20430,5 +20430,28 @@
     "exclusiv": false,
     "platforma": "impact",
     "descriere": ""
+  },
+  {
+    "magazin": "Beach Park",
+    "url": "https://beachpark.com.br/en/",
+    "url_afiliat": "https://beachparkbrus.sjv.io/c/7401119/3827168/49934",
+    "logo_url": "",
+    "categorie": "Diverse",
+    "categorie_slug": "online-mall",
+    "comision": "Variabil",
+    "rank": null,
+    "scor_afiliere": 50,
+    "scor_final": 50,
+    "prioritate": "standard",
+    "canal_recomandat": "Content, SEO, Social",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 0,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "impact",
+    "descriere": ""
   }
 ]
