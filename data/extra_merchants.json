@@ -10386,6 +10386,24 @@
         "zile_ramase": 2,
         "expira": "2026-09-10",
         "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "25% OFF Sitewide + Free Gift With Code: KLAIYI25",
+        "descriere": "25% OFF Sitewide + Free Gift With Code: KLAIYI25",
+        "cod_cupon": "KLAIYI25",
+        "landing_page": "https://www.klaiyihair.com",
+        "zile_ramase": 3,
+        "expira": "2026-09-14",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "$100 OFF Over $379 + Free Gift With Code: KLAIYI100",
+        "descriere": "$100 OFF Over $379 + Free Gift With Code: KLAIYI100",
+        "cod_cupon": "KLAIYI100",
+        "landing_page": "https://www.klaiyihair.com",
+        "zile_ramase": 3,
+        "expira": "2026-09-14",
+        "sursa": "impact_deals_api"
       }
     ],
     "folosit_de": 0,
@@ -10420,6 +10438,24 @@
         "landing_page": "https://www.klaiyihair.com",
         "zile_ramase": 2,
         "expira": "2026-09-10",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "25% OFF Sitewide + Free Gift With Code: KLAIYI25",
+        "descriere": "25% OFF Sitewide + Free Gift With Code: KLAIYI25",
+        "cod_cupon": "KLAIYI25",
+        "landing_page": "https://www.klaiyihair.com",
+        "zile_ramase": 3,
+        "expira": "2026-09-14",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "$100 OFF Over $379 + Free Gift With Code: KLAIYI100",
+        "descriere": "$100 OFF Over $379 + Free Gift With Code: KLAIYI100",
+        "cod_cupon": "KLAIYI100",
+        "landing_page": "https://www.klaiyihair.com",
+        "zile_ramase": 3,
+        "expira": "2026-09-14",
         "sursa": "impact_deals_api"
       }
     ],
