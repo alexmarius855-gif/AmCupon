@@ -1,5 +1,5 @@
 # 💰 TOP MAGAZINE după POTENȚIAL DE CÂȘTIG
-> Generat automat 10.09.2026 13:19. Pe astea să le împingi (articole, pin-uri, postări).
+> Generat automat 11.09.2026 13:19. Pe astea să le împingi (articole, pin-uri, postări).
 
 **Scor = comision × popularitate × ofertă.** Comisionul mare singur înșală — astea-s banii REALI.
 
@@ -34,7 +34,7 @@
 | 27 | Store (store.boyamic.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
 | 28 | Billionconnect (billionconnect.net) | 10% | 0 | 🏷️ ofertă | 14.0 |
 | 29 | Comfier (comfier.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 30 | Craftup (craftup.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 30 | Doctorshield (doctorshield.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
 
 ## 🎯 Cum folosești raportul
 - **Top 10** = prioritate maximă pentru articole „cel mai bun X" + pin-uri Pinterest
