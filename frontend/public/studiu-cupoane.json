@@ -1,5 +1,5 @@
 {
-  "generat": "2026-09-10",
+  "generat": "2026-09-11",
   "total_magazine": 1157,
   "cu_promotie": 120,
   "cu_cod_real": 34,
@@ -21,7 +21,7 @@
     {
       "slug": "electronice",
       "nume": "Electronice & IT",
-      "magazine": 116,
+      "magazine": 117,
       "cu_promotie": 13,
       "reducere_mediana": 30,
       "reducere_max": 80,
@@ -57,7 +57,7 @@
     {
       "slug": "software",
       "nume": "Software & digital",
-      "magazine": 88,
+      "magazine": 87,
       "cu_promotie": 4,
       "reducere_mediana": 20,
       "reducere_max": 75,
