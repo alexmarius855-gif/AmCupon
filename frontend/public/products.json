@@ -1,6 +1,6 @@
 {
-  "updated": "2026-09-11T10:17:15Z",
-  "count": 12369,
+  "updated": "2026-09-11T19:27:37Z",
+  "count": 12370,
   "products": [
     {
       "id": "promo_curteaveche.ro_0",
@@ -1147,7 +1147,7 @@
       "title": "20% Discount| Grandparents & Grandchildren Programme - Vila Gale — Cod: AVOS&NETOS",
       "url": "https://www.vilagale.com/en/highlights/promotions/grandparents-grandchildren-programme",
       "url_original": "https://www.vilagale.com/en/highlights/promotions/grandparents-grandchildren-programme",
-      "image": "",
+      "image": "https://www.google.com/s2/favicons?domain=vilagale.com&sz=128",
       "price": 0.0,
       "old_price": null,
       "discount_pct": 20,
@@ -1185,7 +1185,7 @@
       "title": "Travel with geat discounts - Up to 20% off on stays | Atzavara Hotel & Spa — Cod: AQUAWEB",
       "url": "https://www.aquahotel.com/es/ofertas/oferta-paga-ahora-2026/",
       "url_original": "https://www.aquahotel.com/es/ofertas/oferta-paga-ahora-2026/",
-      "image": "",
+      "image": "https://www.google.com/s2/favicons?domain=atzavarahotel.com&sz=128",
       "price": 0.0,
       "old_price": null,
       "discount_pct": 20,
@@ -1413,7 +1413,7 @@
       "title": "MedimFarm - 18% reducere vara cu codul SUMMER18 — Cod: SUMMER18",
       "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.medimfarm.ro",
       "url_original": "https://www.medimfarm.ro",
-      "image": "",
+      "image": "https://www.google.com/s2/favicons?domain=medimfarm.ro&sz=128",
       "price": 0.0,
       "old_price": null,
       "discount_pct": 18,
@@ -1824,7 +1824,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 1206
+      "zile_ramase": 1205
     },
     {
       "id": "promo_vidaxl.bg_3",
@@ -1843,7 +1843,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 1206
+      "zile_ramase": 1205
     },
     {
       "id": "promo_xmind.com_0",
@@ -2186,6 +2186,25 @@
       "is_promo": true,
       "cod_cupon": "EXTRA5OFF",
       "zile_ramase": 480
+    },
+    {
+      "id": "promo_store.pongbotsports.com_0",
+      "title": "5% off For Pongbot Tennis Ball Machine — Cod: Pongbotsports5",
+      "url": "https://store.pongbotsports.com/?utm_source=affiliate&utm_medium=impact&utm_campaign=affiliatepublisher",
+      "url_original": "https://store.pongbotsports.com/?utm_source=affiliate&utm_medium=impact&utm_campaign=affiliatepublisher",
+      "image": "https://www.google.com/s2/favicons?domain=store.pongbotsports.com&sz=128",
+      "price": 0.0,
+      "old_price": null,
+      "discount_pct": 5,
+      "category": "Sport & Fitness",
+      "cat_slug": "sport",
+      "brand": "Store",
+      "merchant": "Store",
+      "merchant_slug": "store.pongbotsports.com",
+      "feed_id": "promo",
+      "is_promo": true,
+      "cod_cupon": "Pongbotsports5",
+      "zile_ramase": 353
     },
     {
       "id": "promo_gardenhotels.com_0",
@@ -3135,7 +3154,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 1207
+      "zile_ramase": 1206
     },
     {
       "id": "promo_geekbuying.com_10",
@@ -3230,7 +3249,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 842
+      "zile_ramase": 841
     },
     {
       "id": "promo_geekbuying.com_9",
@@ -3496,7 +3515,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 170
+      "zile_ramase": 169
     },
     {
       "id": "promo_fara-daunatori.ro_1",
@@ -3515,7 +3534,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 170
+      "zile_ramase": 169
     },
     {
       "id": "promo_geetahair.com_7",
@@ -3940,7 +3959,7 @@
       "title": "AFFV100",
       "url": "https://wwwvalerioncom.pxf.io/c/7401119/4030964/52671",
       "url_original": "https://www.valerion.com",
-      "image": "",
+      "image": "https://www.google.com/s2/favicons?domain=awolvision.eu&sz=128",
       "price": 0.0,
       "old_price": null,
       "discount_pct": 0,
@@ -3959,7 +3978,7 @@
       "title": "AFFV130",
       "url": "https://wwwvalerioncom.pxf.io/c/7401119/4030964/52671",
       "url_original": "https://www.valerion.com",
-      "image": "",
+      "image": "https://www.google.com/s2/favicons?domain=awolvision.eu&sz=128",
       "price": 0.0,
       "old_price": null,
       "discount_pct": 0,

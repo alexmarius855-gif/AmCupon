@@ -1986,6 +1986,43 @@
     "ultima_verificare": "2026-09-11"
   },
   {
+    "magazin": "store.pongbotsports.com",
+    "url": "https://store.pongbotsports.com",
+    "url_afiliat": "https://pongbotlimited.sjv.io/c/7401119/3906819/51732",
+    "logo_url": "https://www.google.com/s2/favicons?domain=store.pongbotsports.com&sz=128",
+    "categorie": "Sport & Fitness",
+    "categorie_slug": "sport",
+    "comision": "5% comision",
+    "rank": null,
+    "scor_afiliere": 58,
+    "scor_final": 58.0,
+    "prioritate": "standard",
+    "canal_recomandat": "Content, Social",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": true,
+    "zile_ramase": 353,
+    "promotii": [
+      {
+        "nume": "5% off For Pongbot Tennis Ball Machine",
+        "descriere": "5% off For Pongbot Tennis Ball Machine",
+        "cod_cupon": "Pongbotsports5",
+        "landing_page": "https://store.pongbotsports.com/?utm_source=affiliate&utm_medium=impact&utm_campaign=affiliatepublisher",
+        "zile_ramase": 353,
+        "expira": "2027-08-31",
+        "sursa": "impact_deals_api"
+      }
+    ],
+    "folosit_de": 0,
+    "procent_succes": 80,
+    "exclusiv": false,
+    "platforma": "impact",
+    "program_name": "PONGBOT Sports Affiliate Program",
+    "allows_deep_linking": true,
+    "ultima_verificare": "2026-09-11"
+  },
+  {
     "magazin": "vevor.com",
     "url": "http://www.vevor.com",
     "url_afiliat": "https://vevoreu.pxf.io/c/7401119/1905157/22821",
@@ -4573,14 +4610,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 170,
+    "zile_ramase": 169,
     "promotii": [
       {
         "nume": "Oferta 1+1",
         "descriere": null,
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.fara-daunatori.ro%2Fsearch%2Foferta%2F%3Fq%3Doferta",
-        "zile_ramase": 170
+        "zile_ramase": 169
       }
     ],
     "exclusiv": false,
@@ -4639,21 +4676,21 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 1206,
+    "zile_ramase": 1205,
     "promotii": [
       {
         "nume": "Абонирайте се за нашия бюлетин днес & получавате отстъпка от 10 лв. при регистрация!",
         "descriere": null,
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vidaxl.bg%2Fsubscribe-to-newsletter.html",
-        "zile_ramase": 1207
+        "zile_ramase": 1206
       },
       {
         "nume": "10% намаление",
         "descriere": null,
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vidaxl.bg%2Fcampaign-s-oferti",
-        "zile_ramase": 1206
+        "zile_ramase": 1205
       }
     ],
     "exclusiv": false,
@@ -11094,33 +11131,6 @@
     "exclusiv": false,
     "platforma": "impact",
     "program_name": "Nobis",
-    "allows_deep_linking": true,
-    "ultima_verificare": "2026-09-11"
-  },
-  {
-    "magazin": "store.pongbotsports.com",
-    "url": "https://store.pongbotsports.com",
-    "url_afiliat": "https://pongbotlimited.sjv.io/c/7401119/3906819/51732",
-    "logo_url": "https://www.google.com/s2/favicons?domain=store.pongbotsports.com&sz=128",
-    "categorie": "Sport & Fitness",
-    "categorie_slug": "sport",
-    "comision": "5% comision",
-    "rank": null,
-    "scor_afiliere": 58,
-    "scor_final": 58,
-    "prioritate": "standard",
-    "canal_recomandat": "Content, Social",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 0,
-    "promotii": [],
-    "folosit_de": 0,
-    "procent_succes": 80,
-    "exclusiv": false,
-    "platforma": "impact",
-    "program_name": "PONGBOT Sports Affiliate Program",
     "allows_deep_linking": true,
     "ultima_verificare": "2026-09-11"
   },
@@ -20533,6 +20543,31 @@
     "unique_code": "bb3071a7d"
   },
   {
+    "magazin": "fornello.ro",
+    "url": "https://www.fornello.ro/",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.fornello.ro%2F",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9899/medium/9899.png",
+    "categorie": "Casă & Grădină",
+    "categorie_slug": "casa-gradina",
+    "comision": "2.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "#999",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-09-11",
+    "scor_final": 0.0,
+    "program_id": 8079,
+    "unique_code": "ab2c0c015"
+  },
+  {
     "magazin": "librarie.net",
     "url": "https://www.librarie.net/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.librarie.net%2F",
@@ -21981,31 +22016,6 @@
     "scor_final": 0.0,
     "program_id": 2754,
     "unique_code": "a46311f72"
-  },
-  {
-    "magazin": "dualstore.ro",
-    "url": "https://www.dualstore.ro/",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dualstore.ro%2F",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/8196/medium/8196.png",
-    "categorie": "Electronice & IT",
-    "categorie_slug": "electronice",
-    "comision": "4.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "#999",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-09-11",
-    "scor_final": 0.0,
-    "program_id": 7627,
-    "unique_code": "299b97f2d"
   },
   {
     "magazin": "sportdepot.ro",
@@ -32206,5 +32216,30 @@
     "scor_final": 0.0,
     "program_id": 13230,
     "unique_code": "6c37ded61"
+  },
+  {
+    "magazin": "dacobi.ro",
+    "url": "https://dacobi.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdacobi.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14553/medium/14553.jpg",
+    "categorie": "Casă & Grădină",
+    "categorie_slug": "casa-gradina",
+    "comision": "10.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "#999",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-09-11",
+    "scor_final": 0.0,
+    "program_id": 13231,
+    "unique_code": "5ebe5b18f"
   }
 ]

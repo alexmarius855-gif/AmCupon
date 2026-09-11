@@ -119,6 +119,10 @@
   "fp": "13e5636934c4ece3",
   "data": "2026-09-08"
  },
+ "/cod-reducere/store.pongbotsports.com": {
+  "fp": "b7aeb2a43a2c040f",
+  "data": "2026-09-11"
+ },
  "/cod-reducere/vevor.com": {
   "fp": "662d4f622068467d",
   "data": "2026-09-08"
@@ -1309,10 +1313,6 @@
  },
  "/cod-reducere/nobis.com": {
   "fp": "e80bf72baffd1929",
-  "data": "2026-08-16"
- },
- "/cod-reducere/store.pongbotsports.com": {
-  "fp": "d5d39bdc2297de73",
   "data": "2026-08-16"
  },
  "/cod-reducere/mowrator.com": {
@@ -2759,6 +2759,10 @@
   "fp": "a892601ceb5f565f",
   "data": "2026-09-09"
  },
+ "/cod-reducere/fornello.ro": {
+  "fp": "469c440fa9ad6f0c",
+  "data": "2026-09-11"
+ },
  "/cod-reducere/librarie.net": {
   "fp": "5c63012120c425a5",
   "data": "2026-08-31"
@@ -2990,10 +2994,6 @@
  "/cod-reducere/decathlon.ro": {
   "fp": "d5d39bdc2297de73",
   "data": "2026-09-06"
- },
- "/cod-reducere/dualstore.ro": {
-  "fp": "ad22dd72d43ecddc",
-  "data": "2026-09-11"
  },
  "/cod-reducere/sportdepot.ro": {
   "fp": "e80bf72baffd1929",
@@ -4627,6 +4627,10 @@
   "fp": "8c2041ec5de0f639",
   "data": "2026-09-09"
  },
+ "/cod-reducere/dacobi.ro": {
+  "fp": "469c440fa9ad6f0c",
+  "data": "2026-09-11"
+ },
  "/categorii/fashion": {
   "fp": "1dd95871f1d01e6a",
   "data": "2026-09-10"
@@ -4636,7 +4640,7 @@
   "data": "2026-09-10"
  },
  "/categorii/casa-gradina": {
-  "fp": "51d49f6e297ad202",
+  "fp": "e110d079f174eaf5",
   "data": "2026-09-11"
  },
  "/categorii/software": {
@@ -4648,7 +4652,7 @@
   "data": "2026-08-16"
  },
  "/categorii/electronice": {
-  "fp": "f3a116f268b3a5ca",
+  "fp": "b36c9a3698be6ad8",
   "data": "2026-09-11"
  },
  "/categorii/beauty": {
