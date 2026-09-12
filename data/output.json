@@ -4610,14 +4610,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 169,
+    "zile_ramase": 168,
     "promotii": [
       {
         "nume": "Oferta 1+1",
         "descriere": null,
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.fara-daunatori.ro%2Fsearch%2Foferta%2F%3Fq%3Doferta",
-        "zile_ramase": 169
+        "zile_ramase": 168
       }
     ],
     "exclusiv": false,
@@ -4676,21 +4676,21 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 1205,
+    "zile_ramase": 1204,
     "promotii": [
       {
         "nume": "Абонирайте се за нашия бюлетин днес & получавате отстъпка от 10 лв. при регистрация!",
         "descriere": null,
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vidaxl.bg%2Fsubscribe-to-newsletter.html",
-        "zile_ramase": 1206
+        "zile_ramase": 1205
       },
       {
         "nume": "10% намаление",
         "descriere": null,
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vidaxl.bg%2Fcampaign-s-oferti",
-        "zile_ramase": 1205
+        "zile_ramase": 1204
       }
     ],
     "exclusiv": false,
@@ -31341,6 +31341,31 @@
     "scor_final": 0.0,
     "program_id": 10152,
     "unique_code": "a260c491d"
+  },
+  {
+    "magazin": "edogkalypsoland.ro",
+    "url": "https://edogkalypsoland.ro/ro/",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fedogkalypsoland.ro%2Fro%2F",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13714/medium/13714.jpg",
+    "categorie": "Pet Shop",
+    "categorie_slug": "animale",
+    "comision": "7.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "#999",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-09-12",
+    "scor_final": 0.0,
+    "program_id": 12387,
+    "unique_code": "7e8f31eaf"
   },
   {
     "magazin": "rikingdom.com",
