@@ -1,6 +1,6 @@
 {
   "generat": "2026-09-12",
-  "total_magazine": 1157,
+  "total_magazine": 1156,
   "cu_promotie": 121,
   "cu_cod_real": 35,
   "doar_oferta": 86,
@@ -129,7 +129,7 @@
     {
       "slug": "animale",
       "nume": "Pet shop",
-      "magazine": 16,
+      "magazine": 15,
       "cu_promotie": 1,
       "reducere_mediana": null,
       "reducere_max": null,
