@@ -4610,14 +4610,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 168,
+    "zile_ramase": 167,
     "promotii": [
       {
         "nume": "Oferta 1+1",
         "descriere": null,
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.fara-daunatori.ro%2Fsearch%2Foferta%2F%3Fq%3Doferta",
-        "zile_ramase": 168
+        "zile_ramase": 167
       }
     ],
     "exclusiv": false,
@@ -4676,21 +4676,21 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 1204,
+    "zile_ramase": 1203,
     "promotii": [
       {
         "nume": "Абонирайте се за нашия бюлетин днес & получавате отстъпка от 10 лв. при регистрация!",
         "descriere": null,
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vidaxl.bg%2Fsubscribe-to-newsletter.html",
-        "zile_ramase": 1205
+        "zile_ramase": 1204
       },
       {
         "nume": "10% намаление",
         "descriere": null,
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vidaxl.bg%2Fcampaign-s-oferti",
-        "zile_ramase": 1204
+        "zile_ramase": 1203
       }
     ],
     "exclusiv": false,
@@ -21393,31 +21393,6 @@
     "unique_code": "0c1a7057d"
   },
   {
-    "magazin": "parmashop.ro",
-    "url": "https://parmashop.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fparmashop.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13304/medium/13304.jpg",
-    "categorie": "Mâncare & Băuturi",
-    "categorie_slug": "mancare-bauturi",
-    "comision": "7.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "#999",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-09-13",
-    "scor_final": 0.0,
-    "program_id": 11817,
-    "unique_code": "bc660cd87"
-  },
-  {
     "magazin": "pentruanimale.ro",
     "url": "https://pentruanimale.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fpentruanimale.ro%2F",
@@ -29118,31 +29093,6 @@
     "unique_code": "02b7986b0"
   },
   {
-    "magazin": "sculefix.ro",
-    "url": "https://sculefix.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fsculefix.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14172/medium/14172.png",
-    "categorie": "Casă & Grădină",
-    "categorie_slug": "casa-gradina",
-    "comision": "7.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "#999",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-09-13",
-    "scor_final": 0.0,
-    "program_id": 12854,
-    "unique_code": "84b653cac"
-  },
-  {
     "magazin": "importdirect.ro",
     "url": "https://www.importdirect.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.importdirect.ro%2F",
@@ -31816,31 +31766,6 @@
     "scor_final": 0.0,
     "program_id": 13176,
     "unique_code": "b0bada32f"
-  },
-  {
-    "magazin": "kitchentools.ro",
-    "url": "https://www.kitchentools.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.kitchentools.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14505/medium/14505.jpg",
-    "categorie": "Casă & Grădină",
-    "categorie_slug": "casa-gradina",
-    "comision": "5.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "#999",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-09-13",
-    "scor_final": 0.0,
-    "program_id": 13182,
-    "unique_code": "af65ec007"
   },
   {
     "magazin": "wolfy.ro",
