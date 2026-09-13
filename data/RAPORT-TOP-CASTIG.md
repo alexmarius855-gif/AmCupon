@@ -1,5 +1,5 @@
 # 💰 TOP MAGAZINE după POTENȚIAL DE CÂȘTIG
-> Generat automat 12.09.2026 12:52. Pe astea să le împingi (articole, pin-uri, postări).
+> Generat automat 13.09.2026 13:59. Pe astea să le împingi (articole, pin-uri, postări).
 
 **Scor = comision × popularitate × ofertă.** Comisionul mare singur înșală — astea-s banii REALI.
 
@@ -15,26 +15,26 @@
 | 8 | Outin (outin.com) | 20% | 0 | 🏷️ ofertă | 28.0 |
 | 9 | Laavooextensions (laavooextensions.com) | 14% | 0 | ✅ COD | 28.0 |
 | 10 | Moftcollection (moftcollection.ro) | 20% | 0 | 🏷️ ofertă | 28.0 |
-| 11 | Dreamramp (dreamramp.ro) | 20% | 0 | 🏷️ ofertă | 28.0 |
-| 12 | Femieko (femieko.ro) | 19% | 0 | 🏷️ ofertă | 26.6 |
-| 13 | Manukashop (manukashop.ro) | 18% | 0 | 🏷️ ofertă | 25.2 |
-| 14 | E Potion (e-potion.ro) | 12% | 0 | ✅ COD | 24.0 |
-| 15 | Incaltamintelamoda (incaltamintelamoda.ro) | 12% | 0 | ✅ COD | 24.0 |
-| 16 | Tvcmall (tvcmall.com) | 11% | 0 | ✅ COD | 22.0 |
-| 17 | Bcengi (bcengi.com) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 18 | Niphean (niphean.com) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 19 | Helloice (helloice.com) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 20 | Labelshop (labelshop.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 21 | Curteaveche (curteaveche.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 22 | Cvlife (cvlife.com) | 10% | 0 | ✅ COD | 20.0 |
-| 23 | Wiskiiactive (wiskiiactive.com) | 10% | 0 | ✅ COD | 20.0 |
-| 24 | Mooyius (mooyius.com) | 12% | 0 | 🏷️ ofertă | 16.8 |
-| 25 | Aronia Charlottenburg (aronia-charlottenburg.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
-| 26 | Eufy (eufy.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 27 | Store (store.boyamic.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 28 | Billionconnect (billionconnect.net) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 29 | Comfier (comfier.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 30 | Doctorshield (doctorshield.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 11 | Femieko (femieko.ro) | 19% | 0 | 🏷️ ofertă | 26.6 |
+| 12 | Manukashop (manukashop.ro) | 18% | 0 | 🏷️ ofertă | 25.2 |
+| 13 | E Potion (e-potion.ro) | 12% | 0 | ✅ COD | 24.0 |
+| 14 | Incaltamintelamoda (incaltamintelamoda.ro) | 12% | 0 | ✅ COD | 24.0 |
+| 15 | Tvcmall (tvcmall.com) | 11% | 0 | ✅ COD | 22.0 |
+| 16 | Bcengi (bcengi.com) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 17 | Niphean (niphean.com) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 18 | Helloice (helloice.com) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 19 | Labelshop (labelshop.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 20 | Curteaveche (curteaveche.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 21 | Cvlife (cvlife.com) | 10% | 0 | ✅ COD | 20.0 |
+| 22 | Wiskiiactive (wiskiiactive.com) | 10% | 0 | ✅ COD | 20.0 |
+| 23 | Mooyius (mooyius.com) | 12% | 0 | 🏷️ ofertă | 16.8 |
+| 24 | Aronia Charlottenburg (aronia-charlottenburg.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
+| 25 | Eufy (eufy.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 26 | Store (store.boyamic.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 27 | Billionconnect (billionconnect.net) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 28 | Comfier (comfier.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 29 | Doctorshield (doctorshield.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 30 | Craftup (craftup.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
 
 ## 🎯 Cum folosești raportul
 - **Top 10** = prioritate maximă pentru articole „cel mai bun X" + pin-uri Pinterest
