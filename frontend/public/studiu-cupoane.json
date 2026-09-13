@@ -1,13 +1,13 @@
 {
-  "generat": "2026-09-12",
-  "total_magazine": 1157,
-  "cu_promotie": 121,
+  "generat": "2026-09-13",
+  "total_magazine": 1153,
+  "cu_promotie": 120,
   "cu_cod_real": 35,
-  "doar_oferta": 86,
-  "procent_cu_promotie": 10.5,
+  "doar_oferta": 85,
+  "procent_cu_promotie": 10.4,
   "procent_cu_cod": 3.0,
-  "reducere_mediana_generala": 20,
-  "magazine_cu_procent_declarat": 83,
+  "reducere_mediana_generala": 20.0,
+  "magazine_cu_procent_declarat": 82,
   "categorii": [
     {
       "slug": "carti-educatie",
@@ -39,7 +39,7 @@
     {
       "slug": "beauty",
       "nume": "Beauty & îngrijire",
-      "magazine": 80,
+      "magazine": 78,
       "cu_promotie": 12,
       "reducere_mediana": 22,
       "reducere_max": 70,
@@ -84,11 +84,11 @@
     {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
-      "magazine": 136,
-      "cu_promotie": 16,
-      "reducere_mediana": 15,
+      "magazine": 134,
+      "cu_promotie": 14,
+      "reducere_mediana": 12.5,
       "reducere_max": 70,
-      "esantion": 9
+      "esantion": 8
     },
     {
       "slug": "marketplace",
@@ -156,7 +156,7 @@
     {
       "slug": "mancare-bauturi",
       "nume": "Mâncare & băuturi",
-      "magazine": 16,
+      "magazine": 15,
       "cu_promotie": 1,
       "reducere_mediana": null,
       "reducere_max": null,
@@ -167,6 +167,15 @@
       "nume": "Financiar & asigurări",
       "magazine": 13,
       "cu_promotie": 0,
+      "reducere_mediana": null,
+      "reducere_max": null,
+      "esantion": 0
+    },
+    {
+      "slug": "online-mall",
+      "nume": "online-mall",
+      "magazine": 1,
+      "cu_promotie": 1,
       "reducere_mediana": null,
       "reducere_max": null,
       "esantion": 0
