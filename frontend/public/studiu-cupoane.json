@@ -1,13 +1,13 @@
 {
-  "generat": "2026-09-13",
-  "total_magazine": 1151,
-  "cu_promotie": 120,
-  "cu_cod_real": 35,
-  "doar_oferta": 85,
-  "procent_cu_promotie": 10.4,
-  "procent_cu_cod": 3.0,
-  "reducere_mediana_generala": 20.0,
-  "magazine_cu_procent_declarat": 82,
+  "generat": "2026-09-14",
+  "total_magazine": 1153,
+  "cu_promotie": 117,
+  "cu_cod_real": 34,
+  "doar_oferta": 83,
+  "procent_cu_promotie": 10.1,
+  "procent_cu_cod": 2.9,
+  "reducere_mediana_generala": 20,
+  "magazine_cu_procent_declarat": 81,
   "categorii": [
     {
       "slug": "carti-educatie",
@@ -30,8 +30,8 @@
     {
       "slug": "sanatate",
       "nume": "Sănătate & farmacie",
-      "magazine": 61,
-      "cu_promotie": 8,
+      "magazine": 62,
+      "cu_promotie": 7,
       "reducere_mediana": 25,
       "reducere_max": 35,
       "esantion": 5
@@ -39,7 +39,7 @@
     {
       "slug": "beauty",
       "nume": "Beauty & îngrijire",
-      "magazine": 78,
+      "magazine": 79,
       "cu_promotie": 12,
       "reducere_mediana": 22,
       "reducere_max": 70,
@@ -48,7 +48,7 @@
     {
       "slug": "fashion",
       "nume": "Fashion",
-      "magazine": 103,
+      "magazine": 102,
       "cu_promotie": 12,
       "reducere_mediana": 20,
       "reducere_max": 80,
@@ -73,18 +73,9 @@
       "esantion": 9
     },
     {
-      "slug": "auto-moto",
-      "nume": "Auto & moto",
-      "magazine": 27,
-      "cu_promotie": 3,
-      "reducere_mediana": 20,
-      "reducere_max": 35,
-      "esantion": 3
-    },
-    {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
-      "magazine": 133,
+      "magazine": 134,
       "cu_promotie": 14,
       "reducere_mediana": 12.5,
       "reducere_max": 70,
@@ -127,6 +118,15 @@
       "esantion": 0
     },
     {
+      "slug": "auto-moto",
+      "nume": "Auto & moto",
+      "magazine": 27,
+      "cu_promotie": 2,
+      "reducere_mediana": null,
+      "reducere_max": null,
+      "esantion": 2
+    },
+    {
       "slug": "animale",
       "nume": "Pet shop",
       "magazine": 16,
@@ -139,7 +139,7 @@
       "slug": "copii",
       "nume": "Copii & familie",
       "magazine": 33,
-      "cu_promotie": 3,
+      "cu_promotie": 2,
       "reducere_mediana": null,
       "reducere_max": null,
       "esantion": 2
