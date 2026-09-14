@@ -1,6 +1,6 @@
 {
-  "updated": "2026-09-14T11:16:01Z",
-  "count": 15005,
+  "updated": "2026-09-14T20:46:57Z",
+  "count": 15004,
   "products": [
     {
       "id": "promo_curteaveche.ro_0",
@@ -171,26 +171,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 16
-    },
-    {
-      "id": "promo_noriel.ro_2",
-      "title": "Reduceri de pana la 70% |  1.08-14.09.2026",
-      "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnoriel.ro%2Fpromotii%3Fp%3D3%26product_list_order%3Ddiscount.percent",
-      "url_original": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnoriel.ro%2Fpromotii%3Fp%3D3%26product_list_order%3Ddiscount.percent",
-      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/7926/medium/7926.png",
-      "price": 0.0,
-      "old_price": null,
-      "discount_pct": 70,
-      "category": "Copii & Familie",
-      "cat_slug": "copii",
-      "brand": "Noriel",
-      "merchant": "Noriel",
-      "merchant_slug": "noriel.ro",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "",
-      "zile_ramase": 0
+      "zile_ramase": 15
     },
     {
       "id": "promo_craftup.ro_0",
@@ -570,7 +551,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 16
+      "zile_ramase": 15
     },
     {
       "id": "promo_incaltamintelamoda.ro_0",
@@ -646,7 +627,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 16
+      "zile_ramase": 15
     },
     {
       "id": "promo_comfier.com_0",
@@ -798,7 +779,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 16
+      "zile_ramase": 15
     },
     {
       "id": "promo_laavooextensions.com_0",
@@ -1147,7 +1128,7 @@
       "title": "20% Discount| Grandparents & Grandchildren Programme - Vila Gale — Cod: AVOS&NETOS",
       "url": "https://vilagale.pxf.io/c/7401119/2087327/26071",
       "url_original": "https://vilagale.pxf.io/c/7401119/2087327/26071",
-      "image": "",
+      "image": "https://www.google.com/s2/favicons?domain=vilagale.com&sz=128",
       "price": 0.0,
       "old_price": null,
       "discount_pct": 20,
@@ -1185,7 +1166,7 @@
       "title": "Travel with geat discounts - Up to 20% off on stays | Atzavara Hotel & Spa — Cod: AQUAWEB",
       "url": "https://atzavarahotelspa.sjv.io/c/7401119/3040677/36939",
       "url_original": "https://atzavarahotelspa.sjv.io/c/7401119/3040677/36939",
-      "image": "",
+      "image": "https://www.google.com/s2/favicons?domain=atzavarahotel.com&sz=128",
       "price": 0.0,
       "old_price": null,
       "discount_pct": 20,
@@ -1394,7 +1375,7 @@
       "title": "MedimFarm - 18% reducere vara cu codul SUMMER18 — Cod: SUMMER18",
       "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.medimfarm.ro",
       "url_original": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.medimfarm.ro",
-      "image": "",
+      "image": "https://www.google.com/s2/favicons?domain=medimfarm.ro&sz=128",
       "price": 0.0,
       "old_price": null,
       "discount_pct": 18,
@@ -1786,7 +1767,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 1203
+      "zile_ramase": 1202
     },
     {
       "id": "promo_vidaxl.bg_3",
@@ -1805,7 +1786,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 1203
+      "zile_ramase": 1202
     },
     {
       "id": "promo_xmind.com_0",
@@ -3097,7 +3078,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 1204
+      "zile_ramase": 1203
     },
     {
       "id": "promo_geekbuying.com_10",
@@ -3192,7 +3173,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 839
+      "zile_ramase": 838
     },
     {
       "id": "promo_geekbuying.com_9",
@@ -3458,7 +3439,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 167
+      "zile_ramase": 166
     },
     {
       "id": "promo_fara-daunatori.ro_1",
@@ -3477,7 +3458,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 167
+      "zile_ramase": 166
     },
     {
       "id": "promo_geetahair.com_7",
@@ -3902,7 +3883,7 @@
       "title": "AFFV100",
       "url": "https://wwwvalerioncom.pxf.io/c/7401119/4030964/52671",
       "url_original": "https://wwwvalerioncom.pxf.io/c/7401119/4030964/52671",
-      "image": "",
+      "image": "https://www.google.com/s2/favicons?domain=awolvision.eu&sz=128",
       "price": 0.0,
       "old_price": null,
       "discount_pct": 0,
@@ -3921,7 +3902,7 @@
       "title": "AFFV130",
       "url": "https://wwwvalerioncom.pxf.io/c/7401119/4030964/52671",
       "url_original": "https://wwwvalerioncom.pxf.io/c/7401119/4030964/52671",
-      "image": "",
+      "image": "https://www.google.com/s2/favicons?domain=awolvision.eu&sz=128",
       "price": 0.0,
       "old_price": null,
       "discount_pct": 0,
@@ -4130,7 +4111,7 @@
       "title": "Categoria cu Produse de Sezon la Reducere",
       "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F220-volti.ro%2Fsuper-oferte-de-sezon%2F",
       "url_original": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F220-volti.ro%2Fsuper-oferte-de-sezon%2F",
-      "image": "https://www.google.com/s2/favicons?domain=220-volti.ro&sz=128",
+      "image": "",
       "price": 0.0,
       "old_price": null,
       "discount_pct": 0,
@@ -4297,25 +4278,6 @@
       "zile_ramase": 46
     },
     {
-      "id": "promo_estel.ro_0",
-      "title": "Provocarea parului sanatos – Întoarcerea la rutina de toamnă",
-      "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.estel.ro%2Fro%2Fpromotions%2Fprovocarea-parului-sanatos-intoarcerea-la-rutina-de-toamna",
-      "url_original": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.estel.ro%2Fro%2Fpromotions%2Fprovocarea-parului-sanatos-intoarcerea-la-rutina-de-toamna",
-      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/12670/medium/12670.png",
-      "price": 0.0,
-      "old_price": null,
-      "discount_pct": 0,
-      "category": "Beauty & Îngrijire",
-      "cat_slug": "beauty",
-      "brand": "Estel",
-      "merchant": "Estel",
-      "merchant_slug": "estel.ro",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "",
-      "zile_ramase": 31
-    },
-    {
       "id": "promo_trendyol.com_0",
       "title": "Trendyol - Cel mai mare marketplace turcesc",
       "url": "https://www.trendyol.com",
@@ -4329,6 +4291,25 @@
       "brand": "Trendyol",
       "merchant": "Trendyol",
       "merchant_slug": "trendyol.com",
+      "feed_id": "promo",
+      "is_promo": true,
+      "cod_cupon": "",
+      "zile_ramase": 30
+    },
+    {
+      "id": "promo_estel.ro_0",
+      "title": "Provocarea parului sanatos – Întoarcerea la rutina de toamnă",
+      "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.estel.ro%2Fro%2Fpromotions%2Fprovocarea-parului-sanatos-intoarcerea-la-rutina-de-toamna",
+      "url_original": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.estel.ro%2Fro%2Fpromotions%2Fprovocarea-parului-sanatos-intoarcerea-la-rutina-de-toamna",
+      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/12670/medium/12670.png",
+      "price": 0.0,
+      "old_price": null,
+      "discount_pct": 0,
+      "category": "Beauty & Îngrijire",
+      "cat_slug": "beauty",
+      "brand": "Estel",
+      "merchant": "Estel",
+      "merchant_slug": "estel.ro",
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
@@ -4848,6 +4829,25 @@
       "zile_ramase": 16
     },
     {
+      "id": "promo_afisport.ro_0",
+      "title": "Extragarantie 2+3 ani la Biciclete Afisport.ro",
+      "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fafisport.ro%2Fbiciclete-mtb%2F",
+      "url_original": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fafisport.ro%2Fbiciclete-mtb%2F",
+      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/5904/medium/5904.png",
+      "price": 0.0,
+      "old_price": null,
+      "discount_pct": 0,
+      "category": "Sport & Fitness",
+      "cat_slug": "sport",
+      "brand": "Afisport",
+      "merchant": "Afisport",
+      "merchant_slug": "afisport.ro",
+      "feed_id": "promo",
+      "is_promo": true,
+      "cod_cupon": "",
+      "zile_ramase": 15
+    },
+    {
       "id": "promo_aronia-charlottenburg.ro_0",
       "title": "Promotie Aronino",
       "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Faronia-charlottenburg.ro%2F",
@@ -4864,7 +4864,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 16
+      "zile_ramase": 15
     },
     {
       "id": "promo_noriel.ro_0",
@@ -4880,25 +4880,6 @@
       "brand": "Noriel",
       "merchant": "Noriel",
       "merchant_slug": "noriel.ro",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "",
-      "zile_ramase": 16
-    },
-    {
-      "id": "promo_afisport.ro_0",
-      "title": "Extragarantie 2+3 ani la Biciclete Afisport.ro",
-      "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fafisport.ro%2Fbiciclete-mtb%2F",
-      "url_original": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fafisport.ro%2Fbiciclete-mtb%2F",
-      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/5904/medium/5904.png",
-      "price": 0.0,
-      "old_price": null,
-      "discount_pct": 0,
-      "category": "Sport & Fitness",
-      "cat_slug": "sport",
-      "brand": "Afisport",
-      "merchant": "Afisport",
-      "merchant_slug": "afisport.ro",
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",

@@ -2756,7 +2756,7 @@
   "data": "2026-08-16"
  },
  "/cod-reducere/noriel.ro": {
-  "fp": "aa4ef2f55f2f11dd",
+  "fp": "acbe15554d820784",
   "data": "2026-09-14"
  },
  "/cod-reducere/fornello.ro": {
@@ -2886,6 +2886,10 @@
  "/cod-reducere/gryxx.ro": {
   "fp": "e80bf72baffd1929",
   "data": "2026-08-16"
+ },
+ "/cod-reducere/parmashop.ro": {
+  "fp": "49978ce921eae221",
+  "data": "2026-09-14"
  },
  "/cod-reducere/f64.ro": {
   "fp": "ad22dd72d43ecddc",
@@ -3438,10 +3442,6 @@
  "/cod-reducere/obio.ro": {
   "fp": "9c7844908c8955cc",
   "data": "2026-08-31"
- },
- "/cod-reducere/shop.el-studio.ro": {
-  "fp": "8c2041ec5de0f639",
-  "data": "2026-08-16"
  },
  "/cod-reducere/librariadelfin.ro": {
   "fp": "ab1092215d291cef",
@@ -4628,7 +4628,7 @@
   "data": "2026-09-14"
  },
  "/categorii/beauty": {
-  "fp": "0269ac3737d9a8b4",
+  "fp": "c6d970d967a3e51b",
   "data": "2026-09-14"
  },
  "/categorii/sport": {
@@ -4668,8 +4668,8 @@
   "data": "2026-09-09"
  },
  "/categorii/mancare-bauturi": {
-  "fp": "3d53e9fdc6729d57",
-  "data": "2026-09-13"
+  "fp": "3d3361fcf1959d54",
+  "data": "2026-09-14"
  },
  "/categorii/financiar": {
   "fp": "d45ce269099af476",

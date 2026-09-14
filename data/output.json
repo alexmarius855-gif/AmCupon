@@ -4610,14 +4610,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 167,
+    "zile_ramase": 166,
     "promotii": [
       {
         "nume": "Oferta 1+1",
         "descriere": null,
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.fara-daunatori.ro%2Fsearch%2Foferta%2F%3Fq%3Doferta",
-        "zile_ramase": 167
+        "zile_ramase": 166
       }
     ],
     "exclusiv": false,
@@ -4676,21 +4676,21 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 1203,
+    "zile_ramase": 1202,
     "promotii": [
       {
         "nume": "Абонирайте се за нашия бюлетин днес & получавате отстъпка от 10 лв. при регистрация!",
         "descriere": null,
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vidaxl.bg%2Fsubscribe-to-newsletter.html",
-        "zile_ramase": 1204
+        "zile_ramase": 1203
       },
       {
         "nume": "10% намаление",
         "descriere": null,
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vidaxl.bg%2Fcampaign-s-oferti",
-        "zile_ramase": 1203
+        "zile_ramase": 1202
       }
     ],
     "exclusiv": false,
@@ -21343,6 +21343,31 @@
     "unique_code": "0c1a7057d"
   },
   {
+    "magazin": "parmashop.ro",
+    "url": "https://parmashop.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fparmashop.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13304/medium/13304.jpg",
+    "categorie": "Mâncare & Băuturi",
+    "categorie_slug": "mancare-bauturi",
+    "comision": "7.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-09-14",
+    "scor_final": 0.0,
+    "program_id": 11817,
+    "unique_code": "bc660cd87"
+  },
+  {
     "magazin": "f64.ro",
     "url": "https://www.f64.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.f64.ro",
@@ -24791,31 +24816,6 @@
     "scor_final": 0.0,
     "program_id": 5672,
     "unique_code": "48a30b7c9"
-  },
-  {
-    "magazin": "shop.el-studio.ro",
-    "url": "https://shop.el-studio.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fshop.el-studio.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11032/medium/11032.png",
-    "categorie": "Beauty & Îngrijire",
-    "categorie_slug": "beauty",
-    "comision": "7.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-09-14",
-    "scor_final": 0.0,
-    "program_id": 10070,
-    "unique_code": "d8d0bdbba"
   },
   {
     "magazin": "librariadelfin.ro",

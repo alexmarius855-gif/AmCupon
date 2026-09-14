@@ -39,7 +39,7 @@
     {
       "slug": "beauty",
       "nume": "Beauty & îngrijire",
-      "magazine": 79,
+      "magazine": 78,
       "cu_promotie": 12,
       "reducere_mediana": 22,
       "reducere_max": 70,
@@ -156,7 +156,7 @@
     {
       "slug": "mancare-bauturi",
       "nume": "Mâncare & băuturi",
-      "magazine": 14,
+      "magazine": 15,
       "cu_promotie": 1,
       "reducere_mediana": null,
       "reducere_max": null,
