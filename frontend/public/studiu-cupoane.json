@@ -1,11 +1,11 @@
 {
   "generat": "2026-09-14",
-  "total_magazine": 1153,
+  "total_magazine": 1151,
   "cu_promotie": 117,
   "cu_cod_real": 34,
   "doar_oferta": 83,
-  "procent_cu_promotie": 10.1,
-  "procent_cu_cod": 2.9,
+  "procent_cu_promotie": 10.2,
+  "procent_cu_cod": 3.0,
   "reducere_mediana_generala": 20,
   "magazine_cu_procent_declarat": 81,
   "categorii": [
@@ -21,7 +21,7 @@
     {
       "slug": "electronice",
       "nume": "Electronice & IT",
-      "magazine": 116,
+      "magazine": 115,
       "cu_promotie": 13,
       "reducere_mediana": 30,
       "reducere_max": 80,
@@ -93,7 +93,7 @@
     {
       "slug": "sport",
       "nume": "Sport & fitness",
-      "magazine": 49,
+      "magazine": 48,
       "cu_promotie": 6,
       "reducere_mediana": 10,
       "reducere_max": 30,
