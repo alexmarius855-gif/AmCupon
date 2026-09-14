@@ -50,6 +50,7 @@ BREVO_BASE     = "https://api.brevo.com/v3"
 
 OUTPUT_JSON    = os.path.join(os.path.dirname(__file__), "../frontend/public/output.json")
 SITE_URL       = "https://amcupon.ro"
+from link_oferta import link_iesire  # noqa: E402  fara clic gratis pe canale externe
 
 LUNI_RO = ["ianuarie","februarie","martie","aprilie","mai","iunie",
            "iulie","august","septembrie","octombrie","noiembrie","decembrie"]
@@ -250,7 +251,7 @@ def make_html(top_n: list, data_str: str, is_test: bool = False, total_magazine:
         cod    = promo.get("cod_cupon", "")
         titlu  = promo.get("nume", f"Oferta {name}")
         zile   = promo.get("zile_ramase", 99)
-        link   = promo.get("landing_page") or m.get("url_afiliat") or m.get("url", SITE_URL)
+        link   = link_iesire(m, promo, SITE_URL)
         b_txt, b_bg, b_fg = badge_onest(m)
 
         titlu_scurt = (titlu[:88] + "...") if len(titlu) > 88 else titlu
@@ -457,7 +458,7 @@ def make_text(top_n: list, data_str: str) -> str:
         promo = get_best_promo(m)
         cod   = promo.get("cod_cupon", "")
         titlu = promo.get("nume", "Oferta activa")
-        link  = promo.get("landing_page") or m.get("url_afiliat") or SITE_URL
+        link  = link_iesire(m, promo, SITE_URL)
         lines.append(f"{i}. {name}")
         lines.append(f"   {titlu[:80]}")
         if cod:

@@ -37,6 +37,7 @@ PAGE_ID    = os.environ.get("FACEBOOK_PAGE_ID", "")
 PAGE_TOKEN = os.environ.get("FACEBOOK_PAGE_TOKEN", "")
 GRAPH_URL  = "https://graph.facebook.com/v19.0"
 SITE_URL   = "https://amcupon.ro"
+from link_oferta import link_iesire  # noqa: E402  fara clic gratis pe canale externe
 
 OUTPUT_JSON = os.path.join(os.path.dirname(__file__), "../frontend/public/output.json")
 
@@ -408,7 +409,7 @@ def main():
                         "disc": disc,
                         "titlu": titlu_p[:70],
                         "cod": p.get("cod_cupon", ""),
-                        "url": p.get("landing_page") or m.get("url_afiliat", ""),
+                        "url": link_iesire(m, p, SITE_URL),
                         "slug": m.get("magazin", ""),
                     })
     oferte_pct.sort(key=lambda x: x["disc"], reverse=True)

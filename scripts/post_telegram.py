@@ -37,6 +37,7 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
 BOT_TOKEN  = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 CHANNEL_ID = os.environ.get("TELEGRAM_CHANNEL_ID", "")
 SITE_URL   = "https://amcupon.ro"
+from link_oferta import link_iesire  # noqa: E402  fara clic gratis pe canale externe
 API_URL    = f"https://api.telegram.org/bot{BOT_TOKEN}"
 
 OUTPUT_JSON = os.path.join(os.path.dirname(__file__), "../frontend/public/output.json")
@@ -136,7 +137,7 @@ def msg_reduceri_mari(magazine: list, data_str: str) -> str:
                         "disc": disc,
                         "titlu": escape_html(titlu[:60]),
                         "cod":   p.get("cod_cupon", ""),
-                        "link":  p.get("landing_page") or m.get("url_afiliat", ""),
+                        "link":  link_iesire(m, p, SITE_URL),
                     })
     oferte_pct.sort(key=lambda x: x["disc"], reverse=True)
 

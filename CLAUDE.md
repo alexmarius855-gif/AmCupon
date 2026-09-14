@@ -44,6 +44,13 @@ Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Pro
   Rularea manuala (`workflow_dispatch`) = rulare completa cu newsletter, deci se asteapta cron-ul.
 - **Ramase pe Alex**: 41 de magazine fara contract (30 Impact fara program, 8 expirate, temu/shein/
   trendyol). Hostinger (pagina `/hosting`) NU are contract Impact activ.
+- **14.09 — canalele din afara site-ului, acelasi tipar.** Newsletter (x2), Telegram, Facebook si
+  alertele faceau `landing_page or url_afiliat [or url]`; `/go/[magazin]` cadea pe `m.url`. La un
+  magazin fara contract toate dadeau site-ul magazinului, fara comision. Acum: `link_iesire()` din
+  `link_oferta.py` (oferta cu tracking > link afiliat > pagina NOASTRA `/cod-reducere/X`) si
+  `/go` foloseste `linkAfiliat()` din `lib/linkMagazin.ts`. Verificat: `tsc` 0; `/go/temu.com` ->
+  `/cod-reducere/temu.com`, `/go/eufy.com` -> Impact cu `subId1`, `/go/nobilacasa.ro` -> 2P cu `st`;
+  5/5 cazuri-limita pe `link_iesire`; newsletter `--dry-run`: 6 linkuri cu tracking, 5 AmCupon, 0 brute.
 
 **UPDATE 08.09.2026 (Artifactul „Deblocare AmCupon" mutat IN repo ca document viu — NEPUSHED):**
 - **Fisier nou: `docs/operational/DEBLOCARE-AMCUPON.md`.** Planul celor trei actiuni manuale

@@ -50,6 +50,7 @@ SCRIPT_DIR     = os.path.dirname(__file__)
 OUTPUT_JSON    = os.path.join(SCRIPT_DIR, "../frontend/public/output.json")
 SNAPSHOT_JSON  = os.path.join(SCRIPT_DIR, "../data/price_alert_snapshot.json")
 SITE_URL       = "https://amcupon.ro"
+from link_oferta import link_iesire  # noqa: E402  fara clic gratis pe canale externe
 
 
 def brevo_get(endpoint: str) -> dict:
@@ -239,7 +240,7 @@ def main():
         )
         cod   = promo.get("cod_cupon", new_codes[0])
         titlu = promo.get("nume", f"Oferta noua {nume}")
-        link  = promo.get("landing_page") or m.get("url_afiliat") or f"{SITE_URL}/cod-reducere/{magazin}"
+        link  = link_iesire(m, promo, SITE_URL)
 
         print(f"  {magazin}: cod {cod} -> {len(recipients)} abonati")
         for email in recipients:

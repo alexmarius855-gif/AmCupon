@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 import { cuSubId } from "../../../lib/subId";
+import { linkAfiliat } from "../../../lib/linkMagazin";
 
 /**
  * `/go/[magazin]` — redirect de afiliere pe SERVER.
@@ -46,11 +47,6 @@ function magazine(): MagazinMin[] {
   return _cache;
 }
 
-/** Linkuri de tracking invalide cunoscute — `/NA6?` vine din generatoare vechi
- *  Profitshare si duce intr-o pagina de eroare, nu la magazin. */
-function eValid(url: string): boolean {
-  return !!url && !url.includes("/NA6?") && !url.includes("/NA6&");
-}
 
 export async function GET(
   req: NextRequest,
@@ -72,7 +68,10 @@ export async function GET(
     );
   }
 
-  const brut = eValid(m.url_afiliat || "") ? m.url_afiliat! : m.url || "";
+  // Fara link afiliat -> pagina NOASTRA de magazin, nu site-ul magazinului. Pana pe
+  // 14.09.2026 cadea pe `m.url`: exact clicul gratis pe care site-ul il ascunde din 10.09,
+  // dar trimis din newsletter si social. Definitia vine din `lib/linkMagazin.ts`.
+  const brut = linkAfiliat(m);
   if (!brut) {
     return NextResponse.redirect(new URL(`/cod-reducere/${m.magazin}`, req.url), { status: 302 });
   }

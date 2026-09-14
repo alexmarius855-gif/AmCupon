@@ -98,6 +98,20 @@ def link_oferta(url_afiliat: str, landing: str) -> str:
     return url_afiliat
 
 
+def link_iesire(m: dict, promo: dict = None, site_url: str = "https://amcupon.ro") -> str:
+    """Linkul pe care il PUBLICA un canal din afara site-ului (newsletter, Telegram,
+    Facebook, alerte). Pagina ofertei daca are tracking, altfel linkul afiliat, altfel
+    pagina NOASTRA de magazin — niciodata site-ul magazinului fara comision.
+
+    Inlocuieste `landing_page or url_afiliat or url`, repetat in patru scripturi: dupa
+    13.09.2026, la un magazin fara contract `landing_page` si `url_afiliat` sunt `url`,
+    deci lantul `or` ar fi publicat exact clicul gratis pe care site-ul il ascunde."""
+    for candidat in ((promo or {}).get("landing_page"), m.get("url_afiliat")):
+        if are_tracking(candidat or ""):
+            return candidat
+    return f"{site_url}/cod-reducere/{m.get('magazin', '')}"
+
+
 def trece_prin_tracking(magazine: list) -> tuple:
     """In-place pe lista de magazine. Idempotent: ce are deja tracking nu se atinge.
     Intoarce (afiliate_neplatite_aduse_la_url, oferte_deep_link, oferte_pe_link_simplu)."""
