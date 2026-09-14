@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import fs from "fs";
 import path from "path";
-import HomeClient from "./HomeClient";
+import HomeClient, { type Magazin } from "./HomeClient";
 
 export const metadata: Metadata = {
   title: "AmCupon.ro — Coduri de reducere si oferte verificate zilnic",
@@ -51,8 +51,37 @@ function buildProduseCategorii(): ProdusCategorie[] {
   return [{ slug: "toate", label: "Produse populare", emoji: "🛍️", products: all.slice(0, 16) }];
 }
 
+// Campuri din output.json pe care prima pagina NU le citeste. Masurat 14.09.2026: HTML-ul
+// avea 1,57 MB, din care 1,08 MB date trimise catre HomeClient — toate cele 1.151 de magazine,
+// cu TOATE campurile. Scoase de aici, ele nu mai pot fi citite nici din greseala: interfata
+// `Magazin` din HomeClient nu le mai declara, deci `tsc` pica daca cineva le foloseste.
+// CU O EXCEPTIE, prinsa la comparatia textului vizibil, nu de tsc: un camp OPTIONAL in
+// interfata altei componente trece de compilare. `ultima_verificare` e optional in
+// `lib/dealScore.ts`; scos, Deal Score-ul afisat scadea (90 -> 75). Inainte sa adaugi un
+// camp aici: grep in lib/ si app/components/, nu doar in HomeClient.
+// `comision` e si o scurgere: comisionul nostru nu are ce cauta in browser (LECTII-TEHNICE #10).
+const CAMPURI_NEFOLOSITE = [
+  "platforma", "program_id", "program_name", "unique_code", "allows_deep_linking",
+  "canal_recomandat", "scor_afiliere", "rank", "trend", "prioritate",
+  "comision", "procent_succes", "folosit_de", "produse_in_feed", "sursa_import",
+];
+
+function doarCeFolosesteHomepage(lista: Record<string, unknown>[]): Magazin[] {
+  return lista.map((m) => {
+    const usor: Record<string, unknown> = { ...m };
+    for (const k of CAMPURI_NEFOLOSITE) delete usor[k];
+    if (Array.isArray(usor.promotii)) {
+      usor.promotii = (usor.promotii as Record<string, unknown>[]).map((p) => {
+        const { sursa: _sursa, ...rest } = p;
+        return rest;
+      });
+    }
+    return usor as unknown as Magazin;
+  });
+}
+
 export default function Page() {
-  const magazine = readJSON<Parameters<typeof HomeClient>[0]["magazine"]>("output.json", []);
+  const magazine = doarCeFolosesteHomepage(readJSON<Record<string, unknown>[]>("output.json", []));
   const blogAll = readJSON<Parameters<typeof HomeClient>[0]["blogPosts"]>("blog-latest.json", []);
   const recomandate = readJSON<Parameters<typeof HomeClient>[0]["recomandate"]>("recomandate.json", []);
   const produseCategorii = buildProduseCategorii();

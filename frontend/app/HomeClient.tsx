@@ -17,27 +17,24 @@ interface Promotie {
   zile_ramase: number;
 }
 
-interface Magazin {
+// Doar campurile pe care prima pagina le CITESTE. `page.tsx` taie restul inainte sa le
+// trimita in browser (CAMPURI_NEFOLOSITE) — fiecare camp de aici calatoreste de 1.151 ori
+// in HTML. Un camp nou folosit aici trebuie scos si din lista de acolo, altfel e `undefined`.
+export interface Magazin {
   magazin: string;
   url: string;
   url_afiliat: string;
   logo_url?: string;
   categorie: string;
   categorie_slug?: string;
-  comision: string;
-  scor_afiliere: number;
   scor_final: number;
-  rank?: number;
-  prioritate: string;
-  canal_recomandat: string;
   sales_number: number;
-  trend: number;
   are_promotie: boolean;
   cod_cupon: boolean;
   zile_ramase: number;
   promotii: Promotie[];
   exclusiv: boolean;
-  ultima_verificare?: string;
+  ultima_verificare?: string; // citit de lib/dealScore.ts (bonus de prospetime)
 }
 
 // Paleta curatata: fiecare categorie are un accent distinct (recunoastere instanta),
@@ -1493,7 +1490,7 @@ export default function HomeClient({
 
           <div className="border-t border-[#2a2f36] pt-6 space-y-2">
             <p className="text-xs text-[#c9ced5] leading-relaxed max-w-4xl">
-              Linkurile de pe AmCupon.ro sunt linkuri afiliate generate prin 2Performant. Cand accesezi un magazin partener si efectuezi o achizitie, primim un comision de la magazin fara niciun cost suplimentar pentru tine.
+              Linkurile de pe AmCupon.ro sunt linkuri afiliate, generate prin retelele de afiliere la care suntem inscrisi (2Performant, Impact, Awin). Cand accesezi un magazin partener si efectuezi o achizitie, primim un comision de la magazin fara niciun cost suplimentar pentru tine.
             </p>
             <p className="text-xs text-[#9399a0]">
               &copy; {new Date().getFullYear()} AmCupon.ro &mdash; Toate drepturile rezervate.
