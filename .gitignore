@@ -43,3 +43,6 @@ Thumbs.db
 
 # Cache local pentru logo-uri/poze de produs (uzina de continut social)
 data/.cache-imagini/
+
+# Permisiuni deep-link Impact — regenerat de fetch_impact_api.py la fiecare rulare, inainte de merge
+data/impact_deeplink.json

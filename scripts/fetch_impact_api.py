@@ -32,8 +32,10 @@ HEADERS     = {"Accept": "application/json"}
 DATA_DIR    = os.path.join(os.path.dirname(__file__), "..", "data")
 EXTRA_PATH  = os.path.join(DATA_DIR, "extra_merchants.json")
 OUTPUT_PATH = os.path.join(DATA_DIR, "output.json")
+DEEPLINK_PATH = os.path.join(DATA_DIR, "impact_deeplink.json")
 
-REAL_TRACKING_RE = re.compile(r"pxf\.io|sjv\.io|impactradius|impact\.com|7401119|irclickid|prf\.hn|anrdoezrs\.net", re.I)
+# `/c/<cont>/<ad>/<campanie>` prinde si linkurile Impact pe domeniu propriu (discount.beachsim.com).
+REAL_TRACKING_RE = re.compile(r"pxf\.io|sjv\.io|impactradius|impact\.com|7401119|irclickid|prf\.hn|anrdoezrs\.net|/c/\d+/\d+/\d+", re.I)
 
 AUTH = None
 
@@ -79,62 +81,70 @@ def find_best_tracking_link(ads):
             return tl
     return ""
 
+# 13.09.2026 — trei bug-uri in functiile de mai jos, care tineau 52 de magazine cu
+# contract ACTIV fara comision. Masurat pe API-ul contului, nu presupus:
+#   1. Linkul se cauta DOAR in /Ads?Type=TEXT_LINK. Multe campanii n-au reclame text,
+#      desi obiectul Campaign are campul `TrackingLink` completat — acela e linkul oficial.
+#   2. Cand /Ads era gol, `url_afiliat` primea URL-ul CAMPANIEI, adica site-ul normal al
+#      brandului. Clicul pleca fara tracking, dar magazinul arata „rezolvat" si nu mai
+#      intra in niciun raport. Un link fara comision care pare bun e mai rau decat lipsa.
+#   3. Potrivirea pe SUBSIR intre nume („mn in key or key in mn") — tiparul #1 din
+#      docs/LECTII-TEHNICE.md. Putea lipi linkul altui magazin. Acum: domeniu exact, apoi eTLD+1.
+# Plus: /Campaigns intoarce si contracte EXPIRATE (31 din 566); acelea nu platesc.
+from reconcile_impact_links import domain_from_url, etld1  # noqa: E402
+
+
 def build_campaign_index(campaigns):
+    """domeniu -> campanie, doar pentru contracte ACTIVE."""
     campaign_index = {}
     for c in campaigns:
-        name  = c.get("CampaignName", "").lower().strip()
-        adv   = c.get("AdvertiserName", "").lower().strip()
-        url   = c.get("CampaignUrl", c.get("AdvertiserUrl", "")).lower()
-        cid   = str(c.get("CampaignId", ""))
-        domain = url.replace("https://", "").replace("http://", "").replace("www.", "").split("/")[0]
-        for key in [name, adv, domain]:
-            if key:
-                campaign_index[key] = {"id": cid, "name": name, "url": url}
+        if c.get("ContractStatus") != "Active":
+            continue
+        for camp_url in (c.get("CampaignUrl"), c.get("AdvertiserUrl")):
+            domain = domain_from_url(camp_url or "")
+            if domain:
+                campaign_index.setdefault(domain, c)
     return campaign_index
 
 
-def find_campaign(campaign_index, merchant_name, merchant_url):
-    mn = merchant_name.lower()
-    mu = merchant_url.lower().replace("https://", "").replace("http://", "").replace("www.", "").split("/")[0]
-    for key in [mn, mu]:
-        if key in campaign_index:
-            return campaign_index[key]
-    for key, cdata in campaign_index.items():
-        if mn in key or key in mn or mu in key or key in mu:
-            return cdata
-        for word in mn.split():
-            if len(word) > 4 and word in key:
-                return cdata
+def find_campaign(campaign_index, merchant_url):
+    domain = domain_from_url(merchant_url)
+    if not domain:
+        return None
+    if domain in campaign_index:
+        return campaign_index[domain]
+    baza = etld1(domain)
+    for key, c in campaign_index.items():
+        if etld1(key) == baza:
+            return c
     return None
 
 
 def upgrade_merchants(merchants, campaign_index, label):
     """Proceseaza o lista de magazine, upgradeaza url_afiliat in-place cand gaseste
-    o campanie Impact activa care se potriveste. Returneaza (updated, not_found)."""
+    o campanie Impact ACTIVA pe acelasi domeniu. Returneaza (updated, not_found).
+    Fara link real, magazinul ramane neatins — nu primeste niciodata un link simplu."""
     updated = 0
     not_found = []
     for m in merchants:
-        c = find_campaign(campaign_index, m["magazin"], m.get("url", ""))
+        c = find_campaign(campaign_index, m.get("url", "") or m["magazin"])
         if not c:
             not_found.append(m["magazin"])
             continue
 
-        ads = get_ads_for_campaign(c["id"])
-        link = find_best_tracking_link(ads)
+        link = (c.get("TrackingLink") or "").strip()
+        if not REAL_TRACKING_RE.search(link):
+            link = find_best_tracking_link(get_ads_for_campaign(c["CampaignId"]))
+            time.sleep(0.1)
 
         if link:
             m["url_afiliat"] = link
             m["platforma"] = "impact"
             updated += 1
-            print(f"  OK [{label}] [{c['id']}] {m['magazin']:25s} -> {link[:60]}")
+            print(f"  OK [{label}] [{c['CampaignId']}] {m['magazin']:25s} -> {link[:60]}")
         else:
-            camp_url = c.get("url") or m.get("url", "")
-            if camp_url:
-                m["url_afiliat"] = camp_url
-                m["platforma"] = "impact"
-            print(f"  NOADS [{label}] [{c['id']}] {m['magazin']} (folosit campaign url)")
-
-        time.sleep(0.1)
+            not_found.append(m["magazin"])
+            print(f"  FARA LINK [{label}] [{c['CampaignId']}] {m['magazin']} (neatins)")
     return updated, not_found
 
 
@@ -149,8 +159,19 @@ def main():
 
     print("Fetch campanii Impact.com...")
     campaigns = get_all_campaigns()
-    print(f"  {len(campaigns)} campanii active gasit")
     campaign_index = build_campaign_index(campaigns)
+    print(f"  {len(campaigns)} campanii in cont, {len(campaign_index)} domenii cu contract activ")
+
+    # Permisiunea de deep-link, per campanie, pentru scripts/link_oferta.py. Nu se ghiceste
+    # din domeniul magazinului: AdGuard VPN (adguard-vpn.com) accepta deep-link DOAR pe
+    # adguard.com — ghicit, linkul ofertei dadea 404. Fisierul se regenereaza la fiecare
+    # rulare, inainte de merge; lipsa lui = fara deep-link (link afiliat simplu).
+    deeplink = {str(c["CampaignId"]): {"permis": str(c.get("AllowsDeeplinking")).lower() == "true",  # vine ca TEXT: bool("false") e True
+                                       "domenii": c.get("DeeplinkDomains") or []}
+                for c in campaigns if c.get("ContractStatus") == "Active"}
+    with open(DEEPLINK_PATH, "w", encoding="utf-8") as f:
+        json.dump(deeplink, f, ensure_ascii=False, indent=1)
+    print(f"  permisiuni deep-link scrise: {sum(v['permis'] for v in deeplink.values())} din {len(deeplink)}")
 
     total_updated = 0
     all_not_found = []

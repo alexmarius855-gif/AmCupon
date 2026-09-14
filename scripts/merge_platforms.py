@@ -19,7 +19,8 @@ from urllib.parse import urlparse
 # si output) nu-l mai ia in calcul dupa prima rulare. Gasit + reparat 06.08.2026.
 _REAL_TRACKING_RE = re.compile(
     r"pxf\.io|sjv\.io|impactradius|impact\.com|7401119|irclickid|prf\.hn|anrdoezrs\.net|"
-    r"2performant\.com|awin1\.com|cread\.php",
+    r"2performant\.com|awin1\.com|cread\.php|"
+    r"/c/\d+/\d+/\d+",  # Impact pe domeniul propriu al brandului (discount.beachsim.com)
     re.I,
 )
 # `profitshare.ro` a fost SCOS din lista de mai sus pe 19.08.2026 — contul a fost
@@ -217,6 +218,14 @@ def main():
     if _fake_cleaned:
         print(f"  link-uri false curatate (fara tracking real, aveau parametru fals): {_fake_cleaned}")
 
+    # ── Clicul pe OFERTA trece prin tracking, nu direct pe site-ul magazinului ──
+    # 210 din 309 promotii active plecau fara comision (13.09.2026). Motivul si formatele
+    # testate live: scripts/link_oferta.py — sursa unica, folosita si de import_csv_promotii.py.
+    from link_oferta import trece_prin_tracking  # noqa: E402
+    _neplatite, _deep, _simplu = trece_prin_tracking(merged)
+    print(f"  linkuri afiliate neplatite (fara tracking sau contract expirat) aduse la url: {_neplatite}")
+    print(f"  oferte trecute prin tracking: {_deep} deep-link, {_simplu} pe linkul afiliat simplu")
+
     # ── ultima_verificare: stampila REALA de "pipeline-ul a confirmat azi acest record" ──
     # Inainte, campul se seta o singura data la creare (fetch_2p_api.py/import_csv_promotii.py/
     # process_data.py) si nu se mai actualiza niciodata dupa — deci "verificat" insemna de fapt
@@ -255,6 +264,36 @@ def main():
             _logo_fixed += 1
     print(f"  logo-uri normalizate la favicon: {_logo_fixed}")
 
+    # PRIORITATEA se normalizeaza AICI, la granita, nu in importatoare.
+    #
+    # Masurat 11.09.2026, inainte de reparatie: campul aduna patru vocabulare
+    # incompatibile, pentru ca fiecare importator scria ce credea el —
+    #   "standard" (649), "featured" (14), "high" (3)  ... si "#999" (491).
+    # Ultimul venea din `f"#{rank}"` cu rank=999, adica santinela pentru „neclasat":
+    # toate cele 491 erau identice cu "#" + rank, deci pura redundanta peste un camp
+    # numeric care exista deja. Un camp in care 42% dintre randuri nu spun nimic, iar
+    # restul vorbesc trei limbi, nu se poate sorta si nu se poate filtra.
+    #
+    # Vocabularul e acum inchis si derivat dintr-un singur numar real, `scor_afiliere`.
+    # Orice valoare venita de la un importator se ignora — inclusiv una noua, inventata
+    # maine de un importator nou.
+    PRIORITATI = ("featured", "high", "standard", "neclasat")
+    _prio = {k: 0 for k in PRIORITATI}
+    for _m in merged:
+        _s = _m.get("scor_afiliere")
+        if not isinstance(_s, (int, float)) or _s <= 0:
+            _v = "neclasat"
+        elif _s >= 85:
+            _v = "featured"
+        elif _s >= 60:
+            _v = "high"
+        else:
+            _v = "standard"
+        _m["prioritate"] = _v
+        _prio[_v] += 1
+    assert set(_prio) == set(PRIORITATI)
+    print("  prioritati normalizate: " + ", ".join(
+        f"{k}={_prio[k]}" for k in PRIORITATI))
     # Sorteaza: promotii active primul, apoi scor final
     merged.sort(key=lambda x: (
         -int(x.get("are_promotie", False)),

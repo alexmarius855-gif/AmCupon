@@ -20,11 +20,20 @@
 
 ---
 
-## Starea celor trei, la 09.09.2026
+> **13.09.2026 — acțiunea 1 era, în mare parte, NU a ta.** Din cele 34 de magazine Impact
+> „fără link", **21 aveau contract activ și link oficial în contul tău** — le rata scriptul
+> din pipeline, care căuta linkul în locul greșit. Măsurat pe API, reparat în cod
+> (`fetch_impact_api.py`). Tot atunci, două găuri mai mari, invizibile pentru verificarea
+> veche: **210 oferte active duceau direct pe site-ul magazinului** (clicul cu cea mai mare
+> intenție, fără comision) și **~30 de magazine trimiteau vizitatorul pe site-ul ALTUI
+> magazin**. Toate reparate la sursă (`scripts/link_oferta.py`). Ce rămâne mai jos e doar ce
+> chiar ține de conturi: magazinele fără niciun contract.
 
-| # | Acțiune | 16.08 | 09.09 | Blocajul real |
+## Starea celor trei, la 13.09.2026
+
+| # | Acțiune | 16.08 | 13.09 | Blocajul real |
 |---|---|---|---|---|
-| 1 | **Temu, Shein, Trendyol** | deschis | **încă deschis** — și sunt 37, nu 3 | conturi de rețea, numai tu |
+| 1 | **Magazine fără contract** | deschis | **41 rămase**, din 85 reale: 30 fără contract Impact (Hostinger, Norton, Coursera, Upwork...), 8 cu contract **expirat**, plus Temu/Shein/Trendyol | aplicare sau reînnoire în rețea, numai tu |
 | 2 | **Cele două atribute Brevo** | deschis | **încă deschis** — codul le cere în 3 fișiere | cont Brevo, numai tu |
 | 3 | **Studiul pentru backlink** | de construit | **pagina e live și sincronă cu datele** | au rămas email-urile, numai tu |
 

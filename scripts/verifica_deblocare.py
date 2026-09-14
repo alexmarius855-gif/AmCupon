@@ -19,6 +19,9 @@ import json
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).parent))
+from link_oferta import are_tracking  # noqa: E402  aceeasi definitie ca pipeline-ul
+
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
@@ -47,9 +50,27 @@ def incarca(cale):
 
 
 def fara_link_afiliat(magazin) -> bool:
-    """Linkul dus utilizatorului e linkul normal al magazinului, deci comision zero."""
-    afiliat = (magazin.get("url_afiliat") or "").strip()
-    return not afiliat or afiliat == (magazin.get("url") or "").strip()
+    """Linkul dus utilizatorului n-are tracking, deci comision zero.
+
+    13.09.2026: verifica doar `url_afiliat == url` si raporta 34. Erau 85 — restul aveau
+    o forma usor diferita a aceluiasi site („https://www.hostinger.ro/" langa
+    „https://hostinger.ro"), sau site-ul ALTUI magazin (Tribit -> iclever.com).
+    """
+    return not are_tracking(magazin.get("url_afiliat") or "")
+
+
+def oferte_neplatite(magazin) -> int:
+    """Promotii active al caror buton duce direct pe site-ul magazinului, fara tracking.
+    Consumatorii fac `landing_page or url_afiliat`, deci o pagina bruta = clic gratis."""
+    url = (magazin.get("url") or "").strip()
+    n = 0
+    for p in magazin.get("promotii") or []:
+        if not isinstance(p, dict) or (p.get("zile_ramase") or 0) < 0:
+            continue
+        lp = (p.get("landing_page") or "").strip()
+        if lp and lp != url and not are_tracking(lp):
+            n += 1
+    return n
 
 
 def are_cod_real(magazin) -> bool:
@@ -63,6 +84,12 @@ def are_cod_real(magazin) -> bool:
 
 def sectiunea_1(magazine, detaliat: bool) -> None:
     print("\n[1] Magazine care primesc clicuri si nu platesc nimic")
+    neplatite = sum(oferte_neplatite(m) for m in magazine)
+    if neplatite:
+        print(f"    ! {neplatite} oferte active duc direct pe site-ul magazinului, fara tracking."
+              " Trebuiau reparate de scripts/link_oferta.py — verifica pasul de merge.")
+    else:
+        print("    OK — toate ofertele active trec prin tracking.")
     pierdute = [m for m in magazine if fara_link_afiliat(m)]
     if not pierdute:
         print("    OK — fiecare magazin live are link afiliat propriu.")
@@ -73,7 +100,7 @@ def sectiunea_1(magazine, detaliat: bool) -> None:
     for m in pierdute:
         pe_platforma.setdefault(m.get("platforma") or "?", []).append(m)
 
-    print(f"    {len(pierdute)} magazine live cu url_afiliat == url ({len(cu_promotie)} au si promotie)")
+    print(f"    {len(pierdute)} magazine live fara tracking in url_afiliat ({len(cu_promotie)} au si promotie)")
     for platforma, lista in sorted(pe_platforma.items(), key=lambda x: -len(x[1])):
         print(f"      {platforma:<14} {len(lista)}")
 

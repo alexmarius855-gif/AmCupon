@@ -279,6 +279,17 @@ Fabricația a fost eliminată de patru ori și a reapărut de fiecare dată în 
   `trend` e cazul-limită: e `0` hardcodat în `fetch_2p_api.py`, deci nu minte, dar face `/top-reduceri`
   să aibă o secțiune „Trending" care nu s-a randat niciodată — cod mort care arată ca funcționalitate.
 
+- **13.09: același tipar de fallback, dar în BANI, nu în text.** `fetch_impact_api.py`, când nu
+  găsea reclamă text, scria în `url_afiliat` URL-ul campaniei — site-ul normal. Magazinul părea
+  „rezolvat" și ieșea din toate rapoartele. Iar pe ofertă, `landing_page or url_afiliat` punea
+  pagina brută înaintea linkului plătit: **210 oferte**. **Un link fără comision care arată bun e
+  cea mai scumpă formă a fallback-ului**: nu minte cititorul, minte contabilitatea.
+  **Regula de căutare:** orice `X or url_afiliat` / `X || m.url` pe un link de ieșire — verifică
+  dacă X are tracking. Și definiția „are link afiliat" se face pe **semnătura de tracking**
+  (`link_oferta.are_tracking`), niciodată pe `url_afiliat !== url`.
+- **Câmpurile booleene din API-uri externe vin des ca TEXT.** `bool("false")` e `True`. Prins doar
+  pentru că numărul tipărit („535 din 535 permise") contrazicea o numărătoare făcută înainte.
+
 **Reguli stabilite:**
 - nu se afișează niciodată o cifră pe care nu o putem susține din date reale;
 - unde eșantionul e prea mic, se scrie explicit **„date insuficiente"** — nu se publică o cifră care

@@ -419,6 +419,13 @@ def main():
         for s in sorted(set(not_found)):
             print(f"    + {s}")
 
+    # Promotiile de aici vin cu pagina de oferta bruta si se scriu DUPA merge_platforms.py,
+    # deci trecerea din merge nu le mai prinde. Aceeasi functie, aceeasi regula.
+    from link_oferta import trece_prin_tracking
+    _neplatite, _deep, _simplu = trece_prin_tracking(magazine)
+    print(f"\n  Oferte trecute prin tracking: {_deep} deep-link, {_simplu} pe linkul afiliat simplu"
+          f" (afiliate neplatite aduse la url: {_neplatite})")
+
     # ── 4. Salveaza ──────────────────────────────────────────────────────────
     if args.dry_run:
         print("\n[4/4] DRY RUN — nu s-a salvat nimic.")

@@ -12,6 +12,39 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 13.09.2026 (clicurile NEPLATITE: 210 oferte + 52 magazine cu contract activ — NEPUSHED):**
+- **Masurat pe API-ul Impact si pe `output.json` de productie, nu presupus.** Trei gauri:
+  1. **210 din 309 oferte active** aveau `landing_page` = pagina bruta a magazinului (166 Impact,
+     44 2P). Toti consumatorii (site, newsletter, Telegram, FB, alerte) fac
+     `landing_page or url_afiliat` — butonul „vezi oferta" pleca FARA comision.
+  2. **52 de magazine cu contract Impact ACTIV** fara link. `fetch_impact_api.py` cauta linkul doar
+     in `/Ads?Type=TEXT_LINK`, desi `Campaign.TrackingLink` exista; cand nu gasea, scria URL-ul
+     campaniei (site normal) si potrivea pe SUBSIR de nume. Rezultat: **~30 de magazine duceau pe
+     site-ul ALTUI magazin** (Puzzle Ready/Bodyotics/Happy Sinks -> babysunnies.com,
+     Tribit/Sportneer -> iclever.com), toti advertiserii aceluiasi grup.
+  3. `linkAfiliat()` / `verifica_deblocare.py` comparau doar `url_afiliat === url`, deci
+     „https://www.hostinger.ro/" langa „https://hostinger.ro" trecea drept afiliat: raport 34, real 85.
+     Plus 8 linkuri pe contracte **expirate**.
+- **Reparat la sursa datelor**, un modul nou: **`scripts/link_oferta.py`** (folosit de
+  `merge_platforms.py` SI de `import_csv_promotii.py`, care scrie oferte DUPA merge). Deep-link
+  2P = `redirect_to` inlocuit; Impact = `?u=`, **doar pe domeniile permise oficial** —
+  `fetch_impact_api.py` scrie `data/impact_deeplink.json` (`AllowsDeeplinking` + `DeeplinkDomains`,
+  gitignored, regenerat inainte de merge). Motiv: adguard-vpn.com are oferta pe domeniul propriu,
+  dar campania accepta doar adguard.com -> deep-link ghicit = 404.
+- **Capcana prinsa din propria cifra**: `AllowsDeeplinking` vine ca TEXT; `bool("false")` e True,
+  deci primul raport zicea „535 din 535 permise" desi API-ul are 13 nepermise.
+- **Verificat**: lantul complet rulat local (Impact -> merge -> import CSV): oferte platite
+  **18 -> 306**, neplatite **210 -> 0**, deep-link pe campanii nepermise **0**; magazine/promotii/
+  coduri identice cu productia (1151/120/35). Live: 50/52 linkuri noi ajung la magazinul corect
+  (technitya nu raspunde, opengoaaal duce la site-ul lor US), 26/26 deep-link-uri Impact aleatorii
+  OK, 2 deep-link-uri 2P testate in browser (nobilacasa, craftup) -> pagina ofertei cu
+  `utm_source=2performant`. `verifica_deblocare.py` PICA pe productia de azi (210/85) si TRECE
+  dupa reparatie (0/41) — verificarea poate pica, nu doar certifica.
+- **Datele NU sunt comise** — pipeline-ul le regenereaza (`data/output.json` nici nu e in `git add`).
+  Rularea manuala (`workflow_dispatch`) = rulare completa cu newsletter, deci se asteapta cron-ul.
+- **Ramase pe Alex**: 41 de magazine fara contract (30 Impact fara program, 8 expirate, temu/shein/
+  trendyol). Hostinger (pagina `/hosting`) NU are contract Impact activ.
+
 **UPDATE 08.09.2026 (Artifactul „Deblocare AmCupon" mutat IN repo ca document viu — NEPUSHED):**
 - **Fisier nou: `docs/operational/DEBLOCARE-AMCUPON.md`.** Planul celor trei actiuni manuale
   traia doar intr-un artifact publicat pe 16.08. Un plan pe care nu-l deschide nimeni nu e plan.
