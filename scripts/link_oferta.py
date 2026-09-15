@@ -75,14 +75,25 @@ def _campanie(url_afiliat: str) -> str:
     return _IMPACT_LINK.search(url_afiliat).group(0).rsplit("/", 1)[-1]
 
 
+def domeniu_permis(url: str, domenii: list) -> bool:
+    """`url` cade pe unul din tiparele DeeplinkDomains ale unei campanii Impact.
+    „eufy.*" trebuie sa prinda si www.eufy.com: Impact accepta subdomeniile (testat live)."""
+    gazda = domain_from_url(url)
+    return bool(gazda) and any(
+        fnmatch(gazda, d) or fnmatch(gazda, "*." + d.lstrip("*.")) or gazda == d.lstrip("*.")
+        for d in domenii or [])
+
+
+def cu_deeplink_impact(tracking: str, destinatie: str) -> str:
+    baza = re.sub(r"([?&])u=[^&]*&?", r"\1", tracking).rstrip("?&")
+    return baza + ("&" if "?" in baza else "?") + "u=" + quote(destinatie, safe="")
+
+
 def _impact_permite(url_afiliat: str, landing: str) -> bool:
     regula = _contracte_impact().get(_campanie(url_afiliat))
     if not regula or not regula.get("permis") or not regula.get("domenii"):
         return False
-    gazda = domain_from_url(landing)
-    # „eufy.*" trebuie sa prinda si www.eufy.com: Impact accepta subdomeniile (testat live).
-    return any(fnmatch(gazda, d) or fnmatch(gazda, "*." + d.lstrip("*.")) or gazda == d.lstrip("*.")
-               for d in regula["domenii"])
+    return domeniu_permis(landing, regula["domenii"])
 
 
 def link_oferta(url_afiliat: str, landing: str) -> str:
@@ -93,8 +104,7 @@ def link_oferta(url_afiliat: str, landing: str) -> str:
         return re.sub(r"redirect_to=[^&]*",
                       lambda _: "redirect_to=" + quote(landing, safe=""), url_afiliat)
     if _IMPACT_LINK.search(url_afiliat) and _impact_permite(url_afiliat, landing):
-        baza = re.sub(r"([?&])u=[^&]*&?", r"\1", url_afiliat).rstrip("?&")
-        return baza + ("&" if "?" in baza else "?") + "u=" + quote(landing, safe="")
+        return cu_deeplink_impact(url_afiliat, landing)
     return url_afiliat
 
 

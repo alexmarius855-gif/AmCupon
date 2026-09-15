@@ -287,6 +287,12 @@ Fabricația a fost eliminată de patru ori și a reapărut de fiecare dată în 
   **Regula de căutare:** orice `X or url_afiliat` / `X || m.url` pe un link de ieșire — verifică
   dacă X are tracking. Și definiția „are link afiliat" se face pe **semnătura de tracking**
   (`link_oferta.are_tracking`), niciodată pe `url_afiliat !== url`.
+- **15.09: „are tracking" nu înseamnă „duce unde trebuie".** 17+ magazine aveau linkuri Impact
+  perfecte ca formă, pe campania ALTUI brand din același grup (ExpressVPN → holiday.com). Toate
+  verificările căutau lipsa trackingului, niciuna destinația. Iar cauza e un câmp cu nume înșelător:
+  `AdvertiserUrl` e site-ul **firmei**, `CampaignUrl` e al **brandului**. **Regula:** un link de
+  ieșire se verifică pe două axe — plătește? și ajunge la magazinul de pe buton? A doua se testează
+  live, nu din date.
 - **Câmpurile booleene din API-uri externe vin des ca TEXT.** `bool("false")` e `True`. Prins doar
   pentru că numărul tipărit („535 din 535 permise") contrazicea o numărătoare făcută înainte.
 

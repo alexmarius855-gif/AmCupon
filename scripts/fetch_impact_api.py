@@ -95,15 +95,18 @@ from reconcile_impact_links import domain_from_url, etld1  # noqa: E402
 
 
 def build_campaign_index(campaigns):
-    """domeniu -> campanie, doar pentru contracte ACTIVE."""
+    """domeniu -> campanie, doar pentru contracte ACTIVE, DOAR dupa `CampaignUrl`.
+
+    NU dupa `AdvertiserUrl`: e site-ul FIRMEI, nu al brandului. Campania „Holiday.com" are
+    AdvertiserUrl expressvpn.com (acelasi proprietar) — asa a primit ExpressVPN linkul care duce
+    pe holiday.com. Toate cele 535 de campanii active au CampaignUrl (masurat 14.09.2026)."""
     campaign_index = {}
     for c in campaigns:
         if c.get("ContractStatus") != "Active":
             continue
-        for camp_url in (c.get("CampaignUrl"), c.get("AdvertiserUrl")):
-            domain = domain_from_url(camp_url or "")
-            if domain:
-                campaign_index.setdefault(domain, c)
+        domain = domain_from_url(c.get("CampaignUrl") or "")
+        if domain:
+            campaign_index.setdefault(domain, c)
     return campaign_index
 
 
@@ -148,6 +151,70 @@ def upgrade_merchants(merchants, campaign_index, label):
     return updated, not_found
 
 
+# 14.09.2026 — linkuri „cu tracking" care duc pe site-ul ALTUI brand. Scriptul de mai sus
+# repara doar magazinele FARA tracking, deci un link bun ca forma nu era verificat niciodata.
+# Masurat live: 17 magazine — ExpressVPN -> holiday.com, WinZip si Corel -> wordperfect.com,
+# Zolucky -> hardaddy.com, trei magazine de extensii -> vivienhair.com. Vin din importuri vechi
+# care potriveau pe advertiser (grupuri cu mai multe branduri), nu pe brand.
+# Regula: campania linkului trebuie sa fie a brandului magazinului. Altfel, in ordine:
+#   1. campania ACTIVA proprie a magazinului (majoritatea au una: Nadula, Moresoo, WinZip...);
+#   2. nimic — `url_afiliat = url`, deci neplatit si vizibil, nu vizitator trimis la altcineva.
+# Linkurile catre campanii necunoscute contului nu se ating: nu le putem verifica.
+# Deep-link pe campania GRUPULUI (DeeplinkDomains permite domeniul magazinului) a fost incercat
+# si SCOS: funwhole.com, permis oficial, ajungea tot pe lumibricks.com (testat live 14.09).
+
+
+from link_oferta import domeniu_permis  # noqa: E402
+
+
+def _brand(url):
+    return etld1(domain_from_url(url or "")).split(".")[0]
+
+
+def campania_magazinului(c, url):
+    """Campania apartine brandului magazinului — trei semnale EXACTE, niciun subsir:
+    domeniul CampaignUrl; numele campaniei („Clean Email" = cleanemail.com, al carui
+    CampaignUrl e clean.email); sau domeniul magazinului in DeeplinkDomains.
+    Ultimele doua au salvat 2 din 3 linkuri corecte pe care regula doar-pe-domeniu le-ar fi
+    sters (masurat live 14.09.2026, pe 45 de linkuri active semnalate)."""
+    brand = _brand(url)
+    if brand == _brand(c.get("CampaignUrl")):
+        return True
+    if brand == re.sub(r"[^a-z0-9]", "", (c.get("CampaignName") or "").lower()):
+        return True
+    return domeniu_permis(url, c.get("DeeplinkDomains"))
+
+
+def verifica_brandul(merchants, campaigns_by_id, campaign_index, label):
+    reparate, curatate = 0, 0
+    for m in merchants:
+        link = m.get("url_afiliat") or ""
+        url = m.get("url") or ""
+        potrivire = re.search(r"/c/\d+/\d+/(\d+)", link)
+        if not potrivire or not url:
+            continue
+        c = campaigns_by_id.get(potrivire.group(1))
+        if c is None:
+            continue
+        activa = c.get("ContractStatus") == "Active"
+        if activa and campania_magazinului(c, url):
+            continue
+        proprie = find_campaign(campaign_index, url)
+        if proprie and REAL_TRACKING_RE.search(proprie.get("TrackingLink") or ""):
+            nou = proprie["TrackingLink"]
+        else:
+            nou = url
+        if nou == link:
+            continue  # deja corect (ex. deep-link pe campania grupului) — nu se renumara
+        if nou == url:
+            curatate += 1
+        else:
+            reparate += 1
+        print(f"  BRAND [{label}] {m['magazin']:24s} {c['CampaignName'][:24]:24s} -> {nou[:60]}")
+        m["url_afiliat"] = nou
+    return reparate, curatate
+
+
 def main():
     global AUTH
     if not ACCOUNT_SID or not AUTH_TOKEN:
@@ -175,30 +242,28 @@ def main():
 
     total_updated = 0
     all_not_found = []
+    brand_reparate, brand_curatate = 0, 0
+    campaigns_by_id = {str(c.get("CampaignId")): c for c in campaigns}
 
-    if os.path.exists(EXTRA_PATH):
-        with open(EXTRA_PATH, "r", encoding="utf-8") as f:
-            extra_merchants = json.load(f)
-        targets = [m for m in extra_merchants if m.get("platforma") == "impact"
-                   and not REAL_TRACKING_RE.search(m.get("url_afiliat", "") or "")]
+    for cale, label in ((EXTRA_PATH, "extra"), (OUTPUT_PATH, "output")):
+        if not os.path.exists(cale):
+            continue
+        with open(cale, "r", encoding="utf-8") as f:
+            merchants = json.load(f)
+        impact = [m for m in merchants if m.get("platforma") == "impact"]
+        r, c = verifica_brandul(impact, campaigns_by_id, campaign_index, label)
+        brand_reparate += r
+        brand_curatate += c
+        targets = [m for m in impact if not REAL_TRACKING_RE.search(m.get("url_afiliat", "") or "")]
         if targets:
-            u, nf = upgrade_merchants(targets, campaign_index, "extra")
+            u, nf = upgrade_merchants(targets, campaign_index, label)
             total_updated += u
             all_not_found += nf
-            with open(EXTRA_PATH, "w", encoding="utf-8") as f:
-                json.dump(extra_merchants, f, ensure_ascii=False, indent=2)
+        with open(cale, "w", encoding="utf-8") as f:
+            json.dump(merchants, f, ensure_ascii=False, indent=2)
 
-    if os.path.exists(OUTPUT_PATH):
-        with open(OUTPUT_PATH, "r", encoding="utf-8") as f:
-            output_merchants = json.load(f)
-        targets = [m for m in output_merchants if m.get("platforma") == "impact"
-                   and not REAL_TRACKING_RE.search(m.get("url_afiliat", "") or "")]
-        if targets:
-            u, nf = upgrade_merchants(targets, campaign_index, "output")
-            total_updated += u
-            all_not_found += nf
-            with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
-                json.dump(output_merchants, f, ensure_ascii=False, indent=2)
+    print(f"\nBrand gresit: {brand_reparate} reparate (campania proprie a brandului), "
+          f"{brand_curatate} fara campanie potrivita -> neplatite")
 
     print(f"\nGata! {total_updated} tracking links reale actualizate (live API).")
     if all_not_found:

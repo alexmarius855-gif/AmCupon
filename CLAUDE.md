@@ -44,6 +44,17 @@ Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Pro
   Rularea manuala (`workflow_dispatch`) = rulare completa cu newsletter, deci se asteapta cron-ul.
 - **Ramase pe Alex**: 41 de magazine fara contract (30 Impact fara program, 8 expirate, temu/shein/
   trendyol). Hostinger (pagina `/hosting`) NU are contract Impact activ.
+- **15.09 — linkuri CU tracking care duc pe site-ul ALTUI brand.** Verificarile de pana acum
+  cautau doar linkuri FARA tracking. Masurat live: ExpressVPN -> holiday.com, Anker -> eufy,
+  Parallels/WinZip -> wordperfect.com, Zolucky/Stylewe -> hardaddy.com, 3 magazine de extensii ->
+  vivienhair.com. Cauza: `build_campaign_index` indexa si dupa `AdvertiserUrl`, adica site-ul
+  FIRMEI (campania „Holiday.com" are AdvertiserUrl expressvpn.com). Acum: doar `CampaignUrl`, plus
+  `verifica_brandul()` pe TOATE linkurile Impact — campania trebuie sa fie a brandului (domeniu,
+  nume exact sau DeeplinkDomains), altfel campania proprie, altfel `url` (neplatit, buton ascuns).
+  Pe productie: 44 reparate, 93 aduse la neplatit (inclusiv dubluri din extra_merchants);
+  idempotent (a doua rulare 0/0); live 21/22 linkuri noi pe brandul corect (Corel -> VideoStudio
+  Pro, produs Corel). Deep-link pe campania GRUPULUI incercat si scos: funwhole ajungea tot pe
+  lumibricks.
 - **14.09 — canalele din afara site-ului, acelasi tipar.** Newsletter (x2), Telegram, Facebook si
   alertele faceau `landing_page or url_afiliat [or url]`; `/go/[magazin]` cadea pe `m.url`. La un
   magazin fara contract toate dadeau site-ul magazinului, fara comision. Acum: `link_iesire()` din
