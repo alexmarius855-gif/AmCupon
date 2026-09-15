@@ -56,7 +56,7 @@
   "data": "2026-09-15"
  },
  "/cod-reducere/niphean.com": {
-  "fp": "ec2790579dd8d052",
+  "fp": "4509b3bfa4e023d7",
   "data": "2026-09-15"
  },
  "/cod-reducere/cvlife.com": {
@@ -84,8 +84,8 @@
   "data": "2026-09-15"
  },
  "/cod-reducere/jollymag.ro": {
-  "fp": "549c088a1e458fff",
-  "data": "2026-09-14"
+  "fp": "a3b80031973c96a4",
+  "data": "2026-09-15"
  },
  "/cod-reducere/gsmnet.ro": {
   "fp": "a5fe593afc29ad9f",
@@ -248,7 +248,7 @@
   "data": "2026-09-14"
  },
  "/cod-reducere/awolvision.eu": {
-  "fp": "f5d2ec95b69b0abe",
+  "fp": "3efc619e0666d12c",
   "data": "2026-09-15"
  },
  "/cod-reducere/xlaserlab.com": {
@@ -272,8 +272,8 @@
   "data": "2026-09-14"
  },
  "/cod-reducere/x-sense.com": {
-  "fp": "cecb5986daec8905",
-  "data": "2026-09-14"
+  "fp": "14d50018d3699796",
+  "data": "2026-09-15"
  },
  "/cod-reducere/us.lemorele.com": {
   "fp": "e6a03cb8ecbc55f3",
@@ -2792,8 +2792,8 @@
   "data": "2026-08-31"
  },
  "/cod-reducere/automobilus.ro": {
-  "fp": "fd25f64aa6fe9ef0",
-  "data": "2026-09-14"
+  "fp": "b94fa3e028dff932",
+  "data": "2026-09-15"
  },
  "/cod-reducere/mxenduro.ro": {
   "fp": "b94fa3e028dff932",
@@ -2811,13 +2811,17 @@
   "fp": "68f4916a7e63410d",
   "data": "2026-08-31"
  },
+ "/cod-reducere/bsgmag.ro": {
+  "fp": "ad22dd72d43ecddc",
+  "data": "2026-09-15"
+ },
  "/cod-reducere/fragranza.ro": {
   "fp": "8c2041ec5de0f639",
   "data": "2026-08-16"
  },
  "/cod-reducere/libris.ro": {
-  "fp": "e9029f992486a1e5",
-  "data": "2026-09-10"
+  "fp": "ab1092215d291cef",
+  "data": "2026-09-15"
  },
  "/cod-reducere/tezyo.ro": {
   "fp": "e80bf72baffd1929",
@@ -2836,8 +2840,8 @@
   "data": "2026-08-16"
  },
  "/cod-reducere/ozone.ro": {
-  "fp": "988edd349b543c0f",
-  "data": "2026-09-02"
+  "fp": "bbcad4ad79bfc25e",
+  "data": "2026-09-15"
  },
  "/cod-reducere/shopika.ro": {
   "fp": "e80bf72baffd1929",
@@ -2872,8 +2876,8 @@
   "data": "2026-08-16"
  },
  "/cod-reducere/autoeco.ro": {
-  "fp": "fd25f64aa6fe9ef0",
-  "data": "2026-09-11"
+  "fp": "b94fa3e028dff932",
+  "data": "2026-09-15"
  },
  "/cod-reducere/gryxx.ro": {
   "fp": "e80bf72baffd1929",
@@ -2916,8 +2920,8 @@
   "data": "2026-08-16"
  },
  "/cod-reducere/maprofi.ro": {
-  "fp": "469c440fa9ad6f0c",
-  "data": "2026-09-02"
+  "fp": "a5f083164cda1b4b",
+  "data": "2026-09-15"
  },
  "/cod-reducere/piese-biciclete.eu": {
   "fp": "d5d39bdc2297de73",
@@ -2978,6 +2982,10 @@
  "/cod-reducere/smokemania.ro": {
   "fp": "bbcad4ad79bfc25e",
   "data": "2026-08-16"
+ },
+ "/cod-reducere/dualstore.ro": {
+  "fp": "ad22dd72d43ecddc",
+  "data": "2026-09-15"
  },
  "/cod-reducere/vegis.ro": {
   "fp": "9c7844908c8955cc",
@@ -3792,16 +3800,16 @@
   "data": "2026-08-31"
  },
  "/cod-reducere/autoeqt.ro": {
-  "fp": "fd25f64aa6fe9ef0",
-  "data": "2026-09-14"
+  "fp": "b94fa3e028dff932",
+  "data": "2026-09-15"
  },
  "/cod-reducere/armansport.ro": {
   "fp": "e80bf72baffd1929",
   "data": "2026-08-16"
  },
  "/cod-reducere/ioooi.ro": {
-  "fp": "469c440fa9ad6f0c",
-  "data": "2026-08-16"
+  "fp": "b2e30c3bff901106",
+  "data": "2026-09-15"
  },
  "/cod-reducere/noblle-brands.com": {
   "fp": "bbcad4ad79bfc25e",
@@ -4120,7 +4128,7 @@
   "data": "2026-08-16"
  },
  "/cod-reducere/printrecarti.ro": {
-  "fp": "5fa98620e97e5b27",
+  "fp": "ab1092215d291cef",
   "data": "2026-09-15"
  },
  "/cod-reducere/plantica.ro": {
@@ -4200,8 +4208,8 @@
   "data": "2026-08-16"
  },
  "/cod-reducere/homemart.ro": {
-  "fp": "469c440fa9ad6f0c",
-  "data": "2026-09-02"
+  "fp": "3e7c3ab54dc041e7",
+  "data": "2026-09-15"
  },
  "/cod-reducere/wojas.ro": {
   "fp": "e80bf72baffd1929",
@@ -4216,7 +4224,7 @@
   "data": "2026-08-16"
  },
  "/cod-reducere/giftdesign.ro": {
-  "fp": "dee465db33f4d51e",
+  "fp": "ec8e1ee4d1b927e3",
   "data": "2026-09-15"
  },
  "/cod-reducere/topstar.ro": {
@@ -4284,8 +4292,8 @@
   "data": "2026-08-16"
  },
  "/cod-reducere/kidsly.ro": {
-  "fp": "6e66a0b46a8af42e",
-  "data": "2026-09-02"
+  "fp": "764b7a32d43c6f89",
+  "data": "2026-09-15"
  },
  "/cod-reducere/lovepadel.ie": {
   "fp": "d5d39bdc2297de73",
@@ -4628,8 +4636,8 @@
   "data": "2026-08-16"
  },
  "/categorii/electronice": {
-  "fp": "181a805f4d5e0fdd",
-  "data": "2026-09-14"
+  "fp": "f3a116f268b3a5ca",
+  "data": "2026-09-15"
  },
  "/categorii/beauty": {
   "fp": "c6d970d967a3e51b",
