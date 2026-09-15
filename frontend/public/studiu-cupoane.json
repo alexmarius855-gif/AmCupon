@@ -1,13 +1,13 @@
 {
-  "generat": "2026-09-14",
-  "total_magazine": 1151,
-  "cu_promotie": 117,
+  "generat": "2026-09-15",
+  "total_magazine": 1152,
+  "cu_promotie": 116,
   "cu_cod_real": 34,
-  "doar_oferta": 83,
-  "procent_cu_promotie": 10.2,
+  "doar_oferta": 82,
+  "procent_cu_promotie": 10.1,
   "procent_cu_cod": 3.0,
-  "reducere_mediana_generala": 20,
-  "magazine_cu_procent_declarat": 81,
+  "reducere_mediana_generala": 20.0,
+  "magazine_cu_procent_declarat": 80,
   "categorii": [
     {
       "slug": "carti-educatie",
@@ -93,7 +93,7 @@
     {
       "slug": "sport",
       "nume": "Sport & fitness",
-      "magazine": 48,
+      "magazine": 49,
       "cu_promotie": 6,
       "reducere_mediana": 10,
       "reducere_max": 30,
@@ -148,10 +148,10 @@
       "slug": "cadouri-flori",
       "nume": "Cadouri & flori",
       "magazine": 12,
-      "cu_promotie": 2,
+      "cu_promotie": 1,
       "reducere_mediana": null,
       "reducere_max": null,
-      "esantion": 2
+      "esantion": 1
     },
     {
       "slug": "mancare-bauturi",
