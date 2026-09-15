@@ -14,13 +14,13 @@ const LINK_AIRZLINK  = "https://zhonglianhongkonglimited.sjv.io/c/7401119/376637
 const LINK_ORBITMOBILE = "https://orbitmobile.sjv.io/c/7401119/2846112/32966";
 
 export const metadata: Metadata = {
-  title: "Cel mai bun eSIM pentru Calatorie 2026 — Comparatie Airalo vs Saily | AmCupon.ro",
-  description: "Comparam cele mai bune eSIM-uri pentru calatorii internationale in 2026. Airalo, Saily, AmigoSIM — date mobile ieftine in 190+ tari fara SIM fizic. Ghid complet + linkuri afiliate.",
+  title: "eSIM pentru calatorii in afara UE 2026 | AmCupon.ro",
+  description: "Comparam furnizori de eSIM pentru calatorii in afara UE: acoperire, activare, compatibilitate, date mobile fara SIM fizic. Pagina contine linkuri afiliate.",
   keywords: ["cel mai bun esim", "esim calatorie", "airalo parere", "esim ieftin", "date mobile calatorie", "esim romania 2026", "esim international"],
   alternates: { canonical: "https://amcupon.ro/esim" },
   openGraph: {
-    title: "Cel mai bun eSIM pentru Calatorie 2026 | AmCupon.ro",
-    description: "Date mobile in 190+ tari fara SIM fizic. Comparatie Airalo, Saily, AmigoSIM — preturi, acoperire, activare.",
+    title: "eSIM pentru calatorii in afara UE 2026 | AmCupon.ro",
+    description: "Date mobile in afara UE fara SIM fizic. Comparatie de furnizori eSIM — acoperire, activare, compatibilitate.",
     url: "https://amcupon.ro/esim",
     siteName: "AmCupon.ro",
     locale: "ro_RO",
@@ -35,7 +35,7 @@ const ESIM_TOP = [
     tagline: "Cel mai popular eSIM din lume — 190+ tari, app excelenta",
     badge: "Recomandat #1",
     badgeColor: "bg-[#ddf93c]",
-    pret_min: "de la $4.50",
+    pret_min: "pret pe destinatie",
     pret_nota: "1GB / 7 zile",
     rating: "9.6",
     url: LINK_AIRALO,
@@ -60,7 +60,7 @@ const ESIM_TOP = [
     tagline: "De la echipa NordVPN — securitate si simplitate garantate",
     badge: "Cel mai sigur",
     badgeColor: "bg-[#ddf93c]",
-    pret_min: "de la $3.99",
+    pret_min: "pret pe destinatie",
     pret_nota: "1GB / 7 zile",
     rating: "9.2",
     url: LINK_SAILY,
@@ -84,7 +84,7 @@ const ESIM_TOP = [
     tagline: "Date nelimitate in unele tari — raport calitate/pret excelent",
     badge: "Cel mai accesibil",
     badgeColor: "bg-[#ddf93c]",
-    pret_min: "de la $5",
+    pret_min: "pret pe destinatie",
     pret_nota: "date nelimitate",
     rating: "8.9",
     url: LINK_AMIGO,
@@ -169,8 +169,8 @@ const FAQ = [
     a: "Da! Daca telefonul tau suporta Dual SIM (fizic + eSIM), poti pastra numarul romanesc activ pentru apeluri/SMS si folosi eSIM-ul pentru date mobile ieftine. Astfel nu platesti roaming si nu ratezi apeluri importante.",
   },
   {
-    q: "Cat costa un eSIM pentru Europa?",
-    a: "Preturile variaza: pentru Europa, un plan de 1GB / 7 zile costa intre $3-6 la Airalo sau Saily. Un plan de 5GB / 30 zile poate costa $10-18. Mult mai ieftin decat roaming-ul operatorilor romani (de obicei $2-5/zi pentru date limitate).",
+    q: "Am nevoie de eSIM cand calatoresc in Europa?",
+    a: "In tarile UE si SEE, cu un abonament romanesc ai roaming ca acasa (Regulamentul (UE) 2022/612), in limitele politicii de utilizare corecta a operatorului, deci de obicei nu ai nevoie de eSIM. Un eSIM de date are sens in afara UE (de exemplu Turcia, Egipt, Emiratele Arabe Unite, SUA) sau in tari europene din afara UE, precum Elvetia sau Marea Britanie. Preturile variaza pe destinatie si se schimba des, asa ca verifica pretul actual pe site-ul furnizorului.",
   },
   {
     q: "Airalo sau Saily — pe care il aleg?",
@@ -186,7 +186,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
   name: "Cele mai bune eSIM pentru calatorii 2026",
-  description: "Comparatie Airalo vs Saily vs AmigoSIM si alte eSIM-uri pentru calatorii internationale",
+  description: "Comparatie de furnizori eSIM pentru calatorii in afara UE",
   url: "https://amcupon.ro/esim",
   numberOfItems: ESIM_TOP.length,
   itemListElement: ESIM_TOP.map((e, i) => ({
@@ -326,8 +326,8 @@ export default function EsimPage() {
                 <p className="text-[#c9ced5]">Activezi datele mobile direct din aplicatie. Fara sa mergi la un magazin, fara sa astepti posta, fara riscul de a pierde SIM-ul.</p>
               </div>
               <div>
-                <div className="text-[#ddf93c] font-semibold mb-2">Mult mai ieftin ca roaming-ul</div>
-                <p className="text-[#c9ced5]">Un plan de 5GB la Airalo costa $8-15. Roaming-ul Orange/Vodafone in afara UE costa de 5-10x mai mult pentru aceeasi cantitate de date.</p>
+                <div className="text-[#ddf93c] font-semibold mb-2">Util in afara UE</div>
+                <p className="text-[#c9ced5]">In UE ai &bdquo;roaming ca acasa&rdquo; cu abonamentul romanesc. In afara UE, roamingul poate fi scump, iar un eSIM de date e de obicei alternativa. Compara pretul pentru destinatia ta inainte sa cumperi.</p>
               </div>
               <div>
                 <div className="text-[#ddf93c] font-semibold mb-2">Pastrezi numarul RO</div>

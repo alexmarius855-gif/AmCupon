@@ -84,6 +84,43 @@ def domeniu_permis(url: str, domenii: list) -> bool:
         for d in domenii or [])
 
 
+def _brand(url: str) -> str:
+    return etld1(domain_from_url(url or "")).split(".")[0]
+
+
+def campania_magazinului(camp: dict, url_magazin: str) -> bool:
+    """Campania Impact apartine brandului magazinului — trei semnale EXACTE, niciun subsir:
+    domeniul `CampaignUrl`; numele campaniei („Clean Email" = cleanemail.com); sau domeniul
+    magazinului in `DeeplinkDomains`. NICIODATA `AdvertiserUrl`: e site-ul firmei, iar campania
+    „Holiday.com" are AdvertiserUrl expressvpn.com — asa a primit ExpressVPN link spre holiday.com.
+    Accepta atat obiectul din API, cat si intrarea din data/impact_deeplink.json."""
+    brand = _brand(url_magazin)
+    if not brand:
+        return False
+    if brand == _brand(camp.get("CampaignUrl")):
+        return True
+    if brand == re.sub(r"[^a-z0-9]", "", (camp.get("CampaignName") or "").lower()):
+        return True
+    return domeniu_permis(url_magazin, camp.get("DeeplinkDomains") or camp.get("domenii"))
+
+
+def link_potrivit(url_afiliat: str, url_magazin: str) -> bool:
+    """False cand stim sigur ca linkul Impact NU plateste pentru magazinul asta: campania nu mai
+    are contract activ, sau e a altui brand. Fara harta contractelor nu putem sti — True.
+    reconcile_impact_links.py punea la loc, la fiecare rulare, 8 contracte EXPIRATE din CSV-ul vechi."""
+    if not _IMPACT_LINK.search(url_afiliat or ""):
+        return True
+    contracte = _contracte_impact()
+    if not contracte:
+        return True
+    regula = contracte.get(_campanie(url_afiliat))
+    if regula is None:
+        return False
+    if not regula.get("CampaignUrl"):
+        return True  # harta veche, fara date de brand
+    return campania_magazinului(regula, url_magazin)
+
+
 def cu_deeplink_impact(tracking: str, destinatie: str) -> str:
     baza = re.sub(r"([?&])u=[^&]*&?", r"\1", tracking).rstrip("?&")
     return baza + ("&" if "?" in baza else "?") + "u=" + quote(destinatie, safe="")
@@ -130,12 +167,26 @@ def trece_prin_tracking(magazine: list) -> tuple:
     for m in magazine:
         url = (m.get("url") or "").strip()
         af = (m.get("url_afiliat") or "").strip()
+        # `subId` salvat in date e mereu gresit: eticheta de atribuire o pune frontend-ul LA
+        # CLIC (lib/subId.ts), pastrand valoarea existenta si adaugand pagina dupa „~". InVideo
+        # avea `subId1=neelansh-test`, ramas dintr-un import vechi — fiecare vanzare ar fi fost
+        # raportata ca „neelansh-test~/ai-tools" (gasit de cercetarea din 15.09.2026).
+        if _IMPACT_LINK.search(af) and re.search(r"[?&]subId\d=", af, re.I):
+            af = re.sub(r"([?&])subId\d=[^&]*&?", r"\1", af, flags=re.I).rstrip("?&")
+            m["url_afiliat"] = af
         if af and af != url and not are_tracking(af) and acelasi_domeniu(af, url):
             m["url_afiliat"] = af = url
             neplatite += 1
         # Link Impact bun ca forma, dar pe un contract EXPIRAT: nu mai plateste.
         # 8 magazine pe 13.09.2026. Doar cand harta contractelor exista — fara ea nu stim.
         if contracte and url and _IMPACT_LINK.search(af) and _campanie(af) not in contracte:
+            m["url_afiliat"] = af = url
+            neplatite += 1
+        # Link pe campania ALTUI brand (ExpressVPN -> holiday.com). Garda sta AICI, la merge,
+        # nu doar in fetch_impact_api.py: pe 15.09 reparatia de acolo era anulata la acelasi pas
+        # de pipeline de reconcile_impact_links.py, care citea un CSV cu doar „Advertiser URL".
+        # Orice importator, prezent sau viitor, trece prin merge.
+        if url and not link_potrivit(af, url):
             m["url_afiliat"] = af = url
             neplatite += 1
         for p in m.get("promotii") or []:
@@ -147,8 +198,9 @@ def trece_prin_tracking(magazine: list) -> tuple:
             if not are_tracking(af):
                 # Magazin fara comision: pagina ofertei devine `url`, ca `linkPromotie()` din
                 # frontend sa ascunda butonul, la fel ca pe restul paginii — nu clic gratis.
-                if acelasi_domeniu(lp, url):
-                    p["landing_page"] = url
+                # Si cand oferta duce pe ALT site (awolvision.eu -> valerion.com): pe pagina unui
+                # magazin, o oferta spre alt brand e inselatoare, nu doar neplatita.
+                p["landing_page"] = url
                 continue
             nou = link_oferta(af, lp) if acelasi_domeniu(lp, url) else af
             p["landing_page"] = nou

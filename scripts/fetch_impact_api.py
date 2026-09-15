@@ -164,25 +164,10 @@ def upgrade_merchants(merchants, campaign_index, label):
 # si SCOS: funwhole.com, permis oficial, ajungea tot pe lumibricks.com (testat live 14.09).
 
 
-from link_oferta import domeniu_permis  # noqa: E402
-
-
-def _brand(url):
-    return etld1(domain_from_url(url or "")).split(".")[0]
-
-
-def campania_magazinului(c, url):
-    """Campania apartine brandului magazinului — trei semnale EXACTE, niciun subsir:
-    domeniul CampaignUrl; numele campaniei („Clean Email" = cleanemail.com, al carui
-    CampaignUrl e clean.email); sau domeniul magazinului in DeeplinkDomains.
-    Ultimele doua au salvat 2 din 3 linkuri corecte pe care regula doar-pe-domeniu le-ar fi
-    sters (masurat live 14.09.2026, pe 45 de linkuri active semnalate)."""
-    brand = _brand(url)
-    if brand == _brand(c.get("CampaignUrl")):
-        return True
-    if brand == re.sub(r"[^a-z0-9]", "", (c.get("CampaignName") or "").lower()):
-        return True
-    return domeniu_permis(url, c.get("DeeplinkDomains"))
+# Regula de brand traieste in link_oferta.py (sursa unica, folosita si de merge ca garda
+# finala). Numele campaniei si DeeplinkDomains au salvat 2 din 3 linkuri corecte pe care
+# regula doar-pe-domeniu le-ar fi sters (masurat live 14.09.2026, pe 45 de linkuri semnalate).
+from link_oferta import campania_magazinului  # noqa: E402
 
 
 def verifica_brandul(merchants, campaigns_by_id, campaign_index, label):
@@ -233,8 +218,12 @@ def main():
     # din domeniul magazinului: AdGuard VPN (adguard-vpn.com) accepta deep-link DOAR pe
     # adguard.com — ghicit, linkul ofertei dadea 404. Fisierul se regenereaza la fiecare
     # rulare, inainte de merge; lipsa lui = fara deep-link (link afiliat simplu).
+    # CampaignUrl + CampaignName: merge-ul verifica cu ele ca linkul e al brandului magazinului
+    # (link_oferta.link_potrivit) — garda finala pentru ORICE importator.
     deeplink = {str(c["CampaignId"]): {"permis": str(c.get("AllowsDeeplinking")).lower() == "true",  # vine ca TEXT: bool("false") e True
-                                       "domenii": c.get("DeeplinkDomains") or []}
+                                       "domenii": c.get("DeeplinkDomains") or [],
+                                       "CampaignUrl": c.get("CampaignUrl") or "",
+                                       "CampaignName": c.get("CampaignName") or ""}
                 for c in campaigns if c.get("ContractStatus") == "Active"}
     with open(DEEPLINK_PATH, "w", encoding="utf-8") as f:
         json.dump(deeplink, f, ensure_ascii=False, indent=1)

@@ -44,6 +44,25 @@ Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Pro
   Rularea manuala (`workflow_dispatch`) = rulare completa cu newsletter, deci se asteapta cron-ul.
 - **Ramase pe Alex**: 41 de magazine fara contract (30 Impact fara program, 8 expirate, temu/shein/
   trendyol). Hostinger (pagina `/hosting`) NU are contract Impact activ.
+- **15.09, seara — reparatia de brand era anulata in acelasi pipeline.** Productia a aratat
+  zolucky/nadula/winzip reparate, dar ExpressVPN si Anker din nou pe holiday.com / eufy:
+  `reconcile_impact_links.py` (pasul 7, dupa fetch) citea `data/impact_campaigns.csv`, care are
+  doar „Advertiser URL", si le punea la loc — plus 8 contracte expirate, la fiecare rulare.
+  Reparat structural: garda sta acum in **`link_oferta.link_potrivit()`**, apelata de MERGE (pasul
+  final prin care trece orice importator) si de reconcile; harta `data/impact_deeplink.json` are
+  acum `CampaignUrl` + `CampaignName`. Simulat local in ordinea pipeline-ului, de doua ori:
+  ExpressVPN/Anker raman pe `url`, reconcile 0 upgradari, merge 0 schimbari la a doua trecere,
+  `verifica_deblocare.py` 0 oferte neplatite. Magazine fara tracking: **41 -> 82** (38 erau pe
+  brandul gresit, confirmate live; restul expirate) — cifra mai mare e cea adevarata.
+  Tot aici: `subId` salvat in date se sterge (InVideo avea `subId1=neelansh-test`); la magazinele
+  fara comision, oferta spre ALT site se ascunde (awolvision.eu -> valerion.com).
+  **`/esim`**: scoase preturile fara sursa si marca Airalo din title/description; FAQ-ul spunea ca
+  eSIM-ul e „mult mai ieftin decat roamingul" in EUROPA — fals pentru un abonament romanesc in UE
+  (roaming ca acasa, Reg. (UE) 2022/612). Pagina vorbeste acum de calatorii in afara UE.
+  **In asteptare, necomis:** `frontend/lib/linkPlatit.ts` + /vpn, /ai-tools, /recomandari,
+  /servicii-internationale (linkurile scrise de mana iau linkul platit din output.json; /vpn 9/9 cu
+  tracking pe build). Se publica DUPA ce pipeline-ul ruleaza cu garda noua: pe datele de acum,
+  butonul ExpressVPN de pe /vpn ar lua linkul holiday.com.
 - **15.09 — linkuri CU tracking care duc pe site-ul ALTUI brand.** Verificarile de pana acum
   cautau doar linkuri FARA tracking. Masurat live: ExpressVPN -> holiday.com, Anker -> eufy,
   Parallels/WinZip -> wordperfect.com, Zolucky/Stylewe -> hardaddy.com, 3 magazine de extensii ->

@@ -206,6 +206,12 @@ def reconcile_file(path, csv_by_domain, csv_by_etld1, label):
             continue
 
         hit = cauta_in_csv(m, csv_by_domain, csv_by_etld1)
+        # CSV-ul are doar „Advertiser URL" (site-ul FIRMEI): expressvpn.com -> campania Holiday.com,
+        # anker.com -> Eufy. Pe 15.09 asta anula la fiecare rulare reparatia din fetch_impact_api.py.
+        # Import local: link_oferta importa deja din modulul asta.
+        from link_oferta import link_potrivit
+        if hit and not link_potrivit(hit["link"], m.get("url", "")):
+            hit = None
         if hit:
             m["url_afiliat"] = hit["link"]
             m["platforma"] = "impact"
