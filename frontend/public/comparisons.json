@@ -581,7 +581,7 @@
     "verdict_m1": "Alege Noriel pentru cadouri copii, jucarii educative si jocuri de societate. Selectia este neinegalata in Romania.",
     "verdict_m2": "Alege Decathlon pentru echipament sportiv copii si adulti la preturi imbatabile. Ideal pentru biciclete, camping, fotbal, inot.",
     "stats1": {
-      "promotii_active": 3,
+      "promotii_active": 2,
       "coduri": "—",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/7926/medium/7926.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnoriel.ro%2F"
@@ -600,10 +600,6 @@
       {
         "nume": "Back to School | 30% REDUCERE la TOATE Ghiozdanele |06.08-30.09.2026",
         "cod_cupon": ""
-      },
-      {
-        "nume": "Reduceri de pana la 70% |  1.08-14.09.2026",
-        "cod_cupon": ""
       }
     ],
     "promo2": [],
@@ -614,7 +610,7 @@
       },
       {
         "q": "Are Noriel coduri de reducere active?",
-        "a": "Da, Noriel are 3 oferte active pe AmCupon.ro in septembrie 2026. Verificam zilnic."
+        "a": "Da, Noriel are 2 oferte active pe AmCupon.ro in septembrie 2026. Verificam zilnic."
       },
       {
         "q": "Are Decathlon coduri de reducere active?",
