@@ -31,6 +31,10 @@ Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Pro
   iese ROSIE daca scapa o expirata sau un contor fals. **Dovedit ca pica:** output.json de la 10:41 ->
   266 probleme, exit 1; aceleasi date curatate -> OK. Local, lantul Impact -> merge pe datele de azi:
   -134 promotii Impact, 83 de magazine cu promotii (erau 122 socotind si cele false), garda trece.
+- **TELEGRAM PE PAUZA — decizia lui Alex, 16.09.2026.** `TELEGRAM_PAUZA: "true"` in update-data.yml
+  opreste toate trei trimiterile pe canal (postarea zilnica, pachetul din `social_content_factory.py`,
+  alertele din `health_check.py`); continutul si verificarile ruleaza mai departe. Reparatiile de mai jos
+  raman in cod. Repornire = `"false"`. Nu reporni fara Alex; de discutat odata cu relevanta (punctul 2).
 - **Telegram tacut 14-16.09.** In Markdown-ul vechi, `\_` NU e escape in interiorul unei entitati:
   byte offset 895 din eroare = exact `_`-ul fara pereche din „Geeta Hair_Mother's Day" (reconstruit din
   datele rularii). `telegram_daily.py` rescris pe HTML; scos „% succes" (`procent_succes` e aleator) si

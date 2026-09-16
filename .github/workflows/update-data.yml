@@ -18,6 +18,10 @@ jobs:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
       # Pipeline complet: dimineata + rulare manuala. Sync-urile 05/17 UTC sunt doar date.
       IS_FULL_DAILY: ${{ github.event.schedule == '0 6 * * *' || github.event_name == 'workflow_dispatch' }}
+      # PAUZA TELEGRAM — ceruta de Alex pe 16.09.2026. Opreste toate cele trei trimiteri pe canal:
+      # postarea zilnica, pachetul din uzina de continut si alertele din health check. Codul ramane
+      # reparat (HTML, fara „% succes"); pune "false" ca sa reporneasca.
+      TELEGRAM_PAUZA: "true"
 
     steps:
       # ── 1. Checkout ────────────────────────────────────────────────────────
@@ -355,7 +359,7 @@ jobs:
 
       # ── 10. Telegram canal oferte ──────────────────────────────────────────
       - name: Postare Telegram canal oferte
-        if: env.IS_FULL_DAILY == 'true'
+        if: env.IS_FULL_DAILY == 'true' && env.TELEGRAM_PAUZA != 'true'
         continue-on-error: true
         working-directory: scripts
         env:
@@ -406,8 +410,9 @@ jobs:
         continue-on-error: true
         working-directory: scripts
         env:
-          TELEGRAM_BOT_TOKEN:  ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          # Continutul se genereaza mai departe; in pauza Telegram nu primeste tokenul, deci nu trimite.
+          TELEGRAM_BOT_TOKEN:  ${{ env.TELEGRAM_PAUZA != 'true' && secrets.TELEGRAM_BOT_TOKEN || '' }}
+          TELEGRAM_CHANNEL_ID: ${{ env.TELEGRAM_PAUZA != 'true' && secrets.TELEGRAM_CHANNEL_ID || '' }}
         run: python social_content_factory.py
 
       # ── 12. Genereaza bannere (Pillow) ────────────────────────────────────
@@ -423,8 +428,9 @@ jobs:
         continue-on-error: true
         working-directory: scripts
         env:
-          TELEGRAM_BOT_TOKEN:  ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          # Verificarea ruleaza oricum; in pauza Telegram alerta ramane doar in log.
+          TELEGRAM_BOT_TOKEN:  ${{ env.TELEGRAM_PAUZA != 'true' && secrets.TELEGRAM_BOT_TOKEN || '' }}
+          TELEGRAM_CHANNEL_ID: ${{ env.TELEGRAM_PAUZA != 'true' && secrets.TELEGRAM_CHANNEL_ID || '' }}
         run: python health_check.py
 
       # ── 14. Commit & Push ─────────────────────────────────────────────────
