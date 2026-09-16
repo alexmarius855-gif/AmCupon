@@ -1,5 +1,5 @@
 # 💰 TOP MAGAZINE după POTENȚIAL DE CÂȘTIG
-> Generat automat 15.09.2026 13:45. Pe astea să le împingi (articole, pin-uri, postări).
+> Generat automat 16.09.2026 13:40. Pe astea să le împingi (articole, pin-uri, postări).
 
 **Scor = comision × popularitate × ofertă.** Comisionul mare singur înșală — astea-s banii REALI.
 
@@ -30,11 +30,11 @@
 | 23 | Mooyius (mooyius.com) | 12% | 0 | 🏷️ ofertă | 16.8 |
 | 24 | Aronia Charlottenburg (aronia-charlottenburg.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
 | 25 | Eufy (eufy.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 26 | Store (store.boyamic.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 27 | Billionconnect (billionconnect.net) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 28 | Comfier (comfier.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 29 | Doctorshield (doctorshield.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 30 | Craftup (craftup.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 26 | Avidlove (avidlove.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 27 | Store (store.boyamic.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 28 | Ashimaryhair (ashimaryhair.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 29 | Hototools (hototools.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 30 | Billionconnect (billionconnect.net) | 10% | 0 | 🏷️ ofertă | 14.0 |
 
 ## 🎯 Cum folosești raportul
 - **Top 10** = prioritate maximă pentru articole „cel mai bun X" + pin-uri Pinterest

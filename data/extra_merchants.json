@@ -2111,7 +2111,7 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 5,
+    "zile_ramase": 4,
     "promotii": [
       {
         "nume": "eufy Robotgrasmaaier C15",
@@ -2336,6 +2336,132 @@
         "landing_page": "https://www.eufy.com/nl/products/t6010082",
         "zile_ramase": 5,
         "expira": "2026-09-13",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "eufy Robotstofzuiger Omni E28 + Dust Bag",
+        "descriere": "EUR369.99 off (36%): EUR649, was EUR1018.99",
+        "cod_cupon": "",
+        "landing_page": "https://www.eufy.com/nl/products/bundle-t2352g11-1-t29yqa20-1?variant=56084869251447",
+        "zile_ramase": 4,
+        "expira": "2026-09-20",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "eufy Robotgrasmaaier C15 solo",
+        "descriere": "EUR150 off (17%): EUR749, was EUR899",
+        "cod_cupon": "",
+        "landing_page": "https://www.eufy.com/nl/products/t280b3a2",
+        "zile_ramase": 4,
+        "expira": "2026-09-20",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "eufy Robotgrasmaaier E15 + eufy Replacement Blade Set",
+        "descriere": "EUR269.995 off (22%): EUR969, was EUR1238.99",
+        "cod_cupon": "",
+        "landing_page": "https://www.eufy.com/nl/products/bundle-t2880ga1-1-t290x041-1",
+        "zile_ramase": 4,
+        "expira": "2026-09-20",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "eufy Robotstofzuiger Omni E25(wit)",
+        "descriere": "EUR320 off (36%): EUR579, was EUR899",
+        "cod_cupon": "",
+        "landing_page": "https://nl.eufy.com/products/t2353g21",
+        "zile_ramase": 4,
+        "expira": "2026-09-20",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "eufy X10 Pro Omni + Stofzakken (6 stuks)",
+        "descriere": "EUR243.995 off (34%): EUR483, was EUR726.99",
+        "cod_cupon": "",
+        "landing_page": "https://www.eufy.com/nl/products/bundle-t2351g11-1-t29f70a2-1",
+        "zile_ramase": 4,
+        "expira": "2026-09-20",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "Indoor Cam S350 met eufy Robotstofzuiger Omni E25",
+        "descriere": "EUR379.01 off (37%): EUR648.99, was EUR1028",
+        "cod_cupon": "",
+        "landing_page": "https://nl.eufy.com/products/bundle-t2353g11-1-t8416321-1",
+        "zile_ramase": 4,
+        "expira": "2026-09-20",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "eufy Robotstofzuiger Omni S2 + eufy S2 Vervangingsaccessoireset",
+        "descriere": "EUR429 off (27%): EUR1149, was EUR1578",
+        "cod_cupon": "",
+        "landing_page": "https://nl.eufy.com/products/bundle-t2081g11-1-t291n110-1",
+        "zile_ramase": 4,
+        "expira": "2026-09-20",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "Indoor Cam S350 (4 pak)",
+        "descriere": "EUR150 off (29%): EUR366, was EUR516",
+        "cod_cupon": "",
+        "landing_page": "https://www.eufy.com/nl/products/bundle-t8416321-4",
+        "zile_ramase": 4,
+        "expira": "2026-09-20",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "eufy 4G LTE Cam S330 + Floodlight Camera E340",
+        "descriere": "EUR110 off (22%): EUR398.99, was EUR508.99",
+        "cod_cupon": "",
+        "landing_page": "https://www.eufy.com/nl/products/bundle-t8425321-1-t86p2321-1",
+        "zile_ramase": 4,
+        "expira": "2026-09-20",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "SoloCam S340 (2 pak)",
+        "descriere": "EUR109.98 off (27%): EUR290, was EUR399.98",
+        "cod_cupon": "",
+        "landing_page": "https://www.eufy.com/nl/products/bundle-t81703w1-2",
+        "zile_ramase": 4,
+        "expira": "2026-09-20",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "eufyCam C37 2-pack + HomeBase 3 + Video Doorbell E340",
+        "descriere": "EUR147 off (23%): EUR499, was EUR646",
+        "cod_cupon": "",
+        "landing_page": "https://www.eufy.com/nl/products/bundle-t814x321-2-t80303d1-1-t8214311-1",
+        "zile_ramase": 4,
+        "expira": "2026-09-20",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "Video Doorbell E340 & Smart Display E10",
+        "descriere": "EUR119.99 off (32%): EUR259, was EUR378.99",
+        "cod_cupon": "",
+        "landing_page": "https://www.eufy.com/nl/products/bundle-t8214311-1-t87a03w1-1",
+        "zile_ramase": 4,
+        "expira": "2026-09-20",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "eufy 4G LTE Cam S330 (3 paks)",
+        "descriere": "EUR315 off (38%): EUR522, was EUR837",
+        "cod_cupon": "",
+        "landing_page": "https://www.eufy.com/nl/products/bundle-t86p2321-3",
+        "zile_ramase": 4,
+        "expira": "2026-09-20",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "eufy Borstkolf S2 Pro",
+        "descriere": "EUR50 off (11%): EUR399.99, was EUR449.99",
+        "cod_cupon": "",
+        "landing_page": "https://www.eufy.com/nl/products/t60a13b0",
+        "zile_ramase": 4,
+        "expira": "2026-09-20",
         "sursa": "impact_deals_api"
       }
     ],
@@ -3378,15 +3504,25 @@
     "comision": "10% comision",
     "rank": null,
     "scor_afiliere": 65,
-    "scor_final": 65,
+    "scor_final": 65.0,
     "prioritate": "standard",
     "canal_recomandat": "Content, Social",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 0,
-    "promotii": [],
+    "zile_ramase": 3666,
+    "promotii": [
+      {
+        "nume": "AFF20",
+        "descriere": "Enjoy 20% off sitewide with code: AFF20",
+        "cod_cupon": "",
+        "landing_page": "https://www.avidlove.com",
+        "zile_ramase": 3666,
+        "expira": "2036-09-30",
+        "sursa": "impact_deals_api"
+      }
+    ],
     "folosit_de": 0,
     "procent_succes": 80,
     "exclusiv": false,
@@ -5835,15 +5971,43 @@
     "comision": "10% comision",
     "rank": null,
     "scor_afiliere": 65,
-    "scor_final": 65,
+    "scor_final": 65.0,
     "prioritate": "standard",
     "canal_recomandat": "Content, Social",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 0,
-    "promotii": [],
+    "zile_ramase": 13,
+    "promotii": [
+      {
+        "nume": "up to $80 off",
+        "descriere": "up to $80 off",
+        "cod_cupon": "",
+        "landing_page": "https://www.ashimaryhair.com/collections/hot-sale",
+        "zile_ramase": 13,
+        "expira": "2026-09-29",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "13x6 Full Lace , 22\"=20“ Same Price",
+        "descriere": "13x6 Full Lace , 22\"=20“ Same Price",
+        "cod_cupon": "",
+        "landing_page": "https://www.ashimaryhair.com/collections/13x6-full-lace-wig",
+        "zile_ramase": 13,
+        "expira": "2026-09-29",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "70% OFF Colored Wigs",
+        "descriere": "70% OFF Colored Wigs",
+        "cod_cupon": "",
+        "landing_page": "https://www.ashimaryhair.com/pages/black-friday-wig-sale",
+        "zile_ramase": 13,
+        "expira": "2026-09-29",
+        "sursa": "impact_deals_api"
+      }
+    ],
     "folosit_de": 0,
     "procent_succes": 80,
     "exclusiv": false,
@@ -5887,15 +6051,25 @@
     "comision": "10% comision",
     "rank": null,
     "scor_afiliere": 65,
-    "scor_final": 65,
+    "scor_final": 65.0,
     "prioritate": "standard",
     "canal_recomandat": "Content, Social",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 0,
-    "promotii": [],
+    "zile_ramase": 652,
+    "promotii": [
+      {
+        "nume": "New Users",
+        "descriere": "Get Extra 5% off , New users only!",
+        "cod_cupon": "",
+        "landing_page": "https://hototools.com",
+        "zile_ramase": 652,
+        "expira": "2028-06-29",
+        "sursa": "impact_deals_api"
+      }
+    ],
     "folosit_de": 0,
     "procent_succes": 80,
     "exclusiv": false,
@@ -9783,6 +9957,15 @@
         "zile_ramase": 130,
         "expira": "2027-01-16",
         "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "5% Sitewide：AFFA5",
+        "descriere": "Code:AFFA5 5% Sitewide",
+        "cod_cupon": "",
+        "landing_page": "https://www.autofull.com",
+        "zile_ramase": 360,
+        "expira": "2027-09-11",
+        "sursa": "impact_deals_api"
       }
     ],
     "folosit_de": 0,
@@ -10414,6 +10597,15 @@
         "zile_ramase": 3,
         "expira": "2026-09-14",
         "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "Today Feels Different Sale Up To $100 Off With Code:GOLD",
+        "descriere": "Nadula Hair Today Feels Different Sale Up To $100 Off With Code:GOLD",
+        "cod_cupon": "GOLD",
+        "landing_page": "https://m.nadula.com",
+        "zile_ramase": 4,
+        "expira": "2026-09-20",
+        "sursa": "impact_deals_api"
       }
     ],
     "folosit_de": 0,
@@ -10466,6 +10658,15 @@
         "landing_page": "https://www.klaiyihair.com",
         "zile_ramase": 3,
         "expira": "2026-09-14",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "Up To $60 OFF + Free Gift | Klaiyi 9th Anniversary Sale Encore",
+        "descriere": "21% OFF Sitewide — Code: KLAIYI21 $35 OFF Over $159 — Code: KLAIYI35 $60 OFF Over $255 — Code: KLAIYI60 Free Gift: Necklace Set",
+        "cod_cupon": "KLAIYI21",
+        "landing_page": "https://www.klaiyihair.com",
+        "zile_ramase": 4,
+        "expira": "2026-09-21",
         "sursa": "impact_deals_api"
       }
     ],
@@ -11586,7 +11787,7 @@
     "sales_number": 0,
     "trend": 0,
     "are_promotie": true,
-    "cod_cupon": false,
+    "cod_cupon": true,
     "zile_ramase": 326,
     "promotii": [
       {
@@ -11596,6 +11797,15 @@
         "landing_page": "https://store.boyamic.com/discount/BOYAaff15",
         "zile_ramase": 326,
         "expira": "2027-07-31",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "Save $249 on orders over $999 for Saramonic products!",
+        "descriere": "Save $249 on orders over $999 for Saramonic products!",
+        "cod_cupon": "SRaff249",
+        "landing_page": "https://store.saramonic.com/discount/SRaff249",
+        "zile_ramase": 471,
+        "expira": "2028-01-01",
         "sursa": "impact_deals_api"
       }
     ],
@@ -12359,6 +12569,15 @@
         "zile_ramase": 22,
         "expira": "2026-09-30",
         "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "New Autumn and winter collection",
+        "descriere": "New Autumn and winter collection",
+        "cod_cupon": "",
+        "landing_page": "https://fitory.com/collections/new-arrivals",
+        "zile_ramase": 379,
+        "expira": "2027-09-30",
+        "sursa": "impact_deals_api"
       }
     ],
     "folosit_de": 0,
@@ -12478,7 +12697,7 @@
     "sales_number": 0,
     "trend": 0,
     "are_promotie": true,
-    "cod_cupon": false,
+    "cod_cupon": true,
     "zile_ramase": 10,
     "promotii": [
       {
@@ -12488,6 +12707,33 @@
         "landing_page": "https://vivienhair.com",
         "zile_ramase": 10,
         "expira": "2026-09-18",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "Clearance sale50%off",
+        "descriere": "Clearance: Enjoy 50% off select items!",
+        "cod_cupon": "",
+        "landing_page": "https://www.ugeat.com",
+        "zile_ramase": 241,
+        "expira": "2027-05-15",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "virgin+70%off",
+        "descriere": "Enjoy a 70% discount on high-quality Virgin+ series products.",
+        "cod_cupon": "VR70",
+        "landing_page": "https://www.ugeat.com",
+        "zile_ramase": 241,
+        "expira": "2027-05-15",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "Buy together 25% off",
+        "descriere": "Purchase together to enjoy a 25% discount.",
+        "cod_cupon": "",
+        "landing_page": "https://www.ugeat.com",
+        "zile_ramase": 241,
+        "expira": "2027-05-15",
         "sursa": "impact_deals_api"
       }
     ],
@@ -12642,15 +12888,25 @@
     "comision": "Variabil",
     "rank": null,
     "scor_afiliere": 50,
-    "scor_final": 50,
+    "scor_final": 50.0,
     "prioritate": "standard",
     "canal_recomandat": "Content, SEO, Social",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 0,
-    "promotii": [],
+    "zile_ramase": 8,
+    "promotii": [
+      {
+        "nume": "Ends of summer",
+        "descriere": "$10 Off Over $129 , $25 Off Over $179 , 20% Off Over $259 , $80 Off Over $349",
+        "cod_cupon": "",
+        "landing_page": "https://www.kisslovehair.com/collections/best-sellers",
+        "zile_ramase": 8,
+        "expira": "2026-09-24",
+        "sursa": "impact_deals_api"
+      }
+    ],
     "folosit_de": 0,
     "procent_succes": 85,
     "exclusiv": false,
@@ -13620,15 +13876,52 @@
     "comision": "Variabil",
     "rank": null,
     "scor_afiliere": 50,
-    "scor_final": 50,
+    "scor_final": 50.0,
     "prioritate": "standard",
     "canal_recomandat": "Content, SEO, Social",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 0,
-    "promotii": [],
+    "are_promotie": true,
+    "cod_cupon": true,
+    "zile_ramase": 106,
+    "promotii": [
+      {
+        "nume": "LumosFlex120",
+        "descriere": "120 off for lumos flex",
+        "cod_cupon": "",
+        "landing_page": "https://wecreat.com/products/wecreat-lumos",
+        "zile_ramase": 106,
+        "expira": "2026-12-31",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "VPRO150",
+        "descriere": "100 off for wecreat vision pro",
+        "cod_cupon": "",
+        "landing_page": "https://wecreat.com/products/wecreat-vision-pro",
+        "zile_ramase": 257,
+        "expira": "2027-05-31",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "5% off for all wecreat products!-code:WECREAT",
+        "descriere": "5% off for all wecreat products! including accessories",
+        "cod_cupon": "WECREAT",
+        "landing_page": "https://wecreat.com/?utm_source=impact&utm_medium=affiliate",
+        "zile_ramase": 106,
+        "expira": "2026-12-31",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "lumos80",
+        "descriere": "$100 off for wecreat lumos",
+        "cod_cupon": "",
+        "landing_page": "https://wecreat.com/products/wecreat-lumos",
+        "zile_ramase": 257,
+        "expira": "2027-05-31",
+        "sursa": "impact_deals_api"
+      }
+    ],
     "folosit_de": 0,
     "procent_succes": 85,
     "exclusiv": false,
@@ -16280,15 +16573,25 @@
     "comision": "Variabil",
     "rank": null,
     "scor_afiliere": 50,
-    "scor_final": 50,
+    "scor_final": 50.0,
     "prioritate": "standard",
     "canal_recomandat": "Content, SEO, Social",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": false,
+    "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 0,
-    "promotii": [],
+    "zile_ramase": 32,
+    "promotii": [
+      {
+        "nume": "FR202609",
+        "descriere": "Up to €50 OFF on OPPO products",
+        "cod_cupon": "",
+        "landing_page": "https://www.oppo.com/fr/store/",
+        "zile_ramase": 32,
+        "expira": "2026-10-18",
+        "sursa": "impact_deals_api"
+      }
+    ],
     "folosit_de": 0,
     "procent_succes": 85,
     "exclusiv": false,

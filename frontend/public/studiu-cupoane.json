@@ -1,13 +1,13 @@
 {
   "generat": "2026-09-16",
-  "total_magazine": 1151,
-  "cu_promotie": 116,
-  "cu_cod_real": 34,
-  "doar_oferta": 82,
-  "procent_cu_promotie": 10.1,
-  "procent_cu_cod": 3.0,
+  "total_magazine": 1144,
+  "cu_promotie": 122,
+  "cu_cod_real": 37,
+  "doar_oferta": 85,
+  "procent_cu_promotie": 10.7,
+  "procent_cu_cod": 3.2,
   "reducere_mediana_generala": 20.0,
-  "magazine_cu_procent_declarat": 80,
+  "magazine_cu_procent_declarat": 86,
   "categorii": [
     {
       "slug": "carti-educatie",
@@ -21,16 +21,16 @@
     {
       "slug": "electronice",
       "nume": "Electronice & IT",
-      "magazine": 117,
-      "cu_promotie": 13,
-      "reducere_mediana": 30,
+      "magazine": 116,
+      "cu_promotie": 15,
+      "reducere_mediana": 27.5,
       "reducere_max": 80,
-      "esantion": 7
+      "esantion": 8
     },
     {
       "slug": "sanatate",
       "nume": "Sănătate & farmacie",
-      "magazine": 61,
+      "magazine": 57,
       "cu_promotie": 7,
       "reducere_mediana": 25,
       "reducere_max": 35,
@@ -39,20 +39,20 @@
     {
       "slug": "beauty",
       "nume": "Beauty & îngrijire",
-      "magazine": 78,
-      "cu_promotie": 12,
-      "reducere_mediana": 22,
+      "magazine": 77,
+      "cu_promotie": 13,
+      "reducere_mediana": 23.5,
       "reducere_max": 70,
-      "esantion": 9
+      "esantion": 10
     },
     {
       "slug": "fashion",
       "nume": "Fashion",
-      "magazine": 102,
-      "cu_promotie": 12,
+      "magazine": 101,
+      "cu_promotie": 14,
       "reducere_mediana": 20,
       "reducere_max": 80,
-      "esantion": 7
+      "esantion": 9
     },
     {
       "slug": "software",
@@ -76,10 +76,10 @@
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
       "magazine": 134,
-      "cu_promotie": 14,
+      "cu_promotie": 15,
       "reducere_mediana": 12.5,
       "reducere_max": 70,
-      "esantion": 8
+      "esantion": 10
     },
     {
       "slug": "marketplace",
