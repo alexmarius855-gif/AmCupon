@@ -5,8 +5,6 @@
   "laavooextensions.com": [
     "H25",
     "H50",
-    "HS15",
-    "HS22",
     "New25",
     "VT23"
   ],
@@ -21,30 +19,17 @@
     "TVC26Q3A6%",
     "TVC26Q3A95NEW"
   ],
-  "wiskiiactive.com": [
-    "RESET"
-  ],
-  "jollymag.ro": [
-    "JOLLY10"
-  ],
   "nadula.com": [
-    "GOLD",
-    "KLAIYI100",
-    "KLAIYI25",
-    "Klaiyi23"
+    "GOLD"
   ],
   "klaiyihair.com": [
-    "KLAIYI100",
-    "KLAIYI21",
-    "KLAIYI25",
-    "Klaiyi23"
+    "KLAIYI21"
   ],
   "crownandchamparesorts.com": [
     "EXTRA5OFF"
   ],
   "nh-hotels.com": [
-    "CITYDREAMERS",
-    "SUMMERSTORY"
+    "CITYDREAMERS"
   ],
   "original-group.com": [
     "5SUMMER",
@@ -60,16 +45,11 @@
     "AVOS&NETOS"
   ],
   "cllix.com": [
+    "BOOKDIRECT2SAVE",
     "SPRINGCLLIX26"
   ],
   "swiss-belhotel.com": [
     "BCACC"
-  ],
-  "nobilacasa.ro": [
-    "PROMO15"
-  ],
-  "medimfarm.ro": [
-    "SUMMER18"
   ],
   "atzavarahotel.com": [
     "AQUAWEB"
@@ -101,9 +81,6 @@
     "NEW",
     "W100"
   ],
-  "kugooescooters.com": [
-    "honey20"
-  ],
   "wecreat.com": [
     "WECREAT"
   ],
@@ -126,6 +103,9 @@
   ],
   "savoydubai.com": [
     "CAMP-BEST"
+  ],
+  "jollymag.ro": [
+    "JOLLY10"
   ],
   "priveboutique.net": [
     "PB20"
