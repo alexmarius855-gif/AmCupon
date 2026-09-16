@@ -12,6 +12,25 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 16.09.2026 (pipeline fara erori tacute + site fara linkuri moarte — PUSHED):**
+- **REGRESIE PROPRIE, gasita in log**: `fetch_impact_deals.py` apela `find_campaign(index, nume, url)`,
+  semnatura veche; din 13.09 functia primeste `(index, url)` si indexul intoarce obiectul Campaign
+  (`CampaignId`, nu `id`). TypeError pe fiecare magazin, prins ca „SKIP" — **638 de linii, zero oferte
+  noi 3 zile, pipeline verde**. Reparat + garda: daca pica TOATE magazinele, scriptul iese cu cod 1.
+  Dry-run pe API: 66 de oferte noi pe 26 de magazine. **Lectie: cand schimbi semnatura unei functii,
+  `grep` dupa TOTI apelantii din `scripts/`, nu doar in fisierul ei.**
+- **Produsele sareau 8.176 <-> 15.005 intre rulari**: 2Performant da 429 dupa ~120 de cereri, peste un
+  minut (masurat in test-product-feeds.yml: 35 de reincercari, 0 recuperari). `fetch_product_feeds.py`:
+  reincercare la 429, headerele de limita logate la primul 429, magazinele oprite inainte de final
+  pastreaza produsele din rularea anterioara (doar din feed, maxim 14 zile — camp nou `preluat`),
+  ordine cu seed fix. Test cap-coada pe `main()` cu reteaua simulata: recuperat, expirat, promo ignorat.
+- **Subsolul**: `/cod-reducere/bookzone.ro` 404 pe TOATE paginile (a doua oara, BookZone iesit din date
+  din 20.08). Lista in `lib/magazinePopulare.ts`; `layout.tsx` (server) verifica ce exista in
+  `output.json`. **Nu citi valori dintr-un fisier "use client" pe server** — de-aia modul comun.
+- **Granita de tara**: `/cod-reducere/vidaxl.ro` servea vidaxl.bg, `/vidaxl` trimitea in Bulgaria.
+  `lib/taraDomeniu.ts` + `gasesteMagazin` + `BrandPageTemplate`. 8 variante straine ale unor magazine
+  .ro (liki24.pl/.nl/.it/.be/.co.uk, gsmnet.de, fragranza.hu, underarmour.bg) scoase la merge, 308 spre .ro.
+
 **UPDATE 13.09.2026 (clicurile NEPLATITE: 210 oferte + 52 magazine cu contract activ — NEPUSHED):**
 - **Masurat pe API-ul Impact si pe `output.json` de productie, nu presupus.** Trei gauri:
   1. **210 din 309 oferte active** aveau `landing_page` = pagina bruta a magazinului (166 Impact,

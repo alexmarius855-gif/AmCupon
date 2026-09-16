@@ -284,6 +284,7 @@ INCOMPLETE: set = set()
 # oprea la jumatate (jollymag.ro: 9 din 111 pagini). Pe site, sectiunile de produse aparea
 # si disparea de la o zi la alta. Acum: reincercare cu pauza, respectand Retry-After.
 PAUZE_429 = (5, 10, 20)
+_LIMITA_LOGATA = False
 
 
 def api_get(endpoint: str, params: dict = None):
@@ -296,6 +297,12 @@ def api_get(endpoint: str, params: dict = None):
         try:
             resp = _session.get(url, headers=_auth_headers(), timeout=20)
             _update_tokens(resp)
+            if resp.status_code == 429 and not _LIMITA_LOGATA:
+                # Regula exacta a limitei nu e documentata; o aflam din headere, nu o ghicim.
+                _antete = {k: v for k, v in resp.headers.items()
+                           if any(t in k.lower() for t in ("rate", "limit", "retry", "reset"))}
+                print(f"    429 — headere de limita: {_antete or 'niciunul'}")
+                globals()["_LIMITA_LOGATA"] = True
             if resp.status_code == 429 and incercare < len(PAUZE_429):
                 try:
                     pauza = min(int(resp.headers.get("Retry-After", "")), 60)
@@ -941,6 +948,9 @@ def get_products_from_api(feed_id, merchant: str) -> list:
                 "brand":        (prod.get("brand") or "")[:50],
                 "merchant":     merchant,
                 "feed_id":      feed_id,
+                # data descarcarii: produsele pastrate dintr-o rulare anterioara expira dupa
+                # VARSTA_MAXIMA_ZILE, ca sa nu afisam preturi vechi la nesfarsit
+                "preluat":      datetime.now(timezone.utc).strftime("%Y-%m-%d"),
             })
         # Oprire pe numarul REAL de pagini, nu pe dimensiunea ultimei pagini.
         if total_pages is not None:
@@ -1149,13 +1159,32 @@ def main():
     # ── Magazine descarcate incomplet: pastram produsele din rularea anterioara ──
     # Doar cand rularea anterioara avea MAI MULTE produse pentru magazin. Un magazin care
     # chiar si-a redus catalogul, descarcat complet, nu intra aici.
+    # Masurat in testul din 16.09 pe API-ul real: dupa ~120 de cereri, 2Performant raspunde 429
+    # peste un minut, deci reincercarile singure nu recupereaza nimic. Ce stabilizeaza site-ul
+    # e memoria intre rulari: un magazin descarcat cu succes ramane pana la urmatoarea
+    # descarcare reusita, dar nu mai mult de VARSTA_MAXIMA_ZILE.
+    # Doar produsele din feed (`feed_id` real). Cele injectate din promotii (`feed_id: "promo"`)
+    # le reface enrich_products_from_promos.py la fiecare rulare.
+    VARSTA_MAXIMA_ZILE = 14
     if INCOMPLETE and os.path.exists(output_path):
         try:
             with open(output_path, "r", encoding="utf-8") as _f:
-                _vechi = json.load(_f)
-            _vechi = _vechi.get("products", []) if isinstance(_vechi, dict) else _vechi
+                _vechi_fisier = json.load(_f)
+            _vechi = _vechi_fisier.get("products", []) if isinstance(_vechi_fisier, dict) else _vechi_fisier
+            _data_fisier = (_vechi_fisier.get("updated") or "")[:10] if isinstance(_vechi_fisier, dict) else ""
+            _azi = datetime.now(timezone.utc).date()
             _vechi_pe_mag: dict = {}
             for _p in _vechi:
+                if not _p.get("feed_id") or _p.get("feed_id") == "promo":
+                    continue
+                _preluat = _p.get("preluat") or _data_fisier
+                try:
+                    _varsta = (_azi - datetime.strptime(_preluat, "%Y-%m-%d").date()).days
+                except ValueError:
+                    continue
+                if _varsta > VARSTA_MAXIMA_ZILE:
+                    continue
+                _p = dict(_p, preluat=_preluat)
                 _vechi_pe_mag.setdefault((_p.get("merchant") or "").strip().lower().rstrip("/"), []).append(_p)
             for _mag in sorted(INCOMPLETE):
                 _noi = [p for p in all_products
