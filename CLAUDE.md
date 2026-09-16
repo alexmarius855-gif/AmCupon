@@ -57,7 +57,12 @@ Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Pro
   complet (≤14 zile, feed inca in My Feeds — verificat doar cu lista completa); oprire dupa 2 esecuri la
   rand (limita API, ~35 s de reincercari fiecare); plafon 20.000 impartit corect. Simulat pe 6 rulari cu
   API fals: 9 -> 18 -> 27 -> 36 magazine; feed scos -> produse scoase; lista taiata de 429 -> nimic scos;
-  >14 zile -> scos. **Numarul real de feed-uri: de confirmat cu test-product-feeds.yml.**
+  >14 zile -> scos. **Confirmat pe API-ul real** (test-product-feeds.yml, rularea 35117534275, pe d8780ae):
+  lista are **31 de pagini (~620 de feed-uri)**; citim primele 180 (`MAX_FEEDS * 3`), deci lista nu e
+  „completa" si nu se scot magazine pentru „feed disparut" — expira doar la 14 zile. 167 romanesti in
+  primele 180. 5 magazine noi descarcate pana la 429 (dupa ~110 cereri), oprire dupa 2 esecuri, 9.100
+  produse pastrate de la 8 magazine: **9 -> 14 magazine, 12.100 -> 14.040 produse** intr-o singura rulare.
+  Rotatia pe 180 de feed-uri, ~15-24 magazine/zi, se inchide in ~8-12 zile (sub pragul de 14).
 - **Ramas pentru punctul 2 (relevanta):** din 37 de magazine cu cod, 31 au domeniu strain (oferte in USD,
   hoteluri Asia, Eufy in olandeza); topul Telegram e dominat de ele. `Campaign.ShippingRegions` exista in
   API-ul Impact (verificat) — sursa pentru „livreaza in Romania".
