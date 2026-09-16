@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import { linkPlatit } from "@/lib/linkPlatit";
 
 export const metadata: Metadata = {
   title: "Cele mai bune AI Tools 2026 — ghid complet pentru creatori | AmCupon.ro",
@@ -103,7 +104,7 @@ export default function AiToolsPage() {
                     <p className="text-[#c9ced5]"><span className="text-[#9399a0]">Preț:</span> <span className="text-[#ddf93c] font-bold">{t.pret}</span></p>
                     <p className="text-[#c9ced5]"><span className="text-[#9399a0]">Ideal pentru:</span> {t.ideal}</p>
                   </div>
-                  <a href={t.url} target="_blank" rel="sponsored noopener noreferrer"
+                  <a href={linkPlatit(t.url)} target="_blank" rel="sponsored noopener noreferrer"
                     className="mt-4 bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] text-sm font-bold py-2.5 rounded-xl text-center transition-all">
                     Încearcă {t.name} →
                   </a>

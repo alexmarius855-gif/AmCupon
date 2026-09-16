@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import { linkPlatit } from "@/lib/linkPlatit";
 
 export const metadata: Metadata = {
   title: "Recomandari Premium — VPN, Hosting, Freelancing, SEO Tools | AmCupon.ro",
@@ -290,7 +291,7 @@ export default function RecomandariPage() {
                 </ul>
 
                 <div className="mt-auto flex flex-col gap-2">
-                  <a href={s.url} target="_blank" rel="sponsored noopener noreferrer"
+                  <a href={linkPlatit(s.url)} target="_blank" rel="sponsored noopener noreferrer"
                     className="bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] font-black px-5 py-3 rounded-xl text-sm transition-all text-center shadow-lg shadow-[#ddf93c]/20 hover:-translate-y-0.5 duration-200">
                     Incearca {s.name} →
                   </a>

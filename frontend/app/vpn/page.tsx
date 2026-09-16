@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import { linkPlatit } from "@/lib/linkPlatit";
 
 // ── LINKURI AFILIATE VPN — REALE din Impact.com (account 7401119) ──
 const LINK_NORDVPN    = "https://nordvpn.sjv.io/c/7401119/417838/7452";   // REAL Impact
@@ -227,7 +228,7 @@ export default function VpnPage() {
                       <span className="text-[#9399a0] text-xs">/10</span>
                     </div>
                   </div>
-                  <a href={vpn.url} target="_blank" rel="sponsored noopener noreferrer"
+                  <a href={linkPlatit(vpn.url)} target="_blank" rel="sponsored noopener noreferrer"
                     className={`w-full text-center py-3 px-4 rounded-xl font-black text-sm text-[#0c1000] transition-all hover:-translate-y-0.5 shadow-lg ${vpn.rank === 1 ? "bg-[#ddf93c] hover:bg-[#ddf93c] shadow-[#ddf93c]/20" : "bg-[#2a2f36] hover:bg-[#1f2329]"}`}>
                     Incearca {vpn.name} →
                   </a>
@@ -252,7 +253,7 @@ export default function VpnPage() {
               </div>
               <p className="text-[#c9ced5] text-xs">{v.desc}</p>
               <p className="text-[11px] text-[#9399a0]">Ideal pentru: <span className="text-[#c9ced5]">{v.ideal}</span></p>
-              <a href={v.url} target="_blank" rel="sponsored noopener noreferrer"
+              <a href={linkPlatit(v.url)} target="_blank" rel="sponsored noopener noreferrer"
                 className="mt-auto bg-[#2a2f36] hover:bg-[#2a2f36] text-[#ffffff] text-sm font-bold py-2.5 rounded-lg text-center transition-all">
                 Incearca {v.name} →
               </a>
@@ -263,7 +264,7 @@ export default function VpnPage() {
           <p className="text-xs text-[#c9ced5]">
             <strong className="text-[#c9ced5]">IPRoyal</strong> — nu e un VPN clasic, ci o retea de proxy rezidential. Util pentru web scraping, verificare reclame sau administrare de conturi multiple, nu pentru streaming general.
           </p>
-          <a href={LINK_IPROYAL} target="_blank" rel="sponsored noopener noreferrer"
+          <a href={linkPlatit(LINK_IPROYAL)} target="_blank" rel="sponsored noopener noreferrer"
             className="shrink-0 text-xs font-bold text-[#c9ced5] hover:text-[#ffffff] bg-[#1f2329] hover:bg-[#2a2f36] px-3 py-1.5 rounded-lg transition-all">
             Vezi IPRoyal →
           </a>
@@ -327,11 +328,11 @@ export default function VpnPage() {
           <h2 className="text-2xl font-black text-[#ffffff] mb-3">Gata sa iti protejezi conexiunea?</h2>
           <p className="text-[#c9ced5] mb-6 text-sm max-w-xl mx-auto">Oricare ai alege, ai garantie de ramburs 30 zile. Incearca fara risc — daca nu esti multumit, primesti banii inapoi.</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a href="https://nordvpn.com" target="_blank" rel="sponsored noopener noreferrer"
+            <a href={linkPlatit(LINK_NORDVPN)} target="_blank" rel="sponsored noopener noreferrer"
               className="bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] font-black px-8 py-3 rounded-xl transition-all hover:-translate-y-0.5 shadow-lg shadow-[#ddf93c]/20">
               NordVPN — de la 2.99€/luna →
             </a>
-            <a href="https://surfshark.com" target="_blank" rel="sponsored noopener noreferrer"
+            <a href={linkPlatit(LINK_SURFSHARK)} target="_blank" rel="sponsored noopener noreferrer"
               className="bg-[#2a2f36] hover:bg-[#2a2f36] text-[#ffffff] font-bold px-8 py-3 rounded-xl transition-all hover:-translate-y-0.5">
               Surfshark — de la 2.39€/luna →
             </a>

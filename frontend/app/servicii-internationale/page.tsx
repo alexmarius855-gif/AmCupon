@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import { linkPlatit } from "@/lib/linkPlatit";
 
 export const metadata: Metadata = {
   title: "Servicii Internationale 2026 — VPN, Hosting, Software, Cursuri | AmCupon.ro",
@@ -396,7 +397,7 @@ export default function ServiciiInternationale() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {cat.branduri.map((brand) => (
-                <a key={brand.nume} href={brand.url} target="_blank" rel="sponsored noopener noreferrer"
+                <a key={brand.nume} href={linkPlatit(brand.url)} target="_blank" rel="sponsored noopener noreferrer"
                   className="group bg-[#14181c] border border-[#1f2329] hover:border-[#3a4048] rounded-xl p-5 transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-black/40 block">
                   <div className="flex items-start justify-between gap-3 mb-2">
                     <div className="flex items-center gap-2">
