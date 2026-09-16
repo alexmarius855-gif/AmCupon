@@ -275,25 +275,46 @@ def _update_tokens(resp):
         _auth["uid"]          = resp.headers.get("uid", _auth["uid"])
 
 
+# Magazinele (nume, lowercase) a caror descarcare s-a oprit inainte de final. main() le
+# completeaza din rularea anterioara, in loc sa publice o lista taiata.
+INCOMPLETE: set = set()
+
+# 16.09.2026 — numarul de produse sarea intre 8.176 si 15.005 de la o rulare la alta:
+# 2Performant raspunde 429 cand cerem prea repede, api_get intorcea None, iar paginarea se
+# oprea la jumatate (jollymag.ro: 9 din 111 pagini). Pe site, sectiunile de produse aparea
+# si disparea de la o zi la alta. Acum: reincercare cu pauza, respectand Retry-After.
+PAUZE_429 = (5, 10, 20)
+
+
 def api_get(endpoint: str, params: dict = None):
     params = params or {}
     qs = "&".join(f"{k}={v}" for k, v in sorted(params.items()))
     url = f"{BASE_URL}/{endpoint}.json"
     if qs:
         url += f"?{qs}"
-    try:
-        resp = _session.get(url, headers=_auth_headers(), timeout=20)
-        _update_tokens(resp)
-        if resp.status_code == 401:
-            print(f"    401 Unauthorized")
+    for incercare in range(len(PAUZE_429) + 1):
+        try:
+            resp = _session.get(url, headers=_auth_headers(), timeout=20)
+            _update_tokens(resp)
+            if resp.status_code == 429 and incercare < len(PAUZE_429):
+                try:
+                    pauza = min(int(resp.headers.get("Retry-After", "")), 60)
+                except ValueError:
+                    pauza = PAUZE_429[incercare]
+                print(f"    HTTP 429 — reincerc peste {pauza}s ({incercare + 1}/{len(PAUZE_429)})")
+                time.sleep(pauza)
+                continue
+            if resp.status_code == 401:
+                print(f"    401 Unauthorized")
+                return None
+            if resp.status_code != 200:
+                print(f"    HTTP {resp.status_code}: {resp.text[:200]}")
+                return None
+            return resp.json()
+        except Exception as e:
+            print(f"  EROARE {endpoint}: {e}")
             return None
-        if resp.status_code != 200:
-            print(f"    HTTP {resp.status_code}: {resp.text[:200]}")
-            return None
-        return resp.json()
-    except Exception as e:
-        print(f"  EROARE {endpoint}: {e}")
-        return None
+    return None
 
 
 # ─── Utilitare ────────────────────────────────────────────────────────────────
@@ -875,6 +896,9 @@ def get_products_from_api(feed_id, merchant: str) -> list:
             {"page": page, "per_page": 50}
         )
         if data is None:
+            # Oprit de o eroare, nu de sfarsitul catalogului: lista e incompleta.
+            if total_pages is None or page <= total_pages:
+                INCOMPLETE.add(merchant.strip().lower().rstrip("/"))
             break
         if isinstance(data, list):
             items = data
@@ -1113,6 +1137,7 @@ def main():
                 products = get_products_from_api(feed_id, merchant)
             except Exception as e:
                 print(f"    ! {merchant[:30]:30} eroare API ({e}) — sarim")
+                INCOMPLETE.add(mn)
                 continue
             for p in products:
                 p["merchant_slug"] = slug
@@ -1120,6 +1145,30 @@ def main():
                 print(f"    + {merchant[:30]:30} {len(products)} produse via API")
             all_products.extend(products)
             time.sleep(0.4)
+
+    # ── Magazine descarcate incomplet: pastram produsele din rularea anterioara ──
+    # Doar cand rularea anterioara avea MAI MULTE produse pentru magazin. Un magazin care
+    # chiar si-a redus catalogul, descarcat complet, nu intra aici.
+    if INCOMPLETE and os.path.exists(output_path):
+        try:
+            with open(output_path, "r", encoding="utf-8") as _f:
+                _vechi = json.load(_f)
+            _vechi = _vechi.get("products", []) if isinstance(_vechi, dict) else _vechi
+            _vechi_pe_mag: dict = {}
+            for _p in _vechi:
+                _vechi_pe_mag.setdefault((_p.get("merchant") or "").strip().lower().rstrip("/"), []).append(_p)
+            for _mag in sorted(INCOMPLETE):
+                _noi = [p for p in all_products
+                        if (p.get("merchant") or "").strip().lower().rstrip("/") == _mag]
+                _vechi_mag = _vechi_pe_mag.get(_mag, [])
+                if len(_vechi_mag) > len(_noi):
+                    all_products = [p for p in all_products
+                                    if (p.get("merchant") or "").strip().lower().rstrip("/") != _mag]
+                    all_products.extend(_vechi_mag)
+                    print(f"  ~ {_mag[:30]:30} descarcare incompleta ({len(_noi)} produse) — "
+                          f"pastrez cele {len(_vechi_mag)} din rularea anterioara")
+        except Exception as _e:
+            print(f"  (completare din rularea anterioara esuata: {_e})")
 
     # ── Diversitate: max MAX_PER_MERCHANT per merchant ────────────────────────
     import random
@@ -1137,7 +1186,9 @@ def main():
         capped.extend(prods[:MAX_PER_MERCHANT])
 
     # Shuffle final pentru distributie uniforma intre merchants
-    random.shuffle(capped)
+    # Seed fix: aceleasi produse in aceeasi ordine de la o rulare la alta. random.shuffle() fara
+    # seed rescria tot fisierul la fiecare rulare, chiar fara nicio schimbare reala de catalog.
+    random.Random(20260916).shuffle(capped)
 
     # Sorteaza: produse cu discount real deasupra, restul random
     cu_discount  = [p for p in capped if (p.get("discount_pct") or 0) > 0 and p.get("image")]

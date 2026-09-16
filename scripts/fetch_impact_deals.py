@@ -386,15 +386,22 @@ def ataseaza(merchants: list, campaign_index: dict, per_campanie: dict,
     """Ataseaza promotiile pe magazinele impact din lista. Returneaza (magazine, promotii)."""
     mag_atinse = 0
     promo_adaugate = 0
+    erori = 0
+    ultima_eroare = ""
     for m in merchants:
         # Izolare per magazin: o inregistrare stricata (ex. "magazin": null -> .lower()
         # in find_campaign) nu are voie sa opreasca tot batch-ul. Aceeasi disciplina
         # defensiva ca in construieste_promotii()/index_coduri().
         try:
-            c = find_campaign(campaign_index, m.get("magazin", ""), m.get("url", ""))
+            # 16.09.2026: find_campaign(index, url) — semnatura s-a schimbat pe 13.09, iar indexul
+            # intoarce obiectul Campaign din API (cheia e `CampaignId`, nu `id`). Apelul vechi cu 3
+            # argumente a picat pe FIECARE magazin, prins mai jos ca „SKIP" — 638 de linii in log,
+            # zero oferte noi din 13.09, pipeline verde.
+            c = find_campaign(campaign_index, m.get("url") or m.get("magazin", ""))
             if not c:
                 continue
-            promotii_camp = per_campanie.get(str(c.get("id", "")))
+            camp_id = _norm_id(c.get("CampaignId"))
+            promotii_camp = per_campanie.get(camp_id)
             if not promotii_camp:
                 continue
 
@@ -416,11 +423,18 @@ def ataseaza(merchants: list, campaign_index: dict, per_campanie: dict,
                 recalculeaza_flags(m)
                 mag_atinse += 1
                 promo_adaugate += adaugate_aici
-                print(f"  OK [{label}] [{c.get('id')}] {m.get('magazin', ''):25s} "
+                print(f"  OK [{label}] [{camp_id}] {m.get('magazin', ''):25s} "
                       f"+{adaugate_aici} promotii")
         except Exception as e:
+            erori += 1
+            ultima_eroare = str(e)
             print(f"  SKIP [{label}] magazin invalid: {e}")
             continue
+    # Izolarea per magazin e pentru o inregistrare stricata, nu pentru un bug. Daca pica TOATE,
+    # e o eroare de sistem si trebuie sa se vada ca atare, nu ca N randuri de „SKIP".
+    if merchants and erori == len(merchants):
+        raise RuntimeError(f"toate cele {erori} magazine [{label}] au picat — eroare de sistem, "
+                           f"nu date stricate: {ultima_eroare}")
     return mag_atinse, promo_adaugate
 
 
@@ -553,6 +567,7 @@ def main():
         return
 
     total_mag = total_promo_add = 0
+    erori_sistem = []
 
     for path, label in ((EXTRA_PATH, "extra"), (OUTPUT_PATH, "output")):
         # Izolare per fisier: o eroare fatala pe extra_merchants.json nu are voie sa
@@ -576,6 +591,7 @@ def main():
         except Exception as e:
             print(f"  EROARE [{label}] la procesarea {os.path.basename(path)}: {e} — "
                   f"continui cu urmatorul fisier")
+            erori_sistem.append(f"{label}: {e}")
             continue
 
     if args.dry_run:
@@ -586,6 +602,14 @@ def main():
     print(f"\nGata! {total_promo_add} promotii reale Impact atasate pe {total_mag} magazine.")
     if total_promo_add:
         print("Urmator pas: python merge_platforms.py")
+    if erori_sistem:
+        # Cod 1: pasul apare PICAT in GitHub Actions (are continue-on-error, deci restul
+        # pipeline-ului merge mai departe). Pe 13-15.09 un bug a oprit toate ofertele noi,
+        # iar pasul iesea verde.
+        print("\nEROARE DE SISTEM — pasul a esuat:")
+        for e in erori_sistem:
+            print(f"  {e}")
+        sys.exit(1)
 
 
 if __name__ == "__main__":
