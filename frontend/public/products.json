@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-15T20:03:03Z",
+  "updated": "2026-09-16T09:42:16Z",
   "count": 8176,
   "products": [
     {
@@ -19,7 +19,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 106
+      "zile_ramase": 105
     },
     {
       "id": "promo_temu.com_0",
@@ -133,7 +133,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 107
+      "zile_ramase": 106
     },
     {
       "id": "promo_expomob.ro_0",
@@ -152,7 +152,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 46
+      "zile_ramase": 45
     },
     {
       "id": "promo_linailsboutique.ro_0",
@@ -171,7 +171,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 15
+      "zile_ramase": 14
     },
     {
       "id": "promo_craftup.ro_0",
@@ -190,7 +190,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 15
+      "zile_ramase": 14
     },
     {
       "id": "promo_paa-home.ro_2",
@@ -209,7 +209,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 46
+      "zile_ramase": 45
     },
     {
       "id": "promo_edituradiana.ro_0",
@@ -228,7 +228,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 14
+      "zile_ramase": 13
     },
     {
       "id": "promo_yilitehair.com_9",
@@ -513,7 +513,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 4915
+      "zile_ramase": 4914
     },
     {
       "id": "promo_paa-home.ro_1",
@@ -532,7 +532,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 106
+      "zile_ramase": 105
     },
     {
       "id": "promo_linailsboutique.ro_1",
@@ -551,7 +551,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 15
+      "zile_ramase": 14
     },
     {
       "id": "promo_incaltamintelamoda.ro_0",
@@ -570,7 +570,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 273
+      "zile_ramase": 272
     },
     {
       "id": "promo_insotelhotelgroup.com_0",
@@ -627,7 +627,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 15
+      "zile_ramase": 14
     },
     {
       "id": "promo_comfier.com_0",
@@ -665,7 +665,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 46
+      "zile_ramase": 45
     },
     {
       "id": "promo_herbagetica.ro_0",
@@ -703,7 +703,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 14
+      "zile_ramase": 13
     },
     {
       "id": "promo_cvlife.com_0",
@@ -779,7 +779,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 15
+      "zile_ramase": 14
     },
     {
       "id": "promo_laavooextensions.com_0",
@@ -969,7 +969,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 106
+      "zile_ramase": 105
     },
     {
       "id": "promo_nadula.com_0",
@@ -1197,7 +1197,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "PB20",
-      "zile_ramase": 14
+      "zile_ramase": 13
     },
     {
       "id": "promo_geetahair.com_10",
@@ -1273,7 +1273,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 12
+      "zile_ramase": 11
     },
     {
       "id": "promo_femieko.ro_0",
@@ -1292,7 +1292,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 106
+      "zile_ramase": 105
     },
     {
       "id": "promo_geetahair.com_0",
@@ -1444,7 +1444,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "BL2016",
-      "zile_ramase": 106
+      "zile_ramase": 105
     },
     {
       "id": "promo_swiss-belhotel.com_0",
@@ -1672,7 +1672,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 46
+      "zile_ramase": 45
     },
     {
       "id": "promo_x-sense.com_0",
@@ -1710,7 +1710,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "epotion10",
-      "zile_ramase": 297
+      "zile_ramase": 296
     },
     {
       "id": "promo_jollymag.ro_0",
@@ -1843,7 +1843,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 106
+      "zile_ramase": 105
     },
     {
       "id": "promo_mobidea.ro_0",
@@ -1862,7 +1862,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 14
+      "zile_ramase": 13
     },
     {
       "id": "promo_conqueco.com_0",
@@ -1882,25 +1882,6 @@
       "is_promo": true,
       "cod_cupon": "",
       "zile_ramase": 2
-    },
-    {
-      "id": "promo_style4street.com_0",
-      "title": "Geci Statement la Reducere",
-      "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fstyle4street.com%2Foutlet%2F",
-      "url_original": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fstyle4street.com%2Foutlet%2F",
-      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14422/medium/14422.png",
-      "price": 349.0,
-      "old_price": 387.78,
-      "discount_pct": 10,
-      "category": "Fashion",
-      "cat_slug": "fashion",
-      "brand": "Style4street",
-      "merchant": "Style4street",
-      "merchant_slug": "style4street.com",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "",
-      "zile_ramase": 1
     },
     {
       "id": "promo_vevor.com_0",
@@ -1954,6 +1935,25 @@
       "brand": "Eur",
       "merchant": "Eur",
       "merchant_slug": "eur.vevor.com",
+      "feed_id": "promo",
+      "is_promo": true,
+      "cod_cupon": "",
+      "zile_ramase": 0
+    },
+    {
+      "id": "promo_style4street.com_0",
+      "title": "Geci Statement la Reducere",
+      "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fstyle4street.com%2Foutlet%2F",
+      "url_original": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fstyle4street.com%2Foutlet%2F",
+      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14422/medium/14422.png",
+      "price": 349.0,
+      "old_price": 387.78,
+      "discount_pct": 10,
+      "category": "Fashion",
+      "cat_slug": "fashion",
+      "brand": "Style4street",
+      "merchant": "Style4street",
+      "merchant_slug": "style4street.com",
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
@@ -2223,7 +2223,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "BLEAGUE5",
-      "zile_ramase": 14
+      "zile_ramase": 13
     },
     {
       "id": "promo_regata.ro_0",
@@ -2242,7 +2242,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 1568
+      "zile_ramase": 1567
     },
     {
       "id": "promo_labelshop.ro_0",
@@ -2261,7 +2261,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 1568
+      "zile_ramase": 1567
     },
     {
       "id": "promo_outin.com_0",
@@ -2337,7 +2337,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "LAMODA",
-      "zile_ramase": 3563
+      "zile_ramase": 3562
     },
     {
       "id": "promo_orbitmobile.com_0",
@@ -2888,7 +2888,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 1568
+      "zile_ramase": 1567
     },
     {
       "id": "promo_otter.ro_1",
@@ -2907,7 +2907,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 1568
+      "zile_ramase": 1567
     },
     {
       "id": "promo_helloice.com_0",
@@ -3116,7 +3116,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 904
+      "zile_ramase": 903
     },
     {
       "id": "promo_sneakerit.ro_1",
@@ -3135,7 +3135,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 904
+      "zile_ramase": 903
     },
     {
       "id": "promo_vidaxl.bg_2",
@@ -3686,7 +3686,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 137
+      "zile_ramase": 136
     },
     {
       "id": "promo_xlaserlab.com_0",
@@ -3990,7 +3990,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 107
+      "zile_ramase": 106
     },
     {
       "id": "promo_herbagetica.ro_1",
@@ -4009,7 +4009,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 107
+      "zile_ramase": 106
     },
     {
       "id": "promo_moftcollection.ro_0",
@@ -4028,7 +4028,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 107
+      "zile_ramase": 106
     },
     {
       "id": "promo_paa-home.ro_3",
@@ -4047,7 +4047,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 107
+      "zile_ramase": 106
     },
     {
       "id": "promo_sofipex.ro_0",
@@ -4066,26 +4066,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 106
-    },
-    {
-      "id": "promo_fantasyforge.ro_0",
-      "title": "🔥Buy One, Get One Free Miniature",
-      "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffantasyforge.ro%2Fcollections%2Fpromo-1-1",
-      "url_original": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffantasyforge.ro%2Fcollections%2Fpromo-1-1",
-      "image": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14440/medium/14440.png",
-      "price": 0.0,
-      "old_price": null,
-      "discount_pct": 0,
-      "category": "Marketplace",
-      "cat_slug": "marketplace",
-      "brand": "Fantasyforge",
-      "merchant": "Fantasyforge",
-      "merchant_slug": "fantasyforge.ro",
-      "feed_id": "promo",
-      "is_promo": true,
-      "cod_cupon": "",
-      "zile_ramase": 106
+      "zile_ramase": 105
     },
     {
       "id": "promo_220-volti.ro_0",
@@ -4104,7 +4085,26 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 106
+      "zile_ramase": 105
+    },
+    {
+      "id": "promo_fantasyforge.ro_0",
+      "title": "🔥Buy One, Get One Free Miniature",
+      "url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffantasyforge.ro%2Fcollections%2Fpromo-1-1",
+      "url_original": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffantasyforge.ro%2Fcollections%2Fpromo-1-1",
+      "image": "",
+      "price": 0.0,
+      "old_price": null,
+      "discount_pct": 0,
+      "category": "Online Mall",
+      "cat_slug": "electronice",
+      "brand": "Fantasyforge",
+      "merchant": "Fantasyforge",
+      "merchant_slug": "fantasyforge.ro",
+      "feed_id": "promo",
+      "is_promo": true,
+      "cod_cupon": "",
+      "zile_ramase": 105
     },
     {
       "id": "promo_geekbuying.com_18",
@@ -4237,7 +4237,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 45
+      "zile_ramase": 44
     },
     {
       "id": "promo_librarie.net_0",
@@ -4256,7 +4256,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 45
+      "zile_ramase": 44
     },
     {
       "id": "promo_trendyol.com_0",
@@ -4294,7 +4294,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 30
+      "zile_ramase": 29
     },
     {
       "id": "promo_dhgate.com_0",
@@ -4788,7 +4788,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 15
+      "zile_ramase": 14
     },
     {
       "id": "promo_craftup.ro_1",
@@ -4807,7 +4807,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 15
+      "zile_ramase": 14
     },
     {
       "id": "promo_aronia-charlottenburg.ro_0",
@@ -4826,7 +4826,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 15
+      "zile_ramase": 14
     },
     {
       "id": "promo_noriel.ro_0",
@@ -4845,7 +4845,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 15
+      "zile_ramase": 14
     },
     {
       "id": "promo_afisport.ro_0",
@@ -4864,7 +4864,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 14
+      "zile_ramase": 13
     },
     {
       "id": "promo_karcher.com_0",
@@ -4883,7 +4883,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 14
+      "zile_ramase": 13
     },
     {
       "id": "promo_arabescu.ro_0",
@@ -4902,7 +4902,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 14
+      "zile_ramase": 13
     },
     {
       "id": "promo_interlink.ro_0",
@@ -4921,7 +4921,7 @@
       "feed_id": "promo",
       "is_promo": true,
       "cod_cupon": "",
-      "zile_ramase": 14
+      "zile_ramase": 13
     },
     {
       "id": "promo_eufy.com_0",

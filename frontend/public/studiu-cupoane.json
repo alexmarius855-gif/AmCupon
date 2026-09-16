@@ -1,11 +1,11 @@
 {
-  "generat": "2026-09-15",
-  "total_magazine": 1154,
+  "generat": "2026-09-16",
+  "total_magazine": 1151,
   "cu_promotie": 116,
   "cu_cod_real": 34,
   "doar_oferta": 82,
   "procent_cu_promotie": 10.1,
-  "procent_cu_cod": 2.9,
+  "procent_cu_cod": 3.0,
   "reducere_mediana_generala": 20.0,
   "magazine_cu_procent_declarat": 80,
   "categorii": [
@@ -30,7 +30,7 @@
     {
       "slug": "sanatate",
       "nume": "Sănătate & farmacie",
-      "magazine": 62,
+      "magazine": 61,
       "cu_promotie": 7,
       "reducere_mediana": 25,
       "reducere_max": 35,
@@ -84,8 +84,8 @@
     {
       "slug": "marketplace",
       "nume": "Marketplace",
-      "magazine": 242,
-      "cu_promotie": 21,
+      "magazine": 240,
+      "cu_promotie": 20,
       "reducere_mediana": 12,
       "reducere_max": 90,
       "esantion": 15
@@ -156,7 +156,7 @@
     {
       "slug": "mancare-bauturi",
       "nume": "Mâncare & băuturi",
-      "magazine": 15,
+      "magazine": 14,
       "cu_promotie": 1,
       "reducere_mediana": null,
       "reducere_max": null,
@@ -174,8 +174,8 @@
     {
       "slug": "online-mall",
       "nume": "online-mall",
-      "magazine": 1,
-      "cu_promotie": 1,
+      "magazine": 2,
+      "cu_promotie": 2,
       "reducere_mediana": null,
       "reducere_max": null,
       "esantion": 0
