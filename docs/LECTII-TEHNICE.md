@@ -136,6 +136,12 @@ Un fallback despre care toată lumea presupune că merge, dar nimeni nu l-a test
 **Regula:** testează plasa de siguranță, nu doar drumul principal. Și verifică dacă garda măsoară
 chiar dimensiunea care poate ceda.
 
+- **16.09: „✓" tipărit indiferent de rezultat, pe pași cu `continue-on-error`.** Facebook scria
+  „0 posturi publicate ✓" zi de zi cu tokenul mort (cod 190); Telegram a tăcut 3 zile, workflow verde;
+  site-ul a afișat 58 de promoții expirate, workflow verde. Nimic nu verifica ce ajunge efectiv la
+  cititor. **Regula:** un script de publicare iese cu cod ≠ 0 când n-a publicat ce a încercat, iar
+  datele publice au o gardă proprie la final (`verifica_promotii.py`, `if: always()`), dovedită că pică.
+
 ---
 
 ## 5. Fișiere auto-referențiale: o greșeală se auto-confirmă la infinit
@@ -150,6 +156,12 @@ contraintuitivă și a costat de două ori:
   numele nici nu se mai consultă. De-aia există `OVERRIDE`: e singurul mod de a desface o
   clasificare blocată.
 
+- **16.09:** `fetch_impact_deals.py` doar ADĂUGA promoții, iar `zile_ramase` se calcula o singură
+  dată. O ofertă retrasă, expirată sau atașată greșit rămânea pentru totdeauna, cu același „expiră în
+  2 zile": 58 de expirate pe site și 178 de contoare înghețate. Corecția: câmpurile derivate
+  (`zile_ramase`, flag-urile de magazin) nu se păstrează, se RECALCULEAZĂ din sursă (`expira`) la
+  fiecare rulare (`scripts/promotii.py`), iar lista unei surse se ÎNLOCUIEȘTE cu oferta de azi.
+
 **Regula:** într-un fișier care e și intrare și ieșire, orice eroare devine permanentă. Trebuie
 prevăzut explicit un mecanism de corecție care bate datele existente.
 
@@ -157,7 +169,7 @@ prevăzut explicit un mecanism de corecție care bate datele existente.
 
 ## 6. Paginare: nu presupune că API-ul respectă `per_page`
 
-**Găsit de două ori, în două scripturi, cu exact aceeași cauză.**
+**Găsit de patru ori, în patru scripturi, cu exact aceeași cauză.**
 
 API-ul 2Performant **capează la 20 de elemente pe pagină și ignoră `per_page`**. Codul cerea 50 sau
 100 și se oprea cu `if len(items) < per_page: break` — primea 20, 20 < 50, deci se oprea după prima
@@ -166,9 +178,16 @@ pagină.
 - 30.06: `/affiliate/programs.json` → aducea 20 din 600 de programe
 - 16.08: `fetch_product_feeds.py` → fix 20 de produse din fiecare feed. **Dovada în date, nu
   deducție: din 86 de magazine, 20 aveau EXACT 20 de produse.**
+- 16.09: **același fișier, altă funcție** — `get_product_feeds()` (lista de feed-uri) avea încă
+  `if len(items) < 50`. Logul scria „Pagina 1: 20 feed-uri (20 total)" la fiecare rulare. Efect:
+  produsele săreau între rulări (7.873 → 12.100, cu ALTE magazine), iar o reparație de o zi (memorie
+  între rulări) a ratat cauza. Căutat apoi tiparul în tot `scripts/`: al patrulea, `fetch_banners.py`.
 
 **Regula:** oprește-te pe `metadata.pagination.pages` (numărul real de pagini). Rezervă pe
 `len(items) == 0` doar când lipsește metadata. **Niciodată pe `len(items) < per_page`.**
+**Regula a doua (16.09):** când repari tiparul într-un loc, `grep -n "len(items) <" scripts/*.py` pe
+TOT folderul, în același commit. De două ori l-am reparat într-o funcție și l-am lăsat în vecina ei.
+Și un „N total" egal cu dimensiunea unei pagini (20) într-un log e semnătura lui — citește-l ca atare.
 
 ---
 
@@ -209,6 +228,11 @@ diverge — vezi array-ul `intrebari` din `cod-reducere/[magazin]/page.tsx`.
 6. **Verifică marcajul înainte să repari.** Într-o verificare live am confirmat „e deployat" pentru
    că am căutat un șir care exista deja în pagină de dinainte. Alege un marcaj care apare DOAR în
    codul nou.
+7. **Telegram, `parse_mode: "Markdown"` (vechi): `\_` NU e escape ÎN INTERIORUL unei entități.** Un
+   titlu cu „_" pus între `_..._` lasă un caracter fără pereche și API-ul respinge tot mesajul
+   („can't find end of the entity starting at byte offset N" — N arată exact acel caracter). Folosește
+   `HTML`: se escapează doar `< > &`, oriunde (`html.escape`). Reproduce mesajul din datele rulării și
+   compară offsetul înainte să crezi o cauză.
 
 ---
 

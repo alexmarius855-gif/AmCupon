@@ -10,116 +10,148 @@ Setup (o singura data):
        TELEGRAM_CHANNEL_ID = "@AmCuponRo"   (sau ID numeric: -100123456789)
 
 Env vars: TELEGRAM_BOT_TOKEN, TELEGRAM_CHANNEL_ID
+
+16.09.2026 — rescris dupa 3 zile fara nicio postare (14-16.09):
+  · Mod HTML in loc de Markdown. In Markdown-ul vechi al Telegram, „\\_" NU e escape in
+    interiorul unei entitati: titlul „Geeta Hair_Mother's Day Sale" pus intre _..._ lasa un „_"
+    fara pereche. Eroarea API „can't find end of the entity starting at byte offset 895" arata
+    exact acel caracter (verificat pe mesajul reconstruit din datele rularii). In HTML se
+    escapeaza doar < > &, oriunde, fara exceptii.
+  · Fara „% succes" si fara „sortate dupa rata de succes": `procent_succes` e un numar aleator
+    (docs/LECTII-TEHNICE.md #10). Ordinea e acum: are cod, apoi expira mai curand.
+  · Titlul vine din `promotii.titlu_afisabil` — la Impact, `nume` e des doar codul.
 """
 
-import os
+import html
 import json
+import os
 import sys
-import requests
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from datetime import datetime
 
-BOT_TOKEN  = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
-CHANNEL_ID = os.environ.get("TELEGRAM_CHANNEL_ID", "").strip()
+import requests
 
-if not BOT_TOKEN or not CHANNEL_ID:
-    print("⚠️  TELEGRAM_BOT_TOKEN sau TELEGRAM_CHANNEL_ID nu sunt setate — skip Telegram")
-    sys.exit(0)
+sys.path.insert(0, str(Path(__file__).parent))
+from promotii import FARA_DATA, nume_afisabil, titlu_afisabil  # noqa: E402
 
-# ── Citeste output.json ───────────────────────────────────────────────────────
 DATA_PATH = Path(__file__).parent.parent / "frontend" / "public" / "output.json"
-if not DATA_PATH.exists():
-    DATA_PATH = Path(__file__).parent.parent / "data" / "output.json"
-
-with open(DATA_PATH, encoding="utf-8") as f:
-    magazine = json.load(f)
 
 RETELE = {"profitshare.ro", "2performant.com"}
-
-# Magazine valide: au promotie, fara spatii in slug, fara retele
-valide = [
-    m for m in magazine
-    if m.get("are_promotie")
-    and m.get("promotii")
-    and " " not in m.get("magazin", "")
-    and m.get("magazin") not in RETELE
-]
-
-# Sortare: coduri cupon > rata succes > zile ramase
-valide.sort(key=lambda m: (
-    -(1 if m.get("cod_cupon") else 0),
-    -m.get("procent_succes", 0),
-    m.get("zile_ramase", 99),
-))
-
-top5 = valide[:5]
-
-# ── Formatare mesaj ───────────────────────────────────────────────────────────
 EMOJII = ["🥇", "🥈", "🥉", "4️⃣", "5️⃣"]
+LUNI = ["ianuarie", "februarie", "martie", "aprilie", "mai", "iunie",
+        "iulie", "august", "septembrie", "octombrie", "noiembrie", "decembrie"]
 
-def esc_md(s: str) -> str:
-    """Escape caracterele speciale Telegram Markdown (legacy) — altfel un
-    singur '_'/'*'/'`'/'[' nebalansat intr-un titlu real de promotie (ex.
-    "...soare_15-21.07.2026") rupe parsing-ul intregului mesaj (eroare
-    "can't find end of the entity", vazuta in productie 20.07.2026)."""
-    for ch in ("_", "*", "`", "["):
-        s = s.replace(ch, "\\" + ch)
-    return s
 
-def format_oferta(m: dict, pos: int) -> str:
-    slug   = m["magazin"]
-    nume   = esc_md(slug.split(".")[0].replace("-", " ").title())
-    promo  = m["promotii"][0]
-    titlu  = esc_md(promo.get("nume", "Promotie activa"))
-    cod    = promo.get("cod_cupon", "")
-    zile   = m.get("zile_ramase", 0)
-    succes = m.get("procent_succes", 0)
-    url    = f"https://amcupon.ro/cod-reducere/{slug}"
+def _promo_de_afisat(m: dict) -> dict:
+    """Promotia cu cod care expira cel mai curand; altfel prima."""
+    promotii = [p for p in (m.get("promotii") or []) if isinstance(p, dict)]
+    cu_cod = [p for p in promotii if (p.get("cod_cupon") or "").strip()]
+    candidati = cu_cod or promotii
+    return min(candidati, key=lambda p: p.get("zile_ramase", FARA_DATA)) if candidati else {}
 
-    linii = [f"{EMOJII[pos]} *{nume}*"]
-    linii.append(f"📦 _{titlu}_")
+
+def alege_top5(magazine: list) -> list:
+    """(magazin, promotie) pentru primele 5 oferte. Un brand o singura data: vevor.com,
+    vevor.com.au si eur.vevor.com au acelasi cod — pe canal ar fi trei randuri identice."""
+    valide = [m for m in magazine
+              if isinstance(m, dict) and m.get("promotii")
+              and " " not in (m.get("magazin") or "") and m.get("magazin") not in RETELE]
+    perechi = [(m, _promo_de_afisat(m)) for m in valide]
+    perechi.sort(key=lambda mp: (
+        0 if (mp[1].get("cod_cupon") or "").strip() else 1,
+        mp[1].get("zile_ramase", FARA_DATA),
+        mp[0].get("magazin", ""),
+    ))
+    top, branduri, coduri = [], set(), set()
+    for m, p in perechi:
+        brand = nume_afisabil(m).lower()
+        cod = (p.get("cod_cupon") or "").strip().upper()
+        if brand in branduri or (cod and cod in coduri):
+            continue
+        branduri.add(brand)
+        if cod:
+            coduri.add(cod)
+        top.append((m, p))
+        if len(top) == 5:
+            break
+    return top
+
+
+def _expirare(zile) -> str:
+    if not isinstance(zile, int) or zile >= FARA_DATA or zile > 7:
+        return ""
+    if zile == 0:
+        return "⏰ Expiră azi!"
+    if zile == 1:
+        return "⏰ Expiră mâine"
+    return f"⏰ Expiră în {zile} zile"
+
+
+def format_oferta(m: dict, p: dict, pos: int) -> str:
+    e = html.escape
+    titlu = titlu_afisabil(p)
+    if len(titlu) > 120:
+        titlu = titlu[:117].rstrip() + "..."
+    url = f"https://amcupon.ro/cod-reducere/{m['magazin']}"
+    linii = [f"{EMOJII[pos]} <b>{e(nume_afisabil(m))}</b>"]
+    if titlu:
+        linii.append(f"📦 <i>{e(titlu)}</i>")
+    cod = (p.get("cod_cupon") or "").strip()
     if cod:
-        linii.append(f"🎟 Cod: `{cod}`")
-    if succes > 0:
-        linii.append(f"✅ {succes}% succes")
-    if 0 < zile <= 7:
-        linii.append(f"⏰ Expira in {zile} {'zi' if zile == 1 else 'zile'}!")
-    linii.append(f"👉 [Vezi oferta]({url})")
+        linii.append(f"🎟 Cod: <code>{e(cod)}</code>")
+    exp = _expirare(p.get("zile_ramase"))
+    if exp:
+        linii.append(exp)
+    linii.append(f'👉 <a href="{e(url, quote=True)}">Vezi oferta</a>')
     return "\n".join(linii)
 
-# Data in romana
-LUNI = ["ianuarie","februarie","martie","aprilie","mai","iunie",
-        "iulie","august","septembrie","octombrie","noiembrie","decembrie"]
-azi = datetime.now()
-data_ro = f"{azi.day} {LUNI[azi.month - 1]} {azi.year}"
 
-sectiuni = [format_oferta(m, i) for i, m in enumerate(top5)]
+def construieste_mesaj(magazine: list, acum: datetime) -> str:
+    top5 = alege_top5(magazine)
+    if not top5:
+        return ""
+    data_ro = f"{acum.day} {LUNI[acum.month - 1]} {acum.year}"
+    return (
+        f"🔥 <b>Top reduceri — {data_ro}</b>\n"
+        f"<i>Selecția AmCupon.ro: codurile active azi, cele care expiră curând primele</i>\n\n"
+        + "\n\n".join(format_oferta(m, p, i) for i, (m, p) in enumerate(top5))
+        + "\n\n━━━━━━━━━━━━━━━━━━━━\n"
+        '🌐 <a href="https://amcupon.ro">Toate ofertele</a> · '
+        '<a href="https://amcupon.ro/top-reduceri">Top reduceri</a> · '
+        '<a href="https://amcupon.ro/calculator">Calculator</a>'
+    )
 
-mesaj = (
-    f"🔥 *Top Reduceri — {data_ro}*\n"
-    f"_Selectia AmCupon.ro — verificate si sortate dupa rata de succes_\n\n"
-    + "\n\n".join(sectiuni)
-    + "\n\n"
-    "━━━━━━━━━━━━━━━━━━━━\n"
-    "🌐 [Toate ofertele](https://amcupon.ro) · "
-    "[Top Reduceri](https://amcupon.ro/top-reduceri) · "
-    "[Calculator](https://amcupon.ro/calculator)"
-)
 
-# ── Trimite pe Telegram ───────────────────────────────────────────────────────
-resp = requests.post(
-    f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage",
-    json={
-        "chat_id": CHANNEL_ID,
-        "text": mesaj,
-        "parse_mode": "Markdown",
-        "disable_web_page_preview": True,
-    },
-    timeout=15,
-)
+def main() -> int:
+    bot_token = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
+    channel_id = os.environ.get("TELEGRAM_CHANNEL_ID", "").strip()
+    if not bot_token or not channel_id:
+        print("⚠️  TELEGRAM_BOT_TOKEN sau TELEGRAM_CHANNEL_ID nu sunt setate — skip Telegram")
+        return 0
 
-if resp.ok:
-    print(f"✅ Telegram: mesaj trimis ({len(top5)} oferte) pe {CHANNEL_ID}")
-else:
+    with open(DATA_PATH, encoding="utf-8") as f:
+        magazine = json.load(f)
+    mesaj = construieste_mesaj(magazine, datetime.now(timezone.utc) + timedelta(hours=3))
+    if not mesaj:
+        print("Telegram: nicio promotie activa azi — nu trimit nimic.")
+        return 0
+
+    resp = requests.post(
+        f"https://api.telegram.org/bot{bot_token}/sendMessage",
+        json={
+            "chat_id": channel_id,
+            "text": mesaj,
+            "parse_mode": "HTML",
+            "disable_web_page_preview": True,
+        },
+        timeout=15,
+    )
+    if resp.ok:
+        print(f"✅ Telegram: top 5 trimis ({len(mesaj.encode('utf-8'))} bytes)")
+        return 0
     print(f"❌ Telegram error {resp.status_code}: {resp.text}")
-    sys.exit(1)
+    return 1
+
+
+if __name__ == "__main__":
+    sys.exit(main())

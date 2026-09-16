@@ -14,6 +14,8 @@ interface Promotie {
   cod_cupon: string;
   landing_page: string;
   zile_ramase: number;
+  /** Data reala de expirare (AAAA-LL-ZZ). Lipseste cand sursa nu da una — atunci nu declaram nicio data. */
+  expira?: string;
 }
 
 interface Magazin {
@@ -485,7 +487,9 @@ export default async function PaginaMagazin({
         description: promo.descriere || promo.nume,
         url: promo.landing_page || pageUrl,
         availability: "https://schema.org/InStock",
-        validThrough: new Date(acumMs + promo.zile_ramase * 86400000).toISOString(),
+        // Din data reala, nu din `zile_ramase`: fara `expira` contorul e 99 prin conventie
+        // (scripts/promotii.py), iar „valabil inca 99 de zile" ar fi o data inventata declarata lui Google.
+        ...(promo.expira ? { validThrough: `${promo.expira.slice(0, 10)}T23:59:59Z` } : {}),
         // schema.org nu are tip "Coupon"/"DiscountCode" valid (propunere respinsa oficial) —
         // additionalProperty/PropertyValue e alternativa reala pt a expune codul in Offer.
         // Gating pe promo.cod_cupon (per-promotie), NICIODATA pe m.cod_cupon (flag la nivel

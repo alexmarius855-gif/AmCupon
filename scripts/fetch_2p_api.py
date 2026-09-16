@@ -139,7 +139,9 @@ def sign_in() -> bool:
             _auth["client"]       = user.get("client", "")
             _auth["uid"]          = user.get("uid", AFFILIATE_EMAIL)
 
-        print(f"    ✅ Login reusit — uid={_auth['uid']}, token={_auth['access-token'][:12]}...")
+        # Fara nicio bucata din token: repo-ul e public, deci si logurile GitHub Actions
+        # (pana pe 16.09.2026 se tipareau primele 12 caractere ale tokenului).
+        print("    ✅ Login reusit")
         return True
 
     except Exception as e:
@@ -328,6 +330,7 @@ def parse_promotii(promotii_raw: list) -> dict:
         # Zile ramase
         end_raw = p.get("promotion_end", "") or p.get("end_date", "") or p.get("expires_at", "")
         zile_ramase = 99
+        expira = ""
         if end_raw:
             try:
                 end_dt = datetime.fromisoformat(str(end_raw).replace("Z", "+00:00"))
@@ -337,6 +340,7 @@ def parse_promotii(promotii_raw: list) -> dict:
                 if delta < 0:
                     continue  # expirata
                 zile_ramase = max(0, delta)
+                expira = end_dt.strftime("%Y-%m-%d")
             except Exception:
                 pass
 
@@ -361,6 +365,10 @@ def parse_promotii(promotii_raw: list) -> dict:
             "cod_cupon":     cod_cupon,
             "landing_page":  landing_afiliat,
             "zile_ramase":   zile_ramase,
+            # Data reala: `zile_ramase` se recalculeaza din ea la merge (scripts/promotii.py).
+            "expira":        expira,
+            # Fara `sursa` si fara `expira`, merge_platforms.py nu publica promotia (nu stie de unde e).
+            "sursa":         "2performant_api",
         }
 
         if not promotie["nume"]:

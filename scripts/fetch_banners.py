@@ -165,7 +165,15 @@ def fetch_banners() -> list:
                     "b_type":        b.get("b_type", "image"),
                 })
 
-            if len(items) < 50:
+            # Oprire pe numarul REAL de pagini (docs/LECTII-TEHNICE.md #6). API-ul 2Performant da 20
+            # pe pagina si ignora `per_page`; `if len(items) < 50` citea doar prima pagina — gasit
+            # pe 16.09.2026, la cautarea tiparului in toate scripturile dupa fetch_product_feeds.py.
+            pagini = ((data.get("metadata") or {}).get("pagination") or {}).get("pages") \
+                if isinstance(data, dict) else None
+            if pagini:
+                if page >= pagini:
+                    break
+            elif len(items) < 20:
                 break
             page += 1
             time.sleep(0.3)

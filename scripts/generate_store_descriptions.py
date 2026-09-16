@@ -77,10 +77,14 @@ INTRO = [
 ]
 
 # Paragraf oferte — cu promoții active (folosește date reale)
+# 16.09.2026: paragraful numeste o promotie si numara ofertele, deci se REGENEREAZA la fiecare rulare
+# (update-data.yml), nu o data pe zi — /cod-reducere/nadula.com scria „4 oferte active, inclusiv
+# Klaiyi..." langa o lista cu 1 cod. Scoase si „verificate": nimeni nu testeaza codurile, lista se
+# actualizeaza automat din retele.
 PROMO_DA = [
-    "Chiar acum, {nume} are {n} {ofcuv} {activ} pe AmCupon.ro, printre care „{promo}”. Verificăm zilnic codurile de reducere ca să prinzi cel mai bun preț înainte să finalizezi comanda.",
-    "Momentan găsești {n} {ofcuv} {activ} pentru {nume}, inclusiv „{promo}”. Pe AmCupon.ro actualizăm aceste reduceri zilnic, ca informația să fie mereu corectă.",
-    "{nume} are în acest moment {n} {ofcuv} {activ}, cum este „{promo}”. Toate sunt verificate și reîmprospătate zilnic pe AmCupon.ro.",
+    "Chiar acum, {nume} are {n} {ofcuv} {activ} pe AmCupon.ro, printre care „{promo}”. Lista se actualizează automat de mai multe ori pe zi, direct din rețelele de afiliere.",
+    "Momentan găsești {n} {ofcuv} {activ} pentru {nume}, inclusiv „{promo}”. Pe AmCupon.ro actualizăm aceste reduceri de mai multe ori pe zi.",
+    "{nume} are în acest moment {n} {ofcuv} {activ}, cum este „{promo}”. Lista se reîmprospătează automat pe AmCupon.ro, de mai multe ori pe zi.",
 ]
 # Paragraf oferte — fără promoții active
 PROMO_NU = [

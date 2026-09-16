@@ -425,6 +425,9 @@ def main():
     _neplatite, _deep, _simplu = trece_prin_tracking(magazine)
     print(f"\n  Oferte trecute prin tracking: {_deep} deep-link, {_simplu} pe linkul afiliat simplu"
           f" (afiliate neplatite aduse la url: {_neplatite})")
+    # La fel pentru valabilitate: scriptul asta e ultimul care scrie output.json.
+    from promotii import curata_promotii, raport
+    print("  Valabilitate — " + raport(curata_promotii(magazine)))
 
     # ── 4. Salveaza ──────────────────────────────────────────────────────────
     if args.dry_run:

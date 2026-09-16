@@ -12,18 +12,65 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 16.09.2026, partea a doua (ce vede vizitatorul: promotii valabile, Telegram, produse):**
+- **Masurat pe productie** (rularea 10:22 UTC, prima cu reparatiile din partea intai, + pagini live):
+  **58 din 336 de promotii expirate** dupa propria `expira`; 9 magazine cu o oferta expirata pe primul loc.
+  `/cod-reducere/nadula.com` scria „4 coduri active, expira in 2 zile" = codurile **Klaiyi**, expirate
+  09-14.09 (a doua metoda, pe API: campania nadula 15659 are 0 reclame Klaiyi — veneau din potrivirea
+  veche pe AdvertiserUrl, acelasi advertiser). **178 de contoare gresite** (DHgate „22 zile", real 14).
+  9 promotii manuale din 12.06 cu contor FIX (gsmnet „7 zile ramase" trei luni). temu/shein/trendyol
+  `cod_cupon: true` fara cod. Cauza: `fetch_impact_deals.py` doar ADAUGA, iar `zile_ramase` se calcula
+  o data, la atasare — fisiere intrare+iesire (LECTII #5).
+- **`scripts/promotii.py`** = sursa unica: `curata_promotii()` la merge SI la import CSV — scoate
+  expiratele, `zile_ramase` DERIVAT din `expira` la fiecare rulare, fara `expira` = 99 (fara contor,
+  „Ofertă activă"), flag-uri de magazin recalculate. Merge: promotie fara `sursa` SI fara `expira` nu se
+  publica. Importatoarele scriu `sursa` + `expira` (2P API, export 2P, TradeTracker). `fetch_impact_deals.py`:
+  lista `impact_deals_api` a magazinului = oferta DE AZI a campaniei lui (scoate retrase/alt brand), doar
+  cand /Ads a venit complet (`@total`). JSON-LD `validThrough` din `expira`, nu din contor.
+- **Garda: `scripts/verifica_promotii.py`**, ultimul pas din update-data.yml, `if: always()` — rularea
+  iese ROSIE daca scapa o expirata sau un contor fals. **Dovedit ca pica:** output.json de la 10:41 ->
+  266 probleme, exit 1; aceleasi date curatate -> OK. Local, lantul Impact -> merge pe datele de azi:
+  -134 promotii Impact, 83 de magazine cu promotii (erau 122 socotind si cele false), garda trece.
+- **Telegram tacut 14-16.09.** In Markdown-ul vechi, `\_` NU e escape in interiorul unei entitati:
+  byte offset 895 din eroare = exact `_`-ul fara pereche din „Geeta Hair_Mother's Day" (reconstruit din
+  datele rularii). `telegram_daily.py` rescris pe HTML; scos „% succes" (`procent_succes` e aleator) si
+  „sortate dupa rata de succes"; titlul din `titlu_afisabil` (la Impact `nume` e des doar codul).
+  `post_telegram.py`: escape la coduri, un brand o data, cod 1 la esec. Cei doi pasi ruleaza independent
+  (inainte `bash -e` il oprea si pe al doilea). Validat cu un parser strict al regulilor HTML Telegram.
+- **Descrierile de magazin** numara ofertele si numesc una, dar se regenerau o data pe zi: nadula.com
+  scria „4 oferte active, inclusiv Klaiyi..." langa 1 cod. `generate_store_descriptions.py --force`
+  ruleaza acum la FIECARE rulare, dupa merge; scos „verificate" din paragraful cu oferte. Verificat pe
+  dev server cu datele curatate: 1 cod, fara Klaiyi, „4 zile ramase", `validThrough` 2026-09-20.
+- **Ramas, decizia lui Alex (SEO):** titlul paginilor fara oferte e „— Voucher verificat" (~1.000 de
+  pagini, vizibil in Google) si descrierile meta spun „coduri verificate" — nimeni nu testeaza codurile.
+- **Facebook** scria „0 posturi publicate ✓" cu tokenul mort (OAuthException 190): acum cod 1 + ce e de
+  facut. **Tokenul il regenereaza Alex** (Meta, token de pagina -> `FACEBOOK_PAGE_TOKEN`).
+- **Log public**: `fetch_2p_api.py` tiparea primele 12 caractere ale tokenului 2P. Scos.
+- **Produsele — reparatia din partea intai NU a ajuns** (rularea reala: 7.873 -> 12.100 cu ALTE
+  magazine). Cauza reala: `get_product_feeds()` citea DOAR prima pagina (`len(items) < 50`) — bug-ul de
+  paginare a treia oara; a patra, acelasi tipar, in `fetch_banners.py`. Acum: paginare pe metadata;
+  ROTATIE (intai feed-urile nedescarcate, apoi cele mai vechi); MEMORIE pentru orice magazin nedescarcat
+  complet (≤14 zile, feed inca in My Feeds — verificat doar cu lista completa); oprire dupa 2 esecuri la
+  rand (limita API, ~35 s de reincercari fiecare); plafon 20.000 impartit corect. Simulat pe 6 rulari cu
+  API fals: 9 -> 18 -> 27 -> 36 magazine; feed scos -> produse scoase; lista taiata de 429 -> nimic scos;
+  >14 zile -> scos. **Numarul real de feed-uri: de confirmat cu test-product-feeds.yml.**
+- **Ramas pentru punctul 2 (relevanta):** din 37 de magazine cu cod, 31 au domeniu strain (oferte in USD,
+  hoteluri Asia, Eufy in olandeza); topul Telegram e dominat de ele. `Campaign.ShippingRegions` exista in
+  API-ul Impact (verificat) — sursa pentru „livreaza in Romania".
+
 **UPDATE 16.09.2026 (pipeline fara erori tacute + site fara linkuri moarte — PUSHED):**
 - **REGRESIE PROPRIE, gasita in log**: `fetch_impact_deals.py` apela `find_campaign(index, nume, url)`,
   semnatura veche; din 13.09 functia primeste `(index, url)` si indexul intoarce obiectul Campaign
   (`CampaignId`, nu `id`). TypeError pe fiecare magazin, prins ca „SKIP" — **638 de linii, zero oferte
   noi 3 zile, pipeline verde**. Reparat + garda: daca pica TOATE magazinele, scriptul iese cu cod 1.
-  Dry-run pe API: 66 de oferte noi pe 26 de magazine. **Lectie: cand schimbi semnatura unei functii,
+  Dry-run pe API: 66 de oferte noi pe 26 de magazine; **rularea reala a atasat 33 pe 13** (confirmat in log). **Lectie: cand schimbi semnatura unei functii,
   `grep` dupa TOTI apelantii din `scripts/`, nu doar in fisierul ei.**
 - **Produsele sareau 8.176 <-> 15.005 intre rulari**: 2Performant da 429 dupa ~120 de cereri, peste un
   minut (masurat in test-product-feeds.yml: 35 de reincercari, 0 recuperari). `fetch_product_feeds.py`:
   reincercare la 429, headerele de limita logate la primul 429, magazinele oprite inainte de final
   pastreaza produsele din rularea anterioara (doar din feed, maxim 14 zile — camp nou `preluat`),
   ordine cu seed fix. Test cap-coada pe `main()` cu reteaua simulata: recuperat, expirat, promo ignorat.
+  **INSUFICIENT in productie** — cauza reala era lista de feed-uri taiata la prima pagina (vezi partea a doua).
 - **Subsolul**: `/cod-reducere/bookzone.ro` 404 pe TOATE paginile (a doua oara, BookZone iesit din date
   din 20.08). Lista in `lib/magazinePopulare.ts`; `layout.tsx` (server) verifica ce exista in
   `output.json`. **Nu citi valori dintr-un fisier "use client" pe server** — de-aia modul comun.

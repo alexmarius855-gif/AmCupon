@@ -119,6 +119,25 @@ def main():
             print(f"  Format neasteptat in {fpath} — skip")
             continue
 
+        # O promotie fara `expira` SI fara `sursa` nu se publica (16.09.2026): nu stim nici de unde
+        # vine, nici pana cand e valabila. Cele 9 scrise de mana pe 12.06 in extra_merchants.json
+        # (Temu, SHEIN, JollyMag „JOLLY10", MedimFarm „SUMMER18"...) aveau un `zile_ramase` fix —
+        # 7, 14, 30 — care n-a scazut trei luni: „7 zile ramase" la o reducere „de vara", in
+        # septembrie. Toate importatoarele din pipeline scriu `sursa`. Regula e pe TOATE fisierele,
+        # nu doar pe extra: data/output.json e si intrare si iesire (LECTII-TEHNICE #5), deci cand
+        # fetch_2p_api.py pastreaza datele vechi, promotiile manuale s-ar intoarce pe acolo.
+        _nesigure = []
+        for _mg in data:
+            _pr = _mg.get("promotii") if isinstance(_mg, dict) else None
+            if isinstance(_pr, list):
+                _ok = [p for p in _pr if isinstance(p, dict) and (p.get("expira") or p.get("sursa"))]
+                if len(_ok) < len(_pr):
+                    _nesigure.append(_mg.get("magazin", "?"))
+                    _mg["promotii"] = _ok
+        if _nesigure:
+            print(f"  {os.path.basename(fpath)}: promotii fara sursa si fara data, nepublicate, la "
+                  f"{len(_nesigure)} magazine ({', '.join(_nesigure[:10])})")
+
         adaugate = 0
         duplicate = 0
         invalide = 0
@@ -242,6 +261,12 @@ def main():
     _neplatite, _deep, _simplu = trece_prin_tracking(merged)
     print(f"  linkuri afiliate neplatite (fara tracking sau contract expirat) aduse la url: {_neplatite}")
     print(f"  oferte trecute prin tracking: {_deep} deep-link, {_simplu} pe linkul afiliat simplu")
+
+    # ── Nicio promotie expirata; `zile_ramase` derivat din `expira` la FIECARE rulare ──
+    # Inainte de sortare: ordinea de mai jos foloseste `are_promotie`. Motivul si masuratoarea:
+    # scripts/promotii.py (58 din 336 de promotii expirate pe site, 16.09.2026).
+    from promotii import curata_promotii, raport  # noqa: E402
+    print("  " + raport(curata_promotii(merged)))
 
     # ── ultima_verificare: stampila REALA de "pipeline-ul a confirmat azi acest record" ──
     # Inainte, campul se seta o singura data la creare (fetch_2p_api.py/import_csv_promotii.py/

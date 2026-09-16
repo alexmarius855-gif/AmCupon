@@ -184,11 +184,13 @@ def main():
             end_dt = p.get("stopDate", p.get("endDate", ""))
 
             zile = 30
+            expira = ""
             if end_dt:
                 try:
                     end = datetime.fromisoformat(end_dt.replace("Z", "+00:00"))
                     now = datetime.now(end.tzinfo)
                     zile = max(0, (end - now).days)
+                    expira = end.strftime("%Y-%m-%d")
                 except Exception:
                     pass
 
@@ -200,6 +202,10 @@ def main():
                 "cod_cupon": code or "",
                 "landing_page": url,
                 "zile_ramase": zile,
+                # `zile_ramase` se recalculeaza din `expira` la merge (scripts/promotii.py);
+                # fara data reala, 30-ul de mai sus nu ajunge pe site ca numar.
+                "expira": expira,
+                "sursa": "tradetracker_api",
             })
             are_promotie = True
             if code:

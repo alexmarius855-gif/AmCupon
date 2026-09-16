@@ -314,8 +314,10 @@ jobs:
         run: python generate_homepage_data.py
 
       # ── 8c. Descrieri editoriale magazine (--force = refresh cu promotii curente) ─
+      # La FIECARE rulare, dupa merge: descrierea numara ofertele si numeste una. O data pe zi insemna
+      # „4 oferte active, inclusiv <promotie expirata>" langa o lista cu 1 cod (nadula.com, 16.09.2026).
       - name: Genereaza descrieri magazine
-        if: env.IS_FULL_DAILY == 'true'
+        continue-on-error: true
         working-directory: scripts
         run: python generate_store_descriptions.py --force
 
@@ -359,9 +361,13 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN:  ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+        # Independente: pe 14-16.09.2026 telegram_daily.py a picat (Markdown stricat de un „_")
+        # si, sub `bash -e`, post_telegram.py nici n-a mai pornit — canalul a tacut 3 zile.
         run: |
-          python telegram_daily.py
-          python post_telegram.py
+          rc=0
+          python telegram_daily.py || rc=1
+          python post_telegram.py || rc=1
+          exit $rc
 
       # ── 11. Generator continut social media pe nise ────────────────────────
       - name: Genereaza continut social media pe nise
@@ -539,3 +545,11 @@ jobs:
           # Banner live pe Vercel (raw GitHub ca backup)
           BANNER_PUBLIC_URL: "https://amcupon.ro/banner-daily.png"
         run: python post_instagram.py
+
+      # ── 16. Garda: nicio promotie expirata sau contor fals pe site ─────────
+      # Pe 13-16.09.2026 site-ul a afisat 58 de promotii expirate cu workflow VERDE. Ultimul pas
+      # si `always()`: nu opreste actualizarea datelor, dar rularea iese ROSIE daca scapa una.
+      - name: Verifica promotiile publicate (fara expirate, fara contoare false)
+        if: always()
+        working-directory: scripts
+        run: python verifica_promotii.py

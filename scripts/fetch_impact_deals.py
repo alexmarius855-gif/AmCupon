@@ -63,6 +63,7 @@ HEADERS     = {"Accept": "application/json"}
 DATA_DIR    = os.path.join(SCRIPT_DIR, "..", "data")
 EXTRA_PATH  = os.path.join(DATA_DIR, "extra_merchants.json")
 OUTPUT_PATH = os.path.join(DATA_DIR, "output.json")
+SURSA       = "impact_deals_api"   # marcajul promotiilor scrise de scriptul asta — doar pe ele le inlocuim
 
 AUTH = None
 NOW  = datetime.now(timezone.utc)
@@ -341,7 +342,7 @@ def construieste_promotii(deals: list, pe_deal: dict, pe_campanie: dict) -> tupl
             "landing_page": url_deal,                 # completat cu url_afiliat la atasare
             "zile_ramase":  max(0, zile_ramase),
             "expira":       end_dt.strftime("%Y-%m-%d"),
-            "sursa":        "impact_deals_api",
+            "sursa":        SURSA,
         })
 
     return per_campanie, stats
@@ -382,10 +383,19 @@ def recalculeaza_flags(mag: dict) -> None:
 
 
 def ataseaza(merchants: list, campaign_index: dict, per_campanie: dict,
-             find_campaign, label: str) -> tuple[int, int]:
-    """Ataseaza promotiile pe magazinele impact din lista. Returneaza (magazine, promotii)."""
-    mag_atinse = 0
-    promo_adaugate = 0
+             find_campaign, label: str, permite_scoateri: bool = True) -> tuple[int, int, int]:
+    """Sincronizeaza promotiile Impact ale magazinelor cu oferta DE AZI a campaniei brandului.
+    Returneaza (magazine schimbate, promotii adaugate, promotii scoase).
+
+    16.09.2026: functia doar ADAUGA. O promotie retrasa sau atasata candva pe campania altui brand
+    ramanea pentru totdeauna, fiindca extra_merchants.json si output.json sunt si intrare si iesire:
+    nadula.com afisa codurile Klaiyi (ramase din potrivirea veche pe AdvertiserUrl), cu „expira in
+    2 zile" la o oferta terminata de o saptamana. Acum lista `impact_deals_api` a magazinului e
+    EXACT oferta de azi a campaniei lui; promotiile din alte surse (CSV, 2Performant) nu se ating.
+
+    `permite_scoateri=False` cand lista de oferte descarcata e incompleta: atunci doar adaugam —
+    o pagina lipsa din API nu are voie sa goleasca magazine."""
+    mag_atinse = adaugate = scoase = 0
     erori = 0
     ultima_eroare = ""
     for m in merchants:
@@ -398,33 +408,37 @@ def ataseaza(merchants: list, campaign_index: dict, per_campanie: dict,
             # argumente a picat pe FIECARE magazin, prins mai jos ca „SKIP" — 638 de linii in log,
             # zero oferte noi din 13.09, pipeline verde.
             c = find_campaign(campaign_index, m.get("url") or m.get("magazin", ""))
-            if not c:
-                continue
-            camp_id = _norm_id(c.get("CampaignId"))
-            promotii_camp = per_campanie.get(camp_id)
-            if not promotii_camp:
-                continue
+            camp_id = _norm_id(c.get("CampaignId")) if c else ""
+            oferta_azi = per_campanie.get(camp_id, []) if camp_id else []
 
-            if not isinstance(m.get("promotii"), list):
-                m["promotii"] = []
+            vechi = [p for p in (m.get("promotii") or []) if isinstance(p, dict)]
+            alte = [p for p in vechi if p.get("sursa") != SURSA]
+            impact_vechi = [p for p in vechi if p.get("sursa") == SURSA]
 
-            adaugate_aici = 0
-            for promo in promotii_camp:
-                if e_duplicat(m["promotii"], promo):
+            noi = []
+            for promo in oferta_azi:
+                if e_duplicat(alte, promo) or e_duplicat(noi, promo):
                     continue
                 p = dict(promo)
                 if not p["landing_page"]:
                     # URL real deja verificat al magazinului, nu unul construit de noi
                     p["landing_page"] = m.get("url_afiliat") or m.get("url") or ""
-                m["promotii"].append(p)
-                adaugate_aici += 1
+                noi.append(p)
+            if not permite_scoateri:
+                noi += [p for p in impact_vechi if not e_duplicat(noi, p)]
 
-            if adaugate_aici:
-                recalculeaza_flags(m)
-                mag_atinse += 1
-                promo_adaugate += adaugate_aici
-                print(f"  OK [{label}] [{camp_id}] {m.get('magazin', ''):25s} "
-                      f"+{adaugate_aici} promotii")
+            plus = sum(1 for p in noi if not e_duplicat(impact_vechi, p))
+            minus = sum(1 for p in impact_vechi if not e_duplicat(noi, p))
+            if alte + noi == vechi:
+                continue
+            m["promotii"] = alte + noi
+            recalculeaza_flags(m)
+            mag_atinse += 1
+            adaugate += plus
+            scoase += minus
+            if plus or minus:
+                print(f"  OK [{label}] [{camp_id or 'fara campanie'}] {m.get('magazin', ''):25s} "
+                      f"+{plus} / -{minus} promotii")
         except Exception as e:
             erori += 1
             ultima_eroare = str(e)
@@ -435,7 +449,7 @@ def ataseaza(merchants: list, campaign_index: dict, per_campanie: dict,
     if merchants and erori == len(merchants):
         raise RuntimeError(f"toate cele {erori} magazine [{label}] au picat — eroare de sistem, "
                            f"nu date stricate: {ultima_eroare}")
-    return mag_atinse, promo_adaugate
+    return mag_atinse, adaugate, scoase
 
 
 def incarca(path: str) -> list | None:
@@ -566,8 +580,18 @@ def main():
             print("  Verifica raw JSON de mai sus: denumirile campurilor nu se potrivesc.")
         return
 
-    total_mag = total_promo_add = 0
+    total_mag = total_promo_add = total_promo_scoase = 0
     erori_sistem = []
+
+    # Scoatem promotii doar cand avem TOATA oferta: o pagina lipsa din /Ads ar goli magazine.
+    try:
+        total_api = int((deals_payload or {}).get("@total") or 0)
+    except (TypeError, ValueError, AttributeError):
+        total_api = 0
+    lista_completa = bool(total_api) and len(deals) >= total_api
+    if not lista_completa:
+        print(f"\n  ATENTIE: am primit {len(deals)} oferte din {total_api or '?'} raportate de API — "
+              f"doar adaug, nu scot nimic la rularea asta.")
 
     for path, label in ((EXTRA_PATH, "extra"), (OUTPUT_PATH, "output")):
         # Izolare per fisier: o eroare fatala pe extra_merchants.json nu are voie sa
@@ -581,11 +605,12 @@ def main():
                        if isinstance(m, dict) and m.get("platforma") == "impact"]
             if not targets:
                 continue
-            mag, promo = ataseaza(targets, campaign_index, per_campanie,
-                                  impact_api.find_campaign, label)
+            mag, promo, scoase = ataseaza(targets, campaign_index, per_campanie,
+                                          impact_api.find_campaign, label, lista_completa)
             total_mag += mag
             total_promo_add += promo
-            if promo and not args.dry_run:
+            total_promo_scoase += scoase
+            if mag and not args.dry_run:
                 with open(path, "w", encoding="utf-8") as f:
                     json.dump(merchants, f, ensure_ascii=False, indent=2)
         except Exception as e:
@@ -595,12 +620,13 @@ def main():
             continue
 
     if args.dry_run:
-        print(f"\nDRY RUN — nu s-a salvat nimic. Ar fi actualizat {total_mag} magazine "
-              f"cu {total_promo_add} promotii.")
+        print(f"\nDRY RUN — nu s-a salvat nimic. Ar fi actualizat {total_mag} magazine: "
+              f"+{total_promo_add} promotii noi, -{total_promo_scoase} retrase/expirate/alt brand.")
         return
 
-    print(f"\nGata! {total_promo_add} promotii reale Impact atasate pe {total_mag} magazine.")
-    if total_promo_add:
+    print(f"\nGata! {total_mag} magazine actualizate (numarate pe ambele fisiere): "
+          f"+{total_promo_add} promotii noi, -{total_promo_scoase} retrase/expirate/alt brand.")
+    if total_mag:
         print("Urmator pas: python merge_platforms.py")
     if erori_sistem:
         # Cod 1: pasul apare PICAT in GitHub Actions (are continue-on-error, deci restul

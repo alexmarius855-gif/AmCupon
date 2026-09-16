@@ -42,7 +42,11 @@ AFFILIATE_PASS  = os.environ.get("TWOPEFORMANT_PASS", "")
 MAX_FEEDS             = 60     # max feed-uri de procesat
 MAX_PRODUCTS_PER_FEED = 3000   # max produse per feed
 MAX_PER_MERCHANT      = 3000   # max produse per merchant in output final
-MAX_TOTAL             = 40000  # max produse total
+# max produse total. 16.09.2026: 40.000 -> 20.000. Cu rotatia si memoria intre rulari, catalogul
+# nu mai ramane la ce incape intr-o rulare (12.100 pe 16.09), ci creste spre toate feed-urile.
+# 20.000 = ~19 MB de JSON citit la build si comis de 3 ori pe zi; peste 15.005, maximul vazut pe
+# site (14.09). Cota se imparte corect intre magazine (vezi „Cota pe magazin").
+MAX_TOTAL             = 20000
 DOWNLOAD_TIMEOUT      = 120    # secunde pentru download feed
 CHUNK_SIZE            = 1024 * 512  # 512KB per chunk
 
@@ -279,6 +283,21 @@ def _update_tokens(resp):
 # completeaza din rularea anterioara, in loc sa publice o lista taiata.
 INCOMPLETE: set = set()
 
+TLD_STRAINE = (
+    ".hu", ".pl", ".bg", ".gr", ".cz", ".sk", ".ua", ".md", ".rs", ".hr", ".si",
+    ".nl", ".be", ".de", ".fr", ".it", ".es", ".pt", ".at", ".ch",
+    ".se", ".dk", ".fi", ".no", ".ie", ".lt", ".lv", ".ee", ".tr", ".co.uk",
+)
+
+
+def _cheie_magazin(nume) -> str:
+    """Aceeasi cheie peste tot: INCOMPLETE, rotatie, memoria intre rulari."""
+    return (nume or "").strip().lower().rstrip("/")
+
+
+def _magazin_strain(cheie: str) -> bool:
+    return any(cheie.endswith(t) for t in TLD_STRAINE)
+
 # 16.09.2026 — numarul de produse sarea intre 8.176 si 15.005 de la o rulare la alta:
 # 2Performant raspunde 429 cand cerem prea repede, api_get intorcea None, iar paginarea se
 # oprea la jumatate (jollymag.ro: 9 din 111 pagini). Pe site, sectiunile de produse aparea
@@ -385,21 +404,45 @@ def build_slug_map() -> dict:
 
 # ─── Feed list ────────────────────────────────────────────────────────────────
 
+LISTA_FEEDURI_COMPLETA = False
+
+
 def get_product_feeds() -> list:
+    """Toate feed-urile din „My Feeds", pe toate paginile.
+
+    16.09.2026 — a TREIA aparitie a bug-ului de paginare (docs/LECTII-TEHNICE.md #6): functia se
+    oprea cu `if len(items) < 50`, iar API-ul da 20 pe pagina, deci citea doar prima pagina. Log-ul
+    spunea „Pagina 1: 20 feed-uri (20 total)". De-aia produsele sareau intre rulari (7.873 ->
+    12.100 in aceeasi zi, cu ALTE magazine): se lucra mereu pe primele 20 din lista.
+    `LISTA_FEEDURI_COMPLETA` spune daca am ajuns la ultima pagina — fara ea nu stim ce feed a
+    disparut cu adevarat si ce doar n-a incaput intr-o lista taiata de un 429."""
+    global LISTA_FEEDURI_COMPLETA
+    LISTA_FEEDURI_COMPLETA = False
     feeds = []
-    page  = 1
+    page = 1
+    total_pages = None
     while len(feeds) < MAX_FEEDS * 3:
         data = api_get("affiliate/product_feeds", {"page": page, "per_page": 50})
         if data is None:
-            break
-        items = data if isinstance(data, list) else next(
-            (v for v in data.values() if isinstance(v, list)), []
-        )
+            return feeds  # eroare la mijloc: lista incompleta
+        if isinstance(data, list):
+            items = data
+        else:
+            items = next((v for v in data.values() if isinstance(v, list)), [])
+            pg = (data.get("metadata") or {}).get("pagination", {}) or {}
+            total_pages = pg.get("pages") or total_pages
         if not items:
+            LISTA_FEEDURI_COMPLETA = True
             break
         feeds.extend(items)
-        print(f"  Pagina {page}: {len(items)} feed-uri ({len(feeds)} total)")
-        if len(items) < 50:
+        print(f"  Pagina {page}{'/' + str(total_pages) if total_pages else ''}: "
+              f"{len(items)} feed-uri ({len(feeds)} total)")
+        if total_pages is not None:
+            if page >= total_pages:
+                LISTA_FEEDURI_COMPLETA = True
+                break
+        elif len(items) < 20:
+            LISTA_FEEDURI_COMPLETA = True
             break
         page += 1
         time.sleep(0.3)
@@ -1118,27 +1161,68 @@ def main():
     # API-ul autentificat NU e blocat (login-ul si fetch-ul magazinelor merg in CI),
     # asa ca il folosim mereu ca sursa de diversitate, nu doar ca fallback cand e gol.
     # Altfel in CI ramanea doar navstore (1 magazin), o regresie fata de feed-ul local.
+    # ── Rularea anterioara: cand a fost descarcat fiecare magazin + produsele inca proaspete ──
+    # Folosita de doua ori: la ROTATIE (ce descarcam azi) si la MEMORIE (ce pastram din urma).
+    VARSTA_MAXIMA_ZILE = 14
+    FEEDURI_PE_RULARE = 20
+    _azi = datetime.now(timezone.utc).date()
+    vechi_pe_mag: dict = {}
+    ultima_preluare: dict = {}
+    if os.path.exists(output_path):
+        try:
+            with open(output_path, "r", encoding="utf-8") as _f:
+                _vechi_fisier = json.load(_f)
+            _vechi = _vechi_fisier.get("products", []) if isinstance(_vechi_fisier, dict) else _vechi_fisier
+            _data_fisier = (_vechi_fisier.get("updated") or "")[:10] if isinstance(_vechi_fisier, dict) else ""
+            for _p in _vechi:
+                # Doar produsele din feed. Cele din promotii (`feed_id: "promo"`) le reface
+                # enrich_products_from_promos.py la fiecare rulare.
+                if not _p.get("feed_id") or _p.get("feed_id") == "promo":
+                    continue
+                _preluat = _p.get("preluat") or _data_fisier
+                try:
+                    _varsta = (_azi - datetime.strptime(_preluat, "%Y-%m-%d").date()).days
+                except ValueError:
+                    continue
+                _mn = _cheie_magazin(_p.get("merchant"))
+                ultima_preluare[_mn] = min(ultima_preluare.get(_mn, _preluat), _preluat)
+                if _varsta <= VARSTA_MAXIMA_ZILE:
+                    vechi_pe_mag.setdefault(_mn, []).append(dict(_p, preluat=_preluat))
+        except Exception as _e:
+            print(f"  (nu am putut citi rularea anterioara: {_e})")
+
+    # Produsele descarcate acum primesc data de azi (si cele din feed-urile directe, ex. navstore).
+    for _p in all_products:
+        _p.setdefault("preluat", _azi.strftime("%Y-%m-%d"))
+
+    procesate_complet: set = set()
     if feeds_fara_url:
         already = {(p.get("merchant_slug") or p.get("merchant") or "").lower()
                    for p in all_products}
-        print(f"\n  Diversitate via API: procesez {min(len(feeds_fara_url), 20)} feed-uri 2P...")
-        for feed in feeds_fara_url[:20]:
-            feed_id  = feed.get("id", "")
+        candidati, straine = [], 0
+        for feed in feeds_fara_url:
             prog     = feed.get("program", {}) or {}
             merchant = (prog.get("name", "") or feed.get("name", "")).strip().rstrip("/")
-            mn       = merchant.strip().lower().rstrip("/")
+            mn       = _cheie_magazin(merchant)
             # AmCupon e pentru cumparatori din Romania — sarim magazinele pe domeniu
             # de tara straina (ex: fragranza.hu, liki24.pl) gasite in My Feeds 2P
             # Lista completata 16.08.2026: lipsea ".nl", si de-aia liki24.nl a ajuns
             # in feed alaturi de liki24.ro — acelasi magazin, versiunea olandeza,
             # servita cumparatorilor din Romania. Descoperit in rularea de test.
-            if any(mn.endswith(t) for t in (
-                ".hu", ".pl", ".bg", ".gr", ".cz", ".sk", ".ua", ".md", ".rs", ".hr", ".si",
-                ".nl", ".be", ".de", ".fr", ".it", ".es", ".pt", ".at", ".ch",
-                ".se", ".dk", ".fi", ".no", ".ie", ".lt", ".lv", ".ee", ".tr", ".co.uk",
-            )):
-                print(f"    - {merchant[:30]:30} magazin strain — sarit")
+            if _magazin_strain(mn):
+                straine += 1
                 continue
+            candidati.append((feed, merchant, mn))
+        # ROTATIE (16.09.2026): intai magazinele niciodata descarcate, apoi cele descarcate cel mai
+        # demult. 2Performant raspunde 429 dupa cateva sute de cereri (~8 magazine pe rulare, masurat
+        # in logul din 16.09), deci „primele 20 din lista" insemna mereu aceleasi magazine — iar restul
+        # nu intrau niciodata. Asa fiecare feed ajunge la rand, iar memoria de mai jos tine catalogul.
+        candidati.sort(key=lambda c: (c[2] in ultima_preluare, ultima_preluare.get(c[2], ""), c[2]))
+        print(f"\n  Diversitate via API: {len(candidati)} feed-uri romanesti (sarite {straine} straine); "
+              f"procesez {min(len(candidati), FEEDURI_PE_RULARE)}, intai cele nedescarcate sau cele mai vechi")
+        esecuri_la_rand = 0
+        for feed, merchant, mn in candidati[:FEEDURI_PE_RULARE]:
+            feed_id  = feed.get("id", "")
             slug     = slug_map.get(mn, slug_map.get(mn.split(".")[0], mn))
             # daca feed-ul combinat a acoperit deja bogat magazinul, sarim (evitam dubluri locale)
             if slug.lower() in already or mn in already:
@@ -1149,57 +1233,56 @@ def main():
                 print(f"    ! {merchant[:30]:30} eroare API ({e}) — sarim")
                 INCOMPLETE.add(mn)
                 continue
+            if mn not in INCOMPLETE:
+                procesate_complet.add(mn)
             for p in products:
                 p["merchant_slug"] = slug
             if products:
                 print(f"    + {merchant[:30]:30} {len(products)} produse via API")
             all_products.extend(products)
+            # Doua magazine la rand cu zero produse si eroare = limita API atinsa. Fiecare incercare
+            # in plus costa ~35 s de reincercari (PAUZE_429) si nu aduce nimic; rotatia le ia primele
+            # la rularea urmatoare, iar memoria le tine produsele de acum.
+            esecuri_la_rand = esecuri_la_rand + 1 if (not products and mn in INCOMPLETE) else 0
+            if esecuri_la_rand >= 2:
+                print(f"    ~ limita API atinsa dupa {merchant[:30]} — restul feed-urilor la rularea urmatoare")
+                break
             time.sleep(0.4)
 
-    # ── Magazine descarcate incomplet: pastram produsele din rularea anterioara ──
-    # Doar cand rularea anterioara avea MAI MULTE produse pentru magazin. Un magazin care
-    # chiar si-a redus catalogul, descarcat complet, nu intra aici.
-    # Masurat in testul din 16.09 pe API-ul real: dupa ~120 de cereri, 2Performant raspunde 429
-    # peste un minut, deci reincercarile singure nu recupereaza nimic. Ce stabilizeaza site-ul
-    # e memoria intre rulari: un magazin descarcat cu succes ramane pana la urmatoarea
-    # descarcare reusita, dar nu mai mult de VARSTA_MAXIMA_ZILE.
-    # Doar produsele din feed (`feed_id` real). Cele injectate din promotii (`feed_id: "promo"`)
-    # le reface enrich_products_from_promos.py la fiecare rulare.
-    VARSTA_MAXIMA_ZILE = 14
-    if INCOMPLETE and os.path.exists(output_path):
-        try:
-            with open(output_path, "r", encoding="utf-8") as _f:
-                _vechi_fisier = json.load(_f)
-            _vechi = _vechi_fisier.get("products", []) if isinstance(_vechi_fisier, dict) else _vechi_fisier
-            _data_fisier = (_vechi_fisier.get("updated") or "")[:10] if isinstance(_vechi_fisier, dict) else ""
-            _azi = datetime.now(timezone.utc).date()
-            _vechi_pe_mag: dict = {}
-            for _p in _vechi:
-                if not _p.get("feed_id") or _p.get("feed_id") == "promo":
-                    continue
-                _preluat = _p.get("preluat") or _data_fisier
-                try:
-                    _varsta = (_azi - datetime.strptime(_preluat, "%Y-%m-%d").date()).days
-                except ValueError:
-                    continue
-                if _varsta > VARSTA_MAXIMA_ZILE:
-                    continue
-                _p = dict(_p, preluat=_preluat)
-                _vechi_pe_mag.setdefault((_p.get("merchant") or "").strip().lower().rstrip("/"), []).append(_p)
-            for _mag in sorted(INCOMPLETE):
-                _noi = [p for p in all_products
-                        if (p.get("merchant") or "").strip().lower().rstrip("/") == _mag]
-                _vechi_mag = _vechi_pe_mag.get(_mag, [])
-                if len(_vechi_mag) > len(_noi):
-                    all_products = [p for p in all_products
-                                    if (p.get("merchant") or "").strip().lower().rstrip("/") != _mag]
-                    all_products.extend(_vechi_mag)
-                    print(f"  ~ {_mag[:30]:30} descarcare incompleta ({len(_noi)} produse) — "
-                          f"pastrez cele {len(_vechi_mag)} din rularea anterioara")
-        except Exception as _e:
-            print(f"  (completare din rularea anterioara esuata: {_e})")
+    # ── MEMORIE intre rulari: un magazin descarcat ramane pana la urmatoarea descarcare reusita ──
+    # 16.09.2026, a doua incercare. Prima pastra doar magazinele INCEPUTE si picate la mijloc; dar
+    # magazinele sareau pentru ca nici nu mai intrau in lista (vezi get_product_feeds si ROTATIA).
+    # Acum se pastreaza orice magazin care n-a fost descarcat complet la rularea asta, daca:
+    #   · produsele au cel mult VARSTA_MAXIMA_ZILE (nu afisam preturi vechi la nesfarsit);
+    #   · feed-ul e inca in „My Feeds" (un feed scos inseamna program oprit) — verificat doar cand
+    #     lista de feed-uri e COMPLETA; o lista taiata de un 429 nu dovedeste nimic;
+    #   · rularea anterioara avea mai multe produse decat cea de acum.
+    listate = None
+    if LISTA_FEEDURI_COMPLETA:
+        listate = {_cheie_magazin((f.get("program", {}) or {}).get("name") or f.get("name"))
+                   for f in feeds_fara_url}
+        listate |= {_cheie_magazin((f.get("program", {}) or {}).get("name") or f.get("name"))
+                    for f, _ in feeds_cu_url}
+    pastrate_mag, pastrate_prod, scoase_nelistate = [], 0, []
+    for _mn, _vechi_mag in sorted(vechi_pe_mag.items()):
+        if _mn in procesate_complet or _magazin_strain(_mn):
+            continue
+        if listate is not None and _mn not in listate:
+            scoase_nelistate.append(_mn)
+            continue
+        _noi = [p for p in all_products if _cheie_magazin(p.get("merchant")) == _mn]
+        if len(_vechi_mag) <= len(_noi):
+            continue
+        all_products = [p for p in all_products if _cheie_magazin(p.get("merchant")) != _mn] + _vechi_mag
+        pastrate_mag.append(_mn)
+        pastrate_prod += len(_vechi_mag)
+    if pastrate_mag:
+        print(f"  ~ pastrate din rularile anterioare: {pastrate_prod} produse de la {len(pastrate_mag)} "
+              f"magazine ({', '.join(pastrate_mag[:12])}{'...' if len(pastrate_mag) > 12 else ''})")
+    if scoase_nelistate:
+        print(f"  - magazine al caror feed nu mai e in My Feeds, scoase: {', '.join(scoase_nelistate)}")
 
-    # ── Diversitate: max MAX_PER_MERCHANT per merchant ────────────────────────
+    # ── Diversitate: max MAX_PER_MERCHANT per merchant, MAX_TOTAL impartit corect ──
     import random
     from collections import defaultdict
     by_merchant: dict = defaultdict(list)
@@ -1207,12 +1290,23 @@ def main():
         m = (p.get("merchant_slug") or p.get("merchant") or "alt").lower()
         by_merchant[m].append(p)
 
-    # Cap per merchant + shuffle intern pentru varietate
+    # Cota pe magazin: cand totalul trece de MAX_TOTAL, magazinele mici intra intregi, iar restul
+    # se imparte egal intre cele mari. Taierea veche (`[:MAX_TOTAL]` dupa amestecare) scotea
+    # produse la intamplare — cu memoria intre rulari, totalul poate creste peste plafon.
+    marimi = {m: min(len(prods), MAX_PER_MERCHANT) for m, prods in by_merchant.items()}
+    if sum(marimi.values()) > MAX_TOTAL:
+        ramas, cote = MAX_TOTAL, {}
+        for m in sorted(marimi, key=lambda k: (marimi[k], k)):
+            cote[m] = min(marimi[m], ramas // (len(marimi) - len(cote)))
+            ramas -= cote[m]
+        marimi = cote
+        print(f"  Plafon {MAX_TOTAL}: cota maxima pe magazin {max(marimi.values())} produse")
+
     capped = []
     for m, prods in by_merchant.items():
         # Prioritizeaza produsele cu imagini si discount
         prods.sort(key=lambda x: (-int(bool(x.get("image"))), -(x.get("discount_pct") or 0)))
-        capped.extend(prods[:MAX_PER_MERCHANT])
+        capped.extend(prods[:marimi[m]])
 
     # Shuffle final pentru distributie uniforma intre merchants
     # Seed fix: aceleasi produse in aceeasi ordine de la o rulare la alta. random.shuffle() fara

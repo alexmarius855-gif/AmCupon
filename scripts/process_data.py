@@ -163,6 +163,10 @@ def main():
             "cod_cupon": cod if pd.notna(cod) else "",
             "landing_page": landing if pd.notna(landing) else "",
             "zile_ramase": int(row["zile_ramase"]) if pd.notna(row["zile_ramase"]) else 0,
+            # load_promos() pastreaza doar randuri cu End Date reala, deci data exista mereu;
+            # din ea se recalculeaza `zile_ramase` la merge (scripts/promotii.py).
+            "expira": row["End Date"].strftime("%Y-%m-%d"),
+            "sursa": "2performant_export",
         })
 
     rezultate = []

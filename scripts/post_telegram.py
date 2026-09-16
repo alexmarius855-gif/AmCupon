@@ -38,6 +38,7 @@ BOT_TOKEN  = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 CHANNEL_ID = os.environ.get("TELEGRAM_CHANNEL_ID", "")
 SITE_URL   = "https://amcupon.ro"
 from link_oferta import link_iesire  # noqa: E402  fara clic gratis pe canale externe
+from promotii import nume_afisabil, titlu_afisabil  # noqa: E402
 API_URL    = f"https://api.telegram.org/bot{BOT_TOKEN}"
 
 OUTPUT_JSON = os.path.join(os.path.dirname(__file__), "../frontend/public/output.json")
@@ -89,7 +90,18 @@ def get_best_promo(m: dict) -> dict:
 
 
 def escape_html(text: str) -> str:
-    return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    return (text or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
+def unici_pe_brand(magazine: list) -> list:
+    """vevor.com, vevor.com.au si eur.vevor.com au acelasi cod — pe canal ar fi trei randuri identice."""
+    vazute, rezultat = set(), []
+    for m in magazine:
+        brand = nume_afisabil(m).lower()
+        if brand not in vazute:
+            vazute.add(brand)
+            rezultat.append(m)
+    return rezultat
 
 
 # ── Tipuri de mesaje ─────────────────────────────────────────────────────────
@@ -97,7 +109,7 @@ def escape_html(text: str) -> str:
 def msg_oferte_zilei(magazine: list, data_str: str, zi: str) -> str:
     cu_promotie = [m for m in magazine if m.get("are_promotie") and m.get("promotii")
                    and " " not in m.get("magazin", "")]
-    top = sorted(cu_promotie, key=lambda x: -x.get("scor_final", 0))[:6]
+    top = unici_pe_brand(sorted(cu_promotie, key=lambda x: -x.get("scor_final", 0)))[:6]
 
     linii = [
         f"<b>🔥 {zi.upper()} — Ofertele Zilei</b>",
@@ -105,10 +117,10 @@ def msg_oferte_zilei(magazine: list, data_str: str, zi: str) -> str:
         "",
     ]
     for m in top:
-        name = m["magazin"].split(".")[0].capitalize()
+        name = escape_html(nume_afisabil(m))
         promo = get_best_promo(m)
-        cod   = promo.get("cod_cupon", "")
-        desc  = escape_html((promo.get("nume") or promo.get("descriere") or "Oferta speciala")[:60])
+        cod   = escape_html(promo.get("cod_cupon", ""))
+        desc  = escape_html((titlu_afisabil(promo) or "Oferta speciala")[:60])
         linie = f"• <b>{name}</b> — {desc}"
         if cod:
             linie += f"\n  <code>{cod}</code>"
@@ -116,7 +128,7 @@ def msg_oferte_zilei(magazine: list, data_str: str, zi: str) -> str:
 
     linii += [
         "",
-        f'<a href="{SITE_URL}/oferte-azi">Toate ofertele verificate →</a>',
+        f'<a href="{SITE_URL}/oferte-azi">Toate ofertele →</a>',
         "",
         "#reduceri #codreducere #shoppingonline #amcupon",
     ]
@@ -127,7 +139,7 @@ def msg_reduceri_mari(magazine: list, data_str: str) -> str:
     oferte_pct = []
     for m in magazine:
         for p in m.get("promotii", []):
-            titlu = p.get("nume", "") or ""
+            titlu = titlu_afisabil(p)
             match = re.search(r"(\d+)\s*%", titlu)
             if match:
                 disc = int(match.group(1))
@@ -151,10 +163,10 @@ def msg_reduceri_mari(magazine: list, data_str: str) -> str:
         "",
     ]
     for o in oferte_pct[:5]:
-        name = o["magazin"].split(".")[0].capitalize()
+        name = escape_html(nume_afisabil({"magazin": o["magazin"]}))
         linie = f"<b>-{o['disc']}%</b> la {name}"
         if o["cod"]:
-            linie += f" → cod: <code>{o['cod']}</code>"
+            linie += f" → cod: <code>{escape_html(o['cod'])}</code>"
         linii.append(f"🏷 {linie}")
         linii.append(f"   <i>{o['titlu']}</i>")
         linii.append("")
@@ -193,8 +205,8 @@ def msg_brand_spotlight(magazine: list, data_str: str, saptamana: int) -> str:
     if brand_mag:
         promotii_b = [p for p in brand_mag.get("promotii", []) if p.get("zile_ramase", -1) >= 0]
         for p in promotii_b[:3]:
-            cod  = p.get("cod_cupon", "")
-            desc = escape_html((p.get("nume") or p.get("descriere") or "")[:65])
+            cod  = escape_html(p.get("cod_cupon", ""))
+            desc = escape_html(titlu_afisabil(p)[:65])
             if desc:
                 linii.append(f"✔ {desc}")
                 if cod:
@@ -230,11 +242,11 @@ def msg_cod_cupon(magazine: list, data_str: str) -> str:
         "Copiaza si aplica la checkout:",
         "",
     ]
-    for m in cu_cod[:5]:
-        name = m["magazin"].split(".")[0].capitalize()
+    for m in unici_pe_brand(cu_cod)[:5]:
+        name = escape_html(nume_afisabil(m))
         promo = get_best_promo(m)
-        cod  = promo.get("cod_cupon", "")
-        desc = escape_html((promo.get("nume") or "Reducere activa")[:55])
+        cod  = escape_html(promo.get("cod_cupon", ""))
+        desc = escape_html((titlu_afisabil(promo) or "Reducere activa")[:55])
         zile = promo.get("zile_ramase", 99)
         expira = f" ⚠ Expira in {zile}z" if zile <= 3 else ""
         linii.append(f"<b>{name}</b> — <code>{cod}</code>{expira}")
@@ -302,8 +314,13 @@ def main():
         if send_message(msg4):
             posted += 1
 
+    incercate = sum(1 for x in (msg1, msg2, msg3) if x) + (1 if zi_idx == 3 else 0)
+    if posted < incercate:
+        # Fara „✓" la esec: Facebook a scris „0 posturi publicate ✓" zile la rand, cu token mort.
+        print(f"\n✗ Telegram: {incercate - posted} din {incercate} mesaje NU s-au trimis pe {data_str} "
+              f"(motivul e in liniile de mai sus)")
+        sys.exit(1)
     print(f"\nTelegram: {posted} mesaje trimise pe {data_str} ✓")
-    print(f"Adauga in GitHub Secrets: TELEGRAM_BOT_TOKEN + TELEGRAM_CHANNEL_ID")
 
 
 if __name__ == "__main__":

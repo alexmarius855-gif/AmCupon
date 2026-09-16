@@ -336,6 +336,7 @@ def post_to_facebook(message: str, link: str = "") -> dict:
     req  = urllib.request.Request(endpoint, data=data, method="POST")
     req.add_header("Content-Type", "application/x-www-form-urlencoded")
 
+    ESUATE["incercate"] += 1
     try:
         with urllib.request.urlopen(req, timeout=20) as resp:
             result = json.loads(resp.read())
@@ -344,10 +345,19 @@ def post_to_facebook(message: str, link: str = "") -> dict:
     except urllib.error.HTTPError as e:
         body = e.read().decode("utf-8", errors="replace")
         print(f"  Eroare HTTP {e.code}: {body}")
+        ESUATE["esuate"] += 1
+        ESUATE["ultima"] = body[:300]
         return None
     except Exception as e:
         print(f"  Eroare: {e}")
+        ESUATE["esuate"] += 1
+        ESUATE["ultima"] = str(e)[:300]
         return None
+
+
+# Numaratoare pentru raportul final — fara ea, scriptul tiparea „0 posturi publicate ✓"
+# si iesea cu 0 cand tokenul era mort (OAuthException 190 „Bad signature", masurat 09-16.09.2026).
+ESUATE = {"incercate": 0, "esuate": 0, "ultima": ""}
 
 
 # ── Main ─────────────────────────────────────────────────────────────────────
@@ -538,6 +548,12 @@ def main():
             if post_to_facebook(msg_brand, f"{SITE_URL}{path_b}"):
                 posted += 1
 
+    if ESUATE["esuate"]:
+        print(f"\n✗ Facebook: {ESUATE['esuate']} din {ESUATE['incercate']} postari au ESUAT pe {data_str}.")
+        if '"code":190' in ESUATE["ultima"].replace(" ", ""):
+            print("  Cod 190 = tokenul paginii e invalid sau expirat. Se regenereaza manual din Meta "
+                  "(Graph API Explorer -> token de pagina) si se pune in GitHub Secrets: FACEBOOK_PAGE_TOKEN.")
+        sys.exit(1)
     print(f"\nFacebook: {posted} posturi publicate pe {data_str} ✓")
 
 
