@@ -1,4 +1,5 @@
 import fs from "fs";
+import { aceeasiTara } from "@/lib/taraDomeniu";
 import path from "path";
 import Link from "next/link";
 import { etichetaExpirare } from "../../lib/expirarePromo";
@@ -48,10 +49,12 @@ function loadMagazin(slugs: string[]): Magazin | null {
     const lower = slugs.map((s) => s.toLowerCase());
     // Potrivire in ordinea specificitatii: egalitate > prefix de domeniu > substring.
     // Doar `.includes` producea potriviri gresite (ex: "otter" prindea si "spotter.ro").
+    // Prefixul si subsirul nu trec granita de tara: /vidaxl (vidaxl.ro) gasea vidaxl.bg.
+    const tara = (m: Magazin) => aceeasiTara(lower[0], m.magazin);
     return (
       data.find((m) => lower.includes(m.magazin.toLowerCase())) ||
-      data.find((m) => lower.some((s) => m.magazin.toLowerCase().startsWith(s + "."))) ||
-      data.find((m) => lower.some((s) => m.magazin.toLowerCase().includes(s))) ||
+      data.find((m) => tara(m) && lower.some((s) => m.magazin.toLowerCase().startsWith(s + "."))) ||
+      data.find((m) => tara(m) && lower.some((s) => m.magazin.toLowerCase().includes(s))) ||
       null
     );
   } catch {

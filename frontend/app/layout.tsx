@@ -16,6 +16,9 @@ const NewsletterPopup = dynamic(() => import("./components/NewsletterPopup"));
 import WebPushInit from "./components/WebPushInit";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import fs from "fs";
+import path from "path";
+import { MAGAZINE_POPULARE } from "@/lib/magazinePopulare";
 import SearchModal from "./components/SearchModal";
 import AffiliateClickTracker from "./components/AffiliateClickTracker";
 import "./globals.css";
@@ -121,6 +124,22 @@ const siteJsonLd = {
   ],
 };
 
+// Care magazine din subsol exista acum in date — citit o data pe proces, la build.
+let _inDate: string[] | null = null;
+function magazineInDate(): string[] {
+  if (_inDate) return _inDate;
+  try {
+    const date = JSON.parse(
+      fs.readFileSync(path.join(process.cwd(), "public", "output.json"), "utf-8"),
+    ) as { magazin?: string }[];
+    const existente = new Set(date.map((m) => m.magazin));
+    _inDate = MAGAZINE_POPULARE.map((m) => m.slug).filter((slug) => existente.has(slug));
+  } catch {
+    _inDate = MAGAZINE_POPULARE.map((m) => m.slug); // fara date: comportamentul vechi
+  }
+  return _inDate;
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -152,7 +171,7 @@ export default function RootLayout({
         {children}
         {/* Cautare globala (Cmd+K). Montata o data, aici — nu duplicata pe pagini. */}
         <SearchModal />
-        <Footer />
+        <Footer magazineInDate={magazineInDate()} />
         <CookieBanner />
         <AffiliateScript />
         <NewsletterPopup />

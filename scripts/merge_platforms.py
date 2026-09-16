@@ -181,6 +181,23 @@ def main():
 
     merged: list[dict] = list(by_slug.values())
 
+    # ── Varianta STRAINA a unui magazin care are si versiune .ro ────────────────
+    # 16.09.2026: liki24.pl/.nl/.it/.be/.co.uk, gsmnet.de, fragranza.hu, underarmour.bg
+    # aveau pagini proprii langa liki24.ro, gsmnet.ro etc. Un cumparator din Romania ajungea
+    # pe farmacia poloneza sau pe magazinul german. Scoase doar cand exista varianta .ro —
+    # un magazin strain fara echivalent romanesc (ex. software livrat oriunde) ramane.
+    # Adresele vechi redirectioneaza spre varianta .ro (cod-reducere/[magazin]/page.tsx).
+    _GENERICE = {"io", "ai", "co", "me", "tv", "gg", "ly", "to", "cc", "ws", "eu"}
+    def _tara(slug: str):
+        _p = slug.lower().split(".")
+        return _p[-1] if len(_p) >= 2 and len(_p[-1]) == 2 and _p[-1] not in _GENERICE else None
+    _baze_ro = {m["magazin"].split(".")[0] for m in merged if m["magazin"].endswith(".ro")}
+    _straine = [m["magazin"] for m in merged
+                if _tara(m["magazin"]) not in (None, "ro") and m["magazin"].split(".")[0] in _baze_ro]
+    if _straine:
+        merged = [m for m in merged if m["magazin"] not in set(_straine)]
+        print(f"  variante straine ale unor magazine .ro scoase: {len(_straine)} ({', '.join(sorted(_straine))})")
+
     # ── Coercitie tipuri: garanteaza ca frontend-ul (care face .match() pe stringuri)
     # nu crapa la build daca o sursa trimite bool/numar in loc de string (ex: promo
     # descriere=False din unele surse). Bug de build prins 30.06.2026 ("a.match is not a function").

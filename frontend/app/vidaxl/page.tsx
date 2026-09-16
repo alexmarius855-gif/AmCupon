@@ -5,7 +5,8 @@ export const metadata: Metadata = {
   title: "Cod Reducere vidaXL — Oferte Mobilier 2026 | AmCupon.ro",
   description: "Coduri de reducere vidaXL actualizate zilnic. Reduceri la mobilier, gradina, sport, auto si electronice. Promotii vidaXL verificate.",
   keywords: ["cod reducere vidaxl", "vidaxl reduceri", "vidaxl promotii", "mobilier ieftin online", "vidaxl discount"],
-  alternates: { canonical: "https://amcupon.ro/cod-reducere/vidaxl.ro" },
+  // vidaxl.ro nu mai e in date (16.09.2026) — canonical catre propria pagina, nu catre un 404.
+  alternates: { canonical: "https://amcupon.ro/vidaxl" },
   openGraph: {
     title: "Reduceri vidaXL 2026 | AmCupon.ro",
     description: "Coduri de reducere si oferte vidaXL verificate zilnic. Mobilier, gradina si articole pentru casa la preturi reduse.",

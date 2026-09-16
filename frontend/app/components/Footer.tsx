@@ -4,30 +4,7 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-// `href` suprascrie tiparul implicit /cod-reducere/<slug>.
-// Necesar pentru brandurile care au pagina editoriala dedicata dar NU sunt in
-// output.json (fara program de afiliere inca): /cod-reducere/<slug> se genereaza
-// din output.json, deci pentru ele dadea 404 — pe TOATE cele 107 pagini, fiindca
-// footerul e global. Gasit 08.08.2026. Paginile /altex, /flanco, /elefant exista
-// si au continut complet, doar linkul folosea tiparul gresit.
-const MAGAZINE_POPULARE = [
-  { slug: "notino.ro",       label: "Notino" },
-  { slug: "altex.ro",        label: "Altex",    href: "/altex" },
-  { slug: "flanco.ro",       label: "Flanco",   href: "/flanco" },
-  { slug: "decathlon.ro",    label: "Decathlon" },
-  { slug: "drmax.ro",        label: "Dr. Max" },
-  { slug: "noriel.ro",       label: "Noriel" },
-  { slug: "elefant.ro",      label: "Elefant",  href: "/elefant" },
-  { slug: "carturesti.ro",   label: "Carturesti" },
-  { slug: "answear.ro",      label: "Answear" },
-  { slug: "temu.com",        label: "Temu" },
-  { slug: "shein.com",       label: "SHEIN" },
-  { slug: "vidaxl.ro",       label: "vidaXL" },
-  { slug: "sportdepot.ro",   label: "Sport Depot" },
-  { slug: "bookzone.ro",     label: "BookZone" },
-  { slug: "trendyol.com",    label: "Trendyol" },
-  { slug: "petmart.ro",      label: "Petmart" },
-];
+import { MAGAZINE_POPULARE } from "@/lib/magazinePopulare";
 
 // Slug-uri categorie CORECTE (canonicalizate) — vechile electronics-itc/home-garden dadeau 404
 const CATEGORII = [
@@ -140,7 +117,11 @@ function NewsletterMini() {
   );
 }
 
-export default function Footer() {
+// `magazineInDate`: slug-urile din MAGAZINE_POPULARE care exista acum in output.json,
+// calculate pe server in layout.tsx. Un magazin care iese dintr-o retea dispare din date,
+// iar /cod-reducere/<slug> devine 404 pe TOATE paginile (bookzone.ro, 16.09.2026 — a doua
+// oara, dupa 21.08). Fara `href` propriu si fara date, linkul nu se mai afiseaza.
+export default function Footer({ magazineInDate }: { magazineInDate?: string[] }) {
   const pathname = usePathname();
   const an = new Date().getFullYear();
 
@@ -238,7 +219,9 @@ export default function Footer() {
           <div>
             <p className="text-[#ffffff] font-bold text-xs uppercase tracking-widest mb-4">Magazine populare</p>
             <ul className="space-y-2">
-              {MAGAZINE_POPULARE.map(m => (
+              {MAGAZINE_POPULARE
+                .filter(m => m.href || !magazineInDate || magazineInDate.includes(m.slug))
+                .map(m => (
                 <li key={m.slug}>
                   <Link href={m.href ?? `/cod-reducere/${m.slug}`}
                     className="text-sm text-[#9399a0] hover:text-[#ddf93c] transition-colors">

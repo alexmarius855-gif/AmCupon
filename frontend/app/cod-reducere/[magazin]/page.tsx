@@ -1,4 +1,5 @@
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
+import { aceeasiTara } from "@/lib/taraDomeniu";
 import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
@@ -293,7 +294,7 @@ function gasesteMagazin(magazine: Magazin[], slug: string): Magazin | undefined 
   return (
     magazine.find((x) => x.magazin === slug) ||
     magazine.find((x) => x.magazin.toLowerCase() === s) ||
-    magazine.find((x) => x.magazin.toLowerCase().split(".")[0] === base)
+    magazine.find((x) => x.magazin.toLowerCase().split(".")[0] === base && aceeasiTara(s, x.magazin))
   );
 }
 
@@ -395,7 +396,16 @@ export default async function PaginaMagazin({
   const magazine = loadData();
   const m = gasesteMagazin(magazine, slug);
 
-  if (!m) notFound();
+  if (!m) {
+    // Varianta straina a unui magazin .ro e scoasa la merge (16.09.2026: liki24.pl, gsmnet.de,
+    // fragranza.hu...). Adresa veche duce permanent la varianta romaneasca, nu intr-un 404.
+    const baza = slug.toLowerCase().split(".")[0];
+    const ro = magazine.find((x) => x.magazin.toLowerCase() === `${baza}.ro`);
+    if (ro && ro.magazin.toLowerCase() !== slug.toLowerCase()) {
+      permanentRedirect(`/cod-reducere/${ro.magazin}`);
+    }
+    notFound();
+  }
 
   // Folosim slug-ul curat al magazinului pentru toate loader-ele (consistenta)
   const cleanSlug = m.magazin;
