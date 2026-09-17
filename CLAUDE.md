@@ -12,6 +12,21 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 17.09.2026 (confirmat in productie + articolele de magazin):**
+- **Rularea completa de la 10:31 UTC, prima cu toate reparatiile:** garda `verifica_promotii` a iesit
+  OK (1.148 magazine, 262 promotii, 0 probleme); 0 promotii expirate, 123 de contoare recalculate,
+  9 magazine cu promotii manuale nepublicate; **produse: 25 de magazine si 20.000 de produse** (erau 9 si
+  12.100), din care 16.295 pastrate din rularile anterioare, cota 1.100/magazin; 1.148 de descrieri
+  regenerate; Telegram sarit peste tot (inclusiv uzina de continut: „TELEGRAM_BOT_TOKEN nesetate — skip");
+  Facebook scrie acum „3 din 3 postari au ESUAT", nu „0 posturi publicate ✓".
+- **Articolele de magazin ramaneau cu oferta din ziua generarii.** „Cod Reducere Nadula Septembrie 2026"
+  (scris pe 08.09) lista pe pagina magazinului codurile Klaiyi, expirate — 21 din 442 de articole aveau
+  promotii care nu mai existau; se scriau o data si nu se mai atingeau (LECTII #5, a treia forma).
+  Pas nou la FIECARE rulare: `generate_blog.py --doar-improspatare` rescrie articolul lunii curente cand
+  s-a schimbat oferta, pastrand data publicarii si coperta. `verifica_promotii.py` are acum si
+  verificarea 5 (articole). **Dovedit ca pica:** 27 de probleme pe datele de azi, 0 dupa improspatare
+  (37 de articole rescrise).
+
 **UPDATE 16.09.2026, partea a doua (ce vede vizitatorul: promotii valabile, Telegram, produse):**
 - **Masurat pe productie** (rularea 10:22 UTC, prima cu reparatiile din partea intai, + pagini live):
   **58 din 336 de promotii expirate** dupa propria `expira`; 9 magazine cu o oferta expirata pe primul loc.

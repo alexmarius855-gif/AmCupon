@@ -279,6 +279,14 @@ jobs:
         working-directory: scripts
         run: python generate_blog.py
 
+      # Articolul lunii se scrie o singura data si ramanea cu oferta din ziua generarii: pe 17.09.2026
+      # articolul Nadula (scris pe 08.09) lista pe pagina magazinului coduri Klaiyi expirate — 21 din
+      # 442 de articole erau asa. Improspatarea ruleaza la FIECARE rulare, ca si promotiile.
+      - name: Adu articolele de magazin la zi cu ofertele curente
+        continue-on-error: true
+        working-directory: scripts
+        run: python generate_blog.py --doar-improspatare
+
       - name: Genereaza articole Cel mai bun X
         if: env.IS_FULL_DAILY == 'true'
         working-directory: scripts

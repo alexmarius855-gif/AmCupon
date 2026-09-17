@@ -11,6 +11,7 @@ Tipuri de articole generate:
 import json
 import os
 import re
+import sys
 from datetime import datetime
 
 LUNI_RO = {
@@ -365,6 +366,10 @@ In {luna} {an}, AmCupon.ro monitorizeaza **{total_magazine} magazine** cu promot
 
 
 def main():
+    # `--doar-improspatare`: nu scrie articole noi, doar aduce la zi ofertele din cele existente.
+    # Ruleaza la FIECARE rulare de pipeline (promotiile se schimba de 3 ori pe zi), pe cand
+    # generarea de articole noi ramane o data pe zi.
+    doar_improspatare = "--doar-improspatare" in sys.argv
     now = datetime.now()
     luna = LUNI_RO[now.month]
     an = now.year
@@ -387,12 +392,13 @@ def main():
             posts = json.load(f)
 
     sluguri_existente = {p["slug"] for p in posts}
-    generate_count = 0
+    # In modul „doar improspatare" pornim de la plafon: niciun articol nou nu mai trece de garda.
+    generate_count = POSTS_PER_RUN if doar_improspatare else 0
     noi = []
 
     # ── 1. Articol roundup lunar (1/luna) ──────────────────────────────────────
     slug_r = slug_articol_roundup(luna, an)
-    if slug_r not in sluguri_existente:
+    if not doar_improspatare and slug_r not in sluguri_existente:
         art = genereaza_articol_roundup(magazine, luna, an)
         if art:
             noi.append(art)
@@ -455,6 +461,30 @@ def main():
             generate_count += 1
             print(f"Generat magazin (SEO top): {art['title']}")
 
+    # ── IMPROSPATARE: articolele de magazin ale lunii curente ──────────────────
+    # 17.09.2026: „Cod Reducere Nadula Septembrie 2026" (generat pe 08.09) lista
+    # „Klaiyi Hair 9th Anniversary Blowout 2026" — promotie expirata SI a altui brand — iar
+    # articolul se afiseaza si pe pagina magazinului. 21 din 442 de articole de magazin aveau
+    # promotii care nu mai exista: se generau o singura data si nu se mai atingeau niciodata
+    # (acelasi tipar ca la promotii — docs/LECTII-TEHNICE.md #5). Continutul e determinist
+    # din datele magazinului, deci se rescrie doar cand chiar s-a schimbat oferta.
+    prin_slug = {m.get("magazin"): m for m in magazine}
+    improspatate = 0
+    for i, p in enumerate(posts):
+        if p.get("tip") != "magazin":
+            continue
+        store = prin_slug.get(p.get("magazin"))
+        if not store or p.get("slug") != slug_articol_magazin(store["magazin"], luna, an):
+            continue
+        nou = genereaza_articol_magazin(store, luna, an)
+        if nou.get("content") == p.get("content"):
+            continue
+        # Data publicarii si coperta raman ale articolului: se schimba oferta, nu articolul.
+        posts[i] = {**nou, "date": p.get("date", nou["date"]), "cover": p.get("cover", nou.get("cover"))}
+        improspatate += 1
+    if improspatate:
+        print(f"Improspatate {improspatate} articole de magazin (oferta s-a schimbat)")
+
     # ── PRUNE articole lunare EXPIRATE (fix 05.06.2026) ────────────────────────
     # Articolele tip magazin/categorie/roundup se regenereaza lunar cu acelasi
     # continut dar slug nou (-mai-2026, -iunie-2026...), creand DUPLICATE CONTENT
@@ -482,7 +512,7 @@ def main():
     with open(blog_path, "w", encoding="utf-8") as f:
         json.dump(all_posts, f, ensure_ascii=False, indent=2)
 
-    print(f"\nBlog actualizat: {generate_count} articole noi, {len(all_posts)} total.")
+    print(f"\nBlog actualizat: {len(noi)} articole noi, {len(all_posts)} total.")
     tip_counts = {}
     for p in noi:
         t = p.get("tip", "?")
