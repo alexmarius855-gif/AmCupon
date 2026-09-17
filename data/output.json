@@ -717,7 +717,7 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 44,
+    "zile_ramase": 19,
     "promotii": [
       {
         "nume": "Best Seller 25% off!",
@@ -753,6 +753,24 @@
         "landing_page": "https://laavooextensions.sjv.io/c/7401119/3855423/51251?u=https%3A%2F%2Flaavooextensions.com%2Fcollections%2Fnew-arrival",
         "zile_ramase": 44,
         "expira": "2026-10-31",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "Fall Sale 15% off",
+        "descriere": "Fall Sale 15% off",
+        "cod_cupon": "F15",
+        "landing_page": "https://laavooextensions.sjv.io/c/7401119/3855423/51251?u=https%3A%2F%2Fwww.laavooextensions.com",
+        "zile_ramase": 19,
+        "expira": "2026-10-06",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "Fall Sale 21% off",
+        "descriere": "Fall Sale 21% off",
+        "cod_cupon": "F21",
+        "landing_page": "https://laavooextensions.sjv.io/c/7401119/3855423/51251?u=https%3A%2F%2Fwww.laavooextensions.com",
+        "zile_ramase": 19,
+        "expira": "2026-10-06",
         "sursa": "impact_deals_api"
       }
     ],
@@ -2509,7 +2527,7 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 240,
+    "zile_ramase": 21,
     "promotii": [
       {
         "nume": "Clearance sale50%off",
@@ -2536,6 +2554,24 @@
         "landing_page": "https://ugeat.pxf.io/c/7401119/3855421/51250?u=https%3A%2F%2Fwww.ugeat.com",
         "zile_ramase": 240,
         "expira": "2027-05-15",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "wedding hair sale 15% off",
+        "descriere": "wedding hair sale 15% off",
+        "cod_cupon": "WH15",
+        "landing_page": "https://ugeat.pxf.io/c/7401119/3855421/51250?u=https%3A%2F%2Fwww.ugeat.com",
+        "zile_ramase": 21,
+        "expira": "2026-10-08",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "wedding hair sale 22% off",
+        "descriere": "wedding hair sale 22% off",
+        "cod_cupon": "WH22",
+        "landing_page": "https://ugeat.pxf.io/c/7401119/3855421/51250?u=https%3A%2F%2Fwww.ugeat.com",
+        "zile_ramase": 21,
+        "expira": "2026-10-08",
         "sursa": "impact_deals_api"
       }
     ],
@@ -5662,7 +5698,7 @@
   {
     "magazin": "cutout.pro",
     "url": "https://www.cutout.pro",
-    "url_afiliat": "https://cutoutpro.pxf.io/c/7401119/3024927/36598",
+    "url_afiliat": "https://www.cutout.pro",
     "logo_url": "https://www.google.com/s2/favicons?domain=cutout.pro&sz=128",
     "categorie": "Software & Digital",
     "categorie_slug": "software",
@@ -14514,7 +14550,7 @@
   {
     "magazin": "promeai.pro",
     "url": "https://www.promeai.pro",
-    "url_afiliat": "https://winroadholdingslimited.pxf.io/c/7401119/3011401/36316",
+    "url_afiliat": "https://www.promeai.pro",
     "logo_url": "https://www.google.com/s2/favicons?domain=promeai.pro&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
@@ -14540,7 +14576,7 @@
   {
     "magazin": "ideal.house",
     "url": "https://ideal.house",
-    "url_afiliat": "https://idealhouse.pxf.io/c/7401119/3024929/36599",
+    "url_afiliat": "https://ideal.house",
     "logo_url": "https://www.google.com/s2/favicons?domain=ideal.house&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
