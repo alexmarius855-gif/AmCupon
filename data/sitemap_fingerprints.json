@@ -2963,10 +2963,6 @@
   "fp": "ad22dd72d43ecddc",
   "data": "2026-08-16"
  },
- "/cod-reducere/pfarma.ro": {
-  "fp": "9c7844908c8955cc",
-  "data": "2026-08-16"
- },
  "/cod-reducere/okoshazak.hu": {
   "fp": "ad22dd72d43ecddc",
   "data": "2026-08-16"
@@ -2978,10 +2974,6 @@
  "/cod-reducere/smokemania.ro": {
   "fp": "bbcad4ad79bfc25e",
   "data": "2026-08-16"
- },
- "/cod-reducere/dualstore.ro": {
-  "fp": "ad22dd72d43ecddc",
-  "data": "2026-09-15"
  },
  "/cod-reducere/apiland.ro": {
   "fp": "0c58ce24ca661307",
@@ -3018,10 +3010,6 @@
  "/cod-reducere/videt.ro": {
   "fp": "e80bf72baffd1929",
   "data": "2026-08-31"
- },
- "/cod-reducere/pieseautoscan.ro": {
-  "fp": "b94fa3e028dff932",
-  "data": "2026-08-16"
  },
  "/cod-reducere/ookee.ro": {
   "fp": "6e66a0b46a8af42e",
@@ -3341,6 +3329,10 @@
  },
  "/cod-reducere/3gifts.ro": {
   "fp": "d711f8392204ad56",
+  "data": "2026-09-19"
+ },
+ "/cod-reducere/myown.ro": {
+  "fp": "e80bf72baffd1929",
   "data": "2026-09-19"
  },
  "/cod-reducere/watchshop.ro": {
@@ -3934,6 +3926,10 @@
  "/cod-reducere/rayahalal.ro": {
   "fp": "49978ce921eae221",
   "data": "2026-09-02"
+ },
+ "/cod-reducere/meia.ro": {
+  "fp": "e80bf72baffd1929",
+  "data": "2026-09-19"
  },
  "/cod-reducere/esteto.ro": {
   "fp": "8c2041ec5de0f639",
@@ -4572,7 +4568,7 @@
   "data": "2026-09-14"
  },
  "/categorii/fashion": {
-  "fp": "1e7c50f4a7e7b3da",
+  "fp": "ba364b4cab04add2",
   "data": "2026-09-19"
  },
  "/categorii/casa-gradina": {
@@ -4588,7 +4584,7 @@
   "data": "2026-08-16"
  },
  "/categorii/electronice": {
-  "fp": "ddd735d66737a687",
+  "fp": "828a4f325f118821",
   "data": "2026-09-19"
  },
  "/categorii/marketplace": {
@@ -4612,8 +4608,8 @@
   "data": "2026-08-16"
  },
  "/categorii/auto-moto": {
-  "fp": "68c892e16fa9083a",
-  "data": "2026-08-20"
+  "fp": "5d1ee17fb0841d2c",
+  "data": "2026-09-19"
  },
  "/categorii/copii": {
   "fp": "53f11f64a47415fe",
@@ -4624,7 +4620,7 @@
   "data": "2026-09-09"
  },
  "/categorii/sanatate": {
-  "fp": "aa9488f3f2f1ae08",
+  "fp": "82bbaec0e5ed0cdb",
   "data": "2026-09-19"
  },
  "/categorii/mancare-bauturi": {
