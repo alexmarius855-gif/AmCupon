@@ -12,6 +12,23 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 19.09.2026 (pagina de magazin FARA oferta — 91% din site, 1.044 din 1.143):**
+- Masurat pe sofiline.ro (live): titlu „— Voucher verificat" fara niciun voucher; „Deal Score 60/100"
+  (in HTML-ul de pe server chiar „0/100", din numaratoarea animata) deasupra lui „Niciun cod activ";
+  FAQ „Codul e verificat? — Da, verificam zilnic toate codurile"; blocul „Magazine similare" = DHgate,
+  Avidlove, extensii de par (straine, primele doar pentru ca aveau o promotie), sub textul „magazine
+  din aceeasi categorie care au cod chiar acum" — si niciunul nu avea cod.
+- Reparat in `cod-reducere/[magazin]`: similare = pentru un magazin .ro intai magazinele .ro, apoi cele
+  cu cod real, apoi cu oferta (sofiline: Incaltamintelamoda cu cod, Otter, Labelshop, Jojofashion...);
+  textul de sub „Niciun cod activ" spune doar ce e adevarat pe pagina aia; titlul fara oferta =
+  „Cod Reducere și Voucher X luna an"; descrierea spune „acum nu e niciun cod activ" + alternative si
+  alerta; „N coduri" numara doar promotiile CU cod; FAQ-ul spune ce facem de fapt (ofertele vin de la
+  retea, expira dupa data, nu le testam in cos); Deal Score doar cand exista o oferta, cu scorul real
+  in HTML; „Verificat azi" → „Actualizat azi"; DESCRIERI_CUSTOM fara „voucher activ/verificat" si fara
+  „economii garantate" (Temu). Verificat pe dev server: sofiline + incaltamintelamoda.
+- Ramas: „coduri verificate zilnic" in antetul si subsolul site-ului, si „verificate" in newsletter si
+  postari — aceeasi afirmatie, alt loc (de facut intr-o trecere separata, pe tot site-ul).
+
 **UPDATE 17.09.2026 (confirmat in productie + articolele de magazin):**
 - **Rularea completa de la 10:31 UTC, prima cu toate reparatiile:** garda `verifica_promotii` a iesit
   OK (1.148 magazine, 262 promotii, 0 probleme); 0 promotii expirate, 123 de contoare recalculate,

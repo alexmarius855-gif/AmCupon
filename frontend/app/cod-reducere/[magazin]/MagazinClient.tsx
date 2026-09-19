@@ -17,22 +17,11 @@ import { etichetaExpirare } from "../../../lib/expirarePromo";
 import VotCupon, { hashCupon } from "../../components/VotCupon";
 import { linkAfiliat, linkPromotie } from "@/lib/linkMagazin";
 
-// ── Deal Score badge cu count-up (0 -> scor) la mount ───────────────────────────
+// ── Deal Score badge ────────────────────────────────────────────────────────────
+// 19.09.2026: numaratoarea 0 -> scor pornea de la 0 si pe server, deci HTML-ul (ce citesc Google
+// si cine n-are JavaScript) scria „Deal Score 0/100". Acum scorul real, de la inceput.
 function DealScoreBadge({ score }: { score: number }) {
-  const [displayed, setDisplayed] = useState(0);
-  useEffect(() => {
-    let raf = 0;
-    const start = performance.now();
-    const duration = 700;
-    function tick(now: number) {
-      const t = Math.min(1, (now - start) / duration);
-      setDisplayed(Math.round(score * (1 - Math.pow(1 - t, 3)))); // ease-out cubic
-      if (t < 1) raf = requestAnimationFrame(tick);
-    }
-    raf = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(raf);
-  }, [score]);
-
+  const displayed = score;
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }}
@@ -283,7 +272,9 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
   }, [m.magazin]);
 
   const dealScore = calculateDealScore(m, astazi);
-  const showDealScore = dealScore >= DEAL_SCORE_VISIBLE_THRESHOLD;
+  // Doar cand exista o oferta: fara ea, scorul vine din rangul intern al magazinului + prospetime
+  // (sofiline.ro: 60/100 cu „Niciun cod activ" dedesubt) — un „deal score" fara niciun deal.
+  const showDealScore = m.promotii.length > 0 && dealScore >= DEAL_SCORE_VISIBLE_THRESHOLD;
 
   // Vizualizari deterministe
   const culoare = "bg-gradient-to-br from-[#ddf93c] to-[#c3dd2c]";
@@ -406,8 +397,8 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                       <span className="w-1.5 h-1.5 rounded-full bg-[#ddf93c] animate-pulse"/>
                     ) : null}
                     ✓ {zileDeLaVerificare <= 0
-                      ? "Verificat azi"
-                      : `Verificat acum ${zileDeLaVerificare} ${zileDeLaVerificare === 1 ? "zi" : "zile"}`}
+                      ? "Actualizat azi"
+                      : `Actualizat acum ${zileDeLaVerificare} ${zileDeLaVerificare === 1 ? "zi" : "zile"}`}
                   </div>
                 )}
               </div>
@@ -425,7 +416,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                 <ShareButton
                   pageSlug={`/cod-reducere/${m.magazin}`}
                   title={`Cod reducere ${nume} — AmCupon.ro`}
-                  text={`💰 ${m.promotii.length > 0 ? m.promotii.length + " reduceri active" : "Oferte"} la ${nume}! Verificate pe AmCupon.ro`}
+                  text={`💰 ${m.promotii.length > 0 ? m.promotii.length + " reduceri active" : "Oferte"} la ${nume}, pe AmCupon.ro`}
                   label="Distribuie"
                 />
                 <PriceAlert magazin={m.magazin} numeMagazin={nume} />
@@ -598,8 +589,13 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                   <Ticket className="w-12 h-12 mb-4 mx-auto text-[#3a4048]" />
                   <h3 className="text-lg font-black text-[#ffffff] mb-2">Niciun cod activ la {nume} acum</h3>
                   <p className="text-[#9399a0] text-sm mb-5">
-                    Verificam zilnic. Pana apare unul, mai jos sunt magazine din aceeasi
-                    categorie care au cod chiar acum.
+                    {/* Promisiunea trebuie sa fie adevarata pe pagina asta: pe sofiline.ro nu era
+                        niciun magazin cu cod mai jos (19.09.2026). */}
+                    {similare.some((x) => x.cod_real)
+                      ? "Ofertele se actualizează de mai multe ori pe zi. Până apare unul, mai jos sunt magazine din aceeași categorie care au cod chiar acum."
+                      : similare.some((x) => x.are_promotie)
+                      ? "Ofertele se actualizează de mai multe ori pe zi. Până apare unul, mai jos sunt magazine din aceeași categorie care au oferte acum."
+                      : "Ofertele se actualizează de mai multe ori pe zi — când apare un cod, îl vezi aici."}
                   </p>
                 </div>
 

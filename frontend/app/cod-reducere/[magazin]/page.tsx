@@ -60,33 +60,36 @@ function lunaRo(): string {
 }
 
 // ─── Descrieri custom pentru magazinele cele mai căutate ──────────────────────
+// 19.09.2026: textele vechi promiteau „Voucher X activ, verificat" si, la Temu, „economii garantate" —
+// iar Notino, Answear, Dr. Max, Decathlon si Temu n-aveau nicio oferta activa. O descriere care apare
+// in Google nu poate promite un cod: ofertele vin si pleaca de mai multe ori pe zi. Spune ce e pagina.
 const DESCRIERI_CUSTOM: Record<string, string> = {
   "notino.ro":
-    "Cod reducere Notino pentru parfumuri, cosmetice și produse de îngrijire. Voucher Notino verificat și actualizat zilnic. Cele mai bune oferte beauty pe AmCupon.ro.",
+    "Cod reducere Notino pentru parfumuri, cosmetice și produse de îngrijire: ofertele active acum și alternativele din beauty, actualizate de mai multe ori pe zi pe AmCupon.ro.",
   "answear.ro":
-    "Cod reducere Answear pentru fashion online — haine, pantofi, accesorii de brand. Voucher Answear activ verificat pe AmCupon.ro.",
+    "Cod reducere Answear pentru haine, pantofi și accesorii de brand: ofertele active acum și alternativele din fashion, actualizate de mai multe ori pe zi pe AmCupon.ro.",
   "noriel.ro":
-    "Cod reducere Noriel pentru jucării, jocuri și produse pentru copii. Voucher Noriel verificat zilnic pe AmCupon.ro.",
+    "Cod reducere Noriel pentru jucării, jocuri și produse pentru copii: ofertele active acum, actualizate de mai multe ori pe zi pe AmCupon.ro.",
   "drmax.ro":
-    "Cod reducere Dr. Max pentru medicamente OTC, suplimente și produse farmaceutice. Voucher Dr. Max activ pe AmCupon.ro.",
+    "Cod reducere Dr. Max pentru medicamente fără rețetă, suplimente și dermatocosmetice: ofertele active acum și alternativele, actualizate de mai multe ori pe zi pe AmCupon.ro.",
   "elefant.ro":
-    "Cod reducere Elefant pentru cărți, electronice și jocuri. Voucher Elefant verificat zilnic pe AmCupon.ro.",
+    "Cod reducere Elefant pentru cărți, electronice și jocuri: ofertele active acum, actualizate de mai multe ori pe zi pe AmCupon.ro.",
   "sportisimo.ro":
-    "Cod reducere Sportisimo pentru echipamente sportive, îmbrăcăminte și încălțăminte sport. Voucher Sportisimo verificat pe AmCupon.ro.",
+    "Cod reducere Sportisimo pentru echipamente, îmbrăcăminte și încălțăminte sport: ofertele active acum, actualizate de mai multe ori pe zi pe AmCupon.ro.",
   "altex.ro":
-    "Cod reducere Altex pentru electronice, electrocasnice și IT. Voucher Altex verificat zilnic pe AmCupon.ro.",
+    "Cod reducere Altex pentru electronice, electrocasnice și IT: ofertele active acum, actualizate de mai multe ori pe zi pe AmCupon.ro.",
   "dedeman.ro":
-    "Cod reducere Dedeman pentru bricolaj, materiale de construcții și grădină. Voucher Dedeman activ pe AmCupon.ro.",
+    "Cod reducere Dedeman pentru bricolaj, materiale de construcții și grădină: ofertele active acum, actualizate de mai multe ori pe zi pe AmCupon.ro.",
   "decathlon.ro":
-    "Cod reducere Decathlon pentru sport și outdoor — echipamente, haine și accesorii. Voucher Decathlon verificat pe AmCupon.ro.",
+    "Cod reducere Decathlon pentru sport și outdoor: ofertele active acum și alternativele, actualizate de mai multe ori pe zi pe AmCupon.ro.",
   "zara.com":
-    "Cod reducere Zara pentru fashion și accesorii. Voucher Zara verificat pe AmCupon.ro — colecțiile noi la prețuri reduse.",
+    "Cod reducere Zara pentru haine și accesorii: ofertele active acum, actualizate de mai multe ori pe zi pe AmCupon.ro.",
   "hm.com":
-    "Cod reducere H&M pentru haine, accesorii și cosmetice. Voucher H&M verificat zilnic pe AmCupon.ro.",
+    "Cod reducere H&M pentru haine, accesorii și cosmetice: ofertele active acum, actualizate de mai multe ori pe zi pe AmCupon.ro.",
   "temu.com":
-    "Cod reducere Temu verificat pentru mii de produse la prețuri mici. Voucher Temu activ pe AmCupon.ro — economii garantate.",
+    "Cod reducere Temu: ofertele active acum pentru produsele din toate categoriile, actualizate de mai multe ori pe zi pe AmCupon.ro.",
   "aliexpress.com":
-    "Cod reducere AliExpress pentru produse din toate categoriile. Voucher AliExpress verificat și actualizat pe AmCupon.ro.",
+    "Cod reducere AliExpress pentru produse din toate categoriile: ofertele active acum, actualizate de mai multe ori pe zi pe AmCupon.ro.",
 };
 
 export interface Produs {
@@ -329,13 +332,21 @@ export async function generateMetadata({
     ? `Cod Reducere ${nume} ${luna} ${an} — ${nrCod} cod${nrCod > 1 ? "uri" : ""} activ${nrCod > 1 ? "e" : ""} | AmCupon.ro`
     : nrPromo > 0
     ? `Cod Reducere ${nume} ${luna} ${an} — ${nrPromo} ofert${nrPromo > 1 ? "e" : "ă"} active | AmCupon.ro`
-    : `Cod Reducere ${nume} ${luna} ${an} — Voucher verificat | AmCupon.ro`;
+    // 19.09.2026: era „— Voucher verificat" pe ~1.040 de pagini FARA niciun voucher. Titlul promitea
+    // exact ce pagina nu are, iar omul pleca de pe ea in cateva secunde.
+    : `Cod Reducere și Voucher ${nume} ${luna} ${an} | AmCupon.ro`;
 
-  // Descriere: custom pentru top magazine, generic pentru restul
+  // Descriere: custom pentru top magazine, generic pentru restul. Fara „verificate": ofertele vin
+  // din retelele de afiliere si expira dupa data lor (scripts/promotii.py) — nu le testam in cos.
+  // „N coduri" numara doar promotiile CU cod (inainte numara toate promotiile ca „coduri").
   const descCustom = DESCRIERI_CUSTOM[slug];
-  const descGeneric = nrPromo > 0
-    ? `✅ ${nrPromo} cod${nrPromo > 1 ? "uri" : ""} de reducere ${nume} verificate ${luna} ${an}. Voucher ${nume} activ — ${m.promotii[0].nume}. Economisește cu AmCupon.ro, actualizat zilnic.`
-    : `Cod reducere ${nume} ${an} — voucher și promoții verificate pe AmCupon.ro. Categorie: ${m.categorie}. Actualizat zilnic.`;
+  const descGeneric = nrCod > 0
+    ? `${nrCod} cod${nrCod > 1 ? "uri" : ""} de reducere ${nume} activ${nrCod > 1 ? "e" : ""} în ${luna} ${an}: ${m.promotii.find((p) => p.cod_cupon)?.nume ?? m.promotii[0].nume}. Actualizat de mai multe ori pe zi pe AmCupon.ro.`
+    : nrPromo > 0
+    ? `${nrPromo} ofert${nrPromo > 1 ? "e" : "ă"} ${nume} activ${nrPromo > 1 ? "e" : "ă"} în ${luna} ${an}: ${m.promotii[0].nume}. Actualizat de mai multe ori pe zi pe AmCupon.ro.`
+    : magazine.some((x) => x.magazin !== m.magazin && x.categorie_slug === m.categorie_slug && x.are_promotie)
+    ? `Acum nu e niciun cod activ la ${nume}. Vezi magazinele din ${m.categorie} care au oferte azi și primește alertă pe email când apare un cod ${nume}.`
+    : `Acum nu e niciun cod activ la ${nume}. Primește alertă pe email când apare unul — ofertele se actualizează de mai multe ori pe zi pe AmCupon.ro.`;
   const description = descCustom || descGeneric;
 
   // ── Indexare selectiva (vezi lib/seoIndexable.ts pentru masuratori + motiv) ──
@@ -418,8 +429,17 @@ export default async function PaginaMagazin({
   const comparatii = loadComparatii(cleanSlug);
   const reviewSummary = loadReviewsSummary(cleanSlug);
 
-  // Magazine similare din aceeasi categorie (max 8, prioritate la cele cu promotii)
+  // Magazine similare din aceeasi categorie (max 8).
+  //
+  // 19.09.2026: pe sofiline.ro (fashion, RO) blocul arata DHgate, Avidlove, extensii de par — toate
+  // straine, primele doar pentru ca aveau o promotie — desi exista magazine romanesti de fashion cu
+  // oferte si cod. Pe 91% din pagini (1.044 din 1.143 fara oferta) blocul asta e tot ce retine omul.
+  // Ordinea acum: pentru un magazin .ro, intai magazinele .ro; apoi cele cu cod real, apoi cu oferta,
+  // apoi rangul. Domeniul e un semnal aproximativ al pietei, nu o regula (vezi CLAUDE.md, relevanta).
   const RETELE_AFILIERE = ["2performant.com"];
+  const esteRo = (s: string) => s.toLowerCase().endsWith(".ro");
+  const cuCodReal = (x: Magazin) => (x.promotii || []).some((p) => (p.cod_cupon || "").trim().length > 0);
+  const pagRo = esteRo(m.magazin);
   const similare: MagazinSimilar[] = magazine
     .filter((x) =>
       x.magazin !== slug &&
@@ -429,6 +449,8 @@ export default async function PaginaMagazin({
       !/\s/.test(x.magazin)
     )
     .sort((a, b) =>
+      (pagRo ? Number(esteRo(b.magazin)) - Number(esteRo(a.magazin)) : 0) ||
+      Number(cuCodReal(b)) - Number(cuCodReal(a)) ||
       (b.are_promotie ? 1 : 0) - (a.are_promotie ? 1 : 0) ||
       (a.rank || 999) - (b.rank || 999)
     )
@@ -475,7 +497,7 @@ export default async function PaginaMagazin({
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: `Coduri reducere ${nume} ${luna} ${an}`,
-    description: `${nrPromo} oferte active ${nume} verificate pe AmCupon.ro`,
+    description: `${nrPromo} oferte active ${nume} pe AmCupon.ro, actualizate de mai multe ori pe zi`,
     url: pageUrl,
     numberOfItems: nrPromo,
     itemListElement: m.promotii.map((promo, i) => ({
@@ -552,14 +574,20 @@ export default async function PaginaMagazin({
       r: `Copiază codul de reducere ${nume} de pe AmCupon.ro, adaugă produsele în coș pe ${m.url}, iar la finalizarea comenzii introdu codul în câmpul "Cod promoțional" sau "Voucher". Reducerea se aplică automat înainte de plată.`,
     },
     {
+      // 19.09.2026: raspunsul era „Da. AmCupon.ro verifica si actualizeaza zilnic toate codurile" —
+      // si pe cele ~1.040 de pagini fara niciun cod. Ce facem de fapt, spus exact.
       i: `Codul de reducere ${nume} este verificat?`,
-      r: `Da. AmCupon.ro verifică și actualizează zilnic toate codurile ${nume}, împreună cu zilele rămase de valabilitate pentru fiecare cod în parte.`,
+      r: nrCod > 0
+        ? `Codurile ${nume} vin direct de la rețeaua de afiliere a magazinului și se actualizează de mai multe ori pe zi; o ofertă dispare de pe pagină când îi expiră data. Nu testăm fiecare cod în coș — dacă unul nu merge, spune-ne cu butonul "A funcționat?".`
+        : `Acum nu e niciun cod activ la ${nume}. Ofertele vin de la rețeaua de afiliere a magazinului și se actualizează de mai multe ori pe zi — când apare un cod, îl vezi aici.`,
     },
     {
       i: `Câte oferte active are ${nume} acum?`,
       r: nrPromo > 0
-        ? `${nume} are ${nrPromo} ofert${nrPromo > 1 ? "e" : "ă"} active în ${luna} ${an}${nrCod > 0 ? `, dintre care ${nrCod} cu cod de reducere` : ""}. Toate sunt verificate și actualizate zilnic pe AmCupon.ro.`
-        : `Verificăm zilnic promoțiile ${nume}. Revino în curând pentru oferte noi.`,
+        ? `${nume} are ${nrPromo} ofert${nrPromo > 1 ? "e" : "ă"} active în ${luna} ${an}${nrCod > 0 ? `, dintre care ${nrCod} cu cod de reducere` : ""}. Lista se actualizează de mai multe ori pe zi pe AmCupon.ro.`
+        : similare.some((s) => s.are_promotie)
+        ? `Niciuna în acest moment. Mai jos găsești magazinele din aceeași categorie care au oferte azi.`
+        : `Niciuna în acest moment. Lista se actualizează de mai multe ori pe zi.`,
     },
     {
       i: "Este AmCupon.ro gratuit?",
