@@ -12,6 +12,25 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 19.09.2026, partea a doua (magazinele al caror program nu acopera Romania):**
+- **Masurat pe API-ul Impact:** 122 din 533 de campanii active au `ShippingRegions` fara Romania —
+  programe de tara: „Eufy NL", „Navimow US", „Lenovo India", „OnePlus FR", „JD Sports Indonesia".
+  **108 magazine de pe site** duceau un roman pe un magazin de unde nu poate comanda; si **34 din cele
+  99 de magazine cu oferta activa** erau dintre ele (ofertele Eufy in olandeza de pe prima pagina).
+- `fetch_impact_api.py` scrie `regiuni` in `data/impact_deeplink.json`; `link_oferta.livreaza_in_romania`
+  (False DOAR cand programul declara tarile si Romania lipseste); `merge_platforms.py` le scoate din
+  `output.json` (deci din toate listele, topurile, newsletterul, sitemap-ul) in
+  `frontend/public/magazine-fara-livrare-ro.json` (comis de workflow). Fara harta Impact la o rulare,
+  pastreaza lista de data trecuta (altfel cele 108 ar veni si pleca).
+- Adresa lor nu da 404: `FaraLivrareRo.tsx` — „Nu avem o ofertă X pentru România", explica programul
+  si tarile, link oficial fara afiliere, alternative din categorie (.ro intai), `noindex`. **Textul
+  vorbeste despre programul la care avem acces, nu despre firma** (Eufy NL acopera Olanda — nu
+  inseamna ca Eufy nu vinde in Romania).
+- Blogul: `generate_blog.py --doar-improspatare` scoate cele 74 de articole ale lor (lista explicita,
+  nu „orice magazin lipsa": 3 articole au alt slug decat magazinul). `verifica_promotii.py` pica daca
+  ramane vreunul. Test local cap-coada: 108 scoase, 0 ramase in output, garda PICA inainte (127) si
+  TRECE dupa; pagina eufy.com verificata pe dev server.
+
 **UPDATE 19.09.2026 (pagina de magazin FARA oferta — 91% din site, 1.044 din 1.143):**
 - Masurat pe sofiline.ro (live): titlu „— Voucher verificat" fara niciun voucher; „Deal Score 60/100"
   (in HTML-ul de pe server chiar „0/100", din numaratoarea animata) deasupra lui „Niciun cod activ";

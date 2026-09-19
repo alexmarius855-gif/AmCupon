@@ -220,14 +220,21 @@ def main():
     # rulare, inainte de merge; lipsa lui = fara deep-link (link afiliat simplu).
     # CampaignUrl + CampaignName: merge-ul verifica cu ele ca linkul e al brandului magazinului
     # (link_oferta.link_potrivit) — garda finala pentru ORICE importator.
+    # `regiuni` = ShippingRegions, tarile in care ruleaza programul (19.09.2026). 108 magazine de pe
+    # site aveau programe doar pentru SUA, Olanda, India, Indonezia („Eufy NL", „Lenovo India"):
+    # un roman care da clic ajunge unde nu poate comanda, iar noi nu castigam nimic. Lista goala
+    # (sau [""]) = programul nu spune — nu presupunem nimic. Vezi link_oferta.livreaza_in_romania.
     deeplink = {str(c["CampaignId"]): {"permis": str(c.get("AllowsDeeplinking")).lower() == "true",  # vine ca TEXT: bool("false") e True
                                        "domenii": c.get("DeeplinkDomains") or [],
                                        "CampaignUrl": c.get("CampaignUrl") or "",
-                                       "CampaignName": c.get("CampaignName") or ""}
+                                       "CampaignName": c.get("CampaignName") or "",
+                                       "regiuni": [r for r in (c.get("ShippingRegions") or []) if r]}
                 for c in campaigns if c.get("ContractStatus") == "Active"}
     with open(DEEPLINK_PATH, "w", encoding="utf-8") as f:
         json.dump(deeplink, f, ensure_ascii=False, indent=1)
     print(f"  permisiuni deep-link scrise: {sum(v['permis'] for v in deeplink.values())} din {len(deeplink)}")
+    fara_ro = sum(1 for v in deeplink.values() if v["regiuni"] and "ROMANIA" not in v["regiuni"])
+    print(f"  campanii care NU livreaza in Romania (ShippingRegions): {fara_ro} din {len(deeplink)}")
 
     total_updated = 0
     all_not_found = []

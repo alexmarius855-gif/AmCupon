@@ -485,6 +485,22 @@ def main():
     if improspatate:
         print(f"Improspatate {improspatate} articole de magazin (oferta s-a schimbat)")
 
+    # Articolele magazinelor scoase pentru ca programul lor nu acopera Romania (merge_platforms.py,
+    # 19.09.2026): 74 de articole ramaneau cu ofertele „Eufy NL" & co., iar improspatarea de mai sus
+    # nu le mai atinge (magazinul nu mai e in output.json). Doar lista EXPLICITA — nu „orice magazin
+    # care lipseste", pentru ca 3 articole au alt slug decat magazinul si ar fi sters degeaba.
+    fara_ro_path = os.path.join(repo_root, "frontend", "public", "magazine-fara-livrare-ro.json")
+    try:
+        with open(fara_ro_path, encoding="utf-8") as f:
+            fara_ro = {x["magazin"] for x in json.load(f)}
+    except (OSError, ValueError, KeyError, TypeError):
+        fara_ro = set()
+    if 0 < len(fara_ro) <= 300:
+        inainte = len(posts)
+        posts = [p for p in posts if not (p.get("tip") == "magazin" and p.get("magazin") in fara_ro)]
+        if len(posts) < inainte:
+            print(f"Scoase {inainte - len(posts)} articole ale magazinelor fara livrare in Romania")
+
     # ── PRUNE articole lunare EXPIRATE (fix 05.06.2026) ────────────────────────
     # Articolele tip magazin/categorie/roundup se regenereaza lunar cu acelasi
     # continut dar slug nou (-mai-2026, -iunie-2026...), creand DUPLICATE CONTENT

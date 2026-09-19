@@ -268,6 +268,37 @@ def main():
     from promotii import curata_promotii, raport  # noqa: E402
     print("  " + raport(curata_promotii(merged)))
 
+    # ── Programe care NU livreaza in Romania (ShippingRegions din Impact) ────────────────────────
+    # 19.09.2026: 108 magazine aveau programe doar pentru alte tari — „Eufy NL", „Navimow US",
+    # „Lenovo India", „JD Sports Indonesia". Pe un site de cupoane pentru Romania, un clic acolo
+    # nu se poate transforma in comanda. Ies din output.json (deci din toate listele, topurile,
+    # newsletterul si sitemap-ul) si intra intr-un fisier separat, din care pagina lor spune
+    # onest de ce nu le promovam. Doar cand programul DECLARA tarile si Romania lipseste.
+    from link_oferta import livreaza_in_romania, _contracte_impact  # noqa: E402
+    _cale_fara_ro = os.path.join(os.path.dirname(OUTPUT_FRONTEND), "magazine-fara-livrare-ro.json")
+    _fara_ro = []
+    if _contracte_impact():
+        for _m in merged:
+            _ok, _regiuni, _program = livreaza_in_romania(_m.get("url_afiliat") or "")
+            if _ok is False:
+                _fara_ro.append({"magazin": _m["magazin"], "url": _m.get("url", ""),
+                                 "categorie": _m.get("categorie", ""),
+                                 "categorie_slug": _m.get("categorie_slug", ""),
+                                 "program": _program, "regiuni": _regiuni[:12]})
+    elif os.path.exists(_cale_fara_ro):
+        # Fara harta Impact (API-ul a picat la rularea asta) pastram lista de data trecuta — altfel
+        # cele 108 magazine ar reveni o rulare si ar pleca la urmatoarea.
+        with open(_cale_fara_ro, encoding="utf-8") as _f:
+            _fara_ro = json.load(_f)
+        print(f"  (harta Impact lipseste — pastrez lista de magazine fara livrare in RO: {len(_fara_ro)})")
+    if _fara_ro:
+        _scoase = {x["magazin"] for x in _fara_ro}
+        merged = [m for m in merged if m["magazin"] not in _scoase]
+        print(f"  magazine cu program care nu livreaza in Romania, scoase din liste: {len(_fara_ro)} "
+              f"({', '.join(sorted(_scoase)[:8])}...)")
+    with open(_cale_fara_ro, "w", encoding="utf-8") as f:
+        json.dump(sorted(_fara_ro, key=lambda x: x["magazin"]), f, ensure_ascii=False, indent=1)
+
     # ── ultima_verificare: stampila REALA de "pipeline-ul a confirmat azi acest record" ──
     # Inainte, campul se seta o singura data la creare (fetch_2p_api.py/import_csv_promotii.py/
     # process_data.py) si nu se mai actualiza niciodata dupa — deci "verificat" insemna de fapt

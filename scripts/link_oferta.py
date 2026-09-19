@@ -121,6 +121,20 @@ def link_potrivit(url_afiliat: str, url_magazin: str) -> bool:
     return campania_magazinului(regula, url_magazin)
 
 
+def livreaza_in_romania(url_afiliat: str):
+    """(True/False/None, regiuni, numele programului) pentru un link Impact. False DOAR cand
+    programul are o lista de tari si Romania nu e in ea („Eufy NL" = [NETHERLANDS]). None = nu
+    stim: link non-Impact, harta contractelor lipsa, sau programul nu declara tarile. Harta se
+    scrie de fetch_impact_api.py la fiecare rulare, inainte de merge."""
+    if not _IMPACT_LINK.search(url_afiliat or ""):
+        return None, [], ""
+    regula = _contracte_impact().get(_campanie(url_afiliat)) or {}
+    regiuni = regula.get("regiuni") or []
+    if not regiuni:
+        return None, [], regula.get("CampaignName", "")
+    return "ROMANIA" in regiuni, regiuni, regula.get("CampaignName", "")
+
+
 def cu_deeplink_impact(tracking: str, destinatie: str) -> str:
     baza = re.sub(r"([?&])u=[^&]*&?", r"\1", tracking).rstrip("?&")
     return baza + ("&" if "?" in baza else "?") + "u=" + quote(destinatie, safe="")

@@ -466,6 +466,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           git add frontend/public/output.json          || true
+          git add frontend/public/magazine-fara-livrare-ro.json || true
           git add frontend/public/sitemap-dates.json   || true
           git add frontend/public/studiu-cupoane.json  || true
           git add data/sitemap_fingerprints.json       || true

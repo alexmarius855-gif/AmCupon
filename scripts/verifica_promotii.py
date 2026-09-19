@@ -45,7 +45,16 @@ def verifica_articole(magazine: list, cale_blog: str) -> list:
                                 for p in (m.get("promotii") or []) if isinstance(p, dict)}
               for m in magazine if isinstance(m, dict)}
     gresit = []
+    # Articolele magazinelor scoase pentru ca programul lor nu acopera Romania nu au voie sa ramana.
+    try:
+        with open(os.path.join(os.path.dirname(cale_blog), "magazine-fara-livrare-ro.json"), encoding="utf-8") as f:
+            fara_ro = {x["magazin"] for x in json.load(f)}
+    except (OSError, ValueError, KeyError, TypeError):
+        fara_ro = set()
     for p in posts:
+        if p.get("tip") == "magazin" and p.get("magazin") in fara_ro:
+            gresit.append(f"{p.get('slug')}: articol pentru un magazin fara livrare in Romania")
+            continue
         if p.get("tip") != "magazin" or p.get("magazin") not in active:
             continue
         for nume in PROMO_IN_ARTICOL.findall(p.get("content") or ""):

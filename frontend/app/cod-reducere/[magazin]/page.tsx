@@ -7,6 +7,7 @@ import MagazinClient from "./MagazinClient";
 import { buildMerchantTokens, esteIndexabil } from "../../../lib/seoIndexable";
 import ContextMagazin, { type CategorieStudiu } from "./ContextMagazin";
 import { linkAfiliat } from "@/lib/linkMagazin";
+import FaraLivrareRo, { tariLivrare, type Alternativa, type MagazinFaraLivrare } from "./FaraLivrareRo";
 
 interface Promotie {
   nume: string;
@@ -130,6 +131,22 @@ interface Banner2P {
 function loadData(): Magazin[] {
   const filePath = path.join(process.cwd(), "public", "output.json");
   return JSON.parse(fs.readFileSync(filePath, "utf-8"));
+}
+
+// Magazinele scoase din liste pentru ca programul lor nu livreaza in Romania (merge_platforms.py,
+// 19.09.2026). Adresa lor ramane, cu o pagina care spune de ce — vezi FaraLivrareRo.tsx.
+function loadFaraLivrare(): MagazinFaraLivrare[] {
+  try {
+    const p = path.join(process.cwd(), "public", "magazine-fara-livrare-ro.json");
+    return fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, "utf-8")) : [];
+  } catch {
+    return [];
+  }
+}
+
+function gasesteFaraLivrare(slug: string): MagazinFaraLivrare | undefined {
+  const s = slug.toLowerCase();
+  return loadFaraLivrare().find((x) => x.magazin.toLowerCase() === s);
 }
 
 function loadBanner(magazinSlug: string): Banner2P | null {
@@ -305,7 +322,7 @@ function gasesteMagazin(magazine: Magazin[], slug: string): Magazin | undefined 
 
 export async function generateStaticParams() {
   const magazine = loadData();
-  return magazine.map((m) => ({ magazin: m.magazin }));
+  return [...magazine, ...loadFaraLivrare()].map((m) => ({ magazin: m.magazin }));
 }
 
 export async function generateMetadata({
@@ -317,7 +334,19 @@ export async function generateMetadata({
   const magazine = loadData();
   const m = gasesteMagazin(magazine, slug);
 
-  if (!m) return { title: "Magazin negăsit | AmCupon.ro" };
+  if (!m) {
+    const f = gasesteFaraLivrare(slug);
+    if (f) {
+      const numeF = numeAfisat(f.magazin);
+      return {
+        title: `Cod reducere ${numeF}: nicio ofertă pentru România | AmCupon.ro`,
+        description: `Programul de afiliere ${numeF} la care avem acces funcționează doar pentru ${tariLivrare(f.regiuni)}, deci nu îl promovăm. Vezi alternativele din ${f.categorie}.`,
+        robots: { index: false, follow: true },
+        alternates: { canonical: `https://amcupon.ro/cod-reducere/${f.magazin}` },
+      };
+    }
+    return { title: "Magazin negăsit | AmCupon.ro" };
+  }
 
   const nume = numeAfisat(m.magazin);
   const an = new Date().getFullYear();
@@ -416,6 +445,24 @@ export default async function PaginaMagazin({
     const ro = magazine.find((x) => x.magazin.toLowerCase() === `${baza}.ro`);
     if (ro && ro.magazin.toLowerCase() !== slug.toLowerCase()) {
       permanentRedirect(`/cod-reducere/${ro.magazin}`);
+    }
+    const f = gasesteFaraLivrare(slug);
+    if (f) {
+      // Alternative din aceeasi categorie: magazine .ro intai, apoi cu cod, apoi cu oferta.
+      const alternative: Alternativa[] = magazine
+        .filter((x) => x.categorie_slug && x.categorie_slug === f.categorie_slug && !/\s/.test(x.magazin))
+        .sort((a, b) =>
+          Number(b.magazin.endsWith(".ro")) - Number(a.magazin.endsWith(".ro")) ||
+          Number(b.promotii.some((p) => p.cod_cupon)) - Number(a.promotii.some((p) => p.cod_cupon)) ||
+          Number(b.are_promotie) - Number(a.are_promotie) ||
+          (a.rank || 999) - (b.rank || 999))
+        .slice(0, 6)
+        .map((x) => ({
+          magazin: x.magazin,
+          nume: numeAfisat(x.magazin),
+          eticheta: x.promotii.some((p) => p.cod_cupon) ? "Cod activ" : x.are_promotie ? "Ofertă" : "",
+        }));
+      return <FaraLivrareRo f={f} nume={numeAfisat(f.magazin)} alternative={alternative} />;
     }
     notFound();
   }
