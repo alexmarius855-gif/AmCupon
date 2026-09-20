@@ -34,11 +34,46 @@ PLATFORME_EXCLUSE = {"profitshare"}
 RE_LINK_EXCLUS = re.compile(r"profitshare\.ro", re.I)
 
 
+# ── Ce inseamna un link care CHIAR plateste ──────────────────────────────────
+# Semnatura e CALEA, nu domeniul: Impact foloseste zeci de domenii de tracking
+# (sjv.io, pxf.io, f9tmep.net, ojrq.net...), dar toate au forma /c/<partner>/<ad>/<campanie>.
+# O lista de domenii ar fi ratat tacit jumatate din ele — masurat 20.09, cand un
+# filtru pe domenii a raportat 109 linkuri „moarte", dintre care 19 erau valide.
+RE_TRACKING_REAL = re.compile(
+    r"/c/\d{6,}/\d+"                  # Impact, orice domeniu
+    r"|event\.2performant\.com"       # 2Performant
+    r"|awin1\.com"                    # Awin
+    r"|ojrq\.net",                    # Impact (redirect intermediar)
+    re.I,
+)
+
+
+def are_link_care_plateste(m: dict) -> bool:
+    """True daca un clic pe magazinul asta poate produce comision."""
+    return bool(RE_TRACKING_REAL.search(m.get("url_afiliat") or ""))
+
+
 def este_magazin_exclus(m: dict) -> bool:
-    """True daca magazinul apartine unei retele excluse (dupa platforma SAU dupa link)."""
+    """True daca magazinul apartine unei retele excluse (dupa platforma SAU dupa link).
+
+    20.09.2026 — s-a adaugat a treia conditie: **linkul nu e de tracking deloc.**
+    Masurat pe date: 90 de magazine (9% din site) aveau `url_afiliat` catre pagina
+    magazinului, fara niciun parametru de afiliere — Hostinger, Logitech, Razer,
+    Upwork, Coursera, Banggood, Norton, ExpressVPN. Verificat pe API-ul Impact:
+    NICIUNUL nu are campanie pe contul lui Alex. Erau adaugate speculativ.
+
+    Un clic pe ele nu doar ca nu aduce comision, ci e mai rau decat sa nu existe:
+    vizitatorul care chiar voia Hostinger pleaca de pe site, iar noi ramanem si
+    fara el, si fara bani. Exact acelasi rationament ca la Profitshare mai sus.
+
+    Regula e pe FORMA linkului, nu pe o lista de magazine: asa prinde si cazurile
+    viitoare, fara sa trebuiasca sa le descopere cineva manual a patra oara.
+    """
     if (m.get("platforma") or "").strip().lower() in PLATFORME_EXCLUSE:
         return True
-    return bool(RE_LINK_EXCLUS.search(m.get("url_afiliat") or ""))
+    if RE_LINK_EXCLUS.search(m.get("url_afiliat") or ""):
+        return True
+    return not are_link_care_plateste(m)
 
 
 def este_produs_exclus(p: dict, sluguri_excluse: set[str] | None = None) -> bool:
