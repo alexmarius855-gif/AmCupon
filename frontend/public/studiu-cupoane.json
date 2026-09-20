@@ -1,18 +1,18 @@
 {
   "generat": "2026-09-20",
-  "total_magazine": 1042,
+  "total_magazine": 957,
   "cu_promotie": 91,
   "cu_cod_real": 31,
   "doar_oferta": 60,
-  "procent_cu_promotie": 8.7,
-  "procent_cu_cod": 3.0,
+  "procent_cu_promotie": 9.5,
+  "procent_cu_cod": 3.2,
   "reducere_mediana_generala": 20,
   "magazine_cu_procent_declarat": 61,
   "categorii": [
     {
       "slug": "carti-educatie",
       "nume": "Cărți & educație",
-      "magazine": 35,
+      "magazine": 31,
       "cu_promotie": 5,
       "reducere_mediana": 40.0,
       "reducere_max": 90,
@@ -21,7 +21,7 @@
     {
       "slug": "electronice",
       "nume": "Electronice & IT",
-      "magazine": 95,
+      "magazine": 81,
       "cu_promotie": 8,
       "reducere_mediana": 27.5,
       "reducere_max": 75,
@@ -30,7 +30,7 @@
     {
       "slug": "sanatate",
       "nume": "Sănătate & farmacie",
-      "magazine": 52,
+      "magazine": 50,
       "cu_promotie": 6,
       "reducere_mediana": 25,
       "reducere_max": 33,
@@ -39,7 +39,7 @@
     {
       "slug": "beauty",
       "nume": "Beauty & îngrijire",
-      "magazine": 71,
+      "magazine": 69,
       "cu_promotie": 7,
       "reducere_mediana": 21,
       "reducere_max": 70,
@@ -48,7 +48,7 @@
     {
       "slug": "fashion",
       "nume": "Fashion",
-      "magazine": 98,
+      "magazine": 82,
       "cu_promotie": 11,
       "reducere_mediana": 20,
       "reducere_max": 70,
@@ -57,7 +57,7 @@
     {
       "slug": "marketplace",
       "nume": "Marketplace",
-      "magazine": 202,
+      "magazine": 192,
       "cu_promotie": 12,
       "reducere_mediana": 20,
       "reducere_max": 50,
@@ -66,7 +66,7 @@
     {
       "slug": "calatorii",
       "nume": "Călătorii",
-      "magazine": 84,
+      "magazine": 83,
       "cu_promotie": 10,
       "reducere_mediana": 20,
       "reducere_max": 45,
@@ -75,7 +75,7 @@
     {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
-      "magazine": 125,
+      "magazine": 123,
       "cu_promotie": 13,
       "reducere_mediana": 10.0,
       "reducere_max": 70,
@@ -84,7 +84,7 @@
     {
       "slug": "sport",
       "nume": "Sport & fitness",
-      "magazine": 39,
+      "magazine": 36,
       "cu_promotie": 5,
       "reducere_mediana": 7.5,
       "reducere_max": 30,
@@ -93,7 +93,7 @@
     {
       "slug": "software",
       "nume": "Software & digital",
-      "magazine": 85,
+      "magazine": 68,
       "cu_promotie": 3,
       "reducere_mediana": null,
       "reducere_max": null,
@@ -102,7 +102,7 @@
     {
       "slug": "servicii",
       "nume": "Servicii",
-      "magazine": 20,
+      "magazine": 16,
       "cu_promotie": 3,
       "reducere_mediana": null,
       "reducere_max": null,
@@ -111,7 +111,7 @@
     {
       "slug": "bijuterii",
       "nume": "Bijuterii & ceasuri",
-      "magazine": 23,
+      "magazine": 21,
       "cu_promotie": 1,
       "reducere_mediana": null,
       "reducere_max": null,
@@ -120,7 +120,7 @@
     {
       "slug": "copii",
       "nume": "Copii & familie",
-      "magazine": 30,
+      "magazine": 28,
       "cu_promotie": 2,
       "reducere_mediana": null,
       "reducere_max": null,
@@ -156,7 +156,7 @@
     {
       "slug": "financiar",
       "nume": "Financiar & asigurări",
-      "magazine": 12,
+      "magazine": 7,
       "cu_promotie": 0,
       "reducere_mediana": null,
       "reducere_max": null,
@@ -165,7 +165,7 @@
     {
       "slug": "animale",
       "nume": "Pet shop",
-      "magazine": 16,
+      "magazine": 15,
       "cu_promotie": 0,
       "reducere_mediana": null,
       "reducere_max": null,
