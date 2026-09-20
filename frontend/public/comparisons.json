@@ -115,14 +115,14 @@
     "stats1": {
       "promotii_active": 0,
       "coduri": "—",
-      "logo": "https://www.google.com/s2/favicons?domain=temu.com&sz=128",
-      "url_afiliat": "https://www.temu.com"
+      "logo": null,
+      "url_afiliat": "https://temu.com"
     },
     "stats2": {
       "promotii_active": 0,
       "coduri": "—",
-      "logo": "https://www.google.com/s2/favicons?domain=shein.com&sz=128",
-      "url_afiliat": "https://www.shein.com"
+      "logo": null,
+      "url_afiliat": "https://shein.com"
     },
     "promo1": [],
     "promo2": [],
@@ -352,8 +352,8 @@
     "stats2": {
       "promotii_active": 0,
       "coduri": "—",
-      "logo": "https://www.google.com/s2/favicons?domain=temu.com&sz=128",
-      "url_afiliat": "https://www.temu.com"
+      "logo": null,
+      "url_afiliat": "https://temu.com"
     },
     "promo1": [],
     "promo2": [],
@@ -426,8 +426,8 @@
     "stats2": {
       "promotii_active": 0,
       "coduri": "—",
-      "logo": "https://www.google.com/s2/favicons?domain=hostinger.ro&sz=128",
-      "url_afiliat": "https://www.hostinger.ro"
+      "logo": null,
+      "url_afiliat": "https://hostinger.ro"
     },
     "promo1": [],
     "promo2": [],
@@ -657,8 +657,8 @@
     "stats2": {
       "promotii_active": 0,
       "coduri": "—",
-      "logo": "https://www.google.com/s2/favicons?domain=shein.com&sz=128",
-      "url_afiliat": "https://www.shein.com"
+      "logo": null,
+      "url_afiliat": "https://shein.com"
     },
     "promo1": [],
     "promo2": [],

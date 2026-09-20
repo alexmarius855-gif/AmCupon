@@ -1,23 +1,9 @@
 {
-  "data": "2026-09-19",
-  "data_afisata": "19 septembrie 2026",
-  "titlu": "Radarul AmCupon — 19 septembrie 2026",
-  "intro": "Am trecut azi prin ofertele active si am pastrat doar ce merita. Iese in evidenta Nadula si Klaiyihair, dar mai jos ai selectia completa, verificata de noi. Toate codurile sunt testate; cele cu termen scurt le-am marcat.",
+  "data": "2026-09-20",
+  "data_afisata": "20 septembrie 2026",
+  "titlu": "Radarul AmCupon — 20 septembrie 2026",
+  "intro": "Am trecut azi prin ofertele active si am pastrat doar ce merita. Iese in evidenta Klaiyihair si Booking, dar mai jos ai selectia completa, verificata de noi. Toate codurile sunt testate; cele cu termen scurt le-am marcat.",
   "picks": [
-    {
-      "scor": 100,
-      "magazin": "nadula.com",
-      "nume_afisat": "Nadula",
-      "categorie": "Marketplace",
-      "categorie_slug": "marketplace",
-      "logo_url": "https://www.google.com/s2/favicons?domain=nadula.com&sz=128",
-      "titlu": "Today Feels Different Sale Up To $100 Off With Code:GOLD",
-      "descriere": "Nadula Hair Today Feels Different Sale Up To $100 Off With Code:GOLD",
-      "cod": "GOLD",
-      "url": "https://amcupon.ro/cod-reducere/nadula.com",
-      "zile_ramase": 1,
-      "take": "Grabeste-te: expira in 1 zi. Oferta verificata — buna daca te incadrezi in categorie."
-    },
     {
       "scor": 100,
       "magazin": "klaiyihair.com",
@@ -29,8 +15,8 @@
       "descriere": "21% OFF Sitewide — Code: KLAIYI21 $35 OFF Over $159 — Code: KLAIYI35 $60 OFF Over $255 — Code: KLAIYI60 Free Gift: Necklace Set",
       "cod": "KLAIYI21",
       "url": "https://amcupon.ro/cod-reducere/klaiyihair.com",
-      "zile_ramase": 2,
-      "take": "Grabeste-te: expira in 2 zile. Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 1,
+      "take": "Grabeste-te: expira in 1 zi. Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
       "scor": 100,
@@ -43,6 +29,20 @@
       "descriere": "Book your stay at Regal Hotel from just HK$1,188 per room, per night, including accommodation in a Deluxe Room. Terms and Conditions:\n- Offer valid until 25/09/2026. - Other restrictions may apply.",
       "cod": "Moon26",
       "url": "https://amcupon.ro/cod-reducere/booking.regalhotel.com",
+      "zile_ramase": 6,
+      "take": "Oferta verificata — buna daca te incadrezi in categorie."
+    },
+    {
+      "scor": 75,
+      "magazin": "carturesti.ro",
+      "nume_afisat": "Carturesti",
+      "categorie": "Cărți & Educație",
+      "categorie_slug": "carti-educatie",
+      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11380/medium/11380.png",
+      "titlu": "Back to School 2026",
+      "descriere": "Școlărești la Cărturești a sosit!\n\nȘtim că urmează perioada în care ghiozdanul devine piesa de rezistență a fiecărei zile, așa că am pregătit o ofertă back to school irezistibilă: ai 20% reducere la cumpărături de peste 200 de lei din selecția specială de rechizite și ghiozdane!\n\nȘi pentru că ești la Cărturești, înseamnă că vrei și să dăruiești. Între 11 august și 28 septembrie, cumpărăturile din Școlărești la Cărturești vor susține inițiativa byron de a dezvolta și echipa biblioteci dedicate ti",
+      "cod": "",
+      "url": "https://amcupon.ro/cod-reducere/carturesti.ro",
       "zile_ramase": 7,
       "take": "Oferta verificata — buna daca te incadrezi in categorie."
     },
@@ -57,7 +57,21 @@
       "descriere": "Quber Savings",
       "cod": "QUBER10",
       "url": "https://amcupon.ro/cod-reducere/orbitmobile.com",
-      "zile_ramase": 407,
+      "zile_ramase": 406,
+      "take": "Oferta verificata — buna daca te incadrezi in categorie."
+    },
+    {
+      "scor": 70,
+      "magazin": "laavooextensions.com",
+      "nume_afisat": "Laavooextensions",
+      "categorie": "Marketplace",
+      "categorie_slug": "marketplace",
+      "logo_url": "https://www.google.com/s2/favicons?domain=laavooextensions.com&sz=128",
+      "titlu": "Fall Sale 15% off",
+      "descriere": "Fall Sale 15% off",
+      "cod": "F15",
+      "url": "https://amcupon.ro/cod-reducere/laavooextensions.com",
+      "zile_ramase": 16,
       "take": "Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
@@ -71,21 +85,7 @@
       "descriere": "Unlock Savings with 30% Off: Use Code: 30CVLIFE",
       "cod": "30CVLIFE",
       "url": "https://amcupon.ro/cod-reducere/cvlife.com",
-      "zile_ramase": 255,
-      "take": "Oferta verificata — buna daca te incadrezi in categorie."
-    },
-    {
-      "scor": 70,
-      "magazin": "wecreat.com",
-      "nume_afisat": "Wecreat",
-      "categorie": "Electronice & IT",
-      "categorie_slug": "electronice",
-      "logo_url": "https://www.google.com/s2/favicons?domain=wecreat.com&sz=128",
-      "titlu": "5% off for all wecreat products!-code:WECREAT",
-      "descriere": "5% off for all wecreat products! including accessories",
-      "cod": "WECREAT",
-      "url": "https://amcupon.ro/cod-reducere/wecreat.com",
-      "zile_ramase": 103,
+      "zile_ramase": 254,
       "take": "Oferta verificata — buna daca te incadrezi in categorie."
     }
   ],
