@@ -111,7 +111,7 @@ def utilizabil(p):
             and (p.get("title") or "").strip() and titlu_romanesc(p))
 
 
-def cheie_dedup(titlu):
+def cheie_dedup(titlu, cuvinte=6):
     """Acelasi produs in 5 dimensiuni nu inseamna 5 recomandari.
 
     Taiem cifrele si unitatile din titlu: „Anvelopa Iarna Kumho WP52 205/45R17 88V"
@@ -121,10 +121,10 @@ def cheie_dedup(titlu):
     """
     t = re.sub(r"\d+([.,]\d+)?", "", (titlu or "").lower())
     t = re.sub(r"[^a-zA-Zăâîșț ]", " ", t)
-    return " ".join(t.split()[:6])
+    return " ".join(t.split()[:cuvinte])
 
 
-def selecteaza(produse, n):
+def selecteaza(produse, n, cuvinte_dedup=6):
     """N produse care acopera intervalul de pret, nu N produse aproape identice.
 
     Cititorul care cauta „cele mai bune X" are un buget in cap. Un top in care toate
@@ -134,7 +134,7 @@ def selecteaza(produse, n):
     """
     vazute, unice = set(), []
     for p in sorted(produse, key=lambda x: x["price"]):
-        k = cheie_dedup(p["title"])
+        k = cheie_dedup(p["title"], cuvinte_dedup)
         if k in vazute:
             continue
         vazute.add(k)
@@ -233,6 +233,13 @@ def main():
     ap.add_argument("--n", type=int, default=10)
     ap.add_argument("--titlu")
     ap.add_argument("--out")
+    ap.add_argument("--dedup", type=int, default=6, metavar="N",
+                    help=("cate cuvinte din titlu definesc un produs DISTINCT (default 6). "
+                          "Scade-l la 2-3 in categorii unde acelasi produs apare in zeci de "
+                          "variante. Masurat pe categoria Cadouri personalizate: 348 de produse "
+                          "erau de fapt ~12 tipuri (aceeasi agenda pentru 40 de profesii, "
+                          "aceeasi caricatura pentru 60 de meserii). Cu 6 cuvinte, un Top 10 "
+                          "ar fi iesit cu zece agende identice."))
     ap.add_argument("--lista", action="store_true", help="arata categoriile disponibile si iese")
     a = ap.parse_args()
 
@@ -262,7 +269,7 @@ def main():
         print("Incearca un filtru mai larg (--lista arata ce exista).")
         return 1
 
-    alese = selecteaza(pool, a.n)
+    alese = selecteaza(pool, a.n, a.dedup)
     preturi = [p["price"] for p in alese]
     print(f"\n'{eticheta}': {len(pool)} produse in pool -> {len(alese)} alese")
     print(f"acoperire pret: {min(preturi):.0f} - {max(preturi):.0f} lei")

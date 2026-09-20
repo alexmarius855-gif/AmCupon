@@ -63,7 +63,13 @@ function formatDate(dateStr: string): string {
   });
 }
 
-/** Parseza bold + linkuri markdown inline: **bold** si [text](url) */
+/** Parseza bold + linkuri markdown inline: **bold** si [text](url)
+ *
+ * 20.09.2026 — bold-ul se parseaza acum RECURSIV. Inainte, `**[22 lei](url)**` iesea
+ * literal ca „<strong>[22 lei](url)</strong>": regexul prindea intai bold-ul si trata
+ * continutul ca text simplu. Tiparul apare in orice articol care pune pretul ca link
+ * ingrosat — adica in fiecare articol de tip „Top N", unde pretul E butonul.
+ */
 function parseInline(text: string, baseKey: string): React.ReactNode[] {
   const nodes: React.ReactNode[] = [];
   const regex = /\*\*(.*?)\*\*|\[([^\]]+)\]\(([^)]+)\)/g;
@@ -73,7 +79,7 @@ function parseInline(text: string, baseKey: string): React.ReactNode[] {
   while ((match = regex.exec(text)) !== null) {
     if (match.index > last) nodes.push(text.slice(last, match.index));
     if (match[1] !== undefined) {
-      nodes.push(<strong key={`${baseKey}-b${i}`}>{match[1]}</strong>);
+      nodes.push(<strong key={`${baseKey}-b${i}`}>{parseInline(match[1], `${baseKey}-b${i}`)}</strong>);
     } else if (match[2] && match[3]) {
       const isExt = match[3].startsWith("http");
       nodes.push(
@@ -110,6 +116,50 @@ function renderContent(content: string) {
         </ul>
       );
     }
+    // ── Tabel Markdown ────────────────────────────────────────────────────────
+    // 20.09.2026: parserul nu stia tabele deloc, deci un tabel comparativ aparea ca
+    // text brut plin de „|". Conteaza pentru ca in articolele de tip „Top N" tabelul
+    // e primul lucru dupa introducere: pe telefon, decizia se ia din el, nu din cele
+    // 2.000 de cuvinte de dedesubt.
+    // Recunoastem forma minima — prima linie antet, a doua linie separator (|---|---|).
+    // Nu implementam aliniere (`:---:`): n-o foloseste niciun articol, iar un parser
+    // care face mai mult decat e folosit devine cod mort care se strica in tacere.
+    const linii = block.split("\n").filter((l) => l.trim().startsWith("|"));
+    if (linii.length >= 3 && /^\|[\s:|-]+\|$/.test(linii[1].trim())) {
+      const celule = (l: string) =>
+        l.trim().replace(/^\||\|$/g, "").split("|").map((c) => c.trim());
+      const antet = celule(linii[0]);
+      const randuri = linii.slice(2).map(celule);
+      return (
+        // Tabelul isi are propriul scroll orizontal: pe 360px latime, patru coloane
+        // nu incap, iar fara asta ar impinge TOATA pagina in scroll lateral.
+        <div key={key} className="my-6 overflow-x-auto">
+          <table className="w-full text-sm border-collapse">
+            <thead>
+              <tr className="border-b border-[#2a2f36]">
+                {antet.map((c, j) => (
+                  <th key={j} className="text-left font-bold text-[#ffffff] py-2.5 px-3 whitespace-nowrap">
+                    {parseInline(c, `${key}-th${j}`)}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {randuri.map((r, ri) => (
+                <tr key={ri} className="border-b border-[#1f2329]">
+                  {r.map((c, ci) => (
+                    <td key={ci} className="py-2.5 px-3 text-[#c9ced5] align-top">
+                      {parseInline(c, `${key}-td${ri}-${ci}`)}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
+    }
+
     return <p key={key} className="text-[#c9ced5] leading-relaxed my-3">{parseInline(block, key)}</p>;
   });
 }

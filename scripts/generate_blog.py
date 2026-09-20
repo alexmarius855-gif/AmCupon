@@ -521,9 +521,37 @@ def main():
     if sterse:
         print(f"Prune: sterse {sterse} articole lunare expirate (duplicate).")
 
+    # ── Articole scrise de mana — supravietuiesc oricarei regenerari ──────────
+    # Acelasi tipar ca `data/extra_merchants.json` pentru magazine: un fisier separat,
+    # re-injectat la fiecare rulare, ca sa nu depinda de ce face generatorul automat.
+    #
+    # Fara asta, un articol manual ar fi pierdut in doua feluri, ambele tacute:
+    #   1. pruning-ul de mai sus, daca slug-ul are luna in el;
+    #   2. plafonul MAX_POSTS, cand articolele noi generate zilnic il impinge afara —
+    #      si asta se intampla oricum, fiindca sortarea e pe data descrescator.
+    # Injectia se face DUPA pruning si INAINTE de taierea la MAX_POSTS, iar articolele
+    # manuale sunt scoase din numaratoarea plafonului: nu ele trebuie sa cedeze locul.
+    manual_path = os.path.join(repo_root, "data", "articole_manuale.json")
+    manuale = []
+    if os.path.exists(manual_path):
+        try:
+            with open(manual_path, encoding="utf-8") as f:
+                manuale = json.load(f)
+            sluguri_manuale = {m["slug"] for m in manuale}
+            posts = [p for p in posts if p.get("slug") not in sluguri_manuale]
+            noi = [p for p in noi if p.get("slug") not in sluguri_manuale]
+            print(f"Articole manuale reinjectate: {len(manuale)}")
+        except (OSError, ValueError, KeyError) as e:
+            # Un articol manual stricat nu are voie sa opreasca generarea blogului.
+            print(f"AVERTISMENT: articole_manuale.json nu a putut fi citit ({e}) — continui fara.")
+            manuale = []
+
     # Insereaza articolele noi la inceput si limiteaza la MAX_POSTS
     all_posts = noi + posts
     all_posts = sorted(all_posts, key=lambda x: x["date"], reverse=True)[:MAX_POSTS]
+    all_posts = manuale + [p for p in all_posts if p.get("slug") not in
+                           {m["slug"] for m in manuale}]
+    all_posts = sorted(all_posts, key=lambda x: x["date"], reverse=True)
 
     with open(blog_path, "w", encoding="utf-8") as f:
         json.dump(all_posts, f, ensure_ascii=False, indent=2)
