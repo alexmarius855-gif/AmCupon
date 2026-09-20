@@ -116,6 +116,14 @@ function renderContent(content: string) {
         </ul>
       );
     }
+    // ── Separator orizontal ───────────────────────────────────────────────────
+    // 20.09.2026: „---" se afisa ca text brut. Fiecare articol de tip „Top N" are
+    // cate 13 separatoare (unul intre produse), deci pe pagina apareau 13 siruri de
+    // liniute in mijlocul continutului. Vazut in browser, nu dedus din cod.
+    if (/^-{3,}$/.test(block.trim())) {
+      return <hr key={key} className="my-8 border-0 border-t border-[#1f2329]" />;
+    }
+
     // ── Tabel Markdown ────────────────────────────────────────────────────────
     // 20.09.2026: parserul nu stia tabele deloc, deci un tabel comparativ aparea ca
     // text brut plin de „|". Conteaza pentru ca in articolele de tip „Top N" tabelul
@@ -290,7 +298,21 @@ export default async function ArticolPage({
             <span className="bg-[#ddf93c] text-[#0c1000] text-xs font-bold px-3 py-1 rounded-full">{post.category}</span>
           </div>
 
-          <h1 className="text-2xl md:text-3xl font-black text-[#ffffff] leading-tight mb-4">{post.title}</h1>
+          {/*
+            Titlul din date include sufixul „ | AmCupon.ro" — necesar in <title>, unde
+            ajuta la recunoasterea tabului si in SERP, dar gresit in <h1>.
+
+            20.09.2026, vazut in browser: h1-ul afisa „Iluminat interior: 10 corpuri, de
+            la 69 la 519 lei, si cum se combina | AmCupon.ro". Nimeni nu scrie numele
+            site-ului in titlul vizibil al articolului, iar pentru Google h1-ul e unul
+            dintre cele mai puternice semnale de subiect — cu sufixul acolo, diluam
+            cuvintele-cheie cu numele propriu pe 405 din cele 469 de articole.
+
+            `<title>` si Open Graph raman neatinse: acolo sufixul isi are rostul.
+          */}
+          <h1 className="text-2xl md:text-3xl font-black text-[#ffffff] leading-tight mb-4">
+            {post.title.replace(/\s*\|\s*AmCupon\.ro\s*$/i, "")}
+          </h1>
 
           <div className="flex items-center gap-4 text-sm text-[#9399a0] mb-8 pb-6 border-b border-[#1f2329]">
             <div className="flex items-center gap-2 shrink-0">
@@ -315,8 +337,17 @@ export default async function ArticolPage({
             )}
           </div>
 
-          <div className="relative rounded-xl overflow-hidden mb-8 shadow-sm h-64 md:h-80">
-            <Image src={post.cover} alt={post.title} fill className="object-cover" priority sizes="(max-width: 768px) 100vw, 768px" />
+          {/*
+            Raportul containerului = raportul imaginii (1200x630), nu inaltime fixa.
+
+            20.09.2026, vazut in browser: cu `h-64` si `object-cover`, containerul avea
+            raport ~1.56 fata de 1.90 al coverului, iar CSS-ul decupa lateral. Pe articolul
+            de iluminat, titlul din imagine aparea taiat la ambele capete: „minat interior:
+            10 corpuri, de la 519 lei". Coverurile astea sunt generate CU TEXT pe ele
+            (scripts/generate_article_covers.py), deci orice decupare taie cuvinte.
+          */}
+          <div className="relative rounded-xl overflow-hidden mb-8 shadow-sm aspect-[1200/630]">
+            <Image src={post.cover} alt={post.title} fill className="object-contain" priority sizes="(max-width: 768px) 100vw, 768px" />
           </div>
 
           <p className="text-lg text-[#c9ced5] font-medium leading-relaxed mb-8 p-5 bg-[#14181c] rounded-xl border-l-4 border-[#ddf93c] border-y border-r border-y-[#e2e8f0] border-r-[#e2e8f0]">

@@ -43,11 +43,6 @@ function maxDiscount(promotii: Promotie[]): number {
   return max;
 }
 
-function parseCashback(comision: string): number {
-  const m = comision?.match(/(\d+(?:\.\d+)?)\s*%/);
-  return m ? parseFloat(m[1]) : 0;
-}
-
 function ScorBar({ value, max = 100, color = "bg-[#ddf93c]" }: { value: number; max?: number; color?: string }) {
   return (
     <div className="h-2 bg-[#1f2329] rounded-full overflow-hidden">
@@ -59,7 +54,6 @@ function ScorBar({ value, max = 100, color = "bg-[#ddf93c]" }: { value: number; 
 function MagazinCard({ m, onRemove, onSwap, position }: { m: Magazin; onRemove: () => void; onSwap?: () => void; position: number }) {
   const [imgOk, setImgOk] = useState(true);
   const discount  = maxDiscount(m.promotii);
-  const cashback  = parseCashback(m.comision);
   const nrCoduri  = m.promotii.filter(p => p.cod_cupon).length;
   const nrOferte  = m.promotii.length;
   // 07.09: era `m.procent_succes || (m.are_promotie ? 78 : 50)` — ambele fabricate.
@@ -139,14 +133,17 @@ function MagazinCard({ m, onRemove, onSwap, position }: { m: Magazin; onRemove: 
           <ScorBar value={discount} max={80} color="bg-[#ddf93c]" />
         </div>
 
-        {/* Cashback */}
-        <div>
-          <div className="flex justify-between items-center mb-1.5">
-            <span className="text-xs font-semibold text-[#9399a0] uppercase tracking-wide">Cashback</span>
-            <span className={`text-sm font-black ${cashback > 0 ? "text-[#ddf93c]" : "text-[#c9ced5]"}`}>{cashback > 0 ? `${cashback}%` : "—"}</span>
-          </div>
-          <ScorBar value={cashback} max={20} color="bg-[#ddf93c]" />
-        </div>
+        {/*
+          20.09.2026 — ELIMINAT cardul „Cashback".
+          Valoarea venea din `parseCashback(m.comision)`, adica din COMISIONUL NOSTRU,
+          afisat cu bara de progres ca si cum ar fi bani pe care ii primeste cumparatorul.
+          Pe 07.09 am reparat „Trust Score" din acelasi fisier si am ratat cardul de
+          alaturi — a patra reaparitie a aceleiasi fabricatii (03.07 pe site, 08.08 in
+          newsletter, 07.09 in /comparatii si pe Facebook, acum aici).
+          Regula, scrisa in docs/LECTII-TEHNICE.md #10: comisionul nu se publica
+          NICIODATA ca beneficiu al cumparatorului. Nimic nu il inlocuieste — nu exista
+          un cashback real de aratat.
+        */}
 
         {/* Deal Score — calculat din date reale, nu din procent_succes (fabricat). Eticheta
             nu mai spune „Trust Score": nu masuram increderea in magazin, ci cat de buna e
@@ -165,7 +162,6 @@ function MagazinCard({ m, onRemove, onSwap, position }: { m: Magazin; onRemove: 
           {m.cod_cupon   && <span className="text-[10px] font-bold bg-[#ddf93c]/15 text-[#c3dd2c] px-2 py-0.5 rounded-full">Cod cupon</span>}
           {m.are_promotie&& <span className="text-[10px] font-bold bg-emerald-500/15 text-emerald-300 px-2 py-0.5 rounded-full">Ofertă activă</span>}
           {m.trend > 2   && <span className="text-[10px] font-bold bg-red-500/15 text-red-300 px-2 py-0.5 rounded-full">🔥 Trending</span>}
-          {cashback > 0  && <span className="text-[10px] font-bold bg-[#ddf93c]/15 text-[#c3dd2c] px-2 py-0.5 rounded-full">Cashback</span>}
         </div>
 
         {/* Top promotii */}
@@ -299,19 +295,10 @@ function ComparatorInner() {
     ? totalScore(magazine[0]) >= totalScore(magazine[1]) ? magazine[0] : magazine[1]
     : null;
 
+  // Hero-ul s-a mutat in ComparatorClient, in afara barierei Suspense (vezi nota de
+  // acolo). Aici ramane doar ce depinde de query string.
   return (
-    <div className="min-h-screen bg-[#06080b]">
-      {/* Hero */}
-      <div className="bg-[#14181c] text-[#ffffff] py-10 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-xs font-bold text-[#ddf93c] uppercase tracking-widest mb-3">INSTRUMENT NOU</p>
-          <h1 className="text-3xl md:text-4xl font-black tracking-tight mb-3">Comparator Magazine</h1>
-          <p className="text-[#c9ced5] text-base max-w-xl mx-auto">
-            Compară două magazine online side-by-side — oferte, coduri, cashback și trust score
-          </p>
-        </div>
-      </div>
-
+    <div>
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Winner banner */}
         {winner && (
@@ -387,8 +374,35 @@ function ComparatorInner() {
 
 export default function ComparatorClient() {
   return (
-    <Suspense fallback={<div className="min-h-screen bg-[#06080b] flex items-center justify-center"><div className="animate-pulse text-[#c9ced5]">Se încarcă...</div></div>}>
-      <ComparatorInner />
-    </Suspense>
+    <div className="min-h-screen bg-[#06080b]">
+      {/*
+        Hero-ul sta IN AFARA lui <Suspense>, si asta conteaza.
+
+        20.09.2026 — pana acum toata pagina era inauntru, iar `useSearchParams()` din
+        ComparatorInner forteaza randare pe client. Rezultatul: HTML-ul livrat continea
+        DOAR fallback-ul „Se incarca...". Verificat pe build: `<h1>` aparea de 0 ori in
+        pagina, iar „Comparator Magazine" exista numai in <title> si in payload-ul RSC.
+        Pentru Google, /comparator era o pagina fara continut.
+
+        Documentatia Next (node_modules/next/dist/docs, use-search-params) cere exact
+        asta: bariera Suspense se pune in jurul componentei care CITESTE parametrii, nu
+        in jurul paginii — in exemplul lor, <nav> ramane afara. Titlul si descrierea nu
+        depind de query string, deci nu au ce cauta dupa bariera.
+      */}
+      <div className="bg-[#14181c] text-[#ffffff] py-10 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-xs font-bold text-[#ddf93c] uppercase tracking-widest mb-3">INSTRUMENT NOU</p>
+          <h1 className="text-3xl md:text-4xl font-black tracking-tight mb-3">Comparator Magazine</h1>
+          <p className="text-[#c9ced5] text-base max-w-xl mx-auto">
+            Compară două magazine online side-by-side: oferte active, coduri de reducere
+            și Deal Score calculat din date reale.
+          </p>
+        </div>
+      </div>
+
+      <Suspense fallback={<div className="py-20 flex items-center justify-center"><div className="animate-pulse text-[#c9ced5]">Se încarcă...</div></div>}>
+        <ComparatorInner />
+      </Suspense>
+    </div>
   );
 }

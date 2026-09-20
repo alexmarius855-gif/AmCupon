@@ -35,10 +35,28 @@ export interface StatisticiFeed {
  */
 export const MIN_PRODUSE_PENTRU_STATISTICI = 5;
 
+/**
+ * Sub 1 leu, pretul din feed nu e pretul pe care il platesti.
+ *
+ * 20.09.2026 — pagina bazarulonline.ro afisa „Cel mai ieftin: 0 lei". Cauza: 26 de
+ * produse din feed au pret intre 0 si 1 leu, iar 21 sunt la acelasi magazin, toate
+ * marcate EN-GROSS: „Aeroterma auto — 0,32 lei", „Biscuiti Top Cookies 28 g (4x60)
+ * — 0,37 lei". Sunt preturi UNITARE dintr-un bax, nu pretul de raft.
+ *
+ * Filtrul `> 0` de mai jos le lasa sa treaca (0,32 e pozitiv), iar afisarea fara
+ * zecimale le rotunjeste la „0 lei" — deci pagina anunta un pret pe care nimeni nu
+ * il poate plati. In Romania, unde transportul singur trece de 15 lei, un produs de
+ * retail online sub 1 leu e aproape sigur o eroare de feed, nu o oferta.
+ *
+ * Nu formatam cu zecimale ca sa „arate corect": „0,32 lei" ar fi la fel de fals,
+ * doar mai precis. Excludem valoarea din statistica.
+ */
+export const PRET_MINIM_CREDIBIL = 1;
+
 export function statisticiFeed(produse: ProdusStat[]): StatisticiFeed | null {
   const preturi = produse
     .map((p) => p.price)
-    .filter((p): p is number => typeof p === "number" && p > 0)
+    .filter((p): p is number => typeof p === "number" && p >= PRET_MINIM_CREDIBIL)
     .sort((a, b) => a - b);
 
   if (preturi.length < MIN_PRODUSE_PENTRU_STATISTICI) return null;
