@@ -1,6 +1,6 @@
 {
   "generat": "2026-09-21",
-  "total_magazine": 957,
+  "total_magazine": 956,
   "cu_promotie": 89,
   "cu_cod_real": 29,
   "doar_oferta": 60,
@@ -28,6 +28,15 @@
       "esantion": 4
     },
     {
+      "slug": "marketplace",
+      "nume": "Marketplace",
+      "magazine": 193,
+      "cu_promotie": 11,
+      "reducere_mediana": 35,
+      "reducere_max": 60,
+      "esantion": 7
+    },
+    {
       "slug": "electronice",
       "nume": "Electronice & IT",
       "magazine": 80,
@@ -48,19 +57,10 @@
     {
       "slug": "fashion",
       "nume": "Fashion",
-      "magazine": 82,
+      "magazine": 81,
       "cu_promotie": 11,
       "reducere_mediana": 20,
       "reducere_max": 70,
-      "esantion": 7
-    },
-    {
-      "slug": "marketplace",
-      "nume": "Marketplace",
-      "magazine": 193,
-      "cu_promotie": 11,
-      "reducere_mediana": 20,
-      "reducere_max": 50,
       "esantion": 7
     },
     {

@@ -9619,7 +9619,7 @@
         "descriere": "New Autumn and winter collection",
         "cod_cupon": "",
         "landing_page": "https://fitory.com/collections/new-arrivals",
-        "zile_ramase": 374,
+        "zile_ramase": 373,
         "expira": "2027-09-30",
         "sursa": "impact_deals_api"
       }
@@ -9988,7 +9988,7 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 101,
+    "zile_ramase": 13,
     "promotii": [
       {
         "nume": "Redodo 8% Discount Code – Save on All Products",
@@ -9997,6 +9997,15 @@
         "landing_page": "https://www.redodopower.de",
         "zile_ramase": 101,
         "expira": "2026-12-31",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "Redodo Prime Day Sale-ES",
+        "descriere": "Prime Day bei Redodo – Frühzugang mit bis zu 55% Rabatt, gefolgt von Top-Angeboten mit bis zu 60% Rabatt.",
+        "cod_cupon": "",
+        "landing_page": "https://redodopower.es/pages/oferta-prime-day",
+        "zile_ramase": 13,
+        "expira": "2026-10-05",
         "sursa": "impact_deals_api"
       }
     ],

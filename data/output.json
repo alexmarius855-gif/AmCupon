@@ -1868,7 +1868,7 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 101,
+    "zile_ramase": 14,
     "promotii": [
       {
         "nume": "Redodo 8% Discount Code – Save on All Products",
@@ -1877,6 +1877,15 @@
         "landing_page": "https://redodopowerde.sjv.io/c/7401119/3864250/49142",
         "zile_ramase": 101,
         "expira": "2026-12-31",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "Redodo Prime Day Sale-ES",
+        "descriere": "Prime Day bei Redodo – Frühzugang mit bis zu 55% Rabatt, gefolgt von Top-Angeboten mit bis zu 60% Rabatt.",
+        "cod_cupon": "",
+        "landing_page": "https://redodopowerde.sjv.io/c/7401119/3864250/49142",
+        "zile_ramase": 14,
+        "expira": "2026-10-05",
         "sursa": "impact_deals_api"
       }
     ],
@@ -17855,31 +17864,6 @@
     "scor_final": 0.0,
     "program_id": 10345,
     "unique_code": "ce9f8cb2c"
-  },
-  {
-    "magazin": "ietraditionala.com",
-    "url": "https://www.ietraditionala.com",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ietraditionala.com",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/3951/medium/3951.png",
-    "categorie": "Fashion",
-    "categorie_slug": "fashion",
-    "comision": "13.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-09-21",
-    "scor_final": 0.0,
-    "program_id": 3754,
-    "unique_code": "98cc861a7"
   },
   {
     "magazin": "alecoair.ro",
