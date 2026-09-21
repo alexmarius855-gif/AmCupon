@@ -459,12 +459,12 @@
     "nume": "Redodopower",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
-    "cod": "",
-    "procent": "-8%",
-    "zile_ramase": 101,
+    "cod": "PRIME10",
+    "procent": "-55%",
+    "zile_ramase": 24,
     "link": "https://amcupon.ro/cod-reducere/redodopower.de",
-    "story": "🛍️ -8% la Redodopower!\nFara cod necesar 👇\namcupon.ro/cod-reducere/redodopower.de",
-    "perete": "🛍️ -8% la Redodopower — activ acum\n\n✅ Redodo 8% Discount Code – Save on All Products\nℹ️ Enjoy 8% off all Redodo products with this exclusive discount code. Help your audience save on Li...\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/redodopower.de",
+    "story": "🛍️ -55% la Redodopower!\nCod: PRIME10 👇\namcupon.ro/cod-reducere/redodopower.de",
+    "perete": "🛍️ -55% la Redodopower — activ acum\n\n✅ Redodo Prime Day Sale\nℹ️ Prime Day bei Redodo – Frühzugang mit bis zu 55% Rabatt, gefolgt von Top-Angeboten mit bis zu 60%...\n🎟️ Cod verificat: PRIME10\n\n👉 Iei codul + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/redodopower.de",
     "hashtags": "#reduceri #marketplace #oferte #romania #redodopower"
   },
   {
@@ -676,19 +676,6 @@
     "hashtags": "#reduceri #cosmetice #beauty #skincare #romania #hairify"
   },
   {
-    "magazin": "padelboost.co.uk",
-    "nume": "Padelboost",
-    "categorie": "Sport & Fitness",
-    "categorie_slug": "sport",
-    "cod": "BLEAGUE5",
-    "procent": "-5%",
-    "zile_ramase": 8,
-    "link": "https://amcupon.ro/cod-reducere/padelboost.co.uk",
-    "story": "🏃 -5% la Padelboost!\nCod: BLEAGUE5 👇\namcupon.ro/cod-reducere/padelboost.co.uk",
-    "perete": "🏃 -5% la Padelboost — activ acum\n\n✅ 5% Off Discount Code\nℹ️ Code: BLEAGUE5\nType: Amount off order\nDetails\n\n    All customers\n    For Online Store\n    5% off ...\n🎟️ Cod verificat: BLEAGUE5\n\n👉 Iei codul + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/padelboost.co.uk",
-    "hashtags": "#reduceri #sport #fitness #outdoor #romania #padelboost"
-  },
-  {
     "magazin": "incaltamintelamoda.ro",
     "nume": "Incaltamintelamoda",
     "categorie": "Fashion",
@@ -700,6 +687,19 @@
     "story": "👗 Reducere Incaltamintelamoda azi!\nCod: LAMODA 👇\namcupon.ro/cod-reducere/incaltamintelamoda.ro",
     "perete": "👗 Reducere activa la Incaltamintelamoda\n\n✅ Reducere la încălțăminte bărbătească din piele naturală – Cod LAMODA\nℹ️ Descoperă colecția Incaltamintelamoda.ro și profită de ofertă folosind codul LAMODA. Toate produs...\n🎟️ Cod verificat: LAMODA\n\n👉 Iei codul + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/incaltamintelamoda.ro",
     "hashtags": "#reduceri #moda #fashion #haine #romania #incaltamintelamoda"
+  },
+  {
+    "magazin": "padelboost.co.uk",
+    "nume": "Padelboost",
+    "categorie": "Sport & Fitness",
+    "categorie_slug": "sport",
+    "cod": "BLEAGUE5",
+    "procent": "-5%",
+    "zile_ramase": 8,
+    "link": "https://amcupon.ro/cod-reducere/padelboost.co.uk",
+    "story": "🏃 -5% la Padelboost!\nCod: BLEAGUE5 👇\namcupon.ro/cod-reducere/padelboost.co.uk",
+    "perete": "🏃 -5% la Padelboost — activ acum\n\n✅ 5% Off Discount Code\nℹ️ Code: BLEAGUE5\nType: Amount off order\nDetails\n\n    All customers\n    For Online Store\n    5% off ...\n🎟️ Cod verificat: BLEAGUE5\n\n👉 Iei codul + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/padelboost.co.uk",
+    "hashtags": "#reduceri #sport #fitness #outdoor #romania #padelboost"
   },
   {
     "magazin": "otter.ro",

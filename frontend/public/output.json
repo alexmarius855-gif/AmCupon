@@ -1329,7 +1329,7 @@
     "magazin": "vilagale.com",
     "url": "http://www.vilagale.com",
     "url_afiliat": "https://vilagale.pxf.io/c/7401119/2087327/26071",
-    "logo_url": "",
+    "logo_url": "https://www.google.com/s2/favicons?domain=vilagale.com&sz=128",
     "categorie": "Călătorii",
     "categorie_slug": "calatorii",
     "comision": "6% comision",
@@ -1493,7 +1493,7 @@
     "magazin": "atzavarahotel.com",
     "url": "http://www.atzavarahotel.com/",
     "url_afiliat": "https://atzavarahotelspa.sjv.io/c/7401119/3040677/36939",
-    "logo_url": "",
+    "logo_url": "https://www.google.com/s2/favicons?domain=atzavarahotel.com&sz=128",
     "categorie": "Călătorii",
     "categorie_slug": "calatorii",
     "comision": "4% comision",
@@ -1867,7 +1867,7 @@
     "sales_number": 0,
     "trend": 0,
     "are_promotie": true,
-    "cod_cupon": false,
+    "cod_cupon": true,
     "zile_ramase": 14,
     "promotii": [
       {
@@ -1877,6 +1877,15 @@
         "landing_page": "https://redodopowerde.sjv.io/c/7401119/3864250/49142",
         "zile_ramase": 101,
         "expira": "2026-12-31",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "Redodo Prime Day Sale",
+        "descriere": "Prime Day bei Redodo – Frühzugang mit bis zu 55% Rabatt, gefolgt von Top-Angeboten mit bis zu 60% Rabatt.",
+        "cod_cupon": "PRIME10",
+        "landing_page": "https://redodopowerde.sjv.io/c/7401119/3864250/49142",
+        "zile_ramase": 24,
+        "expira": "2026-10-15",
         "sursa": "impact_deals_api"
       },
       {
@@ -2523,7 +2532,7 @@
     "scor_final": 30.0,
     "program_id": 633,
     "unique_code": "7e537fc0d",
-    "folosit_de": 417
+    "folosit_de": 288
   },
   {
     "magazin": "regata.ro",
@@ -2603,7 +2612,7 @@
     "scor_final": 30.0,
     "program_id": 9812,
     "unique_code": "5abfb2edd",
-    "folosit_de": 632
+    "folosit_de": 424
   },
   {
     "magazin": "doctorshield.ro",
@@ -2762,7 +2771,7 @@
     "scor_final": 30.0,
     "program_id": 10020,
     "unique_code": "401ba6e73",
-    "folosit_de": 250
+    "folosit_de": 66
   },
   {
     "magazin": "autobob.ro",
@@ -2886,7 +2895,7 @@
     "scor_final": 30.0,
     "program_id": 3530,
     "unique_code": "46f8cd5eb",
-    "folosit_de": 65
+    "folosit_de": 738
   },
   {
     "magazin": "jojofashion.ro",
@@ -3019,7 +3028,7 @@
     "scor_final": 30.0,
     "program_id": 6135,
     "unique_code": "d42a9ce58",
-    "folosit_de": 725
+    "folosit_de": 232
   },
   {
     "magazin": "sneakerit.ro",
@@ -3064,7 +3073,7 @@
     "scor_final": 30.0,
     "program_id": 10347,
     "unique_code": "0c3054359",
-    "folosit_de": 152
+    "folosit_de": 122
   },
   {
     "magazin": "112coffee.com",
@@ -3452,7 +3461,7 @@
     "magazin": "wr.st-asu.com",
     "url": "https://wr.st-asu.com/company",
     "url_afiliat": "https://stasupteltd.sjv.io/c/7401119/2375998/29798",
-    "logo_url": "",
+    "logo_url": "https://www.google.com/s2/favicons?domain=wr.st&sz=128",
     "categorie": "Software & Digital",
     "categorie_slug": "software",
     "comision": "200% comision",
@@ -3775,7 +3784,7 @@
     "magazin": "justfitpro.com",
     "url": "https://www.justfitpro.com",
     "url_afiliat": "https://justfit.sjv.io/c/7401119/1989829/24460",
-    "logo_url": "https://icons.duckduckgo.com/ip3/justfitpro.com.ico",
+    "logo_url": "https://www.google.com/s2/favicons?domain=justfitpro.com&sz=128",
     "categorie": "Software & Digital",
     "categorie_slug": "software",
     "comision": "45% comision",
@@ -4637,7 +4646,7 @@
     "magazin": "proxy-cheap.com",
     "url": "https://proxy-cheap.com",
     "url_afiliat": "https://lietparkasuab.pxf.io/c/7401119/3790254/47563",
-    "logo_url": "",
+    "logo_url": "https://www.google.com/s2/favicons?domain=proxy-cheap.com&sz=128",
     "categorie": "Software & Digital",
     "categorie_slug": "software",
     "comision": "25% comision",
@@ -6168,7 +6177,7 @@
     "magazin": "zereanlabs.com",
     "url": "https://zereanlabs.com",
     "url_afiliat": "https://zereanlimited.pxf.io/c/7401119/3755413/47303",
-    "logo_url": "",
+    "logo_url": "https://www.google.com/s2/favicons?domain=zereanlabs.com&sz=128",
     "categorie": "Sănătate & Farmacie",
     "categorie_slug": "sanatate",
     "comision": "15% comision",
@@ -6300,7 +6309,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 194,
+    "folosit_de": 619,
     "procent_succes": 80,
     "exclusiv": false,
     "platforma": "2performant",
@@ -6569,7 +6578,7 @@
     "magazin": "hidemy.name",
     "url": "https://hidemy.name",
     "url_afiliat": "https://www.awin1.com/cread.php?awinmid=5887918&awinaffid=101829567&clickref=",
-    "logo_url": "https://icons.duckduckgo.com/ip3/hidemy.name.ico",
+    "logo_url": "https://www.google.com/s2/favicons?domain=hidemy.name&sz=128",
     "categorie": "Software & Digital",
     "categorie_slug": "software",
     "comision": "Variabil",
@@ -7181,7 +7190,7 @@
     "magazin": "sidi.com",
     "url": "https://sidi.com/",
     "url_afiliat": "https://sidisportsrl.pxf.io/c/7401119/3830038/50060",
-    "logo_url": "https://icons.duckduckgo.com/ip3/sidi.com.ico",
+    "logo_url": "https://www.google.com/s2/favicons?domain=sidi.com&sz=128",
     "categorie": "Sport & Fitness",
     "categorie_slug": "sport",
     "comision": "6% comision",
@@ -7914,7 +7923,7 @@
     "magazin": "solaireresort.com",
     "url": "http://www.solaireresort.com/",
     "url_afiliat": "https://sola.sjv.io/c/7401119/3882333/52192",
-    "logo_url": "",
+    "logo_url": "https://www.google.com/s2/favicons?domain=solaireresort.com&sz=128",
     "categorie": "Călătorii",
     "categorie_slug": "calatorii",
     "comision": "6% comision",
@@ -8069,7 +8078,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 418,
+    "folosit_de": 391,
     "procent_succes": 80,
     "exclusiv": false,
     "platforma": "2performant",
@@ -8129,7 +8138,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 378,
+    "folosit_de": 780,
     "procent_succes": 80,
     "exclusiv": false,
     "platforma": "2performant",
@@ -8139,7 +8148,7 @@
     "magazin": "medimfarm.ro",
     "url": "https://www.medimfarm.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.medimfarm.ro",
-    "logo_url": "",
+    "logo_url": "https://www.google.com/s2/favicons?domain=medimfarm.ro&sz=128",
     "categorie": "Sănătate & Farmacie",
     "categorie_slug": "sanatate",
     "comision": "Variabil",
@@ -8353,7 +8362,7 @@
     "magazin": "en.beachscape.com.mx",
     "url": "http://en.beachscape.com.mx",
     "url_afiliat": "https://beachscapekinhavillas.pxf.io/c/7401119/3322288/16708",
-    "logo_url": "",
+    "logo_url": "https://www.google.com/s2/favicons?domain=en.beachscape.com&sz=128",
     "categorie": "Călătorii",
     "categorie_slug": "calatorii",
     "comision": "4% comision",
@@ -8591,7 +8600,7 @@
     "magazin": "villabalbi.it",
     "url": "http://www.villabalbi.it/en-GB",
     "url_afiliat": "https://grandhotelvillabalbi.pxf.io/c/7401119/3887146/28232",
-    "logo_url": "https://icons.duckduckgo.com/ip3/villabalbi.it.ico",
+    "logo_url": "https://www.google.com/s2/favicons?domain=villabalbi.it&sz=128",
     "categorie": "Călătorii",
     "categorie_slug": "calatorii",
     "comision": "4% comision",
@@ -8617,7 +8626,7 @@
     "magazin": "hotelesgdlplaza.com.mx",
     "url": "http://www.hotelesgdlplaza.com.mx/en",
     "url_afiliat": "https://guadalajaraplazahoteles.sjv.io/c/7401119/2207772/28173",
-    "logo_url": "",
+    "logo_url": "https://www.google.com/s2/favicons?domain=hotelesgdlplaza.com.mx&sz=128",
     "categorie": "Călătorii",
     "categorie_slug": "calatorii",
     "comision": "4% comision",
@@ -8903,7 +8912,7 @@
     "magazin": "trybinge.tv",
     "url": "https://www.trybinge.tv",
     "url_afiliat": "https://bingemoviestv.pxf.io/c/7401119/2994345/35950",
-    "logo_url": "",
+    "logo_url": "https://www.google.com/s2/favicons?domain=trybinge.tv&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "comision": "$8.00 per conversie",
@@ -8984,7 +8993,7 @@
     "magazin": "technitya.com",
     "url": "https://technitya.com",
     "url_afiliat": "https://technitya.sjv.io/c/7401119/565398/9372",
-    "logo_url": "",
+    "logo_url": "https://www.google.com/s2/favicons?domain=technitya.com&sz=128",
     "categorie": "Electronice & IT",
     "categorie_slug": "electronice",
     "comision": "Variabil",
@@ -10414,7 +10423,7 @@
     "magazin": "aqua-mail.com",
     "url": "https://www.aqua-mail.com/",
     "url_afiliat": "https://aquamailinc.sjv.io/c/7401119/3379088/44822",
-    "logo_url": "",
+    "logo_url": "https://www.google.com/s2/favicons?domain=aqua-mail.com&sz=128",
     "categorie": "Software & Digital",
     "categorie_slug": "software",
     "comision": "Variabil",
@@ -11402,7 +11411,7 @@
     "magazin": "eresin.com.tr",
     "url": "http://www.eresin.com.tr",
     "url_afiliat": "https://eresin.sjv.io/c/7401119/2041554/25489",
-    "logo_url": "",
+    "logo_url": "https://www.google.com/s2/favicons?domain=eresin.com.tr&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "comision": "Variabil",
@@ -11896,7 +11905,7 @@
     "magazin": "ai.oobyte.net",
     "url": "https://ai.oobyte.net/",
     "url_afiliat": "https://oobyte.pxf.io/c/7401119/3253528/41310",
-    "logo_url": "https://icons.duckduckgo.com/ip3/ai.oobyte.net.ico",
+    "logo_url": "https://www.google.com/s2/favicons?domain=ai.oobyte.net&sz=128",
     "categorie": "Software & Digital",
     "categorie_slug": "software",
     "comision": "Variabil",
@@ -12234,7 +12243,7 @@
     "magazin": "eu.sihoo.com",
     "url": "https://eu.sihoo.com",
     "url_afiliat": "https://sihoode.sjv.io/c/7401119/2068993/25863",
-    "logo_url": "https://icons.duckduckgo.com/ip3/eu.sihoo.com.ico",
+    "logo_url": "https://www.google.com/s2/favicons?domain=eu.sihoo.com&sz=128",
     "categorie": "Casă & Grădină",
     "categorie_slug": "casa-gradina",
     "comision": "Variabil",
@@ -12312,7 +12321,7 @@
     "magazin": "experiences.travel.rakuten.com",
     "url": "http://experiences.travel.rakuten.com",
     "url_afiliat": "https://rakutentravelexperiences.sjv.io/c/7401119/3959497/22812",
-    "logo_url": "",
+    "logo_url": "https://www.google.com/s2/favicons?domain=experiences.travel.rakuten&sz=128",
     "categorie": "Călătorii",
     "categorie_slug": "calatorii",
     "comision": "Variabil",
@@ -12520,7 +12529,7 @@
     "magazin": "eu.htvront.com",
     "url": "https://eu.htvront.com/",
     "url_afiliat": "https://htvronteu.pxf.io/c/7401119/3989932/56322",
-    "logo_url": "https://icons.duckduckgo.com/ip3/eu.htvront.com.ico",
+    "logo_url": "https://www.google.com/s2/favicons?domain=eu.htvront.com&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "comision": "Variabil",
@@ -12676,7 +12685,7 @@
     "magazin": "shop.oobyte.net",
     "url": "https://shop.oobyte.net",
     "url_afiliat": "https://oobyte.pxf.io/c/7401119/3439368/41310",
-    "logo_url": "https://icons.duckduckgo.com/ip3/shop.oobyte.net.ico",
+    "logo_url": "https://www.google.com/s2/favicons?domain=shop.oobyte.net&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "comision": "$4.00 per conversie",
@@ -13352,7 +13361,7 @@
     "magazin": "opheliaeternity.com",
     "url": "https://opheliaeternity.com",
     "url_afiliat": "https://www.awin1.com/cread.php?awinmid=128211&awinaffid=101829567&clickref=",
-    "logo_url": "",
+    "logo_url": "https://www.google.com/s2/favicons?domain=opheliaeternity.com&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "comision": "Variabil",
@@ -13638,7 +13647,7 @@
     "magazin": "cronjager.com",
     "url": "https://cronjager.com",
     "url_afiliat": "https://www.awin1.com/cread.php?awinmid=98661&awinaffid=101829567&clickref=",
-    "logo_url": "",
+    "logo_url": "https://www.google.com/s2/favicons?domain=cronjager.com&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "comision": "Variabil",
@@ -14002,7 +14011,7 @@
     "magazin": "unaitalianhospitality.com",
     "url": "https://www.unaitalianhospitality.com/en",
     "url_afiliat": "https://unaitalianhospitality.pxf.io/c/7401119/3942268/54325",
-    "logo_url": "",
+    "logo_url": "https://www.google.com/s2/favicons?domain=unaitalianhospitality.com&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "comision": "Variabil",
@@ -14104,7 +14113,7 @@
     "magazin": "villassol.com",
     "url": "https://www.villassol.com/en",
     "url_afiliat": "https://villassol.pxf.io/c/7401119/3981773/55886",
-    "logo_url": "",
+    "logo_url": "https://www.google.com/s2/favicons?domain=villassol.com&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "comision": "Variabil",
@@ -14200,7 +14209,7 @@
     "magazin": "propnext.com",
     "url": "https://propnext.com",
     "url_afiliat": "https://propnextlrd.pxf.io/c/7401119/3945354/54459",
-    "logo_url": "",
+    "logo_url": "https://www.google.com/s2/favicons?domain=propnext.com&sz=128",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "comision": "Variabil",
@@ -14573,7 +14582,7 @@
     "scor_final": 30.0,
     "program_id": 7875,
     "unique_code": "9abbbd0e9",
-    "folosit_de": 696
+    "folosit_de": 262
   },
   {
     "magazin": "answear.ro",
@@ -14693,7 +14702,7 @@
     "scor_final": 30.0,
     "program_id": 1677,
     "unique_code": "07b5f0fed",
-    "folosit_de": 486
+    "folosit_de": 646
   },
   {
     "magazin": "kinderauto.ro",
@@ -14813,7 +14822,7 @@
     "scor_final": 30.0,
     "program_id": 2615,
     "unique_code": "bb3071a7d",
-    "folosit_de": 786
+    "folosit_de": 343
   },
   {
     "magazin": "fornello.ro",
@@ -14874,7 +14883,7 @@
     "scor_final": 30.0,
     "program_id": 825,
     "unique_code": "da1148931",
-    "folosit_de": 576
+    "folosit_de": 492
   },
   {
     "magazin": "bazarulonline.ro",
@@ -15685,7 +15694,7 @@
     "scor_final": 30.0,
     "program_id": 7990,
     "unique_code": "9659b7651",
-    "folosit_de": 491
+    "folosit_de": 730
   },
   {
     "magazin": "maprofi.ro",
@@ -15971,7 +15980,7 @@
     "scor_final": 30.0,
     "program_id": 9495,
     "unique_code": "affcc3193",
-    "folosit_de": 183
+    "folosit_de": 322
   },
   {
     "magazin": "erotic24.ro",
@@ -16099,6 +16108,31 @@
     "unique_code": "9bf544b4b"
   },
   {
+    "magazin": "pfarma.ro",
+    "url": "https://www.pfarma.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.pfarma.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11176/medium/11176.png",
+    "categorie": "Sănătate & Farmacie",
+    "categorie_slug": "sanatate",
+    "comision": "5.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-09-21",
+    "scor_final": 0.0,
+    "program_id": 10175,
+    "unique_code": "8ded2f65b"
+  },
+  {
     "magazin": "daar.ro",
     "url": "https://daar.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdaar.ro",
@@ -16122,6 +16156,31 @@
     "scor_final": 0.0,
     "program_id": 10526,
     "unique_code": "b8e07a1e9"
+  },
+  {
+    "magazin": "xxxlutz.ro",
+    "url": "https://xxxlutz.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fxxxlutz.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/12238/medium/12238.png",
+    "categorie": "Casă & Grădină",
+    "categorie_slug": "casa-gradina",
+    "comision": "3.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-09-21",
+    "scor_final": 0.0,
+    "program_id": 10544,
+    "unique_code": "556733a1b"
   },
   {
     "magazin": "okoshazak.hu",
@@ -16784,7 +16843,7 @@
     "scor_final": 30.0,
     "program_id": 12159,
     "unique_code": "2c9f51768",
-    "folosit_de": 132
+    "folosit_de": 24
   },
   {
     "magazin": "karcher.com",
@@ -16820,7 +16879,7 @@
     "scor_final": 30.0,
     "program_id": 8194,
     "unique_code": "fef3ef7dc",
-    "folosit_de": 332
+    "folosit_de": 51
   },
   {
     "magazin": "nemira.ro",
@@ -17131,7 +17190,7 @@
     "scor_final": 30.0,
     "program_id": 12974,
     "unique_code": "28caed879",
-    "folosit_de": 669
+    "folosit_de": 720
   },
   {
     "magazin": "kamin.ro",
@@ -18109,6 +18168,31 @@
     "unique_code": "ce9f8cb2c"
   },
   {
+    "magazin": "ietraditionala.com",
+    "url": "https://www.ietraditionala.com",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ietraditionala.com",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/3951/medium/3951.png",
+    "categorie": "Fashion",
+    "categorie_slug": "fashion",
+    "comision": "13.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-09-21",
+    "scor_final": 0.0,
+    "program_id": 3754,
+    "unique_code": "98cc861a7"
+  },
+  {
     "magazin": "alecoair.ro",
     "url": "https://alecoair.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Falecoair.ro%2F",
@@ -18817,7 +18901,7 @@
     "scor_final": 50.0,
     "program_id": 935,
     "unique_code": "cb588f07f",
-    "folosit_de": 168
+    "folosit_de": 508
   },
   {
     "magazin": "chicbijoux.ro",
@@ -19937,7 +20021,7 @@
     "scor_final": 30.0,
     "program_id": 13063,
     "unique_code": "54f9cf4f5",
-    "folosit_de": 751
+    "folosit_de": 402
   },
   {
     "magazin": "shinefashion.ro",
@@ -20073,7 +20157,7 @@
     "scor_final": 30.0,
     "program_id": 10076,
     "unique_code": "f9db13aad",
-    "folosit_de": 653
+    "folosit_de": 646
   },
   {
     "magazin": "mirano.ro",
@@ -20274,6 +20358,31 @@
     "scor_final": 0.0,
     "program_id": 4209,
     "unique_code": "41db07e03"
+  },
+  {
+    "magazin": "hemerama.com",
+    "url": "https://www.hemerama.com",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.hemerama.com",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/10760/medium/10760.jpg",
+    "categorie": "Beauty & Îngrijire",
+    "categorie_slug": "beauty",
+    "comision": "10.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-09-21",
+    "scor_final": 0.0,
+    "program_id": 9836,
+    "unique_code": "7a09efb89"
   },
   {
     "magazin": "brico.ro",
@@ -21009,7 +21118,7 @@
     "scor_final": 30.0,
     "program_id": 1664,
     "unique_code": "80ef38da6",
-    "folosit_de": 547
+    "folosit_de": 768
   },
   {
     "magazin": "armansport.ro",
@@ -21212,6 +21321,31 @@
     "unique_code": "f659ee6d5"
   },
   {
+    "magazin": "redgoblin.ro",
+    "url": "https://www.redgoblin.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.redgoblin.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9856/medium/9856.png",
+    "categorie": "Marketplace",
+    "categorie_slug": "marketplace",
+    "comision": "5.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-09-21",
+    "scor_final": 0.0,
+    "program_id": 8016,
+    "unique_code": "fbf67d9a2"
+  },
+  {
     "magazin": "edituradiana.ro",
     "url": "https://www.edituradiana.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.edituradiana.ro%2F",
@@ -21245,7 +21379,7 @@
     "scor_final": 30.0,
     "program_id": 2662,
     "unique_code": "313128750",
-    "folosit_de": 198
+    "folosit_de": 260
   },
   {
     "magazin": "nano-auto.ro",
@@ -21481,7 +21615,7 @@
     "scor_final": 50.0,
     "program_id": 13062,
     "unique_code": "ec028ffc2",
-    "folosit_de": 194
+    "folosit_de": 36
   },
   {
     "magazin": "casamob.ro",
@@ -22592,7 +22726,7 @@
     "scor_final": 30.0,
     "program_id": 10085,
     "unique_code": "4ef912004",
-    "folosit_de": 30
+    "folosit_de": 279
   },
   {
     "magazin": "republicabio.ro",
@@ -23678,7 +23812,7 @@
     "scor_final": 30.0,
     "program_id": 11639,
     "unique_code": "ea9693b50",
-    "folosit_de": 276
+    "folosit_de": 31
   },
   {
     "magazin": "reelken.com",
@@ -24289,7 +24423,7 @@
     "scor_final": 50.0,
     "program_id": 12981,
     "unique_code": "dbde49f67",
-    "folosit_de": 462
+    "folosit_de": 422
   },
   {
     "magazin": "lesami.ro",
@@ -24617,10 +24751,10 @@
     "unique_code": "58a2d65ea"
   },
   {
-    "magazin": "premiumchocolate.ro",
-    "url": "https://www.premiumchocolate.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.premiumchocolate.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/12016/medium/12016.png",
+    "magazin": "chocolatemakers.ro",
+    "url": "https://www.chocolatemakers.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.chocolatemakers.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14573/medium/14573.png",
     "categorie": "Mâncare & Băuturi",
     "categorie_slug": "mancare-bauturi",
     "comision": "10.0",
@@ -24767,6 +24901,51 @@
     "unique_code": "33bcbf97c"
   },
   {
+    "magazin": "incaltamintelamoda.ro",
+    "url": "https://www.incaltamintelamoda.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.incaltamintelamoda.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14335/medium/14335.jpg",
+    "categorie": "Fashion",
+    "categorie_slug": "fashion",
+    "comision": "12.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": true,
+    "zile_ramase": 267,
+    "promotii": [
+      {
+        "nume": "Reduceri de până la 47% la încălțăminte din piele naturală",
+        "descriere": "Profită acum de reduceri de până la 47% la încălțămintea din piele naturală pentru bărbați! Descoperă modele moderne, confortabile și rezistente, fabricate în România, potrivite atât pentru ținutele casual, cât și pentru cele elegante.\n\n✔ Reduceri de până la 47%\n✔ Piele naturală de calitate\n✔ Produse fabricate în România\n✔ Confort și durabilitate pentru purtare zilnică\n✔ Stocuri limitate la modelele aflate în promoție\nAlege perechea preferată și economisește acum!",
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.incaltamintelamoda.ro%2F",
+        "zile_ramase": 267,
+        "expira": "2027-06-15",
+        "sursa": "csv_import"
+      },
+      {
+        "nume": "Reducere la încălțăminte bărbătească din piele naturală – Cod LAMODA",
+        "descriere": "Descoperă colecția Incaltamintelamoda.ro și profită de ofertă folosind codul LAMODA. Toate produsele sunt realizate din piele naturală și fabricate în România, fiind create pentru confort, rezistență și un aspect elegant.\n\n✔ Încălțăminte bărbătească din piele naturală\n✔ Produse fabricate în România\n✔ Modele potrivite pentru ținute casual și elegante\n✔ Livrare rapidă din stoc\n✔ Raport excelent calitate-preț\n\nFolosește codul LAMODA la finalizarea comenzii și bucură-te de oferta specială disponibil",
+        "cod_cupon": "LAMODA",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.incaltamintelamoda.ro",
+        "zile_ramase": 3557,
+        "expira": "2036-06-17",
+        "sursa": "csv_import"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-09-21",
+    "scor_final": 50.0,
+    "program_id": 13016,
+    "unique_code": "b0d815997",
+    "folosit_de": 25
+  },
+  {
     "magazin": "cloud10beauty.com",
     "url": "https://www.cloud10beauty.com",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.cloud10beauty.com",
@@ -24825,7 +25004,7 @@
     "scor_final": 50.0,
     "program_id": 13074,
     "unique_code": "c10249894",
-    "folosit_de": 43
+    "folosit_de": 441
   },
   {
     "magazin": "sofipex.ro",
@@ -24861,7 +25040,7 @@
     "scor_final": 30.0,
     "program_id": 13147,
     "unique_code": "598e2955a",
-    "folosit_de": 291
+    "folosit_de": 410
   },
   {
     "magazin": "onixbox.ro",
@@ -26189,10 +26368,35 @@
     "unique_code": "7d98e12de"
   },
   {
+    "magazin": "erosvita.ro",
+    "url": "https://erosvita.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ferosvita.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14567/medium/14567.png",
+    "categorie": "Marketplace",
+    "categorie_slug": "marketplace",
+    "comision": "2.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-09-21",
+    "scor_final": 0.0,
+    "program_id": 13246,
+    "unique_code": "b2d32b25a"
+  },
+  {
     "magazin": "220-volti.ro",
     "url": "https://220-volti.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F220-volti.ro%2Fsuper-oferte-de-sezon%2F",
-    "logo_url": "https://www.google.com/s2/favicons?domain=220-volti.ro&sz=128",
+    "logo_url": "",
     "categorie": "Online Mall",
     "categorie_slug": "online-mall",
     "comision": "",
@@ -26216,8 +26420,8 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 359,
-    "procent_succes": 81,
+    "folosit_de": 339,
+    "procent_succes": 73,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-09-21",
@@ -26230,7 +26434,7 @@
     "magazin": "fantasyforge.ro",
     "url": "https://fantasyforge.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffantasyforge.ro%2Fcollections%2Fpromo-1-1",
-    "logo_url": "https://www.google.com/s2/favicons?domain=fantasyforge.ro&sz=128",
+    "logo_url": "",
     "categorie": "Online Mall",
     "categorie_slug": "online-mall",
     "comision": "",
@@ -26254,59 +26458,12 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 45,
-    "procent_succes": 75,
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-09-21",
-    "scor_final": 30.0,
-    "program_id": "",
-    "unique_code": "",
-    "sursa_import": "csv"
-  },
-  {
-    "magazin": "incaltamintelamoda.ro",
-    "url": "https://incaltamintelamoda.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.incaltamintelamoda.ro%2F",
-    "logo_url": "https://www.google.com/s2/favicons?domain=incaltamintelamoda.ro&sz=128",
-    "categorie": "Fashion",
-    "categorie_slug": "fashion",
-    "comision": "",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "medium",
-    "canal_recomandat": "Coupon, Content",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": true,
-    "zile_ramase": 267,
-    "promotii": [
-      {
-        "nume": "Reduceri de până la 47% la încălțăminte din piele naturală",
-        "descriere": "Profită acum de reduceri de până la 47% la încălțămintea din piele naturală pentru bărbați! Descoperă modele moderne, confortabile și rezistente, fabricate în România, potrivite atât pentru ținutele casual, cât și pentru cele elegante.\n\n✔ Reduceri de până la 47%\n✔ Piele naturală de calitate\n✔ Produse fabricate în România\n✔ Confort și durabilitate pentru purtare zilnică\n✔ Stocuri limitate la modelele aflate în promoție\nAlege perechea preferată și economisește acum!",
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.incaltamintelamoda.ro%2F",
-        "zile_ramase": 267,
-        "expira": "2027-06-15",
-        "sursa": "csv_import"
-      },
-      {
-        "nume": "Reducere la încălțăminte bărbătească din piele naturală – Cod LAMODA",
-        "descriere": "Descoperă colecția Incaltamintelamoda.ro și profită de ofertă folosind codul LAMODA. Toate produsele sunt realizate din piele naturală și fabricate în România, fiind create pentru confort, rezistență și un aspect elegant.\n\n✔ Încălțăminte bărbătească din piele naturală\n✔ Produse fabricate în România\n✔ Modele potrivite pentru ținute casual și elegante\n✔ Livrare rapidă din stoc\n✔ Raport excelent calitate-preț\n\nFolosește codul LAMODA la finalizarea comenzii și bucură-te de oferta specială disponibil",
-        "cod_cupon": "LAMODA",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.incaltamintelamoda.ro",
-        "zile_ramase": 3557,
-        "expira": "2036-06-17",
-        "sursa": "csv_import"
-      }
-    ],
-    "folosit_de": 44,
+    "folosit_de": 371,
     "procent_succes": 81,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-09-21",
-    "scor_final": 50.0,
+    "scor_final": 30.0,
     "program_id": "",
     "unique_code": "",
     "sursa_import": "csv"
