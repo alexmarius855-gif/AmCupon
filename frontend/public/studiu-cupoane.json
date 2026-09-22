@@ -1,10 +1,10 @@
 {
-  "generat": "2026-09-21",
-  "total_magazine": 962,
-  "cu_promotie": 89,
+  "generat": "2026-09-22",
+  "total_magazine": 961,
+  "cu_promotie": 90,
   "cu_cod_real": 30,
-  "doar_oferta": 59,
-  "procent_cu_promotie": 9.3,
+  "doar_oferta": 60,
+  "procent_cu_promotie": 9.4,
   "procent_cu_cod": 3.1,
   "reducere_mediana_generala": 20.0,
   "magazine_cu_procent_declarat": 60,
@@ -12,7 +12,7 @@
     {
       "slug": "beauty",
       "nume": "Beauty & îngrijire",
-      "magazine": 69,
+      "magazine": 68,
       "cu_promotie": 6,
       "reducere_mediana": 45.0,
       "reducere_max": 70,
@@ -31,7 +31,7 @@
       "slug": "marketplace",
       "nume": "Marketplace",
       "magazine": 195,
-      "cu_promotie": 11,
+      "cu_promotie": 12,
       "reducere_mediana": 35,
       "reducere_max": 60,
       "esantion": 7
@@ -39,7 +39,7 @@
     {
       "slug": "electronice",
       "nume": "Electronice & IT",
-      "magazine": 80,
+      "magazine": 81,
       "cu_promotie": 8,
       "reducere_mediana": 27.5,
       "reducere_max": 75,
@@ -138,7 +138,7 @@
     {
       "slug": "auto-moto",
       "nume": "Auto & moto",
-      "magazine": 25,
+      "magazine": 24,
       "cu_promotie": 1,
       "reducere_mediana": null,
       "reducere_max": null,
