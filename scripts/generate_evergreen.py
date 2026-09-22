@@ -80,7 +80,7 @@ Acelasi sac de hrana poate varia cu 20-30% intre magazine. Verifica intotdeauna 
 
 ## Concluzie
 
-Animalul tau merita produse de calitate — iar tu meriti sa nu platesti pretul intreg. Secretul e simplu: cumperi acelasi lucru, dar cu cod de reducere si la momentul potrivit. [AmCupon.ro](/categorii/pet-supplies) centralizeaza ofertele active la magazinele de animale, verificate zilnic.
+Animalul tau merita produse de calitate — iar tu meriti sa nu platesti pretul intreg. Secretul e simplu: cumperi acelasi lucru, dar cu cod de reducere si la momentul potrivit. [AmCupon.ro](/categorii/pet-supplies) centralizeaza ofertele active la magazinele de animale, actualizate zilnic.
 
 [**Vezi toate ofertele pentru animale de companie →**](/categorii/pet-supplies)""",
     },
@@ -133,7 +133,7 @@ Cumparand de la editura (Litera, Humanitas), eviti adaosul si prinzi reduceri la
 
 ## Concluzie
 
-Cartile online sunt mult mai ieftine daca stii unde si cand sa cauti. [AmCupon.ro](/categorii/books) centralizeaza codurile de reducere active de la toate librariile — verificate zilnic — ca sa nu platesti niciodata pretul intreg.
+Cartile online sunt mult mai ieftine daca stii unde si cand sa cauti. [AmCupon.ro](/categorii/books) centralizeaza codurile de reducere active de la toate librariile — actualizate zilnic — ca sa nu platesti niciodata pretul intreg.
 
 [**Vezi toate ofertele la carti →**](/categorii/books)""",
     },
@@ -183,7 +183,7 @@ Mobilierul si electrocasnicele variaza mult intre magazine. Verifica 2-3 surse i
 
 ## Concluzie
 
-Amenajarile nu trebuie sa coste o avere. [AmCupon.ro](/categorii/home-garden) aduna codurile de reducere active de la magazinele de casa si gradina — verificate zilnic.
+Amenajarile nu trebuie sa coste o avere. [AmCupon.ro](/categorii/home-garden) aduna codurile de reducere active de la magazinele de casa si gradina — actualizate zilnic.
 
 [**Vezi toate ofertele casa si gradina →**](/categorii/home-garden)""",
     },
@@ -233,7 +233,7 @@ Proteinele si suplimentele sunt mai ieftine la pachete mari, mai ales in campani
 
 ## Concluzie
 
-Echipamentul sportiv de calitate nu trebuie sa fie scump. [AmCupon.ro](/categorii/sports-outdoors) aduna codurile active de la magazinele de sport — verificate zilnic.
+Echipamentul sportiv de calitate nu trebuie sa fie scump. [AmCupon.ro](/categorii/sports-outdoors) aduna codurile active de la magazinele de sport — actualizate zilnic.
 
 [**Vezi toate ofertele sport →**](/sport)""",
     },
@@ -286,7 +286,7 @@ In ziua de Black Friday:
 
 ## Concluzie
 
-Black Friday e o oportunitate reala de a economisi sute de lei — daca esti pregatit. [AmCupon.ro](/black-friday) aduna toate codurile si ofertele active de Black Friday, verificate zilnic.
+Black Friday e o oportunitate reala de a economisi sute de lei — daca esti pregatit. [AmCupon.ro](/black-friday) aduna toate codurile si ofertele active de Black Friday, actualizate zilnic.
 
 [**Vezi ofertele Black Friday →**](/black-friday)""",
     },
@@ -347,7 +347,7 @@ Cumparaturile online au avantajul returului gratuit la multe magazine. FashionDa
 
 ## Concluzie
 
-Cumparaturile fashion online in Romania sunt mai ieftine ca niciodata daca stii unde sa cauti. [AmCupon.ro](/toate-magazinele) centralizeaza toate codurile de reducere active — verificate zilnic — asa ca nu platesti niciodata pretul intreg.
+Cumparaturile fashion online in Romania sunt mai ieftine ca niciodata daca stii unde sa cauti. [AmCupon.ro](/toate-magazinele) centralizeaza toate codurile de reducere active — actualizate zilnic — asa ca nu platesti niciodata pretul intreg.
 
 [**Vezi toate codurile fashion active →**](/categorii/fashion)""",
     },
@@ -713,7 +713,7 @@ eMAG ofera adesea rate fara dobanda la electronice mari. Combina cu un voucher d
     {
         "slug": "reduceri-cosmetice-parfumuri-online-romania",
         "title": f"Reduceri Cosmetice si Parfumuri Romania {AN}",
-        "excerpt": f"Comparatie completa Notino vs Douglas vs Sephora Romania {AN}. Unde gasesti parfumuri si cosmetice mai ieftin + coduri reducere active verificate zilnic.",
+        "excerpt": f"Comparatie completa Notino vs Douglas vs Sephora Romania {AN}. Unde gasesti parfumuri si cosmetice mai ieftin + coduri reducere active actualizate zilnic.",
         "category": "Frumusete",
         "tip": "ghid",
         "content": f"""## Cosmetice si parfumuri online in Romania — Ghid {AN}

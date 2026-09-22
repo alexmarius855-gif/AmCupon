@@ -12,6 +12,101 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 22.09.2026, partea a doua (homepage: ce vede omul in primele secunde — NEPUSHED):**
+- **Cel mai scump bug vizual de pana acum, si era LIVE.** Sub titlul „PRODUSE CU REDUCERE",
+  homepage-ul deschidea **Auto-Moto cu o nacela cu senile IMER de 562.749 lei**, urmata de inca
+  trei utilaje de constructii; Sport cu un cort de evenimente de 40.000 lei; Copii cu carucioare
+  Thule de 5.595 lei; Frumusete cu sase parfumuri Memo Paris identice ca pret.
+  **Cauza:** sortarea era `(-discount_pct, -price)`, dar masurat pe feed **doar 84 din 20.188 de
+  produse (0,4%)** au `discount_pct` real — deci pentru 99,6% prima cheie era egala si ordinea
+  cadea integral pe **pret descrescator**. Titlul promitea reduceri, grila livra cel mai scump
+  utilaj industrial din feed.
+- **Reparat in `generate_homepage_data.py`**, cu patru reguli in ordine (ordinea conteaza, si am
+  gresit-o o data — plafonul per magazin aplicat DUPA sortarea pe pret aduce inapoi exact
+  extremele pe care tocmai le-ai taiat):
+  1. `familie_produs()` — o singura bucata per familie. Dedup-ul vechi era pe (titlu, pret), deci
+     nu prindea variantele, care difera SI prin titlu SI prin pret. Cheia ignora orice token cu
+     cifre („10X26m", „4X10", „75 ml", „8GB") — acelea sunt exact ce diferentiaza variantele.
+  2. taie peste percentila 85 a categoriei (echipamente profesionale ratacite in feed de retail),
+     doar cand categoria are ≥20 de produse, si doar daca nu goleste categoria;
+  3. abia apoi sorteaza: reducere reala intai, apoi pret;
+  4. maxim 3 produse per magazin.
+  **Masurat dupa:** Auto-Moto **562.749 → 616-2.099 lei**, Copii 5.595 → 10-150 lei, Frumusete
+  1.310 → 134-176 lei; magazine diferite per categorie **1-2 → 6-9**.
+- **Ordinea sectiunilor.** Butonul „Coduri active acum" din hero sare la `#promotii`, care era
+  **a 11-a sectiune**; „Oferta zilei" era a 6-a, dupa grila de categorii, marquee si statistici.
+  Cine intra dupa un cod trebuia sa treaca prin tot. „Oferta zilei" e acum imediat dupa bara de
+  categorii — masurat pe pagina randata, la **718px**, adica in primul ecran.
+- **Hero compactat**: padding `pt-20 pb-20 md:pt-28` → `pt-12 pb-10 md:pt-16`, H1 de pe trei
+  randuri pe doua, si scoasa repetitia — aceeasi cifra aparea de trei ori (pill, paragraf,
+  trust row).
+- **„Verificate zilnic" — afirmatia scoasa din tot ce e vizibil.** Era marcata in acest fisier
+  din 19.09 ca ramasa de facut „intr-o trecere separata, pe tot site-ul". Masurat: **88 de
+  aparitii in 55 de fisiere TSX** + 20 in 9 scripturi de continut (blog, evergreen, newsletter,
+  bannere). Nimeni nu testeaza codurile in cos, deci „verificate" e o afirmatie despre o actiune
+  pe care n-o facem; **„actualizate" e adevarat si verificabil** — pipeline-ul ruleaza de trei
+  ori pe zi. Inlocuite **61 in text vizibil + 20 in generatoare**.
+  **NU am atins cele 36 din `title:`/`description:`** — sunt ~1.000 de pagini indexate in Google
+  si o schimbare de titlu afecteaza ranking-ul. **Decizia lui Alex**, ca si pana acum.
+- **`NewsletterPopup`**: Escape nu inchidea dialogul (singurele iesiri cereau mouse-ul), si
+  lipseau `role="dialog"`, `aria-modal`, `aria-label` pe butonul de inchidere. Adaugate.
+  Declansarea (25s / exit-intent / 55% scroll) e rezonabila si **nu a fost schimbata**.
+- **Verificat**: `tsc --noEmit` exit 0 (redirect in fisier), `npm run build` exit 0, garda
+  `--html` pe **1.752 de pagini**: 0 probleme. Pe HTML-ul generat, „verificate zilnic" in text
+  vizibil: **1 aparitie ramasa din 400 de pagini** (un articol de blog vechi — se rescrie la
+  urmatoarea rulare a pipeline-ului, generatorul e deja reparat).
+- **RAMAS, masurat dar neatins**: homepage-ul are **16.422px (~18 ecrane)**. Pe 08.08 fusese adus
+  de la 19.657 la 9.926px; a crescut inapoi cu 65%. Nu am taiat nimic — regula din acest fisier e
+  „masoara inainte sa tai", iar pe 08.08 doua sectiuni care pareau redundante s-au dovedit cu
+  suprapunere ZERO. De facut cu masuratoare per sectiune, nu din ochi.
+
+**UPDATE 22.09.2026 (site care se verifica singur + a CINCEA reaparitie a fabricatiei — NEPUSHED):**
+- **Doua unelte noi, amandoua in pipeline:**
+  1. **`scripts/verifica_site.py`** — garda care se uita la site ca INTREG (date + cele 1.752 de
+     pagini generate) si **isi tine minte starea** in `data/stare-site.json`: la fiecare rulare scrie
+     deltele fata de cea dinainte („cu_promotie 63 (-2 fata de ultima verificare)"). Pasul 17 din
+     workflow, `always()`, iese cu cod 1 cand gaseste ceva. Moduri: implicit (date), `--html`, `--raport`.
+  2. **`scripts/campuri_interzise.py`** — scoate campurile FABRICATE la fiecare merge. Lista e intr-un
+     singur loc; cand gasesti altul inventat, il adaugi acolo si moare la urmatoarea rulare.
+- **Ce a gasit garda la PRIMA rulare pe date reale: `procent_succes`/`folosit_de` pe 578 de magazine** —
+  a cincea aparitie a acelorasi numere random (scoase din afisare 03.07, din generatorul 2P 07.09).
+  Sursele, toate ratate de curatarea din 07.09: **sase importatoare** care le scriau (unul,
+  `import_csv_promotii.py`, cu `random.randint(15,800)` viu **in pipeline**, la fiecare rulare) si
+  **`data/extra_merchants.json`** — fisier versionat, intrare SI iesire, care le pastra pe 604 din 615.
+- **Descoperirea care conteaza mai mult decat fabricatia: curatarea partiala era mai rea decat nimic.**
+  Patru canale de promovare filtrau `m.get("procent_succes", 0) >= 50`. Cat timp TOATE magazinele
+  aveau campul (72-96), filtrul trecea mereu — decorativ. Dupa curatarea partiala, magazinele
+  **curate** cadeau pe implicitul `0` si erau **EXCLUSE**. Masurat: **16 din 65 de magazine cu oferta
+  reala**, toate romanesti (otter.ro, regata.ro, labelshop.ro, craftup.ro), nu mai ajungeau in niciun
+  canal. Plus `scor_comercianti.py`, unde `folosit_de / 500` era **14% din scorul fiecarui comerciant**.
+  **Regula noua: inainte sa scoti un camp, cauta cine il citeste cu valoare implicita** — un
+  `.get(camp, 0)` transforma absenta in altceva. Vezi LECTII-TEHNICE #10.
+- **Reparat la gatuitura, nu in fiecare afluent**: 4 filtre scoase, `s_conversie` scos din scor,
+  6 importatoare curatate, 4 functii generatoare sterse (`calculeaza_folosit`/`calculeaza_succes` +
+  `import random` ramas fara consumator), campul scos din `interface Magazin` din `top-reduceri`.
+  Merge-ul a scos **1.156 de valori** la prima rulare; `extra_merchants.json` curatat separat (1.208),
+  ca reparatia sa fie vizibila in git, nu doar in date regenerate.
+- **`promotii.py` — date de expirare absurde tratate la sursa.** `avidlove.com` avea „3661 zile"
+  (anul 2036), helloice.com 1468. UI-ul le plafoneaza deja la afisare (`etichetaExpirare`), deci pe
+  site nu se vedea nimic gresit — dar valoarea ramanea gresita in date, iar urmatorul consumator
+  (newsletter, Telegram, un export viitor) n-are de unde sti sa plafoneze. Peste 3 ani, `expira` nu
+  mai e o data, e un artefact de feed: se trateaza ca **data necunoscuta**, exact ca lipsa ei.
+  **41 de promotii** corectate la prima rulare.
+- **Garda a fost RECALIBRATA, nu slabita ca sa treaca.** Prima versiune pica pe „8 magazine fara link
+  platit" — dar politica proiectului, din 06.08, e ca un brand fara program activ RAMANE ca
+  recomandare onesta fara comision. O garda rosie la fiecare rulare nu mai e citita de nimeni.
+  Blocheaza acum doar **pierderea reala**: magazin care AFISEAZA o oferta si al carui buton pleaca
+  fara tracking (acolo clicul e intentionat, omul chiar cumpara). Cele fara oferta se numara in
+  `stare`, deci o crestere brusca se vede in delta.
+- **Dovedit ca PICA, nu doar ca certifica**: injectate cele 3 tipuri de probleme intr-o copie a
+  `output.json` -> garda le raporteaza pe toate trei, cu delta `+1`; restaurat -> exit 0.
+- **Verificat**: `py_compile` pe toate cele 12 scripturi atinse, `tsc --noEmit` exit 0 (redirect in
+  fisier, nu pipe), `npm run build` exit 0, garda `--html` pe **1.752 de pagini generate**: 0 probleme.
+  YAML-ul workflow-ului validat, 48 de pasi.
+- **Pasul 17b** comite `data/stare-site.json`: garda ruleaza DUPA commit, iar fiecare rulare porneste
+  din checkout curat — fara el, memoria s-ar scrie si s-ar pierde, deci deltele ar fi mereu fata de
+  aceeasi rulare veche.
+
 **UPDATE 19.09.2026, partea a doua (magazinele al caror program nu acopera Romania):**
 - **Masurat pe API-ul Impact:** 122 din 533 de campanii active au `ShippingRegions` fara Romania —
   programe de tara: „Eufy NL", „Navimow US", „Lenovo India", „OnePlus FR", „JD Sports Indonesia".

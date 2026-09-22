@@ -231,8 +231,8 @@ def create_square_banner(magazine: list, data_str: str, zi_name: str) -> Image.I
     draw.text((pill_x + 26, pill_y + 10), "AmCupon.ro", font=font_pill, fill=INDIGO_DIM)
     draw.ellipse([pill_x + 10, pill_y + 14, pill_x + 18, pill_y + 22], fill=INDIGO)
 
-    # Tag "Verificat zilnic" — dreapta
-    tag_text = "Verificat zilnic"
+    # Tag "Actualizat zilnic" — dreapta
+    tag_text = "Actualizat zilnic"
     font_tag = load_font(12, bold=True)
     tag_w = 150
     tag_img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
@@ -253,7 +253,7 @@ def create_square_banner(magazine: list, data_str: str, zi_name: str) -> Image.I
     hero_y = 110
     draw.text((W // 2, hero_y), "Coduri de reducere", font=font_h1_big,
               fill=WHITE, anchor="mt")
-    draw.text((W // 2, hero_y + 56), "verificate zilnic", font=font_h1_big,
+    draw.text((W // 2, hero_y + 56), "actualizate zilnic", font=font_h1_big,
               fill=INDIGO, anchor="mt")
     draw.text((W // 2, hero_y + 56 + 60), f"Oferte active la {len(magazine)}+ magazine",
               font=font_sub, fill=GRAY, anchor="mt")
@@ -406,7 +406,7 @@ def create_story_banner(magazine: list, data_str: str) -> Image.Image:
     font_mid = load_font(22)
     draw.text((W//2, 190), "Coduri de", font=font_big, fill=WHITE, anchor="mt")
     draw.text((W//2, 270), "reducere", font=font_big, fill=INDIGO, anchor="mt")
-    draw.text((W//2, 360), "verificate zilnic", font=font_mid, fill=GRAY, anchor="mt")
+    draw.text((W//2, 360), "actualizate zilnic", font=font_mid, fill=GRAY, anchor="mt")
 
     # Cards x5
     top5 = pick_top(magazine, n=5)

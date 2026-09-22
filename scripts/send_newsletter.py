@@ -241,7 +241,7 @@ def make_html(top_n: list, data_str: str, is_test: bool = False, total_magazine:
     nume_top = [m["magazin"].split(".")[0].capitalize() for _, lst in sectiuni for m in lst][:3]
     preheader = (
         f"Coduri verificate azi de la {', '.join(nume_top)}"
-        if nume_top else "Coduri de reducere verificate zilnic"
+        if nume_top else "Coduri de reducere actualizate zilnic"
     )
 
     def card(m: dict) -> str:
@@ -422,7 +422,7 @@ def make_html(top_n: list, data_str: str, is_test: bool = False, total_magazine:
           <td bgcolor="#14181c" style="background:#14181c;border-radius:0 0 16px 16px;padding:22px 26px;text-align:center;">
             <div style="font-family:Arial,sans-serif;font-size:12px;color:#94a3b8;">
               <a href="{SITE_URL}" target="_blank" style="color:#ddf93c;text-decoration:none;font-weight:bold;">AmCupon.ro</a>
-              &bull; coduri de reducere verificate zilnic
+              &bull; coduri de reducere actualizate zilnic
             </div>
             <div style="font-family:Arial,sans-serif;font-size:11px;color:#64748b;margin-top:9px;line-height:1.6;">
               Prime&#537;ti acest email pentru c&#259; te-ai abonat pe AmCupon.ro.<br />

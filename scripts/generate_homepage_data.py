@@ -207,6 +207,83 @@ def _prod_light(p: dict) -> dict:
     }
 
 
+def familie_produs(titlu: str, cuvinte: int = 5) -> str:
+    """Cheie de familie: primele cuvinte semnificative din titlu.
+
+    Feed-urile listeaza fiecare varianta ca produs separat, cu titlu SI pret diferite,
+    deci dedup-ul pe (titlu, pret) nu le prinde. Masurat 22.09.2026 pe homepage:
+    „10X26m Cort Evenimente PROFESSIONAL XXL", „10X20m...", „8x20 m...", „8x16 m..." —
+    sase variante ale aceluiasi cort ocupau sase din cele 16 sloturi din Sport, iar in
+    Frumusete sase parfumuri „Memo Paris Apa de parfum ...". O vitrina cu sase variante
+    ale aceluiasi lucru arata a export de catalog, nu a selectie.
+    """
+    t = re.sub(r"[^\w\s]", " ", (titlu or "").lower())
+    # Orice token care CONTINE o cifra e exact ce diferentiaza variantele intre ele:
+    # „10X26m", „4X10", „75 ml", „8GB", „52 V". Daca filtrezi doar tokenii pur numerici
+    # (`isdigit`), „4X10" si „6x14" raman si cele doua corturi par produse diferite.
+    cuv = [c for c in t.split() if len(c) > 2 and not any(ch.isdigit() for ch in c)]
+    return " ".join(cuv[:cuvinte])
+
+
+def selecteaza_pentru_vitrina(prods: list, n: int) -> list:
+    """Alege ce se arata pe homepage dintr-o categorie.
+
+    DE CE EXISTA (22.09.2026). Sortarea era `(-discount_pct, -price)`, dar doar
+    **84 din 20.188 de produse (0,4%)** au `discount_pct` real: pentru restul prima
+    cheie e egala, deci ordinea cadea integral pe PRET DESCRESCATOR. Homepage-ul, sub
+    titlul „Produse cu reducere", deschidea Auto-Moto cu o **nacela cu senile de
+    562.749 lei** si trei utilaje IMER dupa ea, Sport cu un cort de 40.000 lei, iar
+    Frumusete cu sase parfumuri Memo Paris identice ca pret. Pe un site de cupoane
+    pentru consumatori, acelea nu sunt nici oferte, nici produse pe care le cauta cineva.
+
+    ORDINEA REGULILOR CONTEAZA, si am gresit-o o data: plafonul per magazin aplicat
+    dupa sortarea pe pret alege cele mai SCUMPE trei ale fiecarui magazin, deci aduce
+    inapoi exact extremele pe care tocmai le-ai taiat. Corect:
+      1. o singura bucata per familie de produs (`familie_produs`);
+      2. taie extremele de sus, pe TOATA categoria — peste percentila 85 sunt
+         echipamente profesionale ratacite intr-un feed de retail;
+      3. abia acum sorteaza: reducere reala intai (aia promite titlul), apoi pretul;
+      4. maxim 3 per magazin — o vitrina cu 5 produse de la acelasi magazin nu e vitrina.
+    """
+    # 1. familii
+    vazute, unice = set(), []
+    for p in prods:
+        fam = familie_produs(p.get("title", ""))
+        if fam and fam in vazute:
+            continue
+        vazute.add(fam)
+        unice.append(p)
+
+    # 2. extremele de sus, calculate pe toata categoria
+    PRAG_ESANTION = 20          # sub atat, o percentila e zgomot, nu masuratoare
+    if len(unice) >= PRAG_ESANTION:
+        preturi = sorted((p.get("price") or 0) for p in unice)
+        plafon = preturi[int(len(preturi) * 0.85)]
+        fara_extreme = [p for p in unice if (p.get("price") or 0) <= plafon]
+        if len(fara_extreme) >= n:      # nu goli categoria ca sa fii elegant
+            unice = fara_extreme
+
+    # 3. ordinea
+    unice.sort(key=lambda x: (-(x.get("discount_pct") or 0), -(x.get("price") or 0)))
+
+    # 4. varietate de magazine
+    MAX_PER_MAGAZIN = 3
+    per_magazin, ales = {}, []
+    for p in unice:
+        mag = (p.get("merchant") or p.get("merchant_slug") or "").lower()
+        if per_magazin.get(mag, 0) >= MAX_PER_MAGAZIN:
+            continue
+        per_magazin[mag] = per_magazin.get(mag, 0) + 1
+        ales.append(p)
+        if len(ales) >= n:
+            break
+    # daca plafonul per magazin a lasat prea putine (categorie cu 2 magazine), completeaza
+    if len(ales) < n:
+        deja = {id(p) for p in ales}
+        ales += [p for p in unice if id(p) not in deja][: n - len(ales)]
+    return ales[:n]
+
+
 def gen_products():
     if not os.path.exists(PROD_SRC):
         print(f"  Lipsa: {PROD_SRC} — skip produse")
@@ -263,6 +340,7 @@ def gen_products():
                 or "other"
             )
 
+
     # Grupare pe categorie
     by_cat: dict[str, list] = {}
     for p in valide:
@@ -273,8 +351,7 @@ def gen_products():
     for slug, prods in by_cat.items():
         if slug not in CAT_META:
             continue
-        prods.sort(key=lambda x: (-(x.get("discount_pct") or 0), -(x.get("price") or 0)))
-        top = prods[:N_PER_CAT]
+        top = selecteaza_pentru_vitrina(prods, N_PER_CAT)
         if len(top) < 2:
             continue
         emoji, label = CAT_META[slug]
@@ -293,8 +370,7 @@ def gen_products():
     # Flat list pentru backward-compat (si fallback)
     flat_pool: list = []
     for m, prods in by_cat.items():
-        prods.sort(key=lambda x: (-(x.get("discount_pct") or 0), -(x.get("price") or 0)))
-        flat_pool.extend(prods[:N_PROD_PER_SHOP])
+        flat_pool.extend(selecteaza_pentru_vitrina(prods, N_PROD_PER_SHOP))
     flat_pool.sort(key=lambda x: -(x.get("discount_pct") or 0))
     flat_light = [_prod_light(p) for p in flat_pool[:N_PROD_TOTAL]]
 

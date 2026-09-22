@@ -20,6 +20,90 @@
 
 ---
 
+## 🔁 RUTINA — ce faci manual și cât aduce (22.09.2026)
+
+> Măsurat azi, nu estimat. Ordinea e după *cât conținut aduce per minut de muncă*.
+> Verifici efectul oricăreia cu `python scripts/verifica_site.py` — îți scrie și
+> diferența față de ultima rulare.
+
+### 1. Export promoții 2Performant — **5 minute, o dată pe săptămână**
+
+**Descoperirea zilei:** dashboard-ul 2P are de **8× mai mult decât API-ul** care rulează
+automat de trei ori pe zi.
+
+| sursă | promoții | coduri reale |
+|---|---|---|
+| API (automat, 3×/zi) | **18** | **0** |
+| CSV din dashboard (21.08, vechi de o lună) | **147** | **21** |
+
+Chiar și CSV-ul vechi de o lună mai are 56 de promoții valabile azi și 9 coduri active
+(Answear, Liki24, Regata, Videt, Jollymag, Încălțămintelamoda). Un export proaspăt aduce
+aproape de trei ori pe atât.
+
+**Pașii:**
+1. 2Performant → **Promotions** → filtru *Active*
+2. **Export** (CSV)
+3. Salvezi peste `data/promotii_2p.csv` (exact numele ăsta)
+4. `python scripts/import_csv_promotii.py`
+5. `python scripts/verifica_site.py` — trebuie să vezi `cu_promotie` și `cu_cod` în creștere
+
+**Nu rescrie nimeni codul pentru asta** — API-ul 2P pur și simplu nu expune ce e în dashboard.
+Cinci minute de export bat orice automatizare aici.
+
+### 2. Token Awin — **5 minute, o singură dată**
+
+**Awin: 57 de magazine pe site, 0 promoții.** Codul e scris și așteaptă
+(`scripts/fetch_awin_api.py`), pasul e în pipeline, dar face skip fiindcă
+`AWIN_API_TOKEN` nu există în GitHub Secrets.
+
+1. Awin → *Account* → **API credentials** → generează token (cu scope de *promotions*)
+2. GitHub → repo → Settings → Secrets → `AWIN_API_TOKEN` și `AWIN_PUBLISHER_ID`
+3. La următoarea rulare, pasul 4d2 încetează să mai sară
+
+### 3. Cere coduri exclusive — **15 minute pe săptămână, motorul cel mai puternic**
+
+Asta e ce fac site-urile mari, și nu se poate automatiza: un cod **exclusiv** înseamnă că
+ești singurul care îl are. Nu se obține din API — se cere de la affiliate manager.
+
+**Cele 7 magazine de unde începi** (le avem, suntem aprobați, au link care plătește, dar
+**zero coduri** la noi — iar Cuponescu are cod activ pe ele chiar acum):
+
+| magazin | ce are competitorul acum |
+|---|---|
+| Fragranza | 25% machiaj · 15% K-Beauty |
+| Noriel | 20% jucării |
+| Ozone | 40% campania PromoMania |
+| Libris | 50 lei la comenzi de 500+ |
+| Aosom | 15% la 2+ produse |
+| Ortopedicus | 3% saltele |
+| Otter | 10% la preț întreg |
+
+**Mesajul** (în 2Performant → programul respectiv → contact advertiser):
+
+> Bună ziua, promovez [magazin] pe AmCupon.ro, unde am pagină dedicată brandului.
+> Aș vrea un cod de reducere exclusiv pentru publicul nostru — îl afișez pe pagina
+> magazinului și îl includ în newsletter. Pot trimite raportul de trafic dacă e util.
+
+**De ce funcționează:** advertiserului îi dai distribuție, tu primești conținut pe care
+nimeni altcineva nu-l are. Un cod exclusiv e singurul lucru pe care un concurent mai mare
+nu ți-l poate copia.
+
+### 4. Magazinele care ne lipsesc — **verificat, e mai complicat decât pare**
+
+Cuponescu are cod pe 9 magazine pe care **nu le avem deloc**: Fashion Days, Trendyol,
+Sinsay, Footshop, ePantofi, Zooplus, Dormeo, SkyShowtime, carVertical.
+
+**Căutate în toate exporturile noastre (Impact 538 programe, Awin 49, CJ 111): niciunul**,
+în afară de Sezamo (în CJ, care e oricum blocat fără PID). Deci nu e ceva ce ratăm — vin
+dintr-o rețea la care nu avem acces, cel mai probabil **Profitshare**, unde contul a fost
+respins în august.
+
+**Merită o reaplicare la Profitshare** acum că site-ul are 957 de magazine, 1.756 de pagini
+și pipeline propriu — argumente pe care nu le aveai în august. Dacă intră, aduce și eMAG,
+care e exclusiv acolo.
+
+---
+
 > **13.09.2026 — acțiunea 1 era, în mare parte, NU a ta.** Din cele 34 de magazine Impact
 > „fără link", **21 aveau contract activ și link oficial în contul tău** — le rata scriptul
 > din pipeline, care căuta linkul în locul greșit. Măsurat pe API, reparat în cod

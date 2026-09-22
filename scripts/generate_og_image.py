@@ -46,7 +46,7 @@ draw.text((tx, ty), title, font=title_font, fill=WHITE)
 
 # ── Tagline ──
 tag_font = ImageFont.truetype(FONT_REGULAR, 30)
-tagline = "Coduri de reducere verificate zilnic"
+tagline = "Coduri de reducere actualizate zilnic"
 tw2, th2, ty_off2 = text_w(tag_font, tagline)
 tx2 = (W - tw2) / 2
 ty2 = ty + th + 28

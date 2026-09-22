@@ -2098,7 +2098,7 @@ Parfumuri si cosmetice la reduceri ocazionale.
 - Stai online la 00:00 pentru primele oferte
 - Cumpara dimineata devreme pentru stocuri maxime
 
-[Coduri reducere verificate zilnic →](/)
+[Coduri reducere actualizate zilnic →](/)
 """,
     },
 

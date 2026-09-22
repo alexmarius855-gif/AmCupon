@@ -330,6 +330,39 @@ Fabricația a fost eliminată de patru ori și a reapărut de fiecare dată în 
 
 ---
 
+### 22.09.2026 — a cincea oară, și de data asta curățarea parțială a fost mai rea decât nimic
+
+`procent_succes` / `folosit_de` (random pur) au fost scoase din **afișare** pe 03.07 și din
+**generatorul 2Performant** pe 07.09. Pe 22.09 erau din nou pe **578 de magazine**. Cauza nu a fost
+o rescriere neglijentă, ci două lucruri structurale:
+
+1. **Curățarea a atins un generator dintr-o familie de șapte.** `import_csv_promotii.py` genera
+   `randint(15, 800)` la **fiecare rulare de pipeline**; alte cinci importatoare scriau constante
+   (`80`, `85`); `data/extra_merchants.json` — fișier versionat, intrare *și* ieșire — le păstra pe
+   604 din 615 magazine din 2026. Un `grep` după numele funcției curățate nu le-ar fi găsit pe
+   niciuna: scriau literalul direct în dict.
+
+2. **Curățarea parțială a inversat sensul filtrelor.** Patru canale de promovare filtrau
+   `m.get("procent_succes", 0) >= 50`. Cât timp toate magazinele aveau câmpul (72–96), filtrul era
+   decorativ — trecea mereu. După curățarea parțială, magazinele **curate** cădeau pe valoarea
+   implicită `0` și erau **excluse**. Măsurat pe datele zilei: **16 din 65 de magazine cu ofertă
+   reală**, toate românești (otter.ro, regata.ro, labelshop.ro, craftup.ro), nu mai ajungeau în
+   niciun canal de promovare. Plus `scor_comercianti.py`, unde `folosit_de / 500` era **14% din
+   scorul fiecărui comerciant**, pur zgomot.
+
+**Regula care lipsea:** un câmp fabricat nu se scoate dintr-un generator, se scoate din **gâtuitura**
+prin care trece totul. `scripts/campuri_interzise.py` e apelat de `merge_platforms.py` — pasul final
+prin care trece orice importator, vechi sau nou. Același tipar ca `promotii.curata_promotii()` și
+`link_oferta.link_potrivit()`. La prima rulare a scos **1.156 de valori**.
+
+**Regula a doua, despre curățare parțială:** când scoți un câmp, caută întâi cine îl **citește cu
+valoare implicită** (`.get(camp, 0)`). Un consumator cu implicit tăcut transformă absența câmpului
+într-o valoare care înseamnă altceva. Nu curăța sursa înainte de a curăța consumatorii — altfel
+datele oneste devin cetățeni de clasa a doua.
+
+**Cum a fost prinsă:** de garda `scripts/verifica_site.py`, la **prima ei rulare pe date reale**.
+Trei luni în care nimic nu se uita la date ca întreg, versus 10 secunde.
+
 ## 11. Măsoară înainte să tai, și înainte să repari
 
 - **08.08:** două secțiuni de homepage păreau redundante. Măsurate: suprapunere **zero**, seturi
