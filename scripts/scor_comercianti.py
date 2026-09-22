@@ -75,7 +75,9 @@ def main():
 
         s_trust = (2 if m.get("logo_url") else 0) + min((m.get("sales_number") or 0) / max_sales * 3, 3)   # 0-5
         s_comision = min(com / 6, 5)                                                                        # 0-5 (30%+ = max)
-        s_conversie = min((m.get("folosit_de") or 0) / 500, 5)                                              # 0-5
+        # 22.09.2026: `s_conversie` lua `folosit_de` (random 15-800) si il transforma in
+        # pana la 5 puncte din 35 — 14% din scorul fiecarui comerciant, pur zgomot.
+        s_conversie = 0
         s_feed = 5 if slug in feed_slugs else 0                                                             # 0/5
         s_coduri = (3 if m.get("are_promotie") else 0) + (2 if m.get("cod_cupon") else 0)                   # 0-5
         s_seo = (3 if slug in BRAND_PAGES else 0) + (2 if "." in slug and " " not in slug else 0)           # 0-5

@@ -568,3 +568,38 @@ jobs:
         if: always()
         working-directory: scripts
         run: python verifica_promotii.py
+
+      # ── 17. Garda de stare: ce s-a schimbat de la ultima rulare ────────────
+      # 22.09.2026. Pasul 16 verifica promotiile; acesta verifica SITE-UL ca intreg si, in plus,
+      # isi tine minte starea (data/stare-site.json, comisa): la fiecare rulare compara cu cea
+      # dinainte si scrie deltele. Motivul: `procent_succes`/`folosit_de` — semnale inventate —
+      # au reaparut de CINCI ori in trei luni, fiindca nimic nu se uita la date ca intreg intre
+      # rulari. La prima rulare reala garda le-a gasit pe 578 de magazine in 10 secunde.
+      # `always()` si ultimul, ca o problema gasita sa nu blocheze actualizarea datelor.
+      - name: Verifica starea site-ului (si ce s-a schimbat de la ultima rulare)
+        if: always()
+        working-directory: scripts
+        run: python verifica_site.py
+
+      # ── 17b. Memoria gardii ───────────────────────────────────────────────
+      # Garda de mai sus compara starea de acum cu cea de la rularea trecuta, dar ruleaza DUPA
+      # commit — iar fiecare rulare porneste dintr-un checkout curat. Fara pasul asta, fisierul
+      # de stare s-ar scrie si s-ar pierde la fiecare rulare, deci deltele („-2 promotii fata de
+      # ultima verificare") ar fi mereu fata de aceeasi rulare veche. Un singur fisier mic.
+      - name: Salveaza starea pentru comparatia de la rularea urmatoare
+        if: always()
+        continue-on-error: true
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/stare-site.json || true
+          if git diff --staged --quiet; then
+            echo "Stare neschimbata — skip"
+          else
+            git commit -m "chore: stare site $(date -u +%Y-%m-%d)"
+            for i in 1 2 3; do
+              git pull --rebase --autostash origin main && git push && break
+              echo "Push esuat ($i/3) — retry in ${i}0s..."
+              sleep $((i * 10))
+            done
+          fi

@@ -324,7 +324,11 @@ def main():
     valide = [
         m for m in magazine
         if m.get("are_promotie") and m.get("promotii")
-        and m.get("procent_succes", 0) >= 50
+        # 22.09.2026: aici era `and m.get("procent_succes", 0) >= 50`. Campul e
+        # FABRICAT (random) si a fost scos din generatoare pe 07.09 — deci magazinele
+        # CURATE cadeau pe `.get(..., 0)` si erau excluse de la promovare. Masurat azi:
+        # 16 din 65 de magazine cu oferta reala, toate romanesti (otter.ro, regata.ro,
+        # labelshop.ro, craftup.ro). Filtrul nu selecta nimic — penaliza onestitatea.
         and " " not in m.get("magazin", "")
     ]
 

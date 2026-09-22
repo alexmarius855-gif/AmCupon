@@ -152,7 +152,11 @@ def get_magazine_nisa(nisa_key: str, nisa_cfg: dict) -> list[dict]:
         return (
             m.get("categorie_slug") in categorii
             and " " not in m.get("magazin", "")
-            and m.get("procent_succes", 0) >= 40
+            # 22.09.2026: aici era `and m.get("procent_succes", 0) >= 40`. Campul e
+            # FABRICAT (random) si a fost scos din generatoare pe 07.09 — deci magazinele
+            # CURATE cadeau pe `.get(..., 0)` si erau excluse de la promovare. Masurat azi:
+            # 16 din 65 de magazine cu oferta reala, toate romanesti (otter.ro, regata.ro,
+            # labelshop.ro, craftup.ro). Filtrul nu selecta nimic — penaliza onestitatea.
             and m.get("magazin") not in excluse
         )
 
@@ -355,7 +359,7 @@ def gen_reddit(m: dict, nisa_cfg: dict) -> str:
     if 0 < zile <= 7:
         body += f"\n**Expira in:** {zile} {'zi' if zile == 1 else 'zile'}"
 
-    body += f"\n\n**Link:** {SITE_URL}/cod-reducere/{slug}\n\n*Sursa: AmCupon.ro — verificat zilnic*"
+    body += f"\n\n**Link:** {SITE_URL}/cod-reducere/{slug}\n\n*Sursa: AmCupon.ro — actualizat zilnic*"
 
     return f"""💬 REDDIT / FACEBOOK GRUP — {n}
 

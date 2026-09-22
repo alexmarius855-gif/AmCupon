@@ -23,7 +23,6 @@ REZULTAT:
 import os
 import json
 import re
-import random
 import hashlib
 import requests
 from datetime import datetime, timezone
@@ -106,24 +105,6 @@ def normalize_slug(name: str) -> str:
     if "." not in s:
         s = f"{s}.ro"
     return s
-
-
-def calculeaza_succes(slug: str, rank_approx: int) -> int:
-    rng = random.Random(abs(hash(slug + "_ps")) % 99991)
-    if rank_approx <= 10:
-        return rng.randint(88, 97)
-    elif rank_approx <= 30:
-        return rng.randint(80, 91)
-    elif rank_approx <= 100:
-        return rng.randint(70, 85)
-    return rng.randint(60, 78)
-
-
-def calculeaza_folosit(slug: str, are_promotie: bool) -> int:
-    if not are_promotie:
-        return 0
-    rng = random.Random(abs(hash(slug + "_pf")) % 99991)
-    return rng.randint(20, 400)
 
 
 def ps_get(api_name: str, params: dict = None) -> dict | list | None:
@@ -456,8 +437,7 @@ def process_program(prog: dict, promo_map: dict, rank_counter: int) -> dict | No
         "cod_cupon": are_cod,
         "zile_ramase": zile_ramase,
         "promotii": promotii,
-        "folosit_de": calculeaza_folosit(slug, are_promotie),
-        "procent_succes": calculeaza_succes(slug, rank_counter),
+        # 22.09.2026: scos `folosit_de`/`procent_succes` — fabricate (vezi LECTII-TEHNICE #10).
         "exclusiv": are_cod,
         "categorie_slug": categorie_slug(categorie),
         "scor_final": max(0, 50 - rank_counter) + (20 if are_promotie else 0) + (10 if are_cod else 0),

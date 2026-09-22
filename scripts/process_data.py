@@ -2,7 +2,6 @@ import pandas as pd
 import json
 import hashlib
 import re
-import random
 from urllib.parse import quote, unquote
 from datetime import datetime, timezone
 
@@ -101,37 +100,6 @@ def categorie_slug(cat: str) -> str:
     return s
 
 
-def calculeaza_folosit(magazin: str, sales: int, are_promotie: bool) -> int:
-    """Numar realist de utilizari bazat pe popularitate, determinist per magazin."""
-    if not are_promotie:
-        return 0
-    rng = random.Random(abs(hash(magazin)) % 99991)
-    if sales > 50000:
-        return rng.randint(800, 3000)
-    elif sales > 10000:
-        return rng.randint(200, 900)
-    elif sales > 1000:
-        return rng.randint(50, 250)
-    else:
-        return rng.randint(15, 70)
-
-
-def calculeaza_succes(magazin: str, rank: int, trend: float) -> int:
-    """Procent de succes al codului bazat pe rangul magazinului."""
-    rng = random.Random(abs(hash(magazin + "_s")) % 99991)
-    if rank <= 10:
-        pct = rng.randint(90, 98)
-    elif rank <= 30:
-        pct = rng.randint(83, 93)
-    elif rank <= 100:
-        pct = rng.randint(72, 87)
-    else:
-        pct = rng.randint(62, 79)
-    if trend > 10:
-        pct = min(99, pct + 2)
-    return pct
-
-
 def get_safe(row, col):
     val = row.get(col)
     if val is None or (isinstance(val, float) and pd.isna(val)):
@@ -217,8 +185,7 @@ def main():
             "zile_ramase": zile_ramase,
             "promotii": promotii,
             # features noi
-            "folosit_de": calculeaza_folosit(cheie, sales, are_promotie),
-            "procent_succes": calculeaza_succes(cheie, rank, trend),
+            # 22.09.2026: scos `folosit_de`/`procent_succes` — fabricate (vezi LECTII-TEHNICE #10).
             "exclusiv": are_cod,
             "categorie_slug": categorie_slug(categorie),
             "platforma": "2performant",

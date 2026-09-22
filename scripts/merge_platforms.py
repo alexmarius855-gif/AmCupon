@@ -268,6 +268,14 @@ def main():
     from promotii import curata_promotii, raport  # noqa: E402
     print("  " + raport(curata_promotii(merged)))
 
+    # ── Campuri FABRICATE scoase la fiecare rulare ──────────────────────────────────────────
+    # A cincea reaparitie a `procent_succes`/`folosit_de` (22.09.2026). Motivul complet si
+    # masuratoarea (16 din 65 de magazine cu oferta reala erau excluse de la promovare
+    # fiindca NU aveau campul fabricat): scripts/campuri_interzise.py
+    from campuri_interzise import curata_campuri_fabricate  # noqa: E402
+    from campuri_interzise import raport as raport_campuri  # noqa: E402
+    print("  " + raport_campuri(curata_campuri_fabricate(merged)))
+
     # ── Programe care NU livreaza in Romania (ShippingRegions din Impact) ────────────────────────
     # 19.09.2026: 108 magazine aveau programe doar pentru alte tari — „Eufy NL", „Navimow US",
     # „Lenovo India", „JD Sports Indonesia". Pe un site de cupoane pentru Romania, un clic acolo

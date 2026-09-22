@@ -28,6 +28,14 @@ from reconcile_impact_links import domain_from_url, etld1
 # = PRAG_FARA_CIFRA din frontend/lib/expirarePromo.ts: de la 99 in sus nu se afiseaza nicio cifra.
 FARA_DATA = 99
 
+# Peste atat, `expira` nu mai e o data — e un artefact de feed. Masurat 22.09.2026:
+# avidlove.com „3661 zile” (anul 2036), helloice.com 1468, in total 11 promotii.
+# UI-ul le plafoneaza deja la afisare (etichetaExpirare), deci nu se vede nimic gresit
+# pe site — dar valoarea ramane gresita in date, iar urmatorul consumator (newsletter,
+# Telegram, un export viitor) nu are de unde sti sa plafoneze. Se repara unde s-a nascut:
+# data absurda = data necunoscuta, exact ca lipsa ei.
+PRAG_DATA_ABSURDA = 1095  # 3 ani
+
 
 def azi_utc() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%d")
@@ -47,7 +55,7 @@ def curata_promotii(magazine: list, azi: str = None) -> dict:
     """In-place. Scoate promotiile expirate, recalculeaza `zile_ramase` din `expira` si
     flag-urile de magazin. Idempotent. Intoarce ce a schimbat, ca sa se vada in log."""
     azi = azi or azi_utc()
-    st = {"expirate": 0, "zile_recalculate": 0, "fara_data": 0, "flaguri": 0, "magazine_golite": []}
+    st = {"expirate": 0, "zile_recalculate": 0, "fara_data": 0, "data_absurda": 0, "flaguri": 0, "magazine_golite": []}
     for m in magazine:
         if not isinstance(m, dict):
             continue
@@ -57,6 +65,9 @@ def curata_promotii(magazine: list, azi: str = None) -> dict:
             if not isinstance(p, dict):
                 continue
             zile = zile_pana_la(p.get("expira"), azi)
+            if zile is not None and zile > PRAG_DATA_ABSURDA:
+                st["data_absurda"] += 1
+                zile = None
             if zile is None:
                 if p.get("zile_ramase") != FARA_DATA:
                     st["fara_data"] += 1
@@ -86,6 +97,7 @@ def curata_promotii(magazine: list, azi: str = None) -> dict:
 def raport(st: dict) -> str:
     golite = st["magazine_golite"]
     return (f"promotii expirate scoase: {st['expirate']}, zile recalculate: {st['zile_recalculate']}, "
+            f"date absurde (>3 ani) tratate ca necunoscute: {st['data_absurda']}, "
             f"fara data (fara contor): {st['fara_data']}, flaguri de magazin corectate: {st['flaguri']}"
             + (f"\n  magazine ramase fara promotii: {len(golite)} ({', '.join(golite[:10])}"
                f"{'...' if len(golite) > 10 else ''})" if golite else ""))

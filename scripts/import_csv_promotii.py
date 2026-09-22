@@ -21,7 +21,6 @@ import json
 import os
 import re
 import sys
-import random
 from datetime import datetime, timezone
 
 # Fix encoding pentru terminal Windows (suport diacritice romane)
@@ -259,11 +258,8 @@ def recalculeaza_flags(mag: dict) -> dict:
     mag["zile_ramase"]  = min(
         (p.get("zile_ramase", 99) for p in promotii), default=99
     )
-    # Update folosit_de (pseudo-random stabil per magazin)
-    if mag["are_promotie"] and mag.get("folosit_de", 0) == 0:
-        slug = mag.get("magazin", "")
-        rng  = random.Random(abs(hash(slug)) % 99991)
-        mag["folosit_de"] = rng.randint(15, 800)
+    # 22.09.2026: aici se genera `folosit_de` random (15-800) la FIECARE rulare de
+    # pipeline. Era ultima sursa vie a fabricatiei scoase din generatoare pe 07.09.
     # Scor final simplu
     scor = 0.0
     if mag["are_promotie"]:  scor += 30
@@ -281,7 +277,6 @@ def make_magazin_nou(slug: str, promotie: dict) -> dict:
     target = promotie.get("landing_page") or home
     url_afiliat = build_quicklink(target)
     cat_label, cat_slug = guess_category(slug, promotie.get("nume", ""))
-    rng = random.Random(abs(hash(slug)) % 99991)
     return {
         "magazin":          domain,
         "url":              home,
@@ -300,8 +295,7 @@ def make_magazin_nou(slug: str, promotie: dict) -> dict:
         "cod_cupon":        bool(promotie.get("cod_cupon")),
         "zile_ramase":      promotie.get("zile_ramase", 99),
         "promotii":         [promotie],
-        "folosit_de":       rng.randint(15, 400),
-        "procent_succes":   rng.randint(72, 92),
+        # 22.09.2026: scos `folosit_de`/`procent_succes` — fabricate (vezi LECTII-TEHNICE #10).
         "exclusiv":         bool(promotie.get("cod_cupon")),
         "platforma":        "2performant",
         "ultima_verificare": datetime.now(timezone.utc).strftime("%Y-%m-%d"),

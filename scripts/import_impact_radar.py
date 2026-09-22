@@ -104,7 +104,7 @@ def make_entry(adv, info):
         "prioritate": "featured" if info["score"] >= 85 else "standard",
         "canal_recomandat": "Content, SEO, Social", "sales_number": 0, "trend": 0,
         "are_promotie": False, "cod_cupon": False, "zile_ramase": 0, "promotii": [],
-        "folosit_de": 0, "procent_succes": 0, "exclusiv": False, "platforma": "impact",
+        "exclusiv": False, "platforma": "impact",
     }
 
 noi = 0

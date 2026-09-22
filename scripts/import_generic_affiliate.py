@@ -339,8 +339,7 @@ def build_merchant(row, cfg, existing):
         "cod_cupon": False,
         "zile_ramase": 0,
         "promotii": [],
-        "folosit_de": 0,
-        "procent_succes": 80,
+        # 22.09.2026: scos `folosit_de`/`procent_succes` — fabricate (vezi LECTII-TEHNICE #10).
         "exclusiv": False,
         "platforma": cfg["platforma"],
         "program_name": name,
