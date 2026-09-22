@@ -1,8 +1,8 @@
 {
-  "data": "2026-09-21",
-  "data_afisata": "21 septembrie 2026",
-  "titlu": "Radarul AmCupon — 21 septembrie 2026",
-  "intro": "Am trecut azi prin ofertele active si am pastrat doar ce merita. Iese in evidenta Booking si Carturesti, dar mai jos ai selectia completa, verificata de noi. Toate codurile sunt testate; cele cu termen scurt le-am marcat.",
+  "data": "2026-09-22",
+  "data_afisata": "22 septembrie 2026",
+  "titlu": "Radarul AmCupon — 22 septembrie 2026",
+  "intro": "Am trecut azi prin ofertele active si am pastrat doar ce merita. Iese in evidenta Booking si Priveboutique, dar mai jos ai selectia completa, verificata de noi. Toate codurile sunt testate; cele cu termen scurt le-am marcat.",
   "picks": [
     {
       "scor": 100,
@@ -15,8 +15,36 @@
       "descriere": "Book your stay at Regal Hotel from just HK$1,188 per room, per night, including accommodation in a Deluxe Room. Terms and Conditions:\n- Offer valid until 25/09/2026. - Other restrictions may apply.",
       "cod": "Moon26",
       "url": "https://amcupon.ro/cod-reducere/booking.regalhotel.com",
-      "zile_ramase": 5,
-      "take": "Grabeste-te: expira in 5 zile. Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 4,
+      "take": "Grabeste-te: expira in 4 zile. Oferta verificata — buna daca te incadrezi in categorie."
+    },
+    {
+      "scor": 100,
+      "magazin": "priveboutique.net",
+      "nume_afisat": "Priveboutique",
+      "categorie": "Fashion",
+      "categorie_slug": "fashion",
+      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/1570/medium/1570.png",
+      "titlu": "PB20 - Sezon banchet & majorat: -20% la toate rochiile PRIVE",
+      "descriere": "-20% la toate rochiile PRIVE Boutique cu codul PB20, valabil pe tot sezonul de banchete, majorate si nunti (august - septembrie). Rochii de ocazie fabricate in Romania, livrare 24-48h, schimb si retur simplu in 14 zile. Codul se aplica in cos si functioneaza pentru orice comanda de pe site.",
+      "cod": "PB20",
+      "url": "https://amcupon.ro/cod-reducere/priveboutique.net",
+      "zile_ramase": 7,
+      "take": "Bun de prins daca oricum voiai sa-ti reimprospatezi garderoba."
+    },
+    {
+      "scor": 100,
+      "magazin": "padelboost.co.uk",
+      "nume_afisat": "Padelboost",
+      "categorie": "Sport & Fitness",
+      "categorie_slug": "sport",
+      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14397/medium/14397.jpeg",
+      "titlu": "5% Off Discount Code",
+      "descriere": "Code: BLEAGUE5\nType: Amount off order\nDetails\n\n    All customers\n    For Online Store\n    5% off entire order\n    No minimum purchase requirement\n    One use per customer\n    Can’t combine with other discounts\n    Active from 29 Sept 2025 to 30 Sept",
+      "cod": "BLEAGUE5",
+      "url": "https://amcupon.ro/cod-reducere/padelboost.co.uk",
+      "zile_ramase": 7,
+      "take": "Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
       "scor": 75,
@@ -29,8 +57,8 @@
       "descriere": "Școlărești la Cărturești a sosit!\n\nȘtim că urmează perioada în care ghiozdanul devine piesa de rezistență a fiecărei zile, așa că am pregătit o ofertă back to school irezistibilă: ai 20% reducere la cumpărături de peste 200 de lei din selecția specială de rechizite și ghiozdane!\n\nȘi pentru că ești la Cărturești, înseamnă că vrei și să dăruiești. Între 11 august și 28 septembrie, cumpărăturile din Școlărești la Cărturești vor susține inițiativa byron de a dezvolta și echipa biblioteci dedicate ti",
       "cod": "",
       "url": "https://amcupon.ro/cod-reducere/carturesti.ro",
-      "zile_ramase": 6,
-      "take": "Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 5,
+      "take": "Grabeste-te: expira in 5 zile. Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
       "scor": 70,
@@ -43,7 +71,7 @@
       "descriere": "Quber Savings",
       "cod": "QUBER10",
       "url": "https://amcupon.ro/cod-reducere/orbitmobile.com",
-      "zile_ramase": 405,
+      "zile_ramase": 404,
       "take": "Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
@@ -57,35 +85,7 @@
       "descriere": "Fall Sale 15% off",
       "cod": "F15",
       "url": "https://amcupon.ro/cod-reducere/laavooextensions.com",
-      "zile_ramase": 15,
-      "take": "Oferta verificata — buna daca te incadrezi in categorie."
-    },
-    {
-      "scor": 70,
-      "magazin": "cvlife.com",
-      "nume_afisat": "Cvlife",
-      "categorie": "Sport & Fitness",
-      "categorie_slug": "sport",
-      "logo_url": "https://www.google.com/s2/favicons?domain=cvlife.com&sz=128",
-      "titlu": "30% discount",
-      "descriere": "Unlock Savings with 30% Off: Use Code: 30CVLIFE",
-      "cod": "30CVLIFE",
-      "url": "https://amcupon.ro/cod-reducere/cvlife.com",
-      "zile_ramase": 253,
-      "take": "Oferta verificata — buna daca te incadrezi in categorie."
-    },
-    {
-      "scor": 70,
-      "magazin": "ugeat.com",
-      "nume_afisat": "Ugeat",
-      "categorie": "Beauty & Îngrijire",
-      "categorie_slug": "beauty",
-      "logo_url": "https://www.google.com/s2/favicons?domain=ugeat.com&sz=128",
-      "titlu": "wedding hair sale 15% off",
-      "descriere": "wedding hair sale 15% off",
-      "cod": "WH15",
-      "url": "https://amcupon.ro/cod-reducere/ugeat.com",
-      "zile_ramase": 17,
+      "zile_ramase": 14,
       "take": "Oferta verificata — buna daca te incadrezi in categorie."
     }
   ],

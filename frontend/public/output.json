@@ -1373,7 +1373,7 @@
     "magazin": "vilagale.com",
     "url": "http://www.vilagale.com",
     "url_afiliat": "https://vilagale.pxf.io/c/7401119/2087327/26071",
-    "logo_url": "https://www.google.com/s2/favicons?domain=vilagale.com&sz=128",
+    "logo_url": "",
     "categorie": "Călătorii",
     "categorie_slug": "calatorii",
     "comision": "6% comision",
@@ -1537,7 +1537,7 @@
     "magazin": "atzavarahotel.com",
     "url": "http://www.atzavarahotel.com/",
     "url_afiliat": "https://atzavarahotelspa.sjv.io/c/7401119/3040677/36939",
-    "logo_url": "https://www.google.com/s2/favicons?domain=atzavarahotel.com&sz=128",
+    "logo_url": "",
     "categorie": "Călătorii",
     "categorie_slug": "calatorii",
     "comision": "4% comision",
@@ -2559,7 +2559,7 @@
     "scor_final": 30.0,
     "program_id": 633,
     "unique_code": "7e537fc0d",
-    "folosit_de": 531
+    "folosit_de": 503
   },
   {
     "magazin": "regata.ro",
@@ -2639,7 +2639,7 @@
     "scor_final": 30.0,
     "program_id": 9812,
     "unique_code": "5abfb2edd",
-    "folosit_de": 614
+    "folosit_de": 239
   },
   {
     "magazin": "doctorshield.ro",
@@ -2798,7 +2798,7 @@
     "scor_final": 30.0,
     "program_id": 10020,
     "unique_code": "401ba6e73",
-    "folosit_de": 627
+    "folosit_de": 294
   },
   {
     "magazin": "autobob.ro",
@@ -2922,7 +2922,7 @@
     "scor_final": 30.0,
     "program_id": 3530,
     "unique_code": "46f8cd5eb",
-    "folosit_de": 595
+    "folosit_de": 636
   },
   {
     "magazin": "jojofashion.ro",
@@ -3055,7 +3055,7 @@
     "scor_final": 30.0,
     "program_id": 6135,
     "unique_code": "d42a9ce58",
-    "folosit_de": 26
+    "folosit_de": 642
   },
   {
     "magazin": "sneakerit.ro",
@@ -3100,7 +3100,7 @@
     "scor_final": 30.0,
     "program_id": 10347,
     "unique_code": "0c3054359",
-    "folosit_de": 199
+    "folosit_de": 654
   },
   {
     "magazin": "112coffee.com",
@@ -3488,7 +3488,7 @@
     "magazin": "wr.st-asu.com",
     "url": "https://wr.st-asu.com/company",
     "url_afiliat": "https://stasupteltd.sjv.io/c/7401119/2375998/29798",
-    "logo_url": "https://www.google.com/s2/favicons?domain=wr.st&sz=128",
+    "logo_url": "",
     "categorie": "Software & Digital",
     "categorie_slug": "software",
     "comision": "200% comision",
@@ -3811,7 +3811,7 @@
     "magazin": "justfitpro.com",
     "url": "https://www.justfitpro.com",
     "url_afiliat": "https://justfit.sjv.io/c/7401119/1989829/24460",
-    "logo_url": "https://www.google.com/s2/favicons?domain=justfitpro.com&sz=128",
+    "logo_url": "https://icons.duckduckgo.com/ip3/justfitpro.com.ico",
     "categorie": "Software & Digital",
     "categorie_slug": "software",
     "comision": "45% comision",
@@ -4673,7 +4673,7 @@
     "magazin": "proxy-cheap.com",
     "url": "https://proxy-cheap.com",
     "url_afiliat": "https://lietparkasuab.pxf.io/c/7401119/3790254/47563",
-    "logo_url": "https://www.google.com/s2/favicons?domain=proxy-cheap.com&sz=128",
+    "logo_url": "",
     "categorie": "Software & Digital",
     "categorie_slug": "software",
     "comision": "25% comision",
@@ -6204,7 +6204,7 @@
     "magazin": "zereanlabs.com",
     "url": "https://zereanlabs.com",
     "url_afiliat": "https://zereanlimited.pxf.io/c/7401119/3755413/47303",
-    "logo_url": "https://www.google.com/s2/favicons?domain=zereanlabs.com&sz=128",
+    "logo_url": "",
     "categorie": "Sănătate & Farmacie",
     "categorie_slug": "sanatate",
     "comision": "15% comision",
@@ -6336,7 +6336,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 421,
+    "folosit_de": 76,
     "procent_succes": 80,
     "exclusiv": false,
     "platforma": "2performant",
@@ -6605,7 +6605,7 @@
     "magazin": "hidemy.name",
     "url": "https://hidemy.name",
     "url_afiliat": "https://www.awin1.com/cread.php?awinmid=5887918&awinaffid=101829567&clickref=",
-    "logo_url": "https://www.google.com/s2/favicons?domain=hidemy.name&sz=128",
+    "logo_url": "https://icons.duckduckgo.com/ip3/hidemy.name.ico",
     "categorie": "Software & Digital",
     "categorie_slug": "software",
     "comision": "Variabil",
@@ -7950,7 +7950,7 @@
     "magazin": "solaireresort.com",
     "url": "http://www.solaireresort.com/",
     "url_afiliat": "https://sola.sjv.io/c/7401119/3882333/52192",
-    "logo_url": "https://www.google.com/s2/favicons?domain=solaireresort.com&sz=128",
+    "logo_url": "",
     "categorie": "Călătorii",
     "categorie_slug": "calatorii",
     "comision": "6% comision",
@@ -8105,7 +8105,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 145,
+    "folosit_de": 382,
     "procent_succes": 80,
     "exclusiv": false,
     "platforma": "2performant",
@@ -8165,7 +8165,7 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 607,
+    "folosit_de": 28,
     "procent_succes": 80,
     "exclusiv": false,
     "platforma": "2performant",
@@ -8175,7 +8175,7 @@
     "magazin": "medimfarm.ro",
     "url": "https://www.medimfarm.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.medimfarm.ro",
-    "logo_url": "https://www.google.com/s2/favicons?domain=medimfarm.ro&sz=128",
+    "logo_url": "",
     "categorie": "Sănătate & Farmacie",
     "categorie_slug": "sanatate",
     "comision": "Variabil",
@@ -8389,7 +8389,7 @@
     "magazin": "en.beachscape.com.mx",
     "url": "http://en.beachscape.com.mx",
     "url_afiliat": "https://beachscapekinhavillas.pxf.io/c/7401119/3322288/16708",
-    "logo_url": "https://www.google.com/s2/favicons?domain=en.beachscape.com&sz=128",
+    "logo_url": "",
     "categorie": "Călătorii",
     "categorie_slug": "calatorii",
     "comision": "4% comision",
@@ -8627,7 +8627,7 @@
     "magazin": "villabalbi.it",
     "url": "http://www.villabalbi.it/en-GB",
     "url_afiliat": "https://grandhotelvillabalbi.pxf.io/c/7401119/3887146/28232",
-    "logo_url": "https://www.google.com/s2/favicons?domain=villabalbi.it&sz=128",
+    "logo_url": "https://icons.duckduckgo.com/ip3/villabalbi.it.ico",
     "categorie": "Călătorii",
     "categorie_slug": "calatorii",
     "comision": "4% comision",
@@ -8653,7 +8653,7 @@
     "magazin": "hotelesgdlplaza.com.mx",
     "url": "http://www.hotelesgdlplaza.com.mx/en",
     "url_afiliat": "https://guadalajaraplazahoteles.sjv.io/c/7401119/2207772/28173",
-    "logo_url": "https://www.google.com/s2/favicons?domain=hotelesgdlplaza.com.mx&sz=128",
+    "logo_url": "",
     "categorie": "Călătorii",
     "categorie_slug": "calatorii",
     "comision": "4% comision",
@@ -8939,7 +8939,7 @@
     "magazin": "trybinge.tv",
     "url": "https://www.trybinge.tv",
     "url_afiliat": "https://bingemoviestv.pxf.io/c/7401119/2994345/35950",
-    "logo_url": "https://www.google.com/s2/favicons?domain=trybinge.tv&sz=128",
+    "logo_url": "",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "comision": "$8.00 per conversie",
@@ -9020,7 +9020,7 @@
     "magazin": "technitya.com",
     "url": "https://technitya.com",
     "url_afiliat": "https://technitya.sjv.io/c/7401119/565398/9372",
-    "logo_url": "https://www.google.com/s2/favicons?domain=technitya.com&sz=128",
+    "logo_url": "",
     "categorie": "Electronice & IT",
     "categorie_slug": "electronice",
     "comision": "Variabil",
@@ -10424,7 +10424,7 @@
     "magazin": "aqua-mail.com",
     "url": "https://www.aqua-mail.com/",
     "url_afiliat": "https://aquamailinc.sjv.io/c/7401119/3379088/44822",
-    "logo_url": "https://www.google.com/s2/favicons?domain=aqua-mail.com&sz=128",
+    "logo_url": "",
     "categorie": "Software & Digital",
     "categorie_slug": "software",
     "comision": "Variabil",
@@ -11412,7 +11412,7 @@
     "magazin": "eresin.com.tr",
     "url": "http://www.eresin.com.tr",
     "url_afiliat": "https://eresin.sjv.io/c/7401119/2041554/25489",
-    "logo_url": "https://www.google.com/s2/favicons?domain=eresin.com.tr&sz=128",
+    "logo_url": "",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "comision": "Variabil",
@@ -11906,7 +11906,7 @@
     "magazin": "ai.oobyte.net",
     "url": "https://ai.oobyte.net/",
     "url_afiliat": "https://oobyte.pxf.io/c/7401119/3253528/41310",
-    "logo_url": "https://www.google.com/s2/favicons?domain=ai.oobyte.net&sz=128",
+    "logo_url": "https://icons.duckduckgo.com/ip3/ai.oobyte.net.ico",
     "categorie": "Software & Digital",
     "categorie_slug": "software",
     "comision": "Variabil",
@@ -12244,7 +12244,7 @@
     "magazin": "eu.sihoo.com",
     "url": "https://eu.sihoo.com",
     "url_afiliat": "https://sihoode.sjv.io/c/7401119/2068993/25863",
-    "logo_url": "https://www.google.com/s2/favicons?domain=eu.sihoo.com&sz=128",
+    "logo_url": "https://icons.duckduckgo.com/ip3/eu.sihoo.com.ico",
     "categorie": "Casă & Grădină",
     "categorie_slug": "casa-gradina",
     "comision": "Variabil",
@@ -12322,7 +12322,7 @@
     "magazin": "experiences.travel.rakuten.com",
     "url": "http://experiences.travel.rakuten.com",
     "url_afiliat": "https://rakutentravelexperiences.sjv.io/c/7401119/3959497/22812",
-    "logo_url": "https://www.google.com/s2/favicons?domain=experiences.travel.rakuten&sz=128",
+    "logo_url": "",
     "categorie": "Călătorii",
     "categorie_slug": "calatorii",
     "comision": "Variabil",
@@ -12530,7 +12530,7 @@
     "magazin": "eu.htvront.com",
     "url": "https://eu.htvront.com/",
     "url_afiliat": "https://htvronteu.pxf.io/c/7401119/3989932/56322",
-    "logo_url": "https://www.google.com/s2/favicons?domain=eu.htvront.com&sz=128",
+    "logo_url": "https://icons.duckduckgo.com/ip3/eu.htvront.com.ico",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "comision": "Variabil",
@@ -12608,7 +12608,7 @@
     "magazin": "sinocrafted.com",
     "url": "https://www.sinocrafted.com",
     "url_afiliat": "https://sinocrafted.pxf.io/c/7401119/3981689/55661",
-    "logo_url": "https://www.google.com/s2/favicons?domain=sinocrafted.com&sz=128",
+    "logo_url": "https://icons.duckduckgo.com/ip3/sinocrafted.com.ico",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "comision": "Variabil",
@@ -12686,7 +12686,7 @@
     "magazin": "shop.oobyte.net",
     "url": "https://shop.oobyte.net",
     "url_afiliat": "https://oobyte.pxf.io/c/7401119/3439368/41310",
-    "logo_url": "https://www.google.com/s2/favicons?domain=shop.oobyte.net&sz=128",
+    "logo_url": "https://icons.duckduckgo.com/ip3/shop.oobyte.net.ico",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "comision": "$4.00 per conversie",
@@ -13362,7 +13362,7 @@
     "magazin": "opheliaeternity.com",
     "url": "https://opheliaeternity.com",
     "url_afiliat": "https://www.awin1.com/cread.php?awinmid=128211&awinaffid=101829567&clickref=",
-    "logo_url": "https://www.google.com/s2/favicons?domain=opheliaeternity.com&sz=128",
+    "logo_url": "",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "comision": "Variabil",
@@ -13648,7 +13648,7 @@
     "magazin": "cronjager.com",
     "url": "https://cronjager.com",
     "url_afiliat": "https://www.awin1.com/cread.php?awinmid=98661&awinaffid=101829567&clickref=",
-    "logo_url": "https://www.google.com/s2/favicons?domain=cronjager.com&sz=128",
+    "logo_url": "",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "comision": "Variabil",
@@ -14012,7 +14012,7 @@
     "magazin": "unaitalianhospitality.com",
     "url": "https://www.unaitalianhospitality.com/en",
     "url_afiliat": "https://unaitalianhospitality.pxf.io/c/7401119/3942268/54325",
-    "logo_url": "https://www.google.com/s2/favicons?domain=unaitalianhospitality.com&sz=128",
+    "logo_url": "",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "comision": "Variabil",
@@ -14114,7 +14114,7 @@
     "magazin": "villassol.com",
     "url": "https://www.villassol.com/en",
     "url_afiliat": "https://villassol.pxf.io/c/7401119/3981773/55886",
-    "logo_url": "https://www.google.com/s2/favicons?domain=villassol.com&sz=128",
+    "logo_url": "",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "comision": "Variabil",
@@ -14210,7 +14210,7 @@
     "magazin": "propnext.com",
     "url": "https://propnext.com",
     "url_afiliat": "https://propnextlrd.pxf.io/c/7401119/3945354/54459",
-    "logo_url": "https://www.google.com/s2/favicons?domain=propnext.com&sz=128",
+    "logo_url": "",
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "comision": "Variabil",
@@ -14607,7 +14607,7 @@
     "scor_final": 30.0,
     "program_id": 7875,
     "unique_code": "9abbbd0e9",
-    "folosit_de": 170
+    "folosit_de": 794
   },
   {
     "magazin": "answear.ro",
@@ -14727,7 +14727,7 @@
     "scor_final": 30.0,
     "program_id": 1677,
     "unique_code": "07b5f0fed",
-    "folosit_de": 620
+    "folosit_de": 245
   },
   {
     "magazin": "kinderauto.ro",
@@ -14847,7 +14847,7 @@
     "scor_final": 30.0,
     "program_id": 2615,
     "unique_code": "bb3071a7d",
-    "folosit_de": 669
+    "folosit_de": 706
   },
   {
     "magazin": "fornello.ro",
@@ -14908,7 +14908,7 @@
     "scor_final": 30.0,
     "program_id": 825,
     "unique_code": "da1148931",
-    "folosit_de": 46
+    "folosit_de": 359
   },
   {
     "magazin": "bazarulonline.ro",
@@ -15719,7 +15719,7 @@
     "scor_final": 30.0,
     "program_id": 7990,
     "unique_code": "9659b7651",
-    "folosit_de": 353
+    "folosit_de": 682
   },
   {
     "magazin": "maprofi.ro",
@@ -16005,7 +16005,7 @@
     "scor_final": 30.0,
     "program_id": 9495,
     "unique_code": "affcc3193",
-    "folosit_de": 532
+    "folosit_de": 747
   },
   {
     "magazin": "erotic24.ro",
@@ -16843,7 +16843,7 @@
     "scor_final": 30.0,
     "program_id": 12159,
     "unique_code": "2c9f51768",
-    "folosit_de": 435
+    "folosit_de": 325
   },
   {
     "magazin": "karcher.com",
@@ -16879,7 +16879,7 @@
     "scor_final": 30.0,
     "program_id": 8194,
     "unique_code": "fef3ef7dc",
-    "folosit_de": 403
+    "folosit_de": 141
   },
   {
     "magazin": "ortopedicus.com",
@@ -17240,7 +17240,7 @@
     "scor_final": 30.0,
     "program_id": 12974,
     "unique_code": "28caed879",
-    "folosit_de": 708
+    "folosit_de": 388
   },
   {
     "magazin": "produsecosmetice.ro",
@@ -18951,7 +18951,7 @@
     "scor_final": 50.0,
     "program_id": 935,
     "unique_code": "cb588f07f",
-    "folosit_de": 33
+    "folosit_de": 73
   },
   {
     "magazin": "chicbijoux.ro",
@@ -19621,7 +19621,7 @@
     "scor_final": 30.0,
     "program_id": 13063,
     "unique_code": "54f9cf4f5",
-    "folosit_de": 612
+    "folosit_de": 691
   },
   {
     "magazin": "vioi.ro",
@@ -20157,7 +20157,7 @@
     "scor_final": 30.0,
     "program_id": 10076,
     "unique_code": "f9db13aad",
-    "folosit_de": 576
+    "folosit_de": 551
   },
   {
     "magazin": "brainmarket.ro",
@@ -20868,7 +20868,7 @@
     "scor_final": 30.0,
     "program_id": 1664,
     "unique_code": "80ef38da6",
-    "folosit_de": 710
+    "folosit_de": 423
   },
   {
     "magazin": "laicashop.ro",
@@ -21229,7 +21229,7 @@
     "scor_final": 50.0,
     "program_id": 13062,
     "unique_code": "ec028ffc2",
-    "folosit_de": 307
+    "folosit_de": 570
   },
   {
     "magazin": "nannie.ro",
@@ -21390,7 +21390,7 @@
     "scor_final": 30.0,
     "program_id": 2662,
     "unique_code": "313128750",
-    "folosit_de": 653
+    "folosit_de": 277
   },
   {
     "magazin": "nano-auto.ro",
@@ -22751,7 +22751,7 @@
     "scor_final": 30.0,
     "program_id": 10085,
     "unique_code": "4ef912004",
-    "folosit_de": 389
+    "folosit_de": 89
   },
   {
     "magazin": "republicabio.ro",
@@ -23762,7 +23762,7 @@
     "scor_final": 30.0,
     "program_id": 11639,
     "unique_code": "ea9693b50",
-    "folosit_de": 131
+    "folosit_de": 642
   },
   {
     "magazin": "bimbimbo.ro",
@@ -24423,7 +24423,7 @@
     "scor_final": 50.0,
     "program_id": 12981,
     "unique_code": "dbde49f67",
-    "folosit_de": 191
+    "folosit_de": 481
   },
   {
     "magazin": "lesami.ro",
@@ -24943,7 +24943,7 @@
     "scor_final": 50.0,
     "program_id": 13016,
     "unique_code": "b0d815997",
-    "folosit_de": 455
+    "folosit_de": 102
   },
   {
     "magazin": "sofipex.ro",
@@ -24979,7 +24979,7 @@
     "scor_final": 30.0,
     "program_id": 13147,
     "unique_code": "598e2955a",
-    "folosit_de": 662
+    "folosit_de": 415
   },
   {
     "magazin": "cloud10beauty.com",
@@ -25040,7 +25040,7 @@
     "scor_final": 50.0,
     "program_id": 13074,
     "unique_code": "c10249894",
-    "folosit_de": 640
+    "folosit_de": 629
   },
   {
     "magazin": "onixbox.ro",
@@ -26371,7 +26371,7 @@
     "magazin": "220-volti.ro",
     "url": "https://220-volti.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F220-volti.ro%2Fsuper-oferte-de-sezon%2F",
-    "logo_url": "",
+    "logo_url": "https://www.google.com/s2/favicons?domain=220-volti.ro&sz=128",
     "categorie": "Online Mall",
     "categorie_slug": "online-mall",
     "comision": "",
@@ -26395,8 +26395,8 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 48,
-    "procent_succes": 82,
+    "folosit_de": 306,
+    "procent_succes": 80,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-09-22",
@@ -26409,7 +26409,7 @@
     "magazin": "fantasyforge.ro",
     "url": "https://fantasyforge.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffantasyforge.ro%2Fcollections%2Fpromo-1-1",
-    "logo_url": "",
+    "logo_url": "https://www.google.com/s2/favicons?domain=fantasyforge.ro&sz=128",
     "categorie": "Online Mall",
     "categorie_slug": "online-mall",
     "comision": "",
@@ -26433,8 +26433,8 @@
         "sursa": "csv_import"
       }
     ],
-    "folosit_de": 379,
-    "procent_succes": 82,
+    "folosit_de": 352,
+    "procent_succes": 78,
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-09-22",

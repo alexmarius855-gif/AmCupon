@@ -1,5 +1,5 @@
 # 💰 TOP MAGAZINE după POTENȚIAL DE CÂȘTIG
-> Generat automat 21.09.2026 14:24. Pe astea să le împingi (articole, pin-uri, postări).
+> Generat automat 22.09.2026 13:36. Pe astea să le împingi (articole, pin-uri, postări).
 
 **Scor = comision × popularitate × ofertă.** Comisionul mare singur înșală — astea-s banii REALI.
 
@@ -17,24 +17,24 @@
 | 10 | Femieko (femieko.ro) | 19% | 0 | 🏷️ ofertă | 26.6 |
 | 11 | Manukashop (manukashop.ro) | 18% | 0 | 🏷️ ofertă | 25.2 |
 | 12 | E Potion (e-potion.ro) | 12% | 0 | ✅ COD | 24.0 |
-| 13 | Tvcmall (tvcmall.com) | 11% | 0 | ✅ COD | 22.0 |
-| 14 | Bcengi (bcengi.com) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 15 | Helloice (helloice.com) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 16 | Labelshop (labelshop.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 17 | Curteaveche (curteaveche.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 18 | Cvlife (cvlife.com) | 10% | 0 | ✅ COD | 20.0 |
-| 19 | Mooyius (mooyius.com) | 12% | 0 | 🏷️ ofertă | 16.8 |
-| 20 | Aronia Charlottenburg (aronia-charlottenburg.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
-| 21 | Avidlove (avidlove.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 22 | Store (store.boyamic.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 23 | Ashimaryhair (ashimaryhair.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 24 | Hototools (hototools.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 25 | Billionconnect (billionconnect.net) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 26 | Comfier (comfier.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 27 | Doctorshield (doctorshield.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 28 | Craftup (craftup.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 29 | Fara Daunatori (fara-daunatori.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 30 | Jojofashion (jojofashion.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 13 | Incaltamintelamoda (incaltamintelamoda.ro) | 12% | 0 | ✅ COD | 24.0 |
+| 14 | Tvcmall (tvcmall.com) | 11% | 0 | ✅ COD | 22.0 |
+| 15 | Bcengi (bcengi.com) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 16 | Helloice (helloice.com) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 17 | Labelshop (labelshop.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 18 | Curteaveche (curteaveche.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 19 | Cvlife (cvlife.com) | 10% | 0 | ✅ COD | 20.0 |
+| 20 | Mooyius (mooyius.com) | 12% | 0 | 🏷️ ofertă | 16.8 |
+| 21 | Aronia Charlottenburg (aronia-charlottenburg.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
+| 22 | Avidlove (avidlove.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 23 | Store (store.boyamic.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 24 | Ashimaryhair (ashimaryhair.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 25 | Hototools (hototools.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 26 | Billionconnect (billionconnect.net) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 27 | Comfier (comfier.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 28 | Doctorshield (doctorshield.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 29 | Craftup (craftup.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 30 | Fara Daunatori (fara-daunatori.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
 
 ## 🎯 Cum folosești raportul
 - **Top 10** = prioritate maximă pentru articole „cel mai bun X" + pin-uri Pinterest
