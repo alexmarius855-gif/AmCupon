@@ -17,7 +17,7 @@ export default function OtterPage() {
       name: "Otter",
       tagline: "Fashion urban si streetwear — stil autentic pentru cei care cuteaza",
       emoji: "🧢",
-      desc: "Coduri de reducere Otter verificate zilnic. Reduceri la colectii streetwear, incaltaminte urban si accesorii de moda.",
+      desc: "Coduri de reducere Otter actualizate zilnic. Reduceri la colectii streetwear, incaltaminte urban si accesorii de moda.",
       editorial: [
         "Otter.ro este un brand romanesc de fashion urban si streetwear, cu colectii originale de haine, incaltaminte si accesorii cu un stil distinctiv si modern. Platforma se adreseaza tinerilor care isi doresc un look autentic, diferit de mainstream-ul fast fashion.",
         "Pe AmCupon.ro monitorizam promotiile Otter si publicam codurile de reducere active. Otter lanseza frecvent colectii limitate si drop-uri exclusive — abonarea la newsletter sau la grupul de social media e esentiala pentru a nu rata lansarile.",

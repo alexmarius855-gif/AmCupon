@@ -83,7 +83,7 @@ export default function AnimalePage() {
             <div className="text-5xl mb-4">🐾</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Pet Shop cu Reducere {an}</h1>
             <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              Hrana, jucarii si accesorii pentru animalele tale de companie la preturi mici. Petmart, Petmax, Bravapet si alte magazine verificate zilnic.
+              Hrana, jucarii si accesorii pentru animalele tale de companie la preturi mici. Petmart, Petmax, Bravapet si alte magazine actualizate zilnic.
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Caini","Pisici","Pasari","Rozatoare","Pesti","Reptile","Accesorii"].map(c => (

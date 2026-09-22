@@ -79,14 +79,14 @@ export default function TelefoaneePage() {
           <div className="relative max-w-6xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-[#ddf93c]/20 border border-[#ddf93c]/30 text-[#c3dd2c] text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
               <span className="w-1.5 h-1.5 rounded-full bg-[#ddf93c] animate-pulse"/>
-              Oferte verificate zilnic
+              Oferte actualizate zilnic
             </div>
             <div className="text-6xl mb-5 drop-shadow-2xl">📲</div>
             <h1 className="text-4xl md:text-5xl font-black text-[#ffffff] mb-4 tracking-tight">
               Telefoane cu Reducere <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #2dd4bf, #ddf93c)"}}>{an}</span>
             </h1>
             <p className="text-[#c9ced5] text-lg mb-8 max-w-xl mx-auto leading-relaxed">
-              Samsung, iPhone, Xiaomi, OnePlus — coduri reducere verificate zilnic la eMAG, Altex, Flanco, Orange
+              Samsung, iPhone, Xiaomi, OnePlus — coduri reducere actualizate zilnic la eMAG, Altex, Flanco, Orange
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Samsung Galaxy","iPhone 15","Xiaomi 14","OnePlus 13","Sub 1000 lei","Sub 2000 lei","5G"].map(c => (

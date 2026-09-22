@@ -17,7 +17,7 @@ export default function LiteraPage() {
       name: "Litera",
       tagline: "Una dintre cele mai mari edituri din Romania — carti pentru toate varstele",
       emoji: "📚",
-      desc: "Coduri de reducere Litera verificate zilnic. Reduceri la carti din toate genurile, de la fictiune si non-fictiune la carti pentru copii si manuale.",
+      desc: "Coduri de reducere Litera actualizate zilnic. Reduceri la carti din toate genurile, de la fictiune si non-fictiune la carti pentru copii si manuale.",
       editorial: [
         "Litera este una dintre cele mai importante si mai mari edituri din Romania, cu un portofoliu de mii de titluri in toate genurile: literatura romana si straina, non-fictiune, carti pentru copii, manuale scolare, ghiduri practice si carti de sport. Litera a publicat multi bestselleri internationali si autori romani consacrati.",
         "Pe AmCupon.ro monitorizarm promotiile Litera si publicam codurile de reducere active. Momentele cele mai bune pentru cumparaturi sunt in perioadele Back to School (august-septembrie), Sarbatorile de iarna si in campania 'Un an cu carti' de la inceput de an.",

@@ -225,7 +225,7 @@ export default function CategorieClient({ magazine, numeCategorie, slug, produse
           </h2>
           <div className="grid md:grid-cols-3 gap-6 text-sm text-[#c9ced5]">
             <div>
-              <h3 className="font-bold text-[#ffffff] mb-2">✅ Coduri verificate zilnic</h3>
+              <h3 className="font-bold text-[#ffffff] mb-2">✅ Coduri actualizate zilnic</h3>
               <p>
                 Toate codurile de reducere {numeCategorie} de pe AmCupon.ro sunt verificate automat.
                 Afișăm zilele rămase până la expirare pentru fiecare cod în parte.

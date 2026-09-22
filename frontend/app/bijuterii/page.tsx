@@ -69,7 +69,7 @@ export default function BijuteriiPage() {
             <div className="text-5xl mb-4">💍</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Bijuterii cu Reducere {an}</h1>
             <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              Inele, coliere, bratari si seturi bijuterii la preturi reduse. Fluturasi, Novvu, Bijubox si alte magazine verificate zilnic.
+              Inele, coliere, bratari si seturi bijuterii la preturi reduse. Fluturasi, Novvu, Bijubox si alte magazine actualizate zilnic.
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Inele","Coliere","Bratari","Verighete","Cercei","Aur","Argint","Cristale"].map(c => (

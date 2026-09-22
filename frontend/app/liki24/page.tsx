@@ -24,7 +24,7 @@ export default function Liki24Page() {
       name: "Liki24",
       tagline: "Farmacie online — medicamente, suplimente si cosmetice la preturi mici",
       emoji: "🏥",
-      desc: "Coduri de reducere Liki24 farmacie online verificate zilnic. Reduceri la medicamente OTC, suplimente si cosmetice dermatologice.",
+      desc: "Coduri de reducere Liki24 farmacie online actualizate zilnic. Reduceri la medicamente OTC, suplimente si cosmetice dermatologice.",
       editorial: [
         "Liki24 este o farmacie online moderna care ofera medicamente fara prescriptie (OTC), suplimente alimentare, produse dermatocosmetice si articole de ingrijire personala la preturi competitive. Platforma are o gama extinsa de branduri farmaceutice si un sistem simplu de comanda.",
         "Pe AmCupon.ro publicam toate promotiile Liki24 disponibile. Reducerile se gasesc frecvent la suplimente vitamine si minerale, produse cosmetice dermatologice si articole de sezon (produse anti-raceala, creme solare).",

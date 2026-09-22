@@ -24,7 +24,7 @@ export default function AnswearPage() {
       name: "Answear",
       tagline: "Fashion online — branduri internationale la preturi accesibile",
       emoji: "👗",
-      desc: "Coduri de reducere Answear verificate zilnic. Reduceri la haine, incaltaminte si accesorii de la peste 300 branduri internationale.",
+      desc: "Coduri de reducere Answear actualizate zilnic. Reduceri la haine, incaltaminte si accesorii de la peste 300 branduri internationale.",
       editorial: [
         "Answear.ro este unul dintre cele mai mari magazine de fashion online din Romania, cu o oferta de peste 300 de branduri internationale: Nike, Adidas, Guess, Calvin Klein, Tommy Hilfiger, Liu Jo si multe altele. Platforma ofera haine, incaltaminte si accesorii pentru barbati, femei si copii.",
         "Pe AmCupon.ro monitorizam ofertele Answear si publicam zilnic codurile de reducere active. Answear are frecvent promotii de sezon — salduri de vara si iarna cu reduceri de pana la 70%, plus promotii punctuale la colectii noi si branduri selectate.",

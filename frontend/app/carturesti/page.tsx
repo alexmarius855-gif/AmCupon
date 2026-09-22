@@ -24,7 +24,7 @@ export default function CarturestiPage() {
       name: "Carturesti",
       tagline: "Libraria culturala a Romaniei — carti, muzica, film si cadouri",
       emoji: "📚",
-      desc: "Coduri de reducere Carturesti verificate zilnic. Reduceri la carti romanesti si straine, jocuri de societate, papetarie.",
+      desc: "Coduri de reducere Carturesti actualizate zilnic. Reduceri la carti romanesti si straine, jocuri de societate, papetarie.",
       editorial: [
         "Carturesti este cea mai cunoscuta retea de librarii din Romania, cu prezenta atat fizica (librarii in marile orase) cat si online. Oferita o selectie vasta de carti romanesti si internationale, jocuri de societate, muzica, film si produse de papetarie premium.",
         "Pe AmCupon.ro monitorizam permanent promotiile Carturesti — de la reduceri la titluri noi la campanii de aniversare cu discounturi de 20-40% la intreaga gama. Codurile de reducere Carturesti sunt actualizate zilnic.",

@@ -24,7 +24,7 @@ export default function AltexPage() {
       name: "Altex",
       tagline: "Cel mai mare retailer de electronice si electrocasnice din Romania",
       emoji: "🖥️",
-      desc: "Reduceri si coduri de reducere Altex verificate zilnic. Electronice, electrocasnice, IT.",
+      desc: "Reduceri si coduri de reducere Altex actualizate zilnic. Electronice, electrocasnice, IT.",
       editorial: [
         "Altex este unul dintre cei mai mari retaileri de electronice si electrocasnice din Romania, cu peste 100 de magazine fizice in toata tara si un magazin online complet. Lansat in 1993, Altex a crescut de la un mic magazin la un imperiu al electronicelor cu mii de produse.",
         "Pe AmCupon.ro monitorizam zilnic promotiile Altex si le afisam actualizate. Gasesti oferte la televizoare, laptopuri, telefoane, frigidere, masini de spalat si sute de alte produse. Reducerile Altex pot ajunge pana la 50% in perioadele promotionale.",

@@ -26,7 +26,7 @@ export const CAT_FAQ: Record<string, { q: string; a: string }[]> = {
     { q: "Cum aleg jucarii sigure la pret bun?", a: "Cauta branduri cunoscute (LEGO, Hasbro, Mattel) folosind filtrul de Brand si sorteaza dupa discount. Produsele listate sunt de la magazine certificate." },
   ],
   farmacie: [
-    { q: "Pot cumpara medicamente si suplimente mai ieftin online?", a: "Da, in categoria Farmacie gasesti suplimente, vitamine si produse naturiste de la Dr. Max, Farmacia Tei, Catena si alte farmacii online cu reduceri verificate zilnic." },
+    { q: "Pot cumpara medicamente si suplimente mai ieftin online?", a: "Da, in categoria Farmacie gasesti suplimente, vitamine si produse naturiste de la Dr. Max, Farmacia Tei, Catena si alte farmacii online cu reduceri actualizate zilnic." },
     { q: "Cum gasesc cel mai ieftin supliment alimentar?", a: "Foloseste cautarea cu numele produsului, compara preturile intre magazine cu filtrul Magazin si sorteaza dupa Pret crescator pentru cel mai bun pret." },
   ],
   carti: [

@@ -153,7 +153,7 @@ export async function generateMetadata({
     ? `Cod Reducere ${numeCateg} ${luna} ${an} — ${cuCod} coduri active | AmCupon.ro`
     : `Coduri reducere ${numeCateg} ${an} — ${cuPromo} oferte active | AmCupon.ro`;
 
-  const description = `${cuPromo > 0 ? `✅ ${cuPromo} promotii active` : "Promotii verificate"} la ${mag.length} magazine de ${numeCateg} din Romania. ${cuCod > 0 ? `${cuCod} coduri reducere active in ${luna} ${an}. ` : ""}Oferte verificate zilnic pe AmCupon.ro.`;
+  const description = `${cuPromo > 0 ? `✅ ${cuPromo} promotii active` : "Promotii verificate"} la ${mag.length} magazine de ${numeCateg} din Romania. ${cuCod > 0 ? `${cuCod} coduri reducere active in ${luna} ${an}. ` : ""}Oferte actualizate zilnic pe AmCupon.ro.`;
 
   return {
     title,

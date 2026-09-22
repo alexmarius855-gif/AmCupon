@@ -24,7 +24,7 @@ export default function AmazonPage() {
       name: "Amazon",
       tagline: "Cel mai mare marketplace din lume — milioane de produse livrate in Romania",
       emoji: "📦",
-      desc: "Coduri reducere Amazon verificate zilnic. Electronice, carti, fashion, produse casa si milioane de alte produse cu livrare rapida in Romania prin Amazon Global.",
+      desc: "Coduri reducere Amazon actualizate zilnic. Electronice, carti, fashion, produse casa si milioane de alte produse cu livrare rapida in Romania prin Amazon Global.",
       editorial: [
         "Amazon este cel mai mare retailer online din lume, cu peste 350 de milioane de produse in catalog. In Romania, Amazon livreaza prin Amazon Global Store, oferind acces la branduri si produse indisponibile local — de la electronice Apple, Samsung si Sony, la carti in engleza, gadgeturi, produse beauty si articole pentru casa.",
         "Pe AmCupon.ro monitorizam toate promotiile Amazon disponibile pentru Romania — reduceri zilnice Lightning Deals, oferte Prime, campanii Black Friday si Cyber Monday. Amazon Prime Members beneficiaza de reduceri exclusive si livrare gratuita, iar sectiunea Warehouse Deals ofera produse resigilate la preturi semnificativ reduse.",

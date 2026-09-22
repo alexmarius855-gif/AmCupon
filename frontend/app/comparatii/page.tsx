@@ -83,7 +83,7 @@ export default function ComparatiiPage() {
             <h1 className="text-4xl font-bold text-[#ffffff] mb-3">Comparatii Magazine Online</h1>
             <p className="text-[#c9ced5] text-lg max-w-2xl mx-auto">
               Nu stii unde sa cumperi? Comparam cele mai populare magazine online din Romania
-              ca sa iei decizia corecta — cu coduri de reducere verificate zilnic.
+              ca sa iei decizia corecta — cu coduri de reducere actualizate zilnic.
             </p>
           </div>
 

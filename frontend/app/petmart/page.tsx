@@ -24,7 +24,7 @@ export default function PetmartPage() {
       name: "Petmart",
       tagline: "Tot ce are nevoie animalul tau — hrana, accesorii si ingrijire",
       emoji: "🐾",
-      desc: "Coduri de reducere Petmart verificate zilnic. Reduceri la hrana caini si pisici, accesorii si produse veterinare.",
+      desc: "Coduri de reducere Petmart actualizate zilnic. Reduceri la hrana caini si pisici, accesorii si produse veterinare.",
       editorial: [
         "Petmart este unul dintre cele mai mari magazine online specializate pentru animale de companie din Romania. Ofera o gama completa de produse pentru caini, pisici, pasari, pesti si animale mici — de la hrana premium la accesorii, jucarii si produse de ingrijire.",
         "Pe AmCupon.ro publicam toate promotiile Petmart actualizate. Reducerile sunt frecvente pe hrana uscata si umeda in pachete mari, accesorii sezoniere si produse veterinare fara prescriptie.",

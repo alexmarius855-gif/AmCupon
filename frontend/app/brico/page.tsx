@@ -24,7 +24,7 @@ export default function BricoPage() {
       name: "Brico",
       tagline: "Materiale de constructii, unelte si gradina la preturi avantajoase",
       emoji: "🔨",
-      desc: "Coduri de reducere Brico verificate zilnic. Reduceri la materiale constructii, unelte, gradina si amenajari interioare.",
+      desc: "Coduri de reducere Brico actualizate zilnic. Reduceri la materiale constructii, unelte, gradina si amenajari interioare.",
       editorial: [
         "Brico Depot este unul dintre cei mai mari retaileri de materiale de constructii si bricolaj din Romania, parte din grupul Kingfisher. Ofera o gama completa de produse pentru constructie, renovare, gradinarit si amenajari interioare — de la vopsele si parchet la unelte profesionale si mobilier de gradina.",
         "Pe AmCupon.ro monitorizam promotiile Brico Depot si publicam ofertele actualizate. Reducerile se gasesc frecvent la materiale de sezon, unelte si produse de gradina in perioadele de primavara si vara.",

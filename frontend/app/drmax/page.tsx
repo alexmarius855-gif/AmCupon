@@ -24,7 +24,7 @@ export default function DrmaxPage() {
       name: "Dr. Max",
       tagline: "Farmacia online de incredere — medicamente, suplimente si cosmetice",
       emoji: "💊",
-      desc: "Coduri de reducere Dr. Max farmacie online verificate zilnic. Reduceri la medicamente OTC, suplimente si cosmetice.",
+      desc: "Coduri de reducere Dr. Max farmacie online actualizate zilnic. Reduceri la medicamente OTC, suplimente si cosmetice.",
       editorial: [
         "Dr. Max este unul dintre cele mai mari lanturi de farmacii din Romania, cu sute de unitati fizice si o platforma online completa. Farmacia online Dr. Max ofera medicamente fara prescriptie (OTC), suplimente alimentare, produse dermatocosmetice si articole de ingrijire personala.",
         "Pe AmCupon.ro publicam toate promotiile Dr. Max disponibile — de la reduceri la suplimente la campanii sezoniere pe produse de raceala si gripa. Codurile de reducere Dr. Max sunt verificate si actualizate zilnic.",

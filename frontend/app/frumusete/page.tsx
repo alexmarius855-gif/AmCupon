@@ -66,7 +66,7 @@ export default function FrumusetePage() {
             <div className="text-5xl mb-4">💄</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Beauty & Cosmetice cu Reducere {an}</h1>
             <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              Parfumuri originale, skincare premium, machiaj — coduri de reducere verificate zilnic la Notino, Douglas, Sephora
+              Parfumuri originale, skincare premium, machiaj — coduri de reducere actualizate zilnic la Notino, Douglas, Sephora
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {SUBCATEGORII.map(s => (

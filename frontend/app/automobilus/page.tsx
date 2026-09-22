@@ -17,7 +17,7 @@ export default function AutomobilusPage() {
       name: "Automobilus",
       tagline: "Piese auto, accesorii si consumabile — tot ce are nevoie masina ta",
       emoji: "🚗",
-      desc: "Coduri de reducere Automobilus verificate zilnic. Reduceri la piese auto, uleiuri, filtre, accesorii si consumabile auto.",
+      desc: "Coduri de reducere Automobilus actualizate zilnic. Reduceri la piese auto, uleiuri, filtre, accesorii si consumabile auto.",
       editorial: [
         "Automobilus.ro este un magazin online specializat in piese auto, accesorii si consumabile pentru autoturisme, avand un catalog extins de sute de mii de referinte pentru toate marcile si modelele auto comune in Romania. De la filtre si uleiuri pana la piese de schimb si accesorii, Automobilus acopera tot ce are nevoie masina ta.",
         "Pe AmCupon.ro monitorizam ofertele Automobilus si publicam codurile de reducere active. Reducerile apar frecvent la uleiurile de motor si filtre, la accesorii sezoniere (anvelope, lichide antigel) si in campaniile speciale de revizie.",

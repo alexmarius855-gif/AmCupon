@@ -14,14 +14,14 @@ export const CAT_META: Record<string, {
   electronice: {
     label: "Electronice & IT",
     emoji: "💻",
-    desc: "Telefoane, laptopuri, tablete, TV si gadgeturi la reducere. Oferte electronice verificate zilnic din magazinele partenere.",
+    desc: "Telefoane, laptopuri, tablete, TV si gadgeturi la reducere. Oferte electronice actualizate zilnic din magazinele partenere.",
     h1: "Electronice & IT la Reducere",
     keywords: ["telefoane reducere romania", "laptop reducere", "electronice oferte", "it deals 2026"],
   },
   beauty: {
     label: "Frumusete & Cosmetice",
     emoji: "💄",
-    desc: "Parfumuri, skincare, makeup si produse de ingrijire la reducere. Oferte beauty din magazinele partenere, verificate zilnic.",
+    desc: "Parfumuri, skincare, makeup si produse de ingrijire la reducere. Oferte beauty din magazinele partenere, actualizate zilnic.",
     h1: "Produse Beauty la Reducere",
     keywords: ["cosmetice reducere romania", "parfumuri oferte", "skincare reduceri", "beauty deals"],
   },
@@ -42,14 +42,14 @@ export const CAT_META: Record<string, {
   copii: {
     label: "Copii & Jucarii",
     emoji: "🧸",
-    desc: "Jucarii, haine copii, carucioare si accesorii bebelusi la reducere. Oferte pentru copii, verificate zilnic.",
+    desc: "Jucarii, haine copii, carucioare si accesorii bebelusi la reducere. Oferte pentru copii, actualizate zilnic.",
     h1: "Jucarii & Produse Copii la Reducere",
     keywords: ["jucarii reducere romania", "haine copii oferte", "bebelusi reduceri", "jucarii deals"],
   },
   farmacie: {
     label: "Farmacie & Sanatate",
     emoji: "💊",
-    desc: "Medicamente, suplimente, vitamine si produse naturale la reducere. Oferte farmacie online Romania, verificate zilnic.",
+    desc: "Medicamente, suplimente, vitamine si produse naturale la reducere. Oferte farmacie online Romania, actualizate zilnic.",
     h1: "Produse Farmacie & Sanatate la Reducere",
     keywords: ["farmacie reducere romania", "suplimente oferte", "vitamine reduceri", "sanatate deals"],
   },
@@ -77,7 +77,7 @@ export const CAT_META: Record<string, {
   alimente: {
     label: "Alimente & Supermarket",
     emoji: "🛒",
-    desc: "Alimente, bauturi, cafea, ceai si produse bio la reducere. Oferte supermarket online Romania, verificate zilnic.",
+    desc: "Alimente, bauturi, cafea, ceai si produse bio la reducere. Oferte supermarket online Romania, actualizate zilnic.",
     h1: "Alimente & Bauturi la Reducere",
     keywords: ["alimente reducere romania", "supermarket online oferte", "cafea reduceri", "food deals"],
   },

@@ -27,7 +27,7 @@ const MESAJE_STATICE: AnuntItem[] = [
   // Fara numar hardcodat: numarul REAL vine din nav-index.json in useEffect-ul de mai
   // jos. Inainte scria "300+" (stale de luni de zile, cand site-ul are 1177) si asta
   // era exact textul pe care Google il vedea in HTML-ul server-side, pe FIECARE pagina.
-  { text: "Magazine partenere — coduri verificate zilnic", href: "/toate-magazinele", emoji: "🛍️" },
+  { text: "Magazine partenere — coduri actualizate zilnic", href: "/toate-magazinele", emoji: "🛍️" },
   { text: "Extensie Chrome — in curs de lansare, anunta-te acum", href: "/extensie", emoji: "🧩" },
   { text: "Newsletter gratuit — top 5 oferte zilnic pe email", href: "/newsletter", emoji: "📬" },
 ];
@@ -67,7 +67,7 @@ export default function AnuntAnimat() {
         const totalMagazine = Array.isArray(data) ? data.length : 0;
         const statice: AnuntItem[] = totalMagazine > 0
           ? [
-              { text: `${totalMagazine} magazine partenere — coduri verificate zilnic`, href: "/toate-magazinele", emoji: "🛍️" },
+              { text: `${totalMagazine} magazine partenere — coduri actualizate zilnic`, href: "/toate-magazinele", emoji: "🛍️" },
               ...MESAJE_STATICE.slice(1),
             ]
           : MESAJE_STATICE;

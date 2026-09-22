@@ -185,7 +185,7 @@ export default function Footer({ magazineInDate }: { magazineInDate?: string[] }
               <span className="font-black text-[#ffffff] text-xl">Cupon<span className="text-[#ddf93c]">.ro</span></span>
             </Link>
             <p className="text-sm leading-relaxed text-[#9399a0] mb-5">
-              Coduri de reducere verificate zilnic de la cele mai mari magazine online din Romania.
+              Coduri de reducere actualizate zilnic de la cele mai mari magazine online din Romania.
               100% gratuit.
             </p>
             {/* Social */}

@@ -24,7 +24,7 @@ export default function AsosPage() {
       name: "ASOS",
       tagline: "Peste 850 branduri de fashion international cu livrare rapida in Romania",
       emoji: "👔",
-      desc: "Coduri reducere ASOS verificate zilnic. Fashion pentru tineri — haine, incaltaminte, accesorii de la Nike, Adidas, Calvin Klein, Tommy Hilfiger si sute de alte branduri.",
+      desc: "Coduri reducere ASOS actualizate zilnic. Fashion pentru tineri — haine, incaltaminte, accesorii de la Nike, Adidas, Calvin Klein, Tommy Hilfiger si sute de alte branduri.",
       editorial: [
         "ASOS este unul dintre cele mai mari magazine de fashion online din lume, cu peste 850 de branduri si mii de produse proprii ASOS Design. Platforma britanica livreaza in Romania si ofera acces la tendintele internationale la preturi competitive — de la streetwear si casual wear, la tinute de ocazie si sportswear.",
         "Pe AmCupon.ro publicam zilnic codurile de reducere ASOS si promotiile active. ASOS are campanii regulate cu reduceri de 10-30% valabile uneori doar 24-48 ore, plus o sectiune SALE permanenta unde gasesti articole cu pana la 70% reducere din colectiile anterioare.",

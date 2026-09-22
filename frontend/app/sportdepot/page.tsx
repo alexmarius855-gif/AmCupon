@@ -17,7 +17,7 @@ export default function SportDepotPage() {
       name: "Sport Depot",
       tagline: "Echipament sportiv pentru orice sport si orice nivel",
       emoji: "⚽",
-      desc: "Coduri de reducere Sport Depot verificate zilnic. Reduceri la echipament, imbracaminte si incaltaminte sport de la branduri internationale.",
+      desc: "Coduri de reducere Sport Depot actualizate zilnic. Reduceri la echipament, imbracaminte si incaltaminte sport de la branduri internationale.",
       editorial: [
         "Sport Depot este un retailer specializat in echipament sportiv cu prezenta in Romania, oferind produse pentru fotbal, baschet, fitness, alergare, ciclism, inot si alte sporturi. Platforma are branduri internationale Nike, Adidas, Puma, Under Armour, Asics si propria linie de produse.",
         "Pe AmCupon.ro monitorizam toate promotiile Sport Depot si le publicam zilnic. Reducerile majore apar la schimbarea sezonului (colectii noi primavara-vara si toamna-iarna), in perioadele Back to School si inainte de marile competitii sportive.",

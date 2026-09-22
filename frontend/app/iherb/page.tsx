@@ -24,7 +24,7 @@ export default function IherbPage() {
       name: "iHerb",
       tagline: "Cel mai mare magazin online de suplimente si produse naturale din lume",
       emoji: "🌿",
-      desc: "Coduri reducere iHerb verificate zilnic. Suplimente alimentare, vitamine, proteine, produse bio si beauty naturala la preturi cu pana la 40% sub magazinele romanesti.",
+      desc: "Coduri reducere iHerb actualizate zilnic. Suplimente alimentare, vitamine, proteine, produse bio si beauty naturala la preturi cu pana la 40% sub magazinele romanesti.",
       editorial: [
         "iHerb este cel mai mare retailer online de suplimente alimentare, vitamine si produse naturale din lume, cu peste 30.000 de produse si livrare in Romania. Platforma americana ofera branduri de top — NOW Foods, Solgar, Nature's Way, Garden of Life, Optimum Nutrition — la preturi semnificativ mai mici decat in farmaciile si magazinele bio romanesti.",
         "Pe AmCupon.ro publicam toate promotiile iHerb disponibile in Romania: reduceri la prima comanda, oferte saptamanale la produse selectate, Flash Sales de 24 ore si cashback pe achizitiile repetate. iHerb are un sistem de recenzii extrem de detaliat — mii de clienti din toata lumea evalueaza produsele, ceea ce ajuta la luarea deciziei corecte.",

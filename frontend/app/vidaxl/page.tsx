@@ -25,7 +25,7 @@ export default function VidaxlPage() {
       name: "vidaXL",
       tagline: "Mobilier, gradina si articole pentru casa la preturi mici",
       emoji: "🛋️",
-      desc: "Coduri de reducere vidaXL verificate zilnic. Reduceri la mobilier, gradina, articole sport si auto la preturi accesibile.",
+      desc: "Coduri de reducere vidaXL actualizate zilnic. Reduceri la mobilier, gradina, articole sport si auto la preturi accesibile.",
       editorial: [
         "vidaXL este un retailer online olandez cu prezenta globala, specializat in mobila, articole de gradina, sport si bricolaj la preturi accesibile. Magazinul roman vidaXL.ro ofera mii de produse din aceste categorii cu livrare rapida si retururi simple.",
         "Pe AmCupon.ro monitorizam ofertele vidaXL si publicam codurile de reducere active. Platforma are frecvent promotii la mobilier de gradina in primavara-vara, mobilier interior in perioadele de renovare si articole sport in sezon.",

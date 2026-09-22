@@ -24,7 +24,7 @@ export default function DecathlonPage() {
       name: "Decathlon",
       tagline: "Echipamente sportive de calitate la preturi accesibile",
       emoji: "🏃",
-      desc: "Reduceri si coduri de reducere Decathlon verificate zilnic. Sport, fitness, biciclete.",
+      desc: "Reduceri si coduri de reducere Decathlon actualizate zilnic. Sport, fitness, biciclete.",
       editorial: [
         "Decathlon este cel mai mare retailer de articole sportive din lume, prezent si in Romania cu magazine mari in orasele principale si un magazin online complet. Brandul francez ofera echipamente pentru peste 70 de sporturi, de la fitness la alpinism, inot si ciclism.",
         "Pe AmCupon.ro monitorizam promotiile Decathlon si le publicam imediat. Decathlon are frecvent reduceri de 20-40% la sfarsit de sezon (iarna pe echipament de vara si invers), campanii periodice si oferte la brandurile proprii (Quechua, Domyos, B'Twin, etc.).",

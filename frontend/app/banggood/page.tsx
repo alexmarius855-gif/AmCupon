@@ -24,7 +24,7 @@ export default function BanggoodPage() {
       name: "Banggood",
       tagline: "Gadgeturi, electronice si unelte directe de la producatori — preturi imbatabile",
       emoji: "🔧",
-      desc: "Coduri reducere Banggood verificate zilnic. Drone, gadgeturi tech, unelte, jucarii RC si electronice la preturi de producator cu livrare in Romania.",
+      desc: "Coduri reducere Banggood actualizate zilnic. Drone, gadgeturi tech, unelte, jucarii RC si electronice la preturi de producator cu livrare in Romania.",
       editorial: [
         "Banggood este unul dintre cele mai mari marketplace-uri chineze specializate in gadgeturi, electronice, unelte si hobby tech. Platforma ofera acces direct la produse de la producatori — drone DJI-like, imprimante 3D, unelte electrice, gadgeturi smart home, echipamente foto si mii de alte produse tehnologice la preturi mult sub retailerii traditionali.",
         "Pe AmCupon.ro publicam toate codurile de reducere Banggood si promotiile active pentru Romania. Banggood are Flash Deals zilnice cu reduceri de 30-70%, campanii saptamanale pe categorii si un sistem de cupoane stivuibile — poti combina discount-ul de cont cu codul promotional pentru economii maxime.",

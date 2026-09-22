@@ -139,7 +139,7 @@ export default function ServiciiPage() {
             Servicii cu <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #c3dd2c, #ddf93c, #ddf93c)" }}>Reducere</span>
           </h1>
           <p className="text-[#c9ced5] text-lg max-w-2xl mx-auto mb-6">
-            Coduri de reducere la servicii online verificate zilnic: sanatate si estetica, cursuri, software, hosting, telecomunicatii. Tot ce folosesti, mai ieftin.
+            Coduri de reducere la servicii online actualizate zilnic: sanatate si estetica, cursuri, software, hosting, telecomunicatii. Tot ce folosesti, mai ieftin.
           </p>
           <div className="flex flex-wrap justify-center gap-2">
             {ordineCateg.map(c => (

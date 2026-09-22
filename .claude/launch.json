@@ -7,6 +7,13 @@
       "runtimeArgs": ["run", "dev"],
       "cwd": "C:/Users/alexm/Projects/afiliere-site/frontend",
       "port": 3000
+    },
+    {
+      "name": "amcupon-prod",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["start"],
+      "cwd": "C:/Users/alexm/Projects/afiliere-site/frontend",
+      "port": 3000
     }
   ]
 }

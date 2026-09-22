@@ -17,7 +17,7 @@ export default function PetmaxPage() {
       name: "Petmax",
       tagline: "Hrana si accesorii pentru animale — totul pentru prietenul tau blanos",
       emoji: "🐕",
-      desc: "Coduri de reducere Petmax verificate zilnic. Reduceri la hrana premium, accesorii si produse de ingrijire pentru caini, pisici si alte animale.",
+      desc: "Coduri de reducere Petmax actualizate zilnic. Reduceri la hrana premium, accesorii si produse de ingrijire pentru caini, pisici si alte animale.",
       editorial: [
         "Petmax.ro este un magazin online specializat in produse pentru animale de companie, cu o gama larga de hrana uscata si umeda, accesorii, jucarii, produse de ingrijire si tratamente. Platforma ofera branduri premium ca Royal Canin, Hill's, Purina Pro Plan, Brit si multe altele.",
         "Pe AmCupon.ro monitorizam ofertele Petmax si publicam codurile de reducere active. Reducerile apar frecvent la hrana in cantitati mari (saci 10-15 kg), la lansari de produse noi si in perioadele de promotii sezoniere.",

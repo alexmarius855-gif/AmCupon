@@ -24,7 +24,7 @@ export default function NorielPage() {
       name: "Noriel",
       tagline: "Cel mai mare magazin de jucarii din Romania — LEGO, jocuri si distractie",
       emoji: "🧸",
-      desc: "Coduri de reducere Noriel jucarii verificate zilnic. Reduceri la jucarii, seturi LEGO, jocuri de societate si articole pentru copii.",
+      desc: "Coduri de reducere Noriel jucarii actualizate zilnic. Reduceri la jucarii, seturi LEGO, jocuri de societate si articole pentru copii.",
       editorial: [
         "Noriel este cel mai mare lant de magazine de jucarii din Romania, cu prezenta atat in marile centre comerciale cat si online. Oferita o gama completa de jucarii pentru toate varstele — de la jucarii pentru bebelusi la seturi LEGO complexe si jocuri de societate pentru familie.",
         "Pe AmCupon.ro monitorizam toate promotiile Noriel si le publicam actualizate. Cele mai importante perioade promotionale sunt inainte de Craciun, de Paste si in perioadele back-to-school, cand reducerile pot ajunge la 40-50%.",

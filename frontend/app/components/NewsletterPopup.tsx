@@ -93,12 +93,28 @@ export default function NewsletterPopup() {
     }
   }
 
+  // Escape inchide dialogul (22.09.2026). Popup-ul acopera tot ecranul cu un backdrop
+  // blurat; fara tasta asta, singurele iesiri erau butonul „x" si clicul pe fundal —
+  // amandoua cer mouse-ul. Escape e ce incearca oricine intai pe un dialog modal.
+  useEffect(() => {
+    if (!visible) return;
+    function onKey(e: KeyboardEvent) {
+      if (e.key === "Escape") close();
+    }
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [visible]);
+
   if (!visible) return null;
 
   return (
     <div
       className="fixed inset-0 z-[100] flex items-end sm:items-center justify-center p-4 bg-black/40 backdrop-blur-sm"
       onClick={(e) => e.target === e.currentTarget && close()}
+      role="dialog"
+      aria-modal="true"
+      aria-label="Aboneaza-te la newsletter"
     >
       <div className="bg-[#14181c] border border-[#1f2329] rounded-xl shadow-2xl w-full max-w-md overflow-hidden animate-in slide-in-from-bottom-4 duration-300">
 
@@ -107,6 +123,7 @@ export default function NewsletterPopup() {
           <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 80% at 50% 0%, rgba(13,148,136,0.25) 0%, transparent 70%)" }} />
           <button
             onClick={close}
+            aria-label="Inchide"
             className="absolute z-10 top-4 right-4 text-[#9399a0] hover:text-[#ffffff] transition-colors text-xl font-bold"
           >
             &#x2715;

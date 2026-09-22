@@ -73,7 +73,7 @@ export default function GamingPage() {
           <div className="relative max-w-6xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-[#ddf93c]/20 border border-[#ddf93c]/30 text-[#c3dd2c] text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
               <span className="w-1.5 h-1.5 rounded-full bg-[#ddf93c] animate-pulse"/>
-              Oferte verificate zilnic
+              Oferte actualizate zilnic
             </div>
             <div className="text-6xl mb-5 drop-shadow-2xl">🎮</div>
             <h1 className="text-4xl md:text-5xl font-black text-[#ffffff] mb-4 tracking-tight">

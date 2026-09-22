@@ -131,8 +131,8 @@ export async function generateMetadata(
     ? `Oferte ${catLabel} de Azi — Reduceri ${luna} ${an} | AmCupon.ro`
     : `Oferte de Azi Romania — Toate Promotiile Active ${luna} ${an} | AmCupon.ro`;
   const description = catLabel
-    ? `Toate ofertele active ${catLabel} din Romania pentru ${luna} ${an}. Coduri de reducere si promotii verificate zilnic pe AmCupon.ro.`
-    : `Toate ofertele si promotiile active de azi in Romania. Coduri de reducere verificate zilnic la 1000+ magazine online. Actualizat ${luna} ${an}.`;
+    ? `Toate ofertele active ${catLabel} din Romania pentru ${luna} ${an}. Coduri de reducere si promotii actualizate zilnic pe AmCupon.ro.`
+    : `Toate ofertele si promotiile active de azi in Romania. Coduri de reducere actualizate zilnic la 1000+ magazine online. Actualizat ${luna} ${an}.`;
 
   return {
     title,

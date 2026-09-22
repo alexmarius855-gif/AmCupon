@@ -205,7 +205,7 @@ async function sendWelcomeEmail(email: string, apiKey: string): Promise<boolean>
     </div>
     <!-- Footer -->
     <div style="background:#F7F9FC;border-top:1px solid #e5e7eb;padding:20px 32px;text-align:center;">
-      <p style="color:#9ca3af;font-size:12px;margin:0 0 8px;">AmCupon.ro — Coduri de reducere verificate zilnic</p>
+      <p style="color:#9ca3af;font-size:12px;margin:0 0 8px;">AmCupon.ro — Coduri de reducere actualizate zilnic</p>
       <p style="color:#d1d5db;font-size:11px;margin:0;">
         Primești acest email deoarece te-ai abonat pe amcupon.ro.<br>
         Conținut afiliat — primim comision din bugetul de marketing al magazinelor.

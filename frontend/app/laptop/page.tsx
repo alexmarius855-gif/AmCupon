@@ -79,14 +79,14 @@ export default function LaptopPage() {
           <div className="relative max-w-6xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-[#ddf93c]/20 border border-[#ddf93c]/30 text-[#c3dd2c] text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
               <span className="w-1.5 h-1.5 rounded-full bg-[#ddf93c] animate-pulse"/>
-              Oferte verificate zilnic
+              Oferte actualizate zilnic
             </div>
             <div className="text-6xl mb-5 drop-shadow-2xl">💻</div>
             <h1 className="text-4xl md:text-5xl font-black text-[#ffffff] mb-4 tracking-tight">
               Laptop Ieftin Romania <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #ddf93c, #c3dd2c)"}}>{an}</span>
             </h1>
             <p className="text-[#c9ced5] text-lg mb-8 max-w-xl mx-auto leading-relaxed">
-              Gaming, business, student — cele mai bune oferte laptopuri cu reduceri verificate zilnic
+              Gaming, business, student — cele mai bune oferte laptopuri cu reduceri actualizate zilnic
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Gaming","Student","Business","MacBook","Sub 3000 lei","Sub 5000 lei","Ultrabook"].map(c => (

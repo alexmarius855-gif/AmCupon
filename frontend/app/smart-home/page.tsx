@@ -80,7 +80,7 @@ export default function SmartHomePage() {
               Smart Home Romania <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #c3dd2c, #ddf93c)"}}>{an}</span>
             </h1>
             <p className="text-[#c9ced5] text-lg mb-8 max-w-xl mx-auto leading-relaxed">
-              Becuri inteligente, prize smart, camere WiFi — transforma-ti casa cu coduri reducere verificate zilnic
+              Becuri inteligente, prize smart, camere WiFi — transforma-ti casa cu coduri reducere actualizate zilnic
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Alexa","Google Home","Apple HomeKit","Philips Hue","Tuya","Zigbee","Wi-Fi Direct"].map(c => (

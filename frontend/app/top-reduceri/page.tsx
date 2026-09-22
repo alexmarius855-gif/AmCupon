@@ -12,7 +12,7 @@ interface Magazin {
   categorie: string; categorie_slug?: string; rank?: number;
   are_promotie: boolean; cod_cupon: boolean; zile_ramase: number;
   promotii: { nume: string; descriere: string; cod_cupon: string; landing_page: string; zile_ramase: number }[];
-  folosit_de: number; procent_succes: number; trend: number;
+  trend: number;
 }
 
 function loadData(): Magazin[] {

@@ -22,8 +22,8 @@ export async function generateMetadata({ searchParams }: { searchParams: Promise
   return {
     title: query ? `Rezultate pentru "${query}" — AmCupon.ro` : "Cauta coduri de reducere — AmCupon.ro",
     description: query
-      ? `Coduri de reducere si oferte pentru "${query}" — magazine verificate zilnic pe AmCupon.ro.`
-      : "Cauta orice magazin online si gaseste coduri de reducere active verificate zilnic.",
+      ? `Coduri de reducere si oferte pentru "${query}" — magazine actualizate zilnic pe AmCupon.ro.`
+      : "Cauta orice magazin online si gaseste coduri de reducere active actualizate zilnic.",
     robots: { index: false },
   };
 }

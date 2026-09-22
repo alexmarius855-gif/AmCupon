@@ -63,7 +63,7 @@ export default function PieseAutoPage() {
               Piese Auto cu <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #ddf93c, #ddf93c)" }}>Reducere</span> {an}
             </h1>
             <p className="text-[#c9ced5] text-lg max-w-2xl mx-auto mb-8">
-              Anvelope, jante, vopsele, navigatie si piese de motor — magazine romanesti verificate zilnic.
+              Anvelope, jante, vopsele, navigatie si piese de motor — magazine romanesti actualizate zilnic.
             </p>
             <div className="grid grid-cols-3 gap-4 max-w-md mx-auto">
               {[
@@ -112,7 +112,7 @@ export default function PieseAutoPage() {
               <li><strong className="text-[#c9ced5]">Compara pretul</strong> intre cel putin 2-3 magazine — diferentele pot fi de 15-30% pentru aceeasi piesa</li>
               <li><strong className="text-[#c9ced5]">Verifica compatibilitatea</strong> cu modelul exact al masinii inainte de comanda</li>
               <li><strong className="text-[#c9ced5]">Anvelopele si jantele</strong> au cele mai mari reduceri sezoniere — primavara si toamna (schimb sezonier)</li>
-              <li><strong className="text-[#c9ced5]">Foloseste codul de reducere</strong> afisat pe AmCupon.ro — verificat zilnic, fara cod expirat</li>
+              <li><strong className="text-[#c9ced5]">Foloseste codul de reducere</strong> afisat pe AmCupon.ro — actualizat zilnic, fara cod expirat</li>
             </ul>
           </section>
 

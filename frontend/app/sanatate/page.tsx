@@ -83,7 +83,7 @@ export default function SanatatePage() {
             <div className="text-5xl mb-4">🌿</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Sanatate & Naturiste cu Reducere {an}</h1>
             <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              Vitamine, suplimente si produse naturiste la preturi mici. Verificate zilnic la Pronaturiste, GoldNutrition, Vitamix si alte magazine.
+              Vitamine, suplimente si produse naturiste la preturi mici. Actualizate zilnic la Pronaturiste, GoldNutrition, Vitamix si alte magazine.
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Vitamine","Suplimente Sport","Naturiste","Bio","Omega-3","Probiotice","Collagen"].map(c => (

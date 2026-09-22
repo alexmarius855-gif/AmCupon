@@ -456,26 +456,29 @@ export default function HomeClient({
           @media (prefers-reduced-motion: reduce){ .hero-blob{ animation:none; } }
         `}</style>
 
-        <div className="relative max-w-3xl mx-auto px-4 pt-20 pb-20 md:pt-28 md:pb-28 text-center">
+        <div className="relative max-w-3xl mx-auto px-4 pt-12 pb-10 md:pt-16 md:pb-12 text-center">
           {/* Live pill */}
-          <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-1.5 text-xs font-semibold text-[#c9ced5] mb-8">
+          <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-1.5 text-xs font-semibold text-[#c9ced5] mb-5">
             <span className="relative flex w-2 h-2">
               <span className="absolute inline-flex w-full h-full rounded-full bg-[#ecff7a] opacity-60 animate-ping"/>
               <span className="relative inline-flex w-2 h-2 rounded-full bg-[#ddf93c]"/>
             </span>
-            {cuPromotii.length > 0 ? `${cuPromotii.length} oferte verificate astazi` : "Sute de oferte verificate zilnic"}
+            {cuPromotii.length > 0 ? `${cuPromotii.length} de oferte active acum` : "Oferte actualizate zilnic"}
           </div>
 
           {/* H1 */}
-          <h1 className="text-[2.5rem] md:text-[3.75rem] font-black tracking-tight leading-[1.08] mb-6">
-            <span className="text-[#ffffff]">Gaseste coduri de reducere</span><br/>
+          {/* „verificate" a fost scos din H1 pe 22.09.2026: nimeni nu testeaza codurile
+              in cos, deci era o afirmatie despre o actiune pe care n-o facem. „Actualizate"
+              e adevarat si verificabil — pipeline-ul ruleaza de trei ori pe zi. */}
+          <h1 className="text-[2.25rem] md:text-[3.25rem] font-black tracking-tight leading-[1.08] mb-4">
+            <span className="text-[#ffffff]">Coduri de reducere</span>{" "}
             <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #c3dd2c 0%, #10b981 100%)"}}>
-              verificate inainte sa cumperi
+              actualizate zilnic
             </span>
           </h1>
 
-          <p className="text-[#c9ced5] text-lg mb-8 max-w-lg mx-auto leading-relaxed">
-            {magazine.length > 0 ? `Peste ${magazine.length}` : "Peste 1000"} magazine partenere, verificate zilnic. 100% gratuit.
+          <p className="text-[#c9ced5] text-lg mb-6 max-w-lg mx-auto leading-relaxed">
+            Le strangem automat din retelele de afiliere si le aratam pe toate, gratuit.
           </p>
 
           {/* Cautare eliminata din hero (08.08.2026): scrollIntoView pe fiecare litera
@@ -484,7 +487,7 @@ export default function HomeClient({
               legate de aceeasi stare `cautare`, fara acest defect. */}
 
           {/* Quick chips — magazine populare, un click distanta */}
-          <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
+          <div className="flex flex-wrap items-center justify-center gap-2 mb-7">
             <span className="text-xs text-[#9399a0] font-medium mr-1">Populare:</span>
             {[
               { nume: "Notino",      slug: "notino.ro" },
@@ -499,7 +502,7 @@ export default function HomeClient({
           </div>
 
           {/* CTA row */}
-          <div className="flex flex-wrap items-center justify-center gap-3 mb-12">
+          <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
             <a href="#promotii"
               className="bg-gradient-to-r from-[#ddf93c] to-[#ddf93c] hover:from-[#ecff7a] hover:to-[#ddf93c] text-[#0c1000] hover:text-[#0c1000] font-black px-7 py-3.5 rounded-xl text-sm transition-all shadow-lg shadow-[#ddf93c]/25 hover:shadow-[#ddf93c]/45 hover:-translate-y-0.5 duration-200">
               Coduri active acum →
@@ -514,7 +517,7 @@ export default function HomeClient({
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-xs text-[#9399a0] font-medium">
             <span className="flex items-center gap-1.5"><span className="text-[#ddf93c]">✓</span> Gratuit, fara cont</span>
             <span className="flex items-center gap-1.5"><span className="text-[#ddf93c]">✓</span> {magazine.length > 0 ? `${magazine.length}+` : "380+"} magazine</span>
-            <span className="flex items-center gap-1.5"><span className="text-[#ddf93c]">✓</span> Actualizat zilnic automat</span>
+            <span className="flex items-center gap-1.5"><span className="text-[#ddf93c]">✓</span> Actualizat de 3 ori pe zi</span>
             <span className="flex items-center gap-1.5"><span className="text-[#ddf93c]">✓</span> 0 reclame invazive</span>
           </div>
         </div>
@@ -535,6 +538,249 @@ export default function HomeClient({
         </div>
       </section>
 
+      {/* Mutata aici pe 22.09.2026. Era a SASEA sectiune, dupa grila de categorii,
+          marquee-ul de branduri si bara de statistici — iar butonul „Coduri active
+          acum" din hero sare la #promotii, care e si mai jos. Cine intra dupa un cod
+          trebuia sa treaca prin tot. Oferta reala e acum prima dovada de pe pagina. */}
+      {/* ─── OFERTA ZILEI — spotlight cu cea mai buna reducere activa ────────── */}
+      {!loading && (() => {
+        // Prefera oferte cu link de afiliat REAL (castiga comision), nu url brut (ex: temu.com)
+        const cuAfiliat = [...cuPromotii].filter(m => m.promotii?.[0] && m.url_afiliat && m.url_afiliat !== m.url);
+        const pool = cuAfiliat.length ? cuAfiliat : [...cuPromotii].filter(m => m.promotii?.[0]);
+        const best = pool.sort((a, b) => (b.scor_final || 0) - (a.scor_final || 0))[0];
+        if (!best) return null;
+        const promo = best.promotii[0];
+        const disc = extractDiscount(promo.nume) || extractDiscount(promo.descriere || "");
+        const cod = promo.cod_cupon;
+        const link = promo.landing_page || best.url_afiliat || best.url;
+        const revealed = coduriReveal.has(best.magazin);
+        const nume = numeAfisat(best.magazin);
+        return (
+          <section className="reveal bg-[#06080b] border-b border-[#1f2329] py-12 px-4">
+            <div className="max-w-5xl mx-auto">
+              {/* Un SINGUR spotlight de "oferta zilei". Pana pe 08.08.2026 existau doua
+                  sectiuni separate — "Oferta zilei" (aici) si "Deal zilei" (~200 linii mai
+                  jos) — care alegeau magazine DIFERITE si pretindeau amandoua ca sunt
+                  oferta zilei. Mesaj incoerent pentru vizitator. Pastrata aceasta (selectia
+                  ei prefera ofertele cu link de afiliat real, deci si monetizarea e mai
+                  buna), absorbit de la cealalta doar semnalul de urgenta REALA. */}
+              <div className="flex items-center gap-3 mb-4 flex-wrap">
+                <p className="text-xs font-black text-[#ddf93c] uppercase tracking-widest">⭐ Oferta zilei</p>
+                {expiraAzi.length > 0 && (
+                  <Link href="/oferte-azi" className="text-xs font-bold text-red-400 hover:text-red-300 transition-colors">
+                    {expiraAzi.length === 1 ? "1 ofertă expiră azi" : `${expiraAzi.length} oferte expiră azi`} →
+                  </Link>
+                )}
+              </div>
+              <div className="relative overflow-hidden rounded-xl border border-[#ddf93c]/30 bg-gradient-to-br from-[#14181c]/60 via-[#14181c] to-[#14181c] p-6 sm:p-8">
+                <div className="absolute -top-24 -right-16 w-72 h-72 rounded-full pointer-events-none" style={{background:"radial-gradient(circle, rgba(20,184,166,0.14), transparent 70%)"}} />
+                <div className="relative flex flex-col sm:flex-row items-center gap-6">
+                  <div className="w-28 h-28 rounded-xl bg-[#ffffff] flex items-center justify-center p-3 shrink-0 shadow-xl">
+                    {best.logo_url
+                      // eslint-disable-next-line @next/next/no-img-element -- domenii logo externe variate, nu merita config remotePatterns doar pt acest card
+                      ? <img src={best.logo_url} alt={nume} className="max-w-full max-h-full object-contain" />
+                      : <span className="text-4xl font-black text-[#ddf93c]">{nume.charAt(0)}</span>}
+                  </div>
+                  <div className="flex-1 text-center sm:text-left w-full">
+                    <div className="flex items-center justify-center sm:justify-start gap-2.5 mb-2 flex-wrap">
+                      <span className="font-black text-[#ffffff] text-2xl">{nume}</span>
+                      {disc && <span className="text-xs font-black text-[#0c1000] bg-[#ddf93c] px-2.5 py-1 rounded-full">-{disc}</span>}
+                      {(best.zile_ramase ?? 9) <= 2 && <span className="text-[10px] font-bold text-red-400 bg-red-500/10 border border-red-500/25 px-2 py-0.5 rounded-full">expira curand</span>}
+                    </div>
+                    <p className="text-[#c9ced5] text-sm mb-5 max-w-md mx-auto sm:mx-0 line-clamp-2">{promo.nume}</p>
+                    <div className="flex flex-col sm:flex-row items-center gap-3">
+                      {cod && (
+                        <button onClick={() => copiazaCod(best.magazin, cod, link)}
+                          className="group flex items-center gap-2 bg-[#1f2329] border-2 border-dashed border-[#ddf93c]/50 hover:border-[#ddf93c] rounded-xl px-4 py-2.5 transition-colors">
+                          <span className="font-mono font-black text-[#ddf93c] tracking-widest text-sm">{revealed ? cod : cod.slice(0, 3) + "•••"}</span>
+                          <span className="text-[10px] text-[#9399a0] group-hover:text-[#ddf93c]">{copiat === best.magazin ? "✓ copiat" : "copiaza"}</span>
+                        </button>
+                      )}
+                      <a href={link} target="_blank" rel="sponsored noopener noreferrer"
+                        onClick={() => trackAfiliat("spotlight_cta", best.magazin, cod)}
+                        className="bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] font-black px-6 py-3 rounded-xl text-sm transition-all shadow-lg shadow-[#ddf93c]/25 hover:-translate-y-0.5 duration-200">
+                        {cod ? "Copiaza si mergi la magazin →" : "Vezi oferta →"}
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        );
+      })()}
+
+
+      {/* Mutat aici pe 22.09.2026. Erau ULTIMELE sectiuni inainte de blog, desi sunt
+          singurul motiv pentru care intra cineva pe site: cupoanele. Butonul din hero
+          sare la #promotii, deci trimitea vizitatorul peste zece sectiuni mai jos.
+          Referinta ceruta de Alex (cuponescu.ro) le are ca a treia sectiune. */}
+      {/* ─── PROMOTII + MAGAZINE ─────────────────────────────────────────── */}
+      <div ref={rezultateRef} className="max-w-7xl mx-auto px-4 py-10">
+
+        {/* BANNER CAUTARE ACTIVA */}
+        {!loading && cautare && (
+          <div className="bg-[#ddf93c]/10 border border-[#ddf93c]/25 rounded-xl px-5 py-3 mb-6 flex items-center justify-between gap-3">
+            <span className="text-sm font-semibold text-[#ddf93c]">
+              {filtrate.length > 0
+                ? <>{filtrate.length === 1 ? "1 rezultat" : `${filtrate.length} rezultate`} pentru <strong>&quot;{cautare}&quot;</strong></>
+                : <>Niciun rezultat pentru <strong>&quot;{cautare}&quot;</strong> — incearca alt nume</>
+              }
+            </span>
+            <button onClick={() => setCautare("")}
+              className="text-xs text-[#ddf93c] hover:text-[#c3dd2c] font-bold border border-[#c3dd2c] rounded-lg px-3 py-1 transition-colors">
+              Sterge cautarea
+            </button>
+          </div>
+        )}
+
+        {/* FILTRE RAPIDE */}
+        {!loading && (
+          <div className="flex flex-wrap gap-2 mb-8 items-center">
+            {/* Filtrele se calculeaza pe magazinele cu promotie si SE ASCUND cand
+                n-au niciun rezultat — vezi FiltreRapide. „Exclusive" din brief a
+                fost scos: 0 magazine au campul, ar fi fost buton mort. */}
+            <FiltreRapide
+              magazine={magazine.filter(m => m.are_promotie)}
+              activ={filtruActiv === "favorite" ? "toate" : (filtruActiv as CheieFiltru)}
+              onSchimba={(f) => { setFiltruActiv(f); setStoreLimit(12); }}
+            />
+            {favorite.size > 0 && (
+              <button onClick={() => { setFiltruActiv("favorite"); setStoreLimit(12); }}
+                aria-pressed={filtruActiv === "favorite"}
+                className={`inline-flex items-center gap-1.5 text-sm font-bold px-3.5 py-2 rounded-xl border transition-colors ${filtruActiv === "favorite" ? "bg-[#ddf93c] text-[#0c1000] border-[#ddf93c]" : "bg-[#14181c] text-[#c9ced5] border-[#1f2329] hover:border-[#c9ced5] hover:text-[#ffffff]"}`}>
+                Favorite <span className="tabular-nums text-xs font-black">{favorite.size}</span>
+              </button>
+            )}
+            <Link href="/toate-magazinele" className="ml-auto text-sm text-[#ddf93c] hover:text-[#c3dd2c] font-semibold transition-colors">
+              Vezi toate ({magazine.length}) →
+            </Link>
+          </div>
+        )}
+
+        {/* SKELETON */}
+        {loading && (
+          <section className="mb-10">
+            <div className="h-7 w-48 bg-[#1f2329] rounded-lg animate-pulse mb-6"/>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+              {Array(8).fill(0).map((_, i) => <SkeletonCard key={i}/>)}
+            </div>
+          </section>
+        )}
+
+        {/* Sectiunea "Oferte care se termina azi" a fost scoasa pe 08.08.2026: ocupa un
+            header + grila proprie (327px) pentru 4 carduri, iar aceleasi magazine apar
+            oricum mai jos in "Promotii active", cu badge rosu "Expiră azi" pe card.
+            Urgenta se vede acum in CONTEXT (badge pe card + linkul "N oferte expiră azi"
+            din headerul Ofertei zilei), nu ca sectiune subtire separata. */}
+
+        {/* PROMOTII ACTIVE */}
+        {!loading && cuPromotii.length > 0 && (
+          <section id="promotii" className="mb-12">
+            <div className="flex items-end justify-between mb-6">
+              <div>
+                <p className="text-xs font-bold text-[#ddf93c] uppercase tracking-widest mb-1.5 flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse inline-block"/>
+                  {cautare || filtruActiv !== "toate" ? "FILTRAT" : "LIVE"}
+                </p>
+                <h2 className="text-[1.75rem] md:text-[2.25rem] leading-[1.1] font-black text-[#ffffff] tracking-tight">
+                  {cautare ? `Rezultate pentru "${cautare}"` : "Promotii active"}
+                </h2>
+                <p className="text-[#c9ced5] text-sm mt-0.5">{cuPromotii.length} de oferte active acum</p>
+              </div>
+              {!cautare && filtruActiv === "toate" && (
+                <Link href="/toate-magazinele" className="hidden sm:block text-sm font-bold text-[#ddf93c] hover:text-[#c3dd2c] transition-colors">
+                  Toate magazinele →
+                </Link>
+              )}
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+              {(cautare || filtruActiv !== "toate" ? cuPromotii : cuPromotii.slice(0, 12)).map(m => (
+                <MagazinCard key={m.magazin} m={m} astazi={astazi} isFavorit={favorite.has(m.magazin)} onToggleFavorit={toggleFavorit}/>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* MAGAZINE PARTENERE */}
+        {!loading && faraPromotii.length > 0 && (
+          <section id="magazine">
+            <div className="flex items-end justify-between mb-6">
+              <div>
+                <p className="text-xs font-bold text-[#c9ced5] uppercase tracking-widest mb-1.5">TOATE MAGAZINELE</p>
+                <h2 className="text-[1.75rem] md:text-[2.25rem] leading-[1.1] font-black text-[#ffffff] tracking-tight">Magazine partenere</h2>
+                <p className="text-[#c9ced5] text-sm mt-0.5">
+                  {cautare || filtruActiv !== "toate"
+                    ? <>{faraPromotii.length} din {magazine.length} magazine</>
+                    : <>{magazine.length} magazine</>
+                  }
+                </p>
+              </div>
+              <Link href="/toate-magazinele" className="text-sm font-bold text-[#ddf93c] hover:text-[#c3dd2c] transition-colors">
+                Pagina completa →
+              </Link>
+            </div>
+            {/* Grila COMPACTA, nu carduri mari (08.08.2026).
+                Astea sunt magazinele fara promotie activa. Randate ca `Card` complet,
+                fiecare afisa "Fara promotii active momentan" — 12 carduri mari care
+                anunta ca n-au nimic de oferit. Ocupau ~4 ecrane si transformau un
+                atu real (1178 parteneri) intr-o dovada de gol.
+                NU le scoatem — aduc comision pe orice achizitie si asta respecta
+                regula "promoveaza tot". Doar le prezentam ca perete de logo-uri:
+                aceleasi linkuri, aceeasi monetizare, o fractiune din spatiu. */}
+            <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-2.5">
+              {faraPromotii.slice(0, storeLimit).map(m => {
+                const nume = numeAfisat(m.magazin);
+                return (
+                  <Link key={m.magazin} href={`/cod-reducere/${m.magazin}`}
+                    className="group glass rounded-xl p-3 flex flex-col items-center gap-2 hover:border-[#ddf93c]/50 hover:-translate-y-0.5 transition-all">
+                    <span className="w-11 h-11 rounded-lg bg-[#ffffff] p-1.5 flex items-center justify-center shrink-0 ring-1 ring-[#2a2f36]/50 group-hover:ring-[#ddf93c]/50 transition-all">
+                      {m.logo_url ? (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img src={m.logo_url} alt={nume} className="max-w-full max-h-full object-contain" loading="lazy" decoding="async" />
+                      ) : (
+                        <span className="text-[#c3dd2c] font-black text-lg">{nume.charAt(0)}</span>
+                      )}
+                    </span>
+                    <span className="text-[11px] font-semibold text-[#c9ced5] group-hover:text-[#ecff7a] text-center leading-tight line-clamp-2 transition-colors">
+                      {nume}
+                    </span>
+                  </Link>
+                );
+              })}
+            </div>
+            {faraPromotii.length > storeLimit && (
+              <div className="text-center mt-6">
+                <button onClick={() => setStoreLimit(l => l + 36)}
+                  className="glass hover:border-[#ddf93c]/50 text-[#c9ced5] hover:text-[#ecff7a] font-bold px-7 py-2.5 rounded-xl text-sm transition-all">
+                  Incarca mai multe ({faraPromotii.length - storeLimit} magazine ramase)
+                </button>
+              </div>
+            )}
+          </section>
+        )}
+
+        {/* EMPTY STATE — niciun rezultat */}
+        {!loading && cautare && filtrate.length === 0 && (
+          <div className="text-center py-20">
+            <div className="text-5xl mb-4">🔍</div>
+            <h3 className="text-xl font-black text-[#c9ced5] mb-2">Niciun magazin gasit pentru &quot;{cautare}&quot;</h3>
+            <p className="text-[#c9ced5] text-sm mb-6">Incearca un alt nume sau cauta in toate magazinele.</p>
+            <div className="flex flex-wrap justify-center gap-3">
+              <button onClick={() => setCautare("")}
+                className="bg-[#ddf93c] text-[#0c1000] font-bold px-6 py-2.5 rounded-xl text-sm hover:bg-[#ddf93c] transition-colors">
+                Sterge cautarea
+              </button>
+              <Link href="/toate-magazinele"
+                className="bg-[#1f2329] border border-[#2a2f36] text-[#c9ced5] font-bold px-6 py-2.5 rounded-xl text-sm hover:border-[#ddf93c] transition-colors">
+                Toate magazinele
+              </Link>
+            </div>
+          </div>
+        )}
+      </div>
+
+
       {/* ─── CATEGORY GRID (colorat, printre primele — recunoastere instanta) ── */}
       <section id="categorii" className="reveal bg-[#14181c] border-b border-[#1f2329] py-14 px-4">
         <div className="max-w-7xl mx-auto">
@@ -544,7 +790,7 @@ export default function HomeClient({
             <div>
               <p className="text-xs font-bold text-[#ddf93c] uppercase tracking-widest mb-2">CATEGORII</p>
               <h2 className="text-[2rem] md:text-[2.5rem] leading-[1.08] font-black tracking-tight text-[#ffffff]">Exploreaza dupa categorie</h2>
-              <p className="text-[#c9ced5] text-sm mt-1.5">Coduri verificate zilnic in fiecare categorie</p>
+              <p className="text-[#c9ced5] text-sm mt-1.5">Ofertele fiecarei categorii, actualizate zilnic</p>
             </div>
             <Link href="/categorii" className="hidden sm:flex items-center gap-1.5 text-sm font-bold text-[#ddf93c] hover:text-[#c3dd2c] transition-colors border border-[#ddf93c]/30 hover:border-[#ddf93c]/60 bg-[#ddf93c]/10 hover:bg-[#ddf93c]/20 px-4 py-2 rounded-full whitespace-nowrap">
               Toate categoriile
@@ -643,38 +889,44 @@ export default function HomeClient({
         </div>
       </section>
 
-      {/* ─── BRAND MARQUEE — dovada vizuala a magazinelor reale ────────────── */}
+      {/* ─── MAGAZINE POPULARE — grila de logo-uri ─────────────────────────────
+          22.09.2026: era un marquee care defila continuu. Schimbat in grila statica
+          dupa referinta ceruta de Alex (cuponescu.ro): un element care se misca e greu
+          de clicat — tinta fuge de sub cursor — si trage ochiul de pe cupoane. O grila
+          se scaneaza dintr-o privire si fiecare logo e o tinta stabila. */}
       {!loading && (() => {
         const logos = magazine
           .filter(m => m.logo_url && !/\s/.test(m.magazin))
           .sort((a, b) => (b.sales_number || 0) - (a.sales_number || 0))
-          .slice(0, 30);
+          .slice(0, 18);
         if (logos.length < 8) return null;
-        const row = [...logos, ...logos];
         return (
-          <section className="relative bg-[#06080b] border-b border-[#1f2329] py-8 overflow-hidden">
-            <p className="text-center text-[11px] font-semibold uppercase tracking-[0.2em] text-[#9399a0] mb-6">
-              Coduri verificate pentru magazinele tale preferate
-            </p>
-            <div className="relative">
-              <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-28 z-10 pointer-events-none" style={{background:"linear-gradient(90deg, #06080b 10%, transparent)"}} />
-              <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-28 z-10 pointer-events-none" style={{background:"linear-gradient(270deg, #06080b 10%, transparent)"}} />
-              <div className="marquee-track flex items-center gap-4 w-max">
-                {row.map((m, i) => (
-                  <a key={`${m.magazin}-${i}`} href={`/cod-reducere/${m.magazin}`} aria-hidden={i >= logos.length}
-                    className="shrink-0 w-28 h-16 rounded-xl bg-[#ffffff] border border-[#1f2329] hover:border-[#ddf93c]/60 flex items-center justify-center p-3 transition-colors">
+          <section className="reveal bg-[#06080b] border-b border-[#1f2329] py-12 px-4">
+            <div className="max-w-7xl mx-auto">
+              <div className="flex items-end justify-between mb-6">
+                <div>
+                  <h2 className="text-[1.75rem] md:text-[2.25rem] leading-[1.1] font-black text-[#ffffff] tracking-tight">
+                    Magazine populare
+                  </h2>
+                  <p className="text-[#c9ced5] text-sm mt-1.5">Coduri si oferte de la brandurile pe care le stii</p>
+                </div>
+                <Link href="/toate-magazinele"
+                  className="hidden sm:block text-sm font-bold text-[#ddf93c] hover:text-[#c3dd2c] transition-colors">
+                  Toate magazinele →
+                </Link>
+              </div>
+              <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-3">
+                {logos.map(m => (
+                  <a key={m.magazin} href={`/cod-reducere/${m.magazin}`}
+                    title={numeAfisat(m.magazin)}
+                    className="group h-20 rounded-xl bg-[#ffffff] border border-[#1f2329] hover:border-[#ddf93c] flex items-center justify-center p-4 transition-all hover:-translate-y-0.5">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={m.logo_url} alt={numeAfisat(m.magazin)} className="max-w-full max-h-full object-contain" loading="lazy" />
+                    <img src={m.logo_url} alt={numeAfisat(m.magazin)}
+                      className="max-w-full max-h-full object-contain" loading="lazy" />
                   </a>
                 ))}
               </div>
             </div>
-            <style>{`
-              @keyframes marqueeScroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-              .marquee-track { animation: marqueeScroll 45s linear infinite; }
-              .marquee-track:hover { animation-play-state: paused; }
-              @media (prefers-reduced-motion: reduce){ .marquee-track { animation: none; } }
-            `}</style>
           </section>
         );
       })()}
@@ -710,74 +962,6 @@ export default function HomeClient({
       {/* placeholder pentru a inchide sectiunea corecta daca loading */}
       {loading && <div className="h-[53px] bg-[#14181c]/80 border-b border-[#1f2329]" />}
 
-      {/* ─── OFERTA ZILEI — spotlight cu cea mai buna reducere activa ────────── */}
-      {!loading && (() => {
-        // Prefera oferte cu link de afiliat REAL (castiga comision), nu url brut (ex: temu.com)
-        const cuAfiliat = [...cuPromotii].filter(m => m.promotii?.[0] && m.url_afiliat && m.url_afiliat !== m.url);
-        const pool = cuAfiliat.length ? cuAfiliat : [...cuPromotii].filter(m => m.promotii?.[0]);
-        const best = pool.sort((a, b) => (b.scor_final || 0) - (a.scor_final || 0))[0];
-        if (!best) return null;
-        const promo = best.promotii[0];
-        const disc = extractDiscount(promo.nume) || extractDiscount(promo.descriere || "");
-        const cod = promo.cod_cupon;
-        const link = promo.landing_page || best.url_afiliat || best.url;
-        const revealed = coduriReveal.has(best.magazin);
-        const nume = numeAfisat(best.magazin);
-        return (
-          <section className="reveal bg-[#06080b] border-b border-[#1f2329] py-12 px-4">
-            <div className="max-w-5xl mx-auto">
-              {/* Un SINGUR spotlight de "oferta zilei". Pana pe 08.08.2026 existau doua
-                  sectiuni separate — "Oferta zilei" (aici) si "Deal zilei" (~200 linii mai
-                  jos) — care alegeau magazine DIFERITE si pretindeau amandoua ca sunt
-                  oferta zilei. Mesaj incoerent pentru vizitator. Pastrata aceasta (selectia
-                  ei prefera ofertele cu link de afiliat real, deci si monetizarea e mai
-                  buna), absorbit de la cealalta doar semnalul de urgenta REALA. */}
-              <div className="flex items-center gap-3 mb-4 flex-wrap">
-                <p className="text-xs font-black text-[#ddf93c] uppercase tracking-widest">⭐ Oferta zilei</p>
-                {expiraAzi.length > 0 && (
-                  <Link href="/oferte-azi" className="text-xs font-bold text-red-400 hover:text-red-300 transition-colors">
-                    {expiraAzi.length === 1 ? "1 ofertă expiră azi" : `${expiraAzi.length} oferte expiră azi`} →
-                  </Link>
-                )}
-              </div>
-              <div className="relative overflow-hidden rounded-xl border border-[#ddf93c]/30 bg-gradient-to-br from-[#14181c]/60 via-[#14181c] to-[#14181c] p-6 sm:p-8">
-                <div className="absolute -top-24 -right-16 w-72 h-72 rounded-full pointer-events-none" style={{background:"radial-gradient(circle, rgba(20,184,166,0.14), transparent 70%)"}} />
-                <div className="relative flex flex-col sm:flex-row items-center gap-6">
-                  <div className="w-28 h-28 rounded-xl bg-[#ffffff] flex items-center justify-center p-3 shrink-0 shadow-xl">
-                    {best.logo_url
-                      // eslint-disable-next-line @next/next/no-img-element -- domenii logo externe variate, nu merita config remotePatterns doar pt acest card
-                      ? <img src={best.logo_url} alt={nume} className="max-w-full max-h-full object-contain" />
-                      : <span className="text-4xl font-black text-[#ddf93c]">{nume.charAt(0)}</span>}
-                  </div>
-                  <div className="flex-1 text-center sm:text-left w-full">
-                    <div className="flex items-center justify-center sm:justify-start gap-2.5 mb-2 flex-wrap">
-                      <span className="font-black text-[#ffffff] text-2xl">{nume}</span>
-                      {disc && <span className="text-xs font-black text-[#0c1000] bg-[#ddf93c] px-2.5 py-1 rounded-full">-{disc}</span>}
-                      {(best.zile_ramase ?? 9) <= 2 && <span className="text-[10px] font-bold text-red-400 bg-red-500/10 border border-red-500/25 px-2 py-0.5 rounded-full">expira curand</span>}
-                    </div>
-                    <p className="text-[#c9ced5] text-sm mb-5 max-w-md mx-auto sm:mx-0 line-clamp-2">{promo.nume}</p>
-                    <div className="flex flex-col sm:flex-row items-center gap-3">
-                      {cod && (
-                        <button onClick={() => copiazaCod(best.magazin, cod, link)}
-                          className="group flex items-center gap-2 bg-[#1f2329] border-2 border-dashed border-[#ddf93c]/50 hover:border-[#ddf93c] rounded-xl px-4 py-2.5 transition-colors">
-                          <span className="font-mono font-black text-[#ddf93c] tracking-widest text-sm">{revealed ? cod : cod.slice(0, 3) + "•••"}</span>
-                          <span className="text-[10px] text-[#9399a0] group-hover:text-[#ddf93c]">{copiat === best.magazin ? "✓ copiat" : "copiaza"}</span>
-                        </button>
-                      )}
-                      <a href={link} target="_blank" rel="sponsored noopener noreferrer"
-                        onClick={() => trackAfiliat("spotlight_cta", best.magazin, cod)}
-                        className="bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] font-black px-6 py-3 rounded-xl text-sm transition-all shadow-lg shadow-[#ddf93c]/25 hover:-translate-y-0.5 duration-200">
-                        {cod ? "Copiaza si mergi la magazin →" : "Vezi oferta →"}
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        );
-      })()}
-
       {/* ─── PRODUSE PE CATEGORII (mutat sus — prima dovada vizuala de reduceri reale) ── */}
       {produseCategorii.length > 0 && (
         <section className="bg-[#14181c] border-b border-[#1f2329] py-14 px-4">
@@ -786,9 +970,13 @@ export default function HomeClient({
             {/* Header */}
             <div className="flex items-end justify-between mb-7">
               <div>
-                <p className="text-xs font-bold text-[#ddf93c] uppercase tracking-widest mb-2">PRODUSE CU REDUCERE</p>
+                {/* 22.09.2026: eticheta era „PRODUSE CU REDUCERE", dar doar 84 din cele
+                    20.188 de produse din feed (0,4%) au `discount_pct` real. Titlul promitea
+                    ceva ce grila nu putea livra. Spune acum ce sunt cu adevarat: produse din
+                    magazinele partenere, alese pe categorii. */}
+                <p className="text-xs font-bold text-[#ddf93c] uppercase tracking-widest mb-2">DIN MAGAZINELE PARTENERE</p>
                 <h2 className="text-[2rem] md:text-[2.5rem] leading-[1.08] font-black tracking-tight text-[#ffffff]">Produse pe categorii</h2>
-                <p className="text-[#c9ced5] text-sm mt-1.5">Cele mai bune oferte, organizate pe nise</p>
+                <p className="text-[#c9ced5] text-sm mt-1.5">Cate ceva din fiecare nisa, cu pretul la zi</p>
               </div>
               <Link href="/produse" className="hidden sm:flex items-center gap-1.5 text-sm font-bold text-[#ddf93c] hover:text-[#c3dd2c] border border-[#ddf93c]/30 hover:border-[#ddf93c]/60 bg-[#ddf93c]/10 hover:bg-[#ddf93c]/20 px-4 py-2 rounded-full whitespace-nowrap transition-all">
                 Toate produsele →
@@ -1000,7 +1188,7 @@ export default function HomeClient({
               <div>
                 <p className="text-xs font-bold text-[#ddf93c] uppercase tracking-widest mb-2">⭐ RECOMANDATE DE NOI</p>
                 <h2 className="text-[2rem] md:text-[2.5rem] leading-[1.08] font-black tracking-tight text-[#ffffff]">Magazine de incredere</h2>
-                <p className="text-[#c9ced5] text-sm mt-1.5">Magazine cu oferte active, verificate zilnic</p>
+                <p className="text-[#c9ced5] text-sm mt-1.5">Magazine cu oferte active chiar acum</p>
               </div>
               <Link href="/toate-magazinele" className="hidden sm:flex items-center gap-1.5 text-sm font-bold text-[#ddf93c] hover:text-[#c3dd2c] border border-[#ddf93c]/30 hover:border-[#ddf93c]/60 bg-[#ddf93c]/10 px-4 py-2 rounded-full whitespace-nowrap transition-colors">Toate magazinele →</Link>
             </div>
@@ -1051,171 +1239,6 @@ export default function HomeClient({
           </div>
         </div>
       </section>
-
-      {/* ─── PROMOTII + MAGAZINE ─────────────────────────────────────────── */}
-      <div ref={rezultateRef} className="max-w-7xl mx-auto px-4 py-10">
-
-        {/* BANNER CAUTARE ACTIVA */}
-        {!loading && cautare && (
-          <div className="bg-[#ddf93c]/10 border border-[#ddf93c]/25 rounded-xl px-5 py-3 mb-6 flex items-center justify-between gap-3">
-            <span className="text-sm font-semibold text-[#ddf93c]">
-              {filtrate.length > 0
-                ? <>{filtrate.length === 1 ? "1 rezultat" : `${filtrate.length} rezultate`} pentru <strong>&quot;{cautare}&quot;</strong></>
-                : <>Niciun rezultat pentru <strong>&quot;{cautare}&quot;</strong> — incearca alt nume</>
-              }
-            </span>
-            <button onClick={() => setCautare("")}
-              className="text-xs text-[#ddf93c] hover:text-[#c3dd2c] font-bold border border-[#c3dd2c] rounded-lg px-3 py-1 transition-colors">
-              Sterge cautarea
-            </button>
-          </div>
-        )}
-
-        {/* FILTRE RAPIDE */}
-        {!loading && (
-          <div className="flex flex-wrap gap-2 mb-8 items-center">
-            {/* Filtrele se calculeaza pe magazinele cu promotie si SE ASCUND cand
-                n-au niciun rezultat — vezi FiltreRapide. „Exclusive" din brief a
-                fost scos: 0 magazine au campul, ar fi fost buton mort. */}
-            <FiltreRapide
-              magazine={magazine.filter(m => m.are_promotie)}
-              activ={filtruActiv === "favorite" ? "toate" : (filtruActiv as CheieFiltru)}
-              onSchimba={(f) => { setFiltruActiv(f); setStoreLimit(12); }}
-            />
-            {favorite.size > 0 && (
-              <button onClick={() => { setFiltruActiv("favorite"); setStoreLimit(12); }}
-                aria-pressed={filtruActiv === "favorite"}
-                className={`inline-flex items-center gap-1.5 text-sm font-bold px-3.5 py-2 rounded-xl border transition-colors ${filtruActiv === "favorite" ? "bg-[#ddf93c] text-[#0c1000] border-[#ddf93c]" : "bg-[#14181c] text-[#c9ced5] border-[#1f2329] hover:border-[#c9ced5] hover:text-[#ffffff]"}`}>
-                Favorite <span className="tabular-nums text-xs font-black">{favorite.size}</span>
-              </button>
-            )}
-            <Link href="/toate-magazinele" className="ml-auto text-sm text-[#ddf93c] hover:text-[#c3dd2c] font-semibold transition-colors">
-              Vezi toate ({magazine.length}) →
-            </Link>
-          </div>
-        )}
-
-        {/* SKELETON */}
-        {loading && (
-          <section className="mb-10">
-            <div className="h-7 w-48 bg-[#1f2329] rounded-lg animate-pulse mb-6"/>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-              {Array(8).fill(0).map((_, i) => <SkeletonCard key={i}/>)}
-            </div>
-          </section>
-        )}
-
-        {/* Sectiunea "Oferte care se termina azi" a fost scoasa pe 08.08.2026: ocupa un
-            header + grila proprie (327px) pentru 4 carduri, iar aceleasi magazine apar
-            oricum mai jos in "Promotii active", cu badge rosu "Expiră azi" pe card.
-            Urgenta se vede acum in CONTEXT (badge pe card + linkul "N oferte expiră azi"
-            din headerul Ofertei zilei), nu ca sectiune subtire separata. */}
-
-        {/* PROMOTII ACTIVE */}
-        {!loading && cuPromotii.length > 0 && (
-          <section id="promotii" className="mb-12">
-            <div className="flex items-end justify-between mb-6">
-              <div>
-                <p className="text-xs font-bold text-[#ddf93c] uppercase tracking-widest mb-1.5 flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse inline-block"/>
-                  {cautare || filtruActiv !== "toate" ? "FILTRAT" : "LIVE"}
-                </p>
-                <h2 className="text-[1.75rem] md:text-[2.25rem] leading-[1.1] font-black text-[#ffffff] tracking-tight">
-                  {cautare ? `Rezultate pentru "${cautare}"` : "Promotii active"}
-                </h2>
-                <p className="text-[#c9ced5] text-sm mt-0.5">{cuPromotii.length} oferte verificate</p>
-              </div>
-              {!cautare && filtruActiv === "toate" && (
-                <Link href="/toate-magazinele" className="hidden sm:block text-sm font-bold text-[#ddf93c] hover:text-[#c3dd2c] transition-colors">
-                  Toate magazinele →
-                </Link>
-              )}
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-              {(cautare || filtruActiv !== "toate" ? cuPromotii : cuPromotii.slice(0, 12)).map(m => (
-                <MagazinCard key={m.magazin} m={m} astazi={astazi} isFavorit={favorite.has(m.magazin)} onToggleFavorit={toggleFavorit}/>
-              ))}
-            </div>
-          </section>
-        )}
-
-        {/* MAGAZINE PARTENERE */}
-        {!loading && faraPromotii.length > 0 && (
-          <section id="magazine">
-            <div className="flex items-end justify-between mb-6">
-              <div>
-                <p className="text-xs font-bold text-[#c9ced5] uppercase tracking-widest mb-1.5">TOATE MAGAZINELE</p>
-                <h2 className="text-[1.75rem] md:text-[2.25rem] leading-[1.1] font-black text-[#ffffff] tracking-tight">Magazine partenere</h2>
-                <p className="text-[#c9ced5] text-sm mt-0.5">
-                  {cautare || filtruActiv !== "toate"
-                    ? <>{faraPromotii.length} din {magazine.length} magazine</>
-                    : <>{magazine.length} magazine</>
-                  }
-                </p>
-              </div>
-              <Link href="/toate-magazinele" className="text-sm font-bold text-[#ddf93c] hover:text-[#c3dd2c] transition-colors">
-                Pagina completa →
-              </Link>
-            </div>
-            {/* Grila COMPACTA, nu carduri mari (08.08.2026).
-                Astea sunt magazinele fara promotie activa. Randate ca `Card` complet,
-                fiecare afisa "Fara promotii active momentan" — 12 carduri mari care
-                anunta ca n-au nimic de oferit. Ocupau ~4 ecrane si transformau un
-                atu real (1178 parteneri) intr-o dovada de gol.
-                NU le scoatem — aduc comision pe orice achizitie si asta respecta
-                regula "promoveaza tot". Doar le prezentam ca perete de logo-uri:
-                aceleasi linkuri, aceeasi monetizare, o fractiune din spatiu. */}
-            <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-2.5">
-              {faraPromotii.slice(0, storeLimit).map(m => {
-                const nume = numeAfisat(m.magazin);
-                return (
-                  <Link key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                    className="group glass rounded-xl p-3 flex flex-col items-center gap-2 hover:border-[#ddf93c]/50 hover:-translate-y-0.5 transition-all">
-                    <span className="w-11 h-11 rounded-lg bg-[#ffffff] p-1.5 flex items-center justify-center shrink-0 ring-1 ring-[#2a2f36]/50 group-hover:ring-[#ddf93c]/50 transition-all">
-                      {m.logo_url ? (
-                        // eslint-disable-next-line @next/next/no-img-element
-                        <img src={m.logo_url} alt={nume} className="max-w-full max-h-full object-contain" loading="lazy" decoding="async" />
-                      ) : (
-                        <span className="text-[#c3dd2c] font-black text-lg">{nume.charAt(0)}</span>
-                      )}
-                    </span>
-                    <span className="text-[11px] font-semibold text-[#c9ced5] group-hover:text-[#ecff7a] text-center leading-tight line-clamp-2 transition-colors">
-                      {nume}
-                    </span>
-                  </Link>
-                );
-              })}
-            </div>
-            {faraPromotii.length > storeLimit && (
-              <div className="text-center mt-6">
-                <button onClick={() => setStoreLimit(l => l + 36)}
-                  className="glass hover:border-[#ddf93c]/50 text-[#c9ced5] hover:text-[#ecff7a] font-bold px-7 py-2.5 rounded-xl text-sm transition-all">
-                  Incarca mai multe ({faraPromotii.length - storeLimit} magazine ramase)
-                </button>
-              </div>
-            )}
-          </section>
-        )}
-
-        {/* EMPTY STATE — niciun rezultat */}
-        {!loading && cautare && filtrate.length === 0 && (
-          <div className="text-center py-20">
-            <div className="text-5xl mb-4">🔍</div>
-            <h3 className="text-xl font-black text-[#c9ced5] mb-2">Niciun magazin gasit pentru &quot;{cautare}&quot;</h3>
-            <p className="text-[#c9ced5] text-sm mb-6">Incearca un alt nume sau cauta in toate magazinele.</p>
-            <div className="flex flex-wrap justify-center gap-3">
-              <button onClick={() => setCautare("")}
-                className="bg-[#ddf93c] text-[#0c1000] font-bold px-6 py-2.5 rounded-xl text-sm hover:bg-[#ddf93c] transition-colors">
-                Sterge cautarea
-              </button>
-              <Link href="/toate-magazinele"
-                className="bg-[#1f2329] border border-[#2a2f36] text-[#c9ced5] font-bold px-6 py-2.5 rounded-xl text-sm hover:border-[#ddf93c] transition-colors">
-                Toate magazinele
-              </Link>
-            </div>
-          </div>
-        )}
-      </div>
 
       {/* ─── BLOG ─────────────────────────────────────────────────────────── */}
       {blogPosts.length > 0 && (
@@ -1359,7 +1382,7 @@ export default function HomeClient({
                 <span className="font-black text-[#ffffff] text-xl tracking-tight">Cupon<span className="text-[#ddf93c]">.ro</span></span>
               </div>
               <p className="text-sm leading-relaxed mb-5">
-                Coduri de reducere verificate zilnic. Cel mai rapid mod de a economisi la cumparaturile online din Romania.
+                Coduri de reducere actualizate zilnic. Cel mai rapid mod de a economisi la cumparaturile online din Romania.
               </p>
               <div className="flex items-center gap-2 bg-[#1f2329] rounded-xl px-3 py-2 text-xs mb-5 w-fit">
                 <svg className="w-3.5 h-3.5 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">

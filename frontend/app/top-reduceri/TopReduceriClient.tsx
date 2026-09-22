@@ -202,7 +202,7 @@ export default function TopReduceriClient({
             Top Reduceri {luna} {an}
           </h1>
           <p className="text-[#c9ced5] max-w-xl mx-auto">
-            Selectia celor mai bune coduri si reduceri active, sortate dupa Deal Score. Verificate zilnic.
+            Selectia celor mai bune coduri si reduceri active, sortate dupa Deal Score. Actualizate zilnic.
           </p>
 
           {/* Stats */}

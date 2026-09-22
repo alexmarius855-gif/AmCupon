@@ -24,7 +24,7 @@ export default function NotinoPage() {
       name: "Notino",
       tagline: "Parfumuri si cosmetice premium — cel mai mare magazin de beauty online",
       emoji: "🌸",
-      desc: "Coduri de reducere Notino verificate zilnic. Reduceri la parfumuri, machiaj, skincare si produse de ingrijire de la mii de branduri.",
+      desc: "Coduri de reducere Notino actualizate zilnic. Reduceri la parfumuri, machiaj, skincare si produse de ingrijire de la mii de branduri.",
       editorial: [
         "Notino este cel mai mare magazin online de parfumuri si cosmetice din Europa, cu livrare in Romania. Platforma ofera zeci de mii de produse de la branduri premium — Chanel, Dior, YSL, MAC, La Roche-Posay, Clinique si multe altele — la preturi competitive fata de magazinele fizice.",
         "Pe AmCupon.ro publicam toate promotiile Notino disponibile. Reducerile apar frecvent la seturi cadou (mai ales inainte de sarbatori), la colectii sezoniere si in campaniile Flash Sale cu reduceri de 24-48 ore. Platforma are si o sectiune de produse retur cu reduceri semnificative.",

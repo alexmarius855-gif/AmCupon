@@ -6,12 +6,12 @@ import HomeClient, { type Magazin } from "./HomeClient";
 export const metadata: Metadata = {
   title: "AmCupon.ro — Coduri de reducere si oferte verificate zilnic",
   description:
-    "Peste 1000 de magazine partenere din Romania cu coduri de reducere si oferte verificate zilnic. Economiseste inteligent la eMAG, Fashion Days, Notino, Dr.Max si multe altele.",
+    "Peste 1000 de magazine partenere din Romania cu coduri de reducere si oferte actualizate zilnic. Economiseste inteligent la eMAG, Fashion Days, Notino, Dr.Max si multe altele.",
   alternates: { canonical: "https://amcupon.ro" },
   openGraph: {
     title: "AmCupon.ro — Coduri de reducere si oferte verificate zilnic",
     description:
-      "Peste 1000 de magazine partenere cu coduri si oferte verificate zilnic. Economiseste la fiecare comanda.",
+      "Peste 1000 de magazine partenere cu coduri si oferte actualizate zilnic. Economiseste la fiecare comanda.",
     url: "https://amcupon.ro",
     siteName: "AmCupon.ro",
     locale: "ro_RO",
