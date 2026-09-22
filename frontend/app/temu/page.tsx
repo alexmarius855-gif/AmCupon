@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import BrandPageTemplate from "../components/BrandPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Cod Reducere Temu Romania 2026 — Oferte & Promotii | AmCupon.ro",
+  title: "Cod Reducere Temu Romania 2026 — Oferte & Promotii",
   description: "Coduri reducere Temu Romania actualizate zilnic. Transport gratuit, reduceri de pana la 90% la milioane de produse. Promotii Temu verificate pe AmCupon.ro.",
   keywords: ["cod reducere temu", "temu romania reduceri", "temu promotii", "temu transport gratuit", "temu discount", "temu coupon"],
   alternates: { canonical: "https://amcupon.ro/cod-reducere/temu.com" },

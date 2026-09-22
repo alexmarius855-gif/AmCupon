@@ -14,7 +14,7 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Reduceri Echipamente Pescuit 2026 — Undite, Naluci | AmCupon.ro",
+  title: "Reduceri Echipamente Pescuit 2026 — Undite, Naluci",
   description: "Coduri reducere magazine pescuit Romania: Pescar Expert, Decathlon. Undite, mulinete, naluci, corturi carp — reduceri verificate, livrare rapida.",
   keywords: ["reduceri pescuit", "cod reducere pescar expert", "echipamente pescuit ieftine", "undita reducere", "naluci reducere", "pescuit romania online"],
   alternates: { canonical: "https://amcupon.ro/pescuit" },

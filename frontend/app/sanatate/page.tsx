@@ -15,7 +15,7 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Cod Reducere Sanatate & Naturiste 2026 — Vitamine, Suplimente | AmCupon.ro",
+  title: "Cod Reducere Sanatate & Naturiste 2026 — Vitamine",
   description: "Coduri de reducere produse naturiste si suplimente Romania: Pronaturiste, Vitamix, GoldNutrition, Apiland, Botaniq. Vitamine, suplimente, bio si wellness la preturi reduse.",
   keywords: ["cod reducere sanatate","reduceri suplimente","produse naturiste reducere","vitamine ieftine","goldnutrition cod cupon","pronaturiste reducere","suplimente online romania"],
   alternates: { canonical: "https://amcupon.ro/sanatate" },

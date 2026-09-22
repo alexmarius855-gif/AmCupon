@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import BrandPageTemplate from "../components/BrandPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Cod Reducere iHerb Romania 2026 — Suplimente & Health | AmCupon.ro",
+  title: "Cod Reducere iHerb Romania 2026 — Suplimente & Health",
   description: "Coduri reducere iHerb Romania actualizate zilnic. Suplimente alimentare, vitamine, produse naturale si beauty la preturi mici. Promotii iHerb verificate.",
   keywords: ["cod reducere iherb", "iherb romania reduceri", "iherb discount", "suplimente online reduceri", "iherb voucher", "vitamine online iherb"],
   alternates: { canonical: "https://amcupon.ro/iherb" },

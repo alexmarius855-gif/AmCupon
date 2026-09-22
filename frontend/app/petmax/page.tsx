@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import BrandPageTemplate from "../components/BrandPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Cod Reducere Petmax — Produse Animale de Companie 2026 | AmCupon.ro",
+  title: "Cod Reducere Petmax — Produse Animale de Companie 2026",
   description: "Coduri de reducere Petmax actualizate zilnic. Reduceri la hrana, accesorii si produse pentru caini, pisici si alte animale. Promotii Petmax verificate.",
   keywords: ["cod reducere petmax", "petmax reduceri", "produse animale reduceri", "petmax promotii", "petmax discount"],
   alternates: { canonical: "https://amcupon.ro/cod-reducere/petmax.ro" },

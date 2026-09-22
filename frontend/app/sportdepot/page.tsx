@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import BrandPageTemplate from "../components/BrandPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Cod Reducere Sport Depot — Echipament Sportiv 2026 | AmCupon.ro",
+  title: "Cod Reducere Sport Depot — Echipament Sportiv 2026",
   description: "Coduri de reducere Sport Depot actualizate zilnic. Reduceri la echipament sportiv, imbracaminte si incaltaminte sport. Promotii SportDepot verificate.",
   keywords: ["cod reducere sport depot", "sportdepot reduceri", "echipament sport reduceri", "sport depot promotii", "sportdepot discount"],
   alternates: { canonical: "https://amcupon.ro/cod-reducere/sportdepot.ro" },

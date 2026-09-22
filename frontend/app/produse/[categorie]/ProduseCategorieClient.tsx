@@ -6,11 +6,8 @@ import type { Produs } from "../ProduseClient";
 import { CAT_META } from "../categorie-meta";
 import { CAT_FAQ } from "./categorie-faq";
 import { useWishlist } from "../../hooks/useWishlist";
+import { numeAfisat } from "@/lib/numeMagazin";
 
-function numeAfisat(s: string) {
-  return (s || "").split(".")[0].replace(/-/g, " ")
-    .split(" ").map((w) => w[0]?.toUpperCase() + w.slice(1)).join(" ");
-}
 
 type Sort = "discount" | "pret_asc" | "pret_desc" | "nou";
 
@@ -177,6 +174,11 @@ export default function ProduseCategorieClient({
       merchant: numeAfisat(p.merchant_slug || p.merchant),
     });
   }, [toggle]);
+
+  const pretMinReal = useMemo(() => {
+    const prices = products.map((p) => p.price).filter((v) => v > 0);
+    return prices.length ? Math.floor(Math.min(...prices)) : 0;
+  }, [products]);
 
   const pretMax = useMemo(() => {
     const prices = products.map((p) => p.price).filter((v) => v > 0);
@@ -380,8 +382,11 @@ export default function ProduseCategorieClient({
                       onChange={(e) => setMaxPret(Number(e.target.value) >= pretMax ? 0 : Number(e.target.value))}
                       className="accent-[#ddf93c] w-full h-2 cursor-pointer"
                     />
+                    {/* 22.09.2026: capatul de jos era „0 lei" fix. Nu e un produs, e eticheta
+                        slider-ului — dar pe o pagina de cumparaturi „0 lei" citit din fuga arata a
+                        pret, si niciun produs de aici nu costa atat. Aratam capetele reale. */}
                     <div className="flex justify-between text-[9px] text-[#9399a0]">
-                      <span>0 lei</span><span>{pretMax.toLocaleString()} lei</span>
+                      <span>{pretMinReal.toLocaleString()} lei</span><span>{pretMax.toLocaleString()} lei</span>
                     </div>
                   </div>
                 )}

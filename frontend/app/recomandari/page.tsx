@@ -3,7 +3,7 @@ import Link from "next/link";
 import { linkPlatit } from "@/lib/linkPlatit";
 
 export const metadata: Metadata = {
-  title: "Recomandari Premium — VPN, Hosting, Freelancing, SEO Tools | AmCupon.ro",
+  title: "Recomandari Premium — VPN, Hosting, Freelancing, SEO Tools",
   description: "Servicii online testate si recomandate de AmCupon.ro. VPN sigur, hosting rapid, unelte SEO, freelancing, design — tot ce ai nevoie pentru a castiga bani online.",
   keywords: ["recomandari servicii online", "nordvpn romania", "hostinger parere", "fiverr romania", "semrush pret", "canva pro"],
   alternates: { canonical: "https://amcupon.ro/recomandari" },

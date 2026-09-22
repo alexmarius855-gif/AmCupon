@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import BrandPageTemplate from "../components/BrandPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Cod Reducere Scule365 2026 — Unelte & Scule la Reducere | AmCupon.ro",
+  title: "Cod Reducere Scule365 2026 — Unelte & Scule la Reducere",
   description: "Coduri reducere Scule365 actualizate. Scule profesionale, unelte electrice si accesorii la preturi competitive. Promotii Scule365 verificate pe AmCupon.ro.",
   keywords: ["cod reducere scule365", "scule365 reduceri", "scule profesionale online", "unelte electrice reducere", "scule365 promotii"],
   alternates: { canonical: "https://amcupon.ro/cod-reducere/scule365.ro" },

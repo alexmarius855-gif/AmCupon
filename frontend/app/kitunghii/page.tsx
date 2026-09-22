@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import BrandPageTemplate from "../components/BrandPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Cod Reducere KitUnghii 2026 — Produse Nail Art la Reducere | AmCupon.ro",
+  title: "Cod Reducere KitUnghii 2026 — Produse Nail Art la Reducere",
   description: "Coduri reducere KitUnghii actualizate. Geluri UV, oje semipermanente, accesorii nail art la preturi mici. Promotii KitUnghii verificate pe AmCupon.ro.",
   keywords: ["cod reducere kitunghii", "kitunghii reduceri", "gel uv reducere", "oje semipermanente ieftine", "nail art produse", "kitunghii promotii"],
   alternates: { canonical: "https://amcupon.ro/cod-reducere/kitunghii.ro" },

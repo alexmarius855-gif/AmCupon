@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Extensie Chrome AmCupon — Coduri Reducere Automate | AmCupon.ro",
+  title: "Extensie Chrome AmCupon — Coduri Reducere Automate",
   description: "Extensia Chrome AmCupon gaseste automat coduri de reducere pe orice site de shopping din Romania — eMag, Altex, Zara, H&M, Notino si 1000+ magazine. In curs de aprobare Chrome Web Store.",
   keywords: ["extensie chrome coduri reducere", "amcupon extensie", "cod reducere automat chrome", "extensie shopping romania"],
   alternates: { canonical: "https://amcupon.ro/extensie" },

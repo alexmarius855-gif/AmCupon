@@ -8,6 +8,7 @@ import CategoryIcon, { categoryVisual, TEXT_PE_CATEGORIE } from "./components/Ca
 import MagazinCard from "./components/MagazinCard";
 import { REDUCERI } from "./components/Footer";
 import FiltreRapide, { trecePrinFiltru, type CheieFiltru } from "./components/FiltreRapide";
+import { numeAfisat } from "@/lib/numeMagazin";
 
 interface Promotie {
   nume: string;
@@ -132,10 +133,6 @@ function extractDiscount(text: string): string | null {
   return m ? m[1] + "%" : null;
 }
 
-function numeAfisat(magazin: string): string {
-  return magazin.split(".")[0].replace(/-/g, " ")
-    .split(" ").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
-}
 
 interface Produs {
   title: string;

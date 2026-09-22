@@ -4,7 +4,7 @@ import path from "path";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Servicii cu Reducere Romania 2026 — Coduri si Oferte Verificate | AmCupon.ro",
+  title: "Servicii cu Reducere Romania 2026",
   description: "Coduri de reducere la servicii online: albire dinti, cursuri online, software facturare, hosting, telecomunicatii, sanatate. Toate verificate pe AmCupon.ro.",
   keywords: ["servicii cu reducere", "cod reducere servicii online", "albire dinti reducere", "cursuri online reducere", "software facturare reducere", "hosting reducere romania"],
   alternates: { canonical: "https://amcupon.ro/servicii" },

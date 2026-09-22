@@ -27,7 +27,7 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Cadouri & Reduceri de Crăciun 2026 — Coduri Verificate | AmCupon.ro",
+  title: "Cadouri & Reduceri de Crăciun 2026 — Coduri Actualizate",
   description:
     "Coduri de reducere și oferte de Crăciun 2026 verificate la cele mai mari magazine din România. Jucării, electronice, fashion, parfumuri — toate la prețuri reduse pe AmCupon.ro.",
   keywords: [

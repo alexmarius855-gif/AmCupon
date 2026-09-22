@@ -15,7 +15,7 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Cod Reducere Fashion & Haine 2026 — FashionDays, Answear, H&M | AmCupon.ro",
+  title: "Cod Reducere Fashion & Haine 2026 — FashionDays, Answear",
   description: "Coduri de reducere fashion Romania: FashionDays, Answear, H&M, Reserved, About You, Zara. Haine, pantofi, accesorii la preturi reduse. Verificate zilnic.",
   keywords: ["cod reducere fashiondays","reduceri answear","haine ieftine online","cod reducere hm","reserved reducere","fashion online romania","imbracaminte reducere"],
   alternates: { canonical: "https://amcupon.ro/fashion" },

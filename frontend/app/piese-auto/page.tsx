@@ -13,7 +13,7 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Piese Auto Online Romania 2026 — Coduri Reducere Verificate | AmCupon.ro",
+  title: "Piese Auto Online Romania 2026 — Coduri Reducere Verificate",
   description: "Compara magazinele de piese auto, anvelope, jante si detailing din Romania. Coduri de reducere verificate zilnic — Automobilus, Janta.ro, Anvelino si altele.",
   keywords: ["piese auto online", "cod reducere piese auto", "anvelope reducere", "jante auto reducere", "detailing auto romania", "magazin piese auto romania"],
   alternates: { canonical: "https://amcupon.ro/piese-auto" },

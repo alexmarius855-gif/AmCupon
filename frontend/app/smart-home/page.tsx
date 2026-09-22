@@ -15,7 +15,7 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Smart Home Romania 2026 — Coduri Reducere eMAG, Philips Hue, Tuya | AmCupon.ro",
+  title: "Smart Home Romania 2026 — Coduri Reducere eMAG",
   description: "Cele mai bune oferte smart home Romania 2026: becuri inteligente, prize smart, camere supraveghere, termostate. Reduceri verificate zilnic la eMAG, Altex, Dedeman.",
   keywords: ["smart home romania", "bec inteligent ieftin", "priza smart reducere", "camera supraveghere wifi", "termostat inteligent", "emag smart home", "casa inteligenta romania"],
   alternates: { canonical: "https://amcupon.ro/smart-home" },

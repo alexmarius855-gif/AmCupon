@@ -15,7 +15,7 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Reduceri Gaming 2026 — Coduri eMAG, PCGarage, Altex | AmCupon.ro",
+  title: "Reduceri Gaming 2026 — Coduri eMAG, PCGarage, Altex",
   description: "Coduri reducere gaming Romania 2026: laptopuri gaming, placi video, monitoare, periferice. eMAG, PCGarage, Altex, Evomag — oferte verificate zilnic.",
   keywords: ["reduceri gaming", "laptop gaming ieftin", "placa video reducere", "monitor gaming reducere", "pcgarage cod reducere", "emag gaming reducere", "periferice gaming ieftine"],
   alternates: { canonical: "https://amcupon.ro/gaming" },

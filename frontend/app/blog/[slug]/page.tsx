@@ -8,6 +8,7 @@ import path from "path";
 
 import { canonicalArticol, construiesteIndexMagazine } from "../../../lib/blogCanonical";
 import type { IndexableProdus } from "../../../lib/seoIndexable";
+import { numeAfisat } from "@/lib/numeMagazin";
 
 interface BlogPost {
   slug: string;
@@ -52,10 +53,6 @@ function magazineIndexabile(): Set<string> {
   }
 }
 
-function numeAfisat(magazin: string): string {
-  return magazin.split(".")[0].replace(/-/g, " ")
-    .split(" ").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
-}
 
 function formatDate(dateStr: string): string {
   return new Date(dateStr).toLocaleDateString("ro-RO", {
@@ -98,7 +95,16 @@ function parseInline(text: string, baseKey: string): React.ReactNode[] {
 }
 
 function renderContent(content: string) {
-  return content.split("\n\n").map((block, i) => {
+  // 22.09.2026: blocurile se impart pe linie goala, iar generatoarele scriu adesea
+  //     ## Parametri esentiali
+  //     - Motor: Bosch, Shimano
+  // fara linie goala intre ele. Tot blocul intra atunci in <h2>, deci titlul se randa
+  // urias, cu toata lista inauntru — vizibil pe 39 de sectiuni din articolele
+  // „cel mai bun X". Normalizam inainte de impartire: orice titlu primeste linia goala
+  // care ii lipseste. Reparat AICI, nu in generatoare, ca sa prinda si cele 499 de
+  // articole deja scrise.
+  const normalizat = content.replace(/^(#{2,4} .+)$\n(?!$)/gm, "$1\n\n");
+  return normalizat.split("\n\n").map((block, i) => {
     const key = `b${i}`;
     if (block.startsWith("## ")) {
       return <h2 key={key} className="text-xl font-black text-[#ffffff] mt-8 mb-3">{parseInline(block.slice(3), key)}</h2>;
@@ -187,6 +193,21 @@ export async function generateMetadata({
   const post = posts.find((p) => p.slug === slug);
   if (!post) return { title: "Articol negăsit | AmCupon.ro" };
 
+  // 22.09.2026: 47 de articole aveau <title> peste 60 de caractere, deci Google taia
+  // exact partea utila. Limita e a lui <title>, NU a titlului articolului — <h1> ramane
+  // intreg mai jos. Se scoate intai sufixul de brand, apoi se taie la ultimul cuvant
+  // intreg, ca sa nu ramana „...bicicleta elec".
+  const MAX_TITLU = 60;
+  const titluScurt = (() => {
+    const fara = post.title.replace(/\s*\|\s*AmCupon\.ro\s*$/i, "").trim();
+    if (fara.length <= MAX_TITLU) {
+      const cu = `${fara} | AmCupon.ro`;
+      return cu.length <= MAX_TITLU ? cu : fara;
+    }
+    const taiat = fara.slice(0, MAX_TITLU);
+    return taiat.slice(0, taiat.lastIndexOf(" ") > 30 ? taiat.lastIndexOf(" ") : MAX_TITLU).trim();
+  })();
+
   const pageUrl = `https://amcupon.ro/blog/${slug}`;
   // Canonical catre pagina de MAGAZIN cand articolul e un sablon lunar despre acelasi
   // magazin (masurat 23.08: 96 astfel de articole, 88,1% identice intre ele, fiecare
@@ -199,12 +220,12 @@ export async function generateMetadata({
   return {
     // post.title include deja " | AmCupon.ro" (vezi generate_blog.py) — nu re-adauga,
     // altfel titlul apare dublat in tab/SERP ("... | AmCupon.ro | AmCupon.ro")
-    title: post.title,
+    title: titluScurt,
     description: post.excerpt,
     alternates: { canonical: canonic },
     ...(faraPromoActiva ? { robots: { index: false, follow: true } } : {}),
     openGraph: {
-      title: post.title,
+      title: titluScurt,
       description: post.excerpt,
       url: pageUrl,
       siteName: "AmCupon.ro",
@@ -216,7 +237,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: post.title,
+      title: titluScurt,
       description: post.excerpt,
       images: [post.cover],
     },

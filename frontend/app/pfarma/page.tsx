@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import BrandPageTemplate from "../components/BrandPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Cod Reducere pFarma 2026 — Farmacie Online la Reducere | AmCupon.ro",
+  title: "Cod Reducere pFarma 2026 — Farmacie Online la Reducere",
   description: "Coduri reducere pFarma actualizate. Medicamente OTC, suplimente, cosmetice farmacie si produse naturiste la preturi mici. Promotii pFarma verificate.",
   keywords: ["cod reducere pfarma", "pfarma reduceri", "farmacie online reducere", "medicamente online ieftine", "pfarma promotii", "suplimente reducere"],
   alternates: { canonical: "https://amcupon.ro/cod-reducere/pfarma.ro" },

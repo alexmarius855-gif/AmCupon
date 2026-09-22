@@ -1,3 +1,4 @@
+import { PRET_MINIM_CREDIBIL } from "@/lib/statisticiMagazin";
 import { notFound, permanentRedirect } from "next/navigation";
 import { aceeasiTara } from "@/lib/taraDomeniu";
 import { Metadata } from "next";
@@ -8,6 +9,7 @@ import { buildMerchantTokens, esteIndexabil } from "../../../lib/seoIndexable";
 import ContextMagazin, { type CategorieStudiu } from "./ContextMagazin";
 import { linkAfiliat } from "@/lib/linkMagazin";
 import FaraLivrareRo, { tariLivrare, type Alternativa, type MagazinFaraLivrare } from "./FaraLivrareRo";
+import { numeAfisat, brandDomeniu } from "@/lib/numeMagazin";
 
 interface Promotie {
   nume: string;
@@ -295,18 +297,17 @@ function loadProducts(slug: string): Produs[] {
       const mn = (pr.merchant || "").toLowerCase();
       const s = slug.toLowerCase();
       return ms === s || mn === s || ms.startsWith(s.split(".")[0]) || mn.includes(s.split(".")[0]);
-    }).slice(0, 24);
+    })
+      // 22.09.2026: acelasi prag ca la statistici (PRET_MINIM_CREDIBIL). Reparatia din
+      // 20.09 a curatat INTERVALUL de pret, dar lista de produse a ramas neatinsa, si
+      // pagina bazarulonline.ro afisa „0 lei" de unsprezece ori — preturi unitare dintr-un
+      // bax (en-gros), rotunjite la zero de formatarea fara zecimale. Un pret pe care
+      // nimeni nu-l poate plati nu e o oferta, e o eroare de feed.
+      .filter((pr) => (pr.price ?? 0) >= PRET_MINIM_CREDIBIL)
+      .slice(0, 24);
   } catch { return []; }
 }
 
-function numeAfisat(magazin: string): string {
-  return magazin
-    .split(".")[0]
-    .replace(/-/g, " ")
-    .split(" ")
-    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-    .join(" ");
-}
 
 // Cauta magazinul tolerand URL-uri vechi (majuscule/forme anterioare ale slug-ului):
 // 1) potrivire exacta  2) case-insensitive  3) pe primul label de domeniu (surfshark ~ surfshark.com)
@@ -316,7 +317,9 @@ function gasesteMagazin(magazine: Magazin[], slug: string): Magazin | undefined 
   return (
     magazine.find((x) => x.magazin === slug) ||
     magazine.find((x) => x.magazin.toLowerCase() === s) ||
-    magazine.find((x) => x.magazin.toLowerCase().split(".")[0] === base && aceeasiTara(s, x.magazin))
+    // Potrivire pe BRAND, nu pe primul label: `de.fossibot.com` si `de.eureka.com` au
+    // acelasi prim label („de") si se serveau unul pe altul. Vezi brandDomeniu().
+    magazine.find((x) => brandDomeniu(x.magazin) === brandDomeniu(s) && aceeasiTara(s, x.magazin))
   );
 }
 
@@ -339,7 +342,10 @@ export async function generateMetadata({
     if (f) {
       const numeF = numeAfisat(f.magazin);
       return {
-        title: `Cod reducere ${numeF}: nicio ofertă pentru România | AmCupon.ro`,
+        // 22.09.2026: cu sufixul de brand, 100 din aceste titluri treceau de 60 de
+        // caractere si Google taia exact partea care spune ce e pagina. Pagina e oricum
+        // `noindex`, dar titlul se vede in tab si la distribuire.
+        title: `Cod reducere ${numeF}: nu livreaza in Romania`.slice(0, 60),
         description: `Programul de afiliere ${numeF} la care avem acces funcționează doar pentru ${tariLivrare(f.regiuni)}, deci nu îl promovăm. Vezi alternativele din ${f.categorie}.`,
         robots: { index: false, follow: true },
         alternates: { canonical: `https://amcupon.ro/cod-reducere/${f.magazin}` },
@@ -357,13 +363,29 @@ export async function generateMetadata({
   const pageUrl = `https://amcupon.ro/cod-reducere/${m.magazin}`;
 
   // Titlu optimizat — format care rankuieste (ex: cuponeria)
+  //
+  // 22.09.2026, doua reparatii:
+  //  1. „1 ofertă active" — „active" era hardcodat, deci singularul iesea in dezacord.
+  //     Aparea pe 37 de pagini, in <title>, adica si in rezultatul Google.
+  //  2. 879 de titluri treceau de 60 de caractere, limita scrisa in CLAUDE.md din 17.06;
+  //     476 doar din „și Voucher". Google le taia exact pe partea utila. `subLimita()`
+  //     scoate intai sufixul de brand, apoi luna — ce ramane e mereu partea care aduce
+  //     clicul („Cod Reducere <Magazin>"), nu decorul.
+  const MAX_TITLU = 60;
+  const subLimita = (baza: string): string => {
+    const cu = `${baza} | AmCupon.ro`;
+    if (cu.length <= MAX_TITLU) return cu;
+    if (baza.length <= MAX_TITLU) return baza;
+    return baza.replace(` ${luna} ${an}`, ` ${an}`).slice(0, MAX_TITLU).trim();
+  };
+
   const title = nrCod > 0
-    ? `Cod Reducere ${nume} ${luna} ${an} — ${nrCod} cod${nrCod > 1 ? "uri" : ""} activ${nrCod > 1 ? "e" : ""} | AmCupon.ro`
+    ? subLimita(`Cod Reducere ${nume} ${luna} ${an} — ${nrCod} cod${nrCod > 1 ? "uri" : ""} activ${nrCod > 1 ? "e" : ""}`)
     : nrPromo > 0
-    ? `Cod Reducere ${nume} ${luna} ${an} — ${nrPromo} ofert${nrPromo > 1 ? "e" : "ă"} active | AmCupon.ro`
+    ? subLimita(`Cod Reducere ${nume} ${luna} ${an} — ${nrPromo} ofert${nrPromo > 1 ? "e active" : "ă activă"}`)
     // 19.09.2026: era „— Voucher verificat" pe ~1.040 de pagini FARA niciun voucher. Titlul promitea
     // exact ce pagina nu are, iar omul pleca de pe ea in cateva secunde.
-    : `Cod Reducere și Voucher ${nume} ${luna} ${an} | AmCupon.ro`;
+    : subLimita(`Cod Reducere ${nume} ${luna} ${an}`);
 
   // Descriere: custom pentru top magazine, generic pentru restul. Fara „verificate": ofertele vin
   // din retelele de afiliere si expira dupa data lor (scripts/promotii.py) — nu le testam in cos.

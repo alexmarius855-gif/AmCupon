@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
+import { numeAfisat } from "@/lib/numeMagazin";
 
 interface Promotie {
   nume: string;
@@ -26,7 +27,7 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Black Friday 2026 România — Coduri Reducere & Oferte Verificate | AmCupon.ro",
+  title: "Black Friday 2026 România — Coduri Reducere & Oferte",
   description:
     "Cele mai bune oferte Black Friday 2026 din România. Coduri de reducere verificate la eMAG, FashionDays, Altex, Dedeman și sute de alte magazine. Actualizat zilnic pe AmCupon.ro.",
   keywords: [
@@ -58,14 +59,6 @@ function loadData(): Magazin[] {
   return JSON.parse(fs.readFileSync(filePath, "utf-8"));
 }
 
-function numeAfisat(magazin: string): string {
-  return magazin
-    .split(".")[0]
-    .replace(/-/g, " ")
-    .split(" ")
-    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-    .join(" ");
-}
 
 const CULORI = ["bg-[#ddf93c]"];
 

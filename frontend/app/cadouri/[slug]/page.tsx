@@ -297,7 +297,12 @@ export async function generateMetadata({
   if (!oc) return { title: "Pagina negasita" };
   const url = `https://amcupon.ro/cadouri/${slug}`;
   return {
-    title: `${oc.titluMeta} | AmCupon.ro`,
+    // 22.09.2026: cu sufixul de brand, opt dintre cele saisprezece pagini de ocazie
+    // treceau de 60 de caractere, deci Google taia tocmai ocazia („...cadouri pentru
+    // nas" in loc de „nasi"). Sufixul cade primul — el nu aduce clicul.
+    title: `${oc.titluMeta} | AmCupon.ro`.length <= 60
+      ? `${oc.titluMeta} | AmCupon.ro`
+      : oc.titluMeta.slice(0, 60).trim(),
     description: oc.descMeta,
     keywords: [`cadouri ${slug}`, "idei cadouri romania", "cadouri originale", "cadouri cu pret", ...oc.keywords],
     alternates: { canonical: url },

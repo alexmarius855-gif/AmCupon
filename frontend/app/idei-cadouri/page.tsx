@@ -15,7 +15,7 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Idei de Cadouri 2026 — Reduceri la Cadouri Online | AmCupon.ro",
+  title: "Idei de Cadouri 2026 — Reduceri la Cadouri Online",
   description: "Idei de cadouri pentru orice ocazie: ziua de naștere, aniversare, Crăciun, Valentine's Day. Coduri de reducere verificate la jucării, fashion, beauty, electronice și bijuterii.",
   keywords: ["idei cadouri", "cadouri reducere", "cadou ziua nasterii", "cadou craciun", "cadouri online ieftine", "voucher cadou romania", "cod reducere cadouri"],
   alternates: { canonical: "https://amcupon.ro/idei-cadouri" },

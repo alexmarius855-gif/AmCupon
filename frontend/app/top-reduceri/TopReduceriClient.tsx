@@ -3,6 +3,7 @@
 import Link from "next/link";
 
 import { useState } from "react";
+import { numeAfisat } from "@/lib/numeMagazin";
 
 interface Promotie {
   nume: string;
@@ -39,14 +40,6 @@ interface Props {
 
 type Tab = "coduri" | "promo" | "trending" | "expira";
 
-function numeAfisat(magazin: string): string {
-  return magazin
-    .split(".")[0]
-    .replace(/-/g, " ")
-    .split(" ")
-    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-    .join(" ");
-}
 
 function bestCod(promotii: Promotie[]): Promotie | null {
   const cuCod = promotii.filter((p) => p.cod_cupon);

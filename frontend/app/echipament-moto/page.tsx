@@ -7,7 +7,7 @@ const LINK_MXENDURO = "https://event.2performant.com/events/click?ad_type=quickl
 // ─────────────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: "Echipament Moto cu Reducere Romania 2026 — Casti, Piese | AmCupon.ro",
+  title: "Echipament Moto cu Reducere Romania 2026 — Casti, Piese",
   description: "Casti, geci, manusi si piese pentru motociclete si scutere. Comparatie Fixato si MxEnduro — coduri de reducere verificate pe AmCupon.ro.",
   keywords: ["echipament moto reducere", "casti moto ieftine", "costume motociclisti reducere", "piese moto online", "cod reducere fixato", "cod reducere mxenduro"],
   alternates: { canonical: "https://amcupon.ro/echipament-moto" },

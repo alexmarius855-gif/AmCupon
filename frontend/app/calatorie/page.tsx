@@ -15,7 +15,7 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Reduceri Vacanțe & Călătorii 2026 — Bilete, Hotel, Troller | AmCupon.ro",
+  title: "Reduceri Vacanțe & Călătorii 2026 — Bilete, Hotel, Troller",
   description: "Coduri de reducere vacanțe și travel 2026: Booking, eMag Vacante, bilete avion, trollere Samsonite. Reduceri verificate pentru vacanță ieftină în România și Europa.",
   keywords: ["reduceri vacante", "cod reducere booking", "vacanta ieftina romania 2026", "bilete avion reducere", "hotel reducere", "troller reducere", "travel reducere romania"],
   alternates: { canonical: "https://amcupon.ro/calatorie" },

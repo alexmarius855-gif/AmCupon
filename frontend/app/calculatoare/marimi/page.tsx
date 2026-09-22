@@ -7,7 +7,7 @@ import { CAI_REDIRECTIONATE } from "../../../lib/redirecturi";
 import MarimiClient from "./MarimiClient";
 
 export const metadata: Metadata = {
-  title: "Convertor mărimi haine și încălțăminte — RO, UK, US, IT | AmCupon.ro",
+  title: "Convertor mărimi haine și încălțăminte — RO, UK, US, IT",
   description:
     "Tabel de conversie mărimi: haine damă și bărbați, încălțăminte și copii. Echivalențe România/EU, UK, US, Italia, plus lungimea tălpii în cm.",
   keywords: [

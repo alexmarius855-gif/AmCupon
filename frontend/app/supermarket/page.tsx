@@ -15,7 +15,7 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Cod Reducere Supermarket Online 2026 — Carrefour, Kaufland, Auchan | AmCupon.ro",
+  title: "Cod Reducere Supermarket Online 2026 — Carrefour, Kaufland",
   description: "Coduri de reducere supermarket online Romania: Carrefour, Kaufland, Auchan, Bringo, Freshful. Alimente, bauturi, produse de casa la preturi mici. Livrare la domiciliu.",
   keywords: ["cod reducere carrefour","reduceri kaufland","auchan cod cupon","bringo reducere","supermarket online romania","alimente ieftine","livrare mancare reducere"],
   alternates: { canonical: "https://amcupon.ro/supermarket" },

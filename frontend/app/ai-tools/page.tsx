@@ -3,7 +3,7 @@ import Link from "next/link";
 import { linkPlatit } from "@/lib/linkPlatit";
 
 export const metadata: Metadata = {
-  title: "Cele mai bune AI Tools 2026 — ghid complet pentru creatori | AmCupon.ro",
+  title: "Cele mai bune AI Tools 2026 — ghid complet pentru creatori",
   description:
     "Top 16 unelte AI pentru text, video, voce, SEO și design. Ce face fiecare, cât costă și pentru cine e potrivit — Copy.ai, InVideo, ElevenLabs, Canva, Semrush și altele.",
   keywords: [

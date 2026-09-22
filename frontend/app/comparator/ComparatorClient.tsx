@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import { Suspense } from "react";
 import { calculateDealScore } from "../../lib/dealScore";
+import { numeAfisat } from "@/lib/numeMagazin";
 
 interface Promotie {
   nume: string;
@@ -30,9 +31,6 @@ interface Magazin {
   trend: number;
 }
 
-function numeAfisat(slug: string) {
-  return slug.split(".")[0].replace(/-/g," ").split(" ").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
-}
 
 function maxDiscount(promotii: Promotie[]): number {
   let max = 0;

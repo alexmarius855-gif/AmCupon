@@ -3,7 +3,7 @@ import Link from "next/link";
 import { linkPlatit } from "@/lib/linkPlatit";
 
 export const metadata: Metadata = {
-  title: "Servicii Internationale 2026 — VPN, Hosting, Software, Cursuri | AmCupon.ro",
+  title: "Servicii Internationale 2026 — VPN, Hosting, Software",
   description: "Cele mai bune servicii internationale disponibile in Romania: VPN, hosting, antivirus, cursuri online, freelancing, ecommerce. Oferte verificate si comisioane afiliat.",
   keywords: [
     "servicii internationale romania", "vpn romania", "hosting ieftin", "antivirus online",

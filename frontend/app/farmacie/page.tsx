@@ -15,7 +15,7 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Farmacie Online Ieftină România 2026 — Reduceri Dr. Max, Vegis | AmCupon.ro",
+  title: "Farmacie Online Ieftină România 2026 — Reduceri Dr. Max",
   description: "Coduri de reducere farmacie online România: Dr. Max, Vegis, Catena, Sensiblu. Suplimente, medicamente OTC, cosmetice medicale la prețuri reduse. Livrare rapidă.",
   keywords: ["farmacie online", "cod reducere dr max", "reduceri vegis", "suplimente ieftine", "medicamente online romania", "farmacie reducere", "catena online"],
   alternates: { canonical: "https://amcupon.ro/farmacie" },

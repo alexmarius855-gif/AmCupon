@@ -16,6 +16,7 @@ import { calculateDealScore, DEAL_SCORE_VISIBLE_THRESHOLD } from "../../../lib/d
 import { etichetaExpirare } from "../../../lib/expirarePromo";
 import VotCupon, { hashCupon } from "../../components/VotCupon";
 import { linkAfiliat, linkPromotie } from "@/lib/linkMagazin";
+import { numeAfisat } from "@/lib/numeMagazin";
 
 // ── Deal Score badge ────────────────────────────────────────────────────────────
 // 19.09.2026: numaratoarea 0 -> scor pornea de la 0 si pe server, deci HTML-ul (ce citesc Google
@@ -125,9 +126,6 @@ interface Produs {
 }
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
-function numeAfisat(magazin: string): string {
-  return magazin.split(".")[0].replace(/-/g," ").split(" ").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
-}
 
 function maxPct(promotii: { nume: string }[]): number {
   let max = 0;

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
+import { numeAfisat } from "@/lib/numeMagazin";
 
 export const metadata: Metadata = {
   title: "404 — Pagina nu a fost găsită | AmCupon.ro",
@@ -21,14 +22,6 @@ function loadTopStores() {
   }
 }
 
-function numeAfisat(magazin: string): string {
-  return magazin
-    .split(".")[0]
-    .replace(/-/g, " ")
-    .split(" ")
-    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-    .join(" ");
-}
 
 export default function NotFound() {
   const topStores = loadTopStores();

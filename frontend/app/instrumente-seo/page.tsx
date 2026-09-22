@@ -10,7 +10,7 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Instrumente SEO cu Reducere 2026 — Cod Semrush, Ahrefs, SE Ranking | AmCupon.ro",
+  title: "Instrumente SEO cu Reducere 2026 — Cod Semrush, Ahrefs",
   description: "Coduri reducere instrumente SEO 2026: Semrush, Ahrefs, SE Ranking, Moz, Screaming Frog. Trial gratuit si reduceri pana la 40% la cele mai bune tool-uri SEO profesionale.",
   keywords: ["instrumente seo gratuite", "semrush reducere", "ahrefs cod reducere", "se ranking discount", "tool seo romania", "semrush trial gratuit", "software seo ieftin"],
   alternates: { canonical: "https://amcupon.ro/instrumente-seo" },

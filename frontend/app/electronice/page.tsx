@@ -15,7 +15,7 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Cod Reducere Electronice România 2026 — eMag, Altex, PCGarage | AmCupon.ro",
+  title: "Cod Reducere Electronice România 2026 — eMag, Altex",
   description: "Coduri de reducere electronice România: eMag, Altex, PCGarage, Flanco, Cel.ro. Telefoane, laptopuri, TV, gaming la prețuri reduse. Verificate zilnic.",
   keywords: ["cod reducere emag", "reduceri altex", "electronice ieftine", "cod reducere pcgarage", "laptop reducere", "telefon reducere romania", "electronice online"],
   alternates: { canonical: "https://amcupon.ro/electronice" },

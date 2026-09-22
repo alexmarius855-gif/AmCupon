@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Cel mai bun Broker Romania 2026 — Binance, XTB, eToro Comparatie | AmCupon.ro",
+  title: "Cel mai bun Broker Romania 2026 — Binance, XTB",
   description: "Comparam cele mai bune platforme de trading si investitii pentru romani in 2026. XTB actiuni 0% comision, Binance crypto, eToro copy trading. Ghid complet cu bonusuri de inregistrare.",
   keywords: [
     "cel mai bun broker romania",

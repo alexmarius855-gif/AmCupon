@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import BrandPageTemplate from "../components/BrandPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Reduceri Elefant — Coduri si Oferte Elefant.ro 2026 | AmCupon.ro",
+  title: "Reduceri Elefant — Coduri si Oferte Elefant.ro 2026",
   description: "Oferte si coduri de reducere Elefant.ro actualizate zilnic. Carti, jocuri, muzica, filme la preturi mici. Promotii Elefant verificate acum.",
   keywords: ["reducere elefant", "cod reducere elefant", "oferte elefant", "elefant carti reducere", "elefant promotii"],
   alternates: { canonical: "https://amcupon.ro/elefant" },

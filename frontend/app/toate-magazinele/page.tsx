@@ -4,7 +4,7 @@ import path from "path";
 import ToateMagazineleClient from "./ToateMagazineleClient";
 
 export const metadata: Metadata = {
-  title: "Toate Magazinele cu Reduceri Romania 2026 — 1000+ Parteneri | AmCupon.ro",
+  title: "Toate Magazinele cu Reduceri Romania 2026 — 1000+ Parteneri",
   description: "Lista completa a 1000+ magazine partenere AmCupon.ro cu coduri de reducere si oferte verificate. Cauta magazinul preferat sau filtreaza pe categorie. Actualizat zilnic.",
   keywords: ["toate magazinele reduceri","coduri reducere magazine online romania","lista magazine afiliate","reduceri verificate romania"],
   alternates: { canonical: "https://amcupon.ro/toate-magazinele" },

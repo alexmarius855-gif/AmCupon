@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import BrandPageTemplate from "../components/BrandPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Cod Reducere Amazon Romania 2026 — Oferte & Promotii | AmCupon.ro",
+  title: "Cod Reducere Amazon Romania 2026 — Oferte & Promotii",
   description: "Coduri reducere Amazon Romania actualizate zilnic. Milioane de produse cu livrare rapida. Promotii Amazon Prime, reduceri electronice, carti, fashion si mai mult.",
   keywords: ["cod reducere amazon", "amazon romania reduceri", "amazon prime reduceri", "amazon discount", "amazon voucher", "amazon promotii"],
   alternates: { canonical: "https://amcupon.ro/cod-reducere/amazon.com" },

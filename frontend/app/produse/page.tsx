@@ -5,7 +5,7 @@ import ProduseClient from "./ProduseClient";
 import type { Produs, Magazin, Banner } from "./ProduseClient";
 
 export const metadata: Metadata = {
-  title: "Produse cu Reducere Romania 2026 — Top Deals Zilnice | AmCupon.ro",
+  title: "Produse cu Reducere Romania 2026 — Top Deals Zilnice",
   description: "Cele mai bune produse cu discount din Romania. Top reduceri azi, campanii vizuale, feed-uri de produse actualizate zilnic. Compara preturi si economiseste.",
   keywords: ["produse reducere romania", "oferte produse online", "top deals azi", "discount produse romania 2026"],
   alternates: { canonical: "https://amcupon.ro/produse" },

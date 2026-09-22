@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import BrandPageTemplate from "../components/BrandPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Cod Reducere Flanco — Oferte Electronice si Electrocasnice 2026 | AmCupon.ro",
+  title: "Cod Reducere Flanco — Oferte Electronice si Electrocasnice",
   description: "Coduri de reducere Flanco actualizate zilnic. Reduceri la telefoane, laptopuri, televizoare si electrocasnice. Promotii Flanco verificate.",
   keywords: ["cod reducere flanco", "flanco reduceri", "flanco promotii", "electronice reduceri", "flanco discount"],
   alternates: { canonical: "https://amcupon.ro/flanco" },

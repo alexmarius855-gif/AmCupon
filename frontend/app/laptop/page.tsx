@@ -15,7 +15,7 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Laptop Ieftin Romania 2026 — Coduri Reducere eMAG, Altex, PCGarage | AmCupon.ro",
+  title: "Laptop Ieftin Romania 2026 — Coduri Reducere eMAG, Altex",
   description: "Cele mai bune oferte laptopuri 2026: gaming, business, student. Reduceri verificate la eMAG, Altex, PCGarage, Flanco. Laptop sub 2000 lei, 3000 lei, 5000 lei.",
   keywords: ["laptop ieftin romania", "laptop gaming reducere", "laptop student ieftin", "cel mai bun laptop 2026", "laptop sub 3000 lei", "emag laptop reducere", "altex laptop promotie"],
   alternates: { canonical: "https://amcupon.ro/laptop" },

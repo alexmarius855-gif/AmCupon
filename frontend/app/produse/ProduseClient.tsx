@@ -5,6 +5,7 @@ import { useState, useMemo, useEffect } from "react";
 import { useWishlist } from "../hooks/useWishlist";
 import { CAT_META } from "./categorie-meta";
 import { linkAfiliat, linkPromotie } from "@/lib/linkMagazin";
+import { numeAfisat } from "@/lib/numeMagazin";
 
 /* ─── Types ──────────────────────────────────────────────────────────────── */
 export interface Produs {
@@ -61,10 +62,6 @@ export interface Banner {
 }
 
 /* ─── Helpers ─────────────────────────────────────────────────────────────── */
-function numeAfisat(s: string) {
-  return (s || "").split(".")[0].replace(/-/g, " ")
-    .split(" ").map(w => w[0]?.toUpperCase() + w.slice(1)).join(" ");
-}
 
 function maxDiscount(promotii: Promotie[]): number {
   let mx = 0;
@@ -339,10 +336,28 @@ export default function ProduseClient({
     magazine.filter(m => m.are_promotie).sort((a, b) => maxDiscount(b.promotii) - maxDiscount(a.promotii)),
   [magazine]);
 
-  // Bannere cu imagini valide
-  const bannereValide = useMemo(() =>
-    banners.filter(b => b.image_url && (b.landing_url || b.landing_raw)),
-  [banners]);
+  // Bannere cu imagini valide — O SINGURA bucata per campanie.
+  //
+  // 22.09.2026: tabul arata „Campanii cu Imagini (20)", dar erau 20 de FORMATE ale
+  // acelorasi patru campanii — reteaua livreaza fiecare creatie in banner, skyscraper,
+  // leaderboard si patrat. Pe ecran ieseau sase „Kit Unghii STAR FIESTA" unul langa
+  // altul. Pastram un singur format per (magazin + campanie), preferandu-l pe cel mai
+  // apropiat de patrat: un skyscraper 160x600 intr-o grila de carduri fie se intinde
+  // pe tot randul, fie lasa gol sub celelalte.
+  const bannereValide = useMemo(() => {
+    const valide = banners.filter(b => b.image_url && (b.landing_url || b.landing_raw));
+    const best = new Map<string, Banner>();
+    for (const b of valide) {
+      const cheie = `${(b.merchant || "").toLowerCase()}|${(b.name || b.category || "").toLowerCase()}`;
+      const raport = (w?: number, h?: number) =>
+        w && h ? Math.max(w / h, h / w) : 99;      // 1 = patrat, mare = alungit
+      const acum = best.get(cheie);
+      if (!acum || raport(b.width, b.height) < raport(acum.width, acum.height)) {
+        best.set(cheie, b);
+      }
+    }
+    return [...best.values()];
+  }, [banners]);
 
   // Categorii produse unice
   const categorii = useMemo(() => {
@@ -522,9 +537,12 @@ export default function ProduseClient({
                 <a key={b.id} href={b.landing_url || b.landing_raw} target="_blank" rel="sponsored noopener noreferrer"
                   className="group relative block rounded-xl overflow-hidden border border-[#2a2f36] hover:border-[#ddf93c]/50 hover:shadow-xl transition-all mb-6">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={b.image_url} alt={b.name || b.merchant}
-                    className="w-full object-cover group-hover:scale-[1.01] transition-transform duration-300"
-                    onError={e => (e.target as HTMLImageElement).parentElement?.remove()}/>
+                  <div className="w-full bg-[#ffffff] flex items-center justify-center" style={{ maxHeight: 340 }}>
+                    <img src={b.image_url} alt={b.name || b.merchant}
+                      className="max-w-full object-contain group-hover:scale-[1.01] transition-transform duration-300"
+                      style={{ maxHeight: 340 }}
+                      onError={e => (e.target as HTMLImageElement).closest("a")?.remove()}/>
+                  </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6">
                     <div>
                       <p className="text-[#ffffff] font-black text-xl">{b.merchant}</p>
@@ -544,9 +562,15 @@ export default function ProduseClient({
                     title={b.name || b.merchant}
                     className="group relative block rounded-xl overflow-hidden border border-[#2a2f36] hover:border-[#ddf93c]/50 hover:shadow-lg transition-all">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={b.image_url} alt={b.name || b.merchant || "Banner"}
-                      className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy"
-                      onError={e => (e.target as HTMLImageElement).closest("a")?.remove()}/>
+                    {/* aspect fix + object-contain: bannerele vin in formate foarte
+                        diferite, iar `h-auto` lasa inaltimea randului pe seama celui mai
+                        alungit — de unde golul negru de sub carduri. Fundal alb fiindca
+                        multe creatii sunt facute pentru fundal deschis. */}
+                    <div className="aspect-[4/3] w-full bg-[#ffffff] flex items-center justify-center overflow-hidden">
+                      <img src={b.image_url} alt={b.name || b.merchant || "Banner"}
+                        className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy"
+                        onError={e => (e.target as HTMLImageElement).closest("a")?.remove()}/>
+                    </div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-3">
                       <span className="text-[#ffffff] text-xs font-bold">{b.merchant}</span>
                     </div>

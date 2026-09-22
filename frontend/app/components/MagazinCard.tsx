@@ -8,6 +8,8 @@ import { useCopyCod } from "../hooks/useCopyCod";
 import RedirectModal from "./RedirectModal";
 import { calculateDealScore, DEAL_SCORE_VISIBLE_THRESHOLD } from "../../lib/dealScore";
 import { linkAfiliat, linkPromotie } from "@/lib/linkMagazin";
+export { numeAfisat } from "@/lib/numeMagazin";
+import { numeAfisat } from "@/lib/numeMagazin";
 
 export interface CardPromotie {
   nume: string;
@@ -34,21 +36,9 @@ export interface CardMagazin {
 
 // Domenii fara cratima ale caror slug-uri dau nume ilizibile prin derivare automata
 // (ex: "clickandgrow.com" -> "Clickandgrow" in loc de "Click & Grow")
-const NUME_OVERRIDE: Record<string, string> = {
-  "clickandgrow.com": "Click & Grow",
-  "trampolinepartsandsupply.com": "Trampoline Parts & Supply",
-  "silverrushstyle.com": "Silver Rush Style",
-  "airserbia.com": "Air Serbia",
-  "carmellimo.com": "Carmel Limo",
-};
 
 /** Nume afisabil dintr-un slug de domeniu. Exportat ca sa fie o singura sursa
  *  (paginile de categorie il refolosesc — altfel s-ar duplica si NUME_OVERRIDE). */
-export function numeAfisat(magazin: string): string {
-  if (NUME_OVERRIDE[magazin]) return NUME_OVERRIDE[magazin];
-  return magazin.split(".")[0].replace(/-/g, " ")
-    .split(" ").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
-}
 
 function extractDiscount(text?: string): string | null {
   if (!text) return null;

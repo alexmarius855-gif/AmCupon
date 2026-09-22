@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import BrandPageTemplate from "../components/BrandPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Cod Reducere Notino — Oferte Parfumuri si Cosmetice 2026 | AmCupon.ro",
+  title: "Cod Reducere Notino — Oferte Parfumuri si Cosmetice 2026",
   description: "Coduri de reducere Notino actualizate zilnic. Reduceri la parfumuri, cosmetice si produse de ingrijire de la branduri premium. Promotii Notino verificate.",
   keywords: ["cod reducere notino", "notino reduceri", "notino promotii", "parfumuri online reduceri", "notino discount"],
   alternates: { canonical: "https://amcupon.ro/cod-reducere/notino.ro" },

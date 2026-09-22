@@ -14,7 +14,7 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Cod Reducere Bijuterii & Accesorii 2026 — Aur, Argint, Cristale | AmCupon.ro",
+  title: "Cod Reducere Bijuterii & Accesorii 2026 — Aur, Argint",
   description: "Coduri de reducere bijuterii Romania: Fluturasi, Chic Bijoux, Novvu, Bijubox, Androvelli, Lu.ro. Aur, argint, cristale, inele, bratari si coliere la preturi mici.",
   keywords: ["cod reducere bijuterii","reduceri aur","argint reducere","bijuterii online romania","inele reducere","bratari reducere","coliere reducere"],
   alternates: { canonical: "https://amcupon.ro/bijuterii" },

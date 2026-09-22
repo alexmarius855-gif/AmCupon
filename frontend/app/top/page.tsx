@@ -20,7 +20,7 @@ interface TopData {
 }
 
 export const metadata: Metadata = {
-  title: "Top Produse Recomandate 2026 — Review-uri si Ghiduri | AmCupon.ro",
+  title: "Top Produse Recomandate 2026 — Review-uri si Ghiduri",
   description: "Review-uri si topuri de produse testate: laptopuri, telefoane, casti wireless, televizoare, smartwatch-uri. Recomandarile noastre cu link-uri la cel mai bun pret.",
   alternates: { canonical: "https://amcupon.ro/top" },
   openGraph: {

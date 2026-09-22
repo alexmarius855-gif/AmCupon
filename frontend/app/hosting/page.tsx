@@ -11,7 +11,7 @@ const LINK_CLOUDWAYS  = "https://www.cloudways.com"; // link afiliat Cloudways
 // ──────────────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: "Cel mai bun Hosting Romania 2026 — Hostinger vs SiteGround | AmCupon.ro",
+  title: "Cel mai bun Hosting Romania 2026 — Hostinger vs SiteGround",
   description: "Comparam cele mai bune servicii de hosting pentru Romania in 2026. Hostinger, SiteGround, Cloudways — preturi, viteza, suport. Alege gazduirea web potrivita.",
   keywords: ["cel mai bun hosting romania", "hostinger parere", "gazduire web ieftina", "hosting wordpress romania", "hosting ieftin 2026", "siteground parere"],
   alternates: { canonical: "https://amcupon.ro/hosting" },

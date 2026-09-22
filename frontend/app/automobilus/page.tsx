@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import BrandPageTemplate from "../components/BrandPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Cod Reducere Automobilus — Piese si Accesorii Auto 2026 | AmCupon.ro",
+  title: "Cod Reducere Automobilus — Piese si Accesorii Auto 2026",
   description: "Coduri de reducere Automobilus actualizate zilnic. Reduceri la piese auto, accesorii si consumabile. Promotii Automobilus verificate.",
   keywords: ["cod reducere automobilus", "automobilus reduceri", "piese auto reduceri", "automobilus promotii", "automobilus discount"],
   alternates: { canonical: "https://amcupon.ro/cod-reducere/automobilus.ro" },

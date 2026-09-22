@@ -15,7 +15,7 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Cod Reducere Cărți Online România 2026 — Libris, Elefant, Emag | AmCupon.ro",
+  title: "Cod Reducere Cărți Online România 2026 — Libris, Elefant",
   description: "Coduri de reducere cărți online România: Libris, Elefant, Carturesti, eMag Books. Cărți, audiobook-uri, e-book-uri la prețuri reduse. Verificate zilnic.",
   keywords: ["cod reducere carti", "reduceri libris", "carti ieftine online", "cod reducere elefant", "carturesti reducere", "carti online romania", "audiobook reducere"],
   alternates: { canonical: "https://amcupon.ro/carti" },

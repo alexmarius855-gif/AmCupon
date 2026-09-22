@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import BrandPageTemplate from "../components/BrandPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Cod Reducere SHEIN Romania 2026 — Fashion la Preturi Mici | AmCupon.ro",
+  title: "Cod Reducere SHEIN Romania 2026 — Fashion la Preturi Mici",
   description: "Coduri reducere SHEIN actualizate zilnic. Haine, accesorii si incaltaminte la reducere de pana la 80%. Promotii SHEIN verificate pe AmCupon.ro.",
   keywords: ["cod reducere shein", "shein romania reduceri", "shein promotii", "shein voucher", "shein discount romania", "haine ieftine online"],
   alternates: { canonical: "https://amcupon.ro/cod-reducere/shein.com" },

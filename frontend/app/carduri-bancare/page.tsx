@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Cel mai bun Cont Bancar Online Romania 2026 — Revolut, Wise, N26 | AmCupon.ro",
+  title: "Cel mai bun Cont Bancar Online Romania 2026 — Revolut",
   description: "Comparam cele mai bune conturi bancare digitale pentru romani in 2026. Revolut, Wise, N26, Salt Bank — comisioane, transferuri internationale, carduri gratuite. Bonus la inregistrare.",
   keywords: [
     "cont bancar online romania",

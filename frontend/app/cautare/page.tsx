@@ -3,14 +3,11 @@ import fs from "fs";
 import path from "path";
 import Link from "next/link";
 import MagazinCard, { type CardMagazin } from "../components/MagazinCard";
+import { numeAfisat } from "@/lib/numeMagazin";
 
 interface Magazin extends CardMagazin {
 }
 
-function numeAfisat(s: string) {
-  return s.split(".")[0].replace(/-/g, " ").split(" ")
-    .map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
-}
 
 function loadData(): Magazin[] {
   return JSON.parse(fs.readFileSync(path.join(process.cwd(), "public", "output.json"), "utf-8"));

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { etichetaExpirare } from "../../../lib/expirarePromo";
 import { linkAfiliat, linkPromotie } from "@/lib/linkMagazin";
+import { numeAfisat } from "@/lib/numeMagazin";
 
 interface Promotie {
   nume: string;
@@ -30,14 +31,6 @@ interface Magazin {
   exclusiv: boolean;
 }
 
-function numeAfisat(magazin: string): string {
-  return magazin
-    .split(".")[0]
-    .replace(/-/g, " ")
-    .split(" ")
-    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-    .join(" ");
-}
 
 function extractDiscount(text: string): string | null {
   const m = text?.match(/(\d+)\s*%/);

@@ -4,7 +4,7 @@ import fs from "fs";
 import path from "path";
 
 export const metadata: Metadata = {
-  title: "Software Business cu Reducere Romania 2026 — SaaS, Facturare, Tools | AmCupon.ro",
+  title: "Software Business cu Reducere Romania 2026 — SaaS",
   description: "Coduri de reducere la software business: facturare online, contabilitate, SEO tools, design, project management. Facturis-online.ro si multe altele.",
   keywords: ["software facturare reducere", "facturis-online reducere", "saas romania reducere", "tools business reducere", "semrush reducere", "canva pro reducere"],
   alternates: { canonical: "https://amcupon.ro/software-business" },

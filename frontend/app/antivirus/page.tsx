@@ -15,7 +15,7 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Antivirus Ieftin Romania 2026 — Cod Reducere Bitdefender, Norton, ESET | AmCupon.ro",
+  title: "Antivirus Ieftin Romania 2026 — Cod Reducere Bitdefender",
   description: "Coduri reducere antivirus 2026: Bitdefender, Norton, ESET, Kaspersky, Malwarebytes. Protectie PC, Mac, Android la preturi reduse cu pana la 70% discount.",
   keywords: ["antivirus ieftin romania", "cod reducere bitdefender", "norton reducere", "eset reducere", "kaspersky cod reducere", "antivirus 2026", "antivirus pc ieftin"],
   alternates: { canonical: "https://amcupon.ro/antivirus" },

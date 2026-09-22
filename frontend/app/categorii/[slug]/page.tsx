@@ -150,8 +150,13 @@ export async function generateMetadata({
   const pageUrl   = `https://amcupon.ro/categorii/${slug}`;
 
   const title = cuCod > 0
-    ? `Cod Reducere ${numeCateg} ${luna} ${an} — ${cuCod} coduri active | AmCupon.ro`
-    : `Coduri reducere ${numeCateg} ${an} — ${cuPromo} oferte active | AmCupon.ro`;
+    // 22.09.2026, doua reparatii pe cele 49 de pagini de categorie:
+    //  1. „1 oferte active" / „1 coduri active" — pluralul era hardcodat, deci
+    //     singularul iesea in dezacord, direct in rezultatul Google;
+    //  2. toate cele 49 treceau de 60 de caractere, deci titlul era taiat exact pe
+    //     partea utila. Sufixul de brand cade primul — nu el aduce clicul.
+    ? `Cod Reducere ${numeCateg} ${luna} ${an} — ${cuCod} ${cuCod === 1 ? "cod activ" : "coduri active"}`
+    : `Coduri reducere ${numeCateg} ${an} — ${cuPromo} ${cuPromo === 1 ? "ofertă activă" : "oferte active"}`;
 
   const description = `${cuPromo > 0 ? `✅ ${cuPromo} promotii active` : "Promotii verificate"} la ${mag.length} magazine de ${numeCateg} din Romania. ${cuCod > 0 ? `${cuCod} coduri reducere active in ${luna} ${an}. ` : ""}Oferte actualizate zilnic pe AmCupon.ro.`;
 

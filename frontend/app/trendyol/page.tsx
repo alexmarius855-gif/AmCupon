@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import BrandPageTemplate from "../components/BrandPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Cod Reducere Trendyol Romania 2026 — Moda & Lifestyle | AmCupon.ro",
+  title: "Cod Reducere Trendyol Romania 2026 — Moda & Lifestyle",
   description: "Coduri reducere Trendyol Romania actualizate zilnic. Fashion, electronice, cosmetice si produse casa la reducere. Promotii Trendyol verificate.",
   keywords: ["cod reducere trendyol", "trendyol romania", "trendyol promotii", "trendyol voucher", "trendyol discount", "trendyol reduceri"],
   alternates: { canonical: "https://amcupon.ro/cod-reducere/trendyol.com" },

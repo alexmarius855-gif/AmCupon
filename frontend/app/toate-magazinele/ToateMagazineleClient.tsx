@@ -3,6 +3,7 @@
 import Link from "next/link";
 
 import { useState, useMemo, useEffect } from "react";
+import { numeAfisat } from "@/lib/numeMagazin";
 
 interface Magazin {
   magazin: string;
@@ -18,10 +19,6 @@ interface Magazin {
   scor_final?: number;
 }
 
-function numeAfisat(magazin: string): string {
-  return magazin.split(".")[0].replace(/-/g, " ")
-    .split(" ").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
-}
 
 function maxPct(promotii: { nume: string; descriere: string }[]): number {
   let max = 0;

@@ -5,6 +5,7 @@ import Link from "next/link";
 import ShareButton from "../components/ShareButton";
 import { etichetaExpirare } from "../../lib/expirarePromo";
 import { linkAfiliat, linkPromotie } from "@/lib/linkMagazin";
+import { numeAfisat } from "@/lib/numeMagazin";
 
 /* ── Tipuri ──────────────────────────────────────────────────────────────── */
 interface Promotie {
@@ -76,10 +77,6 @@ const LUNI_RO = ["ianuarie","februarie","martie","aprilie","mai","iunie",
   "iulie","august","septembrie","octombrie","noiembrie","decembrie"];
 
 /* ── Helpers ─────────────────────────────────────────────────────────────── */
-function numeAfisat(s: string) {
-  return s.split(".")[0].replace(/-/g," ").split(" ")
-    .map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
-}
 
 function extractDiscount(text: string): number {
   const m = text?.match(/(\d+)\s*%/);
