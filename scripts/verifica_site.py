@@ -130,6 +130,33 @@ def verifica_date() -> dict:
                    "(random.Random in fetch_2p_api.py, scoase 07.09)",
                    fabricate)
 
+    # 3b. Text scris pentru AFILIATI, afisat cumparatorului (24.09.2026): „Promovează produsele
+    #     Interlink și câștigă comisioane", „affiliates earn an increased commission". Il scoate
+    #     curata_promotii() la merge si la importul CSV; daca apare aici, l-a adus o cale care
+    #     ocoleste curatarea. Aceeasi functie ca la curatare, deci regula sta intr-un singur loc.
+    from promotii import RE_MARKDOWN, RE_MOJIBAKE_SIGUR, text_pentru_afiliati
+    toate_promo = [(m, p) for m in magazine for p in (m.get("promotii") or []) if isinstance(p, dict)]
+    pentru_afiliati = [f"{m['magazin']}: {(p.get('nume') or '')[:50]}"
+                       for m, p in toate_promo if text_pentru_afiliati(p, m)]
+    if pentru_afiliati:
+        semnaleaza("text pentru afiliati",
+                   f"{len(pentru_afiliati)} promotii vorbesc cumparatorului despre comisioane "
+                   "si promovare — textul programului de afiliere, nu al ofertei",
+                   pentru_afiliati)
+    cu_markdown = [f"{m['magazin']}: {(p.get('nume') or '')[:50]}" for m, p in toate_promo
+                   if any(isinstance(p.get(k), str) and RE_MARKDOWN.search(p[k]) for k in ("nume", "descriere"))]
+    if cu_markdown:
+        semnaleaza("markdown in promotii",
+                   f"{len(cu_markdown)} promotii au **asteriscuri** care se vad brute pe site",
+                   cu_markdown)
+    stricate = [f"{m['magazin']}: {(p.get('nume') or '')[:50]}" for m, p in toate_promo
+                if any(isinstance(p.get(k), str) and RE_MOJIBAKE_SIGUR.search(p[k]) for k in ("nume", "descriere"))]
+    if stricate:
+        semnaleaza("caractere stricate",
+                   f"{len(stricate)} promotii au text UTF-8 citit gresit („rÃ©duction\") pe care "
+                   "repara_mojibake() nu l-a putut reface",
+                   stricate)
+
     produse = (incarca("products.json") or {}).get("products", [])
     stare["produse"] = len(produse)
 

@@ -37,6 +37,109 @@ FARA_DATA = 99
 PRAG_DATA_ABSURDA = 1095  # 3 ani
 
 
+# ─── Texte scrise pentru AFILIATI, nu pentru cumparatori ──────────────────────
+# Masurat 24.09.2026 pe output.json: retelele pun uneori in campul promotiei descrierea
+# PROGRAMULUI, adresata noua. Pe site aparea, sub butonul „Vezi oferta":
+#   · interlink.ro  „Promovează produsele Interlink și câștigă comisioane din fiecare vânzare
+#                    validă ... materiale de marketing dedicate ... pentru a genera conversii"
+#   · femieko.ro    „Provocarea Femieko 2026 – Câștigă premii și comision de 19%!"
+#   · gl-inet.com   „Earn More with LWR01 ... affiliates earn an increased commission on every
+#                    eligible sale. Update your content and start promoting today."
+# Regula proiectului: comisionul nostru nu se publica — nici cand il scrie reteaua.
+# Tiparele sunt CONTEXTUALE, nu cuvinte izolate: „fără comision" la un card bancar, „direct
+# de la editură" la o librarie sau „20% off eligible sale items" sunt texte pentru cumparator.
+RE_PENTRU_AFILIATI = re.compile(r"""
+      c[aâ][sșş]tig\w*\b[^.!?]{0,40}\bcomision        # „câștigă (premii și) comision(ul)"
+    | \bpromov(?:ea|a)z[aăe]\w*\s+(?:produsele|magazinul|oferta|ofertele|brandul|campania|campaniile)
+    | \bv[aâ]nz[aă]r(?:e|ea|i|ile)\s+valid              # „din fiecare vânzare validă"
+    | \bmateriale(?:le)?\s+(?:de\s+)?marketing
+    | \bgener\w*\s+(?:de\s+)?conversii
+    | \bprogram\w*\s+de\s+afiliere
+    | \bearn\w*\b[^.!?]{0,60}\bcommission               # „affiliates earn an increased commission"
+    | \bcommissions?\b[^.!?]{0,40}\b(?:per|on|for)\s+(?:every|each)\b
+    | \baffiliates?\s+(?:can\s+|will\s+|now\s+)?(?:earn|receive|get)\b
+    | \b(?:drive|boost)\s+(?:more\s+)?conversions\b
+    | \bstart\s+promoting\b
+    | \bupdate\s+your\s+(?:content|links|banners)\b
+""", re.I | re.X)
+# Titlu care incepe cu castigul („Earn More with LWR01") — conteaza DOAR daca promotia are deja
+# un semnal de mai sus. Singur ar prinde si concursurile pentru cumparatori („Câștigă o vacanță").
+RE_TITLU_CASTIG = re.compile(r"^\W*(?:earn|c[aâ][sșş]tig)", re.I)
+RE_MARKDOWN = re.compile(r"(\*\*|__)(\S(?:.*?\S)?)\1", re.S)
+
+# Text UTF-8 citit ca Latin-1 („rÃ©duction", „31/08/2026 â\x80\x93 15/10/2026"). Masurat 24.09.2026:
+# insotelhotelgroup.com afisa „Jusqu'Ã 45 % de rÃ©duction" — si, fiindcă „jusqu'à" nu se mai
+# recunostea, valoarea iesea „-45%" in loc de „până la 45%". Un caracter stricat = 2-3 caractere
+# care, recodate Latin-1, formeaza UTF-8 valid.
+RE_MOJIBAKE = re.compile("[Â-ß][\u0080-¿]|[à-ï][\u0080-¿]{2}")
+# Semnul SIGUR ca un text e stricat: caractere de control C1 (U+0080-U+009F, nu apar niciodata in
+# text real) sau „Ã" urmat de ©, ®, ¨... Fara el nu se atinge nimic: franceza corecta are des
+# „É" + spatiu neintrerupt („ÉTÉ :"), pe care reparatia l-ar transforma in „ɠ". Aceeasi expresie
+# in frontend/lib/oferteAcasa.ts (acolo doar ca sa nu clasifice textul stricat drept romanesc).
+RE_MOJIBAKE_SIGUR = re.compile("[\u0080-\u009f]|Ã[ -¿]")
+
+
+def repara_mojibake(text: str) -> str:
+    """Secventa cu secventa, nu tot textul: la insotel sirul intreg nu se poate recoda, fiindca
+    feed-ul a transformat si spatiul neintrerupt din „à" (C3 A0) in spatiu obisnuit. Ce nu
+    formeaza UTF-8 valid ramane neatins — „Câștigă", „café", „MAÇÃ" trec neschimbate."""
+    if not RE_MOJIBAKE_SIGUR.search(text):
+        return text
+
+    def unul(mt):
+        try:
+            return mt.group(0).encode("latin-1").decode("utf-8")
+        except UnicodeError:
+            return mt.group(0)
+
+    reparat = RE_MOJIBAKE.sub(unul, text)
+    # „Ã" + spatiu = „à" cu NBSP-ul pierdut. Doar in text care avea deja caractere stricate:
+    # singur, „Ã " poate fi portugheza scrisa cu majuscule.
+    return re.sub(r"Ã (?=\S)", "à ", reparat)
+
+
+def fara_markdown(text: str) -> str:
+    """„de la doar **159,99 lei**" -> „de la doar 159,99 lei". Pe site asteriscurile se vedeau brute."""
+    return RE_MARKDOWN.sub(r"\2", text)
+
+
+def _fraze(text: str) -> list:
+    return [f for f in re.split(r"(?<=[.!?])\s+", text.strip()) if f]
+
+
+def _cheie(text: str) -> str:
+    """Litere si cifre, fara diacritice: „Interlink.ro" / „INTERLINK" -> „interlinkro" / „interlink"."""
+    import unicodedata
+    fara = unicodedata.normalize("NFKD", text or "").encode("ascii", "ignore").decode()
+    return re.sub(r"[^a-z0-9]", "", fara.lower())
+
+
+def _doar_numele_magazinului(titlu: str, m: dict) -> bool:
+    t = _cheie(titlu)
+    slug = (m.get("magazin") or "").lower()
+    return bool(t) and t in {_cheie(slug), _cheie(slug.split(".")[0]), _cheie(nume_afisabil(m))}
+
+
+def text_pentru_afiliati(p: dict, m: dict):
+    """None = promotia e scrisa pentru cumparator. ("scoate", motiv) = nu e o oferta, e descrierea
+    programului de afiliere. ("curata", descriere_noua) = oferta reala, cu fraze pentru afiliati
+    in descriere, care se scot. Titlul nu se rescrie niciodata: n-avem de unde, fara sa inventam."""
+    nume = p.get("nume") if isinstance(p.get("nume"), str) else ""
+    desc = p.get("descriere") if isinstance(p.get("descriere"), str) else ""
+    fraze = _fraze(desc)
+    marcate = [f for f in fraze if RE_PENTRU_AFILIATI.search(f)]
+    if not RE_PENTRU_AFILIATI.search(nume) and not marcate:
+        return None
+    if RE_PENTRU_AFILIATI.search(nume) or RE_TITLU_CASTIG.search(nume):
+        return ("scoate", "titlul e pentru afiliati")
+    if _doar_numele_magazinului(nume, m):
+        return ("scoate", "titlul e doar numele magazinului, iar descrierea e pentru afiliati")
+    rest = " ".join(f for f in fraze if f not in marcate)
+    if not rest and not nume.strip() and not str(p.get("cod_cupon") or "").strip():
+        return ("scoate", "fara titlu si fara cod, iar descrierea era doar pentru afiliati")
+    return ("curata", rest)
+
+
 def azi_utc() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
@@ -52,10 +155,12 @@ def zile_pana_la(expira, azi: str):
 
 
 def curata_promotii(magazine: list, azi: str = None) -> dict:
-    """In-place. Scoate promotiile expirate, recalculeaza `zile_ramase` din `expira` si
-    flag-urile de magazin. Idempotent. Intoarce ce a schimbat, ca sa se vada in log."""
+    """In-place. Scoate promotiile expirate si pe cele scrise pentru afiliati, curata textul
+    (markdown, fraze pentru afiliati), recalculeaza `zile_ramase` din `expira` si flag-urile de
+    magazin. Idempotent. Intoarce ce a schimbat, ca sa se vada in log."""
     azi = azi or azi_utc()
-    st = {"expirate": 0, "zile_recalculate": 0, "fara_data": 0, "data_absurda": 0, "flaguri": 0, "magazine_golite": []}
+    st = {"expirate": 0, "zile_recalculate": 0, "fara_data": 0, "data_absurda": 0, "flaguri": 0,
+          "markdown": 0, "mojibake": 0, "afiliati_scoase": [], "afiliati_curatate": 0, "magazine_golite": []}
     for m in magazine:
         if not isinstance(m, dict):
             continue
@@ -64,6 +169,25 @@ def curata_promotii(magazine: list, azi: str = None) -> dict:
         for p in vechi:
             if not isinstance(p, dict):
                 continue
+            for k in ("nume", "descriere"):
+                if not isinstance(p.get(k), str):
+                    continue
+                reparat = repara_mojibake(p[k])
+                if reparat != p[k]:
+                    p[k] = reparat
+                    st["mojibake"] += 1
+                if "**" in p[k] or "__" in p[k]:
+                    curat = fara_markdown(p[k])
+                    if curat != p[k]:
+                        p[k] = curat
+                        st["markdown"] += 1
+            verdict = text_pentru_afiliati(p, m)
+            if verdict and verdict[0] == "scoate":
+                st["afiliati_scoase"].append(f"{m.get('magazin', '?')} ({verdict[1]})")
+                continue
+            if verdict:
+                p["descriere"] = verdict[1]
+                st["afiliati_curatate"] += 1
             zile = zile_pana_la(p.get("expira"), azi)
             if zile is not None and zile > PRAG_DATA_ABSURDA:
                 st["data_absurda"] += 1
@@ -98,7 +222,11 @@ def raport(st: dict) -> str:
     golite = st["magazine_golite"]
     return (f"promotii expirate scoase: {st['expirate']}, zile recalculate: {st['zile_recalculate']}, "
             f"date absurde (>3 ani) tratate ca necunoscute: {st['data_absurda']}, "
-            f"fara data (fara contor): {st['fara_data']}, flaguri de magazin corectate: {st['flaguri']}"
+            f"fara data (fara contor): {st['fara_data']}, flaguri de magazin corectate: {st['flaguri']}, "
+            f"markdown curatat: {st['markdown']}, texte cu caractere stricate reparate: {st['mojibake']}, "
+            f"descrieri curatate de fraze pentru afiliati: {st['afiliati_curatate']}"
+            + (f"\n  promotii scrise pentru afiliati, scoase: {len(st['afiliati_scoase'])} — "
+               + "; ".join(st["afiliati_scoase"][:10]) if st["afiliati_scoase"] else "")
             + (f"\n  magazine ramase fara promotii: {len(golite)} ({', '.join(golite[:10])}"
                f"{'...' if len(golite) > 10 else ''})" if golite else ""))
 
