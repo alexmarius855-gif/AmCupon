@@ -793,19 +793,6 @@
     "hashtags": "#reduceri #casa #gradina #mobilier #romania #doctorshield"
   },
   {
-    "magazin": "moftcollection.ro",
-    "nume": "Moftcollection",
-    "categorie": "Electronice & IT",
-    "categorie_slug": "electronice",
-    "cod": "",
-    "procent": "",
-    "zile_ramase": 99,
-    "link": "https://amcupon.ro/cod-reducere/moftcollection.ro",
-    "story": "💻 Reducere Moftcollection azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/moftcollection.ro",
-    "perete": "💻 Reducere activa la Moftcollection\n\n✅ Livrare Gratuita la comenzi de peste 200 lei\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/moftcollection.ro",
-    "hashtags": "#reduceri #electronice #gadgeturi #tech #romania #moftcollection"
-  },
-  {
     "magazin": "mobidea.ro",
     "nume": "Mobidea",
     "categorie": "Casă & Grădină",
@@ -817,6 +804,19 @@
     "story": "🏡 -10% la Mobidea!\nFara cod necesar 👇\namcupon.ro/cod-reducere/mobidea.ro",
     "perete": "🏡 -10% la Mobidea — activ acum\n\n✅ Oferte de Toamna cu extra 10% reducere la mobilier de dormitor, bucatarie , living și hol\n⏳ Expiră în 6 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/mobidea.ro",
     "hashtags": "#reduceri #casa #gradina #mobilier #romania #mobidea"
+  },
+  {
+    "magazin": "labelshop.ro",
+    "nume": "Labelshop",
+    "categorie": "Fashion",
+    "categorie_slug": "fashion",
+    "cod": "",
+    "procent": "-5%",
+    "zile_ramase": 99,
+    "link": "https://amcupon.ro/cod-reducere/labelshop.ro",
+    "story": "👗 -5% la Labelshop!\nFara cod necesar 👇\namcupon.ro/cod-reducere/labelshop.ro",
+    "perete": "👗 -5% la Labelshop — activ acum\n\n✅ Profita acum de reduceri intre 5% si 15% la echipamente si consumabile!\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/labelshop.ro",
+    "hashtags": "#reduceri #moda #fashion #haine #romania #labelshop"
   },
   {
     "magazin": "craftup.ro",
@@ -1027,6 +1027,19 @@
     "hashtags": "#reduceri #sanatate #farmacie #suplimente #romania #manukashop"
   },
   {
+    "magazin": "moftcollection.ro",
+    "nume": "Moftcollection",
+    "categorie": "Electronice & IT",
+    "categorie_slug": "electronice",
+    "cod": "",
+    "procent": "",
+    "zile_ramase": 99,
+    "link": "https://amcupon.ro/cod-reducere/moftcollection.ro",
+    "story": "💻 Reducere Moftcollection azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/moftcollection.ro",
+    "perete": "💻 Reducere activa la Moftcollection\n\n✅ Livrare Gratuita la comenzi de peste 200 lei\nℹ️ E timpul pentru un upgrade! Comanda accesoriile tale preferate de pe Moft Collection si, daca dep...\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/moftcollection.ro",
+    "hashtags": "#reduceri #electronice #gadgeturi #tech #romania #moftcollection"
+  },
+  {
     "magazin": "paa-home.ro",
     "nume": "Paa Home",
     "categorie": "Casă & Grădină",
@@ -1181,18 +1194,5 @@
     "story": "🔥 Reducere Fantasyforge azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/fantasyforge.ro",
     "perete": "🔥 Reducere activa la Fantasyforge\n\n✅ 🔥Buy One, Get One Free Miniature\nℹ️ Double your adventure with our Deals 1+1 collection! Browse a selection of premium fantasy miniat...\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/fantasyforge.ro",
     "hashtags": "#reduceri #coduri #cupoane #oferte #romania #fantasyforge"
-  },
-  {
-    "magazin": "labelshop.ro",
-    "nume": "Labelshop",
-    "categorie": "Online Mall",
-    "categorie_slug": "online-mall",
-    "cod": "",
-    "procent": "-5%",
-    "zile_ramase": 99,
-    "link": "https://amcupon.ro/cod-reducere/labelshop.ro",
-    "story": "🔥 -5% la Labelshop!\nFara cod necesar 👇\namcupon.ro/cod-reducere/labelshop.ro",
-    "perete": "🔥 -5% la Labelshop — activ acum\n\n✅ Profita acum de reduceri intre 5% si 15% la echipamente si consumabile!\nℹ️ Echipamentele – imprimante de etichete 🖨️, cititoare de coduri de bare 📡, aplicatoare 🔧 și acceso...\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/labelshop.ro",
-    "hashtags": "#reduceri #coduri #cupoane #oferte #romania #labelshop"
   }
 ]

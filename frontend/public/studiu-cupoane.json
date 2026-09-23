@@ -1,6 +1,6 @@
 {
   "generat": "2026-09-23",
-  "total_magazine": 958,
+  "total_magazine": 960,
   "cu_promotie": 92,
   "cu_cod_real": 32,
   "doar_oferta": 60,
@@ -21,20 +21,11 @@
     {
       "slug": "marketplace",
       "nume": "Marketplace",
-      "magazine": 195,
+      "magazine": 196,
       "cu_promotie": 13,
       "reducere_mediana": 35,
       "reducere_max": 60,
       "esantion": 7
-    },
-    {
-      "slug": "fashion",
-      "nume": "Fashion",
-      "magazine": 81,
-      "cu_promotie": 10,
-      "reducere_mediana": 33.5,
-      "reducere_max": 70,
-      "esantion": 6
     },
     {
       "slug": "electronice",
@@ -64,6 +55,15 @@
       "esantion": 5
     },
     {
+      "slug": "fashion",
+      "nume": "Fashion",
+      "magazine": 82,
+      "cu_promotie": 11,
+      "reducere_mediana": 20,
+      "reducere_max": 70,
+      "esantion": 7
+    },
+    {
       "slug": "calatorii",
       "nume": "Călătorii",
       "magazine": 83,
@@ -75,7 +75,7 @@
     {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
-      "magazine": 123,
+      "magazine": 124,
       "cu_promotie": 13,
       "reducere_mediana": 10.0,
       "reducere_max": 70,
@@ -174,11 +174,11 @@
     {
       "slug": "online-mall",
       "nume": "online-mall",
-      "magazine": 3,
-      "cu_promotie": 3,
+      "magazine": 2,
+      "cu_promotie": 2,
       "reducere_mediana": null,
       "reducere_max": null,
-      "esantion": 1
+      "esantion": 0
     }
   ],
   "retele": [
