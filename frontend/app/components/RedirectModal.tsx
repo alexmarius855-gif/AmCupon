@@ -22,11 +22,12 @@ interface RedirectModalProps {
 export default function RedirectModal({ open, onClose, storeName, redirectFailed, onRetry }: RedirectModalProps) {
   useEffect(() => {
     if (!open) return;
-    if (redirectFailed) return; // nu auto-inchide cand userul are nevoie sa actioneze
-    const t = setTimeout(onClose, 4000);
+    // Escape inchide mereu. Doar inchiderea AUTOMATA asteapta cand omul are ceva de facut
+    // (tab-ul chiar a fost blocat) — inainte, cu `return` devreme, nici Escape nu mai mergea.
     const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); };
     window.addEventListener("keydown", onKey);
-    return () => { clearTimeout(t); window.removeEventListener("keydown", onKey); };
+    const t = redirectFailed ? null : setTimeout(onClose, 4000);
+    return () => { if (t) clearTimeout(t); window.removeEventListener("keydown", onKey); };
   }, [open, redirectFailed, onClose]);
 
   return (

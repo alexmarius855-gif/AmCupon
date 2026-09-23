@@ -17,6 +17,24 @@ interface TrackFn {
  * altfel browserul il blocheaza (comentariu original din MagazinClient.tsx:210-211,
  * pastrat aici ca sursa de adevar).
  */
+/**
+ * Deschide linkul intr-un tab nou si spune DACA s-a deschis.
+ *
+ * 23.09.2026: era `window.open(link, "_blank", "noopener,noreferrer")`. Dupa specificatia
+ * HTML, cu `noopener` (implicat si de `noreferrer`) window.open intoarce MEREU null — deci
+ * `if (!win) setRedirectFailed(true)` se declansa la FIECARE dezvaluire de cod, desi tab-ul
+ * se deschisese. Modalul spunea „Browserul a blocat tab-ul nou" si oferea „Mergi la X",
+ * care deschidea AL DOILEA tab pe acelasi link platit: click dublu raportat retelei, pe tot
+ * site-ul. Fara `noopener` in argumente primim fereastra reala, deci detectam blocarea
+ * adevarata, iar legatura inapoi spre pagina noastra o taiem manual (`opener = null`).
+ */
+function deschideTab(link: string): boolean {
+  const win = window.open(link, "_blank");
+  if (!win) return false;
+  try { win.opener = null; } catch { /* unele browsere nu permit — tab-ul e deschis oricum */ }
+  return true;
+}
+
 export function useCopyCod(track?: TrackFn) {
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
   const [redirectFailed, setRedirectFailed] = useState(false);
@@ -38,15 +56,13 @@ export function useCopyCod(track?: TrackFn) {
     track?.("copiere_cod", magazinSlug, cod);
 
     if (link) {
-      const win = window.open(link, "_blank", "noopener,noreferrer");
-      if (!win) setRedirectFailed(true);
+      if (!deschideTab(link)) setRedirectFailed(true);
     }
   }, [track]);
 
   const retryRedirect = useCallback(() => {
     if (lastLink) {
-      const win = window.open(lastLink, "_blank", "noopener,noreferrer");
-      if (win) setRedirectFailed(false);
+      if (deschideTab(lastLink)) setRedirectFailed(false);
     }
   }, [lastLink]);
 
