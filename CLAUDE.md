@@ -12,6 +12,43 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 23.09.2026, partea a doua (interfata noua pe pagina de magazin + revizie adversariala — NEPUSHED):**
+- **BUG DE BANI, vechi, gasit de revizie: fiecare dezvaluire de cod raporta „tab blocat".**
+  `useCopyCod` facea `window.open(link, "_blank", "noopener,noreferrer")`, care dupa specificatia HTML
+  intoarce MEREU `null` — deci `setRedirectFailed(true)` la 100% din clicuri. Modalul spunea „Browserul a
+  blocat tab-ul nou" si oferea „Mergi la X", care deschidea AL DOILEA tab pe acelasi link platit (click
+  dublu raportat retelei), iar Escape nu-l inchidea. Acum `deschideTab()`: `window.open(link, "_blank")` +
+  `opener = null` — detecteaza blocarea REALA. Afecta si `MagazinCard` (acelasi hook).
+- **`CuponCard`** (`app/components/CuponCard.tsx`, nou) — cardul din macheta, o singura componenta pentru
+  orice oferta; stil in `globals.css` (`@layer components`, doar tokeni: tema deschisa = alte valori in
+  `:root`). Codul ascuns arata acum ULTIMELE 2 caractere; varianta veche arata PRIMELE 4 („LAMO**"), destul
+  cat sa-l ghicesti fara click, deci fara comision. Folosit pe pagina de magazin (coduri + oferte).
+- **`lib/oferta.ts`** — functiile pure `valoareOferta()` si `faraCod()`, cu **test care poate pica**:
+  `node lib/oferta.test.mjs` (din `frontend/`). 18 cazuri REALE din output.json + trecere prin toate cele
+  188 de promotii. Dovedit: cu regexul initial de procent testul pica (tvcmall), restaurat trece.
+  Ce inventa prima versiune, gasit de revizie pe datele reale: „9.5% off" → „-5%", „144% sRGB" → „-44%",
+  comisionul unui afiliat → „-19%", „pana la -70%" / „up to" / „bis zu" → „-70%" sec (fara „pana la"),
+  „Incaltamintelamoda.ro" → „Incaltaminte.ro" (codul LAMODA sters ca subsir), „Freedom" sters din titlu.
+- **Pagina de magazin FARA oferta** (86% din vizitatori): alerta pe email deschisa din start
+  (`PriceAlert deschis`), apoi carduri INTREGI cu codul real al magazinelor similare (`page.tsx` le atașeaza
+  `oferta` cu linkul platit calculat pe server), fara al doilea bloc de newsletter dedesubt. Pasii „cum
+  folosesti codul" apar doar cand exista un cod; HowTo-ul nu mai zice „codul de mai sus" pe pagina fara cod.
+- **Bannerul altui magazin — scos de pe 960 din 1.069 de pagini de magazin.** `loadBanner` cadea pe
+  bannerul oricarui alt magazin; doar 3 au bannere, deci aproape toate paginile afisau sus campania Kit
+  Unghii „14-16 August", expirata. Acum: doar bannerul propriu (2 pagini).
+- **Extensia Chrome nepublicata**: linkul direct in Chrome Web Store scos de pe fiecare pagina de magazin
+  si din emailul de bun-venit (regula din acest fisier o interzicea). Emailul de bun-venit mai avea tot
+  antetul text ALB pe lime si inca 3 butoane la fel — acum antet inchis `#14181c`, text `#0c1000` pe lime.
+- **Titluri**: „Top 5 Modele Testate" scos din `<title>` pe toate cele 30 de pagini `/top` (pretentia de
+  testare fusese scoasa din PAGINA pe 10.08, nu si din titlu); „Cele mai bune roboti" → „Cei mai buni";
+  categorii/nise sub 60 de caractere; descrierea categoriei spunea „Promotii verificate" exact cand NU
+  exista nicio promotie. **Audit: 1.752 / 1.763 de pagini curate, 0 titluri peste 60.**
+- **Revizia**: workflow cu 3 revizori (corectitudine / onestitate / UX) + un sceptic care incearca sa
+  infirme — 28 de constatari, **19 confirmate si reparate, 9 respinse** ca presupuneri. Tinut mic (4
+  agenti), fiindca fluxurile mari in paralel s-au pierdut de doua ori la limita de sesiune.
+- **Verificat**: tsc 0, eslint 0 pe toate fisierele atinse, build 0, test oferta 0, audit 1.752/1.763;
+  vizual pe desktop si pe mobil 375px (incaltamintelamoda, jollymag, sevensins, sofiline).
+
 **UPDATE 23.09.2026 (audit pe TOATE paginile + macheta interfetei — NEPUSHED):**
 - **`scripts/audit_pagini.py`** (nou) trece prin fiecare pagina GENERATA (1.763, fara redirecturile
   `/reduceri/*`): pagini subtiri, sectiuni fara continut, undefined/NaN/„0 lei", titluri lipsa/duplicate/

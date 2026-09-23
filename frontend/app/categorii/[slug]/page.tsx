@@ -149,7 +149,7 @@ export async function generateMetadata({
   const luna      = LUNI_RO[new Date().getMonth()];
   const pageUrl   = `https://amcupon.ro/categorii/${slug}`;
 
-  const title = cuCod > 0
+  const titluPlin = cuCod > 0
     // 22.09.2026, doua reparatii pe cele 49 de pagini de categorie:
     //  1. „1 oferte active" / „1 coduri active" — pluralul era hardcodat, deci
     //     singularul iesea in dezacord, direct in rezultatul Google;
@@ -157,8 +157,10 @@ export async function generateMetadata({
     //     partea utila. Sufixul de brand cade primul — nu el aduce clicul.
     ? `Cod Reducere ${numeCateg} ${luna} ${an} — ${cuCod} ${cuCod === 1 ? "cod activ" : "coduri active"}`
     : `Coduri reducere ${numeCateg} ${an} — ${cuPromo} ${cuPromo === 1 ? "ofertă activă" : "oferte active"}`;
+  // Peste 60 de caractere, luna cade prima: anul si numarul de coduri spun mai mult.
+  const title = titluPlin.length <= 60 ? titluPlin : titluPlin.replace(` ${luna} ${an}`, ` ${an}`);
 
-  const description = `${cuPromo > 0 ? `✅ ${cuPromo} promotii active` : "Promotii verificate"} la ${mag.length} magazine de ${numeCateg} din Romania. ${cuCod > 0 ? `${cuCod} coduri reducere active in ${luna} ${an}. ` : ""}Oferte actualizate zilnic pe AmCupon.ro.`;
+  const description = `${cuPromo > 0 ? `✅ ${cuPromo === 1 ? "O promotie activa" : `${cuPromo} promotii active`}` : "Coduri si oferte"} la ${mag.length} magazine de ${numeCateg} din Romania. ${cuCod > 0 ? `${cuCod === 1 ? "Un cod de reducere activ" : `${cuCod} coduri de reducere active`} in ${luna} ${an}. ` : ""}Oferte actualizate zilnic pe AmCupon.ro.`;
 
   return {
     title,

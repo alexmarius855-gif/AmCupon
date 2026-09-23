@@ -7,7 +7,7 @@ import path from "path";
 import MagazinClient from "./MagazinClient";
 import { buildMerchantTokens, esteIndexabil } from "../../../lib/seoIndexable";
 import ContextMagazin, { type CategorieStudiu } from "./ContextMagazin";
-import { linkAfiliat } from "@/lib/linkMagazin";
+import { linkAfiliat, linkPromotie } from "@/lib/linkMagazin";
 import FaraLivrareRo, { tariLivrare, type Alternativa, type MagazinFaraLivrare } from "./FaraLivrareRo";
 import { numeAfisat, brandDomeniu } from "@/lib/numeMagazin";
 
@@ -50,6 +50,12 @@ interface MagazinSimilar {
   are_promotie: boolean;
   cod_cupon: boolean;
   promotii: { nume: string }[];
+  cod_real?: boolean;
+  ultima_verificare?: string;
+  /** Cel mai bun COD al magazinului, cu linkul lui platit calculat aici, pe server.
+   *  Pagina fara oferta (86% din site) il arata ca un card intreg — nu doar un logo cu
+   *  „COD" pe el — ca omul care n-a gasit cod aici sa aiba unul real la un click. */
+  oferta?: { nume: string; descriere: string; cod_cupon: string; zile_ramase: number; link: string | null };
 }
 
 // ─── Luna curentă în română ────────────────────────────────────────────────────
@@ -173,18 +179,11 @@ function loadBanner(magazinSlug: string): Banner2P | null {
     );
     if (own) return own;
 
-    // 2. Banner de la alt magazin (evita conflicte cu merchantul curent)
-    const other = banners.find(
-      (b) =>
-        b.merchant_slug?.replace(/-ro$/, "") !== slugBase &&
-        b.merchant?.split(".")[0].toLowerCase() !== slugBase &&
-        preferred.includes(b.width) &&
-        b.image_url
-    );
-    if (other) return other;
-
-    // 3. Orice banner cu imagine
-    return banners.find((b) => b.image_url) || null;
+    // 23.09.2026: aici se cadea pe bannerul ALTUI magazin (pasii 2 si 3), apoi pe
+    // orice banner. Doar 3 magazine au bannere in date, deci 960 din 1.069 de pagini
+    // de magazin afisau sus, pe locul cel mai vizibil, campania Kit Unghii „14-16
+    // August" — expirata si a altui magazin. Fara banner propriu = fara banner.
+    return null;
   } catch {
     return null;
   }
@@ -313,7 +312,6 @@ function loadProducts(slug: string): Produs[] {
 // 1) potrivire exacta  2) case-insensitive  3) pe primul label de domeniu (surfshark ~ surfshark.com)
 function gasesteMagazin(magazine: Magazin[], slug: string): Magazin | undefined {
   const s = slug.toLowerCase();
-  const base = s.split(".")[0];
   return (
     magazine.find((x) => x.magazin === slug) ||
     magazine.find((x) => x.magazin.toLowerCase() === s) ||
@@ -535,6 +533,15 @@ export default async function PaginaMagazin({
       // omul de la o pagina fara coduri la ALTA pagina fara coduri.
       cod_real: (x.promotii || []).some((p) => (p.cod_cupon || "").trim().length > 0),
       ultima_verificare: x.ultima_verificare,
+      oferta: (() => {
+        // Codul care expira cel mai curand intai: e cel mai util acum. Fara cod = fara card.
+        const p = (x.promotii || [])
+          .filter((q) => (q.cod_cupon || "").trim().length > 0 && q.zile_ramase >= 0)
+          .sort((a, b) => a.zile_ramase - b.zile_ramase)[0];
+        return p
+          ? { nume: p.nume, descriere: p.descriere || "", cod_cupon: p.cod_cupon.trim(), zile_ramase: p.zile_ramase, link: linkPromotie(x, p) }
+          : undefined;
+      })(),
     }));
 
   const nume = numeAfisat(m.magazin);
@@ -680,7 +687,10 @@ export default async function PaginaMagazin({
   const pasiFolosire: { titlu: string; text: string }[] = [
     {
       titlu: `Copiaza codul de pe pagina ${nume}`,
-      text: `Apasa pe codul de reducere de mai sus. Se copiaza automat si te trimitem pe ${m.url} in acelasi timp.`,
+      // Pe pagina fara cod, singurul cod „de mai sus" e acum al unui magazin SIMILAR.
+      text: nrCod > 0
+        ? `Apasa pe codul de reducere de mai sus. Se copiaza automat si te trimitem pe ${m.url} in acelasi timp.`
+        : `Cand apare un cod la ${nume}, il gasesti pe pagina asta: apesi pe el, se copiaza automat si te trimitem pe ${m.url}.`,
     },
     {
       titlu: "Adauga produsele in cos",

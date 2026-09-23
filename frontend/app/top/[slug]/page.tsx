@@ -79,7 +79,15 @@ export async function generateMetadata({
   const pageUrl   = `https://amcupon.ro/top/${slug}`;
 
   return {
-    title: `${cat.titlu} — Top ${cat.produse.length} Modele Testate | AmCupon.ro`,
+    // 23.09.2026: era „Top 5 Modele Testate" pe toate cele 30 de pagini. Nimeni nu testeaza
+    // produsele — pretentia a fost scoasa din PAGINA pe 10.08 (fix_top_onestitate.py), dar
+    // ramasese in <title>, adica exact in rezultatul Google. Si toate treceau de 60 de caractere.
+    title: (() => {
+      const baza = `${cat.titlu} — top ${cat.produse.length} comparate`;
+      if (`${baza} | AmCupon.ro`.length <= 60) return `${baza} | AmCupon.ro`;
+      if (baza.length <= 60) return baza;
+      return cat.titlu.length <= 60 ? cat.titlu : cat.titlu.slice(0, 60).replace(/\s+\S*$/, "");
+    })(),
     description: `${cat.descriere} Preturi de la ${pretMinim.toLocaleString("ro-RO")} lei. Scor maxim: ${scorMax}/10. Ghid de cumparare actualizat ${data.updated}.`,
     alternates: { canonical: pageUrl },
     openGraph: {

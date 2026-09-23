@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import fs from "fs";
 import path from "path";
 import type { Metadata } from "next";
-import { linkAfiliat, linkPromotie } from "@/lib/linkMagazin";
+import { linkAfiliat } from "@/lib/linkMagazin";
 
 /** Pagina principala care castiga semnalul pentru fiecare nisa (vezi canonical mai jos). */
 const CANONIC_PRINCIPAL: Record<string, string> = {
@@ -106,7 +106,9 @@ export async function generateMetadata(
   const luna = new Date().toLocaleString("ro-RO", { month: "long" });
   const an   = new Date().getFullYear();
   return {
-    title:       `${nisa.titlu} — Reduceri ${luna} ${an} | AmCupon.ro`,
+    title:       `${nisa.titlu} — Reduceri ${luna} ${an} | AmCupon.ro`.length <= 60
+      ? `${nisa.titlu} — Reduceri ${luna} ${an} | AmCupon.ro`
+      : `${nisa.titlu} — Reduceri ${luna} ${an}`,
     description: nisa.descriere,
     keywords:    nisa.keywords,
     openGraph: {

@@ -5,12 +5,15 @@ import { useState } from "react";
 interface Props {
   magazin: string;
   numeMagazin: string;
+  /** Porneste cu formularul deschis si fara butonul de inchidere — pentru starea goala a
+   *  paginii de magazin, unde alerta E actiunea principala, nu o optiune ascunsa. */
+  deschis?: boolean;
 }
 
 type Status = "idle" | "loading" | "success" | "error";
 
-export default function PriceAlert({ magazin, numeMagazin }: Props) {
-  const [open, setOpen] = useState(false);
+export default function PriceAlert({ magazin, numeMagazin, deschis = false }: Props) {
+  const [open, setOpen] = useState(deschis);
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<Status>("idle");
   const [errMsg, setErrMsg] = useState("");
@@ -53,20 +56,25 @@ export default function PriceAlert({ magazin, numeMagazin }: Props) {
     );
   }
 
+  // In modul `deschis` (starea goala a paginii de magazin), mesajul de deasupra spune deja
+  // ce face alerta; o caseta cu titlu propriu l-ar repeta. Ramane doar formularul.
   return (
-    <div className="bg-[#14181c] border border-[#ddf93c]/20 rounded-xl p-4">
+    <div className={deschis ? "" : "bg-[#14181c] border border-[#ddf93c]/20 rounded-xl p-4"}>
+      {!deschis && (
       <div className="flex items-start justify-between mb-3">
         <div>
           <p className="font-black text-[#ffffff] text-sm">🔔 Alertă {numeMagazin}</p>
           <p className="text-xs text-[#c9ced5] mt-0.5">Te notificăm când apare o ofertă nouă</p>
         </div>
         <button onClick={() => { setOpen(false); setStatus("idle"); setEmail(""); }}
+          aria-label="Închide"
           className="text-[#9399a0] hover:text-[#c9ced5] transition-colors">
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12"/>
           </svg>
         </button>
       </div>
+      )}
 
       {status === "success" ? (
         <div className="flex items-center gap-2 text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 rounded-xl px-3 py-2.5">
@@ -80,12 +88,13 @@ export default function PriceAlert({ magazin, numeMagazin }: Props) {
             value={email}
             onChange={e => { setEmail(e.target.value); setStatus("idle"); setErrMsg(""); }}
             placeholder="email@tau.ro"
+            aria-label={`Adresa de email pentru alerta ${numeMagazin}`}
             required
             className="flex-1 border border-[#2a2f36] focus:border-[#ddf93c] bg-[#1f2329] text-[#ffffff] placeholder:text-[#9399a0] rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#ddf93c]/30"
           />
           <button type="submit" disabled={status === "loading"}
             className="bg-[#ddf93c] hover:bg-[#ddf93c] disabled:opacity-60 text-[#0c1000] font-bold px-4 py-2 rounded-xl text-sm transition-colors whitespace-nowrap">
-            {status === "loading" ? "..." : "Abonare"}
+            {status === "loading" ? "..." : deschis ? "Anunță-mă" : "Abonare"}
           </button>
         </form>
       )}
