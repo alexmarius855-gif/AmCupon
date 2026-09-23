@@ -12,6 +12,32 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 23.09.2026 (audit pe TOATE paginile + macheta interfetei — NEPUSHED):**
+- **`scripts/audit_pagini.py`** (nou) trece prin fiecare pagina GENERATA (1.763, fara redirecturile
+  `/reduceri/*`): pagini subtiri, sectiuni fara continut, undefined/NaN/„0 lei", titluri lipsa/duplicate/
+  peste 60, `src` gol, carduri repetate. **859 → 1.717 pagini curate.** Ruleaza-l dupa orice schimbare vizuala.
+- **Bug grav gasit de audit**: `gasesteMagazin` potrivea pe `split(".")[0]` (PRIMUL label), deci
+  `de.fossibot.com` si `de.store.tapo.com` serveau pagina lui **Eureka** — titlu, oferte, link de afiliere.
+  Acum potriveste pe `brandDomeniu()`. Tiparul #1 din LECTII-TEHNICE, reaparut.
+- **`lib/numeMagazin.ts`** — sursa unica pentru numele magazinului. Era scrisa de mana in **15 fisiere**,
+  una divergase (`NUME_OVERRIDE` doar in MagazinCard). 34 de magazine primeau ca nume prefixul de
+  subdomeniu (Store, Us, De, It). Plus `etichetaRegiune()` (Anthbot US / Anthbot DE), altfel titluri identice.
+- Titluri: **879 peste 60 → 35**; dezacordurile „1 ofertă active" (magazin) si „1 oferte active"
+  (49 de categorii) reparate. Blog: listele absorbite in `<h2>` (generatoarele scriu `## Titlu` lipit de
+  `- item`) — normalizare in parser. Pretentii de testare scoase din `generate_best_of.py`.
+- `/produse`: „Campanii cu Imagini (20)" = 4 campanii in 5 formate; acum una per campanie, card cu aspect
+  fix (golul negru venea din `h-auto`). „0 lei" scos din lista de produse (sub 1 leu) si din slider.
+- **Ramas**: 67 de articole au primul `## ` aproape identic cu `<h1>` (doua titluri lipite) — incercat la
+  randare, oprit de Alex in favoarea interfetei noi; 35 de titluri lungi pe categorii cu nume lungi.
+- **Cum au facut altii — verificat in codul paginilor**: Cuponescu = **WordPress** (1.422 de referinte
+  `wp-content`), deci tema de cupoane + introducere manuala; Cuponeria = **Next.js**, acelasi stack ca noi.
+  Temele de cupoane (Couponis, CouponXL, Clipper) au rating/vizualizari din fabrica — de acolo vine
+  „Rata de succes 100% / 0 utilizari" la concurenta. Shopify NU e pentru asta: e platforma pentru a-ti
+  vinde propriile produse, cu abonament lunar; ar inlocui Vercel + Actions (gratuite) si pipeline-ul automat.
+- **Macheta interfetei**: `docs/design/macheta/` — `macheta.py` genereaza `amcupon-macheta.html` din datele
+  reale: acasa, magazin cu coduri, magazin FARA oferta (86% din pagini), cu tema deschisa si inchisa.
+  **Planul de implementare, pas cu pas, e in `PROMPT-SESIUNE.md`**, sectiunea Interfata noua.
+
 **UPDATE 22.09.2026, partea a doua (homepage: ce vede omul in primele secunde — NEPUSHED):**
 - **Cel mai scump bug vizual de pana acum, si era LIVE.** Sub titlul „PRODUSE CU REDUCERE",
   homepage-ul deschidea **Auto-Moto cu o nacela cu senile IMER de 562.749 lei**, urmata de inca

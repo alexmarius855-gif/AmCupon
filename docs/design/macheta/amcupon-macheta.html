@@ -1,0 +1,287 @@
+<!doctype html><html lang="ro" data-theme="light"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>AmCupon — machetă</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@600;700;800&display=swap" rel="stylesheet">
+<style>:root{--bg:#f5f6f2;--surface:#fff;--surface-2:#eef0e8;--border:#e2e5dc;--text:#15181c;--muted:#59616a;--faint:#878e95;--accent:#ddf93c;--accent-ink:#11140a;--accent-text:#4a5900;--accent-soft:#f1f9c4;--danger:#c42f2f;--shadow:0 1px 2px rgba(20,24,28,.05),0 12px 28px -16px rgba(20,24,28,.22)}
+[data-theme=dark]{--bg:#07090c;--surface:#12151a;--surface-2:#1a1e24;--border:#242931;--text:#f2f4f5;--muted:#9ba2a9;--faint:#6d747b;--accent:#ddf93c;--accent-ink:#0c1000;--accent-text:#ddf93c;--accent-soft:rgba(221,249,60,.09);--danger:#ff6b6b;--shadow:0 1px 0 rgba(255,255,255,.03),0 14px 34px -18px rgba(0,0,0,.8)}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.55 "Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased;transition:background .2s,color .2s}
+a{color:inherit;text-decoration:none}
+button,input{font:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+@media(max-width:560px){.wrap{padding:0 16px}}
+
+.mk{background:#2b2f36;color:#e9ecef;font-size:12px}
+.mk .wrap{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding-top:7px;padding-bottom:7px}
+.mk-tabs{display:flex;gap:4px;flex-wrap:wrap}
+.mk button{border:1px solid #474c55;background:transparent;color:#e9ecef;border-radius:999px;padding:4px 11px;cursor:pointer;font-size:12px;font-weight:600}
+.mk button.on{background:#ddf93c;color:#11140a;border-color:#ddf93c}
+
+.ann{background:var(--accent);color:var(--accent-ink);font-weight:700;font-size:13.5px}
+.ann .wrap{display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;min-height:40px;text-align:center;padding-top:6px;padding-bottom:6px}
+.ann code{font-family:"JetBrains Mono",monospace;background:rgba(0,0,0,.09);padding:2px 8px;border-radius:6px;letter-spacing:.03em}
+.ann a{text-decoration:underline;text-underline-offset:3px}
+
+.hd{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--surface) 86%,transparent);backdrop-filter:saturate(1.5) blur(12px);-webkit-backdrop-filter:saturate(1.5) blur(12px);border-bottom:1px solid var(--border)}
+.hd .wrap{display:flex;align-items:center;gap:18px;min-height:64px}
+.logo{display:inline-flex;align-items:center;gap:5px;font-weight:800;font-size:19px;letter-spacing:-.03em;white-space:nowrap}
+.logo b{background:var(--accent);color:var(--accent-ink);padding:1px 7px 2px;border-radius:7px;font-size:16px}
+.search{flex:1;max-width:400px;display:flex;align-items:center;gap:8px;background:var(--surface-2);border:1px solid var(--border);border-radius:10px;padding:0 12px;height:40px;color:var(--faint)}
+.search input{border:0;background:transparent;outline:0;color:var(--text);width:100%;min-width:0}
+.nav{display:flex;gap:20px;font-size:14px;font-weight:600;color:var(--muted);margin-left:auto}
+.nav a:hover{color:var(--text)}
+.alert-btn{font-size:13.5px;font-weight:700;padding:8px 12px;border-radius:10px;border:1px solid var(--border);background:var(--surface);white-space:nowrap}
+@media(max-width:900px){.nav{display:none}.search{max-width:none}}
+@media(max-width:480px){.alert-btn{display:none}}
+
+.hero{padding:40px 0 18px}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .95fr;gap:32px;align-items:center}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr;gap:24px}}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;color:var(--accent-text);background:var(--accent-soft);padding:5px 11px;border-radius:999px}
+.dot{width:7px;height:7px;border-radius:50%;background:#2fb24c;box-shadow:0 0 0 3px rgba(47,178,76,.2)}
+h1{font-size:clamp(30px,4.4vw,46px);line-height:1.06;letter-spacing:-.035em;margin:14px 0 12px;font-weight:800}
+h1 em{font-style:normal;background:linear-gradient(transparent 58%,var(--accent) 58%);padding:0 2px}
+[data-theme=dark] h1 em{background:none;color:var(--accent)}
+.lead{font-size:16.5px;color:var(--muted);margin:0 0 20px;max-width:560px}
+.bigsearch{display:flex;gap:6px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:6px;box-shadow:var(--shadow);max-width:540px}
+.bigsearch input{flex:1;min-width:0;border:0;outline:0;background:transparent;color:var(--text);padding:0 10px;font-size:15.5px}
+.btn-accent{display:inline-flex;align-items:center;justify-content:center;gap:6px;background:var(--accent);color:var(--accent-ink);font-weight:800;border:0;border-radius:10px;padding:0 18px;height:44px;cursor:pointer;white-space:nowrap}
+.btn-accent:hover{filter:brightness(.96)}
+.btn-accent.big{height:48px;padding:0 22px}
+.btn-ghost{display:inline-flex;align-items:center;justify-content:center;gap:6px;border:1px solid var(--border);background:var(--surface);font-weight:700;border-radius:10px;height:42px;padding:0 16px;font-size:14px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px;font-size:13px}
+.chips a{padding:5px 11px;border-radius:999px;border:1px solid var(--border);background:var(--surface);font-weight:600;color:var(--muted)}
+.chips a:hover{color:var(--text);border-color:var(--muted)}
+
+.live{background:var(--surface);border:1px solid var(--border);border-radius:12px;box-shadow:var(--shadow);padding:16px}
+.live h4{margin:0 0 12px;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--faint)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px}
+.stat{background:var(--surface-2);border-radius:10px;padding:10px 12px}
+.stat b{display:block;font-size:22px;letter-spacing:-.03em;line-height:1.1}
+.stat span{font-size:12px;color:var(--muted)}
+.live-l{margin:0 0 8px;font-size:12px;font-weight:700;color:var(--faint);text-transform:uppercase;letter-spacing:.08em}
+.live .cup{grid-template-columns:80px minmax(0,1fr);box-shadow:none}
+.live .cup-cta{grid-column:1/-1}
+.live .reveal,.live .go,.live .codebox{width:100%}
+.live .rv-l{flex:1;text-align:center}
+
+.sec{padding:22px 0}
+.sec-h{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:14px}
+.sec-h h2{margin:0;font-size:23px;letter-spacing:-.025em;line-height:1.2}
+.sec-h p{margin:3px 0 0;color:var(--muted);font-size:14px}
+.link{color:var(--accent-text);font-weight:700;font-size:14px;white-space:nowrap}
+.link:hover{text-decoration:underline;text-underline-offset:3px}
+
+.filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+.f{border:1px solid var(--border);background:var(--surface);color:var(--muted);font-size:13px;font-weight:700;padding:7px 13px;border-radius:999px;cursor:pointer}
+.f i{font-style:normal;opacity:.55;margin-left:6px}
+.f.on{background:var(--text);color:var(--bg);border-color:var(--text)}
+
+.cups{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:900px){.cups{grid-template-columns:1fr}}
+.list{display:flex;flex-direction:column;gap:10px}
+.cup{display:grid;grid-template-columns:92px minmax(0,1fr) auto;gap:14px;align-items:center;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:12px;transition:border-color .15s,box-shadow .15s,transform .15s}
+.cup:hover{border-color:color-mix(in srgb,var(--text) 25%,var(--border));box-shadow:var(--shadow);transform:translateY(-1px)}
+.cup-val{background:var(--accent-soft);border-radius:10px;align-self:stretch;min-height:86px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;padding:8px 6px}
+.cup-logo{width:36px;height:36px;border-radius:9px;background:#fff;display:grid;place-items:center;overflow:hidden;border:1px solid rgba(0,0,0,.07)}
+.cup-logo img{width:100%;height:100%;object-fit:contain;padding:3px}
+.ini{display:grid;place-items:center;width:100%;height:100%;font-weight:800;font-size:13px;color:#11140a;background:#ddf93c}
+.ini.big{font-size:22px}
+.cup-num{font-weight:800;letter-spacing:-.03em;text-align:center;line-height:1.05}
+.cup-num.big{font-size:23px}.cup-num.mid{font-size:17px}.cup-num.small{font-size:11.5px;text-transform:uppercase;letter-spacing:.03em}
+.cup-top{display:flex;align-items:center;gap:8px;margin-bottom:4px;min-width:0}
+.chip{font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:6px;flex:none}
+.chip-code{background:var(--text);color:var(--bg)}
+.chip-deal{background:var(--surface-2);color:var(--muted);border:1px solid var(--border)}
+.cup-store{font-size:13px;font-weight:700;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cup-title{margin:0;font-size:15px;line-height:1.38;font-weight:700;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.cup-meta{margin-top:6px;font-size:12.5px;color:var(--faint)}
+.exp.urgent{color:var(--danger);font-weight:700}
+.exp.urgent::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:currentColor;margin-right:6px;vertical-align:1px}
+.reveal{display:flex;align-items:stretch;border:0;padding:0;background:none;cursor:pointer;border-radius:10px}
+.rv-l{background:var(--accent);color:var(--accent-ink);font-weight:800;font-size:14px;padding:11px 14px;border-radius:10px 0 0 10px;white-space:nowrap}
+.rv-t{font-family:"JetBrains Mono",monospace;font-weight:700;font-size:13px;display:flex;align-items:center;padding:0 11px;background:var(--surface-2);color:var(--muted);border:1.5px dashed color-mix(in srgb,var(--text) 32%,transparent);border-left:0;border-radius:0 10px 10px 0}
+.reveal:hover .rv-l{filter:brightness(.95)}
+.go{border:1.5px solid var(--text);background:transparent;color:var(--text);font-weight:800;font-size:14px;padding:10px 14px;border-radius:10px;cursor:pointer;white-space:nowrap}
+.go:hover{background:var(--text);color:var(--bg)}
+.codebox{display:flex;align-items:center;gap:8px;background:var(--accent-soft);border:1.5px dashed var(--accent-text);border-radius:10px;padding:5px 5px 5px 12px}
+.codebox code{font-family:"JetBrains Mono",monospace;font-weight:800;font-size:15px;letter-spacing:.04em;flex:1}
+.codebox button{border:0;background:var(--text);color:var(--bg);font-weight:800;font-size:12.5px;padding:8px 11px;border-radius:8px;cursor:pointer}
+@media(max-width:560px){.cup{grid-template-columns:74px minmax(0,1fr)}.cup-cta{grid-column:1/-1}.reveal,.go,.codebox{width:100%}.rv-l{flex:1;text-align:center}.cup-num.big{font-size:20px}}
+
+.stores{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+@media(max-width:900px){.stores{grid-template-columns:repeat(3,1fr)}}
+.st{position:relative;background:#fff;border:1px solid var(--border);border-radius:12px;height:88px;display:grid;place-items:center;padding:16px;transition:transform .15s,box-shadow .15s}
+.st:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.st img{max-width:100%;max-height:44px;object-fit:contain}
+.st .ini{border-radius:10px;width:52px;height:52px}
+.badge{position:absolute;top:7px;right:7px;font-size:10.5px;font-weight:800;background:#11140a;color:#ddf93c;padding:2px 7px;border-radius:6px}
+.badge.soft{background:#eef0e8;color:#59616a}
+[data-theme=dark] .st{border-color:transparent}
+
+.cats{display:flex;flex-wrap:wrap;gap:8px}
+.cat{display:inline-flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--border);padding:9px 14px;border-radius:999px;font-weight:700;font-size:14px}
+.cat i{font-style:normal;font-size:12px;color:var(--muted);background:var(--surface-2);padding:1px 8px;border-radius:999px}
+.cat:hover{border-color:var(--muted)}
+
+.alert{background:#15181c;color:#f2f4f5;border-radius:12px;padding:26px;display:grid;grid-template-columns:1.1fr 1fr;gap:18px;align-items:center}
+[data-theme=dark] .alert{background:var(--surface-2);border:1px solid var(--border)}
+.alert h3{margin:0 0 5px;font-size:22px;letter-spacing:-.025em}
+.alert p{margin:0;color:#b9c0c7}
+.alert form,.empty form{display:flex;gap:8px}
+.alert input,.empty input{flex:1;min-width:0;height:44px;border-radius:10px;border:1px solid var(--border);padding:0 14px;background:#fff;color:#15181c}
+@media(max-width:900px){.alert{grid-template-columns:1fr}}
+
+.crumbs{font-size:13px;color:var(--faint);padding:18px 0 10px}
+.shead{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:18px;align-items:center;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px;box-shadow:var(--shadow)}
+.slogo{width:84px;height:84px;border-radius:12px;background:#fff;border:1px solid var(--border);display:grid;place-items:center;padding:10px;overflow:hidden}
+.slogo img{max-width:100%;max-height:100%;object-fit:contain}
+.shead h1{font-size:clamp(24px,3.2vw,32px);margin:0 0 8px}
+.facts{display:flex;flex-wrap:wrap;gap:6px;font-size:12.5px}
+.fact{background:var(--surface-2);color:var(--muted);padding:4px 10px;border-radius:999px;font-weight:700}
+.fact.hot{background:var(--accent);color:var(--accent-ink)}
+.sactions{display:flex;flex-direction:column;gap:8px}
+@media(max-width:760px){.shead{grid-template-columns:auto minmax(0,1fr)}.slogo{width:64px;height:64px}.sactions{grid-column:1/-1;flex-direction:row;flex-wrap:wrap}.sactions>*{flex:1}}
+.slayout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:20px;margin:18px 0 8px;align-items:start}
+@media(max-width:960px){.slayout{grid-template-columns:1fr}}
+.panel{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px;margin-top:14px}
+aside .panel:first-child{margin-top:0}
+.panel h3{margin:0 0 10px;font-size:17px;letter-spacing:-.015em}
+.about p,.faq p{margin:0 0 10px;color:var(--muted)}
+.steps{display:grid;gap:12px;counter-reset:s}
+.step{display:flex;gap:12px;align-items:flex-start;color:var(--muted)}
+.step::before{counter-increment:s;content:counter(s);flex:none;width:26px;height:26px;border-radius:50%;background:var(--accent);color:var(--accent-ink);font-weight:800;display:grid;place-items:center;font-size:13px}
+.step b{color:var(--text)}
+.faq details{border-top:1px solid var(--border);padding:11px 0}
+.faq details:first-of-type{border-top:0;padding-top:2px}
+.faq summary{font-weight:700;cursor:pointer}
+.faq details p{margin:8px 0 0}
+.sim a{display:flex;align-items:center;gap:10px;padding:10px 0;border-top:1px solid var(--border)}
+.sim a:first-of-type{border-top:0;padding-top:2px}
+.sim .l{width:38px;height:38px;border-radius:9px;background:#fff;border:1px solid var(--border);display:grid;place-items:center;padding:4px;flex:none;overflow:hidden}
+.sim .l img{max-width:100%;max-height:100%;object-fit:contain}
+.sim b{display:block;font-size:14px}
+.sim small{color:var(--accent-text);font-weight:700;font-size:12px}
+.sim .arr{margin-left:auto;color:var(--faint)}
+.empty{display:flex;gap:16px;align-items:flex-start;background:var(--surface);border:1.5px dashed var(--border);border-radius:12px;padding:20px}
+.empty-i{flex:none;width:46px;height:46px;border-radius:12px;background:var(--accent-soft);display:grid;place-items:center;font-size:22px}
+.empty h3{margin:0 0 6px;font-size:18px}
+.empty p{margin:0 0 14px;color:var(--muted)}
+@media(max-width:560px){.empty{flex-direction:column}.alert form,.empty form{flex-direction:column}}
+
+.ft{border-top:1px solid var(--border);margin-top:30px;padding:26px 0 40px;color:var(--faint);font-size:13px}
+.ft p{margin:10px 0 0;max-width:520px}
+</style></head><body>
+<div class="mk"><div class="wrap"><span><b>MACHETĂ</b> · date reale din 22.09.2026 · nu e site-ul live</span>
+<div class="mk-tabs"><button class="on" data-pg="pg-home">Acasă</button><button data-pg="pg-store">Magazin cu coduri</button><button data-pg="pg-gol">Magazin fără ofertă</button></div>
+<button id="theme" class="mk-theme" type="button">◐ Temă deschisă / închisă</button></div></div>
+<div class="ann"><div class="wrap"><span>🔥 Jollymag: -10%</span><code>JOLLY10</code><a href="#">Vezi oferta →</a></div></div><header class="hd"><div class="wrap"><a class="logo" href="#"><b>Am</b>Cupon.ro</a><label class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input placeholder="Caută un magazin"></label><nav class="nav"><a href="#">Coduri azi</a><a href="#">Magazine</a><a href="#">Categorii</a><a href="#">Blog</a></nav><a class="alert-btn" href="#">🔔 Alerte</a></div></header>
+<div class="pg" id="pg-home">
+<section class="hero"><div class="wrap">
+  <div>
+    <span class="eyebrow"><span class="dot"></span>188 de oferte active acum</span>
+    <h1>Plătești mai puțin la <em>magazinele pe care le știi</em>.</h1>
+    <p class="lead">Coduri de reducere și oferte de la 961 de magazine, strânse automat din rețelele de afiliere și actualizate de trei ori pe zi. Fără cont, fără extensie.</p>
+    <label class="bigsearch"><input placeholder="Caută: Answear, Notino, Dr.Max…"><button class="btn-accent" type="button">Caută</button></label>
+    <div class="chips"><a href="#">Notino</a><a href="#">Decathlon</a><a href="#">Drmax</a><a href="#">Noriel</a><a href="#">Carturesti</a></div>
+  </div>
+  <aside class="live">
+    <h4>Acum, pe AmCupon</h4>
+    <div class="stats"><div class="stat"><b>49</b><span>coduri</span></div>
+      <div class="stat"><b>188</b><span>oferte</span></div>
+      <div class="stat"><b>90</b><span>magazine</span></div></div>
+    <p class="live-l">Codul zilei</p>
+    <article class="cup" data-kind="code" data-soon="0"><div class="cup-val"><div class="cup-logo"><img src="https://www.google.com/s2/favicons?domain=jollymag.ro&amp;sz=128" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini " style="display:none">JO</span></div><div class="cup-num big">-10%</div></div><div class="cup-body"><div class="cup-top"><span class="chip chip-code">Cod</span><span class="cup-store">Jollymag</span></div><h3 class="cup-title">Reducere 10% la tot cosul</h3><div class="cup-meta"><span class="exp neutru">Fără dată de expirare</span></div></div><div class="cup-cta"><button class="reveal" type="button" data-code="JOLLY10"><span class="rv-l">Vezi codul</span><span class="rv-t">···10</span></button></div></article>
+  </aside>
+</div></section>
+<section class="sec"><div class="wrap">
+  <div class="sec-h"><div><h2>Codurile zilei</h2><p>Codurile întâi, apoi ofertele. Cele care expiră curând, sus.</p></div><a class="link" href="#">Toate ofertele →</a></div>
+  <div class="filters">
+    <button class="f on" data-f="all">Toate<i>12</i></button>
+    <button class="f" data-f="code">Doar coduri<i>6</i></button>
+    <button class="f" data-f="deal">Oferte<i>6</i></button>
+    
+  </div>
+  <div class="cups" id="home-cups"><article class="cup" data-kind="code" data-soon="0"><div class="cup-val"><div class="cup-logo"><img src="https://www.google.com/s2/favicons?domain=jollymag.ro&amp;sz=128" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini " style="display:none">JO</span></div><div class="cup-num big">-10%</div></div><div class="cup-body"><div class="cup-top"><span class="chip chip-code">Cod</span><span class="cup-store">Jollymag</span></div><h3 class="cup-title">Reducere 10% la tot cosul</h3><div class="cup-meta"><span class="exp neutru">Fără dată de expirare</span></div></div><div class="cup-cta"><button class="reveal" type="button" data-code="JOLLY10"><span class="rv-l">Vezi codul</span><span class="rv-t">···10</span></button></div></article><article class="cup" data-kind="code" data-soon="0"><div class="cup-val"><div class="cup-logo"><img src="https://img.2performant.com/system/paperclip/campaign_logos/pics/14301/medium/14301.png" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini " style="display:none">HA</span></div><div class="cup-num big">-15%</div></div><div class="cup-body"><div class="cup-top"><span class="chip chip-code">Cod</span><span class="cup-store">Hairify</span></div><h3 class="cup-title">15% Discount la fibrele de păr din cheratină pentru păr rar și chelie</h3><div class="cup-meta"><span class="exp neutru">Fără dată de expirare</span></div></div><div class="cup-cta"><button class="reveal" type="button" data-code="BL2016"><span class="rv-l">Vezi codul</span><span class="rv-t">···16</span></button></div></article><article class="cup" data-kind="code" data-soon="0"><div class="cup-val"><div class="cup-logo"><img src="https://img.2performant.com/system/paperclip/campaign_logos/pics/14406/medium/14406.jpg" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini " style="display:none">E </span></div><div class="cup-num big">-10%</div></div><div class="cup-body"><div class="cup-top"><span class="chip chip-code">Cod</span><span class="cup-store">E Potion</span></div><h3 class="cup-title">10% reducere pe tot site-ul e-Potion.ro</h3><div class="cup-meta"><span class="exp neutru">Fără dată de expirare</span></div></div><div class="cup-cta"><button class="reveal" type="button" data-code="epotion10"><span class="rv-l">Vezi codul</span><span class="rv-t">···10</span></button></div></article><article class="cup" data-kind="code" data-soon="0"><div class="cup-val"><div class="cup-logo"><img src="https://img.2performant.com/system/paperclip/campaign_logos/pics/14335/medium/14335.jpg" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini " style="display:none">IN</span></div><div class="cup-num small">Reducere</div></div><div class="cup-body"><div class="cup-top"><span class="chip chip-code">Cod</span><span class="cup-store">Incaltamintelamoda</span></div><h3 class="cup-title">Reducere la încălțăminte bărbătească din piele naturală – Cod</h3><div class="cup-meta"><span class="exp neutru">Fără dată de expirare</span></div></div><div class="cup-cta"><button class="reveal" type="button" data-code="LAMODA"><span class="rv-l">Vezi codul</span><span class="rv-t">···DA</span></button></div></article><article class="cup" data-kind="code" data-soon="0"><div class="cup-val"><div class="cup-logo"><img src="https://img.2performant.com/system/paperclip/campaign_logos/pics/1570/medium/1570.png" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini " style="display:none">PR</span></div><div class="cup-num big">-20%</div></div><div class="cup-body"><div class="cup-top"><span class="chip chip-code">Cod</span><span class="cup-store">Priveboutique</span></div><h3 class="cup-title">Sezon banchet &amp; majorat: -20% la toate rochiile PRIVE</h3><div class="cup-meta"><span class="exp normal">Mai sunt 7 zile</span></div></div><div class="cup-cta"><button class="reveal" type="button" data-code="PB20"><span class="rv-l">Vezi codul</span><span class="rv-t">···20</span></button></div></article><article class="cup" data-kind="code" data-soon="0"><div class="cup-val"><div class="cup-logo"><img src="https://www.google.com/s2/favicons?domain=insotelhotelgroup.com&amp;sz=128" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini " style="display:none">IN</span></div><div class="cup-num big">-45%</div></div><div class="cup-body"><div class="cup-top"><span class="chip chip-code">Cod</span><span class="cup-store">Insotelhotelgroup</span></div><h3 class="cup-title">Jusqu&#x27;Ã 45 % de rÃ©duction â SÃ©jour gratuit pour 2 enfants | Insotel Hotel</h3><div class="cup-meta"><span class="exp normal">Mai sunt 40 zile</span></div></div><div class="cup-cta"><button class="reveal" type="button" data-code="AG06"><span class="rv-l">Vezi codul</span><span class="rv-t">···06</span></button></div></article><article class="cup" data-kind="deal" data-soon="0"><div class="cup-val"><div class="cup-logo"><img src="https://img.2performant.com/system/paperclip/campaign_logos/pics/11367/medium/11367.png" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini " style="display:none">MO</span></div><div class="cup-num big">-10%</div></div><div class="cup-body"><div class="cup-top"><span class="chip chip-deal">Ofertă</span><span class="cup-store">Mobidea</span></div><h3 class="cup-title">Oferte de Toamna cu extra 10% reducere la mobilier de dormitor, bucatarie , living și hol</h3><div class="cup-meta"><span class="exp normal">Mai sunt 7 zile</span></div></div><div class="cup-cta"><button class="go" type="button">Vezi oferta <span aria-hidden="true">→</span></button></div></article><article class="cup" data-kind="deal" data-soon="0"><div class="cup-val"><div class="cup-logo"><img src="https://img.2performant.com/system/paperclip/campaign_logos/pics/5904/medium/5904.png" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini " style="display:none">AF</span></div><div class="cup-num small">Ofertă</div></div><div class="cup-body"><div class="cup-top"><span class="chip chip-deal">Ofertă</span><span class="cup-store">Afisport</span></div><h3 class="cup-title">Extragarantie 2+3 ani la Biciclete Afisport.ro</h3><div class="cup-meta"><span class="exp normal">Mai sunt 7 zile</span></div></div><div class="cup-cta"><button class="go" type="button">Vezi oferta <span aria-hidden="true">→</span></button></div></article><article class="cup" data-kind="deal" data-soon="0"><div class="cup-val"><div class="cup-logo"><img src="https://img.2performant.com/system/paperclip/campaign_logos/pics/14294/medium/14294.png" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini " style="display:none">AR</span></div><div class="cup-num mid">-99 lei</div></div><div class="cup-body"><div class="cup-top"><span class="chip chip-deal">Ofertă</span><span class="cup-store">Arabescu</span></div><h3 class="cup-title">Pachete cu 2+1 / 3+3 / 5+5 Parfumuri Cadou de la doar 159,99lei</h3><div class="cup-meta"><span class="exp normal">Mai sunt 7 zile</span></div></div><div class="cup-cta"><button class="go" type="button">Vezi oferta <span aria-hidden="true">→</span></button></div></article><article class="cup" data-kind="deal" data-soon="0"><div class="cup-val"><div class="cup-logo"><img src="https://img.2performant.com/system/paperclip/campaign_logos/pics/13299/medium/13299.jpg" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini " style="display:none">ED</span></div><div class="cup-num big">-60%</div></div><div class="cup-body"><div class="cup-top"><span class="chip chip-deal">Ofertă</span><span class="cup-store">Edituradiana</span></div><h3 class="cup-title">Inapoi la gradinita cu Editura Diana!</h3><div class="cup-meta"><span class="exp normal">Mai sunt 7 zile</span></div></div><div class="cup-cta"><button class="go" type="button">Vezi oferta <span aria-hidden="true">→</span></button></div></article><article class="cup" data-kind="deal" data-soon="0"><div class="cup-val"><div class="cup-logo"><img src="https://img.2performant.com/system/paperclip/campaign_logos/pics/13104/medium/13104.png" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini " style="display:none">ZE</span></div><div class="cup-num big">-33%</div></div><div class="cup-body"><div class="cup-top"><span class="chip chip-deal">Ofertă</span><span class="cup-store">Zephyrlabs</span></div><h3 class="cup-title">Promotie -33% Mai - Septembrie pentru oricare 2 produse identice de la Melegatti Pharma</h3><div class="cup-meta"><span class="exp normal">Mai sunt 7 zile</span></div></div><div class="cup-cta"><button class="go" type="button">Vezi oferta <span aria-hidden="true">→</span></button></div></article><article class="cup" data-kind="deal" data-soon="0"><div class="cup-val"><div class="cup-logo"><img src="https://img.2performant.com/system/paperclip/campaign_logos/pics/13724/medium/13724.jpg" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini " style="display:none">DO</span></div><div class="cup-num small">Ofertă</div></div><div class="cup-body"><div class="cup-top"><span class="chip chip-deal">Ofertă</span><span class="cup-store">Doctorshield</span></div><h3 class="cup-title">Livrare si retur GRATUIT la orice comanda de gratare, paturi, birouri si scaune de gaming</h3><div class="cup-meta"><span class="exp normal">Mai sunt 8 zile</span></div></div><div class="cup-cta"><button class="go" type="button">Vezi oferta <span aria-hidden="true">→</span></button></div></article></div>
+</div></section>
+<section class="sec"><div class="wrap">
+  <div class="sec-h"><div><h2>Magazine populare</h2><p>Branduri pe care le știi. Badge-ul arată unde e cod azi.</p></div><a class="link" href="#">Toate cele 961 →</a></div>
+  <div class="stores"><a class="st" href="#" title="Notino"><img src="https://img.2performant.com/system/paperclip/campaign_logos/pics/5876/medium/5876.png" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini big" style="display:none">NO</span></a><a class="st" href="#" title="Decathlon"><img src="https://img.2performant.com/system/paperclip/campaign_logos/pics/11445/medium/11445.png" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini big" style="display:none">DE</span></a><a class="st" href="#" title="Drmax"><img src="https://img.2performant.com/system/paperclip/campaign_logos/pics/8800/medium/8800.png" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini big" style="display:none">DR</span></a><a class="st" href="#" title="Noriel"><span class="badge soft">2 oferte</span><img src="https://img.2performant.com/system/paperclip/campaign_logos/pics/7926/medium/7926.png" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini big" style="display:none">NO</span></a><a class="st" href="#" title="Carturesti"><span class="badge soft">2 oferte</span><img src="https://img.2performant.com/system/paperclip/campaign_logos/pics/11380/medium/11380.png" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini big" style="display:none">CA</span></a><a class="st" href="#" title="Answear"><img src="https://img.2performant.com/system/paperclip/campaign_logos/pics/2561/medium/2561.png" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini big" style="display:none">AN</span></a><a class="st" href="#" title="Sportdepot"><img src="https://img.2performant.com/system/paperclip/campaign_logos/pics/12062/medium/12062.png" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini big" style="display:none">SP</span></a><a class="st" href="#" title="Petmart"><img src="https://img.2performant.com/system/paperclip/campaign_logos/pics/13948/medium/13948.jpg" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini big" style="display:none">PE</span></a><a class="st" href="#" title="Sevensins"><img src="https://www.google.com/s2/favicons?domain=sevensins.ro&amp;sz=128" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini big" style="display:none">SE</span></a><a class="st" href="#" title="Otter"><span class="badge soft">2 oferte</span><img src="https://img.2performant.com/system/paperclip/campaign_logos/pics/2469/medium/2469.png" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini big" style="display:none">OT</span></a><a class="st" href="#" title="Regata"><span class="badge soft">1 ofertă</span><img src="https://img.2performant.com/system/paperclip/campaign_logos/pics/14376/medium/14376.jpg" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini big" style="display:none">RE</span></a><a class="st" href="#" title="Expomob"><span class="badge soft">2 oferte</span><img src="https://img.2performant.com/system/paperclip/campaign_logos/pics/11555/medium/11555.png" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini big" style="display:none">EX</span></a></div>
+</div></section>
+<section class="sec"><div class="wrap">
+  <div class="sec-h"><div><h2>Pe categorii</h2><p>Unde sunt ofertele acum.</p></div></div>
+  <div class="cats"><a class="cat" href="#">Electronice &amp; IT<i>32</i></a><a class="cat" href="#">Fashion<i>31</i></a><a class="cat" href="#">Marketplace<i>31</i></a><a class="cat" href="#">Casă &amp; Grădină<i>21</i></a><a class="cat" href="#">Călătorii<i>16</i></a><a class="cat" href="#">Beauty &amp; Îngrijire<i>11</i></a><a class="cat" href="#">Servicii<i>8</i></a><a class="cat" href="#">Sănătate &amp; Farmacie<i>7</i></a><a class="cat" href="#">Cărți &amp; Educație<i>6</i></a><a class="cat" href="#">Sport &amp; Fitness<i>6</i></a></div>
+</div></section><section class="sec"><div class="wrap"><div class="alert"><div><h3>Codurile noi, direct pe email.</h3><p>Fără spam. Te dezabonezi dintr-un click.</p></div><form onsubmit="return false"><input type="email" placeholder="adresa@email.ro"><button class="btn-accent" type="button">Anunță-mă</button></form></div></div></section></div>
+<div class="pg" id="pg-store" hidden>
+<div class="wrap"><div class="crumbs">Acasă / Magazine / Incaltamintelamoda</div>
+<div class="shead"><div class="slogo"><img src="https://img.2performant.com/system/paperclip/campaign_logos/pics/14335/medium/14335.jpg" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini big" style="display:none">IN</span></div>
+  <div><h1>Cod reducere Incaltamintelamoda</h1><div class="facts"><span class="fact hot">1 cod activ</span><span class="fact">2 oferte</span><span class="fact">Actualizat 22.09.2026</span><span class="fact">Fashion</span></div></div>
+  <div class="sactions"><a class="btn-accent big" href="#">Mergi la Incaltamintelamoda →</a><a class="btn-ghost" href="#">🔔 Alertă cod nou</a></div></div>
+<div class="slayout"><main>
+  <div class="list"><article class="cup" data-kind="code" data-soon="0"><div class="cup-val"><div class="cup-logo"><img src="https://img.2performant.com/system/paperclip/campaign_logos/pics/14335/medium/14335.jpg" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini " style="display:none">IN</span></div><div class="cup-num small">Reducere</div></div><div class="cup-body"><div class="cup-top"><span class="chip chip-code">Cod</span><span class="cup-store">Incaltamintelamoda</span></div><h3 class="cup-title">Reducere la încălțăminte bărbătească din piele naturală – Cod</h3><div class="cup-meta"><span class="exp neutru">Fără dată de expirare</span></div></div><div class="cup-cta"><button class="reveal" type="button" data-code="LAMODA"><span class="rv-l">Vezi codul</span><span class="rv-t">···DA</span></button></div></article><article class="cup" data-kind="deal" data-soon="0"><div class="cup-val"><div class="cup-logo"><img src="https://img.2performant.com/system/paperclip/campaign_logos/pics/14335/medium/14335.jpg" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini " style="display:none">IN</span></div><div class="cup-num big">-47%</div></div><div class="cup-body"><div class="cup-top"><span class="chip chip-deal">Ofertă</span><span class="cup-store">Incaltamintelamoda</span></div><h3 class="cup-title">Reduceri de până la 47% la încălțăminte din piele naturală</h3><div class="cup-meta"><span class="exp neutru">Fără dată de expirare</span></div></div><div class="cup-cta"><button class="go" type="button">Vezi oferta <span aria-hidden="true">→</span></button></div></article></div>
+  <div class="panel about"><h3>Despre Incaltamintelamoda</h3><p>Incaltamintelamoda se numără printre magazinele de modă, haine și accesorii apreciate în România pentru raportul bun dintre calitate și preț.</p><p>Folosirea unui cod Incaltamintelamoda este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine.</p></div>
+  <div class="panel"><h3>Cum folosești un cod Incaltamintelamoda</h3><div class="steps">
+    <div class="step"><span>Apasă <b>Vezi codul</b>. Se deschide Incaltamintelamoda într-un tab nou, iar codul rămâne aici.</span></div>
+    <div class="step"><span>Copiază codul și pune produsele în coș.</span></div>
+    <div class="step"><span>La finalizarea comenzii, lipește codul în câmpul pentru voucher.</span></div></div></div>
+  <div class="panel faq"><h3>Întrebări</h3>
+    <details open><summary>De unde sunt codurile?</summary><p>Din rețeaua de afiliere prin care colaborăm cu Incaltamintelamoda. Nu le testăm în coș — dacă unul nu merge, spune-ne și îl scoatem.</p></details>
+    <details><summary>Cât timp e valabil un cod?</summary><p>Până la data scrisă în dreptul lui. Ofertele expirate dispar singure de pe pagină.</p></details>
+    <details><summary>Se aplică la orice produs?</summary><p>Depinde de ofertă: unele merg doar la produse nereduse sau peste o anumită valoare a coșului.</p></details></div>
+</main><aside>
+  <div class="panel sim"><h3>Magazine similare</h3><a href="#"><span class="l"><img src="https://img.2performant.com/system/paperclip/campaign_logos/pics/1570/medium/1570.png" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini " style="display:none">PR</span></span><span><b>Priveboutique</b><small>1 cod activ</small></span><span class="arr">→</span></a><a href="#"><span class="l"><img src="https://www.google.com/s2/favicons?domain=jollymag.ro&amp;sz=128" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini " style="display:none">JO</span></span><span><b>Jollymag</b><small>1 cod activ</small></span><span class="arr">→</span></a><a href="#"><span class="l"><img src="https://img.2performant.com/system/paperclip/campaign_logos/pics/14406/medium/14406.jpg" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini " style="display:none">E </span></span><span><b>E Potion</b><small>1 cod activ</small></span><span class="arr">→</span></a><a href="#"><span class="l"><img src="https://img.2performant.com/system/paperclip/campaign_logos/pics/14301/medium/14301.png" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini " style="display:none">HA</span></span><span><b>Hairify</b><small>1 cod activ</small></span><span class="arr">→</span></a></div>
+</aside></div></div><section class="sec"><div class="wrap"><div class="alert"><div><h3>Cod nou la Incaltamintelamoda? Îți scriem noi.</h3><p>Un email când apare un cod nou la magazinele pe care le urmărești. Nimic altceva.</p></div><form onsubmit="return false"><input type="email" placeholder="adresa@email.ro"><button class="btn-accent" type="button">Anunță-mă</button></form></div></div></section></div>
+<div class="pg" id="pg-gol" hidden>
+<div class="wrap"><div class="crumbs">Acasă / Magazine / Sevensins</div>
+<div class="shead"><div class="slogo"><img src="https://www.google.com/s2/favicons?domain=sevensins.ro&amp;sz=128" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini big" style="display:none">SE</span></div>
+  <div><h1>Cod reducere Sevensins</h1><div class="facts"><span class="fact">Fashion</span><span class="fact">Căutăm coduri noi de 3 ori pe zi</span></div></div>
+  <div class="sactions"><a class="btn-accent big" href="#">Mergi la Sevensins →</a></div></div>
+<div class="slayout"><main>
+  <div class="empty"><div class="empty-i">🔔</div><div><h3>Acum nu e niciun cod activ la Sevensins.</h3>
+    <p>Îți scriem pe email în ziua în care apare unul — sau vezi mai jos magazinele din aceeași categorie care au cod chiar acum.</p>
+    <form onsubmit="return false"><input type="email" placeholder="adresa@email.ro"><button class="btn-accent" type="button">Anunță-mă</button></form></div></div>
+  <div class="sec-h" style="margin-top:22px"><div><h2 style="font-size:19px">Au cod chiar acum</h2><p>Magazine din aceeași categorie cu Sevensins.</p></div></div>
+  <div class="list"><article class="cup" data-kind="code" data-soon="0"><div class="cup-val"><div class="cup-logo"><img src="https://img.2performant.com/system/paperclip/campaign_logos/pics/1570/medium/1570.png" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini " style="display:none">PR</span></div><div class="cup-num big">-20%</div></div><div class="cup-body"><div class="cup-top"><span class="chip chip-code">Cod</span><span class="cup-store">Priveboutique</span></div><h3 class="cup-title">Sezon banchet &amp; majorat: -20% la toate rochiile PRIVE</h3><div class="cup-meta"><span class="exp normal">Mai sunt 7 zile</span></div></div><div class="cup-cta"><button class="reveal" type="button" data-code="PB20"><span class="rv-l">Vezi codul</span><span class="rv-t">···20</span></button></div></article><article class="cup" data-kind="code" data-soon="0"><div class="cup-val"><div class="cup-logo"><img src="https://img.2performant.com/system/paperclip/campaign_logos/pics/14335/medium/14335.jpg" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini " style="display:none">IN</span></div><div class="cup-num small">Reducere</div></div><div class="cup-body"><div class="cup-top"><span class="chip chip-code">Cod</span><span class="cup-store">Incaltamintelamoda</span></div><h3 class="cup-title">Reducere la încălțăminte bărbătească din piele naturală – Cod</h3><div class="cup-meta"><span class="exp neutru">Fără dată de expirare</span></div></div><div class="cup-cta"><button class="reveal" type="button" data-code="LAMODA"><span class="rv-l">Vezi codul</span><span class="rv-t">···DA</span></button></div></article><article class="cup" data-kind="code" data-soon="0"><div class="cup-val"><div class="cup-logo"><img src="https://www.google.com/s2/favicons?domain=jollymag.ro&amp;sz=128" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini " style="display:none">JO</span></div><div class="cup-num big">-10%</div></div><div class="cup-body"><div class="cup-top"><span class="chip chip-code">Cod</span><span class="cup-store">Jollymag</span></div><h3 class="cup-title">Reducere 10% la tot cosul</h3><div class="cup-meta"><span class="exp neutru">Fără dată de expirare</span></div></div><div class="cup-cta"><button class="reveal" type="button" data-code="JOLLY10"><span class="rv-l">Vezi codul</span><span class="rv-t">···10</span></button></div></article></div>
+  <div class="panel about"><h3>Despre Sevensins</h3><p>Pe Sevensins descoperi modă, haine și accesorii, cu o ofertă care se înnoiește frecvent de-a lungul anului.</p><p>În acest moment nu există un cod activ pentru Sevensins, dar verificăm zilnic. Adaugă pagina la favorite ca să fii primul care prinde următoarea reducere de modă, haine și accesorii.</p></div>
+</main><aside>
+  <div class="panel sim"><h3>Alte magazine cu cod</h3><a href="#"><span class="l"><img src="https://img.2performant.com/system/paperclip/campaign_logos/pics/1570/medium/1570.png" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini " style="display:none">PR</span></span><span><b>Priveboutique</b><small>1 cod activ</small></span><span class="arr">→</span></a><a href="#"><span class="l"><img src="https://img.2performant.com/system/paperclip/campaign_logos/pics/14335/medium/14335.jpg" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini " style="display:none">IN</span></span><span><b>Incaltamintelamoda</b><small>1 cod activ</small></span><span class="arr">→</span></a><a href="#"><span class="l"><img src="https://www.google.com/s2/favicons?domain=jollymag.ro&amp;sz=128" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini " style="display:none">JO</span></span><span><b>Jollymag</b><small>1 cod activ</small></span><span class="arr">→</span></a><a href="#"><span class="l"><img src="https://img.2performant.com/system/paperclip/campaign_logos/pics/14406/medium/14406.jpg" alt="" loading="lazy" onerror="imgFail(this)"><span class="ini " style="display:none">E </span></span><span><b>E Potion</b><small>1 cod activ</small></span><span class="arr">→</span></a></div>
+</aside></div></div></div>
+<footer class="ft"><div class="wrap"><a class="logo" href="#"><b>Am</b>Cupon.ro</a><p>Câștigăm un comision când cumperi printr-un link de pe site. Pe tine nu te costă nimic în plus.</p></div></footer>
+<script>function imgFail(i){i.style.display='none';var n=i.nextElementSibling;if(n)n.style.display='grid';}
+(function(){
+  var root=document.documentElement;
+  document.getElementById('theme').addEventListener('click',function(){
+    root.setAttribute('data-theme',root.getAttribute('data-theme')==='dark'?'light':'dark');
+  });
+  document.querySelectorAll('[data-pg]').forEach(function(b){
+    b.addEventListener('click',function(){
+      document.querySelectorAll('.pg').forEach(function(p){p.hidden=(p.id!==b.dataset.pg);});
+      document.querySelectorAll('[data-pg]').forEach(function(x){x.classList.toggle('on',x===b);});
+      window.scrollTo(0,0);
+    });
+  });
+  document.addEventListener('click',function(e){
+    var r=e.target.closest('.reveal');
+    if(r){
+      var c=r.dataset.code, box=document.createElement('div'), code=document.createElement('code'), btn=document.createElement('button');
+      box.className='codebox'; code.textContent=c; btn.type='button'; btn.textContent='Copiază';
+      function sel(){var rg=document.createRange();rg.selectNodeContents(code);var s=window.getSelection();s.removeAllRanges();s.addRange(rg);btn.textContent='Selectat';}
+      btn.addEventListener('click',function(ev){
+        ev.stopPropagation();
+        if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(c).then(function(){btn.textContent='Copiat ✓';},sel);}else{sel();}
+      });
+      box.appendChild(code); box.appendChild(btn); r.replaceWith(box); return;
+    }
+    var f=e.target.closest('.f');
+    if(f){
+      var k=f.dataset.f;
+      f.parentElement.querySelectorAll('.f').forEach(function(x){x.classList.toggle('on',x===f);});
+      document.querySelectorAll('#home-cups .cup').forEach(function(card){
+        var ok=k==='all'||(k==='code'&&card.dataset.kind==='code')||(k==='deal'&&card.dataset.kind==='deal')||(k==='soon'&&card.dataset.soon==='1');
+        card.hidden=!ok;
+      });
+    }
+  });
+})();
+</script></body></html>

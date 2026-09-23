@@ -63,3 +63,32 @@ Ctrl+C            — opreste o comanda in executie
 
 **Nu trebuie sa stii pe de rost nimic** — CLAUDE.md si STRATEGIE.md tin minte tot.
 Tu dai directia, Claude executa si iti cere confirmare inainte de actiuni importante.
+
+---
+
+## Interfața nouă — de lipit după blocul de mai sus (plan din 23.09.2026)
+
+```
+CONTINUĂM INTERFAȚA AmCupon. Macheta e în docs/design/macheta/amcupon-macheta.html
+(se regenerează din datele reale cu: python docs/design/macheta/macheta.py).
+
+Tema aleasă de mine: [DESCHISĂ / ÎNCHISĂ]
+
+Lucrează progresiv: o componentă pe rând, după fiecare `npm run build`,
+`python scripts/audit_pagini.py` și un screenshot; commit separat; push doar când îți spun.
+
+1. app/components/CuponCard.tsx — cardul din machetă: bloc de valoare cu logo, chip
+   Cod/Ofertă, titlu FĂRĂ codul în el, expirare, „Vezi codul ···XX" care deschide magazinul
+   pe linkul afiliat și arată codul. O singură componentă, folosită oriunde apare o ofertă.
+2. Pagina de magazin FĂRĂ ofertă (86% din pagini) — starea goală din machetă: mesaj clar,
+   alertă pe email, „Au cod chiar acum" la magazine similare, „Despre".
+3. Pagina de magazin CU coduri — antet cu fapte (N coduri, actualizat la), lista de carduri,
+   „Cum folosești codul", întrebări, similare în lateral.
+4. Acasă — hero cu panoul „Acum, pe AmCupon" (cifre reale), „Codurile zilei" cu filtre
+   (filtrul fără rezultate nu apare), magazine populare din lib/magazinePopulare.ts.
+5. Tokenii de culoare din docs/design/macheta/macheta.css în globals.css, apoi restul
+   paginilor moștenesc prin componente.
+
+Reguli: nimic inventat (fără rată de succes, fără „verificat", fără „testat"); radius max
+12px; cutiile de logo rămân albe; fără portocaliu; depox.ro nu apare pe homepage.
+```
