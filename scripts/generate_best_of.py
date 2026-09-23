@@ -89,7 +89,7 @@ ARTICOLE = [
     {
         "slug": f"cel-mai-bun-telefon-samsung-{AN}",
         "title": f"Cel mai bun telefon Samsung {AN} — Top 5 modele recomandate",
-        "excerpt": f"Cauti cel mai bun telefon Samsung in {AN}? Iata top 5 modele testate, de la flagship Galaxy S la seria A accesibila. Gasesti si coduri reducere.",
+        "excerpt": f"Cauti cel mai bun telefon Samsung in {AN}? Iata top 5 modele comparate, de la flagship Galaxy S la seria A accesibila. Gasesti si coduri reducere.",
         "category": "Electronice",
         "cover": cover_url("samsung-phone"),
         "content": f"""## Cel mai bun telefon Samsung în {AN}
@@ -138,7 +138,7 @@ Pentru utilizatorul obișnuit, **Galaxy A55** oferă cel mai bun raport calitate
     {
         "slug": f"cel-mai-bun-laptop-gaming-{AN}",
         "title": f"Cel mai bun laptop gaming {AN} — Top recomandări pentru fiecare buget",
-        "excerpt": f"Top laptopuri gaming {AN} testate: de la modele accesibile sub 3000 lei la flagship-uri RTX 4080. Coduri reducere la eMAG și Altex.",
+        "excerpt": f"Top laptopuri gaming {AN} comparate: de la modele accesibile sub 3000 lei la flagship-uri RTX 4080. Coduri reducere la eMAG și Altex.",
         "category": "Electronice",
         "cover": cover_url("laptop-gaming"),
         "content": f"""## Cel mai bun laptop gaming în {AN}
@@ -1653,7 +1653,7 @@ Serurile au cea mai mare concentratie de activi din rutina skincare. Alese corec
 
     {
         "slug": f"cea-mai-buna-crema-antirid-{AN}",
-        "title": f"Cea mai buna crema antirid {AN} — testata si recomandata",
+        "title": f"Cea mai buna crema antirid {AN} — cum alegi corect",
         "excerpt": f"Top creme antirid {AN}: L'Oreal, Vichy, Nivea, Neutrogena. Ingrediente active dovedite stiintific. Coduri reducere Notino, Douglas.",
         "category": "Beauty",
         "cover": cover_url("crema-antirid"),
@@ -3187,7 +3187,7 @@ Spuma Octaspring cu canale de ventilatie, se simte ca memory foam dar nu retine 
 Spuma TEMPUR originala din NASA, 30 de ani pe piata, garantie 10 ani. Scumpa (5000-12000 lei) dar dureaza o generatie.
 
 ### Magniflex Magnistretch — Pentru sportivi si dureri spate
-Design special care decomprime coloana vertebrala. Italiana, testata de sportivi profesinonisti.
+Design special care decomprime coloana vertebrala. Fabricata in Italia.
 
 ### eMAG / Altex selectie proprie (Somnart, Sinnlein)
 Saltele cu arcuri de buzunar la preturi accesibile (800-1500 lei). Bune pentru camera de oaspeti sau dormitor secundar.
