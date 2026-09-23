@@ -149,7 +149,7 @@ async function sendWelcomeEmail(email: string, apiKey: string): Promise<boolean>
     <div style="padding:32px;">
       <p style="color:#374151;font-size:15px;line-height:1.6;margin:0 0 24px;">
         Salut! Îți mulțumim că te-ai abonat la <strong>AmCupon.ro</strong>.
-        De acum înainte vei fi primul care află codurile de reducere active și ofertele exclusive de la peste <strong>1000 magazine partenere</strong>.
+        De acum primești în fiecare dimineață codurile de reducere și ofertele active de la <strong>magazinele noastre partenere</strong>.
       </p>
       <!-- CTA principal -->
       <div style="text-align:center;margin:32px 0;">

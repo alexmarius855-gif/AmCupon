@@ -46,11 +46,11 @@ export default function NewsletterPage() {
               🎁
             </div>
             <h1 className="text-3xl md:text-4xl font-black text-[#ffffff] mb-3 tracking-tight">
-              Reduceri exclusive pe email
+              Codurile zilei, pe email
             </h1>
             <p className="text-[#c9ced5] text-lg">
               Peste <span className="text-[#ffffff] font-bold">{totalMagazine}+ magazine</span> monitorizate zilnic.
-              Fii primul care afla codurile noi — peste 20 pe saptamana, direct in inbox.
+              Ofertele active, pe categorii, intr-un email in fiecare dimineata.
             </p>
           </div>
 

@@ -7,9 +7,9 @@ import { useState } from "react";
 type Status = "idle" | "loading" | "success" | "error";
 
 const BENEFICII = [
-  { icon: "🎯", titlu: "Coduri exclusive", desc: "Primesti coduri de reducere inainte sa fie publice" },
-  { icon: "⚡", titlu: "Alerte instant", desc: "Notificare cand apare o oferta buna la magazinele tale favorite" },
-  { icon: "📅", titlu: "Rezumat saptamanal", desc: "Top 5 coduri active in fiecare saptamana, direct in inbox" },
+  { icon: "🎯", titlu: "Codurile zilei", desc: "Codurile si ofertele active de pe site, intr-un singur email" },
+  { icon: "☀️", titlu: "In fiecare dimineata", desc: "Dupa actualizarea de dimineata a ofertelor" },
+  { icon: "📅", titlu: "Pe categorii", desc: "IT, fashion, casa si restul, cu codul scris in email cand oferta are unul" },
   { icon: "🚫", titlu: "Zero spam", desc: "Dezabonare cu un singur click, oricand" },
 ];
 

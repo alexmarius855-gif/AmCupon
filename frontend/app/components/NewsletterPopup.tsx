@@ -130,9 +130,9 @@ export default function NewsletterPopup() {
           </button>
           <div className="relative z-10">
             <div className="text-4xl mb-2">&#127873;</div>
-            <h2 className="text-xl font-black mb-1 text-[#ffffff]">Reduceri exclusive pe email</h2>
+            <h2 className="text-xl font-black mb-1 text-[#ffffff]">Codurile zilei, pe email</h2>
             <p className="text-[#c9ced5] text-sm">
-              Fii primul care afla codurile zilei &mdash; gratuit, fara spam
+              Ofertele active de pe site, intr-un email pe zi &mdash; gratuit
             </p>
           </div>
         </div>
@@ -141,8 +141,8 @@ export default function NewsletterPopup() {
         <div className="px-6 py-4 bg-[#14181c] border-b border-[#1f2329]">
           <div className="flex flex-col gap-1.5 text-sm text-[#c9ced5]">
             {[
-              "Coduri exclusive inainte de toti",
-              "Alert instant cand apare o oferta buna",
+              "Oferte active pe categorii, cu codul scris in email",
+              "Fara cont: doar adresa de email",
               "Zero spam - dezabonare cu un click",
             ].map((b, i) => (
               <span key={i} className="font-medium flex items-center gap-1.5">
@@ -182,7 +182,7 @@ export default function NewsletterPopup() {
                 disabled={status === "loading"}
                 className="w-full bg-[#ddf93c] hover:bg-[#ddf93c] disabled:opacity-60 text-[#0c1000] font-black py-3 rounded-xl text-sm transition-colors"
               >
-                {status === "loading" ? "Se trimite..." : "Vreau reduceri exclusive →"}
+                {status === "loading" ? "Se trimite..." : "Vreau codurile pe email →"}
               </button>
 
               <p className="text-xs text-[#9399a0] text-center">
