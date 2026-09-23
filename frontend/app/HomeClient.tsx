@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useRef } from "react";
+import { useCallback, useEffect, useMemo, useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Mail } from "lucide-react";
@@ -9,6 +9,16 @@ import MagazinCard from "./components/MagazinCard";
 import { REDUCERI } from "./components/Footer";
 import FiltreRapide, { trecePrinFiltru, type CheieFiltru } from "./components/FiltreRapide";
 import { numeAfisat } from "@/lib/numeMagazin";
+import CuponCard from "./components/CuponCard";
+import RedirectModal from "./components/RedirectModal";
+import { useCopyCod } from "./hooks/useCopyCod";
+import { linkPromotie } from "@/lib/linkMagazin";
+import { PRAG_URGENT } from "@/lib/expirarePromo";
+import { MAGAZINE_POPULARE } from "@/lib/magazinePopulare";
+import {
+  oferteAcasa, numaraFiltre, filtreAfisate, alegeAfisate, oferteDePeMagazin,
+  magazinePopulareAcasa, cuNumar, type FiltruAcasa,
+} from "@/lib/oferteAcasa";
 
 interface Promotie {
   nume: string;
@@ -128,10 +138,10 @@ const FAQ_ITEMS: { q: string; a: string }[] = [
   },
 ];
 
-function extractDiscount(text: string): string | null {
-  const m = text?.match(/(\d+)\s*%/);
-  return m ? m[1] + "%" : null;
-}
+// Filtrele din „Codurile zilei". „Fără cod", nu „Oferte": pe prima pagina totul e ofertă.
+const ETICHETE_FILTRU: Record<FiltruAcasa, string> = {
+  toate: "Toate", cod: "Cu cod", oferta: "Fără cod", curand: "Expiră curând",
+};
 
 
 interface Produs {
@@ -181,8 +191,13 @@ export default function HomeClient({
   const [blogPosts]                       = useState<BlogPost[]>(initBlog);
   const [loading]                         = useState(initMag.length === 0);
   const [cautare, setCautare]             = useState("");
-  const [coduriReveal, setCoduriReveal]   = useState<Set<string>>(new Set());
-  const [copiat, setCopiat]               = useState<string | null>(null);
+  // „Codurile zilei": ce coduri s-au dezvaluit, filtrul ales, modalul de dupa copiere.
+  const [dezvaluite, setDezvaluite]       = useState<Set<string>>(new Set());
+  const [filtruCz, setFiltruCz]           = useState<FiltruAcasa>("toate");
+  // Vederea pe MAGAZINE (FiltreRapide + inimile de favorite), deschisa din „Filtre pe magazine".
+  const [peMagazine, setPeMagazine]       = useState(false);
+  const [modalOpen, setModalOpen]         = useState(false);
+  const [numeModal, setNumeModal]         = useState("");
   const [menuOpen, setMenuOpen]           = useState(false);
   // 24, nu 12: de cand magazinele fara promotie se randeaza ca placi compacte
   // (nu carduri mari), incap de doua ori mai multe in mai putin spatiu.
@@ -248,7 +263,6 @@ export default function HomeClient({
     return trecePrinFiltru(m, filtruActiv as CheieFiltru);
   });
 
-  const expiraAzi   = filtrate.filter(m => m.are_promotie && m.zile_ramase <= 1);
   const cuPromotii  = filtrate.filter(m => m.are_promotie);
   const faraPromotii= filtrate.filter(m => !m.are_promotie);
 
@@ -267,20 +281,62 @@ export default function HomeClient({
     (a, b) => (vanzariPerCateg[b.slug] || 0) - (vanzariPerCateg[a.slug] || 0)
   );
 
-  function copiazaCod(id: string, cod: string, link?: string) {
-    setCoduriReveal(prev => new Set(prev).add(id));
-    navigator.clipboard.writeText(cod).catch(() => {});
-    setCopiat(id);
-    setTimeout(() => setCopiat(null), 3000);
-    trackAfiliat("copiere_cod_homepage", id, cod);
-    // Deschide magazinul cu link-ul afiliat (sincron = nu e blocat) — prinde comisionul
-    if (link) window.open(link, "_blank", "noopener,noreferrer");
+  // Copiere + tab nou pe linkul platit + tracking: acelasi hook ca pagina de magazin, deci
+  // si detectia blocarii REALE a tab-ului (deschideTab). Varianta veche de aici facea
+  // window.open cu „noopener", fara modal si fara reincercare cand browserul bloca.
+  const trackAcasa = useCallback((tip: string, mag: string, cod?: string) => trackAfiliat(`${tip}_homepage`, mag, cod), []);
+  const { copiedKey, redirectFailed, copyAndOpen, retryRedirect } = useCopyCod(trackAcasa);
+
+  // Ofertele primei pagini — lib/oferteAcasa.ts, testat pe output.json (lib/oferteAcasa.test.mjs).
+  const pool = useMemo(() => oferteAcasa(magazine, linkPromotie), [magazine]);
+  const nrFiltre = useMemo(() => numaraFiltre(pool, PRAG_URGENT), [pool]);
+  const peMagazin = useMemo(() => oferteDePeMagazin(pool), [pool]);
+  const filtreVizibile = filtreAfisate(nrFiltre);
+  // Panoul din hero: primul cod din ordinea paginii; daca nu e niciun cod, prima oferta.
+  const codulZilei = pool.find((o) => o.cod) ?? pool[0] ?? null;
+  // Fara oferta din panou: altfel acelasi card apare de doua ori pe primul ecran.
+  const afisate = alegeAfisate(pool, filtruCz, PRAG_URGENT, { exclude: codulZilei?.cheie });
+  const populare = useMemo(
+    () => magazinePopulareAcasa(magazine, MAGAZINE_POPULARE.map((x) => x.slug), new Set(peMagazin.keys())),
+    [magazine, peMagazin]);
+  const hrefPopular = new Map(MAGAZINE_POPULARE.filter((x) => x.href).map((x) => [x.slug, x.href as string]));
+  // Numele scris de mana in lista („Dr. Max", „Sport Depot") bate numele derivat din domeniu („Drmax").
+  const numePopular = new Map(MAGAZINE_POPULARE.map((x) => [x.slug, x.label]));
+  // Cautare, filtru pe magazine sau butonul „Filtre pe magazine" = vederea pe MAGAZINE (cea
+  // veche); altfel, ofertele zilei. Fara buton, filtrele pe magazine si inimile de favorite se
+  // puteau atinge doar dupa o cautare (revizia din 24.09.2026).
+  const modMagazine = cautare !== "" || filtruActiv !== "toate" || peMagazine;
+  // Peretele de logo-uri nu repeta magazinele din „Magazine populare", aflate chiar deasupra.
+  const sluguriPopulare = new Set(populare.map((m) => m.magazin));
+  const perete = modMagazine ? faraPromotii : faraPromotii.filter((m) => !sluguriPopulare.has(m.magazin));
+
+  function dezvaluie(o: (typeof pool)[number]) {
+    setDezvaluite((prev) => new Set(prev).add(o.cheie));
+    setNumeModal(numeAfisat(o.m.magazin));
+    copyAndOpen(o.cheie, o.cod, o.link, o.m.magazin);
+    setModalOpen(true);
+  }
+
+  function cardOferta(o: (typeof pool)[number], iesire: string) {
+    return (
+      <CuponCard
+        key={o.cheie}
+        promo={o.promo}
+        numeMagazin={numeAfisat(o.m.magazin)}
+        logoSrc={o.m.logo_url}
+        link={o.link}
+        dezvaluit={dezvaluite.has(o.cheie)}
+        copiat={copiedKey === o.cheie}
+        onDezvaluie={() => dezvaluie(o)}
+        onIesire={() => trackAfiliat(iesire, o.m.magazin, o.cod)}
+      />
+    );
   }
 
   return (
     <div className="gold-home min-h-screen bg-[#06080b]">
       <style>{`
-        .gold-home h1, .gold-home h2 { font-family: var(--font-display), Georgia, "Times New Roman", serif; letter-spacing: -0.015em; }
+        .gold-home h1, .gold-home h2:not(.hl-t) { font-family: var(--font-display), Georgia, "Times New Roman", serif; letter-spacing: -0.015em; }
         @media (prefers-reduced-motion: no-preference) {
           .gold-home .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
           .gold-home .reveal.is-visible { opacity: 1; transform: none; }
@@ -453,14 +509,16 @@ export default function HomeClient({
           @media (prefers-reduced-motion: reduce){ .hero-blob{ animation:none; } }
         `}</style>
 
-        <div className="relative max-w-3xl mx-auto px-4 pt-12 pb-10 md:pt-16 md:pb-12 text-center">
+        <div className={`relative max-w-7xl mx-auto px-4 pt-10 pb-10 md:pt-14 md:pb-12 grid gap-8 lg:gap-12 items-center ${codulZilei ? "lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]" : ""}`}>
+          <div className={codulZilei ? "text-center lg:text-left" : "text-center max-w-3xl mx-auto"}>
           {/* Live pill */}
           <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-1.5 text-xs font-semibold text-[#c9ced5] mb-5">
             <span className="relative flex w-2 h-2">
               <span className="absolute inline-flex w-full h-full rounded-full bg-[#ecff7a] opacity-60 animate-ping"/>
               <span className="relative inline-flex w-2 h-2 rounded-full bg-[#ddf93c]"/>
             </span>
-            {cuPromotii.length > 0 ? `${cuPromotii.length} de oferte active acum` : "Oferte actualizate zilnic"}
+            {/* Numara OFERTELE. Inainte numara magazinele (cuPromotii) si le spunea „oferte". */}
+            {pool.length > 0 ? `${cuNumar(pool.length, "ofertă activă", "oferte active")} acum` : "Oferte actualizate zilnic"}
           </div>
 
           {/* H1 */}
@@ -474,7 +532,7 @@ export default function HomeClient({
             </span>
           </h1>
 
-          <p className="text-[#c9ced5] text-lg mb-6 max-w-lg mx-auto leading-relaxed">
+          <p className={`text-[#c9ced5] text-lg mb-6 max-w-lg mx-auto leading-relaxed ${codulZilei ? "lg:mx-0" : ""}`}>
             Le strangem automat din retelele de afiliere si le aratam pe toate, gratuit.
           </p>
 
@@ -484,7 +542,7 @@ export default function HomeClient({
               legate de aceeasi stare `cautare`, fara acest defect. */}
 
           {/* Quick chips — magazine populare, un click distanta */}
-          <div className="flex flex-wrap items-center justify-center gap-2 mb-7">
+          <div className={`flex flex-wrap items-center justify-center gap-2 mb-7 ${codulZilei ? "lg:justify-start" : ""}`}>
             <span className="text-xs text-[#9399a0] font-medium mr-1">Populare:</span>
             {[
               { nume: "Notino",      slug: "notino.ro" },
@@ -499,7 +557,7 @@ export default function HomeClient({
           </div>
 
           {/* CTA row */}
-          <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
+          <div className={`flex flex-wrap items-center justify-center gap-3 mb-8 ${codulZilei ? "lg:justify-start" : ""}`}>
             <a href="#promotii"
               className="bg-gradient-to-r from-[#ddf93c] to-[#ddf93c] hover:from-[#ecff7a] hover:to-[#ddf93c] text-[#0c1000] hover:text-[#0c1000] font-black px-7 py-3.5 rounded-xl text-sm transition-all shadow-lg shadow-[#ddf93c]/25 hover:shadow-[#ddf93c]/45 hover:-translate-y-0.5 duration-200">
               Coduri active acum →
@@ -511,12 +569,29 @@ export default function HomeClient({
           </div>
 
           {/* Trust row */}
-          <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-xs text-[#9399a0] font-medium">
+          <div className={`flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs text-[#9399a0] font-medium ${codulZilei ? "lg:justify-start" : ""}`}>
             <span className="flex items-center gap-1.5"><span className="text-[#ddf93c]">✓</span> Gratuit, fara cont</span>
             <span className="flex items-center gap-1.5"><span className="text-[#ddf93c]">✓</span> {magazine.length > 0 ? `${magazine.length}+` : "380+"} magazine</span>
             <span className="flex items-center gap-1.5"><span className="text-[#ddf93c]">✓</span> Actualizat de 3 ori pe zi</span>
             <span className="flex items-center gap-1.5"><span className="text-[#ddf93c]">✓</span> 0 reclame invazive</span>
           </div>
+          </div>
+
+          {/* Panoul „Acum, pe AmCupon" (macheta, 24.09.2026). Cifrele se numara din
+              aceleasi oferte pe care le arata pagina, iar cardul e oferta reala din capul
+              listei. Inlocuieste spotlight-ul „Oferta zilei" de sub hero. Fara oferte, lipseste. */}
+          {codulZilei && (
+            <aside className="hl" aria-labelledby="hl-t">
+              <h2 id="hl-t" className="hl-t">Acum, pe AmCupon</h2>
+              <div className="hl-stats">
+                <div className="hl-stat"><b>{nrFiltre.cod}</b><span>{nrFiltre.cod === 1 ? "cod" : "coduri"}</span></div>
+                <div className="hl-stat"><b>{nrFiltre.oferta}</b><span>{nrFiltre.oferta === 1 ? "ofertă fără cod" : "oferte fără cod"}</span></div>
+                <div className="hl-stat"><b>{peMagazin.size}</b><span>{peMagazin.size === 1 ? "magazin" : "magazine"}</span></div>
+              </div>
+              <p className="hl-l">{codulZilei.cod ? "Codul zilei" : "Oferta zilei"}</p>
+              {cardOferta(codulZilei, "codul_zilei_homepage")}
+            </aside>
+          )}
         </div>
       </section>
 
@@ -534,79 +609,6 @@ export default function HomeClient({
           </div>
         </div>
       </section>
-
-      {/* Mutata aici pe 22.09.2026. Era a SASEA sectiune, dupa grila de categorii,
-          marquee-ul de branduri si bara de statistici — iar butonul „Coduri active
-          acum" din hero sare la #promotii, care e si mai jos. Cine intra dupa un cod
-          trebuia sa treaca prin tot. Oferta reala e acum prima dovada de pe pagina. */}
-      {/* ─── OFERTA ZILEI — spotlight cu cea mai buna reducere activa ────────── */}
-      {!loading && (() => {
-        // Prefera oferte cu link de afiliat REAL (castiga comision), nu url brut (ex: temu.com)
-        const cuAfiliat = [...cuPromotii].filter(m => m.promotii?.[0] && m.url_afiliat && m.url_afiliat !== m.url);
-        const pool = cuAfiliat.length ? cuAfiliat : [...cuPromotii].filter(m => m.promotii?.[0]);
-        const best = pool.sort((a, b) => (b.scor_final || 0) - (a.scor_final || 0))[0];
-        if (!best) return null;
-        const promo = best.promotii[0];
-        const disc = extractDiscount(promo.nume) || extractDiscount(promo.descriere || "");
-        const cod = promo.cod_cupon;
-        const link = promo.landing_page || best.url_afiliat || best.url;
-        const revealed = coduriReveal.has(best.magazin);
-        const nume = numeAfisat(best.magazin);
-        return (
-          <section className="reveal bg-[#06080b] border-b border-[#1f2329] py-12 px-4">
-            <div className="max-w-5xl mx-auto">
-              {/* Un SINGUR spotlight de "oferta zilei". Pana pe 08.08.2026 existau doua
-                  sectiuni separate — "Oferta zilei" (aici) si "Deal zilei" (~200 linii mai
-                  jos) — care alegeau magazine DIFERITE si pretindeau amandoua ca sunt
-                  oferta zilei. Mesaj incoerent pentru vizitator. Pastrata aceasta (selectia
-                  ei prefera ofertele cu link de afiliat real, deci si monetizarea e mai
-                  buna), absorbit de la cealalta doar semnalul de urgenta REALA. */}
-              <div className="flex items-center gap-3 mb-4 flex-wrap">
-                <p className="text-xs font-black text-[#ddf93c] uppercase tracking-widest">⭐ Oferta zilei</p>
-                {expiraAzi.length > 0 && (
-                  <Link href="/oferte-azi" className="text-xs font-bold text-red-400 hover:text-red-300 transition-colors">
-                    {expiraAzi.length === 1 ? "1 ofertă expiră azi" : `${expiraAzi.length} oferte expiră azi`} →
-                  </Link>
-                )}
-              </div>
-              <div className="relative overflow-hidden rounded-xl border border-[#ddf93c]/30 bg-gradient-to-br from-[#14181c]/60 via-[#14181c] to-[#14181c] p-6 sm:p-8">
-                <div className="absolute -top-24 -right-16 w-72 h-72 rounded-full pointer-events-none" style={{background:"radial-gradient(circle, rgba(20,184,166,0.14), transparent 70%)"}} />
-                <div className="relative flex flex-col sm:flex-row items-center gap-6">
-                  <div className="w-28 h-28 rounded-xl bg-[#ffffff] flex items-center justify-center p-3 shrink-0 shadow-xl">
-                    {best.logo_url
-                      // eslint-disable-next-line @next/next/no-img-element -- domenii logo externe variate, nu merita config remotePatterns doar pt acest card
-                      ? <img src={best.logo_url} alt={nume} className="max-w-full max-h-full object-contain" />
-                      : <span className="text-4xl font-black text-[#ddf93c]">{nume.charAt(0)}</span>}
-                  </div>
-                  <div className="flex-1 text-center sm:text-left w-full">
-                    <div className="flex items-center justify-center sm:justify-start gap-2.5 mb-2 flex-wrap">
-                      <span className="font-black text-[#ffffff] text-2xl">{nume}</span>
-                      {disc && <span className="text-xs font-black text-[#0c1000] bg-[#ddf93c] px-2.5 py-1 rounded-full">-{disc}</span>}
-                      {(best.zile_ramase ?? 9) <= 2 && <span className="text-[10px] font-bold text-red-400 bg-red-500/10 border border-red-500/25 px-2 py-0.5 rounded-full">expira curand</span>}
-                    </div>
-                    <p className="text-[#c9ced5] text-sm mb-5 max-w-md mx-auto sm:mx-0 line-clamp-2">{promo.nume}</p>
-                    <div className="flex flex-col sm:flex-row items-center gap-3">
-                      {cod && (
-                        <button onClick={() => copiazaCod(best.magazin, cod, link)}
-                          className="group flex items-center gap-2 bg-[#1f2329] border-2 border-dashed border-[#ddf93c]/50 hover:border-[#ddf93c] rounded-xl px-4 py-2.5 transition-colors">
-                          <span className="font-mono font-black text-[#ddf93c] tracking-widest text-sm">{revealed ? cod : cod.slice(0, 3) + "•••"}</span>
-                          <span className="text-[10px] text-[#9399a0] group-hover:text-[#ddf93c]">{copiat === best.magazin ? "✓ copiat" : "copiaza"}</span>
-                        </button>
-                      )}
-                      <a href={link} target="_blank" rel="sponsored noopener noreferrer"
-                        onClick={() => trackAfiliat("spotlight_cta", best.magazin, cod)}
-                        className="bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] font-black px-6 py-3 rounded-xl text-sm transition-all shadow-lg shadow-[#ddf93c]/25 hover:-translate-y-0.5 duration-200">
-                        {cod ? "Copiaza si mergi la magazin →" : "Vezi oferta →"}
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        );
-      })()}
-
 
       {/* Mutat aici pe 22.09.2026. Erau ULTIMELE sectiuni inainte de blog, desi sunt
           singurul motiv pentru care intra cineva pe site: cupoanele. Butonul din hero
@@ -631,9 +633,15 @@ export default function HomeClient({
           </div>
         )}
 
-        {/* FILTRE RAPIDE */}
-        {!loading && (
+        {/* FILTRE RAPIDE — pe magazine; apar doar in vederea pe magazine (cautare/filtru) */}
+        {!loading && modMagazine && (
           <div className="flex flex-wrap gap-2 mb-8 items-center">
+            {!cautare && (
+              <button type="button" onClick={() => { setPeMagazine(false); setFiltruActiv("toate"); }}
+                className="inline-flex items-center gap-1.5 text-sm font-bold px-3.5 py-2 rounded-xl border bg-[#14181c] text-[#ddf93c] border-[#1f2329] hover:border-[#ddf93c] transition-colors">
+                <span aria-hidden="true">←</span> Codurile zilei
+              </button>
+            )}
             {/* Filtrele se calculeaza pe magazinele cu promotie si SE ASCUND cand
                 n-au niciun rezultat — vezi FiltreRapide. „Exclusive" din brief a
                 fost scos: 0 magazine au campul, ar fi fost buton mort. */}
@@ -671,9 +679,89 @@ export default function HomeClient({
             Urgenta se vede acum in CONTEXT (badge pe card + linkul "N oferte expiră azi"
             din headerul Ofertei zilei), nu ca sectiune subtire separata. */}
 
-        {/* PROMOTII ACTIVE */}
-        {!loading && cuPromotii.length > 0 && (
-          <section id="promotii" className="mb-12">
+        {/* CODURILE ZILEI (24.09.2026) — pe OFERTE, cu cardul din macheta (CuponCard). Inainte
+            aici erau 12 carduri de MAGAZIN, fiecare cu prima lui promotie: un magazin cu trei
+            coduri arata unul. Vederea pe magazine (FiltreRapide, favorite) ramane: se deschide din
+            cautare sau din butonul „Filtre pe magazine", si are buton de intoarcere. */}
+        {!loading && !modMagazine && pool.length > 0 && (
+          <section id="promotii" className="mb-12 scroll-mt-20" aria-labelledby="cz-h">
+            <div className="flex items-end justify-between gap-4 mb-5">
+              <div>
+                <p className="text-xs font-bold text-[#ddf93c] uppercase tracking-widest mb-1.5">Actualizate de trei ori pe zi</p>
+                <h2 id="cz-h" className="text-[1.75rem] md:text-[2.25rem] leading-[1.1] font-black text-[#ffffff] tracking-tight">Codurile zilei</h2>
+                <p className="text-[#c9ced5] text-sm mt-1">Apeși pe cod: se copiază și se deschide magazinul, iar codul rămâne aici.</p>
+              </div>
+              <Link href="/oferte-azi" className="hidden sm:block shrink-0 text-sm font-bold text-[#ddf93c] hover:text-[#c3dd2c] transition-colors">
+                Toate ofertele →
+              </Link>
+            </div>
+            {/* Un filtru fara rezultate nu apare, nici unul care da acelasi lucru ca „Toate". */}
+            <div className="cz-filtre" role="group" aria-label="Filtrează ofertele">
+              {filtreVizibile.map((f) => (
+                <button key={f} type="button" className="cz-f" aria-pressed={filtruCz === f} onClick={() => setFiltruCz(f)}>
+                  {ETICHETE_FILTRU[f]} <i>{nrFiltre[f]}</i>
+                </button>
+              ))}
+              {favorite.size > 0 && (
+                <button type="button" className="cz-f" onClick={() => { setFiltruActiv("favorite"); setStoreLimit(12); }}>
+                  Magazinele mele <i>{favorite.size}</i>
+                </button>
+              )}
+              <button type="button" className="cz-f" onClick={() => setPeMagazine(true)}>
+                Filtre pe magazine <span aria-hidden="true">→</span>
+              </button>
+            </div>
+            <div className="cz-grid">
+              {afisate.map((o) => cardOferta(o, "codurile_zilei_homepage"))}
+            </div>
+            <div className="mt-5 text-center sm:hidden">
+              <Link href="/oferte-azi" className="text-sm font-bold text-[#ddf93c]">Toate ofertele →</Link>
+            </div>
+          </section>
+        )}
+
+        {/* MAGAZINE POPULARE — lib/magazinePopulare.ts intai, apoi magazinele .ro cu oferta
+            azi. Placa e doar logo (cutie ALBA, regula de brand); insigna arata ce e activ. */}
+        {!loading && !modMagazine && populare.length > 0 && (
+          <section className="mb-12" aria-labelledby="pop-h">
+            <div className="flex items-end justify-between gap-4 mb-5">
+              <div>
+                <h2 id="pop-h" className="text-[1.75rem] md:text-[2.25rem] leading-[1.1] font-black text-[#ffffff] tracking-tight">Magazine populare</h2>
+                <p className="text-[#c9ced5] text-sm mt-1">Branduri cunoscute și magazinele .ro cu oferte azi.</p>
+              </div>
+              <Link href="/toate-magazinele" className="hidden sm:block shrink-0 text-sm font-bold text-[#ddf93c] hover:text-[#c3dd2c] transition-colors">
+                Toate cele {cuNumar(magazine.length, "magazin", "magazine")} →
+              </Link>
+            </div>
+            <div className="pop-grid">
+              {populare.map((m) => {
+                const nume = numePopular.get(m.magazin) || numeAfisat(m.magazin);
+                const x = peMagazin.get(m.magazin);
+                const insigna = x?.cod ? cuNumar(x.cod, "cod", "coduri") : x?.oferta ? cuNumar(x.oferta, "ofertă", "oferte") : "";
+                return (
+                  <Link key={m.magazin} href={hrefPopular.get(m.magazin) || `/cod-reducere/${m.magazin}`}
+                    className="pop" title={nume} aria-label={insigna ? `${nume}: ${insigna}` : nume}>
+                    {insigna && <span className={x?.cod ? "pop-b" : "pop-b pop-b-soft"} aria-hidden="true">{insigna}</span>}
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={m.logo_url} alt="" loading="lazy" decoding="async"
+                      onError={(e) => {
+                        // Logo mort: ramane numele, nu iconita de imagine rupta.
+                        const img = e.currentTarget;
+                        img.style.display = "none";
+                        const n = img.nextElementSibling as HTMLElement | null;
+                        if (n) n.hidden = false;
+                      }} />
+                    <span className="pop-n" hidden>{nume}</span>
+                  </Link>
+                );
+              })}
+            </div>
+          </section>
+        )}
+
+        {/* PROMOTII ACTIVE — vederea pe magazine: rezultatele cautarii si filtrele pe magazine */}
+        {!loading && modMagazine && cuPromotii.length > 0 && (
+          <section id="promotii" className="mb-12 scroll-mt-20">
             <div className="flex items-end justify-between mb-6">
               <div>
                 <p className="text-xs font-bold text-[#ddf93c] uppercase tracking-widest mb-1.5 flex items-center gap-2">
@@ -683,7 +771,7 @@ export default function HomeClient({
                 <h2 className="text-[1.75rem] md:text-[2.25rem] leading-[1.1] font-black text-[#ffffff] tracking-tight">
                   {cautare ? `Rezultate pentru "${cautare}"` : "Promotii active"}
                 </h2>
-                <p className="text-[#c9ced5] text-sm mt-0.5">{cuPromotii.length} de oferte active acum</p>
+                <p className="text-[#c9ced5] text-sm mt-0.5">{cuNumar(cuPromotii.length, "magazin cu ofertă", "magazine cu oferte")}</p>
               </div>
               {!cautare && filtruActiv === "toate" && (
                 <Link href="/toate-magazinele" className="hidden sm:block text-sm font-bold text-[#ddf93c] hover:text-[#c3dd2c] transition-colors">
@@ -726,7 +814,7 @@ export default function HomeClient({
                 regula "promoveaza tot". Doar le prezentam ca perete de logo-uri:
                 aceleasi linkuri, aceeasi monetizare, o fractiune din spatiu. */}
             <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-2.5">
-              {faraPromotii.slice(0, storeLimit).map(m => {
+              {perete.slice(0, storeLimit).map(m => {
                 const nume = numeAfisat(m.magazin);
                 return (
                   <Link key={m.magazin} href={`/cod-reducere/${m.magazin}`}
@@ -746,11 +834,11 @@ export default function HomeClient({
                 );
               })}
             </div>
-            {faraPromotii.length > storeLimit && (
+            {perete.length > storeLimit && (
               <div className="text-center mt-6">
                 <button onClick={() => setStoreLimit(l => l + 36)}
                   className="glass hover:border-[#ddf93c]/50 text-[#c9ced5] hover:text-[#ecff7a] font-bold px-7 py-2.5 rounded-xl text-sm transition-all">
-                  Incarca mai multe ({faraPromotii.length - storeLimit} magazine ramase)
+                  Incarca mai multe ({perete.length - storeLimit} magazine ramase)
                 </button>
               </div>
             )}
@@ -886,78 +974,10 @@ export default function HomeClient({
         </div>
       </section>
 
-      {/* ─── MAGAZINE POPULARE — grila de logo-uri ─────────────────────────────
-          22.09.2026: era un marquee care defila continuu. Schimbat in grila statica
-          dupa referinta ceruta de Alex (cuponescu.ro): un element care se misca e greu
-          de clicat — tinta fuge de sub cursor — si trage ochiul de pe cupoane. O grila
-          se scaneaza dintr-o privire si fiecare logo e o tinta stabila. */}
-      {!loading && (() => {
-        const logos = magazine
-          .filter(m => m.logo_url && !/\s/.test(m.magazin))
-          .sort((a, b) => (b.sales_number || 0) - (a.sales_number || 0))
-          .slice(0, 18);
-        if (logos.length < 8) return null;
-        return (
-          <section className="reveal bg-[#06080b] border-b border-[#1f2329] py-12 px-4">
-            <div className="max-w-7xl mx-auto">
-              <div className="flex items-end justify-between mb-6">
-                <div>
-                  <h2 className="text-[1.75rem] md:text-[2.25rem] leading-[1.1] font-black text-[#ffffff] tracking-tight">
-                    Magazine populare
-                  </h2>
-                  <p className="text-[#c9ced5] text-sm mt-1.5">Coduri si oferte de la brandurile pe care le stii</p>
-                </div>
-                <Link href="/toate-magazinele"
-                  className="hidden sm:block text-sm font-bold text-[#ddf93c] hover:text-[#c3dd2c] transition-colors">
-                  Toate magazinele →
-                </Link>
-              </div>
-              <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-3">
-                {logos.map(m => (
-                  <a key={m.magazin} href={`/cod-reducere/${m.magazin}`}
-                    title={numeAfisat(m.magazin)}
-                    className="group h-20 rounded-xl bg-[#ffffff] border border-[#1f2329] hover:border-[#ddf93c] flex items-center justify-center p-4 transition-all hover:-translate-y-0.5">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={m.logo_url} alt={numeAfisat(m.magazin)}
-                      className="max-w-full max-h-full object-contain" loading="lazy" />
-                  </a>
-                ))}
-              </div>
-            </div>
-          </section>
-        );
-      })()}
-
-      {/* ─── STATS BAR ────────────────────────────────────────────────────── */}
-      {!loading && magazine.length > 0 && (() => {
-        const nrOferte    = magazine.filter(m => m.are_promotie).length;
-        const nrCoduri    = magazine.filter(m => m.cod_cupon).length;
-        const nrMagazine  = magazine.length;
-        const nrExpiraAzi = magazine.filter(m => m.are_promotie && m.zile_ramase <= 1).length;
-        return (
-          <div className="bg-[#14181c]/80 border-b border-[#1f2329] py-4 px-4">
-            <div className="max-w-4xl mx-auto flex flex-wrap justify-center gap-6 sm:gap-10">
-              {[
-                { val: nrMagazine,  label: "magazine partenere", icon: "🏪" },
-                { val: nrOferte,    label: "oferte active azi",   icon: "🔥" },
-                { val: nrCoduri,    label: "coduri de reducere",  icon: "🎟️" },
-                { val: nrExpiraAzi, label: "expira astazi",        icon: "⏰" },
-              ].map((s, i) => (
-                <div key={i} className="flex items-center gap-2.5 text-sm">
-                  <span className="text-xl">{s.icon}</span>
-                  <div>
-                    <span className="font-black text-[#ffffff] text-base">{s.val}</span>
-                    <span className="text-[#9399a0] ml-1.5 text-xs">{s.label}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        );
-      })()}
-
-      {/* placeholder pentru a inchide sectiunea corecta daca loading */}
-      {loading && <div className="h-[53px] bg-[#14181c]/80 border-b border-[#1f2329]" />}
+      {/* 24.09.2026: aici erau o a doua „Magazine populare" (18 logo-uri dupa vanzari, cu depox.ro
+          pe locul 2, desi e exclus de pe prima pagina) si o bara de statistici care numara
+          MAGAZINE sub eticheta „oferte active" / „coduri" (90 si 30, langa 188 si 49 din hero).
+          Le inlocuiesc „Magazine populare" si panoul „Acum, pe AmCupon", ca in macheta. */}
 
       {/* ─── PRODUSE PE CATEGORII (mutat sus — prima dovada vizuala de reduceri reale) ── */}
       {produseCategorii.length > 0 && (
@@ -1518,6 +1538,14 @@ export default function HomeClient({
           </div>
         </div>
       </footer>
+
+      <RedirectModal
+        open={modalOpen}
+        onClose={() => setModalOpen(false)}
+        storeName={numeModal}
+        redirectFailed={redirectFailed}
+        onRetry={retryRedirect}
+      />
     </div>
   );
 }
