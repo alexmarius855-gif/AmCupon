@@ -39,9 +39,24 @@ from pathlib import Path
 RADACINA = Path(__file__).parent.parent
 INTRARE = RADACINA / "frontend" / "public" / "output.json"
 IESIRE = RADACINA / "frontend" / "public" / "studiu-cupoane.json"
+ISTORIC = RADACINA / "frontend" / "public" / "istoric-promotii.json"
 
 # Sub atatea magazine intr-o categorie nu publicam mediana — ar fi zgomot.
 PRAG_ESANTION = 3
+
+# ── Seria lunara (24.09.2026) ──────────────────────────────────────────────────
+# Prima zi in care datele descriu PIATA, nu schimbarile din pipeline-ul nostru. Masurat pe
+# istoricul git al lui output.json, inainte de ea seria are trepte facute de noi:
+#   · 29.06: au intrat promotiile 2Performant (de la 8 la 103 intr-o zi);
+#   · 08.09: au intrat ofertele Impact (de la 78 la 308);
+#   · 19.09: au iesit 108 magazine care nu livreaza in Romania;
+#   · pana pe 24.09, fetch_2p_api.py aducea doar primele 20 de promotii 2Performant (bug de
+#     paginare), restul intrau in valuri, la importul manual de CSV.
+# Ziua de dupa reparatie prinde restanta, deci seria incepe pe 26.09. Prima luna completa e
+# octombrie: raportul ei apare singur pe 1 noiembrie. O luna se publica doar cu acoperire.
+SERIE_CURATA_DE_LA = "2026-09-26"
+ACOPERIRE_MINIMA = 0.9   # sub 90% din zilele lunii cu date bune, luna nu se publica
+ZI_ANORMALA = 0.5        # o zi cu sub jumatate din mediana lunii = o sursa n-a raspuns (ex. 06.08)
 
 NUME_CATEGORIE = {
     "fashion": "Fashion", "beauty": "Beauty & îngrijire", "bijuterii": "Bijuterii & ceasuri",
@@ -79,6 +94,70 @@ def procent_din_promotii(magazin) -> int | None:
             if 3 <= n <= 95:            # sub 3% si peste 95% sunt aproape sigur alte cifre
                 gasite.append(n)
     return max(gasite) if gasite else None
+
+
+def serie_lunara(istoric: dict, magazine: list, azi: str) -> list:
+    """Cate promotii NOI au aparut in fiecare luna completa a seriei curate.
+
+    „Noua" = vazuta prima data in luna respectiva (`prima` din istoric-promotii.json). Nu
+    deducem cat a tinut o promotie: o vedem doar cand reteaua raspunde. O luna fara destule
+    zile bune se intoarce marcata `incomplet`, fara cifre — pagina spune asta, nu ghiceste.
+    """
+    from datetime import date, timedelta
+    from promotii import nume_afisabil
+
+    zile = istoric.get("zile") or {}
+    dupa_slug = {(m.get("magazin") or "").lower(): m for m in magazine}
+    intrari = [(slug, e) for slug, lista in (istoric.get("magazine") or {}).items() for e in lista]
+
+    luni, z = [], date.fromisoformat(SERIE_CURATA_DE_LA)
+    z = z.replace(day=1) if z.day == 1 else (z.replace(day=28) + timedelta(days=4)).replace(day=1)
+    while True:
+        urm = (z.replace(day=28) + timedelta(days=4)).replace(day=1)
+        if urm.isoformat() > azi:          # luna curenta nu e completa
+            break
+        luni.append((z, urm))
+        z = urm
+
+    rezultat = []
+    for inceput, sfarsit in luni:
+        eticheta = inceput.strftime("%Y-%m")
+        toate = [(inceput + timedelta(days=i)).isoformat() for i in range((sfarsit - inceput).days)]
+        cu_date = [d for d in toate if (zile.get(d) or {}).get("promotii", 0) > 0]
+        mediana = statistics.median(zile[d]["promotii"] for d in cu_date) if cu_date else 0
+        bune = [d for d in cu_date if zile[d]["promotii"] >= ZI_ANORMALA * mediana]
+        acoperire = round(len(bune) / len(toate), 3)
+        if acoperire < ACOPERIRE_MINIMA:
+            rezultat.append({"luna": eticheta, "incomplet": True, "zile": len(toate), "zile_bune": len(bune)})
+            continue
+
+        noi = [(s, e) for s, e in intrari if e.get("prima", "")[:7] == eticheta]
+        pe_magazin = defaultdict(lambda: {"promotii": 0, "cu_cod": 0})
+        pe_categorie = defaultdict(int)
+        for s, e in noi:
+            pe_magazin[s]["promotii"] += 1
+            pe_magazin[s]["cu_cod"] += int(bool(e.get("cod")))
+            cat = (dupa_slug.get(s) or {}).get("categorie_slug")
+            if cat:
+                pe_categorie[cat] += 1
+        ro = sorted(((s, v) for s, v in pe_magazin.items() if s.endswith(".ro")),
+                    key=lambda sv: (-sv[1]["promotii"], sv[0]))[:5]
+        rezultat.append({
+            "luna": eticheta,
+            "incomplet": False,
+            "zile": len(toate),
+            "zile_bune": len(bune),
+            "promotii_noi": len(noi),
+            "cu_cod": sum(1 for _, e in noi if e.get("cod")),
+            "magazine": len(pe_magazin),
+            "din_magazine_ro": sum(v["promotii"] for s, v in pe_magazin.items() if s.endswith(".ro")),
+            "active_pe_zi": round(statistics.mean(zile[d]["promotii"] for d in bune)),
+            "top_ro": [{"slug": s, "nume": nume_afisabil(dupa_slug.get(s) or {"magazin": s}),
+                        "promotii": v["promotii"], "cu_cod": v["cu_cod"]} for s, v in ro],
+            "categorii": [{"slug": c, "nume": NUME_CATEGORIE.get(c, c), "promotii": n}
+                          for c, n in sorted(pe_categorie.items(), key=lambda cn: (-cn[1], cn[0]))[:8]],
+        })
+    return rezultat
 
 
 def main():
@@ -141,6 +220,9 @@ def main():
             if p and p != "direct"
         }),
         "prag_esantion": PRAG_ESANTION,
+        "serie_de_la": SERIE_CURATA_DE_LA,
+        "lunar": serie_lunara(json.loads(ISTORIC.read_text(encoding="utf-8")) if ISTORIC.exists() else {},
+                              magazine, datetime.now(timezone.utc).strftime("%Y-%m-%d")),
     }
 
     IESIRE.write_text(json.dumps(studiu, ensure_ascii=False, indent=2), encoding="utf-8")

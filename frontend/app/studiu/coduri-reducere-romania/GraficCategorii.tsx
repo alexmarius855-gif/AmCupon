@@ -72,10 +72,10 @@ export default function GraficCategorii({ categorii }: { categorii: CategorieGra
       <svg
         viewBox={`0 0 ${LATIME} ${inaltime}`}
         width="100%"
-        height="auto"
         role="img"
         aria-label={`Reducerea mediana pe categorie: ${rezumat}.`}
-        style={{ display: "block" }}
+        // Inaltimea vine din viewBox. `height="auto"` ca atribut SVG e invalid (eroare in consola).
+        style={{ display: "block", height: "auto" }}
       >
         {date.map((c, i) => {
           const y = i * PAS + 8;

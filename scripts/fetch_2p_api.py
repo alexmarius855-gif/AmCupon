@@ -202,18 +202,41 @@ def api_get(endpoint: str, params: dict = None) -> dict | list | None:
         return None
 
 
+MAX_PAGINI = 200  # plasa de siguranta: 200 x 20 = 4.000 de elemente, de 6 ori cat avem
+
+
+def _pagini_totale(data: dict):
+    """Numarul de pagini, oriunde l-ar pune API-ul.
+
+    24.09.2026: la programe si feed-uri e in `metadata.pagination.pages`, dar la promotii
+    (`advertiser_promotions`) raspunsul are cheile ['facets', 'pagination',
+    'advertiser_promotions', 'shopping_events'] — paginarea e DIRECT in `pagination`.
+    Cautata doar sub `metadata`, nu se gasea, iar bucla cadea pe fallback si se oprea
+    dupa pagina 1: pipeline-ul aducea zilnic 20 de promotii 2Performant, iar restul
+    intrau doar la importul manual de CSV (29.06, 16.07, 20.08 — de-aia veneau in valuri).
+    """
+    for pag in ((data.get("metadata") or {}).get("pagination"), data.get("pagination")):
+        if isinstance(pag, dict):
+            for k in ("pages", "total_pages", "last_page"):
+                if isinstance(pag.get(k), int) and pag[k] > 0:
+                    return pag[k]
+    return None
+
+
 def fetch_all_pages(endpoint: str, per_page: int = 100, extra_params: dict = None) -> list:
     """Descarca toate paginile pentru un endpoint paginat.
 
     CRITIC: API-ul 2Performant CAPEAZA la 20 elemente/pagina (ignora per_page>20)!
     De-aia NU ne putem opri la `len(items) < per_page` (20 < 100 → s-ar opri dupa
-    pagina 1, aducand doar 20 din 600 programe — bug-ul vechi). Folosim in schimb
-    `metadata.pagination.pages` ca sa stim cate pagini exista si parcurgem tot.
-    Fallback pe len<per_page doar daca raspunsul nu are metadata de paginare.
+    pagina 1, aducand doar 20 din 600 programe — bug-ul vechi, reaparut pe 24.09.2026
+    la promotii, vezi `_pagini_totale`). Numarul de pagini vine din raspuns; fara el,
+    reperul e marimea PRIMEI pagini, nu `per_page` cerut: continuam cat timp paginile
+    vin pline si ne oprim la prima pagina incompleta sau goala.
     """
     results = []
     page = 1
     total_pages = None
+    marime_pagina = None
     while True:
         params = {"page": page, "per_page": per_page}
         if extra_params:
@@ -222,19 +245,18 @@ def fetch_all_pages(endpoint: str, per_page: int = 100, extra_params: dict = Non
         if data is None:
             break
 
-        # Suport pentru { "programs": [...] } sau liste directe sau { "results": [...] }
+        # Suport pentru { "programs": [...] } sau liste directe sau { "results": [...] }.
+        # Cheia cu numele endpoint-ului are prioritate: la promotii mai vine o lista,
+        # `shopping_events`, si „prima lista din dict" depindea de ordinea cheilor.
         meta_pages = None
         if isinstance(data, list):
             items = data
         elif isinstance(data, dict):
-            items = None
-            for v in data.values():
-                if isinstance(v, list):
-                    items = v
-                    break
+            cheie = endpoint.rsplit("/", 1)[-1]
+            items = data.get(cheie) if isinstance(data.get(cheie), list) else None
             if items is None:
-                items = []
-            meta_pages = (data.get("metadata") or {}).get("pagination", {}).get("pages")
+                items = next((v for v in data.values() if isinstance(v, list)), [])
+            meta_pages = _pagini_totale(data)
         else:
             break
 
@@ -243,14 +265,18 @@ def fetch_all_pages(endpoint: str, per_page: int = 100, extra_params: dict = Non
 
         results.extend(items)
         total_pages = meta_pages or total_pages
+        marime_pagina = marime_pagina or len(items)
         print(f"    Pagina {page}/{total_pages or '?'}: {len(items)} elemente ({len(results)} total)")
 
-        # Oprire: dupa ultima pagina din metadata, SAU (fallback fara metadata) cand
-        # pagina e incompleta fata de per_page.
+        # Oprire: dupa ultima pagina din raspuns, SAU (fara numar de pagini) la prima
+        # pagina mai mica decat prima — nu decat `per_page`, pe care API-ul il ignora.
         if total_pages:
             if page >= total_pages:
                 break
-        elif len(items) < per_page:
+        elif len(items) < marime_pagina:
+            break
+        if page >= MAX_PAGINI:
+            print(f"    ⚠️  oprit la {MAX_PAGINI} de pagini — verifica paginarea endpoint-ului {endpoint}")
             break
         page += 1
         time.sleep(0.3)

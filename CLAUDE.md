@@ -12,6 +12,25 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 24.09.2026, partea a patra (PAGINAREA PROMOTIILOR 2P reparata + SERIA LUNARA in studiu):**
+- **Bug major, prins din istoric:** `fetch_all_pages()` (fetch_2p_api.py) cauta paginarea doar in
+  `metadata.pagination`, dar la `advertiser_promotions` raspunsul o are DIRECT in `pagination`. Cadea pe
+  `len(items) < per_page` si se oprea dupa pagina 1: **pipeline-ul aducea 20 de promotii 2P** (logul:
+  „Pagina 1/?: 20 elemente (20 total)"), restul intrau doar la importul manual de CSV — de-aia seria avea
+  trepte pe 29.06, 16.07, 20.08, iar intre ele numarul doar scadea. Reparat: `_pagini_totale()` cauta in
+  ambele locuri; fara paginare, reperul e marimea primei pagini; lista se ia dupa cheia endpoint-ului (la
+  promotii mai vine `shopping_events`). `scripts/test_paginare_2p.py` pica pe codul vechi (20 in loc de 45).
+  LECTII-TEHNICE #6, a cincea aparitie. **Dupa prima rulare cu reparatia, verifica in log cate promotii vin.**
+- **Seria lunara in studiul public** (`generate_studiu_cupoane.py::serie_lunara`, sectiunea „<Luna> in cifre"
+  din `/studiu/coduri-reducere-romania`): promotii noi pe luna (vazute prima data), cate cu cod, magazine,
+  topul .ro, categorii. **Porneste pe 26.09** (`SERIE_CURATA_DE_LA`) — datele mai vechi descriu schimbarile
+  noastre de surse, nu piata. Prima luna publicabila: octombrie, apare singura pe 1 noiembrie; noiembrie (cu
+  Black Friday) pe 1 decembrie. O luna cu sub 90% zile bune (zi buna = cel putin jumatate din mediana lunii)
+  apare „date incomplete", fara cifre. `istoric_promotii.py` tine acum si `zile` (promotii + magazine pe zi),
+  reconstruit din git pentru 102 zile. Pasul de istoric ruleaza acum INAINTEA studiului. Test:
+  `scripts/test_studiu_lunar.py` (pica daca scoti pragul de acoperire).
+- `GraficCategorii.tsx`: `<svg height="auto">` era invalid (eroare in consola pe pagina de studiu) → stil.
+
 **UPDATE 24.09.2026, partea a treia (ISTORICUL OFERTELOR pe pagina de magazin — adancime cu date proprii):**
 - **De ce, masurat pe istoricul git al lui `output.json`** (102 zile cu date, din 24.05): 175 de magazine
   au avut macar o promotie, 85 dintre ele n-au niciuna azi. drmax.ro (2.400 de cautari/luna, indexata prin

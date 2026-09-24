@@ -189,6 +189,16 @@ pagină.
 TOT folderul, în același commit. De două ori l-am reparat într-o funcție și l-am lăsat în vecina ei.
 Și un „N total" egal cu dimensiunea unei pagini (20) într-un log e semnătura lui — citește-l ca atare.
 
+**A cincea oară, 24.09.2026, și de data asta regula însăși era incompletă.** `fetch_all_pages()` din
+`fetch_2p_api.py` respecta regula de mai sus — citea `metadata.pagination.pages` — dar la promoții
+(`advertiser_promotions`) API-ul pune paginarea **direct în `pagination`**, fără `metadata`. Nu o
+găsea, cădea pe `len(items) < per_page`, și la fiecare rulare logul scria „Pagina 1/?: 20 elemente
+(20 total)" — exact semnătura de mai sus, necitită timp de cel puțin trei luni. Efect: pipeline-ul aducea
+20 de promoții 2Performant, iar restul intrau doar când Alex importa manual un CSV (29.06, 16.07, 20.08).
+Între importuri, numărul lor doar scădea (146 → 111 → 63). Prins din istoricul ofertelor, nu din cod.
+**Regula completată:** paginarea se caută în AMBELE locuri (`_pagini_totale`), iar fără ea reperul e
+mărimea primei pagini, nu `per_page`. `scripts/test_paginare_2p.py` pică pe codul vechi.
+
 ---
 
 ## 7. Date structurate fără conținut vizibil

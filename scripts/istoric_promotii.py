@@ -156,6 +156,22 @@ def recurata(istoric: dict, azi: str, dupa_slug: dict) -> int:
     return scoase
 
 
+def acoperire(vazute: dict) -> dict:
+    """Ce s-a vazut intr-o zi: cate promotii publicabile si la cate magazine. Din asta se afla,
+    la raportul lunar, zilele in care o sursa n-a raspuns (24.09.2026: pe 06.08 si 19.08 numarul
+    a cazut la jumatate peste noapte, iar a doua zi a revenit)."""
+    return {"promotii": sum(len(v) for v in vazute.values()), "magazine": len(vazute)}
+
+
+def citeste_zile(brut: dict) -> dict:
+    zile = {}
+    for zi, v in (brut.get("zile") or {}).items():
+        if (isinstance(zi, str) and RE_DATA.match(zi) and isinstance(v, dict)
+                and all(isinstance(v.get(c), int) and v[c] >= 0 for c in ("promotii", "magazine"))):
+            zile[zi] = {"promotii": v["promotii"], "magazine": v["magazine"]}
+    return zile
+
+
 def citeste(cale: Path):
     """Fisierul existent, validat la granita: o intrare stricata se arunca, nu se propaga."""
     if not cale.exists():
@@ -181,16 +197,19 @@ def citeste(cale: Path):
     return de_la, istoric, stricate
 
 
-def scrie(cale: Path, istoric: dict, de_la: str, azi: str, active: dict) -> dict:
+def scrie(cale: Path, istoric: dict, de_la: str, azi: str, active: dict, zile: dict = None) -> dict:
     magazine = {}
     for slug in sorted(istoric):
         lista = sorted(istoric[slug].values(), key=lambda e: (e["prima"], e["ultima"], e["k"]), reverse=True)
         magazine[slug] = [{**e, "activa": e["k"] in active.get(slug, set())} for e in lista]
+    limita = (date.fromisoformat(azi) - timedelta(days=PASTRARE_ZILE)).isoformat()
     doc = {
         "de_la": de_la,
         "actualizat": azi,
         "nota": ("Promotiile vazute pe AmCupon.ro, din datele retelelor de afiliere. `prima` = ziua in care am "
-                 "vazut-o prima data; `expira` = data oficiala, cand reteaua o da. Generat de scripts/istoric_promotii.py."),
+                 "vazut-o prima data; `expira` = data oficiala, cand reteaua o da; `zile` = cate promotii si "
+                 "magazine s-au vazut in fiecare zi. Generat de scripts/istoric_promotii.py."),
+        "zile": {z: v for z, v in sorted((zile or {}).items()) if z >= limita},
         "magazine": magazine,
     }
     cale.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
@@ -206,7 +225,7 @@ def din_git() -> tuple:
         if linie.strip():
             sha, cand = linie.split(" ", 1)
             pe_zi.setdefault(cand[:10], sha)   # log-ul e descrescator: primul = ultimul commit al zilei
-    istoric = {}
+    istoric, zile = {}, {}
     for zi in sorted(pe_zi):
         brut = subprocess.run(["git", "-C", str(RADACINA), "show", f"{pe_zi[zi]}:{OUTPUT_IN_GIT}"],
                               capture_output=True, check=True).stdout
@@ -216,8 +235,8 @@ def din_git() -> tuple:
             print(f"  {zi}: instantaneu ilizibil, sarit")
             continue
         if isinstance(date_zi, list):
-            adauga_zi(istoric, date_zi, zi)
-    return (min(pe_zi) if pe_zi else None), istoric, len(pe_zi)
+            zile[zi] = acoperire(adauga_zi(istoric, date_zi, zi))
+    return (min(pe_zi) if pe_zi else None), istoric, zile, len(pe_zi)
 
 
 def ruleaza(din_istoric_git: bool = False) -> None:
@@ -226,17 +245,19 @@ def ruleaza(din_istoric_git: bool = False) -> None:
     dupa_slug = {(m.get("magazin") or "").lower(): m for m in magazine if isinstance(m, dict)}
 
     if din_istoric_git:
-        de_la, istoric, zile = din_git()
-        print(f"reconstruit din git: {zile} zile cu date, de la {de_la}")
+        de_la, istoric, zile, n = din_git()
+        print(f"reconstruit din git: {n} zile cu date, de la {de_la}")
         stricate = 0
     else:
         de_la, istoric, stricate = citeste(ISTORIC)
+        zile = citeste_zile(json.loads(ISTORIC.read_text(encoding="utf-8"))) if ISTORIC.exists() else {}
 
     inainte = sum(len(v) for v in istoric.values())
     active = adauga_zi(istoric, magazine, azi)
+    zile[azi] = acoperire(active)   # ultima rulare a zilei ramane
     noi = sum(len(v) for v in istoric.values()) - inainte
     scoase = recurata(istoric, azi, dupa_slug)
-    doc = scrie(ISTORIC, istoric, de_la or azi, azi, active)
+    doc = scrie(ISTORIC, istoric, de_la or azi, azi, active, zile)
 
     total = sum(len(v) for v in doc["magazine"].values())
     fara_azi = sum(1 for s, v in doc["magazine"].items() if not any(e["activa"] for e in v))
@@ -302,6 +323,15 @@ def test() -> None:
         ]}}), encoding="utf-8")
         de_la, ist2, stricate = citeste(cale)
         assert de_la == "2026-05-24" and list(ist2["a.ro"]) == ["a|"] and stricate == 2, (ist2, stricate)
+
+    # acoperirea unei zile, si validarea ei la citire (negativ, text, data stricata = aruncate)
+    v = adauga_zi({}, [m], "2026-07-06")
+    assert acoperire(v) == {"promotii": len(v["exemplu.ro"]), "magazine": 1}, acoperire(v)
+    z = citeste_zile({"zile": {"2026-07-01": {"promotii": 5, "magazine": 2},
+                               "2026-07-02": {"promotii": -1, "magazine": 1},
+                               "2026-07-03": {"promotii": "5", "magazine": 1},
+                               "iulie": {"promotii": 1, "magazine": 1}}})
+    assert list(z) == ["2026-07-01"], z
     print("test: toate verificarile au trecut")
 
 

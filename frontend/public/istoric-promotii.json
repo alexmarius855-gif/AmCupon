@@ -1,7 +1,417 @@
 {
  "de_la": "2026-05-24",
  "actualizat": "2026-09-24",
- "nota": "Promotiile vazute pe AmCupon.ro, din datele retelelor de afiliere. `prima` = ziua in care am vazut-o prima data; `expira` = data oficiala, cand reteaua o da. Generat de scripts/istoric_promotii.py.",
+ "nota": "Promotiile vazute pe AmCupon.ro, din datele retelelor de afiliere. `prima` = ziua in care am vazut-o prima data; `expira` = data oficiala, cand reteaua o da; `zile` = cate promotii si magazine s-au vazut in fiecare zi. Generat de scripts/istoric_promotii.py.",
+ "zile": {
+  "2026-05-24": {
+   "promotii": 59,
+   "magazine": 34
+  },
+  "2026-05-25": {
+   "promotii": 58,
+   "magazine": 34
+  },
+  "2026-05-26": {
+   "promotii": 66,
+   "magazine": 37
+  },
+  "2026-05-27": {
+   "promotii": 66,
+   "magazine": 37
+  },
+  "2026-05-30": {
+   "promotii": 66,
+   "magazine": 37
+  },
+  "2026-06-01": {
+   "promotii": 66,
+   "magazine": 37
+  },
+  "2026-06-12": {
+   "promotii": 75,
+   "magazine": 46
+  },
+  "2026-06-15": {
+   "promotii": 75,
+   "magazine": 46
+  },
+  "2026-06-16": {
+   "promotii": 75,
+   "magazine": 46
+  },
+  "2026-06-19": {
+   "promotii": 75,
+   "magazine": 46
+  },
+  "2026-06-22": {
+   "promotii": 55,
+   "magazine": 20
+  },
+  "2026-06-23": {
+   "promotii": 56,
+   "magazine": 21
+  },
+  "2026-06-24": {
+   "promotii": 56,
+   "magazine": 21
+  },
+  "2026-06-28": {
+   "promotii": 57,
+   "magazine": 22
+  },
+  "2026-06-29": {
+   "promotii": 148,
+   "magazine": 79
+  },
+  "2026-06-30": {
+   "promotii": 138,
+   "magazine": 75
+  },
+  "2026-07-01": {
+   "promotii": 130,
+   "magazine": 72
+  },
+  "2026-07-02": {
+   "promotii": 128,
+   "magazine": 71
+  },
+  "2026-07-03": {
+   "promotii": 138,
+   "magazine": 80
+  },
+  "2026-07-04": {
+   "promotii": 138,
+   "magazine": 80
+  },
+  "2026-07-05": {
+   "promotii": 138,
+   "magazine": 80
+  },
+  "2026-07-06": {
+   "promotii": 135,
+   "magazine": 80
+  },
+  "2026-07-07": {
+   "promotii": 131,
+   "magazine": 78
+  },
+  "2026-07-08": {
+   "promotii": 131,
+   "magazine": 78
+  },
+  "2026-07-09": {
+   "promotii": 131,
+   "magazine": 78
+  },
+  "2026-07-10": {
+   "promotii": 130,
+   "magazine": 77
+  },
+  "2026-07-11": {
+   "promotii": 130,
+   "magazine": 77
+  },
+  "2026-07-12": {
+   "promotii": 129,
+   "magazine": 76
+  },
+  "2026-07-13": {
+   "promotii": 126,
+   "magazine": 75
+  },
+  "2026-07-14": {
+   "promotii": 126,
+   "magazine": 75
+  },
+  "2026-07-15": {
+   "promotii": 124,
+   "magazine": 74
+  },
+  "2026-07-16": {
+   "promotii": 153,
+   "magazine": 93
+  },
+  "2026-07-17": {
+   "promotii": 153,
+   "magazine": 93
+  },
+  "2026-07-18": {
+   "promotii": 152,
+   "magazine": 92
+  },
+  "2026-07-19": {
+   "promotii": 149,
+   "magazine": 92
+  },
+  "2026-07-20": {
+   "promotii": 145,
+   "magazine": 89
+  },
+  "2026-07-21": {
+   "promotii": 144,
+   "magazine": 90
+  },
+  "2026-07-22": {
+   "promotii": 142,
+   "magazine": 89
+  },
+  "2026-07-23": {
+   "promotii": 146,
+   "magazine": 90
+  },
+  "2026-07-24": {
+   "promotii": 147,
+   "magazine": 90
+  },
+  "2026-07-25": {
+   "promotii": 144,
+   "magazine": 87
+  },
+  "2026-07-26": {
+   "promotii": 144,
+   "magazine": 87
+  },
+  "2026-07-27": {
+   "promotii": 140,
+   "magazine": 84
+  },
+  "2026-07-28": {
+   "promotii": 140,
+   "magazine": 85
+  },
+  "2026-07-29": {
+   "promotii": 139,
+   "magazine": 85
+  },
+  "2026-07-30": {
+   "promotii": 140,
+   "magazine": 85
+  },
+  "2026-07-31": {
+   "promotii": 120,
+   "magazine": 72
+  },
+  "2026-08-01": {
+   "promotii": 105,
+   "magazine": 62
+  },
+  "2026-08-02": {
+   "promotii": 105,
+   "magazine": 62
+  },
+  "2026-08-03": {
+   "promotii": 100,
+   "magazine": 58
+  },
+  "2026-08-04": {
+   "promotii": 101,
+   "magazine": 59
+  },
+  "2026-08-05": {
+   "promotii": 101,
+   "magazine": 59
+  },
+  "2026-08-06": {
+   "promotii": 64,
+   "magazine": 31
+  },
+  "2026-08-07": {
+   "promotii": 103,
+   "magazine": 60
+  },
+  "2026-08-08": {
+   "promotii": 102,
+   "magazine": 59
+  },
+  "2026-08-09": {
+   "promotii": 99,
+   "magazine": 59
+  },
+  "2026-08-10": {
+   "promotii": 101,
+   "magazine": 60
+  },
+  "2026-08-11": {
+   "promotii": 103,
+   "magazine": 62
+  },
+  "2026-08-12": {
+   "promotii": 104,
+   "magazine": 63
+  },
+  "2026-08-13": {
+   "promotii": 104,
+   "magazine": 63
+  },
+  "2026-08-14": {
+   "promotii": 104,
+   "magazine": 63
+  },
+  "2026-08-15": {
+   "promotii": 104,
+   "magazine": 63
+  },
+  "2026-08-16": {
+   "promotii": 103,
+   "magazine": 63
+  },
+  "2026-08-17": {
+   "promotii": 102,
+   "magazine": 62
+  },
+  "2026-08-18": {
+   "promotii": 103,
+   "magazine": 63
+  },
+  "2026-08-19": {
+   "promotii": 61,
+   "magazine": 51
+  },
+  "2026-08-20": {
+   "promotii": 136,
+   "magazine": 87
+  },
+  "2026-08-21": {
+   "promotii": 146,
+   "magazine": 93
+  },
+  "2026-08-22": {
+   "promotii": 144,
+   "magazine": 92
+  },
+  "2026-08-23": {
+   "promotii": 143,
+   "magazine": 92
+  },
+  "2026-08-24": {
+   "promotii": 136,
+   "magazine": 89
+  },
+  "2026-08-25": {
+   "promotii": 135,
+   "magazine": 88
+  },
+  "2026-08-26": {
+   "promotii": 134,
+   "magazine": 87
+  },
+  "2026-08-27": {
+   "promotii": 133,
+   "magazine": 86
+  },
+  "2026-08-28": {
+   "promotii": 133,
+   "magazine": 86
+  },
+  "2026-08-29": {
+   "promotii": 133,
+   "magazine": 86
+  },
+  "2026-08-30": {
+   "promotii": 133,
+   "magazine": 86
+  },
+  "2026-08-31": {
+   "promotii": 81,
+   "magazine": 58
+  },
+  "2026-09-01": {
+   "promotii": 81,
+   "magazine": 58
+  },
+  "2026-09-02": {
+   "promotii": 81,
+   "magazine": 58
+  },
+  "2026-09-03": {
+   "promotii": 80,
+   "magazine": 57
+  },
+  "2026-09-04": {
+   "promotii": 80,
+   "magazine": 57
+  },
+  "2026-09-05": {
+   "promotii": 79,
+   "magazine": 56
+  },
+  "2026-09-06": {
+   "promotii": 78,
+   "magazine": 56
+  },
+  "2026-09-07": {
+   "promotii": 74,
+   "magazine": 55
+  },
+  "2026-09-08": {
+   "promotii": 295,
+   "magazine": 118
+  },
+  "2026-09-09": {
+   "promotii": 290,
+   "magazine": 114
+  },
+  "2026-09-10": {
+   "promotii": 290,
+   "magazine": 112
+  },
+  "2026-09-11": {
+   "promotii": 284,
+   "magazine": 112
+  },
+  "2026-09-12": {
+   "promotii": 269,
+   "magazine": 112
+  },
+  "2026-09-13": {
+   "promotii": 268,
+   "magazine": 111
+  },
+  "2026-09-14": {
+   "promotii": 238,
+   "magazine": 107
+  },
+  "2026-09-15": {
+   "promotii": 232,
+   "magazine": 104
+  },
+  "2026-09-16": {
+   "promotii": 248,
+   "magazine": 97
+  },
+  "2026-09-17": {
+   "promotii": 251,
+   "magazine": 96
+  },
+  "2026-09-18": {
+   "promotii": 250,
+   "magazine": 95
+  },
+  "2026-09-19": {
+   "promotii": 250,
+   "magazine": 95
+  },
+  "2026-09-20": {
+   "promotii": 172,
+   "magazine": 86
+  },
+  "2026-09-21": {
+   "promotii": 173,
+   "magazine": 85
+  },
+  "2026-09-22": {
+   "promotii": 174,
+   "magazine": 87
+  },
+  "2026-09-23": {
+   "promotii": 175,
+   "magazine": 88
+  },
+  "2026-09-24": {
+   "promotii": 179,
+   "magazine": 89
+  }
+ },
  "magazine": {
   "112coffee.com": [
    {

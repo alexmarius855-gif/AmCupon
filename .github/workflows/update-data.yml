@@ -455,21 +455,23 @@ jobs:
       # Ruleaza DUPA ce toate datele sunt generate si INAINTE de commit: paginile
       # de date isi muta data doar cand amprenta de continut chiar s-a schimbat,
       # nu la fiecare rulare de 4h (vezi scripts/track_sitemap_dates.py).
-      # ── Studiu public pe date proprii (activ de backlink) ─────────────────
-      # Ruleaza dupa merge, ca sa reflecte magazinele si promotiile curente.
-      - name: Genereaza datele studiului despre coduri de reducere
-        continue-on-error: true
-        working-directory: scripts
-        run: python generate_studiu_cupoane.py
-
       # ── Istoricul promotiilor (date proprii pe fiecare pagina de magazin) ──
-      # Dupa ultimul script care scrie output.json (curata_retele_excluse.py). Nu are nevoie de
-      # amprenta proprie in sitemap: istoricul se schimba doar cand se schimba promotiile, iar
-      # pe acelea track_sitemap_dates.py le prinde deja.
+      # Dupa ultimul script care scrie output.json (curata_retele_excluse.py) si INAINTE de
+      # studiu, care isi ia seria lunara din el. Nu are nevoie de amprenta proprie in sitemap:
+      # istoricul se schimba doar cand se schimba promotiile, iar pe acelea
+      # track_sitemap_dates.py le prinde deja.
       - name: Istoricul promotiilor pe magazin
         continue-on-error: true
         working-directory: scripts
         run: python istoric_promotii.py
+
+      # ── Studiu public pe date proprii (activ de backlink) ─────────────────
+      # Ruleaza dupa merge, ca sa reflecte magazinele si promotiile curente, si dupa
+      # istoric, din care vine seria lunara (prima luna completa: octombrie 2026).
+      - name: Genereaza datele studiului despre coduri de reducere
+        continue-on-error: true
+        working-directory: scripts
+        run: python generate_studiu_cupoane.py
 
       - name: Calculeaza lastModified real pentru sitemap
         continue-on-error: true

@@ -32,6 +32,21 @@ interface Categorie {
   reducere_max: number | null;
   esantion: number;
 }
+/** O luna din seria lunara (scripts/generate_studiu_cupoane.py, `serie_lunara`). Cand
+ *  `incomplet` e true, lipsesc toate cifrele: luna n-a avut destule zile cu date bune. */
+interface Luna {
+  luna: string;
+  incomplet: boolean;
+  zile: number;
+  zile_bune: number;
+  promotii_noi?: number;
+  cu_cod?: number;
+  magazine?: number;
+  din_magazine_ro?: number;
+  active_pe_zi?: number;
+  top_ro?: { slug: string; nume: string; promotii: number; cu_cod: number }[];
+  categorii?: { slug: string; nume: string; promotii: number }[];
+}
 interface Studiu {
   generat: string;
   total_magazine: number;
@@ -45,7 +60,15 @@ interface Studiu {
   categorii: Categorie[];
   retele: string[];
   prag_esantion: number;
+  serie_de_la?: string;
+  lunar?: Luna[];
 }
+
+const LUNA = new Intl.DateTimeFormat("ro-RO", { month: "long", year: "numeric", timeZone: "UTC" });
+const ZI = new Intl.DateTimeFormat("ro-RO", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
+const numeLuna = (l: string) => LUNA.format(new Date(`${l}-01T00:00:00Z`));
+/** „138 de magazine", nu „138 magazine": numeralul romanesc cere „de" de la 20 in sus. */
+const cuDe = (n: number | undefined) => `${n ?? 0}${(n ?? 0) % 100 >= 20 || ((n ?? 0) > 0 && (n ?? 0) % 100 === 0) ? " de" : ""}`;
 
 function loadStudiu(): Studiu | null {
   try {
@@ -101,6 +124,9 @@ export default function StudiuPage() {
 
   const cuMediana = s.categorii.filter((c) => c.reducere_mediana !== null);
   const faraMediana = s.categorii.filter((c) => c.reducere_mediana === null);
+  const lunar = s.lunar ?? [];
+  const ultimaLuna = lunar.length > 0 ? lunar[lunar.length - 1] : null;
+  const luniPublicate = lunar.filter((l) => !l.incomplet);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -197,6 +223,119 @@ export default function StudiuPage() {
           </p>
         </section>
 
+        {/* ── Luna trecuta in cifre (seria lunara, 24.09.2026) ─────────────────
+            Apare singura dupa prima luna completa a seriei curate (octombrie 2026 →
+            1 noiembrie). O luna cu goluri NU primeste cifre: o retea care n-a raspuns
+            ar arata in grafic ca o scadere a promotiilor, iar pagina asta e facuta sa fie citata. */}
+        {ultimaLuna && (
+          <section className="max-w-3xl mx-auto px-4 pb-10">
+            <h2 className="text-xl font-black text-[#ffffff] mb-2">
+              {numeLuna(ultimaLuna.luna).replace(/^./, (c) => c.toUpperCase())} in cifre
+            </h2>
+            {ultimaLuna.incomplet ? (
+              <p className="text-sm text-[#c9ced5] leading-relaxed">
+                Pentru {numeLuna(ultimaLuna.luna)} nu publicam cifrele: doar {ultimaLuna.zile_bune} din{" "}
+                {ultimaLuna.zile} zile au avut date complete. Preferam o luna lipsa unei luni gresite.
+              </p>
+            ) : (
+              <>
+                <p className="text-[#c9ced5] leading-relaxed mb-3">
+                  In {numeLuna(ultimaLuna.luna)} am vazut{" "}
+                  <strong className="text-[#ffffff]">{cuDe(ultimaLuna.promotii_noi)} promotii noi</strong> la{" "}
+                  {cuDe(ultimaLuna.magazine)} magazine. Dintre ele,{" "}
+                  <strong className="text-[#ddf93c]">{ultimaLuna.cu_cod}</strong>{" "}
+                  ({ultimaLuna.promotii_noi ? Math.round(((ultimaLuna.cu_cod ?? 0) / ultimaLuna.promotii_noi) * 100) : 0}%)
+                  au avut cod de reducere; restul au fost oferte fara cod de introdus.
+                </p>
+                <p className="text-[#c9ced5] leading-relaxed mb-5">
+                  In medie, {cuDe(ultimaLuna.active_pe_zi)} promotii au fost active in fiecare zi.{" "}
+                  {ultimaLuna.din_magazine_ro} dintre promotiile noi au venit de la magazine cu domeniu .ro.
+                </p>
+
+                {(ultimaLuna.top_ro?.length ?? 0) > 0 && (
+                  <div className="overflow-x-auto rounded-xl border border-[#1f2329] mb-5">
+                    <table className="w-full text-sm min-w-[420px]">
+                      <caption className="text-left text-xs text-[#9399a0] px-4 pt-3 pb-1">
+                        Magazinele .ro cu cele mai multe promotii noi
+                      </caption>
+                      <thead>
+                        <tr className="bg-[#14181c] text-[#9399a0] text-[11px] uppercase tracking-wider">
+                          <th className="text-left font-bold px-4 py-3">Magazin</th>
+                          <th className="text-right font-bold px-4 py-3">Promotii noi</th>
+                          <th className="text-right font-bold px-4 py-3">Cu cod</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {ultimaLuna.top_ro!.map((m) => (
+                          <tr key={m.slug} className="border-t border-[#1f2329]">
+                            <td className="px-4 py-3">
+                              <Link href={`/cod-reducere/${m.slug}`} className="text-[#ffffff] font-semibold hover:text-[#ddf93c]">
+                                {m.nume}
+                              </Link>
+                            </td>
+                            <td className="px-4 py-3 text-right text-[#c9ced5] tabular-nums">{m.promotii}</td>
+                            <td className="px-4 py-3 text-right text-[#c9ced5] tabular-nums">{m.cu_cod}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                )}
+
+                {(ultimaLuna.categorii?.length ?? 0) > 0 && (
+                  <p className="text-sm text-[#c9ced5] leading-relaxed mb-4">
+                    Pe categorii:{" "}
+                    {ultimaLuna.categorii!.map((c, i) => (
+                      <span key={c.slug}>
+                        {i > 0 && ", "}
+                        <Link href={`/categorii/${c.slug}`} className="text-[#ffffff] hover:text-[#ddf93c]">{c.nume}</Link>{" "}
+                        {c.promotii}
+                      </span>
+                    ))}
+                    .
+                  </p>
+                )}
+              </>
+            )}
+
+            {luniPublicate.length > 1 && (
+              <div className="overflow-x-auto rounded-xl border border-[#1f2329] mb-4">
+                <table className="w-full text-sm min-w-[420px]">
+                  <thead>
+                    <tr className="bg-[#14181c] text-[#9399a0] text-[11px] uppercase tracking-wider">
+                      <th className="text-left font-bold px-4 py-3">Luna</th>
+                      <th className="text-right font-bold px-4 py-3">Promotii noi</th>
+                      <th className="text-right font-bold px-4 py-3">Cu cod</th>
+                      <th className="text-right font-bold px-4 py-3">Magazine</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {lunar.map((l) => (
+                      <tr key={l.luna} className="border-t border-[#1f2329]">
+                        <td className="px-4 py-3 text-[#ffffff]">{numeLuna(l.luna)}</td>
+                        {l.incomplet ? (
+                          <td colSpan={3} className="px-4 py-3 text-right text-[#9399a0]">date incomplete</td>
+                        ) : (
+                          <>
+                            <td className="px-4 py-3 text-right text-[#c9ced5] tabular-nums">{l.promotii_noi}</td>
+                            <td className="px-4 py-3 text-right text-[#c9ced5] tabular-nums">{l.cu_cod}</td>
+                            <td className="px-4 py-3 text-right text-[#c9ced5] tabular-nums">{l.magazine}</td>
+                          </>
+                        )}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )}
+
+            <p className="text-xs text-[#9399a0] leading-relaxed">
+              Date din {ultimaLuna.zile_bune} din cele {cuDe(ultimaLuna.zile)} zile ale lunii. O promotie e noua in luna
+              in care am vazut-o prima data. Zilele in care o retea n-a raspuns nu intra in calcule.
+            </p>
+          </section>
+        )}
+
         {/* ── Reduceri pe categorie ────────────────────────────────────────── */}
         <section className="max-w-3xl mx-auto px-4 pb-10">
           <h2 className="text-xl font-black text-[#ffffff] mb-2">Cat de mari sunt reducerile, pe categorii</h2>
@@ -279,6 +418,18 @@ export default function StudiuPage() {
                   un cod de reducere pe Google.
                 </p>
               </div>
+              {s.serie_de_la && (
+                <div>
+                  <h3 className="font-bold text-[#ffffff] mb-1">Seria lunara</h3>
+                  <p>
+                    Seria lunara porneste pe {ZI.format(new Date(`${s.serie_de_la}T00:00:00Z`))}: de atunci
+                    numaram zi de zi promotiile noi. Datele mai vechi exista, dar descriu schimbarile surselor
+                    noastre, nu piata: intre iunie si septembrie am adaugat surse noi, iar pana pe 24 septembrie
+                    o parte din promotii intrau cu intarziere. O luna se publica doar daca cel putin 90% din
+                    zilele ei au date complete.
+                  </p>
+                </div>
+              )}
               <div>
                 <h3 className="font-bold text-[#ffffff] mb-1">Ce nu publicam</h3>
                 <p>
