@@ -40,7 +40,7 @@ export default function NewsletterCTA({ titlu = "Nu rata cele mai bune reduceri"
         <div className="text-4xl shrink-0">📬</div>
         <div className="flex-1 text-center sm:text-left">
           <h2 className="font-black text-[#ffffff] text-lg">{titlu}</h2>
-          <p className="text-[#c9ced5] text-sm mt-1">Top coduri de reducere verificate, direct în inbox. Gratuit, zero spam, dezabonare oricând.</p>
+          <p className="text-[#c9ced5] text-sm mt-1">Ofertele active, pe email, o dată pe zi. Gratuit, fără spam, dezabonare oricând.</p>
         </div>
         {status === "success" ? (
           <p className="shrink-0 text-emerald-400 font-bold text-sm">🎉 Ești abonat!</p>

@@ -30,6 +30,22 @@ Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Pro
   ca la promotii: producatorul si paznicul citesc aceeasi functie. **Dovedit ca pica**: pe datele de azi
   garda iese 1 cu „[preturi corupte] 59"; pe aceleasi date filtrate cu `pret_corupt` iese 0.
   Local pe Windows, garda cere `PYTHONIOENCODING=utf-8` (altfel cade pe „──" in consola cp1252).
+- **`/black-friday` rescrisa** (planul lui Alex, Faza 2: Black Friday eMAG pe 6.11.2026, valul
+  international 27-30.11). Versiunea veche promitea in description „coduri verificate la eMAG,
+  FashionDays, Altex, Dedeman" — **eMAG, Fashion Days si Altex nu sunt in output.json** (fara program),
+  iar codurile nu le testeaza nimeni; spunea ca BF e „in ultima vineri a lunii" (fals in Romania);
+  lista de top era scrisa de mana (`TOP_BF_MAGAZINE`), cu cutia de logo lime + initiala alba (tiparul 2
+  de contrast). Acum: doar magazine cu `areLinkAfiliat()` si oferta activa (90 azi), `.ro` intai apoi
+  `scor_final`, maxim 48 de `MagazinCard` + link spre `/oferte-azi`; datele BF intr-o constanta `BF`
+  cu sursa (de actualizat anual); FAQ vizibil si `FAQPage` din aceeasi lista; FAQ-ul spune pe fata ca
+  eMAG/Altex/Fashion Days nu sunt parteneri si ca nu testam codurile in cos. Scos footerul propriu
+  (dublura celui global), etichetele de categorie neclicabile si `trend` (mereu 0). **Title-ul e
+  neschimbat**; description corectat doar pentru afirmatiile false.
+- `NewsletterCTA` (27 de pagini): „Top coduri de reducere verificate" → „Ofertele active, pe email, o
+  data pe zi" — aceeasi afirmatie scoasa din rest pe 22.09, ramasa aici.
+- **Verificat**: tsc 0, eslint 0 pe fisierele atinse, `npm run build` 0 (2.737 de pagini, `/black-friday`
+  statica); pe dev server: 90 de magazine / 187 oferte / 50 de coduri, FAQPage valid cu 4 intrebari
+  identice cu textul vizibil, „verificat" de 0 ori, 1 footer, fara scroll orizontal la 1280 si 375 px.
 
 **UPDATE 24.09.2026 (prima pagina noua + texte pentru afiliati scoase la sursa + garda reparata — PUSHED):**
 - **Pasul 4 din planul interfetei: prima pagina.** Hero pe doua coloane cu panoul „Acum, pe AmCupon"
