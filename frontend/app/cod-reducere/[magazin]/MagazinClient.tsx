@@ -168,7 +168,7 @@ interface Banner2P {
   name: string; category: string; b_type: string;
 }
 
-export default function MagazinClient({ magazin: m, produse = [], similare = [], comparatii = [], blogPost = null, banner = null, descriere = null, astazi, context = null }: {
+export default function MagazinClient({ magazin: m, produse = [], similare = [], comparatii = [], blogPost = null, banner = null, descriere = null, astazi, context = null, istoric = null }: {
   magazin: Magazin;
   produse?: Produs[];
   similare?: MagazinSimilar[];
@@ -180,6 +180,8 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
   /** Slot SERVER-rendered (ContextMagazin) — textul trebuie sa fie in HTML, nu
    *  adaugat dupa hidratare, altfel nu conteaza pentru indexare. */
   context?: React.ReactNode;
+  /** Slot SERVER-rendered (IstoricMagazin): ofertele vazute in trecut, din datele noastre. */
+  istoric?: React.ReactNode;
 }) {
   const [revealed, setRevealed]   = useState<Set<number>>(new Set());
   // Cascada de logo, ca in MagazinCard: sursa din date -> favicon Google ->
@@ -689,6 +691,11 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
         >
             <ReviewSection magazin={m.magazin} />
           </motion.div>
+
+        {/* ── ISTORICUL OFERTELOR (server-rendered, 24.09.2026) ────────────
+            Imediat sub taburi: pe pagina fara oferta (86% din vizite) e raspunsul la
+            intrebarea pe care starea goala o lasa deschisa — magazinul da coduri, si cat de des? */}
+        {istoric}
 
         {/* ── BOTTOM CTAs (toate tab-urile) ────────────────────────────────── */}
         <div className="mt-8 space-y-3">

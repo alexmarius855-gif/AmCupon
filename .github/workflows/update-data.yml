@@ -462,6 +462,15 @@ jobs:
         working-directory: scripts
         run: python generate_studiu_cupoane.py
 
+      # ── Istoricul promotiilor (date proprii pe fiecare pagina de magazin) ──
+      # Dupa ultimul script care scrie output.json (curata_retele_excluse.py). Nu are nevoie de
+      # amprenta proprie in sitemap: istoricul se schimba doar cand se schimba promotiile, iar
+      # pe acelea track_sitemap_dates.py le prinde deja.
+      - name: Istoricul promotiilor pe magazin
+        continue-on-error: true
+        working-directory: scripts
+        run: python istoric_promotii.py
+
       - name: Calculeaza lastModified real pentru sitemap
         continue-on-error: true
         working-directory: scripts
@@ -476,6 +485,7 @@ jobs:
           git add frontend/public/magazine-fara-livrare-ro.json || true
           git add frontend/public/sitemap-dates.json   || true
           git add frontend/public/studiu-cupoane.json  || true
+          git add frontend/public/istoric-promotii.json || true
           git add data/sitemap_fingerprints.json       || true
           git add data/extra_merchants.json            || true
           git add frontend/public/digest-today.json    || true

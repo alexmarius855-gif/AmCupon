@@ -12,6 +12,32 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 24.09.2026, partea a treia (ISTORICUL OFERTELOR pe pagina de magazin — adancime cu date proprii):**
+- **De ce, masurat pe istoricul git al lui `output.json`** (102 zile cu date, din 24.05): 175 de magazine
+  au avut macar o promotie, 85 dintre ele n-au niciuna azi. drmax.ro (2.400 de cautari/luna, indexata prin
+  `BRANDURI_CU_CERERE`) a avut 13 promotii, niciuna cu cod — iar pagina spunea doar „niciun cod activ".
+  E punctul 1 din „De reparat in cod" din `Projects/PLAN.md` (adancimea paginii de magazin).
+- **`scripts/istoric_promotii.py`** scrie `frontend/public/istoric-promotii.json`: pe magazin, promotiile
+  vazute (`titlu`, `cod` bool, `prima` = ziua in care am vazut-o PRIMA data, `expira` = data oficiala cand
+  reteaua o da, `activa`). Promotiile intra DOAR prin `promotii.curata_promotii()` (pe o copie), deci
+  respecta automat regulile site-ului (expirate, texte pentru afiliati, mojibake, markdown). Fisierul e si
+  intrare si iesire (LECTII #5), deci regulile pe titlu (`titlu_publicabil`, `slug_valid`) se reaplica la
+  FIECARE rulare pe TOT istoricul. Prinse la constructie: magazinul de test `advertisertest.eu/production/test944`
+  („asd") si titluri care sunt doar codul („SAVE20", „26BTS03") — ambele excluse. `--din-git` reconstruieste
+  totul (12 s), `--test` are verificari dovedite ca pica daca scoti filtrele.
+- Pas nou in pipeline, dupa ultimul scriitor al lui output.json (`curata_retele_excluse.py`), `continue-on-error`;
+  fisierul intra in commit. **Garda:** `verifica_site.py` regula 8 — istoric neactualizat de peste 2 zile sau
+  intrare care incalca regulile de titlu = rosu (dovedit pe date falsificate).
+- **Frontend:** `IstoricMagazin.tsx` (SERVER, slot `istoric` in `MagazinClient`, imediat sub taburi — adica
+  sub starea goala pe care o vad 86% din vizitatori). Afiseaza: cate promotii, cate cu cod, ultima, lunile,
+  ultimele 10 trecute. **NU afiseaza**: cat a tinut o oferta (o vedem doar cand reteaua raspunde) si codul ca
+  buton. Cand reteaua a pus codul in titlu (noriel: „Cod: NORIEL20"), titlul ramane al ei; nota de jos spune
+  ca nu mai e garantat — prima formulare („codurile vechi nu le afisam") era falsa exact pe cazul asta.
+- **Masurat in build:** 110 pagini de magazin primesc blocul, 44 indexabile; mediana +120 de cuvinte proprii.
+  **Neschimbat intentionat:** `esteIndexabil`. Cele 66 de pagini `noindex` cu istoric raman `noindex` — o
+  eventuala deschidere (ex. >= 3 promotii trecute, ~29 de magazine) e decizie separata, dupa ce vedem efectul
+  pe cele 44.
+
 **UPDATE 24.09.2026, partea a doua (SOCIAL PE PAUZA — ceruta de Alex, „stoparea rularilor inutile"):**
 - `SOCIAL_PAUZA: "true"` in update-data.yml, langa `TELEGRAM_PAUZA`. Opreste 6 pasi din rularea completa:
   continut social pe nise, uzina de continut social (10 postari + digest + carusel), bannere sociale,

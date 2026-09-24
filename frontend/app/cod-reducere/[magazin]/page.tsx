@@ -7,6 +7,7 @@ import path from "path";
 import MagazinClient from "./MagazinClient";
 import { buildMerchantTokens, esteIndexabil } from "../../../lib/seoIndexable";
 import ContextMagazin, { type CategorieStudiu } from "./ContextMagazin";
+import IstoricMagazin, { type IntrareIstoric } from "./IstoricMagazin";
 import { linkAfiliat, linkPromotie } from "@/lib/linkMagazin";
 import FaraLivrareRo, { tariLivrare, type Alternativa, type MagazinFaraLivrare } from "./FaraLivrareRo";
 import { numeAfisat, brandDomeniu } from "@/lib/numeMagazin";
@@ -288,6 +289,22 @@ function loadStudiu(): Record<string, CategorieStudiu> {
   return _studiuCache;
 }
 
+let _istoricCache: { de_la: string; magazine: Record<string, IntrareIstoric[]> } | null = null;
+/**
+ * Promotiile vazute in trecut, pe magazin (scripts/istoric_promotii.py, la fiecare rulare de
+ * pipeline). Aceeasi cache de modul ca la produse: o singura citire per proces de build.
+ */
+function loadIstoric(): { de_la: string; magazine: Record<string, IntrareIstoric[]> } {
+  if (_istoricCache) return _istoricCache;
+  try {
+    const raw = JSON.parse(fs.readFileSync(path.join(process.cwd(), "public", "istoric-promotii.json"), "utf-8"));
+    _istoricCache = { de_la: typeof raw.de_la === "string" ? raw.de_la : "", magazine: raw.magazine || {} };
+  } catch {
+    _istoricCache = { de_la: "", magazine: {} };
+  }
+  return _istoricCache;
+}
+
 function loadProducts(slug: string): Produs[] {
   try {
     const all: Produs[] = loadAllProducts();
@@ -495,6 +512,8 @@ export default async function PaginaMagazin({
   const descriere = loadDescriere(cleanSlug);
   const comparatii = loadComparatii(cleanSlug);
   const reviewSummary = loadReviewsSummary(cleanSlug);
+  const istoric = loadIstoric();
+  const intrariIstoric = istoric.magazine[cleanSlug.toLowerCase()] ?? [];
 
   // Magazine similare din aceeasi categorie (max 8).
   //
@@ -741,6 +760,17 @@ export default async function PaginaMagazin({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <MagazinClient magazin={m} produse={produse} similare={similare} comparatii={comparatii} blogPost={blogPost} banner={banner} descriere={descriere} astazi={new Date(acumMs).toISOString().slice(0, 10)}
+        istoric={
+          istoric.de_la && intrariIstoric.length > 0 ? (
+            <IstoricMagazin
+              nume={nume}
+              deLa={istoric.de_la}
+              azi={new Date(acumMs).toISOString().slice(0, 10)}
+              intrari={intrariIstoric}
+              nrActive={nrPromo}
+            />
+          ) : null
+        }
         context={
           <ContextMagazin
             nume={m.magazin}

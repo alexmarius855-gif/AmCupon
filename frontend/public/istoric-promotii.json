@@ -1,0 +1,6447 @@
+{
+ "de_la": "2026-05-24",
+ "actualizat": "2026-09-24",
+ "nota": "Promotiile vazute pe AmCupon.ro, din datele retelelor de afiliere. `prima` = ziua in care am vazut-o prima data; `expira` = data oficiala, cand reteaua o da. Generat de scripts/istoric_promotii.py.",
+ "magazine": {
+  "112coffee.com": [
+   {
+    "k": "10discountonfirstcoffeeorder|",
+    "titlu": "10% DISCOUNT on first coffee order",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-09-24",
+    "expira": "2026-12-30",
+    "activa": true
+   }
+  ],
+  "12note.ro": [
+   {
+    "k": "discount10lafiecarealdoileaparfum|",
+    "titlu": "Discount 10% la fiecare al doilea parfum",
+    "cod": false,
+    "prima": "2026-07-03",
+    "ultima": "2026-07-12",
+    "expira": "2026-07-12",
+    "activa": false
+   }
+  ],
+  "220-volti.ro": [
+   {
+    "k": "categoriacuprodusedesezonlareducere|",
+    "titlu": "Categoria cu Produse de Sezon la Reducere",
+    "cod": false,
+    "prima": "2026-07-03",
+    "ultima": "2026-09-24",
+    "expira": "2026-12-30",
+    "activa": true
+   }
+  ],
+  "ada-shoes.ro": [
+   {
+    "k": "40reducere|",
+    "titlu": "40% reducere",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-30",
+    "activa": false
+   },
+   {
+    "k": "startcampanieprimavaravara2026reduceridepanala15|amfm20",
+    "titlu": "Start campanie Primavara-Vara 2026. Reduceri de pana la 15%",
+    "cod": true,
+    "prima": "2026-05-24",
+    "ultima": "2026-05-24",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "15extrareducere|",
+    "titlu": "15% EXTRA reducere",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-05-24",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "adguard-vpn.com": [
+   {
+    "k": "impactvpn75|",
+    "titlu": "IMPACTVPN75 — 75% off a 2-year AdGuard VPN subscription. The promo code will be valid until November 25, 2026.",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-11-25",
+    "activa": true
+   }
+  ],
+  "adguard.com": [
+   {
+    "k": "impactvpn75|",
+    "titlu": "IMPACTVPN75 — 75% off a 2-year AdGuard VPN subscription. The promo code will be valid until November 25, 2026.",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-15",
+    "expira": "2026-11-25",
+    "activa": false
+   }
+  ],
+  "afisport.ro": [
+   {
+    "k": "extragarantie23anilabicicleteafisportro|",
+    "titlu": "Extragarantie 2+3 ani la Biciclete Afisport.ro",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-29",
+    "activa": true
+   }
+  ],
+  "amazon.com": [
+   {
+    "k": "couponofclipinhairextensions|",
+    "titlu": "coupon of clip in hair extensions",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-30",
+    "activa": true
+   }
+  ],
+  "answear.ro": [
+   {
+    "k": "backtoschool|bts",
+    "titlu": "BACK TO SCHOOL",
+    "cod": true,
+    "prima": "2026-08-21",
+    "ultima": "2026-09-09",
+    "expira": "2026-09-09",
+    "activa": false
+   }
+  ],
+  "apiland.ro": [
+   {
+    "k": "backtoschool50leireducere|",
+    "titlu": "Back to School – 50 lei reducere",
+    "cod": false,
+    "prima": "2026-08-21",
+    "ultima": "2026-09-13",
+    "expira": "2026-09-13",
+    "activa": false
+   },
+   {
+    "k": "startdevaracutoniceleapicoleapiland|",
+    "titlu": "Start de vară cu tonicele apicole ApiLand",
+    "cod": false,
+    "prima": "2026-05-25",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "arabescu.ro": [
+   {
+    "k": "pachetecu213355parfumuricadoudeladoar15999lei|",
+    "titlu": "Pachete cu 2+1 / 3+3 / 5+5 Parfumuri Cadou de la doar 159,99lei",
+    "cod": false,
+    "prima": "2026-07-01",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-29",
+    "activa": true
+   }
+  ],
+  "aronia-charlottenburg.ro": [
+   {
+    "k": "promotiearonino|",
+    "titlu": "Promotie Aronino",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-30",
+    "activa": true
+   },
+   {
+    "k": "varacuaronia|",
+    "titlu": "Vara cu Aronia",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-31",
+    "activa": false
+   },
+   {
+    "k": "summer15|summer15",
+    "titlu": "Vara continuă cu noi surprize pentru tine și cei dragi! ☀️ În perioada 15–31 iulie, profită de o reducere suplimentară de 15% la toate…",
+    "cod": true,
+    "prima": "2026-07-16",
+    "ultima": "2026-07-31",
+    "expira": "2026-07-31",
+    "activa": false
+   },
+   {
+    "k": "transportgratuit|",
+    "titlu": "TRANSPORT GRATUIT",
+    "cod": false,
+    "prima": "2026-07-03",
+    "ultima": "2026-07-11",
+    "expira": "2026-07-11",
+    "activa": false
+   },
+   {
+    "k": "flashsalepanain30iunie2026|finaliunie",
+    "titlu": "Flash sale până în 30 iunie 2026",
+    "cod": true,
+    "prima": "2026-06-29",
+    "ultima": "2026-06-30",
+    "expira": "2026-06-30",
+    "activa": false
+   }
+  ],
+  "ashimaryhair.com": [
+   {
+    "k": "upto80off|",
+    "titlu": "up to $80 off",
+    "cod": false,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-29",
+    "activa": true
+   },
+   {
+    "k": "70offcoloredwigs|",
+    "titlu": "70% OFF Colored Wigs",
+    "cod": false,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-29",
+    "activa": true
+   },
+   {
+    "k": "13x6fulllace2220sameprice|",
+    "titlu": "13x6 Full Lace , 22\"=20“ Same Price",
+    "cod": false,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-29",
+    "activa": true
+   }
+  ],
+  "asus.com": [
+   {
+    "k": "peste90demodeledelaptopuribeneficiazade10reduceredoarinasuseshop|summer10",
+    "titlu": "🎉 Peste 90 de modele de laptopuri beneficiază de 10% reducere doar în ASUS eShop!",
+    "cod": true,
+    "prima": "2026-07-16",
+    "ultima": "2026-07-31",
+    "expira": "2026-07-31",
+    "activa": false
+   }
+  ],
+  "atelier49.ro": [
+   {
+    "k": "panala50reducerelaprodusedinceramica|",
+    "titlu": "Pana la 50% reducere la produse din ceramica",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-30",
+    "activa": false
+   },
+   {
+    "k": "cadouridesfantamariacupanala42reducere|atelier49",
+    "titlu": "Cadouri de Sfanta Maria cu pana la 42% reducere",
+    "cod": true,
+    "prima": "2026-07-16",
+    "ultima": "2026-08-10",
+    "expira": "2026-08-10",
+    "activa": false
+   },
+   {
+    "k": "panala41discountlaproduseartizanaledinlemn|atelier49",
+    "titlu": "Pana la 41% Discount la Produse Artizanale din Lemn",
+    "cod": true,
+    "prima": "2026-06-29",
+    "ultima": "2026-07-15",
+    "expira": "2026-07-31",
+    "activa": false
+   },
+   {
+    "k": "reduceridepanala52laproduseartizanaleromanesti|",
+    "titlu": "Reduceri de până la 52% la produse artizanale românești",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "atomico.ro": [
+   {
+    "k": "ofertaluniiiulielaatomicocureduceridepanala50|",
+    "titlu": "Oferta Lunii Iulie la Atomico cu reduceri de până la 50%",
+    "cod": false,
+    "prima": "2026-07-16",
+    "ultima": "2026-07-31",
+    "expira": "2026-07-31",
+    "activa": false
+   },
+   {
+    "k": "promovaracureduceridepanala55laproduseleselectatepentrucasasigradina|",
+    "titlu": "PromoVARA cu reduceri de până la 55% la produsele selectate pentru casă și grădină",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-31",
+    "activa": false
+   },
+   {
+    "k": "springdealscupanala55launeltesezonierepentrucurtesigradina|",
+    "titlu": "Spring Deals cu până la -55% la unelte sezoniere pentru curte și grădină",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "atzavarahotel.com": [
+   {
+    "k": "travelwithgeatdiscountsupto20offonstaysatzavarahotelspa|aquaweb",
+    "titlu": "Travel with geat discounts - Up to 20% off on stays | Atzavara Hotel & Spa",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-10-01",
+    "activa": true
+   }
+  ],
+  "autobob.ro": [
+   {
+    "k": "reduceridepanala30labrandulmotul|",
+    "titlu": "Reduceri de pana la -30% la brandul Motul",
+    "cod": false,
+    "prima": "2026-07-16",
+    "ultima": "2026-07-31",
+    "expira": "2026-07-31",
+    "activa": false
+   },
+   {
+    "k": "pacheterevizieautocureduceredepanala35|",
+    "titlu": "Pachete revizie auto cu reducere de pana la -35%",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-09-24",
+    "expira": "2026-10-31",
+    "activa": true
+   },
+   {
+    "k": "reduceridepanala40labrandulmotul|",
+    "titlu": "Reduceri de pana la -40% la brandul Motul",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "autofull.com": [
+   {
+    "k": "5sitewideaffa5|",
+    "titlu": "5% Sitewide：AFFA5",
+    "cod": false,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-19",
+    "expira": "2027-09-11",
+    "activa": false
+   },
+   {
+    "k": "8sitewideaffnew8|",
+    "titlu": "8% Sitewide：AFFNEW8",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "2027-01-16",
+    "activa": false
+   }
+  ],
+  "automobilus.ro": [
+   {
+    "k": "reducere20lavopseauapentruetrierefoliatecpastell|",
+    "titlu": "Reducere 20% la Vopseaua pentru etriere FOLIATEC Pastell",
+    "cod": false,
+    "prima": "2026-08-21",
+    "ultima": "2026-09-13",
+    "expira": "2026-09-13",
+    "activa": false
+   },
+   {
+    "k": "laoricesetdediscuridefranacomandataicadouunspraydecuratatfrana|",
+    "titlu": "La orice set de discuri de frână comandat, ai Cadou un spray de curatat frana",
+    "cod": false,
+    "prima": "2026-08-21",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-31",
+    "activa": false
+   },
+   {
+    "k": "gamameguiarscu19peautomobilusro|",
+    "titlu": "Gama Meguiar's cu -19% pe Automobilus.ro",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-31",
+    "activa": false
+   },
+   {
+    "k": "15reducerelakitulderestaurarefaruricupolimerlichid|",
+    "titlu": "15% reducere la Kitul de restaurare faruri cu polimer lichid",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-30",
+    "activa": false
+   },
+   {
+    "k": "10reducerelatoateproduseledepeautomobilusrocucodulvacanta|vacanta",
+    "titlu": "10% reducere la TOATE produsele de pe automobilus.ro cu codul VACANTA !",
+    "cod": true,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-31",
+    "activa": false
+   },
+   {
+    "k": "kituldepolimerarevenitinstoc10cucodulvara10|vara10",
+    "titlu": "Kitul de polimer a revenit în stoc! -10% cu codul VARA10",
+    "cod": true,
+    "prima": "2026-07-16",
+    "ultima": "2026-07-31",
+    "expira": "2026-07-31",
+    "activa": false
+   },
+   {
+    "k": "bonusdecomisionpentruafiliatiiautomobilusroiniunie|",
+    "titlu": "🔥 Bonus de comision!!! pentru afiliatii Automobilus.ro în iunie !",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-06-30",
+    "expira": "2026-06-30",
+    "activa": false
+   },
+   {
+    "k": "mirkapolarosrp600nouletalonalpolishuluiprofesionalacumcu20reducere|",
+    "titlu": "Mirka POLAROS RP 600 – Noul etalon al polishului profesional acum cu 20% reducere",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-30",
+    "expira": "2026-06-30",
+    "activa": false
+   },
+   {
+    "k": "livrarerapidasiineasybox|",
+    "titlu": "Livrare rapida si in easy box!",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-30",
+    "expira": "2026-06-30",
+    "activa": false
+   },
+   {
+    "k": "reducerilaaccesoriilemasinilorelectrice|",
+    "titlu": "Reduceri la accesoriile masinilor electrice !",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "reduceredepanala24lavopseauafoliatecpentruetriere|",
+    "titlu": "Reducere de pana la 24% la vopseaua FOLIATEC pentru etriere!",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "avidlove.com": [
+   {
+    "k": "aff20|",
+    "titlu": "Enjoy 20% off sitewide with code: AFF20",
+    "cod": false,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-24",
+    "expira": "",
+    "activa": true
+   }
+  ],
+  "awolvision.de": [
+   {
+    "k": "affv130|",
+    "titlu": "Alliance Exclusive Discount $130 for New User Can be combined with promotional offers Minimum purchase amount of $500 Each new user is…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-15",
+    "expira": "2026-12-31",
+    "activa": false
+   },
+   {
+    "k": "affv100|",
+    "titlu": "Alliance Exclusive Discount $100 Can be combined with promotional offers Minimum purchase amount of $500.",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-15",
+    "expira": "2026-12-31",
+    "activa": false
+   }
+  ],
+  "awolvision.eu": [
+   {
+    "k": "affv130|",
+    "titlu": "Alliance Exclusive Discount $130 for New User Can be combined with promotional offers Minimum purchase amount of $500 Each new user is…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-15",
+    "expira": "2026-12-31",
+    "activa": false
+   },
+   {
+    "k": "affv100|",
+    "titlu": "Alliance Exclusive Discount $100 Can be combined with promotional offers Minimum purchase amount of $500.",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-15",
+    "expira": "2026-12-31",
+    "activa": false
+   }
+  ],
+  "awolvision.fr": [
+   {
+    "k": "affv130|",
+    "titlu": "Alliance Exclusive Discount $130 for New User Can be combined with promotional offers Minimum purchase amount of $500 Each new user is…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-15",
+    "expira": "2026-12-31",
+    "activa": false
+   },
+   {
+    "k": "affv100|",
+    "titlu": "Alliance Exclusive Discount $100 Can be combined with promotional offers Minimum purchase amount of $500.",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-15",
+    "expira": "2026-12-31",
+    "activa": false
+   }
+  ],
+  "billionconnect.net": [
+   {
+    "k": "newbc20|",
+    "titlu": "Use code NEWBC20 to enjoy 20% OFF for new customers",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-12-31",
+    "activa": true
+   }
+  ],
+  "booking.regalhotel.com": [
+   {
+    "k": "bookyourstayandgetbestpriceregalhotels|moon26",
+    "titlu": "Book your stay and get best price, Regal Hotels",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-26",
+    "activa": true
+   },
+   {
+    "k": "30dayslongstayingpackageiclubfortresshillhotelregalhotels|rwls30",
+    "titlu": "30 Days Long Staying Package | iclub Fortress Hill Hotel | Regal Hotels",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-01-01",
+    "activa": true
+   }
+  ],
+  "bookzone-ro-9c9bce7e-a8e0-40de-8d7a-afa44b9f3d2a": [
+   {
+    "k": "noupebookzonero1200detitluriinenglezaunadevaratfestinliterar|",
+    "titlu": "Nou pe bookzone.ro: 1200 de titluri în engleză – Un adevărat festin literar!",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-06-28",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "bookzone.ro": [
+   {
+    "k": "ainceputextra50pebookzonero|",
+    "titlu": "A început EXTRA50 pe bookzone.ro",
+    "cod": false,
+    "prima": "2026-07-01",
+    "ultima": "2026-07-02",
+    "expira": "2026-07-02",
+    "activa": false
+   },
+   {
+    "k": "noupebookzonero1200detitluriinenglezaunadevaratfestinliterar|",
+    "titlu": "Nou pe bookzone.ro: 1200 de titluri în engleză – Un adevărat festin literar!",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-08-19",
+    "expira": "2026-12-31",
+    "activa": false
+   }
+  ],
+  "brainmarket.ro": [
+   {
+    "k": "10summersale|",
+    "titlu": "-10% SUMMER SALE",
+    "cod": false,
+    "prima": "2026-07-16",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-31",
+    "activa": false
+   }
+  ],
+  "bsgmag.ro": [
+   {
+    "k": "summersale|",
+    "titlu": "SUMMER SALE",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-07-15",
+    "expira": "2026-07-15",
+    "activa": false
+   }
+  ],
+  "caraielli.ro": [
+   {
+    "k": "reduceridepanala30laincaltaminteadevaraselectata|",
+    "titlu": "Reduceri de până la 30% la încălțămintea de vară selectată",
+    "cod": false,
+    "prima": "2026-07-16",
+    "ultima": "2026-07-31",
+    "expira": "2026-07-31",
+    "activa": false
+   }
+  ],
+  "carturesti.ro": [
+   {
+    "k": "kilipirmerchfandom|",
+    "titlu": "Kilipir Merch Fandom",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-09-24",
+    "expira": "2026-10-30",
+    "activa": true
+   },
+   {
+    "k": "backtoschool2026|",
+    "titlu": "Back to School 2026",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-27",
+    "activa": true
+   },
+   {
+    "k": "21edituranemira|",
+    "titlu": "2+1 Editura Nemira",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-09-06",
+    "expira": "2026-09-06",
+    "activa": false
+   },
+   {
+    "k": "vacantacujoaca|",
+    "titlu": "Vacanță cu joacă",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-23",
+    "expira": "2026-08-23",
+    "activa": false
+   },
+   {
+    "k": "targdecarteiii|",
+    "titlu": "Târg de carte III",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-23",
+    "expira": "2026-08-23",
+    "activa": false
+   },
+   {
+    "k": "carteapeval11carteacugeniusart|",
+    "titlu": "Cartea pe val: 1+1 Cartea cu genius, ART",
+    "cod": false,
+    "prima": "2026-07-16",
+    "ultima": "2026-08-02",
+    "expira": "2026-08-02",
+    "activa": false
+   },
+   {
+    "k": "carteapeval20cartegraficacopiiinromana|",
+    "titlu": "Cartea pe val: -20% carte grafică copii, în română",
+    "cod": false,
+    "prima": "2026-07-16",
+    "ultima": "2026-07-26",
+    "expira": "2026-07-26",
+    "activa": false
+   },
+   {
+    "k": "campionatulmondialdefotbal2026|",
+    "titlu": "Campionatul Mondial de Fotbal 2026",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-07-18",
+    "expira": "2026-07-18",
+    "activa": false
+   },
+   {
+    "k": "21lacolectiahumanitasfiction|",
+    "titlu": "2+1 la colecția Humanitas Fiction",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-07-12",
+    "expira": "2026-07-12",
+    "activa": false
+   },
+   {
+    "k": "tomboladixit|",
+    "titlu": "Tombolă Dixit",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "rasfoiestealbumeinengleza|",
+    "titlu": "Răsfoiește albume în engleză",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "legamigoodvibescupanala25reducere|",
+    "titlu": "Legami Good Vibes cu până la -25% reducere",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "anulscolarsaterminatpovesteaabiaincepe|",
+    "titlu": "Anul școlar s-a terminat. Povestea abia începe",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "colorezisiterelaxezi|",
+    "titlu": "Colorezi și te relaxezi",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-05-24",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "casa-andina.com": [
+   {
+    "k": "upto17offondifferentproprietiesofcasaandinacasaandina|discount2026",
+    "titlu": "Up to 17% OFF on different proprieties of Casa Andina | Casa Andina",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-10-01",
+    "activa": true
+   }
+  ],
+  "cezi.ro": [
+   {
+    "k": "summertravelhairproductsdiscount|",
+    "titlu": "Summer - travel, hair products discount",
+    "cod": false,
+    "prima": "2026-07-03",
+    "ultima": "2026-08-19",
+    "expira": "2027-01-30",
+    "activa": false
+   }
+  ],
+  "chroot.ro": [
+   {
+    "k": "serverevirtuale2024|",
+    "titlu": "Servere virtuale 2024",
+    "cod": false,
+    "prima": "2026-05-26",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "gazduireweb20241|",
+    "titlu": "Gazduire web 2024-1",
+    "cod": false,
+    "prima": "2026-05-26",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "cllix.com": [
+   {
+    "k": "springescapegetupto20offcllixapartmentsandhotelsarise|springcllix26",
+    "titlu": "Spring Escape | Get upto 20% Off, CLLIX Apartments and Hotels: Arise",
+    "cod": true,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-24",
+    "expira": "2026-10-16",
+    "activa": true
+   },
+   {
+    "k": "enjoy10offonyourstaywithbookdirectcllixapartmentsandhotelsarise|bookdirect2save",
+    "titlu": "Enjoy 10% off On Your Stay With Book Direct -CLLIX Apartments and Hotels: Arise",
+    "cod": true,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-24",
+    "expira": "2027-01-01",
+    "activa": true
+   },
+   {
+    "k": "springescapeget20offcllixapartmentsandhotelsarise|springcllix26",
+    "titlu": "Spring Escape | Get 20% Off, CLLIX Apartments and Hotels: Arise",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-15",
+    "expira": "2026-10-16",
+    "activa": false
+   }
+  ],
+  "comfier.com": [
+   {
+    "k": "comfy35|",
+    "titlu": "35% Off for All Massagers",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "",
+    "activa": true
+   }
+  ],
+  "conqueco.com": [
+   {
+    "k": "backtoroutine10off|",
+    "titlu": "BACK TO ROUTINE · 10% OFF",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-10",
+    "expira": "2026-09-10",
+    "activa": false
+   }
+  ],
+  "craftup.ro": [
+   {
+    "k": "solutiipremiumdeambalarepungisisacosepentruoriceocaziecupreturidela11leiset|",
+    "titlu": "Solutii Premium de Ambalare: Pungi si Sacose pentru orice ocazie cu preturi de la 11 lei/set",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-30",
+    "activa": true
+   },
+   {
+    "k": "reduceridepanala66laambalajedecadousiaccesoriiprodusehandmade|",
+    "titlu": "Reduceri de pana la -66% la ambalaje de cadou si accesorii produse handmade",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-30",
+    "activa": true
+   },
+   {
+    "k": "extrareducerecraftup15laminim3produseachizitionatedinselectie|",
+    "titlu": "EXTRA reducere CraftUp -15% la minim 3 produse achizitionate din selectie",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-09-24",
+    "expira": "2026-10-31",
+    "activa": true
+   }
+  ],
+  "crownandchamparesorts.com": [
+   {
+    "k": "extra5promocodeofferonroomratesdirectbookingkuredumaldives|extra5off",
+    "titlu": "Extra 5% PROMOCODE Offer on Room Rates -Direct Booking| Kuredu Maldives",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2028-01-01",
+    "activa": true
+   }
+  ],
+  "curteaveche.ro": [
+   {
+    "k": "panala90reducere|",
+    "titlu": "Pana la 90% reducere",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-09-24",
+    "expira": "2026-12-30",
+    "activa": true
+   }
+  ],
+  "cvlife.com": [
+   {
+    "k": "30discount|30cvlife",
+    "titlu": "30% discount",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-06-01",
+    "activa": true
+   }
+  ],
+  "dacris.net": [
+   {
+    "k": "produsepromotionalepersonalizate|",
+    "titlu": "Produse promotionale personalizate",
+    "cod": false,
+    "prima": "2026-07-16",
+    "ultima": "2026-07-30",
+    "expira": "2026-07-30",
+    "activa": false
+   },
+   {
+    "k": "pauzedecafeacugustintens|",
+    "titlu": "Pauze de cafea cu gust intens",
+    "cod": false,
+    "prima": "2026-07-16",
+    "ultima": "2026-07-30",
+    "expira": "2026-07-30",
+    "activa": false
+   },
+   {
+    "k": "printurileimpecabileincepcuhartiadecopiatorpotrivita|",
+    "titlu": "Printurile impecabile încep cu hârtia de copiator potrivită",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-06-29",
+    "expira": "2026-06-29",
+    "activa": false
+   },
+   {
+    "k": "alegepilotpentruunscrisclarsicursiv|",
+    "titlu": "Alege PILOT pentru un scris clar și cursiv",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-06-29",
+    "expira": "2026-06-29",
+    "activa": false
+   },
+   {
+    "k": "ambalajehorecasiconsumabileprofesionale|",
+    "titlu": "Ambalaje HoReCa și consumabile profesionale",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "accesoriipremiumpentrulaptopmousetastaturasihuburi|",
+    "titlu": "Accesorii premium pentru laptop, mouse, tastatură și hub-uri",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "daedalusonline.eu": [
+   {
+    "k": "descoperabeneficiiledaedalusonline|",
+    "titlu": "Descoperă beneficiile Daedalus Online",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "davopro.ro": [
+   {
+    "k": "profilesitreceridepardosealadinaluminiuculorinoigriantracitgricimentsiimitatielemnnatural|",
+    "titlu": "Profile si treceri de pardoseala din aluminiu - culori noi: gri antracit, gri ciment si imitatie lemn natural",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-31",
+    "activa": false
+   },
+   {
+    "k": "folieprotectiesolarapentruferestre|",
+    "titlu": "Folie protectie solara pentru ferestre",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-31",
+    "activa": false
+   },
+   {
+    "k": "foliidegeamcuprotectiesolaraprotejeazaticasadeefectelerazeloruv|",
+    "titlu": "Folii de geam cu protectie solara - Protejeaza-ti casa de efectele razelor UV",
+    "cod": false,
+    "prima": "2026-05-25",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "discounturiatractivelapaveledalesiborduridincauciuc100reciclatamenajeazatigradinaecofriendlysicustil|",
+    "titlu": "Discount-uri atractive la Pavele, Dale si Borduri din cauciuc 100% reciclat - amenajeaza-ti gradina eco friendly si cu stil",
+    "cod": false,
+    "prima": "2026-05-25",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "decathlon.ro": [
+   {
+    "k": "maratonulreducerilorincepeutladecathloninlunaiulie|",
+    "titlu": "Maratonul Reducerilor începeut la Decathlon în luna Iulie!",
+    "cod": false,
+    "prima": "2026-07-03",
+    "ultima": "2026-07-30",
+    "expira": "2026-07-30",
+    "activa": false
+   }
+  ],
+  "delaria.ro": [
+   {
+    "k": "transportgratuitsi15reducerelacreioanecoloratepedelariaro|",
+    "titlu": "Transport gratuit și 15% reducere la creioane colorate pe Delaria.ro",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-07-24",
+    "expira": "2026-07-24",
+    "activa": false
+   },
+   {
+    "k": "magic1515reducerelacreioanecoloratesitransportgratuitlacomenzide149lei|magic15",
+    "titlu": "MAGIC15: 15% reducere la creioane colorate și transport gratuit la comenzi de 149 lei",
+    "cod": true,
+    "prima": "2026-06-29",
+    "ultima": "2026-06-29",
+    "expira": "2026-06-29",
+    "activa": false
+   }
+  ],
+  "dhgate.com": [
+   {
+    "k": "dh2026sepsave8|",
+    "titlu": "Save $8 on orders over $80 using coupon DH2026SEPSAVE8 at DHgate.",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-30",
+    "activa": true
+   },
+   {
+    "k": "dh2026sepsave5|",
+    "titlu": "Save $5 on orders over $50 using coupon DH2026SEPSAVE5 at DHgate.",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-30",
+    "activa": true
+   },
+   {
+    "k": "dh2026sepsave4|",
+    "titlu": "Save $4 on orders over $40 using coupon DH2026SEPSAVE4 at DHgate.",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-30",
+    "activa": true
+   },
+   {
+    "k": "dh2026sepsave40|",
+    "titlu": "Save $40 on orders over $850 using coupon DH2026SEPSAVE40 at DHgate.",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-30",
+    "activa": true
+   },
+   {
+    "k": "dh2026sepsave3|",
+    "titlu": "Save $3 on orders over $29 using coupon DH2026SEPSAVE3 at DHgate.",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-30",
+    "activa": true
+   },
+   {
+    "k": "dh2026sepsave35|",
+    "titlu": "Save $35 on orders over $600 using coupon DH2026SEPSAVE35 at DHgate.",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-30",
+    "activa": true
+   },
+   {
+    "k": "dh2026sepsave30|",
+    "titlu": "Save $30 on orders over $500 using coupon DH2026SEPSAVE30 at DHgate.",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-30",
+    "activa": true
+   },
+   {
+    "k": "dh2026sepsave25|",
+    "titlu": "Save $25 on orders over $300 using coupon DH2026SEPSAVE25 at DHgate.",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-30",
+    "activa": true
+   },
+   {
+    "k": "dh2026sepsave20|",
+    "titlu": "Save $20 on orders over $200 using coupon DH2026SEPSAVE20 at DHgate.",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-30",
+    "activa": true
+   },
+   {
+    "k": "dh2026sepsave16|",
+    "titlu": "Save $16 on orders over $160 using coupon DH2026SEPSAVE16 at DHgate.",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-30",
+    "activa": true
+   },
+   {
+    "k": "dh2026sepsave12|",
+    "titlu": "Save $12 on orders over $120 using coupon DH2026SEPSAVE12 at DHgate.",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-30",
+    "activa": true
+   },
+   {
+    "k": "dh2026sepsave10|",
+    "titlu": "Save $10 on orders over $100 using coupon DH2026SEPSAVE10 at DHgate.",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-30",
+    "activa": true
+   },
+   {
+    "k": "dh2026sep8new|",
+    "titlu": "New user: Save $8 on orders over $50 using coupon DH2026SEP8NEW at DHgate.",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-30",
+    "activa": true
+   },
+   {
+    "k": "dh2026sep4new|",
+    "titlu": "New user: Save $4 on orders over $10 using coupon DH2026SEP4NEW at DHgate.",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-30",
+    "activa": true
+   },
+   {
+    "k": "dh2026sep3new|",
+    "titlu": "New user: Save $3 on orders over $5 using coupon DH2026SEP3NEW at DHgate.",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-30",
+    "activa": true
+   },
+   {
+    "k": "dh2026sep10new|",
+    "titlu": "New user: Save $10 on orders over $85 using coupon DH2026SEP10NEW at DHgate.",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-30",
+    "activa": true
+   }
+  ],
+  "doctorshield.ro": [
+   {
+    "k": "doctorshieldreducerilaprodusepentrucasasibirou|",
+    "titlu": "Doctor Shield – Reduceri la produse pentru casa si birou",
+    "cod": false,
+    "prima": "2026-07-16",
+    "ultima": "2026-07-31",
+    "expira": "2026-07-31",
+    "activa": false
+   },
+   {
+    "k": "livraresireturgratuitlaoricecomandadegratarepaturibirourisiscaunedegaming|",
+    "titlu": "Livrare si retur GRATUIT la orice comanda de gratare, paturi, birouri si scaune de gaming",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-30",
+    "activa": true
+   }
+  ],
+  "dreamramp.ro": [
+   {
+    "k": "reducere15lamopcugaleataelectricadreamrampproseparaapacuratadeceamurdara|",
+    "titlu": "Reducere 15% la Mop cu găleată electrică Dreamramp® Pro – Separă apa curată de cea murdară",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-09-12",
+    "expira": "2026-09-12",
+    "activa": false
+   },
+   {
+    "k": "34reducerelaperieelectricamultifunctionaladreamramp7in1cumanerextensibil|",
+    "titlu": "34% reducere la Perie electrică multifuncțională Dreamramp® 7-în-1 cu mâner extensibil",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-09-09",
+    "expira": "2026-09-09",
+    "activa": false
+   },
+   {
+    "k": "moprotativcugaleataelectricadreamrampproseparareapacuratatransportgratuit|",
+    "titlu": "Mop rotativ cu găleată electrică Dreamramp® Pro – Separare apa curata + TRANSPORT GRATUIT",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-09-06",
+    "expira": "2026-09-06",
+    "activa": false
+   }
+  ],
+  "drmax.ro": [
+   {
+    "k": "pachetdegrijaaugust|",
+    "titlu": "Pachet de Grijă – August",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-30",
+    "activa": false
+   },
+   {
+    "k": "oferteleluniiaugust|",
+    "titlu": "Ofertele Lunii August",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-30",
+    "activa": false
+   },
+   {
+    "k": "maxdaysmachiaj182408|",
+    "titlu": "Max Days – Machiaj 18-24.08",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-23",
+    "expira": "2026-08-23",
+    "activa": false
+   },
+   {
+    "k": "50reducerelaproduselemarcapropriedrmax|",
+    "titlu": "50% reducere la produsele marca proprie Dr. Max",
+    "cod": false,
+    "prima": "2026-07-16",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-30",
+    "activa": false
+   },
+   {
+    "k": "maxdaysalimentatiesanatoasa142007|",
+    "titlu": "Max Days – Alimentație Sănătoasă 14-20.07",
+    "cod": false,
+    "prima": "2026-07-16",
+    "ultima": "2026-07-19",
+    "expira": "2026-07-19",
+    "activa": false
+   },
+   {
+    "k": "oferteleluniiiulie|",
+    "titlu": "Ofertele lunii Iulie",
+    "cod": false,
+    "prima": "2026-07-03",
+    "ultima": "2026-07-30",
+    "expira": "2026-07-30",
+    "activa": false
+   },
+   {
+    "k": "campanieprodusesolareiulie2026|",
+    "titlu": "Campanie Produse Solare - Iulie 2026",
+    "cod": false,
+    "prima": "2026-07-01",
+    "ultima": "2026-07-30",
+    "expira": "2026-07-30",
+    "activa": false
+   },
+   {
+    "k": "pachetdegrijaiulie|",
+    "titlu": "Pachet de Grijă – Iulie",
+    "cod": false,
+    "prima": "2026-06-30",
+    "ultima": "2026-07-30",
+    "expira": "2026-07-30",
+    "activa": false
+   },
+   {
+    "k": "toatalumeacastigaladrmax13107|",
+    "titlu": "Toată lumea câștigă la Dr. Max 1-31.07",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-07-30",
+    "expira": "2026-07-30",
+    "activa": false
+   },
+   {
+    "k": "oferteleluniiiunie|",
+    "titlu": "Ofertele lunii Iunie",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-06-29",
+    "expira": "2026-06-29",
+    "activa": false
+   },
+   {
+    "k": "maxiitiaducereducerilasutedeproduse|",
+    "titlu": "Maxi îți aduce reduceri la sute de produse!",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-06-29",
+    "expira": "2026-06-29",
+    "activa": false
+   },
+   {
+    "k": "oferteleluniimai|",
+    "titlu": "Ofertele Lunii - Mai",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "campanieprodusesolare193105|",
+    "titlu": "Campanie Produse Solare 19-31.05",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "e-potion.ro": [
+   {
+    "k": "10reducerepetotsiteulepotionro|epotion10",
+    "titlu": "10% reducere pe tot site-ul e-Potion.ro",
+    "cod": true,
+    "prima": "2026-07-16",
+    "ultima": "2026-09-24",
+    "expira": "2027-07-09",
+    "activa": true
+   }
+  ],
+  "editura-arthur.ro": [
+   {
+    "k": "campaniecartisipachetecucartidelaedituraarthur|",
+    "titlu": "Campanie cărți și pachete cu cărți de la Editura Arthur",
+    "cod": false,
+    "prima": "2026-07-16",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-31",
+    "activa": false
+   }
+  ],
+  "edituracorint.ro": [
+   {
+    "k": "hotreads|arde",
+    "titlu": "Hot Reads!",
+    "cod": true,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-21",
+    "expira": "2026-08-21",
+    "activa": false
+   }
+  ],
+  "edituradiana.ro": [
+   {
+    "k": "inapoilagradinitacuedituradiana|",
+    "titlu": "Inapoi la gradinita cu Editura Diana!",
+    "cod": false,
+    "prima": "2026-08-21",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-29",
+    "activa": true
+   },
+   {
+    "k": "provocareacelor15minutepoatelogicosadevinanouljocpreferatalcopiluluitau|",
+    "titlu": "Provocarea celor 15 minute: Poate LOGICO® să devină noul joc preferat al copilului tău?",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-30",
+    "activa": false
+   }
+  ],
+  "elindor.ro": [
+   {
+    "k": "10reducereextrapentruafiliatiielindor|elindorhome10",
+    "titlu": "10% reducere extra pentru afiliatii Elindor 😊",
+    "cod": true,
+    "prima": "2026-05-25",
+    "ultima": "2026-07-24",
+    "expira": "2026-07-24",
+    "activa": false
+   }
+  ],
+  "emag.ro": [
+   {
+    "k": "crazydays1119august2026|",
+    "titlu": "Crazy Days 11-19 august 2026",
+    "cod": false,
+    "prima": "2026-08-11",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "campaniecosulsaptamanal1131august|",
+    "titlu": "Campanie Cosul Saptamanal, 11-31 august",
+    "cod": false,
+    "prima": "2026-08-11",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "electroweekend0710august2026|",
+    "titlu": "Electro Weekend 07-10 august 2026",
+    "cod": false,
+    "prima": "2026-08-07",
+    "ultima": "2026-08-10",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "stockbusters410august2026|",
+    "titlu": "Stock Busters 4 - 10 august 2026",
+    "cod": false,
+    "prima": "2026-08-04",
+    "ultima": "2026-08-10",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "saptamanamamasicopilul39august2026|",
+    "titlu": "Saptamana Mama si Copilul 3 - 9 august 2026",
+    "cod": false,
+    "prima": "2026-08-03",
+    "ultima": "2026-08-09",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "electroweekend30iulie3august2026|",
+    "titlu": "Electro Weekend 30 iulie - 3 august 2026",
+    "cod": false,
+    "prima": "2026-07-30",
+    "ultima": "2026-08-03",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "coolingweek27iulie02august|",
+    "titlu": "Cooling Week, 27 iulie-02 august",
+    "cod": false,
+    "prima": "2026-07-27",
+    "ultima": "2026-08-02",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "electroweekend2427iulie|",
+    "titlu": "Electro Weekend 24-27 iulie",
+    "cod": false,
+    "prima": "2026-07-24",
+    "ultima": "2026-07-27",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "saptamanafashion2026iulie|",
+    "titlu": "Saptamana Fashion, 20-26 iulie",
+    "cod": false,
+    "prima": "2026-07-20",
+    "ultima": "2026-07-26",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "electroweekend1720iulie|",
+    "titlu": "Electro Weekend 17-20 iulie",
+    "cod": false,
+    "prima": "2026-07-17",
+    "ultima": "2026-07-20",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "crazydays1416iulie|",
+    "titlu": "Crazy Days 14-16 iulie",
+    "cod": false,
+    "prima": "2026-07-14",
+    "ultima": "2026-07-16",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "electroweekend1113iulie2026|",
+    "titlu": "Electro Weekend 11-13 iulie 2026",
+    "cod": false,
+    "prima": "2026-07-11",
+    "ultima": "2026-07-13",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "campaniestockbusters710iulie|",
+    "titlu": "Campanie Stock Busters, 7-10 iulie",
+    "cod": false,
+    "prima": "2026-07-07",
+    "ultima": "2026-07-10",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "electroweekend36iulie2026|",
+    "titlu": "Electro Weekend 3 - 6 iulie 2026",
+    "cod": false,
+    "prima": "2026-07-03",
+    "ultima": "2026-07-06",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "saptamanafestivalului29iunie05iulie2026|",
+    "titlu": "Saptamana Festivalului, 29 iunie-05 iulie 2026",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-07-05",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "electroweekend2629iunie2026|",
+    "titlu": "Electro Weekend 26 - 29 iunie 2026",
+    "cod": false,
+    "prima": "2026-06-28",
+    "ultima": "2026-06-29",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "empria.ro": [
+   {
+    "k": "pregatiridevacantapentrucopii20|",
+    "titlu": "Pregătiri de vacanță pentru copii -20%",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "estel.ro": [
+   {
+    "k": "provocareaparuluisanatosintoarcerealarutinadetoamna|",
+    "titlu": "Provocarea parului sanatos – Întoarcerea la rutina de toamnă",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-09-24",
+    "expira": "2026-10-15",
+    "activa": true
+   },
+   {
+    "k": "augustsummersale|",
+    "titlu": "August Summer Sale",
+    "cod": false,
+    "prima": "2026-07-16",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-31",
+    "activa": false
+   },
+   {
+    "k": "prindesoareleinparultausireducereade25|",
+    "titlu": "Prinde soarele in parul tau si reducerea de 25%",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-07-18",
+    "expira": "2026-07-18",
+    "activa": false
+   }
+  ],
+  "eufy.com": [
+   {
+    "k": "videodoorbelle340smartdisplaye10|",
+    "titlu": "Video Doorbell E340 & Smart Display E10",
+    "cod": false,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-19",
+    "expira": "2026-09-20",
+    "activa": false
+   },
+   {
+    "k": "solocams3402pak|",
+    "titlu": "SoloCam S340 (2 pak)",
+    "cod": false,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-19",
+    "expira": "2026-09-20",
+    "activa": false
+   },
+   {
+    "k": "indoorcams350meteufyrobotstofzuigeromnie25|",
+    "titlu": "Indoor Cam S350 met eufy Robotstofzuiger Omni E25",
+    "cod": false,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-19",
+    "expira": "2026-09-20",
+    "activa": false
+   },
+   {
+    "k": "indoorcams3504pak|",
+    "titlu": "Indoor Cam S350 (4 pak)",
+    "cod": false,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-19",
+    "expira": "2026-09-20",
+    "activa": false
+   },
+   {
+    "k": "eufyx10proomnistofzakken6stuks|",
+    "titlu": "eufy X10 Pro Omni + Stofzakken (6 stuks)",
+    "cod": false,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-19",
+    "expira": "2026-09-20",
+    "activa": false
+   },
+   {
+    "k": "eufyrobotstofzuigeromnis2eufys2vervangingsaccessoireset|",
+    "titlu": "eufy Robotstofzuiger Omni S2 + eufy S2 Vervangingsaccessoireset",
+    "cod": false,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-19",
+    "expira": "2026-09-20",
+    "activa": false
+   },
+   {
+    "k": "eufyrobotstofzuigeromnie28dustbag|",
+    "titlu": "eufy Robotstofzuiger Omni E28 + Dust Bag",
+    "cod": false,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-19",
+    "expira": "2026-09-20",
+    "activa": false
+   },
+   {
+    "k": "eufyrobotstofzuigeromnie25wit|",
+    "titlu": "eufy Robotstofzuiger Omni E25(wit)",
+    "cod": false,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-19",
+    "expira": "2026-09-20",
+    "activa": false
+   },
+   {
+    "k": "eufyrobotgrasmaaiere15eufyreplacementbladeset|",
+    "titlu": "eufy Robotgrasmaaier E15 + eufy Replacement Blade Set",
+    "cod": false,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-19",
+    "expira": "2026-09-20",
+    "activa": false
+   },
+   {
+    "k": "eufyrobotgrasmaaierc15solo|",
+    "titlu": "eufy Robotgrasmaaier C15 solo",
+    "cod": false,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-19",
+    "expira": "2026-09-20",
+    "activa": false
+   },
+   {
+    "k": "eufycamc372packhomebase3videodoorbelle340|",
+    "titlu": "eufyCam C37 2-pack + HomeBase 3 + Video Doorbell E340",
+    "cod": false,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-19",
+    "expira": "2026-09-20",
+    "activa": false
+   },
+   {
+    "k": "eufyborstkolfs2pro|",
+    "titlu": "eufy Borstkolf S2 Pro",
+    "cod": false,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-19",
+    "expira": "2026-09-20",
+    "activa": false
+   },
+   {
+    "k": "eufy4gltecams330floodlightcamerae340|",
+    "titlu": "eufy 4G LTE Cam S330 + Floodlight Camera E340",
+    "cod": false,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-19",
+    "expira": "2026-09-20",
+    "activa": false
+   },
+   {
+    "k": "eufy4gltecams3303paks|",
+    "titlu": "eufy 4G LTE Cam S330 (3 paks)",
+    "cod": false,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-19",
+    "expira": "2026-09-20",
+    "activa": false
+   },
+   {
+    "k": "videodoorbelle340chime2|",
+    "titlu": "Video Doorbell E340 + Chime 2",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "2026-09-20",
+    "activa": false
+   },
+   {
+    "k": "solarwalllightcams1202campak|",
+    "titlu": "Solar Wall Light Cam S120 (2-Cam pak)",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "2026-09-20",
+    "activa": false
+   },
+   {
+    "k": "eufysecurityeufycamc374cameraset|",
+    "titlu": "eufy Security eufyCam C37 4-Camera Set",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "2026-09-20",
+    "activa": false
+   },
+   {
+    "k": "eufysecurityeufycamc354camkitdraadloze|",
+    "titlu": "eufy Security eufyCam C35 4-Cam Kit, Draadloze",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "2026-09-20",
+    "activa": false
+   },
+   {
+    "k": "eufyrobotstofzuigeromnic28metaccessoireset|",
+    "titlu": "eufy Robotstofzuiger Omni C28 met accessoireset",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "2026-09-20",
+    "activa": false
+   },
+   {
+    "k": "eufyrobotgrasmaaierc15|",
+    "titlu": "eufy Robotgrasmaaier C15",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "2026-09-20",
+    "activa": false
+   },
+   {
+    "k": "eufypoenvrsecuritysystems4maxmeteufysmartdisplay|",
+    "titlu": "eufy PoE NVR Security System S4 Max met eufy Smart Display",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "2026-09-20",
+    "activa": false
+   },
+   {
+    "k": "eufypoebulletptzcams42pak|",
+    "titlu": "eufy PoE Bullet-PTZ Cam S4 (2 pak)",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "2026-09-20",
+    "activa": false
+   },
+   {
+    "k": "eufybabymonitormetcamerae214k|",
+    "titlu": "eufy Baby Monitor met camera E21, 4K",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "2026-09-20",
+    "activa": false
+   },
+   {
+    "k": "solocams3404pak|",
+    "titlu": "SoloCam S340 (4 pak)",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-13",
+    "expira": "2026-09-13",
+    "activa": false
+   },
+   {
+    "k": "solocame302pack2kptzcamera|",
+    "titlu": "SoloCam E30 2-Pack 2K PTZ Camera",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-13",
+    "expira": "2026-09-13",
+    "activa": false
+   },
+   {
+    "k": "indoorcams350homebases380|",
+    "titlu": "Indoor Cam S350 + HomeBase S380",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-13",
+    "expira": "2026-09-13",
+    "activa": false
+   },
+   {
+    "k": "floodlightcamerae3402pak|",
+    "titlu": "Floodlight Camera E340 (2 pak)",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-13",
+    "expira": "2026-09-13",
+    "activa": false
+   },
+   {
+    "k": "eufyx10proomniwitvervangingssets|",
+    "titlu": "eufy X10 Pro Omni (wit) + Vervangingssets",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-13",
+    "expira": "2026-09-13",
+    "activa": false
+   },
+   {
+    "k": "eufyx10proomnivervangingssets|",
+    "titlu": "eufy X10 Pro Omni + Vervangingssets",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-13",
+    "expira": "2026-09-13",
+    "activa": false
+   },
+   {
+    "k": "eufyrobotstofzuigeromnie28eufyaccessoriespackage|",
+    "titlu": "eufy Robotstofzuiger Omni E28 + eufy Accessories Package",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-13",
+    "expira": "2026-09-13",
+    "activa": false
+   },
+   {
+    "k": "eufyrobotstofzuigeromnie25eufyaccessoriespackage|",
+    "titlu": "eufy Robotstofzuiger Omni E25 + eufy Accessories Package",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-13",
+    "expira": "2026-09-13",
+    "activa": false
+   },
+   {
+    "k": "eufyrobotgrasmaaiere15|",
+    "titlu": "eufy Robotgrasmaaier E15",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-13",
+    "expira": "2026-09-13",
+    "activa": false
+   },
+   {
+    "k": "eufycamsolos3402pakhomebase3smartdisplay|",
+    "titlu": "eufyCam Solo S340 (2 pak) & HomeBase 3 & Smart Display",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-13",
+    "expira": "2026-09-13",
+    "activa": false
+   },
+   {
+    "k": "eufycams3pro4camsethomebase3|",
+    "titlu": "eufyCam S3 Pro 4-Cam Set+ HomeBase 3",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-13",
+    "expira": "2026-09-13",
+    "activa": false
+   },
+   {
+    "k": "eufycams330eufycam3solocams340|",
+    "titlu": "eufyCam S330 (eufyCam 3) + SoloCam S340",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-13",
+    "expira": "2026-09-13",
+    "activa": false
+   },
+   {
+    "k": "eufycams330eufycam32pak|",
+    "titlu": "eufyCam S330 (eufyCam 3) (2 pak)",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-13",
+    "expira": "2026-09-13",
+    "activa": false
+   },
+   {
+    "k": "eufycams330addoncameravideodoorbells330addonunithomebase3|",
+    "titlu": "eufyCam S330 Add-on Camera + Video Doorbell S330 Add-on Unit + Homebase 3",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-13",
+    "expira": "2026-09-13",
+    "activa": false
+   },
+   {
+    "k": "eufybottlewashers1pro|",
+    "titlu": "eufy Bottle Washer S1 Pro",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-13",
+    "expira": "2026-09-13",
+    "activa": false
+   },
+   {
+    "k": "eufy4gltecams3302paks|",
+    "titlu": "eufy 4G LTE Cam S330 (2 paks)",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-13",
+    "expira": "2026-09-13",
+    "activa": false
+   }
+  ],
+  "eur.vevor.com": [
+   {
+    "k": "vvaseu10|",
+    "titlu": "10% off sitewide with the code VVASEU10 during Back to School Promotion",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-08",
+    "expira": "2026-09-08",
+    "activa": false
+   }
+  ],
+  "evolutionpowertools.ro": [
+   {
+    "k": "promotiecordless|",
+    "titlu": "Promotie Cordless",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-07-30",
+    "expira": "2026-07-30",
+    "activa": false
+   }
+  ],
+  "evrik.ro": [
+   {
+    "k": "evrik15reducerelasaltelesitoppereaugust2026|",
+    "titlu": "Evrik – 15% reducere la saltele și toppere | August 2026",
+    "cod": false,
+    "prima": "2026-08-11",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "exclusive-home.ro": [
+   {
+    "k": "paturicocolinofluturi3d2la99lei|",
+    "titlu": "Paturi cocolino Fluturi 3D - 2 la 99 lei!",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "ofertatrio3paturicocolino99lei|",
+    "titlu": "OFERTA TRIO- 3 PATURI COCOLINO= 99 LEI",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "lenjeriidepatladoar60lei|",
+    "titlu": "Lenjerii de pat la doar 60 Lei !!!",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "campanie3paturicocolinola99lei|",
+    "titlu": "CAMPANIE 3 PATURI COCOLINO LA 99 LEI",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "expomob.ro": [
+   {
+    "k": "outletexpomobreduceridepanala70lamobilierpentrucasa|",
+    "titlu": "Outlet Expomob – Reduceri de pana la -70% la mobilier pentru casa",
+    "cod": false,
+    "prima": "2026-07-16",
+    "ultima": "2026-09-24",
+    "expira": "2026-12-31",
+    "activa": true
+   },
+   {
+    "k": "reduceridepanala70laoutletexpomob|",
+    "titlu": "Reduceri de pana la -70% la Outlet Expomob",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-09-24",
+    "expira": "2026-10-31",
+    "activa": true
+   }
+  ],
+  "f64.ro": [
+   {
+    "k": "backtoschoollaf64cureduceridepanala70|",
+    "titlu": "𝐁𝐚𝐜𝐤 𝐭𝐨 𝐒𝐜𝐡𝐨𝐨𝐥 la F64 cu reduceri de până la -70%🏷️",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-09-08",
+    "expira": "2026-09-08",
+    "activa": false
+   }
+  ],
+  "facturis-online.ro": [
+   {
+    "k": "faturisonlineefactura|",
+    "titlu": "Faturis Online e-Factura",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-07-30",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "facturisonlinerocreearecontnou|",
+    "titlu": "facturis-online.ro : Creeare cont nou",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-07-30",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "facturisonlineefacturaoferta6lunigratuit|",
+    "titlu": "Facturis Online e-Factura oferta 6 luni gratuit",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-07-30",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "facturiscreearecontnou|",
+    "titlu": "Facturis - Creeare cont nou",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-07-30",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "contgratuit60dezile|",
+    "titlu": "Cont gratuit 60 de zile",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-07-30",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "fantasyforge.ro": [
+   {
+    "k": "buyonegetonefreeminiature|",
+    "titlu": "🔥Buy One, Get One Free Miniature",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-09-24",
+    "expira": "2026-12-30",
+    "activa": true
+   }
+  ],
+  "fara-daunatori.ro": [
+   {
+    "k": "oferta11|",
+    "titlu": "Oferta 1+1",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-09-24",
+    "expira": "2027-02-28",
+    "activa": true
+   }
+  ],
+  "farmec.ro": [
+   {
+    "k": "summershoppingairlinesweekend30reduceredirectincoslacumparaturideminimum150lei|",
+    "titlu": "Summer Shopping Airlines - Weekend - -30% REDUCERE direct în coș la cumpărături de minimum 150 lei.",
+    "cod": false,
+    "prima": "2026-08-21",
+    "ultima": "2026-08-24",
+    "expira": "2026-08-24",
+    "activa": false
+   },
+   {
+    "k": "25reducerelaoselectiedeprodusepentruingrijireatenului|",
+    "titlu": "25% REDUCERE la o selecție de produse pentru Îngrijirea Tenului",
+    "cod": false,
+    "prima": "2026-07-16",
+    "ultima": "2026-07-26",
+    "expira": "2026-07-26",
+    "activa": false
+   },
+   {
+    "k": "25reducereincosflashsale|",
+    "titlu": "25% Reducere In Cos - Flash Sale",
+    "cod": false,
+    "prima": "2026-06-30",
+    "ultima": "2026-07-01",
+    "expira": "2026-07-01",
+    "activa": false
+   },
+   {
+    "k": "30reducerelaproduseledingamagerovitalluxury|",
+    "titlu": "30% REDUCERE la produsele din gama Gerovital Luxury.",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-07-09",
+    "expira": "2026-07-09",
+    "activa": false
+   },
+   {
+    "k": "25lagamelegerovitalh3evolution|",
+    "titlu": "-25% la gamele Gerovital H3 Evolution",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-07-06",
+    "expira": "2026-07-06",
+    "activa": false
+   },
+   {
+    "k": "25lagamaequilibrium1906202606072026|",
+    "titlu": "-25% la Gama Equilibrium - 19.06.2026 - 06.07.2026",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-07-06",
+    "expira": "2026-07-06",
+    "activa": false
+   }
+  ],
+  "fashiondays.ro": [
+   {
+    "k": "bestofepic|",
+    "titlu": "Best of EPIC",
+    "cod": false,
+    "prima": "2026-07-27",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "epicsale|",
+    "titlu": "EPIC SALE",
+    "cod": false,
+    "prima": "2026-07-07",
+    "ultima": "2026-07-26",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "summeroffers19iun6iul|",
+    "titlu": "Summer Offers 19 iun - 6 iul",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-07-06",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "femieko.ro": [
+   {
+    "k": "promotie11cadou|",
+    "titlu": "Promotie 1+1 Cadou",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-09-09",
+    "expira": "2026-09-09",
+    "activa": false
+   },
+   {
+    "k": "economisestepanala25cuabonamentulfemiekoprotectielunarafaragriji|",
+    "titlu": "Economisește până la 25% cu Abonamentul Femi.Eko – Protecție lunară fără griji",
+    "cod": false,
+    "prima": "2026-06-30",
+    "ultima": "2026-09-24",
+    "expira": "2026-12-30",
+    "activa": true
+   },
+   {
+    "k": "economisestepanala25cuabonamentulfemiekoprotectielunarafaragriji|sub10",
+    "titlu": "Economisește până la 25% cu Abonamentul Femi.Eko – Protecție lunară fără griji",
+    "cod": true,
+    "prima": "2026-06-29",
+    "ultima": "2026-06-29",
+    "expira": "2026-12-30",
+    "activa": false
+   }
+  ],
+  "fera.ro": [
+   {
+    "k": "hills93conservegratis|",
+    "titlu": "HILL'S 9+3 conserve GRATIS",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-30",
+    "activa": false
+   },
+   {
+    "k": "20laaldoileasaccomandat|",
+    "titlu": "-20% la al doilea sac comandat",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-30",
+    "activa": false
+   },
+   {
+    "k": "10reducerelahillspentrucaini|",
+    "titlu": "-10% reducere la Hill's pentru câini",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-30",
+    "activa": false
+   },
+   {
+    "k": "5discountprimacomanda|feranew",
+    "titlu": "5% discount prima comanda",
+    "cod": true,
+    "prima": "2026-06-29",
+    "ultima": "2026-09-13",
+    "expira": "2026-09-13",
+    "activa": false
+   },
+   {
+    "k": "conservecainicadou|",
+    "titlu": "Conserve câini CADOU",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-06-29",
+    "expira": "2026-06-29",
+    "activa": false
+   },
+   {
+    "k": "feraro5reducerelaprimacomandahranahills|",
+    "titlu": "Fera.ro - 5% reducere la prima comanda hrana Hills",
+    "cod": false,
+    "prima": "2026-06-12",
+    "ultima": "2026-09-15",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "fitlife.ro": [
+   {
+    "k": "springsalepanala70reducere|",
+    "titlu": "Spring Sale - până la 70% reducere",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "fitory.com": [
+   {
+    "k": "newautumnandwintercollection|",
+    "titlu": "New Autumn and winter collection",
+    "cod": false,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-19",
+    "expira": "2027-09-30",
+    "activa": false
+   },
+   {
+    "k": "backtoschoolpromotion|",
+    "titlu": "Back to School Promotion",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "2026-09-30",
+    "activa": false
+   },
+   {
+    "k": "autumnmultipairdeal|",
+    "titlu": "Autumn Multi-Pair Deal",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "2026-09-30",
+    "activa": false
+   }
+  ],
+  "gardenhotels.com": [
+   {
+    "k": "getadditional5discountonadultonlypropertiesgardenhotels|ghadults",
+    "titlu": "Get additional 5% discount on Adult Only Properties - Garden Hotels",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-01-01",
+    "activa": true
+   }
+  ],
+  "geekbuying.com": [
+   {
+    "k": "vader4p|",
+    "titlu": "USD $10 Off Coupon Code: VADER4P, For Flydigi Vader 4 Pro Gaming Controller, Force Adjustment Lever Joystick, Hall & Micro 2-in-1 Triggers…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2028-07-16",
+    "activa": true
+   },
+   {
+    "k": "trimui256|",
+    "titlu": "USD $3 Off Coupon Code: TRIMUI256, For TRIMUI Smart Pro Game Console with 256GB TF Card, 13729 Games, 4.96in 720P IPS Screen, Linux OS, 1GB…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-12-31",
+    "activa": true
+   },
+   {
+    "k": "sczz97|",
+    "titlu": "USD $22 Off Coupon Code: SCZZ97, For MINIX NEO Z97 Mini PC, Intel N97 4 Cores Max 3.6GHz, 12GB LPDDR5X RAM 512GB SSD, WiFi 6 Bluetooth 5.2…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2028-03-30",
+    "activa": true
+   },
+   {
+    "k": "ray55weu|",
+    "titlu": "USD $27 Off Coupon Code: RAY55WEU, For LONGER RAY5 5W Laser Engraver, 3.5inch Touch Screen, Offline Carving, Ultrafine Focused Laser…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-04-30",
+    "activa": true
+   },
+   {
+    "k": "pulumape86|",
+    "titlu": "USD $224 Off Coupon Code: PULUMAPE86, For PULUMA PE86 Electric Bike, 500W Motor, 48V 20Ah Battery, 26 inch Tires, 40km/h Max Speed, 150km…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2029-07-17",
+    "activa": true
+   },
+   {
+    "k": "pulumape86pro|",
+    "titlu": "USD $224 Off Coupon Code: PULUMAPE86PRO, For PULUMA PE86 Pro Electric Bike, 500W*2 Motor, 48V 20Ah Battery, 26 inch Tires, 40km/h Max…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2028-07-17",
+    "activa": true
+   },
+   {
+    "k": "mob617|",
+    "titlu": "USD $56 Off Coupon Code: MOB617, For Foride Xtremer 3 Electric Bike, 250W Motor, 48V 12Ah Battery, 29*2.4 inch Tires, 25km/h Max Speed…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2028-07-17",
+    "activa": true
+   },
+   {
+    "k": "lray5rf|",
+    "titlu": "USD $4 Off Coupon Code: LRAY5RF, For LONGER RAY5 Laser Engraver Raiser Feet 70mm - 8pcs. Available Countries: ALL",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-06-07",
+    "activa": true
+   },
+   {
+    "k": "lray5m25|",
+    "titlu": "USD $7 Off Coupon Code: LRAY5M25, For LONGER RAY5 Mini 2.5W Laser Engraver, 0.04mm Precision, 12,000mm/min Speed, for Wood/ Acrylic/…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-04-30",
+    "activa": true
+   },
+   {
+    "k": "longerr|",
+    "titlu": "USD $12 Off Coupon Code: LONGERR, For LONGER Laser Engraver Y-axis Rotary Roller with Bracket. Available Countries: ALL",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-12-24",
+    "activa": true
+   },
+   {
+    "k": "lonanorc|",
+    "titlu": "USD $15 Off Coupon Code: LONANORC, For LONGER Laser Rotary Chuck for Nano/ Nano Pro. Available Countries: ALL",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-12-24",
+    "activa": true
+   },
+   {
+    "k": "jakey10|",
+    "titlu": "USD $7 Off Coupon Code: JAKEY10, For Jakemy JM-Y10 2-in-1 Ultrasonic Cutter & Polisher, 35W 40kHz, OLED Display, for…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-11-30",
+    "activa": true
+   },
+   {
+    "k": "jake10p|",
+    "titlu": "USD $4 Off Coupon Code: JAKE10P, For Jakemy JM-Y10 Pro 2-in-1 Ultrasonic Cutter & Polisher, 35W 40kHz, OLED Display, for…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-04-30",
+    "activa": true
+   },
+   {
+    "k": "consum50|",
+    "titlu": "8% off for 3D Printers & Laser Engravers category, max save $50",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-05-31",
+    "activa": true
+   },
+   {
+    "k": "congkbh27|",
+    "titlu": "USD $17 Off Coupon Code: CONGKBH27, For KTC H27E6 27 inch Gaming Monitor, 2560*1440 QHD Fast IPS Screen, 300Hz 240Hz Refresh Rate, HDR 400…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-11-30",
+    "activa": true
+   },
+   {
+    "k": "chau21|",
+    "titlu": "USD $0 Off Coupon Code: CHAU21, For PVY Turbo Electric Bike 250W Motor 48V 13Ah Battery 20*4.0 inch Fat Tires 25km/h Max Speed 100km Range…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-12-01",
+    "activa": true
+   },
+   {
+    "k": "anys14p|",
+    "titlu": "USD $22 Off Coupon Code: ANYS14P, For Anycubic Kobra S1 Combo 3D Printer + 4kg Hyper PLA Filament - 1kg Purple + 1kg Blue + 1kg Red + 1kg…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-06-04",
+    "activa": true
+   },
+   {
+    "k": "anyks1ca|",
+    "titlu": "USD $45 Off Coupon Code: ANYKS1CA, For Anycubic Kobra S1 3D Printer with 2*Ace Pro, Vibrant 8-Color Printing, 600mm/s Ultra-Fast Speed…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-12-31",
+    "activa": true
+   },
+   {
+    "k": "9oj5squx31|",
+    "titlu": "USD $67 Off Coupon Code: 9OJ5SQUX31, For Creality Raptor 3D Scanner, Hybrid Blue Laser NIR, 60fps Scanning Speed, Objects Between 5-2000mm…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-11-30",
+    "activa": true
+   },
+   {
+    "k": "26bts01|",
+    "titlu": "6% OFF over $50/50€, max save $20/20€",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-10-31",
+    "activa": true
+   },
+   {
+    "k": "z7xxgu|",
+    "titlu": "USD $54 Off Coupon Code: Z7XXGU, For GOGOBEST GF750 Electric Bicycle 1000W*2 Dual Motors 50Km/h Max Speed 48V 17.5Ah Battery 20*4.0 Inch…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-11",
+    "expira": "2026-09-11",
+    "activa": false
+   },
+   {
+    "k": "wr9kpk|",
+    "titlu": "USD $43 Off Coupon Code: WR9KPK, For Niubility B26 Electric Bicycle 48V 12.5Ah Battery 1000W Motor 35km/h Max Speed 26'' Tires Mountain…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-11",
+    "expira": "2026-09-11",
+    "activa": false
+   },
+   {
+    "k": "wexbpp|",
+    "titlu": "USD $22 Off Coupon Code: WEXBPP, For GOGOBEST GF700 26*4.0 Fat Tire Electric Mountain Bike 17.5Ah Battery 500W Dual-Motor 6061 Aluminum…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-11",
+    "expira": "2026-09-11",
+    "activa": false
+   },
+   {
+    "k": "r241gk|",
+    "titlu": "USD $0 Off Coupon Code: R241GK, For Joyor E8-S 11-inch Off-road Electric Scooter 1600W*2 Dual Motor 72V 35Ah Lithium Battery, 80km/h Max…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-11",
+    "expira": "2026-09-11",
+    "activa": false
+   },
+   {
+    "k": "r231gk|",
+    "titlu": "USD $43 Off Coupon Code: R231GK, For Joyor E6-S 11 Inch Tire Off-road Electric Scooter 1600W*2 Dual Motor 60V 31.5Ah Battery 70km/h Max…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-11",
+    "expira": "2026-09-11",
+    "activa": false
+   },
+   {
+    "k": "pzmag5|",
+    "titlu": "USD $22 Off Coupon Code: PZMAG5, For Niubility B16S 16 inch Tire Electric Bike 350W Motor, 36V 14.5Ah Battery, 30km/h Max 60km Range, Dual…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-11",
+    "expira": "2026-09-11",
+    "activa": false
+   },
+   {
+    "k": "nf8mhk|",
+    "titlu": "USD $65 Off Coupon Code: NF8MHK, For Halo Knight T104 Electric Scooter 10 inch Off-road Tires 1000W*2 Motor 65km/h Max Speed Remote control…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-11",
+    "expira": "2026-09-11",
+    "activa": false
+   },
+   {
+    "k": "mmupnf|",
+    "titlu": "USD $141 Off Coupon Code: MMUPNF, For KAISDA K20F Electric Bike, 250W Motor, 36V 25Ah Battery, 20*4.0-inch Tires, 25km/h Max Speed…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-11",
+    "expira": "2026-09-11",
+    "activa": false
+   },
+   {
+    "k": "ipohgk|",
+    "titlu": "USD $54 Off Coupon Code: IPOHGK, For EUENI FXH009 Pro Electric Bike 20x4.0 inch Fat Tire 750W Motor 48V 15Ah Battery 45km/h Max Speed up to…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-11",
+    "expira": "2026-09-11",
+    "activa": false
+   },
+   {
+    "k": "grfjgr|",
+    "titlu": "USD $65 Off Coupon Code: GRFJGR, For Halo Knight H03 Electric Bike, 1000W Motor, 48V 19.2Ah Battery, 27.5*3.0-inch Tire, 50km/h Max Speed…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-11",
+    "expira": "2026-09-11",
+    "activa": false
+   },
+   {
+    "k": "fgrjgq|",
+    "titlu": "USD $65 Off Coupon Code: FGRJGQ, For Halo Knight H02 Electric Bike, 750W Brushless Motor, 48V 16Ah Battery, 29*2.1-inch Tires, 50km/h Max…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-11",
+    "expira": "2026-09-11",
+    "activa": false
+   },
+   {
+    "k": "fgqprj|",
+    "titlu": "USD $108 Off Coupon Code: FGQPRJ, For Halo Knight T108 Pro Electric Scooter 11'' Off-Road Tire 3000W*2 Motors 95Km/h Max Speed 60V 38.4Ah…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-11",
+    "expira": "2026-09-11",
+    "activa": false
+   },
+   {
+    "k": "bwzkdw|",
+    "titlu": "USD $216 Off Coupon Code: BWZKDW, For Halo Knight T107Max Off-road Electric Scooter 14 Inch Pneumatic Tires 2*4000W Dual Motors 120Km/h Max…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-11",
+    "expira": "2026-09-11",
+    "activa": false
+   },
+   {
+    "k": "6kjec5|",
+    "titlu": "USD $32 Off Coupon Code: 6KJEC5, For Halo Knight T108 Electric Scooter 10 inch Road Tire Dual 1000W Motor 65km/h Max Speed 52V 28.8Ah…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-11",
+    "expira": "2026-09-11",
+    "activa": false
+   },
+   {
+    "k": "45tehf|",
+    "titlu": "USD $54 Off Coupon Code: 45TEHF, For Halo Knight T107 Pro Electric Scooter 11 Inch Off-road Tire 3000W*2 Dual Motor 95km/h Max Speed 60V…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-11",
+    "expira": "2026-09-11",
+    "activa": false
+   }
+  ],
+  "geekmall.ro": [
+   {
+    "k": "cufree75ailivraregratuita|",
+    "titlu": "Cu FREE75 ai Livrare Gratuită",
+    "cod": false,
+    "prima": "2026-07-06",
+    "ultima": "2026-07-31",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "livraregratuita|",
+    "titlu": "Livrare GRATUITA",
+    "cod": false,
+    "prima": "2026-05-26",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "geetahair.com": [
+   {
+    "k": "geetahairweddingseasonsaleupto25offsitewide|w100",
+    "titlu": "Geeta Hair Wedding Season Sale: Up to 25% OFF Sitewide",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "2026-10-30",
+    "activa": false
+   },
+   {
+    "k": "geetahairsummermegasaleupto100offor20offfreewig|",
+    "titlu": "Geeta Hair Summer Mega Sale: Up to $100 Off or 20% Off + Free Wig!",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "2027-05-30",
+    "activa": false
+   },
+   {
+    "k": "geetahairmothersdaysale18offsitewide|m18",
+    "titlu": "Geeta Hair_Mother's Day Sale: 18% OFF Site-wide",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "2027-02-28",
+    "activa": false
+   },
+   {
+    "k": "geetahairmegajuly4thoffer110offorders389codef110|",
+    "titlu": "Geeta Hair Mega July 4th Offer: $110 OFF Orders $389+ CODE:F110",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "2027-02-28",
+    "activa": false
+   },
+   {
+    "k": "geetahairjuly4thspecial40offorders189codef40|",
+    "titlu": "Geeta Hair July 4th Special: $40 OFF Orders $189+ CODE:F40",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "2027-01-31",
+    "activa": false
+   },
+   {
+    "k": "geetahairjuly4thsaleextra20offsitewidecodef20|",
+    "titlu": "Geeta Hair July 4th Sale: Extra 20% OFF Sitewide CODE:F20",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "2027-02-28",
+    "activa": false
+   },
+   {
+    "k": "geetahairindependencedaydeal65offorders269codef65|",
+    "titlu": "Geeta Hair Independence Day Deal: $65 OFF Orders $269+ CODE:F65",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "2027-01-31",
+    "activa": false
+   },
+   {
+    "k": "geetahairgraduationseasonsaleupto100offpremiumwigs|g100",
+    "titlu": "Geeta Hair Graduation Season Sale: Up to $100 OFF Premium Wigs",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "2026-12-30",
+    "activa": false
+   },
+   {
+    "k": "geetahairfresharrivalsyournewfavoriteobsession|new",
+    "titlu": "Geeta Hair Fresh Arrivals: Your New Favorite Obsession",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "2026-10-30",
+    "activa": false
+   },
+   {
+    "k": "geetahairexclusive25offsitewideminspend199|hot25",
+    "titlu": "Geeta Hair Exclusive: 25% OFF Sitewide (Min. Spend $199)",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "2027-04-25",
+    "activa": false
+   },
+   {
+    "k": "70offordersover279mothersdaydealgeetahair|m70",
+    "titlu": "$70 OFF Orders Over $279 - Mother's Day Deal-Geeta Hair",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "2027-02-28",
+    "activa": false
+   },
+   {
+    "k": "45offordersover189mothersdayspecialgeetahair|m45",
+    "titlu": "$45 OFF Orders Over $189 - Mother's Day Special-Geeta Hair",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "2027-02-28",
+    "activa": false
+   },
+   {
+    "k": "100offordersover379mothersdaysalegeetahair|m100",
+    "titlu": "$100 OFF Orders Over $379 - Mother's Day Sale-Geeta Hair",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "2027-02-28",
+    "activa": false
+   }
+  ],
+  "giftdesign.ro": [
+   {
+    "k": "backtoschool15laintreagacomanda15offyourorder10aug15sep2026|",
+    "titlu": "Back to School | -15% la intreaga comanda / 15% OFF Your Order | 10 Aug - 15 Sep 2026",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-09-14",
+    "expira": "2026-09-14",
+    "activa": false
+   },
+   {
+    "k": "campanieexclusivaafiliati30affiliateexclusive30off|",
+    "titlu": "🎒 Campanie exclusiva afiliati: -30% | Affiliate Exclusive: 30% OFF",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-30",
+    "activa": false
+   },
+   {
+    "k": "giftdesignsummersaleextra15cugdvara15|gdvara15",
+    "titlu": "GiftDesign Summer Sale - Extra 15% cu GDVARA15",
+    "cod": true,
+    "prima": "2026-07-01",
+    "ultima": "2026-07-30",
+    "expira": "2026-07-30",
+    "activa": false
+   },
+   {
+    "k": "reducerimadmiapanape30iuniepanala60|",
+    "titlu": "Reduceri Madmia pana pe 30 iunie - pana la 60%",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-06-29",
+    "expira": "2026-06-29",
+    "activa": false
+   }
+  ],
+  "giftspot.ro": [
+   {
+    "k": "giftspotromagazinuldecadourioriginalesigadgeturi|",
+    "titlu": "Giftspot.ro - Magazinul de Cadouri Originale și Gadget-uri",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "grandeoptique.ro": [
+   {
+    "k": "panala35reducerelaochelarideluxsipremium|",
+    "titlu": "Pana la 35% reducere la ochelari de lux si premium",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-06-29",
+    "expira": "2026-06-29",
+    "activa": false
+   }
+  ],
+  "gsmnet.ro": [
+   {
+    "k": "backtoschool|",
+    "titlu": "Back to School",
+    "cod": false,
+    "prima": "2026-08-21",
+    "ultima": "2026-09-06",
+    "expira": "2026-09-07",
+    "activa": false
+   },
+   {
+    "k": "19anidegsmnet|",
+    "titlu": "19 ani de GSMnet",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-07-05",
+    "expira": "2026-07-06",
+    "activa": false
+   },
+   {
+    "k": "gsmnetreduceridevaralaaccesoriitelefoane|",
+    "titlu": "GSMNet - Reduceri de vara la accesorii telefoane",
+    "cod": false,
+    "prima": "2026-06-12",
+    "ultima": "2026-09-15",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "hairify.ro": [
+   {
+    "k": "15discountlafibreledepardincheratinapentruparrarsichelie|bl2016",
+    "titlu": "15% Discount la fibrele de păr din cheratină pentru păr rar și chelie",
+    "cod": true,
+    "prima": "2026-06-29",
+    "ultima": "2026-09-24",
+    "expira": "2026-12-30",
+    "activa": true
+   }
+  ],
+  "helloice.com": [
+   {
+    "k": "ms30|",
+    "titlu": "This discount applies to Moissanite products only.",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-29",
+    "activa": true
+   },
+   {
+    "k": "ms100|",
+    "titlu": "This discount applies to Moissanite products only.",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-29",
+    "activa": true
+   }
+  ],
+  "herbagetica.ro": [
+   {
+    "k": "stareadebinecuherbageticavine3vacanteinmaldivepremiizilnice|",
+    "titlu": "Starea de bine cu Herbagetica vine! 3 vacanțe în Maldive + premii zilnice",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-09-24",
+    "expira": "2026-12-31",
+    "activa": true
+   },
+   {
+    "k": "panala40reducereproduseleveriilapreturispeciale|",
+    "titlu": "🏷️ Până la 40% reducere! ☀️ Produsele verii la prețuri speciale!",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-31",
+    "activa": false
+   },
+   {
+    "k": "reduceridepanala40varaaceastafiiinformamaximacuherbagetica|",
+    "titlu": "🏷️ Reduceri de până la 40%! ☀️Vara aceasta, fii în formă maximă cu Herbagetica!",
+    "cod": false,
+    "prima": "2026-07-03",
+    "ultima": "2026-08-02",
+    "expira": "2026-08-02",
+    "activa": false
+   },
+   {
+    "k": "reduceridepanala35bucuratedevaracuunplusdesanatate|",
+    "titlu": "🏷️ REDUCERI de până la 35%‼️Bucură-te de vară cu un plus de sănătate!",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-06-30",
+    "expira": "2026-06-30",
+    "activa": false
+   },
+   {
+    "k": "herbagetica35reducerelasuplimentenaturale|",
+    "titlu": "Herbagetica - 35% reducere la suplimente naturale",
+    "cod": false,
+    "prima": "2026-06-12",
+    "ultima": "2026-09-15",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "panala30reducerelagamaantistresmaiputinstresmaimultabucurie|",
+    "titlu": "🔥Până la 30% reducere la gama antistres!🧘‍♀️Mai puțin stres, mai multă bucurie!",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-05-24",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "hototools.com": [
+   {
+    "k": "newusers|",
+    "titlu": "New Users",
+    "cod": false,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-24",
+    "expira": "2028-06-29",
+    "activa": true
+   }
+  ],
+  "ikier.com": [
+   {
+    "k": "save300onikiermasterwithcodeaffmaster300|",
+    "titlu": "Save 300€ on IKIER Master with Code AFFMASTER300",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-01-31",
+    "activa": true
+   },
+   {
+    "k": "ikiermasterexclusive300offcouponcodeaffmaster300|",
+    "titlu": "IKIER Master Exclusive $300 OFF Coupon Code – AFFMASTER300",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-01-31",
+    "activa": true
+   },
+   {
+    "k": "ikierk70maxexclusive200offcouponcodeaffk70200|",
+    "titlu": "IKIER K70 MAX Exclusive 200€ OFF Coupon Code – AFFK70200",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-01-31",
+    "activa": true
+   },
+   {
+    "k": "ikierk40maxexclusive160offcouponcodeaffk40160|",
+    "titlu": "IKIER K40 MAX Exclusive 160€ OFF Coupon Code: AFFK40160",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-01-31",
+    "activa": true
+   },
+   {
+    "k": "ikierk1ultra36wexclusive80offcouponcodeaffk3680|",
+    "titlu": "IKIER K1 Ultra 36W Exclusive 80€ OFF Coupon Code: AFFK3680",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-01-31",
+    "activa": true
+   },
+   {
+    "k": "ikierk1pro106420wexclusive100offcouponcodeaffk1064100|",
+    "titlu": "IKIER K1 PRO (1064) 20W Exclusive 100€ OFF Coupon Code: AFFK1064100",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-01-31",
+    "activa": true
+   },
+   {
+    "k": "copyof160offikierk40maxwithcodeaffk40160|",
+    "titlu": "Copy of $160 OFF iKier K40 MAX with Code AFFK40160",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-12-31",
+    "activa": true
+   },
+   {
+    "k": "ahorra2500mxnenikiermasterconcodigoffmas24000|",
+    "titlu": "Ahorra $2,500 MXN en iKier Master con código FFMAS24000",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-01-31",
+    "activa": true
+   },
+   {
+    "k": "ahorra1999mxnenikierk1promax70wconcodigoaffk11999|",
+    "titlu": "Ahorra $1,999 MXN en iKier K1 Pro Max 70W con código AFFK11999",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-01-31",
+    "activa": true
+   },
+   {
+    "k": "ahorra1600mxnenikierk70maxconcodigoaffk71999|",
+    "titlu": "Ahorra $1,600 MXN en iKier K70 Max con código AFFK71999",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-01-31",
+    "activa": true
+   },
+   {
+    "k": "ahorra1000mxnenikierk40maxconcodigoaffk41000|",
+    "titlu": "Ahorra $1,000 MXN en iKier K40 Max con código AFFK41000",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-01-31",
+    "activa": true
+   },
+   {
+    "k": "200offikierk1promax70wwithcodeaffk70p200|",
+    "titlu": "$200 OFF iKier K1 Pro Max 70W with Code AFFK70P200",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-12-31",
+    "activa": true
+   }
+  ],
+  "incaltamintelamoda.ro": [
+   {
+    "k": "reduceridepanala47laincaltamintedinpielenaturala|",
+    "titlu": "Reduceri de până la 47% la încălțăminte din piele naturală",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-09-24",
+    "expira": "2027-06-15",
+    "activa": true
+   },
+   {
+    "k": "reducerelaincaltamintebarbateascadinpielenaturalacodlamoda|lamoda",
+    "titlu": "Reducere la încălțăminte bărbătească din piele naturală – Cod LAMODA",
+    "cod": true,
+    "prima": "2026-06-29",
+    "ultima": "2026-09-24",
+    "expira": "",
+    "activa": true
+   }
+  ],
+  "infinity.ro": [
+   {
+    "k": "backtoschoolbacktocool|",
+    "titlu": "Back to School, Back to Cool!",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-09-06",
+    "expira": "2026-09-06",
+    "activa": false
+   },
+   {
+    "k": "echipeazatigarajulsculesiaccesoriiautodetop|",
+    "titlu": "Echipează-ți garajul: Scule și accesorii auto de top",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-09-05",
+    "expira": "2026-09-06",
+    "activa": false
+   },
+   {
+    "k": "scurtcircuitlapreturi|",
+    "titlu": "Scurt-Circuit la prețuri",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-21",
+    "expira": "2026-08-21",
+    "activa": false
+   },
+   {
+    "k": "heaturileverii|",
+    "titlu": "Heat-urile Verii",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "inpuff.ro": [
+   {
+    "k": "inpuffsummersalereduceridepanala40latoaterochiile|",
+    "titlu": "InPuff Summer Sale – reduceri de până la 40% la toate Rochiile",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-31",
+    "activa": false
+   }
+  ],
+  "insotelhotelgroup.com": [
+   {
+    "k": "jusqua45dereductionsejourgratuitpour2enfantsinsotelhotel|ag06",
+    "titlu": "Jusqu'à 45 % de réduction – Séjour gratuit pour 2 enfants | Insotel Hotel",
+    "cod": true,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-24",
+    "expira": "2026-11-01",
+    "activa": true
+   },
+   {
+    "k": "getupto45off2kidsstayfreeinsotelhotel|ag06",
+    "titlu": "Get up to 45% off - 2 kids stay free| Insotel Hotel",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-15",
+    "expira": "2026-11-01",
+    "activa": false
+   }
+  ],
+  "interlink.ro": [
+   {
+    "k": "sunnysavings|",
+    "titlu": "Sunny Savings",
+    "cod": false,
+    "prima": "2026-07-16",
+    "ultima": "2026-07-17",
+    "expira": "2026-07-17",
+    "activa": false
+   },
+   {
+    "k": "summerdeals|",
+    "titlu": "Summer Deals",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-07-02",
+    "expira": "2026-07-02",
+    "activa": false
+   }
+  ],
+  "intimax.ro": [
+   {
+    "k": "diblongfacevaluripeintimaxro|",
+    "titlu": "DIBLONG face valuri pe intimax.ro! 🌊",
+    "cod": false,
+    "prima": "2026-06-30",
+    "ultima": "2026-07-06",
+    "expira": "2026-07-06",
+    "activa": false
+   }
+  ],
+  "intimplay.ro": [
+   {
+    "k": "upto60off|",
+    "titlu": "Up to 60% off",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-30",
+    "activa": false
+   }
+  ],
+  "ipowerqueen.de": [
+   {
+    "k": "redodo8discountcodesaveonallproducts|",
+    "titlu": "Redodo 8% Discount Code – Save on All Products",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-15",
+    "expira": "2026-12-31",
+    "activa": false
+   }
+  ],
+  "italki.com": [
+   {
+    "k": "10eurrabattauf20eurmbw|impact10",
+    "titlu": "10 EUR Rabatt auf 20 EUR MBW",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-06-26",
+    "activa": true
+   }
+  ],
+  "itgalaxy.ro": [
+   {
+    "k": "scaunegaming|",
+    "titlu": "Scaune gaming",
+    "cod": false,
+    "prima": "2026-08-10",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "masinidecusut|",
+    "titlu": "Masini de cusut",
+    "cod": false,
+    "prima": "2026-08-10",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "ebookreader|",
+    "titlu": "eBook Reader",
+    "cod": false,
+    "prima": "2026-08-10",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "aparatedeaerconditionat|",
+    "titlu": "Aparate de aer conditionat",
+    "cod": false,
+    "prima": "2026-07-23",
+    "ultima": "2026-08-15",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "masinidetunsiarba|",
+    "titlu": "Masini de tuns iarba",
+    "cod": false,
+    "prima": "2026-07-23",
+    "ultima": "2026-08-08",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "imprimante3d|",
+    "titlu": "Imprimante 3D",
+    "cod": false,
+    "prima": "2026-07-23",
+    "ultima": "2026-08-08",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "frigidereauto|",
+    "titlu": "Frigidere auto",
+    "cod": false,
+    "prima": "2026-07-23",
+    "ultima": "2026-08-08",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "televizoarecampionatulmondial|",
+    "titlu": "Televizoare Campionatul Mondial",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-06-30",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "telefoanemobile|",
+    "titlu": "Telefoane mobile",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-06-30",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "radiouricampionatulmondial|",
+    "titlu": "Radiouri Campionatul Mondial",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-06-30",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "monitoarecampionatulmondial|",
+    "titlu": "Monitoare Campionatul Mondial",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-06-30",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "frigiderecampionatulmondial|",
+    "titlu": "Frigidere Campionatul Mondial",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-06-30",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "janta.ro": [
+   {
+    "k": "cujantarosiautonomprotectnuramaiinpana|",
+    "titlu": "Cu JANTA.RO si Autonom Protect Nu ramai in pana",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-29",
+    "expira": "2026-06-29",
+    "activa": false
+   }
+  ],
+  "jojofashion.ro": [
+   {
+    "k": "lichidaridestocupto50off|",
+    "titlu": "Lichidari de stoc - up to 50% off",
+    "cod": false,
+    "prima": "2026-08-12",
+    "ultima": "2026-09-24",
+    "expira": "",
+    "activa": true
+   }
+  ],
+  "jollymag.ro": [
+   {
+    "k": "jollymag10reducerecucoduljolly10|jolly10",
+    "titlu": "JollyMag - 10% reducere cu codul JOLLY10",
+    "cod": true,
+    "prima": "2026-06-12",
+    "ultima": "2026-09-15",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "reducere10latotcosul|jolly10",
+    "titlu": "Reducere 10% la tot cosul",
+    "cod": true,
+    "prima": "2026-05-24",
+    "ultima": "2026-09-24",
+    "expira": "2026-12-30",
+    "activa": true
+   }
+  ],
+  "kailasgear.com": [
+   {
+    "k": "kgaff10|",
+    "titlu": "10% OFF for Specified categories",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-03-23",
+    "activa": true
+   },
+   {
+    "k": "kgaff05|",
+    "titlu": "No limit on quantity, time or product category. A $5 discount will be offered after use.",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-03-22",
+    "activa": true
+   }
+  ],
+  "kamin.ro": [
+   {
+    "k": "cuptordepizzagratuitcartederetete|",
+    "titlu": "Cuptor de pizza gratuit + carte de retete",
+    "cod": false,
+    "prima": "2026-07-16",
+    "ultima": "2026-07-30",
+    "expira": "2026-07-30",
+    "activa": false
+   },
+   {
+    "k": "gratarwebergratuit|",
+    "titlu": "Gratar WEBER Gratuit",
+    "cod": false,
+    "prima": "2026-05-25",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "kamu.ro": [
+   {
+    "k": "parfumuriarabesticureduceridepanala37pekamuro|",
+    "titlu": "Parfumuri arabești cu reduceri de până la 37% pe kamu.ro",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-31",
+    "activa": false
+   }
+  ],
+  "karcher.com": [
+   {
+    "k": "promotiekarcherestevalabilainperioada01iulie202630septembrie2026|",
+    "titlu": "Promotie Karcher este valabilă în perioada 01 iulie 2026 - 30 septembrie 2026",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-29",
+    "activa": true
+   }
+  ],
+  "kisslovehair.com": [
+   {
+    "k": "endsofsummer|",
+    "titlu": "Ends of summer",
+    "cod": false,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-24",
+    "activa": true
+   }
+  ],
+  "kitchentools.ro": [
+   {
+    "k": "promotiilelunii2026|",
+    "titlu": "Promotiile lunii 2026",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-30",
+    "activa": false
+   }
+  ],
+  "klaiyihair.com": [
+   {
+    "k": "upto23offwithcodesfall18fall30fall55|fall18",
+    "titlu": "Up To 23% OFF With Codes: Fall18, Fall30 & Fall55",
+    "cod": true,
+    "prima": "2026-09-23",
+    "ultima": "2026-09-24",
+    "expira": "2026-10-02",
+    "activa": true
+   },
+   {
+    "k": "upto60offfreegiftklaiyi9thanniversarysaleencore|klaiyi21",
+    "titlu": "Up To $60 OFF + Free Gift | Klaiyi 9th Anniversary Sale Encore",
+    "cod": true,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-20",
+    "expira": "2026-09-21",
+    "activa": false
+   },
+   {
+    "k": "25offsitewidefreegiftwithcodeklaiyi25|klaiyi25",
+    "titlu": "25% OFF Sitewide + Free Gift With Code: KLAIYI25",
+    "cod": true,
+    "prima": "2026-09-10",
+    "ultima": "2026-09-14",
+    "expira": "2026-09-14",
+    "activa": false
+   },
+   {
+    "k": "100offover379freegiftwithcodeklaiyi100|klaiyi100",
+    "titlu": "$100 OFF Over $379 + Free Gift With Code: KLAIYI100",
+    "cod": true,
+    "prima": "2026-09-10",
+    "ultima": "2026-09-14",
+    "expira": "2026-09-14",
+    "activa": false
+   },
+   {
+    "k": "klaiyihair9thanniversaryblowout2026|klaiyi23",
+    "titlu": "Klaiyi Hair 9th Anniversary Blowout 2026",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-10",
+    "expira": "2026-09-10",
+    "activa": false
+   }
+  ],
+  "kospet.com": [
+   {
+    "k": "eulimitedtimesalet3u2save42offusecodeht3u2|",
+    "titlu": "[EU] Limited time sale-T3U2 Save 42% OFF! Use code HT3U2",
+    "cod": false,
+    "prima": "2026-09-24",
+    "ultima": "2026-09-24",
+    "expira": "2026-10-31",
+    "activa": true
+   },
+   {
+    "k": "eulimitedtimesales2save51offusecodeds20|",
+    "titlu": "[EU] Limited time sale-S2 Save 51% OFF! Use code DS20",
+    "cod": false,
+    "prima": "2026-09-24",
+    "ultima": "2026-09-24",
+    "expira": "2026-10-31",
+    "activa": true
+   },
+   {
+    "k": "eulimitedtimesalep10save48offusecodedpr35|",
+    "titlu": "[EU] Limited time sale-P10 Save 48% OFF! Use code DPR35",
+    "cod": false,
+    "prima": "2026-09-24",
+    "ultima": "2026-09-24",
+    "expira": "2026-10-31",
+    "activa": true
+   },
+   {
+    "k": "eulimitedtimesalem3usave45offusecodev3u20|",
+    "titlu": "[EU] Limited time sale-M3U Save 45% OFF! Use code V3U20",
+    "cod": false,
+    "prima": "2026-09-24",
+    "ultima": "2026-09-24",
+    "expira": "2026-10-31",
+    "activa": true
+   }
+  ],
+  "kugooescooters.com": [
+   {
+    "k": "impactall20honey|honey20",
+    "titlu": "Joyor electric scooter €20 OFF (Over €400 ) , and you will get a free rearview mirror with a successful order.",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-15",
+    "expira": "2026-12-31",
+    "activa": false
+   }
+  ],
+  "laavooextensions.com": [
+   {
+    "k": "fallsale21off|f21",
+    "titlu": "Fall Sale 21% off",
+    "cod": true,
+    "prima": "2026-09-17",
+    "ultima": "2026-09-24",
+    "expira": "2026-10-06",
+    "activa": true
+   },
+   {
+    "k": "fallsale15off|f15",
+    "titlu": "Fall Sale 15% off",
+    "cod": true,
+    "prima": "2026-09-17",
+    "ultima": "2026-09-24",
+    "expira": "2026-10-06",
+    "activa": true
+   },
+   {
+    "k": "newarrival25off|new25",
+    "titlu": "New Arrival 25% off",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-10-31",
+    "activa": true
+   },
+   {
+    "k": "injectiontapeinhairsale|vt23",
+    "titlu": "Injection Tape in Hair Sale",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-10-31",
+    "activa": true
+   },
+   {
+    "k": "bestseller25off|h25",
+    "titlu": "Best Seller 25% off!",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-06-30",
+    "activa": true
+   },
+   {
+    "k": "50offclearancesale|h50",
+    "titlu": "50% off Clearance Sale",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-12-31",
+    "activa": true
+   },
+   {
+    "k": "homecoming22off|hs22",
+    "titlu": "Homecoming 22% off",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-15",
+    "expira": "2026-09-15",
+    "activa": false
+   },
+   {
+    "k": "homecoming15off|hs15",
+    "titlu": "Homecoming 15% off",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-15",
+    "expira": "2026-09-15",
+    "activa": false
+   }
+  ],
+  "labelshop.ro": [
+   {
+    "k": "profitaacumdereduceriintre5si15laechipamentesiconsumabile|",
+    "titlu": "Profita acum de reduceri intre 5% si 15% la echipamente si consumabile!",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-09-24",
+    "expira": "",
+    "activa": true
+   },
+   {
+    "k": "summersales2026labelshopro|",
+    "titlu": "Summer Sales 2026 - LabelShop.ro",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-07-15",
+    "expira": "2026-07-15",
+    "activa": false
+   }
+  ],
+  "lenjeriapufoasa.ro": [
+   {
+    "k": "cumperimaimultplatestimaiputin|",
+    "titlu": "Cumperi mai mult, plătești mai puțin!",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-30",
+    "activa": false
+   }
+  ],
+  "libhumanitas.ro": [
+   {
+    "k": "25reducerelatoatetitlurileedituriigama|",
+    "titlu": "25% reducere la toate titlurile editurii GAMA",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "25reducerelaoselectiedetitlurialegrupuluieditorialart|",
+    "titlu": "25% reducere la o selectie de titluri ale Grupului Editorial ART",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "20reducerelatoatetitluriledincategoriastiintaaleedituriihumanitas|",
+    "titlu": "20% reducere la toate titlurile din categoria Știință ale editurii HUMANITAS",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "librarie.net": [
+   {
+    "k": "backtoschool2026rechizite|",
+    "titlu": "Back To School 2026 Rechizite",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-09-24",
+    "expira": "2026-10-30",
+    "activa": true
+   },
+   {
+    "k": "targuldevara2026|",
+    "titlu": "Târgul de Vară 2026",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-30",
+    "activa": false
+   },
+   {
+    "k": "bursacartilorieftineeditiasub15lei15mai202631august2026|",
+    "titlu": "Bursa Cărților Ieftine: Ediția sub 15 lei (15 mai 2026 - 31 august 2026)",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-30",
+    "activa": false
+   },
+   {
+    "k": "bookhalfminim50reducerelapeste800detitluri1505202631082026|",
+    "titlu": "Book-Half. Minim 50% Reducere la peste 800 de titluri (15.05.2026 - 31.08.2026)",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-30",
+    "activa": false
+   }
+  ],
+  "librex.ro": [
+   {
+    "k": "sitenousi25deleicadou|",
+    "titlu": "Site NOU și 25 de lei CADOU! 🎁",
+    "cod": false,
+    "prima": "2026-08-21",
+    "ultima": "2026-08-23",
+    "expira": "2026-08-23",
+    "activa": false
+   }
+  ],
+  "libris.ro": [
+   {
+    "k": "pregatitdescoalahaiculistasiaitotulgatapanasunaclopotelul|",
+    "titlu": "Pregătit de școală? Hai cu lista și ai totul gata până sună clopoțelul!",
+    "cod": false,
+    "prima": "2026-08-21",
+    "ultima": "2026-09-09",
+    "expira": "2026-09-09",
+    "activa": false
+   },
+   {
+    "k": "englishweekend2050transportgratuit|",
+    "titlu": "English Weekend -20%-50% & Transport GRATUIT*!",
+    "cod": false,
+    "prima": "2026-08-14",
+    "ultima": "2026-08-16",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "castiga2000pentruovacantadecititorcartiletetrimitincalatorie|",
+    "titlu": "Câștigă 2.000 € pentru o vacanță de cititor Cărțile te trimit în călătorie",
+    "cod": false,
+    "prima": "2026-08-06",
+    "ultima": "2026-08-07",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "transportgratuitpeste50lei83503020|",
+    "titlu": "Transport gratuit peste 50 lei! -83% -50% -30% -20%",
+    "cod": false,
+    "prima": "2026-08-04",
+    "ultima": "2026-08-05",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "starthappydayspanala83bucuratedereduceri|",
+    "titlu": "Start Happy Days!Până la -83% Bucură-te de reduceri!",
+    "cod": false,
+    "prima": "2026-07-28",
+    "ultima": "2026-08-02",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "reducerianiversaresitransportladoar499inweekendulnemira|",
+    "titlu": "Reduceri aniversare și TRANSPORT la doar 4.99 în Weekendul Nemira!",
+    "cod": false,
+    "prima": "2026-07-24",
+    "ultima": "2026-07-26",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "transportgratuitpentruoricecoletoriundeinromania|",
+    "titlu": "Transport GRATUIT pentru ORICE colet, ORIUNDE în România!",
+    "cod": false,
+    "prima": "2026-07-21",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "panala75sitransportgratuitnurataweekendultrei|",
+    "titlu": "Până la -75% și Transport Gratuit*! Nu rata Weekendul TREI!",
+    "cod": false,
+    "prima": "2026-07-17",
+    "ultima": "2026-07-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "cupon20laorice|lib20citesc",
+    "titlu": "Cupon -20% la orice",
+    "cod": true,
+    "prima": "2026-07-16",
+    "ultima": "2026-07-16",
+    "expira": "2026-07-16",
+    "activa": false
+   },
+   {
+    "k": "vouchervacanta2000euro|",
+    "titlu": "Voucher vacanta 2000 euro!",
+    "cod": false,
+    "prima": "2026-07-03",
+    "ultima": "2026-07-05",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "11gratisla1000detitluri|",
+    "titlu": "1+1 Gratis la 1000 de titluri",
+    "cod": false,
+    "prima": "2026-06-30",
+    "ultima": "2026-07-01",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "panala50inweekendulliteraralegetilecturiledevara|",
+    "titlu": "Până la -50% în Weekendul LITERAr! Alege-ți lecturile de vară!",
+    "cod": false,
+    "prima": "2026-06-28",
+    "ultima": "2026-06-28",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "cuponactiv20laoriceaflacodul|",
+    "titlu": "Cupon ACTIV! -20% la orice* Află codul »",
+    "cod": false,
+    "prima": "2026-06-23",
+    "ultima": "2026-08-13",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "cadoulaalegerereducerianiversarevezicesurprizetiampregatitde35deanilibris|",
+    "titlu": "Cadou la alegere? REDUCERI aniversare? Vezi ce SURPRIZE ți-am pregătit de 35 de ani Libris",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-05-24",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "liki24.co.uk": [
+   {
+    "k": "liki24superdealreducereextrade5laproduseledincategorie|super5off",
+    "titlu": "Liki24 SuperDeal – Reducere Extra de 5% la Produsele din Categorie",
+    "cod": true,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-31",
+    "activa": false
+   }
+  ],
+  "linailsboutique.ro": [
+   {
+    "k": "lichidaredestoclnbreduceridepanala70|",
+    "titlu": "Lichidare de stoc LNB – reduceri de pana la 70%",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-30",
+    "activa": true
+   },
+   {
+    "k": "geluriuvlnbcureduceridepanala50|",
+    "titlu": "Geluri UV LNB cu reduceri de pana la 50%",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-30",
+    "activa": true
+   }
+  ],
+  "litera.ro": [
+   {
+    "k": "lichidaredevarapanala902026august|",
+    "titlu": "🌞 Lichidare de vară - până la -90% (20-26 august) 🌞",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-26",
+    "expira": "2026-08-26",
+    "activa": false
+   },
+   {
+    "k": "noutatileveriicod15extrareducere|extra15",
+    "titlu": "📘 Noutățile verii - cod 15% extra reducere",
+    "cod": true,
+    "prima": "2026-07-16",
+    "ultima": "2026-07-19",
+    "expira": "2026-07-19",
+    "activa": false
+   },
+   {
+    "k": "600detitluricu60reducere|",
+    "titlu": "600 de titluri cu 60% reducere",
+    "cod": false,
+    "prima": "2026-07-16",
+    "ultima": "2026-07-19",
+    "expira": "2026-07-19",
+    "activa": false
+   },
+   {
+    "k": "iativitaminadcartepanala70cartecadou17iulie|",
+    "titlu": "🌞 Ia-ți Vitamina D Carte - până la -70% + carte cadou (1 - 7 iulie) 🌞",
+    "cod": false,
+    "prima": "2026-07-01",
+    "ultima": "2026-07-06",
+    "expira": "2026-07-06",
+    "activa": false
+   },
+   {
+    "k": "de1iuniecopiiiaudecistoatecartiletrebuiesaajungalaei25mai1iunie|",
+    "titlu": "🧸 De 1 iunie, copiii au decis: toate cărțile trebuie să ajungă la ei! (25 mai-1 iunie) 🧸",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "cartilapretdetiparpanala802224mai|",
+    "titlu": "📚 Cărți la preț de tipar - până la -80% (22 - 24 mai) 📚",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-05-24",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "littlenest.ro": [
+   {
+    "k": "usbornesummersalecartideluatinvacanta|",
+    "titlu": "Usborne Summer sale - Carti de luat in vacanta",
+    "cod": false,
+    "prima": "2026-07-06",
+    "ultima": "2026-07-30",
+    "expira": "2026-07-30",
+    "activa": false
+   }
+  ],
+  "lovepadel.ie": [
+   {
+    "k": "500offentireorder|bleague-5eur",
+    "titlu": "€5.00 off entire order",
+    "cod": true,
+    "prima": "2026-07-03",
+    "ultima": "2026-07-30",
+    "expira": "2026-07-30",
+    "activa": false
+   }
+  ],
+  "manukashop.ro": [
+   {
+    "k": "transportgratuitlaoricecomanda|",
+    "titlu": "Transport gratuit la orice comanda!",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-09-24",
+    "expira": "2027-01-30",
+    "activa": true
+   }
+  ],
+  "mathaus.ro": [
+   {
+    "k": "transportasigurat|",
+    "titlu": "Transport asigurat",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "sistemefotovoltaicepanourisolare|",
+    "titlu": "Sisteme fotovoltaice - Panouri solare",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "saptamanameseriasului|",
+    "titlu": "Săptămâna Meseriașului",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "livrarelalocker|",
+    "titlu": "Livrare la locker",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "clickcollect|",
+    "titlu": "Click & Collect",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "categoriezidarie|",
+    "titlu": "Categorie Zidărie",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "categorievopsea|",
+    "titlu": "Categorie Vopsea",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "categorietevi|",
+    "titlu": "Categorie Țevi",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "categorietermoizolatie|",
+    "titlu": "Categorie Termoizolatie",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "categorietapet|",
+    "titlu": "Categorie Tapet",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "categorieotelbeton|",
+    "titlu": "Categorie Otel beton",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "categorieosb|",
+    "titlu": "Categorie OSB",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "categoriematerieprimamobilier|",
+    "titlu": "Categorie Materie prima mobilier",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "categoriegipscarton|",
+    "titlu": "Categorie Gips-carton",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "categoriegardurisiicircmprejmuiri|",
+    "titlu": "Categorie Garduri și &icirc;mprejmuiri",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "categorieelectriceiluminat|",
+    "titlu": "Categorie Electrice - Iluminat",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "categoriecurtesigradina|",
+    "titlu": "Categorie Curte și grădină",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "categoriecurateniesimenaj|",
+    "titlu": "Categorie Curățenie și menaj",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "categorieaparatedeaerconditionat|",
+    "titlu": "Categorie Aparate de aer conditionat",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "categorieacoperis|",
+    "titlu": "Categorie Acoperiș",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "campanieenergieverdehuawei|",
+    "titlu": "Campanie Energie Verde Huawei",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "medimfarm.ro": [
+   {
+    "k": "blackfridaydevaralamedimfarmroreduceridepanala40toatalunaaugust|fără cod",
+    "titlu": "🌞 Black Friday de Vara la Medimfarm.ro – reduceri de pana la 40% toata luna august",
+    "cod": true,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-31",
+    "activa": false
+   },
+   {
+    "k": "codreduceremedimfarmro15laoricecomandademinim190lei|sun15",
+    "titlu": "Cod reducere MedimFarm.ro -15% la orice comanda de minim 190 lei",
+    "cod": true,
+    "prima": "2026-07-03",
+    "ultima": "2026-07-31",
+    "expira": "2026-07-31",
+    "activa": false
+   },
+   {
+    "k": "medimfarm18reducerevaracucodulsummer18|summer18",
+    "titlu": "MedimFarm - 18% reducere vara cu codul SUMMER18",
+    "cod": true,
+    "prima": "2026-06-12",
+    "ultima": "2026-09-15",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "codreduceremedimfarmro15laoricecomandademinim190lei|medim15",
+    "titlu": "Cod reducere MedimFarm.ro -15% la orice comanda de minim 190 lei",
+    "cod": true,
+    "prima": "2026-05-24",
+    "ultima": "2026-05-24",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "mobidea.ro": [
+   {
+    "k": "ofertedetoamnacuextra10reducerelamobilierdedormitorbucatarielivingsihol|",
+    "titlu": "Oferte de Toamna cu extra 10% reducere la mobilier de dormitor, bucatarie , living și hol",
+    "cod": false,
+    "prima": "2026-09-01",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-29",
+    "activa": true
+   },
+   {
+    "k": "ofertedevaracuextra10reducerelamobilierdedormitorbucatarielivingsihol|",
+    "titlu": "Oferte de Vara cu extra 10% reducere la mobilier de dormitor, bucatarie , living și hol",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-08-30",
+    "expira": "2026-06-29",
+    "activa": false
+   }
+  ],
+  "mobilalaguna.ro": [
+   {
+    "k": "reducerimobilalunaaugust2026|",
+    "titlu": "Reduceri Mobila Luna August 2026",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-31",
+    "activa": false
+   },
+   {
+    "k": "reducerimobilalunaiulie2026|",
+    "titlu": "Reduceri Mobila Luna Iulie 2026",
+    "cod": false,
+    "prima": "2026-07-03",
+    "ultima": "2026-07-31",
+    "expira": "2026-07-31",
+    "activa": false
+   },
+   {
+    "k": "reducerimobilalunaiunie2026|",
+    "titlu": "Reduceri Mobila Luna Iunie 2026",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-06-30",
+    "expira": "2026-06-30",
+    "activa": false
+   }
+  ],
+  "mobonline.ro": [
+   {
+    "k": "summersalecelemaicoolofertepanala54|",
+    "titlu": "Summer Sale — cele mai cool oferte, până la -54% ☀️",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-07-30",
+    "expira": "2026-07-30",
+    "activa": false
+   }
+  ],
+  "moftcollection.ro": [
+   {
+    "k": "livraregratuitalacomenzidepeste200lei|",
+    "titlu": "Livrare Gratuita la comenzi de peste 200 lei",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-09-24",
+    "expira": "2026-12-31",
+    "activa": true
+   },
+   {
+    "k": "panala75lahusesiliconiphonecadoulafiecarecomanda|",
+    "titlu": "Pana la -75% la huse silicon Iphone + CADOU la fiecare comanda",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-31",
+    "activa": false
+   },
+   {
+    "k": "foliedesticlasiprotectiecameracadoulafiecarecomanda|",
+    "titlu": "Folie de sticla si protectie camera CADOU la fiecare comanda",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-31",
+    "activa": false
+   }
+  ],
+  "monportlaser.com": [
+   {
+    "k": "8offforallmachinesandparts|",
+    "titlu": "8% off for all machines and parts",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "2028-07-31",
+    "activa": false
+   },
+   {
+    "k": "preorderreno65profreeco2goggleslasertubemotherboard|",
+    "titlu": "Pre-Order Reno65 Pro: Free CO2 Goggles + Laser Tube + Motherboard",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-10",
+    "expira": "2026-09-10",
+    "activa": false
+   },
+   {
+    "k": "freefibergogglesd70rotaryaxiswithgmproga100wmopa|",
+    "titlu": "Free Fiber Goggles + D70 Rotary Axis with GM Pro & GA 100W MOPA",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-10",
+    "expira": "2026-09-10",
+    "activa": false
+   },
+   {
+    "k": "freefibergoggles80mmrotaryaxiswithgt60w100wmopa|",
+    "titlu": "Free Fiber Goggles + 80mm Rotary Axis with GT 60W & 100W MOPA",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-10",
+    "expira": "2026-09-10",
+    "activa": false
+   },
+   {
+    "k": "freeco2protectiongoggleswithmonportmegalasermachine|",
+    "titlu": "Free CO2 Protection Goggles with Monport Mega Laser Machine",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-10",
+    "expira": "2026-09-10",
+    "activa": false
+   }
+  ],
+  "mooyius.com": [
+   {
+    "k": "fallwintercampaignpackage|",
+    "titlu": "Fall & Winter Campaign Package",
+    "cod": false,
+    "prima": "2026-09-22",
+    "ultima": "2026-09-24",
+    "expira": "2027-02-05",
+    "activa": true
+   },
+   {
+    "k": "latestdealsoffers|",
+    "titlu": "Latest Deals & Offers",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-21",
+    "expira": "2026-12-31",
+    "activa": false
+   }
+  ],
+  "moresoo.com": [
+   {
+    "k": "backtoschoolsale22off|",
+    "titlu": "Back To School Sale -22% OFF",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-15",
+    "expira": "2026-09-18",
+    "activa": false
+   }
+  ],
+  "nadula.com": [
+   {
+    "k": "fallreadaywigssaleupto90offwithcodefall|fall",
+    "titlu": "Fall-Readay Wigs Sale Up To $90 Off With Code:FALL",
+    "cod": true,
+    "prima": "2026-09-22",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-29",
+    "activa": true
+   },
+   {
+    "k": "todayfeelsdifferentsaleupto100offwithcodegold|gold",
+    "titlu": "Today Feels Different Sale Up To $100 Off With Code:GOLD",
+    "cod": true,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-19",
+    "expira": "2026-09-20",
+    "activa": false
+   },
+   {
+    "k": "25offsitewidefreegiftwithcodeklaiyi25|klaiyi25",
+    "titlu": "25% OFF Sitewide + Free Gift With Code: KLAIYI25",
+    "cod": true,
+    "prima": "2026-09-10",
+    "ultima": "2026-09-14",
+    "expira": "2026-09-14",
+    "activa": false
+   },
+   {
+    "k": "100offover379freegiftwithcodeklaiyi100|klaiyi100",
+    "titlu": "$100 OFF Over $379 + Free Gift With Code: KLAIYI100",
+    "cod": true,
+    "prima": "2026-09-10",
+    "ultima": "2026-09-14",
+    "expira": "2026-09-14",
+    "activa": false
+   },
+   {
+    "k": "klaiyihair9thanniversaryblowout2026|klaiyi23",
+    "titlu": "Klaiyi Hair 9th Anniversary Blowout 2026",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-10",
+    "expira": "2026-09-10",
+    "activa": false
+   }
+  ],
+  "nano-auto.ro": [
+   {
+    "k": "promotiilesaptamaniilananomax|",
+    "titlu": "Promotiile Saptamanii la Nanomax",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-31",
+    "activa": false
+   },
+   {
+    "k": "vara10|vara10",
+    "titlu": "Promo Business League x NanoMax Beneficiu: 10% reducere pe www.nano-auto.ro Cod: VARA10 Produse incluse: HYDROSEAL, ThermoDry Roof și ROCK…",
+    "cod": true,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-22",
+    "expira": "2026-08-22",
+    "activa": false
+   }
+  ],
+  "navimow.com": [
+   {
+    "k": "usethecodenvmaff50toget50offonx4i2x3h2|",
+    "titlu": "Use the code NVMAFF50 to get 50OFF on X4, I2, X3, H2",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "2026-09-27",
+    "activa": false
+   }
+  ],
+  "nepstore.ro": [
+   {
+    "k": "reduceridepanala29laparfumurileselectate|",
+    "titlu": "Reduceri de până la 29% la parfumurile selectate",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-06-30",
+    "expira": "2026-06-30",
+    "activa": false
+   }
+  ],
+  "newpharma.ro": [
+   {
+    "k": "summersalepenewpharma|",
+    "titlu": "Summer Sale pe Newpharma",
+    "cod": false,
+    "prima": "2026-07-16",
+    "ultima": "2026-07-24",
+    "expira": "2026-07-24",
+    "activa": false
+   }
+  ],
+  "nh-hotels.com": [
+   {
+    "k": "prewinterofferisliveupto25offminorhotelseuamformerlynhhoteles|citydreamers",
+    "titlu": "Pre-Winter Offer is Live! Up to 25% off | Minor Hotels EUAM (formerly NH Hoteles)",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-04-01",
+    "activa": true
+   },
+   {
+    "k": "summerpromoisliveget30offminorhotelsformerlynhhotels|summerstory",
+    "titlu": "Summer Promo is Live! Get 30% off | Minor Hotels (formerly NH Hotels)",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-14",
+    "expira": "2026-09-14",
+    "activa": false
+   }
+  ],
+  "niculescu.ro": [
+   {
+    "k": "campaniadevarasummerdeals2026reduceridepanala80lacartiminunate|",
+    "titlu": "Campania de Vara (Summer Deals) 2026 - Reduceri de pana la 80% la carti minunate",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-30",
+    "activa": false
+   }
+  ],
+  "niphean.com": [
+   {
+    "k": "couponofclipinhairextensions|",
+    "titlu": "coupon of clip in hair extensions",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-15",
+    "expira": "2026-09-30",
+    "activa": false
+   }
+  ],
+  "nobilacasa.ro": [
+   {
+    "k": "reducericombo|",
+    "titlu": "REDUCERI COMBO",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-09-24",
+    "expira": "2026-12-31",
+    "activa": true
+   },
+   {
+    "k": "nobilacasa15reducerecucodulpromo15|promo15",
+    "titlu": "NobilaCasa - 15% reducere cu codul PROMO15",
+    "cod": true,
+    "prima": "2026-06-12",
+    "ultima": "2026-09-15",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "noriel.ro": [
+   {
+    "k": "catalogofertebacktoschool2026060830092026|",
+    "titlu": "Catalog Oferte Back to school 2026 | 06.08-30.09.2026",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-30",
+    "activa": true
+   },
+   {
+    "k": "backtoschool30reducerelatoateghiozdanele060830092026|",
+    "titlu": "Back to School | 30% REDUCERE la TOATE Ghiozdanele |06.08-30.09.2026",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-30",
+    "activa": true
+   },
+   {
+    "k": "reduceridepanala7010814092026|",
+    "titlu": "Reduceri de pana la 70% | 1.08-14.09.2026",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-09-13",
+    "expira": "2026-09-14",
+    "activa": false
+   },
+   {
+    "k": "concurslegobacktoschool100808092026|",
+    "titlu": "Concurs Lego Back to School | 10.08-08.09.2026",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-09-08",
+    "expira": "2026-09-08",
+    "activa": false
+   },
+   {
+    "k": "20reducerelajucariicodnoriel201319072026|noriel20",
+    "titlu": "20% Reducere la jucarii| Cod: NORIEL20 |13-19.07.2026",
+    "cod": true,
+    "prima": "2026-07-16",
+    "ultima": "2026-07-18",
+    "expira": "2026-07-18",
+    "activa": false
+   },
+   {
+    "k": "summersalesreduceridepanala50|",
+    "titlu": "Summer Sales | Reduceri de pana la 50%",
+    "cod": false,
+    "prima": "2026-07-01",
+    "ultima": "2026-08-02",
+    "expira": "2026-08-02",
+    "activa": false
+   },
+   {
+    "k": "25reducerelacumparaturilegoninjagodeminimum249lei112072026|",
+    "titlu": "25% REDUCERE la cumparaturi LEGO® Ninjago de minimum 249 lei | 1-12.07.2026",
+    "cod": false,
+    "prima": "2026-07-01",
+    "ultima": "2026-07-12",
+    "expira": "2026-07-12",
+    "activa": false
+   },
+   {
+    "k": "reduceridevacanta1530062026|",
+    "titlu": "Reduceri de Vacanta | 15-30.06.2026",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-06-30",
+    "expira": "2026-06-30",
+    "activa": false
+   },
+   {
+    "k": "castigapremiidepovestecudisney|",
+    "titlu": "Castiga premii de poveste cu Disney",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "50leivouchercadoulacomenziledeminimum249delei250502062026|noriel50",
+    "titlu": "50 lei Voucher Cadou la comenzile de minimum 249 de lei | 25.05 - 02.06.2026",
+    "cod": true,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "superofertereduceridepanala501824052026|",
+    "titlu": "Super Oferte - Reduceri de pana la 50% | 18–24.05.2026",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-05-24",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "20reducerelajucariisijocuricodkids201824052026|kids20",
+    "titlu": "20% Reducere la jucarii si jocuri | Cod: KIDS20 |18-24.05.2026",
+    "cod": true,
+    "prima": "2026-05-24",
+    "ultima": "2026-05-24",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "novakidschool.com": [
+   {
+    "k": "dfn15|",
+    "titlu": "15% discount on the first purchase for all subscriptions",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-12-31",
+    "activa": true
+   }
+  ],
+  "nuvien.ro": [
+   {
+    "k": "cumpara2parfumurial3leaestegratuit|",
+    "titlu": "Cumpara 2 parfumuri al -3lea este gratuit",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-09-04",
+    "expira": "2026-09-04",
+    "activa": false
+   }
+  ],
+  "obio.ro": [
+   {
+    "k": "spirulinacadoulacomenzidepeste300delei|",
+    "titlu": "Spirulina CADOU la comenzi de peste 300 de lei",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-30",
+    "activa": false
+   }
+  ],
+  "onixbox.ro": [
+   {
+    "k": "summersalereduceridepana50|",
+    "titlu": "Summer Sale - Reduceri de pana 50%",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-30",
+    "activa": false
+   }
+  ],
+  "ookee.ro": [
+   {
+    "k": "backtoschool2026|",
+    "titlu": "Back To school 2026",
+    "cod": false,
+    "prima": "2026-08-21",
+    "ultima": "2026-09-13",
+    "expira": "2026-09-13",
+    "activa": false
+   },
+   {
+    "k": "zileleookeero18ani|",
+    "titlu": "Zilele ookee.ro 18 ani!",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-07-13",
+    "expira": "2026-07-13",
+    "activa": false
+   },
+   {
+    "k": "1iuniepentruziuacopiluluitauookeero|",
+    "titlu": "1 iunie - Pentru ziua copilului tau! | Ookee.ro",
+    "cod": false,
+    "prima": "2026-05-25",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "oppo.com": [
+   {
+    "k": "fr202609|",
+    "titlu": "Up to €50 OFF on OPPO products",
+    "cod": false,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-19",
+    "expira": "2026-10-18",
+    "activa": false
+   }
+  ],
+  "optiblu.ro": [
+   {
+    "k": "reduceridepanala50laramesiochelaridesoare|",
+    "titlu": "Reduceri de pana la 50% la rame si ochelari de soare",
+    "cod": false,
+    "prima": "2026-07-03",
+    "ultima": "2026-07-31",
+    "expira": "2026-07-31",
+    "activa": false
+   },
+   {
+    "k": "reduceride30latotiochelariidevederesipanala40reducerelaochelariidesoare|iunie",
+    "titlu": "Reduceri de 30% la toti ochelarii de vedere si pana la 40% reducere la ochelarii de soare",
+    "cod": true,
+    "prima": "2026-06-29",
+    "ultima": "2026-06-30",
+    "expira": "2026-06-30",
+    "activa": false
+   },
+   {
+    "k": "reducerede30latotiochelariidevedere|mai",
+    "titlu": "Reducere de 30% la TOTI ochelarii de vedere",
+    "cod": true,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "orbitmobile.com": [
+   {
+    "k": "qubersavings|quber10",
+    "titlu": "Quber Savings",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-10-31",
+    "activa": true
+   }
+  ],
+  "original-group.com": [
+   {
+    "k": "saveanextra5atdesirerivieramayapearlresortoriginalresorts|extra5",
+    "titlu": "Save an extra 5% at Desire Riviera Maya Pearl Resort | Original Resorts",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-10-01",
+    "activa": true
+   },
+   {
+    "k": "playgroundforcouplesattemptationcancunresortfrom182usdnightoriginalresorts|play26",
+    "titlu": "Playground for Couples at Temptation Cancun Resort - From $182 USD/night | Original Resorts",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-10-31",
+    "activa": true
+   },
+   {
+    "k": "lustlacemonthatdesirerivieramayapearlresortoriginalresorts|lustm",
+    "titlu": "LUST & LACE MONTH at DESIRE RIVIERA MAYA PEARL RESORT - Original Resorts",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-11-01",
+    "activa": true
+   },
+   {
+    "k": "getanextra5discountattemptationcancunresortoriginalresorts|5summer",
+    "titlu": "Get an EXTRA 5% DISCOUNT at Temptation Cancun Resort | Original Resorts",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-10-01",
+    "activa": true
+   },
+   {
+    "k": "freedomfiestamonthattemptationcancunresortfrom179usdoriginalresorts|freedom",
+    "titlu": "Freedom & Fiesta month at Temptation Cancun Resort- From $179 USD | Original Resorts",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-10-01",
+    "activa": true
+   }
+  ],
+  "otter-ro": [
+   {
+    "k": "flashsale|",
+    "titlu": "Flash Sale",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-06-28",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "otter.ro": [
+   {
+    "k": "ottersummersalepanala60reducere|",
+    "titlu": "Otter Summer Sale - Pana la 60% reducere",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-07-28",
+    "expira": "2026-07-28",
+    "activa": false
+   },
+   {
+    "k": "flashsale|",
+    "titlu": "Flash Sale",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-09-24",
+    "expira": "",
+    "activa": true
+   }
+  ],
+  "outin.com": [
+   {
+    "k": "outincodeoiaff5|",
+    "titlu": "OutIn Code：OIAFF5",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-04-16",
+    "activa": true
+   }
+  ],
+  "oyrosy.com": [
+   {
+    "k": "fallwintercampaignpackage|",
+    "titlu": "Fall & Winter Campaign Package",
+    "cod": false,
+    "prima": "2026-09-22",
+    "ultima": "2026-09-24",
+    "expira": "2027-02-05",
+    "activa": true
+   }
+  ],
+  "paa-home.ro": [
+   {
+    "k": "reduceridepanala40ladetergentipentruaspiratoarerobot|",
+    "titlu": "Reduceri de pana la 40% la detergenti pentru aspiratoare robot",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-30",
+    "activa": true
+   },
+   {
+    "k": "produseresigilatepaahomerocureduceredepanala50|",
+    "titlu": "Produse Resigilate Paa-Home.ro cu reducere de pana la -50%",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-09-24",
+    "expira": "2026-12-30",
+    "activa": true
+   },
+   {
+    "k": "reduceripaahomerodepanala60laaccesoriipentruaspiratoare|",
+    "titlu": "Reduceri Paa-Home.ro de pana la -60% la accesorii pentru aspiratoare",
+    "cod": false,
+    "prima": "2026-07-16",
+    "ultima": "2026-09-24",
+    "expira": "2026-10-31",
+    "activa": true
+   },
+   {
+    "k": "livraregratuitalacomenzidepeste350lei|",
+    "titlu": "Livrare Gratuita la comenzi de peste 350 lei",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-09-24",
+    "expira": "2026-12-31",
+    "activa": true
+   }
+  ],
+  "padelboost.co.uk": [
+   {
+    "k": "5offdiscountcode|bleague5",
+    "titlu": "5% Off Discount Code",
+    "cod": true,
+    "prima": "2026-08-20",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-29",
+    "activa": true
+   }
+  ],
+  "pcmadd.com": [
+   {
+    "k": "mddserver|",
+    "titlu": "m@dd server",
+    "cod": false,
+    "prima": "2026-05-26",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "mddmonitoare|",
+    "titlu": "m@dd monitoare",
+    "cod": false,
+    "prima": "2026-05-26",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "mddlaptop|",
+    "titlu": "m@dd laptop",
+    "cod": false,
+    "prima": "2026-05-26",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "mddgeneral|",
+    "titlu": "m@dd general",
+    "cod": false,
+    "prima": "2026-05-26",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "mdddesktoppc|",
+    "titlu": "m@dd Desktop PC",
+    "cod": false,
+    "prima": "2026-05-26",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "petit-bebe.ro": [
+   {
+    "k": "lastdaysofsummerpanala20reducerelaprodusepentrubebelusi|",
+    "titlu": "Last Days of Summer – până la 20% reducere ☀️la produse pentru bebelusi",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-31",
+    "activa": false
+   },
+   {
+    "k": "readysetbebediscountspanala20reducere|",
+    "titlu": "Ready, Set, Bebe Discounts – până la -20% reducere!",
+    "cod": false,
+    "prima": "2026-07-16",
+    "ultima": "2026-07-26",
+    "expira": "2026-07-26",
+    "activa": false
+   }
+  ],
+  "petmart.ro": [
+   {
+    "k": "cadoulaachizitiauneizgarziforestopentrucainisaupisici|",
+    "titlu": "Cadou la achiziția unei zgărzi Foresto pentru câini sau pisici",
+    "cod": false,
+    "prima": "2026-07-16",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-30",
+    "activa": false
+   },
+   {
+    "k": "profitadereducerilelaantiparazitarepentrucainisipisici|",
+    "titlu": "Profită de reducerile la antiparazitare pentru câini și pisici",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "pickndazzle.com": [
+   {
+    "k": "chocosummerbox26produsepremiumdepeste900leiladoar179lei|10",
+    "titlu": "CHOCOSUMMER BOX 26 – Produse premium de peste 900 lei la doar 179 lei ☀️",
+    "cod": true,
+    "prima": "2026-06-29",
+    "ultima": "2026-07-30",
+    "expira": "2026-07-30",
+    "activa": false
+   }
+  ],
+  "pint.ro": [
+   {
+    "k": "asigurarirca|",
+    "titlu": "Asigurari RCA",
+    "cod": false,
+    "prima": "2026-06-22",
+    "ultima": "2026-08-18",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "prestigehome.ro": [
+   {
+    "k": "latesummersale|",
+    "titlu": "Late Summer Sale",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-30",
+    "activa": false
+   },
+   {
+    "k": "homerefresh|",
+    "titlu": "HOME REFRESH",
+    "cod": false,
+    "prima": "2026-07-16",
+    "ultima": "2026-07-31",
+    "expira": "2026-07-31",
+    "activa": false
+   },
+   {
+    "k": "coolsummerdeals|",
+    "titlu": "COOL SUMMER DEALS",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-06-30",
+    "expira": "2026-06-30",
+    "activa": false
+   },
+   {
+    "k": "maimultconfortpentruunstildeviatamaibun|",
+    "titlu": "Mai mult confort pentru un stil de viata mai bun",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "priveboutique.net": [
+   {
+    "k": "pb20sezonbanchetmajorat20latoaterochiileprive|pb20",
+    "titlu": "PB20 - Sezon banchet & majorat: -20% la toate rochiile PRIVE",
+    "cod": true,
+    "prima": "2026-08-20",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-29",
+    "activa": true
+   }
+  ],
+  "re-bloom.ro": [
+   {
+    "k": "pachetespecialeironflaskseturi2in1sticletermicepaharedela115ronpanala63reducere|",
+    "titlu": "🔥 Pachete speciale IRON °FLASK: Seturi 2 in 1 Sticle Termice & Pahare de la 115 RON (Până la 63% Reducere)",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-30",
+    "activa": false
+   },
+   {
+    "k": "extra20laproduseleselectateextra20laproduseleselectate|",
+    "titlu": "Extra 20% la Produsele SelectateExtra 20% la Produsele Selectate",
+    "cod": false,
+    "prima": "2026-07-03",
+    "ultima": "2026-07-31",
+    "expira": "2026-07-31",
+    "activa": false
+   },
+   {
+    "k": "dela10la75reducerelauneltelegakagoalegegakagoalegeeficientaexclusivperebloomro|",
+    "titlu": "De la 10% la 75% reducere la uneltele Gakago. Alege Gakago. Alege eficiența. Exclusiv pe re-bloom.ro.",
+    "cod": false,
+    "prima": "2026-07-03",
+    "ultima": "2026-07-31",
+    "expira": "2026-07-31",
+    "activa": false
+   }
+  ],
+  "redodopower.de": [
+   {
+    "k": "redodoprimedaysale|prime10",
+    "titlu": "Redodo Prime Day Sale",
+    "cod": true,
+    "prima": "2026-09-21",
+    "ultima": "2026-09-24",
+    "expira": "2026-10-15",
+    "activa": true
+   },
+   {
+    "k": "redodoprimedaysalees|",
+    "titlu": "Redodo Prime Day Sale-ES",
+    "cod": false,
+    "prima": "2026-09-21",
+    "ultima": "2026-09-21",
+    "expira": "2026-10-05",
+    "activa": false
+   },
+   {
+    "k": "redodo8discountcodesaveonallproducts|",
+    "titlu": "Redodo 8% Discount Code – Save on All Products",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-12-31",
+    "activa": true
+   }
+  ],
+  "regata.ro": [
+   {
+    "k": "blackfridaydevaraperegataro|extra2",
+    "titlu": "Black Friday de vara pe regata.ro",
+    "cod": true,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-30",
+    "activa": false
+   },
+   {
+    "k": "cuponreducere5|",
+    "titlu": "Cupon reducere 5%",
+    "cod": false,
+    "prima": "2026-06-30",
+    "ultima": "2026-09-24",
+    "expira": "",
+    "activa": true
+   },
+   {
+    "k": "regatulpreturilormicipanala33reducereregataro|",
+    "titlu": "Regatul preturilor mici! Pana la 33% reducere Regata.ro",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-07-05",
+    "expira": "2026-07-05",
+    "activa": false
+   },
+   {
+    "k": "cuponreducere5|regata5",
+    "titlu": "Cupon reducere 5%",
+    "cod": true,
+    "prima": "2026-06-29",
+    "ultima": "2026-06-29",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "sanoverde.ro": [
+   {
+    "k": "ofertaverii21gratuitlaproduselesanoverdetotal|",
+    "titlu": "Oferta Verii: 2 + 1 Gratuit la produsele SanoVerde Total!",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-30",
+    "activa": false
+   }
+  ],
+  "savoydubai.com": [
+   {
+    "k": "booknowandgetupto25discountwithsavoyhotelsdubai|camp-best",
+    "titlu": "Book now and get up to 25% discount with Savoy Hotels, Dubai",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-01-01",
+    "activa": true
+   }
+  ],
+  "sculepescuit.ro": [
+   {
+    "k": "set4avertizoripescuitcustatiecoolangelcelmaibunpretdinpiatabestseller7comision|",
+    "titlu": "Set 4 avertizori pescuit cu statie Cool Angel – Cel mai bun pret din piata! (Best Seller 7% comision)",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "sevensins.ro": [
+   {
+    "k": "flashsalepanala50laproduseleselectatedepesevensinsro|",
+    "titlu": "Flash Sale - Până la -50% la produsele selectate de pe SevenSins.ro",
+    "cod": false,
+    "prima": "2026-07-03",
+    "ultima": "2026-07-31",
+    "expira": "2026-07-31",
+    "activa": false
+   }
+  ],
+  "shein.com": [
+   {
+    "k": "sheinfashionlapreturimici|",
+    "titlu": "SHEIN - Fashion la preturi mici",
+    "cod": false,
+    "prima": "2026-06-12",
+    "ultima": "2026-09-15",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "snailax.com": [
+   {
+    "k": "on30|",
+    "titlu": "Get 30% off all products from store.",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-04-29",
+    "activa": true
+   }
+  ],
+  "sneakerit.ro": [
+   {
+    "k": "sale|",
+    "titlu": "Toate produsele reduse de pe sneakerit.ro",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-09-24",
+    "expira": "2029-03-08",
+    "activa": true
+   }
+  ],
+  "sofipex.ro": [
+   {
+    "k": "promotiiperiodice|",
+    "titlu": "Promotii periodice",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-09-24",
+    "expira": "2026-12-30",
+    "activa": true
+   }
+  ],
+  "sportdepot.ro": [
+   {
+    "k": "sportdeporfinalsalemuntesimarereduceridepanala60|",
+    "titlu": "Sport Depor Final Sale: Munte si Mare – reduceri de pana la 60%",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-09-02",
+    "expira": "2026-09-02",
+    "activa": false
+   },
+   {
+    "k": "reduceresportdepotro40colectiedevarakidsmovieheroesnameit|",
+    "titlu": "Reducere SportDepot.ro -40% Colectie de vara: KIDS MOVIE HEROES & NAME IT",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "promotiesportdepotro20reducerecordillerodemixjossoutventuretermit|",
+    "titlu": "Promotie SportDepot.ro - 20% Reducere CORDILLERO, DEMIX, JOSS, OUTVENTURE, TERMIT",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "promotiesportdepotro15laselectiadetricouri|",
+    "titlu": "Promotie SportDepot.ro -15% la selectia de tricouri",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "midseasonsalelasportdepotrocureduceridepanala40laselectianikepumaadidasunderarmourguesssibrille|",
+    "titlu": "Mid Season Sale la SportDepot.ro cu reduceri de pana la -40% la selectia Nike, Puma, Adidas, Under Armour, Guess si Brille",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "midseasonsaleextra10lamiidemodeledejareduse|extra10",
+    "titlu": "MID SEASON SALE + EXTRA 10% la mii de modele deja reduse",
+    "cod": true,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "codreduceresportdepotro10extrareducerelapumatimelesscollection|puma10",
+    "titlu": "Cod reducere SportDepot.ro -10% EXTRA reducere la Puma Timeless collection",
+    "cod": true,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "sportera.ro": [
+   {
+    "k": "reducerisporterarodepanala50laechipamentsportiv|",
+    "titlu": "Reduceri Sportera.ro de pana la -50% la echipament sportiv",
+    "cod": false,
+    "prima": "2026-05-25",
+    "ultima": "2026-07-02",
+    "expira": "2026-12-31",
+    "activa": false
+   },
+   {
+    "k": "reducerisporterarodepanala50laechipamentdejochandbal|",
+    "titlu": "Reduceri Sportera.ro de pana la -50% la Echipament de joc Handbal",
+    "cod": false,
+    "prima": "2026-05-25",
+    "ultima": "2026-07-02",
+    "expira": "2026-12-31",
+    "activa": false
+   },
+   {
+    "k": "reduceresporterarodepanala50laechipamentdejocfotbal|",
+    "titlu": "Reducere Sportera.ro de pana la -50% la echipament de joc fotbal",
+    "cod": false,
+    "prima": "2026-05-25",
+    "ultima": "2026-07-02",
+    "expira": "2026-12-31",
+    "activa": false
+   },
+   {
+    "k": "livraregratuitasporterarolacomenzidepeste350lei|",
+    "titlu": "Livrare Gratuita Sportera.ro la comenzi de peste 350 lei",
+    "cod": false,
+    "prima": "2026-05-25",
+    "ultima": "2026-07-02",
+    "expira": "2026-12-31",
+    "activa": false
+   }
+  ],
+  "store.pongbotsports.com": [
+   {
+    "k": "5offforpongbottennisballmachine|pongbotsports5",
+    "titlu": "5% off For Pongbot Tennis Ball Machine",
+    "cod": true,
+    "prima": "2026-09-11",
+    "ultima": "2026-09-24",
+    "expira": "2027-08-31",
+    "activa": true
+   }
+  ],
+  "store.saramonic.com": [
+   {
+    "k": "save249onordersover999forsaramonicproducts|sraff249",
+    "titlu": "Save $249 on orders over $999 for Saramonic products!",
+    "cod": true,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-24",
+    "expira": "2028-01-01",
+    "activa": true
+   }
+  ],
+  "studioszel.ro": [
+   {
+    "k": "10reducerelatoateprodusele|",
+    "titlu": "10% REDUCERE LA TOATE PRODUSELE",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-30",
+    "activa": false
+   },
+   {
+    "k": "seturidemobilierpentrudormitorreducerede20|",
+    "titlu": "Seturi de mobilier pentru dormitor – reducere de 20%.",
+    "cod": false,
+    "prima": "2026-07-16",
+    "ultima": "2026-07-30",
+    "expira": "2026-07-30",
+    "activa": false
+   },
+   {
+    "k": "10discountonfurnitureandhomegardenproducts|home10",
+    "titlu": "10% discount on furniture and home & garden products",
+    "cod": true,
+    "prima": "2026-06-29",
+    "ultima": "2026-06-29",
+    "expira": "2026-06-29",
+    "activa": false
+   }
+  ],
+  "style4street.com": [
+   {
+    "k": "gecistatementlareducere|",
+    "titlu": "Geci Statement la Reducere",
+    "cod": false,
+    "prima": "2026-07-16",
+    "ultima": "2026-09-16",
+    "expira": "2026-09-16",
+    "activa": false
+   }
+  ],
+  "swiss-belhotel.com": [
+   {
+    "k": "bankbcaofferenjoy15offbestflexibleratesswissbelhotelinternational|bcacc",
+    "titlu": "Bank BCA Offer: Enjoy 15% off Best Flexible Rates | Swiss-bel Hotel International",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-12-21",
+    "activa": true
+   }
+  ],
+  "temu.com": [
+   {
+    "k": "temureduceripanala90|",
+    "titlu": "Temu - Reduceri pana la 90%",
+    "cod": false,
+    "prima": "2026-06-12",
+    "ultima": "2026-09-15",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "theomfort.com": [
+   {
+    "k": "om15|",
+    "titlu": "Get your new order for all product 15% off",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-12-30",
+    "activa": true
+   }
+  ],
+  "trendiva.ro": [
+   {
+    "k": "summersale|",
+    "titlu": "Summer sale",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-06-29",
+    "expira": "2026-06-29",
+    "activa": false
+   }
+  ],
+  "trendyol.com": [
+   {
+    "k": "trendyolcelmaimaremarketplaceturcesc|",
+    "titlu": "Trendyol - Cel mai mare marketplace turcesc",
+    "cod": false,
+    "prima": "2026-06-12",
+    "ultima": "2026-09-15",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "trendyup.ro": [
+   {
+    "k": "womenfashionbaggentiidama|",
+    "titlu": "Women fashion bag/ Gentii dama",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-08-19",
+    "expira": "2026-12-31",
+    "activa": false
+   }
+  ],
+  "tvcmall.com": [
+   {
+    "k": "save55on500attvcmall|tvc26q3a55new",
+    "titlu": "Save $55 on $500+ at Tvcmall",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-10-01",
+    "activa": true
+   },
+   {
+    "k": "save33on300attvcmall|tvc26q3a33new",
+    "titlu": "Save $33 on $300+ at TVCMALL",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-10-01",
+    "activa": true
+   },
+   {
+    "k": "save10on100attvcmall|tvc26q3a10new",
+    "titlu": "Save $10 on $100+ at TVCMALL",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-10-01",
+    "activa": true
+   },
+   {
+    "k": "95offonfirstbulkorderof300|tvc26q3a95new",
+    "titlu": "9.5% off on first bulk order of $300+",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-10-01",
+    "activa": true
+   },
+   {
+    "k": "6offsitewidepurchases|tvc26q3a6%",
+    "titlu": "6% off sitewide purchases",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-10-01",
+    "activa": true
+   },
+   {
+    "k": "20offover300undiscountedproducts|tvc26q3a$20",
+    "titlu": "$20 off over $300 (undiscounted products)",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-10-01",
+    "activa": true
+   }
+  ],
+  "ugeat.com": [
+   {
+    "k": "weddinghairsale22off|wh22",
+    "titlu": "wedding hair sale 22% off",
+    "cod": true,
+    "prima": "2026-09-17",
+    "ultima": "2026-09-24",
+    "expira": "2026-10-08",
+    "activa": true
+   },
+   {
+    "k": "weddinghairsale15off|wh15",
+    "titlu": "wedding hair sale 15% off",
+    "cod": true,
+    "prima": "2026-09-17",
+    "ultima": "2026-09-24",
+    "expira": "2026-10-08",
+    "activa": true
+   },
+   {
+    "k": "virgin70off|vr70",
+    "titlu": "Enjoy a 70% discount on high-quality Virgin+ series products.",
+    "cod": true,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-24",
+    "expira": "2027-05-15",
+    "activa": true
+   },
+   {
+    "k": "clearancesale50off|",
+    "titlu": "Clearance sale50%off",
+    "cod": false,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-24",
+    "expira": "2027-05-15",
+    "activa": true
+   },
+   {
+    "k": "buytogether25off|",
+    "titlu": "Buy together 25% off",
+    "cod": false,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-24",
+    "expira": "2027-05-15",
+    "activa": true
+   },
+   {
+    "k": "backtoschoolsale22off|",
+    "titlu": "Back To School Sale -22% OFF",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-15",
+    "expira": "2026-09-18",
+    "activa": false
+   }
+  ],
+  "us.lemorele.com": [
+   {
+    "k": "lemorele20offfornewcustomerswelcomediscountsitewide|new20",
+    "titlu": "Lemorele ｜ 20% off for new customers & Welcome Discount Sitewide",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-07-01",
+    "activa": true
+   },
+   {
+    "k": "lemorele15offsitewidelimiteddealforbestwirelesshdmi|new15",
+    "titlu": "Lemorele ｜ 15% off sitewide & Limited Deal for best Wireless HDMI",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-07-01",
+    "activa": true
+   }
+  ],
+  "valerion.com": [
+   {
+    "k": "affv130|",
+    "titlu": "Alliance Exclusive Discount $130 for New User Can be combined with promotional offers Minimum purchase amount of $500 Each new user is…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-15",
+    "expira": "2026-12-31",
+    "activa": false
+   },
+   {
+    "k": "affv100|",
+    "titlu": "Alliance Exclusive Discount $100 Can be combined with promotional offers Minimum purchase amount of $500.",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-15",
+    "expira": "2026-12-31",
+    "activa": false
+   }
+  ],
+  "vegis.ro": [
+   {
+    "k": "campaniibacktoschoolvegisro|",
+    "titlu": "Campanii Back to School - Vegis.ro",
+    "cod": false,
+    "prima": "2026-08-11",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-31",
+    "activa": false
+   },
+   {
+    "k": "summersale|",
+    "titlu": "Summer Sale",
+    "cod": false,
+    "prima": "2026-07-14",
+    "ultima": "2026-07-19",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "verdalis.ro": [
+   {
+    "k": "verdaflex2flacoanela209leitransportgratuit|verda40",
+    "titlu": "VerdaFlex: 2 flacoane la 209 lei + transport gratuit",
+    "cod": true,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-31",
+    "expira": "2026-08-31",
+    "activa": false
+   }
+  ],
+  "vetro.ro": [
+   {
+    "k": "epilarecearasiaccesorii|",
+    "titlu": "Epilare - ceara si accesorii",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-30",
+    "activa": false
+   },
+   {
+    "k": "lichidaridestocmasinisiutilajedecroitorie|",
+    "titlu": "Lichidari de stoc - masini si utilaje de croitorie",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-06-30",
+    "expira": "2026-06-30",
+    "activa": false
+   },
+   {
+    "k": "lichidarestocprodusecosmetice|",
+    "titlu": "Lichidare stoc - produse cosmetice",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-06-30",
+    "expira": "2026-06-30",
+    "activa": false
+   },
+   {
+    "k": "lichidarestocprodusebirou|",
+    "titlu": "Lichidare stoc - produse birou",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-06-30",
+    "expira": "2026-06-30",
+    "activa": false
+   },
+   {
+    "k": "lichidaristocprodusemedicale|",
+    "titlu": "Lichidari stoc produse medicale",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-06-29",
+    "expira": "2026-06-29",
+    "activa": false
+   }
+  ],
+  "vevor.com": [
+   {
+    "k": "vvaseu10|",
+    "titlu": "10% off sitewide with the code VVASEU10 during Back to School Promotion",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-08",
+    "expira": "2026-09-08",
+    "activa": false
+   }
+  ],
+  "vevor.com.au": [
+   {
+    "k": "vvaseu10|",
+    "titlu": "10% off sitewide with the code VVASEU10 during Back to School Promotion",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-08",
+    "expira": "2026-09-08",
+    "activa": false
+   }
+  ],
+  "vidaxl.bg": [
+   {
+    "k": "dealspagereduceride10princoduloferte01|",
+    "titlu": "Deals Page: Reduceri de 10% prin codul OFERTE01",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-09-24",
+    "expira": "",
+    "activa": true
+   },
+   {
+    "k": "aboneazatelanewsletterulnostruazbeneficiazadeoreducerede25leilainscriere|",
+    "titlu": "Abonează-te la newsletterul nostru az & beneficiază de o reducere de 25Lei la înscriere!",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-09-24",
+    "expira": "2028-12-31",
+    "activa": true
+   },
+   {
+    "k": "10|",
+    "titlu": "10% намаление",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-09-24",
+    "expira": "",
+    "activa": true
+   }
+  ],
+  "vidaxl.ro": [
+   {
+    "k": "10|",
+    "titlu": "Абонирайте се за нашия бюлетин днес & получавате отстъпка от 10 лв. при регистрация!",
+    "cod": false,
+    "prima": "2026-06-30",
+    "ultima": "2026-08-23",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "dealspagereduceride10princoduloferte01|",
+    "titlu": "Deals Page: Reduceri de 10% prin codul OFERTE01",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-08-23",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "aboneazatelanewsletterulnostruazbeneficiazadeoreducerede25leilainscriere|",
+    "titlu": "Abonează-te la newsletterul nostru az & beneficiază de o reducere de 25Lei la înscriere!",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-08-23",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "videt.ro": [
+   {
+    "k": "reduceridestocpanala70laramesi25latoatelentileledevedere|",
+    "titlu": "Reduceri de stoc: până la -70% la rame și -25% la toate lentilele de vedere",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-31",
+    "activa": false
+   },
+   {
+    "k": "reduceridestocpanala70laochelariidesoare|",
+    "titlu": "Reduceri de stoc: Până la -70% la ochelarii de soare",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-31",
+    "activa": false
+   },
+   {
+    "k": "panala35laoselectiedeochelaridesoaresi25latoatelentileledevedere|august",
+    "titlu": "Până la -35% la o selecție de ochelari de soare și -25% la toate lentilele de vedere",
+    "cod": true,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-30",
+    "expira": "2026-08-31",
+    "activa": false
+   },
+   {
+    "k": "zilelevidetlivraregratuitalaoricecomandadelentiledecontact1521072026|lc15ani",
+    "titlu": "Zilele Videt: Livrare gratuită la orice comandă de lentile de contact_15-21.07.2026",
+    "cod": true,
+    "prima": "2026-07-16",
+    "ultima": "2026-07-21",
+    "expira": "2026-07-21",
+    "activa": false
+   },
+   {
+    "k": "zilelevidet40latotiochelariidevederesidesoare1521072026|15ani",
+    "titlu": "Zilele Videt: -40% la TOȚI ochelarii de vedere și de soare_15-21.07.2026",
+    "cod": true,
+    "prima": "2026-07-16",
+    "ultima": "2026-07-21",
+    "expira": "2026-07-21",
+    "activa": false
+   },
+   {
+    "k": "zilelevidetpanala50laramesi30latoatelentileledevedere|bday",
+    "titlu": "Zilele Videt: până la -50% la rame și 30% la toate lentilele de vedere",
+    "cod": true,
+    "prima": "2026-07-01",
+    "ultima": "2026-07-14",
+    "expira": "2026-07-14",
+    "activa": false
+   },
+   {
+    "k": "30latotiochelariidesoareonlinesiinshowroomuri|bdaysun",
+    "titlu": "-30% la TOȚI ochelarii de soare, online și în showroom-uri.",
+    "cod": true,
+    "prima": "2026-07-01",
+    "ultima": "2026-07-14",
+    "expira": "2026-07-14",
+    "activa": false
+   },
+   {
+    "k": "varaincepecutinepanala45reducerelaramesi30reducerelatoatelentilele|vara",
+    "titlu": "Vara începe cu tine: până la 45% reducere la rame și 30% reducere la toate lentilele",
+    "cod": true,
+    "prima": "2026-06-29",
+    "ultima": "2026-06-30",
+    "expira": "2026-06-30",
+    "activa": false
+   }
+  ],
+  "vilagale.com": [
+   {
+    "k": "20discountgrandparentsgrandchildrenprogrammevilagale|avos&netos",
+    "titlu": "20% Discount| Grandparents & Grandchildren Programme - Vila Gale",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-01-01",
+    "activa": true
+   }
+  ],
+  "vivienhair.com": [
+   {
+    "k": "backtoschoolsale22off|",
+    "titlu": "Back To School Sale -22% OFF",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-17",
+    "expira": "2026-09-18",
+    "activa": false
+   }
+  ],
+  "vonmag.ro": [
+   {
+    "k": "lichidarestochikvisionhiwatch|",
+    "titlu": "🔥 Lichidare stoc Hikvision HiWatch",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "wecreat.com": [
+   {
+    "k": "vpro150|",
+    "titlu": "100 off for wecreat vision pro",
+    "cod": false,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-24",
+    "expira": "2027-05-31",
+    "activa": true
+   },
+   {
+    "k": "lumosflex120|",
+    "titlu": "120 off for lumos flex",
+    "cod": false,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-24",
+    "expira": "2026-12-31",
+    "activa": true
+   },
+   {
+    "k": "lumos80|",
+    "titlu": "$100 off for wecreat lumos",
+    "cod": false,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-24",
+    "expira": "2027-05-31",
+    "activa": true
+   },
+   {
+    "k": "5offforallwecreatproductscodewecreat|wecreat",
+    "titlu": "5% off for all wecreat products!-code:WECREAT",
+    "cod": true,
+    "prima": "2026-09-16",
+    "ultima": "2026-09-24",
+    "expira": "2026-12-31",
+    "activa": true
+   }
+  ],
+  "wegic.ai": [
+   {
+    "k": "wegic10|",
+    "titlu": "This offer applies to all Wegic annual subscription plans (1, 2, or 3 years), but not the monthly plan. The custom domain feature is only…",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-30",
+    "activa": true
+   }
+  ],
+  "wiskiiactive.com": [
+   {
+    "k": "stepintofallsale|reset",
+    "titlu": "STEP INTO FALL SALE",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-15",
+    "expira": "2026-09-15",
+    "activa": false
+   }
+  ],
+  "wolfy.ro": [
+   {
+    "k": "10reducerelaproduseleselectatewolfy|wolfy-10",
+    "titlu": "10% reducere la produsele selectate Wolfy",
+    "cod": true,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-23",
+    "expira": "2026-08-23",
+    "activa": false
+   }
+  ],
+  "x-sense.com": [
+   {
+    "k": "q3exclusiveaffiliatediscount12offsmarthomesafety|",
+    "titlu": "Q3 Exclusive Affiliate Discount: 12% Off Smart Home Safety",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-30",
+    "activa": true
+   }
+  ],
+  "xlaserlab.com": [
+   {
+    "k": "imaff5|",
+    "titlu": "Get a 5% OFF on Laser Welder X1/X1Pro for your First Purchase",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-01-01",
+    "activa": true
+   },
+   {
+    "k": "im99off|",
+    "titlu": "Get An Extra $99 OFF On All Orders Over $1500 on Xlaserlab",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-01-01",
+    "activa": true
+   }
+  ],
+  "xmind.com": [
+   {
+    "k": "xmind10offxmind10off|",
+    "titlu": "Xmind 10% Off | XMIND10OFF",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-24",
+    "expira": "2027-06-01",
+    "activa": true
+   },
+   {
+    "k": "xmind10off|",
+    "titlu": "Get 10% off Xmind with this exclusive discount",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-15",
+    "expira": "2027-06-01",
+    "activa": false
+   }
+  ],
+  "yilitehair.com": [
+   {
+    "k": "yilitetapeinhairextensions|",
+    "titlu": "YILITE Tape In Hair Extensions",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "2029-05-19",
+    "activa": false
+   },
+   {
+    "k": "yilitetapeinhairextensionspricereduction|",
+    "titlu": "YILITE Tape In Hair Extensions Price reduction",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "yiliteinvisibletapeinhairextensionscreatefullerthickerlookinghairinminutes|",
+    "titlu": "YILITE Invisible Tape-in Hair Extensions create fuller, thicker-looking hair in minutes.",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "yilitehairupto54off|",
+    "titlu": "yilite hair UP TO 54% OFF",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "yilitehairupto53off|",
+    "titlu": "yilite hair UP TO 53% OFF",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "yilitehairisavailableforpurchaseusingpaypalpaylateraffirmafterpayorklarna|",
+    "titlu": "Yilite Hair is available for purchase using PayPal Pay Later, Affirm, Afterpay, or Klarna.",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "yilitehairinvisibletapeinsaremakingblendingeasy|",
+    "titlu": "yilite hair Invisible tape ins are making blending easy",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "yilitehairextra54offcodee54|",
+    "titlu": "Yilite Hair Extra 54% OFF (code:E54)",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "yilitehairclipins|",
+    "titlu": "yilite hair clip ins",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "yilitehairbuynowpaylaterwithklarnapaypal|",
+    "titlu": "yilite hair Buy Now Pay Later With Klarna&Paypal",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "yilitehairbutterflyhair|",
+    "titlu": "yilite hair Butterfly hair",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "yilitehair53offallproducts|",
+    "titlu": "yilite hair 53% off all products",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "yilite100virginhumanhair|",
+    "titlu": "Yilite 100% Virgin Human Hair",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "wearing22inchclipinsin1jetblackcolor|",
+    "titlu": "wearing 22 inch clip ins in #1 jet black color",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "tryourlongseamlesstapeins|",
+    "titlu": "Try Our Long Seamless Tape-Ins",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "toplook55|",
+    "titlu": "TOPLOOK55 (55% OFF, valid for all products sitewide).",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "thenewseamlessinvisibletapeins|",
+    "titlu": "The NEW Seamless Invisible Tape-ins",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "soeasyyoucaneasilyinstallitathome|",
+    "titlu": "So easy!!You can easily install it at home",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "signupget51off|yilite51",
+    "titlu": "Sign up get 51% off",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "2029-04-30",
+    "activa": false
+   },
+   {
+    "k": "seamlessinvisibletapeins|",
+    "titlu": "Seamless Invisible Tape-Ins",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "saygoodbyetobaldspots|",
+    "titlu": "Say Goodbye to Bald Spots!",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "save53codee53|",
+    "titlu": "Save 53%! CODE:E53",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "save53codee53saygoodbyetobaldspots|",
+    "titlu": "Save 53% CODE:E53 Say Goodbye to Bald Spots!",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "nowat53off|",
+    "titlu": "Now at 53% OFF",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "newsemesternewlookbacktoschoolbigsale|e53",
+    "titlu": "New Semester, New Look-Back To School Big Sale",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "2029-09-01",
+    "activa": false
+   },
+   {
+    "k": "justdiscoveredtheeasiestwaytogetlong|",
+    "titlu": "Just discovered the easiest way to get long",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "invisibletapeinwefthairextensionsmadeforeasydiyathome|",
+    "titlu": "Invisible tape in weft hair extensions, made for easy DIY at home",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "iamsoexcitedtosharewithyouallmynewhair|",
+    "titlu": "I am so excited to share with you all my new hair",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "cantwaittorocktheseonstage|",
+    "titlu": "Can’t wait to rock these on stage",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "53offforallproduct|",
+    "titlu": "53% Off For All Product",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "52offforallproduct|",
+    "titlu": "52% Off For All Product",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "51offforallproduct|aff51",
+    "titlu": "51% Off For All Product",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "",
+    "activa": false
+   },
+   {
+    "k": "100virginhairreusableinvisibleget|",
+    "titlu": "100% Virgin Hair. Reusable. Invisible. Get",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-19",
+    "expira": "",
+    "activa": false
+   }
+  ],
+  "youngsee.shop": [
+   {
+    "k": "backtoschoolsale22off|",
+    "titlu": "Back To School Sale -22% OFF",
+    "cod": false,
+    "prima": "2026-09-08",
+    "ultima": "2026-09-15",
+    "expira": "2026-09-18",
+    "activa": false
+   }
+  ],
+  "yves-rocher.ro": [
+   {
+    "k": "11oferitlaingrijireten|",
+    "titlu": "1+1 OFERIT la îngrijire ten",
+    "cod": false,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-25",
+    "expira": "2026-08-25",
+    "activa": false
+   },
+   {
+    "k": "50lacelemaiscumpe5produse|5off50",
+    "titlu": "-50 % LA CELE MAI SCUMPE 5 PRODUSE!",
+    "cod": true,
+    "prima": "2026-08-20",
+    "ultima": "2026-08-23",
+    "expira": "2026-08-23",
+    "activa": false
+   },
+   {
+    "k": "reduceripanala50|",
+    "titlu": "REDUCERI PÂNĂ LA -50%",
+    "cod": false,
+    "prima": "2026-06-29",
+    "ultima": "2026-07-15",
+    "expira": "2026-07-21",
+    "activa": false
+   }
+  ],
+  "zephyrlabs.ro": [
+   {
+    "k": "promotie33maiseptembriepentruoricare2produseidenticedelamelegattipharma|",
+    "titlu": "Promotie -33% Mai - Septembrie pentru oricare 2 produse identice de la Melegatti Pharma",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-09-24",
+    "expira": "2026-09-29",
+    "activa": true
+   }
+  ],
+  "zurlishop.ro": [
+   {
+    "k": "castigaunapeldelaunmembrudingascazurlilacomenzideminimum250lei|",
+    "titlu": "Câștigă un apel de la un membru din Gașca Zurli la comenzi de minimum 250 lei",
+    "cod": false,
+    "prima": "2026-05-24",
+    "ultima": "2026-06-19",
+    "expira": "",
+    "activa": false
+   }
+  ]
+ }
+}

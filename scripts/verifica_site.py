@@ -194,6 +194,36 @@ def verifica_date() -> dict:
     if goale:
         semnaleaza("articol gol", f"{len(goale)} articole sub 400 de caractere", goale)
 
+    # 8. Istoricul promotiilor (24.09.2026). Pasul lui ruleaza cu continue-on-error, deci daca se
+    #    strica nu se inroseste nimic: „plasa de siguranta pe care n-o verifica nimeni"
+    #    (docs/LECTII-TEHNICE.md #4). Se prinde aici: fisier care nu se mai actualizeaza, sau o
+    #    intrare care incalca regulile de titlu, adica a ajuns acolo ocolind scriptul. Regulile
+    #    sunt importate din istoric_promotii.py, deci stau intr-un singur loc.
+    istoric = incarca("istoric-promotii.json")
+    if istoric is None:
+        semnaleaza("istoric promotii lipsa", "frontend/public/istoric-promotii.json nu exista", [])
+    else:
+        from datetime import date, datetime, timezone
+        from istoric_promotii import slug_valid, titlu_publicabil
+        mag_ist = istoric.get("magazine") or {}
+        stare["istoric_magazine"] = len(mag_ist)
+        stare["istoric_promotii"] = sum(len(v) for v in mag_ist.values())
+        try:
+            vechime = (datetime.now(timezone.utc).date() - date.fromisoformat(istoric.get("actualizat") or "")).days
+        except ValueError:
+            vechime = None
+        if vechime is None or vechime > 2:
+            semnaleaza("istoric promotii invechit",
+                       f"istoric-promotii.json e actualizat ultima data pe {istoric.get('actualizat')!r}: "
+                       "pasul „Istoricul promotiilor pe magazin” nu mai merge", [])
+        dupa_slug = {(m.get("magazin") or "").lower(): m for m in magazine}
+        murdare = [f"{s}: {(e.get('titlu') or '')[:50]}" for s, v in mag_ist.items() for e in v
+                   if not slug_valid(s) or not titlu_publicabil(e.get("titlu") or "", dupa_slug.get(s) or {"magazin": s})]
+        if murdare:
+            semnaleaza("istoric promotii murdar",
+                       f"{len(murdare)} intrari din istoric incalca regulile de titlu (cod drept titlu, "
+                       "text pentru afiliati, magazin de test)", murdare)
+
     return stare
 
 
