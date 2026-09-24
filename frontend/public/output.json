@@ -16,14 +16,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 7,
+    "zile_ramase": 6,
     "promotii": [
       {
         "nume": "DH2026SEPSAVE3",
         "descriere": "Save $3 on orders over $29 using coupon DH2026SEPSAVE3 at DHgate.",
         "cod_cupon": "",
         "landing_page": "https://dhgate.sjv.io/c/7401119/1466364/12108?u=https%3A%2F%2Fwww.dhgate.com",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-09-30",
         "sursa": "impact_deals_api"
       },
@@ -32,7 +32,7 @@
         "descriere": "Save $4 on orders over $40 using coupon DH2026SEPSAVE4 at DHgate.",
         "cod_cupon": "",
         "landing_page": "https://dhgate.sjv.io/c/7401119/1466364/12108?u=https%3A%2F%2Fwww.dhgate.com",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-09-30",
         "sursa": "impact_deals_api"
       },
@@ -41,7 +41,7 @@
         "descriere": "Save $5 on orders over $50 using coupon DH2026SEPSAVE5 at DHgate.",
         "cod_cupon": "",
         "landing_page": "https://dhgate.sjv.io/c/7401119/1466364/12108?u=https%3A%2F%2Fwww.dhgate.com",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-09-30",
         "sursa": "impact_deals_api"
       },
@@ -50,7 +50,7 @@
         "descriere": "Save $8 on orders over $80 using coupon DH2026SEPSAVE8 at DHgate.",
         "cod_cupon": "",
         "landing_page": "https://dhgate.sjv.io/c/7401119/1466364/12108?u=https%3A%2F%2Fwww.dhgate.com",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-09-30",
         "sursa": "impact_deals_api"
       },
@@ -59,7 +59,7 @@
         "descriere": "Save $10 on orders over $100 using coupon DH2026SEPSAVE10 at DHgate.",
         "cod_cupon": "",
         "landing_page": "https://dhgate.sjv.io/c/7401119/1466364/12108?u=https%3A%2F%2Fwww.dhgate.com",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-09-30",
         "sursa": "impact_deals_api"
       },
@@ -68,7 +68,7 @@
         "descriere": "Save $12 on orders over $120 using coupon DH2026SEPSAVE12 at DHgate.",
         "cod_cupon": "",
         "landing_page": "https://dhgate.sjv.io/c/7401119/1466364/12108?u=https%3A%2F%2Fwww.dhgate.com",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-09-30",
         "sursa": "impact_deals_api"
       },
@@ -77,7 +77,7 @@
         "descriere": "Save $16 on orders over $160 using coupon DH2026SEPSAVE16 at DHgate.",
         "cod_cupon": "",
         "landing_page": "https://dhgate.sjv.io/c/7401119/1466364/12108?u=https%3A%2F%2Fwww.dhgate.com",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-09-30",
         "sursa": "impact_deals_api"
       },
@@ -86,7 +86,7 @@
         "descriere": "Save $20 on orders over $200 using coupon DH2026SEPSAVE20 at DHgate.",
         "cod_cupon": "",
         "landing_page": "https://dhgate.sjv.io/c/7401119/1466364/12108?u=https%3A%2F%2Fwww.dhgate.com",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-09-30",
         "sursa": "impact_deals_api"
       },
@@ -95,7 +95,7 @@
         "descriere": "Save $25 on orders over $300 using coupon DH2026SEPSAVE25 at DHgate.",
         "cod_cupon": "",
         "landing_page": "https://dhgate.sjv.io/c/7401119/1466364/12108?u=https%3A%2F%2Fwww.dhgate.com",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-09-30",
         "sursa": "impact_deals_api"
       },
@@ -104,7 +104,7 @@
         "descriere": "Save $30 on orders over $500 using coupon DH2026SEPSAVE30 at DHgate.",
         "cod_cupon": "",
         "landing_page": "https://dhgate.sjv.io/c/7401119/1466364/12108?u=https%3A%2F%2Fwww.dhgate.com",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-09-30",
         "sursa": "impact_deals_api"
       },
@@ -113,7 +113,7 @@
         "descriere": "Save $35 on orders over $600 using coupon DH2026SEPSAVE35 at DHgate.",
         "cod_cupon": "",
         "landing_page": "https://dhgate.sjv.io/c/7401119/1466364/12108?u=https%3A%2F%2Fwww.dhgate.com",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-09-30",
         "sursa": "impact_deals_api"
       },
@@ -122,7 +122,7 @@
         "descriere": "Save $40 on orders over $850 using coupon DH2026SEPSAVE40 at DHgate.",
         "cod_cupon": "",
         "landing_page": "https://dhgate.sjv.io/c/7401119/1466364/12108?u=https%3A%2F%2Fwww.dhgate.com",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-09-30",
         "sursa": "impact_deals_api"
       },
@@ -131,7 +131,7 @@
         "descriere": "New user: Save $3 on orders over $5 using coupon DH2026SEP3NEW at DHgate.",
         "cod_cupon": "",
         "landing_page": "https://dhgate.sjv.io/c/7401119/1466364/12108?u=https%3A%2F%2Fwww.dhgate.com",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-09-30",
         "sursa": "impact_deals_api"
       },
@@ -140,7 +140,7 @@
         "descriere": "New user: Save $8 on orders over $50 using coupon DH2026SEP8NEW at DHgate.",
         "cod_cupon": "",
         "landing_page": "https://dhgate.sjv.io/c/7401119/1466364/12108?u=https%3A%2F%2Fwww.dhgate.com",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-09-30",
         "sursa": "impact_deals_api"
       },
@@ -149,7 +149,7 @@
         "descriere": "New user: Save $10 on orders over $85 using coupon DH2026SEP10NEW at DHgate.",
         "cod_cupon": "",
         "landing_page": "https://dhgate.sjv.io/c/7401119/1466364/12108?u=https%3A%2F%2Fwww.dhgate.com",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-09-30",
         "sursa": "impact_deals_api"
       },
@@ -158,7 +158,7 @@
         "descriere": "New user: Save $4 on orders over $10 using coupon DH2026SEP4NEW at DHgate.",
         "cod_cupon": "",
         "landing_page": "https://dhgate.sjv.io/c/7401119/1466364/12108?u=https%3A%2F%2Fwww.dhgate.com",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-09-30",
         "sursa": "impact_deals_api"
       }
@@ -185,14 +185,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 7,
+    "zile_ramase": 6,
     "promotii": [
       {
         "nume": "WEGIC10",
         "descriere": "This offer applies to all Wegic annual subscription plans (1, 2, or 3 years), but not the monthly plan. The custom domain feature is only included with annual subscriptions.",
         "cod_cupon": "",
         "landing_page": "https://wegic-ai.pxf.io/c/7401119/3249647/41022?u=https%3A%2F%2Fwegic.ai%2Fstarter",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-09-30",
         "sursa": "impact_deals_api"
       }
@@ -220,14 +220,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 251,
+    "zile_ramase": 250,
     "promotii": [
       {
         "nume": "Xmind 10% Off | XMIND10OFF",
         "descriere": "Save 10% on eligible Xmind subscriptions with code XMIND10OFF. Valid through June 1, 2027. See the landing page for current pricing and eligibility.",
         "cod_cupon": "",
         "landing_page": "https://xmindltd.sjv.io/c/7401119/3848875/44551?u=https%3A%2F%2Fxmind.com%2Fpricing",
-        "zile_ramase": 251,
+        "zile_ramase": 250,
         "expira": "2027-06-01",
         "sursa": "impact_deals_api"
       }
@@ -255,14 +255,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 403,
+    "zile_ramase": 402,
     "promotii": [
       {
         "nume": "Quber Savings",
         "descriere": "Quber Savings",
         "cod_cupon": "QUBER10",
         "landing_page": "https://orbitmobile.sjv.io/c/7401119/2958368/32966?u=https%3A%2F%2Forbitmobile.com",
-        "zile_ramase": 403,
+        "zile_ramase": 402,
         "expira": "2027-10-31",
         "sursa": "impact_deals_api"
       }
@@ -290,14 +290,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 205,
+    "zile_ramase": 204,
     "promotii": [
       {
         "nume": "OutIn Code：OIAFF5",
         "descriere": "Stackable universal discount code, enjoy 5% off Code：OIAFF5",
         "cod_cupon": "",
         "landing_page": "https://outininc.pxf.io/c/7401119/3895380/49942?u=https%3A%2F%2Foutin.com",
-        "zile_ramase": 205,
+        "zile_ramase": 204,
         "expira": "2027-04-16",
         "sursa": "impact_deals_api"
       }
@@ -360,14 +360,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 581,
+    "zile_ramase": 580,
     "promotii": [
       {
         "nume": "DFB",
         "descriere": "DFB",
         "cod_cupon": "",
         "landing_page": "https://bcengi.sjv.io/c/7401119/3242903/41060?u=https%3A%2F%2Fwww.bcengi.com%2F%3Fcode%3Ddfb",
-        "zile_ramase": 581,
+        "zile_ramase": 580,
         "expira": "2028-04-26",
         "sursa": "impact_deals_api"
       }
@@ -395,14 +395,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 311,
+    "zile_ramase": 310,
     "promotii": [
       {
         "nume": "BOYA15%off",
         "descriere": "BOYA15%off",
         "cod_cupon": "",
         "landing_page": "https://boya.pxf.io/c/7401119/2840690/32616?u=https%3A%2F%2Fstore.boyamic.com%2Fdiscount%2FBOYAaff15",
-        "zile_ramase": 311,
+        "zile_ramase": 310,
         "expira": "2027-07-31",
         "sursa": "impact_deals_api"
       }
@@ -430,14 +430,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 135,
+    "zile_ramase": 134,
     "promotii": [
       {
         "nume": "Fall & Winter Campaign Package",
         "descriere": "Buy $189, get $20 off",
         "cod_cupon": "",
         "landing_page": "https://mooyiuscom.sjv.io/c/7401119/3838014/32512?u=https%3A%2F%2Fmooyius.com%2F",
-        "zile_ramase": 135,
+        "zile_ramase": 134,
         "expira": "2027-02-05",
         "sursa": "impact_deals_api"
       }
@@ -465,14 +465,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 13,
+    "zile_ramase": 12,
     "promotii": [
       {
         "nume": "Best Seller 25% off!",
         "descriere": "Best Seller 25% off!",
         "cod_cupon": "H25",
         "landing_page": "https://laavooextensions.sjv.io/c/7401119/3855423/51251?u=https%3A%2F%2Flaavooextensions.com%2Fcollections%2Fhot-sell-products",
-        "zile_ramase": 280,
+        "zile_ramase": 279,
         "expira": "2027-06-30",
         "sursa": "impact_deals_api"
       },
@@ -481,7 +481,7 @@
         "descriere": "Injection Tape in Hair Sale",
         "cod_cupon": "VT23",
         "landing_page": "https://laavooextensions.sjv.io/c/7401119/3855423/51251?u=https%3A%2F%2Flaavooextensions.com%2Fcollections%2Finjection-tape-virgin-hair",
-        "zile_ramase": 38,
+        "zile_ramase": 37,
         "expira": "2026-10-31",
         "sursa": "impact_deals_api"
       },
@@ -490,7 +490,7 @@
         "descriere": "50% off Clearance Sale",
         "cod_cupon": "H50",
         "landing_page": "https://laavooextensions.sjv.io/c/7401119/3855423/51251?u=https%3A%2F%2Flaavooextensions.com%2Fcollections%2F50-off",
-        "zile_ramase": 99,
+        "zile_ramase": 98,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -499,7 +499,7 @@
         "descriere": "New Arrival 25% off",
         "cod_cupon": "New25",
         "landing_page": "https://laavooextensions.sjv.io/c/7401119/3855423/51251?u=https%3A%2F%2Flaavooextensions.com%2Fcollections%2Fnew-arrival",
-        "zile_ramase": 38,
+        "zile_ramase": 37,
         "expira": "2026-10-31",
         "sursa": "impact_deals_api"
       },
@@ -508,7 +508,7 @@
         "descriere": "Fall Sale 15% off",
         "cod_cupon": "F15",
         "landing_page": "https://laavooextensions.sjv.io/c/7401119/3855423/51251?u=https%3A%2F%2Fwww.laavooextensions.com",
-        "zile_ramase": 13,
+        "zile_ramase": 12,
         "expira": "2026-10-06",
         "sursa": "impact_deals_api"
       },
@@ -517,7 +517,7 @@
         "descriere": "Fall Sale 21% off",
         "cod_cupon": "F21",
         "landing_page": "https://laavooextensions.sjv.io/c/7401119/3855423/51251?u=https%3A%2F%2Fwww.laavooextensions.com",
-        "zile_ramase": 13,
+        "zile_ramase": 12,
         "expira": "2026-10-06",
         "sursa": "impact_deals_api"
       }
@@ -545,14 +545,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 6,
+    "zile_ramase": 5,
     "promotii": [
       {
         "nume": "up to $80 off",
         "descriere": "up to $80 off",
         "cod_cupon": "",
         "landing_page": "https://hongkongossileetradinglimited.sjv.io/c/7401119/3816472/49652?u=https%3A%2F%2Fwww.ashimaryhair.com%2Fcollections%2Fhot-sale",
-        "zile_ramase": 6,
+        "zile_ramase": 5,
         "expira": "2026-09-29",
         "sursa": "impact_deals_api"
       },
@@ -561,7 +561,7 @@
         "descriere": "13x6 Full Lace , 22\"=20“ Same Price",
         "cod_cupon": "",
         "landing_page": "https://hongkongossileetradinglimited.sjv.io/c/7401119/3816472/49652?u=https%3A%2F%2Fwww.ashimaryhair.com%2Fcollections%2F13x6-full-lace-wig",
-        "zile_ramase": 6,
+        "zile_ramase": 5,
         "expira": "2026-09-29",
         "sursa": "impact_deals_api"
       },
@@ -570,7 +570,7 @@
         "descriere": "70% OFF Colored Wigs",
         "cod_cupon": "",
         "landing_page": "https://hongkongossileetradinglimited.sjv.io/c/7401119/3816472/49652?u=https%3A%2F%2Fwww.ashimaryhair.com%2Fpages%2Fblack-friday-wig-sale",
-        "zile_ramase": 6,
+        "zile_ramase": 5,
         "expira": "2026-09-29",
         "sursa": "impact_deals_api"
       }
@@ -598,14 +598,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 645,
+    "zile_ramase": 644,
     "promotii": [
       {
         "nume": "New Users",
         "descriere": "Get Extra 5% off , New users only!",
         "cod_cupon": "",
         "landing_page": "https://hototools.sjv.io/c/7401119/3736559/46944?u=https%3A%2F%2Fhototools.com",
-        "zile_ramase": 645,
+        "zile_ramase": 644,
         "expira": "2028-06-29",
         "sursa": "impact_deals_api"
       }
@@ -633,14 +633,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 251,
+    "zile_ramase": 250,
     "promotii": [
       {
         "nume": "30% discount",
         "descriere": "Unlock Savings with 30% Off: Use Code: 30CVLIFE",
         "cod_cupon": "30CVLIFE",
         "landing_page": "https://cvlife.sjv.io/c/7401119/1967140/24051",
-        "zile_ramase": 251,
+        "zile_ramase": 250,
         "expira": "2027-06-01",
         "sursa": "impact_deals_api"
       }
@@ -668,14 +668,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 8,
+    "zile_ramase": 7,
     "promotii": [
       {
         "nume": "6% off sitewide purchases",
         "descriere": "6% off for $0-$150 order value, logged-in users only, can be used once.",
         "cod_cupon": "TVC26Q3A6%",
         "landing_page": "https://tvcmall.pxf.io/c/7401119/1841792/22026?u=https%3A%2F%2Fwww.tvcmall.com",
-        "zile_ramase": 8,
+        "zile_ramase": 7,
         "expira": "2026-10-01",
         "sursa": "impact_deals_api"
       },
@@ -684,7 +684,7 @@
         "descriere": "Enjoy 9.5% off on your first order over $300. Exclusive welcome offer. New customers only. One-time use.",
         "cod_cupon": "TVC26Q3A95NEW",
         "landing_page": "https://tvcmall.pxf.io/c/7401119/1841792/22026?u=https%3A%2F%2Fwww.tvcmall.com",
-        "zile_ramase": 8,
+        "zile_ramase": 7,
         "expira": "2026-10-01",
         "sursa": "impact_deals_api"
       },
@@ -693,7 +693,7 @@
         "descriere": "Save $10 on your first purchase over $100. Exclusive for new customers. One-time use.",
         "cod_cupon": "TVC26Q3A10NEW",
         "landing_page": "https://tvcmall.pxf.io/c/7401119/1841792/22026?u=https%3A%2F%2Fwww.tvcmall.com",
-        "zile_ramase": 8,
+        "zile_ramase": 7,
         "expira": "2026-10-01",
         "sursa": "impact_deals_api"
       },
@@ -702,7 +702,7 @@
         "descriere": "Save $33 on your first wholesale purchase over $300. Exclusive for new customers. One-time use.",
         "cod_cupon": "TVC26Q3A33NEW",
         "landing_page": "https://tvcmall.pxf.io/c/7401119/1841792/22026?u=https%3A%2F%2Fwww.tvcmall.com",
-        "zile_ramase": 8,
+        "zile_ramase": 7,
         "expira": "2026-10-01",
         "sursa": "impact_deals_api"
       },
@@ -711,7 +711,7 @@
         "descriere": "Save $55 on your first wholesale purchase over $500. Exclusive for new customers. One-time use.",
         "cod_cupon": "TVC26Q3A55NEW",
         "landing_page": "https://tvcmall.pxf.io/c/7401119/1841792/22026?u=https%3A%2F%2Fwww.tvcmall.com",
-        "zile_ramase": 8,
+        "zile_ramase": 7,
         "expira": "2026-10-01",
         "sursa": "impact_deals_api"
       },
@@ -720,7 +720,7 @@
         "descriere": "$20 off over $300 order value, undiscounted products, logged-in users only, can be used once.",
         "cod_cupon": "TVC26Q3A$20",
         "landing_page": "https://tvcmall.pxf.io/c/7401119/1841792/22026?u=https%3A%2F%2Fwww.tvcmall.com",
-        "zile_ramase": 8,
+        "zile_ramase": 7,
         "expira": "2026-10-01",
         "sursa": "impact_deals_api"
       }
@@ -748,14 +748,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
+    "zile_ramase": 98,
     "promotii": [
       {
         "nume": "NEWBC20",
         "descriere": "Use code NEWBC20 to enjoy 20% OFF for new customers",
         "cod_cupon": "",
         "landing_page": "https://weitaigetechnologycolimited.pxf.io/c/7401119/3331478/44026?u=https%3A%2F%2Fwww.billionconnect.net%2Fpages%2Factivity%2Fnewcustomer2605%3Fplatform%3DApp",
-        "zile_ramase": 99,
+        "zile_ramase": 98,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       }
@@ -783,7 +783,7 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 6,
+    "zile_ramase": 5,
     "promotii": [
       {
         "nume": "SAVE10",
@@ -817,7 +817,7 @@
         "descriere": "This discount applies to Moissanite products only.",
         "cod_cupon": "",
         "landing_page": "https://helloicecom.pxf.io/c/7401119/2137250/26893",
-        "zile_ramase": 6,
+        "zile_ramase": 5,
         "expira": "2026-09-29",
         "sursa": "impact_deals_api"
       },
@@ -826,7 +826,7 @@
         "descriere": "This discount applies to Moissanite products only.",
         "cod_cupon": "",
         "landing_page": "https://helloicecom.pxf.io/c/7401119/2137250/26893",
-        "zile_ramase": 6,
+        "zile_ramase": 5,
         "expira": "2026-09-29",
         "sursa": "impact_deals_api"
       },
@@ -835,7 +835,7 @@
         "descriere": "NEW",
         "cod_cupon": "",
         "landing_page": "https://helloicecom.pxf.io/c/7401119/2137250/26893",
-        "zile_ramase": 6,
+        "zile_ramase": 5,
         "expira": "2026-09-29",
         "sursa": "impact_deals_api"
       }
@@ -898,14 +898,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 6,
+    "zile_ramase": 5,
     "promotii": [
       {
         "nume": "Fall-Readay Wigs Sale Up To $90 Off With Code:FALL",
         "descriere": "Nadula Hair Fall-Readay Wigs Sale Up To $90 Off With Code:FALL",
         "cod_cupon": "Fall",
         "landing_page": "https://nadula.sjv.io/c/7401119/1273329/15659?u=https%3A%2F%2Fm.nadula.com",
-        "zile_ramase": 6,
+        "zile_ramase": 5,
         "expira": "2026-09-29",
         "sursa": "impact_deals_api"
       }
@@ -932,14 +932,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 9,
+    "zile_ramase": 8,
     "promotii": [
       {
         "nume": "Up To 23% OFF With Codes: Fall18, Fall30 & Fall55",
         "descriere": "18% OFF Sitewide — Code: Fall18 $30 OFF Orders Over $155 — Code: Fall30 $55 OFF Orders Over $239 — Code: Fall55",
         "cod_cupon": "Fall18",
         "landing_page": "https://klaiyihair.pxf.io/c/7401119/1273341/15661?u=https%3A%2F%2Fwww.klaiyihair.com",
-        "zile_ramase": 9,
+        "zile_ramase": 8,
         "expira": "2026-10-02",
         "sursa": "impact_deals_api"
       }
@@ -966,14 +966,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 3,
+    "zile_ramase": 2,
     "promotii": [
       {
         "nume": "30 Days Long Staying Package | iclub Fortress Hill Hotel | Regal Hotels",
         "descriere": "Enjoy a seamless long-stay experience with the 30 Days Long Staying Package at Regal Hotels. Indulge in exclusive privileges including complimentary breakfast quotas, access to gym, swimming pool, co-working spaces, wellness tea, Wi-Fi, laundry token",
         "cod_cupon": "RWLS30",
         "landing_page": "https://regalhotels.sjv.io/c/7401119/3436203/25869",
-        "zile_ramase": 100,
+        "zile_ramase": 99,
         "expira": "2027-01-01",
         "sursa": "impact_deals_api"
       },
@@ -982,7 +982,7 @@
         "descriere": "Book your stay at Regal Hotel from just HK$1,188 per room, per night, including accommodation in a Deluxe Room. Terms and Conditions:\n- Offer valid until 25/09/2026. - Other restrictions may apply.",
         "cod_cupon": "Moon26",
         "landing_page": "https://regalhotels.sjv.io/c/7401119/3436203/25869",
-        "zile_ramase": 3,
+        "zile_ramase": 2,
         "expira": "2026-09-26",
         "sursa": "impact_deals_api"
       }
@@ -1008,14 +1008,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 465,
+    "zile_ramase": 464,
     "promotii": [
       {
         "nume": "Extra 5% PROMOCODE Offer on Room Rates -Direct Booking| Kuredu Maldives",
         "descriere": "Enjoy extra 5% savings on your stay at Kuredu Island, a top Maldives resort for families, great diving, thrilling water sports, land sports and culinary choices of 12 restaurants and bars. Offer Includes: • Book Now & Pay later • Flexible Can",
         "cod_cupon": "EXTRA5OFF",
         "landing_page": "https://crownchamparesorts.pxf.io/c/7401119/3817225/24504",
-        "zile_ramase": 465,
+        "zile_ramase": 464,
         "expira": "2028-01-01",
         "sursa": "impact_deals_api"
       }
@@ -1043,14 +1043,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 38,
+    "zile_ramase": 37,
     "promotii": [
       {
         "nume": "LONGERR",
         "descriere": "USD $12 Off Coupon Code: LONGERR, For LONGER Laser Engraver Y-axis Rotary Roller with Bracket. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://geekbuying.pxf.io/c/7401119/1042408/13004?u=https%3A%2F%2Fwww.geekbuying.com%2Fitem%2FLONGER-Laser-Engraver-Y-axis-Rotary-Roller-with-Bracket-527094.html",
-        "zile_ramase": 92,
+        "zile_ramase": 91,
         "expira": "2026-12-24",
         "sursa": "impact_deals_api"
       },
@@ -1059,7 +1059,7 @@
         "descriere": "USD $15 Off Coupon Code: LONANORC, For LONGER Laser Rotary Chuck for Nano/ Nano Pro. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://geekbuying.pxf.io/c/7401119/1042408/13004?u=https%3A%2F%2Fwww.geekbuying.com%2Fitem%2FLONGER-Laser-Rotary-Chuck-for-Nano-Nano-Pro-527160.html",
-        "zile_ramase": 92,
+        "zile_ramase": 91,
         "expira": "2026-12-24",
         "sursa": "impact_deals_api"
       },
@@ -1068,7 +1068,7 @@
         "descriere": "USD $27 Off Coupon Code: RAY55WEU, For LONGER RAY5 5W Laser Engraver, 3.5inch Touch Screen, Offline Carving, Ultrafine Focused Laser, 32-Bit Chipset, Upgradable Laser Module, Compatible with Windows/MAC/Linux System. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://geekbuying.pxf.io/c/7401119/1042408/13004?u=https%3A%2F%2Fwww.geekbuying.com%2Fitem%2FLONGER-RAY5-Laser-Engraver-494612.html",
-        "zile_ramase": 219,
+        "zile_ramase": 218,
         "expira": "2027-04-30",
         "sursa": "impact_deals_api"
       },
@@ -1077,7 +1077,7 @@
         "descriere": "USD $4 Off Coupon Code: LRAY5RF, For LONGER RAY5 Laser Engraver Raiser Feet 70mm - 8pcs. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://geekbuying.pxf.io/c/7401119/1042408/13004?u=https%3A%2F%2Fwww.geekbuying.com%2Fitem%2FLONGER-RAY5-Laser-Engraver-Raiser-Feet-70mm-8pcs-527897.html",
-        "zile_ramase": 257,
+        "zile_ramase": 256,
         "expira": "2027-06-07",
         "sursa": "impact_deals_api"
       },
@@ -1086,7 +1086,7 @@
         "descriere": "USD $7 Off Coupon Code: LRAY5M25, For LONGER RAY5 Mini 2.5W Laser Engraver, 0.04mm Precision, 12,000mm/min Speed, for Wood/ Acrylic/ Leather/ Metal, 130*140mm. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://geekbuying.pxf.io/c/7401119/1042408/13004?u=https%3A%2F%2Fwww.geekbuying.com%2Fitem%2FLONGER-RAY5-Mini-2-5W-Laser-Engraver-528627.html",
-        "zile_ramase": 219,
+        "zile_ramase": 218,
         "expira": "2027-04-30",
         "sursa": "impact_deals_api"
       },
@@ -1095,7 +1095,7 @@
         "descriere": "USD $17 Off Coupon Code: CONGKBH27, For KTC H27E6 27 inch Gaming Monitor, 2560*1440 QHD Fast IPS Screen, 300Hz 240Hz Refresh Rate, HDR 400, 1ms Response Time, FreeSync & G-Sync, 144% sRGB, VESA Mountable, 2*HDMI 2.1, 2*DP 1.4, 1*USB 2.0, 1*Earphone. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://geekbuying.pxf.io/c/7401119/1042408/13004?u=https%3A%2F%2Fwww.geekbuying.com%2Fitem%2FKTC-H27E6-27inch-QHD-300Hz-Gaming-Monitor-527730.html",
-        "zile_ramase": 68,
+        "zile_ramase": 67,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -1104,7 +1104,7 @@
         "descriere": "USD $4 Off Coupon Code: JAKE10P, For Jakemy JM-Y10 Pro 2-in-1 Ultrasonic Cutter & Polisher, 35W 40kHz, OLED Display, for DIY/Medical/Industrial, Model Prototyping & Deburring, 73pcs - EU Plug. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://geekbuying.pxf.io/c/7401119/1042408/13004?u=https%3A%2F%2Fwww.geekbuying.com%2Fitem%2FJakemy-JM-Y10-Pro-35W-40kHz-Ultrasonic-Cutter-Polisher-73pcs-EU-Plug-529257.html",
-        "zile_ramase": 219,
+        "zile_ramase": 218,
         "expira": "2027-04-30",
         "sursa": "impact_deals_api"
       },
@@ -1113,7 +1113,7 @@
         "descriere": "USD $67 Off Coupon Code: 9OJ5SQUX31, For Creality Raptor 3D Scanner, Hybrid Blue Laser NIR, 60fps Scanning Speed, Objects Between 5-2000mm, 24-bit Full-Color Scan, 0.02mm Accuracy, Anti-shaking. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://geekbuying.pxf.io/c/7401119/1042408/13004?u=https%3A%2F%2Fwww.geekbuying.com%2Fitem%2FCreality-Raptor-3D-Scanner-526773.html",
-        "zile_ramase": 68,
+        "zile_ramase": 67,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -1122,7 +1122,7 @@
         "descriere": "USD $7 Off Coupon Code: JAKEY10, For Jakemy JM-Y10 2-in-1 Ultrasonic Cutter & Polisher, 35W 40kHz, OLED Display, for DIY/Medical/Industrial, Model Prototyping & Deburring, 26pcs - EU Plug. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://geekbuying.pxf.io/c/7401119/1042408/13004?u=https%3A%2F%2Fwww.geekbuying.com%2Fitem%2FJakemy-JM-Y10-35W-40kHz-Ultrasonic-Cutter-Polisher-26pcs-EU-Plug-529256.html",
-        "zile_ramase": 68,
+        "zile_ramase": 67,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -1131,7 +1131,7 @@
         "descriere": "USD $56 Off Coupon Code: MOB617, For Foride Xtremer 3 Electric Bike, 250W Motor, 48V 12Ah Battery, 29*2.4 inch Tires, 25km/h Max Speed, 120km Max Range, Hydraulic Disc Brakes, Suspension with Lockout, Shimano 7-speed. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://geekbuying.pxf.io/c/7401119/1042408/13004?u=https%3A%2F%2Fwww.geekbuying.com%2Fitem%2FForide-Xtremer-3-Electric-Bike-250W-48V-12Ah-EU-Plug-528305.html",
-        "zile_ramase": 663,
+        "zile_ramase": 662,
         "expira": "2028-07-17",
         "sursa": "impact_deals_api"
       },
@@ -1140,7 +1140,7 @@
         "descriere": "USD $224 Off Coupon Code: PULUMAPE86, For PULUMA PE86 Electric Bike, 500W Motor, 48V 20Ah Battery, 26 inch Tires, 40km/h Max Speed, 150km Range, Hydraulic Brakes, Oil Spring Suspension System, Shimano 7-speed, LCD Display, Torque Sensor. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://geekbuying.pxf.io/c/7401119/1042408/13004?u=https%3A%2F%2Fwww.geekbuying.com%2Fitem%2FPULUMA-PE86-Electric-Bike-500W-48V-20Ah-529247.html",
-        "zile_ramase": 1028,
+        "zile_ramase": 1027,
         "expira": "2029-07-17",
         "sursa": "impact_deals_api"
       },
@@ -1149,7 +1149,7 @@
         "descriere": "USD $224 Off Coupon Code: PULUMAPE86PRO, For PULUMA PE86 Pro Electric Bike, 500W*2 Motor, 48V 20Ah Battery, 26 inch Tires, 40km/h Max Speed, 150km Range, Hydraulic Brakes, Oil Spring Suspension System, Shimano 7-speed, LCD Display, Torque Sensor. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://geekbuying.pxf.io/c/7401119/1042408/13004?u=https%3A%2F%2Fwww.geekbuying.com%2Fitem%2FPULUMA-PE86-Pro-Electric-Bike-500W-2-48V-20Ah-529248.html",
-        "zile_ramase": 663,
+        "zile_ramase": 662,
         "expira": "2028-07-17",
         "sursa": "impact_deals_api"
       },
@@ -1158,7 +1158,7 @@
         "descriere": "USD $3 Off Coupon Code: TRIMUI256, For TRIMUI Smart Pro Game Console with 256GB TF Card, 13729 Games, 4.96in 720P IPS Screen, Linux OS, 1GB RAM/8GB Storage, 5 Hours Playtime - Black. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://geekbuying.pxf.io/c/7401119/1042408/13004?u=https%3A%2F%2Fwww.geekbuying.com%2Fitem%2FTRIMUI-Smart-Pro-Handheld-Game-Console-256GB-TF-Card-Black-523921.html",
-        "zile_ramase": 464,
+        "zile_ramase": 463,
         "expira": "2027-12-31",
         "sursa": "impact_deals_api"
       },
@@ -1167,7 +1167,7 @@
         "descriere": "USD $22 Off Coupon Code: SCZZ97, For MINIX NEO Z97 Mini PC, Intel N97 4 Cores Max 3.6GHz, 12GB LPDDR5X RAM 512GB SSD, WiFi 6 Bluetooth 5.2, 2*HDMI+1*DP 4K Triple Display, 3*USB3.2, 2*RJ45, 1*Audio, Active Cooling. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://geekbuying.pxf.io/c/7401119/1042408/13004?u=https%3A%2F%2Fwww.geekbuying.com%2Fitem%2FMINIX-NEO-Z97-mini-PC-12GB-512GB-528673.html",
-        "zile_ramase": 554,
+        "zile_ramase": 553,
         "expira": "2028-03-30",
         "sursa": "impact_deals_api"
       },
@@ -1176,7 +1176,7 @@
         "descriere": "USD $10 Off Coupon Code: VADER4P, For Flydigi Vader 4 Pro Gaming Controller, Force Adjustment Lever Joystick, Hall & Micro 2-in-1 Triggers, 1000Hz Polling Rate, Compatible with PC, NS, TV, Android & Laptop. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://geekbuying.pxf.io/c/7401119/1042408/13004?u=https%3A%2F%2Fwww.geekbuying.com%2Fitem%2FFlydigi-Vader-4-Pro-Gaming-Controller-528115.html",
-        "zile_ramase": 662,
+        "zile_ramase": 661,
         "expira": "2028-07-16",
         "sursa": "impact_deals_api"
       },
@@ -1185,7 +1185,7 @@
         "descriere": "USD $45 Off Coupon Code: ANYKS1CA, For Anycubic Kobra S1 3D Printer with 2*Ace Pro, Vibrant 8-Color Printing, 600mm/s Ultra-Fast Speed, Auto-leveling, 320掳C Hotend, 44dB Ultra-Quiet, CoreXY Construction, 250*250*250mm. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://geekbuying.pxf.io/c/7401119/1042408/13004?u=https%3A%2F%2Fwww.geekbuying.com%2Fitem%2FAnycubic-Kobra-S1-with-2-Ace-Pro-8-Color-3D-Printer-527307.html",
-        "zile_ramase": 99,
+        "zile_ramase": 98,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -1194,7 +1194,7 @@
         "descriere": "USD $22 Off Coupon Code: ANYS14P, For Anycubic Kobra S1 Combo 3D Printer + 4kg Hyper PLA Filament - 1kg Purple + 1kg Blue + 1kg Red + 1kg Peachy-pink. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://geekbuying.pxf.io/c/7401119/1042408/13004?u=https%3A%2F%2Fwww.geekbuying.com%2Fitem%2FAnycubic-Kobra-S1-Combo-3D-Printer-4kg-Hyper-PLA-Filament-528918.html",
-        "zile_ramase": 254,
+        "zile_ramase": 253,
         "expira": "2027-06-04",
         "sursa": "impact_deals_api"
       },
@@ -1203,7 +1203,7 @@
         "descriere": "8% off for 3D Printers & Laser Engravers category, max save $50",
         "cod_cupon": "",
         "landing_page": "https://geekbuying.pxf.io/c/7401119/1042408/13004?u=https%3A%2F%2Fwww.geekbuying.com%2Fcategory%2F3D-Printers-Accessories-1544",
-        "zile_ramase": 250,
+        "zile_ramase": 249,
         "expira": "2027-05-31",
         "sursa": "impact_deals_api"
       },
@@ -1212,7 +1212,7 @@
         "descriere": "6% OFF over $50/50€, max save $20/20€",
         "cod_cupon": "",
         "landing_page": "https://geekbuying.pxf.io/c/7401119/1042408/13004?u=https%3A%2F%2Fwww.geekbuying.com",
-        "zile_ramase": 38,
+        "zile_ramase": 37,
         "expira": "2026-10-31",
         "sursa": "impact_deals_api"
       },
@@ -1221,7 +1221,7 @@
         "descriere": "26BTS02",
         "cod_cupon": "",
         "landing_page": "https://geekbuying.pxf.io/c/7401119/1042408/13004?u=https%3A%2F%2Fwww.geekbuying.com",
-        "zile_ramase": 68,
+        "zile_ramase": 67,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -1230,7 +1230,7 @@
         "descriere": "26BTS03",
         "cod_cupon": "",
         "landing_page": "https://geekbuying.pxf.io/c/7401119/1042408/13004?u=https%3A%2F%2Fwww.geekbuying.com",
-        "zile_ramase": 68,
+        "zile_ramase": 67,
         "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       },
@@ -1239,7 +1239,7 @@
         "descriere": "USD $0 Off Coupon Code: CHAU21, For PVY Turbo Electric Bike 250W Motor 48V 13Ah Battery 20*4.0 inch Fat Tires 25km/h Max Speed 100km Range Shimano 7-Speed Mechanical Disc Brake, Front Suspension Fork & Rear Mechanical Shock Absorber. Available Countries: ALL",
         "cod_cupon": "",
         "landing_page": "https://geekbuying.pxf.io/c/7401119/1042408/13004?u=https%3A%2F%2Fwww.geekbuying.com%2Fitem%2FPVY-Turbo-250W-13AH-Electric-Bike-525243.html",
-        "zile_ramase": 69,
+        "zile_ramase": 68,
         "expira": "2026-12-01",
         "sursa": "impact_deals_api"
       }
@@ -1267,14 +1267,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 190,
+    "zile_ramase": 189,
     "promotii": [
       {
         "nume": "Pre-Winter Offer is Live! Up to 25% off | Minor Hotels EUAM (formerly NH Hoteles)",
         "descriere": "Plan your autumn & winter city escapes across Europe and the Americas with up to 25% off. Including: - 5 DISCOVERY Dollars (D$) reward for bookings made on our website - Flexible cancellation policy Terms and Conditions:\n- Valid for bookings un",
         "cod_cupon": "CITYDREAMERS",
         "landing_page": "https://nhhotelgroup.sjv.io/c/7401119/3729690/15508",
-        "zile_ramase": 190,
+        "zile_ramase": 189,
         "expira": "2027-04-01",
         "sursa": "impact_deals_api"
       }
@@ -1302,14 +1302,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 8,
+    "zile_ramase": 7,
     "promotii": [
       {
         "nume": "Save an extra 5% at Desire Riviera Maya Pearl Resort | Original Resorts",
         "descriere": "Book your stay with Original Resorts and save an additional 5% on any room category at Desire Riviera Maya Pearl Resort. Terms and Conditions:\nBook by September 30th, 2026 Travel between August and December 2026 This promo code cannot be combined",
         "cod_cupon": "EXTRA5",
         "landing_page": "https://originalresorts.pxf.io/c/7401119/3936011/13731",
-        "zile_ramase": 8,
+        "zile_ramase": 7,
         "expira": "2026-10-01",
         "sursa": "impact_deals_api"
       },
@@ -1318,7 +1318,7 @@
         "descriere": "Book your stay with Original Resorts and get an additional 5% off when you book any room category at Temptation Cancun Resort. Terms and Conditions:\n- Book by September 30th, 2026 - Travel between August and December, 2026 - Restrictions may apply",
         "cod_cupon": "5SUMMER",
         "landing_page": "https://originalresorts.pxf.io/c/7401119/3936011/13731",
-        "zile_ramase": 8,
+        "zile_ramase": 7,
         "expira": "2026-10-01",
         "sursa": "impact_deals_api"
       },
@@ -1327,7 +1327,7 @@
         "descriere": "Book Desire Riviera Maya Pearl Resort and enjoy our LUST & LACE MONTH while getting a complimentary couple's massage, + 15% off at the Glam shop, on premium beverages and spa treatments, + 10% off spa products. Rates from $182 USD per person / per ni",
         "cod_cupon": "LUSTM",
         "landing_page": "https://originalresorts.pxf.io/c/7401119/3936011/13731",
-        "zile_ramase": 39,
+        "zile_ramase": 38,
         "expira": "2026-11-01",
         "sursa": "impact_deals_api"
       },
@@ -1336,7 +1336,7 @@
         "descriere": "Book now and get a complimentary Day Pass to a Desire Resort, One-way transfer (Cancun Airport), 15% off at the Glam Shop, on premium beverages and spa treatments,10% off spa products from $182 USD per night per person. Terms and Conditions:\n- Book",
         "cod_cupon": "PLAY26",
         "landing_page": "https://originalresorts.pxf.io/c/7401119/3936011/13731",
-        "zile_ramase": 38,
+        "zile_ramase": 37,
         "expira": "2026-10-31",
         "sursa": "impact_deals_api"
       },
@@ -1345,7 +1345,7 @@
         "descriere": "Book your reservation for September 2026 at Temptation Cancun Resort and get a complimentary bottle of tequila with 2 shot glasses, + 15% off at the Glam shop, on premium beverages and spa treatments + 10% off spa products From $179 USD per person/pe",
         "cod_cupon": "FREEDOM",
         "landing_page": "https://originalresorts.pxf.io/c/7401119/3936011/13731",
-        "zile_ramase": 8,
+        "zile_ramase": 7,
         "expira": "2026-10-01",
         "sursa": "impact_deals_api"
       }
@@ -1373,14 +1373,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 342,
+    "zile_ramase": 341,
     "promotii": [
       {
         "nume": "5% off For Pongbot Tennis Ball Machine",
         "descriere": "5% off For Pongbot Tennis Ball Machine",
         "cod_cupon": "Pongbotsports5",
         "landing_page": "https://pongbotlimited.sjv.io/c/7401119/3906819/51732?u=https%3A%2F%2Fstore.pongbotsports.com%2F%3Futm_source%3Daffiliate%26utm_medium%3Dimpact%26utm_campaign%3Daffiliatepublisher",
-        "zile_ramase": 342,
+        "zile_ramase": 341,
         "expira": "2027-08-31",
         "sursa": "impact_deals_api"
       }
@@ -1408,14 +1408,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 100,
+    "zile_ramase": 99,
     "promotii": [
       {
         "nume": "20% Discount| Grandparents & Grandchildren Programme - Vila Gale",
         "descriere": "From Sunday to Thursday, we invite grandparents and grandchildren to discover unique landscapes, history and national heritage through stays designed to provide comfort, fun and plenty of quality time together, under very special conditions. With the",
         "cod_cupon": "AVOS&NETOS",
         "landing_page": "https://vilagale.pxf.io/c/7401119/2087327/26071",
-        "zile_ramase": 100,
+        "zile_ramase": 99,
         "expira": "2027-01-01",
         "sursa": "impact_deals_api"
       }
@@ -1443,14 +1443,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 180,
+    "zile_ramase": 179,
     "promotii": [
       {
         "nume": "KGAFF10",
         "descriere": "10% OFF for Specified categories",
         "cod_cupon": "",
         "landing_page": "https://go.pxf.io/c/7401119/3809280/49420?u=https%3A%2F%2Fkailasgear.com%2Fcollections%2Faffiliate-program",
-        "zile_ramase": 181,
+        "zile_ramase": 180,
         "expira": "2027-03-23",
         "sursa": "impact_deals_api"
       },
@@ -1459,7 +1459,7 @@
         "descriere": "No limit on quantity, time or product category. A $5 discount will be offered after use.",
         "cod_cupon": "",
         "landing_page": "https://go.pxf.io/c/7401119/3809280/49420?u=https%3A%2F%2Fkailasgear.com",
-        "zile_ramase": 180,
+        "zile_ramase": 179,
         "expira": "2027-03-22",
         "sursa": "impact_deals_api"
       }
@@ -1487,14 +1487,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 23,
+    "zile_ramase": 22,
     "promotii": [
       {
         "nume": "Spring Escape | Get upto 20% Off, CLLIX Apartments and Hotels: Arise",
-        "descriere": "Book your Spring holiday with CLLIX Apartments and Hotels and get up to 20% off with the given promo code. Terms and Conditions:\nMINIMUM LENGTH OF STAY (MLOS): 2 NIGHTS SALE DATES: 31/08/2026 â 15/10/2026 TRAVEL DATES: 31/08/2026 â 31/10/2026",
+        "descriere": "Book your Spring holiday with CLLIX Apartments and Hotels and get up to 20% off with the given promo code. Terms and Conditions:\nMINIMUM LENGTH OF STAY (MLOS): 2 NIGHTS SALE DATES: 31/08/2026 – 15/10/2026 TRAVEL DATES: 31/08/2026 – 31/10/2026",
         "cod_cupon": "SPRINGCLLIX26",
         "landing_page": "https://cllixapartmentsandhotelsarise.pxf.io/c/7401119/3861642/27215",
-        "zile_ramase": 23,
+        "zile_ramase": 22,
         "expira": "2026-10-16",
         "sursa": "impact_deals_api"
       },
@@ -1503,7 +1503,7 @@
         "descriere": "Book your stay with CLLIX Apartments and Hotels: Arise and get up to 10% discount if you book through website, or contact or reservation team. Terms and Conditions:\n- Offer is valid until 31/12/2026. - Subject to availability.",
         "cod_cupon": "BOOKDIRECT2SAVE",
         "landing_page": "https://cllixapartmentsandhotelsarise.pxf.io/c/7401119/3861642/27215",
-        "zile_ramase": 100,
+        "zile_ramase": 99,
         "expira": "2027-01-01",
         "sursa": "impact_deals_api"
       }
@@ -1530,14 +1530,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 89,
+    "zile_ramase": 88,
     "promotii": [
       {
         "nume": "Bank BCA Offer: Enjoy 15% off Best Flexible Rates | Swiss-bel Hotel International",
         "descriere": "Enjoy up to 15% OFF Best Flexible Rates and a 15% discount on food exclusively for Bank BCA credit and debit cardholders!. Terms and Conditions:\n- Offer valid until 20 December 2026. - Subject to availability.",
         "cod_cupon": "BCACC",
         "landing_page": "https://swissbelhotelinternational.pxf.io/c/7401119/3302520/27064",
-        "zile_ramase": 89,
+        "zile_ramase": 88,
         "expira": "2026-12-21",
         "sursa": "impact_deals_api"
       }
@@ -1564,14 +1564,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 8,
+    "zile_ramase": 7,
     "promotii": [
       {
         "nume": "Travel with geat discounts - Up to 20% off on stays | Atzavara Hotel & Spa",
         "descriere": "Book your next getaway at Atzavara Hotel & Spa with the given coupon code and enjoy up to 20% off. Terms and Conditions:\n-Offer valid until 30/09/2026 -Offer valid for stay until 31/12/2026 -Subject to availability",
         "cod_cupon": "AQUAWEB",
         "landing_page": "https://atzavarahotelspa.sjv.io/c/7401119/3040677/36939",
-        "zile_ramase": 8,
+        "zile_ramase": 7,
         "expira": "2026-10-01",
         "sursa": "impact_deals_api"
       }
@@ -1599,14 +1599,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 39,
+    "zile_ramase": 38,
     "promotii": [
       {
-        "nume": "Jusqu'Ã 45 % de rÃ©duction â SÃ©jour gratuit pour 2 enfants | Insotel Hotel",
-        "descriere": "RÃ©servez vos prochaines vacances aux Ã®les BalÃ©ares avec Insotel Hotel : profitez de jusqu'Ã 45 % de rÃ©duction et du sÃ©jour gratuit pour deux enfants. Terms and Conditions:\n-Offre valable jusqu'au 31/10/2026. -Sous rÃ©serve de disponibilitÃ©.",
+        "nume": "Jusqu'à 45 % de réduction – Séjour gratuit pour 2 enfants | Insotel Hotel",
+        "descriere": "Réservez vos prochaines vacances aux îles Baléares avec Insotel Hotel : profitez de jusqu'à 45 % de réduction et du séjour gratuit pour deux enfants. Terms and Conditions:\n-Offre valable jusqu'au 31/10/2026. -Sous réserve de disponibilité.",
         "cod_cupon": "AG06",
         "landing_page": "https://insotelhotelgroup.pxf.io/c/7401119/3910315/23811",
-        "zile_ramase": 39,
+        "zile_ramase": 38,
         "expira": "2026-11-01",
         "sursa": "impact_deals_api"
       }
@@ -1634,14 +1634,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 100,
+    "zile_ramase": 99,
     "promotii": [
       {
         "nume": "Get additional 5% discount on Adult Only Properties - Garden Hotels",
         "descriere": "The time has come to enjoy a vacation at our Adults Only hotels, where rest and tranquility take center stage. Book now and save an additional 5% using the promo code. Terms and Conditions:\n- Offer valid until 31/12/2026.",
         "cod_cupon": "GHADULTS",
         "landing_page": "https://gardenhotels.sjv.io/c/7401119/3854531/51102",
-        "zile_ramase": 100,
+        "zile_ramase": 99,
         "expira": "2027-01-01",
         "sursa": "impact_deals_api"
       }
@@ -1668,14 +1668,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 135,
+    "zile_ramase": 134,
     "promotii": [
       {
         "nume": "Fall & Winter Campaign Package",
         "descriere": "Buy$189, get $15 off",
         "cod_cupon": "",
         "landing_page": "https://oyrosycom.sjv.io/c/7401119/2820691/32511?u=https%3A%2F%2Foyrosy.com%2F",
-        "zile_ramase": 135,
+        "zile_ramase": 134,
         "expira": "2027-02-05",
         "sursa": "impact_deals_api"
       }
@@ -1702,14 +1702,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 465,
+    "zile_ramase": 464,
     "promotii": [
       {
         "nume": "Save $249 on orders over $999 for Saramonic products!",
         "descriere": "Save $249 on orders over $999 for Saramonic products!",
         "cod_cupon": "SRaff249",
         "landing_page": "https://saramonic.sjv.io/c/7401119/2877095/33495?u=https%3A%2F%2Fstore.saramonic.com%2Fdiscount%2FSRaff249",
-        "zile_ramase": 465,
+        "zile_ramase": 464,
         "expira": "2028-01-01",
         "sursa": "impact_deals_api"
       }
@@ -1736,14 +1736,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 218,
+    "zile_ramase": 217,
     "promotii": [
       {
         "nume": "ON30",
         "descriere": "Get 30% off all products from store.",
         "cod_cupon": "",
         "landing_page": "https://comfier.pxf.io/c/7401119/2877153/33550?u=https%3A%2F%2Fwww.snailax.com%2F",
-        "zile_ramase": 218,
+        "zile_ramase": 217,
         "expira": "2027-04-29",
         "sursa": "impact_deals_api"
       }
@@ -1770,14 +1770,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 7,
+    "zile_ramase": 6,
     "promotii": [
       {
         "nume": "coupon of clip in hair extensions",
         "descriere": "coupon of clip in hair extensions",
         "cod_cupon": "",
         "landing_page": "https://ggamazon.sjv.io/c/7401119/3765248/37610?u=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB0744C2XK3",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-09-30",
         "sursa": "impact_deals_api"
       }
@@ -1804,14 +1804,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 98,
+    "zile_ramase": 97,
     "promotii": [
       {
         "nume": "OM15",
         "descriere": "Get your new order for all product 15% off",
         "cod_cupon": "",
         "landing_page": "https://omfort.sjv.io/c/7401119/3731076/46802?u=https%3A%2F%2Ftheomfort.com",
-        "zile_ramase": 98,
+        "zile_ramase": 97,
         "expira": "2026-12-30",
         "sursa": "impact_deals_api"
       }
@@ -1838,14 +1838,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 15,
+    "zile_ramase": 14,
     "promotii": [
       {
         "nume": "Clearance sale50%off",
         "descriere": "Clearance: Enjoy 50% off select items!",
         "cod_cupon": "",
         "landing_page": "https://ugeat.pxf.io/c/7401119/3855421/51250?u=https%3A%2F%2Fwww.ugeat.com",
-        "zile_ramase": 234,
+        "zile_ramase": 233,
         "expira": "2027-05-15",
         "sursa": "impact_deals_api"
       },
@@ -1854,7 +1854,7 @@
         "descriere": "Enjoy a 70% discount on high-quality Virgin+ series products.",
         "cod_cupon": "VR70",
         "landing_page": "https://ugeat.pxf.io/c/7401119/3855421/51250?u=https%3A%2F%2Fwww.ugeat.com",
-        "zile_ramase": 234,
+        "zile_ramase": 233,
         "expira": "2027-05-15",
         "sursa": "impact_deals_api"
       },
@@ -1863,7 +1863,7 @@
         "descriere": "Purchase together to enjoy a 25% discount.",
         "cod_cupon": "",
         "landing_page": "https://ugeat.pxf.io/c/7401119/3855421/51250?u=https%3A%2F%2Fwww.ugeat.com",
-        "zile_ramase": 234,
+        "zile_ramase": 233,
         "expira": "2027-05-15",
         "sursa": "impact_deals_api"
       },
@@ -1872,7 +1872,7 @@
         "descriere": "wedding hair sale 15% off",
         "cod_cupon": "WH15",
         "landing_page": "https://ugeat.pxf.io/c/7401119/3855421/51250?u=https%3A%2F%2Fwww.ugeat.com",
-        "zile_ramase": 15,
+        "zile_ramase": 14,
         "expira": "2026-10-08",
         "sursa": "impact_deals_api"
       },
@@ -1881,7 +1881,7 @@
         "descriere": "wedding hair sale 22% off",
         "cod_cupon": "WH22",
         "landing_page": "https://ugeat.pxf.io/c/7401119/3855421/51250?u=https%3A%2F%2Fwww.ugeat.com",
-        "zile_ramase": 15,
+        "zile_ramase": 14,
         "expira": "2026-10-08",
         "sursa": "impact_deals_api"
       }
@@ -1908,14 +1908,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 1,
+    "zile_ramase": 0,
     "promotii": [
       {
         "nume": "Ends of summer",
         "descriere": "$10 Off Over $129 , $25 Off Over $179 , 20% Off Over $259 , $80 Off Over $349",
         "cod_cupon": "",
         "landing_page": "https://kisslovehaircom.pxf.io/c/7401119/3776183/48215?u=https%3A%2F%2Fwww.kisslovehair.com%2Fcollections%2Fbest-sellers",
-        "zile_ramase": 1,
+        "zile_ramase": 0,
         "expira": "2026-09-24",
         "sursa": "impact_deals_api"
       }
@@ -1942,14 +1942,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 22,
+    "zile_ramase": 21,
     "promotii": [
       {
         "nume": "Redodo 8% Discount Code – Save on All Products",
         "descriere": "Enjoy 8% off all Redodo products with this exclusive discount code. Help your audience save on LiFePO₄ batteries and power solutions. Valid on Redodo official website.",
         "cod_cupon": "",
         "landing_page": "https://redodopowerde.sjv.io/c/7401119/3864250/49142",
-        "zile_ramase": 99,
+        "zile_ramase": 98,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -1958,7 +1958,7 @@
         "descriere": "Prime Day bei Redodo – Frühzugang mit bis zu 55% Rabatt, gefolgt von Top-Angeboten mit bis zu 60% Rabatt.",
         "cod_cupon": "PRIME10",
         "landing_page": "https://redodopowerde.sjv.io/c/7401119/3864250/49142",
-        "zile_ramase": 22,
+        "zile_ramase": 21,
         "expira": "2026-10-15",
         "sursa": "impact_deals_api"
       }
@@ -1985,14 +1985,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 63,
+    "zile_ramase": 62,
     "promotii": [
       {
         "nume": "IMPACTVPN75",
         "descriere": "IMPACTVPN75 — 75% off a 2-year AdGuard VPN subscription. The promo code will be valid until November 25, 2026.",
         "cod_cupon": "",
         "landing_page": "https://adguard.sjv.io/c/7401119/3888268/49891",
-        "zile_ramase": 63,
+        "zile_ramase": 62,
         "expira": "2026-11-25",
         "sursa": "impact_deals_api"
       }
@@ -2019,14 +2019,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 100,
+    "zile_ramase": 99,
     "promotii": [
       {
         "nume": "IM99OFF",
         "descriere": "Get An Extra $99 OFF On All Orders Over $1500 on Xlaserlab",
         "cod_cupon": "",
         "landing_page": "https://xinghanlaserhongkongcolimited.pxf.io/c/7401119/3281436/40573?u=https%3A%2F%2Fwww.xlaserlab.com",
-        "zile_ramase": 100,
+        "zile_ramase": 99,
         "expira": "2027-01-01",
         "sursa": "impact_deals_api"
       },
@@ -2035,7 +2035,7 @@
         "descriere": "Get a 5% OFF on Laser Welder X1/X1Pro for your First Purchase",
         "cod_cupon": "",
         "landing_page": "https://xinghanlaserhongkongcolimited.pxf.io/c/7401119/3281436/40573?u=https%3A%2F%2Fwww.xlaserlab.com%2Fproducts%2Fxlaserlab-x1-pro-laser-welder-cleaner-cutter",
-        "zile_ramase": 100,
+        "zile_ramase": 99,
         "expira": "2027-01-01",
         "sursa": "impact_deals_api"
       }
@@ -2062,14 +2062,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 99,
+    "zile_ramase": 98,
     "promotii": [
       {
         "nume": "LumosFlex120",
         "descriere": "120 off for lumos flex",
         "cod_cupon": "",
         "landing_page": "https://wecreateu.sjv.io/c/7401119/3100697/38430",
-        "zile_ramase": 99,
+        "zile_ramase": 98,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -2078,7 +2078,7 @@
         "descriere": "100 off for wecreat vision pro",
         "cod_cupon": "",
         "landing_page": "https://wecreateu.sjv.io/c/7401119/3100697/38430",
-        "zile_ramase": 250,
+        "zile_ramase": 249,
         "expira": "2027-05-31",
         "sursa": "impact_deals_api"
       },
@@ -2087,7 +2087,7 @@
         "descriere": "5% off for all wecreat products! including accessories",
         "cod_cupon": "WECREAT",
         "landing_page": "https://wecreateu.sjv.io/c/7401119/3100697/38430",
-        "zile_ramase": 99,
+        "zile_ramase": 98,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -2096,7 +2096,7 @@
         "descriere": "$100 off for wecreat lumos",
         "cod_cupon": "",
         "landing_page": "https://wecreateu.sjv.io/c/7401119/3100697/38430",
-        "zile_ramase": 250,
+        "zile_ramase": 249,
         "expira": "2027-05-31",
         "sursa": "impact_deals_api"
       }
@@ -2123,14 +2123,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
+    "zile_ramase": 98,
     "promotii": [
       {
         "nume": "DFN15",
         "descriere": "15% discount on the first purchase for all subscriptions",
         "cod_cupon": "",
         "landing_page": "https://novakid-global-en.pxf.io/c/7401119/1348549/16082?u=https%3A%2F%2Fwww.novakidschool.com",
-        "zile_ramase": 99,
+        "zile_ramase": 98,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       }
@@ -2157,14 +2157,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 8,
+    "zile_ramase": 7,
     "promotii": [
       {
         "nume": "Up to 17% OFF on different proprieties of Casa Andina | Casa Andina",
         "descriere": "Book your stays at Casa Andina and get up to 17% discount on stays with special promocode. Participating properties: - Casa Andina Premium Puno: 12% - Casa Andina Standard Puno: 12% - Casa Andina Standard Ayacucho: 12% - Centro by Casa Andina",
         "cod_cupon": "DISCOUNT2026",
         "landing_page": "https://casaandina.pxf.io/c/7401119/3808525/19416",
-        "zile_ramase": 8,
+        "zile_ramase": 7,
         "expira": "2026-10-01",
         "sursa": "impact_deals_api"
       }
@@ -2191,14 +2191,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 7,
+    "zile_ramase": 6,
     "promotii": [
       {
         "nume": "Q3 Exclusive Affiliate Discount: 12% Off Smart Home Safety",
         "descriere": "Use affiliate-exclusive code AFQ3XSENSE for an extra 12% off your entire order, stackable with site promotions, valid now through September 30, 2026, across the US, Germany, France, and the EU.",
         "cod_cupon": "",
         "landing_page": "https://gauyekinternationallimited.sjv.io/c/7401119/3972740/39753?u=https%3A%2F%2Fwww.x-sense.com%2F",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-09-30",
         "sursa": "impact_deals_api"
       }
@@ -2225,14 +2225,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 281,
+    "zile_ramase": 280,
     "promotii": [
       {
         "nume": "Lemorele ｜ 15% off sitewide & Limited Deal for best Wireless HDMI",
         "descriere": "Lemorele ｜ 15% off sitewide & Limited Deal for best Wireless HDMI",
         "cod_cupon": "new15",
         "landing_page": "https://lemorele.sjv.io/c/7401119/3958018/54951?u=http%3A%2F%2Fus.lemorele.com",
-        "zile_ramase": 281,
+        "zile_ramase": 280,
         "expira": "2027-07-01",
         "sursa": "impact_deals_api"
       },
@@ -2241,7 +2241,7 @@
         "descriere": "Lemorele ｜ 20% off for new customers & Welcome Discount Sitewide",
         "cod_cupon": "new20",
         "landing_page": "https://lemorele.sjv.io/c/7401119/3958018/54951?u=http%3A%2F%2Fus.lemorele.com",
-        "zile_ramase": 281,
+        "zile_ramase": 280,
         "expira": "2027-07-01",
         "sursa": "impact_deals_api"
       }
@@ -2268,14 +2268,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 276,
+    "zile_ramase": 275,
     "promotii": [
       {
         "nume": "10 EUR Rabatt auf 20 EUR MBW",
         "descriere": "MBW: 20 EUR NUR für Neukunden",
         "cod_cupon": "IMPACT10",
         "landing_page": "https://italkidach.sjv.io/c/7401119/3870094/51770?u=https%3A%2F%2Fwww.italki.com%2Fde",
-        "zile_ramase": 276,
+        "zile_ramase": 275,
         "expira": "2027-06-26",
         "sursa": "impact_deals_api"
       }
@@ -2300,20 +2300,10 @@
     "canal_recomandat": "Content, SEO, Social",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": true,
-    "zile_ramase": 310,
-    "promotii": [
-      {
-        "nume": "Earn More with LWR01",
-        "descriere": "Drive more conversions with our latest LWR01 promotion! Customers can save 40% using code LWR40OFF, while affiliates earn an increased commission on every eligible sale. Update your content and start promoting today.",
-        "cod_cupon": "LWR40OFF",
-        "landing_page": "https://glinet.pxf.io/c/7401119/3975759/55451?u=https%3A%2F%2Fwww.gl-inet.com%2Fproducts%2Flwr01",
-        "zile_ramase": 310,
-        "expira": "2027-07-30",
-        "sursa": "impact_deals_api"
-      }
-    ],
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
     "exclusiv": false,
     "platforma": "impact",
     "descriere": "",
@@ -2336,14 +2326,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 100,
+    "zile_ramase": 99,
     "promotii": [
       {
         "nume": "Book now and get up to 25% discount with Savoy Hotels, Dubai",
         "descriere": "Use a promo code and get a 25% discount with the best benefits, including early check-in/ late check-out at Savoy Hotels Dubai. Terms and Conditions:\n- Offer valid until 31/12/2026. - Offer is subject to availability.",
         "cod_cupon": "CAMP-BEST",
         "landing_page": "https://savoydubai.sjv.io/c/7401119/3960072/28150",
-        "zile_ramase": 100,
+        "zile_ramase": 99,
         "expira": "2027-01-01",
         "sursa": "impact_deals_api"
       }
@@ -2370,14 +2360,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
+    "zile_ramase": 98,
     "promotii": [
       {
         "nume": "IKIER Master Exclusive $300 OFF Coupon Code – AFFMASTER300",
         "descriere": "Unlock the power of IKIER Master and enjoy an exclusive discount. Your audience can save $300 instantly with the coupon code below. Coupon Code: AFFMASTER300 Discount: $300/€300 OFF Promote IKIER Master today and offer your audience a special deal on a high-performance laser engraving machine.",
         "cod_cupon": "",
         "landing_page": "https://ikier.sjv.io/c/7401119/3962536/55245?u=https%3A%2F%2Fwww.ikier.com%2Fproducts%2Fikier-master",
-        "zile_ramase": 130,
+        "zile_ramase": 129,
         "expira": "2027-01-31",
         "sursa": "impact_deals_api"
       },
@@ -2386,7 +2376,7 @@
         "descriere": "Save $200 on the iKier K1 Pro Max 70W! Use exclusive discount code AFFK70P200 at checkout to get $200 OFF the iKier K1 Pro Max 70W. Don’t miss this limited-time offer and upgrade your laser engraving experience with the powerful K1 Pro Max 70W!",
         "cod_cupon": "",
         "landing_page": "https://ikier.sjv.io/c/7401119/3962536/55245?u=https%3A%2F%2Fwww.ikier.com%2Fproducts%2Fikier-k1-pro-max-70w",
-        "zile_ramase": 99,
+        "zile_ramase": 98,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -2395,7 +2385,7 @@
         "descriere": "Save $160 on the iKier K40 MAX! Use exclusive discount code AFFK40160 at checkout to get $160 OFF the iKier K40 MAX. Don’t miss this limited-time offer and upgrade your laser engraving experience with the powerful K40 MAX!",
         "cod_cupon": "",
         "landing_page": "https://ikier.sjv.io/c/7401119/3962536/55245?u=https%3A%2F%2Fwww.ikier.com%2Fproducts%2Fikier-k40-max",
-        "zile_ramase": 99,
+        "zile_ramase": 98,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -2404,7 +2394,7 @@
         "descriere": "Obtén $1,999 MXN de descuento en iKier K1 Pro Max 70W usando el código promocional AFFK11999 en iKier México. No se puede combinar con otros códigos de descuento.",
         "cod_cupon": "",
         "landing_page": "https://ikier.sjv.io/c/7401119/3962536/55245?u=https%3A%2F%2Fmx.ikier.com%2Fproducts%2Fikier-k1-pro-max-70w",
-        "zile_ramase": 130,
+        "zile_ramase": 129,
         "expira": "2027-01-31",
         "sursa": "impact_deals_api"
       },
@@ -2413,7 +2403,7 @@
         "descriere": "Consigue $1,600 MXN de descuento en iKier K70 Max aplicando el código AFFK71999 al finalizar tu compra en iKier México. No acumulable con otras promociones.",
         "cod_cupon": "",
         "landing_page": "https://ikier.sjv.io/c/7401119/3962536/55245?u=https%3A%2F%2Fmx.ikier.com%2Fproducts%2Fikier-k70-max",
-        "zile_ramase": 130,
+        "zile_ramase": 129,
         "expira": "2027-01-31",
         "sursa": "impact_deals_api"
       },
@@ -2422,7 +2412,7 @@
         "descriere": "Disfruta de $1,000 MXN de descuento en iKier K40 Max con el código AFFK41000. Válido únicamente en la tienda oficial iKier México.",
         "cod_cupon": "",
         "landing_page": "https://ikier.sjv.io/c/7401119/3962536/55245?u=https%3A%2F%2Fmx.ikier.com%2Fproducts%2Fikier-k40-max",
-        "zile_ramase": 130,
+        "zile_ramase": 129,
         "expira": "2027-01-31",
         "sursa": "impact_deals_api"
       },
@@ -2431,7 +2421,7 @@
         "descriere": "Obtén $2,500 MXN de descuento en iKier Master usando el código FFMAS24000 durante tu compra. Oferta exclusiva para iKier México.",
         "cod_cupon": "",
         "landing_page": "https://ikier.sjv.io/c/7401119/3962536/55245?u=https%3A%2F%2Fmx.ikier.com%2Fproducts%2Fikier-master",
-        "zile_ramase": 130,
+        "zile_ramase": 129,
         "expira": "2027-01-31",
         "sursa": "impact_deals_api"
       },
@@ -2440,7 +2430,7 @@
         "descriere": "Upgrade your creative workflow with IKIER Master and enjoy an exclusive 300€ discount. Your audience can save 300€ instantly with the coupon code below and experience professional laser engraving performance at a better price. Coupon Code: AFFMASTER300 Discount: 300€ OFF",
         "cod_cupon": "",
         "landing_page": "https://ikier.sjv.io/c/7401119/3962536/55245?u=https%3A%2F%2Feu.ikier.com%2Fproducts%2Fikier-master",
-        "zile_ramase": 130,
+        "zile_ramase": 129,
         "expira": "2027-01-31",
         "sursa": "impact_deals_api"
       },
@@ -2449,7 +2439,7 @@
         "descriere": "Upgrade to the powerful IKIER K70 MAX and unlock an exclusive offer. Your audience can save 200€ instantly with the coupon code below. Coupon Code: AFFK70200 Discount: 200€ OFF Promote IKIER K70 MAX today and give your audience the opportunity to experience a high-performance laser engraver with an exclusive limited-time discount.",
         "cod_cupon": "",
         "landing_page": "https://ikier.sjv.io/c/7401119/3962536/55245?u=https%3A%2F%2Feu.ikier.com%2Fproducts%2Fikier-k70-max",
-        "zile_ramase": 130,
+        "zile_ramase": 129,
         "expira": "2027-01-31",
         "sursa": "impact_deals_api"
       },
@@ -2458,7 +2448,7 @@
         "descriere": "Upgrade your laser engraving experience with IKIER K40 MAX and enjoy an exclusive limited-time offer. Your audience can save 160€ instantly with the coupon code below. Coupon Code: AFFK40160 Discount: 160€ OFF Promote IKIER K40 MAX today and help your audience get a powerful laser engraver at an exclusive price.",
         "cod_cupon": "",
         "landing_page": "https://ikier.sjv.io/c/7401119/3962536/55245?u=https%3A%2F%2Feu.ikier.com%2Fproducts%2Fikier-k40-max",
-        "zile_ramase": 130,
+        "zile_ramase": 129,
         "expira": "2027-01-31",
         "sursa": "impact_deals_api"
       },
@@ -2467,7 +2457,7 @@
         "descriere": "Upgrade your laser engraving experience with the powerful IKIER K1 PRO (1064) 20W and enjoy an exclusive limited-time offer. Your audience can save 100€ instantly with the coupon code below. Coupon Code: AFFK1064100 Discount: 100€ OFF Promote IKIER K1 PRO (1064) 20W today and help your audience unlock professional laser engraving performance at a better price.",
         "cod_cupon": "",
         "landing_page": "https://ikier.sjv.io/c/7401119/3962536/55245?u=https%3A%2F%2Feu.ikier.com%2Fproducts%2Fikier-k1-pro-1064nm-20w",
-        "zile_ramase": 130,
+        "zile_ramase": 129,
         "expira": "2027-01-31",
         "sursa": "impact_deals_api"
       },
@@ -2476,7 +2466,7 @@
         "descriere": "Upgrade your laser engraving experience with the powerful IKIER K1 Ultra 36W and enjoy an exclusive limited-time offer. Your audience can save 80€ instantly with the coupon code below. Coupon Code: AFFK3680 Discount: 80€ OFF Promote IKIER K1 Ultra 36W today and help your audience get a high-performance laser engraver with an exclusive discount.",
         "cod_cupon": "",
         "landing_page": "https://ikier.sjv.io/c/7401119/3962536/55245?u=https%3A%2F%2Feu.ikier.com%2Fproducts%2Fikier-k1-ultra-36w",
-        "zile_ramase": 130,
+        "zile_ramase": 129,
         "expira": "2027-01-31",
         "sursa": "impact_deals_api"
       }
@@ -2581,14 +2571,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 38,
+    "zile_ramase": 37,
     "promotii": [
       {
         "nume": "Reduceri de pana la -70% la Outlet Expomob",
         "descriere": null,
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.expomob.ro%2Foutlet-mobila",
-        "zile_ramase": 38,
+        "zile_ramase": 37,
         "expira": "2026-10-31",
         "sursa": "2performant_api"
       },
@@ -2597,7 +2587,7 @@
         "descriere": "Profita de reducerile Outlet Expomob si amenajeaza-ti casa la preturi speciale. Descopera mobilier pentru orice incapere: livinguri, dormitoare, paturi, dulapuri, mese, scaune, comode, mobilier de bucatarie si accesorii pentru locuinta.\n\nAlege produse cu design modern, materiale rezistente si economiseste la piesele de mobilier preferate pentru casa ta. Stocurile sunt limitate!",
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.expomob.ro%2Foutlet-mobila",
-        "zile_ramase": 99,
+        "zile_ramase": 98,
         "expira": "2026-12-31",
         "sursa": "csv_import"
       }
@@ -2625,14 +2615,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 7,
+    "zile_ramase": 6,
     "promotii": [
       {
         "nume": "Livrare si retur GRATUIT la orice comanda de gratare, paturi, birouri si scaune de gaming",
         "descriere": null,
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdoctorshield.ro%2F",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-09-30",
         "sursa": "2performant_api"
       }
@@ -2660,14 +2650,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 6,
+    "zile_ramase": 5,
     "promotii": [
       {
         "nume": "Oferte de Toamna cu extra 10% reducere la mobilier de dormitor, bucatarie , living și hol",
         "descriere": null,
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=http%3A%2F%2Fmobidea.ro%2Foferte-promotionale%2F",
-        "zile_ramase": 6,
+        "zile_ramase": 5,
         "expira": "2026-09-29",
         "sursa": "2performant_api"
       }
@@ -2730,14 +2720,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 7,
+    "zile_ramase": 6,
     "promotii": [
       {
         "nume": "Reduceri de pana la -66% la ambalaje de cadou si accesorii produse handmade",
         "descriere": null,
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcraftup.ro%2Fcollections%2Foferte",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-09-30",
         "sursa": "2performant_api"
       },
@@ -2746,7 +2736,7 @@
         "descriere": null,
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcraftup.ro%2Fcollections%2Fpungi-si-sacose",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-09-30",
         "sursa": "2performant_api"
       },
@@ -2755,7 +2745,7 @@
         "descriere": "Pregătește-te pentru proiectele tale creative cu o ofertă de nerefuzat la CraftUp! Creează-ți propriul pachet personalizat și economisești mai mult.\n\nAlege oricare 3 produse din selecția noastră specială — de la ambalaje premium și sacoșe din iută, până la decorațiuni handmade și felicitări — și primești o reducere EXTRA de 15%. Reducerea se aplică automat în coșul de cumpărături imediat ce pachetul tău este complet.\n👉Selecție variată: Ambalaje, stickere, felicitări și accesorii DIY.\n👉Reducere A",
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcraftup.ro%2Fpages%2Fpachete-produse",
-        "zile_ramase": 38,
+        "zile_ramase": 37,
         "expira": "2026-10-31",
         "sursa": "csv_import"
       }
@@ -2783,14 +2773,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 38,
+    "zile_ramase": 37,
     "promotii": [
       {
         "nume": "Pachete revizie auto cu reducere de pana la -35%",
         "descriere": null,
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.autobob.ro%2Fpachete-revizie",
-        "zile_ramase": 38,
+        "zile_ramase": 37,
         "expira": "2026-10-31",
         "sursa": "2performant_api"
       }
@@ -2818,23 +2808,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 98,
+    "zile_ramase": 97,
     "promotii": [
-      {
-        "nume": "Provocarea Femieko 2026 – Câștigă premii și comision de 19%!",
-        "descriere": "",
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffemieko.ro",
-        "zile_ramase": 98,
-        "expira": "2026-12-30",
-        "sursa": "2performant_api"
-      },
       {
         "nume": "Economisește până la 25% cu Abonamentul Femi.Eko – Protecție lunară fără griji",
         "descriere": "",
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffemieko.ro%2Fpages%2Fabonamente-femieko",
-        "zile_ramase": 98,
+        "zile_ramase": 97,
         "expira": "2026-12-30",
         "sursa": "2performant_api"
       }
@@ -2862,14 +2843,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 158,
+    "zile_ramase": 157,
     "promotii": [
       {
         "nume": "Oferta 1+1",
         "descriere": null,
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.fara-daunatori.ro%2Fsearch%2Foferta%2F%3Fq%3Doferta",
-        "zile_ramase": 158,
+        "zile_ramase": 157,
         "expira": "2027-02-28",
         "sursa": "2performant_api"
       },
@@ -2878,7 +2859,7 @@
         "descriere": "Oferta 1+1",
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.fara-daunatori.ro%2Fsearch%2Foferta%2F%3Fq%3Doferta",
-        "zile_ramase": 158,
+        "zile_ramase": 157,
         "expira": "2027-02-28",
         "sursa": "csv_import"
       }
@@ -2941,14 +2922,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 6,
+    "zile_ramase": 5,
     "promotii": [
       {
         "nume": "Extragarantie 2+3 ani la Biciclete Afisport.ro",
         "descriere": null,
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fafisport.ro%2Fbiciclete-mtb%2F",
-        "zile_ramase": 6,
+        "zile_ramase": 5,
         "expira": "2026-09-29",
         "sursa": "2performant_api"
       }
@@ -3001,7 +2982,7 @@
         "descriere": "Beneficii mari pentru a te alătura comunității vidaXL:\n\n> fii primul care află despre noile noastre oferte\n\n> beneficiază de o reducere de 25Lei la înscriere\n\n> bucură-te de reduceri exclusive\n\n> fii la curent cu cele mai noi articole\n\n> inspiră-te din cele mai noi tendințe, stiluri și postări de blog prin newsletterele noastre săptămânale",
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.vidaxl.bg",
-        "zile_ramase": 830,
+        "zile_ramase": 829,
         "expira": "2028-12-31",
         "sursa": "csv_import"
       },
@@ -3038,14 +3019,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 897,
+    "zile_ramase": 896,
     "promotii": [
       {
         "nume": "Sale",
         "descriere": null,
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.sneakerit.ro%2Fsale",
-        "zile_ramase": 897,
+        "zile_ramase": 896,
         "expira": "2029-03-08",
         "sursa": "2performant_api"
       },
@@ -3054,7 +3035,7 @@
         "descriere": "Toate produsele reduse de pe sneakerit.ro",
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.sneakerit.ro%2Fsale",
-        "zile_ramase": 897,
+        "zile_ramase": 896,
         "expira": "2029-03-08",
         "sursa": "csv_import"
       }
@@ -3082,14 +3063,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 98,
+    "zile_ramase": 97,
     "promotii": [
       {
         "nume": "10% DISCOUNT on first coffee order",
         "descriere": null,
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F112coffee.com",
-        "zile_ramase": 98,
+        "zile_ramase": 97,
         "expira": "2026-12-30",
         "sursa": "2performant_api"
       }
@@ -6052,14 +6033,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 98,
+    "zile_ramase": 97,
     "promotii": [
       {
         "nume": "Reducere 10% la tot cosul",
         "descriere": "Reducere 10% la tot cosul de cumparaturi, indiferent de valoare si indiferent daca produsele sunt deja reduse! Foloseste codul voucher JOLLY10 la finalizarea comenzii, valabil exclusiv pe www.jollymag.ro",
         "cod_cupon": "JOLLY10",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fjollymag.ro%2Fbrand%2F680-jollymag",
-        "zile_ramase": 98,
+        "zile_ramase": 97,
         "expira": "2026-12-30",
         "sursa": "csv_import"
       }
@@ -7639,14 +7620,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
+    "zile_ramase": 98,
     "promotii": [
       {
         "nume": "REDUCERI COMBO",
         "descriere": "REDUCERI COMBO-Cumpără în combo, economisește și bucură-te de cele mai iubite produse, la preț redus!\nAlege bestseller-urile noastre în combo – produsele populare acum sunt mai ieftine împreună!\nOferta este valabilă doar Online în limita stocului disponibil și nu se cumulează cu alte coduri sau vouchere active!\nLink: Link: https://www.nobilacasa.ro/sale/reduceri-combo",
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.nobilacasa.ro%2Fsale%2Freduceri-combo",
-        "zile_ramase": 99,
+        "zile_ramase": 98,
         "expira": "2026-12-31",
         "sursa": "csv_import"
       }
@@ -7695,14 +7676,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
+    "zile_ramase": 98,
     "promotii": [
       {
         "nume": "Starea de bine cu Herbagetica vine! 3 vacanțe în Maldive + premii zilnice",
         "descriere": "Ai cumpărat un produs Herbagetica? \n\nÎnscrie-te în campanie pe pagina herbagetica.ro/concurs și poți câștiga unul din cele 120 de vouchere Herbagetica în valoare de 210 lei (valabile pe site-ul herbagetica.ro) sau una din cele 3 vacanțe în Maldive! 🌴☀️\n\n🎁 Cum participi la campanie?\n\n1️⃣ Cumpără un produs Herbagetica:\nde pe herbagetica.ro, magazine online, plafare și farmacii.\n\n2️⃣ Înscrie-te în campanie:\nAccesează pagina campaniei și completează formularul cu:\n• numărul bonului fiscal sau număru",
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fherbagetica.ro%2Fconcurs",
-        "zile_ramase": 99,
+        "zile_ramase": 98,
         "expira": "2026-12-31",
         "sursa": "csv_import"
       }
@@ -13687,14 +13668,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 7,
+    "zile_ramase": 6,
     "promotii": [
       {
         "nume": "Promotie Aronino",
         "descriere": "Imunitatea micuțului tău se construiește în timp. Pregătește-l pentru începerea școlii cu cel puțin o lună înainte! 📚👧🧒\nAronino te așteaptă cu oferta 1+1 GRATIS ca să-i asiguri tot ce are nevoie.\nAsta înseamnă că la fiecare produs cumpărat mai primești încă unul cadou din partea noastră, în limita stocului disponibil.\nVorbim despre:\n💜 Aronino Mini Biotic, 30 plicuri, cu doar 103 lei \n💜 Aronino Baby Biotic, 30 plicuri, cu doar 103 lei \n💜 Aronino Kids Multivitamins & Minerals, 60 tablete masticabi",
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Faronia-charlottenburg.ro%2F",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-09-30",
         "sursa": "csv_import"
       }
@@ -13797,14 +13778,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 4,
+    "zile_ramase": 3,
     "promotii": [
       {
         "nume": "Back to School 2026",
         "descriere": "Școlărești la Cărturești a sosit!\n\nȘtim că urmează perioada în care ghiozdanul devine piesa de rezistență a fiecărei zile, așa că am pregătit o ofertă back to school irezistibilă: ai 20% reducere la cumpărături de peste 200 de lei din selecția specială de rechizite și ghiozdane!\n\nȘi pentru că ești la Cărturești, înseamnă că vrei și să dăruiești. Între 11 august și 28 septembrie, cumpărăturile din Școlărești la Cărturești vor susține inițiativa byron de a dezvolta și echipa biblioteci dedicate ti",
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Foffer%2Fscolaresti-la-carturesti-2026-6645",
-        "zile_ramase": 4,
+        "zile_ramase": 3,
         "expira": "2026-09-27",
         "sursa": "csv_import"
       },
@@ -13813,7 +13794,7 @@
         "descriere": "De la Konohagakure până la Hogwarts, de la Grand Line până la galaxia îndepărtată, fandom-ul tău are acum un loc unde poate exista în afara ecranului. Kilipir Merch Fandom adună într-un singur raft virtual universurile care te-au marcat — Naruto, One Piece, Dragon Ball, Harry Potter, Marvel, DC Comics, Star Wars sau Lord of the Rings — sub formă de căni, tricouri, rucsacuri, figurine și accesorii pe care le poți purta sau expune cu mândrie.\nTe invităm să explorezi oferta cu ochii mari, ca într-u",
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Foffer%2Fkilipir-merch-fandom-6642",
-        "zile_ramase": 37,
+        "zile_ramase": 36,
         "expira": "2026-10-30",
         "sursa": "csv_import"
       }
@@ -13916,14 +13897,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 7,
+    "zile_ramase": 6,
     "promotii": [
       {
         "nume": "Catalog Oferte Back to school 2026 | 06.08-30.09.2026",
         "descriere": "Rasfoieste catalogul si descopera noutatile si ofertele de neratat pentru noul an scolar! 🎒 📓🖊️ 🎨 >> https://noriel.ro/catalog-back-to-school\nPregateste-te pentru nou an scolar plin de aventuri! Campanie valabila in perioada 06.08-30.09.2026, in limita stocului disponbil.",
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnoriel.ro%2Fcatalog-back-to-school",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-09-30",
         "sursa": "csv_import"
       },
@@ -13932,7 +13913,7 @@
         "descriere": "Hei, hei, hei! 🔔Suna clopotelul pentru cele mai tari reduceri de Back to School! 📚🎒Pregateste-te de aventura cu 30% REDUCERE la TOATE ghiozdanele! Alege modelul preferat si completeaza-ti stilul cu penare cool si accesorii de poveste. Promotie valabila in perioada 06.08-30.09.2025, in limita stocului disponibil. >>https://noriel.ro/ghiozdane-si-genti-scoala",
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnoriel.ro%2Fscoala-si-gradinita",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-09-30",
         "sursa": "csv_import"
       }
@@ -13960,14 +13941,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 37,
+    "zile_ramase": 36,
     "promotii": [
       {
         "nume": "Back To School 2026 Rechizite",
         "descriere": "Buna ziua,\n\nincepand de astazi si pana la 31 octombrie, am activat promotia Back To School pentru rechizite care contine peste 2500 de produse.\n\nLink promotie:\n\nhttps://www.librarie.net/c/4661/\n\nSpor la conversii,\nechipa LIBRARIE.net",
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.librarie.net%2Fc%2F4661%2F",
-        "zile_ramase": 37,
+        "zile_ramase": 36,
         "expira": "2026-10-30",
         "sursa": "csv_import"
       }
@@ -14770,14 +14751,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 129,
+    "zile_ramase": 128,
     "promotii": [
       {
         "nume": "Transport gratuit la orice comanda!",
         "descriere": "Transport gratuit la orice comanda si discounturi zilnice si dinamica pe site.  Nu este necesar cupon, transportul e gratuit automat si discounturile aplicate deja la pret produs pe site direct.  Va multumim.",
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fmanukashop.ro",
-        "zile_ramase": 129,
+        "zile_ramase": 128,
         "expira": "2027-01-30",
         "sursa": "csv_import"
       }
@@ -15030,14 +15011,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 99,
+    "zile_ramase": 98,
     "promotii": [
       {
         "nume": "Livrare Gratuita la comenzi de peste 200 lei",
         "descriere": "E timpul pentru un upgrade! Comanda accesoriile tale preferate de pe Moft Collection si, daca depasesti pragul de 200 lei, noi iti platim transportul!\n\nNu uita: la fiecare comanda primesti setul complet de protectie (folie de sticla + protectie camera) CADOU.\n👉Transport Gratuit (>200 lei)\n👉Cadouri incluse la orice comanda\n👉Huse, curele si accesorii de top.\nComanda acum si economiseste!",
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fmoftcollection.ro%2F",
-        "zile_ramase": 99,
+        "zile_ramase": 98,
         "expira": "2026-12-31",
         "sursa": "csv_import"
       }
@@ -15890,14 +15871,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 7,
+    "zile_ramase": 6,
     "promotii": [
       {
         "nume": "Reduceri de pana la 40% la detergenti pentru aspiratoare robot",
         "descriere": "Descopera detergentii PAA-Home pentru aspiratoare robot, acum la preturi reduse cu pana la 40%. Sunt disponibile solutii compatibile cu modele populare de la Roborock, Dreame, Ecovacs, Tineco si Narwal, precum si detergenti concentrati pentru curatarea pardoselilor. Alege produsul potrivit si bucura-te de o curatenie eficienta si un parfum placut in intreaga locuinta.",
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fpaa-home.ro%2Fproduct-category%2Fdetergenti-aspiratoare%2F",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-09-30",
         "sursa": "csv_import"
       },
@@ -15906,7 +15887,7 @@
         "descriere": "Economiseste inteligent cu produsele resigilate PAA-home! Descopera accesorii pentru aspiratoare si roboti de aspirare, filtre, perii, rezervoare si multe alte produse verificate, complet functionale, disponibile cu reduceri de pana la 50%. Stocurile sunt limitate, iar ofertele sunt valabile doar in limita disponibilitatii.",
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fpaa-home.ro%2Fproduct-category%2Fproduse-resigilate-filtre-si-accesorii%2F",
-        "zile_ramase": 98,
+        "zile_ramase": 97,
         "expira": "2026-12-30",
         "sursa": "csv_import"
       },
@@ -15915,7 +15896,7 @@
         "descriere": "Descopera ofertele Paa-Home.ro si bucura-te de reduceri de pana la 60% la o gama variata de accesorii compatibile pentru aspiratoare robot, aspiratoare verticale si aspiratoare clasice.\n\nGaseste rapid accesoriile potrivite pentru aspiratorul tau si alege produse compatibile pentru branduri populare precum Roborock, Xiaomi, Dyson, Rowenta, Philips, Samsung, Karcher, Miele si multe altele.\n\nPromotia include: filtre HEPA si filtre de schimb pentru aspiratoare, perii principale si laterale pentru as",
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fpaa-home.ro%2F",
-        "zile_ramase": 38,
+        "zile_ramase": 37,
         "expira": "2026-10-31",
         "sursa": "csv_import"
       },
@@ -15924,7 +15905,7 @@
         "descriere": "Ai nevoie de consumabile pentru aspiratorul tău? Comandă de pe paa-home.ro și beneficiezi de Transport Gratuit la toate comenzile de peste 350 lei!\n\nAvem în stoc accesorii compatibile pentru cele mai populare branduri:\n👉Roboți: Roborock (S8, S7, S5), Xiaomi, Dreame, Viomi.\n👉Verticale: Dyson, Rowenta, Jimmy, Tineco.\n👉Purificatoare și umidificatoare: Filtre dedicate pentru aer curat.\n\nProfită de livrarea rapidă în 24-48h și asigură-te că aparatele tale funcționează ca noi!",
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fpaa-home.ro%2F",
-        "zile_ramase": 99,
+        "zile_ramase": 98,
         "expira": "2026-12-31",
         "sursa": "csv_import"
       }
@@ -15952,14 +15933,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 6,
+    "zile_ramase": 5,
     "promotii": [
       {
         "nume": "Promotie Karcher este valabilă în perioada 01 iulie 2026 - 30 septembrie 2026",
         "descriere": "Descopera promotiile speciale pe magazinul oficial Kärcher Romania!\n\nIn perioada 01 Iulie - 30 Septembrie 2026, profitati de oferte exclusive si preturi speciale la o gama variata de echipamente si accesorii de curatenie pentru casa, gradina si uz profesional:\n\n• Reduceri la aparate de curatat cu presiune, aspiratoare umed-uscate si mopuri electrice.\n• Pachete promotionale si accesorii cadou la modelele participante.\n• Garantie oficiala de producator si livrare rapida direct din depozitul Kärche",
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.karcher.com%2Fro%2Fro%2Fpromotii",
-        "zile_ramase": 6,
+        "zile_ramase": 5,
         "expira": "2026-09-29",
         "sursa": "csv_import"
       }
@@ -16387,14 +16368,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 6,
+    "zile_ramase": 5,
     "promotii": [
       {
         "nume": "Pachete cu 2+1 / 3+3 / 5+5 Parfumuri Cadou de la doar 159,99lei",
-        "descriere": "Profită de ofertele speciale Arabescu și primește parfumuri CADOU în cadrul pachetelor promoționale 2+1, 3+3 și 5+5, începând de la doar **159,99 lei**.\n\nPromoția se aplică exclusiv pachetelor afișate pe site și este disponibilă în limita stocului disponibil. Termeni și condiții aplicabile.",
+        "descriere": "Profită de ofertele speciale Arabescu și primește parfumuri CADOU în cadrul pachetelor promoționale 2+1, 3+3 și 5+5, începând de la doar 159,99 lei.\n\nPromoția se aplică exclusiv pachetelor afișate pe site și este disponibilă în limita stocului disponibil. Termeni și condiții aplicabile.",
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Farabescu.ro%2Fcategorie%2Foferte-parfumuri-arabescu%2F",
-        "zile_ramase": 6,
+        "zile_ramase": 5,
         "expira": "2026-09-29",
         "sursa": "csv_import"
       }
@@ -18072,14 +18053,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 6,
+    "zile_ramase": 5,
     "promotii": [
       {
         "nume": "PB20 - Sezon banchet & majorat: -20% la toate rochiile PRIVE",
         "descriere": "-20% la toate rochiile PRIVE Boutique cu codul PB20, valabil pe tot sezonul de banchete, majorate si nunti (august - septembrie). Rochii de ocazie fabricate in Romania, livrare 24-48h, schimb si retur simplu in 14 zile. Codul se aplica in cos si functioneaza pentru orice comanda de pe site.",
         "cod_cupon": "PB20",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fpriveboutique.net%2Frochii-de-ocazie%2F",
-        "zile_ramase": 6,
+        "zile_ramase": 5,
         "expira": "2026-09-29",
         "sursa": "csv_import"
       }
@@ -18682,14 +18663,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 7,
+    "zile_ramase": 6,
     "promotii": [
       {
         "nume": "Lichidare de stoc LNB – reduceri de pana la 70%",
         "descriere": "Profita de lichidarea de stoc LNB si descopera peste 500 de produse profesionale pentru manichiura, la preturi reduse cu pana la 70%. Oferta include accesorii nail art, stickere, folii de transfer si produse din colectii care nu vor mai reveni. Stocurile sunt limitate, iar promotia este valabila pana la epuizarea acestora si nu se cumuleaza cu alte oferte.",
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Flinailsboutique.ro%2Flichidare-de-stoc%2F",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-09-30",
         "sursa": "csv_import"
       },
@@ -18698,7 +18679,7 @@
         "descriere": "Descopera gama de geluri UV LNB la preturi reduse cu pana la 50%. Alege dintre geluri de constructie, fiber gel, soft gel, forming gel, painting gel si baze profesionale, disponibile in numeroase nuante si texturi. Profita acum de oferta si completeaza-ti trusa cu produsele potrivite pentru manichiuri rezistente si rezultate impecabile.",
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Flinailsboutique.ro%2Fgeluri-lnb",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-09-30",
         "sursa": "csv_import"
       }
@@ -19226,14 +19207,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 98,
+    "zile_ramase": 97,
     "promotii": [
       {
         "nume": "Pana la 90% reducere",
         "descriere": "Avem o nouă oportunitate de promovare pentru comunitatea ta: pe curteaveche.ro am lansat categoria Reduceri Finale, unde cititorii pot găsi cărți cu discounturi de până la 90%.\n\nSelecția include titluri din mai multe categorii, de la psihologie, biografii și dezvoltare personală până la parenting, sănătate, ficțiune și cărți pentru copii.\n\nEste o campanie cu un argument de vânzare foarte clar: prețuri spectaculos de mici, disponibile în limita stocului. Un moment bun pentru cititorii care vor să",
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.curteaveche.ro%2Fc%2Freduceri-finale",
-        "zile_ramase": 98,
+        "zile_ramase": 97,
         "expira": "2026-12-30",
         "sursa": "csv_import"
       }
@@ -19984,20 +19965,10 @@
     "canal_recomandat": "",
     "sales_number": 0,
     "trend": 0,
-    "are_promotie": true,
+    "are_promotie": false,
     "cod_cupon": false,
-    "zile_ramase": 6,
-    "promotii": [
-      {
-        "nume": "Interlink",
-        "descriere": "Promovează produsele Interlink și câștigă comisioane din fiecare vânzare validă. Interlink oferă o gamă variată de laptopuri, calculatoare, monitoare, imprimante și alte echipamente IT refurbished și second-hand, de la branduri de renume, la prețuri competitive. Profită de campanii promoționale, materiale de marketing dedicate și un portofoliu atractiv pentru a genera conversii.",
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.interlink.ro%2Fcampanie",
-        "zile_ramase": 6,
-        "expira": "2026-09-29",
-        "sursa": "csv_import"
-      }
-    ],
+    "zile_ramase": 99,
+    "promotii": [],
     "exclusiv": false,
     "platforma": "2performant",
     "ultima_verificare": "2026-09-23",
@@ -20296,14 +20267,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 289,
+    "zile_ramase": 288,
     "promotii": [
       {
         "nume": "10% reducere pe tot site-ul e-Potion.ro",
         "descriere": "Folosește codul EPOTION10 și primești 10% reducere pe valoarea totală a coșului, pe tot site-ul e-Potion.ro.\nSute de arome, lichide, dispozitive și accesorii — de la branduri proprii până la cele mai cunoscute nume internaționale.\nLivrare în 24/48h în toată țara, iar comenzile plasate până la ora 15:00 (luni–vineri) se expediază în aceeași zi.\nExcepții: categoria IQOS, kiturile Veev Inprim și produsele aflate deja la promoție.\nFără dată de expirare — codul este valabil permanent.",
         "cod_cupon": "epotion10",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fe-potion.ro",
-        "zile_ramase": 289,
+        "zile_ramase": 288,
         "expira": "2027-07-09",
         "sursa": "csv_import"
       }
@@ -20481,14 +20452,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 6,
+    "zile_ramase": 5,
     "promotii": [
       {
         "nume": "Inapoi la gradinita cu Editura Diana!",
         "descriere": "Campania „Înapoi la grădiniță!” vine în întâmpinarea educatorilor, cadrelor didactice și părinților cu o selecție de resurse educaționale pentru un început de an școlar bine pregătit.\n\nPe perioada campaniei, sunt disponibile reduceri de până la -60% la resurse didactice, auxiliare aprobate și caiete educaționale.\n\nIar pentru pachetele de auxiliare, pregătim un beneficiu în plus: la achiziționarea oricărui pachet de auxiliare, fiecare copil primește o jucărie cadou, în limita stocului disponibil.",
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.edituradiana.ro%2Fauxiliare-aprobate-si-caiete-educationale",
-        "zile_ramase": 6,
+        "zile_ramase": 5,
         "expira": "2026-09-29",
         "sursa": "csv_import"
       }
@@ -21841,14 +21812,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 22,
+    "zile_ramase": 21,
     "promotii": [
       {
         "nume": "Provocarea parului sanatos – Întoarcerea la rutina de toamnă",
         "descriere": "Toamna este sezonul tratamentelor pentru toate tipurile de par, mai ales cel slabit, uscat si deteriorat. Tot în această perioadă sensibilitatea scalpului este mai ridicată și ca urmare avem cadere excesiva a parului si senzatii de discomfort. Dacă dorești ca părul tău să fie frumos și sănătos - asigura-i creștere și forta, de la radacini pana la varfuri. Cauta produsele ce conțin ingrediente hrănitoare și reparatoare precum ulei de argan, keratină și vitamine, pentru un păr mai puternic, strălu",
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.estel.ro%2Fro%2Fpromotions%2Fprovocarea-parului-sanatos-intoarcerea-la-rutina-de-toamna",
-        "zile_ramase": 22,
+        "zile_ramase": 21,
         "expira": "2026-10-15",
         "sursa": "csv_import"
       }
@@ -22826,14 +22797,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 6,
+    "zile_ramase": 5,
     "promotii": [
       {
         "nume": "Promotie -33% Mai - Septembrie pentru oricare 2 produse identice de la Melegatti Pharma",
         "descriere": "Promotie -33% reducere in lunie Mai - Septembrie pentru oricare 2 produse identice de la Melegatti Pharma, nu este necesara aplicarea unui voucher pentru aceasta promotie.",
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.zephyrlabs.ro%2Fpromo-ianuarie-aprilie",
-        "zile_ramase": 6,
+        "zile_ramase": 5,
         "expira": "2026-09-29",
         "sursa": "csv_import"
       }
@@ -23536,14 +23507,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 98,
+    "zile_ramase": 97,
     "promotii": [
       {
         "nume": "15% Discount la fibrele de păr din cheratină pentru păr rar și chelie",
         "descriere": "Ai 15% reducere la fibrele de păr Hairify – soluția instant pentru a masca zonele cu păr rar sau chelie.\n\nCe sunt fibrele de păr?\nSunt microparticule din keratină naturală (exact proteina din care este compus și părul tău). Datorită unei încărcări electrostatice, ele se prind ca niște magneți microscopici de firele tale subțiri, îngroșându-le instantaneu. Scalpul devine invizibil, iar părul tău capătă un volum complet natural.\n\nDe ce este o ofertă de neratat?\n\n15% Discount la prima ta comandă.\n\n",
         "cod_cupon": "BL2016",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fhairify.ro%2Fproducts%2Fhairify-fibre-de-par",
-        "zile_ramase": 98,
+        "zile_ramase": 97,
         "expira": "2026-12-30",
         "sursa": "csv_import"
       }
@@ -23978,7 +23949,7 @@
         "descriere": "Profită acum de reduceri de până la 47% la încălțămintea din piele naturală pentru bărbați! Descoperă modele moderne, confortabile și rezistente, fabricate în România, potrivite atât pentru ținutele casual, cât și pentru cele elegante.\n\n✔ Reduceri de până la 47%\n✔ Piele naturală de calitate\n✔ Produse fabricate în România\n✔ Confort și durabilitate pentru purtare zilnică\n✔ Stocuri limitate la modelele aflate în promoție\nAlege perechea preferată și economisește acum!",
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.incaltamintelamoda.ro%2F",
-        "zile_ramase": 265,
+        "zile_ramase": 264,
         "expira": "2027-06-15",
         "sursa": "csv_import"
       },
@@ -24015,14 +23986,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 98,
+    "zile_ramase": 97,
     "promotii": [
       {
         "nume": "Promotii periodice",
         "descriere": "Preturi reduse, aceeasi calitate, profita de reducerile periodice la anumite produse! promotiile sunt in limita stocului disponibil si nu se cumuleaza cu alte oferte",
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fsofipex.ro%2Fcollections%2Fpromo%25C8%259Bii",
-        "zile_ramase": 98,
+        "zile_ramase": 97,
         "expira": "2026-12-30",
         "sursa": "csv_import"
       }
@@ -24075,14 +24046,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 6,
+    "zile_ramase": 5,
     "promotii": [
       {
         "nume": "5% Off Discount Code",
         "descriere": "Code: BLEAGUE5\nType: Amount off order\nDetails\n\n    All customers\n    For Online Store\n    5% off entire order\n    No minimum purchase requirement\n    One use per customer\n    Can’t combine with other discounts\n    Active from 29 Sept 2025 to 30 Sept",
         "cod_cupon": "BLEAGUE5",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.padelboost.co.uk%2Fdiscount%2FBLEAGUE5",
-        "zile_ramase": 6,
+        "zile_ramase": 5,
         "expira": "2026-09-29",
         "sursa": "csv_import"
       }
@@ -25435,14 +25406,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 98,
+    "zile_ramase": 97,
     "promotii": [
       {
         "nume": "Categoria cu Produse de Sezon la Reducere",
         "descriere": "Categoria cu Produse de Sezon la Reducere",
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F220-volti.ro%2Fsuper-oferte-de-sezon%2F",
-        "zile_ramase": 98,
+        "zile_ramase": 97,
         "expira": "2026-12-30",
         "sursa": "csv_import"
       }
@@ -25471,14 +25442,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 98,
+    "zile_ramase": 97,
     "promotii": [
       {
         "nume": "🔥Buy One, Get One Free Miniature",
         "descriere": "Double your adventure with our Deals 1+1 collection! Browse a selection of premium fantasy miniatures included in our Buy One, Get One Free promotion and grow your collection for even greater value.\n\nChoose your favorite heroes, monsters, dragons, and creatures, then receive another eligible miniature for free. It's the perfect opportunity to expand your tabletop collection, prepare for your next Dungeons &amp; Dragons campaign, or add more high-quality 3D printed miniatures to your painting pro",
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ffantasyforge.ro%2Fcollections%2Fpromo-1-1",
-        "zile_ramase": 98,
+        "zile_ramase": 97,
         "expira": "2026-12-30",
         "sursa": "csv_import"
       }
