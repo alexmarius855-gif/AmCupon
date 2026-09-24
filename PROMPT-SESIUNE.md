@@ -74,8 +74,9 @@ CONTINUĂM INTERFAȚA AmCupon. Macheta e în docs/design/macheta/amcupon-macheta
 
 Tema aleasă de mine: [DESCHISĂ / ÎNCHISĂ]
 
-STARE (23.09.2026 seara): pașii 1–3 FĂCUȚI (CuponCard + pagina de magazin cu și fără ofertă).
-Urmează pasul 4 (Acasă). Testul lib/oferta.test.mjs trebuie să treacă după orice atingere a cardului.
+STARE (24.09.2026): pașii 1–4 FĂCUȚI și publicați (CuponCard, pagina de magazin, Acasă).
+Urmează pasul 5 (tokenii temei în globals.css), după ce aleg tema. Testele lib/oferta.test.mjs și
+lib/oferteAcasa.test.mjs trebuie să treacă după orice atingere a cardului sau a primei pagini.
 
 Lucrează progresiv: o componentă pe rând, după fiecare `npm run build`,
 `python scripts/audit_pagini.py` și un screenshot; commit separat; push doar când îți spun.

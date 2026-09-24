@@ -12,7 +12,48 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
-**UPDATE 23.09.2026, partea a doua (interfata noua pe pagina de magazin + revizie adversariala — NEPUSHED):**
+**UPDATE 24.09.2026 (prima pagina noua + texte pentru afiliati scoase la sursa + garda reparata — PUSHED):**
+- **Pasul 4 din planul interfetei: prima pagina.** Hero pe doua coloane cu panoul „Acum, pe AmCupon"
+  (coduri / oferte fara cod / magazine — numarate din aceleasi oferte pe care le arata pagina) si cardul
+  „Codul zilei"; „Codurile zilei" pe OFERTE, cu CuponCard: filtrele Toate / Cu cod / Fara cod / Expira
+  curand (unul fara rezultate sau identic cu „Toate" nu apare) + „Filtre pe magazine" (vederea veche,
+  FiltreRapide + favorite, cu buton de intoarcere); „Magazine populare" (placi albe, insigna cu ce e activ).
+  Logica in `lib/oferteAcasa.ts` (functii pure), test `node lib/oferteAcasa.test.mjs` (dovedit ca pica).
+  Scoase: spotlight-ul „Oferta zilei" (e acum panoul), a doua „Magazine populare" (depox.ro pe locul 2) si
+  bara de statistici care numara MAGAZINE sub eticheta „oferte"/„coduri" (90/30 langa 188/49). Pastila din
+  hero numara acum ofertele, nu magazinele. Copierea trece prin `useCopyCod` + `RedirectModal`.
+- **Texte scrise pentru AFILIATI, afisate cumparatorului** (semnalat de Alex pe prima pagina): interlink.ro
+  „Promovează produsele Interlink și câștigă comisioane din fiecare vânzare validă", femieko.ro „Câștigă
+  premii și comision de 19%!", gl-inet.com „affiliates earn an increased commission". Retelele pun uneori in
+  campul promotiei descrierea PROGRAMULUI. `promotii.text_pentru_afiliati()` in `curata_promotii()` (merge +
+  import CSV, deci si newsletter/Telegram/postari): scoate promotia cand titlul e pentru afiliati sau e doar
+  numele magazinului, altfel scoate doar frazele. Tipare CONTEXTUALE: „fără comision" la o banca, „direct de
+  la editură", „20% off eligible sale items" raman. Pierdut constient: codul LWR40OFF (gl-inet) — tot textul
+  lui era pentru afiliati, iar un titlu nou ar fi fost inventat. Test `python scripts/test_promotii_afiliati.py`.
+- **Caractere stricate** (UTF-8 citit ca Latin-1): insotel „Jusqu'Ã 45 % de rÃ©duction", care iesea si
+  „-45%" in loc de „până la 45%". `repara_mojibake()` secventa cu secventa, DOAR cu semn sigur (caractere C1
+  sau „Ã©"): franceza corecta „ÉTÉ :" ar fi devenit „ɠ". Plus `**markdown**` brut (arabescu). Garzi noi in
+  `verifica_site.py` pentru toate trei, cu aceleasi functii (regula sta intr-un singur loc).
+- **REGRESIE PROPRIE, reparata**: din 22.09 `verifica_promotii.py`, ultimul pas din pipeline, iesea ROSU la
+  fiecare rulare — cerea contorul „real" (3.659 de zile) exact pentru datele pe care `curata_promotii()` le
+  trateaza, corect, ca necunoscute. Acum importa `PRAG_DATA_ABSURDA`. **Cand schimbi o regula in promotii.py,
+  cauta si garda care o verifica** — un pipeline mereu rosu ascunde problemele reale.
+- **Newsletter**: popup-ul, /newsletter si emailul de bun-venit promiteau „coduri exclusive inainte de toti",
+  „alerte instant" (ALERT_STORES nu exista in Brevo), „rezumat saptamanal top 5" (se trimite ZILNIC, cu cel
+  mult 12 oferte: 4 sectiuni x 3) si „peste 1000 de magazine". Rescrise pe ce face `send_newsletter.py`.
+  Title/description din /newsletter („coduri verificate saptamanal") — neatinse, decizia lui Alex (SEO).
+- **Recomandate**: `comision` si `oferta` din recomandate.json nu mai ajung in HTML-ul primei pagini (se
+  trimiteau ca props fara sa fie afisate).
+- **Datele din push** sunt curatate cu pasii pipeline-ului (curata_promotii, descrieri, blog, recomandate), ca
+  textul sa dispara odata cu codul. `nav-index.json` si `products.json` se regenereaza la urmatoarea rulare
+  (enrich_products_from_promos.py sterge vechile produse-promotie).
+- **Revizie**: 3 revizori + sceptic; revizorul UX a picat pe limita de sesiune (layout-ul l-am masurat in DOM
+  la 375 / 790 / 1440). 16 constatari: 6 confirmate, toate reparate; 10 respinse.
+- **Verificat**: tsc 0, eslint fara probleme noi, build 0, `lib/oferta.test.mjs` 0, `lib/oferteAcasa.test.mjs` 0,
+  `scripts/test_promotii_afiliati.py` 0, `verifica_promotii.py` OK, audit 1.751 / 1.762. `verifica_site.py` mai
+  semnaleaza doar cele 59 de produse sub 1 leu din feed (problema veche, de sursa).
+
+**UPDATE 23.09.2026, partea a doua (interfata noua pe pagina de magazin + revizie adversariala — PUSHED 24.09):**
 - **BUG DE BANI, vechi, gasit de revizie: fiecare dezvaluire de cod raporta „tab blocat".**
   `useCopyCod` facea `window.open(link, "_blank", "noopener,noreferrer")`, care dupa specificatia HTML
   intoarce MEREU `null` — deci `setRedirectFailed(true)` la 100% din clicuri. Modalul spunea „Browserul a
@@ -49,7 +90,7 @@ Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Pro
 - **Verificat**: tsc 0, eslint 0 pe toate fisierele atinse, build 0, test oferta 0, audit 1.752/1.763;
   vizual pe desktop si pe mobil 375px (incaltamintelamoda, jollymag, sevensins, sofiline).
 
-**UPDATE 23.09.2026 (audit pe TOATE paginile + macheta interfetei — NEPUSHED):**
+**UPDATE 23.09.2026 (audit pe TOATE paginile + macheta interfetei — PUSHED 24.09):**
 - **`scripts/audit_pagini.py`** (nou) trece prin fiecare pagina GENERATA (1.763, fara redirecturile
   `/reduceri/*`): pagini subtiri, sectiuni fara continut, undefined/NaN/„0 lei", titluri lipsa/duplicate/
   peste 60, `src` gol, carduri repetate. **859 → 1.717 pagini curate.** Ruleaza-l dupa orice schimbare vizuala.
@@ -75,7 +116,7 @@ Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Pro
   reale: acasa, magazin cu coduri, magazin FARA oferta (86% din pagini), cu tema deschisa si inchisa.
   **Planul de implementare, pas cu pas, e in `PROMPT-SESIUNE.md`**, sectiunea Interfata noua.
 
-**UPDATE 22.09.2026, partea a doua (homepage: ce vede omul in primele secunde — NEPUSHED):**
+**UPDATE 22.09.2026, partea a doua (homepage: ce vede omul in primele secunde — PUSHED):**
 - **Cel mai scump bug vizual de pana acum, si era LIVE.** Sub titlul „PRODUSE CU REDUCERE",
   homepage-ul deschidea **Auto-Moto cu o nacela cu senile IMER de 562.749 lei**, urmata de inca
   trei utilaje de constructii; Sport cu un cort de evenimente de 40.000 lei; Copii cu carucioare
@@ -123,7 +164,7 @@ Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Pro
   „masoara inainte sa tai", iar pe 08.08 doua sectiuni care pareau redundante s-au dovedit cu
   suprapunere ZERO. De facut cu masuratoare per sectiune, nu din ochi.
 
-**UPDATE 22.09.2026 (site care se verifica singur + a CINCEA reaparitie a fabricatiei — NEPUSHED):**
+**UPDATE 22.09.2026 (site care se verifica singur + a CINCEA reaparitie a fabricatiei — PUSHED):**
 - **Doua unelte noi, amandoua in pipeline:**
   1. **`scripts/verifica_site.py`** — garda care se uita la site ca INTREG (date + cele 1.752 de
      pagini generate) si **isi tine minte starea** in `data/stare-site.json`: la fiecare rulare scrie
