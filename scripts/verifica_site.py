@@ -170,8 +170,10 @@ def verifica_date() -> dict:
 
     # 5. Preturi sub 1 leu: in retailul online romanesc, unde transportul singur trece
     #    de 15 lei, sunt preturi unitare din bax, nu oferte. Afisate, dau „0 lei".
+    #    Regula e in reguli_produse.py, aceeasi pe care o aplica fetch_product_feeds.py.
+    from reguli_produse import pret_corupt
     sub1 = [f"{p.get('title','?')[:34]} ({p['price']} lei)" for p in produse
-            if 0 < (p.get("price") or 0) < 1]
+            if pret_corupt(p)]
     stare["produse_sub_1_leu"] = len(sub1)
     if len(sub1) > 40:
         semnaleaza("preturi corupte",

@@ -1282,6 +1282,18 @@ def main():
     if scoase_nelistate:
         print(f"  - magazine al caror feed nu mai e in My Feeds, scoase: {', '.join(scoase_nelistate)}")
 
+    # ── Preturi corupte (24.09.2026) ──────────────────────────────────────────
+    # Sub 1 leu nu e un pret de raft, e pretul unitar dintr-un bax („Prăjitură Be Supreme Dubai
+    # 36 g" la 0,81 lei). 59 de astfel de produse tineau paznicul rosu la fiecare rulare. Filtrul
+    # sta INAINTEA cotelor, ca locurile lor sa le ia produse reale, si prinde si produsele pastrate
+    # din rularile anterioare. Regula e in reguli_produse.py, comuna cu verifica_site.py.
+    from reguli_produse import pret_corupt
+    _corupte = [p for p in all_products if pret_corupt(p)]
+    if _corupte:
+        all_products = [p for p in all_products if not pret_corupt(p)]
+        print(f"  - scoase {len(_corupte)} produse cu pret sub 1 leu (pret unitar din bax), ex.: "
+              f"{'; '.join((p.get('title') or '?')[:32] for p in _corupte[:3])}")
+
     # ── Diversitate: max MAX_PER_MERCHANT per merchant, MAX_TOTAL impartit corect ──
     import random
     from collections import defaultdict

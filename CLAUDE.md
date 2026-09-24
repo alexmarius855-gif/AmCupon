@@ -22,6 +22,14 @@ Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Pro
   alertele si seria de bun-venit Brevo, Radarul (pagina `/radar`), paznicii.
 - Toate `git add`-urile din pasul de commit au `|| true`, deci pauza nu poate rupe push-ul. YAML validat, 48 de pasi.
 - Repornire: `"false"`, doar cu un canal real in spate (token FB nou sau cont IG configurat) — decizia lui Alex.
+- **Pipeline-ul iesea ROSU la fiecare rulare din cauza a 59 de produse sub 1 leu** (preturi unitare din
+  bax, de ex. „Prăjitură Be Supreme Dubai 36 g" la 0,81 lei). Un pipeline mereu rosu ascunde problemele
+  noi. Scoase la sursa, in `fetch_product_feeds.py`, INAINTEA cotelor pe magazin (locurile lor le iau
+  produse reale) si inclusiv din produsele pastrate de la rularile anterioare. Regula sta in
+  **`scripts/reguli_produse.py::pret_corupt()`**, importata SI de `verifica_site.py` — aceeasi lectie
+  ca la promotii: producatorul si paznicul citesc aceeasi functie. **Dovedit ca pica**: pe datele de azi
+  garda iese 1 cu „[preturi corupte] 59"; pe aceleasi date filtrate cu `pret_corupt` iese 0.
+  Local pe Windows, garda cere `PYTHONIOENCODING=utf-8` (altfel cade pe „──" in consola cp1252).
 
 **UPDATE 24.09.2026 (prima pagina noua + texte pentru afiliati scoase la sursa + garda reparata — PUSHED):**
 - **Pasul 4 din planul interfetei: prima pagina.** Hero pe doua coloane cu panoul „Acum, pe AmCupon"
