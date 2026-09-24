@@ -12,6 +12,17 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 24.09.2026, partea a doua (SOCIAL PE PAUZA — ceruta de Alex, „stoparea rularilor inutile"):**
+- `SOCIAL_PAUZA: "true"` in update-data.yml, langa `TELEGRAM_PAUZA`. Opreste 6 pasi din rularea completa:
+  continut social pe nise, uzina de continut social (10 postari + digest + carusel), bannere sociale,
+  Make.com, Facebook API, Instagram API. **Masurat pe rularea completa din 23.09: toti sase ieseau
+  „success" fara sa publice nimic** — Facebook are tokenul mort (cod 190), secretele Instagram nu exista,
+  Telegram e deja pe pauza. Uzina adauga ~1,4 MB de imagini/zi in istoricul git al repo-ului public.
+  Acelasi tipar ca fluxul video scos pe 09.09. **Raman pornite**: newsletterul (a trimis pe 23.09),
+  alertele si seria de bun-venit Brevo, Radarul (pagina `/radar`), paznicii.
+- Toate `git add`-urile din pasul de commit au `|| true`, deci pauza nu poate rupe push-ul. YAML validat, 48 de pasi.
+- Repornire: `"false"`, doar cu un canal real in spate (token FB nou sau cont IG configurat) — decizia lui Alex.
+
 **UPDATE 24.09.2026 (prima pagina noua + texte pentru afiliati scoase la sursa + garda reparata — PUSHED):**
 - **Pasul 4 din planul interfetei: prima pagina.** Hero pe doua coloane cu panoul „Acum, pe AmCupon"
   (coduri / oferte fara cod / magazine — numarate din aceleasi oferte pe care le arata pagina) si cardul

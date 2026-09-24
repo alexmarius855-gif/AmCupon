@@ -22,6 +22,13 @@ jobs:
       # postarea zilnica, pachetul din uzina de continut si alertele din health check. Codul ramane
       # reparat (HTML, fara „% succes"); pune "false" ca sa reporneasca.
       TELEGRAM_PAUZA: "true"
+      # PAUZA SOCIAL — ceruta de Alex pe 24.09.2026 („stoparea rularilor inutile”). Opreste cei 6 pasi
+      # care produc continut pentru canale care nu functioneaza: Facebook (token invalid, cod 190),
+      # Instagram (secretele nu exista), Make.com, plus generatoarele lor (continut pe nise, uzina de
+      # 10 postari + carusel, bannere) — ~1,4 MB de imagini/zi in istoricul git, postate de nimeni.
+      # Acelasi tipar ca fluxul video scos pe 09.09. Newsletterul si alertele Brevo raman pornite.
+      # Repornire: "false" (dupa ce exista un canal real in spate).
+      SOCIAL_PAUZA: "true"
 
     steps:
       # ── 1. Checkout ────────────────────────────────────────────────────────
@@ -383,7 +390,7 @@ jobs:
 
       # ── 11. Generator continut social media pe nise ────────────────────────
       - name: Genereaza continut social media pe nise
-        if: env.IS_FULL_DAILY == 'true'
+        if: env.IS_FULL_DAILY == 'true' && env.SOCIAL_PAUZA != 'true'
         continue-on-error: true
         working-directory: scripts
         run: python generate_social_content.py
@@ -414,7 +421,7 @@ jobs:
       # exista. Pastreaza doar ultimele 3 zile — altfel repo-ul (PUBLIC, ca sa aiba
       # Actions gratuite) ar creste cu ~1,4 MB in fiecare zi, permanent.
       - name: Uzina de continut social (10 postari + digest + carusel)
-        if: env.IS_FULL_DAILY == 'true'
+        if: env.IS_FULL_DAILY == 'true' && env.SOCIAL_PAUZA != 'true'
         continue-on-error: true
         working-directory: scripts
         env:
@@ -426,7 +433,7 @@ jobs:
       # ── 12. Genereaza bannere (Pillow) ────────────────────────────────────
       # Salveaza in data/ SI frontend/public/ (servit de Vercel)
       - name: Genereaza bannere sociale (Pillow)
-        if: env.IS_FULL_DAILY == 'true'
+        if: env.IS_FULL_DAILY == 'true' && env.SOCIAL_PAUZA != 'true'
         continue-on-error: true
         working-directory: scripts
         run: python generate_banner_auto.py
@@ -526,7 +533,7 @@ jobs:
       # ── 15a. Postare via Make.com webhook (NU necesita token Meta) ─────────
       # O singura postare/zi (dimineata). Post manual pranz/seara din Meta Suite daca vrei.
       - name: Postare automata via Make.com webhook (FB + IG)
-        if: env.IS_FULL_DAILY == 'true'
+        if: env.IS_FULL_DAILY == 'true' && env.SOCIAL_PAUZA != 'true'
         continue-on-error: true
         working-directory: scripts
         env:
@@ -540,7 +547,7 @@ jobs:
       # Alternativa la Make.com — necesita FACEBOOK_PAGE_TOKEN in Secrets
       # Cum obtii token: vezi scripts/SETUP-MAKE-COM.md sectiunea "Alternativa"
       - name: Postare automata Facebook Page (API direct)
-        if: env.IS_FULL_DAILY == 'true'
+        if: env.IS_FULL_DAILY == 'true' && env.SOCIAL_PAUZA != 'true'
         continue-on-error: true
         working-directory: scripts
         env:
@@ -551,7 +558,7 @@ jobs:
       # ── 15c. Postare directa Instagram API (daca ai token Meta) ──────────
       # Alternativa la Make.com — necesita INSTAGRAM_ACCESS_TOKEN in Secrets
       - name: Postare automata Instagram Business (API direct)
-        if: env.IS_FULL_DAILY == 'true'
+        if: env.IS_FULL_DAILY == 'true' && env.SOCIAL_PAUZA != 'true'
         continue-on-error: true
         working-directory: scripts
         env:
