@@ -15,33 +15,43 @@ import { areLinkAfiliat } from "@/lib/linkMagazin";
  * Romania, iar lista de top era scrisa de mana. Acum totul vine din date, prin `areLinkAfiliat`
  * (aceeasi functie ca pe restul site-ului).
  *
- * Datele se schimba in fiecare an: actualizeaza `BF`, cu sursa.
+ * Datele se schimba in fiecare an, intr-un singur loc: `public/black-friday.json`, pe care il
+ * citeste si newsletterul (scripts/send_newsletter.py).
  */
-const BF = {
-  an: 2026,
-  emag: "vineri, 6 noiembrie",
-  international: "27–30 noiembrie",
-  sursa:
-    "https://www.wall-street.ro/articol/ecommerce/emag-black-friday-2026-cand-are-loc-anul-acesta-campania-de-reduceri.html",
-};
+function incarcaBF() {
+  const d = JSON.parse(fs.readFileSync(path.join(process.cwd(), "public", "black-friday.json"), "utf-8"));
+  const zi = (iso: string, o: Intl.DateTimeFormatOptions) =>
+    new Intl.DateTimeFormat("ro-RO", { ...o, timeZone: "UTC" }).format(new Date(iso + "T00:00:00Z"));
+  const [start, final] = d.international as [string, string];
+  return {
+    an: d.an as number,
+    emag: zi(d.emag, { weekday: "long", day: "numeric", month: "long" }),
+    international: `${zi(start, { day: "numeric" })}–${zi(final, { day: "numeric", month: "long" })}`,
+    sursa: d.sursa as string,
+  };
+}
+
+const BF = incarcaBF();
 
 const MAX_CARDURI = 48;
 
+// „vineri, 6 noiembrie" -> „6 noiembrie", pentru descrierea scurtă din Google.
+const emagScurt = BF.emag.replace(/^[^,]+,\s*/, "");
+
 export const metadata: Metadata = {
-  title: "Black Friday 2026 România — Coduri Reducere & Oferte",
-  description:
-    "Black Friday 2026: eMAG pe 6 noiembrie, magazinele internaționale pe 27–30 noiembrie. Ofertele și codurile active acum la partenerii AmCupon, actualizate zilnic.",
+  title: `Black Friday ${BF.an} România — Coduri Reducere & Oferte`,
+  description: `Black Friday ${BF.an}: eMAG pe ${emagScurt}, magazinele internaționale pe ${BF.international}. Ofertele și codurile active acum la partenerii AmCupon, actualizate zilnic.`,
   keywords: [
-    "black friday romania 2026",
-    "black friday 2026 data",
+    `black friday romania ${BF.an}`,
+    `black friday ${BF.an} data`,
     "oferte black friday",
     "coduri reducere black friday",
     "voucher black friday",
   ],
   alternates: { canonical: "https://amcupon.ro/black-friday" },
   openGraph: {
-    title: "Black Friday 2026 România — Oferte & Coduri Reducere | AmCupon.ro",
-    description: "Datele Black Friday 2026 și ofertele active acum la magazinele partenere AmCupon.",
+    title: `Black Friday ${BF.an} România — Oferte & Coduri Reducere | AmCupon.ro`,
+    description: `Datele Black Friday ${BF.an} și ofertele active acum la magazinele partenere AmCupon.`,
     url: "https://amcupon.ro/black-friday",
     siteName: "AmCupon.ro",
     locale: "ro_RO",

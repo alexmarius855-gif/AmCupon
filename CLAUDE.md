@@ -43,6 +43,25 @@ Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Pro
   neschimbat**; description corectat doar pentru afirmatiile false.
 - `NewsletterCTA` (27 de pagini): „Top coduri de reducere verificate" → „Ofertele active, pe email, o
   data pe zi" — aceeasi afirmatie scoasa din rest pe 22.09, ramasa aici.
+- **Datele Black Friday intr-un singur loc: `frontend/public/black-friday.json`** (eMAG 2026-11-06,
+  international 27-30.11, cu sursa). Il citesc `/black-friday` (formateaza datele cu `Intl` ro-RO,
+  inclusiv in title/description) si `send_newsletter.py`. Se schimba o data pe an, doar acolo.
+- **Newsletterul (`send_newsletter.py`)**:
+  1. **Editia de Black Friday**: in saptamana dinainte de BF la eMAG (30.10-06.11) si in cea
+     internationala (23-30.11) apare un bloc cu data, nota „eMAG nu e partener AmCupon" (doar in
+     fereastra eMAG) si butonul spre `/black-friday`; ofertele care pomenesc Black Friday/Cyber Monday
+     trec in fata; subiectul devine „Black Friday la eMAG: N oferte active azi". `--azi AAAA-LL-ZZ`
+     simuleaza o zi, DOAR cu `--dry-run` (altfel refuza: o zi simulata nu pleaca la abonati).
+  2. **Onestitate, ramase dupa sweep-ul din 22.09** (erau variante: „verificate azi", „oferte
+     verificate", „verificate automat, zilnic"): preheader, antet si intro rescrise pe „active" /
+     „se actualizeaza de trei ori pe zi"; scos badge-ul „Verificat azi" (`ultima_verificare` e azi pe
+     TOATE magazinele); subiectul numara ofertele AFISATE (scria „Top 20" la un email cu 5) si nu mai
+     spune „ale saptamanii" la un email zilnic. Functia `_azi()` ramasa fara folosire, stearsa.
+  3. **Selectia: magazinele .ro intai**, apoi cele cu cod, apoi scorul. Masurat: primii 20 candidati
+     erau TOTI straini (11 hoteluri din Asia), iar emailul iesea cu 5 oferte; acum 9, toate romanesti.
+     Sectiunile nu mai re-sorteaza dupa scor (pastreaza ordinea din `pick_top_n`).
+  **Verificat**: `--dry-run` pe azi / 04.11 / 28.11 / 15.11 — blocul BF apare doar in ferestre, nota
+  eMAG doar in fereastra eMAG, „verificat" de 0 ori; randat in Edge si privit.
 - **Verificat**: tsc 0, eslint 0 pe fisierele atinse, `npm run build` 0 (2.737 de pagini, `/black-friday`
   statica); pe dev server: 90 de magazine / 187 oferte / 50 de coduri, FAQPage valid cu 4 intrebari
   identice cu textul vizibil, „verificat" de 0 ori, 1 footer, fara scroll orizontal la 1280 si 375 px.

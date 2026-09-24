@@ -1,5 +1,5 @@
 """
-send_newsletter.py — Trimite newsletter saptamanal cu oferte AmCupon.ro via Brevo.
+send_newsletter.py — Trimite newsletterul ZILNIC (la rularea completa de dimineata) cu ofertele active AmCupon.ro via Brevo.
 
 Utilizare:
   python send_newsletter.py                      # trimite la toti abonatiis din lista Brevo
@@ -103,7 +103,7 @@ def get_contacts() -> list:
         return []
 
 
-def pick_top_n(magazine: list, n: int = 20) -> list:
+def pick_top_n(magazine: list, n: int = 20, prioritar=None) -> list:
     """
     Selecteaza top N magazine cu promotii active.
     Structura reala output.json:
@@ -111,6 +111,8 @@ def pick_top_n(magazine: list, n: int = 20) -> list:
       m["cod_cupon"]      = bool (are macar un cod activ)
       m["scor_final"]     = int
       m["url_afiliat"]    = str (quicklink afiliere)
+    `prioritar` (optional): magazinele pentru care intoarce True trec in fata, in grupul lor
+    (in saptamana de Black Friday, ofertele care chiar pomenesc Black Friday).
     """
     def promotie_activa(m):
         return any(
@@ -124,16 +126,16 @@ def pick_top_n(magazine: list, n: int = 20) -> list:
             for p in m.get("promotii", [])
         )
 
-    cu_cod   = [m for m in magazine if cod_activ(m)]
-    fara_cod = [m for m in magazine if promotie_activa(m) and not cod_activ(m)]
-
-    cu_cod.sort(  key=lambda x: -x.get("scor_final", 0))
-    fara_cod.sort(key=lambda x: -x.get("scor_final", 0))
-
-    combined = cu_cod[:n]
-    if len(combined) < n:
-        combined += fara_cod[:n - len(combined)]
-    return combined[:n]
+    # Ordinea (24.09.2026): magazinele .ro intai, iar in fiecare grup cele cu cod inaintea
+    # celor fara, apoi scorul. Inainte, codurile veneau primele indiferent de tara: primii 20
+    # erau TOTI straini (11 hoteluri din Asia), iar emailul iesea cu 5 oferte, fiindca restul
+    # nu intrau in sectiuni. Aceeasi regula ca la „magazine similare" si pe /black-friday.
+    activi = [m for m in magazine if promotie_activa(m)]
+    activi.sort(key=lambda x: (not prioritar(x) if prioritar else False,
+                               not str(x.get("magazin", "")).endswith(".ro"),
+                               not cod_activ(x),
+                               -x.get("scor_final", 0)))
+    return activi[:n]
 
 
 def get_best_promo(m: dict) -> dict:
@@ -144,10 +146,6 @@ def get_best_promo(m: dict) -> dict:
     # Prefera cea cu cod cupon
     cu_cod = [p for p in promotii if p.get("cod_cupon")]
     return cu_cod[0] if cu_cod else promotii[0]
-
-
-def _azi() -> str:
-    return datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
 
 def extrage_reducere(m: dict) -> str:
@@ -176,7 +174,11 @@ def badge_onest(m: dict) -> tuple:
     in locul unde omul se astepta sa vada reducerea. Aceeasi greseala ("cashback
     fals") a fost eliminata din site pe 03.07.2026, dar supravietuise in newsletter.
 
-    Ordinea: reducere reala > cod real > verificat chiar azi > neutru.
+    Ordinea: reducere reala > cod real > neutru.
+
+    Scos 24.09.2026: badge-ul „Verificat azi" (cand `ultima_verificare` e azi). Pipeline-ul
+    pune data de azi pe TOATE magazinele la fiecare rulare, deci aparea pe orice card fara
+    reducere sau cod — iar codurile nu le testeaza nimeni. Pe site a fost inlocuit din 07.09.
     """
     disc = extrage_reducere(m)
     if disc:
@@ -186,11 +188,55 @@ def badge_onest(m: dict) -> tuple:
     if promo.get("cod_cupon"):
         return ("COD", "#14181c", "#ddf93c")
 
-    # "Verificat azi" doar daca data chiar e de azi — altfel e un semnal fals
-    if m.get("ultima_verificare") == _azi():
-        return ("Verificat azi", "#ecfdf5", "#047857")
-
     return ("Oferta activa", "#f1f5f9", "#475569")
+
+
+# ── Black Friday ──────────────────────────────────────────────────────────────
+# Datele stau intr-un singur loc, frontend/public/black-friday.json, citit si de pagina
+# /black-friday. Ferestrele: saptamana de dinainte de Black Friday la eMAG (campaniile incep
+# mai devreme) si saptamana Black Friday internationala, pana la Cyber Monday.
+BF_JSON = os.path.join(os.path.dirname(__file__), "../frontend/public/black-friday.json")
+ZILE_RO = ["luni", "marți", "miercuri", "joi", "vineri", "sâmbătă", "duminică"]
+
+
+def incarca_bf():
+    try:
+        with open(BF_JSON, encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return None
+
+
+def fereastra_bf(azi, bf):
+    """Intoarce (eticheta, data_afisata, fereastra) daca `azi` e intr-o saptamana de Black
+    Friday, altfel None. `azi` e un `date`."""
+    if not bf:
+        return None
+    from datetime import date as _date, timedelta
+    emag = _date.fromisoformat(bf["emag"])
+    i0, i1 = (_date.fromisoformat(x) for x in bf["international"])
+    if emag - timedelta(days=7) <= azi <= emag:
+        return ("Black Friday la eMAG",
+                f"{ZILE_RO[emag.weekday()]}, {emag.day} {LUNI_RO[emag.month - 1]}", "emag")
+    if i0 - timedelta(days=4) <= azi <= i1:
+        return ("Black Friday internațional",
+                f"{i0.day}–{i1.day} {LUNI_RO[i1.month - 1]}", "international")
+    return None
+
+
+def promo_black_friday(m: dict) -> bool:
+    """Magazin cu o oferta activa care chiar pomeneste Black Friday / Cyber Monday."""
+    import re as _re
+    return any(
+        p.get("zile_ramase", -1) >= 0 and _re.search(
+            r"black\s*friday|cyber\s*monday", f"{p.get('nume', '')} {p.get('descriere', '')}", _re.I)
+        for p in m.get("promotii", [])
+    )
+
+
+def entitati(text: str) -> str:
+    """Diacriticele ca entitati HTML, ca restul sablonului."""
+    return text.encode("ascii", "xmlcharrefreplace").decode("ascii")
 
 
 # Gruparea pe sectiuni tematice. Fiecare slug real din output.json intra intr-o
@@ -216,7 +262,7 @@ def grupeaza_pe_sectiuni(magazine: list, per_sectiune: int = 3) -> list:
             alese = [m for m in ramase if (m.get("categorie_slug") or "") in sluguri]
         else:
             alese = list(ramase)  # ultima sectiune ia tot ce a ramas
-        alese.sort(key=lambda x: -x.get("scor_final", 0))
+        # Fara re-sortare dupa scor: pastreaza ordinea din pick_top_n (.ro intai, cod, scor).
         alese = alese[:per_sectiune]
         if alese:
             rezultat.append((titlu, alese))
@@ -225,7 +271,8 @@ def grupeaza_pe_sectiuni(magazine: list, per_sectiune: int = 3) -> list:
     return rezultat
 
 
-def make_html(top_n: list, data_str: str, is_test: bool = False, total_magazine: int = 0) -> str:
+def make_html(top_n: list, data_str: str, is_test: bool = False, total_magazine: int = 0,
+              bf=None) -> str:
     """Newsletter HTML, structurat pe sectiuni tematice.
 
     Compatibilitate email (rescris 07.08.2026): TOT layout-ul e pe <table>, cu CSS
@@ -239,10 +286,13 @@ def make_html(top_n: list, data_str: str, is_test: bool = False, total_magazine:
 
     # ── Preheader: textul care apare in inbox dupa subiect ───────────────────
     nume_top = [m["magazin"].split(".")[0].capitalize() for _, lst in sectiuni for m in lst][:3]
+    # „Verificate" scos 24.09.2026: nimeni nu testeaza codurile in cos (aceeasi regula ca pe site).
     preheader = (
-        f"Coduri verificate azi de la {', '.join(nume_top)}"
-        if nume_top else "Coduri de reducere actualizate zilnic"
+        f"Ofertele active azi la {', '.join(nume_top)}"
+        if nume_top else "Ofertele active azi pe AmCupon.ro"
     )
+    if bf:
+        preheader = f"{bf[0]}: {bf[1]}. " + preheader
 
     def card(m: dict) -> str:
         logo   = m.get("logo_url", "")
@@ -338,6 +388,32 @@ def make_html(top_n: list, data_str: str, is_test: bool = False, total_magazine:
     sectiuni_html = "".join(sectiune(t, lst) for t, lst in sectiuni)
     year = datetime.now().year
 
+    bf_html = ""
+    if bf:
+        eticheta, data_bf, fereastra = bf
+        nota = ("eMAG nu e partener AmCupon, așa că ofertele lui sunt direct pe emag.ro. "
+                if fereastra == "emag" else "")
+        text_bf = ("Mai jos, ofertele active azi la magazinele partenere AmCupon. " + nota +
+                   "Lista completă e pe pagina de Black Friday.")
+        bf_html = f"""
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
+                   style="margin:18px 0 4px;">
+              <tr><td bgcolor="#14181c" style="background:#14181c;border-radius:12px;padding:16px 18px;">
+                <div style="font-family:Arial,sans-serif;font-size:12px;letter-spacing:1px;
+                     text-transform:uppercase;font-weight:bold;color:#ddf93c;">{entitati(eticheta)}</div>
+                <div style="font-family:Arial,sans-serif;font-size:19px;font-weight:bold;color:#ffffff;
+                     margin-top:4px;">{entitati(data_bf)}</div>
+                <div style="font-family:Arial,sans-serif;font-size:13px;color:#c9ced5;margin-top:6px;
+                     line-height:1.5;">{entitati(text_bf)}</div>
+                <div style="margin-top:12px;">
+                  <a href="{SITE_URL}/black-friday" target="_blank"
+                     style="font-family:Arial,sans-serif;font-size:13px;font-weight:bold;color:#14181c;
+                     background:#ddf93c;padding:9px 16px;border-radius:8px;text-decoration:none;
+                     display:inline-block;">Toate ofertele de Black Friday &rarr;</a>
+                </div>
+              </td></tr>
+            </table>"""
+
     test_banner = ""
     if is_test:
         test_banner = """
@@ -378,10 +454,10 @@ def make_html(top_n: list, data_str: str, is_test: bool = False, total_magazine:
                     style="color:#ffffff;font-family:Arial,sans-serif;font-weight:bold;font-size:20px;">&nbsp;Cupon.ro</span>
             </a>
             <div style="font-family:Arial,sans-serif;font-size:22px;font-weight:bold;color:#ffffff;margin-top:14px;">
-              Top oferte ale s&#259;pt&#259;m&#226;nii
+              Ofertele active azi
             </div>
             <div style="font-family:Arial,sans-serif;font-size:13px;color:#a7f3d0;margin-top:5px;">
-              {data_str} &bull; {total_oferte} oferte verificate
+              {data_str} &bull; {total_oferte} oferte active
             </div>
           </td>
         </tr>
@@ -391,8 +467,10 @@ def make_html(top_n: list, data_str: str, is_test: bool = False, total_magazine:
             {test_banner}
             <div style="font-family:Arial,sans-serif;font-size:14px;color:#334155;line-height:1.6;">
               Salut! Am grupat ofertele active pe categorii, ca s&#259; ajungi direct
-              la ce te intereseaz&#259;. Codurile sunt verificate automat, zilnic.
+              la ce te intereseaz&#259;. Lista se actualizeaz&#259; automat de trei ori pe zi,
+              iar ofertele expirate dispar.
             </div>
+            {bf_html}
             {sectiuni_html}
 
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
@@ -535,7 +613,12 @@ def main():
                         help="Numarul de oferte candidate pt grupare (default: 20)")
     parser.add_argument("--dry-run", metavar="FISIER", nargs="?", const="newsletter-preview.html",
                         help="Genereaza HTML-ul local si NU trimite nimic (default: newsletter-preview.html)")
+    parser.add_argument("--azi", metavar="AAAA-LL-ZZ",
+                        help="Simuleaza alta zi (doar cu --dry-run), ca sa vezi editia de Black Friday")
     args = parser.parse_args()
+    if args.azi and not args.dry_run:
+        print("[EROARE] --azi merge doar cu --dry-run: o zi simulata nu pleaca la abonati.")
+        sys.exit(1)
 
     # 1. Incarca date
     if not os.path.exists(OUTPUT_JSON):
@@ -545,14 +628,26 @@ def main():
     with open(OUTPUT_JSON, encoding="utf-8") as f:
         magazine = json.load(f)
 
-    top_n = pick_top_n(magazine, args.n)
+    now = datetime.now(timezone.utc)
+    if args.azi:
+        now = datetime.fromisoformat(args.azi).replace(tzinfo=timezone.utc)
+    bf = fereastra_bf(now.date(), incarca_bf())
+
+    top_n = pick_top_n(magazine, args.n, prioritar=promo_black_friday if bf else None)
     if not top_n:
         print("[WARN] Nicio promotie activa in output.json")
         sys.exit(0)
 
-    now      = datetime.now(timezone.utc)
     data_str = f"{now.day} {LUNI_RO[now.month - 1]} {now.year}"
-    subject  = f"Top {len(top_n)} oferte ale saptamanii ({data_str}) — AmCupon.ro"
+    # Subiectul numara ofertele AFISATE (max 4 sectiuni x 3), nu candidatii: scria „Top 20"
+    # pentru un email cu 12 oferte, si „ale saptamanii" pentru un email trimis zilnic.
+    afisate = sum(len(lst) for _, lst in grupeaza_pe_sectiuni(top_n, per_sectiune=3))
+    subject = (f"{bf[0]}: {afisate} oferte active azi — AmCupon.ro" if bf
+               else f"{afisate} oferte active azi ({data_str}) — AmCupon.ro")
+    if bf:
+        print(f"[INFO] Editie de Black Friday ({bf[0]}, {bf[1]}); "
+              f"{sum(1 for m in top_n if promo_black_friday(m))} oferte care pomenesc Black Friday")
+    print(f"[INFO] Subiect: {subject}")
 
     print(f"[INFO] Grupare pe sectiuni (top 3 / sectiune):")
     for titlu, lst in grupeaza_pe_sectiuni(top_n, per_sectiune=3):
@@ -563,7 +658,8 @@ def main():
             promo = get_best_promo(m)
             print(f"    {m['magazin']:<26} badge={b:<14} cod={promo.get('cod_cupon','-')}")
 
-    html_content = make_html(top_n, data_str, is_test=bool(args.test), total_magazine=len(magazine))
+    html_content = make_html(top_n, data_str, is_test=bool(args.test), total_magazine=len(magazine),
+                             bf=bf)
     text_content = make_text(top_n, data_str)
 
     if args.dry_run:
