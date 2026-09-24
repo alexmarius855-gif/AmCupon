@@ -1,13 +1,13 @@
 {
-  "generat": "2026-09-23",
-  "total_magazine": 961,
-  "cu_promotie": 92,
-  "cu_cod_real": 32,
-  "doar_oferta": 60,
-  "procent_cu_promotie": 9.6,
-  "procent_cu_cod": 3.3,
-  "reducere_mediana_generala": 20,
-  "magazine_cu_procent_declarat": 61,
+  "generat": "2026-09-24",
+  "total_magazine": 962,
+  "cu_promotie": 90,
+  "cu_cod_real": 31,
+  "doar_oferta": 59,
+  "procent_cu_promotie": 9.4,
+  "procent_cu_cod": 3.2,
+  "reducere_mediana_generala": 20.0,
+  "magazine_cu_procent_declarat": 60,
   "categorii": [
     {
       "slug": "carti-educatie",
@@ -19,21 +19,21 @@
       "esantion": 4
     },
     {
+      "slug": "electronice",
+      "nume": "Electronice & IT",
+      "magazine": 81,
+      "cu_promotie": 7,
+      "reducere_mediana": 27.5,
+      "reducere_max": 75,
+      "esantion": 6
+    },
+    {
       "slug": "marketplace",
       "nume": "Marketplace",
       "magazine": 196,
-      "cu_promotie": 13,
-      "reducere_mediana": 35,
-      "reducere_max": 60,
-      "esantion": 7
-    },
-    {
-      "slug": "electronice",
-      "nume": "Electronice & IT",
-      "magazine": 82,
-      "cu_promotie": 8,
+      "cu_promotie": 12,
       "reducere_mediana": 27.5,
-      "reducere_max": 75,
+      "reducere_max": 60,
       "esantion": 6
     },
     {
@@ -48,7 +48,7 @@
     {
       "slug": "beauty",
       "nume": "Beauty & îngrijire",
-      "magazine": 69,
+      "magazine": 70,
       "cu_promotie": 7,
       "reducere_mediana": 23,
       "reducere_max": 70,
@@ -57,7 +57,7 @@
     {
       "slug": "fashion",
       "nume": "Fashion",
-      "magazine": 81,
+      "magazine": 82,
       "cu_promotie": 11,
       "reducere_mediana": 20,
       "reducere_max": 70,
@@ -111,7 +111,7 @@
     {
       "slug": "bijuterii",
       "nume": "Bijuterii & ceasuri",
-      "magazine": 21,
+      "magazine": 20,
       "cu_promotie": 1,
       "reducere_mediana": null,
       "reducere_max": null,
@@ -127,15 +127,6 @@
       "esantion": 2
     },
     {
-      "slug": "cadouri-flori",
-      "nume": "Cadouri & flori",
-      "magazine": 11,
-      "cu_promotie": 1,
-      "reducere_mediana": null,
-      "reducere_max": null,
-      "esantion": 1
-    },
-    {
       "slug": "auto-moto",
       "nume": "Auto & moto",
       "magazine": 25,
@@ -145,9 +136,18 @@
       "esantion": 1
     },
     {
+      "slug": "cadouri-flori",
+      "nume": "Cadouri & flori",
+      "magazine": 11,
+      "cu_promotie": 1,
+      "reducere_mediana": null,
+      "reducere_max": null,
+      "esantion": 1
+    },
+    {
       "slug": "mancare-bauturi",
       "nume": "Mâncare & băuturi",
-      "magazine": 16,
+      "magazine": 17,
       "cu_promotie": 1,
       "reducere_mediana": null,
       "reducere_max": null,
