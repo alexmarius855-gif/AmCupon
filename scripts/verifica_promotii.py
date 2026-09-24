@@ -24,7 +24,7 @@ import os
 import re
 import sys
 
-from promotii import FARA_DATA, azi_utc, zile_pana_la
+from promotii import FARA_DATA, PRAG_DATA_ABSURDA, azi_utc, zile_pana_la
 
 PUBLIC = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "frontend", "public")
 IMPLICIT = os.path.join(PUBLIC, "output.json")
@@ -72,6 +72,11 @@ def verifica(magazine: list, azi: str) -> dict:
         promotii = [p for p in (m.get("promotii") or []) if isinstance(p, dict)]
         for p in promotii:
             zile = zile_pana_la(p.get("expira"), azi)
+            # Aceeasi regula ca curata_promotii: peste 3 ani, `expira` e un artefact de feed si se
+            # trateaza ca data necunoscuta (FARA_DATA). Fara linia asta garda pica din 22.09 pe
+            # fiecare rulare, cerand contorul „real" de 3.659 de zile pe care curatarea il scoate.
+            if zile is not None and zile > PRAG_DATA_ABSURDA:
+                zile = None
             eticheta = f"{slug}: {(p.get('nume') or '')[:50]}"
             if zile is None:
                 if p.get("zile_ramase") != FARA_DATA:
