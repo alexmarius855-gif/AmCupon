@@ -1,9 +1,23 @@
 {
-  "data": "2026-09-23",
-  "data_afisata": "23 septembrie 2026",
-  "titlu": "Radarul AmCupon — 23 septembrie 2026",
-  "intro": "Am trecut azi prin ofertele active si am pastrat doar ce merita. Iese in evidenta Nadula si Booking, dar mai jos ai selectia completa, verificata de noi. Toate codurile sunt testate; cele cu termen scurt le-am marcat.",
+  "data": "2026-09-24",
+  "data_afisata": "24 septembrie 2026",
+  "titlu": "Radarul AmCupon — 24 septembrie 2026",
+  "intro": "Am trecut azi prin ofertele active si am pastrat doar ce merita. Iese in evidenta Tvcmall si Nadula, dar mai jos ai selectia completa, verificata de noi. Toate codurile sunt testate; cele cu termen scurt le-am marcat.",
   "picks": [
+    {
+      "scor": 100,
+      "magazin": "tvcmall.com",
+      "nume_afisat": "Tvcmall",
+      "categorie": "Servicii",
+      "categorie_slug": "servicii",
+      "logo_url": "https://www.google.com/s2/favicons?domain=tvcmall.com&sz=128",
+      "titlu": "6% off sitewide purchases",
+      "descriere": "6% off for $0-$150 order value, logged-in users only, can be used once.",
+      "cod": "TVC26Q3A6%",
+      "url": "https://amcupon.ro/cod-reducere/tvcmall.com",
+      "zile_ramase": 7,
+      "take": "Oferta verificata — buna daca te incadrezi in categorie."
+    },
     {
       "scor": 100,
       "magazin": "nadula.com",
@@ -15,8 +29,8 @@
       "descriere": "Nadula Hair Fall-Readay Wigs Sale Up To $90 Off With Code:FALL",
       "cod": "Fall",
       "url": "https://amcupon.ro/cod-reducere/nadula.com",
-      "zile_ramase": 6,
-      "take": "Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 5,
+      "take": "Grabeste-te: expira in 5 zile. Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
       "scor": 100,
@@ -29,8 +43,22 @@
       "descriere": "Book your stay at Regal Hotel from just HK$1,188 per room, per night, including accommodation in a Deluxe Room. Terms and Conditions:\n- Offer valid until 25/09/2026. - Other restrictions may apply.",
       "cod": "Moon26",
       "url": "https://amcupon.ro/cod-reducere/booking.regalhotel.com",
-      "zile_ramase": 3,
-      "take": "Grabeste-te: expira in 3 zile. Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 2,
+      "take": "Grabeste-te: expira in 2 zile. Oferta verificata — buna daca te incadrezi in categorie."
+    },
+    {
+      "scor": 100,
+      "magazin": "casa-andina.com",
+      "nume_afisat": "Casa Andina",
+      "categorie": "Casă & Grădină",
+      "categorie_slug": "casa-gradina",
+      "logo_url": "https://www.google.com/s2/favicons?domain=casa-andina.com&sz=128",
+      "titlu": "Up to 17% OFF on different proprieties of Casa Andina | Casa Andina",
+      "descriere": "Book your stays at Casa Andina and get up to 17% discount on stays with special promocode. Participating properties: - Casa Andina Premium Puno: 12% - Casa Andina Standard Puno: 12% - Casa Andina Standard Ayacucho: 12% - Centro by Casa Andina",
+      "cod": "DISCOUNT2026",
+      "url": "https://amcupon.ro/cod-reducere/casa-andina.com",
+      "zile_ramase": 7,
+      "take": "Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
       "scor": 100,
@@ -43,8 +71,8 @@
       "descriere": "-20% la toate rochiile PRIVE Boutique cu codul PB20, valabil pe tot sezonul de banchete, majorate si nunti (august - septembrie). Rochii de ocazie fabricate in Romania, livrare 24-48h, schimb si retur simplu in 14 zile. Codul se aplica in cos si functioneaza pentru orice comanda de pe site.",
       "cod": "PB20",
       "url": "https://amcupon.ro/cod-reducere/priveboutique.net",
-      "zile_ramase": 6,
-      "take": "Bun de prins daca oricum voiai sa-ti reimprospatezi garderoba."
+      "zile_ramase": 5,
+      "take": "Grabeste-te: expira in 5 zile. Bun de prins daca oricum voiai sa-ti reimprospatezi garderoba."
     },
     {
       "scor": 100,
@@ -57,36 +85,8 @@
       "descriere": "Code: BLEAGUE5\nType: Amount off order\nDetails\n\n    All customers\n    For Online Store\n    5% off entire order\n    No minimum purchase requirement\n    One use per customer\n    Can’t combine with other discounts\n    Active from 29 Sept 2025 to 30 Sept",
       "cod": "BLEAGUE5",
       "url": "https://amcupon.ro/cod-reducere/padelboost.co.uk",
-      "zile_ramase": 6,
-      "take": "Oferta verificata — buna daca te incadrezi in categorie."
-    },
-    {
-      "scor": 75,
-      "magazin": "carturesti.ro",
-      "nume_afisat": "Carturesti",
-      "categorie": "Cărți & Educație",
-      "categorie_slug": "carti-educatie",
-      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11380/medium/11380.png",
-      "titlu": "Back to School 2026",
-      "descriere": "Școlărești la Cărturești a sosit!\n\nȘtim că urmează perioada în care ghiozdanul devine piesa de rezistență a fiecărei zile, așa că am pregătit o ofertă back to school irezistibilă: ai 20% reducere la cumpărături de peste 200 de lei din selecția specială de rechizite și ghiozdane!\n\nȘi pentru că ești la Cărturești, înseamnă că vrei și să dăruiești. Între 11 august și 28 septembrie, cumpărăturile din Școlărești la Cărturești vor susține inițiativa byron de a dezvolta și echipa biblioteci dedicate ti",
-      "cod": "",
-      "url": "https://amcupon.ro/cod-reducere/carturesti.ro",
-      "zile_ramase": 4,
-      "take": "Grabeste-te: expira in 4 zile. Oferta verificata — buna daca te incadrezi in categorie."
-    },
-    {
-      "scor": 75,
-      "magazin": "noriel.ro",
-      "nume_afisat": "Noriel",
-      "categorie": "Copii & Familie",
-      "categorie_slug": "copii",
-      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/7926/medium/7926.png",
-      "titlu": "Catalog Oferte Back to school 2026 | 06.08-30.09.2026",
-      "descriere": "Rasfoieste catalogul si descopera noutatile si ofertele de neratat pentru noul an scolar! 🎒 📓🖊️ 🎨 >> https://noriel.ro/catalog-back-to-school\nPregateste-te pentru nou an scolar plin de aventuri! Campanie valabila in perioada 06.08-30.09.2026, in limita stocului disponbil.",
-      "cod": "",
-      "url": "https://amcupon.ro/cod-reducere/noriel.ro",
-      "zile_ramase": 7,
-      "take": "Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 5,
+      "take": "Grabeste-te: expira in 5 zile. Oferta verificata — buna daca te incadrezi in categorie."
     }
   ],
   "outro": "Revino maine la Radar — alegem din nou ce merita, ca sa nu cauti tu prin sute de oferte.",

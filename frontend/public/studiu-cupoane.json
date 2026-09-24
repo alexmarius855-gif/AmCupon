@@ -1,13 +1,13 @@
 {
   "generat": "2026-09-24",
-  "total_magazine": 962,
-  "cu_promotie": 90,
+  "total_magazine": 961,
+  "cu_promotie": 91,
   "cu_cod_real": 31,
-  "doar_oferta": 59,
-  "procent_cu_promotie": 9.4,
+  "doar_oferta": 60,
+  "procent_cu_promotie": 9.5,
   "procent_cu_cod": 3.2,
-  "reducere_mediana_generala": 20.0,
-  "magazine_cu_procent_declarat": 60,
+  "reducere_mediana_generala": 20,
+  "magazine_cu_procent_declarat": 61,
   "categorii": [
     {
       "slug": "carti-educatie",
@@ -22,10 +22,10 @@
       "slug": "electronice",
       "nume": "Electronice & IT",
       "magazine": 81,
-      "cu_promotie": 7,
-      "reducere_mediana": 27.5,
+      "cu_promotie": 8,
+      "reducere_mediana": 30,
       "reducere_max": 75,
-      "esantion": 6
+      "esantion": 7
     },
     {
       "slug": "marketplace",
@@ -75,7 +75,7 @@
     {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
-      "magazine": 125,
+      "magazine": 124,
       "cu_promotie": 13,
       "reducere_mediana": 10.0,
       "reducere_max": 70,
