@@ -96,6 +96,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const categoriiSluguri = [...new Set(magazine.map((m) => m.categorie_slug).filter(Boolean))];
 
+  // Destinatiile eSIM intra in sitemap DOAR cand sunt indexabile (scripts/genereaza_esim.py:
+  // termenii programelor confirmati de Alex + minim 4 furnizori cu pret proaspat). Pana atunci
+  // paginile exista, dar cu noindex — nu le cerem lui Google.
+  let esimDestinatii: string[] = [];
+  try {
+    const e = JSON.parse(fs.readFileSync(path.join(process.cwd(), "public", "esim-destinatii.json"), "utf-8"));
+    esimDestinatii = Object.entries((e.destinatii || {}) as Record<string, { indexabil?: boolean }>)
+      .filter(([, d]) => d.indexabil === true)
+      .map(([s]) => s);
+  } catch {
+    esimDestinatii = [];
+  }
+
   const intrari: MetadataRoute.Sitemap = [
     // ─── Pagini principale ───────────────────────────────────────────────────
     { url: BASE_URL,                             lastModified: ultimaModificare(BASE_URL), changeFrequency: "daily",   priority: 1.0 },
@@ -120,6 +133,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/flori`,                  lastModified: ultimaModificare(`${BASE_URL}/flori`), changeFrequency: "daily",   priority: 0.85 },
     { url: `${BASE_URL}/pescuit`,               lastModified: ultimaModificare(`${BASE_URL}/pescuit`), changeFrequency: "daily",   priority: 0.85 },
     { url: `${BASE_URL}/esim`,                  lastModified: ultimaModificare(`${BASE_URL}/esim`), changeFrequency: "weekly",  priority: 0.85 },
+    ...esimDestinatii.map((s) => ({
+      url: `${BASE_URL}/esim/${s}`, lastModified: ultimaModificare(`${BASE_URL}/esim/${s}`),
+      changeFrequency: "weekly" as const, priority: 0.8,
+    })),
     { url: `${BASE_URL}/calatorie`,              lastModified: ultimaModificare(`${BASE_URL}/calatorie`), changeFrequency: "daily",   priority: 0.8 },
     { url: `${BASE_URL}/electronice`,            lastModified: ultimaModificare(`${BASE_URL}/electronice`), changeFrequency: "daily",   priority: 0.85 },
     { url: `${BASE_URL}/parfumuri`,              lastModified: ultimaModificare(`${BASE_URL}/parfumuri`), changeFrequency: "daily",   priority: 0.85 },

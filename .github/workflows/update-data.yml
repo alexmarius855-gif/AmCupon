@@ -473,6 +473,13 @@ jobs:
         working-directory: scripts
         run: python generate_studiu_cupoane.py
 
+      # ── Comparatorul eSIM pe destinatii (data/esim-preturi.csv, completat de mana) ──
+      # Zilnic, ca preturile mai vechi de 45 de zile sa dispara singure de pe pagini.
+      - name: Comparatorul eSIM pe destinatii
+        continue-on-error: true
+        working-directory: scripts
+        run: python genereaza_esim.py
+
       - name: Calculeaza lastModified real pentru sitemap
         continue-on-error: true
         working-directory: scripts
@@ -488,6 +495,7 @@ jobs:
           git add frontend/public/sitemap-dates.json   || true
           git add frontend/public/studiu-cupoane.json  || true
           git add frontend/public/istoric-promotii.json || true
+          git add frontend/public/esim-destinatii.json  || true
           git add data/sitemap_fingerprints.json       || true
           git add data/extra_merchants.json            || true
           git add frontend/public/digest-today.json    || true
