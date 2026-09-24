@@ -175,7 +175,7 @@ interface BlogPost {
 interface HomeClientProps {
   magazine: Magazin[];
   blogPosts: BlogPost[];
-  recomandate: { magazin: string; nume: string; logo_url: string; categorie: string; comision: number; are_cod: boolean; oferta: string }[];
+  recomandate: { magazin: string; nume: string; logo_url: string; categorie: string; are_cod: boolean }[];
   produseCategorii: ProdusCategorie[];
   astazi: string;
 }

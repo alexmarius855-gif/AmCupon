@@ -83,7 +83,13 @@ function doarCeFolosesteHomepage(lista: Record<string, unknown>[]): Magazin[] {
 export default function Page() {
   const magazine = doarCeFolosesteHomepage(readJSON<Record<string, unknown>[]>("output.json", []));
   const blogAll = readJSON<Parameters<typeof HomeClient>[0]["blogPosts"]>("blog-latest.json", []);
-  const recomandate = readJSON<Parameters<typeof HomeClient>[0]["recomandate"]>("recomandate.json", []);
+  // Doar ce afiseaza sectiunea „Recomandate". Fisierul are si `comision` si `oferta` (textul
+  // retelei, uneori scris pentru afiliati: „Câștigă premii și comision de 19%!") — nu se
+  // afisau, dar ajungeau in HTML-ul paginii. Aceeasi regula ca CAMPURI_NEFOLOSITE.
+  const recomandate = (readJSON<Record<string, unknown>[]>("recomandate.json", []) || []).map((r) => ({
+    magazin: String(r.magazin ?? ""), nume: String(r.nume ?? ""), logo_url: String(r.logo_url ?? ""),
+    categorie: String(r.categorie ?? ""), are_cod: Boolean(r.are_cod),
+  }));
   const produseCategorii = buildProduseCategorii();
 
   // Server Component, randat o singura data per request/ISR — Date.now() aici e sigur
