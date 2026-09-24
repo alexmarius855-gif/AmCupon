@@ -31,18 +31,26 @@ extension/
 
 ## Cum functioneaza
 
-1. **La instalare**: service worker-ul descarca `https://amcupon.ro/output.json`
+1. **La instalare**: service worker-ul descarca `https://amcupon.ro/extensie.json` (~43 KB: doar
+   magazinele cu oferta activa, cu linkul calculat pe server de `scripts/genereaza_extensie.py`)
 2. **Cache**: datele sunt stocate in `chrome.storage.local`, TTL = 6 ore
-3. **La click pe iconica**: popup-ul detecteaza domeniul tab-ului activ
-4. **Matching**: compara domeniul cu `magazin` + `url_real` din output.json
-5. **Afiseaza**: cod cupon + promotie + cashback + link afiliat
+3. **La click pe iconica**: popup-ul citeste domeniul tab-ului activ
+4. **Potrivire**: EXACTA pe domeniu sau subdomeniu (`potrivire.js`), niciodata pe subsir
+5. **Afiseaza**: ofertele active, codul cu buton de copiere, butonul spre oferta (link de afiliere,
+   doar la clic) si nota de afiliere. Fara oferta: niciun link spre magazin.
+
+**v1.1 (24.09.2026)** a scos din ciorna din 26.05 comisionul afisat ca „Cashback”, stelele din scorul
+intern, potrivirea pe subsir si linkul de afiliere la magazinele fara oferta (regula Chrome Web Store
+din 11.03.2025). Test: `node extension/test_potrivire.cjs`.
 
 ## Chrome Web Store
 
-**Status:** In review (1-3 zile lucratoare)
-**Link public:** https://chromewebstore.google.com/detail/mahfankpalkgognhnllkgdkjncmmkllb
+**Status:** NEPUBLICATA. Draft in consola din 26.05, niciodata trimis. Linkul de mai jos nu arata
+nicio extensie (verificat 24.09.2026: pagina nu contine „AmCupon”). Pasii de trimitere sunt in
+`store-assets/TEXTE-STORE-LISTING.md`.
+**Link (dupa publicare):** https://chromewebstore.google.com/detail/mahfankpalkgognhnllkgdkjncmmkllb
 **Developer console:** https://chrome.google.com/webstore/devconsole
 
 ## Environment
 
-Nu necesita variabile de mediu — datele vin public de pe `amcupon.ro/output.json`.
+Nu necesita variabile de mediu — datele vin public de pe `amcupon.ro/extensie.json`.

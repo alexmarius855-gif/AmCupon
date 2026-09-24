@@ -63,12 +63,17 @@ draw.rounded_rectangle([70, 90, 70 + 66, 90 + 46], radius=12, fill=INDIGO)
 draw.text((70 + 14, 90 + 8), "Am", font=font(24, True), fill=WHITE)
 draw.text((150, 96), "Cupon.ro", font=font(26, True), fill=WHITE)
 
-draw.text((70, 200), "Coduri de reducere,", font=font(52, True), fill=WHITE)
-draw.text((70, 265), "automat, la checkout", font=font(52, True), fill=INDIGO_DK if False else (129, 140, 248))
-draw.text((70, 360), "Extensia detecteaza magazinul pe care esti", font=font(24), fill=GRAY)
-draw.text((70, 395), "si iti arata codurile active — un click, copiat.", font=font(24), fill=GRAY)
+# 24.09.2026: textele din 03.07 promiteau „automat, la checkout" (extensia nu aplica niciun cod),
+# „Verificat zilnic" (nu testam codurile in cos) si „1000+ magazine partenere", pe un exemplu cu
+# coduri inventate pe emag.ro, care n-are program de afiliere la noi. Acum: exemplu REAL din
+# extensie.json, din ziua capturii, si doar promisiuni pe care extensia le tine.
+draw.text((70, 200), "Ofertele active,", font=font(52, True), fill=WHITE)
+draw.text((70, 265), "pe magazinul deschis", font=font(52, True), fill=(129, 140, 248))
+draw.text((70, 360), "Apeși pe iconiță și vezi ofertele și codurile active", font=font(24), fill=GRAY)
+draw.text((70, 395), "din rețelele de afiliere. Codul se copiază cu un clic.", font=font(24), fill=GRAY)
 
-for i, t in enumerate(["1000+ magazine partenere", "Verificat zilnic, automat", "Gratuit. Zero tracking personal."]):
+for i, t in enumerate(["Actualizate de trei ori pe zi", "Fără ofertă? Îți spune, nu te trimite nicăieri",
+                       "Gratuit. Nu urmărim navigarea"]):
     yy = 470 + i * 46
     draw.ellipse([70, yy + 4, 70 + 18, yy + 22], fill=CYAN)
     draw.text((102, yy), t, font=font(22), fill=WHITE)
@@ -88,30 +93,30 @@ draw.text((px + 20 + b[2] - b[0] + 2, py + 18), "Cupon", font=font(22, True), fi
 
 # site bar
 draw.rectangle([px, py + 64, px + pw, py + 96], fill=SLATE8)
-draw.text((px + 20, py + 71), "Site detectat:  emag.ro", font=font(15), fill=(226, 232, 240))
+draw.text((px + 20, py + 71), "Site:  jollymag.ro", font=font(15), fill=(226, 232, 240))
 
-# card cupon 1
-cy1 = py + 116
-draw.rounded_rectangle([px + 16, cy1, px + pw - 16, cy1 + 150], radius=12, fill=WHITE, outline=(229, 231, 235), width=2)
-draw.text((px + 32, cy1 + 14), "Saptamana Festivalului", font=font(19, True), fill=(17, 24, 39))
-draw.text((px + 32, cy1 + 44), "Reduceri la mii de produse", font=font(15), fill=(107, 114, 128))
-draw.rounded_rectangle([px + 32, cy1 + 76, px + 210, cy1 + 116], radius=8, outline=INDIGO, width=2)
-draw.text((px + 52, cy1 + 84), "FESTIVAL26", font=font(19, True), fill=INDIGO_DK)
-draw.rounded_rectangle([px + 226, cy1 + 76, px + pw - 32, cy1 + 116], radius=8, fill=INDIGO)
-draw.text((px + 252, cy1 + 84), "Copiaza codul", font=font(17, True), fill=WHITE)
+# magazinul si oferta — exemplu real din extensie.json, 24.09.2026
+draw.text((px + 20, py + 112), "Jollymag", font=font(20, True), fill=(17, 24, 39))
+draw.text((px + 20, py + 142), "O OFERTĂ ACTIVĂ", font=font(13, True), fill=(107, 114, 128))
+cy1 = py + 168
+draw.rounded_rectangle([px + 16, cy1, px + pw - 16, cy1 + 212], radius=12, fill=WHITE, outline=(229, 231, 235), width=2)
+draw.text((px + 32, cy1 + 14), "Reducere 10% la tot coșul", font=font(19, True), fill=(17, 24, 39))
+draw.text((px + 32, cy1 + 44), "Expiră pe 30.12.2026", font=font(15), fill=(107, 114, 128))
+draw.rounded_rectangle([px + 32, cy1 + 76, px + 250, cy1 + 116], radius=8, outline=(22, 163, 74), width=2)
+draw.text((px + 52, cy1 + 84), "JOLLY10", font=font(19, True), fill=(21, 128, 61))
+draw.rounded_rectangle([px + 262, cy1 + 76, px + pw - 32, cy1 + 116], radius=8, fill=(22, 163, 74))
+draw.text((px + 282, cy1 + 84), "Copiază", font=font(17, True), fill=WHITE)
+draw.rounded_rectangle([px + 32, cy1 + 132, px + pw - 32, cy1 + 176], radius=8, fill=INDIGO)
+draw.text((px + 92, cy1 + 142), "Mergi la magazin cu codul", font=font(17, True), fill=WHITE)
 
-# card cupon 2
-cy2 = cy1 + 170
-draw.rounded_rectangle([px + 16, cy2, px + pw - 16, cy2 + 150], radius=12, fill=WHITE, outline=(229, 231, 235), width=2)
-draw.text((px + 32, cy2 + 14), "-25% Gerovital H3", font=font(19, True), fill=(17, 24, 39))
-draw.text((px + 32, cy2 + 44), "Oferta verificata azi", font=font(15), fill=(107, 114, 128))
-draw.rounded_rectangle([px + 32, cy2 + 76, px + 210, cy2 + 116], radius=8, outline=INDIGO, width=2)
-draw.text((px + 66, cy2 + 84), "GERO25", font=font(19, True), fill=INDIGO_DK)
-draw.rounded_rectangle([px + 226, cy2 + 76, px + pw - 32, cy2 + 116], radius=8, fill=INDIGO)
-draw.text((px + 252, cy2 + 84), "Copiaza codul", font=font(17, True), fill=WHITE)
+# nota de afiliere, ca in popup-ul real
+for i, rand in enumerate(["Butoanele sunt linkuri de afiliere: dacă cumperi,",
+                          "AmCupon.ro primește un comision de la magazin,",
+                          "fără niciun cost în plus pentru tine."]):
+    draw.text((px + 20, py + 400 + i * 20), rand, font=font(13), fill=(107, 114, 128))
 
 # footer popup
-draw.text((px + 20, py + ph - 42), "Vezi toate ofertele pe amcupon.ro", font=font(14), fill=(107, 114, 128))
+draw.text((px + 20, py + ph - 42), "Toate ofertele Jollymag pe AmCupon.ro", font=font(14), fill=(79, 70, 229))
 
 out = OUT_DIR / "screenshot-1280x800.png"
 img.save(out, "PNG", optimize=True)

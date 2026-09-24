@@ -2,8 +2,8 @@
   "manifest_version": 3,
   "name": "AmCupon.ro — Coduri de reducere",
   "short_name": "AmCupon",
-  "version": "1.0.0",
-  "description": "Gaseste automat coduri de reducere si oferte pentru magazinul pe care il vizitezi.",
+  "version": "1.1.0",
+  "description": "Arata ofertele si codurile active din retelele de afiliere pentru magazinul pe care il vizitezi.",
   "icons": {
     "16":  "icons/icon16.png",
     "48":  "icons/icon48.png",

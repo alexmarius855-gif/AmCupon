@@ -473,6 +473,14 @@ jobs:
         working-directory: scripts
         run: python generate_studiu_cupoane.py
 
+      # ── Datele extensiei Chrome (frontend/public/extensie.json, ~43 KB) ──────────
+      # Doar magazinele cu oferta activa, cu linkul din link_oferta.link_iesire(). Extensia nu mai
+      # descarca output.json si nu-si mai calculeaza singura linkul (vezi genereaza_extensie.py).
+      - name: Datele extensiei Chrome
+        continue-on-error: true
+        working-directory: scripts
+        run: python genereaza_extensie.py
+
       # ── Comparatorul eSIM pe destinatii (data/esim-preturi.csv, completat de mana) ──
       # Zilnic, ca preturile mai vechi de 45 de zile sa dispara singure de pe pagini.
       - name: Comparatorul eSIM pe destinatii
@@ -496,6 +504,7 @@ jobs:
           git add frontend/public/studiu-cupoane.json  || true
           git add frontend/public/istoric-promotii.json || true
           git add frontend/public/esim-destinatii.json  || true
+          git add frontend/public/extensie.json         || true
           git add data/sitemap_fingerprints.json       || true
           git add data/extra_merchants.json            || true
           git add frontend/public/digest-today.json    || true

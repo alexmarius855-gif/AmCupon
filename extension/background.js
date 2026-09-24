@@ -1,9 +1,10 @@
 /**
  * Background Service Worker — AmCupon Extension
- * Descarca si cacheaza output.json zilnic.
+ * Descarca si cacheaza extensie.json (24.09.2026: ~43 KB, doar magazinele cu oferta activa si
+ * linkul calculat pe server de scripts/genereaza_extensie.py). Inainte: output.json, 856 KB.
  */
 
-const DATA_URL    = "https://amcupon.ro/output.json";
+const DATA_URL    = "https://amcupon.ro/extensie.json";
 const CACHE_KEY   = "amcupon_data";
 const CACHE_TS    = "amcupon_ts";
 const TTL_MS      = 6 * 60 * 60 * 1000; // 6 ore
@@ -17,7 +18,7 @@ async function fetchAndCache() {
       [CACHE_KEY]: data,
       [CACHE_TS]:  Date.now(),
     });
-    console.log(`[AmCupon] Date actualizate: ${data.length} magazine`);
+    console.log(`[AmCupon] Date actualizate: ${Object.keys(data.magazine || {}).length} magazine`);
     return data;
   } catch (err) {
     console.warn("[AmCupon] Fetch esuat:", err.message);
