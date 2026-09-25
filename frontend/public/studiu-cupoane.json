@@ -1,18 +1,18 @@
 {
-  "generat": "2026-09-24",
+  "generat": "2026-09-25",
   "total_magazine": 960,
-  "cu_promotie": 127,
+  "cu_promotie": 129,
   "cu_cod_real": 26,
-  "doar_oferta": 101,
-  "procent_cu_promotie": 13.2,
+  "doar_oferta": 103,
+  "procent_cu_promotie": 13.4,
   "procent_cu_cod": 2.7,
-  "reducere_mediana_generala": 25,
-  "magazine_cu_procent_declarat": 75,
+  "reducere_mediana_generala": 30.0,
+  "magazine_cu_procent_declarat": 78,
   "categorii": [
     {
       "slug": "beauty",
       "nume": "Beauty & îngrijire",
-      "magazine": 69,
+      "magazine": 70,
       "cu_promotie": 8,
       "reducere_mediana": 70,
       "reducere_max": 93,
@@ -22,10 +22,10 @@
       "slug": "carti-educatie",
       "nume": "Cărți & educație",
       "magazine": 30,
-      "cu_promotie": 10,
+      "cu_promotie": 12,
       "reducere_mediana": 60.0,
       "reducere_max": 90,
-      "esantion": 4
+      "esantion": 6
     },
     {
       "slug": "fashion",
@@ -40,7 +40,7 @@
       "slug": "electronice",
       "nume": "Electronice & IT",
       "magazine": 82,
-      "cu_promotie": 11,
+      "cu_promotie": 10,
       "reducere_mediana": 37.0,
       "reducere_max": 75,
       "esantion": 8
@@ -55,6 +55,15 @@
       "esantion": 7
     },
     {
+      "slug": "sanatate",
+      "nume": "Sănătate & farmacie",
+      "magazine": 50,
+      "cu_promotie": 11,
+      "reducere_mediana": 33,
+      "reducere_max": 50,
+      "esantion": 7
+    },
+    {
       "slug": "copii",
       "nume": "Copii & familie",
       "magazine": 28,
@@ -62,15 +71,6 @@
       "reducere_mediana": 30,
       "reducere_max": 30,
       "esantion": 3
-    },
-    {
-      "slug": "sanatate",
-      "nume": "Sănătate & farmacie",
-      "magazine": 50,
-      "cu_promotie": 10,
-      "reducere_mediana": 29.0,
-      "reducere_max": 50,
-      "esantion": 6
     },
     {
       "slug": "calatorii",
@@ -84,7 +84,7 @@
     {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
-      "magazine": 123,
+      "magazine": 122,
       "cu_promotie": 21,
       "reducere_mediana": 13.5,
       "reducere_max": 70,
