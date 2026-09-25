@@ -1,14 +1,5 @@
 [
  {
-  "magazin": "hairify.ro",
-  "nume": "Hairify",
-  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14301/medium/14301.png",
-  "categorie": "Beauty & Îngrijire",
-  "comision": 24.0,
-  "are_cod": true,
-  "oferta": "15% Discount la fibrele de păr din cheratină pentru păr rar și chelie"
- },
- {
   "magazin": "orbitmobile.com",
   "nume": "Orbitmobile",
   "logo_url": "https://www.google.com/s2/favicons?domain=orbitmobile.com&sz=128",
@@ -45,13 +36,13 @@
   "oferta": "Xmind 10% Off | XMIND10OFF"
  },
  {
-  "magazin": "priveboutique.net",
-  "nume": "Priveboutique",
-  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/1570/medium/1570.png",
-  "categorie": "Fashion",
-  "comision": 15.0,
-  "are_cod": true,
-  "oferta": "PB20 - Sezon banchet & majorat: -20% la toate rochiile PRIVE"
+  "magazin": "hairify.ro",
+  "nume": "Hairify",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14301/medium/14301.png",
+  "categorie": "Beauty & Îngrijire",
+  "comision": 24.0,
+  "are_cod": false,
+  "oferta": "15% Discount la fibrele de păr din cheratină pentru păr rar și chelie"
  },
  {
   "magazin": "outin.com",
@@ -70,6 +61,15 @@
   "comision": 14.0,
   "are_cod": true,
   "oferta": "Best Seller 25% off!"
+ },
+ {
+  "magazin": "intimax.ro",
+  "nume": "Intimax",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13590/medium/13590.png",
+  "categorie": "Marketplace",
+  "comision": 20.0,
+  "are_cod": false,
+  "oferta": "Reduceri tentante la toata gama de lenjerii "
  },
  {
   "magazin": "moftcollection.ro",
@@ -99,12 +99,12 @@
   "oferta": "Transport gratuit la orice comanda!"
  },
  {
-  "magazin": "e-potion.ro",
-  "nume": "E Potion",
-  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14406/medium/14406.jpg",
-  "categorie": "Sănătate & Farmacie",
-  "comision": 12.0,
+  "magazin": "tvcmall.com",
+  "nume": "Tvcmall",
+  "logo_url": "https://www.google.com/s2/favicons?domain=tvcmall.com&sz=128",
+  "categorie": "Servicii",
+  "comision": 11.0,
   "are_cod": true,
-  "oferta": "10% reducere pe tot site-ul e-Potion.ro"
+  "oferta": "6% off sitewide purchases"
  }
 ]
