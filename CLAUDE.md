@@ -12,6 +12,34 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 27.09.2026 (viteza, masurata fata de concurenta + Supabase pe pauza a 5-a oara):**
+- **Masurat cu Lighthouse 12 (mobil, aceleasi setari ca PageSpeed Insights)**, live, 27.09: prima pagina
+  AmCupon 65 / Cuponeria 90 / Cuponescu 85; pagina Notino 88 / 91 / 85. Accesibilitate: noi 99, ei 92-96.
+  SEO 69 pe Notino = doar `noindex` (pagina fara continut propriu — intentionat, vezi 16.08).
+- **Cauza 1, pe TOATE paginile: elementul LCP era bannerul de cookie-uri.** Pornea cu `visible=false` si
+  aparea abia dupa JavaScript + efect; pe mobil paragraful lui e cel mai mare bloc de text, deci LCP
+  4,4-5,3 s desi continutul aparea la 1,2-1,8 s. Acum e randat pe server; cine a raspuns deja primeste
+  `cc-ok` pe `<html>` din scriptul din `<head>` (layout.tsx), iar `html.cc-ok .cookie-banner{display:none}`
+  il ascunde inainte de prima pictare. **Nu-l face iar „client-only”** — asta era bug-ul.
+- **Cauza 2: biblioteci in browser.** `supabase-js` (auth + realtime nefolosite; 70 KiB transfer, 259 KiB
+  de JS) doar pentru recenzii -> `lib/supabaseRest.ts` (fetch catre PostgREST; RLS neschimbat; serverul
+  pastreaza `lib/supabase.ts`). `framer-motion` (47 KiB nefolositi) -> animatii CSS `am-pop/am-sus/am-fade/
+  am-modal` in globals.css. **Nu reintroduce nicio biblioteca in componentele paginii de magazin fara sa
+  masori** (`.next/static/chunks`, Lighthouse).
+- **Cauza 3, prima pagina: 538 KiB de magazine in HTML**, 388 KiB ale celor 832 fara oferta (link de
+  afiliere, URL, data verificarii — citite doar de cardurile magazinelor CU oferta). `page.tsx::
+  CAMPURI_FARA_OFERTA`: acestea trimit doar nume, logo, categorie, vanzari. index.html 1.143 -> 887 KiB.
+- **Rezultat, local, aceleasi conditii, inainte -> dupa**: magazin 75-80 -> **91-96** (LCP 4,4 -> 2,7-3,4 s,
+  TBT 240-390 -> 100-110 ms, JS 387 -> 236 KiB); prima pagina 64-71 -> **76-85** (LCP 5,1-5,3 -> 3,0-3,7 s,
+  total 919 -> 740 KiB). **De confirmat live** dupa deploy. Ramas pe prima pagina: TBT 360-500 ms
+  (2.026 de elemente in DOM, hidratarea lui HomeClient) — urmatoarea parghie, daca se reia.
+- **Supabase era din nou pe pauza (a 5-a oara), cu domeniul disparut din DNS** — recenziile si voturile nu
+  mergeau si nu semnala nimic. Repornit cu `restore_project`. **Pas nou 18 in update-data.yml**: o citire la
+  fiecare rulare il tine activ; la orice raspuns != 200 rularea iese ROSIE (dovedit pe o gazda inexistenta).
+- Verificat: tsc 0, eslint 0 erori in fisierele atinse, build 0, cele 3 teste 0, audit 1.751 / 1.762;
+  in browser: banner (nou / Refuz / revenire fara clipire, fara erori de hidratare), recenzii HTTP 200,
+  modalul cu un singur tab, taburile, `/api/vote` 200, cautarea unui magazin fara oferta.
+
 **UPDATE 24.09.2026, partea a patra (PAGINAREA PROMOTIILOR 2P reparata + SERIA LUNARA in studiu):**
 - **Bug major, prins din istoric:** `fetch_all_pages()` (fetch_2p_api.py) cauta paginarea doar in
   `metadata.pagination`, dar la `advertiser_promotions` raspunsul o are DIRECT in `pagination`. Cadea pe
