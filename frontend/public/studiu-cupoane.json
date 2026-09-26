@@ -1,5 +1,5 @@
 {
-  "generat": "2026-09-25",
+  "generat": "2026-09-26",
   "total_magazine": 961,
   "cu_promotie": 129,
   "cu_cod_real": 26,
@@ -48,7 +48,7 @@
     {
       "slug": "marketplace",
       "nume": "Marketplace",
-      "magazine": 196,
+      "magazine": 195,
       "cu_promotie": 15,
       "reducere_mediana": 35,
       "reducere_max": 60,
@@ -136,15 +136,6 @@
       "esantion": 1
     },
     {
-      "slug": "auto-moto",
-      "nume": "Auto & moto",
-      "magazine": 24,
-      "cu_promotie": 1,
-      "reducere_mediana": null,
-      "reducere_max": null,
-      "esantion": 1
-    },
-    {
       "slug": "cadouri-flori",
       "nume": "Cadouri & flori",
       "magazine": 11,
@@ -152,6 +143,15 @@
       "reducere_mediana": null,
       "reducere_max": null,
       "esantion": 2
+    },
+    {
+      "slug": "auto-moto",
+      "nume": "Auto & moto",
+      "magazine": 25,
+      "cu_promotie": 1,
+      "reducere_mediana": null,
+      "reducere_max": null,
+      "esantion": 1
     },
     {
       "slug": "animale",
