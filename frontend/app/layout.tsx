@@ -7,10 +7,11 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import AffiliateScript from "./components/AffiliateScript";
 import ConsentAnalytics from "./components/ConsentAnalytics";
 
-// CookieBanner + NewsletterPopup randeaza null pana la timer/scroll/exit-intent —
-// JS-ul lor nu trebuie sa faca parte din bundle-ul initial pe cele 2600+ pagini.
-// (ssr:false nu e permis din Server Component in Next 16 — codesplitting merge si fara,
-// componentele randeaza oricum null pe server pana la hidratare.)
+// NewsletterPopup randeaza null pana la timer/scroll/exit-intent — JS-ul lui nu trebuie sa faca
+// parte din bundle-ul initial pe cele 2600+ pagini. CookieBanner e tot incarcat separat, dar din
+// 27.09.2026 se randeaza pe SERVER (in HTML), iar cine a raspuns deja il are ascuns din <head> —
+// vezi comentariul din CookieBanner.tsx (era elementul LCP, la 4-5 s, pe toate paginile).
+// (ssr:false nu e permis din Server Component in Next 16 — codesplitting merge si fara.)
 const CookieBanner = dynamic(() => import("./components/CookieBanner"));
 const NewsletterPopup = dynamic(() => import("./components/NewsletterPopup"));
 import WebPushInit from "./components/WebPushInit";
@@ -149,13 +150,16 @@ export default function RootLayout({
     <html
       lang="ro"
       className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} h-full antialiased`}
+      // Scriptul din <head> poate adauga `cc-ok` inainte de hidratare (acordul cookie deja dat).
+      suppressHydrationWarning
     >
       <head>
         {/* Profitshare site verification */}
         {/* Impact.com website channel verification */}
         <meta name="impact-site-verification" content="3bab7acb-09ce-40a1-ae99-858dec676641" />
-        {/* Tema light unica — curata clasa dark ramasa in localStorage de la tema veche */}
-        <script dangerouslySetInnerHTML={{ __html: `(function(){try{document.documentElement.classList.remove('dark');localStorage.removeItem('theme')}catch(e){}})();` }} />
+        {/* Curata clasa dark ramasa de la tema veche. Si: cine a raspuns deja la cookie-uri primeste
+            `cc-ok` inainte de prima pictare, deci bannerul (randat pe server) nu clipeste deloc. */}
+        <script dangerouslySetInnerHTML={{ __html: `(function(){try{var d=document.documentElement;d.classList.remove('dark');localStorage.removeItem('theme');if(localStorage.getItem('cookie_consent'))d.classList.add('cc-ok')}catch(e){}})();` }} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}

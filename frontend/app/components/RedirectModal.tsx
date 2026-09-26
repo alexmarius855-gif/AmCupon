@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect } from "react";
-import { AnimatePresence, motion } from "framer-motion";
 import { CheckCircle2, ExternalLink, X } from "lucide-react";
 
 interface RedirectModalProps {
@@ -31,19 +30,14 @@ export default function RedirectModal({ open, onClose, storeName, redirectFailed
   }, [open, redirectFailed, onClose]);
 
   return (
-    <AnimatePresence>
+    <>
       {open && (
-        <motion.div
-          className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-4 bg-black/40"
-          initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+        <div
+          className="am-fade fixed inset-0 z-50 flex items-end sm:items-center justify-center p-4 bg-black/40"
           onClick={onClose}
         >
-          <motion.div
-            className="bg-[#14181c] border border-[#1f2329] rounded-xl p-5 max-w-sm w-full shadow-2xl"
-            initial={{ opacity: 0, y: 16, scale: 0.96 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 8, scale: 0.97 }}
-            transition={{ duration: 0.18 }}
+          <div
+            className="am-modal bg-[#14181c] border border-[#1f2329] rounded-xl p-5 max-w-sm w-full shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-start gap-3">
@@ -68,9 +62,9 @@ export default function RedirectModal({ open, onClose, storeName, redirectFailed
                 Mergi la {storeName} <ExternalLink className="w-3.5 h-3.5" />
               </button>
             )}
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       )}
-    </AnimatePresence>
+    </>
   );
 }

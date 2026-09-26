@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 import { Ticket, Tag, ShoppingBag, Star, ClipboardCopy, ShoppingCart, CheckCircle2, Mail, Flame, Bell } from "lucide-react";
 import PriceAlert from "../../components/PriceAlert";
 import ReviewSection from "./ReviewSection";
@@ -24,13 +23,12 @@ import { numeAfisat } from "@/lib/numeMagazin";
 function DealScoreBadge({ score }: { score: number }) {
   const displayed = score;
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }}
+    <div
       title="Scor calculat de AmCupon din reducere, cod, prospețime și exclusivitate — nu e un rating extern"
-      className="flex items-center gap-1.5 bg-[#1f2329] border border-[#ddf93c]/40 text-[#ecff7a] text-xs font-bold px-3 py-1.5 rounded-full"
+      className="am-pop flex items-center gap-1.5 bg-[#1f2329] border border-[#ddf93c]/40 text-[#ecff7a] text-xs font-bold px-3 py-1.5 rounded-full"
     >
       <Flame className="w-3.5 h-3.5" /> Deal Score {displayed}/100
-    </motion.div>
+    </div>
   );
 }
 
@@ -443,11 +441,11 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
             Continutul din tab-uri e indexat normal; `hidden` e si corect pentru cititoarele
             de ecran, care sar peste panourile inactive. */}
         {/* ─── TAB: CODURI ──────────────────────────────────────────────────── */}
-        <motion.div
+        {/* `am-fade` reporneste la fiecare afisare: animatia CSS se reia cand `hidden` dispare. */}
+        <div
           key="coduri" id="panou-coduri" role="tabpanel" aria-labelledby="tab-coduri"
           hidden={tabActiv !== "coduri"}
-          animate={{ opacity: tabActiv === "coduri" ? 1 : 0 }}
-          transition={{ duration: 0.15 }}
+          className="am-fade"
         >
             {cuCod.length > 0 ? (
               <section>
@@ -593,14 +591,13 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
               16.08.2026). Doua FAQ-uri pe aceeasi pagina nu se puteau mentine sincron:
               exact tiparul #3 din docs/LECTII-TEHNICE.md.
             */}
-          </motion.div>
+          </div>
 
         {/* ─── TAB: OFERTE ──────────────────────────────────────────────────── */}
-        <motion.div
+        <div
           key="oferte" id="panou-oferte" role="tabpanel" aria-labelledby="tab-oferte"
           hidden={tabActiv !== "oferte"}
-          animate={{ opacity: tabActiv === "oferte" ? 1 : 0 }}
-          transition={{ duration: 0.15 }}
+          className="am-fade"
         >
             {faraCodd.length > 0 ? (
               <section>
@@ -645,14 +642,13 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                 )}
               </div>
             )}
-          </motion.div>
+          </div>
 
         {/* ─── TAB: PRODUSE ─────────────────────────────────────────────────── */}
-        <motion.div
+        <div
           key="produse" id="panou-produse" role="tabpanel" aria-labelledby="tab-produse"
           hidden={tabActiv !== "produse"}
-          animate={{ opacity: tabActiv === "produse" ? 1 : 0 }}
-          transition={{ duration: 0.15 }}
+          className="am-fade"
         >
             {produse.length > 0 ? (
               <section>
@@ -680,17 +676,16 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                 )}
               </div>
             )}
-          </motion.div>
+          </div>
 
         {/* ─── TAB: RECENZII ────────────────────────────────────────────────── */}
-        <motion.div
+        <div
           key="recenzii" id="panou-recenzii" role="tabpanel" aria-labelledby="tab-recenzii"
           hidden={tabActiv !== "recenzii"}
-          animate={{ opacity: tabActiv === "recenzii" ? 1 : 0 }}
-          transition={{ duration: 0.15 }}
+          className="am-fade"
         >
             <ReviewSection magazin={m.magazin} />
-          </motion.div>
+          </div>
 
         {/* ── ISTORICUL OFERTELOR (server-rendered, 24.09.2026) ────────────
             Imediat sub taburi: pe pagina fara oferta (86% din vizite) e raspunsul la

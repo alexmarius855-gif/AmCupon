@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { getSupabase, Review } from "../../../lib/supabase";
+// Fara @supabase/supabase-js in browser (27.09.2026): vezi lib/supabaseRest.ts.
+import { citesteRecenzii, trimiteRecenzie, SUPABASE_KEY, type Review } from "../../../lib/supabaseRest";
 
 function Stele({ value, onChange }: { value: number; onChange?: (v: number) => void }) {
   const [hover, setHover] = useState(0);
@@ -30,7 +31,8 @@ function formatData(iso: string) {
 
 export default function ReviewSection({ magazin }: { magazin: string }) {
   const [reviews, setReviews]   = useState<Review[]>([]);
-  const [loading, setLoading]   = useState(true);
+  const disponibil = Boolean(SUPABASE_KEY);
+  const [loading, setLoading]   = useState(disponibil);
   const [stele, setStele]       = useState(0);
   const [nume, setNume]         = useState("");
   const [text, setText]         = useState("");
@@ -38,45 +40,34 @@ export default function ReviewSection({ magazin }: { magazin: string }) {
   const [eroare, setEroare]     = useState("");
   const [submitting, setSubmitting] = useState(false);
 
-  const sb = getSupabase();
-
   useEffect(() => {
-    if (!sb) { setLoading(false); return; }
-    sb
-      .from("reviews")
-      .select("id, magazin, nume, stele, text, created_at")
-      .eq("magazin", magazin)
-      .eq("aprobat", true)
-      .order("created_at", { ascending: false })
-      .limit(20)
-      .then(({ data }: { data: Review[] | null }) => {
-        setReviews(data || []);
-        setLoading(false);
-      });
-  }, [magazin, sb]);
+    if (!disponibil) return;
+    let anulat = false;
+    citesteRecenzii(magazin).then((data) => {
+      if (anulat) return;
+      setReviews(data);
+      setLoading(false);
+    });
+    return () => { anulat = true; };
+  }, [magazin, disponibil]);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setEroare("");
-    if (!sb) { setEroare("Recenziile nu sunt disponibile momentan."); return; }
+    if (!disponibil) { setEroare("Recenziile nu sunt disponibile momentan."); return; }
     if (stele === 0) { setEroare("Alege un rating (1-5 stele)."); return; }
     if (text.trim().length < 10) { setEroare("Scrie cel putin 10 caractere."); return; }
     setSubmitting(true);
-    const { error } = await sb.from("reviews").insert({
-      magazin,
-      nume: nume.trim() || "Anonim",
-      stele,
-      text: text.trim(),
-      aprobat: false,  // necesita moderare manuala in Supabase dashboard
-    });
+    // aprobat: false il pune trimiteRecenzie — moderare manuala in Supabase dashboard
+    const ok = await trimiteRecenzie({ magazin, nume: nume.trim() || "Anonim", stele, text: text.trim() });
     setSubmitting(false);
-    if (error) { setEroare("Eroare la trimitere. Incearca din nou."); return; }
+    if (!ok) { setEroare("Eroare la trimitere. Incearca din nou."); return; }
     setTrimis(true);
     setStele(0); setNume(""); setText("");
   }
 
   // Daca supabase nu e configurat, ascunde sectiunea complet
-  if (!sb) return null;
+  if (!disponibil) return null;
 
   const medieStele = reviews.length
     ? (reviews.reduce((s, r) => s + r.stele, 0) / reviews.length).toFixed(1)

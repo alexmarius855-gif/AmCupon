@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { AnimatePresence, motion } from "framer-motion";
 import { Clock, Flame, Truck, Heart, Copy } from "lucide-react";
 import { useCopyCod } from "../hooks/useCopyCod";
 import RedirectModal from "./RedirectModal";
@@ -221,16 +220,9 @@ export default function MagazinCard({ m, numeOverride, astazi, isFavorit, onTogg
             <div className="space-y-2">
               <div className="relative border border-dashed border-[#ddf93c]/60 rounded-xl py-2.5 text-center bg-[#ddf93c]/10">
                 <span className="font-mono font-black text-[#ecff7a] tracking-[0.2em] text-sm">{promo.cod_cupon}</span>
-                <AnimatePresence>
-                  {copiat && (
-                    <motion.p
-                      initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -4 }}
-                      className="text-[11px] font-bold text-emerald-400 mt-0.5"
-                    >
-                      ✓ Copiat!
-                    </motion.p>
-                  )}
-                </AnimatePresence>
+                {copiat && (
+                  <p className="am-sus text-[11px] font-bold text-emerald-400 mt-0.5">✓ Copiat!</p>
+                )}
               </div>
               <a href={dest} {...atributeExterne}
                 className="flex items-center justify-center w-full bg-gradient-to-r from-[#ddf93c] to-[#ddf93c] hover:from-[#ecff7a] hover:to-[#ddf93c] text-[#0c1000] hover:text-[#0c1000] font-bold py-2.5 rounded-xl text-sm transition-all shadow-lg shadow-[#ddf93c]/20">

@@ -219,3 +219,22 @@ a, button, [class*="hover:-translate"] {
 .pop-b{position:absolute;top:6px;right:6px;font-size:10.5px;font-weight:800;line-height:1.4;padding:1px 7px;border-radius:6px;background:#11140a;color:#ddf93c}
 .pop-b-soft{background:#eef0e8;color:#4e555c}
 }
+
+/* Bannerul de cookie-uri e in HTML pe fiecare pagina (27.09.2026); cine a raspuns deja are `cc-ok`
+   pe <html>, pus de scriptul din <head> inainte de prima pictare. In afara straturilor: trebuie sa
+   bata orice utilitar Tailwind de afisare. */
+html.cc-ok .cookie-banner { display: none; }
+
+/* Animatiile mici ale paginii de magazin si ale modalului, in CSS (27.09.2026). Inlocuiesc
+   framer-motion: 47 KiB de JavaScript nefolosit la incarcare, pe fiecare pagina de magazin.
+   Ruleaza si fara JavaScript (deci si in HTML-ul randat pe server) si deloc la „miscare redusa". */
+@keyframes am-pop { from { opacity: 0; transform: scale(.9); } to { opacity: 1; transform: none; } }
+@keyframes am-sus { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+@keyframes am-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes am-modal { from { opacity: 0; transform: translateY(16px) scale(.96); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: no-preference) {
+  .am-pop { animation: am-pop .3s ease-out both; }
+  .am-sus { animation: am-sus .2s ease-out both; }
+  .am-fade { animation: am-fade .15s ease-out both; }
+  .am-modal { animation: am-modal .18s ease-out both; }
+}
