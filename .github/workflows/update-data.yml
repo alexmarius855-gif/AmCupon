@@ -639,3 +639,24 @@ jobs:
               sleep $((i * 10))
             done
           fi
+
+      # ── 18. Baza de recenzii si voturi (Supabase) ─────────────────────────
+      # 27.09.2026: proiectul gratuit s-a pus singur pe pauza a CINCEA oara (dupa ~7 zile fara
+      # activitate) si nu s-a vazut nicaieri: recenziile si voturile nu mai mergeau, iar domeniul
+      # proiectului disparuse din DNS. O citire la fiecare rulare (de 3 ori pe zi) il tine activ;
+      # daca totusi cade, rularea iese ROSIE — se vede in aceeasi zi, nu dupa saptamani.
+      # URL-ul si cheia publica (anon, deja in pagina; protectia reala e RLS) se citesc din
+      # frontend/lib/supabaseRest.ts, ca sa nu existe o a doua copie care sa se desincronizeze.
+      - name: Supabase - tine baza de recenzii activa si verifica ca raspunde
+        if: always()
+        run: |
+          f=frontend/lib/supabaseRest.ts
+          url=$(grep -oE 'https://[a-z0-9]+\.supabase\.co' "$f" | head -1)
+          key=$(grep -oE 'eyJ[A-Za-z0-9._-]+' "$f" | head -1)
+          if [ -z "$url" ] || [ -z "$key" ]; then echo "::error::Nu gasesc URL-ul sau cheia in $f"; exit 1; fi
+          cod=$(curl -s -o /dev/null -w "%{http_code}" -m 30 "$url/rest/v1/reviews?select=id&limit=1" -H "apikey: $key" -H "Authorization: Bearer $key")
+          echo "Supabase /rest/v1/reviews: HTTP $cod"
+          if [ "$cod" != "200" ]; then
+            echo "::error::Supabase nu raspunde (HTTP $cod) — probabil pus pe pauza. Recenziile si voturile nu merg. Repornire: dashboard Supabase -> Restore project."
+            exit 1
+          fi
