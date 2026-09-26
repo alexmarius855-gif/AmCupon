@@ -1,5 +1,5 @@
 # 💰 TOP MAGAZINE după POTENȚIAL DE CÂȘTIG
-> Generat automat 25.09.2026 13:49. Pe astea să le împingi (articole, pin-uri, postări).
+> Generat automat 26.09.2026 13:33. Pe astea să le împingi (articole, pin-uri, postări).
 
 **Scor = comision × popularitate × ofertă.** Comisionul mare singur înșală — astea-s banii REALI.
 
@@ -19,8 +19,8 @@
 | 12 | Tvcmall (tvcmall.com) | 11% | 0 | ✅ COD | 22.0 |
 | 13 | Bcengi (bcengi.com) | 15% | 0 | 🏷️ ofertă | 21.0 |
 | 14 | Helloice (helloice.com) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 15 | Labelshop (labelshop.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 16 | Priveboutique (priveboutique.net) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 15 | Priveboutique (priveboutique.net) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 16 | Labelshop (labelshop.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
 | 17 | Curteaveche (curteaveche.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
 | 18 | Uniquestore (uniquestore.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
 | 19 | Cvlife (cvlife.com) | 10% | 0 | ✅ COD | 20.0 |

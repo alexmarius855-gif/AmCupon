@@ -1,7 +1,7 @@
 {
-  "data": "2026-09-25",
-  "data_afisata": "25 septembrie 2026",
-  "titlu": "Radarul AmCupon — 25 septembrie 2026",
+  "data": "2026-09-26",
+  "data_afisata": "26 septembrie 2026",
+  "titlu": "Radarul AmCupon — 26 septembrie 2026",
   "intro": "Am trecut azi prin ofertele active si am pastrat doar ce merita. Iese in evidenta Tvcmall si Nadula, dar mai jos ai selectia completa, verificata de noi. Toate codurile sunt testate; cele cu termen scurt le-am marcat.",
   "picks": [
     {
@@ -15,8 +15,8 @@
       "descriere": "6% off for $0-$150 order value, logged-in users only, can be used once.",
       "cod": "TVC26Q3A6%",
       "url": "https://amcupon.ro/cod-reducere/tvcmall.com",
-      "zile_ramase": 6,
-      "take": "Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 5,
+      "take": "Grabeste-te: expira in 5 zile. Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
       "scor": 100,
@@ -29,8 +29,8 @@
       "descriere": "Nadula Hair Fall-Readay Wigs Sale Up To $90 Off With Code:FALL",
       "cod": "Fall",
       "url": "https://amcupon.ro/cod-reducere/nadula.com",
-      "zile_ramase": 4,
-      "take": "Grabeste-te: expira in 4 zile. Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 3,
+      "take": "Grabeste-te: expira in 3 zile. Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
       "scor": 100,
@@ -43,22 +43,22 @@
       "descriere": "18% OFF Sitewide — Code: Fall18 $30 OFF Orders Over $155 — Code: Fall30 $55 OFF Orders Over $239 — Code: Fall55",
       "cod": "Fall18",
       "url": "https://amcupon.ro/cod-reducere/klaiyihair.com",
-      "zile_ramase": 7,
+      "zile_ramase": 6,
       "take": "Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
       "scor": 100,
-      "magazin": "booking.regalhotel.com",
-      "nume_afisat": "Booking",
+      "magazin": "original-group.com",
+      "nume_afisat": "Original Group",
       "categorie": "Călătorii",
       "categorie_slug": "calatorii",
-      "logo_url": "https://www.google.com/s2/favicons?domain=booking.regalhotel.com&sz=128",
-      "titlu": "Book your stay and get best price, Regal Hotels",
-      "descriere": "Book your stay at Regal Hotel from just HK$1,188 per room, per night, including accommodation in a Deluxe Room. Terms and Conditions:\n- Offer valid until 25/09/2026. - Other restrictions may apply.",
-      "cod": "Moon26",
-      "url": "https://amcupon.ro/cod-reducere/booking.regalhotel.com",
-      "zile_ramase": 1,
-      "take": "Grabeste-te: expira in 1 zi. Oferta verificata — buna daca te incadrezi in categorie."
+      "logo_url": "https://www.google.com/s2/favicons?domain=original-group.com&sz=128",
+      "titlu": "Save an extra 5% at Desire Riviera Maya Pearl Resort | Original Resorts",
+      "descriere": "Book your stay with Original Resorts and save an additional 5% on any room category at Desire Riviera Maya Pearl Resort. Terms and Conditions:\nBook by September 30th, 2026 Travel between August and December 2026 This promo code cannot be combined",
+      "cod": "EXTRA5",
+      "url": "https://amcupon.ro/cod-reducere/original-group.com",
+      "zile_ramase": 5,
+      "take": "Grabeste-te: expira in 5 zile. Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
       "scor": 100,
@@ -71,8 +71,8 @@
       "descriere": "Book your stays at Casa Andina and get up to 17% discount on stays with special promocode. Participating properties: - Casa Andina Premium Puno: 12% - Casa Andina Standard Puno: 12% - Casa Andina Standard Ayacucho: 12% - Centro by Casa Andina",
       "cod": "DISCOUNT2026",
       "url": "https://amcupon.ro/cod-reducere/casa-andina.com",
-      "zile_ramase": 6,
-      "take": "Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 5,
+      "take": "Grabeste-te: expira in 5 zile. Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
       "scor": 75,
@@ -85,8 +85,8 @@
       "descriere": "",
       "cod": "",
       "url": "https://amcupon.ro/cod-reducere/carturesti.ro",
-      "zile_ramase": 2,
-      "take": "Grabeste-te: expira in 2 zile. Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 1,
+      "take": "Grabeste-te: expira in 1 zi. Oferta verificata — buna daca te incadrezi in categorie."
     }
   ],
   "outro": "Revino maine la Radar — alegem din nou ce merita, ca sa nu cauti tu prin sute de oferte.",
