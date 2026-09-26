@@ -66,8 +66,21 @@ const CAMPURI_NEFOLOSITE = [
   "comision", "procent_succes", "folosit_de", "produse_in_feed", "sursa_import",
 ];
 
+// Pentru un magazin FARA oferta, prima pagina citeste doar numele (cautarea), logo-ul (peretele de
+// logo-uri, „Magazine populare"), categoria si vanzarile (ordinea categoriilor). Restul — linkul de
+// afiliere, URL-ul, data verificarii — ajungea degeaba in HTML: masurat 27.09.2026, 832 de magazine
+// fara oferta = 388 KiB din cei 538 ai listei. Campurile grele le citesc DOAR cardurile de magazin,
+// care apar numai pentru magazinele cu oferta (`cuPromotii`, `FiltreRapide`, „Reduceri mari azi").
+// Daca adaugi un loc care citeste alt camp pentru TOATE magazinele, adauga campul aici.
+const CAMPURI_FARA_OFERTA = ["magazin", "logo_url", "categorie_slug", "sales_number"];
+
 function doarCeFolosesteHomepage(lista: Record<string, unknown>[]): Magazin[] {
   return lista.map((m) => {
+    if (!Array.isArray(m.promotii) || m.promotii.length === 0) {
+      const mic: Record<string, unknown> = { are_promotie: false, promotii: [] };
+      for (const k of CAMPURI_FARA_OFERTA) if (m[k] !== undefined) mic[k] = m[k];
+      return mic as unknown as Magazin;
+    }
     const usor: Record<string, unknown> = { ...m };
     for (const k of CAMPURI_NEFOLOSITE) delete usor[k];
     if (Array.isArray(usor.promotii)) {
