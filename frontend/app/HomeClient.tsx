@@ -1042,10 +1042,12 @@ export default function HomeClient({
                         Vezi toate →
                       </button>
                     </div>
-                    {/* Scroll orizontal */}
+                    {/* Scroll orizontal. Primele 8 (27.09.2026): pe ecran incap 2 pe mobil si ~6 pe desktop,
+                        iar cele 64 de carduri (4 randuri x 16) erau 31% din toata pagina. Categoria
+                        completa ramane la un clic, pe „Vezi toate". */}
                     <div className="overflow-x-auto -mx-4 px-4 pb-2" style={{scrollbarWidth:"none"}}>
                       <div className="flex gap-3" style={{minWidth:"max-content"}}>
-                        {cat.products.map((p, i) => (
+                        {cat.products.slice(0, 8).map((p, i) => (
                           <a key={i} href={p.url} target="_blank" rel="sponsored noopener noreferrer"
                             className="group flex-shrink-0 w-44 bg-[#1f2329] border border-[#2a2f36] hover:border-[#ddf93c]/50 rounded-xl overflow-hidden hover:shadow-xl hover:shadow-black/40 hover:-translate-y-1 transition-all duration-200">
                             <div className="relative w-full aspect-square bg-[#2a2f36] overflow-hidden">

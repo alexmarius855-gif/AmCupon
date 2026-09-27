@@ -33,6 +33,14 @@ Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Pro
   TBT 240-390 -> 100-110 ms, JS 387 -> 236 KiB); prima pagina 64-71 -> **76-85** (LCP 5,1-5,3 -> 3,0-3,7 s,
   total 919 -> 740 KiB). **De confirmat live** dupa deploy. Ramas pe prima pagina: TBT 360-500 ms
   (2.026 de elemente in DOM, hidratarea lui HomeClient) — urmatoarea parghie, daca se reia.
+- **Prima pagina, pasul 2**: randurile „Produse pe categorii" arata primele 8 din 16 (cele 64 de carduri
+  erau 31% din pagina) — DOM 2.026 -> 1.770, index.html 887 -> 755 KiB; categoria intreaga ramane pe
+  „Vezi toate" / cardul „Toate X". Incercat si `content-visibility: auto` pe sectiunile de sub grila de
+  categorii: A/B intercalat, 3 perechi, fara diferenta masurabila (scor median 51 vs 49) — scos.
+- **Capcana de masurare**: Lighthouse local se compara DOAR in aceeasi fereastra de timp. Seara, cu alte
+  procese pornite, `environment.benchmarkIndex` a scazut de la ~2.500 la ~1.650, iar pagina Notino,
+  neatinsa de nicio schimbare, a cazut de la 91-96 la 66. Inainte de o concluzie: A/B intercalat sau
+  aceeasi valoare de `benchmarkIndex`; fisierele din `.next/static` se pot comuta fara rebuild.
 - **Supabase era din nou pe pauza (a 5-a oara), cu domeniul disparut din DNS** — recenziile si voturile nu
   mergeau si nu semnala nimic. Repornit cu `restore_project`. **Pas nou 18 in update-data.yml**: o citire la
   fiecare rulare il tine activ; la orice raspuns != 200 rularea iese ROSIE (dovedit pe o gazda inexistenta).
