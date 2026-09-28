@@ -1,13 +1,13 @@
 {
   "generat": "2026-09-28",
-  "total_magazine": 958,
-  "cu_promotie": 126,
+  "total_magazine": 961,
+  "cu_promotie": 130,
   "cu_cod_real": 26,
-  "doar_oferta": 100,
-  "procent_cu_promotie": 13.2,
+  "doar_oferta": 104,
+  "procent_cu_promotie": 13.5,
   "procent_cu_cod": 2.7,
   "reducere_mediana_generala": 25.0,
-  "magazine_cu_procent_declarat": 76,
+  "magazine_cu_procent_declarat": 80,
   "categorii": [
     {
       "slug": "carti-educatie",
@@ -21,7 +21,7 @@
     {
       "slug": "beauty",
       "nume": "Beauty & îngrijire",
-      "magazine": 71,
+      "magazine": 72,
       "cu_promotie": 8,
       "reducere_mediana": 70,
       "reducere_max": 93,
@@ -37,22 +37,22 @@
       "esantion": 11
     },
     {
+      "slug": "sanatate",
+      "nume": "Sănătate & farmacie",
+      "magazine": 49,
+      "cu_promotie": 10,
+      "reducere_mediana": 33,
+      "reducere_max": 50,
+      "esantion": 7
+    },
+    {
       "slug": "electronice",
       "nume": "Electronice & IT",
       "magazine": 84,
-      "cu_promotie": 10,
-      "reducere_mediana": 37.0,
+      "cu_promotie": 11,
+      "reducere_mediana": 30,
       "reducere_max": 75,
-      "esantion": 8
-    },
-    {
-      "slug": "marketplace",
-      "nume": "Marketplace",
-      "magazine": 195,
-      "cu_promotie": 15,
-      "reducere_mediana": 35,
-      "reducere_max": 60,
-      "esantion": 7
+      "esantion": 9
     },
     {
       "slug": "copii",
@@ -64,13 +64,13 @@
       "esantion": 3
     },
     {
-      "slug": "sanatate",
-      "nume": "Sănătate & farmacie",
-      "magazine": 49,
-      "cu_promotie": 10,
-      "reducere_mediana": 29.0,
-      "reducere_max": 50,
-      "esantion": 6
+      "slug": "marketplace",
+      "nume": "Marketplace",
+      "magazine": 195,
+      "cu_promotie": 17,
+      "reducere_mediana": 20,
+      "reducere_max": 60,
+      "esantion": 9
     },
     {
       "slug": "calatorii",
@@ -84,7 +84,7 @@
     {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
-      "magazine": 122,
+      "magazine": 123,
       "cu_promotie": 22,
       "reducere_mediana": 17,
       "reducere_max": 70,
@@ -138,8 +138,8 @@
     {
       "slug": "auto-moto",
       "nume": "Auto & moto",
-      "magazine": 24,
-      "cu_promotie": 1,
+      "magazine": 25,
+      "cu_promotie": 2,
       "reducere_mediana": null,
       "reducere_max": null,
       "esantion": 1

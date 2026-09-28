@@ -424,8 +424,8 @@
    "magazine": 126
   },
   "2026-09-28": {
-   "promotii": 247,
-   "magazine": 123
+   "promotii": 255,
+   "magazine": 127
   }
  },
  "magazine": {
@@ -875,6 +875,15 @@
    }
   ],
   "automobilus.ro": [
+   {
+    "k": "q4opportunitypromoveazastergatoareledeparbrizautomobilus|",
+    "titlu": "🚗 Q4 opportunity: Promovează ștergătoarele de parbriz Automobilus!",
+    "cod": false,
+    "prima": "2026-09-28",
+    "ultima": "2026-09-28",
+    "expira": "2026-11-04",
+    "activa": true
+   },
    {
     "k": "reducere20lavopseauapentruetrierefoliatecpastell|",
     "titlu": "Reducere 20% la Vopseaua pentru etriere FOLIATEC Pastell",
@@ -1868,18 +1877,27 @@
     "titlu": "Pachet de Grijă - Septembrie",
     "cod": false,
     "prima": "2026-09-24",
-    "ultima": "2026-09-27",
+    "ultima": "2026-09-28",
     "expira": "2026-09-29",
-    "activa": false
+    "activa": true
    },
    {
     "k": "oferteleluniiseptembrie|",
     "titlu": "Ofertele Lunii Septembrie",
     "cod": false,
     "prima": "2026-09-24",
-    "ultima": "2026-09-27",
+    "ultima": "2026-09-28",
     "expira": "2026-09-29",
-    "activa": false
+    "activa": true
+   },
+   {
+    "k": "back2schoolcumaxi|",
+    "titlu": "Back 2 School cu Maxi",
+    "cod": false,
+    "prima": "2026-09-24",
+    "ultima": "2026-09-28",
+    "expira": "2026-09-29",
+    "activa": true
    },
    {
     "k": "maxdaysmachiaj|",
@@ -1888,15 +1906,6 @@
     "prima": "2026-09-24",
     "ultima": "2026-09-27",
     "expira": "2026-09-27",
-    "activa": false
-   },
-   {
-    "k": "back2schoolcumaxi|",
-    "titlu": "Back 2 School cu Maxi",
-    "cod": false,
-    "prima": "2026-09-24",
-    "ultima": "2026-09-27",
-    "expira": "2026-09-29",
     "activa": false
    },
    {
@@ -1931,9 +1940,9 @@
     "titlu": "50% reducere la produsele marca proprie Dr. Max",
     "cod": false,
     "prima": "2026-07-16",
-    "ultima": "2026-09-27",
+    "ultima": "2026-09-28",
     "expira": "2026-09-29",
-    "activa": false
+    "activa": true
    },
    {
     "k": "maxdaysalimentatiesanatoasa142007|",
@@ -2717,6 +2726,15 @@
    }
   ],
   "eur.vevor.com": [
+   {
+    "k": "vvfueuall10|",
+    "titlu": "Fall Upgrade - Extra 10% Off with Coupon",
+    "cod": false,
+    "prima": "2026-09-28",
+    "ultima": "2026-09-28",
+    "expira": "2026-10-09",
+    "activa": true
+   },
    {
     "k": "vvaseu10|",
     "titlu": "10% off sitewide with the code VVASEU10 during Back to School Promotion",
@@ -4881,6 +4899,15 @@
   ],
   "linailsboutique.ro": [
    {
+    "k": "fonddetennilia30mlpretdelansare148lei|",
+    "titlu": "Fond de ten Nilia 30 ml – pret de lansare 148 lei",
+    "cod": false,
+    "prima": "2026-09-28",
+    "ultima": "2026-09-28",
+    "expira": "2026-10-31",
+    "activa": true
+   },
+   {
     "k": "reducerelinailsboutiquede30laproduselecuambalajdeteriorat|",
     "titlu": "Reducere LiNailsBoutique de 30% la produsele cu ambalaj deteriorat",
     "cod": false,
@@ -5021,7 +5048,7 @@
     "prima": "2026-09-24",
     "ultima": "2026-09-28",
     "expira": "2026-09-29",
-    "activa": true
+    "activa": false
    }
   ],
   "manukashop.ro": [
@@ -6960,6 +6987,15 @@
   ],
   "vevor.com": [
    {
+    "k": "vvfueuall10|",
+    "titlu": "Fall Upgrade - Extra 10% Off with Coupon",
+    "cod": false,
+    "prima": "2026-09-28",
+    "ultima": "2026-09-28",
+    "expira": "2026-10-09",
+    "activa": true
+   },
+   {
     "k": "vvaseu10|",
     "titlu": "10% off sitewide with the code VVASEU10 during Back to School Promotion",
     "cod": false,
@@ -6970,6 +7006,15 @@
    }
   ],
   "vevor.com.au": [
+   {
+    "k": "vvfuau10|",
+    "titlu": "VEVOR AU Big Spring Refresh + extra 10% off",
+    "cod": false,
+    "prima": "2026-09-28",
+    "ultima": "2026-09-28",
+    "expira": "2026-10-08",
+    "activa": true
+   },
    {
     "k": "vvaseu10|",
     "titlu": "10% off sitewide with the code VVASEU10 during Back to School Promotion",
