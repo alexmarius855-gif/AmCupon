@@ -41,6 +41,14 @@ Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Pro
   procese pornite, `environment.benchmarkIndex` a scazut de la ~2.500 la ~1.650, iar pagina Notino,
   neatinsa de nicio schimbare, a cazut de la 91-96 la 66. Inainte de o concluzie: A/B intercalat sau
   aceeasi valoare de `benchmarkIndex`; fisierele din `.next/static` se pot comuta fara rebuild.
+- **Live, dupa deploy (27.09 seara, intercalat cu concurenta):** pagina Notino 88-89 (Cuponeria 91,
+  Cuponescu 82-85) — paritate pe paginile care aduc bani. Prima pagina 64 (ei 90 / 82-87): **prima pictare
+  vine la 1,0-2,5 s**, desi DOM-ul e gata la ~0,3 s si `load` la ~0,7 s, cu firul principal aproape liber.
+  In trace, primul cadru e gata la ~1,25 s si ajunge pe ecran abia la ~2,4 s: asteapta procesul GPU
+  (Lighthouse/PSI randeaza software). **Testat si respins (28.09):** cele 3 cercuri `blur(72px)` animate
+  din hero — A/B intercalat, 3 perechi, prima pictare neschimbata. Candidatii ramasi: layout-ul initial de
+  282 ms (1.774 de elemente), grila hero cu `mask-image`, `backdrop-filter` (antet, `.glass`). Metoda de
+  A/B fara rebuild: doua servere statice mici cu acelasi `.next/static`, doar `index.html` diferit (gzip!).
 - **Supabase era din nou pe pauza (a 5-a oara), cu domeniul disparut din DNS** — recenziile si voturile nu
   mergeau si nu semnala nimic. Repornit cu `restore_project`. **Pas nou 18 in update-data.yml**: o citire la
   fiecare rulare il tine activ; la orice raspuns != 200 rularea iese ROSIE (dovedit pe o gazda inexistenta).
