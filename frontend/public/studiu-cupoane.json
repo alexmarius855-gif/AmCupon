@@ -1,27 +1,27 @@
 {
-  "generat": "2026-09-28",
-  "total_magazine": 961,
+  "generat": "2026-09-29",
+  "total_magazine": 962,
   "cu_promotie": 130,
   "cu_cod_real": 26,
   "doar_oferta": 104,
   "procent_cu_promotie": 13.5,
   "procent_cu_cod": 2.7,
-  "reducere_mediana_generala": 25.0,
-  "magazine_cu_procent_declarat": 80,
+  "reducere_mediana_generala": 25,
+  "magazine_cu_procent_declarat": 81,
   "categorii": [
     {
       "slug": "carti-educatie",
       "nume": "Cărți & educație",
       "magazine": 30,
-      "cu_promotie": 11,
-      "reducere_mediana": 80.0,
+      "cu_promotie": 12,
+      "reducere_mediana": 83,
       "reducere_max": 90,
-      "esantion": 4
+      "esantion": 5
     },
     {
       "slug": "beauty",
       "nume": "Beauty & îngrijire",
-      "magazine": 72,
+      "magazine": 73,
       "cu_promotie": 8,
       "reducere_mediana": 70,
       "reducere_max": 93,
@@ -30,7 +30,7 @@
     {
       "slug": "fashion",
       "nume": "Fashion",
-      "magazine": 80,
+      "magazine": 79,
       "cu_promotie": 16,
       "reducere_mediana": 40,
       "reducere_max": 70,
@@ -66,7 +66,7 @@
     {
       "slug": "marketplace",
       "nume": "Marketplace",
-      "magazine": 195,
+      "magazine": 194,
       "cu_promotie": 17,
       "reducere_mediana": 20,
       "reducere_max": 60,
@@ -84,8 +84,8 @@
     {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
-      "magazine": 123,
-      "cu_promotie": 22,
+      "magazine": 124,
+      "cu_promotie": 21,
       "reducere_mediana": 17,
       "reducere_max": 70,
       "esantion": 11
@@ -129,7 +129,7 @@
     {
       "slug": "cadouri-flori",
       "nume": "Cadouri & flori",
-      "magazine": 11,
+      "magazine": 12,
       "cu_promotie": 3,
       "reducere_mediana": null,
       "reducere_max": null,
