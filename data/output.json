@@ -4114,6 +4114,41 @@
     "unique_code": "ac2bffaf7"
   },
   {
+    "magazin": "librex.ro",
+    "url": "https://www.librex.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.librex.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11362/medium/11362.png",
+    "categorie": "Cărți & Educație",
+    "categorie_slug": "carti-educatie",
+    "comision": "10.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 5,
+    "promotii": [
+      {
+        "nume": "October Book Fest la Librex 🎉",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.librex.ro%2Flp%2Foctober-book-fest%2F",
+        "zile_ramase": 5,
+        "expira": "2026-10-04",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-09-29",
+    "scor_final": 30.0,
+    "program_id": 3089,
+    "unique_code": "3085d2457"
+  },
+  {
     "magazin": "femieko.ro",
     "url": "https://www.femieko.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.femieko.ro",
@@ -17563,31 +17598,6 @@
     "scor_final": 0.0,
     "program_id": 4888,
     "unique_code": "d404a783d"
-  },
-  {
-    "magazin": "librex.ro",
-    "url": "https://www.librex.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.librex.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11362/medium/11362.png",
-    "categorie": "Cărți & Educație",
-    "categorie_slug": "carti-educatie",
-    "comision": "10.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-09-29",
-    "scor_final": 0.0,
-    "program_id": 3089,
-    "unique_code": "3085d2457"
   },
   {
     "magazin": "a2t.ro",

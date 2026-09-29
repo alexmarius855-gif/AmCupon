@@ -428,8 +428,8 @@
    "magazine": 127
   },
   "2026-09-29": {
-   "promotii": 255,
-   "magazine": 127
+   "promotii": 256,
+   "magazine": 128
   }
  },
  "magazine": {
@@ -4705,6 +4705,15 @@
    }
   ],
   "librex.ro": [
+   {
+    "k": "octoberbookfestlalibrex|",
+    "titlu": "October Book Fest la Librex 🎉",
+    "cod": false,
+    "prima": "2026-09-29",
+    "ultima": "2026-09-29",
+    "expira": "2026-10-04",
+    "activa": true
+   },
    {
     "k": "sitenousi25deleicadou|",
     "titlu": "Site NOU și 25 de lei CADOU! 🎁",
