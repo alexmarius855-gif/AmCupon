@@ -428,8 +428,8 @@
    "magazine": 127
   },
   "2026-09-29": {
-   "promotii": 256,
-   "magazine": 128
+   "promotii": 239,
+   "magazine": 117
   }
  },
  "magazine": {
@@ -525,7 +525,7 @@
     "prima": "2026-06-29",
     "ultima": "2026-09-29",
     "expira": "2026-09-29",
-    "activa": true
+    "activa": false
    }
   ],
   "amazon.com": [
@@ -607,7 +607,7 @@
     "prima": "2026-07-01",
     "ultima": "2026-09-29",
     "expira": "2026-09-29",
-    "activa": true
+    "activa": false
    }
   ],
   "aronia-charlottenburg.ro": [
@@ -677,13 +677,31 @@
   ],
   "ashimaryhair.com": [
    {
+    "k": "upto55off|",
+    "titlu": "UP TO 55% OFF",
+    "cod": false,
+    "prima": "2026-09-29",
+    "ultima": "2026-09-29",
+    "expira": "2026-10-30",
+    "activa": true
+   },
+   {
+    "k": "10offover139|",
+    "titlu": "$10 off over $139",
+    "cod": false,
+    "prima": "2026-09-29",
+    "ultima": "2026-09-29",
+    "expira": "2026-10-30",
+    "activa": true
+   },
+   {
     "k": "upto80off|",
     "titlu": "up to $80 off",
     "cod": false,
     "prima": "2026-09-16",
     "ultima": "2026-09-29",
     "expira": "2026-09-29",
-    "activa": true
+    "activa": false
    },
    {
     "k": "70offcoloredwigs|",
@@ -692,7 +710,7 @@
     "prima": "2026-09-16",
     "ultima": "2026-09-29",
     "expira": "2026-09-29",
-    "activa": true
+    "activa": false
    },
    {
     "k": "13x6fulllace2220sameprice|",
@@ -701,7 +719,7 @@
     "prima": "2026-09-16",
     "ultima": "2026-09-29",
     "expira": "2026-09-29",
-    "activa": true
+    "activa": false
    }
   ],
   "asus.com": [
@@ -1060,6 +1078,24 @@
    }
   ],
   "baristelli.ro": [
+   {
+    "k": "cafeaualuniicostaricatresnubes|",
+    "titlu": "☕ Cafeaua lunii - Costa Rica Tres Nubes",
+    "cod": false,
+    "prima": "2026-09-29",
+    "ultima": "2026-09-29",
+    "expira": "2026-10-31",
+    "activa": true
+   },
+   {
+    "k": "10reducerelatoatacafeauabaristelliziuainternationalaacafelei|",
+    "titlu": "☕ 10% reducere la toată cafeaua Baristelli - Ziua Internațională a Cafelei",
+    "cod": false,
+    "prima": "2026-09-29",
+    "ultima": "2026-09-29",
+    "expira": "2026-10-01",
+    "activa": true
+   },
    {
     "k": "cadou100gcafealacomenzidepeste200lei|",
     "titlu": "🎁 Cadou 100 g cafea la comenzi de peste 200 lei",
@@ -1883,7 +1919,7 @@
     "prima": "2026-09-24",
     "ultima": "2026-09-29",
     "expira": "2026-09-29",
-    "activa": true
+    "activa": false
    },
    {
     "k": "oferteleluniiseptembrie|",
@@ -1892,7 +1928,7 @@
     "prima": "2026-09-24",
     "ultima": "2026-09-29",
     "expira": "2026-09-29",
-    "activa": true
+    "activa": false
    },
    {
     "k": "back2schoolcumaxi|",
@@ -1901,7 +1937,7 @@
     "prima": "2026-09-24",
     "ultima": "2026-09-29",
     "expira": "2026-09-29",
-    "activa": true
+    "activa": false
    },
    {
     "k": "maxdaysmachiaj|",
@@ -1946,7 +1982,7 @@
     "prima": "2026-07-16",
     "ultima": "2026-09-29",
     "expira": "2026-09-29",
-    "activa": true
+    "activa": false
    },
    {
     "k": "maxdaysalimentatiesanatoasa142007|",
@@ -2078,7 +2114,7 @@
     "prima": "2026-09-24",
     "ultima": "2026-09-29",
     "expira": "2026-09-29",
-    "activa": true
+    "activa": false
    },
    {
     "k": "hoinariprinanotimpuri|",
@@ -2087,7 +2123,7 @@
     "prima": "2026-09-24",
     "ultima": "2026-09-29",
     "expira": "2026-09-29",
-    "activa": true
+    "activa": false
    }
   ],
   "edituracorint.ro": [
@@ -2136,7 +2172,7 @@
     "prima": "2026-08-21",
     "ultima": "2026-09-29",
     "expira": "2026-09-29",
-    "activa": true
+    "activa": false
    },
    {
     "k": "provocareacelor15minutepoatelogicosadevinanouljocpreferatalcopiluluitau|",
@@ -2855,7 +2891,7 @@
     "prima": "2026-09-25",
     "ultima": "2026-09-29",
     "expira": "2026-09-29",
-    "activa": true
+    "activa": false
    },
    {
     "k": "blackfridayproreduceridepanala70laechipamentefotovideo|",
@@ -3630,7 +3666,7 @@
     "prima": "2026-09-24",
     "ultima": "2026-09-29",
     "expira": "2026-09-29",
-    "activa": true
+    "activa": false
    },
    {
     "k": "backtoschool15laintreagacomanda15offyourorder10aug15sep2026|",
@@ -3777,7 +3813,7 @@
     "prima": "2026-09-08",
     "ultima": "2026-09-29",
     "expira": "2026-09-29",
-    "activa": true
+    "activa": false
    },
    {
     "k": "ms100|",
@@ -3786,7 +3822,7 @@
     "prima": "2026-09-08",
     "ultima": "2026-09-29",
     "expira": "2026-09-29",
-    "activa": true
+    "activa": false
    }
   ],
   "herbagetica.ro": [
@@ -4101,7 +4137,7 @@
     "prima": "2026-09-24",
     "ultima": "2026-09-29",
     "expira": "2026-09-29",
-    "activa": true
+    "activa": false
    },
    {
     "k": "50reducerelaenergycoffeediblong|",
@@ -4110,7 +4146,7 @@
     "prima": "2026-09-24",
     "ultima": "2026-09-29",
     "expira": "2026-09-29",
-    "activa": true
+    "activa": false
    },
    {
     "k": "diblongfacevaluripeintimaxro|",
@@ -4375,7 +4411,7 @@
     "prima": "2026-08-20",
     "ultima": "2026-09-29",
     "expira": "2026-09-29",
-    "activa": true
+    "activa": false
    }
   ],
   "kisslovehair.com": [
@@ -5508,7 +5544,7 @@
     "prima": "2026-09-22",
     "ultima": "2026-09-29",
     "expira": "2026-09-29",
-    "activa": true
+    "activa": false
    },
    {
     "k": "todayfeelsdifferentsaleupto100offwithcodegold|gold",
@@ -6236,7 +6272,7 @@
     "prima": "2026-09-24",
     "ultima": "2026-09-29",
     "expira": "2026-09-29",
-    "activa": true
+    "activa": false
    },
    {
     "k": "latesummersale|",
@@ -6283,7 +6319,7 @@
     "prima": "2026-09-24",
     "ultima": "2026-09-29",
     "expira": "2026-09-29",
-    "activa": true
+    "activa": false
    },
    {
     "k": "pb20sezonbanchetmajorat20latoaterochiileprive|pb20",
@@ -6659,7 +6695,7 @@
     "prima": "2026-09-27",
     "ultima": "2026-09-29",
     "expira": "2026-09-30",
-    "activa": true
+    "activa": false
    },
    {
     "k": "10reducerelatoateprodusele|",
@@ -6910,6 +6946,24 @@
    }
   ],
   "valerion.com": [
+   {
+    "k": "screendiscountsavacc88|",
+    "titlu": "Screen discounts：AVACC88",
+    "cod": false,
+    "prima": "2026-09-29",
+    "ultima": "2026-09-29",
+    "expira": "2026-12-31",
+    "activa": true
+   },
+   {
+    "k": "aspec100|",
+    "titlu": "Selected Pro 2 Products €100 off orders over €2,200",
+    "cod": false,
+    "prima": "2026-09-29",
+    "ultima": "2026-09-29",
+    "expira": "2026-10-31",
+    "activa": true
+   },
    {
     "k": "affv130|",
     "titlu": "Alliance Exclusive Discount $130 for New User Can be combined with promotional offers Minimum purchase amount of $500 Each new user is…",
@@ -7691,6 +7745,17 @@
     "activa": false
    }
   ],
+  "zelto.ro": [
+   {
+    "k": "promotiireumatism|",
+    "titlu": "Promoții Reumatism",
+    "cod": false,
+    "prima": "2026-09-29",
+    "ultima": "2026-09-29",
+    "expira": "2026-10-29",
+    "activa": true
+   }
+  ],
   "zephyrlabs.ro": [
    {
     "k": "promotie33maiseptembriepentruoricare2produseidenticedelamelegattipharma|",
@@ -7699,7 +7764,7 @@
     "prima": "2026-05-24",
     "ultima": "2026-09-29",
     "expira": "2026-09-29",
-    "activa": true
+    "activa": false
    }
   ],
   "zurlishop.ro": [
