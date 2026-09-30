@@ -432,7 +432,7 @@
    "magazine": 117
   },
   "2026-09-30": {
-   "promotii": 231,
+   "promotii": 232,
    "magazine": 115
   }
  },
@@ -1191,6 +1191,15 @@
    }
   ],
   "brainmarket.ro": [
+   {
+    "k": "brainmaxzinccomplex11gratuit|",
+    "titlu": "🔥 BrainMax Zinc Complex® 1+1 GRATUIT",
+    "cod": false,
+    "prima": "2026-09-30",
+    "ultima": "2026-09-30",
+    "expira": "2026-10-31",
+    "activa": true
+   },
    {
     "k": "septembersalereduceridepanala40|",
     "titlu": "🔥 September Sale – Reduceri de până la 40%",

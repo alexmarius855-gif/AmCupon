@@ -4049,6 +4049,15 @@
         "zile_ramase": 0,
         "expira": "2026-09-30",
         "sursa": "2performant_api"
+      },
+      {
+        "nume": "🔥  BrainMax Zinc Complex® 1+1 GRATUIT",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brainmarket.ro%2Fbrainmax-zinc-complex-2-0--100-capsule-vegetale--1-1-gratuit%2F",
+        "zile_ramase": 31,
+        "expira": "2026-10-31",
+        "sursa": "2performant_api"
       }
     ],
     "exclusiv": false,
@@ -19689,31 +19698,6 @@
     "scor_final": 0.0,
     "program_id": 10829,
     "unique_code": "bb7f88924"
-  },
-  {
-    "magazin": "vioi.ro",
-    "url": "https://vioi.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fvioi.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13427/medium/13427.png",
-    "categorie": "Sănătate & Farmacie",
-    "categorie_slug": "sanatate",
-    "comision": "10.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-09-30",
-    "scor_final": 0.0,
-    "program_id": 12020,
-    "unique_code": "4d5dbde3f"
   },
   {
     "magazin": "topline.ro",

@@ -9753,14 +9753,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 365,
+    "zile_ramase": 364,
     "promotii": [
       {
         "nume": "New Autumn and winter collection",
         "descriere": "New Autumn and winter collection",
         "cod_cupon": "",
         "landing_page": "https://fitory.com/collections/new-arrivals",
-        "zile_ramase": 365,
+        "zile_ramase": 364,
         "expira": "2027-09-30",
         "sursa": "impact_deals_api"
       }
@@ -11447,7 +11447,7 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 31,
+    "zile_ramase": 30,
     "promotii": [
       {
         "nume": "[GL&US] Limited time sale-P10 Save 48% OFF! Use code DPR35",
@@ -11481,7 +11481,7 @@
         "descriere": "Limited time sale-Save 45% OFF! Use code DPR35",
         "cod_cupon": "",
         "landing_page": "https://eu.kospet.com/pages/special-clearance-sale",
-        "zile_ramase": 31,
+        "zile_ramase": 30,
         "expira": "2026-10-31",
         "sursa": "impact_deals_api"
       },
@@ -11490,7 +11490,7 @@
         "descriere": "Limited time sale-S2 Save 54% OFF! Use code DS20",
         "cod_cupon": "",
         "landing_page": "https://eu.kospet.com/pages/special-clearance-sale",
-        "zile_ramase": 31,
+        "zile_ramase": 30,
         "expira": "2026-10-31",
         "sursa": "impact_deals_api"
       },
@@ -11499,7 +11499,7 @@
         "descriere": "Limited time sale-M3U Save 45% OFF! Use code V3U20",
         "cod_cupon": "",
         "landing_page": "https://eu.kospet.com/pages/special-clearance-sale",
-        "zile_ramase": 31,
+        "zile_ramase": 30,
         "expira": "2026-10-31",
         "sursa": "impact_deals_api"
       },
@@ -11517,7 +11517,7 @@
         "descriere": "Limited time sale-T3U2 Save 42% OFF! Use code HT3U2",
         "cod_cupon": "",
         "landing_page": "https://eu.kospet.com/pages/special-clearance-sale",
-        "zile_ramase": 31,
+        "zile_ramase": 30,
         "expira": "2026-10-31",
         "sursa": "impact_deals_api"
       }
