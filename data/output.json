@@ -1,40 +1,5 @@
 [
   {
-    "magazin": "wegic.ai",
-    "url": "https://wegic.ai/",
-    "url_afiliat": "https://wegic-ai.pxf.io/c/7401119/3249647/41022",
-    "logo_url": "https://www.google.com/s2/favicons?domain=wegic.ai&sz=128",
-    "categorie": "Software & Digital",
-    "categorie_slug": "software",
-    "comision": "35% comision",
-    "rank": null,
-    "scor_afiliere": 78,
-    "scor_final": 78.0,
-    "prioritate": "high",
-    "canal_recomandat": "Content, Social",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 0,
-    "promotii": [
-      {
-        "nume": "WEGIC10",
-        "descriere": "This offer applies to all Wegic annual subscription plans (1, 2, or 3 years), but not the monthly plan. The custom domain feature is only included with annual subscriptions.",
-        "cod_cupon": "",
-        "landing_page": "https://wegic-ai.pxf.io/c/7401119/3249647/41022?u=https%3A%2F%2Fwegic.ai%2Fstarter",
-        "zile_ramase": 0,
-        "expira": "2026-09-30",
-        "sursa": "impact_deals_api"
-      }
-    ],
-    "exclusiv": false,
-    "platforma": "impact",
-    "program_name": "Wegic",
-    "allows_deep_linking": true,
-    "ultima_verificare": "2026-09-30"
-  },
-  {
     "magazin": "xmind.com",
     "url": "https://xmind.com",
     "url_afiliat": "https://xmindltd.sjv.io/c/7401119/3848875/44551",
@@ -308,33 +273,6 @@
         "sursa": "impact_deals_api"
       },
       {
-        "nume": "Injection Tape in Hair Sale",
-        "descriere": "Injection Tape in Hair Sale",
-        "cod_cupon": "VT23",
-        "landing_page": "https://laavooextensions.sjv.io/c/7401119/3855423/51251?u=https%3A%2F%2Flaavooextensions.com%2Fcollections%2Finjection-tape-virgin-hair",
-        "zile_ramase": 31,
-        "expira": "2026-10-31",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "50% off Clearance Sale",
-        "descriere": "50% off Clearance Sale",
-        "cod_cupon": "H50",
-        "landing_page": "https://laavooextensions.sjv.io/c/7401119/3855423/51251?u=https%3A%2F%2Flaavooextensions.com%2Fcollections%2F50-off",
-        "zile_ramase": 92,
-        "expira": "2026-12-31",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "New Arrival 25% off",
-        "descriere": "New Arrival 25% off",
-        "cod_cupon": "New25",
-        "landing_page": "https://laavooextensions.sjv.io/c/7401119/3855423/51251?u=https%3A%2F%2Flaavooextensions.com%2Fcollections%2Fnew-arrival",
-        "zile_ramase": 31,
-        "expira": "2026-10-31",
-        "sursa": "impact_deals_api"
-      },
-      {
         "nume": "Fall Sale 15% off",
         "descriere": "Fall Sale 15% off",
         "cod_cupon": "F15",
@@ -350,6 +288,33 @@
         "landing_page": "https://laavooextensions.sjv.io/c/7401119/3855423/51251?u=https%3A%2F%2Fwww.laavooextensions.com",
         "zile_ramase": 6,
         "expira": "2026-10-06",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "New Arrival 25% off",
+        "descriere": "New Arrival 25% off",
+        "cod_cupon": "New25",
+        "landing_page": "https://laavooextensions.sjv.io/c/7401119/3855423/51251?u=https%3A%2F%2Flaavooextensions.com%2Fcollections%2Fnew-arrival",
+        "zile_ramase": 31,
+        "expira": "2026-10-31",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "Halloween Sale 16% off",
+        "descriere": "Halloween Sale 16% off",
+        "cod_cupon": "HW16",
+        "landing_page": "https://laavooextensions.sjv.io/c/7401119/3855423/51251?u=https%3A%2F%2Fwww.laavooextensions.com",
+        "zile_ramase": 30,
+        "expira": "2026-10-30",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "Halloween Sale 23% off",
+        "descriere": "Halloween Sale 23% off",
+        "cod_cupon": "HW23",
+        "landing_page": "https://laavooextensions.sjv.io/c/7401119/3855423/51251?u=https%3A%2F%2Fwww.laavooextensions.com",
+        "zile_ramase": 30,
+        "expira": "2026-10-30",
         "sursa": "impact_deals_api"
       }
     ],
@@ -794,8 +759,17 @@
         "sursa": "impact_deals_api"
       },
       {
-        "nume": "Fall Special - Up to 25% off, Temptation Cancun Resort | Original Resort",
-        "descriere": "Book your stay with Original Resorts at Temptation Cancun Resort to get Complimentary bottle of tequila with 2 shot glasses + 15% off at the Glam shop, on premium beverages and spa treatments + 10% off spa products. Terms and Conditions:\n- Book betw",
+        "nume": "Playground for Couples at Temptation Cancun Resort - From $182 USD/night | Original Resorts",
+        "descriere": "Book now and get a complimentary Day Pass to a Desire Resort, One-way transfer (Cancun Airport), 15% off at the Glam Shop, on premium beverages and spa treatments,10% off spa products from $182 USD per night per person. Terms and Conditions:\n- Book",
+        "cod_cupon": "PLAY26",
+        "landing_page": "https://originalresorts.pxf.io/c/7401119/3936011/13731",
+        "zile_ramase": 31,
+        "expira": "2026-10-31",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "Freedom & Fiesta month at Temptation Cancun Resort- From $179 USD | Original Resorts",
+        "descriere": "Book your reservation for September 2026 at Temptation Cancun Resort and get a complimentary bottle of tequila with 2 shot glasses, + 15% off at the Glam shop, on premium beverages and spa treatments + 10% off spa products From $179 USD per person/pe",
         "cod_cupon": "FREEDOM",
         "landing_page": "https://originalresorts.pxf.io/c/7401119/3936011/13731",
         "zile_ramase": 1,
@@ -818,15 +792,6 @@
         "landing_page": "https://originalresorts.pxf.io/c/7401119/3936011/13731",
         "zile_ramase": 32,
         "expira": "2026-11-01",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "Playground for Couples at Temptation Cancun Resort - From $182 USD/night | Original Resorts",
-        "descriere": "Book now and get a complimentary Day Pass to a Desire Resort, One-way transfer (Cancun Airport), 15% off at the Glam Shop, on premium beverages and spa treatments,10% off spa products from $182 USD per night per person. Terms and Conditions:\n- Book",
-        "cod_cupon": "PLAY26",
-        "landing_page": "https://originalresorts.pxf.io/c/7401119/3936011/13731",
-        "zile_ramase": 31,
-        "expira": "2026-10-31",
         "sursa": "impact_deals_api"
       },
       {
@@ -1758,40 +1723,6 @@
     "ultima_verificare": "2026-09-30"
   },
   {
-    "magazin": "amazon.com",
-    "url": "https://www.amazon.com/dp/B0BYZXYSBX",
-    "url_afiliat": "https://ggamazon.sjv.io/c/7401119/3765248/37610",
-    "logo_url": "https://www.google.com/s2/favicons?domain=amazon.com&sz=128",
-    "categorie": "Marketplace",
-    "categorie_slug": "marketplace",
-    "comision": "Variabil",
-    "rank": null,
-    "scor_afiliere": 50,
-    "scor_final": 50.0,
-    "prioritate": "standard",
-    "canal_recomandat": "Content, SEO, Social",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 0,
-    "promotii": [
-      {
-        "nume": "coupon of clip in hair extensions",
-        "descriere": "coupon of clip in hair extensions",
-        "cod_cupon": "",
-        "landing_page": "https://ggamazon.sjv.io/c/7401119/3765248/37610?u=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB0744C2XK3",
-        "zile_ramase": 0,
-        "expira": "2026-09-30",
-        "sursa": "impact_deals_api"
-      }
-    ],
-    "exclusiv": false,
-    "platforma": "impact",
-    "descriere": "",
-    "ultima_verificare": "2026-09-30"
-  },
-  {
     "magazin": "theomfort.com",
     "url": "https://theomfort.com",
     "url_afiliat": "https://omfort.sjv.io/c/7401119/3731076/46802",
@@ -2166,6 +2097,15 @@
         "sursa": "impact_deals_api"
       },
       {
+        "nume": "[GL&US] Limited time sale-T3U2 Save 41% OFF! Use code HT3U2",
+        "descriere": "Limited time sale-T3U2 Save 41% OFF! Use code HT3U2",
+        "cod_cupon": "",
+        "landing_page": "https://kospetsmartwatch.sjv.io/c/7401119/2874867/27123?u=https%3A%2F%2Fkospet.com%2Fpages%2Fspecial-clearance-sale",
+        "zile_ramase": 31,
+        "expira": "2026-10-31",
+        "sursa": "impact_deals_api"
+      },
+      {
         "nume": "[EU] Limited time sale-P10 Save 48% OFF! Use code DPR35",
         "descriere": "Limited time sale-Save 45% OFF! Use code DPR35",
         "cod_cupon": "",
@@ -2188,15 +2128,6 @@
         "descriere": "Limited time sale-M3U Save 45% OFF! Use code V3U20",
         "cod_cupon": "",
         "landing_page": "https://kospetsmartwatch.sjv.io/c/7401119/2874867/27123?u=https%3A%2F%2Feu.kospet.com%2Fpages%2Fspecial-clearance-sale",
-        "zile_ramase": 31,
-        "expira": "2026-10-31",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "[GL&US] Limited time sale-T3U2 Save 41% OFF! Use code HT3U2",
-        "descriere": "Limited time sale-T3U2 Save 41% OFF! Use code HT3U2",
-        "cod_cupon": "",
-        "landing_page": "https://kospetsmartwatch.sjv.io/c/7401119/2874867/27123?u=https%3A%2F%2Fkospet.com%2Fpages%2Fspecial-clearance-sale",
         "zile_ramase": 31,
         "expira": "2026-10-31",
         "sursa": "impact_deals_api"
@@ -2242,40 +2173,6 @@
         "landing_page": "https://novakid-global-en.pxf.io/c/7401119/1348549/16082?u=https%3A%2F%2Fwww.novakidschool.com",
         "zile_ramase": 92,
         "expira": "2026-12-31",
-        "sursa": "impact_deals_api"
-      }
-    ],
-    "exclusiv": false,
-    "platforma": "impact",
-    "descriere": "",
-    "ultima_verificare": "2026-09-30"
-  },
-  {
-    "magazin": "x-sense.com",
-    "url": "https://www.x-sense.com/",
-    "url_afiliat": "https://gauyekinternationallimited.sjv.io/c/7401119/3972740/39753",
-    "logo_url": "https://www.google.com/s2/favicons?domain=x-sense.com&sz=128",
-    "categorie": "Marketplace",
-    "categorie_slug": "marketplace",
-    "comision": "Variabil",
-    "rank": null,
-    "scor_afiliere": 50,
-    "scor_final": 50.0,
-    "prioritate": "standard",
-    "canal_recomandat": "Content, SEO, Social",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 0,
-    "promotii": [
-      {
-        "nume": "Q3 Exclusive Affiliate Discount: 12% Off Smart Home Safety",
-        "descriere": "Use affiliate-exclusive code AFQ3XSENSE for an extra 12% off your entire order, stackable with site promotions, valid now through September 30, 2026, across the US, Germany, France, and the EU.",
-        "cod_cupon": "",
-        "landing_page": "https://gauyekinternationallimited.sjv.io/c/7401119/3972740/39753?u=https%3A%2F%2Fwww.x-sense.com%2F",
-        "zile_ramase": 0,
-        "expira": "2026-09-30",
         "sursa": "impact_deals_api"
       }
     ],
@@ -2529,12 +2426,12 @@
     "ultima_verificare": "2026-09-30"
   },
   {
-    "magazin": "baristelli.ro",
-    "url": "https://baristelli.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbaristelli.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11879/medium/11879.png",
-    "categorie": "Mâncare & Băuturi",
-    "categorie_slug": "mancare-bauturi",
+    "magazin": "librex.ro",
+    "url": "https://www.librex.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.librex.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11362/medium/11362.png",
+    "categorie": "Cărți & Educație",
+    "categorie_slug": "carti-educatie",
     "comision": "10.0",
     "rank": 999,
     "scor_afiliere": 0,
@@ -2544,24 +2441,15 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 1,
+    "zile_ramase": 4,
     "promotii": [
       {
-        "nume": "☕ 10% reducere la toată cafeaua Baristelli - Ziua Internațională a Cafelei",
+        "nume": "October Book Fest la Librex 🎉",
         "descriere": null,
         "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbaristelli.ro%2Fcollections%2Fcafea-artizanala",
-        "zile_ramase": 1,
-        "expira": "2026-10-01",
-        "sursa": "2performant_api"
-      },
-      {
-        "nume": "☕ Cafeaua lunii - Costa Rica Tres Nubes",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbaristelli.ro%2Fproducts%2Fcosta-rica-tres-nubes%3F_pos%3D1%26_sid%3D667d901d3%26_ss%3Dr",
-        "zile_ramase": 31,
-        "expira": "2026-10-31",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.librex.ro%2Flp%2Foctober-book-fest%2F",
+        "zile_ramase": 4,
+        "expira": "2026-10-04",
         "sursa": "2performant_api"
       }
     ],
@@ -2569,8 +2457,8 @@
     "platforma": "2performant",
     "ultima_verificare": "2026-09-30",
     "scor_final": 40.0,
-    "program_id": 10696,
-    "unique_code": "ae5e2b30b"
+    "program_id": 3089,
+    "unique_code": "3085d2457"
   },
   {
     "magazin": "aronia-charlottenburg.ro",
@@ -2588,26 +2476,8 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 0,
+    "zile_ramase": 30,
     "promotii": [
-      {
-        "nume": "Promotie Aronino",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fl.facebook.com%2Fl.php%3Fu%3Dhttps%3A%2F%2Faronia-charlottenburg.ro%2Fvitamine-suplimente-copii%2F%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExUXJ5TU5mMGpOWmpJY3FoanNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR5j2DM-L9OuylGTdiQ99dnYnHXpIJ5jxNxImTuaDXdihjxSD4aY7_kB7loIFw_aem_A4qQFysHrcv4DaPuclHz1A%26h%3DAUD88vuWvtUK7gkDK5pOvMRigA6U8BTLKqxIsWKXGGCCf2y_SWj3Pkau2f0MUDa52OHMbcXImklLwANE7VdGODmPsZOel8JE_97EtjWHOtbYQxtAhQlNx6ooImC5e7gUBfdzdfCZTjEiu7WZ%26__tn__%3D-UK-R%26c%5B0%5D%3DAUC8Oq8YjXsO-3bJ3O-UjgUTnFPValOB9jD2877cKLawKG21wEz-4Zlu8OAADQn2t8VOEOTKb0MsCpoXLTpN_av9zKMEcQHE9CPMToXR-IdE_p8Km0NPOG1u9QX8ky6kiknYkgsmVqldMWPZikiVSC2-Rd3nGWo2CTzGC_eoujuvte9S90wUd8xUN7WtEq32hauPWnyRe2HOFQW2IqziqLO-VQ",
-        "zile_ramase": 0,
-        "expira": "2026-09-30",
-        "sursa": "2performant_api"
-      },
-      {
-        "nume": "TOAMNA CU ARONIA",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Faronia-charlottenburg.ro%2Ftoamna-cu-aronia%2F",
-        "zile_ramase": 0,
-        "expira": "2026-09-30",
-        "sursa": "2performant_api"
-      },
       {
         "nume": "Back To School Aronino",
         "descriere": null,
@@ -2740,50 +2610,6 @@
     "unique_code": "07b5f0fed"
   },
   {
-    "magazin": "noriel.ro",
-    "url": "https://noriel.ro/",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnoriel.ro%2F",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/7926/medium/7926.png",
-    "categorie": "Copii & Familie",
-    "categorie_slug": "copii",
-    "comision": "7.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 0,
-    "promotii": [
-      {
-        "nume": "Back to School | 30% REDUCERE la TOATE Ghiozdanele |06.08-30.09.2026",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnoriel.ro%2Fscoala-si-gradinita",
-        "zile_ramase": 0,
-        "expira": "2026-09-30",
-        "sursa": "2performant_api"
-      },
-      {
-        "nume": "Catalog Oferte Back to school 2026 | 06.08-30.09.2026",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnoriel.ro%2Fcatalog-back-to-school",
-        "zile_ramase": 0,
-        "expira": "2026-09-30",
-        "sursa": "2performant_api"
-      }
-    ],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-09-30",
-    "scor_final": 30.0,
-    "program_id": 2615,
-    "unique_code": "bb3071a7d"
-  },
-  {
     "magazin": "librarie.net",
     "url": "https://www.librarie.net/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.librarie.net%2F",
@@ -2854,41 +2680,6 @@
     "unique_code": "ef2621c0a"
   },
   {
-    "magazin": "libris.ro",
-    "url": "https://www.libris.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9868/medium/9868.gif",
-    "categorie": "Cărți & Educație",
-    "categorie_slug": "carti-educatie",
-    "comision": "8.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 0,
-    "promotii": [
-      {
-        "nume": "Happy Days cu până la -83% bucură-te de toamnă cu o carte bună!",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Flp%2Fhappydaysreduceri",
-        "zile_ramase": 0,
-        "expira": "2026-09-30",
-        "sursa": "2performant_api"
-      }
-    ],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-09-30",
-    "scor_final": 30.0,
-    "program_id": 628,
-    "unique_code": "9a6f02fef"
-  },
-  {
     "magazin": "litera.ro",
     "url": "https://www.litera.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.litera.ro%2F",
@@ -2904,17 +2695,8 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 0,
+    "zile_ramase": 5,
     "promotii": [
-      {
-        "nume": "🥇 Cele mai citite cărți - până la -70% + cadouri (26 - 30 septembrie) 🥇",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.litera.ro%2F",
-        "zile_ramase": 0,
-        "expira": "2026-09-30",
-        "sursa": "2performant_api"
-      },
       {
         "nume": "📘 Chill & Thrill, cărți care te țin în priză - până la -70% + carte cadou 📘",
         "descriere": "",
@@ -2983,7 +2765,7 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 0,
+    "zile_ramase": 31,
     "promotii": [
       {
         "nume": "Reduceri de pana la -70% la Outlet Expomob",
@@ -3001,24 +2783,6 @@
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.expomob.ro%2Foutlet-mobila",
         "zile_ramase": 92,
         "expira": "2026-12-31",
-        "sursa": "2performant_api"
-      },
-      {
-        "nume": "Expomob Back to School cu reduceri de pana la -60% la produsele selectate",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.expomob.ro%2Fbacktoschool",
-        "zile_ramase": 0,
-        "expira": "2026-09-30",
-        "sursa": "2performant_api"
-      },
-      {
-        "nume": "Oferta Expomob coltar extensibil Porta la 1.799 lei",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.expomob.ro%2Fcoltar-extensibil-porta-cu-arcuri-si-lada-depozitare-colt-interschimbabil-gri-238x150x90-cm.html",
-        "zile_ramase": 0,
-        "expira": "2026-09-30",
         "sursa": "2performant_api"
       }
     ],
@@ -3133,17 +2897,8 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 0,
+    "zile_ramase": 92,
     "promotii": [
-      {
-        "nume": "Livrare si retur GRATUIT la orice comanda de gratare, paturi, birouri si scaune de gaming",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdoctorshield.ro%2F",
-        "zile_ramase": 0,
-        "expira": "2026-09-30",
-        "sursa": "2performant_api"
-      },
       {
         "nume": "Incalzitoare de terasa Doctor Home de la 699,99 lei",
         "descriere": null,
@@ -3247,17 +3002,8 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 0,
+    "zile_ramase": 14,
     "promotii": [
-      {
-        "nume": "Back to School – 5% reducere",
-        "descriere": "",
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fcategory%2F8000936%2F%3Fsort%3Dprice",
-        "zile_ramase": 0,
-        "expira": "2026-09-30",
-        "sursa": "2performant_api"
-      },
       {
         "nume": "10% reducere la produsele Essentiale",
         "descriere": "",
@@ -3309,26 +3055,8 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 0,
+    "zile_ramase": 31,
     "promotii": [
-      {
-        "nume": "Reduceri de pana la -66% la ambalaje de cadou si accesorii produse handmade",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcraftup.ro%2Fcollections%2Foferte",
-        "zile_ramase": 0,
-        "expira": "2026-09-30",
-        "sursa": "2performant_api"
-      },
-      {
-        "nume": "Solutii Premium de Ambalare: Pungi si Sacose pentru orice ocazie cu preturi de la 11 lei/set",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcraftup.ro%2Fcollections%2Fpungi-si-sacose",
-        "zile_ramase": 0,
-        "expira": "2026-09-30",
-        "sursa": "2performant_api"
-      },
       {
         "nume": "EXTRA reducere CraftUp -15% la minim 3 produse achizitionate din selectie",
         "descriere": null,
@@ -3514,50 +3242,6 @@
     "unique_code": "1bf67dbe4"
   },
   {
-    "magazin": "videt.ro",
-    "url": "https://videt.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fvidet.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9884/medium/9884.png",
-    "categorie": "Fashion",
-    "categorie_slug": "fashion",
-    "comision": "10.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 0,
-    "promotii": [
-      {
-        "nume": "Reduceri de stoc: Până la -70% la ochelarii de soare",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.videt.ro%2Freduceri-soare.html",
-        "zile_ramase": 0,
-        "expira": "2026-09-30",
-        "sursa": "2performant_api"
-      },
-      {
-        "nume": "Până la -35% la o selecție de ochelari de soare",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.videt.ro%2Fochelari-de-soare.html%3Fdc_code%3Dseptembrie",
-        "zile_ramase": 0,
-        "expira": "2026-09-30",
-        "sursa": "2performant_api"
-      }
-    ],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-09-30",
-    "scor_final": 30.0,
-    "program_id": 7894,
-    "unique_code": "27ec4b078"
-  },
-  {
     "magazin": "ookee.ro",
     "url": "https://www.ookee.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2F",
@@ -3591,41 +3275,6 @@
     "scor_final": 30.0,
     "program_id": 624,
     "unique_code": "ac2bffaf7"
-  },
-  {
-    "magazin": "librex.ro",
-    "url": "https://www.librex.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.librex.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11362/medium/11362.png",
-    "categorie": "Cărți & Educație",
-    "categorie_slug": "carti-educatie",
-    "comision": "10.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 4,
-    "promotii": [
-      {
-        "nume": "October Book Fest la Librex 🎉",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.librex.ro%2Flp%2Foctober-book-fest%2F",
-        "zile_ramase": 4,
-        "expira": "2026-10-04",
-        "sursa": "2performant_api"
-      }
-    ],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-09-30",
-    "scor_final": 30.0,
-    "program_id": 3089,
-    "unique_code": "3085d2457"
   },
   {
     "magazin": "femieko.ro",
@@ -3678,7 +3327,7 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 0,
+    "zile_ramase": 31,
     "promotii": [
       {
         "nume": "Livrare Gratuita la comenzi de peste 350 lei",
@@ -3705,15 +3354,6 @@
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fpaa-home.ro%2Fproduct-category%2Fproduse-resigilate-filtre-si-accesorii%2F",
         "zile_ramase": 91,
         "expira": "2026-12-30",
-        "sursa": "2performant_api"
-      },
-      {
-        "nume": "Reduceri de pana la 40% la detergenti pentru aspiratoare robot",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fpaa-home.ro%2Fproduct-category%2Fdetergenti-aspiratoare%2F",
-        "zile_ramase": 0,
-        "expira": "2026-09-30",
         "sursa": "2performant_api"
       }
     ],
@@ -3811,41 +3451,6 @@
     "scor_final": 30.0,
     "program_id": 10361,
     "unique_code": "8dad9830f"
-  },
-  {
-    "magazin": "nemira.ro",
-    "url": "https://nemira.ro/",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnemira.ro%2F",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/5600/medium/5600.png",
-    "categorie": "Cărți & Educație",
-    "categorie_slug": "carti-educatie",
-    "comision": "13.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 0,
-    "promotii": [
-      {
-        "nume": "Totul REDUS pe NEMIRA.RO!",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnemira.ro%2Foferta-nemira",
-        "zile_ramase": 0,
-        "expira": "2026-09-30",
-        "sursa": "2performant_api"
-      }
-    ],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-09-30",
-    "scor_final": 30.0,
-    "program_id": 690,
-    "unique_code": "9617003d6"
   },
   {
     "magazin": "fara-daunatori.ro",
@@ -4039,17 +3644,8 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 0,
+    "zile_ramase": 31,
     "promotii": [
-      {
-        "nume": "🔥 September Sale – Reduceri de până la 40%",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brainmarket.ro%2Factiune%2F",
-        "zile_ramase": 0,
-        "expira": "2026-09-30",
-        "sursa": "2performant_api"
-      },
       {
         "nume": "🔥  BrainMax Zinc Complex® 1+1 GRATUIT",
         "descriere": null,
@@ -4101,41 +3697,6 @@
     "scor_final": 30.0,
     "program_id": 10076,
     "unique_code": "f9db13aad"
-  },
-  {
-    "magazin": "editura-arthur.ro",
-    "url": "https://editura-arthur.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Feditura-arthur.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11090/medium/11090.png",
-    "categorie": "Cărți & Educație",
-    "categorie_slug": "carti-educatie",
-    "comision": "9.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 0,
-    "promotii": [
-      {
-        "nume": "Campanie cărți și pachete cu cărți de la Editura Arthur septembrie 2026",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.editura-arthur.ro%2F",
-        "zile_ramase": 0,
-        "expira": "2026-09-30",
-        "sursa": "2performant_api"
-      }
-    ],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-09-30",
-    "scor_final": 30.0,
-    "program_id": 10106,
-    "unique_code": "bea2df30f"
   },
   {
     "magazin": "infinity.ro",
@@ -4258,15 +3819,15 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 0,
+    "zile_ramase": 14,
     "promotii": [
       {
-        "nume": "Reduceri de pana la 70% la ochelari de soare ",
+        "nume": "2026.10 Tu alegi reducerea",
         "descriere": null,
         "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.optiblu.ro%2Fochelari-de-soare",
-        "zile_ramase": 0,
-        "expira": "2026-09-30",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.optiblu.ro%2F",
+        "zile_ramase": 14,
+        "expira": "2026-10-14",
         "sursa": "2performant_api"
       }
     ],
@@ -4276,50 +3837,6 @@
     "scor_final": 30.0,
     "program_id": 5277,
     "unique_code": "f6b801b06"
-  },
-  {
-    "magazin": "edituradiana.ro",
-    "url": "https://www.edituradiana.ro/",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.edituradiana.ro%2F",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13299/medium/13299.jpg",
-    "categorie": "Cărți & Educație",
-    "categorie_slug": "carti-educatie",
-    "comision": "4.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 0,
-    "promotii": [
-      {
-        "nume": "Back to School cu Editura Diana",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.edituradiana.ro%2Fpromotii",
-        "zile_ramase": 0,
-        "expira": "2026-09-30",
-        "sursa": "2performant_api"
-      },
-      {
-        "nume": "Noul CATALOG Editura Diana 2026-2027 pentru cadre didactice, instituții educaționale și părinți implicați",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.edituradiana.ro%2F",
-        "zile_ramase": 0,
-        "expira": "2026-09-30",
-        "sursa": "2performant_api"
-      }
-    ],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-09-30",
-    "scor_final": 30.0,
-    "program_id": 2662,
-    "unique_code": "313128750"
   },
   {
     "magazin": "uniquestore.ro",
@@ -4399,50 +3916,6 @@
     "scor_final": 30.0,
     "program_id": 7318,
     "unique_code": "9148cd6c4"
-  },
-  {
-    "magazin": "davopro.ro",
-    "url": "https://davopro.ro/",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdavopro.ro%2F",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/2953/medium/2953.jpg",
-    "categorie": "Casă & Grădină",
-    "categorie_slug": "casa-gradina",
-    "comision": "10.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 0,
-    "promotii": [
-      {
-        "nume": "Folii autocolante - sute de modele si dimensiuni la preturi accesibile",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdavopro.ro%2Ffolii-autocolante",
-        "zile_ramase": 0,
-        "expira": "2026-09-30",
-        "sursa": "2performant_api"
-      },
-      {
-        "nume": "Covorase intrare - un accesoriu nelipsit casei tale odata cu venirea toamnei",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdavopro.ro%2Fcovoare-intrare",
-        "zile_ramase": 0,
-        "expira": "2026-09-30",
-        "sursa": "2performant_api"
-      }
-    ],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-09-30",
-    "scor_final": 30.0,
-    "program_id": 2070,
-    "unique_code": "b102aee32"
   },
   {
     "magazin": "estel.ro",
@@ -4559,13 +4032,13 @@
     "unique_code": "d42a9ce58"
   },
   {
-    "magazin": "atelier49.ro",
-    "url": "https://www.atelier49.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.atelier49.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14173/medium/14173.png",
-    "categorie": "Casă & Grădină",
-    "categorie_slug": "casa-gradina",
-    "comision": "6.0",
+    "magazin": "baristelli.ro",
+    "url": "https://baristelli.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbaristelli.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11879/medium/11879.png",
+    "categorie": "Mâncare & Băuturi",
+    "categorie_slug": "mancare-bauturi",
+    "comision": "10.0",
     "rank": 999,
     "scor_afiliere": 0,
     "prioritate": "neclasat",
@@ -4574,33 +4047,24 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 0,
+    "zile_ramase": 1,
     "promotii": [
       {
-        "nume": "Pana la 50% reducere la produse din ceramica",
+        "nume": "☕ 10% reducere la toată cafeaua Baristelli - Ziua Internațională a Cafelei",
         "descriere": null,
         "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.atelier49.ro%2Fceramica",
-        "zile_ramase": 0,
-        "expira": "2026-09-30",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbaristelli.ro%2Fcollections%2Fcafea-artizanala",
+        "zile_ramase": 1,
+        "expira": "2026-10-01",
         "sursa": "2performant_api"
       },
       {
-        "nume": "Discounturi de pana la 42% la cadouri personalizabile + 10% EXTRA cu cod ATELIER49",
-        "descriere": "",
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.atelier49.ro%2Fcadouri-personalizate",
-        "zile_ramase": 0,
-        "expira": "2026-09-30",
-        "sursa": "2performant_api"
-      },
-      {
-        "nume": "Discounturi de pana la 41% la produsele din lemn + 10% EXTRA cu cod ATELIER49",
+        "nume": "☕ Cafeaua lunii - Costa Rica Tres Nubes",
         "descriere": null,
         "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.atelier49.ro%2Farticole-din-lemn%3Fo%3Ddiscount",
-        "zile_ramase": 0,
-        "expira": "2026-09-30",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbaristelli.ro%2Fproducts%2Fcosta-rica-tres-nubes%3F_pos%3D1%26_sid%3D667d901d3%26_ss%3Dr",
+        "zile_ramase": 31,
+        "expira": "2026-10-31",
         "sursa": "2performant_api"
       }
     ],
@@ -4608,8 +4072,8 @@
     "platforma": "2performant",
     "ultima_verificare": "2026-09-30",
     "scor_final": 30.0,
-    "program_id": 12855,
-    "unique_code": "f134fe0e1"
+    "program_id": 10696,
+    "unique_code": "ae5e2b30b"
   },
   {
     "magazin": "maranc.ro",
@@ -6022,6 +5486,31 @@
     "exclusiv": false,
     "platforma": "impact",
     "program_name": "gitmind.com",
+    "allows_deep_linking": true,
+    "ultima_verificare": "2026-09-30"
+  },
+  {
+    "magazin": "wegic.ai",
+    "url": "https://wegic.ai/",
+    "url_afiliat": "https://wegic-ai.pxf.io/c/7401119/3249647/41022",
+    "logo_url": "https://www.google.com/s2/favicons?domain=wegic.ai&sz=128",
+    "categorie": "Software & Digital",
+    "categorie_slug": "software",
+    "comision": "35% comision",
+    "rank": null,
+    "scor_afiliere": 78,
+    "scor_final": 78.0,
+    "prioritate": "high",
+    "canal_recomandat": "Content, Social",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "impact",
+    "program_name": "Wegic",
     "allows_deep_linking": true,
     "ultima_verificare": "2026-09-30"
   },
@@ -11087,6 +10576,30 @@
     "ultima_verificare": "2026-09-30"
   },
   {
+    "magazin": "amazon.com",
+    "url": "https://www.amazon.com/dp/B0BYZXYSBX",
+    "url_afiliat": "https://ggamazon.sjv.io/c/7401119/3765248/37610",
+    "logo_url": "https://www.google.com/s2/favicons?domain=amazon.com&sz=128",
+    "categorie": "Marketplace",
+    "categorie_slug": "marketplace",
+    "comision": "Variabil",
+    "rank": null,
+    "scor_afiliere": 50,
+    "scor_final": 50.0,
+    "prioritate": "standard",
+    "canal_recomandat": "Content, SEO, Social",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "impact",
+    "descriere": "",
+    "ultima_verificare": "2026-09-30"
+  },
+  {
     "magazin": "kamatera.com",
     "url": "https://www.kamatera.com",
     "url_afiliat": "https://kamatera.sjv.io/c/7401119/3135389/36439",
@@ -12873,6 +12386,30 @@
     "rank": null,
     "scor_afiliere": 50,
     "scor_final": 50,
+    "prioritate": "standard",
+    "canal_recomandat": "Content, SEO, Social",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "impact",
+    "descriere": "",
+    "ultima_verificare": "2026-09-30"
+  },
+  {
+    "magazin": "x-sense.com",
+    "url": "https://www.x-sense.com/",
+    "url_afiliat": "https://gauyekinternationallimited.sjv.io/c/7401119/3972740/39753",
+    "logo_url": "https://www.google.com/s2/favicons?domain=x-sense.com&sz=128",
+    "categorie": "Marketplace",
+    "categorie_slug": "marketplace",
+    "comision": "Variabil",
+    "rank": null,
+    "scor_afiliere": 50,
+    "scor_final": 50.0,
     "prioritate": "standard",
     "canal_recomandat": "Content, SEO, Social",
     "sales_number": 0,
@@ -15358,29 +14895,6 @@
     "ultima_verificare": "2026-09-30"
   },
   {
-    "magazin": "sevensins.ro",
-    "url": "https://www.sevensins.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.sevensins.ro",
-    "logo_url": "https://www.google.com/s2/favicons?domain=sevensins.ro&sz=128",
-    "categorie": "Fashion",
-    "categorie_slug": "fashion",
-    "comision": "Variabil",
-    "rank": null,
-    "scor_afiliere": 45,
-    "scor_final": 45,
-    "prioritate": "standard",
-    "canal_recomandat": "Content, Coupon",
-    "sales_number": 3522,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-09-30"
-  },
-  {
     "magazin": "depox.ro",
     "url": "https://www.depox.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.depox.ro",
@@ -15394,6 +14908,29 @@
     "prioritate": "standard",
     "canal_recomandat": "Content, Coupon",
     "sales_number": 2795,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-09-30"
+  },
+  {
+    "magazin": "sevensins.ro",
+    "url": "https://www.sevensins.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.sevensins.ro",
+    "logo_url": "https://www.google.com/s2/favicons?domain=sevensins.ro&sz=128",
+    "categorie": "Fashion",
+    "categorie_slug": "fashion",
+    "comision": "Variabil",
+    "rank": null,
+    "scor_afiliere": 45,
+    "scor_final": 45,
+    "prioritate": "standard",
+    "canal_recomandat": "Content, Coupon",
+    "sales_number": 3522,
     "trend": 0,
     "are_promotie": false,
     "cod_cupon": false,
@@ -15550,6 +15087,31 @@
     "unique_code": "322bda0fb"
   },
   {
+    "magazin": "noriel.ro",
+    "url": "https://noriel.ro/",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnoriel.ro%2F",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/7926/medium/7926.png",
+    "categorie": "Copii & Familie",
+    "categorie_slug": "copii",
+    "comision": "7.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-09-30",
+    "scor_final": 0.0,
+    "program_id": 2615,
+    "unique_code": "bb3071a7d"
+  },
+  {
     "magazin": "evomag.ro",
     "url": "https://www.evomag.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.evomag.ro%2F",
@@ -15573,6 +15135,31 @@
     "scor_final": 0.0,
     "program_id": 411,
     "unique_code": "d4f678b43"
+  },
+  {
+    "magazin": "fornello.ro",
+    "url": "https://www.fornello.ro/",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.fornello.ro%2F",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9899/medium/9899.png",
+    "categorie": "Casă & Grădină",
+    "categorie_slug": "casa-gradina",
+    "comision": "2.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-09-30",
+    "scor_final": 0.0,
+    "program_id": 8079,
+    "unique_code": "ab2c0c015"
   },
   {
     "magazin": "bazarulonline.ro",
@@ -15898,6 +15485,31 @@
     "scor_final": 0.0,
     "program_id": 12438,
     "unique_code": "e79c3922a"
+  },
+  {
+    "magazin": "libris.ro",
+    "url": "https://www.libris.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9868/medium/9868.gif",
+    "categorie": "Cărți & Educație",
+    "categorie_slug": "carti-educatie",
+    "comision": "8.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-09-30",
+    "scor_final": 0.0,
+    "program_id": 628,
+    "unique_code": "9a6f02fef"
   },
   {
     "magazin": "tezyo.ro",
@@ -16925,6 +16537,31 @@
     "unique_code": "c7b68464c"
   },
   {
+    "magazin": "videt.ro",
+    "url": "https://videt.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fvidet.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9884/medium/9884.png",
+    "categorie": "Fashion",
+    "categorie_slug": "fashion",
+    "comision": "10.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-09-30",
+    "scor_final": 0.0,
+    "program_id": 7894,
+    "unique_code": "27ec4b078"
+  },
+  {
     "magazin": "mezoni.ro",
     "url": "https://www.mezoni.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.mezoni.ro",
@@ -17348,6 +16985,31 @@
     "scor_final": 0.0,
     "program_id": 9293,
     "unique_code": "732aae773"
+  },
+  {
+    "magazin": "nemira.ro",
+    "url": "https://nemira.ro/",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnemira.ro%2F",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/5600/medium/5600.png",
+    "categorie": "Cărți & Educație",
+    "categorie_slug": "carti-educatie",
+    "comision": "13.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-09-30",
+    "scor_final": 0.0,
+    "program_id": 690,
+    "unique_code": "9617003d6"
   },
   {
     "magazin": "kamin.ro",
@@ -19325,31 +18987,6 @@
     "unique_code": "48a30b7c9"
   },
   {
-    "magazin": "novambient.ro",
-    "url": "https://novambient.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnovambient.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11509/medium/11509.png",
-    "categorie": "Casă & Grădină",
-    "categorie_slug": "casa-gradina",
-    "comision": "2.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-09-30",
-    "scor_final": 0.0,
-    "program_id": 10429,
-    "unique_code": "582d446a6"
-  },
-  {
     "magazin": "21collagen.ro",
     "url": "https://21collagen.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2F21collagen.ro",
@@ -20275,6 +19912,31 @@
     "unique_code": "3f2fc358a"
   },
   {
+    "magazin": "editura-arthur.ro",
+    "url": "https://editura-arthur.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Feditura-arthur.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11090/medium/11090.png",
+    "categorie": "Cărți & Educație",
+    "categorie_slug": "carti-educatie",
+    "comision": "9.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-09-30",
+    "scor_final": 0.0,
+    "program_id": 10106,
+    "unique_code": "bea2df30f"
+  },
+  {
     "magazin": "kedoo.ro",
     "url": "https://www.kedoo.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.kedoo.ro%2F",
@@ -20781,7 +20443,7 @@
     "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9310/medium/9310.png",
     "categorie": "Casă & Grădină",
     "categorie_slug": "casa-gradina",
-    "comision": "10.0",
+    "comision": "8.0",
     "rank": 999,
     "scor_afiliere": 0,
     "prioritate": "neclasat",
@@ -21298,6 +20960,31 @@
     "scor_final": 0.0,
     "program_id": 12970,
     "unique_code": "bce2fde2a"
+  },
+  {
+    "magazin": "edituradiana.ro",
+    "url": "https://www.edituradiana.ro/",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.edituradiana.ro%2F",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13299/medium/13299.jpg",
+    "categorie": "Cărți & Educație",
+    "categorie_slug": "carti-educatie",
+    "comision": "4.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-09-30",
+    "scor_final": 0.0,
+    "program_id": 2662,
+    "unique_code": "313128750"
   },
   {
     "magazin": "redgoblin.ro",
@@ -22173,6 +21860,31 @@
     "scor_final": 0.0,
     "program_id": 10082,
     "unique_code": "dcdc38903"
+  },
+  {
+    "magazin": "davopro.ro",
+    "url": "https://davopro.ro/",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdavopro.ro%2F",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/2953/medium/2953.jpg",
+    "categorie": "Casă & Grădină",
+    "categorie_slug": "casa-gradina",
+    "comision": "10.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-09-30",
+    "scor_final": 0.0,
+    "program_id": 2070,
+    "unique_code": "b102aee32"
   },
   {
     "magazin": "saray-fashion.ro",
@@ -23323,6 +23035,31 @@
     "scor_final": 0.0,
     "program_id": 2000,
     "unique_code": "646cd29ac"
+  },
+  {
+    "magazin": "atelier49.ro",
+    "url": "https://www.atelier49.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.atelier49.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14173/medium/14173.png",
+    "categorie": "Casă & Grădină",
+    "categorie_slug": "casa-gradina",
+    "comision": "6.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-09-30",
+    "scor_final": 0.0,
+    "program_id": 12855,
+    "unique_code": "f134fe0e1"
   },
   {
     "magazin": "justfit.ro",

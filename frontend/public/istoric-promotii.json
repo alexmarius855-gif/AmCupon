@@ -432,8 +432,8 @@
    "magazine": 117
   },
   "2026-09-30": {
-   "promotii": 232,
-   "magazine": 115
+   "promotii": 204,
+   "magazine": 104
   }
  },
  "magazine": {
@@ -540,7 +540,7 @@
     "prima": "2026-09-08",
     "ultima": "2026-09-30",
     "expira": "2026-09-30",
-    "activa": true
+    "activa": false
    }
   ],
   "answear.ro": [
@@ -640,7 +640,7 @@
     "prima": "2026-09-24",
     "ultima": "2026-09-30",
     "expira": "2026-09-30",
-    "activa": true
+    "activa": false
    },
    {
     "k": "backtoschoolaronino|",
@@ -658,7 +658,7 @@
     "prima": "2026-08-20",
     "ultima": "2026-09-30",
     "expira": "2026-09-30",
-    "activa": true
+    "activa": false
    },
    {
     "k": "varacuaronia|",
@@ -772,7 +772,7 @@
     "prima": "2026-09-24",
     "ultima": "2026-09-30",
     "expira": "2026-09-30",
-    "activa": true
+    "activa": false
    },
    {
     "k": "discounturidepanala41laproduseledinlemn10extracucodatelier49|",
@@ -781,7 +781,7 @@
     "prima": "2026-09-24",
     "ultima": "2026-09-30",
     "expira": "2026-09-30",
-    "activa": true
+    "activa": false
    },
    {
     "k": "panala50reducerelaprodusedinceramica|",
@@ -790,7 +790,7 @@
     "prima": "2026-08-20",
     "ultima": "2026-09-30",
     "expira": "2026-09-30",
-    "activa": true
+    "activa": false
    },
    {
     "k": "cadouridesfantamariacupanala42reducere|atelier49",
@@ -1207,7 +1207,7 @@
     "prima": "2026-09-24",
     "ultima": "2026-09-30",
     "expira": "2026-09-30",
-    "activa": true
+    "activa": false
    },
    {
     "k": "10summersale|",
@@ -1519,7 +1519,7 @@
     "prima": "2026-06-29",
     "ultima": "2026-09-30",
     "expira": "2026-09-30",
-    "activa": true
+    "activa": false
    },
    {
     "k": "reduceridepanala66laambalajedecadousiaccesoriiprodusehandmade|",
@@ -1528,7 +1528,7 @@
     "prima": "2026-06-29",
     "ultima": "2026-09-30",
     "expira": "2026-09-30",
-    "activa": true
+    "activa": false
    },
    {
     "k": "extrareducerecraftup15laminim3produseachizitionatedinselectie|",
@@ -1659,7 +1659,7 @@
     "prima": "2026-09-24",
     "ultima": "2026-09-30",
     "expira": "2026-09-30",
-    "activa": true
+    "activa": false
    },
    {
     "k": "covoraseintrareunaccesoriunelipsitcaseitaleodatacuvenireatoamnei|",
@@ -1668,7 +1668,7 @@
     "prima": "2026-09-24",
     "ultima": "2026-09-30",
     "expira": "2026-09-30",
-    "activa": true
+    "activa": false
    },
    {
     "k": "profilesitreceridepardosealadinaluminiuculorinoigriantracitgricimentsiimitatielemnnatural|",
@@ -1910,7 +1910,7 @@
     "prima": "2026-06-29",
     "ultima": "2026-09-30",
     "expira": "2026-09-30",
-    "activa": true
+    "activa": false
    }
   ],
   "dreamramp.ro": [
@@ -2125,7 +2125,7 @@
     "prima": "2026-09-24",
     "ultima": "2026-09-30",
     "expira": "2026-09-30",
-    "activa": true
+    "activa": false
    },
    {
     "k": "campaniecartisipachetecucartidelaedituraarthur|",
@@ -2185,7 +2185,7 @@
     "prima": "2026-09-24",
     "ultima": "2026-09-30",
     "expira": "2026-09-30",
-    "activa": true
+    "activa": false
    },
    {
     "k": "backtoschoolcuedituradiana|",
@@ -2194,7 +2194,7 @@
     "prima": "2026-09-24",
     "ultima": "2026-09-30",
     "expira": "2026-09-30",
-    "activa": true
+    "activa": false
    },
    {
     "k": "inapoilagradinitacuedituradiana|",
@@ -2884,7 +2884,7 @@
     "prima": "2026-09-24",
     "ultima": "2026-09-30",
     "expira": "2026-09-30",
-    "activa": true
+    "activa": false
    },
    {
     "k": "expomobbacktoschoolcureduceridepanala60laproduseleselectate|",
@@ -2893,7 +2893,7 @@
     "prima": "2026-09-24",
     "ultima": "2026-09-30",
     "expira": "2026-09-30",
-    "activa": true
+    "activa": false
    },
    {
     "k": "outletexpomobreduceridepanala70lamobilierpentrucasa|",
@@ -4601,6 +4601,24 @@
   ],
   "laavooextensions.com": [
    {
+    "k": "halloweensale23off|hw23",
+    "titlu": "Halloween Sale 23% off",
+    "cod": true,
+    "prima": "2026-09-30",
+    "ultima": "2026-09-30",
+    "expira": "2026-10-30",
+    "activa": true
+   },
+   {
+    "k": "halloweensale16off|hw16",
+    "titlu": "Halloween Sale 16% off",
+    "cod": true,
+    "prima": "2026-09-30",
+    "ultima": "2026-09-30",
+    "expira": "2026-10-30",
+    "activa": true
+   },
+   {
     "k": "fallsale21off|f21",
     "titlu": "Fall Sale 21% off",
     "cod": true,
@@ -4634,7 +4652,7 @@
     "prima": "2026-09-08",
     "ultima": "2026-09-30",
     "expira": "2026-10-31",
-    "activa": true
+    "activa": false
    },
    {
     "k": "bestseller25off|h25",
@@ -4652,7 +4670,7 @@
     "prima": "2026-09-08",
     "ultima": "2026-09-30",
     "expira": "2026-12-31",
-    "activa": true
+    "activa": false
    },
    {
     "k": "homecoming22off|hs22",
@@ -4799,7 +4817,7 @@
     "prima": "2026-09-29",
     "ultima": "2026-09-30",
     "expira": "2026-09-30",
-    "activa": true
+    "activa": false
    },
    {
     "k": "panala50inweekendulliterarhailarasfoit|",
@@ -4956,7 +4974,7 @@
     "prima": "2026-09-24",
     "ultima": "2026-09-30",
     "expira": "2026-09-30",
-    "activa": true
+    "activa": false
    },
    {
     "k": "10reducerelaproduseleessentiale|",
@@ -5050,7 +5068,7 @@
     "prima": "2026-09-24",
     "ultima": "2026-09-30",
     "expira": "2026-09-30",
-    "activa": true
+    "activa": false
    },
    {
     "k": "targdecartepanala65codextra201825septembrie|",
@@ -5671,7 +5689,7 @@
     "prima": "2026-09-24",
     "ultima": "2026-09-30",
     "expira": "2026-09-30",
-    "activa": true
+    "activa": false
    }
   ],
   "nepstore.ro": [
@@ -5766,7 +5784,7 @@
     "prima": "2026-08-20",
     "ultima": "2026-09-30",
     "expira": "2026-09-30",
-    "activa": true
+    "activa": false
    },
    {
     "k": "backtoschool30reducerelatoateghiozdanele060830092026|",
@@ -5775,7 +5793,7 @@
     "prima": "2026-08-20",
     "ultima": "2026-09-30",
     "expira": "2026-09-30",
-    "activa": true
+    "activa": false
    },
    {
     "k": "reduceridepanala7010814092026|",
@@ -5963,13 +5981,22 @@
   ],
   "optiblu.ro": [
    {
+    "k": "202610tualegireducerea|",
+    "titlu": "2026.10 Tu alegi reducerea",
+    "cod": false,
+    "prima": "2026-09-30",
+    "ultima": "2026-09-30",
+    "expira": "2026-10-14",
+    "activa": true
+   },
+   {
     "k": "reduceridepanala70laochelaridesoare|",
     "titlu": "Reduceri de pana la 70% la ochelari de soare",
     "cod": false,
     "prima": "2026-09-24",
     "ultima": "2026-09-30",
     "expira": "2026-09-30",
-    "activa": true
+    "activa": false
    },
    {
     "k": "reduceridepanala50laramesiochelaridesoare|",
@@ -6018,7 +6045,7 @@
     "prima": "2026-09-30",
     "ultima": "2026-09-30",
     "expira": "2026-10-01",
-    "activa": true
+    "activa": false
    },
    {
     "k": "octoberflashthebashsaleattemptationcancunresortoriginalresorts|octofest",
@@ -6088,9 +6115,9 @@
     "titlu": "Freedom & Fiesta month at Temptation Cancun Resort- From $179 USD | Original Resorts",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-09-29",
+    "ultima": "2026-09-30",
     "expira": "2026-10-01",
-    "activa": false
+    "activa": true
    }
   ],
   "otter-ro": [
@@ -6154,7 +6181,7 @@
     "prima": "2026-08-20",
     "ultima": "2026-09-30",
     "expira": "2026-09-30",
-    "activa": true
+    "activa": false
    },
    {
     "k": "produseresigilatepaahomerocureduceredepanala50|",
@@ -7279,7 +7306,7 @@
     "prima": "2026-09-24",
     "ultima": "2026-09-30",
     "expira": "2026-09-30",
-    "activa": true
+    "activa": false
    },
    {
     "k": "reduceridestocpanala70laochelariidesoare|",
@@ -7288,7 +7315,7 @@
     "prima": "2026-08-20",
     "ultima": "2026-09-30",
     "expira": "2026-09-30",
-    "activa": true
+    "activa": false
    },
    {
     "k": "reduceridestocpanala70laramesi25latoatelentileledevedere|",
@@ -7433,7 +7460,7 @@
     "prima": "2026-09-08",
     "ultima": "2026-09-30",
     "expira": "2026-09-30",
-    "activa": true
+    "activa": false
    }
   ],
   "wiskiiactive.com": [
@@ -7466,7 +7493,7 @@
     "prima": "2026-09-08",
     "ultima": "2026-09-30",
     "expira": "2026-09-30",
-    "activa": true
+    "activa": false
    }
   ],
   "xlaserlab.com": [
