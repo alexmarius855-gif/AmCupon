@@ -1120,7 +1120,7 @@
     "prima": "2026-09-29",
     "ultima": "2026-10-01",
     "expira": "2026-10-31",
-    "activa": true
+    "activa": false
    },
    {
     "k": "10reducerelatoatacafeauabaristelliziuainternationalaacafelei|",
@@ -1129,7 +1129,7 @@
     "prima": "2026-09-29",
     "ultima": "2026-10-01",
     "expira": "2026-10-01",
-    "activa": true
+    "activa": false
    },
    {
     "k": "cadou100gcafealacomenzidepeste200lei|",
@@ -2103,6 +2103,15 @@
    {
     "k": "pachetedegrija|",
     "titlu": "Pachete de Grija",
+    "cod": false,
+    "prima": "2026-10-01",
+    "ultima": "2026-10-01",
+    "expira": "2026-10-30",
+    "activa": true
+   },
+   {
+    "k": "oferteleluniidrmax|",
+    "titlu": "Ofertele lunii - DR Max",
     "cod": false,
     "prima": "2026-10-01",
     "ultima": "2026-10-01",
@@ -8100,6 +8109,15 @@
    }
   ],
   "zephyrlabs.ro": [
+   {
+    "k": "promotieprodusemelegattipharmaseptembriedecembrie|",
+    "titlu": "Promotie produse Melegatti Pharma - Septembrie-Decembrie",
+    "cod": false,
+    "prima": "2026-10-01",
+    "ultima": "2026-10-01",
+    "expira": "2026-12-30",
+    "activa": true
+   },
    {
     "k": "promotie33maiseptembriepentruoricare2produseidenticedelamelegattipharma|",
     "titlu": "Promotie -33% Mai - Septembrie pentru oricare 2 produse identice de la Melegatti Pharma",

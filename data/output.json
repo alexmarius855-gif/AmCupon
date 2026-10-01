@@ -2497,6 +2497,41 @@
     "ultima_verificare": "2026-10-01"
   },
   {
+    "magazin": "litera.ro",
+    "url": "https://www.litera.ro/",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.litera.ro%2F",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9545/medium/9545.png",
+    "categorie": "Cărți & Educație",
+    "categorie_slug": "carti-educatie",
+    "comision": "7.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 4,
+    "promotii": [
+      {
+        "nume": "📘 Chill & Thrill, cărți care te țin în priză - până la -70% + carte cadou 📘",
+        "descriere": "",
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.litera.ro%2F",
+        "zile_ramase": 4,
+        "expira": "2026-10-05",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-01",
+    "scor_final": 40.0,
+    "program_id": 873,
+    "unique_code": "0a8a2c4d9"
+  },
+  {
     "magazin": "aosom.ro",
     "url": "https://www.aosom.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.aosom.ro",
@@ -2574,6 +2609,41 @@
     "scor_final": 40.0,
     "program_id": 3089,
     "unique_code": "3085d2457"
+  },
+  {
+    "magazin": "infinity.ro",
+    "url": "https://www.infinity.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.infinity.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11281/medium/11281.png",
+    "categorie": "Marketplace",
+    "categorie_slug": "marketplace",
+    "comision": "3.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 4,
+    "promotii": [
+      {
+        "nume": "Maratonul Reducerilor de toamnă",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.infinity.ro%2Fmaratonul-reducerilor-de-toamna",
+        "zile_ramase": 4,
+        "expira": "2026-10-05",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-01",
+    "scor_final": 40.0,
+    "program_id": 8350,
+    "unique_code": "a11b7b0d7"
   },
   {
     "magazin": "aronia-charlottenburg.ro",
@@ -2794,6 +2864,15 @@
         "zile_ramase": 29,
         "expira": "2026-10-30",
         "sursa": "2performant_api"
+      },
+      {
+        "nume": "Ofertele lunii - DR Max",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fofertele-lunii",
+        "zile_ramase": 29,
+        "expira": "2026-10-30",
+        "sursa": "2performant_api"
       }
     ],
     "exclusiv": false,
@@ -2839,41 +2918,6 @@
     "unique_code": "ef2621c0a"
   },
   {
-    "magazin": "litera.ro",
-    "url": "https://www.litera.ro/",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.litera.ro%2F",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9545/medium/9545.png",
-    "categorie": "Cărți & Educație",
-    "categorie_slug": "carti-educatie",
-    "comision": "7.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 4,
-    "promotii": [
-      {
-        "nume": "📘 Chill & Thrill, cărți care te țin în priză - până la -70% + carte cadou 📘",
-        "descriere": "",
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.litera.ro%2F",
-        "zile_ramase": 4,
-        "expira": "2026-10-05",
-        "sursa": "2performant_api"
-      }
-    ],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-01",
-    "scor_final": 30.0,
-    "program_id": 873,
-    "unique_code": "0a8a2c4d9"
-  },
-  {
     "magazin": "regata.ro",
     "url": "https://regata.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fregata.ro%2F",
@@ -2915,7 +2959,7 @@
     "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11555/medium/11555.png",
     "categorie": "Casă & Grădină",
     "categorie_slug": "casa-gradina",
-    "comision": "7.0",
+    "comision": "5.0",
     "rank": 999,
     "scor_afiliere": 0,
     "prioritate": "neclasat",
@@ -3858,41 +3902,6 @@
     "unique_code": "f9db13aad"
   },
   {
-    "magazin": "infinity.ro",
-    "url": "https://www.infinity.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.infinity.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11281/medium/11281.png",
-    "categorie": "Marketplace",
-    "categorie_slug": "marketplace",
-    "comision": "3.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 4,
-    "promotii": [
-      {
-        "nume": "Maratonul Reducerilor de toamnă",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.infinity.ro%2Fmaratonul-reducerilor-de-toamna",
-        "zile_ramase": 4,
-        "expira": "2026-10-05",
-        "sursa": "2performant_api"
-      }
-    ],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-01",
-    "scor_final": 30.0,
-    "program_id": 8350,
-    "unique_code": "a11b7b0d7"
-  },
-  {
     "magazin": "atomico.ro",
     "url": "https://atomico.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fatomico.ro",
@@ -4191,13 +4200,13 @@
     "unique_code": "0c3054359"
   },
   {
-    "magazin": "baristelli.ro",
-    "url": "https://baristelli.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbaristelli.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11879/medium/11879.png",
-    "categorie": "Mâncare & Băuturi",
-    "categorie_slug": "mancare-bauturi",
-    "comision": "10.0",
+    "magazin": "zephyrlabs.ro",
+    "url": "https://www.zephyrlabs.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.zephyrlabs.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13104/medium/13104.png",
+    "categorie": "Sănătate & Farmacie",
+    "categorie_slug": "sanatate",
+    "comision": "8.0",
     "rank": 999,
     "scor_afiliere": 0,
     "prioritate": "neclasat",
@@ -4206,24 +4215,15 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 0,
+    "zile_ramase": 90,
     "promotii": [
       {
-        "nume": "☕ 10% reducere la toată cafeaua Baristelli - Ziua Internațională a Cafelei",
+        "nume": "Promotie produse Melegatti Pharma - Septembrie-Decembrie",
         "descriere": null,
         "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbaristelli.ro%2Fcollections%2Fcafea-artizanala",
-        "zile_ramase": 0,
-        "expira": "2026-10-01",
-        "sursa": "2performant_api"
-      },
-      {
-        "nume": "☕ Cafeaua lunii - Costa Rica Tres Nubes",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbaristelli.ro%2Fproducts%2Fcosta-rica-tres-nubes%3F_pos%3D1%26_sid%3D667d901d3%26_ss%3Dr",
-        "zile_ramase": 30,
-        "expira": "2026-10-31",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.zephyrlabs.ro%2Fpromotie-melegatti-pharma",
+        "zile_ramase": 90,
+        "expira": "2026-12-30",
         "sursa": "2performant_api"
       }
     ],
@@ -4231,8 +4231,8 @@
     "platforma": "2performant",
     "ultima_verificare": "2026-10-01",
     "scor_final": 30.0,
-    "program_id": 10696,
-    "unique_code": "ae5e2b30b"
+    "program_id": 11639,
+    "unique_code": "ea9693b50"
   },
   {
     "magazin": "maranc.ro",
@@ -15421,31 +15421,6 @@
     "unique_code": "75667dd72"
   },
   {
-    "magazin": "mxenduro.ro",
-    "url": "https://mxenduro.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fmxenduro.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11283/medium/11283.png",
-    "categorie": "Auto & Moto",
-    "categorie_slug": "auto-moto",
-    "comision": "10.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-01",
-    "scor_final": 0.0,
-    "program_id": 10260,
-    "unique_code": "90cc26df2"
-  },
-  {
     "magazin": "bsgmag.ro",
     "url": "https://bsgmag.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbsgmag.ro",
@@ -21446,31 +21421,6 @@
     "unique_code": "6f48f0958"
   },
   {
-    "magazin": "spectral.ro",
-    "url": "https://www.spectral.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.spectral.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/5965/medium/5965.png",
-    "categorie": "Casă & Grădină",
-    "categorie_slug": "casa-gradina",
-    "comision": "5.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-01",
-    "scor_final": 0.0,
-    "program_id": 5503,
-    "unique_code": "4c4885d8b"
-  },
-  {
     "magazin": "edituracasa.ro",
     "url": "https://www.edituracasa.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.edituracasa.ro%2F",
@@ -22971,6 +22921,31 @@
     "unique_code": "754ea50b5"
   },
   {
+    "magazin": "baristelli.ro",
+    "url": "https://baristelli.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbaristelli.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11879/medium/11879.png",
+    "categorie": "Mâncare & Băuturi",
+    "categorie_slug": "mancare-bauturi",
+    "comision": "10.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-01",
+    "scor_final": 0.0,
+    "program_id": 10696,
+    "unique_code": "ae5e2b30b"
+  },
+  {
     "magazin": "dwyn.ro",
     "url": "https://www.dwyn.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dwyn.ro%2F",
@@ -23294,31 +23269,6 @@
     "scor_final": 0.0,
     "program_id": 12744,
     "unique_code": "ee23ff818"
-  },
-  {
-    "magazin": "zephyrlabs.ro",
-    "url": "https://www.zephyrlabs.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.zephyrlabs.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13104/medium/13104.png",
-    "categorie": "Sănătate & Farmacie",
-    "categorie_slug": "sanatate",
-    "comision": "8.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-01",
-    "scor_final": 0.0,
-    "program_id": 11639,
-    "unique_code": "ea9693b50"
   },
   {
     "magazin": "biocyte.ro",

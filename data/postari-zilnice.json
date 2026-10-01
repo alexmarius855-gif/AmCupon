@@ -676,6 +676,19 @@
     "hashtags": "#reduceri #carti #educatie #romania #jollymag"
   },
   {
+    "magazin": "litera.ro",
+    "nume": "Litera",
+    "categorie": "Cărți & Educație",
+    "categorie_slug": "carti-educatie",
+    "cod": "",
+    "procent": "-70%",
+    "zile_ramase": 4,
+    "link": "https://amcupon.ro/cod-reducere/litera.ro",
+    "story": "📚 -70% la Litera!\nFara cod necesar 👇\namcupon.ro/cod-reducere/litera.ro",
+    "perete": "📚 -70% la Litera — activ acum\n\n✅ 📘 Chill & Thrill, cărți care te țin în priză - până la -70% + carte cadou 📘\n⏳ Expiră în 4 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/litera.ro",
+    "hashtags": "#reduceri #carti #educatie #romania #litera"
+  },
+  {
     "magazin": "aosom.ro",
     "nume": "Aosom",
     "categorie": "Casă & Grădină",
@@ -700,6 +713,19 @@
     "story": "📚 Reducere Librex azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/librex.ro",
     "perete": "📚 Reducere activa la Librex\n\n✅ October Book Fest la Librex 🎉\n⏳ Expiră în 3 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/librex.ro",
     "hashtags": "#reduceri #carti #educatie #romania #librex"
+  },
+  {
+    "magazin": "infinity.ro",
+    "nume": "Infinity",
+    "categorie": "Marketplace",
+    "categorie_slug": "marketplace",
+    "cod": "",
+    "procent": "",
+    "zile_ramase": 4,
+    "link": "https://amcupon.ro/cod-reducere/infinity.ro",
+    "story": "🛍️ Reducere Infinity azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/infinity.ro",
+    "perete": "🛍️ Reducere activa la Infinity\n\n✅ Maratonul Reducerilor de toamnă\n⏳ Expiră în 4 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/infinity.ro",
+    "hashtags": "#reduceri #marketplace #oferte #romania #infinity"
   },
   {
     "magazin": "aronia-charlottenburg.ro",
@@ -791,19 +817,6 @@
     "story": "🚗 Reducere Automobilus azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/automobilus.ro",
     "perete": "🚗 Reducere activa la Automobilus\n\n✅ 🚗 Q4 opportunity: Promovează ștergătoarele de parbriz Automobilus!\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/automobilus.ro",
     "hashtags": "#reduceri #auto #moto #piese #masina #romania #automobilus"
-  },
-  {
-    "magazin": "litera.ro",
-    "nume": "Litera",
-    "categorie": "Cărți & Educație",
-    "categorie_slug": "carti-educatie",
-    "cod": "",
-    "procent": "-70%",
-    "zile_ramase": 4,
-    "link": "https://amcupon.ro/cod-reducere/litera.ro",
-    "story": "📚 -70% la Litera!\nFara cod necesar 👇\namcupon.ro/cod-reducere/litera.ro",
-    "perete": "📚 -70% la Litera — activ acum\n\n✅ 📘 Chill & Thrill, cărți care te țin în priză - până la -70% + carte cadou 📘\n⏳ Expiră în 4 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/litera.ro",
-    "hashtags": "#reduceri #carti #educatie #romania #litera"
   },
   {
     "magazin": "regata.ro",
@@ -1118,19 +1131,6 @@
     "hashtags": "#reduceri #carti #educatie #romania #curteaveche"
   },
   {
-    "magazin": "infinity.ro",
-    "nume": "Infinity",
-    "categorie": "Marketplace",
-    "categorie_slug": "marketplace",
-    "cod": "",
-    "procent": "",
-    "zile_ramase": 4,
-    "link": "https://amcupon.ro/cod-reducere/infinity.ro",
-    "story": "🛍️ Reducere Infinity azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/infinity.ro",
-    "perete": "🛍️ Reducere activa la Infinity\n\n✅ Maratonul Reducerilor de toamnă\n⏳ Expiră în 4 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/infinity.ro",
-    "hashtags": "#reduceri #marketplace #oferte #romania #infinity"
-  },
-  {
     "magazin": "atomico.ro",
     "nume": "Atomico",
     "categorie": "Casă & Grădină",
@@ -1235,17 +1235,17 @@
     "hashtags": "#reduceri #moda #fashion #haine #romania #sneakerit"
   },
   {
-    "magazin": "baristelli.ro",
-    "nume": "Baristelli",
-    "categorie": "Mâncare & Băuturi",
-    "categorie_slug": "mancare-bauturi",
+    "magazin": "zephyrlabs.ro",
+    "nume": "Zephyrlabs",
+    "categorie": "Sănătate & Farmacie",
+    "categorie_slug": "sanatate",
     "cod": "",
-    "procent": "-10%",
-    "zile_ramase": 0,
-    "link": "https://amcupon.ro/cod-reducere/baristelli.ro",
-    "story": "🍽️ -10% la Baristelli!\nFara cod necesar 👇\namcupon.ro/cod-reducere/baristelli.ro",
-    "perete": "🍽️ -10% la Baristelli — activ acum\n\n✅ ☕ 10% reducere la toată cafeaua Baristelli - Ziua Internațională a Cafelei\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/baristelli.ro",
-    "hashtags": "#reduceri #mancare #bauturi #romania #baristelli"
+    "procent": "",
+    "zile_ramase": 90,
+    "link": "https://amcupon.ro/cod-reducere/zephyrlabs.ro",
+    "story": "💊 Reducere Zephyrlabs azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/zephyrlabs.ro",
+    "perete": "💊 Reducere activa la Zephyrlabs\n\n✅ Promotie produse Melegatti Pharma - Septembrie-Decembrie\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/zephyrlabs.ro",
+    "hashtags": "#reduceri #sanatate #farmacie #suplimente #romania #zephyrlabs"
   },
   {
     "magazin": "maranc.ro",
