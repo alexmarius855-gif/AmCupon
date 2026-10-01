@@ -1,13 +1,13 @@
 {
-  "generat": "2026-09-30",
-  "total_magazine": 960,
-  "cu_promotie": 107,
-  "cu_cod_real": 25,
-  "doar_oferta": 82,
-  "procent_cu_promotie": 11.1,
-  "procent_cu_cod": 2.6,
-  "reducere_mediana_generala": 20.0,
-  "magazine_cu_procent_declarat": 68,
+  "generat": "2026-10-01",
+  "total_magazine": 963,
+  "cu_promotie": 110,
+  "cu_cod_real": 24,
+  "doar_oferta": 86,
+  "procent_cu_promotie": 11.4,
+  "procent_cu_cod": 2.5,
+  "reducere_mediana_generala": 20,
+  "magazine_cu_procent_declarat": 69,
   "categorii": [
     {
       "slug": "carti-educatie",
@@ -31,7 +31,7 @@
       "slug": "fashion",
       "nume": "Fashion",
       "magazine": 80,
-      "cu_promotie": 13,
+      "cu_promotie": 14,
       "reducere_mediana": 30.0,
       "reducere_max": 55,
       "esantion": 8
@@ -44,6 +44,15 @@
       "reducere_mediana": 25,
       "reducere_max": 75,
       "esantion": 9
+    },
+    {
+      "slug": "software",
+      "nume": "Software & digital",
+      "magazine": 69,
+      "cu_promotie": 3,
+      "reducere_mediana": 20,
+      "reducere_max": 50,
+      "esantion": 3
     },
     {
       "slug": "marketplace",
@@ -66,8 +75,8 @@
     {
       "slug": "sanatate",
       "nume": "Sănătate & farmacie",
-      "magazine": 48,
-      "cu_promotie": 9,
+      "magazine": 49,
+      "cu_promotie": 10,
       "reducere_mediana": 17.5,
       "reducere_max": 50,
       "esantion": 4
@@ -75,29 +84,20 @@
     {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
-      "magazine": 123,
+      "magazine": 126,
       "cu_promotie": 16,
-      "reducere_mediana": 13.5,
+      "reducere_mediana": 10.0,
       "reducere_max": 70,
       "esantion": 8
     },
     {
       "slug": "sport",
       "nume": "Sport & fitness",
-      "magazine": 36,
+      "magazine": 35,
       "cu_promotie": 3,
       "reducere_mediana": 10,
       "reducere_max": 30,
       "esantion": 3
-    },
-    {
-      "slug": "software",
-      "nume": "Software & digital",
-      "magazine": 69,
-      "cu_promotie": 2,
-      "reducere_mediana": null,
-      "reducere_max": null,
-      "esantion": 2
     },
     {
       "slug": "servicii",
