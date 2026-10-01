@@ -1,8 +1,8 @@
 {
-  "data": "2026-09-30",
-  "data_afisata": "30 septembrie 2026",
-  "titlu": "Radarul AmCupon — 30 septembrie 2026",
-  "intro": "Am trecut azi prin ofertele active si am pastrat doar ce merita. Iese in evidenta Laavooextensions si Tvcmall, dar mai jos ai selectia completa, verificata de noi. Toate codurile sunt testate; cele cu termen scurt le-am marcat.",
+  "data": "2026-10-01",
+  "data_afisata": "1 octombrie 2026",
+  "titlu": "Radarul AmCupon — 1 octombrie 2026",
+  "intro": "Am trecut azi prin ofertele active si am pastrat doar ce merita. Iese in evidenta Laavooextensions si Klaiyihair, dar mai jos ai selectia completa, verificata de noi. Toate codurile sunt testate; cele cu termen scurt le-am marcat.",
   "picks": [
     {
       "scor": 100,
@@ -15,36 +15,8 @@
       "descriere": "Fall Sale 15% off",
       "cod": "F15",
       "url": "https://amcupon.ro/cod-reducere/laavooextensions.com",
-      "zile_ramase": 6,
-      "take": "Oferta verificata — buna daca te incadrezi in categorie."
-    },
-    {
-      "scor": 100,
-      "magazin": "tvcmall.com",
-      "nume_afisat": "Tvcmall",
-      "categorie": "Servicii",
-      "categorie_slug": "servicii",
-      "logo_url": "https://www.google.com/s2/favicons?domain=tvcmall.com&sz=128",
-      "titlu": "6% off sitewide purchases",
-      "descriere": "6% off for $0-$150 order value, logged-in users only, can be used once.",
-      "cod": "TVC26Q3A6%",
-      "url": "https://amcupon.ro/cod-reducere/tvcmall.com",
-      "zile_ramase": 1,
-      "take": "Grabeste-te: expira in 1 zi. Oferta verificata — buna daca te incadrezi in categorie."
-    },
-    {
-      "scor": 100,
-      "magazin": "atzavarahotel.com",
-      "nume_afisat": "Atzavarahotel",
-      "categorie": "Călătorii",
-      "categorie_slug": "calatorii",
-      "logo_url": "",
-      "titlu": "Travel with geat discounts - Up to 20% off on stays | Atzavara Hotel & Spa",
-      "descriere": "Book your next getaway at Atzavara Hotel & Spa with the given coupon code and enjoy up to 20% off. Terms and Conditions:\n-Offer valid until 30/09/2026 -Offer valid for stay until 31/12/2026 -Subject to availability",
-      "cod": "AQUAWEB",
-      "url": "https://amcupon.ro/cod-reducere/atzavarahotel.com",
-      "zile_ramase": 1,
-      "take": "Grabeste-te: expira in 1 zi. Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 5,
+      "take": "Grabeste-te: expira in 5 zile. Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
       "scor": 100,
@@ -57,20 +29,6 @@
       "descriere": "18% OFF Sitewide — Code: Fall18 $30 OFF Orders Over $155 — Code: Fall30 $55 OFF Orders Over $239 — Code: Fall55",
       "cod": "Fall18",
       "url": "https://amcupon.ro/cod-reducere/klaiyihair.com",
-      "zile_ramase": 2,
-      "take": "Grabeste-te: expira in 2 zile. Oferta verificata — buna daca te incadrezi in categorie."
-    },
-    {
-      "scor": 100,
-      "magazin": "casa-andina.com",
-      "nume_afisat": "Casa Andina",
-      "categorie": "Casă & Grădină",
-      "categorie_slug": "casa-gradina",
-      "logo_url": "https://www.google.com/s2/favicons?domain=casa-andina.com&sz=128",
-      "titlu": "Up to 17% OFF on different proprieties of Casa Andina | Casa Andina",
-      "descriere": "Book your stays at Casa Andina and get up to 17% discount on stays with special promocode. Participating properties: - Casa Andina Premium Puno: 12% - Casa Andina Standard Puno: 12% - Casa Andina Standard Ayacucho: 12% - Centro by Casa Andina",
-      "cod": "DISCOUNT2026",
-      "url": "https://amcupon.ro/cod-reducere/casa-andina.com",
       "zile_ramase": 1,
       "take": "Grabeste-te: expira in 1 zi. Oferta verificata — buna daca te incadrezi in categorie."
     },
@@ -85,8 +43,50 @@
       "descriere": "",
       "cod": "",
       "url": "https://amcupon.ro/cod-reducere/answear.ro",
-      "zile_ramase": 7,
+      "zile_ramase": 6,
       "take": "Bun de prins daca oricum voiai sa-ti reimprospatezi garderoba."
+    },
+    {
+      "scor": 75,
+      "magazin": "carturesti.ro",
+      "nume_afisat": "Carturesti",
+      "categorie": "Cărți & Educație",
+      "categorie_slug": "carti-educatie",
+      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11380/medium/11380.png",
+      "titlu": "FestivalYA 2026",
+      "descriere": "",
+      "cod": "",
+      "url": "https://amcupon.ro/cod-reducere/carturesti.ro",
+      "zile_ramase": 5,
+      "take": "Grabeste-te: expira in 5 zile. Oferta verificata — buna daca te incadrezi in categorie."
+    },
+    {
+      "scor": 70,
+      "magazin": "orbitmobile.com",
+      "nume_afisat": "Orbitmobile",
+      "categorie": "Servicii",
+      "categorie_slug": "servicii",
+      "logo_url": "https://www.google.com/s2/favicons?domain=orbitmobile.com&sz=128",
+      "titlu": "Quber Savings",
+      "descriere": "Quber Savings",
+      "cod": "QUBER10",
+      "url": "https://amcupon.ro/cod-reducere/orbitmobile.com",
+      "zile_ramase": 395,
+      "take": "Oferta verificata — buna daca te incadrezi in categorie."
+    },
+    {
+      "scor": 70,
+      "magazin": "cvlife.com",
+      "nume_afisat": "Cvlife",
+      "categorie": "Sport & Fitness",
+      "categorie_slug": "sport",
+      "logo_url": "https://www.google.com/s2/favicons?domain=cvlife.com&sz=128",
+      "titlu": "30% discount",
+      "descriere": "Unlock Savings with 30% Off: Use Code: 30CVLIFE",
+      "cod": "30CVLIFE",
+      "url": "https://amcupon.ro/cod-reducere/cvlife.com",
+      "zile_ramase": 243,
+      "take": "Oferta verificata — buna daca te incadrezi in categorie."
     }
   ],
   "outro": "Revino maine la Radar — alegem din nou ce merita, ca sa nu cauti tu prin sute de oferte.",
