@@ -440,8 +440,8 @@
    "magazine": 107
   },
   "2026-10-02": {
-   "promotii": 227,
-   "magazine": 112
+   "promotii": 228,
+   "magazine": 113
   }
  },
  "magazine": {
@@ -6853,6 +6853,17 @@
     "ultima": "2026-06-29",
     "expira": "",
     "activa": false
+   }
+  ],
+  "rowenta.ro": [
+   {
+    "k": "aniversare4anirowenta|",
+    "titlu": "ANIVERSARE 4 ANI ROWENTA",
+    "cod": false,
+    "prima": "2026-10-02",
+    "ultima": "2026-10-02",
+    "expira": "2026-10-28",
+    "activa": true
    }
   ],
   "sanoverde.ro": [

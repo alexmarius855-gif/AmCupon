@@ -1,8 +1,8 @@
 {
-  "data": "2026-10-01",
-  "data_afisata": "1 octombrie 2026",
-  "titlu": "Radarul AmCupon — 1 octombrie 2026",
-  "intro": "Am trecut azi prin ofertele active si am pastrat doar ce merita. Iese in evidenta Laavooextensions si Klaiyihair, dar mai jos ai selectia completa, verificata de noi. Toate codurile sunt testate; cele cu termen scurt le-am marcat.",
+  "data": "2026-10-02",
+  "data_afisata": "2 octombrie 2026",
+  "titlu": "Radarul AmCupon — 2 octombrie 2026",
+  "intro": "Am trecut azi prin ofertele active si am pastrat doar ce merita. Iese in evidenta Laavooextensions si Ugeat, dar mai jos ai selectia completa, verificata de noi. Toate codurile sunt testate; cele cu termen scurt le-am marcat.",
   "picks": [
     {
       "scor": 100,
@@ -15,22 +15,36 @@
       "descriere": "Fall Sale 15% off",
       "cod": "F15",
       "url": "https://amcupon.ro/cod-reducere/laavooextensions.com",
-      "zile_ramase": 5,
-      "take": "Grabeste-te: expira in 5 zile. Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 4,
+      "take": "Grabeste-te: expira in 4 zile. Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
       "scor": 100,
-      "magazin": "klaiyihair.com",
-      "nume_afisat": "Klaiyihair",
+      "magazin": "ugeat.com",
+      "nume_afisat": "Ugeat",
       "categorie": "Beauty & Îngrijire",
       "categorie_slug": "beauty",
-      "logo_url": "https://www.google.com/s2/favicons?domain=klaiyihair.com&sz=128",
-      "titlu": "Up To 23% OFF With Codes: Fall18, Fall30 & Fall55",
-      "descriere": "18% OFF Sitewide — Code: Fall18 $30 OFF Orders Over $155 — Code: Fall30 $55 OFF Orders Over $239 — Code: Fall55",
-      "cod": "Fall18",
-      "url": "https://amcupon.ro/cod-reducere/klaiyihair.com",
-      "zile_ramase": 1,
-      "take": "Grabeste-te: expira in 1 zi. Oferta verificata — buna daca te incadrezi in categorie."
+      "logo_url": "https://www.google.com/s2/favicons?domain=ugeat.com&sz=128",
+      "titlu": "wedding hair sale 15% off",
+      "descriere": "wedding hair sale 15% off",
+      "cod": "WH15",
+      "url": "https://amcupon.ro/cod-reducere/ugeat.com",
+      "zile_ramase": 6,
+      "take": "Oferta verificata — buna daca te incadrezi in categorie."
+    },
+    {
+      "scor": 75,
+      "magazin": "libris.ro",
+      "nume_afisat": "Libris",
+      "categorie": "Cărți & Educație",
+      "categorie_slug": "carti-educatie",
+      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9868/medium/9868.gif",
+      "titlu": "Back to Uni și nu numai Hai la o sesiune de răsfoit!",
+      "descriere": "",
+      "cod": "",
+      "url": "https://amcupon.ro/cod-reducere/libris.ro",
+      "zile_ramase": 2,
+      "take": "Grabeste-te: expira in 2 zile. Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
       "scor": 75,
@@ -43,22 +57,8 @@
       "descriere": "",
       "cod": "",
       "url": "https://amcupon.ro/cod-reducere/answear.ro",
-      "zile_ramase": 6,
-      "take": "Bun de prins daca oricum voiai sa-ti reimprospatezi garderoba."
-    },
-    {
-      "scor": 75,
-      "magazin": "carturesti.ro",
-      "nume_afisat": "Carturesti",
-      "categorie": "Cărți & Educație",
-      "categorie_slug": "carti-educatie",
-      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11380/medium/11380.png",
-      "titlu": "FestivalYA 2026",
-      "descriere": "",
-      "cod": "",
-      "url": "https://amcupon.ro/cod-reducere/carturesti.ro",
       "zile_ramase": 5,
-      "take": "Grabeste-te: expira in 5 zile. Oferta verificata — buna daca te incadrezi in categorie."
+      "take": "Grabeste-te: expira in 5 zile. Bun de prins daca oricum voiai sa-ti reimprospatezi garderoba."
     },
     {
       "scor": 70,
@@ -71,7 +71,7 @@
       "descriere": "Quber Savings",
       "cod": "QUBER10",
       "url": "https://amcupon.ro/cod-reducere/orbitmobile.com",
-      "zile_ramase": 395,
+      "zile_ramase": 394,
       "take": "Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
@@ -85,7 +85,7 @@
       "descriere": "Unlock Savings with 30% Off: Use Code: 30CVLIFE",
       "cod": "30CVLIFE",
       "url": "https://amcupon.ro/cod-reducere/cvlife.com",
-      "zile_ramase": 243,
+      "zile_ramase": 242,
       "take": "Oferta verificata — buna daca te incadrezi in categorie."
     }
   ],

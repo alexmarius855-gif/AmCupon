@@ -2962,6 +2962,41 @@
     "unique_code": "ef2621c0a"
   },
   {
+    "magazin": "rowenta.ro",
+    "url": "https://www.rowenta.ro/",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.rowenta.ro%2F",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11125/medium/11125.png",
+    "categorie": "Electronice & IT",
+    "categorie_slug": "electronice",
+    "comision": "4.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 26,
+    "promotii": [
+      {
+        "nume": "ANIVERSARE 4 ANI ROWENTA",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.rowenta.ro%2Faniversare-4-ani",
+        "zile_ramase": 26,
+        "expira": "2026-10-28",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-02",
+    "scor_final": 30.0,
+    "program_id": 10134,
+    "unique_code": "d19151f4f"
+  },
+  {
     "magazin": "regata.ro",
     "url": "https://regata.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fregata.ro%2F",
@@ -15676,31 +15711,6 @@
     "scor_final": 0.0,
     "program_id": 11338,
     "unique_code": "a5d726fe9"
-  },
-  {
-    "magazin": "rowenta.ro",
-    "url": "https://www.rowenta.ro/",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.rowenta.ro%2F",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11125/medium/11125.png",
-    "categorie": "Electronice & IT",
-    "categorie_slug": "electronice",
-    "comision": "4.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-02",
-    "scor_final": 0.0,
-    "program_id": 10134,
-    "unique_code": "d19151f4f"
   },
   {
     "magazin": "petmart.ro",

@@ -1,10 +1,10 @@
 {
   "generat": "2026-10-02",
   "total_magazine": 960,
-  "cu_promotie": 115,
+  "cu_promotie": 116,
   "cu_cod_real": 23,
-  "doar_oferta": 92,
-  "procent_cu_promotie": 12.0,
+  "doar_oferta": 93,
+  "procent_cu_promotie": 12.1,
   "procent_cu_cod": 2.4,
   "reducere_mediana_generala": 22.5,
   "magazine_cu_procent_declarat": 70,
@@ -49,7 +49,7 @@
       "slug": "electronice",
       "nume": "Electronice & IT",
       "magazine": 84,
-      "cu_promotie": 11,
+      "cu_promotie": 12,
       "reducere_mediana": 25,
       "reducere_max": 75,
       "esantion": 9

@@ -251,6 +251,10 @@
   "fp": "a1f06cd93c0f5d33",
   "data": "2026-10-01"
  },
+ "/cod-reducere/rowenta.ro": {
+  "fp": "0d7bd87c2f574f53",
+  "data": "2026-10-02"
+ },
  "/cod-reducere/regata.ro": {
   "fp": "75f7d94d5d17d884",
   "data": "2026-08-31"
@@ -276,7 +280,7 @@
   "data": "2026-10-02"
  },
  "/cod-reducere/apiland.ro": {
-  "fp": "6c0188417ec0d39f",
+  "fp": "2320d0d90d13d9a8",
   "data": "2026-10-02"
  },
  "/cod-reducere/liki24.ro": {
@@ -364,7 +368,7 @@
   "data": "2026-10-01"
  },
  "/cod-reducere/optiblu.ro": {
-  "fp": "e5e528b4ac48bcd3",
+  "fp": "1f7443c502110a97",
   "data": "2026-10-02"
  },
  "/cod-reducere/uniquestore.ro": {
@@ -2215,10 +2219,6 @@
   "fp": "9e31e3154a54cca1",
   "data": "2026-10-01"
  },
- "/cod-reducere/rowenta.ro": {
-  "fp": "ad22dd72d43ecddc",
-  "data": "2026-08-16"
- },
  "/cod-reducere/petmart.ro": {
   "fp": "68f4916a7e63410d",
   "data": "2026-08-31"
@@ -2444,7 +2444,7 @@
   "data": "2026-08-16"
  },
  "/cod-reducere/arabescu.ro": {
-  "fp": "8c2041ec5de0f639",
+  "fp": "2d2ad3d3c472ba9d",
   "data": "2026-10-02"
  },
  "/cod-reducere/a2t.ro": {
@@ -3312,7 +3312,7 @@
   "data": "2026-09-04"
  },
  "/cod-reducere/nepstore.ro": {
-  "fp": "c82952b31d3b8f70",
+  "fp": "2d2ad3d3c472ba9d",
   "data": "2026-10-02"
  },
  "/cod-reducere/reyze.ro": {
@@ -3340,7 +3340,7 @@
   "data": "2026-10-01"
  },
  "/cod-reducere/12note.ro": {
-  "fp": "8c2041ec5de0f639",
+  "fp": "350b96f2c332115d",
   "data": "2026-10-02"
  },
  "/cod-reducere/republicabio.ro": {
@@ -3616,7 +3616,7 @@
   "data": "2026-08-16"
  },
  "/cod-reducere/air7.ro": {
-  "fp": "9c7844908c8955cc",
+  "fp": "8c7fe6bb22692f70",
   "data": "2026-10-02"
  },
  "/cod-reducere/workfit.ro": {
@@ -3760,7 +3760,7 @@
   "data": "2026-08-16"
  },
  "/cod-reducere/6biologico.ro": {
-  "fp": "8c2041ec5de0f639",
+  "fp": "fb60be5efe8b962e",
   "data": "2026-10-02"
  },
  "/cod-reducere/flightpark.ro": {
