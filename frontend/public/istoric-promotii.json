@@ -440,8 +440,8 @@
    "magazine": 107
   },
   "2026-10-02": {
-   "promotii": 228,
-   "magazine": 113
+   "promotii": 235,
+   "magazine": 117
   }
  },
  "magazine": {
@@ -1140,9 +1140,9 @@
     "titlu": "☕ Cafeaua lunii - Costa Rica Tres Nubes",
     "cod": false,
     "prima": "2026-09-29",
-    "ultima": "2026-10-01",
+    "ultima": "2026-10-02",
     "expira": "2026-10-31",
-    "activa": false
+    "activa": true
    },
    {
     "k": "10reducerelatoatacafeauabaristelliziuainternationalaacafelei|",
@@ -3987,6 +3987,35 @@
     "activa": false
    }
   ],
+  "giftera.ro": [
+   {
+    "k": "reduceridepanala15laseturilecadougiftera|",
+    "titlu": "Reduceri de pana la 15% la seturile cadou Giftera",
+    "cod": false,
+    "prima": "2026-10-02",
+    "ultima": "2026-10-02",
+    "expira": "2026-10-31",
+    "activa": true
+   },
+   {
+    "k": "reduceridepanala15lacadouripentrueapegifteraro|",
+    "titlu": "Reduceri de pana la 15% la cadouri pentru ea pe Giftera.ro",
+    "cod": false,
+    "prima": "2026-10-02",
+    "ultima": "2026-10-02",
+    "expira": "2026-10-31",
+    "activa": true
+   },
+   {
+    "k": "cadouridecraciungifteraroseturiculantisorsimesajpentruceidragi|",
+    "titlu": "Cadouri de Craciun Giftera.ro – seturi cu lantisor si mesaj pentru cei dragi",
+    "cod": false,
+    "prima": "2026-10-02",
+    "ultima": "2026-10-02",
+    "expira": "2026-12-23",
+    "activa": true
+   }
+  ],
   "giftspot.ro": [
    {
     "k": "giftspotromagazinuldecadourioriginalesigadgeturi|",
@@ -6067,6 +6096,24 @@
   ],
   "noriel.ro": [
    {
+    "k": "50leivouchercadoulacomenziledeminimum249delei511102026|",
+    "titlu": "50 lei Voucher Cadou la comenzile de minimum 249 de lei | 5-11.10.2026",
+    "cod": false,
+    "prima": "2026-10-02",
+    "ultima": "2026-10-02",
+    "expira": "2026-10-11",
+    "activa": true
+   },
+   {
+    "k": "20reducerelacumparaturilegoninjagosaulegosuperheroesdeminimum149lei511102026|",
+    "titlu": "20% REDUCERE la cumparaturi LEGO Ninjago sau LEGO Super Heroes de minimum 149 lei| 5-11.10.2026",
+    "cod": false,
+    "prima": "2026-10-02",
+    "ultima": "2026-10-02",
+    "expira": "2026-10-11",
+    "activa": true
+   },
+   {
     "k": "catalogofertebacktoschool2026060830092026|",
     "titlu": "Catalog Oferte Back to school 2026 | 06.08-30.09.2026",
     "cod": false,
@@ -6919,6 +6966,17 @@
     "ultima": "2026-09-15",
     "expira": "",
     "activa": false
+   }
+  ],
+  "shopika.ro": [
+   {
+    "k": "promotiecolectiadetoamnareducere15latotperioada0912102026|",
+    "titlu": "Promotie Colectia de Toamna - reducere 15% la tot. Perioada 09-12.10.2026",
+    "cod": false,
+    "prima": "2026-10-02",
+    "ultima": "2026-10-02",
+    "expira": "2026-10-12",
+    "activa": true
    }
   ],
   "snailax.com": [
