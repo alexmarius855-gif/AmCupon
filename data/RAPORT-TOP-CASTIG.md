@@ -1,5 +1,5 @@
 # 💰 TOP MAGAZINE după POTENȚIAL DE CÂȘTIG
-> Generat automat 03.10.2026 13:51. Pe astea să le împingi (articole, pin-uri, postări).
+> Generat automat 04.10.2026 14:31. Pe astea să le împingi (articole, pin-uri, postări).
 
 **Scor = comision × popularitate × ofertă.** Comisionul mare singur înșală — astea-s banii REALI.
 
@@ -32,9 +32,9 @@
 | 25 | Hototools (hototools.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
 | 26 | Billionconnect (billionconnect.net) | 10% | 0 | 🏷️ ofertă | 14.0 |
 | 27 | Comfier (comfier.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 28 | Librex (librex.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 29 | Shopika (shopika.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 30 | Apiland (apiland.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 28 | Shopika (shopika.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 29 | Apiland (apiland.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 30 | Doctorshield (doctorshield.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
 
 ## 🎯 Cum folosești raportul
 - **Top 10** = prioritate maximă pentru articole „cel mai bun X" + pin-uri Pinterest
