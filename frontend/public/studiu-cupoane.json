@@ -1,9 +1,9 @@
 {
-  "generat": "2026-10-03",
-  "total_magazine": 958,
-  "cu_promotie": 120,
+  "generat": "2026-10-04",
+  "total_magazine": 953,
+  "cu_promotie": 119,
   "cu_cod_real": 23,
-  "doar_oferta": 97,
+  "doar_oferta": 96,
   "procent_cu_promotie": 12.5,
   "procent_cu_cod": 2.4,
   "reducere_mediana_generala": 20,
@@ -12,8 +12,8 @@
     {
       "slug": "carti-educatie",
       "nume": "Cărți & educație",
-      "magazine": 30,
-      "cu_promotie": 9,
+      "magazine": 29,
+      "cu_promotie": 8,
       "reducere_mediana": 80.0,
       "reducere_max": 90,
       "esantion": 4
@@ -48,7 +48,7 @@
     {
       "slug": "fashion",
       "nume": "Fashion",
-      "magazine": 80,
+      "magazine": 78,
       "cu_promotie": 15,
       "reducere_mediana": 20,
       "reducere_max": 55,
@@ -93,7 +93,7 @@
     {
       "slug": "sanatate",
       "nume": "Sănătate & farmacie",
-      "magazine": 49,
+      "magazine": 48,
       "cu_promotie": 11,
       "reducere_mediana": 17.5,
       "reducere_max": 50,
@@ -147,7 +147,7 @@
     {
       "slug": "animale",
       "nume": "Pet shop",
-      "magazine": 15,
+      "magazine": 14,
       "cu_promotie": 1,
       "reducere_mediana": null,
       "reducere_max": null,
