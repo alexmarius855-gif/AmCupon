@@ -448,8 +448,8 @@
    "magazine": 117
   },
   "2026-10-04": {
-   "promotii": 234,
-   "magazine": 116
+   "promotii": 235,
+   "magazine": 117
   }
  },
  "magazine": {
@@ -5101,9 +5101,9 @@
     "titlu": "October Book Fest la Librex 🎉",
     "cod": false,
     "prima": "2026-09-29",
-    "ultima": "2026-10-03",
+    "ultima": "2026-10-04",
     "expira": "2026-10-04",
-    "activa": false
+    "activa": true
    },
    {
     "k": "sitenousi25deleicadou|",

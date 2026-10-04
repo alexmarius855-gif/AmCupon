@@ -967,6 +967,76 @@
     "ultima_verificare": "2026-10-04"
   },
   {
+    "magazin": "ugeat.com",
+    "url": "https://www.ugeat.com/",
+    "url_afiliat": "https://ugeat.pxf.io/c/7401119/3855421/51250",
+    "logo_url": "https://www.google.com/s2/favicons?domain=ugeat.com&sz=128",
+    "categorie": "Beauty & Îngrijire",
+    "categorie_slug": "beauty",
+    "comision": "Variabil",
+    "rank": null,
+    "scor_afiliere": 50,
+    "scor_final": 60.0,
+    "prioritate": "standard",
+    "canal_recomandat": "Content, SEO, Social",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": true,
+    "zile_ramase": 4,
+    "promotii": [
+      {
+        "nume": "Clearance sale50%off",
+        "descriere": "Clearance: Enjoy 50% off select items!",
+        "cod_cupon": "",
+        "landing_page": "https://ugeat.pxf.io/c/7401119/3855421/51250?u=https%3A%2F%2Fwww.ugeat.com",
+        "zile_ramase": 223,
+        "expira": "2027-05-15",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "virgin+70%off",
+        "descriere": "Enjoy a 70% discount on high-quality Virgin+ series products.",
+        "cod_cupon": "VR70",
+        "landing_page": "https://ugeat.pxf.io/c/7401119/3855421/51250?u=https%3A%2F%2Fwww.ugeat.com",
+        "zile_ramase": 223,
+        "expira": "2027-05-15",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "Buy together 25% off",
+        "descriere": "Purchase together to enjoy a 25% discount.",
+        "cod_cupon": "",
+        "landing_page": "https://ugeat.pxf.io/c/7401119/3855421/51250?u=https%3A%2F%2Fwww.ugeat.com",
+        "zile_ramase": 223,
+        "expira": "2027-05-15",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "wedding hair sale 15% off",
+        "descriere": "wedding hair sale 15% off",
+        "cod_cupon": "WH15",
+        "landing_page": "https://ugeat.pxf.io/c/7401119/3855421/51250?u=https%3A%2F%2Fwww.ugeat.com",
+        "zile_ramase": 4,
+        "expira": "2026-10-08",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "wedding hair sale 22% off",
+        "descriere": "wedding hair sale 22% off",
+        "cod_cupon": "WH22",
+        "landing_page": "https://ugeat.pxf.io/c/7401119/3855421/51250?u=https%3A%2F%2Fwww.ugeat.com",
+        "zile_ramase": 4,
+        "expira": "2026-10-08",
+        "sursa": "impact_deals_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "impact",
+    "descriere": "",
+    "ultima_verificare": "2026-10-04"
+  },
+  {
     "magazin": "booking.regalhotel.com",
     "url": "http://www.booking.regalhotel.com",
     "url_afiliat": "https://regalhotels.sjv.io/c/7401119/3436203/25869",
@@ -1819,76 +1889,6 @@
         "landing_page": "https://omfort.sjv.io/c/7401119/3731076/46802?u=https%3A%2F%2Ftheomfort.com",
         "zile_ramase": 87,
         "expira": "2026-12-30",
-        "sursa": "impact_deals_api"
-      }
-    ],
-    "exclusiv": false,
-    "platforma": "impact",
-    "descriere": "",
-    "ultima_verificare": "2026-10-04"
-  },
-  {
-    "magazin": "ugeat.com",
-    "url": "https://www.ugeat.com/",
-    "url_afiliat": "https://ugeat.pxf.io/c/7401119/3855421/51250",
-    "logo_url": "https://www.google.com/s2/favicons?domain=ugeat.com&sz=128",
-    "categorie": "Beauty & Îngrijire",
-    "categorie_slug": "beauty",
-    "comision": "Variabil",
-    "rank": null,
-    "scor_afiliere": 50,
-    "scor_final": 50.0,
-    "prioritate": "standard",
-    "canal_recomandat": "Content, SEO, Social",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": true,
-    "zile_ramase": 4,
-    "promotii": [
-      {
-        "nume": "Clearance sale50%off",
-        "descriere": "Clearance: Enjoy 50% off select items!",
-        "cod_cupon": "",
-        "landing_page": "https://ugeat.pxf.io/c/7401119/3855421/51250?u=https%3A%2F%2Fwww.ugeat.com",
-        "zile_ramase": 223,
-        "expira": "2027-05-15",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "virgin+70%off",
-        "descriere": "Enjoy a 70% discount on high-quality Virgin+ series products.",
-        "cod_cupon": "VR70",
-        "landing_page": "https://ugeat.pxf.io/c/7401119/3855421/51250?u=https%3A%2F%2Fwww.ugeat.com",
-        "zile_ramase": 223,
-        "expira": "2027-05-15",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "Buy together 25% off",
-        "descriere": "Purchase together to enjoy a 25% discount.",
-        "cod_cupon": "",
-        "landing_page": "https://ugeat.pxf.io/c/7401119/3855421/51250?u=https%3A%2F%2Fwww.ugeat.com",
-        "zile_ramase": 223,
-        "expira": "2027-05-15",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "wedding hair sale 15% off",
-        "descriere": "wedding hair sale 15% off",
-        "cod_cupon": "WH15",
-        "landing_page": "https://ugeat.pxf.io/c/7401119/3855421/51250?u=https%3A%2F%2Fwww.ugeat.com",
-        "zile_ramase": 4,
-        "expira": "2026-10-08",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "wedding hair sale 22% off",
-        "descriere": "wedding hair sale 22% off",
-        "cod_cupon": "WH22",
-        "landing_page": "https://ugeat.pxf.io/c/7401119/3855421/51250?u=https%3A%2F%2Fwww.ugeat.com",
-        "zile_ramase": 4,
-        "expira": "2026-10-08",
         "sursa": "impact_deals_api"
       }
     ],
@@ -3663,6 +3663,41 @@
     "scor_final": 30.0,
     "program_id": 624,
     "unique_code": "ac2bffaf7"
+  },
+  {
+    "magazin": "librex.ro",
+    "url": "https://www.librex.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.librex.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11362/medium/11362.png",
+    "categorie": "Cărți & Educație",
+    "categorie_slug": "carti-educatie",
+    "comision": "10.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 0,
+    "promotii": [
+      {
+        "nume": "October Book Fest la Librex 🎉",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.librex.ro%2Flp%2Foctober-book-fest%2F",
+        "zile_ramase": 0,
+        "expira": "2026-10-04",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-04",
+    "scor_final": 30.0,
+    "program_id": 3089,
+    "unique_code": "3085d2457"
   },
   {
     "magazin": "paa-home.ro",
@@ -16146,31 +16181,6 @@
     "unique_code": "704cb0cb9"
   },
   {
-    "magazin": "parmashop.ro",
-    "url": "https://parmashop.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fparmashop.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13304/medium/13304.jpg",
-    "categorie": "Mâncare & Băuturi",
-    "categorie_slug": "mancare-bauturi",
-    "comision": "7.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-04",
-    "scor_final": 0.0,
-    "program_id": 11817,
-    "unique_code": "bc660cd87"
-  },
-  {
     "magazin": "soundhouse.ro",
     "url": "https://soundhouse.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fsoundhouse.ro%2F",
@@ -18296,31 +18306,6 @@
     "unique_code": "9bdfaba23"
   },
   {
-    "magazin": "ietraditionala.com",
-    "url": "https://www.ietraditionala.com",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ietraditionala.com",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/3951/medium/3951.png",
-    "categorie": "Fashion",
-    "categorie_slug": "fashion",
-    "comision": "13.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-04",
-    "scor_final": 0.0,
-    "program_id": 3754,
-    "unique_code": "98cc861a7"
-  },
-  {
     "magazin": "edituratrei.ro",
     "url": "https://www.edituratrei.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.edituratrei.ro%2F",
@@ -20094,6 +20079,31 @@
     "scor_final": 0.0,
     "program_id": 1567,
     "unique_code": "77ba9e67f"
+  },
+  {
+    "magazin": "shinefashion.ro",
+    "url": "https://www.shinefashion.ro/",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.shinefashion.ro%2F",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/8794/medium/8794.jpg",
+    "categorie": "Fashion",
+    "categorie_slug": "fashion",
+    "comision": "15.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-04",
+    "scor_final": 0.0,
+    "program_id": 6330,
+    "unique_code": "864699797"
   },
   {
     "magazin": "fabricadegratare.ro",
