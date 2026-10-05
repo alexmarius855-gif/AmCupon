@@ -1,5 +1,5 @@
 # 💰 TOP MAGAZINE după POTENȚIAL DE CÂȘTIG
-> Generat automat 04.10.2026 14:31. Pe astea să le împingi (articole, pin-uri, postări).
+> Generat automat 05.10.2026 15:58. Pe astea să le împingi (articole, pin-uri, postări).
 
 **Scor = comision × popularitate × ofertă.** Comisionul mare singur înșală — astea-s banii REALI.
 
@@ -23,18 +23,18 @@
 | 16 | Uniquestore (uniquestore.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
 | 17 | Zelto (zelto.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
 | 18 | Cvlife (cvlife.com) | 10% | 0 | ✅ COD | 20.0 |
-| 19 | Mooyius (mooyius.com) | 12% | 0 | 🏷️ ofertă | 16.8 |
-| 20 | E Potion (e-potion.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
-| 21 | Incaltamintelamoda (incaltamintelamoda.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
-| 22 | Avidlove (avidlove.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 23 | Store (store.boyamic.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 24 | Ashimaryhair (ashimaryhair.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 25 | Hototools (hototools.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 26 | Billionconnect (billionconnect.net) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 27 | Comfier (comfier.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 28 | Shopika (shopika.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 29 | Apiland (apiland.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 30 | Doctorshield (doctorshield.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 19 | Nemira (nemira.ro) | 13% | 0 | 🏷️ ofertă | 18.2 |
+| 20 | Mooyius (mooyius.com) | 12% | 0 | 🏷️ ofertă | 16.8 |
+| 21 | E Potion (e-potion.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
+| 22 | Incaltamintelamoda (incaltamintelamoda.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
+| 23 | Oleya (oleya.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
+| 24 | Avidlove (avidlove.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 25 | Store (store.boyamic.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 26 | Ashimaryhair (ashimaryhair.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 27 | Hototools (hototools.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 28 | Billionconnect (billionconnect.net) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 29 | Comfier (comfier.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 30 | Shopika (shopika.ro) | 10% | 0 | 🏷️ ofertă | 14.0 |
 
 ## 🎯 Cum folosești raportul
 - **Top 10** = prioritate maximă pentru articole „cel mai bun X" + pin-uri Pinterest
