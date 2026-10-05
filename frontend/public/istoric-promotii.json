@@ -452,8 +452,8 @@
    "magazine": 117
   },
   "2026-10-05": {
-   "promotii": 242,
-   "magazine": 118
+   "promotii": 244,
+   "magazine": 119
   }
  },
  "magazine": {
@@ -785,6 +785,33 @@
    }
   ],
   "atelier49.ro": [
+   {
+    "k": "reduceridepanala50laproduseledinceramica10extracucodatelier49|",
+    "titlu": "Reduceri de pana la 50% la produsele din ceramica + 10% EXTRA cu cod ATELIER49",
+    "cod": false,
+    "prima": "2026-10-05",
+    "ultima": "2026-10-05",
+    "expira": "2026-10-30",
+    "activa": true
+   },
+   {
+    "k": "reduceridepanala41laarticoleledinlemn10extracucodatelier49|",
+    "titlu": "Reduceri de pana la 41% la articolele din lemn + 10% EXTRA cu cod ATELIER49",
+    "cod": false,
+    "prima": "2026-10-05",
+    "ultima": "2026-10-05",
+    "expira": "2026-10-31",
+    "activa": true
+   },
+   {
+    "k": "reduceridepanala36laarticoleledinmetal10extracucodatelier49|",
+    "titlu": "Reduceri de pana la 36% la articolele din metal + 10% EXTRA cu cod ATELIER49",
+    "cod": false,
+    "prima": "2026-10-05",
+    "ultima": "2026-10-05",
+    "expira": "2026-10-31",
+    "activa": true
+   },
    {
     "k": "discounturidepanala42lacadouripersonalizabile10extracucodatelier49|",
     "titlu": "Discounturi de pana la 42% la cadouri personalizabile + 10% EXTRA cu cod ATELIER49",
@@ -1446,6 +1473,15 @@
    }
   ],
   "casa-andina.com": [
+   {
+    "k": "getupto17discountonstayscasaandina|discount2026",
+    "titlu": "Get up to 17% discount on stays - Casa Andina",
+    "cod": true,
+    "prima": "2026-10-05",
+    "ultima": "2026-10-05",
+    "expira": "2027-01-01",
+    "activa": true
+   },
    {
     "k": "upto17offondifferentproprietiesofcasaandinacasaandina|discount2026",
     "titlu": "Up to 17% OFF on different proprieties of Casa Andina | Casa Andina",
@@ -4362,7 +4398,7 @@
     "prima": "2026-09-24",
     "ultima": "2026-10-05",
     "expira": "2026-10-05",
-    "activa": true
+    "activa": false
    },
    {
     "k": "backtoschoolbacktocool|",
@@ -5390,13 +5426,22 @@
   ],
   "litera.ro": [
    {
+    "k": "sarbatorim85milioanedecartiincaseleromanilor615octombrie|",
+    "titlu": "🎉 Sărbătorim 85 milioane de cărți în casele românilor (6 - 15 octombrie) 🎉",
+    "cod": false,
+    "prima": "2026-10-05",
+    "ultima": "2026-10-05",
+    "expira": "2026-10-15",
+    "activa": true
+   },
+   {
     "k": "chillthrillcarticaretetininprizapanala70cartecadou|",
     "titlu": "📘 Chill & Thrill, cărți care te țin în priză - până la -70% + carte cadou 📘",
     "cod": false,
     "prima": "2026-09-30",
     "ultima": "2026-10-05",
     "expira": "2026-10-05",
-    "activa": true
+    "activa": false
    },
    {
     "k": "celemaicititecartipanala70cadouri2630septembrie|",
@@ -8352,7 +8397,7 @@
     "prima": "2026-10-05",
     "ultima": "2026-10-05",
     "expira": "2026-10-05",
-    "activa": true
+    "activa": false
    },
    {
     "k": "40laoselectiedeprodusedingamaantiageglobal|",

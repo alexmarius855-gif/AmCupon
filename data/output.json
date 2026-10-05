@@ -1070,6 +1070,40 @@
     "ultima_verificare": "2026-10-05"
   },
   {
+    "magazin": "casa-andina.com",
+    "url": "https://www.casa-andina.com/",
+    "url_afiliat": "https://casaandina.pxf.io/c/7401119/3808525/19416",
+    "logo_url": "https://www.google.com/s2/favicons?domain=casa-andina.com&sz=128",
+    "categorie": "Casă & Grădină",
+    "categorie_slug": "casa-gradina",
+    "comision": "Variabil",
+    "rank": null,
+    "scor_afiliere": 50,
+    "scor_final": 60.0,
+    "prioritate": "standard",
+    "canal_recomandat": "Content, SEO, Social",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": true,
+    "zile_ramase": 88,
+    "promotii": [
+      {
+        "nume": "Get up to 17% discount on stays - Casa Andina",
+        "descriere": "Book your stay at Casa Andina and get up to 17% discount on stays. Terms and Conditions:\n- Offer valid until 31/12/2026. - Subject to availability.",
+        "cod_cupon": "DISCOUNT2026",
+        "landing_page": "https://casaandina.pxf.io/c/7401119/3808525/19416",
+        "zile_ramase": 88,
+        "expira": "2027-01-01",
+        "sursa": "impact_deals_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "impact",
+    "descriere": "",
+    "ultima_verificare": "2026-10-05"
+  },
+  {
     "magazin": "crownandchamparesorts.com",
     "url": "http://www.crownandchamparesorts.com/",
     "url_afiliat": "https://crownchamparesorts.pxf.io/c/7401119/3817225/24504",
@@ -2532,50 +2566,6 @@
     "unique_code": "a5e9e1225"
   },
   {
-    "magazin": "carturesti.ro",
-    "url": "https://carturesti.ro/",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2F",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11380/medium/11380.png",
-    "categorie": "Cărți & Educație",
-    "categorie_slug": "carti-educatie",
-    "comision": "9.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 1,
-    "promotii": [
-      {
-        "nume": "Kilipir Merch Fandom",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Foffer%2Fkilipir-merch-fandom-6642",
-        "zile_ramase": 25,
-        "expira": "2026-10-30",
-        "sursa": "2performant_api"
-      },
-      {
-        "nume": "FestivalYA 2026",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Foffer%2Ffestivalya-6692",
-        "zile_ramase": 1,
-        "expira": "2026-10-06",
-        "sursa": "2performant_api"
-      }
-    ],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-05",
-    "scor_final": 40.0,
-    "program_id": 1677,
-    "unique_code": "07b5f0fed"
-  },
-  {
     "magazin": "sportdepot.ro",
     "url": "https://www.sportdepot.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.sportdepot.ro%2F",
@@ -2697,6 +2687,50 @@
     "scor_final": 30.0,
     "program_id": 633,
     "unique_code": "7e537fc0d"
+  },
+  {
+    "magazin": "carturesti.ro",
+    "url": "https://carturesti.ro/",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2F",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11380/medium/11380.png",
+    "categorie": "Cărți & Educație",
+    "categorie_slug": "carti-educatie",
+    "comision": "9.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 1,
+    "promotii": [
+      {
+        "nume": "Kilipir Merch Fandom",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Foffer%2Fkilipir-merch-fandom-6642",
+        "zile_ramase": 25,
+        "expira": "2026-10-30",
+        "sursa": "2performant_api"
+      },
+      {
+        "nume": "FestivalYA 2026",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Foffer%2Ffestivalya-6692",
+        "zile_ramase": 1,
+        "expira": "2026-10-06",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-05",
+    "scor_final": 30.0,
+    "program_id": 1677,
+    "unique_code": "07b5f0fed"
   },
   {
     "magazin": "noriel.ro",
@@ -2943,15 +2977,15 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 0,
+    "zile_ramase": 10,
     "promotii": [
       {
-        "nume": "📘 Chill & Thrill, cărți care te țin în priză - până la -70% + carte cadou 📘",
-        "descriere": "",
+        "nume": "🎉 Sărbătorim 85 milioane de cărți în casele românilor (6 - 15 octombrie) 🎉",
+        "descriere": null,
         "cod_cupon": "",
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.litera.ro%2F",
-        "zile_ramase": 0,
-        "expira": "2026-10-05",
+        "zile_ramase": 10,
+        "expira": "2026-10-15",
         "sursa": "2performant_api"
       }
     ],
@@ -4194,41 +4228,6 @@
     "unique_code": "59076b6bf"
   },
   {
-    "magazin": "infinity.ro",
-    "url": "https://www.infinity.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.infinity.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11281/medium/11281.png",
-    "categorie": "Marketplace",
-    "categorie_slug": "marketplace",
-    "comision": "3.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 0,
-    "promotii": [
-      {
-        "nume": "Maratonul Reducerilor de toamnă",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.infinity.ro%2Fmaratonul-reducerilor-de-toamna",
-        "zile_ramase": 0,
-        "expira": "2026-10-05",
-        "sursa": "2performant_api"
-      }
-    ],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-05",
-    "scor_final": 30.0,
-    "program_id": 8350,
-    "unique_code": "a11b7b0d7"
-  },
-  {
     "magazin": "atomico.ro",
     "url": "https://atomico.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fatomico.ro",
@@ -4384,7 +4383,7 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 0,
+    "zile_ramase": 27,
     "promotii": [
       {
         "nume": "-40% la o selecție de produse din gama Anti-Âge Global",
@@ -4393,15 +4392,6 @@
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.yves-rocher.ro%2Fanti-age-minus-40%2Fc%2Fface-care-10",
         "zile_ramase": 27,
         "expira": "2026-11-01",
-        "sursa": "2performant_api"
-      },
-      {
-        "nume": "50% reducere la achiziționarea a minimum 2 produse",
-        "descriere": "",
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.yves-rocher.ro%2F",
-        "zile_ramase": 0,
-        "expira": "2026-10-05",
         "sursa": "2performant_api"
       }
     ],
@@ -4639,6 +4629,59 @@
     "scor_final": 30.0,
     "program_id": 11639,
     "unique_code": "ea9693b50"
+  },
+  {
+    "magazin": "atelier49.ro",
+    "url": "https://www.atelier49.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.atelier49.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14173/medium/14173.png",
+    "categorie": "Casă & Grădină",
+    "categorie_slug": "casa-gradina",
+    "comision": "6.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 25,
+    "promotii": [
+      {
+        "nume": "Reduceri de pana la 50% la produsele din ceramica + 10% EXTRA cu cod ATELIER49",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.atelier49.ro%2Fceramica",
+        "zile_ramase": 25,
+        "expira": "2026-10-30",
+        "sursa": "2performant_api"
+      },
+      {
+        "nume": "Reduceri de pana la 36% la articolele din metal + 10% EXTRA cu cod ATELIER49",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.atelier49.ro%2Ffier-forjat",
+        "zile_ramase": 26,
+        "expira": "2026-10-31",
+        "sursa": "2performant_api"
+      },
+      {
+        "nume": "Reduceri de pana la 41% la articolele din lemn + 10% EXTRA cu cod ATELIER49",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.atelier49.ro%2Farticole-din-lemn",
+        "zile_ramase": 26,
+        "expira": "2026-10-31",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-05",
+    "scor_final": 30.0,
+    "program_id": 12855,
+    "unique_code": "f134fe0e1"
   },
   {
     "magazin": "maranc.ro",
@@ -8188,30 +8231,6 @@
     "promotii": [],
     "exclusiv": false,
     "platforma": "2performant",
-    "ultima_verificare": "2026-10-05"
-  },
-  {
-    "magazin": "casa-andina.com",
-    "url": "https://www.casa-andina.com/",
-    "url_afiliat": "https://casaandina.pxf.io/c/7401119/3808525/19416",
-    "logo_url": "https://www.google.com/s2/favicons?domain=casa-andina.com&sz=128",
-    "categorie": "Casă & Grădină",
-    "categorie_slug": "casa-gradina",
-    "comision": "Variabil",
-    "rank": null,
-    "scor_afiliere": 50,
-    "scor_final": 60.0,
-    "prioritate": "standard",
-    "canal_recomandat": "Content, SEO, Social",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "impact",
-    "descriere": "",
     "ultima_verificare": "2026-10-05"
   },
   {
@@ -16304,6 +16323,31 @@
     "unique_code": "704cb0cb9"
   },
   {
+    "magazin": "parmashop.ro",
+    "url": "https://parmashop.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fparmashop.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13304/medium/13304.jpg",
+    "categorie": "Mâncare & Băuturi",
+    "categorie_slug": "mancare-bauturi",
+    "comision": "7.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-05",
+    "scor_final": 0.0,
+    "program_id": 11817,
+    "unique_code": "bc660cd87"
+  },
+  {
     "magazin": "soundhouse.ro",
     "url": "https://soundhouse.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fsoundhouse.ro%2F",
@@ -17252,31 +17296,6 @@
     "scor_final": 0.0,
     "program_id": 1711,
     "unique_code": "c3bdfda38"
-  },
-  {
-    "magazin": "librex.ro",
-    "url": "https://www.librex.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.librex.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11362/medium/11362.png",
-    "categorie": "Cărți & Educație",
-    "categorie_slug": "carti-educatie",
-    "comision": "10.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-05",
-    "scor_final": 0.0,
-    "program_id": 3089,
-    "unique_code": "3085d2457"
   },
   {
     "magazin": "ortopedicus.com",
@@ -20554,6 +20573,31 @@
     "unique_code": "58a5c4d0e"
   },
   {
+    "magazin": "infinity.ro",
+    "url": "https://www.infinity.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.infinity.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11281/medium/11281.png",
+    "categorie": "Marketplace",
+    "categorie_slug": "marketplace",
+    "comision": "3.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-05",
+    "scor_final": 0.0,
+    "program_id": 8350,
+    "unique_code": "a11b7b0d7"
+  },
+  {
     "magazin": "corturi24.ro",
     "url": "https://corturi24.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcorturi24.ro",
@@ -23479,31 +23523,6 @@
     "unique_code": "646cd29ac"
   },
   {
-    "magazin": "atelier49.ro",
-    "url": "https://www.atelier49.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.atelier49.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14173/medium/14173.png",
-    "categorie": "Casă & Grădină",
-    "categorie_slug": "casa-gradina",
-    "comision": "6.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-05",
-    "scor_final": 0.0,
-    "program_id": 12855,
-    "unique_code": "f134fe0e1"
-  },
-  {
     "magazin": "wojas.ro",
     "url": "https://wojas.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwojas.ro%2F",
@@ -24510,7 +24529,7 @@
     "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14277/medium/14277.jpg",
     "categorie": "Beauty & Îngrijire",
     "categorie_slug": "beauty",
-    "comision": "10.0",
+    "comision": "5.0",
     "rank": 999,
     "scor_afiliere": 0,
     "prioritate": "neclasat",
