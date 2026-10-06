@@ -6,6 +6,8 @@ import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
 import { esteInCategorie } from "../../lib/categoriiNisa";
+import { laParteneri } from "@/lib/cifreSite";
+import { NISA_CATEGORII } from "@/lib/categoriiNisa";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -16,7 +18,7 @@ interface Magazin {
 
 export const metadata: Metadata = {
   title: "Cod Reducere Pet Shop & Animale 2026 — Hrana Caini, Pisici",
-  description: "Coduri de reducere pet shop Romania: Petmart, Petmax, Bravapet, Animax. Hrana caini, hrana pisici, accesorii animale la preturi mici. Verificate zilnic.",
+  description: `Coduri de reducere pet shop ${laParteneri(NISA_CATEGORII.animale)}. Hrana caini, hrana pisici, accesorii animale la preturi mici. Actualizate zilnic.`,
   keywords: ["cod reducere petmart","reduceri pet shop","hrana caini ieftina","hrana pisici reducere","petmax cod cupon","accesorii animale reducere","zooplus romania"],
   alternates: { canonical: "https://amcupon.ro/animale" },
   openGraph: { title: "Pet Shop & Animale cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/animale", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },

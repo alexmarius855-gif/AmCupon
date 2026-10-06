@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
 import Link from "next/link";
+import { pesteMagazine } from "@/lib/cifreSite";
 
 export const metadata: Metadata = {
   title: "Servicii cu Reducere Romania 2026",
@@ -268,7 +269,7 @@ export default function ServiciiPage() {
           <div className="absolute inset-0 border border-[#ddf93c]/20 rounded-xl pointer-events-none" />
           <h2 className="text-xl font-black text-[#ffffff] mb-2">Cunosti si alte servicii cu programe de afiliere?</h2>
           <p className="text-[#c9ced5] text-sm mb-5">
-            AmCupon.ro monitorizeaza automat 1000+ magazine si servicii din Romania. Daca gasesti un serviciu cu reduceri active pe care nu il vedem, scrie-ne.
+            AmCupon.ro preia automat ofertele de la {pesteMagazine()} si servicii partenere. Daca gasesti un serviciu cu reduceri active pe care nu il vedem, scrie-ne.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link href="/recomandari"

@@ -151,11 +151,6 @@ function ProdusCard({ p, onSave, saved }: { p: Produs; onSave: () => void; saved
             </div>
           )}
 
-          {/* Badge VERIFICAT */}
-          <div className="absolute bottom-2 left-2 flex items-center gap-1 bg-emerald-500/20 border border-emerald-500/30 backdrop-blur-sm text-emerald-400 text-[9px] font-bold px-2 py-0.5 rounded-full">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse inline-block"/>
-            VERIFICAT
-          </div>
         </div>
 
         {/* Info */}
@@ -269,7 +264,7 @@ function DealCard({ m, rank }: { m: Magazin; rank?: number }) {
         <div className="flex items-center gap-2 mt-3 pt-3 border-t border-[#2a2f36]">
           <div className="flex items-center gap-1 text-emerald-600 text-[10px] font-semibold">
             <span className="w-1 h-1 rounded-full bg-emerald-400 animate-pulse inline-block"/>
-            Verificat azi
+            Ofertă activă
           </div>
           <span className="text-[#c9ced5] text-[10px]">·</span>
           <span className="text-[10px] text-[#c9ced5]">{m.promotii.length} {m.promotii.length === 1 ? "oferta" : "oferte"}</span>

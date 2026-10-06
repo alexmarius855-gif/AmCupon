@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "AmCupon.ro — Coduri de reducere verificate";
+export const alt = "AmCupon.ro — Coduri de reducere și oferte active";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -37,7 +37,7 @@ export default function OGImage() {
           Coduri de reducere actualizate zilnic
         </div>
         <div style={{ color: "#6b7178", fontSize: 20, marginTop: 28, display: "flex" }}>
-          1000+ magazine partenere
+          Oferte de la magazinele partenere
         </div>
       </div>
     ),

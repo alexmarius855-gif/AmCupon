@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const jsonLd = { "@context": "https://schema.org", "@type": "CollectionPage", "name": "Auto-Moto — Coduri Reducere 2026", "url": "https://amcupon.ro/moto" };
 
 const HUBURI = [
-  { href: "/piese-auto", emoji: "🔧", titlu: "Piese Auto", desc: "Anvelope, jante, vopsele, navigatie, baterii — magazine romanesti verificate" },
+  { href: "/piese-auto", emoji: "🔧", titlu: "Piese Auto", desc: "Anvelope, jante, vopsele, navigatie, baterii — magazine romanesti de profil" },
   { href: "/echipament-moto", emoji: "🏍️", titlu: "Echipament Moto", desc: "Casti, geci, manusi si piese pentru motociclete si scutere" },
 ];
 

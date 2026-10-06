@@ -87,10 +87,13 @@ PROMO_DA = [
     "{nume} are în acest moment {n} {ofcuv} {activ}, cum este „{promo}”. Lista se reîmprospătează automat pe AmCupon.ro, de mai multe ori pe zi.",
 ]
 # Paragraf oferte — fără promoții active
+# 05.10.2026: „dar verificăm zilnic" (pe 281 de pagini) si „ofertele apar frecvent" nu erau
+# adevarate — nu testam codurile, iar la multe magazine nu apare nicio oferta luni la rand. Ce e
+# adevarat: pipeline-ul preia automat ofertele din retea de trei ori pe zi.
 PROMO_NU = [
-    "Pe AmCupon.ro urmărim zilnic promoțiile {nume} și adăugăm codurile de reducere imediat ce devin active. Salvează pagina la favorite și revino des — ofertele de {cat} apar frecvent.",
-    "În acest moment nu există un cod activ pentru {nume}, dar verificăm zilnic. Adaugă pagina la favorite ca să fii primul care prinde următoarea reducere de {cat}.",
-    "Codurile {nume} se schimbă des. Pe AmCupon.ro monitorizăm zilnic ofertele de {cat} și le publicăm aici de îndată ce apar.",
+    "Pe AmCupon.ro preluăm automat, de trei ori pe zi, promoțiile {nume} din rețeaua de afiliere și le publicăm aici de îndată ce apar. Salvează pagina la favorite și revino când ai nevoie de {cat}.",
+    "În acest moment nu există un cod activ pentru {nume}. Pagina se actualizează automat de trei ori pe zi: adaug-o la favorite ca să prinzi următoarea reducere de {cat}.",
+    "Codurile {nume} apar și dispar după campaniile magazinului. Pe AmCupon.ro preluăm automat ofertele de {cat} și le publicăm aici de îndată ce apar.",
 ]
 # Paragraf „cum funcționează / gratuit"
 CUM = [

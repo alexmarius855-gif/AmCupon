@@ -30,7 +30,7 @@ interface Magazin extends CardMagazin {
  *      ce e citit din date, nu.
  */
 const DESC_CATEG: Record<string, string> = {
-  "marketplace":     "Coduri de reducere pentru marketplace-uri si magazine generaliste, unde gasesti de toate intr-un singur loc. Verificam ofertele zilnic si pastram doar ce e activ.",
+  "marketplace":     "Coduri de reducere pentru marketplace-uri si magazine generaliste, unde gasesti de toate intr-un singur loc. Actualizam ofertele zilnic si pastram doar ce e activ.",
   "casa-gradina":    "Reduceri la mobila, decoratiuni, unelte si tot ce tine de casa si gradina. De la amenajari complete pana la obiecte mici care schimba o camera.",
   "electronice":     "Coduri reducere pentru laptopuri, telefoane, televizoare si electronice IT. Categoria cu cele mai frecvente campanii din an.",
   "fashion":         "Voucher si coduri de reducere pentru haine, incaltaminte si accesorii. Colectii noi, stocuri la final de sezon si reduceri care se schimba saptamanal.",
@@ -227,7 +227,7 @@ export default function CategorieClient({ magazine, numeCategorie, slug, produse
             <div>
               <h3 className="font-bold text-[#ffffff] mb-2">✅ Coduri actualizate zilnic</h3>
               <p>
-                Toate codurile de reducere {numeCategorie} de pe AmCupon.ro sunt verificate automat.
+                Codurile de reducere {numeCategorie} de pe AmCupon.ro se actualizează automat; cele expirate dispar după data lor.
                 Afișăm zilele rămase până la expirare pentru fiecare cod în parte.
               </p>
             </div>

@@ -16,7 +16,7 @@ interface Magazin {
 
 export const metadata: Metadata = {
   title: "Smart Home Romania 2026 — Coduri Reducere eMAG",
-  description: "Cele mai bune oferte smart home Romania 2026: becuri inteligente, prize smart, camere supraveghere, termostate. Reduceri verificate zilnic la eMAG, Altex, Dedeman.",
+  description: "Oferte smart home 2026: becuri inteligente, prize smart, camere de supraveghere, de la magazinele partenere AmCupon. Reduceri active, actualizate zilnic.",
   keywords: ["smart home romania", "bec inteligent ieftin", "priza smart reducere", "camera supraveghere wifi", "termostat inteligent", "emag smart home", "casa inteligenta romania"],
   alternates: { canonical: "https://amcupon.ro/smart-home" },
   openGraph: { title: "Smart Home Romania 2026 | AmCupon.ro", url: "https://amcupon.ro/smart-home", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },

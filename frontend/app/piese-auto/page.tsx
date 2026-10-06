@@ -4,6 +4,7 @@ import fs from "fs";
 import path from "path";
 import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
+import { laParteneri } from "@/lib/cifreSite";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -14,7 +15,7 @@ interface Magazin {
 
 export const metadata: Metadata = {
   title: "Piese Auto Online Romania 2026 — Coduri Reducere Verificate",
-  description: "Compara magazinele de piese auto, anvelope, jante si detailing din Romania. Coduri de reducere verificate zilnic — Automobilus, Janta.ro, Anvelino si altele.",
+  description: `Compara magazinele de piese auto, anvelope, jante si detailing din Romania. Coduri de reducere actualizate zilnic ${laParteneri(["auto-moto"], 3)} si la alte magazine partenere.`,
   keywords: ["piese auto online", "cod reducere piese auto", "anvelope reducere", "jante auto reducere", "detailing auto romania", "magazin piese auto romania"],
   alternates: { canonical: "https://amcupon.ro/piese-auto" },
   openGraph: { title: "Piese Auto Online Romania 2026 | AmCupon.ro", url: "https://amcupon.ro/piese-auto", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
@@ -69,7 +70,7 @@ export default function PieseAutoPage() {
               {[
                 { val: `${magazine.length}`, label: "Magazine" },
                 { val: `${cuPromo.length}`, label: "Cu reduceri" },
-                { val: "Zilnic", label: "Verificat" },
+                { val: "Zilnic", label: "Actualizat" },
               ].map(s => (
                 <div key={s.label} className="bg-[#14181c] border border-[#1f2329] rounded-xl py-3 px-2">
                   <div className="text-xl font-black text-[#ffffff]">{s.val}</div>

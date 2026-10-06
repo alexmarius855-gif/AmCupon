@@ -22,168 +22,101 @@ LUNI = ["ianuarie","februarie","martie","aprilie","mai","iunie",
         "iulie","august","septembrie","octombrie","noiembrie","decembrie"]
 
 # ─── Perechi de comparatie + context editorial ───────────────────────────────
+# 06.10.2026 — curatate pentru corectitudine:
+#   · scoase perechile in care NICIUNUL dintre magazine nu e partener (temu-vs-shein, emag-vs-elefant,
+#     emag-vs-temu, fashiondays-vs-shein): fara date de la noi si fara link platit, iar randurile lor
+#     („livrare 1-3 zile", „retur 90 zile") nu erau verificate. Adresele au 308 in lib/redirecturi.ts;
+#   · ramas doar ce e sigur: specialitatea, returul de 30 de zile (FashionDays si Answear, verificat
+#     05.10), garantia de 30 de zile si chat-ul non-stop (Surfshark, Hostinger), brandurile proprii
+#     notorii. Scoase cifrele neverificate („700.000+ titluri", „800+ farmacii", praguri de transport,
+#     „reduceri 10-50%") si superlativele („neinegalata", „preturi imbatabile", „cel mai bun raport");
+#   · daca un magazin e partener nu se mai scrie aici: se calculeaza din output.json (build_comparison).
 PERECHI = [
     {
         "slug": "fashiondays-vs-answear",
         "m1": "fashiondays.ro", "m2": "answear.ro",
         "titlu_scurt": "FashionDays vs Answear",
-        "intro": "FashionDays si Answear sunt doua dintre cele mai mari magazine de fashion online din Romania. Ambele ofera haine, incaltaminte si accesorii de brand, dar difera prin selectie, reduceri si experienta de cumparare. Iata cum se compara in {luna} {an}.",
+        "intro": "FashionDays si Answear vand online haine, incaltaminte si accesorii de brand. Difera prin selectie si prin campaniile de reduceri. Iata cum se compara in {luna} {an}.",
         "puncte": [
-            {"aspect": "Specialitate", "v1": "Fashion premium, branduri internationale", "v2": "Sportswear, casual si branuri globale"},
-            {"aspect": "Livrare", "v1": "2-4 zile lucratoare", "v2": "2-5 zile lucratoare"},
+            {"aspect": "Specialitate", "v1": "Fashion, branduri internationale", "v2": "Fashion si sportswear, branduri internationale"},
             {"aspect": "Retur", "v1": "30 de zile", "v2": "30 de zile"},
-            {"aspect": "Plata rate", "v1": "Da, prin parteneri", "v2": "Da, prin parteneri"},
-            {"aspect": "Reduceri sezoniere", "v1": "Sales masive 50-80%", "v2": "Reduceri frecvente 20-50%"},
         ],
-        "verdict_m1": "Alege FashionDays daca vrei branduri premium si sales masive cu reduceri de pana la 80%. Ideal pentru ocazii speciale sau garderoba de sezon.",
-        "verdict_m2": "Alege Answear pentru o selectie mai larga de branduri sportive si casual, cu preturi mai constante si disponibilitate buna.",
+        "verdict_m1": "Alege FashionDays daca vrei selectia lor de branduri internationale si campaniile lor sezoniere.",
+        "verdict_m2": "Alege Answear pentru branduri de fashion si sportswear.",
         "categorie": "Fashion online Romania",
-    },
-    {
-        "slug": "temu-vs-shein",
-        "m1": "temu.com", "m2": "shein.com",
-        "titlu_scurt": "Temu vs Shein",
-        "intro": "Temu si Shein sunt doua platforme internationale de shopping cu preturi foarte mici, populare in Romania. Ambele ofera mii de produse la preturi sub piata, dar difera prin categorii, livrare si calitate. Iata comparatia completa in {luna} {an}.",
-        "puncte": [
-            {"aspect": "Specialitate", "v1": "Produse diverse: fashion, casa, electronice, jucarii", "v2": "Fashion feminin, accesorii si cosmetice"},
-            {"aspect": "Livrare Romania", "v1": "7-20 zile", "v2": "7-25 zile"},
-            {"aspect": "Retururi", "v1": "Retur gratuit prima comanda", "v2": "Credit magazin sau retur partial"},
-            {"aspect": "Preturi", "v1": "Extrem de mici, promotii zilnice", "v2": "Foarte mici, reduceri constante"},
-            {"aspect": "Varietate", "v1": "Milioane de produse, toate categoriile", "v2": "Focus pe moda femei si accesorii"},
-        ],
-        "verdict_m1": "Alege Temu daca vrei varietate maxima de categorii (nu doar fashion) si esti dispus sa astepti livrarea. Ideal pentru achizitii mici si experimentale.",
-        "verdict_m2": "Alege Shein daca esti orientat spre moda feminina, accesorii si cosmetice. Selectia de fashion este mai curata si mai usor de navigat.",
-        "categorie": "Shopping online international",
     },
     {
         "slug": "libris-vs-carturesti",
         "m1": "libris.ro", "m2": "carturesti.ro",
         "titlu_scurt": "Libris vs Carturesti",
-        "intro": "Libris si Carturesti sunt cele mai mari librarii online din Romania. Ambele ofera sute de mii de titluri, dar difera prin preturi, transport si beneficii pentru cititori. Iata cum se compara in {luna} {an}.",
+        "intro": "Libris si Carturesti vand carti online in Romania. Iata cum se compara in {luna} {an}, cu ofertele lor active pe AmCupon.ro.",
         "puncte": [
-            {"aspect": "Stoc", "v1": "700.000+ titluri", "v2": "600.000+ titluri"},
-            {"aspect": "Transport gratuit", "v1": "De la 50 lei", "v2": "De la 79 lei"},
-            {"aspect": "Punct de ridicare", "v1": "Easybox + curier", "v2": "Librarii fizice + curier"},
-            {"aspect": "Reduceri", "v1": "Reduceri zilnice 10-50%", "v2": "Reduceri periodice + club fideli"},
-            {"aspect": "Audiobook / ebook", "v1": "Da, sectiune dedicata", "v2": "Da, prin aplicatie proprie"},
+            {"aspect": "Specialitate", "v1": "Librarie online", "v2": "Librarie online si lant de librarii fizice"},
         ],
-        "verdict_m1": "Alege Libris pentru transport gratuit la comenzi mai mici si reduceri zilnice mai frecvente. Ideal daca comanzi regulat si vrei cel mai mic pret per carte.",
-        "verdict_m2": "Alege Carturesti pentru experienta completa cititor-librarie, acces la librarii fizice pentru ridicare si colectii editoriale curate.",
-        "categorie": "Carti online Romania",
-    },
-    {
-        "slug": "emag-vs-elefant",
-        "m1": "emag.ro", "m2": "elefant.ro",
-        "titlu_scurt": "eMAG vs Elefant",
-        "intro": "eMAG si Elefant sunt doua dintre cele mai cunoscute magazine online din Romania. Desi eMAG e mult mai mare, Elefant exceleaza la carti, jocuri si electronice pentru uz casnic. Iata comparatia directa in {luna} {an}.",
-        "puncte": [
-            {"aspect": "Specialitate", "v1": "Electronice, electrocasnice, fashion, tot", "v2": "Carti, jocuri, electronice, birotice"},
-            {"aspect": "Livrare rapida", "v1": "Livrare in aceeasi zi (Bucuresti)", "v2": "2-4 zile lucratoare"},
-            {"aspect": "Marketplace", "v1": "Mii de vanzatori terti", "v2": "Vanzator unic (mai sigur)"},
-            {"aspect": "Reduceri", "v1": "Campanii masive (Black Friday lider)", "v2": "Reduceri la carti si electronice"},
-            {"aspect": "Retur", "v1": "30 de zile", "v2": "30 de zile"},
-        ],
-        "verdict_m1": "Alege eMAG pentru varietate maxima, livrare rapida si cel mai mare Black Friday din Romania. Ideal pentru electronice, electrocasnice si tot ce ai nevoie intr-un singur loc.",
-        "verdict_m2": "Alege Elefant pentru carti, jocuri si produse educationale — selectia este mai curata si preturile la carti sunt adesea mai bune.",
-        "categorie": "Shopping online Romania",
-    },
-    {
-        "slug": "emag-vs-temu",
-        "m1": "emag.ro", "m2": "temu.com",
-        "titlu_scurt": "eMAG vs Temu",
-        "intro": "eMAG este liderul comerțului online din Romania, in timp ce Temu a cucerit piata cu preturi extrem de mici. Dar care este mai bun pentru tine? Iata o comparatie obiectiva in {luna} {an}.",
-        "puncte": [
-            {"aspect": "Viteza livrare", "v1": "1-3 zile (uneori aceeasi zi)", "v2": "7-20 zile (din China)"},
-            {"aspect": "Garantii produse", "v1": "Garantie legala, service autorizat", "v2": "Retur 90 zile, fara garantie service"},
-            {"aspect": "Preturi", "v1": "Competitive, cu variatii mari", "v2": "Extrem de mici, mai ales la accesorii"},
-            {"aspect": "Calitate", "v1": "Variabila, dar cu filtrare review-uri", "v2": "Variabila, bazata pe recenzii"},
-            {"aspect": "Plata in lei", "v1": "Da, toate metodele RO", "v2": "Da, card international"},
-        ],
-        "verdict_m1": "Alege eMAG cand ai nevoie urgent sau vrei garantii clare si produse verificate. Ideal pentru electronice, electrocasnice si produse de marca.",
-        "verdict_m2": "Alege Temu pentru accesorii, produse de uz casnic si articole la preturi foarte mici unde calitatea exacta conteaza mai putin. Planifica dinainte — livrarea dureaza.",
-        "categorie": "Shopping online Romania",
+        "verdict_m1": "Alege Libris daca vrei o librarie online cu un catalog larg.",
+        "verdict_m2": "Alege Carturesti daca vrei sa vezi cartile si in librariile lor fizice.",
+        "categorie": "Librarii online Romania",
     },
     {
         "slug": "surfshark-vs-hostinger",
         "m1": "surfshark.com", "m2": "hostinger.ro",
         "titlu_scurt": "Surfshark vs Hostinger",
-        "intro": "Surfshark si Hostinger sunt doua servicii digitale de top cu preturi competitive in Romania. Surfshark protejeaza conexiunea ta, Hostinger iti gazduieste site-ul. Daca vrei ambele, iata ce trebuie sa stii in {luna} {an}.",
+        "intro": "Surfshark si Hostinger sunt servicii diferite: un VPN si un serviciu de hosting web. Le comparam pentru cine cauta reduceri la abonamente online, in {luna} {an}.",
         "puncte": [
-            {"aspect": "Serviciu principal", "v1": "VPN — protectie online si geo-deblocare", "v2": "Hosting web — site-uri, WordPress"},
-            {"aspect": "Pret de intrare", "v1": "de la ~2 USD/luna (plan anual)", "v2": "de la ~1.5 USD/luna (plan anual)"},
-            {"aspect": "Garantie", "v1": "30 zile money-back", "v2": "30 zile money-back"},
-            {"aspect": "Numar dispozitive", "v1": "Dispozitive nelimitate simultan", "v2": "1 site (plan basic)"},
-            {"aspect": "Suport", "v1": "Live chat 24/7", "v2": "Live chat 24/7"},
+            {"aspect": "Serviciu principal", "v1": "VPN — protectie online si continut blocat geografic", "v2": "Hosting web — site-uri, WordPress"},
+            {"aspect": "Garantie", "v1": "30 de zile, bani inapoi", "v2": "30 de zile, bani inapoi"},
+            {"aspect": "Suport", "v1": "Chat non-stop", "v2": "Chat non-stop"},
         ],
-        "verdict_m1": "Alege Surfshark daca vrei protectie online, acces Netflix/alte servicii geo-blocate si privacy. Dispozitive nelimitate la un pret mic.",
-        "verdict_m2": "Alege Hostinger daca vrei sa lansezi un site, blog sau magazin online. Cel mai bun raport performanta/pret din hosting-ul romanesc.",
-        "categorie": "Servicii digitale",
+        "verdict_m1": "Alege Surfshark daca vrei protectie online si acces la servicii blocate geografic.",
+        "verdict_m2": "Alege Hostinger daca vrei sa lansezi un site, un blog sau un magazin online.",
+        "categorie": "Servicii online",
     },
     {
         "slug": "drmax-vs-farmec",
         "m1": "drmax.ro", "m2": "farmec.ro",
         "titlu_scurt": "Dr. Max vs Farmec",
-        "intro": "Dr. Max este o farmacie online cu produse OTC si cosmetice, in timp ce Farmec este cel mai cunoscut producator roman de cosmetice. Iata cum se compara in {luna} {an} si cand sa alegi fiecare.",
+        "intro": "Dr. Max este o farmacie online si fizica, iar Farmec un producator roman de cosmetice care vinde si online. Iata cum se compara in {luna} {an}.",
         "puncte": [
-            {"aspect": "Specialitate", "v1": "Farmacie OTC, suplimente, cosmetice diverse", "v2": "Cosmetice romanesti proprii + parfumuri"},
-            {"aspect": "Transport", "v1": "Gratuit de la 150 lei", "v2": "Gratuit de la 100 lei"},
-            {"aspect": "Retea fizica", "v1": "800+ farmacii in Romania", "v2": "Produse in supermarketuri + site propriu"},
-            {"aspect": "Reduceri", "v1": "Oferte saptamanale la medicamente si cosmetice", "v2": "Promotii sezoniere la colectii proprii"},
-            {"aspect": "Produse proprii", "v1": "Branduri internationale + private label", "v2": "Gerovital, Aslavital, Doina (branduri iconice RO)"},
+            {"aspect": "Specialitate", "v1": "Farmacie: medicamente fara reteta, suplimente, dermatocosmetice", "v2": "Cosmetice romanesti proprii"},
+            {"aspect": "Branduri", "v1": "Branduri internationale si romanesti", "v2": "Gerovital, Aslavital (branduri Farmec)"},
         ],
-        "verdict_m1": "Alege Dr. Max pentru o gama larga de medicamente OTC, suplimente si cosmetice internationale la preturi competitive cu livrare rapida.",
-        "verdict_m2": "Alege Farmec daca vrei produse cosmetice romanesti de calitate (Gerovital, Aslavital) cu ingrediente naturale si preturi accesibile.",
-        "categorie": "Farmacie si cosmetice Romania",
+        "verdict_m1": "Alege Dr. Max pentru medicamente fara reteta, suplimente si dermatocosmetice.",
+        "verdict_m2": "Alege Farmec daca vrei cosmetice romanesti Gerovital sau Aslavital, direct de la producator.",
+        "categorie": "Sanatate si frumusete",
     },
     {
         "slug": "noriel-vs-decathlon",
         "m1": "noriel.ro", "m2": "decathlon.ro",
         "titlu_scurt": "Noriel vs Decathlon",
-        "intro": "Noriel este liderul jucăriilor și produselor pentru copii în Romania, iar Decathlon conduce la echipamente sportive. Se suprapun la jocuri active și sport pentru copii. Iata comparatia in {luna} {an}.",
+        "intro": "Noriel vinde jucarii si jocuri, Decathlon echipament sportiv. Ambele au produse pentru copii. Iata cum se compara in {luna} {an}.",
         "puncte": [
-            {"aspect": "Specialitate", "v1": "Jucarii, jocuri de societate, rechizite", "v2": "Sport si outdoor, fitness, biciclete"},
-            {"aspect": "Produse pentru copii", "v1": "Selectie uriasa de jucarii 0-16 ani", "v2": "Echipament sportiv copii, biciclete"},
-            {"aspect": "Transport gratuit", "v1": "De la 99 lei", "v2": "De la 150 lei"},
-            {"aspect": "Branduri proprii", "v1": "Noriel Toys (exclusive)", "v2": "Quechua, Domyos, B'Twin (calitate buna)"},
-            {"aspect": "Retur", "v1": "30 zile", "v2": "30 zile"},
+            {"aspect": "Specialitate", "v1": "Jucarii si jocuri de societate", "v2": "Sport si outdoor"},
+            {"aspect": "Pentru copii", "v1": "Jucarii si jocuri", "v2": "Echipament sportiv si biciclete pentru copii"},
+            {"aspect": "Branduri proprii", "v1": "—", "v2": "Quechua, Domyos si altele"},
         ],
-        "verdict_m1": "Alege Noriel pentru cadouri copii, jucarii educative si jocuri de societate. Selectia este neinegalata in Romania.",
-        "verdict_m2": "Alege Decathlon pentru echipament sportiv copii si adulti la preturi imbatabile. Ideal pentru biciclete, camping, fotbal, inot.",
-        "categorie": "Jucarii si sport Romania",
-    },
-    {
-        "slug": "fashiondays-vs-shein",
-        "m1": "fashiondays.ro", "m2": "shein.com",
-        "titlu_scurt": "FashionDays vs Shein",
-        "intro": "FashionDays ofera branduri premium din Europa, in timp ce Shein vine cu moda ultra-accesibila din Asia. Doua filozofii diferite la acelasi produs: haine. Iata comparatia in {luna} {an}.",
-        "puncte": [
-            {"aspect": "Preturi", "v1": "Medii-ridicate, reduceri mari la sales", "v2": "Extrem de mici, promotii permanente"},
-            {"aspect": "Livrare", "v1": "2-4 zile, din depozite europene", "v2": "7-25 zile, din China"},
-            {"aspect": "Calitate materiale", "v1": "Branduri verificate, calitate consistenta", "v2": "Variabila, consultati review-urile"},
-            {"aspect": "Retur", "v1": "30 zile, simplu", "v2": "Credit magazin sau retur partial"},
-            {"aspect": "Branduri", "v1": "Versace Jeans, Tommy, Calvin Klein etc.", "v2": "Branduri proprii Shein"},
-        ],
-        "verdict_m1": "Alege FashionDays pentru branduri europene de calitate cu livrare rapida si retururi simple. Sales-urile de sezon pot fi chiar mai ieftine decat Shein.",
-        "verdict_m2": "Alege Shein daca vrei sa testezi tendinte rapid la preturi minime si esti dispus sa astepti livrarea. Perfecta pentru reinnoire frecventa garderoba.",
-        "categorie": "Moda online Romania",
+        "verdict_m1": "Alege Noriel pentru jucarii, jocuri de societate si cadouri pentru copii.",
+        "verdict_m2": "Alege Decathlon pentru echipament sportiv pentru copii si adulti.",
+        "categorie": "Copii si sport",
     },
     {
         "slug": "libris-vs-elefant",
         "m1": "libris.ro", "m2": "elefant.ro",
         "titlu_scurt": "Libris vs Elefant",
-        "intro": "Libris si Elefant sunt doua librarii online mari din Romania, dar Elefant ofera si electronice si jocuri. Iata care este mai bun pentru carti si nu numai, in {luna} {an}.",
+        "intro": "Libris si Elefant vand carti online in Romania; Elefant are si alte categorii de produse. Iata cum se compara in {luna} {an}.",
         "puncte": [
-            {"aspect": "Carti disponibile", "v1": "700.000+ titluri", "v2": "500.000+ titluri"},
-            {"aspect": "Electronice", "v1": "Nu", "v2": "Da — laptopuri, tablete, gaming"},
-            {"aspect": "Transport gratuit", "v1": "De la 50 lei", "v2": "De la 100 lei"},
-            {"aspect": "Promotii carti", "v1": "Reduceri zilnice, top bestsellers ieftine", "v2": "Reduceri regulate, colectii editoriale"},
-            {"aspect": "Aplicatie mobila", "v1": "Da", "v2": "Da + ebook-uri proprii"},
+            {"aspect": "Specialitate", "v1": "Librarie online", "v2": "Carti si alte categorii de produse"},
         ],
-        "verdict_m1": "Alege Libris pentru cel mai mare stoc de carti si transport gratuit la comenzi mai mici. Preturile la bestsellers sunt adesea mai bune.",
-        "verdict_m2": "Alege Elefant daca vrei si alte produse (electronice, jocuri) intr-o singura comanda alaturi de carti.",
-        "categorie": "Carti si electronice online Romania",
+        "verdict_m1": "Alege Libris daca vrei o librarie online cu un catalog larg.",
+        "verdict_m2": "Alege Elefant daca vrei sa comanzi si alte produse impreuna cu cartile.",
+        "categorie": "Librarii online Romania",
     },
 ]
+
+
+def _partener(m: dict) -> bool:
+    """Are link de afiliere REAL — aceeasi regula ca linkAfiliat() din frontend/lib/linkMagazin.ts."""
+    a = (m.get("url_afiliat") or "").strip()
+    return bool(a) and a != (m.get("url") or "").strip()
 
 
 def _num_afisat(slug: str) -> str:
@@ -235,31 +168,32 @@ def build_comparison(pereche: dict, magazin_map: dict, luna: str, an: int) -> di
         "coduri": _coduri_active(m1),
         "logo": m1.get("logo_url"),
         "url_afiliat": m1.get("url_afiliat") or m1.get("url") or f"https://{m1_slug}",
+        "partener": _partener(m1),
     }
     stats2 = {
         "promotii_active": len(m2.get("promotii") or []),
         "coduri": _coduri_active(m2),
         "logo": m2.get("logo_url"),
         "url_afiliat": m2.get("url_afiliat") or m2.get("url") or f"https://{m2_slug}",
+        "partener": _partener(m2),
     }
 
+    def are_oferte(n: str, s: dict) -> str:
+        if not s["partener"]:
+            return f"{n} nu are program de afiliere pe AmCupon.ro, deci nu publicam oferte {n}."
+        k = s["promotii_active"]
+        return (f"{'Da' if k > 0 else 'Momentan nu'}, {n} are {k} {'oferta activa' if k == 1 else 'oferte active'} "
+                f"pe AmCupon.ro in {luna} {an}. Ofertele se actualizeaza automat de trei ori pe zi.")
+
+    parteneri = [n for n, s in ((n1, stats1), (n2, stats2)) if s["partener"]]
     faq = [
-        {
-            "q": f"Care este mai bun, {n1} sau {n2}?",
-            "a": f"{pereche['verdict_m1']} {pereche['verdict_m2']}",
-        },
-        {
-            "q": f"Are {n1} coduri de reducere active?",
-            "a": f"{'Da' if stats1['promotii_active'] > 0 else 'Momentan nu'}, {n1} are {stats1['promotii_active']} {'oferta activa' if stats1['promotii_active'] == 1 else 'oferte active'} pe AmCupon.ro in {luna} {an}. Verificam zilnic." ,
-        },
-        {
-            "q": f"Are {n2} coduri de reducere active?",
-            "a": f"{'Da' if stats2['promotii_active'] > 0 else 'Momentan nu'}, {n2} are {stats2['promotii_active']} {'oferta activa' if stats2['promotii_active'] == 1 else 'oferte active'} pe AmCupon.ro in {luna} {an}. Verificam zilnic.",
-        },
-        {
-            "q": f"Unde gasesc cupoane pentru {n1} si {n2}?",
-            "a": f"Pe AmCupon.ro gasesti coduri de reducere verificate pentru ambele magazine, actualizate zilnic. Copiezi codul, il aplici in cos si reducerea se scade automat.",
-        },
+        {"q": f"Care este mai bun, {n1} sau {n2}?", "a": f"{pereche['verdict_m1']} {pereche['verdict_m2']}"},
+        {"q": f"Are {n1} coduri de reducere active?", "a": are_oferte(n1, stats1)},
+        {"q": f"Are {n2} coduri de reducere active?", "a": are_oferte(n2, stats2)},
+        {"q": f"Unde gasesc cupoane pentru {n1} si {n2}?",
+         "a": (f"Pe AmCupon.ro gasesti ofertele active ale magazinelor partenere ({' si '.join(parteneri)}), actualizate automat. "
+               "Copiezi codul, il aplici in cos si reducerea se scade automat.") if parteneri
+              else "Niciunul dintre cele doua magazine nu are program de afiliere pe AmCupon.ro."},
     ]
 
     return {

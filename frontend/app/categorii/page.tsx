@@ -2,15 +2,16 @@ import Link from "next/link";
 import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
+import { PesteMagazine } from "@/lib/cifreSite";
 
 export const metadata: Metadata = {
   title: "Categorii Coduri Reducere Romania 2026 | AmCupon.ro",
-  description: "Coduri de reducere organizate pe categorii: Fashion, Electronice, Frumusete, Casa, Sport, Farmacie, Copii, Animale si multe altele. 1000+ magazine verificate zilnic.",
+  description: `Coduri de reducere organizate pe categorii: Fashion, Electronice, Frumusete, Casa, Sport, Farmacie, Copii, Animale si multe altele. ${PesteMagazine()} partenere, actualizate zilnic.`,
   keywords: ["categorii reduceri romania","coduri reducere pe categorii","fashion reducere","electronice ieftine","farmacie online reducere"],
   alternates: { canonical: "https://amcupon.ro/categorii" },
   openGraph: {
     title: "Categorii Coduri Reducere Romania | AmCupon.ro",
-    description: "1000+ magazine organizate pe 18 categorii. Oferte verificate zilnic.",
+    description: `${PesteMagazine()} organizate pe categorii. Oferte actualizate zilnic.`,
     url: "https://amcupon.ro/categorii",
     siteName: "AmCupon.ro",
     locale: "ro_RO",

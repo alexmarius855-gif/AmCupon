@@ -1,15 +1,19 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import { linkPlatit } from "@/lib/linkPlatit";
 
 // ── LINKURI AFILIATE ── quicklink-uri reale 2Performant (aprobate 17.07.2026) ──
-const LINK_TRENDIVA  = "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Ftrendiva.ro";
-const LINK_VIADA     = "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.viada.ro";
-const LINK_DYFASHION = "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.dyfashion.ro";
+// 05.10.2026: linkurile erau quicklink-uri 2P scrise de mana, si pentru programe NEAPROBATE
+// (fixato.ro, trendiva.ro nu sunt in output.json) — clic fara comision, prezentat ca partener.
+// Acum vin din output.json prin linkPlatit(): partenerul primeste linkul platit, restul linkul simplu.
+const LINK_TRENDIVA  = linkPlatit("https://trendiva.ro");
+const LINK_VIADA     = linkPlatit("https://viada.ro");
+const LINK_DYFASHION = linkPlatit("https://dyfashion.ro");
 // ─────────────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
   title: "Rochii de Mireasa si Ocazie cu Reducere 2026 | AmCupon.ro",
-  description: "Rochii de mireasa, domnisoare de onoare si ocazii speciale la preturi reduse. Trendiva, Viada, DYFashion — coduri de reducere verificate pe AmCupon.ro.",
+  description: "Rochii de mireasa, domnisoare de onoare si ocazii speciale la preturi reduse. Trendiva, Viada, DYFashion — magazine romanesti de rochii si tinute de ocazie.",
   keywords: ["rochii mireasa reducere", "rochii ocazie reducere", "cod reducere rochii nunta", "rochii domnisoare de onoare", "rochii elegante reducere"],
   alternates: { canonical: "https://amcupon.ro/rochii-mireasa" },
   openGraph: { title: "Rochii de Mireasa si Ocazie cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/rochii-mireasa", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
@@ -68,7 +72,7 @@ export default function RochiiMireasaPage() {
               Rochii de <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #ddf93c, #ddf93c)" }}>Mireasa</span> & Ocazie {an}
             </h1>
             <p className="text-[#c9ced5] text-lg max-w-2xl mx-auto">
-              Pentru mireasa, domnisoare de onoare sau invitati — magazine romanesti verificate.
+              Pentru mireasa, domnisoare de onoare sau invitati — magazine romanesti de profil.
             </p>
           </div>
         </section>

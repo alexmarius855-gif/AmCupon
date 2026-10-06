@@ -111,7 +111,9 @@ const BRAND_PAGES = [
   { href: "/pfarma",      name: "pFarma",       emoji: "💊" },
 ];
 
-const FAQ_ITEMS: { q: string; a: string }[] = [
+function faqItems(peste: string): { q: string; a: string }[] {
+  return [
+
   {
     q: "Cum folosesc un cod de reducere de pe AmCupon.ro?",
     a: "Alegi magazinul dorit, apesi pe cod ca sa il copiezi, apoi mergi la magazin prin butonul nostru. La finalizarea comenzii (checkout) lipesti codul in campul \"Cod reducere\" sau \"Voucher\" si reducerea se aplica automat.",
@@ -122,7 +124,7 @@ const FAQ_ITEMS: { q: string; a: string }[] = [
   },
   {
     q: "Cat de des se actualizeaza ofertele si codurile?",
-    a: "Verificam si actualizam codurile zilnic, automat, de la peste 1000 de magazine partenere din Romania. Ofertele expirate sunt eliminate, iar cele noi adaugate in fiecare zi.",
+    a: `Ofertele se actualizeaza automat de trei ori pe zi, de la ${peste} partenere. Cele expirate dispar dupa data lor, iar cele noi apar la urmatoarea actualizare. Codurile nu le testam in cos.`,
   },
   {
     q: "De ce unele coduri nu mai functioneaza?",
@@ -130,13 +132,14 @@ const FAQ_ITEMS: { q: string; a: string }[] = [
   },
   {
     q: "Trebuie sa imi fac cont ca sa folosesc codurile?",
-    a: "Nu. Toate codurile si ofertele sunt disponibile fara cont si fara inregistrare. Optional, te poti abona la newsletter pentru a primi top 5 oferte zilnic pe email.",
+    a: "Nu. Toate codurile si ofertele sunt disponibile fara cont si fara inregistrare. Optional, te poti abona la newsletter pentru a primi ofertele active, o data pe zi, pe email.",
   },
   {
     q: "Cum castiga bani AmCupon.ro?",
     a: "Primim un comision de la magazine atunci cand cumperi prin link-urile noastre, din bugetul lor de marketing. Pentru tine pretul ramane acelasi, fara costuri suplimentare. Asa putem mentine serviciul gratuit.",
   },
-];
+  ];
+}
 
 // Filtrele din „Codurile zilei". „Fără cod", nu „Oferte": pe prima pagina totul e ofertă.
 const ETICHETE_FILTRU: Record<FiltruAcasa, string> = {
@@ -178,6 +181,8 @@ interface HomeClientProps {
   recomandate: { magazin: string; nume: string; logo_url: string; categorie: string; are_cod: boolean }[];
   produseCategorii: ProdusCategorie[];
   astazi: string;
+  /** „peste 900 de magazine" — calculat pe server din output.json (lib/cifreSite.ts) */
+  pesteMagazine: string;
 }
 
 export default function HomeClient({
@@ -186,7 +191,9 @@ export default function HomeClient({
   recomandate: initRec,
   produseCategorii: initProd,
   astazi,
+  pesteMagazine,
 }: HomeClientProps) {
+  const FAQ = faqItems(pesteMagazine);
   const [magazine]                        = useState<Magazin[]>(initMag);
   const [blogPosts]                       = useState<BlogPost[]>(initBlog);
   const [loading]                         = useState(initMag.length === 0);
@@ -1316,7 +1323,7 @@ export default function HomeClient({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "FAQPage",
-              mainEntity: FAQ_ITEMS.map(item => ({
+              mainEntity: FAQ.map(item => ({
                 "@type": "Question",
                 name: item.q,
                 acceptedAnswer: { "@type": "Answer", text: item.a },
@@ -1330,7 +1337,7 @@ export default function HomeClient({
             <h2 className="text-[2rem] md:text-[2.5rem] leading-[1.08] font-black tracking-tight text-[#ffffff]">Tot ce vrei sa stii despre codurile de reducere</h2>
           </div>
           <div className="space-y-3">
-            {FAQ_ITEMS.map((item, i) => (
+            {FAQ.map((item, i) => (
               <details key={i} className="group bg-[#14181c] rounded-xl border border-[#2a2f36] overflow-hidden">
                 <summary className="flex items-center justify-between gap-4 px-5 py-4 cursor-pointer list-none select-none hover:bg-[#1f2329]/50 transition-colors">
                   <h3 className="font-bold text-[#ffffff] text-sm sm:text-base leading-snug">{item.q}</h3>
@@ -1361,7 +1368,7 @@ export default function HomeClient({
             Nu rata nicio oferta buna
           </h2>
           <p className="text-[#c9ced5] text-base mb-8 max-w-sm mx-auto leading-relaxed">
-            Top 5 coduri de reducere verificate in fiecare dimineata. Fara spam.
+            Ofertele active, o data pe zi, pe email. Fara spam.
           </p>
           <div className="flex flex-wrap justify-center gap-5 text-xs text-[#c9ced5] mb-8 font-medium">
             {["Gratuit", "Fara spam", "Dezabonare oricand", "0 reclame"].map(t => (

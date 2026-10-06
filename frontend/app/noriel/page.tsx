@@ -1,7 +1,7 @@
 import { Metadata } from "next";
-import BrandPageTemplate from "../components/BrandPageTemplate";
+import BrandPageTemplate, { metadataBrand } from "../components/BrandPageTemplate";
 
-export const metadata: Metadata = {
+const META: Metadata = {
   title: "Cod Reducere Noriel — Oferte Jucarii 2026 | AmCupon.ro",
   description: "Coduri de reducere Noriel actualizate zilnic. Reduceri la jucarii, jocuri de societate, articole pentru copii si seturi LEGO. Promotii Noriel verificate.",
   keywords: ["cod reducere noriel", "noriel reduceri", "noriel promotii", "jucarii reduceri", "noriel discount"],
@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
+// Metadata cu reparare automata: daca magazinul iese din output.json, pagina devine onesta
+// si noindex (vezi metadataBrand in BrandPageTemplate.tsx).
+export async function generateMetadata(): Promise<Metadata> {
+  return metadataBrand({ slug: "noriel.ro", slugAlt: "noriel", name: "Noriel", canonical: "/noriel" }, META);
+}
 
 export default function NorielPage() {
   return (

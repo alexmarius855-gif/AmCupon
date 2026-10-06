@@ -6,12 +6,12 @@ import NewsletterForm from "./NewsletterForm";
 
 export const metadata: Metadata = {
   title: "Newsletter Gratuit — Coduri Reducere Zilnic | AmCupon.ro",
-  description: "Aboneaza-te gratuit la newsletter-ul AmCupon.ro. Primesti peste 20 de coduri de reducere verificate in fiecare saptamana, direct in inbox. Zero spam.",
+  description: "Aboneaza-te gratuit la newsletter-ul AmCupon.ro: ofertele active de la magazinele partenere, o data pe zi, direct in inbox (cel mult 12 pe email). Fara spam.",
   keywords: ["newsletter coduri reducere", "alerte oferte romania", "reduceri email gratuit", "amcupon newsletter"],
   alternates: { canonical: "https://amcupon.ro/newsletter" },
   openGraph: {
     title: "Newsletter Gratuit — Coduri Reducere | AmCupon.ro",
-    description: "Peste 20 de coduri de reducere verificate saptamanal, direct in inbox. Gratuit, zero spam.",
+    description: "Ofertele active, o data pe zi, direct in inbox. Gratuit, fara spam.",
     url: "https://amcupon.ro/newsletter",
     siteName: "AmCupon.ro",
     locale: "ro_RO",
@@ -24,7 +24,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   name: "Newsletter AmCupon.ro",
-  description: "Abonare la newsletter cu coduri de reducere verificate zilnic",
+  description: "Abonare la newsletter cu ofertele active de pe AmCupon.ro, o data pe zi",
   url: "https://amcupon.ro/newsletter",
   isPartOf: { "@type": "WebSite", url: "https://amcupon.ro", name: "AmCupon.ro" },
 };

@@ -88,7 +88,7 @@ export default function PescuitPage() {
               Echipamente Pescuit cu Reducere {an}
             </h1>
             <p className="text-emerald-100 text-lg mb-6 max-w-xl mx-auto">
-              Undite, mulinete, naluci si accesorii la preturi mai mici. Reduceri verificate pentru pasionatii de pescuit din Romania.
+              Undite, mulinete, naluci si accesorii la preturi mai mici. Reduceri active pentru pasionatii de pescuit din Romania.
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {BRANDURI.map(b => (

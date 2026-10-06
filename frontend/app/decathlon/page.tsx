@@ -1,7 +1,7 @@
 import { Metadata } from "next";
-import BrandPageTemplate from "../components/BrandPageTemplate";
+import BrandPageTemplate, { metadataBrand } from "../components/BrandPageTemplate";
 
-export const metadata: Metadata = {
+const META: Metadata = {
   title: "Reduceri Decathlon — Oferte si Coduri Decathlon 2026",
   description: "Oferte si coduri de reducere Decathlon actualizate zilnic. Echipamente sportive, biciclete, fitness la preturi mici. Promotii Decathlon verificate acum.",
   keywords: ["reducere decathlon", "cod reducere decathlon", "oferte decathlon", "decathlon promotii", "decathlon sport reducere"],
@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
+// Metadata cu reparare automata: daca magazinul iese din output.json, pagina devine onesta
+// si noindex (vezi metadataBrand in BrandPageTemplate.tsx).
+export async function generateMetadata(): Promise<Metadata> {
+  return metadataBrand({ slug: "decathlon.ro", slugAlt: "decathlon", name: "Decathlon", canonical: "/decathlon" }, META);
+}
 
 export default function DecathlonPage() {
   return (

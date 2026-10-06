@@ -1,7 +1,7 @@
 import { Metadata } from "next";
-import BrandPageTemplate from "../components/BrandPageTemplate";
+import BrandPageTemplate, { metadataBrand } from "../components/BrandPageTemplate";
 
-export const metadata: Metadata = {
+const META: Metadata = {
   title: "Cod Reducere Scule365 2026 — Unelte & Scule la Reducere",
   description: "Coduri reducere Scule365 actualizate. Scule profesionale, unelte electrice si accesorii la preturi competitive. Promotii Scule365 verificate pe AmCupon.ro.",
   keywords: ["cod reducere scule365", "scule365 reduceri", "scule profesionale online", "unelte electrice reducere", "scule365 promotii"],
@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
+// Metadata cu reparare automata: daca magazinul iese din output.json, pagina devine onesta
+// si noindex (vezi metadataBrand in BrandPageTemplate.tsx).
+export async function generateMetadata(): Promise<Metadata> {
+  return metadataBrand({ slug: "scule365.ro", slugAlt: "scule365", name: "Scule365", canonical: "/scule365" }, META);
+}
 
 export default function Scule365Page() {
   return (

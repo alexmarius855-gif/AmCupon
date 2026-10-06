@@ -1,13 +1,19 @@
 import { Metadata } from "next";
-import BrandPageTemplate from "../components/BrandPageTemplate";
+import BrandPageTemplate, { metadataBrand } from "../components/BrandPageTemplate";
 
-export const metadata: Metadata = {
+const META: Metadata = {
   title: "Cod Reducere Albire Dinti 2026 — Oferte Actualizate",
   description: "Coduri de reducere albire dinti actualizate zilnic. Reduceri la servicii de albire profesionala si kituri de albire acasa. Promotii albirea-dintilor.com verificate.",
   keywords: ["cod reducere albire dinti", "albire dinti reducere", "albirea-dintilor.com cod", "kit albire dinti ieftin", "albire dinti acasa reducere"],
   alternates: { canonical: "https://amcupon.ro/albire-dinti" },
   openGraph: { title: "Reduceri Albire Dinti 2026 | AmCupon.ro", url: "https://amcupon.ro/albire-dinti", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
 };
+
+// Metadata cu reparare automata: daca magazinul iese din output.json, pagina devine onesta
+// si noindex (vezi metadataBrand in BrandPageTemplate.tsx).
+export async function generateMetadata(): Promise<Metadata> {
+  return metadataBrand({ slug: "albirea-dintilor.com", slugAlt: "albire", name: "Albirea Dintilor", canonical: "/albire-dinti" }, META);
+}
 
 export default function AlbireDintiPage() {
   return (

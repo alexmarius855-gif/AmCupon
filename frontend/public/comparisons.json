@@ -7,48 +7,35 @@
     "n2": "Answear",
     "titlu": "FashionDays vs Answear 2026 — Comparatie Completa | AmCupon.ro",
     "titlu_h1": "FashionDays vs Answear — unde gasesti cele mai bune oferte?",
-    "intro": "FashionDays si Answear sunt doua dintre cele mai mari magazine de fashion online din Romania. Ambele ofera haine, incaltaminte si accesorii de brand, dar difera prin selectie, reduceri si experienta de cumparare. Iata cum se compara in octombrie 2026.",
+    "intro": "FashionDays si Answear vand online haine, incaltaminte si accesorii de brand. Difera prin selectie si prin campaniile de reduceri. Iata cum se compara in octombrie 2026.",
     "categorie": "Fashion online Romania",
     "puncte": [
       {
         "aspect": "Specialitate",
-        "v1": "Fashion premium, branduri internationale",
-        "v2": "Sportswear, casual si branuri globale"
-      },
-      {
-        "aspect": "Livrare",
-        "v1": "2-4 zile lucratoare",
-        "v2": "2-5 zile lucratoare"
+        "v1": "Fashion, branduri internationale",
+        "v2": "Fashion si sportswear, branduri internationale"
       },
       {
         "aspect": "Retur",
         "v1": "30 de zile",
         "v2": "30 de zile"
-      },
-      {
-        "aspect": "Plata rate",
-        "v1": "Da, prin parteneri",
-        "v2": "Da, prin parteneri"
-      },
-      {
-        "aspect": "Reduceri sezoniere",
-        "v1": "Sales masive 50-80%",
-        "v2": "Reduceri frecvente 20-50%"
       }
     ],
-    "verdict_m1": "Alege FashionDays daca vrei branduri premium si sales masive cu reduceri de pana la 80%. Ideal pentru ocazii speciale sau garderoba de sezon.",
-    "verdict_m2": "Alege Answear pentru o selectie mai larga de branduri sportive si casual, cu preturi mai constante si disponibilitate buna.",
+    "verdict_m1": "Alege FashionDays daca vrei selectia lor de branduri internationale si campaniile lor sezoniere.",
+    "verdict_m2": "Alege Answear pentru branduri de fashion si sportswear.",
     "stats1": {
       "promotii_active": 0,
       "coduri": "—",
       "logo": null,
-      "url_afiliat": "https://fashiondays.ro"
+      "url_afiliat": "https://fashiondays.ro",
+      "partener": false
     },
     "stats2": {
       "promotii_active": 1,
       "coduri": "—",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/2561/medium/2561.png",
-      "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fanswear.ro"
+      "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fanswear.ro",
+      "partener": true
     },
     "promo1": [],
     "promo2": [
@@ -60,93 +47,19 @@
     "faq": [
       {
         "q": "Care este mai bun, Fashiondays sau Answear?",
-        "a": "Alege FashionDays daca vrei branduri premium si sales masive cu reduceri de pana la 80%. Ideal pentru ocazii speciale sau garderoba de sezon. Alege Answear pentru o selectie mai larga de branduri sportive si casual, cu preturi mai constante si disponibilitate buna."
+        "a": "Alege FashionDays daca vrei selectia lor de branduri internationale si campaniile lor sezoniere. Alege Answear pentru branduri de fashion si sportswear."
       },
       {
         "q": "Are Fashiondays coduri de reducere active?",
-        "a": "Momentan nu, Fashiondays are 0 oferte active pe AmCupon.ro in octombrie 2026. Verificam zilnic."
+        "a": "Fashiondays nu are program de afiliere pe AmCupon.ro, deci nu publicam oferte Fashiondays."
       },
       {
         "q": "Are Answear coduri de reducere active?",
-        "a": "Da, Answear are 1 oferta activa pe AmCupon.ro in octombrie 2026. Verificam zilnic."
+        "a": "Da, Answear are 1 oferta activa pe AmCupon.ro in octombrie 2026. Ofertele se actualizeaza automat de trei ori pe zi."
       },
       {
         "q": "Unde gasesc cupoane pentru Fashiondays si Answear?",
-        "a": "Pe AmCupon.ro gasesti coduri de reducere verificate pentru ambele magazine, actualizate zilnic. Copiezi codul, il aplici in cos si reducerea se scade automat."
-      }
-    ],
-    "luna": "octombrie",
-    "an": 2026
-  },
-  "temu-vs-shein": {
-    "slug": "temu-vs-shein",
-    "m1_slug": "temu.com",
-    "m2_slug": "shein.com",
-    "n1": "Temu",
-    "n2": "Shein",
-    "titlu": "Temu vs Shein 2026 — Comparatie Completa | AmCupon.ro",
-    "titlu_h1": "Temu vs Shein — unde gasesti cele mai bune oferte?",
-    "intro": "Temu si Shein sunt doua platforme internationale de shopping cu preturi foarte mici, populare in Romania. Ambele ofera mii de produse la preturi sub piata, dar difera prin categorii, livrare si calitate. Iata comparatia completa in octombrie 2026.",
-    "categorie": "Shopping online international",
-    "puncte": [
-      {
-        "aspect": "Specialitate",
-        "v1": "Produse diverse: fashion, casa, electronice, jucarii",
-        "v2": "Fashion feminin, accesorii si cosmetice"
-      },
-      {
-        "aspect": "Livrare Romania",
-        "v1": "7-20 zile",
-        "v2": "7-25 zile"
-      },
-      {
-        "aspect": "Retururi",
-        "v1": "Retur gratuit prima comanda",
-        "v2": "Credit magazin sau retur partial"
-      },
-      {
-        "aspect": "Preturi",
-        "v1": "Extrem de mici, promotii zilnice",
-        "v2": "Foarte mici, reduceri constante"
-      },
-      {
-        "aspect": "Varietate",
-        "v1": "Milioane de produse, toate categoriile",
-        "v2": "Focus pe moda femei si accesorii"
-      }
-    ],
-    "verdict_m1": "Alege Temu daca vrei varietate maxima de categorii (nu doar fashion) si esti dispus sa astepti livrarea. Ideal pentru achizitii mici si experimentale.",
-    "verdict_m2": "Alege Shein daca esti orientat spre moda feminina, accesorii si cosmetice. Selectia de fashion este mai curata si mai usor de navigat.",
-    "stats1": {
-      "promotii_active": 0,
-      "coduri": "—",
-      "logo": null,
-      "url_afiliat": "https://temu.com"
-    },
-    "stats2": {
-      "promotii_active": 0,
-      "coduri": "—",
-      "logo": null,
-      "url_afiliat": "https://shein.com"
-    },
-    "promo1": [],
-    "promo2": [],
-    "faq": [
-      {
-        "q": "Care este mai bun, Temu sau Shein?",
-        "a": "Alege Temu daca vrei varietate maxima de categorii (nu doar fashion) si esti dispus sa astepti livrarea. Ideal pentru achizitii mici si experimentale. Alege Shein daca esti orientat spre moda feminina, accesorii si cosmetice. Selectia de fashion este mai curata si mai usor de navigat."
-      },
-      {
-        "q": "Are Temu coduri de reducere active?",
-        "a": "Momentan nu, Temu are 0 oferte active pe AmCupon.ro in octombrie 2026. Verificam zilnic."
-      },
-      {
-        "q": "Are Shein coduri de reducere active?",
-        "a": "Momentan nu, Shein are 0 oferte active pe AmCupon.ro in octombrie 2026. Verificam zilnic."
-      },
-      {
-        "q": "Unde gasesc cupoane pentru Temu si Shein?",
-        "a": "Pe AmCupon.ro gasesti coduri de reducere verificate pentru ambele magazine, actualizate zilnic. Copiezi codul, il aplici in cos si reducerea se scade automat."
+        "a": "Pe AmCupon.ro gasesti ofertele active ale magazinelor partenere (Answear), actualizate automat. Copiezi codul, il aplici in cos si reducerea se scade automat."
       }
     ],
     "luna": "octombrie",
@@ -160,48 +73,30 @@
     "n2": "Carturesti",
     "titlu": "Libris vs Carturesti 2026 — Comparatie Completa | AmCupon.ro",
     "titlu_h1": "Libris vs Carturesti — unde gasesti cele mai bune oferte?",
-    "intro": "Libris si Carturesti sunt cele mai mari librarii online din Romania. Ambele ofera sute de mii de titluri, dar difera prin preturi, transport si beneficii pentru cititori. Iata cum se compara in octombrie 2026.",
-    "categorie": "Carti online Romania",
+    "intro": "Libris si Carturesti vand carti online in Romania. Iata cum se compara in octombrie 2026, cu ofertele lor active pe AmCupon.ro.",
+    "categorie": "Librarii online Romania",
     "puncte": [
       {
-        "aspect": "Stoc",
-        "v1": "700.000+ titluri",
-        "v2": "600.000+ titluri"
-      },
-      {
-        "aspect": "Transport gratuit",
-        "v1": "De la 50 lei",
-        "v2": "De la 79 lei"
-      },
-      {
-        "aspect": "Punct de ridicare",
-        "v1": "Easybox + curier",
-        "v2": "Librarii fizice + curier"
-      },
-      {
-        "aspect": "Reduceri",
-        "v1": "Reduceri zilnice 10-50%",
-        "v2": "Reduceri periodice + club fideli"
-      },
-      {
-        "aspect": "Audiobook / ebook",
-        "v1": "Da, sectiune dedicata",
-        "v2": "Da, prin aplicatie proprie"
+        "aspect": "Specialitate",
+        "v1": "Librarie online",
+        "v2": "Librarie online si lant de librarii fizice"
       }
     ],
-    "verdict_m1": "Alege Libris pentru transport gratuit la comenzi mai mici si reduceri zilnice mai frecvente. Ideal daca comanzi regulat si vrei cel mai mic pret per carte.",
-    "verdict_m2": "Alege Carturesti pentru experienta completa cititor-librarie, acces la librarii fizice pentru ridicare si colectii editoriale curate.",
+    "verdict_m1": "Alege Libris daca vrei o librarie online cu un catalog larg.",
+    "verdict_m2": "Alege Carturesti daca vrei sa vezi cartile si in librariile lor fizice.",
     "stats1": {
       "promotii_active": 1,
       "coduri": "—",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9868/medium/9868.gif",
-      "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro"
+      "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro",
+      "partener": true
     },
     "stats2": {
       "promotii_active": 2,
       "coduri": "—",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11380/medium/11380.png",
-      "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2F"
+      "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2F",
+      "partener": true
     },
     "promo1": [
       {
@@ -222,167 +117,19 @@
     "faq": [
       {
         "q": "Care este mai bun, Libris sau Carturesti?",
-        "a": "Alege Libris pentru transport gratuit la comenzi mai mici si reduceri zilnice mai frecvente. Ideal daca comanzi regulat si vrei cel mai mic pret per carte. Alege Carturesti pentru experienta completa cititor-librarie, acces la librarii fizice pentru ridicare si colectii editoriale curate."
+        "a": "Alege Libris daca vrei o librarie online cu un catalog larg. Alege Carturesti daca vrei sa vezi cartile si in librariile lor fizice."
       },
       {
         "q": "Are Libris coduri de reducere active?",
-        "a": "Da, Libris are 1 oferta activa pe AmCupon.ro in octombrie 2026. Verificam zilnic."
+        "a": "Da, Libris are 1 oferta activa pe AmCupon.ro in octombrie 2026. Ofertele se actualizeaza automat de trei ori pe zi."
       },
       {
         "q": "Are Carturesti coduri de reducere active?",
-        "a": "Da, Carturesti are 2 oferte active pe AmCupon.ro in octombrie 2026. Verificam zilnic."
+        "a": "Da, Carturesti are 2 oferte active pe AmCupon.ro in octombrie 2026. Ofertele se actualizeaza automat de trei ori pe zi."
       },
       {
         "q": "Unde gasesc cupoane pentru Libris si Carturesti?",
-        "a": "Pe AmCupon.ro gasesti coduri de reducere verificate pentru ambele magazine, actualizate zilnic. Copiezi codul, il aplici in cos si reducerea se scade automat."
-      }
-    ],
-    "luna": "octombrie",
-    "an": 2026
-  },
-  "emag-vs-elefant": {
-    "slug": "emag-vs-elefant",
-    "m1_slug": "emag.ro",
-    "m2_slug": "elefant.ro",
-    "n1": "Emag",
-    "n2": "Elefant",
-    "titlu": "eMAG vs Elefant 2026 — Comparatie Completa | AmCupon.ro",
-    "titlu_h1": "eMAG vs Elefant — unde gasesti cele mai bune oferte?",
-    "intro": "eMAG si Elefant sunt doua dintre cele mai cunoscute magazine online din Romania. Desi eMAG e mult mai mare, Elefant exceleaza la carti, jocuri si electronice pentru uz casnic. Iata comparatia directa in octombrie 2026.",
-    "categorie": "Shopping online Romania",
-    "puncte": [
-      {
-        "aspect": "Specialitate",
-        "v1": "Electronice, electrocasnice, fashion, tot",
-        "v2": "Carti, jocuri, electronice, birotice"
-      },
-      {
-        "aspect": "Livrare rapida",
-        "v1": "Livrare in aceeasi zi (Bucuresti)",
-        "v2": "2-4 zile lucratoare"
-      },
-      {
-        "aspect": "Marketplace",
-        "v1": "Mii de vanzatori terti",
-        "v2": "Vanzator unic (mai sigur)"
-      },
-      {
-        "aspect": "Reduceri",
-        "v1": "Campanii masive (Black Friday lider)",
-        "v2": "Reduceri la carti si electronice"
-      },
-      {
-        "aspect": "Retur",
-        "v1": "30 de zile",
-        "v2": "30 de zile"
-      }
-    ],
-    "verdict_m1": "Alege eMAG pentru varietate maxima, livrare rapida si cel mai mare Black Friday din Romania. Ideal pentru electronice, electrocasnice si tot ce ai nevoie intr-un singur loc.",
-    "verdict_m2": "Alege Elefant pentru carti, jocuri si produse educationale — selectia este mai curata si preturile la carti sunt adesea mai bune.",
-    "stats1": {
-      "promotii_active": 0,
-      "coduri": "—",
-      "logo": null,
-      "url_afiliat": "https://emag.ro"
-    },
-    "stats2": {
-      "promotii_active": 0,
-      "coduri": "—",
-      "logo": null,
-      "url_afiliat": "https://elefant.ro"
-    },
-    "promo1": [],
-    "promo2": [],
-    "faq": [
-      {
-        "q": "Care este mai bun, Emag sau Elefant?",
-        "a": "Alege eMAG pentru varietate maxima, livrare rapida si cel mai mare Black Friday din Romania. Ideal pentru electronice, electrocasnice si tot ce ai nevoie intr-un singur loc. Alege Elefant pentru carti, jocuri si produse educationale — selectia este mai curata si preturile la carti sunt adesea mai bune."
-      },
-      {
-        "q": "Are Emag coduri de reducere active?",
-        "a": "Momentan nu, Emag are 0 oferte active pe AmCupon.ro in octombrie 2026. Verificam zilnic."
-      },
-      {
-        "q": "Are Elefant coduri de reducere active?",
-        "a": "Momentan nu, Elefant are 0 oferte active pe AmCupon.ro in octombrie 2026. Verificam zilnic."
-      },
-      {
-        "q": "Unde gasesc cupoane pentru Emag si Elefant?",
-        "a": "Pe AmCupon.ro gasesti coduri de reducere verificate pentru ambele magazine, actualizate zilnic. Copiezi codul, il aplici in cos si reducerea se scade automat."
-      }
-    ],
-    "luna": "octombrie",
-    "an": 2026
-  },
-  "emag-vs-temu": {
-    "slug": "emag-vs-temu",
-    "m1_slug": "emag.ro",
-    "m2_slug": "temu.com",
-    "n1": "Emag",
-    "n2": "Temu",
-    "titlu": "eMAG vs Temu 2026 — Comparatie Completa | AmCupon.ro",
-    "titlu_h1": "eMAG vs Temu — unde gasesti cele mai bune oferte?",
-    "intro": "eMAG este liderul comerțului online din Romania, in timp ce Temu a cucerit piata cu preturi extrem de mici. Dar care este mai bun pentru tine? Iata o comparatie obiectiva in octombrie 2026.",
-    "categorie": "Shopping online Romania",
-    "puncte": [
-      {
-        "aspect": "Viteza livrare",
-        "v1": "1-3 zile (uneori aceeasi zi)",
-        "v2": "7-20 zile (din China)"
-      },
-      {
-        "aspect": "Garantii produse",
-        "v1": "Garantie legala, service autorizat",
-        "v2": "Retur 90 zile, fara garantie service"
-      },
-      {
-        "aspect": "Preturi",
-        "v1": "Competitive, cu variatii mari",
-        "v2": "Extrem de mici, mai ales la accesorii"
-      },
-      {
-        "aspect": "Calitate",
-        "v1": "Variabila, dar cu filtrare review-uri",
-        "v2": "Variabila, bazata pe recenzii"
-      },
-      {
-        "aspect": "Plata in lei",
-        "v1": "Da, toate metodele RO",
-        "v2": "Da, card international"
-      }
-    ],
-    "verdict_m1": "Alege eMAG cand ai nevoie urgent sau vrei garantii clare si produse verificate. Ideal pentru electronice, electrocasnice si produse de marca.",
-    "verdict_m2": "Alege Temu pentru accesorii, produse de uz casnic si articole la preturi foarte mici unde calitatea exacta conteaza mai putin. Planifica dinainte — livrarea dureaza.",
-    "stats1": {
-      "promotii_active": 0,
-      "coduri": "—",
-      "logo": null,
-      "url_afiliat": "https://emag.ro"
-    },
-    "stats2": {
-      "promotii_active": 0,
-      "coduri": "—",
-      "logo": null,
-      "url_afiliat": "https://temu.com"
-    },
-    "promo1": [],
-    "promo2": [],
-    "faq": [
-      {
-        "q": "Care este mai bun, Emag sau Temu?",
-        "a": "Alege eMAG cand ai nevoie urgent sau vrei garantii clare si produse verificate. Ideal pentru electronice, electrocasnice si produse de marca. Alege Temu pentru accesorii, produse de uz casnic si articole la preturi foarte mici unde calitatea exacta conteaza mai putin. Planifica dinainte — livrarea dureaza."
-      },
-      {
-        "q": "Are Emag coduri de reducere active?",
-        "a": "Momentan nu, Emag are 0 oferte active pe AmCupon.ro in octombrie 2026. Verificam zilnic."
-      },
-      {
-        "q": "Are Temu coduri de reducere active?",
-        "a": "Momentan nu, Temu are 0 oferte active pe AmCupon.ro in octombrie 2026. Verificam zilnic."
-      },
-      {
-        "q": "Unde gasesc cupoane pentru Emag si Temu?",
-        "a": "Pe AmCupon.ro gasesti coduri de reducere verificate pentru ambele magazine, actualizate zilnic. Copiezi codul, il aplici in cos si reducerea se scade automat."
+        "a": "Pe AmCupon.ro gasesti ofertele active ale magazinelor partenere (Libris si Carturesti), actualizate automat. Copiezi codul, il aplici in cos si reducerea se scade automat."
       }
     ],
     "luna": "octombrie",
@@ -396,67 +143,59 @@
     "n2": "Hostinger",
     "titlu": "Surfshark vs Hostinger 2026 — Comparatie Completa | AmCupon.ro",
     "titlu_h1": "Surfshark vs Hostinger — unde gasesti cele mai bune oferte?",
-    "intro": "Surfshark si Hostinger sunt doua servicii digitale de top cu preturi competitive in Romania. Surfshark protejeaza conexiunea ta, Hostinger iti gazduieste site-ul. Daca vrei ambele, iata ce trebuie sa stii in octombrie 2026.",
-    "categorie": "Servicii digitale",
+    "intro": "Surfshark si Hostinger sunt servicii diferite: un VPN si un serviciu de hosting web. Le comparam pentru cine cauta reduceri la abonamente online, in octombrie 2026.",
+    "categorie": "Servicii online",
     "puncte": [
       {
         "aspect": "Serviciu principal",
-        "v1": "VPN — protectie online si geo-deblocare",
+        "v1": "VPN — protectie online si continut blocat geografic",
         "v2": "Hosting web — site-uri, WordPress"
       },
       {
-        "aspect": "Pret de intrare",
-        "v1": "de la ~2 USD/luna (plan anual)",
-        "v2": "de la ~1.5 USD/luna (plan anual)"
-      },
-      {
         "aspect": "Garantie",
-        "v1": "30 zile money-back",
-        "v2": "30 zile money-back"
-      },
-      {
-        "aspect": "Numar dispozitive",
-        "v1": "Dispozitive nelimitate simultan",
-        "v2": "1 site (plan basic)"
+        "v1": "30 de zile, bani inapoi",
+        "v2": "30 de zile, bani inapoi"
       },
       {
         "aspect": "Suport",
-        "v1": "Live chat 24/7",
-        "v2": "Live chat 24/7"
+        "v1": "Chat non-stop",
+        "v2": "Chat non-stop"
       }
     ],
-    "verdict_m1": "Alege Surfshark daca vrei protectie online, acces Netflix/alte servicii geo-blocate si privacy. Dispozitive nelimitate la un pret mic.",
-    "verdict_m2": "Alege Hostinger daca vrei sa lansezi un site, blog sau magazin online. Cel mai bun raport performanta/pret din hosting-ul romanesc.",
+    "verdict_m1": "Alege Surfshark daca vrei protectie online si acces la servicii blocate geografic.",
+    "verdict_m2": "Alege Hostinger daca vrei sa lansezi un site, un blog sau un magazin online.",
     "stats1": {
       "promotii_active": 0,
       "coduri": "—",
       "logo": "https://www.google.com/s2/favicons?domain=surfshark.com&sz=128",
-      "url_afiliat": "https://surfshark.sjv.io/c/7401119/535269/9043"
+      "url_afiliat": "https://surfshark.sjv.io/c/7401119/535269/9043",
+      "partener": true
     },
     "stats2": {
       "promotii_active": 0,
       "coduri": "—",
       "logo": null,
-      "url_afiliat": "https://hostinger.ro"
+      "url_afiliat": "https://hostinger.ro",
+      "partener": false
     },
     "promo1": [],
     "promo2": [],
     "faq": [
       {
         "q": "Care este mai bun, Surfshark sau Hostinger?",
-        "a": "Alege Surfshark daca vrei protectie online, acces Netflix/alte servicii geo-blocate si privacy. Dispozitive nelimitate la un pret mic. Alege Hostinger daca vrei sa lansezi un site, blog sau magazin online. Cel mai bun raport performanta/pret din hosting-ul romanesc."
+        "a": "Alege Surfshark daca vrei protectie online si acces la servicii blocate geografic. Alege Hostinger daca vrei sa lansezi un site, un blog sau un magazin online."
       },
       {
         "q": "Are Surfshark coduri de reducere active?",
-        "a": "Momentan nu, Surfshark are 0 oferte active pe AmCupon.ro in octombrie 2026. Verificam zilnic."
+        "a": "Momentan nu, Surfshark are 0 oferte active pe AmCupon.ro in octombrie 2026. Ofertele se actualizeaza automat de trei ori pe zi."
       },
       {
         "q": "Are Hostinger coduri de reducere active?",
-        "a": "Momentan nu, Hostinger are 0 oferte active pe AmCupon.ro in octombrie 2026. Verificam zilnic."
+        "a": "Hostinger nu are program de afiliere pe AmCupon.ro, deci nu publicam oferte Hostinger."
       },
       {
         "q": "Unde gasesc cupoane pentru Surfshark si Hostinger?",
-        "a": "Pe AmCupon.ro gasesti coduri de reducere verificate pentru ambele magazine, actualizate zilnic. Copiezi codul, il aplici in cos si reducerea se scade automat."
+        "a": "Pe AmCupon.ro gasesti ofertele active ale magazinelor partenere (Surfshark), actualizate automat. Copiezi codul, il aplici in cos si reducerea se scade automat."
       }
     ],
     "luna": "octombrie",
@@ -470,48 +209,35 @@
     "n2": "Farmec",
     "titlu": "Dr. Max vs Farmec 2026 — Comparatie Completa | AmCupon.ro",
     "titlu_h1": "Dr. Max vs Farmec — unde gasesti cele mai bune oferte?",
-    "intro": "Dr. Max este o farmacie online cu produse OTC si cosmetice, in timp ce Farmec este cel mai cunoscut producator roman de cosmetice. Iata cum se compara in octombrie 2026 si cand sa alegi fiecare.",
-    "categorie": "Farmacie si cosmetice Romania",
+    "intro": "Dr. Max este o farmacie online si fizica, iar Farmec un producator roman de cosmetice care vinde si online. Iata cum se compara in octombrie 2026.",
+    "categorie": "Sanatate si frumusete",
     "puncte": [
       {
         "aspect": "Specialitate",
-        "v1": "Farmacie OTC, suplimente, cosmetice diverse",
-        "v2": "Cosmetice romanesti proprii + parfumuri"
+        "v1": "Farmacie: medicamente fara reteta, suplimente, dermatocosmetice",
+        "v2": "Cosmetice romanesti proprii"
       },
       {
-        "aspect": "Transport",
-        "v1": "Gratuit de la 150 lei",
-        "v2": "Gratuit de la 100 lei"
-      },
-      {
-        "aspect": "Retea fizica",
-        "v1": "800+ farmacii in Romania",
-        "v2": "Produse in supermarketuri + site propriu"
-      },
-      {
-        "aspect": "Reduceri",
-        "v1": "Oferte saptamanale la medicamente si cosmetice",
-        "v2": "Promotii sezoniere la colectii proprii"
-      },
-      {
-        "aspect": "Produse proprii",
-        "v1": "Branduri internationale + private label",
-        "v2": "Gerovital, Aslavital, Doina (branduri iconice RO)"
+        "aspect": "Branduri",
+        "v1": "Branduri internationale si romanesti",
+        "v2": "Gerovital, Aslavital (branduri Farmec)"
       }
     ],
-    "verdict_m1": "Alege Dr. Max pentru o gama larga de medicamente OTC, suplimente si cosmetice internationale la preturi competitive cu livrare rapida.",
-    "verdict_m2": "Alege Farmec daca vrei produse cosmetice romanesti de calitate (Gerovital, Aslavital) cu ingrediente naturale si preturi accesibile.",
+    "verdict_m1": "Alege Dr. Max pentru medicamente fara reteta, suplimente si dermatocosmetice.",
+    "verdict_m2": "Alege Farmec daca vrei cosmetice romanesti Gerovital sau Aslavital, direct de la producator.",
     "stats1": {
       "promotii_active": 5,
       "coduri": "—",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/8800/medium/8800.png",
-      "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2F"
+      "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2F",
+      "partener": true
     },
     "stats2": {
       "promotii_active": 0,
       "coduri": "—",
       "logo": "https://www.google.com/s2/favicons?domain=farmec.ro&sz=128",
-      "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmec.ro"
+      "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmec.ro",
+      "partener": true
     },
     "promo1": [
       {
@@ -531,19 +257,19 @@
     "faq": [
       {
         "q": "Care este mai bun, Drmax sau Farmec?",
-        "a": "Alege Dr. Max pentru o gama larga de medicamente OTC, suplimente si cosmetice internationale la preturi competitive cu livrare rapida. Alege Farmec daca vrei produse cosmetice romanesti de calitate (Gerovital, Aslavital) cu ingrediente naturale si preturi accesibile."
+        "a": "Alege Dr. Max pentru medicamente fara reteta, suplimente si dermatocosmetice. Alege Farmec daca vrei cosmetice romanesti Gerovital sau Aslavital, direct de la producator."
       },
       {
         "q": "Are Drmax coduri de reducere active?",
-        "a": "Da, Drmax are 5 oferte active pe AmCupon.ro in octombrie 2026. Verificam zilnic."
+        "a": "Da, Drmax are 5 oferte active pe AmCupon.ro in octombrie 2026. Ofertele se actualizeaza automat de trei ori pe zi."
       },
       {
         "q": "Are Farmec coduri de reducere active?",
-        "a": "Momentan nu, Farmec are 0 oferte active pe AmCupon.ro in octombrie 2026. Verificam zilnic."
+        "a": "Momentan nu, Farmec are 0 oferte active pe AmCupon.ro in octombrie 2026. Ofertele se actualizeaza automat de trei ori pe zi."
       },
       {
         "q": "Unde gasesc cupoane pentru Drmax si Farmec?",
-        "a": "Pe AmCupon.ro gasesti coduri de reducere verificate pentru ambele magazine, actualizate zilnic. Copiezi codul, il aplici in cos si reducerea se scade automat."
+        "a": "Pe AmCupon.ro gasesti ofertele active ale magazinelor partenere (Drmax si Farmec), actualizate automat. Copiezi codul, il aplici in cos si reducerea se scade automat."
       }
     ],
     "luna": "octombrie",
@@ -557,48 +283,40 @@
     "n2": "Decathlon",
     "titlu": "Noriel vs Decathlon 2026 — Comparatie Completa | AmCupon.ro",
     "titlu_h1": "Noriel vs Decathlon — unde gasesti cele mai bune oferte?",
-    "intro": "Noriel este liderul jucăriilor și produselor pentru copii în Romania, iar Decathlon conduce la echipamente sportive. Se suprapun la jocuri active și sport pentru copii. Iata comparatia in octombrie 2026.",
-    "categorie": "Jucarii si sport Romania",
+    "intro": "Noriel vinde jucarii si jocuri, Decathlon echipament sportiv. Ambele au produse pentru copii. Iata cum se compara in octombrie 2026.",
+    "categorie": "Copii si sport",
     "puncte": [
       {
         "aspect": "Specialitate",
-        "v1": "Jucarii, jocuri de societate, rechizite",
-        "v2": "Sport si outdoor, fitness, biciclete"
+        "v1": "Jucarii si jocuri de societate",
+        "v2": "Sport si outdoor"
       },
       {
-        "aspect": "Produse pentru copii",
-        "v1": "Selectie uriasa de jucarii 0-16 ani",
-        "v2": "Echipament sportiv copii, biciclete"
-      },
-      {
-        "aspect": "Transport gratuit",
-        "v1": "De la 99 lei",
-        "v2": "De la 150 lei"
+        "aspect": "Pentru copii",
+        "v1": "Jucarii si jocuri",
+        "v2": "Echipament sportiv si biciclete pentru copii"
       },
       {
         "aspect": "Branduri proprii",
-        "v1": "Noriel Toys (exclusive)",
-        "v2": "Quechua, Domyos, B'Twin (calitate buna)"
-      },
-      {
-        "aspect": "Retur",
-        "v1": "30 zile",
-        "v2": "30 zile"
+        "v1": "—",
+        "v2": "Quechua, Domyos si altele"
       }
     ],
-    "verdict_m1": "Alege Noriel pentru cadouri copii, jucarii educative si jocuri de societate. Selectia este neinegalata in Romania.",
-    "verdict_m2": "Alege Decathlon pentru echipament sportiv copii si adulti la preturi imbatabile. Ideal pentru biciclete, camping, fotbal, inot.",
+    "verdict_m1": "Alege Noriel pentru jucarii, jocuri de societate si cadouri pentru copii.",
+    "verdict_m2": "Alege Decathlon pentru echipament sportiv pentru copii si adulti.",
     "stats1": {
       "promotii_active": 2,
       "coduri": "—",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/7926/medium/7926.png",
-      "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnoriel.ro%2F"
+      "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnoriel.ro%2F",
+      "partener": true
     },
     "stats2": {
       "promotii_active": 0,
       "coduri": "—",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11445/medium/11445.png",
-      "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.decathlon.ro"
+      "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.decathlon.ro",
+      "partener": true
     },
     "promo1": [
       {
@@ -614,93 +332,19 @@
     "faq": [
       {
         "q": "Care este mai bun, Noriel sau Decathlon?",
-        "a": "Alege Noriel pentru cadouri copii, jucarii educative si jocuri de societate. Selectia este neinegalata in Romania. Alege Decathlon pentru echipament sportiv copii si adulti la preturi imbatabile. Ideal pentru biciclete, camping, fotbal, inot."
+        "a": "Alege Noriel pentru jucarii, jocuri de societate si cadouri pentru copii. Alege Decathlon pentru echipament sportiv pentru copii si adulti."
       },
       {
         "q": "Are Noriel coduri de reducere active?",
-        "a": "Da, Noriel are 2 oferte active pe AmCupon.ro in octombrie 2026. Verificam zilnic."
+        "a": "Da, Noriel are 2 oferte active pe AmCupon.ro in octombrie 2026. Ofertele se actualizeaza automat de trei ori pe zi."
       },
       {
         "q": "Are Decathlon coduri de reducere active?",
-        "a": "Momentan nu, Decathlon are 0 oferte active pe AmCupon.ro in octombrie 2026. Verificam zilnic."
+        "a": "Momentan nu, Decathlon are 0 oferte active pe AmCupon.ro in octombrie 2026. Ofertele se actualizeaza automat de trei ori pe zi."
       },
       {
         "q": "Unde gasesc cupoane pentru Noriel si Decathlon?",
-        "a": "Pe AmCupon.ro gasesti coduri de reducere verificate pentru ambele magazine, actualizate zilnic. Copiezi codul, il aplici in cos si reducerea se scade automat."
-      }
-    ],
-    "luna": "octombrie",
-    "an": 2026
-  },
-  "fashiondays-vs-shein": {
-    "slug": "fashiondays-vs-shein",
-    "m1_slug": "fashiondays.ro",
-    "m2_slug": "shein.com",
-    "n1": "Fashiondays",
-    "n2": "Shein",
-    "titlu": "FashionDays vs Shein 2026 — Comparatie Completa | AmCupon.ro",
-    "titlu_h1": "FashionDays vs Shein — unde gasesti cele mai bune oferte?",
-    "intro": "FashionDays ofera branduri premium din Europa, in timp ce Shein vine cu moda ultra-accesibila din Asia. Doua filozofii diferite la acelasi produs: haine. Iata comparatia in octombrie 2026.",
-    "categorie": "Moda online Romania",
-    "puncte": [
-      {
-        "aspect": "Preturi",
-        "v1": "Medii-ridicate, reduceri mari la sales",
-        "v2": "Extrem de mici, promotii permanente"
-      },
-      {
-        "aspect": "Livrare",
-        "v1": "2-4 zile, din depozite europene",
-        "v2": "7-25 zile, din China"
-      },
-      {
-        "aspect": "Calitate materiale",
-        "v1": "Branduri verificate, calitate consistenta",
-        "v2": "Variabila, consultati review-urile"
-      },
-      {
-        "aspect": "Retur",
-        "v1": "30 zile, simplu",
-        "v2": "Credit magazin sau retur partial"
-      },
-      {
-        "aspect": "Branduri",
-        "v1": "Versace Jeans, Tommy, Calvin Klein etc.",
-        "v2": "Branduri proprii Shein"
-      }
-    ],
-    "verdict_m1": "Alege FashionDays pentru branduri europene de calitate cu livrare rapida si retururi simple. Sales-urile de sezon pot fi chiar mai ieftine decat Shein.",
-    "verdict_m2": "Alege Shein daca vrei sa testezi tendinte rapid la preturi minime si esti dispus sa astepti livrarea. Perfecta pentru reinnoire frecventa garderoba.",
-    "stats1": {
-      "promotii_active": 0,
-      "coduri": "—",
-      "logo": null,
-      "url_afiliat": "https://fashiondays.ro"
-    },
-    "stats2": {
-      "promotii_active": 0,
-      "coduri": "—",
-      "logo": null,
-      "url_afiliat": "https://shein.com"
-    },
-    "promo1": [],
-    "promo2": [],
-    "faq": [
-      {
-        "q": "Care este mai bun, Fashiondays sau Shein?",
-        "a": "Alege FashionDays pentru branduri europene de calitate cu livrare rapida si retururi simple. Sales-urile de sezon pot fi chiar mai ieftine decat Shein. Alege Shein daca vrei sa testezi tendinte rapid la preturi minime si esti dispus sa astepti livrarea. Perfecta pentru reinnoire frecventa garderoba."
-      },
-      {
-        "q": "Are Fashiondays coduri de reducere active?",
-        "a": "Momentan nu, Fashiondays are 0 oferte active pe AmCupon.ro in octombrie 2026. Verificam zilnic."
-      },
-      {
-        "q": "Are Shein coduri de reducere active?",
-        "a": "Momentan nu, Shein are 0 oferte active pe AmCupon.ro in octombrie 2026. Verificam zilnic."
-      },
-      {
-        "q": "Unde gasesc cupoane pentru Fashiondays si Shein?",
-        "a": "Pe AmCupon.ro gasesti coduri de reducere verificate pentru ambele magazine, actualizate zilnic. Copiezi codul, il aplici in cos si reducerea se scade automat."
+        "a": "Pe AmCupon.ro gasesti ofertele active ale magazinelor partenere (Noriel si Decathlon), actualizate automat. Copiezi codul, il aplici in cos si reducerea se scade automat."
       }
     ],
     "luna": "octombrie",
@@ -714,48 +358,30 @@
     "n2": "Elefant",
     "titlu": "Libris vs Elefant 2026 — Comparatie Completa | AmCupon.ro",
     "titlu_h1": "Libris vs Elefant — unde gasesti cele mai bune oferte?",
-    "intro": "Libris si Elefant sunt doua librarii online mari din Romania, dar Elefant ofera si electronice si jocuri. Iata care este mai bun pentru carti si nu numai, in octombrie 2026.",
-    "categorie": "Carti si electronice online Romania",
+    "intro": "Libris si Elefant vand carti online in Romania; Elefant are si alte categorii de produse. Iata cum se compara in octombrie 2026.",
+    "categorie": "Librarii online Romania",
     "puncte": [
       {
-        "aspect": "Carti disponibile",
-        "v1": "700.000+ titluri",
-        "v2": "500.000+ titluri"
-      },
-      {
-        "aspect": "Electronice",
-        "v1": "Nu",
-        "v2": "Da — laptopuri, tablete, gaming"
-      },
-      {
-        "aspect": "Transport gratuit",
-        "v1": "De la 50 lei",
-        "v2": "De la 100 lei"
-      },
-      {
-        "aspect": "Promotii carti",
-        "v1": "Reduceri zilnice, top bestsellers ieftine",
-        "v2": "Reduceri regulate, colectii editoriale"
-      },
-      {
-        "aspect": "Aplicatie mobila",
-        "v1": "Da",
-        "v2": "Da + ebook-uri proprii"
+        "aspect": "Specialitate",
+        "v1": "Librarie online",
+        "v2": "Carti si alte categorii de produse"
       }
     ],
-    "verdict_m1": "Alege Libris pentru cel mai mare stoc de carti si transport gratuit la comenzi mai mici. Preturile la bestsellers sunt adesea mai bune.",
-    "verdict_m2": "Alege Elefant daca vrei si alte produse (electronice, jocuri) intr-o singura comanda alaturi de carti.",
+    "verdict_m1": "Alege Libris daca vrei o librarie online cu un catalog larg.",
+    "verdict_m2": "Alege Elefant daca vrei sa comanzi si alte produse impreuna cu cartile.",
     "stats1": {
       "promotii_active": 1,
       "coduri": "—",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9868/medium/9868.gif",
-      "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro"
+      "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro",
+      "partener": true
     },
     "stats2": {
       "promotii_active": 0,
       "coduri": "—",
       "logo": null,
-      "url_afiliat": "https://elefant.ro"
+      "url_afiliat": "https://elefant.ro",
+      "partener": false
     },
     "promo1": [
       {
@@ -767,19 +393,19 @@
     "faq": [
       {
         "q": "Care este mai bun, Libris sau Elefant?",
-        "a": "Alege Libris pentru cel mai mare stoc de carti si transport gratuit la comenzi mai mici. Preturile la bestsellers sunt adesea mai bune. Alege Elefant daca vrei si alte produse (electronice, jocuri) intr-o singura comanda alaturi de carti."
+        "a": "Alege Libris daca vrei o librarie online cu un catalog larg. Alege Elefant daca vrei sa comanzi si alte produse impreuna cu cartile."
       },
       {
         "q": "Are Libris coduri de reducere active?",
-        "a": "Da, Libris are 1 oferta activa pe AmCupon.ro in octombrie 2026. Verificam zilnic."
+        "a": "Da, Libris are 1 oferta activa pe AmCupon.ro in octombrie 2026. Ofertele se actualizeaza automat de trei ori pe zi."
       },
       {
         "q": "Are Elefant coduri de reducere active?",
-        "a": "Momentan nu, Elefant are 0 oferte active pe AmCupon.ro in octombrie 2026. Verificam zilnic."
+        "a": "Elefant nu are program de afiliere pe AmCupon.ro, deci nu publicam oferte Elefant."
       },
       {
         "q": "Unde gasesc cupoane pentru Libris si Elefant?",
-        "a": "Pe AmCupon.ro gasesti coduri de reducere verificate pentru ambele magazine, actualizate zilnic. Copiezi codul, il aplici in cos si reducerea se scade automat."
+        "a": "Pe AmCupon.ro gasesti ofertele active ale magazinelor partenere (Libris), actualizate automat. Copiezi codul, il aplici in cos si reducerea se scade automat."
       }
     ],
     "luna": "octombrie",

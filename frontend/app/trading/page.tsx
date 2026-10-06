@@ -200,7 +200,7 @@ export default function TradingPage() {
               </span>
             </h1>
             <p className="text-[#c9ced5] text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
-              Am testat XTB, Binance, eToro si Trading212. Comparatie completa: comisioane, siguranta, usurinta utilizare — ghid honest pentru romani.
+              Am comparat XTB, Binance, eToro si Trading212 pe conditiile publicate de fiecare: comisioane, siguranta, usurinta utilizarii. Nu e consultanta financiara.
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Actiuni 0%", "ETF-uri", "Crypto", "Copy Trading", "Staking", "Cont Demo"].map(c => (
@@ -222,7 +222,7 @@ export default function TradingPage() {
           <div className="text-center mb-10">
             <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-2">COMPARATIE PLATFORME</p>
             <h2 className="text-3xl font-black text-[#ffffff]">Top 4 platforme de investitii pentru romani</h2>
-            <p className="text-[#c9ced5] text-sm mt-2">Testate personal — actualizat {an}</p>
+            <p className="text-[#c9ced5] text-sm mt-2">Comparate pe condițiile publicate de fiecare platformă — nu e consultanță financiară</p>
           </div>
 
           <div className="space-y-6">

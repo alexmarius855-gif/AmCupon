@@ -1,7 +1,7 @@
 import { Metadata } from "next";
-import BrandPageTemplate from "../components/BrandPageTemplate";
+import BrandPageTemplate, { metadataBrand } from "../components/BrandPageTemplate";
 
-export const metadata: Metadata = {
+const META: Metadata = {
   title: "Cod Reducere Amazon Romania 2026 — Oferte & Promotii",
   description: "Coduri reducere Amazon Romania actualizate zilnic. Milioane de produse cu livrare rapida. Promotii Amazon Prime, reduceri electronice, carti, fashion si mai mult.",
   keywords: ["cod reducere amazon", "amazon romania reduceri", "amazon prime reduceri", "amazon discount", "amazon voucher", "amazon promotii"],
@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
+// Metadata cu reparare automata: daca magazinul iese din output.json, pagina devine onesta
+// si noindex (vezi metadataBrand in BrandPageTemplate.tsx).
+export async function generateMetadata(): Promise<Metadata> {
+  return metadataBrand({ slug: "amazon.com", slugAlt: "amazon", name: "Amazon", canonical: "/amazon" }, META);
+}
 
 export default function AmazonPage() {
   return (

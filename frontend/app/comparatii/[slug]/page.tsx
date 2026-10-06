@@ -15,6 +15,8 @@ interface Stats {
   coduri?: string;
   logo?: string;
   url_afiliat: string;
+  /** calculat din output.json in generate_comparisons.py — pagina /cod-reducere/<slug> exista doar atunci */
+  partener?: boolean;
 }
 
 interface Promo {
@@ -190,12 +192,20 @@ export default async function ComparatiePage(
                     ))}
                   </div>
                 )}
-                <Link
-                  href={`/cod-reducere/${side.slug}`}
-                  className="block w-full text-center bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] text-sm font-semibold py-2.5 rounded-lg transition-colors"
-                >
-                  Coduri {side.n}
-                </Link>
+                {/* 06.10.2026: linkul ducea si la magazine fara pagina (temu, shein, hostinger: 404;
+                    emag, elefant: redirect spre o categorie). Doar partenerii au pagina de coduri. */}
+                {side.stats.partener ? (
+                  <Link
+                    href={`/cod-reducere/${side.slug}`}
+                    className="block w-full text-center bg-[#ddf93c] hover:bg-[#c3dd2c] text-[#0c1000] text-sm font-semibold py-2.5 rounded-lg transition-colors"
+                  >
+                    Coduri {side.n}
+                  </Link>
+                ) : (
+                  <p className="text-center text-xs text-[#9399a0] border border-[#2a2f36] rounded-lg py-2.5">
+                    {side.n} nu e partener AmCupon.ro
+                  </p>
+                )}
               </div>
             ))}
           </div>
@@ -224,22 +234,22 @@ export default async function ComparatiePage(
             <div className="bg-[#06080b]/20 border border-[#ddf93c]/30 rounded-xl p-5">
               <p className="text-[#c3dd2c] font-bold text-sm mb-2 uppercase tracking-wide">Alege {c.n1} daca...</p>
               <p className="text-[#c9ced5] text-sm leading-relaxed">{c.verdict_m1}</p>
-              <Link
+              {c.stats1.partener && <Link
                 href={`/cod-reducere/${c.m1_slug}`}
                 className="mt-4 block text-center bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] text-sm font-semibold py-2.5 rounded-lg transition-colors"
               >
                 Vezi oferte {c.n1}
-              </Link>
+              </Link>}
             </div>
             <div className="bg-[#06080b]/20 border border-[#ddf93c]/30 rounded-xl p-5">
               <p className="text-[#c3dd2c] font-bold text-sm mb-2 uppercase tracking-wide">Alege {c.n2} daca...</p>
               <p className="text-[#c9ced5] text-sm leading-relaxed">{c.verdict_m2}</p>
-              <Link
+              {c.stats2.partener && <Link
                 href={`/cod-reducere/${c.m2_slug}`}
                 className="mt-4 block text-center bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] text-sm font-semibold py-2.5 rounded-lg transition-colors"
               >
                 Vezi oferte {c.n2}
-              </Link>
+              </Link>}
             </div>
           </div>
 

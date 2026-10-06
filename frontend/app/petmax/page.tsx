@@ -1,13 +1,19 @@
 import { Metadata } from "next";
-import BrandPageTemplate from "../components/BrandPageTemplate";
+import BrandPageTemplate, { metadataBrand } from "../components/BrandPageTemplate";
 
-export const metadata: Metadata = {
+const META: Metadata = {
   title: "Cod Reducere Petmax — Produse Animale de Companie 2026",
   description: "Coduri de reducere Petmax actualizate zilnic. Reduceri la hrana, accesorii si produse pentru caini, pisici si alte animale. Promotii Petmax verificate.",
   keywords: ["cod reducere petmax", "petmax reduceri", "produse animale reduceri", "petmax promotii", "petmax discount"],
   alternates: { canonical: "https://amcupon.ro/cod-reducere/petmax.ro" },
   openGraph: { title: "Reduceri Petmax Animale 2026 | AmCupon.ro", url: "https://amcupon.ro/petmax", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
 };
+
+// Metadata cu reparare automata: daca magazinul iese din output.json, pagina devine onesta
+// si noindex (vezi metadataBrand in BrandPageTemplate.tsx).
+export async function generateMetadata(): Promise<Metadata> {
+  return metadataBrand({ slug: "petmax.ro", slugAlt: "petmax", name: "Petmax", canonical: "/petmax" }, META);
+}
 
 export default function PetmaxPage() {
   return (

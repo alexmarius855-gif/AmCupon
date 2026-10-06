@@ -232,7 +232,7 @@ export default async function PaginaCategorie({
         name: `Unde gasesc coduri de reducere la magazine de ${numeCateg}?`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: `Pe AmCupon.ro gasesti ${cuPromo} promotii active pentru ${mag.length} magazine de ${numeCateg} din Romania. Toate codurile sunt verificate si actualizate zilnic — gratuit.`,
+          text: `Pe AmCupon.ro gasesti ${cuPromo} promotii active pentru ${mag.length} magazine de ${numeCateg} din Romania. Codurile se actualizeaza automat de mai multe ori pe zi — gratuit.`,
         },
       },
       {

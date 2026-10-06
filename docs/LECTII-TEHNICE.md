@@ -199,6 +199,19 @@ găsea, cădea pe `len(items) < per_page`, și la fiecare rulare logul scria „
 **Regula completată:** paginarea se caută în AMBELE locuri (`_pagini_totale`), iar fără ea reperul e
 mărimea primei pagini, nu `per_page`. `scripts/test_paginare_2p.py` pică pe codul vechi.
 
+**A șasea, 06.10.2026, și probabil premisa titlului era greșită.** API-ul nu „ignoră `per_page`":
+parametrul, după toate probele, **nu se numește așa**. Clientul oficial 2Parale/2Performant-php folosește
+`perpage` (`unset($params['page'], $params['perpage'])`), iar CharityDiscount cere `perpage=40` în
+producție — găsite cu `gh search code "api.2performant.com"`. Confirmarea noastră = logul primei rulări cu
+`perpage` („Pagina 1/15: 40"); dacă tot vin 20, paginarea merge la fel și ipoteza cade. Trei luni am
+construit reguli în jurul unui nume de parametru netestat, iar 20 pe pagină ne înjumătățea bugetul de
+cereri (limita 429). În același log, alt plafon
+ascuns: `get_product_feeds()` se oprea la `MAX_FEEDS * 3` = 180 de feed-uri din ~600 („Pagina 9/30"), deci
+lista nu era NICIODATĂ completă și ~420 de magazine nu intrau în rotație.
+**Regula a treia:** când un API pare să „ignore" un parametru, caută întâi cum îl numește clientul oficial
+sau un integrator din producție — nu construi pe ocolire. Și un „Pagina 9/30" urmat de oprire e tot o
+semnătură: bucla s-a oprit pe altceva decât pe ultima pagină.
+
 ---
 
 ## 7. Date structurate fără conținut vizibil
@@ -373,6 +386,41 @@ datele oneste devin cetățeni de clasa a doua.
 **Cum a fost prinsă:** de garda `scripts/verifica_site.py`, la **prima ei rulare pe date reale**.
 Trei luni în care nimic nu se uita la date ca întreg, versus 10 secunde.
 
+### 05.10.2026 — a șasea oară: în COD și în TEXT, nu în date
+
+Măsurat în Vercel Analytics: paginile cu vizitatori din căutări sunt `/top/*` și articolele „Cel mai
+bun X”. Exact pe ele, afirmațiile false stăteau scrise de mână:
+- `/top/[slug]`: secțiunea „Cum testăm” — „Fiecare produs este testat timp de minim 2 săptămâni în
+  condiții reale de utilizare” — și FAQ-ul „Topul nostru include doar modele testate și verificate de
+  echipa AmCupon.ro”. Reparația din 10.08 curățase **datele** (`fix_top_onestitate.py`); textul din
+  `page.tsx` a rămas. **O curățare de date nu atinge textul din cod** — se caută în ambele.
+- **„verificat”** în peste 100 de locuri (după sweep-ul din 22.09): `/radar` „ales și verificat de
+  noi”, `/contact` „verificăm fiecare promoție înainte de publicare”, insigna „VERIFICAT” pe `/produse`,
+  „verificat și funcțional” în **toate** cele 147 de articole de magazin, „testate și verificate” în
+  generatorul evergreen. Sweep-ul din 22.09 căutase „verificate zilnic” — o formă din zece.
+- „1000+ magazine” scris de mână în 11 fișiere (erau 957), „Profitshare” listat ca rețea pe `/contact`
+  la șapte săptămâni după excludere, „Rată de succes afișată” pe `/despre-noi` (regex-ul gărzii cerea
+  „rată **de** succes”).
+
+**Reguli noi:** (1) o cifră sau un nume de magazin din text se **calculează** (`lib/cifreSite.ts`);
+(2) garda `verifica_site.py --html` are acum trei reguli pe textul paginii (pretenție de testare,
+„verificat” despre coduri/oferte, număr de magazine scris de mână) — negațiile („Nu le-am testat”) și
+indicațiile pentru cititor („verifică pe site”) trec; (3) după orice sweep de formulări, `grep` pe
+**rădăcina** cuvântului (`verific`), nu pe expresia exactă.
+
+### 06.10.2026 — a șaptea, a doua zi după sweep: regula (3) n-a fost aplicată pe markdown
+
+La push, garda a prins un link 404 într-un articol de magazin; deschizându-l, am găsit în **toate cele 147**
+„AmCupon.ro verifica **zilnic** validitatea fiecarui cod. Nu afisam niciodata coduri expirate”, un buton
+„Raporteaza cod” și o etichetă „Reducere automata” care nu există, „Codul ... este valid în momentul în care
+îl accesați”, „Ofertă exclusivă — nu o găsești în altă parte” și reduceri inventate („70-80%”). Plus un
+`<!-- comentariu -->` intern în conținut, afișat ca TEXT. Sweep-ul de ieri le ratase din două motive:
+`**zilnic**` rupea orice regex scris pe text simplu, iar garda căuta „verificăm”, nu „verifică”.
+**Reguli:** (1) regexurile de gardă tolerează marcajul dintre cuvinte (`**`, `<strong>`); (2) garda rulează
+și în CI, pe `blog-posts.json`, nu doar local pe HTML; (3) un șablon se citește INTEGRAL, propoziție cu
+propoziție, întrebând „e adevărat pentru ORICE magazin?” — nu se caută doar cuvintele deja cunoscute;
+(4) comentariile despre cod stau în cod, nu în șirul de text care ajunge pe pagină.
+
 ## 11. Măsoară înainte să tai, și înainte să repari
 
 - **08.08:** două secțiuni de homepage păreau redundante. Măsurate: suprapunere **zero**, seturi
@@ -416,3 +464,25 @@ recunoscute rapid, ca să nu se piardă zile pe depanare:
 **Regula:** când un API răspunde dar nu livrează, verifică întâi dacă e limită de plan/cont înainte
 să rescrii codul. Toate trei au fost confirmate prin workflow-uri manuale (`workflow_dispatch`,
 `--dry-run`) care folosesc secretele existente fără ca cineva să le vadă.
+
+## 14. Linkuri spre pagini care nu există (și ce arată „bine” fără să fie)
+
+A șasea apariție pe 05.10.2026, de data asta pe paginile care chiar au trafic:
+- 16.08 `/categorii/telecom`, 21.08 `/pcmadd` și `/cod-reducere/bookzone.ro` (din subsol, pe toate paginile),
+  08.08 altex/flanco/elefant — reparate de fiecare dată **în locul găsit**, nu în clasa de bug.
+- 05.10: pe toate cele 30 de pagini `/top`, „Caută preț” ducea la `/cod-reducere/emag.ro` (redirect spre
+  `/categorii/marketplace`) și 12 butoane de magazin dădeau 404; în articolele „Cel mai bun X”, **147 de
+  linkuri** spre magazine care nu sunt pe site, în 53 de articole; patru pagini de brand (Temu, Shein,
+  Trendyol, Banggood) își declarau `canonical` către un 404.
+
+**De ce a revenit:** linkul se construiește din **numele magazinului scris în cod** (`/cod-reducere/${slug}`),
+iar pagina există doar dacă magazinul e în `output.json`. Magazinele ies din date (Profitshare exclus,
+program închis), codul rămâne. Iar fișierele care **doar adaugă** (`generate_product_tops.py`,
+`generate_best_of.py`) nu șterg niciodată ce nu mai e adevărat — tiparul #5, altă formă.
+
+**Regula:** (1) un link intern către o pagină generată din date se construiește doar după ce verifici
+că elementul e în date (`lib/linkPlatit.ts`, `lib/oferteTema.ts`); (2) garda `verifica_site.py --html`
+verifică acum **toate** linkurile interne `/cod-reducere|top|categorii|comparatii|cadouri|esim|nisa|produse/*`
+contra paginilor generate (404 = blochează) și numără separat pe cele prin redirect; (3) textul care stă
+în fișiere intrare-ieșire trece la fiecare rulare printr-o poartă (`scripts/curata_articole.py`), nu
+printr-o reparație o singură dată.

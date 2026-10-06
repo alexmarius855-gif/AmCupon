@@ -16,7 +16,7 @@ interface Magazin {
 
 export const metadata: Metadata = {
   title: "Telefon Ieftin Romania 2026 — Coduri Samsung, iPhone, Xiaomi",
-  description: "Cele mai bune oferte telefoane 2026: Samsung Galaxy, iPhone, Xiaomi, OnePlus. Reduceri verificate la eMAG, Altex, Flanco, Orange. Telefon sub 1000, 2000, 3000 lei.",
+  description: "Oferte la telefoane 2026: Samsung Galaxy, iPhone si altele, de la magazinele de electronice partenere AmCupon. Reduceri active, actualizate zilnic.",
   keywords: ["telefon ieftin romania", "smartphone reducere 2026", "samsung reducere", "iphone reducere romania", "xiaomi ieftin", "telefon sub 2000 lei", "emag telefoane reducere"],
   alternates: { canonical: "https://amcupon.ro/telefoane" },
   openGraph: { title: "Telefon Ieftin Romania 2026 | AmCupon.ro", url: "https://amcupon.ro/telefoane", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },

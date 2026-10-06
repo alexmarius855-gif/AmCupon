@@ -232,7 +232,7 @@ export default function RecomandariPage() {
             Servicii <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #ddf93c, #ddf93c)" }}>Recomandate</span>
           </h1>
           <p className="text-[#c9ced5] text-lg max-w-2xl mx-auto mb-8">
-            VPN, hosting, SEO tools, freelancing si travel — servicii testate si recomandate de echipa AmCupon.ro. Alege ce ti se potriveste.
+            VPN, hosting, SEO tools, freelancing si travel — servicii alese de echipa AmCupon.ro pe baza prețurilor și a condițiilor publice. Alege ce ți se potrivește.
           </p>
           {/* Jump links */}
           <div className="flex flex-wrap justify-center gap-2">

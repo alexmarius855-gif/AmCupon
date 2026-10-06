@@ -93,11 +93,21 @@ def make_afiliat_url(url: str) -> str:
             f"&unique={unique}&redirect_to={encoded}")
 
 
+# Lista s-a terminat normal (ultima pagina sau pagina goala), nu taiata de o eroare.
+# 06.10.2026: pasul ruleaza dupa fetch_product_feeds.py, care foloseste aceeasi limita de
+# cereri 2Performant si acum asteapta la 429 pana la plafon. Un 429 aici rupea bucla dupa
+# prima pagina (sau inainte de ea), iar main() suprascria banners.json cu lista taiata.
+BANNERE_COMPLETE = False
+
+
 def fetch_banners() -> list:
+    global BANNERE_COMPLETE
+    BANNERE_COMPLETE = False
     banners = []
     page = 1
     while len(banners) < MAX_BANNERS:
-        url = f"{BASE_URL}/affiliate/banners.json?page={page}&per_page=50"
+        # `perpage` e numele oficial al parametrului (vezi PE_PAGINA_MAX din fetch_2p_api.py)
+        url = f"{BASE_URL}/affiliate/banners.json?page={page}&perpage=40"
         try:
             resp = _session.get(url, headers=_headers(), timeout=20)
             _update_tokens(resp)
@@ -116,6 +126,7 @@ def fetch_banners() -> list:
             )
             if not items:
                 print(f"  Niciun banner pe pagina {page}")
+                BANNERE_COMPLETE = True
                 break
 
             print(f"  Pagina {page}: {len(items)} bannere")
@@ -172,8 +183,10 @@ def fetch_banners() -> list:
                 if isinstance(data, dict) else None
             if pagini:
                 if page >= pagini:
+                    BANNERE_COMPLETE = True
                     break
             elif len(items) < 20:
+                BANNERE_COMPLETE = True
                 break
             page += 1
             time.sleep(0.3)
@@ -206,6 +219,11 @@ def main():
     print("\n[2/2] Descarc bannere...")
     banners = fetch_banners()
     print(f"  {len(banners)} bannere descarcate")
+
+    # Plafonul MAX_BANNERS opreste bucla intentionat — lista e atunci completa pentru noi.
+    if not BANNERE_COMPLETE and len(banners) < MAX_BANNERS and os.path.exists(output_path):
+        print("  Lista de bannere a fost taiata de o eroare (ex. 429) — pastrez banners.json existent")
+        return
 
     # Grupeaza pe dimensiuni
     dim_map: dict[str, list] = {}

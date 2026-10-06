@@ -313,6 +313,15 @@ jobs:
             echo "ANTHROPIC_API_KEY nu e setat — skip ghiduri AI"
           fi
 
+      # 05.10.2026: poarta prin care trece TOT textul de blog, dupa ultimul scriitor si inainte de
+      # blog-latest.json (8b). Scoate linkurile spre magazine fara program (147 in 53 de articole),
+      # „partenerii nostri: eMAG, Altex, Flanco", „verificat si functional", economiile fara sursa.
+      # generate_best_of.py doar ADAUGA articole, deci fara pasul asta textul vechi nu s-ar repara
+      # niciodata. Fara continue-on-error: daca pica, rularea iese rosie (vezi scripts/curata_articole.py).
+      - name: Curata articolele de afirmatii false si linkuri moarte
+        working-directory: scripts
+        run: python curata_articole.py
+
       # ── 8a2. Covere editoriale per-articol (pe brand, inlocuiesc logo blur) ──
       # Ruleaza DUPA toata generarea de blog (blog + best_of + ai_guides).
       # Suprascrie campul cover al fiecarui articol cu /blog-covers/{slug}.png.
@@ -514,6 +523,7 @@ jobs:
           git add frontend/public/blog-latest.json     || true
           git add frontend/public/blog-covers          || true
           git add frontend/public/products.json        || true
+          git add data/rotatie-feeduri-2p.json         || true
           git add frontend/public/products-home.json   || true
           git add frontend/public/recomandate.json     || true
           git add frontend/public/store-descriptions.json || true

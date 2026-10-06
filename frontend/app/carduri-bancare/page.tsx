@@ -180,7 +180,7 @@ export default function CarduriBancarePage() {
           <div className="text-center mb-10">
             <p className="text-xs font-bold text-[#c3dd2c] uppercase tracking-widest mb-2">COMPARATIE CONTURI</p>
             <h2 className="text-3xl font-black text-[#ffffff]">Top 4 conturi bancare digitale pentru romani</h2>
-            <p className="text-[#c9ced5] text-sm mt-2">Testate personal — actualizat {an}</p>
+            <p className="text-[#c9ced5] text-sm mt-2">Comparate pe condițiile publicate de fiecare bancă — verifică-le pe site-ul ei înainte să deschizi contul</p>
           </div>
 
           <div className="space-y-6">

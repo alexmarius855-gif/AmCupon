@@ -1,7 +1,7 @@
 import { Metadata } from "next";
-import BrandPageTemplate from "../components/BrandPageTemplate";
+import BrandPageTemplate, { metadataBrand } from "../components/BrandPageTemplate";
 
-export const metadata: Metadata = {
+const META: Metadata = {
   title: "Cod Reducere Brico — Oferte Bricolaj 2026 | AmCupon.ro",
   description: "Coduri de reducere Brico Depot actualizate zilnic. Reduceri la materiale constructii, unelte, gradina si decoratiuni. Promotii Brico verificate.",
   keywords: ["cod reducere brico", "brico reduceri", "brico depot promotii", "bricolaj reduceri", "materiale constructii reducere"],
@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
+// Metadata cu reparare automata: daca magazinul iese din output.json, pagina devine onesta
+// si noindex (vezi metadataBrand in BrandPageTemplate.tsx).
+export async function generateMetadata(): Promise<Metadata> {
+  return metadataBrand({ slug: "brico.ro", slugAlt: "brico", name: "Brico", canonical: "/brico" }, META);
+}
 
 export default function BricoPage() {
   return (

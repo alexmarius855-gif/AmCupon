@@ -58,7 +58,7 @@ export async function generateMetadata(
     ? `Ghiduri ${catValid} — Sfaturi si Comparatii Reduceri${pageNr > 1 ? ` (pag. ${pageNr})` : ""} | AmCupon.ro`
     : "Revista AmCupon — Ghiduri, Comparatii si Sfaturi de Cumparaturi Online";
   const description = catValid
-    ? `Ghiduri si comparatii ${catValid.toLowerCase()}: cum alegi, cand cumperi si cum economisesti cu coduri de reducere verificate. Sfaturi practice pe AmCupon.ro.`
+    ? `Ghiduri si comparatii ${catValid.toLowerCase()}: cum alegi, cand cumperi si cum economisesti cu coduri de reducere active. Sfaturi practice pe AmCupon.ro.`
     : "Ghiduri, comparatii si sfaturi despre cum sa economisesti la cumparaturile online din Romania. Coduri de reducere, oferte si promotii explicate simplu.";
 
   // Canonical: pagina 1 fara ?page; categoriile isi au canonicalul lor
@@ -283,7 +283,7 @@ export default async function BlogPage(
                   <div className="bg-[#14181c] border border-[#1f2329] rounded-xl p-5">
                     <h2 className="font-black text-[#ffffff] text-base mb-2">Cumpara inteligent</h2>
                     <p className="text-sm text-[#c9ced5] leading-relaxed mb-4">
-                      Ghiduri verificate ca sa gasesti pretul bun si sa nu ratezi reducerile reale din magazinele tale preferate.
+                      Ghiduri practice ca sa gasesti pretul bun si sa nu ratezi reducerile reale din magazinele tale preferate.
                     </p>
                     <Link href="/top-reduceri" className="inline-flex items-center gap-1 text-sm font-bold text-[#ddf93c] hover:text-[#c3dd2c]">
                       Vezi codurile active <span aria-hidden>→</span>

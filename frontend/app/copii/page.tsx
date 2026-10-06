@@ -6,6 +6,8 @@ import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
 import { esteInCategorie } from "../../lib/categoriiNisa";
+import { laParteneri } from "@/lib/cifreSite";
+import { NISA_CATEGORII } from "@/lib/categoriiNisa";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -16,7 +18,7 @@ interface Magazin {
 
 export const metadata: Metadata = {
   title: "Reduceri Jucării & Haine Copii 2026 — Coduri Noriel, eMAG",
-  description: "Coduri reducere magazine copii 2026: Noriel, eMAG, FashionDays Copii, H&M Kids. Jucării, haine, cărucioare, scaune auto — la prețuri reduse.",
+  description: `Coduri reducere magazine copii 2026 ${laParteneri(NISA_CATEGORII.copii)}. Jucării, haine, cărucioare, scaune auto — la prețuri reduse.`,
   keywords: ["reduceri jucarii", "cod reducere noriel", "haine copii reducere", "jucarii ieftine online", "emag copii reducere", "carucior reducere", "scaun auto copil reducere"],
   alternates: { canonical: "https://amcupon.ro/copii" },
   openGraph: { title: "Reduceri Copii & Jucării 2026 | AmCupon.ro", url: "https://amcupon.ro/copii", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
@@ -64,7 +66,7 @@ export default function CopiiPage() {
             <div className="text-5xl mb-4">🧸</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Jucării & Copii cu Reducere {an}</h1>
             <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              LEGO, păpuși, haine copii, cărucioare, scaune auto — coduri de reducere verificate
+              LEGO, păpuși, haine copii, cărucioare, scaune auto — coduri de reducere active
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["LEGO","Păpuși","Haine Kids","Cărucioare","Scaune auto","Cărți copii","Parcuri de joacă","Baby monitor"].map(c => (

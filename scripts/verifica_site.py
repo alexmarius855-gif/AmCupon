@@ -194,6 +194,17 @@ def verifica_date() -> dict:
     if goale:
         semnaleaza("articol gol", f"{len(goale)} articole sub 400 de caractere", goale)
 
+    # 7b. Promisiuni false despre coduri si notite interne in textul articolelor (06.10.2026). Aceeasi
+    #     regula ca la verificarea HTML, dar aici ruleaza in CI, la fiecare rulare — fraza din sablonul
+    #     vechi a stat pe 147 de pagini fara sa se inroseasca nimic, pentru ca --html ruleaza doar local.
+    #     Un <!-- comentariu --> in continut ajunge TEXT in pagina (renderer-ul nu stie HTML).
+    false = [a["slug"] for a in articole
+             if RE_PROMISIUNE_COD.search(a.get("content") or "") or "<!--" in (a.get("content") or "")]
+    if false:
+        semnaleaza("promisiune falsa in articol",
+                   f"{len(false)} articole promit ce nu facem (validitate, verificare, exclusivitate) "
+                   f"sau au o notita interna vizibila — ruleaza scripts/curata_articole.py", false)
+
     # 8. Istoricul promotiilor (24.09.2026). Pasul lui ruleaza cu continue-on-error, deci daca se
     #    strica nu se inroseste nimic: „plasa de siguranta pe care n-o verifica nimeni"
     #    (docs/LECTII-TEHNICE.md #4). Se prinde aici: fisier care nu se mai actualizeaza, sau o
@@ -224,6 +235,24 @@ def verifica_date() -> dict:
                        f"{len(murdare)} intrari din istoric incalca regulile de titlu (cod drept titlu, "
                        "text pentru afiliati, magazin de test)", murdare)
 
+    # 9. Linkuri Profitshare (05.10.2026). Contul a fost respins si reteaua exclusa pe 19.08,
+    #    deci un clic pe un astfel de link nu mai produce comision. Pe 05.10 inca erau 132 in
+    #    top-produse.json — pe paginile /top, singurele cu vizitatori din cautari — fiindca
+    #    generate_product_tops.py doar adauga linkuri, nu le si sterge. Se cauta ca TEXT in
+    #    toate fisierele publice: un link mort nu trebuie sa conteze in ce camp sta.
+    cu_ps = []
+    for f in sorted(glob.glob(os.path.join(PUB, "*.json"))):
+        try:
+            n = io.open(f, encoding="utf-8", errors="ignore").read().count("profitshare.ro/l/")
+        except OSError:
+            continue
+        if n:
+            cu_ps.append(f"{os.path.basename(f)}: {n}")
+    if cu_ps:
+        semnaleaza("link Profitshare",
+                   "linkuri Profitshare in fisierele publice — reteaua e exclusa din 19.08, "
+                   "clicul nu plateste", cu_ps)
+
     return stare
 
 
@@ -250,11 +279,87 @@ REGULI_HTML = [
     ("cashback publicat", re.compile(r">\s*Cashback\s*<"),
      "comisionul nostru afisat ca beneficiu al cumparatorului "
      "(a reaparut de 4 ori — vezi LECTII-TEHNICE #10)", ""),
-    ("rata de succes", re.compile(r"rat[ăa] de succes", re.I),
+    ("rata de succes", re.compile(r"rat[ăa] (?:de )?succes", re.I),  # 06.10: „Rată succes afișată" scapase
      "semnal fabricat, scos din UI pe 03.07", ""),
     ("countdown mare", re.compile(r">\s*\d{3,}\s*zile r[ăa]mase\s*<"),
      "countdown de sute de zile — plafonul din expirarePromo.ts nu s-a aplicat", ""),
 ]
+
+
+# Reguli pe TEXTUL PAGINII, fara <head>. Title si description raman decizia lui Alex (SEO),
+# deci acolo nu blocam publicarea — dar tot ce scrie in pagina, da.
+#
+# Pretentia de testare (05.10.2026) e a SASEA aparitie a aceluiasi tipar de fabricatie
+# (LECTII-TEHNICE #10): pe /top/[slug], „Fiecare produs este testat timp de minim 2 saptamani
+# in conditii reale de utilizare" si „modele testate si verificate de echipa AmCupon.ro", pe
+# paginile cu cel mai mult trafic din cautari; plus „Testate personal" (/carduri-bancare),
+# „servicii testate si recomandate de echipa" (/recomandari). Negatiile raman permise:
+# „Nu le-am testat fizic", „Nu le testam in cos", „dermatologic testate" (descrie produsul).
+RE_TESTARE = re.compile(
+    r"testare riguroas|\bcum test[ăa]m\b"
+    r"|\btestat\w*\s+(?:timp de|personal|de noi|de echipa|de sportivi|[șs]i (?:recomandat|verificat|comparat))"
+    r"|\b(?:produse|modele|servicii)\s+testate\b"
+    r"|(?<!nu )(?<!nu le-)(?<!n-)\bam testat",
+    re.I)
+# „Verificat" despre coduri/oferte: nu le testam in cos, doar le actualizam automat. Sweep-ul din
+# 22.09 a scos 61 din text, dar pe 05.10 mai erau peste 100 (radar: „ales si verificat de noi",
+# contact: „verificam fiecare promotie", insigna „VERIFICAT" pe /produse, „verificat si functional"
+# in toate cele 147 de articole de magazin). Indicatiile pentru cititor („verifica pe site") raman.
+RE_VERIFICAT = re.compile(
+    r"\b(?:coduri(?: de reducere)?|oferte|reduceri|promo[țt]ii|magazine|parteneri|ghiduri)\s+verificat[ei]\b"
+    r"|\bverificate (?:zilnic|automat|[șs]i actualizate)\b|\bverificat [șs]i func[țt]ional\b"
+    r"|\bverificat azi\b|>\s*VERIFICAT\s*<|\bverific[ăa]m (?:fiecare|codurile|ofertele|zilnic)\b",
+    re.I)
+# Promisiuni despre coduri pe care nu le putem tine (06.10.2026, sablonul celor 147 de articole de
+# magazin): „verifica **zilnic** validitatea fiecarui cod", „Nu afisam niciodata coduri expirate",
+# „il vom verifica si actualiza in maxim 24h" (butonul „Raporteaza cod" nu exista), „Codul ... este
+# valid in momentul in care il accesati", „Oferta exclusiva AmCupon.ro — nu o gasesti in alta parte"
+# (codurile din retea le primesc toti afiliatii), eticheta „Reducere automata" (nu exista) — plus o
+# notita interna <!-- --> afisata ca TEXT. RE_VERIFICAT nu le prindea: cere „verificam"/„verificat",
+# iar bold-ul (<strong>, **) dintre cuvinte rupea orice regex scris pe text simplu.
+_SEP = r"(?:\s|\*\*|<[^>]+>)+"
+RE_PROMISIUNE_COD = re.compile(
+    rf"\bverific[ăa]{_SEP}(?:zilnic{_SEP})?validitatea\b"
+    rf"|\bnu{_SEP}afi[șs][ăa]m{_SEP}niciodat[ăa]{_SEP}coduri"
+    rf"|\bvom{_SEP}verifica{_SEP}[șs]i{_SEP}actualiza\b"
+    rf"|\beste{_SEP}valid{_SEP}[îi]n{_SEP}momentul{_SEP}[îi]n{_SEP}care\b"
+    rf"|\boferta{_SEP}exclusiv[ăa]{_SEP}amcupon"
+    rf"|\bnu{_SEP}o{_SEP}g[ăa]se[șs]ti{_SEP}[îi]n{_SEP}alt[ăa]{_SEP}parte\b"
+    rf"|\beticheta{_SEP}(?:&quot;|[\"„”])?reducere{_SEP}automat[ăa]"
+    r"|&lt;!--",
+    re.I)
+# Numar de magazine scris de mana (05.10.2026: „1000+ magazine" in 11 fisiere, pe site erau 957).
+# Cifrele vin acum din lib/cifreSite.ts, rotunjite in jos la suta.
+RE_NUMAR_MAGAZINE = re.compile(r"\b1\.?000\+?\s*(?:de\s+)?magazine", re.I)
+REGULI_CORP = [
+    ("pretentie de testare", RE_TESTARE,
+     "pagina afirma o testare care n-a avut loc (a 6-a aparitie — LECTII-TEHNICE #10)"),
+    ("afirmatie verificat", RE_VERIFICAT,
+     "pagina spune ca am verificat coduri/oferte — nu le testam, doar le actualizam automat"),
+    ("promisiune falsa despre coduri", RE_PROMISIUNE_COD,
+     "validitate garantata, verificare in 24h, exclusivitate sau o notita interna vizibila — nimic adevarat"),
+    ("numar de magazine scris de mana", RE_NUMAR_MAGAZINE,
+     "cifra nu vine din date (lib/cifreSite.ts) si ramane falsa cand se schimba numarul de magazine"),
+    ("link Profitshare in pagina", re.compile(r"profitshare\.ro/l/"),
+     "retea exclusa pe 19.08 — clicul nu plateste"),
+]
+
+# Linkuri interne catre pagini care trebuie sa existe ca HTML generat. Pe 05.10.2026, 12
+# butoane de pe /top duceau la /cod-reducere/<magazin> pentru magazine care nu sunt in
+# output.json (404), iar „Cauta pret" ducea la /cod-reducere/emag.ro -> redirect spre
+# /categorii/marketplace. Tiparul s-a mai vazut: footer-ul cu bookzone.ro (16.09),
+# /categorii/telecom (16.08), altex/flanco/elefant (08.08).
+RE_LINK_INTERN = re.compile(
+    r'href="(/(?:cod-reducere|top|categorii|comparatii|cadouri|esim|nisa|produse)/[^"#?]+)')
+
+
+def surse_redirect() -> set[str]:
+    """Sursele din lib/redirecturi.ts — acolo stau toate redirecturile permanente."""
+    p = os.path.join(ROOT, "frontend", "lib", "redirecturi.ts")
+    try:
+        return set(re.findall(r'source:\s*"([^"]+)"', io.open(p, encoding="utf-8").read()))
+    except OSError:
+        return set()
 
 
 def verifica_html() -> dict:
@@ -264,6 +369,9 @@ def verifica_html() -> dict:
         return stare
 
     gasite: dict[str, list[str]] = {n: [] for n, *_ in REGULI_HTML}
+    gasite_corp: dict[str, list[str]] = {n: [] for n, *_ in REGULI_CORP}
+    existente: set[str] = set()
+    linkuri: list[tuple[str, str]] = []
     fara_h1, fara_title, n = [], [], 0
 
     for f in glob.glob(os.path.join(BUILD, "**", "*.html"), recursive=True):
@@ -282,6 +390,13 @@ def verifica_html() -> dict:
         for nume, rx, *_ in REGULI_HTML:
             if rx.search(body):
                 gasite[nume].append(rel)
+        corp = re.sub(r"<head.*?</head>", "", body, flags=re.S)
+        for nume, rx, _ in REGULI_CORP:
+            m = rx.search(corp)
+            if m:
+                gasite_corp[nume].append(f"{rel}: …{corp[max(0, m.start() - 30):m.end() + 30]}…")
+        existente.add("/" + rel[:-5] if rel != "index.html" else "/")
+        linkuri.extend((rel, h) for h in set(RE_LINK_INTERN.findall(corp)))
         if "<h1" not in body:
             fara_h1.append(rel)
         if "<title" not in t:
@@ -291,6 +406,19 @@ def verifica_html() -> dict:
     for nume, rx, expl, _ in REGULI_HTML:
         if gasite[nume]:
             semnaleaza(nume, f"{len(gasite[nume])} pagini — {expl}", gasite[nume])
+    for nume, rx, expl in REGULI_CORP:
+        if gasite_corp[nume]:
+            semnaleaza(nume, f"{len(gasite_corp[nume])} pagini — {expl}", gasite_corp[nume])
+
+    # Linkuri interne: 404 blocheaza; prin redirect doar se numara (unele sunt intentionate).
+    redirecturi = surse_redirect()
+    lipsa = sorted({f"{h}  (pe {r})" for r, h in linkuri
+                    if h.rstrip("/") not in existente and h.rstrip("/") not in redirecturi})
+    prin_redirect = sorted({h for r, h in linkuri if h.rstrip("/") in redirecturi})
+    stare["linkuri_interne_prin_redirect"] = len(prin_redirect)
+    if lipsa:
+        semnaleaza("link intern spre pagina inexistenta",
+                   f"{len(lipsa)} linkuri interne duc la pagini care nu se genereaza (404)", lipsa)
     if fara_h1:
         semnaleaza("fara h1", f"{len(fara_h1)} pagini fara <h1> — Google nu le stie subiectul",
                    fara_h1)

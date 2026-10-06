@@ -134,7 +134,7 @@ export default function HostingPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm text-[#c9ced5]">
             <span className="flex items-center gap-1.5"><span className="text-emerald-400">✓</span> Actualizat iunie 2026</span>
-            <span className="flex items-center gap-1.5"><span className="text-emerald-400">✓</span> Preturi verificate</span>
+            <span className="flex items-center gap-1.5"><span className="text-emerald-400">✓</span> Preturi din iunie 2026 — verifica-le la furnizor</span>
             <span className="flex items-center gap-1.5"><span className="text-emerald-400">✓</span> Suport in romana</span>
           </div>
         </div>

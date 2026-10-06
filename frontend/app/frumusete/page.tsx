@@ -6,6 +6,8 @@ import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
 import { esteInCategorie } from "../../lib/categoriiNisa";
+import { laParteneri } from "@/lib/cifreSite";
+import { NISA_CATEGORII } from "@/lib/categoriiNisa";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -16,7 +18,7 @@ interface Magazin {
 
 export const metadata: Metadata = {
   title: "Reduceri Beauty & Cosmetice 2026 — Coduri Notino, Douglas",
-  description: "Coduri de reducere beauty și cosmetice 2026: Notino, Douglas, Sephora, Makeup.ro. Parfumuri, skincare, machiaj la prețuri reduse. Reduceri verificate zilnic.",
+  description: `Coduri de reducere beauty și cosmetice 2026 ${laParteneri(NISA_CATEGORII.frumusete)}. Parfumuri, skincare, machiaj la prețuri reduse. Actualizate zilnic.`,
   keywords: ["reduceri beauty", "cod reducere notino", "reduceri douglas", "sephora reducere", "parfumuri ieftine", "cosmetice reducere romania", "skincare reducere", "machiaj ieftin"],
   alternates: { canonical: "https://amcupon.ro/frumusete" },
   openGraph: { title: "Reduceri Beauty & Cosmetice 2026 | AmCupon.ro", url: "https://amcupon.ro/frumusete", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },

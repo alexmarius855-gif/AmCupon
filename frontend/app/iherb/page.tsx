@@ -1,7 +1,7 @@
 import { Metadata } from "next";
-import BrandPageTemplate from "../components/BrandPageTemplate";
+import BrandPageTemplate, { metadataBrand } from "../components/BrandPageTemplate";
 
-export const metadata: Metadata = {
+const META: Metadata = {
   title: "Cod Reducere iHerb Romania 2026 — Suplimente & Health",
   description: "Coduri reducere iHerb Romania actualizate zilnic. Suplimente alimentare, vitamine, produse naturale si beauty la preturi mici. Promotii iHerb verificate.",
   keywords: ["cod reducere iherb", "iherb romania reduceri", "iherb discount", "suplimente online reduceri", "iherb voucher", "vitamine online iherb"],
@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
+// Metadata cu reparare automata: daca magazinul iese din output.json, pagina devine onesta
+// si noindex (vezi metadataBrand in BrandPageTemplate.tsx).
+export async function generateMetadata(): Promise<Metadata> {
+  return metadataBrand({ slug: "iherb.com", slugAlt: "iherb", name: "iHerb", canonical: "/iherb" }, META);
+}
 
 export default function IherbPage() {
   return (

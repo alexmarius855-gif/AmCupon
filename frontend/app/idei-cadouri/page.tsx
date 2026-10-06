@@ -16,7 +16,7 @@ interface Magazin {
 
 export const metadata: Metadata = {
   title: "Idei de Cadouri 2026 — Reduceri la Cadouri Online",
-  description: "Idei de cadouri pentru orice ocazie: ziua de naștere, aniversare, Crăciun, Valentine's Day. Coduri de reducere verificate la jucării, fashion, beauty, electronice și bijuterii.",
+  description: "Idei de cadouri pentru orice ocazie: ziua de naștere, aniversare, Crăciun, Valentine's Day. Coduri de reducere și oferte active la jucării, fashion, beauty, electronice și bijuterii, de la magazinele partenere.",
   keywords: ["idei cadouri", "cadouri reducere", "cadou ziua nasterii", "cadou craciun", "cadouri online ieftine", "voucher cadou romania", "cod reducere cadouri"],
   alternates: { canonical: "https://amcupon.ro/idei-cadouri" },
   openGraph: { title: "Idei Cadouri cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/idei-cadouri", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
@@ -170,7 +170,7 @@ export default function IdeiCadouriPage() {
             <div className="space-y-4 text-sm text-[#c9ced5] leading-relaxed">
               <div>
                 <h3 className="font-bold text-[#ffffff] mb-1">Cum economisești la cadouri online?</h3>
-                <p>Folosește codurile de reducere de pe AmCupon.ro înainte de orice comandă. Poți economisi 5-30% din prețul final. Verificăm zilnic ofertele de la Noriel, FashionDays, Notino, Elefant și celelalte magazine partenere.</p>
+                <p>Folosește codurile de reducere de pe AmCupon.ro înainte de orice comandă. Ofertele se actualizează automat de trei ori pe zi, de la Noriel, Notino și celelalte magazine partenere.</p>
               </div>
               <div>
                 <h3 className="font-bold text-[#ffffff] mb-1">Când să cumperi cadourile?</h3>

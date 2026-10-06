@@ -1,7 +1,7 @@
 import { Metadata } from "next";
-import BrandPageTemplate from "../components/BrandPageTemplate";
+import BrandPageTemplate, { metadataBrand } from "../components/BrandPageTemplate";
 
-export const metadata: Metadata = {
+const META: Metadata = {
   title: "Cod Reducere Liki24 — Farmacie Online 2026 | AmCupon.ro",
   description: "Coduri de reducere Liki24 farmacie online actualizate zilnic. Reduceri la medicamente, suplimente, cosmetice si produse naturiste. Promotii Liki24 verificate.",
   keywords: ["cod reducere liki24", "liki24 reduceri", "liki24 promotii", "farmacie online ieftina", "liki24 discount"],
@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
+// Metadata cu reparare automata: daca magazinul iese din output.json, pagina devine onesta
+// si noindex (vezi metadataBrand in BrandPageTemplate.tsx).
+export async function generateMetadata(): Promise<Metadata> {
+  return metadataBrand({ slug: "liki24.ro", slugAlt: "liki24", name: "Liki24", canonical: "/liki24" }, META);
+}
 
 export default function Liki24Page() {
   return (

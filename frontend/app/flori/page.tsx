@@ -67,7 +67,7 @@ export default function FloriPage() {
             <div className="text-5xl mb-4">💐</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Flori & Buchete cu Reducere {an}</h1>
             <p className="text-[#c3dd2c] text-lg mb-6 max-w-xl mx-auto">
-              Livrare rapidă, aranjamente proaspete și reduceri verificate pentru orice ocazie
+              Florării online partenere, cu reducerile active pentru orice ocazie
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Trandafiri","Buchete mixte","Cutii cu flori","Aranjamente nuntă","Livrare azi","Coroane"].map(c => (

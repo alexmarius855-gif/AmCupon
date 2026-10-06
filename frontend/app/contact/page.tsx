@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Metadata } from "next";
 import ContactForm from "./ContactForm";
+import { pesteMagazine, reteleAfiliere } from "@/lib/cifreSite";
 
 export const metadata: Metadata = {
   title: "Contact | AmCupon.ro",
@@ -133,8 +134,9 @@ export default function ContactPage() {
                 <h3 className="font-bold text-[#ffffff] mb-2">Despre AmCupon.ro</h3>
                 <p className="text-sm text-[#c9ced5] leading-relaxed">
                   AmCupon.ro este un site de coduri de reducere 100% gratuit pentru utilizatori.
-                  Lucrăm cu peste 1000 magazine partenere prin platformele 2Performant, Profitshare și Impact.com.
-                  Actualizăm codurile zilnic și verificăm fiecare promoție înainte de publicare.
+                  Lucrăm cu {pesteMagazine()} partenere, prin rețelele {reteleAfiliere()}.
+                  Ofertele se actualizează automat de trei ori pe zi, iar cele expirate dispar după data lor.
+                  Nu testăm codurile în coș: dacă unul nu merge, scrie-ne.
                 </p>
               </div>
             </div>

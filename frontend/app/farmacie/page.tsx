@@ -6,6 +6,8 @@ import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
 import { esteInCategorie } from "../../lib/categoriiNisa";
+import { laParteneri } from "@/lib/cifreSite";
+import { NISA_CATEGORII } from "@/lib/categoriiNisa";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -66,7 +68,7 @@ export default function FarmaciePage() {
             <div className="text-5xl mb-4">💊</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Farmacie Online cu Reducere {an}</h1>
             <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              Coduri de reducere verificate la Dr. Max, Vegis, Catena și alte farmacii online din România
+              Coduri de reducere și oferte {laParteneri(NISA_CATEGORII.farmacie, 3)} și la alte farmacii online partenere
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Suplimente","Vitamine","Cosmetice medicale","Aparate medicale","Mamă & Bebe"].map(c => (

@@ -1,7 +1,7 @@
 import { Metadata } from "next";
-import BrandPageTemplate from "../components/BrandPageTemplate";
+import BrandPageTemplate, { metadataBrand } from "../components/BrandPageTemplate";
 
-export const metadata: Metadata = {
+const META: Metadata = {
   title: "Cod Reducere pFarma 2026 — Farmacie Online la Reducere",
   description: "Coduri reducere pFarma actualizate. Medicamente OTC, suplimente, cosmetice farmacie si produse naturiste la preturi mici. Promotii pFarma verificate.",
   keywords: ["cod reducere pfarma", "pfarma reduceri", "farmacie online reducere", "medicamente online ieftine", "pfarma promotii", "suplimente reducere"],
@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
+// Metadata cu reparare automata: daca magazinul iese din output.json, pagina devine onesta
+// si noindex (vezi metadataBrand in BrandPageTemplate.tsx).
+export async function generateMetadata(): Promise<Metadata> {
+  return metadataBrand({ slug: "pfarma.ro", slugAlt: "pfarma", name: "pFarma", canonical: "/pfarma" }, META);
+}
 
 export default function PfarmaPage() {
   return (

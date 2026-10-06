@@ -121,7 +121,7 @@ function MagazinCard({
 
           <div className="flex items-center gap-3 mt-1.5">
             {m.are_promotie && (
-              <span className="text-xs text-emerald-400 font-semibold">✓ verificat azi</span>
+              <span className="text-xs text-emerald-400 font-semibold">✓ activă azi</span>
             )}
           </div>
         </div>
@@ -168,7 +168,7 @@ export default function TopReduceriClient({
   const [tab, setTab] = useState<Tab>("coduri");
 
   const TABS: { key: Tab; label: string; icon: string; count: number; desc: string }[] = [
-    { key: "coduri",   label: "Top Coduri",      icon: "🎟", count: topCoduri.length,    desc: "Cele mai bune coduri verificate" },
+    { key: "coduri",   label: "Top Coduri",      icon: "🎟", count: topCoduri.length,    desc: "Cele mai bune coduri active" },
     { key: "promo",    label: "Top Reduceri",     icon: "🏷", count: topPromo.length,     desc: "Reduceri automate active" },
     { key: "trending", label: "In Trend",         icon: "🔥", count: trending.length,     desc: "Magazine cu crestere rapida" },
     { key: "expira",   label: "Expira Curand",    icon: "⏰", count: expiraCurand.length, desc: "Ultima sansa" },
@@ -278,7 +278,7 @@ export default function TopReduceriClient({
             <span className="text-3xl">🏪</span>
             <div>
               <p className="text-[#ffffff] font-bold text-sm">Toate Magazinele</p>
-              <p className="text-[#9399a0] text-xs">{totalMagazine}+ magazine verificate</p>
+              <p className="text-[#9399a0] text-xs">{totalMagazine} magazine partenere</p>
             </div>
             <a
               href="/toate-magazinele"

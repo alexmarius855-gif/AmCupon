@@ -1,7 +1,7 @@
 import { Metadata } from "next";
-import BrandPageTemplate from "../components/BrandPageTemplate";
+import BrandPageTemplate, { metadataBrand } from "../components/BrandPageTemplate";
 
-export const metadata: Metadata = {
+const META: Metadata = {
   title: "Reduceri Elefant — Coduri si Oferte Elefant.ro 2026",
   description: "Oferte si coduri de reducere Elefant.ro actualizate zilnic. Carti, jocuri, muzica, filme la preturi mici. Promotii Elefant verificate acum.",
   keywords: ["reducere elefant", "cod reducere elefant", "oferte elefant", "elefant carti reducere", "elefant promotii"],
@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
+// Metadata cu reparare automata: daca magazinul iese din output.json, pagina devine onesta
+// si noindex (vezi metadataBrand in BrandPageTemplate.tsx).
+export async function generateMetadata(): Promise<Metadata> {
+  return metadataBrand({ slug: "elefant.ro", slugAlt: "elefant", name: "Elefant", canonical: "/elefant" }, META);
+}
 
 export default function ElefantPage() {
   return (

@@ -6,6 +6,8 @@ import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
 import { esteInCategorie } from "../../lib/categoriiNisa";
+import { laParteneri } from "@/lib/cifreSite";
+import { NISA_CATEGORII } from "@/lib/categoriiNisa";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -16,7 +18,7 @@ interface Magazin {
 
 export const metadata: Metadata = {
   title: "Cod Reducere Electronice România 2026 — eMag, Altex",
-  description: "Coduri de reducere electronice România: eMag, Altex, PCGarage, Flanco, Cel.ro. Telefoane, laptopuri, TV, gaming la prețuri reduse. Verificate zilnic.",
+  description: `Coduri de reducere electronice ${laParteneri(NISA_CATEGORII.electronice)}. Telefoane, laptopuri, gadgeturi la prețuri reduse. Actualizate zilnic.`,
   keywords: ["cod reducere emag", "reduceri altex", "electronice ieftine", "cod reducere pcgarage", "laptop reducere", "telefon reducere romania", "electronice online"],
   alternates: { canonical: "https://amcupon.ro/electronice" },
   openGraph: { title: "Electronice cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/electronice", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
@@ -65,7 +67,7 @@ export default function ElectronicePage() {
             <div className="text-5xl mb-4">📱</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Electronice cu Reducere {an}</h1>
             <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              Coduri de reducere verificate la eMag, Altex, PCGarage și alte magazine de electronice din România
+              Coduri de reducere și oferte {laParteneri(NISA_CATEGORII.electronice, 3)} și la alte magazine partenere de electronice
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Telefoane","Laptopuri","TV 4K","Gaming","Căști","Smartwatch"].map(c => (

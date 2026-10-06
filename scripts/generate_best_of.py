@@ -72,9 +72,27 @@ MAGAZINE_ALL = [
 ]
 
 
+def _magazine_platite() -> set:
+    """Magazinele cu link de afiliere REAL din output.json (aceeasi regula ca linkAfiliat())."""
+    try:
+        p = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "frontend", "public", "output.json")
+        with open(p, encoding="utf-8") as f:
+            mag = json.load(f)
+    except (OSError, ValueError):
+        return set()
+    return {m["magazin"].lower() for m in mag
+            if (m.get("url_afiliat") or "").strip() and (m.get("url_afiliat") or "").strip() != (m.get("url") or "").strip()}
+
+
+_PLATITE = _magazine_platite()
+
+
 def link_magazine(magazine):
-    parts = [f"[{n}]({u})" for n, u in magazine]
-    return ", ".join(parts)
+    # 05.10.2026: listele de mai sus pun eMAG, Altex, Flanco, Dedeman, IKEA „la partenerii nostri" —
+    # niciunul nu are program la noi, iar /cod-reducere/<magazin> pentru ei e 404. Raman doar
+    # partenerii reali; fara niciunul, trimitem la lista magazinelor (adevarat in orice caz).
+    parts = [f"[{n}]({u})" for n, u in magazine if u.rsplit("/", 1)[-1].lower() in _PLATITE]
+    return ", ".join(parts) if parts else "[magazinele partenere](/toate-magazinele)"
 
 
 def cover_url(seed):
@@ -125,7 +143,7 @@ Același DNA de flagship, la un preț mai mic. Procesor Exynos performant, camer
 
 Folosește codurile de reducere de la partenerii noștri: {link_magazine(MAGAZINE_ELECTRONICE)}.
 
-Verifică întotdeauna dacă există un cod de reducere activ înainte de cumpărare — poți economisi 5-15% din prețul final.
+Verifică întotdeauna dacă există un cod de reducere activ înainte de cumpărare.
 
 ## Concluzie
 
@@ -2012,7 +2030,7 @@ OK pentru buget, nu pentru cinefili.
 
 {link_magazine(MAGAZINE_ALL)} — magazine cu mii de recenzii, returnare simpla.
 
-[Toate magazinele verificate →](/toate-magazinele)
+[Toate magazinele →](/toate-magazinele)
 """,
     },
 
@@ -2055,7 +2073,7 @@ Multi comercianti cresc pretul cu 20-30% in octombrie, apoi "reduc" cu 50% in BF
 
 AmCupon.ro verifica zilnic codurile de la 600+ magazine. Combini comparatorul cu codul = economii maxime.
 
-[Toate codurile de reducere verificate →](/)
+[Toate codurile de reducere active →](/)
 """,
     },
 
@@ -2117,7 +2135,7 @@ In Romania, BF dureaza 1-2 saptamani (unele magazine incep pe 11 noiembrie).
 
 ## Magazine cu Black Friday real in Romania
 
-- **eMAG**: sute de mii de produse, reduceri verificate
+- **eMAG**: sute de mii de produse
 - **Altex & Flanco**: electronice si electrocasnice
 - **FashionDays**: branduri premium 50-80% reducere
 - **Notino & Douglas**: parfumuri originale 30-50% reducere

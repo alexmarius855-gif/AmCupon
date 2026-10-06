@@ -4,6 +4,7 @@ import fs from "fs";
 import path from "path";
 import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
+import { pesteMagazine } from "@/lib/cifreSite";
 
 interface Promotie {
   nume: string;
@@ -29,7 +30,7 @@ interface Magazin {
 export const metadata: Metadata = {
   title: "Cadouri & Reduceri de Crăciun 2026 — Coduri Actualizate",
   description:
-    "Coduri de reducere și oferte de Crăciun 2026 verificate la cele mai mari magazine din România. Jucării, electronice, fashion, parfumuri — toate la prețuri reduse pe AmCupon.ro.",
+    `Coduri de reducere și oferte de Crăciun 2026 de la ${pesteMagazine()} partenere AmCupon: jucării, electronice, fashion, parfumuri la prețuri reduse.`,
   keywords: [
     "reduceri craciun 2026",
     "oferte craciun romania",
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://amcupon.ro/craciun" },
   openGraph: {
     title: "Cadouri & Reduceri de Crăciun 2026 | AmCupon.ro",
-    description: "Cele mai bune oferte de Crăciun, verificate și actualizate zilnic.",
+    description: "Ofertele de Crăciun de la magazinele partenere, actualizate zilnic.",
     url: "https://amcupon.ro/craciun",
     siteName: "AmCupon.ro",
     locale: "ro_RO",
@@ -82,7 +83,7 @@ const craciunJsonLd = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
   name: "Cadouri & Reduceri de Crăciun 2026 România",
-  description: "Oferte și coduri de reducere de Crăciun verificate pe AmCupon.ro",
+  description: "Oferte și coduri de reducere de Crăciun pe AmCupon.ro",
   url: "https://amcupon.ro/craciun",
 };
 
@@ -136,7 +137,7 @@ export default function CraciunPage() {
               Reduceri de Crăciun {an}
             </h1>
             <p className="text-[#2a2f10] text-lg mb-8 max-w-xl mx-auto">
-              Coduri de reducere verificate pentru cadourile perfecte — jucării, fashion,
+              Coduri de reducere pentru cadouri — jucării, fashion,
               electronice, parfumuri și multe altele
             </p>
 
@@ -224,8 +225,8 @@ export default function CraciunPage() {
                 <p>
                   Intră pe pagina magazinului de pe AmCupon.ro, copiază codul de reducere
                   activ, adaugă produsele în coș pe site-ul magazinului și introdu codul la
-                  checkout. Reducerea se aplică automat. Toate codurile de pe AmCupon.ro sunt
-                  verificate și actualizate zilnic.
+                  checkout. Reducerea se aplică automat. Codurile de pe AmCupon.ro se
+                  actualizează automat de trei ori pe zi, iar cele expirate dispar după data lor.
                 </p>
               </div>
             </div>

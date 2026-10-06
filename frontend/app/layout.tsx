@@ -24,6 +24,7 @@ import SearchModal from "./components/SearchModal";
 import AffiliateClickTracker from "./components/AffiliateClickTracker";
 import "./globals.css";
 import AnuntAnimat from "./components/AnuntAnimat";
+import { pesteMagazine, PesteMagazine } from "@/lib/cifreSite";
 
 // ─── GA4 Measurement ID ───────────────────────────────────────────────────────
 // Mergi la analytics.google.com → Admin → Data Streams → Web → Measurement ID
@@ -49,8 +50,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "AmCupon.ro - Coduri de reducere si oferte verificate",
-  description: "Coduri de reducere verificate si oferte exclusive de la cele mai mari magazine online din Romania. Actualizat zilnic.",
+  title: "AmCupon.ro - Coduri de reducere si oferte active",
+  description: `Coduri de reducere și oferte active de la ${pesteMagazine()} partenere, actualizate de mai multe ori pe zi. 100% gratuit.`,
   metadataBase: new URL("https://amcupon.ro"),
   alternates: { canonical: "https://amcupon.ro" },
   verification: {
@@ -61,8 +62,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "AmCupon.ro — Coduri de reducere verificate",
-    description: "Peste 1000 magazine partenere. Coduri verificate, actualizate zilnic. 100% gratuit.",
+    title: "AmCupon.ro — Coduri de reducere și oferte active",
+    description: `${PesteMagazine()} partenere. Coduri și oferte actualizate de mai multe ori pe zi. 100% gratuit.`,
     url: "https://amcupon.ro",
     siteName: "AmCupon.ro",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "AmCupon.ro" }],
@@ -71,8 +72,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AmCupon.ro — Coduri de reducere verificate",
-    description: "Peste 1000 magazine partenere. Actualizat zilnic.",
+    title: "AmCupon.ro — Coduri de reducere și oferte active",
+    description: `${PesteMagazine()} partenere. Actualizat de mai multe ori pe zi.`,
     images: ["/og-image.png"],
   },
   icons: {
@@ -98,7 +99,7 @@ const siteJsonLd = {
       "@id": "https://amcupon.ro/#website",
       "url": "https://amcupon.ro",
       "name": "AmCupon.ro",
-      "description": "Coduri de reducere verificate și oferte exclusive de la cele mai mari magazine online din România.",
+      "description": `Coduri de reducere și oferte active de la ${pesteMagazine()} partenere, actualizate de mai multe ori pe zi.`,
       "inLanguage": "ro-RO",
       "potentialAction": {
         "@type": "SearchAction",

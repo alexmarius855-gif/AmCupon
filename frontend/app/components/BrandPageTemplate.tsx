@@ -1,8 +1,11 @@
 import fs from "fs";
+import type { Metadata } from "next";
 import { aceeasiTara } from "@/lib/taraDomeniu";
+import { linkAfiliat } from "@/lib/linkMagazin";
 import path from "path";
 import Link from "next/link";
 import { etichetaExpirare } from "../../lib/expirarePromo";
+import MagazinCard, { type CardMagazin } from "./MagazinCard";
 
 interface Promotie {
   nume: string;
@@ -41,11 +44,22 @@ export interface BrandConfig {
   categorieSlug?: string; // ex: "electronice"
 }
 
+// Cele ~30 de pagini de brand se genereaza in acelasi proces: output.json se citeste o data.
+let _toate: Magazin[] | null = null;
+function toateMagazinele(): Magazin[] {
+  if (!_toate) {
+    try {
+      _toate = JSON.parse(fs.readFileSync(path.join(process.cwd(), "public", "output.json"), "utf-8"));
+    } catch {
+      _toate = [];
+    }
+  }
+  return _toate as Magazin[];
+}
+
 function loadMagazin(slugs: string[]): Magazin | null {
   try {
-    const data: Magazin[] = JSON.parse(
-      fs.readFileSync(path.join(process.cwd(), "public", "output.json"), "utf-8")
-    );
+    const data = toateMagazinele();
     const lower = slugs.map((s) => s.toLowerCase());
     // Potrivire in ordinea specificitatii: egalitate > prefix de domeniu > substring.
     // Doar `.includes` producea potriviri gresite (ex: "otter" prindea si "spotter.ro").
@@ -62,6 +76,109 @@ function loadMagazin(slugs: string[]): Magazin | null {
   }
 }
 
+/**
+ * Metadata pentru o pagina de brand, cu reparare automata (05.10.2026).
+ *
+ * 11 pagini de brand erau ale unor magazine fara program la noi (altex, flanco, elefant,
+ * temu, shein, trendyol, vidaxl, iherb, asos, bookzone, banggood) si promiteau „coduri
+ * actualizate zilnic" / „promotii verificate"; patru isi declarau canonical-ul catre
+ * /cod-reducere/<magazin>, adica un 404. Cand magazinul nu e in output.json, pagina devine
+ * onesta si `noindex`, cu canonical catre ea insasi; cand intra in date (program aprobat),
+ * revine singura la metadata normala, la urmatorul build.
+ */
+export function metadataBrand(
+  c: Pick<BrandConfig, "slug" | "slugAlt" | "name" | "canonical">,
+  normal: Metadata,
+): Metadata {
+  if (loadMagazin([c.slug, ...(c.slugAlt ? [c.slugAlt] : [])])) return normal;
+  return {
+    title: `${c.name}: nu avem coduri de reducere | AmCupon.ro`,
+    description: `${c.name} nu are program de afiliere pe AmCupon.ro, deci nu publicăm coduri ${c.name}. Vezi ofertele active de la magazinele partenere din aceeași categorie.`,
+    robots: { index: false, follow: true },
+    alternates: { canonical: `https://amcupon.ro${c.canonical}` },
+  };
+}
+
+/** Partenerii cu link platit si oferta activa din categorie — .ro intai, apoi dupa scor. */
+function alternative(categorieSlug: string | undefined, n = 8): Magazin[] {
+  const cat = categorieSlug || "marketplace";
+  return toateMagazinele()
+    .filter((m) => (m.categorie_slug || "") === cat && linkAfiliat(m) && m.are_promotie && (m.promotii || []).length > 0)
+    .sort((a, b) =>
+      Number(b.magazin.endsWith(".ro")) - Number(a.magazin.endsWith(".ro")) || (b.scor_final || 0) - (a.scor_final || 0))
+    .slice(0, n);
+}
+
+/**
+ * Pagina unui brand FARA program la noi. Inainte arata „0 oferte active", „Revino maine —
+ * actualizam ofertele zilnic de la Temu", „Nu rata urmatoarea oferta Temu" si textul
+ * editorial „Pe AmCupon.ro monitorizam toate promotiile Temu" — nimic din toate astea nu
+ * se intampla. Aratam doar ce e adevarat si ce poate face omul acum: alternativele reale.
+ */
+function PaginaFaraProgram({ config }: { config: BrandConfig }) {
+  const alt = alternative(config.categorieSlug);
+  const linkCategorie = config.categorieSlug ? `/categorii/${config.categorieSlug}` : "/toate-magazinele";
+  const breadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "AmCupon.ro", item: "https://amcupon.ro" },
+      { "@type": "ListItem", position: 2, name: config.name, item: `https://amcupon.ro${config.canonical}` },
+    ],
+  };
+  return (
+    <div className="min-h-screen bg-[#06080b]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <section className="bg-[#06080b] border-b border-[#1f2329]">
+        <div className="max-w-3xl mx-auto px-4 pt-12 pb-12 text-center">
+          <nav className="flex justify-center gap-2 text-xs text-[#9399a0] mb-8">
+            <Link href="/" className="hover:text-[#c9ced5]">AmCupon.ro</Link>
+            <span>/</span>
+            <span className="text-[#c9ced5]">{config.name}</span>
+          </nav>
+          <div className="text-5xl mb-4" aria-hidden="true">{config.emoji}</div>
+          <h1 className="text-3xl md:text-4xl font-black text-[#ffffff] mb-5">
+            Reduceri {config.name}: ce găsești pe AmCupon.ro
+          </h1>
+          <div className="bg-[#14181c] border border-[#2a2f36] rounded-xl p-6 text-left">
+            <p className="font-bold text-[#ffffff] mb-2">Nu avem coduri de reducere {config.name}.</p>
+            <p className="text-sm text-[#c9ced5] leading-relaxed mb-2">
+              {config.name} nu are program de afiliere pe AmCupon.ro, așa că rețelele nu ne trimit ofertele sau
+              codurile lui. Nu publicăm coduri pe care nu le avem dintr-o sursă: dacă vezi coduri {config.name} pe
+              alte site-uri, verifică-le direct pe site-ul {config.name}.
+            </p>
+            <p className="text-sm text-[#c9ced5] leading-relaxed">
+              {alt.length > 0
+                ? "Mai jos sunt magazinele partenere din aceeași categorie care au oferte active azi."
+                : "Ofertele active de la magazinele partenere sunt pe pagina de categorie."}
+            </p>
+          </div>
+          <div className="flex flex-wrap justify-center gap-3 mt-6">
+            <Link href={linkCategorie}
+              className="bg-[#ddf93c] hover:bg-[#c3dd2c] text-[#0c1000] font-black px-6 py-3 rounded-xl text-sm transition-colors">
+              Vezi categoria &rarr;
+            </Link>
+            <Link href="/oferte-azi"
+              className="bg-[#1f2329] hover:bg-[#2a2f36] border border-[#2a2f36] text-[#c9ced5] font-semibold px-6 py-3 rounded-xl text-sm transition-colors">
+              Toate ofertele de azi
+            </Link>
+          </div>
+        </div>
+      </section>
+      {alt.length > 0 && (
+        <section className="max-w-6xl mx-auto px-4 py-10">
+          <h2 className="text-xl font-black text-[#ffffff] mb-5">Alternative cu oferte active azi</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+            {alt.map((m) => (
+              <MagazinCard key={m.magazin} m={m as unknown as CardMagazin} />
+            ))}
+          </div>
+        </section>
+      )}
+    </div>
+  );
+}
+
 function extractDiscount(text: string): number {
   const m = text?.match(/(\d+)\s*%/);
   const v = m ? parseInt(m[1]) : 0;
@@ -71,7 +188,8 @@ function extractDiscount(text: string): number {
 export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
   const slugs = [config.slug, ...(config.slugAlt ? [config.slugAlt] : [])];
   const magazin = loadMagazin(slugs);
-  const promotii = magazin?.promotii || [];
+  if (!magazin) return <PaginaFaraProgram config={config} />;
+  const promotii = magazin.promotii || [];
 
   const culoare = "bg-gradient-to-br from-[#ddf93c] to-[#c3dd2c]";
 

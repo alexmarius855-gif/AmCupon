@@ -53,9 +53,13 @@ function areTransportGratuit(promo?: CardPromotie): boolean {
   return /transport gratuit|livrare gratuit[aă]|free shipping/.test(text);
 }
 
+// Doar ultimele doua caractere — aceeasi regula ca in CuponCard (23.09.2026). Varianta veche
+// arata PRIMELE patru („LAMO****" pentru LAMODA20), destul cat sa ghicesti codul fara clic,
+// deci fara comision; si un cod de 4 caractere aparea intreg, in clar.
 function maskCod(cod: string): string {
-  if (!cod || cod.length <= 4) return cod;
-  return cod.slice(0, 4) + "*".repeat(Math.max(0, Math.min(cod.length - 4, 6)));
+  if (!cod) return cod;
+  const coada = cod.length > 3 ? cod.slice(-2) : "";
+  return "*".repeat(Math.max(3, Math.min(cod.length - coada.length, 6))) + coada;
 }
 
 /**

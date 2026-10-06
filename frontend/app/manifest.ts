@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "AmCupon.ro — Coduri de reducere",
     short_name: "AmCupon",
     description:
-      "Coduri de reducere verificate si oferte exclusive de la cele mai mari magazine online din Romania. Actualizat zilnic.",
+      "Coduri de reducere si oferte active de la magazinele partenere AmCupon.ro. Actualizat zilnic.",
     start_url: "/",
     display: "standalone",
     background_color: "#0f172a",

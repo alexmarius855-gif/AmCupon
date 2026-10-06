@@ -1,7 +1,7 @@
 import { Metadata } from "next";
-import BrandPageTemplate from "../components/BrandPageTemplate";
+import BrandPageTemplate, { metadataBrand } from "../components/BrandPageTemplate";
 
-export const metadata: Metadata = {
+const META: Metadata = {
   title: "Cod Reducere KitUnghii 2026 — Produse Nail Art la Reducere",
   description: "Coduri reducere KitUnghii actualizate. Geluri UV, oje semipermanente, accesorii nail art la preturi mici. Promotii KitUnghii verificate pe AmCupon.ro.",
   keywords: ["cod reducere kitunghii", "kitunghii reduceri", "gel uv reducere", "oje semipermanente ieftine", "nail art produse", "kitunghii promotii"],
@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
+// Metadata cu reparare automata: daca magazinul iese din output.json, pagina devine onesta
+// si noindex (vezi metadataBrand in BrandPageTemplate.tsx).
+export async function generateMetadata(): Promise<Metadata> {
+  return metadataBrand({ slug: "kitunghii.ro", slugAlt: "kitunghii", name: "KitUnghii", canonical: "/kitunghii" }, META);
+}
 
 export default function KitUnghiiPage() {
   return (

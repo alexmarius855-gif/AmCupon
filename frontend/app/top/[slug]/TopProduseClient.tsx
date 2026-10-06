@@ -33,8 +33,26 @@ interface Produs {
 }
 
 interface TopProduseClientProps {
+  /** Vin din page.tsx cu `magazine` = DOAR partenerii, cu linkul platit de azi. */
   produse: Produs[];
   culoare: string;
+  /** Exista sectiunea „Unde gasesti azi" (#unde-cumperi) pe pagina. */
+  areSectiune: boolean;
+  /** Cand au fost notate preturile din top — eticheta pretului de referinta. */
+  selectie: string;
+}
+
+/**
+ * Unde duce butonul unui model din top: primul partener (link afiliat real), altfel
+ * sectiunea cu ofertele de azi, altfel nicaieri — butonul nu se afiseaza.
+ * Pana pe 05.10.2026 ducea la /cod-reducere/<primul magazin>, care pentru eMAG era un
+ * redirect spre /categorii/marketplace, iar pentru altex/flanco/pcgarage, 404.
+ */
+function destinatie(p: Produs, areSectiune: boolean): { href: string; extern: boolean; text: string } | null {
+  const m = p.magazine[0];
+  if (m?.url_afiliat) return { href: m.url_afiliat, extern: true, text: `Vezi la ${m.eticheta}` };
+  if (areSectiune) return { href: "#unde-cumperi", extern: false, text: "Prețuri de azi" };
+  return null;
 }
 
 // Accent uniform indigo/cyan pentru toate cheile — diferentierea per-categorie
@@ -79,7 +97,7 @@ function ScorCircle({ scor, size = "lg" }: { scor: number; size?: "sm" | "lg" })
   );
 }
 
-export default function TopProduseClient({ produse, culoare }: TopProduseClientProps) {
+export default function TopProduseClient({ produse, culoare, areSectiune, selectie }: TopProduseClientProps) {
   const [sortare, setSortare] = useState<"pozitie" | "scor" | "pret">("pozitie");
   const [expandat, setExpandat] = useState<number | null>(null);
   const accent = ACCENT[culoare] || ACCENT.blue;
@@ -93,27 +111,34 @@ export default function TopProduseClient({ produse, culoare }: TopProduseClientP
   }, [produse, sortare]);
 
   const bestPick = produse.find(p => p.badge === "Alegerea Redactiei") || produse[0];
+  const destBest = bestPick ? destinatie(bestPick, areSectiune) : null;
 
   return (
     <div>
       {/* BEST PICK BAR */}
       {bestPick && (
-        <div className="bg-[#ddf93c]/10 dark:bg-[#14181c]/30 border border-[#c9ced5] dark:border-[#1f2329]/40 rounded-xl p-4 mb-6 flex flex-col sm:flex-row items-start sm:items-center gap-3">
+        <div className="bg-[#ddf93c]/10 border border-[#2a2f36] rounded-xl p-4 mb-6 flex flex-col sm:flex-row items-start sm:items-center gap-3">
           <div className="bg-[#ddf93c] text-[#0c1000] text-xs font-black px-3 py-1.5 rounded-xl shrink-0">
-            ⭐ Alegerea redactiei
+            ⭐ Alegerea redacției
           </div>
           <div className="flex-1 min-w-0">
-            <span className="font-bold text-[#c9ced5] dark:text-[#ffffff]">{bestPick.nume}</span>
+            <span className="font-bold text-[#ffffff]">{bestPick.nume}</span>
             <span className="text-[#c9ced5] text-sm ml-2">— {bestPick.verdict_scurt}</span>
           </div>
           <div className="flex items-center gap-3 shrink-0">
-            <span className="text-lg font-black text-[#ddf93c]">{bestPick.pret_de_la.toLocaleString("ro-RO")} lei</span>
-            <a
-              href={`/cod-reducere/${bestPick.magazine[0]?.magazin_slug}`}
-              className="bg-gradient-to-r from-[#ddf93c] to-[#ddf93c] hover:from-[#ddf93c] hover:to-[#ddf93c] text-[#0c1000] text-sm font-bold px-4 py-2 rounded-xl transition-all"
-            >
-              Cauta pret &rarr;
-            </a>
+            <span className="text-right leading-tight">
+              <span className="block text-[11px] text-[#9399a0]">preț de referință, {selectie}</span>
+              <span className="text-lg font-black text-[#ddf93c]">{bestPick.pret_de_la.toLocaleString("ro-RO")} lei</span>
+            </span>
+            {destBest && (
+              <a
+                href={destBest.href}
+                {...(destBest.extern ? { target: "_blank", rel: "nofollow sponsored noopener noreferrer" } : {})}
+                className="bg-[#ddf93c] hover:bg-[#c3dd2c] text-[#0c1000] text-sm font-bold px-4 py-2 rounded-xl transition-colors"
+              >
+                {destBest.text} {destBest.extern ? <>&rarr;</> : <>&darr;</>}
+              </a>
+            )}
           </div>
         </div>
       )}
@@ -150,7 +175,7 @@ export default function TopProduseClient({ produse, culoare }: TopProduseClientP
               {Object.keys(produseSortate[0]?.scoruri || {}).map(k => (
                 <th key={k} className="px-3 py-3 font-bold text-[#c9ced5] text-xs">{k}</th>
               ))}
-              <th className="px-4 py-3 font-bold text-[#c9ced5]">Pret de la</th>
+              <th className="px-4 py-3 font-bold text-[#c9ced5]" title={`Preț de referință, notat în ${selectie}`}>Preț ref.</th>
               <th className="px-4 py-3"></th>
             </tr>
           </thead>
@@ -188,10 +213,16 @@ export default function TopProduseClient({ produse, culoare }: TopProduseClientP
                   </span>
                 </td>
                 <td className="px-4 py-3">
-                  <a href={`/cod-reducere/${p.magazine[0]?.magazin_slug}`}
-                    className={`text-xs font-bold text-[#ffffff] px-3 py-1.5 rounded-lg ${accent.btn} transition-colors`}>
-                    Cauta &rarr;
-                  </a>
+                  {(() => {
+                    const d = destinatie(p, areSectiune);
+                    return d ? (
+                      <a href={d.href}
+                        {...(d.extern ? { target: "_blank", rel: "nofollow sponsored noopener noreferrer" } : {})}
+                        className={`whitespace-nowrap text-xs font-bold text-[#0c1000] px-3 py-1.5 rounded-lg ${accent.btn} transition-colors`}>
+                        {d.text} {d.extern ? <>&rarr;</> : <>&darr;</>}
+                      </a>
+                    ) : null;
+                  })()}
                 </td>
               </tr>
             ))}
@@ -269,7 +300,7 @@ export default function TopProduseClient({ produse, culoare }: TopProduseClientP
                   <div className="flex flex-col items-end gap-3 shrink-0">
                     <ScorCircle scor={p.scor_total} />
                     <div className="text-right">
-                      <div className="text-xs text-[#9399a0]">de la</div>
+                      <div className="text-[11px] text-[#9399a0] leading-tight">preț de referință<br />{selectie}</div>
                       <div className="text-xl font-black text-[#ddf93c] leading-tight">
                         {p.pret_de_la.toLocaleString("ro-RO")} lei
                       </div>
@@ -301,37 +332,43 @@ export default function TopProduseClient({ produse, culoare }: TopProduseClientP
                   </div>
                 </div>
 
-                {/* MAGAZINE BUTTONS */}
-                <div className="flex flex-wrap gap-2 mt-4">
-                  {p.magazine.map(mag => (
-                    <a
-                      key={mag.magazin_slug}
-                      href={mag.url_afiliat || `/cod-reducere/${mag.magazin_slug}`}
-                      target={mag.url_afiliat ? "_blank" : undefined}
-                      rel={mag.url_afiliat ? "noopener noreferrer nofollow" : undefined}
-                      className={`inline-flex items-center gap-2 text-sm font-bold px-4 py-2 rounded-xl transition-colors ${
-                        mag.recomandat
-                          ? "bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000]"
-                          : "bg-[#2a2f36] hover:bg-[#2a2f36] dark:hover:bg-[#2a2f36] text-[#c9ced5]"
-                      }`}
-                    >
-                      {mag.recomandat && <span className="text-yellow-300">★</span>}
-                      {mag.eticheta}
-                      {mag.pret > 0 && (
-                        <span className={mag.recomandat ? "opacity-80" : "text-[#9399a0]"}>
-                          · {mag.pret.toLocaleString("ro-RO")} lei
-                        </span>
-                      )}
-                    </a>
-                  ))}
-                </div>
+                {/* MAGAZINE — doar partenerii, cu linkul platit; fara pretul lor din mai–iunie.
+                    Fara partener: trimitere la ofertele de azi de pe aceeasi pagina. */}
+                {(p.magazine.length > 0 || areSectiune) && (
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    {p.magazine.map((mag, i) => (
+                      <a
+                        key={mag.magazin_slug}
+                        href={mag.url_afiliat}
+                        target="_blank"
+                        rel="nofollow sponsored noopener noreferrer"
+                        className={`inline-flex items-center gap-2 text-sm font-bold px-4 py-2 rounded-xl transition-colors ${
+                          i === 0
+                            ? "bg-[#ddf93c] hover:bg-[#c3dd2c] text-[#0c1000]"
+                            : "bg-[#2a2f36] hover:bg-[#3a4048] text-[#ffffff]"
+                        }`}
+                      >
+                        Vezi la {mag.eticheta} &rarr;
+                      </a>
+                    ))}
+                    {p.magazine.length === 0 && areSectiune && (
+                      <a
+                        href="#unde-cumperi"
+                        className="inline-flex items-center gap-2 text-sm font-bold px-4 py-2 rounded-xl bg-[#2a2f36] hover:bg-[#3a4048] text-[#ffffff] transition-colors"
+                      >
+                        Prețurile de azi la magazinele partenere &darr;
+                      </a>
+                    )}
+                  </div>
+                )}
 
                 {/* EXPAND TOGGLE */}
                 <button
                   onClick={() => setExpandat(isExpaneded ? null : p.pozitie)}
+                  aria-expanded={isExpaneded}
                   className="mt-3 text-xs text-[#9399a0] hover:text-[#ddf93c] transition-colors flex items-center gap-1"
                 >
-                  {isExpaneded ? "▲ Ascunde detalii" : "▼ Specificatii complete si review detaliat"}
+                  {isExpaneded ? "▲ Ascunde detaliile" : "▼ Specificații și verdictul redacției"}
                 </button>
               </div>
 
@@ -340,7 +377,7 @@ export default function TopProduseClient({ produse, culoare }: TopProduseClientP
                 <div className="px-5 pb-5 border-t border-[#2a2f36] pt-4">
                   {/* VERDICT DETALIAT */}
                   <div className="bg-[#1f2329] dark:bg-[#ddf93c]/20 border border-[#ddf93c] dark:border-[#ddf93c]/30 rounded-xl p-4 mb-4">
-                    <p className="text-xs font-bold text-[#ddf93c] dark:text-[#c3dd2c] mb-1.5">Review detaliat</p>
+                    <p className="text-xs font-bold text-[#ddf93c] dark:text-[#c3dd2c] mb-1.5">Verdictul redacției</p>
                     <p className="text-sm text-[#c9ced5] leading-relaxed">{p.verdict_detaliat}</p>
                   </div>
 

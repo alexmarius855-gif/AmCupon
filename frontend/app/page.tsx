@@ -2,16 +2,17 @@ import type { Metadata } from "next";
 import fs from "fs";
 import path from "path";
 import HomeClient, { type Magazin } from "./HomeClient";
+import { pesteMagazine, PesteMagazine, laParteneri } from "@/lib/cifreSite";
 
 export const metadata: Metadata = {
-  title: "AmCupon.ro — Coduri de reducere si oferte verificate zilnic",
+  title: "AmCupon.ro — Coduri de reducere si oferte actualizate zilnic",
   description:
-    "Peste 1000 de magazine partenere din Romania cu coduri de reducere si oferte actualizate zilnic. Economiseste inteligent la eMAG, Fashion Days, Notino, Dr.Max si multe altele.",
+    `${PesteMagazine()} partenere cu coduri de reducere si oferte actualizate zilnic: ${laParteneri(["fashion", "beauty", "sanatate", "electronice"], 4).replace(/^la /, "")} si multe altele.`,
   alternates: { canonical: "https://amcupon.ro" },
   openGraph: {
-    title: "AmCupon.ro — Coduri de reducere si oferte verificate zilnic",
+    title: "AmCupon.ro — Coduri de reducere si oferte actualizate zilnic",
     description:
-      "Peste 1000 de magazine partenere cu coduri si oferte actualizate zilnic. Economiseste la fiecare comanda.",
+      `${PesteMagazine()} partenere cu coduri si oferte actualizate zilnic.`,
     url: "https://amcupon.ro",
     siteName: "AmCupon.ro",
     locale: "ro_RO",
@@ -116,6 +117,7 @@ export default function Page() {
       recomandate={recomandate || []}
       produseCategorii={produseCategorii}
       astazi={astazi}
+      pesteMagazine={pesteMagazine()}
     />
   );
 }

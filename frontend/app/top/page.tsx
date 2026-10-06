@@ -88,13 +88,13 @@ export default function TopHubPage() {
               <span className="text-[#ddf93c]">Recomandate {an}</span>
             </h1>
             <p className="text-[#c9ced5] text-lg max-w-xl mx-auto mb-8">
-              Review-uri detaliate, comparatii si ghiduri de cumparare pentru a alege intotdeauna produsul potrivit la cel mai bun pret.
+              Comparații editoriale și ghiduri de cumpărare, cu prețurile de azi de la magazinele partenere acolo unde le avem.
             </p>
             <div className="grid grid-cols-3 gap-4 max-w-sm mx-auto">
               {[
                 { val: `${categorii.length}`, label: "Categorii" },
-                { val: `${categorii.reduce((a, c) => a + c.produse.length, 0)}`, label: "Produse testate" },
-                { val: "Zilnic", label: "Actualizat" },
+                { val: `${categorii.reduce((a, c) => a + c.produse.length, 0)}`, label: "Modele comparate" },
+                { val: "2026", label: "Selecție editorială" },
               ].map(s => (
                 <div key={s.label} className="bg-[#1f2329] rounded-xl py-3 px-2">
                   <div className="text-xl font-black">{s.val}</div>
@@ -111,7 +111,7 @@ export default function TopHubPage() {
             Alege categoria
           </h2>
           <p className="text-[#c9ced5] dark:text-[#c9ced5] text-sm mb-8">
-            Fiecare top include produse testate si comparate dupa criterii obiective.
+            Fiecare top compară modele pe specificații și prețuri publice; scorurile sunt evaluarea redacției, nu teste de laborator.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">

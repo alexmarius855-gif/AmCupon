@@ -204,6 +204,14 @@ def api_get(endpoint: str, params: dict = None) -> dict | list | None:
 
 MAX_PAGINI = 200  # plasa de siguranta: 200 x 20 = 4.000 de elemente, de 6 ori cat avem
 
+# 06.10.2026 — de ce „API-ul ignora per_page": parametrul se numeste `perpage`. Clientul oficial
+# 2Parale/2Performant-php il foloseste (`unset($params['page'], $params['perpage'])`), iar
+# CharityDiscount cere `perpage=40` la programe si promotii, in productie. 40 e valoarea dovedita
+# acolo; nu ghicim una mai mare. Daca API-ul tot da 20, paginarea merge la fel (numarul de pagini
+# vine din raspuns), iar logul arata marimea reala: „Pagina 1/13: 40 elemente".
+# Miza: aceeasi limita de cereri (429) o impart toti pasii 2Performant din pipeline.
+PE_PAGINA_MAX = 40
+
 
 def _pagini_totale(data: dict):
     """Numarul de pagini, oriunde l-ar pune API-ul.
@@ -226,7 +234,8 @@ def _pagini_totale(data: dict):
 def fetch_all_pages(endpoint: str, per_page: int = 100, extra_params: dict = None) -> list:
     """Descarca toate paginile pentru un endpoint paginat.
 
-    CRITIC: API-ul 2Performant CAPEAZA la 20 elemente/pagina (ignora per_page>20)!
+    CRITIC: API-ul 2Performant da 20 elemente/pagina daca nu primeste `perpage` (06.10.2026:
+    `per_page`, cerut pana atunci, nu e numele lui — vezi PE_PAGINA_MAX).
     De-aia NU ne putem opri la `len(items) < per_page` (20 < 100 → s-ar opri dupa
     pagina 1, aducand doar 20 din 600 programe — bug-ul vechi, reaparut pe 24.09.2026
     la promotii, vezi `_pagini_totale`). Numarul de pagini vine din raspuns; fara el,
@@ -238,7 +247,7 @@ def fetch_all_pages(endpoint: str, per_page: int = 100, extra_params: dict = Non
     total_pages = None
     marime_pagina = None
     while True:
-        params = {"page": page, "per_page": per_page}
+        params = {"page": page, "perpage": min(per_page, PE_PAGINA_MAX)}
         if extra_params:
             params.update(extra_params)
         data = api_get(endpoint, params)

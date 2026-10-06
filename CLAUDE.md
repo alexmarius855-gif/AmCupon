@@ -12,6 +12,75 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 05–06.10.2026 (onestitate + bani pe paginile CU TRAFIC: /top si „Cel mai bun X"; sweep de afirmatii false pe tot site-ul):**
+- **Trafic real, masurat** (Vercel Analytics pe `am-cupon-a8dz` — proiectul care serveste amcupon.ro; planul Hobby da doar 31 de
+  zile): **132 de vizitatori in 31 de zile**, din cautari Bing 22, Google 6, DuckDuckGo 4, ChatGPT 3. Cautarile aterizeaza pe
+  `/top/*`, pe articolele „Cel mai bun X", pe `/oferte-azi` si `/blog/fashiondays-vs-answear-2026` — **nu pe paginile de cod**.
+  Semrush: 0 unitati API (blocat). Web Analytics e activ doar pe `am-cupon-a8dz`; `afiliere-site` si `am-cupon` raman duplicate.
+- **/top/[slug] (30 de pagini):** „Cum testam — fiecare produs testat minim 2 saptamani" si FAQ-ul „modele testate de echipa
+  AmCupon" erau live (reparatia din 10.08 curatase DATELE, nu `page.tsx`); butonul principal = link **Profitshare** spre eMAG
+  (cont respins 19.08 — clic fara comision); 12 butoane spre `/cod-reducere/<magazin absent>` = **404**; „Cauta pret" ->
+  redirect spre `/categorii/marketplace`; preturile din mai–iunie afisate ca actuale, „actualizat" = data rularii. Acum: text
+  onest („Cum am facut topul"), pret „de referinta (mai–iunie 2026)", butoane doar spre parteneri, iar sectiunea noua
+  **„Unde gasesti X azi, la magazinele partenere"** (`app/components/OferteParteneri.tsx`, server): produse REALE din feed,
+  3 game de pret, link platit, data feed-ului — pe **17 teme**. `generate_product_tops.py` sterge acum linkul cand magazinul
+  nu mai e platit (132 de linkuri Profitshare scoase).
+- **Regulile temelor: `lib/topFeed.ts`** (pure, fara importuri) + `lib/oferteTema.ts` (server, citeste feed-ul o data).
+  Tipul produsului e PRIMUL cuvant din titlu (altfel „Husa laptop", „Display laptop", „Pachet PC… monitor"); prinse la
+  calibrare: aparat foto „pachet cu geanta" la genti, detergent „cu Nano-Argint" la bijuterii, purificatoare de APA la aer,
+  „Test Proteina C Reactiva" la suplimente, carucior de curte, camera auto spate. Test: `node lib/topFeed.test.mjs` (10/10
+  mutatii prinse). Teme noi doar pentru blog: ochelari-soare, carucioare, routere, seruri-fata, trolere, scaune-auto-copii,
+  camere-auto, tensiometre. `ARTICOLE_TEME` leaga **24 de articole** „Cel mai bun X" de ofertele de azi (sub articol).
+- **Blog:** `scripts/curata_articole.py` = poarta prin care trece TOT textul de blog, pas nou in pipeline (dupa ultimul
+  generator, inainte de 8b): scoase **147 de linkuri** spre magazine absente (53 de articole), „partenerii nostri: eMAG, Altex,
+  Flanco", „verificat si functional" (toate cele 147 de articole de magazin), „testate si verificate", economiile fara sursa
+  („poti economisi 5-15%"); in descrieri raman doar partenerii reali. Idempotent; `--test` (5/5 mutatii prinse). Generatoarele
+  (`generate_blog/best_of/evergreen/store_descriptions.py`) reparate la sursa; `link_magazine()` listeaza doar parteneri.
+  Nota pe articolele de recomandare: text editorial, selectie din mai–iunie 2026, produse netestate.
+- **Afirmatii false scoase de pe ~70 de pagini:** „1000+ magazine" (erau 957) — acum `lib/cifreSite.ts` (`pesteMagazine()`
+  rotunjit in jos la suta, `reteleAfiliere()`, `laParteneri(categorii)` = doar parteneri cu link platit); „coduri/oferte
+  verificate", „verificam fiecare promotie" (/contact), „ales si verificat de noi" (/radar — selectia e automata), insigna
+  „VERIFICAT" (/produse), „Rata succes afisata" (/despre-noi), „Testate personal" (/carduri-bancare), „Am testat XTB,
+  Binance…" (/trading), Profitshare listat ca retea (/contact), descrieri de nisa cu eMAG/Altex/Dedeman/IKEA/Zara.
+  **Title/description atinse DOAR unde afirmau ceva fals** (decizia lui Alex din 05.10: „nu mai vreau informatii eronate"):
+  prima pagina „verificate zilnic" -> „actualizate zilnic", layout, /despre-noi, /categorii, /toate-magazinele, /newsletter,
+  nisele. **Neatinse:** `/top/[slug]` description (pret de referinta + data rularii) si titlurile de articol.
+- **Pagini de brand (31):** `generateMetadata` -> `metadataBrand()` (BrandPageTemplate.tsx), cu reparare automata: brandul
+  fara program (altex, flanco, elefant, temu, shein, trendyol, vidaxl, iherb, asos, bookzone, banggood) primeste pagina
+  onesta „nu avem coduri X" + alternativele reale din categorie + `noindex` + canonical propriu (4 aratau spre un 404).
+- **Comparatii:** scoase 4 perechi fara niciun partener (308 in `lib/redirecturi.ts`); in rest doar fapte sigure (returul de
+  30 de zile FD/Answear verificat 05.10), partenerul calculat din date, linkuri doar spre parteneri.
+- `MagazinCard`: codul mascat arata ultimele 2 caractere (ca `CuponCard`), nu primele 4. `/echipament-moto`,
+  `/rochii-mireasa`: linkurile trec prin `linkPlatit()` (fixato, trendiva nu sunt aprobate).
+- **Garda `verifica_site.py`:** date — link Profitshare in orice JSON public; `--html` (textul paginii, fara `<head>`) —
+  pretentie de testare, „verificat" despre coduri/oferte, numar de magazine scris de mana, **link intern spre pagina negenerata
+  (404 = blocheaza; prin redirect = numarat)**. LECTII-TEHNICE #10 (a 6-a aparitie) si #14 (linkuri spre pagini inexistente).
+- **Feed-uri 2Performant (06.10, masurat in logul rularii 37386079043):** din 957 de pagini de magazin doar **262 erau
+  indexabile** (fara promotie si fara produse = `noindex`, `lib/seoIndexable.ts`); springfarma (#1 in retea, 831 de vanzari),
+  scule365 si pfarma aveau **0 produse**. Cauze: lista de feed-uri se oprea la 180 din ~600 (`MAX_FEEDS * 3`); 1200 de produse
+  descarcate pe magazin cand in `products.json` intra ~130 (61 de cereri arse pe craftmystic); pauzele 5+10+20 s la 429 nu
+  ridicau limita niciodata (2-3 magazine pe rulare). Acum: toate paginile; **`perpage=40`** — numele OFICIAL al parametrului
+  (clientul 2Parale/2Performant-php, CharityDiscount), `per_page` nu e citit de API, de-aia veneau mereu 20; 200 de produse pe
+  magazin; pauze 30/90/180 s cu buget de 15 min pe rulare; feed-urile cu `products_count == 0` sarite; marii vanzatori primii
+  in rotatie (`PRIORITARI_ROTATIE`, clasamentul Business League); memoria incercarilor in **`data/rotatie-feeduri-2p.json`**
+  (comis de pipeline) — altfel un feed gol revenea primul la fiecare rulare. Logul spune acum cate cereri trec pana la primul
+  429, cand se ridica limita si **ce mari vanzatori n-au feed in My Feeds** (se adauga manual din 2Performant). `fetch_banners.py`
+  nu mai suprascrie `banners.json` cu o lista taiata de 429. Test: `python scripts/test_feeduri_2p.py` (53 verificari, 13/13
+  mutatii prinse). **De verificat la prima rulare:** marimea paginii in log (40 = `perpage` onorat) si fereastra limitei.
+- **Articolele de magazin (147, „Cod Reducere X Octombrie 2026"), gasite la push-ul din 06.10:** sablonul din
+  `generate_blog.py` spunea „AmCupon.ro verifica **zilnic** validitatea fiecarui cod. Nu afisam niciodata coduri expirate",
+  „Apasati «Raporteaza cod» ... il vom verifica in maxim 24h" (butonul NU exista), eticheta „Reducere automata" (NU exista),
+  „Codul ... este valid in momentul in care il accesati", „Oferta exclusiva AmCupon.ro — nu o gasesti in alta parte" (pusa
+  oricarui magazin cu cod), „Magazin stabil, cu comenzi consistente" (`trend` = 0 peste tot), reduceri inventate in sfatul
+  lunii („70-80%", „10-30%") si o **notita interna `<!-- FRECVENTA REALA ... -->` afisata ca TEXT** pe toate paginile.
+  Sweep-ul din 05.10 le ratase: bold-ul (`**zilnic**`) rupea regexurile, iar garda cerea „verificam", nu „verifica". Acum:
+  sablon rescris (fiecare propozitie adevarata pentru orice magazin sau calculata din date; codul mascat ca `maskCod`);
+  `curata_articole.py` repara textul vechi (+8 teste); garda **`promisiune falsa`** in `verifica_site.py` ruleaza si in CI
+  (mod date, pe `blog-posts.json`), toleranta la `**`/taguri; articolele lunare ale magazinelor iesite din `output.json` se
+  scot (librex.ro lega spre o pagina 404), cu garda la output.json trunchiat; `noindex` pe articolele fara promotii se decide
+  din `output.json`, nu din textul descrierii (29 de pagini, identic cu inainte). Blogul nu mai leaga spre pagini de magazin
+  care nu se genereaza.
+
 **UPDATE 27.09.2026 (viteza, masurata fata de concurenta + Supabase pe pauza a 5-a oara):**
 - **Masurat cu Lighthouse 12 (mobil, aceleasi setari ca PageSpeed Insights)**, live, 27.09: prima pagina
   AmCupon 65 / Cuponeria 90 / Cuponescu 85; pagina Notino 88 / 91 / 85. Accesibilitate: noi 99, ei 92-96.
@@ -2050,7 +2119,7 @@ folosim lime acolo.
 | Program | Platformă | Status |
 |---------|----------|--------|
 | 2Performant | Direct | ✅ ACTIV — sursa principală (226+ magazine) |
-| Profitshare | Direct | ❌ **RESPINS + EXCLUS COMPLET 19.08.2026** — 60 magazine sterse, garda permanenta in `merge_platforms.py`, 301-uri pentru cele 13 pagini indexate |
+| Profitshare | Direct | ❌ **RESPINS + EXCLUS COMPLET 19.08.2026**; **06.10.2026: Alex renunta definitiv** (nu se mai reaplica, nu se propune) — 60 magazine sterse, garda permanenta in `merge_platforms.py` + `verifica_site.py` (link Profitshare in JSON public = rosu), 301-uri pentru cele 13 pagini indexate |
 | Impact.com | Direct (Account 7401119) | ✅ ACTIV — **483 magazine cu tracking real verificat** (actualizat 06.08.2026, reconciliere extinsa la data/output.json). Restul de 568 magazine `platforma:impact` (85, era 135) sunt recomandari oneste fara comision, nu mai au link fals — vezi update 06.08 mai jos. Reconcilierea ruleaza acum automat la fiecare pipeline (nu mai e manuala). |
 | Binance | Direct | ✅ ACTIV — ref `205306153`, în `/trading` |
 | Awin | Direct (account 101829567) | ✅ ACTIV — **57 magazine** (16 in iulie + 41 pe 21.08 din Advertiser Directory, link construit din `advertiserId`) |

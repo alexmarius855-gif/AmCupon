@@ -1,7 +1,7 @@
 import { Metadata } from "next";
-import BrandPageTemplate from "../components/BrandPageTemplate";
+import BrandPageTemplate, { metadataBrand } from "../components/BrandPageTemplate";
 
-export const metadata: Metadata = {
+const META: Metadata = {
   title: "Cod Reducere SHEIN Romania 2026 — Fashion la Preturi Mici",
   description: "Coduri reducere SHEIN actualizate zilnic. Haine, accesorii si incaltaminte la reducere de pana la 80%. Promotii SHEIN verificate pe AmCupon.ro.",
   keywords: ["cod reducere shein", "shein romania reduceri", "shein promotii", "shein voucher", "shein discount romania", "haine ieftine online"],
@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
+// Metadata cu reparare automata: daca magazinul iese din output.json, pagina devine onesta
+// si noindex (vezi metadataBrand in BrandPageTemplate.tsx).
+export async function generateMetadata(): Promise<Metadata> {
+  return metadataBrand({ slug: "shein.com", slugAlt: "shein", name: "SHEIN", canonical: "/shein" }, META);
+}
 
 export default function SheinPage() {
   return (
@@ -46,6 +52,7 @@ export default function SheinPage() {
         { q: "Cand sunt cele mai mari reduceri pe SHEIN?", a: "Cele mai mari promotii sunt de 11.11 (Singles Day), Black Friday si New Year Sale. Flash sale-urile zilnice pot oferi reduceri de 50-80% la categorii specifice." },
       ],
       canonical: "/shein",
+      categorieSlug: "fashion",
     }} />
   );
 }

@@ -71,7 +71,7 @@ const VPN_LIST = [
       "Camouflage Mode — ascunde ca folosesti VPN",
       "MultiHop — doua tari simultan",
       "Garantie ramburs 30 zile",
-      "No-logs policy verificata",
+      "Politica no-logs declarata",
     ],
     cons: ["Server count mai mic ca NordVPN", "Viteza variabila pe servere aglomerate"],
     ideal: "Familii cu multe dispozitive, pret mic",
@@ -242,7 +242,7 @@ export default function VpnPage() {
 
       {/* Alte VPN-uri verificate */}
       <section className="max-w-5xl mx-auto px-4 py-8 border-t border-[#1f2329]">
-        <h2 className="text-xl font-black text-[#ffffff] mb-2">Alte VPN-uri verificate</h2>
+        <h2 className="text-xl font-black text-[#ffffff] mb-2">Alte VPN-uri</h2>
         <p className="text-[#9399a0] text-sm mb-5">Optiuni suplimentare, pentru cazuri specifice sau buget mai mic.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {ALTE_VPN.map((v) => (

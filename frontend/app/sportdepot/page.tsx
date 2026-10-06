@@ -1,13 +1,19 @@
 import { Metadata } from "next";
-import BrandPageTemplate from "../components/BrandPageTemplate";
+import BrandPageTemplate, { metadataBrand } from "../components/BrandPageTemplate";
 
-export const metadata: Metadata = {
+const META: Metadata = {
   title: "Cod Reducere Sport Depot — Echipament Sportiv 2026",
   description: "Coduri de reducere Sport Depot actualizate zilnic. Reduceri la echipament sportiv, imbracaminte si incaltaminte sport. Promotii SportDepot verificate.",
   keywords: ["cod reducere sport depot", "sportdepot reduceri", "echipament sport reduceri", "sport depot promotii", "sportdepot discount"],
   alternates: { canonical: "https://amcupon.ro/cod-reducere/sportdepot.ro" },
   openGraph: { title: "Reduceri Sport Depot 2026 | AmCupon.ro", url: "https://amcupon.ro/sportdepot", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
 };
+
+// Metadata cu reparare automata: daca magazinul iese din output.json, pagina devine onesta
+// si noindex (vezi metadataBrand in BrandPageTemplate.tsx).
+export async function generateMetadata(): Promise<Metadata> {
+  return metadataBrand({ slug: "sportdepot.ro", slugAlt: "sportdepot", name: "Sport Depot", canonical: "/sportdepot" }, META);
+}
 
 export default function SportDepotPage() {
   return (
@@ -27,8 +33,7 @@ export default function SportDepotPage() {
         "Cumpara echipamentul la finalul sezonului — reduceri de 40-60% la colectia care se schimba.",
         "Marimile din ghidul Sport Depot pot diferi de branduri — verifica tabelul de marimi inainte de comanda online.",
         "Pantofii de sport se inlocuiesc la 500-800 km (alergare) sau anual (uz general) — planifica cumparatura din timp.",
-        "Cauta produsele cu eticheta 'Produs recomandat' — sunt testate de sportivi si au recenzii verificate.",
-        "Aboneaza-te la newsletter Sport Depot pentru acces la oferte exclusive de weekend.",
+                "Aboneaza-te la newsletter Sport Depot pentru acces la oferte exclusive de weekend.",
       ],
       faq: [
         { q: "Cum aplic un cod de reducere Sport Depot?", a: "La checkout, cauta campul 'Cod promotional' sau 'Voucher'. Introdu codul de pe AmCupon.ro si confirma — reducerea se aplica la totalul comenzii." },

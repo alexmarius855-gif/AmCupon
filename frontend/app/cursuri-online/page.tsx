@@ -95,7 +95,7 @@ export default function CursuriOnlinePage() {
             Cursuri Online cu <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #ddf93c, #ddf93c)" }}>Reducere</span> 2026
           </h1>
           <p className="text-[#c9ced5] text-lg max-w-2xl mx-auto">
-            Platforme e-learning si cursuri cu certificare verificate. Investitia in educatie cu cel mai mare ROI din 2026.
+            Platforme e-learning si cursuri cu certificat, cu reducerile active acum.
           </p>
         </div>
       </section>
@@ -118,7 +118,7 @@ export default function CursuriOnlinePage() {
       {cursuri2p.length > 0 && (
         <section className="max-w-5xl mx-auto px-4 py-8 border-t border-[#1f2329]">
           <h2 className="text-xl font-black text-[#ffffff] mb-2">Platforme romanesti cu reduceri active</h2>
-          <p className="text-[#c9ced5] text-sm mb-5">Parteneri verificati — comisioane active pe 2Performant.</p>
+          <p className="text-[#c9ced5] text-sm mb-5">Platforme partenere AmCupon, cu reducerile active acum.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {cursuri2p.map(m => {
               const promo = m.promotii.find(p => (p.zile_ramase ?? 99) >= 0) ?? m.promotii[0] ?? {};

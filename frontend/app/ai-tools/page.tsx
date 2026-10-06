@@ -79,7 +79,7 @@ export default function AiToolsPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm text-[#c9ced5]">
             <span className="flex items-center gap-1.5"><span className="text-[#ddf93c]">✓</span> Majoritatea au plan gratuit</span>
-            <span className="flex items-center gap-1.5"><span className="text-[#ddf93c]">✓</span> Testate și recomandate</span>
+            <span className="flex items-center gap-1.5"><span className="text-[#ddf93c]">✓</span> Prețuri și planuri comparate</span>
             <span className="flex items-center gap-1.5"><span className="text-[#ddf93c]">✓</span> Actualizat 2026</span>
           </div>
         </div>
@@ -134,7 +134,7 @@ export default function AiToolsPage() {
           <div className="text-4xl mb-3">🎁</div>
           <h2 className="text-2xl font-black text-[#ffffff] mb-3">Vezi toate ofertele la software</h2>
           <p className="text-[#c9ced5] mb-6 text-sm max-w-xl mx-auto">
-            Coduri și reduceri la unelte AI, hosting, VPN și software de business — verificate pe AmCupon.
+            Coduri și reduceri la unelte AI, hosting, VPN și software de business, pe AmCupon.
           </p>
           <Link href="/software-business" className="inline-block bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] font-black px-7 py-3 rounded-xl text-sm transition-all">
             Software cu reduceri →

@@ -2,15 +2,16 @@ import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
 import ToateMagazineleClient from "./ToateMagazineleClient";
+import { numarMagazine, PesteMagazine } from "@/lib/cifreSite";
 
 export const metadata: Metadata = {
-  title: "Toate Magazinele cu Reduceri Romania 2026 — 1000+ Parteneri",
-  description: "Lista completa a 1000+ magazine partenere AmCupon.ro cu coduri de reducere si oferte verificate. Cauta magazinul preferat sau filtreaza pe categorie. Actualizat zilnic.",
-  keywords: ["toate magazinele reduceri","coduri reducere magazine online romania","lista magazine afiliate","reduceri verificate romania"],
+  title: `Toate Magazinele cu Reduceri Romania 2026 — ${Math.floor(numarMagazine() / 100) * 100}+ Parteneri`,
+  description: `Lista completa a celor ${numarMagazine()} de magazine partenere AmCupon.ro, cu coduri de reducere si oferte active. Cauta magazinul preferat sau filtreaza pe categorie. Actualizat zilnic.`,
+  keywords: ["toate magazinele reduceri","coduri reducere magazine online romania","lista magazine afiliate","reduceri active romania"],
   alternates: { canonical: "https://amcupon.ro/toate-magazinele" },
   openGraph: {
     title: "Toate Magazinele cu Reduceri Romania | AmCupon.ro",
-    description: "1000+ magazine cu coduri de reducere verificate zilnic. Fashion, Electronice, Farmacie, Sport si multe altele.",
+    description: `${PesteMagazine()} cu coduri de reducere actualizate zilnic. Fashion, Electronice, Farmacie, Sport si multe altele.`,
     url: "https://amcupon.ro/toate-magazinele",
     siteName: "AmCupon.ro",
     locale: "ro_RO",

@@ -16,7 +16,7 @@ interface Magazin {
 
 export const metadata: Metadata = {
   title: "Gadgets & Accesorii Tech 2026 — Coduri Reducere | AmCupon.ro",
-  description: "Gadgets, smartwatch-uri, căști wireless, smart home, drone și accesorii tech — coduri de reducere verificate pentru tot ce e nou și interesant în tech.",
+  description: "Gadgets, smartwatch-uri, căști wireless, smart home, drone și accesorii tech — coduri de reducere și oferte active de la magazinele partenere.",
   keywords: ["gadgets reducere", "smartwatch ieftin", "casti wireless reducere", "drone reducere", "smart home romania", "accesorii tech cod reducere"],
   alternates: { canonical: "https://amcupon.ro/gadgets" },
   openGraph: { title: "Gadgets & Tech — Coduri Reducere | AmCupon.ro", url: "https://amcupon.ro/gadgets", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
@@ -68,7 +68,7 @@ export default function GadgetsPage() {
             <div className="text-5xl mb-4">📡</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Gadgets & Tech {an}</h1>
             <p className="text-[#2a2f10] text-lg mb-8 max-w-xl mx-auto">
-              Smartwatch-uri, căști wireless, drone, smart home — coduri de reducere verificate pentru tot ce e nou în tech
+              Smartwatch-uri, căști wireless, drone, smart home — coduri de reducere și oferte active de la magazinele partenere
             </p>
             <div className="grid grid-cols-3 gap-4 max-w-sm mx-auto">
               {[

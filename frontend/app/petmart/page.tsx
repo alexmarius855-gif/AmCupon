@@ -1,7 +1,7 @@
 import { Metadata } from "next";
-import BrandPageTemplate from "../components/BrandPageTemplate";
+import BrandPageTemplate, { metadataBrand } from "../components/BrandPageTemplate";
 
-export const metadata: Metadata = {
+const META: Metadata = {
   title: "Cod Reducere Petmart — Oferte Animale 2026 | AmCupon.ro",
   description: "Coduri de reducere Petmart actualizate zilnic. Reduceri la hrana caini, pisici, accesorii si medicamente veterinare. Promotii Petmart verificate.",
   keywords: ["cod reducere petmart", "petmart reduceri", "petmart promotii", "hrana animale reduceri", "petmart discount"],
@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
+// Metadata cu reparare automata: daca magazinul iese din output.json, pagina devine onesta
+// si noindex (vezi metadataBrand in BrandPageTemplate.tsx).
+export async function generateMetadata(): Promise<Metadata> {
+  return metadataBrand({ slug: "petmart.ro", slugAlt: "petmart", name: "Petmart", canonical: "/petmart" }, META);
+}
 
 export default function PetmartPage() {
   return (

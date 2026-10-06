@@ -1,7 +1,7 @@
 import { Metadata } from "next";
-import BrandPageTemplate from "../components/BrandPageTemplate";
+import BrandPageTemplate, { metadataBrand } from "../components/BrandPageTemplate";
 
-export const metadata: Metadata = {
+const META: Metadata = {
   title: "Reduceri Altex — Coduri si Oferte Altex 2026 | AmCupon.ro",
   description: "Toate ofertele si codurile de reducere Altex actualizate zilnic. Electronice, electrocasnice, IT la cel mai mic pret. Verifica promotiile active acum.",
   keywords: ["reducere altex", "cod reducere altex", "oferte altex", "altex promotii", "altex discount"],
@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
+// Metadata cu reparare automata: daca magazinul iese din output.json, pagina devine onesta
+// si noindex (vezi metadataBrand in BrandPageTemplate.tsx).
+export async function generateMetadata(): Promise<Metadata> {
+  return metadataBrand({ slug: "altex.ro", slugAlt: "altex", name: "Altex", canonical: "/altex" }, META);
+}
 
 export default function AltexPage() {
   return (

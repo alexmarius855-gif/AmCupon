@@ -58,7 +58,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const luna = LUNI_RO[new Date().getMonth()];
   const an = new Date().getFullYear();
   const title = `Radarul AmCupon — Cele mai bune oferte de azi (${luna} ${an})`;
-  const description = `Selectia editoriala zilnica AmCupon: alegem si verificam cele mai bune oferte reale din Romania, cu un verdict scurt pentru fiecare. Actualizat zilnic.`;
+  const description = `Selectia zilnica AmCupon: cele mai bune oferte active, alese automat dupa cod, reducere si valabilitate, cu o nota scurta pentru fiecare. Actualizat zilnic.`;
   return {
     title: title.length > 60 ? `Radarul AmCupon — Ofertele zilei ${luna} ${an}` : title,
     description,
@@ -194,7 +194,7 @@ export default function RadarPage() {
             RADARUL AMCUPON · {digest.data_afisata}
           </div>
           <h1 className="text-3xl sm:text-4xl font-black leading-tight mb-4">
-            Ce merita azi, ales si verificat de noi
+            Ce merită azi, din ofertele active
           </h1>
           {/* Vocea — intro editorial */}
           <div className="bg-[#14181c] border-l-4 border-[#ddf93c] rounded-r-xl p-4 sm:p-5">
@@ -221,7 +221,7 @@ export default function RadarPage() {
 
         {/* Nota de subsol — rolul editorial */}
         <p className="mt-10 text-center text-xs text-[#9399a0]">
-          Radarul AmCupon e selectia noastra zilnica din sute de oferte active. Verificam codurile, alegem ce merita, iti spunem pe scurt de ce. Actualizat zilnic, {luna} {an}.
+          Radarul AmCupon e o selecție zilnică, făcută automat după reguli fixe (dacă oferta are cod, cât e reducerea, cât mai e valabilă), din ofertele active. Nu testăm codurile în coș. Actualizat zilnic, {luna} {an}.
         </p>
       </div>
     </main>

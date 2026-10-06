@@ -6,6 +6,8 @@ import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
 import { esteInCategorie } from "../../lib/categoriiNisa";
+import { laParteneri } from "@/lib/cifreSite";
+import { NISA_CATEGORII } from "@/lib/categoriiNisa";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -16,7 +18,7 @@ interface Magazin {
 
 export const metadata: Metadata = {
   title: "Cod Reducere Casa & Gradina 2026 | AmCupon.ro",
-  description: "Coduri de reducere casa si gradina Romania: Dedeman, IKEA, Leroy Merlin, Mobexpert, Jysk. Mobila, decoratiuni, gradina, electrocasnice mari la preturi reduse. Verificate zilnic.",
+  description: `Coduri de reducere casa si gradina ${laParteneri(NISA_CATEGORII.casa)}. Mobila, decoratiuni, gradina la preturi reduse. Actualizate zilnic.`,
   keywords: ["cod reducere dedeman","reduceri ikea","mobila ieftina","cod reducere leroy merlin","mobexpert reducere","casa gradina reducere romania","electrocasnice reducere"],
   alternates: { canonical: "https://amcupon.ro/casa" },
   openGraph: { title: "Casa & Gradina cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/casa", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
@@ -65,7 +67,7 @@ export default function CasaPage() {
             <div className="text-5xl mb-4">🏡</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Casa & Gradina cu Reducere {an}</h1>
             <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              Coduri de reducere verificate la Dedeman, IKEA, Leroy Merlin si alte magazine de amenajari din Romania
+              Coduri de reducere și oferte {laParteneri(NISA_CATEGORII.casa, 3)} și la alte magazine partenere de amenajări
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Mobila","Bricolaj","Gradina","Electrocasnice","Decoratiuni","Baie"].map(c => (

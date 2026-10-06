@@ -1,7 +1,7 @@
 import { Metadata } from "next";
-import BrandPageTemplate from "../components/BrandPageTemplate";
+import BrandPageTemplate, { metadataBrand } from "../components/BrandPageTemplate";
 
-export const metadata: Metadata = {
+const META: Metadata = {
   title: "Cod Reducere Trendyol Romania 2026 — Moda & Lifestyle",
   description: "Coduri reducere Trendyol Romania actualizate zilnic. Fashion, electronice, cosmetice si produse casa la reducere. Promotii Trendyol verificate.",
   keywords: ["cod reducere trendyol", "trendyol romania", "trendyol promotii", "trendyol voucher", "trendyol discount", "trendyol reduceri"],
@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
+// Metadata cu reparare automata: daca magazinul iese din output.json, pagina devine onesta
+// si noindex (vezi metadataBrand in BrandPageTemplate.tsx).
+export async function generateMetadata(): Promise<Metadata> {
+  return metadataBrand({ slug: "trendyol.com", slugAlt: "trendyol", name: "Trendyol", canonical: "/trendyol" }, META);
+}
 
 export default function TrendyolPage() {
   return (
@@ -46,6 +52,7 @@ export default function TrendyolPage() {
         { q: "Plata pe Trendyol este sigura?", a: "Da, Trendyol foloseste sisteme securizate de plata. Accepta carduri Visa/Mastercard si alte metode de plata online. Tranzactiile sunt criptate SSL." },
       ],
       canonical: "/trendyol",
+      categorieSlug: "fashion",
     }} />
   );
 }

@@ -1,7 +1,7 @@
 import { Metadata } from "next";
-import BrandPageTemplate from "../components/BrandPageTemplate";
+import BrandPageTemplate, { metadataBrand } from "../components/BrandPageTemplate";
 
-export const metadata: Metadata = {
+const META: Metadata = {
   title: "Cod Reducere Temu Romania 2026 — Oferte & Promotii",
   description: "Coduri reducere Temu Romania actualizate zilnic. Transport gratuit, reduceri de pana la 90% la milioane de produse. Promotii Temu verificate pe AmCupon.ro.",
   keywords: ["cod reducere temu", "temu romania reduceri", "temu promotii", "temu transport gratuit", "temu discount", "temu coupon"],
@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
+// Metadata cu reparare automata: daca magazinul iese din output.json, pagina devine onesta
+// si noindex (vezi metadataBrand in BrandPageTemplate.tsx).
+export async function generateMetadata(): Promise<Metadata> {
+  return metadataBrand({ slug: "temu.com", slugAlt: "temu", name: "Temu", canonical: "/temu" }, META);
+}
 
 export default function TemuPage() {
   return (
@@ -46,6 +52,7 @@ export default function TemuPage() {
         { q: "Exista coduri reducere Temu pentru clientii existenti?", a: "Da, Temu trimite periodic coduri promotionale prin email si notificari push. Verifica si sectiunea 'Coupon' din contul tau Temu sau pe AmCupon.ro pentru cele mai recente oferte." },
       ],
       canonical: "/temu",
+      categorieSlug: "marketplace",
     }} />
   );
 }

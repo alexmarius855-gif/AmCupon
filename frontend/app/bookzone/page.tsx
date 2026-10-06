@@ -1,7 +1,7 @@
 import { Metadata } from "next";
-import BrandPageTemplate from "../components/BrandPageTemplate";
+import BrandPageTemplate, { metadataBrand } from "../components/BrandPageTemplate";
 
-export const metadata: Metadata = {
+const META: Metadata = {
   title: "Cod Reducere BookZone — Carti Online 2026 | AmCupon.ro",
   description: "Coduri de reducere BookZone actualizate zilnic. Reduceri la carti, audiobooks si e-books. Promotii BookZone verificate.",
   keywords: ["cod reducere bookzone", "bookzone reduceri", "carti online reduceri", "bookzone promotii", "bookzone discount"],
@@ -12,6 +12,12 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://amcupon.ro/bookzone" },
   openGraph: { title: "Reduceri BookZone 2026 | AmCupon.ro", url: "https://amcupon.ro/bookzone", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
 };
+
+// Metadata cu reparare automata: daca magazinul iese din output.json, pagina devine onesta
+// si noindex (vezi metadataBrand in BrandPageTemplate.tsx).
+export async function generateMetadata(): Promise<Metadata> {
+  return metadataBrand({ slug: "bookzone.ro", slugAlt: "bookzone", name: "BookZone", canonical: "/bookzone" }, META);
+}
 
 export default function BookzonePage() {
   return (
@@ -41,6 +47,7 @@ export default function BookzonePage() {
         { q: "BookZone are si variante digitale ale cartilor?", a: "Da, BookZone ofera atat carti fizice cat si e-books (descarcabile in format PDF/EPUB) si audiobooks. E-books se acceseaza instant dupa plata, fara timp de asteptare." },
       ],
       canonical: "/bookzone",
+      categorieSlug: "carti-educatie",
     }} />
   );
 }

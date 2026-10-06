@@ -601,7 +601,7 @@ In perioada Black Friday, AmCupon.ro actualizeaza codurile in timp real. Unele m
     {
         "slug": "top-magazine-online-romania-cu-reduceri",
         "title": f"Top 20 Magazine Online Romania cu Reduceri {AN}",
-        "excerpt": f"Top 20 magazine online Romania {AN} cu reduceri reale si coduri verificate. eMAG, FashionDays, Notino, Answear — ghid complet cu rating si coduri active.",
+        "excerpt": f"Top 20 magazine online Romania {AN} cu reduceri si coduri active la magazinele partenere AmCupon — ghid complet.",
         "category": "Ghiduri",
         "tip": "ghid",
         "content": f"""## Top 20 magazine online Romania cu cele mai bune reduceri
@@ -666,7 +666,6 @@ eMAG este cel mai mare retailer online din Romania cu peste 8 milioane de produs
 Voucherele de tip "VOUCHER10" ofera reduceri procentuale (5-25%) sau fixe (10-100 lei). Se introduc la checkout in campul "Cod promotional".
 
 **Unde gasesti vouchere eMAG:**
-- [AmCupon.ro — coduri eMAG verificate](/cod-reducere/emag.ro)
 - Newsletter-ul eMAG (aboneaza-te pentru 10% la prima comanda)
 - Pagina eMAG pe Facebook (concursuri si promotii)
 
@@ -778,7 +777,7 @@ Un cod de reducere (sau voucher, cupon, cod promotional) este o combinatie de li
 ## Unde gasesti coduri de reducere
 
 ### 1. AmCupon.ro (recomandat)
-AmCupon.ro verifica zilnic codurile de reducere de la peste 288 magazine online. Toate codurile afisate sunt testate si verificate.
+AmCupon.ro preia automat, de mai multe ori pe zi, codurile si ofertele active de la magazinele partenere. Codurile nu le testam in cos.
 
 **Cum folosesti AmCupon.ro:**
 1. Cauta magazinul unde vrei sa cumperi
@@ -832,7 +831,7 @@ Multe magazine posteaza coduri flash pe social media cu valabilitate de 24-48h.
 | Bun venit | Prima comanda | WELCOME10 |
 | Sezonier | Valabil in anumita perioada | VARA2026 |
 
-[**Coduri verificate pentru toate magazinele →**](/)""",
+[**Coduri active pentru toate magazinele →**](/)""",
     },
 ]
 

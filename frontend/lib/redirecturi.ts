@@ -107,6 +107,13 @@ export const REDIRECTURI: Redirect[] = [
   { source: "/libris",      destination: "/carti",                  permanent: true },
   { source: "/vegis",       destination: "/sanatate",               permanent: true },
   { source: "/pcmadd",      destination: "/categorii/electronice",  permanent: true },
+
+  // ── Comparatii SCOASE 06.10.2026: niciunul dintre cele doua magazine nu e partener (fara date
+  //    de la noi, fara link platit, randuri neverificate). Vezi scripts/generate_comparisons.py.
+  { source: "/comparatii/temu-vs-shein",        destination: "/comparatii", permanent: true },
+  { source: "/comparatii/emag-vs-elefant",      destination: "/comparatii", permanent: true },
+  { source: "/comparatii/emag-vs-temu",         destination: "/comparatii", permanent: true },
+  { source: "/comparatii/fashiondays-vs-shein", destination: "/comparatii", permanent: true },
 ];
 
 /** Caile care raspund cu redirect — folosit de `app/sitemap.ts` ca filtru final. */

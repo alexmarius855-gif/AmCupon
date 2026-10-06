@@ -1,14 +1,15 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import { pesteMagazine, PesteMagazine, reteleAfiliere, numarMagazine } from "@/lib/cifreSite";
 
 export const metadata: Metadata = {
   title: "Despre AmCupon.ro — Platforma de Coduri Reducere din Romania",
-  description: "AmCupon.ro este platforma de coduri de reducere verificate din Romania. 1000+ magazine partenere, actualizare zilnica automata, 100% gratuit pentru cumparatori.",
-  keywords: ["despre amcupon","cum functioneaza coduri reducere","platforma reduceri romania","coduri verificate automat"],
+  description: `AmCupon.ro aduna codurile de reducere si ofertele active de la ${pesteMagazine()} partenere, actualizate automat de mai multe ori pe zi. 100% gratuit pentru cumparatori.`,
+  keywords: ["despre amcupon","cum functioneaza coduri reducere","platforma reduceri romania","coduri reducere actualizate"],
   alternates: { canonical: "https://amcupon.ro/despre-noi" },
   openGraph: {
     title: "Despre AmCupon.ro — Cum functioneaza",
-    description: "1000+ magazine partenere, coduri verificate zilnic, 100% gratuit.",
+    description: `${PesteMagazine()} partenere, coduri actualizate zilnic, 100% gratuit.`,
     url: "https://amcupon.ro/despre-noi",
     siteName: "AmCupon.ro",
     locale: "ro_RO",
@@ -21,11 +22,11 @@ const PASI = [
   {
     nr: "1",
     titlu: "Colectare automată",
-    desc: "Preluăm zilnic toate promoțiile active de la partenerii 2Performant — peste 1000 de magazine din România.",
+    desc: `De trei ori pe zi preluăm automat promoțiile active din rețelele de afiliere (${reteleAfiliere()}), de la ${pesteMagazine()} partenere.`,
   },
   {
     nr: "2",
-    titlu: "Verificare și filtrare",
+    titlu: "Filtrare automată",
     desc: "Eliminăm automat ofertele expirate și le afișăm doar pe cele cu dată de valabilitate activă.",
   },
   {
@@ -36,7 +37,7 @@ const PASI = [
   {
     nr: "4",
     titlu: "Actualizare zilnică",
-    desc: "În fiecare dimineață, datele se reîmprospătează automat. Întotdeauna găsești ce e valabil azi.",
+    desc: "Datele se reîmprospătează automat de trei ori pe zi. Ofertele expirate dispar după data lor."
   },
   {
     nr: "5",
@@ -46,12 +47,12 @@ const PASI = [
 ];
 
 const BENEFICII = [
-  { emoji: "💰", titlu: "Economii reale", desc: "Coduri verificate cu reduceri de 5–50% la cele mai mari magazine online din România." },
-  { emoji: "⚡", titlu: "Actualizat zilnic", desc: "Scriptul nostru rulează în fiecare dimineață și actualizează toate ofertele automat." },
-  { emoji: "🎯", titlu: "Rată succes afișată", desc: "Știi dinainte cât de probabil e că un cod funcționează, fără să pierzi timp." },
+  { emoji: "💰", titlu: "Oferte reale", desc: "Doar ofertele pe care rețelele de afiliere le dau ca active azi — fără coduri inventate, fără cifre fabricate." },
+  { emoji: "⚡", titlu: "Actualizat automat", desc: "Scriptul nostru rulează de trei ori pe zi și actualizează ofertele automat." },
+  { emoji: "🎯", titlu: "Spunem ce nu știm", desc: "Nu testăm codurile în coș. Arătăm de unde vine fiecare ofertă și până când e valabilă, ca să știi la ce să te aștepți." },
   { emoji: "🔒", titlu: "Fără costuri ascunse", desc: "Folosirea codurilor este 100% gratuită. Noi câștigăm un comision mic de la magazine." },
   { emoji: "📱", titlu: "Mobile-friendly", desc: "Site-ul funcționează perfect pe orice dispozitiv — telefon, tabletă sau desktop." },
-  { emoji: "🇷🇴", titlu: "Focus România", desc: "Ne concentrăm exclusiv pe magazine care livrează în România, cu prețuri în lei." },
+  { emoji: "🇷🇴", titlu: "Focus România", desc: "Scoatem automat programele de afiliere care nu acoperă România." },
 ];
 
 export default function DespreNoiPage() {
@@ -77,9 +78,9 @@ export default function DespreNoiPage() {
             Despre <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #c3dd2c, #ddf93c)" }}>AmCupon.ro</span>
           </h1>
           <p className="text-[#c9ced5] text-base md:text-lg leading-relaxed">
-            AmCupon.ro îți aduce cele mai bune coduri de reducere și oferte verificate
-            de la peste <strong className="text-[#ffffff]">1000 de magazine partenere</strong> din România,
-            actualizate zilnic — complet gratuit.
+            AmCupon.ro adună codurile de reducere și ofertele active de la{" "}
+            <strong className="text-[#ffffff]">{pesteMagazine()} partenere</strong>, actualizate automat
+            de mai multe ori pe zi — complet gratuit.
           </p>
         </div>
       </div>
@@ -92,8 +93,8 @@ export default function DespreNoiPage() {
           <div className="bg-[#14181c] rounded-xl border border-[#1f2329] p-8 shadow-sm">
             <p className="text-[#c9ced5] leading-relaxed mb-4">
               AmCupon.ro este o platformă de agregare a ofertelor afiliate. Funcționăm ca intermediar
-              între tine și magazinele online: colectăm zilnic toate promoțiile active de la partenerii
-              noștri prin platforma <strong>2Performant</strong> și le afișăm centralizat, ușor de găsit.
+              între tine și magazinele online: preluăm automat, de trei ori pe zi, promoțiile active de la
+              partenerii noștri din rețelele <strong>{reteleAfiliere()}</strong> și le afișăm centralizat, ușor de găsit.
             </p>
             <p className="text-[#c9ced5] leading-relaxed mb-4">
               Atunci când cumperi printr-un link de pe AmCupon.ro, magazinul ne plătește un comision mic
@@ -123,10 +124,11 @@ export default function DespreNoiPage() {
 
         {/* CUM VERIFICAM */}
         <section>
-          <h2 className="text-2xl font-black text-[#ffffff] mb-6">Cum verificăm ofertele?</h2>
+          <h2 className="text-2xl font-black text-[#ffffff] mb-6">Cum alegem și actualizăm ofertele?</h2>
           <p className="text-[#c9ced5] mb-8 leading-relaxed">
-            Validitatea ofertelor este prioritatea noastră. Procesul nostru automat verifică zilnic
-            fiecare cod și promoție, dar validitatea finală depinde de magazinul partener — vezi{" "}
+            Procesul automat preia ofertele de la rețelele de afiliere de trei ori pe zi și le scoate pe
+            cele expirate după data lor. Codurile nu le testăm în coș, iar validitatea finală depinde de
+            magazinul partener — vezi{" "}
             <Link href="/termeni" className="text-[#ddf93c] hover:text-[#c3dd2c] underline">Termenii și condițiile</Link>.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -170,9 +172,9 @@ export default function DespreNoiPage() {
           <h2 className="text-2xl font-black mb-8">AmCupon.ro în cifre</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { nr: "1000+", label: "Magazine partenere" },
+              { nr: `${Math.floor(numarMagazine() / 100) * 100}+`, label: "Magazine partenere" },
               { nr: "100%", label: "Gratuit pentru tine" },
-              { nr: "24h", label: "Ciclu de actualizare" },
+              { nr: "3×", label: "Actualizări pe zi" },
               { nr: "2026", label: "An de lansare" },
             ].map((c) => (
               <div key={c.label}>

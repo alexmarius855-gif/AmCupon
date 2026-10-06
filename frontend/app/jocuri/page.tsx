@@ -16,7 +16,7 @@ interface Magazin {
 
 export const metadata: Metadata = {
   title: "Cod Reducere Jocuri Video & Consola 2026 — PC, PS5, Xbox",
-  description: "Coduri de reducere jocuri video Romania: Altex, eMAG, Gaming Gear, PcGarage. Jocuri PC, PS5, Xbox, Nintendo Switch si console la preturi mici. Verificate zilnic.",
+  description: "Coduri de reducere pentru jocuri video si gaming de la magazinele de electronice partenere AmCupon. Jocuri, console si accesorii la preturi mici. Actualizate zilnic.",
   keywords: ["cod reducere jocuri","reduceri jocuri video","ps5 ieftin","xbox reducere","jocuri pc reducere","console gaming romania","pcgarage cod cupon"],
   alternates: { canonical: "https://amcupon.ro/jocuri" },
   openGraph: { title: "Jocuri Video cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/jocuri", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },

@@ -1,7 +1,7 @@
 import { Metadata } from "next";
-import BrandPageTemplate from "../components/BrandPageTemplate";
+import BrandPageTemplate, { metadataBrand } from "../components/BrandPageTemplate";
 
-export const metadata: Metadata = {
+const META: Metadata = {
   title: "Cod Reducere Flanco — Oferte Electronice si Electrocasnice",
   description: "Coduri de reducere Flanco actualizate zilnic. Reduceri la telefoane, laptopuri, televizoare si electrocasnice. Promotii Flanco verificate.",
   keywords: ["cod reducere flanco", "flanco reduceri", "flanco promotii", "electronice reduceri", "flanco discount"],
@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
+// Metadata cu reparare automata: daca magazinul iese din output.json, pagina devine onesta
+// si noindex (vezi metadataBrand in BrandPageTemplate.tsx).
+export async function generateMetadata(): Promise<Metadata> {
+  return metadataBrand({ slug: "flanco.ro", slugAlt: "flanco", name: "Flanco", canonical: "/flanco" }, META);
+}
 
 export default function FlancoPage() {
   return (

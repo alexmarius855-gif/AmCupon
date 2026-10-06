@@ -1,13 +1,19 @@
 import { Metadata } from "next";
-import BrandPageTemplate from "../components/BrandPageTemplate";
+import BrandPageTemplate, { metadataBrand } from "../components/BrandPageTemplate";
 
-export const metadata: Metadata = {
+const META: Metadata = {
   title: "Cod Reducere Litera — Carti si Edituri 2026 | AmCupon.ro",
   description: "Coduri de reducere Litera actualizate zilnic. Reduceri la carti Litera, bestsellere si colectii speciale. Promotii Litera verificate.",
   keywords: ["cod reducere litera", "litera reduceri", "carti litera reduceri", "litera promotii", "litera discount"],
   alternates: { canonical: "https://amcupon.ro/cod-reducere/litera.ro" },
   openGraph: { title: "Reduceri Litera Carti 2026 | AmCupon.ro", url: "https://amcupon.ro/litera", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
 };
+
+// Metadata cu reparare automata: daca magazinul iese din output.json, pagina devine onesta
+// si noindex (vezi metadataBrand in BrandPageTemplate.tsx).
+export async function generateMetadata(): Promise<Metadata> {
+  return metadataBrand({ slug: "litera.ro", slugAlt: "litera", name: "Litera", canonical: "/litera" }, META);
+}
 
 export default function LiteraPage() {
   return (

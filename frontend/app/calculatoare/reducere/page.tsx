@@ -207,7 +207,7 @@ export default function CalculatorReducerePage() {
           <h2 className="text-xl font-black mb-2">Ai calculat. Acum gaseste reducerea.</h2>
           <p className="text-[#9399a0] mb-4">
             Urmarim {cuPromotie} magazine cu promotii active, dintre care {cuCod} au si un cod de
-            reducere verificat.
+            reducere activ.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link

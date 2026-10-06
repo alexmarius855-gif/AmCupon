@@ -308,7 +308,7 @@ export default async function OferteAziPage(
               }
             </h1>
             <p className="text-[#c9ced5] text-lg mb-8 max-w-xl mx-auto">
-              {oferteFiltrate.length} promotii active la {nrMagazine} magazine. Verificate si sortate dupa valoare.
+              {oferteFiltrate.length} promotii active la {nrMagazine} magazine, sortate dupa valoare.
             </p>
 
             <div className="flex flex-wrap justify-center gap-3">

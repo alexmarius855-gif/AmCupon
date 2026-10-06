@@ -120,7 +120,7 @@ const OCAZII: Record<string, {
     titlu: "Cadouri de Craciun",
     titluMeta: "Cadouri de Craciun 2026 — Idei pentru Toata Familia",
     desc: "Cadouri pentru intreaga familie — de la copii la adulti, pentru orice buget",
-    descMeta: "Idei cadouri Craciun 2026: jucarii, bijuterii, gadgeturi, fashion. Oferte speciale din 1000+ magazine. Livrare inainte de Craciun.",
+    descMeta: "Idei cadouri Craciun 2026: jucarii, bijuterii, gadgeturi, fashion. Oferte de la magazinele partenere AmCupon.",
     emoji: "🎄",
     from: "#16a34a", to: "#dc2626",
     catSluguri: ["bijuterii", "auto", "electronice", "sport", "fashion"],
@@ -170,7 +170,7 @@ const OCAZII: Record<string, {
     titlu: "Cadouri sub 100 Lei",
     titluMeta: "Cadouri sub 100 Lei 2026 — Idei Ieftine si Originale",
     desc: "Cadouri frumoase si originale cu un buget de maxim 100 lei — bijuterii, accesorii, fashion",
-    descMeta: "Idei cadouri sub 100 lei: bijuterii, accesorii, fashion. Cadouri originale la pret mic din 1000+ magazine. Livrare Romania.",
+    descMeta: "Idei cadouri sub 100 lei: bijuterii, accesorii, fashion. Cadouri originale la pret mic, de la magazinele partenere AmCupon.",
     emoji: "💰",
     from: "#22c55e", to: "#10b981",
     catSluguri: ["bijuterii", "fashion", "sport"],
@@ -389,7 +389,7 @@ export default async function CadouriSlugPage({
                 <span className="text-emerald-400">✓</span> {products.length}+ produse disponibile
               </span>
               <span className="flex items-center gap-1.5 bg-[#1f2329]/80 border border-[#2a2f36] text-[#c9ced5] px-3 py-1.5 rounded-full">
-                <span className="text-[#ddf93c]">✓</span> Preturi verificate azi
+                <span className="text-[#ddf93c]">✓</span> Prețuri din feed-ul magazinelor
               </span>
               <span className="flex items-center gap-1.5 bg-[#1f2329]/80 border border-[#2a2f36] text-[#c9ced5] px-3 py-1.5 rounded-full">
                 <span className="text-[#c3dd2c]">✓</span> Livrare Romania

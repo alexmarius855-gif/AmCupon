@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import { pesteMagazine } from "@/lib/cifreSite";
 
 export const metadata: Metadata = {
   title: "Idei Cadouri 2026 — Cadouri pentru Orice Ocazie | AmCupon.ro",
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://amcupon.ro/cadouri" },
   openGraph: {
     title: "Idei Cadouri pentru Orice Ocazie | AmCupon.ro",
-    description: "Cadouri botez, nasi, Valentine, Craciun, nastere — idei originale cu preturi reale din 1000+ magazine romanesti.",
+    description: `Cadouri botez, nasi, Valentine, Craciun, nastere — idei cu preturi reale de la ${pesteMagazine()} partenere.`,
     url: "https://amcupon.ro/cadouri",
     siteName: "AmCupon.ro",
     locale: "ro_RO",
@@ -68,7 +69,7 @@ export default function CadouriPage() {
           </h1>
           <p className="text-[#c9ced5] text-base mb-6 max-w-xl mx-auto">
             De la botez la Craciun, de la nasi la mama — gasesti cadoul perfect
-            din <span className="text-[#ffffff] font-bold">1000+ magazine</span> partenere cu livrare in Romania.
+            de la <span className="text-[#ffffff] font-bold">{pesteMagazine()}</span> partenere.
           </p>
           <div className="flex flex-wrap justify-center gap-3 text-sm">
             {[

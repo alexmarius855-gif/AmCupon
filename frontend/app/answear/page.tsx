@@ -1,7 +1,7 @@
 import { Metadata } from "next";
-import BrandPageTemplate from "../components/BrandPageTemplate";
+import BrandPageTemplate, { metadataBrand } from "../components/BrandPageTemplate";
 
-export const metadata: Metadata = {
+const META: Metadata = {
   title: "Cod Reducere Answear — Oferte Fashion Online 2026",
   description: "Coduri de reducere Answear actualizate zilnic. Reduceri la haine, incaltaminte si accesorii de brand. Promotii Answear.ro verificate.",
   keywords: ["cod reducere answear", "answear reduceri", "answear promotii", "haine online reduceri", "answear discount"],
@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
+// Metadata cu reparare automata: daca magazinul iese din output.json, pagina devine onesta
+// si noindex (vezi metadataBrand in BrandPageTemplate.tsx).
+export async function generateMetadata(): Promise<Metadata> {
+  return metadataBrand({ slug: "answear.ro", slugAlt: "answear", name: "Answear", canonical: "/answear" }, META);
+}
 
 export default function AnswearPage() {
   return (

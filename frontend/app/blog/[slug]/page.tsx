@@ -9,6 +9,10 @@ import path from "path";
 import { canonicalArticol, construiesteIndexMagazine } from "../../../lib/blogCanonical";
 import type { IndexableProdus } from "../../../lib/seoIndexable";
 import { numeAfisat } from "@/lib/numeMagazin";
+import { pesteMagazine } from "@/lib/cifreSite";
+import { temaArticol, NUME_TEME } from "@/lib/topFeed";
+import { sectiunePentru, dataFeed } from "@/lib/oferteTema";
+import OferteParteneri from "../../components/OferteParteneri";
 
 interface BlogPost {
   slug: string;
@@ -53,6 +57,50 @@ function magazineIndexabile(): Set<string> {
   }
 }
 
+
+interface MagazinDate {
+  magazin: string;
+  are_promotie?: boolean;
+  promotii?: unknown[];
+}
+
+let _magazineCache: Map<string, MagazinDate> | null = null;
+let _paginiMagazinCache: Set<string> | null = null;
+
+/** Magazinele din output.json, dupa slug — o singura citire per proces de build. */
+function magazineDupaSlug(): Map<string, MagazinDate> {
+  if (_magazineCache) return _magazineCache;
+  try {
+    const lista: MagazinDate[] = JSON.parse(
+      fs.readFileSync(path.join(process.cwd(), "public", "output.json"), "utf-8")
+    );
+    _magazineCache = new Map(lista.map((m) => [m.magazin, m]));
+  } catch {
+    _magazineCache = new Map();
+  }
+  return _magazineCache;
+}
+
+/**
+ * Magazinele care AU pagina /cod-reducere/<slug>: aceeasi lista ca generateStaticParams din
+ * app/cod-reducere/[magazin]/page.tsx (output.json + magazinele fara livrare in Romania).
+ * 06.10.2026: articolul „Cod Reducere Librex" lega de doua ori spre /cod-reducere/librex.ro dupa
+ * ce magazinul iesise din date — 404, prins de verifica_site.py --html.
+ */
+function paginiMagazin(): Set<string> {
+  if (_paginiMagazinCache) return _paginiMagazinCache;
+  const s = new Set(magazineDupaSlug().keys());
+  try {
+    const fara = JSON.parse(
+      fs.readFileSync(path.join(process.cwd(), "public", "magazine-fara-livrare-ro.json"), "utf-8")
+    ) as { magazin: string }[];
+    for (const m of fara) s.add(m.magazin);
+  } catch {
+    // fara fisier: raman doar magazinele din output.json
+  }
+  _paginiMagazinCache = s;
+  return s;
+}
 
 function formatDate(dateStr: string): string {
   return new Date(dateStr).toLocaleDateString("ro-RO", {
@@ -216,7 +264,13 @@ export async function generateMetadata({
   // Articol auto-generat despre un magazin fara nicio promotie activa = continut subtire,
   // aproape identic intre articole (doar numele magazinului difera). Scos din index ca sa
   // nu deprecieze semnalul de calitate al site-ului pentru cele cu continut real.
-  const faraPromoActiva = /\b0 promotii active\b/.test(post.excerpt);
+  // 06.10.2026: decizia vine din DATE (output.json), nu din textul descrierii. Descrierea
+  // s-a reformulat („Acum nu e nicio promotie X activa"), iar regula veche, pe „0 promotii
+  // active", ar fi facut indexabile toate paginile subtiri. Regex-ul ramane pentru datele vechi.
+  const mag = post.magazin ? magazineDupaSlug().get(post.magazin) : undefined;
+  const faraPromoActiva =
+    /\b0 promotii active\b/.test(post.excerpt) ||
+    (post.tip === "magazin" && !(mag?.are_promotie && (mag.promotii?.length ?? 0) > 0));
   return {
     // post.title include deja " | AmCupon.ro" (vezi generate_blog.py) — nu re-adauga,
     // altfel titlul apare dublat in tab/SERP ("... | AmCupon.ro | AmCupon.ro")
@@ -253,6 +307,14 @@ export default async function ArticolPage({
   const posts = loadPosts();
   const post = posts.find((p) => p.slug === slug);
   if (!post) notFound();
+
+  // Ofertele de azi sub articolele „Cel mai bun X" (lib/topFeed.ts -> ARTICOLE_TEME).
+  const temaArt = temaArticol(post.slug);
+  const sectiune = temaArt
+    ? sectiunePentru(temaArt.tema, { filtru: temaArt.filtru, minMagazine: temaArt.minMagazine })
+    : null;
+  const esteRecomandare = /^(cel|cea|cele|cei)-mai-bun|^cum-alegi-/.test(post.slug);
+  const areMagazinPagina = !!post.magazin && paginiMagazin().has(post.magazin);
 
   // Articole din aceeasi categorie sau cu acelasi magazin (prioritate relevanta)
   const altePosts = [
@@ -351,9 +413,13 @@ export default async function ArticolPage({
             {post.magazin && (
               <>
                 <span>·</span>
-                <a href={`/cod-reducere/${post.magazin}`} className="text-[#ddf93c] font-semibold hover:underline">
-                  {numeAfisat(post.magazin)}
-                </a>
+                {areMagazinPagina ? (
+                  <a href={`/cod-reducere/${post.magazin}`} className="text-[#ddf93c] font-semibold hover:underline">
+                    {numeAfisat(post.magazin)}
+                  </a>
+                ) : (
+                  <span className="font-semibold text-[#c9ced5]">{numeAfisat(post.magazin)}</span>
+                )}
               </>
             )}
           </div>
@@ -375,14 +441,37 @@ export default async function ArticolPage({
             {post.excerpt}
           </p>
 
+          {/* 05.10.2026: articolele de recomandare au fost scrise in mai–iunie 2026 (git:
+              generate_best_of.py), pe specificatii publice, fara ca cineva sa testeze produsele —
+              iar data din antet e cea a ultimei regenerari. Nota spune asta direct. */}
+          {esteRecomandare && (
+            <p className="text-xs text-[#9399a0] leading-relaxed mb-6 -mt-4">
+              Text editorial scris pe baza specificațiilor și a prețurilor publice; selecția modelelor e din
+              mai–iunie 2026, iar produsele nu le-am testat.{" "}
+              {sectiune ? (
+                <a href="#unde-cumperi" className="text-[#ddf93c] hover:underline">Prețurile de azi la magazinele partenere sunt la finalul articolului.</a>
+              ) : (
+                "Prețurile din text sunt orientative: verifică prețul actual în magazin."
+              )}
+            </p>
+          )}
+
           <div className="text-base">
             {renderContent(post.content)}
           </div>
 
-          {post.magazin && (
+          {sectiune && temaArt && (
+            <OferteParteneri
+              sectiune={sectiune}
+              numeTema={temaArt.nume || NUME_TEME[temaArt.tema] || temaArt.tema}
+              actualizat={dataFeed()}
+            />
+          )}
+
+          {post.magazin && areMagazinPagina && (
             <div className="mt-10 p-6 bg-gradient-to-r from-[#ddf93c] to-[#ddf93c] rounded-xl text-[#0c1000] text-center">
               <p className="font-black text-xl mb-2">Vezi toate promoțiile {numeAfisat(post.magazin)}</p>
-              <p className="text-[#2a2f10] text-sm mb-4">Coduri verificate, actualizate zilnic</p>
+              <p className="text-[#2a2f10] text-sm mb-4">Coduri și oferte actualizate de mai multe ori pe zi</p>
               <a href={`/cod-reducere/${post.magazin}`}
                 className="inline-block bg-[#14181c] text-[#c3dd2c] font-bold px-6 py-2.5 rounded-xl text-sm hover:bg-[#06080b] transition-colors">
                 Deschide pagina →
@@ -394,7 +483,7 @@ export default async function ArticolPage({
           <div className="mt-10 p-6 bg-[#06080b] rounded-xl text-center">
             <p className="text-sm font-black text-[#ddf93c] uppercase tracking-widest mb-2">Newsletter gratuit</p>
             <h3 className="text-xl font-black text-[#ffffff] mb-2">Primeste coduri noi direct pe email</h3>
-            <p className="text-[#c9ced5] text-sm mb-5">1000+ magazine monitorizate zilnic. Zero spam.</p>
+            <p className="text-[#c9ced5] text-sm mb-5">Ofertele active de la {pesteMagazine()}, o dată pe zi. Fără spam.</p>
             <Link href="/newsletter"
               className="inline-flex items-center gap-2 bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] font-bold px-6 py-3 rounded-xl text-sm transition-colors">
               Aboneaza-te gratuit &rarr;

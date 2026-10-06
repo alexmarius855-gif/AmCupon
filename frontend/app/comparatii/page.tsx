@@ -2,10 +2,11 @@ import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
 import Link from "next/link";
+import { pesteMagazine } from "@/lib/cifreSite";
 
 export const metadata: Metadata = {
   title: "Comparatii Magazine Online Romania 2026 — AmCupon.ro",
-  description: "Compara cele mai mari magazine online din Romania: eMAG vs Temu, FashionDays vs Answear, Libris vs Carturesti si multe altele. Coduri de reducere verificate zilnic.",
+  description: "Comparatii intre magazine online din Romania, cu ofertele si codurile de reducere active la fiecare. Actualizate zilnic.",
   alternates: { canonical: "https://amcupon.ro/comparatii" },
 };
 
@@ -124,7 +125,7 @@ export default function ComparatiiPage() {
           <div className="mt-12 text-center bg-[#14181c] border border-[#1f2329] rounded-xl p-8">
             <h2 className="text-xl font-bold text-[#ffffff] mb-2">Cauti un cod de reducere specific?</h2>
             <p className="text-[#c9ced5] text-sm mb-5">
-              AmCupon.ro verifica zilnic codurile si ofertele de la peste 1000 magazine din Romania.
+              AmCupon.ro actualizează de mai multe ori pe zi codurile și ofertele de la {pesteMagazine()} partenere.
             </p>
             <Link
               href="/toate-magazinele"

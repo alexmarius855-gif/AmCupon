@@ -1,7 +1,7 @@
 import { Metadata } from "next";
-import BrandPageTemplate from "../components/BrandPageTemplate";
+import BrandPageTemplate, { metadataBrand } from "../components/BrandPageTemplate";
 
-export const metadata: Metadata = {
+const META: Metadata = {
   title: "Cod Reducere Notino — Oferte Parfumuri si Cosmetice 2026",
   description: "Coduri de reducere Notino actualizate zilnic. Reduceri la parfumuri, cosmetice si produse de ingrijire de la branduri premium. Promotii Notino verificate.",
   keywords: ["cod reducere notino", "notino reduceri", "notino promotii", "parfumuri online reduceri", "notino discount"],
@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
+// Metadata cu reparare automata: daca magazinul iese din output.json, pagina devine onesta
+// si noindex (vezi metadataBrand in BrandPageTemplate.tsx).
+export async function generateMetadata(): Promise<Metadata> {
+  return metadataBrand({ slug: "notino.ro", slugAlt: "notino", name: "Notino", canonical: "/notino" }, META);
+}
 
 export default function NotinoPage() {
   return (

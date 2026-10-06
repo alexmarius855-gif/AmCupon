@@ -6,6 +6,8 @@ import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
 import { esteInCategorie } from "../../lib/categoriiNisa";
+import { laParteneri } from "@/lib/cifreSite";
+import { NISA_CATEGORII } from "@/lib/categoriiNisa";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -16,7 +18,7 @@ interface Magazin {
 
 export const metadata: Metadata = {
   title: "Cod Reducere Cărți Online România 2026 — Libris, Elefant",
-  description: "Coduri de reducere cărți online România: Libris, Elefant, Carturesti, eMag Books. Cărți, audiobook-uri, e-book-uri la prețuri reduse. Verificate zilnic.",
+  description: `Coduri de reducere cărți online ${laParteneri(NISA_CATEGORII.carti)}. Cărți, audiobook-uri, e-book-uri la prețuri reduse. Actualizate zilnic.`,
   keywords: ["cod reducere carti", "reduceri libris", "carti ieftine online", "cod reducere elefant", "carturesti reducere", "carti online romania", "audiobook reducere"],
   alternates: { canonical: "https://amcupon.ro/carti" },
   openGraph: { title: "Cărți Online cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/carti", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
@@ -65,7 +67,7 @@ export default function CartiPage() {
             <div className="text-5xl mb-4">📚</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Cărți Online cu Reducere {an}</h1>
             <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              Coduri de reducere verificate la Libris, Elefant, Cărturești și alte librării online din România
+              Coduri de reducere și oferte {laParteneri(NISA_CATEGORII.carti, 3)} și la alte librării partenere
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Ficțiune","Non-ficțiune","Cărți copii","Manuale","Audiobook","E-book"].map(c => (

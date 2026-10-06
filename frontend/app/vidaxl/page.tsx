@@ -1,7 +1,7 @@
 import { Metadata } from "next";
-import BrandPageTemplate from "../components/BrandPageTemplate";
+import BrandPageTemplate, { metadataBrand } from "../components/BrandPageTemplate";
 
-export const metadata: Metadata = {
+const META: Metadata = {
   title: "Cod Reducere vidaXL — Oferte Mobilier 2026 | AmCupon.ro",
   description: "Coduri de reducere vidaXL actualizate zilnic. Reduceri la mobilier, gradina, sport, auto si electronice. Promotii vidaXL verificate.",
   keywords: ["cod reducere vidaxl", "vidaxl reduceri", "vidaxl promotii", "mobilier ieftin online", "vidaxl discount"],
@@ -16,6 +16,12 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
+// Metadata cu reparare automata: daca magazinul iese din output.json, pagina devine onesta
+// si noindex (vezi metadataBrand in BrandPageTemplate.tsx).
+export async function generateMetadata(): Promise<Metadata> {
+  return metadataBrand({ slug: "vidaxl.ro", slugAlt: "vidaxl", name: "vidaXL", canonical: "/vidaxl" }, META);
+}
 
 export default function VidaxlPage() {
   return (
@@ -45,6 +51,7 @@ export default function VidaxlPage() {
         { q: "Cat de buna este calitatea produselor vidaXL?", a: "vidaXL ofera calitate buna raportat la pret. Produsele din categoriile gradina si sport au recenzii in general bune. Mobilierul interior e functional si accesibil, nu premium." },
       ],
       canonical: "/vidaxl",
+      categorieSlug: "casa-gradina",
     }} />
   );
 }

@@ -6,6 +6,8 @@ import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
 import { esteInCategorie } from "../../lib/categoriiNisa";
+import { laParteneri } from "@/lib/cifreSite";
+import { NISA_CATEGORII } from "@/lib/categoriiNisa";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -16,7 +18,7 @@ interface Magazin {
 
 export const metadata: Metadata = {
   title: "Reduceri Vacanțe & Călătorii 2026 — Bilete, Hotel, Troller",
-  description: "Coduri de reducere vacanțe și travel 2026: Booking, eMag Vacante, bilete avion, trollere Samsonite. Reduceri verificate pentru vacanță ieftină în România și Europa.",
+  description: `Coduri de reducere vacanțe și travel 2026 ${laParteneri(NISA_CATEGORII.calatorie)}. Reduceri active pentru vacanță ieftină.`,
   keywords: ["reduceri vacante", "cod reducere booking", "vacanta ieftina romania 2026", "bilete avion reducere", "hotel reducere", "troller reducere", "travel reducere romania"],
   alternates: { canonical: "https://amcupon.ro/calatorie" },
   openGraph: { title: "Reduceri Vacanțe & Călătorii 2026 | AmCupon.ro", url: "https://amcupon.ro/calatorie", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },

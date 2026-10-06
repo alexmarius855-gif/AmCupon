@@ -1,13 +1,19 @@
 import { Metadata } from "next";
-import BrandPageTemplate from "../components/BrandPageTemplate";
+import BrandPageTemplate, { metadataBrand } from "../components/BrandPageTemplate";
 
-export const metadata: Metadata = {
+const META: Metadata = {
   title: "Cod Reducere Automobilus — Piese si Accesorii Auto 2026",
   description: "Coduri de reducere Automobilus actualizate zilnic. Reduceri la piese auto, accesorii si consumabile. Promotii Automobilus verificate.",
   keywords: ["cod reducere automobilus", "automobilus reduceri", "piese auto reduceri", "automobilus promotii", "automobilus discount"],
   alternates: { canonical: "https://amcupon.ro/cod-reducere/automobilus.ro" },
   openGraph: { title: "Reduceri Automobilus Auto 2026 | AmCupon.ro", url: "https://amcupon.ro/automobilus", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
 };
+
+// Metadata cu reparare automata: daca magazinul iese din output.json, pagina devine onesta
+// si noindex (vezi metadataBrand in BrandPageTemplate.tsx).
+export async function generateMetadata(): Promise<Metadata> {
+  return metadataBrand({ slug: "automobilus.ro", slugAlt: "automobilus", name: "Automobilus", canonical: "/automobilus" }, META);
+}
 
 export default function AutomobilusPage() {
   return (

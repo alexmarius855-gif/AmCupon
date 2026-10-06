@@ -1,7 +1,7 @@
 import { Metadata } from "next";
-import BrandPageTemplate from "../components/BrandPageTemplate";
+import BrandPageTemplate, { metadataBrand } from "../components/BrandPageTemplate";
 
-export const metadata: Metadata = {
+const META: Metadata = {
   title: "Cod Reducere Banggood Romania 2026 — Gadgeturi & Electronice",
   description: "Coduri reducere Banggood Romania actualizate zilnic. Gadgeturi, electronice, unelte si jucarii RC la preturi mici directe de la producatori. Promotii Banggood verificate.",
   keywords: ["cod reducere banggood", "banggood romania reduceri", "banggood discount", "banggood voucher", "gadgeturi ieftine banggood", "banggood promotii"],
@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
+// Metadata cu reparare automata: daca magazinul iese din output.json, pagina devine onesta
+// si noindex (vezi metadataBrand in BrandPageTemplate.tsx).
+export async function generateMetadata(): Promise<Metadata> {
+  return metadataBrand({ slug: "banggood.com", slugAlt: "banggood", name: "Banggood", canonical: "/banggood" }, META);
+}
 
 export default function BanggoodPage() {
   return (
@@ -46,6 +52,7 @@ export default function BanggoodPage() {
         { q: "Pot returna produse de la Banggood?", a: "Banggood ofera garantie de 3-12 luni si retur in 30 de zile pentru produse defecte. Produsele trebuie returnate in starea originala. Pentru produse defecte, Banggood ofera de obicei inlocuire sau rambursare fara retur fizic (in functie de valoare)." },
       ],
       canonical: "/banggood",
+      categorieSlug: "electronice",
     }} />
   );
 }

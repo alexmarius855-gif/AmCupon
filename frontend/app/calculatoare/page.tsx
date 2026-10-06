@@ -146,7 +146,7 @@ export default function CalculatoarePage() {
           <h2 className="text-xl font-black mb-2">Și ce urmează după calcul</h2>
           <p className="text-[#9399a0] mb-4">
             Urmărim {cuPromotie} magazine cu promoții active, dintre care {cuCod} au și un cod de
-            reducere verificat.
+            reducere activ.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
