@@ -20,6 +20,19 @@ const nextConfig: NextConfig = {
     minimumCacheTTL: 60 * 60 * 24 * 30,
   },
 
+  // ── Ce intra in functiile serverless ─────────────────────────────────────
+  // 06.10.2026: deploy-urile au inceput sa pice cu „The Vercel Function "blog" is 258.85mb
+  // uncompressed which exceeds the maximum uncompressed size limit of 250mb" — site-ul ramasese
+  // pe versiunea de ieri. Paginile citesc JSON-uri din public/ cu path.join(process.cwd(),
+  // "public", ...), iar tracer-ul nu poate sti care fisier, deci baga TOT public/ in fiecare
+  // functie dinamica: 2.306 fisiere, din care 218 MB coperti PNG de articol, care cresc cu
+  // fiecare articol nou. Imaginile le serveste CDN-ul; nicio functie nu citeste o imagine
+  // (verificat: toate citirile din fs sunt JSON). JSON-urile raman in functii.
+  // `"/*"` prinde toate rutele (Next potriveste cheia cu picomatch `contains: true`).
+  outputFileTracingExcludes: {
+    "/*": ["public/**/*.{png,jpg,jpeg,webp,gif,avif,svg,ico,mp4,webm,mp3,woff,woff2,ttf,otf,pdf,zip}"],
+  },
+
   // ── Redirecturi permanente ──────────────────────────────────────────────
   // Lista traieste in `lib/redirecturi.ts`, ca sa fie ACEEASI sursa citita si de
   // `app/sitemap.ts`. Doua liste manuale au divergat odata (21.08.2026: 7 URL-uri
