@@ -7,6 +7,7 @@ import { useCopyCod } from "../hooks/useCopyCod";
 import RedirectModal from "./RedirectModal";
 import { calculateDealScore, DEAL_SCORE_VISIBLE_THRESHOLD } from "../../lib/dealScore";
 import { linkAfiliat, linkPromotie } from "@/lib/linkMagazin";
+import { maskCod } from "@/lib/maskCod";
 export { numeAfisat } from "@/lib/numeMagazin";
 import { numeAfisat } from "@/lib/numeMagazin";
 
@@ -55,12 +56,7 @@ function areTransportGratuit(promo?: CardPromotie): boolean {
 
 // Doar ultimele doua caractere — aceeasi regula ca in CuponCard (23.09.2026). Varianta veche
 // arata PRIMELE patru („LAMO****" pentru LAMODA20), destul cat sa ghicesti codul fara clic,
-// deci fara comision; si un cod de 4 caractere aparea intreg, in clar.
-function maskCod(cod: string): string {
-  if (!cod) return cod;
-  const coada = cod.length > 3 ? cod.slice(-2) : "";
-  return "*".repeat(Math.max(3, Math.min(cod.length - coada.length, 6))) + coada;
-}
+// deci fara comision; si un cod de 4 caractere aparea intreg, in clar. Regula sta in lib/maskCod.ts.
 
 /**
  * Card de magazin reutilizabil — logo cu fallback in cascada (logo_url -> favicon

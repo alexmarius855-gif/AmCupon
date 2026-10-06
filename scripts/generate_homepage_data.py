@@ -396,6 +396,19 @@ def gen_nav_index():
     with open(NAV_SRC, encoding="utf-8") as f:
         magazine = json.load(f)
 
+    # Ticker-ul de sus (AnuntAnimat.tsx), pe FIECARE pagina. Pana pe 06.10.2026 lua „primele 8
+    # magazine cu cod": 23 din cele 24 erau straine (hoteluri din Spania si Hong Kong, tvcmall,
+    # extensii de par din SUA), cu promotii in engleza — primul lucru vazut pe un site romanesc.
+    # Acum: parteneri romanesti (2Performant sau .ro) cu promotie activa si link platit, cei cu cod
+    # primii, apoi dupa scor. Componenta arata codul MASCAT si duce la pagina magazinului.
+    re_tracking = re.compile(r"2performant|pxf\.io|sjv\.io|impactradius|impact\.com|awin1|anrdoezrs|prf\.hn|tradedoubler", re.I)
+    candidati = [m for m in magazine
+                 if (m.get("platforma") == "2performant" or (m.get("magazin") or "").endswith(".ro"))
+                 and m.get("are_promotie") and m.get("promotii")
+                 and re_tracking.search(m.get("url_afiliat") or "")]
+    candidati.sort(key=lambda m: (not m.get("cod_cupon"), -(m.get("scor_final") or 0), m.get("magazin", "")))
+    in_ticker = {m["magazin"] for m in candidati[:8]}
+
     index = []
     for m in magazine:
         item = {
@@ -405,8 +418,8 @@ def gen_nav_index():
             "cod_cupon":    bool(m.get("cod_cupon")),
             "promotii":     [],
         }
-        # Doar magazinele cu cod cupon au nevoie de detalii promo (pentru ticker)
-        if m.get("cod_cupon") and m.get("promotii"):
+        # Detalii promo: magazinele cu cod (cautarea numara codurile) si cele din ticker.
+        if m.get("promotii") and (m.get("cod_cupon") or m.get("magazin") in in_ticker):
             promo = next((p for p in m["promotii"] if p.get("cod_cupon")), m["promotii"][0])
             item["url_afiliat"] = m.get("url_afiliat", "")
             item["promotii"] = [{
@@ -414,6 +427,8 @@ def gen_nav_index():
                 "nume":         promo.get("nume", ""),
                 "landing_page": promo.get("landing_page", ""),
             }]
+        if m.get("magazin") in in_ticker:
+            item["ticker"] = True
         index.append(item)
 
     with open(NAV_OUT, "w", encoding="utf-8") as f:

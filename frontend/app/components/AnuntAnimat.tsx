@@ -1,6 +1,8 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
+import { maskCod } from "@/lib/maskCod";
+import { numeAfisat } from "@/lib/numeMagazin";
 
 interface Promotie {
   cod_cupon: string;
@@ -14,6 +16,8 @@ interface Magazin {
   promotii: Promotie[];
   are_promotie: boolean;
   cod_cupon: boolean;
+  /** ales de scripts/generate_homepage_data.py: partener romanesc, promotie activa, link platit */
+  ticker?: boolean;
 }
 
 interface AnuntItem {
@@ -29,7 +33,8 @@ const MESAJE_STATICE: AnuntItem[] = [
   // era exact textul pe care Google il vedea in HTML-ul server-side, pe FIECARE pagina.
   { text: "Magazine partenere — coduri actualizate zilnic", href: "/toate-magazinele", emoji: "🛍️" },
   { text: "Extensie Chrome — in curs de lansare, anunta-te acum", href: "/extensie", emoji: "🧩" },
-  { text: "Newsletter gratuit — top 5 oferte zilnic pe email", href: "/newsletter", emoji: "📬" },
+  // „top 5 oferte zilnic" era fals: send_newsletter.py trimite pana la 20 (--n 20), o data pe zi.
+  { text: "Newsletter gratuit — ofertele zilei, o dată pe zi pe email", href: "/newsletter", emoji: "📬" },
 ];
 
 export default function AnuntAnimat() {
@@ -42,32 +47,34 @@ export default function AnuntAnimat() {
       .then((r) => r.json())
       .then((data: Magazin[]) => {
         const promoItems: AnuntItem[] = [];
-        // Top 8 magazine cu cod cupon
-        const cuCod = data
-          .filter((m) => m.cod_cupon && m.promotii.length > 0)
+        // 06.10.2026: „primele 8 magazine cu cod" insemna 23 de magazine straine din 24 (hoteluri
+        // din Spania si Hong Kong, tvcmall), promotii in engleza si codul INTREG pe fiecare pagina.
+        // Acum: partenerii romanesti alesi de generate_homepage_data.py (`ticker`), cei cu cod
+        // primii; textul e numele promotiei, cum l-a scris magazinul — fara reformulari care ar
+        // putea exagera („-20% la colectia Puma" nu devine „20% reducere"); codul, mascat; linkul,
+        // spre pagina magazinului, unde codul se vede intreg si clicul trece prin linkul afiliat.
+        const alese = data
+          .filter((m) => m.ticker && m.promotii.length > 0)
+          .sort((a, b) => Number(!!b.promotii[0]?.cod_cupon) - Number(!!a.promotii[0]?.cod_cupon))
           .slice(0, 8);
 
-        for (const m of cuCod) {
-          const promo = m.promotii.find((p) => p.cod_cupon) || m.promotii[0];
-          if (!promo) continue;
-          const nume = m.magazin.split(".")[0].replace(/-/g, " ")
-            .split(" ").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
-          const discount = promo.nume?.match(/(\d+)\s*%/)?.[0];
+        for (const m of alese) {
+          const promo = m.promotii[0];
           promoItems.push({
-            text: discount
-              ? `${nume} — ${discount} reducere cu cod`
-              : `${nume} — cod reducere activ`,
-            cod: promo.cod_cupon,
-            href: promo.landing_page || m.url_afiliat || `/cod-reducere/${m.magazin}`,
+            text: `${numeAfisat(m.magazin)}: ${promo.nume}`,
+            cod: promo.cod_cupon ? maskCod(promo.cod_cupon) : undefined,
+            href: `/cod-reducere/${m.magazin}`,
             emoji: "🔥",
           });
         }
 
-        // Numar real de magazine din nav-index.json (nu hardcodat)
+        // Numar real de magazine din nav-index.json, rotunjit IN JOS la suta (ca pesteMagazine()
+        // din lib/cifreSite.ts). „958 magazine partenere" era fals: 19 n-au link platit.
         const totalMagazine = Array.isArray(data) ? data.length : 0;
-        const statice: AnuntItem[] = totalMagazine > 0
+        const sute = Math.floor(totalMagazine / 100) * 100;
+        const statice: AnuntItem[] = totalMagazine >= 100
           ? [
-              { text: `${totalMagazine} magazine partenere — coduri actualizate zilnic`, href: "/toate-magazinele", emoji: "🛍️" },
+              { text: `${totalMagazine > sute ? `Peste ${sute}` : sute} de magazine — oferte actualizate zilnic`, href: "/toate-magazinele", emoji: "🛍️" },
               ...MESAJE_STATICE.slice(1),
             ]
           : MESAJE_STATICE;
@@ -96,19 +103,20 @@ export default function AnuntAnimat() {
     <div className="bg-[#14181c] border-b border-[#1f2329] text-[#c9ced5] text-xs font-semibold py-2 px-4 text-center flex items-center justify-center gap-3 min-h-[34px]">
       {/* Mesaj rotativ */}
       <div
-        className="flex items-center gap-2 transition-all duration-300"
+        className="flex items-center gap-2 min-w-0 transition-all duration-300"
         style={{ opacity: visible ? 1 : 0, transform: visible ? "translateY(0)" : "translateY(-6px)" }}
       >
         <span className="text-sm">{item?.emoji}</span>
+        {/* Textul se taie cu „…", badge-ul cu codul nu: numele promotiilor vin din retea si pot fi lungi. */}
         <a
           href={item?.href ?? "/"}
-          className="hover:underline truncate max-w-[280px] sm:max-w-none"
+          className="hover:underline flex items-center gap-1.5 min-w-0"
           rel={item?.href?.startsWith("http") ? "noopener noreferrer sponsored" : undefined}
           target={item?.href?.startsWith("http") ? "_blank" : undefined}
         >
-          {item?.text}
+          <span className="truncate max-w-[230px] sm:max-w-[520px]">{item?.text}</span>
           {item?.cod && (
-            <span className="ml-1.5 bg-[#ddf93c] text-[#0c1000] px-1.5 py-0.5 rounded font-black tracking-wider">
+            <span className="shrink-0 bg-[#ddf93c] text-[#0c1000] px-1.5 py-0.5 rounded font-black tracking-wider">
               {item.cod}
             </span>
           )}
