@@ -727,23 +727,23 @@ export default async function PaginaMagazin({
    */
   const pasiFolosire: { titlu: string; text: string }[] = [
     {
-      titlu: `Copiaza codul de pe pagina ${nume}`,
+      titlu: `Copiază codul de pe pagina ${nume}`,
       // Pe pagina fara cod, singurul cod „de mai sus" e acum al unui magazin SIMILAR.
       text: nrCod > 0
-        ? `Apasa pe codul de reducere de mai sus. Se copiaza automat si te trimitem pe ${m.url} in acelasi timp.`
-        : `Cand apare un cod la ${nume}, il gasesti pe pagina asta: apesi pe el, se copiaza automat si te trimitem pe ${m.url}.`,
+        ? `Apasă pe codul de reducere de mai sus: se copiază automat și te trimitem pe ${m.url} în același timp.`
+        : `Când apare un cod la ${nume}, îl găsești pe pagina asta: apeși pe el, se copiază automat și te trimitem pe ${m.url}.`,
     },
     {
-      titlu: "Adauga produsele in cos",
-      text: `Alege ce vrei sa cumperi de pe ${m.url} si mergi la finalizarea comenzii. Codul nu se aplica in cos, ci la ultimul pas.`,
+      titlu: "Adaugă produsele în coș",
+      text: `Alege ce vrei să cumperi de pe ${m.url} și mergi la finalizarea comenzii. Codul nu se aplică în coș, ci la ultimul pas.`,
     },
     {
-      titlu: "Lipeste codul la finalizarea comenzii",
-      text: 'Cauta campul "Cod promotional", "Voucher" sau "Cod reducere" si lipeste codul copiat. Apasa Aplica.',
+      titlu: "Lipește codul la finalizarea comenzii",
+      text: 'Caută câmpul "Cod promoțional", "Voucher" sau "Cod reducere" și lipește codul copiat. Apasă Aplică.',
     },
     {
-      titlu: "Verifica reducerea inainte de plata",
-      text: "Totalul trebuie sa scada pe loc. Daca nu scade, codul poate fi expirat sau conditionat de o valoare minima a comenzii — incearca alt cod din lista.",
+      titlu: "Verifică reducerea înainte de plată",
+      text: "Totalul trebuie să scadă pe loc. Dacă nu scade, codul poate fi expirat sau condiționat de o valoare minimă a comenzii — încearcă alt cod din listă.",
     },
   ];
 
@@ -751,7 +751,7 @@ export default async function PaginaMagazin({
     "@context": "https://schema.org",
     "@type": "HowTo",
     name: `Cum aplici un cod de reducere pe ${nume}`,
-    description: `Pasii pentru a folosi un cod de reducere ${nume} la finalizarea comenzii.`,
+    description: `Pașii pentru a folosi un cod de reducere ${nume} la finalizarea comenzii.`,
     totalTime: "PT2M",
     step: pasiFolosire.map((p, i) => ({
       "@type": "HowToStep",

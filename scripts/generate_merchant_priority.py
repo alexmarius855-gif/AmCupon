@@ -34,8 +34,9 @@ def comision_pct(c: str) -> float:
     return max(nums) if nums else 0.0
 
 
-def nume_afisat(slug: str) -> str:
-    return " ".join(w.capitalize() for w in slug.split(".")[0].replace("-", " ").split())
+# Numele magazinului: scripts/nume_magazin.py, acelasi rezultat ca numeAfisat() din frontend
+# (06.10.2026 — copia naiva de aici scria „Drmax" pentru drmax.ro si „Us" pentru us.lemorele.com).
+from nume_magazin import nume_afisat  # noqa: E402
 
 
 def scor_castig(m: dict) -> float:

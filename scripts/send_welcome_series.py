@@ -46,6 +46,7 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
 # nu-l reimplementam, la fel cum fetch_impact_deals.py reutilizeaza fetch_impact_api.py.
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from send_newsletter import pick_top_n, get_best_promo, extrage_reducere  # noqa: E402
+from nume_magazin import nume_afisat  # noqa: E402 — acelasi nume ca pe site (06.10.2026)
 
 BREVO_API_KEY  = os.environ.get("BREVO_API_KEY", "")
 LIST_ID        = int(os.environ.get("BREVO_LIST_ID", "2"))
@@ -143,7 +144,7 @@ def _incarca_oferte(n: int) -> list:
     for m in top:
         promo = get_best_promo(m)
         rezultat.append({
-            "nume": (m.get("magazin") or "").split(".")[0].replace("-", " ").title(),
+            "nume": nume_afisat(m.get("magazin") or ""),
             "slug": m.get("magazin", ""),
             "cod": promo.get("cod_cupon", ""),
             "procent": extrage_reducere(m),

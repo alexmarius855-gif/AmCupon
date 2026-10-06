@@ -452,9 +452,9 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                 {/* ── Cum functioneaza (3 pasi) ─────────────────────────────────── */}
                 <div className="flex items-stretch gap-2 sm:gap-4 mb-7 bg-[#14181c]/60 border border-[#1f2329] rounded-xl p-4">
                   {[
-                    { nr: "1", icon: ClipboardCopy, titlu: "Copiaza codul", desc: "Click pe cod — se copiaza automat" },
-                    { nr: "2", icon: ShoppingCart, titlu: "Mergi la magazin", desc: `Te redirectam la ${nume}` },
-                    { nr: "3", icon: CheckCircle2, titlu: "Aplica la checkout", desc: `Lipeste codul in camp "Voucher"` },
+                    { nr: "1", icon: ClipboardCopy, titlu: "Copiază codul", desc: "Click pe cod — se copiază automat" },
+                    { nr: "2", icon: ShoppingCart, titlu: "Mergi la magazin", desc: `Te redirecționăm la ${nume}` },
+                    { nr: "3", icon: CheckCircle2, titlu: "Aplică la checkout", desc: `Lipește codul în câmpul "Voucher"` },
                   ].map((pas) => (
                     <div key={pas.nr} className="flex-1 flex flex-col items-center text-center gap-1.5 px-2">
                       <pas.icon className="w-5 h-5 text-[#ddf93c]" />

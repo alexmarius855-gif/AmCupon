@@ -61,7 +61,7 @@ export default function ReviewSection({ magazin }: { magazin: string }) {
     // aprobat: false il pune trimiteRecenzie — moderare manuala in Supabase dashboard
     const ok = await trimiteRecenzie({ magazin, nume: nume.trim() || "Anonim", stele, text: text.trim() });
     setSubmitting(false);
-    if (!ok) { setEroare("Eroare la trimitere. Incearca din nou."); return; }
+    if (!ok) { setEroare("Eroare la trimitere. Încearcă din nou."); return; }
     setTrimis(true);
     setStele(0); setNume(""); setText("");
   }
@@ -130,7 +130,7 @@ export default function ReviewSection({ magazin }: { magazin: string }) {
           <div className="text-center py-4">
             <div className="text-3xl mb-2">&#9989;</div>
             <p className="font-bold text-[#ffffff] text-sm">Multumim pentru recenzie!</p>
-            <p className="text-xs text-[#c9ced5] mt-1">Va aparea dupa aprobare (de obicei in 24h).</p>
+            <p className="text-xs text-[#c9ced5] mt-1">Va apărea după aprobare.</p>
             <button onClick={() => setTrimis(false)} className="mt-3 text-xs text-[#ddf93c] hover:underline">
               Adauga alta recenzie
             </button>
@@ -144,7 +144,7 @@ export default function ReviewSection({ magazin }: { magazin: string }) {
             <div>
               <input
                 type="text"
-                placeholder="Numele tau (optional)"
+                placeholder="Numele tău (opțional)"
                 value={nume}
                 onChange={e => setNume(e.target.value)}
                 maxLength={50}
@@ -153,7 +153,7 @@ export default function ReviewSection({ magazin }: { magazin: string }) {
             </div>
             <div>
               <textarea
-                placeholder="Experienta ta cu acest magazin... (minim 10 caractere)"
+                placeholder="Experiența ta cu acest magazin... (minim 10 caractere)"
                 value={text}
                 onChange={e => setText(e.target.value)}
                 rows={3}
@@ -172,7 +172,7 @@ export default function ReviewSection({ magazin }: { magazin: string }) {
               {submitting ? "Se trimite..." : "Trimite recenzia"}
             </button>
             <p className="text-[10px] text-[#9399a0] text-center">
-              Recenziile sunt moderate inainte de publicare.
+              Recenziile sunt moderate înainte de publicare.
             </p>
           </form>
         )}

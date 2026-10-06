@@ -74,13 +74,13 @@ export default function ContextMagazin({
             </dl>
 
             <p className="text-sm text-[#c9ced5] leading-relaxed">
-              Jumatate din produsele urmarite costa sub {lei(stat.pretMedian)}.
+              Jumătate din produsele urmărite costă sub {lei(stat.pretMedian)}.
               {stat.cuReducere > 0 && (
                 <> Chiar acum, <strong className="text-[#ffffff]">{stat.cuReducere}</strong>{" "}
-                  {stat.cuReducere === 1 ? "produs are" : "produse au"} pretul taiat fata de cel initial.</>
+                  {stat.cuReducere === 1 ? "produs are" : "produse au"} prețul tăiat față de cel inițial.</>
               )}{" "}
-              Pretul median spune mai mult decat cel mai mic pret afisat pe site:
-              arata unde se afla cu adevarat majoritatea produselor.
+              Prețul median spune mai mult decât cel mai mic preț afișat pe site:
+              arată unde se află cu adevărat majoritatea produselor.
             </p>
           </div>
         )}
@@ -88,23 +88,23 @@ export default function ContextMagazin({
         {/* ── Magazinul in categoria lui (toate magazinele) ─────────────────── */}
         {cat && (
           <div className="bg-[#14181c] border border-[#1f2329] rounded-xl p-5">
-            <h2 className="text-lg font-black text-[#ffffff] mb-1">{nume} fata de restul categoriei</h2>
+            <h2 className="text-lg font-black text-[#ffffff] mb-1">{nume} față de restul categoriei</h2>
             <p className="text-xs text-[#9399a0] mb-4">
-              Date din studiul nostru pe magazinele online din Romania.
+              Date din studiul nostru pe magazinele online din România.
             </p>
 
             <ul className="space-y-2.5 text-sm text-[#c9ced5] mb-4">
               <li className="flex justify-between gap-3 border-b border-[#1f2329] pb-2.5">
-                <span>Magazine urmarite in {numeCat}</span>
+                <span>Magazine urmărite în {numeCat}</span>
                 <strong className="text-[#ffffff] tabular-nums">{cat.magazine}</strong>
               </li>
               <li className="flex justify-between gap-3 border-b border-[#1f2329] pb-2.5">
-                <span>Cu promotie activa acum</span>
+                <span>Cu promoție activă acum</span>
                 <strong className="text-[#ffffff] tabular-nums">{cat.cu_promotie}</strong>
               </li>
               {cat.reducere_mediana !== null && (
                 <li className="flex justify-between gap-3">
-                  <span>Reducere tipica in categorie</span>
+                  <span>Reducere tipică în categorie</span>
                   <strong className="text-[#ddf93c] tabular-nums">{cat.reducere_mediana}%</strong>
                 </li>
               )}

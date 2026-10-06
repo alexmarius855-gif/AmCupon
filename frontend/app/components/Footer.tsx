@@ -10,13 +10,13 @@ import { MAGAZINE_POPULARE } from "@/lib/magazinePopulare";
 const CATEGORII = [
   { href: "/categorii/fashion",         label: "Fashion & Haine" },
   { href: "/categorii/electronice",     label: "Electronice & IT" },
-  { href: "/categorii/beauty",          label: "Frumusete & Beauty" },
-  { href: "/categorii/casa-gradina",    label: "Casa & Gradina" },
-  { href: "/categorii/sanatate",        label: "Sanatate & Farmacie" },
+  { href: "/categorii/beauty",          label: "Frumusețe & Beauty" },
+  { href: "/categorii/casa-gradina",    label: "Casă & Grădină" },
+  { href: "/categorii/sanatate",        label: "Sănătate & Farmacie" },
   { href: "/categorii/sport",           label: "Sport & Fitness" },
   { href: "/categorii/copii",           label: "Copii & Familie" },
   { href: "/categorii/auto-moto",       label: "Auto & Moto" },
-  { href: "/categorii/carti-educatie",  label: "Carti & Educatie" },
+  { href: "/categorii/carti-educatie",  label: "Cărți & Educație" },
   { href: "/categorii/bijuterii",       label: "Bijuterii & Ceasuri" },
 ];
 
@@ -29,9 +29,9 @@ export const REDUCERI = [
   { href: "/top-reduceri",    label: "Top reduceri" },
   { href: "/produse",         label: "Produse de la parteneri" },
   { href: "/black-friday",    label: "Black Friday" },
-  { href: "/craciun",         label: "Reduceri Craciun" },
+  { href: "/craciun",         label: "Reduceri Crăciun" },
   { href: "/idei-cadouri",    label: "Idei cadouri" },
-  { href: "/comparatii",      label: "Comparatii magazine" },
+  { href: "/comparatii",      label: "Comparații magazine" },
   // Nise care erau ORFANE — zero linkuri interne pe tot site-ul, deci Google le
   // gasea doar din sitemap si nu primeau niciun semnal de la restul paginilor.
   // Footer-ul apare pe toate cele ~100 de pagini, deci e cea mai ieftina reparatie.
@@ -39,12 +39,12 @@ export const REDUCERI = [
   { href: "/smart-home",      label: "Smart Home" },
   { href: "/antivirus",       label: "Antivirus & securitate" },
   { href: "/pescuit",         label: "Echipament pescuit" },
-  { href: "/rochii-mireasa",  label: "Rochii de mireasa" },
+  { href: "/rochii-mireasa",  label: "Rochii de mireasă" },
   { href: "/studiu/coduri-reducere-romania", label: "Studiu: coduri de reducere" },
   // Hub-ul de unelte (06.09) — el linkuieste mai departe catre /calculatoare/reducere
   // si /calculatoare/marimi, deci un singur link de aici le scoate pe toate trei
   // din starea de orfane. Aceeasi reparatie ca la nisele de mai sus.
-  { href: "/calculatoare",    label: "Calculatoare si unelte" },
+  { href: "/calculatoare",    label: "Calculatoare și unelte" },
 ];
 
 // Pentru utilizatori
@@ -56,15 +56,15 @@ const UTILIZATORI = [
   { href: "/despre-noi",       label: "Despre noi" },
   { href: "/contact",          label: "Contact" },
   { href: "/confidentialitate",label: "Politica GDPR" },
-  { href: "/termeni",          label: "Termeni si conditii" },
+  { href: "/termeni",          label: "Termeni și condiții" },
 ];
 
 // Pentru parteneri / magazine
 const PARTENERI = [
-  { href: "/despre-noi",       label: "Colaboreaza cu noi" },
-  { href: "/contact",          label: "Listeaza magazinul tau" },
+  { href: "/despre-noi",       label: "Colaborează cu noi" },
+  { href: "/contact",          label: "Listează magazinul tău" },
   { href: "/servicii",         label: "Servicii & Software" },
-  { href: "/asigurari",        label: "Asigurari RCA & CASCO" },
+  { href: "/asigurari",        label: "Asigurări RCA & CASCO" },
   { href: "/instrumente-seo",  label: "Instrumente marketing" },
 ];
 
@@ -141,8 +141,8 @@ export default function Footer({ magazineInDate }: { magazineInDate?: string[] }
               </svg>
             </div>
             <div>
-              <p className="text-[#ffffff] font-bold text-sm">Urmareste AmCupon.ro pe Facebook</p>
-              <p className="text-[#c9ced5] text-xs">Oferte zilnice, coduri exclusive si concursuri</p>
+              <p className="text-[#ffffff] font-bold text-sm">Urmărește AmCupon.ro pe Facebook</p>
+              <p className="text-[#c9ced5] text-xs">Pagina oficială AmCupon.ro</p>
             </div>
           </div>
           <a
@@ -154,7 +154,7 @@ export default function Footer({ magazineInDate }: { magazineInDate?: string[] }
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
               <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
             </svg>
-            Da Like paginii
+            Dă Like paginii
           </a>
         </div>
       </div>
@@ -165,7 +165,7 @@ export default function Footer({ magazineInDate }: { magazineInDate?: string[] }
           <div>
             <p className="text-[#ffffff] font-black text-lg">📧 Reduceri zilnice pe email</p>
             <p className="text-[#c9ced5] text-sm mt-0.5">
-              Fii primul care afla codurile active — gratuit, fara spam
+              Codurile active, pe email — gratuit, fără spam
             </p>
           </div>
           <div className="w-full sm:w-auto sm:min-w-[320px]">
@@ -185,8 +185,8 @@ export default function Footer({ magazineInDate }: { magazineInDate?: string[] }
               <span className="font-black text-[#ffffff] text-xl">Cupon<span className="text-[#ddf93c]">.ro</span></span>
             </Link>
             <p className="text-sm leading-relaxed text-[#9399a0] mb-5">
-              Coduri de reducere actualizate zilnic de la cele mai mari magazine online din Romania.
-              100% gratuit.
+              Coduri de reducere și oferte active de la magazinele partenere, actualizate zilnic.
+              Gratuit, fără cont.
             </p>
             {/* Social */}
             <div className="flex items-center gap-3">

@@ -92,8 +92,8 @@ def bloc_linkuri_interne(categorie_slug: str) -> str:
 
 
 def masca_cod(cod: str) -> str:
-    """Aceeasi masca ca maskCod() din frontend/app/components/MagazinCard.tsx: se vad doar ultimele
-    2 caractere. Primele 4, cat arata articolele pana pe 06.10.2026, ghiceau aproape orice cod scurt
+    """Aceeasi masca ca maskCod() din frontend/lib/maskCod.ts: se vad doar ultimele 2 caractere.
+    Primele 4, cat arata articolele pana pe 06.10.2026, ghiceau aproape orice cod scurt
     („TOAM****" = TOAMNA15) — iar codul intreg se vede pe pagina magazinului, unde clicul trece prin
     linkul afiliat."""
     if not cod:
@@ -103,7 +103,7 @@ def masca_cod(cod: str) -> str:
 
 
 def cate(n: int, unu: str, multe: str) -> str:
-    """„1 promotie activa", „7 promotii active", „20 de promotii active" (cu „de" de la 20 in sus)."""
+    """„1 promoție activă", „7 promoții active", „20 de promoții active" (cu „de" de la 20 in sus)."""
     if n == 1:
         return f"1 {unu}"
     r = n % 100
@@ -114,31 +114,32 @@ def text_expirare(zile) -> str:
     if not isinstance(zile, int) or zile > 7:
         return ""
     if zile <= 0:
-        return "\n   ⚠️ Expira **azi**"
+        return "\n   ⚠️ Expiră **azi**"
     if zile == 1:
-        return "\n   ⚠️ Expira **maine**"
+        return "\n   ⚠️ Expiră **mâine**"
     if zile <= 3:
-        return f"\n   ⚠️ Expira in **{zile} zile**"
-    return f"\n   _(expira in {zile} zile)_"
+        return f"\n   ⚠️ Expiră în **{zile} zile**"
+    return f"\n   _(expiră în {zile} zile)_"
 
 
 # Sfatul lunii: generic, despre PERIOADA, nu despre magazin. Varianta de pana pe 06.10.2026 punea
 # pe seama fiecarui magazin lucruri pe care nu le stiam („{nume} are promotii speciale pentru
 # rechizite si electronice", „Reducerile pot ajunge la 70-80%", „Cadourile se vand cu reduceri de
 # 10-30%") — pe 147 de articole, la librarii si farmacii la fel ca la magazinele de haine.
+# 07.10.2026: cu diacritice — textul ajunge pe ~180 de pagini.
 SFATURI_LUNA = {
-    "Ianuarie":   "Dupa sarbatori, multe magazine online lichideaza stocurile de iarna. Compara pretul cu cel din decembrie, ca sa vezi reducerea reala.",
-    "Februarie":  "In februarie apar promotii de Valentine's Day la multe magazine online. Comanda din timp daca e un cadou cu data fixa.",
-    "Martie":     "In martie multe magazine trec la produsele de primavara, iar ce a ramas din stocul de iarna iese adesea la reducere.",
-    "Aprilie":    "Inainte de Paste, multe magazine online au promotii de sezon. Comanda din timp, ca sa ajunga coletul inainte de sarbatoare.",
-    "Mai":        "In mai apar promotii de 1 Mai si de inceput de vara. Verifica data de expirare a ofertei inainte sa comanzi.",
-    "Iunie":      "In iunie incep reducerile de vara la multe magazine online, mai ales la haine si la produsele de sezon.",
-    "Iulie":      "In iulie reducerile de vara sunt in plin sezon. Compara pretul cu cel de la inceputul verii, ca sa vezi reducerea reala.",
-    "August":     "In august apar ofertele pentru inceputul scolii. La rechizite si electronice, compara preturile din mai multe magazine.",
-    "Septembrie": "In septembrie multe magazine trec la colectiile de toamna, iar produsele de vara ies la reducere.",
-    "Octombrie":  "In octombrie multe magazine aduc produsele de toamna-iarna. Daca vrei un produs anume, noteaza-i pretul de acum: la Black Friday, in noiembrie, vei sti daca reducerea e reala.",
-    "Noiembrie":  "Noiembrie e luna Black Friday. Pune produsele dorite in wishlist din timp si noteaza pretul de dinainte de campanie, ca sa vezi reducerea reala.",
-    "Decembrie":  "In decembrie comanda din timp: inainte de Craciun, termenele de livrare se lungesc. Data limita de livrare pentru sarbatori o afli de pe site-ul magazinului.",
+    "Ianuarie":   "După sărbători, multe magazine online lichidează stocurile de iarnă. Compară prețul cu cel din decembrie, ca să vezi reducerea reală.",
+    "Februarie":  "În februarie apar promoții de Valentine's Day la multe magazine online. Comandă din timp dacă e un cadou cu dată fixă.",
+    "Martie":     "În martie multe magazine trec la produsele de primăvară, iar ce a rămas din stocul de iarnă iese adesea la reducere.",
+    "Aprilie":    "Înainte de Paște, multe magazine online au promoții de sezon. Comandă din timp, ca să ajungă coletul înainte de sărbătoare.",
+    "Mai":        "În mai apar promoții de 1 Mai și de început de vară. Verifică data de expirare a ofertei înainte să comanzi.",
+    "Iunie":      "În iunie încep reducerile de vară la multe magazine online, mai ales la haine și la produsele de sezon.",
+    "Iulie":      "În iulie reducerile de vară sunt în plin sezon. Compară prețul cu cel de la începutul verii, ca să vezi reducerea reală.",
+    "August":     "În august apar ofertele pentru începutul școlii. La rechizite și electronice, compară prețurile din mai multe magazine.",
+    "Septembrie": "În septembrie multe magazine trec la colecțiile de toamnă, iar produsele de vară ies la reducere.",
+    "Octombrie":  "În octombrie multe magazine aduc produsele de toamnă-iarnă. Dacă vrei un produs anume, notează-i prețul de acum: la Black Friday, în noiembrie, vei ști dacă reducerea e reală.",
+    "Noiembrie":  "Noiembrie e luna Black Friday. Pune produsele dorite în wishlist din timp și notează prețul de dinainte de campanie, ca să vezi reducerea reală.",
+    "Decembrie":  "În decembrie comandă din timp: înainte de Crăciun, termenele de livrare se lungesc. Data limită de livrare pentru sărbători o afli de pe site-ul magazinului.",
 }
 
 
@@ -154,6 +155,7 @@ def genereaza_articol_magazin(store: dict, luna: str, an: int) -> dict:
     stabil, cu comenzi consistente" (`trend` e 0 la toate magazinele — nicio data) si un comentariu
     HTML intern afisat ca TEXT in pagina. Regula: fiecare propozitie e fie adevarata pentru orice
     magazin, fie calculata din datele lui. Garda: verifica_site.py (REGULI_CORP) + curata_articole.py.
+    07.10.2026: textul are diacritice (pana atunci, ca restul generatoarelor, fara).
     """
     slug_mag  = store["magazin"]
     nume      = nume_afisat(slug_mag)
@@ -172,44 +174,44 @@ def genereaza_articol_magazin(store: dict, luna: str, an: int) -> dict:
         linii_promo.append(linie)
 
     bloc_promo = ("\n\n".join(linii_promo) if linii_promo else
-                  f"Acum nu e nicio promotie {nume} activa in reteaua de afiliere. Cand apare una, o gasesti "
+                  f"Acum nu e nicio promoție {nume} activă în rețeaua de afiliere. Când apare una, o găsești "
                   f"pe pagina magazinului de pe AmCupon.ro.")
-    sfat_luna = SFATURI_LUNA.get(luna, "Ofertele se schimba de mai multe ori pe zi: verifica pagina magazinului "
-                                       "de pe AmCupon.ro inainte de fiecare comanda.")
+    sfat_luna = SFATURI_LUNA.get(luna, "Ofertele se schimbă de mai multe ori pe zi: verifică pagina magazinului "
+                                       "de pe AmCupon.ro înainte de fiecare comandă.")
     # Frecventa reala: update-data.yml are 3 rulari programate pe zi, dar GitHub le intarzie sau le
     # sare, deci „de mai multe ori pe zi", nu un numar. Daca schimbi cron-ul, verifica textul.
 
-    content = f"""Cauti un **cod de reducere {nume}** valid in {luna} {an}? AmCupon.ro preia automat, de mai multe ori pe zi, promotiile active de la {nume} din reteaua de afiliere si le scoate pe cele expirate. Codurile nu le testam in cos: daca unul nu merge, incearca alta oferta activa.
+    content = f"""Cauți un **cod de reducere {nume}** valid în {luna} {an}? AmCupon.ro preia automat, de mai multe ori pe zi, promoțiile active de la {nume} din rețeaua de afiliere și le scoate pe cele expirate. Codurile nu le testăm în coș: dacă unul nu merge, încearcă altă ofertă activă.
 
 > Actualizat automat: **{luna} {an}** | Categoria: **{categorie}**
 
-## Promotii active {nume} in {luna} {an}
+## Promoții active {nume} în {luna} {an}
 
 {bloc_promo}
 
-[Vezi codul complet si toate promotiile {nume} →](/cod-reducere/{slug_mag})
+[Vezi codul complet și toate promoțiile {nume} →](/cod-reducere/{slug_mag})
 
 ---
 
 ## Cum aplici codul de reducere la {nume}? (ghid pas cu pas)
 
-**Pasul 1** — Pe pagina {nume} de pe AmCupon.ro, apasa pe codul care te intereseaza: se copiaza automat.
+**Pasul 1** — Pe pagina {nume} de pe AmCupon.ro, apasă pe codul care te interesează: se copiază automat.
 
 **Pasul 2** — Mergi pe site-ul oficial {nume} prin linkul de pe AmCupon.ro (link afiliat).
 
-**Pasul 3** — Adauga produsele dorite in cosul de cumparaturi ca de obicei.
+**Pasul 3** — Adaugă produsele dorite în coșul de cumpărături ca de obicei.
 
-**Pasul 4** — La finalizarea comenzii, cauta campul **"Cod promotional"**, **"Voucher"** sau **"Cupon de reducere"**.
+**Pasul 4** — La finalizarea comenzii, caută câmpul **"Cod promoțional"**, **"Voucher"** sau **"Cupon de reducere"**.
 
-**Pasul 5** — Lipeste codul si apasa **"Aplica"**. Daca e valid pentru cosul tau, reducerea apare in total inainte de plata.
+**Pasul 5** — Lipește codul și apasă **"Aplică"**. Dacă e valid pentru coșul tău, reducerea apare în total înainte de plată.
 
-> **Atentie:** Unele coduri sunt valabile doar pentru prima comanda, altele doar pentru anumite categorii sau peste o valoare minima a cosului. Citeste termenii fiecarei promotii.
+> **Atenție:** Unele coduri sunt valabile doar pentru prima comandă, altele doar pentru anumite categorii sau peste o valoare minimă a coșului. Citește termenii fiecărei promoții.
 
 ---
 
-## De ce sa cumperi la {nume} prin AmCupon.ro?
+## De ce să cumperi la {nume} prin AmCupon.ro?
 
-Ofertele {nume} vin direct din reteaua de afiliere a magazinului, iar cele cu data de expirare trecuta dispar automat de pe AmCupon.ro. Pretul tau ramane acelasi: daca cumperi prin linkul nostru, magazinul ne plateste un comision din bugetul lui de marketing.
+Ofertele {nume} vin direct din rețeaua de afiliere a magazinului, iar cele cu data de expirare trecută dispar automat de pe AmCupon.ro. Prețul tău rămâne același: dacă cumperi prin linkul nostru, magazinul ne plătește un comision din bugetul lui de marketing.
 
 ---
 
@@ -217,26 +219,26 @@ Ofertele {nume} vin direct din reteaua de afiliere a magazinului, iar cele cu da
 
 {sfat_luna}
 
-Ca sa nu ratezi promotiile {nume}, **aboneaza-te la newsletter-ul AmCupon.ro**: primesti ofertele active pe email, o data pe zi.
+Ca să nu ratezi promoțiile {nume}, **abonează-te la newsletter-ul AmCupon.ro**: primești ofertele active pe email, o dată pe zi.
 
 ---
 
-## Intrebari frecvente despre codurile de reducere {nume}
+## Întrebări frecvente despre codurile de reducere {nume}
 
-**Cat timp e valabil un cod de reducere {nume}?**
-Fiecare promotie are perioada ei, stabilita de {nume}. Cand reteaua de afiliere ne da data de expirare, AmCupon.ro o afiseaza langa oferta.
+**Cât timp e valabil un cod de reducere {nume}?**
+Fiecare promoție are perioada ei, stabilită de {nume}. Când rețeaua de afiliere ne dă data de expirare, AmCupon.ro o afișează lângă ofertă.
 
 **Pot combina mai multe coduri de reducere la {nume}?**
-Depinde de regulile {nume}. Multe magazine online accepta un singur cod pe comanda; conditiile exacte sunt in termenii promotiei, pe site-ul magazinului.
+Depinde de regulile {nume}. Multe magazine online acceptă un singur cod pe comandă; condițiile exacte sunt în termenii promoției, pe site-ul magazinului.
 
-**Ce fac daca un cod nu functioneaza?**
-Verifica conditiile promotiei (valoarea minima a cosului, produsele excluse, doar prima comanda) si incearca alta oferta activa {nume}. O promotie se poate epuiza si inainte de data de expirare.
+**Ce fac dacă un cod nu funcționează?**
+Verifică condițiile promoției (valoarea minimă a coșului, produsele excluse, doar prima comandă) și încearcă altă ofertă activă {nume}. O promoție se poate epuiza și înainte de data de expirare.
 
-**Exista reduceri fara cod la {nume}?**
-Unele promotii nu au cod: reducerea e aplicata direct pe site-ul magazinului. Pe AmCupon.ro le gasesti la ofertele fara cod, cu link direct spre {nume}.
+**Există reduceri fără cod la {nume}?**
+Unele promoții nu au cod: reducerea e aplicată direct pe site-ul magazinului. Pe AmCupon.ro le găsești la ofertele fără cod, cu link direct spre {nume}.
 
-**Cat de des actualizeaza AmCupon.ro ofertele {nume}?**
-De mai multe ori pe zi, automat, din reteaua de afiliere. Valabilitatea finala a unui cod o confirma cosul magazinului.
+**Cât de des actualizează AmCupon.ro ofertele {nume}?**
+De mai multe ori pe zi, automat, din rețeaua de afiliere. Valabilitatea finală a unui cod o confirmă coșul magazinului.
 
 ---
 
@@ -245,11 +247,11 @@ De mai multe ori pe zi, automat, din reteaua de afiliere. Valabilitatea finala a
     # Fara promotii, descrierea o spune direct. Pagina articolului decide `noindex` din DATE
     # (output.json), nu din textul descrierii — vezi app/blog/[slug]/page.tsx.
     n = len(promotii)
-    excerpt = (f"{cate(n, 'promotie activa', 'promotii active')} {nume} in {luna} {an}, din reteaua de afiliere "
-               f"a magazinului. Cum aplici codul si intrebari frecvente."
+    excerpt = (f"{cate(n, 'promoție activă', 'promoții active')} {nume} în {luna} {an}, din rețeaua de afiliere "
+               f"a magazinului. Cum aplici codul și întrebări frecvente."
                if n else
-               f"Acum nu e nicio promotie {nume} activa. Pagina se actualizeaza automat; cum aplici un cod si "
-               f"intrebari frecvente.")
+               f"Acum nu e nicio promoție {nume} activă. Pagina se actualizează automat; cum aplici un cod și "
+               f"întrebări frecvente.")
     return {
         "slug":    slug_articol_magazin(slug_mag, luna, an),
         "title":   f"Cod Reducere {nume} {luna} {an} | AmCupon.ro",

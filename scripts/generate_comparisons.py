@@ -119,8 +119,13 @@ def _partener(m: dict) -> bool:
     return bool(a) and a != (m.get("url") or "").strip()
 
 
+# Numele magazinului: scripts/nume_magazin.py, acelasi rezultat ca numeAfisat() din frontend
+# (06.10.2026 — copia naiva de aici scria „Drmax" pentru drmax.ro si „Us" pentru us.lemorele.com).
+from nume_magazin import nume_afisat  # noqa: E402
+
+
 def _num_afisat(slug: str) -> str:
-    return " ".join(w.capitalize() for w in slug.split(".")[0].replace("-", " ").split())
+    return nume_afisat(slug)
 
 
 def _coduri_active(m: dict) -> str:

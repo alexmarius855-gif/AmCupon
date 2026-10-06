@@ -94,7 +94,7 @@ FORMULE = [
     (re.compile(r"\n?<!--.*?-->", re.S), ""),
     (re.compile(r"Spre deosebire de alte site-uri de cupoane, AmCupon\.ro verifica \*\*zilnic\*\* validitatea fiecarui cod\. "
                 r"Nu afisam niciodata coduri expirate sau inactive\."),
-     "Ofertele vin direct din reteaua de afiliere a magazinului, iar cele cu data de expirare trecuta dispar automat "
+     "Ofertele vin direct din rețeaua de afiliere a magazinului, iar cele cu data de expirare trecută dispar automat "
      "de pe AmCupon.ro."),
     (re.compile(r"\*\*Oferta exclusiva AmCupon\.ro\*\* — nu o gasesti in alta parte!\n*"), ""),
     (re.compile(r"Magazin stabil, cu comenzi consistente\.\n*"), ""),
@@ -102,39 +102,39 @@ FORMULE = [
     (re.compile(r"Procesul dureaza mai putin de 2 minute si functioneaza la orice comanda:\n*"), ""),
     (re.compile(r"\*\*Pasul 1\*\* — Mergi pe AmCupon\.ro, cauta \[([^\]]+)\]\([^)]*\) si apasa \"Copiaza codul\"\. "
                 r"Codul se salveaza automat in clipboard\."),
-     r"**Pasul 1** — Pe pagina \1 de pe AmCupon.ro, apasa pe codul care te intereseaza: se copiaza automat."),
+     r"**Pasul 1** — Pe pagina \1 de pe AmCupon.ro, apasă pe codul care te interesează: se copiază automat."),
     (re.compile(r"\*\*Pasul 2\*\* — Click pe \"Acceseaza magazinul\" — vei fi redirectionat catre site-ul oficial (.+?) "
                 r"\(link afiliat\)\."),
      r"**Pasul 2** — Mergi pe site-ul oficial \1 prin linkul de pe AmCupon.ro (link afiliat)."),
     (re.compile(r"Lipieste codul \(Ctrl\+V sau tine apasat pe mobil\) si apasa \*\*\"Aplica\"\*\*\. Reducerea se aplica instantaneu\."),
-     "Lipeste codul si apasa **\"Aplica\"**. Daca e valid pentru cosul tau, reducerea apare in total inainte de plata."),
+     "Lipește codul și apasă **\"Aplică\"**. Dacă e valid pentru coșul tău, reducerea apare în total înainte de plată."),
     (re.compile(r"\*\*Cat dureaza un cod de reducere (.+?)\?\*\*\nCodurile \1 au valabilitate variabila — de la 24 de ore "
                 r"pentru flash deals pana la cateva saptamani pentru promotiile sezoniere\. AmCupon\.ro afiseaza zilele "
                 r"ramase pentru fiecare cod\."),
-     r"**Cat timp e valabil un cod de reducere \1?**\nFiecare promotie are perioada ei, stabilita de \1. Cand reteaua "
-     r"de afiliere ne da data de expirare, AmCupon.ro o afiseaza langa oferta."),
+     r"**Cât timp e valabil un cod de reducere \1?**\nFiecare promoție are perioada ei, stabilită de \1. Când rețeaua "
+     r"de afiliere ne dă data de expirare, AmCupon.ro o afișează lângă ofertă."),
     (re.compile(r"In general, (.+?) accepta un singur cod per comanda\. Exceptie fac situatiile in care combinati un cod "
                 r"de reducere cu cashback-ul disponibil\."),
-     r"Depinde de regulile \1. Multe magazine online accepta un singur cod pe comanda; conditiile exacte sunt in "
-     r"termenii promotiei, pe site-ul magazinului."),
+     r"Depinde de regulile \1. Multe magazine online acceptă un singur cod pe comandă; condițiile exacte sunt în "
+     r"termenii promoției, pe site-ul magazinului."),
     (re.compile(r"\*\*Functioneaza codurile pe aplicatia mobila (.+?)\?\*\*\nDa, codurile de reducere \1 functioneaza atat "
                 r"pe site cat si pe aplicatia mobila\. Campul de voucher se gaseste la aceeasi locatie in checkout\.\n*"), ""),
     (re.compile(r"Apasati \"Raporteaza cod\" pe AmCupon\.ro si il vom verifica si actualiza in maxim 24h\. Alternativ, "
                 r"incercati urmatoarea promotie din lista — avem de obicei mai multe optiuni active simultan\."),
-     "Verifica conditiile promotiei (valoarea minima a cosului, produsele excluse, doar prima comanda) si incearca "
-     "alta oferta activa. O promotie se poate epuiza si inainte de data de expirare."),
+     "Verifică condițiile promoției (valoarea minimă a coșului, produsele excluse, doar prima comandă) și încearcă "
+     "altă ofertă activă. O promoție se poate epuiza și înainte de data de expirare."),
     (re.compile(r"Da! Unele promotii (.+?) se aplica automat prin link-ul afiliat — fara sa fie nevoie sa introduceti "
                 r"un cod\. Le puteti recunoaste dupa eticheta \"Reducere automata\" de pe AmCupon\.ro\."),
-     r"Unele promotii nu au cod: reducerea e aplicata direct pe site-ul magazinului. Pe AmCupon.ro le gasesti la "
-     r"ofertele fara cod, cu link direct spre \1."),
+     r"Unele promoții nu au cod: reducerea e aplicată direct pe site-ul magazinului. Pe AmCupon.ro le găsești la "
+     r"ofertele fără cod, cu link direct spre \1."),
     (re.compile(r"Sistemul nostru verifica promotiile de la (.+?) de \*\*trei ori pe zi\*\*\. Codul pe care il gasiti pe "
                 r"aceasta pagina este valid in momentul in care il accesati\."),
-     "De mai multe ori pe zi, automat, din reteaua de afiliere. Valabilitatea finala a unui cod o confirma cosul "
+     "De mai multe ori pe zi, automat, din rețeaua de afiliere. Valabilitatea finală a unui cod o confirmă coșul "
      "magazinului."),
     (re.compile(r"Cel mai simplu mod sa nu ratezi nicio promotie (.+?) este sa \*\*te abonezi la newsletter-ul AmCupon\.ro\*\* "
                 r"— trimitem zilnic Top 5 oferte din toate magazinele\."),
-     r"Ca sa nu ratezi promotiile \1, **aboneaza-te la newsletter-ul AmCupon.ro**: primesti ofertele active pe email, "
-     r"o data pe zi."),
+     r"Ca să nu ratezi promoțiile \1, **abonează-te la newsletter-ul AmCupon.ro**: primești ofertele active pe email, "
+     r"o dată pe zi."),
     (re.compile(r"> Ultima verificare automata: \*\*"), "> Actualizat automat: **"),
     (re.compile(r"\| Magazin din categoria: \*\*"), "| Categoria: **"),
     # roundup-ul si articolele de categorie
@@ -403,25 +403,25 @@ def test() -> int:
       "**Cat de des actualizeaza AmCupon.ro codurile Nemira?**\nText.")
     v("„verifica zilnic validitatea fiecarui cod” -> ce se intampla de fapt",
       c("Spre deosebire de alte site-uri de cupoane, AmCupon.ro verifica **zilnic** validitatea fiecarui cod. Nu afisam niciodata coduri expirate sau inactive."),
-      "Ofertele vin direct din reteaua de afiliere a magazinului, iar cele cu data de expirare trecuta dispar automat de pe AmCupon.ro.")
+      "Ofertele vin direct din rețeaua de afiliere a magazinului, iar cele cu data de expirare trecută dispar automat de pe AmCupon.ro.")
     v("„oferta exclusiva” si „magazin stabil” -> scoase",
       c("**Oferta exclusiva AmCupon.ro** — nu o gasesti in alta parte!\n\n## Promotii active\n\nMagazin stabil, cu comenzi consistente.\n\nText."),
       "## Promotii active\n\nText.")
     v("pasul 1 cu link spre magazin absent -> ramane intreg, fara link (nu mai rupe ghidul)",
       c("**Pasul 1** — Mergi pe AmCupon.ro, cauta [Librex](/cod-reducere/librex.ro) si apasa \"Copiaza codul\". Codul se salveaza automat in clipboard."),
-      "**Pasul 1** — Pe pagina Librex de pe AmCupon.ro, apasa pe codul care te intereseaza: se copiaza automat.")
+      "**Pasul 1** — Pe pagina Librex de pe AmCupon.ro, apasă pe codul care te interesează: se copiază automat.")
     v("„Raporteaza cod ... in maxim 24h” (butonul nu exista) -> sfat real",
       c("Apasati \"Raporteaza cod\" pe AmCupon.ro si il vom verifica si actualiza in maxim 24h. Alternativ, incercati urmatoarea promotie din lista — avem de obicei mai multe optiuni active simultan."),
-      "Verifica conditiile promotiei (valoarea minima a cosului, produsele excluse, doar prima comanda) si incearca alta oferta activa. O promotie se poate epuiza si inainte de data de expirare.")
+      "Verifică condițiile promoției (valoarea minimă a coșului, produsele excluse, doar prima comandă) și încearcă altă ofertă activă. O promoție se poate epuiza și înainte de data de expirare.")
     v("intrebarea despre aplicatia mobila (raspuns inventat) -> scoasa",
       c("**Functioneaza codurile pe aplicatia mobila Nemira?**\nDa, codurile de reducere Nemira functioneaza atat pe site cat si pe aplicatia mobila. Campul de voucher se gaseste la aceeasi locatie in checkout.\n\n**Ce fac daca un cod nu functioneaza?**"),
       "**Ce fac daca un cod nu functioneaza?**")
     v("sfatul lunii vechi (afirmatie despre magazin) -> sfatul generic",
       c("## In Octombrie 2026 incep pregatirile pentru iarna la Librex. Acesta e momentul ideal sa cumparati produse de sezon inainte de varf.\n\nText."),
-      "## Sfatul lunii Octombrie\n\nIn octombrie multe magazine aduc produsele de toamna-iarna. Daca vrei un produs anume, noteaza-i pretul de acum: la Black Friday, in noiembrie, vei sti daca reducerea e reala.\n\nText.")
+      "## Sfatul lunii Octombrie\n\nÎn octombrie multe magazine aduc produsele de toamnă-iarnă. Dacă vrei un produs anume, notează-i prețul de acum: la Black Friday, în noiembrie, vei ști dacă reducerea e reală.\n\nText.")
     v("„este valid in momentul in care il accesati” -> scos",
       c("Sistemul nostru verifica promotiile de la Nemira de **trei ori pe zi**. Codul pe care il gasiti pe aceasta pagina este valid in momentul in care il accesati."),
-      "De mai multe ori pe zi, automat, din reteaua de afiliere. Valabilitatea finala a unui cod o confirma cosul magazinului.")
+      "De mai multe ori pe zi, automat, din rețeaua de afiliere. Valabilitatea finală a unui cod o confirmă coșul magazinului.")
     v("link spre partener ramane neatins",
       c("Coduri active la [Notino](/cod-reducere/notino.ro)."), "Coduri active la [Notino](/cod-reducere/notino.ro).")
     v("idempotent", c(c("Folosește codurile de la partenerii noștri: [eMAG](/cod-reducere/emag.ro) si [Answear](/cod-reducere/answear.ro).")),
