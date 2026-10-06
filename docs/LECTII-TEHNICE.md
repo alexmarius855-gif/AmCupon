@@ -486,3 +486,18 @@ verifică acum **toate** linkurile interne `/cod-reducere|top|categorii|comparat
 contra paginilor generate (404 = blochează) și numără separat pe cele prin redirect; (3) textul care stă
 în fișiere intrare-ieșire trece la fiecare rulare printr-o poartă (`scripts/curata_articole.py`), nu
 printr-o reparație o singură dată.
+
+## 15. Limitele de deploy cresc odată cu datele, nu cu codul
+
+**06.10.2026.** Toate deploy-urile Vercel ale zilei au picat cu „The Vercel Function "blog" is
+258.85mb uncompressed which exceeds the maximum ... 250mb", iar site-ul a rămas pe versiunea de ieri
+fără să se înroșească nimic în pipeline (GitHub Actions doar face push; build-ul pică la Vercel).
+Cauza nu era codul zilei: paginile citesc JSON-uri din `public/` cu `path.join(process.cwd(), "public",
+fisier)`, tracer-ul Next nu poate ști care fișier, deci include **tot** `public/` în fiecare funcție
+dinamică — 2.306 fișiere, din care 218 MB de coperți PNG de articol. Fiecare articol nou adăuga o
+copertă; ziua în care s-a trecut de 250 MB a fost doar ziua în care s-a văzut.
+**Regula:** (1) `outputFileTracingExcludes` în `next.config.ts` ține imaginile și media în afara
+funcțiilor (le servește CDN-ul); (2) după un push, verifică starea deploy-ului (`get_deployment` →
+`errorMessage`), nu doar build-ul local — `next build` local NU aplică limita Vercel; (3) orice
+folder care crește zilnic în `public/` e o limită care se va atinge: măsoară-l
+(`.next/server/**/*.nft.json`) înainte să devină o pană.

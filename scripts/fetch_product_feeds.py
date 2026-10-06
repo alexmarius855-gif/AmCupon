@@ -19,6 +19,7 @@ Output: frontend/public/products.json
 import csv
 import gzip
 import hashlib
+import html
 import io
 import json
 import sys
@@ -306,6 +307,21 @@ def _magazin_strain(cheie: str) -> bool:
 # (lib/seoIndexable.ts) — springfarma, scule365 si pfarma erau exact in situatia asta.
 # Radacina domeniului, nu numele intreg: „aronia" prinde aronia-charlottenburg.ro.
 PRIORITARI_ROTATIE = ("springfarma", "drmax", "libris", "librarie", "scule365", "aronia", "pfarma")
+
+
+def curata_titlu(s) -> str:
+    """Titlul de afisat — aceeasi regula ca titluAfisat() din frontend/lib/topFeed.ts: entitati HTML
+    decodate, spatii comprimate, fara „ - Default Title" (Shopify), fara titlul repetat de doua ori
+    (unele feed-uri lipesc titlul de el insusi) si fara semne ramase la coada."""
+    t = html.unescape(s or "")
+    t = re.sub(r"\s+", " ", t).strip()
+    t = re.sub(r"\s*-\s*Default Title\s*$", "", t, flags=re.I)
+    cap = t[:30]
+    if len(cap) == 30:
+        k = t.find(cap, 20)
+        if k > 0:
+            t = t[:k]
+    return re.sub(r"[\s※*•·|,;-]+$", "", t).strip()
 
 
 def _radacina(cheie: str) -> str:
@@ -1468,6 +1484,20 @@ def main():
         all_products = [p for p in all_products if not pret_corupt(p)]
         print(f"  - scoase {len(_corupte)} produse cu pret sub 1 leu (pret unitar din bax), ex.: "
               f"{'; '.join((p.get('title') or '?')[:32] for p in _corupte[:3])}")
+
+    # ── Titluri curate, pentru TOATE paginile (06.10.2026) ────────────────────
+    # 1.940 de produse se terminau in „ - Default Title" (Shopify, cand produsul n-are variante) si
+    # 35 aveau entitati HTML („&amp;", „&quot;") — afisate asa pe prima pagina, pe /produse si pe
+    # paginile de magazin. Doar sectiunile /top le curatau, cu titluAfisat() din lib/topFeed.ts.
+    # Aceeasi regula, aici la sursa, si pe produsele pastrate din rularile anterioare.
+    _schimbate = 0
+    for _p in all_products:
+        _nou = curata_titlu(_p.get("title"))
+        if _nou != _p.get("title"):
+            _p["title"] = _nou
+            _schimbate += 1
+    if _schimbate:
+        print(f"  ~ titluri curatate: {_schimbate} (- Default Title, entitati HTML, titlu dublat)")
 
     # ── Diversitate: max MAX_PER_MERCHANT per merchant, MAX_TOTAL impartit corect ──
     import random

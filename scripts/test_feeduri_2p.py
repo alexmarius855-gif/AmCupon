@@ -226,5 +226,18 @@ verifica("ultima pagina atinsa: lista e completa", fb.BANNERE_COMPLETE, True)
 verifica("... cu toate bannerele", len(b), 25)
 
 
+print("\n8. Titluri curate la sursa (aceeasi regula ca titluAfisat din lib/topFeed.ts)")
+for brut, curat in [
+    ("Banca solida de exercitii, reglabila, cu 2 perne - Default Title", "Banca solida de exercitii, reglabila, cu 2 perne"),
+    ("Osavi Colagen &amp; Electroliți, 390 g", "Osavi Colagen & Electroliți, 390 g"),
+    ('Laptop DELL Precision 5570, 15.6&quot; FHD+', 'Laptop DELL Precision 5570, 15.6" FHD+'),
+    ("🔥  BrainMax Zinc Complex® 1+1 GRATUIT", "🔥 BrainMax Zinc Complex® 1+1 GRATUIT"),
+    ("Seminte de castraveti, fasole, tutun, par, cires, cais, piersic, prun,", "Seminte de castraveti, fasole, tutun, par, cires, cais, piersic, prun"),
+    ("Vopsea pentru Pavaj si Beton, PAVECOAT - Vopsea pentru Pavaj si Beton, Protectie",
+     "Vopsea pentru Pavaj si Beton, PAVECOAT"),
+    ("Produs normal, fara probleme", "Produs normal, fara probleme"),
+]:
+    verifica(f"curata_titlu({brut[:38]}…)", fpf.curata_titlu(brut), curat)
+
 print("\nToate verificarile au trecut." if not esecuri else f"\n{esecuri} verificari picate.")
 sys.exit(1 if esecuri else 0)

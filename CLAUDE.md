@@ -80,6 +80,21 @@ Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Pro
   scot (librex.ro lega spre o pagina 404), cu garda la output.json trunchiat; `noindex` pe articolele fara promotii se decide
   din `output.json`, nu din textul descrierii (29 de pagini, identic cu inainte). Blogul nu mai leaga spre pagini de magazin
   care nu se genereaza.
+- **DEPLOY BLOCAT 06.10 (rezolvat, `08388afb`):** Vercel respingea build-ul — „Function "blog" is 258.85mb uncompressed"
+  (limita 250 MB); site-ul ramasese pe versiunea de ieri. Paginile citesc JSON din `public/` cu `path.join(process.cwd(),
+  "public", ...)`, deci tracer-ul baga TOT `public/` in fiecare functie dinamica: 218 MB de coperti PNG, care cresc cu fiecare
+  articol. `outputFileTracingExcludes` in `next.config.ts` scoate imaginile/media (CDN-ul le serveste; nicio functie nu
+  citeste o imagine). Cea mai mare functie: 28,3 MB. **Daca un deploy pica: `get_deployment` -> `errorMessage`.**
+- **Prima pagina, citita integral (06.10):** ticker-ul arata 23 de magazine straine din 24 si codul INTREG -> parteneri
+  romanesti, cod mascat (`lib/maskCod.ts`), link spre pagina magazinului; „Produse cu reducere" fals (133 din 20.264 de produse
+  au reducere) -> „Produse" (si pe /produse, titlu inclus); „RECOMANDATE DE NOI — Magazine de incredere" -> „Magazine cu oferte
+  acum"; „Reduceri mari": cod mascat, „pana la 70%"; „Magazine populare" doar parteneri (8 branduri fara program scoase);
+  partenerii romanesti primii (`app/page.tsx`); depox.ro scos din toate listele; blogul arata ghidurile „Cel mai bun X";
+  butonul plutitor mic, in colt; „SSL 256-bit" si „Cel mai rapid mod" scoase; extensia „nu e inca publicata".
+- **Nume de magazin, sursa unica:** `scripts/nume_magazin.py` citeste constantele din `lib/numeMagazin.ts` (nu le copiaza);
+  4 generatoare Python aveau copii naive („Cod Reducere Us" pt. us.lemorele.com). `python scripts/test_nume_magazin.py`
+  compara Python cu TS pe toate magazinele. **Titluri de produs curatate la sursa** (`curata_titlu` in fetch_product_feeds:
+  1.940 „- Default Title", entitati HTML) — se vede dupa urmatoarea rulare a pipeline-ului.
 
 **UPDATE 27.09.2026 (viteza, masurata fata de concurenta + Supabase pe pauza a 5-a oara):**
 - **Masurat cu Lighthouse 12 (mobil, aceleasi setari ca PageSpeed Insights)**, live, 27.09: prima pagina
