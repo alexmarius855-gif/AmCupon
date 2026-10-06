@@ -94,8 +94,26 @@ function doarCeFolosesteHomepage(lista: Record<string, unknown>[]): Magazin[] {
   });
 }
 
+/** Partener romanesc: reteaua romaneasca (2Performant) sau domeniu .ro / ro.<brand>. */
+function esteRomanesc(m: Record<string, unknown>): boolean {
+  const slug = String(m.magazin ?? "");
+  return m.platforma === "2performant" || slug.endsWith(".ro") || slug.startsWith("ro.");
+}
+
+/**
+ * Magazinele romanesti intai, cu ordinea dintre ele pastrata (sort stabil). 06.10.2026: peretele
+ * „Magazine partenere" incepea cu Surfshark, Shopify, Helium10, Nexo — programe Impact
+ * internationale; un cititor din Romania vedea primele 24 de logo-uri fara niciun magazin
+ * romanesc. Aceeasi ordine o primesc cautarea si filtrele de pe prima pagina.
+ */
+function romanestiIntai(lista: Record<string, unknown>[]): Record<string, unknown>[] {
+  return [...lista].sort((a, b) => Number(esteRomanesc(b)) - Number(esteRomanesc(a)));
+}
+
 export default function Page() {
-  const magazine = doarCeFolosesteHomepage(readJSON<Record<string, unknown>[]>("output.json", []));
+  const toate = readJSON<Record<string, unknown>[]>("output.json", []);
+  const magazine = doarCeFolosesteHomepage(romanestiIntai(toate));
+  const sluguriRo = new Set(toate.filter(esteRomanesc).map((m) => String(m.magazin)));
   const blogAll = readJSON<Parameters<typeof HomeClient>[0]["blogPosts"]>("blog-latest.json", []);
   // Doar ce afiseaza sectiunea „Recomandate". Fisierul are si `comision` si `oferta` (textul
   // retelei, uneori scris pentru afiliati: „Câștigă premii și comision de 19%!") — nu se
@@ -103,7 +121,7 @@ export default function Page() {
   const recomandate = (readJSON<Record<string, unknown>[]>("recomandate.json", []) || []).map((r) => ({
     magazin: String(r.magazin ?? ""), nume: String(r.nume ?? ""), logo_url: String(r.logo_url ?? ""),
     categorie: String(r.categorie ?? ""), are_cod: Boolean(r.are_cod),
-  }));
+  })).sort((a, b) => Number(sluguriRo.has(b.magazin)) - Number(sluguriRo.has(a.magazin)));
   const produseCategorii = buildProduseCategorii();
 
   // Server Component, randat o singura data per request/ISR — Date.now() aici e sigur

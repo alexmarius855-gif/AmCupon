@@ -5,12 +5,14 @@ import ProduseClient from "./ProduseClient";
 import type { Produs, Magazin, Banner } from "./ProduseClient";
 
 export const metadata: Metadata = {
-  title: "Produse cu Reducere Romania 2026 — Top Deals Zilnice",
-  description: "Cele mai bune produse cu discount din Romania. Top reduceri azi, campanii vizuale, feed-uri de produse actualizate zilnic. Compara preturi si economiseste.",
-  keywords: ["produse reducere romania", "oferte produse online", "top deals azi", "discount produse romania 2026"],
+  // 06.10.2026: titlul promitea „Produse cu Reducere — Top Deals", dar doar 133 din 20.264 de
+  // produse din feed au reducere. Pagina arata produse cu pretul la zi si ofertele active.
+  title: "Produse la zi de la magazinele partenere | AmCupon.ro",
+  description: "Produse cu prețul la zi din feed-urile magazinelor partenere și ofertele lor active: campanii, coduri și reduceri, actualizate de mai multe ori pe zi.",
+  keywords: ["produse online romania", "oferte magazine online", "preturi produse azi"],
   alternates: { canonical: "https://amcupon.ro/produse" },
   openGraph: {
-    title: "Produse cu Reducere Romania 2026 | AmCupon.ro",
+    title: "Produse la zi de la magazinele partenere | AmCupon.ro",
     url: "https://amcupon.ro/produse",
     siteName: "AmCupon.ro",
     locale: "ro_RO",
@@ -32,9 +34,9 @@ function loadJSON<T>(filename: string, fallback: T): T {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  name: "Produse cu Reducere Romania 2026",
+  name: "Produse de la magazinele partenere",
   url: "https://amcupon.ro/produse",
-  description: "Produse cu discount din magazinele partenere 2Performant, actualizate zilnic.",
+  description: "Produse cu prețul la zi din feed-urile magazinelor partenere, actualizate zilnic.",
 };
 
 export default function ProduseePage() {
@@ -76,7 +78,7 @@ export default function ProduseePage() {
   const produseJsonLd = produseValide.length > 0 ? {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Produse cu reducere din Romania",
+    name: "Produse de la magazinele partenere",
     numberOfItems: produseValide.length,
     itemListElement: produseValide.map((p, i) => ({
       "@type": "ListItem",

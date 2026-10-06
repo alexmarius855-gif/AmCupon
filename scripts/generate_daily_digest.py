@@ -69,9 +69,9 @@ def slug_valid(slug: str) -> bool:
     return True
 
 
-def nume_afisat(magazin: str) -> str:
-    baza = magazin.split(".")[0].replace("-", " ")
-    return " ".join(w.capitalize() for w in baza.split())
+# Numele magazinului: scripts/nume_magazin.py, acelasi rezultat ca numeAfisat() din frontend
+# (06.10.2026 — copia naiva de aici scria „Cod Reducere Us" pentru us.lemorele.com).
+from nume_magazin import nume_afisat  # noqa: E402
 
 
 def load_magazine() -> list:

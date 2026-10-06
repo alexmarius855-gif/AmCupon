@@ -306,7 +306,9 @@ RE_TESTARE = re.compile(
 # contact: „verificam fiecare promotie", insigna „VERIFICAT" pe /produse, „verificat si functional"
 # in toate cele 147 de articole de magazin). Indicatiile pentru cititor („verifica pe site") raman.
 RE_VERIFICAT = re.compile(
-    r"\b(?:coduri(?: de reducere)?|oferte|reduceri|promo[țt]ii|magazine|parteneri|ghiduri)\s+verificat[ei]\b"
+    # formele articulate („Toate codurile verificate" pe /produse) au scapat pana pe 06.10.2026
+    r"\b(?:coduri(?:le)?(?: de reducere)?|oferte(?:le)?|reduceri(?:le)?|promo[țt]ii(?:le)?|magazine(?:le)?"
+    r"|parteneri(?:i)?|ghiduri(?:le)?)\s+verificat[ei]\b"
     r"|\bverificate (?:zilnic|automat|[șs]i actualizate)\b|\bverificat [șs]i func[țt]ional\b"
     r"|\bverificat azi\b|>\s*VERIFICAT\s*<|\bverific[ăa]m (?:fiecare|codurile|ofertele|zilnic)\b",
     re.I)

@@ -41,9 +41,9 @@ def e_bun_pt_social(w, h):
     return abs(ratio - 1) <= MAX_RATIO_DIFF
 
 
-def nume_afisat(slug):
-    base = slug.split(".")[0].split("-")[0]
-    return base.capitalize()
+# Numele magazinului: scripts/nume_magazin.py, acelasi rezultat ca numeAfisat() din frontend
+# (06.10.2026 — copia naiva de aici scria „Cod Reducere Us" pentru us.lemorele.com).
+from nume_magazin import nume_afisat  # noqa: E402
 
 
 def main():

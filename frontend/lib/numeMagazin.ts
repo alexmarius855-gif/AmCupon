@@ -25,6 +25,14 @@ const NUME_OVERRIDE: Record<string, string> = {
   "silverrushstyle.com": "Silver Rush Style",
   "airserbia.com": "Air Serbia",
   "carmellimo.com": "Carmel Limo",
+  // 06.10.2026: numele de brand scrise de mana in lib/magazinePopulare.ts („Dr. Max") apareau
+  // doar pe prima pagina; in rest — titluri de articol, carduri, pagina magazinului — „Drmax".
+  "drmax.ro": "Dr. Max",
+  "sportdepot.ro": "Sport Depot",
+  "vidaxl.ro": "vidaXL",
+  "bookzone.ro": "BookZone",
+  "shein.com": "SHEIN",
+  "librarie.net": "Librarie.net",
 };
 
 /**
@@ -35,7 +43,7 @@ const NUME_OVERRIDE: Record<string, string> = {
 const PREFIXE_NEUTRE = new Set([
   "store", "shop", "www", "m", "app", "go", "new", "my", "web", "online", "buy", "ai",
   "ro", "us", "uk", "de", "fr", "it", "es", "nl", "pl", "eu", "en", "hu", "bg",
-  "cz", "sk", "gr", "pt", "se", "dk", "fi", "no", "ie", "at", "ch", "be", "ca", "au",
+  "cz", "sk", "gr", "pt", "se", "dk", "fi", "no", "ie", "at", "ch", "be", "ca", "au", "sg",
 ]);
 
 function capitalizeaza(s: string): string {
@@ -51,7 +59,7 @@ function capitalizeaza(s: string): string {
  *  implicit, iar „Notino RO" pe un site romanesc e zgomot, nu informatie. */
 const REGIUNI = new Set([
   "us", "uk", "de", "fr", "it", "es", "nl", "pl", "eu", "hu", "bg", "cz", "sk",
-  "gr", "pt", "se", "dk", "fi", "no", "ie", "at", "ch", "be", "ca", "au", "asia",
+  "gr", "pt", "se", "dk", "fi", "no", "ie", "at", "ch", "be", "ca", "au", "sg", "asia",
 ]);
 
 /**

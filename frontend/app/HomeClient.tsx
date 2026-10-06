@@ -13,11 +13,12 @@ import CuponCard from "./components/CuponCard";
 import RedirectModal from "./components/RedirectModal";
 import { useCopyCod } from "./hooks/useCopyCod";
 import { linkPromotie } from "@/lib/linkMagazin";
+import { maskCod } from "@/lib/maskCod";
 import { PRAG_URGENT } from "@/lib/expirarePromo";
 import { MAGAZINE_POPULARE } from "@/lib/magazinePopulare";
 import {
   oferteAcasa, numaraFiltre, filtreAfisate, alegeAfisate, oferteDePeMagazin,
-  magazinePopulareAcasa, cuNumar, type FiltruAcasa,
+  magazinePopulareAcasa, cuNumar, EXCLUSE_ACASA, type FiltruAcasa,
 } from "@/lib/oferteAcasa";
 
 interface Promotie {
@@ -81,34 +82,38 @@ const CATEGORII = [
 // Conteaza mai mult decat pare: homepage-ul e singura pagina pe care Google o viziteaza
 // des (ultima accesare 18.08; restul site-ului, in iulie), deci astea erau cele mai
 // crawl-ate 4 linkuri de pe site si toate 4 faceau un salt inutil.
+// 06.10.2026: lista se filtreaza la randare pe magazinele din date (`slug` in output.json). Altex,
+// Elefant, vidaXL, Flanco, BookZone, Temu, SHEIN si Trendyol n-au program la noi — prima pagina
+// trimitea cititorul (si pe Google) spre pagini care spun „nu avem coduri X" si sunt noindex.
+// Daca unul devine partener, reapare singur.
 const BRAND_PAGES = [
-  { href: "/altex",       name: "Altex",        emoji: "📺" },
-  { href: "/decathlon",   name: "Decathlon",    emoji: "🏃" },
-  { href: "/noriel",      name: "Noriel",       emoji: "🧸" },
-  { href: "/carturesti",  name: "Carturesti",   emoji: "📚" },
-  { href: "/drmax",       name: "Dr. Max",      emoji: "💊" },
-  { href: "/cod-reducere/libris.ro", name: "Libris",  emoji: "📖" },
-  { href: "/petmart",     name: "Petmart",      emoji: "🐾" },
-  { href: "/elefant",     name: "Elefant",      emoji: "🐘" },
-  { href: "/brico",       name: "Brico",        emoji: "🔨" },
-  { href: "/liki24",      name: "Liki24",       emoji: "🏥" },
-  { href: "/vidaxl",      name: "vidaXL",       emoji: "🛋️" },
-  { href: "/answear",     name: "Answear",      emoji: "👗" },
-  { href: "/notino",      name: "Notino",       emoji: "🌸" },
-  { href: "/flanco",      name: "Flanco",       emoji: "📺" },
-  { href: "/bookzone",    name: "BookZone",     emoji: "📖" },
-  { href: "/cod-reducere/vegis.ro",  name: "Vegis",   emoji: "🌿" },
-  { href: "/petmax",      name: "Petmax",       emoji: "🐕" },
-  { href: "/sportdepot",  name: "Sport Depot",  emoji: "⚽" },
-  { href: "/automobilus", name: "Automobilus",  emoji: "🚗" },
-  { href: "/litera",      name: "Litera",       emoji: "📚" },
-  { href: "/otter",       name: "Otter",        emoji: "🧢" },
-  { href: "/temu",        name: "Temu",         emoji: "🛍️" },
-  { href: "/shein",       name: "SHEIN",        emoji: "👗" },
-  { href: "/trendyol",    name: "Trendyol",     emoji: "🧡" },
-  { href: "/scule365",    name: "Scule365",     emoji: "🔧" },
-  { href: "/kitunghii",   name: "KitUnghii",    emoji: "💅" },
-  { href: "/pfarma",      name: "pFarma",       emoji: "💊" },
+  { href: "/altex",       slug: "altex.ro",       name: "Altex",        emoji: "📺" },
+  { href: "/decathlon",   slug: "decathlon.ro",   name: "Decathlon",    emoji: "🏃" },
+  { href: "/noriel",      slug: "noriel.ro",      name: "Noriel",       emoji: "🧸" },
+  { href: "/carturesti",  slug: "carturesti.ro",  name: "Cărturești",   emoji: "📚" },
+  { href: "/drmax",       slug: "drmax.ro",       name: "Dr. Max",      emoji: "💊" },
+  { href: "/cod-reducere/libris.ro", slug: "libris.ro", name: "Libris", emoji: "📖" },
+  { href: "/petmart",     slug: "petmart.ro",     name: "Petmart",      emoji: "🐾" },
+  { href: "/elefant",     slug: "elefant.ro",     name: "Elefant",      emoji: "🐘" },
+  { href: "/brico",       slug: "brico.ro",       name: "Brico",        emoji: "🔨" },
+  { href: "/liki24",      slug: "liki24.ro",      name: "Liki24",       emoji: "🏥" },
+  { href: "/vidaxl",      slug: "vidaxl.ro",      name: "vidaXL",       emoji: "🛋️" },
+  { href: "/answear",     slug: "answear.ro",     name: "Answear",      emoji: "👗" },
+  { href: "/notino",      slug: "notino.ro",      name: "Notino",       emoji: "🌸" },
+  { href: "/flanco",      slug: "flanco.ro",      name: "Flanco",       emoji: "📺" },
+  { href: "/bookzone",    slug: "bookzone.ro",    name: "BookZone",     emoji: "📖" },
+  { href: "/cod-reducere/vegis.ro", slug: "vegis.ro", name: "Vegis",    emoji: "🌿" },
+  { href: "/petmax",      slug: "petmax.ro",      name: "Petmax",       emoji: "🐕" },
+  { href: "/sportdepot",  slug: "sportdepot.ro",  name: "Sport Depot",  emoji: "⚽" },
+  { href: "/automobilus", slug: "automobilus.ro", name: "Automobilus",  emoji: "🚗" },
+  { href: "/litera",      slug: "litera.ro",      name: "Litera",       emoji: "📚" },
+  { href: "/otter",       slug: "otter.ro",       name: "Otter",        emoji: "🧢" },
+  { href: "/temu",        slug: "temu.com",       name: "Temu",         emoji: "🛍️" },
+  { href: "/shein",       slug: "shein.com",      name: "SHEIN",        emoji: "👗" },
+  { href: "/trendyol",    slug: "trendyol.com",   name: "Trendyol",     emoji: "🧡" },
+  { href: "/scule365",    slug: "scule365.ro",    name: "Scule365",     emoji: "🔧" },
+  { href: "/kitunghii",   slug: "kitunghii.ro",   name: "KitUnghii",    emoji: "💅" },
+  { href: "/pfarma",      slug: "pfarma.ro",      name: "pFarma",       emoji: "💊" },
 ];
 
 function faqItems(peste: string): { q: string; a: string }[] {
@@ -315,7 +320,12 @@ export default function HomeClient({
   const modMagazine = cautare !== "" || filtruActiv !== "toate" || peMagazine;
   // Peretele de logo-uri nu repeta magazinele din „Magazine populare", aflate chiar deasupra.
   const sluguriPopulare = new Set(populare.map((m) => m.magazin));
-  const perete = modMagazine ? faraPromotii : faraPromotii.filter((m) => !sluguriPopulare.has(m.magazin));
+  // EXCLUSE_ACASA (depox.ro) era scos doar din oferte; cu partenerii romanesti primii (06.10.2026)
+  // ajungea in primele logo-uri ale peretelui. Cautarea il gaseste in continuare.
+  const perete = modMagazine ? faraPromotii
+    : faraPromotii.filter((m) => !sluguriPopulare.has(m.magazin) && !EXCLUSE_ACASA.has(m.magazin));
+  // Magazinele din date: „Ghiduri dedicate" arata doar paginile de brand ale partenerilor (BRAND_PAGES).
+  const sluguriDate = useMemo(() => new Set(magazine.map((m) => m.magazin)), [magazine]);
 
   function dezvaluie(o: (typeof pool)[number]) {
     setDezvaluite((prev) => new Set(prev).add(o.cheie));
@@ -352,19 +362,18 @@ export default function HomeClient({
       {/* Fara JS (ad-blocker, eroare hidratare) -> IntersectionObserver nu mai adauga is-visible.
           Fara acest fallback continutul ar ramane opacity:0 permanent. */}
       <noscript><style>{`.gold-home .reveal { opacity: 1 !important; transform: none !important; }`}</style></noscript>
-      {/* ─── BUTON FLOTANT PRODUSE (burtiera) ─────────────────────────────── */}
+      {/* ─── BUTON FLOTANT PRODUSE ───────────────────────────────────────── */}
+      {/* 06.10.2026: era o pastila mare in MIJLOCUL ecranului, cu punct rosu pulsand si „HOT",
+          peste butoanele „Vezi oferta" ale cardurilor — si scria „Produse cu reducere", desi doar
+          133 din 20.264 de produse din feed au reducere. Acum: mic, in colt, text adevarat. */}
       <Link
         href="/produse"
-        aria-label="Vezi produsele cu reducere"
-        className={`fixed bottom-5 left-1/2 -translate-x-1/2 z-40 flex items-center gap-2.5 bg-gradient-to-r from-[#ddf93c] to-[#c3dd2c] hover:from-[#ddf93c] hover:to-[#ddf93c] text-[#0c1000] font-black pl-4 pr-5 py-3 rounded-full shadow-2xl shadow-[#ddf93c]/50 ring-2 ring-[#c3dd2c]/40 transition-all duration-300 hover:scale-105 ${showFab ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 translate-y-6 pointer-events-none"}`}
+        aria-label="Produse de la magazinele partenere"
+        className={`fixed bottom-4 right-4 z-40 flex items-center gap-2 bg-[#14181c]/95 backdrop-blur border border-[#2a2f36] hover:border-[#ddf93c]/60 text-[#ffffff] text-sm font-bold pl-3.5 pr-4 py-2.5 rounded-full shadow-lg shadow-black/40 transition-all duration-300 ${showFab ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 translate-y-4 pointer-events-none"}`}
       >
-        <span className="relative flex items-center justify-center w-8 h-8 rounded-full bg-[#1f2329] text-lg">
-          🛍️
-          <span className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full ring-2 ring-[#ddf93c] animate-pulse" />
-        </span>
-        <span className="text-sm leading-tight text-left">Produse cu<br/>reducere</span>
-        <span className="bg-[#1f2329] text-[10px] font-black px-2 py-0.5 rounded-full tracking-wide">HOT</span>
-        <span className="text-lg">→</span>
+        <span aria-hidden="true">🛍️</span>
+        Produse
+        <span className="text-[#ddf93c]" aria-hidden="true">→</span>
       </Link>
 
 
@@ -540,7 +549,7 @@ export default function HomeClient({
           </h1>
 
           <p className={`text-[#c9ced5] text-lg mb-6 max-w-lg mx-auto leading-relaxed ${codulZilei ? "lg:mx-0" : ""}`}>
-            Le strangem automat din retelele de afiliere si le aratam pe toate, gratuit.
+            Le strângem automat din rețelele de afiliere și le arătăm pe toate, gratuit.
           </p>
 
           {/* Cautare eliminata din hero (08.08.2026): scrollIntoView pe fiecare litera
@@ -553,7 +562,7 @@ export default function HomeClient({
             <span className="text-xs text-[#9399a0] font-medium mr-1">Populare:</span>
             {[
               { nume: "Notino",      slug: "notino.ro" },
-              { nume: "Dr.Max",      slug: "drmax.ro" },
+              { nume: "Dr. Max",     slug: "drmax.ro" },
               { nume: "Noriel",      slug: "noriel.ro" },
             ].map(c => (
               <Link key={c.slug} href={`/cod-reducere/${c.slug}`}
@@ -577,8 +586,8 @@ export default function HomeClient({
 
           {/* Trust row */}
           <div className={`flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs text-[#9399a0] font-medium ${codulZilei ? "lg:justify-start" : ""}`}>
-            <span className="flex items-center gap-1.5"><span className="text-[#ddf93c]">✓</span> Gratuit, fara cont</span>
-            <span className="flex items-center gap-1.5"><span className="text-[#ddf93c]">✓</span> {magazine.length > 0 ? `${magazine.length}+` : "380+"} magazine</span>
+            <span className="flex items-center gap-1.5"><span className="text-[#ddf93c]">✓</span> Gratuit, fără cont</span>
+            <span className="flex items-center gap-1.5"><span className="text-[#ddf93c]">✓</span> {magazine.length > 0 ? `${magazine.length} de magazine` : "Sute de magazine"}</span>
             <span className="flex items-center gap-1.5"><span className="text-[#ddf93c]">✓</span> Actualizat de 3 ori pe zi</span>
             <span className="flex items-center gap-1.5"><span className="text-[#ddf93c]">✓</span> 0 reclame invazive</span>
           </div>
@@ -1000,7 +1009,7 @@ export default function HomeClient({
                     magazinele partenere, alese pe categorii. */}
                 <p className="text-xs font-bold text-[#ddf93c] uppercase tracking-widest mb-2">DIN MAGAZINELE PARTENERE</p>
                 <h2 className="text-[2rem] md:text-[2.5rem] leading-[1.08] font-black tracking-tight text-[#ffffff]">Produse pe categorii</h2>
-                <p className="text-[#c9ced5] text-sm mt-1.5">Cate ceva din fiecare nisa, cu pretul la zi</p>
+                <p className="text-[#c9ced5] text-sm mt-1.5">Câte ceva din fiecare nișă, cu prețul la zi</p>
               </div>
               <Link href="/produse" className="hidden sm:flex items-center gap-1.5 text-sm font-bold text-[#ddf93c] hover:text-[#c3dd2c] border border-[#ddf93c]/30 hover:border-[#ddf93c]/60 bg-[#ddf93c]/10 hover:bg-[#ddf93c]/20 px-4 py-2 rounded-full whitespace-nowrap transition-all">
                 Toate produsele →
@@ -1138,7 +1147,7 @@ export default function HomeClient({
 
             <div className="text-center mt-10">
               <Link href="/produse" className="inline-flex items-center gap-2 text-sm font-bold text-[#c9ced5] hover:text-[#ddf93c] transition-colors">
-                Toate produsele cu reducere →
+                Toate produsele →
               </Link>
             </div>
           </div>
@@ -1147,7 +1156,7 @@ export default function HomeClient({
 
       {/* ─── REDUCERI MARI AZI ───────────────────────────────────────────── */}
       {!loading && (() => {
-        const ofertePct = magazine.flatMap(m =>
+        const ofertePct = magazine.filter(m => !EXCLUSE_ACASA.has(m.magazin)).flatMap(m =>
           m.promotii
             .filter(p => {
               const match = p.nume?.match(/(\d+)\s*%/);
@@ -1155,8 +1164,15 @@ export default function HomeClient({
             })
             .map(p => {
               const disc = parseInt(p.nume.match(/(\d+)\s*%/)![1]);
-              return { ...p, disc, magazin: m.magazin, logo: m.logo_url, url_mag: m.url_afiliat };
+              // „Reduceri de pana la -70%" nu e „-70%": badge-ul spune ce spune oferta (06.10.2026).
+              const panaLa = /p[aâ]n[aă]\s+la\s*-?\s*\d+\s*%|up\s+to\s*-?\s*\d+\s*%/i.test(p.nume || "");
+              // Cu cod: pagina magazinului, unde codul se vede intreg si clicul trece prin linkul
+              // afiliat; aici apare mascat. Fara cod: direct la oferta, prin linkPromotie (regula comuna).
+              const link = p.cod_cupon ? `/cod-reducere/${m.magazin}` : (linkPromotie(m, p) || "#");
+              return { ...p, disc, panaLa, link, magazin: m.magazin, logo: m.logo_url };
             })
+        // `magazine` vine cu partenerii romanesti intai (app/page.tsx); sortarea e stabila, deci la
+        // aceeasi reducere un magazin romanesc trece inaintea unuia strain.
         ).sort((a, b) => b.disc - a.disc).slice(0, 8);
 
         if (ofertePct.length < 3) return null;
@@ -1174,11 +1190,11 @@ export default function HomeClient({
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
                 {ofertePct.map((o, i) => {
-                  const link = o.landing_page || o.url_mag || "#";
-                  const name = o.magazin.split(".")[0];
-                  const name1 = name.charAt(0).toUpperCase() + name.slice(1);
+                  const name1 = numeAfisat(o.magazin);
+                  const extern = o.link.startsWith("http");
                   return (
-                    <a key={i} href={link} target="_blank" rel="sponsored noopener noreferrer"
+                    <a key={i} href={o.link}
+                      {...(extern ? { target: "_blank", rel: "sponsored noopener noreferrer" } : {})}
                       className="group bg-[#14181c] border border-[#1f2329] hover:border-red-500/40 rounded-xl p-4 flex flex-col gap-2 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-red-500/10">
                       <div className="flex items-center justify-between">
                         <div className="w-9 h-9 rounded-xl bg-[#ffffff] flex items-center justify-center shrink-0">
@@ -1188,13 +1204,15 @@ export default function HomeClient({
                             <span className="text-sm font-black text-[#ddf93c]">{name1[0]}</span>
                           )}
                         </div>
-                        <span className="bg-gradient-to-br from-[#34d399] to-[#ddf93c] text-[#0c1000] text-sm font-black px-2.5 py-1 rounded-lg">-{o.disc}%</span>
+                        <span className="bg-gradient-to-br from-[#34d399] to-[#ddf93c] text-[#0c1000] text-sm font-black px-2.5 py-1 rounded-lg whitespace-nowrap">
+                          {o.panaLa ? `până la ${o.disc}%` : `-${o.disc}%`}
+                        </span>
                       </div>
                       <p className="text-xs font-bold text-[#ffffff] mt-1">{name1}</p>
                       <p className="text-[11px] text-[#c9ced5] line-clamp-2 leading-tight">{o.nume}</p>
                       {o.cod_cupon && (
                         <div className="mt-auto bg-[#1f2329] border border-dashed border-[#ddf93c]/40 rounded-lg px-2 py-1 text-center">
-                          <span className="font-mono font-black text-[#ddf93c] text-xs tracking-widest">{o.cod_cupon}</span>
+                          <span className="font-mono font-black text-[#ddf93c] text-xs tracking-widest">{maskCod(o.cod_cupon)}</span>
                         </div>
                       )}
                     </a>
@@ -1212,14 +1230,14 @@ export default function HomeClient({
           <div className="max-w-7xl mx-auto">
             <div className="flex items-end justify-between mb-7">
               <div>
-                <p className="text-xs font-bold text-[#ddf93c] uppercase tracking-widest mb-2">⭐ RECOMANDATE DE NOI</p>
-                <h2 className="text-[2rem] md:text-[2.5rem] leading-[1.08] font-black tracking-tight text-[#ffffff]">Magazine de incredere</h2>
-                <p className="text-[#c9ced5] text-sm mt-1.5">Magazine cu oferte active chiar acum</p>
+                <p className="text-xs font-bold text-[#ddf93c] uppercase tracking-widest mb-2">OFERTE ACTIVE</p>
+                <h2 className="text-[2rem] md:text-[2.5rem] leading-[1.08] font-black tracking-tight text-[#ffffff]">Magazine cu oferte acum</h2>
+                <p className="text-[#c9ced5] text-sm mt-1.5">Parteneri cu cel puțin o ofertă activă chiar acum</p>
               </div>
               <Link href="/toate-magazinele" className="hidden sm:flex items-center gap-1.5 text-sm font-bold text-[#ddf93c] hover:text-[#c3dd2c] border border-[#ddf93c]/30 hover:border-[#ddf93c]/60 bg-[#ddf93c]/10 px-4 py-2 rounded-full whitespace-nowrap transition-colors">Toate magazinele →</Link>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-              {recomandate.map(r => (
+              {recomandate.filter(r => !EXCLUSE_ACASA.has(r.magazin)).map(r => (
                 <a key={r.magazin} href={`/cod-reducere/${r.magazin}`}
                   className="group bg-[#06080b] border border-[#1f2329] hover:border-[#ddf93c]/50 rounded-xl p-4 flex flex-col items-center text-center hover:-translate-y-0.5 transition-all duration-200">
                   <div className="w-12 h-12 rounded-xl bg-[#ffffff] flex items-center justify-center mb-2.5 overflow-hidden shrink-0">
@@ -1235,7 +1253,7 @@ export default function HomeClient({
                   {r.are_cod ? (
                     <span className="text-[10px] font-black text-emerald-400 bg-emerald-500/15 border border-emerald-500/25 px-2 py-0.5 rounded-full">COD ACTIV</span>
                   ) : (
-                    <span className="text-[10px] font-bold text-[#ddf93c] bg-[#ddf93c]/10 border border-[#ddf93c]/20 px-2 py-0.5 rounded-full">OFERTA</span>
+                    <span className="text-[10px] font-bold text-[#ddf93c] bg-[#ddf93c]/10 border border-[#ddf93c]/20 px-2 py-0.5 rounded-full">OFERTĂ</span>
                   )}
                 </a>
               ))}
@@ -1251,11 +1269,11 @@ export default function HomeClient({
           <div className="mb-6 flex items-center justify-between">
             <div>
               <p className="text-xs font-bold text-[#ddf93c] uppercase tracking-widest mb-1">MAGAZINE POPULARE</p>
-              <h2 className="text-xl font-black text-[#ffffff]">Ghiduri dedicate pentru cele mai cautate magazine</h2>
+              <h2 className="text-xl font-black text-[#ffffff]">Ghiduri dedicate pentru magazinele partenere cunoscute</h2>
             </div>
           </div>
           <div className="flex flex-wrap gap-2.5">
-            {BRAND_PAGES.map(b => (
+            {BRAND_PAGES.filter(b => sluguriDate.has(b.slug)).map(b => (
               <Link key={b.href} href={b.href}
                 className="flex items-center gap-2 bg-[#14181c] hover:bg-[#1f2329] border border-[#1f2329] hover:border-[#ddf93c]/40 text-[#c9ced5] hover:text-[#ffffff] rounded-xl px-4 py-2.5 text-sm font-semibold transition-all duration-200 hover:-translate-y-0.5">
                 <span className="text-base">{b.emoji}</span>
@@ -1273,8 +1291,8 @@ export default function HomeClient({
             <div className="flex items-end justify-between mb-8">
               <div>
                 <p className="text-xs font-bold text-[#ddf93c] uppercase tracking-widest mb-2">BLOG</p>
-                <h2 className="text-[2rem] md:text-[2.5rem] leading-[1.08] font-black tracking-tight text-[#ffffff]">Ghiduri si sfaturi</h2>
-                <p className="text-[#c9ced5] text-sm mt-1.5">Cum sa economisesti mai mult la cumparaturile online</p>
+                <h2 className="text-[2rem] md:text-[2.5rem] leading-[1.08] font-black tracking-tight text-[#ffffff]">Ghiduri și sfaturi</h2>
+                <p className="text-[#c9ced5] text-sm mt-1.5">Ce alegi și unde găsești ofertele de azi</p>
               </div>
               <Link href="/blog" className="hidden sm:flex items-center gap-1 text-sm font-bold text-[#ddf93c] hover:text-[#ddf93c] transition-colors">
                 Toate articolele
@@ -1371,7 +1389,7 @@ export default function HomeClient({
             Ofertele active, o data pe zi, pe email. Fara spam.
           </p>
           <div className="flex flex-wrap justify-center gap-5 text-xs text-[#c9ced5] mb-8 font-medium">
-            {["Gratuit", "Fara spam", "Dezabonare oricand", "0 reclame"].map(t => (
+            {["Gratuit", "Fără spam", "Dezabonare oricând", "Doar oferte active"].map(t => (
               <span key={t} className="flex items-center gap-1.5">
                 <span className="text-emerald-500">✓</span> {t}
               </span>
@@ -1387,10 +1405,10 @@ export default function HomeClient({
             <span className="w-14 h-14 shrink-0 rounded-xl bg-[#ddf93c]/12 flex items-center justify-center text-3xl">🧩</span>
             <span className="flex-1 text-center sm:text-left">
               <span className="block font-black text-[#ffffff] text-lg mb-1">Extensia AmCupon pentru Chrome</span>
-              <span className="block text-sm text-[#c9ced5]">Cauta automat coduri de reducere in locul tau, direct la checkout. Gratuit.</span>
+              <span className="block text-sm text-[#c9ced5]">Îți arată ofertele și codurile active pe magazinul pe care ești. Nu e încă publicată: lasă-ți emailul și te anunțăm.</span>
             </span>
             <span className="shrink-0 bg-[#ddf93c] group-hover:bg-[#ddf93c] text-[#0c1000] font-bold text-sm px-5 py-2.5 rounded-xl transition-colors">
-              Afla mai mult →
+              Anunță-mă →
             </span>
           </Link>
         </div>
@@ -1408,13 +1426,13 @@ export default function HomeClient({
                 <span className="font-black text-[#ffffff] text-xl tracking-tight">Cupon<span className="text-[#ddf93c]">.ro</span></span>
               </div>
               <p className="text-sm leading-relaxed mb-5">
-                Coduri de reducere actualizate zilnic. Cel mai rapid mod de a economisi la cumparaturile online din Romania.
+                Coduri de reducere și oferte active de la magazinele partenere, actualizate zilnic.
               </p>
               <div className="flex items-center gap-2 bg-[#1f2329] rounded-xl px-3 py-2 text-xs mb-5 w-fit">
                 <svg className="w-3.5 h-3.5 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
                 </svg>
-                SSL 256-bit · GDPR Conform
+                Conexiune HTTPS securizată
               </div>
               <div className="flex items-center gap-2">
                 {[
@@ -1499,7 +1517,7 @@ export default function HomeClient({
                   { href: "/gadgets",          label: "Gadgets & Tech" },
                   { href: "/idei-cadouri",     label: "Idei Cadouri" },
                   { href: "/flori",            label: "Flori & Buchete" },
-                  { href: "/produse",          label: "Produse cu reducere" },
+                  { href: "/produse",          label: "Produse de la parteneri" },
                   { href: "/blog",             label: "Blog" },
                   { href: "/categorii",        label: "Toate categoriile" },
                   { href: "/toate-magazinele", label: "Toate magazinele" },

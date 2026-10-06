@@ -417,11 +417,11 @@ export default function ProduseClient({
           <h1 className="text-4xl md:text-6xl font-black tracking-tight leading-tight mb-4">
             <span className="text-[#ffffff]">Cumpara mai inteligent</span><br/>
             <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #ddf93c 0%, #ddf93c 100%)"}}>
-              reduceri reale, {an}
+              oferte reale, {an}
             </span>
           </h1>
           <p className="text-[#c9ced5] text-lg mb-8 max-w-lg mx-auto">
-            Top deals zilnice, feed-uri de produse si campanii vizuale de la {magazine.length}+ magazine partenere.
+            Ofertele active, produsele cu prețul la zi și campaniile magazinelor partenere.
           </p>
           {/* Stats */}
           <div className="flex flex-wrap justify-center gap-8 text-sm">
@@ -629,7 +629,7 @@ export default function ProduseClient({
               <p className="text-4xl mb-4">📦</p>
               <h3 className="font-black text-[#c9ced5] text-xl mb-2">Feed-urile se populeaza</h3>
               <p className="text-[#9399a0] text-sm mb-6 max-w-md mx-auto">
-                Produsele din feed-urile de afiliati se actualizeaza zilnic la 08:00. Intre timp, vezi ofertele din tab-ul Top Deals.
+                Produsele din feed-urile magazinelor se actualizează de mai multe ori pe zi. Între timp, vezi ofertele din tab-ul Top Deals.
               </p>
               <button onClick={() => setActiveTab("oferte")}
                 className="bg-[#ddf93c] text-[#0c1000] font-bold px-6 py-3 rounded-xl hover:bg-[#ddf93c] transition-colors text-sm">
@@ -782,9 +782,9 @@ export default function ProduseClient({
           <p className="text-xs font-bold text-[#9399a0] uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { href: "/",               emoji: "🔥", label: "Coduri de reducere",   desc: "Toate codurile verificate" },
+              { href: "/",               emoji: "🔥", label: "Coduri de reducere",   desc: "Toate codurile active" },
               { href: "/categorii",      emoji: "📂", label: "Categorii",             desc: "Fashion, Tech, Beauty..." },
-              { href: "/toate-magazinele",emoji:"🏪", label: "Toate magazinele",       desc: `${magazine.length}+ magazine partenere` },
+              { href: "/toate-magazinele",emoji:"🏪", label: "Toate magazinele",       desc: `${magazine.length} de magazine` },
               { href: "/blog",           emoji: "📝", label: "Blog & Ghiduri",         desc: "Cum sa economisesti mai mult" },
             ].map(s => (
               <a key={s.href} href={s.href}

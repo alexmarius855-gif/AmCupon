@@ -27,7 +27,7 @@ const CATEGORII = [
 export const REDUCERI = [
   { href: "/oferte-azi",      label: "Oferte de azi" },
   { href: "/top-reduceri",    label: "Top reduceri" },
-  { href: "/produse",         label: "Produse la reducere" },
+  { href: "/produse",         label: "Produse de la parteneri" },
   { href: "/black-friday",    label: "Black Friday" },
   { href: "/craciun",         label: "Reduceri Craciun" },
   { href: "/idei-cadouri",    label: "Idei cadouri" },

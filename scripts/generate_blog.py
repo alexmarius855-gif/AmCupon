@@ -47,10 +47,9 @@ CATEGORII_ROUNDUP = [
 ]
 
 
-def nume_afisat(magazin: str) -> str:
-    return " ".join(
-        w.capitalize() for w in magazin.split(".")[0].replace("-", " ").split()
-    )
+# Numele magazinului: scripts/nume_magazin.py, acelasi rezultat ca numeAfisat() din frontend
+# (06.10.2026 — copia naiva de aici scria „Cod Reducere Us" pentru us.lemorele.com).
+from nume_magazin import nume_afisat  # noqa: E402
 
 
 def slug_articol_magazin(magazin: str, luna: str, an: int) -> str:

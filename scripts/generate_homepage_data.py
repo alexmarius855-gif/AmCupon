@@ -173,6 +173,12 @@ def gen_blog():
 
     # Sorteaza dupa data descrescator (cele mai noi primele)
     posts_sorted = sorted(posts, key=lambda p: p.get("date", ""), reverse=True)
+    # 06.10.2026: sectiunea de pe prima pagina se numeste „Ghiduri si sfaturi", dar lua ultimele
+    # articole dupa data — adica mereu pagini lunare „Cod Reducere X", generate in fiecare zi.
+    # Ghidurile („Cel mai bun X", articolele care primesc cautari) nu apareau niciodata. Ghidurile
+    # intai, apoi restul; ordinea dupa data ramane in fiecare grup.
+    ordine_tip = {"best-of": 0, "magazin": 2}          # categorie / roundup / fara tip: 1
+    posts_sorted = sorted(posts_sorted, key=lambda p: ordine_tip.get(p.get("tip"), 1))
 
     # Pastreaza doar campurile necesare pe homepage (FARA content — economie majora)
     light = [

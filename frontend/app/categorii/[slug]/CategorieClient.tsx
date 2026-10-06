@@ -157,12 +157,13 @@ export default function CategorieClient({ magazine, numeCategorie, slug, produse
           </section>
         )}
 
-        {/* PRODUSE LA REDUCERE (din feed) — umple categoria cu dovada vizuala */}
+        {/* PRODUSE (din feed) — umple categoria cu dovada vizuala. Titlul spunea „la reducere”, dar
+            produsele din feed au pretul de raft (06.10.2026: 133 din 20.264 au reducere). */}
         {produse.length >= 4 && (
           <section className="mb-10">
             <div className="flex items-center justify-between gap-3 mb-5">
               <div className="flex items-center gap-3">
-                <h2 className="text-xl font-black text-[#ffffff]">Produse la reducere {numeCategorie}</h2>
+                <h2 className="text-xl font-black text-[#ffffff]">Produse din {numeCategorie}</h2>
                 <span className="text-sm text-[#9399a0]">{produse.length} produse</span>
               </div>
               <Link href="/produse" className="hidden sm:inline text-xs font-bold text-[#ddf93c] hover:text-[#c3dd2c] transition-colors">Toate produsele →</Link>
