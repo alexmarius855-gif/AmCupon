@@ -1,13 +1,13 @@
 {
   "generat": "2026-10-06",
   "total_magazine": 958,
-  "cu_promotie": 126,
+  "cu_promotie": 127,
   "cu_cod_real": 24,
-  "doar_oferta": 102,
-  "procent_cu_promotie": 13.2,
+  "doar_oferta": 103,
+  "procent_cu_promotie": 13.3,
   "procent_cu_cod": 2.5,
-  "reducere_mediana_generala": 20,
-  "magazine_cu_procent_declarat": 81,
+  "reducere_mediana_generala": 22.5,
+  "magazine_cu_procent_declarat": 82,
   "categorii": [
     {
       "slug": "cadouri-flori",
@@ -37,9 +37,18 @@
       "esantion": 7
     },
     {
+      "slug": "fashion",
+      "nume": "Fashion",
+      "magazine": 79,
+      "cu_promotie": 16,
+      "reducere_mediana": 25.0,
+      "reducere_max": 55,
+      "esantion": 10
+    },
+    {
       "slug": "electronice",
       "nume": "Electronice & IT",
-      "magazine": 83,
+      "magazine": 84,
       "cu_promotie": 12,
       "reducere_mediana": 25,
       "reducere_max": 75,
@@ -57,20 +66,11 @@
     {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
-      "magazine": 126,
+      "magazine": 124,
       "cu_promotie": 21,
       "reducere_mediana": 21.0,
       "reducere_max": 82,
       "esantion": 12
-    },
-    {
-      "slug": "fashion",
-      "nume": "Fashion",
-      "magazine": 78,
-      "cu_promotie": 15,
-      "reducere_mediana": 20,
-      "reducere_max": 55,
-      "esantion": 9
     },
     {
       "slug": "software",
