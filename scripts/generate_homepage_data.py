@@ -54,8 +54,10 @@ MERCHANT_CAT_OVERRIDE: dict[str, str] = {
     "foglia.ro":             "home-garden",   # chiuvete/baie/bucatarie (NU beauty!)
     "sofiline.ro":           "fashion",
     "sevensins.ro":          "fashion",
-    # carturesti.ro feed = figurine/colectii (Funko etc.), NU carti -> games
-    "carturesti.ro":         "games",
+    # carturesti.ro: FARA override (06.10.2026). Pe 21.06 feed-ul era de figurine -> „games";
+    # pe 06.10 era de carti, afisate sub „Gaming", plus obiecte (suport de laptop) care n-au ce
+    # cauta nici la „Carti". Cartile le recunoaste acum formatul „Titlu | Autor" (_RE_CARTE_AUTOR),
+    # figurinele regula „funko"; restul ramane neclasificat si nu intra in vitrina.
     # depox.ro: vinde arme/autoaparare (spray paralizant, electrosoc, cutite, baston)
     # + gadgeturi disparate -> EXCLUS complet din homepage (vezi MERCHANT_GRID_BLOCKLIST)
 }
@@ -84,7 +86,9 @@ TITLE_CAT_KEYWORDS: list[tuple[str, list[str]]] = [
                              "perdea", "lampa", "gradina", "planta", "cuvertura", "patura",
                              "espressor", "cafetiera", "aspirator", "masina de spalat",
                              "masina de cafea", "tigaie", "oala", "set cutite", "mobilier"]),
-    ("games",               ["figurina", "funko", "board game", "joc de societate",
+    # „figurina" scos 06.10.2026: trimitea la „Gaming" si figurine de Craciun, ceasuri de perete,
+    # oua-surpriza. Figurinele de colectie le prinde „funko".
+    ("games",               ["funko", "board game", "joc de societate",
                              "carti de joc", "monopoly", "lorcana", "catan", "zaruri",
                              "card sleeves", "set magnetic", "joc de carti", "puzzle 1000"]),
     ("books",               ["carte", "carti", "roman", "literatura", "antologie", "beletristica",
@@ -128,7 +132,16 @@ _CAT_PATTERNS = [
 ]
 
 
+# Cartile de la librarii vin ca „Titlu | Autor" („Prima iubire | Francine Prose", „Muzica | Larousse").
+# Fara cuvantul „carte" in titlu, regula de cuvinte nu le recunostea (06.10.2026).
+_RE_CANTITATE = re.compile(r"\d+(?:[.,]\d+)?\s?(?:g|gr|kg|mg|ml|l|cl|cm|mm|m|buc|bucati|capsule|tablete|x\d+)\b", re.I)
+_RE_CARTE_AUTOR = re.compile(r"^[^|]{2,90}\s\|\s[A-ZĂÂÎȘȚ][\w.'-]+(?:\s[A-ZĂÂÎȘȚ][\w.'-]+){0,3}\s*$")
+
+
 def _detect_cat_from_title(title: str) -> str:
+    # cu o cantitate inaintea barei („Ghimbir Pudra 100g | Fără ...") e un produs, nu o carte
+    if _RE_CARTE_AUTOR.match((title or "").strip()) and not _RE_CANTITATE.search((title or "").split("|")[0]):
+        return "books"
     t = _strip_diacritics(title.lower())
     for cat_slug, pat in _CAT_PATTERNS:
         if pat.search(t):
@@ -250,6 +263,13 @@ def selecteaza_pentru_vitrina(prods: list, n: int) -> list:
          echipamente profesionale ratacite intr-un feed de retail;
       3. abia acum sorteaza: reducere reala intai (aia promite titlul), apoi pretul;
       4. maxim 3 per magazin — o vitrina cu 5 produse de la acelasi magazin nu e vitrina.
+
+    06.10.2026 — pasul 3 mai avea o problema: dupa plafonul de la percentila 85, „apoi pretul"
+    insemna tot pret DESCRESCATOR, deci vitrina lua mereu produsele lipite de plafon: toate
+    electronicele intre 2.099 si 2.199 lei, toate produsele de frumusete la ~160 lei (parfumuri cu
+    feromoni de la un sex-shop). Acum, dupa reducerile reale, restul se alege la distante egale pe
+    toata plaja de pret (si sub percentila 15 taiem accesoriile de cativa lei) — de la buget la
+    premium, cum ar arata o vitrina facuta de mana.
     """
     # 1. familii
     vazute, unice = set(), []
@@ -260,17 +280,28 @@ def selecteaza_pentru_vitrina(prods: list, n: int) -> list:
         vazute.add(fam)
         unice.append(p)
 
-    # 2. extremele de sus, calculate pe toata categoria
+    # 2. extremele, calculate pe toata categoria: sus echipamente profesionale, jos accesorii de
+    #    cativa lei (un cablu sau o rezerva nu reprezinta o categorie)
     PRAG_ESANTION = 20          # sub atat, o percentila e zgomot, nu masuratoare
     if len(unice) >= PRAG_ESANTION:
         preturi = sorted((p.get("price") or 0) for p in unice)
         plafon = preturi[int(len(preturi) * 0.85)]
-        fara_extreme = [p for p in unice if (p.get("price") or 0) <= plafon]
+        podea = preturi[int(len(preturi) * 0.15)]
+        fara_extreme = [p for p in unice if podea <= (p.get("price") or 0) <= plafon]
         if len(fara_extreme) >= n:      # nu goli categoria ca sa fii elegant
             unice = fara_extreme
 
-    # 3. ordinea
-    unice.sort(key=lambda x: (-(x.get("discount_pct") or 0), -(x.get("price") or 0)))
+    # 3. ordinea: reducerile reale intai; restul la distante egale pe plaja de pret
+    cu_reducere = sorted((p for p in unice if (p.get("discount_pct") or 0) > 0),
+                         key=lambda x: -(x.get("discount_pct") or 0))
+    restul = sorted((p for p in unice if not (p.get("discount_pct") or 0) > 0),
+                    key=lambda x: x.get("price") or 0)
+    locuri = max(n - len(cu_reducere), 1)
+    if len(restul) > locuri:
+        pozitii = sorted({round(i * (len(restul) - 1) / max(locuri - 1, 1)) for i in range(locuri)})
+        alese = set(pozitii)
+        restul = [restul[i] for i in pozitii] + [p for i, p in enumerate(restul) if i not in alese]
+    unice = cu_reducere + restul
 
     # 4. varietate de magazine
     MAX_PER_MAGAZIN = 3
@@ -287,7 +318,10 @@ def selecteaza_pentru_vitrina(prods: list, n: int) -> list:
     if len(ales) < n:
         deja = {id(p) for p in ales}
         ales += [p for p in unice if id(p) not in deja][: n - len(ales)]
-    return ales[:n]
+    # Afisare: reducerile reale primele, apoi de la ieftin la scump.
+    ales = ales[:n]
+    ales.sort(key=lambda x: (-(x.get("discount_pct") or 0), x.get("price") or 0))
+    return ales
 
 
 def gen_products():

@@ -239,5 +239,22 @@ for brut, curat in [
 ]:
     verifica(f"curata_titlu({brut[:38]}…)", fpf.curata_titlu(brut), curat)
 
+print("\n9. Continut restrictionat: in fisierul separat, nu in listarile generale")
+import continut_restrictionat as cr  # noqa: E402
+verifica("lista se citeste din oferteAcasa.ts (depox + sex-shop-uri)",
+         {"depox.ro", "intimplay.ro", "diblongromania.ro"} <= cr.MAGAZINE_EXCLUSE, True)
+for produs, asteptat in [
+    ({"merchant": "intimplay.ro", "title": "Parfum cu feromoni Popularity 50 ml"}, True),
+    ({"merchant_slug": "depox.ro", "merchant": "Depox", "title": "Lanterna tactica"}, True),
+    ({"merchant": "olmarkt.ro", "title": "Vibrator Loveline pentru punctul G"}, True),
+    ({"merchant": "primefarma.ro", "title": "Gel Anal Intimeco Black Edition, 150ml"}, True),
+    ({"merchant": "drmax.ro", "title": "Prezervative Durex Extended Pleasure X3"}, False),
+    ({"merchant": "ceasuri-shop.ro", "title": "Ceas NORTH EDGE FORTRESS Analog-Digital"}, False),
+    ({"merchant": "autobob.ro", "title": "Degrippant - Lubrifiant Bardahl Renault 400ml"}, False),
+    ({"merchant": "edogkalypsoland.ro", "title": "Bici plastic simplu pentru dresaj"}, False),
+    ({"merchant": "xxxlutz.ro", "title": "Canapea extensibila 3 locuri"}, False),
+]:
+    verifica(f"e_restrictionat({produs.get('merchant')}: {produs['title'][:28]})", cr.e_restrictionat(produs), asteptat)
+
 print("\nToate verificarile au trecut." if not esecuri else f"\n{esecuri} verificari picate.")
 sys.exit(1 if esecuri else 0)

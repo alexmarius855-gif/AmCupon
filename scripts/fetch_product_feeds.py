@@ -1349,6 +1349,11 @@ def main():
             with open(output_path, "r", encoding="utf-8") as _f:
                 _vechi_fisier = json.load(_f)
             _vechi = _vechi_fisier.get("products", []) if isinstance(_vechi_fisier, dict) else _vechi_fisier
+            # Produsele restrictionate (06.10.2026) stau in fisierul lor; memoria le acopera la fel.
+            _cale_r = os.path.join(os.path.dirname(output_path), "products-restrictionate.json")
+            if os.path.exists(_cale_r):
+                with open(_cale_r, "r", encoding="utf-8") as _fr:
+                    _vechi = list(_vechi) + ((json.load(_fr) or {}).get("products") or [])
             _data_fisier = (_vechi_fisier.get("updated") or "")[:10] if isinstance(_vechi_fisier, dict) else ""
             for _p in _vechi:
                 # Doar produsele din feed. Cele din promotii (`feed_id: "promo"`) le reface
@@ -1592,13 +1597,28 @@ def main():
         for _x in _m[:40]:
             print(f"     {sum(1 for p in all_products if p.get('merchant') == _x):6d}  {_x}")
         return
+    # ── Listarile generale nu primesc produse restrictionate (06.10.2026) ─────
+    # Arme (depox.ro), magazine pentru adulti si produse explicite de la alte magazine — regula in
+    # continut_restrictionat.py, lista de magazine din frontend/lib/oferteAcasa.ts (EXCLUSE_ACASA).
+    # Le citeste DOAR pagina magazinului lor (app/cod-reducere/[magazin]/page.tsx).
+    from continut_restrictionat import e_restrictionat
+    restrictionate = [p for p in all_products if e_restrictionat(p)]
+    all_products = [p for p in all_products if not e_restrictionat(p)]
+    if restrictionate:
+        print(f"  - {len(restrictionate)} produse restrictionate -> products-restrictionate.json "
+              f"(nu apar in listarile generale)")
+
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    acum_iso = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump({
-            "updated":  datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "updated":  acum_iso,
             "count":    len(all_products),
             "products": all_products,
         }, f, ensure_ascii=False, indent=2)
+    with open(os.path.join(os.path.dirname(output_path), "products-restrictionate.json"), "w", encoding="utf-8") as f:
+        json.dump({"updated": acum_iso, "count": len(restrictionate), "products": restrictionate},
+                  f, ensure_ascii=False, indent=1)
 
     if rotatie_de_salvat is not None:
         try:

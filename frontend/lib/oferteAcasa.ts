@@ -40,7 +40,14 @@ export type FiltruAcasa = "toate" | "cod" | "oferta" | "curand";
 
 // depox.ro vinde spray paralizant si electrosocuri — scos de pe prima pagina din 21.06.2026
 // (MERCHANT_GRID_BLOCKLIST in scripts/generate_homepage_data.py). Aceeasi regula aici.
-export const EXCLUSE_ACASA: ReadonlySet<string> = new Set(["depox.ro"]);
+// 06.10.2026: si magazinele pentru adulti (sex-shop, afrodisiace) — 83 de produse explicite de la
+// intimplay.ro ajungeau in catalogul general (/produse, categorii, nise), iar ofertele lor puteau
+// intra pe prima pagina. Raman pe site (pagina proprie, cautare), dar nu in listarile generale.
+// LISTA UNICA: scripts/continut_restrictionat.py o citeste de aici, pentru produsele din feed.
+export const EXCLUSE_ACASA: ReadonlySet<string> = new Set([
+  "depox.ro",
+  "intimplay.ro", "erosvita.ro", "erotic24.ro", "intimax.ro", "sexonic.eu", "diblongromania.ro",
+]);
 
 // Text scris pentru un cititor roman: diacritice sau cuvinte uzuale. Ofertele in engleza
 // ale magazinelor straine raman pe pagina, dar dupa cele romanesti.

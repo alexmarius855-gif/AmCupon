@@ -523,6 +523,7 @@ jobs:
           git add frontend/public/blog-latest.json     || true
           git add frontend/public/blog-covers          || true
           git add frontend/public/products.json        || true
+          git add frontend/public/products-restrictionate.json || true
           git add data/rotatie-feeduri-2p.json         || true
           git add frontend/public/products-home.json   || true
           git add frontend/public/recomandate.json     || true

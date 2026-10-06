@@ -305,15 +305,37 @@ function loadIstoric(): { de_la: string; magazine: Record<string, IntrareIstoric
   return _istoricCache;
 }
 
+let _restrictionateCache: Produs[] | null = null;
+/**
+ * Produsele scoase din listarile generale (arme, magazine pentru adulti, produse explicite —
+ * scripts/continut_restrictionat.py, 06.10.2026). Le arata DOAR pagina magazinului lor.
+ */
+function loadRestrictionate(): Produs[] {
+  if (_restrictionateCache) return _restrictionateCache;
+  try {
+    const p = path.join(process.cwd(), "public", "products-restrictionate.json");
+    const raw = fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, "utf-8")) : [];
+    _restrictionateCache = ((raw && raw.products) || raw || []) as Produs[];
+  } catch {
+    _restrictionateCache = [];
+  }
+  return _restrictionateCache;
+}
+
 function loadProducts(slug: string): Produs[] {
   try {
+    const s = slug.toLowerCase();
     const all: Produs[] = loadAllProducts();
-    return all.filter((pr) => {
+    const generale = all.filter((pr) => {
       const ms = (pr.merchant_slug || "").toLowerCase();
       const mn = (pr.merchant || "").toLowerCase();
-      const s = slug.toLowerCase();
       return ms === s || mn === s || ms.startsWith(s.split(".")[0]) || mn.includes(s.split(".")[0]);
-    })
+    });
+    // Potrivire EXACTA pentru cele restrictionate: cea de sus e pe subsir („in" ar prinde
+    // „intimplay"), iar aici un subsir ar duce produse explicite pe pagina altui magazin.
+    const proprii = loadRestrictionate().filter((pr) =>
+      (pr.merchant_slug || "").toLowerCase() === s || (pr.merchant || "").toLowerCase() === s);
+    return [...generale, ...proprii]
       // 22.09.2026: acelasi prag ca la statistici (PRET_MINIM_CREDIBIL). Reparatia din
       // 20.09 a curatat INTERVALUL de pret, dar lista de produse a ramas neatinsa, si
       // pagina bazarulonline.ro afisa „0 lei" de unsprezece ori — preturi unitare dintr-un
