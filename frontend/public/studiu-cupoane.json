@@ -1,13 +1,13 @@
 {
-  "generat": "2026-10-05",
-  "total_magazine": 957,
-  "cu_promotie": 122,
+  "generat": "2026-10-06",
+  "total_magazine": 958,
+  "cu_promotie": 126,
   "cu_cod_real": 24,
-  "doar_oferta": 98,
-  "procent_cu_promotie": 12.7,
+  "doar_oferta": 102,
+  "procent_cu_promotie": 13.2,
   "procent_cu_cod": 2.5,
-  "reducere_mediana_generala": 20.0,
-  "magazine_cu_procent_declarat": 78,
+  "reducere_mediana_generala": 20,
+  "magazine_cu_procent_declarat": 81,
   "categorii": [
     {
       "slug": "cadouri-flori",
@@ -21,11 +21,11 @@
     {
       "slug": "carti-educatie",
       "nume": "Cărți & educație",
-      "magazine": 29,
-      "cu_promotie": 8,
-      "reducere_mediana": 50,
+      "magazine": 30,
+      "cu_promotie": 10,
+      "reducere_mediana": 45.0,
       "reducere_max": 90,
-      "esantion": 5
+      "esantion": 6
     },
     {
       "slug": "beauty",
@@ -46,9 +46,27 @@
       "esantion": 9
     },
     {
+      "slug": "copii",
+      "nume": "Copii & familie",
+      "magazine": 29,
+      "cu_promotie": 5,
+      "reducere_mediana": 25.0,
+      "reducere_max": 33,
+      "esantion": 4
+    },
+    {
+      "slug": "casa-gradina",
+      "nume": "Casă & grădină",
+      "magazine": 126,
+      "cu_promotie": 21,
+      "reducere_mediana": 21.0,
+      "reducere_max": 82,
+      "esantion": 12
+    },
+    {
       "slug": "fashion",
       "nume": "Fashion",
-      "magazine": 79,
+      "magazine": 78,
       "cu_promotie": 15,
       "reducere_mediana": 20,
       "reducere_max": 55,
@@ -82,15 +100,6 @@
       "esantion": 9
     },
     {
-      "slug": "copii",
-      "nume": "Copii & familie",
-      "magazine": 29,
-      "cu_promotie": 4,
-      "reducere_mediana": 20,
-      "reducere_max": 30,
-      "esantion": 3
-    },
-    {
       "slug": "sanatate",
       "nume": "Sănătate & farmacie",
       "magazine": 48,
@@ -98,15 +107,6 @@
       "reducere_mediana": 17.5,
       "reducere_max": 50,
       "esantion": 4
-    },
-    {
-      "slug": "casa-gradina",
-      "nume": "Casă & grădină",
-      "magazine": 125,
-      "cu_promotie": 20,
-      "reducere_mediana": 17,
-      "reducere_max": 82,
-      "esantion": 11
     },
     {
       "slug": "sport",
