@@ -61,3 +61,46 @@ export function sectiunePentru(tema: string, opt: { filtru?: RegExp; minMagazine
     .filter((p) => !opt.filtru || opt.filtru.test(normTitlu(p.title)));
   return sectiuneTema(lista, 4, opt.minMagazine);
 }
+
+/**
+ * Un model recomandat intr-un articol, cautat in feed-ul partenerilor (scripts/articole_verificate.py
+ * -> campul `oferte_modele`). 07.10.2026: ca la Wirecutter/RTINGS, sub fiecare model recomandat apare
+ * oferta de azi, daca un partener cu link platit il are — nu doar o lista generica la finalul articolului.
+ */
+export interface ModelCautat {
+  /** Inceputul titlului H3 din articol sub care apare oferta. */
+  titlu: string;
+  /** Toate trebuie sa apara in titlul produsului (normalizat). */
+  cauta: string[];
+  /** Tipul produsului, la inceputul titlului: „telefon|smartphone", „laptop|ultrabook|notebook"... */
+  tip: string;
+  /** Nu trebuie sa apara (ex. „max" ca iPhone 18 Pro sa nu prinda Pro Max). */
+  fara?: string[];
+}
+
+export interface OfertaModel {
+  titlu: string;
+  magazin: string;
+  pret: number;
+  url: string;
+  variante: number;
+}
+
+/** Cea mai ieftina oferta noua (nu resigilata) a modelului, la un partener cu link platit, sau null. */
+export function ofertaModel(m: ModelCautat): OfertaModel | null {
+  const linkuri = linkuriPlatite();
+  const tip = new RegExp(`^(?:${m.tip})\\b`);
+  const cauta = m.cauta.map((x) => normTitlu(x));
+  const fara = (m.fara || []).map((x) => normTitlu(x));
+  const gasite = feed().products.filter((p) => {
+    const t = normTitlu(p.title);
+    return !!p.merchant_slug && linkuri.has(p.merchant_slug) && !p.is_promo
+      && !!p.url && GAZDE_TRACKING.test(p.url)
+      && typeof p.price === "number" && p.price >= 50
+      && tip.test(t) && cauta.every((x) => t.includes(x)) && !fara.some((x) => t.includes(x))
+      && !/\b(resigilat|reconditionat|second hand|folosit|refurbished)\b/.test(t);
+  });
+  if (gasite.length === 0) return null;
+  const p = gasite.reduce((a, b) => ((b.price as number) < (a.price as number) ? b : a));
+  return { titlu: p.title || "", magazin: p.merchant_slug || "", pret: p.price as number, url: p.url as string, variante: gasite.length };
+}

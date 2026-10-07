@@ -43,11 +43,115 @@ CUM_AM_ALES = (
     "des, așa că nu le scriem aici: le vezi la magazin."
 )
 
+# Modelul -> oferta din feed. `titlu` = inceputul titlului H3 din articol; `cauta` = toate in titlul produsului
+# (minuscule, fara diacritice); `tip` = cuvantul cu care incepe titlul produsului; `fara` = excluderi.
+def M(titlu, cauta, tip, fara=None):
+    return {"titlu": titlu, "cauta": cauta, "tip": tip, **({"fara": fara} if fara else {})}
+
+
+TEL = "telefon|smartphone"
+LAP = "laptop|ultrabook|notebook"
+MODELE = {
+    "cel-mai-bun-telefon-pentru-poze-2026": [
+        M("iPhone 18 Pro", ["iphone 18 pro"], TEL, ["max"]),
+        M("Samsung Galaxy S26 Ultra", ["galaxy s26 ultra"], TEL),
+        M("Google Pixel 11 Pro", ["pixel 11 pro"], TEL, ["xl"]),
+        M("Xiaomi 17 Ultra", ["xiaomi 17 ultra"], TEL),
+        M("Huawei Pura 80 Ultra", ["pura 80 ultra"], TEL),
+    ],
+    "cel-mai-bun-telefon-samsung-2026": [
+        M("Galaxy S26 Ultra", ["galaxy s26 ultra"], TEL),
+        M("Galaxy S26 —", ["galaxy s26"], TEL, ["ultra", " fe", "s26+", "plus", "edge"]),
+        M("Galaxy S26 FE", ["galaxy s26 fe"], TEL),
+        M("Galaxy A57", ["galaxy a57"], TEL),
+        M("Galaxy A37", ["galaxy a37"], TEL),
+    ],
+    "cele-mai-bune-casti-wireless-2026": [
+        M("Sony WH-1000XM6", ["1000xm6"], "casti", ["wf"]),
+        M("Bose QuietComfort Ultra", ["quietcomfort ultra"], "casti", ["earbuds"]),
+        M("Apple AirPods Max", ["airpods max"], "casti"),
+        M("AirPods Pro 3", ["airpods pro 3"], "casti"),
+        M("Sony WF-1000XM6", ["wf-1000xm6"], "casti"),
+        M("Samsung Galaxy Buds4 Pro", ["buds4 pro"], "casti"),
+    ],
+    "cel-mai-bun-smartwatch-2026": [
+        M("Apple Watch Series 12", ["apple watch series 12"], "smartwatch|ceas"),
+        M("Apple Watch Ultra 4", ["apple watch ultra 4"], "smartwatch|ceas"),
+        M("Samsung Galaxy Watch9", ["galaxy watch9"], "smartwatch|ceas", ["classic"]),
+        M("Samsung Galaxy Watch Ultra2", ["galaxy watch ultra2"], "smartwatch|ceas"),
+        M("Garmin Forerunner 570", ["forerunner 570"], "smartwatch|ceas"),
+        M("Garmin Instinct 3 Solar", ["instinct 3", "solar"], "smartwatch|ceas"),
+    ],
+    "cea-mai-buna-friteuza-aer-2026": [
+        M("Philips Airfryer 3000 Series L", ["hd9252"], "friteuza|airfryer"),
+        M("Philips Airfryer 5000 Series XXL", ["hd9285"], "friteuza|airfryer"),
+        M("Ninja Foodi MAX Dual Zone", ["af400"], "friteuza|airfryer"),
+        M("Ninja Double Stack XL", ["sl400"], "friteuza|airfryer"),
+        M("Tefal Dual Easy Fry", ["ey905"], "friteuza|airfryer"),
+    ],
+    "cea-mai-buna-masina-de-cafea-2026": [
+        M("De'Longhi Dinamica Plus", ["dinamica plus"], "espressor|expresor|aparat"),
+        M("Philips 5400 LatteGo", ["5400", "lattego"], "espressor|expresor|aparat"),
+        M("De'Longhi Magnifica Start", ["magnifica start"], "espressor|expresor|aparat"),
+        M("De'Longhi La Specialista Arte", ["specialista arte"], "espressor|expresor|aparat"),
+        M("Nespresso Vertuo Pop", ["vertuo pop"], "espressor|expresor|aparat|cafetiera"),
+    ],
+    "cel-mai-bun-aspirator-robot-2026": [
+        M("Roborock Saros 10R", ["saros 10r"], "aspirator|robot"),
+        M("Dreame X50 Ultra", ["x50 ultra"], "aspirator|robot"),
+        M("Ecovacs Deebot X11", ["x11 omnicyclone"], "aspirator|robot"),
+        M("Roborock Qrevo 2 Pro", ["qrevo 2 pro"], "aspirator|robot"),
+    ],
+    "cel-mai-bun-aspirator-2026": [
+        M("Dyson V16 Piston Animal", ["v16 piston"], "aspirator"),
+        M("Dyson V15 Detect", ["v15 detect"], "aspirator"),
+        M("Samsung Bespoke Jet AI", ["bespoke jet ai"], "aspirator"),
+        M("Dreame Z30", ["dreame z30"], "aspirator"),
+        M("Rowenta X-Force Flex 15.60", ["x-force flex 15.60"], "aspirator"),
+    ],
+    "cel-mai-bun-scaun-auto-copil-2026": [
+        M("De la naștere: Cybex Cloud T", ["cybex", "cloud t"], "scaun|scoica"),
+        M("Până la aproximativ 4 ani: Cybex Sirona T", ["cybex", "sirona t"], "scaun"),
+        M("Copii mari: Britax Römer KIDFIX", ["kidfix i-size"], "scaun|inaltator"),
+    ],
+    "cel-mai-bun-carucior-bebelus-2026": [
+        M("Bugaboo Fox 5", ["bugaboo fox 5"], "carucior"),
+        M("Cybex Gazelle S", ["gazelle s"], "carucior"),
+        M("Joie Finiti Flex", ["joie", "finiti flex"], "carucior"),
+        M("Kinderkraft Moov 2", ["kinderkraft", "moov 2"], "carucior"),
+    ],
+    "cel-mai-bun-router-wifi-2026": [
+        M("TP-Link Archer BE550", ["archer be550"], "router"),
+        M("TP-Link Deco BE65", ["deco be65"], "sistem|router|mesh"),
+        M("ASUS RT-BE88U", ["rt-be88u"], "router"),
+    ],
+    "cel-mai-bun-monitor-gaming-2026": [
+        M("Samsung Odyssey OLED G6", ["g60sf"], "monitor"),
+        M("ASUS ROG Swift OLED PG27AQDP", ["pg27aqdp"], "monitor"),
+        M("MSI MPG 272URX", ["272urx"], "monitor"),
+        M("ASUS ROG Strix XG27ACS", ["xg27acs"], "monitor"),
+    ],
+    "cel-mai-bun-dashcam-2026": [
+        M("Viofo A329", ["viofo", "a329"], "camera|dashcam"),
+        M("Garmin Dash Cam X310", ["garmin", "x310"], "camera|dashcam"),
+        M("70mai A810", ["70mai", "a810"], "camera|dashcam"),
+    ],
+    "cel-mai-bun-laptop-business-2026": [
+        M("Lenovo ThinkPad X1 Carbon Gen 14", ["x1 carbon gen 14"], LAP),
+        M("Dell XPS 14", ["xps 14"], LAP),
+        M("HP EliteBook X G2", ["elitebook x", "g2"], LAP, ["flip"]),
+        M("MacBook Air M5", ["macbook air", "m5"], LAP),
+        M("ASUS Zenbook A14", ["zenbook a14"], LAP),
+    ],
+}
+
 ARTICOLE: list[dict] = []
 SURSE: dict[str, list[str]] = {}
 
 
 def articol(slug: str, title: str, excerpt: str, category: str, content: str, surse: list[str]) -> None:
+    """`MODELE[slug]` (mai jos) devine `oferte_modele`: sub titlul fiecarui model, pagina arata oferta
+    de azi de la un partener cu link platit, daca exista (frontend/lib/oferteTema.ts::ofertaModel)."""
     ARTICOLE.append({
         "slug": slug,
         "title": title,
@@ -60,6 +164,7 @@ def articol(slug: str, title: str, excerpt: str, category: str, content: str, su
         "content": content.strip() + "\n",
         # citit de app/blog/[slug]/page.tsx: nota de sub titlu spune data reala, nu „mai–iunie 2026"
         "surse_din": DATA,
+        "oferte_modele": MODELE.get(slug, []),
     })
     SURSE[slug] = surse
 
@@ -1132,6 +1237,10 @@ def probleme(a: dict) -> list[str]:
     gasite = [f"{a['slug']}: {motiv}: {m.group(0)!r}" for rx, motiv in INTERZISE for m in [rx.search(text)] if m]
     if len(a["title"]) > 60:
         gasite.append(f"{a['slug']}: titlu de {len(a['title'])} caractere (max 60)")
+    titluri = [l[4:] for l in a["content"].split("\n") if l.startswith("### ")]
+    for m in a.get("oferte_modele", []):
+        if not any(t.startswith(m["titlu"]) for t in titluri):
+            gasite.append(f"{a['slug']}: modelul {m['titlu']!r} nu e titlu H3 in articol")
     if not SURSE.get(a["slug"]):
         gasite.append(f"{a['slug']}: fara surse")
     if "„" in a["content"] and re.search(r"„[^”\"\n]*\"", a["content"]):

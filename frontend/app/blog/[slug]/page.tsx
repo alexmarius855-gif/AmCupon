@@ -11,7 +11,7 @@ import type { IndexableProdus } from "../../../lib/seoIndexable";
 import { numeAfisat } from "@/lib/numeMagazin";
 import { pesteMagazine } from "@/lib/cifreSite";
 import { temaArticol, NUME_TEME } from "@/lib/topFeed";
-import { sectiunePentru, dataFeed } from "@/lib/oferteTema";
+import { sectiunePentru, dataFeed, ofertaModel, type ModelCautat, type OfertaModel } from "@/lib/oferteTema";
 import OferteParteneri from "../../components/OferteParteneri";
 
 interface BlogPost {
@@ -27,6 +27,8 @@ interface BlogPost {
   tip?: string | null;
   /** Ziua in care articolul a fost rescris pe surse (scripts/articole_verificate.py), AAAA-LL-ZZ. */
   surse_din?: string;
+  /** Modelele recomandate, cautate in feed-ul partenerilor — oferta apare sub titlul modelului. */
+  oferte_modele?: ModelCautat[];
 }
 
 function loadPosts(): BlogPost[] {
@@ -144,7 +146,27 @@ function parseInline(text: string, baseKey: string): React.ReactNode[] {
   return nodes;
 }
 
-function renderContent(content: string) {
+/** Caseta „oferta de azi" de sub un model recomandat (lib/oferteTema.ts::ofertaModel). */
+function CasetaOferta({ o }: { o: OfertaModel }) {
+  return (
+    <div className="my-3 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-[#2a2f36] bg-[#14181c] px-4 py-3">
+      <div className="min-w-0">
+        <p className="text-sm text-[#ffffff] font-semibold">
+          {o.variante > 1 ? "De la " : ""}{o.pret.toLocaleString("ro-RO", { maximumFractionDigits: 2 })} lei la {numeAfisat(o.magazin)}
+        </p>
+        <p className="text-xs text-[#9399a0] truncate">{o.titlu} · prețul din feed-ul de azi, verifică-l la magazin</p>
+      </div>
+      <a href={o.url} target="_blank" rel="sponsored noopener noreferrer"
+        className="shrink-0 rounded-xl bg-[#ddf93c] px-4 py-2 text-sm font-black text-[#0c1000] hover:bg-[#c3dd2c] transition-colors">
+        Vezi oferta →
+      </a>
+    </div>
+  );
+}
+
+function renderContent(content: string, oferte?: Map<string, OfertaModel>) {
+  // Oferta unui model se pune dupa primul paragraf de sub titlul lui (07.10.2026).
+  let deAfisat: OfertaModel | null = null;
   // 22.09.2026: blocurile se impart pe linie goala, iar generatoarele scriu adesea
   //     ## Parametri esentiali
   //     - Motor: Bosch, Shimano
@@ -157,10 +179,16 @@ function renderContent(content: string) {
   return normalizat.split("\n\n").map((block, i) => {
     const key = `b${i}`;
     if (block.startsWith("## ")) {
+      deAfisat = null;
       return <h2 key={key} className="text-xl font-black text-[#ffffff] mt-8 mb-3">{parseInline(block.slice(3), key)}</h2>;
     }
     if (block.startsWith("### ")) {
-      return <h3 key={key} className="text-lg font-bold text-[#ffffff] mt-6 mb-2">{parseInline(block.slice(4), key)}</h3>;
+      const titlu = block.slice(4);
+      deAfisat = null;
+      // cheia cea mai lunga castiga: „Galaxy S26 Ultra" nu primeste oferta lui „Galaxy S26"
+      let lung = 0;
+      for (const [k, o] of oferte ?? []) if (titlu.startsWith(k) && k.length > lung) { deAfisat = o; lung = k.length; }
+      return <h3 key={key} className="text-lg font-bold text-[#ffffff] mt-6 mb-2">{parseInline(titlu, key)}</h3>;
     }
     // ── Citat („> ...") ─────────────────────────────────────────────────────────
     // 07.10.2026: nu exista. Pe 217 articole, linia „> Actualizat automat: ..." aparea cu
@@ -250,6 +278,16 @@ function renderContent(content: string) {
       );
     }
 
+    const oferta = deAfisat;
+    deAfisat = null;
+    if (oferta) {
+      return (
+        <div key={key}>
+          <p className="text-[#c9ced5] leading-relaxed my-3">{parseInline(block, key)}</p>
+          <CasetaOferta o={oferta} />
+        </div>
+      );
+    }
     return <p key={key} className="text-[#c9ced5] leading-relaxed my-3">{parseInline(block, key)}</p>;
   });
 }
@@ -342,6 +380,11 @@ export default async function ArticolPage({
     ? sectiunePentru(temaArt.tema, { filtru: temaArt.filtru, minMagazine: temaArt.minMagazine })
     : null;
   const esteRecomandare = /^(cel|cea|cele|cei)-mai-bun|^cum-alegi-/.test(post.slug);
+  const oferteModele = new Map<string, OfertaModel>();
+  for (const m of post.oferte_modele ?? []) {
+    const o = ofertaModel(m);
+    if (o) oferteModele.set(m.titlu, o);
+  }
   const areMagazinPagina = !!post.magazin && paginiMagazin().has(post.magazin);
 
   // Articole din aceeasi categorie sau cu acelasi magazin (prioritate relevanta)
@@ -490,7 +533,7 @@ export default async function ArticolPage({
           )}
 
           <div className="text-base">
-            {renderContent(post.content)}
+            {renderContent(post.content, oferteModele)}
           </div>
 
           {sectiune && temaArt && (
