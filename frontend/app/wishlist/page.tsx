@@ -3,10 +3,22 @@
 import Link from "next/link";
 
 import { useWishlist } from "../hooks/useWishlist";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function WishlistPage() {
-  const { items, remove, priceDrops } = useWishlist();
+  const { items, remove, priceDrops, actualizeazaPreturi } = useWishlist();
+
+  // Pretul curent al produselor salvate, din acelasi feed ca /produse — o data pe vizita,
+  // dupa ce lista s-a incarcat din localStorage. Fara el, „Pretul a scazut" nu apare aici.
+  const actualizat = useRef(false);
+  useEffect(() => {
+    if (actualizat.current || items.length === 0) return;
+    actualizat.current = true;
+    fetch("/products.json")
+      .then((r) => r.json())
+      .then((d) => { const lista = d.products || d; if (Array.isArray(lista)) actualizeazaPreturi(lista); })
+      .catch(() => {});
+  }, [items.length, actualizeazaPreturi]);
   const [imgErrors, setImgErrors] = useState<Set<string>>(new Set());
 
   function formatPct(saved: number, current: number) {

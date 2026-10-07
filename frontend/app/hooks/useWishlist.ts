@@ -32,7 +32,11 @@ function getStored(): WishlistItem[] {
 
 function setStored(items: WishlistItem[]) {
   if (typeof window === "undefined") return;
-  localStorage.setItem(KEY, JSON.stringify(items));
+  try {
+    localStorage.setItem(KEY, JSON.stringify(items));
+  } catch {
+    // fereastra privata / stocare blocata: lista ramane doar pentru vizita curenta
+  }
 }
 
 export function useWishlist() {
@@ -68,10 +72,39 @@ export function useWishlist() {
     });
   }, []);
 
+  /**
+   * Pretul CURENT, din feed (products.json). Pana pe 07.10.2026 nimic nu-l actualiza:
+   * `price` ramanea cel de la salvare, identic cu `savedPrice`, deci „Pretul a scazut" nu
+   * putea aparea niciodata, desi butonul de pe /produse promitea alerta de pret. Cheile sunt
+   * cele folosite la salvare: `url_original` (/produse), `url` (/produse/[categorie]) si
+   * `merchant-titlu` (fallback-ul din /produse).
+   */
+  const actualizeazaPreturi = useCallback((produse: { url?: string; url_original?: string; merchant?: string; title?: string; price?: number }[]) => {
+    const curent = new Map<string, number>();
+    for (const p of produse) {
+      if (!p.price || p.price <= 0) continue;
+      if (p.url_original) curent.set(p.url_original, p.price);
+      if (p.url) curent.set(p.url, p.price);
+      curent.set(`${p.merchant}-${p.title}`, p.price);
+    }
+    setItems((prev) => {
+      let schimbat = false;
+      const next = prev.map((i) => {
+        const pret = curent.get(i.id);
+        if (pret === undefined || pret === i.price) return i;
+        schimbat = true;
+        return { ...i, price: pret };
+      });
+      if (!schimbat) return prev;
+      setStored(next);
+      return next;
+    });
+  }, []);
+
   // Produse cu pret scazut fata de momentul salvarii
   const priceDrops = items.filter(
     (i) => i.price > 0 && i.savedPrice > 0 && i.price < i.savedPrice
   );
 
-  return { items, isSaved, toggle, remove, priceDrops };
+  return { items, isSaved, toggle, remove, priceDrops, actualizeazaPreturi };
 }

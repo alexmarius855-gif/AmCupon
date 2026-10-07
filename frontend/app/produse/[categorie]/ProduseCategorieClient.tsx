@@ -136,6 +136,8 @@ export default function ProduseCategorieClient({
   // pagina enorma care risca limita ISR Vercel 19MB). Server trimite set initial
   // mic; restul se incarca client-side din /products.json (CDN) si se filtreaza
   // dupa cat_slug. Vezi fix-ul identic din /produse (FALLBACK_BODY_TOO_LARGE).
+  const { isSaved, toggle, actualizeazaPreturi } = useWishlist();
+
   const [products, setProducts] = useState<Produs[]>(initialProducts);
   useEffect(() => {
     let activ = true;
@@ -149,10 +151,11 @@ export default function ProduseCategorieClient({
         if (aleCategoriei.length > initialProducts.length) {
           setProducts(aleCategoriei);
         }
+        actualizeazaPreturi(lista);
       })
       .catch(() => {});
     return () => { activ = false; };
-  }, [categorie, initialProducts]);
+  }, [categorie, initialProducts, actualizeazaPreturi]);
 
   const [search,      setSearch]      = useState("");
   const [minDiscount, setMinDiscount] = useState(0);
@@ -161,8 +164,6 @@ export default function ProduseCategorieClient({
   const [limit,       setLimit]       = useState(48);
   const [faqOpen,     setFaqOpen]     = useState<number | null>(null);
   const loadMoreRef                   = useRef<HTMLDivElement>(null);
-
-  const { isSaved, toggle } = useWishlist();
 
   const handleToggle = useCallback((p: Produs) => {
     toggle({

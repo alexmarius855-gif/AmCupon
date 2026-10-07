@@ -118,7 +118,7 @@ function ProdusCard({ p, onSave, saved }: { p: Produs; onSave: () => void; saved
       {/* Buton salvare */}
       <button
         onClick={(e) => { e.preventDefault(); onSave(); }}
-        title={saved ? "Sterge din lista dorintelor" : "Salveaza pentru price alert"}
+        title={saved ? "Șterge din lista dorințelor" : "Salvează: pe /produse vezi dacă i-a scăzut prețul"}
         className={`absolute top-2.5 right-2.5 z-10 w-8 h-8 rounded-full border flex items-center justify-center text-sm transition-all shadow-sm
           ${saved
             ? "bg-red-500/20 border-red-500/50 text-red-400"
@@ -298,6 +298,9 @@ export default function ProduseClient({
   // build-ul Vercel cu FALLBACK_BODY_TOO_LARGE). Serverul trimite doar un set
   // initial mic pentru primul paint + SEO; restul se incarca client-side din
   // fisierul static deja servit de CDN (acelasi pattern ca homepage cu output.json).
+  // Wishlist + alerta de pret: pretul produselor salvate se actualizeaza din acelasi feed.
+  const { isSaved, toggle, priceDrops, actualizeazaPreturi } = useWishlist();
+
   const [products, setProducts] = useState<Produs[]>(initialProducts);
   useEffect(() => {
     let activ = true;
@@ -308,11 +311,12 @@ export default function ProduseClient({
         const lista: Produs[] = d.products || d;
         if (Array.isArray(lista) && lista.length > initialProducts.length) {
           setProducts(lista);
+          actualizeazaPreturi(lista);
         }
       })
       .catch(() => {});
     return () => { activ = false; };
-  }, [initialProducts]);
+  }, [initialProducts, actualizeazaPreturi]);
 
   const [search,      setSearch]      = useState("");
   const [categorie,   setCategorie]   = useState("");
@@ -322,9 +326,6 @@ export default function ProduseClient({
   const [limit,       setLimit]       = useState(48);
   const [activeTab,   setActiveTab]   = useState<Tab>("oferte");
   const [savedToast,  setSavedToast]  = useState<string | null>(null);
-
-  // Wishlist + price alerts
-  const { isSaved, toggle, priceDrops } = useWishlist();
 
   // Magazine cu promotii active pentru "Top Deals"
   const cuPromotii = useMemo(() =>
