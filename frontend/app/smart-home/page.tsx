@@ -5,7 +5,8 @@ import path from "path";
 import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
-import { esteInCategorie } from "../../lib/categoriiNisa";
+import { esteInCategorie, NISA_CATEGORII } from "../../lib/categoriiNisa";
+import { laParteneri } from "@/lib/cifreSite";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -15,14 +16,14 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Smart Home Romania 2026 — Coduri Reducere eMAG",
+  title: "Smart Home Romania 2026 — Ghid și Oferte de la Parteneri",
   description: "Oferte smart home 2026: becuri inteligente, prize smart, camere de supraveghere, de la magazinele partenere AmCupon. Reduceri active, actualizate zilnic.",
   keywords: ["smart home romania", "bec inteligent ieftin", "priza smart reducere", "camera supraveghere wifi", "termostat inteligent", "emag smart home", "casa inteligenta romania"],
   alternates: { canonical: "https://amcupon.ro/smart-home" },
   openGraph: { title: "Smart Home Romania 2026 | AmCupon.ro", url: "https://amcupon.ro/smart-home", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
-const TOP_SMART = ["altex.ro","dedeman.ro","flanco.ro","evomag.ro","cel.ro"];
+const TOP_SMART = ["evomag.ro"];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_SMART = ["electronice", "casa-gradina"];
 
@@ -30,7 +31,7 @@ const CATEGORII_SMART = [
   { emoji: "💡", titlu: "Becuri Inteligente", desc: "Philips Hue, IKEA TRADFRI, Tuya — control din aplicatie, 16M culori" },
   { emoji: "🔌", titlu: "Prize & Intrerupatoare Smart", desc: "Monitorizare consum, programare, control vocal Alexa/Google" },
   { emoji: "📷", titlu: "Camere Supraveghere", desc: "WiFi, detectie miscare, vedere nocturna, stocare cloud" },
-  { emoji: "🌡️", titlu: "Termostate Inteligente", desc: "Tado, Honeywell — economie 23% la incalzire, control de oriunde" },
+  { emoji: "🌡️", titlu: "Termostate Inteligente", desc: "Tado, Honeywell — programare si control de oriunde" },
   { emoji: "🔊", titlu: "Boxe Smart", desc: "Amazon Echo, Google Nest — asistent vocal pentru toata casa" },
   { emoji: "🚪", titlu: "Siguranta Casa", desc: "Incuietori smart, senzori usa/fereastra, alarme WiFi" },
 ];
@@ -80,11 +81,11 @@ export default function SmartHomePage() {
               Smart Home Romania <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #c3dd2c, #ddf93c)"}}>{an}</span>
             </h1>
             <p className="text-[#c9ced5] text-lg mb-8 max-w-xl mx-auto leading-relaxed">
-              Becuri inteligente, prize smart, camere WiFi — transforma-ti casa cu coduri reducere actualizate zilnic
+              Becuri inteligente, prize smart, camere WiFi — ghid de inceput si oferte {laParteneri(NISA_CATEGORII["smart-home"])}
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Alexa","Google Home","Apple HomeKit","Philips Hue","Tuya","Zigbee","Wi-Fi Direct"].map(c => (
-                <span key={c} className="bg-[#1f2329] border border-[#2a2f36] text-slate-500 text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
+                <span key={c} className="bg-[#1f2329] border border-[#2a2f36] text-[#c9ced5] text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
               ))}
             </div>
           </div>
@@ -142,16 +143,16 @@ export default function SmartHomePage() {
             <div className="space-y-5">
               <div className="bg-[#1f2329] border border-[#2a2f36] rounded-xl p-5">
                 <h3 className="font-bold text-[#ffffff] mb-2 text-base">Ecosistem: Alexa, Google Home sau Apple HomeKit?</h3>
-                <p className="text-sm text-[#c9ced5] leading-relaxed">Alexa (Amazon Echo) — cel mai mare ecosistem, compatibil cu 99% din dispozitivele smart. Google Home — integrat cu Android si serviciile Google. Apple HomeKit — securitate maxima, necesar iPhone. Recomandam Alexa sau Google pentru prima instalare — produsele sunt mai ieftine si mai disponibile in Romania.</p>
+                <p className="text-sm text-[#c9ced5] leading-relaxed">Alexa (Amazon Echo) si Google Home au cele mai multe dispozitive compatibile; Apple Home merge cu iPhone. Standardul Matter face tot mai multe dispozitive compatibile cu toate trei. Verifica daca asistentul vocal accepta limba romana — multe comenzi merg doar in engleza.</p>
               </div>
               <div className="bg-[#1f2329] border border-[#2a2f36] rounded-xl p-5">
                 <h3 className="font-bold text-[#ffffff] mb-3 text-base">De unde sa incepi</h3>
                 <ul className="space-y-2 text-sm text-[#c9ced5]">
                   {[
-                    ["Becuri inteligente","cel mai simplu start, Tuya/Philips Hue, 30-60 lei/bec"],
+                    ["Becuri inteligente","cel mai simplu start: Tuya sau Philips Hue"],
                     ["Priza smart","monitorizare consum, automatizare orice aparat"],
                     ["Camera WiFi","supraveghere live pe telefon de oriunde"],
-                    ["Termostat","cel mai mare ROI: economii 20-30% la factura gaz/curent"],
+                    ["Termostat","programarea incalzirii; economiile depind de casa si de cum il setezi"],
                   ].map(([bold, text]) => (
                     <li key={bold} className="flex gap-2">
                       <span className="text-[#ddf93c] mt-0.5 shrink-0">→</span>

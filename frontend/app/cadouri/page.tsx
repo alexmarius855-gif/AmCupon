@@ -4,7 +4,7 @@ import { pesteMagazine } from "@/lib/cifreSite";
 
 export const metadata: Metadata = {
   title: "Idei Cadouri 2026 — Cadouri pentru Orice Ocazie | AmCupon.ro",
-  description: "Cele mai bune idei de cadouri pentru orice ocazie: botez, nastere, Valentine, Craciun, nasi, mama, tata. Produse cu preturi reale si livrare rapida in Romania.",
+  description: "Cele mai bune idei de cadouri pentru orice ocazie: botez, nastere, Valentine, Craciun, nasi, mama, tata. Produse cu preturi reale, de la magazinele partenere.",
   keywords: ["idei cadouri romania", "cadouri originale", "cadouri botez", "cadouri nasi", "cadouri nastere", "cadouri valentine", "cadouri craciun", "cadouri mama"],
   alternates: { canonical: "https://amcupon.ro/cadouri" },
   openGraph: {
@@ -35,7 +35,7 @@ const OCAZII = [
 const SFATURI = [
   { emoji: "🎯", titlu: "Personalizeaza cadoul", desc: "Un cadou cu gravura sau personalizat cu numele destinatarului are valoare emotionala mult mai mare." },
   { emoji: "💰", titlu: "Buget recomandat", desc: "Nasi/Fini: 300-1000 RON. Familie apropiata: 150-500 RON. Prieteni: 50-200 RON. Colegi: 30-100 RON." },
-  { emoji: "⏰", titlu: "Comanda din timp", desc: "Magazinele livreaza in 24-48h, dar in perioada sarbatorilor comanda cu 5-7 zile inainte pentru siguranta." },
+  { emoji: "⏰", titlu: "Comanda din timp", desc: "Termenele de livrare difera de la un magazin la altul; in perioada sarbatorilor comanda cu cel putin o saptamana inainte." },
   { emoji: "📦", titlu: "Ambalaj premium", desc: "Multe magazine ofera ambalaj cadou gratuit sau contra cost. Intreaba la checkout — face diferenta!" },
 ];
 
@@ -192,7 +192,7 @@ export default function CadouriPage() {
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/noriel", label: "Noriel — Jucarii" },
-              { href: "/elefant", label: "Elefant — Carti & Cadouri" },
+              { href: "/carturesti", label: "Cărturești — Cărți & Cadouri" },
               { href: "/notino", label: "Notino — Parfumuri" },
               { href: "/answear", label: "Answear — Fashion" },
               { href: "/bijuterii", label: "Bijuterii & Ceasuri" },

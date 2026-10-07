@@ -15,17 +15,17 @@ interface Magazin {
 
 export const metadata: Metadata = {
   title: "Cod Reducere Bijuterii & Accesorii 2026 — Aur, Argint",
-  description: "Coduri de reducere bijuterii Romania: Fluturasi, Chic Bijoux, Novvu, Bijubox, Androvelli, Lu.ro. Aur, argint, cristale, inele, bratari si coliere la preturi mici.",
+  description: "Coduri de reducere si oferte la bijuterii de la magazinele partenere: Chic Bijoux, Novvu, Bijubox, Lu.ro si altele. Aur, argint, cristale, inele, bratari, coliere.",
   keywords: ["cod reducere bijuterii","reduceri aur","argint reducere","bijuterii online romania","inele reducere","bratari reducere","coliere reducere"],
   alternates: { canonical: "https://amcupon.ro/bijuterii" },
-  openGraph: { title: "Bijuterii cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/bijuterii", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
+  openGraph: { title: "Bijuterii 2026 | AmCupon.ro", url: "https://amcupon.ro/bijuterii", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
 const AVANTAJE = [
   { icon: "💍", titlu: "Inele & Verighete", desc: "Inele din aur, argint, cu pietre pretioase — colectii noi sezonier" },
   { icon: "📿", titlu: "Coliere & Bratari", desc: "Lanturi aur, bratari charm, coliere argint si cristale" },
-  { icon: "👑", titlu: "Bijuterii Premium", desc: "Androvelli, Novvu, Bijubox — bijuterii certificate cu garantie" },
-  { icon: "🎁", titlu: "Cadouri Speciale", desc: "Seturi cadou, ambalaj elegant, livrare rapida pentru ocazii deosebite" },
+  { icon: "👑", titlu: "Bijuterii Premium", desc: "Novvu, Bijubox, Chic Bijoux — colectii din aur si argint" },
+  { icon: "🎁", titlu: "Cadouri Speciale", desc: "Seturi cadou si ambalaj elegant pentru ocazii deosebite" },
   { icon: "💎", titlu: "Pietre Pretioase", desc: "Diamante, rubine, smaralde, safire in monturi din aur alb sau galben" },
   { icon: "🥈", titlu: "Argint & Cristale", desc: "Bijuterii argint 925, cristale la preturi accesibile" },
 ];
@@ -34,7 +34,7 @@ const AVANTAJE = [
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": "Bijuterii cu Reducere 2026",
+  "name": "Bijuterii 2026",
   "url": "https://amcupon.ro/bijuterii",
   "description": "Coduri reducere bijuterii online Romania — aur, argint, cristale, inele, bratari, coliere"
 };
@@ -67,9 +67,9 @@ export default function BijuteriiPage() {
         <section className="bg-gradient-to-br from-[#c3dd2c] via-[#ddf93c] to-[#c3dd2c] text-[#0c1000] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">💍</div>
-            <h1 className="text-3xl md:text-4xl font-black mb-3">Bijuterii cu Reducere {an}</h1>
+            <h1 className="text-3xl md:text-4xl font-black mb-3">Bijuterii {an}</h1>
             <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              Inele, coliere, bratari si seturi bijuterii la preturi reduse. Fluturasi, Novvu, Bijubox si alte magazine actualizate zilnic.
+              Inele, coliere, bratari si seturi de bijuterii de la Novvu, Bijubox, Chic Bijoux si alte magazine partenere, actualizate zilnic.
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Inele","Coliere","Bratari","Verighete","Cercei","Aur","Argint","Cristale"].map(c => (
@@ -143,20 +143,20 @@ export default function BijuteriiPage() {
             <div className="space-y-4 text-sm text-[#c9ced5] leading-relaxed">
               <div>
                 <h3 className="font-bold text-[#ffffff] mb-1">Magazine romanesti de bijuterii online</h3>
-                <p>Fluturasi, Chic Bijoux, Novvu, Bijubox, Androvelli si Lu.ro sunt magazinele romanesti partenere AmCupon.ro pentru bijuterii — fiecare cu propriul stil si gama de preturi, de la argint accesibil la piese premium din aur. Verifica fiecare magazin pe pagina lui dedicata pentru codurile active.</p>
+                <p>Chic Bijoux, Novvu, Bijubox si Lu.ro sunt printre magazinele romanesti partenere AmCupon.ro pentru bijuterii — fiecare cu propriul stil si gama de preturi, de la argint accesibil la piese premium din aur. Verifica fiecare magazin pe pagina lui dedicata pentru codurile active.</p>
               </div>
               <div>
                 <h3 className="font-bold text-[#ffffff] mb-1">Cum verifici calitatea bijuteriilor online</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
                   <li><strong>Marca poansonare</strong> — aur 585 (14K), 750 (18K) sau argint 925 obligatoriu stampilate</li>
-                  <li><strong>Certificat autenticitate</strong> — pentru diamante si pietre pretioase cere certificat GIA/EGL</li>
-                  <li><strong>Garantie scrisa</strong> — magazinele serioase ofera minim 12 luni garantie</li>
-                  <li><strong>Returnare gratuita</strong> — important daca marimea nu se potriveste (inele)</li>
+                  <li><strong>Certificat de autenticitate</strong> — pentru diamante si pietre pretioase, cere certificat de la un laborator recunoscut (de exemplu GIA)</li>
+                  <li><strong>Garantie</strong> — garantia legala de conformitate e de 2 ani; unele magazine ofera si garantie comerciala</li>
+                  <li><strong>Politica de retur</strong> — conteaza daca marimea inelului nu se potriveste; verifica daca returul e gratuit</li>
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Cand sa cumperi bijuterii cu reducere</h3>
-                <p>Reducerile maxime la bijuterii apar de Valentine&apos;s Day (feb), Craciun si in perioadele de lichidare (ian, iul). Abonarea la newsletter-ul magazinului preferat anunta frecvent promotii exclusive. Colectiile noi inseamna si reduceri la colectiile vechi.</p>
+                <h3 className="font-bold text-[#ffffff] mb-1">Cand sa cumperi bijuterii</h3>
+                <p>Reducerile apar de obicei de Valentine&apos;s Day (februarie), de Craciun si la lichidarile de stoc (ianuarie, iulie). Cand vine o colectie noua, cea veche intra des la reducere.</p>
               </div>
             </div>
           </div>

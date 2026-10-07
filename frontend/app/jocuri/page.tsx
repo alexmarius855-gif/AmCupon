@@ -5,7 +5,8 @@ import path from "path";
 import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
-import { esteInCategorie } from "../../lib/categoriiNisa";
+import { esteInCategorie, NISA_CATEGORII } from "../../lib/categoriiNisa";
+import { laParteneri } from "@/lib/cifreSite";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -15,11 +16,11 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Cod Reducere Jocuri Video & Consola 2026 — PC, PS5, Xbox",
-  description: "Coduri de reducere pentru jocuri video si gaming de la magazinele de electronice partenere AmCupon. Jocuri, console si accesorii la preturi mici. Actualizate zilnic.",
+  title: "Jocuri Video & Console 2026 — PC, PS5, Xbox",
+  description: "Jocuri video, console si accesorii de gaming de la magazinele de electronice partenere AmCupon, plus ghid: fizic sau digital. Actualizat zilnic.",
   keywords: ["cod reducere jocuri","reduceri jocuri video","ps5 ieftin","xbox reducere","jocuri pc reducere","console gaming romania","pcgarage cod cupon"],
   alternates: { canonical: "https://amcupon.ro/jocuri" },
-  openGraph: { title: "Jocuri Video cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/jocuri", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
+  openGraph: { title: "Jocuri Video 2026 | AmCupon.ro", url: "https://amcupon.ro/jocuri", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
 const TOP_JOCURI = ["pcgarage.ro","evomag.ro","altex.ro","gamers.ro","gaming-gear.ro","nexus.ro","toysrus.ro"];
@@ -28,10 +29,10 @@ const CAT_JOCURI = ["electronice"];
 
 const AVANTAJE = [
   { icon: "🎮", titlu: "Console Gaming", desc: "PS5, Xbox Series X/S, Nintendo Switch — console noi si bundle-uri speciale" },
-  { icon: "🕹️", titlu: "Jocuri AAA", desc: "Titluri mari pe disc sau cod digital — FIFA, GTA, Call of Duty, Fortnite" },
+  { icon: "🕹️", titlu: "Jocuri AAA", desc: "Titluri mari pe disc sau cod digital — EA Sports FC, GTA, Call of Duty" },
   { icon: "💻", titlu: "Gaming PC", desc: "Placi video, procesoare, RAM, monitoare gaming 144Hz+" },
   { icon: "🎧", titlu: "Accesorii Gaming", desc: "Casti, mouse, tastatura mecanica, controller, scaun gaming" },
-  { icon: "📦", titlu: "Bundle-uri Speciale", desc: "Consola + joc + controller extra — economii de 200-500 lei" },
+  { icon: "📦", titlu: "Bundle-uri Speciale", desc: "Consola, joc si controller in acelasi pachet" },
   { icon: "🏆", titlu: "Jocuri Mobile", desc: "Carduri gift Google Play, App Store, coduri in-game" },
 ];
 
@@ -39,9 +40,9 @@ const AVANTAJE = [
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": "Jocuri Video cu Reducere 2026",
+  "name": "Jocuri Video 2026",
   "url": "https://amcupon.ro/jocuri",
-  "description": "Coduri reducere jocuri video si console Romania — PS5, Xbox, Nintendo, PC gaming"
+  "description": "Jocuri video, console si accesorii de la magazinele partenere — PS5, Xbox, Nintendo, PC"
 };
 
 export default function JocuriPage() {
@@ -81,9 +82,9 @@ export default function JocuriPage() {
         <section className="bg-gradient-to-br from-[#c3dd2c] via-[#ddf93c] to-[#c3dd2c] text-[#0c1000] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">🎮</div>
-            <h1 className="text-3xl md:text-4xl font-black mb-3">Jocuri Video cu Reducere {an}</h1>
+            <h1 className="text-3xl md:text-4xl font-black mb-3">Jocuri Video {an}</h1>
             <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              Console, jocuri si accesorii gaming la preturi mici. PCGarage, evoMAG, Altex si alte magazine cu stocuri actualizate zilnic.
+              Console, jocuri si accesorii de gaming {laParteneri(NISA_CATEGORII.jocuri)}, actualizate zilnic.
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["PS5","Xbox Series","Nintendo Switch","PC Gaming","Jocuri AAA","Accesorii","VR"].map(c => (
@@ -143,9 +144,9 @@ export default function JocuriPage() {
         <NewsletterCTA />
 
         <NisaProduse
-          merchantSlugs={["pcgarage.ro","evomag.ro","altex.ro","gamers.ro"]}
-          catSlug="jocuri"
-          titlu="Jocuri si accesorii gaming populare"
+          merchantSlugs={[]}
+          potrivire={/^(consola (de jocuri|playstation|xbox|nintendo|portabila)|joc (video )?(pentru |pt\.? )?(ps5|ps4|playstation|xbox|nintendo switch|pc)\b|controller (wireless|ps5|ps4|xbox|pentru (ps|xbox|pc|switch))|gamepad|(mouse|tastatura|casti|headset|mousepad|scaun)\b[^,]*\bgaming\b)/}
+          titlu="Jocuri si accesorii de gaming de la parteneri"
           culoareAccent="indigo"
           limit={12}
         />
@@ -156,21 +157,20 @@ export default function JocuriPage() {
             <h2 className="text-xl font-black text-[#ffffff] mb-5">Ghid: Unde cumperi jocuri mai ieftin in Romania</h2>
             <div className="space-y-4 text-sm text-[#c9ced5] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">PCGarage vs evoMAG vs Altex pentru gaming</h3>
-                <p>PCGarage are cele mai bune preturi la componente PC si accesorii gaming (placi video, procesoare). evoMAG ofera frecvent bundle-uri consola + joc la preturi sub piata. Altex are stocuri mari si livrare rapida pentru console si jocuri fizice.</p>
+                <h3 className="font-bold text-[#ffffff] mb-1">Cum compari preturile</h3>
+                <p>Preturile la console si jocuri difera de la un magazin la altul si se schimba des. Compara aceeasi editie (standard, deluxe, pachet) in mai multe magazine; pe AmCupon gasesti ofertele partenerilor, actualizate zilnic.</p>
               </div>
               <div>
                 <h3 className="font-bold text-[#ffffff] mb-1">Jocuri fizice vs digitale — ce e mai ieftin</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
                   <li><strong>Jocuri noi (launch)</strong> — pretul e identic fizic/digital; fizic poate fi revandut</li>
-                  <li><strong>Dupa 3-6 luni</strong> — reducerile digitale (PS Store, Xbox Game Pass) bat de obicei fizicul</li>
-                  <li><strong>Game Pass / PS Plus</strong> — daca joci mult, abonamentul e cel mai ieftin</li>
-                  <li><strong>Coduri de reducere retailer</strong> — PCGarage si evoMAG au frecvent -10-15% la lansari</li>
+                  <li><strong>Dupa cateva luni</strong> — jocurile apar des la reducere in magazinele digitale (PlayStation Store, Xbox Store, Steam)</li>
+                  <li><strong>Game Pass / PS Plus</strong> — daca joci mult, abonamentul poate iesi mai ieftin decat jocurile cumparate separat</li>
                 </ul>
               </div>
               <div>
                 <h3 className="font-bold text-[#ffffff] mb-1">Cand apar cele mai mari reduceri la gaming</h3>
-                <p>Black Friday (nov) are reduceri record la console si jocuri. Steam Summer Sale (iun-iul) si Winter Sale (dec-ian) pentru PC. PlayStation Store face frecvent flash sale-uri de weekend. Aboneaza-te la newsletter-ul PCGarage si evoMAG pentru alerte imediate.</p>
+                <p>Black Friday (noiembrie) aduce reduceri la console si jocuri. Pe PC: Steam Summer Sale (iunie-iulie) si Winter Sale (decembrie-ianuarie). PlayStation Store are oferte de weekend.</p>
               </div>
             </div>
           </div>

@@ -15,7 +15,7 @@
 
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { etichetaExpirare } from "@/lib/expirarePromo";
-import { faraCod, valoareOferta, RE_LIVRARE, type PromotieCupon } from "@/lib/oferta";
+import { faraCod, pareCod, valoareOferta, RE_LIVRARE, type PromotieCupon } from "@/lib/oferta";
 
 export { faraCod, valoareOferta, type PromotieCupon };
 
@@ -52,8 +52,11 @@ export default function CuponCard({ promo, numeMagazin, logoSrc, link, dezvaluit
   const cod = (promo.cod_cupon || "").trim();
   const val = valoareOferta(promo);
   const et = etichetaExpirare(promo.zile_ramase);
-  const titluCurat = faraCod(promo.nume, cod);
-  const descCurata = promo.descriere && promo.descriere !== promo.nume ? faraCod(promo.descriere, cod) : "";
+  // 07.10.2026: si un titlu care e doar UN cod fara `cod_cupon` („SAVE10" la helloice) se trateaza ca un cod.
+  const codText = cod || (pareCod((promo.nume || "").trim()) ? (promo.nume || "").trim() : "");
+  const faraCodCurat = (t: string) => { const x = faraCod(t, codText); return pareCod(x) ? "" : x; };
+  const titluCurat = faraCodCurat(promo.nume);
+  const descCurata = promo.descriere && promo.descriere !== promo.nume ? faraCodCurat(promo.descriere) : "";
   // La Impact, `nume` e des DOAR codul. Scos codul, titlul ar ramane gol — sau, in varianta
   // veche, ar fi fost chiar codul, afisat in clar deasupra butonului care il ascunde.
   const titlu = titluCurat || descCurata || (cod ? `Cod de reducere ${numeMagazin}` : `Ofertă ${numeMagazin}`);

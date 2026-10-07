@@ -18,25 +18,25 @@ interface Magazin {
 
 export const metadata: Metadata = {
   title: "Cod Reducere Casa & Gradina 2026 | AmCupon.ro",
-  description: `Coduri de reducere casa si gradina ${laParteneri(NISA_CATEGORII.casa)}. Mobila, decoratiuni, gradina la preturi reduse. Actualizate zilnic.`,
+  description: `Coduri de reducere și oferte pentru casă și grădină ${laParteneri(NISA_CATEGORII.casa)}: mobilă, decorațiuni, grădină. Actualizate zilnic.`,
   keywords: ["cod reducere dedeman","reduceri ikea","mobila ieftina","cod reducere leroy merlin","mobexpert reducere","casa gradina reducere romania","electrocasnice reducere"],
   alternates: { canonical: "https://amcupon.ro/casa" },
-  openGraph: { title: "Casa & Gradina cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/casa", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
+  openGraph: { title: "Casa & Gradina 2026 | AmCupon.ro", url: "https://amcupon.ro/casa", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
-const TOP_CASA = ["dedeman.ro","ikea.com","leroy-merlin.ro","mobexpert.ro","jysk.ro","hornbach.ro","kika.ro","someproducts.ro","electrolux.ro","clickandgrow.com"];
+const TOP_CASA = ["electrolux.ro","clickandgrow.com"];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_CASA = ["casa-gradina"];
 const AVANTAJE = [
-  { icon: "🛋️", titlu: "Mobila & Living", desc: "Canapele, paturi, dulapuri — branduri top la preturi reduse" },
+  { icon: "🛋️", titlu: "Mobila & Living", desc: "Canapele, paturi, dulapuri" },
   { icon: "🌿", titlu: "Gradina & Terasa", desc: "Mobilier gradina, plante, unelte — tot ce ai nevoie" },
-  { icon: "🔨", titlu: "Bricolaj & Constructii", desc: "Materiale, scule, vopsele — Dedeman, Hornbach, Leroy" },
+  { icon: "🔨", titlu: "Bricolaj & Constructii", desc: "Materiale, scule, vopsele" },
   { icon: "🍳", titlu: "Bucatarie", desc: "Electrocasnice, vase, accesorii bucatarie" },
-  { icon: "🛁", titlu: "Baie & Sanitare", desc: "Cazi, dusuri, obiecte sanitare cu discount" },
+  { icon: "🛁", titlu: "Baie & Sanitare", desc: "Cazi, dusuri, obiecte sanitare" },
   { icon: "💡", titlu: "Iluminat & Decoratiuni", desc: "Lustre, lampi, tablouri, obiecte decorative" },
 ];
 
-const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Casa & Gradina cu Reducere 2026","url":"https://amcupon.ro/casa","description":"Coduri reducere casa si gradina Romania — Dedeman, IKEA, Leroy Merlin, Mobexpert" };
+const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Casa & Gradina 2026","url":"https://amcupon.ro/casa","description":"Coduri si oferte pentru casa si gradina de la magazinele partenere AmCupon" };
 
 export default function CasaPage() {
   const filePath = path.join(process.cwd(), "public", "output.json");
@@ -58,16 +58,16 @@ export default function CasaPage() {
           <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#9399a0]">
             <Link href="/" className="hover:text-[#ddf93c]">Acasa</Link>
             <span className="mx-1">/</span>
-            <span className="text-[#c9ced5] font-medium">Casa & Gradina cu Reducere</span>
+            <span className="text-[#c9ced5] font-medium">Casa & Gradina</span>
           </div>
         </nav>
 
         <section className="bg-gradient-to-br from-[#c3dd2c] via-[#ddf93c] to-[#c3dd2c] text-[#0c1000] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">🏡</div>
-            <h1 className="text-3xl md:text-4xl font-black mb-3">Casa & Gradina cu Reducere {an}</h1>
+            <h1 className="text-3xl md:text-4xl font-black mb-3">Casa & Gradina {an}</h1>
             <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              Coduri de reducere și oferte {laParteneri(NISA_CATEGORII.casa, 3)} și la alte magazine partenere de amenajări
+              Oferte {laParteneri(NISA_CATEGORII.casa, 3)} și la alte magazine partenere de amenajări
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Mobila","Bricolaj","Gradina","Electrocasnice","Decoratiuni","Baie"].map(c => (
@@ -117,13 +117,13 @@ export default function CasaPage() {
             <h2 className="text-xl font-black text-[#ffffff] mb-5">Ghid: Amenajari casa mai ieftine in Romania</h2>
             <div className="space-y-4 text-sm text-[#c9ced5] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Dedeman vs IKEA vs Leroy Merlin</h3>
-                <p>Dedeman este liderul la materiale de constructii si bricolaj — preturi competitive, retea nationala extinsa. IKEA exceleaza la mobilier functional, design scandinav si pret accesibil. Leroy Merlin are cea mai larga gama de produse gradina si amenajari.</p>
+                <h3 className="font-bold text-[#ffffff] mb-1">Magazin mare sau magazin specializat?</h3>
+                <p>Lanturile mari de bricolaj si mobila au gama cea mai larga; magazinele specializate (mobila, saltele, electrocasnice, gradina) au de obicei mai multa alegere in nisa lor. Partenerii AmCupon din aceasta categorie apar mai sus, cu ofertele active.</p>
               </div>
               <div>
                 <h3 className="font-bold text-[#ffffff] mb-1">Cand sa cumperi mobila si electrocasnice</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
-                  <li><strong>Black Friday</strong> — reduceri 30-50% la electrocasnice mari si mobilier</li>
+                  <li><strong>Black Friday</strong> — reduceri la electrocasnice mari si mobilier</li>
                   <li><strong>Ianuarie</strong> — solduri de iarna, stocuri vechi cu discount mare</li>
                   <li><strong>Primavara</strong> — promotii la articole gradina si mobilier exterior</li>
                   <li><strong>Septembrie</strong> — reluare sezon, promotii la renovari</li>
@@ -131,7 +131,7 @@ export default function CasaPage() {
               </div>
               <div>
                 <h3 className="font-bold text-[#ffffff] mb-1">Sfaturi economii amenajari</h3>
-                <p>Cumparati pachete complete de mobilier pentru discount suplimentar. Urmariti sectiunile &quot;Outlet&quot; si &quot;Produse discontinue&quot; la IKEA si Mobexpert — economisesti 40-70%. Codurile de reducere AmCupon se aplica la comenzile online.</p>
+                <p>Urmariti sectiunile &quot;Outlet&quot; si produsele din colectii retrase, unde reducerile sunt de obicei mai mari. Cand un partener are un cod activ, il gasiti pe pagina lui de pe AmCupon.ro.</p>
               </div>
             </div>
           </div>

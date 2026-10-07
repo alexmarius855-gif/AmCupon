@@ -27,6 +27,9 @@ interface ProductsJson {
   products?: Produs[];
 }
 
+/** Cu teme sau `potrivire`, sub atatea produse sectiunea nu apare (o singura carte arata a eroare). */
+const MINIM_FILTRAT = 4;
+
 /** Produsele din feed n-au `id` (doar promo-produsele au) — identitatea e linkul. */
 const cheie = (p: Produs) => p.url || p.id || p.title;
 
@@ -93,7 +96,8 @@ function getProduse(
         lista.push(p);
       }
     }
-    return alege(lista, limit, Math.ceil(limit / 3));
+    const ales = alege(lista, limit, Math.ceil(limit / 3));
+    return ales.length >= MINIM_FILTRAT ? ales : [];
   }
 
   // Prioritate 1: produse reale (cu pret) de la merchantii specificati — sau, cu `potrivire` si
@@ -109,7 +113,8 @@ function getProduse(
   const sortate = alege(reale, limit, limit);
 
   // Cu `potrivire`, doar produsele care chiar sunt din nisa (fara promotii generice ale magazinelor).
-  if (opt.potrivire || sortate.length >= limit) return sortate;
+  if (opt.potrivire) return sortate.length >= MINIM_FILTRAT ? sortate : [];
+  if (sortate.length >= limit) return sortate;
 
   // Prioritate 2: promo-produse (fara pret) de la merchantii specificati
   const promoMerchant = all.filter(p =>

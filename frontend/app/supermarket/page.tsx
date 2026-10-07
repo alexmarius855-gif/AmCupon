@@ -5,7 +5,8 @@ import path from "path";
 import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
-import { esteInCategorie } from "../../lib/categoriiNisa";
+import { esteInCategorie, NISA_CATEGORII } from "../../lib/categoriiNisa";
+import { laParteneri } from "@/lib/cifreSite";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -15,11 +16,11 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Cod Reducere Supermarket Online 2026 — Carrefour, Kaufland",
-  description: "Coduri de reducere supermarket online Romania: Carrefour, Kaufland, Auchan, Bringo, Freshful. Alimente, bauturi, produse de casa la preturi mici. Livrare la domiciliu.",
+  title: "Supermarket Online 2026 — Alimente de la Magazine Partenere",
+  description: `Alimente si bauturi online ${laParteneri(NISA_CATEGORII.supermarket)} — magazine specializate, cu livrare la domiciliu. Oferte actualizate zilnic.`,
   keywords: ["cod reducere carrefour","reduceri kaufland","auchan cod cupon","bringo reducere","supermarket online romania","alimente ieftine","livrare mancare reducere"],
   alternates: { canonical: "https://amcupon.ro/supermarket" },
-  openGraph: { title: "Supermarket Online cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/supermarket", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
+  openGraph: { title: "Supermarket Online 2026 | AmCupon.ro", url: "https://amcupon.ro/supermarket", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
 const TOP_SUPERMARKET = ["carrefour.ro","bringo.ro","freshful.ro","auchan.ro","kaufland.ro","glovo.ro","tazz.ro"];
@@ -31,7 +32,7 @@ const AVANTAJE = [
   { icon: "🥛", titlu: "Lactate & Oua", desc: "Lapte, iaurt, branza, oua la preturi promotionale zilnic" },
   { icon: "🥦", titlu: "Fructe & Legume", desc: "Legume si fructe proaspete, bio sau conventionale cu reducere" },
   { icon: "🧹", titlu: "Produse de Casa", desc: "Detergenti, produse curatenie, hartie, cosuri complete" },
-  { icon: "🚚", titlu: "Livrare la Domiciliu", desc: "Bringo, Freshful, Tazz — comenzi online cu livrare 1-3h" },
+  { icon: "🚚", titlu: "Livrare la Domiciliu", desc: "Comenzi online, livrate acasa" },
   { icon: "💳", titlu: "Carduri Fidelitate", desc: "Puncte bonus, cashback si promotii exclusive pentru membrii clubului" },
 ];
 
@@ -39,9 +40,9 @@ const AVANTAJE = [
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": "Supermarket Online cu Reducere 2026",
+  "name": "Supermarket Online 2026",
   "url": "https://amcupon.ro/supermarket",
-  "description": "Coduri reducere supermarket online Romania — Carrefour, Kaufland, Auchan, livrare la domiciliu"
+  "description": "Alimente si bauturi online de la magazinele partenere AmCupon"
 };
 
 export default function SupermarketPage() {
@@ -81,12 +82,12 @@ export default function SupermarketPage() {
         <section className="bg-gradient-to-br from-[#c3dd2c] via-[#ddf93c] to-[#c3dd2c] text-[#0c1000] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">🛒</div>
-            <h1 className="text-3xl md:text-4xl font-black mb-3">Supermarket Online cu Reducere {an}</h1>
+            <h1 className="text-3xl md:text-4xl font-black mb-3">Supermarket Online {an}</h1>
             <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              Coduri reducere pentru comenzi online la Carrefour, Bringo, Freshful si alte supermarketuri cu livrare la domiciliu.
+              Alimente si bauturi {laParteneri(NISA_CATEGORII.supermarket)} si la alte magazine partenere, cu livrare la domiciliu.
             </p>
             <div className="flex flex-wrap justify-center gap-2">
-              {["Carrefour","Kaufland","Auchan","Bringo","Freshful","Tazz","Livrare Rapida"].map(c => (
+              {["Cafea","Ulei de masline","Bio","Delicatese","Bauturi","Livrare la domiciliu"].map(c => (
                 <span key={c} className="bg-[#1f2329] text-[#ffffff] text-sm font-semibold px-4 py-1.5 rounded-full border border-[#2a2f36]">{c}</span>
               ))}
             </div>
@@ -156,21 +157,20 @@ export default function SupermarketPage() {
             <h2 className="text-xl font-black text-[#ffffff] mb-5">Ghid: Cumparaturi alimentare online — cum economisesti</h2>
             <div className="space-y-4 text-sm text-[#c9ced5] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Carrefour vs Bringo vs Freshful</h3>
-                <p>Carrefour.ro are cele mai mari promotii pe categorii in fiecare saptamana si permite ridicarea din magazin (click & collect). Bringo livreaza direct de la Carrefour/Mega Image in 1-2 ore. Freshful (eMAG) se concentreaza pe produse premium, bio si internationale.</p>
+                <h3 className="font-bold text-[#ffffff] mb-1">Supermarket mare sau magazin specializat?</h3>
+                <p>Supermarketurile online au cea mai larga gama; magazinele specializate — cafea, ulei de masline, produse bio, delicatese — au de obicei mai multa alegere in nisa lor. Partenerii AmCupon din aceasta categorie sunt magazine specializate.</p>
               </div>
               <div>
                 <h3 className="font-bold text-[#ffffff] mb-1">Trucuri pentru cosul de cumparaturi mai mic</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
-                  <li><strong>Prima comanda</strong> — Bringo, Tazz, Glovo ofera -20-30 lei la prima comanda online</li>
-                  <li><strong>Comanda minima</strong> — livrarea e gratuita peste un anumit prag (70-150 lei)</li>
-                  <li><strong>Slot-uri de livrare</strong> — alege livrarea programata (mai ieftina decat urgenta)</li>
-                  <li><strong>Abonament lunar</strong> — Bringo Pass si Tazz Gold includ livrari gratuite nelimitate</li>
+                  <li><strong>Prima comanda</strong> — multe magazine au o reducere pentru clientii noi; verifica pe site</li>
+                  <li><strong>Comanda minima</strong> — livrarea e gratuita peste un prag, diferit de la un magazin la altul</li>
+                  <li><strong>Slot-uri de livrare</strong> — livrarea programata e de obicei mai ieftina decat cea urgenta</li>
                 </ul>
               </div>
               <div>
                 <h3 className="font-bold text-[#ffffff] mb-1">Produse pe care merita sa le comanzi online</h3>
-                <p>Produsele grele (apa, detergenti, conserve, faina, ulei) sunt ideale pentru comanda online — economisesti timp si efort fizic. Promotiile la apa plata online bat frecvent pretul din fizic. Baxurile si loturile mari ofera economii semnificative per unitate.</p>
+                <p>Produsele grele (apa, detergenti, conserve, faina, ulei) sunt ideale pentru comanda online — economisesti timp si efort fizic. La baxuri si ambalaje mari, compara pretul pe unitate.</p>
               </div>
             </div>
           </div>

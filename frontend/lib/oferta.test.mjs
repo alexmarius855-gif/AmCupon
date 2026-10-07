@@ -8,7 +8,7 @@
  * eroare, nu cazuri anume: valoare care nu apare in text, cod ramas in titlu, titlu gol.
  */
 import { readFileSync } from "node:fs";
-import { valoareOferta, faraCod } from "./oferta.ts";
+import { valoareOferta, faraCod, titluPromotie } from "./oferta.ts";
 
 let esecuri = 0;
 const verifica = (nume, primit, asteptat) => {
@@ -75,6 +75,17 @@ console.log(`  valori care nu apar in textul ofertei: ${valoriFalse.length}`); v
 console.log(`  coduri ramase in titlu: ${coduriRamase.length}`); coduriRamase.slice(0, 5).forEach((x) => console.log("    " + x));
 console.log(`  titluri care erau doar codul (acum inlocuite cu descrierea): ${titluriGoale}`);
 if (valoriFalse.length || coduriRamase.length) esecuri++;
+
+// 07.10.2026 — titluPromotie (MagazinCard afisa `promo.nume` brut: „SAVE10" = codul intreg).
+console.log("\n  titluPromotie:");
+verifica("titlul e chiar codul -> descrierea", titluPromotie({ nume: "SAVE10", descriere: "10% off sitewide", cod_cupon: "SAVE10" }, "Helloice"), "10% off sitewide");
+verifica("titlul e un cod Impact, fara cod_cupon -> descrierea", titluPromotie({ nume: "DH2026SEPSAVE3", descriere: "Save $3 on orders over $29", cod_cupon: "" }, "DHgate"), "Save $3 on orders over $29");
+verifica("titlu si descriere = cod -> eticheta generica", titluPromotie({ nume: "SAVE20", descriere: "SAVE20", cod_cupon: "SAVE20" }, "Helloice"), "Cod de reducere Helloice");
+verifica("codul scos din titlu, restul ramane", titluPromotie({ nume: "20% reducere – Cod LAMODA", cod_cupon: "LAMODA" }, "Incaltamintelamoda"), "20% reducere");
+verifica("titlu normal neatins", titluPromotie({ nume: "Reduceri de pana la 70% la produse pentru caini", cod_cupon: "" }, "Happypets"), "Reduceri de pana la 70% la produse pentru caini");
+verifica("un singur cuvant obisnuit nu e cod", titluPromotie({ nume: "Reduceri", cod_cupon: "" }, "X"), "Reduceri");
+
+verifica("titlu = cod fara cod_cupon; descrierea il repeta -> descrierea fara cod", titluPromotie({ nume: "DH2026OCTSAVE3", descriere: "Save $3 on orders over $29 using coupon DH2026OCTSAVE3 at DHgate.", cod_cupon: "" }, "DHgate"), "Save $3 on orders over $29 using coupon at DHgate.");
 
 console.log(esecuri ? `\n  ${esecuri} ESECURI` : "\n  Toate testele trec.");
 process.exit(esecuri ? 1 : 0);

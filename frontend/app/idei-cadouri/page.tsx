@@ -43,22 +43,22 @@ const OCAZII = [
 const IDEI_PER_PROFIL = [
   {
     profil: "👩 Cadouri pentru ea", culoare: "bg-[#14181c] border-[#ddf93c]",
-    idei: ["Parfumuri & Cosmetice → Notino", "Haine & Accesorii → FashionDays", "Bijuterii → Bijuteria.ro", "Carte preferată → Elefant"],
+    idei: ["Parfumuri & Cosmetice → Notino", "Haine & Accesorii → Answear", "Bijuterii → Teilor", "Carte preferată → Cărturești"],
     link: "/categorii/beauty",
   },
   {
     profil: "👨 Cadouri pentru el", culoare: "bg-[#14181c] border-[#ddf93c]",
-    idei: ["Gadget tech → eMAG", "Echipament sport → Decathlon", "Parfum masculin → Notino", "Carte business → Libris"],
+    idei: ["Gadget tech → Evomag", "Echipament sport → Decathlon", "Parfum masculin → Notino", "Carte business → Libris"],
     link: "/categorii/electronice",
   },
   {
     profil: "🧒 Cadouri pentru copii", culoare: "bg-[#14181c] border-yellow-200",
-    idei: ["Jucării educative → Noriel", "Cărți ilustrate → Elefant", "Jocuri de masă → eMAG", "Set creativ → Smyths"],
+    idei: ["Jucării educative → Noriel", "Cărți ilustrate → Libris", "Jocuri de masă → Cărturești", "Set creativ → Craftup"],
     link: "/categorii/copii",
   },
   {
     profil: "👴 Cadouri pentru părinți", culoare: "bg-[#14181c] border-green-200",
-    idei: ["Aparate electrocasnice → eMAG", "Cărți → Libris", "Îngrijire → Notino", "Accesorii casă → Dedeman"],
+    idei: ["Electrocasnice → Electrolux", "Cărți → Libris", "Îngrijire → Notino", "Casă și grădină → partenerii din categorie"],
     link: "/categorii/casa-gradina",
   },
 ];
@@ -174,16 +174,16 @@ export default function IdeiCadouriPage() {
               </div>
               <div>
                 <h3 className="font-bold text-[#ffffff] mb-1">Când să cumperi cadourile?</h3>
-                <p>Cel mai bun moment: Black Friday (noiembrie), perioadele de sale (ianuarie, iulie) sau cu 1-2 săptămâni înainte de ocazie. Evită cumpărăturile de urgență în ultimele zile — prețurile sunt mai mari și livrarea poate întârzia.</p>
+                <p>Cel mai bun moment: Black Friday (noiembrie), perioadele de sale (ianuarie, iulie) sau cu 1-2 săptămâni înainte de ocazie. Evită cumpărăturile din ultimele zile — livrarea poate întârzia.</p>
               </div>
               <div>
                 <h3 className="font-bold text-[#ffffff] mb-1">Cadouri care nu dau greș niciodată</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
-                  <li><strong>Parfumuri originale</strong> — Notino, Douglas (reduceri frecvente)</li>
-                  <li><strong>Cărți</strong> — Elefant, Libris (pachete cu reducere)</li>
+                  <li><strong>Parfumuri originale</strong> — Notino</li>
+                  <li><strong>Cărți</strong> — Libris, Cărturești</li>
                   <li><strong>Jucării educative</strong> — Noriel (set LEGO, puzzle)</li>
-                  <li><strong>Card cadou</strong> — eMAG, FashionDays (flexibil pentru oricine)</li>
-                  <li><strong>Experiențe</strong> — SPA, escape room, curs (pe Groupon)</li>
+                  <li><strong>Card cadou</strong> — flexibil pentru oricine; multe magazine îl vând online</li>
+                  <li><strong>Experiențe</strong> — SPA, escape room, un curs</li>
                 </ul>
               </div>
             </div>

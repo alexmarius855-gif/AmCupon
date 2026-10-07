@@ -5,7 +5,8 @@ import path from "path";
 import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
-import { esteInCategorie } from "../../lib/categoriiNisa";
+import { esteInCategorie, NISA_CATEGORII } from "../../lib/categoriiNisa";
+import { laParteneri } from "@/lib/cifreSite";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -16,13 +17,13 @@ interface Magazin {
 
 export const metadata: Metadata = {
   title: "Reduceri Sport & Fitness 2026 | AmCupon.ro",
-  description: "Coduri de reducere echipament sport și fitness 2026: Decathlon, Sportisimo, Sport Vision, Intersport. Biciclete, echipament sală, outdoor, running.",
+  description: `Coduri de reducere și oferte la echipament sport și fitness ${laParteneri(NISA_CATEGORII.sport)}: biciclete, sală, outdoor, running.`,
   keywords: ["reduceri sport", "cod reducere decathlon", "echipament fitness ieftin", "bicicleta reducere", "sportisimo reducere", "sport outdoor reducere romania"],
   alternates: { canonical: "https://amcupon.ro/sport" },
   openGraph: { title: "Reduceri Sport & Fitness 2026 | AmCupon.ro", url: "https://amcupon.ro/sport", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
-const TOP_SPORT = ["decathlon.ro","sportisimo.ro","sport-vision.ro","intersport.ro","hervis.ro","gigasport.ro","trampolinepartsandsupply.com"];
+const TOP_SPORT = ["decathlon.ro","trampolinepartsandsupply.com"];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_SPORT = ["sport"];
 const SUBCATEGORII = [
@@ -66,9 +67,9 @@ export default function SportPage() {
         <section className="bg-gradient-to-br from-[#c3dd2c] via-[#ddf93c] to-[#c3dd2c] text-[#0c1000] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">🏃</div>
-            <h1 className="text-3xl md:text-4xl font-black mb-3">Sport & Fitness cu Reducere {an}</h1>
+            <h1 className="text-3xl md:text-4xl font-black mb-3">Sport & Fitness {an}</h1>
             <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              Echipament sport, biciclete, sală fitness — coduri de reducere actualizate zilnic
+              Echipament sport, biciclete, sală fitness — oferte {laParteneri(NISA_CATEGORII.sport)}, actualizate zilnic
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {SUBCATEGORII.map(s => (
@@ -121,7 +122,7 @@ export default function SportPage() {
             <div className="space-y-4 text-sm text-[#c9ced5] leading-relaxed">
               <div>
                 <h3 className="font-bold text-[#ffffff] mb-1">Cum economisești la echipament sport</h3>
-                <p>Decathlon oferă cel mai bun raport calitate-preț pentru echipament entry-level cu brandurile proprii (Quechua, Domyos, Kipsta). Pentru echipament premium, caută reduceri la finalul sezonului — reduceri de 40-60% sunt frecvente în ianuarie și august.</p>
+                <p>Brandurile proprii Decathlon (Quechua, Domyos, Kipsta) sunt de obicei mai ieftine decât brandurile mari de sport. Pentru echipament premium, caută reducerile de la final de sezon (ianuarie și august).</p>
               </div>
               <div>
                 <h3 className="font-bold text-[#ffffff] mb-1">Cele mai bune perioade pentru cumpărături sport</h3>
@@ -133,8 +134,8 @@ export default function SportPage() {
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Echipament sport la cel mai mic preț</h3>
-                <p>Combină prețul din ShopMania cu codul de reducere de pe AmCupon.ro. La echipament scump (biciclete, ceasuri GPS, căști sport), diferența poate ajunge la sute de lei.</p>
+                <h3 className="font-bold text-[#ffffff] mb-1">Compară înainte să cumperi</h3>
+                <p>La echipamentul scump (biciclete, ceasuri GPS, căști sport), compară prețul aceluiași model în mai multe magazine și verifică dacă partenerul are un cod activ pe AmCupon.ro.</p>
               </div>
             </div>
           </div>

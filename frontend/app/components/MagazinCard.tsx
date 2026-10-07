@@ -8,6 +8,7 @@ import RedirectModal from "./RedirectModal";
 import { calculateDealScore, DEAL_SCORE_VISIBLE_THRESHOLD } from "../../lib/dealScore";
 import { linkAfiliat, linkPromotie } from "@/lib/linkMagazin";
 import { maskCod } from "@/lib/maskCod";
+import { titluPromotie } from "@/lib/oferta";
 export { numeAfisat } from "@/lib/numeMagazin";
 import { numeAfisat } from "@/lib/numeMagazin";
 
@@ -188,7 +189,7 @@ export default function MagazinCard({ m, numeOverride, astazi, isFavorit, onTogg
               </div>
             )}
             <p className={`font-bold text-[#ffffff] leading-snug line-clamp-2 ${discount ? "text-[15px]" : "text-base"}`}>
-              {promo.nume}
+              {titluPromotie(promo, numeMagazin)}
             </p>
             <div className="flex items-center gap-1.5 mt-2 flex-wrap">
               {m.categorie && (

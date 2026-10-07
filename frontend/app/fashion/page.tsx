@@ -17,14 +17,14 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Cod Reducere Fashion & Haine 2026 — FashionDays, Answear",
-  description: `Coduri de reducere fashion ${laParteneri(NISA_CATEGORII.fashion)}. Haine, pantofi, accesorii la preturi reduse. Actualizate zilnic.`,
+  title: "Cod Reducere Fashion & Haine 2026 — Answear și Parteneri",
+  description: `Coduri de reducere și oferte la haine, pantofi și accesorii ${laParteneri(NISA_CATEGORII.fashion)}. Actualizate zilnic.`,
   keywords: ["cod reducere fashiondays","reduceri answear","haine ieftine online","cod reducere hm","reserved reducere","fashion online romania","imbracaminte reducere"],
   alternates: { canonical: "https://amcupon.ro/fashion" },
-  openGraph: { title: "Fashion & Haine cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/fashion", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
+  openGraph: { title: "Fashion & Haine 2026 | AmCupon.ro", url: "https://amcupon.ro/fashion", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
-const TOP_FASHION = ["answear.ro","hm.com","reserved.com","about-you.ro","lc-waikiki.ro","zara.com","peek-cloppenburg.ro"];
+const TOP_FASHION = ["answear.ro"];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_FASHION = ["fashion"];
 const AVANTAJE = [
@@ -36,7 +36,7 @@ const AVANTAJE = [
   { icon: "🩱", titlu: "Lenjerie & Pijamale", desc: "Lenjerie intima, pijamale, sosete — branduri de calitate" },
 ];
 
-const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Fashion & Haine cu Reducere 2026","url":"https://amcupon.ro/fashion","description":"Coduri reducere fashion si haine Romania — FashionDays, Answear, H&M, Reserved" };
+const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Fashion & Haine 2026","url":"https://amcupon.ro/fashion","description":"Coduri si oferte la haine de la magazinele partenere AmCupon" };
 
 export default function FashionPage() {
   const filePath = path.join(process.cwd(), "public", "output.json");
@@ -58,16 +58,16 @@ export default function FashionPage() {
           <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#9399a0]">
             <Link href="/" className="hover:text-[#ddf93c]">Acasa</Link>
             <span className="mx-1">/</span>
-            <span className="text-[#c9ced5] font-medium">Fashion & Haine cu Reducere</span>
+            <span className="text-[#c9ced5] font-medium">Fashion & Haine</span>
           </div>
         </nav>
 
         <section className="bg-gradient-to-br from-[#c3dd2c] via-[#ddf93c] to-[#c3dd2c] text-[#0c1000] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">👗</div>
-            <h1 className="text-3xl md:text-4xl font-black mb-3">Fashion & Haine cu Reducere {an}</h1>
+            <h1 className="text-3xl md:text-4xl font-black mb-3">Fashion & Haine {an}</h1>
             <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              Coduri de reducere și oferte {laParteneri(NISA_CATEGORII.fashion, 3)} și la alte magazine partenere de modă
+              Oferte {laParteneri(NISA_CATEGORII.fashion, 3)} și la alte magazine partenere de modă
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Haine Dama","Haine Barbati","Pantofi","Genti","Geci","Lenjerie","Accesorii"].map(c => (
@@ -117,21 +117,20 @@ export default function FashionPage() {
             <h2 className="text-xl font-black text-[#ffffff] mb-5">Ghid: Haine online mai ieftine in Romania</h2>
             <div className="space-y-4 text-sm text-[#c9ced5] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">FashionDays vs Answear vs H&M</h3>
-                <p>FashionDays are cele mai frecvente reduceri flash (24-48h) cu discount de 50-70%. Answear exceleaza la branduri premium internationale. H&M are mereu o sectiune Sale cu articole sub 50 lei, plus promotii pentru membrii club.</p>
+                <h3 className="font-bold text-[#ffffff] mb-1">Unde gasesti reduceri la haine</h3>
+                <p>Answear si ceilalti parteneri AmCupon de moda au sectiuni de reduceri si promotii de sezon; ofertele lor active apar mai sus, pe cardurile magazinelor.</p>
               </div>
               <div>
                 <h3 className="font-bold text-[#ffffff] mb-1">Cele mai bune perioade pentru cumparaturi fashion</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
-                  <li><strong>Solduri de iarna (ianuarie)</strong> — reduceri 50-80% la colectiile de toamna-iarna</li>
+                  <li><strong>Solduri de iarna (ianuarie)</strong> — reduceri mari la colectiile de toamna-iarna</li>
                   <li><strong>Solduri de vara (iulie)</strong> — lichidare stocuri primavara-vara</li>
                   <li><strong>Black Friday</strong> — discount-uri la branduri premium</li>
-                  <li><strong>Saptamana modei (septembrie)</strong> — promotii la colectii noi</li>
                 </ul>
               </div>
               <div>
                 <h3 className="font-bold text-[#ffffff] mb-1">Cum economisesti la haine online</h3>
-                <p>Adauga produsele in wishlist si asteapta promotii. FashionDays trimite notificari cand un produs din wishlist intra la reducere. Cumparaturile de la sfarsit de sezon pot economisi 60-80% fata de pretul initial.</p>
+                <p>Adauga produsele in lista de favorite a magazinului si asteapta o promotie. La sfarsit de sezon, colectia care pleaca intra la reducere.</p>
               </div>
             </div>
           </div>

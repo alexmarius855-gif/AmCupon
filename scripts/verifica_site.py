@@ -377,7 +377,7 @@ REGULI_CORP = [
 # /categorii/marketplace. Tiparul s-a mai vazut: footer-ul cu bookzone.ro (16.09),
 # /categorii/telecom (16.08), altex/flanco/elefant (08.08).
 RE_LINK_INTERN = re.compile(
-    r'href="(/(?:cod-reducere|top|categorii|comparatii|cadouri|esim|nisa|produse)/[^"#?]+)')
+    r'href="(/(?:cod-reducere|top|categorii|comparatii|cadouri|esim|nisa|produse|blog)/[^"#?]+)')
 
 
 def surse_redirect() -> set[str]:

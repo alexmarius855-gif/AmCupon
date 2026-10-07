@@ -14,8 +14,8 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Reduceri Flori & Buchete 2026 — Livrare Rapida | AmCupon.ro",
-  description: "Coduri de reducere la florarii online din Romania: Floria.ro, 3gifts.ro, Mariart.ro. Livrare flori si buchete rapida pentru orice ocazie — reduceri verificate.",
+  title: "Reduceri Flori & Buchete 2026 — Florării Online | AmCupon.ro",
+  description: "Florării online partenere AmCupon — Floria.ro, 3gifts.ro: flori și buchete pentru orice ocazie, cu ofertele active când există.",
   keywords: ["reduceri flori", "cod reducere floria", "livrare flori online romania", "buchete reducere", "florarie online ieftina", "flori cadou reducere"],
   alternates: { canonical: "https://amcupon.ro/flori" },
   openGraph: { title: "Reduceri Flori & Buchete 2026 | AmCupon.ro", url: "https://amcupon.ro/flori", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
@@ -65,9 +65,9 @@ export default function FloriPage() {
         <section className="bg-gradient-to-br from-[#ddf93c] via-[#ddf93c] to-[#ddf93c] text-[#0c1000] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">💐</div>
-            <h1 className="text-3xl md:text-4xl font-black mb-3">Flori & Buchete cu Reducere {an}</h1>
-            <p className="text-[#c3dd2c] text-lg mb-6 max-w-xl mx-auto">
-              Florării online partenere, cu reducerile active pentru orice ocazie
+            <h1 className="text-3xl md:text-4xl font-black mb-3">Flori & Buchete {an}</h1>
+            <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
+              Florării online partenere, cu ofertele active pentru orice ocazie
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Trandafiri","Buchete mixte","Cutii cu flori","Aranjamente nuntă","Livrare azi","Coroane"].map(c => (
@@ -117,8 +117,8 @@ export default function FloriPage() {
 
 
         <NisaProduse
-          merchantSlugs={TOP_FLORI}
-          catSlug="flori"
+          merchantSlugs={[]}
+          potrivire={/^(buchet|aranjament (floral|de flori|cu flori)|cutie (cu|de) (flori|trandafiri)|trandafiri? (criogenat|naturali|rosii|in cutie)|flori (naturale|criogenate|uscate))/}
           titlu="Buchete și aranjamente de la parteneri"
           culoareAccent="rose"
           limit={12}
@@ -131,13 +131,13 @@ export default function FloriPage() {
             <div className="space-y-4 text-sm text-[#c9ced5] leading-relaxed">
               <div>
                 <h3 className="font-bold text-[#ffffff] mb-1">Livrare rapidă vs. programată</h3>
-                <p>Pentru ocazii de ultim moment, alege florării cu livrare în 2-4 ore în oraș mare. Pentru evenimente planificate (nuntă, aniversare), comandă cu 2-3 zile înainte pentru cele mai proaspete aranjamente și prețuri mai mici.</p>
+                <p>Pentru ocaziile de ultim moment, caută florăriile cu livrare în aceeași zi și verifică ora-limită pentru comenzi. Pentru evenimente planificate (nuntă, aniversare), comandă din timp.</p>
               </div>
               <div>
                 <h3 className="font-bold text-[#ffffff] mb-1">Sfaturi pentru economii la flori {an}</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
                   <li><strong>Abonamente flori</strong> — unele florării oferă reduceri la livrări recurente lunare</li>
-                  <li><strong>Sezonalitate</strong> — florile de sezon sunt cu 20-30% mai ieftine decât cele de import</li>
+                  <li><strong>Sezonalitate</strong> — florile de sezon sunt de obicei mai ieftine decât cele de import</li>
                   <li><strong>Coduri de reducere</strong> — verifică AmCupon înainte de orice comandă, mai ales de 8 Martie și Valentine&apos;s Day</li>
                   <li><strong>Combo cadou</strong> — buchet + cadou mic (ciocolată, vin) e deseori mai ieftin combinat decât separat</li>
                 </ul>

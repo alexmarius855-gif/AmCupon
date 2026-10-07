@@ -72,9 +72,9 @@ export default function CalatoriePage() {
         <section className="bg-gradient-to-br from-[#c3dd2c] via-[#ddf93c] to-[#c3dd2c] text-[#0c1000] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">✈️</div>
-            <h1 className="text-3xl md:text-4xl font-black mb-3">Vacanțe & Călătorii cu Reducere {an}</h1>
+            <h1 className="text-3xl md:text-4xl font-black mb-3">Vacanțe & Călătorii {an}</h1>
             <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              Reduceri la cazare, bilete avion, trollere, accesorii travel — planifică vacanța perfectă mai ieftin
+              Cazare, experiențe, eSIM, trolere și accesorii de călătorie {laParteneri(NISA_CATEGORII.calatorie)}
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Cazare hotel","Bilete avion","Trollere","Car rental","Excursii","Travel gear"].map(c => (
@@ -158,8 +158,8 @@ export default function CalatoriePage() {
             <h2 className="text-xl font-black text-[#ffffff] mb-5">Sfaturi pentru vacanță mai ieftină</h2>
             <div className="space-y-4 text-sm text-[#c9ced5] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Cum găsești cazarea cea mai ieftină</h3>
-                <p>Rezervă cu 2-3 luni avans pentru prețuri cu 20-40% mai mici. Booking.com și Airbnb oferă reduceri frecvente pentru rezervări cu anulare gratuită. Compară întotdeauna cu prețul de rezervare directă la hotel.</p>
+                <h3 className="font-bold text-[#ffffff] mb-1">Cum găsești o cazare mai ieftină</h3>
+                <p>Rezervă din timp, mai ales în sezonul de vârf, și alege tarife cu anulare gratuită când planurile nu sunt sigure. Compară prețul de pe platformele de rezervări cu cel de pe site-ul hotelului.</p>
               </div>
               <div>
                 <h3 className="font-bold text-[#ffffff] mb-1">Top destinații România pentru vacanță ieftină {an}</h3>

@@ -211,13 +211,13 @@ export default function CraciunPage() {
                 </p>
               </div>
               <div>
-                <h3 className="text-[#ffffff] font-bold mb-2">Unde găsești cele mai bune cadouri la prețuri mici?</h3>
+                <h3 className="text-[#ffffff] font-bold mb-2">Unde găsești cadouri, la magazinele partenere</h3>
                 <ul className="list-disc list-inside space-y-1">
-                  <li><strong>Jucării:</strong> Noriel, eMAG — reduceri până la 50%</li>
-                  <li><strong>Electronice:</strong> eMAG, Altex — oferte speciale de sezon</li>
-                  <li><strong>Parfumuri & cosmetice:</strong> Notino, Douglas</li>
-                  <li><strong>Haine & accesorii:</strong> FashionDays, Answear, Zara</li>
-                  <li><strong>Cărți:</strong> Elefant, Libris — reduceri mari la pachete</li>
+                  <li><strong>Jucării:</strong> Noriel</li>
+                  <li><strong>Electronice:</strong> Evomag și ceilalți parteneri de electronice</li>
+                  <li><strong>Parfumuri & cosmetice:</strong> Notino</li>
+                  <li><strong>Haine & accesorii:</strong> Answear</li>
+                  <li><strong>Cărți:</strong> Libris, Cărturești</li>
                 </ul>
               </div>
               <div>
@@ -225,7 +225,7 @@ export default function CraciunPage() {
                 <p>
                   Intră pe pagina magazinului de pe AmCupon.ro, copiază codul de reducere
                   activ, adaugă produsele în coș pe site-ul magazinului și introdu codul la
-                  checkout. Reducerea se aplică automat. Codurile de pe AmCupon.ro se
+                  checkout — dacă e valid, reducerea apare în coș. Codurile de pe AmCupon.ro se
                   actualizează automat de trei ori pe zi, iar cele expirate dispar după data lor.
                 </p>
               </div>

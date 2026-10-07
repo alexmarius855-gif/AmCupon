@@ -16,10 +16,10 @@ interface Magazin {
 
 export const metadata: Metadata = {
   title: "Cod Reducere Sanatate & Naturiste 2026 — Vitamine",
-  description: "Coduri de reducere produse naturiste si suplimente Romania: Pronaturiste, Vitamix, GoldNutrition, Apiland, Botaniq. Vitamine, suplimente, bio si wellness la preturi reduse.",
+  description: "Coduri de reducere si oferte la produse naturiste si suplimente de la magazinele partenere: Pronaturiste, GoldNutrition, Apiland si altele. Vitamine, suplimente, bio.",
   keywords: ["cod reducere sanatate","reduceri suplimente","produse naturiste reducere","vitamine ieftine","goldnutrition cod cupon","pronaturiste reducere","suplimente online romania"],
   alternates: { canonical: "https://amcupon.ro/sanatate" },
-  openGraph: { title: "Sanatate & Naturiste cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/sanatate", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
+  openGraph: { title: "Sanatate & Naturiste 2026 | AmCupon.ro", url: "https://amcupon.ro/sanatate", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
 const TOP_SANATATE = ["pronaturiste.ro","vitamix.ro","goldnutrition.ro","apiland.ro","botaniq.ro","republicabio.ro","zephyrlabs.ro","tratamentenaturiste.ro","vioi.ro","biomag.ro","minuneanaturii.ro","nutraceutics.ro"];
@@ -27,19 +27,19 @@ const TOP_SANATATE = ["pronaturiste.ro","vitamix.ro","goldnutrition.ro","apiland
 const CAT_SANATATE = ["sanatate"];
 
 const AVANTAJE = [
-  { icon: "💊", titlu: "Vitamine & Minerale", desc: "Multivitamine, vitamina D, C, zinc, magneziu — oferte permanente" },
+  { icon: "💊", titlu: "Vitamine & Minerale", desc: "Multivitamine, vitamina D, C, zinc, magneziu" },
   { icon: "🌿", titlu: "Produse Naturiste", desc: "Plante medicinale, tincturi, ceaiuri bio din surse naturale" },
-  { icon: "💪", titlu: "Suplimente Sport", desc: "Proteine, aminoacizi, creatina pentru performanta maxima" },
+  { icon: "💪", titlu: "Suplimente Sport", desc: "Proteine, aminoacizi, creatina" },
   { icon: "🧴", titlu: "Ingrijire Naturala", desc: "Cosmetice bio, creme naturale, uleiuri esentiale" },
-  { icon: "🫀", titlu: "Sanatate Cardiovasculara", desc: "Omega-3, coenzima Q10, produse pentru inima sanatoasa" },
-  { icon: "🧠", titlu: "Nootropice & Focus", desc: "Suplimente pentru memorie, concentrare si energie" },
+  { icon: "🫀", titlu: "Sanatate Cardiovasculara", desc: "Omega-3, coenzima Q10" },
+  { icon: "🧠", titlu: "Nootropice & Focus", desc: "Suplimente pentru memorie si concentrare" },
 ];
 
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": "Sanatate & Naturiste cu Reducere 2026",
+  "name": "Sanatate & Naturiste 2026",
   "url": "https://amcupon.ro/sanatate",
   "description": "Coduri reducere suplimente, naturiste si wellness Romania"
 };
@@ -81,9 +81,9 @@ export default function SanatatePage() {
         <section className="bg-gradient-to-br from-[#c3dd2c] via-[#ddf93c] to-[#c3dd2c] text-[#0c1000] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">🌿</div>
-            <h1 className="text-3xl md:text-4xl font-black mb-3">Sanatate & Naturiste cu Reducere {an}</h1>
+            <h1 className="text-3xl md:text-4xl font-black mb-3">Sanatate & Naturiste {an}</h1>
             <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              Vitamine, suplimente si produse naturiste la preturi mici. Actualizate zilnic la Pronaturiste, GoldNutrition, Vitamix si alte magazine.
+              Vitamine, suplimente si produse naturiste de la Pronaturiste, GoldNutrition, Apiland si alte magazine partenere, actualizate zilnic.
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Vitamine","Suplimente Sport","Naturiste","Bio","Omega-3","Probiotice","Collagen"].map(c => (
@@ -151,21 +151,21 @@ export default function SanatatePage() {
             <h2 className="text-xl font-black text-[#ffffff] mb-5">Ghid: Suplimente si naturiste — ce sa alegi</h2>
             <div className="space-y-4 text-sm text-[#c9ced5] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Pronaturiste vs Vitamix vs GoldNutrition</h3>
-                <p>Pronaturiste are cel mai mare catalog de produse naturiste romanesti (plante, tincturi, ceaiuri). Vitamix se specializeaza in suplimente importate la preturi competitive. GoldNutrition este lider in suplimente pentru sportivi — proteine, aminoacizi, creatina.</p>
+                <h3 className="font-bold text-[#ffffff] mb-1">Ce gasesti la partenerii AmCupon</h3>
+                <p>Pronaturiste are produse naturiste (plante, tincturi, ceaiuri), GoldNutrition — suplimente pentru sportivi (proteine, aminoacizi, creatina), iar Apiland — produse apicole. Ofertele lor active apar mai sus.</p>
               </div>
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Vitamine esentiale in Romania</h3>
+                <h3 className="font-bold text-[#ffffff] mb-1">Inainte sa cumperi suplimente</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
-                  <li><strong>Vitamina D3</strong> — esentiala iarna cand soarele lipseste, deficienta larg raspandita</li>
-                  <li><strong>Magneziu</strong> — pentru somn, stress si muschi; lipseste din dieta moderna</li>
-                  <li><strong>Omega-3</strong> — cardiovascular si anti-inflamator; cel mai bine din ulei de peste</li>
-                  <li><strong>Zinc</strong> — imunitate si piele; important pentru barbati</li>
+                  <li><strong>Intreaba medicul</strong> — mai ales daca iei un tratament sau esti insarcinata</li>
+                  <li><strong>Analize</strong> — de exemplu, nivelul vitaminei D se afla dintr-un test de sange</li>
+                  <li><strong>Doza</strong> — respecta doza de pe eticheta; mai mult nu inseamna mai bine</li>
+                  <li><strong>Dieta</strong> — suplimentele alimentare nu inlocuiesc o dieta variata</li>
                 </ul>
               </div>
               <div>
                 <h3 className="font-bold text-[#ffffff] mb-1">Cum economisesti la suplimente</h3>
-                <p>Cumpara in cantitati mai mari (3-6 luni) cand gasesti promotii — suplimentele au termen lung de valabilitate. Newsletter-urile magazinelor anunta frecvent reduceri de 20-30%. Pachetele combo sunt intotdeauna mai ieftine decat produsele individuale.</p>
+                <p>La promotii poti cumpara pentru cateva luni — verifica data de expirare. Pachetele combo ies de obicei mai ieftin; compara pretul pe doza.</p>
               </div>
             </div>
           </div>

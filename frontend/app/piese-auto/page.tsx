@@ -14,7 +14,7 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Piese Auto Online Romania 2026 — Coduri Reducere Verificate",
+  title: "Piese Auto Online Romania 2026 — Coduri și Oferte",
   description: `Compara magazinele de piese auto, anvelope, jante si detailing din Romania. Coduri de reducere actualizate zilnic ${laParteneri(["auto-moto"], 3)} si la alte magazine partenere.`,
   keywords: ["piese auto online", "cod reducere piese auto", "anvelope reducere", "jante auto reducere", "detailing auto romania", "magazin piese auto romania"],
   alternates: { canonical: "https://amcupon.ro/piese-auto" },
@@ -61,7 +61,7 @@ export default function PieseAutoPage() {
             </nav>
             <div className="text-5xl mb-4">🔧</div>
             <h1 className="text-4xl md:text-5xl font-black text-[#ffffff] mb-4">
-              Piese Auto cu <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #ddf93c, #ddf93c)" }}>Reducere</span> {an}
+              Piese Auto <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #ddf93c, #ddf93c)" }}>Online</span> {an}
             </h1>
             <p className="text-[#c9ced5] text-lg max-w-2xl mx-auto mb-8">
               Anvelope, jante, vopsele, navigatie si piese de motor — magazine romanesti actualizate zilnic.
@@ -110,10 +110,10 @@ export default function PieseAutoPage() {
           <section className="mt-10 bg-[#14181c] border border-[#1f2329] rounded-xl p-6">
             <h2 className="text-lg font-black text-[#ffffff] mb-4">Cum economisesti la piese auto online?</h2>
             <ul className="space-y-2 text-sm text-[#c9ced5]">
-              <li><strong className="text-[#c9ced5]">Compara pretul</strong> intre cel putin 2-3 magazine — diferentele pot fi de 15-30% pentru aceeasi piesa</li>
+              <li><strong className="text-[#c9ced5]">Compara pretul</strong> intre cel putin 2-3 magazine — pretul aceleiasi piese poate diferi mult</li>
               <li><strong className="text-[#c9ced5]">Verifica compatibilitatea</strong> cu modelul exact al masinii inainte de comanda</li>
               <li><strong className="text-[#c9ced5]">Anvelopele si jantele</strong> au cele mai mari reduceri sezoniere — primavara si toamna (schimb sezonier)</li>
-              <li><strong className="text-[#c9ced5]">Foloseste codul de reducere</strong> afisat pe AmCupon.ro — actualizat zilnic, fara cod expirat</li>
+              <li><strong className="text-[#c9ced5]">Foloseste codul de reducere</strong> de pe pagina magazinului pe AmCupon.ro, daca are unul activ — codurile dispar automat dupa data de expirare</li>
             </ul>
           </section>
 

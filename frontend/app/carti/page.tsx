@@ -17,14 +17,14 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Cod Reducere Cărți Online România 2026 — Libris, Elefant",
+  title: "Cod Reducere Cărți Online România 2026 — Libris, Cărturești",
   description: `Coduri de reducere cărți online ${laParteneri(NISA_CATEGORII.carti)}. Cărți, audiobook-uri, e-book-uri la prețuri reduse. Actualizate zilnic.`,
   keywords: ["cod reducere carti", "reduceri libris", "carti ieftine online", "cod reducere elefant", "carturesti reducere", "carti online romania", "audiobook reducere"],
   alternates: { canonical: "https://amcupon.ro/carti" },
-  openGraph: { title: "Cărți Online cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/carti", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
+  openGraph: { title: "Cărți Online 2026 | AmCupon.ro", url: "https://amcupon.ro/carti", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
-const TOP_BOOKS = ["elefant.ro","carturesti.ro","librarie.net","bookhub.ro"];
+const TOP_BOOKS = ["libris.ro","carturesti.ro","librarie.net"];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_BOOKS = ["carti-educatie"];
 const AVANTAJE = [
@@ -36,7 +36,7 @@ const AVANTAJE = [
   { icon: "📱", titlu: "E-book-uri", desc: "Cărți digitale — instant, fără livrare" },
 ];
 
-const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Cărți Online cu Reducere 2026","url":"https://amcupon.ro/carti","description":"Coduri reducere carti online Romania — Libris, Elefant, Carturesti" };
+const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Cărți Online 2026","url":"https://amcupon.ro/carti","description":"Coduri si oferte de la librariile online partenere AmCupon" };
 
 export default function CartiPage() {
   const filePath = path.join(process.cwd(), "public", "output.json");
@@ -58,14 +58,14 @@ export default function CartiPage() {
           <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#9399a0]">
             <Link href="/" className="hover:text-[#ddf93c]">Acasă</Link>
             <span className="mx-1">/</span>
-            <span className="text-[#c9ced5] font-medium">Cărți Online cu Reducere</span>
+            <span className="text-[#c9ced5] font-medium">Cărți Online</span>
           </div>
         </nav>
 
         <section className="bg-gradient-to-br from-[#c3dd2c] via-[#ddf93c] to-[#c3dd2c] text-[#0c1000] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">📚</div>
-            <h1 className="text-3xl md:text-4xl font-black mb-3">Cărți Online cu Reducere {an}</h1>
+            <h1 className="text-3xl md:text-4xl font-black mb-3">Cărți Online {an}</h1>
             <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
               Coduri de reducere și oferte {laParteneri(NISA_CATEGORII.carti, 3)} și la alte librării partenere
             </p>
@@ -117,21 +117,21 @@ export default function CartiPage() {
             <h2 className="text-xl font-black text-[#ffffff] mb-5">Ghid: Cărți ieftine online în România</h2>
             <div className="space-y-4 text-sm text-[#c9ced5] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Libris vs Elefant vs Cărturești</h3>
-                <p>Libris are cele mai frecvente campanii cu -30% și transport gratuit de la sume mici. Elefant excelează la gama de cărți în limba engleză. Cărturești atrage cu ediții speciale și cărți de artă.</p>
+                <h3 className="font-bold text-[#ffffff] mb-1">Librăriile partenere</h3>
+                <p>Libris și Cărturești au des campanii cu reduceri; Cărturești are și ediții speciale și cărți de artă. Ofertele lor active apar mai sus, pe cardurile magazinelor.</p>
               </div>
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Cărți populare cu reduceri frecvente</h3>
+                <h3 className="font-bold text-[#ffffff] mb-1">Cărți populare</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
                   <li><strong>Atomic Habits</strong> — James Clear, bestseller non-ficțiune</li>
-                  <li><strong>Sapiens</strong> — Yuval Noah Harari, reduceri regulate</li>
-                  <li><strong>Moromeții</strong> — Marin Preda, clasic cu prețuri bune</li>
-                  <li><strong>Seria Harry Potter</strong> — pachete complete cu discount</li>
+                  <li><strong>Sapiens</strong> — Yuval Noah Harari</li>
+                  <li><strong>Moromeții</strong> — Marin Preda, clasic al literaturii române</li>
+                  <li><strong>Seria Harry Potter</strong> — se vinde și în pachet</li>
                 </ul>
               </div>
               <div>
                 <h3 className="font-bold text-[#ffffff] mb-1">Economisește la cărți</h3>
-                <p>Abonează-te la newsletterul Libris — primești coduri de -20% exclusiv abonaților. Cumpără seturi și pachete pentru discount suplimentar. Verifică zilnic secțiunea &quot;Carte Zilei&quot; pe Libris.</p>
+                <p>Abonează-te la newsletterul librăriei preferate — anunță campaniile de reducere. Seturile și pachetele ies de obicei mai ieftin decât cărțile luate separat.</p>
               </div>
             </div>
           </div>

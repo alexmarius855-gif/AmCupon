@@ -18,10 +18,10 @@ interface Magazin {
 
 export const metadata: Metadata = {
   title: "Cod Reducere Pet Shop & Animale 2026 — Hrana Caini, Pisici",
-  description: `Coduri de reducere pet shop ${laParteneri(NISA_CATEGORII.animale)}. Hrana caini, hrana pisici, accesorii animale la preturi mici. Actualizate zilnic.`,
+  description: `Coduri de reducere și oferte la pet shop ${laParteneri(NISA_CATEGORII.animale)}: hrană pentru câini și pisici, accesorii. Actualizate zilnic.`,
   keywords: ["cod reducere petmart","reduceri pet shop","hrana caini ieftina","hrana pisici reducere","petmax cod cupon","accesorii animale reducere","zooplus romania"],
   alternates: { canonical: "https://amcupon.ro/animale" },
-  openGraph: { title: "Pet Shop & Animale cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/animale", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
+  openGraph: { title: "Pet Shop & Animale 2026 | AmCupon.ro", url: "https://amcupon.ro/animale", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
 const TOP_ANIMALE = ["petmart.ro","petmax.ro","bravapet.ro","ehranaanimale.ro","mobilepet.ro","husse.ro","novapet.ro","gopet.ro"];
@@ -41,7 +41,7 @@ const AVANTAJE = [
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": "Pet Shop & Animale cu Reducere 2026",
+  "name": "Pet Shop & Animale 2026",
   "url": "https://amcupon.ro/animale",
   "description": "Coduri reducere pet shop online Romania — hrana si accesorii pentru animale de companie"
 };
@@ -83,9 +83,9 @@ export default function AnimalePage() {
         <section className="bg-gradient-to-br from-[#c3dd2c] via-[#ddf93c] to-[#c3dd2c] text-[#0c1000] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">🐾</div>
-            <h1 className="text-3xl md:text-4xl font-black mb-3">Pet Shop cu Reducere {an}</h1>
+            <h1 className="text-3xl md:text-4xl font-black mb-3">Pet Shop {an}</h1>
             <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              Hrana, jucarii si accesorii pentru animalele tale de companie la preturi mici. Petmart, Petmax, Bravapet si alte magazine actualizate zilnic.
+              Hrana, jucarii si accesorii pentru animalele de companie {laParteneri(NISA_CATEGORII.animale)}, actualizate zilnic.
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Caini","Pisici","Pasari","Rozatoare","Pesti","Reptile","Accesorii"].map(c => (
@@ -165,21 +165,21 @@ export default function AnimalePage() {
             <h2 className="text-xl font-black text-[#ffffff] mb-5">Ghid: Cum economisesti la cumparaturile pentru animale</h2>
             <div className="space-y-4 text-sm text-[#c9ced5] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Petmart vs Petmax vs Bravapet</h3>
-                <p>Petmart are cel mai larg catalog si frecvent promotii la saci mari de hrana. Petmax se remarca prin livrare rapida si oferte flash. Bravapet este o alegere buna pentru hrana premium (Royal Canin, Hill&apos;s, Purina Pro Plan) cu preturi competitive.</p>
+                <h3 className="font-bold text-[#ffffff] mb-1">Cum compari pet shop-urile</h3>
+                <p>La hrana, compara pretul pe kilogram — difera de la un magazin la altul si de la o marime de sac la alta. Petmart, Petmax si ceilalti parteneri AmCupon apar mai sus, cu ofertele active.</p>
               </div>
               <div>
                 <h3 className="font-bold text-[#ffffff] mb-1">Sfaturi pentru economii la hrana pentru animale</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
-                  <li><strong>Cumpara saci mari</strong> — pretul per kg scade semnificativ la cantitatile de 12-15 kg</li>
-                  <li><strong>Aboneaza-te la newsletter</strong> — pet shop-urile trimit frecvent coduri de 10-15% off</li>
+                  <li><strong>Saci mari</strong> — pretul pe kilogram e de obicei mai mic la sacii mari</li>
+                  <li><strong>Newsletter</strong> — pet shop-urile trimit des coduri de reducere abonatilor</li>
                   <li><strong>Comanda in avans</strong> — nu in ultima clipa, ca sa poti astepta o promotie</li>
-                  <li><strong>Combina hrana uscata cu umeda</strong> — mai economic si mai sanatos pentru animale</li>
+                  <li><strong>Hrana potrivita</strong> — intreaba medicul veterinar ce i se potriveste animalului tau</li>
                 </ul>
               </div>
               <div>
                 <h3 className="font-bold text-[#ffffff] mb-1">Branduri premium la preturi mai mici</h3>
-                <p>Royal Canin, Hill&apos;s Science Diet si Purina Pro Plan sunt disponibile pe toate platformele mari de pet shop. Preturile variaza cu 20-30% intre magazine — compara inainte sa cumperi si foloseste codurile de reducere de pe AmCupon.ro.</p>
+                <p>Royal Canin, Hill&apos;s Science Diet si Purina Pro Plan se gasesc la majoritatea pet shop-urilor mari. Preturile difera intre magazine — compara inainte sa cumperi.</p>
               </div>
             </div>
           </div>

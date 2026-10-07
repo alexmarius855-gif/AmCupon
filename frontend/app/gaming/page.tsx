@@ -5,7 +5,8 @@ import path from "path";
 import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
-import { esteInCategorie } from "../../lib/categoriiNisa";
+import { esteInCategorie, NISA_CATEGORII } from "../../lib/categoriiNisa";
+import { laParteneri } from "@/lib/cifreSite";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -15,27 +16,27 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Reduceri Gaming 2026 — Coduri eMAG, PCGarage, Altex",
-  description: "Coduri reducere gaming Romania 2026: laptopuri gaming, placi video, monitoare, periferice. eMAG, PCGarage, Altex, Evomag — oferte verificate zilnic.",
+  title: "Gaming 2026 — Laptopuri, Monitoare și Periferice",
+  description: "Echipament de gaming în 2026 — laptopuri, plăci video, monitoare, periferice — de la magazinele de electronice partenere AmCupon, actualizat zilnic.",
   keywords: ["reduceri gaming", "laptop gaming ieftin", "placa video reducere", "monitor gaming reducere", "pcgarage cod reducere", "emag gaming reducere", "periferice gaming ieftine"],
   alternates: { canonical: "https://amcupon.ro/gaming" },
-  openGraph: { title: "Reduceri Gaming 2026 | AmCupon.ro", url: "https://amcupon.ro/gaming", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
+  openGraph: { title: "Gaming 2026 | AmCupon.ro", url: "https://amcupon.ro/gaming", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
-const TOP_GAMING = ["pcgarage.ro","altex.ro","evomag.ro","flanco.ro","cel.ro","quickmobile.ro"];
+const TOP_GAMING = ["evomag.ro"];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_GAMING = ["electronice"];
 const CATEGORII_GAMING = [
   { emoji: "💻", titlu: "Laptopuri Gaming", desc: "ASUS ROG, Lenovo Legion, MSI, Acer Nitro — performanta maxima portabila" },
   { emoji: "🖥️", titlu: "Monitoare Gaming", desc: "144Hz, 240Hz, 4K — pentru gaming competitiv sau casual" },
-  { emoji: "🎮", titlu: "Console & Jocuri", desc: "PS5, Xbox, Nintendo Switch, jocuri digitale la pret redus" },
+  { emoji: "🎮", titlu: "Console & Jocuri", desc: "PS5, Xbox, Nintendo Switch, jocuri digitale" },
   { emoji: "⌨️", titlu: "Periferice", desc: "Tastatura mecanica, mouse gaming, casti, controller wireless" },
   { emoji: "🖱️", titlu: "Placi Video", desc: "NVIDIA RTX, AMD Radeon — upgrade pentru FPS maxim" },
   { emoji: "🔊", titlu: "Audio Gaming", desc: "Casti surround 7.1, microfoane, soundbar gaming" },
 ];
 
 const CULORI_BADGE = ["bg-[#ddf93c]"];
-const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Reduceri Gaming 2026","url":"https://amcupon.ro/gaming","description":"Coduri reducere gaming Romania — laptopuri, placi video, monitoare, periferice" };
+const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Gaming 2026","url":"https://amcupon.ro/gaming","description":"Echipament de gaming de la magazinele partenere — laptopuri, placi video, monitoare, periferice" };
 
 export default function GamingPage() {
   const filePath = path.join(process.cwd(), "public", "output.json");
@@ -77,14 +78,14 @@ export default function GamingPage() {
             </div>
             <div className="text-6xl mb-5 drop-shadow-2xl">🎮</div>
             <h1 className="text-4xl md:text-5xl font-black text-[#ffffff] mb-4 tracking-tight">
-              Gaming cu Reducere <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #c3dd2c, #ddf93c)"}}>{an}</span>
+              Echipament Gaming <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #c3dd2c, #ddf93c)"}}>{an}</span>
             </h1>
             <p className="text-[#c9ced5] text-lg mb-8 max-w-xl mx-auto leading-relaxed">
-              Laptopuri gaming, placi video, monitoare si periferice — coduri reducere verificate la PCGarage, eMAG, Altex
+              Laptopuri gaming, placi video, monitoare si periferice — oferte {laParteneri(NISA_CATEGORII.gaming)}, actualizate zilnic
             </p>
             <div className="flex flex-wrap justify-center gap-2 mb-6">
               {["Laptop Gaming","Monitor 144Hz","Placa Video RTX","Mouse Gaming","Tastatura Mecanica","Casti Gaming","Controller PS5"].map(c => (
-                <span key={c} className="bg-[#1f2329] border border-[#2a2f36] text-slate-500 text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
+                <span key={c} className="bg-[#1f2329] border border-[#2a2f36] text-[#c9ced5] text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
               ))}
             </div>
           </div>
@@ -142,17 +143,15 @@ export default function GamingPage() {
             <h2 className="text-2xl font-black text-[#ffffff] mb-7">Cum cumperi echipament gaming mai ieftin</h2>
             <div className="space-y-6 text-sm text-[#c9ced5] leading-relaxed">
               <div className="bg-[#1f2329] border border-[#2a2f36] rounded-xl p-5">
-                <h3 className="font-bold text-[#ffffff] mb-2 text-base">PCGarage vs eMAG vs Altex — care e mai ieftin?</h3>
-                <p>PCGarage are cel mai bun pret la componente PC (placi video, procesoare, RAM) — specializati in gaming. eMAG are gama mai larga si frecvent campanii cu reduceri masive. Altex are avantaj la laptopuri gaming prin promotii periodice. Verifica mereu toate trei inainte de orice achizitie.</p>
+                <h3 className="font-bold text-[#ffffff] mb-2 text-base">Cum compari preturile</h3>
+                <p>Preturile la componente si la laptopuri de gaming difera de la un magazin la altul si se schimba des. Compara acelasi model (codul exact al produsului) in mai multe magazine inainte sa cumperi; pe AmCupon gasesti ofertele partenerilor, actualizate zilnic.</p>
               </div>
               <div className="bg-[#1f2329] border border-[#2a2f36] rounded-xl p-5">
                 <h3 className="font-bold text-[#ffffff] mb-3 text-base">Cel mai bun moment sa cumperi echipament gaming</h3>
                 <ul className="space-y-2">
                   {[
-                    ["Black Friday (noiembrie)","reduceri 20-40% la laptopuri gaming si monitoare"],
-                    ["Lansarea generatiei noi","cand apare RTX 5000, pretul la RTX 4000 scade instant"],
-                    ["Vara (iulie-august)","reduceri la stocuri de iarna (casti, controllere)"],
-                    ["Campionii de Gaming eMAG","campanie dedicata, reduceri bune la periferice"],
+                    ["Black Friday (noiembrie)","reduceri la laptopuri de gaming si monitoare"],
+                    ["Lansarea generatiei noi","cand apare o serie noua de placi video, modelele vechi se ieftinesc de obicei"],
                   ].map(([bold, text]) => (
                     <li key={bold} className="flex gap-2">
                       <span className="text-[#ddf93c] mt-0.5 shrink-0">→</span>
@@ -162,8 +161,8 @@ export default function GamingPage() {
                 </ul>
               </div>
               <div className="bg-[#1f2329] border border-[#2a2f36] rounded-xl p-5">
-                <h3 className="font-bold text-[#ffffff] mb-2 text-base">Laptop gaming recomandat sub 4000 lei</h3>
-                <p>Acer Nitro 5 si Lenovo IdeaPad Gaming ofera cel mai bun raport performanta-pret sub 4000 lei. Cauta modele cu RTX 3050 sau RTX 4050, 16GB RAM, SSD 512GB. Frecvent gasesti reduceri de 300-500 lei la eMAG sau PCGarage cu coduri AmCupon.</p>
+                <h3 className="font-bold text-[#ffffff] mb-2 text-base">Ce sa cauti la un laptop de gaming de buget</h3>
+                <p>Placa video dedicata (de exemplu RTX 4050 sau RTX 5050), cel putin 16 GB RAM si SSD de 512 GB. Seriile de buget sunt Acer Nitro, Lenovo LOQ, ASUS TUF si HP Victus — compara-le pe aceeasi configuratie.</p>
               </div>
             </div>
           </div>

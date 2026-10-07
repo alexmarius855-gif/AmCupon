@@ -12,7 +12,7 @@ const LINK_MXENDURO = linkPlatit("https://mxenduro.ro");
 
 export const metadata: Metadata = {
   title: "Echipament Moto cu Reducere Romania 2026 — Casti, Piese",
-  description: "Casti, geci, manusi si piese pentru motociclete si scutere. Magazine romanesti de echipament moto: Fixato si MxEnduro.",
+  description: "Casti, geci, manusi si piese pentru motociclete si scutere, de la magazinele romanesti de echipament moto partenere AmCupon, precum MxEnduro.",
   keywords: ["echipament moto reducere", "casti moto ieftine", "costume motociclisti reducere", "piese moto online", "cod reducere fixato", "cod reducere mxenduro"],
   alternates: { canonical: "https://amcupon.ro/echipament-moto" },
   openGraph: { title: "Echipament Moto cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/echipament-moto", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
@@ -101,7 +101,7 @@ export default function EchipamentMotoPage() {
             <ul className="space-y-2 text-sm text-[#c9ced5]">
               <li><strong className="text-[#c9ced5]">Casca</strong> — verifica intotdeauna omologarea ECE 22.06, marimea corecta conteaza mai mult decat designul</li>
               <li><strong className="text-[#c9ced5]">Geaca si pantaloni</strong> — cauta protectii CE la coate, umeri, genunchi si spate</li>
-              <li><strong className="text-[#c9ced5]">Sezonalitate</strong> — echipamentul de iarna (impermeabil, captuseala termica) costa cel mai putin vara</li>
+              <li><strong className="text-[#c9ced5]">Sezonalitate</strong> — echipamentul de iarna (impermeabil, captuseala termica) e de obicei mai ieftin in afara sezonului</li>
               <li><strong className="text-[#c9ced5]">Piese de schimb</strong> — compara pretul intre 2-3 magazine, diferentele pot fi semnificative</li>
             </ul>
           </section>

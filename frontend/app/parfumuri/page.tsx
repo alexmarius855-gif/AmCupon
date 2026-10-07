@@ -17,18 +17,18 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Cod Reducere Parfumuri România 2026 — Douglas, Notino",
-  description: `Coduri de reducere parfumuri ${laParteneri(NISA_CATEGORII.parfumuri)}. Parfumuri, cosmetice, skincare la prețuri reduse. Actualizate zilnic.`,
+  title: "Parfumuri România 2026 — Oferte de la Notino și Parteneri",
+  description: `Oferte la parfumuri, cosmetice și skincare ${laParteneri(NISA_CATEGORII.parfumuri)}. Actualizate zilnic.`,
   keywords: ["cod reducere parfumuri", "reduceri douglas", "parfumuri ieftine", "cod reducere notino", "sephora reducere", "parfumuri originale romania", "cosmetice reducere"],
   alternates: { canonical: "https://amcupon.ro/parfumuri" },
-  openGraph: { title: "Parfumuri cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/parfumuri", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
+  openGraph: { title: "Parfumuri 2026 | AmCupon.ro", url: "https://amcupon.ro/parfumuri", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
-const TOP_BEAUTY = ["douglas.ro","notino.ro","sephora.ro","makeup.ro","marionnaud.ro","kiehl.ro","parfumexpress.ro"];
+const TOP_BEAUTY = ["notino.ro"];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_BEAUTY = ["beauty"];
 const AVANTAJE = [
-  { icon: "🌹", titlu: "Parfumuri de Lux", desc: "Chanel, Dior, YSL, Gucci — originale certificate" },
+  { icon: "🌹", titlu: "Parfumuri de Lux", desc: "Chanel, Dior, YSL, Gucci" },
   { icon: "💄", titlu: "Machiaj", desc: "Fond de ten, ruj, rimel — branduri premium" },
   { icon: "🧴", titlu: "Skincare", desc: "Serumuri, creme, măști — rutina completă" },
   { icon: "🛁", titlu: "Îngrijire Corp", desc: "Loțiuni, uleiuri, exfolianți de lux" },
@@ -36,7 +36,7 @@ const AVANTAJE = [
   { icon: "🎁", titlu: "Seturi Cadou", desc: "Seturi parfum + cremă — cadoul perfect" },
 ];
 
-const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Parfumuri cu Reducere 2026","url":"https://amcupon.ro/parfumuri","description":"Coduri reducere parfumuri si cosmetice Romania — Douglas, Notino, Sephora" };
+const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Parfumuri 2026","url":"https://amcupon.ro/parfumuri","description":"Oferte la parfumuri si cosmetice de la magazinele partenere AmCupon" };
 
 export default function ParfumuriPage() {
   const filePath = path.join(process.cwd(), "public", "output.json");
@@ -58,16 +58,16 @@ export default function ParfumuriPage() {
           <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#9399a0]">
             <Link href="/" className="hover:text-[#ddf93c]">Acasă</Link>
             <span className="mx-1">/</span>
-            <span className="text-[#c9ced5] font-medium">Parfumuri cu Reducere</span>
+            <span className="text-[#c9ced5] font-medium">Parfumuri</span>
           </div>
         </nav>
 
         <section className="bg-gradient-to-br from-[#c3dd2c] via-[#ddf93c] to-[#c3dd2c] text-[#0c1000] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">🌹</div>
-            <h1 className="text-3xl md:text-4xl font-black mb-3">Parfumuri cu Reducere {an}</h1>
+            <h1 className="text-3xl md:text-4xl font-black mb-3">Parfumuri {an}</h1>
             <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              Coduri de reducere și oferte {laParteneri(NISA_CATEGORII.parfumuri, 3)} și la alte magazine partenere de cosmetice
+              Oferte {laParteneri(NISA_CATEGORII.parfumuri, 3)} și la alte magazine partenere de cosmetice
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Parfumuri originale","Machiaj","Skincare","Îngrijire corp","Seturi cadou","Nail art"].map(c => (
@@ -105,9 +105,9 @@ export default function ParfumuriPage() {
 
 
         <NisaProduse
-          merchantSlugs={["douglas.ro","notino.ro","sephora.ro","makeup.ro","marionnaud.ro"]}
-          catSlug="beauty"
-          titlu="Parfumuri și cosmetice de la parteneri"
+          merchantSlugs={[]}
+          teme={["parfumuri-femei", "parfumuri-barbati"]}
+          titlu="Parfumuri de la parteneri"
           culoareAccent="indigo"
           limit={12}
         />
@@ -117,21 +117,21 @@ export default function ParfumuriPage() {
             <h2 className="text-xl font-black text-[#ffffff] mb-5">Ghid: Parfumuri originale ieftine în România</h2>
             <div className="space-y-4 text-sm text-[#c9ced5] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Douglas vs Notino vs Sephora</h3>
-                <p>Douglas are cele mai frecvente reduceri și o gamă largă de branduri premium. Notino excelează la parfumuri de nișă și prețuri competitive. Sephora atrage cu seturi exclusive și produse limitată.</p>
+                <h3 className="font-bold text-[#ffffff] mb-1">Unde cumperi parfumuri originale</h3>
+                <p>Cumpără de la magazine care declară că vând produse originale, de la distribuitori autorizați, și citește politica de retur: la parfumurile desigilate, dreptul de retur poate să nu se aplice. Notino și ceilalți parteneri AmCupon apar mai sus, cu ofertele active.</p>
               </div>
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Parfumuri populare cu reduceri frecvente</h3>
+                <h3 className="font-bold text-[#ffffff] mb-1">Parfumuri populare</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
-                  <li><strong>Chanel Coco Mademoiselle</strong> — bestseller cu -15% periodic</li>
-                  <li><strong>Dior Sauvage</strong> — cel mai vândut parfum masculin</li>
-                  <li><strong>YSL Black Opium</strong> — favorit feminin cu reduceri regulate</li>
-                  <li><strong>Giorgio Armani Si</strong> — floral, reduceri la seturi cadou</li>
+                  <li><strong>Chanel Coco Mademoiselle</strong> — chypre floral</li>
+                  <li><strong>Dior Sauvage</strong> — aromatic fougère, unul dintre cele mai cunoscute parfumuri masculine</li>
+                  <li><strong>YSL Black Opium</strong> — oriental-vanilat, cu note de cafea</li>
+                  <li><strong>Giorgio Armani Sì</strong> — chypre fructat</li>
                 </ul>
               </div>
               <div>
                 <h3 className="font-bold text-[#ffffff] mb-1">Când să cumperi</h3>
-                <p>Cele mai mari reduceri la parfumuri apar în noiembrie (Black Friday), înainte de Crăciun și de Valentine&apos;s Day. Douglas lansează frecvent promoții pentru membrii clubului de fidelitate.</p>
+                <p>Cele mai mari reduceri la parfumuri apar în noiembrie (Black Friday), înainte de Crăciun și de Valentine&apos;s Day.</p>
               </div>
             </div>
           </div>

@@ -5,7 +5,8 @@ import path from "path";
 import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
-import { esteInCategorie } from "../../lib/categoriiNisa";
+import { esteInCategorie, NISA_CATEGORII } from "../../lib/categoriiNisa";
+import { laParteneri } from "@/lib/cifreSite";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -15,14 +16,14 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Laptop Ieftin Romania 2026 — Coduri Reducere eMAG, Altex",
+  title: "Laptop Ieftin Romania 2026 — Oferte de la Parteneri",
   description: "Oferte la laptopuri 2026: gaming, business, student, de la magazinele de electronice partenere AmCupon. Reduceri active, actualizate zilnic.",
   keywords: ["laptop ieftin romania", "laptop gaming reducere", "laptop student ieftin", "cel mai bun laptop 2026", "laptop sub 3000 lei", "emag laptop reducere", "altex laptop promotie"],
   alternates: { canonical: "https://amcupon.ro/laptop" },
   openGraph: { title: "Laptop Ieftin Romania 2026 | AmCupon.ro", url: "https://amcupon.ro/laptop", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
-const TOP_LAPTOP = ["altex.ro","pcgarage.ro","flanco.ro","evomag.ro","cel.ro","quickmobile.ro"];
+const TOP_LAPTOP = ["evomag.ro"];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_LAPTOP = ["electronice"];
 
@@ -39,10 +40,10 @@ const BRANDURI = [
   { brand: "HP", desc: "Pavilion (buget), Spectre (premium), Omen (gaming)" },
   { brand: "Dell", desc: "XPS (ultrabook premium), Inspiron (buget), Alienware (gaming)" },
   { brand: "Acer", desc: "Nitro (gaming buget), Swift (ultrabook), Aspire (student)" },
-  { brand: "Apple", desc: "MacBook Air M3 (eficienta), MacBook Pro (profesional)" },
+  { brand: "Apple", desc: "MacBook Air (eficienta), MacBook Pro (profesional)" },
 ];
 
-const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Laptop Ieftin Romania 2026","url":"https://amcupon.ro/laptop","description":"Oferte laptopuri Romania 2026 — gaming, business, student la preturi reduse" };
+const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Laptop Ieftin Romania 2026","url":"https://amcupon.ro/laptop","description":"Oferte la laptopuri de la magazinele partenere — gaming, business, student" };
 
 export default function LaptopPage() {
   const filePath = path.join(process.cwd(), "public", "output.json");
@@ -86,11 +87,11 @@ export default function LaptopPage() {
               Laptop Ieftin Romania <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #ddf93c, #c3dd2c)"}}>{an}</span>
             </h1>
             <p className="text-[#c9ced5] text-lg mb-8 max-w-xl mx-auto leading-relaxed">
-              Gaming, business, student — cele mai bune oferte laptopuri cu reduceri actualizate zilnic
+              Gaming, business, student — laptopuri {laParteneri(NISA_CATEGORII.laptop)}, actualizate zilnic
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Gaming","Student","Business","MacBook","Sub 3000 lei","Sub 5000 lei","Ultrabook"].map(c => (
-                <span key={c} className="bg-[#1f2329] border border-[#2a2f36] text-slate-500 text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
+                <span key={c} className="bg-[#1f2329] border border-[#2a2f36] text-[#c9ced5] text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
               ))}
             </div>
           </div>
@@ -145,7 +146,7 @@ export default function LaptopPage() {
             <h2 className="text-2xl font-black text-[#ffffff] mb-7">Ce laptop sa cumperi in {an}</h2>
             <div className="space-y-5">
               <div className="bg-[#1f2329] border border-[#2a2f36] rounded-xl p-5">
-                <h3 className="font-bold text-[#ffffff] mb-3 text-base">Cele mai bune branduri laptop in {an}</h3>
+                <h3 className="font-bold text-[#ffffff] mb-3 text-base">Branduri populare de laptopuri in {an}</h3>
                 <div className="grid sm:grid-cols-2 gap-3">
                   {BRANDURI.map(b => (
                     <div key={b.brand} className="bg-[#14181c] border border-[#2a2f36] rounded-xl p-3">
@@ -159,11 +160,11 @@ export default function LaptopPage() {
                 <h3 className="font-bold text-[#ffffff] mb-3 text-base">Ce specificatii conteaza cu adevarat</h3>
                 <ul className="space-y-2 text-sm text-[#c9ced5]">
                   {[
-                    ["Procesor","Intel Core i5/i7 13th gen sau AMD Ryzen 5/7 7000 — ambele excelente"],
+                    ["Procesor","Intel Core i5/i7 sau Core Ultra 5/7, ori AMD Ryzen 5/7, din generatiile recente"],
                     ["RAM","minimum 16GB pentru confort real in 2026 (8GB e deja insuficient)"],
                     ["SSD","minimum 512GB NVMe — viteza de boot si aplicatii radical mai buna"],
                     ["Display","IPS 1920x1080 minimum; daca lucrezi cu imagini, cauta 2K/OLED"],
-                    ["Baterie","50+ Wh pentru o zi completa de lucru fara incarcator"],
+                    ["Baterie","capacitatea in Wh conteaza, dar autonomia reala o afli din testele independente"],
                   ].map(([bold, text]) => (
                     <li key={bold} className="flex gap-2">
                       <span className="text-[#c3dd2c] mt-0.5 shrink-0">→</span>
@@ -173,8 +174,8 @@ export default function LaptopPage() {
                 </ul>
               </div>
               <div className="bg-[#1f2329] border border-[#2a2f36] rounded-xl p-5">
-                <h3 className="font-bold text-[#ffffff] mb-2 text-base">Cand sunt cele mai mari reduceri la laptopuri</h3>
-                <p className="text-sm text-[#c9ced5] leading-relaxed">Black Friday (noiembrie) si Zilele eMAG (mai, octombrie) aduc reduceri de 20-35% la laptopuri. Verifica codurile AmCupon pentru discount suplimentar de 5-10% aplicabil pe langa promotia activa.</p>
+                <h3 className="font-bold text-[#ffffff] mb-2 text-base">Cand sunt reduceri la laptopuri</h3>
+                <p className="text-sm text-[#c9ced5] leading-relaxed">De Black Friday (noiembrie) si cand apare o generatie noua de procesoare, modelele vechi se ieftinesc de obicei. Cand un partener are un cod activ, il gasesti pe pagina lui de pe AmCupon.ro.</p>
               </div>
             </div>
           </div>

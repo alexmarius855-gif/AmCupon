@@ -101,3 +101,30 @@ export function faraCod(text: string, cod?: string): string {
     .replace(/^[\s:,–—]+|[\s:,–—-]+$/g, "")
     .trim();
 }
+
+/** Un singur „cuvant" de litere si cifre, cu o cifra sau 4+ majuscule: „SAVE10", „DH2026SEPSAVE3". */
+export function pareCod(x: string): boolean {
+  return /^[A-Z0-9][A-Z0-9_-]{2,}$/i.test(x) && /\d|[A-Z]{4,}/.test(x);
+}
+
+/**
+ * Titlul unei promotii pe un card, fara cod. 07.10.2026: `MagazinCard` afisa `promo.nume` brut, iar la
+ * Impact numele e des chiar codul („SAVE10", „DH2026SEPSAVE3") — codul intreg se vedea pe paginile de
+ * nisa, fara clic pe linkul platit. Regula ca in `CuponCard`: codul scos din titlu, apoi descrierea,
+ * apoi o eticheta generica. Un titlu fara niciun spatiu (un singur „cuvant" de litere mari si cifre)
+ * e tratat ca un cod.
+ */
+export function titluPromotie(p: { nume?: string; descriere?: string; cod_cupon?: string }, numeMagazin: string): string {
+  // Fara `cod_cupon`, dar cu titlul = un cod („DH2026OCTSAVE3"): codul e chiar titlul, iar descrierea
+  // il repeta („using coupon DH2026OCTSAVE3") — se scoate si de acolo.
+  const cod = ((p.cod_cupon || "").trim() || (pareCod((p.nume || "").trim()) ? (p.nume || "").trim() : ""));
+  const curat = (t?: string) => {
+    const x = faraCod(t || "", cod);
+    return pareCod(x) ? "" : x;
+  };
+  const titlu = curat(p.nume);
+  if (titlu) return titlu;
+  const desc = p.descriere && p.descriere !== p.nume ? curat(p.descriere) : "";
+  if (desc) return desc;
+  return (p.cod_cupon || "").trim() ? `Cod de reducere ${numeMagazin}` : `Ofertă ${numeMagazin}`;
+}

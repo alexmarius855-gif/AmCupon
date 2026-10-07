@@ -154,13 +154,35 @@ def zile_pana_la(expira, azi: str):
         return None
 
 
+# 07.10.2026: 59 de promotii Impact (DHgate & co.) aveau `cod_cupon` gol, iar codul era chiar TITLUL
+# („DH2026OCTSAVE3"), repetat in descriere („using coupon DH2026OCTSAVE3"). Pe site, titlul arata codul
+# intreg (fara clic pe linkul platit), iar oferta nu se numara ca „cu cod". Codul trece in `cod_cupon`
+# DOAR cand descrierea il numeste langa „coupon/code/cod/codul" — semn sigur ca e un cod, nu un nume.
+_RE_TITLU_COD = re.compile(r"[A-Z0-9][A-Z0-9_-]{2,}", re.I)
+
+
+def cod_din_titlu(p: dict) -> bool:
+    """Muta codul din titlu in `cod_cupon` (in-place). Intoarce True daca a mutat ceva."""
+    if (p.get("cod_cupon") or "").strip():
+        return False
+    nume = (p.get("nume") or "").strip()
+    if not _RE_TITLU_COD.fullmatch(nume) or not re.search(r"\d|[A-Z]{4,}", nume):
+        return False
+    desc = p.get("descriere") or ""
+    if not re.search(rf"\b(?:coupon|code|codul|cod)\s*:?\s*{re.escape(nume)}(?![\w-])", desc, re.I):
+        return False
+    p["cod_cupon"] = nume
+    return True
+
+
 def curata_promotii(magazine: list, azi: str = None) -> dict:
     """In-place. Scoate promotiile expirate si pe cele scrise pentru afiliati, curata textul
     (markdown, fraze pentru afiliati), recalculeaza `zile_ramase` din `expira` si flag-urile de
     magazin. Idempotent. Intoarce ce a schimbat, ca sa se vada in log."""
     azi = azi or azi_utc()
     st = {"expirate": 0, "zile_recalculate": 0, "fara_data": 0, "data_absurda": 0, "flaguri": 0,
-          "markdown": 0, "mojibake": 0, "afiliati_scoase": [], "afiliati_curatate": 0, "magazine_golite": []}
+          "markdown": 0, "mojibake": 0, "afiliati_scoase": [], "afiliati_curatate": 0, "magazine_golite": [],
+          "cod_din_titlu": 0}
     for m in magazine:
         if not isinstance(m, dict):
             continue
@@ -181,6 +203,8 @@ def curata_promotii(magazine: list, azi: str = None) -> dict:
                     if curat != p[k]:
                         p[k] = curat
                         st["markdown"] += 1
+            if cod_din_titlu(p):
+                st["cod_din_titlu"] += 1
             verdict = text_pentru_afiliati(p, m)
             if verdict and verdict[0] == "scoate":
                 st["afiliati_scoase"].append(f"{m.get('magazin', '?')} ({verdict[1]})")

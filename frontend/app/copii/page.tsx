@@ -17,14 +17,14 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Reduceri Jucării & Haine Copii 2026 — Coduri Noriel, eMAG",
-  description: `Coduri reducere magazine copii 2026 ${laParteneri(NISA_CATEGORII.copii)}. Jucării, haine, cărucioare, scaune auto — la prețuri reduse.`,
+  title: "Reduceri Jucării & Haine Copii 2026 — Noriel și Parteneri",
+  description: `Coduri de reducere și oferte la magazinele pentru copii ${laParteneri(NISA_CATEGORII.copii)}: jucării, haine, cărucioare, scaune auto.`,
   keywords: ["reduceri jucarii", "cod reducere noriel", "haine copii reducere", "jucarii ieftine online", "emag copii reducere", "carucior reducere", "scaun auto copil reducere"],
   alternates: { canonical: "https://amcupon.ro/copii" },
   openGraph: { title: "Reduceri Copii & Jucării 2026 | AmCupon.ro", url: "https://amcupon.ro/copii", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
-const TOP_COPII = ["noriel.ro","smythstoys.com","bebetei.ro","bebe-tei.ro","mothercare.ro","chicco.ro"];
+const TOP_COPII = ["noriel.ro"];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_COPII = ["copii"];
 const GRUPE_VARSTA = [
@@ -64,9 +64,9 @@ export default function CopiiPage() {
         <section className="bg-gradient-to-br from-[#c3dd2c] via-[#ddf93c] to-[#c3dd2c] text-[#0c1000] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">🧸</div>
-            <h1 className="text-3xl md:text-4xl font-black mb-3">Jucării & Copii cu Reducere {an}</h1>
+            <h1 className="text-3xl md:text-4xl font-black mb-3">Jucării & Copii {an}</h1>
             <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              LEGO, păpuși, haine copii, cărucioare, scaune auto — coduri de reducere active
+              LEGO, păpuși, haine copii, cărucioare, scaune auto — oferte {laParteneri(NISA_CATEGORII.copii)}
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["LEGO","Păpuși","Haine Kids","Cărucioare","Scaune auto","Cărți copii","Parcuri de joacă","Baby monitor"].map(c => (
@@ -122,15 +122,15 @@ export default function CopiiPage() {
             <div className="space-y-4 text-sm text-[#c9ced5] leading-relaxed">
               <div>
                 <h3 className="font-bold text-[#ffffff] mb-1">Cum economisești la jucării și haine copii</h3>
-                <p>Noriel oferă cele mai bune prețuri la jucăriile populare (LEGO, Barbie, Hot Wheels) și are frecvent reduceri și pachete speciale. eMAG are gamă mai largă dar prețuri variabile — compară mereu.</p>
+                <p>Noriel are des reduceri și pachete speciale la jucăriile populare (LEGO, Barbie, Hot Wheels). Compară prețul aceluiași set în mai multe magazine înainte să cumperi.</p>
               </div>
               <div>
                 <h3 className="font-bold text-[#ffffff] mb-1">Cele mai bune momente pentru cumpărături copii</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
-                  <li><strong>Noiembrie (Black Friday)</strong> — cele mai mari reduceri la jucării scumpe (LEGO, console)</li>
-                  <li><strong>Ianuarie</strong> — solduri post-Crăciun, reduceri 40-60% la stocuri rămase</li>
+                  <li><strong>Noiembrie (Black Friday)</strong> — reduceri la jucăriile scumpe (LEGO, console)</li>
+                  <li><strong>Ianuarie</strong> — lichidări de stoc după Crăciun</li>
                   <li><strong>August (Back to School)</strong> — rechizite, ghiozdane, haine de scoală</li>
-                  <li><strong>Luna nașterii</strong> — multe magazine trimit coduri exclusive la zi de naștere</li>
+                  <li><strong>Ziua copilului</strong> — unele magazine trimit un cod abonaților, de ziua lor</li>
                 </ul>
               </div>
             </div>

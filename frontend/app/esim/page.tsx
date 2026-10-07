@@ -161,11 +161,11 @@ const FAQ = [
   },
   {
     q: "Airalo sau Saily — pe care il aleg?",
-    a: "Airalo are cel mai mare catalog si e ideal daca calatoresti in mai multe tari sau in destinatii exotice (Asia, Africa, America Latina). Saily e mai simplu de folosit si e de la echipa NordVPN — ideal pentru calatorii in Europa si America de Nord.",
+    a: "Airalo are un catalog foarte mare (peste 200 de destinatii), util daca mergi in mai multe tari sau in destinatii mai rare. Saily e mai simplu de folosit si e facut de firma din spatele NordVPN. Inainte sa alegi, compara pretul pentru destinatia ta pe ambele site-uri.",
   },
   {
     q: "Pot face apeluri cu un eSIM de date?",
-    a: "Planurile de date pure nu includ apeluri/SMS. Poti folosi WhatsApp, Signal, Telegram, Google Meet sau FaceTime prin datele mobile. Unele eSIM-uri (ca eTravelSIM) ofera planuri combo cu voce, dar sunt mai scumpe.",
+    a: "Planurile de date pure nu includ apeluri/SMS. Poti folosi WhatsApp, Signal, Telegram, Google Meet sau FaceTime prin datele mobile. Unele eSIM-uri au si planuri cu minute incluse, de obicei mai scumpe.",
   },
 ];
 

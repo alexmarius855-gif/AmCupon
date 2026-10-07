@@ -6,7 +6,7 @@ import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
 import { esteInCategorie } from "../../lib/categoriiNisa";
-import { laParteneri } from "@/lib/cifreSite";
+import { enumerare, laParteneri, parteneriCategorie } from "@/lib/cifreSite";
 import { NISA_CATEGORII } from "@/lib/categoriiNisa";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
@@ -17,14 +17,14 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Cod Reducere Electronice România 2026 — eMag, Altex",
-  description: `Coduri de reducere electronice ${laParteneri(NISA_CATEGORII.electronice)}. Telefoane, laptopuri, gadgeturi la prețuri reduse. Actualizate zilnic.`,
+  title: "Electronice România 2026 — Oferte de la Parteneri",
+  description: `Oferte la electronice ${laParteneri(NISA_CATEGORII.electronice)}: telefoane, laptopuri, gadgeturi. Actualizate zilnic.`,
   keywords: ["cod reducere emag", "reduceri altex", "electronice ieftine", "cod reducere pcgarage", "laptop reducere", "telefon reducere romania", "electronice online"],
   alternates: { canonical: "https://amcupon.ro/electronice" },
-  openGraph: { title: "Electronice cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/electronice", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
+  openGraph: { title: "Electronice 2026 | AmCupon.ro", url: "https://amcupon.ro/electronice", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
-const TOP_TECH = ["altex.ro","pcgarage.ro","flanco.ro","cel.ro","mediagalaxy.ro","evomag.ro","philips.ro","tenergy.com"];
+const TOP_TECH = ["evomag.ro","philips.ro","tenergy.com"];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_TECH = ["electronice"];
 const AVANTAJE = [
@@ -36,7 +36,7 @@ const AVANTAJE = [
   { icon: "⌚", titlu: "Smartwatch & Wearables", desc: "Apple Watch, Samsung Galaxy Watch, brățări fitness" },
 ];
 
-const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Electronice cu Reducere 2026","url":"https://amcupon.ro/electronice","description":"Coduri reducere electronice online Romania — eMag, Altex, PCGarage" };
+const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Electronice 2026","url":"https://amcupon.ro/electronice","description":"Oferte la electronice de la magazinele partenere AmCupon" };
 
 export default function ElectronicePage() {
   const filePath = path.join(process.cwd(), "public", "output.json");
@@ -58,16 +58,16 @@ export default function ElectronicePage() {
           <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#9399a0]">
             <Link href="/" className="hover:text-[#ddf93c]">Acasă</Link>
             <span className="mx-1">/</span>
-            <span className="text-[#c9ced5] font-medium">Electronice cu Reducere</span>
+            <span className="text-[#c9ced5] font-medium">Electronice</span>
           </div>
         </nav>
 
         <section className="bg-gradient-to-br from-[#c3dd2c] via-[#ddf93c] to-[#c3dd2c] text-[#0c1000] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">📱</div>
-            <h1 className="text-3xl md:text-4xl font-black mb-3">Electronice cu Reducere {an}</h1>
+            <h1 className="text-3xl md:text-4xl font-black mb-3">Electronice {an}</h1>
             <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              Coduri de reducere și oferte {laParteneri(NISA_CATEGORII.electronice, 3)} și la alte magazine partenere de electronice
+              Oferte {laParteneri(NISA_CATEGORII.electronice, 3)} și la alte magazine partenere de electronice
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Telefoane","Laptopuri","TV 4K","Gaming","Căști","Smartwatch"].map(c => (
@@ -93,7 +93,7 @@ export default function ElectronicePage() {
         <section className="max-w-6xl mx-auto px-4 pb-10">
           <div className="flex items-center gap-3 mb-5">
             
-            <h2 className="text-xl font-black text-[#ffffff]">Magazine electronice cu reduceri active</h2>
+            <h2 className="text-xl font-black text-[#ffffff]">Magazine de electronice partenere</h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {magazine.map((m) => (
@@ -105,8 +105,8 @@ export default function ElectronicePage() {
 
 
         <NisaProduse
-          merchantSlugs={["altex.ro","pcgarage.ro","flanco.ro","cel.ro","evomag.ro",]}
-          catSlug="electronice"
+          merchantSlugs={[]}
+          teme={["laptopuri", "telefoane", "tablete", "monitoare", "casti-wireless", "smartwatch-uri"]}
           titlu="Electronice de la magazinele partenere"
           culoareAccent="blue"
           limit={12}
@@ -118,21 +118,15 @@ export default function ElectronicePage() {
             <div className="space-y-4 text-sm text-[#c9ced5] leading-relaxed">
               <div>
                 <h3 className="font-bold text-[#ffffff] mb-1">Cele mai bune momente să cumperi</h3>
-                <p>Black Friday (noiembrie), Campania 11.11, zilele de naștere ale magazinelor (eMag aniversare, Altex Birthday). Reducerile pot ajunge la 40-60% la telefoane și laptopuri de generație anterioară.</p>
+                <p>Black Friday (noiembrie), campaniile de 11.11 și aniversările magazinelor. Telefoanele și laptopurile din generația anterioară se ieftinesc de obicei când apar modelele noi.</p>
               </div>
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Top magazine electronice România</h3>
-                <ul className="list-disc list-inside space-y-1 ml-2">
-                  <li><strong>eMag</strong> — cel mai mare, livrare rapidă, retur 30 zile</li>
-                  <li><strong>Altex</strong> — network fizic + online, prețuri competitive</li>
-                  <li><strong>PCGarage</strong> — specializat IT, componente PC, gaming</li>
-                  <li><strong>Flanco</strong> — electrocasnice + electronice, rate 0%</li>
-                  <li><strong>CEL.ro</strong> — gamă largă, prețuri bune la accesorii</li>
-                </ul>
+                <h3 className="font-bold text-[#ffffff] mb-1">Partenerii AmCupon la electronice</h3>
+                <p>{parteneriCategorie(NISA_CATEGORII.electronice, 6).length ? `${enumerare(parteneriCategorie(NISA_CATEGORII.electronice, 6))} și alte magazine partenere — ofertele lor active apar mai sus, pe cardurile magazinelor.` : "Ofertele magazinelor partenere apar mai sus, pe cardurile magazinelor."}</p>
               </div>
               <div>
                 <h3 className="font-bold text-[#ffffff] mb-1">Sfaturi economii</h3>
-                <p>Compară prețul pe eMag vs Altex vs PCGarage înainte de cumpărare. Activează alertele de preț. Codurile de reducere AmCupon se cumulează deseori cu prețurile deja reduse.</p>
+                <p>Compară prețul aceluiași model (codul exact al produsului) în mai multe magazine înainte să cumperi. Dacă un partener are un cod activ, condițiile lui — inclusiv dacă se cumulează cu alte reduceri — sunt pe pagina magazinului.</p>
               </div>
             </div>
           </div>

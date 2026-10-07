@@ -5,7 +5,8 @@ import path from "path";
 import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
-import { esteInCategorie } from "../../lib/categoriiNisa";
+import { esteInCategorie, NISA_CATEGORII } from "../../lib/categoriiNisa";
+import { laParteneri } from "@/lib/cifreSite";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -15,14 +16,14 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Telefon Ieftin Romania 2026 — Coduri Samsung, iPhone, Xiaomi",
+  title: "Telefoane 2026 — Samsung, iPhone, Xiaomi de la parteneri",
   description: "Oferte la telefoane 2026: Samsung Galaxy, iPhone si altele, de la magazinele de electronice partenere AmCupon. Reduceri active, actualizate zilnic.",
   keywords: ["telefon ieftin romania", "smartphone reducere 2026", "samsung reducere", "iphone reducere romania", "xiaomi ieftin", "telefon sub 2000 lei", "emag telefoane reducere"],
   alternates: { canonical: "https://amcupon.ro/telefoane" },
   openGraph: { title: "Telefon Ieftin Romania 2026 | AmCupon.ro", url: "https://amcupon.ro/telefoane", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
-const TOP_TEL = ["altex.ro","flanco.ro","evomag.ro","cel.ro","orange.ro","vodafone.ro","quickmobile.ro"];
+const TOP_TEL = ["evomag.ro"];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_TEL = ["electronice"];
 
@@ -35,14 +36,14 @@ const BUGETE_TEL = [
 
 const BRANDURI_TEL = [
   { brand: "Samsung", desc: "Galaxy A (buget), Galaxy S (flagship), Fold/Flip (pliabile)" },
-  { brand: "Apple iPhone", desc: "SE (buget), 15 (standard), 15 Pro (premium)" },
-  { brand: "Xiaomi", desc: "Redmi (buget), Mi/14 (flagship) — raport calitate-pret excelent" },
-  { brand: "OnePlus", desc: "Nord (mid), 12/13 (flagship rapid) — incarcator 100W+" },
-  { brand: "Google Pixel", desc: "Camera AI superioara, update-uri Android garantate 7 ani" },
+  { brand: "Apple iPhone", desc: "modelul de baza, Pro si Pro Max; generatia trecuta costa mai putin" },
+  { brand: "Xiaomi", desc: "Redmi (buget), seria cu numar (flagship)" },
+  { brand: "OnePlus", desc: "Nord (mid-range) si seria cu numar (flagship), cu incarcare rapida" },
+  { brand: "Google Pixel", desc: "fotografie computationala; de la Pixel 8, 7 ani de actualizari Android" },
   { brand: "Motorola", desc: "Moto G (buget solid), Edge (mid-range), Razr (pliabil)" },
 ];
 
-const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Telefon Ieftin Romania 2026","url":"https://amcupon.ro/telefoane","description":"Oferte telefoane Romania 2026 — Samsung, iPhone, Xiaomi la preturi reduse" };
+const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Telefon Ieftin Romania 2026","url":"https://amcupon.ro/telefoane","description":"Oferte la telefoane de la magazinele partenere — Samsung, iPhone, Xiaomi" };
 
 export default function TelefoaneePage() {
   const filePath = path.join(process.cwd(), "public", "output.json");
@@ -83,14 +84,14 @@ export default function TelefoaneePage() {
             </div>
             <div className="text-6xl mb-5 drop-shadow-2xl">📲</div>
             <h1 className="text-4xl md:text-5xl font-black text-[#ffffff] mb-4 tracking-tight">
-              Telefoane cu Reducere <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #2dd4bf, #ddf93c)"}}>{an}</span>
+              Telefoane <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #2dd4bf, #ddf93c)"}}>{an}</span>
             </h1>
             <p className="text-[#c9ced5] text-lg mb-8 max-w-xl mx-auto leading-relaxed">
-              Samsung, iPhone, Xiaomi, OnePlus — coduri reducere actualizate zilnic la eMAG, Altex, Flanco, Orange
+              Samsung, iPhone, Xiaomi, OnePlus — oferte {laParteneri(NISA_CATEGORII.telefoane)}, actualizate zilnic
             </p>
             <div className="flex flex-wrap justify-center gap-2">
-              {["Samsung Galaxy","iPhone 15","Xiaomi 14","OnePlus 13","Sub 1000 lei","Sub 2000 lei","5G"].map(c => (
-                <span key={c} className="bg-[#1f2329] border border-[#2a2f36] text-slate-500 text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
+              {["Samsung Galaxy","iPhone","Xiaomi","OnePlus","Sub 1000 lei","Sub 2000 lei","5G"].map(c => (
+                <span key={c} className="bg-[#1f2329] border border-[#2a2f36] text-[#c9ced5] text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
               ))}
             </div>
           </div>
@@ -145,7 +146,7 @@ export default function TelefoaneePage() {
             <h2 className="text-2xl font-black text-[#ffffff] mb-7">Ce telefon sa cumperi in {an}</h2>
             <div className="space-y-5">
               <div className="bg-[#1f2329] border border-[#2a2f36] rounded-xl p-5">
-                <h3 className="font-bold text-[#ffffff] mb-3 text-base">Cele mai bune branduri in {an}</h3>
+                <h3 className="font-bold text-[#ffffff] mb-3 text-base">Branduri populare in {an}</h3>
                 <div className="grid sm:grid-cols-2 gap-3">
                   {BRANDURI_TEL.map(b => (
                     <div key={b.brand} className="bg-[#14181c] border border-[#2a2f36] rounded-xl p-3">
@@ -157,15 +158,14 @@ export default function TelefoaneePage() {
               </div>
               <div className="bg-[#1f2329] border border-[#2a2f36] rounded-xl p-5">
                 <h3 className="font-bold text-[#ffffff] mb-2 text-base">Android sau iPhone — care e mai bun?</h3>
-                <p className="text-sm text-[#c9ced5] leading-relaxed">Daca ai deja Mac/iPad, iPhone se integreaza perfect. Daca vrei flexibilitate maxima si pret mai bun la specificatii similare, Samsung sau Xiaomi sunt alegeri mai inteligente. Xiaomi Redmi Note 13 Pro+ ofera camera 200MP si incarcare 67W la 1.600 lei — raport calitate-pret greu de batut.</p>
+                <p className="text-sm text-[#c9ced5] leading-relaxed">Daca ai deja Mac sau iPad, iPhone se integreaza cel mai bine cu ele. Android are mai multe modele la fiecare buget (Samsung, Xiaomi, Motorola, OnePlus). Compara acelasi buget pe camera, baterie si cati ani de actualizari primeste telefonul.</p>
               </div>
               <div className="bg-[#1f2329] border border-[#2a2f36] rounded-xl p-5">
                 <h3 className="font-bold text-[#ffffff] mb-3 text-base">Cand sa cumperi un telefon mai ieftin</h3>
                 <ul className="space-y-2 text-sm text-[#c9ced5]">
                   {[
-                    ["Dupa lansarea modelului nou","pretul modelului vechi scade cu 15-30% imediat"],
-                    ["Black Friday","reduceri 20-40% la modele mid-range si flagship din generatia anterioara"],
-                    ["Zilele eMAG","campanii de 2-3 ori pe an cu preturi foarte bune"],
+                    ["Dupa lansarea modelului nou","modelul din generatia trecuta se ieftineste de obicei"],
+                    ["Black Friday","reduceri la modelele mid-range si la flagship-urile din generatia anterioara"],
                   ].map(([bold, text]) => (
                     <li key={bold} className="flex gap-2">
                       <span className="text-[#c3dd2c] mt-0.5 shrink-0">→</span>

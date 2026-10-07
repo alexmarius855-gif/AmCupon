@@ -18,13 +18,13 @@ interface Magazin {
 
 export const metadata: Metadata = {
   title: "Farmacie Online Ieftină România 2026 — Reduceri Dr. Max",
-  description: "Coduri de reducere farmacie online România: Dr. Max, Vegis, Catena, Sensiblu. Suplimente, medicamente OTC, cosmetice medicale la prețuri reduse. Livrare rapidă.",
+  description: `Coduri de reducere și oferte la farmaciile online ${laParteneri(NISA_CATEGORII.farmacie)}: suplimente, medicamente fără rețetă, dermatocosmetice.`,
   keywords: ["farmacie online", "cod reducere dr max", "reduceri vegis", "suplimente ieftine", "medicamente online romania", "farmacie reducere", "catena online"],
   alternates: { canonical: "https://amcupon.ro/farmacie" },
-  openGraph: { title: "Farmacie Online cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/farmacie", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
+  openGraph: { title: "Farmacie Online 2026 | AmCupon.ro", url: "https://amcupon.ro/farmacie", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
-const TOP_PHARMA = ["drmax.ro","catena.ro","helpnet.ro","farmaciatei.ro","farmacia.ro"];
+const TOP_PHARMA = ["drmax.ro"];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_PHARMA = ["sanatate"];
 const AVANTAJE = [
@@ -36,7 +36,7 @@ const AVANTAJE = [
   { icon: "🐾", titlu: "Produse Veterinare", desc: "Antiparazitare, vitamine pentru animale" },
 ];
 
-const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Farmacie Online cu Reducere 2026","url":"https://amcupon.ro/farmacie","description":"Coduri reducere farmacii online Romania" };
+const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Farmacie Online 2026","url":"https://amcupon.ro/farmacie","description":"Coduri si oferte de la farmaciile online partenere AmCupon" };
 
 export default function FarmaciePage() {
   const filePath = path.join(process.cwd(), "public", "output.json");
@@ -66,9 +66,9 @@ export default function FarmaciePage() {
         <section className="bg-gradient-to-br from-[#c3dd2c] via-[#ddf93c] to-[#c3dd2c] text-[#0c1000] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">💊</div>
-            <h1 className="text-3xl md:text-4xl font-black mb-3">Farmacie Online cu Reducere {an}</h1>
+            <h1 className="text-3xl md:text-4xl font-black mb-3">Farmacie Online {an}</h1>
             <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              Coduri de reducere și oferte {laParteneri(NISA_CATEGORII.farmacie, 3)} și la alte farmacii online partenere
+              Oferte {laParteneri(NISA_CATEGORII.farmacie, 3)} și la alte farmacii online partenere
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Suplimente","Vitamine","Cosmetice medicale","Aparate medicale","Mamă & Bebe"].map(c => (
@@ -122,21 +122,21 @@ export default function FarmaciePage() {
             <div className="space-y-4 text-sm text-[#c9ced5] leading-relaxed">
               <div>
                 <h3 className="font-bold text-[#ffffff] mb-1">De ce farmacie online?</h3>
-                <p>Prețurile la suplimente și produse OTC pot fi cu 20-40% mai mici online față de farmacia fizică. Livrarea se face în 24-48h, iar gama de produse este mult mai largă. Dr. Max, Vegis și Catena sunt cele mai populare opțiuni în România.</p>
+                <p>Online găsești de obicei o gamă mai largă și poți compara prețurile între farmacii. Termenul de livrare diferă de la o farmacie la alta. Dr. Max, Vegis și ceilalți parteneri AmCupon apar mai sus, cu ofertele active.</p>
               </div>
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Cele mai cumpărate produse</h3>
+                <h3 className="font-bold text-[#ffffff] mb-1">Produse căutate des</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
-                  <li><strong>Vitamina D3 + K2</strong> — deficiență comună la români, esențial în anotimpul rece</li>
-                  <li><strong>Magneziu bisglicinat</strong> — stres, somn, crampe musculare</li>
-                  <li><strong>Omega-3 EPA+DHA</strong> — sănătate cardiovasculară și cognitivă</li>
-                  <li><strong>Crema Vichy / La Roche-Posay</strong> — cosmetice dermatologice cu discounturi frecvente</li>
-                  <li><strong>Tensiometru Omron</strong> — aparatură medicală la prețuri mai bune online</li>
+                  <li><strong>Vitamina D3 + K2</strong> — nivelul vitaminei D se află din analize</li>
+                  <li><strong>Magneziu</strong> — există mai multe forme (citrat, bisglicinat); întreabă farmacistul</li>
+                  <li><strong>Omega-3 (EPA + DHA)</strong></li>
+                  <li><strong>Dermatocosmetice</strong> — Vichy, La Roche-Posay</li>
+                  <li><strong>Tensiometre</strong> — Omron și alte mărci</li>
                 </ul>
               </div>
               <div>
                 <h3 className="font-bold text-[#ffffff] mb-1">Sfaturi pentru economii</h3>
-                <p>Abonează-te la newsletter-ul Dr. Max și Vegis pentru coduri exclusive. Cumpără în cantități mai mari pentru discount suplimentar. Verifică secțiunea &ldquo;Oferte Zilnice&rdquo; înainte de orice comandă.</p>
+                <p>Abonează-te la newsletterul farmaciei preferate — anunță promoțiile. La produsele pe care le iei constant, pachetele mai mari ies de obicei mai ieftin. Înainte de un supliment, întreabă medicul sau farmacistul.</p>
               </div>
             </div>
           </div>

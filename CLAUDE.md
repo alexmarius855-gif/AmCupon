@@ -34,6 +34,16 @@ Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Pro
   Codul nu mai apare in titlurile promo-produselor (`enrich_products_from_promos.py` scria „… — Cod: VR70").
 - Contrast: text alb pe lime si text aproape negru pe gri inchis (butoanele #2/#3, insignele) pe 10 pagini.
 - Verificat: tsc 0, eslint 0, build 2470, `verifica_site.py --html` fara probleme (regulile noi dovedite pe text injectat).
+- **Partea a doua, ~25 de nise si 20 de pagini de brand:** titluri „Coduri eMAG/Altex/Douglas/Carrefour", comparatii
+  „X vs Y vs Z" intre magazine care NU sunt parteneri (eMAG, Altex, Flanco, PCGarage, Douglas, Sephora, Carrefour,
+  Kaufland, Dedeman, IKEA, FashionDays, Elefant...), reduceri „tipice" inventate, „monitorizam toate promotiile",
+  politici de retur/livrare scrise de mana (Decathlon „365 de zile"), afirmatii de sanatate despre suplimente.
+  Textele numesc acum partenerii reali (`laParteneri(NISA_CATEGORII.x)`), iar returul = „legea: minimum 14 zile +
+  termenul pe site-ul magazinului". Garda: `monitorizare inventata`; linkurile interne spre `/blog/` verificate si ele.
+- **Codul in titlul promotiei:** la Impact, `nume` e des chiar codul („SAVE10", „DH2026OCTSAVE3") — `MagazinCard`
+  il afisa intreg. `lib/oferta.ts::titluPromotie` + `pareCod` (folosite si de `CuponCard`), test in
+  `lib/oferta.test.mjs`. La sursa, `promotii.py::cod_din_titlu` muta codul in `cod_cupon` cand descrierea il numeste
+  langa „coupon/code/cod" (36 de promotii: DHgate, Geekbuying) — devin oferte cu cod, cu dezvaluire prin clic.
 
 **UPDATE 05–06.10.2026 (onestitate + bani pe paginile CU TRAFIC: /top si „Cel mai bun X"; sweep de afirmatii false pe tot site-ul):**
 - **Trafic real, masurat** (Vercel Analytics pe `am-cupon-a8dz` — proiectul care serveste amcupon.ro; planul Hobby da doar 31 de
