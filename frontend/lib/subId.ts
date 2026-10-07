@@ -24,15 +24,23 @@ export const HOSTURI_AFILIERE = [
   "prf.hn",
 ];
 
+/**
+ * 07.10.2026: linkurile Impact pe domeniile proprii ale brandurilor (bitdefender.f9tmep.net,
+ * appsumo.8odi.net, 7eer.net, evyy.net) au aceeasi forma, /c/<partener>/<reclama>/<campanie>,
+ * dar nu erau in lista de gazde: clicul pe ele nu primea sub-id si nu ajungea in GA4.
+ */
+export const RE_IMPACT_CALE = /^https?:\/\/[^/?#]+\/c\/\d{5,9}\/\d+\/\d+/i;
+
 export const PARAM_SUBID: [RegExp, string][] = [
   [/event\.2performant\.com/i, "st"],
   [/pxf\.io|sjv\.io|impactradius|impact\.com/i, "subId1"],
+  [RE_IMPACT_CALE, "subId1"],
   [/awin1\.com/i, "clickref"],
   [/anrdoezrs\.net|prf\.hn/i, "sid"],
 ];
 
 export function esteLinkAfiliat(url: string): boolean {
-  return !!url && HOSTURI_AFILIERE.some((h) => url.includes(h));
+  return !!url && (HOSTURI_AFILIERE.some((h) => url.includes(h)) || RE_IMPACT_CALE.test(url));
 }
 
 /** Normalizeaza eticheta: retelele accepta alfanumerice + `_`/`-`, iar unele o

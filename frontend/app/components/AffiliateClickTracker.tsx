@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { HOSTURI_AFILIERE, PARAM_SUBID } from "../../lib/subId";
+import { esteLinkAfiliat, PARAM_SUBID } from "../../lib/subId";
 
 /**
  * Tracker global de click-uri afiliate + injectare sub-id pentru ATRIBUIRE.
@@ -32,10 +32,10 @@ import { HOSTURI_AFILIERE, PARAM_SUBID } from "../../lib/subId";
 
 // Gazdele prin care trec link-urile afiliate. Inainte lipseau Impact/Awin/CJ, deci
 // ~580 de magazine nu generau deloc eveniment in GA4 (gasit 06.08.2026).
-// Hosturile si parametrii de sub-id vin din `lib/subId.ts` — SURSA UNICA,
+// Recunoasterea (`esteLinkAfiliat`, inclusiv linkurile Impact de pe domeniile
+// brandurilor) si parametrii de sub-id vin din `lib/subId.ts` — SURSA UNICA,
 // partajata cu ruta server `/go/[magazin]`. Doua harti separate s-ar
 // desincroniza; tiparul a lovit deja proiectul de doua ori.
-const AFFILIATE_HOSTS = HOSTURI_AFILIERE;
 const SUBID_PARAM = PARAM_SUBID;
 
 /** Calea paginii curente, curatata ca sa fie citibila in rapoartele retelei. */
@@ -54,7 +54,7 @@ export default function AffiliateClickTracker() {
         const a = el?.closest?.("a");
         if (!a) return;
         const href = a.getAttribute("href") || "";
-        if (!href || !AFFILIATE_HOSTS.some((h) => href.includes(h))) return;
+        if (!href || !esteLinkAfiliat(href)) return;
 
         // ── 1. Injecteaza sub-id-ul cu pagina curenta ────────────────────────
         const param = SUBID_PARAM.find(([re]) => re.test(href))?.[1];

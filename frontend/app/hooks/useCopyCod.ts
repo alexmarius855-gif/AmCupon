@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useRef, useState } from "react";
+import { cuSubId } from "../../lib/subId";
 
 interface TrackFn {
   (tip: string, magazinSlug: string, cod?: string): void;
@@ -55,8 +56,11 @@ export function useCopyCod(track?: TrackFn) {
 
     track?.("copiere_cod", magazinSlug, cod);
 
+    // 07.10.2026: sub-id-ul paginii si aici. AffiliateClickTracker il pune doar pe clicurile pe <a>;
+    // dezvaluirea unui cod deschide magazinul cu window.open, deci exact clicurile cu cod — cele
+    // mai valoroase — ajungeau la retea fara sa spuna de pe ce pagina vin.
     if (link) {
-      if (!deschideTab(link)) setRedirectFailed(true);
+      if (!deschideTab(cuSubId(link, window.location.pathname))) setRedirectFailed(true);
     }
   }, [track]);
 
