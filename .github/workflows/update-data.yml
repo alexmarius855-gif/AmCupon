@@ -257,6 +257,15 @@ jobs:
         working-directory: scripts
         run: python enrich_products_from_promos.py
 
+      # ── 6b2. Istoricul preturilor (date proprii, ca pricealert / Keepa) ─────
+      # 07.10.2026: pastreaza schimbarile de pret ale produselor din feed-uri; din el iese lista de
+      # reduceri REALE (sub minimul pe 30 de zile) — frontend/public/scaderi-pret.json. Nu blocheaza
+      # nimic daca pica.
+      - name: Istoricul preturilor produselor
+        continue-on-error: true
+        working-directory: scripts
+        run: python istoric_preturi.py
+
       # ── 6c. Repara linkuri de produse fara tracking (0 comision la click) ──
       - name: Repara linkuri produse fara tracking de afiliere
         working-directory: scripts
@@ -512,6 +521,8 @@ jobs:
           git add frontend/public/sitemap-dates.json   || true
           git add frontend/public/studiu-cupoane.json  || true
           git add frontend/public/istoric-promotii.json || true
+          git add data/istoric-preturi.json            || true
+          git add frontend/public/scaderi-pret.json    || true
           git add frontend/public/esim-destinatii.json  || true
           git add frontend/public/extensie.json         || true
           git add data/sitemap_fingerprints.json       || true
