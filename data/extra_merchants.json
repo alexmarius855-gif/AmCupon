@@ -5309,14 +5309,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 389,
+    "zile_ramase": 388,
     "promotii": [
       {
         "nume": "Quber Savings",
         "descriere": "Quber Savings",
         "cod_cupon": "QUBER10",
         "landing_page": "https://orbitmobile.com",
-        "zile_ramase": 389,
+        "zile_ramase": 388,
         "expira": "2027-10-31",
         "sursa": "impact_deals_api"
       }
@@ -7245,14 +7245,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 101,
+    "zile_ramase": 100,
     "promotii": [
       {
         "nume": "8% Sitewide：AFFNEW8",
         "descriere": "Code:AFFNEW8 For new customers only, one use per person",
         "cod_cupon": "",
         "landing_page": "https://www.autofull.com",
-        "zile_ramase": 101,
+        "zile_ramase": 100,
         "expira": "2027-01-16",
         "sursa": "impact_deals_api"
       },
@@ -9219,7 +9219,7 @@
         "descriere": "yilite hair 53% off all products",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 1277,
+        "zile_ramase": 1276,
         "expira": "2030-04-06",
         "sursa": "impact_deals_api"
       },
