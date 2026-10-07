@@ -6,6 +6,8 @@ import ShareButton from "../components/ShareButton";
 import { etichetaExpirare } from "../../lib/expirarePromo";
 import { linkAfiliat, linkPromotie } from "@/lib/linkMagazin";
 import { numeAfisat } from "@/lib/numeMagazin";
+import { maskCod } from "@/lib/maskCod";
+import { titluPromotie } from "@/lib/oferta";
 
 /* ── Tipuri ──────────────────────────────────────────────────────────────── */
 interface Promotie {
@@ -150,6 +152,8 @@ export async function generateMetadata(
 /* ── Card oferta (dark, premium) ─────────────────────────────────────────── */
 function OfertaCard({ o }: { o: OfertaFlat }) {
   const nume = numeAfisat(o.magazin);
+  // Titlul afisat (lib/oferta.ts): la Impact `nume` e des chiar codul, care s-ar citi intreg.
+  const titlu = titluPromotie(o.promo, nume);
   const discount = extractDiscount(o.promo.nume) || extractDiscount(o.promo.descriere || "");
   const zile = o.promo.zile_ramase ?? 99;
   const eticheta = etichetaExpirare(zile);
@@ -183,13 +187,15 @@ function OfertaCard({ o }: { o: OfertaFlat }) {
       </div>
 
       {/* Titlu promo — inaltime fixa pentru aliniere */}
-      <p className="text-[13px] text-[#c9ced5] leading-snug mt-3 mb-3 line-clamp-2 min-h-[2.5rem]">{o.promo.nume}</p>
+      <p className="text-[13px] text-[#c9ced5] leading-snug mt-3 mb-3 line-clamp-2 min-h-[2.5rem]">{titlu}</p>
 
       {/* Cod box (daca exista) sau eticheta oferta */}
       {o.hasCod && o.promo.cod_cupon ? (
         <div className="relative bg-[#ddf93c]/10 border border-dashed border-[#ddf93c]/40 rounded-lg py-2.5 text-center mb-3">
           <span className="absolute left-2.5 top-1 text-[8px] uppercase tracking-widest text-[#9399a0] font-bold">cod</span>
-          <span className="font-mono font-black text-[#c3dd2c] text-sm tracking-[0.22em]">{o.promo.cod_cupon}</span>
+          {/* 07.10.2026: mascat, ca pe prima pagina. Intreg, codul se copia de aici fara niciun
+              clic pe linkul platit; se dezvaluie pe pagina magazinului, cu magazinul deschis pe link. */}
+          <span className="font-mono font-black text-[#c3dd2c] text-sm tracking-[0.22em]">{maskCod(o.promo.cod_cupon)}</span>
         </div>
       ) : (
         <div className="mb-3">
@@ -205,7 +211,7 @@ function OfertaCard({ o }: { o: OfertaFlat }) {
           {o.hasCod ? (
             <Link href={`/cod-reducere/${o.magazin}`}
               className="flex-1 text-center text-[13px] font-black bg-gradient-to-r from-[#ddf93c] to-[#ddf93c] hover:from-[#ddf93c] hover:to-[#ddf93c] text-[#0c1000] py-2.5 rounded-xl transition-all">
-              Copiază codul
+              Vezi codul
             </Link>
           ) : (
             <a href={o.url_afiliat} target="_blank" rel="sponsored noopener noreferrer"
@@ -216,7 +222,7 @@ function OfertaCard({ o }: { o: OfertaFlat }) {
           <ShareButton
             pageSlug={`/cod-reducere/${o.magazin}`}
             title={`${o.hasCod ? "Cod reducere" : "Oferta"} ${discount > 0 ? "-" + discount + "% " : ""}${nume}`}
-            text={`${o.hasCod ? "Cod reducere" : "Oferta"}${discount > 0 ? " -" + discount + "%" : ""} la ${nume}: ${o.promo.nume}`}
+            text={`${o.hasCod ? "Cod reducere" : "Oferta"}${discount > 0 ? " -" + discount + "%" : ""} la ${nume}: ${titlu}`}
             small
             theme="dark"
           />
@@ -280,7 +286,8 @@ export default async function OferteAziPage(
     "itemListElement": oferteFiltrate.slice(0, 30).map((o, i) => ({
       "@type": "ListItem",
       "position": i + 1,
-      "name": o.promo.nume,
+      // Titlul afisat, nu `nume` brut (la Impact, des chiar codul) — datele structurate = pagina.
+      "name": titluPromotie(o.promo, numeAfisat(o.magazin)),
       "url": o.url_afiliat,
     })),
   };

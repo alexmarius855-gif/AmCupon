@@ -3,6 +3,8 @@ import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
 import Link from "next/link";
+import { maskCod } from "@/lib/maskCod";
+import { titluPromotie } from "@/lib/oferta";
 
 interface Punct {
   aspect: string;
@@ -184,9 +186,11 @@ export default async function ComparatiePage(
                   <div className="mb-4 space-y-2">
                     {side.promo.map((p, j) => (
                       <div key={j} className="bg-[#1f2329] rounded-lg px-3 py-2">
-                        <p className="text-[#ffffff] text-xs font-medium line-clamp-2">{p.nume}</p>
+                        {/* 07.10.2026: titlul afisat si codul mascat — intreg, codul se copia de aici
+                            fara clic pe linkul platit; se dezvaluie pe pagina magazinului. */}
+                        <p className="text-[#ffffff] text-xs font-medium line-clamp-2">{titluPromotie(p, side.n)}</p>
                         {p.cod_cupon && (
-                          <p className="text-[#ddf93c] text-xs font-mono mt-1">COD: {p.cod_cupon}</p>
+                          <p className="text-[#ddf93c] text-xs font-mono mt-1">COD: {maskCod(p.cod_cupon)}</p>
                         )}
                       </div>
                     ))}

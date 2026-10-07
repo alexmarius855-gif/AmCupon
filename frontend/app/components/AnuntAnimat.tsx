@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { maskCod } from "@/lib/maskCod";
 import { numeAfisat } from "@/lib/numeMagazin";
+import { titluPromotie } from "@/lib/oferta";
 
 interface Promotie {
   cod_cupon: string;
@@ -61,7 +62,8 @@ export default function AnuntAnimat() {
         for (const m of alese) {
           const promo = m.promotii[0];
           promoItems.push({
-            text: `${numeAfisat(m.magazin)}: ${promo.nume}`,
+            // Titlul afisat (lib/oferta.ts): la Impact `nume` e des chiar codul, iar aici s-ar citi intreg.
+            text: `${numeAfisat(m.magazin)}: ${titluPromotie(promo, numeAfisat(m.magazin))}`,
             cod: promo.cod_cupon ? maskCod(promo.cod_cupon) : undefined,
             href: `/cod-reducere/${m.magazin}`,
             emoji: "🔥",

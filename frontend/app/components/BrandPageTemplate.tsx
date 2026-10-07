@@ -1,11 +1,11 @@
 import fs from "fs";
 import type { Metadata } from "next";
 import { aceeasiTara } from "@/lib/taraDomeniu";
-import { linkAfiliat } from "@/lib/linkMagazin";
+import { linkAfiliat, linkPromotie } from "@/lib/linkMagazin";
 import path from "path";
 import Link from "next/link";
-import { etichetaExpirare } from "../../lib/expirarePromo";
 import MagazinCard, { type CardMagazin } from "./MagazinCard";
+import CuponInteractiv from "./CuponInteractiv";
 
 interface Promotie {
   nume: string;
@@ -179,17 +179,14 @@ function PaginaFaraProgram({ config }: { config: BrandConfig }) {
   );
 }
 
-function extractDiscount(text: string): number {
-  const m = text?.match(/(\d+)\s*%/);
-  const v = m ? parseInt(m[1]) : 0;
-  return v > 0 && v <= 90 ? v : 0;
-}
-
 export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
   const slugs = [config.slug, ...(config.slugAlt ? [config.slugAlt] : [])];
   const magazin = loadMagazin(slugs);
   if (!magazin) return <PaginaFaraProgram config={config} />;
   const promotii = magazin.promotii || [];
+  // Linkul platit al magazinului sau null (lib/linkMagazin.ts) — nu `url_afiliat` brut, care
+  // poate fi chiar adresa simpla a magazinului (click fara comision).
+  const linkMagazin = linkAfiliat(magazin);
 
   const culoare = "bg-gradient-to-br from-[#ddf93c] to-[#c3dd2c]";
 
@@ -260,8 +257,8 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
 
           {/* CTA buttons */}
           <div className="flex flex-wrap justify-center gap-3">
-            {magazin?.url_afiliat && (
-              <a href={magazin.url_afiliat} target="_blank" rel="sponsored noopener noreferrer"
+            {linkMagazin && (
+              <a href={linkMagazin} target="_blank" rel="sponsored noopener noreferrer"
                 className="bg-gradient-to-r from-[#ddf93c] to-[#ddf93c] hover:from-[#ddf93c] hover:to-[#ddf93c] text-[#0c1000] font-black px-7 py-3 rounded-xl text-sm transition-all shadow-lg shadow-[#ddf93c]/25 hover:-translate-y-0.5 duration-200">
                 Mergi la {config.name} →
               </a>
@@ -295,51 +292,21 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
           <h2 className="text-xl font-black text-[#ffffff] mb-6">
             Oferte {config.name} Active — {new Date().toLocaleDateString("ro-RO", { month: "long", year: "numeric" })}
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {promotii.map((promo, i) => {
-              const discount = extractDiscount(promo.nume) || extractDiscount(promo.descriere || "");
-              const eticheta = etichetaExpirare(promo.zile_ramase ?? 99);
-              const urgenta = eticheta?.esteImediata ?? false;
-              return (
-                <div key={i} className="bg-[#14181c] border border-[#1f2329] hover:border-[#ddf93c]/40 rounded-xl p-4 flex flex-col gap-3 transition-all hover:shadow-lg">
-                  <div className="flex items-start justify-between gap-2">
-                    <p className="text-sm text-[#c9ced5] font-semibold leading-snug flex-1">{promo.nume}</p>
-                    <div className="flex flex-col items-end gap-1 shrink-0">
-                      {discount > 0 && (
-                        <span className="text-[13px] font-black text-[#0c1000] bg-gradient-to-br from-[#34d399] to-[#ddf93c] px-2 py-1 rounded-lg leading-none shadow-sm">-{discount}%</span>
-                      )}
-                      {promo.cod_cupon && (
-                        <span className="text-[10px] font-black text-[#ddf93c] bg-[#ddf93c]/10 border border-[#ddf93c]/25 px-1.5 py-0.5 rounded-full">COD</span>
-                      )}
-                    </div>
-                  </div>
-
-                  {promo.cod_cupon && (
-                    <div className="bg-[#1f2329] border border-dashed border-[#ddf93c]/50 rounded-xl px-3 py-2 text-center">
-                      <span className="font-mono font-black text-[#ddf93c] text-base tracking-widest">{promo.cod_cupon}</span>
-                    </div>
-                  )}
-
-                  <div className="flex items-center justify-between mt-auto pt-2 border-t border-[#1f2329]">
-                    {eticheta && (urgenta ? (
-                      <span className="text-[10px] font-bold text-[#e8956f] flex items-center gap-1.5">
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#e8956f] animate-pulse" />
-                        {eticheta.text}
-                      </span>
-                    ) : (
-                      <span className="text-[10px] text-[#9399a0]">
-                        {eticheta.text}
-                      </span>
-                    ))}
-                    <a href={promo.landing_page || magazin?.url_afiliat || "#"}
-                      target="_blank" rel="sponsored noopener noreferrer"
-                      className="text-xs font-black bg-gradient-to-r from-[#ddf93c] to-[#ddf93c] hover:from-[#ddf93c] hover:to-[#ddf93c] text-[#0c1000] px-4 py-1.5 rounded-xl transition-all">
-                      {promo.cod_cupon ? "Copiază și mergi" : "Vezi oferta →"}
-                    </a>
-                  </div>
-                </div>
-              );
-            })}
+          {/* 07.10.2026: cardul unic (CuponCard), ca pe pagina de magazin. Inainte codul se vedea
+              intreg fara clic pe linkul platit, iar „Copiază și mergi" nu copia nimic; linkul
+              cadea pe „#" cand oferta n-avea destinatie. Vezi components/CuponInteractiv.tsx. */}
+          <div className="cz-grid">
+            {promotii.map((promo, i) => (
+              <CuponInteractiv
+                key={i}
+                promo={promo}
+                numeMagazin={config.name}
+                magazinSlug={magazin.magazin}
+                logoSrc={magazin.logo_url}
+                link={linkPromotie(magazin, promo)}
+                sursa="brand"
+              />
+            ))}
           </div>
         </section>
       )}
@@ -350,8 +317,8 @@ export default function BrandPageTemplate({ config }: { config: BrandConfig }) {
             <p className="text-3xl mb-3">🔍</p>
             <p className="font-bold text-[#c9ced5] mb-2">Nu exista oferte active momentan</p>
             <p className="text-[#9399a0] text-sm mb-4">Revino maine — actualizam ofertele zilnic de la {config.name}.</p>
-            {magazin?.url_afiliat && (
-              <a href={magazin.url_afiliat} target="_blank" rel="sponsored noopener noreferrer"
+            {linkMagazin && (
+              <a href={linkMagazin} target="_blank" rel="sponsored noopener noreferrer"
                 className="inline-block bg-[#ddf93c] text-[#0c1000] font-bold px-6 py-2.5 rounded-xl text-sm hover:bg-[#ddf93c] transition-colors">
                 Mergi direct la {config.name} →
               </a>

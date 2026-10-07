@@ -91,14 +91,14 @@ export function faraCod(text: string, cod?: string): string {
   const esc = cod.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   const tok = `(?<![\\p{L}\\p{N}])${esc}(?![\\p{L}\\p{N}])`;
   return text
-    .replace(new RegExp(`(folosind|folose[sș]te|cu|aplic[aă]|introdu)\\s+(codul|cod)\\s*:?\\s*${tok}`, "giu"), "$1 codul de reducere")
-    .replace(new RegExp(`(use|using|with|enter)\\s+(the\\s+)?code\\s*:?\\s*${tok}`, "giu"), "$1 code")
-    .replace(new RegExp(`\\s*[–—-]?\\s*(?:codul|cod|code)\\s*:?\\s*${tok}`, "giu"), "")
+    .replace(new RegExp(`(folosind|folose[sș]te|cu|prin|aplic[aă]|introdu)\\s+(codul|cod)\\s*[:：]?\\s*${tok}`, "giu"), "$1 codul de reducere")
+    .replace(new RegExp(`(use|using|with|enter)\\s+(the\\s+)?code\\s*[:：]?\\s*${tok}`, "giu"), "$1 code")
+    .replace(new RegExp(`\\s*[–—-]?\\s*(?:codul|cod|code)\\s*[:：]?\\s*${tok}`, "giu"), "")
     .replace(new RegExp(tok, "gu"), "")
     .replace(/\s{2,}/g, " ")
     .replace(/\s+([.,;:!?])/g, "$1")
     // la inceput nu taiem cratima: e minusul din „-20%"
-    .replace(/^[\s:,–—]+|[\s:,–—-]+$/g, "")
+    .replace(/^[\s:：,–—]+|[\s:：,–—-]+$/g, "")
     .trim();
 }
 

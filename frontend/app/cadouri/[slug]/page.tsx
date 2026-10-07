@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
 import Link from "next/link";
+import { maskCod } from "@/lib/maskCod";
 
 /* ─── Configuratie ocazii ────────────────────────────────────────────────── */
 const OCAZII: Record<string, {
@@ -512,7 +513,7 @@ export default async function CadouriSlugPage({
                     <div>
                       <div className="text-[#c9ced5] text-xs font-bold">{m.magazin_display || m.magazin}</div>
                       {m.promotii?.[0]?.cod_cupon && (
-                        <div className="text-[#ddf93c] text-[10px] font-mono font-black">{m.promotii[0].cod_cupon}</div>
+                        <div className="text-[#ddf93c] text-[10px] font-mono font-black">{maskCod(m.promotii[0].cod_cupon)}</div>
                       )}
                     </div>
                   </Link>

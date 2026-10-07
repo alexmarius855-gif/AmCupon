@@ -6,6 +6,7 @@ import { useWishlist } from "../hooks/useWishlist";
 import { CAT_META } from "./categorie-meta";
 import { linkAfiliat, linkPromotie } from "@/lib/linkMagazin";
 import { numeAfisat } from "@/lib/numeMagazin";
+import { titluPromotie } from "@/lib/oferta";
 
 /* ─── Types ──────────────────────────────────────────────────────────────── */
 export interface Produs {
@@ -258,7 +259,7 @@ function DealCard({ m, rank }: { m: Magazin; rank?: number }) {
         <p className="text-[10px] text-[#c9ced5] mt-0.5">{m.categorie}</p>
         {/* Promo */}
         {promo && (
-          <p className="text-xs text-[#c9ced5] mt-2 line-clamp-2 leading-relaxed flex-1">{promo.nume}</p>
+          <p className="text-xs text-[#c9ced5] mt-2 line-clamp-2 leading-relaxed flex-1">{titluPromotie(promo, name)}</p>
         )}
         {/* Trust row */}
         <div className="flex items-center gap-2 mt-3 pt-3 border-t border-[#2a2f36]">

@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
 import Link from "next/link";
+import { maskCod } from "@/lib/maskCod";
 
 /* ── Tipuri ──────────────────────────────────────────────────────────────── */
 interface Pick {
@@ -115,8 +116,10 @@ function RadarEntry({ p, rank }: { p: Pick; rank: number }) {
           {/* Linia de jos: cod + urgenta + link */}
           <div className="flex flex-wrap items-center gap-2">
             {p.cod && (
+              // Mascat, ca pe restul site-ului: codul se dezvaluie pe pagina magazinului, cu clicul
+              // pe linkul platit (07.10.2026 — aici se citea intreg).
               <span className="font-mono font-black text-[#ddf93c] text-sm tracking-wider bg-[#1f2329] border border-dashed border-[#ddf93c]/50 rounded-lg px-2.5 py-1">
-                {p.cod}
+                {maskCod(p.cod)}
               </span>
             )}
             {urgent && (

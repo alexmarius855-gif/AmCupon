@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
+import { maskCod } from "@/lib/maskCod";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -171,7 +172,7 @@ export default function InstrumenteSeoPage() {
                         )}
                         {promo?.cod_cupon && (
                           <div className="border border-dashed border-[#ddf93c]/50 rounded-xl px-3 py-1.5 bg-[#ddf93c]/8">
-                            <span className="font-mono font-black text-[#ddf93c] text-sm tracking-widest">{promo.cod_cupon}</span>
+                            <span className="font-mono font-black text-[#ddf93c] text-sm tracking-widest">{maskCod(promo.cod_cupon)}</span>
                           </div>
                         )}
                       </div>

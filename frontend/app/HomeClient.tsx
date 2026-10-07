@@ -14,6 +14,8 @@ import RedirectModal from "./components/RedirectModal";
 import { useCopyCod } from "./hooks/useCopyCod";
 import { linkPromotie } from "@/lib/linkMagazin";
 import { maskCod } from "@/lib/maskCod";
+import { titluPromotie } from "@/lib/oferta";
+import { trackAfiliat } from "@/lib/trackAfiliat";
 import { PRAG_URGENT } from "@/lib/expirarePromo";
 import { MAGAZINE_POPULARE } from "@/lib/magazinePopulare";
 import {
@@ -1209,7 +1211,8 @@ export default function HomeClient({
                         </span>
                       </div>
                       <p className="text-xs font-bold text-[#ffffff] mt-1">{name1}</p>
-                      <p className="text-[11px] text-[#c9ced5] line-clamp-2 leading-tight">{o.nume}</p>
+                      {/* Titlul afisat: „Use code DPR35" ar arata intreg codul mascat dedesubt. */}
+                      <p className="text-[11px] text-[#c9ced5] line-clamp-2 leading-tight">{titluPromotie(o, name1)}</p>
                       {o.cod_cupon && (
                         <div className="mt-auto bg-[#1f2329] border border-dashed border-[#ddf93c]/40 rounded-lg px-2 py-1 text-center">
                           <span className="font-mono font-black text-[#ddf93c] text-xs tracking-widest">{maskCod(o.cod_cupon)}</span>
@@ -1577,21 +1580,6 @@ export default function HomeClient({
   );
 }
 
-
-/* ─── GA4 AFFILIATE TRACKING ─────────────────────────────────────────────── */
-function trackAfiliat(tip: string, magazin: string, cod?: string) {
-  try {
-    if (typeof window !== "undefined" && (window as unknown as {gtag?: (...a: unknown[]) => void}).gtag) {
-      (window as unknown as {gtag: (...a: unknown[]) => void}).gtag("event", "affiliate_click", {
-        event_category: "afiliere",
-        event_label: magazin,
-        affiliate_type: tip,
-        coupon_code: cod || "",
-        value: 1,
-      });
-    }
-  } catch {}
-}
 
 /* ─── SKELETON ────────────────────────────────────────────────────────────── */
 function SkeletonCard() {

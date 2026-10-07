@@ -5,6 +5,7 @@ import { useSearchParams, useRouter } from "next/navigation";
 import { Suspense } from "react";
 import { calculateDealScore } from "../../lib/dealScore";
 import { numeAfisat } from "@/lib/numeMagazin";
+import { titluPromotie } from "@/lib/oferta";
 
 interface Promotie {
   nume: string;
@@ -170,7 +171,7 @@ function MagazinCard({ m, onRemove, onSwap, position }: { m: Magazin; onRemove: 
               {m.promotii.slice(0, 3).map((p, i) => (
                 <li key={i} className="flex items-start gap-2 text-xs text-[#c9ced5]">
                   <span className="text-[#ddf93c] shrink-0 mt-0.5">•</span>
-                  <span className="line-clamp-2">{p.nume}</span>
+                  <span className="line-clamp-2">{titluPromotie(p, numeAfisat(m.magazin))}</span>
                 </li>
               ))}
             </ul>

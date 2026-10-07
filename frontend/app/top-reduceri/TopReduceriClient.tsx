@@ -4,6 +4,11 @@ import Link from "next/link";
 
 import { useState } from "react";
 import { numeAfisat } from "@/lib/numeMagazin";
+import { linkAfiliat, linkPromotie } from "@/lib/linkMagazin";
+import { maskCod } from "@/lib/maskCod";
+import { titluPromotie } from "@/lib/oferta";
+import { useCopyCod } from "../hooks/useCopyCod";
+import { trackAfiliat } from "@/lib/trackAfiliat";
 
 interface Promotie {
   nume: string;
@@ -57,17 +62,17 @@ function MagazinCard({
   showTrend?: boolean;
   showExpiry?: boolean;
 }) {
-  const [copied, setCopied] = useState(false);
   const cod = bestCod(m.promotii);
   const promo = m.promotii[0];
   const nume = numeAfisat(m.magazin);
-
-  function handleCopy(code: string) {
-    navigator.clipboard.writeText(code).then(() => {
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    });
-  }
+  // 07.10.2026: butonul arata codul INTREG si doar il copia — nimic nu trecea prin linkul platit,
+  // deci cine cumpara cu el nu aducea comision. Acum: codul mascat; clicul il copiaza si deschide
+  // magazinul pe linkul platit (useCopyCod, ca pe pagina de magazin), apoi il arata intreg.
+  const { copiedKey, copyAndOpen } = useCopyCod((tip, mag, c) => trackAfiliat(`${tip}_top_reduceri`, mag, c));
+  const [dezvaluit, setDezvaluit] = useState(false);
+  const copied = copiedKey === m.magazin;
+  // Fara link platit, „Vezi" duce pe pagina noastra de magazin, nu pe site-ul simplu (click gratis).
+  const linkIesire = linkAfiliat(m);
 
   return (
     <div className="bg-[#14181c] border border-[#1f2329] rounded-xl p-4 hover:border-[#ddf93c]/30 transition-all group">
@@ -116,7 +121,7 @@ function MagazinCard({
           </div>
 
           {promo && (
-            <p className="text-xs text-[#c9ced5] mt-0.5 truncate">{promo.nume}</p>
+            <p className="text-xs text-[#c9ced5] mt-0.5 truncate">{titluPromotie(cod || promo, nume)}</p>
           )}
 
           <div className="flex items-center gap-3 mt-1.5">
@@ -130,24 +135,35 @@ function MagazinCard({
         <div className="shrink-0">
           {cod ? (
             <button
-              onClick={() => handleCopy(cod.cod_cupon)}
+              onClick={() => {
+                setDezvaluit(true);
+                copyAndOpen(m.magazin, cod.cod_cupon, linkPromotie(m, cod), m.magazin);
+              }}
+              title={dezvaluit ? "Copiază din nou" : `Vezi codul ${nume}`}
               className={`text-xs font-bold px-3 py-2 rounded-xl transition-all ${
                 copied
                   ? "bg-emerald-500/20 text-emerald-400 border border-emerald-500/30"
                   : "bg-[#ddf93c]/10 text-[#ddf93c] border border-[#ddf93c]/30 hover:bg-[#ddf93c] hover:text-[#0c1000]"
               }`}
             >
-              {copied ? "Copiat!" : cod.cod_cupon}
+              {copied ? "Copiat!" : dezvaluit ? cod.cod_cupon : `Vezi codul ${maskCod(cod.cod_cupon)}`}
             </button>
-          ) : (
+          ) : linkIesire ? (
             <a
-              href={m.url_afiliat || m.url}
+              href={linkPromotie(m, promo) || linkIesire}
               target="_blank"
-              rel="nofollow noopener"
+              rel="sponsored noopener noreferrer"
               className="text-xs font-bold px-3 py-2 rounded-xl bg-[#2a2f36] text-[#c9ced5] hover:bg-[#2a2f36] transition-all"
             >
               Vezi &rarr;
             </a>
+          ) : (
+            <Link
+              href={`/cod-reducere/${m.magazin}`}
+              className="text-xs font-bold px-3 py-2 rounded-xl bg-[#2a2f36] text-[#c9ced5] hover:bg-[#2a2f36] transition-all"
+            >
+              Vezi &rarr;
+            </Link>
           )}
         </div>
       </div>
@@ -219,7 +235,9 @@ export default function TopReduceriClient({
 
         {/* Tabs */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-6">
-          {TABS.map((t) => (
+          {/* Un tab gol nu se arata: „In Trend — Magazine cu crestere rapida" avea mereu 0 (campul
+              `trend` e 0 la toate cele 958 de magazine, deci lista e goala din 07.09). 07.10.2026. */}
+          {TABS.filter((t) => t.count > 0 || t.key === tab).map((t) => (
             <button
               key={t.key}
               onClick={() => setTab(t.key)}
