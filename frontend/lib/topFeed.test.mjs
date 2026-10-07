@@ -36,6 +36,10 @@ verifica("cutia de bijuterii nu e bijuterie", intra("bijuterii-argint", "Cutie d
 verifica("aspirator vertical CU fir nu e fara fir", intra("aspiratoare-fara-fir", "Aspirator vertical, cu fir, cu abur si aspirare umed-uscata, 750 W", 2299), false);
 verifica("aspirator vertical fara fir intra", intra("aspiratoare-fara-fir", "Aspirator vertical fara fir MOVA S7 Cordless Stick Vacuum, 170AW", 1299), true);
 verifica("test medical „Proteina C Reactiva” nu e supliment", intra("suplimente-fitness", "Test rapid Proteina C Reactiva Self Care, 1 bucata, Barza", 36.9), false);
+verifica("vitamina D3 in capsule e supliment", intra("vitamine-minerale", "Vitamina D3 la 2000 UI 120 capsule", 35.94), true);
+verifica("baterie de lavoar din zinc nu e supliment", intra("vitamine-minerale", "FL 370-632ZC, Baterie mono lavoar, zinc, crom, flow", 200), false);
+verifica("serul cu vitamina C nu e supliment", intra("vitamine-minerale", "Ser pentru fata cu vitamina C, 30 capsule", 80), false);
+verifica("omega 3 pentru pisici nu intra", intra("vitamine-minerale", "Omega 3 pentru caini si pisici, 60 capsule", 50), false);
 verifica("husa de laptop nu e laptop", intra("laptopuri", "Husa laptop 15.6 inch, neopren, neagra", 89), false);
 verifica("display de schimb nu e laptop", intra("laptopuri", "Display Laptop BOE NV156FHM-A11 pentru ecran 15.6\", 30 pini", 637), false);
 verifica("laptop cu SSD si RAM in titlu intra", intra("laptopuri", "Laptop Acer Aspire 3 15 (A315-44P-R5AZ), AMD Ryzen 7 5700U, 16 GB DDR4, SSD 512 GB", 1599), true);

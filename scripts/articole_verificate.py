@@ -1222,6 +1222,169 @@ capul Aqua aspiră și spală pardoseala în aceeași trecere.
 )
 
 
+# ─── Sanatate: suplimente (07.10) ─────────────────────────────────────────────────────────────────
+# Regula in plus fata de restul: in UE un supliment poate pretinde un efect asupra sanatatii DOAR cu formularea
+# autorizata (Reg. 1924/2006, lista in Reg. 432/2012 si in registrul UE). Articolele vechi aveau statistici fara
+# sursa („70% din romani au deficit"), „confirmat de studii clinice", doze recomandate de noi si plante cu efecte
+# neautorizate. Aici: doar afirmatiile autorizate, limitele maxime EFSA (versiunea 11, august 2025), fara doze
+# recomandate de noi, fara produse anume — ofertele de sub articol vin din feed (tema vitamine-minerale).
+SFAT_MEDIC = (
+    "> **Înainte să cumperi.** Textul de mai jos nu e sfat medical. Dacă ești însărcinată, alăptezi, iei "
+    "medicamente sau ai o boală cronică, întreabă medicul sau farmacistul înainte de orice supliment. Afirmațiile "
+    "despre efecte sunt doar cele autorizate în Uniunea Europeană, iar limitele maxime sunt cele stabilite de EFSA, "
+    "autoritatea europeană pentru siguranța alimentelor."
+)
+SURSE_SUPLIMENTE = [
+    "https://www.efsa.europa.eu/sites/default/files/2024-05/ul-summary-report.pdf (EFSA, limitele maxime, versiunea 11, august 2025)",
+    "https://eur-lex.europa.eu/eli/reg/2012/432/oj (Reg. UE 432/2012, afirmatiile de sanatate autorizate)",
+    "https://ec.europa.eu/food/food-feed-portal/screen/health-claims/eu-register (registrul UE al afirmatiilor)",
+    "https://eur-lex.europa.eu/eli/dir/2002/46/oj (Directiva 2002/46/CE, eticheta suplimentelor)",
+    "https://food.ec.europa.eu/food-safety/labelling-and-nutrition/nutrition-and-health-claims_en (afirmatiile despre plante, in asteptare)",
+]
+
+articol(
+    "cele-mai-bune-vitamine-suplimente-2026",
+    "Cele mai bune vitamine și suplimente 2026: ce contează",
+    "Ce efecte are voie să pretindă un supliment în UE, limitele maxime EFSA pentru vitamina D, zinc, magneziu și "
+    "seleniu, și ce să citești pe etichetă înainte să cumperi.",
+    "Sanatate",
+    f"""
+## Vitamine și suplimente în 2026: ce merită știut înainte să cumperi
+
+Pe raftul farmaciei, aproape orice cutie promite ceva: energie, imunitate, piele frumoasă. În Uniunea Europeană,
+însă, un supliment are voie să spună că are un efect asupra sănătății doar cu o formulare autorizată de Comisia
+Europeană, după evaluarea EFSA. Ghidul de mai jos pornește de la aceste formulări și de la limitele maxime oficiale.
+
+{SFAT_MEDIC}
+
+## Ce să citești pe etichetă
+
+- **Doza zilnică recomandată de producător** și avertismentul că nu trebuie depășită — sunt obligatorii pe
+  eticheta oricărui supliment din UE, la fel ca mențiunea că suplimentele nu înlocuiesc o dietă variată.
+- **Cât din substanța activă e într-o doză.** „815 mg de bisglicinat de magneziu" nu înseamnă 815 mg de magneziu:
+  cantitatea de magneziu propriu-zis e în tabelul cu valori nutriționale.
+- **Procentul din valoarea de referință (VNR).** Arată cât acoperă o doză din necesarul zilnic al unui adult.
+- **Ce mai iei deja.** Limitele maxime de mai jos sunt pentru tot ce consumi într-o zi, din toate sursele: mâncare,
+  alimente fortificate și toate suplimentele luate împreună.
+
+## Vitaminele și mineralele căutate cel mai des
+
+### Vitamina D
+Afirmații autorizate în UE: contribuie la funcționarea normală a sistemului imunitar, la menținerea oaselor și a
+mușchilor în stare normală și la absorbția normală a calciului. Limita maximă stabilită de EFSA pentru adulți:
+100 µg pe zi (4.000 UI). Pe piață există și capsule de 5.000 UI, adică 125 µg — peste această limită; asemenea doze
+se iau doar la recomandarea medicului, de obicei după analize.
+
+### Vitamina C
+Contribuie la funcționarea normală a sistemului imunitar, la formarea normală a colagenului pentru funcționarea
+normală a pielii, la reducerea oboselii și extenuării și crește absorbția fierului. EFSA nu a stabilit o limită
+maximă pentru vitamina C: datele nu au fost suficiente.
+
+### Magneziul
+Contribuie la reducerea oboselii și extenuării și la funcționarea normală a sistemului nervos și a mușchilor.
+Limita maximă EFSA pentru magneziul din suplimente (nu și pentru cel din mâncare): 250 mg pe zi pentru adulți.
+
+### Zincul
+Contribuie la funcționarea normală a sistemului imunitar, la protejarea celulelor împotriva stresului oxidativ și
+la menținerea normală a pielii, a părului și a unghiilor. Limita maximă EFSA pentru adulți: 25 mg pe zi.
+
+### Omega-3 (EPA și DHA)
+EPA și DHA contribuie la funcționarea normală a inimii — efect obținut cu un aport zilnic de 250 mg de EPA și DHA.
+DHA contribuie la menținerea funcției normale a creierului și a vederii normale, cu 250 mg de DHA pe zi. Pentru
+EPA și DHA, EFSA nu a stabilit o limită maximă.
+
+### Vitamina B12
+Contribuie la reducerea oboselii și extenuării, la formarea normală a globulelor roșii și la funcționarea normală
+a sistemului imunitar. Cine nu mănâncă deloc produse de origine animală are nevoie de o sursă de B12 — alimente
+fortificate sau supliment; discută cu medicul.
+
+### Acidul folic, în sarcină
+Afirmația autorizată: suplimentarea cu acid folic crește nivelul de folat al mamei, iar un nivel scăzut este un
+factor de risc pentru defecte de tub neural la făt. Condiția: 400 µg pe zi, cu cel puțin o lună înainte și până la
+trei luni după concepție. Limita maximă EFSA pentru acidul folic din suplimente și alimente fortificate: 1.000 µg
+pe zi.
+
+### Fierul — doar după analize
+Fierul contribuie la formarea normală a globulelor roșii și a hemoglobinei, dar se ia de obicei la recomandarea
+medicului, după analize. EFSA a stabilit pentru adulți un nivel de 40 mg pe zi până la care nu se așteaptă efecte
+adverse.
+
+## Ce nu are o afirmație autorizată
+
+- **Plantele** (echinaceea, socul, ginsengul): evaluarea afirmațiilor despre plante e suspendată la
+  Comisia Europeană din 2010. Pot apărea pe ambalaje în baza regulilor de tranziție, dar nu sunt confirmate oficial.
+- **Probioticele**: singura afirmație autorizată legată de bacterii vii e că culturile vii din iaurt îmbunătățesc
+  digestia lactozei.
+- **Colagenul**: nu are o afirmație de sănătate autorizată pentru piele; vitamina C are una — vezi mai sus.
+
+[Vezi magazinele de sănătate și farmaciile partenere →](/categorii/sanatate)
+""",
+    SURSE_SUPLIMENTE + [
+        "https://www.efsa.europa.eu/en/efsajournal/pub/2813 (EFSA, vitamina D: 100 µg/zi la adulti)",
+    ],
+)
+
+articol(
+    "cele-mai-bune-suplimente-imunitate-2026",
+    "Suplimente pentru imunitate 2026: ce e dovedit în UE",
+    "Zece vitamine și minerale au în UE o afirmație autorizată despre sistemul imunitar. Care sunt, ce limite "
+    "maxime au cele căutate des și de ce echinaceea și propolisul nu sunt pe listă.",
+    "Sanatate",
+    f"""
+## Suplimente pentru imunitate în 2026: ce e dovedit și ce nu
+
+Toamna, rafturile se umplu de cutii „pentru imunitate". În Uniunea Europeană, un supliment are voie să spună că
+ajută sistemul imunitar doar dacă are o substanță pentru care Comisia Europeană a autorizat această afirmație, după
+evaluarea EFSA. Lista e scurtă și publică.
+
+{SFAT_MEDIC}
+
+## Ce substanțe au afirmația autorizată
+
+Pentru „contribuie la funcționarea normală a sistemului imunitar", lista UE cuprinde zece substanțe: vitaminele A,
+B6, B12, C și D, acidul folic, zincul, seleniul, cuprul și fierul. Formularea e aceeași pentru toate:
+„contribuie la funcționarea normală" — nu „întărește", „previne răceala" sau „vindecă". Un supliment care
+promite mai mult decât atât promite ceva neautorizat.
+
+## Cele căutate cel mai des
+
+### Vitamina C
+Contribuie la funcționarea normală a sistemului imunitar, inclusiv în timpul și după un efort fizic intens (afirmație
+autorizată pentru 200 mg pe zi, în plus față de doza zilnică recomandată). EFSA nu a stabilit o limită maximă
+pentru vitamina C.
+
+### Vitamina D
+Contribuie la funcționarea normală a sistemului imunitar. Limita maximă EFSA pentru adulți: 100 µg pe zi (4.000 UI),
+din toate sursele. Capsulele de 5.000 UI (125 µg) depășesc această limită — se iau doar la recomandarea medicului.
+
+### Zincul
+Contribuie la funcționarea normală a sistemului imunitar. Limita maximă EFSA pentru adulți: 25 mg pe zi. Multe
+complexe „pentru imunitate" combină zincul cu vitamina C și D — adună cantitățile dacă iei mai multe produse.
+
+### Seleniul
+Contribuie la funcționarea normală a sistemului imunitar și a glandei tiroide. Limita maximă EFSA pentru adulți:
+255 µg pe zi.
+
+## Ce nu are afirmația autorizată
+
+- **Echinaceea și socul**: evaluarea afirmațiilor despre plante e suspendată la Comisia Europeană din 2010. Pot
+  apărea pe ambalaje în baza regulilor de tranziție, dar efectul nu e confirmat oficial.
+- **Propolisul și mierea de Manuka**: nu au nicio afirmație de sănătate autorizată.
+- **Probioticele**: nicio afirmație despre imunitate nu e autorizată.
+- **Vitamina D luată „preventiv" în doze mari**: limita de 100 µg pe zi rămâne valabilă și iarna.
+
+## Cum alegi
+
+- Caută pe etichetă substanța și cantitatea pe doză, nu numele produsului.
+- Verifică dacă nu iei deja aceeași substanță din alt produs — limitele maxime sunt pentru totalul zilei.
+- Pentru copii, limitele sunt mai mici decât pentru adulți; folosește doar produse făcute pentru vârsta lor.
+
+[Vezi magazinele de sănătate și farmaciile partenere →](/categorii/sanatate)
+""",
+    SURSE_SUPLIMENTE,
+)
+
+
 # ─── Scriere si verificari ────────────────────────────────────────────────────────────────────────
 INTERZISE = [
     (re.compile(r"\b\d[\d.]*\s?(?:lei|RON|€|EUR)\b|~\s?\d"), "pret scris in articol"),

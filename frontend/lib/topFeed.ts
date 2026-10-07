@@ -90,6 +90,9 @@ export const REGULI_TEME: Record<string, RegulaTema> = {
   "scaune-auto-copii": { include: /^scaun auto\b/, exclude: /\b(husa|protectie|oglinda|organizator|perna|suport)\b/, pretMin: 200 },
   "camere-auto": { include: /^(camera auto|camera video auto|camera de bord|dashcam|camera bord)\b/, exclude: /\b(suport|cablu|card|spate)\b/, pretMin: 100 },
   tensiometre: { include: /^tensiometru\b/, exclude: /\b(manseta|baterii|husa)\b/, pretMin: 60 },
+  // 07.10.2026: forma de prezentare e obligatorie (capsule, tablete...) — altfel „baterie lavoar, zinc",
+  // „bratara, cupru cu zinc", serurile „cu vitamina C" si dropsurile cu miere intrau la suplimente.
+  "vitamine-minerale": { include: /\b(vitamina [a-z0-9]+|vitamine|multivitamin\w*|zinc|magneziu|omega[ -]?3|seleniu)\b.*\b(capsule|tablete|comprimate|picaturi|plicuri|jeleuri|softgel\w*|gummies)\b/, exclude: /\b(ser|crema|masca|caine|caini|pisica|pisici|bomboane|dropsuri|sampon|par|unghii|bratara|baterie|copii|ursuleti|animale)\b/, pretMin: 15 },
 };
 
 export interface TemaArticol {
@@ -134,6 +137,8 @@ export const ARTICOLE_TEME: Record<string, TemaArticol> = {
   "cel-mai-bun-tensiometru": { tema: "tensiometre", minMagazine: 1 },
   "cel-mai-bun-ser-fata": { tema: "seruri-fata" },
   "cel-mai-bun-dashcam": { tema: "camere-auto", minMagazine: 1 },
+  "cele-mai-bune-vitamine-suplimente": { tema: "vitamine-minerale" },
+  "cele-mai-bune-suplimente-imunitate": { tema: "vitamine-minerale" },
 };
 
 /** Tema unui articol dupa slug („cel-mai-bun-smartwatch-2026" -> smartwatch-uri), sau null. */
@@ -186,6 +191,7 @@ export const NUME_TEME: Record<string, string> = {
   "scaune-auto-copii": "scaune auto pentru copii",
   "camere-auto": "camere auto",
   tensiometre: "tensiometre",
+  "vitamine-minerale": "vitamine și minerale",
 };
 
 /** Numele in fraza; pentru o tema noua, fara intrare, eticheta cu prima litera mica. */
