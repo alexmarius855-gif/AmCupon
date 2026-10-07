@@ -310,6 +310,66 @@ def titlu_afisabil(p: dict) -> str:
     return nume or descriere
 
 
+def fara_cod(text: str, cod: str) -> str:
+    """Textul fara cod — aceeasi regula ca `faraCod` din frontend/lib/oferta.ts (07.10.2026).
+    „Use code DPR35" -> „Use code", „cu codul VARA20" -> „cu codul de reducere", „— Cod: X" dispare.
+    Codul se arata doar dupa clicul pe linkul platit; in text s-ar citi intreg, fara comision."""
+    if not text:
+        return ""
+    cod = (cod or "").strip()
+    if not cod:
+        return text.strip()
+    tok = rf"(?<![^\W_]){re.escape(cod)}(?![^\W_])"
+    t = re.sub(rf"(folosind|folose[sș]te|cu|prin|aplic[aă]|introdu)\s+(codul|cod)\s*[:：]?\s*{tok}",
+               r"\1 codul de reducere", text, flags=re.I)
+    t = re.sub(rf"(use|using|with|enter)\s+(the\s+)?code\s*[:：]?\s*{tok}", r"\1 code", t, flags=re.I)
+    t = re.sub(rf"\s*[–—-]?\s*(?:codul|cod|code)\s*[:：]?\s*{tok}", "", t, flags=re.I)
+    t = re.sub(tok, "", t)
+    t = re.sub(r"\s{2,}", " ", t)
+    t = re.sub(r"\s+([.,;:!?])", r"\1", t)
+    # la inceput nu taiem cratima: e minusul din „-20%"
+    t = re.sub(r"^[\s:：,–—]+|[\s:：,–—-]+$", "", t)
+    return t.strip()
+
+
+def pare_cod(x: str) -> bool:
+    """Un singur „cuvant" de litere si cifre, cu o cifra sau 4+ majuscule — ca `pareCod` din lib/oferta.ts."""
+    return bool(re.fullmatch(r"[A-Z0-9][A-Z0-9_-]{2,}", x or "", re.I) and re.search(r"\d|[A-Z]{4,}", x))
+
+
+def fara_coduri(text: str, p: dict) -> str:
+    """`fara_cod` pentru TOATE codurile promotiei: `cod_cupon`, titlul care e doar cod si cele numite
+    in text — descrierea Klaiyi numeste doua („Code: KLAIYI18 ... Code: KLAIYI20")."""
+    nume = (p.get("nume") or "").strip()
+    coduri = [(p.get("cod_cupon") or "").strip(), nume if pare_cod(nume) else ""]
+    coduri += coduri_in_text(nume) + coduri_in_text(p.get("descriere") or "")
+    for c in dict.fromkeys(x for x in coduri if x):
+        text = fara_cod(text, c)
+    return text
+
+
+def titlu_promotie(p: dict, nume_magazin: str) -> str:
+    """Titlul de afisat al unei promotii — ca `titluPromotie` din lib/oferta.ts: fara cod, iar cand
+    titlul E doar codul, descrierea; daca nici ea nu ramane, „Cod de reducere X" / „Oferta X"."""
+    cod = (p.get("cod_cupon") or "").strip()
+    nume = (p.get("nume") or "").strip()
+    if not cod and pare_cod(nume):
+        cod = nume
+
+    def curat(t):
+        x = fara_cod(t or "", cod)
+        return "" if pare_cod(x) else x
+
+    titlu = curat(nume)
+    if titlu:
+        return titlu
+    descriere = (p.get("descriere") or "").strip()
+    desc = curat(descriere) if descriere and descriere != nume else ""
+    if desc:
+        return desc
+    return f"Cod de reducere {nume_magazin}" if (p.get("cod_cupon") or "").strip() else f"Ofertă {nume_magazin}"
+
+
 def nume_afisabil(m: dict) -> str:
     """„eur.vevor.com" -> „Vevor", nu „Eur"; „store.boyamic.com" -> „Boyamic"."""
     slug = m.get("magazin") or ""

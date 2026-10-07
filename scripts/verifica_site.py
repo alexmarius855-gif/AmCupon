@@ -216,6 +216,24 @@ def verifica_date() -> dict:
                    f"{len(false)} articole promit ce nu facem (validitate, verificare, exclusivitate) "
                    f"sau au o notita interna vizibila — ruleaza scripts/curata_articole.py", false)
 
+    # 7c. Cod in clar intr-un articol (07.10.2026). Pe site codul se arata doar dupa clicul pe linkul
+    #     platit (cine il copiaza de aiurea cumpara fara comision), iar articolele lunare il scriau intreg
+    #     („Use Code: 30CVLIFE") chiar deasupra liniei „Cod: `******FE`" mascate — 17 articole. Se uita
+    #     doar dupa codurile active cu o cifra sau 6+ caractere: „FALL" e si un cuvant obisnuit.
+    coduri_active = {c for m in magazine for p in (m.get("promotii") or [])
+                     for c in [str(p.get("cod_cupon") or "").strip()]
+                     if len(c) >= 4 and (re.search(r"\d", c) or len(c) >= 6)}
+    if coduri_active:
+        re_coduri = re.compile(r"(?<![A-Za-z0-9])(?:" + "|".join(map(re.escape, sorted(coduri_active, key=len, reverse=True)))
+                               + r")(?![A-Za-z0-9])")
+        in_clar = [f"{a['slug']} ({re_coduri.search(a.get('content') or '').group(0)})" for a in articole
+                   if re_coduri.search(a.get("content") or "")]
+        stare["articole_cu_cod_in_clar"] = len(in_clar)
+        if in_clar:
+            semnaleaza("cod in clar in articol",
+                       f"{len(in_clar)} articole scriu un cod activ intreg — ruleaza generate_blog.py "
+                       "(improspatarea foloseste promotii.fara_coduri)", in_clar)
+
     # 8. Istoricul promotiilor (24.09.2026). Pasul lui ruleaza cu continue-on-error, deci daca se
     #    strica nu se inroseste nimic: „plasa de siguranta pe care n-o verifica nimeni"
     #    (docs/LECTII-TEHNICE.md #4). Se prinde aici: fisier care nu se mai actualizeaza, sau o

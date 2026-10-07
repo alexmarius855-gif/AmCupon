@@ -50,6 +50,7 @@ CATEGORII_ROUNDUP = [
 # Numele magazinului: scripts/nume_magazin.py, acelasi rezultat ca numeAfisat() din frontend
 # (06.10.2026 — copia naiva de aici scria „Cod Reducere Us" pentru us.lemorele.com).
 from nume_magazin import nume_afisat  # noqa: E402
+from promotii import fara_coduri, pare_cod, titlu_promotie  # noqa: E402
 
 
 def slug_articol_magazin(magazin: str, luna: str, an: int) -> str:
@@ -165,9 +166,14 @@ def genereaza_articol_magazin(store: dict, luna: str, an: int) -> dict:
     # ── Bloc promotii detaliat ────────────────────────────────────────────────
     linii_promo = []
     for i, p in enumerate(promotii[:6]):
-        linie = f"**{i+1}. {p['nume']}**"
-        if p.get("descriere") and p["descriere"] != p["nume"]:
-            linie += f"\n   _{p['descriere'][:120]}_"
+        # 07.10.2026: titlul si descrierea FARA cod (promotii.titlu_promotie / fara_cod, ca pe site).
+        # „Use Code: 30CVLIFE", „Coupon Code: LONGERR" si titlurile Impact care SUNT codul
+        # („LumosFlex120") il aratau intreg chiar deasupra liniei „Cod: `******FE`" mascate.
+        titlu_p = fara_coduri(titlu_promotie(p, nume), p) or f"Ofertă {nume}"
+        desc_p = fara_coduri(p.get("descriere") or "", p)
+        linie = f"**{i+1}. {titlu_p}**"
+        if desc_p and desc_p != titlu_p and not pare_cod(desc_p):
+            linie += f"\n   _{desc_p[:120]}_"
         if p.get("cod_cupon"):
             linie += f"\n   Cod: `{masca_cod(p['cod_cupon'])}`"
         linie += text_expirare(p.get("zile_ramase"))
@@ -265,6 +271,11 @@ De mai multe ori pe zi, automat, din rețeaua de afiliere. Valabilitatea finală
     }
 
 
+def titlu_fara_cod(p: dict, nume_m: str) -> str:
+    """Titlul promotiei pentru text, fara niciun cod in clar (07.10.2026; vezi articolul de magazin)."""
+    return fara_coduri(titlu_promotie(p, nume_m), p) or f"Ofertă {nume_m}"
+
+
 def genereaza_articol_categorie(cat_slug: str, cat_name: str, magazine: list, luna: str, an: int) -> dict:
     """Roundup lunar per categorie — 'Top 5 magazine Fashion cu reduceri active'."""
     mag_cat = [
@@ -286,7 +297,7 @@ def genereaza_articol_categorie(cat_slug: str, cat_name: str, magazine: list, lu
     for i, m in enumerate(top, 1):
         nume_m = nume_afisat(m["magazin"])
         promotii_m = m.get("promotii", [])
-        promo_text = promotii_m[0]["nume"] if promotii_m else "Oferta activa"
+        promo_text = titlu_fara_cod(promotii_m[0], nume_m) if promotii_m else "Oferta activa"
         cod_text = f" — Cod: `{masca_cod(promotii_m[0]['cod_cupon'])}`" if promotii_m and promotii_m[0].get("cod_cupon") else ""
         linii_mag.append(
             f"### {i}. [{nume_m}](/cod-reducere/{m['magazin']})\n"
@@ -350,13 +361,15 @@ def genereaza_articol_roundup(magazine: list, luna: str, an: int) -> dict:
         for m in mag_list[:3]:
             nume_m = nume_afisat(m["magazin"])
             promotii_m = m.get("promotii", [])
-            promo_text = promotii_m[0]["nume"] if promotii_m else "Oferta activa"
+            promo_text = titlu_fara_cod(promotii_m[0], nume_m) if promotii_m else "Oferta activa"
             linii.append(f"- **[{nume_m}](/cod-reducere/{m['magazin']})** — {promo_text}")
         sectiuni.append(f"### {cat}\n" + "\n".join(linii))
 
     bloc_sectiuni = "\n\n".join(sectiuni)
     total_magazine = len([m for m in magazine if m.get("are_promotie")])
-    total_coduri   = len(cu_cod)
+    # 07.10.2026: numara CODURILE, nu magazinele cu cod — „38 coduri de reducere active” erau 38 de magazine
+    # cu 99 de coduri intre ele.
+    total_coduri   = sum(1 for m in cu_cod for p in m.get("promotii", []) if (p.get("cod_cupon") or "").strip())
 
     content = f"""## Rezumat reduceri {luna} {an}
 
@@ -385,7 +398,7 @@ In {luna} {an}, AmCupon.ro monitorizeaza **{total_magazine} magazine** cu promot
         "slug": slug_articol_roundup(luna, an),
         "title": f"Cele Mai Bune Coduri Reducere — {luna} {an} | AmCupon.ro",
         "date": datetime.now().strftime("%Y-%m-%d"),
-        "excerpt": f"Selectia celor mai bune {total_coduri} coduri reducere active in {luna} {an} din {total_magazine} magazine romanesti. Actualizate zilnic pe AmCupon.ro.",
+        "excerpt": f"Selectia celor mai bune {total_coduri} coduri reducere active in {luna} {an} din {total_magazine} magazine. Actualizate zilnic pe AmCupon.ro.",
         "category": "General",
         "cover": "/blog-covers/roundup.png",
         "content": content,
@@ -510,8 +523,23 @@ def main():
         # Data publicarii si coperta raman ale articolului: se schimba oferta, nu articolul.
         posts[i] = {**nou, "date": p.get("date", nou["date"]), "cover": p.get("cover", nou.get("cover"))}
         improspatate += 1
+    # 07.10.2026: si articolele de categorie si rezumatul lunii curente. Se generau o data pe luna si nu
+    # se mai atingeau: cifrele („26 de magazine cu promotii, 9 cu cod") ramaneau cele din ziua 1, iar
+    # promotiile listate expirau — acelasi tipar ca mai sus (LECTII-TEHNICE #5). Tot determinist.
+    cat_dupa_slug = {slug_articol_categorie(c, luna, an): (c, n) for c, n, _ in CATEGORII_ROUNDUP}
+    for i, p in enumerate(posts):
+        if p.get("tip") == "categorie" and p.get("slug") in cat_dupa_slug:
+            nou = genereaza_articol_categorie(*cat_dupa_slug[p["slug"]], magazine, luna, an)
+        elif p.get("tip") == "roundup" and p.get("slug") == slug_articol_roundup(luna, an):
+            nou = genereaza_articol_roundup(magazine, luna, an)
+        else:
+            continue
+        if not nou or nou.get("content") == p.get("content"):
+            continue
+        posts[i] = {**nou, "date": p.get("date", nou["date"]), "cover": p.get("cover", nou.get("cover"))}
+        improspatate += 1
     if improspatate:
-        print(f"Improspatate {improspatate} articole de magazin (oferta s-a schimbat)")
+        print(f"Improspatate {improspatate} articole (oferta sau cifrele lunii s-au schimbat)")
 
     # Articolele magazinelor scoase pentru ca programul lor nu acopera Romania (merge_platforms.py,
     # 19.09.2026): 74 de articole ramaneau cu ofertele „Eufy NL" & co., iar improspatarea de mai sus

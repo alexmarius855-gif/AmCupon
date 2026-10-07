@@ -13,8 +13,9 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from promotii import (cod_din_titlu, coduri_in_text, curata_promotii, fara_markdown,  # noqa: E402
-                      repara_mojibake, text_pentru_afiliati, valoare_zero)
+from promotii import (cod_din_titlu, coduri_in_text, curata_promotii, fara_cod, fara_coduri,  # noqa: E402
+                      fara_markdown, repara_mojibake, text_pentru_afiliati, titlu_promotie,
+                      valoare_zero)
 
 esecuri = 0
 
@@ -162,6 +163,37 @@ mag0 = [M("geekbuying.com", P("CHAU21", "USD $0 Off Coupon Code: CHAU21"), P("LO
 st0 = curata_promotii(mag0, azi="2026-10-07")
 verifica("curata_promotii scoate oferta de $0 si muta codul celeilalte",
          ([x["cod_cupon"] for x in mag0[0]["promotii"]], st0["valoare_zero"], st0["cod_din_titlu"]), (["LONGERR"], 1, 1))
+
+# ── 07.10.2026: textul fara cod — aceleasi cazuri ca lib/oferta.test.mjs, plus articolul lunar ─────────
+print("\nTextul fara cod:")
+verifica("„Use Code: 30CVLIFE” -> „Use code”",
+         fara_cod("Unlock Savings with 30% Off: Use Code: 30CVLIFE", "30CVLIFE"), "Unlock Savings with 30% Off: Use code")
+verifica("„prin codul OFERTE01” -> „prin codul de reducere”",
+         fara_cod("Reduceri de 10% prin codul OFERTE01", "OFERTE01"), "Reduceri de 10% prin codul de reducere")
+verifica("„cu codul VARA20”, minusul din „-20%” ramane",
+         fara_cod("-20% la tot, cu codul VARA20", "VARA20"), "-20% la tot, cu codul de reducere")
+verifica("doua puncte late: „Code：OIAFF5”", fara_cod("OutIn Code：OIAFF5", "OIAFF5"), "OutIn")
+verifica("codul nu se taie din mijlocul altui cuvant", fara_cod("SAVE10X si SAVE10", "SAVE10"), "SAVE10X si")
+verifica("fara cod, textul ramane", fara_cod("  20% la tot  ", ""), "20% la tot")
+verifica("fara_coduri: descrierea Klaiyi numeste doua coduri",
+         fara_coduri("18% OFF Sitewide — Code: KLAIYI18 20% OFF Over $169 — Code: KLAIYI20",
+                     P("Up To 20% OFF Sitewide With Code: KLAIYI20",
+                       "18% OFF Sitewide — Code: KLAIYI18 20% OFF Over $169 — Code: KLAIYI20", cod="KLAIYI20")),
+         "18% OFF Sitewide 20% OFF Over $169")
+verifica("titlul care E codul -> descrierea", titlu_promotie(P("LumosFlex120", "120 off for lumos flex"), "Wecreat"),
+         "120 off for lumos flex")
+verifica("doar cod, fara descriere -> „Cod de reducere X”", titlu_promotie(P("SAVE10", "", cod="SAVE10"), "X"),
+         "Cod de reducere X")
+verifica("fara cod si fara text -> „Ofertă X”", titlu_promotie(P("", ""), "X"), "Ofertă X")
+
+import generate_blog  # noqa: E402
+
+art = generate_blog.genereaza_articol_magazin(M("kospet.com",
+    P("[EU] Limited time sale-P10 Save 48% OFF! Use code DPR35", "Limited time sale-P10 Save 48% OFF! Use code DPR35",
+      cod="DPR35"),
+    P("LumosFlex120", "120 off for lumos flex")), "Octombrie", 2026)
+verifica("articolul lunar nu scrie codul in clar (doar mascat)",
+         ("DPR35" in art["content"], "LumosFlex120" in art["content"], "***35" in art["content"]), (False, False, True))
 
 print(f"\n  {esecuri} ESECURI" if esecuri else "\n  Toate testele trec.")
 sys.exit(1 if esecuri else 0)
