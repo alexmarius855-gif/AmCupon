@@ -1159,12 +1159,12 @@ ARTICOLE_EXTRA2 = [
     {
         "slug": f"cel-mai-bun-tensiometru-{AN}",
         "title": f"Cel mai bun tensiometru {AN} — Top 5 aparate recomandate",
-        "excerpt": f"Comparam cele mai bune tensiometre {AN}: digital de brat, de incheietura, validat clinic. Coduri reducere Dr. Max, Vegis, eMAG.",
+        "excerpt": f"Comparam cele mai bune tensiometre {AN}: digital de brat, de incheietura, validat clinic.",
         "category": "Sanatate",
         "cover": cover_url("tensiometru-brat"),
         "content": f"""## Cel mai bun tensiometru in {AN}
 
-Monitorizarea tensiunii arteriale acasa este esentiala pentru persoanele cu hipertensiune. Omron M3 Comfort este standardul de referinta — validat clinic ESH, memorie 60 masuratouri, indicator aritmie. Alternativ, Microlife BP A3 Basic ofera tehnologie PAD la pret mai mic.
+Monitorizarea tensiunii arteriale acasă e recomandată persoanelor cu hipertensiune, ca medicul să vadă valori din viața de zi cu zi, nu doar din cabinet. Omron M3 Comfort e o alegere echilibrată: validat clinic de Societatea Europeană de Hipertensiune (ESH), 60 de măsurători în memorie pentru fiecare din cei 2 utilizatori, semnalează bătăile neregulate ale inimii. Mai simplu, Microlife BP A2 Basic are tehnologia PAD, care semnalează aritmia în timpul măsurării.
 
 ## Tipuri de tensiometre
 
@@ -1175,26 +1175,26 @@ Monitorizarea tensiunii arteriale acasa este esentiala pentru persoanele cu hipe
 ## Top 5 tensiometre {AN}
 
 ### Omron M3 Comfort — Cel mai echilibrat
-Validat clinic ESH/ESC, memorie 60 masuratouri, indicator aritmie. ~350 lei.
+Validat clinic ESH, manșetă Intelli Wrap de 22-42 cm, 60 de măsurători în memorie pentru fiecare din cei 2 utilizatori, semnalează bătăile neregulate ale inimii.
 
-### Microlife BP A3 Basic — Cel mai bun calitate-pret
-Tehnologie PAD pentru detectarea aritmiei, maneta universala. ~280 lei.
+### Microlife BP A2 Basic — Cel mai simplu
+Tehnologia PAD semnalează bătăile neregulate în timpul măsurării. Manșetă de 22-42 cm, 30 de măsurători în memorie, validat după protocolul BHS (nota A/A).
 
-### Omron M6 Comfort — Top performanta
-Detectare fibrilatie atriala, Bluetooth, app Omron Connect. ~500 lei.
+### Omron M6 Comfort — Cele mai multe funcții
+Face 3 măsurători la rând și afișează media lor; manșetă Intelli Wrap de 22-42 cm, 100 de măsurători în memorie pentru fiecare din cei 2 utilizatori, semnalează bătăile neregulate. Nu are Bluetooth. Varianta M6 Comfort AFib semnalează și o posibilă fibrilație atrială.
 
 ### Beurer BM 55 — Ecran mare
-Ecran XL, iluminare fundal, ideal pentru persoane cu vedere slaba. ~320 lei.
+Ecran XL iluminat, util dacă vezi greu; semnalează aritmia, 2 × 60 de măsurători în memorie. Manșeta e de 22-36 cm — măsoară-ți brațul înainte.
 
-### Braun ExactFit 3 — Design simplu
-Universal Fit 22-42cm, 3 semafoare interpretare rapida. ~280 lei.
+### Braun ExactFit 3 — Două manșete în cutie
+Vine cu două manșete (22-32 și 32-42 cm) și un ecran iluminat cu cod de culori după ghidurile Organizației Mondiale a Sănătății; semnalează bătăile neregulate, 2 utilizatori.
 
 ## Cum alegi
 
 - Cauta simbolul validare ESH sau BHS
-- Masura circumferinta bratului (standard: 22-32 cm)
-- Min 60 masuratouri memorie
-- Detectare aritmie daca ai palpitatii
+- Măsoară circumferința brațului și alege manșeta potrivită (cea standard e de 22-32 cm)
+- Cel puțin 60 de măsurători în memorie, ca să-i arăți medicului istoricul
+- Detectarea bătăilor neregulate, dacă ai palpitații — aparatul doar semnalează, diagnosticul îl pune medicul
 
 ## Unde cumperi?
 

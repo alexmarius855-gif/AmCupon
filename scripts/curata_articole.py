@@ -183,6 +183,35 @@ FORMULE += [
     (re.compile(r", TSA lock, garantat 5 ani\."), ", încuietoare TSA."),
     (re.compile(r", alegere liberă componente, satisfacție garantată\."), ", alegi singur fiecare componentă."),
 ]
+# 07.10.2026: pretul scris de mana pe un produs anume („Omron M3 Comfort ... ~350 lei.", „Cosori ... Pret: 350-500
+# lei.", randul „Preț" din tabelul de smartwatch-uri). Scris in iunie, nu se mai potriveste cu magazinul — iar
+# fiecare articol are dedesubt oferta de AZI, cu pretul din feed (lib/topFeed.ts). Ramane doar ce e ghid de buget
+# pe o categorie intreaga („### Mid Range (5000-8000 lei)", „Buget: 50-200 lei"), nu pretul unui model.
+FORMULE += [
+    (re.compile(r"[ \t]*~\s?\d[\d.]*\+?(?:\s*[-–]\s*\d[\d.]*)?\s*lei(?:\s+pentru\s+[\w×]+)?\."), ""),
+    (re.compile(r"(?m)[ \t]*Pre[tț]:\s*\d[\d.]*(?:\s*[-–]\s*\d[\d.]*)?\s*lei\.(?=[ \t]*$)"), ""),
+    (re.compile(r"(?m)^\| \*\*Pre[tț]\*\* \|[^\n]*\|[ \t]*\n"), ""),
+    (re.compile(r"(?m)[ \t]*Sub \d[\d.]*\s*lei\.(?=[ \t]*$)"), ""),
+    (re.compile(r"(?m)(?<=\.)[ \t]*\d[\d.]*(?:\s*[-–]\s*\d[\d.]*|\+)\s*lei\.(?=[ \t]*$)"), ""),
+    (re.compile(r"^5 accesorii incluse, 1500-2000 lei\. Ideal buget limitat\.$", re.M), "5 accesorii incluse."),
+    (re.compile(r"(\*\*Hisense A6K\*\* — 4K, HDR10, Smart TV), 1500-2500 lei pentru 55inch\."), r"\1."),
+    (re.compile(r"(\*\*Polaroid PLD 2053/S\*\* — Polarizare reala), sub 150 lei\."), r"\1."),
+    (re.compile(r" Cel mai bun sub 5000 lei\.(?=[ \t]*$)", re.M), ""),
+]
+# 07.10.2026: „Cel mai bun tensiometru" — afirmatii medicale verificate la sursa (producator / magazine): „Microlife
+# BP A3 Basic" nu se vinde in Romania (aici e BP A2 Basic: PAD, 22-42 cm, BHS A/A), Omron M6 Comfort (HEM-7360-E)
+# NU are Bluetooth si nici aplicatie, iar Braun ExactFit 3 vine cu doua mansete, nu cu una „universala".
+FORMULE += [
+    (re.compile(re.escape('Monitorizarea tensiunii arteriale acasa este esentiala pentru persoanele cu hipertensiune. Omron M3 Comfort este standardul de referinta — validat clinic ESH, memorie 60 masuratouri, indicator aritmie. Alternativ, Microlife BP A3 Basic ofera tehnologie PAD la pret mai mic.')), 'Monitorizarea tensiunii arteriale acasă e recomandată persoanelor cu hipertensiune, ca medicul să vadă valori din viața de zi cu zi, nu doar din cabinet. Omron M3 Comfort e o alegere echilibrată: validat clinic de Societatea Europeană de Hipertensiune (ESH), 60 de măsurători în memorie pentru fiecare din cei 2 utilizatori, semnalează bătăile neregulate ale inimii. Mai simplu, Microlife BP A2 Basic are tehnologia PAD, care semnalează aritmia în timpul măsurării.'),
+    (re.compile(re.escape('### Omron M3 Comfort — Cel mai echilibrat\nValidat clinic ESH/ESC, memorie 60 masuratouri, indicator aritmie.')), '### Omron M3 Comfort — Cel mai echilibrat\nValidat clinic ESH, manșetă Intelli Wrap de 22-42 cm, 60 de măsurători în memorie pentru fiecare din cei 2 utilizatori, semnalează bătăile neregulate ale inimii.'),
+    (re.compile(re.escape('### Microlife BP A3 Basic — Cel mai bun calitate-pret\nTehnologie PAD pentru detectarea aritmiei, maneta universala.')), '### Microlife BP A2 Basic — Cel mai simplu\nTehnologia PAD semnalează bătăile neregulate în timpul măsurării. Manșetă de 22-42 cm, 30 de măsurători în memorie, validat după protocolul BHS (nota A/A).'),
+    (re.compile(re.escape('### Omron M6 Comfort — Top performanta\nDetectare fibrilatie atriala, Bluetooth, app Omron Connect.')), '### Omron M6 Comfort — Cele mai multe funcții\nFace 3 măsurători la rând și afișează media lor; manșetă Intelli Wrap de 22-42 cm, 100 de măsurători în memorie pentru fiecare din cei 2 utilizatori, semnalează bătăile neregulate. Nu are Bluetooth. Varianta M6 Comfort AFib semnalează și o posibilă fibrilație atrială.'),
+    (re.compile(re.escape('### Beurer BM 55 — Ecran mare\nEcran XL, iluminare fundal, ideal pentru persoane cu vedere slaba.')), '### Beurer BM 55 — Ecran mare\nEcran XL iluminat, util dacă vezi greu; semnalează aritmia, 2 × 60 de măsurători în memorie. Manșeta e de 22-36 cm — măsoară-ți brațul înainte.'),
+    (re.compile(re.escape('### Braun ExactFit 3 — Design simplu\nUniversal Fit 22-42cm, 3 semafoare interpretare rapida.')), '### Braun ExactFit 3 — Două manșete în cutie\nVine cu două manșete (22-32 și 32-42 cm) și un ecran iluminat cu cod de culori după ghidurile Organizației Mondiale a Sănătății; semnalează bătăile neregulate, 2 utilizatori.'),
+    (re.compile(re.escape('- Masura circumferinta bratului (standard: 22-32 cm)\n- Min 60 masuratouri memorie\n- Detectare aritmie daca ai palpitatii')), '- Măsoară circumferința brațului și alege manșeta potrivită (cea standard e de 22-32 cm)\n- Cel puțin 60 de măsurători în memorie, ca să-i arăți medicului istoricul\n- Detectarea bătăilor neregulate, dacă ai palpitații — aparatul doar semnalează, diagnosticul îl pune medicul'),
+    # descriere fara sursa: nimic din articol nu vine de la pedagogi
+    (re.compile(r"\s*Recomandate de pedagogi\."), ""),
+]
 # Orice propozitie care promite un procent de economii fara sursa („poti economisi 20-50% la carti").
 RE_ECONOMISI_ORICE = re.compile(r"economisi\w*\s+(?:u[șs]or\s+)?(?:p[aâ]n[aă] la\s+)?\d+\s*[-–]\s*\d+\s*%", re.I)
 
@@ -314,9 +343,24 @@ def fara_titluri_goale(text: str) -> tuple[str, int]:
     return rezultat, scoase
 
 
+# 07.10.2026: descrierea (in Google si pe cardul articolului) promitea „Coduri reducere Notino.", „Coduri reducere
+# incluse." pe 24 de articole: magazinele numite n-aveau niciun cod, iar articolele nu contin coduri. Scoasa promisiunea,
+# nu restul propozitiei („..., livrare si coduri reducere jucarii." -> „..., livrare.").
+_MAG_PROMISE = (r"(?:Dr\. Max(?:,? (?:si|și) Vegis)?|Notino|Decathlon|Libris|Answear|Noriel|Booking si alte platforme"
+                r"|la eMAG (?:si|și) Altex|jucarii)")
+_PROMISIUNE_CODURI = [
+    (re.compile(r"(?:^|(?<=[.!?]))\s*(?:Ghid complet cu |Gasesti si |Gasești și |Cu |Combinat cu |Prețuri și |Preturi si )?"
+                r"[Cc]oduri (?:de )?reducere(?: incluse| " + _MAG_PROMISE + r")?\.(?=\s|$)"), ""),
+    (re.compile(r"(?:,\s*|\s+(?:si|și)\s+)coduri (?:de )?reducere(?: " + _MAG_PROMISE + r")?(?=\.)"), ""),
+    (re.compile(r"\s+(?:cu|\+)\s+coduri (?:de )?reducere(?=\.)"), ""),
+]
+
+
 def curata_descriere(desc: str, platite: set[str]) -> str:
     """„... coduri reducere eMAG si Altex." -> fara magazinele care nu sunt parteneri."""
     for rx, nou in FORMULE:
+        desc = rx.sub(nou, desc)
+    for rx, nou in _PROMISIUNE_CODURI:
         desc = rx.sub(nou, desc)
     etichete = {s.split(".")[0] for s in platite}
 
@@ -383,6 +427,33 @@ def test() -> int:
             print(f"  ok    {nume}")
 
     c = lambda t: curata_text(t, platite, categorii, red)
+    d = lambda t: curata_descriere(t, platite)
+    v("descriere: „Coduri reducere Notino.” scoasa", d("Top fonduri de ten 2026: pentru ten gras, uscat. Coduri reducere Notino."),
+      "Top fonduri de ten 2026: pentru ten gras, uscat.")
+    v("descriere: „Coduri reducere incluse.” scoasa", d("4K, night vision, GPS integrat. Coduri reducere incluse."),
+      "4K, night vision, GPS integrat.")
+    v("descriere: ultimul element din enumerare", d("Comparatie preturi, livrare si coduri reducere jucarii. Afla unde."),
+      "Comparatie preturi, livrare. Afla unde.")
+    v("descriere: „Dr. Max si Vegis” in enumerare", d("Doze corecte, branduri de calitate, coduri reducere Dr. Max si Vegis."),
+      "Doze corecte, branduri de calitate.")
+    v("descriere: metoda de economisire ramane", d("15 metode: coduri reducere, cashback, timing. Ghid complet 2026."),
+      "15 metode: coduri reducere, cashback, timing. Ghid complet 2026.")
+    v("tensiometru: BP A3 Basic -> BP A2 Basic, fara Bluetooth la M6", ("Microlife BP A2 Basic" in c('### Microlife BP A3 Basic — Cel mai bun calitate-pret\nTehnologie PAD pentru detectarea aritmiei, maneta universala.'), "Bluetooth, app" in c('### Omron M6 Comfort — Top performanta\nDetectare fibrilatie atriala, Bluetooth, app Omron Connect.')),
+      (True, False))
+    v("pret de produs „~350 lei.” scos", c("Validat clinic ESH/ESC, memorie 60 masuratouri, indicator aritmie. ~350 lei."),
+      "Validat clinic ESH/ESC, memorie 60 masuratouri, indicator aritmie.")
+    v("„~1500-2000 lei pentru 160x200.” scos", c("3 zone de suport, husa lavabila. ~1500-2000 lei pentru 160x200. Disponibila in magazine IKEA din Romania."),
+      "3 zone de suport, husa lavabila. Disponibila in magazine IKEA din Romania.")
+    v("„Pret: 350-500 lei.” la final scos", c("Cel mai bun bang-for-buck din categorie. Pret: 350-500 lei."),
+      "Cel mai bun bang-for-buck din categorie.")
+    v("randul „Preț” din tabel scos", c("| **Sănătate** | ECG |\n| **Preț** | 2000-3000 lei | 1500-2500 lei |\n## Top\n\nText."),
+      "| **Sănătate** | ECG |\n## Top\n\nText.")
+    v("„... compact. 2500-3000 lei.” scos", c("Sistem 3in1, rotire 360° scaun auto, pliabil compact. 2500-3000 lei."),
+      "Sistem 3in1, rotire 360° scaun auto, pliabil compact.")
+    v("ghid de buget pe categorie ramane", c("### Mid Range (5000-8000 lei) — 1440p gaming\n**Buget**: 50-200 lei"),
+      "### Mid Range (5000-8000 lei) — 1440p gaming\n**Buget**: 50-200 lei")
+    v("„Sub 150 lei modele decente.” (ghid, nu model) ramane", c("Umflă în 3-5 minute. Sub 150 lei modele decente."),
+      "Umflă în 3-5 minute. Sub 150 lei modele decente.")
     v("propozitie despre parteneri, doar magazine absente -> dispare",
       c("Folosește codurile de reducere de la partenerii noștri: [eMAG](/cod-reducere/emag.ro), [Altex](/cod-reducere/altex.ro), [Flanco](/cod-reducere/flanco.ro)."), "")
     v("linie care e doar un link spre magazin absent -> dispare",
