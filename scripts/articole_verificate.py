@@ -751,6 +751,372 @@ de 1 Gbps. Are Multi-Link Operation și 4K-QAM.
 )
 
 
+# ─── Masina de cafea ──────────────────────────────────────────────────────────────────────────────
+articol(
+    "cea-mai-buna-masina-de-cafea-2026",
+    "Cea mai bună mașină de cafea 2026: 5 modele pe tipuri",
+    "Automat cu lapte, automat simplu, espressor manual cu râșniță sau capsule: De'Longhi Dinamica Plus și "
+    "Magnifica Start, Philips 5400 LatteGo, De'Longhi La Specialista Arte și Nespresso Vertuo Pop.",
+    "Electrocasnice",
+    f"""
+## Cea mai bună mașină de cafea în 2026
+
+Prima alegere nu e marca, ci tipul: vrei să apeși un buton și să ai cappuccino, vrei să faci tu espresso, sau
+vrei cel mai simplu aparat cu putință? Fiecare tip are alt cost pe ceașcă și altă întreținere.
+
+{CUM_AM_ALES}
+
+## Tipuri de mașini de cafea
+
+- **Automat (espressor cu râșniță, „bean to cup").** Macină boabele, face espresso și, la unele modele,
+  spumează laptele singur. Costul pe ceașcă e mic, dar aparatul e mai scump și trebuie decalcifiat.
+- **Espressor manual cu râșniță.** Tu dozezi, tasezi și spumezi laptele; rezultatul depinde de tine.
+- **Capsule.** Cel mai simplu: pui capsula și apeși. Aparatul e ieftin, capsula e mai scumpă decât boabele.
+- **Cafea la filtru.** Cel mai ieftin pe ceașcă, fără presiune, fără espresso.
+
+## 5 mașini de cafea în 2026
+
+### De'Longhi Dinamica Plus (ECAM370.95.T) — automat, cu lapte automat
+12 rețete, ecran tactil de 3,5 inchi și sistemul LatteCrema, care spumează laptele singur pentru cappuccino și
+latte.
+
+### Philips 5400 LatteGo (EP5447) — automat, ușor de curățat
+12 băuturi, inclusiv cappuccino și latte macchiato. Sistemul de lapte LatteGo nu are tuburi, deci se spală
+repede.
+
+### De'Longhi Magnifica Start (ECAM220) — automat simplu
+Trei băuturi la o atingere (espresso, cafea, americano), 13 trepte de măcinare și o duză de abur clasică,
+pentru spumă făcută de tine.
+
+### De'Longhi La Specialista Arte (EC9155) — espressor manual cu râșniță
+Râșniță integrată cu 8 trepte și duza My LatteArt pentru microspumă, inclusiv din lapte vegetal. În cutie e
+și o cană pentru lapte.
+
+### Nespresso Vertuo Pop — capsule, cinci mărimi
+Cinci mărimi de cafea, de la 40 la 355 ml, gata de folosit în circa 30 de secunde, rezervor de 600 ml. Merge
+doar cu capsulele Vertuo, care au cod de bare citit de aparat.
+
+## Înainte să cumperi
+
+- **Calculează pe un an:** prețul aparatului plus câte cafele bei pe zi, cu prețul capsulei sau al boabelor.
+- **Decalcifierea** e obligatorie la automate și espressoare; apa dură o face mai des necesară.
+- **Laptele:** sistemele automate economisesc timp, dar trebuie spălate după fiecare folosire.
+
+[Vezi magazinele pentru casă și grădină →](/categorii/casa-gradina)
+""",
+    [
+        "https://www.delonghi.com/nl-nl/p/dinamica-plus-ecam370.95.t-dinamica-plus-automatisch-kofffiezetapparaat/ECAM370.95.T+EX%3A4.html (12 retete, 3,5\", LatteCrema)",
+        "https://www.delonghi.com/en-ca/magnifica-start-espresso-machine-with-manual-milk-frother/p/ECAM22022B (3 retete, 13 trepte)",
+        "https://www.philips.co.uk/c-p/EP5447_90 (5400 LatteGo, 12 bauturi)",
+        "https://www.currys.co.uk/products/delonghi-la-specialista-arte-ec9155.mb-bean-to-cup-coffee-machine-stainless-steel-and-black-10229653.html",
+        "https://digitec.ch/en/s1/product/delonghi-la-specialista-arte-espresso-machines-24038471 (8 trepte)",
+        "https://www.nespresso.com/it/en/order/machines/vertuo/pop-black-macchina-caffe (Vertuo Pop: 5 marimi, 30 s, 600 ml)",
+    ],
+)
+
+
+# ─── Monitor gaming ───────────────────────────────────────────────────────────────────────────────
+articol(
+    "cel-mai-bun-monitor-gaming-2026",
+    "Cel mai bun monitor de gaming 2026: OLED sau IPS",
+    "OLED la 480-500 Hz, 4K la 240 Hz sau IPS la 180 Hz: Samsung Odyssey OLED G6, ASUS ROG Swift OLED PG27AQDP, "
+    "MSI MPG 272URX și ASUS ROG Strix XG27ACS, după fișa producătorului.",
+    "Electronice",
+    f"""
+## Cel mai bun monitor de gaming în 2026
+
+În 2026, monitoarele OLED de 27 de inchi au ajuns la 480-500 Hz, iar cele IPS de 1440p la 180 Hz au devenit
+accesibile. Alegerea ține de placa video, de jocurile pe care le joci și de cât timp stă o imagine statică pe
+ecran.
+
+{CUM_AM_ALES}
+
+## OLED, IPS sau VA
+
+- **OLED** — contrast practic infinit și timp de răspuns de 0,03 ms. Riscul e burn-in-ul la imaginile care
+  stau fixe ore întregi (bara de activități, interfața unui joc); unii producători îl acoperă în garanție.
+- **IPS** — fără burn-in și mai luminos într-o cameră însorită, dar negrul pare gri în întuneric.
+- **VA** — contrast mai bun decât IPS, dar mai lent în tranzițiile spre negru.
+
+## Rezoluție și frecvență
+
+- **1440p la 165-180 Hz** — alegerea obișnuită pentru 27 de inchi.
+- **1440p la 360-500 Hz** — pentru jocuri competitive, dacă placa video scoate atâtea cadre pe secundă.
+- **4K la 240 Hz** — imagine mai clară, dar cere o placă video puternică.
+
+## 4 monitoare în 2026
+
+### Samsung Odyssey OLED G6 (G60SF) — 500 Hz
+27 de inchi, QHD, QD-OLED la 500 Hz, timp de răspuns de 0,03 ms, certificare DisplayHDR True Black 500 și
+picior reglabil pe înălțime, cu rotire în portret. În anunțul Samsung: trei ani de garanție, inclusiv pentru
+burn-in — verifică certificatul de garanție la magazin.
+
+### ASUS ROG Swift OLED PG27AQDP — 480 Hz
+27 de inchi, QHD, panou WOLED (LG Display) la 480 Hz, 0,03 ms și până la 1.300 de niți în HDR. A fost primul
+monitor OLED de 480 Hz.
+
+### MSI MPG 272URX — 4K la 240 Hz
+27 de inchi, 4K, QD-OLED la 240 Hz, 0,03 ms. Are DisplayPort 2.1a și un port USB-C care încarcă un laptop cu
+până la 98 W.
+
+### ASUS ROG Strix XG27ACS — IPS pentru buget
+27 de inchi, 1440p, Fast IPS la 180 Hz, timp de răspuns de 1 ms, compatibil G-Sync și FreeSync, cu USB-C.
+
+[Vezi pagina de jocuri și accesorii →](/jocuri)
+""",
+    [
+        "https://www.samsung.com/uk/business/monitors/gaming/odyssey-oled-g6-g60sf-27-inch-500hz-oled-qhd-ls27fg602suxxu/",
+        "https://tftcentral.co.uk/news/samsung-launch-one-of-the-first-500hz-qd-oled-gaming-monitors-with-the-g60sf (garantie burn-in)",
+        "https://rog.asus.com/uk/monitors/27-to-31-5-inches/rog-swift-oled-pg27aqdp/spec",
+        "https://www.tftcentral.co.uk/news/asus-rog-swift-pg27aqdp-with-27-1440p-480hz-oled-panel-unveiled",
+        "https://tftcentral.co.uk/news/msi-announce-mpg-272urx-qd-oled-with-a-27-4k-240hz-panel-and-displayport-2-1",
+        "https://www.rtings.com/monitor/reviews/msi/mpg-272urx-qd-oled",
+        "https://bottleneckpc.com/blog/best-1440p-gaming-monitor-2026 (XG27ACS)",
+    ],
+)
+
+
+# ─── Camera auto (dashcam) ────────────────────────────────────────────────────────────────────────
+# 07.10.2026: varianta generata avea „BlackVue DR900X-2CH — 4K fata + 4K spate" (spatele e Full HD), „Xiaomi
+# 70mai A800S — cel mai vandut dashcam din Romania" (fara sursa) si Garmin Dash Cam 57 (inlocuit de seria X).
+articol(
+    "cel-mai-bun-dashcam-2026",
+    "Cel mai bun dashcam 2026: ce contează și 3 camere auto",
+    "Viofo A329, Garmin Dash Cam X310 / X210 și 70mai A810: rezoluție, senzor, unghi, mod de parcare și GPS, după "
+    "fișa producătorului.",
+    "Auto",
+    f"""
+## Cel mai bun dashcam în 2026
+
+O cameră de bord înregistrează drumul și, cu modul de parcare, ce se întâmplă cu mașina oprită. Diferențele
+dintre modele sunt la cât de clar citesc numerele de înmatriculare, mai ales noaptea, și la cât de simplu le
+folosești.
+
+{CUM_AM_ALES}
+
+## Ce contează
+
+- **Rezoluția și senzorul.** 4K și un senzor bun la lumină slabă (de exemplu Sony STARVIS 2) cresc șansa ca
+  numărul altei mașini să se citească noaptea.
+- **Unghiul de filmare.** 140-150° prind și benzile alăturate; mai mult deformează marginile.
+- **Camera din spate**, dacă vrei și ce se întâmplă în spatele mașinii.
+- **Modul de parcare.** De obicei cere un kit de alimentare legat la instalația mașinii.
+- **GPS-ul** pune pe înregistrare locul și viteza.
+
+## 3 camere auto în 2026
+
+### Viofo A329 — 4K la 60 de cadre pe secundă
+Prima cameră de bord cu 4K la 60 de cadre, după Viofo, cu senzor Sony STARVIS 2 (IMX678) în față. Are Wi-Fi 6,
+GPS, mod de parcare hibrid și poate înregistra pe SSD extern de până la 4 TB. Varianta cu două camere are și
+cameră 2K în spate.
+
+### Garmin Dash Cam X310 / X210 — cele mai simple de folosit
+X310 filmează 4K, X210 filmează 1440p; ambele au unghi de 140°, filtru polarizant Clarity care reduce
+reflexiile din parbriz, control vocal, ecran tactil de 2,4 inchi, GPS și Wi-Fi.
+
+### 70mai A810 — 4K cu ecran mare
+4K în față cu senzor Sony STARVIS 2 (IMX678), unghi de 150°, ecran de 3 inchi și GPS integrat. În kitul cu două
+camere, cea din spate filmează 1080p.
+
+## Înregistrările
+
+- O înregistrare te poate ajuta să arăți ce s-a întâmplat; cât contează ca probă decid poliția, asigurătorul
+  sau instanța.
+- Dacă publici un clip online, blurează fețele și numerele altor mașini: sunt date personale.
+- Folosește un card de memorie făcut pentru înregistrare continuă („high endurance") și formatează-l din
+  când în când din meniul camerei, cum recomandă producătorii.
+
+[Vezi pagina auto-moto →](/moto)
+""",
+    [
+        "https://dashcamtalk.com/viofo-a329/ (4K 60 fps, IMX678, Wi-Fi 6, SSD)",
+        "https://bsta.sa/en/electronics/vehicle-electronics/dashcam/car-dash-cam/viofo-a329 (2CH: spate 2K)",
+        "https://www.garmin.com/en-US/newsroom/press-release/automotive/capture-detailed-eyewitness-video-with-the-new-garmin-dash-cam-x-series/",
+        "https://www.digitec.ch/en/s1/product/garmin-x310-built-in-display-built-in-microphone-wi-fi-uhd-4k-dashcams-49150218",
+        "https://www.70mai.com/a810/ (A810: IMX678, 150 grade, 3\", GPS, spate 1080p)",
+    ],
+)
+
+
+# ─── Laptop business ──────────────────────────────────────────────────────────────────────────────
+articol(
+    "cel-mai-bun-laptop-business-2026",
+    "Cel mai bun laptop business 2026: 5 modele ușoare",
+    "ThinkPad X1 Carbon Gen 14, Dell XPS 14, HP EliteBook X G2, MacBook Air M5 și ASUS Zenbook A14: greutate, "
+    "autonomie anunțată și porturi, după fișa producătorului.",
+    "Electronice",
+    f"""
+## Cel mai bun laptop business în 2026
+
+Un laptop de lucru trebuie să fie ușor de cărat, să țină o zi întreagă pe baterie și să aibă porturile de
+care ai nevoie fără adaptoare. Modelele de mai jos au fost lansate sau înnoite în 2026, cu excepția Zenbook A14.
+
+{CUM_AM_ALES}
+
+## Ce contează
+
+- **Greutatea** — sub 1,4 kg se cară ușor zilnic.
+- **Autonomia** — cifrele producătorilor vin din teste ușoare (video, navigare); la lucru real e mai puțin.
+- **Porturile** — Thunderbolt / USB-C pentru monitor și încărcare, plus HDMI dacă prezinți des.
+- **Procesorul** — Windows pe ARM (Snapdragon) ține mult pe baterie, dar unele programe sau drivere mai vechi
+  pot să nu meargă; verifică-le înainte.
+
+## 5 laptopuri business în 2026
+
+### Lenovo ThinkPad X1 Carbon Gen 14 — sub 1 kg
+996 g, procesoare Intel Core Ultra Series 3, până la 64 GB de memorie, ecran de 14 inchi IPS sau OLED 2,8K.
+Are trei porturi Thunderbolt 4, USB-A și HDMI 2.1. Lenovo a mutat componente pe ambele fețe ale plăcii, pentru
+răcire și reparații mai ușoare. Prezentat la CES 2026.
+
+### Dell XPS 14 (2026) — XPS se întoarce
+Dell a renunțat în 2025 la numele XPS și l-a readus în 2026. Modelul de 14 inchi are 14,6 mm grosime și 1,36 kg,
+procesoare Intel Core Ultra Series 3 și ecran OLED de 2,8K la 120 Hz. Dell anunță până la 40 de ore de
+autonomie în configurația cea mai economă.
+
+### HP EliteBook X G2 — trei procesoare la alegere
+Vine cu Intel (G2i), AMD (G2a) sau Qualcomm (G2q), sub 1 kg, cu ecran OLED 3K opțional. HP anunță până la 29 de
+ore de autonomie. Prezentat la CES 2026.
+
+### MacBook Air M5 — pentru macOS
+Lansat în martie 2026: 1,23 kg la 13 inchi și 1,51 kg la 15 inchi, fără ventilator, până la 18 ore de autonomie
+după Apple.
+
+### ASUS Zenbook A14 — Snapdragon, cel mai ușor la buget mai mic
+0,98 kg, ecran OLED de 14 inchi, procesor Snapdragon X. ASUS anunță până la 32 de ore. Fiind Windows pe ARM,
+verifică întâi programele de care ai nevoie.
+
+[Vezi pagina de laptopuri →](/laptop)
+""",
+    [
+        "https://www.techradar.com/pro/lenovo-just-launched-the-most-powerful-sub-1kg-laptop-ever-thinkpad-x1-carbon-gen-14-sports-a-core-ultra-x7-series-3-cpu-and-weighs-996g",
+        "https://www.ultrabookreview.com/74228-2026-lenovo-thinkpad-x1-x9-aura/",
+        "https://www.pcworld.com/article/3020008/dell-heard-the-complaints-the-xps-is-back.html",
+        "https://servethehome.com/dell-xps-14-2026-review-thin-and-light-done-right-intel/ (1,36 kg, OLED 2,8K)",
+        "https://www.channelnews.com.au/ces-2026-dell-revives-xps-with-slimmer-design-longer-battery-life-and-oled-displays/ (40 h)",
+        "https://justbuy.com.ua/en/news/elitebook-x-g2a-g2i-g2q (EliteBook X G2: sub 1 kg, 29 h, OLED 3K)",
+        "https://gigazine.net/gsc_news/en/20260304-apple-m5-macbook-air (MacBook Air M5)",
+        "https://www.notebookcheck.net/Asus-Zenbook-A14-laptop-review.955023.0.html (Zenbook A14)",
+    ],
+)
+
+# ─── Cum alegi un laptop ──────────────────────────────────────────────────────────────────────────
+articol(
+    "cum-alegi-un-laptop-2026",
+    "Cum alegi un laptop în 2026: ghid pe tipuri de folosire",
+    "Procesor, memorie, stocare și ecran: ce îți trebuie pentru birou, școală, editare foto-video sau jocuri, și "
+    "ce să eviți la un laptop în 2026.",
+    "Electronice",
+    """
+## Cum alegi un laptop în 2026
+
+Întrebarea de la care pornești nu e „ce procesor", ci „ce faci cu el". Un laptop de birou și unul de jocuri
+diferă în aproape tot: greutate, autonomie, placă video, preț.
+
+> **Cum am făcut ghidul.** Regulile de mai jos vin din fișele producătorilor și din cerințele publicate (de
+> exemplu, ale Microsoft pentru PC-urile Copilot+). Nu recomandăm o marcă în locul alteia.
+
+## Pe tipuri de folosire
+
+### Navigare, email, filme, școală
+- Memorie RAM: 16 GB, ca laptopul să nu încetinească în câțiva ani; 8 GB doar dacă folosești strictul necesar.
+- Stocare: SSD de 256-512 GB.
+- Ecran: cel puțin 1920 × 1080 (sau 1920 × 1200).
+
+### Birou, Excel, întâlniri video, multe programe deschise
+- Memorie RAM: 16 GB sau mai mult.
+- Stocare: SSD de 512 GB.
+- Autonomie și greutate: aici contează cel mai mult — vezi și ghidul nostru despre laptopurile de business.
+
+### Editare foto și video
+- Memorie RAM: 32 GB.
+- Ecran cu acoperire mare a spațiului de culoare (sRGB sau DCI-P3 aproape de 100%).
+- Placă video dedicată sau un procesor cu grafică puternică.
+
+### Jocuri
+- Placă video dedicată — în 2026, laptopurile noi au plăci RTX 50; detalii în ghidul nostru despre laptopurile
+  de gaming.
+- Ecran de 144 Hz sau mai mult.
+
+## PC-urile „Copilot+"
+
+Microsoft cere pentru eticheta Copilot+ cel puțin 16 GB de RAM, 256 GB de SSD și un procesor cu unitate pentru
+inteligență artificială (NPU) de minimum 40 TOPS. Eticheta contează doar dacă vrei funcțiile AI din Windows care
+rulează local.
+
+## Ce să eviți
+
+- **Stocare eMMC** în loc de SSD — e mult mai lentă și de obicei mică.
+- **8 GB de RAM lipiți pe placă** la un laptop cu Windows pe care vrei să-l ții mulți ani — nu se mai pot mări.
+- **Ecran de 1366 × 768** — rezoluție depășită.
+
+[Vezi pagina de laptopuri →](/laptop)
+""",
+    [
+        "https://support.microsoft.com/en-au/topic/copilot-pc-hardware-requirements-35782169-6eab-4d63-a5c5-c498c3037364 (Copilot+: 16 GB, 256 GB, NPU 40+ TOPS)",
+        "https://box.co.uk/blog/nvidia-50-series-laptop-gpu-vram-guide (RTX 50 pe laptop)",
+    ],
+)
+
+
+# ─── Aspirator vertical fara fir ──────────────────────────────────────────────────────────────────
+articol(
+    "cel-mai-bun-aspirator-2026",
+    "Cel mai bun aspirator vertical fără fir 2026: 5 modele",
+    "Dyson V16 Piston Animal și V15 Detect, Samsung Bespoke Jet AI, Dreame Z30 și Rowenta X-Force Flex 15.60: "
+    "putere, autonomie anunțată și pentru ce casă e fiecare.",
+    "Casa",
+    f"""
+## Cel mai bun aspirator vertical fără fir în 2026
+
+În multe apartamente, aspiratorul vertical fără fir a înlocuit aspiratorul cu fir: îl scoți din colț, aspiri
+și îl pui înapoi la încărcat. Dacă vrei unul care merge singur, vezi
+[ghidul nostru despre aspiratoarele robot](/blog/cel-mai-bun-aspirator-robot-2026).
+
+{CUM_AM_ALES}
+
+## Ce contează
+
+- **Puterea.** Producătorii o dau în AW sau în wați, măsurate fiecare altfel — compară doar între modele ale
+  aceleiași mărci.
+- **Autonomia.** Cifra anunțată e în modul cel mai slab; în modul maxim scade mult.
+- **Bateria detașabilă.** La unele modele poți cumpăra a doua baterie, ca să aspiri o casă mare dintr-o dată.
+- **Greutatea**, dacă aspiri des scările sau plafonul.
+- **Peria** care nu încâlcește părul, dacă ai animale sau păr lung în casă.
+
+## 5 aspiratoare verticale fără fir în 2026
+
+### Dyson V16 Piston Animal — cel mai puternic Dyson
+Lansat în octombrie 2025: motor Hyperdymium de 900 W, 315 AW, până la 70 de minute, recipient de 1,3 litri și
+filtrare de 99,99% a particulelor de 0,1 microni.
+
+### Dyson V15 Detect — vede praful
+Un laser luminează praful fin de pe podea, iar un senzor numără particulele și ajustează puterea. Până la 60 de
+minute de autonomie.
+
+### Samsung Bespoke Jet AI — autonomia cea mai mare
+Până la 280 W putere de aspirare și până la 100 de minute pe o baterie — cea mai lungă autonomie pe o singură
+baterie la un aspirator vertical, după Samsung. Își ajustează puterea după tipul de podea.
+
+### Dreame Z30 — putere mare, autonomie lungă
+310 AW, până la 90 de minute de autonomie și filtrare de 99,99% a particulelor de 0,1 microni.
+
+### Rowenta X-Force Flex 15.60 Aqua — aspiră și spală
+230 AW, până la 80 de minute, 3,2 kg. Tubul se îndoaie (Flex) ca să intri sub mobilă fără să te apleci, iar
+capul Aqua aspiră și spală pardoseala în aceeași trecere.
+
+[Vezi magazinele pentru casă și grădină →](/categorii/casa-gradina)
+""",
+    [
+        "https://www.dyson.com/vacuum-cleaners/cordless/v16-piston/black-copper (V16 Piston Animal)",
+        "https://techradar.com/home/vacuums/dyson-v16-piston-animal-cordless-vacuum-review",
+        "https://www.dyson.com/vacuum-cleaners/sticks/dyson-v15-stick/v15-detect-yellow-iron (V15 Detect)",
+        "https://news.samsung.com/global/samsung-announces-global-launch-of-bespoke-jet-ai-the-worlds-first-ul-verified-ai-powered-cordless-stick-vacuum",
+        "https://dreametech.com/products/z30-cordless-stick-vacuum (Z30: 310 AW, 90 min)",
+        "https://dateks.lv/en/cenas/puteklu-suceji/1004474-rowenta-x-force-flex-15-60-32-4v-black-bronze (X-Force Flex 15.60)",
+    ],
+)
+
+
 # ─── Scriere si verificari ────────────────────────────────────────────────────────────────────────
 INTERZISE = [
     (re.compile(r"\b\d[\d.]*\s?(?:lei|RON|€|EUR)\b|~\s?\d"), "pret scris in articol"),
