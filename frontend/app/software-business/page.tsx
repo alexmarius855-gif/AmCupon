@@ -19,7 +19,7 @@ const TOOLS_INTL = [
   {
     categ: "Marketplace SaaS Deals",
     items: [
-      { name: "AppSumo", desc: "Marketplace de oferte lifetime la unelte SaaS: plătești o dată și primești acces pe viață la planul cumpărat.", badge: "Oferte lifetime", url: "https://appsumo.8odi.net/AgnqdR" },
+      { name: "AppSumo", desc: "Marketplace de oferte lifetime la unelte SaaS: plătești o dată și primești acces pe viață la planul cumpărat.", badge: "Oferte lifetime", url: "https://appsumo.com" },
     ],
   },
   {
