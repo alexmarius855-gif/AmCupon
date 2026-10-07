@@ -28,7 +28,7 @@ export default function NorielPage() {
       slug: "noriel.ro",
       slugAlt: "noriel",
       name: "Noriel",
-      tagline: "Cel mai mare magazin de jucarii din Romania — LEGO, jocuri si distractie",
+      tagline: "Unul dintre cele mai mari magazine de jucarii din Romania — LEGO, jocuri si distractie",
       emoji: "🧸",
       desc: "Coduri de reducere Noriel jucarii actualizate zilnic. Reduceri la jucarii, seturi LEGO, jocuri de societate si articole pentru copii.",
       editorial: [
