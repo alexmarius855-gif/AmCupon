@@ -110,7 +110,7 @@ export default function CopiiPage() {
         <NisaProduse
           merchantSlugs={["noriel.ro","smythstoys.com","bebetei.ro","bebe-tei.ro","chicco.ro"]}
           catSlug="copii"
-          titlu="Jucarii si produse copii cu reducere"
+          titlu="Jucării și produse pentru copii de la parteneri"
           culoareAccent="indigo"
           limit={12}
         />

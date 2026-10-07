@@ -129,7 +129,7 @@ export default function SmartHomePage() {
         <NisaProduse
           merchantSlugs={["altex.ro","dedeman.ro","flanco.ro","evomag.ro"]}
           catSlug="electronice"
-          titlu="Produse smart home populare cu reducere"
+          titlu="Produse smart home de la parteneri"
           culoareAccent="indigo"
           limit={12}
         />

@@ -30,12 +30,11 @@ const HOSTING_LIST = [
     rank: 1,
     name: "Hostinger",
     tagline: "Cel mai accesibil hosting premium — perfect pentru inceput si proiecte mici",
-    badge: "Recomandat #1",
+    badge: "Planuri pentru început",
     badgeColor: "bg-[#ddf93c]",
     emoji: "🏆",
     pret_luna: "1.99€",
     pret_nota: "plan Starter 48 luni",
-    rating: "9.6",
     url: LINK_HOSTINGER,
     tip: "Shared Hosting / WordPress",
     ideal: "Bloguri, site-uri mici, magazine online, portofolii",
@@ -54,12 +53,11 @@ const HOSTING_LIST = [
     rank: 2,
     name: "SiteGround",
     tagline: "Hosting profesional cu suport top si viteza exceptionala",
-    badge: "Cel mai profesional",
+    badge: "Hosting gestionat",
     badgeColor: "bg-[#ddf93c]",
     emoji: "⚡",
     pret_luna: "3.99€",
     pret_nota: "plan StartUp (primul an)",
-    rating: "9.3",
     url: LINK_SITEGROUND,
     tip: "Shared / Cloud Hosting",
     ideal: "Site-uri de business, WooCommerce, magazine cu trafic",
@@ -77,12 +75,11 @@ const HOSTING_LIST = [
     rank: 3,
     name: "Cloudways",
     tagline: "Cloud hosting gestionat — puterea AWS/Google Cloud fara complexitate",
-    badge: "Cel mai scalabil",
+    badge: "Cloud gestionat",
     badgeColor: "bg-[#ddf93c]",
     emoji: "☁️",
     pret_luna: "11€",
     pret_nota: "plan DigitalOcean 1GB",
-    rating: "9.0",
     url: LINK_CLOUDWAYS,
     tip: "Managed Cloud Hosting",
     ideal: "Agentii, magazine cu trafic mare, developeri",
@@ -167,9 +164,6 @@ export default function HostingPage() {
         <div className="space-y-6">
           {HOSTING_LIST.map((h) => (
             <div key={h.name} className={`bg-[#14181c] border rounded-xl p-6 ${h.rank === 1 ? "border-[#ddf93c]/40 shadow-lg shadow-[#ddf93c]/10" : "border-[#1f2329]"}`}>
-              {h.rank === 1 && (
-                <div className="text-xs text-[#c3dd2c] font-bold mb-3">⭐ CEL MAI RECOMANDAT PENTRU INCEPUT</div>
-              )}
               <div className="flex flex-col md:flex-row md:items-start gap-5">
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-2">
@@ -208,11 +202,6 @@ export default function HostingPage() {
                   <div className="text-center">
                     <div className="text-3xl font-black text-[#ffffff]">{h.pret_luna}</div>
                     <div className="text-xs text-[#9399a0]">/luna ({h.pret_nota})</div>
-                    <div className="flex items-center justify-center gap-1 mt-1">
-                      <span className="text-yellow-400 text-sm">★</span>
-                      <span className="text-[#ffffff] font-bold text-sm">{h.rating}</span>
-                      <span className="text-[#9399a0] text-xs">/10</span>
-                    </div>
                   </div>
                   <a href={h.url} target="_blank" rel="sponsored noopener noreferrer"
                     className={`w-full text-center py-3 px-4 rounded-xl font-black text-sm text-[#0c1000] transition-all hover:-translate-y-0.5 shadow-lg ${h.rank === 1 ? "bg-[#ddf93c] hover:bg-[#ddf93c] shadow-[#ddf93c]/20" : "bg-[#2a2f36] hover:bg-[#1f2329]"}`}>

@@ -48,10 +48,10 @@ const LINK_KASPERSKY   = "https://www.kaspersky.com";
 // ──────────────────────────────────────────────────────────────────────────
 
 const COMPARATIV = [
-  { brand: "Bitdefender", nota: "9.8/10", pret: "de la 45 lei/an", highlight: "Cel mai bun detectie malware", culoare: "bg-red-600", url: LINK_BITDEFENDER },
-  { brand: "Norton 360", nota: "9.5/10", pret: "de la 59 lei/an", highlight: "VPN nelimitat inclus", culoare: "bg-yellow-500", url: LINK_NORTON },
-  { brand: "ESET NOD32", nota: "9.3/10", pret: "de la 39 lei/an", highlight: "Cel mai usor pe sistem", culoare: "bg-[#ddf93c]", url: LINK_ESET },
-  { brand: "Kaspersky", nota: "9.1/10", pret: "de la 49 lei/an", highlight: "Protectie bancara excelenta", culoare: "bg-emerald-600", url: LINK_KASPERSKY },
+  { brand: "Bitdefender", pret: "de la 45 lei/an", highlight: "Cel mai bun detectie malware", culoare: "bg-red-600", url: LINK_BITDEFENDER },
+  { brand: "Norton 360", pret: "de la 59 lei/an", highlight: "VPN nelimitat inclus", culoare: "bg-yellow-500", url: LINK_NORTON },
+  { brand: "ESET NOD32", pret: "de la 39 lei/an", highlight: "Cel mai usor pe sistem", culoare: "bg-[#ddf93c]", url: LINK_ESET },
+  { brand: "Kaspersky", pret: "de la 49 lei/an", highlight: "Protectie bancara excelenta", culoare: "bg-emerald-600", url: LINK_KASPERSKY },
 ];
 
 const CULORI_BADGE = ["bg-red-600","bg-yellow-500","bg-[#ddf93c]","bg-emerald-600","bg-[#ddf93c]","bg-[#ddf93c]","bg-[#ddf93c]"];
@@ -124,7 +124,6 @@ export default function AntivirusPage() {
                 <p className="text-xs text-[#c9ced5] mb-3">{c.highlight}</p>
                 <div className="flex items-center justify-between">
                   <span className="text-[#ddf93c] font-black text-sm">{c.pret}</span>
-                  <span className="bg-emerald-500/15 border border-emerald-500/25 text-emerald-400 text-xs font-bold px-2 py-0.5 rounded-full">{c.nota}</span>
                 </div>
               </a>
             ))}
@@ -172,7 +171,7 @@ export default function AntivirusPage() {
         <NisaProduse
           merchantSlugs={["bitdefender.com","norton.com","eset.com","altex.ro","pcgarage.ro"]}
           catSlug="electronice"
-          titlu="Licente antivirus cu reducere"
+          titlu="Licențe antivirus de la parteneri"
           culoareAccent="red"
           limit={8}
         />

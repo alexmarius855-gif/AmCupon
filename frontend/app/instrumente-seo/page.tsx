@@ -24,7 +24,6 @@ const TOOLS_SEO = [
     slug: "semrush.com",
     name: "Semrush",
     emoji: "📊",
-    nota: "9.8/10",
     pret: "de la 99$/luna",
     highlight: "All-in-one SEO suite",
     culoare: "bg-[#ddf93c]",
@@ -35,7 +34,6 @@ const TOOLS_SEO = [
     slug: "ahrefs.com",
     name: "Ahrefs",
     emoji: "🔗",
-    nota: "9.6/10",
     pret: "de la 99$/luna",
     highlight: "Best backlink database",
     culoare: "bg-[#ddf93c]",
@@ -46,7 +44,6 @@ const TOOLS_SEO = [
     slug: "moz.com",
     name: "Moz Pro",
     emoji: "🎯",
-    nota: "9.2/10",
     pret: "de la 99$/luna",
     highlight: "Domain Authority inventor",
     culoare: "bg-[#ddf93c]",
@@ -153,7 +150,6 @@ export default function InstrumenteSeoPage() {
                     <div className="flex-1">
                       <div className="flex flex-wrap items-center gap-3 mb-2">
                         <h3 className="text-xl font-black text-[#ffffff]">{t.name}</h3>
-                        <span className="bg-emerald-500/15 border border-emerald-500/25 text-emerald-400 text-xs font-bold px-2 py-0.5 rounded-full">{t.nota}</span>
                         <span className="text-[#c9ced5] text-xs">{t.highlight}</span>
                       </div>
                       <p className="text-[#c9ced5] text-sm leading-relaxed mb-4">{t.desc}</p>

@@ -107,7 +107,7 @@ export default function FashionPage() {
         <NisaProduse
           merchantSlugs={["answear.ro","hm.com","reserved.com","about-you.ro","lc-waikiki.ro"]}
           catSlug="fashion"
-          titlu="Haine & accesorii populare cu reducere"
+          titlu="Haine și accesorii de la parteneri"
           culoareAccent="indigo"
           limit={12}
         />

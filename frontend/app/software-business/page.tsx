@@ -21,7 +21,7 @@ const TOOLS_INTL = [
   {
     categ: "SEO & Marketing",
     items: [
-      { name: "Semrush", desc: "Unealta SEO #1 la nivel mondial. Cercetare cuvinte, audit site, competitor analysis.", pret: "de la 99$/luna", comision: "200$ per vanzare", badge: "Recomandat #1", url: "https://semrush.com", program: "semrush.com/lp/inter-affiliate" },
+      { name: "Semrush", desc: "Unealtă SEO completă: cercetare de cuvinte, audit de site, analiza concurenței.", pret: "vezi prețul pe site", comision: "200$ per vanzare", badge: "SEO all-in-one", url: "https://semrush.com", program: "semrush.com/lp/inter-affiliate" },
       { name: "Canva Pro", desc: "Design profesional pentru social media, prezentari, materiale de marketing.", pret: "~13€/luna", comision: "36$ per conversie", badge: "Cel mai usor", url: "https://canva.com", program: "canva.com/affiliates" },
       { name: "GetResponse", desc: "Platforma completa de email marketing: newslettere, automatizari, landing pages si webinarii.", pret: "de la 15€/luna", comision: "program afiliat Awin", badge: "Email marketing", url: "https://www.awin1.com/cread.php?awinmid=3142111&awinaffid=101829567&clickref=", program: "getresponse.com/partners" },
     ],

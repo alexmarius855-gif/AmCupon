@@ -158,7 +158,7 @@ export default function IdeiCadouriPage() {
         <NisaProduse
           merchantSlugs={["noriel.ro","notino.ro","elefant.ro","floria.ro"]}
           catSlug="bijuterii"
-          titlu="Idei cadouri populare cu reducere"
+          titlu="Idei de cadouri de la parteneri"
           culoareAccent="indigo"
           limit={12}
         />

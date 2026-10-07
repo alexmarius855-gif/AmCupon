@@ -145,7 +145,7 @@ export default function SupermarketPage() {
         <NisaProduse
           merchantSlugs={["carrefour.ro","bringo.ro","freshful.ro","auchan.ro"]}
           catSlug="alimente"
-          titlu="Produse alimentare populare cu reducere"
+          titlu="Produse alimentare de la parteneri"
           culoareAccent="blue"
           limit={12}
         />

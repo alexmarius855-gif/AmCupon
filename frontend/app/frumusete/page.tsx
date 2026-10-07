@@ -17,9 +17,9 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Reduceri Beauty & Cosmetice 2026 — Coduri Notino, Douglas",
+  title: "Reduceri Beauty & Cosmetice 2026 — Coduri Notino",
   description: `Coduri de reducere beauty și cosmetice 2026 ${laParteneri(NISA_CATEGORII.frumusete)}. Parfumuri, skincare, machiaj la prețuri reduse. Actualizate zilnic.`,
-  keywords: ["reduceri beauty", "cod reducere notino", "reduceri douglas", "sephora reducere", "parfumuri ieftine", "cosmetice reducere romania", "skincare reducere", "machiaj ieftin"],
+  keywords: ["reduceri beauty", "cod reducere notino", "parfumuri ieftine", "cosmetice reducere romania", "skincare reducere", "machiaj ieftin"],
   alternates: { canonical: "https://amcupon.ro/frumusete" },
   openGraph: { title: "Reduceri Beauty & Cosmetice 2026 | AmCupon.ro", url: "https://amcupon.ro/frumusete", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
@@ -68,7 +68,7 @@ export default function FrumusetePage() {
             <div className="text-5xl mb-4">💄</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">Beauty & Cosmetice cu Reducere {an}</h1>
             <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              Parfumuri originale, skincare premium, machiaj — coduri de reducere actualizate zilnic la Notino, Douglas, Sephora
+              Parfumuri, skincare și machiaj — coduri de reducere actualizate zilnic {laParteneri(NISA_CATEGORII.frumusete)}
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {SUBCATEGORII.map(s => (
@@ -114,7 +114,7 @@ export default function FrumusetePage() {
         <NisaProduse
           merchantSlugs={["notino.ro","douglas.ro","sephora.ro","makeup.ro","beautik.ro"]}
           catSlug="beauty"
-          titlu="Produse beauty populare cu reducere"
+          titlu="Produse beauty de la parteneri"
           culoareAccent="indigo"
           limit={12}
         />
@@ -126,14 +126,14 @@ export default function FrumusetePage() {
             <div className="space-y-4 text-sm text-[#c9ced5] leading-relaxed">
               <div>
                 <h3 className="font-bold text-[#ffffff] mb-1">Parfumuri originale mai ieftin</h3>
-                <p>Notino este cel mai bun loc pentru parfumuri originale din România — prețuri cu 30-50% sub parfumeria fizică, autenticitate garantată. Douglas are exclusivități și pachete cadou premium. Caută coduri de reducere Notino pe AmCupon.ro înainte de orice comandă.</p>
+                <p>Pe Notino găsești parfumuri de la branduri cunoscute; compară prețul cu cel din parfumeriile fizice înainte să comanzi. Caută coduri de reducere Notino pe AmCupon.ro înainte de orice comandă.</p>
               </div>
               <div>
                 <h3 className="font-bold text-[#ffffff] mb-1">Skincare la prețuri reduse</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
-                  <li><strong>Vichy & La Roche-Posay</strong> — mai ieftin în farmacii online (Dr. Max, Sensiblu) decât în parfumerii</li>
+                  <li><strong>Vichy & La Roche-Posay</strong> — le găsești și în farmaciile online (de exemplu Dr. Max); compară prețul cu cel din parfumerii</li>
                   <li><strong>The Ordinary</strong> — raport calitate-preț excepțional, activi puri la prețuri mici</li>
-                  <li><strong>Notino Flash Sales</strong> — reduceri temporare la branduri premium, abonează-te la newsletter</li>
+                  <li><strong>Notino</strong> — promoțiile temporare apar pe pagina Notino de pe AmCupon.ro, actualizată de mai multe ori pe zi</li>
                 </ul>
               </div>
               <div>

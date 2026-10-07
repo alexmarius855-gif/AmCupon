@@ -119,7 +119,7 @@ export default function FloriPage() {
         <NisaProduse
           merchantSlugs={TOP_FLORI}
           catSlug="flori"
-          titlu="Buchete & aranjamente cu reducere"
+          titlu="Buchete și aranjamente de la parteneri"
           culoareAccent="rose"
           limit={12}
         />

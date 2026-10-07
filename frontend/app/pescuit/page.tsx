@@ -140,7 +140,7 @@ export default function PescuitPage() {
         <NisaProduse
           merchantSlugs={allSlugs}
           catSlug="sports-outdoors"
-          titlu="Echipamente pescuit la reducere"
+          titlu="Echipamente de pescuit de la parteneri"
           culoareAccent="emerald"
           limit={12}
         />

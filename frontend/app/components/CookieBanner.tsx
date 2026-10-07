@@ -38,9 +38,9 @@ export default function CookieBanner() {
         <div className="flex-1 text-sm">
           <p className="font-bold text-white mb-0.5">Folosim cookie-uri</p>
           <p className="text-gray-400 leading-relaxed">
-            Folosim cookie-uri pentru analiza traficului (Google Analytics), publicitate (Google AdSense) si tracking afiliat (2Performant). Date anonime, fara vanzare catre terti.{" "}
+            Folosim cookie-uri pentru analiza traficului (Google Analytics), publicitate (Google AdSense) și atribuirea comenzilor la rețelele de afiliere (2Performant, Impact, Awin). Nu vindem datele tale.{" "}
             <Link href="/confidentialitate" className="text-[#ddf93c] hover:underline">
-              Politica de confidentialitate
+              Politica de confidențialitate
             </Link>
           </p>
         </div>

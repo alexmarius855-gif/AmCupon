@@ -295,7 +295,7 @@ export default async function PaginaCategorie({
         <NisaProduse
           merchantSlugs={CATEG_MERCHANTS[slug]}
           catSlug={CATEG_CAT_SLUG[slug] || ""}
-          titlu={`Produse populare — ${numeCateg} cu reducere`}
+          titlu={`Produse din ${numeCateg}, de la parteneri`}
           culoareAccent={CATEG_CULORI[slug] || "indigo"}
           limit={12}
         />

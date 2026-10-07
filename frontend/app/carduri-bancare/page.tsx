@@ -37,11 +37,10 @@ const CONTURI = [
     rank: 1,
     name: "Revolut",
     tagline: "Cel mai popular cont digital din Romania — bani, crypto si actiuni intr-o app",
-    badge: "Recomandat #1",
+    badge: "Cont multi-valută",
     badgeColor: "bg-[#ddf93c]",
     emoji: "💜",
     cost: "Gratuit (plan Standard)",
-    rating: "9.7",
     url: LINK_REVOLUT,
     program_url: "https://www.revolut.com/referral-program",
     avantaje: [
@@ -60,11 +59,10 @@ const CONTURI = [
     rank: 2,
     name: "Wise",
     tagline: "Cele mai ieftine transferuri internationale — taxe reale, fara costuri ascunse",
-    badge: "Transferuri #1",
+    badge: "Transferuri internaționale",
     badgeColor: "bg-emerald-600",
     emoji: "🌍",
     cost: "Gratuit cont, comision mic per transfer",
-    rating: "9.5",
     url: LINK_WISE,
     program_url: "https://wise.com/help/articles/2932160",
     avantaje: [
@@ -86,7 +84,6 @@ const CONTURI = [
     badgeColor: "bg-[#ddf93c]",
     emoji: "🇪🇺",
     cost: "Gratuit (plan Standard)",
-    rating: "8.9",
     url: LINK_N26,
     program_url: "https://n26.com/en-eu/referral",
     avantaje: [
@@ -103,11 +100,10 @@ const CONTURI = [
     rank: 4,
     name: "Salt Bank",
     tagline: "Banca 100% digitala romaneasca — dobanda la cash, fara birou fizic",
-    badge: "100% Romanesc",
+    badge: "Bancă românească",
     badgeColor: "bg-[#ddf93c]",
     emoji: "🧂",
     cost: "Gratuit",
-    rating: "8.7",
     url: LINK_SALTBANK,
     program_url: "https://www.saltbank.ro",
     avantaje: [
@@ -197,10 +193,6 @@ export default function CarduriBancarePage() {
                         <h2 className="text-2xl font-black text-[#ffffff] mt-1">{c.name}</h2>
                         <p className="text-slate-500 text-sm mt-0.5">{c.tagline}</p>
                       </div>
-                    </div>
-                    <div className="text-right shrink-0 hidden sm:block">
-                      <div className="text-3xl font-black text-[#ffffff]">{c.rating}</div>
-                      <div className="text-slate-500 text-xs">/ 10</div>
                     </div>
                   </div>
                 </div>

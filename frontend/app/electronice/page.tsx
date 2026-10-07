@@ -107,7 +107,7 @@ export default function ElectronicePage() {
         <NisaProduse
           merchantSlugs={["altex.ro","pcgarage.ro","flanco.ro","cel.ro","evomag.ro",]}
           catSlug="electronice"
-          titlu="Produse populare — Electronice cu reducere"
+          titlu="Electronice de la magazinele partenere"
           culoareAccent="blue"
           limit={12}
         />

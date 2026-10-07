@@ -194,8 +194,8 @@ export default function RootLayout({
 
         {/* Affiliate disclosure global (obligatoriu legal) */}
         <p className="sr-only">
-          AmCupon.ro contine link-uri de afiliere. Primim un comision de la magazine
-          atunci cand efectuezi o achizitie prin link-urile noastre, fara costuri suplimentare pentru tine.
+          AmCupon.ro conține linkuri de afiliere. Primim un comision de la magazine
+          atunci când cumperi prin linkurile noastre, fără costuri suplimentare pentru tine.
         </p>
       </body>
     </html>

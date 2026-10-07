@@ -131,7 +131,7 @@ export default function BijuteriiPage() {
         <NisaProduse
           merchantSlugs={["fluturasi.ro","chicbijoux.ro","novvu.ro","bijubox.ro","androvelli.ro","lu.ro"]}
           catSlug="bijuterii"
-          titlu="Bijuterii populare cu reducere"
+          titlu="Bijuterii de la magazinele partenere"
           culoareAccent="indigo"
           limit={12}
         />

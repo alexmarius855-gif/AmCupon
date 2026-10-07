@@ -32,19 +32,18 @@ const ESIM_TOP = [
   {
     rank: 1,
     name: "Airalo",
-    tagline: "Cel mai popular eSIM din lume — 190+ tari, app excelenta",
-    badge: "Recomandat #1",
+    tagline: "eSIM pentru 190+ țări, cu aplicație pentru iOS și Android",
+    badge: "Cea mai mare acoperire",
     badgeColor: "bg-[#ddf93c]",
     pret_min: "pret pe destinatie",
     pret_nota: "1GB / 7 zile",
-    rating: "9.6",
     url: LINK_AIRALO,
     comision: "15%",
     acoperire: "190+ tari",
     activare: "Instant (app)",
     valabilitate: "7-90 zile",
     pros: [
-      "Cel mai mare catalog de eSIM-uri din lume",
+      "Catalog mare: 190+ țări și pachete regionale",
       "App intuitiva iOS/Android",
       "Preturi competitive per GB",
       "Suport 24/7 in app",
@@ -57,12 +56,11 @@ const ESIM_TOP = [
   {
     rank: 2,
     name: "Saily",
-    tagline: "De la echipa NordVPN — securitate si simplitate garantate",
-    badge: "Cel mai sigur",
+    tagline: "De la echipa NordVPN — aplicație simplă, activare instant",
+    badge: "De la echipa NordVPN",
     badgeColor: "bg-[#ddf93c]",
     pret_min: "pret pe destinatie",
     pret_nota: "1GB / 7 zile",
-    rating: "9.2",
     url: LINK_SAILY,
     comision: "10%",
     acoperire: "150+ tari",
@@ -81,12 +79,11 @@ const ESIM_TOP = [
   {
     rank: 3,
     name: "AmigoSIM",
-    tagline: "Date nelimitate in unele tari — raport calitate/pret excelent",
-    badge: "Cel mai accesibil",
+    tagline: "Date nelimitate în unele țări",
+    badge: "Date nelimitate",
     badgeColor: "bg-[#ddf93c]",
     pret_min: "pret pe destinatie",
     pret_nota: "date nelimitate",
-    rating: "8.9",
     url: LINK_AMIGO,
     comision: "20%",
     acoperire: "130+ tari",
@@ -256,7 +253,6 @@ export default function EsimPage() {
                   <div className="flex-1">
                     <div className="flex flex-wrap items-center gap-3 mb-1">
                       <h3 className="text-xl font-bold text-[#ffffff]">{esim.name}</h3>
-                      <span className="text-yellow-400 font-semibold">{esim.rating}/10</span>
                     </div>
                     <p className="text-[#c9ced5] text-sm mb-4">{esim.tagline}</p>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
@@ -363,10 +359,9 @@ export default function EsimPage() {
               <thead>
                 <tr className="bg-[#1f2329] text-[#c9ced5] text-left">
                   <th className="px-4 py-3 rounded-tl-lg font-medium">eSIM</th>
-                  <th className="px-4 py-3 font-medium">Tari</th>
-                  <th className="px-4 py-3 font-medium">Pret de la</th>
-                  <th className="px-4 py-3 font-medium">Activare</th>
-                  <th className="px-4 py-3 rounded-tr-lg font-medium">Rating</th>
+                  <th className="px-4 py-3 font-medium">Țări</th>
+                  <th className="px-4 py-3 font-medium">Preț de la</th>
+                  <th className="px-4 py-3 rounded-tr-lg font-medium">Activare</th>
                 </tr>
               </thead>
               <tbody>
@@ -380,7 +375,6 @@ export default function EsimPage() {
                     <td className="px-4 py-3 text-[#c9ced5]">{e.acoperire}</td>
                     <td className="px-4 py-3 text-[#c3dd2c]">{e.pret_min}</td>
                     <td className="px-4 py-3 text-[#c9ced5]">{e.activare}</td>
-                    <td className="px-4 py-3 text-yellow-400 font-semibold">{e.rating}</td>
                   </tr>
                 ))}
               </tbody>

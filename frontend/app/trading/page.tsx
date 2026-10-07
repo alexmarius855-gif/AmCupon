@@ -39,13 +39,12 @@ const PLATFORME = [
     rank: 1,
     name: "XTB",
     tagline: "Actiuni & ETF-uri la 0% comision — brokerul preferat al romanilor",
-    badge: "Recomandat #1",
+    badge: "Acțiuni și ETF-uri",
     badgeColor: "bg-[#ddf93c]",
     emoji: "📈",
     tip: "Actiuni, ETF-uri, Forex, Crypto",
     pret_min: "0 RON minim",
     comision: "0% actiuni/ETF sub 100.000€/luna",
-    rating: "9.8",
     url: LINK_XTB,
     program_url: "https://www.xtb.com/ro/partener",
     reglementat: "KNF (Polonia) + FCA (UK)",
@@ -67,13 +66,12 @@ const PLATFORME = [
     rank: 2,
     name: "Binance",
     tagline: "Cel mai mare exchange crypto din lume — volum nr. 1 global",
-    badge: "Crypto #1",
+    badge: "Crypto",
     badgeColor: "bg-yellow-500",
     emoji: "₿",
     tip: "Crypto, DeFi, Futures, Staking",
     pret_min: "~10 USD minim",
     comision: "0.1% spot (reducere cu BNB)",
-    rating: "9.5",
     url: LINK_BINANCE,
     program_url: "https://www.binance.com/en/activity/referral",
     reglementat: "Reglementat multiplu (UE, Asia)",
@@ -101,7 +99,6 @@ const PLATFORME = [
     tip: "Actiuni, ETF-uri, Crypto, Copy Trading",
     pret_min: "50 USD minim",
     comision: "0% actiuni (spread inclus)",
-    rating: "9.1",
     url: LINK_ETORO,
     program_url: "https://partners.etoro.com",
     reglementat: "CySEC (UE) + FCA (UK)",
@@ -121,13 +118,12 @@ const PLATFORME = [
     rank: 4,
     name: "Trading212",
     tagline: "Actiuni fractionate si ISA — ideal pentru incepatori europeni",
-    badge: "Fractionale",
+    badge: "Acțiuni fracționate",
     badgeColor: "bg-[#ddf93c]",
     emoji: "📊",
     tip: "Actiuni, ETF-uri, CFD-uri",
     pret_min: "1 EUR minim",
     comision: "0% actiuni si ETF-uri",
-    rating: "8.9",
     url: LINK_TRADING212,
     program_url: "https://www.trading212.com/invite",
     reglementat: "FCA (UK) + BaFin (DE)",
@@ -243,10 +239,6 @@ export default function TradingPage() {
                         <h2 className="text-2xl font-black text-[#ffffff]">{p.name}</h2>
                         <p className="text-slate-500 text-sm mt-0.5">{p.tagline}</p>
                       </div>
-                    </div>
-                    <div className="text-right shrink-0 hidden sm:block">
-                      <div className="text-3xl font-black text-[#ffffff]">{p.rating}</div>
-                      <div className="text-slate-500 text-xs">/ 10</div>
                     </div>
                   </div>
                 </div>

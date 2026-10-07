@@ -35,12 +35,11 @@ const VPN_LIST = [
     rank: 1,
     name: "NordVPN",
     tagline: "Cel mai complet VPN — lider mondial cu 6000+ servere",
-    badge: "Recomandat #1",
+    badge: "VPN + blocare reclame",
     badgeColor: "bg-[#ddf93c]",
     emoji: "🏆",
     pret_luna: "2.99€",
     pret_nota: "plan 2 ani",
-    rating: "9.8",
     url: LINK_NORDVPN,
     pros: [
       "6000+ servere in 111 tari",
@@ -58,12 +57,11 @@ const VPN_LIST = [
     rank: 2,
     name: "Surfshark",
     tagline: "Dispozitive nelimitate — cel mai bun raport calitate/pret",
-    badge: "Cel mai accesibil",
+    badge: "Dispozitive nelimitate",
     badgeColor: "bg-[#ddf93c]",
     emoji: "💰",
     pret_luna: "2.39€",
     pret_nota: "plan 2 ani",
-    rating: "9.4",
     url: LINK_SURFSHARK,
     pros: [
       "Dispozitive NELIMITATE",
@@ -80,12 +78,11 @@ const VPN_LIST = [
     rank: 3,
     name: "ExpressVPN",
     tagline: "Cel mai rapid VPN — pentru streaming 4K fara buffering",
-    badge: "Cel mai rapid",
+    badge: "Servere în peste 100 de țări",
     badgeColor: "bg-red-600",
     emoji: "⚡",
     pret_luna: "6.67€",
     pret_nota: "plan 1 an",
-    rating: "9.2",
     url: LINK_EXPRESSVPN,
     pros: [
       "Lightway — protocol propriu ultra-rapid",
@@ -179,11 +176,6 @@ export default function VpnPage() {
         <div className="space-y-6">
           {VPN_LIST.map((vpn) => (
             <div key={vpn.name} className={`bg-[#14181c] border rounded-xl p-6 transition-all ${vpn.rank === 1 ? "border-[#ddf93c]/40 shadow-lg shadow-[#ddf93c]/10" : "border-[#1f2329] hover:border-[#2a2f36]"}`}>
-              {vpn.rank === 1 && (
-                <div className="text-xs text-[#c3dd2c] font-bold mb-3 flex items-center gap-2">
-                  <span>⭐ EDITORUL NOSTRU RECOMANDA</span>
-                </div>
-              )}
               <div className="flex flex-col md:flex-row md:items-start gap-5">
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-2">
@@ -222,11 +214,6 @@ export default function VpnPage() {
                   <div className="text-center">
                     <div className="text-3xl font-black text-[#ffffff]">{vpn.pret_luna}</div>
                     <div className="text-xs text-[#9399a0]">/luna ({vpn.pret_nota})</div>
-                    <div className="flex items-center justify-center gap-1 mt-1">
-                      <span className="text-yellow-400 text-sm">★</span>
-                      <span className="text-[#ffffff] font-bold text-sm">{vpn.rating}</span>
-                      <span className="text-[#9399a0] text-xs">/10</span>
-                    </div>
                   </div>
                   <a href={linkPlatit(vpn.url)} target="_blank" rel="sponsored noopener noreferrer"
                     className={`w-full text-center py-3 px-4 rounded-xl font-black text-sm text-[#0c1000] transition-all hover:-translate-y-0.5 shadow-lg ${vpn.rank === 1 ? "bg-[#ddf93c] hover:bg-[#ddf93c] shadow-[#ddf93c]/20" : "bg-[#2a2f36] hover:bg-[#1f2329]"}`}>

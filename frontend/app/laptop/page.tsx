@@ -133,7 +133,7 @@ export default function LaptopPage() {
         <NisaProduse
           merchantSlugs={["altex.ro","pcgarage.ro","flanco.ro","evomag.ro","cel.ro"]}
           catSlug="electronice"
-          titlu="Laptopuri populare cu reducere"
+          titlu="Laptopuri de la magazinele partenere"
           culoareAccent="blue"
           limit={12}
         />

@@ -109,7 +109,7 @@ export default function SportPage() {
         <NisaProduse
           merchantSlugs={["decathlon.ro","sportisimo.ro","sport-vision.ro","intersport.ro","hervis.ro","gigasport.ro"]}
           catSlug="sport"
-          titlu="Echipament sport popular cu reducere"
+          titlu="Echipament sportiv de la parteneri"
           culoareAccent="indigo"
           limit={12}
         />

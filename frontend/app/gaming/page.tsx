@@ -130,7 +130,7 @@ export default function GamingPage() {
         <NisaProduse
           merchantSlugs={["pcgarage.ro","altex.ro","evomag.ro","flanco.ro","cel.ro"]}
           catSlug="electronice"
-          titlu="Produse gaming populare cu reducere"
+          titlu="Produse gaming de la parteneri"
           culoareAccent="indigo"
           limit={12}
         />

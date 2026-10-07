@@ -340,6 +340,11 @@ REGULI_CORP = [
      "pagina spune ca am verificat coduri/oferte — nu le testam, doar le actualizam automat"),
     ("promisiune falsa despre coduri", RE_PROMISIUNE_COD,
      "validitate garantata, verificare in 24h, exclusivitate sau o notita interna vizibila — nimic adevarat"),
+    # 07.10.2026: „9.8/10" scris de mana pe 8 pagini de recomandari (VPN, hosting, antivirus, trading,
+    # carduri, eSIM...), fara nicio metodologie, plus „Recomandat #1" / „Editorul nostru recomanda" —
+    # n-avem testare editoriala. Scorul calculat din date („Deal Score 85/100") nu e prins.
+    ("nota inventata", re.compile(r"\b\d{1,2}[.,]\d\s?/\s?10\b|Recomandat #1|EDITORUL NOSTRU", re.I),
+     "nota sau clasament fara metodologie — n-am testat produsele"),
     ("numar de magazine scris de mana", RE_NUMAR_MAGAZINE,
      "cifra nu vine din date (lib/cifreSite.ts) si ramane falsa cand se schimba numarul de magazine"),
     ("link Profitshare in pagina", re.compile(r"profitshare\.ro/l/"),

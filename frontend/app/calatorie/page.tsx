@@ -129,7 +129,7 @@ export default function CalatoriePage() {
         <NisaProduse
           merchantSlugs={["booking.com","airbnb.com","trip.com","samsonite.com","delsey.com"]}
           catSlug="calatorie"
-          titlu="Accesorii travel & bagaje cu reducere"
+          titlu="Accesorii travel și bagaje de la parteneri"
           culoareAccent="sky"
           limit={12}
         />

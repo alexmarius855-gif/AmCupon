@@ -133,7 +133,7 @@ export default function TelefoaneePage() {
         <NisaProduse
           merchantSlugs={["altex.ro","flanco.ro","evomag.ro","cel.ro","orange.ro","quickmobile.ro"]}
           catSlug="electronice"
-          titlu="Telefoane populare cu reducere"
+          titlu="Telefoane de la magazinele partenere"
           culoareAccent="teal"
           limit={12}
         />
