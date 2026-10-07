@@ -139,7 +139,7 @@ export default function PescuitPage() {
 
         <NisaProduse
           merchantSlugs={allSlugs}
-          catSlug="sports-outdoors"
+          potrivire={/^(lanseta|mulineta|undita|naluca|naluci|vobler|fir (textil|monofilament)|momeala|nada|feeder|minciog|juvelnic|avertizor|swinger|sezlong de pescuit|scaun de pescuit|cort de pescuit|cutie (de )?pescuit)\b/}
           titlu="Echipamente de pescuit de la parteneri"
           culoareAccent="emerald"
           limit={12}

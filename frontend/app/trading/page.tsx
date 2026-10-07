@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Cel mai bun Broker Romania 2026 — Binance, XTB",
-  description: "Comparam cele mai bune platforme de trading si investitii pentru romani in 2026. XTB actiuni 0% comision, Binance crypto, eToro copy trading. Ghid complet cu bonusuri de inregistrare.",
+  description: "Comparăm platformele de investiții folosite de români în 2026 — XTB (acțiuni și ETF-uri), Binance (crypto), eToro (copy trading), Trading212 — pe condițiile publicate de fiecare.",
   keywords: [
     "cel mai bun broker romania",
     "xtb parere romania",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://amcupon.ro/trading" },
   openGraph: {
     title: "Cel mai bun Broker & Platforma Trading Romania 2026 | AmCupon.ro",
-    description: "XTB, Binance, eToro — comparatie completa pentru investitori romani. Bonusuri, comisioane, siguranta.",
+    description: "XTB, Binance, eToro, Trading212 — comparație pe condițiile publicate: comisioane, reglementare, tipuri de active.",
     url: "https://amcupon.ro/trading",
     siteName: "AmCupon.ro",
     locale: "ro_RO",
@@ -26,130 +26,113 @@ export const metadata: Metadata = {
   },
 };
 
-// ── LINKURI AFILIATE ── inlocuieste cu codurile tale ───────────────────────
-const LINK_XTB       = "https://www.xtb.com/ro";           // IB link XTB
-const LINK_BINANCE   = "https://accounts.binance.com/register?ref=205306153"; // ref code Binance real (20% comision Spot)
-const LINK_ETORO     = "https://www.etoro.com/ro/?dl=30001846";         // afiliat eToro
-const LINK_TRADING212 = "https://www.trading212.com";   // referral Trading212
-const LINK_REVOLUT   = "https://www.revolut.com";         // referral Revolut
-// ───────────────────────────────────────────────────────────────────────────
+// Adresele platformelor (Binance = link de referral, eToro = link cu id de partener).
+const LINK_XTB       = "https://www.xtb.com/ro";
+const LINK_BINANCE   = "https://accounts.binance.com/register?ref=205306153";
+const LINK_ETORO     = "https://www.etoro.com/ro/?dl=30001846";
+const LINK_TRADING212 = "https://www.trading212.com";
+const LINK_REVOLUT   = "https://www.revolut.com";
 
+// 07.10.2026: doar conditii publicate si stabile; fara randamente, dobanzi, leverage, numar de
+// utilizatori sau bonusuri (se schimba, iar unele nu erau adevarate pentru linkurile noastre).
+// culoare = antet inchis cu o nuanta, ca textul alb sa se citeasca; badgeColor include culoarea textului.
 const PLATFORME = [
   {
     rank: 1,
     name: "XTB",
-    tagline: "Actiuni & ETF-uri la 0% comision — brokerul preferat al romanilor",
+    tagline: "Acțiuni și ETF-uri fără comision până la 100.000 € rulaj pe lună, cont în RON",
     badge: "Acțiuni și ETF-uri",
-    badgeColor: "bg-[#ddf93c]",
+    badgeColor: "bg-[#ddf93c] text-[#0c1000]",
     emoji: "📈",
-    tip: "Actiuni, ETF-uri, Forex, Crypto",
-    pret_min: "0 RON minim",
-    comision: "0% actiuni/ETF sub 100.000€/luna",
+    tip: "Acțiuni, ETF-uri, CFD-uri",
+    pret_min: "Fără depozit minim",
+    comision: "0% la acțiuni și ETF-uri până la 100.000 €/lună, plus conversia valutară",
     url: LINK_XTB,
-    program_url: "https://www.xtb.com/ro/partener",
-    reglementat: "KNF (Polonia) + FCA (UK)",
+    reglementat: "KNF (Polonia), sucursală în România",
     avantaje: [
-      "Actiuni si ETF-uri fara comision (sub 100k€/luna)",
-      "Platforma xStation 5 — cea mai buna din Romania",
-      "Cont demo gratuit cu 100.000$ virtual",
-      "Suport in romana 24/5",
-      "Depozit minim 0 RON — incepi cu orice suma",
-      "ETF-uri VWCE, CSPX, EQQQ disponibile",
-      "Reglementat BNR + CNVM",
+      "Acțiuni și ETF-uri fără comision până la 100.000 € rulaj lunar",
+      "Platforma xStation, pe web și pe telefon",
+      "Cont demo gratuit",
+      "Suport în limba română",
+      "Fără depozit minim",
+      "ETF-uri precum VWCE și CSPX",
     ],
-    dezavantaje: ["Spread criptomonede mai mare decat pe exchange-uri", "Comision actiuni dupa 100.000€/luna"],
-    ideal: "Investitori pe termen lung, DCA, ETF-uri indice",
-    culoare: "from-[#c3dd2c] to-[#06080b]",
-    culoare_accent: "indigo",
+    dezavantaje: ["Comision la acțiuni peste 100.000 € rulaj lunar", "Conversia valutară se plătește când cumperi în altă monedă decât a contului", "Criptomonede doar prin CFD-uri"],
+    ideal: "Investiții pe termen lung în ETF-uri și acțiuni",
+    culoare: "from-[#c3dd2c]/25 to-[#14181c]",
   },
   {
     rank: 2,
     name: "Binance",
-    tagline: "Cel mai mare exchange crypto din lume — volum nr. 1 global",
+    tagline: "Exchange de criptomonede: spot, P2P și staking",
     badge: "Crypto",
-    badgeColor: "bg-yellow-500",
+    badgeColor: "bg-yellow-500 text-[#0c1000]",
     emoji: "₿",
-    tip: "Crypto, DeFi, Futures, Staking",
-    pret_min: "~10 USD minim",
-    comision: "0.1% spot (reducere cu BNB)",
+    tip: "Criptomonede (spot, P2P, staking)",
+    pret_min: "Depinde de metoda de plată",
+    comision: "0,1% la spot (nivelul standard)",
     url: LINK_BINANCE,
-    program_url: "https://www.binance.com/en/activity/referral",
-    reglementat: "Reglementat multiplu (UE, Asia)",
+    reglementat: "Statutul diferă de la o țară la alta — verifică pe site",
     avantaje: [
-      "600+ criptomonede listate",
-      "Lichiditate maxima — spread mic",
-      "Staking cu randament 4-15% APY",
-      "Card Binance Visa — cashback in crypto",
-      "Futures cu leverage pana la 125x",
-      "P2P trading RON fara comision",
-      "Bonus inregistrare prin linkul nostru",
+      "Sute de criptomonede listate",
+      "Piață P2P cu plată în lei",
+      "Staking (randamentele variază)",
     ],
-    dezavantaje: ["Interfata complexa pentru incepatori", "Nu e disponibil app pe unele tari UE"],
-    ideal: "Traderi activi crypto, staking pe termen lung",
-    culoare: "from-yellow-600 to-[#14181c]",
-    culoare_accent: "yellow",
+    dezavantaje: ["Interfață complexă pentru începători", "Criptomonedele sunt foarte volatile: poți pierde tot ce investești"],
+    ideal: "Cumpărare de crypto, pentru cine înțelege riscul",
+    culoare: "from-yellow-600/25 to-[#14181c]",
   },
   {
     rank: 3,
     name: "eToro",
-    tagline: "Copy trading social — invata de la cei mai buni traderi",
+    tagline: "Platformă socială: vezi și copiezi portofoliile altor investitori",
     badge: "Social Trading",
-    badgeColor: "bg-green-600",
+    badgeColor: "bg-green-600 text-[#ffffff]",
     emoji: "🤝",
-    tip: "Actiuni, ETF-uri, Crypto, Copy Trading",
-    pret_min: "50 USD minim",
-    comision: "0% actiuni (spread inclus)",
+    tip: "Acțiuni, ETF-uri, crypto, copy trading",
+    pret_min: "Depinde de țară — vezi pe site",
+    comision: "Vezi grila de taxe pe site",
     url: LINK_ETORO,
-    program_url: "https://partners.etoro.com",
-    reglementat: "CySEC (UE) + FCA (UK)",
+    reglementat: "CySEC (Cipru), pentru clienții din UE",
     avantaje: [
-      "CopyTrader — copiezi automat portofoliul unui expert",
-      "30M utilizatori activi — cea mai mare comunitate",
-      "Actiuni fractionare de la 10$",
-      "Smart Portfolios diversificate tematic",
-      "Cont demo 100.000$ virtual",
+      "CopyTrader — copiezi automat tranzacțiile altui investitor",
+      "Comunitate mare de investitori",
+      "Acțiuni fracționate",
+      "Portofolii tematice (Smart Portfolios)",
+      "Cont demo",
     ],
-    dezavantaje: ["Spread mai mare la crypto vs Binance", "Comision retragere $5", "USD ca moneda de baza"],
-    ideal: "Incepatori, copy trading, portofolii diversificate",
-    culoare: "from-green-700 to-[#14181c]",
-    culoare_accent: "green",
+    dezavantaje: ["Taxe de conversie valutară, de retragere și de inactivitate — vezi grila", "Copy trading-ul copiază și pierderile"],
+    ideal: "Începători care vor portofolii diversificate",
+    culoare: "from-green-700/40 to-[#14181c]",
   },
   {
     rank: 4,
     name: "Trading212",
-    tagline: "Actiuni fractionate si ISA — ideal pentru incepatori europeni",
+    tagline: "Acțiuni fracționate și portofolii automate (Pie)",
     badge: "Acțiuni fracționate",
-    badgeColor: "bg-[#ddf93c]",
+    badgeColor: "bg-[#ddf93c] text-[#0c1000]",
     emoji: "📊",
-    tip: "Actiuni, ETF-uri, CFD-uri",
-    pret_min: "1 EUR minim",
-    comision: "0% actiuni si ETF-uri",
+    tip: "Acțiuni, ETF-uri, CFD-uri",
+    pret_min: "Vezi pe site",
+    comision: "0% la acțiuni și ETF-uri, plus conversia valutară",
     url: LINK_TRADING212,
-    program_url: "https://www.trading212.com/invite",
-    reglementat: "FCA (UK) + BaFin (DE)",
+    reglementat: "Reglementată în UE — entitatea depinde de tipul contului",
     avantaje: [
-      "Actiuni fractionate de la 1 EUR",
-      "0% comision actiuni si ETF-uri",
-      "Pie — portofoliu auto-rebalansare",
-      "Dobanda la cash (4%+ EUR)",
-      "Actiune gratuita la inregistrare prin link",
+      "Acțiuni fracționate",
+      "0% comision la acțiuni și ETF-uri",
+      "Pie — portofolii care se reechilibrează automat",
+      "Dobândă la numerarul neinvestit (rata variază)",
     ],
-    dezavantaje: ["Fara suport telefonic", "Selectie mai mica decat XTB"],
-    ideal: "Incepatori cu bugete mici, DCA fractionate",
-    culoare: "from-[#ddf93c] to-[#06080b]",
-    culoare_accent: "blue",
+    dezavantaje: ["Fără suport telefonic", "Conversia valutară se plătește la tranzacțiile în altă monedă"],
+    ideal: "Începători cu sume mici, investiții lunare",
+    culoare: "from-[#ddf93c]/20 to-[#14181c]",
   },
 ];
 
 const COMPARATIE = [
-  { feature: "0% comision actiuni", xtb: true, binance: false, etoro: true, t212: true },
-  { feature: "Crypto disponibil", xtb: true, binance: true, etoro: true, t212: false },
-  { feature: "ETF-uri (VWCE etc)", xtb: true, binance: false, etoro: true, t212: true },
+  { feature: "Criptomonede reale (nu CFD)", xtb: false, binance: true, etoro: true, t212: false },
+  { feature: "ETF-uri", xtb: true, binance: false, etoro: true, t212: true },
   { feature: "Copy trading", xtb: false, binance: false, etoro: true, t212: false },
-  { feature: "Staking crypto", xtb: false, binance: true, etoro: false, t212: false },
-  { feature: "Reglementat UE", xtb: true, binance: true, etoro: true, t212: true },
-  { feature: "Suport romana", xtb: true, binance: false, etoro: false, t212: false },
-  { feature: "Cont demo gratuit", xtb: true, binance: true, etoro: true, t212: true },
 ];
 
 const jsonLd = {
@@ -200,15 +183,15 @@ export default function TradingPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Actiuni 0%", "ETF-uri", "Crypto", "Copy Trading", "Staking", "Cont Demo"].map(c => (
-                <span key={c} className="bg-[#1f2329] border border-[#2a2f36] text-slate-500 text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
+                <span key={c} className="bg-[#1f2329] border border-[#2a2f36] text-[#c9ced5] text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
               ))}
             </div>
           </div>
         </section>
 
         {/* Disclaimer */}
-        <div className="bg-[#ddf93c]/50 border-b border-[#ddf93c]/40">
-          <div className="max-w-6xl mx-auto px-4 py-3 text-xs text-[#c3dd2c]/80 text-center">
+        <div className="bg-[#ddf93c]/10 border-b border-[#ddf93c]/30">
+          <div className="max-w-6xl mx-auto px-4 py-3 text-xs text-[#ddf93c] text-center">
             ⚠️ Investitiile implica riscuri. Acest ghid are scop informativ, nu constituie sfat financiar. Tranzactionarea produselor leverage comporta risc ridicat de pierdere a capitalului.
           </div>
         </div>
@@ -233,11 +216,11 @@ export default function TradingPage() {
                       </div>
                       <div>
                         <div className="flex items-center gap-2 mb-1">
-                          <span className={`text-[10px] font-black text-[#ffffff] ${p.badgeColor} px-2 py-0.5 rounded-full`}>#{p.rank} {p.badge}</span>
-                          <span className="text-slate-500 text-xs">{p.reglementat}</span>
+                          <span className={`text-[10px] font-black ${p.badgeColor} px-2 py-0.5 rounded-full`}>#{p.rank} {p.badge}</span>
+                          <span className="text-[#c9ced5] text-xs">{p.reglementat}</span>
                         </div>
                         <h2 className="text-2xl font-black text-[#ffffff]">{p.name}</h2>
-                        <p className="text-slate-500 text-sm mt-0.5">{p.tagline}</p>
+                        <p className="text-[#c9ced5] text-sm mt-0.5">{p.tagline}</p>
                       </div>
                     </div>
                   </div>
@@ -290,13 +273,9 @@ export default function TradingPage() {
                   </div>
 
                   <div className="flex flex-col sm:flex-row gap-3">
-                    <a href={p.url} target="_blank" rel="nofollow noopener noreferrer"
-                      className="flex-1 bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] font-black text-sm py-3 px-6 rounded-xl text-center transition-colors">
-                      Deschide cont {p.name} gratuit →
-                    </a>
-                    <a href={p.program_url} target="_blank" rel="nofollow noopener noreferrer"
-                      className="bg-[#1f2329] hover:bg-[#2a2f36] border border-[#2a2f36] text-[#c9ced5] hover:text-[#ffffff] font-semibold text-sm py-3 px-5 rounded-xl text-center transition-colors">
-                      Program afiliere
+                    <a href={p.url} target="_blank" rel="sponsored nofollow noopener noreferrer"
+                      className="flex-1 bg-[#ddf93c] hover:bg-[#c3dd2c] text-[#0c1000] font-black text-sm py-3 px-6 rounded-xl text-center transition-colors">
+                      Vezi {p.name} →
                     </a>
                   </div>
                 </div>
@@ -345,10 +324,10 @@ export default function TradingPage() {
           <h2 className="text-2xl font-black text-[#ffffff] mb-7">Ce platforma sa alegi in {an}?</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {[
-              { icon: "🏆", titlu: "Vrei ETF-uri (VWCE, CSPX)?", raspuns: "XTB este alegerea clara — 0% comision, interfata in romana, cont in RON. Alternativa: Trading212." },
-              { icon: "₿", titlu: "Vrei sa cumperi Bitcoin/Ethereum?", raspuns: "Binance pentru volume mari si spot. eToro pentru incepatori care vor sa tina cripto fara wallet separat." },
-              { icon: "🤝", titlu: "Esti incepator si vrei sa copiezi?", raspuns: "eToro CopyTrader — copiezi automat portofoliul unui expert, fara sa stii nimic despre trading." },
-              { icon: "💰", titlu: "Ai sub 100 EUR si vrei actiuni?", raspuns: "Trading212 — actiuni fractionate de la 1 EUR. Alternativ XTB cu orice suma in RON." },
+              { icon: "🏆", titlu: "Vrei ETF-uri (VWCE, CSPX)?", raspuns: "XTB are ETF-uri precum VWCE și CSPX, fără comision până la 100.000 € rulaj lunar, cu interfață în română și cont în RON. Alternativă: Trading212." },
+              { icon: "₿", titlu: "Vrei să cumperi Bitcoin/Ethereum?", raspuns: "Binance e un exchange dedicat crypto; pe eToro ții crypto în același cont cu acțiunile. Criptomonedele sunt foarte volatile — investește doar ce îți permiți să pierzi." },
+              { icon: "🤝", titlu: "Vrei să copiezi alți investitori?", raspuns: "eToro CopyTrader copiază automat tranzacțiile altui investitor — inclusiv pierderile. Rezultatele trecute nu garantează rezultate viitoare." },
+              { icon: "💰", titlu: "Începi cu o sumă mică?", raspuns: "Trading212 are acțiuni fracționate, deci poți începe cu puțin. XTB nu are depozit minim." },
             ].map(g => (
               <div key={g.titlu} className="bg-[#14181c] border border-[#1f2329] rounded-xl p-5">
                 <div className="text-2xl mb-3">{g.icon}</div>
@@ -363,12 +342,12 @@ export default function TradingPage() {
         <section className="max-w-6xl mx-auto px-4 pb-8">
           <div className="bg-gradient-to-r from-[#14181c] to-[#06080b] border border-[#ddf93c]/40 rounded-xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div>
-              <p className="text-xs font-bold text-[#c3dd2c] uppercase tracking-widest mb-1">BONUS</p>
+              <p className="text-xs font-bold text-[#c3dd2c] uppercase tracking-widest mb-1">ALTERNATIVĂ</p>
               <h3 className="text-xl font-black text-[#ffffff] mb-1">Revolut — actiuni si crypto in aplicatie</h3>
-              <p className="text-[#c9ced5] text-sm">Deschizi cont gratuit si cumperi actiuni fractionate + crypto direct din app. Ideal ca portofel secundar.</p>
+              <p className="text-[#c9ced5] text-sm">Planul Standard e gratuit; din aplicație cumperi acțiuni fracționate și crypto. Util ca al doilea cont.</p>
             </div>
             <a href={LINK_REVOLUT} target="_blank" rel="nofollow noopener noreferrer"
-              className="shrink-0 bg-[#14181c] text-[#ddf93c] font-black text-sm py-3 px-6 rounded-xl hover:bg-[#ddf93c] transition-colors whitespace-nowrap">
+              className="shrink-0 bg-[#14181c] text-[#ddf93c] font-black text-sm py-3 px-6 rounded-xl hover:bg-[#ddf93c] hover:text-[#0c1000] transition-colors whitespace-nowrap">
               Cont Revolut gratuit →
             </a>
           </div>

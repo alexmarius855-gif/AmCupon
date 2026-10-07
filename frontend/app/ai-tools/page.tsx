@@ -5,7 +5,7 @@ import { linkPlatit } from "@/lib/linkPlatit";
 export const metadata: Metadata = {
   title: "Cele mai bune AI Tools 2026 — ghid complet pentru creatori",
   description:
-    "Top 16 unelte AI pentru text, video, voce, SEO și design. Ce face fiecare, cât costă și pentru cine e potrivit — Copy.ai, InVideo, ElevenLabs, Canva, Semrush și altele.",
+    "16 unelte AI pentru text, video, voce, SEO și design: ce face fiecare și pentru cine e potrivită — Copy.ai, InVideo, ElevenLabs, Canva, Semrush și altele.",
   keywords: [
     "cele mai bune ai tools 2026",
     "unelte ai romania",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://amcupon.ro/ai-tools" },
   openGraph: {
     title: "Cele mai bune AI Tools 2026 — ghid pentru creatori | AmCupon.ro",
-    description: "16 unelte AI pentru text, video, voce, SEO și design. Ce fac, cât costă și pentru cine.",
+    description: "16 unelte AI pentru text, video, voce, SEO și design. Ce fac și pentru cine sunt potrivite.",
     url: "https://amcupon.ro/ai-tools",
     siteName: "AmCupon.ro",
     locale: "ro_RO",
@@ -27,35 +27,35 @@ export const metadata: Metadata = {
 
 interface Tool {
   name: string; emoji: string; cat: string; face: string;
-  pret: string; ideal: string; url: string;
+  ideal: string; url: string;
 }
 
 const TOOLS: Tool[] = [
-  { name: "Copy.ai", emoji: "✍️", cat: "Text & Copywriting", face: "Generează articole, descrieri de produs și texte de marketing cu AI, în zeci de limbi.", pret: "gratuit / de la $36/luna", ideal: "Bloggeri, copywriteri, marketeri", url: "https://www.copy.ai" },
-  { name: "Jasper AI", emoji: "🤖", cat: "Text & Copywriting", face: "Scriere AI avansată pentru articole lungi, campanii și conținut de brand.", pret: "de la $39/luna", ideal: "Agenții de conținut, echipe marketing", url: "https://www.jasper.ai" },
-  { name: "Writesonic", emoji: "📝", cat: "Text & Copywriting", face: "Articole SEO, postări sociale și texte scurte generate rapid.", pret: "gratuit / de la $13/luna", ideal: "SEO freelanceri, creatori", url: "https://writesonic.com" },
-  { name: "InVideo AI", emoji: "🎬", cat: "Video AI", face: "Transformă un text într-un video montat automat, cu voce și subtitrări.", pret: "gratuit / de la $20/luna", ideal: "YouTube, TikTok, social media", url: "https://invideo.io" },
-  { name: "Synthesia", emoji: "🎭", cat: "Video AI", face: "Video cu prezentatori AI realiști din simplu text — fără cameră.", pret: "de la $29/luna", ideal: "eLearning, training corporate", url: "https://www.synthesia.io" },
-  { name: "Pictory AI", emoji: "✂️", cat: "Video AI", face: "Taie clipuri scurte din video lungi și adaugă subtitrări automat.", pret: "de la $19/luna", ideal: "YouTuberi, creatori short-form", url: "https://pictory.ai" },
-  { name: "Descript", emoji: "🎞️", cat: "Video AI", face: "Editezi video și podcast ca pe un document text — scoți cuvinte, editezi audio.", pret: "gratuit / de la $12/luna", ideal: "Podcasteri, video editori", url: "https://www.descript.com" },
-  { name: "ElevenLabs", emoji: "🎙️", cat: "Voce AI", face: "Voce AI naturală și clonare de voce, inclusiv în română.", pret: "gratuit / de la $5/luna", ideal: "Podcasteri, YouTuberi, dublaj", url: "https://elevenlabs.io" },
-  { name: "Murf AI", emoji: "🔊", cat: "Voce AI", face: "Voci AI profesionale pentru prezentări, cursuri și reclame.", pret: "de la $19/luna", ideal: "Instructori online, prezentatori", url: "https://murf.ai" },
-  { name: "Semrush", emoji: "📈", cat: "SEO & Marketing", face: "Cercetare cuvinte cheie, audit site și analiză competiție — standardul SEO.", pret: "de la $117/luna", ideal: "SEO, consultanți, webmasteri", url: "https://www.semrush.com" },
-  { name: "Surfer SEO", emoji: "🏄", cat: "SEO & Marketing", face: "Optimizează articolele pe cuvinte cheie ca să rankeze mai sus în Google.", pret: "de la $89/luna", ideal: "Bloggeri SEO, agenții", url: "https://surferseo.com" },
-  { name: "Frase.io", emoji: "🔍", cat: "SEO & Marketing", face: "Cercetare + scriere de conținut SEO asistată de AI, într-un singur loc.", pret: "de la $45/luna", ideal: "Editori de conținut, freelanceri", url: "https://www.frase.io" },
-  { name: "HubSpot", emoji: "🏆", cat: "CRM & Business", face: "CRM și marketing all-in-one: email, automatizări, pipeline de vânzări.", pret: "gratuit / plătit ulterior", ideal: "B2B, consultanți, IMM-uri", url: "https://www.hubspot.com" },
-  { name: "LiveChat", emoji: "💬", cat: "CRM & Business", face: "Chat live + AI pentru suport clienți pe magazinul tău online.", pret: "de la $20/luna", ideal: "eCommerce, echipe suport", url: "https://www.livechat.com" },
-  { name: "Canva Pro", emoji: "🎨", cat: "Design AI", face: "Design grafic simplu cu AI: postări, prezentări, materiale de marketing.", pret: "de la $12.99/luna", ideal: "Orice creator de conținut vizual", url: "https://www.canva.com" },
-  { name: "Wegic", emoji: "🪄", cat: "Website AI", face: "Construiești un site web complet vorbind cu un AI, fără cod.", pret: "plan gratuit disponibil", ideal: "Antreprenori, freelanceri", url: "https://wegic.ai" },
+  { name: "Copy.ai", emoji: "✍️", cat: "Text & Copywriting", face: "Generează articole, descrieri de produs și texte de marketing cu AI, în zeci de limbi.", ideal: "Bloggeri, copywriteri, marketeri", url: "https://www.copy.ai" },
+  { name: "Jasper AI", emoji: "🤖", cat: "Text & Copywriting", face: "Scriere AI avansată pentru articole lungi, campanii și conținut de brand.", ideal: "Agenții de conținut, echipe marketing", url: "https://www.jasper.ai" },
+  { name: "Writesonic", emoji: "📝", cat: "Text & Copywriting", face: "Articole SEO, postări sociale și texte scurte generate rapid.", ideal: "SEO freelanceri, creatori", url: "https://writesonic.com" },
+  { name: "InVideo AI", emoji: "🎬", cat: "Video AI", face: "Transformă un text într-un video montat automat, cu voce și subtitrări.", ideal: "YouTube, TikTok, social media", url: "https://invideo.io" },
+  { name: "Synthesia", emoji: "🎭", cat: "Video AI", face: "Video cu prezentatori AI realiști din simplu text — fără cameră.", ideal: "eLearning, training corporate", url: "https://www.synthesia.io" },
+  { name: "Pictory AI", emoji: "✂️", cat: "Video AI", face: "Taie clipuri scurte din video lungi și adaugă subtitrări automat.", ideal: "YouTuberi, creatori short-form", url: "https://pictory.ai" },
+  { name: "Descript", emoji: "🎞️", cat: "Video AI", face: "Editezi video și podcast ca pe un document text — scoți cuvinte, editezi audio.", ideal: "Podcasteri, video editori", url: "https://www.descript.com" },
+  { name: "ElevenLabs", emoji: "🎙️", cat: "Voce AI", face: "Voce AI naturală și clonare de voce, inclusiv în română.", ideal: "Podcasteri, YouTuberi, dublaj", url: "https://elevenlabs.io" },
+  { name: "Murf AI", emoji: "🔊", cat: "Voce AI", face: "Voci AI profesionale pentru prezentări, cursuri și reclame.", ideal: "Instructori online, prezentatori", url: "https://murf.ai" },
+  { name: "Semrush", emoji: "📈", cat: "SEO & Marketing", face: "Cercetare cuvinte cheie, audit site și analiza concurenței.", ideal: "SEO, consultanți, webmasteri", url: "https://www.semrush.com" },
+  { name: "Surfer SEO", emoji: "🏄", cat: "SEO & Marketing", face: "Optimizează articolele pe cuvinte cheie ca să rankeze mai sus în Google.", ideal: "Bloggeri SEO, agenții", url: "https://surferseo.com" },
+  { name: "Frase.io", emoji: "🔍", cat: "SEO & Marketing", face: "Cercetare + scriere de conținut SEO asistată de AI, într-un singur loc.", ideal: "Editori de conținut, freelanceri", url: "https://www.frase.io" },
+  { name: "HubSpot", emoji: "🏆", cat: "CRM & Business", face: "CRM și marketing all-in-one: email, automatizări, pipeline de vânzări.", ideal: "B2B, consultanți, IMM-uri", url: "https://www.hubspot.com" },
+  { name: "LiveChat", emoji: "💬", cat: "CRM & Business", face: "Chat live + AI pentru suport clienți pe magazinul tău online.", ideal: "eCommerce, echipe suport", url: "https://www.livechat.com" },
+  { name: "Canva Pro", emoji: "🎨", cat: "Design AI", face: "Design grafic simplu cu AI: postări, prezentări, materiale de marketing.", ideal: "Orice creator de conținut vizual", url: "https://www.canva.com" },
+  { name: "Wegic", emoji: "🪄", cat: "Website AI", face: "Construiești un site web complet vorbind cu un AI, fără cod.", ideal: "Antreprenori, freelanceri", url: "https://wegic.ai" },
 ];
 
 const CATS = ["Text & Copywriting", "Video AI", "Voce AI", "SEO & Marketing", "CRM & Business", "Design AI", "Website AI"];
 
 const FAQ = [
-  { q: "Care e cel mai bun AI tool pentru text?", a: "Pentru articole lungi și conținut de brand, Jasper și Copy.ai sunt cele mai puternice. Pentru texte scurte rapide și buget mic, Writesonic e o alegere bună. Toate au planuri gratuite sau ieftine ca să testezi." },
-  { q: "Ce AI folosesc pentru video fără să apar pe cameră?", a: "Synthesia creează video cu un prezentator AI realist din simplu text. InVideo AI montează automat un video complet dintr-un script, cu voce și subtitrări. Ambele sunt ideale pentru YouTube sau cursuri fără filmare." },
-  { q: "Există AI cu voce în română?", a: "Da. ElevenLabs generează voce AI foarte naturală, inclusiv în română, și e printre cele mai accesibile (are și plan gratuit). Murf AI oferă voci profesionale pentru prezentări și reclame." },
-  { q: "Cum economisesc la abonamentele AI?", a: "Majoritatea au planuri gratuite generoase — începe cu ele. Pentru planurile plătite, abonamentul anual e de obicei mai ieftin decât cel lunar, iar reducerile apar frecvent de Black Friday. Verifică pe AmCupon.ro înainte de cumpărare." },
+  { q: "Care e cel mai bun AI tool pentru text?", a: "Pentru articole lungi și conținut de brand, Jasper și Copy.ai sunt gândite pentru echipe de marketing; pentru texte scurte, Writesonic. Încearcă întâi varianta gratuită sau perioada de probă, acolo unde există." },
+  { q: "Ce AI folosesc pentru video fără să apar pe cameră?", a: "Synthesia creează video cu un prezentator AI realist din simplu text. InVideo AI montează automat un video complet dintr-un script, cu voce și subtitrări. Ambele se folosesc pentru cursuri și prezentări fără filmare; pe YouTube, verifică întâi regulile de monetizare pentru conținutul generat automat." },
+  { q: "Există AI cu voce în română?", a: "Da. ElevenLabs are voci AI și în română, plus un plan gratuit pentru început. Murf AI are voci pentru prezentări și reclame." },
+  { q: "Cum economisesc la abonamentele AI?", a: "Multe au un plan gratuit sau o perioadă de probă — începe cu ele. Pentru planurile plătite, abonamentul anual e de obicei mai ieftin decât cel lunar, iar reducerile apar frecvent de Black Friday. Verifică pe AmCupon.ro înainte de cumpărare." },
 ];
 
 export default function AiToolsPage() {
@@ -75,12 +75,12 @@ export default function AiToolsPage() {
             Cele mai bune <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #c3dd2c, #ddf93c)" }}>AI Tools</span> 2026
           </h1>
           <p className="text-[#c9ced5] text-lg max-w-2xl mx-auto mb-6">
-            16 unelte AI pentru text, video, voce, SEO și design. Ce face fiecare, cât costă și pentru cine e potrivit — alege în funcție de ce ai nevoie.
+            16 unelte AI pentru text, video, voce, SEO și design: ce face fiecare și pentru cine e potrivită. Prețurile se schimbă des — le vezi actualizate pe site-ul fiecăreia.
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm text-[#c9ced5]">
-            <span className="flex items-center gap-1.5"><span className="text-[#ddf93c]">✓</span> Majoritatea au plan gratuit</span>
-            <span className="flex items-center gap-1.5"><span className="text-[#ddf93c]">✓</span> Prețuri și planuri comparate</span>
-            <span className="flex items-center gap-1.5"><span className="text-[#ddf93c]">✓</span> Actualizat 2026</span>
+            <span className="flex items-center gap-1.5"><span className="text-[#ddf93c]">✓</span> Ce face fiecare</span>
+            <span className="flex items-center gap-1.5"><span className="text-[#ddf93c]">✓</span> Pentru cine e potrivită</span>
+            <span className="flex items-center gap-1.5"><span className="text-[#ddf93c]">✓</span> Revizuit în octombrie 2026</span>
           </div>
         </div>
       </section>
@@ -101,7 +101,6 @@ export default function AiToolsPage() {
                   </div>
                   <p className="text-sm text-[#c9ced5] flex-1 leading-relaxed">{t.face}</p>
                   <div className="mt-4 space-y-1.5 text-xs">
-                    <p className="text-[#c9ced5]"><span className="text-[#9399a0]">Preț:</span> <span className="text-[#ddf93c] font-bold">{t.pret}</span></p>
                     <p className="text-[#c9ced5]"><span className="text-[#9399a0]">Ideal pentru:</span> {t.ideal}</p>
                   </div>
                   <a href={linkPlatit(t.url)} target="_blank" rel="sponsored noopener noreferrer"

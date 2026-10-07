@@ -128,8 +128,8 @@ export default function GamingPage() {
 
 
         <NisaProduse
-          merchantSlugs={["pcgarage.ro","altex.ro","evomag.ro","flanco.ro","cel.ro"]}
-          catSlug="electronice"
+          merchantSlugs={[]}
+          potrivire={/^(mouse|tastatura|casti|headset|controller|gamepad|maneta|volan|mousepad|scaun)\b[^,]*\bgaming\b/}
           titlu="Produse gaming de la parteneri"
           culoareAccent="indigo"
           limit={12}

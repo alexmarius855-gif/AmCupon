@@ -333,6 +333,12 @@ RE_PROMISIUNE_COD = re.compile(
 # Numar de magazine scris de mana (05.10.2026: „1000+ magazine" in 11 fisiere, pe site erau 957).
 # Cifrele vin acum din lib/cifreSite.ts, rotunjite in jos la suta.
 RE_NUMAR_MAGAZINE = re.compile(r"\b1\.?000\+?\s*(?:de\s+)?magazine", re.I)
+RE_COMISION_PUBLICAT = re.compile(
+    r"\b[1-9]\d*(?:[.,]\d+)?(?:\s?-\s?\d+(?:[.,]\d+)?)?\s?%\s+comision\b"
+    r"|\d+\s?\$\s+per\b|\$\s?\d+(?:\s?-\s?\d+)?\s+per\b|\bper\s+v[aâ]nzare\b|\bCPA\b"
+    r"|\bProgram\s+afiliere\b|\bProgram\s+recomandare\b"
+    r"|\bcel\s+mai\s+mare\s+comision\b|\bcomision\s+verificat\b|\bcomision\s+recurent\b",
+    re.I)
 REGULI_CORP = [
     ("pretentie de testare", RE_TESTARE,
      "pagina afirma o testare care n-a avut loc (a 6-a aparitie — LECTII-TEHNICE #10)"),
@@ -349,6 +355,16 @@ REGULI_CORP = [
      "cifra nu vine din date (lib/cifreSite.ts) si ramane falsa cand se schimba numarul de magazine"),
     ("link Profitshare in pagina", re.compile(r"profitshare\.ro/l/"),
      "retea exclusa pe 19.08 — clicul nu plateste"),
+    # 07.10.2026: comisionul NOSTRU era afisat cumparatorului pe /cursuri-online (de 44 de ori:
+    # „Appsumo 100% comision"), /servicii („200$ per vanzare", „150$ CPA"), /servicii-internationale
+    # („Cel mai mare comision", „Toate cu comision verificat") si „Program afiliere: …" sub butoane.
+    # „0% comision" (taxa unui broker) si „primim un comision" (nota de afiliere) nu sunt prinse.
+    ("comision publicat", RE_COMISION_PUBLICAT,
+     "comisionul nostru sau text pentru afiliati, afisat cumparatorului — nu se publica niciodata"),
+    # 07.10.2026: sablonul Impact `…/c/7761435/1/0` (campania „1", reclama „0") — 404 — era inca
+    # butonul Coursera si Shopify, dupa ce fusese scos din date pe 22.08.
+    ("link sablon de afiliere", re.compile(r"/c/\d{5,8}/1/0(?=[\"'?/#\s])"),
+     "link de afiliere neconcretizat (campania 1, reclama 0) — duce la 404"),
 ]
 
 # Linkuri interne catre pagini care trebuie sa existe ca HTML generat. Pe 05.10.2026, 12

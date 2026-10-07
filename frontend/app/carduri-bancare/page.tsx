@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Cel mai bun Cont Bancar Online Romania 2026 — Revolut",
-  description: "Comparam cele mai bune conturi bancare digitale pentru romani in 2026. Revolut, Wise, N26, Salt Bank — comisioane, transferuri internationale, carduri gratuite. Bonus la inregistrare.",
+  description: "Comparăm conturile digitale pe care le pot deschide românii în 2026 — Revolut, Wise, Salt Bank: costuri, schimb valutar, transferuri internaționale, carduri gratuite.",
   keywords: [
     "cont bancar online romania",
     "revolut parere romania",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://amcupon.ro/carduri-bancare" },
   openGraph: {
     title: "Cel mai bun Cont Bancar Online Romania 2026 | AmCupon.ro",
-    description: "Revolut, Wise, N26, Salt Bank — comparatie completa pentru romani. Carduri gratuite, transferuri ieftine, bonus inregistrare.",
+    description: "Revolut, Wise, Salt Bank — comparație pentru români: costuri, schimb valutar, transferuri internaționale.",
     url: "https://amcupon.ro/carduri-bancare",
     siteName: "AmCupon.ro",
     locale: "ro_RO",
@@ -25,96 +25,73 @@ export const metadata: Metadata = {
   },
 };
 
-// ── LINKURI AFILIATE ── inlocuieste cu codurile/linkurile tale ────────────
-const LINK_REVOLUT  = "https://www.revolut.com";          // cod referral din app Revolut
-const LINK_WISE     = "https://wise.com";                // link afiliat Wise (Partnerize)
-const LINK_N26      = "https://n26.com";                      // link referral N26
-const LINK_SALTBANK = "https://salt.bank";           // link referral Salt Bank (domeniu corect: salt.bank, NU saltbank.ro)
-// ──────────────────────────────────────────────────────────────────────────
+// Adresele oficiale (nu avem linkuri de recomandare la aceste banci).
+const LINK_REVOLUT  = "https://www.revolut.com";
+const LINK_WISE     = "https://wise.com";
+const LINK_SALTBANK = "https://salt.bank";           // domeniul corect: salt.bank, NU saltbank.ro
 
+// 07.10.2026: N26 scos — nu deschide conturi pentru rezidentii din Romania (lista oficiala de tari
+// pe support.n26.com). Fara „bonus la inregistrare": linkurile noastre nu sunt de recomandare.
+// culoare = antet inchis cu o nuanta, ca textul alb sa se citeasca; badgeColor include culoarea textului.
 const CONTURI = [
   {
     rank: 1,
     name: "Revolut",
-    tagline: "Cel mai popular cont digital din Romania — bani, crypto si actiuni intr-o app",
+    tagline: "Cont digital multi-valută: plăți, schimb valutar, acțiuni și crypto într-o aplicație",
     badge: "Cont multi-valută",
-    badgeColor: "bg-[#ddf93c]",
+    badgeColor: "bg-[#ddf93c] text-[#0c1000]",
     emoji: "💜",
     cost: "Gratuit (plan Standard)",
     url: LINK_REVOLUT,
-    program_url: "https://www.revolut.com/referral-program",
     avantaje: [
-      "Cont si card gratuite, deschis in 5 minute din telefon",
-      "Schimb valutar la curs interbancar (fara comision ascuns)",
-      "Cumperi crypto si actiuni direct din aplicatie",
-      "Card virtual instant pentru cumparaturi online",
-      "Plati split intre prieteni (Revolut Pay)",
-      "Bonus la inregistrare prin link de recomandare",
+      "Cont și card gratuite pe planul Standard, deschise din telefon",
+      "Schimb valutar fără comision până la o limită lunară (în timpul săptămânii)",
+      "Cumperi acțiuni și crypto din aplicație",
+      "Carduri virtuale pentru cumpărături online",
+      "Împarți notele cu prietenii direct din aplicație",
     ],
-    dezavantaje: ["Suport clienti doar prin chat in app", "Planul gratuit are limite la schimb valutar"],
-    ideal: "Calatorii, cumparaturi online, prima expunere la crypto/actiuni",
-    culoare: "from-[#ddf93c] to-[#14181c]",
+    dezavantaje: ["Suportul e în principal prin chat în aplicație", "Peste limita lunară și în weekend, schimbul valutar are comision"],
+    ideal: "Călătorii, cumpărături online, primii pași în acțiuni",
+    culoare: "from-[#ddf93c]/20 to-[#14181c]",
   },
   {
     rank: 2,
     name: "Wise",
-    tagline: "Cele mai ieftine transferuri internationale — taxe reale, fara costuri ascunse",
+    tagline: "Transferuri internaționale la cursul real, cu taxa afișată înainte",
     badge: "Transferuri internaționale",
-    badgeColor: "bg-emerald-600",
+    badgeColor: "bg-emerald-600 text-[#ffffff]",
     emoji: "🌍",
-    cost: "Gratuit cont, comision mic per transfer",
+    cost: "Cont gratuit; taxă per transfer, afișată înainte",
     url: LINK_WISE,
-    program_url: "https://wise.com/help/articles/2932160",
     avantaje: [
-      "Cont multi-valuta (RON, EUR, USD, GBP si altele)",
-      "Transfer la curs real de schimb — fara markup ascuns",
-      "Card Wise pentru retrageri ieftine in strainatate",
-      "Transparenta totala — vezi comisionul exact inainte de transfer",
-      "Ideal pentru freelanceri platiti din strainatate",
+      "Cont multi-valută (RON, EUR, USD, GBP și altele)",
+      "Transfer la cursul real de schimb, fără adaos ascuns",
+      "Card Wise, cu retrageri gratuite până la o limită lunară",
+      "Vezi taxa exactă înainte de transfer",
+      "Util pentru freelanceri plătiți din străinătate",
     ],
-    dezavantaje: ["Nu are functii de investitii/crypto", "Comision per transfer (mic, dar exista)"],
-    ideal: "Freelanceri, nomazi digitali, transferuri frecvente in valuta",
-    culoare: "from-emerald-700 to-[#14181c]",
+    dezavantaje: ["Taxă la fiecare transfer (mică, dar există)", "Nu e bancă: banii sunt protejați prin separare, nu prin fondul de garantare a depozitelor"],
+    ideal: "Freelanceri, nomazi digitali, transferuri frecvente în valută",
+    culoare: "from-emerald-700/40 to-[#14181c]",
   },
   {
     rank: 3,
-    name: "N26",
-    tagline: "Banca digitala germana — cont european complet, fara birocratie",
-    badge: "Cont European",
-    badgeColor: "bg-[#ddf93c]",
-    emoji: "🇪🇺",
-    cost: "Gratuit (plan Standard)",
-    url: LINK_N26,
-    program_url: "https://n26.com/en-eu/referral",
-    avantaje: [
-      "IBAN german — util pentru salarii/plati din UE",
-      "Notificari instant la fiecare tranzactie",
-      "Spatii (Spaces) pentru economii separate pe obiective",
-      "Aplicatie foarte simpla si rapida",
-    ],
-    dezavantaje: ["Suport mai limitat in romana", "Retrageri numerar limitate gratuit pe luna"],
-    ideal: "Studenti si lucratori in UE, cont secundar in euro",
-    culoare: "from-[#ddf93c] to-[#06080b]",
-  },
-  {
-    rank: 4,
     name: "Salt Bank",
-    tagline: "Banca 100% digitala romaneasca — dobanda la cash, fara birou fizic",
+    tagline: "Bancă digitală românească, din grupul Banca Transilvania",
     badge: "Bancă românească",
-    badgeColor: "bg-[#ddf93c]",
+    badgeColor: "bg-[#ddf93c] text-[#0c1000]",
     emoji: "🧂",
     cost: "Gratuit",
     url: LINK_SALTBANK,
-    program_url: "https://www.saltbank.ro",
     avantaje: [
-      "Dobanda la soldul din cont (peste media pietei)",
-      "Deschidere cont 100% online, in romana",
-      "Fara comisioane lunare de mentinere",
-      "Susitnuta de Banca Transilvania — incredere si garantie depozite",
+      "Dobândă la economii (rata actuală e pe site)",
+      "Deschidere de cont 100% online, în română",
+      "Fără comision lunar de administrare",
+      "Depozitele sunt garantate de FGDB, ca la orice bancă din România",
     ],
-    dezavantaje: ["Fara optiuni de investitii inca", "Ecosistem mai tanar, mai putine functii"],
-    ideal: "Romani care vor banking 100% digital, in limba romana",
-    culoare: "from-[#ddf93c] to-[#14181c]",
+    dezavantaje: ["Fără sucursale fizice", "Bancă mai nouă, cu mai puține funcții decât băncile mari"],
+    ideal: "Cine vrea banking 100% digital, în română",
+    culoare: "from-[#c3dd2c]/20 to-[#14181c]",
   },
 ];
 
@@ -123,7 +100,7 @@ const jsonLd = {
   "@type": "CollectionPage",
   name: "Cel mai bun Cont Bancar Online Romania 2026",
   url: "https://amcupon.ro/carduri-bancare",
-  description: "Comparatie Revolut, Wise, N26, Salt Bank pentru romani 2026",
+  description: "Comparație Revolut, Wise, Salt Bank pentru români, 2026",
 };
 
 export default function CarduriBancarePage() {
@@ -161,11 +138,11 @@ export default function CarduriBancarePage() {
               </span>
             </h1>
             <p className="text-[#c9ced5] text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
-              Revolut, Wise, N26, Salt Bank — comparatie completa pentru romani. Carduri gratuite, schimb valutar fara comision, transferuri internationale ieftine.
+              Revolut, Wise și Salt Bank — conturi digitale pe care le poți deschide din România, comparate pe condițiile publicate de fiecare: costuri, schimb valutar, transferuri.
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Cont gratuit", "Card virtual", "Schimb valutar", "Transferuri rapide", "Fara birocratie"].map(c => (
-                <span key={c} className="bg-[#1f2329] border border-[#2a2f36] text-slate-500 text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
+                <span key={c} className="bg-[#1f2329] border border-[#2a2f36] text-[#c9ced5] text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
               ))}
             </div>
           </div>
@@ -175,7 +152,7 @@ export default function CarduriBancarePage() {
         <section className="max-w-6xl mx-auto px-4 py-12">
           <div className="text-center mb-10">
             <p className="text-xs font-bold text-[#c3dd2c] uppercase tracking-widest mb-2">COMPARATIE CONTURI</p>
-            <h2 className="text-3xl font-black text-[#ffffff]">Top 4 conturi bancare digitale pentru romani</h2>
+            <h2 className="text-3xl font-black text-[#ffffff]">Conturi digitale pentru români</h2>
             <p className="text-[#c9ced5] text-sm mt-2">Comparate pe condițiile publicate de fiecare bancă — verifică-le pe site-ul ei înainte să deschizi contul</p>
           </div>
 
@@ -189,9 +166,9 @@ export default function CarduriBancarePage() {
                         {c.emoji}
                       </div>
                       <div>
-                        <span className={`text-[10px] font-black text-[#ffffff] ${c.badgeColor} px-2 py-0.5 rounded-full`}>#{c.rank} {c.badge}</span>
+                        <span className={`text-[10px] font-black ${c.badgeColor} px-2 py-0.5 rounded-full`}>#{c.rank} {c.badge}</span>
                         <h2 className="text-2xl font-black text-[#ffffff] mt-1">{c.name}</h2>
-                        <p className="text-slate-500 text-sm mt-0.5">{c.tagline}</p>
+                        <p className="text-[#c9ced5] text-sm mt-0.5">{c.tagline}</p>
                       </div>
                     </div>
                   </div>
@@ -234,12 +211,8 @@ export default function CarduriBancarePage() {
 
                   <div className="flex flex-col sm:flex-row gap-3">
                     <a href={c.url} target="_blank" rel="nofollow noopener noreferrer"
-                      className="flex-1 bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] font-black text-sm py-3 px-6 rounded-xl text-center transition-colors">
-                      Deschide cont {c.name} gratuit →
-                    </a>
-                    <a href={c.program_url} target="_blank" rel="nofollow noopener noreferrer"
-                      className="bg-[#1f2329] hover:bg-[#2a2f36] border border-[#2a2f36] text-[#c9ced5] hover:text-[#ffffff] font-semibold text-sm py-3 px-5 rounded-xl text-center transition-colors">
-                      Program recomandare
+                      className="flex-1 bg-[#ddf93c] hover:bg-[#c3dd2c] text-[#0c1000] font-black text-sm py-3 px-6 rounded-xl text-center transition-colors">
+                      Vezi {c.name} →
                     </a>
                   </div>
                 </div>
@@ -255,10 +228,10 @@ export default function CarduriBancarePage() {
             <h2 className="text-2xl font-black text-[#ffffff] mb-7">Ce cont sa alegi in {an}?</h2>
             <div className="grid sm:grid-cols-2 gap-4">
               {[
-                { icon: "✈️", titlu: "Calatoresti des in strainatate?", raspuns: "Revolut — schimb valutar la curs real, card acceptat global, fara comisioane ascunse la plata in alta valuta." },
-                { icon: "💸", titlu: "Primesti bani din strainatate (freelance)?", raspuns: "Wise — cel mai ieftin pentru transferuri internationale, cont multi-valuta cu IBAN-uri locale in mai multe tari." },
-                { icon: "🇪🇺", titlu: "Lucrezi sau studiezi in UE?", raspuns: "N26 — IBAN german, ideal pentru salarii si plati locale in zona euro." },
-                { icon: "🇷🇴", titlu: "Vrei tot in romana, susitnut de o banca mare?", raspuns: "Salt Bank — 100% digital, dobanda la cash, backing de la Banca Transilvania." },
+                { icon: "✈️", titlu: "Călătorești des în străinătate?", raspuns: "Revolut — schimb valutar fără comision până la limita lunară a planului; peste limită și în weekend se aplică un comision." },
+                { icon: "💸", titlu: "Primești bani din străinătate (freelance)?", raspuns: "Wise — transferuri la cursul real, cu taxa afișată înainte, și cont multi-valută cu date bancare locale în mai multe țări." },
+                { icon: "🇪🇺", titlu: "Te muți în altă țară din UE?", raspuns: "N26 deschide conturi doar rezidenților din anumite țări — România nu e pe listă. Dacă locuiești deja acolo, verifică lista pe site-ul N26." },
+                { icon: "🇷🇴", titlu: "Vrei totul în română, la o bancă din România?", raspuns: "Salt Bank — 100% digitală, din grupul Banca Transilvania, cu depozitele garantate de FGDB." },
               ].map(g => (
                 <div key={g.titlu} className="bg-[#1f2329] border border-[#2a2f36] rounded-xl p-5">
                   <div className="text-2xl mb-3">{g.icon}</div>

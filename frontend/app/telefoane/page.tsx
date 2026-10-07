@@ -29,8 +29,8 @@ const CAT_TEL = ["electronice"];
 const BUGETE_TEL = [
   { pret: "Sub 1.000 lei", emoji: "📱", desc: "Android de baza, retea 4G, camera decenta", culoare: "bg-emerald-600" },
   { pret: "1.000 – 2.000 lei", emoji: "📲", desc: "Mid-range solid: Xiaomi, Samsung A, OnePlus Nord", culoare: "bg-[#ddf93c]" },
-  { pret: "2.000 – 4.000 lei", emoji: "✨", desc: "Flagship mid: Samsung S, Pixel, iPhone SE", culoare: "bg-[#ddf93c]" },
-  { pret: "Peste 4.000 lei", emoji: "👑", desc: "Flagship: iPhone 16, Samsung S25, OnePlus 13", culoare: "bg-[#ddf93c]" },
+  { pret: "2.000 – 4.000 lei", emoji: "✨", desc: "Flagship-uri accesibile: Samsung Galaxy S FE, Google Pixel, iPhone din generația trecută", culoare: "bg-[#ddf93c]" },
+  { pret: "Peste 4.000 lei", emoji: "👑", desc: "Flagship: iPhone Pro, Samsung Galaxy S Ultra, OnePlus", culoare: "bg-[#ddf93c]" },
 ];
 
 const BRANDURI_TEL = [
@@ -131,8 +131,8 @@ export default function TelefoaneePage() {
 
 
         <NisaProduse
-          merchantSlugs={["altex.ro","flanco.ro","evomag.ro","cel.ro","orange.ro","quickmobile.ro"]}
-          catSlug="electronice"
+          merchantSlugs={[]}
+          teme={["telefoane"]}
           titlu="Telefoane de la magazinele partenere"
           culoareAccent="teal"
           limit={12}

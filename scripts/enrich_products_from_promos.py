@@ -13,6 +13,10 @@ import os
 import re
 from datetime import datetime, timezone
 
+from continut_restrictionat import e_restrictionat
+from nume_magazin import nume_afisat
+from promotii import titlu_afisabil
+
 SCRIPT_DIR   = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT    = os.path.dirname(SCRIPT_DIR)
 OUTPUT_JSON  = os.path.join(REPO_ROOT, "frontend", "public", "output.json")
@@ -64,8 +68,10 @@ def extract_price(text: str) -> float:
 
 
 def promo_to_product(mag: dict, promo: dict, idx: int) -> dict | None:
-    title = (promo.get("nume") or "").strip()
-    if not title:
+    # 07.10.2026: titlul afisabil (la Impact `nume` e des doar codul, oferta e in `descriere`).
+    # Un titlu fara spatiu e codul insusi („SAVE10") sau un cuvant gol — nu spune ce e oferta.
+    title = re.sub(r"\s+", " ", titlu_afisabil(promo)).strip()
+    if not title or " " not in title:
         return None
 
     landing = (promo.get("landing_page") or "").strip()
@@ -85,16 +91,20 @@ def promo_to_product(mag: dict, promo: dict, idx: int) -> dict | None:
     categorie = mag.get("categorie", "")
 
     merchant_slug = mag.get("magazin", "")
-    merchant_name = merchant_slug.split(".")[0].capitalize()
+    merchant_name = nume_afisat(merchant_slug)  # sursa unica: lib/numeMagazin.ts
 
-    # Titlu curat — elimina diacriticile problematice
+    # 07.10.2026: codul NU intra in titlu. „… — Cod: VR70" il arata intreg pe orice card, fara clic
+    # pe linkul platit (deci fara comision); pe restul site-ului codul e mascat (lib/maskCod.ts).
     cod = (promo.get("cod_cupon") or "").strip()
-    if cod:
-        display_title = f"{title} — Cod: {cod}"
-    else:
-        display_title = title
+    display_title = title
+    if cod and len(cod) >= 3:
+        # La Impact, descrierea incepe des cu codul („IMPACTVPN75 — 75% off ...").
+        display_title = re.sub(re.escape(cod), "", display_title, flags=re.I)
+        display_title = re.sub(r"^[\s—–:\-|]+|[\s—–:\-|]+$", "", re.sub(r"\s{2,}", " ", display_title))
+        if " " not in display_title:
+            return None
 
-    return {
+    prod = {
         "id":           f"promo_{merchant_slug}_{idx}",
         "title":        display_title[:120],
         "url":          url,
@@ -113,6 +123,9 @@ def promo_to_product(mag: dict, promo: dict, idx: int) -> dict | None:
         "cod_cupon":    cod,
         "zile_ramase":  promo.get("zile_ramase", 0),
     }
+    # Magazinele si titlurile restrictionate (EXCLUSE_ACASA, continut explicit) nu ajung in feed-ul
+    # general — aceeasi regula ca la produsele din feed (fetch_product_feeds.py).
+    return None if e_restrictionat(prod) else prod
 
 
 def main():

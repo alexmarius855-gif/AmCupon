@@ -127,9 +127,9 @@ export default function SmartHomePage() {
 
 
         <NisaProduse
-          merchantSlugs={["altex.ro","dedeman.ro","flanco.ro","evomag.ro"]}
-          catSlug="electronice"
-          titlu="Produse smart home de la parteneri"
+          merchantSlugs={[]}
+          teme={["aspiratoare-robot"]}
+          titlu="Aspiratoare robot de la parteneri"
           culoareAccent="indigo"
           limit={12}
         />

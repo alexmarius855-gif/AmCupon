@@ -10,11 +10,11 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Instrumente SEO cu Reducere 2026 — Cod Semrush, Ahrefs",
-  description: "Coduri reducere instrumente SEO 2026: Semrush, Ahrefs, SE Ranking, Moz, Screaming Frog. Trial gratuit si reduceri pana la 40% la cele mai bune tool-uri SEO profesionale.",
+  title: "Instrumente SEO 2026 — Semrush, Ahrefs, Moz comparate",
+  description: "Instrumente SEO în 2026: ce face Semrush, Ahrefs și Moz, plus unelte gratuite — Search Console, Screaming Frog, PageSpeed Insights.",
   keywords: ["instrumente seo gratuite", "semrush reducere", "ahrefs cod reducere", "se ranking discount", "tool seo romania", "semrush trial gratuit", "software seo ieftin"],
   alternates: { canonical: "https://amcupon.ro/instrumente-seo" },
-  openGraph: { title: "Instrumente SEO cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/instrumente-seo", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
+  openGraph: { title: "Instrumente SEO 2026 | AmCupon.ro", url: "https://amcupon.ro/instrumente-seo", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
 const TOP_SEO_TOOLS = ["semrush.com","ahrefs.com","moz.com"];
@@ -24,30 +24,27 @@ const TOOLS_SEO = [
     slug: "semrush.com",
     name: "Semrush",
     emoji: "📊",
-    pret: "de la 99$/luna",
-    highlight: "All-in-one SEO suite",
+    highlight: "SEO și marketing, într-un singur abonament",
     culoare: "bg-[#ddf93c]",
-    desc: "Cea mai completa platforma SEO: research cuvinte cheie, audit site, analiza backlink-uri, monitorizare pozitii, analiza concurenta. Over 55+ instrumente intr-un singur abonament.",
+    desc: "Platformă SEO și de marketing: cercetare de cuvinte cheie, audit de site, analiza backlinkurilor, monitorizarea pozițiilor, analiza concurenței — peste 55 de instrumente într-un abonament.",
     features: ["Keyword Research", "Site Audit", "Backlink Analysis", "Rank Tracking", "Competitor Analysis", "Content Marketing"],
   },
   {
     slug: "ahrefs.com",
     name: "Ahrefs",
     emoji: "🔗",
-    pret: "de la 99$/luna",
-    highlight: "Best backlink database",
+    highlight: "Analiza backlinkurilor",
     culoare: "bg-[#ddf93c]",
-    desc: "Cea mai mare baza de date de backlink-uri din lume. Perfect pentru link building, analiza site-urilor concurentilor si research de continut. Site Explorer, Keywords Explorer, Site Audit.",
+    desc: "Una dintre cele mai mari baze de date de backlinkuri. Bună pentru link building, analiza concurenților și cercetare de conținut: Site Explorer, Keywords Explorer, Site Audit.",
     features: ["Site Explorer", "Keywords Explorer", "Content Explorer", "Site Audit", "Rank Tracker", "Web Explorer"],
   },
   {
     slug: "moz.com",
     name: "Moz Pro",
     emoji: "🎯",
-    pret: "de la 99$/luna",
-    highlight: "Domain Authority inventor",
+    highlight: "Creatorii metricii Domain Authority",
     culoare: "bg-[#ddf93c]",
-    desc: "Inventatorul metricii Domain Authority. Moz Pro ofera keyword research, site crawl, rank tracking si link research. Ideal pentru agentii SEO si freelanceri.",
+    desc: "Moz a creat metrica Domain Authority. Moz Pro oferă cercetare de cuvinte cheie, crawl de site, monitorizarea pozițiilor și analiza linkurilor.",
     features: ["Keyword Research", "Link Explorer", "Site Crawl", "Rank Tracking", "On-Page Grader", "MozBar Extension"],
   },
 ];
@@ -64,24 +61,24 @@ const TOOLS_GRATUITE = [
 const GHID_SEO = [
   {
     titlu: "Semrush sau Ahrefs — care e mai bun?",
-    continut: "Semrush este mai complet pentru marketing digital general (PPC, social, content) si are un keyword database mai mare pentru Romania si Europa de Est. Ahrefs exceleaza la analiza backlink-urilor si link building. Daca bugetul permite un singur tool, Semrush este alegerea mai versatila pentru piata romaneasca.",
+    continut: "Semrush acoperă mai mult din marketingul digital (PPC, social, conținut), pe lângă SEO. Ahrefs e cunoscut mai ales pentru analiza backlinkurilor și link building. Dacă vrei un singur tool pentru mai multe canale, Semrush e mai versatil; dacă te interesează mai ales linkurile, Ahrefs.",
   },
   {
     titlu: "Poti face SEO bun cu instrumente gratuite?",
-    continut: "Da, la inceput. Google Search Console + Google Analytics + Screaming Frog free + Ubersuggest free acopera 60-70% din nevoile unui site mic. Treci la tool premium cand ai nevoie de date competitionale, tracking avansat de pozitii sau audit la scara.",
+    continut: "Da, la inceput. Google Search Console + Google Analytics + Screaming Frog free + Ubersuggest free acoperă mare parte din nevoile unui site mic. Treci la tool premium cand ai nevoie de date competitionale, tracking avansat de pozitii sau audit la scara.",
   },
   {
     titlu: "Cand merita un abonament Semrush?",
-    continut: "Merita abonamentul Semrush cand: ai un site cu mai mult de 5.000 vizitatori/luna, lucrezi cu mai multi clienti SEO, vrei sa monitorizezi pozitii pentru sute de cuvinte cheie sau ai nevoie de date despre concurenti. La 99$/luna, ROI-ul se obtine rapid daca esti serios in SEO.",
+    continut: "Merită când site-ul are deja trafic constant, lucrezi cu mai mulți clienți SEO, vrei să urmărești pozițiile pentru sute de cuvinte cheie sau ai nevoie de date despre concurenți. Prețul actual și perioada de probă le vezi pe site-ul Semrush.",
   },
 ];
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": "Instrumente SEO cu Reducere 2026",
+  "name": "Instrumente SEO 2026",
   "url": "https://amcupon.ro/instrumente-seo",
-  "description": "Coduri reducere si trial gratuit la cele mai bune instrumente SEO: Semrush, Ahrefs, Moz, SE Ranking",
+  "description": "Semrush, Ahrefs și Moz comparate, plus unelte SEO gratuite",
 };
 
 export default function InstrumenteSeoPage() {
@@ -137,7 +134,7 @@ export default function InstrumenteSeoPage() {
         <section className="max-w-6xl mx-auto px-4 py-12">
           <div className="text-center mb-8">
             <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-2">TOP INSTRUMENTE</p>
-            <h2 className="text-2xl font-black text-[#ffffff]">Cele mai bune tool-uri SEO in {an}</h2>
+            <h2 className="text-2xl font-black text-[#ffffff]">Instrumente SEO profesionale, {an}</h2>
           </div>
           <div className="space-y-4">
             {TOOLS_SEO.map(t => {
@@ -159,7 +156,6 @@ export default function InstrumenteSeoPage() {
                         ))}
                       </div>
                       <div className="flex flex-wrap items-center gap-3">
-                        <span className="text-[#ddf93c] font-black text-base">{t.pret}</span>
                         {mag ? (
                           <a href={`/cod-reducere/${t.slug}`}
                             className="inline-flex items-center gap-2 bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] text-sm font-bold px-4 py-2 rounded-xl transition-colors shadow-lg shadow-[#ddf93c]/20">
@@ -235,11 +231,11 @@ export default function InstrumenteSeoPage() {
         <section className="bg-gradient-to-r from-emerald-900/50 to-[#ddf93c]/50 border-t border-emerald-500/20 py-10 px-4">
           <div className="max-w-2xl mx-auto text-center">
             <div className="text-3xl mb-3">🔔</div>
-            <h2 className="text-xl font-black text-[#ffffff] mb-2">Vrei alerte cand apare un cod Semrush?</h2>
-            <p className="text-[#c9ced5] text-sm mb-5">Abonat-te la newsletter-ul AmCupon — trimitem alerte gratuite cand apar coduri de reducere la tool-uri SEO si software.</p>
-            <Link href="/#newsletter"
+            <h2 className="text-xl font-black text-[#ffffff] mb-2">Vrei ofertele active pe email?</h2>
+            <p className="text-[#c9ced5] text-sm mb-5">Abonează-te la newsletterul AmCupon: o dată pe zi, ofertele active de la magazinele partenere.</p>
+            <Link href="/newsletter"
               className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-6 py-3 rounded-xl transition-colors shadow-lg shadow-emerald-500/25">
-              Vreau alerte gratuite
+              Mă abonez
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/></svg>
             </Link>
           </div>

@@ -6,6 +6,7 @@ import MagazinCard from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
 import { esteInCategorie } from "../../lib/categoriiNisa";
+import { linkPlatit } from "@/lib/linkPlatit";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
@@ -15,11 +16,11 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Antivirus Ieftin Romania 2026 — Cod Reducere Bitdefender",
-  description: "Coduri reducere antivirus 2026: Bitdefender, Norton, ESET, Kaspersky, Malwarebytes. Protectie PC, Mac, Android la preturi reduse cu pana la 70% discount.",
+  title: "Antivirus Romania 2026 — Bitdefender, Norton, ESET",
+  description: "Antivirus pentru PC, Mac și Android în 2026: Bitdefender, Norton, ESET, Kaspersky — ce include fiecare și cum alegi pachetul potrivit.",
   keywords: ["antivirus ieftin romania", "cod reducere bitdefender", "norton reducere", "eset reducere", "kaspersky cod reducere", "antivirus 2026", "antivirus pc ieftin"],
   alternates: { canonical: "https://amcupon.ro/antivirus" },
-  openGraph: { title: "Antivirus Ieftin Romania 2026 | AmCupon.ro", url: "https://amcupon.ro/antivirus", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
+  openGraph: { title: "Antivirus Romania 2026 | AmCupon.ro", url: "https://amcupon.ro/antivirus", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
 
 const TOP_ANTIVIRUS = ["bitdefender.com","norton.com","eset.com","kaspersky.com","malwarebytes.com","altex.ro"];
@@ -47,15 +48,16 @@ const LINK_ESET        = "https://www.eset.com/ro/";
 const LINK_KASPERSKY   = "https://www.kaspersky.com";
 // ──────────────────────────────────────────────────────────────────────────
 
+// 07.10.2026: fara preturi scrise de mana si fara superlative; culoare = fundal + text lizibil.
 const COMPARATIV = [
-  { brand: "Bitdefender", pret: "de la 45 lei/an", highlight: "Cel mai bun detectie malware", culoare: "bg-red-600", url: LINK_BITDEFENDER },
-  { brand: "Norton 360", pret: "de la 59 lei/an", highlight: "VPN nelimitat inclus", culoare: "bg-yellow-500", url: LINK_NORTON },
-  { brand: "ESET NOD32", pret: "de la 39 lei/an", highlight: "Cel mai usor pe sistem", culoare: "bg-[#ddf93c]", url: LINK_ESET },
-  { brand: "Kaspersky", pret: "de la 49 lei/an", highlight: "Protectie bancara excelenta", culoare: "bg-emerald-600", url: LINK_KASPERSKY },
+  { brand: "Bitdefender", highlight: "Brand românesc, cu protecție anti-ransomware", culoare: "bg-red-600 text-[#ffffff]", url: LINK_BITDEFENDER },
+  { brand: "Norton 360", highlight: "VPN inclus în pachetele Norton 360", culoare: "bg-yellow-500 text-[#0c1000]", url: LINK_NORTON },
+  { brand: "ESET NOD32", highlight: "Gândit să consume puține resurse", culoare: "bg-[#ddf93c] text-[#0c1000]", url: LINK_ESET },
+  { brand: "Kaspersky", highlight: "Protecție la plăți online (Safe Money)", culoare: "bg-emerald-600 text-[#ffffff]", url: LINK_KASPERSKY },
 ];
 
 const CULORI_BADGE = ["bg-red-600","bg-yellow-500","bg-[#ddf93c]","bg-emerald-600","bg-[#ddf93c]","bg-[#ddf93c]","bg-[#ddf93c]"];
-const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Antivirus Ieftin Romania 2026","url":"https://amcupon.ro/antivirus","description":"Coduri reducere antivirus Romania — Bitdefender, Norton, ESET, Kaspersky" };
+const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Antivirus Romania 2026","url":"https://amcupon.ro/antivirus","description":"Antivirus pentru PC, Mac și Android — Bitdefender, Norton, ESET, Kaspersky" };
 
 export default function AntivirusPage() {
   const filePath = path.join(process.cwd(), "public", "output.json");
@@ -92,14 +94,14 @@ export default function AntivirusPage() {
           <div className="relative max-w-6xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-red-500/20 border border-red-500/30 text-red-300 text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
               <span className="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse"/>
-              Pana la 70% reducere
+              Ghid de alegere
             </div>
             <div className="text-6xl mb-5 drop-shadow-2xl">🛡️</div>
             <h1 className="text-4xl md:text-5xl font-black text-[#ffffff] mb-4 tracking-tight">
-              Antivirus Ieftin Romania <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #ddf93c, #ddf93c)"}}>{an}</span>
+              Antivirus Romania <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #ddf93c, #ddf93c)"}}>{an}</span>
             </h1>
             <p className="text-[#c9ced5] text-lg mb-8 max-w-xl mx-auto leading-relaxed">
-              Bitdefender, Norton, ESET, Kaspersky — protectie completa cu pana la 70% reducere fata de pretul de lista
+              Bitdefender, Norton, ESET, Kaspersky — ce include fiecare și cum alegi pachetul potrivit
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["PC & Mac","Android","iOS","5 Dispozitive","Parental Control","VPN Inclus","Dark Web Monitor"].map(c => (
@@ -113,17 +115,17 @@ export default function AntivirusPage() {
         <section className="max-w-6xl mx-auto px-4 py-12">
           <div className="text-center mb-8">
             <p className="text-xs font-bold text-red-400 uppercase tracking-widest mb-2">COMPARATIV</p>
-            <h2 className="text-2xl font-black text-[#ffffff]">Cel mai bun antivirus {an} — Romania</h2>
+            <h2 className="text-2xl font-black text-[#ffffff]">Antivirusuri populare în România, {an}</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {COMPARATIV.map(c => (
-              <a key={c.brand} href={c.url} target="_blank" rel="sponsored noopener noreferrer"
+              <a key={c.brand} href={linkPlatit(c.url)} target="_blank" rel="sponsored noopener noreferrer"
                 className="block bg-[#14181c] border border-[#1f2329] hover:border-red-500/40 rounded-xl p-5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-red-500/10">
-                <div className={`w-11 h-11 ${c.culoare} rounded-xl flex items-center justify-center text-[#ffffff] font-black text-sm mb-4`}>{c.brand[0]}</div>
+                <div className={`w-11 h-11 ${c.culoare} rounded-xl flex items-center justify-center font-black text-sm mb-4`}>{c.brand[0]}</div>
                 <h3 className="font-black text-[#ffffff] text-base mb-1">{c.brand}</h3>
                 <p className="text-xs text-[#c9ced5] mb-3">{c.highlight}</p>
                 <div className="flex items-center justify-between">
-                  <span className="text-[#ddf93c] font-black text-sm">{c.pret}</span>
+                  <span className="text-[#ddf93c] font-bold text-xs">Vezi pachetele pe site →</span>
                 </div>
               </a>
             ))}
@@ -155,7 +157,7 @@ export default function AntivirusPage() {
             <div className="flex items-center justify-between mb-6">
               <div>
                 <p className="text-xs font-bold text-[#ddf93c] uppercase tracking-widest mb-1">MAGAZINE PARTENERE</p>
-                <h2 className="text-xl font-black text-[#ffffff]">Unde gasesti antivirus cu reducere</h2>
+                <h2 className="text-xl font-black text-[#ffffff]">Unde găsești antivirus</h2>
               </div>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
@@ -170,7 +172,7 @@ export default function AntivirusPage() {
 
         <NisaProduse
           merchantSlugs={["bitdefender.com","norton.com","eset.com","altex.ro","pcgarage.ro"]}
-          catSlug="electronice"
+          catSlug=""
           titlu="Licențe antivirus de la parteneri"
           culoareAccent="red"
           limit={8}
@@ -183,16 +185,16 @@ export default function AntivirusPage() {
             <h2 className="text-2xl font-black text-[#ffffff] mb-7">Ce antivirus sa alegi in {an}</h2>
             <div className="space-y-5">
               <div className="bg-[#1f2329] border border-[#2a2f36] rounded-xl p-5">
-                <h3 className="font-bold text-[#ffffff] mb-2 text-base">Bitdefender — cel mai bun antivirus Romania {an}</h3>
-                <p className="text-sm text-[#c9ced5] leading-relaxed">Bitdefender este o companie romaneasca (Cluj-Napoca) cu una dintre cele mai bune rate de detectie din lume. Total Security include protectie pentru 5 dispozitive, VPN 200MB/zi, Parental Control, Password Manager si protectie webcam. Pretul de lista este 250 lei/an, dar cu coduri AmCupon gasesti frecvent la 80-120 lei.</p>
+                <h3 className="font-bold text-[#ffffff] mb-2 text-base">Bitdefender — antivirusul românesc</h3>
+                <p className="text-sm text-[#c9ced5] leading-relaxed">Bitdefender e o companie românească, fondată în București, cu rezultate bune constant în testele independente de detecție (AV-Test, AV-Comparatives). Pachetele diferă prin numărul de dispozitive și prin extra-uri (VPN, control parental, protecția camerei web) — compară-le pe site înainte să alegi.</p>
               </div>
               <div className="bg-[#1f2329] border border-[#2a2f36] rounded-xl p-5">
-                <h3 className="font-bold text-[#ffffff] mb-2 text-base">Norton 360 — VPN nelimitat inclus</h3>
-                <p className="text-sm text-[#c9ced5] leading-relaxed">Singurul antivirus major care include VPN fara limita de trafic in pachetul standard. Ideal daca folosesti frecvent retele Wi-Fi publice sau vrei acces la continut geo-blocat.</p>
+                <h3 className="font-bold text-[#ffffff] mb-2 text-base">Norton 360 — VPN inclus</h3>
+                <p className="text-sm text-[#c9ced5] leading-relaxed">Pachetele Norton 360 includ VPN pe lângă antivirus — util dacă folosești des rețele Wi-Fi publice.</p>
               </div>
               <div className="bg-[#1f2329] border border-[#2a2f36] rounded-xl p-5">
                 <h3 className="font-bold text-[#ffffff] mb-2 text-base">Ai nevoie de antivirus pe telefon?</h3>
-                <p className="text-sm text-[#c9ced5] leading-relaxed">Android — da, este vulnerabil. iOS — mai putin, dar un antivirus cu VPN si protectie phishing are sens. Majoritatea pachetelor premium includ protectie mobila fara cost suplimentar.</p>
+                <p className="text-sm text-[#c9ced5] leading-relaxed">Pe Android ajută, mai ales dacă instalezi aplicații din afara Google Play. Pe iOS aplicațiile sunt mai izolate; acolo contează mai mult protecția la phishing. Multe pachete pentru mai multe dispozitive includ și telefonul.</p>
               </div>
             </div>
           </div>

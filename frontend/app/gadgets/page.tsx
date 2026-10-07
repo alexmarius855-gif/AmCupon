@@ -139,9 +139,9 @@ export default function GadgetsPage() {
         </div>
 
         <NisaProduse
-          merchantSlugs={["altex.ro","flanco.ro","quickmobile.ro","cel.ro","pcgarage.ro","evomag.ro"]}
-          catSlug="electronice"
-          titlu="Gadgeturi de la parteneri"
+          merchantSlugs={[]}
+          teme={["casti-wireless", "smartwatch-uri"]}
+          titlu="Căști wireless și smartwatch-uri de la parteneri"
           culoareAccent="blue"
           limit={12}
         />

@@ -4,12 +4,12 @@ import { linkPlatit } from "@/lib/linkPlatit";
 
 export const metadata: Metadata = {
   title: "Recomandari Premium — VPN, Hosting, Freelancing, SEO Tools",
-  description: "Servicii online testate si recomandate de AmCupon.ro. VPN sigur, hosting rapid, unelte SEO, freelancing, design — tot ce ai nevoie pentru a castiga bani online.",
+  description: "Servicii online recomandate de AmCupon.ro, alese după prețurile și condițiile publicate: VPN, hosting, unelte SEO, design, freelancing, travel.",
   keywords: ["recomandari servicii online", "nordvpn romania", "hostinger parere", "fiverr romania", "semrush pret", "canva pro"],
   alternates: { canonical: "https://amcupon.ro/recomandari" },
   openGraph: {
     title: "Recomandari Premium AmCupon.ro — VPN, Hosting, SEO, Freelancing",
-    description: "Servicii online testate si recomandate. Tot ce ai nevoie pentru a lucra, castiga si naviga in siguranta online.",
+    description: "Servicii online recomandate: VPN, hosting, unelte SEO, design, freelancing și travel.",
     url: "https://amcupon.ro/recomandari",
     siteName: "AmCupon.ro",
     locale: "ro_RO",
@@ -17,40 +17,28 @@ export const metadata: Metadata = {
   },
 };
 
-// NOTA TEHNICA: URL-urile marcate cu [AFILIAT] sunt linkuri de afiliat.
-// Inlocuieste placeholder-urile cu ID-urile tale reale dupa ce aplici la fiecare program.
-// Pana atunci, linkurile duc direct la site-ul serviciului (functional pentru utilizatori).
-
+// Adresele oficiale; linkul platit vine din output.json prin linkPlatit() (NordVPN, Surfshark).
+// 07.10.2026: fara preturi scrise de mana (se schimba, iar pagina nu afla) si fara superlative.
 const CATEGORII = [
   {
     titlu: "VPN — Navigare Sigura",
     emoji: "🔒",
     slug: "/vpn",
-    desc: "Protejeaza-ti datele online si acceseaza continut din orice tara. Esential pentru Wi-Fi public, streaming si confidentialitate.",
+    desc: "Conexiune criptată pe Wi-Fi public, mai multă confidențialitate și acces la servere din alte țări.",
     servicii: [
       {
         name: "NordVPN",
-        tagline: "Cel mai popular VPN din lume — 6000+ servere in 111 tari",
-        pret: "de la 2.99€/luna",
-        comision: "40% recurring",
-        badge: "Recomandat",
-        badgeColor: "bg-[#ddf93c]",
-        program: "partners.nordvpn.com",
+        tagline: "VPN cu protocolul NordLynx și blocare de reclame și malware",
+        badge: "VPN + blocare reclame",
         url: "https://nordvpn.com",
-        // ACTUALIZARE: https://go.nordvpn.net/aff_c?offer_id=15&aff_id=TU_ID_NORDVPN
-        beneficii: ["6000+ servere in 111 tari", "Viteza mare NordLynx", "Netflix, HBO, Disney+ deblocat", "10 dispozitive simultan", "Garantie 30 zile"],
+        beneficii: ["Protocolul NordLynx", "Threat Protection — blochează reclame și site-uri periculoase", "Până la 10 dispozitive simultan", "Politică no-logs verificată de auditori externi", "Garanție de rambursare 30 de zile"],
       },
       {
         name: "Surfshark",
-        tagline: "Dispozitive nelimitate — cel mai bun raport calitate/pret",
-        pret: "de la 2.39€/luna",
-        comision: "40% recurring",
+        tagline: "VPN cu dispozitive nelimitate, pe un singur abonament",
         badge: "Dispozitive nelimitate",
-        badgeColor: "bg-[#ddf93c]",
-        program: "impact.com (Surfshark)",
         url: "https://surfshark.com",
-        // ACTUALIZARE: https://get.surfshark.net/aff_c?offer_id=926&aff_id=TU_ID_SURFSHARK
-        beneficii: ["Dispozitive NELIMITATE", "CleanWeb — blocheaza reclame", "Camouflage Mode", "MultiHop", "Garantie 30 zile"],
+        beneficii: ["Dispozitive nelimitate", "CleanWeb — blochează reclame și trackere", "Camouflage Mode", "MultiHop — conexiune prin două țări", "Garanție de rambursare 30 de zile"],
       },
     ],
   },
@@ -58,62 +46,43 @@ const CATEGORII = [
     titlu: "Hosting — Gazduire Web",
     emoji: "🌐",
     slug: "/hosting",
-    desc: "Ai un site sau vrei sa lansezi unul? Alege un hosting rapid si de incredere — diferenta dintre un site lent si unul rapid.",
+    desc: "Ai un site sau vrei să lansezi unul? Hostingul decide cât de repede se încarcă și cât de des cade.",
     servicii: [
       {
         name: "Hostinger",
-        tagline: "Cel mai accesibil hosting premium — perfect pentru inceput",
-        pret: "de la 1.99€/luna",
-        comision: "60% din prima achizitie",
+        tagline: "Hosting pentru site-uri la început: bloguri, portofolii, magazine mici",
         badge: "Planuri pentru început",
-        badgeColor: "bg-[#ddf93c]",
-        program: "hostinger.com/affiliates",
-        url: "https://hostinger.com",
-        // ACTUALIZARE: https://www.hostinger.com/partners/TU_ID_HOSTINGER
-        beneficii: ["WordPress in 1 click", "SSL gratuit", "Domeniu gratuit 1 an", "Uptime 99.9%", "Suport in romana 24/7"],
+        url: "https://www.hostinger.ro",
+        beneficii: ["Instalare WordPress cu un clic", "SSL gratuit", "Panou de control propriu (hPanel)", "Suport 24/7 prin chat"],
       },
       {
         name: "SiteGround",
-        tagline: "Hosting profesional cu suport exceptional si viteza maxima",
-        pret: "de la 3.99€/luna",
-        comision: "~75$ per signup",
+        tagline: "Hosting gestionat, pentru site-uri de firmă și magazine WooCommerce",
         badge: "Hosting gestionat",
-        badgeColor: "bg-[#ddf93c]",
-        program: "siteground.com/affiliates",
-        url: "https://siteground.com",
-        // ACTUALIZARE: https://www.siteground.com/go/TU_ID_SITEGROUND
-        beneficii: ["Viteza mare SSD NVMe + CDN", "Backup zilnic automat", "Staging environment", "Security AI", "Suport premium"],
+        url: "https://www.siteground.com",
+        beneficii: ["Backup zilnic automat", "CDN inclus", "Mediu de test (staging) pe planurile superioare", "Suport prin chat și tichete"],
       },
     ],
   },
   {
     titlu: "SEO & Marketing Digital",
     emoji: "📊",
-    slug: null,
-    desc: "Unelte profesionale pentru SEO, cercetare cuvinte cheie, analiza concurenta si cresterea traficului organic.",
+    slug: "/instrumente-seo",
+    desc: "Unelte pentru SEO: cercetare de cuvinte cheie, analiza concurenței și creșterea traficului organic.",
     servicii: [
       {
         name: "Semrush",
-        tagline: "Cea mai completa unealta SEO — folosita de 10 milioane de profesionisti",
-        pret: "de la 99$/luna",
-        comision: "200$ per vanzare + 10$ per lead",
+        tagline: "Platformă SEO și de marketing: cuvinte cheie, audit de site, concurență",
         badge: "SEO all-in-one",
-        badgeColor: "bg-[#ddf93c]",
-        program: "semrush.com/lp/inter-affiliate",
-        url: "https://semrush.com",
-        // ACTUALIZARE: link din programul Impact al Semrush
-        beneficii: ["Cercetare cuvinte cheie", "Analiza backlink-uri", "Audit site SEO", "Monitorizare pozitii Google", "Analiza concurenta"],
+        url: "https://www.semrush.com",
+        beneficii: ["Cercetare de cuvinte cheie", "Audit SEO al site-ului", "Monitorizarea pozițiilor în Google", "Analiza concurenței și a backlinkurilor"],
       },
       {
         name: "Ahrefs",
-        tagline: "Cel mai bun instrument pentru analiza link-uri si cercetare SEO",
-        pret: "de la 99$/luna",
-        comision: "program selectiv — aplica direct",
+        tagline: "Unealtă SEO cunoscută pentru analiza backlinkurilor",
         badge: "Analiză backlinkuri",
-        badgeColor: "bg-[#ddf93c]",
-        program: "ahrefs.com (program intern)",
         url: "https://ahrefs.com",
-        beneficii: ["Index backlink-uri masiv", "Content Explorer unic", "Site Explorer detaliat", "Keywords Explorer avansat", "Rank Tracker precis"],
+        beneficii: ["Site Explorer — backlinkuri și trafic estimat", "Keywords Explorer", "Content Explorer", "Rank Tracker"],
       },
     ],
   },
@@ -121,31 +90,21 @@ const CATEGORII = [
     titlu: "Design & Creatie",
     emoji: "🎨",
     slug: null,
-    desc: "Unelte de design accesibile pentru oricine — de la postari social media pana la prezentari profesionale.",
+    desc: "Unelte de design pentru oricine — de la postări pe social media până la prezentări profesionale.",
     servicii: [
       {
         name: "Canva Pro",
-        tagline: "Design profesional fara experienta — ales de 150 milioane de utilizatori",
-        pret: "~13€/luna",
-        comision: "36$ per conversie Pro",
+        tagline: "Design online fără experiență: postări, prezentări, materiale de marketing",
         badge: "Design online",
-        badgeColor: "bg-[#ddf93c]",
-        program: "canva.com/affiliates",
-        url: "https://canva.com",
-        // ACTUALIZARE: link din programul Canva Affiliates
-        beneficii: ["1000+ template-uri premium", "Fonturi si imagini Pro", "Programare social media", "Brand Kit personalizat", "Export fara watermark"],
+        url: "https://www.canva.com",
+        beneficii: ["Șabloane, fonturi și imagini Pro", "Brand Kit", "Programarea postărilor pe social media", "Eliminarea fundalului cu un clic"],
       },
       {
         name: "Adobe Creative Cloud",
-        tagline: "Suite profesionala completa — Photoshop, Illustrator, Premiere, mai mult",
-        pret: "de la 59.99€/luna",
-        comision: "85€ per abonament",
+        tagline: "Suita Adobe: Photoshop, Illustrator, Premiere Pro și altele",
         badge: "Suită profesională",
-        badgeColor: "bg-red-600",
-        program: "adobe.com/affiliates",
-        url: "https://adobe.com/creativecloud",
-        // ACTUALIZARE: link din programul Adobe Affiliates (Impact)
-        beneficii: ["Photoshop + Illustrator + Premiere", "100GB cloud storage", "Adobe Fonts inclus", "Actualizari permanente", "Suport prioritar"],
+        url: "https://www.adobe.com/creativecloud.html",
+        beneficii: ["Photoshop, Illustrator, Premiere Pro", "Adobe Fonts inclus", "Spațiu de stocare în cloud", "Actualizările incluse în abonament"],
       },
     ],
   },
@@ -153,31 +112,21 @@ const CATEGORII = [
     titlu: "Freelancing & Venituri Online",
     emoji: "💼",
     slug: null,
-    desc: "Platforme unde poti castiga bani online sau gasi freelanceri pentru proiectele tale.",
+    desc: "Platforme unde poți câștiga bani online sau găsi freelanceri pentru proiectele tale.",
     servicii: [
       {
         name: "Fiverr",
-        tagline: "Cea mai mare platforma de freelancing — angajezi sau castigi din servicii",
-        pret: "comision 20% Fiverr",
-        comision: "150$ CPA per cumparator",
+        tagline: "Platformă de servicii freelance: comanzi sau vinzi servicii",
         badge: "Freelanceri",
-        badgeColor: "bg-green-600",
-        program: "affiliates.fiverr.com",
-        url: "https://fiverr.com",
-        // ACTUALIZARE: link din programul Fiverr Affiliates (aprobare instantanee)
-        beneficii: ["Milioane de servicii de la 5$", "Freelanceri din 190 tari", "Garantie ramburs", "Plata sigura prin escrow", "Logo, web, SEO, video, scris"],
+        url: "https://www.fiverr.com",
+        beneficii: ["Design, web, SEO, video, traduceri", "Plata ajunge la freelancer după ce accepți livrarea", "Recenzii publice pentru fiecare freelancer"],
       },
       {
         name: "Coursera",
-        tagline: "Cursuri online certificate de la universitati de top din lume",
-        pret: "de la 49$/luna (Plus)",
-        comision: "45% din abonament",
+        tagline: "Cursuri și certificate de la universități și companii",
         badge: "Certificări",
-        badgeColor: "bg-[#ddf93c]",
-        program: "coursera.org/affiliates",
-        url: "https://coursera.org",
-        // ACTUALIZARE: link din programul Coursera Affiliates (Impact)
-        beneficii: ["Cursuri de la Stanford, Google, Meta", "Certificate recunoscute mondial", "Specializari complete", "7 zile trial gratuit", "Continut in romana disponibil"],
+        url: "https://www.coursera.org",
+        beneficii: ["Certificate profesionale Google, IBM, Meta", "Specializări cu proiecte practice", "Perioadă de probă gratuită la Coursera Plus"],
       },
     ],
   },
@@ -185,31 +134,21 @@ const CATEGORII = [
     titlu: "Travel — Rezervari si Vacante",
     emoji: "✈️",
     slug: "/calatorie",
-    desc: "Cel mai bun pret pentru cazare, zboruri si masini de inchiriat. Compara inainte de a rezerva.",
+    desc: "Cazare și mașini de închiriat — compară ofertele înainte să rezervi.",
     servicii: [
       {
         name: "Booking.com",
-        tagline: "Cea mai mare platforma de cazare din lume — 1 milion+ proprietati",
-        pret: "fara taxe extra",
-        comision: "4% din valoarea rezervarii",
+        tagline: "Rezervări de cazare: hoteluri, apartamente, case de vacanță",
         badge: "Cazare",
-        badgeColor: "bg-[#ddf93c]",
-        program: "booking.com/affiliate-partner",
-        url: "https://booking.com",
-        // ACTUALIZARE: https://www.booking.com/index.html?aid=TU_ID_BOOKING
-        beneficii: ["1M+ proprietati in 220 tari", "Anulare gratuita la multe optiuni", "Genius — discount 10-20%", "Plata la hotel (nu in avans)", "App mobila excelenta"],
+        url: "https://www.booking.com",
+        beneficii: ["Anulare gratuită la multe opțiuni", "Programul Genius, cu reduceri la cazările participante", "Plata la proprietate, unde e disponibilă", "Aplicație pentru telefon"],
       },
       {
         name: "Rentalcars",
-        tagline: "Compara masini de inchiriat din toata lumea — cel mai mic pret garantat",
-        pret: "fara taxe ascunse",
-        comision: "~6% din rezervare",
+        tagline: "Compari mașini de închiriat de la mai multe firme",
         badge: "Mașini de închiriat",
-        badgeColor: "bg-green-600",
-        program: "rentalcars.com/affiliates",
-        url: "https://rentalcars.com",
-        // ACTUALIZARE: https://www.rentalcars.com/?affiliateCode=TU_COD_RENTALCARS
-        beneficii: ["60.000+ puncte de ridicare", "Anulare gratuita", "Garantia pretului mic", "Asigurare inclusa", "Comparare instant"],
+        url: "https://www.rentalcars.com",
+        beneficii: ["Oferte de la mai multe firme de închiriere", "Anulare gratuită la multe rezervări", "Asigurarea și politica de combustibil apar la fiecare ofertă"],
       },
     ],
   },
@@ -272,12 +211,9 @@ export default function RecomandariPage() {
                   <div>
                     <div className="flex items-center gap-2 mb-1">
                       <span className="text-xl font-black text-[#ffffff]">{s.name}</span>
-                      <span className={`text-[10px] font-black text-[#ffffff] px-2 py-0.5 rounded-full ${s.badgeColor}`}>{s.badge}</span>
+                      <span className="text-[10px] font-black text-[#0c1000] bg-[#ddf93c] px-2 py-0.5 rounded-full">{s.badge}</span>
                     </div>
                     <p className="text-[#c9ced5] text-sm">{s.tagline}</p>
-                  </div>
-                  <div className="text-right shrink-0">
-                    <div className="text-[#ddf93c] font-black text-sm">{s.pret}</div>
                   </div>
                 </div>
 
@@ -295,7 +231,6 @@ export default function RecomandariPage() {
                     className="bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] font-black px-5 py-3 rounded-xl text-sm transition-all text-center shadow-lg shadow-[#ddf93c]/20 hover:-translate-y-0.5 duration-200">
                     Incearca {s.name} →
                   </a>
-                  <p className="text-[10px] text-[#9399a0] text-center">Program afiliere: {s.program}</p>
                 </div>
               </div>
             ))}
@@ -308,7 +243,7 @@ export default function RecomandariPage() {
         <div className="bg-[#14181c]/50 border border-[#1f2329] rounded-xl p-5 text-center">
           <p className="text-[#9399a0] text-xs">
             Unele linkuri de pe aceasta pagina sunt linkuri de afiliat — daca faci o achizitie, AmCupon.ro primeste un comision, fara niciun cost suplimentar pentru tine.
-            Am comparat public preturile si specificatiile serviciilor recomandate. Comisioanele afisate nu sunt garantate — variaza in functie de programul fiecarui partener.
+            Descrierile se bazează pe ce publică fiecare serviciu; prețurile și condițiile se schimbă, așa că verifică-le pe site înainte să cumperi.
           </p>
         </div>
       </section>

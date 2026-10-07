@@ -12,6 +12,29 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 07.10.2026 (paginile editoriale scrise de mana: recomandari, servicii, financiar, nise — PUSHED):**
+- **Comisionul NOSTRU era afisat pe site**: /cursuri-online (de 44 de ori: grila „Platforme romanesti cu reduceri
+  active" lua TOATA categoria software si scria `m.comision`), /servicii („15% comision", „200$ per vanzare",
+  „150$ CPA", „SaaS cu comision mare"), /servicii-internationale („Cel mai mare comision", „Toate cu comision
+  verificat"), „Program afiliere: …" sub butoane pe /recomandari, /software-business, /trading. Scos peste tot;
+  campurile `comision`/`program` sterse din datele paginilor. Garda noua `comision publicat` in `verifica_site.py`.
+- **Trei butoane spre 404**: Shopify si Coursera (sablonul Impact `pxf.io/c/7761435/1/0`, scos din date pe 22.08,
+  ramas in pagini) si Bitdefender (pagina de inscriere ca afiliat). Garda noua `link sablon de afiliere`.
+- **Preturi scrise de mana in iunie, prezentate ca actuale** — scoase de pe /vpn, /hosting, /antivirus,
+  /instrumente-seo, /recomandari, /software-business, /ai-tools, /servicii: se scrie modelul („pretul creste la
+  reinnoire"), nu cifra. Fara superlative fara sursa („Cel mai rapid", „lider mondial", „Brand #1").
+- **Fapte false corectate**: XTB „Reglementat BNR + CNVM" (-> KNF, sucursala in Romania), cardul Binance (retras in
+  SEE), leverage 125x, „Staking 4-15%", „Dobanda 4%+", „bonus la inregistrare" (linkurile nu sunt de referral),
+  „NordVPN Teams" (-> NordLayer), ExpressVPN „functioneaza in China", Bitdefender „(Cluj-Napoca)" (-> Bucuresti).
+  **N26 scos de pe /carduri-bancare**: nu deschide conturi rezidentilor din Romania (lista oficiala support.n26.com).
+- **Sectiunile de produse de nisa** (`NisaProduse`) aratau orice vindea magazinul (pe /laptop: roata de abdomene,
+  placute de frana). Acum: `teme={[...]}` = regula din `lib/topFeed.ts` pe toate feed-urile partenerilor (/laptop,
+  /telefoane, /gadgets, /smart-home) sau `potrivire={/regex/}` pe tipul produsului (/gaming, /pescuit — acolo
+  feed-ul n-are echipament de pescuit, deci sectiunea dispare). Produsele din feed n-au `id` — identitatea e `url`.
+  Codul nu mai apare in titlurile promo-produselor (`enrich_products_from_promos.py` scria „… — Cod: VR70").
+- Contrast: text alb pe lime si text aproape negru pe gri inchis (butoanele #2/#3, insignele) pe 10 pagini.
+- Verificat: tsc 0, eslint 0, build 2470, `verifica_site.py --html` fara probleme (regulile noi dovedite pe text injectat).
+
 **UPDATE 05–06.10.2026 (onestitate + bani pe paginile CU TRAFIC: /top si „Cel mai bun X"; sweep de afirmatii false pe tot site-ul):**
 - **Trafic real, masurat** (Vercel Analytics pe `am-cupon-a8dz` — proiectul care serveste amcupon.ro; planul Hobby da doar 31 de
   zile): **132 de vizitatori in 31 de zile**, din cautari Bing 22, Google 6, DuckDuckGo 4, ChatGPT 3. Cautarile aterizeaza pe

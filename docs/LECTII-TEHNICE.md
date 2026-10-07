@@ -421,6 +421,24 @@ La push, garda a prins un link 404 într-un articol de magazin; deschizându-l, 
 propoziție, întrebând „e adevărat pentru ORICE magazin?” — nu se caută doar cuvintele deja cunoscute;
 (4) comentariile despre cod stau în cod, nu în șirul de text care ajunge pe pagină.
 
+### 07.10.2026 — a opta: paginile scrise de mână în iunie (recomandări, servicii, financiar)
+
+Sweep-urile de până acum trecuseră prin date, generatoare și șabloane; paginile editoriale scrise de mână
+(o singură dată, în iunie) nu le citise nimeni integral. Găsite pe 12 pagini: **comisionul nostru afișat
+cumpărătorului** (/cursuri-online de 44 de ori — grila lua TOATĂ categoria software și scria „Appsumo 100%
+comision”; /servicii „200$ per vanzare”, „150$ CPA”; insigna „Cel mai mare comision”; „Program afiliere: …”
+sub butoane), note „9.8/10” fără metodologie, prețuri din iunie prezentate ca actuale (ExpressVPN „6.67€”
+= prețul vechi în USD pe 15 luni), fapte expirate sau false (XTB „reglementat BNR + CNVM” — CNVM nu mai
+există din 2013; cardul Binance retras în SEE; „NordVPN Teams” redenumit NordLayer în 2021; N26 recomandat
+românilor, deși N26 nu deschide conturi rezidenților din România), „bonus la înregistrare” pe linkuri care
+nu sunt de recomandare, trei butoane spre 404 (Shopify, Coursera, Bitdefender) și secțiuni de produse care
+arătau orice vindea magazinul (pe /laptop: o roată de abdomene și plăcuțe de frână).
+**Reguli:** (1) o pagină scrisă de mână nu primește preț, notă, număr de servere/utilizatori sau dobândă
+fără o sursă care se actualizează singură — se scrie modelul („prețul crește la reînnoire”), nu cifra;
+(2) o grilă de produse sub un titlu de nișă trece prin regula temei (`lib/topFeed.ts`) sau printr-un filtru
+pe tipul produsului — fără potrivire, secțiunea nu apare; (3) garda are reguli pentru comision publicat și
+pentru șablonul de link Impact `…/c/<cont>/1/0` (dovedite pe text injectat).
+
 ## 11. Măsoară înainte să tai, și înainte să repari
 
 - **08.08:** două secțiuni de homepage păreau redundante. Măsurate: suprapunere **zero**, seturi

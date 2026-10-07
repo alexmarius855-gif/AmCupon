@@ -2,65 +2,70 @@ import { Metadata } from "next";
 import Link from "next/link";
 import fs from "fs";
 import path from "path";
+import MagazinCard from "../components/MagazinCard";
+import { linkPlatit } from "@/lib/linkPlatit";
 
 export const metadata: Metadata = {
-  title: "Software Business cu Reducere Romania 2026 — SaaS",
-  description: "Coduri de reducere la software business: facturare online, contabilitate, SEO tools, design, project management. Facturis-online.ro si multe altele.",
+  title: "Software Business 2026 — Unelte SaaS pentru Firme",
+  description: "Unelte software pentru firme — SEO, design, email marketing, productivitate, securitate — și partenerii AmCupon din categoria software, cu ofertele lor active.",
   keywords: ["software facturare reducere", "facturis-online reducere", "saas romania reducere", "tools business reducere", "semrush reducere", "canva pro reducere"],
   alternates: { canonical: "https://amcupon.ro/software-business" },
-  openGraph: { title: "Software Business cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/software-business", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
+  openGraph: { title: "Software Business 2026 | AmCupon.ro", url: "https://amcupon.ro/software-business", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },
 };
 
+// Adresele oficiale (sau linkul de afiliat dat de retea); linkPlatit() ia linkul platit din output.json.
+// 07.10.2026: fara preturi scrise de mana — se schimba, iar pagina nu afla.
 const TOOLS_INTL = [
   {
     categ: "Marketplace SaaS Deals",
     items: [
-      { name: "AppSumo", desc: "Marketplace cu oferte lifetime deal la zeci de tool-uri SaaS — plata o singura data, acces pe viata, reduceri pana la 90%.", pret: "de la 29$ (lifetime)", comision: "program afiliat Impact.com", badge: "Oferte lifetime", url: "https://appsumo.8odi.net/AgnqdR", program: "appsumo.com/affiliate" },
+      { name: "AppSumo", desc: "Marketplace de oferte lifetime la unelte SaaS: plătești o dată și primești acces pe viață la planul cumpărat.", badge: "Oferte lifetime", url: "https://appsumo.8odi.net/AgnqdR" },
     ],
   },
   {
     categ: "SEO & Marketing",
     items: [
-      { name: "Semrush", desc: "Unealtă SEO completă: cercetare de cuvinte, audit de site, analiza concurenței.", pret: "vezi prețul pe site", comision: "200$ per vanzare", badge: "SEO all-in-one", url: "https://semrush.com", program: "semrush.com/lp/inter-affiliate" },
-      { name: "Canva Pro", desc: "Design profesional pentru social media, prezentari, materiale de marketing.", pret: "~13€/luna", comision: "36$ per conversie", badge: "Cel mai usor", url: "https://canva.com", program: "canva.com/affiliates" },
-      { name: "GetResponse", desc: "Platforma completa de email marketing: newslettere, automatizari, landing pages si webinarii.", pret: "de la 15€/luna", comision: "program afiliat Awin", badge: "Email marketing", url: "https://www.awin1.com/cread.php?awinmid=3142111&awinaffid=101829567&clickref=", program: "getresponse.com/partners" },
+      { name: "Semrush", desc: "Unealtă SEO completă: cercetare de cuvinte, audit de site, analiza concurenței.", badge: "SEO all-in-one", url: "https://www.semrush.com" },
+      { name: "Canva Pro", desc: "Design online pentru social media, prezentări și materiale de marketing.", badge: "Design online", url: "https://www.canva.com" },
+      { name: "GetResponse", desc: "Platformă de email marketing: newslettere, automatizări, landing pages și webinarii.", badge: "Email marketing", url: "https://www.awin1.com/cread.php?awinmid=3142111&awinaffid=101829567&clickref=" },
     ],
   },
   {
     categ: "Productivitate & Colaborare",
     items: [
-      { name: "Notion", desc: "All-in-one workspace: notite, baze de date, project management, wiki intern.", pret: "de la 8$/user/luna", comision: "program selectiv", badge: "Productivitate", url: "https://notion.so", program: "notion.so/affiliates" },
-      { name: "Grammarly", desc: "Corectare gramatica si stil in engleza — esential pentru business international.", pret: "de la 12$/luna", comision: "20$ per Premium", badge: "Scriere profesionala", url: "https://grammarly.com", program: "grammarly.com/affiliates" },
+      { name: "Notion", desc: "Spațiu de lucru: notițe, baze de date, managementul proiectelor, wiki intern.", badge: "Productivitate", url: "https://www.notion.so" },
+      { name: "Grammarly", desc: "Corectură de gramatică și stil pentru textele în engleză.", badge: "Scriere în engleză", url: "https://www.grammarly.com" },
     ],
   },
   {
     categ: "Securitate & Utilitare PC",
     items: [
-      { name: "NordPass", desc: "Manager de parole de la echipa NordVPN — stocare criptata, autocompletare si monitorizare breșe de date.", pret: "de la 1.59€/luna", comision: "program afiliat Awin", badge: "Parole & securitate", url: "https://www.awin1.com/cread.php?awinmid=5324242&awinaffid=101829567&clickref=", program: "nordpass.com/partners" },
-      { name: "Abelssoft", desc: "Pachet de utilitare PC: curatare, backup, dezinstalare completa, protectie date — pentru Windows.", pret: "de la 19.90€", comision: "program afiliat Awin", badge: "Utilitare PC", url: "https://www.awin1.com/cread.php?awinmid=6260179&awinaffid=101829567&clickref=", program: "abelssoft.de/affiliates" },
-      { name: "O&O Software", desc: "Utilitare germane pentru optimizare Windows: defragmentare, stergere sigura, backup si migrare sistem.", pret: "de la 29.95€", comision: "program afiliat Awin", badge: "Optimizare Windows", url: "https://www.awin1.com/cread.php?awinmid=2381550&awinaffid=101829567&clickref=", program: "oo-software.com/affiliates" },
+      { name: "NordPass", desc: "Manager de parole de la firma care face NordVPN: stocare criptată, autocompletare, alerte la scurgeri de date.", badge: "Parole & securitate", url: "https://www.awin1.com/cread.php?awinmid=5324242&awinaffid=101829567&clickref=" },
+      { name: "Abelssoft", desc: "Utilitare pentru Windows: curățare, backup, dezinstalare completă, protecția datelor.", badge: "Utilitare PC", url: "https://www.awin1.com/cread.php?awinmid=6260179&awinaffid=101829567&clickref=" },
+      { name: "O&O Software", desc: "Utilitare germane pentru Windows: defragmentare, ștergere sigură, backup și migrarea sistemului.", badge: "Optimizare Windows", url: "https://www.awin1.com/cread.php?awinmid=2381550&awinaffid=101829567&clickref=" },
     ],
   },
 ];
 
-interface Promotie { descriere?: string; cod_cupon?: string; zile_ramase?: number; }
-interface Mag { magazin: string; url_afiliat: string; are_promotie: boolean; promotii: Promotie[]; comision?: string; descriere?: string; categorie_slug?: string; }
+interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
+interface Mag {
+  magazin: string; url: string; url_afiliat: string; logo_url?: string;
+  categorie: string; categorie_slug?: string; scor_final: number;
+  are_promotie: boolean; cod_cupon: boolean; promotii: Promotie[]; trend: number;
+}
+
+const MAX_PARTENERI = 12;
 
 export default function SoftwareBusinessPage() {
   const allMag: Mag[] = JSON.parse(
     fs.readFileSync(path.join(process.cwd(), "public", "output.json"), "utf-8")
   );
 
-  // Software/SaaS românesc din 2Performant
-  const sw2p = allMag.filter(m =>
-    ["facturis-online.ro", "chroot.ro"].includes(m.magazin) ||
-    m.categorie_slug === "software"
-  ).sort((a, b) => {
-    // facturis primul (comision 35%)
-    if (a.magazin === "facturis-online.ro") return -1;
-    if (b.magazin === "facturis-online.ro") return 1;
-    return 0;
-  });
+  // Partenerii din categoria software (potrivire EXACTA pe slug): intai cei cu oferta activa.
+  const software = allMag
+    .filter(m => m.categorie_slug === "software")
+    .sort((a, b) => (b.are_promotie ? 1 : 0) - (a.are_promotie ? 1 : 0) || (b.scor_final || 0) - (a.scor_final || 0));
+  const parteneri = software.slice(0, MAX_PARTENERI);
 
   return (
     <div className="min-h-screen bg-[#06080b]">
@@ -77,64 +82,27 @@ export default function SoftwareBusinessPage() {
           </nav>
           <div className="text-5xl mb-4">📊</div>
           <h1 className="text-4xl md:text-5xl font-black text-[#ffffff] mb-4">
-            Software Business cu <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #c3dd2c, #ddf93c)" }}>Reducere</span>
+            Software pentru <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #c3dd2c, #ddf93c)" }}>Business</span>
           </h1>
           <p className="text-[#c9ced5] text-lg max-w-2xl mx-auto">
-            SaaS-uri si tools pentru business, cu reduceri. Facturare, SEO, design, contabilitate — toate mai ieftine.
+            Unelte SaaS pentru firme — SEO, design, email marketing, productivitate, securitate — și partenerii AmCupon din categoria software, cu ofertele lor active.
           </p>
         </div>
       </section>
 
-      {/* Highlight: facturis-online.ro 35% */}
-      <section className="max-w-5xl mx-auto px-4 py-8">
-        <div className="bg-gradient-to-r from-[#14181c]/40 to-[#14181c] border border-[#c3dd2c]/30 rounded-xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-5">
-          <div className="text-4xl">🏆</div>
-          <div className="flex-1">
-            <div className="flex items-center gap-2 mb-1">
-              <span className="font-black text-[#ffffff] text-lg">Facturis-Online.ro</span>
-              <span className="text-xs bg-emerald-800/60 text-emerald-400 border border-emerald-700/40 font-bold px-2 py-0.5 rounded-full">Recomandat</span>
-            </div>
-            <p className="text-[#c9ced5] text-sm">
-              Software de facturare online romanesc, ideal pentru antreprenori, freelanceri si IMM-uri. Interfata simpla, functii complete si suport in romana.
-            </p>
+      {/* Parteneri din categoria software */}
+      {parteneri.length > 0 && (
+        <section className="max-w-5xl mx-auto px-4 py-8">
+          <div className="flex items-end justify-between gap-4 mb-5">
+            <h2 className="text-xl font-black text-[#ffffff]">Parteneri AmCupon din categoria software</h2>
+            {software.length > MAX_PARTENERI && (
+              <Link href="/categorii/software" className="text-xs font-bold text-[#ddf93c] hover:text-[#c3dd2c] shrink-0">
+                Toți cei {software.length} →
+              </Link>
+            )}
           </div>
-          <a href="https://facturis-online.ro" target="_blank" rel="sponsored noopener noreferrer"
-            className="shrink-0 bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] font-black px-6 py-3 rounded-xl text-sm transition-all hover:-translate-y-0.5 shadow-lg shadow-[#ddf93c]/20">
-            Vezi Facturis →
-          </a>
-        </div>
-      </section>
-
-      {/* Software 2Performant */}
-      {sw2p.length > 0 && (
-        <section className="max-w-5xl mx-auto px-4 py-6 border-t border-[#1f2329]">
-          <h2 className="text-xl font-black text-[#ffffff] mb-5">Software & SaaS Romania — Parteneri 2Performant</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {sw2p.map(m => {
-              const promo = m.promotii.find(p => (p.zile_ramase ?? 99) >= 0) ?? m.promotii[0] ?? {};
-              const isFact = m.magazin === "facturis-online.ro";
-              return (
-                <div key={m.magazin} className={`bg-[#14181c] border rounded-xl p-5 flex flex-col gap-3 transition-all ${isFact ? "border-[#c3dd2c]/30 hover:border-[#ddf93c]/40" : "border-[#1f2329] hover:border-[#ddf93c]/20"}`}>
-                  <div className="flex items-start justify-between">
-                    <div>
-                      <p className="font-black text-[#ffffff]">{m.magazin.split(".")[0].charAt(0).toUpperCase() + m.magazin.split(".")[0].slice(1).replace("-", " ")}</p>
-                      <p className="text-xs text-[#9399a0]">{m.magazin}</p>
-                    </div>
-                  </div>
-                  {promo.descriere && <p className="text-[#c9ced5] text-xs">{promo.descriere.slice(0,100)}</p>}
-                  {promo.cod_cupon && (
-                    <div className="bg-[#1f2329] border border-dashed border-[#3a4048] rounded-lg px-3 py-2 text-center">
-                      <p className="text-[10px] text-[#9399a0] mb-0.5">Cod reducere</p>
-                      <p className="font-mono font-black text-[#ddf93c] text-sm">{promo.cod_cupon}</p>
-                    </div>
-                  )}
-                  <a href={m.url_afiliat} target="_blank" rel="sponsored noopener noreferrer"
-                    className={`mt-auto text-[#0c1000] text-sm font-bold py-2.5 rounded-lg text-center transition-all ${isFact ? "bg-[#ddf93c] hover:bg-[#ddf93c]" : "bg-[#2a2f36] hover:bg-[#1f2329]"}`}>
-                    {promo.cod_cupon ? `Cod: ${promo.cod_cupon}` : "Vezi oferta"} →
-                  </a>
-                </div>
-              );
-            })}
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+            {parteneri.map(m => <MagazinCard key={m.magazin} m={m} />)}
           </div>
         </section>
       )}
@@ -146,23 +114,17 @@ export default function SoftwareBusinessPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {group.items.map(item => (
               <div key={item.name} className="bg-[#14181c] border border-[#1f2329] hover:border-[#ddf93c]/20 rounded-xl p-5 flex flex-col gap-3 transition-all">
-                <div className="flex items-start justify-between gap-2">
-                  <div>
-                    <div className="flex items-center gap-2 mb-0.5">
-                      <span className="font-black text-[#ffffff]">{item.name}</span>
-                      <span className="text-[10px] bg-[#ddf93c]/50 text-[#c3dd2c] border border-[#ddf93c]/40 px-1.5 py-0.5 rounded-full font-bold">{item.badge}</span>
-                    </div>
-                    <p className="text-xs text-[#c9ced5]">{item.desc}</p>
+                <div>
+                  <div className="flex items-center gap-2 mb-0.5">
+                    <span className="font-black text-[#ffffff]">{item.name}</span>
+                    <span className="text-[10px] bg-[#ddf93c]/10 text-[#ddf93c] border border-[#ddf93c]/30 px-1.5 py-0.5 rounded-full font-bold">{item.badge}</span>
                   </div>
-                  <div className="text-right shrink-0">
-                    <p className="text-[#ddf93c] text-xs font-bold">{item.pret}</p>
-                  </div>
+                  <p className="text-xs text-[#c9ced5]">{item.desc}</p>
                 </div>
-                <a href={item.url} target="_blank" rel="sponsored noopener noreferrer"
-                  className="bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] text-sm font-bold py-2.5 rounded-lg text-center transition-all hover:-translate-y-0.5">
-                  Incearca {item.name} →
+                <a href={linkPlatit(item.url)} target="_blank" rel="sponsored noopener noreferrer"
+                  className="mt-auto bg-[#ddf93c] hover:bg-[#c3dd2c] text-[#0c1000] text-sm font-bold py-2.5 rounded-lg text-center transition-all hover:-translate-y-0.5">
+                  Încearcă {item.name} →
                 </a>
-                <p className="text-[10px] text-[#9399a0] text-center">Program afiliere: {item.program}</p>
               </div>
             ))}
           </div>
@@ -170,7 +132,7 @@ export default function SoftwareBusinessPage() {
       ))}
 
       <div className="max-w-5xl mx-auto px-4 pb-8">
-        <p className="text-[#9399a0] text-xs text-center">Unele linkuri sunt linkuri de afiliat. AmCupon.ro primeste un comision daca faci o achizitie, fara cost suplimentar pentru tine.</p>
+        <p className="text-[#9399a0] text-xs text-center">Unele linkuri sunt linkuri de afiliat. AmCupon.ro primește un comision dacă faci o achiziție, fără cost suplimentar pentru tine. Prețurile și condițiile le vezi pe site-ul fiecărui serviciu.</p>
       </div>
     </div>
   );
