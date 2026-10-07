@@ -69,6 +69,13 @@ Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Pro
   pe ..."). **Facute 10 + tensiometrul** (telefon poze, Samsung, casti, smartwatch, laptop gaming, friteuza, aspirator
   robot, scaun auto, carucior, router). Pentru urmatoarele: acelasi fisier, alt `articol(...)`, apoi
   `python articole_verificate.py`. Renderer-ul blogului stie acum citate („> ") si itemi de lista pe mai multe randuri.
+- **Seara 07.10 — 18 articole rescrise.** Suplimentele (vitamine, imunitate) au o regula in plus: in UE se scriu
+  DOAR afirmatiile autorizate (Reg. 432/2012 / registrul UE) si limitele maxime EFSA (tabelul oficial v11, aug. 2025:
+  vit. D 100 µg, zinc 25 mg, magneziu din suplimente 250 mg, seleniu 255 µg, vit. A 3000 µg, fier 40 mg „safe level";
+  vit. C si EPA/DHA fara limita); fara doze recomandate de noi, fara produse anume. Tema noua `vitamine-minerale`
+  (46 de produse, 11 parteneri) sub ambele. **Articole dublate:** redirect in `lib/redirecturi.ts` + `curata_articole.py`
+  le scoate singur din blog (`fara_redirectionate`) — primul: air fryer -> friteuze. **Raman 46** best-of/ghiduri;
+  urmatoarele: hrana caini, crema antirid, ser fata, TV, frigider („A+" e clasa veche), masina de spalat.
 
 **UPDATE 05–06.10.2026 (onestitate + bani pe paginile CU TRAFIC: /top si „Cel mai bun X"; sweep de afirmatii false pe tot site-ul):**
 - **Trafic real, masurat** (Vercel Analytics pe `am-cupon-a8dz` — proiectul care serveste amcupon.ro; planul Hobby da doar 31 de
