@@ -44,6 +44,23 @@ Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Pro
   il afisa intreg. `lib/oferta.ts::titluPromotie` + `pareCod` (folosite si de `CuponCard`), test in
   `lib/oferta.test.mjs`. La sursa, `promotii.py::cod_din_titlu` muta codul in `cod_cupon` cand descrierea il numeste
   langa „coupon/code/cod" (36 de promotii: DHgate, Geekbuying) — devin oferte cu cod, cu dezvaluire prin clic.
+- **Partea a treia (dupa-amiaza, PUSHED si verificat live):** (1) pagina de magazin alegea produsele pe SUBSIR
+  (`startsWith(prim label)`): 39 de pagini aratau produsele ALTUI magazin (Roborock: test de anemie; Xiaomi: trolere)
+  — acum `lib/produseMagazin.ts::alMagazinului` (exact), la fel `seoIndexable` si fallback-ul `/go`; statisticile de pret
+  din TOATE produsele, nu din primele 24. (2) `enrich_products_from_promos.py` inventa preturi (pragul „de minimum 149
+  lei" devenea pret, „pretul vechi" calculat din procent) — promotiile au acum `price` 0; garda `pret inventat pe
+  promotie`. (3) Codul se vedea INTREG fara clic pe linkul platit pe paginile de brand, /top-reduceri (butonul doar
+  copia), /oferte-azi, /comparatii, /cadouri, /radar, /instrumente-seo si in 16 articole lunare — acum
+  `components/CuponInteractiv.tsx` (CuponCard + dezvaluire) / `maskCod`; titlurile prin `titluPromotie` (TS) /
+  `promotii.titlu_promotie` + `fara_coduri` (Python, oglinda); garda `cod in clar in articol`. (4) `cod_din_titlu` ia si
+  codul scris in text („With Code: KLAIYI20"): 38 -> 99 de promotii cu cod; „$0 off" scoasa; `istoric_promotii` uneste
+  intrarea fara cod cu cea cu cod (altfel oferta de azi aparea si ca „trecuta"). (5) Sub-id + GA4 si la dezvaluirea
+  codului (window.open) si pe linkurile Impact de pe domeniile brandurilor (`RE_IMPACT_CALE`). (6) AppSumo trimitea pe
+  sell.appsumo.com (reclama „Refer Partners"): text link 2836145. (7) Articole: preturile din iunie pe modele scoase,
+  „Coduri reducere Notino." din 24 de descrieri scos, articolele de categorie/rezumat se improspateaza, tensiometrele
+  verificate la producator (BP A3 Basic nu exista in RO; M6 Comfort NU are Bluetooth). Ramane: articolele „Cel mai bun
+  X" au modele depasite (iPhone 16 Pro / Pixel 9 / S25 ca „cele mai bune 2026", RTX 4080) si statistici inventate
+  („farmaciile online au crescut 200%") — necesita rescriere cu date verificate, nu reguli.
 
 **UPDATE 05–06.10.2026 (onestitate + bani pe paginile CU TRAFIC: /top si „Cel mai bun X"; sweep de afirmatii false pe tot site-ul):**
 - **Trafic real, masurat** (Vercel Analytics pe `am-cupon-a8dz` — proiectul care serveste amcupon.ro; planul Hobby da doar 31 de

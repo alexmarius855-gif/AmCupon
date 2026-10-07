@@ -439,6 +439,21 @@ fără o sursă care se actualizează singură — se scrie modelul („prețul 
 pe tipul produsului — fără potrivire, secțiunea nu apare; (3) garda are reguli pentru comision publicat și
 pentru șablonul de link Impact `…/c/<cont>/1/0` (dovedite pe text injectat).
 
+### 07.10.2026 — a noua, în aceeași zi: ce pare un preț, ce pare un cod, ce pare al magazinului
+
+Trei regresii cu aceeași rădăcină — un câmp „completat” dintr-o sursă care nu-l conține:
+**(1)** `enrich_products_from_promos.py` lua primul număr cu „lei” din textul promoției drept preț
+(„de minimum 149 lei” = pragul comenzii) și **calcula** „prețul vechi” din procent (149 / 0,8 = 186,25 lei) —
+un preț tăiat pe care magazinul nu l-a scris nicăieri. **(2)** Grila de pe pagina de magazin alegea produsele
+pe subșir (tiparul #1, a cincea oară): la `ro.roborock.com` primul label e „ro”, deci 39 de pagini arătau
+produsele altor magazine, iar statisticile „Ce prețuri are X” se calculau din ele. **(3)** Codul: pe 7 tipuri
+de pagini se vedea întreg, fără clic pe linkul plătit, iar „Copiază și mergi” nu copia nimic.
+**Reguli:** o promoție nu are preț de produs; potrivirea produs→magazin e EXACTĂ și are test cu invariantul
+„un produs pe o singură pagină” (`lib/produseMagazin.test.mjs`, pică pe varianta veche); codul apare întreg
+doar după clicul care deschide linkul plătit — oriunde altundeva, `maskCod` sau `CuponInteractiv`, iar
+garda caută codurile active în textul articolelor. Și: când schimbi cheia unui istoric (codul intră în cheie),
+unește intrările vechi, altfel aceeași ofertă apare de două ori — o dată ca „trecută”.
+
 ## 11. Măsoară înainte să tai, și înainte să repari
 
 - **08.08:** două secțiuni de homepage păreau redundante. Măsurate: suprapunere **zero**, seturi
