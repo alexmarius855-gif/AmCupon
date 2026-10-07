@@ -110,6 +110,9 @@ export default function SportPage() {
         <NisaProduse
           merchantSlugs={["decathlon.ro","sportisimo.ro","sport-vision.ro","intersport.ro","hervis.ro","gigasport.ro"]}
           catSlug="sport"
+          // 07.10.2026: doar Decathlon are feed, iar marketplace-ul lui vinde si ce nu e echipament:
+          // capsule „Evening Primrose Oil", o camera foto pentru copii, saboti Crocs. Le scoate titlul.
+          potrivire={/^(?!.*\b(acizi|ulei|capsule|supliment\w*|vitamin\w*|camera|cam|saboti?|crocs|sandale|papuci)\b)/}
           titlu="Echipament sportiv de la parteneri"
           culoareAccent="indigo"
           limit={12}
