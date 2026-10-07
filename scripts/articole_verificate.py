@@ -143,6 +143,10 @@ MODELE = {
         M("MacBook Air M5", ["macbook air", "m5"], LAP),
         M("ASUS Zenbook A14", ["zenbook a14"], LAP),
     ],
+    "cele-mai-bune-adidasi-2026": [
+        M("Nike Air Force 1", ["air force 1"], "pantofi sport|sneakers|adidasi", ["(gs)", "jes", "copii"]),
+        M("New Balance 9060", ["new balance 9060"], "pantofi sport|sneakers|adidasi"),
+    ],
 }
 
 ARTICOLE: list[dict] = []
@@ -1218,6 +1222,179 @@ capul Aqua aspiră și spală pardoseala în aceeași trecere.
         "https://news.samsung.com/global/samsung-announces-global-launch-of-bespoke-jet-ai-the-worlds-first-ul-verified-ai-powered-cordless-stick-vacuum",
         "https://dreametech.com/products/z30-cordless-stick-vacuum (Z30: 310 AW, 90 min)",
         "https://dateks.lv/en/cenas/puteklu-suceji/1004474-rowenta-x-force-flex-15-60-32-4v-black-bronze (X-Force Flex 15.60)",
+    ],
+)
+
+
+# ─── Moda si calatorie (08.10) ───────────────────────────────────────────────────────────────────
+# Articolele vechi aveau fapte gresite, nu doar modele vechi: bagajul gratuit Wizz „40x20x25" (e 40x30x20 din
+# 01.11.2025), „TSA lock obligatoriu pentru SUA" (nu e obligatoriu), Air Force 1 „50+ ani de istorie" (e din 1982),
+# „UV400 = standard minim" (in UE cerinta e standardul EN ISO 12312-1 si marcajul CE). Ofertele de sub articole vin
+# din feed (temele pantofi-sport, ochelari-soare, trolere).
+CUM_AM_ALES_MODA = (
+    "> **Cum am scris ghidul.** Nu am purtat produsele. Am pornit de la regulile oficiale (companii aeriene, standarde "
+    "europene) și de la informațiile producătorilor. Prețurile se schimbă des, așa că nu le scriem aici: le vezi la magazin."
+)
+
+articol(
+    "cel-mai-bun-troller-2026",
+    "Cel mai bun troler 2026: dimensiuni pentru Ryanair și Wizz",
+    "Ce intră gratuit la Ryanair și Wizz Air în 2026, ce troler de cabină cere Priority, carcasă rigidă sau "
+    "textilă și ce contează la roți și greutate.",
+    "Calatorie",
+    f"""
+## Cel mai bun troler în 2026: începe cu dimensiunile
+
+Cel mai scump troler e cel pe care îl plătești a doua oară la poartă, ca bagaj de cală. Înainte de material și
+de marcă, contează dacă încape în regulile companiei cu care zbori.
+
+{CUM_AM_ALES_MODA}
+
+## Ce intră în avion în 2026
+
+- **Bagajul gratuit, sub scaun:** 40×30×20 cm, atât la Ryanair, cât și la Wizz Air. La Wizz Air dimensiunea e
+  valabilă din 1 noiembrie 2025, iar greutatea maximă e de 10 kg. Dimensiunea veche de 40×20×25 cm încă apare în
+  reclamele unor genți „pentru Ryanair".
+- **Trolerul de cabină:** la Ryanair, 55×40×20 cm și maximum 10 kg, doar cu Priority; la Wizz Air, 55×40×23 cm și
+  maximum 10 kg, doar cu WIZZ Priority. Un troler de 23 cm adâncime, bun pentru Wizz, nu intră în limita de 20 cm
+  de la Ryanair.
+- **Regulile se schimbă.** Verifică pe site-ul companiei înainte de fiecare zbor; dimensiunile se măsoară la poartă,
+  de obicei cu roțile și mânerele incluse.
+
+## Ce contează la troler
+
+- **Greutatea goală.** Cele 10 kg includ trolerul. Un troler de cabină de 3 kg îți lasă 7 kg pentru haine.
+- **Carcasă rigidă sau textilă.** Policarbonatul rezistă la lovituri și ploaie; carcasa textilă are buzunare
+  exterioare și se mai lasă la presare în cutia de măsurat — dar nu mai mult decât limita.
+- **Roțile.** Patru roți duble (opt în total) merg ușor pe aeroport; două roți mari trec mai bine peste borduri și
+  pietre cubice.
+- **Lacătul TSA.** Nu e obligatoriu. E util dacă zbori în SUA: agenții de securitate americani îl pot deschide cu
+  o cheie universală, deci de obicei nu trebuie tăiat.
+- **Expandabil.** Fermoarul de extensie adaugă volum, dar și adâncime — un troler extins poate ieși din limita de
+  cabină.
+
+## Cabină sau cală?
+
+- **Cabina** (55 cm) ajunge pentru un weekend sau o săptămână, dacă împachetezi atent.
+- **Cala, mărime medie** (în jur de 65–70 cm) pentru una-două săptămâni.
+- **Cala, mărime mare** (în jur de 75–80 cm) pentru familii și călătorii lungi — atenție la limita de greutate a
+  bagajului de cală, care diferă de la o companie la alta.
+
+[Vezi magazinele pentru călătorii →](/categorii/calatorii)
+""",
+    [
+        "https://ssr-weu2.wizzair.com/en-gb/help-centre/booking-information-and-services/baggage/baggage-allowance/cabin-baggage",
+        "https://www.which.co.uk/news/article/ryanair-hand-luggage-size-set-to-increase-a1CGn5z4rcvN (Ryanair 40x30x20)",
+        "https://www.titan-bags.com/en/help-contact/cabin-size-guide/ryanair (Ryanair 55x40x20, 10 kg, Priority)",
+        "https://loudavymkrokem.cz/en/wizz-air-luggage/ (Wizz: 40x30x20 din 01.11.2025; 55x40x23 cu Priority)",
+        "https://tsa.gov/blog/2014/02/18/tsa-travel-tips-tuesday-tsa-recognized-locks (lacatele TSA)",
+    ],
+)
+
+articol(
+    "cele-mai-bune-adidasi-2026",
+    "Cei mai buni adidași 2026: alergare și casual",
+    "Ce contează la adidașii de alergare (amortizare, drop, teren) și trei modele casual cu istorie: Nike Air "
+    "Force 1, Adidas Samba și New Balance 9060.",
+    "Fashion",
+    f"""
+## Cei mai buni adidași în 2026
+
+Adidașii de alergare și cei de stradă se aleg diferit: primii după pas, teren și distanță, ceilalți după stil și
+confort la purtare toată ziua.
+
+{CUM_AM_ALES_MODA}
+
+## Pentru alergare: ce contează
+
+- **Terenul.** Pe asfalt merg adidașii de șosea; pe potecă ai nevoie de modele de trail, cu talpă cu crampoane
+  și protecție la vârf.
+- **Amortizarea.** Mai multă spumă înseamnă impact mai blând pe distanțe lungi, dar și o pereche mai înaltă și,
+  de obicei, mai grea.
+- **Drop-ul** — diferența de înălțime dintre călcâi și vârf, în milimetri, trecută de producător în fișă. Dacă ești
+  obișnuit cu un drop mare, trece treptat la unul mic.
+- **Mărimea.** La alergare piciorul se umflă; mulți producători recomandă un spațiu de aproximativ un deget în
+  fața degetului mare. Cel mai sigur e să îi probezi.
+
+## Trei modele casual cu istorie
+
+### Nike Air Force 1 — din 1982
+Proiectat de Bruce Kilgore și lansat în 1982, a fost primul pantof de baschet Nike cu tehnologia Air. Varianta
+albă, joasă, e de zeci de ani una dintre cele mai purtate perechi de adidași de stradă.
+
+### Adidas Samba — din fotbalul anilor '50
+Lansat de adidas în anii '50 ca pantof de fotbal, cu talpă din cauciuc pentru aderență pe teren înghețat; azi e
+purtat aproape numai ca pantof de stradă, cu profil jos.
+
+### New Balance 9060 — din 2022
+Lansat în iulie 2022, pornind de la seria 99X a New Balance: talpă înaltă, cu linii inspirate din modelele de
+alergare de la începutul anilor 2000.
+
+## Cum alegi perechea de stradă
+
+- **Pielea** se curăță ușor și ține mai mult; **textilul și plasa** sunt mai ușoare și mai răcoroase.
+- **Talpa înaltă** (ca la 9060) adaugă câțiva centimetri și confort; **talpa joasă** (Samba) e mai ușoară.
+- La comenzile online ai, prin lege, 14 zile ca să returnezi perechea; termenul exact și cine plătește transportul
+  sunt în condițiile magazinului.
+
+[Vezi magazinele de modă →](/categorii/fashion)
+""",
+    [
+        "https://www.nike.com/air-force-1 (1982, Bruce Kilgore, primul pantof de baschet Nike cu Air)",
+        "https://garage.com.ph/2022/07/21/new-balance-puts-its-best-foot-forward-with-new-silhouette-the-9060/ (9060, iulie 2022)",
+        "https://www.guap.co/p/new-balance-release-their-latest-silhouette-the-9060 (inspirat din seria 99X)",
+        "https://www.adidas.co.uk/go/campaign/originals/archive/samba (Samba, anii '50, talpa pentru teren inghetat)",
+        "https://eur-lex.europa.eu/eli/dir/2011/83/oj (Directiva 2011/83/UE, retur in 14 zile)",
+    ],
+)
+
+articol(
+    "cele-mai-bune-ochelari-soare-2026",
+    "Cei mai buni ochelari de soare 2026: categorii și UV",
+    "Ce înseamnă categoriile 0–4 de pe ochelarii de soare, de ce categoria 4 nu e voie la volan, ce aduc lentilele "
+    "polarizate și ce să cauți pe etichetă.",
+    "Fashion",
+    f"""
+## Cei mai buni ochelari de soare în 2026
+
+O lentilă închisă la culoare nu înseamnă automat protecție. Ce contează e scris pe etichetă: categoria filtrului,
+marcajul CE și filtrarea UV.
+
+{CUM_AM_ALES_MODA}
+
+## Categoriile de filtru (standardul EN ISO 12312-1)
+
+În UE, ochelarii de soare de uz general sunt încadrați după cât din lumina vizibilă lasă să treacă:
+
+- **Categoria 0** — peste 80%: lentile aproape transparente, pentru confort, nu pentru soare.
+- **Categoria 1** — între 43% și 80%: soare slab.
+- **Categoria 2** — între 18% și 43%: soare mediu, potrivită pentru oraș.
+- **Categoria 3** — între 8% și 18%: soare puternic, plajă, munte vara.
+- **Categoria 4** — între 3% și 8%: zăpadă, ghețar, mare. **Nu e voie la volan**: standardul permite pentru
+  condus doar categoriile 0–3.
+
+Categoria trebuie trecută pe produs sau pe etichetă, alături de marcajul CE.
+
+## UV400 și polarizare
+
+- **UV400** e o mențiune comercială: lentila filtrează radiația ultravioletă până la 400 nm. Nu înlocuiește
+  categoria și marcajul CE — caută-le pe toate.
+- **Lentilele polarizate** reduc reflexiile de pe apă, asfalt ud sau zăpadă. Pot face mai greu de citit unele
+  ecrane (telefon, bord), care folosesc și ele lumină polarizată.
+
+## Cum alegi
+
+- **Pentru condus:** categoria 2 sau 3, niciodată 4.
+- **Pentru munte și zăpadă:** categoria 3 sau 4, cu ramă care acoperă bine lateralele.
+- **Pentru copii:** modele făcute pentru fața lor, cu aceleași mențiuni pe etichetă.
+- **Dacă porți ochelari de vedere:** lentile de soare cu dioptrii, la optician.
+
+[Vezi magazinele de modă →](/categorii/fashion)
+""",
+    [
+        "https://www.college-optometrists.org/clinical-guidance/guidance/knowledge,-skills-and-performance/examining-patients-who-drive/tints-and-driving (categoriile si condusul)",
+        "https://webstore.ansi.org/preview-pages/ISO/preview_ISO+12312-1-2022.pdf (ISO 12312-1)",
+        "https://www.sgs.com/en-fr/services/ppe-protective-eyewear (ochelarii de soare = echipament de protectie, marcaj CE)",
     ],
 )
 
