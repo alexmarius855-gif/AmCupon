@@ -460,7 +460,7 @@
    "magazine": 124
   },
   "2026-10-07": {
-   "promotii": 254,
+   "promotii": 253,
    "magazine": 129
   }
  },
@@ -499,6 +499,15 @@
    }
   ],
   "ada-shoes.ro": [
+   {
+    "k": "extrareducerelacolectienoua|",
+    "titlu": "Extra reducere la colectie noua",
+    "cod": false,
+    "prima": "2026-10-07",
+    "ultima": "2026-10-07",
+    "expira": "2026-10-10",
+    "activa": true
+   },
    {
     "k": "40reducere|",
     "titlu": "40% reducere",
@@ -579,7 +588,7 @@
     "prima": "2026-09-24",
     "ultima": "2026-10-07",
     "expira": "2026-10-07",
-    "activa": true
+    "activa": false
    },
    {
     "k": "backtoschool|bts",
@@ -797,7 +806,7 @@
     "k": "reduceridepanala50laproduseledinceramica10extracucodatelier49|atelier49",
     "titlu": "Reduceri de pana la 50% la produsele din ceramica + 10% EXTRA cu cod ATELIER49",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-10-05",
     "ultima": "2026-10-07",
     "expira": "2026-10-30",
     "activa": true
@@ -806,7 +815,7 @@
     "k": "reduceridepanala41laarticoleledinlemn10extracucodatelier49|atelier49",
     "titlu": "Reduceri de pana la 41% la articolele din lemn + 10% EXTRA cu cod ATELIER49",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-10-05",
     "ultima": "2026-10-07",
     "expira": "2026-10-31",
     "activa": true
@@ -815,37 +824,10 @@
     "k": "reduceridepanala36laarticoleledinmetal10extracucodatelier49|atelier49",
     "titlu": "Reduceri de pana la 36% la articolele din metal + 10% EXTRA cu cod ATELIER49",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-10-05",
     "ultima": "2026-10-07",
     "expira": "2026-10-31",
     "activa": true
-   },
-   {
-    "k": "reduceridepanala50laproduseledinceramica10extracucodatelier49|",
-    "titlu": "Reduceri de pana la 50% la produsele din ceramica + 10% EXTRA cu cod ATELIER49",
-    "cod": false,
-    "prima": "2026-10-05",
-    "ultima": "2026-10-06",
-    "expira": "2026-10-30",
-    "activa": false
-   },
-   {
-    "k": "reduceridepanala41laarticoleledinlemn10extracucodatelier49|",
-    "titlu": "Reduceri de pana la 41% la articolele din lemn + 10% EXTRA cu cod ATELIER49",
-    "cod": false,
-    "prima": "2026-10-05",
-    "ultima": "2026-10-06",
-    "expira": "2026-10-31",
-    "activa": false
-   },
-   {
-    "k": "reduceridepanala36laarticoleledinmetal10extracucodatelier49|",
-    "titlu": "Reduceri de pana la 36% la articolele din metal + 10% EXTRA cu cod ATELIER49",
-    "cod": false,
-    "prima": "2026-10-05",
-    "ultima": "2026-10-06",
-    "expira": "2026-10-31",
-    "activa": false
    },
    {
     "k": "discounturidepanala42lacadouripersonalizabile10extracucodatelier49|",
@@ -1153,19 +1135,10 @@
     "k": "aff20|aff20",
     "titlu": "Enjoy 20% off sitewide with code: AFF20",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-09-16",
     "ultima": "2026-10-07",
     "expira": "",
     "activa": true
-   },
-   {
-    "k": "aff20|",
-    "titlu": "Enjoy 20% off sitewide with code: AFF20",
-    "cod": false,
-    "prima": "2026-09-16",
-    "ultima": "2026-10-06",
-    "expira": "",
-    "activa": false
    }
   ],
   "awolvision.de": [
@@ -1262,19 +1235,10 @@
     "k": "newbc20|newbc20",
     "titlu": "Use code NEWBC20 to enjoy 20% OFF for new customers",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-09-08",
     "ultima": "2026-10-07",
     "expira": "2026-12-31",
     "activa": true
-   },
-   {
-    "k": "newbc20|",
-    "titlu": "Use code NEWBC20 to enjoy 20% OFF for new customers",
-    "cod": false,
-    "prima": "2026-09-08",
-    "ultima": "2026-10-06",
-    "expira": "2026-12-31",
-    "activa": false
    }
   ],
   "booking.regalhotel.com": [
@@ -1935,7 +1899,7 @@
     "k": "dh2026octsave8|dh2026octsave8",
     "titlu": "Save $8 on orders over $80 using coupon DH2026OCTSAVE8 at DHgate.",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-10-01",
     "ultima": "2026-10-07",
     "expira": "2026-10-31",
     "activa": true
@@ -1944,7 +1908,7 @@
     "k": "dh2026octsave5|dh2026octsave5",
     "titlu": "Save $5 on orders over $50 using coupon DH2026OCTSAVE5 at DHgate.",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-10-01",
     "ultima": "2026-10-07",
     "expira": "2026-10-31",
     "activa": true
@@ -1953,7 +1917,7 @@
     "k": "dh2026octsave4|dh2026octsave4",
     "titlu": "Save $4 on orders over $40 using coupon DH2026OCTSAVE4 at DHgate.",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-10-01",
     "ultima": "2026-10-07",
     "expira": "2026-10-31",
     "activa": true
@@ -1962,7 +1926,7 @@
     "k": "dh2026octsave40|dh2026octsave40",
     "titlu": "Save $40 on orders over $850 using coupon DH2026OCTSAVE40 at DHgate.",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-10-01",
     "ultima": "2026-10-07",
     "expira": "2026-10-31",
     "activa": true
@@ -1971,7 +1935,7 @@
     "k": "dh2026octsave3|dh2026octsave3",
     "titlu": "Save $3 on orders over $29 using coupon DH2026OCTSAVE3 at DHgate.",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-10-01",
     "ultima": "2026-10-07",
     "expira": "2026-10-31",
     "activa": true
@@ -1980,7 +1944,7 @@
     "k": "dh2026octsave35|dh2026octsave35",
     "titlu": "Save $35 on orders over $600 using coupon DH2026OCTSAVE35 at DHgate.",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-10-01",
     "ultima": "2026-10-07",
     "expira": "2026-10-31",
     "activa": true
@@ -1989,7 +1953,7 @@
     "k": "dh2026octsave30|dh2026octsave30",
     "titlu": "Save $30 on orders over $500 using coupon DH2026OCTSAVE30 at DHgate.",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-10-01",
     "ultima": "2026-10-07",
     "expira": "2026-10-31",
     "activa": true
@@ -1998,7 +1962,7 @@
     "k": "dh2026octsave25|dh2026octsave25",
     "titlu": "Save $25 on orders over $300 using coupon DH2026OCTSAVE25 at DHgate.",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-10-01",
     "ultima": "2026-10-07",
     "expira": "2026-10-31",
     "activa": true
@@ -2007,7 +1971,7 @@
     "k": "dh2026octsave20|dh2026octsave20",
     "titlu": "Save $20 on orders over $200 using coupon DH2026OCTSAVE20 at DHgate.",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-10-01",
     "ultima": "2026-10-07",
     "expira": "2026-10-31",
     "activa": true
@@ -2016,7 +1980,7 @@
     "k": "dh2026octsave16|dh2026octsave16",
     "titlu": "Save $16 on orders over $160 using coupon DH2026OCTSAVE16 at DHgate.",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-10-01",
     "ultima": "2026-10-07",
     "expira": "2026-10-31",
     "activa": true
@@ -2025,7 +1989,7 @@
     "k": "dh2026octsave12|dh2026octsave12",
     "titlu": "Save $12 on orders over $120 using coupon DH2026OCTSAVE12 at DHgate.",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-10-01",
     "ultima": "2026-10-07",
     "expira": "2026-10-31",
     "activa": true
@@ -2034,7 +1998,7 @@
     "k": "dh2026octsave10|dh2026octsave10",
     "titlu": "Save $10 on orders over $100 using coupon DH2026OCTSAVE10 at DHgate.",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-10-01",
     "ultima": "2026-10-07",
     "expira": "2026-10-31",
     "activa": true
@@ -2043,7 +2007,7 @@
     "k": "dh2026oct8new|dh2026oct8new",
     "titlu": "New user: Save $8 on orders over $50 using coupon DH2026OCT8NEW at DHgate.",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-10-01",
     "ultima": "2026-10-07",
     "expira": "2026-10-31",
     "activa": true
@@ -2052,7 +2016,7 @@
     "k": "dh2026oct4new|dh2026oct4new",
     "titlu": "New user: Save $4 on orders over $10 using coupon DH2026OCT4NEW at DHgate.",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-10-01",
     "ultima": "2026-10-07",
     "expira": "2026-10-31",
     "activa": true
@@ -2061,7 +2025,7 @@
     "k": "dh2026oct3new|dh2026oct3new",
     "titlu": "New user: Save $3 on orders over $5 using coupon DH2026OCT3NEW at DHgate.",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-10-01",
     "ultima": "2026-10-07",
     "expira": "2026-10-31",
     "activa": true
@@ -2070,154 +2034,10 @@
     "k": "dh2026oct10new|dh2026oct10new",
     "titlu": "New user: Save $10 on orders over $85 using coupon DH2026OCT10NEW at DHgate.",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-10-01",
     "ultima": "2026-10-07",
     "expira": "2026-10-31",
     "activa": true
-   },
-   {
-    "k": "dh2026octsave8|",
-    "titlu": "Save $8 on orders over $80 using coupon DH2026OCTSAVE8 at DHgate.",
-    "cod": false,
-    "prima": "2026-10-01",
-    "ultima": "2026-10-06",
-    "expira": "2026-10-31",
-    "activa": false
-   },
-   {
-    "k": "dh2026octsave5|",
-    "titlu": "Save $5 on orders over $50 using coupon DH2026OCTSAVE5 at DHgate.",
-    "cod": false,
-    "prima": "2026-10-01",
-    "ultima": "2026-10-06",
-    "expira": "2026-10-31",
-    "activa": false
-   },
-   {
-    "k": "dh2026octsave4|",
-    "titlu": "Save $4 on orders over $40 using coupon DH2026OCTSAVE4 at DHgate.",
-    "cod": false,
-    "prima": "2026-10-01",
-    "ultima": "2026-10-06",
-    "expira": "2026-10-31",
-    "activa": false
-   },
-   {
-    "k": "dh2026octsave40|",
-    "titlu": "Save $40 on orders over $850 using coupon DH2026OCTSAVE40 at DHgate.",
-    "cod": false,
-    "prima": "2026-10-01",
-    "ultima": "2026-10-06",
-    "expira": "2026-10-31",
-    "activa": false
-   },
-   {
-    "k": "dh2026octsave3|",
-    "titlu": "Save $3 on orders over $29 using coupon DH2026OCTSAVE3 at DHgate.",
-    "cod": false,
-    "prima": "2026-10-01",
-    "ultima": "2026-10-06",
-    "expira": "2026-10-31",
-    "activa": false
-   },
-   {
-    "k": "dh2026octsave35|",
-    "titlu": "Save $35 on orders over $600 using coupon DH2026OCTSAVE35 at DHgate.",
-    "cod": false,
-    "prima": "2026-10-01",
-    "ultima": "2026-10-06",
-    "expira": "2026-10-31",
-    "activa": false
-   },
-   {
-    "k": "dh2026octsave30|",
-    "titlu": "Save $30 on orders over $500 using coupon DH2026OCTSAVE30 at DHgate.",
-    "cod": false,
-    "prima": "2026-10-01",
-    "ultima": "2026-10-06",
-    "expira": "2026-10-31",
-    "activa": false
-   },
-   {
-    "k": "dh2026octsave25|",
-    "titlu": "Save $25 on orders over $300 using coupon DH2026OCTSAVE25 at DHgate.",
-    "cod": false,
-    "prima": "2026-10-01",
-    "ultima": "2026-10-06",
-    "expira": "2026-10-31",
-    "activa": false
-   },
-   {
-    "k": "dh2026octsave20|",
-    "titlu": "Save $20 on orders over $200 using coupon DH2026OCTSAVE20 at DHgate.",
-    "cod": false,
-    "prima": "2026-10-01",
-    "ultima": "2026-10-06",
-    "expira": "2026-10-31",
-    "activa": false
-   },
-   {
-    "k": "dh2026octsave16|",
-    "titlu": "Save $16 on orders over $160 using coupon DH2026OCTSAVE16 at DHgate.",
-    "cod": false,
-    "prima": "2026-10-01",
-    "ultima": "2026-10-06",
-    "expira": "2026-10-31",
-    "activa": false
-   },
-   {
-    "k": "dh2026octsave12|",
-    "titlu": "Save $12 on orders over $120 using coupon DH2026OCTSAVE12 at DHgate.",
-    "cod": false,
-    "prima": "2026-10-01",
-    "ultima": "2026-10-06",
-    "expira": "2026-10-31",
-    "activa": false
-   },
-   {
-    "k": "dh2026octsave10|",
-    "titlu": "Save $10 on orders over $100 using coupon DH2026OCTSAVE10 at DHgate.",
-    "cod": false,
-    "prima": "2026-10-01",
-    "ultima": "2026-10-06",
-    "expira": "2026-10-31",
-    "activa": false
-   },
-   {
-    "k": "dh2026oct8new|",
-    "titlu": "New user: Save $8 on orders over $50 using coupon DH2026OCT8NEW at DHgate.",
-    "cod": false,
-    "prima": "2026-10-01",
-    "ultima": "2026-10-06",
-    "expira": "2026-10-31",
-    "activa": false
-   },
-   {
-    "k": "dh2026oct4new|",
-    "titlu": "New user: Save $4 on orders over $10 using coupon DH2026OCT4NEW at DHgate.",
-    "cod": false,
-    "prima": "2026-10-01",
-    "ultima": "2026-10-06",
-    "expira": "2026-10-31",
-    "activa": false
-   },
-   {
-    "k": "dh2026oct3new|",
-    "titlu": "New user: Save $3 on orders over $5 using coupon DH2026OCT3NEW at DHgate.",
-    "cod": false,
-    "prima": "2026-10-01",
-    "ultima": "2026-10-06",
-    "expira": "2026-10-31",
-    "activa": false
-   },
-   {
-    "k": "dh2026oct10new|",
-    "titlu": "New user: Save $10 on orders over $85 using coupon DH2026OCT10NEW at DHgate.",
-    "cod": false,
-    "prima": "2026-10-01",
-    "ultima": "2026-10-06",
-    "expira": "2026-10-31",
-    "activa": false
    },
    {
     "k": "dh2026sepsave8|",
@@ -2552,20 +2372,11 @@
   ],
   "e-potion.ro": [
    {
-    "k": "10reducerepetotsiteulepotionro|",
-    "titlu": "10% reducere pe tot site-ul e-Potion.ro",
-    "cod": false,
-    "prima": "2026-09-24",
-    "ultima": "2026-10-07",
-    "expira": "2027-07-09",
-    "activa": true
-   },
-   {
     "k": "10reducerepetotsiteulepotionro|epotion10",
     "titlu": "10% reducere pe tot site-ul e-Potion.ro",
     "cod": true,
     "prima": "2026-07-16",
-    "ultima": "2026-09-24",
+    "ultima": "2026-10-07",
     "expira": "2027-07-09",
     "activa": false
    }
@@ -3597,20 +3408,11 @@
     "activa": false
    },
    {
-    "k": "economisestepanala25cuabonamentulfemiekoprotectielunarafaragriji|",
-    "titlu": "Economisește până la 25% cu Abonamentul Femi.Eko – Protecție lunară fără griji",
-    "cod": false,
-    "prima": "2026-06-30",
-    "ultima": "2026-10-07",
-    "expira": "2026-12-30",
-    "activa": true
-   },
-   {
     "k": "economisestepanala25cuabonamentulfemiekoprotectielunarafaragriji|sub10",
     "titlu": "Economisește până la 25% cu Abonamentul Femi.Eko – Protecție lunară fără griji",
     "cod": true,
     "prima": "2026-06-29",
-    "ultima": "2026-06-29",
+    "ultima": "2026-10-07",
     "expira": "2026-12-30",
     "activa": false
    }
@@ -3738,7 +3540,7 @@
     "k": "vader4p|vader4p",
     "titlu": "USD $10 Off Coupon Code: VADER4P, For Flydigi Vader 4 Pro Gaming Controller, Force Adjustment Lever Joystick, Hall & Micro 2-in-1 Triggers…",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-09-08",
     "ultima": "2026-10-07",
     "expira": "2028-07-16",
     "activa": true
@@ -3747,7 +3549,7 @@
     "k": "trimui256|trimui256",
     "titlu": "USD $3 Off Coupon Code: TRIMUI256, For TRIMUI Smart Pro Game Console with 256GB TF Card, 13729 Games, 4.96in 720P IPS Screen, Linux OS, 1GB…",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-09-08",
     "ultima": "2026-10-07",
     "expira": "2027-12-31",
     "activa": true
@@ -3756,7 +3558,7 @@
     "k": "sczz97|sczz97",
     "titlu": "USD $22 Off Coupon Code: SCZZ97, For MINIX NEO Z97 Mini PC, Intel N97 4 Cores Max 3.6GHz, 12GB LPDDR5X RAM 512GB SSD, WiFi 6 Bluetooth 5.2…",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-09-08",
     "ultima": "2026-10-07",
     "expira": "2028-03-30",
     "activa": true
@@ -3765,7 +3567,7 @@
     "k": "ray55weu|ray55weu",
     "titlu": "USD $27 Off Coupon Code: RAY55WEU, For LONGER RAY5 5W Laser Engraver, 3.5inch Touch Screen, Offline Carving, Ultrafine Focused Laser…",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-09-08",
     "ultima": "2026-10-07",
     "expira": "2027-04-30",
     "activa": true
@@ -3774,7 +3576,7 @@
     "k": "pulumape86|pulumape86",
     "titlu": "USD $224 Off Coupon Code: PULUMAPE86, For PULUMA PE86 Electric Bike, 500W Motor, 48V 20Ah Battery, 26 inch Tires, 40km/h Max Speed, 150km…",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-09-08",
     "ultima": "2026-10-07",
     "expira": "2029-07-17",
     "activa": true
@@ -3783,7 +3585,7 @@
     "k": "pulumape86pro|pulumape86pro",
     "titlu": "USD $224 Off Coupon Code: PULUMAPE86PRO, For PULUMA PE86 Pro Electric Bike, 500W*2 Motor, 48V 20Ah Battery, 26 inch Tires, 40km/h Max…",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-09-08",
     "ultima": "2026-10-07",
     "expira": "2028-07-17",
     "activa": true
@@ -3792,7 +3594,7 @@
     "k": "mob617|mob617",
     "titlu": "USD $56 Off Coupon Code: MOB617, For Foride Xtremer 3 Electric Bike, 250W Motor, 48V 12Ah Battery, 29*2.4 inch Tires, 25km/h Max Speed…",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-09-08",
     "ultima": "2026-10-07",
     "expira": "2028-07-17",
     "activa": true
@@ -3801,7 +3603,7 @@
     "k": "lray5rf|lray5rf",
     "titlu": "USD $4 Off Coupon Code: LRAY5RF, For LONGER RAY5 Laser Engraver Raiser Feet 70mm - 8pcs. Available Countries: ALL",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-09-08",
     "ultima": "2026-10-07",
     "expira": "2027-06-07",
     "activa": true
@@ -3810,7 +3612,7 @@
     "k": "lray5m25|lray5m25",
     "titlu": "USD $7 Off Coupon Code: LRAY5M25, For LONGER RAY5 Mini 2.5W Laser Engraver, 0.04mm Precision, 12,000mm/min Speed, for Wood/ Acrylic/…",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-09-08",
     "ultima": "2026-10-07",
     "expira": "2027-04-30",
     "activa": true
@@ -3819,7 +3621,7 @@
     "k": "longerr|longerr",
     "titlu": "USD $12 Off Coupon Code: LONGERR, For LONGER Laser Engraver Y-axis Rotary Roller with Bracket. Available Countries: ALL",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-09-08",
     "ultima": "2026-10-07",
     "expira": "2026-12-24",
     "activa": true
@@ -3828,7 +3630,7 @@
     "k": "lonanorc|lonanorc",
     "titlu": "USD $15 Off Coupon Code: LONANORC, For LONGER Laser Rotary Chuck for Nano/ Nano Pro. Available Countries: ALL",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-09-08",
     "ultima": "2026-10-07",
     "expira": "2026-12-24",
     "activa": true
@@ -3837,7 +3639,7 @@
     "k": "jakey10|jakey10",
     "titlu": "USD $7 Off Coupon Code: JAKEY10, For Jakemy JM-Y10 2-in-1 Ultrasonic Cutter & Polisher, 35W 40kHz, OLED Display, for…",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-09-08",
     "ultima": "2026-10-07",
     "expira": "2026-11-30",
     "activa": true
@@ -3846,45 +3648,9 @@
     "k": "jake10p|jake10p",
     "titlu": "USD $4 Off Coupon Code: JAKE10P, For Jakemy JM-Y10 Pro 2-in-1 Ultrasonic Cutter & Polisher, 35W 40kHz, OLED Display, for…",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-09-08",
     "ultima": "2026-10-07",
     "expira": "2027-04-30",
-    "activa": true
-   },
-   {
-    "k": "congkbh27|congkbh27",
-    "titlu": "USD $17 Off Coupon Code: CONGKBH27, For KTC H27E6 27 inch Gaming Monitor, 2560*1440 QHD Fast IPS Screen, 300Hz 240Hz Refresh Rate, HDR 400…",
-    "cod": true,
-    "prima": "2026-10-07",
-    "ultima": "2026-10-07",
-    "expira": "2026-11-30",
-    "activa": true
-   },
-   {
-    "k": "anys14p|anys14p",
-    "titlu": "USD $22 Off Coupon Code: ANYS14P, For Anycubic Kobra S1 Combo 3D Printer + 4kg Hyper PLA Filament - 1kg Purple + 1kg Blue + 1kg Red + 1kg…",
-    "cod": true,
-    "prima": "2026-10-07",
-    "ultima": "2026-10-07",
-    "expira": "2027-06-04",
-    "activa": true
-   },
-   {
-    "k": "anyks1ca|anyks1ca",
-    "titlu": "USD $45 Off Coupon Code: ANYKS1CA, For Anycubic Kobra S1 3D Printer with 2*Ace Pro, Vibrant 8-Color Printing, 600mm/s Ultra-Fast Speed…",
-    "cod": true,
-    "prima": "2026-10-07",
-    "ultima": "2026-10-07",
-    "expira": "2026-12-31",
-    "activa": true
-   },
-   {
-    "k": "9oj5squx31|9oj5squx31",
-    "titlu": "USD $67 Off Coupon Code: 9OJ5SQUX31, For Creality Raptor 3D Scanner, Hybrid Blue Laser NIR, 60fps Scanning Speed, Objects Between 5-2000mm…",
-    "cod": true,
-    "prima": "2026-10-07",
-    "ultima": "2026-10-07",
-    "expira": "2026-11-30",
     "activa": true
    },
    {
@@ -3897,6 +3663,42 @@
     "activa": true
    },
    {
+    "k": "congkbh27|congkbh27",
+    "titlu": "USD $17 Off Coupon Code: CONGKBH27, For KTC H27E6 27 inch Gaming Monitor, 2560*1440 QHD Fast IPS Screen, 300Hz 240Hz Refresh Rate, HDR 400…",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-10-07",
+    "expira": "2026-11-30",
+    "activa": true
+   },
+   {
+    "k": "anys14p|anys14p",
+    "titlu": "USD $22 Off Coupon Code: ANYS14P, For Anycubic Kobra S1 Combo 3D Printer + 4kg Hyper PLA Filament - 1kg Purple + 1kg Blue + 1kg Red + 1kg…",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-10-07",
+    "expira": "2027-06-04",
+    "activa": true
+   },
+   {
+    "k": "anyks1ca|anyks1ca",
+    "titlu": "USD $45 Off Coupon Code: ANYKS1CA, For Anycubic Kobra S1 3D Printer with 2*Ace Pro, Vibrant 8-Color Printing, 600mm/s Ultra-Fast Speed…",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-10-07",
+    "expira": "2026-12-31",
+    "activa": true
+   },
+   {
+    "k": "9oj5squx31|9oj5squx31",
+    "titlu": "USD $67 Off Coupon Code: 9OJ5SQUX31, For Creality Raptor 3D Scanner, Hybrid Blue Laser NIR, 60fps Scanning Speed, Objects Between 5-2000mm…",
+    "cod": true,
+    "prima": "2026-09-08",
+    "ultima": "2026-10-07",
+    "expira": "2026-11-30",
+    "activa": true
+   },
+   {
     "k": "26bts01|",
     "titlu": "6% OFF over $50/50€, max save $20/20€",
     "cod": false,
@@ -3906,165 +3708,12 @@
     "activa": true
    },
    {
-    "k": "vader4p|",
-    "titlu": "USD $10 Off Coupon Code: VADER4P, For Flydigi Vader 4 Pro Gaming Controller, Force Adjustment Lever Joystick, Hall & Micro 2-in-1 Triggers…",
-    "cod": false,
-    "prima": "2026-09-08",
-    "ultima": "2026-10-06",
-    "expira": "2028-07-16",
-    "activa": false
-   },
-   {
-    "k": "trimui256|",
-    "titlu": "USD $3 Off Coupon Code: TRIMUI256, For TRIMUI Smart Pro Game Console with 256GB TF Card, 13729 Games, 4.96in 720P IPS Screen, Linux OS, 1GB…",
-    "cod": false,
-    "prima": "2026-09-08",
-    "ultima": "2026-10-06",
-    "expira": "2027-12-31",
-    "activa": false
-   },
-   {
-    "k": "sczz97|",
-    "titlu": "USD $22 Off Coupon Code: SCZZ97, For MINIX NEO Z97 Mini PC, Intel N97 4 Cores Max 3.6GHz, 12GB LPDDR5X RAM 512GB SSD, WiFi 6 Bluetooth 5.2…",
-    "cod": false,
-    "prima": "2026-09-08",
-    "ultima": "2026-10-06",
-    "expira": "2028-03-30",
-    "activa": false
-   },
-   {
-    "k": "ray55weu|",
-    "titlu": "USD $27 Off Coupon Code: RAY55WEU, For LONGER RAY5 5W Laser Engraver, 3.5inch Touch Screen, Offline Carving, Ultrafine Focused Laser…",
-    "cod": false,
-    "prima": "2026-09-08",
-    "ultima": "2026-10-06",
-    "expira": "2027-04-30",
-    "activa": false
-   },
-   {
-    "k": "pulumape86|",
-    "titlu": "USD $224 Off Coupon Code: PULUMAPE86, For PULUMA PE86 Electric Bike, 500W Motor, 48V 20Ah Battery, 26 inch Tires, 40km/h Max Speed, 150km…",
-    "cod": false,
-    "prima": "2026-09-08",
-    "ultima": "2026-10-06",
-    "expira": "2029-07-17",
-    "activa": false
-   },
-   {
-    "k": "pulumape86pro|",
-    "titlu": "USD $224 Off Coupon Code: PULUMAPE86PRO, For PULUMA PE86 Pro Electric Bike, 500W*2 Motor, 48V 20Ah Battery, 26 inch Tires, 40km/h Max…",
-    "cod": false,
-    "prima": "2026-09-08",
-    "ultima": "2026-10-06",
-    "expira": "2028-07-17",
-    "activa": false
-   },
-   {
-    "k": "mob617|",
-    "titlu": "USD $56 Off Coupon Code: MOB617, For Foride Xtremer 3 Electric Bike, 250W Motor, 48V 12Ah Battery, 29*2.4 inch Tires, 25km/h Max Speed…",
-    "cod": false,
-    "prima": "2026-09-08",
-    "ultima": "2026-10-06",
-    "expira": "2028-07-17",
-    "activa": false
-   },
-   {
-    "k": "lray5rf|",
-    "titlu": "USD $4 Off Coupon Code: LRAY5RF, For LONGER RAY5 Laser Engraver Raiser Feet 70mm - 8pcs. Available Countries: ALL",
-    "cod": false,
-    "prima": "2026-09-08",
-    "ultima": "2026-10-06",
-    "expira": "2027-06-07",
-    "activa": false
-   },
-   {
-    "k": "lray5m25|",
-    "titlu": "USD $7 Off Coupon Code: LRAY5M25, For LONGER RAY5 Mini 2.5W Laser Engraver, 0.04mm Precision, 12,000mm/min Speed, for Wood/ Acrylic/…",
-    "cod": false,
-    "prima": "2026-09-08",
-    "ultima": "2026-10-06",
-    "expira": "2027-04-30",
-    "activa": false
-   },
-   {
-    "k": "longerr|",
-    "titlu": "USD $12 Off Coupon Code: LONGERR, For LONGER Laser Engraver Y-axis Rotary Roller with Bracket. Available Countries: ALL",
-    "cod": false,
-    "prima": "2026-09-08",
-    "ultima": "2026-10-06",
-    "expira": "2026-12-24",
-    "activa": false
-   },
-   {
-    "k": "lonanorc|",
-    "titlu": "USD $15 Off Coupon Code: LONANORC, For LONGER Laser Rotary Chuck for Nano/ Nano Pro. Available Countries: ALL",
-    "cod": false,
-    "prima": "2026-09-08",
-    "ultima": "2026-10-06",
-    "expira": "2026-12-24",
-    "activa": false
-   },
-   {
-    "k": "jakey10|",
-    "titlu": "USD $7 Off Coupon Code: JAKEY10, For Jakemy JM-Y10 2-in-1 Ultrasonic Cutter & Polisher, 35W 40kHz, OLED Display, for…",
-    "cod": false,
-    "prima": "2026-09-08",
-    "ultima": "2026-10-06",
-    "expira": "2026-11-30",
-    "activa": false
-   },
-   {
-    "k": "jake10p|",
-    "titlu": "USD $4 Off Coupon Code: JAKE10P, For Jakemy JM-Y10 Pro 2-in-1 Ultrasonic Cutter & Polisher, 35W 40kHz, OLED Display, for…",
-    "cod": false,
-    "prima": "2026-09-08",
-    "ultima": "2026-10-06",
-    "expira": "2027-04-30",
-    "activa": false
-   },
-   {
-    "k": "congkbh27|",
-    "titlu": "USD $17 Off Coupon Code: CONGKBH27, For KTC H27E6 27 inch Gaming Monitor, 2560*1440 QHD Fast IPS Screen, 300Hz 240Hz Refresh Rate, HDR 400…",
-    "cod": false,
-    "prima": "2026-09-08",
-    "ultima": "2026-10-06",
-    "expira": "2026-11-30",
-    "activa": false
-   },
-   {
     "k": "chau21|",
     "titlu": "USD $0 Off Coupon Code: CHAU21, For PVY Turbo Electric Bike 250W Motor 48V 13Ah Battery 20*4.0 inch Fat Tires 25km/h Max Speed 100km Range…",
     "cod": false,
     "prima": "2026-09-08",
     "ultima": "2026-10-06",
     "expira": "2026-12-01",
-    "activa": false
-   },
-   {
-    "k": "anys14p|",
-    "titlu": "USD $22 Off Coupon Code: ANYS14P, For Anycubic Kobra S1 Combo 3D Printer + 4kg Hyper PLA Filament - 1kg Purple + 1kg Blue + 1kg Red + 1kg…",
-    "cod": false,
-    "prima": "2026-09-08",
-    "ultima": "2026-10-06",
-    "expira": "2027-06-04",
-    "activa": false
-   },
-   {
-    "k": "anyks1ca|",
-    "titlu": "USD $45 Off Coupon Code: ANYKS1CA, For Anycubic Kobra S1 3D Printer with 2*Ace Pro, Vibrant 8-Color Printing, 600mm/s Ultra-Fast Speed…",
-    "cod": false,
-    "prima": "2026-09-08",
-    "ultima": "2026-10-06",
-    "expira": "2026-12-31",
-    "activa": false
-   },
-   {
-    "k": "9oj5squx31|",
-    "titlu": "USD $67 Off Coupon Code: 9OJ5SQUX31, For Creality Raptor 3D Scanner, Hybrid Blue Laser NIR, 60fps Scanning Speed, Objects Between 5-2000mm…",
-    "cod": false,
-    "prima": "2026-09-08",
-    "ultima": "2026-10-06",
-    "expira": "2026-11-30",
     "activa": false
    },
    {
@@ -4372,20 +4021,11 @@
   ],
   "hairify.ro": [
    {
-    "k": "15discountlafibreledepardincheratinapentruparrarsichelie|",
-    "titlu": "15% Discount la fibrele de păr din cheratină pentru păr rar și chelie",
-    "cod": false,
-    "prima": "2026-09-24",
-    "ultima": "2026-10-07",
-    "expira": "2026-12-30",
-    "activa": true
-   },
-   {
     "k": "15discountlafibreledepardincheratinapentruparrarsichelie|bl2016",
     "titlu": "15% Discount la fibrele de păr din cheratină pentru păr rar și chelie",
     "cod": true,
     "prima": "2026-06-29",
-    "ultima": "2026-09-24",
+    "ultima": "2026-10-07",
     "expira": "2026-12-30",
     "activa": false
    }
@@ -4511,7 +4151,7 @@
     "k": "save300onikiermasterwithcodeaffmaster300|affmaster300",
     "titlu": "Save 300€ on IKIER Master with Code AFFMASTER300",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-09-08",
     "ultima": "2026-10-07",
     "expira": "2027-01-31",
     "activa": true
@@ -4520,7 +4160,7 @@
     "k": "ikiermasterexclusive300offcouponcodeaffmaster300|affmaster300",
     "titlu": "IKIER Master Exclusive $300 OFF Coupon Code – AFFMASTER300",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-09-08",
     "ultima": "2026-10-07",
     "expira": "2027-01-31",
     "activa": true
@@ -4529,7 +4169,7 @@
     "k": "ikierk70maxexclusive200offcouponcodeaffk70200|affk70200",
     "titlu": "IKIER K70 MAX Exclusive 200€ OFF Coupon Code – AFFK70200",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-09-08",
     "ultima": "2026-10-07",
     "expira": "2027-01-31",
     "activa": true
@@ -4538,7 +4178,7 @@
     "k": "ikierk40maxexclusive160offcouponcodeaffk40160|affk40160",
     "titlu": "IKIER K40 MAX Exclusive 160€ OFF Coupon Code: AFFK40160",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-09-08",
     "ultima": "2026-10-07",
     "expira": "2027-01-31",
     "activa": true
@@ -4547,7 +4187,7 @@
     "k": "ikierk1ultra36wexclusive80offcouponcodeaffk3680|affk3680",
     "titlu": "IKIER K1 Ultra 36W Exclusive 80€ OFF Coupon Code: AFFK3680",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-09-08",
     "ultima": "2026-10-07",
     "expira": "2027-01-31",
     "activa": true
@@ -4556,7 +4196,7 @@
     "k": "ikierk1pro106420wexclusive100offcouponcodeaffk1064100|affk1064100",
     "titlu": "IKIER K1 PRO (1064) 20W Exclusive 100€ OFF Coupon Code: AFFK1064100",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-09-08",
     "ultima": "2026-10-07",
     "expira": "2027-01-31",
     "activa": true
@@ -4565,16 +4205,7 @@
     "k": "copyof160offikierk40maxwithcodeaffk40160|affk40160",
     "titlu": "Copy of $160 OFF iKier K40 MAX with Code AFFK40160",
     "cod": true,
-    "prima": "2026-10-07",
-    "ultima": "2026-10-07",
-    "expira": "2026-12-31",
-    "activa": true
-   },
-   {
-    "k": "200offikierk1promax70wwithcodeaffk70p200|affk70p200",
-    "titlu": "$200 OFF iKier K1 Pro Max 70W with Code AFFK70P200",
-    "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-09-08",
     "ultima": "2026-10-07",
     "expira": "2026-12-31",
     "activa": true
@@ -4616,88 +4247,16 @@
     "activa": true
    },
    {
-    "k": "save300onikiermasterwithcodeaffmaster300|",
-    "titlu": "Save 300€ on IKIER Master with Code AFFMASTER300",
-    "cod": false,
-    "prima": "2026-09-08",
-    "ultima": "2026-10-06",
-    "expira": "2027-01-31",
-    "activa": false
-   },
-   {
-    "k": "ikiermasterexclusive300offcouponcodeaffmaster300|",
-    "titlu": "IKIER Master Exclusive $300 OFF Coupon Code – AFFMASTER300",
-    "cod": false,
-    "prima": "2026-09-08",
-    "ultima": "2026-10-06",
-    "expira": "2027-01-31",
-    "activa": false
-   },
-   {
-    "k": "ikierk70maxexclusive200offcouponcodeaffk70200|",
-    "titlu": "IKIER K70 MAX Exclusive 200€ OFF Coupon Code – AFFK70200",
-    "cod": false,
-    "prima": "2026-09-08",
-    "ultima": "2026-10-06",
-    "expira": "2027-01-31",
-    "activa": false
-   },
-   {
-    "k": "ikierk40maxexclusive160offcouponcodeaffk40160|",
-    "titlu": "IKIER K40 MAX Exclusive 160€ OFF Coupon Code: AFFK40160",
-    "cod": false,
-    "prima": "2026-09-08",
-    "ultima": "2026-10-06",
-    "expira": "2027-01-31",
-    "activa": false
-   },
-   {
-    "k": "ikierk1ultra36wexclusive80offcouponcodeaffk3680|",
-    "titlu": "IKIER K1 Ultra 36W Exclusive 80€ OFF Coupon Code: AFFK3680",
-    "cod": false,
-    "prima": "2026-09-08",
-    "ultima": "2026-10-06",
-    "expira": "2027-01-31",
-    "activa": false
-   },
-   {
-    "k": "ikierk1pro106420wexclusive100offcouponcodeaffk1064100|",
-    "titlu": "IKIER K1 PRO (1064) 20W Exclusive 100€ OFF Coupon Code: AFFK1064100",
-    "cod": false,
-    "prima": "2026-09-08",
-    "ultima": "2026-10-06",
-    "expira": "2027-01-31",
-    "activa": false
-   },
-   {
-    "k": "copyof160offikierk40maxwithcodeaffk40160|",
-    "titlu": "Copy of $160 OFF iKier K40 MAX with Code AFFK40160",
-    "cod": false,
-    "prima": "2026-09-08",
-    "ultima": "2026-10-06",
-    "expira": "2026-12-31",
-    "activa": false
-   },
-   {
-    "k": "200offikierk1promax70wwithcodeaffk70p200|",
+    "k": "200offikierk1promax70wwithcodeaffk70p200|affk70p200",
     "titlu": "$200 OFF iKier K1 Pro Max 70W with Code AFFK70P200",
-    "cod": false,
+    "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-10-06",
+    "ultima": "2026-10-07",
     "expira": "2026-12-31",
-    "activa": false
+    "activa": true
    }
   ],
   "incaltamintelamoda.ro": [
-   {
-    "k": "reducerelaincaltamintebarbateascadinpielenaturalacodlamoda|",
-    "titlu": "Reducere la încălțăminte bărbătească din piele naturală – Cod LAMODA",
-    "cod": false,
-    "prima": "2026-09-24",
-    "ultima": "2026-10-06",
-    "expira": "",
-    "activa": false
-   },
    {
     "k": "reduceridepanala47laincaltamintedinpielenaturala|",
     "titlu": "Reduceri de până la 47% la încălțăminte din piele naturală",
@@ -5136,19 +4695,10 @@
     "k": "upto20offsitewidewithcodeklaiyi20|klaiyi20",
     "titlu": "Up To 20% OFF Sitewide With Code: KLAIYI20",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-10-02",
     "ultima": "2026-10-07",
     "expira": "2026-10-09",
     "activa": true
-   },
-   {
-    "k": "upto20offsitewidewithcodeklaiyi20|",
-    "titlu": "Up To 20% OFF Sitewide With Code: KLAIYI20",
-    "cod": false,
-    "prima": "2026-10-02",
-    "ultima": "2026-10-06",
-    "expira": "2026-10-09",
-    "activa": false
    },
    {
     "k": "upto23offwithcodesfall18fall30fall55|fall18",
@@ -5201,7 +4751,7 @@
     "k": "gluslimitedtimesalet3u2save41offusecodeht3u2|ht3u2",
     "titlu": "[GL&US] Limited time sale-T3U2 Save 41% OFF! Use code HT3U2",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-09-24",
     "ultima": "2026-10-07",
     "expira": "2026-10-31",
     "activa": true
@@ -5210,7 +4760,7 @@
     "k": "gluslimitedtimesales2save51offusecodeds20|ds20",
     "titlu": "[GL&US] Limited time sale-S2 Save 51% OFF! Use code DS20",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-09-24",
     "ultima": "2026-10-07",
     "expira": "2026-10-31",
     "activa": true
@@ -5219,7 +4769,7 @@
     "k": "gluslimitedtimesalep10save48offusecodedpr35|dpr35",
     "titlu": "[GL&US] Limited time sale-P10 Save 48% OFF! Use code DPR35",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-09-24",
     "ultima": "2026-10-07",
     "expira": "2026-10-31",
     "activa": true
@@ -5228,7 +4778,7 @@
     "k": "gluslimitedtimesalem3usave44offusecodev3u20|v3u20",
     "titlu": "[GL&US] Limited time sale-M3U Save 44% OFF! Use code V3U20",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-09-24",
     "ultima": "2026-10-07",
     "expira": "2026-10-31",
     "activa": true
@@ -5237,7 +4787,7 @@
     "k": "eulimitedtimesalet3u2save42offusecodeht3u2|ht3u2",
     "titlu": "[EU] Limited time sale-T3U2 Save 42% OFF! Use code HT3U2",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-09-24",
     "ultima": "2026-10-07",
     "expira": "2026-10-31",
     "activa": true
@@ -5246,7 +4796,7 @@
     "k": "eulimitedtimesales2save51offusecodeds20|ds20",
     "titlu": "[EU] Limited time sale-S2 Save 51% OFF! Use code DS20",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-09-24",
     "ultima": "2026-10-07",
     "expira": "2026-10-31",
     "activa": true
@@ -5255,7 +4805,7 @@
     "k": "eulimitedtimesalep10save48offusecodedpr35|dpr35",
     "titlu": "[EU] Limited time sale-P10 Save 48% OFF! Use code DPR35",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-09-24",
     "ultima": "2026-10-07",
     "expira": "2026-10-31",
     "activa": true
@@ -5264,82 +4814,10 @@
     "k": "eulimitedtimesalem3usave45offusecodev3u20|v3u20",
     "titlu": "[EU] Limited time sale-M3U Save 45% OFF! Use code V3U20",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-09-24",
     "ultima": "2026-10-07",
     "expira": "2026-10-31",
     "activa": true
-   },
-   {
-    "k": "gluslimitedtimesalet3u2save41offusecodeht3u2|",
-    "titlu": "[GL&US] Limited time sale-T3U2 Save 41% OFF! Use code HT3U2",
-    "cod": false,
-    "prima": "2026-09-24",
-    "ultima": "2026-10-06",
-    "expira": "2026-10-31",
-    "activa": false
-   },
-   {
-    "k": "gluslimitedtimesales2save51offusecodeds20|",
-    "titlu": "[GL&US] Limited time sale-S2 Save 51% OFF! Use code DS20",
-    "cod": false,
-    "prima": "2026-09-24",
-    "ultima": "2026-10-06",
-    "expira": "2026-10-31",
-    "activa": false
-   },
-   {
-    "k": "gluslimitedtimesalep10save48offusecodedpr35|",
-    "titlu": "[GL&US] Limited time sale-P10 Save 48% OFF! Use code DPR35",
-    "cod": false,
-    "prima": "2026-09-24",
-    "ultima": "2026-10-06",
-    "expira": "2026-10-31",
-    "activa": false
-   },
-   {
-    "k": "gluslimitedtimesalem3usave44offusecodev3u20|",
-    "titlu": "[GL&US] Limited time sale-M3U Save 44% OFF! Use code V3U20",
-    "cod": false,
-    "prima": "2026-09-24",
-    "ultima": "2026-10-06",
-    "expira": "2026-10-31",
-    "activa": false
-   },
-   {
-    "k": "eulimitedtimesalet3u2save42offusecodeht3u2|",
-    "titlu": "[EU] Limited time sale-T3U2 Save 42% OFF! Use code HT3U2",
-    "cod": false,
-    "prima": "2026-09-24",
-    "ultima": "2026-10-06",
-    "expira": "2026-10-31",
-    "activa": false
-   },
-   {
-    "k": "eulimitedtimesales2save51offusecodeds20|",
-    "titlu": "[EU] Limited time sale-S2 Save 51% OFF! Use code DS20",
-    "cod": false,
-    "prima": "2026-09-24",
-    "ultima": "2026-10-06",
-    "expira": "2026-10-31",
-    "activa": false
-   },
-   {
-    "k": "eulimitedtimesalep10save48offusecodedpr35|",
-    "titlu": "[EU] Limited time sale-P10 Save 48% OFF! Use code DPR35",
-    "cod": false,
-    "prima": "2026-09-24",
-    "ultima": "2026-10-06",
-    "expira": "2026-10-31",
-    "activa": false
-   },
-   {
-    "k": "eulimitedtimesalem3usave45offusecodev3u20|",
-    "titlu": "[EU] Limited time sale-M3U Save 45% OFF! Use code V3U20",
-    "cod": false,
-    "prima": "2026-09-24",
-    "ultima": "2026-10-06",
-    "expira": "2026-10-31",
-    "activa": false
    }
   ],
   "kugooescooters.com": [
@@ -5598,7 +5076,7 @@
     "prima": "2026-10-06",
     "ultima": "2026-10-07",
     "expira": "2026-10-07",
-    "activa": true
+    "activa": false
    },
    {
     "k": "backtounisinunumaihailaosesiunederasfoit|",
@@ -6407,19 +5885,10 @@
     "k": "feelfreshfeelyousaleupto100offwithcodefall|fall",
     "titlu": "Feel Fresh Feel You Sale Up To $100 Off With Code:FALL",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-09-30",
     "ultima": "2026-10-07",
     "expira": "2026-10-11",
     "activa": true
-   },
-   {
-    "k": "feelfreshfeelyousaleupto100offwithcodefall|",
-    "titlu": "Feel Fresh Feel You Sale Up To $100 Off With Code:FALL",
-    "cod": false,
-    "prima": "2026-09-30",
-    "ultima": "2026-10-06",
-    "expira": "2026-10-11",
-    "activa": false
    },
    {
     "k": "fallreadaywigssaleupto90offwithcodefall|fall",
@@ -6561,19 +6030,10 @@
     "k": "50offsharedhostingwordpresshosting|halloween50off",
     "titlu": "50% Off Shared Hosting & Wordpress Hosting",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-10-01",
     "ultima": "2026-10-07",
     "expira": "2026-11-01",
     "activa": true
-   },
-   {
-    "k": "50offsharedhostingwordpresshosting|",
-    "titlu": "50% Off Shared Hosting & Wordpress Hosting",
-    "cod": false,
-    "prima": "2026-10-01",
-    "ultima": "2026-10-06",
-    "expira": "2026-11-01",
-    "activa": false
    }
   ],
   "newpharma.ro": [
@@ -6800,6 +6260,15 @@
    }
   ],
   "obio.ro": [
+   {
+    "k": "20reducereceaiuribio|",
+    "titlu": "20% REDUCERE Ceaiuri Bio",
+    "cod": false,
+    "prima": "2026-10-07",
+    "ultima": "2026-10-07",
+    "expira": "2026-10-19",
+    "activa": true
+   },
    {
     "k": "spirulinacadoulacomenzidepeste300delei|",
     "titlu": "Spirulina CADOU la comenzi de peste 300 de lei",
@@ -7076,19 +6545,10 @@
     "k": "outincodeoiaff5|oiaff5",
     "titlu": "OutIn Code：OIAFF5",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-09-08",
     "ultima": "2026-10-07",
     "expira": "2027-04-16",
     "activa": true
-   },
-   {
-    "k": "outincodeoiaff5|",
-    "titlu": "OutIn Code：OIAFF5",
-    "cod": false,
-    "prima": "2026-09-08",
-    "ultima": "2026-10-06",
-    "expira": "2027-04-16",
-    "activa": false
    }
   ],
   "oyrosy.com": [
@@ -7178,20 +6638,11 @@
   ],
   "padelboost.co.uk": [
    {
-    "k": "5offdiscountcode|",
-    "titlu": "5% Off Discount Code",
-    "cod": false,
-    "prima": "2026-09-24",
-    "ultima": "2026-09-29",
-    "expira": "2026-09-29",
-    "activa": false
-   },
-   {
     "k": "5offdiscountcode|bleague5",
     "titlu": "5% Off Discount Code",
     "cod": true,
     "prima": "2026-08-20",
-    "ultima": "2026-09-24",
+    "ultima": "2026-09-29",
     "expira": "2026-09-29",
     "activa": false
    }
@@ -7294,6 +6745,15 @@
   ],
   "pickndazzle.com": [
    {
+    "k": "labor8signaturescentparfumdenisaplus3produseinvaloaredepeste455leiladoar195leicadoupaeseextra10la2cutii|",
+    "titlu": "LABOR8 Signature Scent: parfum de nisa plus 3 produse in valoare de peste 455 lei la doar 195 lei + cadou PAESE + extra 10% la 2 cutii",
+    "cod": false,
+    "prima": "2026-10-07",
+    "ultima": "2026-10-07",
+    "expira": "2026-11-28",
+    "activa": true
+   },
+   {
     "k": "avantperformanceboxdelapeste2300leiladoar165lei93reducere|",
     "titlu": "AVANT Performance Box: de la peste 2.300 lei la doar 165 lei – 93% reducere",
     "cod": false,
@@ -7381,20 +6841,11 @@
   ],
   "priveboutique.net": [
    {
-    "k": "pb20sezonbanchetmajorat20latoaterochiileprive|",
-    "titlu": "PB20 - Sezon banchet & majorat: -20% la toate rochiile PRIVE",
-    "cod": false,
-    "prima": "2026-09-24",
-    "ultima": "2026-09-29",
-    "expira": "2026-09-29",
-    "activa": false
-   },
-   {
     "k": "pb20sezonbanchetmajorat20latoaterochiileprive|pb20",
     "titlu": "PB20 - Sezon banchet & majorat: -20% la toate rochiile PRIVE",
     "cod": true,
     "prima": "2026-08-20",
-    "ultima": "2026-09-24",
+    "ultima": "2026-09-29",
     "expira": "2026-09-29",
     "activa": false
    }
@@ -7477,13 +6928,13 @@
     "activa": false
    },
    {
-    "k": "cuponreducere5|",
+    "k": "cuponreducere5|regata5",
     "titlu": "Cupon reducere 5%",
-    "cod": false,
-    "prima": "2026-06-30",
+    "cod": true,
+    "prima": "2026-06-29",
     "ultima": "2026-10-07",
     "expira": "",
-    "activa": true
+    "activa": false
    },
    {
     "k": "regatulpreturilormicipanala33reducereregataro|",
@@ -7492,15 +6943,6 @@
     "prima": "2026-06-29",
     "ultima": "2026-07-05",
     "expira": "2026-07-05",
-    "activa": false
-   },
-   {
-    "k": "cuponreducere5|regata5",
-    "titlu": "Cupon reducere 5%",
-    "cod": true,
-    "prima": "2026-06-29",
-    "ultima": "2026-06-29",
-    "expira": "",
     "activa": false
    }
   ],
@@ -7642,7 +7084,7 @@
     "prima": "2026-09-24",
     "ultima": "2026-10-07",
     "expira": "2026-10-07",
-    "activa": true
+    "activa": false
    },
    {
     "k": "codreduceresportdepot15lanouacolectiepentrucopii|",
@@ -7651,7 +7093,7 @@
     "prima": "2026-09-24",
     "ultima": "2026-10-07",
     "expira": "2026-10-07",
-    "activa": true
+    "activa": false
    },
    {
     "k": "sportdeporfinalsalemuntesimarereduceridepanala60|",
@@ -8261,7 +7703,7 @@
     "k": "dealspagereduceride10princoduloferte01|oferte01",
     "titlu": "Deals Page: Reduceri de 10% prin codul OFERTE01",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-06-29",
     "ultima": "2026-10-07",
     "expira": "",
     "activa": true
@@ -8283,15 +7725,6 @@
     "ultima": "2026-10-07",
     "expira": "",
     "activa": true
-   },
-   {
-    "k": "dealspagereduceride10princoduloferte01|",
-    "titlu": "Deals Page: Reduceri de 10% prin codul OFERTE01",
-    "cod": false,
-    "prima": "2026-06-29",
-    "ultima": "2026-10-06",
-    "expira": "",
-    "activa": false
    }
   ],
   "vidaxl.ro": [
@@ -8546,19 +7979,10 @@
     "k": "xmind10offxmind10off|xmind10off",
     "titlu": "Xmind 10% Off | XMIND10OFF",
     "cod": true,
-    "prima": "2026-10-07",
+    "prima": "2026-09-08",
     "ultima": "2026-10-07",
     "expira": "2027-06-01",
     "activa": true
-   },
-   {
-    "k": "xmind10offxmind10off|",
-    "titlu": "Xmind 10% Off | XMIND10OFF",
-    "cod": false,
-    "prima": "2026-09-08",
-    "ultima": "2026-10-06",
-    "expira": "2027-06-01",
-    "activa": false
    },
    {
     "k": "xmind10off|",
