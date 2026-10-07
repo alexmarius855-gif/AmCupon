@@ -156,6 +156,36 @@ def recurata(istoric: dict, azi: str, dupa_slug: dict) -> int:
     return scoase
 
 
+def uneste_coduri_descoperite(istoric: dict) -> int:
+    """Aceeasi promotie, vazuta intai fara cod si apoi cu el, e O SINGURA intrare.
+
+    07.10.2026: promotii.cod_din_titlu a inceput sa ia codul si din text („With Code: KLAIYI20"), deci
+    61 de promotii au primit `cod_cupon` de pe o zi pe alta. Cheia contine codul („baza|klaiyi20"), asa
+    ca a aparut o intrare noua, iar cea veche („baza|") ramanea in istoric ca oferta TRECUTA — pagina
+    Klaiyi arata oferta activa de azi si la „Istoricul ofertelor", „vazuta prima data pe 2 octombrie".
+    Intrarea fara cod se varsa in cea cu cod (cea mai recenta, daca sunt mai multe): `prima` cea mai
+    veche, `ultima` cea mai noua. Intoarce cate intrari s-au unit."""
+    unite = 0
+    for intrari in istoric.values():
+        pe_baza = {}
+        for k in intrari:
+            baza, _, cod = k.rpartition("|")
+            pe_baza.setdefault(baza, []).append((cod, k))
+        for chei in pe_baza.values():
+            fara = [k for cod, k in chei if not cod]
+            cu = [k for cod, k in chei if cod]
+            if not fara or not cu:
+                continue
+            tinta = intrari[max(cu, key=lambda k: (intrari[k]["ultima"], intrari[k]["prima"]))]
+            for k in fara:
+                e = intrari.pop(k)
+                tinta["prima"] = min(tinta["prima"], e["prima"])
+                tinta["ultima"] = max(tinta["ultima"], e["ultima"])
+                tinta["expira"] = tinta.get("expira") or e.get("expira", "")
+                unite += 1
+    return unite
+
+
 def acoperire(vazute: dict) -> dict:
     """Ce s-a vazut intr-o zi: cate promotii publicabile si la cate magazine. Din asta se afla,
     la raportul lunar, zilele in care o sursa n-a raspuns (24.09.2026: pe 06.08 si 19.08 numarul
@@ -256,13 +286,15 @@ def ruleaza(din_istoric_git: bool = False) -> None:
     active = adauga_zi(istoric, magazine, azi)
     zile[azi] = acoperire(active)   # ultima rulare a zilei ramane
     noi = sum(len(v) for v in istoric.values()) - inainte
+    unite = uneste_coduri_descoperite(istoric)
     scoase = recurata(istoric, azi, dupa_slug)
     doc = scrie(ISTORIC, istoric, de_la or azi, azi, active, zile)
 
     total = sum(len(v) for v in doc["magazine"].values())
     fara_azi = sum(1 for s, v in doc["magazine"].items() if not any(e["activa"] for e in v))
     print(f"istoric promotii: {len(doc['magazine'])} magazine, {total} promotii (de la {doc['de_la']}); "
-          f"noi azi: {noi}; scoase la recuratare: {scoase}; intrari stricate aruncate: {stricate}; "
+          f"noi azi: {noi}; unite (cod descoperit mai tarziu): {unite}; scoase la recuratare: {scoase}; "
+          f"intrari stricate aruncate: {stricate}; "
           f"magazine cu istoric si fara promotie azi: {fara_azi}")
 
 
@@ -311,6 +343,21 @@ def test() -> None:
     assert scoase == 4 and not {"x|", "y|", "z|save30"} & set(ist["exemplu.ro"]) and "test.eu/x" not in ist, scoase
     # uitarea dupa un an
     assert recurata(ist, "2027-08-01", {"exemplu.ro": m}) >= 1 and "exemplu.ro" not in ist
+
+    # 07.10.2026: aceeasi promotie, intai fara cod, apoi cu codul luat din text — o singura intrare
+    ist3 = {"klaiyihair.com": {
+        "upto20off|": {"k": "upto20off|", "titlu": "Up To 20% OFF Sitewide With Code: KLAIYI20", "cod": False,
+                       "prima": "2026-10-02", "ultima": "2026-10-06", "expira": "2026-10-09"},
+        "upto20off|klaiyi20": {"k": "upto20off|klaiyi20", "titlu": "Up To 20% OFF Sitewide With Code: KLAIYI20",
+                               "cod": True, "prima": "2026-10-07", "ultima": "2026-10-07", "expira": "2026-10-09"},
+        "alta|": {"k": "alta|", "titlu": "Alta oferta", "cod": False, "prima": "2026-09-01", "ultima": "2026-09-02",
+                  "expira": ""},
+    }}
+    assert uneste_coduri_descoperite(ist3) == 1, ist3
+    e3 = ist3["klaiyihair.com"]
+    assert set(e3) == {"upto20off|klaiyi20", "alta|"}, e3
+    assert (e3["upto20off|klaiyi20"]["prima"], e3["upto20off|klaiyi20"]["ultima"]) == ("2026-10-02", "2026-10-07")
+    assert uneste_coduri_descoperite(ist3) == 0, "a doua trecere a mai unit ceva"
 
     # validarea la granita: o intrare stricata nu trece
     import tempfile
