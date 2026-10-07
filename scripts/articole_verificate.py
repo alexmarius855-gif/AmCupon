@@ -1752,6 +1752,205 @@ te doare umărul. Marca vine abia după.
 )
 
 
+# ─── Reguli oficiale: avion, drone, biciclete, masina (08.10) ───────────────────────────────────
+# Articole unde informatia utila e chiar regula (si unde o regula gresita costa: power bank confiscat, amenda,
+# drona neinregistrata). Fiecare regula are sursa; unde sursele se contrazic (vesta, numarul de power bank-uri),
+# textul spune sa verifici la sursa oficiala.
+
+articol(
+    "cel-mai-bun-power-bank-2026",
+    "Cel mai bun power bank 2026: capacitate și reguli de avion",
+    "Cum transformi mAh în Wh, ce capacitate e voie în avion (100 Wh, 160 Wh), de ce power bank-ul nu merge în "
+    "bagajul de cală și ce companii interzic folosirea lui la bord.",
+    "Gadgets",
+    f"""
+## Cel mai bun power bank în 2026
+
+Pe cutie scrie capacitatea în mAh, dar companiile aeriene vorbesc în Wh. Și puterea de încărcare, în wați,
+contează la fel de mult ca mărimea bateriei.
+
+{CUM_AM_ALES_GHID}
+
+## mAh, Wh și cât încarcă de fapt
+
+- **Wh = mAh × tensiune ÷ 1.000.** Celulele au de obicei 3,6–3,7 V, deci un power bank de 20.000 mAh are
+  aproximativ 74 Wh, iar unul de 26.800 mAh, aproape 100 Wh. Valoarea în Wh e de obicei tipărită pe carcasă.
+- **Nu primești toată capacitatea în telefon** — o parte se pierde la conversia de tensiune și ca căldură.
+- **Puterea de ieșire (W)** decide cât de repede încarcă: pentru laptop ai nevoie de un port USB-C cu Power
+  Delivery și de puterea cerută de laptop (o găsești pe încărcătorul lui).
+
+## În avion
+
+- **Doar în bagajul de mână**, niciodată în bagajul de cală.
+- **Până la 100 Wh** — permis fără aprobare; **între 100 și 160 Wh** — doar cu aprobarea companiei aeriene;
+  **peste 160 Wh** — interzis în avioanele de pasageri.
+- **Folosirea la bord e tot mai des interzisă.** Grupul Lufthansa (inclusiv Austrian, SWISS, Eurowings) nu mai
+  permite folosirea sau încărcarea power bank-urilor la bord din 15 ianuarie 2026; Emirates și Qantas au reguli
+  asemănătoare. Unele companii limitează și numărul de bucăți — verifică pe site-ul companiei înainte de zbor.
+
+## Ce mai contează
+
+- **Porturile** — cel puțin un USB-C, pentru telefoanele și laptopurile noi.
+- **Greutatea** — e în fișa producătorului; contează dacă îl cari zilnic.
+- **Marcajul CE și un producător cunoscut**: bateriile ieftine, fără protecții, se pot supraîncălzi.
+
+[Vezi magazinele de electronice →](/categorii/electronice)
+""",
+    [
+        "https://business.lufthansagroup.com/fr/en/program/experts/news/power-banks-on-board--updated-regulations-from-january-2026 (Lufthansa Group, 15.01.2026)",
+        "https://www.tripit.com/web/blog/travel-tips/power-banks-rules-airlines (100 Wh / 160 Wh, doar in bagajul de mana)",
+        "https://www.onboardhospitality.com/more-airlines-introduce-power-bank-bans/ (Emirates, Qantas si alte companii)",
+    ],
+)
+
+articol(
+    "cea-mai-buna-drona-2026",
+    "Cea mai bună dronă 2026: reguli AACR înainte să cumperi",
+    "Ce înseamnă clasele C0–C4, când trebuie să te înregistrezi ca operator la AACR, ce examen online îți trebuie "
+    "și de ce greutatea de 250 g contează cel mai mult.",
+    "Gadgets",
+    f"""
+## Cea mai bună dronă în 2026: începe cu regulile
+
+În România, ca în tot UE, drona se alege întâi după reguli: greutatea și clasa ei decid dacă te înregistrezi,
+dacă dai examen și unde ai voie să zbori. Abia apoi contează camera.
+
+{CUM_AM_ALES_GHID}
+
+## Greutatea și clasa
+
+- **Sub 250 g (clasa C0)** — cele mai puține obligații. Nu dai examen, dar citești cu atenție manualul.
+- **Clasele C1–C4** sunt trecute pe dronă și pe cutie; fiecare clasă vine cu alte cerințe de pregătire și de zonă
+  de zbor.
+- **Drone fără clasă, între 250 g și 25 kg** (cumpărate înainte de 2024 sau construite acasă) — doar în
+  subcategoria A3, departe de oameni și de zone locuite.
+
+## Înregistrarea la AACR
+
+- Te înregistrezi **ca operator**, online, pe platforma Autorității Aeronautice Civile Române (AACR), și primești
+  un cod unic pe care îl lipești pe dronă.
+- **E obligatorie și pentru o dronă sub 250 g, dacă are cameră** și nu e jucărie.
+
+## Examenul online
+
+- **A1/A3**: test online de 40 de întrebări; treci cu cel puțin 75% răspunsuri corecte.
+- **A2**: certificat de competență, cu test suplimentar.
+- În categoria deschisă zbori, ca regulă generală, până la 120 m față de sol și cu drona în câmpul vizual.
+
+## Înainte de fiecare zbor
+
+- Verifică zonele unde zborul e restricționat sau are nevoie de aprobare — aeroporturi, zone militare, orașe.
+- Respectă viața privată: filmarea oamenilor fără acordul lor poate încălca legea, chiar dacă zborul e legal.
+- Regulile se actualizează; pe caa.ro găsești condițiile în vigoare.
+
+[Vezi magazinele de electronice →](/categorii/electronice)
+""",
+    [
+        "https://www.caa.ro/uploads/pages/Conditiile%20legale%20de%20zbor%20cu%20aeronave%20fara%20pilot%20la%20bord%20ulterior%20datei%20de%2001%20ianuarie%202024_NB.pdf (AACR: inregistrare, C0, A3 pentru 250 g - 25 kg)",
+        "https://www.caa.ro/uploads/pages/Ghid%20utilizare%20aplicatie%20online%20AACR%2016.04.2021.pdf (platforma AACR, test A1/A3 de 40 de intrebari, 75%)",
+        "https://eur-lex.europa.eu/eli/reg_impl/2019/947/oj (Reg. UE 2019/947, categoria deschisa, 120 m)",
+    ],
+)
+
+articol(
+    "cea-mai-buna-bicicleta-electrica-2026",
+    "Cea mai bună bicicletă electrică 2026: 250 W și 25 km/h",
+    "Ce înseamnă legal o bicicletă electrică în UE (motor de 250 W, asistență până la 25 km/h), ce contează la "
+    "baterie și autonomie și cum alegi între oraș, trekking și MTB.",
+    "Sport",
+    f"""
+## Cea mai bună bicicletă electrică în 2026
+
+O bicicletă electrică „legală” în UE e, juridic, o bicicletă: fără înmatriculare și fără permis. Asta doar cât
+timp respectă două limite.
+
+{CUM_AM_ALES_GHID}
+
+## Ce face dintr-o bicicletă electrică o bicicletă
+
+- **Motor de cel mult 250 W** (putere nominală continuă).
+- **Asistență doar cât pedalezi** și care se oprește la **25 km/h**.
+- Un model mai puternic, mai rapid sau cu accelerație fără pedalare intră în altă categorie de vehicule, cu alte
+  reguli. Dacă un vânzător îți promite „45 km/h”, întreabă ce înseamnă asta legal.
+
+## Bateria și autonomia
+
+- **Capacitatea, în Wh**, e cifra de comparat. Autonomia anunțată depinde mult de nivelul de asistență, de pante,
+  de greutatea ta și de frig.
+- **Bateria detașabilă** se încarcă în casă, nu doar lângă priză în garaj.
+- **Încarcă doar cu încărcătorul original** și nu lăsa bateria la încărcat nesupravegheată ore în șir.
+
+## Ce tip de bicicletă
+
+- **Oraș** — cadru jos, apărători, portbagaj, lumini; poziție dreaptă.
+- **Trekking** — drumuri mixte și distanțe lungi, cu bagaje.
+- **MTB** — trasee de munte; suspensie și anvelope late.
+- **Pliabilă** — pentru tren, metrou sau apartamente mici.
+
+## Ce mai verifici
+
+- **Motorul în butuc sau central** — cel central, la pedalier, merge de obicei mai natural pe pante.
+- **Frânele pe disc**, hidraulice de preferință, la o bicicletă grea.
+- **Mărimea cadrului** după înălțimea ta — tabelul e în fișa producătorului.
+
+[Vezi magazinele de sport →](/categorii/sport)
+""",
+    [
+        "https://eur-lex.europa.eu/eli/reg/2013/168/oj (Reg. UE 168/2013, art. 2(2)(h): 250 W, 25 km/h, excluse din categoria L)",
+    ],
+)
+
+articol(
+    "cele-mai-bune-accesorii-masina-2026",
+    "Accesorii auto 2026: ce e obligatoriu și ce e util",
+    "Trusa medicală, două triunghiuri și stingătorul sunt obligatorii, vesta doar peste 3,5 t: ce verifici la ele "
+    "și ce accesorii utile merită luate pentru iarnă și drum lung.",
+    "Auto",
+    f"""
+## Accesorii auto în 2026: întâi ce e obligatoriu
+
+Înainte de gadgeturi, verifică trei lucruri pe care legea le cere în orice autoturism din România. Un produs
+expirat sau neomologat contează ca lipsă la control.
+
+{CUM_AM_ALES_GHID}
+
+## Obligatorii (OUG 195/2002 și regulamentul de aplicare)
+
+- **Trusa medicală** — completă și în termen de valabilitate; verifică data pe ambalaj.
+- **Două triunghiuri reflectorizante omologate** — recunoști omologarea după litera „E” urmată de codul țării,
+  într-un cerc.
+- **Stingătorul** — în termen, cu acul manometrului în zona verde.
+- Lipsa lor se sancționează cu amendă din clasa a II-a (4–5 puncte-amendă); valoarea punctului se schimbă, așa
+  că suma exactă o găsești pe site-ul Poliției Române.
+
+**Vesta reflectorizantă** e obligatorie doar pentru vehiculele de peste 3,5 tone, potrivit Registrului Auto
+Român. Pentru autoturism nu e obligatorie, dar e utilă: ține-o în habitaclu, nu în portbagaj, ca să o poți
+îmbrăca înainte să cobori.
+
+## Utile, mai ales iarna
+
+- **Racletă și perie** pentru zăpadă, **lichid de parbriz de iarnă**.
+- **Cabluri de pornire** sau un **pornitor portabil (booster)** pentru bateria descărcată.
+- **Lanțuri sau șosete textile** pentru drumurile de munte unde indicatorul le cere.
+- **Compresor auto de 12 V** pentru presiunea din anvelope; presiunea corectă e pe eticheta de pe ușa
+  șoferului sau în manual.
+
+## Utile pe drum lung
+
+- **Suport de telefon** fixat bine, ca să nu ții telefonul în mână.
+- **Încărcător auto cu USB-C**.
+- **Cameră de bord** — vezi [ghidul nostru despre camerele auto](/blog/cel-mai-bun-dashcam-2026).
+
+[Vezi magazinele auto-moto →](/categorii/auto-moto)
+""",
+    [
+        "https://infocons.ro/dotarile-auto-obligatorii-in-2026-ce-trebuie-sa-ai-in-masina-pentru-a-evita-amenda/ (trusa, 2 triunghiuri, stingator; vesta doar peste 3,5 t, dupa RAR)",
+        "https://www.capital.ro/dotari-auto-obligatorii-in-2026-amenzi-intre-810-si-1-0125-lei-daca-nu-ai-aceste-obiecte-in-masina.html (clasa a II-a, 4-5 puncte-amenda)",
+        "https://playtech.ro/2026/triunghiuri-vesta-si-trusa-in-2026-ce-trebuie-sa-ai-obligatoriu-in-masina-si-cum-verifici/ (omologarea „E”)",
+    ],
+)
+
+
 # ─── Sanatate: suplimente (07.10) ─────────────────────────────────────────────────────────────────
 # Regula in plus fata de restul: in UE un supliment poate pretinde un efect asupra sanatatii DOAR cu formularea
 # autorizata (Reg. 1924/2006, lista in Reg. 432/2012 si in registrul UE). Articolele vechi aveau statistici fara
