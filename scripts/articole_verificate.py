@@ -1612,6 +1612,146 @@ modele cunoscute există în mai multe concentrații, cu același nume — verif
 )
 
 
+# ─── Electrocasnice mari si genti (08.10) ────────────────────────────────────────────────────────
+# Frigiderul si masina de spalat recomandau „minim A+, ideal A++" si „A-10%" — clase care nu mai exista din
+# 1 martie 2021 (eticheta UE rescalata la A-G); genti: „pielea dureaza 10+ ani, eco 2-3 ani", „40-70% reducere"
+# fara sursa. Partenerii aproape nu au frigidere/masini de spalat in feed, deci aici ghidul e eticheta, nu modelul.
+SURSE_ETICHETA = [
+    "https://commission.europa.eu/system/files/2021-04/rescaled_eu_energy_labels_and_transition_period.pdf (rescalarea A-G din 01.03.2021)",
+    "https://commission.europa.eu/news/focus-improved-eu-energy-label-paving-way-more-innovative-and-energy-efficient-products-2021-02-16_bg (EPREL, cod QR)",
+    "https://eprel.ec.europa.eu (baza de date EPREL)",
+]
+
+articol(
+    "cel-mai-bun-frigider-2026",
+    "Cel mai bun frigider 2026: cum citești eticheta energetică",
+    "Clasele A+ și A++ nu mai există din 2021: cum citești eticheta energetică nouă, ce înseamnă No Frost, "
+    "volumul util și clasa de zgomot.",
+    "Electrocasnice",
+    f"""
+## Cel mai bun frigider în 2026: întâi eticheta
+
+Un frigider merge zi și noapte ani la rând, așa că eticheta energetică spune mai mult decât reclama. Dacă un
+articol sau un vânzător îți vorbește încă de „A++”, informația e veche.
+
+{CUM_AM_ALES_GHID}
+
+## Eticheta nouă, din 1 martie 2021
+
+- **Scala e din nou A–G.** Clasele A+, A++ și A+++ au dispărut. La rescalare, clasa A a fost lăsată aproape goală,
+  pentru produsele viitoare; frigiderele foarte eficiente de azi sunt de obicei în clasele B, C sau D.
+- **Consumul anual, în kWh**, e cifra care contează pentru factură — compară-l între modele de aceeași mărime.
+- **Volumul** e dat separat pentru frigider și congelator, în litri.
+- **Zgomotul** e dat în decibeli și cu o clasă de zgomot; contează dacă bucătăria e deschisă spre living.
+- **Codul QR** de pe etichetă duce în baza de date europeană EPREL, la fișa oficială a modelului.
+
+## Ce mai contează
+
+- **No Frost** — aerul circulă și gheața nu se mai depune, deci nu mai dezgheți manual.
+- **Dimensiunile reale și spațiul din jur.** Producătorii cer de obicei câțiva centimetri liberi în spate și
+  deasupra pentru aerisire; îi găsești în manualul de instalare.
+- **Incorporabil sau liber.** Un frigider incorporabil intră în mobilă și are alte dimensiuni decât unul liber.
+- **Garanția** e cea legală plus ce oferă producătorul; unii producători dau garanție separată, mai lungă, pentru
+  compresor — e trecută în certificatul de garanție.
+
+[Vezi magazinele de electrocasnice →](/categorii/electronice)
+""",
+    SURSE_ETICHETA,
+)
+
+articol(
+    "cea-mai-buna-masina-de-spalat-2026",
+    "Cea mai bună mașină de spălat 2026: eticheta, pe înțeles",
+    "Ce înseamnă eticheta energetică nouă la mașinile de spălat: kWh la 100 de cicluri, apă pe ciclu, programul "
+    "Eco 40-60, clasa de zgomot la centrifugare și capacitatea potrivită.",
+    "Electrocasnice",
+    f"""
+## Cea mai bună mașină de spălat în 2026
+
+Pe eticheta energetică a unei mașini de spălat sunt toate cifrele pe care le compari între modele. Din martie 2021
+arată altfel decât înainte — clasele de tip „A+++ -10%” nu mai există.
+
+{CUM_AM_ALES_GHID}
+
+## Ce scrie pe eticheta nouă
+
+- **Clasa energetică, de la A la G.** Scala a fost rescalată în 2021, iar clasa A a fost lăsată aproape goală, pentru
+  produsele viitoare.
+- **Energia la 100 de cicluri**, în kWh, măsurată pe programul **Eco 40-60** (înainte se dădea pe an, la 220 de
+  cicluri). Valoarea e o medie între încărcare un sfert, pe jumătate și plină.
+- **Apa pe ciclu**, în litri, tot pe Eco 40-60.
+- **Durata programului Eco 40-60** la capacitate maximă — de obicei lungă; așa economisește energie.
+- **Capacitatea**, în kg, și **clasa de eficiență a centrifugării**.
+- **Zgomotul la centrifugare**, în decibeli, cu o clasă de zgomot.
+- **Codul QR** duce în baza de date europeană EPREL, la fișa oficială a modelului.
+
+## Ce capacitate îți trebuie
+
+Capacitatea de pe etichetă e pentru încărcare plină, la bumbac. O mașină prea mare, folosită pe jumătate, nu
+economisește; una prea mică te pune să speli de două ori. Gândește-te la câte rufe aduni între două spălări,
+nu doar la câte persoane sunteți.
+
+## Ce mai contează
+
+- **Turația de centrifugare** — o turație mai mare lasă rufele mai uscate, dar e mai dură cu țesăturile delicate.
+- **Dimensiunile** — cele înguste (adâncime mică) intră în băi mici, dar au de obicei capacitate mai mică.
+- **Uscarea** — o mașină de spălat cu uscător ocupă un singur loc, dar are capacități diferite la spălare și la
+  uscare; ambele sunt pe etichetă.
+
+[Vezi magazinele de electrocasnice →](/categorii/electronice)
+""",
+    SURSE_ETICHETA + [
+        "https://www.bosch-home.com/mt/bosch-innovations/energy-label/current (eticheta masinii de spalat: 100 de cicluri, Eco 40-60, zgomot)",
+    ],
+)
+
+articol(
+    "cele-mai-bune-genti-dama-2026",
+    "Cele mai bune genți de damă 2026: tipuri și materiale",
+    "Tote, crossbody, rucsac sau plic: ce geantă pentru ce folosință, piele naturală sau sintetică și ce verifici "
+    "la cusături, fermoare și dimensiuni.",
+    "Fashion",
+    f"""
+## Cum alegi o geantă de damă în 2026
+
+O geantă bună e cea pe care o folosești zilnic fără să te gândești la ea: încape ce cari, se închide sigur și nu
+te doare umărul. Marca vine abia după.
+
+{CUM_AM_ALES_GHID}
+
+## Tipuri, după folosință
+
+- **Tote** — mare, deschisă sau cu fermoar, pentru birou: laptop, dosare, sticlă de apă. Verifică dimensiunea
+  interioară dacă vrei să intre laptopul.
+- **Crossbody** — mică, purtată pe diagonală: mâinile libere, iar în aglomerație o poți ține în fața ta.
+- **Rucsac** — când cari greu: împarte greutatea pe ambii umeri.
+- **Plic (clutch)** — pentru seară: telefon, chei, card.
+
+## Materiale
+
+- **Piele naturală** — rezistentă, se poate îngriji și repara; se zgârie și se pătează mai ușor la culorile
+  deschise.
+- **„Piele ecologică”** — de obicei material sintetic (poliuretan sau PVC), nu piele. E mai ușoară și mai ieftină;
+  durata depinde mult de calitatea materialului.
+- **Textil** (canvas, nailon) — ușor, potrivit pentru zilnic și călătorii.
+
+## Ce verifici la produs
+
+- **Cusăturile** — drepte, dese, fără fire ieșite, mai ales la prinderea mânerelor.
+- **Fermoarele și închizătorile** — se deschid ușor, fără să agațe.
+- **Dimensiunile și greutatea goală** — sunt în fișa produsului; o geantă grea goală e grea toată ziua.
+- **Returul** — la comenzile online ai, prin lege, 14 zile ca să te răzgândești; condițiile exacte sunt pe
+  site-ul magazinului.
+
+[Vezi magazinele de modă →](/categorii/fashion)
+""",
+    [
+        "https://eur-lex.europa.eu/eli/dir/2011/83/oj (Directiva 2011/83/UE, retur in 14 zile)",
+        "https://en.wikipedia.org/wiki/Artificial_leather (pielea ecologica = material sintetic, PU sau PVC)",
+    ],
+)
+
+
 # ─── Sanatate: suplimente (07.10) ─────────────────────────────────────────────────────────────────
 # Regula in plus fata de restul: in UE un supliment poate pretinde un efect asupra sanatatii DOAR cu formularea
 # autorizata (Reg. 1924/2006, lista in Reg. 432/2012 si in registrul UE). Articolele vechi aveau statistici fara
