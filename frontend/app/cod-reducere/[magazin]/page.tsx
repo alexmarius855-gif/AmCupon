@@ -11,6 +11,9 @@ import IstoricMagazin, { type IntrareIstoric } from "./IstoricMagazin";
 import { linkAfiliat, linkPromotie } from "@/lib/linkMagazin";
 import FaraLivrareRo, { tariLivrare, type Alternativa, type MagazinFaraLivrare } from "./FaraLivrareRo";
 import { numeAfisat, brandDomeniu } from "@/lib/numeMagazin";
+import { alMagazinului } from "@/lib/produseMagazin";
+import { imagineSigura, normTitlu, titluAfisat } from "@/lib/topFeed";
+import { titluPromotie } from "@/lib/oferta";
 
 interface Promotie {
   nume: string;
@@ -324,17 +327,12 @@ function loadRestrictionate(): Produs[] {
 
 function loadProducts(slug: string): Produs[] {
   try {
-    const s = slug.toLowerCase();
-    const all: Produs[] = loadAllProducts();
-    const generale = all.filter((pr) => {
-      const ms = (pr.merchant_slug || "").toLowerCase();
-      const mn = (pr.merchant || "").toLowerCase();
-      return ms === s || mn === s || ms.startsWith(s.split(".")[0]) || mn.includes(s.split(".")[0]);
-    });
-    // Potrivire EXACTA pentru cele restrictionate: cea de sus e pe subsir („in" ar prinde
-    // „intimplay"), iar aici un subsir ar duce produse explicite pe pagina altui magazin.
-    const proprii = loadRestrictionate().filter((pr) =>
-      (pr.merchant_slug || "").toLowerCase() === s || (pr.merchant || "").toLowerCase() === s);
+    // Potrivire EXACTA, si la produsele generale, si la cele restrictionate. Pana pe
+    // 07.10.2026 cele generale mergeau pe subsir si 39 de pagini (Roborock, Xiaomi,
+    // Libris...) aratau produsele altor magazine. Istoricul: lib/produseMagazin.ts.
+    const generale = loadAllProducts().filter((pr) => alMagazinului(pr, slug));
+    const proprii = loadRestrictionate().filter((pr) => alMagazinului(pr, slug));
+    const vazute = new Set<string>();
     return [...generale, ...proprii]
       // 22.09.2026: acelasi prag ca la statistici (PRET_MINIM_CREDIBIL). Reparatia din
       // 20.09 a curatat INTERVALUL de pret, dar lista de produse a ramas neatinsa, si
@@ -342,7 +340,17 @@ function loadProducts(slug: string): Produs[] {
       // bax (en-gros), rotunjite la zero de formatarea fara zecimale. Un pret pe care
       // nimeni nu-l poate plati nu e o oferta, e o eroare de feed.
       .filter((pr) => (pr.price ?? 0) >= PRET_MINIM_CREDIBIL)
-      .slice(0, 24);
+      // 07.10.2026: acelasi titlu si aceeasi imagine ca pe restul site-ului (lib/topFeed.ts).
+      // Pagina de magazin afisa campurile brute din feed: entitati HTML („M&amp;G"), 147 de
+      // imagini pe http (continut mixt pe o pagina https), 48 de adrese care nu sunt imagini
+      // („http://0" la gorgeaux.ro), si acelasi produs de doua ori pe 21 de pagini.
+      .map((pr) => ({ ...pr, title: titluAfisat(pr.title), image: imagineSigura(pr.image) || "" }))
+      .filter((pr) => {
+        const k = normTitlu(pr.title);
+        if (!k || vazute.has(k)) return false;
+        vazute.add(k);
+        return true;
+      });
   } catch { return []; }
 }
 
@@ -528,7 +536,11 @@ export default async function PaginaMagazin({
 
   // Folosim slug-ul curat al magazinului pentru toate loader-ele (consistenta)
   const cleanSlug = m.magazin;
-  const produse = loadProducts(cleanSlug);
+  // Grila arata primele 24; statisticile de pret (ContextMagazin) se calculeaza din TOATE.
+  // Pana pe 07.10.2026 primeau tot lista taiata la 24 si scriau „Calculat din cele 24 de
+  // produse pe care le urmarim" pe 203 magazine pentru care urmarim pana la 102.
+  const toateProdusele = loadProducts(cleanSlug);
+  const produse = toateProdusele.slice(0, 24);
   const blogPost = loadBlogPost(cleanSlug);
   const banner = loadBanner(cleanSlug);
   const descriere = loadDescriere(cleanSlug);
@@ -622,8 +634,10 @@ export default async function PaginaMagazin({
       position: i + 1,
       item: {
         "@type": "Offer",
-        name: promo.nume,
-        description: promo.descriere || promo.nume,
+        // Acelasi titlu ca pe card (lib/oferta.ts): la Impact `nume` e des doar codul
+        // („DH2026OCTSAVE3"), iar datele structurate trebuie sa spuna ce vede vizitatorul.
+        name: titluPromotie(promo, nume),
+        description: promo.descriere || titluPromotie(promo, nume),
         url: promo.landing_page || pageUrl,
         availability: "https://schema.org/InStock",
         // Din data reala, nu din `zile_ramase`: fara `expira` contorul e 99 prin conventie
@@ -796,7 +810,7 @@ export default async function PaginaMagazin({
         context={
           <ContextMagazin
             nume={m.magazin}
-            produse={produse}
+            produse={toateProdusele}
             categorieSlug={m.categorie_slug}
             categorie={m.categorie}
             urlSite={linkAfiliat(m) || m.url}

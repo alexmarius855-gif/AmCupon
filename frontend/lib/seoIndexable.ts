@@ -52,28 +52,28 @@ export interface IndexableProdus {
  * `t.includes(baza)`, care ar fi dat fals-pozitive (un slug scurt ca "cezi" ar fi
  * prins orice merchant care il contine ca subsir) si ar fi declarat "are produse"
  * pagini care de fapt n-au niciunul.
+ *
+ * 07.10.2026: scoasa si „baza domeniului" (`ms.split(".")[0]`). La subdomenii, primul label
+ * e prefixul, nu brandul: produsele lui store.boyamic.com puneau „store" in index, iar
+ * store.hiby.com, store.hohem.com si store.irinareisler.ro treceau drept „au produse" fara
+ * niciunul. Toti apelantii trimit domeniul din output.json, iar pagina de magazin arata doar
+ * produsele cu `merchant_slug` IDENTIC — deci si raspunsul de aici trebuie sa fie exact.
  */
 export function buildMerchantTokens(produse: IndexableProdus[]): Set<string> {
   const tokens = new Set<string>();
   for (const p of produse) {
     const ms = (p.merchant_slug || "").toLowerCase().trim();
     const mn = (p.merchant || "").toLowerCase().trim();
-    if (ms) {
-      tokens.add(ms);
-      tokens.add(ms.split(".")[0]); // baza domeniului
-    }
+    if (ms) tokens.add(ms);
     if (mn) tokens.add(mn);
   }
   return tokens;
 }
 
-/** Potrivire exacta pe domeniu complet SAU pe baza domeniului. Fara substring. */
+/** Potrivire exacta pe domeniul complet (sau numele merchant-ului). Fara subsir, fara baza. */
 export function areProduseInFeed(slug: string, tokens: Set<string>): boolean {
   const s = (slug || "").toLowerCase().trim();
-  if (!s) return false;
-  if (tokens.has(s)) return true;
-  const baza = s.split(".")[0];
-  return baza.length >= 3 && tokens.has(baza);
+  return !!s && tokens.has(s);
 }
 
 /**

@@ -3,6 +3,8 @@ import fs from "fs";
 import path from "path";
 import { cuSubId } from "../../../lib/subId";
 import { linkAfiliat } from "../../../lib/linkMagazin";
+import { brandDomeniu } from "../../../lib/numeMagazin";
+import { aceeasiTara } from "../../../lib/taraDomeniu";
 
 /**
  * `/go/[magazin]` — redirect de afiliere pe SERVER.
@@ -57,8 +59,11 @@ export async function GET(
 
   const m =
     magazine().find((x) => x.magazin?.toLowerCase() === slug) ||
-    // acelasi fallback ca pe pagina de magazin: URL-urile vechi nu trebuie sa cada
-    magazine().find((x) => x.magazin?.toLowerCase().split(".")[0] === slug.split(".")[0]);
+    // Acelasi fallback ca pe pagina de magazin (`gasesteMagazin`): URL-urile vechi nu
+    // trebuie sa cada. 07.10.2026: pana azi era pe PRIMUL label (`split(".")[0]`), varianta
+    // pe care pagina de magazin o abandonase pe 22.09 — `/go/de.altceva.com` ar fi trimis
+    // vizitatorul, cu linkul nostru de afiliere, pe primul magazin „de.*" din lista.
+    magazine().find((x) => brandDomeniu(x.magazin || "") === brandDomeniu(slug) && aceeasiTara(slug, x.magazin || ""));
 
   // Magazin necunoscut -> pagina de cautare, nu 404 sec: vizitatorul a vrut ceva.
   if (!m) {
