@@ -598,7 +598,7 @@ Mere, sage, fuste de cedru. Modern, energic, perfect pentru zi.
 ### Tom Ford Oud Wood — Luxul suprem
 Oud, santal, trandafir. Sofisticat, exclusivist, pentru ocazii speciale.
 
-### Paco Rabanne 1 Million — Seducție garantată
+### Paco Rabanne 1 Million — dulce și condimentat
 Note de grepfrut, scorțișoară, cuir. Senzual și memorabil, perfect pentru seară.
 
 ## Cum alegi parfumul potrivit
@@ -1773,7 +1773,7 @@ Un troller bun te insoteste zeci de ani. Un troller prost se strica la prima cur
 ## Recomandari concrete {AN}
 
 ### Cabina premium:
-**Samsonite Proxis S** — 2.1 kg (cel mai usor), TSA lock, garantat 5 ani. ~1500-2000 lei.
+**Samsonite Proxis S** — 2.1 kg (cel mai usor), încuietoare TSA. ~1500-2000 lei.
 
 ### Cabina buget inteligent:
 **American Tourister Soundbox S** — extensibil, 4 roti duble. ~500-700 lei.
@@ -2694,7 +2694,7 @@ Sub 249g, 4K/60fps, obstacol avoidance 3 direcții. Preț mai mic decât Mini 4 
 
 - **Greutate**: sub/peste 250g face diferența legală
 - **Autonomie**: 20-30 min = standard, 40+ min = premium
-- **Stabilizator**: gimbal 3 axe = video stabil garantat
+- **Stabilizator**: gimbal pe 3 axe = video stabil
 - **Evitare obstacole**: numărul de direcții (omnidirectional = ideal)
 - **Camera**: rezoluție, fps, logaritmic (pentru editare profesională)
 
@@ -2840,7 +2840,7 @@ Un PC gaming îți oferă performanța pe care nicio consolă nu o poate egala. 
 ## PC preassemblat vs custom build
 
 **Preassemblat**: mai ușor, garanție sistem, pierdere 10-15% față de custom.
-**Custom build**: performanță maximă per leu, alegere liberă componente, satisfacție garantată.
+**Custom build**: performanță maximă per leu, alegi singur fiecare componentă.
 
 ## Intel vs AMD — în {AN}
 

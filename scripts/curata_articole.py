@@ -175,6 +175,14 @@ def _sfat_nou(m: re.Match) -> str:
 
 
 FORMULE.append((RE_SFAT_VECHI, _sfat_nou))
+# 07.10.2026: „garantat" pus pe lucruri pe care nimeni nu le garanteaza (articolele „Cel mai bun X" din iunie,
+# scrise o data si neatinse de generator — generate_best_of.py doar ADAUGA).
+FORMULE += [
+    (re.compile(r"### Paco Rabanne 1 Million — Seducție garantată"), "### Paco Rabanne 1 Million — dulce și condimentat"),
+    (re.compile(r"gimbal 3 axe = video stabil garantat"), "gimbal pe 3 axe = video stabil"),
+    (re.compile(r", TSA lock, garantat 5 ani\."), ", încuietoare TSA."),
+    (re.compile(r", alegere liberă componente, satisfacție garantată\."), ", alegi singur fiecare componentă."),
+]
 # Orice propozitie care promite un procent de economii fara sursa („poti economisi 20-50% la carti").
 RE_ECONOMISI_ORICE = re.compile(r"economisi\w*\s+(?:u[șs]or\s+)?(?:p[aâ]n[aă] la\s+)?\d+\s*[-–]\s*\d+\s*%", re.I)
 
