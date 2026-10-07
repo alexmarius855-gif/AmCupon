@@ -41,7 +41,9 @@ const TIPURI_PROTECTIE = [
 // Norton: direct, formular propriu — us.norton.com/affiliates
 // ESET: via CJ Affiliate (cont nou necesar) — eset.com/us/business/partner/online-affiliates
 // Kaspersky: via CJ Affiliate (acelasi cont CJ ca ESET) — kaspersky.com/partners/affiliate
-const LINK_BITDEFENDER = "https://bitdefender.f9tmep.net/c/7401119/1622667/4466"; // REAL Impact
+// 07.10.2026: reclama „C_RO_Bitdefender Homepage" (385378) — cea veche (1622667, „C_NL_PremiumSecurity")
+// ducea un vizitator din Romania pe o pagina in OLANDEZA (verificat in browser).
+const LINK_BITDEFENDER = "https://bitdefender.f9tmep.net/c/7401119/385378/4466";
 // Norton/ESET/Kaspersky: fara program afiliat activ inca → linkuri curate (fara tracking fals)
 const LINK_NORTON      = "https://us.norton.com";
 const LINK_ESET        = "https://www.eset.com/ro/";
