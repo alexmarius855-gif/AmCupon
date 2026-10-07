@@ -169,8 +169,9 @@ def genereaza_articol_magazin(store: dict, luna: str, an: int) -> dict:
         # 07.10.2026: titlul si descrierea FARA cod (promotii.titlu_promotie / fara_cod, ca pe site).
         # „Use Code: 30CVLIFE", „Coupon Code: LONGERR" si titlurile Impact care SUNT codul
         # („LumosFlex120") il aratau intreg chiar deasupra liniei „Cod: `******FE`" mascate.
-        titlu_p = fara_coduri(titlu_promotie(p, nume), p) or f"Ofertă {nume}"
-        desc_p = fara_coduri(p.get("descriere") or "", p)
+        titlu_p = " ".join((fara_coduri(titlu_promotie(p, nume), p) or f"Ofertă {nume}").split())
+        # pe un singur rand: o descriere care continua pe randul urmator cu o liniuta (Casa Andina) facea din tot blocul o lista
+        desc_p = " ".join(fara_coduri(p.get("descriere") or "", p).split())
         linie = f"**{i+1}. {titlu_p}**"
         if desc_p and desc_p != titlu_p and not pare_cod(desc_p):
             linie += f"\n   _{desc_p[:120]}_"

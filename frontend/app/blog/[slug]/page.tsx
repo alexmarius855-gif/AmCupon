@@ -25,6 +25,8 @@ interface BlogPost {
   content: string;
   /** `magazin` | `best-of` | `categorie` | `roundup` — vezi generate_blog.py */
   tip?: string | null;
+  /** Ziua in care articolul a fost rescris pe surse (scripts/articole_verificate.py), AAAA-LL-ZZ. */
+  surse_din?: string;
 }
 
 function loadPosts(): BlogPost[] {
@@ -160,14 +162,40 @@ function renderContent(content: string) {
     if (block.startsWith("### ")) {
       return <h3 key={key} className="text-lg font-bold text-[#ffffff] mt-6 mb-2">{parseInline(block.slice(4), key)}</h3>;
     }
-    if (block.startsWith("- ") || block.includes("\n- ")) {
-      const items = block.split("\n").filter((l) => l.startsWith("- ")).map((l) => l.slice(2));
+    // ── Citat („> ...") ─────────────────────────────────────────────────────────
+    // 07.10.2026: nu exista. Pe 217 articole, linia „> Actualizat automat: ..." aparea cu
+    // semnul „>" la vedere, la inceputul textului.
+    if (block.startsWith("> ")) {
+      const text = block.split("\n").map((l) => l.replace(/^>\s?/, "")).join(" ");
       return (
-        <ul key={key} className="list-disc list-inside space-y-1.5 my-4 text-[#c9ced5]">
-          {items.map((item, j) => (
-            <li key={j}>{parseInline(item, `${key}-li${j}`)}</li>
-          ))}
-        </ul>
+        <blockquote key={key} className="my-4 border-l-2 border-[#ddf93c] pl-4 text-[#c9ced5] leading-relaxed">
+          {parseInline(text, key)}
+        </blockquote>
+      );
+    }
+    if (block.startsWith("- ") || block.includes("\n- ")) {
+      // Pana pe 07.10.2026 se pastrau DOAR randurile care incep cu „- ": un element continuat pe
+      // randul urmator se oprea la mijlocul frazei, iar textul de dinaintea listei („Inainte de a
+      // cumpara o drona, stii ca:") disparea — 45 de blocuri. Acum: introducerea devine paragraf,
+      // iar randurile de continuare se lipesc de elementul lor.
+      const intro: string[] = [];
+      const items: string[] = [];
+      for (const l of block.split("\n")) {
+        if (l.startsWith("- ")) items.push(l.slice(2));
+        else if (l.trim() && items.length) items[items.length - 1] += " " + l.trim();
+        else if (l.trim()) intro.push(l.trim());
+      }
+      return (
+        <div key={key}>
+          {intro.length > 0 && (
+            <p className="text-[#c9ced5] leading-relaxed my-3">{parseInline(intro.join(" "), `${key}-p`)}</p>
+          )}
+          <ul className="list-disc list-inside space-y-1.5 my-4 text-[#c9ced5]">
+            {items.map((item, j) => (
+              <li key={j}>{parseInline(item, `${key}-li${j}`)}</li>
+            ))}
+          </ul>
+        </div>
       );
     }
     // ── Separator orizontal ───────────────────────────────────────────────────
@@ -446,12 +474,17 @@ export default async function ArticolPage({
               iar data din antet e cea a ultimei regenerari. Nota spune asta direct. */}
           {esteRecomandare && (
             <p className="text-xs text-[#9399a0] leading-relaxed mb-6 -mt-4">
-              Text editorial scris pe baza specificațiilor și a prețurilor publice; selecția modelelor e din
-              mai–iunie 2026, iar produsele nu le-am testat.{" "}
+              {/* 07.10.2026: articolele rescrise pe surse (articole_verificate.py) au `surse_din`; pentru
+                  ele „selectia e din mai–iunie" ar fi falsa. */}
+              {post.surse_din
+                ? `Text editorial actualizat pe ${new Date(post.surse_din + "T12:00:00Z").toLocaleDateString("ro-RO", { day: "numeric", month: "long", year: "numeric" })}, după fișele tehnice ale producătorilor; produsele nu le-am testat.`
+                : "Text editorial scris pe baza specificațiilor și a prețurilor publice; selecția modelelor e din mai–iunie 2026, iar produsele nu le-am testat."}{" "}
               {sectiune ? (
                 <a href="#unde-cumperi" className="text-[#ddf93c] hover:underline">Prețurile de azi la magazinele partenere sunt la finalul articolului.</a>
               ) : (
-                "Prețurile din text sunt orientative: verifică prețul actual în magazin."
+                post.surse_din
+                  ? "Prețurile nu le scriem în text: le vezi actualizate la magazin."
+                  : "Prețurile din text sunt orientative: verifică prețul actual în magazin."
               )}
             </p>
           )}
