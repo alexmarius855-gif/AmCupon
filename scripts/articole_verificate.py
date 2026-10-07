@@ -1399,6 +1399,219 @@ Categoria trebuie trecută pe produs sau pe etichetă, alături de marcajul CE.
 )
 
 
+# ─── Copii si frumusete (08.10) ──────────────────────────────────────────────────────────────────
+# Gresit in vechile articole: LEGO Mindstorms recomandat (retras la sfarsitul lui 2022), „cercetarile arata" fara
+# sursa, „cel mai studiat ser din lume", concentratiile EDP/EDT date ca fapt (sunt conventie, nu lege), „cel mai
+# popular in Romania" fara date. Aici: regulile UE (jucarii, cosmetice) + criterii; produsele vin din feed sub articol.
+CUM_AM_ALES_GHID = (
+    "> **Cum am scris ghidul.** Nu am folosit produsele. Am pornit de la regulile europene și de la informațiile "
+    "producătorilor, iar prețurile nu le scriem: se schimbă des și le vezi la magazin."
+)
+
+articol(
+    "cele-mai-bune-jucarii-educative-2026",
+    "Cele mai bune jucării educative 2026: pe vârste",
+    "Ce jucării se potrivesc fiecărei vârste, ce înseamnă avertismentul „nu este potrivit pentru copii sub 36 de "
+    "luni” și ce a înlocuit LEGO Mindstorms.",
+    "Copii",
+    f"""
+## Cele mai bune jucării educative în 2026
+
+O jucărie e „educativă” când se potrivește vârstei: prea simplă plictisește, prea grea descurajează. Vârsta de pe
+cutie e primul filtru — și, pentru cei mici, una de siguranță.
+
+{CUM_AM_ALES_GHID}
+
+## Înainte de orice: vârsta de pe cutie
+
+- **„Nu este potrivit pentru copii sub 36 de luni”** (sau simbolul cu un copil tăiat) înseamnă de obicei piese
+  mici, care se pot înghiți. E un avertisment de siguranță cerut de legea UE, nu o recomandare de dificultate.
+- **Marcajul CE** e obligatoriu pe jucăriile vândute în UE.
+- Din august 2030 se aplică noul regulament european al jucăriilor (UE 2025/2509), cu reguli mai stricte pentru
+  substanțe chimice și pentru jucăriile conectate la internet. Până atunci rămân valabile regulile actuale.
+
+## Pe vârste
+
+### Până la 2 ani — simțuri și mișcare
+Jucării de apucat, cu texturi și sunete, cărți din material moale sau carton gros, cuburi mari. Fără piese mici și
+fără baterii cu acces ușor.
+
+### 2–5 ani — construcții și potriviri
+Cuburi mari de construcție (LEGO DUPLO, de exemplu, sunt făcute pentru copiii mici), puzzle-uri cu piese mari,
+sortatoare de forme, instrumente muzicale simple.
+
+### 5–8 ani — reguli și răbdare
+Seturi de construcție după instrucțiuni, jocuri de societate cu reguli scurte (Blokus, Ubongo), primele seturi de
+experimente, puzzle-uri de 100–300 de piese.
+
+### 8–12 ani — logică, robotică, programare
+Seturi de robotică programabile și jocuri de strategie (Catan, Ticket to Ride). LEGO Mindstorms nu se mai fabrică:
+LEGO a retras seria la sfârșitul lui 2022, iar robotica a rămas în gama LEGO Education. Pentru programare fără
+cumpărături, Scratch e gratuit, în browser.
+
+## Cum alegi
+
+- **După copil, nu după vârsta exactă.** Intervalul de pe cutie e orientativ pentru dificultate, dar obligatoriu
+  când e vorba de piesele mici.
+- **Jocurile de societate** se joacă împreună; cele cu partide scurte țin atenția celor mici.
+- **Bateriile tip pastilă** trebuie să stea într-un compartiment închis cu șurub — sunt periculoase la înghițire.
+
+[Vezi magazinele pentru copii →](/categorii/copii)
+""",
+    [
+        "https://www.legislation.gov.uk/eudr/2009/48/chapter/III (Directiva 2009/48/CE, avertismentul pentru sub 36 de luni)",
+        "https://www.cps.bureauveritas.com/newsroom/eu-toy-safety-regulation-20252509-published (Reg. UE 2025/2509, aplicabil din 01.08.2030)",
+        "https://brickset.com/article/84219/lego-mindstorms-to-be-discontinued (Mindstorms retras la sfarsitul lui 2022)",
+        "https://scratch.mit.edu (Scratch, gratuit)",
+    ],
+)
+
+articol(
+    "cel-mai-bun-ser-fata-2026",
+    "Cel mai bun ser de față 2026: ce ingredient pentru ce",
+    "Vitamina C, retinol, niacinamidă, acid hialuronic: ce promit, cum le folosești și ce s-a schimbat în UE la "
+    "vitamina A din cosmetice.",
+    "Beauty",
+    f"""
+## Cel mai bun ser de față în 2026
+
+Un ser se alege după ingredientul principal, nu după marcă. Mai jos, ce urmăresc de obicei producătorii cu fiecare
+ingredient și ce trebuie să știi înainte să-l pui pe față.
+
+{CUM_AM_ALES_GHID}
+
+## Ingredientele, pe scurt
+
+### Vitamina C
+Folosită pentru luminozitate și pentru un ten mai uniform; e un antioxidant. Se aplică de obicei dimineața, sub
+cremă și protecție solară. Forma pură (acid ascorbic) se oxidează la aer și lumină — de aceea vine des în sticle
+închise la culoare.
+
+### Retinol (vitamina A)
+Folosit pentru riduri fine și textura pielii. Se aplică seara, începând cu puțin și rar, pentru că poate irita.
+**Din 1 noiembrie 2025**, produsele noi din UE pot avea cel mult 0,3% vitamina A (echivalent retinol) — 0,05% în
+loțiunile de corp — și poartă mențiunea „Conține vitamina A”. Dacă ești însărcinată, întreabă medicul înainte de
+produse cu retinoizi.
+
+### Niacinamidă
+Folosită pentru pori, sebum și roșeață; e de obicei bine tolerată și se poate combina cu majoritatea ingredientelor.
+
+### Acid hialuronic
+Atrage apa în stratul superficial al pielii. Se aplică pe pielea ușor umedă și se „închide” cu o cremă.
+
+## Reguli simple
+
+- **Un ingredient nou pe rând**, ca să știi ce te irită, dacă ceva te irită.
+- **Testează întâi pe o zonă mică.** Academia Americană de Dermatologie recomandă interiorul brațului sau
+  plica cotului, de două ori pe zi, 7–10 zile; dacă apar roșeață sau mâncărime, renunță la produs.
+- **Protecție solară ziua**, mai ales cu retinol sau acizi exfolianți.
+- Retinolul și acizii exfolianți (AHA/BHA) în aceeași seară pot irita; mulți dermatologi îi recomandă în seri
+  diferite.
+
+[Vezi magazinele de frumusețe →](/categorii/beauty)
+""",
+    [
+        "https://cosmeticobs.com/en/articles/news-59/regulation-2024996-restrictions-on-vitamin-a-arbutin-and-6-endocrine-disruptors-8029 (Reg. UE 2024/996, vitamina A)",
+        "https://news.ceway.eu/understanding-eu-regulation-2024-996-essential-updates-for-cosmetic-ingredients/ (0,3% / 0,05%, de la 01.11.2025)",
+        "https://www.aad.org/public/everyday-care/skin-care-secrets/prevent-skin-problems/test-skin-care-products (testul pe zona mica, 7-10 zile)",
+        "https://www.aad.org/public/everyday-care/skin-care-basics/care/apply-skin-care-certain-order (ordinea aplicarii)",
+    ],
+)
+
+TEXT_PARFUM_ALERGENI = (
+    "- **Alergenii de parfum** sunt trecuți pe ambalaj, după lista de ingrediente, când depășesc 0,001% (produse "
+    "care rămân pe piele). Din 31 iulie 2026, lista din UE crește la aproximativ 80 de substanțe pentru produsele "
+    "noi. Dacă ai o alergie cunoscută, caută-o acolo."
+)
+
+articol(
+    "cel-mai-bun-parfum-femei-2026",
+    "Cele mai bune parfumuri pentru femei 2026: cum alegi",
+    "Eau de Parfum sau Eau de Toilette, familiile olfactive, cum testezi un parfum pe piele și ce scrie pe "
+    "ambalaj despre alergeni.",
+    "Beauty",
+    f"""
+## Cum alegi un parfum pentru femei în 2026
+
+Un parfum se alege pe piele, nu din listă: aceleași note miros diferit pe persoane diferite. Ce poți afla dinainte
+e cât de intens e și din ce familie face parte.
+
+{CUM_AM_ALES_GHID}
+
+## Eau de Parfum, Eau de Toilette, Extrait
+
+Denumirile nu sunt definite de lege; sunt o convenție a industriei. De regulă, **Extrait / Parfum** are cea mai
+mare concentrație de esențe, urmat de **Eau de Parfum** și apoi de **Eau de Toilette**. Concentrația mai mare
+înseamnă de obicei un parfum care ține mai mult, dar durata depinde și de note și de piele.
+
+## Familiile olfactive
+
+- **Florale** — trandafir, iasomie, bujor: cea mai mare familie la parfumurile pentru femei.
+- **Gurmande** — vanilie, caramel, cafea, praline: dulci, potrivite seara și iarna.
+- **Lemnoase și chypre** — paciuli, mușchi de stejar, santal: mai sobre, de birou sau de toamnă.
+- **Fresh și citrice** — bergamotă, lămâie, note marine: ușoare, pentru vară și zi.
+
+## Cum testezi
+
+- Pe încheietură, nu doar pe bandeletă, și lasă-l măcar o jumătate de oră: notele de bază apar după cele de vârf.
+- Cel mult două-trei parfumuri o dată; nasul obosește.
+- Cumpără mostre sau flacoane mici înainte de unul mare.
+{TEXT_PARFUM_ALERGENI}
+- Cumpără de la magazine care vând produsul oficial; la retur, legea îți dă 14 zile pentru comenzile online, dar
+  un flacon desigilat poate fi exclus din motive de igienă — citește condițiile magazinului.
+
+[Vezi magazinele de parfumuri și frumusețe →](/categorii/beauty)
+""",
+    [
+        "https://coslaw.eu/more-allergens-to-be-individually-labelled-cosmetics/ (Reg. UE 2023/1545, alergenii de parfum)",
+        "https://news.ceway.eu/eu-fragrance-allergen-labelling-what-beauty-brands-need-to-do-before-july-31-2026/ (31.07.2026 / 31.07.2028, 0,001% / 0,01%)",
+        "https://eur-lex.europa.eu/eli/dir/2011/83/oj (Directiva 2011/83/UE: 14 zile, exceptia pentru produse desigilate din motive de igiena)",
+    ],
+)
+
+articol(
+    "cel-mai-bun-parfum-barbati-2026",
+    "Cele mai bune parfumuri pentru bărbați 2026: cum alegi",
+    "Eau de Toilette sau Eau de Parfum, familiile lemnoase, aromatice și fresh, cum testezi un parfum pe piele și "
+    "ce înseamnă alergenii de pe ambalaj.",
+    "Beauty",
+    f"""
+## Cum alegi un parfum pentru bărbați în 2026
+
+Același parfum miroase diferit pe pielea fiecăruia, așa că lista de note e doar punctul de plecare. Ce poți
+compara dinainte: intensitatea și familia.
+
+{CUM_AM_ALES_GHID}
+
+## EDT, EDP, Parfum
+
+Nu sunt termeni definiți de lege, ci convenția industriei: **Eau de Toilette** e de obicei mai ușoară, **Eau de
+Parfum** mai concentrată, iar **Parfum / Extrait** cea mai concentrată. La parfumurile pentru bărbați, multe
+modele cunoscute există în mai multe concentrații, cu același nume — verifică pe flacon ce cumperi.
+
+## Familiile cele mai întâlnite
+
+- **Aromatice și fougère** — lavandă, ierburi, mușchi: clasice, de zi și de birou.
+- **Lemnoase** — cedru, vetiver, santal: calde, potrivite toamna și seara.
+- **Fresh, citrice și acvatice** — bergamotă, grapefruit, note marine: ușoare, pentru vară.
+- **Ambrate și condimentate** — piper, cardamom, tutun, vanilie: intense, pentru seară și iarnă.
+
+## Cum testezi și cum cumperi
+
+- Pe piele, nu doar pe bandeletă; așteaptă cel puțin jumătate de oră până la notele de bază.
+- Două-trei parfumuri pe zi, maximum; după aceea nu mai simți diferențele.
+- Un flacon mic sau o mostră înainte de un flacon mare.
+{TEXT_PARFUM_ALERGENI}
+
+[Vezi magazinele de parfumuri și frumusețe →](/categorii/beauty)
+""",
+    [
+        "https://coslaw.eu/more-allergens-to-be-individually-labelled-cosmetics/ (Reg. UE 2023/1545, alergenii de parfum)",
+        "https://news.ceway.eu/eu-fragrance-allergen-labelling-what-beauty-brands-need-to-do-before-july-31-2026/ (31.07.2026, 0,001%)",
+    ],
+)
+
+
 # ─── Sanatate: suplimente (07.10) ─────────────────────────────────────────────────────────────────
 # Regula in plus fata de restul: in UE un supliment poate pretinde un efect asupra sanatatii DOAR cu formularea
 # autorizata (Reg. 1924/2006, lista in Reg. 432/2012 si in registrul UE). Articolele vechi aveau statistici fara
