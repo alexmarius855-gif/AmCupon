@@ -179,6 +179,17 @@ def verifica_date() -> dict:
         semnaleaza("preturi corupte",
                    f"{len(sub1)} produse sub 1 leu — verifica feed-ul sursa", sub1)
 
+    # 5b. Pret pe o PROMOTIE (07.10.2026). Promo-produsele (`is_promo`) n-au pret de produs:
+    #     numarul cu „lei" din textul ofertei e pragul comenzii, valoarea voucherului sau suma
+    #     maxima de discount, iar un „pret vechi" calculat din procent e inventat. Vezi
+    #     enrich_products_from_promos.py — Noriel ajunsese „149 lei, ~~186,25 lei~~".
+    promo_pret = [f"{p.get('merchant_slug','?')}: {p.get('title','?')[:40]} ({p.get('price')} lei)"
+                  for p in produse if p.get("is_promo") and ((p.get("price") or 0) > 0 or p.get("old_price"))]
+    stare["promotii_cu_pret"] = len(promo_pret)
+    if promo_pret:
+        semnaleaza("pret inventat pe promotie",
+                   f"{len(promo_pret)} promotii afisate cu pret de produs", promo_pret)
+
     articole = incarca("blog-posts.json") or []
     stare["articole"] = len(articole)
 

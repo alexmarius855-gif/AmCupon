@@ -53,20 +53,6 @@ def extract_discount(text: str) -> int:
     return 0
 
 
-def extract_price(text: str) -> float:
-    if not text:
-        return 0.0
-    m = re.search(r"(\d[\d\s\.]*(?:,\d+)?)\s*(?:lei|ron|RON)", text, re.IGNORECASE)
-    if m:
-        raw = m.group(1).replace(" ", "").replace(".", "").replace(",", ".")
-        try:
-            v = float(raw)
-            return v if 0 < v < 100_000 else 0.0
-        except ValueError:
-            pass
-    return 0.0
-
-
 def promo_to_product(mag: dict, promo: dict, idx: int) -> dict | None:
     # 07.10.2026: titlul afisabil (la Impact `nume` e des doar codul, oferta e in `descriere`).
     # Un titlu fara spatiu e codul insusi („SAVE10") sau un cuvant gol — nu spune ce e oferta.
@@ -81,10 +67,16 @@ def promo_to_product(mag: dict, promo: dict, idx: int) -> dict | None:
         return None
 
     discount_pct = extract_discount(title) or extract_discount(promo.get("descriere", ""))
-    price = extract_price(title) or extract_price(promo.get("descriere", ""))
+    # 07.10.2026: o promotie NU are pret de produs — `price` 0 si `old_price` None, mereu.
+    # Pana azi pretul era primul numar cu „lei" din text, adica aproape mereu ALTCEVA: pragul
+    # comenzii („de minimum 149 lei" la Noriel, „peste 500 lei" la Autobob), valoarea unui
+    # voucher („50 lei Voucher Cadou"), suma maxima de discount („pana la 7500 RON" la f64.ro)
+    # sau pretul VECHI („de la peste 2.300 lei la doar 165 lei" -> 2.300). Iar `old_price`
+    # era calculat din procent (149 / 0,8 = 186,25 lei) — pret pe care magazinul nu l-a scris
+    # nicaieri. Pe card iesea „149 lei, ~~186,25 lei~~, -20%" pe /produse si pe pagina Noriel.
+    # Fara pret, cardurile arata „Oferta activa"; procentul ramane — e scris chiar in oferta.
+    price = 0.0
     old_price = None
-    if discount_pct > 0 and price > 0:
-        old_price = round(price / (1 - discount_pct / 100), 2)
 
     cat_slug_raw = mag.get("categorie_slug", "")
     cat_slug = CATEGORIE_SLUG_MAP.get(cat_slug_raw, cat_slug_raw or "altele")
