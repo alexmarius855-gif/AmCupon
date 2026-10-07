@@ -161,18 +161,57 @@ def zile_pana_la(expira, azi: str):
 _RE_TITLU_COD = re.compile(r"[A-Z0-9][A-Z0-9_-]{2,}", re.I)
 
 
+# 07.10.2026 (a doua trecere): codul scris IN text, cu `cod_cupon` gol — „Up To 20% OFF Sitewide With
+# Code: KLAIYI20" (klaiyihair.com), „Use code DPR35" (kospet.com), „Coupon Code – AFFMASTER300"
+# (ikier.com), „prin codul OFERTE01" (vidaxl.bg): 46 de promotii. Codul e cuvantul de DUPA
+# „code/cod/codul" — cuvantul-cheie in orice forma, codul doar din MAJUSCULE si cifre, cu o cifra sau
+# 4+ litere („with code: AFF20", nu „with code at checkout"). Titlul are prioritate (descrierea Klaiyi
+# numeste doua coduri, titlul unul); doua coduri diferite in acelasi text = nu ghicim.
+_RE_COD_IN_TEXT = re.compile(
+    r"(?i:\b(?:(?:coupon|promo|discount|voucher)\s*)?(?:code|codul|cod))\s*[:：–—-]?\s*"
+    r"([A-Z0-9][A-Z0-9_-]{2,})(?![\w-])")
+_NU_SUNT_CODURI = {"NEEDED", "REQUIRED", "FREE", "SALE", "SHIPPING", "DEAL", "DEALS", "OFFER", "ONLY",
+                   "APPLIED", "AUTO", "AUTOMATIC", "NONE", "BELOW", "ABOVE", "HERE", "LEI", "RON", "EUR", "USD"}
+
+
+def coduri_in_text(text: str) -> list:
+    """Codurile numite in text dupa „code/cod/codul", fara repetitii, in ordinea aparitiei."""
+    gasite = []
+    for m in _RE_COD_IN_TEXT.finditer(text or ""):
+        c = m.group(1).rstrip("-_")
+        if c.upper() in _NU_SUNT_CODURI or not re.search(r"\d|[A-Z]{4,}", c):
+            continue
+        if c not in gasite:
+            gasite.append(c)
+    return gasite
+
+
 def cod_din_titlu(p: dict) -> bool:
-    """Muta codul din titlu in `cod_cupon` (in-place). Intoarce True daca a mutat ceva."""
+    """Muta codul din titlu sau din text in `cod_cupon` (in-place). Intoarce True daca a mutat ceva."""
     if (p.get("cod_cupon") or "").strip():
         return False
     nume = (p.get("nume") or "").strip()
-    if not _RE_TITLU_COD.fullmatch(nume) or not re.search(r"\d|[A-Z]{4,}", nume):
-        return False
     desc = p.get("descriere") or ""
-    if not re.search(rf"\b(?:coupon|code|codul|cod)\s*:?\s*{re.escape(nume)}(?![\w-])", desc, re.I):
+    if (_RE_TITLU_COD.fullmatch(nume) and re.search(r"\d|[A-Z]{4,}", nume)
+            and re.search(rf"\b(?:coupon|code|codul|cod)\s*:?\s*{re.escape(nume)}(?![\w-])", desc, re.I)):
+        p["cod_cupon"] = nume
+        return True
+    coduri = coduri_in_text(nume) or coduri_in_text(desc)
+    if len(coduri) != 1:
         return False
-    p["cod_cupon"] = nume
+    p["cod_cupon"] = coduri[0]
     return True
+
+
+# 07.10.2026: „USD $0 Off Coupon Code: CHAU21" (geekbuying.com) — o reducere de zero nu e o oferta.
+_RE_VALOARE_ZERO = re.compile(
+    r"(?i)(?:\b(?:USD|EUR|RON)\s*)?[$€£]\s*0(?:[.,]0+)?\s+off\b"
+    r"|(?<![\d.,])0(?:[.,]0+)?\s*(?:%|\$|€|lei|ron)\s+(?:off|reducere|discount)\b"
+    r"|\breducere\s+de\s+0(?:[.,]0+)?\s*(?:lei|ron|%)")
+
+
+def valoare_zero(p: dict) -> bool:
+    return bool(_RE_VALOARE_ZERO.search(f"{p.get('nume') or ''} {p.get('descriere') or ''}"))
 
 
 def curata_promotii(magazine: list, azi: str = None) -> dict:
@@ -182,7 +221,7 @@ def curata_promotii(magazine: list, azi: str = None) -> dict:
     azi = azi or azi_utc()
     st = {"expirate": 0, "zile_recalculate": 0, "fara_data": 0, "data_absurda": 0, "flaguri": 0,
           "markdown": 0, "mojibake": 0, "afiliati_scoase": [], "afiliati_curatate": 0, "magazine_golite": [],
-          "cod_din_titlu": 0}
+          "cod_din_titlu": 0, "valoare_zero": 0}
     for m in magazine:
         if not isinstance(m, dict):
             continue
@@ -203,6 +242,9 @@ def curata_promotii(magazine: list, azi: str = None) -> dict:
                     if curat != p[k]:
                         p[k] = curat
                         st["markdown"] += 1
+            if valoare_zero(p):
+                st["valoare_zero"] += 1
+                continue
             if cod_din_titlu(p):
                 st["cod_din_titlu"] += 1
             verdict = text_pentru_afiliati(p, m)
