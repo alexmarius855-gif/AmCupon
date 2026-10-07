@@ -38,7 +38,7 @@ export default function PetmartPage() {
       ],
       tips: [
         "Cumpara hrana uscata in saci de 12-15 kg — pretul per kilogram este semnificativ mai mic decat sacii mici.",
-        "Aboneaza-te la livrare recurenta Petmart (daca disponibila) pentru reducere suplimentara de 5-10%.",
+        "Verifica daca Petmart are livrare recurenta si daca vine cu reducere — merita la hrana pe care o cumperi lunar.",
         "Verifica sectiunea 'Outlet' pentru accesorii si produse aproape de expirare la preturi foarte reduse.",
         "Combina codul de reducere Petmart cu promotiile active pentru economii maxime la comenzile mari.",
         "Comanda nainte de weekend — livrarea se face mai rapid vineri decat luni.",
@@ -47,7 +47,7 @@ export default function PetmartPage() {
         { q: "Cum aplic un cod de reducere la Petmart?", a: "La finalizarea comenzii, cauta campul 'Cod promotional'. Introdu codul si apasa Aplica — reducerea se scade automat din total." },
         { q: "Petmart livreaza gratuit?", a: "Da, Petmart ofera livrare gratuita la comenzi peste un anumit prag. Comenzile cu produse grele (saci mari de hrana) beneficiaza de livrare la domiciliu." },
         { q: "Hrana de pe Petmart este originala?", a: "Da, Petmart lucreaza direct cu distribuitorii autorizati ai brandurilor de hrana pentru animale. Toate produsele sunt originale si in termen de valabilitate." },
-        { q: "Pot returna hrana pentru animale de la Petmart?", a: "Returul este posibil in 30 de zile pentru produse sigilate si nefolosite. Hrana deschisa sau perisabila nu poate fi returnata." },
+        { q: "Pot returna hrana pentru animale de la Petmart?", a: "Pentru cumpărăturile online, legea îți dă cel puțin 14 zile ca să returnezi un produs; mulți comercianți oferă mai mult. Hrana deschisa sau perisabila nu se poate returna; termenul exact e pe site-ul Petmart." },
       ],
       canonical: "/petmart",
     }} />

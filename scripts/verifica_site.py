@@ -365,6 +365,10 @@ REGULI_CORP = [
     # butonul Coursera si Shopify, dupa ce fusese scos din date pe 22.08.
     ("link sablon de afiliere", re.compile(r"/c/\d{5,8}/1/0(?=[\"'?/#\s])"),
      "link de afiliere neconcretizat (campania 1, reclama 0) — duce la 404"),
+    # 07.10.2026: „Pe AmCupon.ro monitorizam TOATE promotiile X" pe 15 pagini de brand — publicam ce
+    # primim prin retelele de afiliere, nu urmarim magazinele.
+    ("monitorizare inventata", re.compile(r"\bmonitoriz[aă]m\s+(?:toate|permanent|zilnic)\b", re.I),
+     "nu urmarim magazinele — publicam promotiile primite prin retelele de afiliere"),
 ]
 
 # Linkuri interne catre pagini care trebuie sa existe ca HTML generat. Pe 05.10.2026, 12

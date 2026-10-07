@@ -26,13 +26,13 @@ export default function LiteraPage() {
       desc: "Coduri de reducere Litera actualizate zilnic. Reduceri la carti din toate genurile, de la fictiune si non-fictiune la carti pentru copii si manuale.",
       editorial: [
         "Litera este una dintre cele mai importante si mai mari edituri din Romania, cu un portofoliu de mii de titluri in toate genurile: literatura romana si straina, non-fictiune, carti pentru copii, manuale scolare, ghiduri practice si carti de sport. Litera a publicat multi bestselleri internationali si autori romani consacrati.",
-        "Pe AmCupon.ro monitorizarm promotiile Litera si publicam codurile de reducere active. Momentele cele mai bune pentru cumparaturi sunt in perioadele Back to School (august-septembrie), Sarbatorile de iarna si in campania 'Un an cu carti' de la inceput de an.",
-        "Litera are si un club de cititori cu beneficii exclusive si o sectiune de e-books in crestere. Calitatea tiparului si a editarii Litera este recunoscuta in industrie, cu investitii constante in traduceri profesionale si design editorial.",
+        "Pe AmCupon.ro publicăm promoțiile Litera pe care le primim prin rețeaua de afiliere, actualizate de mai multe ori pe zi. Reducerile apar mai des la Back to School (august-septembrie) si de Sarbatori.",
+        "Litera are si un club de cititori cu beneficii exclusive si o sectiune de e-books in crestere.",
       ],
       tips: [
-        "Urmareste sectiunea 'Noutati' Litera pentru carti noi cu reducere de lansare (10-20%).",
+        "Urmareste sectiunea 'Noutati' Litera — cartile noi au uneori reducere de lansare.",
         "Seturile tematice Litera (trilogii, serii) au reducere mai mare decat cumparatura pe bucata.",
-        "Back to School e cel mai bun moment pentru manuale si carti educationale — reduceri semnificative.",
+        "La Back to School apar de obicei reduceri la manuale si carti educationale.",
         "Cartile pentru copii Litera au calitate excelenta a ilustratiilor — investitie buna pe termen lung.",
         "Aboneaza-te la newsletter Litera pentru acces la promotii exclusive si informatii despre lansari.",
       ],

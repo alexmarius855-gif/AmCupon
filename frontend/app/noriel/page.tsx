@@ -32,12 +32,12 @@ export default function NorielPage() {
       emoji: "🧸",
       desc: "Coduri de reducere Noriel jucarii actualizate zilnic. Reduceri la jucarii, seturi LEGO, jocuri de societate si articole pentru copii.",
       editorial: [
-        "Noriel este cel mai mare lant de magazine de jucarii din Romania, cu prezenta atat in marile centre comerciale cat si online. Oferita o gama completa de jucarii pentru toate varstele — de la jucarii pentru bebelusi la seturi LEGO complexe si jocuri de societate pentru familie.",
-        "Pe AmCupon.ro monitorizam toate promotiile Noriel si le publicam actualizate. Cele mai importante perioade promotionale sunt inainte de Craciun, de Paste si in perioadele back-to-school, cand reducerile pot ajunge la 40-50%.",
+        "Noriel este unul dintre cele mai mari lanturi de magazine de jucarii din Romania, cu prezenta atat in marile centre comerciale cat si online. Oferita o gama completa de jucarii pentru toate varstele — de la jucarii pentru bebelusi la seturi LEGO complexe si jocuri de societate pentru familie.",
+        "Pe AmCupon.ro publicăm promoțiile Noriel pe care le primim prin rețeaua de afiliere, actualizate de mai multe ori pe zi. Perioadele cu cele mai multe promotii sunt inainte de Craciun, de Paste si la inceputul scolii.",
         "Noriel Club este programul de fidelitate care acorda puncte la fiecare achizitie. Punctele se pot folosi ca reducere la urmatoarele comenzi, atat online cat si in magazinele fizice.",
       ],
       tips: [
-        "Cumpara jucariile LEGO in perioadele de promotii — reducerile pot fi de 20-30% chiar si la seturile noi.",
+        "La LEGO, urmareste perioadele de promotii — reducerile apar si la seturi noi.",
         "Verifica sectiunea 'Outlet' Noriel pentru jucarii la preturi reduse semnificativ — stoc limitat.",
         "Seturi bundle (jucarie + accesoriu) ofera mai buna valoare decat produsele cumparate separat.",
         "Aboneaza-te la newsletter Noriel pentru alerte de reduceri la jucariile dorite de copilul tau.",
@@ -45,8 +45,8 @@ export default function NorielPage() {
       ],
       faq: [
         { q: "Cum aplic un cod de reducere la Noriel?", a: "La finalizarea comenzii online, cauta campul 'Cod voucher' sau 'Cod promotional'. Introdu codul si apasa Aplica — reducerea se adauga automat la total." },
-        { q: "Noriel livreaza gratuit?", a: "Noriel ofera livrare gratuita la comenzi peste un anumit prag. Poti alege si ridicarea din magazinul fizic Noriel cel mai apropiat, de obicei disponibila in 1-2 zile." },
-        { q: "Pot returna jucarii la Noriel?", a: "Da, returul se face in 30 de zile de la primire, cu conditia ca jucaria sa fie in ambalajul original nedes fcut. Retur gratuit in magazin sau prin curier." },
+        { q: "Noriel livreaza gratuit?", a: "Pragul pentru livrare gratuita il vezi in cos. Poti alege si ridicarea dintr-un magazin Noriel. Termenul și costul livrării le vezi în coș, înainte să plătești — depind de stoc, de adresă și de metoda aleasă." },
+        { q: "Pot returna jucarii la Noriel?", a: "Da. Pentru cumpărăturile online, legea îți dă cel puțin 14 zile ca să returnezi un produs; mulți comercianți oferă mai mult. Jucaria trebuie sa fie in starea in care ai primit-o; termenul exact si costul returului sunt pe site-ul Noriel." },
         { q: "Noriel are si jocuri de societate pentru adulti?", a: "Da, Noriel are o sectiune dedicata jocurilor de societate pentru adulti si familie, inclusiv titluri populare internationale si jocuri romanesti." },
       ],
       canonical: "/noriel",

@@ -34,6 +34,7 @@ export default function NewsletterPage() {
   const all: Array<{ are_promotie?: boolean }> = JSON.parse(fs.readFileSync(filePath, "utf-8"));
   const totalMagazine = all.length;
   const cuPromotie = all.filter(m => m.are_promotie).length;
+  // 07.10.2026: eticheta spunea „Coduri active acum", dar cifra numara MAGAZINELE cu oferta.
 
   return (
     <>
@@ -49,7 +50,7 @@ export default function NewsletterPage() {
               Codurile zilei, pe email
             </h1>
             <p className="text-[#c9ced5] text-lg">
-              Peste <span className="text-[#ffffff] font-bold">{totalMagazine}+ magazine</span> monitorizate zilnic.
+              <span className="text-[#ffffff] font-bold">{totalMagazine} de magazine</span>, actualizate de trei ori pe zi.
               Ofertele active, pe categorii, intr-un email in fiecare dimineata.
             </p>
           </div>
@@ -58,8 +59,8 @@ export default function NewsletterPage() {
 
           <div className="grid grid-cols-3 gap-4 text-center mb-8">
             {[
-              { nr: `${totalMagazine}+`,   label: "Magazine monitorizate" },
-              { nr: `${cuPromotie}+`,      label: "Coduri active acum" },
+              { nr: `${totalMagazine}`,   label: "Magazine urmărite" },
+              { nr: `${cuPromotie}`,      label: "Magazine cu oferte acum" },
               { nr: "100%",   label: "Gratuit pentru tine" },
             ].map(s => (
               <div key={s.label} className="bg-[#14181c] rounded-xl border border-[#1f2329] p-4">

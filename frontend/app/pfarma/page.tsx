@@ -34,7 +34,7 @@ export default function PfarmaPage() {
       editorial: [
         "pFarma este o farmacie online autorizata ANMDMR, oferind romanilor acces usor la medicamente fara prescriptie (OTC), suplimente alimentare, produse de ingrijire si cosmetice farmaceutice. Platforma are aproape 10.000 de vanzari confirmate si este o optiune de incredere pentru cumparaturile de farmacie online.",
         "Gama de produse include vitamine si minerale, probiotice, produse pentru sistemul imunitar, cosmetice dermatologice (Eucerin, La Roche-Posay, Vichy), produse homeopate si fitoterapeutice, dispozitive medicale simple si articole de ingrijire. Preturile sunt competitive comparativ cu farmaciile fizice, cu promotii regulate la produse populare.",
-        "AmCupon.ro monitorizeaza toate ofertele pFarma disponibile. Campaniile de reduceri apar in special in sezonul rece (vitamine imunitate) si primavara (detox, suplimente energie). Cumparatorii nou pe pFarma beneficiaza adesea de reducere la prima comanda.",
+        "Pe AmCupon.ro publicăm promoțiile pFarma pe care le primim prin rețeaua de afiliere, actualizate de mai multe ori pe zi. Campaniile apar mai des in sezonul rece (vitamine pentru imunitate) si primavara.",
       ],
       tips: [
         "Cumpara vitamina C, D3 si zinc in cantitati mai mari in afara sezonului rece — preturile sunt mai mici si te pregatesti in avans.",
@@ -48,7 +48,7 @@ export default function PfarmaPage() {
         { q: "pFarma este o farmacie autorizata?", a: "Da, pFarma este o farmacie online autorizata de Agentia Nationala a Medicamentului si a Dispozitivelor Medicale (ANMDMR) si functioneaza conform legislatiei romanesti in vigoare." },
         { q: "Cum aplic codul de reducere pFarma?", a: "La checkout, introdu codul din campul destinat voucherelor sau codurilor promotionale. Reducerea se calculeaza automat si se scade din totalul comenzii." },
         { q: "pFarma vinde medicamente cu prescriptie?", a: "Nu, pFarma vinde exclusiv medicamente fara prescriptie medicala (OTC), suplimente alimentare, produse cosmetice si dispozitive medicale simple. Pentru medicamente cu prescriptie, mergi la o farmacie fizica." },
-        { q: "Cat dureaza livrarea pFarma?", a: "Livrarea prin curierat dureaza 1-2 zile lucratoare in Romania. pFarma ofera si livrare la Fancourier sau DPD, cu posibilitate de urmarire a coletului." },
+        { q: "Cat dureaza livrarea pFarma?", a: "Termenul și costul livrării le vezi în coș, înainte să plătești — depind de stoc, de adresă și de metoda aleasă." },
         { q: "Cand apar cele mai mari reduceri pe pFarma?", a: "Promotiile mari apar toamna (sezon rece, vitamine) si de Black Friday. pFarma are si campanii regulate lunare la produse din categorii specifice — urmareste AmCupon.ro pentru notificari." },
       ],
       canonical: "/pfarma",

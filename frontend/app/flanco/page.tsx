@@ -33,7 +33,7 @@ export default function FlancoPage() {
       desc: "Coduri de reducere Flanco actualizate zilnic. Reduceri la telefoane, laptopuri, TV, electrocasnice mari si mici de la branduri de top.",
       editorial: [
         "Flanco este al doilea cel mai mare retailer de electronice si electrocasnice din Romania, cu peste 130 de magazine fizice si o prezenta online puternica. Platforma ofera o gama completa de produse tech: telefoane, laptopuri, tablete, televizoare, frigidere, masini de spalat si alte electrocasnice.",
-        "Pe AmCupon.ro monitorizam toate promotiile Flanco si publicam codurile de reducere active. Flanco are promotii regulate de weekend, zile flash cu reduceri de 24h si campanii mari de Black Friday, Craciun si 8 Martie cu reduceri substantiale la produse de top.",
+        "Pe AmCupon.ro publicăm promoțiile Flanco pe care le primim prin rețeaua de afiliere, actualizate de mai multe ori pe zi. Flanco are promotii regulate de weekend, zile flash cu reduceri de 24h si campanii mari de Black Friday, Craciun si 8 Martie cu reduceri substantiale la produse de top.",
         "Flanco se diferentiaza prin serviciile post-vanzare: garantie extinsa, instalare la domiciliu pentru aparate mari si rate fara dobanda. Magazinele fizice permit testarea produselor inainte de cumparare, iar comenzile online beneficiaza de livrare rapida.",
       ],
       tips: [

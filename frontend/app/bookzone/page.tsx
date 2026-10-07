@@ -30,7 +30,7 @@ export default function BookzonePage() {
       desc: "Coduri de reducere BookZone actualizate zilnic. Reduceri la carti fizice, audiobooks si e-books de la cei mai buni autori romani si straini.",
       editorial: [
         "BookZone este unul dintre cei mai importanti editori si distribuitori de carte din Romania, cu un catalog de mii de titluri in toate genurile: fictiune, non-fictiune, dezvoltare personala, business, carti pentru copii si manuale. Platforma online ofera livrare rapida si frecvent promotii la titluri noi si bestsellere.",
-        "Pe AmCupon.ro monitorizam ofertele BookZone si publicam codurile de reducere active. Cel mai bun moment pentru cumparaturi e in perioadele de salduri (vara si iarna) si cu ocazia unor evenimente editoriale — lansari, targuri de carte sau campanii tematice.",
+        "Pe AmCupon.ro publicăm promoțiile BookZone pe care le primim prin rețeaua de afiliere, actualizate de mai multe ori pe zi. Cel mai bun moment pentru cumparaturi e in perioadele de salduri (vara si iarna) si cu ocazia unor evenimente editoriale — lansari, targuri de carte sau campanii tematice.",
         "BookZone se remarca prin calitatea productiei editoriale si prin titlurile exclusive din portofoliu. Multi autori romani importanti sunt publicati exclusiv prin BookZone, ceea ce face platforma o destinatie esentiala pentru cititorul roman.",
       ],
       tips: [

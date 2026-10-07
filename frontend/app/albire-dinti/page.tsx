@@ -25,8 +25,8 @@ export default function AlbireDintiPage() {
       emoji: "🦷",
       desc: "Coduri de reducere albire dinti actualizate zilnic. Reduceri la kituri profesionale de albire, geluri dentare si tratamente estetice.",
       editorial: [
-        "Albirea-dintilor.com este una dintre putinele platforme specializate exclusiv in produse si servicii de albire dentara disponibile in Romania. Platforma ofera atat kituri de albire profesionala pentru acasa, cat si produse recomandate de stomatologi — geluri cu peroxid, truse LED, benzi de albire si pasta specializata.",
-        "Pe AmCupon.ro monitorizam toate promotiile disponibile pentru albirea-dintilor.com. Reducerile apar frecvent la kiturile complete si la pachetele cu mai multe produse, asa ca merita sa verifici inainte de cumparare.",
+        "Albirea-dintilor.com este una dintre putinele platforme specializate exclusiv in produse si servicii de albire dentara disponibile in Romania. Platforma ofera atat kituri de albire profesionala pentru acasa, cat si produse pentru albire — geluri cu peroxid, truse LED, benzi de albire si pasta specializata.",
+        "Pe AmCupon.ro publicăm promoțiile albirea-dintilor.com pe care le primim prin rețeaua de afiliere, actualizate de mai multe ori pe zi. Reducerile apar frecvent la kiturile complete si la pachetele cu mai multe produse, asa ca merita sa verifici inainte de cumparare.",
         "Albirea dintilor la domiciliu cu produse profesionale a devenit o alternativa populara la sedintele de cabinet — mai accesibila ca pret, mai comoda si cu rezultate comparabile la utilizare corecta. Kiturile moderne contin gel cu concentratie sigura de peroxid si tava personalizabila.",
       ],
       tips: [
@@ -38,7 +38,7 @@ export default function AlbireDintiPage() {
       ],
       faq: [
         { q: "Albirea dentara la domiciliu e sigura?", a: "Da, daca folosesti produse cu concentratie de peroxid aprobata pentru uz casnic (sub 6%). Kiturile profesionale de pe albirea-dintilor.com respecta standardele UE. Persoanele cu sensibilitate severa sau restaurari dentare recente ar trebui sa consulte mai intai un stomatolog." },
-        { q: "Cate sedinte sunt necesare pentru rezultate vizibile?", a: "In general 7-14 zile de aplicare zilnica de 30-60 de minute. Rezultatele depind de culoarea initiala a dintilor si de consistenta utilizarii. Dintii natural galbeni raspund mai bine decat cei gri." },
+        { q: "Cate sedinte sunt necesare pentru rezultate vizibile?", a: "Depinde de produs — urmează instrucțiunile din kit. Rezultatele depind de culoarea inițială a dinților și de cât de constant folosești produsul. Dacă ai dinți sensibili, întreabă întâi medicul stomatolog." },
         { q: "Cum aplic codul de reducere?", a: "La checkout pe albirea-dintilor.com, cauta campul 'Cod promotional' sau 'Voucher'. Introdu codul de pe AmCupon.ro si confirma — reducerea se aplica imediat." },
         { q: "Albirea functioneaza pe coroane sau fațete?", a: "Nu — produsele de albire functioneaza doar pe smaltul natural. Coroanele ceramice si fatele dentare nu se coloreaza si nu se albesc. Daca ai restaurari dentare vizibile, discuta cu stomatologul inainte." },
       ],

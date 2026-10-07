@@ -46,8 +46,8 @@ export default function Liki24Page() {
       faq: [
         { q: "Liki24 vinde medicamente cu reteta?", a: "Nu, Liki24 vinde exclusiv medicamente fara prescriptie (OTC), suplimente alimentare si cosmetice. Pentru medicamente cu reteta ai nevoie de o farmacie autorizata." },
         { q: "Cum aplic un cod de reducere pe Liki24?", a: "La finalizarea comenzii, cauta campul 'Cod promotional' sau 'Voucher'. Introdu codul copiat de pe AmCupon.ro si apasa Aplica pentru a vedea reducerea aplicata." },
-        { q: "Cat dureaza livrarea de la Liki24?", a: "Livrarea standard Liki24 dureaza 1-3 zile lucratoare. Exista si optiune de livrare rapida (next day) cu cost suplimentar." },
-        { q: "Produsele Liki24 sunt originale?", a: "Da, Liki24 achizitioneaza produse exclusiv de la distribuitori autorizati si garanteaza autenticitatea tuturor produselor vandute." },
+        { q: "Cat dureaza livrarea de la Liki24?", a: "Termenul și costul livrării le vezi în coș, înainte să plătești — depind de stoc, de adresă și de metoda aleasă." },
+        { q: "Produsele Liki24 sunt originale?", a: "Liki24 declara ca se aprovizioneaza de la distribuitori autorizati. Pentru siguranta, cumpara medicamentele doar de la farmacii online autorizate." },
       ],
       canonical: "/liki24",
     }} />

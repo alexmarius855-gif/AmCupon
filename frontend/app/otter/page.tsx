@@ -26,7 +26,7 @@ export default function OtterPage() {
       desc: "Coduri de reducere Otter actualizate zilnic. Reduceri la colectii streetwear, incaltaminte urban si accesorii de moda.",
       editorial: [
         "Otter.ro este un brand romanesc de fashion urban si streetwear, cu colectii originale de haine, incaltaminte si accesorii cu un stil distinctiv si modern. Platforma se adreseaza tinerilor care isi doresc un look autentic, diferit de mainstream-ul fast fashion.",
-        "Pe AmCupon.ro monitorizam promotiile Otter si publicam codurile de reducere active. Otter lanseza frecvent colectii limitate si drop-uri exclusive — abonarea la newsletter sau la grupul de social media e esentiala pentru a nu rata lansarile.",
+        "Pe AmCupon.ro publicăm promoțiile Otter pe care le primim prin rețeaua de afiliere, actualizate de mai multe ori pe zi. Otter lanseza frecvent colectii limitate si drop-uri exclusive — abonarea la newsletter sau la grupul de social media e esentiala pentru a nu rata lansarile.",
         "Otter se remarca prin calitatea materialelor si prin designul original — produsele sunt gandite sa dureze si sa fie purtate zilnic. Brandul are o comunitate puternica de clienti fideli care apreciaza autenticitatea.",
       ],
       tips: [
@@ -38,8 +38,8 @@ export default function OtterPage() {
       ],
       faq: [
         { q: "Cum aplic un cod de reducere Otter?", a: "La checkout, cauta campul 'Cod promotional' sau 'Voucher'. Introdu codul de pe AmCupon.ro si confirma reducerea inainte de plata." },
-        { q: "Otter livreaza in toata Romania?", a: "Da, Otter livreaza in toata Romania prin curierat rapid. Comenzile se proceseaza in 1-3 zile lucratoare dupa plasare." },
-        { q: "Pot returna produse Otter?", a: "Da, Otter accepta retururi in 14-30 de zile. Produsele trebuie sa fie nepurtate, cu etichete originale intacte si ambalaj original." },
+        { q: "Otter livreaza in toata Romania?", a: "Da, Otter livreaza in toata Romania prin curier. Termenul și costul livrării le vezi în coș, înainte să plătești — depind de stoc, de adresă și de metoda aleasă." },
+        { q: "Pot returna produse Otter?", a: "Da. Pentru cumpărăturile online, legea îți dă cel puțin 14 zile ca să returnezi un produs; mulți comercianți oferă mai mult. Produsele trebuie sa fie nepurtate, cu etichetele intacte; termenul exact e pe site-ul Otter." },
         { q: "Otter face livrare internationala?", a: "Verifica site-ul Otter pentru optiunile de livrare internationala — disponibilitatea si preturile de transport variaza pe destinatie." },
       ],
       canonical: "/otter",

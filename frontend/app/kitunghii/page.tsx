@@ -32,7 +32,7 @@ export default function KitUnghiiPage() {
       emoji: "💅",
       desc: "KitUnghii este magazinul online specializat in produse pentru unghii din Romania, cu o gama completa de geluri UV, oje semipermanente si accesorii nail art.",
       editorial: [
-        "KitUnghii s-a impus ca specialist in produse pentru unghii in Romania, aducand la preturi accesibile tot ce au nevoie atat salonele profesionale cat si cele care isi fac unghiile acasa. Cu peste 12.000 de vanzari confirmate, magazinul are o reputatie solida in comunitatea nail art din Romania.",
+        "KitUnghii s-a impus ca specialist in produse pentru unghii in Romania, aducand la preturi accesibile tot ce au nevoie atat salonele profesionale cat si cele care isi fac unghiile acasa.",
         "Gama de produse include geluri UV si LED, oje semipermanente in sute de nuante, top coat-uri, base coat-uri, pilituri, freze, lampi UV/LED si kituri complete pentru incepatori. Brandurile disponibile includ atat marci internationale de renume cat si branduri proprii cu raport pret-calitate excelent.",
         "AmCupon.ro urmareste toate promotiile KitUnghii pentru a-ti oferi cele mai bune coduri de reducere. Cele mai mari reduceri apar in perioadele de Black Friday si in campaniile de vanzare din iarna si primavara.",
       ],
@@ -47,7 +47,7 @@ export default function KitUnghiiPage() {
       faq: [
         { q: "Produsele KitUnghii sunt profesionale?", a: "Da, KitUnghii ofera atat produse profesionale pentru saloane cat si produse entry-level pentru uz casnic. Fiecare produs are specificatii clare despre nivelul de utilizare recomandat." },
         { q: "Cum aplic un cod reducere KitUnghii?", a: "La finalizarea comenzii, gasesti campul pentru voucher sau cod promotional. Introdu codul de pe AmCupon.ro si reducerea se aplica instantaneu la totalul cosului." },
-        { q: "Cat dureaza livrarea KitUnghii?", a: "Livrarea standard prin curierat dureaza 1-3 zile lucratoare in Romania. Comenzile plasate inainte de ora 14:00 sunt expediate de obicei in aceeasi zi." },
+        { q: "Cat dureaza livrarea KitUnghii?", a: "Termenul și costul livrării le vezi în coș, înainte să plătești — depind de stoc, de adresă și de metoda aleasă." },
         { q: "Gelurile UV de la KitUnghii au o durata buna de utilizare?", a: "Gelurile corect aplicate (strat subtire, lamp cure complet) tin 2-4 saptamani fara cioplitura. Durata depinde si de ingrijire si activitatile zilnice." },
         { q: "KitUnghii accepta retururi?", a: "Da, in 14 zile de la receptia coletului pentru produsele nefolosite si in ambalajul original. Produsele deschise (motive de siguranta cosmetica) nu se pot returna." },
       ],

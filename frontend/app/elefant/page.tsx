@@ -33,7 +33,7 @@ export default function ElefantPage() {
       desc: "Reduceri si coduri de reducere Elefant.ro actualizate zilnic. Carti, jocuri, filme.",
       editorial: [
         "Elefant.ro este una dintre cele mai mari librarii online din Romania, cu peste 2 milioane de titluri disponibile — carti in limba romana si straina, manuale, carti de colorat, jocuri de societate, filme si muzica.",
-        "Pe AmCupon.ro monitorizam promotiile Elefant si le publicam imediat ce apar. Elefant are frecvent reduceri de 20-50% la carti, campanii 1+1 gratis, si oferte la categorii specifice (SF, romane, carti pentru copii).",
+        "Pe AmCupon.ro publicăm promoțiile Elefant pe care le primim prin rețeaua de afiliere, actualizate de mai multe ori pe zi. Elefant are frecvent reduceri de 20-50% la carti, campanii 1+1 gratis, si oferte la categorii specifice (SF, romane, carti pentru copii).",
         "Elefant ofera livrare rapida si retururi simple. Abonamentul Elefant Premium aduce reduceri suplimentare si transport gratuit pentru comenzile mai mari. Combina abonamentul cu codurile de pe AmCupon.ro pentru economii maxime.",
       ],
       tips: [
