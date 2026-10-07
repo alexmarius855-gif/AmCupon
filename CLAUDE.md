@@ -61,6 +61,14 @@ Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Pro
   verificate la producator (BP A3 Basic nu exista in RO; M6 Comfort NU are Bluetooth). Ramane: articolele „Cel mai bun
   X" au modele depasite (iPhone 16 Pro / Pixel 9 / S25 ca „cele mai bune 2026", RTX 4080) si statistici inventate
   („farmaciile online au crescut 200%") — necesita rescriere cu date verificate, nu reguli.
+- **Articole „Cel mai bun X" rescrise pe surse — `scripts/articole_verificate.py` (07.10, seara):** fiecare articol
+  e un `articol(slug, titlu, descriere, categorie, continut, surse)` scris in `data/articole_manuale.json`, pe care
+  `generate_blog.py` il reinjecteaza la fiecare rulare peste cel generat (acelasi slug; `generate_best_of.py` nu-l mai
+  adauga). Reguli: model/specificatie/data doar cu sursa in `SURSE`, fara preturi, fara „testat", fara coduri promise,
+  doar modele vandute oficial in RO; `--test` le verifica. Campul `surse_din` schimba nota de sub titlu („actualizat
+  pe ..."). **Facute 10 + tensiometrul** (telefon poze, Samsung, casti, smartwatch, laptop gaming, friteuza, aspirator
+  robot, scaun auto, carucior, router). Pentru urmatoarele: acelasi fisier, alt `articol(...)`, apoi
+  `python articole_verificate.py`. Renderer-ul blogului stie acum citate („> ") si itemi de lista pe mai multe randuri.
 
 **UPDATE 05–06.10.2026 (onestitate + bani pe paginile CU TRAFIC: /top si „Cel mai bun X"; sweep de afirmatii false pe tot site-ul):**
 - **Trafic real, masurat** (Vercel Analytics pe `am-cupon-a8dz` — proiectul care serveste amcupon.ro; planul Hobby da doar 31 de
