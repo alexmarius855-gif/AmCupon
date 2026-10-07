@@ -74,8 +74,14 @@ Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Pro
   vit. D 100 µg, zinc 25 mg, magneziu din suplimente 250 mg, seleniu 255 µg, vit. A 3000 µg, fier 40 mg „safe level";
   vit. C si EPA/DHA fara limita); fara doze recomandate de noi, fara produse anume. Tema noua `vitamine-minerale`
   (46 de produse, 11 parteneri) sub ambele. **Articole dublate:** redirect in `lib/redirecturi.ts` + `curata_articole.py`
-  le scoate singur din blog (`fara_redirectionate`) — primul: air fryer -> friteuze. **Raman 46** best-of/ghiduri;
-  urmatoarele: hrana caini, crema antirid, ser fata, TV, frigider („A+" e clasa veche), masina de spalat.
+  le scoate singur din blog (`fara_redirectionate`) — primul: air fryer -> friteuze.
+- **08.10 — 32 de articole rescrise.** Unde partenerii nu au produsul in feed (frigider, masina de spalat), ghidul
+  e regula oficiala (eticheta UE A-G din 01.03.2021), nu un model. Articolele „pe reguli": troler (Ryanair/Wizz
+  40x30x20), ochelari (EN ISO 12312-1, cat. 4 interzisa la volan), jucarii (sub 36 de luni, Reg. 2025/2509), ser
+  (vit. A max 0,3%), parfumuri (alergeni, Reg. 2023/1545), power bank (100/160 Wh), drona (AACR, A1/A3), bicicleta
+  (250 W/25 km/h), dotari auto (trusa, 2 triunghiuri, stingator; vesta doar >3,5 t). **Raman ~33**: TV/stick TV,
+  tableta, PC gaming, smart home, robot bucatarie, saltea, cort, fitness, haine sport, fond de ten, crema antirid,
+  hrana caini, carti, cadouri, ghidurile (BF, cumparaturi sigure, coduri) si comparatiile intre magazine.
 
 **UPDATE 05–06.10.2026 (onestitate + bani pe paginile CU TRAFIC: /top si „Cel mai bun X"; sweep de afirmatii false pe tot site-ul):**
 - **Trafic real, masurat** (Vercel Analytics pe `am-cupon-a8dz` — proiectul care serveste amcupon.ro; planul Hobby da doar 31 de
