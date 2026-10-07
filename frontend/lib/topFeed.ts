@@ -112,7 +112,6 @@ export interface TemaArticol {
  */
 export const ARTICOLE_TEME: Record<string, TemaArticol> = {
   "cea-mai-buna-friteuza-aer": { tema: "friteuze" },
-  "cel-mai-bun-aparat-aer-cald": { tema: "friteuze" },
   "cea-mai-buna-masina-de-cafea": { tema: "cafetiere" },
   "cel-mai-bun-monitor-gaming": { tema: "monitoare", filtru: /\bgaming\b/, nume: "monitoare de gaming" },
   "cele-mai-bune-casti-wireless": { tema: "casti-wireless" },

@@ -383,6 +383,13 @@ def curata_descriere(desc: str, platite: set[str]) -> str:
     return nou
 
 
+def fara_redirectionate(lista: list, red: dict[str, str]) -> list:
+    """Articolele a caror adresa e redirectionata (lib/redirecturi.ts) ies din blog: altfel lista de articole
+    si generatorul (care il adauga la loc) ar trimite cititorul printr-un redirect spre articolul in care a fost
+    contopit. Ex.: „air fryer" (07.10) = dublura articolului despre friteuze."""
+    return [p for p in lista if f"/blog/{p.get('slug')}" not in red]
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true")
@@ -394,7 +401,9 @@ def main() -> int:
     platite, categorii, red = incarca_context()
     posts = json.load(io.open(BLOG, encoding="utf-8"))
     lista = posts if isinstance(posts, list) else posts.get("posts", [])
-    schimbate = 0
+    ramase = fara_redirectionate(lista, red)
+    schimbate = len(lista) - len(ramase)
+    lista[:] = ramase
     for p in lista:
         vechi = (p.get("content"), p.get("excerpt"), p.get("title"))
         p["content"] = curata_text(p.get("content") or "", platite, categorii, red)
@@ -537,6 +546,9 @@ def test() -> int:
     v("descriere de magazin: verificate -> active",
       d("Coduri reducere Booking verificate in Octombrie 2026. 1 promotii active."),
       "Coduri reducere Booking active in Octombrie 2026. 1 promotii active.")
+    v("articol redirectionat (contopit in altul) iese din blog",
+      [x["slug"] for x in fara_redirectionate([{"slug": "a-2026"}, {"slug": "b-2026"}], {"/blog/a-2026": "/blog/b-2026"})],
+      ["b-2026"])
     print(f"\n{'TOATE TREC' if not esecuri else f'{esecuri} ESECURI'}")
     return 1 if esecuri else 0
 

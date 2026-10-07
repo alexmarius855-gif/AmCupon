@@ -37,6 +37,11 @@ export const REDIRECTURI: Redirect[] = [
   { source: "/calculator-procente", destination: "/servicii", permanent: true },
   { source: "/generator-proforma",  destination: "/servicii", permanent: true },
 
+  // ── Articole contopite (07.10.2026) ─────────────────────────────────────
+  // „Cel mai bun air fryer" era a doua pagina pe aceeasi cautare cu articolul despre friteuze (rescris pe
+  // surse): doua pagini care isi impart semnalul. scripts/curata_articole.py il scoate si din blog.
+  { source: "/blog/cel-mai-bun-aparat-aer-cald-2026", destination: "/blog/cea-mai-buna-friteuza-aer-2026", permanent: true },
+
   // ── Profitshare EXCLUS 19.08.2026 (cont respins) ──────────────────────────
   // Magazinele au disparut din date. Astea erau in sitemap, deci indexate: fara
   // 301 ar fi devenit 404-uri. Destinatia e categoria reala a fiecaruia.
