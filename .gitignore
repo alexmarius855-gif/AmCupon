@@ -46,3 +46,6 @@ data/.cache-imagini/
 
 # Permisiuni deep-link Impact — regenerat de fetch_impact_api.py la fiecare rulare, inainte de merge
 data/impact_deeplink.json
+
+# Rapoarte locale cu date private (comisioane) — repo-ul e public
+*.local.json
