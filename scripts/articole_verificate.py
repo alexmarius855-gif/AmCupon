@@ -2367,6 +2367,114 @@ instalezi.
 )
 
 
+# ─── Televizoare (08.10, lotul 8) ────────────────────────────────────────────────────────────────
+# Recomandau modele din 2022-2024 ca „cele mai bune 2026" (Samsung QN85B, LG C3/C4, Sony A80L) si Chromecast cu
+# Google TV (scos din vanzare in februarie 2025). Tabelul distantelor era fara sursa; acum e calculat din doua reguli
+# publice (Sony: 1,5 x inaltimea ecranului la 4K; SMPTE: unghi de 30 de grade). „Cum alegi un televizor" era
+# acelasi subiect: contopit aici (redirect in lib/redirecturi.ts). Partenerii nu au televizoare in feed.
+
+articol(
+    "cel-mai-bun-televizor-4k-2026",
+    "Cel mai bun televizor 4K 2026: cum alegi",
+    "OLED, Mini LED sau LED, ce diagonală pentru ce distanță, ce înseamnă eticheta energetică a televizoarelor și "
+    "ce porturi îți trebuie pentru consolă.",
+    "Electronice",
+    f"""
+## Cel mai bun televizor 4K în 2026: cum alegi
+
+Aproape toate televizoarele de la 43 de inch în sus sunt azi 4K. Diferențele mari sunt la tipul de ecran, la
+luminozitate și la porturi.
+
+{CUM_AM_ALES_GHID}
+
+## Tipul de ecran
+
+- **OLED** — fiecare pixel se aprinde singur: negru complet, contrast foarte mare, unghiuri de privire bune. E cel
+  mai potrivit pentru camere întunecate. Imaginile statice ținute ore întregi pot lăsa urme (burn-in); producătorii
+  au sisteme care reduc riscul.
+- **Mini LED** — iluminare din spate cu mii de LED-uri mici, împărțită pe zone: luminozitate mare, bun pentru
+  camere luminoase și HDR.
+- **LED clasic (panou VA sau IPS)** — cel mai ieftin. VA are contrast mai bun; IPS păstrează culorile când privești
+  din lateral.
+- „QLED” e un nume de marketing pentru ecrane LED cu un strat de puncte cuantice, care îmbunătățește culorile.
+
+## Diagonala, după distanță
+
+Două reguli publice: Sony recomandă la 4K o distanță de **1,5 ori înălțimea ecranului** (cea mai mică distanță
+confortabilă), iar standardul SMPTE recomandă ca ecranul să ocupe cel puțin **30°** din câmpul vizual (distanța
+maximă). Între ele, calculat:
+
+| Diagonală | Distanță minimă (Sony, 4K) | Distanță maximă (SMPTE, 30°) |
+|---|---|---|
+| 43 inch | 0,8 m | 1,8 m |
+| 50 inch | 0,9 m | 2,1 m |
+| 55 inch | 1,0 m | 2,3 m |
+| 65 inch | 1,2 m | 2,7 m |
+| 75 inch | 1,4 m | 3,1 m |
+
+## Eticheta energetică
+
+Din martie 2021, televizoarele au eticheta UE pe scala A–G, cu **două clase**: una pentru conținut obișnuit (SDR) și
+una pentru HDR, plus consumul în kWh la 1.000 de ore. Compară consumul între modele de aceeași diagonală. Codul QR duce la fișa oficială din baza EPREL.
+
+## Porturi și funcții
+
+- **HDMI 2.1** cu 4K la 120 Hz, dacă ai PlayStation 5, Xbox Series X sau un PC de gaming.
+- **HDR**: HDR10 e standardul de bază; Dolby Vision și HDR10+ sunt formate dinamice, suportate diferit de la o marcă
+  la alta.
+- **Sistemul de operare** (Google TV, webOS, Tizen și altele) decide ce aplicații ai și cât timp primește actualizări.
+
+[Vezi magazinele de electronice →](/categorii/electronice)
+""",
+    [
+        "https://www.sony.ca/en/electronics/support/articles/00008601 (Sony: 1,5 x inaltimea ecranului la 4K)",
+        "https://tv-size-distance.utils.com/ (SMPTE 30 de grade, THX 40 de grade, formula unghiului)",
+        "https://commission.europa.eu/system/files/2021-04/rescaled_eu_energy_labels_and_transition_period.pdf (televizoarele pe scala A-G din 01.03.2021)",
+        "https://eprel.ec.europa.eu (fisele oficiale)",
+    ],
+)
+
+articol(
+    "cel-mai-bun-stick-smart-tv-2026",
+    "Cel mai bun stick Smart TV 2026: Google TV, Fire TV, Apple",
+    "Ce face un stick sau un box Smart TV, cum alegi platforma (Google TV, Fire TV, Apple TV), ce înseamnă 4K, HDR "
+    "și Wi-Fi 6 și de ce Chromecast nu se mai fabrică.",
+    "Electronice",
+    f"""
+## Cel mai bun stick Smart TV în 2026
+
+Un stick sau un box Smart TV se conectează la portul HDMI și aduce aplicații de streaming pe un televizor mai vechi
+— sau pe unul „smart” al cărui sistem nu mai primește actualizări.
+
+{CUM_AM_ALES_GHID}
+
+## Platforma contează cel mai mult
+
+- **Google TV** — pe Google TV Streamer (lansat de Google în 2024) și pe dispozitive de la alți producători, de
+  exemplu Xiaomi. **Chromecast cu Google TV nu se mai fabrică**: Google l-a scos din vânzare în februarie 2025;
+  mai poți găsi exemplare din stoc.
+- **Fire TV** (Amazon) — interfață centrată pe Prime Video și Alexa.
+- **Apple TV 4K** — se potrivește cu iPhone-ul (AirPlay), cel mai scump dintre ele.
+
+Verifică dacă aplicațiile pe care le folosești (Netflix, YouTube, Disney+, HBO Max, Prime Video, aplicațiile TV
+românești) există pe platforma aleasă — lista diferă.
+
+## Ce mai verifici
+
+- **4K și HDR** doar dacă televizorul e 4K și are HDR; altfel plătești pentru ceva ce nu vezi.
+- **Wi-Fi 6** sau port de rețea pe cablu, dacă routerul e departe de televizor.
+- **Telecomanda** — cu control al volumului televizorului (HDMI-CEC sau infraroșu), ca să folosești una singură.
+- **Stocarea internă**, dacă vrei să instalezi multe aplicații.
+
+[Vezi magazinele de electronice →](/categorii/electronice)
+""",
+    [
+        "https://androidcentral.com/streaming-tv/the-chromecast-with-google-tv-is-officially-no-longer-available-for-purchase (Chromecast scos din vanzare, feb. 2025)",
+        "https://www.whathifi.com/news/google-announces-the-death-of-chromecast-alongside-the-brand-new-google-tv-streamer (Google TV Streamer, 2024)",
+    ],
+)
+
+
 # ─── Sanatate: suplimente (07.10) ─────────────────────────────────────────────────────────────────
 # Regula in plus fata de restul: in UE un supliment poate pretinde un efect asupra sanatatii DOAR cu formularea
 # autorizata (Reg. 1924/2006, lista in Reg. 432/2012 si in registrul UE). Articolele vechi aveau statistici fara

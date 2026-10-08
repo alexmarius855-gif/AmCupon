@@ -45,6 +45,7 @@ export const REDIRECTURI: Redirect[] = [
   { source: "/blog/reduceri-flash-online-romania-2026", destination: "/blog/cum-sa-economisesti-la-cumparaturi-online-2026", permanent: true },
   { source: "/blog/comparator-preturi-online-romania-2026", destination: "/blog/cum-sa-economisesti-la-cumparaturi-online-2026", permanent: true },
   { source: "/blog/top-magazine-online-romania-2026", destination: "/toate-magazinele", permanent: true },
+  { source: "/blog/cum-alegi-un-televizor-2026", destination: "/blog/cel-mai-bun-televizor-4k-2026", permanent: true },
 
   // ── Profitshare EXCLUS 19.08.2026 (cont respins) ──────────────────────────
   // Magazinele au disparut din date. Astea erau in sitemap, deci indexate: fara
