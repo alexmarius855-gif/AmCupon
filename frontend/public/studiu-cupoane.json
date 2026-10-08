@@ -1,13 +1,13 @@
 {
-  "generat": "2026-10-07",
+  "generat": "2026-10-08",
   "total_magazine": 956,
-  "cu_promotie": 132,
+  "cu_promotie": 131,
   "cu_cod_real": 38,
-  "doar_oferta": 94,
-  "procent_cu_promotie": 13.8,
+  "doar_oferta": 93,
+  "procent_cu_promotie": 13.7,
   "procent_cu_cod": 4.0,
-  "reducere_mediana_generala": 20.0,
-  "magazine_cu_procent_declarat": 86,
+  "reducere_mediana_generala": 20,
+  "magazine_cu_procent_declarat": 85,
   "categorii": [
     {
       "slug": "cadouri-flori",
@@ -64,6 +64,15 @@
       "esantion": 4
     },
     {
+      "slug": "marketplace",
+      "nume": "Marketplace",
+      "magazine": 192,
+      "cu_promotie": 12,
+      "reducere_mediana": 22.5,
+      "reducere_max": 60,
+      "esantion": 6
+    },
+    {
       "slug": "software",
       "nume": "Software & digital",
       "magazine": 69,
@@ -71,15 +80,6 @@
       "reducere_mediana": 20,
       "reducere_max": 50,
       "esantion": 3
-    },
-    {
-      "slug": "marketplace",
-      "nume": "Marketplace",
-      "magazine": 192,
-      "cu_promotie": 13,
-      "reducere_mediana": 20,
-      "reducere_max": 60,
-      "esantion": 7
     },
     {
       "slug": "calatorii",
