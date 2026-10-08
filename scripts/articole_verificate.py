@@ -2141,6 +2141,109 @@ puțin decât formula și nuanța.
 )
 
 
+# ─── Ghiduri (08.10, lotul 6) ────────────────────────────────────────────────────────────────────
+# Ghidul Black Friday dadea data gresita („29 noiembrie 2026" — ultima vineri e 27) si statistici fara sursa
+# („comerciantii cresc pretul cu 20-30%"); ghidul de cumparaturi sigure cerea „ANPC inregistrat" (nu exista asa
+# ceva). Aici: regula pretului de referinta (HG 686/2022, minimul din ultimele 30 de zile) si drepturile din
+# Directiva 2011/83/UE. Datele BF sunt cele din frontend/public/black-friday.json.
+
+articol(
+    "ghid-black-friday-romania-2026",
+    "Black Friday 2026 în România: date și reduceri reale",
+    "Black Friday la eMAG pe 6 noiembrie 2026 și valul internațional pe 27–30 noiembrie; cum verifici o reducere "
+    "după prețul minim din ultimele 30 de zile și ce faci când nu se potrivește.",
+    "Ghiduri",
+    f"""
+## Black Friday 2026 în România
+
+În România, Black Friday nu e o singură zi. eMAG îl ține de obicei mai devreme decât restul lumii, iar valul
+internațional vine la sfârșitul lunii.
+
+- **eMAG: vineri, 6 noiembrie 2026.**
+- **Black Friday internațional: vineri, 27 noiembrie 2026**, urmat de Cyber Monday pe **30 noiembrie**.
+- Multe magazine își anunță campaniile cu câteva zile înainte sau le prelungesc o săptămână.
+
+Ofertele active la magazinele partenere le găsești pe [pagina noastră de Black Friday](/black-friday).
+
+## Cum recunoști o reducere reală
+
+**Regula din România:** când un magazin anunță o reducere, prețul de referință față de care o calculează trebuie
+să fie **cel mai mic preț practicat de el în ultimele 30 de zile** pentru același produs (10 zile la produsele care
+se strică repede). Magazinul trebuie să arate clar și perioada în care s-a aplicat acel preț.
+
+Ce înseamnă în practică:
+
+- **Prețul tăiat nu e „prețul recomandat”**, ci minimul lui din ultima lună. Dacă produsul a costat mai puțin acum
+  două săptămâni, „reducerea” se calculează de la acel preț.
+- **Notează prețurile din timp.** Dacă știi cât costa produsul în octombrie, vezi singur dacă reducerea e reală.
+- **Un banner „-50% la tot”** trebuie să fie adevărat pentru produsele la care e afișat.
+- **Dacă ceva nu se potrivește**, poți face o reclamație la ANPC, cu capturi de ecran care arată prețurile și
+  datele.
+
+## Ce verifici înainte să plătești
+
+- **Costul transportului** și termenul de livrare — în perioadele aglomerate cresc amândouă.
+- **Vânzătorul** — pe marketplace-uri, mulți vânzători sunt terți; returul și garanția sunt la ei.
+- **Returul**: pentru comenzile online ai 14 zile ca să te răzgândești, și de Black Friday.
+
+[Vezi ofertele de Black Friday de la parteneri →](/black-friday)
+""",
+    [
+        "https://www.wall-street.ro/articol/ecommerce/emag-black-friday-2026-cand-are-loc-anul-acesta-campania-de-reduceri.html (eMAG, 06.11.2026)",
+        "https://spotmedia.ro/stiri/economie/noi-reguli-pentru-comercianti-privind-reducerile-de-pret-ce-sanctiuni-risca-cei-care-nu-le-respecta (HG 686/2022: minimul din 30 de zile, 10 zile la perisabile)",
+        "https://gadget.ro/de-azi-28-mai-comerciantii-sunt-obligati-sa-afiseze-in-cazul-reducerilor-ofertelor-si-cel-mai-mic-pret-practicat-in-ultimele-30-de-zile/ (in vigoare din 28.05.2022)",
+        "https://www.antena3.ro/actualitate/avertisment-anpc-reduceri-false-black-friday-2023-691026.html (avertismentele ANPC: bannere „-50% la tot”)",
+    ],
+)
+
+articol(
+    "ghid-cumparaturi-online-sigure-2026",
+    "Cum cumperi online sigur în 2026: verificări și drepturi",
+    "Ce date trebuie să afișeze un magazin online, cum îi verifici firma, cum plătești în siguranță și ce drepturi "
+    "ai la retur, livrare întârziată și produs defect.",
+    "Ghiduri",
+    f"""
+## Cum cumperi online sigur în 2026
+
+Cele mai multe probleme la cumpărăturile online încep cu un magazin despre care nu știi nimic. Câteva verificări de
+două minute te scutesc de ele.
+
+## Verifică magazinul
+
+- **Firma din spatele site-ului.** Un magazin online trebuie să afișeze denumirea firmei, sediul, codul fiscal (CUI)
+  și datele de contact. Caută-le în subsolul paginii sau la „Termeni și condiții”.
+- **Verifică CUI-ul** pe site-ul ANAF sau al Registrului Comerțului: vezi dacă firma există, de când și dacă e activă.
+- **Recenzii din mai multe locuri**, nu doar de pe site-ul magazinului.
+- **Un preț mult sub orice alt magazin**, pentru un produs de marcă, e un semnal de alarmă.
+
+## Plătește în siguranță
+
+- **Cu cardul**, nu prin transfer bancar către o persoană fizică. La card, banca ta poate contesta tranzacția
+  (chargeback) în anumite situații, de exemplu dacă produsul nu vine.
+- **Confirmarea 3D Secure** (în aplicația băncii) e normală; o cerere de cod prin SMS sau telefon de la „curier”
+  sau „bancă” nu e.
+- **Ramburs** — plătești la livrare, dar verifică pachetul dacă curierul îți permite.
+
+## Drepturile tale
+
+- **14 zile ca să te răzgândești** la comenzile online, fără să spui de ce. Magazinul îți returnează banii, inclusiv
+  transportul standard de la livrare, în cel mult 14 zile de la anunțul tău.
+- **Livrare întârziată:** dacă produsul nu vine în termenul promis (sau în 30 de zile, dacă nu s-a promis altul), îi
+  ceri magazinului să livreze într-un termen suplimentar; dacă nici atunci nu livrează, poți renunța la comandă.
+- **Produs defect:** vânzătorul răspunde pentru lipsa de conformitate timp de **2 ani** de la livrare.
+- **Reclamații:** întâi la magazin, în scris; apoi la ANPC, cu dovezile (comanda, plata, mesajele).
+
+[Vezi magazinele partenere →](/toate-magazinele)
+""",
+    [
+        "https://eur-lex.europa.eu/eli/dir/2011/83/oj (Directiva 2011/83/UE: 14 zile, rambursare in 14 zile, livrare art. 18)",
+        "https://eur-lex.europa.eu/eli/dir/2019/771/oj (Directiva 2019/771/UE: 2 ani de conformitate)",
+        "https://legislatie.just.ro/Public/DetaliiDocumentAfis/77218 (Legea 365/2002, art. 5: datele furnizorului)",
+        "https://anpc.ro (reclamatii)",
+    ],
+)
+
+
 # ─── Sanatate: suplimente (07.10) ─────────────────────────────────────────────────────────────────
 # Regula in plus fata de restul: in UE un supliment poate pretinde un efect asupra sanatatii DOAR cu formularea
 # autorizata (Reg. 1924/2006, lista in Reg. 432/2012 si in registrul UE). Articolele vechi aveau statistici fara

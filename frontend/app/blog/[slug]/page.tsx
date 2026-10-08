@@ -520,7 +520,7 @@ export default async function ArticolPage({
               {/* 07.10.2026: articolele rescrise pe surse (articole_verificate.py) au `surse_din`; pentru
                   ele „selectia e din mai–iunie" ar fi falsa. */}
               {post.surse_din
-                ? `Text editorial actualizat pe ${new Date(post.surse_din + "T12:00:00Z").toLocaleDateString("ro-RO", { day: "numeric", month: "long", year: "numeric" })}, după fișele tehnice ale producătorilor; produsele nu le-am testat.`
+                ? `Text editorial actualizat pe ${new Date(post.surse_din + "T12:00:00Z").toLocaleDateString("ro-RO", { day: "numeric", month: "long", year: "numeric" })}, pe baza surselor oficiale (legi, standarde, fișele producătorilor) trecute în articol; produsele nu le-am testat.`
                 : "Text editorial scris pe baza specificațiilor și a prețurilor publice; selecția modelelor e din mai–iunie 2026, iar produsele nu le-am testat."}{" "}
               {sectiune ? (
                 <a href="#unde-cumperi" className="text-[#ddf93c] hover:underline">Prețurile de azi la magazinele partenere sunt la finalul articolului.</a>
