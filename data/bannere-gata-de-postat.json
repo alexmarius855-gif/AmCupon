@@ -1,5 +1,18 @@
 [
   {
+    "id": 273118,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273077/original/273077.png",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=0f2b399fa&aff_code=541547473&campaign_unique=48a30b7c9",
+    "landing_raw": "https://www.obio.ro/toate-produsele-obio/filtre/producator/hari-tea/producator/higher-living/",
+    "width": 976,
+    "height": 976,
+    "merchant": "obio.ro",
+    "merchant_slug": "obio-ro",
+    "name": "Ceaiuri Higher Living",
+    "category": "Ceaiuri Higher Living",
+    "b_type": "image"
+  },
+  {
     "id": 273114,
     "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273073/original/273073.png",
     "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=f3e991518&aff_code=541547473&campaign_unique=48a30b7c9",
