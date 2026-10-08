@@ -2244,6 +2244,129 @@ două minute te scutesc de ele.
 )
 
 
+# ─── Ghidurile despre coduri si economisire (08.10, lotul 7) ─────────────────────────────────────
+# Scriau „AmCupon.ro — verificam si actualizam codurile zilnic" (nu testam codurile), unelte probabil inexistente
+# in Romania („PriceSpy.ro"), ore fixe la eMAG fara sursa si „comerciantii cresc pretul cu 20-30%". „Reduceri
+# flash" si „Comparator preturi" erau variante subtiri ale aceluiasi ghid: contopite aici (redirect in
+# lib/redirecturi.ts), ca si „Top magazine online" (clasament fara date, mai ales magazine nepartenere).
+
+articol(
+    "cum-functioneaza-codurile-de-reducere-2026",
+    "Cum funcționează codurile de reducere online (2026)",
+    "Tipurile de coduri, de ce un cod nu se aplică, cum ajung codurile pe AmCupon.ro și ce înseamnă că suntem un "
+    "site de afiliere.",
+    "Ghiduri",
+    f"""
+## Cum funcționează codurile de reducere online
+
+Un cod de reducere (voucher, cupon, cod promoțional) e un șir de caractere pe care îl scrii în coș, la „Cod
+promoțional”. Magazinul îl verifică după regulile lui și, dacă se potrivește, scade din preț.
+
+## Tipurile de coduri
+
+- **Procentuale** — un procent din valoarea coșului sau doar din anumite produse.
+- **Valoare fixă** — o sumă scăzută din comandă, de obicei de la un minimum de coș.
+- **Transport gratuit** — anulează costul livrării.
+- **Pentru prima comandă** sau **pentru abonații la newsletter** — legate de cont sau de adresa de email.
+- **Produs cadou** — primești ceva în plus la o anumită comandă.
+
+## De ce nu se aplică un cod
+
+- **A expirat** sau nu a început încă.
+- **Coșul nu atinge minimul** cerut.
+- **Produsele sunt excluse** (de obicei produsele deja reduse sau anumite mărci).
+- **Codul nu se cumulează** cu alt cod sau cu o altă promoție.
+- **E doar pentru clienți noi** sau a fost deja folosit pe contul tău.
+- **E scris greșit** — atenție la spații și la cifra 0 confundată cu litera O.
+
+## Cum ajung codurile pe AmCupon.ro
+
+- **Le primim de la rețelele de afiliere** (2Performant, Impact și altele), care le primesc de la magazine. Nu le
+  inventăm și nu le testăm în coș; afișăm ce ne transmit rețelele, cu data de expirare când există.
+- **Lista se actualizează automat de mai multe ori pe zi**; ofertele expirate dispar singure.
+- **Codul îl vezi la clic**: se deschide magazinul, iar noi primim un comision dacă cumperi. Pentru tine prețul
+  e același.
+
+## De ce suntem un site de afiliere
+
+Magazinele ne plătesc un comision din bugetul lor de promovare când o comandă vine prin linkurile noastre. Nu
+costă nimic în plus pentru tine. Comisionul nu decide ce cod îți arătăm: arătăm ofertele active, iar dacă un magazin
+nu are niciuna, îți spunem asta.
+
+[Caută magazinul tău →](/toate-magazinele)
+""",
+    [
+        "https://amcupon.ro/despre-noi (cum functioneaza site-ul)",
+        "https://eur-lex.europa.eu/eli/dir/2005/29/oj (Directiva 2005/29/CE, practici comerciale: informarea despre relatia comerciala)",
+    ],
+)
+
+articol(
+    "cum-sa-economisesti-la-cumparaturi-online-2026",
+    "Cum economisești la cumpărături online în 2026: 12 metode",
+    "Coduri, newsletter, alerte de preț, comparatoare, regula prețului minim din 30 de zile, transportul și "
+    "returul: metode concrete, fără promisiuni de procente.",
+    "Ghiduri",
+    f"""
+## Cum economisești la cumpărături online în 2026
+
+Nu există un truc care să funcționeze peste tot; există obiceiuri care, adunate, scad totalul de plată.
+
+## 1. Caută un cod înainte de comandă
+Pe AmCupon.ro vezi ofertele active ale magazinelor partenere. Dacă un magazin nu are niciuna, îți spunem.
+
+## 2. Abonează-te la newsletterul magazinului
+Multe magazine dau un cod la abonare sau la prima comandă. Folosește o adresă de email separată pentru oferte.
+
+## 3. Pune produsele în lista de favorite
+Unele magazine anunță când scade prețul unui produs din favorite.
+
+## 4. Compară prețurile
+Google Shopping și comparatoarele românești (de exemplu ShopMania) arată în ce magazine se vinde produsul și la ce
+preț. Caută după codul exact al modelului, nu după nume.
+
+## 5. Știi regula prețului de referință
+Când un magazin anunță o reducere, prețul tăiat trebuie să fie cel mai mic preț practicat de el în ultimele 30 de
+zile. Dacă ai notat prețul de luna trecută, vezi singur dacă reducerea e reală.
+
+## 6. Numără și transportul
+O diferență mică de preț poate dispărea în costul livrării. Uneori merită să atingi minimul pentru transport
+gratuit — dar doar cu ceva ce oricum ai fi cumpărat.
+
+## 7. Uită-te la condițiile de retur
+La comenzile online ai 14 zile ca să te răzgândești, dar transportul returului e de obicei pe tine, dacă magazinul
+nu spune altfel. Returul gratuit contează la haine și încălțăminte.
+
+## 8. Cumpără la final de sezon
+Hainele de iarnă se reduc spre primăvară, cele de vară spre toamnă, când magazinele golesc stocul.
+
+## 9. Ofertele cu timp limitat
+Reducerile „fulger” durează ore sau zile. Notificările din aplicația magazinului te anunță, dar hotărăște dinainte
+ce vrei să cumperi, ca să nu cumperi doar pentru că expiră.
+
+## 10. Black Friday, cu listă
+În 2026, Black Friday la eMAG e pe 6 noiembrie, iar valul internațional pe 27–30 noiembrie. Vezi
+[ghidul nostru de Black Friday](/blog/ghid-black-friday-romania-2026).
+
+## 11. Plătește cu atenție
+Ratele fără dobândă și programele de puncte ale băncilor pot ajuta, dacă le citești condițiile: dobânda apare de
+obicei când întârzii o plată.
+
+## 12. Extensiile de browser
+Extensii precum Honey sau Coupert caută coduri la finalizarea comenzii. Citește ce date colectează înainte să le
+instalezi.
+
+[Vezi ofertele active de azi →](/oferte-azi)
+""",
+    [
+        "https://spotmedia.ro/stiri/economie/noi-reguli-pentru-comercianti-privind-reducerile-de-pret-ce-sanctiuni-risca-cei-care-nu-le-respecta (pretul minim din 30 de zile, HG 686/2022)",
+        "https://eur-lex.europa.eu/eli/dir/2011/83/oj (14 zile; costul returului, art. 14)",
+        "https://www.wall-street.ro/articol/ecommerce/emag-black-friday-2026-cand-are-loc-anul-acesta-campania-de-reduceri.html (eMAG, 06.11.2026)",
+        "https://www.shopmania.ro (comparator de preturi)",
+    ],
+)
+
+
 # ─── Sanatate: suplimente (07.10) ─────────────────────────────────────────────────────────────────
 # Regula in plus fata de restul: in UE un supliment poate pretinde un efect asupra sanatatii DOAR cu formularea
 # autorizata (Reg. 1924/2006, lista in Reg. 432/2012 si in registrul UE). Articolele vechi aveau statistici fara
