@@ -182,6 +182,19 @@ interface BlogPost {
   cover: string;
 }
 
+/**
+ * 09.10.2026: „Vezi toate →" era un BUTON care schimba doar tabul sectiunii (continutul se schimba mai sus, in
+ * afara ecranului) — pentru cititor, „nu ma duce nicaieri" (semnalat de Alex). Acum e link spre pagina categoriei.
+ * Cheile din products-home.json (taxonomia veche, engleza) -> slugurile din app/produse/categorie-meta.ts.
+ */
+const PAGINI_PRODUSE: Record<string, string> = {
+  automotive: "auto", books: "carti", fashion: "fashion", "home-garden": "casa", "electronics-itc": "electronice",
+  games: "jocuri", "babies-kids-toys": "copii", beauty: "beauty",
+};
+function paginaCategorieProduse(slug: string): string {
+  return PAGINI_PRODUSE[slug] ? `/produse/${PAGINI_PRODUSE[slug]}` : "/produse";
+}
+
 interface HomeClientProps {
   magazine: Magazin[];
   blogPosts: BlogPost[];
@@ -1056,12 +1069,12 @@ export default function HomeClient({
                         <h3 className="text-lg font-black text-[#ffffff]">{cat.label}</h3>
                         <span className="text-xs text-[#9399a0] font-medium">{cat.products.length} produse</span>
                       </div>
-                      <button
-                        onClick={() => setActiveCatTab(cat.slug)}
+                      <Link
+                        href={paginaCategorieProduse(cat.slug)}
                         className="text-xs font-bold text-[#ddf93c] hover:text-[#c3dd2c] transition-colors flex items-center gap-1 border border-[#ddf93c]/20 hover:border-[#ddf93c]/40 px-3 py-1 rounded-full bg-[#ddf93c]/5 hover:bg-[#ddf93c]/10"
                       >
                         Vezi toate →
-                      </button>
+                      </Link>
                     </div>
                     {/* Scroll orizontal. Primele 8 (27.09.2026): pe ecran incap 2 pe mobil si ~6 pe desktop,
                         iar cele 64 de carduri (4 randuri x 16) erau 31% din toata pagina. Categoria
@@ -1095,8 +1108,8 @@ export default function HomeClient({
                           </a>
                         ))}
                         {/* Card "Toate" la finalul randului */}
-                        <button
-                          onClick={() => setActiveCatTab(cat.slug)}
+                        <Link
+                          href={paginaCategorieProduse(cat.slug)}
                           className="flex-shrink-0 w-32 bg-[#1f2329]/60 border border-dashed border-[#2a2f36] hover:border-[#ddf93c]/40 rounded-xl flex flex-col items-center justify-center gap-2.5 hover:bg-[#1f2329] transition-all duration-200 group cursor-pointer"
                         >
                           <div className="w-10 h-10 rounded-full bg-[#ddf93c]/15 flex items-center justify-center group-hover:bg-[#ddf93c]/25 transition-colors">
@@ -1105,7 +1118,7 @@ export default function HomeClient({
                             </svg>
                           </div>
                           <span className="text-xs font-bold text-[#c9ced5] group-hover:text-[#ddf93c] text-center px-2 leading-tight transition-colors">Toate {cat.label}</span>
-                        </button>
+                        </Link>
                       </div>
                     </div>
                   </div>
