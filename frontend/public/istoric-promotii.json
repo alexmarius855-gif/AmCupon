@@ -464,8 +464,8 @@
    "magazine": 129
   },
   "2026-10-08": {
-   "promotii": 252,
-   "magazine": 128
+   "promotii": 253,
+   "magazine": 129
   }
  },
  "magazine": {
@@ -585,6 +585,15 @@
    }
   ],
   "answear.ro": [
+   {
+    "k": "15yearsofanswear|",
+    "titlu": "15 YEARS OF ANSWEAR",
+    "cod": false,
+    "prima": "2026-10-08",
+    "ultima": "2026-10-08",
+    "expira": "2026-10-28",
+    "activa": true
+   },
    {
     "k": "stylishshopping|",
     "titlu": "Stylish Shopping",
@@ -7461,13 +7470,31 @@
   ],
   "ugeat.com": [
    {
+    "k": "halloweensale23off|hal23",
+    "titlu": "Halloween Sale 23%off",
+    "cod": true,
+    "prima": "2026-10-08",
+    "ultima": "2026-10-08",
+    "expira": "2026-11-04",
+    "activa": true
+   },
+   {
+    "k": "halloweensale15off|hal15",
+    "titlu": "Halloween Sale 15%off",
+    "cod": true,
+    "prima": "2026-10-08",
+    "ultima": "2026-10-08",
+    "expira": "2026-11-04",
+    "activa": true
+   },
+   {
     "k": "weddinghairsale22off|wh22",
     "titlu": "wedding hair sale 22% off",
     "cod": true,
     "prima": "2026-09-17",
     "ultima": "2026-10-08",
     "expira": "2026-10-08",
-    "activa": true
+    "activa": false
    },
    {
     "k": "weddinghairsale15off|wh15",
@@ -7476,7 +7503,7 @@
     "prima": "2026-09-17",
     "ultima": "2026-10-08",
     "expira": "2026-10-08",
-    "activa": true
+    "activa": false
    },
    {
     "k": "virgin70off|vr70",
