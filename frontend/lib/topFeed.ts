@@ -92,6 +92,13 @@ export const REGULI_TEME: Record<string, RegulaTema> = {
   tensiometre: { include: /^tensiometru\b/, exclude: /\b(manseta|baterii|husa)\b/, pretMin: 60 },
   // 07.10.2026: forma de prezentare e obligatorie (capsule, tablete...) — altfel „baterie lavoar, zinc",
   // „bratara, cupru cu zinc", serurile „cu vitamina C" si dropsurile cu miere intrau la suplimente.
+  // 08.10.2026, calibrate pe feed: la husse.ro/fera.ro titlul incepe cu numele produsului („Adult Active Life |
+  // hrana uscata completa ... pentru caini"), deci hrana nu e ancorata la inceput; „trusa de prim ajutor ... caini"
+  // si accesoriile ies prin excluderi.
+  saltele: { include: /^saltea\b/, exclude: /\b(gonflabila|plaja|camping|bebe|copii|patut|husa|protectie|yoga|fitness|apa|antiescara|topper)\b/, pretMin: 300 },
+  "hrana-caini": { include: /\b(hrana|pate|conserve)\b.*\bcaini\b/, exclude: /\b(pisici|pisica|trusa|bol|castron|recipient|dozator|jucarie|lesa|zgarda)\b/, pretMin: 30 },
+  "creme-antirid": { include: /^crema\b.*\b(antirid|anti-rid|anti riduri|antiaging|anti-aging|riduri)\b/, exclude: /\b(maini|picioare|corp)\b/, pretMin: 20 },
+  "fond-de-ten": { include: /^fond de ten\b/, exclude: /\b(burete|pensula)\b/, pretMin: 20 },
   "vitamine-minerale": { include: /\b(vitamina [a-z0-9]+|vitamine|multivitamin\w*|zinc|magneziu|omega[ -]?3|seleniu)\b.*\b(capsule|tablete|comprimate|picaturi|plicuri|jeleuri|softgel\w*|gummies)\b/, exclude: /\b(ser|crema|masca|caine|caini|pisica|pisici|bomboane|dropsuri|sampon|par|unghii|bratara|baterie|copii|ursuleti|animale)\b/, pretMin: 15 },
 };
 
@@ -138,6 +145,10 @@ export const ARTICOLE_TEME: Record<string, TemaArticol> = {
   "cel-mai-bun-dashcam": { tema: "camere-auto", minMagazine: 1 },
   "cele-mai-bune-vitamine-suplimente": { tema: "vitamine-minerale" },
   "cele-mai-bune-suplimente-imunitate": { tema: "vitamine-minerale" },
+  "cea-mai-buna-saltea-ortopedica": { tema: "saltele" },
+  "cea-mai-buna-hrana-pentru-caini": { tema: "hrana-caini" },
+  "cea-mai-buna-crema-antirid": { tema: "creme-antirid" },
+  "cel-mai-bun-fond-de-ten": { tema: "fond-de-ten" },
 };
 
 /** Tema unui articol dupa slug („cel-mai-bun-smartwatch-2026" -> smartwatch-uri), sau null. */
@@ -191,6 +202,10 @@ export const NUME_TEME: Record<string, string> = {
   "camere-auto": "camere auto",
   tensiometre: "tensiometre",
   "vitamine-minerale": "vitamine și minerale",
+  saltele: "saltele",
+  "hrana-caini": "hrană pentru câini",
+  "creme-antirid": "creme antirid",
+  "fond-de-ten": "fonduri de ten",
 };
 
 /** Numele in fraza; pentru o tema noua, fara intrare, eticheta cu prima litera mica. */

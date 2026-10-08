@@ -1951,6 +1951,196 @@ Român. Pentru autoturism nu e obligatorie, dar e utilă: ține-o în habitaclu,
 )
 
 
+# ─── Casa, animale, frumusete (08.10, lotul 5) ───────────────────────────────────────────────────
+# Gresit in vechile articole: duritati H1-H5 legate de kilograme si durate de viata pe tip de saltea (inventate),
+# „spuma TEMPUR din NASA", „proteine minim 25%" la hrana pentru caini, „retinolul e singurul antiaging validat FDA"
+# (FDA a aprobat tretinoina, pe reteta), „80% din imbatranire = soare" fara sursa, „bestseller de 20+ ani".
+# Ofertele de sub articole: temele saltele, hrana-caini, creme-antirid, fond-de-ten (lib/topFeed.ts).
+
+articol(
+    "cea-mai-buna-saltea-ortopedica-2026",
+    "Cea mai bună saltea ortopedică 2026: cum alegi",
+    "Spumă cu memorie, arcuri independente sau latex, ce înseamnă duritatea H2–H4, ce dimensiune și de ce poți "
+    "returna o saltea comandată online chiar dacă ai desigilat-o.",
+    "Casa",
+    f"""
+## Cea mai bună saltea ortopedică în 2026
+
+„Ortopedică” nu e un termen definit de lege: îl folosesc producătorii pentru saltelele cu suport mai ferm. Ce
+contează e cum te ține salteaua pe tine, în poziția în care dormi.
+
+{CUM_AM_ALES_GHID}
+
+## Tipurile de saltele
+
+- **Spumă cu memorie** — se mulează pe corp și nu transmite mișcarea partenerului; poate fi mai caldă.
+- **Arcuri independente (pocket)** — fiecare arc lucrează separat, aerisire bună; de obicei mai grele.
+- **Latex** — elastic, revine repede la formă; de obicei mai scump.
+- **Spumă clasică (poliuretan)** — ușoară și ieftină; potrivită pentru un pat folosit rar.
+- **Hibride** — arcuri cu un strat de spumă deasupra.
+
+## Duritatea
+
+Scalele de tip H2, H3, H4 nu sunt un standard comun: un H3 de la un producător poate fi diferit de un H3 de la
+altul. Ca regulă de pornire, cine doarme pe o parte are nevoie de o saltea care lasă umărul și șoldul să intre puțin;
+cine doarme pe spate sau pe burtă, de una mai fermă. Dacă ai dureri de spate, întreabă medicul — nu există o
+saltea care tratează.
+
+## Dimensiuni și înălțime
+
+- Lungimea standard e de 200 cm (190 cm la unele paturi mai vechi); lățimile cele mai întâlnite sunt 90, 140, 160
+  și 180 cm. Măsoară interiorul ramei patului.
+- Înălțimea saltelei schimbă înălțimea patului; o saltea groasă pe o ramă înaltă poate fi incomodă.
+
+## Returul unei saltele
+
+La comenzile online ai, prin lege, 14 zile ca să te răzgândești. Curtea de Justiție a UE a decis (cauza C-681/17)
+că dreptul se aplică și unei saltele desigilate: folia de protecție nu o transformă într-un produs exclus din
+motive de igienă. Condițiile de transport ale returului sunt pe site-ul magazinului.
+
+[Vezi magazinele pentru casă →](/categorii/casa-gradina)
+""",
+    [
+        "https://curia.europa.eu/juris/liste.jsf?num=C-681/17 (CJUE, C-681/17 slewo: retur pentru saltea desigilata)",
+        "https://eur-lex.europa.eu/eli/dir/2011/83/oj (Directiva 2011/83/UE, 14 zile)",
+    ],
+)
+
+articol(
+    "cea-mai-buna-hrana-pentru-caini-2026",
+    "Cea mai bună hrană pentru câini 2026: cum citești eticheta",
+    "Hrană completă sau complementară, ce înseamnă proteina de pe etichetă și cum o compari între hrana uscată și "
+    "cea umedă, plus ce verifici pentru căței și câinii în vârstă.",
+    "Animale",
+    f"""
+## Cea mai bună hrană pentru câini în 2026
+
+Marca spune puțin; eticheta spune aproape tot. În UE, ce scrie pe un sac de hrană pentru câini e reglementat, așa
+că poți compara două produse fără să crezi pe cuvânt reclama.
+
+{CUM_AM_ALES_GHID}
+
+## Ce trebuie să scrie pe etichetă
+
+- **„Hrană completă” sau „hrană complementară”.** Cea completă acoperă singură toate nevoile câinelui pentru vârsta
+  indicată; cea complementară (recompense, multe conserve, suplimente) se dă doar împreună cu altă hrană.
+- **Ingredientele, în ordinea greutății** — primul din listă e cel mai mult.
+- **Constituenții analitici:** proteină brută, grăsimi brute, fibre brute și cenușă brută; umiditatea apare și ea
+  pe multe etichete, mai ales la hrana umedă.
+- **Pentru ce vârstă e:** cățel (creștere), adult, senior sau toate vârstele.
+
+## Cum compari proteina
+
+Procentele de pe etichetă sunt „ca atare”, adică includ apa. O conservă cu 8% proteină și 80% apă nu e mai săracă
+decât o hrană uscată cu 25% proteină — trebuie comparate pe substanța uscată:
+
+**proteina pe substanță uscată = proteina ÷ (100 − umiditatea) × 100**
+
+Exemplu: 8 ÷ (100 − 80) × 100 = 40% proteină pe substanță uscată. Ca reper, ghidurile FEDIAF (federația europeană a
+producătorilor de hrană pentru animale) dau pentru câinii adulți un minimum de aproximativ 18 g de proteină la
+100 g de substanță uscată, pentru un câine cu nivel normal de activitate.
+
+## Pe vârste și nevoi
+
+- **Căței** — hrană de creștere; rasele mari au formule separate, pentru că cresc mai mult timp.
+- **Câini în vârstă sau cu probleme de sănătate** — hrana dietetică (renală, digestivă) se alege cu medicul
+  veterinar.
+- **Schimbarea hranei** se face treptat, amestecând-o cu cea veche câteva zile, cum indică de obicei producătorii.
+
+[Vezi magazinele pentru animale →](/categorii/animale)
+""",
+    [
+        "https://en.wikivet.net/EU_Pet_Food_Labels (Reg. CE 767/2009: completa / complementara, constituenti analitici, ordinea ingredientelor)",
+        "https://www.legislation.gov.uk/eur/2009/767/contents (Reg. CE 767/2009, textul)",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7664208 (FEDIAF: minim 18 g proteina / 100 g substanta uscata la adulti)",
+    ],
+)
+
+articol(
+    "cea-mai-buna-crema-antirid-2026",
+    "Cea mai bună cremă antirid 2026: ce funcționează",
+    "Protecția solară zilnică, retinolul și diferența față de tretinoina pe rețetă, peptidele și niacinamida: ce "
+    "poate face o cremă antirid și ce nu.",
+    "Beauty",
+    f"""
+## Cea mai bună cremă antirid în 2026
+
+Nicio cremă nu șterge ridurile adânci. Ce poate face o rutină bună e să încetinească apariția semnelor de
+îmbătrânire și să îmbunătățească textura pielii, în săptămâni și luni, nu în zile.
+
+{CUM_AM_ALES_GHID}
+
+## Protecția solară, întâi
+
+Academia Americană de Dermatologie pune protecția solară zilnică, cu spectru larg și SPF 30 sau mai mult, printre
+primele măsuri împotriva îmbătrânirii premature a pielii. Razele UVA trec și prin geam, deci contează și în zilele
+petrecute în casă, lângă fereastră.
+
+## Ingredientele
+
+- **Retinol** — un retinoid fără rețetă, mai blând decât **tretinoina**, care se dă pe rețetă. Se începe încet,
+  seara, pentru că poate irita. În UE, produsele noi pot avea cel mult 0,3% vitamina A pe față și poartă mențiunea
+  „Conține vitamina A”. Dacă ești însărcinată, întreabă medicul înainte de retinoizi.
+- **Peptide** — folosite în multe creme pentru fermitate; de obicei bine tolerate.
+- **Niacinamidă** — pentru textură, roșeață și pori; se combină ușor cu alte ingrediente.
+- **Hidratarea** (glicerină, ceramide, acid hialuronic) — pielea hidratată arată mai netedă.
+
+## Cum le folosești
+
+- **Un produs nou pe rând**; prea multe produse anti-îmbătrânire începute deodată pot irita pielea.
+- **Testează pe o zonă mică** — interiorul brațului, de două ori pe zi, 7–10 zile.
+- **Zi:** cremă și protecție solară. **Seară:** produsul cu retinol, apoi cremă.
+
+[Vezi magazinele de frumusețe →](/categorii/beauty)
+""",
+    [
+        "https://www.aad.org/public/everyday-care/skin-care-secrets/anti-aging (protectia solara, inceputul unei rutine)",
+        "https://dermatologytimes.com/view/anti-aging-skin-care-tips-from-aad (SPF 30, spectru larg, UVA prin geam)",
+        "https://www.aad.org/public/everyday-care/skin-care-secrets/prevent-skin-problems/test-skin-care-products (testul pe zona mica)",
+        "https://cosmeticobs.com/en/articles/news-59/regulation-2024996-restrictions-on-vitamin-a-arbutin-and-6-endocrine-disruptors-8029 (vitamina A, 0,3%)",
+    ],
+)
+
+articol(
+    "cel-mai-bun-fond-de-ten-2026",
+    "Cel mai bun fond de ten 2026: tip de ten și nuanță",
+    "Fluid, cushion, stick sau pudră, cum alegi după tipul de ten, cum găsești nuanța și subtonul și ce înseamnă "
+    "simbolul cu borcanul deschis de pe ambalaj.",
+    "Beauty",
+    f"""
+## Cel mai bun fond de ten în 2026
+
+Fondul de ten bun e cel care nu se vede: aceeași nuanță cu pielea ta, pe tipul tău de ten. Marca contează mai
+puțin decât formula și nuanța.
+
+{CUM_AM_ALES_GHID}
+
+## Formula, după tipul de ten
+
+- **Ten gras sau mixt** — fluide cu finisaj mat, pudre minerale.
+- **Ten uscat** — formule cremoase, cu finisaj satinat sau luminos, peste o cremă hidratantă.
+- **Ten sensibil** — formule fără parfum; citește lista de ingrediente.
+- **Acoperire:** ușoară (tentă, cushion), medie (majoritatea fluidelor), mare (stick, formule „full coverage”).
+
+## Nuanța și subtonul
+
+- **Subtonul** e cald (auriu), rece (roz) sau neutru; multe game îl scriu în codul nuanței (W, C, N).
+- **Testează pe linia maxilarului**, nu pe mână, și privește la lumină naturală.
+- La cumpărăturile online, compară cu nuanța pe care o folosești deja; unele magazine au mostre.
+
+## Ce scrie pe ambalaj
+
+- **Ingredientele** sunt listate de la cel mai mult la cel mai puțin, cu denumirile INCI.
+- **Borcanul deschis cu „12M”** (sau alt număr) arată câte luni se poate folosi produsul după deschidere.
+
+[Vezi magazinele de frumusețe →](/categorii/beauty)
+""",
+    [
+        "https://eur-lex.europa.eu/eli/reg/2009/1223/oj (Reg. CE 1223/2009, art. 19: lista de ingrediente, simbolul PAO)",
+    ],
+)
+
+
 # ─── Sanatate: suplimente (07.10) ─────────────────────────────────────────────────────────────────
 # Regula in plus fata de restul: in UE un supliment poate pretinde un efect asupra sanatatii DOAR cu formularea
 # autorizata (Reg. 1924/2006, lista in Reg. 432/2012 si in registrul UE). Articolele vechi aveau statistici fara

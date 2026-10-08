@@ -39,6 +39,9 @@ verifica("test medical „Proteina C Reactiva” nu e supliment", intra("suplime
 verifica("vitamina D3 in capsule e supliment", intra("vitamine-minerale", "Vitamina D3 la 2000 UI 120 capsule", 35.94), true);
 verifica("baterie de lavoar din zinc nu e supliment", intra("vitamine-minerale", "FL 370-632ZC, Baterie mono lavoar, zinc, crom, flow", 200), false);
 verifica("serul cu vitamina C nu e supliment", intra("vitamine-minerale", "Ser pentru fata cu vitamina C, 30 capsule", 80), false);
+verifica("hrana husse cu numele produsului intai", intra("hrana-caini", "Adult Active Life | hrana uscata completa pentru caini de toate rasele", 308.9), true);
+verifica("trusa de prim ajutor pentru caini nu e hrana", intra("hrana-caini", "Trusa de prim ajutor | hrana si ingrijire pentru caini", 198.9), false);
+verifica("saltea gonflabila nu e saltea de pat", intra("saltele", "Saltea gonflabila 2 persoane", 350), false);
 verifica("omega 3 pentru pisici nu intra", intra("vitamine-minerale", "Omega 3 pentru caini si pisici, 60 capsule", 50), false);
 verifica("husa de laptop nu e laptop", intra("laptopuri", "Husa laptop 15.6 inch, neopren, neagra", 89), false);
 verifica("display de schimb nu e laptop", intra("laptopuri", "Display Laptop BOE NV156FHM-A11 pentru ecran 15.6\", 30 pini", 637), false);
