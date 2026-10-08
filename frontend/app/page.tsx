@@ -123,6 +123,13 @@ export default function Page() {
     categorie: String(r.categorie ?? ""), are_cod: Boolean(r.are_cod),
   })).sort((a, b) => Number(sluguriRo.has(b.magazin)) - Number(sluguriRo.has(a.magazin)));
   const produseCategorii = buildProduseCategorii();
+  // 08.10.2026, Search Console: prima pagina e indexata, dar articolele rescrise erau „necunoscute" de Google —
+  // pe prima pagina erau doar 3 linkuri spre blog. Lista ghidurilor rescrise pe surse (`surse_din`) le da un
+  // drum direct de pe pagina pe care Google o citeste cel mai des. Doar titlu + slug ajung in HTML.
+  const ghiduri = (readJSON<{ slug: string; title: string; surse_din?: string }[]>("blog-posts.json", []) || [])
+    .filter((p) => p.surse_din)
+    .map((p) => ({ slug: p.slug, title: p.title }))
+    .sort((a, b) => a.title.localeCompare(b.title, "ro"));
 
   // Server Component, randat o singura data per request/ISR — Date.now() aici e sigur
   // (nu declanseaza hidratare), acelasi pattern ca cod-reducere/[magazin]/page.tsx.
@@ -136,6 +143,7 @@ export default function Page() {
       produseCategorii={produseCategorii}
       astazi={astazi}
       pesteMagazine={pesteMagazine()}
+      ghiduri={ghiduri}
     />
   );
 }

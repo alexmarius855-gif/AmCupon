@@ -190,6 +190,8 @@ interface HomeClientProps {
   astazi: string;
   /** „peste 900 de magazine" — calculat pe server din output.json (lib/cifreSite.ts) */
   pesteMagazine: string;
+  /** Ghidurile rescrise pe surse (au `surse_din`), ca linkuri text — vezi app/page.tsx. */
+  ghiduri?: { slug: string; title: string }[];
 }
 
 export default function HomeClient({
@@ -199,6 +201,7 @@ export default function HomeClient({
   produseCategorii: initProd,
   astazi,
   pesteMagazine,
+  ghiduri = [],
 }: HomeClientProps) {
   const FAQ = faqItems(pesteMagazine);
   const [magazine]                        = useState<Magazin[]>(initMag);
@@ -1332,6 +1335,20 @@ export default function HomeClient({
                 </a>
               ))}
             </div>
+            {ghiduri.length > 0 && (
+              <nav aria-label="Ghiduri de cumpărare" className="mt-10">
+                <h3 className="text-sm font-black text-[#ffffff] uppercase tracking-widest mb-4">Ghiduri de cumpărare</h3>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-2">
+                  {ghiduri.map((g) => (
+                    <li key={g.slug}>
+                      <a href={`/blog/${g.slug}`} className="text-sm text-[#c9ced5] hover:text-[#ddf93c] transition-colors">
+                        {g.title}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            )}
           </div>
         </section>
       )}

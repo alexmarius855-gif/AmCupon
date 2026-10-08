@@ -28,7 +28,21 @@ import re
 import time
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
-from urllib.parse import quote, unquote
+from urllib.parse import quote, unquote, urlsplit
+
+
+def imagine_valida(url: str) -> bool:
+    """http(s) cu o gazda reala (are punct, nu e localhost/0.0.0.0/IP privat). „http://0" -> False."""
+    try:
+        s = urlsplit((url or "").strip())
+    except ValueError:
+        return False
+    gazda = (s.hostname or "").lower()
+    if s.scheme not in ("http", "https") or "." not in gazda:
+        return False
+    if gazda in ("0.0.0.0", "127.0.0.1") or gazda.startswith(("10.", "192.168.", "127.")):
+        return False
+    return True
 
 import requests as req_lib
 from requests.adapters import HTTPAdapter
@@ -1507,6 +1521,16 @@ def main():
     # ── Diversitate: max MAX_PER_MERCHANT per merchant, MAX_TOTAL impartit corect ──
     import random
     from collections import defaultdict
+    # 08.10.2026: gorgeaux.ro trimitea in feed imaginea „http://0" la 46 de produse — next/image respinge gazda
+    # si prima pagina dadea 500 local. O adresa fara gazda reala devine „fara imagine" (produsul ramane).
+    stricate = 0
+    for p in all_products:
+        if p.get("image") and not imagine_valida(p["image"]):
+            p["image"] = ""
+            stricate += 1
+    if stricate:
+        print(f"  Imagini invalide scoase: {stricate}")
+
     by_merchant: dict = defaultdict(list)
     for p in all_products:
         m = (p.get("merchant_slug") or p.get("merchant") or "alt").lower()
