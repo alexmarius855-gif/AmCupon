@@ -468,7 +468,7 @@
    "magazine": 129
   },
   "2026-10-09": {
-   "promotii": 255,
+   "promotii": 256,
    "magazine": 131
   }
  },
@@ -6167,6 +6167,15 @@
    }
   ],
   "noriel.ro": [
+   {
+    "k": "20reducerelacumparaturilegocitysaulegostarwarsdeminimum149lei1218102026|",
+    "titlu": "20% REDUCERE la cumparaturi LEGO City sau LEGO Star Wars de minimum 149 lei| 12-18.10.2026",
+    "cod": false,
+    "prima": "2026-10-09",
+    "ultima": "2026-10-09",
+    "expira": "2026-10-18",
+    "activa": true
+   },
    {
     "k": "50leivouchercadoulacomenziledeminimum249delei511102026|",
     "titlu": "50 lei Voucher Cadou la comenzile de minimum 249 de lei | 5-11.10.2026",
