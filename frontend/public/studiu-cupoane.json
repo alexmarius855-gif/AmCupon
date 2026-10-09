@@ -1,13 +1,13 @@
 {
-  "generat": "2026-10-08",
-  "total_magazine": 956,
-  "cu_promotie": 132,
-  "cu_cod_real": 38,
+  "generat": "2026-10-09",
+  "total_magazine": 960,
+  "cu_promotie": 133,
+  "cu_cod_real": 39,
   "doar_oferta": 94,
-  "procent_cu_promotie": 13.8,
-  "procent_cu_cod": 4.0,
-  "reducere_mediana_generala": 20,
-  "magazine_cu_procent_declarat": 85,
+  "procent_cu_promotie": 13.9,
+  "procent_cu_cod": 4.1,
+  "reducere_mediana_generala": 25.0,
+  "magazine_cu_procent_declarat": 86,
   "categorii": [
     {
       "slug": "cadouri-flori",
@@ -22,10 +22,19 @@
       "slug": "carti-educatie",
       "nume": "Cărți & educație",
       "magazine": 30,
-      "cu_promotie": 9,
-      "reducere_mediana": 50,
+      "cu_promotie": 10,
+      "reducere_mediana": 50.0,
       "reducere_max": 90,
-      "esantion": 5
+      "esantion": 6
+    },
+    {
+      "slug": "beauty",
+      "nume": "Beauty & îngrijire",
+      "magazine": 73,
+      "cu_promotie": 10,
+      "reducere_mediana": 40,
+      "reducere_max": 93,
+      "esantion": 9
     },
     {
       "slug": "fashion",
@@ -37,22 +46,22 @@
       "esantion": 11
     },
     {
-      "slug": "beauty",
-      "nume": "Beauty & îngrijire",
-      "magazine": 73,
-      "cu_promotie": 9,
+      "slug": "marketplace",
+      "nume": "Marketplace",
+      "magazine": 192,
+      "cu_promotie": 12,
       "reducere_mediana": 30.0,
-      "reducere_max": 93,
-      "esantion": 8
+      "reducere_max": 60,
+      "esantion": 6
     },
     {
       "slug": "electronice",
       "nume": "Electronice & IT",
       "magazine": 84,
-      "cu_promotie": 13,
-      "reducere_mediana": 25,
+      "cu_promotie": 12,
+      "reducere_mediana": 27.5,
       "reducere_max": 75,
-      "esantion": 9
+      "esantion": 8
     },
     {
       "slug": "copii",
@@ -62,15 +71,6 @@
       "reducere_mediana": 25.0,
       "reducere_max": 33,
       "esantion": 4
-    },
-    {
-      "slug": "marketplace",
-      "nume": "Marketplace",
-      "magazine": 192,
-      "cu_promotie": 12,
-      "reducere_mediana": 22.5,
-      "reducere_max": 60,
-      "esantion": 6
     },
     {
       "slug": "software",
@@ -102,7 +102,7 @@
     {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
-      "magazine": 126,
+      "magazine": 127,
       "cu_promotie": 22,
       "reducere_mediana": 17,
       "reducere_max": 82,
@@ -147,7 +147,7 @@
     {
       "slug": "auto-moto",
       "nume": "Auto & moto",
-      "magazine": 23,
+      "magazine": 26,
       "cu_promotie": 2,
       "reducere_mediana": null,
       "reducere_max": null,
