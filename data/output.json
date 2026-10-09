@@ -3735,6 +3735,41 @@
     "unique_code": "d131c7dfb"
   },
   {
+    "magazin": "vegis.ro",
+    "url": "https://vegis.ro/",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fvegis.ro%2F",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/10298/medium/10298.png",
+    "categorie": "Sănătate & Farmacie",
+    "categorie_slug": "sanatate",
+    "comision": "8.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 9,
+    "promotii": [
+      {
+        "nume": "Reduceri din Belsug - Vegis.ro",
+        "descriere": "",
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fvegis.ro%2F",
+        "zile_ramase": 9,
+        "expira": "2026-10-18",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-09",
+    "scor_final": 30.0,
+    "program_id": 1961,
+    "unique_code": "861f9e301"
+  },
+  {
     "magazin": "videt.ro",
     "url": "https://videt.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fvidet.ro",
@@ -17353,31 +17388,6 @@
     "scor_final": 0.0,
     "program_id": 9657,
     "unique_code": "17a3613f8"
-  },
-  {
-    "magazin": "vegis.ro",
-    "url": "https://vegis.ro/",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fvegis.ro%2F",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/10298/medium/10298.png",
-    "categorie": "Sănătate & Farmacie",
-    "categorie_slug": "sanatate",
-    "comision": "8.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-09",
-    "scor_final": 0.0,
-    "program_id": 1961,
-    "unique_code": "861f9e301"
   },
   {
     "magazin": "smokemania.ro",

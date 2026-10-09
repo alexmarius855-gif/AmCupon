@@ -90,15 +90,6 @@
   "oferta": "Transport gratuit la orice comanda!"
  },
  {
-  "magazin": "incaltamintelamoda.ro",
-  "nume": "Incaltamintelamoda",
-  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14335/medium/14335.jpg",
-  "categorie": "Fashion",
-  "comision": 12.0,
-  "are_cod": true,
-  "oferta": "Reducere la încălțăminte bărbătească din piele naturală – Cod LAMODA"
- },
- {
   "magazin": "tvcmall.com",
   "nume": "Tvcmall",
   "logo_url": "https://www.google.com/s2/favicons?domain=tvcmall.com&sz=128",
@@ -106,5 +97,14 @@
   "comision": 11.0,
   "are_cod": true,
   "oferta": "$20 off over $300 - 26Q4"
+ },
+ {
+  "magazin": "bcengi.com",
+  "nume": "Bcengi",
+  "logo_url": "https://www.google.com/s2/favicons?domain=bcengi.com&sz=128",
+  "categorie": "Servicii",
+  "comision": 15.0,
+  "are_cod": false,
+  "oferta": "DFB"
  }
 ]

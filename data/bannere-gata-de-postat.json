@@ -1,5 +1,57 @@
 [
   {
+    "id": 273153,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273112/original/273112.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=e0b70259a&aff_code=541547473&campaign_unique=cc08e2536",
+    "landing_raw": "https://www.pensulemachiaj.ro",
+    "width": 1200,
+    "height": 1200,
+    "merchant": "pensulemachiaj.ro",
+    "merchant_slug": "pensulemachiaj-ro",
+    "name": "-80% STAR PURE GLAM,SECRET BEAUTY BAG GRATUIT",
+    "category": "-80% STAR PURE GLAM,SECRET BEAUTY BAG GRATUIT",
+    "b_type": "image"
+  },
+  {
+    "id": 273145,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273104/original/273104.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=bf74bd1b4&aff_code=541547473&campaign_unique=4b9a6d5ea",
+    "landing_raw": "https://www.kitunghii.ro",
+    "width": 1200,
+    "height": 1200,
+    "merchant": "kitunghii.ro",
+    "merchant_slug": "kitunghii-ro",
+    "name": "-80% STAR PURE GLAM,SECRET BEAUTY BAG GRATUIT",
+    "category": "-80% STAR PURE GLAM,SECRET BEAUTY BAG GRATUIT",
+    "b_type": "image"
+  },
+  {
+    "id": 273133,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273092/original/273092.JPG",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=4fcac33f2&aff_code=541547473&campaign_unique=9a6f02fef",
+    "landing_raw": "https://www.libris.ro/lp/englishreading",
+    "width": 965,
+    "height": 966,
+    "merchant": "libris.ro ",
+    "merchant_slug": "libris-ro",
+    "name": "-20% -50% Weekendul dedicat lecturilor tale în limba engleză e aici!",
+    "category": "-20% -50% Weekendul dedicat lecturilor tale în limba engleză e aici!",
+    "b_type": "image"
+  },
+  {
+    "id": 273129,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273088/original/273088.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=0fcfd5a7e&aff_code=541547473&campaign_unique=a5e9e1225",
+    "landing_raw": "https://answear.ro/s/15birthday-102026?utm_medium=affiliate&utm_source=2parale&utm_campaign=15birthday_102026",
+    "width": 627,
+    "height": 627,
+    "merchant": "answear.ro ",
+    "merchant_slug": "answear-ro",
+    "name": "15 YEARS OF ANSWEAR",
+    "category": "15 YEARS OF ANSWEAR",
+    "b_type": "image"
+  },
+  {
     "id": 273118,
     "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273077/original/273077.png",
     "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=0f2b399fa&aff_code=541547473&campaign_unique=48a30b7c9",
@@ -104,32 +156,6 @@
     "b_type": "image"
   },
   {
-    "id": 273030,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/272989/original/272989.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=857d21045&aff_code=541547473&campaign_unique=cc08e2536",
-    "landing_raw": "https://www.pensulemachiaj.ro",
-    "width": 1200,
-    "height": 1200,
-    "merchant": "pensulemachiaj.ro",
-    "merchant_slug": "pensulemachiaj-ro",
-    "name": "-80% STAR PURE GLAM,SECRET BEAUTY BAG GRATUIT",
-    "category": "-80% STAR PURE GLAM,SECRET BEAUTY BAG GRATUIT",
-    "b_type": "image"
-  },
-  {
-    "id": 273020,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/272979/original/272979.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=b598e75ca&aff_code=541547473&campaign_unique=4b9a6d5ea",
-    "landing_raw": "https://www.kitunghii.ro",
-    "width": 1200,
-    "height": 1200,
-    "merchant": "kitunghii.ro",
-    "merchant_slug": "kitunghii-ro",
-    "name": "-80% STAR PURE GLAM,SECRET BEAUTY BAG GRATUIT",
-    "category": "-80% STAR PURE GLAM,SECRET BEAUTY BAG GRATUIT",
-    "b_type": "image"
-  },
-  {
     "id": 272957,
     "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/272916/original/272916.JPG",
     "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=ba1679081&aff_code=541547473&campaign_unique=9a6f02fef",
@@ -166,19 +192,6 @@
     "merchant_slug": "drmax-ro",
     "name": "Ofertele lunii",
     "category": "Ofertele lunii",
-    "b_type": "image"
-  },
-  {
-    "id": 272898,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/272857/original/272857.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=0a25bf9fb&aff_code=541547473&campaign_unique=bb24d9ce5",
-    "landing_raw": "https://mobilalaguna.ro/",
-    "width": 1200,
-    "height": 1200,
-    "merchant": "mobilalaguna.ro",
-    "merchant_slug": "mobilalaguna-ro",
-    "name": "Reduceri Mobila Luna Octombrie 2026",
-    "category": "Reduceri Mobila Luna Octombrie 2026",
     "b_type": "image"
   }
 ]

@@ -31,14 +31,19 @@
       "partener": false
     },
     "stats2": {
-      "promotii_active": 0,
+      "promotii_active": 1,
       "coduri": "—",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/2561/medium/2561.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fanswear.ro",
       "partener": true
     },
     "promo1": [],
-    "promo2": [],
+    "promo2": [
+      {
+        "nume": "15 YEARS OF ANSWEAR",
+        "cod_cupon": ""
+      }
+    ],
     "faq": [
       {
         "q": "Care este mai bun, Fashiondays sau Answear?",
@@ -50,7 +55,7 @@
       },
       {
         "q": "Are Answear coduri de reducere active?",
-        "a": "Momentan nu, Answear are 0 oferte active pe AmCupon.ro in octombrie 2026. Ofertele se actualizeaza automat de trei ori pe zi."
+        "a": "Da, Answear are 1 oferta activa pe AmCupon.ro in octombrie 2026. Ofertele se actualizeaza automat de trei ori pe zi."
       },
       {
         "q": "Unde gasesc cupoane pentru Fashiondays si Answear?",
@@ -80,7 +85,7 @@
     "verdict_m1": "Alege Libris daca vrei o librarie online cu un catalog larg.",
     "verdict_m2": "Alege Carturesti daca vrei sa vezi cartile si in librariile lor fizice.",
     "stats1": {
-      "promotii_active": 0,
+      "promotii_active": 1,
       "coduri": "—",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9868/medium/9868.gif",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro",
@@ -93,7 +98,12 @@
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2F",
       "partener": true
     },
-    "promo1": [],
+    "promo1": [
+      {
+        "nume": "-20% -50% Weekendul dedicat lecturilor tale în limba engleză e aici!",
+        "cod_cupon": ""
+      }
+    ],
     "promo2": [
       {
         "nume": "Kilipir Merch Fandom",
@@ -107,7 +117,7 @@
       },
       {
         "q": "Are Libris coduri de reducere active?",
-        "a": "Momentan nu, Libris are 0 oferte active pe AmCupon.ro in octombrie 2026. Ofertele se actualizeaza automat de trei ori pe zi."
+        "a": "Da, Libris are 1 oferta activa pe AmCupon.ro in octombrie 2026. Ofertele se actualizeaza automat de trei ori pe zi."
       },
       {
         "q": "Are Carturesti coduri de reducere active?",
@@ -356,7 +366,7 @@
     "verdict_m1": "Alege Libris daca vrei o librarie online cu un catalog larg.",
     "verdict_m2": "Alege Elefant daca vrei sa comanzi si alte produse impreuna cu cartile.",
     "stats1": {
-      "promotii_active": 0,
+      "promotii_active": 1,
       "coduri": "—",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9868/medium/9868.gif",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro",
@@ -369,7 +379,12 @@
       "url_afiliat": "https://elefant.ro",
       "partener": false
     },
-    "promo1": [],
+    "promo1": [
+      {
+        "nume": "-20% -50% Weekendul dedicat lecturilor tale în limba engleză e aici!",
+        "cod_cupon": ""
+      }
+    ],
     "promo2": [],
     "faq": [
       {
@@ -378,7 +393,7 @@
       },
       {
         "q": "Are Libris coduri de reducere active?",
-        "a": "Momentan nu, Libris are 0 oferte active pe AmCupon.ro in octombrie 2026. Ofertele se actualizeaza automat de trei ori pe zi."
+        "a": "Da, Libris are 1 oferta activa pe AmCupon.ro in octombrie 2026. Ofertele se actualizeaza automat de trei ori pe zi."
       },
       {
         "q": "Are Elefant coduri de reducere active?",

@@ -468,8 +468,8 @@
    "magazine": 129
   },
   "2026-10-09": {
-   "promotii": 254,
-   "magazine": 130
+   "promotii": 255,
+   "magazine": 131
   }
  },
  "magazine": {
@@ -7656,6 +7656,15 @@
    }
   ],
   "vegis.ro": [
+   {
+    "k": "reduceridinbelsugvegisro|",
+    "titlu": "Reduceri din Belsug - Vegis.ro",
+    "cod": false,
+    "prima": "2026-10-09",
+    "ultima": "2026-10-09",
+    "expira": "2026-10-18",
+    "activa": true
+   },
    {
     "k": "campaniibacktoschoolvegisro|",
     "titlu": "Campanii Back to School - Vegis.ro",
