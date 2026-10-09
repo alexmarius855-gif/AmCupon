@@ -53,9 +53,9 @@ export default function ContextMagazin({
 
         {/* ── Ce urmarim la magazin (doar cu feed) ─────────────────────────── */}
         {stat && (
-          <div className="bg-[#14181c] border border-[#1f2329] rounded-xl p-5">
-            <h2 className="text-lg font-black text-[#ffffff] mb-1">Ce preturi are {nume}</h2>
-            <p className="text-xs text-[#9399a0] mb-4">
+          <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
+            <h2 className="text-lg font-black text-[var(--foreground)] mb-1">Ce preturi are {nume}</h2>
+            <p className="text-xs text-[var(--text-muted)] mb-4">
               Calculat din cele {stat.total.toLocaleString("ro-RO")} de produse pe care le
               urmarim automat in catalogul magazinului.
             </p>
@@ -66,17 +66,17 @@ export default function ContextMagazin({
                 { et: "Pret median", v: lei(stat.pretMedian) },
                 { et: "Cel mai scump", v: lei(stat.pretMax) },
               ].map((x) => (
-                <div key={x.et} className="bg-[#1f2329] rounded-xl p-3">
-                  <dt className="text-[10px] uppercase tracking-wider text-[#9399a0] mb-1">{x.et}</dt>
-                  <dd className="text-sm font-black text-[#ffffff] tabular-nums">{x.v}</dd>
+                <div key={x.et} className="bg-[var(--surface-alt)] rounded-xl p-3">
+                  <dt className="text-[10px] uppercase tracking-wider text-[var(--text-muted)] mb-1">{x.et}</dt>
+                  <dd className="text-sm font-black text-[var(--foreground)] tabular-nums">{x.v}</dd>
                 </div>
               ))}
             </dl>
 
-            <p className="text-sm text-[#c9ced5] leading-relaxed">
+            <p className="text-sm text-[var(--text-soft)] leading-relaxed">
               Jumătate din produsele urmărite costă sub {lei(stat.pretMedian)}.
               {stat.cuReducere > 0 && (
-                <> Chiar acum, <strong className="text-[#ffffff]">{stat.cuReducere}</strong>{" "}
+                <> Chiar acum, <strong className="text-[var(--foreground)]">{stat.cuReducere}</strong>{" "}
                   {stat.cuReducere === 1 ? "produs are" : "produse au"} prețul tăiat față de cel inițial.</>
               )}{" "}
               Prețul median spune mai mult decât cel mai mic preț afișat pe site:
@@ -87,30 +87,30 @@ export default function ContextMagazin({
 
         {/* ── Magazinul in categoria lui (toate magazinele) ─────────────────── */}
         {cat && (
-          <div className="bg-[#14181c] border border-[#1f2329] rounded-xl p-5">
-            <h2 className="text-lg font-black text-[#ffffff] mb-1">{nume} față de restul categoriei</h2>
-            <p className="text-xs text-[#9399a0] mb-4">
+          <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
+            <h2 className="text-lg font-black text-[var(--foreground)] mb-1">{nume} față de restul categoriei</h2>
+            <p className="text-xs text-[var(--text-muted)] mb-4">
               Date din studiul nostru pe magazinele online din România.
             </p>
 
-            <ul className="space-y-2.5 text-sm text-[#c9ced5] mb-4">
-              <li className="flex justify-between gap-3 border-b border-[#1f2329] pb-2.5">
+            <ul className="space-y-2.5 text-sm text-[var(--text-soft)] mb-4">
+              <li className="flex justify-between gap-3 border-b border-[var(--border)] pb-2.5">
                 <span>Magazine urmărite în {numeCat}</span>
-                <strong className="text-[#ffffff] tabular-nums">{cat.magazine}</strong>
+                <strong className="text-[var(--foreground)] tabular-nums">{cat.magazine}</strong>
               </li>
-              <li className="flex justify-between gap-3 border-b border-[#1f2329] pb-2.5">
+              <li className="flex justify-between gap-3 border-b border-[var(--border)] pb-2.5">
                 <span>Cu promoție activă acum</span>
-                <strong className="text-[#ffffff] tabular-nums">{cat.cu_promotie}</strong>
+                <strong className="text-[var(--foreground)] tabular-nums">{cat.cu_promotie}</strong>
               </li>
               {cat.reducere_mediana !== null && (
                 <li className="flex justify-between gap-3">
                   <span>Reducere tipică în categorie</span>
-                  <strong className="text-[#ddf93c] tabular-nums">{cat.reducere_mediana}%</strong>
+                  <strong className="text-[var(--accent-text)] tabular-nums">{cat.reducere_mediana}%</strong>
                 </li>
               )}
             </ul>
 
-            <p className="text-sm text-[#c9ced5] leading-relaxed mb-4">
+            <p className="text-sm text-[var(--text-soft)] leading-relaxed mb-4">
               {cat.reducere_mediana !== null ? (
                 <>Cand vezi o reducere sub {cat.reducere_mediana}% la {numeCat?.toLowerCase()},
                   merita sa mai astepti &mdash; e sub cat se ofera de obicei in categorie.</>
@@ -123,17 +123,17 @@ export default function ContextMagazin({
             <div className="flex flex-wrap gap-2">
               {categorieSlug && (
                 <Link href={`/categorii/${categorieSlug}`}
-                  className="text-xs font-bold px-3 py-1.5 rounded-xl bg-[#1f2329] text-[#c9ced5] border border-[#2a2f36] hover:text-[#ddf93c] hover:border-[#c9ced5] transition-colors">
+                  className="text-xs font-bold px-3 py-1.5 rounded-xl bg-[var(--surface-alt)] text-[var(--text-soft)] border border-[var(--border-strong)] hover:text-[var(--accent-text)] hover:border-[#c9ced5] transition-colors">
                   Toate magazinele din {numeCat}
                 </Link>
               )}
               <Link href="/studiu/coduri-reducere-romania"
-                className="text-xs font-bold px-3 py-1.5 rounded-xl bg-[#1f2329] text-[#c9ced5] border border-[#2a2f36] hover:text-[#ddf93c] hover:border-[#c9ced5] transition-colors">
+                className="text-xs font-bold px-3 py-1.5 rounded-xl bg-[var(--surface-alt)] text-[var(--text-soft)] border border-[var(--border-strong)] hover:text-[var(--accent-text)] hover:border-[#c9ced5] transition-colors">
                 Cum am masurat
               </Link>
               {urlSite && (
                 <a href={urlSite} target="_blank" rel="noopener noreferrer nofollow"
-                  className="text-xs font-bold px-3 py-1.5 rounded-xl bg-[#1f2329] text-[#c9ced5] border border-[#2a2f36] hover:text-[#ddf93c] hover:border-[#c9ced5] transition-colors">
+                  className="text-xs font-bold px-3 py-1.5 rounded-xl bg-[var(--surface-alt)] text-[var(--text-soft)] border border-[var(--border-strong)] hover:text-[var(--accent-text)] hover:border-[#c9ced5] transition-colors">
                   Site oficial {nume}
                 </a>
               )}
@@ -147,9 +147,9 @@ export default function ContextMagazin({
           nu poata diverge — aceeasi regula ca la FAQ. Google a retras rezultatele
           imbogatite HowTo, deci valoarea e in textul citit de om, nu in marcaj. */}
       {pasi.length > 0 && (
-        <div id="cum-folosesti" className="mt-4 bg-[#14181c] border border-[#1f2329] rounded-xl p-5">
-          <h2 className="text-lg font-black text-[#ffffff] mb-1">Cum aplici un cod de reducere pe {nume}</h2>
-          <p className="text-xs text-[#9399a0] mb-4">Dureaza sub doua minute.</p>
+        <div id="cum-folosesti" className="mt-4 bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
+          <h2 className="text-lg font-black text-[var(--foreground)] mb-1">Cum aplici un cod de reducere pe {nume}</h2>
+          <p className="text-xs text-[var(--text-muted)] mb-4">Dureaza sub doua minute.</p>
           <ol className="space-y-3">
             {pasi.map((p, i) => (
               <li key={p.titlu} className="flex gap-3">
@@ -157,8 +157,8 @@ export default function ContextMagazin({
                   {i + 1}
                 </span>
                 <span className="min-w-0">
-                  <h3 className="text-sm font-bold text-[#ffffff] mb-0.5">{p.titlu}</h3>
-                  <p className="text-sm text-[#c9ced5] leading-relaxed">{p.text}</p>
+                  <h3 className="text-sm font-bold text-[var(--foreground)] mb-0.5">{p.titlu}</h3>
+                  <p className="text-sm text-[var(--text-soft)] leading-relaxed">{p.text}</p>
                 </span>
               </li>
             ))}
@@ -173,20 +173,20 @@ export default function ContextMagazin({
           marcajul ascuns e motiv de actiune manuala. Randate din exact acelasi
           array din care se construieste schema, deci nu mai pot diverge. */}
       {intrebari.length > 0 && (
-        <div className="mt-4 bg-[#14181c] border border-[#1f2329] rounded-xl p-5">
-          <h2 className="text-lg font-black text-[#ffffff] mb-4">Intrebari frecvente despre {nume}</h2>
+        <div className="mt-4 bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
+          <h2 className="text-lg font-black text-[var(--foreground)] mb-4">Intrebari frecvente despre {nume}</h2>
           {/* `details` nativ, nu accordion pe JS: continutul ramane in DOM chiar
               inchis, deci Google il vede — cerinta pentru marcajul FAQPage. Un
               accordion care randeaza doar la click ar reintroduce exact problema
               „schema fara continut vizibil" reparata azi. */}
-          <div className="divide-y divide-[#1f2329]">
+          <div className="divide-y divide-[var(--border)]">
             {intrebari.map((q, i) => (
               <details key={q.i} open={i === 0} className="py-3.5 first:pt-0 last:pb-0 group">
-                <summary className="text-sm font-bold text-[#ffffff] cursor-pointer list-none flex items-start justify-between gap-3 hover:text-[#ddf93c] transition-colors">
+                <summary className="text-sm font-bold text-[var(--foreground)] cursor-pointer list-none flex items-start justify-between gap-3 hover:text-[var(--accent-text)] transition-colors">
                   <h3 className="text-sm font-bold">{q.i}</h3>
-                  <span className="shrink-0 text-[#6b7178] group-open:rotate-180 transition-transform" aria-hidden="true">&#9662;</span>
+                  <span className="shrink-0 text-[var(--text-muted)] group-open:rotate-180 transition-transform" aria-hidden="true">&#9662;</span>
                 </summary>
-                <p className="text-sm text-[#c9ced5] leading-relaxed mt-1.5">{q.r}</p>
+                <p className="text-sm text-[var(--text-soft)] leading-relaxed mt-1.5">{q.r}</p>
               </details>
             ))}
           </div>

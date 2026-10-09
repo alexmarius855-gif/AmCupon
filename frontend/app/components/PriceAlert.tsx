@@ -46,7 +46,7 @@ export default function PriceAlert({ magazin, numeMagazin, deschis = false }: Pr
     return (
       <button
         onClick={() => setOpen(true)}
-        className="flex items-center gap-2 text-sm font-semibold text-[#c9ced5] hover:text-[#ddf93c] border border-[#2a2f36] hover:border-[#ddf93c]/40 bg-[#1f2329]/60 hover:bg-[#1f2329] px-4 py-2.5 rounded-xl transition-all"
+        className="flex items-center gap-2 text-sm font-semibold text-[var(--text-soft)] hover:text-[var(--accent-text)] border border-[var(--border-strong)] hover:border-[var(--accent-text)]/40 bg-[var(--surface-alt)]/60 hover:bg-[var(--surface-alt)] px-4 py-2.5 rounded-xl transition-all"
       >
         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
@@ -59,16 +59,16 @@ export default function PriceAlert({ magazin, numeMagazin, deschis = false }: Pr
   // In modul `deschis` (starea goala a paginii de magazin), mesajul de deasupra spune deja
   // ce face alerta; o caseta cu titlu propriu l-ar repeta. Ramane doar formularul.
   return (
-    <div className={deschis ? "" : "bg-[#14181c] border border-[#ddf93c]/20 rounded-xl p-4"}>
+    <div className={deschis ? "" : "bg-[var(--surface)] border border-[var(--accent-text)]/20 rounded-xl p-4"}>
       {!deschis && (
       <div className="flex items-start justify-between mb-3">
         <div>
-          <p className="font-black text-[#ffffff] text-sm">🔔 Alertă {numeMagazin}</p>
-          <p className="text-xs text-[#c9ced5] mt-0.5">Te notificăm când apare o ofertă nouă</p>
+          <p className="font-black text-[var(--foreground)] text-sm">🔔 Alertă {numeMagazin}</p>
+          <p className="text-xs text-[var(--text-soft)] mt-0.5">Te notificăm când apare o ofertă nouă</p>
         </div>
         <button onClick={() => { setOpen(false); setStatus("idle"); setEmail(""); }}
           aria-label="Închide"
-          className="text-[#9399a0] hover:text-[#c9ced5] transition-colors">
+          className="text-[var(--text-muted)] hover:text-[var(--text-soft)] transition-colors">
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12"/>
           </svg>
@@ -90,7 +90,7 @@ export default function PriceAlert({ magazin, numeMagazin, deschis = false }: Pr
             placeholder="email@tau.ro"
             aria-label={`Adresa de email pentru alerta ${numeMagazin}`}
             required
-            className="flex-1 border border-[#2a2f36] focus:border-[#ddf93c] bg-[#1f2329] text-[#ffffff] placeholder:text-[#9399a0] rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#ddf93c]/30"
+            className="flex-1 border border-[var(--border-strong)] focus:border-[var(--accent-text)] bg-[var(--surface-alt)] text-[var(--foreground)] placeholder:text-[var(--text-muted)] rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#ddf93c]/30"
           />
           <button type="submit" disabled={status === "loading"}
             className="bg-[#ddf93c] hover:bg-[#ddf93c] disabled:opacity-60 text-[#0c1000] font-bold px-4 py-2 rounded-xl text-sm transition-colors whitespace-nowrap">

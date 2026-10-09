@@ -68,7 +68,7 @@ export default function VotCupon({
   return (
     <div className={`flex items-center gap-2 flex-wrap ${compact ? "text-[11px]" : "text-xs"}`}>
       {stare === "votat" ? (
-        <span className="inline-flex items-center gap-1.5 text-[#c3dd2c] font-semibold">
+        <span className="inline-flex items-center gap-1.5 text-[var(--accent-text)] font-semibold">
           <Check className="w-3.5 h-3.5" strokeWidth={2.5} /> Multumim
         </span>
       ) : stare === "eroare" ? (
@@ -77,12 +77,12 @@ export default function VotCupon({
         </span>
       ) : (
         <>
-          <span className="text-[#9399a0]">A functionat?</span>
+          <span className="text-[var(--text-muted)]">A functionat?</span>
           <button
             onClick={() => voteaza(true)}
             disabled={stare === "trimit"}
             aria-label="Codul a functionat"
-            className="inline-flex items-center gap-1 px-2 py-1 rounded-lg border border-[#2a2f36] text-[#c9ced5] hover:border-[#ddf93c] hover:text-[#ddf93c] disabled:opacity-50 transition-colors"
+            className="inline-flex items-center gap-1 px-2 py-1 rounded-lg border border-[var(--border-strong)] text-[var(--text-soft)] hover:border-[var(--accent-text)] hover:text-[var(--accent-text)] disabled:opacity-50 transition-colors"
           >
             <ThumbsUp className="w-3.5 h-3.5" strokeWidth={2} /> Da
           </button>
@@ -90,7 +90,7 @@ export default function VotCupon({
             onClick={() => voteaza(false)}
             disabled={stare === "trimit"}
             aria-label="Codul nu a functionat"
-            className="inline-flex items-center gap-1 px-2 py-1 rounded-lg border border-[#2a2f36] text-[#c9ced5] hover:border-[#e64343] hover:text-[#e64343] disabled:opacity-50 transition-colors"
+            className="inline-flex items-center gap-1 px-2 py-1 rounded-lg border border-[var(--border-strong)] text-[var(--text-soft)] hover:border-[#e64343] hover:text-[#e64343] disabled:opacity-50 transition-colors"
           >
             <ThumbsDown className="w-3.5 h-3.5" strokeWidth={2} /> Nu
           </button>
@@ -100,8 +100,8 @@ export default function VotCupon({
       {/* Scorul apare DOAR cu destule voturi. Sub prag nu afisam nimic —
           absenta unei cifre e onesta, o cifra din 1 vot nu ar fi. */}
       {aratScor && (
-        <span className="text-[#9399a0]">
-          <strong className="text-[#ffffff]">{procent}%</strong> din {total} spun ca merge
+        <span className="text-[var(--text-muted)]">
+          <strong className="text-[var(--foreground)]">{procent}%</strong> din {total} spun ca merge
         </span>
       )}
     </div>

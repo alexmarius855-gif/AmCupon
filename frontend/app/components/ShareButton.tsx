@@ -67,16 +67,16 @@ export default function ShareButton({
     : "flex items-center gap-1.5 text-sm px-3 py-2 rounded-xl";
 
   const btnColors = isDark
-    ? "border border-[#2a2f36] text-[#c9ced5] hover:border-[#6b7178] hover:text-[#c9ced5]"
-    : "border border-[#3a4048] text-gray-500 hover:border-[#ddf93c] hover:text-[#ddf93c]";
+    ? "border border-[var(--border-strong)] text-[var(--text-soft)] hover:border-[#6b7178] hover:text-[var(--text-soft)]"
+    : "border border-[var(--border-strong)] text-gray-500 hover:border-[var(--accent-text)] hover:text-[var(--accent-text)]";
 
   const dropdownBg = isDark
-    ? "bg-[#1f2329] border-[#2a2f36]"
-    : "bg-[#14181c] border-[#2a2f36]";
+    ? "bg-[var(--surface-alt)] border-[var(--border-strong)]"
+    : "bg-[var(--surface)] border-[var(--border-strong)]";
 
-  const itemHover = isDark ? "hover:bg-[#2a2f36]" : "hover:bg-[#14181c]";
-  const dividerColor = isDark ? "border-[#2a2f36]" : "border-[#2a2f36]";
-  const copyColor = isDark ? "text-[#c9ced5]" : "text-gray-600";
+  const itemHover = isDark ? "hover:bg-[var(--surface-high)]" : "hover:bg-[var(--surface)]";
+  const dividerColor = isDark ? "border-[var(--border-strong)]" : "border-[var(--border-strong)]";
+  const copyColor = isDark ? "text-[var(--text-soft)]" : "text-gray-600";
 
   return (
     <div className="relative inline-block">

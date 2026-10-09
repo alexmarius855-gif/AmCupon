@@ -58,22 +58,22 @@ export default function FaraLivrareRo({
 }) {
   const tari = tariLivrare(f.regiuni);
   return (
-    <div className="min-h-screen bg-[#06080b] text-[#ffffff]">
-      <header className="border-b border-[#1f2329]">
+    <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
+      <header className="border-b border-[var(--border)]">
         <div className="max-w-3xl mx-auto px-4 py-3 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-1.5">
             <div className="bg-[#ddf93c] text-[#0c1000] font-black text-base px-2 py-1 rounded-lg">Am</div>
             <span className="font-black text-xl">Cupon</span>
-            <span className="text-[#ddf93c] font-black text-xl">.ro</span>
+            <span className="text-[var(--accent-text)] font-black text-xl">.ro</span>
           </Link>
-          <Link href="/toate-magazinele" className="text-sm text-[#ddf93c] font-semibold">
+          <Link href="/toate-magazinele" className="text-sm text-[var(--accent-text)] font-semibold">
             Toate magazinele →
           </Link>
         </div>
       </header>
 
       <main className="max-w-3xl mx-auto px-4 py-10">
-        <p className="text-xs font-bold uppercase tracking-wider text-[#9399a0] mb-2">{f.categorie}</p>
+        <p className="text-xs font-bold uppercase tracking-wider text-[var(--text-muted)] mb-2">{f.categorie}</p>
         {/* Afirmatia e despre PROGRAMUL la care avem acces, nu despre firma: „Eufy NL" acopera doar
             Olanda, dar asta nu inseamna ca Eufy nu vinde deloc in Romania. */}
         <h1 className="text-2xl sm:text-3xl font-black mb-4">Nu avem o ofertă {nume} pentru România</h1>
@@ -84,9 +84,9 @@ export default function FaraLivrareRo({
           {" "}— așa că nu îl promovăm și nu îți arătăm coduri pentru el.
         </p>
         {f.url ? (
-          <p className="text-[#9399a0] text-sm mb-8">
+          <p className="text-[var(--text-muted)] text-sm mb-8">
             Dacă vrei să verifici singur dacă {nume} are un magazin pentru România, intră pe{" "}
-            <a href={f.url} rel="nofollow noopener" target="_blank" className="text-[#ddf93c] underline">
+            <a href={f.url} rel="nofollow noopener" target="_blank" className="text-[var(--accent-text)] underline">
               site-ul oficial
             </a>{" "}
             — linkul nu e de afiliere.
@@ -94,8 +94,8 @@ export default function FaraLivrareRo({
         ) : null}
 
         {alternative.length > 0 ? (
-          <section className="bg-[#14181c] border border-[#1f2329] rounded-xl p-5">
-            <h2 className="text-sm font-bold uppercase tracking-wider text-[#c3dd2c] mb-4">
+          <section className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
+            <h2 className="text-sm font-bold uppercase tracking-wider text-[var(--accent-text)] mb-4">
               Alternative din {f.categorie}
             </h2>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -103,7 +103,7 @@ export default function FaraLivrareRo({
                 <li key={a.magazin}>
                   <Link
                     href={`/cod-reducere/${a.magazin}`}
-                    className="flex items-center justify-between gap-3 bg-[#06080b] border border-[#1f2329] rounded-lg px-4 py-3 hover:border-[#ddf93c]/50 transition-colors"
+                    className="flex items-center justify-between gap-3 bg-[var(--background)] border border-[var(--border)] rounded-lg px-4 py-3 hover:border-[var(--accent-text)]/50 transition-colors"
                   >
                     <span className="font-semibold">{a.nume}</span>
                     {a.eticheta ? (

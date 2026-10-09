@@ -37,20 +37,20 @@ export default function RedirectModal({ open, onClose, storeName, redirectFailed
           onClick={onClose}
         >
           <div
-            className="am-modal bg-[#14181c] border border-[#1f2329] rounded-xl p-5 max-w-sm w-full shadow-2xl"
+            className="am-modal bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5 max-w-sm w-full shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-start gap-3">
               <CheckCircle2 className="w-6 h-6 text-emerald-400 shrink-0 mt-0.5" />
               <div className="flex-1">
-                <p className="text-[#ffffff] font-bold text-sm">Cod copiat!</p>
-                <p className="text-[#9399a0] text-xs mt-1">
+                <p className="text-[var(--foreground)] font-bold text-sm">Cod copiat!</p>
+                <p className="text-[var(--text-muted)] text-xs mt-1">
                   {redirectFailed
                     ? "Browserul a blocat tab-ul nou."
                     : `Te-am redirecționat la ${storeName} într-un tab nou.`}
                 </p>
               </div>
-              <button onClick={onClose} className="text-[#6b7178] hover:text-[#ffffff] transition-colors" aria-label="Închide">
+              <button onClick={onClose} className="text-[var(--text-muted)] hover:text-[var(--foreground)] transition-colors" aria-label="Închide">
                 <X className="w-4 h-4" />
               </button>
             </div>

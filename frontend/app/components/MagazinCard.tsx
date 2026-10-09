@@ -155,19 +155,19 @@ export default function MagazinCard({ m, numeOverride, astazi, isFavorit, onTogg
         <div className="min-w-0 flex-1">
           <div className="flex items-start justify-between gap-2">
             <div className="min-w-0">
-              <h3 className="font-bold text-[#ffffff] text-[15px] leading-tight group-hover:text-[#ddf93c] transition-colors truncate">{numeMagazin}</h3>
-              <p className="text-[11px] text-[#6b7178] truncate mt-0.5">{m.magazin}</p>
+              <h3 className="font-bold text-[var(--foreground)] text-[15px] leading-tight group-hover:text-[var(--accent-text)] transition-colors truncate">{numeMagazin}</h3>
+              <p className="text-[11px] text-[var(--text-muted)] truncate mt-0.5">{m.magazin}</p>
             </div>
             <div className="flex items-center gap-1 shrink-0">
               {showDealScore && (
                 <span title="Scor calculat de AmCupon din reducere, cod, prospețime și exclusivitate"
-                  className="flex items-center gap-1 text-[10px] font-bold bg-[#ddf93c]/12 border border-[#ddf93c]/30 text-[#ddf93c] px-2 py-0.5 rounded-full">
+                  className="flex items-center gap-1 text-[10px] font-bold bg-[#ddf93c]/12 border border-[var(--accent-text)]/30 text-[var(--accent-text)] px-2 py-0.5 rounded-full">
                   <Flame className="w-3 h-3" /> {dealScore}
                 </span>
               )}
               {onToggleFavorit && (
                 <button onClick={e => { e.preventDefault(); e.stopPropagation(); onToggleFavorit(m.magazin, e); }}
-                  className="p-1 rounded-full hover:bg-[#1f2329] transition-colors"
+                  className="p-1 rounded-full hover:bg-[var(--surface-alt)] transition-colors"
                   title={isFavorit ? "Elimina din favorite" : "Adauga la favorite"} aria-label="Favorite">
                   <Heart className={`w-4 h-4 transition-colors ${isFavorit ? "fill-red-500 stroke-red-500" : "fill-none stroke-[#3a4048] hover:stroke-red-400"}`} strokeWidth={2} />
                 </button>
@@ -184,22 +184,22 @@ export default function MagazinCard({ m, numeOverride, astazi, isFavorit, onTogg
             {/* Procentul URIAS, lime plin (nu gradient-text — se citeste mai bine).
                 Afisat DOAR cand exista un procent real parsat din titlul promotiei. */}
             {discount && (
-              <div className="text-[2.5rem] leading-[1.05] font-black text-[#ddf93c] tracking-tight mb-1">
+              <div className="text-[2.5rem] leading-[1.05] font-black text-[var(--accent-text)] tracking-tight mb-1">
                 -{discount}
               </div>
             )}
-            <p className={`font-bold text-[#ffffff] leading-snug line-clamp-2 ${discount ? "text-[15px]" : "text-base"}`}>
+            <p className={`font-bold text-[var(--foreground)] leading-snug line-clamp-2 ${discount ? "text-[15px]" : "text-base"}`}>
               {titluPromotie(promo, numeMagazin)}
             </p>
             <div className="flex items-center gap-1.5 mt-2 flex-wrap">
               {m.categorie && (
-                <span className="text-[10px] font-semibold text-[#9399a0] bg-[#1f2329] px-2 py-0.5 rounded-full truncate max-w-[9rem]">{m.categorie}</span>
+                <span className="text-[10px] font-semibold text-[var(--text-muted)] bg-[var(--surface-alt)] px-2 py-0.5 rounded-full truncate max-w-[9rem]">{m.categorie}</span>
               )}
               {m.exclusiv && (
                 <span className="text-[10px] font-bold bg-[#ddf93c] text-[#0c1000] px-2 py-0.5 rounded-full shrink-0">Exclusiv</span>
               )}
               {transportGratuit && (
-                <span className="flex items-center gap-1 text-[10px] font-bold text-[#ddf93c] bg-[#ddf93c]/10 border border-[#ddf93c]/25 px-2 py-0.5 rounded-full shrink-0">
+                <span className="flex items-center gap-1 text-[10px] font-bold text-[var(--accent-text)] bg-[#ddf93c]/10 border border-[var(--accent-text)]/25 px-2 py-0.5 rounded-full shrink-0">
                   <Truck className="w-3 h-3" /> Transport gratuit
                 </span>
               )}
@@ -211,7 +211,7 @@ export default function MagazinCard({ m, numeOverride, astazi, isFavorit, onTogg
             </div>
           </div>
         ) : (
-          <p className="text-sm text-[#9399a0] leading-snug">Vizitează magazinul prin linkul nostru afiliat — comisionul nu îți crește prețul.</p>
+          <p className="text-sm text-[var(--text-muted)] leading-snug">Vizitează magazinul prin linkul nostru afiliat — comisionul nu îți crește prețul.</p>
         )}
       </div>
 
@@ -219,8 +219,8 @@ export default function MagazinCard({ m, numeOverride, astazi, isFavorit, onTogg
         {promo?.cod_cupon ? (
           revealed ? (
             <div className="space-y-2">
-              <div className="relative border border-dashed border-[#ddf93c]/60 rounded-xl py-2.5 text-center bg-[#ddf93c]/10">
-                <span className="font-mono font-black text-[#ecff7a] tracking-[0.2em] text-sm">{promo.cod_cupon}</span>
+              <div className="relative border border-dashed border-[var(--accent-text)]/60 rounded-xl py-2.5 text-center bg-[#ddf93c]/10">
+                <span className="font-mono font-black text-[var(--accent-text)] tracking-[0.2em] text-sm">{promo.cod_cupon}</span>
                 {copiat && (
                   <p className="am-sus text-[11px] font-bold text-emerald-400 mt-0.5">✓ Copiat!</p>
                 )}
@@ -236,8 +236,8 @@ export default function MagazinCard({ m, numeOverride, astazi, isFavorit, onTogg
                magazinul (useCopyCod pastreaza copy+open sincrone, altfel browserul
                blocheaza popup-ul). */
             <button onClick={onCopiazaClick}
-              className="w-full flex items-center justify-between gap-2 border border-dashed border-[#ddf93c]/50 hover:border-[#ddf93c] rounded-xl pl-3.5 pr-2 py-2 bg-[#ddf93c]/[0.06] hover:bg-[#ddf93c]/10 transition-all active:scale-[0.99] group/cod">
-              <span className="font-mono font-bold text-[#ddf93c] tracking-[0.15em] text-sm truncate">
+              className="w-full flex items-center justify-between gap-2 border border-dashed border-[var(--accent-text)]/50 hover:border-[var(--accent-text)] rounded-xl pl-3.5 pr-2 py-2 bg-[#ddf93c]/[0.06] hover:bg-[#ddf93c]/10 transition-all active:scale-[0.99] group/cod">
+              <span className="font-mono font-bold text-[var(--accent-text)] tracking-[0.15em] text-sm truncate">
                 {maskCod(promo.cod_cupon)}
               </span>
               <span className="flex items-center gap-1.5 shrink-0 text-[11px] font-black uppercase tracking-wider text-[#0c1000] bg-[#ddf93c] group-hover/cod:bg-[#ecff7a] px-2.5 py-1.5 rounded-lg transition-colors">
@@ -252,7 +252,7 @@ export default function MagazinCard({ m, numeOverride, astazi, isFavorit, onTogg
           </a>
         ) : (
           <a href={dest} {...atributeExterne}
-            className="flex items-center justify-center w-full bg-[#1f2329]/80 hover:bg-[#2a2f36] border border-[#2a2f36] hover:border-[#ddf93c]/50 text-[#c9ced5] hover:text-[#ffffff] font-bold py-2.5 rounded-xl text-sm transition-all">
+            className="flex items-center justify-center w-full bg-[var(--surface-alt)]/80 hover:bg-[var(--surface-high)] border border-[var(--border-strong)] hover:border-[var(--accent-text)]/50 text-[var(--text-soft)] hover:text-[var(--foreground)] font-bold py-2.5 rounded-xl text-sm transition-all">
             Mergi la {numeMagazin} →
           </a>
         )}

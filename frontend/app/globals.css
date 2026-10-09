@@ -63,6 +63,33 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* ── Tema luminoasa, pe zone (09.10.2026) ──────────────────────────────────
+   Alex a cerut aspect „clasic, simplu, colorat" (docs/design/macheta/amcupon-clasic.html). Antetul si subsolul
+   raman inchise; zona cu `tema-luminoasa` primeste ALTE VALORI pentru aceiasi tokeni, deci orice componenta
+   scrisa pe tokeni (CuponCard, IstoricMagazin, cele trecute prin scripts/tokenizeaza_culori.py) devine luminoasa
+   fara alt CSS. Contrast verificat: textul pe alb >= 4,5:1; lime ramane FUNDAL de buton (text #0c1000), iar ca
+   TEXT pe alb se foloseste --accent-text (verde inchis). */
+.tema-luminoasa {
+  --background: #f6f7fb;
+  --foreground: #14181c;
+  --surface: #ffffff;
+  --surface-alt: #f1f3f7;
+  --surface-high: #e6e9ef;
+  --border: #e5e7eb;
+  --border-strong: #d1d5db;
+  --text-muted: #5b6470;
+  --text-soft: #374151;
+  --accent-text: #3f6212;
+  --accent-soft: rgba(132, 204, 22, 0.14);
+  --danger-text: #b91c1c;
+  background: var(--background);
+  color: var(--foreground);
+}
+.tema-luminoasa .cc:hover { box-shadow: 0 12px 28px -16px rgba(20, 24, 28, 0.25); }
+/* Clase Tailwind cu nume, alese pentru fundal inchis (400 = prea deschis pe alb, contrast ~1,7:1). */
+.tema-luminoasa .text-emerald-400 { color: #047857; }
+.tema-luminoasa .text-red-400 { color: #b91c1c; }
+
 body {
   background: var(--background);
   color: var(--foreground);
