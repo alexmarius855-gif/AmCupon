@@ -1,7 +1,7 @@
 {
-  "data": "2026-10-09",
-  "data_afisata": "9 octombrie 2026",
-  "titlu": "Radarul AmCupon — 9 octombrie 2026",
+  "data": "2026-10-10",
+  "data_afisata": "10 octombrie 2026",
+  "titlu": "Radarul AmCupon — 10 octombrie 2026",
   "intro": "Am trecut azi prin ofertele active si am pastrat doar ce merita. Iese in evidenta Nadula si Klaiyihair, dar mai jos ai selectia completa, verificata de noi. Toate codurile sunt testate; cele cu termen scurt le-am marcat.",
   "picks": [
     {
@@ -15,8 +15,8 @@
       "descriere": "Nadula Hair Feel Fresh Feel You Sale Up To $100 Off With Code:FALL",
       "cod": "FALL",
       "url": "https://amcupon.ro/cod-reducere/nadula.com",
-      "zile_ramase": 2,
-      "take": "Grabeste-te: expira in 2 zile. Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 1,
+      "take": "Grabeste-te: expira in 1 zi. Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
       "scor": 100,
@@ -29,7 +29,7 @@
       "descriere": "Here Are The Details Of The Klaiyi Hair Fall Getaway Vibes Promotion: 17% OFF Sitewide — Code: FALL17 $30 OFF Over $155 — Code: FALL30 $55 OFF Over $249 — Code: FALL60",
       "cod": "FALL60",
       "url": "https://amcupon.ro/cod-reducere/klaiyihair.com",
-      "zile_ramase": 7,
+      "zile_ramase": 6,
       "take": "Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
@@ -43,8 +43,8 @@
       "descriere": "",
       "cod": "",
       "url": "https://amcupon.ro/cod-reducere/noriel.ro",
-      "zile_ramase": 2,
-      "take": "Grabeste-te: expira in 2 zile. Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 1,
+      "take": "Grabeste-te: expira in 1 zi. Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
       "scor": 75,
@@ -57,8 +57,8 @@
       "descriere": "",
       "cod": "",
       "url": "https://amcupon.ro/cod-reducere/drmax.ro",
-      "zile_ramase": 2,
-      "take": "Grabeste-te: expira in 2 zile. Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 1,
+      "take": "Grabeste-te: expira in 1 zi. Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
       "scor": 75,
@@ -71,8 +71,8 @@
       "descriere": "",
       "cod": "",
       "url": "https://amcupon.ro/cod-reducere/libris.ro",
-      "zile_ramase": 2,
-      "take": "Grabeste-te: expira in 2 zile. Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 1,
+      "take": "Grabeste-te: expira in 1 zi. Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
       "scor": 70,
@@ -85,7 +85,7 @@
       "descriere": "Save $3 on orders over $29 using coupon DH2026OCTSAVE3 at DHgate.",
       "cod": "DH2026OCTSAVE3",
       "url": "https://amcupon.ro/cod-reducere/dhgate.com",
-      "zile_ramase": 22,
+      "zile_ramase": 21,
       "take": "Bun de prins daca oricum voiai sa-ti reimprospatezi garderoba."
     }
   ],

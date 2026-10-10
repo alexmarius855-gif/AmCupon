@@ -1,5 +1,5 @@
 # 💰 TOP MAGAZINE după POTENȚIAL DE CÂȘTIG
-> Generat automat 09.10.2026 15:29. Pe astea să le împingi (articole, pin-uri, postări).
+> Generat automat 10.10.2026 14:41. Pe astea să le împingi (articole, pin-uri, postări).
 
 **Scor = comision × popularitate × ofertă.** Comisionul mare singur înșală — astea-s banii REALI.
 
@@ -27,8 +27,8 @@
 | 20 | Billionconnect (billionconnect.net) | 10% | 0 | ✅ COD | 20.0 |
 | 21 | Nemira (nemira.ro) | 13% | 0 | 🏷️ ofertă | 18.2 |
 | 22 | Mooyius (mooyius.com) | 12% | 0 | 🏷️ ofertă | 16.8 |
-| 23 | Oleya (oleya.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
-| 24 | E Potion (e-potion.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
+| 23 | E Potion (e-potion.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
+| 24 | Oleya (oleya.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
 | 25 | Geekbuying (geekbuying.com) | 8% | 0 | ✅ COD | 16.0 |
 | 26 | Boyamic (store.boyamic.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
 | 27 | Ashimaryhair (ashimaryhair.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
