@@ -1,10 +1,10 @@
 {
-  "generat": "2026-10-09",
-  "total_magazine": 960,
+  "generat": "2026-10-10",
+  "total_magazine": 961,
   "cu_promotie": 134,
   "cu_cod_real": 39,
   "doar_oferta": 95,
-  "procent_cu_promotie": 14.0,
+  "procent_cu_promotie": 13.9,
   "procent_cu_cod": 4.1,
   "reducere_mediana_generala": 25.0,
   "magazine_cu_procent_declarat": 86,
@@ -66,7 +66,7 @@
     {
       "slug": "copii",
       "nume": "Copii & familie",
-      "magazine": 27,
+      "magazine": 28,
       "cu_promotie": 5,
       "reducere_mediana": 25.0,
       "reducere_max": 33,
