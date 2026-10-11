@@ -55,6 +55,10 @@
   "fp": "97703a252f53901a",
   "data": "2026-10-07"
  },
+ "/cod-reducere/wiskiiactive.com": {
+  "fp": "8e268eb61647169a",
+  "data": "2026-10-11"
+ },
  "/cod-reducere/helloice.com": {
   "fp": "216f0dc4f948c59d",
   "data": "2026-10-07"
@@ -70,10 +74,6 @@
  "/cod-reducere/original-group.com": {
   "fp": "41053be4ea5d27b5",
   "data": "2026-10-01"
- },
- "/cod-reducere/nadula.com": {
-  "fp": "f63f2d798738b1f9",
-  "data": "2026-10-07"
  },
  "/cod-reducere/klaiyihair.com": {
   "fp": "cd9e47547296c733",
@@ -959,10 +959,6 @@
   "fp": "af5bf47d6d94ee3d",
   "data": "2026-08-16"
  },
- "/cod-reducere/wiskiiactive.com": {
-  "fp": "d5d39bdc2297de73",
-  "data": "2026-09-16"
- },
  "/cod-reducere/zendrop.com": {
   "fp": "e80bf72baffd1929",
   "data": "2026-08-16"
@@ -989,6 +985,10 @@
  },
  "/cod-reducere/gsmnet.ro": {
   "fp": "c5c240d44830bbc6",
+  "data": "2026-10-11"
+ },
+ "/cod-reducere/nadula.com": {
+  "fp": "bbcad4ad79bfc25e",
   "data": "2026-10-11"
  },
  "/cod-reducere/abelssoft.de": {
@@ -2280,7 +2280,7 @@
   "data": "2026-10-11"
  },
  "/cod-reducere/bsgmag.ro": {
-  "fp": "c5c240d44830bbc6",
+  "fp": "fc706a7f43af5b2c",
   "data": "2026-10-11"
  },
  "/cod-reducere/petmart.ro": {
@@ -3076,7 +3076,7 @@
   "data": "2026-10-11"
  },
  "/cod-reducere/bonami.ro": {
-  "fp": "0491901d52fc9d14",
+  "fp": "c7043a0c227b4704",
   "data": "2026-10-11"
  },
  "/cod-reducere/janta.ro": {
@@ -3508,8 +3508,8 @@
   "data": "2026-10-05"
  },
  "/cod-reducere/urbancare.ro": {
-  "fp": "230d2c1208567347",
-  "data": "2026-10-08"
+  "fp": "b1ae24002beb5a3c",
+  "data": "2026-10-11"
  },
  "/cod-reducere/heatcollective.ro": {
   "fp": "dd425fa744d0f5b2",

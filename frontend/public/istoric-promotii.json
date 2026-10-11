@@ -5953,7 +5953,7 @@
     "prima": "2026-09-30",
     "ultima": "2026-10-11",
     "expira": "2026-10-11",
-    "activa": true
+    "activa": false
    },
    {
     "k": "fallreadaywigssaleupto90offwithcodefall|fall",
@@ -8023,6 +8023,15 @@
    }
   ],
   "wiskiiactive.com": [
+   {
+    "k": "wiskiiclubweek20off|wiskii20",
+    "titlu": "WISKII CLUB WEEK 20% OFF",
+    "cod": true,
+    "prima": "2026-10-11",
+    "ultima": "2026-10-11",
+    "expira": "2026-10-19",
+    "activa": true
+   },
    {
     "k": "stepintofallsale|reset",
     "titlu": "STEP INTO FALL SALE",
