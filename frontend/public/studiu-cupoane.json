@@ -1,10 +1,10 @@
 {
-  "generat": "2026-10-10",
+  "generat": "2026-10-11",
   "total_magazine": 959,
-  "cu_promotie": 134,
+  "cu_promotie": 133,
   "cu_cod_real": 39,
-  "doar_oferta": 95,
-  "procent_cu_promotie": 14.0,
+  "doar_oferta": 94,
+  "procent_cu_promotie": 13.9,
   "procent_cu_cod": 4.1,
   "reducere_mediana_generala": 25.0,
   "magazine_cu_procent_declarat": 86,
@@ -30,7 +30,7 @@
     {
       "slug": "beauty",
       "nume": "Beauty & îngrijire",
-      "magazine": 74,
+      "magazine": 73,
       "cu_promotie": 10,
       "reducere_mediana": 40,
       "reducere_max": 93,
@@ -40,7 +40,7 @@
       "slug": "fashion",
       "nume": "Fashion",
       "magazine": 78,
-      "cu_promotie": 18,
+      "cu_promotie": 17,
       "reducere_mediana": 30,
       "reducere_max": 55,
       "esantion": 11
@@ -102,7 +102,7 @@
     {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
-      "magazine": 125,
+      "magazine": 126,
       "cu_promotie": 22,
       "reducere_mediana": 17,
       "reducere_max": 82,
@@ -136,15 +136,6 @@
       "esantion": 0
     },
     {
-      "slug": "mancare-bauturi",
-      "nume": "Mâncare & băuturi",
-      "magazine": 17,
-      "cu_promotie": 3,
-      "reducere_mediana": null,
-      "reducere_max": null,
-      "esantion": 2
-    },
-    {
       "slug": "auto-moto",
       "nume": "Auto & moto",
       "magazine": 26,
@@ -161,6 +152,15 @@
       "reducere_mediana": null,
       "reducere_max": null,
       "esantion": 1
+    },
+    {
+      "slug": "mancare-bauturi",
+      "nume": "Mâncare & băuturi",
+      "magazine": 17,
+      "cu_promotie": 3,
+      "reducere_mediana": null,
+      "reducere_max": null,
+      "esantion": 2
     },
     {
       "slug": "financiar",
