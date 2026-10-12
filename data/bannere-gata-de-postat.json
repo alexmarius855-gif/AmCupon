@@ -1,5 +1,31 @@
 [
   {
+    "id": 273172,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273131/original/273131.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=fac84205e&aff_code=541547473&campaign_unique=cc08e2536",
+    "landing_raw": "https://www.pensulemachiaj.ro",
+    "width": 1200,
+    "height": 1200,
+    "merchant": "pensulemachiaj.ro",
+    "merchant_slug": "pensulemachiaj-ro",
+    "name": "-80% STAR SHINE  CELEBRITY SECRET BAG GRATUIT ",
+    "category": "-80% STAR SHINE  CELEBRITY SECRET BAG GRATUIT ",
+    "b_type": "image"
+  },
+  {
+    "id": 273171,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273130/original/273130.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=073619da7&aff_code=541547473&campaign_unique=4b9a6d5ea",
+    "landing_raw": "https://www.kitunghii.ro",
+    "width": 1200,
+    "height": 1200,
+    "merchant": "kitunghii.ro",
+    "merchant_slug": "kitunghii-ro",
+    "name": "-80% STAR SHINE,SECRET BEAUTY BAG GRATUIT",
+    "category": "-80% STAR SHINE,SECRET BEAUTY BAG GRATUIT",
+    "b_type": "image"
+  },
+  {
     "id": 273153,
     "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273112/original/273112.jpg",
     "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=e0b70259a&aff_code=541547473&campaign_unique=cc08e2536",
@@ -153,45 +179,6 @@
     "merchant_slug": "nemira-ro",
     "name": "Toamna Literară cu 40% REDUCERE la coș!",
     "category": "Toamna Literară cu 40% REDUCERE la coș!",
-    "b_type": "image"
-  },
-  {
-    "id": 272957,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/272916/original/272916.JPG",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=ba1679081&aff_code=541547473&campaign_unique=9a6f02fef",
-    "landing_raw": "https://www.libris.ro/lp/creative",
-    "width": 971,
-    "height": 965,
-    "merchant": "libris.ro ",
-    "merchant_slug": "libris-ro",
-    "name": "Back to Uni și nu numai Hai la o sesiune de răsfoit!",
-    "category": "Back to Uni și nu numai Hai la o sesiune de răsfoit!",
-    "b_type": "image"
-  },
-  {
-    "id": 272956,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/272915/original/272915.png",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=767f0758b&aff_code=541547473&campaign_unique=4cc1a3cf7",
-    "landing_raw": "https://www.giftdesign.ro/info/10-zile-de-oferte-gradina",
-    "width": 800,
-    "height": 800,
-    "merchant": "giftdesign.ro",
-    "merchant_slug": "giftdesign-ro-7d0c0462-cf14-432d-9385-4496c22dbcbd",
-    "name": "Final de sezon",
-    "category": "Final de sezon",
-    "b_type": "image"
-  },
-  {
-    "id": 272951,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/272910/original/272910.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=c489d4097&aff_code=541547473&campaign_unique=6390e3cfb",
-    "landing_raw": "https://www.drmax.ro/ofertele-lunii",
-    "width": 1080,
-    "height": 1080,
-    "merchant": "drmax.ro/",
-    "merchant_slug": "drmax-ro",
-    "name": "Ofertele lunii",
-    "category": "Ofertele lunii",
     "b_type": "image"
   }
 ]

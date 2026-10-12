@@ -1,6 +1,6 @@
 {
   "generat": "2026-10-12",
-  "total_magazine": 961,
+  "total_magazine": 962,
   "cu_promotie": 130,
   "cu_cod_real": 39,
   "doar_oferta": 91,
@@ -39,7 +39,7 @@
     {
       "slug": "fashion",
       "nume": "Fashion",
-      "magazine": 78,
+      "magazine": 79,
       "cu_promotie": 17,
       "reducere_mediana": 30,
       "reducere_max": 55,
