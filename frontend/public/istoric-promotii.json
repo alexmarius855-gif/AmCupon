@@ -480,8 +480,8 @@
    "magazine": 130
   },
   "2026-10-12": {
-   "promotii": 249,
-   "magazine": 127
+   "promotii": 247,
+   "magazine": 125
   }
  },
  "magazine": {
@@ -3942,7 +3942,7 @@
     "prima": "2026-10-02",
     "ultima": "2026-10-12",
     "expira": "2026-10-12",
-    "activa": true
+    "activa": false
    },
    {
     "k": "madmiadoublefuncumperi1perecheprimesti1perechesurprizacadou|",
@@ -7107,7 +7107,7 @@
     "prima": "2026-10-02",
     "ultima": "2026-10-12",
     "expira": "2026-10-12",
-    "activa": true
+    "activa": false
    }
   ],
   "snailax.com": [

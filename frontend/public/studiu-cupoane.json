@@ -1,22 +1,22 @@
 {
   "generat": "2026-10-12",
-  "total_magazine": 962,
-  "cu_promotie": 130,
+  "total_magazine": 959,
+  "cu_promotie": 128,
   "cu_cod_real": 39,
-  "doar_oferta": 91,
-  "procent_cu_promotie": 13.5,
+  "doar_oferta": 89,
+  "procent_cu_promotie": 13.3,
   "procent_cu_cod": 4.1,
   "reducere_mediana_generala": 25,
-  "magazine_cu_procent_declarat": 85,
+  "magazine_cu_procent_declarat": 83,
   "categorii": [
     {
       "slug": "cadouri-flori",
       "nume": "Cadouri & flori",
       "magazine": 13,
-      "cu_promotie": 4,
-      "reducere_mediana": 50.5,
+      "cu_promotie": 3,
+      "reducere_mediana": 66,
       "reducere_max": 75,
-      "esantion": 4
+      "esantion": 3
     },
     {
       "slug": "carti-educatie",
@@ -39,11 +39,11 @@
     {
       "slug": "fashion",
       "nume": "Fashion",
-      "magazine": 79,
-      "cu_promotie": 17,
-      "reducere_mediana": 30,
+      "magazine": 78,
+      "cu_promotie": 16,
+      "reducere_mediana": 32.5,
       "reducere_max": 55,
-      "esantion": 11
+      "esantion": 10
     },
     {
       "slug": "marketplace",
@@ -102,7 +102,7 @@
     {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
-      "magazine": 127,
+      "magazine": 126,
       "cu_promotie": 22,
       "reducere_mediana": 17,
       "reducere_max": 82,
@@ -156,7 +156,7 @@
     {
       "slug": "mancare-bauturi",
       "nume": "Mâncare & băuturi",
-      "magazine": 17,
+      "magazine": 16,
       "cu_promotie": 2,
       "reducere_mediana": null,
       "reducere_max": null,
