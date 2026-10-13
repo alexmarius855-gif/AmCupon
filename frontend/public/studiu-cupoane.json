@@ -1,31 +1,31 @@
 {
-  "generat": "2026-10-12",
-  "total_magazine": 959,
-  "cu_promotie": 128,
+  "generat": "2026-10-13",
+  "total_magazine": 957,
+  "cu_promotie": 131,
   "cu_cod_real": 39,
-  "doar_oferta": 89,
-  "procent_cu_promotie": 13.3,
+  "doar_oferta": 92,
+  "procent_cu_promotie": 13.7,
   "procent_cu_cod": 4.1,
   "reducere_mediana_generala": 25,
-  "magazine_cu_procent_declarat": 83,
+  "magazine_cu_procent_declarat": 85,
   "categorii": [
-    {
-      "slug": "cadouri-flori",
-      "nume": "Cadouri & flori",
-      "magazine": 13,
-      "cu_promotie": 3,
-      "reducere_mediana": 66,
-      "reducere_max": 75,
-      "esantion": 3
-    },
     {
       "slug": "carti-educatie",
       "nume": "Cărți & educație",
       "magazine": 30,
-      "cu_promotie": 9,
+      "cu_promotie": 11,
       "reducere_mediana": 50,
       "reducere_max": 90,
       "esantion": 5
+    },
+    {
+      "slug": "cadouri-flori",
+      "nume": "Cadouri & flori",
+      "magazine": 13,
+      "cu_promotie": 4,
+      "reducere_mediana": 40.5,
+      "reducere_max": 75,
+      "esantion": 4
     },
     {
       "slug": "beauty",
@@ -39,11 +39,11 @@
     {
       "slug": "fashion",
       "nume": "Fashion",
-      "magazine": 78,
-      "cu_promotie": 16,
-      "reducere_mediana": 32.5,
+      "magazine": 76,
+      "cu_promotie": 17,
+      "reducere_mediana": 35,
       "reducere_max": 55,
-      "esantion": 10
+      "esantion": 11
     },
     {
       "slug": "marketplace",
@@ -93,7 +93,7 @@
     {
       "slug": "sanatate",
       "nume": "Sănătate & farmacie",
-      "magazine": 48,
+      "magazine": 49,
       "cu_promotie": 13,
       "reducere_mediana": 20,
       "reducere_max": 50,
@@ -103,7 +103,7 @@
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
       "magazine": 126,
-      "cu_promotie": 22,
+      "cu_promotie": 21,
       "reducere_mediana": 17,
       "reducere_max": 82,
       "esantion": 13
@@ -138,7 +138,7 @@
     {
       "slug": "auto-moto",
       "nume": "Auto & moto",
-      "magazine": 26,
+      "magazine": 25,
       "cu_promotie": 2,
       "reducere_mediana": null,
       "reducere_max": null,
