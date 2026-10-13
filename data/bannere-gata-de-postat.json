@@ -1,5 +1,31 @@
 [
   {
+    "id": 273202,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273161/original/273161.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=05ffee155&aff_code=541547473&campaign_unique=4cc1a3cf7",
+    "landing_raw": "https://www.giftdesign.ro/info/halloween",
+    "width": 800,
+    "height": 800,
+    "merchant": "giftdesign.ro",
+    "merchant_slug": "giftdesign-ro-7d0c0462-cf14-432d-9385-4496c22dbcbd",
+    "name": "HALLOWEEN",
+    "category": "HALLOWEEN",
+    "b_type": "image"
+  },
+  {
+    "id": 273197,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273156/original/273156.png",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=bbc976ae9&aff_code=541547473&campaign_unique=9a6f02fef",
+    "landing_raw": "https://www.libris.ro/lp/transportgratuit",
+    "width": 1080,
+    "height": 1080,
+    "merchant": "libris.ro ",
+    "merchant_slug": "libris-ro",
+    "name": "Transport GRATUIT pentru ORICE colet, oriunde în țară ",
+    "category": "Transport GRATUIT pentru ORICE colet, oriunde în țară ",
+    "b_type": "image"
+  },
+  {
     "id": 273172,
     "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273131/original/273131.jpg",
     "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=fac84205e&aff_code=541547473&campaign_unique=cc08e2536",

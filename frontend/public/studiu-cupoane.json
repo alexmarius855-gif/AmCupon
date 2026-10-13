@@ -1,6 +1,6 @@
 {
   "generat": "2026-10-13",
-  "total_magazine": 957,
+  "total_magazine": 958,
   "cu_promotie": 131,
   "cu_cod_real": 39,
   "doar_oferta": 92,
@@ -129,7 +129,7 @@
     {
       "slug": "bijuterii",
       "nume": "Bijuterii & ceasuri",
-      "magazine": 20,
+      "magazine": 21,
       "cu_promotie": 1,
       "reducere_mediana": null,
       "reducere_max": null,

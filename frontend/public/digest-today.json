@@ -1,7 +1,7 @@
 {
-  "data": "2026-10-12",
-  "data_afisata": "12 octombrie 2026",
-  "titlu": "Radarul AmCupon — 12 octombrie 2026",
+  "data": "2026-10-13",
+  "data_afisata": "13 octombrie 2026",
+  "titlu": "Radarul AmCupon — 13 octombrie 2026",
   "intro": "Am trecut azi prin ofertele active si am pastrat doar ce merita. Iese in evidenta Wiskiiactive si Klaiyihair, dar mai jos ai selectia completa, verificata de noi. Toate codurile sunt testate; cele cu termen scurt le-am marcat.",
   "picks": [
     {
@@ -15,7 +15,7 @@
       "descriere": "WISKII CLUB WEEK Offer: 20% OFF SITEWIDE Code: WISKII20 Valid: October 11 at 10:00 AM – October 19 at 10:00 AM EDT",
       "cod": "WISKII20",
       "url": "https://amcupon.ro/cod-reducere/wiskiiactive.com",
-      "zile_ramase": 7,
+      "zile_ramase": 6,
       "take": "Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
@@ -29,8 +29,8 @@
       "descriere": "Here Are The Details Of The Klaiyi Hair Fall Getaway Vibes Promotion: 17% OFF Sitewide — Code: FALL17 $30 OFF Over $155 — Code: FALL30 $55 OFF Over $249 — Code: FALL60",
       "cod": "FALL60",
       "url": "https://amcupon.ro/cod-reducere/klaiyihair.com",
-      "zile_ramase": 4,
-      "take": "Grabeste-te: expira in 4 zile. Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 3,
+      "take": "Grabeste-te: expira in 3 zile. Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
       "scor": 100,
@@ -43,8 +43,22 @@
       "descriere": "Prime Day bei Redodo – Frühzugang mit bis zu 55% Rabatt, gefolgt von Top-Angeboten mit bis zu 60% Rabatt.",
       "cod": "PRIME10",
       "url": "https://amcupon.ro/cod-reducere/redodopower.de",
-      "zile_ramase": 3,
-      "take": "Grabeste-te: expira in 3 zile. Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 2,
+      "take": "Grabeste-te: expira in 2 zile. Oferta verificata — buna daca te incadrezi in categorie."
+    },
+    {
+      "scor": 75,
+      "magazin": "libris.ro",
+      "nume_afisat": "Libris",
+      "categorie": "Cărți & Educație",
+      "categorie_slug": "carti-educatie",
+      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9868/medium/9868.gif",
+      "titlu": "Transport GRATUIT pentru ORICE colet, oriunde în țară",
+      "descriere": "",
+      "cod": "",
+      "url": "https://amcupon.ro/cod-reducere/libris.ro",
+      "zile_ramase": 1,
+      "take": "Grabeste-te: expira in 1 zi. Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
       "scor": 75,
@@ -57,8 +71,8 @@
       "descriere": "",
       "cod": "",
       "url": "https://amcupon.ro/cod-reducere/noriel.ro",
-      "zile_ramase": 6,
-      "take": "Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 5,
+      "take": "Grabeste-te: expira in 5 zile. Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
       "scor": 75,
@@ -71,22 +85,8 @@
       "descriere": "",
       "cod": "",
       "url": "https://amcupon.ro/cod-reducere/vegis.ro",
-      "zile_ramase": 6,
-      "take": "Oferta verificata — buna daca te incadrezi in categorie."
-    },
-    {
-      "scor": 70,
-      "magazin": "dhgate.com",
-      "nume_afisat": "Dhgate",
-      "categorie": "Fashion",
-      "categorie_slug": "fashion",
-      "logo_url": "https://www.dhgate.com/favicon.ico",
-      "titlu": "DH2026OCTSAVE3",
-      "descriere": "Save $3 on orders over $29 using coupon DH2026OCTSAVE3 at DHgate.",
-      "cod": "DH2026OCTSAVE3",
-      "url": "https://amcupon.ro/cod-reducere/dhgate.com",
-      "zile_ramase": 19,
-      "take": "Bun de prins daca oricum voiai sa-ti reimprospatezi garderoba."
+      "zile_ramase": 5,
+      "take": "Grabeste-te: expira in 5 zile. Oferta verificata — buna daca te incadrezi in categorie."
     }
   ],
   "outro": "Revino maine la Radar — alegem din nou ce merita, ca sa nu cauti tu prin sute de oferte.",

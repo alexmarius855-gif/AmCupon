@@ -1,5 +1,5 @@
 # 💰 TOP MAGAZINE după POTENȚIAL DE CÂȘTIG
-> Generat automat 12.10.2026 16:52. Pe astea să le împingi (articole, pin-uri, postări).
+> Generat automat 13.10.2026 16:13. Pe astea să le împingi (articole, pin-uri, postări).
 
 **Scor = comision × popularitate × ofertă.** Comisionul mare singur înșală — astea-s banii REALI.
 
@@ -29,12 +29,12 @@
 | 22 | Nemira (nemira.ro) | 13% | 0 | 🏷️ ofertă | 18.2 |
 | 23 | Mooyius (mooyius.com) | 12% | 0 | 🏷️ ofertă | 16.8 |
 | 24 | E Potion (e-potion.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
-| 25 | Oleya (oleya.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
-| 26 | Geekbuying (geekbuying.com) | 8% | 0 | ✅ COD | 16.0 |
-| 27 | Boyamic (store.boyamic.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 28 | Ashimaryhair (ashimaryhair.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 29 | Hototools (hototools.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 30 | Comfier (comfier.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 25 | Zandra (zandra.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
+| 26 | Oleya (oleya.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
+| 27 | Geekbuying (geekbuying.com) | 8% | 0 | ✅ COD | 16.0 |
+| 28 | Boyamic (store.boyamic.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 29 | Ashimaryhair (ashimaryhair.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 30 | Hototools (hototools.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
 
 ## 🎯 Cum folosești raportul
 - **Top 10** = prioritate maximă pentru articole „cel mai bun X" + pin-uri Pinterest
