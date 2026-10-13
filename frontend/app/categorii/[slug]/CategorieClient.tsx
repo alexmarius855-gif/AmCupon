@@ -76,42 +76,42 @@ export default function CategorieClient({ magazine, numeCategorie, slug, produse
   const cuPromotiiFiltrate = cuPromotii.filter((m) => trecePrinFiltru(m, filtruActiv));
 
   return (
-    <div className="min-h-screen bg-[#06080b]">
+    <div className="min-h-screen bg-[var(--background)]">
       {/* BREADCRUMB */}
-      <nav aria-label="Breadcrumb" className="bg-[#06080b] border-b border-[#1f2329]">
-        <div className="max-w-7xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#9399a0] flex-wrap">
-          <Link href="/" className="hover:text-[#ddf93c] transition-colors flex items-center gap-1">
+      <nav aria-label="Breadcrumb" className="bg-[var(--background)] border-b border-[var(--border)]">
+        <div className="max-w-7xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[var(--text-muted)] flex-wrap">
+          <Link href="/" className="hover:text-[var(--accent-text)] transition-colors flex items-center gap-1">
             <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
               <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
             </svg>
             Acasă
           </Link>
-          <svg className="w-3 h-3 text-[#c9ced5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-3 h-3 text-[var(--text-soft)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
-          <Link href="/categorii" className="hover:text-[#ddf93c] transition-colors">Categorii</Link>
-          <svg className="w-3 h-3 text-[#c9ced5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <Link href="/categorii" className="hover:text-[var(--accent-text)] transition-colors">Categorii</Link>
+          <svg className="w-3 h-3 text-[var(--text-soft)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
-          <span className="text-[#c9ced5] font-medium">{numeCategorie}</span>
+          <span className="text-[var(--text-soft)] font-medium">{numeCategorie}</span>
         </div>
       </nav>
 
       {/* HERO */}
-      <div className="relative bg-[#06080b] border-b border-[#1f2329] overflow-hidden py-10 px-4">
+      <div className="relative bg-[var(--background)] border-b border-[var(--border)] overflow-hidden py-10 px-4">
         <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 70% 60% at 50% 0%, rgba(13,148,136,0.15) 0%, transparent 65%)" }} />
         <div className="relative max-w-7xl mx-auto">
-          <h1 className="text-2xl md:text-3xl font-black mb-1 text-[#ffffff]">
+          <h1 className="text-2xl md:text-3xl font-black mb-1 text-[var(--foreground)]">
             Coduri reducere <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #c3dd2c, #ddf93c)" }}>{numeCategorie}</span> {an}
           </h1>
-          <p className="text-[#c9ced5] text-sm">
+          <p className="text-[var(--text-soft)] text-sm">
             {cuPromotii.length} promoții active · {magazine.length} magazine · Actualizat zilnic
           </p>
           {descCateg && (
-            <p className="text-[#c9ced5] text-sm mt-2 max-w-2xl opacity-90">{descCateg}</p>
+            <p className="text-[var(--text-soft)] text-sm mt-2 max-w-2xl opacity-90">{descCateg}</p>
           )}
           {magazineMentionate.length > 0 && (
-            <p className="text-[#9399a0] text-sm mt-1.5 max-w-2xl">
+            <p className="text-[var(--text-muted)] text-sm mt-1.5 max-w-2xl">
               Magazine cu oferte active acum: {magazineMentionate.join(", ")}
               {restulCuPromotii > 0 ? " si inca " + restulCuPromotii : ""}.
             </p>
@@ -125,8 +125,8 @@ export default function CategorieClient({ magazine, numeCategorie, slug, produse
         {cuPromotii.length > 0 && (
           <section className="mb-10">
             <div className="flex items-center gap-3 mb-4">
-              <h2 className="text-xl font-black text-[#ffffff]">Promoții Active {an}</h2>
-              <span className="text-sm text-[#9399a0]">
+              <h2 className="text-xl font-black text-[var(--foreground)]">Promoții Active {an}</h2>
+              <span className="text-sm text-[var(--text-muted)]">
                 {filtruActiv === "toate"
                   ? cuPromotii.length + " oferte"
                   : cuPromotiiFiltrate.length + " din " + cuPromotii.length + " oferte"}
@@ -147,9 +147,9 @@ export default function CategorieClient({ magazine, numeCategorie, slug, produse
                 ))}
               </div>
             ) : (
-              <p className="text-sm text-[#9399a0] py-6">
+              <p className="text-sm text-[var(--text-muted)] py-6">
                 Niciun magazin din {numeCategorie} nu are acest tip de ofertă acum.{" "}
-                <button onClick={() => setFiltruActiv("toate")} className="text-[#ddf93c] font-bold hover:underline">
+                <button onClick={() => setFiltruActiv("toate")} className="text-[var(--accent-text)] font-bold hover:underline">
                   Vezi toate cele {cuPromotii.length}
                 </button>
               </p>
@@ -163,18 +163,18 @@ export default function CategorieClient({ magazine, numeCategorie, slug, produse
           <section className="mb-10">
             <div className="flex items-center justify-between gap-3 mb-5">
               <div className="flex items-center gap-3">
-                <h2 className="text-xl font-black text-[#ffffff]">Produse din {numeCategorie}</h2>
-                <span className="text-sm text-[#9399a0]">{produse.length} produse</span>
+                <h2 className="text-xl font-black text-[var(--foreground)]">Produse din {numeCategorie}</h2>
+                <span className="text-sm text-[var(--text-muted)]">{produse.length} produse</span>
               </div>
-              <Link href="/produse" className="hidden sm:inline text-xs font-bold text-[#ddf93c] hover:text-[#c3dd2c] transition-colors">Toate produsele →</Link>
+              <Link href="/produse" className="hidden sm:inline text-xs font-bold text-[var(--accent-text)] hover:text-[var(--accent-text)] transition-colors">Toate produsele →</Link>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-3">
               {produse.map((p, i) => {
                 const hasOld = !!(p.old_price && p.old_price > p.price);
                 return (
                   <a key={i} href={p.url} target="_blank" rel="sponsored noopener noreferrer"
-                    className="group bg-[#14181c] border border-[#1f2329] hover:border-[#ddf93c]/50 rounded-xl overflow-hidden flex flex-col transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-black/40">
-                    <div className="relative bg-[#14181c] aspect-square overflow-hidden">
+                    className="group bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--accent-text)]/50 rounded-xl overflow-hidden flex flex-col transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-black/40">
+                    <div className="relative bg-[var(--surface)] aspect-square overflow-hidden">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img src={p.image} alt={p.title} loading="lazy" className="w-full h-full object-contain p-3 group-hover:scale-105 transition-transform duration-300"
                         onError={(e) => { (e.currentTarget.closest("a") as HTMLElement).style.display = "none"; }} />
@@ -183,12 +183,12 @@ export default function CategorieClient({ magazine, numeCategorie, slug, produse
                       )}
                     </div>
                     <div className="p-3 flex flex-col flex-1">
-                      <p className="text-xs font-semibold text-[#c9ced5] line-clamp-2 flex-1 group-hover:text-[#ffffff] transition-colors leading-snug">{p.title}</p>
+                      <p className="text-xs font-semibold text-[var(--text-soft)] line-clamp-2 flex-1 group-hover:text-[var(--foreground)] transition-colors leading-snug">{p.title}</p>
                       <div className="mt-2 flex items-baseline gap-1.5">
-                        <span className="text-sm font-black text-[#c3dd2c]">{p.price.toLocaleString("ro-RO")} lei</span>
-                        {hasOld && <span className="text-[10px] text-[#9399a0] line-through">{p.old_price!.toLocaleString("ro-RO")}</span>}
+                        <span className="text-sm font-black text-[var(--accent-text)]">{p.price.toLocaleString("ro-RO")} lei</span>
+                        {hasOld && <span className="text-[10px] text-[var(--text-muted)] line-through">{p.old_price!.toLocaleString("ro-RO")}</span>}
                       </div>
-                      {p.merchant && <span className="text-[10px] text-[#9399a0] mt-1 truncate">{p.merchant}</span>}
+                      {p.merchant && <span className="text-[10px] text-[var(--text-muted)] mt-1 truncate">{p.merchant}</span>}
                     </div>
                   </a>
                 );
@@ -201,10 +201,10 @@ export default function CategorieClient({ magazine, numeCategorie, slug, produse
         {faraPromotii.length > 0 && (
           <section>
             <div className="flex items-center gap-3 mb-4">
-              <h2 className="text-lg font-black text-[#c9ced5]">Toate magazinele {numeCategorie}</h2>
-              <span className="text-sm text-[#9399a0]">{faraPromotii.length} magazine</span>
+              <h2 className="text-lg font-black text-[var(--text-soft)]">Toate magazinele {numeCategorie}</h2>
+              <span className="text-sm text-[var(--text-muted)]">{faraPromotii.length} magazine</span>
             </div>
-            <p className="text-xs text-[#9399a0] mb-4">
+            <p className="text-xs text-[var(--text-muted)] mb-4">
               Aceste magazine nu au promoții active momentan — butoanele duc direct la magazin prin linkul nostru afiliat.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
@@ -220,27 +220,27 @@ export default function CategorieClient({ magazine, numeCategorie, slug, produse
 
       <div className="max-w-7xl mx-auto px-4 pb-8">
         {/* SEO CONTENT */}
-        <section className="mt-14 bg-[#14181c] rounded-xl border border-[#1f2329] p-6 md:p-8">
-          <h2 className="text-lg font-black text-[#ffffff] mb-4">
+        <section className="mt-14 bg-[var(--surface)] rounded-xl border border-[var(--border)] p-6 md:p-8">
+          <h2 className="text-lg font-black text-[var(--foreground)] mb-4">
             Cum găsești cele mai bune reduceri {numeCategorie}?
           </h2>
-          <div className="grid md:grid-cols-3 gap-6 text-sm text-[#c9ced5]">
+          <div className="grid md:grid-cols-3 gap-6 text-sm text-[var(--text-soft)]">
             <div>
-              <h3 className="font-bold text-[#ffffff] mb-2">✅ Coduri actualizate zilnic</h3>
+              <h3 className="font-bold text-[var(--foreground)] mb-2">✅ Coduri actualizate zilnic</h3>
               <p>
                 Codurile de reducere {numeCategorie} de pe AmCupon.ro se actualizează automat; cele expirate dispar după data lor.
                 Afișăm zilele rămase până la expirare pentru fiecare cod în parte.
               </p>
             </div>
             <div>
-              <h3 className="font-bold text-[#ffffff] mb-2">🔔 Cum folosești un cod</h3>
+              <h3 className="font-bold text-[var(--foreground)] mb-2">🔔 Cum folosești un cod</h3>
               <p>
                 Copiază codul de pe această pagină, adaugă produsele în coș pe site-ul magazinului,
                 iar la checkout introdu codul în câmpul „Cod promoțional&quot;. Reducerea se aplică automat.
               </p>
             </div>
             <div>
-              <h3 className="font-bold text-[#ffffff] mb-2">💡 Sfat de economii</h3>
+              <h3 className="font-bold text-[var(--foreground)] mb-2">💡 Sfat de economii</h3>
               <p>
                 Compară ofertele de la mai multe magazine înainte de cumpărare. Unele magazine oferă
                 reduceri mai mari la prima comandă sau la comenzi peste o anumită valoare.
@@ -249,11 +249,11 @@ export default function CategorieClient({ magazine, numeCategorie, slug, produse
           </div>
         </section>
 
-        <div className="mt-8 pt-6 border-t border-[#1f2329] flex items-center justify-between flex-wrap gap-3">
-          <Link href="/categorii" className="text-sm text-[#9399a0] hover:text-[#ddf93c] transition-colors">
+        <div className="mt-8 pt-6 border-t border-[var(--border)] flex items-center justify-between flex-wrap gap-3">
+          <Link href="/categorii" className="text-sm text-[var(--text-muted)] hover:text-[var(--accent-text)] transition-colors">
             ← Toate categoriile
           </Link>
-          <Link href="/toate-magazinele" className="text-sm text-[#9399a0] hover:text-[#ddf93c] transition-colors">
+          <Link href="/toate-magazinele" className="text-sm text-[var(--text-muted)] hover:text-[var(--accent-text)] transition-colors">
             Toate magazinele →
           </Link>
         </div>

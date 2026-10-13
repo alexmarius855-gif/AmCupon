@@ -104,7 +104,7 @@ export default function CalculatoarePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
 
-      <nav className="text-xs text-[#9399a0] mb-5">
+      <nav className="text-xs text-[var(--text-muted)] mb-5">
         <Link href="/" className="hover:text-white transition-colors">
           Acasă
         </Link>
@@ -113,7 +113,7 @@ export default function CalculatoarePage() {
       </nav>
 
       <h1 className="text-3xl sm:text-4xl font-black mb-3 leading-tight">Unelte gratuite</h1>
-      <p className="text-[#9399a0] mb-8 max-w-2xl">
+      <p className="text-[var(--text-muted)] mb-8 max-w-2xl">
         Lucruri mici care îți sunt utile înainte să apeși pe cumpără. Fără cont, fără instalare,
         totul rulează în browserul tău.
       </p>
@@ -123,7 +123,7 @@ export default function CalculatoarePage() {
           <Link
             key={u.href}
             href={u.href}
-            className="bg-[#14181c] rounded-xl border border-[#1f2329] p-5 hover:border-[#ddf93c] transition-colors group"
+            className="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5 hover:border-[var(--accent-text)] transition-colors group"
           >
             <div className="flex items-start justify-between mb-3">
               <span className="text-3xl">{u.emoji}</span>
@@ -133,18 +133,18 @@ export default function CalculatoarePage() {
                 </span>
               )}
             </div>
-            <h2 className="font-black text-lg mb-1.5 group-hover:text-[#ddf93c] transition-colors">
+            <h2 className="font-black text-lg mb-1.5 group-hover:text-[var(--accent-text)] transition-colors">
               {u.titlu}
             </h2>
-            <p className="text-sm text-[#9399a0] leading-relaxed">{u.desc}</p>
+            <p className="text-sm text-[var(--text-muted)] leading-relaxed">{u.desc}</p>
           </Link>
         ))}
       </div>
 
       {cuCod > 0 && (
-        <section className="mt-10 bg-[#14181c] rounded-xl border border-[#1f2329] p-6">
+        <section className="mt-10 bg-[var(--surface)] rounded-xl border border-[var(--border)] p-6">
           <h2 className="text-xl font-black mb-2">Și ce urmează după calcul</h2>
-          <p className="text-[#9399a0] mb-4">
+          <p className="text-[var(--text-muted)] mb-4">
             Urmărim {cuPromotie} magazine cu promoții active, dintre care {cuCod} au și un cod de
             reducere activ.
           </p>
@@ -157,7 +157,7 @@ export default function CalculatoarePage() {
             </Link>
             <Link
               href="/oferte-azi"
-              className="bg-[#1f2329] text-white font-bold px-5 py-2.5 rounded-lg hover:bg-[#2a2f36] transition-colors"
+              className="bg-[var(--surface-alt)] text-white font-bold px-5 py-2.5 rounded-lg hover:bg-[var(--surface-high)] transition-colors"
             >
               Ofertele de azi
             </Link>

@@ -160,24 +160,24 @@ export default function SearchModal() {
       aria-label="Cauta magazin"
     >
       <div
-        className="w-full max-w-xl bg-[#14181c] border border-[#2a2f36] rounded-xl overflow-hidden shadow-2xl shadow-black/60"
+        className="w-full max-w-xl bg-[var(--surface)] border border-[var(--border-strong)] rounded-xl overflow-hidden shadow-2xl shadow-black/60"
         onClick={(e) => e.stopPropagation()}
       >
         {/* camp de cautare */}
-        <div className="flex items-center gap-3 px-4 py-3.5 border-b border-[#1f2329]">
-          <Search className="w-4.5 h-4.5 text-[#9399a0] shrink-0" strokeWidth={2} />
+        <div className="flex items-center gap-3 px-4 py-3.5 border-b border-[var(--border)]">
+          <Search className="w-4.5 h-4.5 text-[var(--text-muted)] shrink-0" strokeWidth={2} />
           <input
             ref={inputRef}
             value={q}
             onChange={(e) => { setQ(e.target.value); setActiv(0); }}
             onKeyDown={onKeyDown}
             placeholder="Cauta un magazin — eMAG, Answear, Dr. Max..."
-            className="flex-1 bg-transparent text-[#ffffff] placeholder:text-[#6b7178] text-[15px] outline-none"
+            className="flex-1 bg-transparent text-[var(--foreground)] placeholder:text-[var(--text-muted)] text-[15px] outline-none"
           />
           <button
             onClick={() => setDeschis(false)}
             aria-label="Inchide"
-            className="text-[#9399a0] hover:text-[#ffffff] transition-colors"
+            className="text-[var(--text-muted)] hover:text-[var(--foreground)] transition-colors"
           >
             <X className="w-4.5 h-4.5" strokeWidth={2} />
           </button>
@@ -186,21 +186,21 @@ export default function SearchModal() {
         {/* rezultate */}
         <div className="max-h-[52vh] overflow-y-auto">
           {incarca && (
-            <p className="px-4 py-6 text-sm text-[#9399a0]">Se incarca magazinele...</p>
+            <p className="px-4 py-6 text-sm text-[var(--text-muted)]">Se incarca magazinele...</p>
           )}
 
           {!incarca && !q && (
-            <p className="px-4 py-6 text-sm text-[#9399a0]">
+            <p className="px-4 py-6 text-sm text-[var(--text-muted)]">
               Scrie numele unui magazin. Navighezi cu sagetile, deschizi cu Enter.
             </p>
           )}
 
           {!incarca && q && rezultate.length === 0 && (
             <div className="px-4 py-6">
-              <p className="text-sm text-[#c9ced5] mb-3">
-                Niciun magazin nu se potriveste cu <strong className="text-[#ffffff]">{q}</strong>.
+              <p className="text-sm text-[var(--text-soft)] mb-3">
+                Niciun magazin nu se potriveste cu <strong className="text-[var(--foreground)]">{q}</strong>.
               </p>
-              <a href="/toate-magazinele" className="text-sm font-bold text-[#ddf93c] hover:text-[#c3dd2c]">
+              <a href="/toate-magazinele" className="text-sm font-bold text-[var(--accent-text)] hover:text-[var(--accent-text)]">
                 Vezi toate cele {date?.length ?? 0} de magazine &rarr;
               </a>
             </div>
@@ -214,8 +214,8 @@ export default function SearchModal() {
                 key={m.magazin}
                 href={`/cod-reducere/${m.magazin}`}
                 onMouseEnter={() => setActiv(i)}
-                className={`flex items-center gap-3 px-4 py-3 border-b border-[#1f2329] last:border-0 transition-colors ${
-                  i === activ ? "bg-[#1f2329]" : "hover:bg-[#1f2329]/60"
+                className={`flex items-center gap-3 px-4 py-3 border-b border-[var(--border)] last:border-0 transition-colors ${
+                  i === activ ? "bg-[var(--surface-alt)]" : "hover:bg-[var(--surface-alt)]/60"
                 }`}
               >
                 <span className="relative w-9 h-9 rounded-full overflow-hidden bg-[#ffffff] shrink-0 flex items-center justify-center ring-1 ring-[#2a2f36]">
@@ -229,8 +229,8 @@ export default function SearchModal() {
                 </span>
 
                 <span className="min-w-0 flex-1">
-                  <span className="block text-[#ffffff] font-semibold text-sm truncate">{m.magazin}</span>
-                  <span className="block text-xs text-[#9399a0]">
+                  <span className="block text-[var(--foreground)] font-semibold text-sm truncate">{m.magazin}</span>
+                  <span className="block text-xs text-[var(--text-muted)]">
                     {nrCod > 0
                       ? `${nrCod} ${nrCod === 1 ? "cod activ" : "coduri active"}`
                       : nrOferte > 0
@@ -247,14 +247,14 @@ export default function SearchModal() {
                   </span>
                 )}
                 {i === activ && (
-                  <CornerDownLeft className="w-3.5 h-3.5 text-[#6b7178] shrink-0" strokeWidth={2} />
+                  <CornerDownLeft className="w-3.5 h-3.5 text-[var(--text-muted)] shrink-0" strokeWidth={2} />
                 )}
               </a>
             );
           })}
         </div>
 
-        <div className="flex items-center justify-between px-4 py-2.5 bg-[#0f1216] border-t border-[#1f2329] text-[11px] text-[#6b7178]">
+        <div className="flex items-center justify-between px-4 py-2.5 bg-[#0f1216] border-t border-[var(--border)] text-[11px] text-[var(--text-muted)]">
           <span>Navighezi cu &uarr; &darr; · deschizi cu Enter</span>
           <span className="font-mono">Esc</span>
         </div>

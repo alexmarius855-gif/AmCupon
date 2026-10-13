@@ -50,16 +50,16 @@ export default function BijuteriiPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-[#06080b]">
+      <div className="min-h-screen bg-[var(--background)]">
 
         {/* Header */}
 
         {/* Breadcrumb */}
-        <nav className="bg-[#06080b] border-b border-[#1f2329]">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#9399a0]">
-            <Link href="/" className="hover:text-[#ddf93c]">Acasa</Link>
+        <nav className="bg-[var(--background)] border-b border-[var(--border)]">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[var(--text-muted)]">
+            <Link href="/" className="hover:text-[var(--accent-text)]">Acasa</Link>
             <span className="mx-1">/</span>
-            <span className="text-[#c9ced5] font-medium">Bijuterii & Accesorii</span>
+            <span className="text-[var(--text-soft)] font-medium">Bijuterii & Accesorii</span>
           </div>
         </nav>
 
@@ -73,34 +73,34 @@ export default function BijuteriiPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Inele","Coliere","Bratari","Verighete","Cercei","Aur","Argint","Cristale"].map(c => (
-                <span key={c} className="bg-[#1f2329] text-[#ffffff] text-sm font-semibold px-4 py-1.5 rounded-full border border-[#2a2f36]">{c}</span>
+                <span key={c} className="bg-[var(--surface-alt)] text-[var(--foreground)] text-sm font-semibold px-4 py-1.5 rounded-full border border-[var(--border-strong)]">{c}</span>
               ))}
             </div>
           </div>
         </section>
 
         {/* Stats */}
-        <div className="bg-[#14181c] border-[#1f2329] py-3 px-4">
+        <div className="bg-[var(--surface)] border-[var(--border)] py-3 px-4">
           <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-6 text-sm">
-            <span className="text-[#c3dd2c] font-semibold">
-              <span className="font-black text-[#ddf93c]">{magazine.length}</span> magazine bijuterii
+            <span className="text-[var(--accent-text)] font-semibold">
+              <span className="font-black text-[var(--accent-text)]">{magazine.length}</span> magazine bijuterii
             </span>
-            <span className="text-[#c3dd2c] font-semibold">
-              <span className="font-black text-[#ddf93c]">{cuPromo.length}</span> cu promotii active
+            <span className="text-[var(--accent-text)] font-semibold">
+              <span className="font-black text-[var(--accent-text)]">{cuPromo.length}</span> cu promotii active
             </span>
-            <span className="text-[#c3dd2c] font-semibold">&#10003; Actualizat zilnic</span>
+            <span className="text-[var(--accent-text)] font-semibold">&#10003; Actualizat zilnic</span>
           </div>
         </div>
 
         {/* Avantaje */}
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[#ffffff] mb-6 text-center">Ce gasesti la magazinele de bijuterii online</h2>
+          <h2 className="text-xl font-black text-[var(--foreground)] mb-6 text-center">Ce gasesti la magazinele de bijuterii online</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {AVANTAJE.map(a => (
-              <div key={a.titlu} className="bg-[#14181c] border border-[#1f2329] rounded-xl p-5">
+              <div key={a.titlu} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
                 <div className="text-3xl mb-2">{a.icon}</div>
-                <h3 className="font-bold text-[#ffffff] text-sm mb-1">{a.titlu}</h3>
-                <p className="text-xs text-[#c9ced5]">{a.desc}</p>
+                <h3 className="font-bold text-[var(--foreground)] text-sm mb-1">{a.titlu}</h3>
+                <p className="text-xs text-[var(--text-soft)]">{a.desc}</p>
               </div>
             ))}
           </div>
@@ -108,7 +108,7 @@ export default function BijuteriiPage() {
 
         {/* Magazine */}
         <section className="max-w-6xl mx-auto px-4 pb-10">
-          <h2 className="text-xl font-black text-[#ffffff] mb-5">Magazine bijuterii partenere</h2>
+          <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Magazine bijuterii partenere</h2>
           {magazine.length > 0 ? (
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
               {magazine.map((m) => (
@@ -116,11 +116,11 @@ export default function BijuteriiPage() {
             ))}
             </div>
           ) : (
-            <div className="bg-[#14181c] border border-[#1f2329] rounded-xl p-10 text-center">
+            <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-10 text-center">
               <p className="text-4xl mb-3">💍</p>
-              <p className="font-bold text-[#c9ced5] mb-2">Magazine actualizate zilnic</p>
-              <p className="text-[#9399a0] text-sm mb-4">Revino curand pentru promotii la bijuterii.</p>
-              <Link href="/toate-magazinele" className="text-[#ddf93c] font-bold hover:text-[#c3dd2c] text-sm">Toate magazinele &rarr;</Link>
+              <p className="font-bold text-[var(--text-soft)] mb-2">Magazine actualizate zilnic</p>
+              <p className="text-[var(--text-muted)] text-sm mb-4">Revino curand pentru promotii la bijuterii.</p>
+              <Link href="/toate-magazinele" className="text-[var(--accent-text)] font-bold hover:text-[var(--accent-text)] text-sm">Toate magazinele &rarr;</Link>
             </div>
           )}
         </section>
@@ -137,16 +137,16 @@ export default function BijuteriiPage() {
         />
 
         {/* Editorial */}
-        <section className="bg-[#14181c] border-t border-[#1f2329] py-10 px-4">
+        <section className="bg-[var(--surface)] border-t border-[var(--border)] py-10 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-[#ffffff] mb-5">Ghid: Bijuterii online — cum alegi si cum economisesti</h2>
-            <div className="space-y-4 text-sm text-[#c9ced5] leading-relaxed">
+            <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Ghid: Bijuterii online — cum alegi si cum economisesti</h2>
+            <div className="space-y-4 text-sm text-[var(--text-soft)] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Magazine romanesti de bijuterii online</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Magazine romanesti de bijuterii online</h3>
                 <p>Chic Bijoux, Novvu, Bijubox si Lu.ro sunt printre magazinele romanesti partenere AmCupon.ro pentru bijuterii — fiecare cu propriul stil si gama de preturi, de la argint accesibil la piese premium din aur. Verifica fiecare magazin pe pagina lui dedicata pentru codurile active.</p>
               </div>
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Cum verifici calitatea bijuteriilor online</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Cum verifici calitatea bijuteriilor online</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
                   <li><strong>Marca poansonare</strong> — aur 585 (14K), 750 (18K) sau argint 925 obligatoriu stampilate</li>
                   <li><strong>Certificat de autenticitate</strong> — pentru diamante si pietre pretioase, cere certificat de la un laborator recunoscut (de exemplu GIA)</li>
@@ -155,7 +155,7 @@ export default function BijuteriiPage() {
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Cand sa cumperi bijuterii</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Cand sa cumperi bijuterii</h3>
                 <p>Reducerile apar de obicei de Valentine&apos;s Day (februarie), de Craciun si la lichidarile de stoc (ianuarie, iulie). Cand vine o colectie noua, cea veche intra des la reducere.</p>
               </div>
             </div>
@@ -164,7 +164,7 @@ export default function BijuteriiPage() {
 
         {/* Internal links */}
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[#c9ced5] mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Exploreaza si alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/frumusete",  label: "💄 Frumusete & Beauty" },
@@ -175,18 +175,18 @@ export default function BijuteriiPage() {
               { href: "/categorii",  label: "📂 Toate Categoriile" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-[#14181c] hover:bg-[#1f2329] hover:text-[#c3dd2c] text-[#c9ced5] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#1f2329] hover:border-[#c9ced5]">
+                className="bg-[var(--surface)] hover:bg-[var(--surface-alt)] hover:text-[var(--accent-text)] text-[var(--text-soft)] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[var(--border)] hover:border-[#c9ced5]">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-[#1f2329] py-6 text-center text-xs text-[#9399a0] mt-4">
+        <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)] mt-4">
           &copy; {an} AmCupon.ro &middot;{" "}
-          <Link href="/fashion" className="hover:text-[#ddf93c]">Fashion</Link>{" · "}
-          <Link href="/frumusete" className="hover:text-[#ddf93c]">Frumusete</Link>{" · "}
-          <Link href="/categorii" className="hover:text-[#ddf93c]">Categorii</Link>
+          <Link href="/fashion" className="hover:text-[var(--accent-text)]">Fashion</Link>{" · "}
+          <Link href="/frumusete" className="hover:text-[var(--accent-text)]">Frumusete</Link>{" · "}
+          <Link href="/categorii" className="hover:text-[var(--accent-text)]">Categorii</Link>
         </footer>
       </div>
     </>

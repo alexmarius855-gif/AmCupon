@@ -120,7 +120,7 @@ export default function GraficCategorii({ categorii }: { categorii: CategorieGra
         })}
       </svg>
 
-      <figcaption className="text-xs text-[#9399a0] leading-relaxed mt-3">
+      <figcaption className="text-xs text-[var(--text-muted)] leading-relaxed mt-3">
         Reducerea mediana declarata, pe categorie, din {date.length} categorii care trec pragul
         de esantion. Restul sunt listate mai jos ca date insuficiente &mdash; le aratam ca sa se
         vada ce NU stim, nu doar ce stim.

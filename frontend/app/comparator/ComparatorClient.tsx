@@ -44,7 +44,7 @@ function maxDiscount(promotii: Promotie[]): number {
 
 function ScorBar({ value, max = 100, color = "bg-[#ddf93c]" }: { value: number; max?: number; color?: string }) {
   return (
-    <div className="h-2 bg-[#1f2329] rounded-full overflow-hidden">
+    <div className="h-2 bg-[var(--surface-alt)] rounded-full overflow-hidden">
       <div className={`h-full ${color} rounded-full transition-all duration-700`} style={{ width: `${Math.min(100, (value / max) * 100)}%` }} />
     </div>
   );
@@ -68,20 +68,20 @@ function MagazinCard({ m, onRemove, onSwap, position }: { m: Magazin; onRemove: 
   const gradients = ["from-[#1f2329] to-[#14181c]", "from-[#14181c] to-[#1f2329]"];
 
   return (
-    <div className="bg-[#14181c] rounded-xl border border-[#1f2329] overflow-hidden shadow-sm">
+    <div className="bg-[var(--surface)] rounded-xl border border-[var(--border)] overflow-hidden shadow-sm">
       {/* Header gradient */}
-      <div className={`bg-gradient-to-r ${gradients[position % 2]} p-5 text-[#ffffff]`}>
+      <div className={`bg-gradient-to-r ${gradients[position % 2]} p-5 text-[var(--foreground)]`}>
         <div className="flex items-center justify-between mb-4">
-          <span className="text-xs font-bold bg-[#1f2329] px-2.5 py-1 rounded-full">Magazin #{position + 1}</span>
+          <span className="text-xs font-bold bg-[var(--surface-alt)] px-2.5 py-1 rounded-full">Magazin #{position + 1}</span>
           <div className="flex gap-2">
             {onSwap && (
-              <button onClick={onSwap} title="Schimbă magazin" className="w-7 h-7 bg-[#1f2329] hover:bg-[#2a2f36] rounded-lg flex items-center justify-center transition-colors">
+              <button onClick={onSwap} title="Schimbă magazin" className="w-7 h-7 bg-[var(--surface-alt)] hover:bg-[var(--surface-high)] rounded-lg flex items-center justify-center transition-colors">
                 <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
                 </svg>
               </button>
             )}
-            <button onClick={onRemove} title="Elimină" className="w-7 h-7 bg-[#1f2329] hover:bg-[#2a2f36] rounded-lg flex items-center justify-center transition-colors">
+            <button onClick={onRemove} title="Elimină" className="w-7 h-7 bg-[var(--surface-alt)] hover:bg-[var(--surface-high)] rounded-lg flex items-center justify-center transition-colors">
               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12"/>
               </svg>
@@ -90,10 +90,10 @@ function MagazinCard({ m, onRemove, onSwap, position }: { m: Magazin; onRemove: 
         </div>
         {/* Logo + Nume */}
         <div className="flex items-center gap-3">
-          <div className="w-14 h-14 bg-[#14181c] rounded-xl flex items-center justify-center shrink-0 overflow-hidden">
+          <div className="w-14 h-14 bg-[var(--surface)] rounded-xl flex items-center justify-center shrink-0 overflow-hidden">
             {m.logo_url && imgOk
               ? <img src={m.logo_url} alt={numeAfisat(m.magazin)} className="w-10 h-10 object-contain" onError={() => setImgOk(false)} />
-              : <span className="text-xl font-black text-[#ddf93c]">{numeAfisat(m.magazin)[0]}</span>
+              : <span className="text-xl font-black text-[var(--accent-text)]">{numeAfisat(m.magazin)[0]}</span>
             }
           </div>
           <div>
@@ -108,8 +108,8 @@ function MagazinCard({ m, onRemove, onSwap, position }: { m: Magazin; onRemove: 
         {/* Oferte */}
         <div>
           <div className="flex justify-between items-center mb-1.5">
-            <span className="text-xs font-semibold text-[#9399a0] uppercase tracking-wide">Oferte active</span>
-            <span className={`text-sm font-black ${nrOferte > 0 ? "text-emerald-600" : "text-[#c9ced5]"}`}>{nrOferte}</span>
+            <span className="text-xs font-semibold text-[var(--text-muted)] uppercase tracking-wide">Oferte active</span>
+            <span className={`text-sm font-black ${nrOferte > 0 ? "text-emerald-600" : "text-[var(--text-soft)]"}`}>{nrOferte}</span>
           </div>
           <ScorBar value={nrOferte} max={20} color="bg-emerald-500" />
         </div>
@@ -117,8 +117,8 @@ function MagazinCard({ m, onRemove, onSwap, position }: { m: Magazin; onRemove: 
         {/* Coduri cupon */}
         <div>
           <div className="flex justify-between items-center mb-1.5">
-            <span className="text-xs font-semibold text-[#9399a0] uppercase tracking-wide">Coduri cupon</span>
-            <span className={`text-sm font-black ${nrCoduri > 0 ? "text-[#ddf93c]" : "text-[#c9ced5]"}`}>{nrCoduri}</span>
+            <span className="text-xs font-semibold text-[var(--text-muted)] uppercase tracking-wide">Coduri cupon</span>
+            <span className={`text-sm font-black ${nrCoduri > 0 ? "text-[var(--accent-text)]" : "text-[var(--text-soft)]"}`}>{nrCoduri}</span>
           </div>
           <ScorBar value={nrCoduri} max={10} color="bg-[#ddf93c]" />
         </div>
@@ -126,8 +126,8 @@ function MagazinCard({ m, onRemove, onSwap, position }: { m: Magazin; onRemove: 
         {/* Reducere max */}
         <div>
           <div className="flex justify-between items-center mb-1.5">
-            <span className="text-xs font-semibold text-[#9399a0] uppercase tracking-wide">Reducere maximă</span>
-            <span className={`text-sm font-black ${discount > 0 ? "text-[#c3dd2c]" : "text-[#c9ced5]"}`}>{discount > 0 ? `${discount}%` : "—"}</span>
+            <span className="text-xs font-semibold text-[var(--text-muted)] uppercase tracking-wide">Reducere maximă</span>
+            <span className={`text-sm font-black ${discount > 0 ? "text-[var(--accent-text)]" : "text-[var(--text-soft)]"}`}>{discount > 0 ? `${discount}%` : "—"}</span>
           </div>
           <ScorBar value={discount} max={80} color="bg-[#ddf93c]" />
         </div>
@@ -149,28 +149,28 @@ function MagazinCard({ m, onRemove, onSwap, position }: { m: Magazin; onRemove: 
             oferta lui acum. Fara „%" — e un scor 0-100, nu un procent din ceva. */}
         <div>
           <div className="flex justify-between items-center mb-1.5">
-            <span className="text-xs font-semibold text-[#9399a0] uppercase tracking-wide">Deal Score</span>
-            <span className="text-sm font-black text-[#c9ced5]">{dealScore}</span>
+            <span className="text-xs font-semibold text-[var(--text-muted)] uppercase tracking-wide">Deal Score</span>
+            <span className="text-sm font-black text-[var(--text-soft)]">{dealScore}</span>
           </div>
           <ScorBar value={dealScore} max={100} color={dealScore >= 80 ? "bg-emerald-500" : dealScore >= 60 ? "bg-[#ddf93c]" : "bg-red-500"} />
         </div>
 
         {/* Badges */}
-        <div className="flex flex-wrap gap-1.5 pt-2 border-t border-[#1f2329]">
-          {m.exclusiv    && <span className="text-[10px] font-bold bg-[#ddf93c]/15 text-[#c3dd2c] px-2 py-0.5 rounded-full">Exclusiv</span>}
-          {m.cod_cupon   && <span className="text-[10px] font-bold bg-[#ddf93c]/15 text-[#c3dd2c] px-2 py-0.5 rounded-full">Cod cupon</span>}
+        <div className="flex flex-wrap gap-1.5 pt-2 border-t border-[var(--border)]">
+          {m.exclusiv    && <span className="text-[10px] font-bold bg-[#ddf93c]/15 text-[var(--accent-text)] px-2 py-0.5 rounded-full">Exclusiv</span>}
+          {m.cod_cupon   && <span className="text-[10px] font-bold bg-[#ddf93c]/15 text-[var(--accent-text)] px-2 py-0.5 rounded-full">Cod cupon</span>}
           {m.are_promotie&& <span className="text-[10px] font-bold bg-emerald-500/15 text-emerald-300 px-2 py-0.5 rounded-full">Ofertă activă</span>}
           {m.trend > 2   && <span className="text-[10px] font-bold bg-red-500/15 text-red-300 px-2 py-0.5 rounded-full">🔥 Trending</span>}
         </div>
 
         {/* Top promotii */}
         {m.promotii.length > 0 && (
-          <div className="pt-2 border-t border-[#1f2329]">
-            <p className="text-xs font-bold text-[#9399a0] uppercase tracking-wide mb-2">Top oferte</p>
+          <div className="pt-2 border-t border-[var(--border)]">
+            <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-wide mb-2">Top oferte</p>
             <ul className="space-y-1.5">
               {m.promotii.slice(0, 3).map((p, i) => (
-                <li key={i} className="flex items-start gap-2 text-xs text-[#c9ced5]">
-                  <span className="text-[#ddf93c] shrink-0 mt-0.5">•</span>
+                <li key={i} className="flex items-start gap-2 text-xs text-[var(--text-soft)]">
+                  <span className="text-[var(--accent-text)] shrink-0 mt-0.5">•</span>
                   <span className="line-clamp-2">{titluPromotie(p, numeAfisat(m.magazin))}</span>
                 </li>
               ))}
@@ -208,27 +208,27 @@ function SearchMagazin({ onSelect, exclude }: { onSelect: (slug: string) => void
   return (
     <div className="relative">
       <div className="relative">
-        <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#c9ced5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--text-soft)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
         </svg>
         <input type="text" value={query} onChange={e => setQuery(e.target.value)}
           onFocus={() => results.length > 0 && setShow(true)}
           onBlur={() => setTimeout(() => setShow(false), 150)}
           placeholder="Cauta magazin (ex: eMAG, Notino...)"
-          className="w-full bg-[#06080b] border border-[#1f2329] focus:border-[#ddf93c] focus:ring-2 focus:ring-[#ddf93c]/20 rounded-xl pl-9 pr-4 py-3 text-sm focus:outline-none transition-all" />
+          className="w-full bg-[var(--background)] border border-[var(--border)] focus:border-[var(--accent-text)] focus:ring-2 focus:ring-[#ddf93c]/20 rounded-xl pl-9 pr-4 py-3 text-sm focus:outline-none transition-all" />
       </div>
       {show && results.length > 0 && (
-        <div className="absolute top-full mt-1 left-0 right-0 bg-[#14181c] border border-[#1f2329] rounded-xl shadow-xl py-1 z-50">
+        <div className="absolute top-full mt-1 left-0 right-0 bg-[var(--surface)] border border-[var(--border)] rounded-xl shadow-xl py-1 z-50">
           {results.map(m => (
             <button key={m.magazin} onMouseDown={() => { onSelect(m.magazin); setQuery(""); setShow(false); }}
-              className="w-full flex items-center gap-3 px-3 py-2.5 hover:bg-[#1f2329] text-left transition-colors">
+              className="w-full flex items-center gap-3 px-3 py-2.5 hover:bg-[var(--surface-alt)] text-left transition-colors">
               {m.logo_url
                 ? <img src={m.logo_url} alt={numeAfisat(m.magazin)} className="w-7 h-7 object-contain" />
-                : <div className="w-7 h-7 bg-[#2a2f10] rounded-lg flex items-center justify-center text-xs font-black text-[#ddf93c]">{numeAfisat(m.magazin)[0]}</div>
+                : <div className="w-7 h-7 bg-[#2a2f10] rounded-lg flex items-center justify-center text-xs font-black text-[var(--accent-text)]">{numeAfisat(m.magazin)[0]}</div>
               }
               <div className="flex-1 min-w-0">
-                <p className="text-sm font-bold text-[#c9ced5] truncate">{numeAfisat(m.magazin)}</p>
-                <p className="text-xs text-[#c9ced5] truncate">{m.categorie}</p>
+                <p className="text-sm font-bold text-[var(--text-soft)] truncate">{numeAfisat(m.magazin)}</p>
+                <p className="text-xs text-[var(--text-soft)] truncate">{m.categorie}</p>
               </div>
               {m.are_promotie && <span className="text-[10px] font-bold bg-emerald-500/15 text-emerald-300 px-1.5 py-0.5 rounded-full shrink-0">Activ</span>}
             </button>
@@ -320,13 +320,13 @@ function ComparatorInner() {
 
           {/* Slot gol */}
           {selected.length < 2 && (
-            <div className="bg-[#14181c] rounded-xl border-2 border-dashed border-[#1f2329] p-6 flex flex-col items-center justify-center gap-4 min-h-[200px]">
-              <div className="w-12 h-12 rounded-full bg-[#1f2329] flex items-center justify-center">
-                <svg className="w-6 h-6 text-[#c9ced5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-[var(--surface)] rounded-xl border-2 border-dashed border-[var(--border)] p-6 flex flex-col items-center justify-center gap-4 min-h-[200px]">
+              <div className="w-12 h-12 rounded-full bg-[var(--surface-alt)] flex items-center justify-center">
+                <svg className="w-6 h-6 text-[var(--text-soft)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4"/>
                 </svg>
               </div>
-              <p className="text-[#c9ced5] text-sm font-semibold text-center">Adaugă al {selected.length + 1}-lea magazin pentru comparație</p>
+              <p className="text-[var(--text-soft)] text-sm font-semibold text-center">Adaugă al {selected.length + 1}-lea magazin pentru comparație</p>
               <SearchMagazin onSelect={addMagazin} exclude={selected} />
             </div>
           )}
@@ -334,12 +334,12 @@ function ComparatorInner() {
 
         {/* Adauga alt magazin */}
         {selected.length === 2 && (
-          <div className="bg-[#14181c] rounded-xl border border-[#1f2329] p-4 mb-6">
-            <p className="text-sm font-bold text-[#c9ced5] mb-3">Schimbă un magazin:</p>
+          <div className="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-4 mb-6">
+            <p className="text-sm font-bold text-[var(--text-soft)] mb-3">Schimbă un magazin:</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {magazine.map((m, i) => (
                 <div key={m.magazin}>
-                  <p className="text-xs text-[#c9ced5] mb-1">Înlocuiește Magazin #{i + 1} ({numeAfisat(m.magazin)}):</p>
+                  <p className="text-xs text-[var(--text-soft)] mb-1">Înlocuiește Magazin #{i + 1} ({numeAfisat(m.magazin)}):</p>
                   <SearchMagazin onSelect={(slug) => {
                     const next = [...selected];
                     next[i] = slug;
@@ -354,11 +354,11 @@ function ComparatorInner() {
         {/* Sugestii rapide */}
         {selected.length < 2 && all.length > 0 && (
           <div>
-            <p className="text-xs font-bold text-[#c9ced5] uppercase tracking-widest mb-3">Sugestii populare</p>
+            <p className="text-xs font-bold text-[var(--text-soft)] uppercase tracking-widest mb-3">Sugestii populare</p>
             <div className="flex flex-wrap gap-2">
               {all.filter(m => m.are_promotie && !selected.includes(m.magazin)).slice(0, 10).map(m => (
                 <button key={m.magazin} onClick={() => addMagazin(m.magazin)}
-                  className="flex items-center gap-1.5 px-3 py-1.5 bg-[#14181c] border border-[#1f2329] hover:border-[#ddf93c]/40 hover:bg-[#1f2329] rounded-full text-sm font-semibold text-[#c9ced5] hover:text-[#c3dd2c] transition-all">
+                  className="flex items-center gap-1.5 px-3 py-1.5 bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--accent-text)]/40 hover:bg-[var(--surface-alt)] rounded-full text-sm font-semibold text-[var(--text-soft)] hover:text-[var(--accent-text)] transition-all">
                   {m.logo_url && <img src={m.logo_url} alt="" className="w-4 h-4 object-contain" />}
                   {numeAfisat(m.magazin)}
                 </button>
@@ -373,7 +373,7 @@ function ComparatorInner() {
 
 export default function ComparatorClient() {
   return (
-    <div className="min-h-screen bg-[#06080b]">
+    <div className="min-h-screen bg-[var(--background)]">
       {/*
         Hero-ul sta IN AFARA lui <Suspense>, si asta conteaza.
 
@@ -388,18 +388,18 @@ export default function ComparatorClient() {
         in jurul paginii — in exemplul lor, <nav> ramane afara. Titlul si descrierea nu
         depind de query string, deci nu au ce cauta dupa bariera.
       */}
-      <div className="bg-[#14181c] text-[#ffffff] py-10 px-4">
+      <div className="bg-[var(--surface)] text-[var(--foreground)] py-10 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-xs font-bold text-[#ddf93c] uppercase tracking-widest mb-3">INSTRUMENT NOU</p>
+          <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-3">INSTRUMENT NOU</p>
           <h1 className="text-3xl md:text-4xl font-black tracking-tight mb-3">Comparator Magazine</h1>
-          <p className="text-[#c9ced5] text-base max-w-xl mx-auto">
+          <p className="text-[var(--text-soft)] text-base max-w-xl mx-auto">
             Compară două magazine online side-by-side: oferte active, coduri de reducere
             și Deal Score calculat din date reale.
           </p>
         </div>
       </div>
 
-      <Suspense fallback={<div className="py-20 flex items-center justify-center"><div className="animate-pulse text-[#c9ced5]">Se încarcă...</div></div>}>
+      <Suspense fallback={<div className="py-20 flex items-center justify-center"><div className="animate-pulse text-[var(--text-soft)]">Se încarcă...</div></div>}>
         <ComparatorInner />
       </Suspense>
     </div>

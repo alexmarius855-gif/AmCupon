@@ -5,10 +5,10 @@ import Link from "next/link";
 
 type Mod = "simplu" | "succesiv" | "invers";
 
-const CARD = "bg-[#14181c] rounded-xl border border-[#1f2329] shadow-sm";
+const CARD = "bg-[var(--surface)] rounded-xl border border-[var(--border)] shadow-sm";
 const INPUT =
-  "w-full bg-[#0f1216] border border-[#1f2329] rounded-lg px-4 py-3 text-lg font-semibold text-white outline-none focus:border-[#ddf93c] transition-colors";
-const LABEL = "block text-xs font-semibold text-[#9399a0] uppercase tracking-wide mb-2";
+  "w-full bg-[#0f1216] border border-[var(--border)] rounded-lg px-4 py-3 text-lg font-semibold text-white outline-none focus:border-[var(--accent-text)] transition-colors";
+const LABEL = "block text-xs font-semibold text-[var(--text-muted)] uppercase tracking-wide mb-2";
 
 function lei(n: number): string {
   if (!isFinite(n)) return "-";
@@ -80,13 +80,13 @@ export default function ReducereClient() {
             onClick={() => setMod(t.id)}
             className={`text-left px-4 py-3 rounded-xl border transition-colors ${
               mod === t.id
-                ? "bg-[#ddf93c] border-[#ddf93c] text-[#0f1216]"
-                : "bg-[#14181c] border-[#1f2329] text-white hover:bg-[#1f2329]"
+                ? "bg-[#ddf93c] border-[var(--accent-text)] text-[#0f1216]"
+                : "bg-[var(--surface)] border-[var(--border)] text-white hover:bg-[var(--surface-alt)]"
             }`}
           >
             <span className="block text-sm font-bold">{t.eticheta}</span>
             <span
-              className={`block text-xs ${mod === t.id ? "text-[#0f1216]/70" : "text-[#9399a0]"}`}
+              className={`block text-xs ${mod === t.id ? "text-[#0f1216]/70" : "text-[var(--text-muted)]"}`}
             >
               {t.sub}
             </span>
@@ -127,7 +127,7 @@ export default function ReducereClient() {
                   <button
                     key={p}
                     onClick={() => setReducere(String(p))}
-                    className="text-xs font-semibold px-2.5 py-1 rounded-full bg-[#1f2329] hover:bg-[#2a2f36] text-[#9399a0] hover:text-white transition-colors"
+                    className="text-xs font-semibold px-2.5 py-1 rounded-full bg-[var(--surface-alt)] hover:bg-[var(--surface-high)] text-[var(--text-muted)] hover:text-white transition-colors"
                   >
                     {p}%
                   </button>
@@ -139,7 +139,7 @@ export default function ReducereClient() {
 
         {mod === "succesiv" && (
           <>
-            <p className="text-sm text-[#9399a0] mb-4">
+            <p className="text-sm text-[var(--text-muted)] mb-4">
               Cazul real de la casa: produsul e deja redus, iar codul de reducere se aplica peste
               pretul redus, nu peste cel initial. De aceea 30% plus 20% nu inseamna 50%.
             </p>
@@ -216,12 +216,12 @@ export default function ReducereClient() {
 
       <div className={`${CARD} p-5 sm:p-6`}>
         {rezultat === null ? (
-          <p className="text-[#9399a0] text-sm">Completeaza campurile de mai sus.</p>
+          <p className="text-[var(--text-muted)] text-sm">Completeaza campurile de mai sus.</p>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             <div>
               <span className={LABEL}>{mod === "invers" ? "Ai platit" : "Pret final"}</span>
-              <span className="block text-3xl sm:text-4xl font-black text-[#ddf93c] leading-tight">
+              <span className="block text-3xl sm:text-4xl font-black text-[var(--accent-text)] leading-tight">
                 {lei(rezultat.final)}
               </span>
             </div>
@@ -237,7 +237,7 @@ export default function ReducereClient() {
                 {proc(rezultat.procentTotal)}
               </span>
               {mod === "succesiv" && isFinite(rezultat.dupaPrima) && (
-                <span className="block text-xs text-[#9399a0] mt-1.5">
+                <span className="block text-xs text-[var(--text-muted)] mt-1.5">
                   Dupa prima reducere: {lei(rezultat.dupaPrima)}
                 </span>
               )}
@@ -246,16 +246,16 @@ export default function ReducereClient() {
         )}
 
         {mod === "succesiv" && rezultat !== null && (
-          <p className="text-sm text-[#9399a0] mt-5 pt-5 border-t border-[#1f2329]">
+          <p className="text-sm text-[var(--text-muted)] mt-5 pt-5 border-t border-[var(--border)]">
             Adunate, cele doua reduceri ar da {proc(num(r1) + num(r2))}. Real, primesti{" "}
             <span className="text-white font-semibold">{proc(rezultat.procentTotal)}</span>.
           </p>
         )}
       </div>
 
-      <p className="text-xs text-[#9399a0]">
+      <p className="text-xs text-[var(--text-muted)]">
         Calculele se fac in browserul tau. Nu trimitem si nu stocam nimic.{" "}
-        <Link href="/calculatoare" className="text-[#ddf93c] hover:underline">
+        <Link href="/calculatoare" className="text-[var(--accent-text)] hover:underline">
           Vezi toate calculatoarele
         </Link>
       </p>

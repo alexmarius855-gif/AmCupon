@@ -104,24 +104,24 @@ export default function HostingPage() {
   // Disclaimerul spune adevarul despre linkurile de AZI: platite doar daca output.json are linkul platit.
   const arePlatite = HOSTING_LIST.some(h => linkPlatit(h.url) !== h.url);
   return (
-    <div className="min-h-screen bg-[#06080b]">
+    <div className="min-h-screen bg-[var(--background)]">
       {/* Hero */}
-      <section className="relative bg-[#06080b] border-b border-[#1f2329] overflow-hidden">
+      <section className="relative bg-[var(--background)] border-b border-[var(--border)] overflow-hidden">
         <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(13,148,136,0.08) 0%, transparent 65%)" }} />
         <div className="relative max-w-4xl mx-auto px-4 pt-12 pb-10 text-center">
-          <nav className="flex justify-center gap-2 text-xs text-[#9399a0] mb-8">
-            <Link href="/" className="hover:text-[#c9ced5]">AmCupon.ro</Link>
+          <nav className="flex justify-center gap-2 text-xs text-[var(--text-muted)] mb-8">
+            <Link href="/" className="hover:text-[var(--text-soft)]">AmCupon.ro</Link>
             <span>/</span>
-            <span className="text-[#c9ced5]">Cel mai bun Hosting Romania</span>
+            <span className="text-[var(--text-soft)]">Cel mai bun Hosting Romania</span>
           </nav>
           <div className="text-5xl mb-4">🌐</div>
-          <h1 className="text-4xl md:text-5xl font-black text-[#ffffff] mb-4">
+          <h1 className="text-4xl md:text-5xl font-black text-[var(--foreground)] mb-4">
             Cel mai bun <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #ddf93c, #ddf93c)" }}>Hosting Romania</span> 2026
           </h1>
-          <p className="text-[#c9ced5] text-lg max-w-2xl mx-auto mb-6">
+          <p className="text-[var(--text-soft)] text-lg max-w-2xl mx-auto mb-6">
             Am comparat trei hosteri populari pentru site-uri românești, din ce publică fiecare: tipul de hosting, funcțiile și suportul. Prețurile se schimbă des — le vezi actualizate pe site-ul lor.
           </p>
-          <div className="flex flex-wrap justify-center gap-4 text-sm text-[#c9ced5]">
+          <div className="flex flex-wrap justify-center gap-4 text-sm text-[var(--text-soft)]">
             <span className="flex items-center gap-1.5"><span className="text-emerald-400">✓</span> Revizuit în octombrie 2026</span>
             <span className="flex items-center gap-1.5"><span className="text-emerald-400">✓</span> Hostinger are site în română</span>
           </div>
@@ -130,47 +130,47 @@ export default function HostingPage() {
 
       {/* Tipuri de hosting */}
       <section className="max-w-5xl mx-auto px-4 py-8">
-        <h2 className="text-xl font-black text-[#ffffff] mb-5">Ce tip de hosting ai nevoie?</h2>
+        <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Ce tip de hosting ai nevoie?</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {TIPURI_HOSTING.map((t, i) => (
-            <div key={i} className="bg-[#14181c] border border-[#1f2329] rounded-xl p-4">
+            <div key={i} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-4">
               <div className="text-2xl mb-2">{t.emoji}</div>
-              <h3 className="text-sm font-bold text-[#ffffff] mb-1">{t.titlu}</h3>
-              <p className="text-xs text-[#c9ced5] mb-2">{t.desc}</p>
-              <p className="text-[10px] text-[#c3dd2c] font-bold">Recomandat: {t.recomandat}</p>
+              <h3 className="text-sm font-bold text-[var(--foreground)] mb-1">{t.titlu}</h3>
+              <p className="text-xs text-[var(--text-soft)] mb-2">{t.desc}</p>
+              <p className="text-[10px] text-[var(--accent-text)] font-bold">Recomandat: {t.recomandat}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* Comparatie hosteri */}
-      <section className="max-w-5xl mx-auto px-4 py-8 border-t border-[#1f2329]">
-        <h2 className="text-2xl font-black text-[#ffffff] mb-3">Top 3 Hosteri pentru Romania</h2>
-        <div className="bg-[#14181c] border border-[#1f2329] rounded-xl p-4 mb-6">
-          <p className="text-[#c9ced5] text-sm text-center">
-            <strong className="text-[#ffffff]">Concluzia scurtă:</strong> Începi un site? <span className="text-[#c3dd2c] font-bold">Hostinger</span> are planuri de început și instalare WordPress cu un clic. Ai deja trafic? <span className="text-[#ddf93c] font-bold">SiteGround</span>, gestionat. Vrei cloud și scalare? <span className="text-[#c3dd2c] font-bold">Cloudways</span>.
+      <section className="max-w-5xl mx-auto px-4 py-8 border-t border-[var(--border)]">
+        <h2 className="text-2xl font-black text-[var(--foreground)] mb-3">Top 3 Hosteri pentru Romania</h2>
+        <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-4 mb-6">
+          <p className="text-[var(--text-soft)] text-sm text-center">
+            <strong className="text-[var(--foreground)]">Concluzia scurtă:</strong> Începi un site? <span className="text-[var(--accent-text)] font-bold">Hostinger</span> are planuri de început și instalare WordPress cu un clic. Ai deja trafic? <span className="text-[var(--accent-text)] font-bold">SiteGround</span>, gestionat. Vrei cloud și scalare? <span className="text-[var(--accent-text)] font-bold">Cloudways</span>.
           </p>
         </div>
 
         <div className="space-y-6">
           {HOSTING_LIST.map((h) => (
-            <div key={h.name} className={`bg-[#14181c] border rounded-xl p-6 ${h.rank === 1 ? "border-[#ddf93c]/40 shadow-lg shadow-[#ddf93c]/10" : "border-[#1f2329]"}`}>
+            <div key={h.name} className={`bg-[var(--surface)] border rounded-xl p-6 ${h.rank === 1 ? "border-[var(--accent-text)]/40 shadow-lg shadow-[#ddf93c]/10" : "border-[var(--border)]"}`}>
               <div className="flex flex-col md:flex-row md:items-start gap-5">
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-2">
                     <span className="text-2xl">{h.emoji}</span>
-                    <h2 className="text-xl font-black text-[#ffffff]">#{h.rank} {h.name}</h2>
+                    <h2 className="text-xl font-black text-[var(--foreground)]">#{h.rank} {h.name}</h2>
                     <span className={`text-[10px] font-black px-2 py-0.5 rounded-full ${h.badgeColor}`}>{h.badge}</span>
                   </div>
-                  <p className="text-[#c9ced5] text-sm mb-1">{h.tagline}</p>
-                  <p className="text-xs text-[#9399a0] mb-4">Tip: {h.tip} | Ideal pentru: {h.ideal}</p>
+                  <p className="text-[var(--text-soft)] text-sm mb-1">{h.tagline}</p>
+                  <p className="text-xs text-[var(--text-muted)] mb-4">Tip: {h.tip} | Ideal pentru: {h.ideal}</p>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <p className="text-xs text-emerald-400 font-bold mb-2">AVANTAJE</p>
                       <ul className="space-y-1">
                         {h.pros.map((p, i) => (
-                          <li key={i} className="flex items-start gap-2 text-sm text-[#c9ced5]">
+                          <li key={i} className="flex items-start gap-2 text-sm text-[var(--text-soft)]">
                             <span className="text-emerald-400 shrink-0">+</span>{p}
                           </li>
                         ))}
@@ -180,7 +180,7 @@ export default function HostingPage() {
                       <p className="text-xs text-red-400 font-bold mb-2">DEZAVANTAJE</p>
                       <ul className="space-y-1">
                         {h.cons.map((c, i) => (
-                          <li key={i} className="flex items-start gap-2 text-sm text-[#c9ced5]">
+                          <li key={i} className="flex items-start gap-2 text-sm text-[var(--text-soft)]">
                             <span className="text-red-400 shrink-0">-</span>{c}
                           </li>
                         ))}
@@ -191,7 +191,7 @@ export default function HostingPage() {
 
                 <div className="md:w-44 flex flex-col items-center gap-3 shrink-0">
                   <a href={linkPlatit(h.url)} target="_blank" rel="sponsored noopener noreferrer"
-                    className={`w-full text-center py-3 px-4 rounded-xl font-black text-sm transition-all hover:-translate-y-0.5 shadow-lg ${h.rank === 1 ? "bg-[#ddf93c] hover:bg-[#c3dd2c] text-[#0c1000] shadow-[#ddf93c]/20" : "bg-[#2a2f36] hover:bg-[#3a4048] text-[#ffffff]"}`}>
+                    className={`w-full text-center py-3 px-4 rounded-xl font-black text-sm transition-all hover:-translate-y-0.5 shadow-lg ${h.rank === 1 ? "bg-[#ddf93c] hover:bg-[#c3dd2c] text-[#0c1000] shadow-[#ddf93c]/20" : "bg-[var(--surface-high)] hover:bg-[var(--border-strong)] text-[var(--foreground)]"}`}>
                     Vezi {h.name} →
                   </a>
                 </div>
@@ -202,13 +202,13 @@ export default function HostingPage() {
       </section>
 
       {/* FAQ */}
-      <section className="max-w-5xl mx-auto px-4 py-10 border-t border-[#1f2329]">
-        <h2 className="text-2xl font-black text-[#ffffff] mb-6">Întrebări frecvente despre hosting</h2>
+      <section className="max-w-5xl mx-auto px-4 py-10 border-t border-[var(--border)]">
+        <h2 className="text-2xl font-black text-[var(--foreground)] mb-6">Întrebări frecvente despre hosting</h2>
         <div className="space-y-4">
           {FAQ.map((item, i) => (
-            <div key={i} className="bg-[#14181c] border border-[#1f2329] rounded-xl p-5">
-              <h3 className="font-bold text-[#ffffff] mb-2">{item.q}</h3>
-              <p className="text-[#c9ced5] text-sm">{item.a}</p>
+            <div key={i} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
+              <h3 className="font-bold text-[var(--foreground)] mb-2">{item.q}</h3>
+              <p className="text-[var(--text-soft)] text-sm">{item.a}</p>
             </div>
           ))}
         </div>
@@ -216,9 +216,9 @@ export default function HostingPage() {
 
       {/* CTA */}
       <section className="max-w-5xl mx-auto px-4 pb-12">
-        <div className="bg-gradient-to-r from-[#ddf93c]/40 to-[#ddf93c]/30 border border-[#ddf93c]/30 rounded-xl p-8 text-center">
-          <h2 className="text-2xl font-black text-[#ffffff] mb-3">Lansează-ți site-ul</h2>
-          <p className="text-[#c9ced5] mb-6 text-sm max-w-xl mx-auto">Hostinger are planuri de început și instalare WordPress cu un clic. Domeniul gratuit vine doar cu unele planuri — verifică pe site.</p>
+        <div className="bg-gradient-to-r from-[#ddf93c]/40 to-[#ddf93c]/30 border border-[var(--accent-text)]/30 rounded-xl p-8 text-center">
+          <h2 className="text-2xl font-black text-[var(--foreground)] mb-3">Lansează-ți site-ul</h2>
+          <p className="text-[var(--text-soft)] mb-6 text-sm max-w-xl mx-auto">Hostinger are planuri de început și instalare WordPress cu un clic. Domeniul gratuit vine doar cu unele planuri — verifică pe site.</p>
           <a href={linkPlatit(LINK_HOSTINGER)} target="_blank" rel="sponsored noopener noreferrer"
             className="inline-block bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] font-black px-10 py-4 rounded-xl transition-all hover:-translate-y-0.5 shadow-lg shadow-[#ddf93c]/20 text-base">
             Vezi planurile Hostinger →
@@ -227,7 +227,7 @@ export default function HostingPage() {
       </section>
 
       <div className="max-w-5xl mx-auto px-4 pb-8">
-        <p className="text-[#9399a0] text-xs text-center">
+        <p className="text-[var(--text-muted)] text-xs text-center">
           {arePlatite
             ? "Unele linkuri de pe această pagină sunt linkuri de afiliat. Dacă faci o achiziție, AmCupon.ro primește un comision, fără cost suplimentar pentru tine."
             : "Nu avem parteneriat cu acești furnizori: linkurile duc direct pe site-ul lor."}{" "}

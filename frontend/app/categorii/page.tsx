@@ -226,31 +226,31 @@ export default function CategoriPage() {
   return (
     <>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-    <div className="min-h-screen bg-[#06080b]">
+    <div className="min-h-screen bg-[var(--background)]">
 
       {/* Header */}
-      <header className="bg-[#14181c] border-b border-[#1f2329]">
+      <header className="bg-[var(--surface)] border-b border-[var(--border)]">
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-3">
           <Link href="/" className="flex items-center gap-1.5 shrink-0">
             <div className="bg-[#ddf93c] text-[#0c1000] font-black text-base px-2 py-1 rounded-lg">Am</div>
-            <span className="font-black text-[#ffffff] text-xl">Cupon</span>
-            <span className="text-[#ddf93c] font-black text-xl">.ro</span>
+            <span className="font-black text-[var(--foreground)] text-xl">Cupon</span>
+            <span className="text-[var(--accent-text)] font-black text-xl">.ro</span>
           </Link>
-          <span className="text-[#9399a0]">/</span>
-          <span className="text-sm font-semibold text-[#c9ced5]">Categorii</span>
+          <span className="text-[var(--text-muted)]">/</span>
+          <span className="text-sm font-semibold text-[var(--text-soft)]">Categorii</span>
         </div>
       </header>
 
       {/* Hero */}
-      <div className="bg-gradient-to-br from-[#14181c] via-[#14181c] to-[#1f2329] py-10 px-4 border-b border-[#1f2329]">
+      <div className="bg-gradient-to-br from-[#14181c] via-[#14181c] to-[#1f2329] py-10 px-4 border-b border-[var(--border)]">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-3xl md:text-4xl font-black text-[#ffffff] mb-2">
+          <h1 className="text-3xl md:text-4xl font-black text-[var(--foreground)] mb-2">
             Toate categoriile
           </h1>
-          <p className="text-[#c9ced5] text-sm">
+          <p className="text-[var(--text-soft)] text-sm">
             <span className="text-emerald-400 font-bold">{totalOff} oferte active</span>
             {" "}in{" "}
-            <span className="text-[#ffffff] font-bold">{categoriiCuDate.length} categorii</span>
+            <span className="text-[var(--foreground)] font-bold">{categoriiCuDate.length} categorii</span>
             {" "}&mdash; actualizat zilnic
           </p>
         </div>
@@ -263,7 +263,7 @@ export default function CategoriPage() {
             <a
               key={c.slug}
               href={`/categorii/${c.slug}`}
-              className="group relative rounded-xl overflow-hidden bg-[#14181c] border border-[#1f2329] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/40 hover:[border-color:var(--accent)]"
+              className="group relative rounded-xl overflow-hidden bg-[var(--surface)] border border-[var(--border)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/40 hover:[border-color:var(--accent)]"
               style={{ "--accent": `${c.accent}80` } as Record<string, string>}
             >
               {/* Glow colorat pe categorie — recunoastere instanta */}
@@ -279,7 +279,7 @@ export default function CategoriPage() {
                       key={i}
                       src={l.logo}
                       alt={l.name}
-                      className="w-6 h-6 rounded-full border border-[#2a2f36] bg-[#14181c] object-contain p-0.5"
+                      className="w-6 h-6 rounded-full border border-[var(--border-strong)] bg-[var(--surface)] object-contain p-0.5"
                       loading="lazy"
                     />
                   ))}
@@ -295,20 +295,20 @@ export default function CategoriPage() {
                     <span className="text-[10px] font-bold" style={{ color: c.accent }}>{c.nrOff} oferte</span>
                   </div>
                 ) : (
-                  <div className="inline-flex items-center gap-1 bg-[#1f2329] px-2 py-0.5 rounded-full mb-3">
-                    <span className="text-[#c9ced5] text-[10px]">{c.nrMag} magazine</span>
+                  <div className="inline-flex items-center gap-1 bg-[var(--surface-alt)] px-2 py-0.5 rounded-full mb-3">
+                    <span className="text-[var(--text-soft)] text-[10px]">{c.nrMag} magazine</span>
                   </div>
                 )}
 
-                <div className="text-[#ffffff] font-black text-sm leading-tight mb-1">
+                <div className="text-[var(--foreground)] font-black text-sm leading-tight mb-1">
                   {c.label}
                 </div>
-                <div className="text-[#c9ced5] text-[10px] leading-tight">
+                <div className="text-[var(--text-soft)] text-[10px] leading-tight">
                   {c.desc}
                 </div>
 
                 {/* Arrow */}
-                <div className="mt-3 flex items-center gap-1 text-[#9399a0] group-hover:text-[#ffffff] group-hover:gap-2 transition-all text-[10px] font-bold">
+                <div className="mt-3 flex items-center gap-1 text-[var(--text-muted)] group-hover:text-[var(--foreground)] group-hover:gap-2 transition-all text-[10px] font-bold">
                   Vezi ofertele
                   <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
@@ -320,13 +320,13 @@ export default function CategoriPage() {
         </div>
 
         {/* Pagini specializate — contin editorial + produse */}
-        <div className="mt-12 border-t border-[#1f2329] pt-10">
-          <h2 className="text-lg font-black text-[#ffffff] mb-2">Pagini specializate pe nisa</h2>
-          <p className="text-[#9399a0] text-sm mb-6">Fiecare pagina are editorial, ghiduri de cumparaturi si produse recomandate.</p>
+        <div className="mt-12 border-t border-[var(--border)] pt-10">
+          <h2 className="text-lg font-black text-[var(--foreground)] mb-2">Pagini specializate pe nisa</h2>
+          <p className="text-[var(--text-muted)] text-sm mb-6">Fiecare pagina are editorial, ghiduri de cumparaturi si produse recomandate.</p>
           <div className="flex flex-wrap gap-2">
             {NISE_SPECIALE.map(n => (
               <a key={n.href} href={n.href}
-                className="flex items-center gap-1.5 bg-[#1f2329] hover:bg-[#2a2f36] border border-[#2a2f36] hover:border-[#ddf93c]/50 text-[#c9ced5] hover:text-[#ffffff] text-sm font-semibold px-3 py-2 rounded-xl transition-all">
+                className="flex items-center gap-1.5 bg-[var(--surface-alt)] hover:bg-[var(--surface-high)] border border-[var(--border-strong)] hover:border-[var(--accent-text)]/50 text-[var(--text-soft)] hover:text-[var(--foreground)] text-sm font-semibold px-3 py-2 rounded-xl transition-all">
                 <span>{n.emoji}</span>
                 {n.label}
               </a>
@@ -336,7 +336,7 @@ export default function CategoriPage() {
 
         {/* Back link */}
         <div className="mt-10 text-center">
-          <Link href="/" className="text-sm text-[#9399a0] hover:text-[#ddf93c] transition-colors">
+          <Link href="/" className="text-sm text-[var(--text-muted)] hover:text-[var(--accent-text)] transition-colors">
             &larr; Inapoi la AmCupon.ro
           </Link>
         </div>

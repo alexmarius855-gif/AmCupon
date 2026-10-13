@@ -64,16 +64,16 @@ export default function SanatatePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-[#06080b]">
+      <div className="min-h-screen bg-[var(--background)]">
 
         {/* Header */}
 
         {/* Breadcrumb */}
-        <nav className="bg-[#06080b] border-b border-[#1f2329]">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#9399a0]">
-            <Link href="/" className="hover:text-[#ddf93c]">Acasa</Link>
+        <nav className="bg-[var(--background)] border-b border-[var(--border)]">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[var(--text-muted)]">
+            <Link href="/" className="hover:text-[var(--accent-text)]">Acasa</Link>
             <span className="mx-1">/</span>
-            <span className="text-[#c9ced5] font-medium">Sanatate & Naturiste</span>
+            <span className="text-[var(--text-soft)] font-medium">Sanatate & Naturiste</span>
           </div>
         </nav>
 
@@ -87,22 +87,22 @@ export default function SanatatePage() {
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Vitamine","Suplimente Sport","Naturiste","Bio","Omega-3","Probiotice","Collagen"].map(c => (
-                <span key={c} className="bg-[#1f2329] text-[#ffffff] text-sm font-semibold px-4 py-1.5 rounded-full border border-[#2a2f36]">{c}</span>
+                <span key={c} className="bg-[var(--surface-alt)] text-[var(--foreground)] text-sm font-semibold px-4 py-1.5 rounded-full border border-[var(--border-strong)]">{c}</span>
               ))}
             </div>
           </div>
         </section>
 
         {/* Stats bar */}
-        <div className="bg-[#14181c] border-[#1f2329] py-3 px-4">
+        <div className="bg-[var(--surface)] border-[var(--border)] py-3 px-4">
           <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-6 text-sm">
-            <span className="text-[#c3dd2c] font-semibold">
-              <span className="font-black text-[#ddf93c]">{magazine.length}</span> magazine sanatate
+            <span className="text-[var(--accent-text)] font-semibold">
+              <span className="font-black text-[var(--accent-text)]">{magazine.length}</span> magazine sanatate
             </span>
-            <span className="text-[#c3dd2c] font-semibold">
-              <span className="font-black text-[#ddf93c]">{cuPromo.length}</span> cu promotii active
+            <span className="text-[var(--accent-text)] font-semibold">
+              <span className="font-black text-[var(--accent-text)]">{cuPromo.length}</span> cu promotii active
             </span>
-            <span className="text-[#c3dd2c] font-semibold">
+            <span className="text-[var(--accent-text)] font-semibold">
               &#10003; Actualizat zilnic
             </span>
           </div>
@@ -110,13 +110,13 @@ export default function SanatatePage() {
 
         {/* Avantaje */}
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[#ffffff] mb-6 text-center">Ce gasesti la magazinele de sanatate online</h2>
+          <h2 className="text-xl font-black text-[var(--foreground)] mb-6 text-center">Ce gasesti la magazinele de sanatate online</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {AVANTAJE.map(a => (
-              <div key={a.titlu} className="bg-[#14181c] border border-[#1f2329] rounded-xl p-5">
+              <div key={a.titlu} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
                 <div className="text-3xl mb-2">{a.icon}</div>
-                <h3 className="font-bold text-[#ffffff] text-sm mb-1">{a.titlu}</h3>
-                <p className="text-xs text-[#c9ced5]">{a.desc}</p>
+                <h3 className="font-bold text-[var(--foreground)] text-sm mb-1">{a.titlu}</h3>
+                <p className="text-xs text-[var(--text-soft)]">{a.desc}</p>
               </div>
             ))}
           </div>
@@ -125,7 +125,7 @@ export default function SanatatePage() {
         {/* Magazine */}
         <section className="max-w-6xl mx-auto px-4 pb-10">
           <div className="flex items-center gap-3 mb-5">
-            <h2 className="text-xl font-black text-[#ffffff]">Magazine sanatate cu reduceri active</h2>
+            <h2 className="text-xl font-black text-[var(--foreground)]">Magazine sanatate cu reduceri active</h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {magazine.map((m) => (
@@ -146,16 +146,16 @@ export default function SanatatePage() {
         />
 
         {/* Editorial */}
-        <section className="bg-[#14181c] border-t border-[#1f2329] py-10 px-4">
+        <section className="bg-[var(--surface)] border-t border-[var(--border)] py-10 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-[#ffffff] mb-5">Ghid: Suplimente si naturiste — ce sa alegi</h2>
-            <div className="space-y-4 text-sm text-[#c9ced5] leading-relaxed">
+            <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Ghid: Suplimente si naturiste — ce sa alegi</h2>
+            <div className="space-y-4 text-sm text-[var(--text-soft)] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Ce gasesti la partenerii AmCupon</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Ce gasesti la partenerii AmCupon</h3>
                 <p>Pronaturiste are produse naturiste (plante, tincturi, ceaiuri), GoldNutrition — suplimente pentru sportivi (proteine, aminoacizi, creatina), iar Apiland — produse apicole. Ofertele lor active apar mai sus.</p>
               </div>
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Inainte sa cumperi suplimente</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Inainte sa cumperi suplimente</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
                   <li><strong>Intreaba medicul</strong> — mai ales daca iei un tratament sau esti insarcinata</li>
                   <li><strong>Analize</strong> — de exemplu, nivelul vitaminei D se afla dintr-un test de sange</li>
@@ -164,7 +164,7 @@ export default function SanatatePage() {
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Cum economisesti la suplimente</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Cum economisesti la suplimente</h3>
                 <p>La promotii poti cumpara pentru cateva luni — verifica data de expirare. Pachetele combo ies de obicei mai ieftin; compara pretul pe doza.</p>
               </div>
             </div>
@@ -173,7 +173,7 @@ export default function SanatatePage() {
 
         {/* Internal links */}
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[#c9ced5] mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Exploreaza si alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/farmacie",   label: "💊 Farmacie Online" },
@@ -184,18 +184,18 @@ export default function SanatatePage() {
               { href: "/oferte-azi", label: "🔥 Toate Ofertele de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-[#14181c] hover:bg-[#1f2329] hover:text-[#c3dd2c] text-[#c9ced5] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#1f2329] hover:border-[#c9ced5]">
+                className="bg-[var(--surface)] hover:bg-[var(--surface-alt)] hover:text-[var(--accent-text)] text-[var(--text-soft)] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[var(--border)] hover:border-[#c9ced5]">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-[#1f2329] py-6 text-center text-xs text-[#9399a0] mt-4">
+        <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)] mt-4">
           &copy; {an} AmCupon.ro &middot;{" "}
-          <Link href="/farmacie" className="hover:text-[#ddf93c]">Farmacie</Link>{" · "}
-          <Link href="/frumusete" className="hover:text-[#ddf93c]">Frumusete</Link>{" · "}
-          <Link href="/categorii" className="hover:text-[#ddf93c]">Categorii</Link>
+          <Link href="/farmacie" className="hover:text-[var(--accent-text)]">Farmacie</Link>{" · "}
+          <Link href="/frumusete" className="hover:text-[var(--accent-text)]">Frumusete</Link>{" · "}
+          <Link href="/categorii" className="hover:text-[var(--accent-text)]">Categorii</Link>
         </footer>
       </div>
     </>

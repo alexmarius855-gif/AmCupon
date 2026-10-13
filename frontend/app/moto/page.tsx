@@ -30,29 +30,29 @@ export default function MotoPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <div className="min-h-screen bg-[#06080b]">
+      <div className="min-h-screen bg-[var(--background)]">
 
-        <section className="relative bg-[#06080b] border-b border-[#1f2329] overflow-hidden">
+        <section className="relative bg-[var(--background)] border-b border-[var(--border)] overflow-hidden">
           <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(13,148,136,0.1) 0%, transparent 65%)" }} />
           <div className="relative max-w-4xl mx-auto px-4 pt-12 pb-10 text-center">
-            <nav className="flex justify-center gap-2 text-xs text-[#9399a0] mb-8">
-              <Link href="/" className="hover:text-[#c9ced5]">AmCupon.ro</Link>
+            <nav className="flex justify-center gap-2 text-xs text-[var(--text-muted)] mb-8">
+              <Link href="/" className="hover:text-[var(--text-soft)]">AmCupon.ro</Link>
               <span>/</span>
-              <span className="text-[#c9ced5]">Auto-Moto</span>
+              <span className="text-[var(--text-soft)]">Auto-Moto</span>
             </nav>
             <div className="text-5xl mb-4">🚗</div>
-            <h1 className="text-4xl md:text-5xl font-black text-[#ffffff] mb-4">Auto-Moto {an}</h1>
-            <p className="text-[#c9ced5] text-lg max-w-2xl mx-auto mb-8">
+            <h1 className="text-4xl md:text-5xl font-black text-[var(--foreground)] mb-4">Auto-Moto {an}</h1>
+            <p className="text-[var(--text-soft)] text-lg max-w-2xl mx-auto mb-8">
               Piese auto, anvelope, echipament moto — alege ce cauti mai jos.
             </p>
             <div className="grid grid-cols-2 gap-4 max-w-xs mx-auto">
-              <div className="bg-[#14181c] border border-[#1f2329] rounded-xl py-3 px-2">
-                <div className="text-xl font-black text-[#ffffff]">{magazineAuto.length}</div>
-                <div className="text-xs text-[#9399a0]">Magazine auto</div>
+              <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl py-3 px-2">
+                <div className="text-xl font-black text-[var(--foreground)]">{magazineAuto.length}</div>
+                <div className="text-xs text-[var(--text-muted)]">Magazine auto</div>
               </div>
-              <div className="bg-[#14181c] border border-[#1f2329] rounded-xl py-3 px-2">
-                <div className="text-xl font-black text-[#ffffff]">{cuPromo}</div>
-                <div className="text-xs text-[#9399a0]">Cu reduceri</div>
+              <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl py-3 px-2">
+                <div className="text-xl font-black text-[var(--foreground)]">{cuPromo}</div>
+                <div className="text-xs text-[var(--text-muted)]">Cu reduceri</div>
               </div>
             </div>
           </div>
@@ -62,11 +62,11 @@ export default function MotoPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {HUBURI.map(h => (
               <Link key={h.href} href={h.href}
-                className="group bg-[#14181c] border border-[#1f2329] hover:border-[#ddf93c]/40 rounded-xl p-6 transition-all">
+                className="group bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--accent-text)]/40 rounded-xl p-6 transition-all">
                 <div className="text-4xl mb-3">{h.emoji}</div>
-                <h2 className="text-xl font-black text-[#ffffff] mb-2 group-hover:text-[#ddf93c] transition-colors">{h.titlu}</h2>
-                <p className="text-[#c9ced5] text-sm">{h.desc}</p>
-                <span className="inline-block mt-4 text-[#ddf93c] text-sm font-semibold">Vezi magazinele →</span>
+                <h2 className="text-xl font-black text-[var(--foreground)] mb-2 group-hover:text-[var(--accent-text)] transition-colors">{h.titlu}</h2>
+                <p className="text-[var(--text-soft)] text-sm">{h.desc}</p>
+                <span className="inline-block mt-4 text-[var(--accent-text)] text-sm font-semibold">Vezi magazinele →</span>
               </Link>
             ))}
           </div>
@@ -78,7 +78,7 @@ export default function MotoPage() {
               { href: "/oferte-azi", label: "🔥 Oferte de azi" },
             ].map(l => (
               <Link key={l.href} href={l.href}
-                className="bg-[#14181c] hover:bg-[#1f2329] text-[#c9ced5] hover:text-[#ffffff] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#1f2329]">
+                className="bg-[var(--surface)] hover:bg-[var(--surface-alt)] text-[var(--text-soft)] hover:text-[var(--foreground)] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[var(--border)]">
                 {l.label}
               </Link>
             ))}

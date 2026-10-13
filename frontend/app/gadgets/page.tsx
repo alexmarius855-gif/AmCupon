@@ -52,13 +52,13 @@ export default function GadgetsPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-[#06080b]">
+      <div className="min-h-screen bg-[var(--background)]">
 
-        <nav className="bg-[#06080b] border-b border-[#1f2329]">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#9399a0] flex-wrap">
-            <Link href="/" className="hover:text-[#ddf93c] transition-colors">Acasă</Link>
+        <nav className="bg-[var(--background)] border-b border-[var(--border)]">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[var(--text-muted)] flex-wrap">
+            <Link href="/" className="hover:text-[var(--accent-text)] transition-colors">Acasă</Link>
             <span className="mx-1 text-gray-300">/</span>
-            <span className="text-[#c9ced5] font-medium">Gadgets & Tech</span>
+            <span className="text-[var(--text-soft)] font-medium">Gadgets & Tech</span>
           </div>
         </nav>
 
@@ -76,9 +76,9 @@ export default function GadgetsPage() {
                 { val: `${cuPromo.length}+`, label: "Oferte active" },
                 { val: "Zilnic", label: "Actualizat" },
               ].map(s => (
-                <div key={s.label} className="bg-[#1f2329] rounded-xl py-3 px-2">
+                <div key={s.label} className="bg-[var(--surface-alt)] rounded-xl py-3 px-2">
                   <div className="text-xl font-black">{s.val}</div>
-                  <div className="text-xs text-[#c3dd2c]">{s.label}</div>
+                  <div className="text-xs text-[var(--accent-text)]">{s.label}</div>
                 </div>
               ))}
             </div>
@@ -86,7 +86,7 @@ export default function GadgetsPage() {
         </section>
 
         {/* CATEGORII GADGET */}
-        <section className="bg-[#14181c] border-b border-[#1f2329] py-6 px-4">
+        <section className="bg-[var(--surface)] border-b border-[var(--border)] py-6 px-4">
           <div className="max-w-6xl mx-auto">
             <div className="flex flex-wrap gap-2 justify-center">
               {[
@@ -100,7 +100,7 @@ export default function GadgetsPage() {
                 { emoji:"📱", label:"Telefoane", href:"/blog/cel-mai-bun-telefon-pentru-poze-2026" },
               ].map(c => (
                 <a key={c.label} href={c.href}
-                  className="flex items-center gap-2 bg-[#14181c] hover:bg-[#ddf93c] text-[#ddf93c] font-semibold text-sm px-4 py-2 rounded-full transition-colors border border-[#ddf93c]">
+                  className="flex items-center gap-2 bg-[var(--surface)] hover:bg-[#ddf93c] text-[var(--accent-text)] font-semibold text-sm px-4 py-2 rounded-full transition-colors border border-[var(--accent-text)]">
                   <span>{c.emoji}</span>{c.label}
                 </a>
               ))}
@@ -112,7 +112,7 @@ export default function GadgetsPage() {
           {/* MAGAZINE */}
           <section className="mb-10">
             <div className="flex items-center gap-3 mb-5">
-              <h2 className="text-xl font-black text-[#ffffff]">Magazine de gadgets si electronice</h2>
+              <h2 className="text-xl font-black text-[var(--foreground)]">Magazine de gadgets si electronice</h2>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {magazine.map((m) => (
@@ -124,13 +124,13 @@ export default function GadgetsPage() {
           <NewsletterCTA />
 
           {/* ARTICOLE */}
-          <section className="bg-[#14181c] rounded-xl p-6">
-            <h2 className="text-lg font-black text-[#ffffff] mb-4">📖 Ghiduri & Recenzii Gadgets</h2>
+          <section className="bg-[var(--surface)] rounded-xl p-6">
+            <h2 className="text-lg font-black text-[var(--foreground)] mb-4">📖 Ghiduri & Recenzii Gadgets</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {ARTICOLE_GADGET.map(a => (
                 <a key={a.href} href={a.href}
-                  className="flex items-center gap-2 bg-[#14181c] rounded-xl px-4 py-3 text-sm font-semibold text-[#c9ced5] hover:text-[#ddf93c] hover:border-[#ddf93c]/40 border border-[#1f2329] transition-all group">
-                  <span className="text-[#c3dd2c] group-hover:text-[#ddf93c]">→</span>
+                  className="flex items-center gap-2 bg-[var(--surface)] rounded-xl px-4 py-3 text-sm font-semibold text-[var(--text-soft)] hover:text-[var(--accent-text)] hover:border-[var(--accent-text)]/40 border border-[var(--border)] transition-all group">
+                  <span className="text-[var(--accent-text)] group-hover:text-[var(--accent-text)]">→</span>
                   {a.title}
                 </a>
               ))}
@@ -147,7 +147,7 @@ export default function GadgetsPage() {
         />
 
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[#c9ced5] mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Exploreaza si alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/electronice", label: "💻 Electronice" },
@@ -158,17 +158,17 @@ export default function GadgetsPage() {
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-[#14181c] hover:bg-[#1f2329] hover:text-[#c3dd2c] text-[#c9ced5] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#1f2329] hover:border-[#c9ced5]">
+                className="bg-[var(--surface)] hover:bg-[var(--surface-alt)] hover:text-[var(--accent-text)] text-[var(--text-soft)] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[var(--border)] hover:border-[#c9ced5]">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-[#1f2329] py-6 text-center text-xs text-[#9399a0] mt-4">
-          © {an} AmCupon.ro · <Link href="/" className="hover:text-[#ddf93c]">Acasă</Link>
-          {" · "}<Link href="/black-friday" className="hover:text-[#ddf93c]">Black Friday</Link>
-          {" · "}<Link href="/moto" className="hover:text-[#ddf93c]">Auto-Moto</Link>
+        <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)] mt-4">
+          © {an} AmCupon.ro · <Link href="/" className="hover:text-[var(--accent-text)]">Acasă</Link>
+          {" · "}<Link href="/black-friday" className="hover:text-[var(--accent-text)]">Black Friday</Link>
+          {" · "}<Link href="/moto" className="hover:text-[var(--accent-text)]">Auto-Moto</Link>
         </footer>
       </div>
     </>

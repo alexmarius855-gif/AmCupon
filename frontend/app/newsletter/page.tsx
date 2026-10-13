@@ -39,18 +39,18 @@ export default function NewsletterPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <div className="min-h-screen bg-[#06080b]">
+      <div className="min-h-screen bg-[var(--background)]">
 
         <div className="max-w-2xl mx-auto px-4 py-16">
           <div className="text-center mb-12">
             <div className="inline-flex items-center justify-center w-20 h-20 rounded-xl bg-gradient-to-br from-[#ddf93c] to-[#ddf93c] text-4xl mb-6 shadow-xl shadow-[#ddf93c]/30">
               🎁
             </div>
-            <h1 className="text-3xl md:text-4xl font-black text-[#ffffff] mb-3 tracking-tight">
+            <h1 className="text-3xl md:text-4xl font-black text-[var(--foreground)] mb-3 tracking-tight">
               Codurile zilei, pe email
             </h1>
-            <p className="text-[#c9ced5] text-lg">
-              <span className="text-[#ffffff] font-bold">{totalMagazine} de magazine</span>, actualizate de trei ori pe zi.
+            <p className="text-[var(--text-soft)] text-lg">
+              <span className="text-[var(--foreground)] font-bold">{totalMagazine} de magazine</span>, actualizate de trei ori pe zi.
               Ofertele active, pe categorii, intr-un email in fiecare dimineata.
             </p>
           </div>
@@ -63,15 +63,15 @@ export default function NewsletterPage() {
               { nr: `${cuPromotie}`,      label: "Magazine cu oferte acum" },
               { nr: "100%",   label: "Gratuit pentru tine" },
             ].map(s => (
-              <div key={s.label} className="bg-[#14181c] rounded-xl border border-[#1f2329] p-4">
-                <p className="text-xl font-black text-[#ddf93c]">{s.nr}</p>
-                <p className="text-xs text-[#9399a0] mt-0.5">{s.label}</p>
+              <div key={s.label} className="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-4">
+                <p className="text-xl font-black text-[var(--accent-text)]">{s.nr}</p>
+                <p className="text-xs text-[var(--text-muted)] mt-0.5">{s.label}</p>
               </div>
             ))}
           </div>
 
           <div className="text-center">
-            <Link href="/" className="text-sm text-[#9399a0] hover:text-[#ddf93c] transition-colors">
+            <Link href="/" className="text-sm text-[var(--text-muted)] hover:text-[var(--accent-text)] transition-colors">
               &larr; Inapoi la homepage
             </Link>
           </div>

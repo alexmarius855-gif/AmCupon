@@ -53,12 +53,12 @@ export default function CasaPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-[#06080b]">
-        <nav className="bg-[#06080b] border-b border-[#1f2329]">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#9399a0]">
-            <Link href="/" className="hover:text-[#ddf93c]">Acasa</Link>
+      <div className="min-h-screen bg-[var(--background)]">
+        <nav className="bg-[var(--background)] border-b border-[var(--border)]">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[var(--text-muted)]">
+            <Link href="/" className="hover:text-[var(--accent-text)]">Acasa</Link>
             <span className="mx-1">/</span>
-            <span className="text-[#c9ced5] font-medium">Casa & Gradina</span>
+            <span className="text-[var(--text-soft)] font-medium">Casa & Gradina</span>
           </div>
         </nav>
 
@@ -71,20 +71,20 @@ export default function CasaPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Mobila","Bricolaj","Gradina","Electrocasnice","Decoratiuni","Baie"].map(c => (
-                <span key={c} className="bg-[#1f2329] text-[#ffffff] text-sm font-semibold px-4 py-1.5 rounded-full border border-[#2a2f36]">{c}</span>
+                <span key={c} className="bg-[var(--surface-alt)] text-[var(--foreground)] text-sm font-semibold px-4 py-1.5 rounded-full border border-[var(--border-strong)]">{c}</span>
               ))}
             </div>
           </div>
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[#ffffff] mb-6 text-center">Ce gasesti la magazine casa & gradina</h2>
+          <h2 className="text-xl font-black text-[var(--foreground)] mb-6 text-center">Ce gasesti la magazine casa & gradina</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {AVANTAJE.map(a => (
-              <div key={a.titlu} className="bg-[#14181c] border border-[#1f2329] rounded-xl p-5">
+              <div key={a.titlu} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
                 <div className="text-3xl mb-2">{a.icon}</div>
-                <h3 className="font-bold text-[#ffffff] text-sm mb-1">{a.titlu}</h3>
-                <p className="text-xs text-[#c9ced5]">{a.desc}</p>
+                <h3 className="font-bold text-[var(--foreground)] text-sm mb-1">{a.titlu}</h3>
+                <p className="text-xs text-[var(--text-soft)]">{a.desc}</p>
               </div>
             ))}
           </div>
@@ -93,7 +93,7 @@ export default function CasaPage() {
         <section className="max-w-6xl mx-auto px-4 pb-10">
           <div className="flex items-center gap-3 mb-5">
             
-            <h2 className="text-xl font-black text-[#ffffff]">Magazine casa cu reduceri active</h2>
+            <h2 className="text-xl font-black text-[var(--foreground)]">Magazine casa cu reduceri active</h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {magazine.map((m) => (
@@ -112,16 +112,16 @@ export default function CasaPage() {
           limit={12}
         />
 
-        <section className="bg-[#14181c] border-t border-[#1f2329] py-10 px-4">
+        <section className="bg-[var(--surface)] border-t border-[var(--border)] py-10 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-[#ffffff] mb-5">Ghid: Amenajari casa mai ieftine in Romania</h2>
-            <div className="space-y-4 text-sm text-[#c9ced5] leading-relaxed">
+            <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Ghid: Amenajari casa mai ieftine in Romania</h2>
+            <div className="space-y-4 text-sm text-[var(--text-soft)] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Magazin mare sau magazin specializat?</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Magazin mare sau magazin specializat?</h3>
                 <p>Lanturile mari de bricolaj si mobila au gama cea mai larga; magazinele specializate (mobila, saltele, electrocasnice, gradina) au de obicei mai multa alegere in nisa lor. Partenerii AmCupon din aceasta categorie apar mai sus, cu ofertele active.</p>
               </div>
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Cand sa cumperi mobila si electrocasnice</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Cand sa cumperi mobila si electrocasnice</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
                   <li><strong>Black Friday</strong> — reduceri la electrocasnice mari si mobilier</li>
                   <li><strong>Ianuarie</strong> — solduri de iarna, stocuri vechi cu discount mare</li>
@@ -130,18 +130,18 @@ export default function CasaPage() {
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Sfaturi economii amenajari</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Sfaturi economii amenajari</h3>
                 <p>Urmariti sectiunile &quot;Outlet&quot; si produsele din colectii retrase, unde reducerile sunt de obicei mai mari. Cand un partener are un cod activ, il gasiti pe pagina lui de pe AmCupon.ro.</p>
               </div>
             </div>
           </div>
         </section>
 
-        <footer className="border-t border-[#1f2329] py-6 text-center text-xs text-[#9399a0] mt-4">
+        <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)] mt-4">
           © {an} AmCupon.ro ·{" "}
-          <Link href="/electronice" className="hover:text-[#ddf93c]">Electronice</Link>{" · "}
-          <Link href="/moto" className="hover:text-[#ddf93c]">Auto-Moto</Link>{" · "}
-          <Link href="/categorii" className="hover:text-[#ddf93c]">Categorii</Link>
+          <Link href="/electronice" className="hover:text-[var(--accent-text)]">Electronice</Link>{" · "}
+          <Link href="/moto" className="hover:text-[var(--accent-text)]">Auto-Moto</Link>{" · "}
+          <Link href="/categorii" className="hover:text-[var(--accent-text)]">Categorii</Link>
         </footer>
       </div>
     </>

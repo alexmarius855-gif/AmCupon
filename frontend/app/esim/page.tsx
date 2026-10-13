@@ -200,26 +200,26 @@ export default function EsimPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
-      <div className="min-h-screen bg-[#06080b] text-[#ffffff]">
+      <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
         {/* Hero */}
-        <div className="bg-gradient-to-b from-[#14181c]/40 to-[#06080b] border-b border-[#1f2329]">
+        <div className="bg-gradient-to-b from-[#14181c]/40 to-[#06080b] border-b border-[var(--border)]">
           <div className="max-w-5xl mx-auto px-4 py-14 text-center">
-            <div className="inline-flex items-center gap-2 bg-[#06080b]/30 border border-[#c3dd2c]/40 rounded-full px-4 py-1.5 text-sm text-[#c3dd2c] mb-5">
+            <div className="inline-flex items-center gap-2 bg-[var(--background)]/30 border border-[#c3dd2c]/40 rounded-full px-4 py-1.5 text-sm text-[var(--accent-text)] mb-5">
               <span>📡</span>
               <span>Date mobile in 190+ tari fara SIM fizic</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-[#ffffff] mb-4">
-              Cel mai bun <span className="text-[#ddf93c]">eSIM</span> pentru Calatorie 2026
+            <h1 className="text-4xl md:text-5xl font-bold text-[var(--foreground)] mb-4">
+              Cel mai bun <span className="text-[var(--accent-text)]">eSIM</span> pentru Calatorie 2026
             </h1>
-            <p className="text-lg text-[#c9ced5] max-w-2xl mx-auto mb-8">
+            <p className="text-lg text-[var(--text-soft)] max-w-2xl mx-auto mb-8">
               Comparam cele mai bune eSIM-uri — date mobile ieftine in 190+ tari,
               activare instant, fara SIM fizic. Ideal pentru orice calator roman.
             </p>
-            <div className="flex flex-wrap justify-center gap-6 text-sm text-[#c9ced5]">
-              <span className="flex items-center gap-1.5"><span className="text-[#ddf93c]">✓</span> Activare instant</span>
-              <span className="flex items-center gap-1.5"><span className="text-[#ddf93c]">✓</span> Fara contracte</span>
-              <span className="flex items-center gap-1.5"><span className="text-[#ddf93c]">✓</span> Pastrezi numarul RO</span>
-              <span className="flex items-center gap-1.5"><span className="text-[#ddf93c]">✓</span> 190+ tari acoperite</span>
+            <div className="flex flex-wrap justify-center gap-6 text-sm text-[var(--text-soft)]">
+              <span className="flex items-center gap-1.5"><span className="text-[var(--accent-text)]">✓</span> Activare instant</span>
+              <span className="flex items-center gap-1.5"><span className="text-[var(--accent-text)]">✓</span> Fara contracte</span>
+              <span className="flex items-center gap-1.5"><span className="text-[var(--accent-text)]">✓</span> Pastrezi numarul RO</span>
+              <span className="flex items-center gap-1.5"><span className="text-[var(--accent-text)]">✓</span> 190+ tari acoperite</span>
             </div>
           </div>
         </div>
@@ -227,65 +227,65 @@ export default function EsimPage() {
         <div className="max-w-5xl mx-auto px-4 py-10">
 
           {/* Top 3 */}
-          <h2 className="text-2xl font-bold text-[#ffffff] mb-6">Top 3 eSIM-uri recomandate</h2>
+          <h2 className="text-2xl font-bold text-[var(--foreground)] mb-6">Top 3 eSIM-uri recomandate</h2>
           <div className="space-y-5 mb-14">
             {ESIM_TOP.map((esim) => (
-              <div key={esim.name} className="bg-[#14181c] border border-[#2a2f36] rounded-xl p-6 hover:border-[#c3dd2c]/50 transition-colors">
+              <div key={esim.name} className="bg-[var(--surface)] border border-[var(--border-strong)] rounded-xl p-6 hover:border-[#c3dd2c]/50 transition-colors">
                 <div className="flex flex-col md:flex-row md:items-start gap-5">
                   <div className="flex-shrink-0 text-center">
-                    <div className="w-16 h-16 bg-[#1f2329] rounded-xl flex items-center justify-center text-2xl font-bold text-[#ddf93c] mx-auto mb-2 border border-[#2a2f36]">
+                    <div className="w-16 h-16 bg-[var(--surface-alt)] rounded-xl flex items-center justify-center text-2xl font-bold text-[var(--accent-text)] mx-auto mb-2 border border-[var(--border-strong)]">
                       #{esim.rank}
                     </div>
-                    <span className={`inline-block text-xs px-2 py-0.5 rounded-full text-[#ffffff] ${esim.badgeColor}`}>
+                    <span className={`inline-block text-xs px-2 py-0.5 rounded-full text-[var(--foreground)] ${esim.badgeColor}`}>
                       {esim.badge}
                     </span>
                   </div>
                   <div className="flex-1">
                     <div className="flex flex-wrap items-center gap-3 mb-1">
-                      <h3 className="text-xl font-bold text-[#ffffff]">{esim.name}</h3>
+                      <h3 className="text-xl font-bold text-[var(--foreground)]">{esim.name}</h3>
                     </div>
-                    <p className="text-[#c9ced5] text-sm mb-4">{esim.tagline}</p>
+                    <p className="text-[var(--text-soft)] text-sm mb-4">{esim.tagline}</p>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
-                      <div className="bg-[#1f2329]/60 rounded-lg p-2.5 text-center">
-                        <div className="text-xs text-[#9399a0] mb-0.5">Pret de la</div>
-                        <div className="text-sm font-bold text-[#c3dd2c]">{esim.pret_min}</div>
-                        <div className="text-xs text-[#9399a0]">{esim.pret_nota}</div>
+                      <div className="bg-[var(--surface-alt)]/60 rounded-lg p-2.5 text-center">
+                        <div className="text-xs text-[var(--text-muted)] mb-0.5">Pret de la</div>
+                        <div className="text-sm font-bold text-[var(--accent-text)]">{esim.pret_min}</div>
+                        <div className="text-xs text-[var(--text-muted)]">{esim.pret_nota}</div>
                       </div>
-                      <div className="bg-[#1f2329]/60 rounded-lg p-2.5 text-center">
-                        <div className="text-xs text-[#9399a0] mb-0.5">Acoperire</div>
-                        <div className="text-sm font-bold text-[#ffffff]">{esim.acoperire}</div>
+                      <div className="bg-[var(--surface-alt)]/60 rounded-lg p-2.5 text-center">
+                        <div className="text-xs text-[var(--text-muted)] mb-0.5">Acoperire</div>
+                        <div className="text-sm font-bold text-[var(--foreground)]">{esim.acoperire}</div>
                       </div>
-                      <div className="bg-[#1f2329]/60 rounded-lg p-2.5 text-center">
-                        <div className="text-xs text-[#9399a0] mb-0.5">Activare</div>
-                        <div className="text-sm font-bold text-[#ffffff]">{esim.activare}</div>
+                      <div className="bg-[var(--surface-alt)]/60 rounded-lg p-2.5 text-center">
+                        <div className="text-xs text-[var(--text-muted)] mb-0.5">Activare</div>
+                        <div className="text-sm font-bold text-[var(--foreground)]">{esim.activare}</div>
                       </div>
-                      <div className="bg-[#1f2329]/60 rounded-lg p-2.5 text-center">
-                        <div className="text-xs text-[#9399a0] mb-0.5">Valabilitate</div>
-                        <div className="text-sm font-bold text-[#ffffff]">{esim.valabilitate}</div>
+                      <div className="bg-[var(--surface-alt)]/60 rounded-lg p-2.5 text-center">
+                        <div className="text-xs text-[var(--text-muted)] mb-0.5">Valabilitate</div>
+                        <div className="text-sm font-bold text-[var(--foreground)]">{esim.valabilitate}</div>
                       </div>
                     </div>
                     <div className="grid md:grid-cols-2 gap-3 mb-4">
                       <div>
-                        <div className="text-xs text-[#9399a0] uppercase mb-1.5 font-medium">Avantaje</div>
+                        <div className="text-xs text-[var(--text-muted)] uppercase mb-1.5 font-medium">Avantaje</div>
                         <ul className="space-y-1">
                           {esim.pros.map((p) => (
-                            <li key={p} className="text-sm text-[#c9ced5] flex gap-2">
-                              <span className="text-[#ddf93c] flex-shrink-0">+</span> {p}
+                            <li key={p} className="text-sm text-[var(--text-soft)] flex gap-2">
+                              <span className="text-[var(--accent-text)] flex-shrink-0">+</span> {p}
                             </li>
                           ))}
                         </ul>
                       </div>
                       <div>
-                        <div className="text-xs text-[#9399a0] uppercase mb-1.5 font-medium">Dezavantaje</div>
+                        <div className="text-xs text-[var(--text-muted)] uppercase mb-1.5 font-medium">Dezavantaje</div>
                         <ul className="space-y-1">
                           {esim.cons.map((c) => (
-                            <li key={c} className="text-sm text-[#c9ced5] flex gap-2">
-                              <span className="text-[#9399a0] flex-shrink-0">-</span> {c}
+                            <li key={c} className="text-sm text-[var(--text-soft)] flex gap-2">
+                              <span className="text-[var(--text-muted)] flex-shrink-0">-</span> {c}
                             </li>
                           ))}
                         </ul>
-                        <div className="mt-3 text-xs text-[#9399a0]">
-                          <span className="font-medium text-[#c9ced5]">Ideal pentru:</span> {esim.ideal}
+                        <div className="mt-3 text-xs text-[var(--text-muted)]">
+                          <span className="font-medium text-[var(--text-soft)]">Ideal pentru:</span> {esim.ideal}
                         </div>
                       </div>
                     </div>
@@ -304,26 +304,26 @@ export default function EsimPage() {
           </div>
 
           {/* Ce este eSIM */}
-          <div className="bg-[#14181c]/60 border border-[#1f2329] rounded-xl p-7 mb-12">
-            <h2 className="text-xl font-bold text-[#ffffff] mb-4">Ce este un eSIM si de ce sa il folosesti in calatorie?</h2>
+          <div className="bg-[var(--surface)]/60 border border-[var(--border)] rounded-xl p-7 mb-12">
+            <h2 className="text-xl font-bold text-[var(--foreground)] mb-4">Ce este un eSIM si de ce sa il folosesti in calatorie?</h2>
             <div className="grid md:grid-cols-3 gap-5 text-sm">
               <div>
-                <div className="text-[#ddf93c] font-semibold mb-2">Fara SIM fizic</div>
-                <p className="text-[#c9ced5]">Activezi datele mobile direct din aplicatie. Fara sa mergi la un magazin, fara sa astepti posta, fara riscul de a pierde SIM-ul.</p>
+                <div className="text-[var(--accent-text)] font-semibold mb-2">Fara SIM fizic</div>
+                <p className="text-[var(--text-soft)]">Activezi datele mobile direct din aplicatie. Fara sa mergi la un magazin, fara sa astepti posta, fara riscul de a pierde SIM-ul.</p>
               </div>
               <div>
-                <div className="text-[#ddf93c] font-semibold mb-2">Util in afara UE</div>
-                <p className="text-[#c9ced5]">In UE ai &bdquo;roaming ca acasa&rdquo; cu abonamentul romanesc. In afara UE, roamingul poate fi scump, iar un eSIM de date e de obicei alternativa. Compara pretul pentru destinatia ta inainte sa cumperi.</p>
+                <div className="text-[var(--accent-text)] font-semibold mb-2">Util in afara UE</div>
+                <p className="text-[var(--text-soft)]">In UE ai &bdquo;roaming ca acasa&rdquo; cu abonamentul romanesc. In afara UE, roamingul poate fi scump, iar un eSIM de date e de obicei alternativa. Compara pretul pentru destinatia ta inainte sa cumperi.</p>
               </div>
               <div>
-                <div className="text-[#ddf93c] font-semibold mb-2">Pastrezi numarul RO</div>
-                <p className="text-[#c9ced5]">Daca telefonul are Dual SIM, poti folosi eSIM-ul pentru date si SIM-ul fizic pentru apeluri romanesti. Nu ratezi niciun SMS sau apel.</p>
+                <div className="text-[var(--accent-text)] font-semibold mb-2">Pastrezi numarul RO</div>
+                <p className="text-[var(--text-soft)]">Daca telefonul are Dual SIM, poti folosi eSIM-ul pentru date si SIM-ul fizic pentru apeluri romanesti. Nu ratezi niciun SMS sau apel.</p>
               </div>
             </div>
           </div>
 
           {/* Alte eSIM-uri */}
-          <h2 className="text-2xl font-bold text-[#ffffff] mb-5">Alte optiuni eSIM</h2>
+          <h2 className="text-2xl font-bold text-[var(--foreground)] mb-5">Alte optiuni eSIM</h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mb-14">
             {ALTE_ESIM.map((e) => (
               <a
@@ -331,23 +331,23 @@ export default function EsimPage() {
                 href={e.url}
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                className="bg-[#14181c] border border-[#1f2329] rounded-xl p-4 hover:border-[#c3dd2c]/50 transition-colors group"
+                className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-4 hover:border-[#c3dd2c]/50 transition-colors group"
               >
                 <div className="flex items-center gap-2 mb-2">
                   <span className="text-xl">{e.emoji}</span>
-                  <span className="font-semibold text-[#ffffff] group-hover:text-[#c3dd2c] transition-colors">{e.name}</span>
+                  <span className="font-semibold text-[var(--foreground)] group-hover:text-[var(--accent-text)] transition-colors">{e.name}</span>
                 </div>
-                <p className="text-[#c9ced5] text-sm">{e.desc}</p>
+                <p className="text-[var(--text-soft)] text-sm">{e.desc}</p>
               </a>
             ))}
           </div>
 
           {/* Tabel comparativ */}
-          <h2 className="text-2xl font-bold text-[#ffffff] mb-5">Comparatie rapida</h2>
+          <h2 className="text-2xl font-bold text-[var(--foreground)] mb-5">Comparatie rapida</h2>
           <div className="overflow-x-auto mb-14">
             <table className="w-full text-sm border-collapse">
               <thead>
-                <tr className="bg-[#1f2329] text-[#c9ced5] text-left">
+                <tr className="bg-[var(--surface-alt)] text-[var(--text-soft)] text-left">
                   <th className="px-4 py-3 rounded-tl-lg font-medium">eSIM</th>
                   <th className="px-4 py-3 font-medium">Țări</th>
                   <th className="px-4 py-3 font-medium">Preț de la</th>
@@ -356,15 +356,15 @@ export default function EsimPage() {
               </thead>
               <tbody>
                 {ESIM_TOP.map((e, i) => (
-                  <tr key={e.name} className={i % 2 === 0 ? "bg-[#14181c]/40" : "bg-[#14181c]/20"}>
-                    <td className="px-4 py-3 font-medium text-[#ffffff]">
-                      <a href={e.url} target="_blank" rel="noopener noreferrer nofollow" className="hover:text-[#ddf93c] transition-colors">
+                  <tr key={e.name} className={i % 2 === 0 ? "bg-[var(--surface)]/40" : "bg-[var(--surface)]/20"}>
+                    <td className="px-4 py-3 font-medium text-[var(--foreground)]">
+                      <a href={e.url} target="_blank" rel="noopener noreferrer nofollow" className="hover:text-[var(--accent-text)] transition-colors">
                         {e.name}
                       </a>
                     </td>
-                    <td className="px-4 py-3 text-[#c9ced5]">{e.acoperire}</td>
-                    <td className="px-4 py-3 text-[#c3dd2c]">{e.pret_min}</td>
-                    <td className="px-4 py-3 text-[#c9ced5]">{e.activare}</td>
+                    <td className="px-4 py-3 text-[var(--text-soft)]">{e.acoperire}</td>
+                    <td className="px-4 py-3 text-[var(--accent-text)]">{e.pret_min}</td>
+                    <td className="px-4 py-3 text-[var(--text-soft)]">{e.activare}</td>
                   </tr>
                 ))}
               </tbody>
@@ -372,20 +372,20 @@ export default function EsimPage() {
           </div>
 
           {/* FAQ */}
-          <h2 className="text-2xl font-bold text-[#ffffff] mb-5">Intrebari frecvente despre eSIM</h2>
+          <h2 className="text-2xl font-bold text-[var(--foreground)] mb-5">Intrebari frecvente despre eSIM</h2>
           <div className="space-y-4 mb-14">
             {FAQ.map((item) => (
-              <div key={item.q} className="bg-[#14181c] border border-[#1f2329] rounded-xl p-5">
-                <h3 className="font-semibold text-[#ffffff] mb-2">{item.q}</h3>
-                <p className="text-[#c9ced5] text-sm leading-relaxed">{item.a}</p>
+              <div key={item.q} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
+                <h3 className="font-semibold text-[var(--foreground)] mb-2">{item.q}</h3>
+                <p className="text-[var(--text-soft)] text-sm leading-relaxed">{item.a}</p>
               </div>
             ))}
           </div>
 
           {/* CTA + navlink */}
-          <div className="bg-gradient-to-r from-[#06080b]/30 to-[#06080b]/30 border border-[#1f2329]/40 rounded-xl p-7 text-center mb-10">
-            <h2 className="text-xl font-bold text-[#ffffff] mb-2">Pregatit pentru urmatoarea calatorie?</h2>
-            <p className="text-[#c9ced5] text-sm mb-5">Activeaza eSIM-ul inainte sa pleci — 5 minute si esti conectat oriunde in lume.</p>
+          <div className="bg-gradient-to-r from-[#06080b]/30 to-[#06080b]/30 border border-[var(--border)]/40 rounded-xl p-7 text-center mb-10">
+            <h2 className="text-xl font-bold text-[var(--foreground)] mb-2">Pregatit pentru urmatoarea calatorie?</h2>
+            <p className="text-[var(--text-soft)] text-sm mb-5">Activeaza eSIM-ul inainte sa pleci — 5 minute si esti conectat oriunde in lume.</p>
             <a
               href={LINK_AIRALO}
               target="_blank"
@@ -397,13 +397,13 @@ export default function EsimPage() {
           </div>
 
           <div className="flex flex-wrap gap-3 text-sm">
-            <Link href="/calatorie" className="text-[#c9ced5] hover:text-[#ddf93c] transition-colors">Oferte Calatorie</Link>
-            <span className="text-[#c9ced5]">•</span>
-            <Link href="/vpn" className="text-[#c9ced5] hover:text-[#ddf93c] transition-colors">Cele mai bune VPN-uri</Link>
-            <span className="text-[#c9ced5]">•</span>
-            <Link href="/hosting" className="text-[#c9ced5] hover:text-[#ddf93c] transition-colors">Hosting ieftin</Link>
-            <span className="text-[#c9ced5]">•</span>
-            <Link href="/toate-magazinele" className="text-[#c9ced5] hover:text-[#ddf93c] transition-colors">Toate magazinele</Link>
+            <Link href="/calatorie" className="text-[var(--text-soft)] hover:text-[var(--accent-text)] transition-colors">Oferte Calatorie</Link>
+            <span className="text-[var(--text-soft)]">•</span>
+            <Link href="/vpn" className="text-[var(--text-soft)] hover:text-[var(--accent-text)] transition-colors">Cele mai bune VPN-uri</Link>
+            <span className="text-[var(--text-soft)]">•</span>
+            <Link href="/hosting" className="text-[var(--text-soft)] hover:text-[var(--accent-text)] transition-colors">Hosting ieftin</Link>
+            <span className="text-[var(--text-soft)]">•</span>
+            <Link href="/toate-magazinele" className="text-[var(--text-soft)] hover:text-[var(--accent-text)] transition-colors">Toate magazinele</Link>
           </div>
         </div>
       </div>

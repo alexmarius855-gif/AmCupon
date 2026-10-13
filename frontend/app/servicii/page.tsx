@@ -86,11 +86,11 @@ function getBestPromo(m: Magazin): Promotie {
 
 // Culoare distincta per categorie de serviciu — niciodata portocaliu
 const CATEG_COLOR: Record<string, { from: string; to: string; text: string; ring: string; textBtn: string }> = {
-  "Sanatate & Estetica":  { from: "#c3dd2c", to: "#ddf93c", text: "text-[#c3dd2c]",   ring: "hover:border-[#ddf93c]/30",   textBtn: "text-[#0c1000]" },
-  "Educatie & Cursuri":   { from: "#ddf93c", to: "#ddf93c", text: "text-[#c3dd2c]",   ring: "hover:border-[#ddf93c]/30",   textBtn: "text-[#0c1000]" },
-  "Software & SaaS":      { from: "#ddf93c", to: "#c3dd2c", text: "text-[#c3dd2c]",   ring: "hover:border-[#ddf93c]/30",   textBtn: "text-[#0c1000]" },
-  "Hosting":              { from: "#ddf93c", to: "#c3dd2c", text: "text-[#ddf93c]",   ring: "hover:border-[#ddf93c]/30",   textBtn: "text-[#0c1000]" },
-  "Telecomunicatii":      { from: "#ddf93c", to: "#ddf93c", text: "text-[#c3dd2c]",   ring: "hover:border-[#ddf93c]/30",   textBtn: "text-[#0c1000]" },
+  "Sanatate & Estetica":  { from: "#c3dd2c", to: "#ddf93c", text: "text-[var(--accent-text)]",   ring: "hover:border-[var(--accent-text)]/30",   textBtn: "text-[#0c1000]" },
+  "Educatie & Cursuri":   { from: "#ddf93c", to: "#ddf93c", text: "text-[var(--accent-text)]",   ring: "hover:border-[var(--accent-text)]/30",   textBtn: "text-[#0c1000]" },
+  "Software & SaaS":      { from: "#ddf93c", to: "#c3dd2c", text: "text-[var(--accent-text)]",   ring: "hover:border-[var(--accent-text)]/30",   textBtn: "text-[#0c1000]" },
+  "Hosting":              { from: "#ddf93c", to: "#c3dd2c", text: "text-[var(--accent-text)]",   ring: "hover:border-[var(--accent-text)]/30",   textBtn: "text-[#0c1000]" },
+  "Telecomunicatii":      { from: "#ddf93c", to: "#ddf93c", text: "text-[var(--accent-text)]",   ring: "hover:border-[var(--accent-text)]/30",   textBtn: "text-[#0c1000]" },
   "Financiar":            { from: "#10b981", to: "#059669", text: "text-emerald-400", ring: "hover:border-emerald-500/30", textBtn: "text-[#0c1000]" },
 };
 
@@ -125,27 +125,27 @@ export default function ServiciiPage() {
   const ordineCateg = ["Sanatate & Estetica", "Educatie & Cursuri", "Software & SaaS", "Hosting", "Telecomunicatii", "Financiar"];
 
   return (
-    <div className="min-h-screen bg-[#06080b]">
+    <div className="min-h-screen bg-[var(--background)]">
       {/* Hero */}
-      <section className="relative bg-[#06080b] border-b border-[#1f2329] overflow-hidden">
+      <section className="relative bg-[var(--background)] border-b border-[var(--border)] overflow-hidden">
         <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 60% 50% at 20% 0%, rgba(13,148,136,0.10) 0%, transparent 60%), radial-gradient(ellipse 60% 50% at 80% 10%, rgba(16,185,129,0.10) 0%, transparent 60%), radial-gradient(ellipse 50% 40% at 50% 100%, rgba(20,184,166,0.08) 0%, transparent 60%)" }} />
         <div className="relative max-w-5xl mx-auto px-4 pt-12 pb-10 text-center">
-          <nav className="flex justify-center gap-2 text-xs text-[#9399a0] mb-8">
-            <Link href="/" className="hover:text-[#c9ced5]">AmCupon.ro</Link>
+          <nav className="flex justify-center gap-2 text-xs text-[var(--text-muted)] mb-8">
+            <Link href="/" className="hover:text-[var(--text-soft)]">AmCupon.ro</Link>
             <span>/</span>
-            <span className="text-[#c9ced5]">Servicii</span>
+            <span className="text-[var(--text-soft)]">Servicii</span>
           </nav>
           <div className="text-5xl mb-4">⚙️</div>
-          <h1 className="text-4xl md:text-5xl font-black text-[#ffffff] mb-4">
+          <h1 className="text-4xl md:text-5xl font-black text-[var(--foreground)] mb-4">
             Servicii <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #c3dd2c, #ddf93c, #ddf93c)" }}>online</span>
           </h1>
-          <p className="text-[#c9ced5] text-lg max-w-2xl mx-auto mb-6">
+          <p className="text-[var(--text-soft)] text-lg max-w-2xl mx-auto mb-6">
             Servicii de la partenerii AmCupon — sănătate, telecomunicații, software — și ghiduri pentru cursuri, hosting, VPN, conturi bancare și asigurări. Ofertele active apar pe pagina fiecărui partener.
           </p>
           <div className="flex flex-wrap justify-center gap-2">
             {ordineCateg.map(c => (
               <a key={c} href={`#${c.toLowerCase().replace(/[^a-z]/g, "-")}`}
-                className="text-xs bg-[#1f2329] hover:bg-[#2a2f36] text-[#c9ced5] px-3 py-1.5 rounded-full border border-[#2a2f36] transition-colors">
+                className="text-xs bg-[var(--surface-alt)] hover:bg-[var(--surface-high)] text-[var(--text-soft)] px-3 py-1.5 rounded-full border border-[var(--border-strong)] transition-colors">
                 {c}
               </a>
             ))}
@@ -155,7 +155,7 @@ export default function ServiciiPage() {
 
       {/* Servicii speciale cu pagini dedicate */}
       <section className="max-w-5xl mx-auto px-4 py-8">
-        <p className="text-xs text-[#c9ced5] font-bold mb-3 uppercase tracking-wider">Pagini dedicate</p>
+        <p className="text-xs text-[var(--text-soft)] font-bold mb-3 uppercase tracking-wider">Pagini dedicate</p>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           {PAGINI_DEDICATE.map(item => (
             <Link key={item.href} href={item.href}
@@ -180,8 +180,8 @@ export default function ServiciiPage() {
 
         return (
           <section key={categLabel} id={categLabel.toLowerCase().replace(/[^a-z]/g, "-")}
-            className="max-w-5xl mx-auto px-4 py-8 border-t border-[#1f2329]">
-            <h2 className="text-xl font-black text-[#ffffff] mb-5 flex items-center gap-3">
+            className="max-w-5xl mx-auto px-4 py-8 border-t border-[var(--border)]">
+            <h2 className="text-xl font-black text-[var(--foreground)] mb-5 flex items-center gap-3">
               <span className="w-9 h-9 rounded-xl flex items-center justify-center text-lg shrink-0"
                 style={{ background: `linear-gradient(135deg, ${culoare.from}, ${culoare.to})` }}>
                 {items2p[0]?.info.emoji || (itemsIntl[0] ? "🌐" : "⚙️")}
@@ -198,24 +198,24 @@ export default function ServiciiPage() {
                 const arePromo = mag.are_promotie && mag.promotii.some(p => (p.zile_ramase ?? 99) >= 0);
 
                 return (
-                  <div key={mag.magazin} className={`bg-[#14181c] border border-[#1f2329] ${culoare.ring} rounded-xl p-5 flex flex-col gap-3 transition-all`}>
+                  <div key={mag.magazin} className={`bg-[var(--surface)] border border-[var(--border)] ${culoare.ring} rounded-xl p-5 flex flex-col gap-3 transition-all`}>
                     <div className="flex items-start justify-between gap-2">
                       <div>
                         <div className="flex items-center gap-2 mb-0.5">
-                          <span className="text-[#ffffff] font-black text-sm">{numeAfisat(mag.magazin)}</span>
-                          {arePromo && <span className={`text-[10px] bg-[#1f2329] ${culoare.text} border border-[#2a2f36] px-1.5 py-0.5 rounded-full font-bold`}>Activ</span>}
+                          <span className="text-[var(--foreground)] font-black text-sm">{numeAfisat(mag.magazin)}</span>
+                          {arePromo && <span className={`text-[10px] bg-[var(--surface-alt)] ${culoare.text} border border-[var(--border-strong)] px-1.5 py-0.5 rounded-full font-bold`}>Activ</span>}
                         </div>
-                        <p className="text-[#9399a0] text-xs">{info.desc}</p>
+                        <p className="text-[var(--text-muted)] text-xs">{info.desc}</p>
                       </div>
                     </div>
 
                     {descriere && (
-                      <p className="text-[#c9ced5] text-xs line-clamp-2">{descriere}</p>
+                      <p className="text-[var(--text-soft)] text-xs line-clamp-2">{descriere}</p>
                     )}
 
                     {cod && (
-                      <div className="bg-[#1f2329] border border-dashed border-[#3a4048] rounded-lg px-3 py-2 text-center">
-                        <p className="text-[10px] text-[#9399a0] mb-0.5">Cod reducere</p>
+                      <div className="bg-[var(--surface-alt)] border border-dashed border-[var(--border-strong)] rounded-lg px-3 py-2 text-center">
+                        <p className="text-[10px] text-[var(--text-muted)] mb-0.5">Cod reducere</p>
                         <p className={`font-mono font-black ${culoare.text} text-sm tracking-wider`}>{maskCod(cod)}</p>
                       </div>
                     )}
@@ -227,7 +227,7 @@ export default function ServiciiPage() {
                     </Link>
 
                     {info.slug_url && (
-                      <Link href={info.slug_url} className="text-[10px] text-[#9399a0] hover:text-[#c9ced5] text-center transition-colors">
+                      <Link href={info.slug_url} className="text-[10px] text-[var(--text-muted)] hover:text-[var(--text-soft)] text-center transition-colors">
                         Ghid complet →
                       </Link>
                     )}
@@ -237,14 +237,14 @@ export default function ServiciiPage() {
 
               {/* Servicii internationale */}
               {itemsIntl.map(item => (
-                <div key={item.name} className={`bg-[#14181c] border border-[#1f2329] ${culoare.ring} rounded-xl p-5 flex flex-col gap-3 transition-all`}>
+                <div key={item.name} className={`bg-[var(--surface)] border border-[var(--border)] ${culoare.ring} rounded-xl p-5 flex flex-col gap-3 transition-all`}>
                   <div className="flex items-start justify-between gap-2">
                     <div>
                       <div className="flex items-center gap-2 mb-0.5">
-                        <span className="text-[#ffffff] font-black text-sm">{item.name}</span>
-                        <span className={`text-[10px] bg-[#1f2329] ${culoare.text} border border-[#2a2f36] px-1.5 py-0.5 rounded-full font-bold`}>International</span>
+                        <span className="text-[var(--foreground)] font-black text-sm">{item.name}</span>
+                        <span className={`text-[10px] bg-[var(--surface-alt)] ${culoare.text} border border-[var(--border-strong)] px-1.5 py-0.5 rounded-full font-bold`}>International</span>
                       </div>
-                      <p className="text-[#9399a0] text-xs">{item.desc}</p>
+                      <p className="text-[var(--text-muted)] text-xs">{item.desc}</p>
                     </div>
                   </div>
 
@@ -261,11 +261,11 @@ export default function ServiciiPage() {
       })}
 
       {/* CTA aplica la programe */}
-      <section className="max-w-5xl mx-auto px-4 py-10 border-t border-[#1f2329]">
+      <section className="max-w-5xl mx-auto px-4 py-10 border-t border-[var(--border)]">
         <div className="relative overflow-hidden rounded-xl p-7" style={{ background: "linear-gradient(120deg, rgba(13,148,136,0.12), rgba(20,184,166,0.10), rgba(16,185,129,0.10))" }}>
-          <div className="absolute inset-0 border border-[#ddf93c]/20 rounded-xl pointer-events-none" />
-          <h2 className="text-xl font-black text-[#ffffff] mb-2">Cauți un serviciu care lipsește?</h2>
-          <p className="text-[#c9ced5] text-sm mb-5">
+          <div className="absolute inset-0 border border-[var(--accent-text)]/20 rounded-xl pointer-events-none" />
+          <h2 className="text-xl font-black text-[var(--foreground)] mb-2">Cauți un serviciu care lipsește?</h2>
+          <p className="text-[var(--text-soft)] text-sm mb-5">
             AmCupon.ro preia automat ofertele de la {pesteMagazine()} și servicii partenere. Dacă știi un serviciu pe care nu-l avem, scrie-ne.
           </p>
           <div className="flex flex-wrap gap-3">
@@ -275,7 +275,7 @@ export default function ServiciiPage() {
               Servicii recomandate →
             </Link>
             <Link href="/contact"
-              className="bg-[#1f2329] hover:bg-[#2a2f36] text-[#ffffff] font-bold px-5 py-2.5 rounded-xl text-sm transition-all border border-[#2a2f36]">
+              className="bg-[var(--surface-alt)] hover:bg-[var(--surface-high)] text-[var(--foreground)] font-bold px-5 py-2.5 rounded-xl text-sm transition-all border border-[var(--border-strong)]">
               Sugereaza un serviciu
             </Link>
           </div>

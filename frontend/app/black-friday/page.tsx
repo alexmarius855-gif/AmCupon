@@ -133,38 +133,38 @@ export default function BlackFridayPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
       />
 
-      <div className="min-h-screen bg-[#06080b] text-[#ffffff]">
-        <nav className="max-w-6xl mx-auto px-4 pt-4 text-xs text-[#9399a0] flex items-center gap-1">
-          <Link href="/" className="hover:text-[#ddf93c] transition-colors">Acasă</Link>
+      <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
+        <nav className="max-w-6xl mx-auto px-4 pt-4 text-xs text-[var(--text-muted)] flex items-center gap-1">
+          <Link href="/" className="hover:text-[var(--accent-text)] transition-colors">Acasă</Link>
           <span className="mx-1">/</span>
-          <span className="text-[#c9ced5]">Black Friday {BF.an}</span>
+          <span className="text-[var(--text-soft)]">Black Friday {BF.an}</span>
         </nav>
 
         <section className="max-w-6xl mx-auto px-4 pt-10 pb-8">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#ddf93c] mb-3">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[var(--accent-text)] mb-3">
             Actualizat de trei ori pe zi
           </p>
           <h1 className="text-3xl md:text-5xl font-black leading-tight mb-4">
             Black Friday {BF.an} în România
           </h1>
-          <p className="text-[#c9ced5] text-base md:text-lg max-w-2xl">
+          <p className="text-[var(--text-soft)] text-base md:text-lg max-w-2xl">
             Ofertele active acum la magazinele partenere AmCupon. Pe fiecare magazin vezi codul,
             dacă există, și până când e valabilă oferta.
           </p>
 
           <div className="grid sm:grid-cols-2 gap-3 mt-8 max-w-2xl">
-            <div className="bg-[#14181c] border border-[#1f2329] rounded-xl p-4">
-              <p className="text-xs text-[#9399a0]">Black Friday la eMAG</p>
+            <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-4">
+              <p className="text-xs text-[var(--text-muted)]">Black Friday la eMAG</p>
               <p className="font-bold text-lg mt-0.5">{BF.emag}</p>
             </div>
-            <div className="bg-[#14181c] border border-[#1f2329] rounded-xl p-4">
-              <p className="text-xs text-[#9399a0]">Magazinele internaționale</p>
+            <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-4">
+              <p className="text-xs text-[var(--text-muted)]">Magazinele internaționale</p>
               <p className="font-bold text-lg mt-0.5">{BF.international}</p>
             </div>
           </div>
-          <p className="text-xs text-[#6b7178] mt-2">
+          <p className="text-xs text-[var(--text-muted)] mt-2">
             Sursa datelor:{" "}
-            <a href={BF.sursa} target="_blank" rel="noopener noreferrer" className="underline hover:text-[#ddf93c]">
+            <a href={BF.sursa} target="_blank" rel="noopener noreferrer" className="underline hover:text-[var(--accent-text)]">
               wall-street.ro
             </a>
           </p>
@@ -175,9 +175,9 @@ export default function BlackFridayPage() {
               { val: oferte, eticheta: "oferte active" },
               { val: coduri, eticheta: "coduri de reducere" },
             ].map((s) => (
-              <div key={s.eticheta} className="bg-[#14181c] border border-[#1f2329] rounded-xl py-3 px-3">
-                <p className="text-2xl font-black text-[#ddf93c]">{s.val}</p>
-                <p className="text-xs text-[#9399a0] mt-0.5 leading-snug">{s.eticheta}</p>
+              <div key={s.eticheta} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl py-3 px-3">
+                <p className="text-2xl font-black text-[var(--accent-text)]">{s.val}</p>
+                <p className="text-xs text-[var(--text-muted)] mt-0.5 leading-snug">{s.eticheta}</p>
               </div>
             ))}
           </div>
@@ -186,7 +186,7 @@ export default function BlackFridayPage() {
         <section className="max-w-6xl mx-auto px-4 pb-12">
           <div className="flex items-baseline justify-between mb-5 gap-4">
             <h2 className="text-xl font-black">Ofertele active acum</h2>
-            <span className="text-sm text-[#9399a0] shrink-0">
+            <span className="text-sm text-[var(--text-muted)] shrink-0">
               {afisate.length} din {cuOferta.length}
             </span>
           </div>
@@ -197,13 +197,13 @@ export default function BlackFridayPage() {
               ))}
             </div>
           ) : (
-            <div className="text-center py-10 text-[#9399a0] text-sm border border-dashed border-[#2a2f36] rounded-xl">
+            <div className="text-center py-10 text-[var(--text-muted)] text-sm border border-dashed border-[var(--border-strong)] rounded-xl">
               Niciun magazin partener nu are o ofertă activă chiar acum. Lista se actualizează de trei ori pe zi.
             </div>
           )}
           {cuOferta.length > afisate.length && (
             <div className="mt-6 text-center">
-              <Link href="/oferte-azi" className="text-sm font-semibold text-[#ddf93c] hover:text-[#c3dd2c]">
+              <Link href="/oferte-azi" className="text-sm font-semibold text-[var(--accent-text)] hover:text-[var(--accent-text)]">
                 Toate ofertele de azi →
               </Link>
             </div>
@@ -214,14 +214,14 @@ export default function BlackFridayPage() {
           <NewsletterCTA titlu="Ofertele active, pe email" />
         </section>
 
-        <section className="border-t border-[#1f2329] bg-[#0b0e12]">
+        <section className="border-t border-[var(--border)] bg-[#0b0e12]">
           <div className="max-w-3xl mx-auto px-4 py-12">
             <h2 className="text-2xl font-black mb-6">Întrebări despre Black Friday {BF.an}</h2>
             <div className="space-y-6">
               {faq.map((f) => (
                 <div key={f.q}>
                   <h3 className="font-bold mb-2">{f.q}</h3>
-                  <p className="text-[#c9ced5] text-sm leading-relaxed">{f.a}</p>
+                  <p className="text-[var(--text-soft)] text-sm leading-relaxed">{f.a}</p>
                 </div>
               ))}
             </div>

@@ -52,10 +52,10 @@ const LINK_KASPERSKY   = "https://www.kaspersky.com";
 
 // 07.10.2026: fara preturi scrise de mana si fara superlative; culoare = fundal + text lizibil.
 const COMPARATIV = [
-  { brand: "Bitdefender", highlight: "Brand românesc, cu protecție anti-ransomware", culoare: "bg-red-600 text-[#ffffff]", url: LINK_BITDEFENDER },
+  { brand: "Bitdefender", highlight: "Brand românesc, cu protecție anti-ransomware", culoare: "bg-red-600 text-[var(--foreground)]", url: LINK_BITDEFENDER },
   { brand: "Norton 360", highlight: "VPN inclus în pachetele Norton 360", culoare: "bg-yellow-500 text-[#0c1000]", url: LINK_NORTON },
   { brand: "ESET NOD32", highlight: "Gândit să consume puține resurse", culoare: "bg-[#ddf93c] text-[#0c1000]", url: LINK_ESET },
-  { brand: "Kaspersky", highlight: "Protecție la plăți online (Safe Money)", culoare: "bg-emerald-600 text-[#ffffff]", url: LINK_KASPERSKY },
+  { brand: "Kaspersky", highlight: "Protecție la plăți online (Safe Money)", culoare: "bg-emerald-600 text-[var(--foreground)]", url: LINK_KASPERSKY },
 ];
 
 const CULORI_BADGE = ["bg-red-600","bg-yellow-500","bg-[#ddf93c]","bg-emerald-600","bg-[#ddf93c]","bg-[#ddf93c]","bg-[#ddf93c]"];
@@ -76,14 +76,14 @@ export default function AntivirusPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-[#06080b]">
+      <div className="min-h-screen bg-[var(--background)]">
 
         {/* Breadcrumb */}
-        <nav className="bg-[#14181c]/80 backdrop-blur-sm border-b border-[#1f2329]">
-          <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-1.5 text-xs text-[#9399a0]">
-            <Link href="/" className="hover:text-[#ddf93c] transition-colors">Acasa</Link>
+        <nav className="bg-[var(--surface)]/80 backdrop-blur-sm border-b border-[var(--border)]">
+          <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-1.5 text-xs text-[var(--text-muted)]">
+            <Link href="/" className="hover:text-[var(--accent-text)] transition-colors">Acasa</Link>
             <span>/</span>
-            <span className="text-[#c9ced5] font-medium">Antivirus</span>
+            <span className="text-[var(--text-soft)] font-medium">Antivirus</span>
           </div>
         </nav>
 
@@ -99,15 +99,15 @@ export default function AntivirusPage() {
               Ghid de alegere
             </div>
             <div className="text-6xl mb-5 drop-shadow-2xl">🛡️</div>
-            <h1 className="text-4xl md:text-5xl font-black text-[#ffffff] mb-4 tracking-tight">
+            <h1 className="text-4xl md:text-5xl font-black text-[var(--foreground)] mb-4 tracking-tight">
               Antivirus Romania <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #ddf93c, #ddf93c)"}}>{an}</span>
             </h1>
-            <p className="text-[#c9ced5] text-lg mb-8 max-w-xl mx-auto leading-relaxed">
+            <p className="text-[var(--text-soft)] text-lg mb-8 max-w-xl mx-auto leading-relaxed">
               Bitdefender, Norton, ESET, Kaspersky — ce include fiecare și cum alegi pachetul potrivit
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["PC & Mac","Android","iOS","5 Dispozitive","Parental Control","VPN Inclus","Dark Web Monitor"].map(c => (
-                <span key={c} className="bg-[#1f2329] border border-[#2a2f36] text-slate-500 text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
+                <span key={c} className="bg-[var(--surface-alt)] border border-[var(--border-strong)] text-slate-500 text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
               ))}
             </div>
           </div>
@@ -117,17 +117,17 @@ export default function AntivirusPage() {
         <section className="max-w-6xl mx-auto px-4 py-12">
           <div className="text-center mb-8">
             <p className="text-xs font-bold text-red-400 uppercase tracking-widest mb-2">COMPARATIV</p>
-            <h2 className="text-2xl font-black text-[#ffffff]">Antivirusuri populare în România, {an}</h2>
+            <h2 className="text-2xl font-black text-[var(--foreground)]">Antivirusuri populare în România, {an}</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {COMPARATIV.map(c => (
               <a key={c.brand} href={linkPlatit(c.url)} target="_blank" rel="sponsored noopener noreferrer"
-                className="block bg-[#14181c] border border-[#1f2329] hover:border-red-500/40 rounded-xl p-5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-red-500/10">
+                className="block bg-[var(--surface)] border border-[var(--border)] hover:border-red-500/40 rounded-xl p-5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-red-500/10">
                 <div className={`w-11 h-11 ${c.culoare} rounded-xl flex items-center justify-center font-black text-sm mb-4`}>{c.brand[0]}</div>
-                <h3 className="font-black text-[#ffffff] text-base mb-1">{c.brand}</h3>
-                <p className="text-xs text-[#c9ced5] mb-3">{c.highlight}</p>
+                <h3 className="font-black text-[var(--foreground)] text-base mb-1">{c.brand}</h3>
+                <p className="text-xs text-[var(--text-soft)] mb-3">{c.highlight}</p>
                 <div className="flex items-center justify-between">
-                  <span className="text-[#ddf93c] font-bold text-xs">Vezi pachetele pe site →</span>
+                  <span className="text-[var(--accent-text)] font-bold text-xs">Vezi pachetele pe site →</span>
                 </div>
               </a>
             ))}
@@ -137,17 +137,17 @@ export default function AntivirusPage() {
         {/* Tipuri protectie */}
         <section className="max-w-6xl mx-auto px-4 pb-12">
           <div className="text-center mb-8">
-            <p className="text-xs font-bold text-[#ddf93c] uppercase tracking-widest mb-2">FUNCTII</p>
-            <h2 className="text-2xl font-black text-[#ffffff]">Ce include un antivirus bun</h2>
+            <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-2">FUNCTII</p>
+            <h2 className="text-2xl font-black text-[var(--foreground)]">Ce include un antivirus bun</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {TIPURI_PROTECTIE.map((a, i) => (
-              <div key={a.titlu} className="bg-[#14181c] border border-[#1f2329] hover:border-red-500/30 rounded-xl p-5 transition-all duration-200">
+              <div key={a.titlu} className="bg-[var(--surface)] border border-[var(--border)] hover:border-red-500/30 rounded-xl p-5 transition-all duration-200">
                 <div className="flex items-center gap-3 mb-3">
                   <div className={`w-10 h-10 rounded-xl flex items-center justify-center text-xl ${CULORI_BADGE[i % CULORI_BADGE.length]}`}>{a.emoji}</div>
-                  <h3 className="font-bold text-[#ffffff] text-sm">{a.titlu}</h3>
+                  <h3 className="font-bold text-[var(--foreground)] text-sm">{a.titlu}</h3>
                 </div>
-                <p className="text-xs text-[#c9ced5] leading-relaxed">{a.desc}</p>
+                <p className="text-xs text-[var(--text-soft)] leading-relaxed">{a.desc}</p>
               </div>
             ))}
           </div>
@@ -158,8 +158,8 @@ export default function AntivirusPage() {
           <section className="max-w-6xl mx-auto px-4 pb-12">
             <div className="flex items-center justify-between mb-6">
               <div>
-                <p className="text-xs font-bold text-[#ddf93c] uppercase tracking-widest mb-1">MAGAZINE PARTENERE</p>
-                <h2 className="text-xl font-black text-[#ffffff]">Unde găsești antivirus</h2>
+                <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-1">MAGAZINE PARTENERE</p>
+                <h2 className="text-xl font-black text-[var(--foreground)]">Unde găsești antivirus</h2>
               </div>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
@@ -181,22 +181,22 @@ export default function AntivirusPage() {
         />
 
         {/* Ghid */}
-        <section className="bg-[#14181c] border-t border-[#1f2329] py-12 px-4">
+        <section className="bg-[var(--surface)] border-t border-[var(--border)] py-12 px-4">
           <div className="max-w-3xl mx-auto">
             <p className="text-xs font-bold text-red-400 uppercase tracking-widest mb-3">GHID ALEGERE</p>
-            <h2 className="text-2xl font-black text-[#ffffff] mb-7">Ce antivirus sa alegi in {an}</h2>
+            <h2 className="text-2xl font-black text-[var(--foreground)] mb-7">Ce antivirus sa alegi in {an}</h2>
             <div className="space-y-5">
-              <div className="bg-[#1f2329] border border-[#2a2f36] rounded-xl p-5">
-                <h3 className="font-bold text-[#ffffff] mb-2 text-base">Bitdefender — antivirusul românesc</h3>
-                <p className="text-sm text-[#c9ced5] leading-relaxed">Bitdefender e o companie românească, fondată în București, cu rezultate bune constant în testele independente de detecție (AV-Test, AV-Comparatives). Pachetele diferă prin numărul de dispozitive și prin extra-uri (VPN, control parental, protecția camerei web) — compară-le pe site înainte să alegi.</p>
+              <div className="bg-[var(--surface-alt)] border border-[var(--border-strong)] rounded-xl p-5">
+                <h3 className="font-bold text-[var(--foreground)] mb-2 text-base">Bitdefender — antivirusul românesc</h3>
+                <p className="text-sm text-[var(--text-soft)] leading-relaxed">Bitdefender e o companie românească, fondată în București, cu rezultate bune constant în testele independente de detecție (AV-Test, AV-Comparatives). Pachetele diferă prin numărul de dispozitive și prin extra-uri (VPN, control parental, protecția camerei web) — compară-le pe site înainte să alegi.</p>
               </div>
-              <div className="bg-[#1f2329] border border-[#2a2f36] rounded-xl p-5">
-                <h3 className="font-bold text-[#ffffff] mb-2 text-base">Norton 360 — VPN inclus</h3>
-                <p className="text-sm text-[#c9ced5] leading-relaxed">Pachetele Norton 360 includ VPN pe lângă antivirus — util dacă folosești des rețele Wi-Fi publice.</p>
+              <div className="bg-[var(--surface-alt)] border border-[var(--border-strong)] rounded-xl p-5">
+                <h3 className="font-bold text-[var(--foreground)] mb-2 text-base">Norton 360 — VPN inclus</h3>
+                <p className="text-sm text-[var(--text-soft)] leading-relaxed">Pachetele Norton 360 includ VPN pe lângă antivirus — util dacă folosești des rețele Wi-Fi publice.</p>
               </div>
-              <div className="bg-[#1f2329] border border-[#2a2f36] rounded-xl p-5">
-                <h3 className="font-bold text-[#ffffff] mb-2 text-base">Ai nevoie de antivirus pe telefon?</h3>
-                <p className="text-sm text-[#c9ced5] leading-relaxed">Pe Android ajută, mai ales dacă instalezi aplicații din afara Google Play. Pe iOS aplicațiile sunt mai izolate; acolo contează mai mult protecția la phishing. Multe pachete pentru mai multe dispozitive includ și telefonul.</p>
+              <div className="bg-[var(--surface-alt)] border border-[var(--border-strong)] rounded-xl p-5">
+                <h3 className="font-bold text-[var(--foreground)] mb-2 text-base">Ai nevoie de antivirus pe telefon?</h3>
+                <p className="text-sm text-[var(--text-soft)] leading-relaxed">Pe Android ajută, mai ales dacă instalezi aplicații din afara Google Play. Pe iOS aplicațiile sunt mai izolate; acolo contează mai mult protecția la phishing. Multe pachete pentru mai multe dispozitive includ și telefonul.</p>
               </div>
             </div>
           </div>
@@ -204,7 +204,7 @@ export default function AntivirusPage() {
 
         {/* Related */}
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <p className="text-xs font-bold text-[#9399a0] uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
+          <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/vpn", label: "🌐 VPN" },
@@ -214,18 +214,18 @@ export default function AntivirusPage() {
               { href: "/electronice", label: "📱 Electronice" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-[#1f2329] hover:bg-[#2a2f36] border border-[#2a2f36] hover:border-red-500/40 text-[#c9ced5] hover:text-[#ffffff] text-sm font-semibold px-4 py-2 rounded-xl transition-all duration-200">
+                className="bg-[var(--surface-alt)] hover:bg-[var(--surface-high)] border border-[var(--border-strong)] hover:border-red-500/40 text-[var(--text-soft)] hover:text-[var(--foreground)] text-sm font-semibold px-4 py-2 rounded-xl transition-all duration-200">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-[#1f2329] py-6 text-center text-xs text-[#9399a0]">
+        <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)]">
           &copy; {an} AmCupon.ro &middot;{" "}
-          <Link href="/vpn" className="hover:text-[#ddf93c] transition-colors">VPN</Link>{" · "}
-          <Link href="/hosting" className="hover:text-[#ddf93c] transition-colors">Hosting</Link>{" · "}
-          <Link href="/categorii" className="hover:text-[#ddf93c] transition-colors">Categorii</Link>
+          <Link href="/vpn" className="hover:text-[var(--accent-text)] transition-colors">VPN</Link>{" · "}
+          <Link href="/hosting" className="hover:text-[var(--accent-text)] transition-colors">Hosting</Link>{" · "}
+          <Link href="/categorii" className="hover:text-[var(--accent-text)] transition-colors">Categorii</Link>
         </footer>
       </div>
     </>

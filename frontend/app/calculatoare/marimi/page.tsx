@@ -136,7 +136,7 @@ export default function ConvertorMarimiPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
 
-      <nav className="text-xs text-[#9399a0] mb-5">
+      <nav className="text-xs text-[var(--text-muted)] mb-5">
         <Link href="/" className="hover:text-white transition-colors">
           Acasă
         </Link>
@@ -151,7 +151,7 @@ export default function ConvertorMarimiPage() {
       <h1 className="text-3xl sm:text-4xl font-black mb-3 leading-tight">
         Convertor de mărimi
       </h1>
-      <p className="text-[#9399a0] mb-8 max-w-2xl">
+      <p className="text-[var(--text-muted)] mb-8 max-w-2xl">
         Echivalențe între mărimile din România, Marea Britanie, Statele Unite și Italia, pentru
         haine damă, bărbați, încălțăminte și copii.
       </p>
@@ -164,24 +164,24 @@ export default function ConvertorMarimiPage() {
           {FAQ.map((f) => (
             <details
               key={f.q}
-              className="bg-[#14181c] rounded-xl border border-[#1f2329] p-5 group"
+              className="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5 group"
             >
               <summary className="font-semibold cursor-pointer list-none flex justify-between items-center gap-4">
                 {f.q}
-                <span className="text-[#ddf93c] shrink-0 group-open:rotate-45 transition-transform">
+                <span className="text-[var(--accent-text)] shrink-0 group-open:rotate-45 transition-transform">
                   +
                 </span>
               </summary>
-              <p className="text-[#9399a0] mt-3 leading-relaxed">{f.a}</p>
+              <p className="text-[var(--text-muted)] mt-3 leading-relaxed">{f.a}</p>
             </details>
           ))}
         </div>
       </section>
 
       {fashion.length > 0 && (
-        <section className="mt-12 bg-[#14181c] rounded-xl border border-[#1f2329] p-6">
+        <section className="mt-12 bg-[var(--surface)] rounded-xl border border-[var(--border)] p-6">
           <h2 className="text-xl font-black mb-2">Ai găsit mărimea. Găsește și reducerea.</h2>
-          <p className="text-[#9399a0] mb-4">
+          <p className="text-[var(--text-muted)] mb-4">
             {fashion.length} magazine de fashion au acum o promoție activă.
           </p>
           <div className="flex flex-wrap gap-2">
@@ -189,7 +189,7 @@ export default function ConvertorMarimiPage() {
               <Link
                 key={m.magazin}
                 href={`/cod-reducere/${m.magazin}`}
-                className="bg-[#1f2329] hover:bg-[#2a2f36] text-white text-sm font-semibold px-3.5 py-2 rounded-lg transition-colors"
+                className="bg-[var(--surface-alt)] hover:bg-[var(--surface-high)] text-white text-sm font-semibold px-3.5 py-2 rounded-lg transition-colors"
               >
                 {m.magazin}
               </Link>

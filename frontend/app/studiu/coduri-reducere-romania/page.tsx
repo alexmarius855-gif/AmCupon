@@ -113,10 +113,10 @@ export default function StudiuPage() {
 
   if (!s) {
     return (
-      <div className="min-h-screen bg-[#06080b] flex items-center justify-center px-4">
-        <p className="text-[#c9ced5]">
+      <div className="min-h-screen bg-[var(--background)] flex items-center justify-center px-4">
+        <p className="text-[var(--text-soft)]">
           Datele studiului se regenereaza. Revino in cateva minute sau vezi{" "}
-          <Link href="/" className="text-[#ddf93c] font-semibold hover:text-[#c3dd2c]">pagina principala</Link>.
+          <Link href="/" className="text-[var(--accent-text)] font-semibold hover:text-[var(--accent-text)]">pagina principala</Link>.
         </p>
       </div>
     );
@@ -168,26 +168,26 @@ export default function StudiuPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <div className="min-h-screen bg-[#06080b]">
+      <div className="min-h-screen bg-[var(--background)]">
 
-        <nav className="bg-[#06080b] border-b border-[#1f2329]">
-          <div className="max-w-3xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#9399a0]">
-            <Link href="/" className="hover:text-[#ddf93c]">Acasa</Link>
+        <nav className="bg-[var(--background)] border-b border-[var(--border)]">
+          <div className="max-w-3xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[var(--text-muted)]">
+            <Link href="/" className="hover:text-[var(--accent-text)]">Acasa</Link>
             <span className="mx-1">/</span>
-            <span className="text-[#c9ced5] font-medium">Studiu: coduri de reducere</span>
+            <span className="text-[var(--text-soft)] font-medium">Studiu: coduri de reducere</span>
           </div>
         </nav>
 
         {/* ── Teza ─────────────────────────────────────────────────────────── */}
         <header className="max-w-3xl mx-auto px-4 pt-12 pb-8">
-          <p className="text-[11px] font-bold tracking-[0.14em] uppercase text-[#9399a0] mb-5">
+          <p className="text-[11px] font-bold tracking-[0.14em] uppercase text-[var(--text-muted)] mb-5">
             Date proprii &middot; actualizat {s.generat}
           </p>
-          <h1 className="text-3xl md:text-[2.6rem] font-black text-[#ffffff] leading-[1.12] mb-6">
+          <h1 className="text-3xl md:text-[2.6rem] font-black text-[var(--foreground)] leading-[1.12] mb-6">
             Doar {s.cu_cod_real} din {s.total_magazine.toLocaleString("ro-RO")} de magazine online
             romanesti au azi un cod de reducere real
           </h1>
-          <p className="text-[#c9ced5] text-lg leading-relaxed">
+          <p className="text-[var(--text-soft)] text-lg leading-relaxed">
             Urmarim automat promotiile din {s.total_magazine.toLocaleString("ro-RO")} de magazine
             care vand in Romania. Am numarat cate au cu adevarat un cod de cupon activ, si cate
             doar par sa aiba. Rezultatul nu ne avantajeaza: administram un site de cupoane.
@@ -204,20 +204,20 @@ export default function StudiuPage() {
             ].map((x) => (
               <div key={x.eticheta}
                 className={`rounded-xl p-5 border ${x.accent
-                  ? "bg-[#1f2329] border-[#ddf93c]/40"
-                  : "bg-[#14181c] border-[#1f2329]"}`}>
-                <div className={`text-4xl font-black leading-none mb-2 ${x.accent ? "text-[#ddf93c]" : "text-[#ffffff]"}`}>
+                  ? "bg-[var(--surface-alt)] border-[var(--accent-text)]/40"
+                  : "bg-[var(--surface)] border-[var(--border)]"}`}>
+                <div className={`text-4xl font-black leading-none mb-2 ${x.accent ? "text-[var(--accent-text)]" : "text-[var(--foreground)]"}`}>
                   {x.cifra}
                 </div>
-                <div className="text-xs text-[#9399a0] leading-snug">{x.eticheta}</div>
+                <div className="text-xs text-[var(--text-muted)] leading-snug">{x.eticheta}</div>
               </div>
             ))}
           </div>
 
-          <p className="text-[#c9ced5] mt-6 leading-relaxed">
-            Diferenta conteaza pentru cumparator: <strong className="text-[#ffffff]">{s.doar_oferta} magazine</strong>{" "}
+          <p className="text-[var(--text-soft)] mt-6 leading-relaxed">
+            Diferenta conteaza pentru cumparator: <strong className="text-[var(--foreground)]">{s.doar_oferta} magazine</strong>{" "}
             au reduceri active, dar afisate direct in pret, fara cod de introdus la finalizarea
-            comenzii. Doar <strong className="text-[#ffffff]">{s.cu_cod_real}</strong>{" "}cer un cod.
+            comenzii. Doar <strong className="text-[var(--foreground)]">{s.cu_cod_real}</strong>{" "}cer un cod.
             Cine cauta &quot;cod reducere X&quot; pe Google gaseste, in marea majoritate a cazurilor,
             pagini care promit un cod ce nu exista.
           </p>
@@ -229,37 +229,37 @@ export default function StudiuPage() {
             ar arata in grafic ca o scadere a promotiilor, iar pagina asta e facuta sa fie citata. */}
         {ultimaLuna && (
           <section className="max-w-3xl mx-auto px-4 pb-10">
-            <h2 className="text-xl font-black text-[#ffffff] mb-2">
+            <h2 className="text-xl font-black text-[var(--foreground)] mb-2">
               {numeLuna(ultimaLuna.luna).replace(/^./, (c) => c.toUpperCase())} in cifre
             </h2>
             {ultimaLuna.incomplet ? (
-              <p className="text-sm text-[#c9ced5] leading-relaxed">
+              <p className="text-sm text-[var(--text-soft)] leading-relaxed">
                 Pentru {numeLuna(ultimaLuna.luna)} nu publicam cifrele: doar {ultimaLuna.zile_bune} din{" "}
                 {ultimaLuna.zile} zile au avut date complete. Preferam o luna lipsa unei luni gresite.
               </p>
             ) : (
               <>
-                <p className="text-[#c9ced5] leading-relaxed mb-3">
+                <p className="text-[var(--text-soft)] leading-relaxed mb-3">
                   In {numeLuna(ultimaLuna.luna)} am vazut{" "}
-                  <strong className="text-[#ffffff]">{cuDe(ultimaLuna.promotii_noi)} promotii noi</strong> la{" "}
+                  <strong className="text-[var(--foreground)]">{cuDe(ultimaLuna.promotii_noi)} promotii noi</strong> la{" "}
                   {cuDe(ultimaLuna.magazine)} magazine. Dintre ele,{" "}
-                  <strong className="text-[#ddf93c]">{ultimaLuna.cu_cod}</strong>{" "}
+                  <strong className="text-[var(--accent-text)]">{ultimaLuna.cu_cod}</strong>{" "}
                   ({ultimaLuna.promotii_noi ? Math.round(((ultimaLuna.cu_cod ?? 0) / ultimaLuna.promotii_noi) * 100) : 0}%)
                   au avut cod de reducere; restul au fost oferte fara cod de introdus.
                 </p>
-                <p className="text-[#c9ced5] leading-relaxed mb-5">
+                <p className="text-[var(--text-soft)] leading-relaxed mb-5">
                   In medie, {cuDe(ultimaLuna.active_pe_zi)} promotii au fost active in fiecare zi.{" "}
                   {ultimaLuna.din_magazine_ro} dintre promotiile noi au venit de la magazine cu domeniu .ro.
                 </p>
 
                 {(ultimaLuna.top_ro?.length ?? 0) > 0 && (
-                  <div className="overflow-x-auto rounded-xl border border-[#1f2329] mb-5">
+                  <div className="overflow-x-auto rounded-xl border border-[var(--border)] mb-5">
                     <table className="w-full text-sm min-w-[420px]">
-                      <caption className="text-left text-xs text-[#9399a0] px-4 pt-3 pb-1">
+                      <caption className="text-left text-xs text-[var(--text-muted)] px-4 pt-3 pb-1">
                         Magazinele .ro cu cele mai multe promotii noi
                       </caption>
                       <thead>
-                        <tr className="bg-[#14181c] text-[#9399a0] text-[11px] uppercase tracking-wider">
+                        <tr className="bg-[var(--surface)] text-[var(--text-muted)] text-[11px] uppercase tracking-wider">
                           <th className="text-left font-bold px-4 py-3">Magazin</th>
                           <th className="text-right font-bold px-4 py-3">Promotii noi</th>
                           <th className="text-right font-bold px-4 py-3">Cu cod</th>
@@ -267,14 +267,14 @@ export default function StudiuPage() {
                       </thead>
                       <tbody>
                         {ultimaLuna.top_ro!.map((m) => (
-                          <tr key={m.slug} className="border-t border-[#1f2329]">
+                          <tr key={m.slug} className="border-t border-[var(--border)]">
                             <td className="px-4 py-3">
-                              <Link href={`/cod-reducere/${m.slug}`} className="text-[#ffffff] font-semibold hover:text-[#ddf93c]">
+                              <Link href={`/cod-reducere/${m.slug}`} className="text-[var(--foreground)] font-semibold hover:text-[var(--accent-text)]">
                                 {m.nume}
                               </Link>
                             </td>
-                            <td className="px-4 py-3 text-right text-[#c9ced5] tabular-nums">{m.promotii}</td>
-                            <td className="px-4 py-3 text-right text-[#c9ced5] tabular-nums">{m.cu_cod}</td>
+                            <td className="px-4 py-3 text-right text-[var(--text-soft)] tabular-nums">{m.promotii}</td>
+                            <td className="px-4 py-3 text-right text-[var(--text-soft)] tabular-nums">{m.cu_cod}</td>
                           </tr>
                         ))}
                       </tbody>
@@ -283,12 +283,12 @@ export default function StudiuPage() {
                 )}
 
                 {(ultimaLuna.categorii?.length ?? 0) > 0 && (
-                  <p className="text-sm text-[#c9ced5] leading-relaxed mb-4">
+                  <p className="text-sm text-[var(--text-soft)] leading-relaxed mb-4">
                     Pe categorii:{" "}
                     {ultimaLuna.categorii!.map((c, i) => (
                       <span key={c.slug}>
                         {i > 0 && ", "}
-                        <Link href={`/categorii/${c.slug}`} className="text-[#ffffff] hover:text-[#ddf93c]">{c.nume}</Link>{" "}
+                        <Link href={`/categorii/${c.slug}`} className="text-[var(--foreground)] hover:text-[var(--accent-text)]">{c.nume}</Link>{" "}
                         {c.promotii}
                       </span>
                     ))}
@@ -299,10 +299,10 @@ export default function StudiuPage() {
             )}
 
             {luniPublicate.length > 1 && (
-              <div className="overflow-x-auto rounded-xl border border-[#1f2329] mb-4">
+              <div className="overflow-x-auto rounded-xl border border-[var(--border)] mb-4">
                 <table className="w-full text-sm min-w-[420px]">
                   <thead>
-                    <tr className="bg-[#14181c] text-[#9399a0] text-[11px] uppercase tracking-wider">
+                    <tr className="bg-[var(--surface)] text-[var(--text-muted)] text-[11px] uppercase tracking-wider">
                       <th className="text-left font-bold px-4 py-3">Luna</th>
                       <th className="text-right font-bold px-4 py-3">Promotii noi</th>
                       <th className="text-right font-bold px-4 py-3">Cu cod</th>
@@ -311,15 +311,15 @@ export default function StudiuPage() {
                   </thead>
                   <tbody>
                     {lunar.map((l) => (
-                      <tr key={l.luna} className="border-t border-[#1f2329]">
-                        <td className="px-4 py-3 text-[#ffffff]">{numeLuna(l.luna)}</td>
+                      <tr key={l.luna} className="border-t border-[var(--border)]">
+                        <td className="px-4 py-3 text-[var(--foreground)]">{numeLuna(l.luna)}</td>
                         {l.incomplet ? (
-                          <td colSpan={3} className="px-4 py-3 text-right text-[#9399a0]">date incomplete</td>
+                          <td colSpan={3} className="px-4 py-3 text-right text-[var(--text-muted)]">date incomplete</td>
                         ) : (
                           <>
-                            <td className="px-4 py-3 text-right text-[#c9ced5] tabular-nums">{l.promotii_noi}</td>
-                            <td className="px-4 py-3 text-right text-[#c9ced5] tabular-nums">{l.cu_cod}</td>
-                            <td className="px-4 py-3 text-right text-[#c9ced5] tabular-nums">{l.magazine}</td>
+                            <td className="px-4 py-3 text-right text-[var(--text-soft)] tabular-nums">{l.promotii_noi}</td>
+                            <td className="px-4 py-3 text-right text-[var(--text-soft)] tabular-nums">{l.cu_cod}</td>
+                            <td className="px-4 py-3 text-right text-[var(--text-soft)] tabular-nums">{l.magazine}</td>
                           </>
                         )}
                       </tr>
@@ -329,7 +329,7 @@ export default function StudiuPage() {
               </div>
             )}
 
-            <p className="text-xs text-[#9399a0] leading-relaxed">
+            <p className="text-xs text-[var(--text-muted)] leading-relaxed">
               Date din {ultimaLuna.zile_bune} din cele {cuDe(ultimaLuna.zile)} zile ale lunii. O promotie e noua in luna
               in care am vazut-o prima data. Zilele in care o retea n-a raspuns nu intra in calcule.
             </p>
@@ -338,8 +338,8 @@ export default function StudiuPage() {
 
         {/* ── Reduceri pe categorie ────────────────────────────────────────── */}
         <section className="max-w-3xl mx-auto px-4 pb-10">
-          <h2 className="text-xl font-black text-[#ffffff] mb-2">Cat de mari sunt reducerile, pe categorii</h2>
-          <p className="text-sm text-[#9399a0] mb-5">
+          <h2 className="text-xl font-black text-[var(--foreground)] mb-2">Cat de mari sunt reducerile, pe categorii</h2>
+          <p className="text-sm text-[var(--text-muted)] mb-5">
             Procentele sunt extrase din textul promotiilor, asa cum l-au scris magazinele.
             Publicam mediana doar unde avem cel putin {s.prag_esantion} magazine care declara
             un procent &mdash; sub atat, o mediana ar fi zgomot prezentat ca masuratoare.
@@ -347,10 +347,10 @@ export default function StudiuPage() {
 
           <GraficCategorii categorii={s.categorii} />
 
-          <div className="overflow-x-auto rounded-xl border border-[#1f2329]">
+          <div className="overflow-x-auto rounded-xl border border-[var(--border)]">
             <table className="w-full text-sm min-w-[520px]">
               <thead>
-                <tr className="bg-[#14181c] text-[#9399a0] text-[11px] uppercase tracking-wider">
+                <tr className="bg-[var(--surface)] text-[var(--text-muted)] text-[11px] uppercase tracking-wider">
                   <th className="text-left font-bold px-4 py-3">Categorie</th>
                   <th className="text-right font-bold px-4 py-3">Magazine</th>
                   <th className="text-right font-bold px-4 py-3">Cu promotie</th>
@@ -360,16 +360,16 @@ export default function StudiuPage() {
               </thead>
               <tbody>
                 {cuMediana.map((c) => (
-                  <tr key={c.slug} className="border-t border-[#1f2329]">
+                  <tr key={c.slug} className="border-t border-[var(--border)]">
                     <td className="px-4 py-3">
-                      <Link href={`/categorii/${c.slug}`} className="text-[#ffffff] font-semibold hover:text-[#ddf93c]">
+                      <Link href={`/categorii/${c.slug}`} className="text-[var(--foreground)] font-semibold hover:text-[var(--accent-text)]">
                         {c.nume}
                       </Link>
                     </td>
-                    <td className="px-4 py-3 text-right text-[#c9ced5] tabular-nums">{c.magazine}</td>
-                    <td className="px-4 py-3 text-right text-[#c9ced5] tabular-nums">{c.cu_promotie}</td>
-                    <td className="px-4 py-3 text-right font-black text-[#ddf93c] tabular-nums">{String(c.reducere_mediana).replace(".", ",")}%</td>
-                    <td className="px-4 py-3 text-right text-[#c9ced5] tabular-nums">{c.reducere_max}%</td>
+                    <td className="px-4 py-3 text-right text-[var(--text-soft)] tabular-nums">{c.magazine}</td>
+                    <td className="px-4 py-3 text-right text-[var(--text-soft)] tabular-nums">{c.cu_promotie}</td>
+                    <td className="px-4 py-3 text-right font-black text-[var(--accent-text)] tabular-nums">{String(c.reducere_mediana).replace(".", ",")}%</td>
+                    <td className="px-4 py-3 text-right text-[var(--text-soft)] tabular-nums">{c.reducere_max}%</td>
                   </tr>
                 ))}
               </tbody>
@@ -377,8 +377,8 @@ export default function StudiuPage() {
           </div>
 
           {faraMediana.length > 0 && (
-            <p className="text-xs text-[#9399a0] mt-4 leading-relaxed">
-              <strong className="text-[#c9ced5]">Date insuficiente</strong> pentru inca{" "}
+            <p className="text-xs text-[var(--text-muted)] mt-4 leading-relaxed">
+              <strong className="text-[var(--text-soft)]">Date insuficiente</strong> pentru inca{" "}
               {faraMediana.length} categorii ({faraMediana.map((c) => c.nume).join(", ")}) &mdash;
               prea putine magazine declara un procent ca sa putem publica o mediana onesta.
               Le listam ca sa se vada ce NU stim, nu doar ce stim.
@@ -387,12 +387,12 @@ export default function StudiuPage() {
         </section>
 
         {/* ── Metoda ───────────────────────────────────────────────────────── */}
-        <section className="bg-[#14181c] border-y border-[#1f2329] py-10 px-4">
+        <section className="bg-[var(--surface)] border-y border-[var(--border)] py-10 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-[#ffffff] mb-5">Cum am masurat</h2>
-            <div className="space-y-4 text-sm text-[#c9ced5] leading-relaxed">
+            <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Cum am masurat</h2>
+            <div className="space-y-4 text-sm text-[var(--text-soft)] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Sursa datelor</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Sursa datelor</h3>
                 <p>
                   Magazinele si promotiile vin din retelele de afiliere in care AmCupon.ro e partener:{" "}
                   {s.retele.join(", ")}. Datele se reimprospateaza automat de trei ori pe zi.
@@ -400,7 +400,7 @@ export default function StudiuPage() {
                 </p>
               </div>
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Ce inseamna &quot;cod real&quot;</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Ce inseamna &quot;cod real&quot;</h3>
                 <p>
                   O promotie activa care contine un cod de cupon nevid, adica un text pe care
                   cumparatorul chiar il introduce la finalizarea comenzii. Promotiile cu reducere
@@ -408,10 +408,10 @@ export default function StudiuPage() {
                 </p>
               </div>
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Limitele acestei masuratori</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Limitele acestei masuratori</h3>
                 <p>
                   Acopera magazinele accesibile prin retelele de mai sus si codurile publice
-                  distribuite acolo. Un magazin care trimite coduri <strong className="text-[#ffffff]">doar
+                  distribuite acolo. Un magazin care trimite coduri <strong className="text-[var(--foreground)]">doar
                   pe newsletter, in aplicatie sau catre clienti individuali</strong>{" "}nu apare in
                   aceste cifre. Nu masuram tot comertul online romanesc, ci partea lui vizibila
                   prin afiliere &mdash; care e, totusi, exact partea pe care o vede oricine cauta
@@ -420,7 +420,7 @@ export default function StudiuPage() {
               </div>
               {s.serie_de_la && (
                 <div>
-                  <h3 className="font-bold text-[#ffffff] mb-1">Seria lunara</h3>
+                  <h3 className="font-bold text-[var(--foreground)] mb-1">Seria lunara</h3>
                   <p>
                     Seria lunara porneste pe {ZI.format(new Date(`${s.serie_de_la}T00:00:00Z`))}: de atunci
                     numaram zi de zi promotiile noi. Datele mai vechi exista, dar descriu schimbarile surselor
@@ -431,7 +431,7 @@ export default function StudiuPage() {
                 </div>
               )}
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Ce nu publicam</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Ce nu publicam</h3>
                 <p>
                   Comisioanele noastre de afiliere. Sunt ce castigam noi dintr-o vanzare, nu o
                   masura a pietei sau a ofertei pentru cumparator.
@@ -443,9 +443,9 @@ export default function StudiuPage() {
 
         {/* ── Date deschise ────────────────────────────────────────────────── */}
         <section className="max-w-3xl mx-auto px-4 py-10">
-          <div className="bg-[#14181c] border border-[#1f2329] rounded-xl p-6">
-            <h2 className="text-lg font-black text-[#ffffff] mb-2">Datele brute, libere de folosit</h2>
-            <p className="text-sm text-[#c9ced5] mb-4 leading-relaxed">
+          <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-6">
+            <h2 className="text-lg font-black text-[var(--foreground)] mb-2">Datele brute, libere de folosit</h2>
+            <p className="text-sm text-[var(--text-soft)] mb-4 leading-relaxed">
               Cifrele complete, inclusiv categoriile cu esantion prea mic, sunt publice in format
               JSON. Se pot prelua si verifica de oricine. Daca le folosesti intr-un articol, te
               rugam sa citezi AmCupon.ro ca sursa.
@@ -456,7 +456,7 @@ export default function StudiuPage() {
                 Descarca datele (JSON)
               </a>
               <Link href="/contact"
-                className="inline-block bg-[#1f2329] text-[#ffffff] font-bold text-sm px-5 py-2.5 rounded-xl border border-[#2a2f36] hover:border-[#c9ced5] transition-colors">
+                className="inline-block bg-[var(--surface-alt)] text-[var(--foreground)] font-bold text-sm px-5 py-2.5 rounded-xl border border-[var(--border-strong)] hover:border-[#c9ced5] transition-colors">
                 Intreaba despre metodologie
               </Link>
             </div>
@@ -465,7 +465,7 @@ export default function StudiuPage() {
 
         {/* ── Legaturi interne ─────────────────────────────────────────────── */}
         <section className="max-w-3xl mx-auto px-4 pb-10">
-          <h2 className="text-base font-black text-[#c9ced5] mb-4">Vezi si</h2>
+          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Vezi si</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/oferte-azi", label: "Ofertele de azi" },
@@ -474,14 +474,14 @@ export default function StudiuPage() {
               { href: "/radar", label: "Radar zilnic" },
             ].map((l) => (
               <Link key={l.href} href={l.href}
-                className="bg-[#14181c] hover:bg-[#1f2329] hover:text-[#c3dd2c] text-[#c9ced5] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#1f2329] hover:border-[#c9ced5]">
+                className="bg-[var(--surface)] hover:bg-[var(--surface-alt)] hover:text-[var(--accent-text)] text-[var(--text-soft)] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[var(--border)] hover:border-[#c9ced5]">
                 {l.label}
               </Link>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-[#1f2329] py-6 text-center text-xs text-[#9399a0]">
+        <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)]">
           &copy; {an} AmCupon.ro &middot; Studiu actualizat automat la fiecare rulare a datelor
         </footer>
       </div>

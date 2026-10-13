@@ -5,68 +5,22 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 import { MAGAZINE_POPULARE } from "@/lib/magazinePopulare";
+import { SITE, SUBSOL } from "@/lib/site";
 
-// Slug-uri categorie CORECTE (canonicalizate) — vechile electronics-itc/home-garden dadeau 404
-const CATEGORII = [
-  { href: "/categorii/fashion",         label: "Fashion & Haine" },
-  { href: "/categorii/electronice",     label: "Electronice & IT" },
-  { href: "/categorii/beauty",          label: "Frumusețe & Beauty" },
-  { href: "/categorii/casa-gradina",    label: "Casă & Grădină" },
-  { href: "/categorii/sanatate",        label: "Sănătate & Farmacie" },
-  { href: "/categorii/sport",           label: "Sport & Fitness" },
-  { href: "/categorii/copii",           label: "Copii & Familie" },
-  { href: "/categorii/auto-moto",       label: "Auto & Moto" },
-  { href: "/categorii/carti-educatie",  label: "Cărți & Educație" },
-  { href: "/categorii/bijuterii",       label: "Bijuterii & Ceasuri" },
-];
+// Listele din subsol stau in lib/site.ts (SUBSOL) — un singur loc de modificat (14.10.2026).
+const CATEGORII = SUBSOL.categorii;
+// EXPORTAT: prima pagina are subsol propriu si isi importa de aici nisele (vezi HomeClient).
+export const REDUCERI = SUBSOL.reduceri;
+const UTILIZATORI = SUBSOL.utilizatori;
+const PARTENERI = SUBSOL.parteneri;
 
-// Reduceri preferate — hub-uri de reduceri (ce cauta userii).
-// EXPORTAT: homepage-ul are footer propriu (vezi HomeClient) si isi importa de
-// aici nisele, ca sa nu existe doua liste care se desincronizeaza. Dublarea asta
-// a mai costat proiectul o data — cardul separat de homepage, 09.08.2026.
-export const REDUCERI = [
-  { href: "/oferte-azi",      label: "Oferte de azi" },
-  { href: "/top-reduceri",    label: "Top reduceri" },
-  { href: "/produse",         label: "Produse de la parteneri" },
-  { href: "/black-friday",    label: "Black Friday" },
-  { href: "/craciun",         label: "Reduceri Crăciun" },
-  { href: "/idei-cadouri",    label: "Idei cadouri" },
-  { href: "/comparatii",      label: "Comparații magazine" },
-  // Nise care erau ORFANE — zero linkuri interne pe tot site-ul, deci Google le
-  // gasea doar din sitemap si nu primeau niciun semnal de la restul paginilor.
-  // Footer-ul apare pe toate cele ~100 de pagini, deci e cea mai ieftina reparatie.
-  { href: "/supermarket",     label: "Supermarket online" },
-  { href: "/smart-home",      label: "Smart Home" },
-  { href: "/antivirus",       label: "Antivirus & securitate" },
-  { href: "/pescuit",         label: "Echipament pescuit" },
-  { href: "/rochii-mireasa",  label: "Rochii de mireasă" },
-  { href: "/studiu/coduri-reducere-romania", label: "Studiu: coduri de reducere" },
-  // Hub-ul de unelte (06.09) — el linkuieste mai departe catre /calculatoare/reducere
-  // si /calculatoare/marimi, deci un singur link de aici le scoate pe toate trei
-  // din starea de orfane. Aceeasi reparatie ca la nisele de mai sus.
-  { href: "/calculatoare",    label: "Calculatoare și unelte" },
-];
-
-// Pentru utilizatori
-const UTILIZATORI = [
-  { href: "/blog",             label: "Revista & Ghiduri" },
-  { href: "/newsletter",       label: "Newsletter gratuit" },
-  { href: "/extensie",         label: "Extensie Chrome" },
-  { href: "/toate-magazinele", label: "Toate magazinele" },
-  { href: "/despre-noi",       label: "Despre noi" },
-  { href: "/contact",          label: "Contact" },
-  { href: "/confidentialitate",label: "Politica GDPR" },
-  { href: "/termeni",          label: "Termeni și condiții" },
-];
-
-// Pentru parteneri / magazine
-const PARTENERI = [
-  { href: "/despre-noi",       label: "Colaborează cu noi" },
-  { href: "/contact",          label: "Listează magazinul tău" },
-  { href: "/servicii",         label: "Servicii & Software" },
-  { href: "/asigurari",        label: "Asigurări RCA & CASCO" },
-  { href: "/instrumente-seo",  label: "Instrumente marketing" },
-];
+// Iconitele retelelor sociale; adresele lor stau in lib/site.ts (SITE.social).
+const ICONITE_SOCIAL: Record<string, React.ReactNode> = {
+  "Facebook": <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>,
+  "Instagram": <><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></>,
+  "TikTok": <path d="M9 12a4 4 0 104 4V4a5 5 0 005 5"/>,
+  "Pinterest": <path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.65 7.86 6.39 9.29-.09-.78-.17-1.98.04-2.83.18-.77 1.22-5.17 1.22-5.17s-.31-.62-.31-1.55c0-1.45.84-2.54 1.89-2.54.89 0 1.32.67 1.32 1.47 0 .9-.57 2.24-.87 3.48-.25 1.04.52 1.88 1.54 1.88 1.84 0 3.08-2.37 3.08-5.18 0-2.14-1.44-3.64-3.5-3.64-2.38 0-3.78 1.79-3.78 3.63 0 .72.28 1.49.62 1.91.07.08.08.15.06.23-.06.26-.2.84-.23.95-.04.15-.13.18-.3.11-1.12-.52-1.82-2.17-1.82-3.49 0-2.84 2.06-5.44 5.94-5.44 3.12 0 5.55 2.22 5.55 5.19 0 3.1-1.95 5.59-4.66 5.59-.91 0-1.77-.47-2.06-1.03l-.56 2.09c-.2.78-.75 1.76-1.12 2.35.84.26 1.74.4 2.66.4 5.52 0 10-4.48 10-10S17.52 2 12 2z"/>,
+};
 
 function NewsletterMini() {
   const [email, setEmail]   = useState("");
@@ -104,7 +58,7 @@ function NewsletterMini() {
         onChange={e => { setEmail(e.target.value); setStatus("idle"); }}
         placeholder="email@tau.ro"
         required
-        className="flex-1 bg-[#1f2329] border border-[#2a2f36] focus:border-[#ddf93c] text-[#c9ced5] placeholder-[#9399a0] rounded-xl px-3 py-2.5 text-sm focus:outline-none transition-colors min-w-0"
+        className="flex-1 bg-[var(--surface-alt)] border border-[var(--border-strong)] focus:border-[var(--accent-text)] text-[var(--text-soft)] placeholder-[var(--text-muted)] rounded-xl px-3 py-2.5 text-sm focus:outline-none transition-colors min-w-0"
       />
       <button
         type="submit"
@@ -129,10 +83,10 @@ export default function Footer({ magazineInDate }: { magazineInDate?: string[] }
   if (pathname === "/") return null;
 
   return (
-    <footer className="bg-[#14181c] text-[#c9ced5] border-t border-[#1f2329] mt-auto">
+    <footer className="bg-[var(--surface)] text-[var(--text-soft)] border-t border-[var(--border)] mt-auto">
 
       {/* Facebook Follow banner */}
-      <div className="border-b border-[#1f2329]/60 bg-[#1877F2]/10">
+      <div className="border-b border-[var(--border)]/60 bg-[#1877F2]/10">
         <div className="max-w-7xl mx-auto px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl bg-[#1877F2] flex items-center justify-center shrink-0">
@@ -141,8 +95,8 @@ export default function Footer({ magazineInDate }: { magazineInDate?: string[] }
               </svg>
             </div>
             <div>
-              <p className="text-[#ffffff] font-bold text-sm">Urmărește AmCupon.ro pe Facebook</p>
-              <p className="text-[#c9ced5] text-xs">Pagina oficială AmCupon.ro</p>
+              <p className="text-[var(--foreground)] font-bold text-sm">Urmărește AmCupon.ro pe Facebook</p>
+              <p className="text-[var(--text-soft)] text-xs">Pagina oficială AmCupon.ro</p>
             </div>
           </div>
           <a
@@ -160,11 +114,11 @@ export default function Footer({ magazineInDate }: { magazineInDate?: string[] }
       </div>
 
       {/* Newsletter banner */}
-      <div className="border-b border-[#1f2329]/60">
+      <div className="border-b border-[var(--border)]/60">
         <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div>
-            <p className="text-[#ffffff] font-black text-lg">📧 Reduceri zilnice pe email</p>
-            <p className="text-[#c9ced5] text-sm mt-0.5">
+            <p className="text-[var(--foreground)] font-black text-lg">📧 Reduceri zilnice pe email</p>
+            <p className="text-[var(--text-soft)] text-sm mt-0.5">
               Codurile active, pe email — gratuit, fără spam
             </p>
           </div>
@@ -182,34 +136,25 @@ export default function Footer({ magazineInDate }: { magazineInDate?: string[] }
           <div className="col-span-2 md:col-span-4 lg:col-span-1">
             <Link href="/" className="flex items-center gap-1.5 mb-4">
               <div className="bg-[#ddf93c] text-[#0c1000] font-black text-sm px-2 py-0.5 rounded-lg">Am</div>
-              <span className="font-black text-[#ffffff] text-xl">Cupon<span className="text-[#ddf93c]">.ro</span></span>
+              <span className="font-black text-[var(--foreground)] text-xl">Cupon<span className="text-[var(--accent-text)]">.ro</span></span>
             </Link>
-            <p className="text-sm leading-relaxed text-[#9399a0] mb-5">
+            <p className="text-sm leading-relaxed text-[var(--text-muted)] mb-5">
               Coduri de reducere și oferte active de la magazinele partenere, actualizate zilnic.
               Gratuit, fără cont.
             </p>
             {/* Social */}
             <div className="flex items-center gap-3">
-              {[
-                { href: "https://www.facebook.com/amcupon.ro", label: "Facebook",
-                  svg: <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/> },
-                { href: "https://www.instagram.com/amcupon.ro", label: "Instagram",
-                  svg: <><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></> },
-                { href: "https://www.tiktok.com/@amcupon.ro", label: "TikTok",
-                  svg: <path d="M9 12a4 4 0 104 4V4a5 5 0 005 5"/> },
-                { href: "https://www.pinterest.com/amcuponro", label: "Pinterest",
-                  svg: <path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.65 7.86 6.39 9.29-.09-.78-.17-1.98.04-2.83.18-.77 1.22-5.17 1.22-5.17s-.31-.62-.31-1.55c0-1.45.84-2.54 1.89-2.54.89 0 1.32.67 1.32 1.47 0 .9-.57 2.24-.87 3.48-.25 1.04.52 1.88 1.54 1.88 1.84 0 3.08-2.37 3.08-5.18 0-2.14-1.44-3.64-3.5-3.64-2.38 0-3.78 1.79-3.78 3.63 0 .72.28 1.49.62 1.91.07.08.08.15.06.23-.06.26-.2.84-.23.95-.04.15-.13.18-.3.11-1.12-.52-1.82-2.17-1.82-3.49 0-2.84 2.06-5.44 5.94-5.44 3.12 0 5.55 2.22 5.55 5.19 0 3.1-1.95 5.59-4.66 5.59-.91 0-1.77-.47-2.06-1.03l-.56 2.09c-.2.78-.75 1.76-1.12 2.35.84.26 1.74.4 2.66.4 5.52 0 10-4.48 10-10S17.52 2 12 2z"/> },
-              ].map(s => (
+              {SITE.social.filter(x => ICONITE_SOCIAL[x.label]).map(x => ({ ...x, svg: ICONITE_SOCIAL[x.label] })).map(s => (
                 <a key={s.href} href={s.href} target="_blank" rel="noopener noreferrer"
                   aria-label={s.label}
-                  className="w-9 h-9 rounded-xl bg-[#1f2329] hover:bg-[#ddf93c] flex items-center justify-center transition-colors group">
-                  <svg className="w-4 h-4 text-[#c9ced5] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                  className="w-9 h-9 rounded-xl bg-[var(--surface-alt)] hover:bg-[#ddf93c] flex items-center justify-center transition-colors group">
+                  <svg className="w-4 h-4 text-[var(--text-soft)] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                     {s.svg}
                   </svg>
                 </a>
               ))}
               <Link href="/extensie"
-                className="w-9 h-9 rounded-xl bg-[#1f2329] hover:bg-[#ddf93c] flex items-center justify-center transition-colors" title="Extensie Chrome">
+                className="w-9 h-9 rounded-xl bg-[var(--surface-alt)] hover:bg-[#ddf93c] flex items-center justify-center transition-colors" title="Extensie Chrome">
                 <span className="text-sm">🧩</span>
               </Link>
             </div>
@@ -217,14 +162,14 @@ export default function Footer({ magazineInDate }: { magazineInDate?: string[] }
 
           {/* Magazine */}
           <div>
-            <p className="text-[#ffffff] font-bold text-xs uppercase tracking-widest mb-4">Magazine populare</p>
+            <p className="text-[var(--foreground)] font-bold text-xs uppercase tracking-widest mb-4">Magazine populare</p>
             <ul className="space-y-2">
               {MAGAZINE_POPULARE
                 .filter(m => m.href || !magazineInDate || magazineInDate.includes(m.slug))
                 .map(m => (
                 <li key={m.slug}>
                   <Link href={m.href ?? `/cod-reducere/${m.slug}`}
-                    className="text-sm text-[#9399a0] hover:text-[#ddf93c] transition-colors">
+                    className="text-sm text-[var(--text-muted)] hover:text-[var(--accent-text)] transition-colors">
                     Cod reducere {m.label}
                   </Link>
                 </li>
@@ -234,11 +179,11 @@ export default function Footer({ magazineInDate }: { magazineInDate?: string[] }
 
           {/* Categorii */}
           <div>
-            <p className="text-[#ffffff] font-bold text-xs uppercase tracking-widest mb-4">Categorii</p>
+            <p className="text-[var(--foreground)] font-bold text-xs uppercase tracking-widest mb-4">Categorii</p>
             <ul className="space-y-2">
               {CATEGORII.map(c => (
                 <li key={c.href}>
-                  <Link href={c.href} className="text-sm text-[#9399a0] hover:text-[#ddf93c] transition-colors">
+                  <Link href={c.href} className="text-sm text-[var(--text-muted)] hover:text-[var(--accent-text)] transition-colors">
                     {c.label}
                   </Link>
                 </li>
@@ -248,11 +193,11 @@ export default function Footer({ magazineInDate }: { magazineInDate?: string[] }
 
           {/* Reduceri preferate */}
           <div>
-            <p className="text-[#ffffff] font-bold text-xs uppercase tracking-widest mb-4">Reduceri preferate</p>
+            <p className="text-[var(--foreground)] font-bold text-xs uppercase tracking-widest mb-4">Reduceri preferate</p>
             <ul className="space-y-2">
               {REDUCERI.map(g => (
                 <li key={g.label}>
-                  <Link href={g.href} className="text-sm text-[#9399a0] hover:text-[#ddf93c] transition-colors">
+                  <Link href={g.href} className="text-sm text-[var(--text-muted)] hover:text-[var(--accent-text)] transition-colors">
                     {g.label}
                   </Link>
                 </li>
@@ -262,11 +207,11 @@ export default function Footer({ magazineInDate }: { magazineInDate?: string[] }
 
           {/* Pentru utilizatori */}
           <div>
-            <p className="text-[#ffffff] font-bold text-xs uppercase tracking-widest mb-4">Pentru utilizatori</p>
+            <p className="text-[var(--foreground)] font-bold text-xs uppercase tracking-widest mb-4">Pentru utilizatori</p>
             <ul className="space-y-2">
               {UTILIZATORI.map(i => (
                 <li key={i.label}>
-                  <Link href={i.href} className="text-sm text-[#9399a0] hover:text-[#ddf93c] transition-colors">
+                  <Link href={i.href} className="text-sm text-[var(--text-muted)] hover:text-[var(--accent-text)] transition-colors">
                     {i.label}
                   </Link>
                 </li>
@@ -276,11 +221,11 @@ export default function Footer({ magazineInDate }: { magazineInDate?: string[] }
 
           {/* Pentru parteneri */}
           <div>
-            <p className="text-[#ffffff] font-bold text-xs uppercase tracking-widest mb-4">Pentru parteneri</p>
+            <p className="text-[var(--foreground)] font-bold text-xs uppercase tracking-widest mb-4">Pentru parteneri</p>
             <ul className="space-y-2">
               {PARTENERI.map((p, i) => (
                 <li key={i}>
-                  <Link href={p.href} className="text-sm text-[#9399a0] hover:text-[#ddf93c] transition-colors">
+                  <Link href={p.href} className="text-sm text-[var(--text-muted)] hover:text-[var(--accent-text)] transition-colors">
                     {p.label}
                   </Link>
                 </li>
@@ -292,17 +237,17 @@ export default function Footer({ magazineInDate }: { magazineInDate?: string[] }
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-[#1f2329]/60">
-        <div className="max-w-7xl mx-auto px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[#9399a0]">
+      <div className="border-t border-[var(--border)]/60">
+        <div className="max-w-7xl mx-auto px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[var(--text-muted)]">
           <p>© {an} AmCupon.ro — Toate drepturile rezervate</p>
           <p className="text-center">
             AmCupon.ro conține linkuri de afiliere. Primim un comision din bugetul de marketing
             al magazinelor, fără costuri suplimentare pentru tine.
           </p>
           <div className="flex items-center gap-4">
-            <Link href="/confidentialitate" className="hover:text-[#c9ced5] transition-colors">GDPR</Link>
-            <Link href="/termeni" className="hover:text-[#c9ced5] transition-colors">Termeni</Link>
-            <Link href="/contact" className="hover:text-[#c9ced5] transition-colors">Contact</Link>
+            <Link href="/confidentialitate" className="hover:text-[var(--text-soft)] transition-colors">GDPR</Link>
+            <Link href="/termeni" className="hover:text-[var(--text-soft)] transition-colors">Termeni</Link>
+            <Link href="/contact" className="hover:text-[var(--text-soft)] transition-colors">Contact</Link>
           </div>
         </div>
       </div>

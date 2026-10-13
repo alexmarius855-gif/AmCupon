@@ -29,10 +29,10 @@ function incarcaManifest(): Manifest | null {
 export default async function PaginaSocialContent() {
   if (!ADMIN_PASSWORD) {
     return (
-      <div className="min-h-screen bg-[#06080b] flex items-center justify-center px-4">
+      <div className="min-h-screen bg-[var(--background)] flex items-center justify-center px-4">
         <div className="text-center max-w-sm">
           <h1 className="text-xl font-black text-white mb-2">ADMIN_PASSWORD neconfigurat</h1>
-          <p className="text-[#c9ced5] text-sm">
+          <p className="text-[var(--text-soft)] text-sm">
             Configureaza parola de admin in Vercel Environment Variables.
           </p>
         </div>

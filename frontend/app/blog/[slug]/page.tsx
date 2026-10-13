@@ -133,7 +133,7 @@ function parseInline(text: string, baseKey: string): React.ReactNode[] {
       const isExt = match[3].startsWith("http");
       nodes.push(
         <a key={`${baseKey}-l${i}`} href={match[3]}
-          className="text-[#ddf93c] hover:text-[#c3dd2c] underline underline-offset-2 font-medium"
+          className="text-[var(--accent-text)] hover:text-[var(--accent-text)] underline underline-offset-2 font-medium"
           {...(isExt ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
           {match[2]}
         </a>
@@ -149,12 +149,12 @@ function parseInline(text: string, baseKey: string): React.ReactNode[] {
 /** Caseta „oferta de azi" de sub un model recomandat (lib/oferteTema.ts::ofertaModel). */
 function CasetaOferta({ o }: { o: OfertaModel }) {
   return (
-    <div className="my-3 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-[#2a2f36] bg-[#14181c] px-4 py-3">
+    <div className="my-3 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-[var(--border-strong)] bg-[var(--surface)] px-4 py-3">
       <div className="min-w-0">
-        <p className="text-sm text-[#ffffff] font-semibold">
+        <p className="text-sm text-[var(--foreground)] font-semibold">
           {o.variante > 1 ? "De la " : ""}{o.pret.toLocaleString("ro-RO", { maximumFractionDigits: 2 })} lei la {numeAfisat(o.magazin)}
         </p>
-        <p className="text-xs text-[#9399a0] truncate">{o.titlu} · prețul din feed-ul de azi, verifică-l la magazin</p>
+        <p className="text-xs text-[var(--text-muted)] truncate">{o.titlu} · prețul din feed-ul de azi, verifică-l la magazin</p>
       </div>
       <a href={o.url} target="_blank" rel="sponsored noopener noreferrer"
         className="shrink-0 rounded-xl bg-[#ddf93c] px-4 py-2 text-sm font-black text-[#0c1000] hover:bg-[#c3dd2c] transition-colors">
@@ -180,7 +180,7 @@ function renderContent(content: string, oferte?: Map<string, OfertaModel>) {
     const key = `b${i}`;
     if (block.startsWith("## ")) {
       deAfisat = null;
-      return <h2 key={key} className="text-xl font-black text-[#ffffff] mt-8 mb-3">{parseInline(block.slice(3), key)}</h2>;
+      return <h2 key={key} className="text-xl font-black text-[var(--foreground)] mt-8 mb-3">{parseInline(block.slice(3), key)}</h2>;
     }
     if (block.startsWith("### ")) {
       const titlu = block.slice(4);
@@ -188,7 +188,7 @@ function renderContent(content: string, oferte?: Map<string, OfertaModel>) {
       // cheia cea mai lunga castiga: „Galaxy S26 Ultra" nu primeste oferta lui „Galaxy S26"
       let lung = 0;
       for (const [k, o] of oferte ?? []) if (titlu.startsWith(k) && k.length > lung) { deAfisat = o; lung = k.length; }
-      return <h3 key={key} className="text-lg font-bold text-[#ffffff] mt-6 mb-2">{parseInline(titlu, key)}</h3>;
+      return <h3 key={key} className="text-lg font-bold text-[var(--foreground)] mt-6 mb-2">{parseInline(titlu, key)}</h3>;
     }
     // ── Citat („> ...") ─────────────────────────────────────────────────────────
     // 07.10.2026: nu exista. Pe 217 articole, linia „> Actualizat automat: ..." aparea cu
@@ -196,7 +196,7 @@ function renderContent(content: string, oferte?: Map<string, OfertaModel>) {
     if (block.startsWith("> ")) {
       const text = block.split("\n").map((l) => l.replace(/^>\s?/, "")).join(" ");
       return (
-        <blockquote key={key} className="my-4 border-l-2 border-[#ddf93c] pl-4 text-[#c9ced5] leading-relaxed">
+        <blockquote key={key} className="my-4 border-l-2 border-[var(--accent-text)] pl-4 text-[var(--text-soft)] leading-relaxed">
           {parseInline(text, key)}
         </blockquote>
       );
@@ -216,9 +216,9 @@ function renderContent(content: string, oferte?: Map<string, OfertaModel>) {
       return (
         <div key={key}>
           {intro.length > 0 && (
-            <p className="text-[#c9ced5] leading-relaxed my-3">{parseInline(intro.join(" "), `${key}-p`)}</p>
+            <p className="text-[var(--text-soft)] leading-relaxed my-3">{parseInline(intro.join(" "), `${key}-p`)}</p>
           )}
-          <ul className="list-disc list-inside space-y-1.5 my-4 text-[#c9ced5]">
+          <ul className="list-disc list-inside space-y-1.5 my-4 text-[var(--text-soft)]">
             {items.map((item, j) => (
               <li key={j}>{parseInline(item, `${key}-li${j}`)}</li>
             ))}
@@ -231,7 +231,7 @@ function renderContent(content: string, oferte?: Map<string, OfertaModel>) {
     // cate 13 separatoare (unul intre produse), deci pe pagina apareau 13 siruri de
     // liniute in mijlocul continutului. Vazut in browser, nu dedus din cod.
     if (/^-{3,}$/.test(block.trim())) {
-      return <hr key={key} className="my-8 border-0 border-t border-[#1f2329]" />;
+      return <hr key={key} className="my-8 border-0 border-t border-[var(--border)]" />;
     }
 
     // ── Tabel Markdown ────────────────────────────────────────────────────────
@@ -254,9 +254,9 @@ function renderContent(content: string, oferte?: Map<string, OfertaModel>) {
         <div key={key} className="my-6 overflow-x-auto">
           <table className="w-full text-sm border-collapse">
             <thead>
-              <tr className="border-b border-[#2a2f36]">
+              <tr className="border-b border-[var(--border-strong)]">
                 {antet.map((c, j) => (
-                  <th key={j} className="text-left font-bold text-[#ffffff] py-2.5 px-3 whitespace-nowrap">
+                  <th key={j} className="text-left font-bold text-[var(--foreground)] py-2.5 px-3 whitespace-nowrap">
                     {parseInline(c, `${key}-th${j}`)}
                   </th>
                 ))}
@@ -264,9 +264,9 @@ function renderContent(content: string, oferte?: Map<string, OfertaModel>) {
             </thead>
             <tbody>
               {randuri.map((r, ri) => (
-                <tr key={ri} className="border-b border-[#1f2329]">
+                <tr key={ri} className="border-b border-[var(--border)]">
                   {r.map((c, ci) => (
-                    <td key={ci} className="py-2.5 px-3 text-[#c9ced5] align-top">
+                    <td key={ci} className="py-2.5 px-3 text-[var(--text-soft)] align-top">
                       {parseInline(c, `${key}-td${ri}-${ci}`)}
                     </td>
                   ))}
@@ -283,12 +283,12 @@ function renderContent(content: string, oferte?: Map<string, OfertaModel>) {
     if (oferta) {
       return (
         <div key={key}>
-          <p className="text-[#c9ced5] leading-relaxed my-3">{parseInline(block, key)}</p>
+          <p className="text-[var(--text-soft)] leading-relaxed my-3">{parseInline(block, key)}</p>
           <CasetaOferta o={oferta} />
         </div>
       );
     }
-    return <p key={key} className="text-[#c9ced5] leading-relaxed my-3">{parseInline(block, key)}</p>;
+    return <p key={key} className="text-[var(--text-soft)] leading-relaxed my-3">{parseInline(block, key)}</p>;
   });
 }
 
@@ -446,7 +446,7 @@ export default async function ArticolPage({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
-      <div className="min-h-screen bg-[#06080b]">
+      <div className="min-h-screen bg-[var(--background)]">
         <article className="max-w-3xl mx-auto px-4 py-10">
           <div className="mb-6">
             <span className="bg-[#ddf93c] text-[#0c1000] text-xs font-bold px-3 py-1 rounded-full">{post.category}</span>
@@ -464,11 +464,11 @@ export default async function ArticolPage({
 
             `<title>` si Open Graph raman neatinse: acolo sufixul isi are rostul.
           */}
-          <h1 className="text-2xl md:text-3xl font-black text-[#ffffff] leading-tight mb-4">
+          <h1 className="text-2xl md:text-3xl font-black text-[var(--foreground)] leading-tight mb-4">
             {post.title.replace(/\s*\|\s*AmCupon\.ro\s*$/i, "")}
           </h1>
 
-          <div className="flex items-center gap-4 text-sm text-[#9399a0] mb-8 pb-6 border-b border-[#1f2329]">
+          <div className="flex items-center gap-4 text-sm text-[var(--text-muted)] mb-8 pb-6 border-b border-[var(--border)]">
             <div className="flex items-center gap-2 shrink-0">
               <Image
                 src="/logo-profile.svg"
@@ -477,7 +477,7 @@ export default async function ArticolPage({
                 height={28}
                 className="rounded-full ring-2 ring-[#ddf93c]/20"
               />
-              <span className="font-semibold text-[#c9ced5]">AmCupon.ro</span>
+              <span className="font-semibold text-[var(--text-soft)]">AmCupon.ro</span>
             </div>
             <span>·</span>
             <span>{formatDate(post.date)}</span>
@@ -485,11 +485,11 @@ export default async function ArticolPage({
               <>
                 <span>·</span>
                 {areMagazinPagina ? (
-                  <a href={`/cod-reducere/${post.magazin}`} className="text-[#ddf93c] font-semibold hover:underline">
+                  <a href={`/cod-reducere/${post.magazin}`} className="text-[var(--accent-text)] font-semibold hover:underline">
                     {numeAfisat(post.magazin)}
                   </a>
                 ) : (
-                  <span className="font-semibold text-[#c9ced5]">{numeAfisat(post.magazin)}</span>
+                  <span className="font-semibold text-[var(--text-soft)]">{numeAfisat(post.magazin)}</span>
                 )}
               </>
             )}
@@ -508,7 +508,7 @@ export default async function ArticolPage({
             <Image src={post.cover} alt={post.title} fill className="object-contain" priority sizes="(max-width: 768px) 100vw, 768px" />
           </div>
 
-          <p className="text-lg text-[#c9ced5] font-medium leading-relaxed mb-8 p-5 bg-[#14181c] rounded-xl border-l-4 border-[#ddf93c] border-y border-r border-y-[#e2e8f0] border-r-[#e2e8f0]">
+          <p className="text-lg text-[var(--text-soft)] font-medium leading-relaxed mb-8 p-5 bg-[var(--surface)] rounded-xl border-l-4 border-[var(--accent-text)] border-y border-r border-y-[#e2e8f0] border-r-[#e2e8f0]">
             {post.excerpt}
           </p>
 
@@ -516,14 +516,14 @@ export default async function ArticolPage({
               generate_best_of.py), pe specificatii publice, fara ca cineva sa testeze produsele —
               iar data din antet e cea a ultimei regenerari. Nota spune asta direct. */}
           {esteRecomandare && (
-            <p className="text-xs text-[#9399a0] leading-relaxed mb-6 -mt-4">
+            <p className="text-xs text-[var(--text-muted)] leading-relaxed mb-6 -mt-4">
               {/* 07.10.2026: articolele rescrise pe surse (articole_verificate.py) au `surse_din`; pentru
                   ele „selectia e din mai–iunie" ar fi falsa. */}
               {post.surse_din
                 ? `Text editorial actualizat pe ${new Date(post.surse_din + "T12:00:00Z").toLocaleDateString("ro-RO", { day: "numeric", month: "long", year: "numeric" })}, pe baza surselor oficiale (legi, standarde, fișele producătorilor) trecute în articol; produsele nu le-am testat.`
                 : "Text editorial scris pe baza specificațiilor și a prețurilor publice; selecția modelelor e din mai–iunie 2026, iar produsele nu le-am testat."}{" "}
               {sectiune ? (
-                <a href="#unde-cumperi" className="text-[#ddf93c] hover:underline">Prețurile de azi la magazinele partenere sunt la finalul articolului.</a>
+                <a href="#unde-cumperi" className="text-[var(--accent-text)] hover:underline">Prețurile de azi la magazinele partenere sunt la finalul articolului.</a>
               ) : (
                 post.surse_din
                   ? "Prețurile nu le scriem în text: le vezi actualizate la magazin."
@@ -549,17 +549,17 @@ export default async function ArticolPage({
               <p className="font-black text-xl mb-2">Vezi toate promoțiile {numeAfisat(post.magazin)}</p>
               <p className="text-[#2a2f10] text-sm mb-4">Coduri și oferte actualizate de mai multe ori pe zi</p>
               <a href={`/cod-reducere/${post.magazin}`}
-                className="inline-block bg-[#14181c] text-[#c3dd2c] font-bold px-6 py-2.5 rounded-xl text-sm hover:bg-[#06080b] transition-colors">
+                className="inline-block bg-[var(--surface)] text-[var(--accent-text)] font-bold px-6 py-2.5 rounded-xl text-sm hover:bg-[var(--background)] transition-colors">
                 Deschide pagina →
               </a>
             </div>
           )}
 
           {/* Newsletter CTA */}
-          <div className="mt-10 p-6 bg-[#06080b] rounded-xl text-center">
-            <p className="text-sm font-black text-[#ddf93c] uppercase tracking-widest mb-2">Newsletter gratuit</p>
-            <h3 className="text-xl font-black text-[#ffffff] mb-2">Primeste coduri noi direct pe email</h3>
-            <p className="text-[#c9ced5] text-sm mb-5">Ofertele active de la {pesteMagazine()}, o dată pe zi. Fără spam.</p>
+          <div className="mt-10 p-6 bg-[var(--background)] rounded-xl text-center">
+            <p className="text-sm font-black text-[var(--accent-text)] uppercase tracking-widest mb-2">Newsletter gratuit</p>
+            <h3 className="text-xl font-black text-[var(--foreground)] mb-2">Primeste coduri noi direct pe email</h3>
+            <p className="text-[var(--text-soft)] text-sm mb-5">Ofertele active de la {pesteMagazine()}, o dată pe zi. Fără spam.</p>
             <Link href="/newsletter"
               className="inline-flex items-center gap-2 bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] font-bold px-6 py-3 rounded-xl text-sm transition-colors">
               Aboneaza-te gratuit &rarr;
@@ -567,8 +567,8 @@ export default async function ArticolPage({
           </div>
 
           {/* Share buttons */}
-          <div className="mt-10 pt-6 border-t border-[#1f2329]">
-            <p className="text-sm font-bold text-[#c9ced5] mb-3 text-center">Distribuie articolul</p>
+          <div className="mt-10 pt-6 border-t border-[var(--border)]">
+            <p className="text-sm font-bold text-[var(--text-soft)] mb-3 text-center">Distribuie articolul</p>
             <div className="flex justify-center gap-3">
               <a
                 href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`https://amcupon.ro/blog/${slug}`)}`}
@@ -597,17 +597,17 @@ export default async function ArticolPage({
 
         {altePosts.length > 0 && (
           <div className="max-w-3xl mx-auto px-4 pb-12">
-            <h2 className="text-xl font-black text-[#ffffff] mb-5">Articole recomandate</h2>
+            <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Articole recomandate</h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {altePosts.map((p) => (
                 <a key={p.slug} href={`/blog/${p.slug}`}
-                  className="bg-[#14181c] rounded-xl border border-[#1f2329] hover:border-[#ddf93c]/50 overflow-hidden hover:shadow-lg hover:shadow-black/40 transition-all group">
+                  className="bg-[var(--surface)] rounded-xl border border-[var(--border)] hover:border-[var(--accent-text)]/50 overflow-hidden hover:shadow-lg hover:shadow-black/40 transition-all group">
                   <div className="relative h-32 overflow-hidden">
                     <Image src={p.cover} alt={p.title} fill className="object-cover group-hover:scale-105 transition-transform duration-300" sizes="300px" />
                   </div>
                   <div className="p-4">
-                    <span className="text-xs font-bold text-[#ddf93c]">{p.category}</span>
-                    <p className="text-sm font-bold text-[#ffffff] mt-1 line-clamp-2 group-hover:text-[#ddf93c] transition-colors">{p.title}</p>
+                    <span className="text-xs font-bold text-[var(--accent-text)]">{p.category}</span>
+                    <p className="text-sm font-bold text-[var(--foreground)] mt-1 line-clamp-2 group-hover:text-[var(--accent-text)] transition-colors">{p.title}</p>
                   </div>
                 </a>
               ))}
@@ -616,7 +616,7 @@ export default async function ArticolPage({
         )}
 
         <div className="max-w-3xl mx-auto px-4 pb-10 text-center">
-          <Link href="/blog" className="text-sm text-[#9399a0] hover:text-[#ddf93c] transition-colors">← Înapoi la Blog</Link>
+          <Link href="/blog" className="text-sm text-[var(--text-muted)] hover:text-[var(--accent-text)] transition-colors">← Înapoi la Blog</Link>
         </div>
       </div>
     </>

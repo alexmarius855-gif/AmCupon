@@ -212,8 +212,8 @@ export default function SocialStudio({ items }: { items: SocialItem[] }) {
       <main className="min-h-screen bg-[#070a0f] text-white flex items-center justify-center px-4">
         <div className="max-w-md text-center">
           <h1 className="text-2xl font-black mb-3">Social Studio</h1>
-          <p className="text-[#c9ced5]">Nu am gasit postari in data/postari-zilnice.json.</p>
-          <Link href="/admin" className="inline-block mt-6 text-[#c9ced5] underline">Inapoi la admin</Link>
+          <p className="text-[var(--text-soft)]">Nu am gasit postari in data/postari-zilnice.json.</p>
+          <Link href="/admin" className="inline-block mt-6 text-[var(--text-soft)] underline">Inapoi la admin</Link>
         </div>
       </main>
     );
@@ -224,21 +224,21 @@ export default function SocialStudio({ items }: { items: SocialItem[] }) {
       <div className="max-w-6xl mx-auto px-4 py-5 sm:py-8">
         <div className="flex items-center justify-between gap-4 mb-5">
           <div>
-            <p className="text-xs font-black uppercase tracking-widest text-[#ddf93c]">AmCupon.ro</p>
+            <p className="text-xs font-black uppercase tracking-widest text-[var(--accent-text)]">AmCupon.ro</p>
             <h1 className="text-2xl sm:text-4xl font-black">Social Studio</h1>
-            <p className="text-sm text-[#c9ced5] mt-1">Story evergreen pentru telefon: alege, genereaza, share.</p>
+            <p className="text-sm text-[var(--text-soft)] mt-1">Story evergreen pentru telefon: alege, genereaza, share.</p>
           </div>
-          <Link href="/admin" className="shrink-0 rounded-xl border border-[#1f2329] px-4 py-2 text-sm font-bold text-[#c9ced5]">Admin</Link>
+          <Link href="/admin" className="shrink-0 rounded-xl border border-[var(--border)] px-4 py-2 text-sm font-bold text-[var(--text-soft)]">Admin</Link>
         </div>
 
         <div className="grid lg:grid-cols-[380px_1fr] gap-5 items-start">
-          <section className="rounded-2xl border border-[#1f2329] bg-[#11100c] p-4 space-y-4">
+          <section className="rounded-2xl border border-[var(--border)] bg-[#11100c] p-4 space-y-4">
             <div>
-              <label className="block text-xs font-bold uppercase tracking-widest text-[#c9ced5] mb-2">Oferta</label>
+              <label className="block text-xs font-bold uppercase tracking-widest text-[var(--text-soft)] mb-2">Oferta</label>
               <select
                 value={selectedIndex}
                 onChange={(e) => setSelectedIndex(Number(e.target.value))}
-                className="w-full rounded-xl bg-[#201c14] border border-[#1f2329] px-3 py-3 text-sm text-white"
+                className="w-full rounded-xl bg-[#201c14] border border-[var(--border)] px-3 py-3 text-sm text-white"
               >
                 {items.map((it, idx) => (
                   <option key={`${it.magazin}-${idx}`} value={idx}>{it.nume} {it.procent ? `(${it.procent})` : ""}</option>
@@ -247,7 +247,7 @@ export default function SocialStudio({ items }: { items: SocialItem[] }) {
             </div>
 
             <div>
-              <p className="block text-xs font-bold uppercase tracking-widest text-[#c9ced5] mb-2">Tip story</p>
+              <p className="block text-xs font-bold uppercase tracking-widest text-[var(--text-soft)] mb-2">Tip story</p>
               <div className="grid grid-cols-3 gap-2">
                 {[
                   ["evergreen", "Evergreen"],
@@ -266,48 +266,48 @@ export default function SocialStudio({ items }: { items: SocialItem[] }) {
               </div>
             </div>
 
-            <div className="rounded-xl bg-[#06080b] border border-[#1f2329] p-3 text-sm text-[#c8bda2]">
-              <p><span className="text-[#c9ced5]">Magazin:</span> {item.nume}</p>
-              <p><span className="text-[#c9ced5]">Categorie:</span> {item.categorie || "-"}</p>
-              <p><span className="text-[#c9ced5]">Link:</span> {shareUrl.replace(/^https?:\/\//, "")}</p>
+            <div className="rounded-xl bg-[var(--background)] border border-[var(--border)] p-3 text-sm text-[#c8bda2]">
+              <p><span className="text-[var(--text-soft)]">Magazin:</span> {item.nume}</p>
+              <p><span className="text-[var(--text-soft)]">Categorie:</span> {item.categorie || "-"}</p>
+              <p><span className="text-[var(--text-soft)]">Link:</span> {shareUrl.replace(/^https?:\/\//, "")}</p>
             </div>
 
             <div>
-              <label className="block text-xs font-bold uppercase tracking-widest text-[#c9ced5] mb-2">Caption</label>
-              <textarea readOnly value={caption} className="h-44 w-full rounded-xl bg-[#201c14] border border-[#1f2329] px-3 py-3 text-sm text-[#c9ced5]" />
+              <label className="block text-xs font-bold uppercase tracking-widest text-[var(--text-soft)] mb-2">Caption</label>
+              <textarea readOnly value={caption} className="h-44 w-full rounded-xl bg-[#201c14] border border-[var(--border)] px-3 py-3 text-sm text-[var(--text-soft)]" />
             </div>
 
             <div className="grid grid-cols-2 gap-2">
-              <button onClick={() => copyText(caption, "Caption copiat.")} className="rounded-xl bg-[#06080b] px-3 py-3 text-sm font-black text-[#c9ced5]">Copiaza caption</button>
-              <button onClick={() => copyText(shareUrl, "Link copiat.")} className="rounded-xl bg-[#06080b] px-3 py-3 text-sm font-black text-[#c9ced5]">Copiaza link</button>
+              <button onClick={() => copyText(caption, "Caption copiat.")} className="rounded-xl bg-[var(--background)] px-3 py-3 text-sm font-black text-[var(--text-soft)]">Copiaza caption</button>
+              <button onClick={() => copyText(shareUrl, "Link copiat.")} className="rounded-xl bg-[var(--background)] px-3 py-3 text-sm font-black text-[var(--text-soft)]">Copiaza link</button>
               <button onClick={downloadStory} className="rounded-xl bg-[#ddf93c] px-3 py-3 text-sm font-black text-[#0c1000]">Descarca Story</button>
               <button onClick={shareStory} className="rounded-xl bg-[#ffffff] px-3 py-3 text-sm font-black text-[#06080b]">Share telefon</button>
             </div>
 
-            {status && <p className="rounded-xl border border-[#3d331e] bg-[#19150e] p-3 text-sm text-[#c9ced5]">{status}</p>}
+            {status && <p className="rounded-xl border border-[#3d331e] bg-[#19150e] p-3 text-sm text-[var(--text-soft)]">{status}</p>}
           </section>
 
           <section className="lg:sticky lg:top-6">
             <div className="mx-auto w-full max-w-[360px]">
-              <div ref={previewRef} className="aspect-[9/16] overflow-hidden rounded-[2rem] border border-[#ddf93c]/40 bg-[#080712] p-7 shadow-2xl shadow-black/40">
-                <div className="h-full rounded-[1.5rem] border border-[#ddf93c]/30 bg-[radial-gradient(circle_at_top_right,rgba(201,166,62,0.26),transparent_34%),linear-gradient(160deg,#070a0f,#171008_55%,#05060a)] p-6 flex flex-col">
+              <div ref={previewRef} className="aspect-[9/16] overflow-hidden rounded-[2rem] border border-[var(--accent-text)]/40 bg-[#080712] p-7 shadow-2xl shadow-black/40">
+                <div className="h-full rounded-[1.5rem] border border-[var(--accent-text)]/30 bg-[radial-gradient(circle_at_top_right,rgba(201,166,62,0.26),transparent_34%),linear-gradient(160deg,#070a0f,#171008_55%,#05060a)] p-6 flex flex-col">
                   <div>
-                    <p className="text-[#ddf93c] font-black text-lg">AmCupon.ro</p>
+                    <p className="text-[var(--accent-text)] font-black text-lg">AmCupon.ro</p>
                     <p className="text-white/60 text-xs font-bold mt-1">story de salvat</p>
                   </div>
                   <div className="mt-auto mb-auto">
                     <h2 className="text-4xl font-black leading-tight">{storyTitle(item, tone)}</h2>
-                    <p className="mt-5 text-[#c9ced5] text-lg font-bold leading-snug">{storySubtitle(item, tone)}</p>
+                    <p className="mt-5 text-[var(--text-soft)] text-lg font-bold leading-snug">{storySubtitle(item, tone)}</p>
                     {item.procent && <div className="mt-7 inline-flex bg-[#ddf93c] text-[#080712] px-5 py-3 rounded-xl text-3xl font-black">{item.procent}</div>}
                   </div>
                   <div className="rounded-2xl bg-white/10 p-4">
                     <p className="text-white font-black text-sm">Link:</p>
-                    <p className="text-[#c9ced5] text-sm break-words mt-1">{shareUrl.replace(/^https?:\/\//, "")}</p>
+                    <p className="text-[var(--text-soft)] text-sm break-words mt-1">{shareUrl.replace(/^https?:\/\//, "")}</p>
                   </div>
                   <p className="text-white/70 text-xs font-bold mt-5">Salveaza pentru urmatoarea comanda</p>
                 </div>
               </div>
-              <p className="mt-3 text-center text-xs text-[#c9ced5]">Preview. Butonul descarca PNG real 1080x1920.</p>
+              <p className="mt-3 text-center text-xs text-[var(--text-soft)]">Preview. Butonul descarca PNG real 1080x1920.</p>
             </div>
           </section>
         </div>

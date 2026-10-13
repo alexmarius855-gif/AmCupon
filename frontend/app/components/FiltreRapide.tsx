@@ -89,13 +89,13 @@ export default function FiltreRapide({
             aria-pressed={selectat}
             className={`inline-flex items-center gap-1.5 text-sm font-bold px-3.5 py-2 rounded-xl border transition-colors ${
               selectat
-                ? "bg-[#ddf93c] text-[#0c1000] border-[#ddf93c]"
-                : "bg-[#14181c] text-[#c9ced5] border-[#1f2329] hover:border-[#c9ced5] hover:text-[#ffffff]"
+                ? "bg-[#ddf93c] text-[#0c1000] border-[var(--accent-text)]"
+                : "bg-[var(--surface)] text-[var(--text-soft)] border-[var(--border)] hover:border-[#c9ced5] hover:text-[var(--foreground)]"
             }`}
           >
             <Icon className="w-3.5 h-3.5" strokeWidth={2.2} />
             {eticheta}
-            <span className={`tabular-nums text-xs font-black ${selectat ? "text-[#0c1000]/70" : "text-[#6b7178]"}`}>
+            <span className={`tabular-nums text-xs font-black ${selectat ? "text-[#0c1000]/70" : "text-[var(--text-muted)]"}`}>
               {n}
             </span>
           </button>

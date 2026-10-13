@@ -36,11 +36,11 @@ export default function NewsletterCTA({ titlu = "Nu rata cele mai bune reduceri"
 
   return (
     <section className="max-w-5xl mx-auto px-4 py-8">
-      <div className="bg-gradient-to-r from-[#14181c] to-[#ddf93c]/10 border border-[#ddf93c]/20 rounded-xl p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-6">
+      <div className="bg-gradient-to-r from-[#14181c] to-[#ddf93c]/10 border border-[var(--accent-text)]/20 rounded-xl p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-6">
         <div className="text-4xl shrink-0">📬</div>
         <div className="flex-1 text-center sm:text-left">
-          <h2 className="font-black text-[#ffffff] text-lg">{titlu}</h2>
-          <p className="text-[#c9ced5] text-sm mt-1">Ofertele active, pe email, o dată pe zi. Gratuit, fără spam, dezabonare oricând.</p>
+          <h2 className="font-black text-[var(--foreground)] text-lg">{titlu}</h2>
+          <p className="text-[var(--text-soft)] text-sm mt-1">Ofertele active, pe email, o dată pe zi. Gratuit, fără spam, dezabonare oricând.</p>
         </div>
         {status === "success" ? (
           <p className="shrink-0 text-emerald-400 font-bold text-sm">🎉 Ești abonat!</p>
@@ -52,7 +52,7 @@ export default function NewsletterCTA({ titlu = "Nu rata cele mai bune reduceri"
               onChange={(e) => { setEmail(e.target.value); setStatus("idle"); }}
               placeholder="adresa@email.ro"
               required
-              className="flex-1 sm:w-56 bg-[#1f2329] border border-[#2a2f36] text-[#ffffff] rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#ddf93c]/50 placeholder-[#9399a0]"
+              className="flex-1 sm:w-56 bg-[var(--surface-alt)] border border-[var(--border-strong)] text-[var(--foreground)] rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#ddf93c]/50 placeholder-[var(--text-muted)]"
             />
             <button
               type="submit"

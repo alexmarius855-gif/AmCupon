@@ -29,10 +29,10 @@ function ProdusCard({
       href={p.url}
       target="_blank"
       rel="sponsored noopener noreferrer"
-      className="group bg-[#14181c] border border-[#2a2f36] hover:border-[#ddf93c]/70 rounded-xl overflow-hidden transition-all hover:shadow-[0_0_24px_rgba(13,148,136,0.22)] hover:-translate-y-1 duration-200 flex flex-col relative"
+      className="group bg-[var(--surface)] border border-[var(--border-strong)] hover:border-[var(--accent-text)]/70 rounded-xl overflow-hidden transition-all hover:shadow-[0_0_24px_rgba(13,148,136,0.22)] hover:-translate-y-1 duration-200 flex flex-col relative"
     >
       {/* Image */}
-      <div className="relative bg-[#1f2329] overflow-hidden" style={{ aspectRatio: "1" }}>
+      <div className="relative bg-[var(--surface-alt)] overflow-hidden" style={{ aspectRatio: "1" }}>
         {hasImg ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img
@@ -43,9 +43,9 @@ function ProdusCard({
             onError={() => setImgOk(false)}
           />
         ) : (
-          <div className="w-full h-full flex flex-col items-center justify-center gap-2 bg-[#1f2329]">
+          <div className="w-full h-full flex flex-col items-center justify-center gap-2 bg-[var(--surface-alt)]">
             <span className="text-4xl">🛍️</span>
-            <span className="text-[10px] font-bold text-[#c9ced5] text-center px-2 leading-tight">{merchant}</span>
+            <span className="text-[10px] font-bold text-[var(--text-soft)] text-center px-2 leading-tight">{merchant}</span>
           </div>
         )}
 
@@ -69,7 +69,7 @@ function ProdusCard({
           className={`absolute bottom-2 right-2 w-7 h-7 rounded-full flex items-center justify-center text-sm transition-all duration-150 shadow-lg ${
             isSaved
               ? "bg-red-500 text-white scale-110"
-              : "bg-[#14181c]/80 text-[#c9ced5] opacity-0 group-hover:opacity-100 hover:text-red-400"
+              : "bg-[var(--surface)]/80 text-[var(--text-soft)] opacity-0 group-hover:opacity-100 hover:text-red-400"
           }`}
           title={isSaved ? "Salvat in wishlist — click sa stergi" : "Salveaza in wishlist"}
           aria-label={isSaved ? "Sterge din wishlist" : "Adauga in wishlist"}
@@ -80,19 +80,19 @@ function ProdusCard({
 
       {/* Info */}
       <div className="p-3 flex flex-col flex-1">
-        <p className="text-[10px] text-[#c9ced5] mb-0.5 truncate">{p.brand || merchant}</p>
-        <p className="text-xs font-semibold text-[#c9ced5] line-clamp-2 flex-1 group-hover:text-[#ddf93c] transition-colors leading-snug">
+        <p className="text-[10px] text-[var(--text-soft)] mb-0.5 truncate">{p.brand || merchant}</p>
+        <p className="text-xs font-semibold text-[var(--text-soft)] line-clamp-2 flex-1 group-hover:text-[var(--accent-text)] transition-colors leading-snug">
           {p.title}
         </p>
         <div className="flex items-baseline gap-2 mt-2 flex-wrap">
-          <span className="font-black text-[#ddf93c] text-sm">
+          <span className="font-black text-[var(--accent-text)] text-sm">
             {p.price > 0 ? `${p.price.toFixed(2)} lei` : "Vezi pretul"}
           </span>
           {p.old_price && p.old_price > p.price && (
-            <span className="text-[10px] text-[#c9ced5] line-through">{p.old_price.toFixed(2)} lei</span>
+            <span className="text-[10px] text-[var(--text-soft)] line-through">{p.old_price.toFixed(2)} lei</span>
           )}
         </div>
-        <div className="mt-2 flex items-center gap-1 text-[10px] font-bold text-[#ddf93c]">
+        <div className="mt-2 flex items-center gap-1 text-[10px] font-bold text-[var(--accent-text)]">
           Cumpara acum
           <svg className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
@@ -106,13 +106,13 @@ function ProdusCard({
 /* ─── Skeleton ────────────────────────────────────────────────────────────── */
 function SkeletonCard() {
   return (
-    <div className="bg-[#14181c] border border-[#1f2329] rounded-xl overflow-hidden animate-pulse">
-      <div className="aspect-square bg-[#1f2329]" />
+    <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl overflow-hidden animate-pulse">
+      <div className="aspect-square bg-[var(--surface-alt)]" />
       <div className="p-3 space-y-2">
-        <div className="h-2 bg-[#1f2329] rounded w-1/2" />
-        <div className="h-3 bg-[#1f2329] rounded w-full" />
-        <div className="h-3 bg-[#1f2329] rounded w-3/4" />
-        <div className="h-4 bg-[#2a2f36] rounded w-1/3 mt-2" />
+        <div className="h-2 bg-[var(--surface-alt)] rounded w-1/2" />
+        <div className="h-3 bg-[var(--surface-alt)] rounded w-full" />
+        <div className="h-3 bg-[var(--surface-alt)] rounded w-3/4" />
+        <div className="h-4 bg-[var(--surface-high)] rounded w-1/3 mt-2" />
       </div>
     </div>
   );
@@ -251,20 +251,20 @@ export default function ProduseCategorieClient({
   const faqItems = CAT_FAQ[categorie] || [];
 
   return (
-    <div className="min-h-screen bg-[#06080b]">
+    <div className="min-h-screen bg-[var(--background)]">
 
       {/* ─── HERO ────────────────────────────────────────────────────────────── */}
-      <section className="relative bg-[#06080b] text-[#ffffff] overflow-hidden">
+      <section className="relative bg-[var(--background)] text-[var(--foreground)] overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(13,148,136,0.12) 0%, transparent 65%)" }} />
         </div>
         <div className="relative max-w-5xl mx-auto px-4 pt-12 pb-14 text-center">
-          <nav className="flex justify-center gap-2 text-xs text-[#9399a0] mb-6">
-            <Link href="/" className="hover:text-[#c9ced5] transition-colors">AmCupon.ro</Link>
+          <nav className="flex justify-center gap-2 text-xs text-[var(--text-muted)] mb-6">
+            <Link href="/" className="hover:text-[var(--text-soft)] transition-colors">AmCupon.ro</Link>
             <span>/</span>
-            <Link href="/produse" className="hover:text-[#c9ced5] transition-colors">Produse</Link>
+            <Link href="/produse" className="hover:text-[var(--text-soft)] transition-colors">Produse</Link>
             <span>/</span>
-            <span className="text-[#c9ced5]">{catMeta.label}</span>
+            <span className="text-[var(--text-soft)]">{catMeta.label}</span>
           </nav>
 
           <div className="text-5xl mb-4">{catMeta.emoji}</div>
@@ -273,7 +273,7 @@ export default function ProduseCategorieClient({
               {catMeta.h1}
             </span>
           </h1>
-          <p className="text-[#c9ced5] text-base mb-8 max-w-xl mx-auto">{catMeta.desc}</p>
+          <p className="text-[var(--text-soft)] text-base mb-8 max-w-xl mx-auto">{catMeta.desc}</p>
 
           <div className="flex flex-wrap justify-center gap-8 text-sm">
             {[
@@ -283,8 +283,8 @@ export default function ProduseCategorieClient({
               { v: magazineList.length.toString(),   l: "Magazine" },
             ].map((s) => (
               <div key={s.l} className="text-center">
-                <div className="font-black text-[#ffffff] text-2xl">{s.v}</div>
-                <div className="text-[#9399a0] text-xs mt-0.5">{s.l}</div>
+                <div className="font-black text-[var(--foreground)] text-2xl">{s.v}</div>
+                <div className="text-[var(--text-muted)] text-xs mt-0.5">{s.l}</div>
               </div>
             ))}
           </div>
@@ -292,7 +292,7 @@ export default function ProduseCategorieClient({
           {/* Link wishlist daca are produse salvate */}
           <div className="mt-6 flex justify-center">
             <Link href="/wishlist"
-              className="inline-flex items-center gap-1.5 text-xs text-[#9399a0] hover:text-red-400 transition-colors border border-[#2a2f36] px-3 py-1.5 rounded-full hover:border-red-400/50">
+              className="inline-flex items-center gap-1.5 text-xs text-[var(--text-muted)] hover:text-red-400 transition-colors border border-[var(--border-strong)] px-3 py-1.5 rounded-full hover:border-red-400/50">
               ♥ Wishlist — produsele tale salvate
             </Link>
           </div>
@@ -303,10 +303,10 @@ export default function ProduseCategorieClient({
       <section className="max-w-7xl mx-auto px-4 py-8">
 
         {products.length === 0 ? (
-          <div className="text-center py-20 bg-[#14181c] rounded-xl border border-[#2a2f36]">
+          <div className="text-center py-20 bg-[var(--surface)] rounded-xl border border-[var(--border-strong)]">
             <p className="text-5xl mb-4">{catMeta.emoji}</p>
-            <h2 className="font-black text-[#c9ced5] text-xl mb-2">Feed-urile se actualizeaza</h2>
-            <p className="text-[#9399a0] text-sm mb-6 max-w-md mx-auto">
+            <h2 className="font-black text-[var(--text-soft)] text-xl mb-2">Feed-urile se actualizeaza</h2>
+            <p className="text-[var(--text-muted)] text-sm mb-6 max-w-md mx-auto">
               Produsele din categoria {catMeta.label} se incarca la urmatoarea actualizare zilnica.
               Total in catalog: {totalAll.toLocaleString()} produse.
             </p>
@@ -317,19 +317,19 @@ export default function ProduseCategorieClient({
         ) : (
           <>
             {/* ─── FILTRE ─────────────────────────────────────────────────────── */}
-            <div className="bg-[#14181c] rounded-xl border border-[#2a2f36] p-4 mb-6">
+            <div className="bg-[var(--surface)] rounded-xl border border-[var(--border-strong)] p-4 mb-6">
               <div className="flex flex-wrap gap-3 items-end">
                 {/* Search */}
                 <div className="flex flex-col gap-1 flex-1 min-w-[200px]">
-                  <label className="text-[10px] font-bold text-[#c9ced5] uppercase tracking-widest">Cauta</label>
+                  <label className="text-[10px] font-bold text-[var(--text-soft)] uppercase tracking-widest">Cauta</label>
                   <div className="relative">
-                    <svg className="absolute left-3 top-2.5 w-4 h-4 text-[#9399a0]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="absolute left-3 top-2.5 w-4 h-4 text-[var(--text-muted)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
                     <input
                       type="text" placeholder="Titlu, brand..."
                       value={search} onChange={(e) => setSearch(e.target.value)}
-                      className="w-full bg-[#1f2329] border border-[#2a2f36] text-[#c9ced5] placeholder:text-[#9399a0] rounded-xl pl-9 pr-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#ddf93c]"
+                      className="w-full bg-[var(--surface-alt)] border border-[var(--border-strong)] text-[var(--text-soft)] placeholder:text-[var(--text-muted)] rounded-xl pl-9 pr-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#ddf93c]"
                     />
                   </div>
                 </div>
@@ -337,9 +337,9 @@ export default function ProduseCategorieClient({
                 {/* Brand */}
                 {brandList.length > 1 && (
                   <div className="flex flex-col gap-1 min-w-[140px]">
-                    <label className="text-[10px] font-bold text-[#c9ced5] uppercase tracking-widest">Brand</label>
+                    <label className="text-[10px] font-bold text-[var(--text-soft)] uppercase tracking-widest">Brand</label>
                     <select value={brand} onChange={(e) => setBrand(e.target.value)}
-                      className="border border-[#2a2f36] bg-[#1f2329] text-[#c9ced5] rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#ddf93c]">
+                      className="border border-[var(--border-strong)] bg-[var(--surface-alt)] text-[var(--text-soft)] rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#ddf93c]">
                       <option value="">Toate</option>
                       {brandList.map((b) => <option key={b} value={b}>{b}</option>)}
                     </select>
@@ -349,9 +349,9 @@ export default function ProduseCategorieClient({
                 {/* Magazin */}
                 {magazineList.length > 1 && (
                   <div className="flex flex-col gap-1 min-w-[140px]">
-                    <label className="text-[10px] font-bold text-[#c9ced5] uppercase tracking-widest">Magazin</label>
+                    <label className="text-[10px] font-bold text-[var(--text-soft)] uppercase tracking-widest">Magazin</label>
                     <select value={magazin} onChange={(e) => setMagazin(e.target.value)}
-                      className="border border-[#2a2f36] bg-[#1f2329] text-[#c9ced5] rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#ddf93c]">
+                      className="border border-[var(--border-strong)] bg-[var(--surface-alt)] text-[var(--text-soft)] rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#ddf93c]">
                       <option value="">Toate ({magazineList.length})</option>
                       {magazineList.map((m) => <option key={m} value={m}>{numeAfisat(m)}</option>)}
                     </select>
@@ -360,11 +360,11 @@ export default function ProduseCategorieClient({
 
                 {/* Discount */}
                 <div className="flex flex-col gap-1">
-                  <label className="text-[10px] font-bold text-[#c9ced5] uppercase tracking-widest">Reducere min.</label>
+                  <label className="text-[10px] font-bold text-[var(--text-soft)] uppercase tracking-widest">Reducere min.</label>
                   <div className="flex gap-1">
                     {[0, 10, 25, 50, 70].map((v) => (
                       <button key={v} onClick={() => setMinDiscount(v)}
-                        className={`px-2.5 py-2 rounded-xl text-xs font-semibold transition-colors ${minDiscount === v ? "bg-[#ddf93c] text-[#0c1000]" : "border border-[#2a2f36] bg-[#1f2329] text-[#c9ced5] hover:border-[#ddf93c]"}`}>
+                        className={`px-2.5 py-2 rounded-xl text-xs font-semibold transition-colors ${minDiscount === v ? "bg-[#ddf93c] text-[#0c1000]" : "border border-[var(--border-strong)] bg-[var(--surface-alt)] text-[var(--text-soft)] hover:border-[var(--accent-text)]"}`}>
                         {v === 0 ? "Toate" : `>=${v}%`}
                       </button>
                     ))}
@@ -374,7 +374,7 @@ export default function ProduseCategorieClient({
                 {/* Pret max */}
                 {pretMax > 0 && (
                   <div className="flex flex-col gap-1 min-w-[160px]">
-                    <label className="text-[10px] font-bold text-[#c9ced5] uppercase tracking-widest">
+                    <label className="text-[10px] font-bold text-[var(--text-soft)] uppercase tracking-widest">
                       Pret max: {maxPret > 0 && maxPret < pretMax ? `${maxPret} lei` : "Orice"}
                     </label>
                     <input
@@ -386,7 +386,7 @@ export default function ProduseCategorieClient({
                     {/* 22.09.2026: capatul de jos era „0 lei" fix. Nu e un produs, e eticheta
                         slider-ului — dar pe o pagina de cumparaturi „0 lei" citit din fuga arata a
                         pret, si niciun produs de aici nu costa atat. Aratam capetele reale. */}
-                    <div className="flex justify-between text-[9px] text-[#9399a0]">
+                    <div className="flex justify-between text-[9px] text-[var(--text-muted)]">
                       <span>{pretMinReal.toLocaleString()} lei</span><span>{pretMax.toLocaleString()} lei</span>
                     </div>
                   </div>
@@ -394,9 +394,9 @@ export default function ProduseCategorieClient({
 
                 {/* Sort */}
                 <div className="flex flex-col gap-1 ml-auto">
-                  <label className="text-[10px] font-bold text-[#c9ced5] uppercase tracking-widest">Sortare</label>
+                  <label className="text-[10px] font-bold text-[var(--text-soft)] uppercase tracking-widest">Sortare</label>
                   <select value={sort} onChange={(e) => setSort(e.target.value as Sort)}
-                    className="border border-[#2a2f36] bg-[#1f2329] text-[#c9ced5] rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#ddf93c]">
+                    className="border border-[var(--border-strong)] bg-[var(--surface-alt)] text-[var(--text-soft)] rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#ddf93c]">
                     <option value="discount">Discount maxim</option>
                     <option value="nou">Cele mai noi</option>
                     <option value="pret_asc">Pret crescator</option>
@@ -406,7 +406,7 @@ export default function ProduseCategorieClient({
 
                 {hasFiltre && (
                   <button onClick={resetFiltre}
-                    className="text-sm text-[#ddf93c] font-semibold hover:text-[#ddf93c] border border-[#ddf93c]/30 px-3 py-2 rounded-xl bg-[#14181c]">
+                    className="text-sm text-[var(--accent-text)] font-semibold hover:text-[var(--accent-text)] border border-[var(--accent-text)]/30 px-3 py-2 rounded-xl bg-[var(--surface)]">
                     Reset
                   </button>
                 )}
@@ -415,22 +415,22 @@ export default function ProduseCategorieClient({
 
             {/* Count */}
             <div className="flex items-center justify-between mb-4">
-              <p className="text-sm text-[#c9ced5]">
-                <span className="font-bold text-[#c9ced5]">{filtrate.length.toLocaleString()}</span> produse
-                {hasFiltre && <span className="text-[#9399a0]"> (din {products.length.toLocaleString()})</span>}
-                {updated && <span className="text-[#9399a0]"> · actualizat {new Date(updated).toLocaleDateString("ro-RO")}</span>}
+              <p className="text-sm text-[var(--text-soft)]">
+                <span className="font-bold text-[var(--text-soft)]">{filtrate.length.toLocaleString()}</span> produse
+                {hasFiltre && <span className="text-[var(--text-muted)]"> (din {products.length.toLocaleString()})</span>}
+                {updated && <span className="text-[var(--text-muted)]"> · actualizat {new Date(updated).toLocaleDateString("ro-RO")}</span>}
               </p>
-              <Link href="/wishlist" className="text-xs text-[#9399a0] hover:text-red-400 transition-colors flex items-center gap-1">
+              <Link href="/wishlist" className="text-xs text-[var(--text-muted)] hover:text-red-400 transition-colors flex items-center gap-1">
                 ♥ Wishlist
               </Link>
             </div>
 
             {/* Grid produse */}
             {filtrate.length === 0 ? (
-              <div className="text-center py-16 bg-[#14181c] rounded-xl border border-[#2a2f36]">
+              <div className="text-center py-16 bg-[var(--surface)] rounded-xl border border-[var(--border-strong)]">
                 <p className="text-3xl mb-3">🔍</p>
-                <p className="font-bold text-[#c9ced5] mb-2">Niciun produs gasit</p>
-                <button onClick={resetFiltre} className="text-[#ddf93c] font-semibold text-sm hover:text-[#c3dd2c]">
+                <p className="font-bold text-[var(--text-soft)] mb-2">Niciun produs gasit</p>
+                <button onClick={resetFiltre} className="text-[var(--accent-text)] font-semibold text-sm hover:text-[var(--accent-text)]">
                   Reseteaza filtrele →
                 </button>
               </div>
@@ -453,7 +453,7 @@ export default function ProduseCategorieClient({
                 {/* Sentinel pentru infinite scroll */}
                 <div ref={loadMoreRef} className="h-4 mt-4" />
                 {limit >= filtrate.length && filtrate.length > 48 && (
-                  <p className="text-center text-xs text-[#9399a0] mt-4">
+                  <p className="text-center text-xs text-[var(--text-muted)] mt-4">
                     Toate cele {filtrate.length.toLocaleString()} produse au fost incarcate.
                   </p>
                 )}
@@ -466,21 +466,21 @@ export default function ProduseCategorieClient({
       {/* ─── FAQ ─────────────────────────────────────────────────────────────── */}
       {faqItems.length > 0 && (
         <section className="max-w-3xl mx-auto px-4 py-12">
-          <h2 className="text-xl font-black text-[#ffffff] mb-6 text-center">
+          <h2 className="text-xl font-black text-[var(--foreground)] mb-6 text-center">
             Intrebari frecvente despre {catMeta.label}
           </h2>
           <div className="space-y-3">
             {faqItems.map((item, i) => (
-              <div key={i} className="bg-[#14181c] border border-[#2a2f36] rounded-xl overflow-hidden">
+              <div key={i} className="bg-[var(--surface)] border border-[var(--border-strong)] rounded-xl overflow-hidden">
                 <button
                   onClick={() => setFaqOpen(faqOpen === i ? null : i)}
-                  className="w-full text-left px-5 py-4 flex items-center justify-between gap-3 hover:bg-[#1f2329] transition-colors"
+                  className="w-full text-left px-5 py-4 flex items-center justify-between gap-3 hover:bg-[var(--surface-alt)] transition-colors"
                 >
-                  <span className="font-semibold text-[#c9ced5] text-sm">{item.q}</span>
-                  <span className={`text-[#ddf93c] text-lg transition-transform ${faqOpen === i ? "rotate-45" : ""}`}>+</span>
+                  <span className="font-semibold text-[var(--text-soft)] text-sm">{item.q}</span>
+                  <span className={`text-[var(--accent-text)] text-lg transition-transform ${faqOpen === i ? "rotate-45" : ""}`}>+</span>
                 </button>
                 {faqOpen === i && (
-                  <div className="px-5 pb-5 text-sm text-[#c9ced5] leading-relaxed border-t border-[#1f2329] pt-3">
+                  <div className="px-5 pb-5 text-sm text-[var(--text-soft)] leading-relaxed border-t border-[var(--border)] pt-3">
                     {item.a}
                   </div>
                 )}
@@ -491,21 +491,21 @@ export default function ProduseCategorieClient({
       )}
 
       {/* ─── ALTE CATEGORII ──────────────────────────────────────────────────── */}
-      <section className="bg-[#14181c] border-t border-[#1f2329] py-10 px-4">
+      <section className="bg-[var(--surface)] border-t border-[var(--border)] py-10 px-4">
         <div className="max-w-7xl mx-auto">
-          <p className="text-xs font-bold text-[#9399a0] uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
+          <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3">
             {alteCategorii.map(([slug, cm]) => (
               <Link key={slug} href={`/produse/${slug}`}
-                className="group bg-[#1f2329] border border-[#2a2f36] hover:border-[#ddf93c]/50 rounded-xl p-3 text-center hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
+                className="group bg-[var(--surface-alt)] border border-[var(--border-strong)] hover:border-[var(--accent-text)]/50 rounded-xl p-3 text-center hover:shadow-md hover:-translate-y-0.5 transition-all duration-200">
                 <div className="text-2xl mb-1">{cm.emoji}</div>
-                <p className="text-xs font-semibold text-[#c9ced5] group-hover:text-[#ddf93c] transition-colors leading-tight">{cm.label}</p>
+                <p className="text-xs font-semibold text-[var(--text-soft)] group-hover:text-[var(--accent-text)] transition-colors leading-tight">{cm.label}</p>
               </Link>
             ))}
           </div>
           <div className="mt-4 text-center">
             <Link href="/produse"
-              className="text-sm font-bold text-[#ddf93c] hover:text-[#ddf93c] border border-[#ddf93c]/30 px-5 py-2 rounded-xl bg-[#14181c] inline-block">
+              className="text-sm font-bold text-[var(--accent-text)] hover:text-[var(--accent-text)] border border-[var(--accent-text)]/30 px-5 py-2 rounded-xl bg-[var(--surface)] inline-block">
               Toate produsele ({totalAll.toLocaleString()}) →
             </Link>
           </div>

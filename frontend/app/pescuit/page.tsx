@@ -70,18 +70,18 @@ export default function PescuitPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <div className="min-h-screen bg-[#06080b]">
+      <div className="min-h-screen bg-[var(--background)]">
 
-        <nav className="bg-[#06080b] border-b border-[#1f2329]">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#9399a0]">
-            <Link href="/" className="hover:text-[#ddf93c]">Acasa</Link>
+        <nav className="bg-[var(--background)] border-b border-[var(--border)]">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[var(--text-muted)]">
+            <Link href="/" className="hover:text-[var(--accent-text)]">Acasa</Link>
             <span className="mx-1">/</span>
-            <span className="text-[#c9ced5] font-medium">Pescuit</span>
+            <span className="text-[var(--text-soft)] font-medium">Pescuit</span>
           </div>
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-emerald-800 via-green-800 to-[#14181c] text-[#ffffff] py-12 px-4">
+        <section className="bg-gradient-to-br from-emerald-800 via-green-800 to-[#14181c] text-[var(--foreground)] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">🎣</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">
@@ -92,7 +92,7 @@ export default function PescuitPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {BRANDURI.map(b => (
-                <span key={b} className="bg-[#1f2329] text-[#ffffff] text-sm font-semibold px-4 py-1.5 rounded-full border border-[#2a2f36]">
+                <span key={b} className="bg-[var(--surface-alt)] text-[var(--foreground)] text-sm font-semibold px-4 py-1.5 rounded-full border border-[var(--border-strong)]">
                   {b}
                 </span>
               ))}
@@ -102,13 +102,13 @@ export default function PescuitPage() {
 
         {/* CATEGORII ECHIPAMENTE */}
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[#ffffff] mb-6 text-center">Ce gasesti la preturi mai mici</h2>
+          <h2 className="text-xl font-black text-[var(--foreground)] mb-6 text-center">Ce gasesti la preturi mai mici</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {ECHIPAMENTE.map(e => (
-              <div key={e.label} className="bg-[#14181c] border border-[#1f2329] rounded-xl p-5 hover:shadow-md transition-all">
+              <div key={e.label} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5 hover:shadow-md transition-all">
                 <div className="text-3xl mb-2">{e.emoji}</div>
-                <h3 className="font-bold text-[#ffffff] text-sm mb-1">{e.label}</h3>
-                <p className="text-xs text-[#c9ced5]">{e.desc}</p>
+                <h3 className="font-bold text-[var(--foreground)] text-sm mb-1">{e.label}</h3>
+                <p className="text-xs text-[var(--text-soft)]">{e.desc}</p>
               </div>
             ))}
           </div>
@@ -116,11 +116,11 @@ export default function PescuitPage() {
 
         {/* MAGAZINE */}
         <section className="max-w-6xl mx-auto px-4 pb-10">
-          <h2 className="text-xl font-black text-[#ffffff] mb-5">Magazine pescuit cu reduceri active</h2>
+          <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Magazine pescuit cu reduceri active</h2>
           {magazine.length === 0 ? (
-            <div className="text-center py-10 bg-[#14181c] rounded-xl">
+            <div className="text-center py-10 bg-[var(--surface)] rounded-xl">
               <p className="text-2xl mb-3">🎣</p>
-              <p className="text-[#c9ced5] font-medium mb-2">Curand disponibil — verifica ofertele sport</p>
+              <p className="text-[var(--text-soft)] font-medium mb-2">Curand disponibil — verifica ofertele sport</p>
               <Link href="/categorii/sport" className="inline-block bg-emerald-600 text-white font-bold px-6 py-3 rounded-xl hover:bg-emerald-500 transition-colors">
                 Sport & Outdoor →
               </Link>
@@ -146,20 +146,20 @@ export default function PescuitPage() {
         />
 
         {/* SEO TEXT */}
-        <section className="bg-[#14181c] border-t border-[#1f2329] py-10 px-4">
+        <section className="bg-[var(--surface)] border-t border-[var(--border)] py-10 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-[#ffffff] mb-5">Cum alegi echipamentele de pescuit</h2>
-            <div className="space-y-4 text-sm text-[#c9ced5] leading-relaxed">
+            <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Cum alegi echipamentele de pescuit</h2>
+            <div className="space-y-4 text-sm text-[var(--text-soft)] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Undite: spinning, feeder sau crap?</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Undite: spinning, feeder sau crap?</h3>
                 <p>Pentru inceput, o undita spinning universala (2-3m, 10-30g) acopera cele mai multe situatii. Feeder-ul e optim pentru rauri si lacuri cu fund nisipos, iar setup-ul de crap necesita investitie mai mare dar ofera sesiuni lungi si capturi mari.</p>
               </div>
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Branduri de incredere la preturi corecte</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Branduri de incredere la preturi corecte</h3>
                 <p>Daiwa si Okuma ofera cel mai bun raport calitate-pret pentru incepatori si intermediari. Trabucco e preferat la pescuitul la feeder. Prologic si Delphin au accesorii excelente. Fox si Nash sunt pentru crap-isti seriosi cu buget dedicat.</p>
               </div>
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Sfaturi pentru economii la echipamente {an}</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Sfaturi pentru economii la echipamente {an}</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
                   <li>Sezonul off (iarna) aduce reduceri de 20-40% la undite si mulinete</li>
                   <li>Codurile de reducere de la Pescar Expert se pot combina cu promotiile active</li>
@@ -173,7 +173,7 @@ export default function PescuitPage() {
 
         {/* LINK-URI INRUDITE */}
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[#c9ced5] mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Exploreaza si alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/casa", label: "🌿 Casa & Gradina" },
@@ -184,18 +184,18 @@ export default function PescuitPage() {
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-[#14181c] hover:bg-[#1f2329] hover:text-emerald-300 text-[#c9ced5] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#1f2329] hover:border-emerald-400">
+                className="bg-[var(--surface)] hover:bg-[var(--surface-alt)] hover:text-emerald-300 text-[var(--text-soft)] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[var(--border)] hover:border-emerald-400">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-[#1f2329] py-6 text-center text-xs text-[#9399a0] mt-4">
+        <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)] mt-4">
           © {an} AmCupon.ro ·{" "}
-          <Link href="/blog" className="hover:text-[#ddf93c]">Blog</Link>{" · "}
-          <Link href="/categorii" className="hover:text-[#ddf93c]">Categorii</Link>{" · "}
-          <Link href="/" className="hover:text-[#ddf93c]">Acasa</Link>
+          <Link href="/blog" className="hover:text-[var(--accent-text)]">Blog</Link>{" · "}
+          <Link href="/categorii" className="hover:text-[var(--accent-text)]">Categorii</Link>{" · "}
+          <Link href="/" className="hover:text-[var(--accent-text)]">Acasa</Link>
         </footer>
       </div>
     </>

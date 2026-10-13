@@ -53,12 +53,12 @@ export default function FashionPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-[#06080b]">
-        <nav className="bg-[#06080b] border-b border-[#1f2329]">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#9399a0]">
-            <Link href="/" className="hover:text-[#ddf93c]">Acasa</Link>
+      <div className="min-h-screen bg-[var(--background)]">
+        <nav className="bg-[var(--background)] border-b border-[var(--border)]">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[var(--text-muted)]">
+            <Link href="/" className="hover:text-[var(--accent-text)]">Acasa</Link>
             <span className="mx-1">/</span>
-            <span className="text-[#c9ced5] font-medium">Fashion & Haine</span>
+            <span className="text-[var(--text-soft)] font-medium">Fashion & Haine</span>
           </div>
         </nav>
 
@@ -71,20 +71,20 @@ export default function FashionPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Haine Dama","Haine Barbati","Pantofi","Genti","Geci","Lenjerie","Accesorii"].map(c => (
-                <span key={c} className="bg-[#1f2329] text-[#ffffff] text-sm font-semibold px-4 py-1.5 rounded-full border border-[#2a2f36]">{c}</span>
+                <span key={c} className="bg-[var(--surface-alt)] text-[var(--foreground)] text-sm font-semibold px-4 py-1.5 rounded-full border border-[var(--border-strong)]">{c}</span>
               ))}
             </div>
           </div>
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[#ffffff] mb-6 text-center">Ce gasesti la magazine fashion online</h2>
+          <h2 className="text-xl font-black text-[var(--foreground)] mb-6 text-center">Ce gasesti la magazine fashion online</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {AVANTAJE.map(a => (
-              <div key={a.titlu} className="bg-[#14181c] border border-[#1f2329] rounded-xl p-5">
+              <div key={a.titlu} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
                 <div className="text-3xl mb-2">{a.icon}</div>
-                <h3 className="font-bold text-[#ffffff] text-sm mb-1">{a.titlu}</h3>
-                <p className="text-xs text-[#c9ced5]">{a.desc}</p>
+                <h3 className="font-bold text-[var(--foreground)] text-sm mb-1">{a.titlu}</h3>
+                <p className="text-xs text-[var(--text-soft)]">{a.desc}</p>
               </div>
             ))}
           </div>
@@ -93,7 +93,7 @@ export default function FashionPage() {
         <section className="max-w-6xl mx-auto px-4 pb-10">
           <div className="flex items-center gap-3 mb-5">
             
-            <h2 className="text-xl font-black text-[#ffffff]">Magazine fashion cu reduceri active</h2>
+            <h2 className="text-xl font-black text-[var(--foreground)]">Magazine fashion cu reduceri active</h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {magazine.map((m) => (
@@ -112,16 +112,16 @@ export default function FashionPage() {
           limit={12}
         />
 
-        <section className="bg-[#14181c] border-t border-[#1f2329] py-10 px-4">
+        <section className="bg-[var(--surface)] border-t border-[var(--border)] py-10 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-[#ffffff] mb-5">Ghid: Haine online mai ieftine in Romania</h2>
-            <div className="space-y-4 text-sm text-[#c9ced5] leading-relaxed">
+            <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Ghid: Haine online mai ieftine in Romania</h2>
+            <div className="space-y-4 text-sm text-[var(--text-soft)] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Unde gasesti reduceri la haine</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Unde gasesti reduceri la haine</h3>
                 <p>Answear si ceilalti parteneri AmCupon de moda au sectiuni de reduceri si promotii de sezon; ofertele lor active apar mai sus, pe cardurile magazinelor.</p>
               </div>
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Cele mai bune perioade pentru cumparaturi fashion</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Cele mai bune perioade pentru cumparaturi fashion</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
                   <li><strong>Solduri de iarna (ianuarie)</strong> — reduceri mari la colectiile de toamna-iarna</li>
                   <li><strong>Solduri de vara (iulie)</strong> — lichidare stocuri primavara-vara</li>
@@ -129,18 +129,18 @@ export default function FashionPage() {
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Cum economisesti la haine online</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Cum economisesti la haine online</h3>
                 <p>Adauga produsele in lista de favorite a magazinului si asteapta o promotie. La sfarsit de sezon, colectia care pleaca intra la reducere.</p>
               </div>
             </div>
           </div>
         </section>
 
-        <footer className="border-t border-[#1f2329] py-6 text-center text-xs text-[#9399a0] mt-4">
+        <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)] mt-4">
           © {an} AmCupon.ro ·{" "}
-          <Link href="/frumusete" className="hover:text-[#ddf93c]">Frumusete</Link>{" · "}
-          <Link href="/idei-cadouri" className="hover:text-[#ddf93c]">Idei Cadouri</Link>{" · "}
-          <Link href="/categorii" className="hover:text-[#ddf93c]">Categorii</Link>
+          <Link href="/frumusete" className="hover:text-[var(--accent-text)]">Frumusete</Link>{" · "}
+          <Link href="/idei-cadouri" className="hover:text-[var(--accent-text)]">Idei Cadouri</Link>{" · "}
+          <Link href="/categorii" className="hover:text-[var(--accent-text)]">Categorii</Link>
         </footer>
       </div>
     </>

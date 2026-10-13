@@ -150,19 +150,19 @@ function getProduse(
 // de un lookup cu fiecare combinatie scrisa literal. `textPe` = textul de PE fundalul
 // accentului: pe lime (si pe verde/galben deschis) textul alb nu se citeste.
 const ACCENT_CLASSES: Record<string, { text: string; bg: string; textPe: string; border: string; groupHoverText: string }> = {
-  purple:  { text: "text-[#ddf93c]",  bg: "bg-[#ddf93c]",  textPe: "text-[#0c1000]", border: "hover:border-[#ddf93c]",  groupHoverText: "group-hover:text-[#ddf93c]" },
+  purple:  { text: "text-[var(--accent-text)]",  bg: "bg-[#ddf93c]",  textPe: "text-[#0c1000]", border: "hover:border-[var(--accent-text)]",  groupHoverText: "group-hover:text-[var(--accent-text)]" },
   green:   { text: "text-green-600",   bg: "bg-green-500",   textPe: "text-[#0c1000]", border: "hover:border-green-300",   groupHoverText: "group-hover:text-green-600" },
-  blue:    { text: "text-[#ddf93c]",    bg: "bg-[#ddf93c]",    textPe: "text-[#0c1000]", border: "hover:border-[#ddf93c]",    groupHoverText: "group-hover:text-[#ddf93c]" },
-  pink:    { text: "text-[#ddf93c]",    bg: "bg-[#ddf93c]",    textPe: "text-[#0c1000]", border: "hover:border-[#ddf93c]",    groupHoverText: "group-hover:text-[#ddf93c]" },
+  blue:    { text: "text-[var(--accent-text)]",    bg: "bg-[#ddf93c]",    textPe: "text-[#0c1000]", border: "hover:border-[var(--accent-text)]",    groupHoverText: "group-hover:text-[var(--accent-text)]" },
+  pink:    { text: "text-[var(--accent-text)]",    bg: "bg-[#ddf93c]",    textPe: "text-[#0c1000]", border: "hover:border-[var(--accent-text)]",    groupHoverText: "group-hover:text-[var(--accent-text)]" },
   emerald: { text: "text-emerald-600", bg: "bg-emerald-500", textPe: "text-[#0c1000]", border: "hover:border-emerald-300", groupHoverText: "group-hover:text-emerald-600" },
   yellow:  { text: "text-yellow-600",  bg: "bg-yellow-500",  textPe: "text-[#0c1000]", border: "hover:border-yellow-300",  groupHoverText: "group-hover:text-yellow-600" },
-  indigo:  { text: "text-[#ddf93c]",  bg: "bg-[#ddf93c]",  textPe: "text-[#0c1000]", border: "hover:border-[#c3dd2c]",  groupHoverText: "group-hover:text-[#ddf93c]" },
-  amber:   { text: "text-[#ddf93c]",   bg: "bg-[#ddf93c]",   textPe: "text-[#0c1000]", border: "hover:border-[#ddf93c]",   groupHoverText: "group-hover:text-[#ddf93c]" },
-  rose:    { text: "text-[#ddf93c]",    bg: "bg-[#ddf93c]",    textPe: "text-[#0c1000]", border: "hover:border-[#ddf93c]",    groupHoverText: "group-hover:text-[#ddf93c]" },
-  gray:    { text: "text-gray-600",    bg: "bg-gray-500",    textPe: "text-[#ffffff]", border: "hover:border-[#3a4048]",    groupHoverText: "group-hover:text-gray-600" },
-  teal:    { text: "text-[#ddf93c]",    bg: "bg-[#ddf93c]",    textPe: "text-[#0c1000]", border: "hover:border-[#ddf93c]",    groupHoverText: "group-hover:text-[#ddf93c]" },
-  violet:  { text: "text-[#ddf93c]",  bg: "bg-[#ddf93c]",  textPe: "text-[#0c1000]", border: "hover:border-[#ddf93c]",  groupHoverText: "group-hover:text-[#ddf93c]" },
-  cyan:    { text: "text-[#ddf93c]",    bg: "bg-[#ddf93c]",    textPe: "text-[#0c1000]", border: "hover:border-[#c3dd2c]",    groupHoverText: "group-hover:text-[#ddf93c]" },
+  indigo:  { text: "text-[var(--accent-text)]",  bg: "bg-[#ddf93c]",  textPe: "text-[#0c1000]", border: "hover:border-[#c3dd2c]",  groupHoverText: "group-hover:text-[var(--accent-text)]" },
+  amber:   { text: "text-[var(--accent-text)]",   bg: "bg-[#ddf93c]",   textPe: "text-[#0c1000]", border: "hover:border-[var(--accent-text)]",   groupHoverText: "group-hover:text-[var(--accent-text)]" },
+  rose:    { text: "text-[var(--accent-text)]",    bg: "bg-[#ddf93c]",    textPe: "text-[#0c1000]", border: "hover:border-[var(--accent-text)]",    groupHoverText: "group-hover:text-[var(--accent-text)]" },
+  gray:    { text: "text-gray-600",    bg: "bg-gray-500",    textPe: "text-[var(--foreground)]", border: "hover:border-[var(--border-strong)]",    groupHoverText: "group-hover:text-gray-600" },
+  teal:    { text: "text-[var(--accent-text)]",    bg: "bg-[#ddf93c]",    textPe: "text-[#0c1000]", border: "hover:border-[var(--accent-text)]",    groupHoverText: "group-hover:text-[var(--accent-text)]" },
+  violet:  { text: "text-[var(--accent-text)]",  bg: "bg-[#ddf93c]",  textPe: "text-[#0c1000]", border: "hover:border-[var(--accent-text)]",  groupHoverText: "group-hover:text-[var(--accent-text)]" },
+  cyan:    { text: "text-[var(--accent-text)]",    bg: "bg-[#ddf93c]",    textPe: "text-[#0c1000]", border: "hover:border-[#c3dd2c]",    groupHoverText: "group-hover:text-[var(--accent-text)]" },
 };
 
 export default function NisaProduse({
@@ -193,7 +193,7 @@ export default function NisaProduse({
 
   return (
     <section className="max-w-6xl mx-auto px-4 pb-12">
-      <h2 className="text-xl font-black text-[#ffffff] mb-5">{titlu}</h2>
+      <h2 className="text-xl font-black text-[var(--foreground)] mb-5">{titlu}</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
         {produse.map((p) => {
           const hasPrice   = p.price > 0;
@@ -207,7 +207,7 @@ export default function NisaProduse({
               href={p.url}
               target="_blank"
               rel="sponsored noopener noreferrer"
-              className={`group bg-[#14181c] border border-[#1f2329] ${accent.border} rounded-xl overflow-hidden transition-all hover:shadow-lg hover:shadow-black/40 hover:-translate-y-0.5 duration-200 flex flex-col`}
+              className={`group bg-[var(--surface)] border border-[var(--border)] ${accent.border} rounded-xl overflow-hidden transition-all hover:shadow-lg hover:shadow-black/40 hover:-translate-y-0.5 duration-200 flex flex-col`}
             >
               {/* Imagine — pe alb: pozele de produs si logo-urile sunt facute pentru fundal alb */}
               <div className="relative bg-[#ffffff] aspect-square overflow-hidden">
@@ -232,8 +232,8 @@ export default function NisaProduse({
 
               {/* Info */}
               <div className="p-3 flex flex-col flex-1">
-                <p className="text-xs text-[#9399a0] mb-1 truncate">{p.is_promo ? numeAfisat(p.merchant_slug) : (p.brand || numeAfisat(p.merchant_slug))}</p>
-                <p className={`text-sm font-semibold text-[#c9ced5] line-clamp-2 flex-1 ${accent.groupHoverText} transition-colors leading-snug`}>
+                <p className="text-xs text-[var(--text-muted)] mb-1 truncate">{p.is_promo ? numeAfisat(p.merchant_slug) : (p.brand || numeAfisat(p.merchant_slug))}</p>
+                <p className={`text-sm font-semibold text-[var(--text-soft)] line-clamp-2 flex-1 ${accent.groupHoverText} transition-colors leading-snug`}>
                   {titluP}
                 </p>
                 <div className="flex items-center gap-2 mt-2">
@@ -243,7 +243,7 @@ export default function NisaProduse({
                         {p.price.toFixed(0)} lei
                       </span>
                       {hasDiscount && p.old_price && (
-                        <span className="text-xs text-[#9399a0] line-through">
+                        <span className="text-xs text-[var(--text-muted)] line-through">
                           {p.old_price.toFixed(0)} lei
                         </span>
                       )}

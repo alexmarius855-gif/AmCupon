@@ -44,15 +44,15 @@ const CATEGORII_CULORI: Record<string, string> = {
 function culoarePentruCategorie(cat: string) {
   const c = CATEGORII_CULORI[cat] || "indigo";
   const map: Record<string, { border: string; badge: string; text: string }> = {
-    indigo:  { border: "border-[#ddf93c]/20",  badge: "bg-[#ddf93c]/10 text-[#c3dd2c]",  text: "text-[#ddf93c]" },
-    violet:  { border: "border-[#ddf93c]/20",  badge: "bg-[#ddf93c]/10 text-[#c3dd2c]",  text: "text-[#c3dd2c]" },
+    indigo:  { border: "border-[var(--accent-text)]/20",  badge: "bg-[#ddf93c]/10 text-[var(--accent-text)]",  text: "text-[var(--accent-text)]" },
+    violet:  { border: "border-[var(--accent-text)]/20",  badge: "bg-[#ddf93c]/10 text-[var(--accent-text)]",  text: "text-[var(--accent-text)]" },
     emerald: { border: "border-emerald-500/20", badge: "bg-emerald-500/10 text-emerald-300", text: "text-emerald-400" },
-    blue:    { border: "border-[#ddf93c]/20",    badge: "bg-[#ddf93c]/10 text-[#c3dd2c]",    text: "text-[#c3dd2c]" },
-    cyan:    { border: "border-[#ddf93c]/20",    badge: "bg-[#ddf93c]/10 text-[#c3dd2c]",    text: "text-[#ddf93c]" },
-    pink:    { border: "border-[#ddf93c]/20",    badge: "bg-[#ddf93c]/10 text-[#c3dd2c]",    text: "text-[#c3dd2c]" },
-    amber:   { border: "border-[#ddf93c]/20",   badge: "bg-[#ddf93c]/10 text-[#c3dd2c]",  text: "text-[#c3dd2c]" },
-    purple:  { border: "border-[#ddf93c]/20",  badge: "bg-[#ddf93c]/10 text-[#c3dd2c]", text: "text-[#c3dd2c]" },
-    teal:    { border: "border-[#ddf93c]/20",    badge: "bg-[#ddf93c]/10 text-[#c3dd2c]",    text: "text-[#c3dd2c]" },
+    blue:    { border: "border-[var(--accent-text)]/20",    badge: "bg-[#ddf93c]/10 text-[var(--accent-text)]",    text: "text-[var(--accent-text)]" },
+    cyan:    { border: "border-[var(--accent-text)]/20",    badge: "bg-[#ddf93c]/10 text-[var(--accent-text)]",    text: "text-[var(--accent-text)]" },
+    pink:    { border: "border-[var(--accent-text)]/20",    badge: "bg-[#ddf93c]/10 text-[var(--accent-text)]",    text: "text-[var(--accent-text)]" },
+    amber:   { border: "border-[var(--accent-text)]/20",   badge: "bg-[#ddf93c]/10 text-[var(--accent-text)]",  text: "text-[var(--accent-text)]" },
+    purple:  { border: "border-[var(--accent-text)]/20",  badge: "bg-[#ddf93c]/10 text-[var(--accent-text)]", text: "text-[var(--accent-text)]" },
+    teal:    { border: "border-[var(--accent-text)]/20",    badge: "bg-[#ddf93c]/10 text-[var(--accent-text)]",    text: "text-[var(--accent-text)]" },
   };
   return map[c];
 }
@@ -76,13 +76,13 @@ export default function ComparatiiPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <div className="min-h-screen bg-[#06080b] text-[#ffffff]">
+      <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
         <div className="max-w-4xl mx-auto px-4 py-10">
 
           {/* Hero */}
           <div className="text-center mb-10">
-            <h1 className="text-4xl font-bold text-[#ffffff] mb-3">Comparatii Magazine Online</h1>
-            <p className="text-[#c9ced5] text-lg max-w-2xl mx-auto">
+            <h1 className="text-4xl font-bold text-[var(--foreground)] mb-3">Comparatii Magazine Online</h1>
+            <p className="text-[var(--text-soft)] text-lg max-w-2xl mx-auto">
               Nu stii unde sa cumperi? Comparam cele mai populare magazine online din Romania
               ca sa iei decizia corecta — cu coduri de reducere actualizate zilnic.
             </p>
@@ -97,23 +97,23 @@ export default function ComparatiiPage() {
                 <Link
                   key={c.slug}
                   href={`/comparatii/${c.slug}`}
-                  className={`block bg-[#14181c] border ${cl.border} rounded-xl p-5 hover:bg-[#1f2329] transition-colors group`}
+                  className={`block bg-[var(--surface)] border ${cl.border} rounded-xl p-5 hover:bg-[var(--surface-alt)] transition-colors group`}
                 >
                   <div className="flex items-start justify-between mb-3">
                     <span className={`text-xs font-semibold px-2 py-1 rounded-full ${cl.badge}`}>
                       {c.categorie}
                     </span>
                     {totalPromo > 0 && (
-                      <span className="text-xs text-[#c9ced5]">{totalPromo} oferte active</span>
+                      <span className="text-xs text-[var(--text-soft)]">{totalPromo} oferte active</span>
                     )}
                   </div>
-                  <h2 className="text-[#ffffff] font-bold text-lg mb-1 group-hover:text-[#c3dd2c] transition-colors">
+                  <h2 className="text-[var(--foreground)] font-bold text-lg mb-1 group-hover:text-[var(--accent-text)] transition-colors">
                     {c.n1} vs {c.n2}
                   </h2>
                   <p className={`text-sm font-medium ${cl.text}`}>
                     {c.luna} {c.an} — Comparatie completa
                   </p>
-                  <p className="text-[#9399a0] text-xs mt-2">
+                  <p className="text-[var(--text-muted)] text-xs mt-2">
                     Oferte, livrare, reduceri, verdict final →
                   </p>
                 </Link>
@@ -122,9 +122,9 @@ export default function ComparatiiPage() {
           </div>
 
           {/* CTA jos */}
-          <div className="mt-12 text-center bg-[#14181c] border border-[#1f2329] rounded-xl p-8">
-            <h2 className="text-xl font-bold text-[#ffffff] mb-2">Cauti un cod de reducere specific?</h2>
-            <p className="text-[#c9ced5] text-sm mb-5">
+          <div className="mt-12 text-center bg-[var(--surface)] border border-[var(--border)] rounded-xl p-8">
+            <h2 className="text-xl font-bold text-[var(--foreground)] mb-2">Cauti un cod de reducere specific?</h2>
+            <p className="text-[var(--text-soft)] text-sm mb-5">
               AmCupon.ro actualizează de mai multe ori pe zi codurile și ofertele de la {pesteMagazine()} partenere.
             </p>
             <Link

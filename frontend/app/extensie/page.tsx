@@ -68,13 +68,13 @@ export default function ExtensiePage() {
     .slice(0, 18);
 
   return (
-    <div className="min-h-screen bg-[#06080b]">
+    <div className="min-h-screen bg-[var(--background)]">
 
-      <nav className="bg-[#06080b] border-b border-[#1f2329]">
-        <div className="max-w-5xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#9399a0]">
-          <Link href="/" className="hover:text-[#ddf93c]">Acasă</Link>
+      <nav className="bg-[var(--background)] border-b border-[var(--border)]">
+        <div className="max-w-5xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[var(--text-muted)]">
+          <Link href="/" className="hover:text-[var(--accent-text)]">Acasă</Link>
           <span className="mx-1">/</span>
-          <span className="text-[#c9ced5] font-medium">Extensie Chrome</span>
+          <span className="text-[var(--text-soft)] font-medium">Extensie Chrome</span>
         </div>
       </nav>
 
@@ -92,7 +92,7 @@ export default function ExtensiePage() {
             Încă n-am trimis-o la Google. Lasă-ți emailul și îți scriem când o poți instala.
           </p>
           <Link href="/newsletter"
-            className="inline-flex items-center gap-3 bg-[#0c1000] text-[#ddf93c] font-black px-8 py-4 rounded-xl text-base transition-colors hover:bg-[#1f2329]">
+            className="inline-flex items-center gap-3 bg-[#0c1000] text-[var(--accent-text)] font-black px-8 py-4 rounded-xl text-base transition-colors hover:bg-[var(--surface-alt)]">
             📬 Anunță-mă când e disponibilă
           </Link>
         </div>
@@ -100,32 +100,32 @@ export default function ExtensiePage() {
 
       {/* CUM FUNCTIONEAZA */}
       <section className="max-w-5xl mx-auto px-4 py-16">
-        <h2 className="text-2xl font-black text-[#ffffff] mb-10 text-center">Cum funcționează</h2>
+        <h2 className="text-2xl font-black text-[var(--foreground)] mb-10 text-center">Cum funcționează</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {PASII.map((p) => (
             <div key={p.nr} className="text-center">
-              <div className="w-14 h-14 bg-[#14181c] border-2 border-[#1f2329] rounded-xl flex items-center justify-center text-2xl mx-auto mb-4">
+              <div className="w-14 h-14 bg-[var(--surface)] border-2 border-[var(--border)] rounded-xl flex items-center justify-center text-2xl mx-auto mb-4">
                 {p.icon}
               </div>
-              <div className="text-xs font-black text-[#ddf93c] mb-1">PAS {p.nr}</div>
-              <h3 className="font-black text-[#ffffff] text-sm mb-2">{p.titlu}</h3>
-              <p className="text-xs text-[#c9ced5] leading-relaxed">{p.desc}</p>
+              <div className="text-xs font-black text-[var(--accent-text)] mb-1">PAS {p.nr}</div>
+              <h3 className="font-black text-[var(--foreground)] text-sm mb-2">{p.titlu}</h3>
+              <p className="text-xs text-[var(--text-soft)] leading-relaxed">{p.desc}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* FEATURES */}
-      <section className="bg-[#14181c] border-y border-[#1f2329] py-16 px-4">
+      <section className="bg-[var(--surface)] border-y border-[var(--border)] py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl font-black text-[#ffffff] mb-10 text-center">Ce face, și ce nu face</h2>
+          <h2 className="text-2xl font-black text-[var(--foreground)] mb-10 text-center">Ce face, și ce nu face</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {FEATURES.map((f) => (
-              <div key={f.titlu} className="bg-[#06080b] rounded-xl border border-[#1f2329] p-5 flex items-start gap-4">
+              <div key={f.titlu} className="bg-[var(--background)] rounded-xl border border-[var(--border)] p-5 flex items-start gap-4">
                 <div className="text-2xl shrink-0">{f.icon}</div>
                 <div>
-                  <h3 className="font-bold text-[#ffffff] text-sm mb-1">{f.titlu}</h3>
-                  <p className="text-xs text-[#c9ced5]">{f.desc}</p>
+                  <h3 className="font-bold text-[var(--foreground)] text-sm mb-1">{f.titlu}</h3>
+                  <p className="text-xs text-[var(--text-soft)]">{f.desc}</p>
                 </div>
               </div>
             ))}
@@ -136,17 +136,17 @@ export default function ExtensiePage() {
       {/* MAGAZINE CU OFERTA ACUM — din acelasi fisier ca extensia */}
       {magazine.length > 0 && (
         <section className="max-w-5xl mx-auto px-4 py-16">
-          <h2 className="text-2xl font-black text-[#ffffff] mb-4 text-center">
+          <h2 className="text-2xl font-black text-[var(--foreground)] mb-4 text-center">
             Azi ar arăta oferte la {magazine.length}
             {magazine.length % 100 >= 20 || magazine.length % 100 === 0 ? " de" : ""} magazine
           </h2>
-          <p className="text-center text-[#c9ced5] text-sm mb-8">
+          <p className="text-center text-[var(--text-soft)] text-sm mb-8">
             Lista se schimbă de trei ori pe zi, odată cu ofertele. Câteva dintre ele:
           </p>
           <div className="flex flex-wrap justify-center gap-2">
             {exemple.map(([slug, m]) => (
               <Link key={slug} href={`/cod-reducere/${slug}`}
-                className="bg-[#14181c] border border-[#1f2329] text-[#c9ced5] hover:text-[#ddf93c] text-sm font-semibold px-4 py-2 rounded-full">
+                className="bg-[var(--surface)] border border-[var(--border)] text-[var(--text-soft)] hover:text-[var(--accent-text)] text-sm font-semibold px-4 py-2 rounded-full">
                 {m.nume}
               </Link>
             ))}
@@ -154,11 +154,11 @@ export default function ExtensiePage() {
         </section>
       )}
 
-      <footer className="border-t border-[#1f2329] py-6 text-center text-xs text-[#9399a0]">
+      <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)]">
         © {new Date().getFullYear()} AmCupon.ro ·{" "}
-        <Link href="/" className="hover:text-[#ddf93c]">Acasă</Link>{" · "}
-        <Link href="/toate-magazinele" className="hover:text-[#ddf93c]">Magazine</Link>{" · "}
-        <Link href="/categorii" className="hover:text-[#ddf93c]">Categorii</Link>
+        <Link href="/" className="hover:text-[var(--accent-text)]">Acasă</Link>{" · "}
+        <Link href="/toate-magazinele" className="hover:text-[var(--accent-text)]">Magazine</Link>{" · "}
+        <Link href="/categorii" className="hover:text-[var(--accent-text)]">Categorii</Link>
       </footer>
     </div>
   );

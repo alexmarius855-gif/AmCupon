@@ -12,6 +12,17 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 09–14.10.2026 (structura usor de modificat + tema „clasic luminos"):**
+- **`docs/HARTA-SITE.md`** = „vrei sa schimbi X -> editezi Y". Citeste-o inainte de o modificare de aspect/texte.
+- **Culorile pe variabile pe TOT site-ul:** `scripts/tokenizeaza_culori.py` a inlocuit ~4.270 de culori scrise de mana
+  (`bg-[#14181c]` -> `bg-[var(--surface)]`) in 108 fisiere; tema inchisa e identica (build 0). Cod nou: scrie direct
+  `bg-[var(--surface)]`, nu hex. Raman fixe intentionat: butoanele lime (text `#0c1000`), logo-urile albe, gradientele.
+- **Tema luminoasa pe zone:** `.tema-luminoasa` in `globals.css` (alte valori pentru aceiasi tokeni). Pagina de magazin
+  o poarta din 09.10 (live). Urmatoarele pagini: adaugi clasa pe elementul exterior + verifici contrastul.
+- **`lib/site.ts`** = meniul (`MENIU_PRINCIPAL`, `MENIU_MOBIL`), subsolul (`SUBSOL`), `SITE` (email, retele sociale).
+  Navbar.tsx si Footer.tsx doar le afiseaza.
+- Macheta aleasa: `docs/design/macheta/amcupon-clasic.html` (generator `macheta_clasic.py`, date reale).
+
 **UPDATE 07.10.2026 (paginile editoriale scrise de mana: recomandari, servicii, financiar, nise — PUSHED):**
 - **Comisionul NOSTRU era afisat pe site**: /cursuri-online (de 44 de ori: grila „Platforme romanesti cu reduceri
   active" lua TOATA categoria software si scria `m.comision`), /servicii („15% comision", „200$ per vanzare",

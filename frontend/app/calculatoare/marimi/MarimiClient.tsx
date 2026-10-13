@@ -86,7 +86,7 @@ const TABELE: Record<Categorie, { titlu: string; coloane: string[]; randuri: Ran
   },
 };
 
-const CARD = "bg-[#14181c] rounded-xl border border-[#1f2329] shadow-sm";
+const CARD = "bg-[var(--surface)] rounded-xl border border-[var(--border)] shadow-sm";
 
 export default function MarimiClient() {
   const [categorie, setCategorie] = useState<Categorie>("femei-haine");
@@ -125,8 +125,8 @@ export default function MarimiClient() {
             }}
             className={`px-4 py-3 rounded-xl border text-sm font-bold transition-colors ${
               categorie === t.id
-                ? "bg-[#ddf93c] border-[#ddf93c] text-[#0f1216]"
-                : "bg-[#14181c] border-[#1f2329] text-white hover:bg-[#1f2329]"
+                ? "bg-[#ddf93c] border-[var(--accent-text)] text-[#0f1216]"
+                : "bg-[var(--surface)] border-[var(--border)] text-white hover:bg-[var(--surface-alt)]"
             }`}
           >
             {t.eticheta}
@@ -136,14 +136,14 @@ export default function MarimiClient() {
 
       <div>
         <label
-          className="block text-xs font-semibold text-[#9399a0] uppercase tracking-wide mb-2"
+          className="block text-xs font-semibold text-[var(--text-muted)] uppercase tracking-wide mb-2"
           htmlFor="cautare"
         >
           Caută mărimea ta
         </label>
         <input
           id="cautare"
-          className="w-full bg-[#0f1216] border border-[#1f2329] rounded-lg px-4 py-3 text-lg font-semibold text-white outline-none focus:border-[#ddf93c] transition-colors"
+          className="w-full bg-[#0f1216] border border-[var(--border)] rounded-lg px-4 py-3 text-lg font-semibold text-white outline-none focus:border-[var(--accent-text)] transition-colors"
           value={cautare}
           onChange={(e) => setCautare(e.target.value)}
           placeholder={categorie === "incaltaminte" ? "ex: 42" : "ex: 38"}
@@ -154,32 +154,32 @@ export default function MarimiClient() {
         <div className="overflow-x-auto">
           <table className="w-full text-sm min-w-[480px]">
             <thead>
-              <tr className="bg-[#0f1216] border-b border-[#1f2329]">
+              <tr className="bg-[#0f1216] border-b border-[var(--border)]">
                 {tabel.coloane.map((c) => (
                   <th
                     key={c}
-                    className="text-left px-4 py-3 text-xs font-semibold text-[#9399a0] uppercase tracking-wide"
+                    className="text-left px-4 py-3 text-xs font-semibold text-[var(--text-muted)] uppercase tracking-wide"
                   >
                     {c}
                   </th>
                 ))}
               </tr>
             </thead>
-            <tbody className="divide-y divide-[#1f2329]">
+            <tbody className="divide-y divide-[var(--border)]">
               {randuriFiltrate.length === 0 ? (
                 <tr>
-                  <td colSpan={5} className="px-4 py-8 text-center text-[#9399a0]">
+                  <td colSpan={5} className="px-4 py-8 text-center text-[var(--text-muted)]">
                     Nicio mărime nu începe cu {cautare}. Încearcă alt număr.
                   </td>
                 </tr>
               ) : (
                 randuriFiltrate.map((r) => (
-                  <tr key={r.ro} className="hover:bg-[#1f2329]/50 transition-colors">
-                    <td className="px-4 py-3 font-bold text-[#ddf93c]">{r.ro}</td>
+                  <tr key={r.ro} className="hover:bg-[var(--surface-alt)]/50 transition-colors">
+                    <td className="px-4 py-3 font-bold text-[var(--accent-text)]">{r.ro}</td>
                     <td className="px-4 py-3">{r.uk}</td>
                     <td className="px-4 py-3">{r.us}</td>
                     <td className="px-4 py-3">{r.it}</td>
-                    <td className="px-4 py-3 text-[#9399a0]">{areCm ? r.cm : r.fr}</td>
+                    <td className="px-4 py-3 text-[var(--text-muted)]">{areCm ? r.cm : r.fr}</td>
                   </tr>
                 ))
               )}
@@ -189,7 +189,7 @@ export default function MarimiClient() {
       </div>
 
       <div className={`${CARD} p-5`}>
-        <p className="text-sm text-[#9399a0] leading-relaxed">
+        <p className="text-sm text-[var(--text-muted)] leading-relaxed">
           <span className="text-white font-semibold">Echivalențele sunt orientative.</span> Nu
           există un standard unic: fiecare brand își croiește propriul tipar, iar o diferență de un
           număr între branduri e normală. Când magazinul are tabel propriu de mărimi, acela are
@@ -197,9 +197,9 @@ export default function MarimiClient() {
         </p>
       </div>
 
-      <p className="text-xs text-[#9399a0]">
+      <p className="text-xs text-[var(--text-muted)]">
         Conversia se face în browserul tău. Nu trimitem și nu stocăm nimic.{" "}
-        <Link href="/calculatoare" className="text-[#ddf93c] hover:underline">
+        <Link href="/calculatoare" className="text-[var(--accent-text)] hover:underline">
           Vezi toate uneltele
         </Link>
       </p>

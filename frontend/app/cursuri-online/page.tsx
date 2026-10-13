@@ -67,23 +67,23 @@ export default function CursuriOnlinePage() {
   const cursuri2p = allMag.filter(m => CURSURI_PARTENERI.has(m.magazin));
 
   return (
-    <div className="min-h-screen bg-[#06080b]">
+    <div className="min-h-screen bg-[var(--background)]">
       {/* Hero */}
-      <section className="relative bg-[#06080b] border-b border-[#1f2329] overflow-hidden">
+      <section className="relative bg-[var(--background)] border-b border-[var(--border)] overflow-hidden">
         <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(13,148,136,0.08) 0%, transparent 65%)" }} />
         <div className="relative max-w-4xl mx-auto px-4 pt-12 pb-10 text-center">
-          <nav className="flex justify-center gap-2 text-xs text-[#9399a0] mb-8">
-            <Link href="/" className="hover:text-[#c9ced5]">AmCupon.ro</Link>
+          <nav className="flex justify-center gap-2 text-xs text-[var(--text-muted)] mb-8">
+            <Link href="/" className="hover:text-[var(--text-soft)]">AmCupon.ro</Link>
             <span>/</span>
-            <Link href="/servicii" className="hover:text-[#c9ced5]">Servicii</Link>
+            <Link href="/servicii" className="hover:text-[var(--text-soft)]">Servicii</Link>
             <span>/</span>
-            <span className="text-[#c9ced5]">Cursuri Online</span>
+            <span className="text-[var(--text-soft)]">Cursuri Online</span>
           </nav>
           <div className="text-5xl mb-4">🎓</div>
-          <h1 className="text-4xl md:text-5xl font-black text-[#ffffff] mb-4">
+          <h1 className="text-4xl md:text-5xl font-black text-[var(--foreground)] mb-4">
             Cursuri <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #ddf93c, #ddf93c)" }}>Online</span> 2026
           </h1>
-          <p className="text-[#c9ced5] text-lg max-w-2xl mx-auto">
+          <p className="text-[var(--text-soft)] text-lg max-w-2xl mx-auto">
             Platforme de cursuri online cu certificat și partenerii AmCupon — cu ofertele lor active, când există.
           </p>
         </div>
@@ -91,13 +91,13 @@ export default function CursuriOnlinePage() {
 
       {/* Domenii populare */}
       <section className="max-w-5xl mx-auto px-4 py-8">
-        <h2 className="text-xl font-black text-[#ffffff] mb-5">Ce sa inveti in 2026?</h2>
+        <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Ce sa inveti in 2026?</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
           {DOMENII.map((d, i) => (
-            <div key={i} className="bg-[#14181c] border border-[#1f2329] rounded-xl p-4 text-center">
+            <div key={i} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-4 text-center">
               <div className="text-2xl mb-2">{d.emoji}</div>
-              <p className="text-xs font-bold text-[#ffffff] mb-1">{d.titlu}</p>
-              <p className="text-[10px] text-[#9399a0]">{d.desc}</p>
+              <p className="text-xs font-bold text-[var(--foreground)] mb-1">{d.titlu}</p>
+              <p className="text-[10px] text-[var(--text-muted)]">{d.desc}</p>
             </div>
           ))}
         </div>
@@ -105,25 +105,25 @@ export default function CursuriOnlinePage() {
 
       {/* Cursuri din 2Performant */}
       {cursuri2p.length > 0 && (
-        <section className="max-w-5xl mx-auto px-4 py-8 border-t border-[#1f2329]">
-          <h2 className="text-xl font-black text-[#ffffff] mb-2">Alte platforme de cursuri partenere</h2>
-          <p className="text-[#c9ced5] text-sm mb-5">Când au o ofertă activă, o vezi pe card și pe pagina lor.</p>
+        <section className="max-w-5xl mx-auto px-4 py-8 border-t border-[var(--border)]">
+          <h2 className="text-xl font-black text-[var(--foreground)] mb-2">Alte platforme de cursuri partenere</h2>
+          <p className="text-[var(--text-soft)] text-sm mb-5">Când au o ofertă activă, o vezi pe card și pe pagina lor.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {cursuri2p.map(m => {
               const promo = m.promotii.find(p => (p.zile_ramase ?? 99) >= 0) ?? m.promotii[0] ?? {};
               return (
-                <div key={m.magazin} className="bg-[#14181c] border border-[#1f2329] hover:border-[#ddf93c]/30 rounded-xl p-5 flex flex-col gap-3 transition-all">
+                <div key={m.magazin} className="bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--accent-text)]/30 rounded-xl p-5 flex flex-col gap-3 transition-all">
                   <div className="flex items-start justify-between">
                     <div>
-                      <p className="font-black text-[#ffffff]">{numeAfisat(m.magazin)}</p>
-                      <p className="text-xs text-[#9399a0]">{m.magazin}</p>
+                      <p className="font-black text-[var(--foreground)]">{numeAfisat(m.magazin)}</p>
+                      <p className="text-xs text-[var(--text-muted)]">{m.magazin}</p>
                     </div>
                   </div>
-                  {promo.descriere && <p className="text-[#c9ced5] text-sm">{promo.descriere.slice(0,120)}</p>}
+                  {promo.descriere && <p className="text-[var(--text-soft)] text-sm">{promo.descriere.slice(0,120)}</p>}
                   {promo.cod_cupon && (
-                    <div className="bg-[#1f2329] border border-dashed border-[#3a4048] rounded-lg px-3 py-2 text-center">
-                      <p className="text-[10px] text-[#9399a0] mb-0.5">Cod reducere</p>
-                      <p className="font-mono font-black text-[#ddf93c] text-sm tracking-wider">{maskCod(promo.cod_cupon)}</p>
+                    <div className="bg-[var(--surface-alt)] border border-dashed border-[var(--border-strong)] rounded-lg px-3 py-2 text-center">
+                      <p className="text-[10px] text-[var(--text-muted)] mb-0.5">Cod reducere</p>
+                      <p className="font-mono font-black text-[var(--accent-text)] text-sm tracking-wider">{maskCod(promo.cod_cupon)}</p>
                     </div>
                   )}
                   <Link href={`/cod-reducere/${m.magazin}`}
@@ -138,22 +138,22 @@ export default function CursuriOnlinePage() {
       )}
 
       {/* Platforme internationale */}
-      <section className="max-w-5xl mx-auto px-4 py-8 border-t border-[#1f2329]">
-        <h2 className="text-xl font-black text-[#ffffff] mb-2">Platforme internationale recomandate</h2>
-        <p className="text-[#c9ced5] text-sm mb-5">Platforme mari, cu certificat la finalul cursurilor. Prețurile și perioadele de probă le vezi pe site-ul fiecăreia.</p>
+      <section className="max-w-5xl mx-auto px-4 py-8 border-t border-[var(--border)]">
+        <h2 className="text-xl font-black text-[var(--foreground)] mb-2">Platforme internationale recomandate</h2>
+        <p className="text-[var(--text-soft)] text-sm mb-5">Platforme mari, cu certificat la finalul cursurilor. Prețurile și perioadele de probă le vezi pe site-ul fiecăreia.</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {PLATFORME_INTL.map(p => (
-            <div key={p.name} className="bg-[#14181c] border border-[#1f2329] hover:border-[#ddf93c]/30 rounded-xl p-6 flex flex-col gap-4 transition-all">
+            <div key={p.name} className="bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--accent-text)]/30 rounded-xl p-6 flex flex-col gap-4 transition-all">
               <div>
                 <div className="flex items-center gap-2 mb-1">
-                  <span className="text-lg font-black text-[#ffffff]">{p.name}</span>
+                  <span className="text-lg font-black text-[var(--foreground)]">{p.name}</span>
                   <span className="text-[10px] font-black text-[#0c1000] bg-[#ddf93c] px-2 py-0.5 rounded-full">{p.badge}</span>
                 </div>
-                <p className="text-[#c9ced5] text-xs">{p.tagline}</p>
+                <p className="text-[var(--text-soft)] text-xs">{p.tagline}</p>
               </div>
               <ul className="space-y-1">
                 {p.beneficii.map((b, i) => (
-                  <li key={i} className="flex items-start gap-2 text-xs text-[#c9ced5]">
+                  <li key={i} className="flex items-start gap-2 text-xs text-[var(--text-soft)]">
                     <span className="text-emerald-400 shrink-0">✓</span>{b}
                   </li>
                 ))}
@@ -168,7 +168,7 @@ export default function CursuriOnlinePage() {
       </section>
 
       <div className="max-w-5xl mx-auto px-4 pb-8">
-        <p className="text-[#9399a0] text-xs text-center">Unele linkuri sunt linkuri de afiliat. Daca faci o achizitie, AmCupon.ro primeste un comision fara cost suplimentar pentru tine.</p>
+        <p className="text-[var(--text-muted)] text-xs text-center">Unele linkuri sunt linkuri de afiliat. Daca faci o achizitie, AmCupon.ro primeste un comision fara cost suplimentar pentru tine.</p>
       </div>
     </div>
   );

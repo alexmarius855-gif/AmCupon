@@ -48,22 +48,22 @@ export default function EchipamentMotoPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <div className="min-h-screen bg-[#06080b]">
+      <div className="min-h-screen bg-[var(--background)]">
 
         {/* HERO */}
-        <section className="relative bg-[#06080b] border-b border-[#1f2329] overflow-hidden">
+        <section className="relative bg-[var(--background)] border-b border-[var(--border)] overflow-hidden">
           <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(20,184,166,0.1) 0%, transparent 65%)" }} />
           <div className="relative max-w-4xl mx-auto px-4 pt-12 pb-10 text-center">
-            <nav className="flex justify-center gap-2 text-xs text-[#9399a0] mb-8">
-              <Link href="/" className="hover:text-[#c9ced5]">AmCupon.ro</Link>
+            <nav className="flex justify-center gap-2 text-xs text-[var(--text-muted)] mb-8">
+              <Link href="/" className="hover:text-[var(--text-soft)]">AmCupon.ro</Link>
               <span>/</span>
-              <span className="text-[#c9ced5]">Echipament Moto</span>
+              <span className="text-[var(--text-soft)]">Echipament Moto</span>
             </nav>
             <div className="text-5xl mb-4">🏍️</div>
-            <h1 className="text-4xl md:text-5xl font-black text-[#ffffff] mb-4">
+            <h1 className="text-4xl md:text-5xl font-black text-[var(--foreground)] mb-4">
               Echipament <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #ddf93c, #ddf93c)" }}>Moto</span> {an}
             </h1>
-            <p className="text-[#c9ced5] text-lg max-w-2xl mx-auto">
+            <p className="text-[var(--text-soft)] text-lg max-w-2xl mx-auto">
               Casti, geci, manusi si piese pentru motociclete si scutere — magazine romanesti de profil.
             </p>
           </div>
@@ -72,18 +72,18 @@ export default function EchipamentMotoPage() {
         <section className="max-w-4xl mx-auto px-4 py-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {MAGAZINE.map(m => (
-              <div key={m.name} className="bg-[#14181c] border border-[#1f2329] hover:border-[#ddf93c]/30 rounded-xl p-6 flex flex-col gap-4 transition-all">
+              <div key={m.name} className="bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--accent-text)]/30 rounded-xl p-6 flex flex-col gap-4 transition-all">
                 <div>
                   <div className="flex items-center gap-2 mb-1">
-                    <span className="text-lg font-black text-[#ffffff]">{m.name}</span>
+                    <span className="text-lg font-black text-[var(--foreground)]">{m.name}</span>
                     <span className="text-[10px] font-black text-[#0c1000] px-2 py-0.5 rounded-full bg-[#ddf93c]">{m.badge}</span>
                   </div>
-                  <p className="text-[#c9ced5] text-xs">{m.tagline}</p>
+                  <p className="text-[var(--text-soft)] text-xs">{m.tagline}</p>
                 </div>
                 <ul className="space-y-1">
                   {m.beneficii.map((b, i) => (
-                    <li key={i} className="flex items-start gap-2 text-xs text-[#c9ced5]">
-                      <span className="text-[#ddf93c] shrink-0">✓</span>{b}
+                    <li key={i} className="flex items-start gap-2 text-xs text-[var(--text-soft)]">
+                      <span className="text-[var(--accent-text)] shrink-0">✓</span>{b}
                     </li>
                   ))}
                 </ul>
@@ -96,13 +96,13 @@ export default function EchipamentMotoPage() {
           </div>
 
           {/* GHID */}
-          <section className="mt-10 bg-[#14181c] border border-[#1f2329] rounded-xl p-6">
-            <h2 className="text-lg font-black text-[#ffffff] mb-4">Cum alegi echipamentul moto potrivit?</h2>
-            <ul className="space-y-2 text-sm text-[#c9ced5]">
-              <li><strong className="text-[#c9ced5]">Casca</strong> — verifica intotdeauna omologarea ECE 22.06, marimea corecta conteaza mai mult decat designul</li>
-              <li><strong className="text-[#c9ced5]">Geaca si pantaloni</strong> — cauta protectii CE la coate, umeri, genunchi si spate</li>
-              <li><strong className="text-[#c9ced5]">Sezonalitate</strong> — echipamentul de iarna (impermeabil, captuseala termica) e de obicei mai ieftin in afara sezonului</li>
-              <li><strong className="text-[#c9ced5]">Piese de schimb</strong> — compara pretul intre 2-3 magazine, diferentele pot fi semnificative</li>
+          <section className="mt-10 bg-[var(--surface)] border border-[var(--border)] rounded-xl p-6">
+            <h2 className="text-lg font-black text-[var(--foreground)] mb-4">Cum alegi echipamentul moto potrivit?</h2>
+            <ul className="space-y-2 text-sm text-[var(--text-soft)]">
+              <li><strong className="text-[var(--text-soft)]">Casca</strong> — verifica intotdeauna omologarea ECE 22.06, marimea corecta conteaza mai mult decat designul</li>
+              <li><strong className="text-[var(--text-soft)]">Geaca si pantaloni</strong> — cauta protectii CE la coate, umeri, genunchi si spate</li>
+              <li><strong className="text-[var(--text-soft)]">Sezonalitate</strong> — echipamentul de iarna (impermeabil, captuseala termica) e de obicei mai ieftin in afara sezonului</li>
+              <li><strong className="text-[var(--text-soft)]">Piese de schimb</strong> — compara pretul intre 2-3 magazine, diferentele pot fi semnificative</li>
             </ul>
           </section>
 
@@ -113,13 +113,13 @@ export default function EchipamentMotoPage() {
               { href: "/oferte-azi", label: "🔥 Oferte de azi" },
             ].map(l => (
               <Link key={l.href} href={l.href}
-                className="bg-[#14181c] hover:bg-[#1f2329] text-[#c9ced5] hover:text-[#ffffff] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#1f2329]">
+                className="bg-[var(--surface)] hover:bg-[var(--surface-alt)] text-[var(--text-soft)] hover:text-[var(--foreground)] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[var(--border)]">
                 {l.label}
               </Link>
             ))}
           </div>
 
-          <p className="text-[#9399a0] text-xs text-center mt-8">Unele linkuri sunt linkuri de afiliat. Daca faci o achizitie, AmCupon.ro primeste un comision fara cost suplimentar pentru tine.</p>
+          <p className="text-[var(--text-muted)] text-xs text-center mt-8">Unele linkuri sunt linkuri de afiliat. Daca faci o achizitie, AmCupon.ro primeste un comision fara cost suplimentar pentru tine.</p>
         </section>
       </div>
     </>

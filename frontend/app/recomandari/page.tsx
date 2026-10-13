@@ -156,28 +156,28 @@ const CATEGORII = [
 
 export default function RecomandariPage() {
   return (
-    <div className="min-h-screen bg-[#06080b]">
+    <div className="min-h-screen bg-[var(--background)]">
       {/* Hero */}
-      <section className="relative bg-[#06080b] border-b border-[#1f2329] overflow-hidden">
+      <section className="relative bg-[var(--background)] border-b border-[var(--border)] overflow-hidden">
         <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(13,148,136,0.08) 0%, transparent 65%)" }} />
         <div className="relative max-w-5xl mx-auto px-4 pt-12 pb-12 text-center">
-          <nav className="flex justify-center gap-2 text-xs text-[#9399a0] mb-8">
-            <Link href="/" className="hover:text-[#c9ced5]">AmCupon.ro</Link>
+          <nav className="flex justify-center gap-2 text-xs text-[var(--text-muted)] mb-8">
+            <Link href="/" className="hover:text-[var(--text-soft)]">AmCupon.ro</Link>
             <span>/</span>
-            <span className="text-[#c9ced5]">Recomandari Premium</span>
+            <span className="text-[var(--text-soft)]">Recomandari Premium</span>
           </nav>
           <div className="text-5xl mb-5">⭐</div>
-          <h1 className="text-4xl md:text-5xl font-black text-[#ffffff] mb-4">
+          <h1 className="text-4xl md:text-5xl font-black text-[var(--foreground)] mb-4">
             Servicii <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #ddf93c, #ddf93c)" }}>Recomandate</span>
           </h1>
-          <p className="text-[#c9ced5] text-lg max-w-2xl mx-auto mb-8">
+          <p className="text-[var(--text-soft)] text-lg max-w-2xl mx-auto mb-8">
             VPN, hosting, SEO tools, freelancing si travel — servicii alese de echipa AmCupon.ro pe baza prețurilor și a condițiilor publice. Alege ce ți se potrivește.
           </p>
           {/* Jump links */}
           <div className="flex flex-wrap justify-center gap-2">
             {CATEGORII.map((c, i) => (
               <a key={i} href={`#cat-${i}`}
-                className="text-xs bg-[#1f2329] hover:bg-[#2a2f36] text-[#c9ced5] px-3 py-1.5 rounded-full border border-[#2a2f36] transition-colors">
+                className="text-xs bg-[var(--surface-alt)] hover:bg-[var(--surface-high)] text-[var(--text-soft)] px-3 py-1.5 rounded-full border border-[var(--border-strong)] transition-colors">
                 {c.emoji} {c.titlu.split(" — ")[0]}
               </a>
             ))}
@@ -187,18 +187,18 @@ export default function RecomandariPage() {
 
       {/* Categorii */}
       {CATEGORII.map((cat, ci) => (
-        <section key={ci} id={`cat-${ci}`} className="max-w-5xl mx-auto px-4 py-10 border-b border-[#1f2329]/50 last:border-b-0">
+        <section key={ci} id={`cat-${ci}`} className="max-w-5xl mx-auto px-4 py-10 border-b border-[var(--border)]/50 last:border-b-0">
           <div className="flex items-start justify-between mb-6">
             <div>
-              <h2 className="text-2xl font-black text-[#ffffff] flex items-center gap-3">
+              <h2 className="text-2xl font-black text-[var(--foreground)] flex items-center gap-3">
                 <span className="text-3xl">{cat.emoji}</span>
                 {cat.titlu}
               </h2>
-              <p className="text-[#c9ced5] mt-1 text-sm max-w-2xl">{cat.desc}</p>
+              <p className="text-[var(--text-soft)] mt-1 text-sm max-w-2xl">{cat.desc}</p>
             </div>
             {cat.slug && (
               <Link href={cat.slug}
-                className="text-xs text-[#ddf93c] hover:text-[#c3dd2c] border border-[#ddf93c]/30 hover:border-[#ddf93c]/50 px-3 py-1.5 rounded-lg transition-all shrink-0 ml-4">
+                className="text-xs text-[var(--accent-text)] hover:text-[var(--accent-text)] border border-[var(--accent-text)]/30 hover:border-[var(--accent-text)]/50 px-3 py-1.5 rounded-lg transition-all shrink-0 ml-4">
                 Ghid complet →
               </Link>
             )}
@@ -206,20 +206,20 @@ export default function RecomandariPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {cat.servicii.map((s, si) => (
-              <div key={si} className="bg-[#14181c] border border-[#1f2329] hover:border-[#ddf93c]/30 rounded-xl p-6 flex flex-col gap-4 transition-all group">
+              <div key={si} className="bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--accent-text)]/30 rounded-xl p-6 flex flex-col gap-4 transition-all group">
                 <div className="flex items-start justify-between gap-3">
                   <div>
                     <div className="flex items-center gap-2 mb-1">
-                      <span className="text-xl font-black text-[#ffffff]">{s.name}</span>
+                      <span className="text-xl font-black text-[var(--foreground)]">{s.name}</span>
                       <span className="text-[10px] font-black text-[#0c1000] bg-[#ddf93c] px-2 py-0.5 rounded-full">{s.badge}</span>
                     </div>
-                    <p className="text-[#c9ced5] text-sm">{s.tagline}</p>
+                    <p className="text-[var(--text-soft)] text-sm">{s.tagline}</p>
                   </div>
                 </div>
 
                 <ul className="space-y-1.5">
                   {s.beneficii.map((b, bi) => (
-                    <li key={bi} className="flex items-start gap-2 text-sm text-[#c9ced5]">
+                    <li key={bi} className="flex items-start gap-2 text-sm text-[var(--text-soft)]">
                       <span className="text-emerald-400 shrink-0 mt-0.5">✓</span>
                       {b}
                     </li>
@@ -240,8 +240,8 @@ export default function RecomandariPage() {
 
       {/* Disclaimer */}
       <section className="max-w-5xl mx-auto px-4 pb-12 pt-4">
-        <div className="bg-[#14181c]/50 border border-[#1f2329] rounded-xl p-5 text-center">
-          <p className="text-[#9399a0] text-xs">
+        <div className="bg-[var(--surface)]/50 border border-[var(--border)] rounded-xl p-5 text-center">
+          <p className="text-[var(--text-muted)] text-xs">
             Unele linkuri de pe aceasta pagina sunt linkuri de afiliat — daca faci o achizitie, AmCupon.ro primeste un comision, fara niciun cost suplimentar pentru tine.
             Descrierile se bazează pe ce publică fiecare serviciu; prețurile și condițiile se schimbă, așa că verifică-le pe site înainte să cumperi.
           </p>

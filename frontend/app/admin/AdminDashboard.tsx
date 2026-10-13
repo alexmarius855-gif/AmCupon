@@ -35,7 +35,7 @@ const AGENTS = [
     model:   "claude-haiku",
     color:   "#00f5d4",
     bg:      "from-[#06080b]/40 to-[#06080b]",
-    border:  "border-[#ddf93c]/30",
+    border:  "border-[var(--accent-text)]/30",
     glow:    "shadow-[#ddf93c]/20",
     desc:    "NEXUS actualizeaza magazine, promotii si merge toate platformele de afiliere. Ruleaza de 4 ori pe zi.",
     skills:  ["Scraper","Merge","2Performant","Profitshare","Auto"],

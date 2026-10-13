@@ -259,16 +259,16 @@ export default async function TopCategoriePage({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
-      <div className="min-h-screen bg-[#06080b] dark:bg-[#14181c]">
+      <div className="min-h-screen bg-[var(--background)] dark:bg-[var(--surface)]">
         {/* HERO */}
-        <section className={`bg-gradient-to-br ${gradient} text-[#ffffff] border-b border-[#1f2329] py-10 px-4`}>
+        <section className={`bg-gradient-to-br ${gradient} text-[var(--foreground)] border-b border-[var(--border)] py-10 px-4`}>
           <div className="max-w-5xl mx-auto">
             <div className="flex items-center gap-2 mb-3">
-              <Link href="/top" className="text-slate-500 hover:text-[#ffffff] text-sm transition-colors">
+              <Link href="/top" className="text-slate-500 hover:text-[var(--foreground)] text-sm transition-colors">
                 &larr; Top Produse
               </Link>
               {cat.tag && (
-                <span className="bg-[#1f2329] text-[#ffffff] text-xs font-bold px-2.5 py-0.5 rounded-full ml-2">
+                <span className="bg-[var(--surface-alt)] text-[var(--foreground)] text-xs font-bold px-2.5 py-0.5 rounded-full ml-2">
                   {cat.tag}
                 </span>
               )}
@@ -314,7 +314,7 @@ export default async function TopCategoriePage({
                       { val: SELECTIE, label: "Selecția modelelor" },
                     ]),
               ].map(s => (
-                <div key={s.label} className="bg-[#1f2329] rounded-xl py-2.5 px-3">
+                <div key={s.label} className="bg-[var(--surface-alt)] rounded-xl py-2.5 px-3">
                   <div className="text-base font-black">{s.val}</div>
                   <div className="text-xs text-slate-500">{s.label}</div>
                 </div>
@@ -325,16 +325,16 @@ export default async function TopCategoriePage({
 
         {/* BEST PICK QUICK INFO */}
         {bestPick && (
-          <div className="bg-[#14181c] dark:bg-[#1f2329] border-b border-[#1f2329] dark:border-[#2a2f36]">
-            <div className="max-w-5xl mx-auto px-4 py-3 flex flex-wrap items-center gap-x-6 gap-y-1 text-sm text-[#c9ced5] dark:text-[#c9ced5]">
-              <span className="font-semibold text-[#ffffff] dark:text-[#ffffff]">
+          <div className="bg-[var(--surface)] dark:bg-[var(--surface-alt)] border-b border-[var(--border)] dark:border-[var(--border-strong)]">
+            <div className="max-w-5xl mx-auto px-4 py-3 flex flex-wrap items-center gap-x-6 gap-y-1 text-sm text-[var(--text-soft)] dark:text-[var(--text-soft)]">
+              <span className="font-semibold text-[var(--foreground)] dark:text-[var(--foreground)]">
                 {cat.emoji} Recomandăm:
               </span>
-              <span className="font-bold text-[#ddf93c]">{bestPick.nume}</span>
+              <span className="font-bold text-[var(--accent-text)]">{bestPick.nume}</span>
               <span>{bestPick.verdict_scurt}</span>
-              <span className="ml-auto text-xs text-[#9399a0]">
+              <span className="ml-auto text-xs text-[var(--text-muted)]">
                 preț de referință ({SELECTIE}):{" "}
-                <span className="font-black text-[#ddf93c] text-sm">{bestPick.pret_de_la.toLocaleString("ro-RO")} lei</span>
+                <span className="font-black text-[var(--accent-text)] text-sm">{bestPick.pret_de_la.toLocaleString("ro-RO")} lei</span>
               </span>
             </div>
           </div>
@@ -349,8 +349,8 @@ export default async function TopCategoriePage({
           {/* CUM AM FACUT TOPUL — pana pe 05.10.2026 aici scria „Cum testam" si „Fiecare produs
               este testat timp de minim 2 saptamani in conditii reale de utilizare". Niciun produs
               n-a fost testat. Sectiunea spune acum exact ce s-a facut. */}
-          <section className="mt-10 bg-[#14181c] dark:bg-[#1f2329] border border-[#1f2329] dark:border-[#2a2f36] rounded-xl p-6">
-            <h2 className="text-lg font-black text-[#ffffff] dark:text-[#ffffff] mb-3">
+          <section className="mt-10 bg-[var(--surface)] dark:bg-[var(--surface-alt)] border border-[var(--border)] dark:border-[var(--border-strong)] rounded-xl p-6">
+            <h2 className="text-lg font-black text-[var(--foreground)] dark:text-[var(--foreground)] mb-3">
               Cum am făcut topul de {numeTema}
             </h2>
             <div className="grid sm:grid-cols-3 gap-4">
@@ -367,8 +367,8 @@ export default async function TopCategoriePage({
               ].map(item => (
                 <div key={item.titlu} className="text-center p-4">
                   <div className="text-3xl mb-2">{item.icon}</div>
-                  <h3 className="font-bold text-[#ffffff] dark:text-[#ffffff] text-sm mb-1">{item.titlu}</h3>
-                  <p className="text-xs text-[#c9ced5] dark:text-[#c9ced5] leading-relaxed">{item.desc}</p>
+                  <h3 className="font-bold text-[var(--foreground)] dark:text-[var(--foreground)] text-sm mb-1">{item.titlu}</h3>
+                  <p className="text-xs text-[var(--text-soft)] dark:text-[var(--text-soft)] leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -377,21 +377,21 @@ export default async function TopCategoriePage({
           {/* INTERVAL DE PRETURI — doar fara sectiunea de oferte (acolo intervalul e cel de azi).
               Linkurile „Coduri X" duceau si la magazine care nu sunt pe site (404); acum doar partenerii. */}
           {!sectiune && (
-            <section className="mt-6 bg-[#14181c] border border-[#1f2329] rounded-xl p-5">
-              <h3 className="font-bold text-[#ffffff] mb-2 text-sm">
+            <section className="mt-6 bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
+              <h3 className="font-bold text-[var(--foreground)] mb-2 text-sm">
                 Interval de prețuri pentru {numeTema}
               </h3>
-              <p className="text-sm text-[#c9ced5]">
+              <p className="text-sm text-[var(--text-soft)]">
                 La selecție ({SELECTIE}), modelele din acest top costau între{" "}
-                <strong className="text-[#c3dd2c]">{pretMinim.toLocaleString("ro-RO")} lei</strong> și{" "}
-                <strong className="text-[#c3dd2c]">{pretMaxim.toLocaleString("ro-RO")} lei</strong>.
+                <strong className="text-[var(--accent-text)]">{pretMinim.toLocaleString("ro-RO")} lei</strong> și{" "}
+                <strong className="text-[var(--accent-text)]">{pretMaxim.toLocaleString("ro-RO")} lei</strong>.
                 Prețul de azi poate fi diferit.
               </p>
               {parteneriEditoriali.length > 0 && (
                 <div className="flex flex-wrap gap-3 mt-4">
                   {parteneriEditoriali.slice(0, 5).map(s => (
                     <Link key={s} href={`/cod-reducere/${s}`}
-                      className="text-sm font-semibold text-[#c3dd2c] dark:text-[#ddf93c] hover:underline">
+                      className="text-sm font-semibold text-[var(--accent-text)] dark:text-[var(--accent-text)] hover:underline">
                       Coduri {numeAfisat(s)} &rarr;
                     </Link>
                   ))}
@@ -401,18 +401,18 @@ export default async function TopCategoriePage({
           )}
 
           {/* FAQ */}
-          <section className="mt-6 bg-[#14181c] dark:bg-[#1f2329] border border-[#1f2329] dark:border-[#2a2f36] rounded-xl p-6">
-            <h2 className="text-lg font-black text-[#ffffff] dark:text-[#ffffff] mb-4">
+          <section className="mt-6 bg-[var(--surface)] dark:bg-[var(--surface-alt)] border border-[var(--border)] dark:border-[var(--border-strong)] rounded-xl p-6">
+            <h2 className="text-lg font-black text-[var(--foreground)] dark:text-[var(--foreground)] mb-4">
               Întrebări frecvente despre {numeTema}
             </h2>
             <div className="space-y-4">
               {intrebari.map((item, i) => (
-                <details key={i} className="group border-b border-[#1f2329] dark:border-[#2a2f36] last:border-0 pb-4 last:pb-0">
-                  <summary className="flex justify-between items-center cursor-pointer text-sm font-semibold text-[#ffffff] dark:text-[#c9ced5] list-none select-none gap-2">
+                <details key={i} className="group border-b border-[var(--border)] dark:border-[var(--border-strong)] last:border-0 pb-4 last:pb-0">
+                  <summary className="flex justify-between items-center cursor-pointer text-sm font-semibold text-[var(--foreground)] dark:text-[var(--text-soft)] list-none select-none gap-2">
                     <span>{item.i}</span>
-                    <span className="text-[#ddf93c] text-lg shrink-0 group-open:rotate-45 transition-transform">+</span>
+                    <span className="text-[var(--accent-text)] text-lg shrink-0 group-open:rotate-45 transition-transform">+</span>
                   </summary>
-                  <p className="mt-2 text-sm text-[#c9ced5] dark:text-[#c9ced5] leading-relaxed">
+                  <p className="mt-2 text-sm text-[var(--text-soft)] dark:text-[var(--text-soft)] leading-relaxed">
                     {item.r}
                   </p>
                 </details>
@@ -422,12 +422,12 @@ export default async function TopCategoriePage({
 
           {/* NEWSLETTER — „Primeste review-uri noi" si „1000+ magazine monitorizate" erau false:
               newsletterul trimite ofertele active, o data pe zi, iar pe site sunt sub 1.000 de magazine. */}
-          <section className="mt-6 bg-[#14181c] dark:bg-[#06080b] rounded-xl p-6 text-center">
-            <p className="text-[#ddf93c] text-xs font-black uppercase tracking-widest mb-2">Newsletter gratuit</p>
-            <h3 className="text-xl font-black text-[#ffffff] mb-1">
+          <section className="mt-6 bg-[var(--surface)] dark:bg-[var(--background)] rounded-xl p-6 text-center">
+            <p className="text-[var(--accent-text)] text-xs font-black uppercase tracking-widest mb-2">Newsletter gratuit</p>
+            <h3 className="text-xl font-black text-[var(--foreground)] mb-1">
               Ofertele active, pe email, o dată pe zi
             </h3>
-            <p className="text-[#c9ced5] text-sm mb-5">
+            <p className="text-[var(--text-soft)] text-sm mb-5">
               Te dezabonezi oricând, dintr-un clic.
             </p>
             <Link href="/newsletter"
@@ -439,11 +439,11 @@ export default async function TopCategoriePage({
 
         {/* OTHER CATEGORIES */}
         <div className="max-w-5xl mx-auto px-4 pb-12">
-          <h3 className="text-base font-black text-[#c9ced5] dark:text-[#c9ced5] mb-4">
+          <h3 className="text-base font-black text-[var(--text-soft)] dark:text-[var(--text-soft)] mb-4">
             Alte categorii recomandate
           </h3>
           <div className="flex flex-wrap gap-2">
-            <Link href="/top" className="bg-[#14181c] dark:bg-[#1f2329] hover:bg-[#ddf93c]/10 dark:hover:bg-[#2a2f36] text-[#c9ced5] dark:text-[#c9ced5] text-sm font-semibold px-4 py-2 rounded-xl border border-[#1f2329] dark:border-[#3a4048] hover:border-[#c9ced5] transition-colors">
+            <Link href="/top" className="bg-[var(--surface)] dark:bg-[var(--surface-alt)] hover:bg-[#ddf93c]/10 dark:hover:bg-[var(--surface-high)] text-[var(--text-soft)] dark:text-[var(--text-soft)] text-sm font-semibold px-4 py-2 rounded-xl border border-[var(--border)] dark:border-[var(--border-strong)] hover:border-[#c9ced5] transition-colors">
               Toate topurile &rarr;
             </Link>
             {[
@@ -453,18 +453,18 @@ export default async function TopCategoriePage({
               { href: "/blog",        label: "📖 Blog" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-[#14181c] dark:bg-[#1f2329] hover:bg-[#ddf93c]/10 dark:hover:bg-[#2a2f36] hover:text-[#c3dd2c] text-[#c9ced5] dark:text-[#c9ced5] text-sm font-semibold px-4 py-2 rounded-xl border border-[#1f2329] dark:border-[#3a4048] hover:border-[#c9ced5] transition-colors">
+                className="bg-[var(--surface)] dark:bg-[var(--surface-alt)] hover:bg-[#ddf93c]/10 dark:hover:bg-[var(--surface-high)] hover:text-[var(--accent-text)] text-[var(--text-soft)] dark:text-[var(--text-soft)] text-sm font-semibold px-4 py-2 rounded-xl border border-[var(--border)] dark:border-[var(--border-strong)] hover:border-[#c9ced5] transition-colors">
                 {l.label}
               </a>
             ))}
           </div>
         </div>
 
-        <footer className="border-t border-[#1f2329] dark:border-[#2a2f36] py-6 text-center text-xs text-[#9399a0]">
+        <footer className="border-t border-[var(--border)] dark:border-[var(--border-strong)] py-6 text-center text-xs text-[var(--text-muted)]">
           &copy; {an} AmCupon.ro &middot;{" "}
-          <Link href="/" className="hover:text-[#ddf93c]">Acasa</Link>
-          {" · "}<Link href="/top" className="hover:text-[#ddf93c]">Top Produse</Link>
-          {" · "}<Link href="/blog" className="hover:text-[#ddf93c]">Blog</Link>
+          <Link href="/" className="hover:text-[var(--accent-text)]">Acasa</Link>
+          {" · "}<Link href="/top" className="hover:text-[var(--accent-text)]">Top Produse</Link>
+          {" · "}<Link href="/blog" className="hover:text-[var(--accent-text)]">Blog</Link>
         </footer>
       </div>
     </>

@@ -51,12 +51,12 @@ export default function CopiiPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-[#06080b]">
-        <nav className="bg-[#06080b] border-b border-[#1f2329]">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#9399a0]">
-            <Link href="/" className="hover:text-[#ddf93c]">Acasă</Link>
+      <div className="min-h-screen bg-[var(--background)]">
+        <nav className="bg-[var(--background)] border-b border-[var(--border)]">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[var(--text-muted)]">
+            <Link href="/" className="hover:text-[var(--accent-text)]">Acasă</Link>
             <span className="mx-1">/</span>
-            <span className="text-[#c9ced5] font-medium">Copii & Jucării</span>
+            <span className="text-[var(--text-soft)] font-medium">Copii & Jucării</span>
           </div>
         </nav>
 
@@ -70,7 +70,7 @@ export default function CopiiPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["LEGO","Păpuși","Haine Kids","Cărucioare","Scaune auto","Cărți copii","Parcuri de joacă","Baby monitor"].map(c => (
-                <span key={c} className="bg-[#1f2329] text-[#ffffff] text-sm font-semibold px-4 py-1.5 rounded-full border border-[#2a2f36]">{c}</span>
+                <span key={c} className="bg-[var(--surface-alt)] text-[var(--foreground)] text-sm font-semibold px-4 py-1.5 rounded-full border border-[var(--border-strong)]">{c}</span>
               ))}
             </div>
           </div>
@@ -78,15 +78,15 @@ export default function CopiiPage() {
 
         {/* GRUPE VARSTA */}
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[#ffffff] mb-6 text-center">Cadouri și cumpărături pe vârstă</h2>
+          <h2 className="text-xl font-black text-[var(--foreground)] mb-6 text-center">Cadouri și cumpărături pe vârstă</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {GRUPE_VARSTA.map(g => (
               <Link key={g.label} href="/categorii/copii"
-                className="bg-[#14181c] border border-yellow-200 rounded-xl p-5 hover:shadow-md transition-all group">
+                className="bg-[var(--surface)] border border-yellow-200 rounded-xl p-5 hover:shadow-md transition-all group">
                 <div className="text-3xl mb-2">{g.emoji}</div>
-                <h3 className="font-bold text-[#ffffff] text-sm mb-1">{g.label}</h3>
-                <p className="text-xs text-[#c9ced5]">{g.desc}</p>
-                <p className="text-xs font-bold text-[#ddf93c] mt-3 group-hover:text-[#c3dd2c]">Vezi reduceri →</p>
+                <h3 className="font-bold text-[var(--foreground)] text-sm mb-1">{g.label}</h3>
+                <p className="text-xs text-[var(--text-soft)]">{g.desc}</p>
+                <p className="text-xs font-bold text-[var(--accent-text)] mt-3 group-hover:text-[var(--accent-text)]">Vezi reduceri →</p>
               </Link>
             ))}
           </div>
@@ -96,7 +96,7 @@ export default function CopiiPage() {
         <section className="max-w-6xl mx-auto px-4 pb-10">
           <div className="flex items-center gap-3 mb-5">
             
-            <h2 className="text-xl font-black text-[#ffffff]">Magazine copii cu reduceri active</h2>
+            <h2 className="text-xl font-black text-[var(--foreground)]">Magazine copii cu reduceri active</h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {magazine.map((m) => (
@@ -116,16 +116,16 @@ export default function CopiiPage() {
         />
 
         {/* SEO */}
-        <section className="bg-[#14181c] border-t border-[#1f2329] py-10 px-4">
+        <section className="bg-[var(--surface)] border-t border-[var(--border)] py-10 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-[#ffffff] mb-5">Ghid cumpărături copii inteligente</h2>
-            <div className="space-y-4 text-sm text-[#c9ced5] leading-relaxed">
+            <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Ghid cumpărături copii inteligente</h2>
+            <div className="space-y-4 text-sm text-[var(--text-soft)] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Cum economisești la jucării și haine copii</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Cum economisești la jucării și haine copii</h3>
                 <p>Noriel are des reduceri și pachete speciale la jucăriile populare (LEGO, Barbie, Hot Wheels). Compară prețul aceluiași set în mai multe magazine înainte să cumperi.</p>
               </div>
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Cele mai bune momente pentru cumpărături copii</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Cele mai bune momente pentru cumpărături copii</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
                   <li><strong>Noiembrie (Black Friday)</strong> — reduceri la jucăriile scumpe (LEGO, console)</li>
                   <li><strong>Ianuarie</strong> — lichidări de stoc după Crăciun</li>
@@ -138,7 +138,7 @@ export default function CopiiPage() {
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[#c9ced5] mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Exploreaza si alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/farmacie", label: "💊 Farmacie" },
@@ -149,18 +149,18 @@ export default function CopiiPage() {
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-[#14181c] hover:bg-[#1f2329] hover:text-[#c3dd2c] text-[#c9ced5] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#1f2329] hover:border-[#c9ced5]">
+                className="bg-[var(--surface)] hover:bg-[var(--surface-alt)] hover:text-[var(--accent-text)] text-[var(--text-soft)] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[var(--border)] hover:border-[#c9ced5]">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-[#1f2329] py-6 text-center text-xs text-[#9399a0] mt-4">
+        <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)] mt-4">
           © {an} AmCupon.ro ·{" "}
-          <Link href="/idei-cadouri" className="hover:text-[#ddf93c]">Idei Cadouri</Link>{" · "}
-          <Link href="/categorii/copii" className="hover:text-[#ddf93c]">Categorie Copii</Link>{" · "}
-          <Link href="/categorii" className="hover:text-[#ddf93c]">Categorii</Link>
+          <Link href="/idei-cadouri" className="hover:text-[var(--accent-text)]">Idei Cadouri</Link>{" · "}
+          <Link href="/categorii/copii" className="hover:text-[var(--accent-text)]">Categorie Copii</Link>{" · "}
+          <Link href="/categorii" className="hover:text-[var(--accent-text)]">Categorii</Link>
         </footer>
       </div>
     </>

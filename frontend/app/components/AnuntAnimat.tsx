@@ -102,7 +102,7 @@ export default function AnuntAnimat() {
   const item = items[idx];
 
   return (
-    <div className="bg-[#14181c] border-b border-[#1f2329] text-[#c9ced5] text-xs font-semibold py-2 px-4 text-center flex items-center justify-center gap-3 min-h-[34px]">
+    <div className="bg-[var(--surface)] border-b border-[var(--border)] text-[var(--text-soft)] text-xs font-semibold py-2 px-4 text-center flex items-center justify-center gap-3 min-h-[34px]">
       {/* Mesaj rotativ */}
       <div
         className="flex items-center gap-2 min-w-0 transition-all duration-300"
@@ -123,7 +123,7 @@ export default function AnuntAnimat() {
             </span>
           )}
         </a>
-        <span className="hidden sm:inline text-[#9399a0]">→</span>
+        <span className="hidden sm:inline text-[var(--text-muted)]">→</span>
       </div>
 
       {/* Dots indicatori */}
@@ -132,7 +132,7 @@ export default function AnuntAnimat() {
           <button
             key={i}
             onClick={() => { setVisible(false); setTimeout(() => { setIdx(i); setVisible(true); }, 300); }}
-            className={`w-1.5 h-1.5 rounded-full transition-all ${i === idx % Math.min(items.length, 8) ? "bg-[#ddf93c]" : "bg-[#2a2f36]"}`}
+            className={`w-1.5 h-1.5 rounded-full transition-all ${i === idx % Math.min(items.length, 8) ? "bg-[#ddf93c]" : "bg-[var(--surface-high)]"}`}
             aria-label={`Anunt ${i + 1}`}
           />
         ))}
@@ -141,7 +141,7 @@ export default function AnuntAnimat() {
       {/* Link Newsletter fix */}
       <a
         href="/newsletter"
-        className="hidden md:inline-flex items-center gap-1 bg-[#ddf93c]/15 border border-[#ddf93c]/30 text-[#c3dd2c] hover:bg-[#ddf93c]/25 px-2.5 py-0.5 rounded-full transition-colors shrink-0"
+        className="hidden md:inline-flex items-center gap-1 bg-[#ddf93c]/15 border border-[var(--accent-text)]/30 text-[var(--accent-text)] hover:bg-[#ddf93c]/25 px-2.5 py-0.5 rounded-full transition-colors shrink-0"
       >
         📬 Newsletter gratuit
       </a>

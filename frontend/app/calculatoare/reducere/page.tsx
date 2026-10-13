@@ -127,7 +127,7 @@ export default function CalculatorReducerePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
 
-      <nav className="text-xs text-[#9399a0] mb-5">
+      <nav className="text-xs text-[var(--text-muted)] mb-5">
         <Link href="/" className="hover:text-white transition-colors">
           Acasa
         </Link>
@@ -140,7 +140,7 @@ export default function CalculatorReducerePage() {
       </nav>
 
       <h1 className="text-3xl sm:text-4xl font-black mb-3 leading-tight">Calculator de reduceri</h1>
-      <p className="text-[#9399a0] mb-8 max-w-2xl">
+      <p className="text-[var(--text-muted)] mb-8 max-w-2xl">
         Afla pretul final, cat economisesti si care e reducerea reala cand se aplica doua reduceri
         una peste alta. Fara cont, fara instalare.
       </p>
@@ -149,34 +149,34 @@ export default function CalculatorReducerePage() {
 
       <section className="mt-12">
         <h2 className="text-2xl font-black mb-4">Capcana celor doua reduceri</h2>
-        <p className="text-[#9399a0] leading-relaxed mb-4">
+        <p className="text-[var(--text-muted)] leading-relaxed mb-4">
           Cea mai frecventa greseala la cumparaturi online e adunarea procentelor. Un produs redus cu
           30%, peste care aplici un cod de 20%, nu costa cu 50% mai putin. Al doilea procent se
           calculeaza din pretul deja redus, nu din cel de la raft.
         </p>
-        <div className="bg-[#14181c] rounded-xl border border-[#1f2329] p-5 mb-4">
+        <div className="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5 mb-4">
           <table className="w-full text-sm">
-            <tbody className="divide-y divide-[#1f2329]">
+            <tbody className="divide-y divide-[var(--border)]">
               <tr>
-                <td className="py-2.5 text-[#9399a0]">Pret initial</td>
+                <td className="py-2.5 text-[var(--text-muted)]">Pret initial</td>
                 <td className="py-2.5 text-right font-semibold">249,00 lei</td>
               </tr>
               <tr>
-                <td className="py-2.5 text-[#9399a0]">Dupa reducerea de 30%</td>
+                <td className="py-2.5 text-[var(--text-muted)]">Dupa reducerea de 30%</td>
                 <td className="py-2.5 text-right font-semibold">174,30 lei</td>
               </tr>
               <tr>
-                <td className="py-2.5 text-[#9399a0]">Dupa codul de 20%</td>
-                <td className="py-2.5 text-right font-semibold text-[#ddf93c]">139,44 lei</td>
+                <td className="py-2.5 text-[var(--text-muted)]">Dupa codul de 20%</td>
+                <td className="py-2.5 text-right font-semibold text-[var(--accent-text)]">139,44 lei</td>
               </tr>
               <tr>
-                <td className="py-2.5 text-[#9399a0]">Reducere reala</td>
+                <td className="py-2.5 text-[var(--text-muted)]">Reducere reala</td>
                 <td className="py-2.5 text-right font-semibold">44%, nu 50%</td>
               </tr>
             </tbody>
           </table>
         </div>
-        <p className="text-[#9399a0] leading-relaxed">
+        <p className="text-[var(--text-muted)] leading-relaxed">
           Diferenta de 6 puncte procentuale inseamna 14,94 lei la un singur produs. Ordinea in care
           se aplica cele doua reduceri nu conteaza matematic: rezultatul e acelasi.
         </p>
@@ -188,24 +188,24 @@ export default function CalculatorReducerePage() {
           {FAQ.map((f) => (
             <details
               key={f.q}
-              className="bg-[#14181c] rounded-xl border border-[#1f2329] p-5 group"
+              className="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5 group"
             >
               <summary className="font-semibold cursor-pointer list-none flex justify-between items-center gap-4">
                 {f.q}
-                <span className="text-[#ddf93c] shrink-0 group-open:rotate-45 transition-transform">
+                <span className="text-[var(--accent-text)] shrink-0 group-open:rotate-45 transition-transform">
                   +
                 </span>
               </summary>
-              <p className="text-[#9399a0] mt-3 leading-relaxed">{f.a}</p>
+              <p className="text-[var(--text-muted)] mt-3 leading-relaxed">{f.a}</p>
             </details>
           ))}
         </div>
       </section>
 
       {cuCod > 0 && (
-        <section className="mt-12 bg-[#14181c] rounded-xl border border-[#1f2329] p-6">
+        <section className="mt-12 bg-[var(--surface)] rounded-xl border border-[var(--border)] p-6">
           <h2 className="text-xl font-black mb-2">Ai calculat. Acum gaseste reducerea.</h2>
-          <p className="text-[#9399a0] mb-4">
+          <p className="text-[var(--text-muted)] mb-4">
             Urmarim {cuPromotie} magazine cu promotii active, dintre care {cuCod} au si un cod de
             reducere activ.
           </p>
@@ -218,7 +218,7 @@ export default function CalculatorReducerePage() {
             </Link>
             <Link
               href="/oferte-azi"
-              className="bg-[#1f2329] text-white font-bold px-5 py-2.5 rounded-lg hover:bg-[#2a2f36] transition-colors"
+              className="bg-[var(--surface-alt)] text-white font-bold px-5 py-2.5 rounded-lg hover:bg-[var(--surface-high)] transition-colors"
             >
               Ofertele de azi
             </Link>

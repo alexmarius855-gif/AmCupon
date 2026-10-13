@@ -75,10 +75,10 @@ function MagazinCard({
   const linkIesire = linkAfiliat(m);
 
   return (
-    <div className="bg-[#14181c] border border-[#1f2329] rounded-xl p-4 hover:border-[#ddf93c]/30 transition-all group">
+    <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-4 hover:border-[var(--accent-text)]/30 transition-all group">
       <div className="flex items-start gap-3">
         {/* Rank badge */}
-        <div className="shrink-0 w-8 h-8 rounded-full bg-[#1f2329] flex items-center justify-center text-xs font-black text-[#c9ced5] group-hover:bg-[#ddf93c]/20 group-hover:text-[#ddf93c] transition-all">
+        <div className="shrink-0 w-8 h-8 rounded-full bg-[var(--surface-alt)] flex items-center justify-center text-xs font-black text-[var(--text-soft)] group-hover:bg-[#ddf93c]/20 group-hover:text-[var(--accent-text)] transition-all">
           {rank}
         </div>
 
@@ -87,10 +87,10 @@ function MagazinCard({
           <img
             src={m.logo_url}
             alt={nume}
-            className="w-10 h-10 object-contain rounded-lg bg-[#14181c] p-1 shrink-0"
+            className="w-10 h-10 object-contain rounded-lg bg-[var(--surface)] p-1 shrink-0"
           />
         ) : (
-          <div className="w-10 h-10 rounded-lg bg-[#2a2f36] flex items-center justify-center text-sm font-black text-[#c9ced5] shrink-0">
+          <div className="w-10 h-10 rounded-lg bg-[var(--surface-high)] flex items-center justify-center text-sm font-black text-[var(--text-soft)] shrink-0">
             {nume.charAt(0)}
           </div>
         )}
@@ -100,7 +100,7 @@ function MagazinCard({
           <div className="flex items-center gap-2 flex-wrap">
             <a
               href={`/cod-reducere/${m.magazin}`}
-              className="font-bold text-[#ffffff] hover:text-[#ddf93c] transition-colors text-sm"
+              className="font-bold text-[var(--foreground)] hover:text-[var(--accent-text)] transition-colors text-sm"
             >
               {nume}
             </a>
@@ -113,7 +113,7 @@ function MagazinCard({
               <span className={`text-xs px-2 py-0.5 rounded-full font-bold ${
                 m.zile_ramase === 1
                   ? "bg-red-500/15 text-red-400"
-                  : "bg-[#ddf93c]/15 text-[#c3dd2c]"
+                  : "bg-[#ddf93c]/15 text-[var(--accent-text)]"
               }`}>
                 {m.zile_ramase === 1 ? "Expira azi!" : `${m.zile_ramase} zile`}
               </span>
@@ -121,7 +121,7 @@ function MagazinCard({
           </div>
 
           {promo && (
-            <p className="text-xs text-[#c9ced5] mt-0.5 truncate">{titluPromotie(cod || promo, nume)}</p>
+            <p className="text-xs text-[var(--text-soft)] mt-0.5 truncate">{titluPromotie(cod || promo, nume)}</p>
           )}
 
           <div className="flex items-center gap-3 mt-1.5">
@@ -143,7 +143,7 @@ function MagazinCard({
               className={`text-xs font-bold px-3 py-2 rounded-xl transition-all ${
                 copied
                   ? "bg-emerald-500/20 text-emerald-400 border border-emerald-500/30"
-                  : "bg-[#ddf93c]/10 text-[#ddf93c] border border-[#ddf93c]/30 hover:bg-[#ddf93c] hover:text-[#0c1000]"
+                  : "bg-[#ddf93c]/10 text-[var(--accent-text)] border border-[var(--accent-text)]/30 hover:bg-[#ddf93c] hover:text-[#0c1000]"
               }`}
             >
               {copied ? "Copiat!" : dezvaluit ? cod.cod_cupon : `Vezi codul ${maskCod(cod.cod_cupon)}`}
@@ -153,14 +153,14 @@ function MagazinCard({
               href={linkPromotie(m, promo) || linkIesire}
               target="_blank"
               rel="sponsored noopener noreferrer"
-              className="text-xs font-bold px-3 py-2 rounded-xl bg-[#2a2f36] text-[#c9ced5] hover:bg-[#2a2f36] transition-all"
+              className="text-xs font-bold px-3 py-2 rounded-xl bg-[var(--surface-high)] text-[var(--text-soft)] hover:bg-[var(--surface-high)] transition-all"
             >
               Vezi &rarr;
             </a>
           ) : (
             <Link
               href={`/cod-reducere/${m.magazin}`}
-              className="text-xs font-bold px-3 py-2 rounded-xl bg-[#2a2f36] text-[#c9ced5] hover:bg-[#2a2f36] transition-all"
+              className="text-xs font-bold px-3 py-2 rounded-xl bg-[var(--surface-high)] text-[var(--text-soft)] hover:bg-[var(--surface-high)] transition-all"
             >
               Vezi &rarr;
             </Link>
@@ -198,37 +198,37 @@ export default function TopReduceriClient({
   }[tab];
 
   return (
-    <div className="min-h-screen bg-[#06080b]">
+    <div className="min-h-screen bg-[var(--background)]">
       <div className="max-w-4xl mx-auto px-4 py-10">
 
         {/* Hero */}
         <div className="text-center mb-8">
-          <div className="inline-flex items-center gap-2 bg-[#ddf93c]/10 border border-[#ddf93c]/20 rounded-full px-4 py-1.5 text-[#ddf93c] text-xs font-bold mb-4">
+          <div className="inline-flex items-center gap-2 bg-[#ddf93c]/10 border border-[var(--accent-text)]/20 rounded-full px-4 py-1.5 text-[var(--accent-text)] text-xs font-bold mb-4">
             <span className="w-2 h-2 bg-[#ddf93c] rounded-full animate-pulse" />
             Actualizat zilnic
           </div>
-          <h1 className="text-3xl sm:text-4xl font-black text-[#ffffff] mb-3">
+          <h1 className="text-3xl sm:text-4xl font-black text-[var(--foreground)] mb-3">
             Top Reduceri {luna} {an}
           </h1>
-          <p className="text-[#c9ced5] max-w-xl mx-auto">
+          <p className="text-[var(--text-soft)] max-w-xl mx-auto">
             Selectia celor mai bune coduri si reduceri active, sortate dupa Deal Score. Actualizate zilnic.
           </p>
 
           {/* Stats */}
           <div className="flex items-center justify-center gap-6 mt-6">
             <div className="text-center">
-              <div className="text-2xl font-black text-[#ddf93c]">{totalMagazine}+</div>
-              <div className="text-xs text-[#9399a0]">magazine</div>
+              <div className="text-2xl font-black text-[var(--accent-text)]">{totalMagazine}+</div>
+              <div className="text-xs text-[var(--text-muted)]">magazine</div>
             </div>
-            <div className="w-px h-8 bg-[#1f2329]" />
+            <div className="w-px h-8 bg-[var(--surface-alt)]" />
             <div className="text-center">
-              <div className="text-2xl font-black text-[#ddf93c]">{totalCoduri}</div>
-              <div className="text-xs text-[#9399a0]">coduri active</div>
+              <div className="text-2xl font-black text-[var(--accent-text)]">{totalCoduri}</div>
+              <div className="text-xs text-[var(--text-muted)]">coduri active</div>
             </div>
-            <div className="w-px h-8 bg-[#1f2329]" />
+            <div className="w-px h-8 bg-[var(--surface-alt)]" />
             <div className="text-center">
               <div className="text-2xl font-black text-emerald-400">100%</div>
-              <div className="text-xs text-[#9399a0]">gratuit</div>
+              <div className="text-xs text-[var(--text-muted)]">gratuit</div>
             </div>
           </div>
         </div>
@@ -244,19 +244,19 @@ export default function TopReduceriClient({
               className={`p-3 rounded-xl text-sm font-bold transition-all text-left ${
                 tab === t.key
                   ? "bg-[#ddf93c] text-[#0c1000] shadow-lg shadow-[#ddf93c]/25"
-                  : "bg-[#14181c] text-[#c9ced5] border border-[#1f2329] hover:border-[#ddf93c]/40"
+                  : "bg-[var(--surface)] text-[var(--text-soft)] border border-[var(--border)] hover:border-[var(--accent-text)]/40"
               }`}
             >
               <div className="flex items-center gap-1.5 mb-1">
                 <span>{t.icon}</span>
                 <span className={`text-xs px-1.5 py-0.5 rounded-full font-black ${
-                  tab === t.key ? "bg-[#1f2329]" : "bg-[#1f2329]"
+                  tab === t.key ? "bg-[var(--surface-alt)]" : "bg-[var(--surface-alt)]"
                 }`}>
                   {t.count}
                 </span>
               </div>
               <div className="font-black">{t.label}</div>
-              <div className={`text-xs mt-0.5 ${tab === t.key ? "text-[#2a2f10]" : "text-[#9399a0]"}`}>
+              <div className={`text-xs mt-0.5 ${tab === t.key ? "text-[#2a2f10]" : "text-[var(--text-muted)]"}`}>
                 {t.desc}
               </div>
             </button>
@@ -267,8 +267,8 @@ export default function TopReduceriClient({
         {activeList.length === 0 ? (
           <div className="text-center py-16">
             <div className="text-4xl mb-3">🔍</div>
-            <p className="text-[#c9ced5]">Nu sunt oferte in aceasta categorie momentan.</p>
-            <Link href="/toate-magazinele" className="mt-4 inline-block text-[#ddf93c] hover:text-[#c3dd2c] text-sm font-semibold">
+            <p className="text-[var(--text-soft)]">Nu sunt oferte in aceasta categorie momentan.</p>
+            <Link href="/toate-magazinele" className="mt-4 inline-block text-[var(--accent-text)] hover:text-[var(--accent-text)] text-sm font-semibold">
               Vezi toate magazinele &rarr;
             </Link>
           </div>
@@ -292,11 +292,11 @@ export default function TopReduceriClient({
             next.config.ts) — linkul ar fi dus la un 301. Ramas un singur card, deci
             grila trece la o coloana ca sa nu ramana jumatate de rand goala. */}
         <div className="mt-10 grid gap-4">
-          <div className="bg-[#14181c] rounded-xl border border-[#1f2329] p-5 flex items-center gap-4">
+          <div className="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-5 flex items-center gap-4">
             <span className="text-3xl">🏪</span>
             <div>
-              <p className="text-[#ffffff] font-bold text-sm">Toate Magazinele</p>
-              <p className="text-[#9399a0] text-xs">{totalMagazine} magazine partenere</p>
+              <p className="text-[var(--foreground)] font-bold text-sm">Toate Magazinele</p>
+              <p className="text-[var(--text-muted)] text-xs">{totalMagazine} magazine partenere</p>
             </div>
             <a
               href="/toate-magazinele"

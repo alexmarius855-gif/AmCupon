@@ -59,12 +59,12 @@ export default function CalatoriePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-[#06080b]">
-        <nav className="bg-[#06080b] border-b border-[#1f2329]">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#9399a0]">
-            <Link href="/" className="hover:text-[#ddf93c]">Acasă</Link>
+      <div className="min-h-screen bg-[var(--background)]">
+        <nav className="bg-[var(--background)] border-b border-[var(--border)]">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[var(--text-muted)]">
+            <Link href="/" className="hover:text-[var(--accent-text)]">Acasă</Link>
             <span className="mx-1">/</span>
-            <span className="text-[#c9ced5] font-medium">Vacanțe & Călătorii</span>
+            <span className="text-[var(--text-soft)] font-medium">Vacanțe & Călătorii</span>
           </div>
         </nav>
 
@@ -78,7 +78,7 @@ export default function CalatoriePage() {
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Cazare hotel","Bilete avion","Trollere","Car rental","Excursii","Travel gear"].map(c => (
-                <span key={c} className="bg-[#1f2329] text-[#ffffff] text-sm font-semibold px-4 py-1.5 rounded-full border border-[#2a2f36]">{c}</span>
+                <span key={c} className="bg-[var(--surface-alt)] text-[var(--foreground)] text-sm font-semibold px-4 py-1.5 rounded-full border border-[var(--border-strong)]">{c}</span>
               ))}
             </div>
           </div>
@@ -86,15 +86,15 @@ export default function CalatoriePage() {
 
         {/* DESTINATII */}
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[#ffffff] mb-6 text-center">Destinații populare {an}</h2>
+          <h2 className="text-xl font-black text-[var(--foreground)] mb-6 text-center">Destinații populare {an}</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {DESTINATII.map(d => (
               <Link key={d.label} href="/blog/vacanta-ieftina-romania-2026"
-                className="bg-[#14181c] border border-[#1f2329] rounded-xl p-5 hover:shadow-md transition-all group">
+                className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5 hover:shadow-md transition-all group">
                 <div className="text-3xl mb-2">{d.emoji}</div>
-                <h3 className="font-bold text-[#ffffff] text-sm mb-1">{d.label}</h3>
-                <p className="text-xs text-[#c9ced5] mb-3">{d.desc}</p>
-                <p className="text-xs font-bold text-[#ddf93c] group-hover:text-[#ddf93c]">Ghid & reduceri →</p>
+                <h3 className="font-bold text-[var(--foreground)] text-sm mb-1">{d.label}</h3>
+                <p className="text-xs text-[var(--text-soft)] mb-3">{d.desc}</p>
+                <p className="text-xs font-bold text-[var(--accent-text)] group-hover:text-[var(--accent-text)]">Ghid & reduceri →</p>
               </Link>
             ))}
           </div>
@@ -104,13 +104,13 @@ export default function CalatoriePage() {
         <section className="max-w-6xl mx-auto px-4 pb-10">
           <div className="flex items-center gap-3 mb-5">
             
-            <h2 className="text-xl font-black text-[#ffffff]">Parteneri travel cu reduceri active</h2>
+            <h2 className="text-xl font-black text-[var(--foreground)]">Parteneri travel cu reduceri active</h2>
           </div>
           {magazine.length === 0 ? (
-            <div className="text-center py-10 bg-[#14181c] rounded-xl">
+            <div className="text-center py-10 bg-[var(--surface)] rounded-xl">
               <p className="text-2xl mb-3">🌍</p>
-              <p className="text-[#c9ced5] font-medium mb-2">Explorează articolele noastre travel</p>
-              <p className="text-[#c9ced5] text-sm mb-4">Ghiduri de destinații, sfaturi economii, itinerarii România și Europa</p>
+              <p className="text-[var(--text-soft)] font-medium mb-2">Explorează articolele noastre travel</p>
+              <p className="text-[var(--text-soft)] text-sm mb-4">Ghiduri de destinații, sfaturi economii, itinerarii România și Europa</p>
               <Link href="/blog" className="inline-block bg-[#ddf93c] text-[#0c1000] font-bold px-6 py-3 rounded-xl hover:bg-[#ddf93c] transition-colors">
                 Citește ghiduri travel →
               </Link>
@@ -136,33 +136,33 @@ export default function CalatoriePage() {
 
         {/* Parteneri internationali (Impact.com) */}
         <section className="max-w-6xl mx-auto px-4 pb-10">
-          <h2 className="text-xl font-black text-[#ffffff] mb-5">Excursii & activitati internationale</h2>
+          <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Excursii & activitati internationale</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {PARTENERI_INTL.map(p => (
               <a key={p.nume} href={p.url} target="_blank" rel="sponsored noopener noreferrer"
-                className="bg-[#14181c] border border-[#1f2329] hover:border-[#ddf93c]/40 rounded-xl p-5 transition-all hover:shadow-md flex flex-col gap-2">
+                className="bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--accent-text)]/40 rounded-xl p-5 transition-all hover:shadow-md flex flex-col gap-2">
                 <div className="flex items-center gap-2">
                   <span className="text-2xl">{p.emoji}</span>
-                  <span className="font-black text-[#ffffff]">{p.nume}</span>
+                  <span className="font-black text-[var(--foreground)]">{p.nume}</span>
                 </div>
-                <p className="text-[#c9ced5] text-xs">{p.desc}</p>
-                <p className="text-xs font-bold text-[#ddf93c] mt-1">Vezi oferte →</p>
+                <p className="text-[var(--text-soft)] text-xs">{p.desc}</p>
+                <p className="text-xs font-bold text-[var(--accent-text)] mt-1">Vezi oferte →</p>
               </a>
             ))}
           </div>
         </section>
 
         {/* SEO */}
-        <section className="bg-[#14181c] border-t border-[#1f2329] py-10 px-4">
+        <section className="bg-[var(--surface)] border-t border-[var(--border)] py-10 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-[#ffffff] mb-5">Sfaturi pentru vacanță mai ieftină</h2>
-            <div className="space-y-4 text-sm text-[#c9ced5] leading-relaxed">
+            <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Sfaturi pentru vacanță mai ieftină</h2>
+            <div className="space-y-4 text-sm text-[var(--text-soft)] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Cum găsești o cazare mai ieftină</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Cum găsești o cazare mai ieftină</h3>
                 <p>Rezervă din timp, mai ales în sezonul de vârf, și alege tarife cu anulare gratuită când planurile nu sunt sigure. Compară prețul de pe platformele de rezervări cu cel de pe site-ul hotelului.</p>
               </div>
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Top destinații România pentru vacanță ieftină {an}</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Top destinații România pentru vacanță ieftină {an}</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
                   <li><strong>Apuseni</strong> — natură superb ă, prețuri mici, turism rural autentic</li>
                   <li><strong>Sibiu</strong> — city break cultural, medieval, Transfăgărășanul la 30 minute</li>
@@ -175,7 +175,7 @@ export default function CalatoriePage() {
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[#c9ced5] mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Exploreaza si alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/esim", label: "📡 eSIM Calatorie" },
@@ -187,18 +187,18 @@ export default function CalatoriePage() {
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-[#14181c] hover:bg-[#1f2329] hover:text-[#c3dd2c] text-[#c9ced5] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#1f2329] hover:border-[#c9ced5]">
+                className="bg-[var(--surface)] hover:bg-[var(--surface-alt)] hover:text-[var(--accent-text)] text-[var(--text-soft)] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[var(--border)] hover:border-[#c9ced5]">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-[#1f2329] py-6 text-center text-xs text-[#9399a0] mt-4">
+        <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)] mt-4">
           © {an} AmCupon.ro ·{" "}
-          <Link href="/blog" className="hover:text-[#ddf93c]">Blog</Link>{" · "}
-          <Link href="/categorii" className="hover:text-[#ddf93c]">Categorii</Link>{" · "}
-          <Link href="/" className="hover:text-[#ddf93c]">Acasă</Link>
+          <Link href="/blog" className="hover:text-[var(--accent-text)]">Blog</Link>{" · "}
+          <Link href="/categorii" className="hover:text-[var(--accent-text)]">Categorii</Link>{" · "}
+          <Link href="/" className="hover:text-[var(--accent-text)]">Acasă</Link>
         </footer>
       </div>
     </>

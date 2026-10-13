@@ -59,7 +59,7 @@ const CONTURI = [
     name: "Wise",
     tagline: "Transferuri internaționale la cursul real, cu taxa afișată înainte",
     badge: "Transferuri internaționale",
-    badgeColor: "bg-emerald-600 text-[#ffffff]",
+    badgeColor: "bg-emerald-600 text-[var(--foreground)]",
     emoji: "🌍",
     cost: "Cont gratuit; taxă per transfer, afișată înainte",
     url: LINK_WISE,
@@ -109,13 +109,13 @@ export default function CarduriBancarePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <div className="min-h-screen bg-[#06080b]">
+      <div className="min-h-screen bg-[var(--background)]">
 
-        <nav className="bg-[#14181c]/80 backdrop-blur-sm border-b border-[#1f2329]">
-          <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-1.5 text-xs text-[#9399a0]">
-            <Link href="/" className="hover:text-[#ddf93c] transition-colors">Acasa</Link>
+        <nav className="bg-[var(--surface)]/80 backdrop-blur-sm border-b border-[var(--border)]">
+          <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-1.5 text-xs text-[var(--text-muted)]">
+            <Link href="/" className="hover:text-[var(--accent-text)] transition-colors">Acasa</Link>
             <span>/</span>
-            <span className="text-[#c9ced5] font-medium">Carduri & Conturi Bancare</span>
+            <span className="text-[var(--text-soft)] font-medium">Carduri & Conturi Bancare</span>
           </div>
         </nav>
 
@@ -126,23 +126,23 @@ export default function CarduriBancarePage() {
             <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-emerald-600/15 rounded-full blur-3xl" />
           </div>
           <div className="relative max-w-6xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 bg-[#ddf93c]/20 border border-[#ddf93c]/30 text-[#c3dd2c] text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
+            <div className="inline-flex items-center gap-2 bg-[#ddf93c]/20 border border-[var(--accent-text)]/30 text-[var(--accent-text)] text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
               <span className="w-1.5 h-1.5 rounded-full bg-[#ddf93c] animate-pulse" />
               Ghid actualizat {an}
             </div>
             <div className="text-6xl mb-5 drop-shadow-2xl">💳</div>
-            <h1 className="text-4xl md:text-5xl font-black text-[#ffffff] mb-4 tracking-tight">
+            <h1 className="text-4xl md:text-5xl font-black text-[var(--foreground)] mb-4 tracking-tight">
               Cel mai bun Cont Bancar Online{" "}
               <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #ddf93c, #34d399)" }}>
                 {an}
               </span>
             </h1>
-            <p className="text-[#c9ced5] text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-[var(--text-soft)] text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
               Revolut, Wise și Salt Bank — conturi digitale pe care le poți deschide din România, comparate pe condițiile publicate de fiecare: costuri, schimb valutar, transferuri.
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Cont gratuit", "Card virtual", "Schimb valutar", "Transferuri rapide", "Fara birocratie"].map(c => (
-                <span key={c} className="bg-[#1f2329] border border-[#2a2f36] text-[#c9ced5] text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
+                <span key={c} className="bg-[var(--surface-alt)] border border-[var(--border-strong)] text-[var(--text-soft)] text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
               ))}
             </div>
           </div>
@@ -151,41 +151,41 @@ export default function CarduriBancarePage() {
         {/* Conturi */}
         <section className="max-w-6xl mx-auto px-4 py-12">
           <div className="text-center mb-10">
-            <p className="text-xs font-bold text-[#c3dd2c] uppercase tracking-widest mb-2">COMPARATIE CONTURI</p>
-            <h2 className="text-3xl font-black text-[#ffffff]">Conturi digitale pentru români</h2>
-            <p className="text-[#c9ced5] text-sm mt-2">Comparate pe condițiile publicate de fiecare bancă — verifică-le pe site-ul ei înainte să deschizi contul</p>
+            <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-2">COMPARATIE CONTURI</p>
+            <h2 className="text-3xl font-black text-[var(--foreground)]">Conturi digitale pentru români</h2>
+            <p className="text-[var(--text-soft)] text-sm mt-2">Comparate pe condițiile publicate de fiecare bancă — verifică-le pe site-ul ei înainte să deschizi contul</p>
           </div>
 
           <div className="space-y-6">
             {CONTURI.map((c) => (
-              <div key={c.name} className="bg-[#14181c] border border-[#1f2329] hover:border-[#2a2f36] rounded-xl overflow-hidden transition-all duration-200">
+              <div key={c.name} className="bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--border-strong)] rounded-xl overflow-hidden transition-all duration-200">
                 <div className={`bg-gradient-to-r ${c.culoare} p-6`}>
                   <div className="flex items-start justify-between gap-4">
                     <div className="flex items-center gap-4">
-                      <div className="w-14 h-14 rounded-xl bg-[#1f2329] backdrop-blur-sm flex items-center justify-center text-3xl font-black text-[#ffffff] shrink-0">
+                      <div className="w-14 h-14 rounded-xl bg-[var(--surface-alt)] backdrop-blur-sm flex items-center justify-center text-3xl font-black text-[var(--foreground)] shrink-0">
                         {c.emoji}
                       </div>
                       <div>
                         <span className={`text-[10px] font-black ${c.badgeColor} px-2 py-0.5 rounded-full`}>#{c.rank} {c.badge}</span>
-                        <h2 className="text-2xl font-black text-[#ffffff] mt-1">{c.name}</h2>
-                        <p className="text-[#c9ced5] text-sm mt-0.5">{c.tagline}</p>
+                        <h2 className="text-2xl font-black text-[var(--foreground)] mt-1">{c.name}</h2>
+                        <p className="text-[var(--text-soft)] text-sm mt-0.5">{c.tagline}</p>
                       </div>
                     </div>
                   </div>
                 </div>
 
                 <div className="p-6">
-                  <div className="bg-[#1f2329]/50 rounded-xl p-3 text-center mb-5 max-w-xs">
-                    <p className="text-xs text-[#9399a0] mb-1">Cost cont</p>
+                  <div className="bg-[var(--surface-alt)]/50 rounded-xl p-3 text-center mb-5 max-w-xs">
+                    <p className="text-xs text-[var(--text-muted)] mb-1">Cost cont</p>
                     <p className="text-emerald-400 font-bold text-sm">{c.cost}</p>
                   </div>
 
                   <div className="grid sm:grid-cols-2 gap-4 mb-5">
                     <div>
-                      <p className="text-xs font-bold text-[#9399a0] uppercase tracking-wider mb-2">Avantaje</p>
+                      <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-wider mb-2">Avantaje</p>
                       <ul className="space-y-1.5">
                         {c.avantaje.map(a => (
-                          <li key={a} className="flex items-start gap-2 text-sm text-[#c9ced5]">
+                          <li key={a} className="flex items-start gap-2 text-sm text-[var(--text-soft)]">
                             <span className="text-emerald-400 mt-0.5 shrink-0">✓</span>
                             {a}
                           </li>
@@ -193,18 +193,18 @@ export default function CarduriBancarePage() {
                       </ul>
                     </div>
                     <div>
-                      <p className="text-xs font-bold text-[#9399a0] uppercase tracking-wider mb-2">De stiut</p>
+                      <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-wider mb-2">De stiut</p>
                       <ul className="space-y-1.5">
                         {c.dezavantaje.map(d => (
-                          <li key={d} className="flex items-start gap-2 text-sm text-[#c9ced5]">
-                            <span className="text-[#c3dd2c] mt-0.5 shrink-0">!</span>
+                          <li key={d} className="flex items-start gap-2 text-sm text-[var(--text-soft)]">
+                            <span className="text-[var(--accent-text)] mt-0.5 shrink-0">!</span>
                             {d}
                           </li>
                         ))}
                       </ul>
-                      <div className="mt-4 bg-[#1f2329] rounded-xl p-3">
-                        <p className="text-xs text-[#9399a0]">Ideal pentru</p>
-                        <p className="text-[#ffffff] text-sm font-semibold mt-0.5">{c.ideal}</p>
+                      <div className="mt-4 bg-[var(--surface-alt)] rounded-xl p-3">
+                        <p className="text-xs text-[var(--text-muted)]">Ideal pentru</p>
+                        <p className="text-[var(--foreground)] text-sm font-semibold mt-0.5">{c.ideal}</p>
                       </div>
                     </div>
                   </div>
@@ -222,10 +222,10 @@ export default function CarduriBancarePage() {
         </section>
 
         {/* Ghid alegere */}
-        <section className="bg-[#14181c] border-t border-b border-[#1f2329] py-12 px-4">
+        <section className="bg-[var(--surface)] border-t border-b border-[var(--border)] py-12 px-4">
           <div className="max-w-4xl mx-auto">
-            <p className="text-xs font-bold text-[#c3dd2c] uppercase tracking-widest mb-3">GHID ALEGERE</p>
-            <h2 className="text-2xl font-black text-[#ffffff] mb-7">Ce cont sa alegi in {an}?</h2>
+            <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-3">GHID ALEGERE</p>
+            <h2 className="text-2xl font-black text-[var(--foreground)] mb-7">Ce cont sa alegi in {an}?</h2>
             <div className="grid sm:grid-cols-2 gap-4">
               {[
                 { icon: "✈️", titlu: "Călătorești des în străinătate?", raspuns: "Revolut — schimb valutar fără comision până la limita lunară a planului; peste limită și în weekend se aplică un comision." },
@@ -233,10 +233,10 @@ export default function CarduriBancarePage() {
                 { icon: "🇪🇺", titlu: "Te muți în altă țară din UE?", raspuns: "N26 deschide conturi doar rezidenților din anumite țări — România nu e pe listă. Dacă locuiești deja acolo, verifică lista pe site-ul N26." },
                 { icon: "🇷🇴", titlu: "Vrei totul în română, la o bancă din România?", raspuns: "Salt Bank — 100% digitală, din grupul Banca Transilvania, cu depozitele garantate de FGDB." },
               ].map(g => (
-                <div key={g.titlu} className="bg-[#1f2329] border border-[#2a2f36] rounded-xl p-5">
+                <div key={g.titlu} className="bg-[var(--surface-alt)] border border-[var(--border-strong)] rounded-xl p-5">
                   <div className="text-2xl mb-3">{g.icon}</div>
-                  <h3 className="font-bold text-[#ffffff] text-sm mb-2">{g.titlu}</h3>
-                  <p className="text-xs text-[#c9ced5] leading-relaxed">{g.raspuns}</p>
+                  <h3 className="font-bold text-[var(--foreground)] text-sm mb-2">{g.titlu}</h3>
+                  <p className="text-xs text-[var(--text-soft)] leading-relaxed">{g.raspuns}</p>
                 </div>
               ))}
             </div>
@@ -245,7 +245,7 @@ export default function CarduriBancarePage() {
 
         {/* Related */}
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <p className="text-xs font-bold text-[#9399a0] uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
+          <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest mb-4">EXPLOREAZA SI</p>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/trading", label: "📈 Trading & Investitii" },
@@ -254,18 +254,18 @@ export default function CarduriBancarePage() {
               { href: "/servicii", label: "⚙️ Servicii Online" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-[#1f2329] hover:bg-[#2a2f36] border border-[#2a2f36] hover:border-[#ddf93c]/40 text-[#c9ced5] hover:text-[#ffffff] text-sm font-semibold px-4 py-2 rounded-xl transition-all duration-200">
+                className="bg-[var(--surface-alt)] hover:bg-[var(--surface-high)] border border-[var(--border-strong)] hover:border-[var(--accent-text)]/40 text-[var(--text-soft)] hover:text-[var(--foreground)] text-sm font-semibold px-4 py-2 rounded-xl transition-all duration-200">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-[#1f2329] py-6 text-center text-xs text-[#9399a0]">
+        <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)]">
           &copy; {an} AmCupon.ro &middot;{" "}
-          <Link href="/trading" className="hover:text-[#ddf93c] transition-colors">Trading</Link>{" · "}
-          <Link href="/servicii" className="hover:text-[#ddf93c] transition-colors">Servicii</Link>{" · "}
-          <Link href="/categorii" className="hover:text-[#ddf93c] transition-colors">Categorii</Link>
+          <Link href="/trading" className="hover:text-[var(--accent-text)] transition-colors">Trading</Link>{" · "}
+          <Link href="/servicii" className="hover:text-[var(--accent-text)] transition-colors">Servicii</Link>{" · "}
+          <Link href="/categorii" className="hover:text-[var(--accent-text)] transition-colors">Categorii</Link>
         </footer>
       </div>
     </>

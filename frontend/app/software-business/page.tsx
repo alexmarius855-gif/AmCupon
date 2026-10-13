@@ -68,23 +68,23 @@ export default function SoftwareBusinessPage() {
   const parteneri = software.slice(0, MAX_PARTENERI);
 
   return (
-    <div className="min-h-screen bg-[#06080b]">
+    <div className="min-h-screen bg-[var(--background)]">
       {/* Hero */}
-      <section className="relative bg-[#06080b] border-b border-[#1f2329] overflow-hidden">
+      <section className="relative bg-[var(--background)] border-b border-[var(--border)] overflow-hidden">
         <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(13,148,136,0.10) 0%, transparent 65%)" }} />
         <div className="relative max-w-4xl mx-auto px-4 pt-12 pb-10 text-center">
-          <nav className="flex justify-center gap-2 text-xs text-[#9399a0] mb-8">
-            <Link href="/" className="hover:text-[#c9ced5]">AmCupon.ro</Link>
+          <nav className="flex justify-center gap-2 text-xs text-[var(--text-muted)] mb-8">
+            <Link href="/" className="hover:text-[var(--text-soft)]">AmCupon.ro</Link>
             <span>/</span>
-            <Link href="/servicii" className="hover:text-[#c9ced5]">Servicii</Link>
+            <Link href="/servicii" className="hover:text-[var(--text-soft)]">Servicii</Link>
             <span>/</span>
-            <span className="text-[#c9ced5]">Software Business</span>
+            <span className="text-[var(--text-soft)]">Software Business</span>
           </nav>
           <div className="text-5xl mb-4">📊</div>
-          <h1 className="text-4xl md:text-5xl font-black text-[#ffffff] mb-4">
+          <h1 className="text-4xl md:text-5xl font-black text-[var(--foreground)] mb-4">
             Software pentru <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #c3dd2c, #ddf93c)" }}>Business</span>
           </h1>
-          <p className="text-[#c9ced5] text-lg max-w-2xl mx-auto">
+          <p className="text-[var(--text-soft)] text-lg max-w-2xl mx-auto">
             Unelte SaaS pentru firme — SEO, design, email marketing, productivitate, securitate — și partenerii AmCupon din categoria software, cu ofertele lor active.
           </p>
         </div>
@@ -94,9 +94,9 @@ export default function SoftwareBusinessPage() {
       {parteneri.length > 0 && (
         <section className="max-w-5xl mx-auto px-4 py-8">
           <div className="flex items-end justify-between gap-4 mb-5">
-            <h2 className="text-xl font-black text-[#ffffff]">Parteneri AmCupon din categoria software</h2>
+            <h2 className="text-xl font-black text-[var(--foreground)]">Parteneri AmCupon din categoria software</h2>
             {software.length > MAX_PARTENERI && (
-              <Link href="/categorii/software" className="text-xs font-bold text-[#ddf93c] hover:text-[#c3dd2c] shrink-0">
+              <Link href="/categorii/software" className="text-xs font-bold text-[var(--accent-text)] hover:text-[var(--accent-text)] shrink-0">
                 Toți cei {software.length} →
               </Link>
             )}
@@ -109,17 +109,17 @@ export default function SoftwareBusinessPage() {
 
       {/* Tools internationale */}
       {TOOLS_INTL.map(group => (
-        <section key={group.categ} className="max-w-5xl mx-auto px-4 py-6 border-t border-[#1f2329]">
-          <h2 className="text-xl font-black text-[#ffffff] mb-5">{group.categ} — International</h2>
+        <section key={group.categ} className="max-w-5xl mx-auto px-4 py-6 border-t border-[var(--border)]">
+          <h2 className="text-xl font-black text-[var(--foreground)] mb-5">{group.categ} — International</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {group.items.map(item => (
-              <div key={item.name} className="bg-[#14181c] border border-[#1f2329] hover:border-[#ddf93c]/20 rounded-xl p-5 flex flex-col gap-3 transition-all">
+              <div key={item.name} className="bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--accent-text)]/20 rounded-xl p-5 flex flex-col gap-3 transition-all">
                 <div>
                   <div className="flex items-center gap-2 mb-0.5">
-                    <span className="font-black text-[#ffffff]">{item.name}</span>
-                    <span className="text-[10px] bg-[#ddf93c]/10 text-[#ddf93c] border border-[#ddf93c]/30 px-1.5 py-0.5 rounded-full font-bold">{item.badge}</span>
+                    <span className="font-black text-[var(--foreground)]">{item.name}</span>
+                    <span className="text-[10px] bg-[#ddf93c]/10 text-[var(--accent-text)] border border-[var(--accent-text)]/30 px-1.5 py-0.5 rounded-full font-bold">{item.badge}</span>
                   </div>
-                  <p className="text-xs text-[#c9ced5]">{item.desc}</p>
+                  <p className="text-xs text-[var(--text-soft)]">{item.desc}</p>
                 </div>
                 <a href={linkPlatit(item.url)} target="_blank" rel="sponsored noopener noreferrer"
                   className="mt-auto bg-[#ddf93c] hover:bg-[#c3dd2c] text-[#0c1000] text-sm font-bold py-2.5 rounded-lg text-center transition-all hover:-translate-y-0.5">
@@ -132,7 +132,7 @@ export default function SoftwareBusinessPage() {
       ))}
 
       <div className="max-w-5xl mx-auto px-4 pb-8">
-        <p className="text-[#9399a0] text-xs text-center">Unele linkuri sunt linkuri de afiliat. AmCupon.ro primește un comision dacă faci o achiziție, fără cost suplimentar pentru tine. Prețurile și condițiile le vezi pe site-ul fiecărui serviciu.</p>
+        <p className="text-[var(--text-muted)] text-xs text-center">Unele linkuri sunt linkuri de afiliat. AmCupon.ro primește un comision dacă faci o achiziție, fără cost suplimentar pentru tine. Prețurile și condițiile le vezi pe site-ul fiecărui serviciu.</p>
       </div>
     </div>
   );

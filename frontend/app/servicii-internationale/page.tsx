@@ -32,11 +32,11 @@ const CATEGORII = [
     branduri: [
       { nume: "Surfshark", badge: "Dispozitive nelimitate", badgeColor: "bg-[#ddf93c] text-[#0c1000]", url: "https://surfshark.sjv.io/c/7401119/529009/9043",
         descriere: "VPN cu dispozitive nelimitate, mod Camouflage și MultiHop, cu aplicații pentru toate platformele." },
-      { nume: "Bitdefender", badge: "Brand românesc", badgeColor: "bg-red-700 text-[#ffffff]", url: "https://www.bitdefender.com",
+      { nume: "Bitdefender", badge: "Brand românesc", badgeColor: "bg-red-700 text-[var(--foreground)]", url: "https://www.bitdefender.com",
         descriere: "Antivirus pentru PC, Mac, Android și iOS: Antivirus Plus, Internet Security, Total Security." },
       { nume: "Norton", badge: "", badgeColor: "", url: "https://us.norton.com",
         descriere: "Norton 360: antivirus cu VPN inclus, backup în cloud și monitorizare dark web." },
-      { nume: "Intego", badge: "Doar Mac", badgeColor: "bg-[#2a2f36] text-[#ffffff]", url: "https://www.intego.com",
+      { nume: "Intego", badge: "Doar Mac", badgeColor: "bg-[var(--surface-high)] text-[var(--foreground)]", url: "https://www.intego.com",
         descriere: "Antivirus pentru Mac, care detectează malware scris special pentru macOS." },
     ],
   },
@@ -60,7 +60,7 @@ const CATEGORII = [
     emoji: "🛒",
     desc: "Platforme pentru magazine online și pentru firme",
     branduri: [
-      { nume: "Shopify", badge: "Magazin online", badgeColor: "bg-green-700 text-[#ffffff]", url: "https://www.shopify.com",
+      { nume: "Shopify", badge: "Magazin online", badgeColor: "bg-green-700 text-[var(--foreground)]", url: "https://www.shopify.com",
         descriere: "Platformă pentru magazin online: teme, plăți și integrări, fără server propriu." },
       { nume: "HubSpot", badge: "CRM gratuit", badgeColor: "bg-[#ddf93c] text-[#0c1000]", url: "https://www.hubspot.com",
         descriere: "CRM cu plan gratuit, plus module plătite de marketing, vânzări și suport clienți." },
@@ -76,7 +76,7 @@ const CATEGORII = [
     branduri: [
       { nume: "Coursera", badge: "Certificate", badgeColor: "bg-[#ddf93c] text-[#0c1000]", url: "https://www.coursera.org",
         descriere: "Cursuri și certificate de la Google, IBM, Meta și de la universități." },
-      { nume: "DataCamp", badge: "Data Science", badgeColor: "bg-green-700 text-[#ffffff]", url: "https://www.datacamp.com",
+      { nume: "DataCamp", badge: "Data Science", badgeColor: "bg-green-700 text-[var(--foreground)]", url: "https://www.datacamp.com",
         descriere: "Cursuri practice de Python, R, SQL și machine learning, direct în browser." },
       { nume: "Blinkist", badge: "", badgeColor: "", url: "https://www.blinkist.com",
         descriere: "Rezumate audio și text ale cărților de non-ficțiune." },
@@ -110,7 +110,7 @@ const CATEGORII = [
     branduri: [
       { nume: "Logitech", badge: "", badgeColor: "", url: "https://www.logitech.com",
         descriere: "Mouse-uri, tastaturi și camere web: MX Master, G Pro, BRIO. Compatibile Mac și Windows." },
-      { nume: "Razer", badge: "Gaming", badgeColor: "bg-green-800 text-[#ffffff]", url: "https://www.razer.com",
+      { nume: "Razer", badge: "Gaming", badgeColor: "bg-green-800 text-[var(--foreground)]", url: "https://www.razer.com",
         descriere: "Mouse-uri, tastaturi, căști și laptopuri de gaming." },
       { nume: "Lenovo", badge: "", badgeColor: "", url: "https://www.lenovo.com/ro",
         descriere: "ThinkPad pentru business, IdeaPad pentru uz general, Legion pentru gaming." },
@@ -152,30 +152,30 @@ export default function ServiciiInternationale() {
   const totalBranduri = CATEGORII.reduce((s, c) => s + c.branduri.length, 0);
 
   return (
-    <div className="min-h-screen bg-[#06080b]">
+    <div className="min-h-screen bg-[var(--background)]">
       {/* Hero */}
-      <section className="border-b border-[#1f2329] overflow-hidden relative">
+      <section className="border-b border-[var(--border)] overflow-hidden relative">
         <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 70% 50% at 50% 0%, rgba(13,148,136,0.07) 0%, transparent 65%)" }} />
         <div className="relative max-w-5xl mx-auto px-4 pt-12 pb-10 text-center">
-          <nav className="flex justify-center gap-2 text-xs text-[#9399a0] mb-8">
-            <Link href="/" className="hover:text-[#c9ced5]">AmCupon.ro</Link>
+          <nav className="flex justify-center gap-2 text-xs text-[var(--text-muted)] mb-8">
+            <Link href="/" className="hover:text-[var(--text-soft)]">AmCupon.ro</Link>
             <span>/</span>
-            <span className="text-[#c9ced5]">Servicii Internationale</span>
+            <span className="text-[var(--text-soft)]">Servicii Internationale</span>
           </nav>
           <div className="text-5xl mb-4">🌍</div>
-          <h1 className="text-4xl md:text-5xl font-black text-[#ffffff] mb-4">
+          <h1 className="text-4xl md:text-5xl font-black text-[var(--foreground)] mb-4">
             Servicii Internaționale{" "}
             <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #ddf93c, #ddf93c)" }}>
               2026
             </span>
           </h1>
-          <p className="text-[#c9ced5] text-lg max-w-2xl mx-auto mb-6">
+          <p className="text-[var(--text-soft)] text-lg max-w-2xl mx-auto mb-6">
             {totalBranduri} servicii internaționale — VPN, antivirus, hosting, cursuri, software și altele. Unde avem parteneriat, linkul e de afiliat; altfel te trimitem direct pe site-ul lor.
           </p>
           <div className="flex flex-wrap justify-center gap-3 text-xs">
             {CATEGORII.map((c) => (
               <a key={c.slug} href={`#${c.slug}`}
-                className="bg-[#1f2329] hover:bg-[#2a2f36] text-[#c9ced5] px-3 py-1.5 rounded-full transition-colors">
+                className="bg-[var(--surface-alt)] hover:bg-[var(--surface-high)] text-[var(--text-soft)] px-3 py-1.5 rounded-full transition-colors">
                 {c.emoji} {c.titlu}
               </a>
             ))}
@@ -190,17 +190,17 @@ export default function ServiciiInternationale() {
             <div className="flex items-center gap-3 mb-6">
               <span className="text-3xl">{cat.emoji}</span>
               <div>
-                <h2 className="text-xl font-black text-[#ffffff]">{cat.titlu}</h2>
-                <p className="text-[#9399a0] text-sm">{cat.desc}</p>
+                <h2 className="text-xl font-black text-[var(--foreground)]">{cat.titlu}</h2>
+                <p className="text-[var(--text-muted)] text-sm">{cat.desc}</p>
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {cat.branduri.map((brand) => (
                 <a key={brand.nume} href={linkPlatit(brand.url)} target="_blank" rel="sponsored noopener noreferrer"
-                  className="group bg-[#14181c] border border-[#1f2329] hover:border-[#3a4048] rounded-xl p-5 transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-black/40 block">
+                  className="group bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--border-strong)] rounded-xl p-5 transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-black/40 block">
                   <div className="flex items-start justify-between gap-3 mb-2">
                     <div className="flex items-center gap-2">
-                      <h3 className="font-black text-[#ffffff] group-hover:text-[#c3dd2c] transition-colors">{brand.nume}</h3>
+                      <h3 className="font-black text-[var(--foreground)] group-hover:text-[var(--accent-text)] transition-colors">{brand.nume}</h3>
                       {brand.badge && (
                         <span className={`text-[9px] font-black px-2 py-0.5 rounded-full ${brand.badgeColor}`}>
                           {brand.badge}
@@ -208,8 +208,8 @@ export default function ServiciiInternationale() {
                       )}
                     </div>
                   </div>
-                  <p className="text-[#c9ced5] text-xs leading-relaxed">{brand.descriere}</p>
-                  <div className="mt-3 text-xs text-[#9399a0] group-hover:text-[#c9ced5] transition-colors flex items-center gap-1">
+                  <p className="text-[var(--text-soft)] text-xs leading-relaxed">{brand.descriere}</p>
+                  <div className="mt-3 text-xs text-[var(--text-muted)] group-hover:text-[var(--text-soft)] transition-colors flex items-center gap-1">
                     <span>Viziteaza</span>
                     <span className="group-hover:translate-x-0.5 transition-transform">→</span>
                   </div>
@@ -221,26 +221,26 @@ export default function ServiciiInternationale() {
       </div>
 
       {/* De ce servicii internationale */}
-      <section className="max-w-5xl mx-auto px-4 py-10 border-t border-[#1f2329]">
-        <h2 className="text-2xl font-black text-[#ffffff] mb-6">De ce sa alegi servicii internationale?</h2>
+      <section className="max-w-5xl mx-auto px-4 py-10 border-t border-[var(--border)]">
+        <h2 className="text-2xl font-black text-[var(--foreground)] mb-6">De ce sa alegi servicii internationale?</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {[
             { emoji: "🧩", titlu: "Ce nu găsești local", desc: "Pentru unele lucruri (VPN, unelte AI, cursuri cu certificat internațional) alternativele românești sunt puține sau lipsesc." },
             { emoji: "🇷🇴", titlu: "Și un brand românesc", desc: "Bitdefender, din listă, e o companie românească, fondată în București." },
             { emoji: "🌍", titlu: "Verifică livrarea", desc: "Serviciile digitale merg de obicei de oriunde; la produsele fizice (Crocs, Razer, Lenovo), verifică pe site livrarea în România înainte să comanzi." },
           ].map((item, i) => (
-            <div key={i} className="bg-[#14181c] border border-[#1f2329] rounded-xl p-5">
+            <div key={i} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
               <div className="text-2xl mb-2">{item.emoji}</div>
-              <h3 className="font-bold text-[#ffffff] mb-1">{item.titlu}</h3>
-              <p className="text-sm text-[#c9ced5]">{item.desc}</p>
+              <h3 className="font-bold text-[var(--foreground)] mb-1">{item.titlu}</h3>
+              <p className="text-sm text-[var(--text-soft)]">{item.desc}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* Link categorii aferente */}
-      <section className="max-w-5xl mx-auto px-4 py-8 border-t border-[#1f2329]">
-        <h2 className="text-xl font-black text-[#ffffff] mb-4">Exploreaza si paginile dedicate</h2>
+      <section className="max-w-5xl mx-auto px-4 py-8 border-t border-[var(--border)]">
+        <h2 className="text-xl font-black text-[var(--foreground)] mb-4">Exploreaza si paginile dedicate</h2>
         <div className="flex flex-wrap gap-3">
           {[
             { href: "/vpn", label: "VPN Romania" },
@@ -252,7 +252,7 @@ export default function ServiciiInternationale() {
             { href: "/gadgets", label: "Gadgeturi" },
           ].map((link) => (
             <Link key={link.href} href={link.href}
-              className="bg-[#1f2329] hover:bg-[#2a2f36] text-[#c9ced5] px-4 py-2 rounded-lg text-sm transition-colors">
+              className="bg-[var(--surface-alt)] hover:bg-[var(--surface-high)] text-[var(--text-soft)] px-4 py-2 rounded-lg text-sm transition-colors">
               {link.label} →
             </Link>
           ))}
@@ -261,7 +261,7 @@ export default function ServiciiInternationale() {
 
       {/* Disclaimer */}
       <div className="max-w-5xl mx-auto px-4 pb-10">
-        <p className="text-[#9399a0] text-xs text-center">
+        <p className="text-[var(--text-muted)] text-xs text-center">
           Paginile de pe AmCupon.ro conțin linkuri de afiliat. Dacă faci o achiziție, primim un comision, fără cost suplimentar pentru tine. Descrierile se bazează pe ce publică fiecare serviciu; prețurile și condițiile le vezi pe site-ul lor.
         </p>
       </div>

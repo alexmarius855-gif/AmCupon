@@ -53,12 +53,12 @@ export default function FrumusetePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-[#06080b]">
-        <nav className="bg-[#06080b] border-b border-[#1f2329]">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#9399a0]">
-            <Link href="/" className="hover:text-[#ddf93c]">Acasă</Link>
+      <div className="min-h-screen bg-[var(--background)]">
+        <nav className="bg-[var(--background)] border-b border-[var(--border)]">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[var(--text-muted)]">
+            <Link href="/" className="hover:text-[var(--accent-text)]">Acasă</Link>
             <span className="mx-1">/</span>
-            <span className="text-[#c9ced5] font-medium">Frumusețe & Beauty</span>
+            <span className="text-[var(--text-soft)] font-medium">Frumusețe & Beauty</span>
           </div>
         </nav>
 
@@ -72,7 +72,7 @@ export default function FrumusetePage() {
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {SUBCATEGORII.map(s => (
-                <span key={s.label} className="bg-[#1f2329] text-[#ffffff] text-sm font-semibold px-4 py-1.5 rounded-full border border-[#2a2f36]">
+                <span key={s.label} className="bg-[var(--surface-alt)] text-[var(--foreground)] text-sm font-semibold px-4 py-1.5 rounded-full border border-[var(--border-strong)]">
                   {s.emoji} {s.label}
                 </span>
               ))}
@@ -82,15 +82,15 @@ export default function FrumusetePage() {
 
         {/* SUBCATEGORII */}
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[#ffffff] mb-6 text-center">Categorii beauty populare</h2>
+          <h2 className="text-xl font-black text-[var(--foreground)] mb-6 text-center">Categorii beauty populare</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {SUBCATEGORII.map(s => (
               <Link key={s.label} href="/categorii/beauty"
-                className="bg-[#14181c] border border-[#1f2329] rounded-xl p-5 hover:shadow-md transition-all group">
+                className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5 hover:shadow-md transition-all group">
                 <div className="text-3xl mb-2">{s.emoji}</div>
-                <h3 className="font-bold text-[#ffffff] text-sm mb-1">{s.label}</h3>
-                <p className="text-xs text-[#c9ced5] mb-3">{s.desc}</p>
-                <p className="text-xs font-bold text-[#ddf93c] group-hover:text-[#ddf93c]">Vezi reduceri →</p>
+                <h3 className="font-bold text-[var(--foreground)] text-sm mb-1">{s.label}</h3>
+                <p className="text-xs text-[var(--text-soft)] mb-3">{s.desc}</p>
+                <p className="text-xs font-bold text-[var(--accent-text)] group-hover:text-[var(--accent-text)]">Vezi reduceri →</p>
               </Link>
             ))}
           </div>
@@ -100,7 +100,7 @@ export default function FrumusetePage() {
         <section className="max-w-6xl mx-auto px-4 pb-10">
           <div className="flex items-center gap-3 mb-5">
             
-            <h2 className="text-xl font-black text-[#ffffff]">Magazine beauty cu reduceri active</h2>
+            <h2 className="text-xl font-black text-[var(--foreground)]">Magazine beauty cu reduceri active</h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {magazine.map((m) => (
@@ -120,16 +120,16 @@ export default function FrumusetePage() {
         />
 
         {/* SEO */}
-        <section className="bg-[#14181c] border-t border-[#1f2329] py-10 px-4">
+        <section className="bg-[var(--surface)] border-t border-[var(--border)] py-10 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-[#ffffff] mb-5">Ghid cumpărături beauty inteligente</h2>
-            <div className="space-y-4 text-sm text-[#c9ced5] leading-relaxed">
+            <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Ghid cumpărături beauty inteligente</h2>
+            <div className="space-y-4 text-sm text-[var(--text-soft)] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Parfumuri originale mai ieftin</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Parfumuri originale mai ieftin</h3>
                 <p>Pe Notino găsești parfumuri de la branduri cunoscute; compară prețul cu cel din parfumeriile fizice înainte să comanzi. Caută coduri de reducere Notino pe AmCupon.ro înainte de orice comandă.</p>
               </div>
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Skincare la prețuri reduse</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Skincare la prețuri reduse</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
                   <li><strong>Vichy & La Roche-Posay</strong> — le găsești și în farmaciile online (de exemplu Dr. Max); compară prețul cu cel din parfumerii</li>
                   <li><strong>The Ordinary</strong> — raport calitate-preț excepțional, activi puri la prețuri mici</li>
@@ -137,7 +137,7 @@ export default function FrumusetePage() {
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Cele mai bune momente pentru cumpărături beauty</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Cele mai bune momente pentru cumpărături beauty</h3>
                 <p>Valentine&apos;s Day (parfumuri), 8 Martie (seturi cadou), Black Friday (electrice păr, skincare) și Crăciunul (seturi premium) sunt perioadele cu cele mai mari reduceri la beauty.</p>
               </div>
             </div>
@@ -145,7 +145,7 @@ export default function FrumusetePage() {
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[#c9ced5] mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Exploreaza si alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/parfumuri", label: "🌹 Parfumuri" },
@@ -156,18 +156,18 @@ export default function FrumusetePage() {
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-[#14181c] hover:bg-[#1f2329] hover:text-[#c3dd2c] text-[#c9ced5] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#1f2329] hover:border-[#c9ced5]">
+                className="bg-[var(--surface)] hover:bg-[var(--surface-alt)] hover:text-[var(--accent-text)] text-[var(--text-soft)] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[var(--border)] hover:border-[#c9ced5]">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-[#1f2329] py-6 text-center text-xs text-[#9399a0] mt-4">
+        <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)] mt-4">
           © {an} AmCupon.ro ·{" "}
-          <Link href="/idei-cadouri" className="hover:text-[#ddf93c]">Idei Cadouri</Link>{" · "}
-          <Link href="/categorii/beauty" className="hover:text-[#ddf93c]">Categorie Beauty</Link>{" · "}
-          <Link href="/categorii" className="hover:text-[#ddf93c]">Categorii</Link>
+          <Link href="/idei-cadouri" className="hover:text-[var(--accent-text)]">Idei Cadouri</Link>{" · "}
+          <Link href="/categorii/beauty" className="hover:text-[var(--accent-text)]">Categorie Beauty</Link>{" · "}
+          <Link href="/categorii" className="hover:text-[var(--accent-text)]">Categorii</Link>
         </footer>
       </div>
     </>

@@ -116,30 +116,30 @@ export default function NewsletterPopup() {
       aria-modal="true"
       aria-label="Aboneaza-te la newsletter"
     >
-      <div className="bg-[#14181c] border border-[#1f2329] rounded-xl shadow-2xl w-full max-w-md overflow-hidden animate-in slide-in-from-bottom-4 duration-300">
+      <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl shadow-2xl w-full max-w-md overflow-hidden animate-in slide-in-from-bottom-4 duration-300">
 
         {/* Header */}
-        <div className="relative bg-[#06080b] overflow-hidden px-6 pt-6 pb-8 text-center">
+        <div className="relative bg-[var(--background)] overflow-hidden px-6 pt-6 pb-8 text-center">
           <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 80% at 50% 0%, rgba(13,148,136,0.25) 0%, transparent 70%)" }} />
           <button
             onClick={close}
             aria-label="Inchide"
-            className="absolute z-10 top-4 right-4 text-[#9399a0] hover:text-[#ffffff] transition-colors text-xl font-bold"
+            className="absolute z-10 top-4 right-4 text-[var(--text-muted)] hover:text-[var(--foreground)] transition-colors text-xl font-bold"
           >
             &#x2715;
           </button>
           <div className="relative z-10">
             <div className="text-4xl mb-2">&#127873;</div>
-            <h2 className="text-xl font-black mb-1 text-[#ffffff]">Codurile zilei, pe email</h2>
-            <p className="text-[#c9ced5] text-sm">
+            <h2 className="text-xl font-black mb-1 text-[var(--foreground)]">Codurile zilei, pe email</h2>
+            <p className="text-[var(--text-soft)] text-sm">
               Ofertele active de pe site, intr-un email pe zi &mdash; gratuit
             </p>
           </div>
         </div>
 
         {/* Beneficii */}
-        <div className="px-6 py-4 bg-[#14181c] border-b border-[#1f2329]">
-          <div className="flex flex-col gap-1.5 text-sm text-[#c9ced5]">
+        <div className="px-6 py-4 bg-[var(--surface)] border-b border-[var(--border)]">
+          <div className="flex flex-col gap-1.5 text-sm text-[var(--text-soft)]">
             {[
               "Oferte active pe categorii, cu codul scris in email",
               "Fara cont: doar adresa de email",
@@ -157,8 +157,8 @@ export default function NewsletterPopup() {
           {status === "success" ? (
             <div className="text-center py-4">
               <div className="text-4xl mb-2">&#127881;</div>
-              <p className="font-black text-[#ffffff] text-lg">Multumim!</p>
-              <p className="text-[#c9ced5] text-sm mt-1">
+              <p className="font-black text-[var(--foreground)] text-lg">Multumim!</p>
+              <p className="text-[var(--text-soft)] text-sm mt-1">
                 Vei primi cele mai bune oferte pe email.
               </p>
             </div>
@@ -170,7 +170,7 @@ export default function NewsletterPopup() {
                 onChange={(e) => { setEmail(e.target.value); setStatus("idle"); setErrMsg(""); }}
                 placeholder="adresa@email.ro"
                 required
-                className="w-full bg-[#1f2329] border-2 border-[#2a2f36] text-[#ffffff] rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#ddf93c] transition-colors placeholder:text-[#9399a0]"
+                className="w-full bg-[var(--surface-alt)] border-2 border-[var(--border-strong)] text-[var(--foreground)] rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[var(--accent-text)] transition-colors placeholder:text-[var(--text-muted)]"
               />
 
               {status === "error" && errMsg && (
@@ -185,9 +185,9 @@ export default function NewsletterPopup() {
                 {status === "loading" ? "Se trimite..." : "Vreau codurile pe email →"}
               </button>
 
-              <p className="text-xs text-[#9399a0] text-center">
+              <p className="text-xs text-[var(--text-muted)] text-center">
                 Prin abonare esti de acord cu{" "}
-                <Link href="/confidentialitate" className="underline hover:text-[#ddf93c]">
+                <Link href="/confidentialitate" className="underline hover:text-[var(--accent-text)]">
                   politica de confidentialitate
                 </Link>
               </p>

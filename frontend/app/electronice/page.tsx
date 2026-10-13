@@ -53,12 +53,12 @@ export default function ElectronicePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
-      <div className="min-h-screen bg-[#06080b]">
-        <nav className="bg-[#06080b] border-b border-[#1f2329]">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[#9399a0]">
-            <Link href="/" className="hover:text-[#ddf93c]">Acasă</Link>
+      <div className="min-h-screen bg-[var(--background)]">
+        <nav className="bg-[var(--background)] border-b border-[var(--border)]">
+          <div className="max-w-6xl mx-auto px-4 py-2.5 flex items-center gap-1 text-xs text-[var(--text-muted)]">
+            <Link href="/" className="hover:text-[var(--accent-text)]">Acasă</Link>
             <span className="mx-1">/</span>
-            <span className="text-[#c9ced5] font-medium">Electronice</span>
+            <span className="text-[var(--text-soft)] font-medium">Electronice</span>
           </div>
         </nav>
 
@@ -71,20 +71,20 @@ export default function ElectronicePage() {
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Telefoane","Laptopuri","TV 4K","Gaming","Căști","Smartwatch"].map(c => (
-                <span key={c} className="bg-[#1f2329] text-[#ffffff] text-sm font-semibold px-4 py-1.5 rounded-full border border-[#2a2f36]">{c}</span>
+                <span key={c} className="bg-[var(--surface-alt)] text-[var(--foreground)] text-sm font-semibold px-4 py-1.5 rounded-full border border-[var(--border-strong)]">{c}</span>
               ))}
             </div>
           </div>
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[#ffffff] mb-6 text-center">Ce găsești la electronice online</h2>
+          <h2 className="text-xl font-black text-[var(--foreground)] mb-6 text-center">Ce găsești la electronice online</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {AVANTAJE.map(a => (
-              <div key={a.titlu} className="bg-[#14181c] border border-[#1f2329] rounded-xl p-5">
+              <div key={a.titlu} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
                 <div className="text-3xl mb-2">{a.icon}</div>
-                <h3 className="font-bold text-[#ffffff] text-sm mb-1">{a.titlu}</h3>
-                <p className="text-xs text-[#c9ced5]">{a.desc}</p>
+                <h3 className="font-bold text-[var(--foreground)] text-sm mb-1">{a.titlu}</h3>
+                <p className="text-xs text-[var(--text-soft)]">{a.desc}</p>
               </div>
             ))}
           </div>
@@ -93,7 +93,7 @@ export default function ElectronicePage() {
         <section className="max-w-6xl mx-auto px-4 pb-10">
           <div className="flex items-center gap-3 mb-5">
             
-            <h2 className="text-xl font-black text-[#ffffff]">Magazine de electronice partenere</h2>
+            <h2 className="text-xl font-black text-[var(--foreground)]">Magazine de electronice partenere</h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {magazine.map((m) => (
@@ -112,20 +112,20 @@ export default function ElectronicePage() {
           limit={12}
         />
 
-        <section className="bg-[#14181c] border-t border-[#1f2329] py-10 px-4">
+        <section className="bg-[var(--surface)] border-t border-[var(--border)] py-10 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-[#ffffff] mb-5">Ghid: Electronice ieftine online în România</h2>
-            <div className="space-y-4 text-sm text-[#c9ced5] leading-relaxed">
+            <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Ghid: Electronice ieftine online în România</h2>
+            <div className="space-y-4 text-sm text-[var(--text-soft)] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Cele mai bune momente să cumperi</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Cele mai bune momente să cumperi</h3>
                 <p>Black Friday (noiembrie), campaniile de 11.11 și aniversările magazinelor. Telefoanele și laptopurile din generația anterioară se ieftinesc de obicei când apar modelele noi.</p>
               </div>
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Partenerii AmCupon la electronice</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Partenerii AmCupon la electronice</h3>
                 <p>{parteneriCategorie(NISA_CATEGORII.electronice, 6).length ? `${enumerare(parteneriCategorie(NISA_CATEGORII.electronice, 6))} și alte magazine partenere — ofertele lor active apar mai sus, pe cardurile magazinelor.` : "Ofertele magazinelor partenere apar mai sus, pe cardurile magazinelor."}</p>
               </div>
               <div>
-                <h3 className="font-bold text-[#ffffff] mb-1">Sfaturi economii</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Sfaturi economii</h3>
                 <p>Compară prețul aceluiași model (codul exact al produsului) în mai multe magazine înainte să cumperi. Dacă un partener are un cod activ, condițiile lui — inclusiv dacă se cumulează cu alte reduceri — sunt pe pagina magazinului.</p>
               </div>
             </div>
@@ -133,7 +133,7 @@ export default function ElectronicePage() {
         </section>
 
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[#c9ced5] mb-4">Exploreaza si alte categorii</h2>
+          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Exploreaza si alte categorii</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/gadgets", label: "📡 Gadgets" },
@@ -144,18 +144,18 @@ export default function ElectronicePage() {
               { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
             ].map(l => (
               <a key={l.href} href={l.href}
-                className="bg-[#14181c] hover:bg-[#1f2329] hover:text-[#c3dd2c] text-[#c9ced5] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[#1f2329] hover:border-[#c9ced5]">
+                className="bg-[var(--surface)] hover:bg-[var(--surface-alt)] hover:text-[var(--accent-text)] text-[var(--text-soft)] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[var(--border)] hover:border-[#c9ced5]">
                 {l.label}
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="border-t border-[#1f2329] py-6 text-center text-xs text-[#9399a0] mt-4">
+        <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)] mt-4">
           © {an} AmCupon.ro ·{" "}
-          <Link href="/gadgets" className="hover:text-[#ddf93c]">Gadgets</Link>{" · "}
-          <Link href="/farmacie" className="hover:text-[#ddf93c]">Farmacie</Link>{" · "}
-          <Link href="/categorii" className="hover:text-[#ddf93c]">Categorii</Link>
+          <Link href="/gadgets" className="hover:text-[var(--accent-text)]">Gadgets</Link>{" · "}
+          <Link href="/farmacie" className="hover:text-[var(--accent-text)]">Farmacie</Link>{" · "}
+          <Link href="/categorii" className="hover:text-[var(--accent-text)]">Categorii</Link>
         </footer>
       </div>
     </>

@@ -49,16 +49,16 @@ export default function NewsletterForm() {
   }
 
   return (
-    <div className="bg-[#14181c] rounded-xl border border-[#1f2329] overflow-hidden shadow-2xl mb-8">
+    <div className="bg-[var(--surface)] rounded-xl border border-[var(--border)] overflow-hidden shadow-2xl mb-8">
       {/* Beneficii */}
-      <div className="p-8 border-b border-[#1f2329]">
+      <div className="p-8 border-b border-[var(--border)]">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {BENEFICII.map(b => (
             <div key={b.titlu} className="flex items-start gap-3">
               <span className="text-2xl shrink-0">{b.icon}</span>
               <div>
-                <p className="font-bold text-[#ffffff] text-sm">{b.titlu}</p>
-                <p className="text-[#c9ced5] text-xs mt-0.5">{b.desc}</p>
+                <p className="font-bold text-[var(--foreground)] text-sm">{b.titlu}</p>
+                <p className="text-[var(--text-soft)] text-xs mt-0.5">{b.desc}</p>
               </div>
             </div>
           ))}
@@ -70,8 +70,8 @@ export default function NewsletterForm() {
         {status === "success" ? (
           <div className="text-center py-6">
             <div className="text-5xl mb-4">🎉</div>
-            <h2 className="text-2xl font-black text-[#ffffff] mb-2">Esti abonat!</h2>
-            <p className="text-[#c9ced5] mb-6">Vei primi cele mai bune coduri reducere direct in inbox.</p>
+            <h2 className="text-2xl font-black text-[var(--foreground)] mb-2">Esti abonat!</h2>
+            <p className="text-[var(--text-soft)] mb-6">Vei primi cele mai bune coduri reducere direct in inbox.</p>
             <Link href="/" className="inline-flex items-center gap-2 bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] font-bold px-6 py-3 rounded-xl transition-colors">
               Descopera ofertele de azi &rarr;
             </Link>
@@ -79,7 +79,7 @@ export default function NewsletterForm() {
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label htmlFor="email-nl" className="block text-sm font-semibold text-[#c9ced5] mb-2">
+              <label htmlFor="email-nl" className="block text-sm font-semibold text-[var(--text-soft)] mb-2">
                 Adresa ta de email
               </label>
               <input
@@ -89,7 +89,7 @@ export default function NewsletterForm() {
                 onChange={e => { setEmail(e.target.value); setStatus("idle"); setErrMsg(""); }}
                 placeholder="adresa@email.ro"
                 required
-                className="w-full bg-[#1f2329] border border-[#2a2f36] text-[#ffffff] rounded-xl px-4 py-3.5 text-base focus:outline-none focus:ring-2 focus:ring-[#ddf93c]/50 focus:border-[#ddf93c]/50 placeholder-[#9399a0] transition-all"
+                className="w-full bg-[var(--surface-alt)] border border-[var(--border-strong)] text-[var(--foreground)] rounded-xl px-4 py-3.5 text-base focus:outline-none focus:ring-2 focus:ring-[#ddf93c]/50 focus:border-[var(--accent-text)]/50 placeholder-[var(--text-muted)] transition-all"
               />
             </div>
             {status === "error" && errMsg && (
@@ -102,9 +102,9 @@ export default function NewsletterForm() {
             >
               {status === "loading" ? "Se proceseaza..." : "Aboneaza-ma gratuit →"}
             </button>
-            <p className="text-xs text-[#9399a0] text-center leading-relaxed">
+            <p className="text-xs text-[var(--text-muted)] text-center leading-relaxed">
               Prin abonare esti de acord cu{" "}
-              <Link href="/confidentialitate" className="text-[#ddf93c] hover:underline">politica de confidentialitate</Link>
+              <Link href="/confidentialitate" className="text-[var(--accent-text)] hover:underline">politica de confidentialitate</Link>
               . Dezabonare oricand cu un click.
             </p>
           </form>

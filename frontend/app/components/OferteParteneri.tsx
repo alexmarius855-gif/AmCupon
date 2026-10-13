@@ -32,7 +32,7 @@ function CardProdus({ p }: { p: ProdusFeed }) {
       href={p.url}
       target="_blank"
       rel="nofollow sponsored noopener noreferrer"
-      className="group flex flex-col bg-[#14181c] border border-[#1f2329] hover:border-[#3a4048] rounded-xl overflow-hidden transition-colors"
+      className="group flex flex-col bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--border-strong)] rounded-xl overflow-hidden transition-colors"
     >
       {/* overflow-hidden + h-full: fara ele, o poza inalta crestea cutia (aspect-ratio cedeaza in fata
           continutului) si cardurile de pe acelasi rand aveau inaltimi diferite — vazut pe mobil, 06.10. */}
@@ -41,15 +41,15 @@ function CardProdus({ p }: { p: ProdusFeed }) {
           // eslint-disable-next-line @next/next/no-img-element
           <img src={img} alt={titlu} loading="lazy" decoding="async" className="h-full w-full object-contain" />
         ) : (
-          <span className="text-2xl font-black text-[#9399a0]" aria-hidden="true">{magazin.charAt(0)}</span>
+          <span className="text-2xl font-black text-[var(--text-muted)]" aria-hidden="true">{magazin.charAt(0)}</span>
         )}
       </div>
       <div className="p-3 flex flex-col gap-1.5 flex-1">
-        <p className="text-[13px] leading-snug text-[#ffffff] line-clamp-2" title={titlu}>{titlu}</p>
-        <p className="text-xs text-[#9399a0]">la {magazin}</p>
+        <p className="text-[13px] leading-snug text-[var(--foreground)] line-clamp-2" title={titlu}>{titlu}</p>
+        <p className="text-xs text-[var(--text-muted)]">la {magazin}</p>
         {/* flex-wrap: pe mobil (2 coloane de ~150px) butonul trece sub pret, in loc sa rupa pretul in doua */}
         <div className="mt-auto flex flex-wrap items-center justify-between gap-x-2 gap-y-1.5 pt-1">
-          <span className="text-base font-black text-[#ddf93c] whitespace-nowrap">{pret(p.price as number)}</span>
+          <span className="text-base font-black text-[var(--accent-text)] whitespace-nowrap">{pret(p.price as number)}</span>
           <span className="shrink-0 text-xs font-bold text-[#0c1000] bg-[#ddf93c] group-hover:bg-[#c3dd2c] rounded-lg px-2.5 py-1 transition-colors">
             Vezi oferta
           </span>
@@ -78,10 +78,10 @@ export default function OferteParteneri({
 
   return (
     <section id="unde-cumperi" className="mt-10 scroll-mt-24" aria-labelledby="unde-cumperi-titlu">
-      <h2 id="unde-cumperi-titlu" className="text-xl md:text-2xl font-black text-[#ffffff] mb-2">
+      <h2 id="unde-cumperi-titlu" className="text-xl md:text-2xl font-black text-[var(--foreground)] mb-2">
         Unde găsești {numeTema} azi, {unul ? `la ${unul}` : "la magazinele partenere"}
       </h2>
-      <p className="text-sm text-[#c9ced5] leading-relaxed max-w-3xl">
+      <p className="text-sm text-[var(--text-soft)] leading-relaxed max-w-3xl">
         {unul
           ? `Azi am găsit ${cate(s.total, "produs", "produse")} în feed-ul magazinului partener ${unul}`
           : `Azi am găsit ${cate(s.total, "produs", "produse")} în feed-urile a ${cate(nrMag, "magazin partener", "magazine partenere")}`}
@@ -93,10 +93,10 @@ export default function OferteParteneri({
       {s.game.map((g) => (
         <div key={g.eticheta} className="mt-6">
           <div className="flex items-baseline justify-between gap-3 flex-wrap mb-3">
-            <h3 className="text-base font-black text-[#ffffff]">
-              {g.eticheta}: <span className="text-[#ddf93c]">{g.de_la === g.pana_la ? pret(g.de_la) : `${pret(g.de_la)} – ${pret(g.pana_la)}`}</span>
+            <h3 className="text-base font-black text-[var(--foreground)]">
+              {g.eticheta}: <span className="text-[var(--accent-text)]">{g.de_la === g.pana_la ? pret(g.de_la) : `${pret(g.de_la)} – ${pret(g.pana_la)}`}</span>
             </h3>
-            <span className="text-xs text-[#9399a0]">{cate(g.modele, "model", "modele")} în gama asta</span>
+            <span className="text-xs text-[var(--text-muted)]">{cate(g.modele, "model", "modele")} în gama asta</span>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
             {g.produse.map((p, i) => <CardProdus key={`${p.url}-${i}`} p={p} />)}
@@ -104,13 +104,13 @@ export default function OferteParteneri({
         </div>
       ))}
 
-      <div className="mt-8 bg-[#14181c] border border-[#1f2329] rounded-xl p-5">
-        <h3 className="text-base font-black text-[#ffffff] mb-3">
+      <div className="mt-8 bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
+        <h3 className="text-base font-black text-[var(--foreground)] mb-3">
           {unul ? `Magazinul partener cu ${numeTema}` : `Magazinele partenere cu ${numeTema}`}
         </h3>
         <table className="w-full text-sm">
           <thead>
-            <tr className="text-left text-xs text-[#9399a0]">
+            <tr className="text-left text-xs text-[var(--text-muted)]">
               <th className="py-2 font-semibold">Magazin</th>
               <th className="py-2 font-semibold text-right">Produse</th>
               <th className="py-2 font-semibold text-right pl-3">Prețuri</th>
@@ -118,14 +118,14 @@ export default function OferteParteneri({
           </thead>
           <tbody>
             {s.magazine.slice(0, 8).map((m) => (
-              <tr key={m.slug} className="border-t border-[#1f2329]">
+              <tr key={m.slug} className="border-t border-[var(--border)]">
                 <td className="py-2">
-                  <Link href={`/cod-reducere/${m.slug}`} className="font-semibold text-[#ffffff] hover:text-[#ddf93c] transition-colors">
+                  <Link href={`/cod-reducere/${m.slug}`} className="font-semibold text-[var(--foreground)] hover:text-[var(--accent-text)] transition-colors">
                     {numeAfisat(m.slug)}
                   </Link>
                 </td>
-                <td className="py-2 text-right text-[#c9ced5]">{m.nr}</td>
-                <td className="py-2 text-right text-[#c9ced5] pl-3 whitespace-nowrap">
+                <td className="py-2 text-right text-[var(--text-soft)]">{m.nr}</td>
+                <td className="py-2 text-right text-[var(--text-soft)] pl-3 whitespace-nowrap">
                   {m.min === m.max ? pret(m.min) : `${pret(m.min)} – ${pret(m.max)}`}
                 </td>
               </tr>
@@ -133,11 +133,11 @@ export default function OferteParteneri({
           </tbody>
         </table>
         {nrMag > 8 && (
-          <p className="text-xs text-[#9399a0] mt-2">Încă {cate(nrMag - 8, "magazin", "magazine")} cu mai puține produse.</p>
+          <p className="text-xs text-[var(--text-muted)] mt-2">Încă {cate(nrMag - 8, "magazin", "magazine")} cu mai puține produse.</p>
         )}
       </div>
 
-      <p className="text-xs text-[#9399a0] leading-relaxed mt-4 max-w-3xl">
+      <p className="text-xs text-[var(--text-muted)] leading-relaxed mt-4 max-w-3xl">
         Prețuri din feed-ul magazinelor, actualizate la {actualizat}. Prețul final, stocul și starea produsului (nou sau
         recondiționat) le vezi pe site-ul magazinului. Linkurile sunt afiliate: dacă cumperi, AmCupon primește un
         comision, iar prețul tău rămâne același.
