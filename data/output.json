@@ -916,6 +916,40 @@
     "ultima_verificare": "2026-10-13"
   },
   {
+    "magazin": "nadula.com",
+    "url": "https://www.nadula.com",
+    "url_afiliat": "https://nadula.sjv.io/c/7401119/1273329/15659",
+    "logo_url": "https://www.google.com/s2/favicons?domain=nadula.com&sz=128",
+    "categorie": "Marketplace",
+    "categorie_slug": "marketplace",
+    "comision": "Variabil",
+    "rank": null,
+    "scor_afiliere": 50,
+    "scor_final": 60.0,
+    "prioritate": "standard",
+    "canal_recomandat": "Content, SEO, Social",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 7,
+    "promotii": [
+      {
+        "nume": "Cozy Season Cooler Prices Sale Up To $70 Off With Code:Cool",
+        "descriere": "Nadula Hair Cozy Season Cooler Prices Sale Up To $70 Off With Code:Cool",
+        "cod_cupon": "",
+        "landing_page": "https://nadula.sjv.io/c/7401119/1273329/15659?u=https%3A%2F%2Fm.nadula.com",
+        "zile_ramase": 7,
+        "expira": "2026-10-20",
+        "sursa": "impact_deals_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "impact",
+    "descriere": "",
+    "ultima_verificare": "2026-10-13"
+  },
+  {
     "magazin": "klaiyihair.com",
     "url": "http://www.klaiyihair.com",
     "url_afiliat": "https://klaiyihair.pxf.io/c/7401119/1273341/15661",
@@ -2436,13 +2470,13 @@
     "ultima_verificare": "2026-10-13"
   },
   {
-    "magazin": "libris.ro",
-    "url": "https://www.libris.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9868/medium/9868.gif",
+    "magazin": "carturesti.ro",
+    "url": "https://carturesti.ro/",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2F",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11380/medium/11380.png",
     "categorie": "Cărți & Educație",
     "categorie_slug": "carti-educatie",
-    "comision": "8.0",
+    "comision": "9.0",
     "rank": 999,
     "scor_afiliere": 0,
     "prioritate": "neclasat",
@@ -2451,15 +2485,42 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 1,
+    "zile_ramase": 4,
     "promotii": [
       {
-        "nume": "Transport GRATUIT pentru ORICE colet, oriunde în țară ",
+        "nume": "Kilipir Merch Fandom",
         "descriere": null,
         "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Flp%2Ftransportgratuit",
-        "zile_ramase": 1,
-        "expira": "2026-10-14",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Foffer%2Fkilipir-merch-fandom-6642",
+        "zile_ramase": 17,
+        "expira": "2026-10-30",
+        "sursa": "2performant_api"
+      },
+      {
+        "nume": "Un plan de lectură cu rezultate pe măsură",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Foffer%2Fplan-de-lectura-cu-rezultate-pe-masura-6727",
+        "zile_ramase": 33,
+        "expira": "2026-11-15",
+        "sursa": "2performant_api"
+      },
+      {
+        "nume": "Săptămâna PSI Octombrie 2026",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Foffer%2Fsaptamana-psi-trei-2plus1-6721",
+        "zile_ramase": 4,
+        "expira": "2026-10-17",
+        "sursa": "2performant_api"
+      },
+      {
+        "nume": "Zilele muzicii clasice",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Foffer%2Fzilele-muzicii-clasice-6715",
+        "zile_ramase": 4,
+        "expira": "2026-10-17",
         "sursa": "2performant_api"
       }
     ],
@@ -2467,8 +2528,8 @@
     "platforma": "2performant",
     "ultima_verificare": "2026-10-13",
     "scor_final": 40.0,
-    "program_id": 628,
-    "unique_code": "9a6f02fef"
+    "program_id": 1677,
+    "unique_code": "07b5f0fed"
   },
   {
     "magazin": "litera.ro",
@@ -2506,59 +2567,6 @@
     "unique_code": "0a8a2c4d9"
   },
   {
-    "magazin": "liki24.ro",
-    "url": "https://liki24.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11202/medium/11202.jpeg",
-    "categorie": "Sănătate & Farmacie",
-    "categorie_slug": "sanatate",
-    "comision": "3.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 1,
-    "promotii": [
-      {
-        "nume": "10% reducere la produsele Essentiale",
-        "descriere": "",
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fsearch%2Fessentiale%2F",
-        "zile_ramase": 1,
-        "expira": "2026-10-14",
-        "sursa": "2performant_api"
-      },
-      {
-        "nume": "10% reducere la produsele Enterogermina",
-        "descriere": "",
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fsearch%2Fenterogermina%2F",
-        "zile_ramase": 1,
-        "expira": "2026-10-14",
-        "sursa": "2performant_api"
-      },
-      {
-        "nume": "10% reducere la produsele Dulcolax",
-        "descriere": "",
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fsearch%2Fdulcolax%2F",
-        "zile_ramase": 1,
-        "expira": "2026-10-14",
-        "sursa": "2performant_api"
-      }
-    ],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-13",
-    "scor_final": 40.0,
-    "program_id": 10181,
-    "unique_code": "7818b420c"
-  },
-  {
     "magazin": "librex.ro",
     "url": "https://www.librex.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.librex.ro",
@@ -2594,111 +2602,6 @@
     "unique_code": "3085d2457"
   },
   {
-    "magazin": "petit-bebe.ro",
-    "url": "https://petit-bebe.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fpetit-bebe.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11672/medium/11672.jpg",
-    "categorie": "Copii & Familie",
-    "categorie_slug": "copii",
-    "comision": "8.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 1,
-    "promotii": [
-      {
-        "nume": "Cozy Autumn Days – pana la 33% reducere pentru bebelus 🍂",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.petit-bebe.ro%2Fcozy-autumn-days-cu-pana-la-33-reducere.html",
-        "zile_ramase": 1,
-        "expira": "2026-10-14",
-        "sursa": "2performant_api"
-      }
-    ],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-13",
-    "scor_final": 40.0,
-    "program_id": 10512,
-    "unique_code": "44ad2ee96"
-  },
-  {
-    "magazin": "edituraparalela45.ro",
-    "url": "https://www.edituraparalela45.ro/",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.edituraparalela45.ro%2F",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11499/medium/11499.png",
-    "categorie": "Cărți & Educație",
-    "categorie_slug": "carti-educatie",
-    "comision": "10.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 1,
-    "promotii": [
-      {
-        "nume": "Back to School 2026 – Cele mai căutate cărți pentru școală | Paralela 45",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.edituraparalela45.ro%2Fback-to-school",
-        "zile_ramase": 1,
-        "expira": "2026-10-14",
-        "sursa": "2performant_api"
-      }
-    ],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-13",
-    "scor_final": 40.0,
-    "program_id": 10420,
-    "unique_code": "768232f44"
-  },
-  {
-    "magazin": "optiblu.ro",
-    "url": "https://www.optiblu.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.optiblu.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13436/medium/13436.png",
-    "categorie": "Fashion",
-    "categorie_slug": "fashion",
-    "comision": "10.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 1,
-    "promotii": [
-      {
-        "nume": "2026.10 Tu alegi reducerea",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.optiblu.ro%2F",
-        "zile_ramase": 1,
-        "expira": "2026-10-14",
-        "sursa": "2performant_api"
-      }
-    ],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-13",
-    "scor_final": 40.0,
-    "program_id": 5277,
-    "unique_code": "f6b801b06"
-  },
-  {
     "magazin": "estel.ro",
     "url": "https://estel.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Festel.ro",
@@ -2732,6 +2635,41 @@
     "scor_final": 40.0,
     "program_id": 10085,
     "unique_code": "4ef912004"
+  },
+  {
+    "magazin": "centini.ro",
+    "url": "https://www.centini.ro/",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.centini.ro%2F",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14207/medium/14207.png",
+    "categorie": "Fashion",
+    "categorie_slug": "fashion",
+    "comision": "10.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 4,
+    "promotii": [
+      {
+        "nume": "Reduceri de până la 30% la blugi și pantaloni bărbătești",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.centini.ro%2Fcatalog%2Fblugi-7",
+        "zile_ramase": 4,
+        "expira": "2026-10-17",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-13",
+    "scor_final": 40.0,
+    "program_id": 12887,
+    "unique_code": "ebb7fb28d"
   },
   {
     "magazin": "aronia-charlottenburg.ro",
@@ -2837,68 +2775,6 @@
     "scor_final": 30.0,
     "program_id": 633,
     "unique_code": "7e537fc0d"
-  },
-  {
-    "magazin": "carturesti.ro",
-    "url": "https://carturesti.ro/",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2F",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11380/medium/11380.png",
-    "categorie": "Cărți & Educație",
-    "categorie_slug": "carti-educatie",
-    "comision": "9.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 4,
-    "promotii": [
-      {
-        "nume": "Kilipir Merch Fandom",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Foffer%2Fkilipir-merch-fandom-6642",
-        "zile_ramase": 17,
-        "expira": "2026-10-30",
-        "sursa": "2performant_api"
-      },
-      {
-        "nume": "Un plan de lectură cu rezultate pe măsură",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Foffer%2Fplan-de-lectura-cu-rezultate-pe-masura-6727",
-        "zile_ramase": 33,
-        "expira": "2026-11-15",
-        "sursa": "2performant_api"
-      },
-      {
-        "nume": "Săptămâna PSI Octombrie 2026",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Foffer%2Fsaptamana-psi-trei-2plus1-6721",
-        "zile_ramase": 4,
-        "expira": "2026-10-17",
-        "sursa": "2performant_api"
-      },
-      {
-        "nume": "Zilele muzicii clasice",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Foffer%2Fzilele-muzicii-clasice-6715",
-        "zile_ramase": 4,
-        "expira": "2026-10-17",
-        "sursa": "2performant_api"
-      }
-    ],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-13",
-    "scor_final": 30.0,
-    "program_id": 1677,
-    "unique_code": "07b5f0fed"
   },
   {
     "magazin": "noriel.ro",
@@ -3130,6 +3006,41 @@
     "unique_code": "d19151f4f"
   },
   {
+    "magazin": "libris.ro",
+    "url": "https://www.libris.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9868/medium/9868.gif",
+    "categorie": "Cărți & Educație",
+    "categorie_slug": "carti-educatie",
+    "comision": "8.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 1,
+    "promotii": [
+      {
+        "nume": "Transport GRATUIT pentru ORICE colet, oriunde în țară ",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Flp%2Ftransportgratuit",
+        "zile_ramase": 1,
+        "expira": "2026-10-14",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-13",
+    "scor_final": 30.0,
+    "program_id": 628,
+    "unique_code": "9a6f02fef"
+  },
+  {
     "magazin": "regata.ro",
     "url": "https://regata.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fregata.ro%2F",
@@ -3216,6 +3127,41 @@
     "scor_final": 30.0,
     "program_id": 9812,
     "unique_code": "5abfb2edd"
+  },
+  {
+    "magazin": "aosom.ro",
+    "url": "https://www.aosom.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.aosom.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9145/medium/9145.png",
+    "categorie": "Casă & Grădină",
+    "categorie_slug": "casa-gradina",
+    "comision": "5.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 15,
+    "promotii": [
+      {
+        "nume": "COMANDA TA, ÎNFRICOȘĂTOR DE BUNĂ",
+        "descriere": "",
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.aosom.ro%2Factivity%2Fcomanda-ta-infricosator-de-buna",
+        "zile_ramase": 15,
+        "expira": "2026-10-28",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-13",
+    "scor_final": 30.0,
+    "program_id": 8427,
+    "unique_code": "573b44539"
   },
   {
     "magazin": "manukashop.ro",
@@ -3365,6 +3311,59 @@
     "scor_final": 30.0,
     "program_id": 1270,
     "unique_code": "94d225abf"
+  },
+  {
+    "magazin": "liki24.ro",
+    "url": "https://liki24.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11202/medium/11202.jpeg",
+    "categorie": "Sănătate & Farmacie",
+    "categorie_slug": "sanatate",
+    "comision": "3.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 1,
+    "promotii": [
+      {
+        "nume": "10% reducere la produsele Essentiale",
+        "descriere": "",
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fsearch%2Fessentiale%2F",
+        "zile_ramase": 1,
+        "expira": "2026-10-14",
+        "sursa": "2performant_api"
+      },
+      {
+        "nume": "10% reducere la produsele Enterogermina",
+        "descriere": "",
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fsearch%2Fenterogermina%2F",
+        "zile_ramase": 1,
+        "expira": "2026-10-14",
+        "sursa": "2performant_api"
+      },
+      {
+        "nume": "10% reducere la produsele Dulcolax",
+        "descriere": "",
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fliki24.ro%2Fsearch%2Fdulcolax%2F",
+        "zile_ramase": 1,
+        "expira": "2026-10-14",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-13",
+    "scor_final": 30.0,
+    "program_id": 10181,
+    "unique_code": "7818b420c"
   },
   {
     "magazin": "autobob.ro",
@@ -3834,41 +3833,6 @@
     "unique_code": "2c9f51768"
   },
   {
-    "magazin": "ookee.ro",
-    "url": "https://www.ookee.ro/",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2F",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13572/medium/13572.jpg",
-    "categorie": "Copii & Familie",
-    "categorie_slug": "copii",
-    "comision": "5.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 0,
-    "promotii": [
-      {
-        "nume": "Toamna promotiilor - Ookee.ro",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2F3531-toamna-promotiilor",
-        "zile_ramase": 0,
-        "expira": "2026-10-13",
-        "sursa": "2performant_api"
-      }
-    ],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-13",
-    "scor_final": 30.0,
-    "program_id": 624,
-    "unique_code": "ac2bffaf7"
-  },
-  {
     "magazin": "happypets.ro",
     "url": "https://happypets.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fhappypets.ro",
@@ -4247,6 +4211,41 @@
     "unique_code": "48a30b7c9"
   },
   {
+    "magazin": "petit-bebe.ro",
+    "url": "https://petit-bebe.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fpetit-bebe.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11672/medium/11672.jpg",
+    "categorie": "Copii & Familie",
+    "categorie_slug": "copii",
+    "comision": "8.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 1,
+    "promotii": [
+      {
+        "nume": "Cozy Autumn Days – pana la 33% reducere pentru bebelus 🍂",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.petit-bebe.ro%2Fcozy-autumn-days-cu-pana-la-33-reducere.html",
+        "zile_ramase": 1,
+        "expira": "2026-10-14",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-13",
+    "scor_final": 30.0,
+    "program_id": 10512,
+    "unique_code": "44ad2ee96"
+  },
+  {
     "magazin": "brainmarket.ro",
     "url": "https://www.brainmarket.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.brainmarket.ro%2F",
@@ -4280,6 +4279,41 @@
     "scor_final": 30.0,
     "program_id": 13042,
     "unique_code": "0cc892879"
+  },
+  {
+    "magazin": "edituraparalela45.ro",
+    "url": "https://www.edituraparalela45.ro/",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.edituraparalela45.ro%2F",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11499/medium/11499.png",
+    "categorie": "Cărți & Educație",
+    "categorie_slug": "carti-educatie",
+    "comision": "10.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 1,
+    "promotii": [
+      {
+        "nume": "Back to School 2026 – Cele mai căutate cărți pentru școală | Paralela 45",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.edituraparalela45.ro%2Fback-to-school",
+        "zile_ramase": 1,
+        "expira": "2026-10-14",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-13",
+    "scor_final": 30.0,
+    "program_id": 10420,
+    "unique_code": "768232f44"
   },
   {
     "magazin": "curteaveche.ro",
@@ -4633,6 +4667,41 @@
     "unique_code": "f6cf397df"
   },
   {
+    "magazin": "optiblu.ro",
+    "url": "https://www.optiblu.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.optiblu.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13436/medium/13436.png",
+    "categorie": "Fashion",
+    "categorie_slug": "fashion",
+    "comision": "10.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 1,
+    "promotii": [
+      {
+        "nume": "2026.10 Tu alegi reducerea",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.optiblu.ro%2F",
+        "zile_ramase": 1,
+        "expira": "2026-10-14",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-13",
+    "scor_final": 30.0,
+    "program_id": 5277,
+    "unique_code": "f6b801b06"
+  },
+  {
     "magazin": "yves-rocher.ro",
     "url": "https://www.yves-rocher.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.yves-rocher.ro",
@@ -4912,41 +4981,6 @@
     "scor_final": 30.0,
     "program_id": 8778,
     "unique_code": "751e7a992"
-  },
-  {
-    "magazin": "centini.ro",
-    "url": "https://www.centini.ro/",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.centini.ro%2F",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14207/medium/14207.png",
-    "categorie": "Fashion",
-    "categorie_slug": "fashion",
-    "comision": "10.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 4,
-    "promotii": [
-      {
-        "nume": "Reduceri de până la 30% la blugi și pantaloni bărbătești",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.centini.ro%2Fcatalog%2Fblugi-7",
-        "zile_ramase": 4,
-        "expira": "2026-10-17",
-        "sursa": "2performant_api"
-      }
-    ],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-13",
-    "scor_final": 30.0,
-    "program_id": 12887,
-    "unique_code": "ebb7fb28d"
   },
   {
     "magazin": "atelier49.ro",
@@ -8497,30 +8531,6 @@
     "promotii": [],
     "exclusiv": false,
     "platforma": "2performant",
-    "ultima_verificare": "2026-10-13"
-  },
-  {
-    "magazin": "nadula.com",
-    "url": "https://www.nadula.com",
-    "url_afiliat": "https://nadula.sjv.io/c/7401119/1273329/15659",
-    "logo_url": "https://www.google.com/s2/favicons?domain=nadula.com&sz=128",
-    "categorie": "Marketplace",
-    "categorie_slug": "marketplace",
-    "comision": "Variabil",
-    "rank": null,
-    "scor_afiliere": 50,
-    "scor_final": 60.0,
-    "prioritate": "standard",
-    "canal_recomandat": "Content, SEO, Social",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "impact",
-    "descriere": "",
     "ultima_verificare": "2026-10-13"
   },
   {
@@ -16662,6 +16672,31 @@
     "unique_code": "704cb0cb9"
   },
   {
+    "magazin": "parmashop.ro",
+    "url": "https://parmashop.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fparmashop.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13304/medium/13304.jpg",
+    "categorie": "Mâncare & Băuturi",
+    "categorie_slug": "mancare-bauturi",
+    "comision": "7.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-13",
+    "scor_final": 0.0,
+    "program_id": 11817,
+    "unique_code": "bc660cd87"
+  },
+  {
     "magazin": "gave.ro",
     "url": "https://gave.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgave.ro",
@@ -16735,31 +16770,6 @@
     "scor_final": 0.0,
     "program_id": 4610,
     "unique_code": "e661a4b76"
-  },
-  {
-    "magazin": "aosom.ro",
-    "url": "https://www.aosom.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.aosom.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9145/medium/9145.png",
-    "categorie": "Casă & Grădină",
-    "categorie_slug": "casa-gradina",
-    "comision": "5.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-13",
-    "scor_final": 0.0,
-    "program_id": 8427,
-    "unique_code": "573b44539"
   },
   {
     "magazin": "dehaine.ro",
@@ -17585,6 +17595,31 @@
     "scor_final": 0.0,
     "program_id": 12057,
     "unique_code": "0e6d42a6f"
+  },
+  {
+    "magazin": "ookee.ro",
+    "url": "https://www.ookee.ro/",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2F",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13572/medium/13572.jpg",
+    "categorie": "Copii & Familie",
+    "categorie_slug": "copii",
+    "comision": "5.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-13",
+    "scor_final": 0.0,
+    "program_id": 624,
+    "unique_code": "ac2bffaf7"
   },
   {
     "magazin": "a2t.ro",
@@ -19885,6 +19920,31 @@
     "scor_final": 0.0,
     "program_id": 10241,
     "unique_code": "95ff9b01a"
+  },
+  {
+    "magazin": "ada-shoes.ro",
+    "url": "https://ada-shoes.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fada-shoes.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/12349/medium/12349.jpg",
+    "categorie": "Fashion",
+    "categorie_slug": "fashion",
+    "comision": "8.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-13",
+    "scor_final": 0.0,
+    "program_id": 10992,
+    "unique_code": "81a821097"
   },
   {
     "magazin": "lacanistra.ro",
@@ -25260,31 +25320,6 @@
     "scor_final": 0.0,
     "program_id": 12338,
     "unique_code": "f5825faa4"
-  },
-  {
-    "magazin": "rikingdom.com",
-    "url": "https://rikingdom.com",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Frikingdom.com",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13787/medium/13787.jpg",
-    "categorie": "Sport & Fitness",
-    "categorie_slug": "sport",
-    "comision": "10.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-13",
-    "scor_final": 0.0,
-    "program_id": 12460,
-    "unique_code": "20de62398"
   },
   {
     "magazin": "promotionalprint.ro",

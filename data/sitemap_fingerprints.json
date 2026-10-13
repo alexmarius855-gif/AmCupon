@@ -75,6 +75,10 @@
   "fp": "41053be4ea5d27b5",
   "data": "2026-10-01"
  },
+ "/cod-reducere/nadula.com": {
+  "fp": "ac651616be030844",
+  "data": "2026-10-13"
+ },
  "/cod-reducere/klaiyihair.com": {
   "fp": "cd9e47547296c733",
   "data": "2026-10-09"
@@ -199,37 +203,25 @@
   "fp": "d3888466aa8a69bc",
   "data": "2026-10-07"
  },
- "/cod-reducere/libris.ro": {
-  "fp": "022f7b32f46aea78",
+ "/cod-reducere/carturesti.ro": {
+  "fp": "936994e6902b09f1",
   "data": "2026-10-13"
  },
  "/cod-reducere/litera.ro": {
   "fp": "8b6f6e8db309366e",
   "data": "2026-10-13"
  },
- "/cod-reducere/liki24.ro": {
-  "fp": "e8e9de85f2062be7",
-  "data": "2026-10-12"
- },
  "/cod-reducere/librex.ro": {
   "fp": "6f7dc8c0ec0489bb",
   "data": "2026-10-13"
  },
- "/cod-reducere/petit-bebe.ro": {
-  "fp": "0c5d9e2004bf7610",
-  "data": "2026-10-10"
- },
- "/cod-reducere/edituraparalela45.ro": {
-  "fp": "8b8bb6511954813f",
-  "data": "2026-10-12"
- },
- "/cod-reducere/optiblu.ro": {
-  "fp": "e96bc84504625a56",
-  "data": "2026-10-13"
- },
  "/cod-reducere/estel.ro": {
-  "fp": "c3c4e3735f353280",
+  "fp": "1c04db2c78fbc6bd",
   "data": "2026-10-13"
+ },
+ "/cod-reducere/centini.ro": {
+  "fp": "8bc19e2ae8dc2cd2",
+  "data": "2026-10-12"
  },
  "/cod-reducere/aronia-charlottenburg.ro": {
   "fp": "f33759293039ff54",
@@ -240,16 +232,12 @@
   "data": "2026-10-12"
  },
  "/cod-reducere/otter.ro": {
-  "fp": "fb04facdded9a131",
-  "data": "2026-10-12"
- },
- "/cod-reducere/carturesti.ro": {
-  "fp": "936994e6902b09f1",
+  "fp": "bce4449fe6a7a6fe",
   "data": "2026-10-13"
  },
  "/cod-reducere/noriel.ro": {
-  "fp": "687919a9127346ed",
-  "data": "2026-10-12"
+  "fp": "a1bc1f7c4f4fc46e",
+  "data": "2026-10-13"
  },
  "/cod-reducere/librarie.net": {
   "fp": "a4c5d34f6243a210",
@@ -267,12 +255,20 @@
   "fp": "8944239fab70d531",
   "data": "2026-10-11"
  },
+ "/cod-reducere/libris.ro": {
+  "fp": "022f7b32f46aea78",
+  "data": "2026-10-13"
+ },
  "/cod-reducere/regata.ro": {
   "fp": "7c0fd2561967983c",
   "data": "2026-10-10"
  },
  "/cod-reducere/expomob.ro": {
-  "fp": "039bc5adfab221bf",
+  "fp": "8cede09d1a9b2862",
+  "data": "2026-10-13"
+ },
+ "/cod-reducere/aosom.ro": {
+  "fp": "d99b6e28c1d3aba1",
   "data": "2026-10-13"
  },
  "/cod-reducere/manukashop.ro": {
@@ -280,15 +276,19 @@
   "data": "2026-10-07"
  },
  "/cod-reducere/doctorshield.ro": {
-  "fp": "fd6f572b19c9bb9c",
-  "data": "2026-10-12"
+  "fp": "4ad1026d5f7f255f",
+  "data": "2026-10-13"
  },
  "/cod-reducere/moftcollection.ro": {
-  "fp": "f0de013f0bd058d7",
-  "data": "2026-10-11"
+  "fp": "88381b926738a883",
+  "data": "2026-10-13"
  },
  "/cod-reducere/apiland.ro": {
   "fp": "fc3be3f0fd2b6c62",
+  "data": "2026-10-12"
+ },
+ "/cod-reducere/liki24.ro": {
+  "fp": "e8e9de85f2062be7",
   "data": "2026-10-12"
  },
  "/cod-reducere/autobob.ro": {
@@ -304,8 +304,8 @@
   "data": "2026-10-13"
  },
  "/cod-reducere/mobidea.ro": {
-  "fp": "c2731d3264d78643",
-  "data": "2026-10-10"
+  "fp": "debcc8b1dd75838f",
+  "data": "2026-10-13"
  },
  "/cod-reducere/somnart.ro": {
   "fp": "ff1bf4c0e9bf46a4",
@@ -331,28 +331,24 @@
   "fp": "6f018d70edc91273",
   "data": "2026-10-13"
  },
- "/cod-reducere/ookee.ro": {
-  "fp": "c76d9f15bb6926bd",
-  "data": "2026-10-12"
- },
  "/cod-reducere/happypets.ro": {
-  "fp": "98cc4bb87f1482cb",
+  "fp": "5a3907bce75ef51b",
   "data": "2026-10-13"
  },
  "/cod-reducere/edituracorint.ro": {
-  "fp": "11c97012e6a1e65e",
+  "fp": "012d650085317f7c",
   "data": "2026-10-13"
  },
  "/cod-reducere/femieko.ro": {
-  "fp": "38a1a97a460d3069",
+  "fp": "6f7d716860698963",
   "data": "2026-10-13"
  },
  "/cod-reducere/nemira.ro": {
-  "fp": "9a500d8d4b8448f4",
-  "data": "2026-10-11"
+  "fp": "e55915ffea7bad41",
+  "data": "2026-10-13"
  },
  "/cod-reducere/fara-daunatori.ro": {
-  "fp": "5ff43064831b3e8a",
+  "fp": "46b0d6f0f359a2c9",
   "data": "2026-10-13"
  },
  "/cod-reducere/prestigehome.ro": {
@@ -368,11 +364,19 @@
   "data": "2026-10-10"
  },
  "/cod-reducere/obio.ro": {
-  "fp": "6135aeace5ed89cf",
-  "data": "2026-10-12"
+  "fp": "f6f8a22ff0be8e7b",
+  "data": "2026-10-13"
+ },
+ "/cod-reducere/petit-bebe.ro": {
+  "fp": "0c5d9e2004bf7610",
+  "data": "2026-10-10"
  },
  "/cod-reducere/brainmarket.ro": {
   "fp": "f512ec55e2b841fa",
+  "data": "2026-10-12"
+ },
+ "/cod-reducere/edituraparalela45.ro": {
+  "fp": "8b8bb6511954813f",
   "data": "2026-10-12"
  },
  "/cod-reducere/curteaveche.ro": {
@@ -384,15 +388,15 @@
   "data": "2026-10-13"
  },
  "/cod-reducere/atomico.ro": {
-  "fp": "72d33a64e52749f7",
+  "fp": "26f34eac0db0bde7",
   "data": "2026-10-13"
  },
  "/cod-reducere/editura-arthur.ro": {
-  "fp": "c7e1c61cd3f1ea11",
+  "fp": "6f2db1160f678df9",
   "data": "2026-10-13"
  },
  "/cod-reducere/e-potion.ro": {
-  "fp": "4cc4110cd0fa0342",
+  "fp": "cfe16808ee9c4c89",
   "data": "2026-10-13"
  },
  "/cod-reducere/zandra.ro": {
@@ -411,6 +415,10 @@
   "fp": "88e734361c05eb00",
   "data": "2026-10-08"
  },
+ "/cod-reducere/optiblu.ro": {
+  "fp": "e96bc84504625a56",
+  "data": "2026-10-13"
+ },
  "/cod-reducere/yves-rocher.ro": {
   "fp": "8790ca16ec66e78e",
   "data": "2026-10-12"
@@ -424,8 +432,8 @@
   "data": "2026-10-08"
  },
  "/cod-reducere/davopro.ro": {
-  "fp": "7ece789cfb1593bf",
-  "data": "2026-10-12"
+  "fp": "88b5160f52793464",
+  "data": "2026-10-13"
  },
  "/cod-reducere/vidaxl.bg": {
   "fp": "5f37c0ba4a761696",
@@ -437,10 +445,6 @@
  },
  "/cod-reducere/maranc.ro": {
   "fp": "56c2aa11d833ffd0",
-  "data": "2026-10-12"
- },
- "/cod-reducere/centini.ro": {
-  "fp": "8bc19e2ae8dc2cd2",
   "data": "2026-10-12"
  },
  "/cod-reducere/atelier49.ro": {
@@ -756,36 +760,36 @@
   "data": "2026-08-16"
  },
  "/cod-reducere/inpuff.ro": {
-  "fp": "0e2b7d0c704167a6",
-  "data": "2026-10-12"
+  "fp": "66b55519a41df040",
+  "data": "2026-10-13"
  },
  "/cod-reducere/foglia.ro": {
-  "fp": "b1ae24002beb5a3c",
+  "fp": "230d2c1208567347",
   "data": "2026-10-13"
  },
  "/cod-reducere/dyfashion.ro": {
-  "fp": "ae999499f08acb7b",
-  "data": "2026-10-12"
+  "fp": "7cefe1fc882b4e77",
+  "data": "2026-10-13"
  },
  "/cod-reducere/various-brands.ro": {
   "fp": "0e2b7d0c704167a6",
   "data": "2026-10-08"
  },
  "/cod-reducere/originals.ro": {
-  "fp": "66b55519a41df040",
-  "data": "2026-10-12"
+  "fp": "0e2b7d0c704167a6",
+  "data": "2026-10-13"
  },
  "/cod-reducere/sofiline.ro": {
   "fp": "ae999499f08acb7b",
   "data": "2026-10-08"
  },
  "/cod-reducere/gameology.ro": {
-  "fp": "0e2b7d0c704167a6",
+  "fp": "66b55519a41df040",
   "data": "2026-10-13"
  },
  "/cod-reducere/nurio.ro": {
-  "fp": "e5a3502e02935561",
-  "data": "2026-10-12"
+  "fp": "9d42459097650bb4",
+  "data": "2026-10-13"
  },
  "/cod-reducere/aimer.com": {
   "fp": "e80bf72baffd1929",
@@ -978,10 +982,6 @@
  "/cod-reducere/jollymag.ro": {
   "fp": "219b5781416979a1",
   "data": "2026-10-12"
- },
- "/cod-reducere/nadula.com": {
-  "fp": "bbcad4ad79bfc25e",
-  "data": "2026-10-11"
  },
  "/cod-reducere/abelssoft.de": {
   "fp": "af5bf47d6d94ee3d",
@@ -1232,15 +1232,15 @@
   "data": "2026-08-16"
  },
  "/cod-reducere/farmec.ro": {
-  "fp": "b1ae24002beb5a3c",
+  "fp": "230d2c1208567347",
   "data": "2026-10-13"
  },
  "/cod-reducere/fera.ro": {
-  "fp": "2de41be04798ac34",
+  "fp": "2f7cb785d68bedc2",
   "data": "2026-10-13"
  },
  "/cod-reducere/herbagetica.ro": {
-  "fp": "42c20a4b44b72e21",
+  "fp": "86df5e968392f3cc",
   "data": "2026-10-13"
  },
  "/cod-reducere/nobilacasa.ro": {
@@ -2204,8 +2204,8 @@
   "data": "2026-08-16"
  },
  "/cod-reducere/mobilalaguna.ro": {
-  "fp": "c7043a0c227b4704",
-  "data": "2026-10-10"
+  "fp": "0491901d52fc9d14",
+  "data": "2026-10-13"
  },
  "/cod-reducere/sevensins.ro": {
   "fp": "ae999499f08acb7b",
@@ -2244,7 +2244,7 @@
   "data": "2026-10-12"
  },
  "/cod-reducere/fornello.ro": {
-  "fp": "0491901d52fc9d14",
+  "fp": "c7043a0c227b4704",
   "data": "2026-10-13"
  },
  "/cod-reducere/bazarulonline.ro": {
@@ -2252,8 +2252,8 @@
   "data": "2026-10-12"
  },
  "/cod-reducere/nailshop.ro": {
-  "fp": "230d2c1208567347",
-  "data": "2026-10-11"
+  "fp": "b1ae24002beb5a3c",
+  "data": "2026-10-13"
  },
  "/cod-reducere/petmax.ro": {
   "fp": "2de41be04798ac34",
@@ -2264,23 +2264,23 @@
   "data": "2026-10-10"
  },
  "/cod-reducere/micul-meserias.ro": {
-  "fp": "c7043a0c227b4704",
-  "data": "2026-10-10"
+  "fp": "0491901d52fc9d14",
+  "data": "2026-10-13"
  },
  "/cod-reducere/bsgmag.ro": {
   "fp": "fc706a7f43af5b2c",
   "data": "2026-10-11"
  },
  "/cod-reducere/mxenduro.ro": {
-  "fp": "e5d2c018888051f6",
-  "data": "2026-10-11"
+  "fp": "39fcaf9efa1df171",
+  "data": "2026-10-13"
  },
  "/cod-reducere/petmart.ro": {
   "fp": "2de41be04798ac34",
   "data": "2026-10-10"
  },
  "/cod-reducere/fragranza.ro": {
-  "fp": "b1ae24002beb5a3c",
+  "fp": "230d2c1208567347",
   "data": "2026-10-13"
  },
  "/cod-reducere/spy-shop.ro": {
@@ -2288,8 +2288,8 @@
   "data": "2026-10-08"
  },
  "/cod-reducere/ozone.ro": {
-  "fp": "66b55519a41df040",
-  "data": "2026-10-12"
+  "fp": "0e2b7d0c704167a6",
+  "data": "2026-10-13"
  },
  "/cod-reducere/intimax.ro": {
   "fp": "bbcad4ad79bfc25e",
@@ -2308,7 +2308,7 @@
   "data": "2026-10-12"
  },
  "/cod-reducere/gryxx.ro": {
-  "fp": "ae999499f08acb7b",
+  "fp": "7cefe1fc882b4e77",
   "data": "2026-10-13"
  },
  "/cod-reducere/autoeco.ro": {
@@ -2316,8 +2316,8 @@
   "data": "2026-10-12"
  },
  "/cod-reducere/nichiduta.ro": {
-  "fp": "e5a3502e02935561",
-  "data": "2026-10-12"
+  "fp": "9d42459097650bb4",
+  "data": "2026-10-13"
  },
  "/cod-reducere/teilor.ro": {
   "fp": "bcb41f99c59b7d4c",
@@ -2331,8 +2331,12 @@
   "fp": "0491901d52fc9d14",
   "data": "2026-10-12"
  },
+ "/cod-reducere/parmashop.ro": {
+  "fp": "33a53ee42ef80b88",
+  "data": "2026-10-13"
+ },
  "/cod-reducere/gave.ro": {
-  "fp": "0e2b7d0c704167a6",
+  "fp": "66b55519a41df040",
   "data": "2026-10-13"
  },
  "/cod-reducere/pentruanimale.ro": {
@@ -2343,20 +2347,16 @@
   "fp": "c7043a0c227b4704",
   "data": "2026-10-13"
  },
- "/cod-reducere/aosom.ro": {
-  "fp": "c7043a0c227b4704",
-  "data": "2026-10-13"
- },
  "/cod-reducere/dehaine.ro": {
-  "fp": "ae999499f08acb7b",
-  "data": "2026-10-12"
+  "fp": "7cefe1fc882b4e77",
+  "data": "2026-10-13"
  },
  "/cod-reducere/infinitelove.ro": {
   "fp": "230d2c1208567347",
   "data": "2026-10-12"
  },
  "/cod-reducere/ihunt.ro": {
-  "fp": "0491901d52fc9d14",
+  "fp": "c7043a0c227b4704",
   "data": "2026-10-13"
  },
  "/cod-reducere/erotic24.ro": {
@@ -2364,8 +2364,8 @@
   "data": "2026-08-16"
  },
  "/cod-reducere/notino.ro": {
-  "fp": "230d2c1208567347",
-  "data": "2026-10-12"
+  "fp": "b1ae24002beb5a3c",
+  "data": "2026-10-13"
  },
  "/cod-reducere/babyneeds.ro": {
   "fp": "e5a3502e02935561",
@@ -2376,7 +2376,7 @@
   "data": "2026-10-12"
  },
  "/cod-reducere/homs.ro": {
-  "fp": "0491901d52fc9d14",
+  "fp": "c7043a0c227b4704",
   "data": "2026-10-13"
  },
  "/cod-reducere/piese-biciclete.eu": {
@@ -2424,20 +2424,20 @@
   "data": "2026-08-16"
  },
  "/cod-reducere/mezoni.ro": {
-  "fp": "c7043a0c227b4704",
-  "data": "2026-10-10"
+  "fp": "0491901d52fc9d14",
+  "data": "2026-10-13"
  },
  "/cod-reducere/case-smart.ro": {
   "fp": "fc706a7f43af5b2c",
   "data": "2026-10-12"
  },
  "/cod-reducere/ecovent.ro": {
-  "fp": "c5c240d44830bbc6",
-  "data": "2026-10-12"
+  "fp": "fc706a7f43af5b2c",
+  "data": "2026-10-13"
  },
  "/cod-reducere/dacris.net": {
-  "fp": "0e2b7d0c704167a6",
-  "data": "2026-10-12"
+  "fp": "66b55519a41df040",
+  "data": "2026-10-13"
  },
  "/cod-reducere/barber-store.ro": {
   "fp": "230d2c1208567347",
@@ -2448,8 +2448,8 @@
   "data": "2026-10-11"
  },
  "/cod-reducere/nailsup.ro": {
-  "fp": "230d2c1208567347",
-  "data": "2026-10-11"
+  "fp": "b1ae24002beb5a3c",
+  "data": "2026-10-13"
  },
  "/cod-reducere/elindor.ro": {
   "fp": "66b55519a41df040",
@@ -2460,32 +2460,36 @@
   "data": "2026-10-10"
  },
  "/cod-reducere/ortopedicus.com": {
-  "fp": "c7043a0c227b4704",
-  "data": "2026-10-12"
+  "fp": "0491901d52fc9d14",
+  "data": "2026-10-13"
  },
  "/cod-reducere/dezmembraru.ro": {
-  "fp": "39fcaf9efa1df171",
+  "fp": "e5d2c018888051f6",
   "data": "2026-10-13"
  },
  "/cod-reducere/nevertebrate.ro": {
-  "fp": "2f7cb785d68bedc2",
-  "data": "2026-10-11"
+  "fp": "2de41be04798ac34",
+  "data": "2026-10-13"
  },
  "/cod-reducere/depozitsolar.ro": {
-  "fp": "0491901d52fc9d14",
-  "data": "2026-10-12"
+  "fp": "c7043a0c227b4704",
+  "data": "2026-10-13"
  },
  "/cod-reducere/kamin.ro": {
-  "fp": "0491901d52fc9d14",
-  "data": "2026-10-12"
+  "fp": "c7043a0c227b4704",
+  "data": "2026-10-13"
+ },
+ "/cod-reducere/ookee.ro": {
+  "fp": "9d42459097650bb4",
+  "data": "2026-10-13"
  },
  "/cod-reducere/a2t.ro": {
   "fp": "fc706a7f43af5b2c",
   "data": "2026-10-08"
  },
  "/cod-reducere/decathlon.ro": {
-  "fp": "31b1a9e9d7e5517e",
-  "data": "2026-10-12"
+  "fp": "5300a38f554fa125",
+  "data": "2026-10-13"
  },
  "/cod-reducere/trotty.ro": {
   "fp": "31b1a9e9d7e5517e",
@@ -2496,7 +2500,7 @@
   "data": "2026-10-13"
  },
  "/cod-reducere/everin.ro": {
-  "fp": "b1ae24002beb5a3c",
+  "fp": "230d2c1208567347",
   "data": "2026-10-13"
  },
  "/cod-reducere/picadili.ro": {
@@ -2520,7 +2524,7 @@
   "data": "2026-10-12"
  },
  "/cod-reducere/haaus.ro": {
-  "fp": "0491901d52fc9d14",
+  "fp": "c7043a0c227b4704",
   "data": "2026-10-13"
  },
  "/cod-reducere/novvu.ro": {
@@ -2532,7 +2536,7 @@
   "data": "2026-10-12"
  },
  "/cod-reducere/greeno.ro": {
-  "fp": "0e2b7d0c704167a6",
+  "fp": "66b55519a41df040",
   "data": "2026-10-13"
  },
  "/cod-reducere/cartepedia.ro": {
@@ -2544,8 +2548,8 @@
   "data": "2026-10-10"
  },
  "/cod-reducere/pensulemachiaj.ro": {
-  "fp": "230d2c1208567347",
-  "data": "2026-10-12"
+  "fp": "b1ae24002beb5a3c",
+  "data": "2026-10-13"
  },
  "/cod-reducere/caraielli.ro": {
   "fp": "7cefe1fc882b4e77",
@@ -2580,12 +2584,12 @@
   "data": "2026-10-12"
  },
  "/cod-reducere/farmaciilenapofarm.ro": {
-  "fp": "13f774a8b58b7d45",
+  "fp": "1dd9a3be044b60c0",
   "data": "2026-10-13"
  },
  "/cod-reducere/druzy.ro": {
-  "fp": "bcb41f99c59b7d4c",
-  "data": "2026-10-12"
+  "fp": "76b4b7adabcc925c",
+  "data": "2026-10-13"
  },
  "/cod-reducere/qudo.ro": {
   "fp": "b1ae24002beb5a3c",
@@ -2600,7 +2604,7 @@
   "data": "2026-10-12"
  },
  "/cod-reducere/evolutionpowertools.ro": {
-  "fp": "0491901d52fc9d14",
+  "fp": "c7043a0c227b4704",
   "data": "2026-10-13"
  },
  "/cod-reducere/pescar-expert.ro": {
@@ -2624,7 +2628,7 @@
   "data": "2026-10-13"
  },
  "/cod-reducere/ietraditionala.com": {
-  "fp": "ae999499f08acb7b",
+  "fp": "7cefe1fc882b4e77",
   "data": "2026-10-13"
  },
  "/cod-reducere/glowmania.ro": {
@@ -2636,11 +2640,11 @@
   "data": "2026-10-08"
  },
  "/cod-reducere/fsm-romania.ro": {
-  "fp": "b1ae24002beb5a3c",
+  "fp": "230d2c1208567347",
   "data": "2026-10-13"
  },
  "/cod-reducere/edituratrei.ro": {
-  "fp": "b7ad801fed18e1d4",
+  "fp": "dde77a4d8d6f68e9",
   "data": "2026-10-13"
  },
  "/cod-reducere/bagstodoor.ro": {
@@ -2680,8 +2684,8 @@
   "data": "2026-08-16"
  },
  "/cod-reducere/minikids.ro": {
-  "fp": "e5a3502e02935561",
-  "data": "2026-10-10"
+  "fp": "9d42459097650bb4",
+  "data": "2026-10-13"
  },
  "/cod-reducere/ginissima.ro": {
   "fp": "7cefe1fc882b4e77",
@@ -2692,7 +2696,7 @@
   "data": "2026-10-12"
  },
  "/cod-reducere/edituradph.ro": {
-  "fp": "b7ad801fed18e1d4",
+  "fp": "dde77a4d8d6f68e9",
   "data": "2026-10-13"
  },
  "/cod-reducere/enigma-plant.ro": {
@@ -2712,8 +2716,8 @@
   "data": "2026-10-12"
  },
  "/cod-reducere/myown.ro": {
-  "fp": "7cefe1fc882b4e77",
-  "data": "2026-10-11"
+  "fp": "ae999499f08acb7b",
+  "data": "2026-10-13"
  },
  "/cod-reducere/agroclima.ro": {
   "fp": "c7043a0c227b4704",
@@ -2732,7 +2736,7 @@
   "data": "2026-10-12"
  },
  "/cod-reducere/edituragama.ro": {
-  "fp": "b7ad801fed18e1d4",
+  "fp": "dde77a4d8d6f68e9",
   "data": "2026-10-13"
  },
  "/cod-reducere/atelierulfamiliei.ro": {
@@ -2752,8 +2756,8 @@
   "data": "2026-10-12"
  },
  "/cod-reducere/pandera.ro": {
-  "fp": "230d2c1208567347",
-  "data": "2026-10-12"
+  "fp": "b1ae24002beb5a3c",
+  "data": "2026-10-13"
  },
  "/cod-reducere/portulromanesc.ro": {
   "fp": "ae999499f08acb7b",
@@ -2800,8 +2804,8 @@
   "data": "2026-10-08"
  },
  "/cod-reducere/novambient.ro": {
-  "fp": "c7043a0c227b4704",
-  "data": "2026-10-12"
+  "fp": "0491901d52fc9d14",
+  "data": "2026-10-13"
  },
  "/cod-reducere/creativ.ro": {
   "fp": "dee465db33f4d51e",
@@ -2812,19 +2816,19 @@
   "data": "2026-10-08"
  },
  "/cod-reducere/mobilemedical.ro": {
-  "fp": "1dd9a3be044b60c0",
-  "data": "2026-10-11"
+  "fp": "13f774a8b58b7d45",
+  "data": "2026-10-13"
  },
  "/cod-reducere/biovicta.ro": {
   "fp": "f2112ba34245b786",
   "data": "2026-10-12"
  },
  "/cod-reducere/izziepublishing.com": {
-  "fp": "b7ad801fed18e1d4",
+  "fp": "dde77a4d8d6f68e9",
   "data": "2026-10-13"
  },
  "/cod-reducere/ehranaanimale.ro": {
-  "fp": "2de41be04798ac34",
+  "fp": "2f7cb785d68bedc2",
   "data": "2026-10-13"
  },
  "/cod-reducere/autokids.ro": {
@@ -2832,11 +2836,11 @@
   "data": "2026-10-12"
  },
  "/cod-reducere/hygiero.ro": {
-  "fp": "0491901d52fc9d14",
+  "fp": "c7043a0c227b4704",
   "data": "2026-10-13"
  },
  "/cod-reducere/chicbijoux.ro": {
-  "fp": "b882e8c4095c6fe4",
+  "fp": "bcb41f99c59b7d4c",
   "data": "2026-10-13"
  },
  "/cod-reducere/sportmaniac.ro": {
@@ -2847,6 +2851,10 @@
   "fp": "b1ae24002beb5a3c",
   "data": "2026-10-11"
  },
+ "/cod-reducere/ada-shoes.ro": {
+  "fp": "7cefe1fc882b4e77",
+  "data": "2026-10-13"
+ },
  "/cod-reducere/lacanistra.ro": {
   "fp": "0491901d52fc9d14",
   "data": "2026-10-12"
@@ -2856,7 +2864,7 @@
   "data": "2026-10-12"
  },
  "/cod-reducere/goldnutrition.ro": {
-  "fp": "13f774a8b58b7d45",
+  "fp": "1dd9a3be044b60c0",
   "data": "2026-10-13"
  },
  "/cod-reducere/targetdeal.ro": {
@@ -2864,16 +2872,16 @@
   "data": "2026-10-08"
  },
  "/cod-reducere/decryso.ro": {
-  "fp": "13f774a8b58b7d45",
-  "data": "2026-10-12"
+  "fp": "1dd9a3be044b60c0",
+  "data": "2026-10-13"
  },
  "/cod-reducere/viada.ro": {
   "fp": "e80bf72baffd1929",
   "data": "2026-08-16"
  },
  "/cod-reducere/navigatiiandroid.ro": {
-  "fp": "e5d2c018888051f6",
-  "data": "2026-10-11"
+  "fp": "39fcaf9efa1df171",
+  "data": "2026-10-13"
  },
  "/cod-reducere/trada.ro": {
   "fp": "0e2b7d0c704167a6",
@@ -2928,8 +2936,8 @@
   "data": "2026-08-16"
  },
  "/cod-reducere/mobilepet.ro": {
-  "fp": "2f7cb785d68bedc2",
-  "data": "2026-10-11"
+  "fp": "2de41be04798ac34",
+  "data": "2026-10-13"
  },
  "/cod-reducere/autoeqt.ro": {
   "fp": "e5d2c018888051f6",
@@ -2948,8 +2956,8 @@
   "data": "2026-10-12"
  },
  "/cod-reducere/modastil.ro": {
-  "fp": "7cefe1fc882b4e77",
-  "data": "2026-10-11"
+  "fp": "ae999499f08acb7b",
+  "data": "2026-10-13"
  },
  "/cod-reducere/fabricadegratare.ro": {
   "fp": "e336873e8efa850d",
@@ -2996,8 +3004,8 @@
   "data": "2026-10-13"
  },
  "/cod-reducere/infinity.ro": {
-  "fp": "0e2b7d0c704167a6",
-  "data": "2026-10-12"
+  "fp": "66b55519a41df040",
+  "data": "2026-10-13"
  },
  "/cod-reducere/talis.ro": {
   "fp": "0491901d52fc9d14",
@@ -3024,7 +3032,7 @@
   "data": "2026-10-12"
  },
  "/cod-reducere/edituradiana.ro": {
-  "fp": "b7ad801fed18e1d4",
+  "fp": "dde77a4d8d6f68e9",
   "data": "2026-10-13"
  },
  "/cod-reducere/casamob.ro": {
@@ -3032,8 +3040,8 @@
   "data": "2026-10-12"
  },
  "/cod-reducere/interlink.ro": {
-  "fp": "c5c240d44830bbc6",
-  "data": "2026-10-12"
+  "fp": "fc706a7f43af5b2c",
+  "data": "2026-10-13"
  },
  "/cod-reducere/bijubox.ro": {
   "fp": "76b4b7adabcc925c",
@@ -3056,7 +3064,7 @@
   "data": "2026-08-16"
  },
  "/cod-reducere/armansport.ro": {
-  "fp": "ae999499f08acb7b",
+  "fp": "7cefe1fc882b4e77",
   "data": "2026-10-13"
  },
  "/cod-reducere/scauneonline.ro": {
@@ -3064,7 +3072,7 @@
   "data": "2026-10-11"
  },
  "/cod-reducere/fabricadetuica.ro": {
-  "fp": "0491901d52fc9d14",
+  "fp": "c7043a0c227b4704",
   "data": "2026-10-13"
  },
  "/cod-reducere/bonami.ro": {
@@ -3072,11 +3080,11 @@
   "data": "2026-10-11"
  },
  "/cod-reducere/pansiprod.ro": {
-  "fp": "1dd9a3be044b60c0",
-  "data": "2026-10-12"
+  "fp": "13f774a8b58b7d45",
+  "data": "2026-10-13"
  },
  "/cod-reducere/janta.ro": {
-  "fp": "39fcaf9efa1df171",
+  "fp": "e5d2c018888051f6",
   "data": "2026-10-13"
  },
  "/cod-reducere/tessile.ro": {
@@ -3144,8 +3152,8 @@
   "data": "2026-10-12"
  },
  "/cod-reducere/nannie.ro": {
-  "fp": "e5a3502e02935561",
-  "data": "2026-10-11"
+  "fp": "9d42459097650bb4",
+  "data": "2026-10-13"
  },
  "/cod-reducere/spectral.ro": {
   "fp": "0491901d52fc9d14",
@@ -3160,11 +3168,11 @@
   "data": "2026-10-08"
  },
  "/cod-reducere/edituracasa.ro": {
-  "fp": "b7ad801fed18e1d4",
+  "fp": "dde77a4d8d6f68e9",
   "data": "2026-10-13"
  },
  "/cod-reducere/duchessenails.ro": {
-  "fp": "b1ae24002beb5a3c",
+  "fp": "230d2c1208567347",
   "data": "2026-10-13"
  },
  "/cod-reducere/autodrop.ro": {
@@ -3188,7 +3196,7 @@
   "data": "2026-10-12"
  },
  "/cod-reducere/dreamramp.ro": {
-  "fp": "0491901d52fc9d14",
+  "fp": "c7043a0c227b4704",
   "data": "2026-10-13"
  },
  "/cod-reducere/lancome.ro": {
@@ -3204,7 +3212,7 @@
   "data": "2026-10-10"
  },
  "/cod-reducere/fashionforyou.ro": {
-  "fp": "ae999499f08acb7b",
+  "fp": "7cefe1fc882b4e77",
   "data": "2026-10-13"
  },
  "/cod-reducere/magazinuldegene.ro": {
@@ -3212,7 +3220,7 @@
   "data": "2026-10-13"
  },
  "/cod-reducere/grupdzc.ro": {
-  "fp": "0e2b7d0c704167a6",
+  "fp": "66b55519a41df040",
   "data": "2026-10-13"
  },
  "/cod-reducere/printrecarti.ro": {
@@ -3220,8 +3228,8 @@
   "data": "2026-10-13"
  },
  "/cod-reducere/melimeloparis.ro": {
-  "fp": "76b4b7adabcc925c",
-  "data": "2026-10-10"
+  "fp": "bcb41f99c59b7d4c",
+  "data": "2026-10-13"
  },
  "/cod-reducere/sabon.ro": {
   "fp": "b1ae24002beb5a3c",
@@ -3232,15 +3240,15 @@
   "data": "2026-09-10"
  },
  "/cod-reducere/floria.ro": {
-  "fp": "13a2ed20a7b52d2e",
+  "fp": "9a05c9edcb6912b5",
   "data": "2026-10-13"
  },
  "/cod-reducere/idealbeauty.ro": {
-  "fp": "b1ae24002beb5a3c",
+  "fp": "230d2c1208567347",
   "data": "2026-10-13"
  },
  "/cod-reducere/ceasuri-shop.ro": {
-  "fp": "bcb41f99c59b7d4c",
+  "fp": "76b4b7adabcc925c",
   "data": "2026-10-13"
  },
  "/cod-reducere/imatrend.ro": {
@@ -3248,12 +3256,12 @@
   "data": "2026-10-12"
  },
  "/cod-reducere/elegance-decor.ro": {
-  "fp": "0491901d52fc9d14",
+  "fp": "c7043a0c227b4704",
   "data": "2026-10-13"
  },
  "/cod-reducere/e-roti.ro": {
-  "fp": "39fcaf9efa1df171",
-  "data": "2026-10-12"
+  "fp": "e5d2c018888051f6",
+  "data": "2026-10-13"
  },
  "/cod-reducere/pronaturiste.ro": {
   "fp": "13f774a8b58b7d45",
@@ -3280,7 +3288,7 @@
   "data": "2026-08-16"
  },
  "/cod-reducere/frapperie.ro": {
-  "fp": "33a53ee42ef80b88",
+  "fp": "f2112ba34245b786",
   "data": "2026-10-13"
  },
  "/cod-reducere/meia.ro": {
@@ -3292,7 +3300,7 @@
   "data": "2026-10-10"
  },
  "/cod-reducere/frankemagazinonline.ro": {
-  "fp": "0491901d52fc9d14",
+  "fp": "c7043a0c227b4704",
   "data": "2026-10-13"
  },
  "/cod-reducere/zapatos.hu": {
@@ -3312,11 +3320,11 @@
   "data": "2026-10-13"
  },
  "/cod-reducere/mobiro.ro": {
-  "fp": "c7043a0c227b4704",
-  "data": "2026-10-11"
+  "fp": "0491901d52fc9d14",
+  "data": "2026-10-13"
  },
  "/cod-reducere/edez.ro": {
-  "fp": "39fcaf9efa1df171",
+  "fp": "e5d2c018888051f6",
   "data": "2026-10-13"
  },
  "/cod-reducere/twindeco.ro": {
@@ -3340,8 +3348,8 @@
   "data": "2026-10-12"
  },
  "/cod-reducere/kamu.ro": {
-  "fp": "b1ae24002beb5a3c",
-  "data": "2026-10-12"
+  "fp": "230d2c1208567347",
+  "data": "2026-10-13"
  },
  "/cod-reducere/nepstore.ro": {
   "fp": "b1ae24002beb5a3c",
@@ -3360,7 +3368,7 @@
   "data": "2026-08-16"
  },
  "/cod-reducere/geekmall.ro": {
-  "fp": "c5c240d44830bbc6",
+  "fp": "fc706a7f43af5b2c",
   "data": "2026-10-13"
  },
  "/cod-reducere/baterii-lux.ro": {
@@ -3396,8 +3404,8 @@
   "data": "2026-10-11"
  },
  "/cod-reducere/dwyn.ro": {
-  "fp": "c5c240d44830bbc6",
-  "data": "2026-10-12"
+  "fp": "fc706a7f43af5b2c",
+  "data": "2026-10-13"
  },
  "/cod-reducere/foliecubule.ro": {
   "fp": "66b55519a41df040",
@@ -3412,7 +3420,7 @@
   "data": "2026-10-08"
  },
  "/cod-reducere/importdirect.ro": {
-  "fp": "b1ae24002beb5a3c",
+  "fp": "230d2c1208567347",
   "data": "2026-10-13"
  },
  "/cod-reducere/sculefix.ro": {
@@ -3432,7 +3440,7 @@
   "data": "2026-10-08"
  },
  "/cod-reducere/itarena.ro": {
-  "fp": "c5c240d44830bbc6",
+  "fp": "fc706a7f43af5b2c",
   "data": "2026-10-13"
  },
  "/cod-reducere/biocyte.ro": {
@@ -3480,8 +3488,8 @@
   "data": "2026-10-12"
  },
  "/cod-reducere/niculescu.ro": {
-  "fp": "dde77a4d8d6f68e9",
-  "data": "2026-10-12"
+  "fp": "b7ad801fed18e1d4",
+  "data": "2026-10-13"
  },
  "/cod-reducere/heatcollective.ro": {
   "fp": "dd425fa744d0f5b2",
@@ -3536,7 +3544,7 @@
   "data": "2026-10-13"
  },
  "/cod-reducere/field.ro": {
-  "fp": "31b1a9e9d7e5517e",
+  "fp": "5300a38f554fa125",
   "data": "2026-10-13"
  },
  "/cod-reducere/lovepadel.ie": {
@@ -3576,7 +3584,7 @@
   "data": "2026-08-16"
  },
  "/cod-reducere/husdago.ro": {
-  "fp": "0491901d52fc9d14",
+  "fp": "c7043a0c227b4704",
   "data": "2026-10-13"
  },
  "/cod-reducere/longevity-boost.com": {
@@ -3588,7 +3596,7 @@
   "data": "2026-08-16"
  },
  "/cod-reducere/husse.ro": {
-  "fp": "2de41be04798ac34",
+  "fp": "2f7cb785d68bedc2",
   "data": "2026-10-13"
  },
  "/cod-reducere/olmarkt.ro": {
@@ -3636,7 +3644,7 @@
   "data": "2026-10-11"
  },
  "/cod-reducere/decofinisaje.ro": {
-  "fp": "0491901d52fc9d14",
+  "fp": "c7043a0c227b4704",
   "data": "2026-10-13"
  },
  "/cod-reducere/bebeboo.ro": {
@@ -3656,12 +3664,12 @@
   "data": "2026-08-16"
  },
  "/cod-reducere/depozituldeuleiuri.ro": {
-  "fp": "39fcaf9efa1df171",
+  "fp": "e5d2c018888051f6",
   "data": "2026-10-13"
  },
  "/cod-reducere/prosoapehotel.ro": {
-  "fp": "c7043a0c227b4704",
-  "data": "2026-10-10"
+  "fp": "0491901d52fc9d14",
+  "data": "2026-10-13"
  },
  "/cod-reducere/bazaiot.ro": {
   "fp": "ad22dd72d43ecddc",
@@ -3706,10 +3714,6 @@
  "/cod-reducere/emotiv.ro": {
   "fp": "b882e8c4095c6fe4",
   "data": "2026-10-13"
- },
- "/cod-reducere/rikingdom.com": {
-  "fp": "d5d39bdc2297de73",
-  "data": "2026-08-16"
  },
  "/cod-reducere/promotionalprint.ro": {
   "fp": "13a2ed20a7b52d2e",
@@ -3832,7 +3836,7 @@
   "data": "2026-10-09"
  },
  "/categorii/fashion": {
-  "fp": "ba634f79b12d88f1",
+  "fp": "7d87e7cc685e5c21",
   "data": "2026-10-13"
  },
  "/categorii/software": {
@@ -3856,8 +3860,8 @@
   "data": "2026-10-03"
  },
  "/categorii/sport": {
-  "fp": "98a19009a783c162",
-  "data": "2026-10-03"
+  "fp": "f439f499b92d283b",
+  "data": "2026-10-13"
  },
  "/categorii/bijuterii": {
   "fp": "ebbc6490df09041f",
@@ -3896,8 +3900,8 @@
   "data": "2026-10-04"
  },
  "/categorii/mancare-bauturi": {
-  "fp": "8f92032cbccc3a11",
-  "data": "2026-10-12"
+  "fp": "80d747147ec9e3a5",
+  "data": "2026-10-13"
  },
  "/categorii/financiar": {
   "fp": "8a4a4eb7d00f8145",

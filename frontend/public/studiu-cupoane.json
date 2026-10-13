@@ -1,10 +1,10 @@
 {
   "generat": "2026-10-13",
-  "total_magazine": 958,
-  "cu_promotie": 131,
+  "total_magazine": 959,
+  "cu_promotie": 132,
   "cu_cod_real": 39,
-  "doar_oferta": 92,
-  "procent_cu_promotie": 13.7,
+  "doar_oferta": 93,
+  "procent_cu_promotie": 13.8,
   "procent_cu_cod": 4.1,
   "reducere_mediana_generala": 25,
   "magazine_cu_procent_declarat": 85,
@@ -39,7 +39,7 @@
     {
       "slug": "fashion",
       "nume": "Fashion",
-      "magazine": 76,
+      "magazine": 77,
       "cu_promotie": 17,
       "reducere_mediana": 35,
       "reducere_max": 55,
@@ -49,7 +49,7 @@
       "slug": "marketplace",
       "nume": "Marketplace",
       "magazine": 192,
-      "cu_promotie": 11,
+      "cu_promotie": 12,
       "reducere_mediana": 30.0,
       "reducere_max": 60,
       "esantion": 6
@@ -67,7 +67,7 @@
       "slug": "copii",
       "nume": "Copii & familie",
       "magazine": 28,
-      "cu_promotie": 5,
+      "cu_promotie": 4,
       "reducere_mediana": 25.0,
       "reducere_max": 33,
       "esantion": 4
@@ -103,7 +103,7 @@
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
       "magazine": 126,
-      "cu_promotie": 21,
+      "cu_promotie": 22,
       "reducere_mediana": 17,
       "reducere_max": 82,
       "esantion": 13
@@ -111,7 +111,7 @@
     {
       "slug": "sport",
       "nume": "Sport & fitness",
-      "magazine": 34,
+      "magazine": 33,
       "cu_promotie": 4,
       "reducere_mediana": 15.0,
       "reducere_max": 30,
@@ -156,7 +156,7 @@
     {
       "slug": "mancare-bauturi",
       "nume": "Mâncare & băuturi",
-      "magazine": 16,
+      "magazine": 17,
       "cu_promotie": 2,
       "reducere_mediana": null,
       "reducere_max": null,

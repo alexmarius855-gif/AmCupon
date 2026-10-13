@@ -484,8 +484,8 @@
    "magazine": 125
   },
   "2026-10-13": {
-   "promotii": 256,
-   "magazine": 128
+   "promotii": 257,
+   "magazine": 129
   }
  },
  "magazine": {
@@ -634,6 +634,15 @@
    }
   ],
   "aosom.ro": [
+   {
+    "k": "comandatainfricosatordebuna|",
+    "titlu": "COMANDA TA, ÎNFRICOȘĂTOR DE BUNĂ",
+    "cod": false,
+    "prima": "2026-10-13",
+    "ultima": "2026-10-13",
+    "expira": "2026-10-28",
+    "activa": true
+   },
    {
     "k": "toamnaterasplateste|",
     "titlu": "TOAMNA TE RĂSPLĂTEȘTE",
@@ -6009,6 +6018,15 @@
   ],
   "nadula.com": [
    {
+    "k": "cozyseasoncoolerpricessaleupto70offwithcodecool|",
+    "titlu": "Cozy Season Cooler Prices Sale Up To $70 Off With Code:Cool",
+    "cod": false,
+    "prima": "2026-10-13",
+    "ultima": "2026-10-13",
+    "expira": "2026-10-20",
+    "activa": true
+   },
+   {
     "k": "feelfreshfeelyousaleupto100offwithcodefall|fall",
     "titlu": "Feel Fresh Feel You Sale Up To $100 Off With Code:FALL",
     "cod": true,
@@ -6481,7 +6499,7 @@
     "prima": "2026-09-24",
     "ultima": "2026-10-13",
     "expira": "2026-10-13",
-    "activa": true
+    "activa": false
    },
    {
     "k": "backtoschool2026|",
