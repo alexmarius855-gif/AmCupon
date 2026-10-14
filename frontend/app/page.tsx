@@ -3,6 +3,7 @@ import fs from "fs";
 import path from "path";
 import HomeClient, { type Magazin } from "./HomeClient";
 import { pesteMagazine, PesteMagazine, laParteneri } from "@/lib/cifreSite";
+import { imagineSigura } from "@/lib/topFeed";
 
 export const metadata: Metadata = {
   title: "AmCupon.ro — Coduri de reducere si oferte actualizate zilnic",
@@ -42,6 +43,12 @@ interface ProdusCategorie { slug: string; label: string; emoji: string; products
 
 function buildProduseCategorii(): ProdusCategorie[] {
   const data = readJSON<{ by_category?: ProdusCategorie[]; products?: HomeProdus[] }>("products-home.json", {});
+  // 14.10.2026: imagini „http://" (farmec.ro) — next/image accepta doar https (next.config.ts) si oprea TOATA
+  // prima pagina pe dev; in productie, imagine rupta. imagineSigura le trece pe https si scoate adresele invalide.
+  const curat = (lista: HomeProdus[] = []) =>
+    lista.map((p) => ({ ...p, image: imagineSigura(p.image) || "" })).filter((p) => p.image);
+  if (data.by_category) data.by_category = data.by_category.map((c) => ({ ...c, products: curat(c.products) }));
+  if (data.products) data.products = curat(data.products);
   const cats = data?.by_category || [];
   const valid = cats.filter((c) => (c.products?.length || 0) >= 2);
   if (valid.length > 0) return valid;

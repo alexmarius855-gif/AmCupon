@@ -369,7 +369,7 @@ export default function HomeClient({
   }
 
   return (
-    <div className="gold-home min-h-screen bg-[var(--background)]">
+    <div className="gold-home tema-luminoasa min-h-screen bg-[var(--background)]">
       <style>{`
         .gold-home h1, .gold-home h2:not(.hl-t) { font-family: var(--font-display), Georgia, "Times New Roman", serif; letter-spacing: -0.015em; }
         @media (prefers-reduced-motion: no-preference) {
@@ -561,7 +561,7 @@ export default function HomeClient({
               e adevarat si verificabil — pipeline-ul ruleaza de trei ori pe zi. */}
           <h1 className="text-[2.25rem] md:text-[3.25rem] font-black tracking-tight leading-[1.08] mb-4">
             <span className="text-[var(--foreground)]">Coduri de reducere</span>{" "}
-            <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #c3dd2c 0%, #10b981 100%)"}}>
+            <span className="text-transparent bg-clip-text titlu-gradient">
               actualizate zilnic
             </span>
           </h1>
@@ -944,7 +944,7 @@ export default function HomeClient({
                     {nrPromo > 0 ? (
                       <div className="inline-flex self-start items-center gap-1 px-2 py-0.5 rounded-full border" style={{ background: `${accent}1a`, borderColor: `${accent}44` }}>
                         <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: accent }} />
-                        <span className="text-[10px] font-bold" style={{ color: accent }}>{nrPromo} {nrPromo === 1 ? "oferta" : "oferte"}</span>
+                        <span className="text-[10px] font-bold" style={{ color: `color-mix(in srgb, ${accent} 40%, var(--foreground))` }}>{nrPromo} {nrPromo === 1 ? "oferta" : "oferte"}</span>
                       </div>
                     ) : (
                       <div className="inline-flex self-start bg-[var(--surface-alt)] px-2 py-0.5 rounded-full">

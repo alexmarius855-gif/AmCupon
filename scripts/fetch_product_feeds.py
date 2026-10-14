@@ -1523,11 +1523,14 @@ def main():
     from collections import defaultdict
     # 08.10.2026: gorgeaux.ro trimitea in feed imaginea „http://0" la 46 de produse — next/image respinge gazda
     # si prima pagina dadea 500 local. O adresa fara gazda reala devine „fara imagine" (produsul ramane).
+    # 14.10.2026: si „http://" (farmec.ro) — next/image accepta doar https; trecute pe https la sursa.
     stricate = 0
     for p in all_products:
         if p.get("image") and not imagine_valida(p["image"]):
             p["image"] = ""
             stricate += 1
+        elif (p.get("image") or "").lower().startswith("http://"):
+            p["image"] = "https://" + p["image"][7:]
     if stricate:
         print(f"  Imagini invalide scoase: {stricate}")
 
