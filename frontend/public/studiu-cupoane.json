@@ -1,12 +1,12 @@
 {
   "generat": "2026-10-14",
-  "total_magazine": 957,
-  "cu_promotie": 133,
-  "cu_cod_real": 39,
+  "total_magazine": 958,
+  "cu_promotie": 132,
+  "cu_cod_real": 38,
   "doar_oferta": 94,
-  "procent_cu_promotie": 13.9,
-  "procent_cu_cod": 4.1,
-  "reducere_mediana_generala": 25.0,
+  "procent_cu_promotie": 13.8,
+  "procent_cu_cod": 4.0,
+  "reducere_mediana_generala": 22.5,
   "magazine_cu_procent_declarat": 86,
   "categorii": [
     {
@@ -40,7 +40,7 @@
       "slug": "fashion",
       "nume": "Fashion",
       "magazine": 77,
-      "cu_promotie": 17,
+      "cu_promotie": 16,
       "reducere_mediana": 35,
       "reducere_max": 55,
       "esantion": 11
@@ -53,15 +53,6 @@
       "reducere_mediana": 27.5,
       "reducere_max": 75,
       "esantion": 8
-    },
-    {
-      "slug": "marketplace",
-      "nume": "Marketplace",
-      "magazine": 192,
-      "cu_promotie": 13,
-      "reducere_mediana": 25,
-      "reducere_max": 60,
-      "esantion": 7
     },
     {
       "slug": "copii",
@@ -80,6 +71,15 @@
       "reducere_mediana": 20,
       "reducere_max": 50,
       "esantion": 3
+    },
+    {
+      "slug": "marketplace",
+      "nume": "Marketplace",
+      "magazine": 193,
+      "cu_promotie": 13,
+      "reducere_mediana": 20,
+      "reducere_max": 55,
+      "esantion": 7
     },
     {
       "slug": "calatorii",

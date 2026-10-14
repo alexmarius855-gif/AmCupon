@@ -1078,8 +1078,8 @@
     "sales_number": 0,
     "trend": 0,
     "are_promotie": true,
-    "cod_cupon": true,
-    "zile_ramase": 1,
+    "cod_cupon": false,
+    "zile_ramase": 78,
     "promotii": [
       {
         "nume": "Redodo 8% Discount Code – Save on All Products",
@@ -1088,15 +1088,6 @@
         "landing_page": "https://redodopowerde.sjv.io/c/7401119/3864250/49142",
         "zile_ramase": 78,
         "expira": "2026-12-31",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "Redodo Prime Day Sale",
-        "descriere": "Prime Day bei Redodo – Frühzugang mit bis zu 55% Rabatt, gefolgt von Top-Angeboten mit bis zu 60% Rabatt.",
-        "cod_cupon": "PRIME10",
-        "landing_page": "https://redodopowerde.sjv.io/c/7401119/3864250/49142",
-        "zile_ramase": 1,
-        "expira": "2026-10-15",
         "sursa": "impact_deals_api"
       }
     ],
@@ -2907,7 +2898,7 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 16,
+    "zile_ramase": 4,
     "promotii": [
       {
         "nume": "Marca Proprie Dr Max",
@@ -2934,6 +2925,15 @@
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fofertele-lunii",
         "zile_ramase": 16,
         "expira": "2026-10-30",
+        "sursa": "2performant_api"
+      },
+      {
+        "nume": "Max Days Frumusete si Ingrijire",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2Fmax-days-frumusete-si-ingrijire",
+        "zile_ramase": 4,
+        "expira": "2026-10-18",
         "sursa": "2performant_api"
       }
     ],
@@ -4674,41 +4674,6 @@
     "scor_final": 30.0,
     "program_id": 10427,
     "unique_code": "f6cf397df"
-  },
-  {
-    "magazin": "optiblu.ro",
-    "url": "https://www.optiblu.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.optiblu.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13436/medium/13436.png",
-    "categorie": "Fashion",
-    "categorie_slug": "fashion",
-    "comision": "10.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 0,
-    "promotii": [
-      {
-        "nume": "2026.10 Tu alegi reducerea",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.optiblu.ro%2F",
-        "zile_ramase": 0,
-        "expira": "2026-10-14",
-        "sursa": "2performant_api"
-      }
-    ],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-14",
-    "scor_final": 30.0,
-    "program_id": 5277,
-    "unique_code": "f6b801b06"
   },
   {
     "magazin": "yves-rocher.ro",
@@ -15902,6 +15867,30 @@
     "ultima_verificare": "2026-10-14"
   },
   {
+    "magazin": "globalfabricwholesale.com",
+    "url": "https://globalfabricwholesale.com",
+    "url_afiliat": "https://globalfabricwholesale.pxf.io/c/7401119/4090058/51085",
+    "logo_url": "https://www.google.com/s2/favicons?domain=globalfabricwholesale.com&sz=128",
+    "categorie": "Marketplace",
+    "categorie_slug": "marketplace",
+    "comision": "Variabil",
+    "rank": null,
+    "scor_afiliere": 50,
+    "scor_final": 50,
+    "prioritate": "standard",
+    "canal_recomandat": "Content, SEO, Social",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "impact",
+    "descriere": "",
+    "ultima_verificare": "2026-10-14"
+  },
+  {
     "magazin": "chanalai.com",
     "url": "http://www.chanalai.com/en/special-offers.html",
     "url_afiliat": "https://chanalaihotelsresorts.pxf.io/c/7401119/2025075/25189",
@@ -20666,31 +20655,6 @@
     "unique_code": "987a417c7"
   },
   {
-    "magazin": "nirmoto.ro",
-    "url": "https://www.nirmoto.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.nirmoto.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14466/medium/14466.png",
-    "categorie": "Casă & Grădină",
-    "categorie_slug": "casa-gradina",
-    "comision": "4.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-14",
-    "scor_final": 0.0,
-    "program_id": 13144,
-    "unique_code": "b4a3c7a08"
-  },
-  {
     "magazin": "carsupreme.ro",
     "url": "https://carsupreme.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarsupreme.ro%2F",
@@ -22014,6 +21978,31 @@
     "scor_final": 0.0,
     "program_id": 12717,
     "unique_code": "8b52bcb23"
+  },
+  {
+    "magazin": "optiblu.ro",
+    "url": "https://www.optiblu.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.optiblu.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13436/medium/13436.png",
+    "categorie": "Fashion",
+    "categorie_slug": "fashion",
+    "comision": "10.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-14",
+    "scor_final": 0.0,
+    "program_id": 5277,
+    "unique_code": "f6b801b06"
   },
   {
     "magazin": "redgoblin.ro",
@@ -25964,5 +25953,30 @@
     "scor_final": 0.0,
     "program_id": 13295,
     "unique_code": "3c42c7da3"
+  },
+  {
+    "magazin": "dualhome.ro",
+    "url": "https://dualhome.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdualhome.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14623/medium/14623.png",
+    "categorie": "Casă & Grădină",
+    "categorie_slug": "casa-gradina",
+    "comision": "7.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-14",
+    "scor_final": 0.0,
+    "program_id": 13303,
+    "unique_code": "978bad271"
   }
 ]

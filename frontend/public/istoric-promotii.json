@@ -488,8 +488,8 @@
    "magazine": 129
   },
   "2026-10-14": {
-   "promotii": 259,
-   "magazine": 130
+   "promotii": 258,
+   "magazine": 129
   }
  },
  "magazine": {
@@ -2264,6 +2264,15 @@
    }
   ],
   "drmax.ro": [
+   {
+    "k": "maxdaysfrumusetesiingrijire|",
+    "titlu": "Max Days Frumusete si Ingrijire",
+    "cod": false,
+    "prima": "2026-10-14",
+    "ultima": "2026-10-14",
+    "expira": "2026-10-18",
+    "activa": true
+   },
    {
     "k": "maxdaysmamasicopilul|",
     "titlu": "Max Days Mama si copilul",
@@ -6570,7 +6579,7 @@
     "prima": "2026-09-30",
     "ultima": "2026-10-14",
     "expira": "2026-10-14",
-    "activa": true
+    "activa": false
    },
    {
     "k": "reduceridepanala70laochelaridesoare|",
@@ -7090,7 +7099,7 @@
     "prima": "2026-09-21",
     "ultima": "2026-10-14",
     "expira": "2026-10-15",
-    "activa": true
+    "activa": false
    },
    {
     "k": "redodoprimedaysalees|",
