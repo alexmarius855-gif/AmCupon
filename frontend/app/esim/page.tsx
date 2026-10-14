@@ -202,7 +202,7 @@ export default function EsimPage() {
 
       <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
         {/* Hero */}
-        <div className="bg-gradient-to-b from-[#14181c]/40 to-[#06080b] border-b border-[var(--border)]">
+        <div className="bg-gradient-to-b from-[var(--surface)]/40 to-[var(--background)] border-b border-[var(--border)]">
           <div className="max-w-5xl mx-auto px-4 py-14 text-center">
             <div className="inline-flex items-center gap-2 bg-[var(--background)]/30 border border-[#c3dd2c]/40 rounded-full px-4 py-1.5 text-sm text-[var(--accent-text)] mb-5">
               <span>📡</span>
@@ -383,7 +383,7 @@ export default function EsimPage() {
           </div>
 
           {/* CTA + navlink */}
-          <div className="bg-gradient-to-r from-[#06080b]/30 to-[#06080b]/30 border border-[var(--border)]/40 rounded-xl p-7 text-center mb-10">
+          <div className="bg-gradient-to-r from-[var(--background)]/30 to-[var(--background)]/30 border border-[var(--border)]/40 rounded-xl p-7 text-center mb-10">
             <h2 className="text-xl font-bold text-[var(--foreground)] mb-2">Pregatit pentru urmatoarea calatorie?</h2>
             <p className="text-[var(--text-soft)] text-sm mb-5">Activeaza eSIM-ul inainte sa pleci — 5 minute si esti conectat oriunde in lume.</p>
             <a

@@ -109,7 +109,7 @@ export default function CadouriPage() {
                   <p className="text-[var(--text-muted)] text-xs mb-3">{o.desc}</p>
                   <div
                     className="inline-flex items-center gap-1 text-xs font-bold"
-                    style={{ color: o.color }}
+                    style={{ color: `color-mix(in srgb, ${o.color} 45%, var(--foreground))` }}
                   >
                     Vezi idei <span>→</span>
                   </div>

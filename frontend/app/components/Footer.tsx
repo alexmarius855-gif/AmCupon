@@ -90,7 +90,7 @@ export default function Footer({ magazineInDate }: { magazineInDate?: string[] }
         <div className="max-w-7xl mx-auto px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl bg-[#1877F2] flex items-center justify-center shrink-0">
-              <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-[var(--foreground)]" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
               </svg>
             </div>
@@ -148,7 +148,7 @@ export default function Footer({ magazineInDate }: { magazineInDate?: string[] }
                 <a key={s.href} href={s.href} target="_blank" rel="noopener noreferrer"
                   aria-label={s.label}
                   className="w-9 h-9 rounded-xl bg-[var(--surface-alt)] hover:bg-[#ddf93c] flex items-center justify-center transition-colors group">
-                  <svg className="w-4 h-4 text-[var(--text-soft)] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                  <svg className="w-4 h-4 text-[var(--text-soft)] group-hover:text-[var(--foreground)] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                     {s.svg}
                   </svg>
                 </a>

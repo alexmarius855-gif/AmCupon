@@ -24,7 +24,7 @@ export default async function AdminPage() {
       <div className="min-h-screen bg-[var(--background)] flex items-center justify-center">
         <div className="text-center max-w-sm mx-auto px-4">
           <div className="text-5xl mb-4">⚠️</div>
-          <h1 className="text-xl font-black text-white mb-2">ADMIN_PASSWORD neconfigurat</h1>
+          <h1 className="text-xl font-black text-[var(--foreground)] mb-2">ADMIN_PASSWORD neconfigurat</h1>
           <p className="text-[var(--text-soft)] text-sm">
             Adauga <code className="bg-[var(--background)] px-1.5 py-0.5 rounded text-orange-400">ADMIN_PASSWORD</code> in
             Vercel Environment Variables, apoi redeploy.

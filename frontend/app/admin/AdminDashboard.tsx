@@ -34,7 +34,7 @@ const AGENTS = [
     role:    "Data & Sync",
     model:   "claude-haiku",
     color:   "#00f5d4",
-    bg:      "from-[#06080b]/40 to-[#06080b]",
+    bg:      "from-[var(--background)]/40 to-[var(--background)]",
     border:  "border-[var(--accent-text)]/30",
     glow:    "shadow-[#ddf93c]/20",
     desc:    "NEXUS actualizeaza magazine, promotii si merge toate platformele de afiliere. Ruleaza de 4 ori pe zi.",
@@ -51,7 +51,7 @@ const AGENTS = [
     role:    "Content & YouTube",
     model:   "claude-sonnet",
     color:   "#ff3cac",
-    bg:      "from-pink-900/40 to-[#06080b]",
+    bg:      "from-pink-900/40 to-[var(--background)]",
     border:  "border-pink-500/30",
     glow:    "shadow-pink-500/20",
     desc:    "ECHO genereaza scripturi complete YouTube, articole SEO, idei blog si ghiduri de cumparare.",
@@ -68,7 +68,7 @@ const AGENTS = [
     role:    "Social & Newsletter",
     model:   "claude-haiku",
     color:   "#f7971e",
-    bg:      "from-orange-900/40 to-[#06080b]",
+    bg:      "from-orange-900/40 to-[var(--background)]",
     border:  "border-orange-500/30",
     glow:    "shadow-orange-500/20",
     desc:    "PULSE creeaza continut pentru Instagram, TikTok, Facebook si campanii email pentru abonati.",
@@ -85,7 +85,7 @@ const AGENTS = [
     role:    "Business & Strategy",
     model:   "claude-opus",
     color:   "#784ba0",
-    bg:      "from-violet-900/40 to-[#06080b]",
+    bg:      "from-violet-900/40 to-[var(--background)]",
     border:  "border-violet-500/30",
     glow:    "shadow-violet-500/20",
     desc:    "SIGMA analizeaza oportunitati de business, strategii de crestere si idei de monetizare noi.",
@@ -258,7 +258,7 @@ function CampaignLinkBuilder({ deal }: { deal: ShockDeal }) {
         <span className="text-xs font-mono font-bold px-2 py-0.5 rounded" style={{ color:"#f7971e", background:"#f7971e15", fontSize:"9px" }}>
           OFERTA ZILEI
         </span>
-        <span className="font-black text-sm text-white">{deal.magazin}</span>
+        <span className="font-black text-sm text-[var(--foreground)]">{deal.magazin}</span>
         {deal.discountPct && <span className="text-xs font-mono" style={{ color:"#00f5d4" }}>-{deal.discountPct}%</span>}
       </div>
       <p className="text-xs mb-4" style={{ color:"#8888aa" }}>{deal.promoNume}</p>
@@ -696,7 +696,7 @@ export default function AdminDashboard() {
                               style={{ color:platformColor(o.platforma), background:platformColor(o.platforma)+"15", fontSize:"9px" }}>
                               {o.platforma}
                             </span>
-                            <span className="text-sm font-semibold text-white truncate">{o.magazin}</span>
+                            <span className="text-sm font-semibold text-[var(--foreground)] truncate">{o.magazin}</span>
                             {o.arePromotie && (
                               <span className="text-xs font-mono shrink-0" style={{ color:"#f7971e", fontSize:"9px" }}>● promovat activ</span>
                             )}
@@ -843,7 +843,7 @@ export default function AdminDashboard() {
                     className="flex items-center justify-between p-4 rounded-xl border transition-all hover:border-opacity-60"
                     style={{ background:"rgba(13,13,38,0.8)", borderColor:"#1a1a40" }}>
                     <div>
-                      <p className="text-sm font-semibold text-white">{run.name}</p>
+                      <p className="text-sm font-semibold text-[var(--foreground)]">{run.name}</p>
                       <p className="text-xs font-mono mt-0.5" style={{ color:"#444466" }}>{timeAgo(run.updatedAt)} ago</p>
                     </div>
                     <span className="text-xs font-mono font-bold px-3 py-1 rounded-md"

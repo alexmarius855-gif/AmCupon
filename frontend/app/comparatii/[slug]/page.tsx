@@ -140,7 +140,7 @@ export default async function ComparatiePage(
           </nav>
 
           {/* Hero */}
-          <div className="bg-gradient-to-br from-[#06080b]/40 to-[#14181c] border border-[var(--accent-text)]/20 rounded-xl p-8 mb-8">
+          <div className="bg-gradient-to-br from-[var(--background)]/40 to-[var(--surface)] border border-[var(--accent-text)]/20 rounded-xl p-8 mb-8">
             <p className="text-[var(--accent-text)] text-sm font-medium mb-2 uppercase tracking-wider">{c.categorie}</p>
             <h1 className="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-4">{c.titlu_h1}</h1>
             <p className="text-[var(--text-soft)] text-lg leading-relaxed">{c.intro}</p>

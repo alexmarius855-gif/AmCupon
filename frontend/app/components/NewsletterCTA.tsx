@@ -36,7 +36,7 @@ export default function NewsletterCTA({ titlu = "Nu rata cele mai bune reduceri"
 
   return (
     <section className="max-w-5xl mx-auto px-4 py-8">
-      <div className="bg-gradient-to-r from-[#14181c] to-[#ddf93c]/10 border border-[var(--accent-text)]/20 rounded-xl p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-6">
+      <div className="bg-gradient-to-r from-[var(--surface)] to-[#ddf93c]/10 border border-[var(--accent-text)]/20 rounded-xl p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-6">
         <div className="text-4xl shrink-0">📬</div>
         <div className="flex-1 text-center sm:text-left">
           <h2 className="font-black text-[var(--foreground)] text-lg">{titlu}</h2>

@@ -209,7 +209,7 @@ export default function SocialStudio({ items }: { items: SocialItem[] }) {
 
   if (!item) {
     return (
-      <main className="min-h-screen bg-[#070a0f] text-white flex items-center justify-center px-4">
+      <main className="min-h-screen bg-[var(--background)] text-[var(--foreground)] flex items-center justify-center px-4">
         <div className="max-w-md text-center">
           <h1 className="text-2xl font-black mb-3">Social Studio</h1>
           <p className="text-[var(--text-soft)]">Nu am gasit postari in data/postari-zilnice.json.</p>
@@ -220,7 +220,7 @@ export default function SocialStudio({ items }: { items: SocialItem[] }) {
   }
 
   return (
-    <main className="min-h-screen bg-[#070a0f] text-white">
+    <main className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
       <div className="max-w-6xl mx-auto px-4 py-5 sm:py-8">
         <div className="flex items-center justify-between gap-4 mb-5">
           <div>
@@ -232,13 +232,13 @@ export default function SocialStudio({ items }: { items: SocialItem[] }) {
         </div>
 
         <div className="grid lg:grid-cols-[380px_1fr] gap-5 items-start">
-          <section className="rounded-2xl border border-[var(--border)] bg-[#11100c] p-4 space-y-4">
+          <section className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-4 space-y-4">
             <div>
               <label className="block text-xs font-bold uppercase tracking-widest text-[var(--text-soft)] mb-2">Oferta</label>
               <select
                 value={selectedIndex}
                 onChange={(e) => setSelectedIndex(Number(e.target.value))}
-                className="w-full rounded-xl bg-[#201c14] border border-[var(--border)] px-3 py-3 text-sm text-white"
+                className="w-full rounded-xl bg-[var(--surface-alt)] border border-[var(--border)] px-3 py-3 text-sm text-[var(--foreground)]"
               >
                 {items.map((it, idx) => (
                   <option key={`${it.magazin}-${idx}`} value={idx}>{it.nume} {it.procent ? `(${it.procent})` : ""}</option>
@@ -274,7 +274,7 @@ export default function SocialStudio({ items }: { items: SocialItem[] }) {
 
             <div>
               <label className="block text-xs font-bold uppercase tracking-widest text-[var(--text-soft)] mb-2">Caption</label>
-              <textarea readOnly value={caption} className="h-44 w-full rounded-xl bg-[#201c14] border border-[var(--border)] px-3 py-3 text-sm text-[var(--text-soft)]" />
+              <textarea readOnly value={caption} className="h-44 w-full rounded-xl bg-[var(--surface-alt)] border border-[var(--border)] px-3 py-3 text-sm text-[var(--text-soft)]" />
             </div>
 
             <div className="grid grid-cols-2 gap-2">
@@ -284,7 +284,7 @@ export default function SocialStudio({ items }: { items: SocialItem[] }) {
               <button onClick={shareStory} className="rounded-xl bg-[#ffffff] px-3 py-3 text-sm font-black text-[#06080b]">Share telefon</button>
             </div>
 
-            {status && <p className="rounded-xl border border-[#3d331e] bg-[#19150e] p-3 text-sm text-[var(--text-soft)]">{status}</p>}
+            {status && <p className="rounded-xl border border-[#3d331e] bg-[var(--surface)] p-3 text-sm text-[var(--text-soft)]">{status}</p>}
           </section>
 
           <section className="lg:sticky lg:top-6">
@@ -293,7 +293,7 @@ export default function SocialStudio({ items }: { items: SocialItem[] }) {
                 <div className="h-full rounded-[1.5rem] border border-[var(--accent-text)]/30 bg-[radial-gradient(circle_at_top_right,rgba(201,166,62,0.26),transparent_34%),linear-gradient(160deg,#070a0f,#171008_55%,#05060a)] p-6 flex flex-col">
                   <div>
                     <p className="text-[var(--accent-text)] font-black text-lg">AmCupon.ro</p>
-                    <p className="text-white/60 text-xs font-bold mt-1">story de salvat</p>
+                    <p className="text-[var(--foreground)]/60 text-xs font-bold mt-1">story de salvat</p>
                   </div>
                   <div className="mt-auto mb-auto">
                     <h2 className="text-4xl font-black leading-tight">{storyTitle(item, tone)}</h2>
@@ -301,10 +301,10 @@ export default function SocialStudio({ items }: { items: SocialItem[] }) {
                     {item.procent && <div className="mt-7 inline-flex bg-[#ddf93c] text-[#080712] px-5 py-3 rounded-xl text-3xl font-black">{item.procent}</div>}
                   </div>
                   <div className="rounded-2xl bg-white/10 p-4">
-                    <p className="text-white font-black text-sm">Link:</p>
+                    <p className="text-[var(--foreground)] font-black text-sm">Link:</p>
                     <p className="text-[var(--text-soft)] text-sm break-words mt-1">{shareUrl.replace(/^https?:\/\//, "")}</p>
                   </div>
-                  <p className="text-white/70 text-xs font-bold mt-5">Salveaza pentru urmatoarea comanda</p>
+                  <p className="text-[var(--foreground)]/70 text-xs font-bold mt-5">Salveaza pentru urmatoarea comanda</p>
                 </div>
               </div>
               <p className="mt-3 text-center text-xs text-[var(--text-soft)]">Preview. Butonul descarca PNG real 1080x1920.</p>

@@ -36,7 +36,7 @@ export default function CookieBanner() {
 
         {/* Text */}
         <div className="flex-1 text-sm">
-          <p className="font-bold text-white mb-0.5">Folosim cookie-uri</p>
+          <p className="font-bold text-[var(--foreground)] mb-0.5">Folosim cookie-uri</p>
           <p className="text-gray-400 leading-relaxed">
             Folosim cookie-uri pentru analiza traficului (Google Analytics), publicitate (Google AdSense) și atribuirea comenzilor la rețelele de afiliere (2Performant, Impact, Awin). Nu vindem datele tale.{" "}
             <Link href="/confidentialitate" className="text-[var(--accent-text)] hover:underline">
@@ -49,7 +49,7 @@ export default function CookieBanner() {
         <div className="flex gap-2 shrink-0 w-full sm:w-auto">
           <button
             onClick={() => alege("declined")}
-            className="flex-1 sm:flex-none px-4 py-2 rounded-xl border border-gray-600 text-gray-300 hover:border-gray-400 hover:text-white text-sm font-semibold transition-colors"
+            className="flex-1 sm:flex-none px-4 py-2 rounded-xl border border-gray-600 text-gray-300 hover:border-gray-400 hover:text-[var(--foreground)] text-sm font-semibold transition-colors"
           >
             Refuz
           </button>

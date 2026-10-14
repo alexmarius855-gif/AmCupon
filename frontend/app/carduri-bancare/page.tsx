@@ -52,14 +52,14 @@ const CONTURI = [
     ],
     dezavantaje: ["Suportul e în principal prin chat în aplicație", "Peste limita lunară și în weekend, schimbul valutar are comision"],
     ideal: "Călătorii, cumpărături online, primii pași în acțiuni",
-    culoare: "from-[#ddf93c]/20 to-[#14181c]",
+    culoare: "from-[#ddf93c]/20 to-[var(--surface)]",
   },
   {
     rank: 2,
     name: "Wise",
     tagline: "Transferuri internaționale la cursul real, cu taxa afișată înainte",
     badge: "Transferuri internaționale",
-    badgeColor: "bg-emerald-600 text-[var(--foreground)]",
+    badgeColor: "bg-emerald-700 text-white",
     emoji: "🌍",
     cost: "Cont gratuit; taxă per transfer, afișată înainte",
     url: LINK_WISE,
@@ -72,7 +72,7 @@ const CONTURI = [
     ],
     dezavantaje: ["Taxă la fiecare transfer (mică, dar există)", "Nu e bancă: banii sunt protejați prin separare, nu prin fondul de garantare a depozitelor"],
     ideal: "Freelanceri, nomazi digitali, transferuri frecvente în valută",
-    culoare: "from-emerald-700/40 to-[#14181c]",
+    culoare: "from-emerald-700/40 to-[var(--surface)]",
   },
   {
     rank: 3,
@@ -91,7 +91,7 @@ const CONTURI = [
     ],
     dezavantaje: ["Fără sucursale fizice", "Bancă mai nouă, cu mai puține funcții decât băncile mari"],
     ideal: "Cine vrea banking 100% digital, în română",
-    culoare: "from-[#c3dd2c]/20 to-[#14181c]",
+    culoare: "from-[#c3dd2c]/20 to-[var(--surface)]",
   },
 ];
 
@@ -120,7 +120,7 @@ export default function CarduriBancarePage() {
         </nav>
 
         {/* Hero */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-[#14181c] via-[#14181c] to-emerald-950 py-16 px-4">
+        <section className="relative overflow-hidden bg-gradient-to-br from-[var(--surface)] via-[var(--surface)] to-emerald-950 py-16 px-4">
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#ddf93c]/15 rounded-full blur-3xl" />
             <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-emerald-600/15 rounded-full blur-3xl" />

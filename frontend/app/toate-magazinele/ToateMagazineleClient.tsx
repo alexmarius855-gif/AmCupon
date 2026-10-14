@@ -101,7 +101,7 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
     <div className="min-h-screen bg-[var(--background)]">
 
       {/* ── HERO ────────────────────────────────────────────────────────── */}
-      <div className="bg-gradient-to-br from-[#14181c] via-[#14181c] to-[#1f2329] py-12 px-4 border-b border-[var(--border)]">
+      <div className="bg-gradient-to-br from-[var(--surface)] via-[var(--surface)] to-[var(--surface-alt)] py-12 px-4 border-b border-[var(--border)]">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-3">DIRECTORUL REDUCERILOR</p>
           <h1 className="text-3xl md:text-4xl font-black text-[var(--foreground)] mb-2 tracking-tight">
@@ -198,7 +198,7 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
               <a
                 key={m.magazin}
                 href={`/cod-reducere/${m.magazin}`}
-                className="group relative bg-gradient-to-b from-[#14181c] to-[#14181c]/60 rounded-xl border border-[var(--border)]/80 hover:border-[var(--accent-text)]/50 p-4 flex flex-col items-center gap-3 hover:-translate-y-1 transition-all duration-200"
+                className="group relative bg-gradient-to-b from-[var(--surface)] to-[var(--surface)]/60 rounded-xl border border-[var(--border)]/80 hover:border-[var(--accent-text)]/50 p-4 flex flex-col items-center gap-3 hover:-translate-y-1 transition-all duration-200"
                 style={{ boxShadow: "0 1px 2px rgba(0,0,0,0.2)" }}
               >
                 {/* Logo */}
@@ -214,7 +214,7 @@ export default function ToateMagazineleClient({ magazine }: { magazine: Magazin[
                     />
                   ) : (
                     <div className={`w-full h-full rounded-xl bg-gradient-to-br ${culoare} flex items-center justify-center`}>
-                      <span className="text-white font-black text-xl">{initiala}</span>
+                      <span className="text-[var(--foreground)] font-black text-xl">{initiala}</span>
                     </div>
                   )}
                   {/* Indicator activ, atasat de logo nu plutind pe card */}

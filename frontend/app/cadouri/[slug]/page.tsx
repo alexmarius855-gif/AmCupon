@@ -410,7 +410,7 @@ export default async function CadouriSlugPage({
                   key={i}
                   className="flex items-center gap-1.5 bg-[var(--surface)] border border-[var(--border-strong)] text-[var(--text-soft)] text-sm px-3 py-1.5 rounded-xl"
                 >
-                  <span style={{ color: oc.from }}>→</span>
+                  <span style={{ color: `color-mix(in srgb, ${oc.from} 45%, var(--foreground))` }}>→</span>
                   {idee}
                 </span>
               ))}
@@ -445,7 +445,7 @@ export default async function CadouriSlugPage({
                         loading="lazy"
                       />
                       {((p.discount_pct || 0) > 0 || p.old_price) && (
-                        <div className="absolute top-2 left-2 bg-red-500 text-white text-[10px] font-black px-1.5 py-0.5 rounded-lg">
+                        <div className="absolute top-2 left-2 bg-red-600 text-white text-[10px] font-black px-1.5 py-0.5 rounded-lg">
                           -{p.discount_pct || (p.old_price ? Math.round(((p.old_price - p.price) / p.old_price) * 100) : 0)}%
                         </div>
                       )}

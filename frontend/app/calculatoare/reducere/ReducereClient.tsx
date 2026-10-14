@@ -7,7 +7,7 @@ type Mod = "simplu" | "succesiv" | "invers";
 
 const CARD = "bg-[var(--surface)] rounded-xl border border-[var(--border)] shadow-sm";
 const INPUT =
-  "w-full bg-[#0f1216] border border-[var(--border)] rounded-lg px-4 py-3 text-lg font-semibold text-white outline-none focus:border-[var(--accent-text)] transition-colors";
+  "w-full bg-[var(--surface)] border border-[var(--border)] rounded-lg px-4 py-3 text-lg font-semibold text-[var(--foreground)] outline-none focus:border-[var(--accent-text)] transition-colors";
 const LABEL = "block text-xs font-semibold text-[var(--text-muted)] uppercase tracking-wide mb-2";
 
 function lei(n: number): string {
@@ -81,7 +81,7 @@ export default function ReducereClient() {
             className={`text-left px-4 py-3 rounded-xl border transition-colors ${
               mod === t.id
                 ? "bg-[#ddf93c] border-[var(--accent-text)] text-[#0f1216]"
-                : "bg-[var(--surface)] border-[var(--border)] text-white hover:bg-[var(--surface-alt)]"
+                : "bg-[var(--surface)] border-[var(--border)] text-[var(--foreground)] hover:bg-[var(--surface-alt)]"
             }`}
           >
             <span className="block text-sm font-bold">{t.eticheta}</span>
@@ -127,7 +127,7 @@ export default function ReducereClient() {
                   <button
                     key={p}
                     onClick={() => setReducere(String(p))}
-                    className="text-xs font-semibold px-2.5 py-1 rounded-full bg-[var(--surface-alt)] hover:bg-[var(--surface-high)] text-[var(--text-muted)] hover:text-white transition-colors"
+                    className="text-xs font-semibold px-2.5 py-1 rounded-full bg-[var(--surface-alt)] hover:bg-[var(--surface-high)] text-[var(--text-muted)] hover:text-[var(--foreground)] transition-colors"
                   >
                     {p}%
                   </button>
@@ -227,13 +227,13 @@ export default function ReducereClient() {
             </div>
             <div>
               <span className={LABEL}>Economisesti</span>
-              <span className="block text-3xl sm:text-4xl font-black text-white leading-tight">
+              <span className="block text-3xl sm:text-4xl font-black text-[var(--foreground)] leading-tight">
                 {lei(rezultat.economie)}
               </span>
             </div>
             <div>
               <span className={LABEL}>Reducere reala</span>
-              <span className="block text-3xl sm:text-4xl font-black text-white leading-tight">
+              <span className="block text-3xl sm:text-4xl font-black text-[var(--foreground)] leading-tight">
                 {proc(rezultat.procentTotal)}
               </span>
               {mod === "succesiv" && isFinite(rezultat.dupaPrima) && (
@@ -248,7 +248,7 @@ export default function ReducereClient() {
         {mod === "succesiv" && rezultat !== null && (
           <p className="text-sm text-[var(--text-muted)] mt-5 pt-5 border-t border-[var(--border)]">
             Adunate, cele doua reduceri ar da {proc(num(r1) + num(r2))}. Real, primesti{" "}
-            <span className="text-white font-semibold">{proc(rezultat.procentTotal)}</span>.
+            <span className="text-[var(--foreground)] font-semibold">{proc(rezultat.procentTotal)}</span>.
           </p>
         )}
       </div>

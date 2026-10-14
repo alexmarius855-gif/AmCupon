@@ -38,7 +38,7 @@ export default function AdminLogin() {
           <div className="inline-flex items-center justify-center w-16 h-16 bg-orange-500 rounded-2xl text-3xl mb-4 shadow-xl shadow-orange-500/30">
             🎛️
           </div>
-          <h1 className="text-2xl font-black text-white">Mission Control</h1>
+          <h1 className="text-2xl font-black text-[var(--foreground)]">Mission Control</h1>
           <p className="text-[var(--text-soft)] text-sm mt-1">AmCupon.ro · Admin Panel</p>
         </div>
 
@@ -54,7 +54,7 @@ export default function AdminLogin() {
               placeholder="••••••••"
               required
               autoFocus
-              className="w-full bg-[var(--background)] border border-[var(--border)] text-white rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500/50 placeholder-[#473d28] transition-all"
+              className="w-full bg-[var(--background)] border border-[var(--border)] text-[var(--foreground)] rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500/50 placeholder-[#473d28] transition-all"
             />
           </div>
 

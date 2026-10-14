@@ -128,15 +128,15 @@ export default function CalculatorReducerePage() {
       />
 
       <nav className="text-xs text-[var(--text-muted)] mb-5">
-        <Link href="/" className="hover:text-white transition-colors">
+        <Link href="/" className="hover:text-[var(--foreground)] transition-colors">
           Acasa
         </Link>
         <span className="mx-1.5">/</span>
-        <Link href="/calculatoare" className="hover:text-white transition-colors">
+        <Link href="/calculatoare" className="hover:text-[var(--foreground)] transition-colors">
           Calculatoare
         </Link>
         <span className="mx-1.5">/</span>
-        <span className="text-white">Reduceri</span>
+        <span className="text-[var(--foreground)]">Reduceri</span>
       </nav>
 
       <h1 className="text-3xl sm:text-4xl font-black mb-3 leading-tight">Calculator de reduceri</h1>
@@ -218,7 +218,7 @@ export default function CalculatorReducerePage() {
             </Link>
             <Link
               href="/oferte-azi"
-              className="bg-[var(--surface-alt)] text-white font-bold px-5 py-2.5 rounded-lg hover:bg-[var(--surface-high)] transition-colors"
+              className="bg-[var(--surface-alt)] text-[var(--foreground)] font-bold px-5 py-2.5 rounded-lg hover:bg-[var(--surface-high)] transition-colors"
             >
               Ofertele de azi
             </Link>

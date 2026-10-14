@@ -160,7 +160,7 @@ function OfertaCard({ o }: { o: OfertaFlat }) {
   const urgenta = eticheta?.esteImediata ?? false;
 
   return (
-    <div className="group relative flex flex-col bg-gradient-to-b from-[#14181c] to-[#14181c] border border-[var(--border)] hover:border-[var(--accent-text)]/50 rounded-xl p-4 transition-all duration-200 hover:shadow-2xl hover:shadow-black/40 hover:-translate-y-1">
+    <div className="group relative flex flex-col bg-gradient-to-b from-[var(--surface)] to-[var(--surface)] border border-[var(--border)] hover:border-[var(--accent-text)]/50 rounded-xl p-4 transition-all duration-200 hover:shadow-2xl hover:shadow-black/40 hover:-translate-y-1">
 
       {/* Header magazin */}
       <div className="flex items-start gap-3">
@@ -402,7 +402,7 @@ export default async function OferteAziPage(
 
         {/* CTA Newsletter ──────────────────────────────────────────────── */}
         <div className="max-w-6xl mx-auto px-4 pb-16">
-          <div className="relative bg-gradient-to-r from-[#ddf93c]/10 via-[#14181c] to-[#ddf93c]/10 border border-[var(--accent-text)]/15 rounded-xl p-8 md:p-12 text-center overflow-hidden">
+          <div className="relative bg-gradient-to-r from-[#ddf93c]/10 via-[var(--surface)] to-[#ddf93c]/10 border border-[var(--accent-text)]/15 rounded-xl p-8 md:p-12 text-center overflow-hidden">
             <div className="absolute inset-0 pointer-events-none" style={{background:"radial-gradient(ellipse 80% 100% at 50% 100%, rgba(20,184,166,0.07) 0%, transparent 70%)"}} />
             <div className="relative">
               <span className="inline-flex items-center gap-2 bg-[#ddf93c]/10 border border-[var(--accent-text)]/20 text-[var(--accent-text)] text-xs font-black px-3 py-1 rounded-full mb-5 uppercase tracking-widest">

@@ -82,7 +82,7 @@ export default function PachetZilnic({ manifest }: { manifest: Manifest | null }
 
   if (!manifest) {
     return (
-      <div className="min-h-screen bg-[var(--background)] text-white px-4 py-16">
+      <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)] px-4 py-16">
         <div className="max-w-2xl mx-auto text-center">
           <h1 className="text-2xl font-black mb-3">Nu exista pachet generat inca</h1>
           <p className="text-[var(--text-soft)] text-sm mb-6">
@@ -100,7 +100,7 @@ export default function PachetZilnic({ manifest }: { manifest: Manifest | null }
   }
 
   return (
-    <div className="min-h-screen bg-[var(--background)] text-white">
+    <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
       <div className="max-w-6xl mx-auto px-4 py-10">
         {/* ── Antet ──────────────────────────────────────────────────────── */}
         <div className="flex flex-wrap items-end justify-between gap-4 mb-8">

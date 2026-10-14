@@ -169,7 +169,7 @@ export default function TopHubPage() {
 
         {/* CTA NEWSLETTER */}
         <section className="max-w-6xl mx-auto px-4 pb-12">
-          <div className="bg-gradient-to-r from-[#14181c] to-[#1f2329] rounded-xl p-8 text-center">
+          <div className="bg-gradient-to-r from-[var(--surface)] to-[var(--surface-alt)] rounded-xl p-8 text-center">
             <div className="text-3xl mb-3">📧</div>
             <h3 className="text-xl font-black text-[var(--foreground)] mb-2">
               Primeste review-urile noi direct pe email

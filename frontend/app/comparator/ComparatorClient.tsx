@@ -65,7 +65,7 @@ function MagazinCard({ m, onRemove, onSwap, position }: { m: Magazin; onRemove: 
   const dealScore = calculateDealScore(m);
   // Header-ul era un gradient lime plin cu text alb peste — ilizibil dupa trecerea la
   // tema lime (accentul are L=93%). Lime ramane accent, nu suprafata: header inchis.
-  const gradients = ["from-[#1f2329] to-[#14181c]", "from-[#14181c] to-[#1f2329]"];
+  const gradients = ["from-[var(--surface-alt)] to-[var(--surface)]", "from-[var(--surface)] to-[var(--surface-alt)]"];
 
   return (
     <div className="bg-[var(--surface)] rounded-xl border border-[var(--border)] overflow-hidden shadow-sm">

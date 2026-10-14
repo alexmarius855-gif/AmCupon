@@ -32,7 +32,7 @@ const CATEGORII = [
     branduri: [
       { nume: "Surfshark", badge: "Dispozitive nelimitate", badgeColor: "bg-[#ddf93c] text-[#0c1000]", url: "https://surfshark.sjv.io/c/7401119/529009/9043",
         descriere: "VPN cu dispozitive nelimitate, mod Camouflage și MultiHop, cu aplicații pentru toate platformele." },
-      { nume: "Bitdefender", badge: "Brand românesc", badgeColor: "bg-red-700 text-[var(--foreground)]", url: "https://www.bitdefender.com",
+      { nume: "Bitdefender", badge: "Brand românesc", badgeColor: "bg-red-700 text-white", url: "https://www.bitdefender.com",
         descriere: "Antivirus pentru PC, Mac, Android și iOS: Antivirus Plus, Internet Security, Total Security." },
       { nume: "Norton", badge: "", badgeColor: "", url: "https://us.norton.com",
         descriere: "Norton 360: antivirus cu VPN inclus, backup în cloud și monitorizare dark web." },
@@ -60,7 +60,7 @@ const CATEGORII = [
     emoji: "🛒",
     desc: "Platforme pentru magazine online și pentru firme",
     branduri: [
-      { nume: "Shopify", badge: "Magazin online", badgeColor: "bg-green-700 text-[var(--foreground)]", url: "https://www.shopify.com",
+      { nume: "Shopify", badge: "Magazin online", badgeColor: "bg-green-700 text-white", url: "https://www.shopify.com",
         descriere: "Platformă pentru magazin online: teme, plăți și integrări, fără server propriu." },
       { nume: "HubSpot", badge: "CRM gratuit", badgeColor: "bg-[#ddf93c] text-[#0c1000]", url: "https://www.hubspot.com",
         descriere: "CRM cu plan gratuit, plus module plătite de marketing, vânzări și suport clienți." },
@@ -76,7 +76,7 @@ const CATEGORII = [
     branduri: [
       { nume: "Coursera", badge: "Certificate", badgeColor: "bg-[#ddf93c] text-[#0c1000]", url: "https://www.coursera.org",
         descriere: "Cursuri și certificate de la Google, IBM, Meta și de la universități." },
-      { nume: "DataCamp", badge: "Data Science", badgeColor: "bg-green-700 text-[var(--foreground)]", url: "https://www.datacamp.com",
+      { nume: "DataCamp", badge: "Data Science", badgeColor: "bg-green-700 text-white", url: "https://www.datacamp.com",
         descriere: "Cursuri practice de Python, R, SQL și machine learning, direct în browser." },
       { nume: "Blinkist", badge: "", badgeColor: "", url: "https://www.blinkist.com",
         descriere: "Rezumate audio și text ale cărților de non-ficțiune." },
@@ -110,7 +110,7 @@ const CATEGORII = [
     branduri: [
       { nume: "Logitech", badge: "", badgeColor: "", url: "https://www.logitech.com",
         descriere: "Mouse-uri, tastaturi și camere web: MX Master, G Pro, BRIO. Compatibile Mac și Windows." },
-      { nume: "Razer", badge: "Gaming", badgeColor: "bg-green-800 text-[var(--foreground)]", url: "https://www.razer.com",
+      { nume: "Razer", badge: "Gaming", badgeColor: "bg-green-800 text-white", url: "https://www.razer.com",
         descriere: "Mouse-uri, tastaturi, căști și laptopuri de gaming." },
       { nume: "Lenovo", badge: "", badgeColor: "", url: "https://www.lenovo.com/ro",
         descriere: "ThinkPad pentru business, IdeaPad pentru uz general, Legion pentru gaming." },

@@ -52,10 +52,10 @@ const LINK_KASPERSKY   = "https://www.kaspersky.com";
 
 // 07.10.2026: fara preturi scrise de mana si fara superlative; culoare = fundal + text lizibil.
 const COMPARATIV = [
-  { brand: "Bitdefender", highlight: "Brand românesc, cu protecție anti-ransomware", culoare: "bg-red-600 text-[var(--foreground)]", url: LINK_BITDEFENDER },
+  { brand: "Bitdefender", highlight: "Brand românesc, cu protecție anti-ransomware", culoare: "bg-red-600 text-white", url: LINK_BITDEFENDER },
   { brand: "Norton 360", highlight: "VPN inclus în pachetele Norton 360", culoare: "bg-yellow-500 text-[#0c1000]", url: LINK_NORTON },
   { brand: "ESET NOD32", highlight: "Gândit să consume puține resurse", culoare: "bg-[#ddf93c] text-[#0c1000]", url: LINK_ESET },
-  { brand: "Kaspersky", highlight: "Protecție la plăți online (Safe Money)", culoare: "bg-emerald-600 text-[var(--foreground)]", url: LINK_KASPERSKY },
+  { brand: "Kaspersky", highlight: "Protecție la plăți online (Safe Money)", culoare: "bg-emerald-700 text-white", url: LINK_KASPERSKY },
 ];
 
 const CULORI_BADGE = ["bg-red-600","bg-yellow-500","bg-[#ddf93c]","bg-emerald-600","bg-[#ddf93c]","bg-[#ddf93c]","bg-[#ddf93c]"];
@@ -88,7 +88,7 @@ export default function AntivirusPage() {
         </nav>
 
         {/* Hero */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-red-950 via-[#14181c] to-[#14181c] py-16 px-4">
+        <section className="relative overflow-hidden bg-gradient-to-br from-red-950 via-[var(--surface)] to-[var(--surface)] py-16 px-4">
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute top-0 right-1/4 w-96 h-96 bg-red-600/20 rounded-full blur-3xl" />
             <div className="absolute bottom-0 left-1/4 w-64 h-64 bg-[#ddf93c]/15 rounded-full blur-3xl" />

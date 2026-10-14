@@ -56,7 +56,7 @@ interface TopData {
 // lime e ACCENT (numere, butoane, badge-uri), nu suprafata mare. Deci hero-ul devine
 // inchis, iar accentul ramane pe titlu/cifre. `cat.culoare` nu mai controleaza
 // culoarea de fundal, dar il pastram in date pentru eventuale accente viitoare.
-const HERO_BG = "from-[#14181c] via-[#0f1317] to-[#06080b]";
+const HERO_BG = "from-[var(--surface)] via-[var(--surface)] to-[var(--background)]";
 
 /**
  * Cand au fost alese modelele si notate preturile din top-produse.json (git: 28.05,

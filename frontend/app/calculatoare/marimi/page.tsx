@@ -137,15 +137,15 @@ export default function ConvertorMarimiPage() {
       />
 
       <nav className="text-xs text-[var(--text-muted)] mb-5">
-        <Link href="/" className="hover:text-white transition-colors">
+        <Link href="/" className="hover:text-[var(--foreground)] transition-colors">
           Acasă
         </Link>
         <span className="mx-1.5">/</span>
-        <Link href="/calculatoare" className="hover:text-white transition-colors">
+        <Link href="/calculatoare" className="hover:text-[var(--foreground)] transition-colors">
           Calculatoare
         </Link>
         <span className="mx-1.5">/</span>
-        <span className="text-white">Mărimi</span>
+        <span className="text-[var(--foreground)]">Mărimi</span>
       </nav>
 
       <h1 className="text-3xl sm:text-4xl font-black mb-3 leading-tight">
@@ -189,7 +189,7 @@ export default function ConvertorMarimiPage() {
               <Link
                 key={m.magazin}
                 href={`/cod-reducere/${m.magazin}`}
-                className="bg-[var(--surface-alt)] hover:bg-[var(--surface-high)] text-white text-sm font-semibold px-3.5 py-2 rounded-lg transition-colors"
+                className="bg-[var(--surface-alt)] hover:bg-[var(--surface-high)] text-[var(--foreground)] text-sm font-semibold px-3.5 py-2 rounded-lg transition-colors"
               >
                 {m.magazin}
               </Link>

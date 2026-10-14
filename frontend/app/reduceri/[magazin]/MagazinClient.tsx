@@ -91,7 +91,7 @@ export default function MagazinClient({ magazin: m }: { magazin: Magazin }) {
               />
             ) : (
               <div className={`w-full h-full rounded-xl ${culoare} flex items-center justify-center`}>
-                <span className="text-white font-black text-4xl">{initiala}</span>
+                <span className="text-[var(--foreground)] font-black text-4xl">{initiala}</span>
               </div>
             )}
           </div>

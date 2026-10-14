@@ -214,7 +214,7 @@ export default function BlackFridayPage() {
           <NewsletterCTA titlu="Ofertele active, pe email" />
         </section>
 
-        <section className="border-t border-[var(--border)] bg-[#0b0e12]">
+        <section className="border-t border-[var(--border)] bg-[var(--background)]">
           <div className="max-w-3xl mx-auto px-4 py-12">
             <h2 className="text-2xl font-black mb-6">Întrebări despre Black Friday {BF.an}</h2>
             <div className="space-y-6">

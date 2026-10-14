@@ -59,7 +59,7 @@ const PLATFORME = [
     ],
     dezavantaje: ["Comision la acțiuni peste 100.000 € rulaj lunar", "Conversia valutară se plătește când cumperi în altă monedă decât a contului", "Criptomonede doar prin CFD-uri"],
     ideal: "Investiții pe termen lung în ETF-uri și acțiuni",
-    culoare: "from-[#c3dd2c]/25 to-[#14181c]",
+    culoare: "from-[#c3dd2c]/25 to-[var(--surface)]",
   },
   {
     rank: 2,
@@ -80,14 +80,14 @@ const PLATFORME = [
     ],
     dezavantaje: ["Interfață complexă pentru începători", "Criptomonedele sunt foarte volatile: poți pierde tot ce investești"],
     ideal: "Cumpărare de crypto, pentru cine înțelege riscul",
-    culoare: "from-yellow-600/25 to-[#14181c]",
+    culoare: "from-yellow-600/25 to-[var(--surface)]",
   },
   {
     rank: 3,
     name: "eToro",
     tagline: "Platformă socială: vezi și copiezi portofoliile altor investitori",
     badge: "Social Trading",
-    badgeColor: "bg-green-600 text-[var(--foreground)]",
+    badgeColor: "bg-green-700 text-white",
     emoji: "🤝",
     tip: "Acțiuni, ETF-uri, crypto, copy trading",
     pret_min: "Depinde de țară — vezi pe site",
@@ -103,7 +103,7 @@ const PLATFORME = [
     ],
     dezavantaje: ["Taxe de conversie valutară, de retragere și de inactivitate — vezi grila", "Copy trading-ul copiază și pierderile"],
     ideal: "Începători care vor portofolii diversificate",
-    culoare: "from-green-700/40 to-[#14181c]",
+    culoare: "from-green-700/40 to-[var(--surface)]",
   },
   {
     rank: 4,
@@ -125,7 +125,7 @@ const PLATFORME = [
     ],
     dezavantaje: ["Fără suport telefonic", "Conversia valutară se plătește la tranzacțiile în altă monedă"],
     ideal: "Începători cu sume mici, investiții lunare",
-    culoare: "from-[#ddf93c]/20 to-[#14181c]",
+    culoare: "from-[#ddf93c]/20 to-[var(--surface)]",
   },
 ];
 
@@ -161,7 +161,7 @@ export default function TradingPage() {
         </nav>
 
         {/* Hero */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-emerald-950 via-[#14181c] to-[#14181c] py-16 px-4">
+        <section className="relative overflow-hidden bg-gradient-to-br from-emerald-950 via-[var(--surface)] to-[var(--surface)] py-16 px-4">
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute top-0 left-1/4 w-96 h-96 bg-emerald-600/15 rounded-full blur-3xl" />
             <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-[#ddf93c]/15 rounded-full blur-3xl" />
@@ -340,7 +340,7 @@ export default function TradingPage() {
 
         {/* Revolut bonus */}
         <section className="max-w-6xl mx-auto px-4 pb-8">
-          <div className="bg-gradient-to-r from-[#14181c] to-[#06080b] border border-[var(--accent-text)]/40 rounded-xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="bg-gradient-to-r from-[var(--surface)] to-[var(--background)] border border-[var(--accent-text)]/40 rounded-xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div>
               <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-1">ALTERNATIVĂ</p>
               <h3 className="text-xl font-black text-[var(--foreground)] mb-1">Revolut — actiuni si crypto in aplicatie</h3>

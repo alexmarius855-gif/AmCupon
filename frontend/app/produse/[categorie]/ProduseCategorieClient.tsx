@@ -68,7 +68,7 @@ function ProdusCard({
           onClick={(e) => { e.preventDefault(); e.stopPropagation(); onToggle(p); }}
           className={`absolute bottom-2 right-2 w-7 h-7 rounded-full flex items-center justify-center text-sm transition-all duration-150 shadow-lg ${
             isSaved
-              ? "bg-red-500 text-white scale-110"
+              ? "bg-red-600 text-white scale-110"
               : "bg-[var(--surface)]/80 text-[var(--text-soft)] opacity-0 group-hover:opacity-100 hover:text-red-400"
           }`}
           title={isSaved ? "Salvat in wishlist — click sa stergi" : "Salveaza in wishlist"}

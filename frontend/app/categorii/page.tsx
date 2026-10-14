@@ -242,7 +242,7 @@ export default function CategoriPage() {
       </header>
 
       {/* Hero */}
-      <div className="bg-gradient-to-br from-[#14181c] via-[#14181c] to-[#1f2329] py-10 px-4 border-b border-[var(--border)]">
+      <div className="bg-gradient-to-br from-[var(--surface)] via-[var(--surface)] to-[var(--surface-alt)] py-10 px-4 border-b border-[var(--border)]">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-3xl md:text-4xl font-black text-[var(--foreground)] mb-2">
             Toate categoriile
@@ -292,7 +292,7 @@ export default function CategoriPage() {
                 {c.nrOff > 0 ? (
                   <div className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full border mb-3" style={{ background: `${c.accent}22`, borderColor: `${c.accent}44` }}>
                     <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: c.accent }} />
-                    <span className="text-[10px] font-bold" style={{ color: c.accent }}>{c.nrOff} oferte</span>
+                    <span className="text-[10px] font-bold" style={{ color: `color-mix(in srgb, ${c.accent} 40%, var(--foreground))` }}>{c.nrOff} {c.nrOff === 1 ? "ofertă" : "oferte"}</span>
                   </div>
                 ) : (
                   <div className="inline-flex items-center gap-1 bg-[var(--surface-alt)] px-2 py-0.5 rounded-full mb-3">

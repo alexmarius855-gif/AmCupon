@@ -126,7 +126,7 @@ export default function MarimiClient() {
             className={`px-4 py-3 rounded-xl border text-sm font-bold transition-colors ${
               categorie === t.id
                 ? "bg-[#ddf93c] border-[var(--accent-text)] text-[#0f1216]"
-                : "bg-[var(--surface)] border-[var(--border)] text-white hover:bg-[var(--surface-alt)]"
+                : "bg-[var(--surface)] border-[var(--border)] text-[var(--foreground)] hover:bg-[var(--surface-alt)]"
             }`}
           >
             {t.eticheta}
@@ -143,7 +143,7 @@ export default function MarimiClient() {
         </label>
         <input
           id="cautare"
-          className="w-full bg-[#0f1216] border border-[var(--border)] rounded-lg px-4 py-3 text-lg font-semibold text-white outline-none focus:border-[var(--accent-text)] transition-colors"
+          className="w-full bg-[var(--surface)] border border-[var(--border)] rounded-lg px-4 py-3 text-lg font-semibold text-[var(--foreground)] outline-none focus:border-[var(--accent-text)] transition-colors"
           value={cautare}
           onChange={(e) => setCautare(e.target.value)}
           placeholder={categorie === "incaltaminte" ? "ex: 42" : "ex: 38"}
@@ -154,7 +154,7 @@ export default function MarimiClient() {
         <div className="overflow-x-auto">
           <table className="w-full text-sm min-w-[480px]">
             <thead>
-              <tr className="bg-[#0f1216] border-b border-[var(--border)]">
+              <tr className="bg-[var(--surface)] border-b border-[var(--border)]">
                 {tabel.coloane.map((c) => (
                   <th
                     key={c}
@@ -190,7 +190,7 @@ export default function MarimiClient() {
 
       <div className={`${CARD} p-5`}>
         <p className="text-sm text-[var(--text-muted)] leading-relaxed">
-          <span className="text-white font-semibold">Echivalențele sunt orientative.</span> Nu
+          <span className="text-[var(--foreground)] font-semibold">Echivalențele sunt orientative.</span> Nu
           există un standard unic: fiecare brand își croiește propriul tipar, iar o diferență de un
           număr între branduri e normală. Când magazinul are tabel propriu de mărimi, acela are
           prioritate. Pentru încălțăminte, măsoară talpa piciorului seara, când e ușor umflat.

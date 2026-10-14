@@ -254,7 +254,7 @@ export default function SearchModal() {
           })}
         </div>
 
-        <div className="flex items-center justify-between px-4 py-2.5 bg-[#0f1216] border-t border-[var(--border)] text-[11px] text-[var(--text-muted)]">
+        <div className="flex items-center justify-between px-4 py-2.5 bg-[var(--surface)] border-t border-[var(--border)] text-[11px] text-[var(--text-muted)]">
           <span>Navighezi cu &uarr; &darr; · deschizi cu Enter</span>
           <span className="font-mono">Esc</span>
         </div>

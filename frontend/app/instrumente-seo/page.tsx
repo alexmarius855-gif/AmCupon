@@ -106,7 +106,7 @@ export default function InstrumenteSeoPage() {
         </nav>
 
         {/* Hero */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-emerald-950 via-[#14181c] to-[#14181c] py-16 px-4">
+        <section className="relative overflow-hidden bg-gradient-to-br from-emerald-950 via-[var(--surface)] to-[var(--surface)] py-16 px-4">
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute top-0 left-1/3 w-80 h-80 bg-emerald-600/20 rounded-full blur-3xl" />
             <div className="absolute bottom-0 right-1/3 w-64 h-64 bg-[#ddf93c]/15 rounded-full blur-3xl" />
@@ -235,7 +235,7 @@ export default function InstrumenteSeoPage() {
             <h2 className="text-xl font-black text-[var(--foreground)] mb-2">Vrei ofertele active pe email?</h2>
             <p className="text-[var(--text-soft)] text-sm mb-5">Abonează-te la newsletterul AmCupon: o dată pe zi, ofertele active de la magazinele partenere.</p>
             <Link href="/newsletter"
-              className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-6 py-3 rounded-xl transition-colors shadow-lg shadow-emerald-500/25">
+              className="inline-flex items-center gap-2 bg-emerald-700 hover:bg-emerald-800 text-white font-bold px-6 py-3 rounded-xl transition-colors shadow-lg shadow-emerald-500/25">
               Mă abonez
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/></svg>
             </Link>

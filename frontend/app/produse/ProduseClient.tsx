@@ -160,7 +160,7 @@ function ProdusCard({ p, onSave, saved }: { p: Produs; onSave: () => void; saved
           {/* Merchant row */}
           <div className="flex items-center gap-1.5 mb-2">
             <div className={`w-5 h-5 rounded-md flex items-center justify-center overflow-hidden flex-shrink-0 ${logoBg(merchant)}`}>
-              <span className="text-white text-[9px] font-black">{merchantInitial}</span>
+              <span className="text-[var(--foreground)] text-[9px] font-black">{merchantInitial}</span>
             </div>
             <span className="text-[10px] text-[var(--text-soft)] font-medium truncate">{merchant}</span>
             {p.brand && p.brand !== merchant && (

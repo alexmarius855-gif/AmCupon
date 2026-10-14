@@ -1195,7 +1195,7 @@ export default function HomeClient({
 
         if (ofertePct.length < 3) return null;
         return (
-          <section className="reveal bg-gradient-to-b from-[#14181c] to-[#06080b] border-b border-[var(--border)] py-10 px-4">
+          <section className="reveal bg-gradient-to-b from-[var(--surface)] to-[var(--background)] border-b border-[var(--border)] py-10 px-4">
             <div className="max-w-7xl mx-auto">
               <div className="flex items-center justify-between mb-6">
                 <div>

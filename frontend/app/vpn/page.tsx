@@ -76,7 +76,7 @@ const VPN_LIST = [
     name: "ExpressVPN",
     tagline: "VPN cu protocol propriu (Lightway) și aplicație pentru router",
     badge: "Servere în peste 100 de țări",
-    badgeColor: "bg-red-600 text-[var(--foreground)]",
+    badgeColor: "bg-red-600 text-white",
     emoji: "⚡",
     url: LINK_EXPRESSVPN,
     pros: [

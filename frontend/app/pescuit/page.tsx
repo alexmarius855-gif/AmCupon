@@ -81,7 +81,7 @@ export default function PescuitPage() {
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-emerald-800 via-green-800 to-[#14181c] text-[var(--foreground)] py-12 px-4">
+        <section className="bg-gradient-to-br from-emerald-800 via-green-800 to-[var(--surface)] text-[var(--foreground)] py-12 px-4">
           <div className="max-w-6xl mx-auto text-center">
             <div className="text-5xl mb-4">🎣</div>
             <h1 className="text-3xl md:text-4xl font-black mb-3">
@@ -121,7 +121,7 @@ export default function PescuitPage() {
             <div className="text-center py-10 bg-[var(--surface)] rounded-xl">
               <p className="text-2xl mb-3">🎣</p>
               <p className="text-[var(--text-soft)] font-medium mb-2">Curand disponibil — verifica ofertele sport</p>
-              <Link href="/categorii/sport" className="inline-block bg-emerald-600 text-white font-bold px-6 py-3 rounded-xl hover:bg-emerald-500 transition-colors">
+              <Link href="/categorii/sport" className="inline-block bg-emerald-700 text-white font-bold px-6 py-3 rounded-xl hover:bg-emerald-500 transition-colors">
                 Sport & Outdoor →
               </Link>
             </div>
