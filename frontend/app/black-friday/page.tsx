@@ -70,6 +70,12 @@ function incarca(): Magazin[] {
 }
 
 const esteRomanesc = (m: Magazin) => /\.ro$/i.test(m.magazin);
+/**
+ * 14.10.2026: la Black Friday 2025, pe 2Performant s-au vandut cel mai mult carti, fashion si farmacie (BusinessLeague,
+ * citat de Capital). Partenerii din aceste categorii trec primii, dupa regula magazinelor .ro.
+ */
+const CATEGORII_BF = new Set(["carti-educatie", "fashion", "sanatate"]);
+const categorieBF = (m: Magazin) => CATEGORII_BF.has(String((m as { categorie_slug?: string }).categorie_slug || ""));
 
 /** Sursa unica pentru intrebari: din ea se face si textul vizibil, si schema FAQPage. */
 function intrebari(parteneri: number, cuOferta: number) {
@@ -88,7 +94,7 @@ function intrebari(parteneri: number, cuOferta: number) {
     },
     {
       q: "Cum afli dacă o reducere de Black Friday e reală?",
-      a: "Notează prețul produsului cu câteva săptămâni înainte și compară-l cu cel din ziua reducerii. Caută același produs în două-trei magazine și citește condițiile codului: valoarea minimă a comenzii și categoriile excluse.",
+      a: "În România, prețul tăiat de lângă o reducere trebuie să fie cel mai mic preț practicat de magazin în ultimele 30 de zile (HG 686/2022). Notează prețul cu câteva săptămâni înainte, compară-l cu cel din ziua reducerii și citește condițiile codului: valoarea minimă a comenzii și categoriile excluse.",
     },
   ];
 }
@@ -100,7 +106,9 @@ export default function BlackFridayPage() {
     .filter((m) => areLinkAfiliat(m) && m.are_promotie && (m.promotii?.length ?? 0) > 0)
     .sort(
       (a, b) =>
-        Number(esteRomanesc(b)) - Number(esteRomanesc(a)) || (b.scor_final ?? 0) - (a.scor_final ?? 0),
+        Number(esteRomanesc(b)) - Number(esteRomanesc(a)) ||
+        Number(categorieBF(b)) - Number(categorieBF(a)) ||
+        (b.scor_final ?? 0) - (a.scor_final ?? 0),
     );
   const afisate = cuOferta.slice(0, MAX_CARDURI);
   const oferte = cuOferta.reduce((n, m) => n + m.promotii.length, 0);
