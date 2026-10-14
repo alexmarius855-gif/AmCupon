@@ -1,5 +1,18 @@
 [
   {
+    "id": 273229,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273188/original/273188.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=cbc5347cf&aff_code=541547473&campaign_unique=573b44539",
+    "landing_raw": "https://www.aosom.ro/activity/comanda-ta-infricosator-de-buna",
+    "width": 1200,
+    "height": 1200,
+    "merchant": "aosom.ro ",
+    "merchant_slug": "aosom-ro",
+    "name": "TOATE CATEGORIILE",
+    "category": "TOATE CATEGORIILE",
+    "b_type": "image"
+  },
+  {
     "id": 273202,
     "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273161/original/273161.jpg",
     "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=05ffee155&aff_code=541547473&campaign_unique=4cc1a3cf7",

@@ -1,5 +1,5 @@
 # 💰 TOP MAGAZINE după POTENȚIAL DE CÂȘTIG
-> Generat automat 13.10.2026 16:13. Pe astea să le împingi (articole, pin-uri, postări).
+> Generat automat 14.10.2026 14:00. Pe astea să le împingi (articole, pin-uri, postări).
 
 **Scor = comision × popularitate × ofertă.** Comisionul mare singur înșală — astea-s banii REALI.
 
@@ -21,20 +21,20 @@
 | 14 | Labelshop (labelshop.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
 | 15 | Curteaveche (curteaveche.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
 | 16 | Uniquestore (uniquestore.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 17 | Zelto (zelto.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 18 | Avidlove (avidlove.com) | 10% | 0 | ✅ COD | 20.0 |
-| 19 | Cvlife (cvlife.com) | 10% | 0 | ✅ COD | 20.0 |
-| 20 | Billionconnect (billionconnect.net) | 10% | 0 | ✅ COD | 20.0 |
-| 21 | Wiskiiactive (wiskiiactive.com) | 10% | 0 | ✅ COD | 20.0 |
-| 22 | Nemira (nemira.ro) | 13% | 0 | 🏷️ ofertă | 18.2 |
-| 23 | Mooyius (mooyius.com) | 12% | 0 | 🏷️ ofertă | 16.8 |
-| 24 | E Potion (e-potion.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
-| 25 | Zandra (zandra.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
-| 26 | Oleya (oleya.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
-| 27 | Geekbuying (geekbuying.com) | 8% | 0 | ✅ COD | 16.0 |
-| 28 | Boyamic (store.boyamic.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 29 | Ashimaryhair (ashimaryhair.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 30 | Hototools (hototools.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 17 | Intimplay (intimplay.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 18 | Zelto (zelto.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 19 | Avidlove (avidlove.com) | 10% | 0 | ✅ COD | 20.0 |
+| 20 | Cvlife (cvlife.com) | 10% | 0 | ✅ COD | 20.0 |
+| 21 | Billionconnect (billionconnect.net) | 10% | 0 | ✅ COD | 20.0 |
+| 22 | Wiskiiactive (wiskiiactive.com) | 10% | 0 | ✅ COD | 20.0 |
+| 23 | Nemira (nemira.ro) | 13% | 0 | 🏷️ ofertă | 18.2 |
+| 24 | Mooyius (mooyius.com) | 12% | 0 | 🏷️ ofertă | 16.8 |
+| 25 | E Potion (e-potion.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
+| 26 | Zandra (zandra.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
+| 27 | Oleya (oleya.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
+| 28 | Geekbuying (geekbuying.com) | 8% | 0 | ✅ COD | 16.0 |
+| 29 | Boyamic (store.boyamic.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 30 | Ashimaryhair (ashimaryhair.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
 
 ## 🎯 Cum folosești raportul
 - **Top 10** = prioritate maximă pentru articole „cel mai bun X" + pin-uri Pinterest

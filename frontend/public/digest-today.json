@@ -1,7 +1,7 @@
 {
-  "data": "2026-10-13",
-  "data_afisata": "13 octombrie 2026",
-  "titlu": "Radarul AmCupon — 13 octombrie 2026",
+  "data": "2026-10-14",
+  "data_afisata": "14 octombrie 2026",
+  "titlu": "Radarul AmCupon — 14 octombrie 2026",
   "intro": "Am trecut azi prin ofertele active si am pastrat doar ce merita. Iese in evidenta Wiskiiactive si Klaiyihair, dar mai jos ai selectia completa, verificata de noi. Toate codurile sunt testate; cele cu termen scurt le-am marcat.",
   "picks": [
     {
@@ -15,8 +15,8 @@
       "descriere": "WISKII CLUB WEEK Offer: 20% OFF SITEWIDE Code: WISKII20 Valid: October 11 at 10:00 AM – October 19 at 10:00 AM EDT",
       "cod": "WISKII20",
       "url": "https://amcupon.ro/cod-reducere/wiskiiactive.com",
-      "zile_ramase": 6,
-      "take": "Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 5,
+      "take": "Grabeste-te: expira in 5 zile. Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
       "scor": 100,
@@ -29,8 +29,8 @@
       "descriere": "Here Are The Details Of The Klaiyi Hair Fall Getaway Vibes Promotion: 17% OFF Sitewide — Code: FALL17 $30 OFF Over $155 — Code: FALL30 $55 OFF Over $249 — Code: FALL60",
       "cod": "FALL60",
       "url": "https://amcupon.ro/cod-reducere/klaiyihair.com",
-      "zile_ramase": 3,
-      "take": "Grabeste-te: expira in 3 zile. Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 2,
+      "take": "Grabeste-te: expira in 2 zile. Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
       "scor": 100,
@@ -43,22 +43,22 @@
       "descriere": "Prime Day bei Redodo – Frühzugang mit bis zu 55% Rabatt, gefolgt von Top-Angeboten mit bis zu 60% Rabatt.",
       "cod": "PRIME10",
       "url": "https://amcupon.ro/cod-reducere/redodopower.de",
-      "zile_ramase": 2,
-      "take": "Grabeste-te: expira in 2 zile. Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 1,
+      "take": "Grabeste-te: expira in 1 zi. Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
       "scor": 75,
-      "magazin": "libris.ro",
-      "nume_afisat": "Libris",
+      "magazin": "carturesti.ro",
+      "nume_afisat": "Carturesti",
       "categorie": "Cărți & Educație",
       "categorie_slug": "carti-educatie",
-      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9868/medium/9868.gif",
-      "titlu": "Transport GRATUIT pentru ORICE colet, oriunde în țară",
+      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11380/medium/11380.png",
+      "titlu": "Săptămâna PSI Octombrie 2026",
       "descriere": "",
       "cod": "",
-      "url": "https://amcupon.ro/cod-reducere/libris.ro",
-      "zile_ramase": 1,
-      "take": "Grabeste-te: expira in 1 zi. Oferta verificata — buna daca te incadrezi in categorie."
+      "url": "https://amcupon.ro/cod-reducere/carturesti.ro",
+      "zile_ramase": 3,
+      "take": "Grabeste-te: expira in 3 zile. Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
       "scor": 75,
@@ -71,8 +71,8 @@
       "descriere": "",
       "cod": "",
       "url": "https://amcupon.ro/cod-reducere/noriel.ro",
-      "zile_ramase": 5,
-      "take": "Grabeste-te: expira in 5 zile. Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 4,
+      "take": "Grabeste-te: expira in 4 zile. Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
       "scor": 75,
@@ -85,8 +85,8 @@
       "descriere": "",
       "cod": "",
       "url": "https://amcupon.ro/cod-reducere/vegis.ro",
-      "zile_ramase": 5,
-      "take": "Grabeste-te: expira in 5 zile. Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 4,
+      "take": "Grabeste-te: expira in 4 zile. Oferta verificata — buna daca te incadrezi in categorie."
     }
   ],
   "outro": "Revino maine la Radar — alegem din nou ce merita, ca sa nu cauti tu prin sute de oferte.",
