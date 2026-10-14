@@ -12,7 +12,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
-**UPDATE 09–14.10.2026 (structura usor de modificat + tema „clasic luminos"):**
+**UPDATE 15.10.2026 — PILOT AUTOMAT + inapoi pe TEMA INCHISA:** dupa 0 lei in ~4 luni, Alex a pus site-ul pe
+pilot automat; sesiunile urmatoare = orientate pe clienti/leaduri/venit, nu functii noi de dragul lor. Tema
+luminoasa (mai jos) a fost SCOASA din `layout.tsx`, `HomeClient`, `MagazinClient` la cererea lui Alex — tema
+inchisa/lime e cea activa; `.tema-luminoasa` ramane in globals.css, nefolosita. Nou: pe pagina de magazin
+oferta cu procentul cel mai mare e prima, cu eticheta „Cea mai mare reducere azi" (`indexReducereMaxima`), iar
+meta description incepe cu oferta care expira in <=7 zile, cu data absoluta (`notaExpirare`, lib/oferta.ts).
+
+**UPDATE 09–14.10.2026 (structura usor de modificat + tema „clasic luminos" — tema SCOASA pe 15.10):**
 - **`docs/HARTA-SITE.md`** = „vrei sa schimbi X -> editezi Y". Citeste-o inainte de o modificare de aspect/texte.
 - **Culorile pe variabile pe TOT site-ul:** `scripts/tokenizeaza_culori.py` a inlocuit ~4.270 de culori scrise de mana
   (`bg-[#14181c]` -> `bg-[var(--surface)]`) in 108 fisiere; tema inchisa e identica (build 0). Cod nou: scrie direct
