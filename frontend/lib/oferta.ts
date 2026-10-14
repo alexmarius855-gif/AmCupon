@@ -148,3 +148,38 @@ export function indexReducereMaxima(promos: PromotieCupon[]): number {
   if (valide.filter((x) => x === max).length > 1) return -1;
   return procente.indexOf(max);
 }
+
+const LUNI_RO = ["ianuarie", "februarie", "martie", "aprilie", "mai", "iunie", "iulie", "august", "septembrie", "octombrie", "noiembrie", "decembrie"];
+
+/**
+ * 15.10.2026 — termenul ofertei care se termina cel mai curand, pentru meta description
+ * („Max Days Frumusete si Ingrijire — pana pe 18 octombrie."). In rezultatul Google, un termen
+ * apropiat aduce clicul; o propozitie generala („ofertele active acum") nu.
+ *
+ * Doar oferte cu data REALA de la retea (`expira`), care se termina in cel mult `maxZile` zile.
+ * Data se scrie ABSOLUT, niciodata „azi"/„maine": pagina se genereaza de 3 ori pe zi, iar un
+ * „azi" scris la 20:00 ar fi fals dimineata, pana la urmatoarea rulare. Dupa expirare, pipeline-ul
+ * scoate promotia, deci propozitia dispare singura. Functie pura: `zile_ramase` vine din pipeline.
+ */
+export function notaExpirare(
+  promos: Array<PromotieCupon & { expira?: string }>,
+  numeMagazin: string,
+  maxZile = 7,
+): string | null {
+  const candidati = promos
+    .filter((p) => /^\d{4}-\d{2}-\d{2}/.test(p.expira || "") && p.zile_ramase >= 0 && p.zile_ramase <= maxZile)
+    .sort((a, b) => a.zile_ramase - b.zile_ramase);
+  for (const p of candidati) {
+    let titlu = titluPromotie(p, numeMagazin)
+      // intervalul scris de retea in titlu („| 12-18.10.2026", „(6 - 15 octombrie)") — data o punem noi
+      .replace(/\s*[|–-]\s*\d{1,2}\s*[-–.]\s*\d{1,2}[.\d\s]*$/, "")
+      .replace(/\s*\(\s*\d{1,2}\s*-\s*\d{1,2}\s+[a-zăâîșț]+\s*\)/i, "")
+      .replace(/[\s.!:–-]+$/, "")
+      .trim();
+    if (!titlu || titlu.length < 6) continue;
+    if (titlu.length > 70) titlu = titlu.slice(0, 70).replace(/\s+\S*$/, "");
+    const [, l, z] = (p.expira as string).slice(0, 10).split("-").map(Number);
+    return `${titlu} — până pe ${z} ${LUNI_RO[l - 1]}.`;
+  }
+  return null;
+}

@@ -369,7 +369,7 @@ export default function HomeClient({
   }
 
   return (
-    <div className="gold-home tema-luminoasa min-h-screen bg-[var(--background)]">
+    <div className="gold-home min-h-screen bg-[var(--background)]">
       <style>{`
         .gold-home h1, .gold-home h2:not(.hl-t) { font-family: var(--font-display), Georgia, "Times New Roman", serif; letter-spacing: -0.015em; }
         @media (prefers-reduced-motion: no-preference) {

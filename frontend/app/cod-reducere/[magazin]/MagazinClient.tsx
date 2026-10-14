@@ -303,7 +303,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
   ];
 
   return (
-    <div className="tema-luminoasa min-h-screen bg-[var(--background)]">
+    <div className="min-h-screen bg-[var(--background)]">
 
       {/* ── HEADER ─────────────────────────────────────────────────────────── */}
       <header className="bg-[var(--surface)] border-b border-[var(--border)] sticky top-0 z-50">

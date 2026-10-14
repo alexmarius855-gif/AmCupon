@@ -13,7 +13,7 @@ import FaraLivrareRo, { tariLivrare, type Alternativa, type MagazinFaraLivrare }
 import { numeAfisat, brandDomeniu } from "@/lib/numeMagazin";
 import { alMagazinului } from "@/lib/produseMagazin";
 import { imagineSigura, normTitlu, titluAfisat } from "@/lib/topFeed";
-import { titluPromotie } from "@/lib/oferta";
+import { titluPromotie, notaExpirare } from "@/lib/oferta";
 
 interface Promotie {
   nume: string;
@@ -437,13 +437,17 @@ export async function generateMetadata({
   // „N coduri" numara doar promotiile CU cod (inainte numara toate promotiile ca „coduri").
   const descCustom = DESCRIERI_CUSTOM[slug];
   const descGeneric = nrCod > 0
-    ? `${nrCod} cod${nrCod > 1 ? "uri" : ""} de reducere ${nume} activ${nrCod > 1 ? "e" : ""} în ${luna} ${an}: ${m.promotii.find((p) => p.cod_cupon)?.nume ?? m.promotii[0].nume}. Actualizat de mai multe ori pe zi pe AmCupon.ro.`
+    ? `${nrCod} cod${nrCod > 1 ? "uri" : ""} de reducere ${nume} activ${nrCod > 1 ? "e" : ""} în ${luna} ${an}: ${titluPromotie(m.promotii.find((p) => p.cod_cupon) ?? m.promotii[0], nume)}. Actualizat de mai multe ori pe zi pe AmCupon.ro.`
     : nrPromo > 0
-    ? `${nrPromo} ofert${nrPromo > 1 ? "e" : "ă"} ${nume} activ${nrPromo > 1 ? "e" : "ă"} în ${luna} ${an}: ${m.promotii[0].nume}. Actualizat de mai multe ori pe zi pe AmCupon.ro.`
+    ? `${nrPromo} ofert${nrPromo > 1 ? "e" : "ă"} ${nume} activ${nrPromo > 1 ? "e" : "ă"} în ${luna} ${an}: ${titluPromotie(m.promotii[0], nume)}. Actualizat de mai multe ori pe zi pe AmCupon.ro.`
     : magazine.some((x) => x.magazin !== m.magazin && x.categorie_slug === m.categorie_slug && x.are_promotie)
     ? `Acum nu e niciun cod activ la ${nume}. Vezi magazinele din ${m.categorie} care au oferte azi și primește alertă pe email când apare un cod ${nume}.`
     : `Acum nu e niciun cod activ la ${nume}. Primește alertă pe email când apare unul — ofertele se actualizează de mai multe ori pe zi pe AmCupon.ro.`;
-  const description = descCustom || descGeneric;
+  // 15.10.2026: oferta care se termina in cel mult 7 zile merge in FATA descrierii — Google taie la
+  // ~155 de caractere, iar termenul („pana pe 18 octombrie") e ce aduce clicul. Vezi lib/oferta.ts.
+  const nota = notaExpirare(m.promotii, nume);
+  const baza = descCustom || descGeneric;
+  const description = nota && !baza.includes(nota) ? `${nota} ${baza}` : baza;
 
   // ── Indexare selectiva (vezi lib/seoIndexable.ts pentru masuratori + motiv) ──
   // Paginile fara continut propriu (fara promotie si fara produse) primesc

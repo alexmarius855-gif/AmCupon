@@ -8,7 +8,7 @@
  * eroare, nu cazuri anume: valoare care nu apare in text, cod ramas in titlu, titlu gol.
  */
 import { readFileSync } from "node:fs";
-import { valoareOferta, faraCod, titluPromotie, indexReducereMaxima } from "./oferta.ts";
+import { valoareOferta, faraCod, titluPromotie, indexReducereMaxima, notaExpirare } from "./oferta.ts";
 
 let esecuri = 0;
 const verifica = (nume, primit, asteptat) => {
@@ -95,6 +95,24 @@ verifica("zecimale: 9,5% < 10%", indexReducereMaxima([{ nume: "10% la tot" }, { 
 verifica("leii nu se compara cu procentele", indexReducereMaxima([{ nume: "50 lei reducere" }, { nume: "10% la tot" }]), -1);
 
 verifica("titlu = cod fara cod_cupon; descrierea il repeta -> descrierea fara cod", titluPromotie({ nume: "DH2026OCTSAVE3", descriere: "Save $3 on orders over $29 using coupon DH2026OCTSAVE3 at DHgate.", cod_cupon: "" }, "DHgate"), "Save $3 on orders over $29 using coupon at DHgate.");
+
+// 15.10.2026 — notaExpirare (termenul in meta description)
+console.log("\n  notaExpirare:");
+verifica("alege oferta care expira cel mai curand, cu data absoluta",
+  notaExpirare([{ nume: "Ofertele lunii", zile_ramase: 15, expira: "2026-10-30" }, { nume: "Max Days Frumusete si Ingrijire", zile_ramase: 3, expira: "2026-10-18" }], "Dr. Max"),
+  "Max Days Frumusete si Ingrijire — până pe 18 octombrie.");
+verifica("peste 7 zile -> nimic", notaExpirare([{ nume: "Toamna Literara", zile_ramase: 16, expira: "2026-10-31" }], "Nemira"), null);
+verifica("fara data reala -> nimic (99 = necunoscut)", notaExpirare([{ nume: "Reducere 10%", zile_ramase: 5 }], "X"), null);
+verifica("expirata -> nimic", notaExpirare([{ nume: "Reducere 10%", zile_ramase: -1, expira: "2026-10-01" }], "X"), null);
+verifica("intervalul din titlu scos (noriel)",
+  notaExpirare([{ nume: "20% REDUCERE la cumparaturi LEGO City de minimum 149 lei| 12-18.10.2026", zile_ramase: 3, expira: "2026-10-18" }], "Noriel"),
+  "20% REDUCERE la cumparaturi LEGO City de minimum 149 lei — până pe 18 octombrie.");
+verifica("intervalul in paranteza scos (litera)",
+  notaExpirare([{ nume: "Sarbatorim 85 milioane de carti in casele romanilor (6 - 15 octombrie)", zile_ramase: 0, expira: "2026-10-15" }], "Litera"),
+  "Sarbatorim 85 milioane de carti in casele romanilor — până pe 15 octombrie.");
+verifica("titlul = codul -> descrierea, nu codul",
+  notaExpirare([{ nume: "SAVE10", descriere: "10% off sitewide", cod_cupon: "SAVE10", zile_ramase: 2, expira: "2026-11-02" }], "Helloice"),
+  "10% off sitewide — până pe 2 noiembrie.");
 
 console.log(esecuri ? `\n  ${esecuri} ESECURI` : "\n  Toate testele trec.");
 process.exit(esecuri ? 1 : 0);

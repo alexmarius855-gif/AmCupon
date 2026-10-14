@@ -173,9 +173,9 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <Navbar />
         <AnuntAnimat />
-        {/* 14.10.2026: tot continutul paginilor pe tema „clasic luminos"; antetul si subsolul raman inchise
-            (macheta docs/design/macheta/amcupon-clasic.html). Tokenii: .tema-luminoasa in globals.css. */}
-        <div className="tema-luminoasa flex-1">{children}</div>
+        {/* 15.10.2026: inapoi pe tema inchisa (alegerea lui Alex). Tema luminoasa ramane in globals.css
+            (.tema-luminoasa) — se reactiveaza punand clasa pe acest div. */}
+        <div className="flex-1">{children}</div>
         {/* Cautare globala (Cmd+K). Montata o data, aici — nu duplicata pe pagini. */}
         <SearchModal />
         <Footer magazineInDate={magazineInDate()} />
