@@ -19,6 +19,11 @@ Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Pro
   `bg-[var(--surface)]`, nu hex. Raman fixe intentionat: butoanele lime (text `#0c1000`), logo-urile albe, gradientele.
 - **Tema luminoasa pe zone:** `.tema-luminoasa` in `globals.css` (alte valori pentru aceiasi tokeni). Pagina de magazin
   o poarta din 09.10 (live). Urmatoarele pagini: adaugi clasa pe elementul exterior + verifici contrastul.
+- **Tema luminoasa pe TOT continutul (14.10):** `layout.tsx` invaleste `{children}` in `.tema-luminoasa`; antetul si
+  subsolul raman inchise. In `globals.css` sunt si variantele inchise pentru culorile Tailwind deschise folosite ca text.
+  `scripts/tokenizeaza_culori_2.py` = gradiente/fundaluri inchise -> tokeni; text alb pe insigne COLORATE ramane alb.
+  Culori de categorie ca text: `color-mix(in srgb, <culoare> 40%, var(--foreground))`. Verificat: scanare de contrast
+  pe 33 de tipuri de pagini (0 probleme). **Capcana:** dupa o modificare in globals.css, `rm -rf .next` inainte de dev.
 - **`lib/site.ts`** = meniul (`MENIU_PRINCIPAL`, `MENIU_MOBIL`), subsolul (`SUBSOL`), `SITE` (email, retele sociale).
   Navbar.tsx si Footer.tsx doar le afiseaza.
 - Macheta aleasa: `docs/design/macheta/amcupon-clasic.html` (generator `macheta_clasic.py`, date reale).
