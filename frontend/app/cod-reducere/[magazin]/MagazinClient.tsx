@@ -9,6 +9,12 @@ import PriceAlert from "../../components/PriceAlert";
 import ReviewSection from "./ReviewSection";
 import ShareButton from "../../components/ShareButton";
 import CuponCard from "../../components/CuponCard";
+import { indexReducereMaxima, type PromotieCupon } from "@/lib/oferta";
+
+function cuReducereaMaximaPrima<T extends PromotieCupon>(lista: T[]): { lista: T[]; top: boolean } {
+  const i = indexReducereMaxima(lista);
+  return i < 0 ? { lista, top: false } : { lista: [lista[i], ...lista.filter((_, j) => j !== i)], top: true };
+}
 import BannerAd2P from "../../components/BannerAd2P";
 import RedirectModal from "../../components/RedirectModal";
 import { useCopyCod } from "../../hooks/useCopyCod";
@@ -215,10 +221,13 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
   const an        = new Date().getFullYear();
   const initiala  = nume.charAt(0).toUpperCase();
 
-  const cuCod     = m.promotii.filter(p => p.cod_cupon);
+  // 14.10.2026: oferta cu cea mai mare reducere procentuala trece prima, cu eticheta ei (ca Today's top offer).
+  const ordCod    = cuReducereaMaximaPrima(m.promotii.filter(p => p.cod_cupon));
+  const cuCod     = ordCod.lista;
   // Pe pagina fara cod: magazinele din aceeasi categorie care au un cod REAL, cu cardul lui.
   const similareCuCod = similare.filter((x) => x.cod_real && x.oferta).slice(0, 3);
-  const faraCodd  = m.promotii.filter(p => !p.cod_cupon);
+  const ordOferte = cuReducereaMaximaPrima(m.promotii.filter(p => !p.cod_cupon));
+  const faraCodd  = ordOferte.lista;
 
   // Prospetime REALA fata de ultima_verificare (setat de merge_platforms.py la fiecare
   // rulare a pipeline-ului) — inainte badge-ul afisa new Date() necondiționat, adica
@@ -481,6 +490,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                         numeMagazin={nume}
                         logoSrc={logoSrc}
                         link={link}
+                        top={ordCod.top && idx === 0}
                         dezvaluit={revealed.has(idx)}
                         copiat={copiat === idx}
                         onDezvaluie={() => copiazaCod(idx, promo.cod_cupon, link)}
@@ -616,6 +626,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                         numeMagazin={nume}
                         logoSrc={logoSrc}
                         link={link}
+                        top={ordOferte.top && idx === 0}
                         extra={
                           <ShareButton
                             pageSlug={`/cod-reducere/${m.magazin}`}

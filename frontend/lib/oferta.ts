@@ -128,3 +128,23 @@ export function titluPromotie(p: { nume?: string; descriere?: string; cod_cupon?
   if (desc) return desc;
   return (p.cod_cupon || "").trim() ? `Cod de reducere ${numeMagazin}` : `Ofertă ${numeMagazin}`;
 }
+
+/**
+ * Indexul ofertei cu cel mai mare PROCENT de reducere, pentru eticheta „Cea mai mare reducere azi" de pe pagina de
+ * magazin (14.10.2026, dupa „Today's top offer" de la RetailMeNot). Eticheta e un fapt masurabil, nu o parere,
+ * deci: doar procente (sumele in lei sau „livrare gratuita" nu se compara cu procentele), cel putin 2 oferte cu
+ * procent, iar maximul trebuie sa fie STRICT mai mare decat al doilea — la egalitate nu exista „cea mai mare".
+ * Intoarce -1 cand nu se poate spune.
+ */
+export function indexReducereMaxima(promos: PromotieCupon[]): number {
+  const procente = promos.map((p) => {
+    // „-30%" sau „până la 50%" (prefixul e separat, textul ramane „50%"); zecimalele cu virgula („-9,5%")
+    const m = valoareOferta(p).text.match(/^-?(\d{1,2}(?:,\d)?)%$/);
+    return m ? Number(m[1].replace(",", ".")) : -1;
+  });
+  const valide = procente.filter((x) => x > 0);
+  if (valide.length < 2) return -1;
+  const max = Math.max(...valide);
+  if (valide.filter((x) => x === max).length > 1) return -1;
+  return procente.indexOf(max);
+}

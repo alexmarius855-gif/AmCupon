@@ -8,7 +8,7 @@
  * eroare, nu cazuri anume: valoare care nu apare in text, cod ramas in titlu, titlu gol.
  */
 import { readFileSync } from "node:fs";
-import { valoareOferta, faraCod, titluPromotie } from "./oferta.ts";
+import { valoareOferta, faraCod, titluPromotie, indexReducereMaxima } from "./oferta.ts";
 
 let esecuri = 0;
 const verifica = (nume, primit, asteptat) => {
@@ -84,6 +84,15 @@ verifica("titlu si descriere = cod -> eticheta generica", titluPromotie({ nume: 
 verifica("codul scos din titlu, restul ramane", titluPromotie({ nume: "20% reducere – Cod LAMODA", cod_cupon: "LAMODA" }, "Incaltamintelamoda"), "20% reducere");
 verifica("titlu normal neatins", titluPromotie({ nume: "Reduceri de pana la 70% la produse pentru caini", cod_cupon: "" }, "Happypets"), "Reduceri de pana la 70% la produse pentru caini");
 verifica("un singur cuvant obisnuit nu e cod", titluPromotie({ nume: "Reduceri", cod_cupon: "" }, "X"), "Reduceri");
+
+// 14.10.2026 — indexReducereMaxima (eticheta „Cea mai mare reducere azi")
+console.log("\n  indexReducereMaxima:");
+verifica("alege procentul cel mai mare", indexReducereMaxima([{ nume: "10% la tot cosul" }, { nume: "Reducere 25% la pantofi" }, { nume: "15% extra" }]), 1);
+verifica("o singura oferta cu procent -> nimic", indexReducereMaxima([{ nume: "10% la tot cosul" }, { nume: "Livrare gratuita" }]), -1);
+verifica("egalitate -> nimic", indexReducereMaxima([{ nume: "20% la tot" }, { nume: "20% la carti" }]), -1);
+verifica("„pana la 50%\" (atelier49) se compara cu procentele", indexReducereMaxima([{ nume: "Reduceri de pana la 36%" }, { nume: "Reduceri de pana la 50%" }, { nume: "Reduceri de pana la 41%" }]), 1);
+verifica("zecimale: 9,5% < 10%", indexReducereMaxima([{ nume: "10% la tot" }, { nume: "9.5% off on first bulk order" }]), 0);
+verifica("leii nu se compara cu procentele", indexReducereMaxima([{ nume: "50 lei reducere" }, { nume: "10% la tot" }]), -1);
 
 verifica("titlu = cod fara cod_cupon; descrierea il repeta -> descrierea fara cod", titluPromotie({ nume: "DH2026OCTSAVE3", descriere: "Save $3 on orders over $29 using coupon DH2026OCTSAVE3 at DHgate.", cod_cupon: "" }, "DHgate"), "Save $3 on orders over $29 using coupon at DHgate.");
 

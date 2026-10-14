@@ -34,9 +34,11 @@ interface Props {
   onIesire?: () => void;
   /** Sloturi sub text: vot, partajare. */
   extra?: ReactNode;
+  /** Oferta cu cea mai mare reducere procentuala a magazinului (lib/oferta.ts::indexReducereMaxima). */
+  top?: boolean;
 }
 
-export default function CuponCard({ promo, numeMagazin, logoSrc, link, dezvaluit, copiat, onDezvaluie, onIesire, extra }: Props) {
+export default function CuponCard({ promo, numeMagazin, logoSrc, link, dezvaluit, copiat, onDezvaluie, onIesire, extra, top }: Props) {
   const [logoOk, setLogoOk] = useState(true);
   const [recopiat, setRecopiat] = useState(false);
   const copiazaRef = useRef<HTMLButtonElement>(null);
@@ -71,7 +73,8 @@ export default function CuponCard({ promo, numeMagazin, logoSrc, link, dezvaluit
   }
 
   return (
-    <article className="cc">
+    <article className={top ? "cc cc-top-oferta" : "cc"}>
+      {top && <span className="cc-banda">Cea mai mare reducere azi</span>}
       <div className="cc-val">
         <div className="cc-logo">
           {logoSrc && logoOk ? (
