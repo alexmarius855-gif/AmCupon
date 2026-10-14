@@ -1,13 +1,13 @@
 {
-  "generat": "2026-10-13",
-  "total_magazine": 959,
-  "cu_promotie": 132,
+  "generat": "2026-10-14",
+  "total_magazine": 957,
+  "cu_promotie": 133,
   "cu_cod_real": 39,
-  "doar_oferta": 93,
-  "procent_cu_promotie": 13.8,
+  "doar_oferta": 94,
+  "procent_cu_promotie": 13.9,
   "procent_cu_cod": 4.1,
-  "reducere_mediana_generala": 25,
-  "magazine_cu_procent_declarat": 85,
+  "reducere_mediana_generala": 25.0,
+  "magazine_cu_procent_declarat": 86,
   "categorii": [
     {
       "slug": "carti-educatie",
@@ -46,15 +46,6 @@
       "esantion": 11
     },
     {
-      "slug": "marketplace",
-      "nume": "Marketplace",
-      "magazine": 192,
-      "cu_promotie": 12,
-      "reducere_mediana": 30.0,
-      "reducere_max": 60,
-      "esantion": 6
-    },
-    {
       "slug": "electronice",
       "nume": "Electronice & IT",
       "magazine": 84,
@@ -62,6 +53,15 @@
       "reducere_mediana": 27.5,
       "reducere_max": 75,
       "esantion": 8
+    },
+    {
+      "slug": "marketplace",
+      "nume": "Marketplace",
+      "magazine": 192,
+      "cu_promotie": 13,
+      "reducere_mediana": 25,
+      "reducere_max": 60,
+      "esantion": 7
     },
     {
       "slug": "copii",
@@ -93,7 +93,7 @@
     {
       "slug": "sanatate",
       "nume": "Sănătate & farmacie",
-      "magazine": 49,
+      "magazine": 48,
       "cu_promotie": 13,
       "reducere_mediana": 20,
       "reducere_max": 50,
@@ -102,7 +102,7 @@
     {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
-      "magazine": 126,
+      "magazine": 125,
       "cu_promotie": 22,
       "reducere_mediana": 17,
       "reducere_max": 82,
