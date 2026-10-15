@@ -492,8 +492,8 @@
    "magazine": 129
   },
   "2026-10-15": {
-   "promotii": 254,
-   "magazine": 125
+   "promotii": 256,
+   "magazine": 126
   }
  },
  "magazine": {
@@ -3217,6 +3217,17 @@
     "activa": false
    }
   ],
+  "evomag.ro": [
+   {
+    "k": "blackfriday2026laevomag|",
+    "titlu": "Black Friday 2026 la evomag",
+    "cod": false,
+    "prima": "2026-10-15",
+    "ultima": "2026-10-15",
+    "expira": "2026-11-14",
+    "activa": true
+   }
+  ],
   "evrik.ro": [
    {
     "k": "evrik15reducerelasaltelesitoppereaugust2026|",
@@ -5500,6 +5511,15 @@
    }
   ],
   "litera.ro": [
+   {
+    "k": "crestemcititorireduceridepanala751620octombrie|",
+    "titlu": "🎈 Creștem cititori - reduceri de până la 75% (16 - 20 octombrie) 🎈",
+    "cod": false,
+    "prima": "2026-10-15",
+    "ultima": "2026-10-15",
+    "expira": "2026-10-20",
+    "activa": true
+   },
    {
     "k": "sarbatorim85milioanedecartiincaseleromanilor615octombrie|",
     "titlu": "🎉 Sărbătorim 85 milioane de cărți în casele românilor (6 - 15 octombrie) 🎉",

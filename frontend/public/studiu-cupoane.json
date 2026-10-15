@@ -1,27 +1,27 @@
 {
   "generat": "2026-10-15",
-  "total_magazine": 451,
-  "cu_promotie": 73,
+  "total_magazine": 452,
+  "cu_promotie": 74,
   "cu_cod_real": 3,
-  "doar_oferta": 70,
-  "procent_cu_promotie": 16.2,
+  "doar_oferta": 71,
+  "procent_cu_promotie": 16.4,
   "procent_cu_cod": 0.7,
-  "reducere_mediana_generala": 35,
-  "magazine_cu_procent_declarat": 39,
+  "reducere_mediana_generala": 37.5,
+  "magazine_cu_procent_declarat": 40,
   "categorii": [
     {
       "slug": "carti-educatie",
       "nume": "Cărți & educație",
       "magazine": 21,
       "cu_promotie": 8,
-      "reducere_mediana": 65.0,
+      "reducere_mediana": 75,
       "reducere_max": 90,
-      "esantion": 4
+      "esantion": 5
     },
     {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
-      "magazine": 98,
+      "magazine": 97,
       "cu_promotie": 18,
       "reducere_mediana": 50,
       "reducere_max": 82,
@@ -57,7 +57,7 @@
     {
       "slug": "sanatate",
       "nume": "Sănătate & farmacie",
-      "magazine": 38,
+      "magazine": 39,
       "cu_promotie": 12,
       "reducere_mediana": 22.5,
       "reducere_max": 50,
@@ -73,22 +73,22 @@
       "esantion": 2
     },
     {
+      "slug": "electronice",
+      "nume": "Electronice & IT",
+      "magazine": 32,
+      "cu_promotie": 4,
+      "reducere_mediana": null,
+      "reducere_max": null,
+      "esantion": 0
+    },
+    {
       "slug": "auto-moto",
       "nume": "Auto & moto",
-      "magazine": 19,
+      "magazine": 20,
       "cu_promotie": 2,
       "reducere_mediana": null,
       "reducere_max": null,
       "esantion": 1
-    },
-    {
-      "slug": "electronice",
-      "nume": "Electronice & IT",
-      "magazine": 32,
-      "cu_promotie": 3,
-      "reducere_mediana": null,
-      "reducere_max": null,
-      "esantion": 0
     },
     {
       "slug": "marketplace",
