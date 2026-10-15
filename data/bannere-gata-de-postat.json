@@ -1,5 +1,31 @@
 [
   {
+    "id": 273250,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273209/original/273209.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=599a9732e&aff_code=541547473&campaign_unique=e79c3922a",
+    "landing_raw": "https://www.ozone.ro/landing/halloween/",
+    "width": 1200,
+    "height": 1200,
+    "merchant": "ozone.ro",
+    "merchant_slug": "ozone-ro",
+    "name": "Halloween 2026",
+    "category": "Halloween 2026",
+    "b_type": "image"
+  },
+  {
+    "id": 273242,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273201/original/273201.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=1781ce55a&aff_code=541547473&campaign_unique=6390e3cfb",
+    "landing_raw": "https://www.drmax.ro/max-days-frumusete-si-ingrijire",
+    "width": 1080,
+    "height": 1080,
+    "merchant": "drmax.ro/",
+    "merchant_slug": "drmax-ro",
+    "name": "Max Days - Frumusete",
+    "category": "Max Days - Frumusete",
+    "b_type": "image"
+  },
+  {
     "id": 273229,
     "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273188/original/273188.jpg",
     "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=cbc5347cf&aff_code=541547473&campaign_unique=573b44539",
