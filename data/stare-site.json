@@ -1,17 +1,17 @@
 {
-  "data": "2026-10-15 10:40",
+  "data": "2026-10-15 20:18",
   "stare": {
-    "magazine": 954,
-    "cu_promotie": 129,
+    "magazine": 955,
+    "cu_promotie": 130,
     "cu_cod": 38,
     "fara_link_platit": 0,
-    "produse": 19998,
+    "produse": 20000,
     "produse_fara_link": 0,
     "produse_sub_1_leu": 0,
     "promotii_cu_pret": 0,
     "articole": 510,
     "articole_cu_cod_in_clar": 0,
-    "istoric_magazine": 241,
-    "istoric_promotii": 859
+    "istoric_magazine": 242,
+    "istoric_promotii": 861
   }
 }
