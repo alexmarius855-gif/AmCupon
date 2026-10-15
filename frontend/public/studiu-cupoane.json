@@ -1,19 +1,19 @@
 {
-  "generat": "2026-10-14",
-  "total_magazine": 958,
-  "cu_promotie": 132,
+  "generat": "2026-10-15",
+  "total_magazine": 955,
+  "cu_promotie": 129,
   "cu_cod_real": 38,
-  "doar_oferta": 94,
-  "procent_cu_promotie": 13.8,
+  "doar_oferta": 91,
+  "procent_cu_promotie": 13.5,
   "procent_cu_cod": 4.0,
-  "reducere_mediana_generala": 22.5,
-  "magazine_cu_procent_declarat": 86,
+  "reducere_mediana_generala": 20,
+  "magazine_cu_procent_declarat": 85,
   "categorii": [
     {
       "slug": "carti-educatie",
       "nume": "Cărți & educație",
       "magazine": 30,
-      "cu_promotie": 11,
+      "cu_promotie": 9,
       "reducere_mediana": 50,
       "reducere_max": 90,
       "esantion": 5
@@ -55,12 +55,12 @@
       "esantion": 8
     },
     {
-      "slug": "copii",
-      "nume": "Copii & familie",
-      "magazine": 28,
-      "cu_promotie": 4,
-      "reducere_mediana": 25.0,
-      "reducere_max": 33,
+      "slug": "sanatate",
+      "nume": "Sănătate & farmacie",
+      "magazine": 46,
+      "cu_promotie": 12,
+      "reducere_mediana": 22.5,
+      "reducere_max": 50,
       "esantion": 4
     },
     {
@@ -73,36 +73,36 @@
       "esantion": 3
     },
     {
-      "slug": "marketplace",
-      "nume": "Marketplace",
-      "magazine": 193,
-      "cu_promotie": 13,
-      "reducere_mediana": 20,
-      "reducere_max": 55,
-      "esantion": 7
-    },
-    {
       "slug": "calatorii",
       "nume": "Călătorii",
-      "magazine": 83,
+      "magazine": 82,
       "cu_promotie": 10,
       "reducere_mediana": 20,
       "reducere_max": 45,
       "esantion": 9
     },
     {
-      "slug": "sanatate",
-      "nume": "Sănătate & farmacie",
-      "magazine": 48,
-      "cu_promotie": 13,
+      "slug": "copii",
+      "nume": "Copii & familie",
+      "magazine": 28,
+      "cu_promotie": 3,
       "reducere_mediana": 20,
-      "reducere_max": 50,
-      "esantion": 5
+      "reducere_max": 30,
+      "esantion": 3
+    },
+    {
+      "slug": "marketplace",
+      "nume": "Marketplace",
+      "magazine": 193,
+      "cu_promotie": 14,
+      "reducere_mediana": 17.5,
+      "reducere_max": 55,
+      "esantion": 8
     },
     {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
-      "magazine": 126,
+      "magazine": 127,
       "cu_promotie": 22,
       "reducere_mediana": 17,
       "reducere_max": 82,
@@ -138,7 +138,7 @@
     {
       "slug": "auto-moto",
       "nume": "Auto & moto",
-      "magazine": 24,
+      "magazine": 23,
       "cu_promotie": 2,
       "reducere_mediana": null,
       "reducere_max": null,
