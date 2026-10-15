@@ -130,6 +130,9 @@ def sectiunea_2() -> None:
 
 def sectiunea_3(magazine) -> None:
     print("\n[3] Studiul — cifra publicata vs. datele de azi")
+    # Din 15.10.2026 studiul numara doar magazinele .ro; aceeasi regula, din acelasi loc.
+    from generate_studiu_cupoane import e_magazin_ro
+    magazine = [m for m in magazine if e_magazin_ro(m)]
     cu_cod = [m for m in magazine if are_cod_real(m)]
     procent_azi = len(cu_cod) / len(magazine) * 100 if magazine else 0
     print(f"    date ({OUTPUT.name}):  {len(cu_cod)} din {len(magazine)} magazine = {procent_azi:.1f}%")

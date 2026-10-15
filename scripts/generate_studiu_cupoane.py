@@ -69,6 +69,9 @@ NUME_CATEGORIE = {
     "auto-moto": "Auto & moto", "marketplace": "Marketplace", "servicii": "Servicii",
 }
 
+# Slug-uri venite din retele care nu sunt in taxonomia noastra (ex. 2Performant „Online Mall").
+ALIAS_CATEGORIE = {"online-mall": "marketplace"}
+
 # Numele afisabile ale retelelor. Cheile sunt valorile REALE din campul `platforma`.
 NUME_RETEA = {
     "2performant": "2Performant",
@@ -160,8 +163,28 @@ def serie_lunara(istoric: dict, magazine: list, azi: str) -> list:
     return rezultat
 
 
+def e_magazin_ro(m) -> bool:
+    """Magazin romanesc = domeniu .ro. Aceeasi conventie ca seria lunara (`top_ro`).
+
+    De ce (15.10.2026): dupa ce au intrat ofertele Impact, 35 din 38 de magazine „cu cod"
+    erau branduri internationale (si vidaxl.bg, prin 2Performant). Pagina spunea „magazine
+    online romanesti" despre ele: fals, pe pagina facuta ca sa fie citata de presa.
+    Cifrele principale se calculeaza DOAR pe .ro; restul apare separat, ca „international".
+    """
+    return (m.get("magazin") or "").lower().strip().endswith(".ro")
+
+
+def numara(magazine: list) -> dict:
+    cu_promotie = [m for m in magazine if m.get("are_promotie") and m.get("promotii")]
+    cu_cod = [m for m in cu_promotie
+              if any((p.get("cod_cupon") or "").strip() for p in m["promotii"])]
+    return {"total": len(magazine), "cu_promotie": len(cu_promotie), "cu_cod": len(cu_cod)}
+
+
 def main():
-    magazine = json.loads(INTRARE.read_text(encoding="utf-8"))
+    toate_magazinele = json.loads(INTRARE.read_text(encoding="utf-8"))
+    magazine = [m for m in toate_magazinele if e_magazin_ro(m)]
+    international = numara([m for m in toate_magazinele if not e_magazin_ro(m)])
 
     cu_promotie = [m for m in magazine if m.get("are_promotie") and m.get("promotii")]
     cu_cod = [m for m in cu_promotie
@@ -171,6 +194,7 @@ def main():
     pe_categorie = defaultdict(lambda: {"magazine": 0, "cu_promotie": 0, "procente": []})
     for m in magazine:
         slug = (m.get("categorie_slug") or "").lower().strip()
+        slug = ALIAS_CATEGORIE.get(slug, slug)
         if not slug:
             continue
         c = pe_categorie[slug]
@@ -210,19 +234,21 @@ def main():
         "reducere_mediana_generala": round(statistics.median(toate_procentele), 1) if toate_procentele else None,
         "magazine_cu_procent_declarat": len(toate_procentele),
         "categorii": categorii,
+        "criteriu": "domeniu .ro",
+        "international": international,
         # Derivat din DATE, nu scris de mana. Lista hardcodata a ramas cu
         # "Profitshare" dupa excluderea din 19.08.2026 si a publicat o afirmatie
         # falsa pe o pagina destinata sa fie citata de altii — exact pagina unde
         # o inexactitate costa cel mai mult.
         "retele": sorted({
             NUME_RETEA.get(p, p.title())
-            for p in ((m.get("platforma") or "").strip().lower() for m in magazine)
+            for p in ((m.get("platforma") or "").strip().lower() for m in toate_magazinele)
             if p and p != "direct"
         }),
         "prag_esantion": PRAG_ESANTION,
         "serie_de_la": SERIE_CURATA_DE_LA,
         "lunar": serie_lunara(json.loads(ISTORIC.read_text(encoding="utf-8")) if ISTORIC.exists() else {},
-                              magazine, datetime.now(timezone.utc).strftime("%Y-%m-%d")),
+                              toate_magazinele, datetime.now(timezone.utc).strftime("%Y-%m-%d")),
     }
 
     IESIRE.write_text(json.dumps(studiu, ensure_ascii=False, indent=2), encoding="utf-8")

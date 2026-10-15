@@ -62,6 +62,9 @@ interface Studiu {
   prag_esantion: number;
   serie_de_la?: string;
   lunar?: Luna[];
+  /** Din 15.10.2026: cifrele de mai sus sunt doar pe magazinele cu domeniu .ro. */
+  criteriu?: string;
+  international?: { total: number; cu_promotie: number; cu_cod: number };
 }
 
 const LUNA = new Intl.DateTimeFormat("ro-RO", { month: "long", year: "numeric", timeZone: "UTC" });
@@ -89,7 +92,7 @@ export function generateMetadata(): Metadata {
   return {
     title: `${titlu} | AmCupon.ro`,
     description: s
-      ? `Studiu pe ${s.total_magazine} de magazine online romanesti: doar ${s.cu_cod_real} au cod de reducere activ, ${s.cu_promotie} au promotii fara cod. Reduceri mediane pe categorii, date actualizate ${s.generat}.`
+      ? `Studiu pe ${s.total_magazine} de magazine online romanesti: doar ${s.cu_cod_real} au cod de reducere activ, ${s.doar_oferta} au promotii fara cod. Reduceri mediane pe categorii, date actualizate ${s.generat}.`
       : "Studiu pe magazinele online romanesti: cate au cu adevarat coduri de reducere active.",
     keywords: [
       "studiu coduri reducere romania", "cate magazine au cupoane", "reduceri online romania date",
@@ -189,8 +192,8 @@ export default function StudiuPage() {
           </h1>
           <p className="text-[var(--text-soft)] text-lg leading-relaxed">
             Urmarim automat promotiile din {s.total_magazine.toLocaleString("ro-RO")} de magazine
-            care vand in Romania. Am numarat cate au cu adevarat un cod de cupon activ, si cate
-            doar par sa aiba. Rezultatul nu ne avantajeaza: administram un site de cupoane.
+            online romanesti (cu domeniu .ro). Am numarat cate au cu adevarat un cod de cupon
+            activ, si cate doar par sa aiba. Rezultatul nu ne avantajeaza: administram un site de cupoane.
           </p>
         </header>
 
@@ -199,8 +202,8 @@ export default function StudiuPage() {
           <div className="grid sm:grid-cols-3 gap-3">
             {[
               { cifra: s.total_magazine.toLocaleString("ro-RO"), eticheta: "magazine urmarite", accent: false },
-              { cifra: `${s.cu_promotie}`, eticheta: `cu promotie activa (${s.procent_cu_promotie}%)`, accent: false },
-              { cifra: `${s.cu_cod_real}`, eticheta: `cu cod de cupon real (${s.procent_cu_cod}%)`, accent: true },
+              { cifra: `${s.cu_promotie}`, eticheta: `cu promotie activa (${s.procent_cu_promotie.toLocaleString("ro-RO")}%)`, accent: false },
+              { cifra: `${s.cu_cod_real}`, eticheta: `cu cod de cupon real (${s.procent_cu_cod.toLocaleString("ro-RO")}%)`, accent: true },
             ].map((x) => (
               <div key={x.eticheta}
                 className={`rounded-xl p-5 border ${x.accent
@@ -215,7 +218,7 @@ export default function StudiuPage() {
           </div>
 
           <p className="text-[var(--text-soft)] mt-6 leading-relaxed">
-            Diferenta conteaza pentru cumparator: <strong className="text-[var(--foreground)]">{s.doar_oferta} magazine</strong>{" "}
+            Diferenta conteaza pentru cumparator: <strong className="text-[var(--foreground)]">{cuDe(s.doar_oferta)} magazine</strong>{" "}
             au reduceri active, dar afisate direct in pret, fara cod de introdus la finalizarea
             comenzii. Doar <strong className="text-[var(--foreground)]">{s.cu_cod_real}</strong>{" "}cer un cod.
             Cine cauta &quot;cod reducere X&quot; pe Google gaseste, in marea majoritate a cazurilor,
@@ -399,6 +402,18 @@ export default function StudiuPage() {
                   Cifrele de pe aceasta pagina sunt cele de la {s.generat}.
                 </p>
               </div>
+              {s.international && (
+                <div>
+                  <h3 className="font-bold text-[var(--foreground)] mb-1">Ce numaram ca magazin romanesc</h3>
+                  <p>
+                    Magazinele cu domeniu .ro. Mai urmarim {s.international.total.toLocaleString("ro-RO")} de
+                    magazine internationale care livreaza in Romania (branduri care vand prin Impact.com,
+                    magazine cu domeniu .com, .bg sau altul); {s.international.cu_cod} dintre ele au azi un cod
+                    de cupon. Nu le adunam la cifrele de mai sus: ar descrie comertul altor piete, nu pe cel
+                    romanesc.
+                  </p>
+                </div>
+              )}
               <div>
                 <h3 className="font-bold text-[var(--foreground)] mb-1">Ce inseamna &quot;cod real&quot;</h3>
                 <p>

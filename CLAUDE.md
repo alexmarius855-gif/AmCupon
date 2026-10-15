@@ -19,6 +19,15 @@ inchisa/lime e cea activa; `.tema-luminoasa` ramane in globals.css, nefolosita. 
 oferta cu procentul cel mai mare e prima, cu eticheta „Cea mai mare reducere azi" (`indexReducereMaxima`), iar
 meta description incepe cu oferta care expira in <=7 zile, cu data absoluta (`notaExpirare`, lib/oferta.ts).
 
+**UPDATE 15.10.2026, partea a doua (STUDIUL numara doar magazinele .ro + pitch de presa rescris):**
+pagina `/studiu/coduri-reducere-romania` scria „Doar 38 din 954 de magazine online romanesti au cod", dar 35 din
+cele 38 erau branduri straine (34 Impact + vidaxl.bg prin 2P). `generate_studiu_cupoane.py::e_magazin_ro()` =
+domeniu .ro (aceeasi conventie ca `top_ro` din seria lunara); cifrele principale + categoriile se calculeaza doar
+pe .ro (azi **3 din 451, 0,7%**; 70 fara cod; 6/16 categorii cu mediana), restul intra in campul `international`
+si e explicat pe pagina („Ce numaram ca magazin romanesc"). Slug-ul 2P `online-mall` -> `marketplace`
+(`ALIAS_CATEGORIE`). `verifica_deblocare.py` [3] numara cu aceeasi functie. Procente cu virgula, „70 de magazine".
+`docs/operational/PITCH-PRESA.md` rescris pe cifrele noi; adresa StartupCafe corectata (`redactie@`, nu `redactia@`).
+
 **UPDATE 09–14.10.2026 (structura usor de modificat + tema „clasic luminos" — tema SCOASA pe 15.10):**
 - **`docs/HARTA-SITE.md`** = „vrei sa schimbi X -> editezi Y". Citeste-o inainte de o modificare de aspect/texte.
 - **Culorile pe variabile pe TOT site-ul:** `scripts/tokenizeaza_culori.py` a inlocuit ~4.270 de culori scrise de mana
