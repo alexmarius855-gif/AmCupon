@@ -496,8 +496,8 @@
    "magazine": 126
   },
   "2026-10-16": {
-   "promotii": 259,
-   "magazine": 127
+   "promotii": 260,
+   "magazine": 128
   }
  },
  "magazine": {
@@ -592,6 +592,17 @@
     "ultima": "2026-09-15",
     "expira": "2026-11-25",
     "activa": false
+   }
+  ],
+  "adhoreca.eu": [
+   {
+    "k": "platesti2primesti3redefinesteservireapebambuspremium|",
+    "titlu": "Plătești 2, Primești 3! Redefinește Servirea pe Bambus Premium",
+    "cod": false,
+    "prima": "2026-10-16",
+    "ultima": "2026-10-16",
+    "expira": "2026-11-14",
+    "activa": true
    }
   ],
   "afisport.ro": [
