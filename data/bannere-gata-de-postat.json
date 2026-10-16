@@ -1,5 +1,44 @@
 [
   {
+    "id": 273307,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273266/original/273266.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=9ed13209a&aff_code=541547473&campaign_unique=cc08e2536",
+    "landing_raw": "https://www.pensulemachiaj.ro",
+    "width": 1200,
+    "height": 1200,
+    "merchant": "pensulemachiaj.ro",
+    "merchant_slug": "pensulemachiaj-ro",
+    "name": "-80% STAR SHINE  CELEBRITY SECRET BAG GRATUIT ",
+    "category": "-80% STAR SHINE  CELEBRITY SECRET BAG GRATUIT ",
+    "b_type": "image"
+  },
+  {
+    "id": 273296,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273255/original/273255.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=8fa81a221&aff_code=541547473&campaign_unique=4b9a6d5ea",
+    "landing_raw": "https://www.kitunghii.ro",
+    "width": 1200,
+    "height": 1200,
+    "merchant": "kitunghii.ro",
+    "merchant_slug": "kitunghii-ro",
+    "name": "-80% STAR SHINE,SECRET BEAUTY BAG GRATUIT",
+    "category": "-80% STAR SHINE,SECRET BEAUTY BAG GRATUIT",
+    "b_type": "image"
+  },
+  {
+    "id": 273286,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273245/original/273245.JPG",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=e3377e93f&aff_code=541547473&campaign_unique=9a6f02fef",
+    "landing_raw": "https://www.libris.ro/editura/bookzone",
+    "width": 964,
+    "height": 961,
+    "merchant": "libris.ro ",
+    "merchant_slug": "libris-ro",
+    "name": "2+1 GRATIS la raftul BOOKZONE! Alegi 3 plătești doar 2",
+    "category": "2+1 GRATIS la raftul BOOKZONE! Alegi 3 plătești doar 2",
+    "b_type": "image"
+  },
+  {
     "id": 273250,
     "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273209/original/273209.jpg",
     "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=599a9732e&aff_code=541547473&campaign_unique=e79c3922a",
@@ -62,32 +101,6 @@
     "merchant_slug": "libris-ro",
     "name": "Transport GRATUIT pentru ORICE colet, oriunde în țară ",
     "category": "Transport GRATUIT pentru ORICE colet, oriunde în țară ",
-    "b_type": "image"
-  },
-  {
-    "id": 273172,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273131/original/273131.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=fac84205e&aff_code=541547473&campaign_unique=cc08e2536",
-    "landing_raw": "https://www.pensulemachiaj.ro",
-    "width": 1200,
-    "height": 1200,
-    "merchant": "pensulemachiaj.ro",
-    "merchant_slug": "pensulemachiaj-ro",
-    "name": "-80% STAR SHINE  CELEBRITY SECRET BAG GRATUIT ",
-    "category": "-80% STAR SHINE  CELEBRITY SECRET BAG GRATUIT ",
-    "b_type": "image"
-  },
-  {
-    "id": 273171,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273130/original/273130.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=073619da7&aff_code=541547473&campaign_unique=4b9a6d5ea",
-    "landing_raw": "https://www.kitunghii.ro",
-    "width": 1200,
-    "height": 1200,
-    "merchant": "kitunghii.ro",
-    "merchant_slug": "kitunghii-ro",
-    "name": "-80% STAR SHINE,SECRET BEAUTY BAG GRATUIT",
-    "category": "-80% STAR SHINE,SECRET BEAUTY BAG GRATUIT",
     "b_type": "image"
   },
   {
@@ -166,84 +179,6 @@
     "merchant_slug": "obio-ro",
     "name": "Produse imunitate",
     "category": "Produse imunitate",
-    "b_type": "image"
-  },
-  {
-    "id": 273096,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273055/original/273055.jpeg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=c890c94be&aff_code=541547473&campaign_unique=3fd6221b1",
-    "landing_raw": "https://www.infinitelove.ro",
-    "width": 1080,
-    "height": 1080,
-    "merchant": "infinitelove.ro",
-    "merchant_slug": "infinitelove-ro",
-    "name": "beauty",
-    "category": "beauty",
-    "b_type": "image"
-  },
-  {
-    "id": 273090,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273049/original/273049.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=c04647d2d&aff_code=541547473&campaign_unique=6390e3cfb",
-    "landing_raw": "https://www.drmax.ro/max-days-healthy-week",
-    "width": 1080,
-    "height": 1080,
-    "merchant": "drmax.ro/",
-    "merchant_slug": "drmax-ro",
-    "name": "Max Days Alimentatie Sanatoasa",
-    "category": "Max Days Alimentatie Sanatoasa",
-    "b_type": "image"
-  },
-  {
-    "id": 273077,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273036/original/273036.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=83ee3c6b7&aff_code=541547473&campaign_unique=6390e3cfb",
-    "landing_raw": "https://www.drmax.ro/max-days-mama-si-copilul",
-    "width": 1080,
-    "height": 1080,
-    "merchant": "drmax.ro/",
-    "merchant_slug": "drmax-ro",
-    "name": "Campanie Max Days - Mama si copilul",
-    "category": "Campanie Max Days - Mama si copilul",
-    "b_type": "image"
-  },
-  {
-    "id": 273059,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273018/original/273018.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=24a8510ff&aff_code=541547473&campaign_unique=44ad2ee96",
-    "landing_raw": "https://www.petit-bebe.ro/cozy-autumn-days-cu-pana-la-33-reducere.html",
-    "width": 1200,
-    "height": 1200,
-    "merchant": "petit-bebe.ro",
-    "merchant_slug": "petit-bebe-ro",
-    "name": "Babies and Toys",
-    "category": "Babies and Toys",
-    "b_type": "image"
-  },
-  {
-    "id": 273053,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273012/original/273012.png",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=803bcb97d&aff_code=541547473&campaign_unique=9a6f02fef",
-    "landing_raw": "https://www.libris.ro/lp/cupon",
-    "width": 1080,
-    "height": 1080,
-    "merchant": "libris.ro ",
-    "merchant_slug": "libris-ro",
-    "name": "Ai un cupon de -20% la orice*  Află codul",
-    "category": "Ai un cupon de -20% la orice*  Află codul",
-    "b_type": "image"
-  },
-  {
-    "id": 273049,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273008/original/273008.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=044455a80&aff_code=541547473&campaign_unique=9617003d6",
-    "landing_raw": "https://nemira.ro/oferta-nemira",
-    "width": 840,
-    "height": 840,
-    "merchant": "nemira.ro ",
-    "merchant_slug": "nemira-ro",
-    "name": "Toamna Literară cu 40% REDUCERE la coș!",
-    "category": "Toamna Literară cu 40% REDUCERE la coș!",
     "b_type": "image"
   }
 ]

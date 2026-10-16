@@ -496,7 +496,7 @@
    "magazine": 126
   },
   "2026-10-16": {
-   "promotii": 258,
+   "promotii": 259,
    "magazine": 127
   }
  },
@@ -1733,6 +1733,15 @@
    }
   ],
   "craftup.ro": [
+   {
+    "k": "craftupblackfriday2026cureduceridepanala87|",
+    "titlu": "CraftUp Black Friday 2026 cu reduceri de pana la 87%",
+    "cod": false,
+    "prima": "2026-10-16",
+    "ultima": "2026-10-16",
+    "expira": "2026-11-09",
+    "activa": true
+   },
    {
     "k": "ambalajesidecoratiunidecraciuncureduceridepanala30lapecraftupro|",
     "titlu": "Ambalaje si decoratiuni de Craciun cu reduceri de pana la 30% la pe CraftUp.ro",
