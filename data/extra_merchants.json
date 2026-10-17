@@ -12198,14 +12198,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 75,
+    "zile_ramase": 74,
     "promotii": [
       {
         "nume": "DFN15",
         "descriere": "15% discount on the first purchase for all subscriptions",
         "cod_cupon": "",
         "landing_page": "https://www.novakidschool.com",
-        "zile_ramase": 75,
+        "zile_ramase": 74,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       }
