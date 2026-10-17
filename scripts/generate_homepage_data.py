@@ -82,7 +82,7 @@ TITLE_CAT_KEYWORDS: list[tuple[str, list[str]]] = [
     ("home-garden",         ["chiuveta", "lavoar", "vas wc", "capac wc", "baterie lavoar",
                              "baterie bucatarie", "baterie cada", "robinet", "paravan dus",
                              "cabina dus", "palarie dus", "rigola", "ventil", "suport gel",
-                             "raft baie", "canapea", "fotoliu", "saltea", "dulap", "covor",
+                             "raft baie", "cos de rufe", "cosuri de rufe", "canapea", "fotoliu", "saltea", "dulap", "covor",
                              "perdea", "lampa", "gradina", "planta", "cuvertura", "patura",
                              "espressor", "cafetiera", "aspirator", "masina de spalat",
                              "masina de cafea", "tigaie", "oala", "set cutite", "mobilier"]),
@@ -107,7 +107,8 @@ TITLE_CAT_KEYWORDS: list[tuple[str, list[str]]] = [
     ("beauty",              ["crema", "serum", "parfum", "fond de ten", "ruj", "oja", "mascara",
                              "sampon", "balsam de par", "lotiune", "ulei de fata", "ulei de masaj",
                              "apa micelara", "demachiant", "masca de fata", "fard"]),
-    ("sports-outdoors",     ["bicicleta", "trotineta", "role", "schi", "snowboard", "cort",
+    # „role" scos 17.10.2026: prindea „Zewa ... 6 role" si „Role etichete termice" (la Sport)
+    ("sports-outdoors",     ["bicicleta", "trotineta", "role inline", "patine", "schi", "snowboard", "cort",
                              "rucsac sport", "haltera", "banda alergat", "eliptica", "gantere"]),
     # FARA "vitamina" — prindea creme cosmetice (farmec) si le baga gresit la Farmacie
     ("pharma",              ["medicament", "supliment nutritiv", "pastila", "sirop",
@@ -147,6 +148,37 @@ def _detect_cat_from_title(title: str) -> str:
         if pat.search(t):
             return cat_slug
     return "other"
+
+
+# 17.10.2026 — titlul SI magazinul trebuie sa fie de acord. Prima potrivire din titlu nu stie cine vinde:
+# pe prima pagina erau cercei la „Carti" (druzy, „Cercei ... | Sun" = tiparul „Titlu | Autor"), sampon
+# pentru caini la „Frumusete" (petmart), o carte despre bicicleta la „Sport" (cartepedia), un excavator
+# de jucarie la „Electronice" (kinderauto). Regula: categoria magazinului (`categorie_slug` din
+# output.json) permite doar anumite categorii de produs; la dezacord produsul NU intra in vitrina —
+# mai bine un loc gol decat un produs pus gresit. Magazinele generaliste (marketplace, fara categorie)
+# nu restrang nimic.
+COMPATIBIL: dict[str, set[str]] = {
+    "fashion":         {"fashion", "sports-outdoors"},
+    "beauty":          {"beauty", "pharma", "health-personal-care"},
+    "bijuterii":       {"jewelry", "fashion"},
+    "electronice":     {"electronics-itc", "home-garden", "automotive", "games"},
+    "software":        {"electronics-itc"},
+    "telecom":         {"telecom", "electronics-itc"},
+    "casa-gradina":    {"home-garden", "electronics-itc", "automotive", "sports-outdoors", "pet-supplies"},
+    "animale":         {"pet-supplies"},
+    "mancare-bauturi": {"hypermarket-groceries", "home-garden"},
+    "carti-educatie":  {"books", "games"},
+    "copii":           {"babies-kids-toys", "books", "games", "fashion"},
+    "cadouri-flori":   {"gifts-flowers", "home-garden", "jewelry"},
+    "sanatate":        {"pharma", "beauty", "health-personal-care"},
+    "sport":           {"sports-outdoors", "fashion"},
+    "auto-moto":       {"automotive", "electronics-itc"},
+}
+
+
+def compatibil(cat_produs: str, cat_magazin: str) -> bool:
+    permise = COMPATIBIL.get(cat_magazin or "")
+    return permise is None or cat_produs in permise
 
 
 CAT_META = {
@@ -369,6 +401,13 @@ def gen_products():
     # Clasificare PER-TITLU (primara) — magazinul doar ca fallback verificat manual.
     # Asa magazinele multi-categorie (foglia=baie, carturesti=figurine) nu mai baga
     # tot intr-o categorie gresita. Produsele neclasificabile raman "other" -> excluse.
+    try:
+        with open(NAV_SRC, encoding="utf-8") as f:
+            cat_magazin = {(m.get("magazin") or "").lower(): m.get("categorie_slug") or ""
+                           for m in json.load(f) if isinstance(m, dict)}
+    except (OSError, ValueError):
+        cat_magazin = {}
+    respinse = 0
     for p in valide:
         by_title = _detect_cat_from_title(p.get("title", ""))
         if by_title != "other":
@@ -379,6 +418,11 @@ def gen_products():
                 or MERCHANT_CAT_OVERRIDE.get((p.get("merchant_slug") or "").lower())
                 or "other"
             )
+        cm = cat_magazin.get(_mkey(p)) or cat_magazin.get((p.get("merchant_slug") or "").lower(), "")
+        if p["_cat"] != "other" and not compatibil(p["_cat"], cm):
+            p["_cat"] = "other"
+            respinse += 1
+    print(f"  Produse scoase din vitrina (titlul nu se potriveste cu magazinul): {respinse}")
 
 
     # Grupare pe categorie
