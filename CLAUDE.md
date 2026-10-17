@@ -19,6 +19,12 @@ inchisa/lime e cea activa; `.tema-luminoasa` ramane in globals.css, nefolosita. 
 oferta cu procentul cel mai mare e prima, cu eticheta „Cea mai mare reducere azi" (`indexReducereMaxima`), iar
 meta description incepe cu oferta care expira in <=7 zile, cu data absoluta (`notaExpirare`, lib/oferta.ts).
 
+**UPDATE 17.10.2026 (`/llms.txt` pentru motoarele AI):** audit GEO (GeoLook, 40 de pagini): crawlerii AI
+(GPTBot, ClaudeBot, PerplexityBot) intra peste tot, dar lipsea `/llms.txt`. Nou `app/llms.txt/route.ts`,
+static, generat din output.json la build (numar de magazine, cu oferta, cu cod, retelele, ce NU facem —
+codurile nu sunt testate in cos, comisionul). Alarme false ale uneltei, verificate pe HTML: „FAQPage fara
+intrebari vizibile" (intrebarile SUNT in text) si `/blog?cat=X` in sitemap (hub-uri deliberate).
+
 **UPDATE 15.10.2026, partea a doua (STUDIUL numara doar magazinele .ro + pitch de presa rescris):**
 pagina `/studiu/coduri-reducere-romania` scria „Doar 38 din 954 de magazine online romanesti au cod", dar 35 din
 cele 38 erau branduri straine (34 Impact + vidaxl.bg prin 2P). `generate_studiu_cupoane.py::e_magazin_ro()` =
