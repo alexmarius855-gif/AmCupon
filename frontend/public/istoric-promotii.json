@@ -500,7 +500,7 @@
    "magazine": 128
   },
   "2026-10-17": {
-   "promotii": 259,
+   "promotii": 260,
    "magazine": 127
   }
  },
@@ -5185,6 +5185,15 @@
    }
   ],
   "librarie.net": [
+   {
+    "k": "targuldetoamnacupeste10000repereactivelalibrarienet17octombrie1noiembrie|",
+    "titlu": "Targul de Toamna cu peste 10.000 repere active la LIBRARIE.net (17 octombrie - 1 noiembrie)",
+    "cod": false,
+    "prima": "2026-10-17",
+    "ultima": "2026-10-17",
+    "expira": "2026-10-31",
+    "activa": true
+   },
    {
     "k": "minim50reducere|",
     "titlu": "Minim 50% Reducere",

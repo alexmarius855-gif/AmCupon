@@ -1,6 +1,6 @@
 {
   "generat": "2026-10-17",
-  "total_magazine": 451,
+  "total_magazine": 450,
   "cu_promotie": 74,
   "cu_cod_real": 4,
   "doar_oferta": 70,
@@ -21,7 +21,7 @@
     {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
-      "magazine": 97,
+      "magazine": 96,
       "cu_promotie": 18,
       "reducere_mediana": 50,
       "reducere_max": 82,
@@ -48,7 +48,7 @@
     {
       "slug": "fashion",
       "nume": "Fashion",
-      "magazine": 52,
+      "magazine": 51,
       "cu_promotie": 11,
       "reducere_mediana": 37.5,
       "reducere_max": 50,
@@ -84,7 +84,7 @@
     {
       "slug": "auto-moto",
       "nume": "Auto & moto",
-      "magazine": 20,
+      "magazine": 21,
       "cu_promotie": 2,
       "reducere_mediana": null,
       "reducere_max": null,
@@ -156,7 +156,7 @@
   ],
   "criteriu": "domeniu .ro",
   "international": {
-    "total": 503,
+    "total": 502,
     "cu_promotie": 57,
     "cu_cod": 35
   },
