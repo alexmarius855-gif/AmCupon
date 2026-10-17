@@ -132,6 +132,8 @@ def main() -> int:
         if gresit["articole_vechi"]:
             print("Articolele se aduc la zi cu `python generate_blog.py --doar-improspatare` "
                   "(ruleaza la fiecare rulare, dupa import_csv_promotii).")
+            print("Daca improspatarea a rulat si tot pica: `python test_garda_articole.py` — poate garda si "
+                  "generatorul scriu titlul diferit (14-17.10.2026).")
         return 1
     print("\nOK — nicio promotie expirata, niciun contor fals.")
     return 0

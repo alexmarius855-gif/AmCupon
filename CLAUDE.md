@@ -19,6 +19,15 @@ inchisa/lime e cea activa; `.tema-luminoasa` ramane in globals.css, nefolosita. 
 oferta cu procentul cel mai mare e prima, cu eticheta „Cea mai mare reducere azi" (`indexReducereMaxima`), iar
 meta description incepe cu oferta care expira in <=7 zile, cu data absoluta (`notaExpirare`, lib/oferta.ts).
 
+**UPDATE 18.10.2026 (pipeline ROSU 14-17.10 — garda articolelor, nu articolele):** 9 din 10 rulari picau pe
+`verifica_promotii.py` cu „articole_vechi 43" (easeus, atelier49, noriel...). **Articolele erau corecte**: regenerate
+din datele rularii esuate (5b1ffd0b), toate 22 sunt identice octet cu octet cu ce scrie generatorul — improspatarea
+mergea. Cauza: din 07.10 articolul scoate codul din titlul ofertei, garda compara cu `nume` brut. Reparat pe 17.10
+(02c427fc): `promotii.titlu_in_text` = sursa unica pentru generator SI garda (plus separatorii ramasi dupa cod);
+prima rulare dupa, 18:58 UTC, verde. Nou: **`python scripts/test_garda_articole.py`** — invariantul „un articol
+proaspat generat trece garda" pe tot output.json + cazurile reale + 2 mutatii; PICA pe codul din 17.10 dimineata
+(6 asteptari). **Ruleaza-l cand atingi `genereaza_articol_magazin`, `titlu_promotie`/`fara_coduri` sau garda.**
+
 **UPDATE 17.10.2026 (`/llms.txt` pentru motoarele AI):** audit GEO (GeoLook, 40 de pagini): crawlerii AI
 (GPTBot, ClaudeBot, PerplexityBot) intra peste tot, dar lipsea `/llms.txt`. Nou `app/llms.txt/route.ts`,
 static, generat din output.json la build (numar de magazine, cu oferta, cu cod, retelele, ce NU facem —

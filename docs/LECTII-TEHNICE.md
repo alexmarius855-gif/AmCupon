@@ -114,6 +114,15 @@ de timp.
   un al doilea FAQ în componenta-copil.** „Sursă unică" e o afirmație verificabilă: numără
   aparițiile în HTML-ul generat, nu te baza pe comentariul care spune că e unică.
 
+- **14–17.10: producătorul și garda calculau separat ACELAȘI titlu.** Din 07.10 articolul de magazin
+  scoate codul din titlul ofertei („… cu cod ATELIER49" → „… cu codul de reducere"); `verifica_promotii.py`
+  compara mai departe cu `nume` brut. 9 din 10 rulări ROȘII cu „43 de articole vechi" — toate 22 de
+  articole erau identice cu regenerarea din datele zilei. A doua oară când garda e roșie pe date bune
+  (22.09: `PRAG_DATA_ABSURDA`), de fiecare dată pentru că regula s-a schimbat la producător, nu și la
+  gardă. Acum `promotii.titlu_in_text` e importată de amândouă, iar `scripts/test_garda_articole.py`
+  verifică invariantul „ce produce generatorul trece garda" (pică pe codul vechi). Și: logul gărzii
+  sugera „improspatarea nu le rescrie" — prima ipoteză de verificat era că **garda** greșește.
+
 **Regula:** o listă folosită în două locuri se **exportă dintr-unul și se importă în celălalt**.
 Nu se copiază, oricât de mică e. **Același lucru pentru o REGULĂ de afișare**, nu doar pentru o
 listă de date: un prag, un format, o condiție de vizibilitate copiate în două componente diverg la
