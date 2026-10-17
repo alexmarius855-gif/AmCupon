@@ -370,6 +370,18 @@ def titlu_promotie(p: dict, nume_magazin: str) -> str:
     return f"Cod de reducere {nume_magazin}" if (p.get("cod_cupon") or "").strip() else f"Ofertă {nume_magazin}"
 
 
+def titlu_in_text(p: dict, nume_magazin: str) -> str:
+    """Titlul promotiei asa cum apare in articole si emailuri: fara niciun cod in clar.
+    17.10.2026: sursa UNICA, folosita de generate_blog.py SI de verifica_promotii.py. Garda compara
+    titlurile din articol cu `nume` brut, dar din 07.10 articolul scoate codul („… cu cod ATELIER49")
+    — 43 de articole corecte erau raportate „vechi", iar pipeline-ul iesea rosu la fiecare rulare.
+    Tot aici: separatorii ramasi dupa scoaterea codului („jucarii| | 19-25.10" -> „jucarii | 19-25.10")."""
+    t = fara_coduri(titlu_promotie(p, nume_magazin), p) or f"Ofertă {nume_magazin}"
+    t = re.sub(r"\s*\|(?:\s*\|)*\s*", " | ", t)
+    t = re.sub(r"^[\s|]+|[\s|:–-]+$", "", t)
+    return " ".join(t.split()) or f"Ofertă {nume_magazin}"
+
+
 def nume_afisabil(m: dict) -> str:
     """„eur.vevor.com" -> „Vevor", nu „Eur"; „store.boyamic.com" -> „Boyamic"."""
     slug = m.get("magazin") or ""

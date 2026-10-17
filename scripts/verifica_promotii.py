@@ -24,7 +24,8 @@ import os
 import re
 import sys
 
-from promotii import FARA_DATA, PRAG_DATA_ABSURDA, azi_utc, zile_pana_la
+from nume_magazin import nume_afisat
+from promotii import FARA_DATA, PRAG_DATA_ABSURDA, azi_utc, titlu_in_text, zile_pana_la
 
 PUBLIC = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "frontend", "public")
 IMPLICIT = os.path.join(PUBLIC, "output.json")
@@ -41,9 +42,20 @@ def verifica_articole(magazine: list, cale_blog: str) -> list:
         return []
     with open(cale_blog, encoding="utf-8") as f:
         posts = json.load(f)
-    active = {m.get("magazin"): {(p.get("nume") or "").strip().lower()
-                                for p in (m.get("promotii") or []) if isinstance(p, dict)}
-              for m in magazine if isinstance(m, dict)}
+    # Titlul brut SI titlul din articol (fara cod — promotii.titlu_in_text, aceeasi functie ca generatorul).
+    # 17.10.2026: comparatia doar cu `nume` brut raporta 43 de articole CORECTE ca „vechi" (codul e scos
+    # din titlu in articol din 07.10), deci pipeline-ul iesea rosu la fiecare rulare.
+    active = {}
+    for m in magazine:
+        if not isinstance(m, dict):
+            continue
+        nume_m = nume_afisat(m.get("magazin") or "")
+        titluri = set()
+        for p in (m.get("promotii") or []):
+            if isinstance(p, dict):
+                titluri.add((p.get("nume") or "").strip().lower())
+                titluri.add(titlu_in_text(p, nume_m).strip().lower())
+        active[m.get("magazin")] = titluri
     gresit = []
     # Articolele magazinelor scoase pentru ca programul lor nu acopera Romania nu au voie sa ramana.
     try:

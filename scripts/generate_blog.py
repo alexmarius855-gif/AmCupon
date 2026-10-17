@@ -50,7 +50,7 @@ CATEGORII_ROUNDUP = [
 # Numele magazinului: scripts/nume_magazin.py, acelasi rezultat ca numeAfisat() din frontend
 # (06.10.2026 — copia naiva de aici scria „Cod Reducere Us" pentru us.lemorele.com).
 from nume_magazin import nume_afisat  # noqa: E402
-from promotii import fara_coduri, pare_cod, titlu_promotie  # noqa: E402
+from promotii import fara_coduri, pare_cod, titlu_in_text  # noqa: E402
 
 
 def slug_articol_magazin(magazin: str, luna: str, an: int) -> str:
@@ -169,7 +169,7 @@ def genereaza_articol_magazin(store: dict, luna: str, an: int) -> dict:
         # 07.10.2026: titlul si descrierea FARA cod (promotii.titlu_promotie / fara_cod, ca pe site).
         # „Use Code: 30CVLIFE", „Coupon Code: LONGERR" si titlurile Impact care SUNT codul
         # („LumosFlex120") il aratau intreg chiar deasupra liniei „Cod: `******FE`" mascate.
-        titlu_p = " ".join((fara_coduri(titlu_promotie(p, nume), p) or f"Ofertă {nume}").split())
+        titlu_p = titlu_in_text(p, nume)
         # pe un singur rand: o descriere care continua pe randul urmator cu o liniuta (Casa Andina) facea din tot blocul o lista
         desc_p = " ".join(fara_coduri(p.get("descriere") or "", p).split())
         linie = f"**{i+1}. {titlu_p}**"
@@ -274,7 +274,7 @@ De mai multe ori pe zi, automat, din rețeaua de afiliere. Valabilitatea finală
 
 def titlu_fara_cod(p: dict, nume_m: str) -> str:
     """Titlul promotiei pentru text, fara niciun cod in clar (07.10.2026; vezi articolul de magazin)."""
-    return fara_coduri(titlu_promotie(p, nume_m), p) or f"Ofertă {nume_m}"
+    return titlu_in_text(p, nume_m)
 
 
 def genereaza_articol_categorie(cat_slug: str, cat_name: str, magazine: list, luna: str, an: int) -> dict:
