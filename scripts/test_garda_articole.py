@@ -11,8 +11,11 @@ brut, iar din 07.10 generatorul scoate codul din titlu. A doua oara cand garda e
 si in celalalt. Testul leaga cele doua:
   1. invariant, pe output.json-ul real: un articol proaspat generat din datele magazinului trece garda;
   2. cazurile care au rupt-o (cod in titlu, titlul = codul, separatori ramasi dupa scoaterea codului);
-  3. garda tot pica: promotie expirata cu articolul neimprospatat, titlu inventat in articol.
+  3. garda tot pica: promotie expirata cu articolul neimprospatat, titlu inventat in articol,
+     promotie pentru alta piata ajunsa in articol (18.10.2026, vidaxl.bg in bulgara).
 Pica pe garda din 17.10 dimineata (d02a1021): invariantul gaseste zeci de articole „vechi".
+Invariantul ruleaza pe output.json trecut prin curata_promotii, ca in pipeline (merge -> curatare ->
+generate_blog): fisierul din repo e al rularii de ieri, cu promotii pe care curatarea de azi le scoate.
 """
 import copy
 import json
@@ -23,6 +26,7 @@ import tempfile
 AICI = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, AICI)
 from generate_blog import genereaza_articol_magazin  # noqa: E402
+from promotii import curata_promotii  # noqa: E402
 from verifica_promotii import verifica_articole  # noqa: E402
 
 OUTPUT = os.path.join(AICI, "..", "frontend", "public", "output.json")
@@ -53,7 +57,9 @@ def articol(store: dict) -> dict:
 
 
 with open(OUTPUT, encoding="utf-8") as f:
-    magazine = [m for m in json.load(f) if isinstance(m, dict)]
+    brute = [m for m in json.load(f) if isinstance(m, dict)]
+magazine = copy.deepcopy(brute)
+curata_promotii(magazine)
 cu_promotii = [m for m in magazine if m.get("promotii")]
 
 print(f"1. Invariant pe output.json: {len(cu_promotii)} magazine cu promotii")
@@ -86,6 +92,20 @@ fara["promotii"] = [{**copy.deepcopy(baza["promotii"][0]), "nume": "Alta oferta 
 verifica("promotie disparuta, articol neimprospatat", len(garda([fara], [art])), 1)
 inventat = {**art, "content": "**1. Reducere inventata 99% la tot**\n" + art["content"]}
 verifica("titlu inventat in articol", len(garda([st], [inventat])), 1)
+# Cazul real din 18.10.2026: oferta vidaxl.bg in bulgara, cu leva, listata in articolul romanesc.
+bg = copy.deepcopy(st)
+bg["promotii"] = [{**copy.deepcopy(baza["promotii"][0]), "cod_cupon": "", "descriere": "",
+                   "nume": "Абонирайте се за нашия бюлетин днес & получавате отстъпка от 10 лв. при регистрация!"}]
+verifica("promotie in bulgara ajunsa in articol", len(garda([bg], [articol(bg)])), 1)
+mx = copy.deepcopy(st)
+mx["promotii"] = [{**copy.deepcopy(baza["promotii"][0]), "cod_cupon": "", "descriere": "",
+                   "nume": "Ahorra $1,999 MXN en iKier K1 Pro Max 70W con código AFFK11999"}]
+verifica("promotie in pesos ajunsa in articol", len(garda([mx], [articol(mx)])), 1)
+# Pe datele brute (fara curata_promotii) articolele cu oferte pentru alta piata trebuie prinse.
+straine = [m for m in brute if m.get("magazin") in {"vidaxl.bg", "ikier.com", "italki.com"} and m.get("promotii")]
+if straine:
+    verifica(f"articolele din datele brute ({len(straine)} magazine cu oferte straine) sunt prinse",
+             len(garda(brute, [articol(m) for m in straine])) >= len(straine), True)
 
 print(f"\n{'PICAT' if esecuri else 'OK'}: {esecuri} asteptari incalcate")
 sys.exit(1 if esecuri else 0)

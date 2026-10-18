@@ -140,6 +140,63 @@ def text_pentru_afiliati(p: dict, m: dict):
     return ("curata", rest)
 
 
+# ─── Promotii pentru ALTA piata (alta limba, moneda altei tari) ───────────────
+# Masurat 18.10.2026 pe output.json: 7 promotii pe 3 magazine, toate trei cu articol de blog:
+#   · vidaxl.bg   „Абонирайте се за нашия бюлетин днес & получавате отстъпка от 10 лв. при
+#                 регистрация!", „10% намаление" — oferte pentru Bulgaria, in leva;
+#   · ikier.com   „Ahorra $1,999 MXN en iKier K1 Pro Max 70W con código AFFK11999" (x4) —
+#                 magazinul din Mexic (mx.ikier.com), in pesos;
+#   · italki.com  „10 EUR Rabatt auf 20 EUR MBW" — pagina germana (italki.com/de).
+# Retelele (2Performant e in RO, BG si HU; Impact e global) dau campania cu promotiile TUTUROR
+# pietelor ei. Un cumparator din Romania nu poate folosi o oferta in leva sau in pesos.
+# Se scoate PROMOTIA, nu magazinul: vidaxl.bg are in aceeasi campanie si promotii romanesti
+# (codul OFERTE01, „25 Lei la inscriere"), ikier.com are coduri in engleza pentru EU.
+# Engleza, EUR, USD si GBP raman: sunt limba si monedele magazinelor internationale cu livrare in
+# Romania (programul lor acopera Romania — link_oferta.livreaza_in_romania), politica din 15.10.
+# Cuvintele sunt alese sa NU existe in romana sau engleza: „rabatt" cu doi t (romana are „rabat"),
+# „réduction"/„envío" doar cu accent (engleza are „reduction"), fara „gratis" (e si romanesc).
+RE_ALFABET_STRAIN = re.compile(r"[\u0370-\u03FF\u0400-\u04FF]")  # grecesc, chirilic
+_MONEDE_STRAINE = r"лв\.?|leva|BGN|HUF|forint|zł|PLN|Kč|CZK|MXN|CAD|AUD|INR|₹|CHF|R\$|BRL"
+# Suma intreaga, nu o bucata dintr-un cod: „1,999 MXN", „10 лв.", „BGN 20" — dar nu „CAD10" sau
+# „AFF10PLN" (coduri de cupon). Moneda in fata cere spatiu; simbolurile (₹, R$) pot sta lipite.
+RE_MONEDA_STRAINA = re.compile(
+    rf"(?<!\w)\d[\d.,]*\s?(?:{_MONEDE_STRAINE})(?!\w)"
+    rf"|(?<!\w)(?:{_MONEDE_STRAINE})\s\d[\d.,]*|(?:₹|R\$)\d", re.I)
+LIMBI_STRAINE = {
+    "spaniola": r"ahorra|código|descuento|envío",
+    "germana": r"rabatt|versand|kostenlos|gutschein|für",
+    "franceza": r"réduction|livraison|jusqu'à|remise",
+    "italiana": r"sconto|spedizione",
+    "olandeza": r"korting|verzending",
+    "maghiara": r"kedvezmény|ingyenes|szállítás|akció",
+    "poloneza": r"zniżka|darmowa|rabatowy",
+    "ceha": r"sleva|slevový|zdarma",
+    "portugheza": r"desconto|grátis",
+}
+RE_LIMBI_STRAINE = {limba: re.compile(rf"(?<!\w)(?:{cuv})(?!\w)", re.I) for limba, cuv in LIMBI_STRAINE.items()}
+
+
+def pentru_alta_piata(text: str):
+    """None = text care poate fi o oferta pentru un cumparator din Romania. Altfel motivul
+    („alfabet chirilic", „moneda: 10 лв.", „limba spaniola: ahorra"). Folosita de curata_promotii
+    (sursa), de istoric_promotii (tot istoricul) si de verifica_promotii (garda, si pe articole)."""
+    text = text or ""
+    if RE_ALFABET_STRAIN.search(text):
+        return "alfabet chirilic/grecesc"
+    mt = RE_MONEDA_STRAINA.search(text)
+    if mt:
+        return f"moneda altei tari: {mt.group(0)}"
+    for limba, rx in RE_LIMBI_STRAINE.items():
+        mt = rx.search(text)
+        if mt:
+            return f"limba {limba}: {mt.group(0)}"
+    return None
+
+
+def promotie_pentru_alta_piata(p: dict):
+    return pentru_alta_piata(f"{p.get('nume') or ''} {p.get('descriere') or ''}")
+
+
 def azi_utc() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
@@ -215,13 +272,14 @@ def valoare_zero(p: dict) -> bool:
 
 
 def curata_promotii(magazine: list, azi: str = None) -> dict:
-    """In-place. Scoate promotiile expirate si pe cele scrise pentru afiliati, curata textul
+    """In-place. Scoate promotiile expirate, pe cele scrise pentru afiliati si pe cele pentru alta
+    piata (alta limba / moneda altei tari — pentru_alta_piata), curata textul
     (markdown, fraze pentru afiliati), recalculeaza `zile_ramase` din `expira` si flag-urile de
     magazin. Idempotent. Intoarce ce a schimbat, ca sa se vada in log."""
     azi = azi or azi_utc()
     st = {"expirate": 0, "zile_recalculate": 0, "fara_data": 0, "data_absurda": 0, "flaguri": 0,
           "markdown": 0, "mojibake": 0, "afiliati_scoase": [], "afiliati_curatate": 0, "magazine_golite": [],
-          "cod_din_titlu": 0, "valoare_zero": 0}
+          "cod_din_titlu": 0, "valoare_zero": 0, "alta_piata": []}
     for m in magazine:
         if not isinstance(m, dict):
             continue
@@ -244,6 +302,10 @@ def curata_promotii(magazine: list, azi: str = None) -> dict:
                         st["markdown"] += 1
             if valoare_zero(p):
                 st["valoare_zero"] += 1
+                continue
+            motiv = promotie_pentru_alta_piata(p)
+            if motiv:
+                st["alta_piata"].append(f"{m.get('magazin', '?')} ({motiv})")
                 continue
             if cod_din_titlu(p):
                 st["cod_din_titlu"] += 1
@@ -293,6 +355,8 @@ def raport(st: dict) -> str:
             f"descrieri curatate de fraze pentru afiliati: {st['afiliati_curatate']}"
             + (f"\n  promotii scrise pentru afiliati, scoase: {len(st['afiliati_scoase'])} — "
                + "; ".join(st["afiliati_scoase"][:10]) if st["afiliati_scoase"] else "")
+            + (f"\n  promotii pentru alta piata (alta limba / moneda altei tari), scoase: {len(st['alta_piata'])} — "
+               + "; ".join(st["alta_piata"][:10]) if st.get("alta_piata") else "")
             + (f"\n  magazine ramase fara promotii: {len(golite)} ({', '.join(golite[:10])}"
                f"{'...' if len(golite) > 10 else ''})" if golite else ""))
 

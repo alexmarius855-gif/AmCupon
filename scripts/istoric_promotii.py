@@ -37,7 +37,7 @@ from datetime import date, timedelta
 from pathlib import Path
 
 from promotii import (PRAG_DATA_ABSURDA, _cheie, _doar_numele_magazinului, azi_utc, curata_promotii,
-                      text_pentru_afiliati, titlu_afisabil, zile_pana_la)
+                      pentru_alta_piata, text_pentru_afiliati, titlu_afisabil, zile_pana_la)
 
 RADACINA = Path(__file__).resolve().parent.parent
 OUTPUT = RADACINA / "frontend" / "public" / "output.json"
@@ -95,6 +95,10 @@ def titlu_publicabil(titlu: str, m: dict) -> bool:
     # „NEW"). Nu spune nimic despre oferta, iar pe o lista de oferte trecute ar publica un cod
     # expirat drept titlu.
     if " " not in titlu:
+        return False
+    # 18.10.2026: „10% намаление" (vidaxl.bg), „Ahorra $1,999 MXN..." (ikier.com) — oferte pentru
+    # alta piata. Intrate in istoric inainte de regula din curata_promotii, deci scoase si de aici.
+    if pentru_alta_piata(titlu):
         return False
     verdict = text_pentru_afiliati({"nume": titlu, "descriere": "", "cod_cupon": ""}, m)
     if verdict and verdict[0] == "scoate":

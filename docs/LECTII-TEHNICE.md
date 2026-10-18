@@ -463,6 +463,22 @@ doar după clicul care deschide linkul plătit — oriunde altundeva, `maskCod` 
 garda caută codurile active în textul articolelor. Și: când schimbi cheia unui istoric (codul intră în cheie),
 unește intrările vechi, altfel aceeași ofertă apare de două ori — o dată ca „trecută”.
 
+### 18.10.2026 — granița de țară, a treia formă: PROMOȚIA, nu magazinul
+
+Articolul `cod-reducere-vidaxl-octombrie-2026` lista pe site-ul românesc „Абонирайте се за нашия бюлетин…
+отстъпка от 10 лв.” și „10% намаление”. Granița de țară fusese reparată de două ori, ambele la nivel de
+MAGAZIN: 16.09 (varianta străină a unui magazin .ro, `taraDomeniu.ts` + merge) și 19.09 (programul Impact
+care nu acoperă România, `ShippingRegions`). O rețea dă însă campania cu promoțiile TUTUROR piețelor ei
+(2Performant e în RO, BG și HU; Impact e global). Măsurat pe output.json: **7 promoții pe 3 magazine, toate
+cu articol** — vidaxl.bg (bulgară, leva), ikier.com (4 oferte ale magazinului din Mexic, în pesos), italki.com
+(pagina germană); plus 8 intrări în istoric (una franceză, insotel). Magazinul NU se scoate: vidaxl.bg are
+în aceeași campanie promoții românești (OFERTE01), ikier.com coduri în engleză pentru EU.
+**Regula:** `promotii.pentru_alta_piata()` (alfabet chirilic/grecesc, moneda altei țări lângă o sumă,
+cuvinte care nu există în română/engleză), în `curata_promotii` (sursa), în `istoric_promotii.titlu_publicabil`
+(tot istoricul) și în `verifica_promotii.py` — pe output.json ȘI pe textul articolelor de magazin. Engleza,
+EUR, USD rămân (magazinele internaționale cu livrare în România). Capcana prinsă de test înainte de commit:
+„CAD10” e un cod de cupon, nu 10 dolari canadieni — moneda trebuie să fie separată de sumă.
+
 ## 11. Măsoară înainte să tai, și înainte să repari
 
 - **08.08:** două secțiuni de homepage păreau redundante. Măsurate: suprapunere **zero**, seturi

@@ -14,7 +14,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from promotii import (cod_din_titlu, coduri_in_text, curata_promotii, fara_cod, fara_coduri,  # noqa: E402
-                      fara_markdown, repara_mojibake, text_pentru_afiliati, titlu_promotie,
+                      fara_markdown, pentru_alta_piata, repara_mojibake, text_pentru_afiliati, titlu_promotie,
                       valoare_zero)
 
 esecuri = 0
@@ -194,6 +194,39 @@ art = generate_blog.genereaza_articol_magazin(M("kospet.com",
     P("LumosFlex120", "120 off for lumos flex")), "Octombrie", 2026)
 verifica("articolul lunar nu scrie codul in clar (doar mascat)",
          ("DPR35" in art["content"], "LumosFlex120" in art["content"], "***35" in art["content"]), (False, False, True))
+
+# ── 18.10.2026: promotii pentru ALTA piata — cazurile reale din output.json + capcanele ─────────────
+print("\nPromotii pentru alta piata:")
+for nume_caz, text in {
+    "vidaxl.bg: bulgara, leva": "Абонирайте се за нашия бюлетин днес & получавате отстъпка от 10 лв. при регистрация!",
+    "vidaxl.bg: „10% намаление”": "10% намаление",
+    "ikier.com: pesos (mx.ikier.com)": "Ahorra $1,999 MXN en iKier K1 Pro Max 70W con código AFFK11999",
+    "italki.com: germana (italki.com/de)": "10 EUR Rabatt auf 20 EUR MBW",
+    "maghiara": "20% kedvezmény minden termékre",
+    "forint fara cuvinte maghiare": "Reducere de 5000 HUF",
+    "zloti": "Kod: 50 zł na pierwsze zamówienie",
+}.items():
+    verifica(f"prinsa — {nume_caz}", bool(pentru_alta_piata(text)), True)
+for nume_caz, text in {
+    "romana cu lei": "Abonează-te la newsletterul nostru az & beneficiază de o reducere de 25Lei la înscriere!",
+    "romana: „rabat” cu un t": "Rabat comercial 10% la comenzi peste 300 RON",
+    "romana: „gratis”": "2+1 GRATIS",
+    "engleza cu $ (magazin international)": "Cozy Season Cooler Prices Sale Up To $70 Off With Code:Cool",
+    "engleza cu € (magazin EU)": "Save 300€ on IKIER Master with Code AFFMASTER300",
+    "engleza: „reduction” fara accent": "Price reduction on all hosting plans",
+    "engleza cu USD": "USD $12 Off Coupon Code: LONGERR",
+    "bilingv ro/en": "Halloween pe GiftDesign.ro: -13% + cadou la 200 lei! /13% OFF + FREE Gift!",
+    "cod care contine o moneda": "Folosește codul CAD10 la casă",
+    "„ft” = picioare, nu forinti": "10 ft HDMI cable 20% off",
+}.items():
+    verifica(f"ramane — {nume_caz}", pentru_alta_piata(text), None)
+magp = [M("vidaxl.bg", P("10% намаление"), P("Deals Page: Reduceri de 10% prin codul OFERTE01")),
+        M("italki.com", P("10 EUR Rabatt auf 20 EUR MBW", cod="IMPACT10"))]
+stp = curata_promotii(magp, azi="2026-10-18")
+verifica("curata_promotii scoate promotia, nu magazinul; flag-urile se recalculeaza",
+         ([x["nume"] for x in magp[0]["promotii"]], magp[1]["promotii"], magp[1]["are_promotie"],
+          len(stp["alta_piata"]), stp["magazine_golite"]),
+         (["Deals Page: Reduceri de 10% prin codul OFERTE01"], [], False, 2, ["italki.com"]))
 
 print(f"\n  {esecuri} ESECURI" if esecuri else "\n  Toate testele trec.")
 sys.exit(1 if esecuri else 0)
