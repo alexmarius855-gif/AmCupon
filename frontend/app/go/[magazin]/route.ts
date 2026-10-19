@@ -1,7 +1,8 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextRequest, NextResponse, after } from "next/server";
 import fs from "fs";
 import path from "path";
-import { cuSubId } from "../../../lib/subId";
+import { cuSubId, curataEticheta } from "../../../lib/subId";
+import { inregistreazaClick } from "../../../lib/clicuriServer";
 import { linkAfiliat } from "../../../lib/linkMagazin";
 import { brandDomeniu } from "../../../lib/numeMagazin";
 import { aceeasiTara } from "../../../lib/taraDomeniu";
@@ -85,6 +86,19 @@ export async function GET(
   // manuala in newsletter/social ("newsletter_august"), altfel marcam "go".
   const eticheta = req.nextUrl.searchParams.get("de") || "go";
   const destinatie = cuSubId(brut, eticheta);
+
+  // 19.10.2026: numaratoare proprie, anonima (lib/clicuri.ts). `after` ruleaza DUPA raspuns, deci redirectul
+  // nu asteapta baza de date. Roboti (previzualizari de link, verificatoare) raman numarati, dar marcati `bot`.
+  // HEAD (verificatoare de linkuri, previzualizari) nu e un om care apasa un link: nu se numara.
+  if (req.method !== "HEAD") after(() =>
+    inregistreazaClick({
+      sursa: "go",
+      pagina: `/go/${eticheta === "go" ? "direct" : curataEticheta(eticheta)}`,
+      magazin: m.magazin,
+      userAgent: req.headers.get("user-agent"),
+      referrer: req.headers.get("referer"),
+    }),
+  );
 
   const res = NextResponse.redirect(destinatie, { status: 302 });
   // 302, nu 301: linkul de tracking se poate schimba, si un 301 ramane in cache-ul

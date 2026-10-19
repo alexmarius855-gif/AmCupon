@@ -2,6 +2,7 @@
 
 import { useCallback, useRef, useState } from "react";
 import { cuSubId } from "../../lib/subId";
+import { numaraClick } from "../../lib/clicuriClient";
 
 interface TrackFn {
   (tip: string, magazinSlug: string, cod?: string): void;
@@ -60,12 +61,17 @@ export function useCopyCod(track?: TrackFn) {
     // dezvaluirea unui cod deschide magazinul cu window.open, deci exact clicurile cu cod — cele
     // mai valoroase — ajungeau la retea fara sa spuna de pe ce pagina vin.
     if (link) {
+      // 19.10.2026: numaratoarea proprie (lib/clicuri.ts). Dezvaluirea unui cod nu trece prin <a>, deci
+      // AffiliateClickTracker n-o vede — iar ea e clicul cel mai valoros. Magazinul il stim exact.
+      numaraClick(link, magazinSlug);
       if (!deschideTab(cuSubId(link, window.location.pathname))) setRedirectFailed(true);
     }
   }, [track]);
 
   const retryRedirect = useCallback(() => {
     if (lastLink) {
+      // Prima incercare a fost blocata (nu s-a deschis nimic), deci acesta e clicul care chiar ajunge la magazin.
+      numaraClick(lastLink);
       if (deschideTab(lastLink)) setRedirectFailed(false);
     }
   }, [lastLink]);

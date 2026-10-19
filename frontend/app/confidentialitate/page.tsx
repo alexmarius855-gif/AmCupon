@@ -46,6 +46,7 @@ export default function ConfidentialitatePage() {
             <p className="mb-3">AmCupon.ro nu solicită crearea unui cont și nu colectează date personale identificabile în mod direct. Datele tehnice colectate automat includ:</p>
             <ul className="list-disc ml-6 space-y-2">
               <li><strong>Date de navigare anonime:</strong> paginile vizitate, durata sesiunii, tipul dispozitivului, țara de origine — colectate prin Vercel Analytics în mod agregat și anonim.</li>
+              <li><strong>Numărătoare de clicuri (anonimă):</strong> când apeși pe un link către un magazin partener, înregistrăm doar ziua, magazinul, pagina pe care erai, site-ul din care ai venit (ex. google.com) și dacă ești pe telefon sau calculator. Nu salvăm adresa IP, nu punem cookie-uri și nu putem afla cine ești. Datele se șterg după 180 de zile și ne ajută să vedem ce oferte caută oamenii.</li>
               <li><strong>Adresa IP:</strong> prelucrată temporar de serverele Vercel pentru furnizarea serviciului; nu este stocată pe termen lung.</li>
               <li><strong>Cookie-uri tehnice:</strong> necesare funcționării site-ului (ex: preferința dark/light mode, magazinele favorite, consimțământul cookie).</li>
               <li><strong>Cookie-uri de tracking afiliat:</strong> setate de platforma 2Performant pentru atribuirea comisioanelor, <em>doar dacă ai acceptat cookie-urile</em>.</li>

@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { esteLinkAfiliat, PARAM_SUBID } from "../../lib/subId";
+import { numaraClick } from "../../lib/clicuriClient";
 
 /**
  * Tracker global de click-uri afiliate + injectare sub-id pentru ATRIBUIRE.
@@ -23,7 +24,10 @@ import { esteLinkAfiliat, PARAM_SUBID } from "../../lib/subId";
  *      Alternativa platita pentru acelasi rezultat ar fi fost un agregator extern
  *      (~59 EUR/luna); asta face aceeasi atribuire gratuit, prin retelele insele.
  *
- *   2. GA4 — trimite evenimentul `affiliate_click`.
+ *   2. NUMARATOARE PROPRIE (19.10.2026) — `sendBeacon` catre `/api/click`, anonim, doar pentru clicuri
+ *      facute de un om (`isTrusted`); vezi lib/clicuri.ts.
+ *
+ *   3. GA4 — trimite evenimentul `affiliate_click` (doar dupa acceptarea cookie-urilor).
  *
  * IMPORTANT: totul ruleaza SINCRON in handler-ul de click, inainte de navigare, si e
  * complet invelit in try/catch — un link nu trebuie NICIODATA sa se rupa din cauza
@@ -80,7 +84,15 @@ export default function AffiliateClickTracker() {
           }
         }
 
-        // ── 2. Eveniment GA4 ────────────────────────────────────────────────
+        // ── 2. Numaratoare proprie, anonima (lib/clicuri.ts, /api/click) ─────────
+        // Doar clicurile facute de un om (`isTrusted`): un script care apeleaza `.click()` sau un
+        // robot care nu ruleaza JavaScript nu ajung aici. Inainte de GA4 si INDEPENDENT de el:
+        // GA4 se incarca doar dupa acceptarea cookie-urilor, deci nu vede majoritatea vizitatorilor.
+        // Nu trimitem nimic care identifica persoana (nici cookie, nici ID); serverul pastreaza ziua,
+        // magazinul, pagina, hostul de unde a venit omul si tipul de dispozitiv.
+        if (e.isTrusted) numaraClick(a.getAttribute("href") || href);
+
+        // ── 3. Eveniment GA4 ────────────────────────────────────────────────
         const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
         if (!gtag) return;
 
@@ -107,8 +119,15 @@ export default function AffiliateClickTracker() {
       }
     }
 
+    // Clicul de mijloc (deschide linkul in tab nou) nu declanseaza `click`, ci `auxclick` — era un client real
+    // pe care il pierdeam si caruia nu-i adaugam nici sub-id-ul. Doar butonul 1: dreapta e meniul contextual.
+    const onAux = (e: MouseEvent) => { if (e.button === 1) onClick(e); };
     document.addEventListener("click", onClick, { capture: true });
-    return () => document.removeEventListener("click", onClick, { capture: true });
+    document.addEventListener("auxclick", onAux, { capture: true });
+    return () => {
+      document.removeEventListener("click", onClick, { capture: true });
+      document.removeEventListener("auxclick", onAux, { capture: true });
+    };
   }, []);
 
   return null;
