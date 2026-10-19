@@ -21,8 +21,6 @@ swiss-belhotel.com,AGRESIV,18.1,impact,6.0,1,1,1,0,1,0
 carturesti.ro,AGRESIV,18.1,2performant,9.0,1,0,1,1,1,0
 store.pongbotsports.com,NORMAL,17.9,impact,5.0,1,1,1,0,1,0
 cllix.com,NORMAL,17.9,impact,5.0,1,1,1,0,1,0
-libris.ro,NORMAL,17.9,2performant,8.0,1,0,1,1,1,0
-vegis.ro,NORMAL,17.9,2performant,8.0,1,0,1,1,1,0
 atzavarahotel.com,NORMAL,17.8,impact,4.0,1,1,1,0,1,0
 booking.regalhotel.com,NORMAL,17.8,impact,4.0,1,1,1,0,1,0
 answear.ro,NORMAL,17.7,2performant,7.0,1,0,1,1,1,0
@@ -65,7 +63,7 @@ nemira.ro,NORMAL,15.7,2performant,13.0,1,0,1,0,1,0
 e-potion.ro,NORMAL,15.6,2performant,12.0,1,0,1,0,1,0
 zandra.ro,NORMAL,15.6,2performant,12.0,1,0,1,0,1,0
 oleya.ro,NORMAL,15.6,2performant,12.0,1,0,1,0,1,0
-obio.ro,NORMAL,15.4,2performant,8.0,1,0,1,0,1,0
+craftmystic.ro,NORMAL,15.4,2performant,11.0,1,0,1,0,1,0
 nadula.com,NORMAL,15.2,impact,0.0,1,0,1,0,1,0
 redodopower.de,NORMAL,15.2,impact,0.0,1,0,1,0,1,0
 doctorshield.ro,NORMAL,15.2,2performant,10.0,1,0,1,0,1,0
@@ -79,6 +77,7 @@ brainmarket.ro,NORMAL,15.2,2performant,10.0,1,0,1,0,1,0
 nano-auto.ro,NORMAL,15.2,2performant,10.0,1,0,1,0,1,0
 jojofashion.ro,NORMAL,15.2,2performant,10.0,1,0,1,0,1,0
 baristelli.ro,NORMAL,15.2,2performant,10.0,1,0,1,0,1,0
+estel.ro,NORMAL,15.2,2performant,10.0,1,0,1,0,1,0
 davopro.ro,NORMAL,15.2,2performant,10.0,1,0,1,0,1,0
 maranc.ro,NORMAL,15.2,2performant,10.0,1,0,1,0,1,0
 re-bloom.ro,NORMAL,15.2,2performant,10.0,1,0,1,0,1,0
@@ -88,6 +87,7 @@ librarie.net,NORMAL,15.1,2performant,9.0,1,0,1,0,1,0
 editura-arthur.ro,NORMAL,15.1,2performant,9.0,1,0,1,0,1,0
 giftdesign.ro,NORMAL,15.1,2performant,9.0,1,0,1,0,1,0
 aronia-charlottenburg.ro,NORMAL,14.9,2performant,8.0,1,0,1,0,1,0
+obio.ro,NORMAL,14.9,2performant,8.0,1,0,1,0,1,0
 yves-rocher.ro,NORMAL,14.9,2performant,8.0,1,0,1,0,1,0
 sneakerit.ro,NORMAL,14.9,2performant,8.0,1,0,1,0,1,0
 zephyrlabs.ro,NORMAL,14.9,2performant,8.0,1,0,1,0,1,0
@@ -140,6 +140,8 @@ scalahosting.com,NORMAL,13.3,impact,100.0,0,0,0,0,1,0
 wr.st-asu.com,NORMAL,13.3,impact,200.0,0,0,0,0,1,0
 twizzlo.com,NORMAL,13.3,impact,50.0,0,0,0,0,1,0
 knowledgehut.com,NORMAL,13.3,impact,50.0,0,0,0,0,1,0
+libris.ro,NORMAL,13.3,2performant,8.0,0,0,1,1,1,0
+vegis.ro,NORMAL,13.3,2performant,8.0,0,0,1,1,1,0
 preply.com,NORMAL,13.2,impact,30.0,0,0,0,0,1,0
 scule365.ro,NORMAL,13.2,2performant,7.5,0,0,1,1,1,0
 popai.pro,NORMAL,13.1,impact,45.0,0,0,0,0,1,0
@@ -277,14 +279,13 @@ scenta.ro,NORMAL,11.0,2performant,12.0,0,0,1,0,1,0
 trendifystore.ro,NORMAL,11.0,2performant,12.0,0,0,1,0,1,0
 dezmembraru.ro,NORMAL,10.8,2performant,10.5,0,0,1,0,1,0
 lacanistra.ro,NORMAL,10.8,2performant,11.0,0,0,1,0,1,0
-craftmystic.ro,NORMAL,10.8,2performant,11.0,0,0,1,0,1,0
 mxenduro.ro,NORMAL,10.7,2performant,10.0,0,0,1,0,1,0
 shopika.ro,NORMAL,10.7,2performant,10.0,0,0,1,0,1,0
 dehaine.ro,NORMAL,10.7,2performant,10.0,0,0,1,0,1,0
 infinitelove.ro,NORMAL,10.7,2performant,10.0,0,0,1,0,1,0
 piese-biciclete.eu,NORMAL,10.7,2performant,10.0,0,0,1,0,1,0
-benvenuti.com,NORMAL,10.7,2performant,10.0,0,0,1,0,1,0
 pravalianoastra.ro,NORMAL,10.7,2performant,10.0,0,0,1,0,1,0
+benvenuti.com,NORMAL,10.7,2performant,10.0,0,0,1,0,1,0
 daar.ro,NORMAL,10.7,2performant,10.0,0,0,1,0,1,0
 baseone.ro,NORMAL,10.7,2performant,10.0,0,0,1,0,1,0
 case-smart.ro,NORMAL,10.7,2performant,10.0,0,0,1,0,1,0
@@ -296,11 +297,11 @@ greeno.ro,NORMAL,10.7,2performant,10.0,0,0,1,0,1,0
 gorillasports.ro,NORMAL,10.7,2performant,10.0,0,0,1,0,1,0
 caraielli.ro,NORMAL,10.7,2performant,10.0,0,0,1,0,1,0
 produsecosmetice.ro,NORMAL,10.7,2performant,10.0,0,0,1,0,1,0
-robazar.ro,NORMAL,10.7,2performant,10.0,0,0,1,0,1,0
 druzy.ro,NORMAL,10.7,2performant,10.0,0,0,1,0,1,0
+robazar.ro,NORMAL,10.7,2performant,10.0,0,0,1,0,1,0
 lasebiacasa.ro,NORMAL,10.7,2performant,10.0,0,0,1,0,1,0
-doctordetergent.ro,NORMAL,10.7,2performant,10.0,0,0,1,0,1,0
 edituratrei.ro,NORMAL,10.7,2performant,10.0,0,0,1,0,1,0
+doctordetergent.ro,NORMAL,10.7,2performant,10.0,0,0,1,0,1,0
 glowmania.ro,NORMAL,10.7,2performant,10.0,0,0,1,0,1,0
 maslinescu.ro,NORMAL,10.7,2performant,10.0,0,0,1,0,1,0
 enigma-plant.ro,NORMAL,10.7,2performant,10.0,0,0,1,0,1,0
@@ -331,7 +332,6 @@ optiblu.ro,NORMAL,10.7,2performant,10.0,0,0,1,0,1,0
 reelken.com,NORMAL,10.7,2performant,10.0,0,0,1,0,1,0
 nuvien.ro,NORMAL,10.7,2performant,10.0,0,0,1,0,1,0
 casa-bucuriei.ro,NORMAL,10.7,2performant,10.0,0,0,1,0,1,0
-estel.ro,NORMAL,10.7,2performant,10.0,0,0,1,0,1,0
 bigiottos.com,NORMAL,10.7,2performant,10.0,0,0,1,0,1,0
 istanonline.ro,NORMAL,10.7,2performant,10.0,0,0,1,0,1,0
 centini.ro,NORMAL,10.7,2performant,10.0,0,0,1,0,1,0
@@ -360,8 +360,8 @@ cadourisiperle.ro,NORMAL,10.3,2performant,8.0,0,0,1,0,1,0
 kinderplay.ro,NORMAL,10.3,2performant,8.0,0,0,1,0,1,0
 evolutionpowertools.ro,NORMAL,10.3,2performant,8.0,0,0,1,0,1,0
 bagstodoor.ro,NORMAL,10.3,2performant,8.0,0,0,1,0,1,0
-casanewconcept.ro,NORMAL,10.3,2performant,8.0,0,0,1,0,1,0
 edituradph.ro,NORMAL,10.3,2performant,8.0,0,0,1,0,1,0
+casanewconcept.ro,NORMAL,10.3,2performant,8.0,0,0,1,0,1,0
 wargear.ro,NORMAL,10.3,2performant,8.0,0,0,1,0,1,0
 petit-bebe.ro,NORMAL,10.3,2performant,8.0,0,0,1,0,1,0
 babyroll.ro,NORMAL,10.3,2performant,8.0,0,0,1,0,1,0
@@ -371,13 +371,13 @@ ada-shoes.ro,NORMAL,10.3,2performant,8.0,0,0,1,0,1,0
 laicashop.ro,NORMAL,10.3,2performant,8.0,0,0,1,0,1,0
 beststoreonline.ro,NORMAL,10.3,2performant,8.0,0,0,1,0,1,0
 armansport.ro,NORMAL,10.3,2performant,8.0,0,0,1,0,1,0
-makeupshop.ro,NORMAL,10.3,2performant,8.0,0,0,1,0,1,0
 scauneonline.ro,NORMAL,10.3,2performant,8.0,0,0,1,0,1,0
+makeupshop.ro,NORMAL,10.3,2performant,8.0,0,0,1,0,1,0
 krista.ro,NORMAL,10.3,2performant,8.0,0,0,1,0,1,0
 kiehls.ro,NORMAL,10.3,2performant,8.0,0,0,1,0,1,0
+elegance-decor.ro,NORMAL,10.3,2performant,8.0,0,0,1,0,1,0
 lancome.ro,NORMAL,10.3,2performant,8.0,0,0,1,0,1,0
 grupdzc.ro,NORMAL,10.3,2performant,8.0,0,0,1,0,1,0
-elegance-decor.ro,NORMAL,10.3,2performant,8.0,0,0,1,0,1,0
 printrecarti.ro,NORMAL,10.3,2performant,8.0,0,0,1,0,1,0
 navi-gps.ro,NORMAL,10.3,2performant,8.0,0,0,1,0,1,0
 reyze.ro,NORMAL,10.3,2performant,8.0,0,0,1,0,1,0
@@ -401,13 +401,13 @@ iclothing.com,NORMAL,10.2,2performant,7.5,0,0,1,0,1,0
 megadepot.ro,NORMAL,10.2,2performant,7.0,0,0,1,0,1,0
 fabricadegratare.ro,NORMAL,10.2,2performant,7.0,0,0,1,0,1,0
 10qaroma.ro,NORMAL,10.2,2performant,7.0,0,0,1,0,1,0
+kamu.ro,NORMAL,10.2,2performant,7.5,0,0,1,0,1,0
 magazinuldegene.ro,NORMAL,10.2,2performant,7.0,0,0,1,0,1,0
 idealbeauty.ro,NORMAL,10.2,2performant,7.5,0,0,1,0,1,0
-kamu.ro,NORMAL,10.2,2performant,7.5,0,0,1,0,1,0
 floria.ro,NORMAL,10.2,2performant,7.0,0,0,1,0,1,0
-aeriumshop.ro,NORMAL,10.2,2performant,7.0,0,0,1,0,1,0
 savelectro.ro,NORMAL,10.2,2performant,7.0,0,0,1,0,1,0
 nepstore.ro,NORMAL,10.2,2performant,7.5,0,0,1,0,1,0
+aeriumshop.ro,NORMAL,10.2,2performant,7.0,0,0,1,0,1,0
 sculefix.ro,NORMAL,10.2,2performant,7.0,0,0,1,0,1,0
 homemart.ro,NORMAL,10.2,2performant,7.0,0,0,1,0,1,0
 lunera.ro,NORMAL,10.2,2performant,7.0,0,0,1,0,1,0
@@ -480,6 +480,7 @@ hygiero.ro,LOW,9.8,2performant,5.0,0,0,1,0,1,0
 scentoparfum.ro,LOW,9.8,2performant,5.0,0,0,1,0,1,0
 cumparamisim.ro,LOW,9.8,2performant,5.0,0,0,1,0,1,0
 navigatiiandroid.ro,LOW,9.8,2performant,5.0,0,0,1,0,1,0
+autoeqt.ro,LOW,9.8,2performant,5.0,0,0,1,0,1,0
 casaidea.ro,LOW,9.8,2performant,5.0,0,0,1,0,1,0
 talis.ro,LOW,9.8,2performant,5.0,0,0,1,0,1,0
 vivadeco.ro,LOW,9.8,2performant,5.0,0,0,1,0,1,0
@@ -894,7 +895,6 @@ globalfabricwholesale.com,LOW,6.6,impact,0.0,0,0,0,0,1,0
 erotic24.ro,LOW,6.5,2performant,15.0,0,0,0,0,1,0
 shinefashion.ro,LOW,6.5,2performant,15.0,0,0,0,0,1,0
 madebysociety.co.uk,LOW,6.5,2performant,15.0,0,0,0,0,1,0
-truemedicalcare.ro,LOW,6.5,2performant,15.0,0,0,0,0,1,0
 longevity-boost.com,LOW,6.5,2performant,15.0,0,0,0,0,1,0
 emotiv.ro,LOW,6.5,2performant,15.0,0,0,0,0,1,0
 sellex.ro,LOW,6.5,2performant,15.0,0,0,0,0,1,0
@@ -952,3 +952,4 @@ mobcub.ro,LOW,4.5,2performant,3.0,0,0,0,0,1,0
 flip.gr,LOW,4.3,2performant,2.0,0,0,0,0,1,0
 cyberfolks.ro,LOW,4.2,2performant,1.0,0,0,0,0,1,0
 flip.bg,LOW,4.2,2performant,1.5,0,0,0,0,1,0
+marketgarage.ro,LOW,4.2,2performant,1.0,0,0,0,0,1,0
