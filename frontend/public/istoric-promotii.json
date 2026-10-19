@@ -508,8 +508,8 @@
    "magazine": 126
   },
   "2026-10-19": {
-   "promotii": 252,
-   "magazine": 125
+   "promotii": 251,
+   "magazine": 124
   }
  },
  "magazine": {
@@ -4471,6 +4471,15 @@
   ],
   "infinity.ro": [
    {
+    "k": "blackfriday2026peinfinityroreduceridepanala70|",
+    "titlu": "Black Friday 2026 pe Infinity.ro: Reduceri de până la 70%",
+    "cod": false,
+    "prima": "2026-10-19",
+    "ultima": "2026-10-19",
+    "expira": "2026-11-30",
+    "activa": true
+   },
+   {
     "k": "maratonulreducerilordetoamna|",
     "titlu": "Maratonul Reducerilor de toamnă",
     "cod": false,
@@ -6604,7 +6613,7 @@
     "prima": "2026-10-07",
     "ultima": "2026-10-19",
     "expira": "2026-10-19",
-    "activa": true
+    "activa": false
    },
    {
     "k": "spirulinacadoulacomenzidepeste300delei|",
@@ -8322,7 +8331,7 @@
     "prima": "2026-10-11",
     "ultima": "2026-10-19",
     "expira": "2026-10-19",
-    "activa": true
+    "activa": false
    },
    {
     "k": "stepintofallsale|reset",

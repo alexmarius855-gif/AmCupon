@@ -1,10 +1,10 @@
 {
   "generat": "2026-10-19",
-  "total_magazine": 453,
+  "total_magazine": 452,
   "cu_promotie": 73,
   "cu_cod_real": 4,
   "doar_oferta": 69,
-  "procent_cu_promotie": 16.1,
+  "procent_cu_promotie": 16.2,
   "procent_cu_cod": 0.9,
   "reducere_mediana_generala": 40.0,
   "magazine_cu_procent_declarat": 40,
@@ -57,11 +57,11 @@
     {
       "slug": "sanatate",
       "nume": "Sănătate & farmacie",
-      "magazine": 39,
-      "cu_promotie": 11,
-      "reducere_mediana": 22.5,
+      "magazine": 38,
+      "cu_promotie": 10,
+      "reducere_mediana": 25,
       "reducere_max": 50,
-      "esantion": 4
+      "esantion": 3
     },
     {
       "slug": "electronice",
@@ -94,10 +94,10 @@
       "slug": "marketplace",
       "nume": "Marketplace",
       "magazine": 45,
-      "cu_promotie": 5,
+      "cu_promotie": 6,
       "reducere_mediana": null,
       "reducere_max": null,
-      "esantion": 1
+      "esantion": 2
     },
     {
       "slug": "animale",
@@ -156,9 +156,9 @@
   ],
   "criteriu": "domeniu .ro",
   "international": {
-    "total": 502,
-    "cu_promotie": 57,
-    "cu_cod": 35
+    "total": 503,
+    "cu_promotie": 56,
+    "cu_cod": 34
   },
   "retele": [
     "2Performant",
