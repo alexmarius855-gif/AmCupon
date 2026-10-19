@@ -1,5 +1,5 @@
 # 💰 TOP MAGAZINE după POTENȚIAL DE CÂȘTIG
-> Generat automat 18.10.2026 13:15. Pe astea să le împingi (articole, pin-uri, postări).
+> Generat automat 19.10.2026 14:38. Pe astea să le împingi (articole, pin-uri, postări).
 
 **Scor = comision × popularitate × ofertă.** Comisionul mare singur înșală — astea-s banii REALI.
 
@@ -33,8 +33,8 @@
 | 26 | Zandra (zandra.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
 | 27 | Oleya (oleya.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
 | 28 | Geekbuying (geekbuying.com) | 8% | 0 | ✅ COD | 16.0 |
-| 29 | Boyamic (store.boyamic.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 30 | Ashimaryhair (ashimaryhair.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 29 | Craftmystic (craftmystic.ro) | 11% | 0 | 🏷️ ofertă | 15.4 |
+| 30 | Boyamic (store.boyamic.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
 
 ## 🎯 Cum folosești raportul
 - **Top 10** = prioritate maximă pentru articole „cel mai bun X" + pin-uri Pinterest
