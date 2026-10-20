@@ -1,5 +1,18 @@
 [
   {
+    "id": 273389,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273348/original/273348.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=64c93a553&aff_code=541547473&campaign_unique=9a6f02fef",
+    "landing_raw": "https://www.libris.ro/lp/happydaysreduceri",
+    "width": 1080,
+    "height": 1080,
+    "merchant": "libris.ro ",
+    "merchant_slug": "libris-ro",
+    "name": "Happy Days la toate rafturile: până la -86%, doar 2 zile",
+    "category": "Happy Days la toate rafturile: până la -86%, doar 2 zile",
+    "b_type": "image"
+  },
+  {
     "id": 273347,
     "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273306/original/273306.jpg",
     "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=5072e0351&aff_code=541547473&campaign_unique=cc08e2536",
@@ -112,19 +125,6 @@
     "height": 1200,
     "merchant": "pensulemachiaj.ro",
     "merchant_slug": "pensulemachiaj-ro",
-    "name": "-80% STAR PURE GLAM,SECRET BEAUTY BAG GRATUIT",
-    "category": "-80% STAR PURE GLAM,SECRET BEAUTY BAG GRATUIT",
-    "b_type": "image"
-  },
-  {
-    "id": 273145,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273104/original/273104.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=bf74bd1b4&aff_code=541547473&campaign_unique=4b9a6d5ea",
-    "landing_raw": "https://www.kitunghii.ro",
-    "width": 1200,
-    "height": 1200,
-    "merchant": "kitunghii.ro",
-    "merchant_slug": "kitunghii-ro",
     "name": "-80% STAR PURE GLAM,SECRET BEAUTY BAG GRATUIT",
     "category": "-80% STAR PURE GLAM,SECRET BEAUTY BAG GRATUIT",
     "b_type": "image"

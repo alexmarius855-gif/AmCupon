@@ -1,7 +1,7 @@
 {
-  "data": "2026-10-19",
-  "data_afisata": "19 octombrie 2026",
-  "titlu": "Radarul AmCupon — 19 octombrie 2026",
+  "data": "2026-10-20",
+  "data_afisata": "20 octombrie 2026",
+  "titlu": "Radarul AmCupon — 20 octombrie 2026",
   "intro": "Am trecut azi prin ofertele active si am pastrat doar ce merita. Iese in evidenta Noriel si Klaiyihair, dar mai jos ai selectia completa, verificata de noi. Toate codurile sunt testate; cele cu termen scurt le-am marcat.",
   "picks": [
     {
@@ -15,8 +15,8 @@
       "descriere": "",
       "cod": "NORIEL20",
       "url": "https://amcupon.ro/cod-reducere/noriel.ro",
-      "zile_ramase": 6,
-      "take": "Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 5,
+      "take": "Grabeste-te: expira in 5 zile. Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
       "scor": 100,
@@ -29,8 +29,22 @@
       "descriere": "18% OFF Sitewide — Code: Halloween18 $35 OFF Orders Over $159 — Code: Halloween35 $60 OFF Orders Over $265 — Code: Halloween60",
       "cod": "HALLOWEEN55",
       "url": "https://amcupon.ro/cod-reducere/klaiyihair.com",
-      "zile_ramase": 4,
-      "take": "Grabeste-te: expira in 4 zile. Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 3,
+      "take": "Grabeste-te: expira in 3 zile. Oferta verificata — buna daca te incadrezi in categorie."
+    },
+    {
+      "scor": 75,
+      "magazin": "libris.ro",
+      "nume_afisat": "Libris",
+      "categorie": "Cărți & Educație",
+      "categorie_slug": "carti-educatie",
+      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9868/medium/9868.gif",
+      "titlu": "Happy Days la toate rafturile: până la -86%, doar 2 zile",
+      "descriere": "",
+      "cod": "",
+      "url": "https://amcupon.ro/cod-reducere/libris.ro",
+      "zile_ramase": 1,
+      "take": "Grabeste-te: expira in 1 zi. Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
       "scor": 70,
@@ -43,7 +57,7 @@
       "descriere": "Save $3 on orders over $29 using coupon DH2026OCTSAVE3 at DHgate.",
       "cod": "DH2026OCTSAVE3",
       "url": "https://amcupon.ro/cod-reducere/dhgate.com",
-      "zile_ramase": 12,
+      "zile_ramase": 11,
       "take": "Bun de prins daca oricum voiai sa-ti reimprospatezi garderoba."
     },
     {
@@ -57,7 +71,7 @@
       "descriere": "Save 10% on eligible Xmind subscriptions with code XMIND10OFF. Valid through June 1, 2027. See the landing page for current pricing and eligibility.",
       "cod": "XMIND10OFF",
       "url": "https://amcupon.ro/cod-reducere/xmind.com",
-      "zile_ramase": 225,
+      "zile_ramase": 224,
       "take": "Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
@@ -71,21 +85,7 @@
       "descriere": "Quber Savings",
       "cod": "QUBER10",
       "url": "https://amcupon.ro/cod-reducere/orbitmobile.com",
-      "zile_ramase": 377,
-      "take": "Oferta verificata — buna daca te incadrezi in categorie."
-    },
-    {
-      "scor": 70,
-      "magazin": "outin.com",
-      "nume_afisat": "Outin",
-      "categorie": "Casă & Grădină",
-      "categorie_slug": "casa-gradina",
-      "logo_url": "https://www.google.com/s2/favicons?domain=outin.com&sz=128",
-      "titlu": "OutIn Code：OIAFF5",
-      "descriere": "Stackable universal discount code, enjoy 5% off Code：OIAFF5",
-      "cod": "OIAFF5",
-      "url": "https://amcupon.ro/cod-reducere/outin.com",
-      "zile_ramase": 179,
+      "zile_ramase": 376,
       "take": "Oferta verificata — buna daca te incadrezi in categorie."
     }
   ],
