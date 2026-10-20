@@ -644,22 +644,6 @@
   ]
  },
  {
-  "magazin": "lightingwill.com",
-  "url": "https://www.lightingwill.com",
-  "categorie": "Servicii Business",
-  "categorie_slug": "servicii",
-  "program": "LightingWill",
-  "regiuni": [
-   "AUSTRALIA",
-   "CANADA",
-   "GERMANY",
-   "CHINA",
-   "UK",
-   "FRANCE",
-   "US"
-  ]
- },
- {
   "magazin": "lightsaber.com",
   "url": "https://lightsaber.com/",
   "categorie": "Diverse",

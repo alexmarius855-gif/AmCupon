@@ -512,8 +512,8 @@
    "magazine": 124
   },
   "2026-10-20": {
-   "promotii": 255,
-   "magazine": 126
+   "promotii": 258,
+   "magazine": 129
   }
  },
  "magazine": {
@@ -2609,6 +2609,15 @@
   ],
   "edituracasa.ro": [
    {
+    "k": "prietenameaconni|",
+    "titlu": "Prietena mea Conni",
+    "cod": false,
+    "prima": "2026-10-20",
+    "ultima": "2026-10-20",
+    "expira": "2026-10-29",
+    "activa": true
+   },
+   {
     "k": "reducerilahoinari|",
     "titlu": "Reduceri la Hoinari",
     "cod": false,
@@ -3414,6 +3423,15 @@
    }
   ],
   "f64.ro": [
+   {
+    "k": "canoneosriiicadouobiectiv|",
+    "titlu": "Canon EOS RIII CADOU obiectiv",
+    "cod": false,
+    "prima": "2026-10-20",
+    "ultima": "2026-10-20",
+    "expira": "2026-10-31",
+    "activa": true
+   },
    {
     "k": "canontradeinlaobiectiveobtinepanala7500rondiscountlaschimbareaobiectivuluivechicuunulnou|",
     "titlu": "Canon Trade in la obiective. Obține până la 7500 RON discount la schimbarea obiectivului vechi cu unul nou.",
@@ -5321,6 +5339,15 @@
   ],
   "librex.ro": [
    {
+    "k": "marealichidaredetoamna|",
+    "titlu": "Marea Lichidare de Toamnă",
+    "cod": false,
+    "prima": "2026-10-20",
+    "ultima": "2026-10-20",
+    "expira": "2026-10-25",
+    "activa": true
+   },
+   {
     "k": "plouacureduceri|",
     "titlu": "Plouă cu reduceri",
     "cod": false,
@@ -6222,7 +6249,7 @@
     "prima": "2026-10-13",
     "ultima": "2026-10-20",
     "expira": "2026-10-20",
-    "activa": true
+    "activa": false
    },
    {
     "k": "feelfreshfeelyousaleupto100offwithcodefall|fall",
@@ -7239,6 +7266,15 @@
    }
   ],
   "priveboutique.net": [
+   {
+    "k": "blackcatfridaytoaterochiilelapretdeblackfridaypanala15extraincos|",
+    "titlu": "Black Cat Friday: toate rochiile la preț de Black Friday + până la −15% extra în coș",
+    "cod": false,
+    "prima": "2026-10-20",
+    "ultima": "2026-10-20",
+    "expira": "2026-11-09",
+    "activa": true
+   },
    {
     "k": "pb20sezonbanchetmajorat20latoaterochiileprive|pb20",
     "titlu": "PB20 - Sezon banchet & majorat: -20% la toate rochiile PRIVE",

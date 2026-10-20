@@ -239,11 +239,11 @@
     "categorie": "Marketplace",
     "categorie_slug": "marketplace",
     "cod": "",
-    "procent": "",
-    "zile_ramase": 0,
+    "procent": "-15%",
+    "zile_ramase": 26,
     "link": "https://amcupon.ro/cod-reducere/nadula.com",
-    "story": "🛍️ Reducere Nadula azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/nadula.com",
-    "perete": "🛍️ Reducere activa la Nadula\n\n✅ Cozy Season Cooler Prices Sale Up To $70 Off With Code:Cool\nℹ️ Nadula Hair Cozy Season Cooler Prices Sale Up To $70 Off With Code:Cool\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/nadula.com",
+    "story": "🛍️ -15% la Nadula!\nFara cod necesar 👇\namcupon.ro/cod-reducere/nadula.com",
+    "perete": "🛍️ -15% la Nadula — activ acum\n\n✅ Extra 15% Off Human Hair Bye Bye Knots Wig with code：nadula15\nℹ️ 2026 Nadula Hair Extra 15% Off Human Hair Bye Bye Knots Wig with code：nadula15\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/nadula.com",
     "hashtags": "#reduceri #marketplace #oferte #romania #nadula"
   },
   {
@@ -1105,6 +1105,19 @@
     "hashtags": "#reduceri #animale #petshop #romania #happypets"
   },
   {
+    "magazin": "librex.ro",
+    "nume": "Librex",
+    "categorie": "Cărți & Educație",
+    "categorie_slug": "carti-educatie",
+    "cod": "",
+    "procent": "",
+    "zile_ramase": 5,
+    "link": "https://amcupon.ro/cod-reducere/librex.ro",
+    "story": "📚 Reducere Librex azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/librex.ro",
+    "perete": "📚 Reducere activa la Librex\n\n✅ Marea Lichidare de Toamnă\n⏳ Expiră în 5 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/librex.ro",
+    "hashtags": "#reduceri #carti #educatie #romania #librex"
+  },
+  {
     "magazin": "femieko.ro",
     "nume": "Femieko",
     "categorie": "Sănătate & Farmacie",
@@ -1181,6 +1194,19 @@
     "story": "💄 -93% la Pickndazzle!\nFara cod necesar 👇\namcupon.ro/cod-reducere/pickndazzle.com",
     "perete": "💄 -93% la Pickndazzle — activ acum\n\n✅ AVANT Performance Box: de la peste 2.300 lei la doar 165 lei – 93% reducere\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/pickndazzle.com",
     "hashtags": "#reduceri #cosmetice #beauty #skincare #romania #pickndazzle"
+  },
+  {
+    "magazin": "priveboutique.net",
+    "nume": "Priveboutique",
+    "categorie": "Fashion",
+    "categorie_slug": "fashion",
+    "cod": "",
+    "procent": "-15%",
+    "zile_ramase": 20,
+    "link": "https://amcupon.ro/cod-reducere/priveboutique.net",
+    "story": "👗 -15% la Priveboutique!\nFara cod necesar 👇\namcupon.ro/cod-reducere/priveboutique.net",
+    "perete": "👗 -15% la Priveboutique — activ acum\n\n✅ Black Cat Friday: toate rochiile la preț de Black Friday + până la −15% extra în coș\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/priveboutique.net",
+    "hashtags": "#reduceri #moda #fashion #haine #romania #priveboutique"
   },
   {
     "magazin": "brainmarket.ro",
@@ -1311,6 +1337,19 @@
     "story": "💎 -45% la Craftmystic!\nFara cod necesar 👇\namcupon.ro/cod-reducere/craftmystic.ro",
     "perete": "💎 -45% la Craftmystic — activ acum\n\n✅ Black Friday CraftMystic: până la -45% la bijuterii din argint 925 cu pietre naturale\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/craftmystic.ro",
     "hashtags": "#reduceri #bijuterii #accesorii #romania #craftmystic"
+  },
+  {
+    "magazin": "edituracasa.ro",
+    "nume": "Edituracasa",
+    "categorie": "Cărți & Educație",
+    "categorie_slug": "carti-educatie",
+    "cod": "",
+    "procent": "",
+    "zile_ramase": 9,
+    "link": "https://amcupon.ro/cod-reducere/edituracasa.ro",
+    "story": "📚 Reducere Edituracasa azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/edituracasa.ro",
+    "perete": "📚 Reducere activa la Edituracasa\n\n✅ Prietena mea Conni\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/edituracasa.ro",
+    "hashtags": "#reduceri #carti #educatie #romania #edituracasa"
   },
   {
     "magazin": "uniquestore.ro",
