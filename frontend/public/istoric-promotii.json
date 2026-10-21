@@ -516,8 +516,8 @@
    "magazine": 129
   },
   "2026-10-21": {
-   "promotii": 255,
-   "magazine": 126
+   "promotii": 261,
+   "magazine": 130
   }
  },
  "magazine": {
@@ -1663,6 +1663,15 @@
   ],
   "centini.ro": [
    {
+    "k": "50leireducerelaintreagacategoriedama|",
+    "titlu": "50 lei reducere la întreaga categorie Damă",
+    "cod": false,
+    "prima": "2026-10-21",
+    "ultima": "2026-10-21",
+    "expira": "2026-10-30",
+    "activa": true
+   },
+   {
     "k": "reduceridepanala30lablugisipantalonibarbatesti|",
     "titlu": "Reduceri de până la 30% la blugi și pantaloni bărbătești",
     "cod": false,
@@ -2053,6 +2062,17 @@
     "ultima": "2026-06-29",
     "expira": "2026-06-29",
     "activa": false
+   }
+  ],
+  "detoxmed.ro": [
+   {
+    "k": "reduceresuplimentaradesezon|",
+    "titlu": "reducere suplimentara de sezon",
+    "cod": false,
+    "prima": "2026-10-21",
+    "ultima": "2026-10-21",
+    "expira": "2026-11-07",
+    "activa": true
    }
   ],
   "dhgate.com": [
@@ -3428,6 +3448,15 @@
   ],
   "f64.ro": [
    {
+    "k": "halloweendealspanala50laechipamentefotovideo|",
+    "titlu": "🎃 HALLOWEEN DEALS: Până la -50% la echipamente foto-video!",
+    "cod": false,
+    "prima": "2026-10-21",
+    "ultima": "2026-10-21",
+    "expira": "2026-10-31",
+    "activa": true
+   },
+   {
     "k": "canoneosriiicadouobiectiv|",
     "titlu": "Canon EOS RIII CADOU obiectiv",
     "cod": false,
@@ -4641,6 +4670,15 @@
    }
   ],
   "intimax.ro": [
+   {
+    "k": "blackfridaymareabubuiala|",
+    "titlu": "Black Friday - Marea Bubuială",
+    "cod": false,
+    "prima": "2026-10-21",
+    "ultima": "2026-10-21",
+    "expira": "2026-11-07",
+    "activa": true
+   },
    {
     "k": "reduceritentantelatoatagamadelenjerii|",
     "titlu": "Reduceri tentante la toata gama de lenjerii",
@@ -6238,6 +6276,15 @@
   ],
   "nadula.com": [
    {
+    "k": "halloweenalertsaleupto60offwithcodegold|",
+    "titlu": "Halloween Alert Sale Up To 60% Off With Code:Gold",
+    "cod": false,
+    "prima": "2026-10-21",
+    "ultima": "2026-10-21",
+    "expira": "2026-10-26",
+    "activa": true
+   },
+   {
     "k": "extra15offhumanhairbyebyeknotswigwithcodenadula15|",
     "titlu": "Extra 15% Off Human Hair Bye Bye Knots Wig with code：nadula15",
     "cod": false,
@@ -6451,6 +6498,15 @@
    }
   ],
   "niculescu.ro": [
+   {
+    "k": "campaniablackfridayedituraniculescureduceride50laoricecarteplusoferteexceptionaledepanala77|",
+    "titlu": "Campania Black Friday Editura NICULESCU - Reduceri de 50% la orice carte!!! Plus Oferte Exceptionale de pana la 77%!",
+    "cod": false,
+    "prima": "2026-10-21",
+    "ultima": "2026-10-21",
+    "expira": "2026-10-30",
+    "activa": true
+   },
    {
     "k": "campaniadevarasummerdeals2026reduceridepanala80lacartiminunate|",
     "titlu": "Campania de Vara (Summer Deals) 2026 - Reduceri de pana la 80% la carti minunate",

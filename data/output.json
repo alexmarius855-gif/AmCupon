@@ -906,7 +906,7 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 25,
+    "zile_ramase": 5,
     "promotii": [
       {
         "nume": "Extra 15% Off Human Hair Bye Bye Knots Wig with code：nadula15",
@@ -915,6 +915,15 @@
         "landing_page": "https://nadula.sjv.io/c/7401119/1273329/15659?u=https%3A%2F%2Fwww.nadula.com%2F7-5-bye-bye-knots-wig.html",
         "zile_ramase": 25,
         "expira": "2026-11-15",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "Halloween Alert Sale Up To 60% Off With Code:Gold",
+        "descriere": "Nadula Hair Halloween Alert Sale Up To 60% Off With Code:Gold",
+        "cod_cupon": "",
+        "landing_page": "https://nadula.sjv.io/c/7401119/1273329/15659?u=https%3A%2F%2Fm.nadula.com",
+        "zile_ramase": 5,
+        "expira": "2026-10-26",
         "sursa": "impact_deals_api"
       }
     ],
@@ -2435,6 +2444,41 @@
     "ultima_verificare": "2026-10-21"
   },
   {
+    "magazin": "prestigehome.ro",
+    "url": "https://www.prestigehome.ro/",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.prestigehome.ro%2F",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11100/medium/11100.png",
+    "categorie": "Casă & Grădină",
+    "categorie_slug": "casa-gradina",
+    "comision": "5.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 4,
+    "promotii": [
+      {
+        "nume": "Toamna incepe acasa",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.prestigehome.ro%2Fcollections%2Freduceri-de-pana-la-20-%C8%99i-livrare-rapida-din-stoc-octombrie",
+        "zile_ramase": 4,
+        "expira": "2026-10-25",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-21",
+    "scor_final": 40.0,
+    "program_id": 10116,
+    "unique_code": "07a2ce605"
+  },
+  {
     "magazin": "nano-auto.ro",
     "url": "https://nano-auto.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnano-auto.ro",
@@ -3024,6 +3068,41 @@
     "unique_code": "93bdc07c4"
   },
   {
+    "magazin": "intimax.ro",
+    "url": "https://intimax.ro/",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fintimax.ro%2F",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13590/medium/13590.png",
+    "categorie": "Marketplace",
+    "categorie_slug": "marketplace",
+    "comision": "20.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 17,
+    "promotii": [
+      {
+        "nume": "Black Friday - Marea Bubuială",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fintimax.ro%2F",
+        "zile_ramase": 17,
+        "expira": "2026-11-07",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-21",
+    "scor_final": 30.0,
+    "program_id": 9909,
+    "unique_code": "fcc8c8536"
+  },
+  {
     "magazin": "expomob.ro",
     "url": "https://www.expomob.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.expomob.ro",
@@ -3542,6 +3621,15 @@
         "zile_ramase": 10,
         "expira": "2026-10-31",
         "sursa": "2performant_api"
+      },
+      {
+        "nume": "🎃 HALLOWEEN DEALS: Până la -50% la echipamente foto-video!",
+        "descriere": "",
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.f64.ro%2Fhalloween",
+        "zile_ramase": 10,
+        "expira": "2026-10-31",
+        "sursa": "2performant_api"
       }
     ],
     "exclusiv": false,
@@ -3920,41 +4008,6 @@
     "scor_final": 30.0,
     "program_id": 3530,
     "unique_code": "46f8cd5eb"
-  },
-  {
-    "magazin": "prestigehome.ro",
-    "url": "https://www.prestigehome.ro/",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.prestigehome.ro%2F",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11100/medium/11100.png",
-    "categorie": "Casă & Grădină",
-    "categorie_slug": "casa-gradina",
-    "comision": "5.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 4,
-    "promotii": [
-      {
-        "nume": "Toamna incepe acasa",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.prestigehome.ro%2Fcollections%2Freduceri-de-pana-la-20-%C8%99i-livrare-rapida-din-stoc-octombrie",
-        "zile_ramase": 4,
-        "expira": "2026-10-25",
-        "sursa": "2performant_api"
-      }
-    ],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-21",
-    "scor_final": 30.0,
-    "program_id": 10116,
-    "unique_code": "07a2ce605"
   },
   {
     "magazin": "linailsboutique.ro",
@@ -4782,6 +4835,41 @@
     "unique_code": "d42a9ce58"
   },
   {
+    "magazin": "centini.ro",
+    "url": "https://www.centini.ro/",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.centini.ro%2F",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14207/medium/14207.png",
+    "categorie": "Fashion",
+    "categorie_slug": "fashion",
+    "comision": "10.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 9,
+    "promotii": [
+      {
+        "nume": "50 lei reducere la întreaga categorie Damă",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.centini.ro%2Fcatalog%2Ffemei-15",
+        "zile_ramase": 9,
+        "expira": "2026-10-30",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-21",
+    "scor_final": 30.0,
+    "program_id": 12887,
+    "unique_code": "ebb7fb28d"
+  },
+  {
     "magazin": "zephyrlabs.ro",
     "url": "https://www.zephyrlabs.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.zephyrlabs.ro",
@@ -4956,6 +5044,41 @@
     "scor_final": 30.0,
     "program_id": 12855,
     "unique_code": "f134fe0e1"
+  },
+  {
+    "magazin": "niculescu.ro",
+    "url": "https://www.niculescu.ro/",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.niculescu.ro%2F",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/4789/medium/4789.jpg",
+    "categorie": "Cărți & Educație",
+    "categorie_slug": "carti-educatie",
+    "comision": "10.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 9,
+    "promotii": [
+      {
+        "nume": "Campania Black Friday Editura NICULESCU - Reduceri de 50% la orice carte!!! Plus Oferte Exceptionale de pana la 77%! ",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.niculescu.ro%2F",
+        "zile_ramase": 9,
+        "expira": "2026-10-30",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-21",
+    "scor_final": 30.0,
+    "program_id": 1581,
+    "unique_code": "706637522"
   },
   {
     "magazin": "112coffee.com",
@@ -5175,6 +5298,41 @@
     "scor_final": 30.0,
     "program_id": 12986,
     "unique_code": "0602efbbe"
+  },
+  {
+    "magazin": "detoxmed.ro",
+    "url": "https://www.detoxmed.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.detoxmed.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14520/medium/14520.jpg",
+    "categorie": "Sănătate & Farmacie",
+    "categorie_slug": "sanatate",
+    "comision": "7.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 17,
+    "promotii": [
+      {
+        "nume": "reducere suplimentara de sezon",
+        "descriere": "",
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdetoxmed.ro%2Fproduct-category%2Fprograme-detoxmed%2F",
+        "zile_ramase": 17,
+        "expira": "2026-11-07",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-21",
+    "scor_final": 30.0,
+    "program_id": 13197,
+    "unique_code": "7875d2dab"
   },
   {
     "magazin": "erosvita.ro",
@@ -16420,31 +16578,6 @@
     "unique_code": "0a8a2c4d9"
   },
   {
-    "magazin": "intimax.ro",
-    "url": "https://intimax.ro/",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fintimax.ro%2F",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13590/medium/13590.png",
-    "categorie": "Marketplace",
-    "categorie_slug": "marketplace",
-    "comision": "20.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-21",
-    "scor_final": 0.0,
-    "program_id": 9909,
-    "unique_code": "fcc8c8536"
-  },
-  {
     "magazin": "tezyo.ro",
     "url": "https://www.tezyo.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.tezyo.ro%2F",
@@ -19151,7 +19284,7 @@
     "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13256/medium/13256.png",
     "categorie": "Casă & Grădină",
     "categorie_slug": "casa-gradina",
-    "comision": "5.0",
+    "comision": "7.0",
     "rank": 999,
     "scor_afiliere": 0,
     "prioritate": "neclasat",
@@ -23520,31 +23653,6 @@
     "unique_code": "ee23ff818"
   },
   {
-    "magazin": "centini.ro",
-    "url": "https://www.centini.ro/",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.centini.ro%2F",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14207/medium/14207.png",
-    "categorie": "Fashion",
-    "categorie_slug": "fashion",
-    "comision": "10.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-21",
-    "scor_final": 0.0,
-    "program_id": 12887,
-    "unique_code": "ebb7fb28d"
-  },
-  {
     "magazin": "mobiro.ro",
     "url": "https://mobiro.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fmobiro.ro",
@@ -23668,31 +23776,6 @@
     "scor_final": 0.0,
     "program_id": 12948,
     "unique_code": "1a7755795"
-  },
-  {
-    "magazin": "niculescu.ro",
-    "url": "https://www.niculescu.ro/",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.niculescu.ro%2F",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/4789/medium/4789.jpg",
-    "categorie": "Cărți & Educație",
-    "categorie_slug": "carti-educatie",
-    "comision": "10.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-21",
-    "scor_final": 0.0,
-    "program_id": 1581,
-    "unique_code": "706637522"
   },
   {
     "magazin": "lunera.ro",
@@ -24718,31 +24801,6 @@
     "scor_final": 0.0,
     "program_id": 8413,
     "unique_code": "cacb84163"
-  },
-  {
-    "magazin": "detoxmed.ro",
-    "url": "https://www.detoxmed.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.detoxmed.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14520/medium/14520.jpg",
-    "categorie": "Sănătate & Farmacie",
-    "categorie_slug": "sanatate",
-    "comision": "7.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-21",
-    "scor_final": 0.0,
-    "program_id": 13197,
-    "unique_code": "7875d2dab"
   },
   {
     "magazin": "1cctv.ro",
@@ -25918,6 +25976,31 @@
     "scor_final": 0.0,
     "program_id": 13303,
     "unique_code": "978bad271"
+  },
+  {
+    "magazin": "ceasul.ro",
+    "url": "https://ceasul.ro/",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fceasul.ro%2F",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14628/medium/14628.png",
+    "categorie": "Bijuterii & Ceasuri",
+    "categorie_slug": "bijuterii",
+    "comision": "16.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-21",
+    "scor_final": 0.0,
+    "program_id": 13308,
+    "unique_code": "506f27b7d"
   },
   {
     "magazin": "apivest.ro",
