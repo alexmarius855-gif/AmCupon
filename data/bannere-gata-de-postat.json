@@ -1,5 +1,18 @@
 [
   {
+    "id": 273403,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273362/original/273362.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=4d06c561f&aff_code=541547473&campaign_unique=54d396a54",
+    "landing_raw": "https://www.edituracasa.ro/carti-pentru-copii/prietena-mea-conni",
+    "width": 800,
+    "height": 800,
+    "merchant": "edituracasa.ro/ ",
+    "merchant_slug": "edituracasa-ro",
+    "name": "Prietena mea Conni",
+    "category": "Prietena mea Conni",
+    "b_type": "image"
+  },
+  {
     "id": 273389,
     "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273348/original/273348.jpg",
     "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=64c93a553&aff_code=541547473&campaign_unique=9a6f02fef",
@@ -114,19 +127,6 @@
     "merchant_slug": "libris-ro",
     "name": "Transport GRATUIT pentru ORICE colet, oriunde în țară ",
     "category": "Transport GRATUIT pentru ORICE colet, oriunde în țară ",
-    "b_type": "image"
-  },
-  {
-    "id": 273153,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273112/original/273112.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=e0b70259a&aff_code=541547473&campaign_unique=cc08e2536",
-    "landing_raw": "https://www.pensulemachiaj.ro",
-    "width": 1200,
-    "height": 1200,
-    "merchant": "pensulemachiaj.ro",
-    "merchant_slug": "pensulemachiaj-ro",
-    "name": "-80% STAR PURE GLAM,SECRET BEAUTY BAG GRATUIT",
-    "category": "-80% STAR PURE GLAM,SECRET BEAUTY BAG GRATUIT",
     "b_type": "image"
   }
 ]
