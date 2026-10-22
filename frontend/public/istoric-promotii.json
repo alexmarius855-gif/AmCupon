@@ -520,8 +520,8 @@
    "magazine": 130
   },
   "2026-10-22": {
-   "promotii": 259,
-   "magazine": 128
+   "promotii": 262,
+   "magazine": 130
   }
  },
  "magazine": {
@@ -4976,6 +4976,17 @@
     "activa": false
    }
   ],
+  "kinderauto.ro": [
+   {
+    "k": "blackfridaykinderautoro2026comision8cosmediupeste1000ronkitmediadisponibil|",
+    "titlu": "🔥Black Friday Kinderauto.ro 2026 | Comision 8% | Coș mediu peste 1.000 RON | Kit Media disponibil!",
+    "cod": false,
+    "prima": "2026-10-22",
+    "ultima": "2026-10-22",
+    "expira": "2026-11-15",
+    "activa": true
+   }
+  ],
   "kisslovehair.com": [
    {
     "k": "endsofsummer|",
@@ -5267,6 +5278,26 @@
     "ultima": "2026-07-15",
     "expira": "2026-07-15",
     "activa": false
+   }
+  ],
+  "lacrimidepanda.ro": [
+   {
+    "k": "cyberweeklacrimidepanda30latotcatalogulvoucher50lei|",
+    "titlu": "Cyber Week Lacrimi de Panda – 30% la tot catalogul + voucher 50 lei",
+    "cod": false,
+    "prima": "2026-10-22",
+    "ultima": "2026-10-22",
+    "expira": "2026-11-14",
+    "activa": true
+   },
+   {
+    "k": "blackfridaylacrimidepanda35reducerelatotcatalogul|",
+    "titlu": "Black Friday Lacrimi de Panda – 35% reducere la tot catalogul",
+    "cod": false,
+    "prima": "2026-10-22",
+    "ultima": "2026-10-22",
+    "expira": "2026-11-04",
+    "activa": true
    }
   ],
   "lenjeriapufoasa.ro": [
