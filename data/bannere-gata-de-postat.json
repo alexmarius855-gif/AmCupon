@@ -1,5 +1,18 @@
 [
   {
+    "id": 273420,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273379/original/273379.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=36d191ea4&aff_code=541547473&campaign_unique=5baacfa1f",
+    "landing_raw": "https://www.f64.ro/halloween",
+    "width": 1080,
+    "height": 1080,
+    "merchant": "f64.ro",
+    "merchant_slug": "f64-ro",
+    "name": "Halloween",
+    "category": "Halloween",
+    "b_type": "image"
+  },
+  {
     "id": 273403,
     "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273362/original/273362.jpg",
     "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=4d06c561f&aff_code=541547473&campaign_unique=54d396a54",
@@ -88,45 +101,6 @@
     "merchant_slug": "drmax-ro",
     "name": "Max Days - Frumusete",
     "category": "Max Days - Frumusete",
-    "b_type": "image"
-  },
-  {
-    "id": 273229,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273188/original/273188.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=cbc5347cf&aff_code=541547473&campaign_unique=573b44539",
-    "landing_raw": "https://www.aosom.ro/activity/comanda-ta-infricosator-de-buna",
-    "width": 1200,
-    "height": 1200,
-    "merchant": "aosom.ro ",
-    "merchant_slug": "aosom-ro",
-    "name": "TOATE CATEGORIILE",
-    "category": "TOATE CATEGORIILE",
-    "b_type": "image"
-  },
-  {
-    "id": 273202,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273161/original/273161.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=05ffee155&aff_code=541547473&campaign_unique=4cc1a3cf7",
-    "landing_raw": "https://www.giftdesign.ro/info/halloween",
-    "width": 800,
-    "height": 800,
-    "merchant": "giftdesign.ro",
-    "merchant_slug": "giftdesign-ro-7d0c0462-cf14-432d-9385-4496c22dbcbd",
-    "name": "HALLOWEEN",
-    "category": "HALLOWEEN",
-    "b_type": "image"
-  },
-  {
-    "id": 273197,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273156/original/273156.png",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=bbc976ae9&aff_code=541547473&campaign_unique=9a6f02fef",
-    "landing_raw": "https://www.libris.ro/lp/transportgratuit",
-    "width": 1080,
-    "height": 1080,
-    "merchant": "libris.ro ",
-    "merchant_slug": "libris-ro",
-    "name": "Transport GRATUIT pentru ORICE colet, oriunde în țară ",
-    "category": "Transport GRATUIT pentru ORICE colet, oriunde în țară ",
     "b_type": "image"
   }
 ]

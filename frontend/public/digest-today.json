@@ -1,7 +1,7 @@
 {
-  "data": "2026-10-21",
-  "data_afisata": "21 octombrie 2026",
-  "titlu": "Radarul AmCupon — 21 octombrie 2026",
+  "data": "2026-10-22",
+  "data_afisata": "22 octombrie 2026",
+  "titlu": "Radarul AmCupon — 22 octombrie 2026",
   "intro": "Am trecut azi prin ofertele active si am pastrat doar ce merita. Iese in evidenta Noriel si Klaiyihair, dar mai jos ai selectia completa, verificata de noi. Toate codurile sunt testate; cele cu termen scurt le-am marcat.",
   "picks": [
     {
@@ -15,8 +15,8 @@
       "descriere": "",
       "cod": "NORIEL20",
       "url": "https://amcupon.ro/cod-reducere/noriel.ro",
-      "zile_ramase": 4,
-      "take": "Grabeste-te: expira in 4 zile. Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 3,
+      "take": "Grabeste-te: expira in 3 zile. Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
       "scor": 100,
@@ -29,8 +29,8 @@
       "descriere": "18% OFF Sitewide — Code: Halloween18 $35 OFF Orders Over $159 — Code: Halloween35 $60 OFF Orders Over $265 — Code: Halloween60",
       "cod": "HALLOWEEN55",
       "url": "https://amcupon.ro/cod-reducere/klaiyihair.com",
-      "zile_ramase": 2,
-      "take": "Grabeste-te: expira in 2 zile. Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 1,
+      "take": "Grabeste-te: expira in 1 zi. Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
       "scor": 75,
@@ -43,7 +43,7 @@
       "descriere": "",
       "cod": "",
       "url": "https://amcupon.ro/cod-reducere/answear.ro",
-      "zile_ramase": 7,
+      "zile_ramase": 6,
       "take": "Bun de prins daca oricum voiai sa-ti reimprospatezi garderoba."
     },
     {
@@ -57,7 +57,7 @@
       "descriere": "Save 10% on eligible Xmind subscriptions with code XMIND10OFF. Valid through June 1, 2027. See the landing page for current pricing and eligibility.",
       "cod": "XMIND10OFF",
       "url": "https://amcupon.ro/cod-reducere/xmind.com",
-      "zile_ramase": 223,
+      "zile_ramase": 222,
       "take": "Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
@@ -71,7 +71,7 @@
       "descriere": "Quber Savings",
       "cod": "QUBER10",
       "url": "https://amcupon.ro/cod-reducere/orbitmobile.com",
-      "zile_ramase": 375,
+      "zile_ramase": 374,
       "take": "Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
@@ -85,7 +85,7 @@
       "descriere": "Stackable universal discount code, enjoy 5% off Code：OIAFF5",
       "cod": "OIAFF5",
       "url": "https://amcupon.ro/cod-reducere/outin.com",
-      "zile_ramase": 177,
+      "zile_ramase": 176,
       "take": "Oferta verificata — buna daca te incadrezi in categorie."
     }
   ],

@@ -1,5 +1,5 @@
 # 💰 TOP MAGAZINE după POTENȚIAL DE CÂȘTIG
-> Generat automat 21.10.2026 13:53. Pe astea să le împingi (articole, pin-uri, postări).
+> Generat automat 22.10.2026 13:54. Pe astea să le împingi (articole, pin-uri, postări).
 
 **Scor = comision × popularitate × ofertă.** Comisionul mare singur înșală — astea-s banii REALI.
 
@@ -12,29 +12,29 @@
 | 5 | Giftera (giftera.ro) | 30% | 0 | 🏷️ ofertă | 35.0 |
 | 6 | Hairify (hairify.ro) | 24% | 0 | 🏷️ ofertă | 33.6 |
 | 7 | Laavooextensions (laavooextensions.com) | 14% | 0 | ✅ COD | 28.0 |
-| 8 | Moftcollection (moftcollection.ro) | 20% | 0 | 🏷️ ofertă | 28.0 |
-| 9 | Femieko (femieko.ro) | 19% | 0 | 🏷️ ofertă | 26.6 |
-| 10 | Manukashop (manukashop.ro) | 18% | 0 | 🏷️ ofertă | 25.2 |
-| 11 | Tvcmall (tvcmall.com) | 11% | 0 | ✅ COD | 22.0 |
-| 12 | Bcengi (bcengi.com) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 13 | Helloice (helloice.com) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 14 | Labelshop (labelshop.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 15 | Priveboutique (priveboutique.net) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 16 | Curteaveche (curteaveche.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 17 | Uniquestore (uniquestore.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 18 | Intimplay (intimplay.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 19 | Zelto (zelto.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 20 | Avidlove (avidlove.com) | 10% | 0 | ✅ COD | 20.0 |
-| 21 | Cvlife (cvlife.com) | 10% | 0 | ✅ COD | 20.0 |
-| 22 | Billionconnect (billionconnect.net) | 10% | 0 | ✅ COD | 20.0 |
-| 23 | Mooyius (mooyius.com) | 12% | 0 | 🏷️ ofertă | 16.8 |
-| 24 | E Potion (e-potion.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
-| 25 | Zandra (zandra.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
-| 26 | Oleya (oleya.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
-| 27 | Geekbuying (geekbuying.com) | 8% | 0 | ✅ COD | 16.0 |
-| 28 | Craftmystic (craftmystic.ro) | 11% | 0 | 🏷️ ofertă | 15.4 |
-| 29 | Boyamic (store.boyamic.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
-| 30 | Ashimaryhair (ashimaryhair.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
+| 8 | Intimax (intimax.ro) | 20% | 0 | 🏷️ ofertă | 28.0 |
+| 9 | Moftcollection (moftcollection.ro) | 20% | 0 | 🏷️ ofertă | 28.0 |
+| 10 | Femieko (femieko.ro) | 19% | 0 | 🏷️ ofertă | 26.6 |
+| 11 | Manukashop (manukashop.ro) | 18% | 0 | 🏷️ ofertă | 25.2 |
+| 12 | Tvcmall (tvcmall.com) | 11% | 0 | ✅ COD | 22.0 |
+| 13 | Bcengi (bcengi.com) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 14 | Helloice (helloice.com) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 15 | Labelshop (labelshop.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 16 | Priveboutique (priveboutique.net) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 17 | Curteaveche (curteaveche.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 18 | Uniquestore (uniquestore.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 19 | Intimplay (intimplay.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 20 | Zelto (zelto.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 21 | Avidlove (avidlove.com) | 10% | 0 | ✅ COD | 20.0 |
+| 22 | Cvlife (cvlife.com) | 10% | 0 | ✅ COD | 20.0 |
+| 23 | Billionconnect (billionconnect.net) | 10% | 0 | ✅ COD | 20.0 |
+| 24 | Mooyius (mooyius.com) | 12% | 0 | 🏷️ ofertă | 16.8 |
+| 25 | E Potion (e-potion.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
+| 26 | Zandra (zandra.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
+| 27 | Oleya (oleya.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
+| 28 | Geekbuying (geekbuying.com) | 8% | 0 | ✅ COD | 16.0 |
+| 29 | Craftmystic (craftmystic.ro) | 11% | 0 | 🏷️ ofertă | 15.4 |
+| 30 | Boyamic (store.boyamic.com) | 10% | 0 | 🏷️ ofertă | 14.0 |
 
 ## 🎯 Cum folosești raportul
 - **Top 10** = prioritate maximă pentru articole „cel mai bun X" + pin-uri Pinterest
