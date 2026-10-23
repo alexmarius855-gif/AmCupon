@@ -1,13 +1,13 @@
 {
   "generat": "2026-10-23",
-  "total_magazine": 456,
-  "cu_promotie": 81,
+  "total_magazine": 457,
+  "cu_promotie": 82,
   "cu_cod_real": 4,
-  "doar_oferta": 77,
-  "procent_cu_promotie": 17.8,
+  "doar_oferta": 78,
+  "procent_cu_promotie": 17.9,
   "procent_cu_cod": 0.9,
-  "reducere_mediana_generala": 37.5,
-  "magazine_cu_procent_declarat": 44,
+  "reducere_mediana_generala": 40.0,
+  "magazine_cu_procent_declarat": 46,
   "categorii": [
     {
       "slug": "carti-educatie",
@@ -37,6 +37,15 @@
       "esantion": 4
     },
     {
+      "slug": "fashion",
+      "nume": "Fashion",
+      "magazine": 53,
+      "cu_promotie": 12,
+      "reducere_mediana": 37.5,
+      "reducere_max": 70,
+      "esantion": 8
+    },
+    {
       "slug": "beauty",
       "nume": "Beauty & îngrijire",
       "magazine": 58,
@@ -46,28 +55,19 @@
       "esantion": 6
     },
     {
-      "slug": "fashion",
-      "nume": "Fashion",
-      "magazine": 52,
-      "cu_promotie": 11,
-      "reducere_mediana": 35,
-      "reducere_max": 50,
-      "esantion": 7
+      "slug": "sanatate",
+      "nume": "Sănătate & farmacie",
+      "magazine": 37,
+      "cu_promotie": 10,
+      "reducere_mediana": 25,
+      "reducere_max": 30,
+      "esantion": 3
     },
     {
       "slug": "copii",
       "nume": "Copii & familie",
       "magazine": 24,
       "cu_promotie": 2,
-      "reducere_mediana": null,
-      "reducere_max": null,
-      "esantion": 2
-    },
-    {
-      "slug": "sanatate",
-      "nume": "Sănătate & farmacie",
-      "magazine": 37,
-      "cu_promotie": 10,
       "reducere_mediana": null,
       "reducere_max": null,
       "esantion": 2
@@ -157,7 +157,7 @@
   "criteriu": "domeniu .ro",
   "international": {
     "total": 504,
-    "cu_promotie": 57,
+    "cu_promotie": 58,
     "cu_cod": 34
   },
   "retele": [
