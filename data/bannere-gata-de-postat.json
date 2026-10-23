@@ -1,5 +1,44 @@
 [
   {
+    "id": 273501,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273460/original/273460.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=7149ffbfd&aff_code=541547473&campaign_unique=cc08e2536",
+    "landing_raw": "https://www.pensulemachiaj.ro",
+    "width": 1200,
+    "height": 1200,
+    "merchant": "pensulemachiaj.ro",
+    "merchant_slug": "pensulemachiaj-ro",
+    "name": "-80% STAR SHINE  CELEBRITY SECRET BAG GRATUIT ",
+    "category": "-80% STAR SHINE  CELEBRITY SECRET BAG GRATUIT ",
+    "b_type": "image"
+  },
+  {
+    "id": 273491,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273450/original/273450.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=716f1691f&aff_code=541547473&campaign_unique=4b9a6d5ea",
+    "landing_raw": "https://www.kitunghii.ro",
+    "width": 1200,
+    "height": 1200,
+    "merchant": "kitunghii.ro",
+    "merchant_slug": "kitunghii-ro",
+    "name": "-80% STAR SHINE,SECRET BEAUTY BAG GRATUIT",
+    "category": "-80% STAR SHINE,SECRET BEAUTY BAG GRATUIT",
+    "b_type": "image"
+  },
+  {
+    "id": 273479,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273438/original/273438.JPG",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=cd03243c0&aff_code=541547473&campaign_unique=9a6f02fef",
+    "landing_raw": "https://www.libris.ro/lp/macbookneo",
+    "width": 964,
+    "height": 954,
+    "merchant": "libris.ro ",
+    "merchant_slug": "libris-ro",
+    "name": "CADOU Laptop MacBook Neo!Plasează comanda și intră în concurs!",
+    "category": "CADOU Laptop MacBook Neo!Plasează comanda și intră în concurs!",
+    "b_type": "image"
+  },
+  {
     "id": 273420,
     "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273379/original/273379.jpg",
     "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=36d191ea4&aff_code=541547473&campaign_unique=5baacfa1f",
@@ -39,32 +78,6 @@
     "b_type": "image"
   },
   {
-    "id": 273347,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273306/original/273306.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=5072e0351&aff_code=541547473&campaign_unique=cc08e2536",
-    "landing_raw": "https://www.pensulemachiaj.ro",
-    "width": 1200,
-    "height": 1200,
-    "merchant": "pensulemachiaj.ro",
-    "merchant_slug": "pensulemachiaj-ro",
-    "name": "-80% STAR SHINE  CELEBRITY SECRET BAG GRATUIT ",
-    "category": "-80% STAR SHINE  CELEBRITY SECRET BAG GRATUIT ",
-    "b_type": "image"
-  },
-  {
-    "id": 273335,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273294/original/273294.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=fa6f80bfa&aff_code=541547473&campaign_unique=4b9a6d5ea",
-    "landing_raw": "https://www.kitunghii.ro",
-    "width": 1200,
-    "height": 1200,
-    "merchant": "kitunghii.ro",
-    "merchant_slug": "kitunghii-ro",
-    "name": "-80% STAR SHINE,SECRET BEAUTY BAG GRATUIT",
-    "category": "-80% STAR SHINE,SECRET BEAUTY BAG GRATUIT",
-    "b_type": "image"
-  },
-  {
     "id": 273286,
     "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273245/original/273245.JPG",
     "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=e3377e93f&aff_code=541547473&campaign_unique=9a6f02fef",
@@ -75,32 +88,6 @@
     "merchant_slug": "libris-ro",
     "name": "2+1 GRATIS la raftul BOOKZONE! Alegi 3 plătești doar 2",
     "category": "2+1 GRATIS la raftul BOOKZONE! Alegi 3 plătești doar 2",
-    "b_type": "image"
-  },
-  {
-    "id": 273250,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273209/original/273209.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=599a9732e&aff_code=541547473&campaign_unique=e79c3922a",
-    "landing_raw": "https://www.ozone.ro/landing/halloween/",
-    "width": 1200,
-    "height": 1200,
-    "merchant": "ozone.ro",
-    "merchant_slug": "ozone-ro",
-    "name": "Halloween 2026",
-    "category": "Halloween 2026",
-    "b_type": "image"
-  },
-  {
-    "id": 273242,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273201/original/273201.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=1781ce55a&aff_code=541547473&campaign_unique=6390e3cfb",
-    "landing_raw": "https://www.drmax.ro/max-days-frumusete-si-ingrijire",
-    "width": 1080,
-    "height": 1080,
-    "merchant": "drmax.ro/",
-    "merchant_slug": "drmax-ro",
-    "name": "Max Days - Frumusete",
-    "category": "Max Days - Frumusete",
     "b_type": "image"
   }
 ]
