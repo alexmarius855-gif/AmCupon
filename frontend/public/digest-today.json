@@ -1,8 +1,8 @@
 {
-  "data": "2026-10-23",
-  "data_afisata": "23 octombrie 2026",
-  "titlu": "Radarul AmCupon — 23 octombrie 2026",
-  "intro": "Am trecut azi prin ofertele active si am pastrat doar ce merita. Iese in evidenta Noriel si Laavooextensions, dar mai jos ai selectia completa, verificata de noi. Toate codurile sunt testate; cele cu termen scurt le-am marcat.",
+  "data": "2026-10-24",
+  "data_afisata": "24 octombrie 2026",
+  "titlu": "Radarul AmCupon — 24 octombrie 2026",
+  "intro": "Am trecut azi prin ofertele active si am pastrat doar ce merita. Iese in evidenta Noriel si Dhgate, dar mai jos ai selectia completa, verificata de noi. Toate codurile sunt testate; cele cu termen scurt le-am marcat.",
   "picks": [
     {
       "scor": 125,
@@ -15,8 +15,22 @@
       "descriere": "",
       "cod": "NORIEL20",
       "url": "https://amcupon.ro/cod-reducere/noriel.ro",
-      "zile_ramase": 2,
-      "take": "Grabeste-te: expira in 2 zile. Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 1,
+      "take": "Grabeste-te: expira in 1 zi. Oferta verificata — buna daca te incadrezi in categorie."
+    },
+    {
+      "scor": 100,
+      "magazin": "dhgate.com",
+      "nume_afisat": "Dhgate",
+      "categorie": "Fashion",
+      "categorie_slug": "fashion",
+      "logo_url": "https://www.dhgate.com/favicon.ico",
+      "titlu": "DH2026OCTSAVE3",
+      "descriere": "Save $3 on orders over $29 using coupon DH2026OCTSAVE3 at DHgate.",
+      "cod": "DH2026OCTSAVE3",
+      "url": "https://amcupon.ro/cod-reducere/dhgate.com",
+      "zile_ramase": 7,
+      "take": "Bun de prins daca oricum voiai sa-ti reimprospatezi garderoba."
     },
     {
       "scor": 100,
@@ -29,6 +43,34 @@
       "descriere": "Halloween Sale 16% off",
       "cod": "HW16",
       "url": "https://amcupon.ro/cod-reducere/laavooextensions.com",
+      "zile_ramase": 6,
+      "take": "Oferta verificata — buna daca te incadrezi in categorie."
+    },
+    {
+      "scor": 100,
+      "magazin": "original-group.com",
+      "nume_afisat": "Original Group",
+      "categorie": "Călătorii",
+      "categorie_slug": "calatorii",
+      "logo_url": "https://www.google.com/s2/favicons?domain=original-group.com&sz=128",
+      "titlu": "Playground for Couples at Temptation Cancun Resort - From $182 USD/night | Original Resorts",
+      "descriere": "Book now and get a complimentary Day Pass to a Desire Resort, One-way transfer (Cancun Airport), 15% off at the Glam Shop, on premium beverages and spa treatments,10% off spa products from $182 USD per night per person. Terms and Conditions:\n- Book",
+      "cod": "PLAY26",
+      "url": "https://amcupon.ro/cod-reducere/original-group.com",
+      "zile_ramase": 7,
+      "take": "Oferta verificata — buna daca te incadrezi in categorie."
+    },
+    {
+      "scor": 100,
+      "magazin": "kospet.com",
+      "nume_afisat": "Kospet",
+      "categorie": "Electronice & IT",
+      "categorie_slug": "electronice",
+      "logo_url": "https://www.google.com/s2/favicons?domain=kospet.com&sz=128",
+      "titlu": "[GL&US] Limited time sale-P10 Save 48% OFF! Use code DPR35",
+      "descriere": "Limited time sale-P10 Save 48% OFF! Use code DPR35",
+      "cod": "DPR35",
+      "url": "https://amcupon.ro/cod-reducere/kospet.com",
       "zile_ramase": 7,
       "take": "Oferta verificata — buna daca te incadrezi in categorie."
     },
@@ -43,49 +85,7 @@
       "descriere": "",
       "cod": "ATELIER49",
       "url": "https://amcupon.ro/cod-reducere/atelier49.ro",
-      "zile_ramase": 7,
-      "take": "Oferta verificata — buna daca te incadrezi in categorie."
-    },
-    {
-      "scor": 75,
-      "magazin": "libris.ro",
-      "nume_afisat": "Libris",
-      "categorie": "Cărți & Educație",
-      "categorie_slug": "carti-educatie",
-      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9868/medium/9868.gif",
-      "titlu": "CADOU Laptop MacBook Neo!Plasează comanda și intră în concurs!",
-      "descriere": "",
-      "cod": "",
-      "url": "https://amcupon.ro/cod-reducere/libris.ro",
-      "zile_ramase": 2,
-      "take": "Grabeste-te: expira in 2 zile. Oferta verificata — buna daca te incadrezi in categorie."
-    },
-    {
-      "scor": 75,
-      "magazin": "answear.ro",
-      "nume_afisat": "Answear",
-      "categorie": "Fashion",
-      "categorie_slug": "fashion",
-      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/2561/medium/2561.png",
-      "titlu": "15 YEARS OF ANSWEAR",
-      "descriere": "",
-      "cod": "",
-      "url": "https://amcupon.ro/cod-reducere/answear.ro",
-      "zile_ramase": 5,
-      "take": "Grabeste-te: expira in 5 zile. Bun de prins daca oricum voiai sa-ti reimprospatezi garderoba."
-    },
-    {
-      "scor": 75,
-      "magazin": "drmax.ro",
-      "nume_afisat": "Dr. Max",
-      "categorie": "Sănătate & Farmacie",
-      "categorie_slug": "sanatate",
-      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/8800/medium/8800.png",
-      "titlu": "Marca Proprie Dr Max",
-      "descriere": "",
-      "cod": "",
-      "url": "https://amcupon.ro/cod-reducere/drmax.ro",
-      "zile_ramase": 7,
+      "zile_ramase": 6,
       "take": "Oferta verificata — buna daca te incadrezi in categorie."
     }
   ],
