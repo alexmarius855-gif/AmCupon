@@ -9,7 +9,7 @@
 import { readFileSync } from "node:fs";
 import {
   esteBot, tipDispozitiv, hostReferrer, cheieCale, gazdaDestinatie,
-  construiesteIndex, magazinDinLink, paginaCurata,
+  construiesteIndex, magazinDinLink, paginaCurata, destinatieHost, locCurat,
 } from "./clicuri.ts";
 import { brandDomeniu } from "./numeMagazin.ts";
 import { aceeasiTara } from "./taraDomeniu.ts";
@@ -53,6 +53,15 @@ verifica("scoate query-ul", paginaCurata("/cod-reducere/drmax.ro?utm_source=x#su
 verifica("fara slash la inceput -> null", paginaCurata("cod-reducere"), null);
 verifica("nu e text -> null", paginaCurata(42), null);
 verifica("prea lunga -> null", paginaCurata("/" + "a".repeat(250)), null);
+
+console.log("\n-- destinatie si zona --");
+verifica("destinatia 2Performant = hostul din redirect_to", destinatieHost("https://event.2performant.com/events/click?redirect_to=https%3A%2F%2Fwww.happypets.ro%2Fprodus"), "happypets.ro");
+verifica("destinatia Impact = gazda linkului de retea", destinatieHost("https://surfshark.pxf.io/c/1/2/3"), "surfshark.pxf.io");
+verifica("href invalid -> null", destinatieHost("nu e url"), null);
+verifica("zona valida", locCurat("oferta"), "oferta");
+verifica("zona cu caractere nepermise -> null", locCurat("<script>"), null);
+verifica("zona prea lunga -> null", locCurat("a".repeat(31)), null);
+verifica("zona nu e text -> null", locCurat(5), null);
 
 console.log("\n── magazinul din link ──");
 const MAG = [

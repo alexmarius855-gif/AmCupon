@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import { esteLinkAfiliat, PARAM_SUBID } from "../../lib/subId";
-import { numaraClick } from "../../lib/clicuriClient";
+import { locDinElement, numaraClick } from "../../lib/clicuriClient";
 
 /**
  * Tracker global de click-uri afiliate + injectare sub-id pentru ATRIBUIRE.
@@ -90,7 +90,7 @@ export default function AffiliateClickTracker() {
         // GA4 se incarca doar dupa acceptarea cookie-urilor, deci nu vede majoritatea vizitatorilor.
         // Nu trimitem nimic care identifica persoana (nici cookie, nici ID); serverul pastreaza ziua,
         // magazinul, pagina, hostul de unde a venit omul si tipul de dispozitiv.
-        if (e.isTrusted) numaraClick(a.getAttribute("href") || href);
+        if (e.isTrusted) numaraClick(a.getAttribute("href") || href, undefined, locDinElement(a));
 
         // ── 3. Eveniment GA4 ────────────────────────────────────────────────
         const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;

@@ -63,7 +63,7 @@ export function useCopyCod(track?: TrackFn) {
     if (link) {
       // 19.10.2026: numaratoarea proprie (lib/clicuri.ts). Dezvaluirea unui cod nu trece prin <a>, deci
       // AffiliateClickTracker n-o vede — iar ea e clicul cel mai valoros. Magazinul il stim exact.
-      numaraClick(link, magazinSlug);
+      numaraClick(link, magazinSlug, "cod");
       if (!deschideTab(cuSubId(link, window.location.pathname))) setRedirectFailed(true);
     }
   }, [track]);
@@ -71,7 +71,7 @@ export function useCopyCod(track?: TrackFn) {
   const retryRedirect = useCallback(() => {
     if (lastLink) {
       // Prima incercare a fost blocata (nu s-a deschis nimic), deci acesta e clicul care chiar ajunge la magazin.
-      numaraClick(lastLink);
+      numaraClick(lastLink, undefined, "cod");
       if (deschideTab(lastLink)) setRedirectFailed(false);
     }
   }, [lastLink]);

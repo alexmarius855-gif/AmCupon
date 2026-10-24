@@ -4,7 +4,7 @@ import { getSupabase } from "./supabase";
 import { brandDomeniu } from "./numeMagazin";
 import { aceeasiTara } from "./taraDomeniu";
 import {
-  construiesteIndex, esteBot, hostReferrer, magazinDinLink, tipDispozitiv,
+  construiesteIndex, destinatieHost, esteBot, hostReferrer, locCurat, magazinDinLink, tipDispozitiv,
   type IndexLinkuri, type MagazinPentruClick,
 } from "./clicuri";
 
@@ -38,6 +38,8 @@ export interface ClickDeInregistrat {
   /** Magazinul indicat: ruta `/go` il stie din adresa; clientul il trimite la dezvaluirea unui cod.
    *  Se accepta doar daca exista in output.json (vezi `magazinDinLink`). */
   magazin?: string;
+  /** Zona din pagina (card, cod, articol...) — vezi `lib/clicuriClient.ts::locDinElement`. */
+  loc?: string;
 }
 
 /** Nu arunca niciodata: numaratoarea nu are voie sa strice un link sau un raspuns. */
@@ -53,6 +55,8 @@ export async function inregistreazaClick(c: ClickDeInregistrat): Promise<void> {
       p_referrer: hostReferrer(c.referrer),
       p_dispozitiv: tipDispozitiv(c.userAgent),
       p_bot: esteBot(c.userAgent),
+      p_destinatie: c.href ? destinatieHost(c.href) : null,
+      p_loc: locCurat(c.loc),
     });
     if (error) console.error("[click] inregistrare esuata:", error.message);
   } catch {

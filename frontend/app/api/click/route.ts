@@ -25,7 +25,7 @@ export async function POST(req: NextRequest) {
   try {
     const text = await req.text();
     if (text.length > 4000) return DOAR_204();
-    const b = JSON.parse(text) as { href?: unknown; pagina?: unknown; ref?: unknown; magazin?: unknown };
+    const b = JSON.parse(text) as { href?: unknown; pagina?: unknown; ref?: unknown; magazin?: unknown; loc?: unknown };
 
     const href = typeof b.href === "string" ? b.href.slice(0, 1500) : "";
     if (!esteLinkAfiliat(href)) return DOAR_204();
@@ -37,6 +37,7 @@ export async function POST(req: NextRequest) {
       pagina,
       href,
       magazin: typeof b.magazin === "string" ? b.magazin.slice(0, 120) : undefined,
+      loc: typeof b.loc === "string" ? b.loc : undefined,
       userAgent: req.headers.get("user-agent"),
       referrer: typeof b.ref === "string" ? b.ref : null,
     });

@@ -158,6 +158,20 @@ export function magazinDinLink(href: string, pagina: string, idx: IndexLinkuri, 
   return "necunoscut";
 }
 
+/** Hostul real al linkului apasat (destinatia din `redirect_to`, altfel gazda linkului de retea). Nu e un identificator
+ *  de persoana: spune doar SPRE CE magazin/retea a plecat clicul, ca sa putem verifica atribuirea la `magazin`. */
+export function destinatieHost(href: string): string | null {
+  const d = gazdaDestinatie(href);
+  if (d) return d.slice(0, 80);
+  const u = urlSigur(href);
+  return u ? u.hostname.toLowerCase().slice(0, 80) : null;
+}
+
+/** Zona din pagina: doar litere mici, cifre, `_` si `-`, max 30 — orice altceva se ignora (la fel in baza de date). */
+export function locCurat(brut: unknown): string | null {
+  return typeof brut === "string" && /^[a-z0-9_-]{1,30}$/.test(brut) ? brut : null;
+}
+
 /** Pagina curenta, normalizata: fara query, fara hash, max 200 de caractere, mereu cu `/` la inceput. */
 export function paginaCurata(brut: unknown): string | null {
   if (typeof brut !== "string") return null;
