@@ -39,7 +39,7 @@ const DESC_CATEG: Record<string, string> = {
   "beauty":          "Voucher si coduri de reducere pentru parfumuri, cosmetice si produse de ingrijire. Una dintre cele mai active categorii ca numar de promotii.",
   "sanatate":        "Reduceri la farmacii online, suplimente, vitamine si produse de ingrijire personala.",
   "sport":           "Coduri reducere pentru echipament sportiv, imbracaminte de antrenament si articole outdoor.",
-  "carti-educatie":  "Reduceri la carti, manuale, audiobook-uri si cursuri online. Campaniile cresc vizibil in perioada de inceput de scoala.",
+  "carti-educatie":  "Reduceri la carti, manuale si audiobook-uri. Campaniile cresc vizibil in perioada de inceput de scoala.",
   "copii":           "Coduri reducere la jucarii, haine si produse pentru copii si bebelusi.",
   "auto-moto":       "Reduceri la piese auto, anvelope, accesorii si echipament moto.",
   "servicii":        "Coduri reducere pentru servicii online: gazduire, unelte de business, abonamente si platforme digitale.",

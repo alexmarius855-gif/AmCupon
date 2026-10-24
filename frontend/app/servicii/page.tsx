@@ -10,7 +10,7 @@ import { linkPlatit } from "@/lib/linkPlatit";
 export const metadata: Metadata = {
   title: "Servicii Online Romania 2026 — Ghiduri și Parteneri",
   description: "Servicii online de la partenerii AmCupon — sănătate, telecomunicații, software — și ghiduri pentru cursuri, hosting, VPN, conturi bancare și asigurări.",
-  keywords: ["servicii cu reducere", "cod reducere servicii online", "albire dinti reducere", "cursuri online reducere", "software facturare reducere", "hosting reducere romania"],
+  keywords: ["servicii cu reducere", "cod reducere servicii online", "albire dinti reducere", "software facturare reducere", "hosting reducere romania"],
   alternates: { canonical: "https://amcupon.ro/servicii" },
   openGraph: {
     title: "Servicii Online Romania 2026 | AmCupon.ro",
@@ -63,13 +63,6 @@ const SERVICII_INTERNATIONALE = [
     ],
   },
   {
-    label: "Educatie & Cursuri",
-    emoji: "🎓",
-    items: [
-      { name: "Coursera", desc: "Cursuri și certificate de la universități și companii.", url: "https://www.coursera.org" },
-    ],
-  },
-  {
     label: "Freelancing",
     emoji: "💼",
     items: [
@@ -96,7 +89,6 @@ const CATEG_COLOR: Record<string, { from: string; to: string; text: string; ring
 
 const PAGINI_DEDICATE = [
   { href: "/albire-dinti",          emoji: "🦷", name: "Albire Dinti",         sub: "Serviciu estetic",          from: "#c3dd2c", to: "#ddf93c" },
-  { href: "/cursuri-online",        emoji: "🎓", name: "Cursuri Online",       sub: "Educatie & certificari",    from: "#ddf93c", to: "#ddf93c" },
   { href: "/software-business",     emoji: "📊", name: "Software Business",    sub: "Software pentru firme",     from: "#ddf93c", to: "#c3dd2c" },
   { href: "/hosting",               emoji: "🌐", name: "Hosting Web",          sub: "Gazduire site-uri",         from: "#ddf93c", to: "#c3dd2c" },
   { href: "/vpn",                   emoji: "🔒", name: "VPN & Securitate",     sub: "NordVPN, Surfshark",        from: "#ddf93c", to: "#c3dd2c" },

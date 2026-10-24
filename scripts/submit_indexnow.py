@@ -40,7 +40,7 @@ STATIC_PAGES = [
     "/farmacie", "/supermarket", "/jocuri", "/idei-cadouri", "/bijuterii",
     "/gaming", "/laptop", "/telefoane", "/antivirus", "/smart-home",
     "/instrumente-seo", "/trading", "/carduri-bancare", "/vpn", "/hosting",
-    "/ai-tools", "/cursuri-online", "/software-business", "/flori", "/pescuit",
+    "/ai-tools", "/software-business", "/flori", "/pescuit",
     "/piese-auto", "/echipament-moto", "/rochii-mireasa", "/albire-dinti",
     "/studiu/coduri-reducere-romania",
     "/black-friday", "/craciun", "/moto",

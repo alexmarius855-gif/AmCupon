@@ -216,7 +216,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/calculatoare/marimi`,     lastModified: ultimaModificare(`${BASE_URL}/calculatoare/marimi`), changeFrequency: "monthly", priority: 0.8  },
     { url: `${BASE_URL}/albire-dinti`,            lastModified: ultimaModificare(`${BASE_URL}/albire-dinti`), changeFrequency: "weekly",  priority: 0.75 },
     { url: `${BASE_URL}/asigurari`,               lastModified: ultimaModificare(`${BASE_URL}/asigurari`), changeFrequency: "weekly",  priority: 0.8  },
-    { url: `${BASE_URL}/cursuri-online`,          lastModified: ultimaModificare(`${BASE_URL}/cursuri-online`), changeFrequency: "weekly",  priority: 0.8  },
     { url: `${BASE_URL}/software-business`,       lastModified: ultimaModificare(`${BASE_URL}/software-business`), changeFrequency: "weekly",  priority: 0.8  },
     { url: `${BASE_URL}/temu`,                    lastModified: ultimaModificare(`${BASE_URL}/temu`), changeFrequency: "daily",   priority: 0.8  },
     { url: `${BASE_URL}/shein`,                   lastModified: ultimaModificare(`${BASE_URL}/shein`), changeFrequency: "daily",   priority: 0.8  },

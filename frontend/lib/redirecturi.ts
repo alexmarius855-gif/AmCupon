@@ -88,7 +88,9 @@ export const REDIRECTURI: Redirect[] = [
   { source: "/categorii/calatorie",           destination: "/categorii/calatorii", permanent: true },
   { source: "/categorii/carduri-bancare",     destination: "/carduri-bancare", permanent: true },
   { source: "/categorii/casa",                destination: "/categorii/casa-gradina", permanent: true },
-  { source: "/categorii/cursuri-online",      destination: "/cursuri-online", permanent: true },
+  { source: "/categorii/cursuri-online",      destination: "/servicii", permanent: true },
+  // 24.10.2026: Alex renunta la cursuri in orice forma (nici proprii, nici afiliere) — pagina si linkurile au fost scoase.
+  { source: "/cursuri-online",                destination: "/servicii", permanent: true },
   { source: "/categorii/diverse",             destination: "/categorii", permanent: true },
   { source: "/categorii/electronics-itc",     destination: "/categorii/electronice", permanent: true },
   { source: "/categorii/farmacie",            destination: "/categorii/sanatate", permanent: true },

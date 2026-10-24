@@ -4,16 +4,16 @@ import { linkPlatit } from "@/lib/linkPlatit";
 
 export const metadata: Metadata = {
   title: "Servicii Internationale 2026 — VPN, Hosting, Software",
-  description: "Servicii internaționale pe care le poți folosi din România: VPN, antivirus, hosting, cursuri online, software creativ, freelancing, e-commerce.",
+  description: "Servicii internaționale pe care le poți folosi din România: VPN, antivirus, hosting, software creativ, freelancing, e-commerce.",
   keywords: [
     "servicii internationale romania", "vpn romania", "hosting ieftin", "antivirus online",
-    "cursuri online internationale", "shopify romania", "surfshark romania", "bitdefender",
-    "hostinger romania", "coursera romana", "invideo", "logitech", "razer gaming"
+    "shopify romania", "surfshark romania", "bitdefender",
+    "hostinger romania", "invideo", "logitech", "razer gaming"
   ],
   alternates: { canonical: "https://amcupon.ro/servicii-internationale" },
   openGraph: {
     title: "Servicii Internaționale 2026 | AmCupon.ro",
-    description: "VPN, antivirus, hosting, cursuri, software și altele — servicii internaționale pe care le poți folosi din România.",
+    description: "VPN, antivirus, hosting, software și altele — servicii internaționale pe care le poți folosi din România.",
     url: "https://amcupon.ro/servicii-internationale",
     siteName: "AmCupon.ro",
     locale: "ro_RO",
@@ -66,24 +66,6 @@ const CATEGORII = [
         descriere: "CRM cu plan gratuit, plus module plătite de marketing, vânzări și suport clienți." },
       { nume: "Debutify", badge: "", badgeColor: "", url: "https://debutify.com",
         descriere: "Temă Shopify cu add-on-uri pentru conversie: dovezi sociale, cronometre, upsell." },
-    ],
-  },
-  {
-    slug: "cursuri-educatie",
-    titlu: "Cursuri & Educatie Online",
-    emoji: "🎓",
-    desc: "Platforme de cursuri online, cu certificat",
-    branduri: [
-      { nume: "Coursera", badge: "Certificate", badgeColor: "bg-[#ddf93c] text-[#0c1000]", url: "https://www.coursera.org",
-        descriere: "Cursuri și certificate de la Google, IBM, Meta și de la universități." },
-      { nume: "DataCamp", badge: "Data Science", badgeColor: "bg-green-700 text-white", url: "https://www.datacamp.com",
-        descriere: "Cursuri practice de Python, R, SQL și machine learning, direct în browser." },
-      { nume: "Blinkist", badge: "", badgeColor: "", url: "https://www.blinkist.com",
-        descriere: "Rezumate audio și text ale cărților de non-ficțiune." },
-      { nume: "O'Reilly", badge: "", badgeColor: "", url: "https://www.oreilly.com",
-        descriere: "Cărți, cursuri video și laboratoare pentru programare, cloud, DevOps, AI și securitate." },
-      { nume: "Magoosh", badge: "", badgeColor: "", url: "https://magoosh.com",
-        descriere: "Pregătire pentru GRE, GMAT, IELTS și TOEFL, cu lecții video și exerciții." },
     ],
   },
   {
@@ -170,7 +152,7 @@ export default function ServiciiInternationale() {
             </span>
           </h1>
           <p className="text-[var(--text-soft)] text-lg max-w-2xl mx-auto mb-6">
-            {totalBranduri} servicii internaționale — VPN, antivirus, hosting, cursuri, software și altele. Unde avem parteneriat, linkul e de afiliat; altfel te trimitem direct pe site-ul lor.
+            {totalBranduri} servicii internaționale — VPN, antivirus, hosting, software și altele. Unde avem parteneriat, linkul e de afiliat; altfel te trimitem direct pe site-ul lor.
           </p>
           <div className="flex flex-wrap justify-center gap-3 text-xs">
             {CATEGORII.map((c) => (
@@ -225,7 +207,7 @@ export default function ServiciiInternationale() {
         <h2 className="text-2xl font-black text-[var(--foreground)] mb-6">De ce sa alegi servicii internationale?</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {[
-            { emoji: "🧩", titlu: "Ce nu găsești local", desc: "Pentru unele lucruri (VPN, unelte AI, cursuri cu certificat internațional) alternativele românești sunt puține sau lipsesc." },
+            { emoji: "🧩", titlu: "Ce nu găsești local", desc: "Pentru unele lucruri (VPN, unelte AI, software cu licență internațională) alternativele românești sunt puține sau lipsesc." },
             { emoji: "🇷🇴", titlu: "Și un brand românesc", desc: "Bitdefender, din listă, e o companie românească, fondată în București." },
             { emoji: "🌍", titlu: "Verifică livrarea", desc: "Serviciile digitale merg de obicei de oriunde; la produsele fizice (Crocs, Razer, Lenovo), verifică pe site livrarea în România înainte să comanzi." },
           ].map((item, i) => (
@@ -246,7 +228,6 @@ export default function ServiciiInternationale() {
             { href: "/vpn", label: "VPN Romania" },
             { href: "/hosting", label: "Hosting Web" },
             { href: "/software-business", label: "Software Business" },
-            { href: "/cursuri-online", label: "Cursuri Online" },
             { href: "/ai-tools", label: "AI Tools" },
             { href: "/electronice", label: "Electronice" },
             { href: "/gadgets", label: "Gadgeturi" },

@@ -68,7 +68,7 @@ const CATEGORII = [
   { slug: "copii",           emoji: "👶", label: "Copii & Familie",    desc: "Jucării, bebe, îmbrăcăminte",    accent: "#c084fc" },
   { slug: "calatorii",       emoji: "✈️", label: "Călătorii",          desc: "Cazare, zboruri, eSIM",          accent: "#0ea5e9" },
   { slug: "auto-moto",       emoji: "🚗", label: "Auto & Moto",        desc: "Piese, anvelope, accesorii",     accent: "#e64343" },
-  { slug: "carti-educatie",  emoji: "📚", label: "Cărți & Educație",   desc: "Cărți, e-books, cursuri",        accent: "#8b5cf6" },
+  { slug: "carti-educatie",  emoji: "📚", label: "Cărți & Educație",   desc: "Cărți, e-books, manuale",        accent: "#8b5cf6" },
   { slug: "mancare-bauturi", emoji: "🍔", label: "Mâncare & Băuturi",  desc: "Livrare, cafea, vin, băuturi",   accent: "#fb7185" },
   { slug: "animale",         emoji: "🐾", label: "Pet Shop",           desc: "Hrană & accesorii animale",      accent: "#84cc16" },
   { slug: "cadouri-flori",   emoji: "🎁", label: "Cadouri & Flori",    desc: "Flori, cadouri, experiențe",     accent: "#f43f5e" },

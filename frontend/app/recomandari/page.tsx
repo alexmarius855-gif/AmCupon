@@ -121,13 +121,6 @@ const CATEGORII = [
         url: "https://www.fiverr.com",
         beneficii: ["Design, web, SEO, video, traduceri", "Plata ajunge la freelancer după ce accepți livrarea", "Recenzii publice pentru fiecare freelancer"],
       },
-      {
-        name: "Coursera",
-        tagline: "Cursuri și certificate de la universități și companii",
-        badge: "Certificări",
-        url: "https://www.coursera.org",
-        beneficii: ["Certificate profesionale Google, IBM, Meta", "Specializări cu proiecte practice", "Perioadă de probă gratuită la Coursera Plus"],
-      },
     ],
   },
   {
