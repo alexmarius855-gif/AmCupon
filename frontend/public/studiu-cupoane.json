@@ -48,7 +48,7 @@
     {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
-      "magazine": 99,
+      "magazine": 100,
       "cu_promotie": 19,
       "reducere_mediana": 28,
       "reducere_max": 70,
@@ -84,7 +84,7 @@
     {
       "slug": "auto-moto",
       "nume": "Auto & moto",
-      "magazine": 21,
+      "magazine": 20,
       "cu_promotie": 3,
       "reducere_mediana": null,
       "reducere_max": null,
