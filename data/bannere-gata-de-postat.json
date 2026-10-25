@@ -1,5 +1,18 @@
 [
   {
+    "id": 273553,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273512/original/273512.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=17a116271&aff_code=541547473&campaign_unique=cb588f07f",
+    "landing_raw": "https://priveboutique.net/black-friday/",
+    "width": 1080,
+    "height": 1080,
+    "merchant": "priveboutique.net ",
+    "merchant_slug": "priveboutique-net",
+    "name": "BLACK CAT FRIDAY 2026",
+    "category": "BLACK CAT FRIDAY 2026",
+    "b_type": "image"
+  },
+  {
     "id": 273501,
     "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273460/original/273460.jpg",
     "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=7149ffbfd&aff_code=541547473&campaign_unique=cc08e2536",
@@ -75,19 +88,6 @@
     "merchant_slug": "libris-ro",
     "name": "Happy Days la toate rafturile: până la -86%, doar 2 zile",
     "category": "Happy Days la toate rafturile: până la -86%, doar 2 zile",
-    "b_type": "image"
-  },
-  {
-    "id": 273286,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273245/original/273245.JPG",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=e3377e93f&aff_code=541547473&campaign_unique=9a6f02fef",
-    "landing_raw": "https://www.libris.ro/editura/bookzone",
-    "width": 964,
-    "height": 961,
-    "merchant": "libris.ro ",
-    "merchant_slug": "libris-ro",
-    "name": "2+1 GRATIS la raftul BOOKZONE! Alegi 3 plătești doar 2",
-    "category": "2+1 GRATIS la raftul BOOKZONE! Alegi 3 plătești doar 2",
     "b_type": "image"
   }
 ]
