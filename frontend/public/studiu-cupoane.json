@@ -1,5 +1,5 @@
 {
-  "generat": "2026-10-24",
+  "generat": "2026-10-25",
   "total_magazine": 455,
   "cu_promotie": 82,
   "cu_cod_real": 4,
@@ -64,15 +64,6 @@
       "esantion": 3
     },
     {
-      "slug": "copii",
-      "nume": "Copii & familie",
-      "magazine": 23,
-      "cu_promotie": 2,
-      "reducere_mediana": null,
-      "reducere_max": null,
-      "esantion": 2
-    },
-    {
       "slug": "electronice",
       "nume": "Electronice & IT",
       "magazine": 32,
@@ -80,6 +71,15 @@
       "reducere_mediana": null,
       "reducere_max": null,
       "esantion": 1
+    },
+    {
+      "slug": "copii",
+      "nume": "Copii & familie",
+      "magazine": 23,
+      "cu_promotie": 2,
+      "reducere_mediana": null,
+      "reducere_max": null,
+      "esantion": 2
     },
     {
       "slug": "auto-moto",
