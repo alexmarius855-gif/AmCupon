@@ -1,11 +1,11 @@
 {
-  "generat": "2026-10-25",
-  "total_magazine": 455,
-  "cu_promotie": 82,
-  "cu_cod_real": 4,
-  "doar_oferta": 78,
-  "procent_cu_promotie": 18.0,
-  "procent_cu_cod": 0.9,
+  "generat": "2026-10-26",
+  "total_magazine": 453,
+  "cu_promotie": 79,
+  "cu_cod_real": 3,
+  "doar_oferta": 76,
+  "procent_cu_promotie": 17.4,
+  "procent_cu_cod": 0.7,
   "reducere_mediana_generala": 37.5,
   "magazine_cu_procent_declarat": 46,
   "categorii": [
@@ -13,7 +13,7 @@
       "slug": "carti-educatie",
       "nume": "Cărți & educație",
       "magazine": 21,
-      "cu_promotie": 10,
+      "cu_promotie": 8,
       "reducere_mediana": 77,
       "reducere_max": 90,
       "esantion": 5
@@ -39,7 +39,7 @@
     {
       "slug": "beauty",
       "nume": "Beauty & îngrijire",
-      "magazine": 58,
+      "magazine": 57,
       "cu_promotie": 7,
       "reducere_mediana": 37.5,
       "reducere_max": 70,
@@ -48,8 +48,8 @@
     {
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
-      "magazine": 100,
-      "cu_promotie": 19,
+      "magazine": 99,
+      "cu_promotie": 18,
       "reducere_mediana": 28,
       "reducere_max": 70,
       "esantion": 11
@@ -64,15 +64,6 @@
       "esantion": 3
     },
     {
-      "slug": "electronice",
-      "nume": "Electronice & IT",
-      "magazine": 32,
-      "cu_promotie": 5,
-      "reducere_mediana": null,
-      "reducere_max": null,
-      "esantion": 1
-    },
-    {
       "slug": "copii",
       "nume": "Copii & familie",
       "magazine": 23,
@@ -82,9 +73,18 @@
       "esantion": 2
     },
     {
+      "slug": "electronice",
+      "nume": "Electronice & IT",
+      "magazine": 32,
+      "cu_promotie": 5,
+      "reducere_mediana": null,
+      "reducere_max": null,
+      "esantion": 1
+    },
+    {
       "slug": "auto-moto",
       "nume": "Auto & moto",
-      "magazine": 20,
+      "magazine": 21,
       "cu_promotie": 3,
       "reducere_mediana": null,
       "reducere_max": null,
@@ -120,7 +120,7 @@
     {
       "slug": "mancare-bauturi",
       "nume": "Mâncare & băuturi",
-      "magazine": 15,
+      "magazine": 14,
       "cu_promotie": 1,
       "reducere_mediana": null,
       "reducere_max": null,
@@ -156,9 +156,9 @@
   ],
   "criteriu": "domeniu .ro",
   "international": {
-    "total": 504,
-    "cu_promotie": 59,
-    "cu_cod": 35
+    "total": 503,
+    "cu_promotie": 60,
+    "cu_cod": 36
   },
   "retele": [
     "2Performant",
