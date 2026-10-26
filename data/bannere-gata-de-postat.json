@@ -1,21 +1,8 @@
 [
   {
-    "id": 273553,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273512/original/273512.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=17a116271&aff_code=541547473&campaign_unique=cb588f07f",
-    "landing_raw": "https://priveboutique.net/black-friday/",
-    "width": 1080,
-    "height": 1080,
-    "merchant": "priveboutique.net ",
-    "merchant_slug": "priveboutique-net",
-    "name": "BLACK CAT FRIDAY 2026",
-    "category": "BLACK CAT FRIDAY 2026",
-    "b_type": "image"
-  },
-  {
-    "id": 273501,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273460/original/273460.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=7149ffbfd&aff_code=541547473&campaign_unique=cc08e2536",
+    "id": 273577,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273536/original/273536.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=b3ac835bd&aff_code=541547473&campaign_unique=cc08e2536",
     "landing_raw": "https://www.pensulemachiaj.ro",
     "width": 1200,
     "height": 1200,
@@ -26,9 +13,9 @@
     "b_type": "image"
   },
   {
-    "id": 273491,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273450/original/273450.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=716f1691f&aff_code=541547473&campaign_unique=4b9a6d5ea",
+    "id": 273564,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273523/original/273523.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=ceaa3feb0&aff_code=541547473&campaign_unique=4b9a6d5ea",
     "landing_raw": "https://www.kitunghii.ro",
     "width": 1200,
     "height": 1200,
@@ -36,6 +23,19 @@
     "merchant_slug": "kitunghii-ro",
     "name": "-80% STAR SHINE,SECRET BEAUTY BAG GRATUIT",
     "category": "-80% STAR SHINE,SECRET BEAUTY BAG GRATUIT",
+    "b_type": "image"
+  },
+  {
+    "id": 273553,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273512/original/273512.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=17a116271&aff_code=541547473&campaign_unique=cb588f07f",
+    "landing_raw": "https://priveboutique.net/black-friday/",
+    "width": 1080,
+    "height": 1080,
+    "merchant": "priveboutique.net ",
+    "merchant_slug": "priveboutique-net",
+    "name": "BLACK CAT FRIDAY 2026",
+    "category": "BLACK CAT FRIDAY 2026",
     "b_type": "image"
   },
   {

@@ -1,5 +1,5 @@
 # 💰 TOP MAGAZINE după POTENȚIAL DE CÂȘTIG
-> Generat automat 25.10.2026 13:35. Pe astea să le împingi (articole, pin-uri, postări).
+> Generat automat 26.10.2026 14:55. Pe astea să le împingi (articole, pin-uri, postări).
 
 **Scor = comision × popularitate × ofertă.** Comisionul mare singur înșală — astea-s banii REALI.
 
@@ -19,12 +19,12 @@
 | 12 | Tvcmall (tvcmall.com) | 11% | 0 | ✅ COD | 22.0 |
 | 13 | Bcengi (bcengi.com) | 15% | 0 | 🏷️ ofertă | 21.0 |
 | 14 | Helloice (helloice.com) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 15 | Labelshop (labelshop.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 16 | Priveboutique (priveboutique.net) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 17 | Curteaveche (curteaveche.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 18 | Uniquestore (uniquestore.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 19 | Intimplay (intimplay.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 20 | Zelto (zelto.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 15 | Zelto (zelto.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 16 | Labelshop (labelshop.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 17 | Priveboutique (priveboutique.net) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 18 | Curteaveche (curteaveche.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 19 | Uniquestore (uniquestore.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 20 | Intimplay (intimplay.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
 | 21 | Avidlove (avidlove.com) | 10% | 0 | ✅ COD | 20.0 |
 | 22 | Cvlife (cvlife.com) | 10% | 0 | ✅ COD | 20.0 |
 | 23 | Billionconnect (billionconnect.net) | 10% | 0 | ✅ COD | 20.0 |
