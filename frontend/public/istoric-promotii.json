@@ -536,8 +536,8 @@
    "magazine": 136
   },
   "2026-10-26": {
-   "promotii": 267,
-   "magazine": 134
+   "promotii": 273,
+   "magazine": 138
   }
  },
  "magazine": {
@@ -3348,7 +3348,27 @@
     "activa": false
    }
   ],
+  "everin.ro": [
+   {
+    "k": "blackfriday2026cureduceridepanala80|",
+    "titlu": "Black Friday 2026 cu reduceri de pana la 80%",
+    "cod": false,
+    "prima": "2026-10-26",
+    "ultima": "2026-10-26",
+    "expira": "2026-11-15",
+    "activa": true
+   }
+  ],
   "evolutionpowertools.ro": [
+   {
+    "k": "blackfriday2026|",
+    "titlu": "Black Friday 2026",
+    "cod": false,
+    "prima": "2026-10-26",
+    "ultima": "2026-10-26",
+    "expira": "2026-11-30",
+    "activa": true
+   },
    {
     "k": "promotiecordless|",
     "titlu": "Promotie Cordless",
@@ -5003,6 +5023,15 @@
   ],
   "karcher.com": [
    {
+    "k": "blackfridaylakarcherblackfridaylakarchercelemaimarireduceridinankarcherblackfriday530noiembrie|",
+    "titlu": "⚫BLACK FRIDAY🟡 la KÄRCHER! Black Friday la Kärcher: Cele mai mari reduceri din an! Kärcher Black Friday: 5-30 Noiembrie",
+    "cod": false,
+    "prima": "2026-10-26",
+    "ultima": "2026-10-26",
+    "expira": "2026-11-30",
+    "activa": true
+   },
+   {
     "k": "promotiekarcherestevalabilainperioada01iulie202630septembrie2026|",
     "titlu": "Promotie Karcher este valabilă în perioada 01 iulie 2026 - 30 septembrie 2026",
     "cod": false,
@@ -5018,6 +5047,17 @@
     "titlu": "🔥Black Friday Kinderauto.ro 2026 | Comision 8% | Coș mediu peste 1.000 RON | Kit Media disponibil!",
     "cod": false,
     "prima": "2026-10-22",
+    "ultima": "2026-10-26",
+    "expira": "2026-11-15",
+    "activa": true
+   }
+  ],
+  "kinderplay.ro": [
+   {
+    "k": "blackfriday2026kinderplayroreduceridepanala38|",
+    "titlu": "🔥 Black Friday 2026 Kinderplay.ro - reduceri de până la 38%",
+    "cod": false,
+    "prima": "2026-10-26",
     "ultima": "2026-10-26",
     "expira": "2026-11-15",
     "activa": true
@@ -5976,6 +6016,15 @@
   ],
   "maranc.ro": [
    {
+    "k": "blackfridaymarancperformantatameritarasplatita|",
+    "titlu": "🔥 BLACK FRIDAY MARANC: Performanța ta merită răsplătită!",
+    "cod": false,
+    "prima": "2026-10-26",
+    "ultima": "2026-10-26",
+    "expira": "2026-11-30",
+    "activa": true
+   },
+   {
     "k": "potieconomisicumparandprodusemaranclapromotie|",
     "titlu": "Poti economisi cumparand produse Maranc la promotie!",
     "cod": false,
@@ -6532,6 +6581,15 @@
    }
   ],
   "nemira.ro": [
+   {
+    "k": "blackfridaynemirapanala90reducere|",
+    "titlu": "Black Friday Nemira: Până la 90% REDUCERE",
+    "cod": false,
+    "prima": "2026-10-26",
+    "ultima": "2026-10-26",
+    "expira": "2026-11-08",
+    "activa": true
+   },
    {
     "k": "toamnaliteraracu40reducerelacos|",
     "titlu": "Toamna Literară cu 40% REDUCERE la coș!",
