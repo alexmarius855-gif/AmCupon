@@ -116,6 +116,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/radar`,                  lastModified: ultimaModificare(`${BASE_URL}/radar`), changeFrequency: "daily",   priority: 0.95 },
     { url: `${BASE_URL}/oferte-azi`,             lastModified: ultimaModificare(`${BASE_URL}/oferte-azi`), changeFrequency: "daily",   priority: 0.95 },
     { url: `${BASE_URL}/black-friday`,           lastModified: ultimaModificare(`${BASE_URL}/black-friday`), changeFrequency: "daily",   priority: 0.95 },
+    { url: `${BASE_URL}/reduceri-reale`,         lastModified: ultimaModificare(`${BASE_URL}/reduceri-reale`), changeFrequency: "daily", priority: 0.9 },
     { url: `${BASE_URL}/produse`,                lastModified: ultimaModificare(`${BASE_URL}/produse`), changeFrequency: "daily",   priority: 0.9 },
     { url: `${BASE_URL}/toate-magazinele`,       lastModified: ultimaModificare(`${BASE_URL}/toate-magazinele`), changeFrequency: "daily",   priority: 0.85 },
     { url: `${BASE_URL}/categorii`,              lastModified: ultimaModificare(`${BASE_URL}/categorii`), changeFrequency: "weekly",  priority: 0.85 },

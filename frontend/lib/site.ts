@@ -77,6 +77,7 @@ export const SUBSOL: { categorii: Link[]; reduceri: Link[]; utilizatori: Link[];
     { href: "/top-reduceri", label: "Top reduceri" },
     { href: "/produse", label: "Produse de la parteneri" },
     { href: "/black-friday", label: "Black Friday" },
+    { href: "/reduceri-reale", label: "Reduceri reale (istoric de preț)" },
     { href: "/craciun", label: "Reduceri Crăciun" },
     { href: "/idei-cadouri", label: "Idei cadouri" },
     { href: "/comparatii", label: "Comparații magazine" },

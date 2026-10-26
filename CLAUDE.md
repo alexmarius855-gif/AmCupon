@@ -12,6 +12,17 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 26.10.2026 — `/reduceri-reale` + calendarul Black Friday al partenerilor:** pagina noua (server) din
+`public/scaderi-pret.json`: produsele cu pretul de azi >= 10% sub minimul din 30 de zile (istoric propriu din 07.10,
+`scripts/istoric_preturi.py`) + `statistici` agregate (scumpite / ieftinite / neschimbate fata de pretul de acum 30
+de zile, doar produse cu >= 14 zile de istoric; variatii peste x3 = `excluse`, erori probabile de feed). **Fara nume de
+magazine in cifrele de ansamblu.** Motiv: afiliatul nr. 1 din 2Performant e un site de istoric de preturi; la 06.11
+(eMAG) avem 30 de zile de date. `black-friday.json::parteneri` = doar campanii CONFIRMATE cu sursa (evoMAG 29.10-15.11);
+pagina le ascunde dupa `final`. Masurat azi: 10.113 produse, 480 scumpite (mediana +8,1%), 296 ieftinite (−13,4%).
+Primele clicuri reale (19-26.10, 8): ghidurile „Cel mai bun X" cu oferte si /top/* aduc clicuri, mai ales pe mobil.
+Tot azi: rularile erau rosii — X-Sense FR scria codul in descriere (`promotii.fara_coduri_magazin`).
+Build local: in worktree cu `node_modules` legat prin jonctiune, Turbopack refuza; `npx next dev --webpack` merge.
+
 **UPDATE 19.10.2026 — NUMARATOARE PROPRIE DE CLICURI REALE (anonima):** tabel Supabase `clicuri_afiliate` (ziua, magazin, pagina, sursa `site`/`go`, host referrer, mobil/desktop, `bot`) — FARA IP, cookie sau user-agent stocat; scriere doar prin RPC `inregistreaza_click` (SECURITY DEFINER, anon nu poate citi tabelul; alertele Supabase pe functii sunt prin design, ca la voturi); stergere zilnica cu pg_cron la 180 de zile (job `curata-clicuri-afiliate`). Client: `lib/clicuriClient.ts::numaraClick` (sendBeacon) din `AffiliateClickTracker` (clic + clic de mijloc, doar `isTrusted`) si din `useCopyCod` (dezvaluirea unui cod, care nu trece prin `<a>`); server: `/api/click` (mereu 204) si `/go/[magazin]` (`after()`, fara HEAD), logica in `lib/clicuri.ts` (pura) + `lib/clicuriServer.ts`. Magazinul = indiciul clientului (daca exista in output.json) > `redirect_to` > calea linkului (la campanii comune castiga pagina curenta) > pagina `/cod-reducere/<slug>` > `necunoscut`. Test: `node lib/clicuri.test.mjs` (0 atribuiri gresite pe 953 de magazine). Citire: din Supabase, ex. `select magazin, count(*) from clicuri_afiliate where not bot group by 1 order by 2 desc`. Revizie adversariala (3 perspective + sceptici): 2 constatari confirmate, reparate. **Limita cunoscuta: fara IP nu avem vizitatori unici, doar numar de clicuri.** `/confidentialitate` descrie numaratoarea. Corectat tot azi: rularile Actions erau ROSII din 14.10 (garda articolelor compara titlul cu cod, articolele il scot — `promotii.titlu_in_text`), iar vitrina de produse pe prima pagina cere acum ca titlul sa se potriveasca cu tipul magazinului (`COMPATIBIL` in generate_homepage_data.py).
 
 **UPDATE 15.10.2026 — PILOT AUTOMAT + inapoi pe TEMA INCHISA:** dupa 0 lei in ~4 luni, Alex a pus site-ul pe

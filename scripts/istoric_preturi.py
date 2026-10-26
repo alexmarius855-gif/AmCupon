@@ -121,6 +121,57 @@ def scaderi(istoric: dict, produse: list, azi: str) -> list[dict]:
     return out
 
 
+RAPORT_ABSURD = 3.0   # x3 sau /3 intr-o luna: aproape sigur alta varianta de produs pe aceeasi adresa, nu un pret
+VAZUT_RECENT = 3      # zile: un produs nevazut de 3 zile nu mai are un pret „de azi"
+
+
+def statistici(istoric: dict, azi: str) -> dict:
+    """Cifre AGREGATE pentru pagina /reduceri-reale (26.10.2026): cate produse s-au scumpit, cate s-au
+    ieftinit si cat, fata de pretul de acum 30 de zile (sau de la prima observatie, daca e mai tarziu).
+    Doar produse cu cel putin 14 zile de istoric, vazute in ultimele 3 zile. Variatiile de peste x3 se
+    numara separat (`excluse`), nu intra in medii: pe aceeasi adresa apare uneori alta varianta (alt
+    gramaj, alt set), iar un „+500%" ar fi o eroare de feed prezentata ca scumpire. Fara nume de magazine:
+    pagina descrie piata, nu acuza pe nimeni."""
+    zi_azi = date.fromisoformat(azi)
+    start = (zi_azi - timedelta(days=FEREASTRA)).isoformat()
+    recent = (zi_azi - timedelta(days=VAZUT_RECENT)).isoformat()
+    sus, jos, egal, excluse = [], [], 0, 0
+    for e in istoric.values():
+        p = e.get("p") or []
+        if not p or e.get("v", "") < recent:
+            continue
+        if (date.fromisoformat(e["v"]) - date.fromisoformat(p[0][0])).days < ACOPERIRE_MIN:
+            continue
+        inainte = [pr for zi, pr in p if zi <= start]
+        ref = inainte[-1] if inainte else p[0][1]
+        acum = p[-1][1]
+        if not ref or not acum:
+            continue
+        r = acum / ref
+        if r > RAPORT_ABSURD or r < 1 / RAPORT_ABSURD:
+            excluse += 1
+        elif r > 1.005:
+            sus.append((r - 1) * 100)
+        elif r < 0.995:
+            jos.append((1 - r) * 100)
+        else:
+            egal += 1
+
+    def mediana(xs: list) -> float | None:
+        if not xs:
+            return None
+        s = sorted(xs)
+        m = len(s) // 2
+        return round(s[m] if len(s) % 2 else (s[m - 1] + s[m]) / 2, 1)
+
+    total = len(sus) + len(jos) + egal
+    return {
+        "produse": total, "scumpite": len(sus), "ieftinite": len(jos), "neschimbate": egal,
+        "mediana_scumpire_pct": mediana(sus), "mediana_ieftinire_pct": mediana(jos),
+        "excluse": excluse, "fereastra_zile": FEREASTRA, "acoperire_min_zile": ACOPERIRE_MIN,
+    }
+
+
 def main() -> int:
     azi = datetime.now(timezone.utc).date().isoformat()
     raw = json.load(io.open(PRODUSE, encoding="utf-8"))
@@ -134,7 +185,8 @@ def main() -> int:
     io.open(ISTORIC, "w", encoding="utf-8", newline="\n").write(
         json.dumps({"actualizat": azi, "produse": istoric}, ensure_ascii=False, separators=(",", ":")))
     io.open(SCADERI, "w", encoding="utf-8", newline="\n").write(
-        json.dumps({"actualizat": azi, "fereastra_zile": FEREASTRA, "produse": lista[:300]},
+        json.dumps({"actualizat": azi, "fereastra_zile": FEREASTRA, "statistici": statistici(istoric, azi),
+                    "produse": lista[:300]},
                    ensure_ascii=False, separators=(",", ":")))
     print(f"istoric preturi: {len(istoric)} produse urmarite; schimbari noi: {noi}; scoase: {scoase}; "
           f"scaderi reale sub minimul pe {FEREASTRA} de zile: {len(lista)}")
@@ -169,6 +221,19 @@ def test() -> int:
     actualizeaza(ist2, [P(50)], "2026-10-05")
     v("istoric de 4 zile: nicio scadere declarata", scaderi(ist2, [P(50)], "2026-10-05"), [])
     v("produs nevazut 90 de zile iese", curata({"a": {"p": [["2026-01-01", 1]], "v": "2026-01-01"}}, "2026-10-07"), 1)
+    # statistici: referinta = pretul de acum 30 de zile; x3 = exclus; istoric scurt / nevazut recent = ignorat
+    st = statistici({
+        "sus": {"p": [["2026-09-20", 100], ["2026-10-20", 110]], "v": "2026-10-26"},     # +10%
+        "jos": {"p": [["2026-10-01", 200], ["2026-10-15", 150]], "v": "2026-10-26"},     # -25%
+        "egal": {"p": [["2026-10-01", 50]], "v": "2026-10-26"},
+        "absurd": {"p": [["2026-10-01", 10], ["2026-10-20", 60]], "v": "2026-10-26"},  # x6 -> exclus
+        "scurt": {"p": [["2026-10-20", 10], ["2026-10-25", 20]], "v": "2026-10-26"},   # 6 zile -> ignorat
+        "vechi": {"p": [["2026-09-01", 10], ["2026-09-20", 20]], "v": "2026-10-01"},   # nevazut -> ignorat
+    }, "2026-10-26")
+    v("statistici: numara corect", (st["produse"], st["scumpite"], st["ieftinite"], st["neschimbate"], st["excluse"]),
+      (3, 1, 1, 1, 1))
+    v("statistici: referinta = pretul de la inceputul ferestrei", (st["mediana_scumpire_pct"], st["mediana_ieftinire_pct"]),
+      (10.0, 25.0))
     print(f"\n{esec} ESECURI" if esec else "TOATE TREC")
     return 1 if esec else 0
 

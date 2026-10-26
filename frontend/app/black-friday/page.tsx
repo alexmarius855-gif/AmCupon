@@ -23,11 +23,21 @@ function incarcaBF() {
   const zi = (iso: string, o: Intl.DateTimeFormatOptions) =>
     new Intl.DateTimeFormat("ro-RO", { ...o, timeZone: "UTC" }).format(new Date(iso + "T00:00:00Z"));
   const [start, final] = d.international as [string, string];
+  // 26.10.2026: campaniile CONFIRMATE ale partenerilor (doar cu sursa). Pagina se regenereaza la fiecare deploy
+  // (de trei ori pe zi), deci o campanie terminata dispare singura de pe pagina.
+  const azi = new Date().toISOString().slice(0, 10);
+  const parteneri = ((d.parteneri || []) as { magazin: string; nume: string; start: string; final: string; nota?: string; sursa: string }[])
+    .filter((p) => p.final >= azi)
+    .map((p) => ({
+      ...p,
+      interval: `${zi(p.start, { day: "numeric", month: "long" })} – ${zi(p.final, { day: "numeric", month: "long" })}`,
+    }));
   return {
     an: d.an as number,
     emag: zi(d.emag, { weekday: "long", day: "numeric", month: "long" }),
     international: `${zi(start, { day: "numeric" })}–${zi(final, { day: "numeric", month: "long" })}`,
     sursa: d.sursa as string,
+    parteneri,
   };
 }
 
@@ -94,7 +104,7 @@ function intrebari(parteneri: number, cuOferta: number) {
     },
     {
       q: "Cum afli dacă o reducere de Black Friday e reală?",
-      a: "În România, prețul tăiat de lângă o reducere trebuie să fie cel mai mic preț practicat de magazin în ultimele 30 de zile (HG 686/2022). Notează prețul cu câteva săptămâni înainte, compară-l cu cel din ziua reducerii și citește condițiile codului: valoarea minimă a comenzii și categoriile excluse.",
+      a: "În România, prețul tăiat de lângă o reducere trebuie să fie cel mai mic preț practicat de magazin în ultimele 30 de zile (HG 686/2022). Notează prețul cu câteva săptămâni înainte, compară-l cu cel din ziua reducerii și citește condițiile codului: valoarea minimă a comenzii și categoriile excluse. Pe pagina Reduceri reale arătăm produsele partenerilor care sunt azi sub prețul minim din ultimele 30 de zile, după istoricul nostru de prețuri.",
     },
   ];
 }
@@ -176,6 +186,39 @@ export default function BlackFridayPage() {
               wall-street.ro
             </a>
           </p>
+
+          {BF.parteneri.length > 0 && (
+            <div className="mt-8 max-w-2xl">
+              <h2 className="text-lg font-black mb-3">Black Friday la partenerii AmCupon</h2>
+              <div className="space-y-3">
+                {BF.parteneri.map((p) => (
+                  <div key={p.magazin} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-4 flex flex-wrap items-center justify-between gap-3">
+                    <div>
+                      <p className="font-bold">{p.nume}: {p.interval}</p>
+                      {p.nota && <p className="text-xs text-[var(--text-muted)] mt-0.5">{p.nota} ·{" "}
+                        <a href={p.sursa} target="_blank" rel="noopener noreferrer" className="underline">sursa</a></p>}
+                    </div>
+                    <Link href={`/cod-reducere/${p.magazin}`} className="text-sm font-semibold text-[var(--accent-text)] shrink-0">
+                      Ofertele {p.nume} →
+                    </Link>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <Link
+            href="/reduceri-reale"
+            className="mt-6 flex items-center justify-between gap-3 max-w-2xl bg-[var(--surface)] border border-[var(--border)] rounded-xl p-4 hover:border-[var(--border-strong)] transition-colors"
+          >
+            <span>
+              <span className="block font-bold">E reală reducerea?</span>
+              <span className="block text-xs text-[var(--text-muted)] mt-0.5">
+                Produsele partenerilor sub prețul minim din ultimele 30 de zile, după istoricul nostru de prețuri.
+              </span>
+            </span>
+            <span className="text-sm font-semibold text-[var(--accent-text)] shrink-0">Reduceri reale →</span>
+          </Link>
 
           <div className="grid grid-cols-3 gap-3 mt-8 max-w-md">
             {[
