@@ -348,6 +348,18 @@ def fara_coduri(text: str, p: dict) -> str:
     return text
 
 
+def fara_coduri_magazin(text: str, promotii: list) -> str:
+    """`fara_coduri` pentru codurile TUTUROR promotiilor magazinului, nu doar ale uneia (26.10.2026).
+    X-Sense avea aceeasi oferta in trei limbi: varianta franceza n-avea `cod_cupon`, dar descrierea
+    scria „avec le code affilié XSENSEAF12" — „affilié" intre „code" si cod, deci nici
+    `coduri_in_text` nu-l vedea. Codul era insa `cod_cupon` la variantele EN/DE ale aceluiasi magazin:
+    orice cod activ al magazinului e scos din textul oricarei promotii a lui."""
+    for p in promotii or []:
+        if isinstance(p, dict):
+            text = fara_coduri(text, p)
+    return text
+
+
 def titlu_promotie(p: dict, nume_magazin: str) -> str:
     """Titlul de afisat al unei promotii — ca `titluPromotie` din lib/oferta.ts: fara cod, iar cand
     titlul E doar codul, descrierea; daca nici ea nu ramane, „Cod de reducere X" / „Oferta X"."""
