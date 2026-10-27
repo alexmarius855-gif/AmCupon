@@ -1,13 +1,13 @@
 {
   "generat": "2026-10-27",
-  "total_magazine": 453,
-  "cu_promotie": 84,
+  "total_magazine": 455,
+  "cu_promotie": 85,
   "cu_cod_real": 3,
-  "doar_oferta": 81,
-  "procent_cu_promotie": 18.5,
+  "doar_oferta": 82,
+  "procent_cu_promotie": 18.7,
   "procent_cu_cod": 0.7,
-  "reducere_mediana_generala": 42.5,
-  "magazine_cu_procent_declarat": 48,
+  "reducere_mediana_generala": 40,
+  "magazine_cu_procent_declarat": 49,
   "categorii": [
     {
       "slug": "carti-educatie",
@@ -30,8 +30,8 @@
     {
       "slug": "beauty",
       "nume": "Beauty & îngrijire",
-      "magazine": 57,
-      "cu_promotie": 9,
+      "magazine": 58,
+      "cu_promotie": 10,
       "reducere_mediana": 52.5,
       "reducere_max": 80,
       "esantion": 8
@@ -48,7 +48,7 @@
     {
       "slug": "copii",
       "nume": "Copii & familie",
-      "magazine": 23,
+      "magazine": 24,
       "cu_promotie": 3,
       "reducere_mediana": 38,
       "reducere_max": 70,
@@ -57,7 +57,7 @@
     {
       "slug": "fashion",
       "nume": "Fashion",
-      "magazine": 53,
+      "magazine": 52,
       "cu_promotie": 12,
       "reducere_mediana": 37.5,
       "reducere_max": 70,
@@ -70,6 +70,15 @@
       "cu_promotie": 12,
       "reducere_mediana": 25,
       "reducere_max": 30,
+      "esantion": 3
+    },
+    {
+      "slug": "marketplace",
+      "nume": "Marketplace",
+      "magazine": 44,
+      "cu_promotie": 7,
+      "reducere_mediana": 15,
+      "reducere_max": 70,
       "esantion": 3
     },
     {
@@ -86,15 +95,6 @@
       "nume": "Auto & moto",
       "magazine": 21,
       "cu_promotie": 3,
-      "reducere_mediana": null,
-      "reducere_max": null,
-      "esantion": 2
-    },
-    {
-      "slug": "marketplace",
-      "nume": "Marketplace",
-      "magazine": 44,
-      "cu_promotie": 7,
       "reducere_mediana": null,
       "reducere_max": null,
       "esantion": 2
@@ -120,7 +120,7 @@
     {
       "slug": "mancare-bauturi",
       "nume": "Mâncare & băuturi",
-      "magazine": 13,
+      "magazine": 14,
       "cu_promotie": 1,
       "reducere_mediana": null,
       "reducere_max": null,
@@ -157,8 +157,8 @@
   "criteriu": "domeniu .ro",
   "international": {
     "total": 504,
-    "cu_promotie": 59,
-    "cu_cod": 35
+    "cu_promotie": 60,
+    "cu_cod": 36
   },
   "retele": [
     "2Performant",

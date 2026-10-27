@@ -540,8 +540,8 @@
    "magazine": 138
   },
   "2026-10-27": {
-   "promotii": 268,
-   "magazine": 138
+   "promotii": 273,
+   "magazine": 140
   }
  },
  "magazine": {
@@ -2602,6 +2602,17 @@
     "activa": false
    }
   ],
+  "duchessenails.ro": [
+   {
+    "k": "duchessenailsblackfriday2026|",
+    "titlu": "DuchesseNails Black Friday 2026",
+    "cod": false,
+    "prima": "2026-10-27",
+    "ultima": "2026-10-27",
+    "expira": "2026-11-11",
+    "activa": true
+   }
+  ],
   "e-cosmetics.ro": [
    {
     "k": "blackfridayblackweeksreduceridepanala35|",
@@ -2931,6 +2942,15 @@
    }
   ],
   "erosvita.ro": [
+   {
+    "k": "blackfridayerosvita10peste150lei15peste250lei|",
+    "titlu": "Black Friday ErosVita: -10% peste 150 lei, -15% peste 250 lei",
+    "cod": false,
+    "prima": "2026-10-27",
+    "ultima": "2026-10-27",
+    "expira": "2026-11-16",
+    "activa": true
+   },
    {
     "k": "vineritransportgratuitpentruoricecomandacedepaseste129ron|",
     "titlu": "VINERI TRANSPORT GRATUIT PENTRU ORICE COMANDA CE DEPASESTE 129 RON",
@@ -6599,6 +6619,15 @@
   ],
   "networksolutions.com": [
    {
+    "k": "30offtheaiwebsitebuilderwithannualterms|new30",
+    "titlu": "30% Off the AI Website Builder with Annual Terms",
+    "cod": true,
+    "prima": "2026-10-27",
+    "ultima": "2026-10-27",
+    "expira": "2027-03-01",
+    "activa": true
+   },
+   {
     "k": "50offsharedhostingwordpresshosting|halloween50off",
     "titlu": "50% Off Shared Hosting & Wordpress Hosting",
     "cod": true,
@@ -6625,9 +6654,9 @@
     "titlu": "Pre-Winter Offer is Live! Up to 25% off | Minor Hotels EUAM (formerly NH Hoteles)",
     "cod": true,
     "prima": "2026-09-08",
-    "ultima": "2026-10-26",
+    "ultima": "2026-10-27",
     "expira": "2027-04-01",
-    "activa": false
+    "activa": true
    },
    {
     "k": "summerpromoisliveget30offminorhotelsformerlynhhotels|summerstory",
@@ -7613,6 +7642,15 @@
    }
   ],
   "rowenta.ro": [
+   {
+    "k": "blackfriday|",
+    "titlu": "BLACK FRIDAY",
+    "cod": false,
+    "prima": "2026-10-27",
+    "ultima": "2026-10-27",
+    "expira": "2026-11-28",
+    "activa": true
+   },
    {
     "k": "aniversare4anirowenta|",
     "titlu": "ANIVERSARE 4 ANI ROWENTA",
