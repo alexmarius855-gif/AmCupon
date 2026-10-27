@@ -118,26 +118,44 @@ function formatDate(dateStr: string): string {
  * literal ca „<strong>[22 lei](url)</strong>": regexul prindea intai bold-ul si trata
  * continutul ca text simplu. Tiparul apare in orice articol care pune pretul ca link
  * ingrosat — adica in fiecare articol de tip „Top N", unde pretul E butonul.
+ *
+ * 27.10.2026 — bold-ul poate trece pe randul urmator (`[\s\S]`, nu `.`): paragrafele si itemii de lista pe mai
+ * multe randuri ajung aici cu „\n" in ele, iar `.` nu trece de el. Pe 6 articole rescrise (parfum barbati,
+ * smartwatch, scaun auto, laptop gaming...) pagina arata stelutele: „**Eau de Parfum”.
+ * Tot atunci: `cod` se citeste PRIMUL si nu se mai parseaza. Codurile mascate din articolele de magazin
+ * („Cod: `******E3`") ieseau „**E3": primele patru stelute deveneau un bold gol (73 de coduri, toate mascate).
+ * Si _cursiv_: „_(expiră în 5 zile)_" aparea cu liniutele (145 de aparitii, 76 de articole). Liniuta trebuie sa fie
+ * la marginea unui cuvant, ca „aff_code" dintr-o adresa sa nu devina cursiv.
  */
 function parseInline(text: string, baseKey: string): React.ReactNode[] {
   const nodes: React.ReactNode[] = [];
-  const regex = /\*\*(.*?)\*\*|\[([^\]]+)\]\(([^)]+)\)/g;
+  const regex = /`([^`\n]+)`|\*\*([\s\S]*?)\*\*|\[([^\]]+)\]\(([^)]+)\)|(?<![\p{L}\p{N}])_([^_]+?)_(?![\p{L}\p{N}])/gu;
   let last = 0;
   let match;
   let i = 0;
   while ((match = regex.exec(text)) !== null) {
     if (match.index > last) nodes.push(text.slice(last, match.index));
     if (match[1] !== undefined) {
-      nodes.push(<strong key={`${baseKey}-b${i}`}>{parseInline(match[1], `${baseKey}-b${i}`)}</strong>);
-    } else if (match[2] && match[3]) {
-      const isExt = match[3].startsWith("http");
       nodes.push(
-        <a key={`${baseKey}-l${i}`} href={match[3]}
+        <code key={`${baseKey}-c${i}`} className="font-mono text-[0.95em] text-[var(--accent-text)] bg-[var(--surface)] border border-[var(--border)] rounded px-1.5 py-0.5">
+          {match[1]}
+        </code>
+      );
+    } else if (match[2] !== undefined) {
+      nodes.push(<strong key={`${baseKey}-b${i}`}>{parseInline(match[2], `${baseKey}-b${i}`)}</strong>);
+    } else if (match[3] && match[4]) {
+      const isExt = match[4].startsWith("http");
+      nodes.push(
+        <a key={`${baseKey}-l${i}`} href={match[4]}
           className="text-[var(--accent-text)] hover:text-[var(--accent-text)] underline underline-offset-2 font-medium"
           {...(isExt ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
-          {match[2]}
+          {/* recursiv si aici: „[**Vezi toate ofertele active Dhgate pe AmCupon.ro →**](...)", la finalul
+              fiecarui articol de magazin, aparea cu stelutele (27.10.2026) */}
+          {parseInline(match[3], `${baseKey}-l${i}`)}
         </a>
       );
+    } else if (match[5] !== undefined) {
+      nodes.push(<em key={`${baseKey}-i${i}`}>{parseInline(match[5], `${baseKey}-i${i}`)}</em>);
     }
     last = match.index + match[0].length;
     i++;
