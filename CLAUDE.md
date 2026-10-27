@@ -32,6 +32,32 @@ inchisa/lime e cea activa; `.tema-luminoasa` ramane in globals.css, nefolosita. 
 oferta cu procentul cel mai mare e prima, cu eticheta „Cea mai mare reducere azi" (`indexReducereMaxima`), iar
 meta description incepe cu oferta care expira in <=7 zile, cu data absoluta (`notaExpirare`, lib/oferta.ts).
 
+**UPDATE 18.10.2026 (pipeline ROSU 14-17.10 — garda articolelor, nu articolele):** 9 din 10 rulari picau pe
+`verifica_promotii.py` cu „articole_vechi 43" (easeus, atelier49, noriel...). **Articolele erau corecte**: regenerate
+din datele rularii esuate (5b1ffd0b), toate 22 sunt identice octet cu octet cu ce scrie generatorul — improspatarea
+mergea. Cauza: din 07.10 articolul scoate codul din titlul ofertei, garda compara cu `nume` brut. Reparat pe 17.10
+(02c427fc): `promotii.titlu_in_text` = sursa unica pentru generator SI garda (plus separatorii ramasi dupa cod);
+prima rulare dupa, 18:58 UTC, verde. Nou: **`python scripts/test_garda_articole.py`** — invariantul „un articol
+proaspat generat trece garda" pe tot output.json + cazurile reale + 2 mutatii; PICA pe codul din 17.10 dimineata
+(6 asteptari). **Ruleaza-l cand atingi `genereaza_articol_magazin`, `titlu_promotie`/`fara_coduri` sau garda.**
+
+**UPDATE 18.10.2026, partea a doua (promotii pentru ALTA piata scoase la sursa — ramura `claude/promotii-alta-limba`):**
+articolul `cod-reducere-vidaxl-octombrie-2026` lista promotii in BULGARA, cu leva („…отстъпка от 10 лв. при
+регистрация!", „10% намаление"). Masurat pe output.json: **7 promotii pe 3 magazine, toate cu articol** — vidaxl.bg (2,
+bulgara), ikier.com (4, „Ahorra $1,999 MXN… con código" = mx.ikier.com), italki.com (1, „10 EUR Rabatt", italki.com/de);
+in `istoric-promotii.json` inca 8 intrari (si una franceza, insotel). Se scoate **PROMOTIA, nu magazinul** (vidaxl.bg are
+si promotii romanesti — OFERTE01 —, ikier.com coduri in engleza pentru EU). `promotii.pentru_alta_piata()` = alfabet
+chirilic/grecesc, moneda altei tari langa o suma (лв/BGN, HUF, PLN, CZK, MXN, CAD, AUD, INR, CHF, BRL — „CAD10" e cod,
+nu moneda), cuvinte care nu exista in romana/engleza (ahorra, rabatt, réduction, korting, kedvezmény...). Engleza, EUR,
+USD raman (magazine internationale cu livrare in RO, politica din 15.10). Aplicata in `curata_promotii` (merge + import
+CSV, deci si newsletter/Telegram), `istoric_promotii.titlu_publicabil` (tot istoricul) si garda `verifica_promotii.py`
+(regula 6: promotiile din output.json + TEXTUL articolelor de magazin). **Dovedit:** pe datele din 17.10 garda pica
+(alta_piata 7, articole 3, exit 1); dupa curata_promotii + `generate_blog.py --doar-improspatare` + `istoric_promotii.py`
+trece (exit 0). Fals-pozitive pe toate cele 544 de articole si 272 de promotii: 0. Teste: `test_promotii_afiliati.py`
+(7 prinse + 10 capcane), `test_garda_articole.py` (invariantul ruleaza acum pe date trecute prin `curata_promotii`, ca
+in pipeline; +3 cazuri). Datele NU sunt comise — prima rulare a pipeline-ului le curata. **Ramas, separat:** butonul
+magazinului vidaxl.bg (si landing-ul promotiilor romanesti) duce pe vidaxl.bg, iar numele afisat e „Vidaxl BG".
+
 **UPDATE 17.10.2026 (`/llms.txt` pentru motoarele AI):** audit GEO (GeoLook, 40 de pagini): crawlerii AI
 (GPTBot, ClaudeBot, PerplexityBot) intra peste tot, dar lipsea `/llms.txt`. Nou `app/llms.txt/route.ts`,
 static, generat din output.json la build (numar de magazine, cu oferta, cu cod, retelele, ce NU facem —

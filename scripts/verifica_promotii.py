@@ -10,7 +10,9 @@ Ce verifica, pe frontend/public/output.json (fisierul pe care il citeste site-ul
   2. `zile_ramase` = zilele reale pana la `expira` (toleranta o zi: rularea poate trece de miezul noptii);
   3. fara `expira`, niciun contor: `zile_ramase` = FARA_DATA;
   4. flag-urile de magazin (`are_promotie`, `cod_cupon`, `zile_ramase`) spun ce e in promotii;
-  5. articolele de magazin din blog nu listeaza promotii care nu mai exista.
+  5. articolele de magazin din blog nu listeaza promotii care nu mai exista;
+  6. nicio promotie si niciun articol de magazin pentru alta piata — alta limba, alt alfabet, moneda
+     altei tari (18.10.2026: vidaxl.bg in bulgara si leva, ikier.com in pesos, italki.com in germana).
 
 Regula si motivul: scripts/promotii.py. Testul care dovedeste ca garda poate pica: rulata pe
 output.json de la 16.09.2026 10:41 UTC raporteaza 58 de expirate si pica.
@@ -25,7 +27,8 @@ import re
 import sys
 
 from nume_magazin import nume_afisat
-from promotii import FARA_DATA, PRAG_DATA_ABSURDA, azi_utc, titlu_in_text, zile_pana_la
+from promotii import (FARA_DATA, PRAG_DATA_ABSURDA, azi_utc, pentru_alta_piata, promotie_pentru_alta_piata,
+                      titlu_in_text, zile_pana_la)
 
 PUBLIC = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "frontend", "public")
 IMPLICIT = os.path.join(PUBLIC, "output.json")
@@ -67,7 +70,16 @@ def verifica_articole(magazine: list, cale_blog: str) -> list:
         if p.get("tip") == "magazin" and p.get("magazin") in fara_ro:
             gresit.append(f"{p.get('slug')}: articol pentru un magazin fara livrare in Romania")
             continue
-        if p.get("tip") != "magazin" or p.get("magazin") not in active:
+        if p.get("tip") != "magazin":
+            continue
+        # 18.10.2026: articolul vidaxl.bg lista „Абонирайте се за нашия бюлетин... 10 лв." pe site-ul
+        # romanesc. Se verifica TEXTUL publicat, nu doar output.json: orice cale care ocoleste
+        # curata_promotii (un generator, un articol vechi neimprospatat) se vede aici.
+        motiv = pentru_alta_piata(f"{p.get('title') or ''} {p.get('excerpt') or ''} {p.get('content') or ''}")
+        if motiv:
+            gresit.append(f"{p.get('slug')}: text pentru alta piata ({motiv})")
+            continue
+        if p.get("magazin") not in active:
             continue
         for nume in PROMO_IN_ARTICOL.findall(p.get("content") or ""):
             if nume.strip().lower() not in active[p["magazin"]]:
@@ -76,7 +88,7 @@ def verifica_articole(magazine: list, cale_blog: str) -> list:
 
 
 def verifica(magazine: list, azi: str) -> dict:
-    gresit = {"expirate": [], "contor_gresit": [], "contor_fara_data": [], "flaguri": []}
+    gresit = {"expirate": [], "contor_gresit": [], "contor_fara_data": [], "flaguri": [], "alta_piata": []}
     for m in magazine:
         if not isinstance(m, dict):
             continue
@@ -90,6 +102,9 @@ def verifica(magazine: list, azi: str) -> dict:
             if zile is not None and zile > PRAG_DATA_ABSURDA:
                 zile = None
             eticheta = f"{slug}: {(p.get('nume') or '')[:50]}"
+            motiv = promotie_pentru_alta_piata(p)
+            if motiv:
+                gresit["alta_piata"].append(f"{eticheta} ({motiv})")
             if zile is None:
                 if p.get("zile_ramase") != FARA_DATA:
                     gresit["contor_fara_data"].append(f"{eticheta} (zile_ramase={p.get('zile_ramase')})")
@@ -126,14 +141,17 @@ def main() -> int:
         for x in lista[:10]:
             print(f"      {x}")
     if total:
-        print(f"\nPICAT: {total} probleme. Site-ul arata promotii expirate sau contoare false.")
+        print(f"\nPICAT: {total} probleme. Site-ul arata promotii expirate, contoare false sau oferte "
+              "pentru alta piata.")
         print("Promotiile trec prin scripts/promotii.py::curata_promotii la merge — cauta cine scrie "
               "output.json DUPA el, sau cine a ocolit-o.")
         if gresit["articole_vechi"]:
             print("Articolele se aduc la zi cu `python generate_blog.py --doar-improspatare` "
                   "(ruleaza la fiecare rulare, dupa import_csv_promotii).")
+            print("Daca improspatarea a rulat si tot pica: `python test_garda_articole.py` — poate garda si "
+                  "generatorul scriu titlul diferit (14-17.10.2026).")
         return 1
-    print("\nOK — nicio promotie expirata, niciun contor fals.")
+    print("\nOK — nicio promotie expirata, niciun contor fals, nicio oferta pentru alta piata.")
     return 0
 
 

@@ -114,6 +114,15 @@ de timp.
   un al doilea FAQ în componenta-copil.** „Sursă unică" e o afirmație verificabilă: numără
   aparițiile în HTML-ul generat, nu te baza pe comentariul care spune că e unică.
 
+- **14–17.10: producătorul și garda calculau separat ACELAȘI titlu.** Din 07.10 articolul de magazin
+  scoate codul din titlul ofertei („… cu cod ATELIER49" → „… cu codul de reducere"); `verifica_promotii.py`
+  compara mai departe cu `nume` brut. 9 din 10 rulări ROȘII cu „43 de articole vechi" — toate 22 de
+  articole erau identice cu regenerarea din datele zilei. A doua oară când garda e roșie pe date bune
+  (22.09: `PRAG_DATA_ABSURDA`), de fiecare dată pentru că regula s-a schimbat la producător, nu și la
+  gardă. Acum `promotii.titlu_in_text` e importată de amândouă, iar `scripts/test_garda_articole.py`
+  verifică invariantul „ce produce generatorul trece garda" (pică pe codul vechi). Și: logul gărzii
+  sugera „improspatarea nu le rescrie" — prima ipoteză de verificat era că **garda** greșește.
+
 **Regula:** o listă folosită în două locuri se **exportă dintr-unul și se importă în celălalt**.
 Nu se copiază, oricât de mică e. **Același lucru pentru o REGULĂ de afișare**, nu doar pentru o
 listă de date: un prag, un format, o condiție de vizibilitate copiate în două componente diverg la
@@ -453,6 +462,22 @@ de pagini se vedea întreg, fără clic pe linkul plătit, iar „Copiază și m
 doar după clicul care deschide linkul plătit — oriunde altundeva, `maskCod` sau `CuponInteractiv`, iar
 garda caută codurile active în textul articolelor. Și: când schimbi cheia unui istoric (codul intră în cheie),
 unește intrările vechi, altfel aceeași ofertă apare de două ori — o dată ca „trecută”.
+
+### 18.10.2026 — granița de țară, a treia formă: PROMOȚIA, nu magazinul
+
+Articolul `cod-reducere-vidaxl-octombrie-2026` lista pe site-ul românesc „Абонирайте се за нашия бюлетин…
+отстъпка от 10 лв.” și „10% намаление”. Granița de țară fusese reparată de două ori, ambele la nivel de
+MAGAZIN: 16.09 (varianta străină a unui magazin .ro, `taraDomeniu.ts` + merge) și 19.09 (programul Impact
+care nu acoperă România, `ShippingRegions`). O rețea dă însă campania cu promoțiile TUTUROR piețelor ei
+(2Performant e în RO, BG și HU; Impact e global). Măsurat pe output.json: **7 promoții pe 3 magazine, toate
+cu articol** — vidaxl.bg (bulgară, leva), ikier.com (4 oferte ale magazinului din Mexic, în pesos), italki.com
+(pagina germană); plus 8 intrări în istoric (una franceză, insotel). Magazinul NU se scoate: vidaxl.bg are
+în aceeași campanie promoții românești (OFERTE01), ikier.com coduri în engleză pentru EU.
+**Regula:** `promotii.pentru_alta_piata()` (alfabet chirilic/grecesc, moneda altei țări lângă o sumă,
+cuvinte care nu există în română/engleză), în `curata_promotii` (sursa), în `istoric_promotii.titlu_publicabil`
+(tot istoricul) și în `verifica_promotii.py` — pe output.json ȘI pe textul articolelor de magazin. Engleza,
+EUR, USD rămân (magazinele internaționale cu livrare în România). Capcana prinsă de test înainte de commit:
+„CAD10” e un cod de cupon, nu 10 dolari canadieni — moneda trebuie să fie separată de sumă.
 
 ## 11. Măsoară înainte să tai, și înainte să repari
 
