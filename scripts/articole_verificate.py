@@ -2744,6 +2744,94 @@ regulile de retur:
 )
 
 
+# ─── Jucarii online (27.10.2026) ──────────────────────────────────────────────────────────────────
+# Vechiul articol: „cel mai mare lant specializat in jucarii din Romania" (ultima cifra publica gasita e din 2016),
+# „reduceri de 30-50% la LEGO" de Black Friday si „-40-70%" dupa Craciun (inventate), „cumpara LEGO in pachete
+# mari — pretul per piesa e mai mic" (neverificat). Aici: ce trebuie sa scrie pe pagina produsului (GPSR), de la cine
+# cumperi pe un marketplace (OUG 58/2022), Safety Gate si returul; jucariile de azi raman sub articol (`jucarii-copii`).
+articol(
+    "jucarii-online-romania-2026",
+    "Jucării online 2026: de unde cumperi și ce verifici",
+    "Ce trebuie să scrie pe pagina unei jucării vândute online, ce se schimbă când cumperi de la o persoană fizică "
+    "pe un marketplace și unde vezi dacă o jucărie a fost semnalată ca periculoasă în UE.",
+    "Copii",
+    f"""
+## Jucării online în 2026: ce verifici înainte să cumperi
+
+O jucărie cumpărată online n-o poți ține în mână înainte. Contează deci ce scrie pe pagina produsului și de la
+cine cumperi. Mai jos sunt regulile care te ajută, iar la final jucăriile de azi de la magazinele partenere, cu
+prețul actual.
+
+{CUM_AM_ALES_GHID}
+
+## Ce trebuie să scrie pe pagina produsului
+
+Din 13 decembrie 2024, regulamentul european privind siguranța produselor (UE 2023/988) cere ca oferta online să
+arate clar:
+
+- **producătorul** — numele sau marca și o adresă poștală și una electronică la care poate fi contactat;
+- **o persoană responsabilă în UE**, cu aceleași date, când producătorul e din afara Uniunii;
+- **datele care identifică produsul**, inclusiv o fotografie;
+- **avertismentele și informațiile de siguranță.**
+
+Dacă pagina unei jucării nu spune cine o produce și cum îl contactezi, ai un motiv bun să cauți în altă parte.
+
+## De la cine cumperi pe un marketplace
+
+Pe un marketplace, contractul îl ai cu vânzătorul, nu cu platforma. Din 28 mai 2022 (OUG 58/2022), platforma
+trebuie să-ți spună dacă vânzătorul e profesionist.
+**Dacă e o persoană fizică, nu mai ai protecția legii consumatorului** — de exemplu, dreptul de retur de 14 zile —
+iar platforma trebuie să te avertizeze explicit.
+
+## Siguranța
+
+- **Vârsta de pe cutie.** Avertismentul „Nu este potrivit pentru copii sub 36 de luni” înseamnă de obicei piese
+  mici, care se pot înghiți; e cerut de legea UE a jucăriilor (Directiva 2009/48/CE). Pe vârste, ce se potrivește:
+  [jucării educative](/blog/cele-mai-bune-jucarii-educative-2026).
+- **Marcajul CE** e obligatoriu pe jucăriile vândute în UE.
+- **Alertele europene.** Safety Gate este sistemul UE de alertă rapidă pentru produsele periculoase (altele decât
+  alimentele). În 2025 a primit 4.671 de alerte, cel mai mare număr de până acum, iar cosmeticele și jucăriile au
+  fost împreună peste jumătate din cazuri. Alertele sunt publice: caută marca și modelul pe
+  [portalul Safety Gate](https://ec.europa.eu/safety-gate-alerts/) înainte să cumperi de la un vânzător pe care nu-l
+  cunoști.
+
+## Returul
+
+La un magazin online ai 14 zile să returnezi produsul fără să explici de ce, socotite din ziua în care primești
+coletul (OUG 34/2014, art. 9). Jucăriile cumpărate devreme pentru Crăciun ies deci din termenul de retur înainte
+să fie desfăcute. Ce cadouri nu se mai pot returna deloc și cum îți planifici cumpărăturile: [ghidul cadourilor de
+Crăciun](/blog/idei-cadouri-craciun-2026).
+
+## Când cumperi
+
+- Black Friday: la eMAG pe 6 noiembrie 2026; la evoMAG din 29 octombrie până pe 15 noiembrie. Calendarul
+  partenerilor e pe [pagina de Black Friday](/black-friday).
+- O reducere e reală când prețul nou e sub cel mai mic preț din ultimele 30 de zile — e și prețul anterior pe care
+  magazinul trebuie să-l afișeze (HG 686/2022). Produsele partenerilor aflate azi sub minimul din 30 de zile sunt pe
+  [Reduceri reale](/reduceri-reale).
+
+[Vezi magazinele pentru copii →](/categorii/copii)
+""",
+    [
+        "https://webgate.ec.europa.eu/safety/consumers/consumers_safety_gate/obligationsForBusinesses/documents/GPSR-Presentation-website.pdf "
+        "(Comisia Europeana: GPSR, vanzari la distanta — producator, adresa postala si electronica, persoana responsabila, identificare, avertismente)",
+        "https://www.xictron.com/en/blog/gpsr-product-safety-regulation-online-shop-2026/ (GPSR aplicabil din 13.12.2024, art. 19)",
+        "https://bpv-grigorescu.com/latest/publications/major-changes-to-online-marketplaces-and-retailers-relationship-with-consumers "
+        "(OUG 58/2022, in vigoare din 28.05.2022: marketplace-ul spune daca vanzatorul e profesionist; daca nu, fara protectia consumatorului)",
+        "https://taxnews.ro/2022/05/17/?print=pdf (OUG 58/2022, obligatia de informare a platformelor)",
+        "https://commission.europa.eu/news-and-media/news/increased-action-against-dangerous-products-eu-2025-2026-03-09_en "
+        "(Safety Gate 2025: 4.671 de alerte, record; cosmeticele si jucariile peste jumatate)",
+        "https://ec.europa.eu/safety-gate-alerts/ (portalul public Safety Gate)",
+        "https://www.legislation.gov.uk/eudr/2009/48/chapter/III (Directiva 2009/48/CE, avertismentul pentru sub 36 de luni, marcajul CE)",
+        "https://legeaz.net/monitorul-oficial-427-2014/oug-34-2014-drepturile (OUG 34/2014, art. 9 — 14 zile de la primirea produselor)",
+        "https://www.romania-insider.com/romanias-largest-online-retailer-emag-announces-date-black (Black Friday eMAG, 06.11.2026)",
+        "https://www.wall-street.ro/articol/retail/black-friday-2026-in-romania-calendarul-magazinelor.html (evoMAG 29.10-15.11.2026)",
+        "https://gadget.ro/de-azi-28-mai-comerciantii-sunt-obligati-sa-afiseze-in-cazul-reducerilor-ofertelor-si-cel-mai-mic-pret-practicat-in-ultimele-30-de-zile/ (HG 686/2022)",
+    ],
+    data="2026-10-27",
+)
+
+
 # ─── Scriere si verificari ────────────────────────────────────────────────────────────────────────
 INTERZISE = [
     (re.compile(r"\b\d[\d.]*\s?(?:lei|RON|€|EUR)\b|~\s?\d"), "pret scris in articol"),
