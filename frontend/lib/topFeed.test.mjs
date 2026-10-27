@@ -61,7 +61,14 @@ verifica("carucior tip vagon pentru gradina nu e carucior de copil", intra("caru
 verifica("carucior sport intra", intra("carucioare", "Carucior sport, Lionelo, Cloe Plus, Cu accesorii, Cadru din aluminiu", 994.99), true);
 verifica("camera auto SPATE e accesoriu, nu dashcam", intra("camere-auto", "Camera auto spate 70mai RC22 Rear Camera - Default Title", 139), false);
 verifica("dashcam intra", intra("camere-auto", "Camera auto 70mai Dash Cam M310 Plus, rezolutie camera 3K", 279), true);
+verifica("set cadou parfum intra", intra("seturi-cadou", "Set cadou La Rive Colossus pentru barbati - Apa de toaleta 90 ml si deodorant 150 ml", 55), true);
+verifica("gift set in engleza intra", intra("seturi-cadou", "Olay Gift Set Retinol 24 & Vitamin C set cadou pentru strălucirea pielii", 263), true);
+verifica("bonus „+ Balsam Cadou” la detergent nu e set cadou", intra("seturi-cadou", "Pachet Detergent MIX Mini - 3x3L + Balsam Cadou, 3x Ocean Blue", 129), false);
+verifica("cutia de cadou e ambalaj, nu set", intra("seturi-cadou", "Cutie cadou magnetică de Crăciun cu fundă, 24x17,5x10,5 cm - roșu", 24.99), false);
+verifica("pungile de cadou sunt ambalaj", intra("seturi-cadou", "Set Pungi Cadou Octombrie", 50), false);
+verifica("cos cadou cu alcool nu e set cadou", intra("seturi-cadou", "Coș Cadou Premium Golden Prestige – Moët & Chandon, Hennessy", 1499), false);
 verifica("articol -> tema", temaArticol("cel-mai-bun-smartwatch-2026")?.tema, "smartwatch-uri");
+verifica("ghidul de cadouri -> seturi cadou", temaArticol("idei-cadouri-craciun-2026")?.tema, "seturi-cadou");
 verifica("articol fara tema -> null", temaArticol("cea-mai-buna-drona-2026"), null);
 verifica("fiecare articol mapat are o regula", Object.values(ARTICOLE_TEME).every((t) => REGULI_TEME[t.tema]), true);
 verifica("tema fara regula nu primeste nimic", produseTema("televizoare", [{ title: "Televizor LED Samsung 55", price: 2500, url: "x", merchant_slug: "m.ro" }], platit, urmarit).length, 0);

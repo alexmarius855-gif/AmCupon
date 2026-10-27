@@ -100,6 +100,10 @@ export const REGULI_TEME: Record<string, RegulaTema> = {
   "creme-antirid": { include: /^crema\b.*\b(antirid|anti-rid|anti riduri|antiaging|anti-aging|riduri)\b/, exclude: /\b(maini|picioare|corp)\b/, pretMin: 20 },
   "fond-de-ten": { include: /^fond de ten\b/, exclude: /\b(burete|pensula)\b/, pretMin: 20 },
   "vitamine-minerale": { include: /\b(vitamina [a-z0-9]+|vitamine|multivitamin\w*|zinc|magneziu|omega[ -]?3|seleniu)\b.*\b(capsule|tablete|comprimate|picaturi|plicuri|jeleuri|softgel\w*|gummies)\b/, exclude: /\b(ser|crema|masca|caine|caini|pisica|pisici|bomboane|dropsuri|sampon|par|unghii|bratara|baterie|copii|ursuleti|animale)\b/, pretMin: 15 },
+  // 27.10.2026, calibrat pe feed: „cadou" singur prinde „Detergent ... + Balsam Cadou", „Carburator ... + Bujie
+  // Cadou" (bonus la comanda) si ambalajele („Cutie cadou", „Punga Cadou", „Împachetare cadou"); se cere „set
+  // cadou" / „gift set". Cosurile cu alcool (casa-bucuriei.ro, „Coș Cadou ... Hennessy") nu intra: nu sunt „set".
+  "seturi-cadou": { include: /\b(set(uri)?( de)? cadou|gift set)\b/, exclude: /\b(pungi|punga|cutie|cutii|ambalare|ambalaj|impachetare|hartie|felicitar\w*|gravide)\b/, pretMin: 30 },
 };
 
 export interface TemaArticol {
@@ -149,6 +153,7 @@ export const ARTICOLE_TEME: Record<string, TemaArticol> = {
   "cea-mai-buna-hrana-pentru-caini": { tema: "hrana-caini" },
   "cea-mai-buna-crema-antirid": { tema: "creme-antirid" },
   "cel-mai-bun-fond-de-ten": { tema: "fond-de-ten" },
+  "idei-cadouri-craciun": { tema: "seturi-cadou" },
 };
 
 /** Tema unui articol dupa slug („cel-mai-bun-smartwatch-2026" -> smartwatch-uri), sau null. */
@@ -206,6 +211,7 @@ export const NUME_TEME: Record<string, string> = {
   "hrana-caini": "hrană pentru câini",
   "creme-antirid": "creme antirid",
   "fond-de-ten": "fonduri de ten",
+  "seturi-cadou": "seturi cadou",
 };
 
 /** Numele in fraza; pentru o tema noua, fara intrare, eticheta cu prima litera mica. */

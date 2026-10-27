@@ -153,13 +153,15 @@ ARTICOLE: list[dict] = []
 SURSE: dict[str, list[str]] = {}
 
 
-def articol(slug: str, title: str, excerpt: str, category: str, content: str, surse: list[str]) -> None:
+def articol(slug: str, title: str, excerpt: str, category: str, content: str, surse: list[str],
+            data: str = DATA) -> None:
     """`MODELE[slug]` (mai jos) devine `oferte_modele`: sub titlul fiecarui model, pagina arata oferta
-    de azi de la un partener cu link platit, daca exista (frontend/lib/oferteTema.ts::ofertaModel)."""
+    de azi de la un partener cu link platit, daca exista (frontend/lib/oferteTema.ts::ofertaModel).
+    `data` = ziua in care a fost scris articolul (implicit DATA, prima serie)."""
     ARTICOLE.append({
         "slug": slug,
         "title": title,
-        "date": DATA,
+        "date": data,
         "excerpt": excerpt,
         "category": category,
         "tip": "best-of",
@@ -167,7 +169,7 @@ def articol(slug: str, title: str, excerpt: str, category: str, content: str, su
         "cover": f"/blog-covers/{slug}.png",
         "content": content.strip() + "\n",
         # citit de app/blog/[slug]/page.tsx: nota de sub titlu spune data reala, nu „mai–iunie 2026"
-        "surse_din": DATA,
+        "surse_din": data,
         "oferte_modele": MODELE.get(slug, []),
     })
     SURSE[slug] = surse
@@ -2638,6 +2640,110 @@ Contribuie la funcționarea normală a sistemului imunitar și a glandei tiroide
 )
 
 
+# ─── Cadouri de Craciun (27.10.2026) ──────────────────────────────────────────────────────────────
+# Vechiul articol (generat in iunie): „Buget 50-5000 lei", preturi pe fiecare idee, modele pe care partenerii nu le
+# au (Galaxy Tab S9, PS5, Xbox), „Pandora, Tous la preturi accesibile" si promisiunea „codurile de reducere active".
+# Aici: regulile care conteaza la un cadou cumparat cu saptamani inainte (retur 14 zile de la livrare, exceptiile
+# pentru personalizate si sigilate), calendarul Black Friday cu sursa si trimiteri spre ghidurile rescrise; sub
+# articol, seturile cadou de azi de la parteneri (tema `seturi-cadou`, frontend/lib/topFeed.ts).
+articol(
+    "idei-cadouri-craciun-2026",
+    "Idei de cadouri de Crăciun 2026: ghid pe persoane",
+    "Ce să alegi pentru ea, pentru el, pentru copii și pentru părinți, când să cumperi ca să prinzi Black Friday și "
+    "ce cadouri nu se mai pot returna după ce le desfaci.",
+    "Ghiduri",
+    f"""
+## Idei de cadouri de Crăciun în 2026
+
+Un cadou bun pornește de la omul care îl primește: ce folosește zilnic, ce îi lipsește, ce și-ar cumpăra singur
+dacă n-ar fi scump. Mai jos sunt idei pe persoane, cu trimiteri la ghidurile noastre pe fiecare categorie. La final
+găsești seturile cadou de azi de la magazinele partenere, cu prețul actual.
+
+{CUM_AM_ALES_GHID}
+
+## Înainte să cumperi: returul
+
+Cadourile se cumpără cu săptămâni înainte, iar cine le primește le desface abia de Crăciun. De aceea contează
+regulile de retur:
+
+- **14 zile de la primirea coletului.** La cumpărăturile online ai 14 zile să te retragi din contract, fără să
+  explici de ce (OUG 34/2014, art. 9). Termenul curge din ziua în care intri în posesia produsului, nu din ziua
+  comenzii. Un colet primit pe 10 noiembrie se poate returna până pe 24 noiembrie — cu o lună înainte de Crăciun.
+- **Returul îl face cel care a cumpărat.** Contractul e al tău, nu al celui care primește cadoul.
+- **Produsele personalizate nu se returnează.** Cele „confecționate după specificațiile prezentate de consumator
+  sau personalizate în mod clar” sunt o excepție de la dreptul de retragere (art. 16 lit. c). Citește de două ori
+  numele și data înainte să trimiți comanda. Mai multe în [ghidul cadourilor personalizate](/blog/cadouri-personalizate-idei-verificate).
+- **Produsele sigilate, odată desfăcute.** Tot excepție sunt produsele sigilate care nu pot fi returnate din
+  motive de sănătate sau de igienă, dacă le-ai desigilat (art. 16 lit. e). La un parfum sau la o cremă, citește
+  politica de retur a magazinului înainte să desfaci folia.
+- Dacă un magazin dă un termen de retur mai lung decât cel legal, îl scrie în termenii și condițiile lui.
+
+## Black Friday: cumperi mai devreme, dar verifici reducerea
+
+- **Datele de anul acesta:** la eMAG, Black Friday e pe 6 noiembrie 2026; la evoMAG, campania ține din 29
+  octombrie până pe 15 noiembrie. Calendarul partenerilor noștri e pe [pagina de Black Friday](/black-friday).
+- **O reducere e reală când prețul nou e sub cel mai mic preț din ultimele 30 de zile.** Din mai 2022, un magazin
+  care anunță o reducere trebuie să afișeze ca preț anterior cel mai mic preț practicat de el în ultimele 30 de
+  zile (HG 686/2022). Produsele partenerilor care sunt azi sub minimul lor din 30 de zile le găsești pe
+  [Reduceri reale](/reduceri-reale), din istoricul nostru de prețuri.
+
+## Pentru ea
+
+- **Parfum** — când știi ce poartă deja. Ce înseamnă concentrațiile și alergenii de pe ambalaj: [cel mai bun parfum
+  de damă](/blog/cel-mai-bun-parfum-femei-2026). Prețurile de azi: [parfumuri de damă](/top/parfumuri-femei).
+- **Set cadou de îngrijire** — când nu-i știi parfumul, un set cu cremă, gel de duș sau loțiune e o alegere mai
+  puțin riscantă. Seturile de azi sunt la finalul articolului.
+- **Bijuterii din argint** — [bijuteriile din argint ale partenerilor](/top/bijuterii-argint).
+- **Geantă** — [cum alegi o geantă](/blog/cele-mai-bune-genti-dama-2026) și [genți de damă](/top/genti-dama).
+- **Ser de față** — doar dacă știi ce folosește. Ce face fiecare ingredient: [ser de față](/blog/cel-mai-bun-ser-fata-2026).
+
+## Pentru el
+
+- **Parfum** — [cel mai bun parfum pentru bărbați](/blog/cel-mai-bun-parfum-barbati-2026) și
+  [prețurile de azi](/top/parfumuri-barbati).
+- **Căști wireless** — [ghidul căștilor wireless](/blog/cele-mai-bune-casti-wireless-2026).
+- **Smartwatch** — întâi uită-te la telefonul lui: Apple Watch cere iPhone, iar Galaxy Watch merge doar cu
+  Android. Restul în [ghidul smartwatch-urilor](/blog/cel-mai-bun-smartwatch-2026).
+- **Power bank** — pentru cine călătorește; ce capacitate e voie în avion: [ghidul power bank](/blog/cel-mai-bun-power-bank-2026).
+- **Pantofi sport** — doar dacă îi știi mărimea: [adidași](/blog/cele-mai-bune-adidasi-2026).
+
+## Pentru copii
+
+- **Jucăria potrivită vârstei.** Avertismentul „Nu este potrivit pentru copii sub 36 de luni” înseamnă de obicei
+  piese mici, care se pot înghiți; e cerut de legea UE a jucăriilor (Directiva 2009/48/CE). Pe vârste:
+  [jucării educative](/blog/cele-mai-bune-jucarii-educative-2026). Prețurile de azi: [jucării](/top/jucarii-copii).
+- **Marcajul CE** e obligatoriu pe jucăriile vândute în UE.
+- **Cărți** — la librăriile online partenere: [cărți](/carti).
+
+## Pentru părinți și bunici
+
+- **Aparate care scutesc timp:** [friteuză cu aer cald](/blog/cea-mai-buna-friteuza-aer-2026),
+  [aspirator robot](/blog/cel-mai-bun-aspirator-robot-2026), [mașină de cafea](/blog/cea-mai-buna-masina-de-cafea-2026).
+- **Un televizor mai vechi devine smart** cu un stick: [cel mai bun stick Smart TV](/blog/cel-mai-bun-stick-smart-tv-2026).
+
+## Pentru cine „are tot”
+
+- **Ceva care se consumă:** cafea, ceai, dulciuri, cosmetice. Nu ocupă loc și se termină.
+- **Timp împreună:** o ieșire, un spectacol, o excursie scurtă.
+- **Un set cadou** din lista de mai jos.
+
+[Toate ideile de cadouri de Crăciun, cu ofertele de azi →](/cadouri/craciun)
+""",
+    [
+        "https://legeaz.net/monitorul-oficial-427-2014/oug-34-2014-drepturile (OUG 34/2014: art. 9 — 14 zile de la "
+        "intrarea in posesia produselor; art. 16 lit. c — produse personalizate; lit. e — produse sigilate desigilate)",
+        "https://gadget.ro/de-azi-28-mai-comerciantii-sunt-obligati-sa-afiseze-in-cazul-reducerilor-ofertelor-si-cel-mai-mic-pret-practicat-in-ultimele-30-de-zile/ "
+        "(HG 686/2022, in vigoare din 28.05.2022: pretul anterior = cel mai mic din ultimele 30 de zile)",
+        "https://www.romania-insider.com/romanias-largest-online-retailer-emag-announces-date-black (Black Friday eMAG, 06.11.2026)",
+        "https://www.wall-street.ro/articol/retail/black-friday-2026-in-romania-calendarul-magazinelor.html (evoMAG 29.10-15.11.2026)",
+        "https://www.apple.com/watch/compare/ (nota 1: Apple Watch Series 12, Ultra 4 si SE 3 cer iPhone 11 sau mai nou)",
+        "https://www.samsung.com/sg/mobile/mobile-phone-buying-guide/galaxy-watch9-watch-ultra2-specs-features/ (Galaxy Watch: Android)",
+        "https://www.legislation.gov.uk/eudr/2009/48/chapter/III (Directiva 2009/48/CE, avertismentul pentru sub 36 de luni, marcajul CE)",
+    ],
+    data="2026-10-27",
+)
+
+
 # ─── Scriere si verificari ────────────────────────────────────────────────────────────────────────
 INTERZISE = [
     (re.compile(r"\b\d[\d.]*\s?(?:lei|RON|€|EUR)\b|~\s?\d"), "pret scris in articol"),
@@ -2650,7 +2756,11 @@ INTERZISE = [
 
 def probleme(a: dict) -> list[str]:
     text = f"{a['title']}\n{a['excerpt']}\n{a['content']}"
-    gasite = [f"{a['slug']}: {motiv}: {m.group(0)!r}" for rx, motiv in INTERZISE for m in [rx.search(text)] if m]
+    # 27.10.2026: adresa unui link nu e o afirmatie („/blog/cadouri-personalizate-idei-verificate" e slug-ul altui
+    # articol). Cuvintele se cauta in textul citit; doar regula de link (/cod-reducere/) se uita la adrese.
+    citit = re.sub(r"\]\([^)\s]*\)", "]", text)
+    gasite = [f"{a['slug']}: {motiv}: {m.group(0)!r}" for rx, motiv in INTERZISE
+              for m in [rx.search(text if "link" in motiv else citit)] if m]
     if len(a["title"]) > 60:
         gasite.append(f"{a['slug']}: titlu de {len(a['title'])} caractere (max 60)")
     titluri = [l[4:] for l in a["content"].split("\n") if l.startswith("### ")]
@@ -2689,6 +2799,14 @@ def test() -> int:
     if len(probleme(rau)) < 3:
         esecuri += 1
         print("  PICA  regulile nu prind articolul gresit:", probleme(rau))
+    # adresa unui link nu e o afirmatie, dar textul linkului da; linkul spre /cod-reducere/ ramane prins
+    cu_link = {"slug": "y", "title": "y", "excerpt": "y", "content": "[ghid](/blog/idei-verificate) "
+               "[magazin](/cod-reducere/x.ro) [produse verificate](/blog/z)"}
+    SURSE["y"] = ["z"]
+    motive = sorted(p.split(": ")[1] for p in probleme(cu_link))
+    if motive != ["link spre pagina de magazin (se verifica la generare, nu aici)", "promisiune de testare/verificare"]:
+        esecuri += 1
+        print("  PICA  regulile pe linkuri:", motive)
     print(f"\n{esecuri} ESECURI" if esecuri else "TOATE TREC")
     return 1 if esecuri else 0
 

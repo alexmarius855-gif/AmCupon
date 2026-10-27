@@ -21,6 +21,12 @@ spun moneda (API-ul da `price` fara valuta). Pe site: „Shark FlexStyle ... 319
 are dovada ca vinde in lei — `currency=` din link (decide singur), `MONEDA_VERIFICATA` (de mana, cu sursa), domeniu .ro,
 marcaj RO in link, sau >= 15% titluri in romana. Altfel produsele CU PRET nu se publica (promo-produsele raman).
 Test: `python scripts/test_reguli_produse.py`. Tot azi: ramura `claude/promotii-alta-limba` (18.10) unita in main.
+**Ghidul de cadouri de Craciun rescris** (`articole_verificate.py`, `data=` noua pe `articol()`): retur 14 zile de la
+livrare + exceptiile personalizate/sigilate (OUG 34/2014 art. 9, 16 c/e), Black Friday cu sursa, HG 686/2022, trimiteri
+spre ghidurile rescrise; sub articol tema noua `seturi-cadou` (topFeed.ts: „set cadou"/„gift set", fara ambalaje, bonusuri
+„+ X cadou" si cosuri cu alcool). Partenerii au jucarii/parfumuri/seturi cadou/carti, NU electronice (tablete, PC gaming,
+roboti de bucatarie: ~0 produse) — de-aia ghidurile de cadouri inaintea celor de electronice. `probleme()` cauta cuvintele
+interzise in textul citit, nu in adresele linkurilor (slug-ul `cadouri-personalizate-idei-verificate`).
 
 **UPDATE 26.10.2026 — `/reduceri-reale` + calendarul Black Friday al partenerilor:** pagina noua (server) din
 `public/scaderi-pret.json`: produsele cu pretul de azi >= 10% sub minimul din 30 de zile (istoric propriu din 07.10,
