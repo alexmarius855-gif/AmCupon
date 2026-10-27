@@ -1504,6 +1504,19 @@ def main():
         print(f"  - scoase {len(_corupte)} produse cu pret sub 1 leu (pret unitar din bax), ex.: "
               f"{'; '.join((p.get('title') or '?')[:32] for p in _corupte[:3])}")
 
+    # ── Preturi in alta moneda (27.10.2026) ───────────────────────────────────
+    # Feed-ul nu spune moneda; afisat „319,99 lei", un pret in euro minte de cinci ori. Produsele CU PRET
+    # ale magazinelor fara dovada ca vand in lei nu se publica (regula si dovezile: reguli_produse.py).
+    from reguli_produse import preturi_in_alta_moneda
+    _straine = preturi_in_alta_moneda(all_products)
+    if _straine:
+        all_products = [p for p in all_products
+                        if not ((p.get("price") or 0) > 0
+                                and (p.get("merchant_slug") or p.get("merchant") or "").lower().rstrip("/") in _straine)]
+        _lista = ", ".join(f"{s} ({m or '?'})" for s, (m, _) in sorted(_straine.items()))
+        print(f"  - scoase {sum(n for _, n in _straine.values())} produse cu pretul in alta moneda sau moneda "
+              f"necunoscuta: {_lista}")
+
     # ── Titluri curate, pentru TOATE paginile (06.10.2026) ────────────────────
     # 1.940 de produse se terminau in „ - Default Title" (Shopify, cand produsul n-are variante) si
     # 35 aveau entitati HTML („&amp;", „&quot;") — afisate asa pe prima pagina, pe /produse si pe

@@ -179,6 +179,16 @@ def verifica_date() -> dict:
         semnaleaza("preturi corupte",
                    f"{len(sub1)} produse sub 1 leu — verifica feed-ul sursa", sub1)
 
+    # 5a. Pret in alta moneda afisat in lei (27.10.2026): „Shark FlexStyle ... 319,99 lei" era in euro.
+    #     Regula e in reguli_produse.py, aceeasi pe care o aplica fetch_product_feeds.py.
+    from reguli_produse import preturi_in_alta_moneda
+    straine = preturi_in_alta_moneda(produse)
+    stare["produse_alta_moneda"] = sum(n for _, n in straine.values())
+    if straine:
+        semnaleaza("pret in alta moneda",
+                   f"{stare['produse_alta_moneda']} produse afisate in lei de la magazine fara dovada ca vand in lei",
+                   [f"{s}: {n} produse ({m or 'moneda necunoscuta'})" for s, (m, n) in sorted(straine.items())])
+
     # 5b. Pret pe o PROMOTIE (07.10.2026). Promo-produsele (`is_promo`) n-au pret de produs:
     #     numarul cu „lei" din textul ofertei e pragul comenzii, valoarea voucherului sau suma
     #     maxima de discount, iar un „pret vechi" calculat din procent e inventat. Vezi

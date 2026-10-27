@@ -12,6 +12,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 27.10.2026 — preturi in ALTA MONEDA afisate in lei, scoase la sursa:** feed-urile 2Performant nu
+spun moneda (API-ul da `price` fara valuta). Pe site: „Shark FlexStyle ... 319,99 lei" pe
+`/cod-reducere/cloud10beauty.com` (linkurile au `currency=eur` — ~1.590 lei real), puloverele iclothing.com
+(Irlanda), sculele sklep.evolutionpowertools.com (Polonia, titluri in poloneza), plus magazinul de TEST 2Performant
+(„[DEMO]", testingshop.demo.ro) si bigiottos.com (numere in loc de titluri). Regula in `reguli_produse.py::moneda_magazin`
+(folosita de `fetch_product_feeds.py` SI de garda `verifica_site.py`, punctul 5a): pretul se publica doar cand magazinul
+are dovada ca vinde in lei — `currency=` din link (decide singur), `MONEDA_VERIFICATA` (de mana, cu sursa), domeniu .ro,
+marcaj RO in link, sau >= 15% titluri in romana. Altfel produsele CU PRET nu se publica (promo-produsele raman).
+Test: `python scripts/test_reguli_produse.py`. Tot azi: ramura `claude/promotii-alta-limba` (18.10) unita in main.
+
 **UPDATE 26.10.2026 — `/reduceri-reale` + calendarul Black Friday al partenerilor:** pagina noua (server) din
 `public/scaderi-pret.json`: produsele cu pretul de azi >= 10% sub minimul din 30 de zile (istoric propriu din 07.10,
 `scripts/istoric_preturi.py`) + `statistici` agregate (scumpite / ieftinite / neschimbate fata de pretul de acum 30
