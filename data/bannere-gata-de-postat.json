@@ -1,5 +1,31 @@
 [
   {
+    "id": 273593,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273552/original/273552.JPG",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=f1d32f0b0&aff_code=541547473&campaign_unique=9a6f02fef",
+    "landing_raw": "https://www.libris.ro/lp/targcraciunviena",
+    "width": 969,
+    "height": 968,
+    "merchant": "libris.ro ",
+    "merchant_slug": "libris-ro",
+    "name": "Ce zici de o Vacanță CADOU la Târgul de Crăciun din Viena?",
+    "category": "Ce zici de o Vacanță CADOU la Târgul de Crăciun din Viena?",
+    "b_type": "image"
+  },
+  {
+    "id": 273589,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273548/original/273548.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=4f11fd5a2&aff_code=541547473&campaign_unique=9617003d6",
+    "landing_raw": "https://nemira.ro/black-friday",
+    "width": 840,
+    "height": 840,
+    "merchant": "nemira.ro ",
+    "merchant_slug": "nemira-ro",
+    "name": "Black Friday cu REDUCERI DIN ALTE LUMI pe NEMIRA.RO",
+    "category": "Black Friday cu REDUCERI DIN ALTE LUMI pe NEMIRA.RO",
+    "b_type": "image"
+  },
+  {
     "id": 273577,
     "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273536/original/273536.jpg",
     "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=b3ac835bd&aff_code=541547473&campaign_unique=cc08e2536",
@@ -75,19 +101,6 @@
     "merchant_slug": "edituracasa-ro",
     "name": "Prietena mea Conni",
     "category": "Prietena mea Conni",
-    "b_type": "image"
-  },
-  {
-    "id": 273389,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273348/original/273348.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=64c93a553&aff_code=541547473&campaign_unique=9a6f02fef",
-    "landing_raw": "https://www.libris.ro/lp/happydaysreduceri",
-    "width": 1080,
-    "height": 1080,
-    "merchant": "libris.ro ",
-    "merchant_slug": "libris-ro",
-    "name": "Happy Days la toate rafturile: până la -86%, doar 2 zile",
-    "category": "Happy Days la toate rafturile: până la -86%, doar 2 zile",
     "b_type": "image"
   }
 ]
