@@ -544,8 +544,8 @@
    "magazine": 140
   },
   "2026-10-28": {
-   "promotii": 276,
-   "magazine": 141
+   "promotii": 277,
+   "magazine": 142
   }
  },
  "magazine": {
@@ -654,6 +654,15 @@
    }
   ],
   "afisport.ro": [
+   {
+    "k": "blackfridayafisportro511noiembrie2026|",
+    "titlu": "Black Friday Afisport.ro | 5–11 noiembrie 2026",
+    "cod": false,
+    "prima": "2026-10-28",
+    "ultima": "2026-10-28",
+    "expira": "2026-11-11",
+    "activa": true
+   },
    {
     "k": "extragarantie23anilabicicleteafisportro|",
     "titlu": "Extragarantie 2+3 ani la Biciclete Afisport.ro",

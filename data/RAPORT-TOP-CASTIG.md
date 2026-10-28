@@ -1,5 +1,5 @@
 # 💰 TOP MAGAZINE după POTENȚIAL DE CÂȘTIG
-> Generat automat 27.10.2026 14:20. Pe astea să le împingi (articole, pin-uri, postări).
+> Generat automat 28.10.2026 14:58. Pe astea să le împingi (articole, pin-uri, postări).
 
 **Scor = comision × popularitate × ofertă.** Comisionul mare singur înșală — astea-s banii REALI.
 
@@ -26,15 +26,15 @@
 | 19 | Priveboutique (priveboutique.net) | 15% | 0 | 🏷️ ofertă | 21.0 |
 | 20 | Curteaveche (curteaveche.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
 | 21 | Uniquestore (uniquestore.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 22 | Intimplay (intimplay.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 23 | Avidlove (avidlove.com) | 10% | 0 | ✅ COD | 20.0 |
-| 24 | Cvlife (cvlife.com) | 10% | 0 | ✅ COD | 20.0 |
-| 25 | Billionconnect (billionconnect.net) | 10% | 0 | ✅ COD | 20.0 |
-| 26 | Mooyius (mooyius.com) | 12% | 0 | 🏷️ ofertă | 16.8 |
-| 27 | E Potion (e-potion.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
-| 28 | Zandra (zandra.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
-| 29 | Oleya (oleya.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
-| 30 | Geekbuying (geekbuying.com) | 8% | 0 | ✅ COD | 16.0 |
+| 22 | Duchessenails (duchessenails.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 23 | Intimplay (intimplay.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 24 | Avidlove (avidlove.com) | 10% | 0 | ✅ COD | 20.0 |
+| 25 | Cvlife (cvlife.com) | 10% | 0 | ✅ COD | 20.0 |
+| 26 | Billionconnect (billionconnect.net) | 10% | 0 | ✅ COD | 20.0 |
+| 27 | Mooyius (mooyius.com) | 12% | 0 | 🏷️ ofertă | 16.8 |
+| 28 | E Potion (e-potion.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
+| 29 | Zandra (zandra.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
+| 30 | Oleya (oleya.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
 
 ## 🎯 Cum folosești raportul
 - **Top 10** = prioritate maximă pentru articole „cel mai bun X" + pin-uri Pinterest

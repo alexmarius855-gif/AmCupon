@@ -1,5 +1,44 @@
 [
   {
+    "id": 273748,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273707/original/273707.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=3b0196de5&aff_code=541547473&campaign_unique=7e5ed3049",
+    "landing_raw": "https://afisport.ro/oferte",
+    "width": 627,
+    "height": 627,
+    "merchant": "afisport.ro",
+    "merchant_slug": "afisport-ro",
+    "name": "Black Friday ”26",
+    "category": "Black Friday ”26",
+    "b_type": "image"
+  },
+  {
+    "id": 273745,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273704/original/273704.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=a69bcd293&aff_code=541547473&campaign_unique=573b44539",
+    "landing_raw": "https://www.aosom.ro/activity/black-friday",
+    "width": 1200,
+    "height": 1200,
+    "merchant": "aosom.ro ",
+    "merchant_slug": "aosom-ro",
+    "name": "BLACK FRIDAY",
+    "category": "BLACK FRIDAY",
+    "b_type": "image"
+  },
+  {
+    "id": 273610,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273569/original/273569.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=496d2015b&aff_code=541547473&campaign_unique=a26cc7ec7",
+    "landing_raw": "https://duchessenails.ro/",
+    "width": 1080,
+    "height": 1080,
+    "merchant": "duchessenails.ro/",
+    "merchant_slug": "duchessenails-ro",
+    "name": "Black Friday 2026",
+    "category": "Black Friday 2026",
+    "b_type": "image"
+  },
+  {
     "id": 273593,
     "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273552/original/273552.JPG",
     "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=f1d32f0b0&aff_code=541547473&campaign_unique=9a6f02fef",
@@ -75,32 +114,6 @@
     "merchant_slug": "libris-ro",
     "name": "CADOU Laptop MacBook Neo!Plasează comanda și intră în concurs!",
     "category": "CADOU Laptop MacBook Neo!Plasează comanda și intră în concurs!",
-    "b_type": "image"
-  },
-  {
-    "id": 273420,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273379/original/273379.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=36d191ea4&aff_code=541547473&campaign_unique=5baacfa1f",
-    "landing_raw": "https://www.f64.ro/halloween",
-    "width": 1080,
-    "height": 1080,
-    "merchant": "f64.ro",
-    "merchant_slug": "f64-ro",
-    "name": "Halloween",
-    "category": "Halloween",
-    "b_type": "image"
-  },
-  {
-    "id": 273403,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273362/original/273362.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=4d06c561f&aff_code=541547473&campaign_unique=54d396a54",
-    "landing_raw": "https://www.edituracasa.ro/carti-pentru-copii/prietena-mea-conni",
-    "width": 800,
-    "height": 800,
-    "merchant": "edituracasa.ro/ ",
-    "merchant_slug": "edituracasa-ro",
-    "name": "Prietena mea Conni",
-    "category": "Prietena mea Conni",
     "b_type": "image"
   }
 ]
