@@ -707,7 +707,7 @@
         "descriere": "Get 20% off on up to 5 (five) Shared Hosting, WordPress Hosting, Website, Website + Marketing, or Ecommerce units. Annual plans include a free .com, .org, .info, .biz, or .us domain (Premium domains excluded). Offer cannot be combined with other coupons or offers. All plans renew automatically to the card on file; cancel any time before renewal via your billing center, phone, or chat. Enter promo code HOSTING20 at checkout if you do not see the promo code applied. Promo valid until 12/31/2027 ‌a",
         "cod_cupon": "HOSTING20",
         "landing_page": "https://www.domain.com/partner/hosting?promo=HOSTING20",
-        "zile_ramase": 795,
+        "zile_ramase": 794,
         "expira": "2028-12-31",
         "sursa": "impact_deals_api"
       },
@@ -716,7 +716,7 @@
         "descriere": "Get 20% off on up to 5 (five) domains (.com, .org, .info, .biz, or .net only) for 1 (one) and 2 (two) year terms. Exclusions premium domains. Additional exclusions may apply. Promotional pricing cannot be combined with other coupons or offers. All plans renew automatically to the card on file; cancel any time before billing via your renewal center, phone, or chat. Enter promo code DOMAIN20 at checkout if you do not see the promo code applied. Promo valid until 12/31/2027 ‌at 11‌:‌59‌:‌59PM EST.",
         "cod_cupon": "DOMAIN20",
         "landing_page": "https://www.domain.com/name-search?promo=DOMAIN20",
-        "zile_ramase": 795,
+        "zile_ramase": 794,
         "expira": "2028-12-31",
         "sursa": "impact_deals_api"
       },
@@ -725,7 +725,7 @@
         "descriere": "Get 20% off one- and two-year SSL certificates (excluding UCC), up to 5 total. Discount not valid on monthly terms. Services auto-renew to the card on file unless canceled before billing via your renewal center, chat or phone. Use promo code SECURITY20 at checkout if not applied automatically. Promo valid until 12/31/2026 ‌at 11‌:‌59‌:‌59PM EST.",
         "cod_cupon": "SECURITY20",
         "landing_page": "https://www.domain.com/ssl?promo=SECURITY20",
-        "zile_ramase": 795,
+        "zile_ramase": 794,
         "expira": "2028-12-31",
         "sursa": "impact_deals_api"
       },
@@ -734,7 +734,7 @@
         "descriere": "Get 30% off 1 (one) of the following Website builder plans: Website, Website+Marketing, and Ecommerce when you purchase an annual plan. Cannot be combined with other coupons or offers. All plans and products are renewed automatically to the card on file; cancel any time before renewal via your billing center, phone, or chat. Enter promo code NEW30 at checkout if you do not see the promo code applied. Promo valid until December 31st, 20‌27 ‌at ‌11‌‌:‌‌59‌‌:‌‌59‌‌PM ‌E‌ST‌",
         "cod_cupon": "NEW30",
         "landing_page": "https://www.domain.com/ai-website-builder?promo=NEW30",
-        "zile_ramase": 795,
+        "zile_ramase": 794,
         "expira": "2028-12-31",
         "sursa": "impact_deals_api"
       },
@@ -743,7 +743,7 @@
         "descriere": "Use code DOMAIN10. Exclusions apply.",
         "cod_cupon": "DOMAIN10",
         "landing_page": "https://www.domain.com/name-search?promo=DOMAIN10",
-        "zile_ramase": 429,
+        "zile_ramase": 428,
         "expira": "2027-12-31",
         "sursa": "impact_deals_api"
       },
@@ -1005,14 +1005,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 4,
+    "zile_ramase": 3,
     "promotii": [
       {
         "nume": "eufy Robotstofzuiger Omni E28 + eufy Accessories Package",
         "descriere": "EUR384.995 off (36%): EUR684, was EUR1068.99",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t2352g11-1-t290qar0-1",
-        "zile_ramase": 4,
+        "zile_ramase": 3,
         "expira": "2026-11-01",
         "sursa": "impact_deals_api"
       },
@@ -1021,7 +1021,7 @@
         "descriere": "EUR231 off (25%): EUR697, was EUR928",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t211a310-1-e82153f1-1?variant=57558857744759",
-        "zile_ramase": 4,
+        "zile_ramase": 3,
         "expira": "2026-11-01",
         "sursa": "impact_deals_api"
       },
@@ -1030,7 +1030,7 @@
         "descriere": "EUR121.49 off (12%): EUR921.49, was EUR1042.98",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t210mg11-1-t290sa10-2?variant=57632207831415",
-        "zile_ramase": 4,
+        "zile_ramase": 3,
         "expira": "2026-11-01",
         "sursa": "impact_deals_api"
       },
@@ -1039,7 +1039,7 @@
         "descriere": "EUR80 off (11%): EUR638.99, was EUR718.99",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t210qg11-1-t29yqa20-1",
-        "zile_ramase": 4,
+        "zile_ramase": 3,
         "expira": "2026-11-01",
         "sursa": "impact_deals_api"
       },
@@ -1048,7 +1048,7 @@
         "descriere": "EUR369.99 off (36%): EUR649, was EUR1018.99",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t2352g11-1-t29yqa20-1?variant=56084869251447",
-        "zile_ramase": 4,
+        "zile_ramase": 3,
         "expira": "2026-11-01",
         "sursa": "impact_deals_api"
       },
@@ -1057,7 +1057,7 @@
         "descriere": "EUR163 off (27%): EUR436, was EUR599",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/t211a310",
-        "zile_ramase": 4,
+        "zile_ramase": 3,
         "expira": "2026-11-01",
         "sursa": "impact_deals_api"
       },
@@ -1066,7 +1066,7 @@
         "descriere": "EUR100 off (26%): EUR287, was EUR387",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t8416321-3",
-        "zile_ramase": 4,
+        "zile_ramase": 3,
         "expira": "2026-11-01",
         "sursa": "impact_deals_api"
       },
@@ -1075,7 +1075,7 @@
         "descriere": "EUR79.01 off (34%): EUR155.98, was EUR234.99",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t8214311-1-t8026320-1",
-        "zile_ramase": 4,
+        "zile_ramase": 3,
         "expira": "2026-11-01",
         "sursa": "impact_deals_api"
       },
@@ -1084,7 +1084,7 @@
         "descriere": "EUR279.995 off (39%): EUR439, was EUR718.99",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t2351g11-1-t29c3121-1",
-        "zile_ramase": 4,
+        "zile_ramase": 3,
         "expira": "2026-11-01",
         "sursa": "impact_deals_api"
       },
@@ -1093,7 +1093,7 @@
         "descriere": "EUR370 off (36%): EUR671, was EUR1041",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t814x321-8-t80303d1-1",
-        "zile_ramase": 4,
+        "zile_ramase": 3,
         "expira": "2026-11-01",
         "sursa": "impact_deals_api"
       },
@@ -1102,7 +1102,7 @@
         "descriere": "EUR168 off (40%): EUR249, was EUR417",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t814x32s-3",
-        "zile_ramase": 4,
+        "zile_ramase": 3,
         "expira": "2026-11-01",
         "sursa": "impact_deals_api"
       },
@@ -1111,7 +1111,7 @@
         "descriere": "EUR355 off (43%): EUR479, was EUR834",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t814x32s-6",
-        "zile_ramase": 4,
+        "zile_ramase": 3,
         "expira": "2026-11-01",
         "sursa": "impact_deals_api"
       },
@@ -1120,7 +1120,7 @@
         "descriere": "EUR210 off (38%): EUR348, was EUR558",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t86p2321-2",
-        "zile_ramase": 4,
+        "zile_ramase": 3,
         "expira": "2026-11-01",
         "sursa": "impact_deals_api"
       },
@@ -1129,7 +1129,7 @@
         "descriere": "EUR269 off (39%): EUR429, was EUR698",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t8e00321-2",
-        "zile_ramase": 4,
+        "zile_ramase": 3,
         "expira": "2026-11-01",
         "sursa": "impact_deals_api"
       },
@@ -1138,7 +1138,7 @@
         "descriere": "EUR499.99 off (29%): EUR1199, was EUR1698.99",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-e8e00322-1-t87a03w1",
-        "zile_ramase": 4,
+        "zile_ramase": 3,
         "expira": "2026-11-01",
         "sursa": "impact_deals_api"
       },
@@ -1147,7 +1147,7 @@
         "descriere": "EUR164 off (28%): EUR412, was EUR576",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t8416321-1-t8214311-1-t80303d1-1",
-        "zile_ramase": 4,
+        "zile_ramase": 3,
         "expira": "2026-11-01",
         "sursa": "impact_deals_api"
       },
@@ -1156,7 +1156,7 @@
         "descriere": "EUR120 off (27%): EUR328, was EUR448",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t8214311-1-t80303d1-1",
-        "zile_ramase": 4,
+        "zile_ramase": 3,
         "expira": "2026-11-01",
         "sursa": "impact_deals_api"
       },
@@ -1165,7 +1165,7 @@
         "descriere": "EUR140.98 off (20%): EUR559, was EUR699.98",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-e8354321-1-t600p082-1?variant=57362657673591",
-        "zile_ramase": 4,
+        "zile_ramase": 3,
         "expira": "2026-11-01",
         "sursa": "impact_deals_api"
       },
@@ -1174,7 +1174,7 @@
         "descriere": "EUR60.99 off (14%): EUR389, was EUR449.99",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/t60a13b0",
-        "zile_ramase": 4,
+        "zile_ramase": 3,
         "expira": "2026-11-01",
         "sursa": "impact_deals_api"
       },
@@ -1183,7 +1183,7 @@
         "descriere": "EUR147 off (23%): EUR499, was EUR646",
         "cod_cupon": "",
         "landing_page": "https://www.eufy.com/nl/products/bundle-t814x321-2-t80303d1-1-t8214311-1",
-        "zile_ramase": 4,
+        "zile_ramase": 3,
         "expira": "2026-11-01",
         "sursa": "impact_deals_api"
       }
@@ -2192,14 +2192,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 546,
+    "zile_ramase": 545,
     "promotii": [
       {
         "nume": "DFB",
         "descriere": "DFB",
         "cod_cupon": "",
         "landing_page": "https://www.bcengi.com/?code=dfb",
-        "zile_ramase": 546,
+        "zile_ramase": 545,
         "expira": "2028-04-26",
         "sursa": "impact_deals_api"
       }
@@ -3610,14 +3610,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 2,
+    "zile_ramase": 1,
     "promotii": [
       {
         "nume": "Best Seller 25% off!",
         "descriere": "Best Seller 25% off!",
         "cod_cupon": "H25",
         "landing_page": "https://laavooextensions.com/collections/hot-sell-products",
-        "zile_ramase": 245,
+        "zile_ramase": 244,
         "expira": "2027-06-30",
         "sursa": "impact_deals_api"
       },
@@ -3626,7 +3626,7 @@
         "descriere": "New Arrival 25% off",
         "cod_cupon": "New25",
         "landing_page": "https://laavooextensions.com/collections/new-arrival",
-        "zile_ramase": 3,
+        "zile_ramase": 2,
         "expira": "2026-10-31",
         "sursa": "impact_deals_api"
       },
@@ -3635,7 +3635,7 @@
         "descriere": "Halloween Sale 16% off",
         "cod_cupon": "HW16",
         "landing_page": "https://www.laavooextensions.com",
-        "zile_ramase": 2,
+        "zile_ramase": 1,
         "expira": "2026-10-30",
         "sursa": "impact_deals_api"
       },
@@ -3644,7 +3644,7 @@
         "descriere": "Halloween Sale 23% off",
         "cod_cupon": "HW23",
         "landing_page": "https://www.laavooextensions.com",
-        "zile_ramase": 2,
+        "zile_ramase": 1,
         "expira": "2026-10-30",
         "sursa": "impact_deals_api"
       }
@@ -4054,14 +4054,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 2,
+    "zile_ramase": 1,
     "promotii": [
       {
         "nume": "$10 off over $139",
         "descriere": "$10 off over $139",
         "cod_cupon": "",
         "landing_page": "https://www.ashimaryhair.com/collections/hot-sale",
-        "zile_ramase": 2,
+        "zile_ramase": 1,
         "expira": "2026-10-30",
         "sursa": "impact_deals_api"
       },
@@ -4070,7 +4070,7 @@
         "descriere": "UP TO 55% OFF",
         "cod_cupon": "",
         "landing_page": "https://www.ashimaryhair.com/collections/hot-sale",
-        "zile_ramase": 2,
+        "zile_ramase": 1,
         "expira": "2026-10-30",
         "sursa": "impact_deals_api"
       }
@@ -4125,14 +4125,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 610,
+    "zile_ramase": 609,
     "promotii": [
       {
         "nume": "New Users",
         "descriere": "Get Extra 5% off , New users only!",
         "cod_cupon": "",
         "landing_page": "https://hototools.com",
-        "zile_ramase": 610,
+        "zile_ramase": 609,
         "expira": "2028-06-29",
         "sursa": "impact_deals_api"
       }
@@ -5292,14 +5292,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 368,
+    "zile_ramase": 367,
     "promotii": [
       {
         "nume": "Quber Savings",
         "descriere": "Quber Savings",
         "cod_cupon": "QUBER10",
         "landing_page": "https://orbitmobile.com",
-        "zile_ramase": 368,
+        "zile_ramase": 367,
         "expira": "2027-10-31",
         "sursa": "impact_deals_api"
       }
@@ -5574,14 +5574,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 307,
+    "zile_ramase": 306,
     "promotii": [
       {
         "nume": "5% off For Pongbot Tennis Ball Machine",
         "descriere": "5% off For Pongbot Tennis Ball Machine",
         "cod_cupon": "Pongbotsports5",
         "landing_page": "https://store.pongbotsports.com/?utm_source=affiliate&utm_medium=impact&utm_campaign=affiliatepublisher",
-        "zile_ramase": 307,
+        "zile_ramase": 306,
         "expira": "2027-08-31",
         "sursa": "impact_deals_api"
       }
@@ -6426,14 +6426,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 64,
+    "zile_ramase": 63,
     "promotii": [
       {
         "nume": "$20 off over $300 - 26Q4",
         "descriere": "$20 off over $300 order value, undiscounted products, logged-in users only, can be used once.",
         "cod_cupon": "TVC26Q4A$20",
         "landing_page": "https://www.tvcmall.com",
-        "zile_ramase": 64,
+        "zile_ramase": 63,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -6442,7 +6442,7 @@
         "descriere": "Save $55 on your first wholesale purchase over $500. Exclusive for new customers. One-time use.",
         "cod_cupon": "TVC26Q4A55NEW",
         "landing_page": "https://www.tvcmall.com",
-        "zile_ramase": 64,
+        "zile_ramase": 63,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -6451,7 +6451,7 @@
         "descriere": "$30 off over $300 order value, only for newly registered users, can be used once.",
         "cod_cupon": "TVC26Q4A33NEW",
         "landing_page": "https://www.tvcmall.com",
-        "zile_ramase": 64,
+        "zile_ramase": 63,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -6460,7 +6460,7 @@
         "descriere": "Save $10 on your first purchase over $100. Exclusive for new customers. One-time use.",
         "cod_cupon": "TVC26Q4A10NEW",
         "landing_page": "https://www.tvcmall.com",
-        "zile_ramase": 64,
+        "zile_ramase": 63,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -6469,7 +6469,7 @@
         "descriere": "Enjoy 9.5% off on your first order over $300. Exclusive welcome offer. New customers only. One-time use.",
         "cod_cupon": "TVC26Q4A95NEW",
         "landing_page": "https://www.tvcmall.com",
-        "zile_ramase": 64,
+        "zile_ramase": 63,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -6478,7 +6478,7 @@
         "descriere": "Enjoy 6% off your first order up to $150. One-time offer for logged-in users.",
         "cod_cupon": "TVC26Q4A6%",
         "landing_page": "https://www.tvcmall.com",
-        "zile_ramase": 64,
+        "zile_ramase": 63,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       }
@@ -6891,14 +6891,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 1432,
+    "zile_ramase": 1431,
     "promotii": [
       {
         "nume": "SAVE10",
         "descriere": "SAVE10",
         "cod_cupon": "",
         "landing_page": "https://www.helloice.com/",
-        "zile_ramase": 1432,
+        "zile_ramase": 1431,
         "expira": "2030-09-29",
         "sursa": "impact_deals_api"
       },
@@ -6907,7 +6907,7 @@
         "descriere": "SAVE15",
         "cod_cupon": "",
         "landing_page": "https://www.helloice.com/",
-        "zile_ramase": 1432,
+        "zile_ramase": 1431,
         "expira": "2030-09-29",
         "sursa": "impact_deals_api"
       },
@@ -6916,7 +6916,7 @@
         "descriere": "SAVE20",
         "cod_cupon": "",
         "landing_page": "https://www.helloice.com/",
-        "zile_ramase": 1432,
+        "zile_ramase": 1431,
         "expira": "2030-09-29",
         "sursa": "impact_deals_api"
       }
@@ -7173,14 +7173,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 145,
+    "zile_ramase": 144,
     "promotii": [
       {
         "nume": "KGAFF10",
         "descriere": "10% OFF for Specified categories",
         "cod_cupon": "",
         "landing_page": "https://kailasgear.com/collections/affiliate-program",
-        "zile_ramase": 146,
+        "zile_ramase": 145,
         "expira": "2027-03-23",
         "sursa": "impact_deals_api"
       },
@@ -7189,7 +7189,7 @@
         "descriere": "No limit on quantity, time or product category. A $5 discount will be offered after use.",
         "cod_cupon": "",
         "landing_page": "https://kailasgear.com",
-        "zile_ramase": 145,
+        "zile_ramase": 144,
         "expira": "2027-03-22",
         "sursa": "impact_deals_api"
       }
@@ -7218,14 +7218,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 80,
+    "zile_ramase": 79,
     "promotii": [
       {
         "nume": "8% Sitewide：AFFNEW8",
         "descriere": "Code:AFFNEW8 For new customers only, one use per person",
         "cod_cupon": "",
         "landing_page": "https://www.autofull.com",
-        "zile_ramase": 80,
+        "zile_ramase": 79,
         "expira": "2027-01-16",
         "sursa": "impact_deals_api"
       },
@@ -7234,7 +7234,7 @@
         "descriere": "Code:AFFA5 5% Sitewide",
         "cod_cupon": "",
         "landing_page": "https://www.autofull.com",
-        "zile_ramase": 318,
+        "zile_ramase": 317,
         "expira": "2027-09-11",
         "sursa": "impact_deals_api"
       }
@@ -7840,14 +7840,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 7,
+    "zile_ramase": 6,
     "promotii": [
       {
         "nume": "Extra 15% Off Human Hair Bye Bye Knots Wig with code：nadula15",
         "descriere": "2026 Nadula Hair Extra 15% Off Human Hair Bye Bye Knots Wig with code：nadula15",
         "cod_cupon": "",
         "landing_page": "https://www.nadula.com/7-5-bye-bye-knots-wig.html",
-        "zile_ramase": 18,
+        "zile_ramase": 17,
         "expira": "2026-11-15",
         "sursa": "impact_deals_api"
       },
@@ -7856,7 +7856,7 @@
         "descriere": "Nadula Hair Halloween Sale Up To $100 Off With Code:Treat",
         "cod_cupon": "Treat",
         "landing_page": "https://m.nadula.com",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-11-04",
         "sursa": "impact_deals_api"
       }
@@ -9024,14 +9024,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 183,
+    "zile_ramase": 182,
     "promotii": [
       {
         "nume": "ON30",
         "descriere": "Get 30% off all products from store.",
         "cod_cupon": "",
         "landing_page": "https://www.snailax.com/",
-        "zile_ramase": 183,
+        "zile_ramase": 182,
         "expira": "2027-04-29",
         "sursa": "impact_deals_api"
       }
@@ -9159,14 +9159,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 915,
+    "zile_ramase": 914,
     "promotii": [
       {
         "nume": "yilite hair 53% off all products",
         "descriere": "yilite hair 53% off all products",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 1256,
+        "zile_ramase": 1255,
         "expira": "2030-04-06",
         "sursa": "impact_deals_api"
       },
@@ -9175,7 +9175,7 @@
         "descriere": "NEW Long Seamless Invisible Tape-ins",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 1256,
+        "zile_ramase": 1255,
         "expira": "2030-04-06",
         "sursa": "impact_deals_api"
       },
@@ -9184,7 +9184,7 @@
         "descriere": "Try it boldly!!You will amaze everyone!",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 1256,
+        "zile_ramase": 1255,
         "expira": "2030-04-06",
         "sursa": "impact_deals_api"
       },
@@ -9292,7 +9292,7 @@
         "descriere": "Come quickly! Yilite Hair 53% Off For All Product",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 1620,
+        "zile_ramase": 1619,
         "expira": "2031-04-05",
         "sursa": "impact_deals_api"
       },
@@ -9391,7 +9391,7 @@
         "descriere": "Sign up get 51% off",
         "cod_cupon": "YILITE51",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 915,
+        "zile_ramase": 914,
         "expira": "2029-04-30",
         "sursa": "impact_deals_api"
       },
@@ -9717,14 +9717,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 63,
+    "zile_ramase": 62,
     "promotii": [
       {
         "nume": "OM15",
         "descriere": "Get your new order for all product 15% off",
         "cod_cupon": "",
         "landing_page": "https://theomfort.com",
-        "zile_ramase": 63,
+        "zile_ramase": 62,
         "expira": "2026-12-30",
         "sursa": "impact_deals_api"
       }
@@ -9777,14 +9777,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 7,
+    "zile_ramase": 6,
     "promotii": [
       {
         "nume": "Clearance sale50%off",
         "descriere": "Clearance: Enjoy 50% off select items!",
         "cod_cupon": "",
         "landing_page": "https://www.ugeat.com",
-        "zile_ramase": 199,
+        "zile_ramase": 198,
         "expira": "2027-05-15",
         "sursa": "impact_deals_api"
       },
@@ -9793,7 +9793,7 @@
         "descriere": "Enjoy a 70% discount on high-quality Virgin+ series products.",
         "cod_cupon": "VR70",
         "landing_page": "https://www.ugeat.com",
-        "zile_ramase": 199,
+        "zile_ramase": 198,
         "expira": "2027-05-15",
         "sursa": "impact_deals_api"
       },
@@ -9802,7 +9802,7 @@
         "descriere": "Purchase together to enjoy a 25% discount.",
         "cod_cupon": "",
         "landing_page": "https://www.ugeat.com",
-        "zile_ramase": 199,
+        "zile_ramase": 198,
         "expira": "2027-05-15",
         "sursa": "impact_deals_api"
       },
@@ -9811,7 +9811,7 @@
         "descriere": "Halloween Sale 15%off",
         "cod_cupon": "HAL15",
         "landing_page": "https://www.ugeat.com",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-11-04",
         "sursa": "impact_deals_api"
       },
@@ -9820,7 +9820,7 @@
         "descriere": "Halloween Sale 23%off",
         "cod_cupon": "HAL23",
         "landing_page": "https://www.ugeat.com",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-11-04",
         "sursa": "impact_deals_api"
       }
@@ -9998,14 +9998,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 4,
+    "zile_ramase": 3,
     "promotii": [
       {
         "nume": "Redodo 8% Discount Code – Save on All Products",
         "descriere": "Enjoy 8% off all Redodo products with this exclusive discount code. Help your audience save on LiFePO₄ batteries and power solutions. Valid on Redodo official website.",
         "cod_cupon": "",
         "landing_page": "https://www.redodopower.de",
-        "zile_ramase": 64,
+        "zile_ramase": 63,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -10014,7 +10014,7 @@
         "descriere": "Redodo Halloween 2026",
         "cod_cupon": "",
         "landing_page": "https://www.redodopower.de/pages/redodo-batterie-kaufen",
-        "zile_ramase": 4,
+        "zile_ramase": 3,
         "expira": "2026-11-01",
         "sursa": "impact_deals_api"
       }
@@ -10127,14 +10127,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 2,
+    "zile_ramase": 1,
     "promotii": [
       {
         "nume": "Geeta Hair_Mother's Day Sale: 18% OFF Site-wide",
         "descriere": "Celebrate Mother's Day with Geeta Hair! 18% OFF Site-wide (Code: M18) $45 OFF Orders $189+ (Code: M45) $70 OFF Orders $279+ (Code: M70) $100 OFF Orders $379+ (Code: M100)",
         "cod_cupon": "M18",
         "landing_page": "https://geetahair.com/?utm_source=impact&utm_medium=affiliate&utm_campaign=deal.mother.20260429",
-        "zile_ramase": 123,
+        "zile_ramase": 122,
         "expira": "2027-02-28",
         "sursa": "impact_deals_api"
       },
@@ -10143,7 +10143,7 @@
         "descriere": "Celebrate Mother's Day with Geeta Hair! 18% OFF Site-wide (Code: M18) $45 OFF Orders $189+ (Code: M45) $70 OFF Orders $279+ (Code: M70) $100 OFF Orders $379+ (Code: M100)",
         "cod_cupon": "M45",
         "landing_page": "https://geetahair.com/?utm_source=impact&utm_medium=affiliate&utm_campaign=deal.coupon.20260429",
-        "zile_ramase": 123,
+        "zile_ramase": 122,
         "expira": "2027-02-28",
         "sursa": "impact_deals_api"
       },
@@ -10152,7 +10152,7 @@
         "descriere": "Celebrate Mother's Day with Geeta Hair! 18% OFF Site-wide (Code: M18) $45 OFF Orders $189+ (Code: M45) $70 OFF Orders $279+ (Code: M70) $100 OFF Orders $379+ (Code: M100)",
         "cod_cupon": "M70",
         "landing_page": "https://geetahair.com/?utm_source=impact&utm_medium=affiliate&utm_campaign=coupon.mother.20260429",
-        "zile_ramase": 123,
+        "zile_ramase": 122,
         "expira": "2027-02-28",
         "sursa": "impact_deals_api"
       },
@@ -10161,7 +10161,7 @@
         "descriere": "Celebrate Mother's Day with Geeta Hair! 18% OFF Site-wide (Code: M18) $45 OFF Orders $189+ (Code: M45) $70 OFF Orders $279+ (Code: M70) $100 OFF Orders $379+ (Code: M100)",
         "cod_cupon": "M100",
         "landing_page": "https://geetahair.com/?utm_source=impact&utm_medium=affiliate&utm_campaign=coupon.mother.20260429",
-        "zile_ramase": 123,
+        "zile_ramase": 122,
         "expira": "2027-02-28",
         "sursa": "impact_deals_api"
       },
@@ -10170,17 +10170,8 @@
         "descriere": "Promote one of Geeta Hair's best-performing discount codes! This offer is designed to drive high average order values and has already generated significant sales volume.",
         "cod_cupon": "HOT25",
         "landing_page": "https://geetahair.com/collections/colored-wig/?utm_source=impact&utm_medium=affiliate&utm_campaign=deal.hot25.20260429",
-        "zile_ramase": 179,
+        "zile_ramase": 178,
         "expira": "2027-04-25",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "Geeta Hair Fresh Arrivals: Your New Favorite Obsession",
-        "descriere": "Promote Geeta Hair’s latest offer! Share 25% off sitewide with code NEW to boost your conversions. High-demand HD lace wigs and bundles are ready for your traffic!",
-        "cod_cupon": "NEW",
-        "landing_page": "https://geetahair.com/collections/new-arrival-wigs/?utm_source=impact&utm_medium=affiliate&utm_campaign=code.NEW.20260513",
-        "zile_ramase": 2,
-        "expira": "2026-10-30",
         "sursa": "impact_deals_api"
       },
       {
@@ -10188,8 +10179,17 @@
         "descriere": "Save big! Take 20% off with code: S20. Tiered discounts: $40 off $189+ (Code: S40), $65 off $269+ (Code: S65), $100 off $369+ (Code: S100). Plus, get a FREE wig on orders over $429! Limited time only.",
         "cod_cupon": "",
         "landing_page": "https://geetahair.com/pages/best-summer-human-hair-wigs-up-to-100-off-and-free-wig-on-429/?utm_source=impact&utm_medium=affiliate&utm_campaign=code.S20.20260711",
-        "zile_ramase": 214,
+        "zile_ramase": 213,
         "expira": "2027-05-30",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "Geeta Hair Wedding Season Sale: Up to 25% OFF Sitewide",
+        "descriere": "Promote Geeta Hair's high-converting wedding collection! Earn top commissions with 25% OFF premium human hair wigs, perfect for bridal and special occasion content.",
+        "cod_cupon": "W100",
+        "landing_page": "https://geetahair.com/pages/wedding-season-shopping-carnival/?utm_source=impact&utm_medium=affiliate&utm_campaign=code.wedding.20260515",
+        "zile_ramase": 1,
+        "expira": "2026-10-30",
         "sursa": "impact_deals_api"
       },
       {
@@ -10197,7 +10197,7 @@
         "descriere": "July 4th Sale: Get 20% OFF sitewide with no minimum spend! Promote top glueless wigs now.",
         "cod_cupon": "",
         "landing_page": "https://geetahair.com/pages/geeta-hair-independence-day-sale-up-to-110-off-human-hair-wigs/?utm_source=impact&utm_medium=affiliate&utm_campaign=code.F20free.20260625",
-        "zile_ramase": 123,
+        "zile_ramase": 122,
         "expira": "2027-02-28",
         "sursa": "impact_deals_api"
       },
@@ -10206,7 +10206,7 @@
         "descriere": "Save $40 on orders over $189! High-AOV offer on premium human hair wigs to boost your earnings.",
         "cod_cupon": "",
         "landing_page": "https://geetahair.com/pages/geeta-hair-independence-day-sale-up-to-110-off-human-hair-wigs/?utm_source=impact&utm_medium=affiliate&utm_campaign=code.F40free.20260626",
-        "zile_ramase": 95,
+        "zile_ramase": 94,
         "expira": "2027-01-31",
         "sursa": "impact_deals_api"
       },
@@ -10215,7 +10215,7 @@
         "descriere": "Enjoy $65 OFF orders over $259! Perfect for high-ticket lace frontal wigs and luxury bundles.",
         "cod_cupon": "",
         "landing_page": "https://geetahair.com/pages/geeta-hair-independence-day-sale-up-to-110-off-human-hair-wigs/?utm_source=impact&utm_medium=affiliate&utm_campaign=code.F65.free.20260626",
-        "zile_ramase": 95,
+        "zile_ramase": 94,
         "expira": "2027-01-31",
         "sursa": "impact_deals_api"
       },
@@ -10224,17 +10224,8 @@
         "descriere": "Mega Savings! Take $110 OFF orders over $379. Promote now to secure maximum affiliate payouts!",
         "cod_cupon": "",
         "landing_page": "https://geetahair.com/pages/geeta-hair-independence-day-sale-up-to-110-off-human-hair-wigs/?utm_source=impact&utm_medium=affiliate&utm_campaign=code.F110.free.20260626",
-        "zile_ramase": 123,
+        "zile_ramase": 122,
         "expira": "2027-02-28",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "Geeta Hair Wedding Season Sale: Up to 25% OFF Sitewide",
-        "descriere": "Promote Geeta Hair's high-converting wedding collection! Earn top commissions with 25% OFF premium human hair wigs, perfect for bridal and special occasion content.",
-        "cod_cupon": "W100",
-        "landing_page": "https://geetahair.com/pages/wedding-season-shopping-carnival/?utm_source=impact&utm_medium=affiliate&utm_campaign=code.wedding.20260515",
-        "zile_ramase": 2,
-        "expira": "2026-10-30",
         "sursa": "impact_deals_api"
       },
       {
@@ -10242,7 +10233,7 @@
         "descriere": "Promote Geeta Hair's high-converting Graduation Sale featuring tiered coupons up to $100 OFF. Perfect for driving high-ticket orders and maximizing your affiliate commissions!",
         "cod_cupon": "G100",
         "landing_page": "https://geetahair.com/pages/graduation-season-sale/?utm_source=impact&utm_medium=affiliate&utm_campaign=code1.graute.20260530",
-        "zile_ramase": 63,
+        "zile_ramase": 62,
         "expira": "2026-12-30",
         "sursa": "impact_deals_api"
       }
@@ -10330,14 +10321,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 3,
+    "zile_ramase": 2,
     "promotii": [
       {
         "nume": "Screen discounts：AVACC88",
         "descriere": "Exclusive screen discount: 12%",
         "cod_cupon": "",
         "landing_page": "https://www.valerion.com/de/search/screen",
-        "zile_ramase": 64,
+        "zile_ramase": 63,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -10346,7 +10337,7 @@
         "descriere": "Selected Pro 2 Products €100 off orders over €2,200",
         "cod_cupon": "",
         "landing_page": "https://www.valerion.com/de/product/valerion-visionmaster-pro2-pro-4k-rgb-triple-laser-projector?image=1",
-        "zile_ramase": 3,
+        "zile_ramase": 2,
         "expira": "2026-10-31",
         "sursa": "impact_deals_api"
       }
@@ -10818,14 +10809,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 64,
+    "zile_ramase": 63,
     "promotii": [
       {
         "nume": "LumosFlex120",
         "descriere": "120 off for lumos flex",
         "cod_cupon": "",
         "landing_page": "https://wecreat.com/products/wecreat-lumos",
-        "zile_ramase": 64,
+        "zile_ramase": 63,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -10834,7 +10825,7 @@
         "descriere": "100 off for wecreat vision pro",
         "cod_cupon": "",
         "landing_page": "https://wecreat.com/products/wecreat-vision-pro",
-        "zile_ramase": 215,
+        "zile_ramase": 214,
         "expira": "2027-05-31",
         "sursa": "impact_deals_api"
       },
@@ -10843,7 +10834,7 @@
         "descriere": "5% off for all wecreat products! including accessories",
         "cod_cupon": "WECREAT",
         "landing_page": "https://wecreat.com/?utm_source=impact&utm_medium=affiliate",
-        "zile_ramase": 64,
+        "zile_ramase": 63,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -10852,7 +10843,7 @@
         "descriere": "$100 off for wecreat lumos",
         "cod_cupon": "",
         "landing_page": "https://wecreat.com/products/wecreat-lumos",
-        "zile_ramase": 215,
+        "zile_ramase": 214,
         "expira": "2027-05-31",
         "sursa": "impact_deals_api"
       }
@@ -11358,7 +11349,7 @@
         "descriere": "Limited time sale-P10 Save 48% OFF! Use code DPR35",
         "cod_cupon": "",
         "landing_page": "https://kospet.com/pages/special-clearance-sale",
-        "zile_ramase": 3,
+        "zile_ramase": 2,
         "expira": "2026-10-31",
         "sursa": "impact_deals_api"
       },
@@ -11367,7 +11358,7 @@
         "descriere": "Limited time sale-S2 Save 51% OFF! Use code DS20",
         "cod_cupon": "",
         "landing_page": "https://kospet.com/pages/special-clearance-sale",
-        "zile_ramase": 3,
+        "zile_ramase": 2,
         "expira": "2026-10-31",
         "sursa": "impact_deals_api"
       },
@@ -11376,7 +11367,7 @@
         "descriere": "Limited time sale-M3U Save 44% OFF! Use code V3U20",
         "cod_cupon": "",
         "landing_page": "https://kospet.com/pages/special-clearance-sale",
-        "zile_ramase": 3,
+        "zile_ramase": 2,
         "expira": "2026-10-31",
         "sursa": "impact_deals_api"
       },
@@ -11385,7 +11376,7 @@
         "descriere": "Limited time sale-T3U2 Save 41% OFF! Use code HT3U2",
         "cod_cupon": "",
         "landing_page": "https://kospet.com/pages/special-clearance-sale",
-        "zile_ramase": 3,
+        "zile_ramase": 2,
         "expira": "2026-10-31",
         "sursa": "impact_deals_api"
       },
@@ -13282,14 +13273,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 246,
+    "zile_ramase": 245,
     "promotii": [
       {
         "nume": "Lemorele ｜ 15% off sitewide & Limited Deal for best Wireless HDMI",
         "descriere": "Lemorele ｜ 15% off sitewide & Limited Deal for best Wireless HDMI",
         "cod_cupon": "new15",
         "landing_page": "http://us.lemorele.com",
-        "zile_ramase": 246,
+        "zile_ramase": 245,
         "expira": "2027-07-01",
         "sursa": "impact_deals_api"
       },
@@ -13298,7 +13289,7 @@
         "descriere": "Lemorele ｜ 20% off for new customers & Welcome Discount Sitewide",
         "cod_cupon": "new20",
         "landing_page": "http://us.lemorele.com",
-        "zile_ramase": 246,
+        "zile_ramase": 245,
         "expira": "2027-07-01",
         "sursa": "impact_deals_api"
       }
@@ -14368,7 +14359,7 @@
         "descriere": "�� Plunge Chill Pod Tub — Only $49 ($30 OFF)! Help your audience kickstart their cold plunge routine for less! ❄️ Portable & Easy Setup — Enjoy cold plunges anywhere. �� Recovery Support — Perfect for athletes and fitness lovers. �� Indoor & Outdoor Use — Ideal for home, backyard, or gym. �� Regular Price: $79 | Now Only $49 with code POD30! �� Start Promoting Today! Earn 10%–20% commission on qualified sales + an extra $25 bonus for your first order!",
         "cod_cupon": "",
         "landing_page": "https://plungechill.com/products/cold-plunge-tub?utm_source=impact&utm_medium=affiliate&utm_campaign=summer_sale",
-        "zile_ramase": 64,
+        "zile_ramase": 63,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },
@@ -14377,7 +14368,7 @@
         "descriere": "Product name: Plunge Chill All Products Code discount: 10% OFF Code: IMPC10 End date: 31, Dec, 2026 Total savings: $2000 OFF Share the deal, inspire recovery, and earn 10%-20% commission and extra $25 bonus for your first referral order.",
         "cod_cupon": "",
         "landing_page": "https://plungechill.com/pages/summer-sale?utm_source=impact&utm_medium=affiliate&utm_campaign=summer_sale",
-        "zile_ramase": 64,
+        "zile_ramase": 63,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
       },

@@ -544,8 +544,8 @@
    "magazine": 140
   },
   "2026-10-28": {
-   "promotii": 277,
-   "magazine": 142
+   "promotii": 281,
+   "magazine": 144
   }
  },
  "magazine": {
@@ -1717,6 +1717,15 @@
    }
   ],
   "centini.ro": [
+   {
+    "k": "blackmonthlacentinireduceridepanala30|",
+    "titlu": "Black Month la Centini: reduceri de până la 30%",
+    "cod": false,
+    "prima": "2026-10-28",
+    "ultima": "2026-10-28",
+    "expira": "2026-11-26",
+    "activa": true
+   },
    {
     "k": "50leireducerelaintreagacategoriedama|",
     "titlu": "50 lei reducere la întreaga categorie Damă",
@@ -4382,6 +4391,17 @@
     "activa": false
    }
   ],
+  "gorgeaux.ro": [
+   {
+    "k": "blackfridaygorgeaux2026|",
+    "titlu": "Black Friday Gorgeaux 2026",
+    "cod": false,
+    "prima": "2026-10-28",
+    "ultima": "2026-10-28",
+    "expira": "2026-11-08",
+    "activa": true
+   }
+  ],
   "grandeoptique.ro": [
    {
     "k": "panala35reducerelaochelarideluxsipremium|",
@@ -6554,6 +6574,15 @@
   ],
   "nano-auto.ro": [
    {
+    "k": "blackfridaycelemaimicipreturidinan|",
+    "titlu": "Black Friday - Cele mai mici preturi din an",
+    "cod": false,
+    "prima": "2026-10-28",
+    "ultima": "2026-10-28",
+    "expira": "2026-11-13",
+    "activa": true
+   },
+   {
     "k": "reduceridepanala28lavopsea|",
     "titlu": "Reduceri de pana la 28% la vopsea",
     "cod": false,
@@ -7722,6 +7751,17 @@
     "prima": "2026-09-08",
     "ultima": "2026-10-28",
     "expira": "2027-01-01",
+    "activa": true
+   }
+  ],
+  "scule365.ro": [
+   {
+    "k": "blackfriday2026scule265|",
+    "titlu": "Black Friday 2026 Scule265",
+    "cod": false,
+    "prima": "2026-10-28",
+    "ultima": "2026-10-28",
+    "expira": "2026-11-07",
     "activa": true
    }
   ],

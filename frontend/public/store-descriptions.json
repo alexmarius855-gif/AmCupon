@@ -615,7 +615,7 @@
   "titlu": "Despre codurile de reducere Nano Auto",
   "paragrafe": [
    "Pe Nano Auto descoperi casă, mobilier și grădină, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
-   "Chiar acum, Nano Auto are 2 oferte active pe AmCupon.ro, printre care „22% Reducere la Chit de Reparații Elastic cu Fibră de Sticlă pentru…”. Lista se actualizează automat de mai multe ori pe zi, direct din rețelele de afiliere.",
+   "Chiar acum, Nano Auto are 3 oferte active pe AmCupon.ro, printre care „22% Reducere la Chit de Reparații Elastic cu Fibră de Sticlă pentru…”. Lista se actualizează automat de mai multe ori pe zi, direct din rețelele de afiliere.",
    "Folosirea unui cod Nano Auto este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
   ],
   "sursa": "data-template"
@@ -660,7 +660,7 @@
   "titlu": "Despre codurile de reducere Centini",
   "paragrafe": [
    "Pe Centini descoperi modă, haine și accesorii, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
-   "Chiar acum, Centini are 1 ofertă activă pe AmCupon.ro, printre care „50 lei reducere la întreaga categorie Damă”. Lista se actualizează automat de mai multe ori pe zi, direct din rețelele de afiliere.",
+   "Chiar acum, Centini are 2 oferte active pe AmCupon.ro, printre care „50 lei reducere la întreaga categorie Damă”. Lista se actualizează automat de mai multe ori pe zi, direct din rețelele de afiliere.",
    "Folosirea unui cod Centini este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
   ],
   "sursa": "data-template"
@@ -779,6 +779,15 @@
    "Pe Otter descoperi modă, haine și accesorii, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
    "Momentan găsești 2 oferte active pentru Otter, inclusiv „Flash Sale”. Pe AmCupon.ro actualizăm aceste reduceri de mai multe ori pe zi.",
    "Ca să economisești, copiază codul Otter de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
+  ],
+  "sursa": "data-template"
+ },
+ "scule365.ro": {
+  "titlu": "Despre codurile de reducere Scule365",
+  "paragrafe": [
+   "Pe Scule365 descoperi casă, mobilier și grădină, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
+   "Chiar acum, Scule365 are 1 ofertă activă pe AmCupon.ro, printre care „Black Friday 2026 Scule265”. Lista se actualizează automat de mai multe ori pe zi, direct din rețelele de afiliere.",
+   "Folosirea unui cod Scule365 este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
   ],
   "sursa": "data-template"
  },
@@ -1022,6 +1031,15 @@
    "Pe Priveboutique descoperi modă, haine și accesorii, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
    "Momentan găsești 1 ofertă activă pentru Priveboutique, inclusiv „Black Cat Friday: toate rochiile la preț de Black Friday + până la…”. Pe AmCupon.ro actualizăm aceste reduceri de mai multe ori pe zi.",
    "Ca să economisești, copiază codul Priveboutique de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
+  ],
+  "sursa": "data-template"
+ },
+ "gorgeaux.ro": {
+  "titlu": "Despre codurile de reducere Gorgeaux",
+  "paragrafe": [
+   "Pe Gorgeaux descoperi modă, haine și accesorii, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
+   "Chiar acum, Gorgeaux are 1 ofertă activă pe AmCupon.ro, printre care „Black Friday Gorgeaux 2026”. Lista se actualizează automat de mai multe ori pe zi, direct din rețelele de afiliere.",
+   "Folosirea unui cod Gorgeaux este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
   ],
   "sursa": "data-template"
  },
@@ -5156,15 +5174,6 @@
   ],
   "sursa": "data-template"
  },
- "scule365.ro": {
-  "titlu": "Despre codurile de reducere Scule365",
-  "paragrafe": [
-   "Pe Scule365 descoperi casă, mobilier și grădină, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
-   "Pe AmCupon.ro preluăm automat, de trei ori pe zi, promoțiile Scule365 din rețeaua de afiliere și le publicăm aici de îndată ce apar. Salvează pagina la favorite și revino când ai nevoie de casă, mobilier și grădină.",
-   "Folosirea unui cod Scule365 este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
-  ],
-  "sursa": "data-template"
- },
  "kitunghii.ro": {
   "titlu": "Despre codurile de reducere Kitunghii",
   "paragrafe": [
@@ -6335,15 +6344,6 @@
   ],
   "sursa": "data-template"
  },
- "gorgeaux.ro": {
-  "titlu": "Despre codurile de reducere Gorgeaux",
-  "paragrafe": [
-   "Pe Gorgeaux descoperi modă, haine și accesorii, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
-   "Pe AmCupon.ro preluăm automat, de trei ori pe zi, promoțiile Gorgeaux din rețeaua de afiliere și le publicăm aici de îndată ce apar. Salvează pagina la favorite și revino când ai nevoie de modă, haine și accesorii.",
-   "Folosirea unui cod Gorgeaux este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
-  ],
-  "sursa": "data-template"
- },
  "aldoshoes.com.ro": {
   "titlu": "Despre codurile de reducere Aldoshoes",
   "paragrafe": [
@@ -6533,6 +6533,15 @@
   ],
   "sursa": "data-template"
  },
+ "ada-shoes.ro": {
+  "titlu": "Despre codurile de reducere Ada Shoes",
+  "paragrafe": [
+   "Ada Shoes este un magazin online din categoria modă, haine și accesorii, unde găsești o gamă variată de produse la prețuri competitive.",
+   "În acest moment nu există un cod activ pentru Ada Shoes. Pagina se actualizează automat de trei ori pe zi: adaug-o la favorite ca să prinzi următoarea reducere de modă, haine și accesorii.",
+   "Ca să economisești, copiază codul Ada Shoes de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
+  ],
+  "sursa": "data-template"
+ },
  "scentoparfum.ro": {
   "titlu": "Despre codurile de reducere Scentoparfum",
   "paragrafe": [
@@ -6566,15 +6575,6 @@
    "Decryso este un magazin online din categoria farmacie, suplimente și sănătate, unde găsești o gamă variată de produse la prețuri competitive.",
    "Pe AmCupon.ro preluăm automat, de trei ori pe zi, promoțiile Decryso din rețeaua de afiliere și le publicăm aici de îndată ce apar. Salvează pagina la favorite și revino când ai nevoie de farmacie, suplimente și sănătate.",
    "Folosirea unui cod Decryso este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
-  ],
-  "sursa": "data-template"
- },
- "modastil.ro": {
-  "titlu": "Despre codurile de reducere Modastil",
-  "paragrafe": [
-   "Modastil este un magazin online din categoria modă, haine și accesorii, unde găsești o gamă variată de produse la prețuri competitive.",
-   "În acest moment nu există un cod activ pentru Modastil. Pagina se actualizează automat de trei ori pe zi: adaug-o la favorite ca să prinzi următoarea reducere de modă, haine și accesorii.",
-   "Ca să economisești, copiază codul Modastil de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
   ],
   "sursa": "data-template"
  },
@@ -8522,6 +8522,15 @@
   ],
   "sursa": "data-template"
  },
+ "sexpectation.ro": {
+  "titlu": "Despre codurile de reducere Sexpectation",
+  "paragrafe": [
+   "Sexpectation se numără printre magazinele de produse variate din toate categoriile apreciate în România pentru raportul bun dintre calitate și preț.",
+   "Codurile Sexpectation apar și dispar după campaniile magazinului. Pe AmCupon.ro preluăm automat ofertele de produse variate din toate categoriile și le publicăm aici de îndată ce apar.",
+   "Codurile de pe AmCupon.ro sunt gratuite. Copiezi codul Sexpectation, îl introduci la „Voucher” în coș și prețul scade înainte de plată."
+  ],
+  "sursa": "data-template"
+ },
  "elaiolado-shop.gr": {
   "titlu": "Despre codurile de reducere Elaiolado Shop GR",
   "paragrafe": [
@@ -8582,6 +8591,15 @@
    "Pe Kamevia descoperi cosmetice și produse de îngrijire, cu o ofertă care se înnoiește frecvent de-a lungul anului.",
    "Pe AmCupon.ro preluăm automat, de trei ori pe zi, promoțiile Kamevia din rețeaua de afiliere și le publicăm aici de îndată ce apar. Salvează pagina la favorite și revino când ai nevoie de cosmetice și produse de îngrijire.",
    "Folosirea unui cod Kamevia este simplă: îl copiezi de pe AmCupon.ro, îl aplici în coș la câmpul „Cod promoțional”, iar reducerea se scade automat. Serviciul este 100% gratuit pentru tine."
+  ],
+  "sursa": "data-template"
+ },
+ "sipica.ro": {
+  "titlu": "Despre codurile de reducere Sipica",
+  "paragrafe": [
+   "Sipica este un magazin online din categoria produse pentru animale de companie, unde găsești o gamă variată de produse la prețuri competitive.",
+   "În acest moment nu există un cod activ pentru Sipica. Pagina se actualizează automat de trei ori pe zi: adaug-o la favorite ca să prinzi următoarea reducere de produse pentru animale de companie.",
+   "Ca să economisești, copiază codul Sipica de aici, adaugă produsele în coș și introdu-l la finalizarea comenzii. Nu plătești nimic în plus — AmCupon.ro este gratuit."
   ],
   "sursa": "data-template"
  },
