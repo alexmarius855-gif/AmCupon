@@ -1,13 +1,13 @@
 {
-  "generat": "2026-10-27",
-  "total_magazine": 455,
-  "cu_promotie": 85,
+  "generat": "2026-10-28",
+  "total_magazine": 454,
+  "cu_promotie": 86,
   "cu_cod_real": 3,
-  "doar_oferta": 82,
-  "procent_cu_promotie": 18.7,
+  "doar_oferta": 83,
+  "procent_cu_promotie": 18.9,
   "procent_cu_cod": 0.7,
   "reducere_mediana_generala": 40,
-  "magazine_cu_procent_declarat": 49,
+  "magazine_cu_procent_declarat": 51,
   "categorii": [
     {
       "slug": "carti-educatie",
@@ -64,18 +64,27 @@
       "esantion": 8
     },
     {
+      "slug": "auto-moto",
+      "nume": "Auto & moto",
+      "magazine": 21,
+      "cu_promotie": 4,
+      "reducere_mediana": 35,
+      "reducere_max": 35,
+      "esantion": 3
+    },
+    {
       "slug": "sanatate",
       "nume": "Sănătate & farmacie",
       "magazine": 37,
       "cu_promotie": 12,
-      "reducere_mediana": 25,
+      "reducere_mediana": 17.5,
       "reducere_max": 30,
-      "esantion": 3
+      "esantion": 4
     },
     {
       "slug": "marketplace",
       "nume": "Marketplace",
-      "magazine": 44,
+      "magazine": 43,
       "cu_promotie": 7,
       "reducere_mediana": 15,
       "reducere_max": 70,
@@ -91,13 +100,13 @@
       "esantion": 1
     },
     {
-      "slug": "auto-moto",
-      "nume": "Auto & moto",
-      "magazine": 21,
-      "cu_promotie": 3,
+      "slug": "mancare-bauturi",
+      "nume": "Mâncare & băuturi",
+      "magazine": 14,
+      "cu_promotie": 1,
       "reducere_mediana": null,
       "reducere_max": null,
-      "esantion": 2
+      "esantion": 0
     },
     {
       "slug": "animale",
@@ -116,15 +125,6 @@
       "reducere_mediana": null,
       "reducere_max": null,
       "esantion": 1
-    },
-    {
-      "slug": "mancare-bauturi",
-      "nume": "Mâncare & băuturi",
-      "magazine": 14,
-      "cu_promotie": 1,
-      "reducere_mediana": null,
-      "reducere_max": null,
-      "esantion": 0
     },
     {
       "slug": "software",
