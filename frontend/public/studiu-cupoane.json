@@ -1,13 +1,13 @@
 {
-  "generat": "2026-10-28",
-  "total_magazine": 455,
-  "cu_promotie": 89,
+  "generat": "2026-10-29",
+  "total_magazine": 456,
+  "cu_promotie": 92,
   "cu_cod_real": 3,
-  "doar_oferta": 86,
-  "procent_cu_promotie": 19.6,
+  "doar_oferta": 89,
+  "procent_cu_promotie": 20.2,
   "procent_cu_cod": 0.7,
-  "reducere_mediana_generala": 39.0,
-  "magazine_cu_procent_declarat": 52,
+  "reducere_mediana_generala": 36,
+  "magazine_cu_procent_declarat": 55,
   "categorii": [
     {
       "slug": "carti-educatie",
@@ -30,7 +30,7 @@
     {
       "slug": "beauty",
       "nume": "Beauty & îngrijire",
-      "magazine": 58,
+      "magazine": 57,
       "cu_promotie": 10,
       "reducere_mediana": 52.5,
       "reducere_max": 80,
@@ -42,22 +42,22 @@
       "magazine": 99,
       "cu_promotie": 19,
       "reducere_mediana": 39.0,
-      "reducere_max": 70,
+      "reducere_max": 80,
       "esantion": 10
     },
     {
       "slug": "copii",
       "nume": "Copii & familie",
       "magazine": 24,
-      "cu_promotie": 3,
-      "reducere_mediana": 38,
+      "cu_promotie": 4,
+      "reducere_mediana": 37.0,
       "reducere_max": 70,
-      "esantion": 3
+      "esantion": 4
     },
     {
       "slug": "auto-moto",
       "nume": "Auto & moto",
-      "magazine": 21,
+      "magazine": 22,
       "cu_promotie": 4,
       "reducere_mediana": 35,
       "reducere_max": 35,
@@ -66,11 +66,20 @@
     {
       "slug": "fashion",
       "nume": "Fashion",
-      "magazine": 52,
-      "cu_promotie": 13,
+      "magazine": 53,
+      "cu_promotie": 12,
       "reducere_mediana": 35,
       "reducere_max": 70,
       "esantion": 9
+    },
+    {
+      "slug": "electronice",
+      "nume": "Electronice & IT",
+      "magazine": 31,
+      "cu_promotie": 7,
+      "reducere_mediana": 30,
+      "reducere_max": 50,
+      "esantion": 3
     },
     {
       "slug": "sanatate",
@@ -85,19 +94,10 @@
       "slug": "marketplace",
       "nume": "Marketplace",
       "magazine": 44,
-      "cu_promotie": 7,
+      "cu_promotie": 8,
       "reducere_mediana": 15,
       "reducere_max": 70,
       "esantion": 3
-    },
-    {
-      "slug": "electronice",
-      "nume": "Electronice & IT",
-      "magazine": 31,
-      "cu_promotie": 5,
-      "reducere_mediana": null,
-      "reducere_max": null,
-      "esantion": 1
     },
     {
       "slug": "mancare-bauturi",
