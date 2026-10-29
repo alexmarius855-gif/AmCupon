@@ -389,10 +389,10 @@ In {luna} {an}, AmCupon.ro monitorizeaza **{total_magazine} magazine** cu promot
 ## Categorii populare
 
 - [Reduceri Fashion →](/categorii/fashion)
-- [Reduceri Electronice →](/categorii/electronics-itc)
+- [Reduceri Electronice →](/categorii/electronice)
 - [Reduceri Frumusete →](/categorii/beauty)
-- [Reduceri Farmacie →](/categorii/pharma)
-- [Reduceri Sport →](/categorii/sports-outdoors)
+- [Reduceri Farmacie →](/categorii/sanatate)
+- [Reduceri Sport →](/categorii/sport)
 
 [Vezi toate magazinele cu reduceri →](/toate-magazinele)"""
 
