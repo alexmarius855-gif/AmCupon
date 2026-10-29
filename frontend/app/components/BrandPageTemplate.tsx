@@ -1,6 +1,6 @@
 import fs from "fs";
 import type { Metadata } from "next";
-import { aceeasiTara } from "@/lib/taraDomeniu";
+import { gasesteMagazinBrand } from "@/lib/brandMagazin";
 import { linkAfiliat, linkPromotie } from "@/lib/linkMagazin";
 import path from "path";
 import Link from "next/link";
@@ -58,19 +58,9 @@ function toateMagazinele(): Magazin[] {
 }
 
 function loadMagazin(slugs: string[]): Magazin | null {
+  // Aceeasi potrivire ca sitemap-ul (lib/brandMagazin.ts).
   try {
-    const data = toateMagazinele();
-    const lower = slugs.map((s) => s.toLowerCase());
-    // Potrivire in ordinea specificitatii: egalitate > prefix de domeniu > substring.
-    // Doar `.includes` producea potriviri gresite (ex: "otter" prindea si "spotter.ro").
-    // Prefixul si subsirul nu trec granita de tara: /vidaxl (vidaxl.ro) gasea vidaxl.bg.
-    const tara = (m: Magazin) => aceeasiTara(lower[0], m.magazin);
-    return (
-      data.find((m) => lower.includes(m.magazin.toLowerCase())) ||
-      data.find((m) => tara(m) && lower.some((s) => m.magazin.toLowerCase().startsWith(s + "."))) ||
-      data.find((m) => tara(m) && lower.some((s) => m.magazin.toLowerCase().includes(s))) ||
-      null
-    );
+    return gasesteMagazinBrand(toateMagazinele(), slugs);
   } catch {
     return null;
   }

@@ -485,6 +485,30 @@ def verifica_html() -> dict:
     if lipsa:
         semnaleaza("link intern spre pagina inexistenta",
                    f"{len(lipsa)} linkuri interne duc la pagini care nu se genereaza (404)", lipsa)
+    # Sitemap-ul cere indexarea DOAR paginilor care o cer si ele: fara `noindex`, cu canonical
+    # pe propria adresa. 29.10.2026: 342 din 1.045 de URL-uri se contraziceau (313 articole
+    # `noindex`, 11 pagini de brand `noindex`, 18 cu canonical spre /cod-reducere/<magazin>) —
+    # sitemap-ul si paginile decideau prin reguli diferite.
+    harta = os.path.join(BUILD, "sitemap.xml.body")
+    if os.path.exists(harta):
+        contra = []
+        for url in re.findall(r"<loc>([^<]+)</loc>", io.open(harta, encoding="utf-8").read()):
+            cale = url.replace("https://amcupon.ro", "").split("?")[0].strip("/")
+            f = os.path.join(BUILD, (cale or "index") + ".html")
+            if "?" in url or not os.path.exists(f):
+                continue
+            head = io.open(f, encoding="utf-8", errors="ignore").read().split("</head>")[0]
+            if re.search(r'<meta name="robots" content="[^"]*noindex', head):
+                contra.append(f"{url}  (noindex)")
+                continue
+            c = re.search(r'<link rel="canonical" href="([^"]*)"', head)
+            if c and c.group(1).rstrip("/") != url.split("?")[0].rstrip("/"):
+                contra.append(f"{url}  (canonical -> {c.group(1)})")
+        stare["sitemap_contradictoriu"] = len(contra)
+        if contra:
+            semnaleaza("sitemap contradictoriu",
+                       f"{len(contra)} URL-uri din sitemap sunt noindex sau isi declara canonical-ul "
+                       f"in alta parte — Google le raporteaza ca erori", contra)
     if fara_h1:
         semnaleaza("fara h1", f"{len(fara_h1)} pagini fara <h1> — Google nu le stie subiectul",
                    fara_h1)

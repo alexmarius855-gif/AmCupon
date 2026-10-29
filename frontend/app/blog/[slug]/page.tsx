@@ -6,7 +6,7 @@ import Image from "next/image";
 import fs from "fs";
 import path from "path";
 
-import { canonicalArticol, construiesteIndexMagazine } from "../../../lib/blogCanonical";
+import { articolFaraPromoActiva, canonicalArticol, construiesteIndexMagazine } from "../../../lib/blogCanonical";
 import type { IndexableProdus } from "../../../lib/seoIndexable";
 import { numeAfisat } from "@/lib/numeMagazin";
 import { pesteMagazine } from "@/lib/cifreSite";
@@ -348,13 +348,9 @@ export async function generateMetadata({
   // Articol auto-generat despre un magazin fara nicio promotie activa = continut subtire,
   // aproape identic intre articole (doar numele magazinului difera). Scos din index ca sa
   // nu deprecieze semnalul de calitate al site-ului pentru cele cu continut real.
-  // 06.10.2026: decizia vine din DATE (output.json), nu din textul descrierii. Descrierea
-  // s-a reformulat („Acum nu e nicio promotie X activa"), iar regula veche, pe „0 promotii
-  // active", ar fi facut indexabile toate paginile subtiri. Regex-ul ramane pentru datele vechi.
+  // Decizia vine din DATE (output.json), prin aceeasi functie ca sitemap-ul (lib/blogCanonical.ts).
   const mag = post.magazin ? magazineDupaSlug().get(post.magazin) : undefined;
-  const faraPromoActiva =
-    /\b0 promotii active\b/.test(post.excerpt) ||
-    (post.tip === "magazin" && !(mag?.are_promotie && (mag.promotii?.length ?? 0) > 0));
+  const faraPromoActiva = articolFaraPromoActiva(post, mag);
   return {
     // post.title include deja " | AmCupon.ro" (vezi generate_blog.py) — nu re-adauga,
     // altfel titlul apare dublat in tab/SERP ("... | AmCupon.ro | AmCupon.ro")

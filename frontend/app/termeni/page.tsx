@@ -4,6 +4,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Termeni și Condiții | AmCupon.ro",
   description: "Termenii și condițiile de utilizare ale platformei AmCupon.ro — coduri de reducere și oferte afiliate din România.",
+  alternates: { canonical: "https://amcupon.ro/termeni" },
 };
 
 export default function TermeniPage() {

@@ -7,7 +7,6 @@ import type { Produs } from "../ProduseClient";
 import { CAT_META } from "../categorie-meta";
 import { CAT_FAQ } from "./categorie-faq";
 
-export { CAT_META };
 
 export async function generateStaticParams() {
   return Object.keys(CAT_META).map((categorie) => ({ categorie }));

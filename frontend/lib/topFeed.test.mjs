@@ -69,6 +69,14 @@ verifica("pungile de cadou sunt ambalaj", intra("seturi-cadou", "Set Pungi Cadou
 verifica("cos cadou cu alcool nu e set cadou", intra("seturi-cadou", "Coș Cadou Premium Golden Prestige – Moët & Chandon, Hennessy", 1499), false);
 verifica("articol -> tema", temaArticol("cel-mai-bun-smartwatch-2026")?.tema, "smartwatch-uri");
 verifica("ghidul de cadouri -> seturi cadou", temaArticol("idei-cadouri-craciun-2026")?.tema, "seturi-cadou");
+verifica("cagula moto intra la iarna pe scuter", intra("echipament-iarna-scuter", "Cagula Oxford Balaclava Thermolite, culoare negru", 52.19), true);
+verifica("sistemul de comunicare pentru casca intra", intra("echipament-iarna-scuter", "Casca Moto Bluetooth 5.4 Techstar MotoCom, Hands-Free, Microfon si Difuzor", 99.97), true);
+verifica("geaca de iarna intra", intra("echipament-iarna-scuter", "Geaca sport captusita de iarna EMIN", 287.76), true);
+verifica("cagula de vara pentru airsoft nu e de iarna", intra("echipament-iarna-scuter", "CAGULA DE MASCARE PENTRU VARA", 55), false);
+verifica("geaca de schi de copii nu e pentru curieri", intra("echipament-iarna-scuter", "Geaca de schi Snowflare Girl Jk", 600), false);
+verifica("haina de blana nu e echipament", intra("echipament-iarna-scuter", "Geaca din fas impermeabil cu Guler si Maneci din Blana de Vulpe Naturala", 1300), false);
+verifica("impermeabilizantul de piatra nu e haina de ploaie", intra("echipament-iarna-scuter", "Impermeabilizant Efect Umed pentru Piatra Naturala", 375), false);
+verifica("ghidul curierilor -> echipament de iarna", temaArticol("echipament-iarna-scuter-curieri-2026")?.tema, "echipament-iarna-scuter");
 verifica("articol fara tema -> null", temaArticol("cea-mai-buna-drona-2026"), null);
 verifica("fiecare articol mapat are o regula", Object.values(ARTICOLE_TEME).every((t) => REGULI_TEME[t.tema]), true);
 verifica("tema fara regula nu primeste nimic", produseTema("televizoare", [{ title: "Televizor LED Samsung 55", price: 2500, url: "x", merchant_slug: "m.ro" }], platit, urmarit).length, 0);

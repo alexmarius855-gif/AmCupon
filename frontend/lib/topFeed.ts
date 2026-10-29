@@ -104,6 +104,14 @@ export const REGULI_TEME: Record<string, RegulaTema> = {
   // Cadou" (bonus la comanda) si ambalajele („Cutie cadou", „Punga Cadou", „Împachetare cadou"); se cere „set
   // cadou" / „gift set". Cosurile cu alcool (casa-bucuriei.ro, „Coș Cadou ... Hennessy") nu intra: nu sunt „set".
   "seturi-cadou": { include: /\b(set(uri)?( de)? cadou|gift set)\b/, exclude: /\b(pungi|punga|cutie|cutii|ambalare|ambalaj|impachetare|hartie|felicitar\w*|gravide)\b/, pretMin: 30 },
+  // Iarna pe scuter, pentru curieri (29.10). NU e „protectie moto": feed-ul n-are geci/manusi
+  // certificate EN 17092 / EN 13594 — doar straturi calde, cagule, comunicare pe casca, baterii.
+  // Prinse la calibrare: cagula „de mascare pentru vara" (airsoft), haine de copii, blanuri.
+  "echipament-iarna-scuter": {
+    include: /^(casca (moto|scuter)|cagula|manusi\b.*\b(tactil\w*|touch\w*|smartphone|iarna|schi|therma\w*|termic\w*|impermeabil\w*)|geaca\b.*\b(iarna|captusit\w*|puf\w*|parka|impermeabil\w*|softshell|schi)\b|baterie externa|power ?bank|lenjerie termica|bluza (tehnica|termica|fleece)|pelerina de ploaie|costum de ploaie|pantaloni de (schi|ploaie)\b)/,
+    exclude: /\b(copii|copil|fete|baieti|girls?|boys?|kids|junior|jr|bebe\w*|vara|mascare|blana)\b/,
+    pretMin: 20,
+  },
 };
 
 export interface TemaArticol {
@@ -154,6 +162,7 @@ export const ARTICOLE_TEME: Record<string, TemaArticol> = {
   "cea-mai-buna-crema-antirid": { tema: "creme-antirid" },
   "cel-mai-bun-fond-de-ten": { tema: "fond-de-ten" },
   "idei-cadouri-craciun": { tema: "seturi-cadou" },
+  "echipament-iarna-scuter-curieri": { tema: "echipament-iarna-scuter" },
 };
 
 /** Tema unui articol dupa slug („cel-mai-bun-smartwatch-2026" -> smartwatch-uri), sau null. */
@@ -212,6 +221,7 @@ export const NUME_TEME: Record<string, string> = {
   "creme-antirid": "creme antirid",
   "fond-de-ten": "fonduri de ten",
   "seturi-cadou": "seturi cadou",
+  "echipament-iarna-scuter": "echipament de iarnă pentru scuter",
 };
 
 /** Numele in fraza; pentru o tema noua, fara intrare, eticheta cu prima litera mica. */

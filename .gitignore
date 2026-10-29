@@ -49,3 +49,6 @@ data/impact_deeplink.json
 
 # Rapoarte locale cu date private (comisioane) — repo-ul e public
 *.local.json
+
+# Flyerul tiparit (scripts/genereaza_flyer.py) — PDF-ul se regenereaza saptamanal
+docs/flyer/*.pdf

@@ -4,6 +4,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Politică de Confidențialitate | AmCupon.ro",
   description: "Politica de confidențialitate AmCupon.ro — cum colectăm, folosim și protejăm datele tale personale conform GDPR.",
+  alternates: { canonical: "https://amcupon.ro/confidentialitate" },
 };
 
 export default function ConfidentialitatePage() {

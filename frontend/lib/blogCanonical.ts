@@ -89,6 +89,22 @@ export function canonicalArticol(post: PostCanonic, magazineIndexabile: Set<stri
 }
 
 /**
+ * Articol de magazin fara nicio promotie activa = `noindex` (continut subtire, aproape identic
+ * intre articole). SURSA UNICA pentru `metadata` din `app/blog/[slug]/page.tsx` SI pentru
+ * `app/sitemap.ts`.
+ *
+ * 29.10.2026: pagina decidea din output.json (din 06.10), sitemap-ul inca din textul descrierii
+ * („0 promotii active"), care se reformulase. Masurat live: 313 articole trimise in sitemap isi
+ * spuneau singure `noindex` — Google le raporteaza ca „Trimisa, dar marcata noindex".
+ */
+export function articolFaraPromoActiva(post: PostCanonic, magazin: MagazinCanonic | undefined): boolean {
+  return (
+    /\b0 promotii active\b/.test(post.excerpt || "") ||
+    (post.tip === "magazin" && !(magazin?.are_promotie && (magazin.promotii?.length ?? 0) > 0))
+  );
+}
+
+/**
  * Articolul cere indexarea propriei adrese?
  *
  * Fals cand isi declara canonical in alta parte — a trimite la indexare un URL

@@ -53,7 +53,9 @@ export const metadata: Metadata = {
   title: "AmCupon.ro - Coduri de reducere si oferte active",
   description: `Coduri de reducere și oferte active de la ${pesteMagazine()} partenere, actualizate de mai multe ori pe zi. 100% gratuit.`,
   metadataBase: new URL("https://amcupon.ro"),
-  alternates: { canonical: "https://amcupon.ro" },
+  // FARA canonical aici: se mosteneste in orice pagina care nu-si pune propriul canonical.
+  // 29.10.2026: /termeni, /confidentialitate, /wishlist se declarau duplicat al primei pagini.
+  // Prima pagina isi pune canonical-ul in app/page.tsx.
   verification: {
     google: "UvsbX8yxIp1eGwFK5ESqVXzA6jT5wjcTartEIPG5mqw",
     other: {

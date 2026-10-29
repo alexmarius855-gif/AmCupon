@@ -2832,6 +2832,108 @@ Crăciun](/blog/idei-cadouri-craciun-2026).
 )
 
 
+# ─── Echipament de iarna pe scuter, pentru curieri ────────────────────────────────────────────────
+# 29.10.2026: Alex livreaza din nou (Bolt Food); ghidul e pentru curierii pe scuter (Glovo, Wolt,
+# Bolt Food). Partenerii n-au echipament moto certificat in feed (2 casti moto, la un magazin fara
+# link platit) — de-aia sectiunea de sub articol e „echipament de iarna", nu „protectie moto".
+articol(
+    "echipament-iarna-scuter-curieri-2026",
+    "Echipament de iarnă pe scuter pentru curieri: ghid 2026",
+    "Ce cere Codul rutier pe scuter, ce standard cauți pe cască, mănuși și geacă, cum te îmbraci pe frig și "
+    "ploaie și cum îți ferești telefonul de frig și de vibrații.",
+    "Auto",
+    f"""
+## Iarna pe scuter, la livrări
+
+Dacă livrezi cu scuterul pentru Glovo, Wolt sau Bolt Food, iarna aduce trei probleme: frigul, ploaia și
+întunericul de după-amiază. Și una pe care o simți abia când ți se închide telefonul în mijlocul unei comenzi.
+Mai jos e ordinea care contează: ce cere legea, ce te protejează dacă aluneci, ce te ține cald și uscat, apoi
+telefonul. La final găsești echipamentul de iarnă pe care îl au azi magazinele partenere.
+
+{CUM_AM_ALES_GHID}
+
+## Ce cere Codul rutier
+
+- **Cască omologată**, pentru tine și pentru pasager, pe moped și pe motocicletă (OUG 195/2002, art. 36
+  alin. 2). O cască de bicicletă nu are omologarea moto.
+- **Faza scurtă aprinsă** pe toată durata drumului, și ziua (art. 44 alin. 3).
+- **Telefonul nu se folosește în mână** cât ești în mers, doar cu dispozitive „mâini libere” (art. 36 alin. 3).
+  Pe scurt: telefonul stă în suport, iar comenzile le preiei când ești oprit.
+- **Lumini și elemente reflectorizant-fluorescente** pe moped. Noaptea nu ai voie să circuli fără ele în stare
+  de funcționare (art. 70 alin. 3). Aceeași regulă e și pentru bicicletă și trotineta electrică.
+
+## Casca: ce cauți pe etichetă
+
+Eticheta de omologare e cusută pe curelușa de sub bărbie. Caută **ECE 22.05** sau **ECE 22.06**:
+
+- **22.06** e seria nouă. Adaugă un test de impact oblic (rotația capului la lovire), un test pentru vizieră și
+  verifică și casca cu accesoriile făcute pentru ea, de exemplu sistemul de comunicare.
+- **Căștile 22.05 rămân legale de purtat.** Pentru o cască nouă, alege una omologată 22.06.
+
+Pe frig, o vizieră care se aburește e un risc real la intersecții. Un inserț anti-aburire montat pe vizieră
+reduce problema. O cagulă subțire sub cască îți ține gâtul și urechile la cald.
+
+## Mănuși, geacă, ghete: standardele de pe etichetă
+
+În UE, îmbrăcămintea de protecție moto e echipament individual de protecție de categoria II (Regulamentul
+2016/425). Pe etichetă are **marcajul CE** și standardul pe care îl respectă:
+
+- **mănuși — EN 13594**, cu nivelul 1 (mai multă mobilitate a degetelor) sau nivelul 2 (mai multă protecție);
+- **geacă și pantaloni — EN 17092**, cu clasa scrisă pe etichetă: AAA e protecția cea mai mare, A cea mai
+  mică; B și C sunt clase separate, iar C doar ține protecțiile pe corp;
+- **ghete — EN 13634**, pe două niveluri de protecție.
+
+O geacă de iarnă obișnuită sau una de schi te ține cald, dar nu e echipament de protecție moto: nu are
+standardul de mai sus. Dacă o porți, pune-o ca strat cald sub o geacă moto, nu în locul ei.
+
+## Frigul și ploaia
+
+- **Straturi**, nu o singură haină groasă: un strat de bază care ține pielea uscată, un strat izolant (fleece
+  sau puf) și un strat exterior care oprește vântul și apa.
+- **Mâinile** îngheață primele, pentru că stau în vânt pe ghidon. Mănușile de iarnă sau manșoanele montate pe
+  ghidon fac diferența pe o tură lungă.
+- **Ploaia:** un costum de ploaie pus peste echipament e mai ușor de uscat între comenzi decât o geacă udă.
+- **Întunericul:** din noiembrie până în ianuarie se întunecă în jur de ora 17, deci o bună parte din tura de
+  seară e pe întuneric. Elementele reflectorizante pe geacă, pe rucsac sau pe cutia de livrare te fac vizibil
+  din lateral, unde farul nu ajută.
+
+## Telefonul: frigul și vibrațiile
+
+- **Frigul.** Apple spune că iPhone-ul e făcut pentru temperaturi între 0 și 35 °C. Sub această limită, bateria
+  poate scădea temporar și telefonul se poate opri. Încărcarea se poate opri și ea („Charging On Hold”) până se
+  încălzește telefonul. Ține bateria externă în buzunarul interior, la cald, nu în cutia de livrare.
+- **Vibrațiile.** Pe mopede și scutere, Apple recomandă un suport cu amortizare a vibrațiilor și evitarea
+  folosirii regulate, pe perioade lungi. Vibrațiile pot afecta stabilizarea și focalizarea camerei. Pentru un
+  curier, care ține telefonul pe ghidon toată tura, suportul cu amortizare e minimul.
+
+## Unde găsești echipamentul
+
+Magazinele de echipament moto partenere sunt pe pagina [Echipament moto](/echipament-moto). Mai jos, din
+feed-urile partenerilor, e echipamentul de iarnă pe care îl au azi: cagule, mănuși, geci, sisteme de
+comunicare pentru cască și baterii externe. Când cumperi o geacă sau mănuși pentru protecție, caută pe pagina
+produsului standardele de mai sus.
+
+[Vezi ofertele de sport și outdoor →](/sport)
+""",
+    [
+        "https://primaria-apahida.ro/wp-content/uploads/2025/06/OUG-195-2002.pdf "
+        "(OUG 195/2002, forma sintetica la 14.03.2024: art. 36 alin. 2 casca omologata pe motocicleta si moped; "
+        "art. 36 alin. 3 telefonul doar cu maini libere; art. 44 alin. 3 faza scurta pe toata durata; "
+        "art. 70 alin. 3 iluminare si dispozitive reflectorizant-fluorescente pe biciclete, mopede, trotinete)",
+        "https://www.euroavocatura.ro/legislatie/1861/Codul_Rutier_actualizat_2024_-_OUG_195_2002 (Codul rutier consolidat 2024)",
+        "https://www.rideapart.com/features/675535/ece-2206-helmet-standard-explained/ "
+        "(ECE 22.06: impact oblic, test de viziera, accesorii; 22.05 ramane legal de purtat; eticheta pe cureaua de sub barbie)",
+        "https://www.eurofins.com/en/consumer-product-testing/softlines-hardlines/news-articles/safeguarding-bikers-navigating-eu-regulations-for-motorcyclist-protective-garments/ "
+        "(imbracamintea moto = EIP categoria II, Reg. 2016/425; EN 17092 clase AAA/AA/A/B/C; EN 13594; EN 13634)",
+        "https://www.centexbel.be/en/node/1829 (EN 17092: AAA cea mai mare protectie, A cea mai mica)",
+        "https://support.apple.com/118431 (iPhone: 0-35 °C; la frig bateria scade temporar, se poate opri, „Charging On Hold”)",
+        "https://support.apple.com/en-us/102175 (vibratii: pe mopede si scutere, suport cu amortizare; evita folosirea "
+        "regulata, perioade lungi)",
+    ],
+    data="2026-10-29",
+)
+
+
 # ─── Scriere si verificari ────────────────────────────────────────────────────────────────────────
 INTERZISE = [
     (re.compile(r"\b\d[\d.]*\s?(?:lei|RON|€|EUR)\b|~\s?\d"), "pret scris in articol"),

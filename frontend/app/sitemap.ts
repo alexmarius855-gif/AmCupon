@@ -4,9 +4,30 @@ import path from "path";
 import { MACRO_ORDINE, getMacro } from "./blog/categories";
 import { buildMerchantTokens, esteIndexabil, type IndexableProdus } from "../lib/seoIndexable";
 import { CAI_REDIRECTIONATE } from "../lib/redirecturi";
-import { ceruteInSitemap, construiesteIndexMagazine } from "../lib/blogCanonical";
+import { articolFaraPromoActiva, ceruteInSitemap, construiesteIndexMagazine } from "../lib/blogCanonical";
+import { gasesteMagazinBrand } from "../lib/brandMagazin";
 
 const BASE_URL = "https://amcupon.ro";
+
+// Paginile de brand cu canonical PROPRIU (vezi metadata din fiecare app/<brand>/page.tsx).
+// Slugurile = cele din apelul `metadataBrand(...)` al paginii. Garda `sitemap contradictoriu`
+// din scripts/verifica_site.py --html prinde orice divergenta (noindex / canonical in alta parte).
+const PAGINI_BRAND_PROPRII: { cale: string; slugs: string[] }[] = [
+  { cale: "/albire-dinti", slugs: ["albirea-dintilor.com", "albire"] },
+  { cale: "/asigurari", slugs: ["ottobroker.ro"] },
+  // Fara program azi (noindex); intra singure in sitemap cand magazinul apare in date.
+  { cale: "/altex", slugs: ["altex.ro", "altex"] },
+  { cale: "/elefant", slugs: ["elefant.ro", "elefant"] },
+  { cale: "/flanco", slugs: ["flanco.ro", "flanco"] },
+  { cale: "/vidaxl", slugs: ["vidaxl.ro", "vidaxl"] },
+  { cale: "/bookzone", slugs: ["bookzone.ro", "bookzone"] },
+  { cale: "/temu", slugs: ["temu.com", "temu"] },
+  { cale: "/shein", slugs: ["shein.com", "shein"] },
+  { cale: "/trendyol", slugs: ["trendyol.com", "trendyol"] },
+  { cale: "/asos", slugs: ["asos.com", "asos"] },
+  { cale: "/iherb", slugs: ["iherb.com", "iherb"] },
+  { cale: "/banggood", slugs: ["banggood.com", "banggood"] },
+];
 
 // Sluguri pagini /top/[slug] — citite dinamic din top-produse.json
 function getTopSluguriDinamic(): string[] {
@@ -76,6 +97,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // articole, deci reconstruia indexul celor 1.156 de magazine pentru fiecare din
   // cele 163 de articole — 188.000 de verificari in loc de 1.156.
   const magazineIndexabile = construiesteIndexMagazine(magazine, produseFeed);
+  const magazineDupaSlug = new Map(magazine.map((m) => [m.magazin, m]));
 
   let blogPosts: { slug: string; date: string; category: string; excerpt?: string; magazin?: string | null; tip?: string | null }[] = [];
   const blogPath = path.join(process.cwd(), "public", "blog-posts.json");
@@ -187,25 +209,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
 
     // ─── Pagini brand-uri mari ───────────────────────────────────────────────
-    { url: `${BASE_URL}/altex`,                   lastModified: ultimaModificare(`${BASE_URL}/altex`), changeFrequency: "daily",   priority: 0.85 },
-    { url: `${BASE_URL}/elefant`,                 lastModified: ultimaModificare(`${BASE_URL}/elefant`), changeFrequency: "daily",   priority: 0.8  },
-    { url: `${BASE_URL}/decathlon`,               lastModified: ultimaModificare(`${BASE_URL}/decathlon`), changeFrequency: "daily",   priority: 0.8  },
-    { url: `${BASE_URL}/carturesti`,              lastModified: ultimaModificare(`${BASE_URL}/carturesti`), changeFrequency: "daily",   priority: 0.8  },
-    { url: `${BASE_URL}/drmax`,                   lastModified: ultimaModificare(`${BASE_URL}/drmax`), changeFrequency: "daily",   priority: 0.8  },
-    { url: `${BASE_URL}/noriel`,                  lastModified: ultimaModificare(`${BASE_URL}/noriel`), changeFrequency: "daily",   priority: 0.8  },
-    { url: `${BASE_URL}/petmart`,                 lastModified: ultimaModificare(`${BASE_URL}/petmart`), changeFrequency: "daily",   priority: 0.75 },
-    { url: `${BASE_URL}/brico`,                   lastModified: ultimaModificare(`${BASE_URL}/brico`), changeFrequency: "daily",   priority: 0.75 },
-    { url: `${BASE_URL}/liki24`,                  lastModified: ultimaModificare(`${BASE_URL}/liki24`), changeFrequency: "daily",   priority: 0.75 },
-    { url: `${BASE_URL}/vidaxl`,                  lastModified: ultimaModificare(`${BASE_URL}/vidaxl`), changeFrequency: "daily",   priority: 0.75 },
-    { url: `${BASE_URL}/answear`,                 lastModified: ultimaModificare(`${BASE_URL}/answear`), changeFrequency: "daily",   priority: 0.8  },
-    { url: `${BASE_URL}/notino`,                  lastModified: ultimaModificare(`${BASE_URL}/notino`), changeFrequency: "daily",   priority: 0.8  },
-    { url: `${BASE_URL}/flanco`,                  lastModified: ultimaModificare(`${BASE_URL}/flanco`), changeFrequency: "daily",   priority: 0.8  },
-    { url: `${BASE_URL}/bookzone`,                lastModified: ultimaModificare(`${BASE_URL}/bookzone`), changeFrequency: "daily",   priority: 0.8  },
-    { url: `${BASE_URL}/petmax`,                  lastModified: ultimaModificare(`${BASE_URL}/petmax`), changeFrequency: "daily",   priority: 0.75 },
-    { url: `${BASE_URL}/sportdepot`,              lastModified: ultimaModificare(`${BASE_URL}/sportdepot`), changeFrequency: "daily",   priority: 0.8  },
-    { url: `${BASE_URL}/automobilus`,             lastModified: ultimaModificare(`${BASE_URL}/automobilus`), changeFrequency: "daily",   priority: 0.75 },
-    { url: `${BASE_URL}/litera`,                  lastModified: ultimaModificare(`${BASE_URL}/litera`), changeFrequency: "daily",   priority: 0.75 },
-    { url: `${BASE_URL}/otter`,                   lastModified: ultimaModificare(`${BASE_URL}/otter`), changeFrequency: "daily",   priority: 0.75 },
+    // Doar paginile de brand care isi declara canonical-ul pe ele insele SI au magazinul in
+    // date (altfel metadataBrand le face `noindex`). Celelalte 18 (drmax, decathlon, notino,
+    // answear...) au canonical catre /cod-reducere/<magazin> (canibalizare, 10.08) — pagina de
+    // magazin intra deja prin lista de la final. Vezi lib/brandMagazin.ts.
+    ...PAGINI_BRAND_PROPRII
+      .filter((b) => gasesteMagazinBrand(magazine, b.slugs))
+      .map((b) => ({
+        url: `${BASE_URL}${b.cale}`, lastModified: ultimaModificare(`${BASE_URL}${b.cale}`),
+        changeFrequency: "daily" as const, priority: 0.8,
+      })),
     { url: `${BASE_URL}/recomandari`,             lastModified: ultimaModificare(`${BASE_URL}/recomandari`), changeFrequency: "monthly", priority: 0.7  },
     { url: `${BASE_URL}/servicii`,                lastModified: ultimaModificare(`${BASE_URL}/servicii`), changeFrequency: "daily",   priority: 0.85 },
     { url: `${BASE_URL}/servicii-internationale`, lastModified: ultimaModificare(`${BASE_URL}/servicii-internationale`), changeFrequency: "weekly",  priority: 0.75 },
@@ -215,19 +228,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/calculatoare`,            lastModified: ultimaModificare(`${BASE_URL}/calculatoare`), changeFrequency: "monthly", priority: 0.8  },
     { url: `${BASE_URL}/calculatoare/reducere`,   lastModified: ultimaModificare(`${BASE_URL}/calculatoare/reducere`), changeFrequency: "monthly", priority: 0.85 },
     { url: `${BASE_URL}/calculatoare/marimi`,     lastModified: ultimaModificare(`${BASE_URL}/calculatoare/marimi`), changeFrequency: "monthly", priority: 0.8  },
-    { url: `${BASE_URL}/albire-dinti`,            lastModified: ultimaModificare(`${BASE_URL}/albire-dinti`), changeFrequency: "weekly",  priority: 0.75 },
-    { url: `${BASE_URL}/asigurari`,               lastModified: ultimaModificare(`${BASE_URL}/asigurari`), changeFrequency: "weekly",  priority: 0.8  },
     { url: `${BASE_URL}/software-business`,       lastModified: ultimaModificare(`${BASE_URL}/software-business`), changeFrequency: "weekly",  priority: 0.8  },
-    { url: `${BASE_URL}/temu`,                    lastModified: ultimaModificare(`${BASE_URL}/temu`), changeFrequency: "daily",   priority: 0.8  },
-    { url: `${BASE_URL}/shein`,                   lastModified: ultimaModificare(`${BASE_URL}/shein`), changeFrequency: "daily",   priority: 0.8  },
-    { url: `${BASE_URL}/trendyol`,                lastModified: ultimaModificare(`${BASE_URL}/trendyol`), changeFrequency: "daily",   priority: 0.8  },
-    { url: `${BASE_URL}/amazon`,                  lastModified: ultimaModificare(`${BASE_URL}/amazon`), changeFrequency: "daily",   priority: 0.85 },
-    { url: `${BASE_URL}/asos`,                    lastModified: ultimaModificare(`${BASE_URL}/asos`), changeFrequency: "daily",   priority: 0.8  },
-    { url: `${BASE_URL}/iherb`,                   lastModified: ultimaModificare(`${BASE_URL}/iherb`), changeFrequency: "weekly",  priority: 0.75 },
-    { url: `${BASE_URL}/banggood`,                lastModified: ultimaModificare(`${BASE_URL}/banggood`), changeFrequency: "daily",   priority: 0.75 },
-    { url: `${BASE_URL}/scule365`,                lastModified: ultimaModificare(`${BASE_URL}/scule365`), changeFrequency: "daily",   priority: 0.75 },
-    { url: `${BASE_URL}/kitunghii`,               lastModified: ultimaModificare(`${BASE_URL}/kitunghii`), changeFrequency: "daily",   priority: 0.75 },
-    { url: `${BASE_URL}/pfarma`,                  lastModified: ultimaModificare(`${BASE_URL}/pfarma`), changeFrequency: "daily",   priority: 0.75 },
 
     // ─── Cadouri nisa ───────────────────────────────────────────────────────
     { url: `${BASE_URL}/cadouri`,                 lastModified: ultimaModificare(`${BASE_URL}/cadouri`), changeFrequency: "weekly",  priority: 0.9  },
@@ -290,7 +291,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // subtire/templat, noindex si in generateMetadata din blog/[slug]/page.tsx) —
     // sa nu iroseasca bugetul de crawl Google pe pagini fara valoare unica.
     ...blogPosts
-      .filter((p) => !/\b0 promotii active\b/.test(p.excerpt || ""))
+      // Aceeasi decizie ca `robots` din blog/[slug]/page.tsx (lib/blogCanonical.ts).
+      .filter((p) => !articolFaraPromoActiva(p, p.magazin ? magazineDupaSlug.get(p.magazin) : undefined))
       // Si articolele care isi declara canonical catre pagina de magazin: a trimite
       // la indexare un URL care se declara duplicat e un semnal care se contrazice
       // singur. Aceeasi regula aplicata paginilor /nisa/* pe 16.08.

@@ -12,6 +12,25 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 29.10.2026 — SITEMAP-UL SE CONTRAZICEA CU PAGINILE + ghid curieri + flyer:** crawl live pe toate cele
+1.045 de URL-uri din sitemap (toate 200): **342 isi spuneau singure „nu ma indexa"** — 313 articole de magazin
+`noindex` (pagina decidea din output.json din 06.10, sitemap-ul inca din textul descrierii), 11 pagini de brand fara
+program (`noindex`) si 18 pagini de brand cu canonical spre `/cod-reducere/<magazin>`; plus /termeni, /confidentialitate,
+/wishlist cu canonical spre PRIMA PAGINA (mostenit din `layout.tsx`). Acum: `lib/blogCanonical.ts::articolFaraPromoActiva`
+(aceeasi functie pentru `robots` si sitemap), `lib/brandMagazin.ts::gasesteMagazinBrand` (mutat din BrandPageTemplate,
+citit si de sitemap; in sitemap doar paginile de brand cu canonical propriu, `PAGINI_BRAND_PROPRII`), canonical scos din
+layout. Sitemap **1.045 -> 704**. **Garda noua `sitemap contradictoriu`** in `verifica_site.py --html`: orice URL din
+`.next/server/app/sitemap.xml.body` care e `noindex` sau are canonical in alta parte = rosu (a prins cele 3 pagini legale).
+Build local cu `npx next build --webpack` in worktree; `export { CAT_META }` din `produse/[categorie]/page.tsx` pica
+verificarea de tipuri a rutei (nefolosit), scos. **Ghid nou** `echipament-iarna-scuter-curieri-2026` (curieri pe scuter:
+OUG 195/2002 art. 36 alin. 2-3, 44 alin. 3, 70 alin. 3; ECE 22.05/22.06; EN 17092/13594/13634; Apple 0-35 °C si vibratii)
++ tema `echipament-iarna-scuter` (92 de produse, 12 parteneri — feed-ul NU are echipament moto certificat, de-aia tema e
+de iarna, nu de protectie). **Flyer de tiparit:** `scripts/genereaza_flyer.py` -> `docs/flyer/flyer.html` + `.pdf` (Edge
+headless, PDF in .gitignore): 4 x A6 pe A4, varianta „oferte" (clienti, restaurante; ofertele saptamanii din output.json,
+.ro + link platit + valabile >= 10 zile, FARA cod tiparit) si „curieri". QR-urile = matrice in script, generate cu
+qrcode-generator 1.4.4 si citite inapoi cu jsQR. Adrese scurte `/curieri`, `/oferte` = redirect 307 cu UTM
+(`lib/redirecturi.ts`). Ruleaza-l saptamanal.
+
 **UPDATE 27.10.2026 — preturi in ALTA MONEDA afisate in lei, scoase la sursa:** feed-urile 2Performant nu
 spun moneda (API-ul da `price` fara valuta). Pe site: „Shark FlexStyle ... 319,99 lei" pe
 `/cod-reducere/cloud10beauty.com` (linkurile au `currency=eur` — ~1.590 lei real), puloverele iclothing.com
