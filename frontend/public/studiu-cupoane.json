@@ -1,10 +1,10 @@
 {
   "generat": "2026-10-29",
   "total_magazine": 456,
-  "cu_promotie": 92,
+  "cu_promotie": 95,
   "cu_cod_real": 3,
-  "doar_oferta": 89,
-  "procent_cu_promotie": 20.2,
+  "doar_oferta": 92,
+  "procent_cu_promotie": 20.8,
   "procent_cu_cod": 0.7,
   "reducere_mediana_generala": 37.0,
   "magazine_cu_procent_declarat": 56,
@@ -67,7 +67,7 @@
       "slug": "fashion",
       "nume": "Fashion",
       "magazine": 53,
-      "cu_promotie": 12,
+      "cu_promotie": 15,
       "reducere_mediana": 35,
       "reducere_max": 70,
       "esantion": 9
@@ -156,8 +156,8 @@
   ],
   "criteriu": "domeniu .ro",
   "international": {
-    "total": 504,
-    "cu_promotie": 60,
+    "total": 503,
+    "cu_promotie": 62,
     "cu_cod": 36
   },
   "retele": [

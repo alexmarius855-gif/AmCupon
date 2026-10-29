@@ -2539,6 +2539,50 @@
     "unique_code": "07b5f0fed"
   },
   {
+    "magazin": "noriel.ro",
+    "url": "https://noriel.ro/",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnoriel.ro%2F",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/7926/medium/7926.png",
+    "categorie": "Copii & Familie",
+    "categorie_slug": "copii",
+    "comision": "7.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 2,
+    "promotii": [
+      {
+        "nume": "20% REDUCERE la cumparaturi LEGO Friends de minimum 149 lei | 19-31.10.2026",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnoriel.ro%2Flego-friends",
+        "zile_ramase": 2,
+        "expira": "2026-10-31",
+        "sursa": "2performant_api"
+      },
+      {
+        "nume": "Black Friday | Reduceri de pana la 70% | 30 octombrie - 15 noiembrie",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnoriel.ro%2F",
+        "zile_ramase": 17,
+        "expira": "2026-11-15",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-29",
+    "scor_final": 40.0,
+    "program_id": 2615,
+    "unique_code": "bb3071a7d"
+  },
+  {
     "magazin": "librarie.net",
     "url": "https://www.librarie.net/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.librarie.net%2F",
@@ -3289,6 +3333,15 @@
         "zile_ramase": 2,
         "expira": "2026-10-31",
         "sursa": "2performant_api"
+      },
+      {
+        "nume": "Black Friday la Lila Nails Boutique: reduceri reale de pana la 79%, intre 6–8 noiembrie!",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Flinailsboutique.ro%2F",
+        "zile_ramase": 10,
+        "expira": "2026-11-08",
+        "sursa": "2performant_api"
       }
     ],
     "exclusiv": false,
@@ -3622,6 +3675,15 @@
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbaristelli.ro%2Fproducts%2Fcosta-rica-tres-nubes%3F_pos%3D1%26_sid%3D667d901d3%26_ss%3Dr",
         "zile_ramase": 2,
         "expira": "2026-10-31",
+        "sursa": "2performant_api"
+      },
+      {
+        "nume": "Black Friday la Baristelli ☕",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbaristelli.ro%2F",
+        "zile_ramase": 10,
+        "expira": "2026-11-08",
         "sursa": "2performant_api"
       }
     ],
@@ -4126,6 +4188,41 @@
     "unique_code": "7e4f6d98f"
   },
   {
+    "magazin": "answear.ro",
+    "url": "https://answear.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fanswear.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/2561/medium/2561.png",
+    "categorie": "Fashion",
+    "categorie_slug": "fashion",
+    "comision": "7.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 4,
+    "promotii": [
+      {
+        "nume": "LUCKY FRIDAY",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fanswear.ro%2Fs%2Fblack-friday%3Futm_medium%3Daffiliate%26utm_source%3D2parale%26utm_campaign%3Dlucky_friday_102026",
+        "zile_ramase": 4,
+        "expira": "2026-11-02",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-29",
+    "scor_final": 30.0,
+    "program_id": 907,
+    "unique_code": "a5e9e1225"
+  },
+  {
     "magazin": "otter.ro",
     "url": "https://www.otter.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.otter.ro%2F",
@@ -4194,59 +4291,6 @@
     "scor_final": 30.0,
     "program_id": 10325,
     "unique_code": "8e59c17b0"
-  },
-  {
-    "magazin": "noriel.ro",
-    "url": "https://noriel.ro/",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnoriel.ro%2F",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/7926/medium/7926.png",
-    "categorie": "Copii & Familie",
-    "categorie_slug": "copii",
-    "comision": "7.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 0,
-    "promotii": [
-      {
-        "nume": "Reduceri de Toamna | 12-29.10.2026",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnoriel.ro%2Fpromotii",
-        "zile_ramase": 0,
-        "expira": "2026-10-29",
-        "sursa": "2performant_api"
-      },
-      {
-        "nume": "20% REDUCERE la cumparaturi LEGO Friends de minimum 149 lei | 19-31.10.2026",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnoriel.ro%2Flego-friends",
-        "zile_ramase": 2,
-        "expira": "2026-10-31",
-        "sursa": "2performant_api"
-      },
-      {
-        "nume": "Black Friday | Reduceri de pana la 70% | 30 octombrie - 15 noiembrie",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnoriel.ro%2F",
-        "zile_ramase": 17,
-        "expira": "2026-11-15",
-        "sursa": "2performant_api"
-      }
-    ],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-29",
-    "scor_final": 30.0,
-    "program_id": 2615,
-    "unique_code": "bb3071a7d"
   },
   {
     "magazin": "evomag.ro",
@@ -4711,6 +4755,15 @@
         "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fsomnart.ro%2Fautumn-2026",
         "zile_ramase": 1,
         "expira": "2026-10-30",
+        "sursa": "2performant_api"
+      },
+      {
+        "nume": "Black Friday 2026",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fsomnart.ro%2Fbf-2026",
+        "zile_ramase": 33,
+        "expira": "2026-12-01",
         "sursa": "2performant_api"
       }
     ],
@@ -5316,6 +5369,41 @@
     "scor_final": 30.0,
     "program_id": 10076,
     "unique_code": "f9db13aad"
+  },
+  {
+    "magazin": "underarmour.ro",
+    "url": "https://www.underarmour.ro/",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.underarmour.ro%2F",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/10618/medium/10618.jpg",
+    "categorie": "Fashion",
+    "categorie_slug": "fashion",
+    "comision": "5.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 32,
+    "promotii": [
+      {
+        "nume": "Comision de afiliere majorat pentru o perioada limitata | Under Armour",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.underarmour.ro%2Fblack-friday",
+        "zile_ramase": 32,
+        "expira": "2026-11-30",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-29",
+    "scor_final": 30.0,
+    "program_id": 9705,
+    "unique_code": "522f2a38e"
   },
   {
     "magazin": "infinity.ro",
@@ -5931,6 +6019,50 @@
     "unique_code": "dbde49f67"
   },
   {
+    "magazin": "longevity-boost.com",
+    "url": "https://longevity-boost.com",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Flongevity-boost.com",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14512/medium/14512.jpg",
+    "categorie": "Sănătate & Farmacie",
+    "categorie_slug": "sanatate",
+    "comision": "15.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 6,
+    "promotii": [
+      {
+        "nume": "-20% + încă 20% la suplimentele Longevity BOOST",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Flongevity-boost.com%2Fcollections%2Fproduse",
+        "zile_ramase": 6,
+        "expira": "2026-11-04",
+        "sursa": "2performant_api"
+      },
+      {
+        "nume": "Black Friday: -35% + 2 produse full size cadou la Longevity BOOST",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Flongevity-boost.com%2Fcollections%2Fproduse",
+        "zile_ramase": 21,
+        "expira": "2026-11-19",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-29",
+    "scor_final": 30.0,
+    "program_id": 13189,
+    "unique_code": "28cd17dbc"
+  },
+  {
     "magazin": "intimplay.ro",
     "url": "https://www.intimplay.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.intimplay.ro",
@@ -6034,6 +6166,41 @@
     "scor_final": 30.0,
     "program_id": 13197,
     "unique_code": "7875d2dab"
+  },
+  {
+    "magazin": "menzo.ro",
+    "url": "https://menzo.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fmenzo.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14560/medium/14560.jpg",
+    "categorie": "Fashion",
+    "categorie_slug": "fashion",
+    "comision": "9.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 17,
+    "promotii": [
+      {
+        "nume": "Reducere de Black Friday pentru Menzo.ro",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.menzo.ro%2F",
+        "zile_ramase": 17,
+        "expira": "2026-11-15",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-29",
+    "scor_final": 30.0,
+    "program_id": 13240,
+    "unique_code": "479d5acd3"
   },
   {
     "magazin": "printingmall.ro",
@@ -6306,6 +6473,50 @@
     "scor_final": 30.0,
     "program_id": 13281,
     "unique_code": "9c642f7e3"
+  },
+  {
+    "magazin": "startinscoala.shop",
+    "url": "https://startinscoala.shop",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fstartinscoala.shop",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14634/medium/14634.PNG",
+    "categorie": "Cărți & Educație",
+    "categorie_slug": "carti-educatie",
+    "comision": "10.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 17,
+    "promotii": [
+      {
+        "nume": "Reducere la prima coamnda",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fstartinscoala.shop%2F",
+        "zile_ramase": 31,
+        "expira": "2026-11-29",
+        "sursa": "2performant_api"
+      },
+      {
+        "nume": "Promotie de Black Friday la www.startinscoala.shop",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fstartinscoala.shop%2Fpages%2Fblack-friday-2026",
+        "zile_ramase": 17,
+        "expira": "2026-11-15",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-29",
+    "scor_final": 30.0,
+    "program_id": 13315,
+    "unique_code": "b91f1c19b"
   },
   {
     "magazin": "surfshark.com",
@@ -16826,31 +17037,6 @@
     "unique_code": "1ec3596e6"
   },
   {
-    "magazin": "answear.ro",
-    "url": "https://answear.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fanswear.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/2561/medium/2561.png",
-    "categorie": "Fashion",
-    "categorie_slug": "fashion",
-    "comision": "7.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-29",
-    "scor_final": 0.0,
-    "program_id": 907,
-    "unique_code": "a5e9e1225"
-  },
-  {
     "magazin": "kitunghii.ro",
     "url": "https://www.kitunghii.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.kitunghii.ro",
@@ -20501,31 +20687,6 @@
     "unique_code": "fec8438a9"
   },
   {
-    "magazin": "izziepublishing.com",
-    "url": "https://izziepublishing.com",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fizziepublishing.com",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/12594/medium/12594.JPG",
-    "categorie": "Cărți & Educație",
-    "categorie_slug": "carti-educatie",
-    "comision": "10.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-29",
-    "scor_final": 0.0,
-    "program_id": 11176,
-    "unique_code": "63e212d60"
-  },
-  {
     "magazin": "catenapascupas.ro",
     "url": "https://www.catenapascupas.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.catenapascupas.ro",
@@ -20924,31 +21085,6 @@
     "scor_final": 0.0,
     "program_id": 10090,
     "unique_code": "e62532c33"
-  },
-  {
-    "magazin": "underarmour.ro",
-    "url": "https://www.underarmour.ro/",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.underarmour.ro%2F",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/10618/medium/10618.jpg",
-    "categorie": "Fashion",
-    "categorie_slug": "fashion",
-    "comision": "5.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-29",
-    "scor_final": 0.0,
-    "program_id": 9705,
-    "unique_code": "522f2a38e"
   },
   {
     "magazin": "asus.com",
@@ -24726,31 +24862,6 @@
     "unique_code": "9d3ef1516"
   },
   {
-    "magazin": "longevity-boost.com",
-    "url": "https://longevity-boost.com",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Flongevity-boost.com",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14512/medium/14512.jpg",
-    "categorie": "Sănătate & Farmacie",
-    "categorie_slug": "sanatate",
-    "comision": "15.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-29",
-    "scor_final": 0.0,
-    "program_id": 13189,
-    "unique_code": "28cd17dbc"
-  },
-  {
     "magazin": "meteoris.es",
     "url": "https://meteoris.es",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fmeteoris.es",
@@ -24974,31 +25085,6 @@
     "scor_final": 0.0,
     "program_id": 5223,
     "unique_code": "f44fd3c8f"
-  },
-  {
-    "magazin": "menzo.ro",
-    "url": "https://menzo.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fmenzo.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14560/medium/14560.jpg",
-    "categorie": "Fashion",
-    "categorie_slug": "fashion",
-    "comision": "9.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-29",
-    "scor_final": 0.0,
-    "program_id": 13240,
-    "unique_code": "479d5acd3"
   },
   {
     "magazin": "patuldeacasa.ro",
@@ -26224,31 +26310,6 @@
     "scor_final": 0.0,
     "program_id": 13313,
     "unique_code": "92d3858ab"
-  },
-  {
-    "magazin": "startinscoala.shop",
-    "url": "https://startinscoala.shop",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fstartinscoala.shop",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14634/medium/14634.PNG",
-    "categorie": "Cărți & Educație",
-    "categorie_slug": "carti-educatie",
-    "comision": "10.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-29",
-    "scor_final": 0.0,
-    "program_id": 13315,
-    "unique_code": "b91f1c19b"
   },
   {
     "magazin": "kamevia.ro",

@@ -548,8 +548,8 @@
    "magazine": 144
   },
   "2026-10-29": {
-   "promotii": 285,
-   "magazine": 147
+   "promotii": 294,
+   "magazine": 152
   }
  },
  "magazine": {
@@ -689,6 +689,15 @@
    }
   ],
   "answear.ro": [
+   {
+    "k": "luckyfriday|",
+    "titlu": "LUCKY FRIDAY",
+    "cod": false,
+    "prima": "2026-10-29",
+    "ultima": "2026-10-29",
+    "expira": "2026-11-02",
+    "activa": true
+   },
    {
     "k": "15yearsofanswear|",
     "titlu": "15 YEARS OF ANSWEAR",
@@ -1346,6 +1355,15 @@
    }
   ],
   "baristelli.ro": [
+   {
+    "k": "blackfridaylabaristelli|",
+    "titlu": "Black Friday la Baristelli ☕",
+    "cod": false,
+    "prima": "2026-10-29",
+    "ultima": "2026-10-29",
+    "expira": "2026-11-08",
+    "activa": true
+   },
    {
     "k": "cafeaualuniicostaricatresnubes|",
     "titlu": "☕ Cafeaua lunii - Costa Rica Tres Nubes",
@@ -5918,6 +5936,15 @@
   ],
   "linailsboutique.ro": [
    {
+    "k": "blackfridaylalilanailsboutiquereducerirealedepanala79intre68noiembrie|",
+    "titlu": "Black Friday la Lila Nails Boutique: reduceri reale de pana la 79%, intre 6–8 noiembrie!",
+    "cod": false,
+    "prima": "2026-10-29",
+    "ultima": "2026-10-29",
+    "expira": "2026-11-08",
+    "activa": true
+   },
+   {
     "k": "fonddetennilia30mlpretdelansare148lei|",
     "titlu": "Fond de ten Nilia 30 ml – pret de lansare 148 lei",
     "cod": false,
@@ -6073,6 +6100,26 @@
     "ultima": "2026-07-30",
     "expira": "2026-07-30",
     "activa": false
+   }
+  ],
+  "longevity-boost.com": [
+   {
+    "k": "blackfriday352produsefullsizecadoulalongevityboost|",
+    "titlu": "Black Friday: -35% + 2 produse full size cadou la Longevity BOOST",
+    "cod": false,
+    "prima": "2026-10-29",
+    "ultima": "2026-10-29",
+    "expira": "2026-11-19",
+    "activa": true
+   },
+   {
+    "k": "20inca20lasuplimentelelongevityboost|",
+    "titlu": "-20% + încă 20% la suplimentele Longevity BOOST",
+    "cod": false,
+    "prima": "2026-10-29",
+    "ultima": "2026-10-29",
+    "expira": "2026-11-04",
+    "activa": true
    }
   ],
   "lovepadel.ie": [
@@ -6373,6 +6420,17 @@
     "ultima": "2026-05-24",
     "expira": "",
     "activa": false
+   }
+  ],
+  "menzo.ro": [
+   {
+    "k": "reduceredeblackfridaypentrumenzoro|",
+    "titlu": "Reducere de Black Friday pentru Menzo.ro",
+    "cod": false,
+    "prima": "2026-10-29",
+    "ultima": "2026-10-29",
+    "expira": "2026-11-15",
+    "activa": true
    }
   ],
   "mobidea.ro": [
@@ -6898,7 +6956,7 @@
     "prima": "2026-10-12",
     "ultima": "2026-10-29",
     "expira": "2026-10-29",
-    "activa": true
+    "activa": false
    },
    {
     "k": "20reducerelacumparaturilegocitysaulegostarwarsdeminimum149lei1218102026|",
@@ -7933,6 +7991,15 @@
   ],
   "somnart.ro": [
    {
+    "k": "blackfriday2026|",
+    "titlu": "Black Friday 2026",
+    "cod": false,
+    "prima": "2026-10-29",
+    "ultima": "2026-10-29",
+    "expira": "2026-12-01",
+    "activa": true
+   },
+   {
     "k": "toamnaaducecadourilasutedeproduse|",
     "titlu": "Toamna aduce cadouri la sute de produse",
     "cod": false,
@@ -8088,6 +8155,26 @@
     "ultima": "2026-07-02",
     "expira": "2026-12-31",
     "activa": false
+   }
+  ],
+  "startinscoala.shop": [
+   {
+    "k": "reducerelaprimacoamnda|",
+    "titlu": "Reducere la prima coamnda",
+    "cod": false,
+    "prima": "2026-10-29",
+    "ultima": "2026-10-29",
+    "expira": "2026-11-29",
+    "activa": true
+   },
+   {
+    "k": "promotiedeblackfridaylawwwstartinscoalashop|",
+    "titlu": "Promotie de Black Friday la www.startinscoala.shop",
+    "cod": false,
+    "prima": "2026-10-29",
+    "ultima": "2026-10-29",
+    "expira": "2026-11-15",
+    "activa": true
    }
   ],
   "store.pongbotsports.com": [
@@ -8420,6 +8507,17 @@
     "ultima": "2026-09-15",
     "expira": "2026-09-18",
     "activa": false
+   }
+  ],
+  "underarmour.ro": [
+   {
+    "k": "comisiondeafilieremajoratpentruoperioadalimitataunderarmour|",
+    "titlu": "Comision de afiliere majorat pentru o perioada limitata | Under Armour",
+    "cod": false,
+    "prima": "2026-10-29",
+    "ultima": "2026-10-29",
+    "expira": "2026-11-30",
+    "activa": true
    }
   ],
   "uniquestore.ro": [
