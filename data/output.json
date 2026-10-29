@@ -5518,6 +5518,15 @@
         "zile_ramase": 0,
         "expira": "2026-10-29",
         "sursa": "2performant_api"
+      },
+      {
+        "nume": "Black Friday la Editura Casa: reduceri de până la 78%!",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.edituracasa.ro%2F",
+        "zile_ramase": 9,
+        "expira": "2026-11-07",
+        "sursa": "2performant_api"
       }
     ],
     "exclusiv": false,

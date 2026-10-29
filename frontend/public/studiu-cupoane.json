@@ -6,17 +6,17 @@
   "doar_oferta": 89,
   "procent_cu_promotie": 20.2,
   "procent_cu_cod": 0.7,
-  "reducere_mediana_generala": 36,
-  "magazine_cu_procent_declarat": 55,
+  "reducere_mediana_generala": 37.0,
+  "magazine_cu_procent_declarat": 56,
   "categorii": [
     {
       "slug": "carti-educatie",
       "nume": "Cărți & educație",
       "magazine": 21,
       "cu_promotie": 8,
-      "reducere_mediana": 90,
+      "reducere_mediana": 84.0,
       "reducere_max": 90,
-      "esantion": 5
+      "esantion": 6
     },
     {
       "slug": "cadouri-flori",

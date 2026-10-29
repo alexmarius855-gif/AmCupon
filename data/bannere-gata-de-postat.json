@@ -1,5 +1,31 @@
 [
   {
+    "id": 273764,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273723/original/273723.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=7c506ad30&aff_code=541547473&campaign_unique=44ad2ee96",
+    "landing_raw": "https://www.petit-bebe.ro/black-friday-2026.html",
+    "width": 900,
+    "height": 900,
+    "merchant": "petit-bebe.ro",
+    "merchant_slug": "petit-bebe-ro",
+    "name": "Baby",
+    "category": "Baby",
+    "b_type": "image"
+  },
+  {
+    "id": 273753,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273712/original/273712.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=97fd1c3bd&aff_code=541547473&campaign_unique=6c9dd9bd3",
+    "landing_raw": "https://gorgeaux.ro",
+    "width": 1254,
+    "height": 1254,
+    "merchant": "gorgeaux.ro",
+    "merchant_slug": "gorgeaux-ro",
+    "name": "Black Friday 2026",
+    "category": "Black Friday 2026",
+    "b_type": "image"
+  },
+  {
     "id": 273748,
     "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273707/original/273707.jpg",
     "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=3b0196de5&aff_code=541547473&campaign_unique=7e5ed3049",

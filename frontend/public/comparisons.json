@@ -31,19 +31,14 @@
       "partener": false
     },
     "stats2": {
-      "promotii_active": 1,
+      "promotii_active": 0,
       "coduri": "—",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/2561/medium/2561.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fanswear.ro",
       "partener": true
     },
     "promo1": [],
-    "promo2": [
-      {
-        "nume": "15 YEARS OF ANSWEAR",
-        "cod_cupon": ""
-      }
-    ],
+    "promo2": [],
     "faq": [
       {
         "q": "Care este mai bun, Fashiondays sau Answear?",
@@ -55,7 +50,7 @@
       },
       {
         "q": "Are Answear coduri de reducere active?",
-        "a": "Da, Answear are 1 oferta activa pe AmCupon.ro in octombrie 2026. Ofertele se actualizeaza automat de trei ori pe zi."
+        "a": "Momentan nu, Answear are 0 oferte active pe AmCupon.ro in octombrie 2026. Ofertele se actualizeaza automat de trei ori pe zi."
       },
       {
         "q": "Unde gasesc cupoane pentru Fashiondays si Answear?",

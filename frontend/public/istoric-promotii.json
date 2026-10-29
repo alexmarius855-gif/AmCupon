@@ -548,7 +548,7 @@
    "magazine": 144
   },
   "2026-10-29": {
-   "promotii": 284,
+   "promotii": 285,
    "magazine": 147
   }
  },
@@ -2760,6 +2760,15 @@
    }
   ],
   "edituracasa.ro": [
+   {
+    "k": "blackfridaylaedituracasareduceridepanala78|",
+    "titlu": "Black Friday la Editura Casa: reduceri de până la 78%!",
+    "cod": false,
+    "prima": "2026-10-29",
+    "ultima": "2026-10-29",
+    "expira": "2026-11-07",
+    "activa": true
+   },
    {
     "k": "prietenameaconni|",
     "titlu": "Prietena mea Conni",
