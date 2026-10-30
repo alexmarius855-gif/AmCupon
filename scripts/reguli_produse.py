@@ -40,6 +40,9 @@ from urllib.parse import unquote as _unquote
 MONEDA_VERIFICATA = {
     # titluri scurte in engleza (CORTADO, FLAT WHITE); pagina produsului: "priceCurrency":"RON" (27.10.2026)
     "112coffee.com": "RON",
+    # IT/birotica, titluri de catalog (MONITOR 34 LG..., CAMERA IP TURRET): doar 6 din 49 trec de PRAG_TITLURI_RO.
+    # Pagina produsului: lang="ro-RO", "priceCurrency":"RON", iar pretul de acolo (6,55) e cel din feed (30.10.2026)
+    "dacris.net": "RON",
 }
 PRAG_TITLURI_RO = 0.15
 _RE_VALUTA = _re.compile(r"[?&]currency=([a-z]{3})\b", _re.I)

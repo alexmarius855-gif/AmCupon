@@ -39,7 +39,9 @@ spun moneda (API-ul da `price` fara valuta). Pe site: „Shark FlexStyle ... 319
 (folosita de `fetch_product_feeds.py` SI de garda `verifica_site.py`, punctul 5a): pretul se publica doar cand magazinul
 are dovada ca vinde in lei — `currency=` din link (decide singur), `MONEDA_VERIFICATA` (de mana, cu sursa), domeniu .ro,
 marcaj RO in link, sau >= 15% titluri in romana. Altfel produsele CU PRET nu se publica (promo-produsele raman).
-Test: `python scripts/test_reguli_produse.py`. Tot azi: ramura `claude/promotii-alta-limba` (18.10) unita in main.
+Test: `python scripts/test_reguli_produse.py`. **30.10:** dacris.net (RO, titluri de catalog IT: 6/49 trec pragul) a
+tinut pipeline-ul rosu; adaugat in `MONEDA_VERIFICATA` dupa pagina produsului (`priceCurrency` RON, pret = feed). Un
+magazin romanesc nou cu titluri tehnice se rezolva la fel, cu sursa — NU cobori pragul. Tot pe 27.10: ramura `claude/promotii-alta-limba` (18.10) unita in main.
 **Ghidul de cadouri de Craciun rescris** (`articole_verificate.py`, `data=` noua pe `articol()`): retur 14 zile de la
 livrare + exceptiile personalizate/sigilate (OUG 34/2014 art. 9, 16 c/e), Black Friday cu sursa, HG 686/2022, trimiteri
 spre ghidurile rescrise; sub articol tema noua `seturi-cadou` (topFeed.ts: „set cadou"/„gift set", fara ambalaje, bonusuri
