@@ -439,7 +439,7 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 0,
+    "zile_ramase": 62,
     "promotii": [
       {
         "nume": "Best Seller 25% off!",
@@ -458,73 +458,11 @@
         "zile_ramase": 62,
         "expira": "2026-12-31",
         "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "Halloween Sale 16% off",
-        "descriere": "Halloween Sale 16% off",
-        "cod_cupon": "HW16",
-        "landing_page": "https://laavooextensions.sjv.io/c/7401119/3855423/51251?u=https%3A%2F%2Fwww.laavooextensions.com",
-        "zile_ramase": 0,
-        "expira": "2026-10-30",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "Halloween Sale 23% off",
-        "descriere": "Halloween Sale 23% off",
-        "cod_cupon": "HW23",
-        "landing_page": "https://laavooextensions.sjv.io/c/7401119/3855423/51251?u=https%3A%2F%2Fwww.laavooextensions.com",
-        "zile_ramase": 0,
-        "expira": "2026-10-30",
-        "sursa": "impact_deals_api"
       }
     ],
     "exclusiv": false,
     "platforma": "impact",
     "program_name": "Moresoo Hair Extensions",
-    "allows_deep_linking": true,
-    "ultima_verificare": "2026-10-30"
-  },
-  {
-    "magazin": "ashimaryhair.com",
-    "url": "https://www.ashimaryhair.com",
-    "url_afiliat": "https://hongkongossileetradinglimited.sjv.io/c/7401119/3816472/49652",
-    "logo_url": "https://www.google.com/s2/favicons?domain=ashimaryhair.com&sz=128",
-    "categorie": "Fashion",
-    "categorie_slug": "fashion",
-    "comision": "10% comision",
-    "rank": null,
-    "scor_afiliere": 65,
-    "scor_final": 65.0,
-    "prioritate": "high",
-    "canal_recomandat": "Content, Social",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 0,
-    "promotii": [
-      {
-        "nume": "$10 off over $139",
-        "descriere": "$10 off over $139",
-        "cod_cupon": "",
-        "landing_page": "https://hongkongossileetradinglimited.sjv.io/c/7401119/3816472/49652?u=https%3A%2F%2Fwww.ashimaryhair.com%2Fcollections%2Fhot-sale",
-        "zile_ramase": 0,
-        "expira": "2026-10-30",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "UP TO 55% OFF",
-        "descriere": "UP TO 55% OFF",
-        "cod_cupon": "",
-        "landing_page": "https://hongkongossileetradinglimited.sjv.io/c/7401119/3816472/49652?u=https%3A%2F%2Fwww.ashimaryhair.com%2Fcollections%2Fhot-sale",
-        "zile_ramase": 0,
-        "expira": "2026-10-30",
-        "sursa": "impact_deals_api"
-      }
-    ],
-    "exclusiv": false,
-    "platforma": "impact",
-    "program_name": "HONGKONG OSSILEE TRADING LIMITED",
     "allows_deep_linking": true,
     "ultima_verificare": "2026-10-30"
   },
@@ -1711,21 +1649,21 @@
     "zile_ramase": 2,
     "promotii": [
       {
-        "nume": "50% Off Shared Hosting & Wordpress Hosting",
-        "descriere": "50% Off Shared Hosting & Wordpress Hosting with code HALLOWEEN50OFF",
-        "cod_cupon": "HALLOWEEN50OFF",
-        "landing_page": "https://network-solutions.7eer.net/c/7401119/11441/555",
-        "zile_ramase": 2,
-        "expira": "2026-11-01",
-        "sursa": "impact_deals_api"
-      },
-      {
         "nume": "30% Off the AI Website Builder with Annual Terms",
         "descriere": "Get 30% off 1 (one) of the following Website builder plans: Website, Website+Marketing, and Ecommerce when you purchase an annual plan. Cannot be combined with other coupons or offers. All plans and products are renewed automatically to the card on file; cancel any time before renewal via your billing center, phone, or chat. Enter promo code NEW30 at checkout if you do not see the promo code applied. Promo valid until February 28th, 20‌27 ‌at ‌11‌‌:‌‌59‌‌:‌‌59‌‌PM ‌E‌ST‌",
         "cod_cupon": "NEW30",
         "landing_page": "https://network-solutions.7eer.net/c/7401119/11441/555",
         "zile_ramase": 122,
         "expira": "2027-03-01",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "50% Off Shared Hosting & Wordpress Hosting",
+        "descriere": "50% Off Shared Hosting & Wordpress Hosting with code HALLOWEEN50OFF",
+        "cod_cupon": "HALLOWEEN50OFF",
+        "landing_page": "https://network-solutions.7eer.net/c/7401119/11441/555",
+        "zile_ramase": 2,
+        "expira": "2026-11-01",
         "sursa": "impact_deals_api"
       }
     ],
@@ -3262,6 +3200,15 @@
         "zile_ramase": 1,
         "expira": "2026-10-31",
         "sursa": "2performant_api"
+      },
+      {
+        "nume": "Campanii noiembrie Editura Arthur",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=www.editura-arthur.ro",
+        "zile_ramase": 31,
+        "expira": "2026-11-30",
+        "sursa": "2performant_api"
       }
     ],
     "exclusiv": false,
@@ -4107,6 +4054,41 @@
     "unique_code": "d19151f4f"
   },
   {
+    "magazin": "litera.ro",
+    "url": "https://www.litera.ro/",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.litera.ro%2F",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9545/medium/9545.png",
+    "categorie": "Cărți & Educație",
+    "categorie_slug": "carti-educatie",
+    "comision": "7.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 10,
+    "promotii": [
+      {
+        "nume": "📚🔜 Black Friday 2026: reduceri de până la 90% + cadouri, din 04.11. 📚🔜",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.litera.ro%2F",
+        "zile_ramase": 10,
+        "expira": "2026-11-09",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-30",
+    "scor_final": 30.0,
+    "program_id": 873,
+    "unique_code": "0a8a2c4d9"
+  },
+  {
     "magazin": "intimax.ro",
     "url": "https://intimax.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fintimax.ro%2F",
@@ -4642,6 +4624,41 @@
     "unique_code": "4f0c269be"
   },
   {
+    "magazin": "prestigehome.ro",
+    "url": "https://www.prestigehome.ro/",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.prestigehome.ro%2F",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11100/medium/11100.png",
+    "categorie": "Casă & Grădină",
+    "categorie_slug": "casa-gradina",
+    "comision": "5.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 8,
+    "promotii": [
+      {
+        "nume": "Black Friday la Prestige Home",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.prestigehome.ro%2F",
+        "zile_ramase": 8,
+        "expira": "2026-11-07",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-30",
+    "scor_final": 30.0,
+    "program_id": 10116,
+    "unique_code": "07a2ce605"
+  },
+  {
     "magazin": "fara-daunatori.ro",
     "url": "https://www.fara-daunatori.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.fara-daunatori.ro",
@@ -4815,6 +4832,41 @@
     "scor_final": 30.0,
     "program_id": 10728,
     "unique_code": "8e4c40bdd"
+  },
+  {
+    "magazin": "agroclima.ro",
+    "url": "https://www.agroclima.ro/",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.agroclima.ro%2F",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13256/medium/13256.png",
+    "categorie": "Casă & Grădină",
+    "categorie_slug": "casa-gradina",
+    "comision": "7.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 16,
+    "promotii": [
+      {
+        "nume": "🔥 Black Friday la Agroclima.ro | 9–15 noiembrie 2026",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.agroclima.ro%2Fblack-friday",
+        "zile_ramase": 16,
+        "expira": "2026-11-15",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-30",
+    "scor_final": 30.0,
+    "program_id": 11778,
+    "unique_code": "db6d01464"
   },
   {
     "magazin": "petit-bebe.ro",
@@ -5080,6 +5132,41 @@
     "unique_code": "f9db13aad"
   },
   {
+    "magazin": "ada-shoes.ro",
+    "url": "https://ada-shoes.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fada-shoes.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/12349/medium/12349.jpg",
+    "categorie": "Fashion",
+    "categorie_slug": "fashion",
+    "comision": "8.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 8,
+    "promotii": [
+      {
+        "nume": "BLACK FRIDAY a început mai devreme la ADA Shoes!",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fada-shoes.ro%2F",
+        "zile_ramase": 8,
+        "expira": "2026-11-07",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-30",
+    "scor_final": 30.0,
+    "program_id": 10992,
+    "unique_code": "81a821097"
+  },
+  {
     "magazin": "underarmour.ro",
     "url": "https://www.underarmour.ro/",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.underarmour.ro%2F",
@@ -5122,41 +5209,6 @@
     "scor_final": 30.0,
     "program_id": 9705,
     "unique_code": "522f2a38e"
-  },
-  {
-    "magazin": "nirmoto.ro",
-    "url": "https://www.nirmoto.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.nirmoto.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14466/medium/14466.png",
-    "categorie": "Casă & Grădină",
-    "categorie_slug": "casa-gradina",
-    "comision": "4.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 30,
-    "promotii": [
-      {
-        "nume": "Cadou de Bun Venit: 3% EXTRA DISCOUNT",
-        "descriere": "",
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.nirmoto.ro%2F",
-        "zile_ramase": 30,
-        "expira": "2026-11-29",
-        "sursa": "2performant_api"
-      }
-    ],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-30",
-    "scor_final": 30.0,
-    "program_id": 13144,
-    "unique_code": "b4a3c7a08"
   },
   {
     "magazin": "nano-auto.ro",
@@ -5674,6 +5726,41 @@
     "scor_final": 30.0,
     "program_id": 10085,
     "unique_code": "4ef912004"
+  },
+  {
+    "magazin": "zephyrlabs.ro",
+    "url": "https://www.zephyrlabs.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.zephyrlabs.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13104/medium/13104.png",
+    "categorie": "Sănătate & Farmacie",
+    "categorie_slug": "sanatate",
+    "comision": "8.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 61,
+    "promotii": [
+      {
+        "nume": "Promotie produse Melegatti Pharma - Septembrie-Decembrie",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.zephyrlabs.ro%2Fpromotie-melegatti-pharma",
+        "zile_ramase": 61,
+        "expira": "2026-12-30",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-30",
+    "scor_final": 30.0,
+    "program_id": 11639,
+    "unique_code": "ea9693b50"
   },
   {
     "magazin": "sneakerit.ro",
@@ -6473,6 +6560,41 @@
     "scor_final": 30.0,
     "program_id": 13199,
     "unique_code": "1cbf99bc6"
+  },
+  {
+    "magazin": "nuviabeauty.ro",
+    "url": "https://nuviabeauty.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnuviabeauty.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14574/medium/14574.png",
+    "categorie": "Beauty & Îngrijire",
+    "categorie_slug": "beauty",
+    "comision": "7.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 8,
+    "promotii": [
+      {
+        "nume": "Black Friday",
+        "descriere": "",
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnuviabeauty.ro",
+        "zile_ramase": 8,
+        "expira": "2026-11-07",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-30",
+    "scor_final": 30.0,
+    "program_id": 13252,
+    "unique_code": "617ba0af0"
   },
   {
     "magazin": "havit-romania.ro",
@@ -8885,6 +9007,31 @@
     "exclusiv": false,
     "platforma": "impact",
     "program_name": "Hohem Affiliate Program",
+    "allows_deep_linking": true,
+    "ultima_verificare": "2026-10-30"
+  },
+  {
+    "magazin": "ashimaryhair.com",
+    "url": "https://www.ashimaryhair.com",
+    "url_afiliat": "https://hongkongossileetradinglimited.sjv.io/c/7401119/3816472/49652",
+    "logo_url": "https://www.google.com/s2/favicons?domain=ashimaryhair.com&sz=128",
+    "categorie": "Fashion",
+    "categorie_slug": "fashion",
+    "comision": "10% comision",
+    "rank": null,
+    "scor_afiliere": 65,
+    "scor_final": 65.0,
+    "prioritate": "high",
+    "canal_recomandat": "Content, Social",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "impact",
+    "program_name": "HONGKONG OSSILEE TRADING LIMITED",
     "allows_deep_linking": true,
     "ultima_verificare": "2026-10-30"
   },
@@ -17372,31 +17519,6 @@
     "unique_code": "131fcf12b"
   },
   {
-    "magazin": "litera.ro",
-    "url": "https://www.litera.ro/",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.litera.ro%2F",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9545/medium/9545.png",
-    "categorie": "Cărți & Educație",
-    "categorie_slug": "carti-educatie",
-    "comision": "7.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-30",
-    "scor_final": 0.0,
-    "program_id": 873,
-    "unique_code": "0a8a2c4d9"
-  },
-  {
     "magazin": "gryxx.ro",
     "url": "https://www.gryxx.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.gryxx.ro",
@@ -18772,6 +18894,31 @@
     "unique_code": "a46311f72"
   },
   {
+    "magazin": "cartuseria.ro",
+    "url": "https://www.cartuseria.ro/",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.cartuseria.ro%2F",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/2540/medium/2540.jpg",
+    "categorie": "Marketplace",
+    "categorie_slug": "marketplace",
+    "comision": "10.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-30",
+    "scor_final": 0.0,
+    "program_id": 850,
+    "unique_code": "b9385e46f"
+  },
+  {
     "magazin": "tamos.ro",
     "url": "https://www.tamos.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.tamos.ro",
@@ -19045,31 +19192,6 @@
     "scor_final": 0.0,
     "program_id": 12078,
     "unique_code": "b7b77b5b6"
-  },
-  {
-    "magazin": "prestigehome.ro",
-    "url": "https://www.prestigehome.ro/",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.prestigehome.ro%2F",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11100/medium/11100.png",
-    "categorie": "Casă & Grădină",
-    "categorie_slug": "casa-gradina",
-    "comision": "5.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-30",
-    "scor_final": 0.0,
-    "program_id": 10116,
-    "unique_code": "07a2ce605"
   },
   {
     "magazin": "druzy.ro",
@@ -19897,31 +20019,6 @@
     "unique_code": "d9bff9b61"
   },
   {
-    "magazin": "agroclima.ro",
-    "url": "https://www.agroclima.ro/",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.agroclima.ro%2F",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13256/medium/13256.png",
-    "categorie": "Casă & Grădină",
-    "categorie_slug": "casa-gradina",
-    "comision": "7.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-30",
-    "scor_final": 0.0,
-    "program_id": 11778,
-    "unique_code": "db6d01464"
-  },
-  {
     "magazin": "myown.ro",
     "url": "https://www.myown.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.myown.ro",
@@ -20745,31 +20842,6 @@
     "scor_final": 0.0,
     "program_id": 6440,
     "unique_code": "f8461feff"
-  },
-  {
-    "magazin": "ada-shoes.ro",
-    "url": "https://ada-shoes.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fada-shoes.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/12349/medium/12349.jpg",
-    "categorie": "Fashion",
-    "categorie_slug": "fashion",
-    "comision": "8.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-30",
-    "scor_final": 0.0,
-    "program_id": 10992,
-    "unique_code": "81a821097"
   },
   {
     "magazin": "scentoparfum.ro",
@@ -25995,31 +26067,6 @@
     "scor_final": 0.0,
     "program_id": 13239,
     "unique_code": "6440cbfd2"
-  },
-  {
-    "magazin": "nuviabeauty.ro",
-    "url": "https://nuviabeauty.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fnuviabeauty.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14574/medium/14574.png",
-    "categorie": "Beauty & Îngrijire",
-    "categorie_slug": "beauty",
-    "comision": "7.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-30",
-    "scor_final": 0.0,
-    "program_id": 13252,
-    "unique_code": "617ba0af0"
   },
   {
     "magazin": "yny.ro",

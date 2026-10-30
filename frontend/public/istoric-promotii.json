@@ -552,8 +552,8 @@
    "magazine": 152
   },
   "2026-10-30": {
-   "promotii": 294,
-   "magazine": 153
+   "promotii": 296,
+   "magazine": 157
   }
  },
  "magazine": {
@@ -591,6 +591,15 @@
    }
   ],
   "ada-shoes.ro": [
+   {
+    "k": "blackfridayainceputmaidevremelaadashoes|",
+    "titlu": "BLACK FRIDAY a început mai devreme la ADA Shoes!",
+    "cod": false,
+    "prima": "2026-10-30",
+    "ultima": "2026-10-30",
+    "expira": "2026-11-07",
+    "activa": true
+   },
    {
     "k": "extrareducerelacolectienoua|",
     "titlu": "Extra reducere la colectie noua",
@@ -679,6 +688,17 @@
     "ultima": "2026-09-29",
     "expira": "2026-09-29",
     "activa": false
+   }
+  ],
+  "agroclima.ro": [
+   {
+    "k": "blackfridaylaagroclimaro915noiembrie2026|",
+    "titlu": "🔥 Black Friday la Agroclima.ro | 9–15 noiembrie 2026",
+    "cod": false,
+    "prima": "2026-10-30",
+    "ultima": "2026-10-30",
+    "expira": "2026-11-15",
+    "activa": true
    }
   ],
   "amazon.com": [
@@ -890,7 +910,7 @@
     "prima": "2026-09-29",
     "ultima": "2026-10-30",
     "expira": "2026-10-30",
-    "activa": true
+    "activa": false
    },
    {
     "k": "10offover139|",
@@ -899,7 +919,7 @@
     "prima": "2026-09-29",
     "ultima": "2026-10-30",
     "expira": "2026-10-30",
-    "activa": true
+    "activa": false
    },
    {
     "k": "upto80off|",
@@ -2764,6 +2784,15 @@
    }
   ],
   "editura-arthur.ro": [
+   {
+    "k": "campaniinoiembrieedituraarthur|",
+    "titlu": "Campanii noiembrie Editura Arthur",
+    "cod": false,
+    "prima": "2026-10-30",
+    "ultima": "2026-10-30",
+    "expira": "2026-11-30",
+    "activa": true
+   },
    {
     "k": "cartisipachetedecartidelaedituraarthur|",
     "titlu": "Cărți și pachete de cărți de la Editura Arthur",
@@ -5406,7 +5435,7 @@
     "prima": "2026-09-30",
     "ultima": "2026-10-30",
     "expira": "2026-10-30",
-    "activa": true
+    "activa": false
    },
    {
     "k": "halloweensale16off|hw16",
@@ -5415,7 +5444,7 @@
     "prima": "2026-09-30",
     "ultima": "2026-10-30",
     "expira": "2026-10-30",
-    "activa": true
+    "activa": false
    },
    {
     "k": "fallsale21off|f21",
@@ -6015,6 +6044,15 @@
    }
   ],
   "litera.ro": [
+   {
+    "k": "blackfriday2026reduceridepanala90cadouridin0411|",
+    "titlu": "📚🔜 Black Friday 2026: reduceri de până la 90% + cadouri, din 04.11. 📚🔜",
+    "cod": false,
+    "prima": "2026-10-30",
+    "ultima": "2026-10-30",
+    "expira": "2026-11-09",
+    "activa": true
+   },
    {
     "k": "crestemcititorireduceridepanala751620octombrie|",
     "titlu": "🎈 Creștem cititori - reduceri de până la 75% (16 - 20 octombrie) 🎈",
@@ -6922,7 +6960,7 @@
     "prima": "2026-10-23",
     "ultima": "2026-10-30",
     "expira": "2026-11-29",
-    "activa": true
+    "activa": false
    }
   ],
   "nobilacasa.ro": [
@@ -7126,6 +7164,17 @@
     "prima": "2026-09-08",
     "ultima": "2026-10-30",
     "expira": "2026-12-31",
+    "activa": true
+   }
+  ],
+  "nuviabeauty.ro": [
+   {
+    "k": "blackfriday|",
+    "titlu": "Black Friday",
+    "cod": false,
+    "prima": "2026-10-30",
+    "ultima": "2026-10-30",
+    "expira": "2026-11-07",
     "activa": true
    }
   ],
@@ -7674,6 +7723,15 @@
    }
   ],
   "prestigehome.ro": [
+   {
+    "k": "blackfridaylaprestigehome|",
+    "titlu": "Black Friday la Prestige Home",
+    "cod": false,
+    "prima": "2026-10-30",
+    "ultima": "2026-10-30",
+    "expira": "2026-11-07",
+    "activa": true
+   },
    {
     "k": "toamnaincepeacasa|",
     "titlu": "Toamna incepe acasa",
@@ -9520,9 +9578,9 @@
     "titlu": "Promotie produse Melegatti Pharma - Septembrie-Decembrie",
     "cod": false,
     "prima": "2026-10-01",
-    "ultima": "2026-10-29",
+    "ultima": "2026-10-30",
     "expira": "2026-12-30",
-    "activa": false
+    "activa": true
    },
    {
     "k": "promotie33maiseptembriepentruoricare2produseidenticedelamelegattipharma|",
