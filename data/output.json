@@ -2962,41 +2962,6 @@
     "unique_code": "5baacfa1f"
   },
   {
-    "magazin": "videt.ro",
-    "url": "https://videt.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fvidet.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9884/medium/9884.png",
-    "categorie": "Fashion",
-    "categorie_slug": "fashion",
-    "comision": "10.0",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": true,
-    "cod_cupon": false,
-    "zile_ramase": 2,
-    "promotii": [
-      {
-        "nume": "Până la -35% la o selecție de ochelari de soare",
-        "descriere": null,
-        "cod_cupon": "",
-        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.videt.ro%2Fochelari-de-soare.html%3Fdc_code%3Doctombrie",
-        "zile_ramase": 2,
-        "expira": "2026-11-01",
-        "sursa": "2performant_api"
-      }
-    ],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-10-30",
-    "scor_final": 40.0,
-    "program_id": 7894,
-    "unique_code": "27ec4b078"
-  },
-  {
     "magazin": "paa-home.ro",
     "url": "https://paa-home.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fpaa-home.ro",
@@ -4473,6 +4438,41 @@
     "scor_final": 30.0,
     "program_id": 1961,
     "unique_code": "861f9e301"
+  },
+  {
+    "magazin": "videt.ro",
+    "url": "https://videt.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fvidet.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9884/medium/9884.png",
+    "categorie": "Fashion",
+    "categorie_slug": "fashion",
+    "comision": "10.0",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 16,
+    "promotii": [
+      {
+        "nume": "Black Friday: -40% la toți ochelarii, online și în showroom-uri",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.videt.ro%2Fblack-friday.html",
+        "zile_ramase": 16,
+        "expira": "2026-11-15",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-10-30",
+    "scor_final": 30.0,
+    "program_id": 7894,
+    "unique_code": "27ec4b078"
   },
   {
     "magazin": "edituracorint.ro",

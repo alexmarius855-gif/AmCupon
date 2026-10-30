@@ -6,7 +6,7 @@
   "doar_oferta": 94,
   "procent_cu_promotie": 21.3,
   "procent_cu_cod": 0.7,
-  "reducere_mediana_generala": 37.0,
+  "reducere_mediana_generala": 39.0,
   "magazine_cu_procent_declarat": 58,
   "categorii": [
     {
@@ -37,6 +37,15 @@
       "esantion": 8
     },
     {
+      "slug": "fashion",
+      "nume": "Fashion",
+      "magazine": 53,
+      "cu_promotie": 15,
+      "reducere_mediana": 40,
+      "reducere_max": 70,
+      "esantion": 9
+    },
+    {
       "slug": "copii",
       "nume": "Copii & familie",
       "magazine": 24,
@@ -44,15 +53,6 @@
       "reducere_mediana": 37.0,
       "reducere_max": 70,
       "esantion": 4
-    },
-    {
-      "slug": "fashion",
-      "nume": "Fashion",
-      "magazine": 53,
-      "cu_promotie": 15,
-      "reducere_mediana": 35,
-      "reducere_max": 70,
-      "esantion": 9
     },
     {
       "slug": "auto-moto",

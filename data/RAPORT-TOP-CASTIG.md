@@ -1,5 +1,5 @@
 # 💰 TOP MAGAZINE după POTENȚIAL DE CÂȘTIG
-> Generat automat 29.10.2026 15:08. Pe astea să le împingi (articole, pin-uri, postări).
+> Generat automat 30.10.2026 14:59. Pe astea să le împingi (articole, pin-uri, postări).
 
 **Scor = comision × popularitate × ofertă.** Comisionul mare singur înșală — astea-s banii REALI.
 
@@ -26,15 +26,15 @@
 | 19 | Curteaveche (curteaveche.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
 | 20 | Uniquestore (uniquestore.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
 | 21 | Duchessenails (duchessenails.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 22 | Intimplay (intimplay.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 23 | Zelto (zelto.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 24 | Havit Romania (havit-romania.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
-| 25 | Avidlove (avidlove.com) | 10% | 0 | ✅ COD | 20.0 |
-| 26 | Cvlife (cvlife.com) | 10% | 0 | ✅ COD | 20.0 |
-| 27 | Billionconnect (billionconnect.net) | 10% | 0 | ✅ COD | 20.0 |
-| 28 | Gorgeaux (gorgeaux.ro) | 13% | 0 | 🏷️ ofertă | 18.2 |
-| 29 | Mooyius (mooyius.com) | 12% | 0 | 🏷️ ofertă | 16.8 |
-| 30 | E Potion (e-potion.ro) | 12% | 0 | 🏷️ ofertă | 16.8 |
+| 22 | Longevity Boost (longevity-boost.com) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 23 | Intimplay (intimplay.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 24 | Zelto (zelto.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 25 | Havit Romania (havit-romania.ro) | 15% | 0 | 🏷️ ofertă | 21.0 |
+| 26 | Avidlove (avidlove.com) | 10% | 0 | ✅ COD | 20.0 |
+| 27 | Cvlife (cvlife.com) | 10% | 0 | ✅ COD | 20.0 |
+| 28 | Billionconnect (billionconnect.net) | 10% | 0 | ✅ COD | 20.0 |
+| 29 | Gorgeaux (gorgeaux.ro) | 13% | 0 | 🏷️ ofertă | 18.2 |
+| 30 | Mooyius (mooyius.com) | 12% | 0 | 🏷️ ofertă | 16.8 |
 
 ## 🎯 Cum folosești raportul
 - **Top 10** = prioritate maximă pentru articole „cel mai bun X" + pin-uri Pinterest

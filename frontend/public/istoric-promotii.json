@@ -8827,13 +8827,22 @@
   ],
   "videt.ro": [
    {
+    "k": "blackfriday40latotiochelariionlinesiinshowroomuri|",
+    "titlu": "Black Friday: -40% la toți ochelarii, online și în showroom-uri",
+    "cod": false,
+    "prima": "2026-10-30",
+    "ultima": "2026-10-30",
+    "expira": "2026-11-15",
+    "activa": true
+   },
+   {
     "k": "panala35laoselectiedeochelaridesoare|",
     "titlu": "Până la -35% la o selecție de ochelari de soare",
     "cod": false,
     "prima": "2026-09-24",
     "ultima": "2026-10-30",
     "expira": "2026-11-01",
-    "activa": true
+    "activa": false
    },
    {
     "k": "reduceridestocpanala70laochelariidesoare|",
