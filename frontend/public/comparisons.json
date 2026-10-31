@@ -92,7 +92,7 @@
       "partener": true
     },
     "stats2": {
-      "promotii_active": 2,
+      "promotii_active": 1,
       "coduri": "—",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11380/medium/11380.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2F",
@@ -110,10 +110,6 @@
     ],
     "promo2": [
       {
-        "nume": "Kilipir Merch Fandom",
-        "cod_cupon": ""
-      },
-      {
         "nume": "Un plan de lectură cu rezultate pe măsură",
         "cod_cupon": ""
       }
@@ -129,7 +125,7 @@
       },
       {
         "q": "Are Carturesti coduri de reducere active?",
-        "a": "Da, Carturesti are 2 oferte active pe AmCupon.ro in octombrie 2026. Ofertele se actualizeaza automat de trei ori pe zi."
+        "a": "Da, Carturesti are 1 oferta activa pe AmCupon.ro in octombrie 2026. Ofertele se actualizeaza automat de trei ori pe zi."
       },
       {
         "q": "Unde gasesc cupoane pentru Libris si Carturesti?",
@@ -230,7 +226,7 @@
     "verdict_m1": "Alege Dr. Max pentru medicamente fara reteta, suplimente si dermatocosmetice.",
     "verdict_m2": "Alege Farmec daca vrei cosmetice romanesti Gerovital sau Aslavital, direct de la producator.",
     "stats1": {
-      "promotii_active": 3,
+      "promotii_active": 0,
       "coduri": "—",
       "logo": "https://img.2performant.com/system/paperclip/campaign_logos/pics/8800/medium/8800.png",
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.drmax.ro%2F",
@@ -243,20 +239,7 @@
       "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.farmec.ro",
       "partener": true
     },
-    "promo1": [
-      {
-        "nume": "Marca Proprie Dr Max",
-        "cod_cupon": ""
-      },
-      {
-        "nume": "Pachete de Grija",
-        "cod_cupon": ""
-      },
-      {
-        "nume": "Ofertele lunii - DR Max",
-        "cod_cupon": ""
-      }
-    ],
+    "promo1": [],
     "promo2": [],
     "faq": [
       {
@@ -265,7 +248,7 @@
       },
       {
         "q": "Are Dr. Max coduri de reducere active?",
-        "a": "Da, Dr. Max are 3 oferte active pe AmCupon.ro in octombrie 2026. Ofertele se actualizeaza automat de trei ori pe zi."
+        "a": "Momentan nu, Dr. Max are 0 oferte active pe AmCupon.ro in octombrie 2026. Ofertele se actualizeaza automat de trei ori pe zi."
       },
       {
         "q": "Are Farmec coduri de reducere active?",

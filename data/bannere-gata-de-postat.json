@@ -1,5 +1,31 @@
 [
   {
+    "id": 274008,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273967/original/273967.png",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=4f50cee92&aff_code=541547473&campaign_unique=8e59c17b0",
+    "landing_raw": "https://www.scule365.ro",
+    "width": 1080,
+    "height": 1080,
+    "merchant": "scule365.ro",
+    "merchant_slug": "scule365-ro",
+    "name": "Produse Black Friday 2026",
+    "category": "Produse Black Friday 2026",
+    "b_type": "image"
+  },
+  {
+    "id": 273976,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273935/original/273935.png",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=23a17757b&aff_code=541547473&campaign_unique=8e59c17b0",
+    "landing_raw": "https://www.scule365.ro",
+    "width": 1080,
+    "height": 1080,
+    "merchant": "scule365.ro",
+    "merchant_slug": "scule365-ro",
+    "name": "Black Friday 2026",
+    "category": "Black Friday 2026",
+    "b_type": "image"
+  },
+  {
     "id": 273945,
     "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273904/original/273904.jpg",
     "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=4d4555d0f&aff_code=541547473&campaign_unique=27ec4b078",
@@ -101,84 +127,6 @@
     "merchant_slug": "gorgeaux-ro",
     "name": "Black Friday 2026",
     "category": "Black Friday 2026",
-    "b_type": "image"
-  },
-  {
-    "id": 273748,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273707/original/273707.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=3b0196de5&aff_code=541547473&campaign_unique=7e5ed3049",
-    "landing_raw": "https://afisport.ro/oferte",
-    "width": 627,
-    "height": 627,
-    "merchant": "afisport.ro",
-    "merchant_slug": "afisport-ro",
-    "name": "Black Friday ”26",
-    "category": "Black Friday ”26",
-    "b_type": "image"
-  },
-  {
-    "id": 273745,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273704/original/273704.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=a69bcd293&aff_code=541547473&campaign_unique=573b44539",
-    "landing_raw": "https://www.aosom.ro/activity/black-friday",
-    "width": 1200,
-    "height": 1200,
-    "merchant": "aosom.ro ",
-    "merchant_slug": "aosom-ro",
-    "name": "BLACK FRIDAY",
-    "category": "BLACK FRIDAY",
-    "b_type": "image"
-  },
-  {
-    "id": 273610,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273569/original/273569.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=496d2015b&aff_code=541547473&campaign_unique=a26cc7ec7",
-    "landing_raw": "https://duchessenails.ro/",
-    "width": 1080,
-    "height": 1080,
-    "merchant": "duchessenails.ro/",
-    "merchant_slug": "duchessenails-ro",
-    "name": "Black Friday 2026",
-    "category": "Black Friday 2026",
-    "b_type": "image"
-  },
-  {
-    "id": 273593,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273552/original/273552.JPG",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=f1d32f0b0&aff_code=541547473&campaign_unique=9a6f02fef",
-    "landing_raw": "https://www.libris.ro/lp/targcraciunviena",
-    "width": 969,
-    "height": 968,
-    "merchant": "libris.ro ",
-    "merchant_slug": "libris-ro",
-    "name": "Ce zici de o Vacanță CADOU la Târgul de Crăciun din Viena?",
-    "category": "Ce zici de o Vacanță CADOU la Târgul de Crăciun din Viena?",
-    "b_type": "image"
-  },
-  {
-    "id": 273589,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273548/original/273548.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=4f11fd5a2&aff_code=541547473&campaign_unique=9617003d6",
-    "landing_raw": "https://nemira.ro/black-friday",
-    "width": 840,
-    "height": 840,
-    "merchant": "nemira.ro ",
-    "merchant_slug": "nemira-ro",
-    "name": "Black Friday cu REDUCERI DIN ALTE LUMI pe NEMIRA.RO",
-    "category": "Black Friday cu REDUCERI DIN ALTE LUMI pe NEMIRA.RO",
-    "b_type": "image"
-  },
-  {
-    "id": 273577,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273536/original/273536.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=b3ac835bd&aff_code=541547473&campaign_unique=cc08e2536",
-    "landing_raw": "https://www.pensulemachiaj.ro",
-    "width": 1200,
-    "height": 1200,
-    "merchant": "pensulemachiaj.ro",
-    "merchant_slug": "pensulemachiaj-ro",
-    "name": "-80% STAR SHINE  CELEBRITY SECRET BAG GRATUIT ",
-    "category": "-80% STAR SHINE  CELEBRITY SECRET BAG GRATUIT ",
     "b_type": "image"
   }
 ]
