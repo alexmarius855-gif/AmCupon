@@ -556,8 +556,8 @@
    "magazine": 157
   },
   "2026-10-31": {
-   "promotii": 268,
-   "magazine": 156
+   "promotii": 271,
+   "magazine": 160
   }
  },
  "magazine": {
@@ -918,6 +918,33 @@
    }
   ],
   "ashimaryhair.com": [
+   {
+    "k": "allsiteupto60off|",
+    "titlu": "Allsite UP TO 60% OFF",
+    "cod": false,
+    "prima": "2026-10-31",
+    "ultima": "2026-10-31",
+    "expira": "2026-11-12",
+    "activa": true
+   },
+   {
+    "k": "360lacewig|",
+    "titlu": "360 lace wig",
+    "cod": false,
+    "prima": "2026-10-31",
+    "ultima": "2026-10-31",
+    "expira": "2026-11-12",
+    "activa": true
+   },
+   {
+    "k": "13x6fulllace|",
+    "titlu": "13x6 full lace",
+    "cod": false,
+    "prima": "2026-10-31",
+    "ultima": "2026-10-31",
+    "expira": "2026-11-12",
+    "activa": true
+   },
    {
     "k": "upto55off|",
     "titlu": "UP TO 55% OFF",
@@ -4035,6 +4062,17 @@
     "activa": false
    }
   ],
+  "frapperie.ro": [
+   {
+    "k": "blackfridayfrapperie10reducerelatotsiteul|",
+    "titlu": "Black Friday Frapperie – 10% reducere la tot site-ul",
+    "cod": false,
+    "prima": "2026-10-31",
+    "ultima": "2026-10-31",
+    "expira": "2026-11-13",
+    "activa": true
+   }
+  ],
   "fsm-romania.ro": [
    {
     "k": "blackmonthfsmromania2026reduceridepanala80|",
@@ -5265,6 +5303,15 @@
   ],
   "kisslovehair.com": [
    {
+    "k": "newhairupto40off|",
+    "titlu": "New Hair Up To 40% Off",
+    "cod": false,
+    "prima": "2026-10-31",
+    "ultima": "2026-10-31",
+    "expira": "2026-11-18",
+    "activa": true
+   },
+   {
     "k": "endsofsummer|",
     "titlu": "Ends of summer",
     "cod": false,
@@ -5403,7 +5450,7 @@
     "prima": "2026-09-24",
     "ultima": "2026-10-31",
     "expira": "2026-10-31",
-    "activa": true
+    "activa": false
    },
    {
     "k": "eulimitedtimesalet3u2save42offusecodeht3u2|ht3u2",
@@ -5497,7 +5544,7 @@
     "prima": "2026-09-08",
     "ultima": "2026-10-31",
     "expira": "2026-12-31",
-    "activa": true
+    "activa": false
    },
    {
     "k": "bestseller25off|h25",
@@ -8292,6 +8339,17 @@
     "activa": false
    }
   ],
+  "spy-shop.ro": [
+   {
+    "k": "blackfridaylasecuritate|",
+    "titlu": "Black Friday la securitate",
+    "cod": false,
+    "prima": "2026-10-31",
+    "ultima": "2026-10-31",
+    "expira": "2026-11-30",
+    "activa": true
+   }
+  ],
   "startinscoala.shop": [
    {
     "k": "reducerelaprimacoamnda|",
@@ -8723,7 +8781,7 @@
     "prima": "2026-09-29",
     "ultima": "2026-10-31",
     "expira": "2026-10-31",
-    "activa": true
+    "activa": false
    },
    {
     "k": "affv130|",

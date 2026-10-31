@@ -1,13 +1,13 @@
 {
   "generat": "2026-10-31",
-  "total_magazine": 455,
-  "cu_promotie": 102,
+  "total_magazine": 453,
+  "cu_promotie": 104,
   "cu_cod_real": 3,
-  "doar_oferta": 99,
-  "procent_cu_promotie": 22.4,
+  "doar_oferta": 101,
+  "procent_cu_promotie": 23.0,
   "procent_cu_cod": 0.7,
-  "reducere_mediana_generala": 40,
-  "magazine_cu_procent_declarat": 57,
+  "reducere_mediana_generala": 39.0,
+  "magazine_cu_procent_declarat": 58,
   "categorii": [
     {
       "slug": "carti-educatie",
@@ -30,7 +30,7 @@
     {
       "slug": "beauty",
       "nume": "Beauty & îngrijire",
-      "magazine": 57,
+      "magazine": 56,
       "cu_promotie": 11,
       "reducere_mediana": 52.5,
       "reducere_max": 80,
@@ -76,7 +76,7 @@
       "slug": "electronice",
       "nume": "Electronice & IT",
       "magazine": 31,
-      "cu_promotie": 7,
+      "cu_promotie": 8,
       "reducere_mediana": 30,
       "reducere_max": 50,
       "esantion": 3
@@ -129,11 +129,11 @@
     {
       "slug": "mancare-bauturi",
       "nume": "Mâncare & băuturi",
-      "magazine": 14,
-      "cu_promotie": 1,
+      "magazine": 13,
+      "cu_promotie": 2,
       "reducere_mediana": null,
       "reducere_max": null,
-      "esantion": 0
+      "esantion": 1
     },
     {
       "slug": "software",
@@ -157,7 +157,7 @@
   "criteriu": "domeniu .ro",
   "international": {
     "total": 503,
-    "cu_promotie": 59,
+    "cu_promotie": 61,
     "cu_cod": 35
   },
   "retele": [
