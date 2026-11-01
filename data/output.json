@@ -412,7 +412,7 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 241,
+    "zile_ramase": 29,
     "promotii": [
       {
         "nume": "Best Seller 25% off!",
@@ -421,6 +421,33 @@
         "landing_page": "https://laavooextensions.sjv.io/c/7401119/3855423/51251?u=https%3A%2F%2Flaavooextensions.com%2Fcollections%2Fhot-sell-products",
         "zile_ramase": 241,
         "expira": "2027-06-30",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "Black Friday 16% off",
+        "descriere": "Black Friday 16% off",
+        "cod_cupon": "BF16",
+        "landing_page": "https://laavooextensions.sjv.io/c/7401119/3855423/51251?u=https%3A%2F%2Fwww.laavooextensions.com",
+        "zile_ramase": 29,
+        "expira": "2026-11-30",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "Black Friday 20% off",
+        "descriere": "Black Friday 20% off",
+        "cod_cupon": "BF20",
+        "landing_page": "https://laavooextensions.sjv.io/c/7401119/3855423/51251?u=https%3A%2F%2Fwww.laavooextensions.com",
+        "zile_ramase": 29,
+        "expira": "2026-11-30",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "Black Friday 25% off",
+        "descriere": "Black Friday 25% off",
+        "cod_cupon": "BF25",
+        "landing_page": "https://laavooextensions.sjv.io/c/7401119/3855423/51251?u=https%3A%2F%2Fwww.laavooextensions.com",
+        "zile_ramase": 29,
+        "expira": "2026-11-30",
         "sursa": "impact_deals_api"
       }
     ],
@@ -921,7 +948,7 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 0,
+    "zile_ramase": 60,
     "promotii": [
       {
         "nume": "Redodo 8% Discount Code – Save on All Products",
@@ -930,15 +957,6 @@
         "landing_page": "https://redodopowerde.sjv.io/c/7401119/3864250/49142",
         "zile_ramase": 60,
         "expira": "2026-12-31",
-        "sursa": "impact_deals_api"
-      },
-      {
-        "nume": "Redodo Halloween 2026",
-        "descriere": "Redodo Halloween 2026",
-        "cod_cupon": "",
-        "landing_page": "https://redodopowerde.sjv.io/c/7401119/3864250/49142",
-        "zile_ramase": 0,
-        "expira": "2026-11-01",
         "sursa": "impact_deals_api"
       }
     ],
@@ -4963,6 +4981,41 @@
     "scor_final": 30.0,
     "program_id": 10427,
     "unique_code": "f6cf397df"
+  },
+  {
+    "magazin": "kamu.ro",
+    "url": "https://www.kamu.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.kamu.ro",
+    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13474/medium/13474.png",
+    "categorie": "Beauty & Îngrijire",
+    "categorie_slug": "beauty",
+    "comision": "7.5",
+    "rank": 999,
+    "scor_afiliere": 0,
+    "prioritate": "neclasat",
+    "canal_recomandat": "",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": true,
+    "cod_cupon": false,
+    "zile_ramase": 14,
+    "promotii": [
+      {
+        "nume": "Black Friday Kamu 2026: reduceri de pana la 65%",
+        "descriere": "",
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.kamu.ro%2F",
+        "zile_ramase": 14,
+        "expira": "2026-11-15",
+        "sursa": "2performant_api"
+      }
+    ],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "ultima_verificare": "2026-11-01",
+    "scor_final": 30.0,
+    "program_id": 12094,
+    "unique_code": "7e72e651f"
   },
   {
     "magazin": "duchessenails.ro",
@@ -22046,31 +22099,6 @@
     "scor_final": 0.0,
     "program_id": 13210,
     "unique_code": "908b215fe"
-  },
-  {
-    "magazin": "kamu.ro",
-    "url": "https://www.kamu.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.kamu.ro",
-    "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13474/medium/13474.png",
-    "categorie": "Beauty & Îngrijire",
-    "categorie_slug": "beauty",
-    "comision": "7.5",
-    "rank": 999,
-    "scor_afiliere": 0,
-    "prioritate": "neclasat",
-    "canal_recomandat": "",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "ultima_verificare": "2026-11-01",
-    "scor_final": 0.0,
-    "program_id": 12094,
-    "unique_code": "7e72e651f"
   },
   {
     "magazin": "optiblu.ro",

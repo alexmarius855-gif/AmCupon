@@ -1,13 +1,13 @@
 {
   "generat": "2026-11-01",
-  "total_magazine": 450,
-  "cu_promotie": 98,
-  "cu_cod_real": 2,
-  "doar_oferta": 96,
-  "procent_cu_promotie": 21.8,
-  "procent_cu_cod": 0.4,
-  "reducere_mediana_generala": 40,
-  "magazine_cu_procent_declarat": 49,
+  "total_magazine": 447,
+  "cu_promotie": 101,
+  "cu_cod_real": 1,
+  "doar_oferta": 100,
+  "procent_cu_promotie": 22.6,
+  "procent_cu_cod": 0.2,
+  "reducere_mediana_generala": 40.0,
+  "magazine_cu_procent_declarat": 52,
   "categorii": [
     {
       "slug": "carti-educatie",
@@ -22,28 +22,28 @@
       "slug": "casa-gradina",
       "nume": "Casă & grădină",
       "magazine": 99,
-      "cu_promotie": 17,
+      "cu_promotie": 18,
       "reducere_mediana": 55,
       "reducere_max": 80,
       "esantion": 5
     },
     {
+      "slug": "beauty",
+      "nume": "Beauty & îngrijire",
+      "magazine": 56,
+      "cu_promotie": 12,
+      "reducere_mediana": 52.5,
+      "reducere_max": 80,
+      "esantion": 8
+    },
+    {
       "slug": "fashion",
       "nume": "Fashion",
-      "magazine": 52,
+      "magazine": 51,
       "cu_promotie": 19,
       "reducere_mediana": 40,
       "reducere_max": 70,
       "esantion": 9
-    },
-    {
-      "slug": "beauty",
-      "nume": "Beauty & îngrijire",
-      "magazine": 56,
-      "cu_promotie": 10,
-      "reducere_mediana": 40,
-      "reducere_max": 80,
-      "esantion": 7
     },
     {
       "slug": "copii",
@@ -55,6 +55,15 @@
       "esantion": 4
     },
     {
+      "slug": "marketplace",
+      "nume": "Marketplace",
+      "magazine": 42,
+      "cu_promotie": 8,
+      "reducere_mediana": 27.5,
+      "reducere_max": 70,
+      "esantion": 4
+    },
+    {
       "slug": "sanatate",
       "nume": "Sănătate & farmacie",
       "magazine": 37,
@@ -62,15 +71,6 @@
       "reducere_mediana": 17.5,
       "reducere_max": 30,
       "esantion": 4
-    },
-    {
-      "slug": "marketplace",
-      "nume": "Marketplace",
-      "magazine": 44,
-      "cu_promotie": 9,
-      "reducere_mediana": 15,
-      "reducere_max": 70,
-      "esantion": 3
     },
     {
       "slug": "auto-moto",
@@ -103,10 +103,10 @@
       "slug": "animale",
       "nume": "Pet shop",
       "magazine": 16,
-      "cu_promotie": 1,
+      "cu_promotie": 2,
       "reducere_mediana": null,
       "reducere_max": null,
-      "esantion": 1
+      "esantion": 2
     },
     {
       "slug": "bijuterii",
@@ -157,8 +157,8 @@
   "criteriu": "domeniu .ro",
   "international": {
     "total": 503,
-    "cu_promotie": 59,
-    "cu_cod": 34
+    "cu_promotie": 58,
+    "cu_cod": 33
   },
   "retele": [
     "2Performant",

@@ -560,8 +560,8 @@
    "magazine": 160
   },
   "2026-11-01": {
-   "promotii": 247,
-   "magazine": 153
+   "promotii": 252,
+   "magazine": 155
   }
  },
  "magazine": {
@@ -595,7 +595,7 @@
     "prima": "2026-07-03",
     "ultima": "2026-11-01",
     "expira": "2026-12-30",
-    "activa": true
+    "activa": false
    }
   ],
   "ada-shoes.ro": [
@@ -3966,7 +3966,7 @@
     "prima": "2026-08-20",
     "ultima": "2026-11-01",
     "expira": "2026-12-30",
-    "activa": true
+    "activa": false
    }
   ],
   "fara-daunatori.ro": [
@@ -3981,6 +3981,15 @@
    }
   ],
   "farmec.ro": [
+   {
+    "k": "teasingaccesexclusivlablackfridaype5noiembrie|",
+    "titlu": "Teasing: Acces exclusiv la Black Friday pe 5 noiembrie!",
+    "cod": false,
+    "prima": "2026-11-01",
+    "ultima": "2026-11-01",
+    "expira": "2026-11-04",
+    "activa": true
+   },
    {
     "k": "summershoppingairlinesweekend30reduceredirectincoslacumparaturideminimum150lei|",
     "titlu": "Summer Shopping Airlines - Weekend - -30% REDUCERE direct în coș la cumpărături de minimum 150 lei.",
@@ -4086,6 +4095,24 @@
    }
   ],
   "fera.ro": [
+   {
+    "k": "panala25discount|",
+    "titlu": "Până la 25% discount",
+    "cod": false,
+    "prima": "2026-11-01",
+    "ultima": "2026-11-01",
+    "expira": "2026-11-29",
+    "activa": true
+   },
+   {
+    "k": "10reducerehranahillspentrucaini|",
+    "titlu": "10% reducere hrană Hill's pentru câini",
+    "cod": false,
+    "prima": "2026-11-01",
+    "ultima": "2026-11-01",
+    "expira": "2026-11-01",
+    "activa": true
+   },
    {
     "k": "hills93conservegratis|",
     "titlu": "HILL'S 9+3 conserve GRATIS",
@@ -4989,7 +5016,7 @@
     "prima": "2026-06-29",
     "ultima": "2026-11-01",
     "expira": "2027-06-15",
-    "activa": true
+    "activa": false
    },
    {
     "k": "reducerelaincaltamintebarbateascadinpielenaturalacodlamoda|lamoda",
@@ -4998,7 +5025,7 @@
     "prima": "2026-06-29",
     "ultima": "2026-11-01",
     "expira": "",
-    "activa": true
+    "activa": false
    }
   ],
   "infinity.ro": [
@@ -5058,6 +5085,15 @@
    }
   ],
   "inpuff.ro": [
+   {
+    "k": "aniversareinpuff15anialaturidetine|",
+    "titlu": "Aniversare INPUFF – 15 ani alături de tine!",
+    "cod": false,
+    "prima": "2026-11-01",
+    "ultima": "2026-11-01",
+    "expira": "2026-11-05",
+    "activa": true
+   },
    {
     "k": "inpuffsummersalereduceridepanala40latoaterochiile|",
     "titlu": "InPuff Summer Sale – reduceri de până la 40% la toate Rochiile",
@@ -5320,6 +5356,15 @@
   ],
   "jollymag.ro": [
    {
+    "k": "calendaradventdecraciunblocurideconstruitfigurine24desurprizepentrucopii20reducere|",
+    "titlu": "Calendar advent de Craciun, blocuri de construit figurine, 24 de surprize pentru copii - 20% reducere",
+    "cod": false,
+    "prima": "2026-11-01",
+    "ultima": "2026-11-01",
+    "expira": "2026-11-26",
+    "activa": true
+   },
+   {
     "k": "jollymag10reducerecucoduljolly10|jolly10",
     "titlu": "JollyMag - 10% reducere cu codul JOLLY10",
     "cod": true,
@@ -5379,6 +5424,15 @@
    }
   ],
   "kamu.ro": [
+   {
+    "k": "blackfridaykamu2026reduceridepanala65|",
+    "titlu": "Black Friday Kamu 2026: reduceri de pana la 65%",
+    "cod": false,
+    "prima": "2026-11-01",
+    "ultima": "2026-11-01",
+    "expira": "2026-11-15",
+    "activa": true
+   },
    {
     "k": "parfumuriarabesticureduceridepanala37pekamuro|",
     "titlu": "Parfumuri arabești cu reduceri de până la 37% pe kamu.ro",
@@ -5631,6 +5685,33 @@
    }
   ],
   "laavooextensions.com": [
+   {
+    "k": "blackfriday25off|bf25",
+    "titlu": "Black Friday 25% off",
+    "cod": true,
+    "prima": "2026-11-01",
+    "ultima": "2026-11-01",
+    "expira": "2026-11-30",
+    "activa": true
+   },
+   {
+    "k": "blackfriday20off|bf20",
+    "titlu": "Black Friday 20% off",
+    "cod": true,
+    "prima": "2026-11-01",
+    "ultima": "2026-11-01",
+    "expira": "2026-11-30",
+    "activa": true
+   },
+   {
+    "k": "blackfriday16off|bf16",
+    "titlu": "Black Friday 16% off",
+    "cod": true,
+    "prima": "2026-11-01",
+    "ultima": "2026-11-01",
+    "expira": "2026-11-30",
+    "activa": true
+   },
    {
     "k": "halloweensale23off|hw23",
     "titlu": "Halloween Sale 23% off",
@@ -6729,6 +6810,15 @@
   ],
   "mobilalaguna.ro": [
    {
+    "k": "reducerimobilalunaoctombrie2026|",
+    "titlu": "Reduceri Mobila Luna Octombrie 2026",
+    "cod": false,
+    "prima": "2026-11-01",
+    "ultima": "2026-11-01",
+    "expira": "2026-11-01",
+    "activa": true
+   },
+   {
     "k": "reducerimobilalunaaugust2026|",
     "titlu": "Reduceri Mobila Luna August 2026",
     "cod": false,
@@ -7724,6 +7814,15 @@
   ],
   "ozone.ro": [
    {
+    "k": "halloween|",
+    "titlu": "Oferte care îți dau fiori! 50.000 de oferte groaznic de tari, care te vor bântui tot Halloween-ul. Profită de reducerile înfricoșătoare!",
+    "cod": false,
+    "prima": "2026-11-01",
+    "ultima": "2026-11-01",
+    "expira": "2026-11-01",
+    "activa": true
+   },
+   {
     "k": "blackfriday|",
     "titlu": "BLACK FRIDAY",
     "cod": false,
@@ -8114,7 +8213,7 @@
     "prima": "2026-10-22",
     "ultima": "2026-11-01",
     "expira": "2026-11-01",
-    "activa": true
+    "activa": false
    },
    {
     "k": "redodoprimedaysale|prime10",
@@ -8276,6 +8375,15 @@
    }
   ],
   "sevensins.ro": [
+   {
+    "k": "blackfridaysevensins202650latoateproduseledepesite|",
+    "titlu": "Black Friday Sevensins 2026: -50% la toate produsele de pe site",
+    "cod": false,
+    "prima": "2026-11-01",
+    "ultima": "2026-11-01",
+    "expira": "2026-11-30",
+    "activa": true
+   },
    {
     "k": "flashsalepanala50laproduseleselectatedepesevensinsro|",
     "titlu": "Flash Sale - Până la -50% la produsele selectate de pe SevenSins.ro",
@@ -9152,7 +9260,7 @@
     "prima": "2026-06-29",
     "ultima": "2026-11-01",
     "expira": "",
-    "activa": true
+    "activa": false
    },
    {
     "k": "aboneazatelanewsletterulnostruazbeneficiazadeoreducerede25leilainscriere|",
@@ -9161,7 +9269,7 @@
     "prima": "2026-06-29",
     "ultima": "2026-11-01",
     "expira": "2028-12-31",
-    "activa": true
+    "activa": false
    }
   ],
   "vidaxl.ro": [

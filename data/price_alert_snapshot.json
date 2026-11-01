@@ -1,157 +1,580 @@
 {
+ "versiune": 2,
+ "magazine": {
   "dhgate.com": [
-    "DH2026NOV10NEW",
-    "DH2026NOV3NEW",
-    "DH2026NOV4NEW",
-    "DH2026NOV8NEW",
-    "DH2026NOVSAVE10",
-    "DH2026NOVSAVE12",
-    "DH2026NOVSAVE16",
-    "DH2026NOVSAVE20",
-    "DH2026NOVSAVE25",
-    "DH2026NOVSAVE35",
-    "DH2026NOVSAVE45",
-    "DH2026NOVSAVE6",
-    "DH2026NOVSAVE8"
+   "newusersave10onordersover85usingcouponatdhgate",
+   "newusersave3onordersover5usingcouponatdhgate",
+   "newusersave4onordersover10usingcouponatdhgate",
+   "newusersave8onordersover50usingcouponatdhgate",
+   "save10onordersover100usingcouponatdhgate",
+   "save12onordersover120usingcouponatdhgate",
+   "save16onordersover160usingcouponatdhgate",
+   "save20onordersover200usingcouponatdhgate",
+   "save25onordersover300usingcouponatdhgate",
+   "save35onordersover600usingcouponatdhgate",
+   "save40onordersover850usingcouponatdhgate",
+   "save6onordersover50usingcouponatdhgate",
+   "save8onordersover80usingcouponatdhgate"
   ],
   "xmind.com": [
-    "XMIND10OFF"
+   "xmind10off"
   ],
   "orbitmobile.com": [
-    "QUBER10"
+   "qubersavings"
   ],
   "outin.com": [
-    "OIAFF5"
+   "outin"
   ],
   "avidlove.com": [
-    "AFF20"
+   "affiliatediscountcode",
+   "enjoy20offsitewidewithcode"
+  ],
+  "bcengi.com": [
+   "dfb"
+  ],
+  "store.boyamic.com": [
+   "boya15off"
+  ],
+  "mooyius.com": [
+   "fallwintercampaignpackage"
   ],
   "laavooextensions.com": [
-    "H25"
+   "bestseller25off",
+   "blackfriday16off",
+   "blackfriday20off",
+   "blackfriday25off"
+  ],
+  "ashimaryhair.com": [
+   "13x6fulllace",
+   "360lacewig",
+   "allsiteupto60off"
+  ],
+  "hototools.com": [
+   "newusers"
   ],
   "cvlife.com": [
-    "30CVLIFE"
+   "30discount"
   ],
   "tvcmall.com": [
-    "TVC26Q4A$20",
-    "TVC26Q4A10NEW",
-    "TVC26Q4A33NEW",
-    "TVC26Q4A55NEW",
-    "TVC26Q4A6%",
-    "TVC26Q4A95NEW"
+   "20offover30026q4",
+   "6offfor0150ordervalue26q4",
+   "95offover30026q4",
+   "save10on10026q4",
+   "save33on30026q4",
+   "save55on50026q4"
   ],
   "billionconnect.net": [
-    "NEWBC20"
+   "usecodetoenjoy20offfornewcustomers"
+  ],
+  "helloice.com": [
+   "ofertăhelloice"
+  ],
+  "comfier.com": [
+   "35offforallmassagers"
   ],
   "original-group.com": [
-    "VELVET26"
+   "burlesquemonthishereatdesirerivieramayaresortoriginalresorts"
   ],
   "nadula.com": [
-    "Treat"
+   "extra15offhumanhairbyebyeknotswigwithcodenadula15",
+   "halloweensaleupto100offwithcode"
   ],
   "ugeat.com": [
-    "HAL15",
-    "HAL23",
-    "VR70"
+   "buytogether25off",
+   "clearancesale50off",
+   "halloweensale15off",
+   "halloweensale23off",
+   "virgin70off"
+  ],
+  "redodopower.de": [
+   "redodo8discountcodesaveonallproducts"
   ],
   "booking.regalhotel.com": [
-    "RWLS30"
+   "30dayslongstayingpackageiclubfortresshillhotelregalhotels"
   ],
   "casa-andina.com": [
-    "DISCOUNT2026"
+   "getupto17discountonstayscasaandina"
   ],
   "cllix.com": [
-    "BOOKDIRECT2SAVE"
+   "enjoy10offonyourstaywithbookdirectcllixapartmentsandhotelsarise"
   ],
   "crownandchamparesorts.com": [
-    "EXTRA5OFF"
+   "extra5promocodeofferonroomratesdirectbookingkuredumaldives"
   ],
   "geekbuying.com": [
-    "9OJ5SQUX31",
-    "ANYKS1CA",
-    "ANYS14P",
-    "CONGKBH27",
-    "JAKE10P",
-    "JAKEY10",
-    "LONANORC",
-    "LONGERR",
-    "LRAY5M25",
-    "LRAY5RF",
-    "MOB617",
-    "PULUMAPE86",
-    "PULUMAPE86PRO",
-    "RAY55WEU",
-    "SCZZ97",
-    "TRIMUI256",
-    "VADER4P"
+   "8offfor3dprinterslaserengraverscategorymaxsave50",
+   "ofertăgeekbuying",
+   "usd10offcouponforflydigivader4progamingcontrollerforceadjustmentleverjoystickhallmicro2in1triggers1000hzpollingratecompa",
+   "usd12offcouponforlongerlaserengraveryaxisrotaryrollerwithbracketavailablecountriesall",
+   "usd15offcouponforlongerlaserrotarychuckfornanonanoproavailablecountriesall",
+   "usd17offcouponforktch27e627inchgamingmonitor25601440qhdfastipsscreen300hz240hzrefreshratehdr4001msresponsetimefreesyncgs",
+   "usd224offcouponforpulumape86electricbike500wmotor48v20ahbattery26inchtires40kmhmaxspeed150kmrangehydraulicbrakesoilsprin",
+   "usd224offcouponforpulumape86proelectricbike500w2motor48v20ahbattery26inchtires40kmhmaxspeed150kmrangehydraulicbrakesoils",
+   "usd22offcouponforanycubickobras1combo3dprinter4kghyperplafilament1kgpurple1kgblue1kgred1kgpeachypinkavailablecountriesal",
+   "usd22offcouponforminixneoz97minipcinteln974coresmax36ghz12gblpddr5xram512gbssdwifi6bluetooth522hdmi1dp4ktripledisplay3us",
+   "usd27offcouponforlongerray55wlaserengraver35inchtouchscreenofflinecarvingultrafinefocusedlaser32bitchipsetupgradablelase",
+   "usd3offcouponfortrimuismartprogameconsolewith256gbtfcard13729games496in720pipsscreenlinuxos1gbram8gbstorage5hoursplaytim",
+   "usd45offcouponforanycubickobras13dprinterwith2aceprovibrant8colorprinting600mmsultrafastspeedautoleveling320掳chotend44db",
+   "usd4offcouponforjakemyjmy10pro2in1ultrasoniccutterpolisher35w40khzoleddisplayfordiymedicalindustrialmodelprototypingdebu",
+   "usd4offcouponforlongerray5laserengraverraiserfeet70mm8pcsavailablecountriesall",
+   "usd56offcouponforforidextremer3electricbike250wmotor48v12ahbattery2924inchtires25kmhmaxspeed120kmmaxrangehydraulicdiscbr",
+   "usd67offcouponforcrealityraptor3dscannerhybridbluelasernir60fpsscanningspeedobjectsbetween52000mm24bitfullcolorscan002mm",
+   "usd7offcouponforjakemyjmy102in1ultrasoniccutterpolisher35w40khzoleddisplayfordiymedicalindustrialmodelprototypingdeburri",
+   "usd7offcouponforlongerray5mini25wlaserengraver004mmprecision12000mmminspeedforwoodacrylicleathermetal130140mmavailableco"
   ],
   "nh-hotels.com": [
-    "CITYDREAMERS"
+   "prewinterofferisliveupto25offminorhotelseuamformerlynhhoteles"
   ],
   "store.pongbotsports.com": [
-    "Pongbotsports5"
+   "5offforpongbottennisballmachine"
   ],
   "vilagale.com": [
-    "AVOS&NETOS"
+   "20discountgrandparentsgrandchildrenprogrammevilagale"
+  ],
+  "kailasgear.com": [
+   "10offforspecifiedcategories",
+   "nolimitonquantitytimeorproductcategorya5discountwillbeofferedafteruse"
   ],
   "swiss-belhotel.com": [
-    "BCACC"
+   "bankbcaofferenjoy15offbestflexibleratesswissbelhotelinternational"
   ],
   "gardenhotels.com": [
-    "GHADULTS"
+   "getadditional5discountonadultonlypropertiesgardenhotels"
   ],
   "networksolutions.com": [
-    "NEW30"
+   "30offtheaiwebsitebuilderwithannualterms"
   ],
   "hardaddy.com": [
-    "BFEARLY75"
+   "coupon2nd25off3rd55off4th75off"
+  ],
+  "oyrosy.com": [
+   "fallwintercampaignpackage"
   ],
   "store.saramonic.com": [
-    "SRaff249"
+   "save249onordersover999forsaramonicproducts"
+  ],
+  "snailax.com": [
+   "get30offallproductsfromstore"
+  ],
+  "theomfort.com": [
+   "getyourneworderforallproduct15off"
+  ],
+  "kisslovehair.com": [
+   "newhairupto40off"
+  ],
+  "adguard-vpn.com": [
+   "75offa2yearadguardvpnsubscriptionthepromocodewillbevaliduntilnovember252026"
+  ],
+  "valerion.com": [
+   "screendiscountsavacc88"
+  ],
+  "xlaserlab.com": [
+   "geta5offonlaserwelderx1x1proforyourfirstpurchase",
+   "getanextra99offonallordersover1500onxlaserlab"
   ],
   "wecreat.com": [
-    "WECREAT"
+   "100offforwecreatlumos",
+   "100offforwecreatvisionpro",
+   "120offforlumosflex",
+   "5offforallwecreatproducts"
   ],
   "kospet.com": [
-    "DPR35",
-    "DS20",
-    "HT3U2",
-    "V3U20"
+   "eulimitedtimesalem3usave45offusecode",
+   "eulimitedtimesalep10save48offusecode",
+   "eulimitedtimesales2save51offusecode",
+   "eulimitedtimesalet3u2save42offusecode",
+   "gluslimitedtimesalep10save48offusecode",
+   "gluslimitedtimesales2save51offusecode",
+   "gluslimitedtimesalet3u2save41offusecode"
+  ],
+  "novakidschool.com": [
+   "15discountonthefirstpurchaseforallsubscriptions"
   ],
   "easeus.com": [
-    "HALLO26"
+   "easeushalloweensaleisliveusepromotoget55offessentialsoftwareincludingfunvoicechangerdatatoolsandmoreofferendsonoctober31"
   ],
   "x-sense.com": [
-    "XSENSEAF12"
+   "xsenseexclusiveaffiliateoffer12offyourentireorder"
   ],
   "us.lemorele.com": [
-    "new15",
-    "new20"
+   "lemorele15offsitewidelimiteddealforbestwirelesshdmi",
+   "lemorele20offfornewcustomerswelcomediscountsitewide"
   ],
   "savoydubai.com": [
-    "CAMP-BEST"
+   "booknowandgetupto25discountwithsavoyhotelsdubai"
   ],
   "ikier.com": [
-    "AFFK1064100",
-    "AFFK3680",
-    "AFFK40160",
-    "AFFK70200",
-    "AFFK70P200",
-    "AFFMASTER300"
+   "200offikierk1promax70wwithcode",
+   "copyof160offikierk40maxwithcode",
+   "ikierk1pro106420wexclusive100offcoupon",
+   "ikierk1ultra36wexclusive80offcoupon",
+   "ikierk40maxexclusive160offcoupon",
+   "ikierk70maxexclusive200offcouponcode",
+   "ikiermasterexclusive300offcouponcode",
+   "save300onikiermasterwithcode"
   ],
   "robud.com": [
-    "RBD20",
-    "RBD25",
-    "RBD28",
-    "RBD30"
+   "robudblackfridayus20off500",
+   "robudblackfridayus25off800",
+   "robudblackfridayus28off1000",
+   "robudblackfridayus30off1200"
+  ],
+  "answear.ro": [
+   "luckyfriday"
+  ],
+  "automobilus.ro": [
+   "q4opportunitypromoveazăștergătoareledeparbrizautomobilus"
+  ],
+  "aosom.ro": [
+   "blackweekeconomiereduceri"
+  ],
+  "lacrimidepanda.ro": [
+   "blackfridaylacrimidepanda35reducerelatotcatalogul",
+   "cyberweeklacrimidepanda30latotcatalogulvoucher50lei"
+  ],
+  "longevity-boost.com": [
+   "20încă20lasuplimentelelongevityboost",
+   "blackfriday352produsefullsizecadoulalongevityboost"
+  ],
+  "otter.ro": [
+   "flashsale",
+   "otterblackfridayshoefisticat3",
+   "superchallengeotterinnoiembrie"
+  ],
+  "scule365.ro": [
+   "blackfriday2026scule265"
+  ],
+  "carturesti.ro": [
+   "unplandelecturăcurezultatepemăsură"
+  ],
+  "noriel.ro": [
+   "blackfridayreduceridepanala7030octombrie15noiembrie"
+  ],
+  "evomag.ro": [
+   "blackfriday2026laevomag"
+  ],
+  "kinderauto.ro": [
+   "blackfridaykinderautoro2026comision8coșmediupeste1000ronkitmediadisponibil"
+  ],
+  "librarie.net": [
+   "bursacărțilorieftineedițiasub15leipeste5000detitluriactive",
+   "edituraactsipolitonreducere23lapeste600detitluri23octombrie23decembrie2026",
+   "edituraraobooksreducerideminim50lapeste1300detitluri",
+   "minim50reducere"
+  ],
+  "regata.ro": [
+   "cuponreducere5"
+  ],
+  "spy-shop.ro": [
+   "blackfridaylasecuritate"
+  ],
+  "libris.ro": [
+   "pânăla75șitransportgratuitnurataweekendultrei"
+  ],
+  "rowenta.ro": [
+   "blackfriday"
+  ],
+  "ozone.ro": [
+   "blackfriday",
+   "halloween"
+  ],
+  "litera.ro": [
+   "blackfriday2026reduceridepânăla90cadouridin0411"
+  ],
+  "gryxx.ro": [
+   "gryxxcybersaleblackfridaymode38noiembrie"
+  ],
+  "intimax.ro": [
+   "blackfridaymareabubuială"
+  ],
+  "tezyo.ro": [
+   "tezyotheblackfridayselection38noiembrie"
+  ],
+  "expomob.ro": [
+   "blackfridaylaexpomobreduceridepânăla80",
+   "outletexpomobreduceridepanala70lamobilierpentrucasa"
+  ],
+  "shopika.ro": [
+   "blackfridayshopika0509112026reducereinmasade15panalaofertespecialecu70discount"
+  ],
+  "autobob.ro": [
+   "livraregratuitaautoboblacomenziledepeste500lei"
+  ],
+  "moftcollection.ro": [
+   "livraregratuitalacomenzidepeste200lei"
+  ],
+  "manukashop.ro": [
+   "manukashoptransportgratuitlaoricecomandasidiscountaplicatladiverseproduse",
+   "transportgratuitlaoricecomanda"
+  ],
+  "doctorshield.ro": [
+   "blackfridaydoctorshieldroreduceridepanala50sitransportgratuit",
+   "incalzitoaredeterasadoctorhomedela69999lei"
+  ],
+  "craftup.ro": [
+   "ambalajesidecoratiunidecraciuncureduceridepanala30lapecraftupro",
+   "craftupblackfriday2026cureduceridepanala87"
+  ],
+  "vetro.ro": [
+   "blackfriday68112026"
+  ],
+  "labelshop.ro": [
+   "profitaacumdereduceriintre5si15laechipamentesiconsumabile"
+  ],
+  "somnart.ro": [
+   "blackfriday2026"
+  ],
+  "sportdepot.ro": [
+   "codreduceresportdepot20lanouacolectie"
+  ],
+  "vegis.ro": [
+   "blackfridayvegisro"
+  ],
+  "videt.ro": [
+   "blackfriday40latoțiochelariionlineșiînshowroomuri"
+  ],
+  "edituracorint.ro": [
+   "reduceripanala90"
+  ],
+  "paa-home.ro": [
+   "accesoriiaspiratorrobotrowentacureduceridepanala50lapaahomero",
+   "accesoriiroborockcureduceridepanala50lapaahomero",
+   "accesoriixiaomimirobotcureduceridepanala45lapaahomero",
+   "livraregratuitalacomenzidepeste350lei",
+   "produseresigilatepaahomerocureduceredepanala50",
+   "reduceridepanala40ladetergentipentruaspiratoarerobot",
+   "reduceridepanala60laaccesoriicompatibilepentruaspiratoarerobotpepaahomero"
+  ],
+  "happypets.ro": [
+   "blackfridayhappypetsroreduceridepanala60",
+   "reduceridepanala30laprodusevetariaselectatepehappypetsro",
+   "reduceridepanala70laprodusecutermenreduspehappypetsro",
+   "reducerihappypetsdepanala70laprodusepentrucainisipisici"
+  ],
+  "everin.ro": [
+   "blackfriday2026cureduceridepanala80"
+  ],
+  "vonmag.ro": [
+   "blackfridaypevonmagro"
+  ],
+  "nemira.ro": [
+   "blackfridaynemirapânăla90reducere"
+  ],
+  "prestigehome.ro": [
+   "blackfridaylaprestigehome"
+  ],
+  "fara-daunatori.ro": [
+   "oferta11"
+  ],
+  "linailsboutique.ro": [
+   "blackfridaylalinailsboutiquereducerirealedepanala79intre68noiembrie"
+  ],
+  "evolutionpowertools.ro": [
+   "blackfriday2026"
+  ],
+  "femieko.ro": [
+   "economiseștepânăla25cuabonamentulfemiekoprotecțielunarăfărăgriji"
+  ],
+  "fsm-romania.ro": [
+   "blackmonthfsmromânia2026reduceridepânăla80"
+  ],
+  "edituraparalela45.ro": [
+   "blackfridaycărțicupânăla80reducere"
+  ],
+  "kinderplay.ro": [
+   "blackfriday2026kinderplayroreduceridepânăla38"
+  ],
+  "agroclima.ro": [
+   "blackfridaylaagroclimaro915noiembrie2026"
+  ],
+  "petit-bebe.ro": [
+   "blackfridaylapetitbebepanala36reducere"
+  ],
+  "brainmarket.ro": [
+   "blackfridaybrainmarket10reducerelatoateproduselebrainmax"
+  ],
+  "priveboutique.net": [
+   "blackcatfridaytoaterochiilelaprețdeblackfridaypânăla15extraîncoș"
+  ],
+  "aldoshoes.com.ro": [
+   "aldoblackfridaysale38noiembrie"
+  ],
+  "gorgeaux.ro": [
+   "blackfridaygorgeaux2026"
+  ],
+  "pickndazzle.com": [
+   "labor8signaturescentparfumdenisaplus3produseinvaloaredepeste455leiladoar195leicadoupaeseextra10la2cutii"
+  ],
+  "curteaveche.ro": [
+   "panala90reducere"
+  ],
+  "atomico.ro": [
+   "ofertăatomicosupersporcureduceridepânăla55laproduseleselectatepentrucasășigrădină"
+  ],
+  "editura-arthur.ro": [
+   "campaniinoiembrieedituraarthur"
+  ],
+  "ada-shoes.ro": [
+   "blackfridayaînceputmaidevremelaadashoes"
+  ],
+  "underarmour.ro": [
+   "blackfridaystartdata3010",
+   "comisiondeafilieremajoratpentruoperioadalimitataunderarmour"
+  ],
+  "nano-auto.ro": [
+   "blackfridaycelemaimicipreturidinan"
+  ],
+  "beststoreonline.ro": [
+   "blackfriday"
+  ],
+  "infinity.ro": [
+   "blackfriday2026peinfinityroreduceridepânăla70"
+  ],
+  "e-potion.ro": [
+   "10reducerepetotsiteulepotionro"
+  ],
+  "craftmystic.ro": [
+   "blackfridaycraftmysticpânăla45labijuteriidinargint925cupietrenaturale"
+  ],
+  "jojofashion.ro": [
+   "lichidaridestocupto50off"
+  ],
+  "zandra.ro": [
+   "zandrablackweeksalereduceride1040"
+  ],
+  "edituracasa.ro": [
+   "blackfridaylaedituracasareduceridepânăla78"
+  ],
+  "uniquestore.ro": [
+   "extra15cucodulsale"
+  ],
+  "kamu.ro": [
+   "blackfridaykamu2026reduceridepanala65"
+  ],
+  "duchessenails.ro": [
+   "duchessenailsblackfriday2026"
+  ],
+  "yves-rocher.ro": [
+   "40laoselecțiedeprodusedingamaantiâgeglobal"
+  ],
+  "edez.ro": [
+   "blackfridayedez202615extrareducerelatoateprodusele"
+  ],
+  "afisport.ro": [
+   "blackfridayafisportro511noiembrie2026"
+  ],
+  "baristelli.ro": [
+   "blackfridaylabaristelli"
+  ],
+  "zephyrlabs.ro": [
+   "promotieprodusemelegattipharmaseptembriedecembrie"
+  ],
+  "centini.ro": [
+   "blackmonthlacentinireduceridepânăla30"
+  ],
+  "karcher.com": [
+   "blackfridaylakärcherblackfridaylakärchercelemaimarireduceridinankärcherblackfriday530noiembrie"
+  ],
+  "frapperie.ro": [
+   "blackfridayfrapperie10reducerelatotsiteul"
+  ],
+  "sneakerit.ro": [
+   "sale"
+  ],
+  "estel.ro": [
+   "novemberfest"
+  ],
+  "maranc.ro": [
+   "blackfridaymarancperformanțatameritărăsplătită",
+   "potieconomisicumparandprodusemaranclapromotie"
+  ],
+  "dacobi.ro": [
+   "blackfriday"
+  ],
+  "oleya.ro": [
+   "cuponcadou10",
+   "cuponcadoulaprimacomanda"
+  ],
+  "112coffee.com": [
+   "10discountonfirstcoffeeorder"
+  ],
+  "diblongromania.ro": [
+   "blackfriday2026ladiblongromania"
+  ],
+  "giftdesign.ro": [
+   "blackgiftdesignreduceridepanala60"
+  ],
+  "hairify.ro": [
+   "15discountlafibreledepărdincheratinăpentrupărrarșichelie"
+  ],
+  "intimplay.ro": [
+   "reducerede10latoateproduseleintimplayro"
+  ],
+  "sofipex.ro": [
+   "blackfriday",
+   "promotiiperiodice"
+  ],
+  "printingmall.ro": [
+   "voucherblackfriday615noiembriecomisionhavit10"
+  ],
+  "detoxmed.ro": [
+   "reducere30latoateprogrameledetoxmed"
+  ],
+  "menzo.ro": [
+   "reduceredeblackfridaypentrumenzoro"
+  ],
+  "adhoreca.eu": [
+   "plătești2primești3redefineșteservireapebambuspremium"
+  ],
+  "erosvita.ro": [
+   "blackfridayerosvita10peste150lei15peste250lei",
+   "cadouprezervativepassion",
+   "vineritransportgratuitpentruoricecomandacedepaseste129ron"
+  ],
+  "e-cosmetics.ro": [
+   "blackfridayblackweeksreduceridepanala35"
+  ],
+  "zelto.ro": [
+   "sezonulvirozelorprețurimaimici"
+  ],
+  "giftera.ro": [
+   "cadouridecraciungifteraroseturiculantisorsimesajpentruceidragi"
+  ],
+  "nuviabeauty.ro": [
+   "blackfriday"
+  ],
+  "havit-romania.ro": [
+   "blackfridayhavitromânia30reducerelatot615noiembrie"
+  ],
+  "startinscoala.shop": [
+   "promotiedeblackfridaylawwwstartinscoalashop",
+   "reducerelaprimacoamnda"
+  ],
+  "inpuff.ro": [
+   "aniversareinpuff15anialăturidetine"
   ],
   "jollymag.ro": [
-    "JOLLY10"
+   "calendaradventdecraciunblocurideconstruitfigurine24desurprizepentrucopii20reducere",
+   "reducere10latotcosul"
   ],
-  "vidaxl.bg": [
-    "OFERTE01"
+  "farmec.ro": [
+   "teasingaccesexclusivlablackfridaype5noiembrie"
   ],
-  "incaltamintelamoda.ro": [
-    "LAMODA"
+  "fera.ro": [
+   "10reducerehranăhillspentrucâini",
+   "pânăla25discount"
+  ],
+  "herbagetica.ro": [
+   "stareadebinecuherbageticavine3vacanțeînmaldivepremiizilnice"
+  ],
+  "nobilacasa.ro": [
+   "reducericombo"
+  ],
+  "mobilalaguna.ro": [
+   "reducerimobilalunaoctombrie2026"
+  ],
+  "sevensins.ro": [
+   "blackfridaysevensins202650latoateproduseledepesite"
   ]
+ }
 }
