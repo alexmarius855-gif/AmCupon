@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31",
+  "updated": "2026-11-01",
   "categorii": [
     {
       "slug": "laptopuri",
@@ -3978,9 +3978,7 @@
               "magazin_slug": "decathlon.ro",
               "eticheta": "Decathlon",
               "pret": 549,
-              "recomandat": true,
-              "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.decathlon.ro",
-              "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11445/medium/11445.png"
+              "recomandat": true
             },
             {
               "magazin_slug": "sportisimo.ro",
@@ -4036,9 +4034,7 @@
               "magazin_slug": "decathlon.ro",
               "eticheta": "Decathlon",
               "pret": 219,
-              "recomandat": true,
-              "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.decathlon.ro",
-              "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11445/medium/11445.png"
+              "recomandat": true
             },
             {
               "magazin_slug": "sportisimo.ro",
@@ -4095,9 +4091,7 @@
               "magazin_slug": "decathlon.ro",
               "eticheta": "Decathlon",
               "pret": 649,
-              "recomandat": true,
-              "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.decathlon.ro",
-              "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11445/medium/11445.png"
+              "recomandat": true
             },
             {
               "magazin_slug": "sportisimo.ro",
@@ -4209,9 +4203,7 @@
               "magazin_slug": "decathlon.ro",
               "eticheta": "Decathlon",
               "pret": 159,
-              "recomandat": true,
-              "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.decathlon.ro",
-              "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/11445/medium/11445.png"
+              "recomandat": true
             }
           ]
         }
