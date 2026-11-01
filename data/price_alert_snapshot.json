@@ -1,4 +1,19 @@
 {
+  "dhgate.com": [
+    "DH2026NOV10NEW",
+    "DH2026NOV3NEW",
+    "DH2026NOV4NEW",
+    "DH2026NOV8NEW",
+    "DH2026NOVSAVE10",
+    "DH2026NOVSAVE12",
+    "DH2026NOVSAVE16",
+    "DH2026NOVSAVE20",
+    "DH2026NOVSAVE25",
+    "DH2026NOVSAVE35",
+    "DH2026NOVSAVE45",
+    "DH2026NOVSAVE6",
+    "DH2026NOVSAVE8"
+  ],
   "xmind.com": [
     "XMIND10OFF"
   ],
@@ -28,21 +43,11 @@
   "billionconnect.net": [
     "NEWBC20"
   ],
-  "atzavarahotel.com": [
-    "AQUAWEB"
-  ],
-  "insotelhotelgroup.com": [
-    "AG06"
-  ],
   "original-group.com": [
-    "LUSTM",
     "VELVET26"
   ],
   "nadula.com": [
     "Treat"
-  ],
-  "klaiyihair.com": [
-    "Halloween21"
   ],
   "ugeat.com": [
     "HAL15",
@@ -56,8 +61,7 @@
     "DISCOUNT2026"
   ],
   "cllix.com": [
-    "BOOKDIRECT2SAVE",
-    "SPRINGCLLIX26"
+    "BOOKDIRECT2SAVE"
   ],
   "crownandchamparesorts.com": [
     "EXTRA5OFF"
@@ -97,7 +101,6 @@
     "GHADULTS"
   ],
   "networksolutions.com": [
-    "HALLOWEEN50OFF",
     "NEW30"
   ],
   "hardaddy.com": [
@@ -136,8 +139,11 @@
     "AFFK70P200",
     "AFFMASTER300"
   ],
-  "atelier49.ro": [
-    "ATELIER49"
+  "robud.com": [
+    "RBD20",
+    "RBD25",
+    "RBD28",
+    "RBD30"
   ],
   "jollymag.ro": [
     "JOLLY10"
