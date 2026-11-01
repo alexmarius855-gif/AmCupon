@@ -135,6 +135,7 @@ def parse_csv(csv_path: str) -> list:
         return []
 
     promotii = []
+    programate: list[str] = []
     now = datetime.now(timezone.utc)
 
     # Detecteaza encoding
@@ -157,6 +158,14 @@ def parse_csv(csv_path: str) -> list:
 
                 slug_magazin = norm_slug(affiliate)
                 if not slug_magazin:
+                    continue
+
+                # Promotia programata (incepe in viitor) NU se publica inca: exportul 2P din 01.11.2026
+                # avea 47 de campanii de Black Friday care incep pe 13-27.11 („reduceri de pana la 50%"
+                # la DoctorShield din 20.11). Afisate azi, omul ajunge pe un site fara reducere.
+                # CSV-ul se reimporta la fiecare rulare, deci promotia apare singura in ziua de start.
+                if inceput_in_viitor(row.get("Start Date", "") or "", now):
+                    programate.append(slug_magazin)
                     continue
 
                 # Dati
@@ -211,7 +220,27 @@ def parse_csv(csv_path: str) -> list:
         import traceback
         traceback.print_exc()
 
+    if programate:
+        print(f"  Programate (incep in viitor, nepublicate inca): {len(programate)} promotii "
+              f"la {len(set(programate))} magazine")
     return promotii
+
+
+def data_csv(raw: str) -> datetime | None:
+    """„2026-11-20 06:00:00 UTC" -> datetime UTC; None daca lipseste sau nu se poate citi."""
+    if not raw.strip():
+        return None
+    try:
+        d = datetime.fromisoformat(raw.strip().replace(" UTC", "+00:00").replace(" ", "T", 1))
+    except ValueError:
+        return None
+    return d if d.tzinfo else d.replace(tzinfo=timezone.utc)
+
+
+def inceput_in_viitor(start_raw: str, now: datetime) -> bool:
+    """True cand promotia are data de start si ea e dupa `now`. Fara data = activa (ca pana acum)."""
+    d = data_csv(start_raw)
+    return d is not None and d > now
 
 
 # ─── Matching & merge ─────────────────────────────────────────────────────────

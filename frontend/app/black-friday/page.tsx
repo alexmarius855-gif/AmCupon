@@ -26,10 +26,23 @@ function incarcaBF() {
   // 26.10.2026: campaniile CONFIRMATE ale partenerilor (doar cu sursa). Pagina se regenereaza la fiecare deploy
   // (de trei ori pe zi), deci o campanie terminata dispare singura de pe pagina.
   const azi = new Date().toISOString().slice(0, 10);
-  const parteneri = ((d.parteneri || []) as { magazin: string; nume: string; start: string; final: string; nota?: string; sursa: string }[])
+  type Campanie = { magazin: string; nume: string; start: string; final: string; nota?: string; sursa?: string };
+  // 01.11.2026: si campaniile anuntate de magazine in 2Performant (scripts/calendar_black_friday.py, din
+  // data/promotii_2p.csv). Cele confirmate de mana raman primele cand acelasi magazin e in ambele liste.
+  let din2p: Campanie[] = [];
+  try {
+    din2p = JSON.parse(fs.readFileSync(path.join(process.cwd(), "public", "black-friday-parteneri.json"), "utf-8")).parteneri || [];
+  } catch {
+    din2p = [];
+  }
+  const manuale = (d.parteneri || []) as Campanie[];
+  const vazute = new Set(manuale.map((p) => p.magazin));
+  const parteneri = [...manuale, ...din2p.filter((p) => !vazute.has(p.magazin))]
     .filter((p) => p.final >= azi)
+    .sort((a, b) => a.start.localeCompare(b.start) || a.nume.localeCompare(b.nume, "ro"))
     .map((p) => ({
       ...p,
+      inCurs: p.start <= azi,
       interval: `${zi(p.start, { day: "numeric", month: "long" })} – ${zi(p.final, { day: "numeric", month: "long" })}`,
     }));
   return {
@@ -188,17 +201,28 @@ export default function BlackFridayPage() {
           </p>
 
           {BF.parteneri.length > 0 && (
-            <div className="mt-8 max-w-2xl">
-              <h2 className="text-lg font-black mb-3">Black Friday la partenerii AmCupon</h2>
-              <div className="space-y-3">
+            <div className="mt-8">
+              <h2 className="text-lg font-black mb-1">Calendarul Black Friday la partenerii AmCupon</h2>
+              <p className="text-sm text-[var(--text-muted)] mb-3 max-w-2xl">
+                {BF.parteneri.length} campanii, în ordinea în care încep. Datele sunt cele anunțate de magazine în rețeaua
+                de afiliere 2Performant sau publicate de presă; reducerile le stabilește fiecare magazin.
+              </p>
+              <div className="grid gap-3 sm:grid-cols-2">
                 {BF.parteneri.map((p) => (
-                  <div key={p.magazin} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-4 flex flex-wrap items-center justify-between gap-3">
-                    <div>
-                      <p className="font-bold">{p.nume}: {p.interval}</p>
-                      {p.nota && <p className="text-xs text-[var(--text-muted)] mt-0.5">{p.nota} ·{" "}
-                        <a href={p.sursa} target="_blank" rel="noopener noreferrer" className="underline">sursa</a></p>}
-                    </div>
-                    <Link href={`/cod-reducere/${p.magazin}`} className="text-sm font-semibold text-[var(--accent-text)] shrink-0">
+                  <div key={p.magazin} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-3 flex flex-col gap-1.5">
+                    <p className="text-xs font-semibold text-[var(--text-muted)]">
+                      {p.inCurs ? "În desfășurare" : "Urmează"} · {p.interval}
+                    </p>
+                    <p className="font-bold leading-snug">{p.nume}</p>
+                    {p.nota && (
+                      <p className="text-xs text-[var(--text-muted)]">
+                        {p.nota}
+                        {p.sursa?.startsWith("http") && (
+                          <>{" · "}<a href={p.sursa} target="_blank" rel="noopener noreferrer" className="underline">sursa</a></>
+                        )}
+                      </p>
+                    )}
+                    <Link href={`/cod-reducere/${p.magazin}`} className="mt-auto text-sm font-semibold text-[var(--accent-text)]">
                       Ofertele {p.nume} →
                     </Link>
                   </div>

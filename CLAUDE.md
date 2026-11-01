@@ -12,6 +12,17 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 01.11.2026 — export nou de promotii 2P + CALENDARUL BLACK FRIDAY al partenerilor:** `data/promotii_2p.csv`
+inlocuit cu exportul lui Alex (147 de promotii, 69 de Black Friday la 67 de magazine). **Bug prins inainte de import:**
+`import_csv_promotii.py` ignora `Start Date` — 53 de promotii programate (BF DoctorShield din 20.11 etc.) ar fi aparut de
+azi. Acum `inceput_in_viitor()` le tine nepublicate; CSV-ul se reimporta la fiecare rulare, deci apar singure in ziua de
+start. **Nou `scripts/calendar_black_friday.py`** (pas 5a-bis in workflow) -> `frontend/public/black-friday-parteneri.json`:
+campaniile BF din CSV, doar magazine din output.json cu link platit, fara alta piata, fara anunturi „teasing", fara emoji,
+data in ORA ROMANIEI (`ora_ro`, regula UE fara tzdata; 2P scrie sfarsitul ca 00:00 RO -> ultima zi e cea dinainte).
+`/black-friday` le arata langa cele confirmate de mana (`black-friday.json::parteneri`, care castiga la acelasi magazin),
+„In desfasurare" / „Urmeaza", 2 coloane. Masurat local: 69 de campanii (20 in curs, 49 urmeaza), 0 depasire pe 375 px.
+Test: `python scripts/calendar_black_friday.py --test` (fus orar, teasing, emoji, link platit, alta piata, start in viitor).
+
 **UPDATE 29.10.2026 — SITEMAP-UL SE CONTRAZICEA CU PAGINILE + ghid curieri + flyer:** crawl live pe toate cele
 1.045 de URL-uri din sitemap (toate 200): **342 isi spuneau singure „nu ma indexa"** — 313 articole de magazin
 `noindex` (pagina decidea din output.json din 06.10, sitemap-ul inca din textul descrierii), 11 pagini de brand fara

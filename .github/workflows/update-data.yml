@@ -183,6 +183,14 @@ jobs:
             echo "data/promotii_2p.csv lipsa — skip import CSV"
           fi
 
+      # ── 5a-bis. Calendarul Black Friday al partenerilor (/black-friday) ──────
+      # Din acelasi CSV, inclusiv campaniile programate (importul le tine nepublicate
+      # pana in ziua de start). Doar magazine din output.json cu link platit.
+      - name: Calendar Black Friday parteneri
+        continue-on-error: true
+        working-directory: scripts
+        run: python calendar_black_friday.py
+
       # ── 5a-0. Repara logo-urile moarte (imagini rupte pe carduri) ──────────
       # Ruleaza doar pe rularea completa de dimineata: face ~1170 de cereri HTTP.
       # merge_platforms.py trimite logo-urile cu sursa moarta catre faviconul
@@ -523,6 +531,7 @@ jobs:
           git add frontend/public/istoric-promotii.json || true
           git add data/istoric-preturi.json            || true
           git add frontend/public/scaderi-pret.json    || true
+          git add frontend/public/black-friday-parteneri.json || true
           git add frontend/public/esim-destinatii.json  || true
           git add frontend/public/extensie.json         || true
           git add data/sitemap_fingerprints.json       || true
