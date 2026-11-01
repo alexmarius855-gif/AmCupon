@@ -172,7 +172,7 @@ interface Banner2P {
   name: string; category: string; b_type: string;
 }
 
-export default function MagazinClient({ magazin: m, produse = [], similare = [], comparatii = [], blogPost = null, banner = null, descriere = null, astazi, context = null, istoric = null }: {
+export default function MagazinClient({ magazin: m, produse = [], similare = [], comparatii = [], blogPost = null, banner = null, descriere = null, astazi, context = null, istoric = null, blackFriday = null }: {
   magazin: Magazin;
   produse?: Produs[];
   similare?: MagazinSimilar[];
@@ -186,6 +186,8 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
   context?: React.ReactNode;
   /** Slot SERVER-rendered (IstoricMagazin): ofertele vazute in trecut, din datele noastre. */
   istoric?: React.ReactNode;
+  /** Slot SERVER-rendered (BlackFridayMagazin): campania anuntata a magazinului, cand exista. */
+  blackFriday?: React.ReactNode;
 }) {
   const [revealed, setRevealed]   = useState<Set<number>>(new Set());
   // Cascada de logo, ca in MagazinCard: sursa din date -> favicon Google ->
@@ -413,6 +415,8 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
               <BannerAd2P banner={banner} />
             </div>
           )}
+
+          {blackFriday && <div className="px-4 pb-4">{blackFriday}</div>}
 
           {/* ── TAB NAVIGATION ─────────────────────────────────────────────── */}
           <div role="tablist" aria-label="Sectiuni magazin" className="flex gap-0 border-t border-[var(--border)] overflow-x-auto" style={{scrollbarWidth:"none"}}>

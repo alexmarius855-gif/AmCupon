@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { esteLinkAfiliat, PARAM_SUBID } from "../../lib/subId";
+import { CHEIE_CAMPANIE, esteLinkAfiliat, etichetaCampanie, PARAM_SUBID } from "../../lib/subId";
 import { locDinElement, numaraClick } from "../../lib/clicuriClient";
 
 /**
@@ -50,8 +50,20 @@ function pageTag(): string {
   return path.replace(/[^a-zA-Z0-9_-]+/g, "_").slice(0, 50);
 }
 
+/** Campania sesiunii (01.11.2026): din adresa de intrare, tinuta in sessionStorage cat sta omul pe site. */
+function campanieSesiune(): string {
+  try {
+    const dinUrl = etichetaCampanie(window.location.search);
+    if (dinUrl) sessionStorage.setItem(CHEIE_CAMPANIE, dinUrl);
+    return dinUrl || sessionStorage.getItem(CHEIE_CAMPANIE) || "";
+  } catch {
+    return "";   // sessionStorage blocat (mod privat strict): fara eticheta de campanie, linkul merge
+  }
+}
+
 export default function AffiliateClickTracker() {
   useEffect(() => {
+    campanieSesiune();   // la intrare: adresa cu utm_* se schimba la prima navigare, deci o retinem acum
     function onClick(e: MouseEvent) {
       try {
         const el = e.target as HTMLElement | null;
@@ -65,15 +77,18 @@ export default function AffiliateClickTracker() {
         if (param) {
           try {
             const u = new URL(href, window.location.origin);
-            const tag = pageTag();
             const existing = u.searchParams.get(param) || "";
             // Unele linkuri au deja un sub-id din generare (ex. Profitshare pune
             // slug-ul magazinului). Aceea e informatie pe care reteaua o stie deja;
             // pagina e informatia noua. Le pastram pe amandoua, separate prin `~`,
             // in loc sa sarim peste (am pierde atribuirea) sau sa suprascriem
-            // (am pierde ce era acolo). Nu re-adaugam daca eticheta e deja prezenta.
-            if (!existing.split("~").includes(tag)) {
-              const combined = existing ? `${existing}~${tag}` : tag;
+            // (am pierde ce era acolo). Nu re-adaugam o eticheta deja prezenta.
+            // 01.11.2026: plus campania (`c-...`), cand vizitatorul a venit din reclama sau de pe flyer.
+            const segmente = existing ? existing.split("~") : [];
+            // Campania inaintea paginii: daca valoarea trece de 80 de caractere, se taie pagina, nu banii.
+            const noi = [campanieSesiune(), pageTag()].filter((t) => t && !segmente.includes(t));
+            if (noi.length) {
+              const combined = [...segmente, ...noi].join("~");
               u.searchParams.set(param, combined.slice(0, 80));
               // Setarea href-ului aici e sincrona, deci navigarea implicita care
               // urmeaza foloseste deja valoarea noua.

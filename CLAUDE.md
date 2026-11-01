@@ -12,6 +12,27 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 01.11.2026, seara — planul T1–T11 (`Projects/PLAN.md`), partea mea:**
+- **T2 „Black Friday la X" pe paginile de magazin:** `lib/campaniiBlackFriday.ts` = sursa unica (manuale din
+  `black-friday.json` + generate de `calendar_black_friday.py`), citita de `/black-friday` si de
+  `cod-reducere/[magazin]/BlackFridayMagazin.tsx` (SERVER, slot `blackFriday` in MagazinClient, sub banner). Inainte de start:
+  „Urmeaza", trimite la alerta de oferte noi; in campanie: „In desfasurare".
+- **T1 studiul „Cate reduceri de Black Friday sunt reale":** `scripts/studiu_black_friday.py` (pas 6b-bis, dupa istoricul de
+  preturi) -> `data/black-friday-2026.json` (instantaneu pe zi) + `public/black-friday-reale.json`; sectiunea `black-friday/
+  StudiuReale.tsx`. Feed-urile NU mai aduc pretul taiat (0 produse cu `old_price` pe 01.11), deci masuram pretul, nu eticheta:
+  REF = 06.11, minimul din 30 de zile dinainte de REF, „reala" = sub minim, „nu e sub minim" = mai ieftin decat ieri dar nu sub
+  minim (de obicei revenire dupa scumpire), plus % scumpite in luna dinainte. Doar cifre agregate. Proba pe date reale (REF 06.11,
+  azi 01.11): 4.833 de produse urmarite, 5,4% scumpite din 07.10. Garda `verifica_site.py` 8b: fisier de azi/ieri in fereastra,
+  niciun nume de magazin in el. Test: `python scripts/studiu_black_friday.py --test`.
+- **T3 alerte:** `check_price_alerts.py` trimitea doar la COD nou, desi formularul promite „oferta noua" — acum orice oferta noua
+  (cheie = titlul fara cod), email in tema inchisa, **fara cod in clar** (codul se vede pe pagina, dupa linkul platit). Snapshot
+  v2 (`{"versiune":2,"magazine":...}`): la trecere face baza noua fara trimiteri. **Blocaj pe Alex: atributul `ALERT_STORES` in
+  Brevo** (Contacts -> Settings -> Contact attributes -> Text) — fara el abonarea pe magazin se pierde.
+- **T11 campania in sub-id:** `lib/subId.ts::etichetaCampanie` (`c-<utm_source>-<utm_campaign>`, `gclid` = google), tinuta in
+  sessionStorage de `AffiliateClickTracker`, pusa INAINTEA paginii in sub-id (la taiere, se pierde pagina, nu banii).
+  `raport_venit.py`: „Pe campanie" + castig/pierdere fata de `data/cheltuieli-reclame.local.json` (lei, ignorat de git).
+  Flyerul intra singur (utm_source=flyer). Test: `node lib/subId.test.mjs`.
+
 **UPDATE 01.11.2026 — export nou de promotii 2P + CALENDARUL BLACK FRIDAY al partenerilor:** `data/promotii_2p.csv`
 inlocuit cu exportul lui Alex (147 de promotii, 69 de Black Friday la 67 de magazine). **Bug prins inainte de import:**
 `import_csv_promotii.py` ignora `Start Date` — 53 de promotii programate (BF DoctorShield din 20.11 etc.) ar fi aparut de

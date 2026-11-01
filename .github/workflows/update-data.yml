@@ -274,6 +274,13 @@ jobs:
         working-directory: scripts
         run: python istoric_preturi.py
 
+      # ── 6b-bis. Studiul „Cate reduceri de Black Friday sunt reale" (06.11–02.12) ──
+      # Din istoricul de mai sus; inainte de 06.11 scrie doar metoda (fara cifre).
+      - name: Studiul Black Friday
+        continue-on-error: true
+        working-directory: scripts
+        run: python studiu_black_friday.py
+
       # ── 6c. Repara linkuri de produse fara tracking (0 comision la click) ──
       - name: Repara linkuri produse fara tracking de afiliere
         working-directory: scripts
@@ -532,6 +539,8 @@ jobs:
           git add data/istoric-preturi.json            || true
           git add frontend/public/scaderi-pret.json    || true
           git add frontend/public/black-friday-parteneri.json || true
+          git add frontend/public/black-friday-reale.json || true
+          git add data/black-friday-2026.json || true
           git add frontend/public/esim-destinatii.json  || true
           git add frontend/public/extensie.json         || true
           git add data/sitemap_fingerprints.json       || true

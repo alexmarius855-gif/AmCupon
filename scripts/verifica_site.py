@@ -274,6 +274,27 @@ def verifica_date() -> dict:
                        f"{len(murdare)} intrari din istoric incalca regulile de titlu (cod drept titlu, "
                        "text pentru afiliati, magazin de test)", murdare)
 
+    # 8b. Studiul de Black Friday (01.11.2026, studiu_black_friday.py): in fereastra de masurare
+    #     fisierul public trebuie sa fie de azi sau de ieri, si nu are voie sa numeasca magazine —
+    #     pagina descrie piata, nu acuza pe nimeni.
+    bf = incarca("black-friday-reale.json")
+    if bf is not None:
+        from datetime import date as _d, datetime as _dt, timezone as _tz
+        from studiu_black_friday import REF, SFARSIT
+        azi_bf = _dt.now(_tz.utc).date()
+        if REF <= azi_bf.isoformat() <= SFARSIT:
+            try:
+                vechime_bf = (azi_bf - _d.fromisoformat(bf.get("actualizat") or "")).days
+            except ValueError:
+                vechime_bf = None
+            if vechime_bf is None or vechime_bf > 1:
+                semnaleaza("studiu black friday invechit",
+                           f"black-friday-reale.json e din {bf.get('actualizat')!r}: pasul „Studiul Black Friday” nu merge", [])
+        text_bf = json.dumps(bf, ensure_ascii=False)
+        numite = sorted({m.get("magazin") for m in magazine if m.get("magazin") and f'"{m["magazin"]}"' in text_bf})
+        if numite:
+            semnaleaza("studiu black friday cu magazine", "cifrele publice ale studiului numesc magazine", numite)
+
     # 9. Linkuri Profitshare (05.10.2026). Contul a fost respins si reteaua exclusa pe 19.08,
     #    deci un clic pe un astfel de link nu mai produce comision. Pe 05.10 inca erau 132 in
     #    top-produse.json — pe paginile /top, singurele cu vizitatori din cautari — fiindca

@@ -50,6 +50,28 @@ export function curataEticheta(brut: string): string {
 }
 
 /**
+ * Campania din care a venit vizitatorul (01.11.2026, reclame Google/Meta si flyerul tiparit), ca
+ * segment de sub-id: `c-<sursa>-<campanie>`. Raportul local (scripts/raport_venit.py) grupeaza
+ * comisioanele dupa el, deci vezi ce aduce fiecare campanie, nu doar fiecare pagina.
+ * Sursa: `utm_source` (sau „google" cand exista doar `gclid`); campania: `utm_campaign`.
+ * Fara niciuna, sir gol — vizita organica nu primeste eticheta. Nimic despre persoana.
+ */
+export const CHEIE_CAMPANIE = "amc_campanie";
+
+export function etichetaCampanie(search: string): string {
+  let p: URLSearchParams;
+  try {
+    p = new URLSearchParams(search);
+  } catch {
+    return "";
+  }
+  const sursa = p.get("utm_source") || (p.get("gclid") ? "google" : "");
+  const campanie = p.get("utm_campaign") || "";
+  if (!sursa && !campanie) return "";
+  return curataEticheta(`c-${sursa || "necunoscut"}${campanie ? `-${campanie}` : ""}`).slice(0, 40);
+}
+
+/**
  * Adauga sub-id-ul retelei in URL. Daca parametrul are deja o valoare, o
  * PASTREAZA si adauga eticheta dupa `~` — altfel am sterge atribuirea pusa de
  * generatorul de linkuri.

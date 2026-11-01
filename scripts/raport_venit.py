@@ -47,9 +47,25 @@ def incarca_env() -> None:
 
 
 def pagina(sub: str) -> str:
-    """„/cod-reducere/x~newsletter" -> „/cod-reducere/x"; gol -> „(fara sub-id)"."""
-    sub = (sub or "").strip()
-    return sub.split("~")[0] if sub else "(fara sub-id)"
+    """„/cod-reducere/x~newsletter" -> „/cod-reducere/x"; gol -> „(fara sub-id)".
+    Segmentul de campanie (`c-...`, din lib/subId.ts::etichetaCampanie) nu e pagina."""
+    segmente = [s for s in (sub or "").strip().split("~") if s and not s.startswith("c-")]
+    return segmente[0] if segmente else "(fara sub-id)"
+
+
+def campanie(sub: str) -> str:
+    """Campania de reclama / flyerul din care a venit omul: „c-google-bf~black-friday" -> „c-google-bf";
+    fara segment `c-` -> „(organic)"."""
+    return next((s for s in (sub or "").split("~") if s.startswith("c-")), "(organic)")
+
+
+def cheltuieli() -> dict:
+    """data/cheltuieli-reclame.local.json (ignorat de git): {"c-google-bf": 150.0, ...}, in lei, scris de tine."""
+    p = os.path.join(ROOT, "data", "cheltuieli-reclame.local.json")
+    try:
+        return {k: float(v) for k, v in json.load(io.open(p, encoding="utf-8")).items()}
+    except (OSError, ValueError, AttributeError):
+        return {}
 
 
 def impact(zile: int) -> list[dict]:
@@ -82,6 +98,7 @@ def impact(zile: int) -> list[dict]:
                     "magazin": a.get("CampaignName") or "", "stare": a.get("State") or "",
                     "suma_comanda": float(a.get("Amount") or 0), "comision": float(a.get("Payout") or 0),
                     "moneda": a.get("Currency") or "", "pagina": pagina(a.get("SubId1") or ""),
+                    "campanie": campanie(a.get("SubId1") or ""),
                 })
             if pagina_api >= int(d.get("@numpages") or 1):
                 break
@@ -139,6 +156,7 @@ def doi_p(zile: int) -> list[dict]:
                 "comision": float(c.get("amount_in_working_currency") or c.get("amount") or 0),
                 "moneda": c.get("working_currency_code") or "RON",
                 "pagina": pagina(c.get("stats_tags") or c.get("st") or ""),
+                "campanie": campanie(c.get("stats_tags") or c.get("st") or ""),
             })
         pag_tot = ((d.get("metadata") or {}).get("pagination") or {}).get("pages") or (d.get("pagination") or {}).get("pages") or 1
         if pag >= int(pag_tot) or not lista:
@@ -156,7 +174,8 @@ def rezumat(actiuni: list[dict]) -> dict:
             x["comision"][a["moneda"]] += a["comision"]
         return sorted(({"cheie": k, "vanzari": v["vanzari"], "comision": {m: round(s, 2) for m, s in v["comision"].items()}}
                        for k, v in g.items()), key=lambda r: -r["vanzari"])
-    return {"pe_magazin": grupa("magazin"), "pe_pagina": grupa("pagina"), "pe_stare": grupa("stare"), "pe_retea": grupa("retea")}
+    return {"pe_magazin": grupa("magazin"), "pe_pagina": grupa("pagina"), "pe_stare": grupa("stare"), "pe_retea": grupa("retea"),
+            "pe_campanie": grupa("campanie")}
 
 
 def main() -> int:
@@ -177,6 +196,18 @@ def main() -> int:
         print(f"\n{titlu}:")
         for r in rez[cheie][:15]:
             print(f"  {r['vanzari']:4d}  {r['cheie'][:60]:60s}  {r['comision']}")
+    # Rentabilitatea pe campanie (01.11.2026): comisionul in lei minus cheltuiala scrisa de tine in
+    # data/cheltuieli-reclame.local.json. Doar comisioanele in RON se compara cu lei — fara conversii ghicite.
+    cost = cheltuieli()
+    print("\nPe campanie (reclame, flyer):")
+    for r in rez["pe_campanie"]:
+        ron = r["comision"].get("RON", 0.0)
+        linie = f"  {r['vanzari']:4d}  {r['cheie'][:40]:40s}  {r['comision']}"
+        if r["cheie"] in cost:
+            linie += f"  | cheltuit {cost[r['cheie']]:.2f} lei -> {'CASTIG' if ron >= cost[r['cheie']] else 'PIERDERE'} {ron - cost[r['cheie']]:+.2f} lei"
+        print(linie)
+    for k in sorted(set(cost) - {r["cheie"] for r in rez["pe_campanie"]}):
+        print(f"     0  {k[:40]:40s}  cheltuit {cost[k]:.2f} lei, 0 vanzari -> PIERDERE {-cost[k]:.2f} lei")
     print(f"\nDetalii: {os.path.relpath(IESIRE, ROOT)} (local, ignorat de git)")
     return 0
 

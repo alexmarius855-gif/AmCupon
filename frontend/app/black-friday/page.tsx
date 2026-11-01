@@ -5,6 +5,8 @@ import path from "path";
 import MagazinCard, { CardMagazin } from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import { areLinkAfiliat } from "@/lib/linkMagazin";
+import { campaniiBF } from "@/lib/campaniiBlackFriday";
+import StudiuReale from "./StudiuReale";
 
 /**
  * Black Friday — doar magazinele la care clicul aduce comision.
@@ -25,21 +27,10 @@ function incarcaBF() {
   const [start, final] = d.international as [string, string];
   // 26.10.2026: campaniile CONFIRMATE ale partenerilor (doar cu sursa). Pagina se regenereaza la fiecare deploy
   // (de trei ori pe zi), deci o campanie terminata dispare singura de pe pagina.
+  // 01.11.2026: si campaniile anuntate de magazine in 2Performant — sursa unica in lib/campaniiBlackFriday.ts,
+  // citita si de pagina fiecarui magazin.
   const azi = new Date().toISOString().slice(0, 10);
-  type Campanie = { magazin: string; nume: string; start: string; final: string; nota?: string; sursa?: string };
-  // 01.11.2026: si campaniile anuntate de magazine in 2Performant (scripts/calendar_black_friday.py, din
-  // data/promotii_2p.csv). Cele confirmate de mana raman primele cand acelasi magazin e in ambele liste.
-  let din2p: Campanie[] = [];
-  try {
-    din2p = JSON.parse(fs.readFileSync(path.join(process.cwd(), "public", "black-friday-parteneri.json"), "utf-8")).parteneri || [];
-  } catch {
-    din2p = [];
-  }
-  const manuale = (d.parteneri || []) as Campanie[];
-  const vazute = new Set(manuale.map((p) => p.magazin));
-  const parteneri = [...manuale, ...din2p.filter((p) => !vazute.has(p.magazin))]
-    .filter((p) => p.final >= azi)
-    .sort((a, b) => a.start.localeCompare(b.start) || a.nume.localeCompare(b.nume, "ro"))
+  const parteneri = campaniiBF(azi)
     .map((p) => ({
       ...p,
       inCurs: p.start <= azi,
@@ -230,6 +221,8 @@ export default function BlackFridayPage() {
               </div>
             </div>
           )}
+
+          <StudiuReale />
 
           <Link
             href="/reduceri-reale"

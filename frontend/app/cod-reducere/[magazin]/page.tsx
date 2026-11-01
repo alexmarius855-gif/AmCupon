@@ -8,6 +8,8 @@ import MagazinClient from "./MagazinClient";
 import { buildMerchantTokens, esteIndexabil } from "../../../lib/seoIndexable";
 import ContextMagazin, { type CategorieStudiu } from "./ContextMagazin";
 import IstoricMagazin, { type IntrareIstoric } from "./IstoricMagazin";
+import BlackFridayMagazin from "./BlackFridayMagazin";
+import { campanieMagazin } from "@/lib/campaniiBlackFriday";
 import { linkAfiliat, linkPromotie } from "@/lib/linkMagazin";
 import FaraLivrareRo, { tariLivrare, type Alternativa, type MagazinFaraLivrare } from "./FaraLivrareRo";
 import { numeAfisat, brandDomeniu } from "@/lib/numeMagazin";
@@ -625,6 +627,8 @@ export default async function PaginaMagazin({
   // react-hooks/purity il flags oricum. Calculat o singura data (nu in .map).
   // eslint-disable-next-line react-hooks/purity -- Server Component, valoare stabila per generare
   const acumMs = Date.now();
+  // Campania de Black Friday anuntata a magazinului (lib/campaniiBlackFriday.ts), cand exista.
+  const campanieBF = campanieMagazin(m.magazin, new Date(acumMs).toISOString().slice(0, 10));
 
   const offerList = nrPromo > 0 ? {
     "@context": "https://schema.org",
@@ -800,6 +804,7 @@ export default async function PaginaMagazin({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <MagazinClient magazin={m} produse={produse} similare={similare} comparatii={comparatii} blogPost={blogPost} banner={banner} descriere={descriere} astazi={new Date(acumMs).toISOString().slice(0, 10)}
+        blackFriday={campanieBF ? <BlackFridayMagazin nume={nume} campanie={campanieBF} azi={new Date(acumMs).toISOString().slice(0, 10)} /> : null}
         istoric={
           istoric.de_la && intrariIstoric.length > 0 ? (
             <IstoricMagazin
