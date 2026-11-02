@@ -223,6 +223,9 @@
    "robudblackfridayus28off1000",
    "robudblackfridayus30off1200"
   ],
+  "answear.ro": [
+   "luckyfriday"
+  ],
   "automobilus.ro": [
    "q4opportunitypromoveazăștergătoareledeparbrizautomobilus"
   ],
@@ -248,9 +251,6 @@
   ],
   "scule365.ro": [
    "blackfriday2026scule265"
-  ],
-  "answear.ro": [
-   "luckyfriday"
   ],
   "carturesti.ro": [
    "unplandelecturăcurezultatepemăsură"
@@ -379,6 +379,9 @@
   "fara-daunatori.ro": [
    "oferta11"
   ],
+  "masif.ro": [
+   "blackfridaylamasif68noiembriereducericuspor"
+  ],
   "edituraparalela45.ro": [
    "blackfridaycărțicupânăla80reducere"
   ],
@@ -399,9 +402,6 @@
   ],
   "petit-bebe.ro": [
    "blackfridaylapetitbebepanala36reducere"
-  ],
-  "brainmarket.ro": [
-   "blackfridaybrainmarket10reducerelatoateproduselebrainmax"
   ],
   "priveboutique.net": [
    "blackcatfridaytoaterochiilelaprețdeblackfridaypânăla15extraîncoș"
@@ -436,6 +436,9 @@
   ],
   "infinity.ro": [
    "blackfriday2026peinfinityroreduceridepânăla70"
+  ],
+  "conectica.ro": [
+   "blackfriday2026conecticaro"
   ],
   "e-potion.ro": [
    "10reducerepetotsiteulepotionro"
@@ -476,6 +479,9 @@
   ],
   "centini.ro": [
    "blackmonthlacentinireduceridepânăla30"
+  ],
+  "geekmall.ro": [
+   "blackfriday2026oferteelectrizantereduceridepânăla55"
   ],
   "karcher.com": [
    "blackfridaylakärcherblackfridaylakärchercelemaimarireduceridinankärcherblackfriday530noiembrie"
@@ -539,7 +545,11 @@
   "e-cosmetics.ro": [
    "blackfridayblackweeksreduceridepanala35"
   ],
+  "marketgarage.ro": [
+   "blackfridaylamarketgarageroprețurimaimicipentrupasiuniletale"
+  ],
   "zelto.ro": [
+   "blackfridaypezeltoro",
    "sezonulvirozelorprețurimaimici"
   ],
   "giftera.ro": [
@@ -579,6 +589,9 @@
   ],
   "ada-shoes.ro": [
    "blackfridayaînceputmaidevremelaadashoes"
+  ],
+  "brainmarket.ro": [
+   "blackfridaybrainmarket10reducerelatoateproduselebrainmax"
   ]
  }
 }

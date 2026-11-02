@@ -564,8 +564,8 @@
    "magazine": 155
   },
   "2026-11-02": {
-   "promotii": 254,
-   "magazine": 156
+   "promotii": 259,
+   "magazine": 160
   }
  },
  "magazine": {
@@ -742,7 +742,7 @@
     "cod": false,
     "prima": "2026-10-29",
     "ultima": "2026-11-02",
-    "expira": "2026-11-02",
+    "expira": "2026-11-04",
     "activa": true
    },
    {
@@ -1938,6 +1938,17 @@
     "prima": "2026-09-08",
     "ultima": "2026-11-02",
     "expira": "",
+    "activa": true
+   }
+  ],
+  "conectica.ro": [
+   {
+    "k": "blackfriday2026conecticaro|",
+    "titlu": "Black Friday 2026 Conectica.ro",
+    "cod": false,
+    "prima": "2026-11-02",
+    "ultima": "2026-11-02",
+    "expira": "2026-11-14",
     "activa": true
    }
   ],
@@ -4503,6 +4514,15 @@
   ],
   "geekmall.ro": [
    {
+    "k": "blackfriday2026oferteelectrizantereduceridepanala55|",
+    "titlu": "Black Friday 2026 – Oferte electrizante | Reduceri de până la 55%!",
+    "cod": false,
+    "prima": "2026-11-02",
+    "ultima": "2026-11-02",
+    "expira": "2026-11-21",
+    "activa": true
+   },
+   {
     "k": "cufree75ailivraregratuita|",
     "titlu": "Cu FREE75 ai Livrare Gratuită",
     "cod": false,
@@ -6615,6 +6635,28 @@
     "ultima": "2026-11-01",
     "expira": "2026-11-01",
     "activa": false
+   }
+  ],
+  "marketgarage.ro": [
+   {
+    "k": "blackfridaylamarketgarageropreturimaimicipentrupasiuniletale|",
+    "titlu": "Black Friday la MarketGarage.ro – Prețuri mai mici pentru pasiunile tale!",
+    "cod": false,
+    "prima": "2026-11-02",
+    "ultima": "2026-11-02",
+    "expira": "2026-11-14",
+    "activa": true
+   }
+  ],
+  "masif.ro": [
+   {
+    "k": "blackfridaylamasif68noiembriereducericuspor|",
+    "titlu": "Black Friday la Masif | 6 - 8 noiembrie | Reduceri cu SPOR",
+    "cod": false,
+    "prima": "2026-11-02",
+    "ultima": "2026-11-02",
+    "expira": "2026-11-08",
+    "activa": true
    }
   ],
   "mathaus.ro": [
@@ -10049,6 +10091,15 @@
    }
   ],
   "zelto.ro": [
+   {
+    "k": "blackfridaypezeltoro|",
+    "titlu": "Black Friday pe zelto.ro",
+    "cod": false,
+    "prima": "2026-11-02",
+    "ultima": "2026-11-02",
+    "expira": "2026-11-07",
+    "activa": true
+   },
    {
     "k": "sezonulvirozelorpreturimaimici|",
     "titlu": "Sezonul virozelor, prețuri mai mici!",
