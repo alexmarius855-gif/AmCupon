@@ -4902,6 +4902,15 @@
         "zile_ramase": 10,
         "expira": "2026-11-12",
         "sursa": "2performant_api"
+      },
+      {
+        "nume": "Puzzlemania! Nebunia prețurilor a început!",
+        "descriere": null,
+        "cod_cupon": "",
+        "landing_page": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.edituradiana.ro%2Fpuzzle-uri",
+        "zile_ramase": 28,
+        "expira": "2026-11-30",
+        "sursa": "2performant_api"
       }
     ],
     "exclusiv": false,
@@ -16545,6 +16554,30 @@
     "ultima_verificare": "2026-11-02"
   },
   {
+    "magazin": "mobilalaguna.ro",
+    "url": "https://mobilalaguna.ro",
+    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.mobilalaguna.ro",
+    "logo_url": "https://www.google.com/s2/favicons?domain=mobilalaguna.ro&sz=128",
+    "categorie": "Casă & Grădină",
+    "categorie_slug": "casa-gradina",
+    "comision": "Variabil",
+    "rank": null,
+    "scor_afiliere": 45,
+    "scor_final": 45,
+    "prioritate": "standard",
+    "canal_recomandat": "Content, Coupon",
+    "sales_number": 0,
+    "trend": 0,
+    "are_promotie": false,
+    "cod_cupon": false,
+    "zile_ramase": 99,
+    "promotii": [],
+    "exclusiv": false,
+    "platforma": "2performant",
+    "produse_in_feed": 5,
+    "ultima_verificare": "2026-11-02"
+  },
+  {
     "magazin": "sevensins.ro",
     "url": "https://www.sevensins.ro",
     "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.sevensins.ro",
@@ -16588,30 +16621,6 @@
     "promotii": [],
     "exclusiv": false,
     "platforma": "2performant",
-    "ultima_verificare": "2026-11-02"
-  },
-  {
-    "magazin": "mobilalaguna.ro",
-    "url": "https://mobilalaguna.ro",
-    "url_afiliat": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.mobilalaguna.ro",
-    "logo_url": "https://www.google.com/s2/favicons?domain=mobilalaguna.ro&sz=128",
-    "categorie": "Casă & Grădină",
-    "categorie_slug": "casa-gradina",
-    "comision": "Variabil",
-    "rank": null,
-    "scor_afiliere": 45,
-    "scor_final": 45,
-    "prioritate": "standard",
-    "canal_recomandat": "Content, Coupon",
-    "sales_number": 0,
-    "trend": 0,
-    "are_promotie": false,
-    "cod_cupon": false,
-    "zile_ramase": 99,
-    "promotii": [],
-    "exclusiv": false,
-    "platforma": "2performant",
-    "produse_in_feed": 5,
     "ultima_verificare": "2026-11-02"
   },
   {

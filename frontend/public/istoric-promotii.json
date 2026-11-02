@@ -564,7 +564,7 @@
    "magazine": 155
   },
   "2026-11-02": {
-   "promotii": 253,
+   "promotii": 254,
    "magazine": 156
   }
  },
@@ -3072,6 +3072,15 @@
     "prima": "2026-11-02",
     "ultima": "2026-11-02",
     "expira": "2026-11-12",
+    "activa": true
+   },
+   {
+    "k": "puzzlemanianebuniapreturilorainceput|",
+    "titlu": "Puzzlemania! Nebunia prețurilor a început!",
+    "cod": false,
+    "prima": "2026-11-02",
+    "ultima": "2026-11-02",
+    "expira": "2026-11-30",
     "activa": true
    },
    {

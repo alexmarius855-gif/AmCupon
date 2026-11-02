@@ -1,7 +1,7 @@
 {
-  "data": "2026-11-01",
-  "data_afisata": "1 noiembrie 2026",
-  "titlu": "Radarul AmCupon — 1 noiembrie 2026",
+  "data": "2026-11-02",
+  "data_afisata": "2 noiembrie 2026",
+  "titlu": "Radarul AmCupon — 2 noiembrie 2026",
   "intro": "Am trecut azi prin ofertele active si am pastrat doar ce merita. Iese in evidenta Nadula si Ugeat, dar mai jos ai selectia completa, verificata de noi. Toate codurile sunt testate; cele cu termen scurt le-am marcat.",
   "picks": [
     {
@@ -15,8 +15,8 @@
       "descriere": "Nadula Hair Halloween Sale Up To $100 Off With Code:Treat",
       "cod": "Treat",
       "url": "https://amcupon.ro/cod-reducere/nadula.com",
-      "zile_ramase": 3,
-      "take": "Grabeste-te: expira in 3 zile. Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 2,
+      "take": "Grabeste-te: expira in 2 zile. Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
       "scor": 100,
@@ -29,22 +29,22 @@
       "descriere": "Halloween Sale 15%off",
       "cod": "HAL15",
       "url": "https://amcupon.ro/cod-reducere/ugeat.com",
-      "zile_ramase": 3,
-      "take": "Grabeste-te: expira in 3 zile. Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 2,
+      "take": "Grabeste-te: expira in 2 zile. Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
-      "scor": 75,
-      "magazin": "answear.ro",
-      "nume_afisat": "Answear",
+      "scor": 70,
+      "magazin": "dhgate.com",
+      "nume_afisat": "Dhgate",
       "categorie": "Fashion",
       "categorie_slug": "fashion",
-      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/2561/medium/2561.png",
-      "titlu": "LUCKY FRIDAY",
-      "descriere": "",
-      "cod": "",
-      "url": "https://amcupon.ro/cod-reducere/answear.ro",
-      "zile_ramase": 1,
-      "take": "Grabeste-te: expira in 1 zi. Bun de prins daca oricum voiai sa-ti reimprospatezi garderoba."
+      "logo_url": "https://www.dhgate.com/favicon.ico",
+      "titlu": "DH2026NOVSAVE6",
+      "descriere": "Save $6 on orders over $50 using coupon DH2026NOVSAVE6 at DHgate.",
+      "cod": "DH2026NOVSAVE6",
+      "url": "https://amcupon.ro/cod-reducere/dhgate.com",
+      "zile_ramase": 28,
+      "take": "Bun de prins daca oricum voiai sa-ti reimprospatezi garderoba."
     },
     {
       "scor": 70,
@@ -57,7 +57,7 @@
       "descriere": "Save 10% on eligible Xmind subscriptions with code XMIND10OFF. Valid through June 1, 2027. See the landing page for current pricing and eligibility.",
       "cod": "XMIND10OFF",
       "url": "https://amcupon.ro/cod-reducere/xmind.com",
-      "zile_ramase": 212,
+      "zile_ramase": 211,
       "take": "Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
@@ -71,7 +71,7 @@
       "descriere": "Quber Savings",
       "cod": "QUBER10",
       "url": "https://amcupon.ro/cod-reducere/orbitmobile.com",
-      "zile_ramase": 364,
+      "zile_ramase": 363,
       "take": "Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
@@ -85,7 +85,7 @@
       "descriere": "Stackable universal discount code, enjoy 5% off Code：OIAFF5",
       "cod": "OIAFF5",
       "url": "https://amcupon.ro/cod-reducere/outin.com",
-      "zile_ramase": 166,
+      "zile_ramase": 165,
       "take": "Oferta verificata — buna daca te incadrezi in categorie."
     }
   ],
