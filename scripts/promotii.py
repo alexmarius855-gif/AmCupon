@@ -51,6 +51,19 @@ PRAG_DATA_ABSURDA = 1095  # 3 ani
 RE_PENTRU_AFILIATI = re.compile(r"""
       c[aâ][sșş]tig\w*\b[^.!?]{0,40}\bcomision        # „câștigă (premii și) comision(ul)"
     | \bpromov(?:ea|a)z[aăe]\w*\s+(?:produsele|magazinul|oferta|ofertele|brandul|campania|campaniile)
+    # 03.11.2026, din exportul 2P pus de Alex pe 01.11 — pe prima pagina si in ticker:
+    # „Q4 opportunity: Promovează ștergătoarele", „Accelerează-ți comisioanele!",
+    # „Comision 8% | Coș mediu peste 1.000 RON | Kit Media", „Comision de afiliere majorat", „+ comision HAVIT 10%".
+    # NU prinde „fără comision" (banci): comisionul apare doar in formele de mai jos.
+    | \bq[1-4]\s+opportunity\b
+    | \bpromoveaz[aă]\s+\w+
+    | \baccelereaz\w*(?:-[tț]i)?\s+comisi
+    | (?:^|[|+:])\s*comision(?:ul|ului)?\s+(?:[1-9]|de\s+afiliere|[A-Z]{2,})
+    | \bcomision\s+de\s+afiliere
+    | \bkit\s+media\b
+    | \bco[sșş]\s+mediu\b
+    | \baffiliate\s+(?:discount\s+)?(?:code|offer|coupon)\b
+    | \byour\s+audience\b
     | \bv[aâ]nz[aă]r(?:e|ea|i|ile)\s+valid              # „din fiecare vânzare validă"
     | \bmateriale(?:le)?\s+(?:de\s+)?marketing
     | \bgener\w*\s+(?:de\s+)?conversii

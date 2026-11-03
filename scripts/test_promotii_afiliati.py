@@ -43,6 +43,24 @@ def verdict(slug, nume, descriere=""):
     return r[0] if r else None
 
 
+print("\n── scoase: exportul 2P din 01.11.2026, afisate pe prima pagina si in /black-friday ──")
+for slug_, titlu_ in [
+    ("automobilus.ro", "🚗 Q4 opportunity: Promovează ștergătoarele de parbriz Automobilus!"),
+    ("automobilus.ro", "🔥 BLACK FRIDAY Automobilus: Reduceri de până la 35%! Accelerează-ți comisioanele!"),
+    ("kinderauto.ro", "🔥Black Friday Kinderauto.ro 2026 | Comision 8% | Coș mediu peste 1.000 RON | Kit Media disponibil!"),
+    ("underarmour.ro", "Comision de afiliere majorat pentru o perioada limitata | Under Armour"),
+    ("printingmall.ro", "Voucher Black Friday 6-15 Noiembrie + comision HAVIT 10%"),
+    ("x-sense.com", "X-Sense Exclusive Affiliate Offer – 12% Off Your Entire Order"),
+]:
+    verifica(f"{slug_}: {titlu_[:50]}", verdict(slug_, titlu_), "scoate")
+verifica("ikier.com: „Your audience can save\" e fraza, oferta ramane",
+         text_pentru_afiliati(P("IKIER K70 MAX 200€ OFF", "Upgrade to the powerful IKIER K70 MAX. Your audience can save 200€ instantly."),
+                              M("ikier.com")), ("curata", "Upgrade to the powerful IKIER K70 MAX."))
+print("\n── raman: aceleasi cuvinte, scrise pentru cumparator ──")
+for titlu_ in ["Card fără comision de administrare", "Transfer fără comision la prima plată", "Comision 0 la retragere",
+               "Promoție: Black Friday la Automobilus, până la 35%", "Promovare de sezon: -20% la anvelope"]:
+    verifica(f"ramane: {titlu_}", verdict("x.ro", titlu_), None)
+
 print("\n── scoase: texte pentru afiliati (reale, 24.09.2026) ──")
 verifica("interlink.ro: titlul = numele magazinului, descrierea = programul de afiliere",
          verdict("interlink.ro", "Interlink",

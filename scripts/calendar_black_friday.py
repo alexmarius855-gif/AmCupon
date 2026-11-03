@@ -34,7 +34,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from import_csv_promotii import find_magazin, norm_slug  # noqa: E402
 from text_curat import acord_numeral  # noqa: E402
 from nume_magazin import nume_afisat  # noqa: E402
-from promotii import (RE_EMOJI, data_csv, descriere_publica, fara_segmente_afiliati,  # noqa: E402
+from promotii import (RE_EMOJI, RE_PENTRU_AFILIATI, data_csv, descriere_publica, fara_segmente_afiliati,  # noqa: E402
                       inceput_in_viitor, ora_ro, promotie_pentru_alta_piata, sfarsit_real, titlu_in_text)
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -98,6 +98,9 @@ def campanii(randuri: list[dict], magazine: list[dict], an: int) -> list[dict]:
         slug = magazine[idx]["magazin"]
         nume = nume_afisat(slug)
         nota = acord_numeral(re.sub(r"\s{2,}", " ", RE_EMOJI.sub("", titlu_in_text(promo, nume))).strip(" -|:"))
+        # Titlu scris pentru afiliati („Comision 8% | Kit Media"): datele campaniei raman, textul nu (03.11.2026).
+        if RE_PENTRU_AFILIATI.search(nume_p):
+            nota = ""
         c = {"magazin": slug, "nume": nume, "start": s, "final": f, "nota": nota,
              "descriere": descriere_publica(desc, promo), "are_cod": bool(promo["cod_cupon"])}
         if slug not in alese or s < alese[slug]["start"]:
@@ -252,6 +255,9 @@ def test() -> int:
              {"magazin": "e", "categorie_slug": "beauty"}, {"magazin": "f", "categorie_slug": "marketplace"},
              {"magazin": "g", "categorie_slug": "marketplace"}, {"magazin": "h", "categorie_slug": "marketplace"}])],
          ["fashion"]),
+        ("comisionul nu ajunge in calendar, campania ramane", [c["nota"] for c in campanii(
+            [r("doctorshield.ro", "Black Friday DoctorShield | Comision 8% | Kit Media disponibil!",
+               "2026-11-20 06:00:00 UTC", "2026-11-30 08:00:00 UTC")], mag, 2026)], [""]),
         ("emoji scos din titlu", [c["nota"] for c in campanii(
             [r("doctorshield.ro", "\U0001F525 Black Friday pe DoctorShield",
                "2026-11-20 06:00:00 UTC", "2026-11-30 08:00:00 UTC")], mag, 2026)], ["Black Friday pe DoctorShield"]),
