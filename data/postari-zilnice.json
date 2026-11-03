@@ -676,43 +676,56 @@
     "hashtags": "#reduceri #carti #educatie #romania #jollymag"
   },
   {
-    "magazin": "answear.ro",
-    "nume": "Answear",
+    "magazin": "scule365.ro",
+    "nume": "Scule365",
+    "categorie": "Casă & Grădină",
+    "categorie_slug": "casa-gradina",
+    "cod": "",
+    "procent": "",
+    "zile_ramase": 4,
+    "link": "https://amcupon.ro/cod-reducere/scule365.ro",
+    "story": "🏡 Reducere Scule365 azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/scule365.ro",
+    "perete": "🏡 Reducere activa la Scule365\n\n✅ Black Friday 2026 Scule265\n⏳ Expiră în 4 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/scule365.ro",
+    "hashtags": "#reduceri #casa #gradina #mobilier #romania #scule365"
+  },
+  {
+    "magazin": "gryxx.ro",
+    "nume": "Gryxx",
     "categorie": "Fashion",
     "categorie_slug": "fashion",
     "cod": "",
     "procent": "",
-    "zile_ramase": 1,
-    "link": "https://amcupon.ro/cod-reducere/answear.ro",
-    "story": "👗 Reducere Answear azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/answear.ro",
-    "perete": "👗 Reducere activa la Answear\n\n✅ LUCKY FRIDAY\n⏳ Expiră în 1 zi — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/answear.ro",
-    "hashtags": "#reduceri #moda #fashion #haine #romania #answear"
+    "zile_ramase": 4,
+    "link": "https://amcupon.ro/cod-reducere/gryxx.ro",
+    "story": "👗 Reducere Gryxx azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/gryxx.ro",
+    "perete": "👗 Reducere activa la Gryxx\n\n✅ GRYXX: Cyber Sale, Black Friday Mode, 3-8 noiembrie\n⏳ Expiră în 4 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/gryxx.ro",
+    "hashtags": "#reduceri #moda #fashion #haine #romania #gryxx"
   },
   {
-    "magazin": "librarie.net",
-    "nume": "Librarie",
-    "categorie": "Cărți & Educație",
-    "categorie_slug": "carti-educatie",
+    "magazin": "intimax.ro",
+    "nume": "Intimax",
+    "categorie": "Marketplace",
+    "categorie_slug": "marketplace",
     "cod": "",
     "procent": "",
-    "zile_ramase": 57,
-    "link": "https://amcupon.ro/cod-reducere/librarie.net",
-    "story": "📚 Reducere Librarie azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/librarie.net",
-    "perete": "📚 Reducere activa la Librarie\n\n✅ Bursa Cărților Ieftine: Ediția sub 15 lei (peste 5000 de titluri active)\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/librarie.net",
-    "hashtags": "#reduceri #carti #educatie #romania #librarie"
+    "zile_ramase": 4,
+    "link": "https://amcupon.ro/cod-reducere/intimax.ro",
+    "story": "🛍️ Reducere Intimax azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/intimax.ro",
+    "perete": "🛍️ Reducere activa la Intimax\n\n✅ Black Friday - Marea Bubuială\n⏳ Expiră în 4 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/intimax.ro",
+    "hashtags": "#reduceri #marketplace #oferte #romania #intimax"
   },
   {
-    "magazin": "automobilus.ro",
-    "nume": "Automobilus",
-    "categorie": "Auto & Moto",
-    "categorie_slug": "auto-moto",
+    "magazin": "tezyo.ro",
+    "nume": "Tezyo",
+    "categorie": "Fashion",
+    "categorie_slug": "fashion",
     "cod": "",
     "procent": "",
-    "zile_ramase": 1,
-    "link": "https://amcupon.ro/cod-reducere/automobilus.ro",
-    "story": "🚗 Reducere Automobilus azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/automobilus.ro",
-    "perete": "🚗 Reducere activa la Automobilus\n\n✅ 🚗 Q4 opportunity: Promovează ștergătoarele de parbriz Automobilus!\n⏳ Expiră în 1 zi — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/automobilus.ro",
-    "hashtags": "#reduceri #auto #moto #piese #masina #romania #automobilus"
+    "zile_ramase": 4,
+    "link": "https://amcupon.ro/cod-reducere/tezyo.ro",
+    "story": "👗 Reducere Tezyo azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/tezyo.ro",
+    "perete": "👗 Reducere activa la Tezyo\n\n✅ Tezyo: The Black Friday Selection, 3-8 noiembrie\n⏳ Expiră în 4 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/tezyo.ro",
+    "hashtags": "#reduceri #moda #fashion #haine #romania #tezyo"
   },
   {
     "magazin": "aosom.ro",
@@ -728,6 +741,32 @@
     "hashtags": "#reduceri #casa #gradina #mobilier #romania #aosom"
   },
   {
+    "magazin": "vetro.ro",
+    "nume": "Vetro",
+    "categorie": "Sănătate & Farmacie",
+    "categorie_slug": "sanatate",
+    "cod": "",
+    "procent": "",
+    "zile_ramase": 4,
+    "link": "https://amcupon.ro/cod-reducere/vetro.ro",
+    "story": "💊 Reducere Vetro azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/vetro.ro",
+    "perete": "💊 Reducere activa la Vetro\n\n✅ Black Friday 6-8.11.2026\n⏳ Expiră în 4 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/vetro.ro",
+    "hashtags": "#reduceri #sanatate #farmacie #suplimente #romania #vetro"
+  },
+  {
+    "magazin": "prestigehome.ro",
+    "nume": "Prestigehome",
+    "categorie": "Casă & Grădină",
+    "categorie_slug": "casa-gradina",
+    "cod": "",
+    "procent": "",
+    "zile_ramase": 4,
+    "link": "https://amcupon.ro/cod-reducere/prestigehome.ro",
+    "story": "🏡 Reducere Prestigehome azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/prestigehome.ro",
+    "perete": "🏡 Reducere activa la Prestigehome\n\n✅ Black Friday la Prestige Home\n⏳ Expiră în 4 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/prestigehome.ro",
+    "hashtags": "#reduceri #casa #gradina #mobilier #romania #prestigehome"
+  },
+  {
     "magazin": "lacrimidepanda.ro",
     "nume": "Lacrimidepanda",
     "categorie": "Auto & Moto",
@@ -739,6 +778,19 @@
     "story": "🚗 -35% la Lacrimidepanda!\nFara cod necesar 👇\namcupon.ro/cod-reducere/lacrimidepanda.ro",
     "perete": "🚗 -35% la Lacrimidepanda — activ acum\n\n✅ Black Friday Lacrimi de Panda – 35% reducere la tot catalogul\n⏳ Expiră în 1 zi — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/lacrimidepanda.ro",
     "hashtags": "#reduceri #auto #moto #piese #masina #romania #lacrimidepanda"
+  },
+  {
+    "magazin": "aldoshoes.com.ro",
+    "nume": "Aldoshoes",
+    "categorie": "Fashion",
+    "categorie_slug": "fashion",
+    "cod": "",
+    "procent": "",
+    "zile_ramase": 4,
+    "link": "https://amcupon.ro/cod-reducere/aldoshoes.com.ro",
+    "story": "👗 Reducere Aldoshoes azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/aldoshoes.com.ro",
+    "perete": "👗 Reducere activa la Aldoshoes\n\n✅ ALDO: Black Friday Sale, 3-8 noiembrie\n⏳ Expiră în 4 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/aldoshoes.com.ro",
+    "hashtags": "#reduceri #moda #fashion #haine #romania #aldoshoes"
   },
   {
     "magazin": "craftmystic.ro",
@@ -754,17 +806,69 @@
     "hashtags": "#reduceri #bijuterii #accesorii #romania #craftmystic"
   },
   {
-    "magazin": "longevity-boost.com",
-    "nume": "Longevity Boost",
+    "magazin": "edituracasa.ro",
+    "nume": "Edituracasa",
+    "categorie": "Cărți & Educație",
+    "categorie_slug": "carti-educatie",
+    "cod": "",
+    "procent": "-78%",
+    "zile_ramase": 4,
+    "link": "https://amcupon.ro/cod-reducere/edituracasa.ro",
+    "story": "📚 -78% la Edituracasa!\nFara cod necesar 👇\namcupon.ro/cod-reducere/edituracasa.ro",
+    "perete": "📚 -78% la Edituracasa — activ acum\n\n✅ Black Friday la Editura Casa: reduceri de până la 78%!\n⏳ Expiră în 4 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/edituracasa.ro",
+    "hashtags": "#reduceri #carti #educatie #romania #edituracasa"
+  },
+  {
+    "magazin": "detoxmed.ro",
+    "nume": "Detoxmed",
     "categorie": "Sănătate & Farmacie",
     "categorie_slug": "sanatate",
     "cod": "",
-    "procent": "-20%",
+    "procent": "-30%",
+    "zile_ramase": 4,
+    "link": "https://amcupon.ro/cod-reducere/detoxmed.ro",
+    "story": "💊 -30% la Detoxmed!\nFara cod necesar 👇\namcupon.ro/cod-reducere/detoxmed.ro",
+    "perete": "💊 -30% la Detoxmed — activ acum\n\n✅ reducere 30% la toate programele DETOXMED\n⏳ Expiră în 4 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/detoxmed.ro",
+    "hashtags": "#reduceri #sanatate #farmacie #suplimente #romania #detoxmed"
+  },
+  {
+    "magazin": "zelto.ro",
+    "nume": "Zelto",
+    "categorie": "Sănătate & Farmacie",
+    "categorie_slug": "sanatate",
+    "cod": "",
+    "procent": "",
+    "zile_ramase": 47,
+    "link": "https://amcupon.ro/cod-reducere/zelto.ro",
+    "story": "💊 Reducere Zelto azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/zelto.ro",
+    "perete": "💊 Reducere activa la Zelto\n\n✅ Sezonul virozelor, prețuri mai mici!\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/zelto.ro",
+    "hashtags": "#reduceri #sanatate #farmacie #suplimente #romania #zelto"
+  },
+  {
+    "magazin": "nuviabeauty.ro",
+    "nume": "Nuviabeauty",
+    "categorie": "Beauty & Îngrijire",
+    "categorie_slug": "beauty",
+    "cod": "",
+    "procent": "",
+    "zile_ramase": 4,
+    "link": "https://amcupon.ro/cod-reducere/nuviabeauty.ro",
+    "story": "💄 Reducere Nuviabeauty azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/nuviabeauty.ro",
+    "perete": "💄 Reducere activa la Nuviabeauty\n\n✅ Black Friday\n⏳ Expiră în 4 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/nuviabeauty.ro",
+    "hashtags": "#reduceri #cosmetice #beauty #skincare #romania #nuviabeauty"
+  },
+  {
+    "magazin": "automobilus.ro",
+    "nume": "Automobilus",
+    "categorie": "Auto & Moto",
+    "categorie_slug": "auto-moto",
+    "cod": "",
+    "procent": "",
     "zile_ramase": 1,
-    "link": "https://amcupon.ro/cod-reducere/longevity-boost.com",
-    "story": "💊 -20% la Longevity Boost!\nFara cod necesar 👇\namcupon.ro/cod-reducere/longevity-boost.com",
-    "perete": "💊 -20% la Longevity Boost — activ acum\n\n✅ -20% + încă 20% la suplimentele Longevity BOOST\n⏳ Expiră în 1 zi — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/longevity-boost.com",
-    "hashtags": "#reduceri #sanatate #farmacie #suplimente #romania #longevityboost"
+    "link": "https://amcupon.ro/cod-reducere/automobilus.ro",
+    "story": "🚗 Reducere Automobilus azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/automobilus.ro",
+    "perete": "🚗 Reducere activa la Automobilus\n\n✅ 🚗 Q4 opportunity: Promovează ștergătoarele de parbriz Automobilus!\n⏳ Expiră în 1 zi — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/automobilus.ro",
+    "hashtags": "#reduceri #auto #moto #piese #masina #romania #automobilus"
   },
   {
     "magazin": "inpuff.ro",
@@ -780,19 +884,6 @@
     "hashtags": "#reduceri #marketplace #oferte #romania #inpuff"
   },
   {
-    "magazin": "farmec.ro",
-    "nume": "Farmec",
-    "categorie": "Beauty & Îngrijire",
-    "categorie_slug": "beauty",
-    "cod": "",
-    "procent": "",
-    "zile_ramase": 1,
-    "link": "https://amcupon.ro/cod-reducere/farmec.ro",
-    "story": "💄 Reducere Farmec azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/farmec.ro",
-    "perete": "💄 Reducere activa la Farmec\n\n✅ Teasing: Acces exclusiv la Black Friday pe 5 noiembrie!\nℹ️ Acces Prioritar Black Friday pe 5 Noiembrie!\n\nMembrii BeautyCLUB Gerovital abonați la newsletter ...\n⏳ Expiră în 1 zi — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/farmec.ro",
-    "hashtags": "#reduceri #cosmetice #beauty #skincare #romania #farmec"
-  },
-  {
     "magazin": "otter.ro",
     "nume": "Otter",
     "categorie": "Fashion",
@@ -806,17 +897,30 @@
     "hashtags": "#reduceri #moda #fashion #haine #romania #otter"
   },
   {
-    "magazin": "scule365.ro",
-    "nume": "Scule365",
-    "categorie": "Casă & Grădină",
-    "categorie_slug": "casa-gradina",
+    "magazin": "springfarma.com",
+    "nume": "Springfarma",
+    "categorie": "Sănătate & Farmacie",
+    "categorie_slug": "sanatate",
     "cod": "",
     "procent": "",
-    "zile_ramase": 4,
-    "link": "https://amcupon.ro/cod-reducere/scule365.ro",
-    "story": "🏡 Reducere Scule365 azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/scule365.ro",
-    "perete": "🏡 Reducere activa la Scule365\n\n✅ Black Friday 2026 Scule265\n⏳ Expiră în 4 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/scule365.ro",
-    "hashtags": "#reduceri #casa #gradina #mobilier #romania #scule365"
+    "zile_ramase": 12,
+    "link": "https://amcupon.ro/cod-reducere/springfarma.com",
+    "story": "💊 Reducere Springfarma azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/springfarma.com",
+    "perete": "💊 Reducere activa la Springfarma\n\n✅ 🐝 Black Friday - Liftul Reducerilor\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/springfarma.com",
+    "hashtags": "#reduceri #sanatate #farmacie #suplimente #romania #springfarma"
+  },
+  {
+    "magazin": "answear.ro",
+    "nume": "Answear",
+    "categorie": "Fashion",
+    "categorie_slug": "fashion",
+    "cod": "",
+    "procent": "",
+    "zile_ramase": 1,
+    "link": "https://amcupon.ro/cod-reducere/answear.ro",
+    "story": "👗 Reducere Answear azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/answear.ro",
+    "perete": "👗 Reducere activa la Answear\n\n✅ LUCKY FRIDAY\n⏳ Expiră în 1 zi — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/answear.ro",
+    "hashtags": "#reduceri #moda #fashion #haine #romania #answear"
   },
   {
     "magazin": "carturesti.ro",
@@ -856,6 +960,19 @@
     "story": "🧸 -70% la Noriel!\nFara cod necesar 👇\namcupon.ro/cod-reducere/noriel.ro",
     "perete": "🧸 -70% la Noriel — activ acum\n\n✅ Black Friday | Reduceri de pana la 70% | 30 octombrie - 15 noiembrie\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/noriel.ro",
     "hashtags": "#reduceri #copii #jucarii #bebelusi #romania #noriel"
+  },
+  {
+    "magazin": "librarie.net",
+    "nume": "Librarie",
+    "categorie": "Cărți & Educație",
+    "categorie_slug": "carti-educatie",
+    "cod": "",
+    "procent": "",
+    "zile_ramase": 57,
+    "link": "https://amcupon.ro/cod-reducere/librarie.net",
+    "story": "📚 Reducere Librarie azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/librarie.net",
+    "perete": "📚 Reducere activa la Librarie\n\n✅ Bursa Cărților Ieftine: Ediția sub 15 lei (peste 5000 de titluri active)\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/librarie.net",
+    "hashtags": "#reduceri #carti #educatie #romania #librarie"
   },
   {
     "magazin": "kinderauto.ro",
@@ -936,32 +1053,6 @@
     "hashtags": "#reduceri #carti #educatie #romania #litera"
   },
   {
-    "magazin": "gryxx.ro",
-    "nume": "Gryxx",
-    "categorie": "Fashion",
-    "categorie_slug": "fashion",
-    "cod": "",
-    "procent": "",
-    "zile_ramase": 4,
-    "link": "https://amcupon.ro/cod-reducere/gryxx.ro",
-    "story": "👗 Reducere Gryxx azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/gryxx.ro",
-    "perete": "👗 Reducere activa la Gryxx\n\n✅ GRYXX: Cyber Sale, Black Friday Mode, 3-8 noiembrie\n⏳ Expiră în 4 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/gryxx.ro",
-    "hashtags": "#reduceri #moda #fashion #haine #romania #gryxx"
-  },
-  {
-    "magazin": "intimax.ro",
-    "nume": "Intimax",
-    "categorie": "Marketplace",
-    "categorie_slug": "marketplace",
-    "cod": "",
-    "procent": "",
-    "zile_ramase": 4,
-    "link": "https://amcupon.ro/cod-reducere/intimax.ro",
-    "story": "🛍️ Reducere Intimax azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/intimax.ro",
-    "perete": "🛍️ Reducere activa la Intimax\n\n✅ Black Friday - Marea Bubuială\n⏳ Expiră în 4 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/intimax.ro",
-    "hashtags": "#reduceri #marketplace #oferte #romania #intimax"
-  },
-  {
     "magazin": "expomob.ro",
     "nume": "Expomob",
     "categorie": "Casă & Grădină",
@@ -975,19 +1066,6 @@
     "hashtags": "#reduceri #casa #gradina #mobilier #romania #expomob"
   },
   {
-    "magazin": "tezyo.ro",
-    "nume": "Tezyo",
-    "categorie": "Fashion",
-    "categorie_slug": "fashion",
-    "cod": "",
-    "procent": "",
-    "zile_ramase": 4,
-    "link": "https://amcupon.ro/cod-reducere/tezyo.ro",
-    "story": "👗 Reducere Tezyo azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/tezyo.ro",
-    "perete": "👗 Reducere activa la Tezyo\n\n✅ Tezyo: The Black Friday Selection, 3-8 noiembrie\n⏳ Expiră în 4 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/tezyo.ro",
-    "hashtags": "#reduceri #moda #fashion #haine #romania #tezyo"
-  },
-  {
     "magazin": "shopika.ro",
     "nume": "Shopika",
     "categorie": "Fashion",
@@ -999,19 +1077,6 @@
     "story": "👗 -15% la Shopika!\nFara cod necesar 👇\namcupon.ro/cod-reducere/shopika.ro",
     "perete": "👗 -15% la Shopika — activ acum\n\n✅ Black Friday Shopika 05-09.11.2026 - reducere in masa de 15% pana la oferte speciale cu...\n⏳ Expiră în 6 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/shopika.ro",
     "hashtags": "#reduceri #moda #fashion #haine #romania #shopika"
-  },
-  {
-    "magazin": "libris.ro",
-    "nume": "Libris",
-    "categorie": "Cărți & Educație",
-    "categorie_slug": "carti-educatie",
-    "cod": "",
-    "procent": "",
-    "zile_ramase": 0,
-    "link": "https://amcupon.ro/cod-reducere/libris.ro",
-    "story": "📚 Reducere Libris azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/libris.ro",
-    "perete": "📚 Reducere activa la Libris\n\n✅ 30 comenzi gratuite. Una poate fi a ta  DOAR AZI»\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/libris.ro",
-    "hashtags": "#reduceri #carti #educatie #romania #libris"
   },
   {
     "magazin": "autobob.ro",
@@ -1090,19 +1155,6 @@
     "story": "👗 -5% la Labelshop!\nFara cod necesar 👇\namcupon.ro/cod-reducere/labelshop.ro",
     "perete": "👗 -5% la Labelshop — activ acum\n\n✅ Profita acum de reduceri intre 5% si 15% la echipamente si consumabile!\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/labelshop.ro",
     "hashtags": "#reduceri #moda #fashion #haine #romania #labelshop"
-  },
-  {
-    "magazin": "vetro.ro",
-    "nume": "Vetro",
-    "categorie": "Sănătate & Farmacie",
-    "categorie_slug": "sanatate",
-    "cod": "",
-    "procent": "",
-    "zile_ramase": 4,
-    "link": "https://amcupon.ro/cod-reducere/vetro.ro",
-    "story": "💊 Reducere Vetro azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/vetro.ro",
-    "perete": "💊 Reducere activa la Vetro\n\n✅ Black Friday 6-8.11.2026\n⏳ Expiră în 4 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/vetro.ro",
-    "hashtags": "#reduceri #sanatate #farmacie #suplimente #romania #vetro"
   },
   {
     "magazin": "mobidea.ro",
@@ -1261,19 +1313,6 @@
     "hashtags": "#reduceri #carti #educatie #romania #nemira"
   },
   {
-    "magazin": "prestigehome.ro",
-    "nume": "Prestigehome",
-    "categorie": "Casă & Grădină",
-    "categorie_slug": "casa-gradina",
-    "cod": "",
-    "procent": "",
-    "zile_ramase": 4,
-    "link": "https://amcupon.ro/cod-reducere/prestigehome.ro",
-    "story": "🏡 Reducere Prestigehome azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/prestigehome.ro",
-    "perete": "🏡 Reducere activa la Prestigehome\n\n✅ Black Friday la Prestige Home\n⏳ Expiră în 4 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/prestigehome.ro",
-    "hashtags": "#reduceri #casa #gradina #mobilier #romania #prestigehome"
-  },
-  {
     "magazin": "linailsboutique.ro",
     "nume": "Linailsboutique",
     "categorie": "Beauty & Îngrijire",
@@ -1378,6 +1417,19 @@
     "hashtags": "#reduceri #casa #gradina #mobilier #romania #agroclima"
   },
   {
+    "magazin": "watchshop.ro",
+    "nume": "Watchshop",
+    "categorie": "Bijuterii & Ceasuri",
+    "categorie_slug": "bijuterii",
+    "cod": "",
+    "procent": "",
+    "zile_ramase": 5,
+    "link": "https://amcupon.ro/cod-reducere/watchshop.ro",
+    "story": "💎 Reducere Watchshop azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/watchshop.ro",
+    "perete": "💎 Reducere activa la Watchshop\n\n✅ Black Friday Watchshop.ro\n⏳ Expiră în 5 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/watchshop.ro",
+    "hashtags": "#reduceri #bijuterii #accesorii #romania #watchshop"
+  },
+  {
     "magazin": "kinderplay.ro",
     "nume": "Kinderplay",
     "categorie": "Copii & Familie",
@@ -1454,19 +1506,6 @@
     "story": "🏡 -55% la Atomico!\nFara cod necesar 👇\namcupon.ro/cod-reducere/atomico.ro",
     "perete": "🏡 -55% la Atomico — activ acum\n\n✅ Ofertă Atomico: SuperSpor cu reduceri de până la 55% la produsele selectate pentru casă...\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/atomico.ro",
     "hashtags": "#reduceri #casa #gradina #mobilier #romania #atomico"
-  },
-  {
-    "magazin": "aldoshoes.com.ro",
-    "nume": "Aldoshoes",
-    "categorie": "Fashion",
-    "categorie_slug": "fashion",
-    "cod": "",
-    "procent": "",
-    "zile_ramase": 4,
-    "link": "https://amcupon.ro/cod-reducere/aldoshoes.com.ro",
-    "story": "👗 Reducere Aldoshoes azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/aldoshoes.com.ro",
-    "perete": "👗 Reducere activa la Aldoshoes\n\n✅ ALDO: Black Friday Sale, 3-8 noiembrie\n⏳ Expiră în 4 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/aldoshoes.com.ro",
-    "hashtags": "#reduceri #moda #fashion #haine #romania #aldoshoes"
   },
   {
     "magazin": "curteaveche.ro",
@@ -1636,19 +1675,6 @@
     "story": "👗 -15% la Uniquestore!\nFara cod necesar 👇\namcupon.ro/cod-reducere/uniquestore.ro",
     "perete": "👗 -15% la Uniquestore — activ acum\n\n✅ Extra 15% cu codul \"SALE\"\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/uniquestore.ro",
     "hashtags": "#reduceri #moda #fashion #haine #romania #uniquestore"
-  },
-  {
-    "magazin": "edituracasa.ro",
-    "nume": "Edituracasa",
-    "categorie": "Cărți & Educație",
-    "categorie_slug": "carti-educatie",
-    "cod": "",
-    "procent": "-78%",
-    "zile_ramase": 4,
-    "link": "https://amcupon.ro/cod-reducere/edituracasa.ro",
-    "story": "📚 -78% la Edituracasa!\nFara cod necesar 👇\namcupon.ro/cod-reducere/edituracasa.ro",
-    "perete": "📚 -78% la Edituracasa — activ acum\n\n✅ Black Friday la Editura Casa: reduceri de până la 78%!\n⏳ Expiră în 4 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/edituracasa.ro",
-    "hashtags": "#reduceri #carti #educatie #romania #edituracasa"
   },
   {
     "magazin": "kamu.ro",
@@ -1924,6 +1950,19 @@
     "hashtags": "#reduceri #marketplace #oferte #romania #intimplay"
   },
   {
+    "magazin": "longevity-boost.com",
+    "nume": "Longevity Boost",
+    "categorie": "Sănătate & Farmacie",
+    "categorie_slug": "sanatate",
+    "cod": "",
+    "procent": "-20%",
+    "zile_ramase": 1,
+    "link": "https://amcupon.ro/cod-reducere/longevity-boost.com",
+    "story": "💊 -20% la Longevity Boost!\nFara cod necesar 👇\namcupon.ro/cod-reducere/longevity-boost.com",
+    "perete": "💊 -20% la Longevity Boost — activ acum\n\n✅ -20% + încă 20% la suplimentele Longevity BOOST\n⏳ Expiră în 1 zi — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/longevity-boost.com",
+    "hashtags": "#reduceri #sanatate #farmacie #suplimente #romania #longevityboost"
+  },
+  {
     "magazin": "sofipex.ro",
     "nume": "Sofipex",
     "categorie": "Casă & Grădină",
@@ -1935,19 +1974,6 @@
     "story": "🏡 Reducere Sofipex azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/sofipex.ro",
     "perete": "🏡 Reducere activa la Sofipex\n\n✅ Promotii periodice\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/sofipex.ro",
     "hashtags": "#reduceri #casa #gradina #mobilier #romania #sofipex"
-  },
-  {
-    "magazin": "detoxmed.ro",
-    "nume": "Detoxmed",
-    "categorie": "Sănătate & Farmacie",
-    "categorie_slug": "sanatate",
-    "cod": "",
-    "procent": "-30%",
-    "zile_ramase": 4,
-    "link": "https://amcupon.ro/cod-reducere/detoxmed.ro",
-    "story": "💊 -30% la Detoxmed!\nFara cod necesar 👇\namcupon.ro/cod-reducere/detoxmed.ro",
-    "perete": "💊 -30% la Detoxmed — activ acum\n\n✅ reducere 30% la toate programele DETOXMED\n⏳ Expiră în 4 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/detoxmed.ro",
-    "hashtags": "#reduceri #sanatate #farmacie #suplimente #romania #detoxmed"
   },
   {
     "magazin": "menzo.ro",
@@ -2028,19 +2054,6 @@
     "hashtags": "#reduceri #marketplace #oferte #romania #marketgarage"
   },
   {
-    "magazin": "zelto.ro",
-    "nume": "Zelto",
-    "categorie": "Sănătate & Farmacie",
-    "categorie_slug": "sanatate",
-    "cod": "",
-    "procent": "",
-    "zile_ramase": 47,
-    "link": "https://amcupon.ro/cod-reducere/zelto.ro",
-    "story": "💊 Reducere Zelto azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/zelto.ro",
-    "perete": "💊 Reducere activa la Zelto\n\n✅ Sezonul virozelor, prețuri mai mici!\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/zelto.ro",
-    "hashtags": "#reduceri #sanatate #farmacie #suplimente #romania #zelto"
-  },
-  {
     "magazin": "giftera.ro",
     "nume": "Giftera",
     "categorie": "Cadouri & Flori",
@@ -2052,19 +2065,6 @@
     "story": "🎁 Reducere Giftera azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/giftera.ro",
     "perete": "🎁 Reducere activa la Giftera\n\n✅ Cadouri de Craciun Giftera.ro – seturi cu lantisor si mesaj pentru cei dragi\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/giftera.ro",
     "hashtags": "#reduceri #cadouri #flori #romania #giftera"
-  },
-  {
-    "magazin": "nuviabeauty.ro",
-    "nume": "Nuviabeauty",
-    "categorie": "Beauty & Îngrijire",
-    "categorie_slug": "beauty",
-    "cod": "",
-    "procent": "",
-    "zile_ramase": 4,
-    "link": "https://amcupon.ro/cod-reducere/nuviabeauty.ro",
-    "story": "💄 Reducere Nuviabeauty azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/nuviabeauty.ro",
-    "perete": "💄 Reducere activa la Nuviabeauty\n\n✅ Black Friday\n⏳ Expiră în 4 zile — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/nuviabeauty.ro",
-    "hashtags": "#reduceri #cosmetice #beauty #skincare #romania #nuviabeauty"
   },
   {
     "magazin": "havit-romania.ro",
@@ -2104,6 +2104,19 @@
     "story": "📚 Reducere Startinscoala azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/startinscoala.shop",
     "perete": "📚 Reducere activa la Startinscoala\n\n✅ Reducere la prima coamnda\n✅ Verificat azi de echipa AmCupon\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/startinscoala.shop",
     "hashtags": "#reduceri #carti #educatie #romania #startinscoala"
+  },
+  {
+    "magazin": "farmec.ro",
+    "nume": "Farmec",
+    "categorie": "Beauty & Îngrijire",
+    "categorie_slug": "beauty",
+    "cod": "",
+    "procent": "",
+    "zile_ramase": 1,
+    "link": "https://amcupon.ro/cod-reducere/farmec.ro",
+    "story": "💄 Reducere Farmec azi!\nFara cod necesar 👇\namcupon.ro/cod-reducere/farmec.ro",
+    "perete": "💄 Reducere activa la Farmec\n\n✅ Teasing: Acces exclusiv la Black Friday pe 5 noiembrie!\nℹ️ Acces Prioritar Black Friday pe 5 Noiembrie!\n\nMembrii BeautyCLUB Gerovital abonați la newsletter ...\n⏳ Expiră în 1 zi — prinde-l până nu zboară\n\n👉 Vezi oferta + mergi la magazin aici:\nhttps://amcupon.ro/cod-reducere/farmec.ro",
+    "hashtags": "#reduceri #cosmetice #beauty #skincare #romania #farmec"
   },
   {
     "magazin": "fera.ro",
