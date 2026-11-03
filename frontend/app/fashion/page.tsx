@@ -1,9 +1,8 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import OferteNisa, { AntetNisa } from "../components/OferteNisa";
 import fs from "fs";
 import path from "path";
-import MagazinCard from "../components/MagazinCard";
-import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
 import { esteInCategorie } from "../../lib/categoriiNisa";
 import { laParteneri } from "@/lib/cifreSite";
@@ -27,14 +26,6 @@ export const metadata: Metadata = {
 const TOP_FASHION = ["answear.ro"];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_FASHION = ["fashion"];
-const AVANTAJE = [
-  { icon: "👗", titlu: "Haine Damă", desc: "Rochii, bluze, pantaloni — branduri premium cu discount" },
-  { icon: "👔", titlu: "Haine Bărbați", desc: "Tricouri, cămăși, costume — modă masculină la prețuri reduse" },
-  { icon: "👟", titlu: "Pantofi & Încălțăminte", desc: "Adidași, pantofi, cizme — Nike, Adidas, Puma" },
-  { icon: "👜", titlu: "Genți & Accesorii", desc: "Genți, curele, bijuterii fashion" },
-  { icon: "🧥", titlu: "Outerwear", desc: "Geci, paltoane, jachete de sezon" },
-  { icon: "🩱", titlu: "Lenjerie & Pijamale", desc: "Lenjerie intimă, pijamale, șosete — branduri de calitate" },
-];
 
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Fashion & Haine 2026","url":"https://amcupon.ro/fashion","description":"Coduri și oferte la haine de la magazinele partenere AmCupon" };
 
@@ -62,48 +53,8 @@ export default function FashionPage() {
           </div>
         </nav>
 
-        <section className="bg-gradient-to-br from-[#c3dd2c] via-[#ddf93c] to-[#c3dd2c] text-[#0c1000] py-12 px-4">
-          <div className="max-w-6xl mx-auto text-center">
-            <div className="text-5xl mb-4">👗</div>
-            <h1 className="text-3xl md:text-4xl font-black mb-3">Fashion & Haine {an}</h1>
-            <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              Oferte {laParteneri(NISA_CATEGORII.fashion, 3)} și la alte magazine partenere de modă
-            </p>
-            <div className="flex flex-wrap justify-center gap-2">
-              {["Haine Damă","Haine Bărbați","Pantofi","Genți","Geci","Lenjerie","Accesorii"].map(c => (
-                <span key={c} className="bg-[var(--surface-alt)] text-[var(--foreground)] text-sm font-semibold px-4 py-1.5 rounded-full border border-[var(--border-strong)]">{c}</span>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[var(--foreground)] mb-6 text-center">Ce găsești la magazine fashion online</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {AVANTAJE.map(a => (
-              <div key={a.titlu} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
-                <div className="text-3xl mb-2">{a.icon}</div>
-                <h3 className="font-bold text-[var(--foreground)] text-sm mb-1">{a.titlu}</h3>
-                <p className="text-xs text-[var(--text-soft)]">{a.desc}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section className="max-w-6xl mx-auto px-4 pb-10">
-          <div className="flex items-center gap-3 mb-5">
-            
-            <h2 className="text-xl font-black text-[var(--foreground)]">Magazine fashion cu reduceri active</h2>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-            {magazine.map((m) => (
-              <MagazinCard key={m.magazin} m={m} />
-            ))}
-          </div>
-        </section>
-        <NewsletterCTA />
-
-
+        <AntetNisa titlu={<>Fashion & Haine {an}</>}>Oferte {laParteneri(NISA_CATEGORII.fashion, 3)} și la alte magazine partenere de modă</AntetNisa>
+        <OferteNisa magazine={magazine} titlu="Magazine fashion cu reduceri active" />
         <NisaProduse
           merchantSlugs={["answear.ro","hm.com","reserved.com","about-you.ro","lc-waikiki.ro"]}
           catSlug="fashion"
@@ -112,36 +63,37 @@ export default function FashionPage() {
           limit={12}
         />
 
+        
+
+        
+
+        
+
         <section className="bg-[var(--surface)] border-t border-[var(--border)] py-10 px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Ghid: Haine online mai ieftine în România</h2>
             <div className="space-y-4 text-sm text-[var(--text-soft)] leading-relaxed">
               <div>
                 <h3 className="font-bold text-[var(--foreground)] mb-1">Unde găsești reduceri la haine</h3>
-                <p>Answear și ceilalți parteneri AmCupon de modă au secțiuni de reduceri și promoții de sezon; ofertele lor active apar mai sus, pe cardurile magazinelor.</p>
+                <p>Answear si ceilalti parteneri AmCupon de moda au sectiuni de reduceri si promotii de sezon; ofertele lor active apar mai sus, pe cardurile magazinelor.</p>
               </div>
               <div>
                 <h3 className="font-bold text-[var(--foreground)] mb-1">Cele mai bune perioade pentru cumpărături fashion</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
-                  <li><strong>Solduri de iarnă (ianuarie)</strong> — reduceri mari la colecțiile de toamnă-iarnă</li>
-                  <li><strong>Solduri de vară (iulie)</strong> — lichidare stocuri primăvară-vară</li>
+                  <li><strong>Solduri de iarna (ianuarie)</strong> — reduceri mari la colecțiile de toamna-iarna</li>
+                  <li><strong>Solduri de vara (iulie)</strong> — lichidare stocuri primavara-vara</li>
                   <li><strong>Black Friday</strong> — discount-uri la branduri premium</li>
                 </ul>
               </div>
               <div>
                 <h3 className="font-bold text-[var(--foreground)] mb-1">Cum economisești la haine online</h3>
-                <p>Adaugă produsele în lista de favorite a magazinului și așteaptă o promoție. La sfârșit de sezon, colecția care pleacă intră la reducere.</p>
+                <p>Adauga produsele în lista de favorite a magazinului și așteaptă o promoție. La sfârșit de sezon, colecția care pleacă intra la reducere.</p>
               </div>
             </div>
           </div>
         </section>
 
-        <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)] mt-4">
-          © {an} AmCupon.ro ·{" "}
-          <Link href="/frumusete" className="hover:text-[var(--accent-text)]">Frumusețe</Link>{" · "}
-          <Link href="/idei-cadouri" className="hover:text-[var(--accent-text)]">Idei Cadouri</Link>{" · "}
-          <Link href="/categorii" className="hover:text-[var(--accent-text)]">Categorii</Link>
-        </footer>
+        
       </div>
     </>
   );

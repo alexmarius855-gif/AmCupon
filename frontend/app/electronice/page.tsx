@@ -1,9 +1,8 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import OferteNisa, { AntetNisa } from "../components/OferteNisa";
 import fs from "fs";
 import path from "path";
-import MagazinCard from "../components/MagazinCard";
-import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
 import { esteInCategorie } from "../../lib/categoriiNisa";
 import { enumerare, laParteneri, parteneriCategorie } from "@/lib/cifreSite";
@@ -19,7 +18,7 @@ interface Magazin {
 export const metadata: Metadata = {
   title: "Electronice România 2026 — Oferte de la Parteneri",
   description: `Oferte la electronice ${laParteneri(NISA_CATEGORII.electronice)}: telefoane, laptopuri, gadgeturi. Actualizate zilnic.`,
-  keywords: ["cod reducere eMAG", "reduceri altex", "electronice ieftine", "cod reducere pcgarage", "laptop reducere", "telefon reducere românia", "electronice online"],
+  keywords: ["cod reducere emag", "reduceri altex", "electronice ieftine", "cod reducere pcgarage", "laptop reducere", "telefon reducere românia", "electronice online"],
   alternates: { canonical: "https://amcupon.ro/electronice" },
   openGraph: { title: "Electronice 2026 | AmCupon.ro", url: "https://amcupon.ro/electronice", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
@@ -27,14 +26,6 @@ export const metadata: Metadata = {
 const TOP_TECH = ["evomag.ro","philips.ro","tenergy.com"];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_TECH = ["electronice"];
-const AVANTAJE = [
-  { icon: "📱", titlu: "Telefoane & Tablete", desc: "iPhone, Samsung, Xiaomi — cele mai bune oferte" },
-  { icon: "💻", titlu: "Laptopuri & PC", desc: "Gaming, office, ultrabook-uri la prețuri reduse" },
-  { icon: "📺", titlu: "TV & Audio", desc: "Smart TV 4K, soundbar, căști wireless" },
-  { icon: "🎮", titlu: "Gaming", desc: "Console, jocuri, accesorii PlayStation & Xbox" },
-  { icon: "📷", titlu: "Foto & Video", desc: "Camere foto, drone, accesorii" },
-  { icon: "⌚", titlu: "Smartwatch & Wearables", desc: "Apple Watch, Samsung Galaxy Watch, brățări fitness" },
-];
 
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Electronice 2026","url":"https://amcupon.ro/electronice","description":"Oferte la electronice de la magazinele partenere AmCupon" };
 
@@ -62,48 +53,8 @@ export default function ElectronicePage() {
           </div>
         </nav>
 
-        <section className="bg-gradient-to-br from-[#c3dd2c] via-[#ddf93c] to-[#c3dd2c] text-[#0c1000] py-12 px-4">
-          <div className="max-w-6xl mx-auto text-center">
-            <div className="text-5xl mb-4">📱</div>
-            <h1 className="text-3xl md:text-4xl font-black mb-3">Electronice {an}</h1>
-            <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              Oferte {laParteneri(NISA_CATEGORII.electronice, 3)} și la alte magazine partenere de electronice
-            </p>
-            <div className="flex flex-wrap justify-center gap-2">
-              {["Telefoane","Laptopuri","TV 4K","Gaming","Căști","Smartwatch"].map(c => (
-                <span key={c} className="bg-[var(--surface-alt)] text-[var(--foreground)] text-sm font-semibold px-4 py-1.5 rounded-full border border-[var(--border-strong)]">{c}</span>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[var(--foreground)] mb-6 text-center">Ce găsești la electronice online</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {AVANTAJE.map(a => (
-              <div key={a.titlu} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
-                <div className="text-3xl mb-2">{a.icon}</div>
-                <h3 className="font-bold text-[var(--foreground)] text-sm mb-1">{a.titlu}</h3>
-                <p className="text-xs text-[var(--text-soft)]">{a.desc}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section className="max-w-6xl mx-auto px-4 pb-10">
-          <div className="flex items-center gap-3 mb-5">
-            
-            <h2 className="text-xl font-black text-[var(--foreground)]">Magazine de electronice partenere</h2>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-            {magazine.map((m) => (
-              <MagazinCard key={m.magazin} m={m} />
-            ))}
-          </div>
-        </section>
-        <NewsletterCTA />
-
-
+        <AntetNisa titlu={<>Electronice {an}</>}>Oferte {laParteneri(NISA_CATEGORII.electronice, 3)} și la alte magazine partenere de electronice</AntetNisa>
+        <OferteNisa magazine={magazine} titlu="Magazine de electronice partenere" />
         <NisaProduse
           merchantSlugs={[]}
           teme={["laptopuri", "telefoane", "tablete", "monitoare", "casti-wireless", "smartwatch-uri"]}
@@ -111,6 +62,12 @@ export default function ElectronicePage() {
           culoareAccent="blue"
           limit={12}
         />
+
+        
+
+        
+
+        
 
         <section className="bg-[var(--surface)] border-t border-[var(--border)] py-10 px-4">
           <div className="max-w-3xl mx-auto">
@@ -132,31 +89,9 @@ export default function ElectronicePage() {
           </div>
         </section>
 
-        <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Explorează și alte categorii</h2>
-          <div className="flex flex-wrap gap-2">
-            {[
-              { href: "/gadgets", label: "📡 Gadgets" },
-              { href: "/moto", label: "🚗 Auto-Moto" },
-              { href: "/sport", label: "🏃 Sport" },
-              { href: "/idei-cadouri", label: "🎁 Idei Cadouri" },
-              { href: "/categorii", label: "📂 Categorii" },
-              { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
-            ].map(l => (
-              <a key={l.href} href={l.href}
-                className="bg-[var(--surface)] hover:bg-[var(--surface-alt)] hover:text-[var(--accent-text)] text-[var(--text-soft)] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[var(--border)] hover:border-[#c9ced5]">
-                {l.label}
-              </a>
-            ))}
-          </div>
-        </section>
+        
 
-        <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)] mt-4">
-          © {an} AmCupon.ro ·{" "}
-          <Link href="/gadgets" className="hover:text-[var(--accent-text)]">Gadgets</Link>{" · "}
-          <Link href="/farmacie" className="hover:text-[var(--accent-text)]">Farmacie</Link>{" · "}
-          <Link href="/categorii" className="hover:text-[var(--accent-text)]">Categorii</Link>
-        </footer>
+        
       </div>
     </>
   );

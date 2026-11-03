@@ -2,10 +2,8 @@ import Link from "next/link";
 import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
-import MagazinCard from "../components/MagazinCard";
-import NewsletterCTA from "../components/NewsletterCTA";
+import OferteNisa from "../components/OferteNisa";
 import { pesteMagazine } from "@/lib/cifreSite";
-import { cuNumar } from "@/lib/acordNumeral";
 
 interface Promotie {
   nume: string;
@@ -176,24 +174,7 @@ export default function CraciunPage() {
         </section>
 
         {/* Magazine grid */}
-        <section className="max-w-6xl mx-auto px-4 pb-14">
-          <div className="flex items-center justify-between mb-6">
-            <h2 className="text-xl font-black text-[var(--foreground)]">
-              🛍️ Magazine cu reduceri active
-            </h2>
-            <span className="text-sm text-[var(--text-muted)]">{cuNumar(magazine.length, "magazin", "magazine")}</span>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-            {magazine.map((m) => {
-              return (
-                <MagazinCard key={m.magazin} m={m} />
-              );
-            })}
-          </div>
-        </section>
-
-        <NewsletterCTA />
+        <OferteNisa magazine={magazine} titlu="Magazine cu reduceri active" />
 
         {/* SEO Content */}
         <section className="bg-[var(--surface)] border-t border-[var(--border)]">

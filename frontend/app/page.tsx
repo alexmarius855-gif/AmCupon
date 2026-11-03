@@ -2,26 +2,21 @@ import type { Metadata } from "next";
 import fs from "fs";
 import path from "path";
 import Link from "next/link";
-import OferteAcasaClient, { type OfertaCard } from "./OferteAcasaClient";
+import GrilaOferte from "./components/GrilaOferte";
 import ButonCautare from "./components/ButonCautare";
 import ZilePana from "./components/ZilePana";
 import CategoryIcon from "./components/CategoryIcon";
+import LogoMagazin from "./components/LogoMagazin";
 import { CardProdus } from "./components/OferteParteneri";
 import { pesteMagazine, PesteMagazine, laParteneri } from "@/lib/cifreSite";
 import { numeAfisat } from "@/lib/numeMagazin";
-import { linkPromotie, type MagazinCuLink } from "@/lib/linkMagazin";
-import { valoareOferta, type PromotieCupon } from "@/lib/oferta";
-import { PRAG_URGENT } from "@/lib/expirarePromo";
+import { CATEGORII_SITE } from "@/lib/site";
 import { MAGAZINE_POPULARE } from "@/lib/magazinePopulare";
-import {
-  oferteAcasa, numaraFiltre, filtreAfisate, alegeAfisate, oferteDePeMagazin, magazinePopulareAcasa,
-  procentAfisat, cuNumar, type FiltruAcasa,
-} from "@/lib/oferteAcasa";
+import { oferteDePeMagazin, magazinePopulareAcasa, cuNumar } from "@/lib/oferteAcasa";
+import { poolOferte, grilaOferte, type MagazinGrila } from "@/lib/grilaOferte";
 import { campaniiBF } from "@/lib/campaniiBlackFriday";
 import { aziRomania, calendarScurt, fazaBF, type DateBF } from "@/lib/momentBF";
 import { sectiunePentru } from "@/lib/oferteTema";
-import { criterii as toateCriteriile } from "@/lib/criterii";
-import { topuri as toateTopurile } from "@/lib/legaturiInterne";
 
 /**
  * Prima pagina, rearanjata pe 03.11.2026 („pe criterii corecte, vizibilitate, hook"), din masuratori:
@@ -62,22 +57,9 @@ function readJSON<T>(rel: string, fallback: T): T {
   }
 }
 
-interface Magazin extends MagazinCuLink {
-  magazin: string;
-  logo_url?: string;
+interface Magazin extends MagazinGrila {
   categorie_slug?: string;
-  sales_number?: number;
-  promotii?: (PromotieCupon & { landing_page?: string })[];
 }
-
-// Etichetele si ordinea categoriilor reale; slugurile vin din output.json, deci o categorie fara magazine dispare.
-const CATEGORII: Record<string, string> = {
-  fashion: "Fashion", "casa-gradina": "Casă & Grădină", electronice: "Electronice & IT", beauty: "Beauty & Îngrijire",
-  sanatate: "Sănătate & Farmacie", software: "Software & Digital", sport: "Sport & Fitness", copii: "Copii & Familie",
-  calatorii: "Călătorii", "auto-moto": "Auto & Moto", "carti-educatie": "Cărți & Educație",
-  "mancare-bauturi": "Mâncare & Băuturi", animale: "Pet Shop", "cadouri-flori": "Cadouri & Flori",
-  bijuterii: "Bijuterii & Ceasuri", financiar: "Financiar",
-};
 
 // Formatul care a adus clicuri: produse reale din feed, cu pret si link platit. Temele sunt cele pe care s-a dat
 // clic (/top/parfumuri-barbati 2, /blog/cea-mai-buna-friteuza-aer-2026 2, /top/aspiratoare-fara-fir 1).
@@ -93,27 +75,27 @@ function intrebariAcasa(peste: string): { q: string; a: string }[] {
   return [
     {
       q: "Cum folosesc un cod de reducere de pe AmCupon.ro?",
-      a: "Alegi magazinul dorit, apeși pe cod ca să îl copiezi, apoi mergi la magazin prin butonul nostru. La finalizarea comenzii (checkout) lipești codul în câmpul \"Cod reducere\" sau \"Voucher\" și reducerea se aplică automat.",
+      a: "Alegi magazinul dorit, apeși pe cod ca sa îl copiezi, apoi mergi la magazin prin butonul nostru. La finalizarea comenzii (checkout) lipești codul în câmpul \"Cod reducere\" sau \"Voucher\" și reducerea se aplica automat.",
     },
     {
       q: "Codurile de reducere sunt gratuite?",
       a: "Da, 100% gratuit. Nu plătești nimic și nu ai nevoie de cont. AmCupon.ro este gratuit pentru toți utilizatorii, fără costuri ascunse.",
     },
     {
-      q: "Cât de des se actualizează ofertele și codurile?",
-      a: `Ofertele se actualizează automat de trei ori pe zi, de la ${peste} partenere. Cele expirate dispar după data lor, iar cele noi apar la următoarea actualizare. Codurile nu le testăm în coș.`,
+      q: "Cat de des se actualizează ofertele și codurile?",
+      a: `Ofertele se actualizează automat de trei ori pe zi, de la ${peste} partenere. Cele expirate dispar după data lor, iar cele noi apar la următoarea actualizare. Codurile nu le testam în cos.`,
     },
     {
       q: "De ce unele coduri nu mai funcționează?",
-      a: "Magazinele pot opri o promoție înainte de data anunțată sau pot limita stocul. Dacă un cod nu mai merge, încearcă alt cod activ din aceeași pagină de magazin sau verifică ofertele fără cod, care se aplică automat.",
+      a: "Magazinele pot opri o promoție înainte de data anuntata sau pot limita stocul. Dacă un cod nu mai merge, încearcă alt cod activ din aceeași pagina de magazin sau verifica ofertele fără cod, care se aplica automat.",
     },
     {
-      q: "Trebuie să îmi fac cont ca să folosesc codurile?",
-      a: "Nu. Toate codurile și ofertele sunt disponibile fără cont și fără înregistrare. Opțional, te poți abona la newsletter pentru a primi ofertele active, o dată pe zi, pe email.",
+      q: "Trebuie sa îmi fac cont ca sa folosesc codurile?",
+      a: "Nu. Toate codurile și ofertele sunt disponibile fără cont și fără înregistrare. Opțional, te poți abona la newsletter pentru a primi ofertele active, o data pe zi, pe email.",
     },
     {
-      q: "Cum câștigă bani AmCupon.ro?",
-      a: "Primim un comision de la magazine atunci când cumperi prin link-urile noastre, din bugetul lor de marketing. Pentru tine prețul rămâne același, fără costuri suplimentare. Așa putem menține serviciul gratuit.",
+      q: "Cum castiga bani AmCupon.ro?",
+      a: "Primim un comision de la magazine atunci când cumperi prin link-urile noastre, din bugetul lor de marketing. Pentru tine prețul rămâne același, fără costuri suplimentare. Asa putem menține serviciul gratuit.",
     },
   ];
 }
@@ -149,22 +131,9 @@ export default function Page() {
   const azi = aziRomania();
 
   // ── Ofertele: in HTML ajung doar cele afisate, o oferta pe magazin la „Toate" ──
-  const pool = oferteAcasa(magazine, linkPromotie, (p) => procentAfisat(valoareOferta(p).text));
-  const numere = numaraFiltre(pool, PRAG_URGENT);
-  // „Fără cod" ramane pe /oferte-azi; aici, trei filtre incap pe un rand si pe telefon.
-  const filtre = filtreAfisate(numere).filter((f) => f !== "oferta");
-  const liste = {} as Record<FiltruAcasa, string[]>;
-  const oferte: Record<string, OfertaCard> = {};
-  for (const f of ["toate", "cod", "oferta", "curand"] as FiltruAcasa[]) {
-    const alese = filtre.includes(f) || f === "toate" ? alegeAfisate(pool, f, PRAG_URGENT, { maxPerMagazin: f === "toate" ? 1 : 2 }) : [];
-    liste[f] = alese.map((o) => o.cheie);
-    for (const o of alese) {
-      oferte[o.cheie] = {
-        cheie: o.cheie, cod: o.cod, link: o.link, magazin: o.m.magazin, nume: numeAfisat(o.m.magazin), logo: o.m.logo_url,
-        promo: { nume: o.promo.nume, descriere: (o.promo.descriere || "").slice(0, 240), cod_cupon: o.promo.cod_cupon, zile_ramase: o.zile },
-      };
-    }
-  }
+  const pool = poolOferte(magazine);
+  const grila = grilaOferte(pool);
+  const numere = grila.numere;
   const peMagazin = oferteDePeMagazin(pool);
 
   // ── Carligul si calendarul ──
@@ -189,9 +158,10 @@ export default function Page() {
     cuMagazine.add(m.categorie_slug);
     if (m.promotii?.length) promoPeCategorie.set(m.categorie_slug, (promoPeCategorie.get(m.categorie_slug) || 0) + 1);
   }
-  const categorii = Object.keys(CATEGORII)
-    .filter((s) => cuMagazine.has(s))
-    .sort((a, b) => (promoPeCategorie.get(b) || 0) - (promoPeCategorie.get(a) || 0));
+  // Generale la coada: „Marketplace" si „Servicii" nu spun ce cauta cineva. Primele 16, dupa ofertele de azi.
+  const categorii = CATEGORII_SITE
+    .filter((c) => cuMagazine.has(c.slug) && c.slug !== "marketplace" && c.slug !== "servicii")
+    .sort((a, b) => (promoPeCategorie.get(b.slug) || 0) - (promoPeCategorie.get(a.slug) || 0));
   const populare = magazinePopulareAcasa(magazine, MAGAZINE_POPULARE.map((x) => x.slug), new Set(peMagazin.keys()));
   const hrefPopular = new Map(MAGAZINE_POPULARE.filter((x) => x.href).map((x) => [x.slug, x.href as string]));
   const numePopular = new Map(MAGAZINE_POPULARE.map((x) => [x.slug, x.label]));
@@ -201,9 +171,6 @@ export default function Page() {
     .filter((p) => p.surse_din)
     .sort((a, b) => a.title.localeCompare(b.title, "ro"));
   const intrebari = intrebariAcasa(pesteMagazine());
-  // 14.11.2026: /alege aduce 77 din 86 de clicuri reale pe 7 zile; topurile n-aveau alt link din site (04.11).
-  const alege = toateCriteriile().map((c) => ({ slug: c.slug, titlu: c.titlu })).sort((x, y) => x.titlu.localeCompare(y.titlu, "ro"));
-  const listaTopuri = toateTopurile();
 
   return (
     <div className="bg-[var(--background)] text-[var(--foreground)]">
@@ -286,7 +253,7 @@ export default function Page() {
             </div>
             <Link href="/oferte-azi" className={`${LINK} hidden sm:block`}>Toate ofertele →</Link>
           </div>
-          <OferteAcasaClient oferte={oferte} liste={liste} numere={numere} filtre={filtre} />
+          <GrilaOferte {...grila} sursa="homepage" scurtPeTelefon />
           <Link href="/oferte-azi" className="mt-4 block text-center border border-[var(--border-strong)] hover:border-[var(--accent-text)]/60 rounded-xl py-3 text-sm font-bold transition-colors">
             Vezi toate cele {cuNumar(numere.toate, "ofertă", "oferte")} →
           </Link>
@@ -314,44 +281,19 @@ export default function Page() {
           </section>
         )}
 
-        {alege.length > 0 && (
-          <section aria-labelledby="alege-h">
-            <div className="flex items-end justify-between gap-4 mb-1">
-              <h2 id="alege-h" className={H2}>Alege după caracteristică</h2>
-              <Link href="/alege" className={LINK}>Toate →</Link>
-            </div>
-            <p className="text-sm text-[var(--text-soft)] mb-4">Produse cu prețul verificat pe site-ul magazinului, grupate după ce contează la cumpărare.</p>
-            <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-2 text-sm">
-              {alege.slice(0, 12).map((c) => (
-                <li key={c.slug}><Link href={`/alege/${c.slug}`} className="text-[var(--text-soft)] hover:text-[var(--accent-text)]">{c.titlu}</Link></li>
-              ))}
-            </ul>
-            {alege.length > 12 && (
-              <details className="mt-3">
-                <summary className="cursor-pointer text-sm font-bold text-[var(--accent-text)]">Toate cele {cuNumar(alege.length, "pagină", "pagini")}</summary>
-                <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-2 text-sm mt-3">
-                  {alege.slice(12).map((c) => (
-                    <li key={c.slug}><Link href={`/alege/${c.slug}`} className="text-[var(--text-soft)] hover:text-[var(--accent-text)]">{c.titlu}</Link></li>
-                  ))}
-                </ul>
-              </details>
-            )}
-          </section>
-        )}
-
         <section aria-labelledby="cat-h">
           <div className="flex items-end justify-between gap-4 mb-4">
             <h2 id="cat-h" className={H2}>Categorii</h2>
             <Link href="/categorii" className={LINK}>Toate →</Link>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2.5">
-            {categorii.map((s) => {
-              const nr = promoPeCategorie.get(s) || 0;
+            {categorii.map((c) => {
+              const nr = promoPeCategorie.get(c.slug) || 0;
               return (
-                <Link key={s} href={`/categorii/${s}`} className="flex items-center gap-2.5 bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--border-strong)] rounded-xl px-3 py-2.5 transition-colors">
-                  <CategoryIcon slug={s} size="sm" />
+                <Link key={c.slug} href={`/categorii/${c.slug}`} className="flex items-center gap-2.5 bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--border-strong)] rounded-xl px-3 py-2.5 transition-colors">
+                  <CategoryIcon slug={c.slug} size="sm" />
                   <span className="min-w-0">
-                    <span className="block text-sm font-bold leading-tight truncate">{CATEGORII[s]}</span>
+                    <span className="block text-sm font-bold leading-tight truncate">{c.label}</span>
                     <span className="block text-xs text-[var(--text-muted)]">{nr > 0 ? `${cuNumar(nr, "magazin", "magazine")} cu oferte` : "Vezi magazinele"}</span>
                   </span>
                 </Link>
@@ -374,8 +316,7 @@ export default function Page() {
                 <Link key={m.magazin} href={hrefPopular.get(m.magazin) || `/cod-reducere/${m.magazin}`}
                   className="pop" title={nume} aria-label={insigna ? `${nume}: ${insigna}` : nume}>
                   {insigna && <span className={x?.cod ? "pop-b" : "pop-b pop-b-soft"} aria-hidden="true">{insigna}</span>}
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={m.logo_url} alt="" loading="lazy" decoding="async" />
+                  <LogoMagazin src={m.logo_url} nume={nume} />
                 </Link>
               );
             })}
@@ -404,20 +345,6 @@ export default function Page() {
               </details>
             )}
           </section>
-        )}
-
-        {listaTopuri.length > 0 && (
-          <nav aria-labelledby="top-h">
-            <div className="flex items-end justify-between gap-4 mb-4">
-              <h2 id="top-h" className={H2}>Topuri de produse</h2>
-              <Link href="/top" className={LINK}>Toate →</Link>
-            </div>
-            <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-2 text-sm">
-              {listaTopuri.map((t) => (
-                <li key={t.slug}><Link href={`/top/${t.slug}`} className="text-[var(--text-soft)] hover:text-[var(--accent-text)]">{t.titlu}</Link></li>
-              ))}
-            </ul>
-          </nav>
         )}
 
         <section aria-labelledby="faq-h" className="max-w-3xl">

@@ -1,9 +1,8 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import OferteNisa, { AntetNisa } from "../components/OferteNisa";
 import fs from "fs";
 import path from "path";
-import MagazinCard from "../components/MagazinCard";
-import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
@@ -14,9 +13,9 @@ interface Magazin {
 }
 
 export const metadata: Metadata = {
-  title: "Reduceri Echipamente Pescuit 2026 — Undițe, Năluci",
-  description: "Coduri reducere magazine pescuit România: Pescar Expert, Decathlon. Undițe, mulinete, năluci, corturi carp — reduceri verificate, livrare rapidă.",
-  keywords: ["reduceri pescuit", "cod reducere pescar expert", "echipamente pescuit ieftine", "undiță reducere", "năluci reducere", "pescuit românia online"],
+  title: "Reduceri Echipamente Pescuit 2026 — Undite, Năluci",
+  description: "Coduri reducere magazine pescuit România: Pescar Expert, Decathlon. Undite, mulinete, năluci, corturi carp — reduceri verificate, livrare rapida.",
+  keywords: ["reduceri pescuit", "cod reducere pescar expert", "echipamente pescuit ieftine", "undita reducere", "năluci reducere", "pescuit românia online"],
   alternates: { canonical: "https://amcupon.ro/pescuit" },
   openGraph: {
     title: "Reduceri Echipamente Pescuit 2026 | AmCupon.ro",
@@ -32,7 +31,7 @@ const TOP_PESCUIT = ["pescar-expert.ro"];
 const FALLBACK_SPORTS = ["decathlon.ro", "sportisimo.ro"];
 
 const ECHIPAMENTE = [
-  { emoji: "🎣", label: "Undițe & Lansete", desc: "Crap, păstrăv, feeder, spinning, match" },
+  { emoji: "🎣", label: "Undite & Lansete", desc: "Crap, păstrăv, feeder, spinning, match" },
   { emoji: "🪝", label: "Năluci & Momeli", desc: "Siliconi, wobblere, twistere, popere" },
   { emoji: "🌀", label: "Mulinete", desc: "Spinning, staționar, multiplier, baitcasting" },
   { emoji: "🎒", label: "Genți & Carry-all", desc: "Transport echipament, tacklebox, rucsacuri" },
@@ -41,8 +40,6 @@ const ECHIPAMENTE = [
 ];
 
 const BRANDURI = ["Daiwa", "Okuma", "Trabucco", "Prologic", "Delphin", "Jaxon", "Nash", "Fox"];
-
-
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -81,28 +78,19 @@ export default function PescuitPage() {
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-emerald-800 via-green-800 to-[var(--surface)] text-[var(--foreground)] py-12 px-4">
-          <div className="max-w-6xl mx-auto text-center">
-            <div className="text-5xl mb-4">🎣</div>
-            <h1 className="text-3xl md:text-4xl font-black mb-3">
-              Echipamente Pescuit cu Reducere {an}
-            </h1>
-            <p className="text-emerald-100 text-lg mb-6 max-w-xl mx-auto">
-              Undițe, mulinete, năluci și accesorii la prețuri mai mici. Reduceri active pentru pasionații de pescuit din România.
-            </p>
-            <div className="flex flex-wrap justify-center gap-2">
-              {BRANDURI.map(b => (
-                <span key={b} className="bg-[var(--surface-alt)] text-[var(--foreground)] text-sm font-semibold px-4 py-1.5 rounded-full border border-[var(--border-strong)]">
-                  {b}
-                </span>
-              ))}
-            </div>
-          </div>
-        </section>
+        <AntetNisa titlu={<>Echipamente Pescuit cu Reducere {an}</>}>Undite, mulinete, năluci și accesorii la preturi mai mici. Reduceri active pentru pasionații de pescuit din România.</AntetNisa>
+        <OferteNisa magazine={magazine} titlu="Magazine pescuit cu reduceri active" />
+        <NisaProduse
+          merchantSlugs={allSlugs}
+          potrivire={/^(lanseta|mulineta|undita|naluca|naluci|vobler|fir (textil|monofilament)|momeala|nada|feeder|minciog|juvelnic|avertizor|swinger|sezlong de pescuit|scaun de pescuit|cort de pescuit|cutie (de )?pescuit)\b/}
+          titlu="Echipamente de pescuit de la parteneri"
+          culoareAccent="emerald"
+          limit={12}
+        />
 
         {/* CATEGORII ECHIPAMENTE */}
         <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[var(--foreground)] mb-6 text-center">Ce găsești la prețuri mai mici</h2>
+          <h2 className="text-xl font-black text-[var(--foreground)] mb-6 text-center">Ce găsești la preturi mai mici</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {ECHIPAMENTE.map(e => (
               <div key={e.label} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5 hover:shadow-md transition-all">
@@ -115,35 +103,11 @@ export default function PescuitPage() {
         </section>
 
         {/* MAGAZINE */}
-        <section className="max-w-6xl mx-auto px-4 pb-10">
-          <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Magazine pescuit cu reduceri active</h2>
-          {magazine.length === 0 ? (
-            <div className="text-center py-10 bg-[var(--surface)] rounded-xl">
-              <p className="text-2xl mb-3">🎣</p>
-              <p className="text-[var(--text-soft)] font-medium mb-2">Curând disponibil — verifică ofertele sport</p>
-              <Link href="/categorii/sport" className="inline-block bg-emerald-700 text-white font-bold px-6 py-3 rounded-xl hover:bg-emerald-500 transition-colors">
-                Sport & Outdoor →
-              </Link>
-            </div>
-          ) : (
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-              {magazine.map((m) => (
-              <MagazinCard key={m.magazin} m={m} />
-            ))}
-            </div>
-          )}
-        </section>
+        
 
         {/* PRODUSE din products.json */}
-        <NewsletterCTA />
 
-        <NisaProduse
-          merchantSlugs={allSlugs}
-          potrivire={/^(lanseta|mulineta|undita|naluca|naluci|vobler|fir (textil|monofilament)|momeala|nada|feeder|minciog|juvelnic|avertizor|swinger|sezlong de pescuit|scaun de pescuit|cort de pescuit|cutie (de )?pescuit)\b/}
-          titlu="Echipamente de pescuit de la parteneri"
-          culoareAccent="emerald"
-          limit={12}
-        />
+        
 
         {/* SEO TEXT */}
         <section className="bg-[var(--surface)] border-t border-[var(--border)] py-10 px-4">
@@ -151,20 +115,20 @@ export default function PescuitPage() {
             <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Cum alegi echipamentele de pescuit</h2>
             <div className="space-y-4 text-sm text-[var(--text-soft)] leading-relaxed">
               <div>
-                <h3 className="font-bold text-[var(--foreground)] mb-1">Undițe: spinning, feeder sau crap?</h3>
-                <p>Pentru început, o undiță spinning universală (2-3m, 10-30g) acoperă cele mai multe situații. Feeder-ul e optim pentru râuri și lacuri cu fund nisipos, iar setup-ul de crap necesită investiție mai mare dar oferă sesiuni lungi și capturi mari.</p>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Undite: spinning, feeder sau crap?</h3>
+                <p>Pentru început, o undita spinning universala (2-3m, 10-30g) acoperă cele mai multe situații. Feeder-ul e optim pentru râuri și lacuri cu fund nisipos, iar setup-ul de crap necesita investiție mai mare dar oferă sesiuni lungi și capturi mari.</p>
               </div>
               <div>
-                <h3 className="font-bold text-[var(--foreground)] mb-1">Branduri de încredere la prețuri corecte</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Branduri de încredere la preturi corecte</h3>
                 <p>Daiwa și Okuma oferă cel mai bun raport calitate-preț pentru începători și intermediari. Trabucco e preferat la pescuitul la feeder. Prologic și Delphin au accesorii excelente. Fox și Nash sunt pentru crap-iști serioși cu buget dedicat.</p>
               </div>
               <div>
                 <h3 className="font-bold text-[var(--foreground)] mb-1">Sfaturi pentru economii la echipamente {an}</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
-                  <li>Sezonul off (iarnă) aduce reduceri de 20-40% la undițe și mulinete</li>
+                  <li>Sezonul off (iarna) aduce reduceri de 20-40% la undite și mulinete</li>
                   <li>Codurile de reducere de la Pescar Expert se pot combina cu promoțiile active</li>
-                  <li>Kit-urile complete costă mai puțin decât componentele cumpărate separat</li>
-                  <li>Verifică AmCupon zilnic — reducerile la sport expiră rapid</li>
+                  <li>Kit-urile complete costa mai puțin decât componentele cumpărate separat</li>
+                  <li>Verifica AmCupon zilnic — reducerile la sport expira rapid</li>
                 </ul>
               </div>
             </div>
@@ -172,31 +136,9 @@ export default function PescuitPage() {
         </section>
 
         {/* LINK-URI INRUDITE */}
-        <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Explorează și alte categorii</h2>
-          <div className="flex flex-wrap gap-2">
-            {[
-              { href: "/casa", label: "🌿 Casă & Grădină" },
-              { href: "/decathlon", label: "🏃 Decathlon" },
-              { href: "/flori", label: "💐 Flori & Buchete" },
-              { href: "/top-reduceri", label: "🏆 Top Reduceri" },
-              { href: "/categorii", label: "📂 Categorii" },
-              { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
-            ].map(l => (
-              <a key={l.href} href={l.href}
-                className="bg-[var(--surface)] hover:bg-[var(--surface-alt)] hover:text-emerald-300 text-[var(--text-soft)] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[var(--border)] hover:border-emerald-400">
-                {l.label}
-              </a>
-            ))}
-          </div>
-        </section>
+        
 
-        <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)] mt-4">
-          © {an} AmCupon.ro ·{" "}
-          <Link href="/blog" className="hover:text-[var(--accent-text)]">Blog</Link>{" · "}
-          <Link href="/categorii" className="hover:text-[var(--accent-text)]">Categorii</Link>{" · "}
-          <Link href="/" className="hover:text-[var(--accent-text)]">Acasă</Link>
-        </footer>
+        
       </div>
     </>
   );

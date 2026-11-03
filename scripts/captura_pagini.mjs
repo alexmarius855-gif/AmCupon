@@ -53,7 +53,8 @@ await cdp("Runtime.enable");
 await cdp("Page.addScriptToEvaluateOnNewDocument", { source: "try{localStorage.setItem('cookie_consent','refuz');localStorage.setItem('nl_subscribed','1')}catch(e){}" });
 
 const MASOARA = `(() => {
-  const rgb = (s) => { const m = s.match(/[\\d.]+/g); return m ? m.map(Number) : [0,0,0,1]; };
+  const cx = Object.assign(document.createElement('canvas'), { width: 1, height: 1 }).getContext('2d', { willReadFrequently: true });
+  const rgb = (s) => { cx.clearRect(0,0,1,1); cx.fillStyle = s; cx.fillRect(0,0,1,1); const d = cx.getImageData(0,0,1,1).data; return [d[0],d[1],d[2],d[3]/255]; };
   const lum = ([r,g,b]) => { const f = (c) => { c/=255; return c<=.03928?c/12.92:Math.pow((c+.055)/1.055,2.4); }; return .2126*f(r)+.7152*f(g)+.0722*f(b); };
   const peste = (a, f) => { const al = a[3] ?? 1; return [0,1,2].map((i) => a[i]*al + f[i]*(1-al)); };
   const fundal = (el) => { const st = []; for (let e = el; e; e = e.parentElement) { const c = getComputedStyle(e); if (c.backgroundImage !== 'none') return null; const b = rgb(c.backgroundColor); const a = b[3] ?? 1; if (a > 0) { st.push(b); if (a >= 1) break; } } let r = [13,15,18]; for (const b of st.reverse()) r = peste(b, r); return r; };
@@ -90,7 +91,9 @@ for (const p of pagini) {
     // Imaginile cu loading="lazy" se incarca doar cand ajung pe ecran; fara asta, captura intreaga le arata goale.
     await cdp("Runtime.evaluate", { awaitPromise: true, expression: `(async()=>{const h=document.documentElement.scrollHeight;for(let y=0;y<h;y+=600){scrollTo(0,y);await new Promise(r=>setTimeout(r,120))}scrollTo(0,0);await new Promise(r=>setTimeout(r,500))})()` });
     const v = await cdp("Runtime.evaluate", { expression: MASOARA, returnByValue: true });
+    if (!v.result?.result?.value) { console.log(`${p} @${l.w}: NU S-A PUTUT MASURA`); rau++; continue; }
     const d = JSON.parse(v.result.result.value);
+    if (d.dom < 60) { console.log(`${p} @${l.w}: pagina n-a raspuns (dom ${d.dom})`); rau++; continue; }
     rezultat[p][l.w] = d;
     if (d.scrollOrizontal > 0) rau++;
     console.log(`${p} @${l.w}: ${d.inaltime}px, dom ${d.dom}, scroll orizontal ${d.scrollOrizontal}${d.iesite.length ? ", iesite: " + d.iesite.join("; ") : ""}${d.contrast.length ? "\n   contrast: " + d.contrast.join("\n             ") : ""}`);

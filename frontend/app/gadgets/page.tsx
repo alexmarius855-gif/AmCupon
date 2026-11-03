@@ -1,10 +1,9 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import OferteNisa, { AntetNisa } from "../components/OferteNisa";
 import fs from "fs";
 import path from "path";
 import NisaProduse from "../components/NisaProduse";
-import MagazinCard from "../components/MagazinCard";
-import NewsletterCTA from "../components/NewsletterCTA";
 import { esteInCategorie } from "../../lib/categoriiNisa";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
@@ -17,7 +16,7 @@ interface Magazin {
 export const metadata: Metadata = {
   title: "Gadgets & Accesorii Tech 2026 — Coduri Reducere | AmCupon.ro",
   description: "Gadgets, smartwatch-uri, căști wireless, smart home, drone și accesorii tech — coduri de reducere și oferte active de la magazinele partenere.",
-  keywords: ["gadgets reducere", "smartwatch ieftin", "căști wireless reducere", "drone reducere", "smart home românia", "accesorii tech cod reducere"],
+  keywords: ["gadgets reducere", "smartwatch ieftin", "casti wireless reducere", "drone reducere", "smart home românia", "accesorii tech cod reducere"],
   alternates: { canonical: "https://amcupon.ro/gadgets" },
   openGraph: { title: "Gadgets & Tech — Coduri Reducere | AmCupon.ro", url: "https://amcupon.ro/gadgets", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
@@ -47,7 +46,6 @@ export default function GadgetsPage() {
     esteInCategorie(m, CAT_GADGET)
   ).slice(0, 20);
   const magazine = [...topGadget, ...restTech];
-  const cuPromo = magazine.filter(m => m.are_promotie);
 
   return (
     <>
@@ -63,27 +61,15 @@ export default function GadgetsPage() {
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-[#c3dd2c] via-[#ddf93c] to-[#c3dd2c] text-[#0c1000] py-12 px-4">
-          <div className="max-w-6xl mx-auto text-center">
-            <div className="text-5xl mb-4">📡</div>
-            <h1 className="text-3xl md:text-4xl font-black mb-3">Gadgets & Tech {an}</h1>
-            <p className="text-[#2a2f10] text-lg mb-8 max-w-xl mx-auto">
-              Smartwatch-uri, căști wireless, drone, smart home — coduri de reducere și oferte active de la magazinele partenere
-            </p>
-            <div className="grid grid-cols-3 gap-4 max-w-sm mx-auto">
-              {[
-                { val: `${magazine.length}+`, label: "Magazine" },
-                { val: `${cuPromo.length}+`, label: "Oferte active" },
-                { val: "Zilnic", label: "Actualizat" },
-              ].map(s => (
-                <div key={s.label} className="bg-[var(--surface-alt)] rounded-xl py-3 px-2">
-                  <div className="text-xl font-black">{s.val}</div>
-                  <div className="text-xs text-[var(--accent-text)]">{s.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <AntetNisa titlu={<>Gadgets & Tech {an}</>}>Smartwatch-uri, căști wireless, drone, smart home — coduri de reducere și oferte active de la magazinele partenere</AntetNisa>
+        <OferteNisa magazine={magazine} titlu="Magazine de gadgets și electronice" />
+        <NisaProduse
+          merchantSlugs={[]}
+          teme={["casti-wireless", "smartwatch-uri"]}
+          titlu="Căști wireless și smartwatch-uri de la parteneri"
+          culoareAccent="blue"
+          limit={12}
+        />
 
         {/* CATEGORII GADGET */}
         <section className="bg-[var(--surface)] border-b border-[var(--border)] py-6 px-4">
@@ -110,18 +96,7 @@ export default function GadgetsPage() {
 
         <div className="max-w-6xl mx-auto px-4 py-8">
           {/* MAGAZINE */}
-          <section className="mb-10">
-            <div className="flex items-center gap-3 mb-5">
-              <h2 className="text-xl font-black text-[var(--foreground)]">Magazine de gadgets și electronice</h2>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {magazine.map((m) => (
-                <MagazinCard key={m.magazin} m={m} />
-              ))}
-            </div>
-          </section>
-
-          <NewsletterCTA />
+          
 
           {/* ARTICOLE */}
           <section className="bg-[var(--surface)] rounded-xl p-6">
@@ -138,38 +113,11 @@ export default function GadgetsPage() {
           </section>
         </div>
 
-        <NisaProduse
-          merchantSlugs={[]}
-          teme={["casti-wireless", "smartwatch-uri"]}
-          titlu="Căști wireless și smartwatch-uri de la parteneri"
-          culoareAccent="blue"
-          limit={12}
-        />
+        
 
-        <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Explorează și alte categorii</h2>
-          <div className="flex flex-wrap gap-2">
-            {[
-              { href: "/electronice", label: "💻 Electronice" },
-              { href: "/sport", label: "🏃 Sport" },
-              { href: "/moto", label: "🚗 Auto-Moto" },
-              { href: "/fashion", label: "👗 Fashion" },
-              { href: "/categorii", label: "📂 Categorii" },
-              { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
-            ].map(l => (
-              <a key={l.href} href={l.href}
-                className="bg-[var(--surface)] hover:bg-[var(--surface-alt)] hover:text-[var(--accent-text)] text-[var(--text-soft)] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[var(--border)] hover:border-[#c9ced5]">
-                {l.label}
-              </a>
-            ))}
-          </div>
-        </section>
+        
 
-        <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)] mt-4">
-          © {an} AmCupon.ro · <Link href="/" className="hover:text-[var(--accent-text)]">Acasă</Link>
-          {" · "}<Link href="/black-friday" className="hover:text-[var(--accent-text)]">Black Friday</Link>
-          {" · "}<Link href="/moto" className="hover:text-[var(--accent-text)]">Auto-Moto</Link>
-        </footer>
+        
       </div>
     </>
   );

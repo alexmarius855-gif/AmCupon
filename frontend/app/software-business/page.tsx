@@ -1,8 +1,8 @@
 import { Metadata } from "next";
+import OferteNisa, { AntetNisa } from "../components/OferteNisa";
 import Link from "next/link";
 import fs from "fs";
 import path from "path";
-import MagazinCard from "../components/MagazinCard";
 import { linkPlatit } from "@/lib/linkPlatit";
 
 export const metadata: Metadata = {
@@ -25,7 +25,7 @@ const TOOLS_INTL = [
   {
     categ: "SEO & Marketing",
     items: [
-      { name: "Semrush", desc: "Unealtă SEO completă: cercetare de cuvinte, audit de site, analiza concurenței.", badge: "SEO all-in-one", url: "https://www.semrush.com" },
+      { name: "Semrush", desc: "Unealtă SEO completă: cercetare de cuvinte, audit de site, analiza concurenței.", badge: "SEO all-în-one", url: "https://www.semrush.com" },
       { name: "Canva Pro", desc: "Design online pentru social media, prezentări și materiale de marketing.", badge: "Design online", url: "https://www.canva.com" },
       { name: "GetResponse", desc: "Platformă de email marketing: newslettere, automatizări, landing pages și webinarii.", badge: "Email marketing", url: "https://www.awin1.com/cread.php?awinmid=3142111&awinaffid=101829567&clickref=" },
     ],
@@ -70,42 +70,11 @@ export default function SoftwareBusinessPage() {
   return (
     <div className="min-h-screen bg-[var(--background)]">
       {/* Hero */}
-      <section className="relative bg-[var(--background)] border-b border-[var(--border)] overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(13,148,136,0.10) 0%, transparent 65%)" }} />
-        <div className="relative max-w-4xl mx-auto px-4 pt-12 pb-10 text-center">
-          <nav className="flex justify-center gap-2 text-xs text-[var(--text-muted)] mb-8">
-            <Link href="/" className="hover:text-[var(--text-soft)]">AmCupon.ro</Link>
-            <span>/</span>
-            <Link href="/servicii" className="hover:text-[var(--text-soft)]">Servicii</Link>
-            <span>/</span>
-            <span className="text-[var(--text-soft)]">Software Business</span>
-          </nav>
-          <div className="text-5xl mb-4">📊</div>
-          <h1 className="text-4xl md:text-5xl font-black text-[var(--foreground)] mb-4">
-            Software pentru <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #c3dd2c, #ddf93c)" }}>Business</span>
-          </h1>
-          <p className="text-[var(--text-soft)] text-lg max-w-2xl mx-auto">
-            Unelte SaaS pentru firme — SEO, design, email marketing, productivitate, securitate — și partenerii AmCupon din categoria software, cu ofertele lor active.
-          </p>
-        </div>
-      </section>
+      <AntetNisa titlu={<>Software pentru Business</>}>Unelte SaaS pentru firme — SEO, design, email marketing, productivitate, securitate — și partenerii AmCupon din categoria software, cu ofertele lor active.</AntetNisa>
+        <OferteNisa magazine={parteneri} titlu="Parteneri AmCupon din categoria software" />
 
       {/* Parteneri din categoria software */}
-      {parteneri.length > 0 && (
-        <section className="max-w-5xl mx-auto px-4 py-8">
-          <div className="flex items-end justify-between gap-4 mb-5">
-            <h2 className="text-xl font-black text-[var(--foreground)]">Parteneri AmCupon din categoria software</h2>
-            {software.length > MAX_PARTENERI && (
-              <Link href="/categorii/software" className="text-xs font-bold text-[var(--accent-text)] hover:text-[var(--accent-text)] shrink-0">
-                Toți cei {software.length} →
-              </Link>
-            )}
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-            {parteneri.map(m => <MagazinCard key={m.magazin} m={m} />)}
-          </div>
-        </section>
-      )}
+      
 
       {/* Tools internationale */}
       {TOOLS_INTL.map(group => (

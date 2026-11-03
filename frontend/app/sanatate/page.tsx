@@ -1,9 +1,8 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import OferteNisa, { AntetNisa } from "../components/OferteNisa";
 import fs from "fs";
 import path from "path";
-import MagazinCard from "../components/MagazinCard";
-import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
 import { esteInCategorie } from "../../lib/categoriiNisa";
 
@@ -16,7 +15,7 @@ interface Magazin {
 
 export const metadata: Metadata = {
   title: "Cod Reducere Sănătate & Naturiste 2026 — Vitamine",
-  description: "Coduri de reducere și oferte la produse naturiste și suplimente de la magazinele partenere: Pronaturiste, GoldNutrition, Apiland și altele.",
+  description: "Coduri de reducere și oferte la produse naturiste și suplimente de la magazinele partenere: Pronaturiste, GoldNutrition, Apiland și altele. Vitamine, suplimente, bio.",
   keywords: ["cod reducere sănătate","reduceri suplimente","produse naturiste reducere","vitamine ieftine","goldnutrition cod cupon","pronaturiste reducere","suplimente online românia"],
   alternates: { canonical: "https://amcupon.ro/sanatate" },
   openGraph: { title: "Sănătate & Naturiste 2026 | AmCupon.ro", url: "https://amcupon.ro/sanatate", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
@@ -25,16 +24,6 @@ export const metadata: Metadata = {
 const TOP_SANATATE = ["pronaturiste.ro","vitamix.ro","goldnutrition.ro","apiland.ro","botaniq.ro","republicabio.ro","zephyrlabs.ro","tratamentenaturiste.ro","vioi.ro","biomag.ro","minuneanaturii.ro","nutraceutics.ro"];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_SANATATE = ["sanatate"];
-
-const AVANTAJE = [
-  { icon: "💊", titlu: "Vitamine & Minerale", desc: "Multivitamine, vitamina D, C, zinc, magneziu" },
-  { icon: "🌿", titlu: "Produse Naturiste", desc: "Plante medicinale, tincturi, ceaiuri bio din surse naturale" },
-  { icon: "💪", titlu: "Suplimente Sport", desc: "Proteine, aminoacizi, creatină" },
-  { icon: "🧴", titlu: "Îngrijire Naturală", desc: "Cosmetice bio, creme naturale, uleiuri esențiale" },
-  { icon: "🫀", titlu: "Sănătate Cardiovasculară", desc: "Omega-3, coenzima Q10" },
-  { icon: "🧠", titlu: "Nootropice & Focus", desc: "Suplimente pentru memorie și concentrare" },
-];
-
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -78,65 +67,8 @@ export default function SanatatePage() {
         </nav>
 
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#c3dd2c] via-[#ddf93c] to-[#c3dd2c] text-[#0c1000] py-12 px-4">
-          <div className="max-w-6xl mx-auto text-center">
-            <div className="text-5xl mb-4">🌿</div>
-            <h1 className="text-3xl md:text-4xl font-black mb-3">Sănătate & Naturiste {an}</h1>
-            <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              Vitamine, suplimente și produse naturiste de la Pronaturiste, GoldNutrition, Apiland și alte magazine partenere, actualizate zilnic.
-            </p>
-            <div className="flex flex-wrap justify-center gap-2">
-              {["Vitamine","Suplimente Sport","Naturiste","Bio","Omega-3","Probiotice","Collagen"].map(c => (
-                <span key={c} className="bg-[var(--surface-alt)] text-[var(--foreground)] text-sm font-semibold px-4 py-1.5 rounded-full border border-[var(--border-strong)]">{c}</span>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Stats bar */}
-        <div className="bg-[var(--surface)] border-[var(--border)] py-3 px-4">
-          <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-6 text-sm">
-            <span className="text-[var(--accent-text)] font-semibold">
-              <span className="font-black text-[var(--accent-text)]">{magazine.length}</span> magazine sănătate
-            </span>
-            <span className="text-[var(--accent-text)] font-semibold">
-              <span className="font-black text-[var(--accent-text)]">{cuPromo.length}</span> cu promoții active
-            </span>
-            <span className="text-[var(--accent-text)] font-semibold">
-              &#10003; Actualizat zilnic
-            </span>
-          </div>
-        </div>
-
-        {/* Avantaje */}
-        <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[var(--foreground)] mb-6 text-center">Ce găsești la magazinele de sănătate online</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {AVANTAJE.map(a => (
-              <div key={a.titlu} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
-                <div className="text-3xl mb-2">{a.icon}</div>
-                <h3 className="font-bold text-[var(--foreground)] text-sm mb-1">{a.titlu}</h3>
-                <p className="text-xs text-[var(--text-soft)]">{a.desc}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Magazine */}
-        <section className="max-w-6xl mx-auto px-4 pb-10">
-          <div className="flex items-center gap-3 mb-5">
-            <h2 className="text-xl font-black text-[var(--foreground)]">Magazine sănătate cu reduceri active</h2>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-            {magazine.map((m) => (
-              <MagazinCard key={m.magazin} m={m} />
-            ))}
-          </div>
-        </section>
-
-        {/* Produse */}
-        <NewsletterCTA />
-
+        <AntetNisa titlu={<>Sănătate & Naturiste {an}</>}>Vitamine, suplimente și produse naturiste de la Pronaturiste, GoldNutrition, Apiland și alte magazine partenere, actualizate zilnic.</AntetNisa>
+        <OferteNisa magazine={magazine} titlu="Magazine sănătate cu reduceri active" />
         <NisaProduse
           merchantSlugs={["pronaturiste.ro","vitamix.ro","goldnutrition.ro","apiland.ro","botaniq.ro","republicabio.ro"]}
           catSlug="farmacie"
@@ -145,58 +77,61 @@ export default function SanatatePage() {
           limit={12}
         />
 
+        {/* Stats bar */}
+        <div className="bg-[var(--surface)] border-[var(--border)] py-3 px-4">
+          <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-6 text-sm">
+            <span className="text-[var(--accent-text)] font-semibold">
+              <span className="font-black text-[var(--accent-text)]">{magazine.length}</span> magazine sanatate
+            </span>
+            <span className="text-[var(--accent-text)] font-semibold">
+              <span className="font-black text-[var(--accent-text)]">{cuPromo.length}</span> cu promotii active
+            </span>
+            <span className="text-[var(--accent-text)] font-semibold">
+              &#10003; Actualizat zilnic
+            </span>
+          </div>
+        </div>
+
+        {/* Avantaje */}
+        
+
+        {/* Magazine */}
+        
+
+        {/* Produse */}
+
+        
+
         {/* Editorial */}
         <section className="bg-[var(--surface)] border-t border-[var(--border)] py-10 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Ghid: Suplimente și naturiste — ce să alegi</h2>
+            <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Ghid: Suplimente și naturiste — ce sa alegi</h2>
             <div className="space-y-4 text-sm text-[var(--text-soft)] leading-relaxed">
               <div>
                 <h3 className="font-bold text-[var(--foreground)] mb-1">Ce găsești la partenerii AmCupon</h3>
-                <p>Pronaturiste are produse naturiste (plante, tincturi, ceaiuri), GoldNutrition — suplimente pentru sportivi (proteine, aminoacizi, creatină), iar Apiland — produse apicole. Ofertele lor active apar mai sus.</p>
+                <p>Pronaturiste are produse naturiste (plante, tincturi, ceaiuri), GoldNutrition — suplimente pentru sportivi (proteine, aminoacizi, creatina), iar Apiland — produse apicole. Ofertele lor active apar mai sus.</p>
               </div>
               <div>
-                <h3 className="font-bold text-[var(--foreground)] mb-1">Înainte să cumperi suplimente</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-1">Înainte sa cumperi suplimente</h3>
                 <ul className="list-disc list-inside space-y-1 ml-2">
-                  <li><strong>Întreabă medicul</strong> — mai ales dacă iei un tratament sau ești însărcinată</li>
-                  <li><strong>Analize</strong> — de exemplu, nivelul vitaminei D se află dintr-un test de sânge</li>
-                  <li><strong>Doza</strong> — respectă doza de pe etichetă; mai mult nu înseamnă mai bine</li>
-                  <li><strong>Dieta</strong> — suplimentele alimentare nu înlocuiesc o dietă variată</li>
+                  <li><strong>Întreabă medicul</strong> — mai ales dacă iei un tratament sau ești insarcinata</li>
+                  <li><strong>Analize</strong> — de exemplu, nivelul vitaminei D se afla dintr-un test de sânge</li>
+                  <li><strong>Doza</strong> — respecta doza de pe eticheta; mai mult nu inseamna mai bine</li>
+                  <li><strong>Dieta</strong> — suplimentele alimentare nu înlocuiesc o dieta variata</li>
                 </ul>
               </div>
               <div>
                 <h3 className="font-bold text-[var(--foreground)] mb-1">Cum economisești la suplimente</h3>
-                <p>La promoții poți cumpăra pentru câteva luni — verifică data de expirare. Pachetele combo ies de obicei mai ieftin; compară prețul pe doză.</p>
+                <p>La promotii poti cumpara pentru cateva luni — verifica data de expirare. Pachetele combo ies de obicei mai ieftin; compara pretul pe doza.</p>
               </div>
             </div>
           </div>
         </section>
 
         {/* Internal links */}
-        <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Explorează și alte categorii</h2>
-          <div className="flex flex-wrap gap-2">
-            {[
-              { href: "/farmacie",   label: "💊 Farmacie Online" },
-              { href: "/sport",      label: "🏃 Sport & Fitness" },
-              { href: "/frumusete",  label: "💄 Frumusețe & Beauty" },
-              { href: "/animale",    label: "🐾 Animale de Companie" },
-              { href: "/copii",      label: "👶 Copii & Jucării" },
-              { href: "/oferte-azi", label: "🔥 Toate Ofertele de Azi" },
-            ].map(l => (
-              <a key={l.href} href={l.href}
-                className="bg-[var(--surface)] hover:bg-[var(--surface-alt)] hover:text-[var(--accent-text)] text-[var(--text-soft)] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[var(--border)] hover:border-[#c9ced5]">
-                {l.label}
-              </a>
-            ))}
-          </div>
-        </section>
+        
 
-        <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)] mt-4">
-          &copy; {an} AmCupon.ro &middot;{" "}
-          <Link href="/farmacie" className="hover:text-[var(--accent-text)]">Farmacie</Link>{" · "}
-          <Link href="/frumusete" className="hover:text-[var(--accent-text)]">Frumusețe</Link>{" · "}
-          <Link href="/categorii" className="hover:text-[var(--accent-text)]">Categorii</Link>
-        </footer>
+        
       </div>
     </>
   );

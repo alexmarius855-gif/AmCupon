@@ -1,9 +1,8 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import OferteNisa, { AntetNisa } from "../components/OferteNisa";
 import fs from "fs";
 import path from "path";
-import MagazinCard from "../components/MagazinCard";
-import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
 import { esteInCategorie, NISA_CATEGORII } from "../../lib/categoriiNisa";
 import { laParteneri } from "@/lib/cifreSite";
@@ -18,7 +17,7 @@ interface Magazin {
 export const metadata: Metadata = {
   title: "Gaming 2026 — Laptopuri, Monitoare și Periferice",
   description: "Echipament de gaming în 2026 — laptopuri, plăci video, monitoare, periferice — de la magazinele de electronice partenere AmCupon, actualizat zilnic.",
-  keywords: ["reduceri gaming", "laptop gaming ieftin", "placă video reducere", "monitor gaming reducere", "pcgarage cod reducere", "eMAG gaming reducere", "periferice gaming ieftine"],
+  keywords: ["reduceri gaming", "laptop gaming ieftin", "placa video reducere", "monitor gaming reducere", "pcgarage cod reducere", "emag gaming reducere", "periferice gaming ieftine"],
   alternates: { canonical: "https://amcupon.ro/gaming" },
   openGraph: { title: "Gaming 2026 | AmCupon.ro", url: "https://amcupon.ro/gaming", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
@@ -27,16 +26,16 @@ const TOP_GAMING = ["evomag.ro"];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_GAMING = ["electronice"];
 const CATEGORII_GAMING = [
-  { emoji: "💻", titlu: "Laptopuri Gaming", desc: "ASUS ROG, Lenovo Legion, MSI, Acer Nitro — performanță maximă portabilă" },
+  { emoji: "💻", titlu: "Laptopuri Gaming", desc: "ASUS ROG, Lenovo Legion, MSI, Acer Nitro — performanta maxima portabila" },
   { emoji: "🖥️", titlu: "Monitoare Gaming", desc: "144Hz, 240Hz, 4K — pentru gaming competitiv sau casual" },
   { emoji: "🎮", titlu: "Console & Jocuri", desc: "PS5, Xbox, Nintendo Switch, jocuri digitale" },
-  { emoji: "⌨️", titlu: "Periferice", desc: "Tastatură mecanică, mouse gaming, căști, controller wireless" },
-  { emoji: "🖱️", titlu: "Plăci Video", desc: "NVIDIA RTX, AMD Radeon — upgrade pentru FPS maxim" },
-  { emoji: "🔊", titlu: "Audio Gaming", desc: "Căști surround 7.1, microfoane, soundbar gaming" },
+  { emoji: "⌨️", titlu: "Periferice", desc: "Tastatura mecanica, mouse gaming, casti, controller wireless" },
+  { emoji: "🖱️", titlu: "Placi Video", desc: "NVIDIA RTX, AMD Radeon — upgrade pentru FPS maxim" },
+  { emoji: "🔊", titlu: "Audio Gaming", desc: "Casti surround 7.1, microfoane, soundbar gaming" },
 ];
 
 const CULORI_BADGE = ["bg-[#ddf93c]"];
-const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Gaming 2026","url":"https://amcupon.ro/gaming","description":"Echipament de gaming de la magazinele partenere — laptopuri, plăci video, monitoare, periferice" };
+const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Gaming 2026","url":"https://amcupon.ro/gaming","description":"Echipament de gaming de la magazinele partenere — laptopuri, placi video, monitoare, periferice" };
 
 export default function GamingPage() {
   const filePath = path.join(process.cwd(), "public", "output.json");
@@ -65,31 +64,15 @@ export default function GamingPage() {
         </nav>
 
         {/* Hero */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-[var(--surface)] via-[var(--surface)] to-[var(--background)] py-16 px-4">
-          <div className="absolute inset-0 pointer-events-none">
-            <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#ddf93c]/20 rounded-full blur-3xl" />
-            <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-[#ddf93c]/20 rounded-full blur-3xl" />
-            <div className="absolute inset-0" style={{backgroundImage:"radial-gradient(circle at 50% 50%, transparent 0%, rgba(15,23,42,0.6) 100%)"}} />
-          </div>
-          <div className="relative max-w-6xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 bg-[#ddf93c]/20 border border-[var(--accent-text)]/30 text-[var(--accent-text)] text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#ddf93c] animate-pulse"/>
-              Oferte actualizate zilnic
-            </div>
-            <div className="text-6xl mb-5 drop-shadow-2xl">🎮</div>
-            <h1 className="text-4xl md:text-5xl font-black text-[var(--foreground)] mb-4 tracking-tight">
-              Echipament Gaming <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #c3dd2c, #ddf93c)"}}>{an}</span>
-            </h1>
-            <p className="text-[var(--text-soft)] text-lg mb-8 max-w-xl mx-auto leading-relaxed">
-              Laptopuri gaming, plăci video, monitoare și periferice — oferte {laParteneri(NISA_CATEGORII.gaming)}, actualizate zilnic
-            </p>
-            <div className="flex flex-wrap justify-center gap-2 mb-6">
-              {["Laptop Gaming","Monitor 144Hz","Placă Video RTX","Mouse Gaming","Tastatură Mecanică","Căști Gaming","Controller PS5"].map(c => (
-                <span key={c} className="bg-[var(--surface-alt)] border border-[var(--border-strong)] text-[var(--text-soft)] text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
-              ))}
-            </div>
-          </div>
-        </section>
+        <AntetNisa titlu={<>Echipament Gaming {an}</>}>Laptopuri gaming, placi video, monitoare și periferice — oferte {laParteneri(NISA_CATEGORII.gaming)}, actualizate zilnic</AntetNisa>
+        <OferteNisa magazine={magazine} titlu="Magazine gaming și electronice" />
+        <NisaProduse
+          merchantSlugs={[]}
+          potrivire={/^(mouse|tastatura|casti|headset|controller|gamepad|maneta|volan|mousepad|scaun)\b[^,]*\bgaming\b/}
+          titlu="Produse gaming de la parteneri"
+          culoareAccent="indigo"
+          limit={12}
+        />
 
         {/* Categorii gaming */}
         <section className="max-w-6xl mx-auto px-4 py-12">
@@ -112,29 +95,9 @@ export default function GamingPage() {
         </section>
 
         {/* Magazine */}
-        <section className="max-w-6xl mx-auto px-4 pb-12">
-          <div className="flex items-center justify-between mb-6">
-            <div>
-              <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-1">MAGAZINE PARTENERE</p>
-              <h2 className="text-xl font-black text-[var(--foreground)]">Magazine gaming și electronice</h2>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-            {magazine.map((m) => (
-              <MagazinCard key={m.magazin} m={m} />
-            ))}
-          </div>
-        </section>
-        <NewsletterCTA />
+        
 
-
-        <NisaProduse
-          merchantSlugs={[]}
-          potrivire={/^(mouse|tastatura|casti|headset|controller|gamepad|maneta|volan|mousepad|scaun)\b[^,]*\bgaming\b/}
-          titlu="Produse gaming de la parteneri"
-          culoareAccent="indigo"
-          limit={12}
-        />
+        
 
         {/* Ghid */}
         <section className="bg-[var(--surface)] border-t border-[var(--border)] py-12 px-4">
@@ -143,15 +106,15 @@ export default function GamingPage() {
             <h2 className="text-2xl font-black text-[var(--foreground)] mb-7">Cum cumperi echipament gaming mai ieftin</h2>
             <div className="space-y-6 text-sm text-[var(--text-soft)] leading-relaxed">
               <div className="bg-[var(--surface-alt)] border border-[var(--border-strong)] rounded-xl p-5">
-                <h3 className="font-bold text-[var(--foreground)] mb-2 text-base">Cum compari prețurile</h3>
-                <p>Prețurile la componente și la laptopuri de gaming diferă de la un magazin la altul și se schimbă des. Compară același model (codul exact al produsului) în mai multe magazine înainte să cumperi; pe AmCupon găsești ofertele partenerilor, actualizate zilnic.</p>
+                <h3 className="font-bold text-[var(--foreground)] mb-2 text-base">Cum compari preturile</h3>
+                <p>Preturile la componente si la laptopuri de gaming difera de la un magazin la altul si se schimba des. Compara acelasi model (codul exact al produsului) in mai multe magazine inainte sa cumperi; pe AmCupon gasesti ofertele partenerilor, actualizate zilnic.</p>
               </div>
               <div className="bg-[var(--surface-alt)] border border-[var(--border-strong)] rounded-xl p-5">
-                <h3 className="font-bold text-[var(--foreground)] mb-3 text-base">Cel mai bun moment să cumperi echipament gaming</h3>
+                <h3 className="font-bold text-[var(--foreground)] mb-3 text-base">Cel mai bun moment sa cumperi echipament gaming</h3>
                 <ul className="space-y-2">
                   {[
                     ["Black Friday (noiembrie)","reduceri la laptopuri de gaming și monitoare"],
-                    ["Lansarea generației noi","când apare o serie nouă de plăci video, modelele vechi se ieftinesc de obicei"],
+                    ["Lansarea generației noi","când apare o serie noua de placi video, modelele vechi se ieftinesc de obicei"],
                   ].map(([bold, text]) => (
                     <li key={bold} className="flex gap-2">
                       <span className="text-[var(--accent-text)] mt-0.5 shrink-0">→</span>
@@ -161,8 +124,8 @@ export default function GamingPage() {
                 </ul>
               </div>
               <div className="bg-[var(--surface-alt)] border border-[var(--border-strong)] rounded-xl p-5">
-                <h3 className="font-bold text-[var(--foreground)] mb-2 text-base">Ce să cauți la un laptop de gaming de buget</h3>
-                <p>Placă video dedicată (de exemplu RTX 4050 sau RTX 5050), cel puțin 16 GB RAM și SSD de 512 GB. Seriile de buget sunt Acer Nitro, Lenovo LOQ, ASUS TUF și HP Victus — compară-le pe aceeași configurație.</p>
+                <h3 className="font-bold text-[var(--foreground)] mb-2 text-base">Ce sa cauți la un laptop de gaming de buget</h3>
+                <p>Placa video dedicata (de exemplu RTX 4050 sau RTX 5050), cel puțin 16 GB RAM și SSD de 512 GB. Seriile de buget sunt Acer Nitro, Lenovo LOQ, ASUS TUF și HP Victus — compara-le pe aceeași configurație.</p>
               </div>
             </div>
           </div>
@@ -170,7 +133,7 @@ export default function GamingPage() {
 
         {/* Related */}
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest mb-4">EXPLOREAZĂ ȘI</p>
+          <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest mb-4">EXPLOREAZĂ SI</p>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/electronice", label: "📱 Electronice" },
@@ -187,12 +150,7 @@ export default function GamingPage() {
           </div>
         </section>
 
-        <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)] mt-4">
-          &copy; {an} AmCupon.ro &middot;{" "}
-          <Link href="/electronice" className="hover:text-[var(--accent-text)] transition-colors">Electronice</Link>{" · "}
-          <Link href="/gadgets" className="hover:text-[var(--accent-text)] transition-colors">Gadgets</Link>{" · "}
-          <Link href="/categorii" className="hover:text-[var(--accent-text)] transition-colors">Categorii</Link>
-        </footer>
+        
       </div>
     </>
   );

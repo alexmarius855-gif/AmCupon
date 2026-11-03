@@ -1,9 +1,8 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import OferteNisa, { AntetNisa } from "../components/OferteNisa";
 import fs from "fs";
 import path from "path";
-import MagazinCard from "../components/MagazinCard";
-import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
 import { esteInCategorie } from "../../lib/categoriiNisa";
 
@@ -16,7 +15,7 @@ interface Magazin {
 
 export const metadata: Metadata = {
   title: "Idei de Cadouri 2026 — Reduceri la Cadouri Online",
-  description: "Idei de cadouri pentru orice ocazie: ziua de naștere, aniversare, Crăciun, Valentine's Day.",
+  description: "Idei de cadouri pentru orice ocazie: ziua de naștere, aniversare, Crăciun, Valentine's Day. Coduri de reducere și oferte active la jucării, fashion, beauty, electronice și bijuterii, de la magazinele partenere.",
   keywords: ["idei cadouri", "cadouri reducere", "cadou ziua nașterii", "cadou crăciun", "cadouri online ieftine", "voucher cadou românia", "cod reducere cadouri"],
   alternates: { canonical: "https://amcupon.ro/idei-cadouri" },
   openGraph: { title: "Idei Cadouri cu Reducere 2026 | AmCupon.ro", url: "https://amcupon.ro/idei-cadouri", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
@@ -28,17 +27,6 @@ const TOP_CADOURI = [
 ];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_CADOURI = ["cadouri-flori"];
-
-const OCAZII = [
-  { emoji:"🎂", label:"Ziua de naștere", culoare:"bg-[#ddf93c] text-[var(--accent-text)]" },
-  { emoji:"💕", label:"Valentine's Day", culoare:"bg-red-100 text-red-700" },
-  { emoji:"🎄", label:"Crăciun", href:"/craciun", culoare:"bg-green-100 text-[var(--accent-text)]" },
-  { emoji:"👩", label:"8 Martie", culoare:"bg-[#ddf93c] text-[var(--accent-text)]" },
-  { emoji:"🐣", label:"Paște", culoare:"bg-yellow-100 text-[var(--accent-text)]" },
-  { emoji:"👫", label:"Aniversare", culoare:"bg-[#ddf93c] text-[var(--accent-text)]" },
-  { emoji:"🎓", label:"Absolvire", culoare:"bg-[#ddf93c] text-[var(--accent-text)]" },
-  { emoji:"🏡", label:"Inaugurare casă", culoare:"bg-emerald-100 text-[var(--accent-text)]" },
-];
 
 const IDEI_PER_PROFIL = [
   {
@@ -92,30 +80,15 @@ export default function IdeiCadouriPage() {
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-[#c3dd2c] via-[#ddf93c] to-[#c3dd2c] text-[#0c1000] py-12 px-4">
-          <div className="max-w-6xl mx-auto text-center">
-            <div className="text-5xl mb-4">🎁</div>
-            <h1 className="text-3xl md:text-4xl font-black mb-3">Idei de Cadouri {an}</h1>
-            <p className="text-[#2a2f10] text-lg mb-8 max-w-xl mx-auto">
-              Cadoul perfect pentru orice ocazie, la prețuri reduse — jucării, fashion, beauty, electronice, cărți
-            </p>
-            <div className="flex flex-wrap justify-center gap-2">
-              {OCAZII.map(o => (
-                o.href ? (
-                  <a key={o.label} href={o.href}
-                    className="flex items-center gap-1.5 bg-[var(--surface-alt)] hover:bg-[var(--surface-high)] text-[var(--foreground)] font-semibold text-sm px-4 py-2 rounded-full transition-colors border border-[var(--border-strong)]">
-                    {o.emoji} {o.label}
-                  </a>
-                ) : (
-                  <span key={o.label}
-                    className="flex items-center gap-1.5 bg-[var(--surface-alt)] text-[var(--foreground)] font-semibold text-sm px-4 py-2 rounded-full border border-[var(--border-strong)]">
-                    {o.emoji} {o.label}
-                  </span>
-                )
-              ))}
-            </div>
-          </div>
-        </section>
+        <AntetNisa titlu={<>Idei de Cadouri {an}</>}>Cadoul perfect pentru orice ocazie, la prețuri reduse — jucării, fashion, beauty, electronice, cărți</AntetNisa>
+        <OferteNisa magazine={magazine} titlu="Magazine cu reduceri la cadouri" />
+        <NisaProduse
+          merchantSlugs={["noriel.ro","notino.ro","elefant.ro","floria.ro"]}
+          catSlug="bijuterii"
+          titlu="Idei de cadouri de la parteneri"
+          culoareAccent="indigo"
+          limit={12}
+        />
 
         {/* IDEI PER PROFIL */}
         <section className="max-w-6xl mx-auto px-4 py-10">
@@ -141,27 +114,9 @@ export default function IdeiCadouriPage() {
         </section>
 
         {/* MAGAZINE CU REDUCERI */}
-        <section className="max-w-6xl mx-auto px-4 pb-10">
-          <div className="flex items-center gap-3 mb-5">
-            
-            <h2 className="text-xl font-black text-[var(--foreground)]">Magazine cu reduceri la cadouri</h2>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-            {magazine.map((m) => (
-              <MagazinCard key={m.magazin} m={m} />
-            ))}
-          </div>
-        </section>
-        <NewsletterCTA />
+        
 
-
-        <NisaProduse
-          merchantSlugs={["noriel.ro","notino.ro","elefant.ro","floria.ro"]}
-          catSlug="bijuterii"
-          titlu="Idei de cadouri de la parteneri"
-          culoareAccent="indigo"
-          limit={12}
-        />
+        
 
         {/* SEO CONTENT */}
         <section className="bg-[var(--surface)] border-t border-[var(--border)] py-10 px-4">
@@ -190,30 +145,9 @@ export default function IdeiCadouriPage() {
           </div>
         </section>
 
-        <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Explorează și alte categorii</h2>
-          <div className="flex flex-wrap gap-2">
-            {[
-              { href: "/fashion", label: "👗 Fashion" },
-              { href: "/frumusete", label: "💄 Frumusețe" },
-              { href: "/parfumuri", label: "🌹 Parfumuri" },
-              { href: "/carti", label: "📚 Cărți" },
-              { href: "/copii", label: "👶 Copii" },
-              { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
-            ].map(l => (
-              <a key={l.href} href={l.href}
-                className="bg-[var(--surface)] hover:bg-[var(--surface-alt)] hover:text-[var(--accent-text)] text-[var(--text-soft)] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[var(--border)] hover:border-[#c9ced5]">
-                {l.label}
-              </a>
-            ))}
-          </div>
-        </section>
+        
 
-        <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)] mt-4">
-          © {an} AmCupon.ro · <Link href="/craciun" className="hover:text-[var(--accent-text)]">Crăciun</Link>
-          {" · "}<Link href="/black-friday" className="hover:text-[var(--accent-text)]">Black Friday</Link>
-          {" · "}<Link href="/gadgets" className="hover:text-[var(--accent-text)]">Gadgets</Link>
-        </footer>
+        
       </div>
     </>
   );

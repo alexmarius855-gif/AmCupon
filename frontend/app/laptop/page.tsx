@@ -1,9 +1,8 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import OferteNisa, { AntetNisa } from "../components/OferteNisa";
 import fs from "fs";
 import path from "path";
-import MagazinCard from "../components/MagazinCard";
-import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
 import { esteInCategorie, NISA_CATEGORII } from "../../lib/categoriiNisa";
 import { laParteneri } from "@/lib/cifreSite";
@@ -18,7 +17,7 @@ interface Magazin {
 export const metadata: Metadata = {
   title: "Laptop Ieftin România 2026 — Oferte de la Parteneri",
   description: "Oferte la laptopuri 2026: gaming, business, student, de la magazinele de electronice partenere AmCupon. Reduceri active, actualizate zilnic.",
-  keywords: ["laptop ieftin românia", "laptop gaming reducere", "laptop student ieftin", "cel mai bun laptop 2026", "laptop sub 3000 lei", "eMAG laptop reducere", "altex laptop promoție"],
+  keywords: ["laptop ieftin românia", "laptop gaming reducere", "laptop student ieftin", "cel mai bun laptop 2026", "laptop sub 3000 lei", "emag laptop reducere", "altex laptop promoție"],
   alternates: { canonical: "https://amcupon.ro/laptop" },
   openGraph: { title: "Laptop Ieftin România 2026 | AmCupon.ro", url: "https://amcupon.ro/laptop", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
@@ -40,7 +39,7 @@ const BRANDURI = [
   { brand: "HP", desc: "Pavilion (buget), Spectre (premium), Omen (gaming)" },
   { brand: "Dell", desc: "XPS (ultrabook premium), Inspiron (buget), Alienware (gaming)" },
   { brand: "Acer", desc: "Nitro (gaming buget), Swift (ultrabook), Aspire (student)" },
-  { brand: "Apple", desc: "MacBook Air (eficiență), MacBook Pro (profesional)" },
+  { brand: "Apple", desc: "MacBook Air (eficienta), MacBook Pro (profesional)" },
 ];
 
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Laptop Ieftin România 2026","url":"https://amcupon.ro/laptop","description":"Oferte la laptopuri de la magazinele partenere — gaming, business, student" };
@@ -72,30 +71,15 @@ export default function LaptopPage() {
         </nav>
 
         {/* Hero */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-[var(--surface)] via-[var(--surface)] to-[var(--surface)] py-16 px-4">
-          <div className="absolute inset-0 pointer-events-none">
-            <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#ddf93c]/20 rounded-full blur-3xl" />
-            <div className="absolute bottom-0 left-1/4 w-64 h-64 bg-[#ddf93c]/20 rounded-full blur-3xl" />
-          </div>
-          <div className="relative max-w-6xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 bg-[#ddf93c]/20 border border-[var(--accent-text)]/30 text-[var(--accent-text)] text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#ddf93c] animate-pulse"/>
-              Oferte actualizate zilnic
-            </div>
-            <div className="text-6xl mb-5 drop-shadow-2xl">💻</div>
-            <h1 className="text-4xl md:text-5xl font-black text-[var(--foreground)] mb-4 tracking-tight">
-              Laptop Ieftin România <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #ddf93c, #c3dd2c)"}}>{an}</span>
-            </h1>
-            <p className="text-[var(--text-soft)] text-lg mb-8 max-w-xl mx-auto leading-relaxed">
-              Gaming, business, student — laptopuri {laParteneri(NISA_CATEGORII.laptop)}, actualizate zilnic
-            </p>
-            <div className="flex flex-wrap justify-center gap-2">
-              {["Gaming","Student","Business","MacBook","Sub 3000 lei","Sub 5000 lei","Ultrabook"].map(c => (
-                <span key={c} className="bg-[var(--surface-alt)] border border-[var(--border-strong)] text-[var(--text-soft)] text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
-              ))}
-            </div>
-          </div>
-        </section>
+        <AntetNisa titlu={<>Laptop Ieftin România {an}</>}>Gaming, business, student — laptopuri {laParteneri(NISA_CATEGORII.laptop)}, actualizate zilnic</AntetNisa>
+        <OferteNisa magazine={magazine} titlu="Magazine cu laptopuri și electronice" />
+        <NisaProduse
+          merchantSlugs={[]}
+          teme={["laptopuri"]}
+          titlu="Laptopuri de la magazinele partenere"
+          culoareAccent="blue"
+          limit={12}
+        />
 
         {/* Bugete */}
         <section className="max-w-6xl mx-auto px-4 py-12">
@@ -115,35 +99,15 @@ export default function LaptopPage() {
         </section>
 
         {/* Magazine */}
-        <section className="max-w-6xl mx-auto px-4 pb-12">
-          <div className="flex items-center justify-between mb-6">
-            <div>
-              <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-1">MAGAZINE PARTENERE</p>
-              <h2 className="text-xl font-black text-[var(--foreground)]">Magazine cu laptopuri și electronice</h2>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-            {magazine.map((m) => (
-              <MagazinCard key={m.magazin} m={m} />
-            ))}
-          </div>
-        </section>
-        <NewsletterCTA />
+        
 
-
-        <NisaProduse
-          merchantSlugs={[]}
-          teme={["laptopuri"]}
-          titlu="Laptopuri de la magazinele partenere"
-          culoareAccent="blue"
-          limit={12}
-        />
+        
 
         {/* Ghid */}
         <section className="bg-[var(--surface)] border-t border-[var(--border)] py-12 px-4">
           <div className="max-w-3xl mx-auto">
             <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-3">GHID CUMPĂRĂTURI</p>
-            <h2 className="text-2xl font-black text-[var(--foreground)] mb-7">Ce laptop să cumperi în {an}</h2>
+            <h2 className="text-2xl font-black text-[var(--foreground)] mb-7">Ce laptop sa cumperi în {an}</h2>
             <div className="space-y-5">
               <div className="bg-[var(--surface-alt)] border border-[var(--border-strong)] rounded-xl p-5">
                 <h3 className="font-bold text-[var(--foreground)] mb-3 text-base">Branduri populare de laptopuri în {an}</h3>
@@ -162,9 +126,9 @@ export default function LaptopPage() {
                   {[
                     ["Procesor","Intel Core i5/i7 sau Core Ultra 5/7, ori AMD Ryzen 5/7, din generațiile recente"],
                     ["RAM","minimum 16GB pentru confort real în 2026 (8GB e deja insuficient)"],
-                    ["SSD","minimum 512GB NVMe — viteza de boot și aplicații radical mai bună"],
-                    ["Display","IPS 1920x1080 minimum; dacă lucrezi cu imagini, caută 2K/OLED"],
-                    ["Baterie","capacitatea în Wh contează, dar autonomia reală o afli din testele independente"],
+                    ["SSD","minimum 512GB NVMe — viteza de boot și aplicații radical mai buna"],
+                    ["Display","IPS 1920x1080 minimum; dacă lucrezi cu imagini, cauta 2K/OLED"],
+                    ["Baterie","capacitatea în Wh contează, dar autonomia reala o afli din testele independente"],
                   ].map(([bold, text]) => (
                     <li key={bold} className="flex gap-2">
                       <span className="text-[var(--accent-text)] mt-0.5 shrink-0">→</span>
@@ -175,7 +139,7 @@ export default function LaptopPage() {
               </div>
               <div className="bg-[var(--surface-alt)] border border-[var(--border-strong)] rounded-xl p-5">
                 <h3 className="font-bold text-[var(--foreground)] mb-2 text-base">Când sunt reduceri la laptopuri</h3>
-                <p className="text-sm text-[var(--text-soft)] leading-relaxed">De Black Friday (noiembrie) și când apare o generație nouă de procesoare, modelele vechi se ieftinesc de obicei. Când un partener are un cod activ, îl găsești pe pagina lui de pe AmCupon.ro.</p>
+                <p className="text-sm text-[var(--text-soft)] leading-relaxed">De Black Friday (noiembrie) și când apare o generație noua de procesoare, modelele vechi se ieftinesc de obicei. Când un partener are un cod activ, îl găsești pe pagina lui de pe AmCupon.ro.</p>
               </div>
             </div>
           </div>
@@ -183,7 +147,7 @@ export default function LaptopPage() {
 
         {/* Related */}
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest mb-4">EXPLOREAZĂ ȘI</p>
+          <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest mb-4">EXPLOREAZĂ SI</p>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/gaming", label: "🎮 Gaming" },
@@ -200,12 +164,7 @@ export default function LaptopPage() {
           </div>
         </section>
 
-        <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)]">
-          &copy; {an} AmCupon.ro &middot;{" "}
-          <Link href="/electronice" className="hover:text-[var(--accent-text)] transition-colors">Electronice</Link>{" · "}
-          <Link href="/gaming" className="hover:text-[var(--accent-text)] transition-colors">Gaming</Link>{" · "}
-          <Link href="/categorii" className="hover:text-[var(--accent-text)] transition-colors">Categorii</Link>
-        </footer>
+        
       </div>
     </>
   );

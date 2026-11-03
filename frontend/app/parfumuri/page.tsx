@@ -1,9 +1,8 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import OferteNisa, { AntetNisa } from "../components/OferteNisa";
 import fs from "fs";
 import path from "path";
-import MagazinCard from "../components/MagazinCard";
-import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
 import { esteInCategorie } from "../../lib/categoriiNisa";
 import { laParteneri } from "@/lib/cifreSite";
@@ -27,14 +26,6 @@ export const metadata: Metadata = {
 const TOP_BEAUTY = ["notino.ro"];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_BEAUTY = ["beauty"];
-const AVANTAJE = [
-  { icon: "🌹", titlu: "Parfumuri de Lux", desc: "Chanel, Dior, YSL, Gucci" },
-  { icon: "💄", titlu: "Machiaj", desc: "Fond de ten, ruj, rimel — branduri premium" },
-  { icon: "🧴", titlu: "Skincare", desc: "Serumuri, creme, măști — rutina completă" },
-  { icon: "🛁", titlu: "Îngrijire Corp", desc: "Loțiuni, uleiuri, exfolianți de lux" },
-  { icon: "💅", titlu: "Nail Art", desc: "Ojă, geluri, accesorii manichiură" },
-  { icon: "🎁", titlu: "Seturi Cadou", desc: "Seturi parfum + cremă — cadoul perfect" },
-];
 
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Parfumuri 2026","url":"https://amcupon.ro/parfumuri","description":"Oferte la parfumuri și cosmetice de la magazinele partenere AmCupon" };
 
@@ -62,48 +53,8 @@ export default function ParfumuriPage() {
           </div>
         </nav>
 
-        <section className="bg-gradient-to-br from-[#c3dd2c] via-[#ddf93c] to-[#c3dd2c] text-[#0c1000] py-12 px-4">
-          <div className="max-w-6xl mx-auto text-center">
-            <div className="text-5xl mb-4">🌹</div>
-            <h1 className="text-3xl md:text-4xl font-black mb-3">Parfumuri {an}</h1>
-            <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              Oferte {laParteneri(NISA_CATEGORII.parfumuri, 3)} și la alte magazine partenere de cosmetice
-            </p>
-            <div className="flex flex-wrap justify-center gap-2">
-              {["Parfumuri originale","Machiaj","Skincare","Îngrijire corp","Seturi cadou","Nail art"].map(c => (
-                <span key={c} className="bg-[var(--surface-alt)] text-[var(--foreground)] text-sm font-semibold px-4 py-1.5 rounded-full border border-[var(--border-strong)]">{c}</span>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[var(--foreground)] mb-6 text-center">Ce găsești la parfumuri online</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {AVANTAJE.map(a => (
-              <div key={a.titlu} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
-                <div className="text-3xl mb-2">{a.icon}</div>
-                <h3 className="font-bold text-[var(--foreground)] text-sm mb-1">{a.titlu}</h3>
-                <p className="text-xs text-[var(--text-soft)]">{a.desc}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section className="max-w-6xl mx-auto px-4 pb-10">
-          <div className="flex items-center gap-3 mb-5">
-            
-            <h2 className="text-xl font-black text-[var(--foreground)]">Magazine cu parfumuri și cosmetice</h2>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-            {magazine.map((m) => (
-              <MagazinCard key={m.magazin} m={m} />
-            ))}
-          </div>
-        </section>
-        <NewsletterCTA />
-
-
+        <AntetNisa titlu={<>Parfumuri {an}</>}>Oferte {laParteneri(NISA_CATEGORII.parfumuri, 3)} și la alte magazine partenere de cosmetice</AntetNisa>
+        <OferteNisa magazine={magazine} titlu="Magazine cu parfumuri și cosmetice" />
         <NisaProduse
           merchantSlugs={[]}
           teme={["parfumuri-femei", "parfumuri-barbati"]}
@@ -111,6 +62,12 @@ export default function ParfumuriPage() {
           culoareAccent="indigo"
           limit={12}
         />
+
+        
+
+        
+
+        
 
         <section className="bg-[var(--surface)] border-t border-[var(--border)] py-10 px-4">
           <div className="max-w-3xl mx-auto">
@@ -126,7 +83,7 @@ export default function ParfumuriPage() {
                   <li><strong>Chanel Coco Mademoiselle</strong> — chypre floral</li>
                   <li><strong>Dior Sauvage</strong> — aromatic fougère, unul dintre cele mai cunoscute parfumuri masculine</li>
                   <li><strong>YSL Black Opium</strong> — oriental-vanilat, cu note de cafea</li>
-                  <li><strong>Giorgio Armani Sì</strong> — chypre fructat</li>
+                  <li><strong>Giorgio Armâni Sì</strong> — chypre fructat</li>
                 </ul>
               </div>
               <div>
@@ -137,31 +94,9 @@ export default function ParfumuriPage() {
           </div>
         </section>
 
-        <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Explorează și alte categorii</h2>
-          <div className="flex flex-wrap gap-2">
-            {[
-              { href: "/frumusete", label: "💄 Frumusețe" },
-              { href: "/fashion", label: "👗 Fashion" },
-              { href: "/idei-cadouri", label: "🎁 Idei Cadouri" },
-              { href: "/sanatate", label: "🌿 Sănătate" },
-              { href: "/categorii", label: "📂 Categorii" },
-              { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
-            ].map(l => (
-              <a key={l.href} href={l.href}
-                className="bg-[var(--surface)] hover:bg-[var(--surface-alt)] hover:text-[var(--accent-text)] text-[var(--text-soft)] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[var(--border)] hover:border-[#c9ced5]">
-                {l.label}
-              </a>
-            ))}
-          </div>
-        </section>
+        
 
-        <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)] mt-4">
-          © {an} AmCupon.ro ·{" "}
-          <Link href="/frumusete" className="hover:text-[var(--accent-text)]">Frumusețe</Link>{" · "}
-          <Link href="/farmacie" className="hover:text-[var(--accent-text)]">Farmacie</Link>{" · "}
-          <Link href="/categorii" className="hover:text-[var(--accent-text)]">Categorii</Link>
-        </footer>
+        
       </div>
     </>
   );

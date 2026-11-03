@@ -1,9 +1,8 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import OferteNisa, { AntetNisa } from "../components/OferteNisa";
 import fs from "fs";
 import path from "path";
-import MagazinCard from "../components/MagazinCard";
-import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
@@ -16,7 +15,7 @@ interface Magazin {
 export const metadata: Metadata = {
   title: "Reduceri Flori & Buchete 2026 — Florării Online | AmCupon.ro",
   description: "Florării online partenere AmCupon — Floria.ro, 3gifts.ro: flori și buchete pentru orice ocazie, cu ofertele active când există.",
-  keywords: ["reduceri flori", "cod reducere floria", "livrare flori online românia", "buchete reducere", "florărie online ieftină", "flori cadou reducere"],
+  keywords: ["reduceri flori", "cod reducere floria", "livrare flori online românia", "buchete reducere", "florărie online ieftina", "flori cadou reducere"],
   alternates: { canonical: "https://amcupon.ro/flori" },
   openGraph: { title: "Reduceri Flori & Buchete 2026 | AmCupon.ro", url: "https://amcupon.ro/flori", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
@@ -62,20 +61,15 @@ export default function FloriPage() {
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-[#ddf93c] via-[#ddf93c] to-[#ddf93c] text-[#0c1000] py-12 px-4">
-          <div className="max-w-6xl mx-auto text-center">
-            <div className="text-5xl mb-4">💐</div>
-            <h1 className="text-3xl md:text-4xl font-black mb-3">Flori & Buchete {an}</h1>
-            <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              Florării online partenere, cu ofertele active pentru orice ocazie
-            </p>
-            <div className="flex flex-wrap justify-center gap-2">
-              {["Trandafiri","Buchete mixte","Cutii cu flori","Aranjamente nuntă","Livrare azi","Coroane"].map(c => (
-                <span key={c} className="bg-[var(--surface-alt)] text-[var(--foreground)] text-sm font-semibold px-4 py-1.5 rounded-full border border-[var(--border-strong)]">{c}</span>
-              ))}
-            </div>
-          </div>
-        </section>
+        <AntetNisa titlu={<>Flori & Buchete {an}</>}>Florării online partenere, cu ofertele active pentru orice ocazie</AntetNisa>
+        <OferteNisa magazine={magazine} titlu="Florării cu reduceri active" />
+        <NisaProduse
+          merchantSlugs={[]}
+          potrivire={/^(buchet|aranjament (floral|de flori|cu flori)|cutie (cu|de) (flori|trandafiri)|trandafiri? (criogenat|naturali|rosii|in cutie)|flori (naturale|criogenate|uscate))/}
+          titlu="Buchete și aranjamente de la parteneri"
+          culoareAccent="rose"
+          limit={12}
+        />
 
         {/* OCAZII */}
         <section className="max-w-6xl mx-auto px-4 py-10">
@@ -93,36 +87,9 @@ export default function FloriPage() {
         </section>
 
         {/* MAGAZINE */}
-        <section className="max-w-6xl mx-auto px-4 pb-10">
-          <div className="flex items-center gap-3 mb-5">
-            <h2 className="text-xl font-black text-[var(--foreground)]">Florării cu reduceri active</h2>
-          </div>
-          {magazine.length === 0 ? (
-            <div className="text-center py-10 bg-[var(--surface)] rounded-xl">
-              <p className="text-2xl mb-3">💐</p>
-              <p className="text-[var(--text-soft)] font-medium mb-2">Explorează ofertele noastre de cadouri</p>
-              <Link href="/idei-cadouri" className="inline-block bg-[#ddf93c] text-[#0c1000] font-bold px-6 py-3 rounded-xl hover:bg-[#ddf93c] transition-colors">
-                Vezi idei de cadouri →
-              </Link>
-            </div>
-          ) : (
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-              {magazine.map((m) => (
-              <MagazinCard key={m.magazin} m={m} />
-            ))}
-            </div>
-          )}
-        </section>
-        <NewsletterCTA />
+        
 
-
-        <NisaProduse
-          merchantSlugs={[]}
-          potrivire={/^(buchet|aranjament (floral|de flori|cu flori)|cutie (cu|de) (flori|trandafiri)|trandafiri? (criogenat|naturali|rosii|in cutie)|flori (naturale|criogenate|uscate))/}
-          titlu="Buchete și aranjamente de la parteneri"
-          culoareAccent="rose"
-          limit={12}
-        />
+        
 
         {/* SEO */}
         <section className="bg-[var(--surface)] border-t border-[var(--border)] py-10 px-4">
@@ -165,12 +132,7 @@ export default function FloriPage() {
           </div>
         </section>
 
-        <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)] mt-4">
-          © {an} AmCupon.ro ·{" "}
-          <Link href="/blog" className="hover:text-[var(--accent-text)]">Blog</Link>{" · "}
-          <Link href="/categorii" className="hover:text-[var(--accent-text)]">Categorii</Link>{" · "}
-          <Link href="/" className="hover:text-[var(--accent-text)]">Acasă</Link>
-        </footer>
+        
       </div>
     </>
   );

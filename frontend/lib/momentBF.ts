@@ -37,6 +37,11 @@ export function calendarScurt<C extends CampanieScurta>(azi: string, campanii: r
   return { inCurs: active.length, urmeaza: toateUrmatoare.length, urmatoare: toateUrmatoare.slice(0, n) };
 }
 
+/** Oferta vorbeste despre Black Friday / Cyber Monday (aceeasi expresie ca RE_BF din scripts/calendar_black_friday.py). */
+export function promoBF(text: string): boolean {
+  return /\b(black\s*(friday|week|month|days?|weekend)|cyber\s*(monday|week))\b/i.test(text);
+}
+
 /** Azi, in ora Romaniei: site-ul se construieste in UTC, iar ziua de BF e cea din Romania. */
 export function aziRomania(d: Date = new Date()): string {
   return new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Bucharest" }).format(d);

@@ -1,21 +1,20 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import OferteNisa, { AntetNisa } from "../components/OferteNisa";
 import fs from "fs";
 import path from "path";
-import MagazinCard from "../components/MagazinCard";
-import NewsletterCTA from "../components/NewsletterCTA";
 import { laParteneri } from "@/lib/cifreSite";
 
 interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile_ramase: number; }
 interface Magazin {
   magazin: string; url: string; url_afiliat: string; logo_url?: string;
   categorie: string; categorie_slug?: string; scor_final: number;
-  are_promotie: boolean; cod_cupon: boolean; promotii: Promotie[];
+  are_promotie: boolean; cod_cupon: boolean; promotii: Promotie[]; comision?: string;
 }
 
 export const metadata: Metadata = {
   title: "Piese Auto Online România 2026 — Coduri și Oferte",
-  description: `Compară magazinele de piese auto, anvelope, jante și detailing din România. Coduri de reducere actualizate zilnic ${laParteneri(["auto-moto"], 3)} și la…`,
+  description: `Compara magazinele de piese auto, anvelope, jante și detailing din România. Coduri de reducere actualizate zilnic ${laParteneri(["auto-moto"], 3)} și la alte magazine partenere.`,
   keywords: ["piese auto online", "cod reducere piese auto", "anvelope reducere", "jante auto reducere", "detailing auto românia", "magazin piese auto românia"],
   alternates: { canonical: "https://amcupon.ro/piese-auto" },
   openGraph: { title: "Piese Auto Online România 2026 | AmCupon.ro", url: "https://amcupon.ro/piese-auto", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
@@ -52,35 +51,8 @@ export default function PieseAutoPage() {
       <div className="min-h-screen bg-[var(--background)]">
 
         {/* HERO */}
-        <section className="relative bg-[var(--background)] border-b border-[var(--border)] overflow-hidden">
-          <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(13,148,136,0.1) 0%, transparent 65%)" }} />
-          <div className="relative max-w-5xl mx-auto px-4 pt-12 pb-10 text-center">
-            <nav className="flex justify-center gap-2 text-xs text-[var(--text-muted)] mb-8">
-              <Link href="/" className="hover:text-[var(--text-soft)]">AmCupon.ro</Link>
-              <span>/</span>
-              <span className="text-[var(--text-soft)]">Piese Auto</span>
-            </nav>
-            <div className="text-5xl mb-4">🔧</div>
-            <h1 className="text-4xl md:text-5xl font-black text-[var(--foreground)] mb-4">
-              Piese Auto <span className="text-transparent bg-clip-text" style={{ backgroundImage: "linear-gradient(135deg, #ddf93c, #ddf93c)" }}>Online</span> {an}
-            </h1>
-            <p className="text-[var(--text-soft)] text-lg max-w-2xl mx-auto mb-8">
-              Anvelope, jante, vopsele, navigație și piese de motor — magazine românești actualizate zilnic.
-            </p>
-            <div className="grid grid-cols-3 gap-4 max-w-md mx-auto">
-              {[
-                { val: `${magazine.length}`, label: "Magazine" },
-                { val: `${cuPromo.length}`, label: "Cu reduceri" },
-                { val: "Zilnic", label: "Actualizat" },
-              ].map(s => (
-                <div key={s.label} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl py-3 px-2">
-                  <div className="text-xl font-black text-[var(--foreground)]">{s.val}</div>
-                  <div className="text-xs text-[var(--text-muted)]">{s.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <AntetNisa titlu={<>Piese Auto Online {an}</>}>Anvelope, jante, vopsele, navigație și piese de motor — magazine romanesti actualizate zilnic.</AntetNisa>
+        <OferteNisa magazine={magazine} titlu="Magazine de piese auto" />
 
         {/* SUBCATEGORII */}
         <section className="border-b border-[var(--border)] py-5 px-4">
@@ -94,26 +66,15 @@ export default function PieseAutoPage() {
         </section>
 
         <div className="max-w-5xl mx-auto px-4 py-8">
-          {magazine.length > 0 && (
-            <section className="mb-8">
-              <h2 className="text-xl font-black text-[var(--foreground)] mb-5">Magazine de piese auto</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {magazine.map(m => (
-                  <MagazinCard key={m.magazin} m={m} />
-                ))}
-              </div>
-            </section>
-          )}
-
-          <NewsletterCTA />
+          
 
           {/* GHID */}
           <section className="mt-10 bg-[var(--surface)] border border-[var(--border)] rounded-xl p-6">
             <h2 className="text-lg font-black text-[var(--foreground)] mb-4">Cum economisești la piese auto online?</h2>
             <ul className="space-y-2 text-sm text-[var(--text-soft)]">
-              <li><strong className="text-[var(--text-soft)]">Compară prețul</strong> între cel puțin 2-3 magazine — prețul aceleiași piese poate diferi mult</li>
-              <li><strong className="text-[var(--text-soft)]">Verifică compatibilitatea</strong> cu modelul exact al mașinii înainte de comandă</li>
-              <li><strong className="text-[var(--text-soft)]">Anvelopele și jantele</strong> au cele mai mari reduceri sezoniere — primăvara și toamna (schimb sezonier)</li>
+              <li><strong className="text-[var(--text-soft)]">Compara prețul</strong> intre cel puțin 2-3 magazine — prețul aceleiași piese poate diferi mult</li>
+              <li><strong className="text-[var(--text-soft)]">Verifica compatibilitatea</strong> cu modelul exact al mașinii înainte de comanda</li>
+              <li><strong className="text-[var(--text-soft)]">Anvelopele și jantele</strong> au cele mai mari reduceri sezoniere — primavara și toamna (schimb sezonier)</li>
               <li><strong className="text-[var(--text-soft)]">Folosește codul de reducere</strong> de pe pagina magazinului pe AmCupon.ro, dacă are unul activ — codurile dispar automat după data de expirare</li>
             </ul>
           </section>

@@ -4,12 +4,13 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { useState, useEffect } from "react";
-import { Ticket, Tag, ShoppingBag, Star, ClipboardCopy, ShoppingCart, CheckCircle2, Mail, Flame, Bell } from "lucide-react";
+import { Bell } from "lucide-react";
 import PriceAlert from "../../components/PriceAlert";
 import ReviewSection from "./ReviewSection";
 import ShareButton from "../../components/ShareButton";
 import CuponCard from "../../components/CuponCard";
 import { indexReducereMaxima, hookMagazin, type PromotieCupon } from "@/lib/oferta";
+import { cuNumar } from "@/lib/acordNumeral";
 
 function cuReducereaMaximaPrima<T extends PromotieCupon>(lista: T[]): { lista: T[]; top: boolean } {
   const i = indexReducereMaxima(lista);
@@ -18,26 +19,10 @@ function cuReducereaMaximaPrima<T extends PromotieCupon>(lista: T[]): { lista: T
 import BannerAd2P from "../../components/BannerAd2P";
 import RedirectModal from "../../components/RedirectModal";
 import { useCopyCod } from "../../hooks/useCopyCod";
-import { calculateDealScore, DEAL_SCORE_VISIBLE_THRESHOLD } from "../../../lib/dealScore";
 import VotCupon, { hashCupon } from "../../components/VotCupon";
 import { linkAfiliat, linkPromotie } from "@/lib/linkMagazin";
 import { numeAfisat } from "@/lib/numeMagazin";
-import { cuNumar } from "@/lib/acordNumeral";
-
-// ── Deal Score badge ────────────────────────────────────────────────────────────
-// 19.09.2026: numaratoarea 0 -> scor pornea de la 0 si pe server, deci HTML-ul (ce citesc Google
-// si cine n-are JavaScript) scria „Deal Score 0/100". Acum scorul real, de la inceput.
-function DealScoreBadge({ score }: { score: number }) {
-  const displayed = score;
-  return (
-    <div
-      title="Scor calculat de AmCupon din reducere, cod, prospețime și exclusivitate — nu e un rating extern"
-      className="am-pop flex items-center gap-1.5 bg-[var(--surface-alt)] border border-[var(--accent-text)]/40 text-[var(--accent-text)] text-xs font-bold px-3 py-1.5 rounded-full"
-    >
-      <Flame className="w-3.5 h-3.5" /> Deal Score {displayed}/100
-    </div>
-  );
-}
+import { CardProdus } from "../../components/OferteParteneri";
 
 // ── Interfaces ────────────────────────────────────────────────────────────────
 interface Promotie {
@@ -121,51 +106,7 @@ function extractDiscount(text: string): string | null {
 }
 
 // ── Produs card ───────────────────────────────────────────────────────────────
-function ProdusCard({ produs: p }: { produs: Produs }) {
-  const [imgOk, setImgOk] = useState(true);
-  const hasDiscount = p.discount_pct > 0 && p.old_price;
-  return (
-    <a href={p.url} target="_blank" rel="sponsored noopener noreferrer"
-      className="group bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--accent-text)] rounded-xl overflow-hidden transition-all hover:shadow-xl hover:shadow-black/40 hover:-translate-y-0.5 duration-200 flex flex-col">
-      <div className="relative bg-[var(--surface-alt)] overflow-hidden" style={{aspectRatio:"1"}}>
-        {p.image && imgOk ? (
-          <Image src={p.image} alt={p.title} fill sizes="(max-width: 640px) 50vw, 176px"
-            className="object-contain p-2 group-hover:scale-105 transition-transform duration-300"
-            onError={() => setImgOk(false)} unoptimized />
-        ) : (
-          <div className="w-full h-full flex items-center justify-center"><ShoppingBag className="w-10 h-10 text-[var(--border-strong)]" /></div>
-        )}
-        {hasDiscount && (
-          <div className="absolute top-2 left-2 bg-gradient-to-br from-[#34d399] to-[#ddf93c] text-[#0c1000] text-xs font-black px-2 py-0.5 rounded-lg shadow-sm">
-            -{p.discount_pct}%
-          </div>
-        )}
-      </div>
-      <div className="p-3 flex flex-col flex-1">
-        <p className="text-xs text-[var(--text-muted)] mb-1 line-clamp-1">{p.brand || p.category}</p>
-        <p className="text-sm font-semibold text-[var(--text-soft)] line-clamp-2 flex-1 group-hover:text-[var(--accent-text)] transition-colors leading-snug">{p.title}</p>
-        <div className="flex items-center gap-2 mt-2">
-          <span className="font-black text-[var(--accent-text)] text-base">
-            {p.price > 0 ? `${p.price.toFixed(2)} lei` : "Vezi prețul"}
-          </span>
-          {hasDiscount && p.old_price && (
-            <span className="text-xs text-[var(--text-muted)] line-through">{p.old_price.toFixed(2)} lei</span>
-          )}
-        </div>
-        <div className="mt-2 text-xs font-bold text-[var(--accent-text)] group-hover:text-[var(--accent-text)] flex items-center gap-1">
-          Cumpără acum
-          <svg className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
-          </svg>
-        </div>
-      </div>
-    </a>
-  );
-}
-
 // ── Main component ────────────────────────────────────────────────────────────
-type Tab = "coduri" | "oferte" | "produse" | "recenzii";
-
 interface Banner2P {
   id: number; image_url: string; landing_url: string; landing_raw: string;
   width: number; height: number; merchant: string; merchant_slug: string;
@@ -199,18 +140,6 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
   // Totalurile de voturi, o singura cerere per pagina. Daca baza e picata,
   // ramane gol si UI-ul nu arata niciun scor — corect, nu inventam.
   const [voturi, setVoturi] = useState<Record<string, { da: number; nu: number }>>({});
-  // Tab-ul implicit = primul care are CONTINUT REAL, nu mereu "coduri".
-  // Bug de conversie gasit 08.08.2026: 55 din 62 de magazine cu oferte active au 0
-  // coduri (temu, shein, emag, trendyol, fashiondays...). Pagina se deschidea pe tabul
-  // "Coduri" — gol — iar ofertele, singurul lucru monetizabil de acolo, stateau ascunse
-  // in spatele unui tab pe care vizitatorul trebuia sa-l descopere si sa-l apese.
-  // Exact paginile cele mai valoroase (singurele cu ceva de vandut) isi ascundeau marfa.
-  const [tabActiv, setTabActiv]   = useState<Tab>(() => {
-    if (m.promotii.some(p => p.cod_cupon)) return "coduri";
-    if (m.promotii.some(p => !p.cod_cupon)) return "oferte";
-    if ((produse?.length ?? 0) > 0) return "produse";
-    return "coduri";
-  });
   const [modalOpen, setModalOpen] = useState(false);
   // Numele din modalul de dupa copiere. Pe pagina fara oferta se pot copia si codurile
   // magazinelor SIMILARE — modalul trebuie sa numeasca magazinul codului, nu al paginii.
@@ -243,8 +172,6 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
     ? Math.round((Date.parse(astazi) - Date.parse(m.ultima_verificare)) / 86400000)
     : null;
 
-  // Deal Score onest (lib/dealScore.ts) — un singur badge/pagina (nu pe fiecare card
-  // dintr-un grid, ca in MagazinCard.tsx), cu count-up la mount.
   useEffect(() => {
     let anulat = false;
     fetch(`/api/vote?magazin=${encodeURIComponent(m.magazin)}`)
@@ -254,13 +181,6 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
     return () => { anulat = true; };
   }, [m.magazin]);
 
-  const dealScore = calculateDealScore(m, astazi);
-  // Doar cand exista o oferta: fara ea, scorul vine din rangul intern al magazinului + prospetime
-  // (sofiline.ro: 60/100 cu „Niciun cod activ" dedesubt) — un „deal score" fara niciun deal.
-  const showDealScore = m.promotii.length > 0 && dealScore >= DEAL_SCORE_VISIBLE_THRESHOLD;
-
-  // Vizualizari deterministe
-  const culoare = "bg-gradient-to-br from-[#ddf93c] to-[#c3dd2c]";
   const domeniuLogo = (m.magazin || "").match(/[a-z0-9-]+\.[a-z]{2,}(?:\.[a-z]{2,})?/i)?.[0] || null;
   const logoSurse = [
     m.logo_url,
@@ -296,545 +216,310 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
     } catch {}
   }
 
-  // Tab-uri cu count-uri
-  const tabs: { id: Tab; label: string; count: number; icon: typeof Ticket }[] = [
-    { id: "coduri",   label: "Coduri",   count: cuCod.length,       icon: Ticket },
-    { id: "oferte",   label: "Oferte",   count: faraCodd.length,    icon: Tag },
-    { id: "produse",  label: "Produse",  count: produse.length,     icon: ShoppingBag },
-    { id: "recenzii", label: "Recenzii", count: 0,                   icon: Star },
-  ];
+  const H2 = "text-xl font-black text-[var(--foreground)]";
 
   return (
     <div className="min-h-screen bg-[var(--background)]">
+      <div className="max-w-5xl mx-auto px-4 pt-4 pb-8 text-[var(--foreground)]">
 
-      {/* ── HEADER ─────────────────────────────────────────────────────────── */}
-      <header className="bg-[var(--surface)] border-b border-[var(--border)] sticky top-0 z-50">
-        <div className="max-w-5xl mx-auto px-4 py-3 flex items-center gap-3">
-          <Link href="/" className="flex items-center gap-1.5 shrink-0">
-            <div className="bg-[#ddf93c] text-[#0c1000] font-black text-base px-2 py-1 rounded-lg">Am</div>
-            <span className="font-black text-[var(--foreground)] text-xl">Cupon</span>
-            <span className="text-[var(--accent-text)] font-black text-xl">.ro</span>
-          </Link>
-          <span className="text-[var(--text-muted)]">/</span>
-          <Link href="/toate-magazinele" className="text-sm text-[var(--text-soft)] hover:text-[var(--foreground)] transition-colors">Magazine</Link>
-          <span className="text-[var(--text-muted)]">/</span>
-          <span className="text-sm font-semibold text-[var(--text-soft)] truncate max-w-[160px]">{nume}</span>
-          <Link href="/toate-magazinele" className="ml-auto text-[var(--text-soft)] hover:text-[var(--foreground)] transition-colors" title="Caută magazin">
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
-            </svg>
-          </Link>
-        </div>
-      </header>
+        {/* ── ANTET ──────────────────────────────────────────────────────────
+            03.11.2026: antetul propriu a iesit (meniul si cautarea sunt cele comune), iar din primul ecran au
+            iesit „Top #N Romania", „Exclusiv", „Trending" (camp mereu 0) si Deal Score: nimic din ele nu ajuta la
+            alegerea unei oferte, iar pe telefon impingeau codul sub ecran. */}
+        <nav aria-label="Breadcrumb" className="text-xs text-[var(--text-muted)] mb-3 truncate">
+          <Link href="/" className="hover:text-[var(--accent-text)]">Acasă</Link>
+          <span className="mx-1.5">/</span>
+          <Link href="/toate-magazinele" className="hover:text-[var(--accent-text)]">Magazine</Link>
+          <span className="mx-1.5">/</span>
+          <span className="text-[var(--text-soft)]">{nume}</span>
+        </nav>
 
-      {/* ── HERO ───────────────────────────────────────────────────────────── */}
-      <div className="bg-gradient-to-br from-[var(--surface)] via-[var(--surface)] to-[var(--surface-alt)] border-b border-[var(--border-strong)] pt-8 pb-0 px-4">
-        <div className="max-w-5xl mx-auto">
-          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 pb-6">
+        <header className="flex items-center gap-3.5 mb-3">
+          <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-xl overflow-hidden flex items-center justify-center bg-[#ffffff] p-1.5 shrink-0">
+            {logoSrc ? (
+              <Image src={logoSrc} alt={`Logo ${nume}`} fill sizes="64px" className="object-contain p-1.5"
+                onError={() => setLogoIdx((i) => i + 1)} unoptimized />
+            ) : (
+              <span className="text-[#0c1000] font-black text-2xl">{initiala}</span>
+            )}
+          </div>
+          <div className="min-w-0">
+            <h1 className="text-[1.5rem] md:text-3xl font-black tracking-tight leading-tight">Cod Reducere {nume} {an}</h1>
+            <p className="text-sm text-[var(--text-soft)] mt-0.5">
+              {m.categorie}
+              {m.promotii.length > 0 && ` · ${cuNumar(m.promotii.length, "ofertă activă", "oferte active")}`}
+              {zileDeLaVerificare !== null && ` · ${zileDeLaVerificare <= 0 ? "actualizat azi" : `actualizat acum ${cuNumar(zileDeLaVerificare, "zi", "zile")}`}`}
+            </p>
+            {m.promotii.length > 0 && <p className="text-[var(--foreground)] text-base font-semibold mt-1.5">{hookMagazin(m.promotii, nume)}</p>}
+          </div>
+        </header>
 
-            {/* Logo */}
-            <div className="relative w-20 h-20 rounded-xl overflow-hidden flex items-center justify-center bg-[#ffffff] border border-[var(--border-strong)] p-1.5 shrink-0 shadow-xl shadow-black/40">
-              {logoSrc ? (
-                <Image src={logoSrc} alt={`Logo ${nume}`} fill sizes="80px" className="object-contain p-1.5"
-                  onError={() => setLogoIdx((i) => i + 1)} unoptimized />
-              ) : (
-                <div className={`w-full h-full rounded-xl ${culoare} flex items-center justify-center`}>
-                  {/* Text INCHIS pe lime: `culoare` vine dintr-o variabila, deci perechea
-                      fundal+text nu apare in acelasi className si nicio migrare automata
-                      de culori n-avea cum s-o vada (tiparul 2 din CLAUDE.md). Alb pe
-                      #ddf93c era invizibil — pe pagina care aduce comisionul. */}
-                  <span className="text-[#0c1000] font-black text-3xl">{initiala}</span>
+        {linkIesire && (
+          <a href={linkIesire} target="_blank" rel="sponsored noopener noreferrer"
+            className="inline-block w-full sm:w-auto text-center bg-[#ddf93c] hover:bg-[#c3dd2c] text-[#0c1000] font-bold px-5 py-2.5 rounded-xl text-sm transition-colors mb-5"
+            onClick={() => trackClick("vizita_magazin", m.magazin)}>
+            Mergi la {nume}
+          </a>
+        )}
+
+        {banner && (
+          <div className="pb-4 flex justify-center">
+            <BannerAd2P banner={banner} />
+          </div>
+        )}
+
+        {blackFriday && <div className="pb-5">{blackFriday}</div>}
+
+        <div className="space-y-9">
+          {/* ── OFERTELE: tot ce e activ, unul dupa altul. Pana pe 03.11.2026 stateau in taburi, deci cine
+              intra pe „Coduri" nu vedea ofertele fara cod, iar pe telefon a doua lista cerea un clic. */}
+          {cuCod.length > 0 && (
+            <section aria-labelledby="coduri-h">
+              <div className="flex items-baseline gap-3 mb-3">
+                <h2 id="coduri-h" className={H2}>Coduri Reducere {nume} {an}</h2>
+                <span className="text-sm text-[var(--text-muted)] whitespace-nowrap">{cuNumar(cuCod.length, "cod activ", "coduri active")}</span>
+              </div>
+              <div className="cc-list">
+                {cuCod.map((promo, idx) => {
+                  const link     = linkPromotie(m, promo);
+                  const discount = extractDiscount(promo.nume) || extractDiscount(promo.descriere || "");
+                  const hash     = hashCupon(promo.cod_cupon, promo.nume);
+                  return (
+                    <CuponCard
+                      key={idx}
+                      promo={promo}
+                      numeMagazin={nume}
+                      logoSrc={logoSrc}
+                      link={link}
+                      top={ordCod.top && idx === 0}
+                      dezvaluit={revealed.has(idx)}
+                      copiat={copiat === idx}
+                      onDezvaluie={() => copiazaCod(idx, promo.cod_cupon, link)}
+                      onIesire={() => trackClick("cod", m.magazin, promo.cod_cupon)}
+                      extra={
+                        <div className="flex flex-wrap items-center gap-3">
+                          {/* Vot comunitar. Amprenta pe (cod + nume), NU pe index: indexul se
+                              schimba la fiecare rulare de pipeline, deci voturile s-ar lipi de alt cupon. */}
+                          <VotCupon magazin={m.magazin} cuponHash={hash} initial={voturi[hash]} />
+                          {revealed.has(idx) && (
+                            <ShareButton
+                              pageSlug={`/cod-reducere/${m.magazin}`}
+                              title={`Cod reducere ${discount ? discount + " " : ""}${nume}`}
+                              text={`🔥 Cod reducere${discount ? " " + discount : ""} la ${nume}!\nCod: ${promo.cod_cupon}${promo.descriere && promo.descriere !== promo.nume ? "\n" + promo.descriere : ""}`}
+                              small
+                              label="Trimite"
+                            />
+                          )}
+                        </div>
+                      }
+                    />
+                  );
+                })}
+              </div>
+              <p className="text-sm text-[var(--text-muted)] mt-3">
+                Apeși pe cod: se copiază și se deschide {nume}. La plată, îl lipești în câmpul de voucher sau cod de reducere.
+              </p>
+            </section>
+          )}
+
+          {faraCodd.length > 0 && (
+            <section aria-labelledby="oferte-h">
+              <div className="flex items-baseline gap-3 mb-3">
+                <h2 id="oferte-h" className={H2}>Oferte {nume} {an}</h2>
+                <span className="text-sm text-[var(--text-muted)] whitespace-nowrap">{cuNumar(faraCodd.length, "ofertă activă", "oferte active")}</span>
+              </div>
+              <div className="cc-list">
+                {faraCodd.map((promo, idx) => {
+                  const link     = linkPromotie(m, promo);
+                  const discount = extractDiscount(promo.nume) || extractDiscount(promo.descriere || "");
+                  return (
+                    <CuponCard
+                      key={idx}
+                      promo={promo}
+                      numeMagazin={nume}
+                      logoSrc={logoSrc}
+                      link={link}
+                      top={ordOferte.top && idx === 0}
+                      extra={
+                        <ShareButton
+                          pageSlug={`/cod-reducere/${m.magazin}`}
+                          title={`Oferta${discount ? " " + discount : ""} ${nume}`}
+                          text={`🏷 Oferta${discount ? " " + discount : ""} la ${nume}!\n${promo.descriere && promo.descriere !== promo.nume ? promo.descriere : promo.nume}`}
+                          small
+                        />
+                      }
+                    />
+                  );
+                })}
+              </div>
+            </section>
+          )}
+
+          {m.promotii.length > 0 ? (
+            <PriceAlert magazin={m.magazin} numeMagazin={nume} />
+          ) : (
+            <div>
+              {/* ZERO FUNDATURI (23.09.2026, interfata noua). E starea pe care o vad 86% din
+                  vizitatori. Alerta pe email e actiunea principala, deci formularul e deschis din
+                  start; dedesubt, carduri INTREGI cu codul real al magazinelor similare — filtrate pe
+                  cod, nu pe `are_promotie`, altfel l-am trimite la alta pagina fara coduri. */}
+              <div className="cc-empty">
+                <div className="cc-empty-i"><Bell className="w-5 h-5" /></div>
+                <div className="flex-1 min-w-0">
+                  <h2>Acum nu e niciun cod activ la {nume}.</h2>
+                  <p className="cc-empty-txt">
+                    {similareCuCod.length > 0
+                      ? `Îți scriem pe email în ziua în care apare unul — sau vezi mai jos ${similareCuCod.length === 1 ? "un magazin din aceeași categorie care are" : "magazine din aceeași categorie care au"} cod chiar acum.`
+                      : "Îți scriem pe email în ziua în care apare unul. Căutăm coduri noi de trei ori pe zi."}
+                  </p>
+                  <PriceAlert magazin={m.magazin} numeMagazin={nume} deschis />
+                </div>
+              </div>
+
+              {similareCuCod.length > 0 && (
+                <div className="mt-7">
+                  <h2 className={H2}>{similareCuCod.length === 1 ? "Are cod chiar acum" : "Au cod chiar acum"}</h2>
+                  <p className="text-sm text-[var(--text-muted)] mt-0.5 mb-3">{similareCuCod.length === 1 ? "Un magazin" : "Magazine"} din aceeași categorie cu {nume}.</p>
+                  <div className="cc-list">
+                    {similareCuCod.map((x) => {
+                      const o = x.oferta!;
+                      const cheie = `s-${x.magazin}`;
+                      const numeX = numeAfisat(x.magazin);
+                      return (
+                        <CuponCard
+                          key={x.magazin}
+                          promo={o}
+                          numeMagazin={numeX}
+                          logoSrc={x.logo_url}
+                          link={o.link}
+                          dezvaluit={revealedSim.has(x.magazin)}
+                          copiat={copiedKey === cheie}
+                          onDezvaluie={() => {
+                            setRevealedSim((prev) => new Set(prev).add(x.magazin));
+                            setNumeModal(numeX);
+                            copyAndOpen(cheie, o.cod_cupon, o.link ?? undefined, x.magazin);
+                            setModalOpen(true);
+                          }}
+                          onIesire={() => trackClick("cod", x.magazin, o.cod_cupon)}
+                        />
+                      );
+                    })}
+                  </div>
                 </div>
               )}
             </div>
-
-            {/* Info */}
-            <div className="flex-1 text-center sm:text-left">
-              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 mb-1">
-                <h1 className="text-2xl md:text-3xl font-black text-[var(--foreground)]">Cod Reducere {nume} {an}</h1>
-                {m.rank && m.rank <= 20 && (
-                  <span className="text-xs font-bold bg-[#ddf93c]/15 text-[var(--accent-text)] border border-[var(--accent-text)]/30 px-2 py-0.5 rounded-full">Top #{m.rank} România</span>
-                )}
-                {m.exclusiv && (
-                  <span className="text-xs font-bold bg-[#ddf93c] text-[#0c1000] px-2 py-0.5 rounded-full">Exclusiv</span>
-                )}
-              </div>
-              <p className="text-[var(--foreground)] text-base font-semibold mb-1">{hookMagazin(m.promotii, nume)}</p>
-              <p className="text-[var(--text-soft)] text-sm mb-3">{m.categorie}</p>
-
-              {/* Stats pills */}
-              <div className="flex flex-wrap justify-center sm:justify-start gap-2 mb-4">
-                {m.promotii.length > 0 && (
-                  <div className="flex items-center gap-1.5 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold px-3 py-1.5 rounded-full">
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"/>
-                    {cuNumar(m.promotii.length, "ofertă activă", "oferte active")}
-                  </div>
-                )}
-                {m.trend > 0 && (
-                  <div className="flex items-center gap-1.5 bg-[#ddf93c]/10 border border-[var(--accent-text)]/20 text-[var(--accent-text)] text-xs font-semibold px-3 py-1.5 rounded-full">
-                    ↑ Trending +{m.trend}%
-                  </div>
-                )}
-                {showDealScore && <DealScoreBadge score={dealScore} />}
-                {zileDeLaVerificare !== null && (
-                  <div className="flex items-center gap-1.5 bg-[#ddf93c]/10 border border-[var(--accent-text)]/20 text-[var(--accent-text)] text-xs font-semibold px-3 py-1.5 rounded-full">
-                    {zileDeLaVerificare <= 0 ? (
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#ddf93c] animate-pulse"/>
-                    ) : null}
-                    ✓ {zileDeLaVerificare <= 0
-                      ? "Actualizat azi"
-                      : `Actualizat acum ${cuNumar(zileDeLaVerificare, "zi", "zile")}`}
-                  </div>
-                )}
-              </div>
-
-              <div className="flex items-center gap-3 flex-wrap">
-                {linkIesire && (
-                <a href={linkIesire} target="_blank" rel="sponsored noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-gradient-to-r from-[#ddf93c] to-[#ddf93c] hover:from-[#ddf93c] hover:to-[#ddf93c] text-[#0c1000] font-bold px-5 py-2.5 rounded-xl text-sm transition-colors shadow-lg shadow-[#ddf93c]/25" onClick={() => trackClick("vizita_magazin", m.magazin)}>
-                  Vizitează {nume}
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                  </svg>
-                </a>
-                )}
-                <ShareButton
-                  pageSlug={`/cod-reducere/${m.magazin}`}
-                  title={`Cod reducere ${nume} — AmCupon.ro`}
-                  text={`💰 ${m.promotii.length > 0 ? m.promotii.length + " reduceri active" : "Oferte"} la ${nume}, pe AmCupon.ro`}
-                  label="Distribuie"
-                />
-                <PriceAlert magazin={m.magazin} numeMagazin={nume} />
-              </div>
-            </div>
-          </div>
-
-          {/* ── BANNER PUBLICITAR 2PERFORMANT (mutat sub hero — vizibilitate maxima,
-               era ingropat dupa tab-uri+CTA-uri+blog, sectiunea 13/15) ──────────── */}
-          {banner && (
-            <div className="px-4 pb-4 flex justify-center">
-              <BannerAd2P banner={banner} />
-            </div>
           )}
 
-          {blackFriday && <div className="px-4 pb-4">{blackFriday}</div>}
-
-          {/* ── TAB NAVIGATION ─────────────────────────────────────────────── */}
-          <div role="tablist" aria-label="Secțiuni magazin" className="flex gap-0 border-t border-[var(--border)] overflow-x-auto" style={{scrollbarWidth:"none"}}>
-            {tabs.map(t => (
-              <button
-                key={t.id} id={`tab-${t.id}`} role="tab"
-                aria-selected={tabActiv === t.id} aria-controls={`panou-${t.id}`}
-                onClick={() => setTabActiv(t.id)}
-                className={`flex items-center gap-2 px-5 py-3.5 text-sm font-bold border-b-2 transition-all whitespace-nowrap ${
-                  tabActiv === t.id
-                    ? "border-[var(--accent-text)] text-[var(--foreground)]"
-                    : "border-transparent text-[var(--text-soft)] hover:text-[var(--text-soft)] hover:border-[var(--border-strong)]"
-                }`}>
-                <t.icon className="w-4 h-4" />
-                <span>{t.label}</span>
-                {t.count > 0 && (
-                  <span className={`text-xs px-1.5 py-0.5 rounded-full font-black ${
-                    tabActiv === t.id ? "bg-[#ddf93c] text-[#0c1000]" : "bg-[var(--surface-high)] text-[var(--text-soft)]"
-                  }`}>{t.count}</span>
-                )}
-              </button>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* ── TAB CONTENT ────────────────────────────────────────────────────── */}
-      <div className="max-w-5xl mx-auto px-4 py-8 text-[var(--foreground)]">
-
-        {/* Toate panourile stau in DOM, ascunse cu `hidden` (= display:none), NU montate
-            conditionat. Motivul e masurat, nu stilistic: cu montare conditionata, in HTML
-            ajungea DOAR tabul implicit, deci titlurile a 1.201 produse reale de la libris.ro
-            (si ale celorlalte 72 de magazine cu feed) nu existau nicaieri pentru Google —
-            ~900-2.400 caractere de text UNIC pe pagina, exact ce ne lipsea fata de concurenta.
-            Continutul din tab-uri e indexat normal; `hidden` e si corect pentru cititoarele
-            de ecran, care sar peste panourile inactive. */}
-        {/* ─── TAB: CODURI ──────────────────────────────────────────────────── */}
-        {/* `am-fade` reporneste la fiecare afisare: animatia CSS se reia cand `hidden` dispare. */}
-        <div
-          key="coduri" id="panou-coduri" role="tabpanel" aria-labelledby="tab-coduri"
-          hidden={tabActiv !== "coduri"}
-          className="am-fade"
-        >
-            {cuCod.length > 0 ? (
-              <section>
-                {/* ── Cum functioneaza (3 pasi) ─────────────────────────────────── */}
-                <div className="flex items-stretch gap-2 sm:gap-4 mb-7 bg-[var(--surface)]/60 border border-[var(--border)] rounded-xl p-4">
-                  {[
-                    { nr: "1", icon: ClipboardCopy, titlu: "Copiază codul", desc: "Click pe cod — se copiază automat" },
-                    { nr: "2", icon: ShoppingCart, titlu: "Mergi la magazin", desc: `Te redirecționăm la ${nume}` },
-                    { nr: "3", icon: CheckCircle2, titlu: "Aplică la checkout", desc: `Lipește codul în câmpul "Voucher"` },
-                  ].map((pas) => (
-                    <div key={pas.nr} className="flex-1 flex flex-col items-center text-center gap-1.5 px-2">
-                      <pas.icon className="w-5 h-5 text-[var(--accent-text)]" />
-                      <span className="text-[10px] font-black text-[var(--accent-text)] uppercase tracking-widest">Pas {pas.nr}</span>
-                      <span className="text-xs font-bold text-[var(--foreground)] leading-tight">{pas.titlu}</span>
-                      <span className="text-[11px] text-[var(--text-muted)] leading-snug hidden sm:block">{pas.desc}</span>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="flex items-center gap-3 mb-5">
-                  <h2 className="text-xl font-black text-[var(--foreground)]">Coduri Reducere {nume} {an}</h2>
-                  <span className="text-sm text-[var(--text-muted)]">{cuNumar(cuCod.length, "cod activ", "coduri active")}</span>
-                </div>
-                <div className="cc-list">
-                  {cuCod.map((promo, idx) => {
-                    const link     = linkPromotie(m, promo);
-                    const discount = extractDiscount(promo.nume) || extractDiscount(promo.descriere || "");
-                    const hash     = hashCupon(promo.cod_cupon, promo.nume);
-                    return (
-                      <CuponCard
-                        key={idx}
-                        promo={promo}
-                        numeMagazin={nume}
-                        logoSrc={logoSrc}
-                        link={link}
-                        top={ordCod.top && idx === 0}
-                        dezvaluit={revealed.has(idx)}
-                        copiat={copiat === idx}
-                        onDezvaluie={() => copiazaCod(idx, promo.cod_cupon, link)}
-                        onIesire={() => trackClick("cod", m.magazin, promo.cod_cupon)}
-                        extra={
-                          <div className="flex flex-wrap items-center gap-3">
-                            {/* Vot comunitar. Amprenta pe (cod + nume), NU pe index: indexul se
-                                schimba la fiecare rulare de pipeline, deci voturile s-ar lipi de alt cupon. */}
-                            <VotCupon magazin={m.magazin} cuponHash={hash} initial={voturi[hash]} />
-                            {revealed.has(idx) && (
-                              <ShareButton
-                                pageSlug={`/cod-reducere/${m.magazin}`}
-                                title={`Cod reducere ${discount ? discount + " " : ""}${nume}`}
-                                text={`🔥 Cod reducere${discount ? " " + discount : ""} la ${nume}!\nCod: ${promo.cod_cupon}${promo.descriere && promo.descriere !== promo.nume ? "\n" + promo.descriere : ""}`}
-                                small
-                                label="Trimite"
-                              />
-                            )}
-                          </div>
-                        }
-                      />
-                    );
-                  })}
-                </div>
-              </section>
-            ) : (
-              <div>
-                {/* ZERO FUNDATURI (23.09.2026, interfata noua). E starea pe care o vad 86% din
-                    vizitatori. Alerta pe email e actiunea principala, deci formularul e deschis din
-                    start; dedesubt, carduri INTREGI cu codul real al magazinelor similare — filtrate pe
-                    cod, nu pe `are_promotie`, altfel l-am trimite la alta pagina fara coduri. */}
-                <div className="cc-empty">
-                  <div className="cc-empty-i"><Bell className="w-5 h-5" /></div>
-                  <div className="flex-1 min-w-0">
-                    <h2>Acum nu e niciun cod activ la {nume}.</h2>
-                    <p className="cc-empty-txt">
-                      {similareCuCod.length > 0
-                        ? `Îți scriem pe email în ziua în care apare unul — sau vezi mai jos ${similareCuCod.length === 1 ? "un magazin din aceeași categorie care are" : "magazine din aceeași categorie care au"} cod chiar acum.`
-                        : "Îți scriem pe email în ziua în care apare unul. Căutăm coduri noi de trei ori pe zi."}
-                    </p>
-                    <PriceAlert magazin={m.magazin} numeMagazin={nume} deschis />
-                  </div>
-                </div>
-
-                {similareCuCod.length > 0 && (
-                  <div className="mt-7">
-                    <h2 className="text-lg font-black text-[var(--foreground)]">{similareCuCod.length === 1 ? "Are cod chiar acum" : "Au cod chiar acum"}</h2>
-                    <p className="text-sm text-[var(--text-muted)] mt-0.5 mb-3">{similareCuCod.length === 1 ? "Un magazin" : "Magazine"} din aceeași categorie cu {nume}.</p>
-                    <div className="cc-list">
-                      {similareCuCod.map((x) => {
-                        const o = x.oferta!;
-                        const cheie = `s-${x.magazin}`;
-                        const numeX = numeAfisat(x.magazin);
-                        return (
-                          <CuponCard
-                            key={x.magazin}
-                            promo={o}
-                            numeMagazin={numeX}
-                            logoSrc={x.logo_url}
-                            link={o.link}
-                            dezvaluit={revealedSim.has(x.magazin)}
-                            copiat={copiedKey === cheie}
-                            onDezvaluie={() => {
-                              setRevealedSim((prev) => new Set(prev).add(x.magazin));
-                              setNumeModal(numeX);
-                              copyAndOpen(cheie, o.cod_cupon, o.link ?? undefined, x.magazin);
-                              setModalOpen(true);
-                            }}
-                            onIesire={() => trackClick("cod", x.magazin, o.cod_cupon)}
-                          />
-                        );
-                      })}
-                    </div>
-                  </div>
-                )}
-
-                {(faraCodd.length > 0 || linkIesire) && (
-                  <div className="flex flex-wrap gap-3 mt-6">
-                    {faraCodd.length > 0 && (
-                      <button onClick={() => setTabActiv("oferte")}
-                        className="bg-[var(--accent)] text-[var(--on-accent)] font-bold px-5 py-2.5 rounded-xl text-sm hover:bg-[var(--accent-deep)] transition-colors">
-                        {faraCodd.length === 1 ? "Vezi oferta activă" : `Vezi ${cuNumar(faraCodd.length, "ofertă activă", "oferte active")}`}
-                      </button>
-                    )}
-                    {linkIesire && (
-                      <a href={linkIesire} target="_blank" rel="sponsored noopener noreferrer"
-                        className="bg-[var(--surface-alt)] border border-[var(--border-strong)] text-[var(--text-soft)] font-bold px-5 py-2.5 rounded-xl text-sm hover:border-[var(--accent)] hover:text-[var(--foreground)] transition-colors">
-                        Vizitează {nume}
-                      </a>
-                    )}
-                  </div>
-                )}
+          {/* ── PRODUSE: acelasi card ca pe /top si pe ghiduri (formatul care a adus clicuri). Toate stau in HTML,
+              si cele din <details>: titlurile lor sunt textul unic al paginii (17.08.2026, +52% text). */}
+          {produse.length > 0 && (
+            <section aria-labelledby="produse-h">
+              <div className="flex items-baseline justify-between gap-3 mb-3">
+                <h2 id="produse-h" className={H2}>Produse {nume}</h2>
+                <span className="text-sm text-[var(--text-muted)] whitespace-nowrap">{produse.length} produse</span>
               </div>
-            )}
-
-            {/*
-              AL DOILEA FAQ, ELIMINAT 07.09.2026.
-              Pagina avea DOUA sectiuni „Intrebari frecvente" — verificat pe HTML-ul live:
-              titlul aparea de 2 ori, iar intrebarea „e verificat?" primea doua raspunsuri
-              DIFERITE. Cel de aici afirma doua neadevaruri, pe toate paginile de magazin:
-                1. „Actualizate zilnic din platforma 2Performant" — fals pentru 644 din 1.148
-                   de magazine (584 Impact + 57 Awin + 3 directe), care nu vin de la 2P.
-                2. „Fiecare cod afiseaza rata de succes" — rata de succes a fost ELIMINATA
-                   din UI pe 03.07.2026 fiindca era fabricata (`random.Random(hash(...))`).
-                   FAQ-ul promitea deci ceva ce pagina nu are si nu trebuie sa aiba.
-              Sursa unica ramane `intrebari` din `page.tsx` — corecta, generata din datele
-              magazinului, si din ea se deriva SI schema `FAQPage` (vezi nota de acolo,
-              16.08.2026). Doua FAQ-uri pe aceeasi pagina nu se puteau mentine sincron:
-              exact tiparul #3 din docs/LECTII-TEHNICE.md.
-            */}
-          </div>
-
-        {/* ─── TAB: OFERTE ──────────────────────────────────────────────────── */}
-        <div
-          key="oferte" id="panou-oferte" role="tabpanel" aria-labelledby="tab-oferte"
-          hidden={tabActiv !== "oferte"}
-          className="am-fade"
-        >
-            {faraCodd.length > 0 ? (
-              <section>
-                <div className="flex items-center gap-3 mb-5">
-                  <h2 className="text-xl font-black text-[var(--foreground)]">Oferte {nume} {an}</h2>
-                  <span className="text-sm text-[var(--text-muted)]">{cuNumar(faraCodd.length, "ofertă activă", "oferte active")}</span>
-                </div>
-                <div className="cc-list">
-                  {faraCodd.map((promo, idx) => {
-                    const link     = linkPromotie(m, promo);
-                    const discount = extractDiscount(promo.nume) || extractDiscount(promo.descriere || "");
-                    return (
-                      <CuponCard
-                        key={idx}
-                        promo={promo}
-                        numeMagazin={nume}
-                        logoSrc={logoSrc}
-                        link={link}
-                        top={ordOferte.top && idx === 0}
-                        extra={
-                          <ShareButton
-                            pageSlug={`/cod-reducere/${m.magazin}`}
-                            title={`Oferta${discount ? " " + discount : ""} ${nume}`}
-                            text={`🏷 Oferta${discount ? " " + discount : ""} la ${nume}!\n${promo.descriere && promo.descriere !== promo.nume ? promo.descriere : promo.nume}`}
-                            small
-                          />
-                        }
-                      />
-                    );
-                  })}
-                </div>
-              </section>
-            ) : (
-              <div className="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-12 text-center">
-                <Tag className="w-12 h-12 mb-4 mx-auto text-[var(--border-strong)]" />
-                <h3 className="text-lg font-black text-[var(--foreground)] mb-2">Nicio ofertă activă</h3>
-                <p className="text-[var(--text-muted)] text-sm mb-5">Revino curând. Ofertele se actualizează de trei ori pe zi.</p>
-                {cuCod.length > 0 && (
-                  <button onClick={() => setTabActiv("coduri")}
-                    className="bg-[#ddf93c] text-[#0c1000] font-bold px-5 py-2.5 rounded-xl text-sm hover:bg-[#ddf93c] transition-colors">
-                    {cuCod.length === 1 ? "Vezi codul disponibil" : `Vezi ${cuNumar(cuCod.length, "cod disponibil", "coduri disponibile")}`}
-                  </button>
-                )}
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+                {produse.slice(0, 8).map((p, i) => <CardProdus key={i} p={{ ...p, merchant_slug: m.magazin }} />)}
               </div>
-            )}
-          </div>
-
-        {/* ─── TAB: PRODUSE ─────────────────────────────────────────────────── */}
-        <div
-          key="produse" id="panou-produse" role="tabpanel" aria-labelledby="tab-produse"
-          hidden={tabActiv !== "produse"}
-          className="am-fade"
-        >
-            {produse.length > 0 ? (
-              <section>
-                <div className="flex items-center justify-between mb-5">
-                  <div className="flex items-center gap-3">
-                    <h2 className="text-xl font-black text-[var(--foreground)]">Produse {nume} cu reducere</h2>
-                    <span className="text-sm text-[var(--text-muted)]">{cuNumar(produse.length, "produs", "produse")}</span>
+              {produse.length > 8 && (
+                <details className="mt-3">
+                  <summary className="cursor-pointer text-sm font-bold text-[var(--accent-text)]">Încă {produse.length - 8} produse</summary>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 mt-3">
+                    {produse.slice(8).map((p, i) => <CardProdus key={i} p={{ ...p, merchant_slug: m.magazin }} />)}
                   </div>
-                  <Link href="/produse" className="text-sm font-semibold text-[var(--accent-text)] hover:text-[var(--accent-text)]">Toate produsele →</Link>
-                </div>
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-                  {produse.map((p, i) => <ProdusCard key={i} produs={p}/>)}
-                </div>
-              </section>
-            ) : (
-              <div className="bg-[var(--surface)] rounded-xl border border-[var(--border)] p-12 text-center">
-                <ShoppingBag className="w-12 h-12 mb-4 mx-auto text-[var(--border-strong)]" />
-                <h3 className="text-lg font-black text-[var(--foreground)] mb-2">Feed produse indisponibil</h3>
-                <p className="text-[var(--text-muted)] text-sm mb-5">Produsele individuale nu sunt disponibile pentru acest magazin{linkIesire ? ". Vizitează direct site-ul." : "."}</p>
-                {linkIesire && (
-                <a href={linkIesire} target="_blank" rel="sponsored noopener noreferrer"
-                  className="bg-[#ddf93c] text-[#0c1000] font-bold px-5 py-2.5 rounded-xl text-sm hover:bg-[#ddf93c] transition-colors">
-                  Vizitează {nume}
-                </a>
-                )}
-              </div>
-            )}
-          </div>
-
-        {/* ─── TAB: RECENZII ────────────────────────────────────────────────── */}
-        <div
-          key="recenzii" id="panou-recenzii" role="tabpanel" aria-labelledby="tab-recenzii"
-          hidden={tabActiv !== "recenzii"}
-          className="am-fade"
-        >
-            <ReviewSection magazin={m.magazin} />
-          </div>
-
-        {/* ── ISTORICUL OFERTELOR (server-rendered, 24.09.2026) ────────────
-            Imediat sub taburi: pe pagina fara oferta (86% din vizite) e raspunsul la
-            intrebarea pe care starea goala o lasa deschisa — magazinul da coduri, si cat de des? */}
-        {istoric}
-
-        {/* ── BOTTOM CTAs (toate tab-urile) ────────────────────────────────── */}
-        <div className="mt-8 space-y-3">
-          {/* 23.09.2026: aici era „Extensie Chrome AmCupon — Instaleaza gratuit", cu link direct
-              in Chrome Web Store. Extensia n-a fost publicata niciodata (draft din 26.05, vezi
-              CLAUDE.md, „Chrome Extension"), deci butonul ducea la o pagina inexistenta, pe
-              fiecare pagina de magazin. Revine doar cand Alex confirma ca e live. */}
-          {/* Pe pagina fara nicio oferta, alerta pe email e deja deschisa sus (starea goala);
-              a doua invitatie la newsletter, lipita dedesubt, ar cere acelasi lucru de doua ori. */}
-          {m.promotii.length > 0 && (
-          <div className="bg-[#ddf93c]/8 border border-[var(--accent-text)]/25 rounded-xl p-5 flex flex-col sm:flex-row items-center gap-4">
-            <Mail className="w-6 h-6 shrink-0 text-[var(--accent-text)]" />
-            <div className="flex-1 text-center sm:text-left">
-              <p className="font-bold text-[var(--foreground)] text-sm">Nu rata promoțiile viitoare {nume}</p>
-              <p className="text-[var(--text-soft)] text-xs mt-0.5">Săptămânal — cele mai bune coduri pe email. Gratuit.</p>
-            </div>
-            <Link href="/newsletter"
-              className="shrink-0 bg-gradient-to-r from-[#ddf93c] to-[#ddf93c] hover:from-[#ddf93c] hover:to-[#ddf93c] text-[#0c1000] font-bold text-xs px-5 py-2.5 rounded-xl transition-colors whitespace-nowrap">
-              Abonează-te →
-            </Link>
-          </div>
+                </details>
+              )}
+            </section>
           )}
-        </div>
 
+          {/* ── ISTORICUL OFERTELOR (server-rendered, 24.09.2026): pe pagina fara oferta (86% din vizite) e
+              raspunsul la intrebarea pe care starea goala o lasa deschisa — magazinul da coduri, si cat de des? */}
+          {istoric}
 
-        {/* ── CONTEXT REAL (server-rendered) ───────────────────────────────
-            Preturi din feed + pozitia magazinului in categoria lui. Vine ca slot
-            din page.tsx ca sa fie in HTML-ul livrat, nu adaugat dupa hidratare. */}
-        {context}
+          {/* ── CONTEXT REAL (server-rendered): preturi din feed + pozitia magazinului in categoria lui. */}
+          {context}
 
-        {/* ── ARTICOL BLOG ─────────────────────────────────────────────────── */}
-        {blogPost && (
-          <section className="mt-10">
-            <h2 className="text-lg font-black text-[var(--foreground)] mb-4">Ghid complet {nume}</h2>
-            <a href={`/blog/${blogPost.slug}`}
-              className="group flex gap-4 bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--accent-text)] rounded-xl p-4 hover:shadow-lg hover:shadow-black/40 transition-all">
-              <div className="relative w-20 h-20 shrink-0 rounded-xl overflow-hidden bg-[var(--surface-alt)]">
-                <Image src={blogPost.cover} alt={blogPost.title} fill sizes="80px"
-                  className="object-cover group-hover:scale-105 transition-transform duration-300" unoptimized />
+          {blogPost && (
+            <section aria-labelledby="ghid-h">
+              <h2 id="ghid-h" className={`${H2} mb-3`}>Ghid {nume}</h2>
+              <a href={`/blog/${blogPost.slug}`}
+                className="group flex gap-4 bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--border-strong)] rounded-xl p-4 transition-colors">
+                <div className="relative w-16 h-16 shrink-0 rounded-xl overflow-hidden bg-[var(--surface-alt)]">
+                  <Image src={blogPost.cover} alt={blogPost.title} fill sizes="64px" className="object-cover" unoptimized />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <p className="text-sm font-bold line-clamp-2 group-hover:text-[var(--accent-text)] transition-colors leading-snug">{blogPost.title}</p>
+                  <p className="text-xs text-[var(--text-soft)] mt-1 line-clamp-2 leading-relaxed">{blogPost.excerpt}</p>
+                </div>
+              </a>
+            </section>
+          )}
+
+          {similare.length > 0 && (
+            <section aria-labelledby="sim-h">
+              <div className="flex items-baseline justify-between mb-3">
+                <h2 id="sim-h" className={H2}>Magazine similare</h2>
+                <Link href="/toate-magazinele" className="text-sm font-bold text-[var(--accent-text)] hover:underline">Toate →</Link>
               </div>
-              <div className="flex-1 min-w-0">
-                <span className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-wide">Articol blog</span>
-                <p className="text-sm font-bold text-[var(--foreground)] mt-0.5 line-clamp-2 group-hover:text-[var(--accent-text)] transition-colors leading-snug">
-                  {blogPost.title}
-                </p>
-                <p className="text-xs text-[var(--text-soft)] mt-1 line-clamp-2 leading-relaxed">{blogPost.excerpt}</p>
-                <span className="inline-flex items-center gap-1 mt-2 text-xs font-bold text-[var(--accent-text)] group-hover:text-[var(--accent-text)]">
-                  Citește ghidul
-                  <svg className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/>
-                  </svg>
-                </span>
+              <div className="grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-8 gap-2.5">
+                {similare.map(s => {
+                  const numeSim = numeAfisat(s.magazin);
+                  const pctSim  = maxPct(s.promotii);
+                  return (
+                    <a key={s.magazin} href={`/cod-reducere/${s.magazin}`}
+                      className="group flex flex-col items-center gap-1.5 p-2 bg-[var(--surface)] rounded-xl border border-[var(--border)] hover:border-[var(--border-strong)] transition-colors text-center">
+                      <div className="relative w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center bg-[#ffffff]">
+                        {s.logo_url ? (
+                          <Image src={s.logo_url} alt={numeSim} fill sizes="40px" className="object-contain p-0.5" unoptimized />
+                        ) : (
+                          <span className="text-base font-black text-[#14181c]">{numeSim.charAt(0)}</span>
+                        )}
+                      </div>
+                      <span className="text-[11px] font-semibold text-[var(--text-soft)] leading-tight line-clamp-1 w-full">{numeSim}</span>
+                      {pctSim > 0 ? (
+                        <span className="text-[10px] font-black text-[var(--accent-text)]">-{pctSim}%</span>
+                      ) : s.cod_cupon ? (
+                        <span className="text-[10px] font-bold text-[var(--accent-text)]">Cod</span>
+                      ) : s.are_promotie ? (
+                        <span className="text-[10px] text-[var(--text-muted)]">Ofertă</span>
+                      ) : null}
+                    </a>
+                  );
+                })}
               </div>
-            </a>
-          </section>
-        )}
+            </section>
+          )}
 
-        {/* ── MAGAZINE SIMILARE ────────────────────────────────────────────── */}
-        {similare.length > 0 && (
-          <section className="mt-10">
-            <div className="flex items-center justify-between mb-4">
-              <h2 className="text-lg font-black text-[var(--foreground)]">Magazine similare</h2>
-              <Link href="/toate-magazinele" className="text-sm font-semibold text-[var(--accent-text)] hover:text-[var(--accent-text)]">Toate →</Link>
-            </div>
-            <div className="grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-8 gap-3">
-              {similare.map(s => {
-                const numeSim = numeAfisat(s.magazin);
-                const pctSim  = maxPct(s.promotii);
-                return (
-                  <a key={s.magazin} href={`/cod-reducere/${s.magazin}`}
-                    className="group flex flex-col items-center gap-1.5 p-2.5 bg-[var(--surface)] rounded-xl border border-[var(--border)] hover:border-[var(--accent-text)] hover:shadow-sm transition-all text-center">
-                    <div className="relative w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center bg-[var(--surface)] border border-[var(--border)]">
-                      {s.logo_url ? (
-                        <Image src={s.logo_url} alt={numeSim} fill sizes="40px" className="object-contain p-0.5" unoptimized />
-                      ) : (
-                        <span className="text-base font-black text-[var(--text-muted)]">{numeSim.charAt(0)}</span>
-                      )}
-                    </div>
-                    <span className="text-[11px] font-semibold text-[var(--text-soft)] group-hover:text-[var(--accent-text)] leading-tight line-clamp-1 w-full">{numeSim}</span>
-                    {pctSim > 0 ? (
-                      <span className="text-[10px] font-black text-[var(--accent-text)]">-{pctSim}%</span>
-                    ) : s.cod_cupon ? (
-                      <span className="text-[10px] font-bold text-emerald-600">Cod</span>
-                    ) : s.are_promotie ? (
-                      <span className="text-[10px] text-[var(--text-muted)]">Oferta</span>
-                    ) : null}
-                  </a>
-                );
-              })}
-            </div>
-          </section>
-        )}
+          {comparatii.length > 0 && (
+            <section aria-labelledby="cmp-h">
+              <div className="flex items-baseline justify-between mb-3">
+                <h2 id="cmp-h" className={H2}>{nume} vs alte magazine</h2>
+                <Link href="/comparatii" className="text-sm font-bold text-[var(--accent-text)] hover:underline">Toate →</Link>
+              </div>
+              <div className="grid sm:grid-cols-2 gap-2.5">
+                {comparatii.map(c => (
+                  <Link key={c.slug} href={`/comparații/${c.slug}`}
+                    className="flex items-center justify-between gap-3 px-4 py-3 bg-[var(--surface)] rounded-xl border border-[var(--border)] hover:border-[var(--border-strong)] transition-colors">
+                    <span className="text-sm font-bold text-[var(--text-soft)]">{c.label}</span>
+                    <span className="text-xs font-semibold text-[var(--text-muted)] whitespace-nowrap">Compară →</span>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
 
-        {/* ── COMPARATII (X vs Y) — link contextual intern pt SEO ──────────── */}
-        {comparatii.length > 0 && (
-          <section className="mt-10">
-            <div className="flex items-center justify-between mb-4">
-              <h2 className="text-lg font-black text-[var(--foreground)]">{nume} vs alte magazine</h2>
-              <Link href="/comparatii" className="text-sm font-semibold text-[var(--accent-text)] hover:text-[var(--accent-text)]">Toate comparațiile →</Link>
-            </div>
-            <div className="grid sm:grid-cols-2 gap-3">
-              {comparatii.map(c => (
-                <Link key={c.slug} href={`/comparatii/${c.slug}`}
-                  className="group flex items-center justify-between gap-3 p-4 bg-[var(--surface)] rounded-xl border border-[var(--border)] hover:border-[var(--accent-text)] transition-all">
-                  <span className="text-sm font-bold text-[var(--text-soft)] group-hover:text-[var(--accent-text)]">{c.label}</span>
-                  <span className="text-xs font-semibold text-[var(--text-muted)] group-hover:text-[var(--accent-text)] whitespace-nowrap">Compara →</span>
-                </Link>
-              ))}
-            </div>
-          </section>
-        )}
+          {descriere && descriere.paragrafe?.length > 0 && (
+            <section className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5 sm:p-6">
+              <h2 className="text-lg font-black mb-3">{descriere.titlu}</h2>
+              <div className="space-y-3 text-sm text-[var(--text-soft)] leading-relaxed">
+                {descriere.paragrafe.map((p, i) => (
+                  <p key={i}>{p}</p>
+                ))}
+              </div>
+            </section>
+          )}
 
-        {/* ── DESPRE MAGAZIN (text editorial SEO) ──────────────────────────── */}
-        {descriere && descriere.paragrafe?.length > 0 && (
-          <section className="mt-12 bg-[var(--surface)] border border-[var(--border)] rounded-xl p-6 sm:p-8">
-            <h2 className="text-lg sm:text-xl font-black text-[var(--foreground)] mb-4">{descriere.titlu}</h2>
-            <div className="space-y-3 text-sm sm:text-[15px] text-[var(--text-soft)] leading-relaxed">
-              {descriere.paragrafe.map((p, i) => (
-                <p key={i}>{p}</p>
-              ))}
-            </div>
-          </section>
-        )}
-
-        <div className="mt-10 pt-6 border-t border-[var(--border)] text-center">
-          <Link href="/" className="text-sm text-[var(--text-muted)] hover:text-[var(--accent-text)] transition-colors">
-            ← Înapoi la toate promoțiile
-          </Link>
+          <ReviewSection magazin={m.magazin} />
         </div>
       </div>
 

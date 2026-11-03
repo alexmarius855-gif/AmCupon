@@ -24,6 +24,47 @@ export const SITE = {
   ] as Link[],
 };
 
+/** Categoriile, cu slugurile reale din output.json (o categorie fara magazine nu se afiseaza). */
+export const CATEGORII_SITE: { slug: string; label: string; desc: string }[] = [
+  { slug: "fashion", label: "Fashion", desc: "Haine, pantofi și accesorii" },
+  { slug: "casa-gradina", label: "Casă & Grădină", desc: "Mobilă, decor, unelte" },
+  { slug: "electronice", label: "Electronice & IT", desc: "Telefoane, laptopuri, gadgeturi" },
+  { slug: "beauty", label: "Beauty & Îngrijire", desc: "Cosmetice, parfumuri, unghii" },
+  { slug: "sanatate", label: "Sănătate & Farmacie", desc: "Farmacie, suplimente, îngrijire" },
+  { slug: "software", label: "Software & Digital", desc: "VPN, hosting, aplicații" },
+  { slug: "sport", label: "Sport & Fitness", desc: "Echipament sportiv și outdoor" },
+  { slug: "copii", label: "Copii & Familie", desc: "Jucării, bebe, îmbrăcăminte" },
+  { slug: "calatorii", label: "Călătorii", desc: "Cazare, zboruri, eSIM" },
+  { slug: "auto-moto", label: "Auto & Moto", desc: "Piese, anvelope, accesorii" },
+  { slug: "carti-educatie", label: "Cărți & Educație", desc: "Cărți, e-books, manuale" },
+  { slug: "mancare-bauturi", label: "Mâncare & Băuturi", desc: "Cafea, vin, alimente" },
+  { slug: "animale", label: "Pet Shop", desc: "Hrană și accesorii pentru animale" },
+  { slug: "cadouri-flori", label: "Cadouri & Flori", desc: "Flori, cadouri, experiențe" },
+  { slug: "bijuterii", label: "Bijuterii & Ceasuri", desc: "Bijuterii, ceasuri, accesorii" },
+  { slug: "financiar", label: "Financiar", desc: "Carduri, credite, asigurări" },
+  { slug: "servicii", label: "Servicii", desc: "Servicii online și abonamente" },
+  { slug: "marketplace", label: "Marketplace", desc: "Magazine cu de toate" },
+];
+
+/** Paginile pe teme (fiecare are oferte + ghid), listate pe /categorii. */
+export const NISE_SITE: Link[] = [
+  { href: "/fashion", label: "Fashion & Haine" },
+  { href: "/electronice", label: "Electronice & IT" },
+  { href: "/frumusete", label: "Beauty & Cosmetice" },
+  { href: "/parfumuri", label: "Parfumuri" },
+  { href: "/casa", label: "Casă & Grădină" },
+  { href: "/sport", label: "Sport & Outdoor" },
+  { href: "/farmacie", label: "Farmacie online" },
+  { href: "/sanatate", label: "Sănătate & Naturiste" },
+  { href: "/copii", label: "Copii & Jucării" },
+  { href: "/animale", label: "Animale de companie" },
+  { href: "/calatorie", label: "Vacanțe & Travel" },
+  { href: "/gadgets", label: "Gadgets & Tech" },
+  { href: "/moto", label: "Auto-Moto" },
+  { href: "/carti", label: "Cărți & Educație" },
+  { href: "/idei-cadouri", label: "Idei de cadouri" },
+];
+
 /** Meniul de sus, pe ecrane late. */
 export const MENIU_PRINCIPAL: Link[] = [
   { href: "/oferte-azi", label: "Oferte azi" },

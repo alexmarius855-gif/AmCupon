@@ -1,9 +1,8 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import OferteNisa, { AntetNisa } from "../components/OferteNisa";
 import fs from "fs";
 import path from "path";
-import MagazinCard from "../components/MagazinCard";
-import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
 import { esteInCategorie } from "../../lib/categoriiNisa";
 import { laParteneri } from "@/lib/cifreSite";
@@ -19,7 +18,7 @@ interface Magazin {
 export const metadata: Metadata = {
   title: "Cod Reducere Cărți Online România 2026 — Libris, Cărturești",
   description: `Coduri de reducere cărți online ${laParteneri(NISA_CATEGORII.carti)}. Cărți, audiobook-uri, e-book-uri la prețuri reduse. Actualizate zilnic.`,
-  keywords: ["cod reducere cărți", "reduceri libris", "cărți ieftine online", "cod reducere elefant", "carturesti reducere", "cărți online românia", "audiobook reducere"],
+  keywords: ["cod reducere carti", "reduceri libris", "carti ieftine online", "cod reducere elefant", "carturesti reducere", "carti online românia", "audiobook reducere"],
   alternates: { canonical: "https://amcupon.ro/carti" },
   openGraph: { title: "Cărți Online 2026 | AmCupon.ro", url: "https://amcupon.ro/carti", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
@@ -27,14 +26,6 @@ export const metadata: Metadata = {
 const TOP_BOOKS = ["libris.ro","carturesti.ro","librarie.net"];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_BOOKS = ["carti-educatie"];
-const AVANTAJE = [
-  { icon: "📚", titlu: "Ficțiune & Romane", desc: "Bestselleruri românești și internaționale" },
-  { icon: "🧠", titlu: "Non-ficțiune", desc: "Dezvoltare personală, business, psihologie" },
-  { icon: "👶", titlu: "Cărți Copii", desc: "Povești, educative, enciclopedii pentru cei mici" },
-  { icon: "🎓", titlu: "Manuale & Cursuri", desc: "Manuale școlare, ghiduri profesionale" },
-  { icon: "🎧", titlu: "Audiobook-uri", desc: "Ascultă cărți în mașină, la sală, în parc" },
-  { icon: "📱", titlu: "E-book-uri", desc: "Cărți digitale — instant, fără livrare" },
-];
 
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Cărți Online 2026","url":"https://amcupon.ro/carti","description":"Coduri și oferte de la librăriile online partenere AmCupon" };
 
@@ -62,48 +53,8 @@ export default function CartiPage() {
           </div>
         </nav>
 
-        <section className="bg-gradient-to-br from-[#c3dd2c] via-[#ddf93c] to-[#c3dd2c] text-[#0c1000] py-12 px-4">
-          <div className="max-w-6xl mx-auto text-center">
-            <div className="text-5xl mb-4">📚</div>
-            <h1 className="text-3xl md:text-4xl font-black mb-3">Cărți Online {an}</h1>
-            <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              Coduri de reducere și oferte {laParteneri(NISA_CATEGORII.carti, 3)} și la alte librării partenere
-            </p>
-            <div className="flex flex-wrap justify-center gap-2">
-              {["Ficțiune","Non-ficțiune","Cărți copii","Manuale","Audiobook","E-book"].map(c => (
-                <span key={c} className="bg-[var(--surface-alt)] text-[var(--foreground)] text-sm font-semibold px-4 py-1.5 rounded-full border border-[var(--border-strong)]">{c}</span>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="max-w-6xl mx-auto px-4 py-10">
-          <h2 className="text-xl font-black text-[var(--foreground)] mb-6 text-center">Ce găsești la librăriile online</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {AVANTAJE.map(a => (
-              <div key={a.titlu} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5">
-                <div className="text-3xl mb-2">{a.icon}</div>
-                <h3 className="font-bold text-[var(--foreground)] text-sm mb-1">{a.titlu}</h3>
-                <p className="text-xs text-[var(--text-soft)]">{a.desc}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section className="max-w-6xl mx-auto px-4 pb-10">
-          <div className="flex items-center gap-3 mb-5">
-            
-            <h2 className="text-xl font-black text-[var(--foreground)]">Librării online cu reduceri active</h2>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-            {magazine.map((m) => (
-              <MagazinCard key={m.magazin} m={m} />
-            ))}
-          </div>
-        </section>
-        <NewsletterCTA />
-
-
+        <AntetNisa titlu={<>Cărți Online {an}</>}>Coduri de reducere și oferte {laParteneri(NISA_CATEGORII.carti, 3)} și la alte librării partenere</AntetNisa>
+        <OferteNisa magazine={magazine} titlu="Librării online cu reduceri active" />
         <NisaProduse
           merchantSlugs={["elefant.ro","carturesti.ro","librarie.net","bookhub.ro"]}
           catSlug="carti"
@@ -111,6 +62,12 @@ export default function CartiPage() {
           culoareAccent="indigo"
           limit={12}
         />
+
+        
+
+        
+
+        
 
         <section className="bg-[var(--surface)] border-t border-[var(--border)] py-10 px-4">
           <div className="max-w-3xl mx-auto">
@@ -137,31 +94,9 @@ export default function CartiPage() {
           </div>
         </section>
 
-        <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Explorează și alte categorii</h2>
-          <div className="flex flex-wrap gap-2">
-            {[
-              { href: "/idei-cadouri", label: "🎁 Idei Cadouri" },
-              { href: "/copii", label: "👶 Copii" },
-              { href: "/sanatate", label: "🌿 Sănătate" },
-              { href: "/categorii", label: "📂 Categorii" },
-              { href: "/blog", label: "✍️ Blog" },
-              { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
-            ].map(l => (
-              <a key={l.href} href={l.href}
-                className="bg-[var(--surface)] hover:bg-[var(--surface-alt)] hover:text-[var(--accent-text)] text-[var(--text-soft)] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[var(--border)] hover:border-[#c9ced5]">
-                {l.label}
-              </a>
-            ))}
-          </div>
-        </section>
+        
 
-        <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)] mt-4">
-          © {an} AmCupon.ro ·{" "}
-          <Link href="/idei-cadouri" className="hover:text-[var(--accent-text)]">Idei Cadouri</Link>{" · "}
-          <Link href="/copii" className="hover:text-[var(--accent-text)]">Copii</Link>{" · "}
-          <Link href="/categorii" className="hover:text-[var(--accent-text)]">Categorii</Link>
-        </footer>
+        
       </div>
     </>
   );

@@ -1,9 +1,8 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import OferteNisa, { AntetNisa } from "../components/OferteNisa";
 import fs from "fs";
 import path from "path";
-import MagazinCard from "../components/MagazinCard";
-import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
 import { esteInCategorie } from "../../lib/categoriiNisa";
 import { laParteneri } from "@/lib/cifreSite";
@@ -63,22 +62,15 @@ export default function FrumusetePage() {
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-[#c3dd2c] via-[#ddf93c] to-[#c3dd2c] text-[#0c1000] py-12 px-4">
-          <div className="max-w-6xl mx-auto text-center">
-            <div className="text-5xl mb-4">💄</div>
-            <h1 className="text-3xl md:text-4xl font-black mb-3">Beauty & Cosmetice cu Reducere {an}</h1>
-            <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              Parfumuri, skincare și machiaj — coduri de reducere actualizate zilnic {laParteneri(NISA_CATEGORII.frumusete)}
-            </p>
-            <div className="flex flex-wrap justify-center gap-2">
-              {SUBCATEGORII.map(s => (
-                <span key={s.label} className="bg-[var(--surface-alt)] text-[var(--foreground)] text-sm font-semibold px-4 py-1.5 rounded-full border border-[var(--border-strong)]">
-                  {s.emoji} {s.label}
-                </span>
-              ))}
-            </div>
-          </div>
-        </section>
+        <AntetNisa titlu={<>Beauty & Cosmetice cu Reducere {an}</>}>Parfumuri, skincare și machiaj — coduri de reducere actualizate zilnic {laParteneri(NISA_CATEGORII.frumusete)}</AntetNisa>
+        <OferteNisa magazine={magazine} titlu="Magazine beauty cu reduceri active" />
+        <NisaProduse
+          merchantSlugs={["notino.ro","douglas.ro","sephora.ro","makeup.ro","beautik.ro"]}
+          catSlug="beauty"
+          titlu="Produse beauty de la parteneri"
+          culoareAccent="indigo"
+          limit={12}
+        />
 
         {/* SUBCATEGORII */}
         <section className="max-w-6xl mx-auto px-4 py-10">
@@ -97,27 +89,9 @@ export default function FrumusetePage() {
         </section>
 
         {/* MAGAZINE */}
-        <section className="max-w-6xl mx-auto px-4 pb-10">
-          <div className="flex items-center gap-3 mb-5">
-            
-            <h2 className="text-xl font-black text-[var(--foreground)]">Magazine beauty cu reduceri active</h2>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-            {magazine.map((m) => (
-              <MagazinCard key={m.magazin} m={m} />
-            ))}
-          </div>
-        </section>
-        <NewsletterCTA />
+        
 
-
-        <NisaProduse
-          merchantSlugs={["notino.ro","douglas.ro","sephora.ro","makeup.ro","beautik.ro"]}
-          catSlug="beauty"
-          titlu="Produse beauty de la parteneri"
-          culoareAccent="indigo"
-          limit={12}
-        />
+        
 
         {/* SEO */}
         <section className="bg-[var(--surface)] border-t border-[var(--border)] py-10 px-4">
@@ -144,31 +118,9 @@ export default function FrumusetePage() {
           </div>
         </section>
 
-        <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Explorează și alte categorii</h2>
-          <div className="flex flex-wrap gap-2">
-            {[
-              { href: "/parfumuri", label: "🌹 Parfumuri" },
-              { href: "/sanatate", label: "🌿 Sănătate" },
-              { href: "/fashion", label: "👗 Fashion" },
-              { href: "/idei-cadouri", label: "🎁 Idei Cadouri" },
-              { href: "/farmacie", label: "💊 Farmacie" },
-              { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
-            ].map(l => (
-              <a key={l.href} href={l.href}
-                className="bg-[var(--surface)] hover:bg-[var(--surface-alt)] hover:text-[var(--accent-text)] text-[var(--text-soft)] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[var(--border)] hover:border-[#c9ced5]">
-                {l.label}
-              </a>
-            ))}
-          </div>
-        </section>
+        
 
-        <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)] mt-4">
-          © {an} AmCupon.ro ·{" "}
-          <Link href="/idei-cadouri" className="hover:text-[var(--accent-text)]">Idei Cadouri</Link>{" · "}
-          <Link href="/categorii/beauty" className="hover:text-[var(--accent-text)]">Categorie Beauty</Link>{" · "}
-          <Link href="/categorii" className="hover:text-[var(--accent-text)]">Categorii</Link>
-        </footer>
+        
       </div>
     </>
   );

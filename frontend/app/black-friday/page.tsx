@@ -2,12 +2,15 @@ import Link from "next/link";
 import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
-import MagazinCard, { CardMagazin } from "../components/MagazinCard";
-import NewsletterCTA from "../components/NewsletterCTA";
+import GrilaOferte from "../components/GrilaOferte";
+import ZilePana from "../components/ZilePana";
 import { areLinkAfiliat } from "@/lib/linkMagazin";
 import { campaniiBF, categoriiBF, toateCampaniileBF } from "@/lib/campaniiBlackFriday";
+import { deNumar } from "@/lib/acordNumeral";
+import { poolOferte, grilaOferte, type MagazinGrila } from "@/lib/grilaOferte";
+import { cuNumar } from "@/lib/oferteAcasa";
+import { aziRomania, promoBF } from "@/lib/momentBF";
 import StudiuReale from "./StudiuReale";
-import { cuNumar, deNumar } from "@/lib/acordNumeral";
 
 /**
  * Black Friday — doar magazinele la care clicul aduce comision.
@@ -17,6 +20,9 @@ import { cuNumar, deNumar } from "@/lib/acordNumeral";
  * le testeaza nimeni. Mai spunea ca Black Friday e „in ultima vineri a lunii", fals pentru
  * Romania, iar lista de top era scrisa de mana. Acum totul vine din date, prin `areLinkAfiliat`
  * (aceeasi functie ca pe restul site-ului).
+ *
+ * 03.11.2026, remodelata: datele -> ofertele de Black Friday de azi -> calendarul (69 de carduri stateau inaintea
+ * ofertelor, deci prima oferta incepea dupa ~5 ecrane pe telefon) -> studiul -> intrebari.
  *
  * Datele se schimba in fiecare an, intr-un singur loc: `public/black-friday.json`, pe care il
  * citeste si newsletterul (scripts/send_newsletter.py).
@@ -30,12 +36,12 @@ function incarcaBF() {
   // (de trei ori pe zi), deci o campanie terminata dispare singura de pe pagina.
   // 01.11.2026: si campaniile anuntate de magazine in 2Performant — sursa unica in lib/campaniiBlackFriday.ts,
   // citita si de pagina fiecarui magazin.
-  const azi = new Date().toISOString().slice(0, 10);
+  const azi = aziRomania();
   const parteneri = campaniiBF(azi)
     .map((p) => ({
       ...p,
       inCurs: p.start <= azi,
-      interval: `${zi(p.start, { day: "numeric", month: "long" })} – ${zi(p.final, { day: "numeric", month: "long" })}`,
+      interval: `${zi(p.start, { day: "numeric", month: "short" })} – ${zi(p.final, { day: "numeric", month: "short" })}`,
     }));
   const toate = toateCampaniileBF();
   const durate = toate
@@ -43,10 +49,6 @@ function incarcaBF() {
     .sort((x, y) => x - y);
   return {
     an: d.an as number,
-    emag: zi(d.emag, { weekday: "long", day: "numeric", month: "long" }),
-    international: `${zi(start, { day: "numeric" })}–${zi(final, { day: "numeric", month: "long" })}`,
-    sursa: d.sursa as string,
-    parteneri,
     // Numarul din titlu: toate campaniile anului, ca titlul sa nu se schimbe zilnic pe masura ce se termina.
     totalCampanii: toate.length,
     // Cifre despre calendar, calculate din date (fara nume de magazine): Black Friday nu mai e o singura zi.
@@ -54,12 +56,16 @@ function incarcaBF() {
     primaZi: toate.length ? zi(toate.map((c) => c.start).sort()[0], { day: "numeric", month: "long" }) : "",
     medianaZile: durate.length ? durate[Math.floor(durate.length / 2)] : 0,
     celMaiLung: durate.length ? durate[durate.length - 1] : 0,
+    dataEmag: d.emag as string,
+    dataInt: start,
+    emag: zi(d.emag, { weekday: "long", day: "numeric", month: "long" }),
+    international: `${zi(start, { day: "numeric" })}–${zi(final, { day: "numeric", month: "long" })}`,
+    sursa: d.sursa as string,
+    parteneri,
   };
 }
 
 const BF = incarcaBF();
-
-const MAX_CARDURI = 48;
 
 // „vineri, 6 noiembrie" -> „6 noiembrie", pentru descrierea scurtă din Google.
 const emagScurt = BF.emag.replace(/^[^,]+,\s*/, "");
@@ -86,22 +92,10 @@ export const metadata: Metadata = {
   },
 };
 
-interface Magazin extends CardMagazin {
-  scor_final?: number;
-}
-
-function incarca(): Magazin[] {
+function incarca(): MagazinGrila[] {
   const date = JSON.parse(fs.readFileSync(path.join(process.cwd(), "public", "output.json"), "utf-8"));
-  return Array.isArray(date) ? date : (Object.values(date)[0] as Magazin[]);
+  return Array.isArray(date) ? date : (Object.values(date)[0] as MagazinGrila[]);
 }
-
-const esteRomanesc = (m: Magazin) => /\.ro$/i.test(m.magazin);
-/**
- * 14.10.2026: la Black Friday 2025, pe 2Performant s-au vandut cel mai mult carti, fashion si farmacie (BusinessLeague,
- * citat de Capital). Partenerii din aceste categorii trec primii, dupa regula magazinelor .ro.
- */
-const CATEGORII_BF = new Set(["carti-educatie", "fashion", "sanatate"]);
-const categorieBF = (m: Magazin) => CATEGORII_BF.has(String((m as { categorie_slug?: string }).categorie_slug || ""));
 
 /** Sursa unica pentru intrebari: din ea se face si textul vizibil, si schema FAQPage. */
 function intrebari(parteneri: number, cuOferta: number) {
@@ -112,7 +106,7 @@ function intrebari(parteneri: number, cuOferta: number) {
     },
     {
       q: "Ce magazine găsesc pe AmCupon de Black Friday?",
-      a: `Doar magazinele partenere, acum ${parteneri}. Pe pagina asta apar cele ${cuOferta} care au o ofertă activă azi. eMAG, Altex și Fashion Days nu sunt parteneri AmCupon, așa că pentru ele mergi direct pe site-ul lor.`,
+      a: `Doar magazinele partenere, acum ${parteneri}. Pe pagina asta apar cele ${cuOferta} care au o ofertă de Black Friday activă azi. eMAG, Altex și Fashion Days nu sunt parteneri AmCupon, așa că pentru ele mergi direct pe site-ul lor.`,
     },
     {
       q: "Codurile sunt testate?",
@@ -125,21 +119,57 @@ function intrebari(parteneri: number, cuOferta: number) {
   ];
 }
 
+const H2 = "text-xl md:text-2xl font-black tracking-tight";
+
+function RandCampanie({ p }: { p: (typeof BF.parteneri)[number] }) {
+  return (
+    <li className="bg-[var(--surface)] border border-[var(--border)] rounded-xl px-3.5 py-2.5">
+      <div className="flex items-baseline justify-between gap-3">
+        <Link href={`/black-friday/${p.magazin}`} className="font-bold hover:text-[var(--accent-text)] truncate">Black Friday {p.nume}</Link>
+        <span className="text-xs text-[var(--text-muted)] whitespace-nowrap">{p.interval}</span>
+      </div>
+      {p.nota && (
+        <p className="text-xs text-[var(--text-muted)] mt-0.5 line-clamp-1">
+          {p.nota}
+          {p.sursa?.startsWith("http") && (
+            <>{" · "}<a href={p.sursa} target="_blank" rel="noopener noreferrer" className="underline">sursa</a></>
+          )}
+        </p>
+      )}
+    </li>
+  );
+}
+
+function ListaCampanii({ titlu, lista }: { titlu: string; lista: typeof BF.parteneri }) {
+  if (lista.length === 0) return null;
+  const VIZIBILE = 6;
+  return (
+    <div>
+      <h3 className="font-black mb-2">{titlu} ({lista.length})</h3>
+      <ul className="space-y-2">
+        {lista.slice(0, VIZIBILE).map((p) => <RandCampanie key={p.magazin} p={p} />)}
+      </ul>
+      {lista.length > VIZIBILE && (
+        <details className="mt-2">
+          <summary className="cursor-pointer text-sm font-bold text-[var(--accent-text)]">Încă {lista.length - VIZIBILE}</summary>
+          <ul className="space-y-2 mt-2">
+            {lista.slice(VIZIBILE).map((p) => <RandCampanie key={p.magazin} p={p} />)}
+          </ul>
+        </details>
+      )}
+    </div>
+  );
+}
+
 export default function BlackFridayPage() {
   const toate = incarca();
   const parteneri = toate.filter(areLinkAfiliat).length;
-  const cuOferta = toate
-    .filter((m) => areLinkAfiliat(m) && m.are_promotie && (m.promotii?.length ?? 0) > 0)
-    .sort(
-      (a, b) =>
-        Number(esteRomanesc(b)) - Number(esteRomanesc(a)) ||
-        Number(categorieBF(b)) - Number(categorieBF(a)) ||
-        (b.scor_final ?? 0) - (a.scor_final ?? 0),
-    );
-  const afisate = cuOferta.slice(0, MAX_CARDURI);
-  const oferte = cuOferta.reduce((n, m) => n + m.promotii.length, 0);
-  const coduri = cuOferta.reduce((n, m) => n + m.promotii.filter((p) => p.cod_cupon).length, 0);
-  const faq = intrebari(parteneri, cuOferta.length);
+  const pool = poolOferte(toate).filter((o) => promoBF(`${o.promo.nume || ""} ${o.promo.descriere || ""}`));
+  const nrMagazine = new Set(pool.map((o) => o.m.magazin)).size;
+  const grila = grilaOferte(pool, { limita: 100, faraFiltre: ["oferta"] });
+  const faq = intrebari(parteneri, nrMagazine);
+  const inCurs = BF.parteneri.filter((p) => p.inCurs);
+  const urmeaza = BF.parteneri.filter((p) => !p.inCurs);
 
   const jsonLd = [
     {
@@ -161,98 +191,78 @@ export default function BlackFridayPage() {
   ];
 
   return (
-    <>
+    <div className="bg-[var(--background)] text-[var(--foreground)]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
       />
 
-      <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
-        <nav className="max-w-6xl mx-auto px-4 pt-4 text-xs text-[var(--text-muted)] flex items-center gap-1">
-          <Link href="/" className="hover:text-[var(--accent-text)] transition-colors">Acasă</Link>
-          <span className="mx-1">/</span>
-          <span className="text-[var(--text-soft)]">Black Friday {BF.an}</span>
-        </nav>
-
-        <section className="max-w-6xl mx-auto px-4 pt-10 pb-8">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[var(--accent-text)] mb-3">
-            Actualizat de trei ori pe zi
+      <div className="max-w-6xl mx-auto px-4 pt-6 pb-10 space-y-10">
+        <header>
+          <h1 className="text-[1.75rem] md:text-4xl font-black tracking-tight leading-tight mb-2">Black Friday {BF.an} în România</h1>
+          <p className="text-[var(--text-soft)] max-w-2xl">
+            {cuNumar(pool.length, "ofertă de Black Friday activă", "oferte de Black Friday active")} azi, la {cuNumar(nrMagazine, "magazin partener", "magazine partenere")}. Lista se actualizează de trei ori pe zi.
           </p>
-          <h1 className="text-3xl md:text-5xl font-black leading-tight mb-4">
-            Black Friday {BF.an} în România
-          </h1>
-          <p className="text-[var(--text-soft)] text-base md:text-lg max-w-2xl">
-            <strong className="text-[var(--foreground)]">{cuNumar(cuOferta.length, "magazin partener are", "magazine partenere au")} oferte active acum.</strong> Pe fiecare vezi codul,
-            dacă există, și până când e valabilă oferta.
-          </p>
-
-          <div className="grid sm:grid-cols-2 gap-3 mt-8 max-w-2xl">
-            <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-4">
-              <p className="text-xs text-[var(--text-muted)]">Black Friday la eMAG</p>
-              <p className="font-bold text-lg mt-0.5">{BF.emag}</p>
+          <dl className="grid sm:grid-cols-2 gap-3 mt-4 max-w-2xl">
+            <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-3.5">
+              <dt className="text-xs text-[var(--text-muted)]">Black Friday la eMAG (nu e partener AmCupon)</dt>
+              <dd className="font-bold mt-0.5">{BF.emag}<ZilePana data={BF.dataEmag} /></dd>
             </div>
-            <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-4">
-              <p className="text-xs text-[var(--text-muted)]">Magazinele internaționale</p>
-              <p className="font-bold text-lg mt-0.5">{BF.international}</p>
+            <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-3.5">
+              <dt className="text-xs text-[var(--text-muted)]">Magazinele internaționale</dt>
+              <dd className="font-bold mt-0.5">{BF.international}<ZilePana data={BF.dataInt} /></dd>
             </div>
-          </div>
+          </dl>
           <p className="text-xs text-[var(--text-muted)] mt-2">
             Sursa datelor:{" "}
-            <a href={BF.sursa} target="_blank" rel="noopener noreferrer" className="underline hover:text-[var(--accent-text)]">
-              wall-street.ro
-            </a>
+            <a href={BF.sursa} target="_blank" rel="noopener noreferrer" className="underline hover:text-[var(--accent-text)]">wall-street.ro</a>
           </p>
+        </header>
 
-          {BF.parteneri.length > 0 && (
-            <div className="mt-8">
-              <h2 className="text-lg font-black mb-1">Calendarul Black Friday la partenerii AmCupon</h2>
-              <p className="text-sm text-[var(--text-muted)] mb-3 max-w-2xl">
-                {cuNumar(BF.parteneri.length, "campanie", "campanii")}, în ordinea în care încep. Datele sunt cele anunțate de magazine în rețeaua
-                de afiliere 2Performant sau publicate de presă; reducerile le stabilește fiecare magazin.
-              </p>
+        <section id="oferte" className="scroll-mt-20" aria-labelledby="oferte-h">
+          <h2 id="oferte-h" className={`${H2} mb-3`}>Ofertele de Black Friday de azi</h2>
+          {pool.length > 0 ? (
+            <GrilaOferte {...grila} sursa="black_friday" pas={12} />
+          ) : (
+            <p className="text-center py-10 text-[var(--text-muted)] text-sm border border-dashed border-[var(--border-strong)] rounded-xl">
+              Niciun magazin partener nu are o ofertă de Black Friday activă chiar acum.
+            </p>
+          )}
+          <Link href="/oferte-azi" className="mt-3 block text-center text-sm font-bold text-[var(--accent-text)] hover:underline">Toate ofertele de azi →</Link>
+        </section>
+
+        {BF.parteneri.length > 0 && (
+          <section aria-labelledby="cal-h">
+            <h2 id="cal-h" className={`${H2} mb-1`}>Calendarul partenerilor</h2>
+            <p className="text-sm text-[var(--text-muted)] mb-4 max-w-2xl">
+              Datele sunt cele anunțate de magazine în rețeaua de afiliere 2Performant sau publicate de presă; reducerile le stabilește fiecare magazin.
+            </p>
+            {BF.totalCampanii > 0 && (
               <p className="text-sm text-[var(--text-soft)] mb-3 max-w-2xl">
                 Black Friday nu mai e o singură zi: {BF.inainteDeEmag} din {cuNumar(BF.totalCampanii, "campanie", "campanii")} încep înainte de {emagScurt}, prima
                 pe {BF.primaZi}. O campanie ține {cuNumar(BF.medianaZile, "zi", "zile")} în mod obișnuit (valoarea mediană), iar cea mai lungă, {cuNumar(BF.celMaiLung, "zi", "zile")}.
               </p>
-              <nav aria-label="Campanii pe categorii" className="flex flex-wrap gap-2 mb-4">
-                {categoriiBF().map((k) => (
-                  <Link key={k.slug} href={`/black-friday/categorie/${k.slug}`}
-                    className="rounded-full border border-[var(--border)] px-3 py-1 text-sm hover:border-[var(--border-strong)]">
-                    {k.nume} ({k.campanii})
-                  </Link>
-                ))}
-              </nav>
-              <div className="grid gap-3 sm:grid-cols-2">
-                {BF.parteneri.map((p) => (
-                  <div key={p.magazin} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-3 flex flex-col gap-1.5">
-                    <p className="text-xs font-semibold text-[var(--text-muted)]">
-                      {p.inCurs ? "În desfășurare" : "Urmează"} · {p.interval}
-                    </p>
-                    <h3 className="font-bold leading-snug">
-                      <Link href={`/black-friday/${p.magazin}`} className="hover:text-[var(--accent-text)]">Black Friday {p.nume}</Link>
-                    </h3>
-                    {p.nota && (
-                      <p className="text-xs text-[var(--text-muted)]">
-                        {p.nota}
-                        {p.sursa?.startsWith("http") && (
-                          <>{" · "}<a href={p.sursa} target="_blank" rel="noopener noreferrer" className="underline">sursa</a></>
-                        )}
-                      </p>
-                    )}
-                    <Link href={`/cod-reducere/${p.magazin}`} className="mt-auto text-sm font-semibold text-[var(--accent-text)]">
-                      Ofertele {p.nume} →
-                    </Link>
-                  </div>
-                ))}
-              </div>
+            )}
+            <nav aria-label="Campanii pe categorii" className="flex flex-wrap gap-2 mb-4">
+              {categoriiBF().map((k) => (
+                <Link key={k.slug} href={`/black-friday/categorie/${k.slug}`}
+                  className="rounded-full border border-[var(--border)] px-3 py-1 text-sm hover:border-[var(--border-strong)]">
+                  {k.nume} ({k.campanii})
+                </Link>
+              ))}
+            </nav>
+            <div className="grid md:grid-cols-2 gap-6 items-start">
+              <ListaCampanii titlu="Urmează" lista={urmeaza} />
+              <ListaCampanii titlu="În desfășurare" lista={inCurs} />
             </div>
-          )}
+          </section>
+        )}
 
+        <div>
           <StudiuReale />
-
           <Link
             href="/reduceri-reale"
-            className="mt-6 flex items-center justify-between gap-3 max-w-2xl bg-[var(--surface)] border border-[var(--border)] rounded-xl p-4 hover:border-[var(--border-strong)] transition-colors"
+            className="mt-4 flex items-center justify-between gap-3 max-w-2xl bg-[var(--surface)] border border-[var(--border)] rounded-xl p-4 hover:border-[var(--border-strong)] transition-colors"
           >
             <span>
               <span className="block font-bold">E reală reducerea?</span>
@@ -262,66 +272,20 @@ export default function BlackFridayPage() {
             </span>
             <span className="text-sm font-semibold text-[var(--accent-text)] shrink-0">Reduceri reale →</span>
           </Link>
+        </div>
 
-          <div className="grid grid-cols-3 gap-3 mt-8 max-w-md">
-            {[
-              { val: cuOferta.length, eticheta: "magazine cu ofertă acum" },
-              { val: oferte, eticheta: "oferte active" },
-              { val: coduri, eticheta: "coduri de reducere" },
-            ].map((s) => (
-              <div key={s.eticheta} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl py-3 px-3">
-                <p className="text-2xl font-black text-[var(--accent-text)]">{s.val}</p>
-                <p className="text-xs text-[var(--text-muted)] mt-0.5 leading-snug">{s.eticheta}</p>
+        <section className="max-w-3xl" aria-labelledby="faq-h">
+          <h2 id="faq-h" className={`${H2} mb-4`}>Întrebări despre Black Friday {BF.an}</h2>
+          <div className="space-y-5">
+            {faq.map((f) => (
+              <div key={f.q}>
+                <h3 className="font-bold mb-1">{f.q}</h3>
+                <p className="text-[var(--text-soft)] text-sm leading-relaxed">{f.a}</p>
               </div>
             ))}
           </div>
         </section>
-
-        <section className="max-w-6xl mx-auto px-4 pb-12">
-          <div className="flex items-baseline justify-between mb-5 gap-4">
-            <h2 className="text-xl font-black">Ofertele active acum</h2>
-            <span className="text-sm text-[var(--text-muted)] shrink-0">
-              {afisate.length} din {cuOferta.length}
-            </span>
-          </div>
-          {afisate.length > 0 ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {afisate.map((m) => (
-                <MagazinCard key={m.magazin} m={m} />
-              ))}
-            </div>
-          ) : (
-            <div className="text-center py-10 text-[var(--text-muted)] text-sm border border-dashed border-[var(--border-strong)] rounded-xl">
-              Niciun magazin partener nu are o ofertă activă chiar acum. Lista se actualizează de trei ori pe zi.
-            </div>
-          )}
-          {cuOferta.length > afisate.length && (
-            <div className="mt-6 text-center">
-              <Link href="/oferte-azi" className="text-sm font-semibold text-[var(--accent-text)] hover:text-[var(--accent-text)]">
-                Toate ofertele de azi →
-              </Link>
-            </div>
-          )}
-        </section>
-
-        <section className="max-w-6xl mx-auto px-4 pb-12">
-          <NewsletterCTA titlu="Ofertele active, pe email" />
-        </section>
-
-        <section className="border-t border-[var(--border)] bg-[var(--background)]">
-          <div className="max-w-3xl mx-auto px-4 py-12">
-            <h2 className="text-2xl font-black mb-6">Întrebări despre Black Friday {BF.an}</h2>
-            <div className="space-y-6">
-              {faq.map((f) => (
-                <div key={f.q}>
-                  <h3 className="font-bold mb-2">{f.q}</h3>
-                  <p className="text-[var(--text-soft)] text-sm leading-relaxed">{f.a}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
       </div>
-    </>
+    </div>
   );
 }

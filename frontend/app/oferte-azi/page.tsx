@@ -2,142 +2,50 @@ import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
 import Link from "next/link";
-import ShareButton from "../components/ShareButton";
-import { etichetaExpirare } from "../../lib/expirarePromo";
-import { linkAfiliat, linkPromotie } from "@/lib/linkMagazin";
+import GrilaOferte from "../components/GrilaOferte";
+import { poolOferte, grilaOferte, type MagazinGrila } from "@/lib/grilaOferte";
+import { cuNumar } from "@/lib/oferteAcasa";
 import { numeAfisat } from "@/lib/numeMagazin";
-import { maskCod } from "@/lib/maskCod";
+import { CATEGORII_SITE } from "@/lib/site";
+import { PesteMagazine } from "@/lib/cifreSite";
 import { titluPromotie } from "@/lib/oferta";
-import { cuNumar } from "@/lib/acordNumeral";
 
-/* ── Tipuri ──────────────────────────────────────────────────────────────── */
-interface Promotie {
-  nume: string;
-  descriere: string;
-  cod_cupon: string;
-  landing_page: string;
-  zile_ramase: number;
-}
-
-interface Magazin {
-  magazin: string;
-  url: string;
-  url_afiliat: string;
-  logo_url?: string;
-  categorie: string;
+/**
+ * Toate ofertele active, remodelata pe 03.11.2026. Masurat inainte: 80.895 px pe telefon, cate un card pentru fiecare
+ * dintre cele ~270 de oferte, sortate „cod intai" (deci magazine straine primele), cu etichetele categoriilor pe
+ * taxonomia engleza moarta si un text fals („1000+ magazine", „o data pe saptamana"). Acum: aceeasi ordine si acelasi
+ * card ca pe prima pagina, primele 24 + „Arată încă".
+ */
+interface Magazin extends MagazinGrila {
   categorie_slug?: string;
-  are_promotie: boolean;
-  cod_cupon: boolean;
-  zile_ramase: number;
-  promotii: Promotie[];
-  scor_final?: number;
-  rank?: number;
 }
 
-interface OfertaFlat {
-  magazin: string;
-  logo_url?: string;
-  url_afiliat: string;
-  categorie: string;
-  categorie_slug: string;
-  promo: Promotie;
-  hasCod: boolean;
+const LUNI_RO = ["ianuarie", "februarie", "martie", "aprilie", "mai", "iunie",
+  "iulie", "august", "septembrie", "octombrie", "noiembrie", "decembrie"];
+
+const eticheta = (slug: string) => CATEGORII_SITE.find((c) => c.slug === slug)?.label;
+
+function citeste(): Magazin[] {
+  return JSON.parse(fs.readFileSync(path.join(process.cwd(), "public", "output.json"), "utf-8"));
 }
 
-/* ── Config categorii ────────────────────────────────────────────────────── */
-const CAT_LABELS: Record<string, string> = {
-  "fashion":              "Fashion",
-  "electronics-itc":     "Electronice",
-  "pharma":              "Farmacie",
-  "beauty":              "Frumusețe",
-  "sports-outdoors":     "Sport",
-  "home-garden":         "Casă",
-  "babies-kids-toys":    "Copii",
-  "automotive":          "Auto",
-  "books":               "Cărți",
-  "gifts-flowers":       "Cadouri",
-  "health-personal-care":"Sănătate",
-  "hypermarket-groceries":"Supermarket",
-  "pet-supplies":        "Animale",
-  "online-mall":         "Mall",
-  "jewelry":             "Bijuterii",
-  "office-supplies":     "Birou",
-  "telecom":             "Telecom",
-  "games":               "Gaming",
-  "others":              "Altele",
-};
-
-const CAT_EMOJI: Record<string, string> = {
-  "fashion": "👗", "electronics-itc": "💻", "pharma": "💊", "beauty": "💄",
-  "sports-outdoors": "🏃", "home-garden": "🏡", "babies-kids-toys": "🧸",
-  "automotive": "🚗", "books": "📚", "gifts-flowers": "🎁",
-  "health-personal-care": "🧴", "hypermarket-groceries": "🛒",
-  "pet-supplies": "🐾", "online-mall": "🛍️", "jewelry": "💎",
-  "office-supplies": "🖊️", "telecom": "📱", "games": "🎮", "others": "📦",
-};
-
-const LUNI_RO = ["ianuarie","februarie","martie","aprilie","mai","iunie",
-  "iulie","august","septembrie","octombrie","noiembrie","decembrie"];
-
-/* ── Helpers ─────────────────────────────────────────────────────────────── */
-
-function extractDiscount(text: string): number {
-  const m = text?.match(/(\d+)\s*%/);
-  const v = m ? parseInt(m[1]) : 0;
-  return v > 0 && v <= 90 ? v : 0;
-}
-
-function loadOferte(): OfertaFlat[] {
-  const filePath = path.join(process.cwd(), "public", "output.json");
-  const magazine: Magazin[] = JSON.parse(fs.readFileSync(filePath, "utf-8"));
-
-  const oferte: OfertaFlat[] = [];
-  for (const m of magazine) {
-    if (!m.are_promotie || m.promotii.length === 0) continue;
-    for (const promo of m.promotii) {
-      oferte.push({
-        magazin:        m.magazin,
-        logo_url:       m.logo_url,
-        url_afiliat:    linkPromotie(m, promo) || "",
-        categorie:      m.categorie,
-        categorie_slug: m.categorie_slug || "others",
-        promo,
-        hasCod:         !!promo.cod_cupon,
-      });
-    }
-  }
-
-  oferte.sort((a, b) => {
-    if (a.hasCod !== b.hasCod) return a.hasCod ? -1 : 1;
-    const da = extractDiscount(a.promo.nume) || extractDiscount(a.promo.descriere || "");
-    const db = extractDiscount(b.promo.nume) || extractDiscount(b.promo.descriere || "");
-    if (da !== db) return db - da;
-    return (a.promo.zile_ramase ?? 999) - (b.promo.zile_ramase ?? 999);
-  });
-
-  return oferte;
-}
-
-/* ── Metadata ────────────────────────────────────────────────────────────── */
 export async function generateMetadata(
-  { searchParams }: { searchParams: Promise<{ cat?: string }> }
+  { searchParams }: { searchParams: Promise<{ cat?: string }> },
 ): Promise<Metadata> {
   const { cat } = await searchParams;
   const luna = LUNI_RO[new Date().getMonth()];
   const an = new Date().getFullYear();
-  const catLabel = cat ? (CAT_LABELS[cat] || cat) : null;
-
+  const catLabel = cat ? eticheta(cat) : null;
   const title = catLabel
     ? `Oferte ${catLabel} de Azi — Reduceri ${luna} ${an} | AmCupon.ro`
     : `Oferte de azi: toate promoțiile active, ${luna} ${an}`;
   const description = catLabel
     ? `Toate ofertele active ${catLabel} din România pentru ${luna} ${an}. Coduri de reducere și promoții actualizate zilnic pe AmCupon.ro.`
-    : `Toate ofertele și promoțiile active de azi în România. Coduri de reducere de la magazinele partenere, actualizate zilnic. Actualizat ${luna} ${an}.`;
-
+    : `Toate ofertele și promoțiile active de azi în România. Coduri de reducere actualizate zilnic la ${PesteMagazine()} online. Actualizat ${luna} ${an}.`;
   return {
     title,
     description,
-    keywords: ["oferte de azi","promoții de azi","reduceri de azi românia","coduri reducere active","oferte online românia"],
+    keywords: ["oferte de azi", "promoții de azi", "reduceri de azi românia", "coduri reducere active", "oferte online românia"],
     alternates: { canonical: "https://amcupon.ro/oferte-azi" },
     openGraph: {
       title, description,
@@ -150,291 +58,82 @@ export async function generateMetadata(
   };
 }
 
-/* ── Card oferta (dark, premium) ─────────────────────────────────────────── */
-function OfertaCard({ o }: { o: OfertaFlat }) {
-  const nume = numeAfisat(o.magazin);
-  // Titlul afisat (lib/oferta.ts): la Impact `nume` e des chiar codul, care s-ar citi intreg.
-  const titlu = titluPromotie(o.promo, nume);
-  const discount = extractDiscount(o.promo.nume) || extractDiscount(o.promo.descriere || "");
-  const zile = o.promo.zile_ramase ?? 99;
-  const eticheta = etichetaExpirare(zile);
-  const urgenta = eticheta?.esteImediata ?? false;
+const chip = (activ: boolean) =>
+  `whitespace-nowrap text-xs font-bold px-3 py-1.5 rounded-full transition-colors ${
+    activ
+      ? "bg-[#ddf93c] text-[#0c1000]"
+      : "bg-[var(--surface-alt)] text-[var(--text-soft)] border border-[var(--border-strong)] hover:text-[var(--foreground)]"
+  }`;
 
-  return (
-    <div className="group relative flex flex-col bg-gradient-to-b from-[var(--surface)] to-[var(--surface)] border border-[var(--border)] hover:border-[var(--accent-text)]/50 rounded-xl p-4 transition-all duration-200 hover:shadow-2xl hover:shadow-black/40 hover:-translate-y-1">
-
-      {/* Header magazin */}
-      <div className="flex items-start gap-3">
-        <div className="w-12 h-12 rounded-xl overflow-hidden bg-[#ffffff] shrink-0 flex items-center justify-center ring-1 ring-[#ddf93c]/20 shadow-md">
-          {o.logo_url ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img src={o.logo_url} alt={`Logo ${nume}`}
-              className="w-10 h-10 object-contain" loading="lazy" />
-          ) : (
-            <span className="w-full h-full bg-gradient-to-br from-[#ddf93c] to-[#c3dd2c] flex items-center justify-center text-[#0c1000] font-black text-lg">
-              {nume.charAt(0)}
-            </span>
-          )}
-        </div>
-        <div className="min-w-0 flex-1 pt-0.5">
-          <p className="text-sm font-black text-[var(--foreground)] truncate group-hover:text-[var(--accent-text)] transition-colors">{nume}</p>
-          <p className="text-[11px] text-[var(--text-muted)] truncate mt-0.5">{CAT_EMOJI[o.categorie_slug] || ""} {CAT_LABELS[o.categorie_slug] || o.categorie}</p>
-        </div>
-        {discount > 0 && (
-          <div className="shrink-0 leading-none bg-[#ddf93c] rounded-lg px-2 py-1.5 shadow-sm">
-            <span className="block text-[15px] font-black text-[#0c1000] tracking-tight">-{discount}%</span>
-          </div>
-        )}
-      </div>
-
-      {/* Titlu promo — inaltime fixa pentru aliniere */}
-      <p className="text-[13px] text-[var(--text-soft)] leading-snug mt-3 mb-3 line-clamp-2 min-h-[2.5rem]">{titlu}</p>
-
-      {/* Cod box (daca exista) sau eticheta oferta */}
-      {o.hasCod && o.promo.cod_cupon ? (
-        <div className="relative bg-[#ddf93c]/10 border border-dashed border-[var(--accent-text)]/40 rounded-lg py-2.5 text-center mb-3">
-          <span className="absolute left-2.5 top-1 text-[8px] uppercase tracking-widest text-[var(--text-muted)] font-bold">cod</span>
-          {/* 07.10.2026: mascat, ca pe prima pagina. Intreg, codul se copia de aici fara niciun
-              clic pe linkul platit; se dezvaluie pe pagina magazinului, cu magazinul deschis pe link. */}
-          <span className="font-mono font-black text-[var(--accent-text)] text-sm tracking-[0.22em]">{maskCod(o.promo.cod_cupon)}</span>
-        </div>
-      ) : (
-        <div className="mb-3">
-          <span className="inline-flex items-center gap-1.5 text-[11px] font-semibold text-[var(--text-soft)] bg-[#ddf93c]/10 border border-[var(--border)] rounded-full px-3 py-1">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#ddf93c]" /> Ofertă fără cod
-          </span>
-        </div>
-      )}
-
-      {/* Actiune — impinsa jos pentru aliniere intre carduri */}
-      <div className="mt-auto">
-        <div className="flex items-center gap-2">
-          {o.hasCod ? (
-            <Link href={`/cod-reducere/${o.magazin}`}
-              className="flex-1 text-center text-[13px] font-black bg-gradient-to-r from-[#ddf93c] to-[#ddf93c] hover:from-[#ddf93c] hover:to-[#ddf93c] text-[#0c1000] py-2.5 rounded-xl transition-all">
-              Vezi codul
-            </Link>
-          ) : (
-            <a href={o.url_afiliat} target="_blank" rel="sponsored noopener noreferrer"
-              className="flex-1 text-center text-[13px] font-black bg-gradient-to-r from-[#ddf93c] to-[#ddf93c] hover:from-[#ddf93c] hover:to-[#ddf93c] text-[#0c1000] py-2.5 rounded-xl transition-all">
-              Vezi oferta →
-            </a>
-          )}
-          <ShareButton
-            pageSlug={`/cod-reducere/${o.magazin}`}
-            title={`${o.hasCod ? "Cod reducere" : "Oferta"} ${discount > 0 ? "-" + discount + "% " : ""}${nume}`}
-            text={`${o.hasCod ? "Cod reducere" : "Oferta"}${discount > 0 ? " -" + discount + "%" : ""} la ${nume}: ${titlu}`}
-            small
-            theme="dark"
-          />
-        </div>
-
-        {/* Meta */}
-        <div className="flex items-center justify-between gap-2 mt-3 pt-3 border-t border-[#f0fdfa]">
-          {eticheta && (urgenta ? (
-            <span className="text-[10px] font-bold text-[#e8956f] flex items-center gap-1.5">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#e8956f] animate-pulse" />
-              {eticheta.text}
-            </span>
-          ) : (
-            <span className="text-[10px] text-[var(--text-muted)] font-medium">
-              {eticheta.text}
-            </span>
-          ))}
-          <Link href={`/cod-reducere/${o.magazin}`}
-            className="text-[10px] font-semibold text-[var(--text-muted)] hover:text-[var(--accent-text)] transition-colors">
-            Toate codurile →
-          </Link>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-/* ── Page ────────────────────────────────────────────────────────────────── */
 export default async function OferteAziPage(
-  { searchParams }: { searchParams: Promise<{ cat?: string }> }
+  { searchParams }: { searchParams: Promise<{ cat?: string }> },
 ) {
   const { cat } = await searchParams;
   const luna = LUNI_RO[new Date().getMonth()];
   const an = new Date().getFullYear();
 
-  const toateOfertele = loadOferte();
-  const oferteFiltrate = cat
-    ? toateOfertele.filter(o => o.categorie_slug === cat)
-    : toateOfertele;
-
-  const catCount: Record<string, number> = {};
-  for (const o of toateOfertele) {
-    catCount[o.categorie_slug] = (catCount[o.categorie_slug] || 0) + 1;
+  const toate = poolOferte(citeste());
+  const peCategorie = new Map<string, number>();
+  for (const o of toate) {
+    const s = o.m.categorie_slug || "";
+    peCategorie.set(s, (peCategorie.get(s) || 0) + 1);
   }
-  const categoriiDisponibile = Object.entries(catCount)
-    .filter(([, n]) => n > 0)
-    .sort((a, b) => b[1] - a[1]);
-
-  const nrMagazine = new Set(oferteFiltrate.map(o => o.magazin)).size;
-  const nrCoduri = toateOfertele.filter(o => o.hasCod).length;
-  const nrUrgente = toateOfertele.filter(o => (o.promo.zile_ramase ?? 99) <= 2).length;
-  const nrMagazineTotal = new Set(toateOfertele.map(o => o.magazin)).size;
+  const categorii = CATEGORII_SITE
+    .filter((c) => peCategorie.get(c.slug))
+    .sort((a, b) => (peCategorie.get(b.slug) || 0) - (peCategorie.get(a.slug) || 0));
+  const pool = cat ? toate.filter((o) => o.m.categorie_slug === cat) : toate;
+  const grila = grilaOferte(pool, { limita: 400, maxPeMagazinToate: 3, faraFiltre: [] });
+  const nrMagazine = new Set(pool.map((o) => o.m.magazin)).size;
+  const catLabel = cat ? eticheta(cat) : null;
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": `Oferte de Azi România — ${luna} ${an}`,
-    "description": `Toate promoțiile active de azi: ${cuNumar(toateOfertele.length, "ofertă", "oferte")} la ${cuNumar(nrMagazineTotal, "magazin", "magazine")}`,
-    "url": "https://amcupon.ro/oferte-azi",
-    "numberOfItems": oferteFiltrate.length,
-    "itemListElement": oferteFiltrate.slice(0, 30).map((o, i) => ({
+    name: `Oferte de Azi România — ${luna} ${an}`,
+    url: "https://amcupon.ro/oferte-azi",
+    numberOfItems: pool.length,
+    itemListElement: pool.slice(0, 24).map((o, i) => ({
       "@type": "ListItem",
-      "position": i + 1,
-      // Titlul afisat, nu `nume` brut (la Impact, des chiar codul) — datele structurate = pagina.
-      "name": titluPromotie(o.promo, numeAfisat(o.magazin)),
-      "url": o.url_afiliat,
+      position: i + 1,
+      name: titluPromotie(o.promo, numeAfisat(o.m.magazin)),
+      url: `https://amcupon.ro/cod-reducere/${o.m.magazin}`,
     })),
   };
 
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+    <div className="bg-[var(--background)] text-[var(--foreground)]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
+      <div className="max-w-6xl mx-auto px-4 pt-6 pb-10">
+        <h1 className="text-[1.75rem] md:text-4xl font-black tracking-tight leading-tight mb-2">
+          {catLabel ? `Oferte ${catLabel} de azi` : "Oferte de azi"}
+        </h1>
+        <p className="text-[var(--text-soft)] mb-4">
+          {cuNumar(pool.length, "ofertă activă", "oferte active")} la {cuNumar(nrMagazine, "magazin", "magazine")}, actualizate de trei ori pe zi. Magazinele din România sunt primele, apoi reducerile cele mai mari.
+        </p>
 
-      <div className="min-h-screen bg-[var(--background)]">
-
-        {/* Hero ─────────────────────────────────────────────────────────── */}
-        <div className="relative bg-[var(--background)] border-b border-[var(--border)] overflow-hidden">
-          <div className="absolute inset-0 pointer-events-none" style={{background:"radial-gradient(ellipse 80% 70% at 50% -20%, rgba(13,148,136,0.14) 0%, transparent 65%)"}} />
-          <div className="relative max-w-6xl mx-auto px-4 pt-10 pb-12 text-center">
-
-            <div className="inline-flex items-center gap-2 bg-[#ddf93c]/10 border border-[var(--accent-text)]/25 text-[var(--accent-text)] text-xs font-bold px-4 py-1.5 rounded-full mb-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse" />
-              Live — actualizat azi, {luna} {an}
-            </div>
-
-            <h1 className="text-4xl md:text-5xl font-black tracking-tight text-[var(--foreground)] mb-4 leading-tight">
-              {cat && CAT_LABELS[cat]
-                ? <>{CAT_EMOJI[cat] || ""} Oferte <span className="text-[var(--accent-text)]">{CAT_LABELS[cat]}</span> de Azi</>
-                : <>Oferte de Azi <span className="text-[var(--accent-text)]">România</span></>
-              }
-            </h1>
-            <p className="text-[var(--text-soft)] text-lg mb-8 max-w-xl mx-auto">
-              {cuNumar(oferteFiltrate.length, "promoție activă", "promoții active")} la {cuNumar(nrMagazine, "magazin", "magazine")}, sortate după valoare.
-            </p>
-
-            <div className="flex flex-wrap justify-center gap-3">
-              <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl px-4 py-2.5 text-sm font-bold text-[var(--foreground)] flex items-center gap-2">
-                <span className="text-[var(--accent-text)]">🎟</span>
-                {cuNumar(nrCoduri, "cod de reducere", "coduri de reducere")}
-              </div>
-              <div className="bg-[var(--surface)] border border-[var(--border)] rounded-xl px-4 py-2.5 text-sm font-bold text-[var(--foreground)] flex items-center gap-2">
-                <span>🏪</span>
-                {cuNumar(nrMagazineTotal, "magazin", "magazine")}
-              </div>
-              {nrUrgente > 0 && (
-                <div className="bg-red-500/10 border border-red-500/25 rounded-xl px-4 py-2.5 text-sm font-bold text-red-400 flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse" />
-                  {nrUrgente} expiră curând
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-
-        {/* Filtre categorii ─────────────────────────────────────────────── */}
-        <div className="bg-[var(--surface)] border-b border-[var(--border)] sticky top-[64px] z-40">
-          <div className="max-w-6xl mx-auto px-4 py-2.5 overflow-x-auto" style={{scrollbarWidth:"none"}}>
-            <div className="flex items-center gap-2 min-w-max">
-              <Link href="/oferte-azi"
-                className={`flex items-center gap-1 text-xs font-bold px-3 py-1.5 rounded-full transition-all whitespace-nowrap ${
-                  !cat
-                    ? "bg-[#ddf93c] text-[#0c1000] shadow-md shadow-[#ddf93c]/25"
-                    : "bg-[var(--surface-alt)] text-[var(--text-soft)] hover:bg-[var(--surface-high)] border border-[var(--border-strong)]"
-                }`}>
-                🔥 Toate ({toateOfertele.length})
+        <nav aria-label="Categorii" className="-mx-4 px-4 mb-5 overflow-x-auto" style={{ scrollbarWidth: "none" }}>
+          <div className="flex items-center gap-2 min-w-max">
+            <Link href="/oferte-azi" className={chip(!cat)}>Toate ({toate.length})</Link>
+            {categorii.map((c) => (
+              <Link key={c.slug} href={`/oferte-azi?cat=${c.slug}`} className={chip(cat === c.slug)}>
+                {c.label} ({peCategorie.get(c.slug)})
               </Link>
-              {categoriiDisponibile.map(([slug, count]) => (
-                <Link key={slug} href={`/oferte-azi?cat=${slug}`}
-                  className={`flex items-center gap-1 text-xs font-bold px-3 py-1.5 rounded-full transition-all whitespace-nowrap ${
-                    cat === slug
-                      ? "bg-[#ddf93c] text-[#0c1000] shadow-md shadow-[#ddf93c]/25"
-                      : "bg-[var(--surface-alt)] text-[var(--text-soft)] hover:bg-[var(--surface-high)] border border-[var(--border-strong)]"
-                  }`}>
-                  {CAT_EMOJI[slug] || ""} {CAT_LABELS[slug] || slug} ({count})
-                </Link>
-              ))}
-            </div>
+            ))}
           </div>
-        </div>
+        </nav>
 
-        {/* Grid oferte ─────────────────────────────────────────────────── */}
-        <div className="max-w-6xl mx-auto px-4 py-8">
-          {oferteFiltrate.length === 0 ? (
-            <div className="text-center py-20 bg-[var(--surface)] rounded-xl border border-[var(--border)]">
-              <p className="text-5xl mb-4">🔍</p>
-              <p className="font-black text-[var(--foreground)] text-lg mb-2">Nicio ofertă activă în această categorie</p>
-              <p className="text-[var(--text-soft)] text-sm mb-6">Încearcă altă categorie sau revino mai târziu.</p>
-              <Link href="/oferte-azi"
-                className="inline-flex items-center gap-2 bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] font-bold px-5 py-2.5 rounded-xl text-sm transition-colors">
-                Vezi toate ofertele →
-              </Link>
-            </div>
-          ) : (
-            <>
-              {/* Sub-header grid */}
-              <div className="flex items-center justify-between mb-6">
-                <p className="text-sm text-[var(--text-soft)]">
-                  <span className="font-black text-[var(--foreground)]">{oferteFiltrate.length}</span> oferte
-                  {cat && CAT_LABELS[cat] ? ` in ${CAT_LABELS[cat]}` : " active"}
-                  {" "}— sortate: cod &gt; discount &gt; urgență
-                </p>
-                {cat && (
-                  <Link href="/oferte-azi" className="text-xs font-bold text-[var(--accent-text)] hover:text-[var(--accent-text)] transition-colors">
-                    Șterge filtrul ×
-                  </Link>
-                )}
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                {oferteFiltrate.map((o, i) => (
-                  <OfertaCard key={`${o.magazin}-${i}`} o={o} />
-                ))}
-              </div>
-            </>
-          )}
-        </div>
-
-        {/* CTA Newsletter ──────────────────────────────────────────────── */}
-        <div className="max-w-6xl mx-auto px-4 pb-16">
-          <div className="relative bg-gradient-to-r from-[#ddf93c]/10 via-[var(--surface)] to-[#ddf93c]/10 border border-[var(--accent-text)]/15 rounded-xl p-8 md:p-12 text-center overflow-hidden">
-            <div className="absolute inset-0 pointer-events-none" style={{background:"radial-gradient(ellipse 80% 100% at 50% 100%, rgba(20,184,166,0.07) 0%, transparent 70%)"}} />
-            <div className="relative">
-              <span className="inline-flex items-center gap-2 bg-[#ddf93c]/10 border border-[var(--accent-text)]/20 text-[var(--accent-text)] text-xs font-black px-3 py-1 rounded-full mb-5 uppercase tracking-widest">
-                📬 Nu rata nicio ofertă bună
-              </span>
-              <h2 className="text-2xl md:text-3xl font-black text-[var(--foreground)] mb-3">
-                Primește top oferte direct pe email
-              </h2>
-              <p className="text-[var(--text-soft)] mb-8 max-w-md mx-auto">
-                {cuNumar(nrMagazineTotal, "magazin monitorizat", "magazine monitorizate")} zilnic. Ofertele active, o dată pe zi. Zero spam.
-              </p>
-              <div className="flex flex-wrap items-center justify-center gap-4">
-                <Link href="/newsletter"
-                  className="bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] font-black px-8 py-3.5 rounded-xl text-sm transition-all shadow-lg shadow-[#ddf93c]/25 hover:shadow-[#ddf93c]/40 hover:-translate-y-0.5 duration-200">
-                  Abonează-te gratuit →
-                </Link>
-                <Link href="/toate-magazinele"
-                  className="bg-[var(--surface-alt)] hover:bg-[var(--surface-high)] border border-[var(--border-strong)] text-[var(--text-soft)] font-semibold px-6 py-3.5 rounded-xl text-sm transition-colors">
-                  Toate magazinele
-                </Link>
-              </div>
-              <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 mt-6 text-xs text-[var(--text-muted)]">
-                <span>✓ Gratuit, fără cont</span>
-                <span>✓ Dezabonare cu un click</span>
-                <span>✓ Zero spam garantat</span>
-              </div>
-            </div>
+        {pool.length === 0 ? (
+          <div className="text-center py-16 bg-[var(--surface)] rounded-xl border border-[var(--border)]">
+            <p className="font-black text-lg mb-2">Nicio ofertă activă în această categorie</p>
+            <p className="text-[var(--text-soft)] text-sm mb-5">Încearcă altă categorie sau revino mai târziu.</p>
+            <Link href="/oferte-azi" className="inline-block bg-[#ddf93c] hover:bg-[#c3dd2c] text-[#0c1000] font-bold px-5 py-2.5 rounded-xl text-sm transition-colors">
+              Vezi toate ofertele
+            </Link>
           </div>
-        </div>
-
+        ) : (
+          <GrilaOferte key={cat || "toate"} {...grila} sursa="oferte_azi" pas={24} />
+        )}
       </div>
-    </>
+    </div>
   );
 }

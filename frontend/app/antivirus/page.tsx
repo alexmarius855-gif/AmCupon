@@ -1,9 +1,8 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import OferteNisa, { AntetNisa } from "../components/OferteNisa";
 import fs from "fs";
 import path from "path";
-import MagazinCard from "../components/MagazinCard";
-import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
 import { esteInCategorie } from "../../lib/categoriiNisa";
 import { linkPlatit } from "@/lib/linkPlatit";
@@ -28,11 +27,11 @@ const TOP_ANTIVIRUS = ["bitdefender.com","norton.com","eset.com","kaspersky.com"
 const CAT_AV = ["software"];
 
 const TIPURI_PROTECTIE = [
-  { emoji: "🛡️", titlu: "Antivirus PC & Mac", desc: "Protecție în timp real împotriva virușilor, ransomware, spyware" },
-  { emoji: "📱", titlu: "Antivirus Android & iOS", desc: "Securitate mobilă, anti-furt, VPN integrat" },
+  { emoji: "🛡️", titlu: "Antivirus PC & Mac", desc: "Protecție în timp real impotriva virușilor, ransomware, spyware" },
+  { emoji: "📱", titlu: "Antivirus Android & iOS", desc: "Securitate mobila, anti-furt, VPN integrat" },
   { emoji: "👨‍👩‍👧", titlu: "Parental Control", desc: "Filtru conținut, monitorizare timp ecran pentru copii" },
-  { emoji: "🔐", titlu: "Password Manager", desc: "Stocare parole securizată, autentificare biometrică" },
-  { emoji: "🌐", titlu: "VPN inclus", desc: "Navigare anonimă, acces conținut restricționat geografic" },
+  { emoji: "🔐", titlu: "Password Manager", desc: "Stocare parole securizata, autentificare biometrica" },
+  { emoji: "🌐", titlu: "VPN inclus", desc: "Navigare anonima, acces conținut restricționat geografic" },
   { emoji: "🔍", titlu: "Dark Web Monitor", desc: "Alerte când datele tale apar în breach-uri" },
 ];
 
@@ -88,30 +87,15 @@ export default function AntivirusPage() {
         </nav>
 
         {/* Hero */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-red-950 via-[var(--surface)] to-[var(--surface)] py-16 px-4">
-          <div className="absolute inset-0 pointer-events-none">
-            <div className="absolute top-0 right-1/4 w-96 h-96 bg-red-600/20 rounded-full blur-3xl" />
-            <div className="absolute bottom-0 left-1/4 w-64 h-64 bg-[#ddf93c]/15 rounded-full blur-3xl" />
-          </div>
-          <div className="relative max-w-6xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 bg-red-500/20 border border-red-500/30 text-red-300 text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
-              <span className="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse"/>
-              Ghid de alegere
-            </div>
-            <div className="text-6xl mb-5 drop-shadow-2xl">🛡️</div>
-            <h1 className="text-4xl md:text-5xl font-black text-[var(--foreground)] mb-4 tracking-tight">
-              Antivirus România <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #ddf93c, #ddf93c)"}}>{an}</span>
-            </h1>
-            <p className="text-[var(--text-soft)] text-lg mb-8 max-w-xl mx-auto leading-relaxed">
-              Bitdefender, Norton, ESET, Kaspersky — ce include fiecare și cum alegi pachetul potrivit
-            </p>
-            <div className="flex flex-wrap justify-center gap-2">
-              {["PC & Mac","Android","iOS","5 Dispozitive","Parental Control","VPN Inclus","Dark Web Monitor"].map(c => (
-                <span key={c} className="bg-[var(--surface-alt)] border border-[var(--border-strong)] text-slate-500 text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
-              ))}
-            </div>
-          </div>
-        </section>
+        <AntetNisa titlu={<>Antivirus România {an}</>}>Bitdefender, Norton, ESET, Kaspersky — ce include fiecare și cum alegi pachetul potrivit</AntetNisa>
+        <OferteNisa magazine={magazine} titlu="Unde găsești antivirus" />
+        <NisaProduse
+          merchantSlugs={["bitdefender.com","norton.com","eset.com","altex.ro","pcgarage.ro"]}
+          catSlug=""
+          titlu="Licențe antivirus de la parteneri"
+          culoareAccent="red"
+          limit={8}
+        />
 
         {/* Comparativ */}
         <section className="max-w-6xl mx-auto px-4 py-12">
@@ -154,37 +138,15 @@ export default function AntivirusPage() {
         </section>
 
         {/* Magazine */}
-        {magazine.length > 0 && (
-          <section className="max-w-6xl mx-auto px-4 pb-12">
-            <div className="flex items-center justify-between mb-6">
-              <div>
-                <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-1">MAGAZINE PARTENERE</p>
-                <h2 className="text-xl font-black text-[var(--foreground)]">Unde găsești antivirus</h2>
-              </div>
-            </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-              {magazine.map((m) => (
-              <MagazinCard key={m.magazin} m={m} />
-            ))}
-            </div>
-          </section>
-        )}
-        <NewsletterCTA />
+        
 
-
-        <NisaProduse
-          merchantSlugs={["bitdefender.com","norton.com","eset.com","altex.ro","pcgarage.ro"]}
-          catSlug=""
-          titlu="Licențe antivirus de la parteneri"
-          culoareAccent="red"
-          limit={8}
-        />
+        
 
         {/* Ghid */}
         <section className="bg-[var(--surface)] border-t border-[var(--border)] py-12 px-4">
           <div className="max-w-3xl mx-auto">
             <p className="text-xs font-bold text-red-400 uppercase tracking-widest mb-3">GHID ALEGERE</p>
-            <h2 className="text-2xl font-black text-[var(--foreground)] mb-7">Ce antivirus să alegi în {an}</h2>
+            <h2 className="text-2xl font-black text-[var(--foreground)] mb-7">Ce antivirus sa alegi în {an}</h2>
             <div className="space-y-5">
               <div className="bg-[var(--surface-alt)] border border-[var(--border-strong)] rounded-xl p-5">
                 <h3 className="font-bold text-[var(--foreground)] mb-2 text-base">Bitdefender — antivirusul românesc</h3>
@@ -204,7 +166,7 @@ export default function AntivirusPage() {
 
         {/* Related */}
         <section className="max-w-6xl mx-auto px-4 py-8">
-          <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest mb-4">EXPLOREAZĂ ȘI</p>
+          <p className="text-xs font-bold text-[var(--text-muted)] uppercase tracking-widest mb-4">EXPLOREAZĂ SI</p>
           <div className="flex flex-wrap gap-2">
             {[
               { href: "/vpn", label: "🌐 VPN" },
@@ -221,12 +183,7 @@ export default function AntivirusPage() {
           </div>
         </section>
 
-        <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)]">
-          &copy; {an} AmCupon.ro &middot;{" "}
-          <Link href="/vpn" className="hover:text-[var(--accent-text)] transition-colors">VPN</Link>{" · "}
-          <Link href="/hosting" className="hover:text-[var(--accent-text)] transition-colors">Hosting</Link>{" · "}
-          <Link href="/categorii" className="hover:text-[var(--accent-text)] transition-colors">Categorii</Link>
-        </footer>
+        
       </div>
     </>
   );

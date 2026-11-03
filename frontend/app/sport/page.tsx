@@ -1,9 +1,8 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import OferteNisa, { AntetNisa } from "../components/OferteNisa";
 import fs from "fs";
 import path from "path";
-import MagazinCard from "../components/MagazinCard";
-import NewsletterCTA from "../components/NewsletterCTA";
 import NisaProduse from "../components/NisaProduse";
 import { esteInCategorie, NISA_CATEGORII } from "../../lib/categoriiNisa";
 import { laParteneri } from "@/lib/cifreSite";
@@ -18,7 +17,7 @@ interface Magazin {
 export const metadata: Metadata = {
   title: "Reduceri Sport & Fitness 2026 | AmCupon.ro",
   description: `Coduri de reducere și oferte la echipament sport și fitness ${laParteneri(NISA_CATEGORII.sport)}: biciclete, sală, outdoor, running.`,
-  keywords: ["reduceri sport", "cod reducere decathlon", "echipament fitness ieftin", "bicicletă reducere", "sportisimo reducere", "sport outdoor reducere românia"],
+  keywords: ["reduceri sport", "cod reducere decathlon", "echipament fitness ieftin", "bicicleta reducere", "sportisimo reducere", "sport outdoor reducere românia"],
   alternates: { canonical: "https://amcupon.ro/sport" },
   openGraph: { title: "Reduceri Sport & Fitness 2026 | AmCupon.ro", url: "https://amcupon.ro/sport", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },
 };
@@ -26,16 +25,6 @@ export const metadata: Metadata = {
 const TOP_SPORT = ["decathlon.ro","trampolinepartsandsupply.com"];
 // Sluguri REALE din output.json — potrivire EXACTA, nu subsir (vezi lib/categoriiNisa.ts)
 const CAT_SPORT = ["sport"];
-const SUBCATEGORII = [
-  { emoji: "🏃", label: "Running", href: "/categorii/sport" },
-  { emoji: "🚴", label: "Ciclism", href: "/categorii/sport" },
-  { emoji: "⛺", label: "Camping", href: "/categorii/sport" },
-  { emoji: "🏋️", label: "Fitness & Sală", href: "/categorii/sport" },
-  { emoji: "⚽", label: "Fotbal", href: "/categorii/sport" },
-  { emoji: "🎿", label: "Ski & Iarnă", href: "/categorii/sport" },
-  { emoji: "🏊", label: "Înot", href: "/categorii/sport" },
-  { emoji: "🧗", label: "Hiking & Alpinism", href: "/categorii/sport" },
-];
 
 const jsonLd = { "@context":"https://schema.org","@type":"CollectionPage","name":"Reduceri Sport & Fitness 2026","url":"https://amcupon.ro/sport" };
 
@@ -64,49 +53,8 @@ export default function SportPage() {
         </nav>
 
         {/* HERO */}
-        <section className="bg-gradient-to-br from-[#c3dd2c] via-[#ddf93c] to-[#c3dd2c] text-[#0c1000] py-12 px-4">
-          <div className="max-w-6xl mx-auto text-center">
-            <div className="text-5xl mb-4">🏃</div>
-            <h1 className="text-3xl md:text-4xl font-black mb-3">Sport & Fitness {an}</h1>
-            <p className="text-[#2a2f10] text-lg mb-6 max-w-xl mx-auto">
-              Echipament sport, biciclete, sală fitness — oferte {laParteneri(NISA_CATEGORII.sport)}, actualizate zilnic
-            </p>
-            <div className="flex flex-wrap justify-center gap-2">
-              {SUBCATEGORII.map(s => (
-                <a key={s.label} href={s.href}
-                  className="flex items-center gap-1.5 bg-[var(--surface-alt)] hover:bg-[var(--surface-high)] text-[var(--foreground)] text-sm font-semibold px-4 py-1.5 rounded-full border border-[var(--border-strong)] transition-colors">
-                  {s.emoji} {s.label}
-                </a>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* MAGAZINE */}
-        <section className="max-w-6xl mx-auto px-4 py-10">
-          <div className="flex items-center gap-3 mb-5">
-            
-            <h2 className="text-xl font-black text-[var(--foreground)]">Magazine sport cu reduceri active</h2>
-          </div>
-          {magazine.length === 0 ? (
-            <div className="text-center py-12">
-              <p className="text-[var(--text-soft)] mb-4">Momentan nu sunt magazine sport cu promoții active.</p>
-              <Link href="/categorii/sport"
-                className="inline-block bg-[#ddf93c] text-[#0c1000] font-bold px-6 py-3 rounded-xl hover:bg-[#ddf93c] transition-colors">
-                Vezi echipament sport →
-              </Link>
-            </div>
-          ) : (
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-              {magazine.map((m) => (
-              <MagazinCard key={m.magazin} m={m} />
-            ))}
-            </div>
-          )}
-        </section>
-        <NewsletterCTA />
-
-
+        <AntetNisa titlu={<>Sport & Fitness {an}</>}>Echipament sport, biciclete, sală fitness — oferte {laParteneri(NISA_CATEGORII.sport)}, actualizate zilnic</AntetNisa>
+        <OferteNisa magazine={magazine} titlu="Magazine sport cu reduceri active" />
         <NisaProduse
           merchantSlugs={["decathlon.ro","sportisimo.ro","sport-vision.ro","intersport.ro","hervis.ro","gigasport.ro"]}
           catSlug="sport"
@@ -117,6 +65,11 @@ export default function SportPage() {
           culoareAccent="indigo"
           limit={12}
         />
+
+        {/* MAGAZINE */}
+        
+
+        
 
         {/* SEO */}
         <section className="bg-[var(--surface)] border-t border-[var(--border)] py-10 px-4">
@@ -144,31 +97,9 @@ export default function SportPage() {
           </div>
         </section>
 
-        <section className="max-w-6xl mx-auto px-4 py-8">
-          <h2 className="text-base font-black text-[var(--text-soft)] mb-4">Explorează și alte categorii</h2>
-          <div className="flex flex-wrap gap-2">
-            {[
-              { href: "/farmacie", label: "💊 Farmacie" },
-              { href: "/gadgets", label: "📡 Gadgets" },
-              { href: "/moto", label: "🚗 Auto-Moto" },
-              { href: "/sanatate", label: "🌿 Sănătate" },
-              { href: "/copii", label: "👶 Copii" },
-              { href: "/oferte-azi", label: "🔥 Oferte de Azi" },
-            ].map(l => (
-              <a key={l.href} href={l.href}
-                className="bg-[var(--surface)] hover:bg-[var(--surface-alt)] hover:text-[var(--accent-text)] text-[var(--text-soft)] text-sm font-semibold px-4 py-2 rounded-xl transition-colors border border-[var(--border)] hover:border-[#c9ced5]">
-                {l.label}
-              </a>
-            ))}
-          </div>
-        </section>
+        
 
-        <footer className="border-t border-[var(--border)] py-6 text-center text-xs text-[var(--text-muted)] mt-4">
-          © {an} AmCupon.ro ·{" "}
-          <Link href="/moto" className="hover:text-[var(--accent-text)]">Auto-Moto</Link>{" · "}
-          <Link href="/gadgets" className="hover:text-[var(--accent-text)]">Gadgets</Link>{" · "}
-          <Link href="/categorii" className="hover:text-[var(--accent-text)]">Categorii</Link>
-        </footer>
+        
       </div>
     </>
   );

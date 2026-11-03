@@ -2,7 +2,7 @@
  * Test pentru lib/momentBF.ts — ruleaza cu:  node lib/momentBF.test.mjs   (din frontend/)
  * Iese cu cod 1 la prima asteptare incalcata.
  */
-import { fazaBF, calendarScurt, aziRomania } from "./momentBF.ts";
+import { fazaBF, calendarScurt, aziRomania, promoBF } from "./momentBF.ts";
 
 let esecuri = 0;
 const verifica = (nume, primit, asteptat) => {
@@ -29,6 +29,9 @@ verifica("urmeaza: numara tot", cal.urmeaza, 2);
 verifica("urmatoarele, in ordinea startului", cal.urmatoare.map((x) => x.magazin), ["c", "d"]);
 verifica("limita", calendarScurt("2026-11-03", lista, 1).urmatoare.length, 1);
 
+verifica("promoBF: oferta de Black Friday", promoBF("Black Friday la Editura Casa: reduceri"), true);
+verifica("promoBF: fara subsir („blackfridge\")", promoBF("Husa blackfridge 20%"), false);
+verifica("promoBF: Cyber Monday", promoBF("CYBER MONDAY -30%"), true);
 verifica("22:30 UTC pe 5.11 e deja 6.11 in Romania", aziRomania(new Date("2026-11-05T22:30:00Z")), "2026-11-06");
 
 console.log(esecuri ? `\n${esecuri} asteptari incalcate` : "\nToate trec.");
