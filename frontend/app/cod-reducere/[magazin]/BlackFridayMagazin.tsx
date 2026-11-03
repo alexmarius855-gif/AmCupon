@@ -24,6 +24,8 @@ export default function BlackFridayMagazin({ nume, campanie, azi }: { nume: stri
           ? "Oferta e în lista de mai jos. "
           : `Oferta apare pe pagina asta în ziua în care începe. Cu alerta de oferte noi ${nume} primești un email atunci. `}
         Datele sunt anunțate de magazin; reducerile le stabilește {nume}.{" "}
+        <Link href={`/black-friday/${campanie.magazin}`} className="underline hover:text-[var(--accent-text)]">Detalii despre campanie</Link>
+        {" · "}
         <Link href="/black-friday" className="underline hover:text-[var(--accent-text)]">Calendarul tuturor partenerilor →</Link>
       </p>
     </section>

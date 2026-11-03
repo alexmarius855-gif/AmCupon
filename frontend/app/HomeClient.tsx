@@ -199,6 +199,8 @@ interface HomeClientProps {
   magazine: Magazin[];
   blogPosts: BlogPost[];
   recomandate: { magazin: string; nume: string; logo_url: string; categorie: string; are_cod: boolean }[];
+  /** Banda de sus: cate campanii de Black Friday sunt in desfasurare (null = fara banda). */
+  blackFriday?: { inCurs: number; total: number } | null;
   produseCategorii: ProdusCategorie[];
   astazi: string;
   /** „peste 900 de magazine" — calculat pe server din output.json (lib/cifreSite.ts) */
@@ -215,6 +217,7 @@ export default function HomeClient({
   astazi,
   pesteMagazine,
   ghiduri = [],
+  blackFriday = null,
 }: HomeClientProps) {
   const FAQ = faqItems(pesteMagazine);
   const [magazine]                        = useState<Magazin[]>(initMag);
@@ -516,6 +519,14 @@ export default function HomeClient({
           </div>
         )}
       </header>
+
+      {/* ─── BANDA BLACK FRIDAY (cat timp exista campanii ale partenerilor) ── */}
+      {blackFriday && (
+        <Link href="/black-friday" className="block bg-[var(--accent)] px-4 py-2 text-center text-sm font-bold text-[#0c1000] hover:opacity-90">
+          Black Friday: {blackFriday.inCurs >= 20 ? `${blackFriday.inCurs} de` : blackFriday.inCurs}{" "}
+          {blackFriday.inCurs === 1 ? "campanie" : "campanii"} în desfășurare la magazinele partenere. Vezi calendarul →
+        </Link>
+      )}
 
       {/* ─── HERO ────────────────────────────────────────────────────────── */}
       <section className="relative bg-[var(--background)] text-[var(--foreground)] overflow-hidden">

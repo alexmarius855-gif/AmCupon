@@ -6,6 +6,7 @@ import { buildMerchantTokens, esteIndexabil, type IndexableProdus } from "../lib
 import { CAI_REDIRECTIONATE } from "../lib/redirecturi";
 import { articolFaraPromoActiva, ceruteInSitemap, construiesteIndexMagazine } from "../lib/blogCanonical";
 import { gasesteMagazinBrand } from "../lib/brandMagazin";
+import { toateCampaniileBF } from "../lib/campaniiBlackFriday";
 
 const BASE_URL = "https://amcupon.ro";
 
@@ -138,6 +139,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/radar`,                  lastModified: ultimaModificare(`${BASE_URL}/radar`), changeFrequency: "daily",   priority: 0.95 },
     { url: `${BASE_URL}/oferte-azi`,             lastModified: ultimaModificare(`${BASE_URL}/oferte-azi`), changeFrequency: "daily",   priority: 0.95 },
     { url: `${BASE_URL}/black-friday`,           lastModified: ultimaModificare(`${BASE_URL}/black-friday`), changeFrequency: "daily",   priority: 0.95 },
+    // Cate o pagina pentru fiecare partener cu campanie anuntata (04.11.2026), doar daca magazinul e in date
+    // (generateStaticParams din black-friday/[magazin] foloseste aceeasi conditie).
+    ...toateCampaniileBF()
+      .filter((c) => magazineDupaSlug.has(c.magazin))
+      .map((c) => ({
+        url: `${BASE_URL}/black-friday/${c.magazin}`, lastModified: ACUM,
+        changeFrequency: "daily" as const, priority: 0.85,
+      })),
     { url: `${BASE_URL}/reduceri-reale`,         lastModified: ultimaModificare(`${BASE_URL}/reduceri-reale`), changeFrequency: "daily", priority: 0.9 },
     { url: `${BASE_URL}/produse`,                lastModified: ultimaModificare(`${BASE_URL}/produse`), changeFrequency: "daily",   priority: 0.9 },
     { url: `${BASE_URL}/toate-magazinele`,       lastModified: ultimaModificare(`${BASE_URL}/toate-magazinele`), changeFrequency: "daily",   priority: 0.85 },

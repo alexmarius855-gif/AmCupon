@@ -26,7 +26,8 @@ export const REDIRECTURI: Redirect[] = [
   // Temporare (307), nu 308: tinta se poate schimba fara ca browserele sa tina minte
   // vechea adresa. UTM-ul spune in GA4 cate vizite vin de pe hartie.
   { source: "/curieri", destination: "/blog/echipament-iarna-scuter-curieri-2026?utm_source=flyer&utm_medium=print&utm_campaign=curieri", permanent: false },
-  { source: "/oferte",  destination: "/oferte-azi?utm_source=flyer&utm_medium=print&utm_campaign=oferte", permanent: false },
+  // Pana la sfarsitul lui noiembrie, QR-ul duce la calendarul Black Friday; din decembrie, inapoi la /oferte-azi.
+  { source: "/oferte",  destination: "/black-friday?utm_source=flyer&utm_medium=print&utm_campaign=oferte", permanent: false },
 
   // ── Unelte de calcul, ELIMINATE 11.08.2026 (decizie explicita Alex) ────────
   // Cele fiscale dadeau cifre care se schimba prin lege (cote CAS/CASS/impozit,

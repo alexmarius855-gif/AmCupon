@@ -132,14 +132,17 @@ def card_oferte(oferte: list[dict], azi: date) -> str:
         rand.append(f'<li><b>{html.escape(o["magazin"])}</b> — {html.escape(o["titlu"])}'
                     f'<span class="d">{detaliu}</span></li>')
     url, randuri = QR["oferte"]
+    # In noiembrie, QR-ul duce la calendarul Black Friday (frontend/lib/redirecturi.ts)
+    bloc_bf = '<p class="bf"><b>Black Friday:</b> calendarul cu datele fiecărui magazin, scanând codul.</p>' if azi.month == 11 else ""
     return f"""<section class="card">
   <div class="logo"><span>Am</span>Cupon.ro</div>
   <p class="sub">Coduri de reducere și oferte de la magazine online din România, într-un singur loc.
   Actualizate de mai multe ori pe zi. Gratuit, fără cont.</p>
   <h2>Ofertele săptămânii</h2>
   <ul>{''.join(rand)}</ul>
+  {bloc_bf}
   <div class="jos"><div class="qr">{qr_svg(randuri)}</div>
-  <p>Scanează pentru toate ofertele de azi sau intră pe<br><b class="url">{url}</b></p></div>
+  <p>Scanează pentru toate ofertele sau intră pe<br><b class="url">{url}</b></p></div>
   <p class="nota">Ofertele sunt ale magazinelor, la data tipăririi ({data_ro(azi.isoformat())}). Când cumperi prin
   AmCupon, magazinul ne poate plăti un comision; prețul pentru tine e același.</p>
 </section>"""
@@ -184,6 +187,8 @@ li { font-size: 3mm; line-height: 1.3; padding-left: 3mm; border-left: 0.8mm sol
 li b { color: #fff; }
 li .d { display: block; color: #9aa3ab; font-size: 2.5mm; margin-top: 0.4mm; }
 .reguli li { font-size: 3.15mm; }
+.bf { font-size: 3mm; line-height: 1.35; color: #e8ecef; margin-top: 3mm; }
+.bf b { color: #ddf93c; }
 .jos { margin-top: auto; display: flex; gap: 3.5mm; align-items: center; padding-top: 3mm; }
 .qr { width: 27mm; height: 27mm; flex: none; background: #fff; border-radius: 1.5mm; }
 .qr svg { width: 100%; height: 100%; display: block; }

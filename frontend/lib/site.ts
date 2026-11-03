@@ -27,6 +27,7 @@ export const SITE = {
 /** Meniul de sus, pe ecrane late. */
 export const MENIU_PRINCIPAL: Link[] = [
   { href: "/", label: "Acasa" },
+  { href: "/black-friday", label: "Black Friday" }, // pana la sfarsitul lui noiembrie
   { href: "/#promotii", label: "Promotii" },
   { href: "/produse", label: "Produse" },
   { href: "/blog", label: "Blog" },
@@ -39,6 +40,7 @@ export const MENIU_PRINCIPAL: Link[] = [
 /** Meniul de pe telefon (butonul ☰). */
 export const MENIU_MOBIL: Link[] = [
   { href: "/", label: "🏠 Acasa" },
+  { href: "/black-friday", label: "🖤 Black Friday" }, // pana la sfarsitul lui noiembrie
   { href: "/#promotii", label: "🔥 Promotii active" },
   { href: "/produse", label: "🛍️ Produse" },
   { href: "/blog", label: "📝 Blog" },

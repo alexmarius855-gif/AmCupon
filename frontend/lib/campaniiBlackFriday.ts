@@ -18,6 +18,9 @@ export interface CampanieBF {
   final: string;
   nota?: string;
   sursa?: string;
+  /** Textul magazinului despre campanie, curatat de scripts/calendar_black_friday.py. */
+  descriere?: string;
+  are_cod?: boolean;
 }
 
 function citeste(fisier: string): CampanieBF[] {
@@ -31,12 +34,26 @@ function citeste(fisier: string): CampanieBF[] {
 
 let _toate: CampanieBF[] | null = null;
 
+/**
+ * Toate campaniile anului, inclusiv cele terminate: fiecare are o pagina /black-friday/<magazin>, iar o adresa
+ * trimisa la indexare nu trebuie sa dea 404 cand campania se termina. Manualele castiga, dar iau textul din 2P.
+ */
+export function toateCampaniileBF(): CampanieBF[] {
+  return toate();
+}
+
 /** Toate campaniile, manuale intai (fara dubluri pe magazin), in ordinea in care incep. */
 function toate(): CampanieBF[] {
   if (_toate) return _toate;
-  const manuale = citeste("black-friday.json");
+  const din2p = citeste("black-friday-parteneri.json");
+  const dupaSlug = new Map(din2p.map((c) => [c.magazin, c]));
+  const manuale = citeste("black-friday.json").map((c) => ({
+    ...c,
+    descriere: dupaSlug.get(c.magazin)?.descriere,
+    are_cod: dupaSlug.get(c.magazin)?.are_cod,
+  }));
   const vazute = new Set(manuale.map((c) => c.magazin));
-  _toate = [...manuale, ...citeste("black-friday-parteneri.json").filter((c) => !vazute.has(c.magazin))]
+  _toate = [...manuale, ...din2p.filter((c) => !vazute.has(c.magazin))]
     .sort((a, b) => a.start.localeCompare(b.start) || a.nume.localeCompare(b.nume, "ro"));
   return _toate;
 }

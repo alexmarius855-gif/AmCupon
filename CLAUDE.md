@@ -12,6 +12,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 04.11.2026 — pagini „Black Friday <magazin>" (trafic in fereastra BF):** `app/black-friday/[magazin]/page.tsx`, 69 de pagini indexabile (date, textul magazinului curatat de `calendar_black_friday.py::descriere_publica`, produse din feed, FAQ, SaleEvent), in sitemap; IndexNow le trimite la rularea automata. **Corectie:** 2P scrie ultima zi la 00:00 ora Romaniei = toata ziua aceea (`import_csv_promotii.py::sfarsit_real`); calendarul si importul o luau cu o zi mai devreme. Banda pe prima pagina + meniu (de scos in decembrie, ca si redirectul `/oferte` -> `/black-friday`). Texte gata de trimis: `Projects/pasul-0/6-TRAFIC-BLACK-FRIDAY.md`. Build local: worker cazut la ~1.800 de pagini (cod 3221226505, alt server dev pornit pe 8 GB RAM); paginile BF s-au generat si verificat, tsc 0.
+
 **UPDATE 01.11.2026, seara — planul T1–T11 (`Projects/PLAN.md`), partea mea:**
 - **T2 „Black Friday la X" pe paginile de magazin:** `lib/campaniiBlackFriday.ts` = sursa unica (manuale din
   `black-friday.json` + generate de `calendar_black_friday.py`), citita de `/black-friday` si de

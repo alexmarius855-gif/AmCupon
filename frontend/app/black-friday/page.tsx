@@ -5,7 +5,7 @@ import path from "path";
 import MagazinCard, { CardMagazin } from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import { areLinkAfiliat } from "@/lib/linkMagazin";
-import { campaniiBF } from "@/lib/campaniiBlackFriday";
+import { campaniiBF, toateCampaniileBF } from "@/lib/campaniiBlackFriday";
 import StudiuReale from "./StudiuReale";
 
 /**
@@ -36,12 +36,23 @@ function incarcaBF() {
       inCurs: p.start <= azi,
       interval: `${zi(p.start, { day: "numeric", month: "long" })} – ${zi(p.final, { day: "numeric", month: "long" })}`,
     }));
+  const toate = toateCampaniileBF();
+  const durate = toate
+    .map((c) => Math.round((Date.parse(c.final) - Date.parse(c.start)) / 86400000) + 1)
+    .sort((x, y) => x - y);
   return {
     an: d.an as number,
     emag: zi(d.emag, { weekday: "long", day: "numeric", month: "long" }),
     international: `${zi(start, { day: "numeric" })}–${zi(final, { day: "numeric", month: "long" })}`,
     sursa: d.sursa as string,
     parteneri,
+    // Numarul din titlu: toate campaniile anului, ca titlul sa nu se schimbe zilnic pe masura ce se termina.
+    totalCampanii: toate.length,
+    // Cifre despre calendar, calculate din date (fara nume de magazine): Black Friday nu mai e o singura zi.
+    inainteDeEmag: toate.filter((c) => c.start < (d.emag as string)).length,
+    primaZi: toate.length ? zi(toate.map((c) => c.start).sort()[0], { day: "numeric", month: "long" }) : "",
+    medianaZile: durate.length ? durate[Math.floor(durate.length / 2)] : 0,
+    celMaiLung: durate.length ? durate[durate.length - 1] : 0,
   };
 }
 
@@ -53,8 +64,8 @@ const MAX_CARDURI = 48;
 const emagScurt = BF.emag.replace(/^[^,]+,\s*/, "");
 
 export const metadata: Metadata = {
-  title: `Black Friday ${BF.an} România — Coduri Reducere & Oferte`,
-  description: `Black Friday ${BF.an}: eMAG pe ${emagScurt}, magazinele internaționale pe ${BF.international}. Ofertele și codurile active acum la partenerii AmCupon, actualizate zilnic.`,
+  title: `Black Friday ${BF.an}: calendarul a ${BF.totalCampanii} de magazine`,
+  description: `Când începe Black Friday ${BF.an} la ${BF.totalCampanii} de magazine din România: datele fiecărei campanii, ofertele active și câte reduceri sunt reale. eMAG pe ${emagScurt}.`,
   keywords: [
     `black friday romania ${BF.an}`,
     `black friday ${BF.an} data`,
@@ -198,13 +209,19 @@ export default function BlackFridayPage() {
                 {BF.parteneri.length} campanii, în ordinea în care încep. Datele sunt cele anunțate de magazine în rețeaua
                 de afiliere 2Performant sau publicate de presă; reducerile le stabilește fiecare magazin.
               </p>
+              <p className="text-sm text-[var(--text-soft)] mb-3 max-w-2xl">
+                Black Friday nu mai e o singură zi: {BF.inainteDeEmag} din {BF.totalCampanii} de campanii încep înainte de {emagScurt}, prima
+                pe {BF.primaZi}. O campanie ține {BF.medianaZile} zile în mod obișnuit (valoarea mediană), iar cea mai lungă, {BF.celMaiLung} de zile.
+              </p>
               <div className="grid gap-3 sm:grid-cols-2">
                 {BF.parteneri.map((p) => (
                   <div key={p.magazin} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-3 flex flex-col gap-1.5">
                     <p className="text-xs font-semibold text-[var(--text-muted)]">
                       {p.inCurs ? "În desfășurare" : "Urmează"} · {p.interval}
                     </p>
-                    <p className="font-bold leading-snug">{p.nume}</p>
+                    <h3 className="font-bold leading-snug">
+                      <Link href={`/black-friday/${p.magazin}`} className="hover:text-[var(--accent-text)]">Black Friday {p.nume}</Link>
+                    </h3>
                     {p.nota && (
                       <p className="text-xs text-[var(--text-muted)]">
                         {p.nota}

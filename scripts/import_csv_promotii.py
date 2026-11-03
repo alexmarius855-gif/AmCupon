@@ -21,7 +21,7 @@ import json
 import os
 import re
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 # Fix encoding pentru terminal Windows (suport diacritice romane)
 if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf-8-sig"):
@@ -174,11 +174,10 @@ def parse_csv(csv_path: str) -> list:
                 expira_str  = ""
                 if end_raw:
                     try:
-                        # Format: "2026-06-10 20:45:00 UTC"
-                        end_clean = end_raw.replace(" UTC", "+00:00").replace(" ", "T", 1)
-                        end_dt    = datetime.fromisoformat(end_clean)
-                        if end_dt.tzinfo is None:
-                            end_dt = end_dt.replace(tzinfo=timezone.utc)
+                        # Format: "2026-06-10 20:45:00 UTC"; vezi sfarsit_real pentru ultima zi
+                        end_dt = sfarsit_real(end_raw)
+                        if end_dt is None:
+                            raise ValueError(end_raw)
                         delta = (end_dt - now).days
                         if delta < 0:
                             # Promotia a expirat — skip
@@ -235,6 +234,29 @@ def data_csv(raw: str) -> datetime | None:
     except ValueError:
         return None
     return d if d.tzinfo else d.replace(tzinfo=timezone.utc)
+
+
+def ora_ro(d: datetime) -> datetime:
+    """UTC -> ora Romaniei (EET/EEST, regula UE: ora de vara intre ultima duminica din martie si ultima
+    duminica din octombrie, la 01:00 UTC). Fara tzdata, care lipseste pe Windows. 28.10 22:00 UTC = 29.10
+    00:00 in Romania — data luata din UTC ar fi pus evoMAG cu o zi mai devreme decat anuntul lui."""
+    def ultima_duminica(luna: int) -> datetime:
+        z = datetime(d.year, luna, 31, 1, tzinfo=timezone.utc)
+        return z.replace(day=31 - (z.weekday() + 1) % 7)
+    vara = ultima_duminica(3) <= d.astimezone(timezone.utc) < ultima_duminica(10)
+    return d.astimezone(timezone(timedelta(hours=3 if vara else 2)))
+
+
+def sfarsit_real(raw: str) -> datetime | None:
+    """Sfarsitul unei promotii, in ora Romaniei. Magazinele aleg doar ZIUA in 2Performant, care o scrie la
+    00:00 ora Romaniei: la Otter, „pana pe 8 noiembrie, ora 23:59" are End Date 2026-11-07 22:00 UTC, adica
+    8.11 00:00. Luata ca atare, oferta disparea cu o zi inainte de final (masurat 04.11.2026 pe textele a 20
+    de campanii: „6-8 noiembrie" -> 7, „2-15 noiembrie" -> 14). 00:00 = toata ziua aceea."""
+    d = data_csv(raw)
+    if d is None:
+        return None
+    ro = ora_ro(d)
+    return ro.replace(hour=23, minute=59) if (ro.hour, ro.minute) == (0, 0) else ro
 
 
 def inceput_in_viitor(start_raw: str, now: datetime) -> bool:

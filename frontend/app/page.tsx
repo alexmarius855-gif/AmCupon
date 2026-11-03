@@ -4,6 +4,7 @@ import path from "path";
 import HomeClient, { type Magazin } from "./HomeClient";
 import { pesteMagazine, PesteMagazine, laParteneri } from "@/lib/cifreSite";
 import { imagineSigura } from "@/lib/topFeed";
+import { campaniiBF } from "@/lib/campaniiBlackFriday";
 
 export const metadata: Metadata = {
   title: "AmCupon.ro — Coduri de reducere si oferte actualizate zilnic",
@@ -142,6 +143,12 @@ export default function Page() {
   // (nu declanseaza hidratare), acelasi pattern ca cod-reducere/[magazin]/page.tsx.
   const astazi = new Date().toISOString().slice(0, 10);
 
+  // Banda de Black Friday: cat timp exista campanii ale partenerilor care nu s-au terminat (lib/campaniiBlackFriday.ts).
+  const campanii = campaniiBF(astazi);
+  const blackFriday = campanii.length
+    ? { inCurs: campanii.filter((c) => c.start <= astazi).length, total: campanii.length }
+    : null;
+
   return (
     <HomeClient
       magazine={magazine}
@@ -151,6 +158,7 @@ export default function Page() {
       astazi={astazi}
       pesteMagazine={pesteMagazine()}
       ghiduri={ghiduri}
+      blackFriday={blackFriday}
     />
   );
 }
