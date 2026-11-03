@@ -325,7 +325,7 @@ export default function ProduseClient({
   const [minDiscount, setMinDiscount] = useState(0);
   const [sort,        setSort]        = useState<Sort>("nou");
   const [limit,       setLimit]       = useState(48);
-  const [activeTab,   setActiveTab]   = useState<Tab>("oferte");
+  const [activeTab,   setActiveTab]   = useState<Tab>("produse");
   const [savedToast,  setSavedToast]  = useState<string | null>(null);
 
   // Magazine cu promotii active pentru "Top Deals"
@@ -405,59 +405,30 @@ export default function ProduseClient({
   return (
     <div className="min-h-screen bg-[var(--background)]">
 
-      {/* ─── HERO DARK ────────────────────────────────────────────────────── */}
-      <section className="relative bg-[var(--background)] text-[var(--foreground)] overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute inset-0" style={{background:"radial-gradient(ellipse 80% 60% at 50% 0%, rgba(13,148,136,0.15) 0%, transparent 65%)"}}/>
-          <div className="absolute inset-0 opacity-[0.02]" style={{backgroundImage:"linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px)", backgroundSize:"50px 50px"}}/>
-        </div>
-        <div className="relative max-w-5xl mx-auto px-4 pt-14 pb-16 text-center">
-          <div className="inline-flex items-center gap-2 bg-[var(--surface-alt)] border border-[var(--border-strong)] rounded-full px-4 py-1.5 text-xs font-semibold text-slate-500 mb-6">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse inline-block"/>
-            {cuNumar(cuPromotii.length, "magazin", "magazine")} cu promoții active · {cuNumar(products.length, "produs", "produse")} în catalog
-          </div>
-          <h1 className="text-4xl md:text-6xl font-black tracking-tight leading-tight mb-4">
-            <span className="text-[var(--foreground)]">Produse cu prețul de azi</span><br/>
-            <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #ddf93c 0%, #ddf93c 100%)"}}>
-              de la magazinele partenere
-            </span>
-          </h1>
-          <p className="text-[var(--text-soft)] text-lg mb-8 max-w-lg mx-auto">
-            Ofertele active, produsele cu prețul la zi și campaniile magazinelor partenere.
-          </p>
-          {/* Stats */}
-          <div className="flex flex-wrap justify-center gap-8 text-sm">
-            {[
-              { v: `${cuPromotii.length}+`, l: "Magazine cu deals" },
-              { v: `${products.length}`,    l: "Produse în catalog" },
-              { v: `${bannereValide.length}`,l: "Campanii vizuale" },
-              { v: "100%",                  l: "Gratuit" },
-            ].map(s => (
-              <div key={s.l} className="text-center">
-                <div className="font-black text-[var(--foreground)] text-2xl">{s.v}</div>
-                <div className="text-[var(--text-muted)] text-xs mt-0.5">{s.l}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* 03.11.2026: pagina se chema „Produse", dar se deschidea pe „Top Deals", dublura lui /oferte-azi, sub un antet de ~480 px.
+          Acum se deschide pe produse, iar ofertele sunt la un tab distanta. */}
+      <header className="max-w-7xl mx-auto px-4 pt-6 pb-4 text-[var(--foreground)]">
+        <h1 className="text-[1.75rem] md:text-4xl font-black tracking-tight leading-tight mb-2">Produse de la magazinele partenere</h1>
+        <p className="text-[var(--text-soft)] max-w-3xl">
+          {cuNumar(products.length, "produs", "produse")} cu prețul la zi, din feed-urile magazinelor partenere.
+        </p>
+      </header>
 
       {/* ─── TABS ─────────────────────────────────────────────────────────── */}
       <div className="bg-[var(--surface)] border-b border-[var(--border)] sticky top-[64px] z-40">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center gap-1 overflow-x-auto" style={{scrollbarWidth:"none"}}>
             {([
-              { id: "oferte",   label: `Top Deals (${cuPromotii.length})`,      emoji: "🔥" },
-              { id: "campanii", label: `Campanii cu Imagini (${bannereValide.length})`, emoji: "🖼️" },
-              { id: "produse",  label: `Feed Produse (${products.length})`,      emoji: "📦" },
-            ] as {id: Tab; label: string; emoji: string}[]).map(t => (
+              { id: "produse",  label: `Produse (${products.length})` },
+              { id: "oferte",   label: `Magazine cu oferte (${cuPromotii.length})` },
+              { id: "campanii", label: `Campanii (${bannereValide.length})` },
+            ] as {id: Tab; label: string}[]).map(t => (
               <button key={t.id} onClick={() => setActiveTab(t.id)}
                 className={`flex items-center gap-2 px-5 py-3.5 text-sm font-semibold whitespace-nowrap border-b-2 transition-colors ${
                   activeTab === t.id
                     ? "border-[var(--accent-text)] text-[var(--accent-text)]"
                     : "border-transparent text-[var(--text-muted)] hover:text-[var(--text-soft)]"
                 }`}>
-                <span>{t.emoji}</span>
                 {t.label}
               </button>
             ))}
@@ -469,8 +440,7 @@ export default function ProduseClient({
       {activeTab === "oferte" && (
         <section id="top-deals" className="max-w-7xl mx-auto px-4 py-10">
           <div className="mb-8">
-            <p className="text-xs font-bold text-[var(--accent-text)] uppercase tracking-widest mb-2">LIVE · ACTUALIZAT AZI</p>
-            <h2 className="text-3xl font-black tracking-tight text-[var(--foreground)]">Top Deals din România</h2>
+            <h2 className="text-2xl font-black tracking-tight text-[var(--foreground)]">Magazine cu oferte active</h2>
             <p className="text-[var(--text-soft)] text-sm mt-1.5">
               {cuNumar(cuPromotii.length, "magazin", "magazine")} cu promoții actuale, sortate după reducere maximă
             </p>
@@ -480,7 +450,7 @@ export default function ProduseClient({
             <div className="text-center py-16 bg-[var(--surface)] rounded-xl border border-[var(--border-strong)]">
               <p className="text-3xl mb-3">⏳</p>
               <p className="font-black text-[var(--text-soft)] mb-2">Se încarcă ofertele</p>
-              <p className="text-[var(--text-soft)] text-sm">Datele se actualizează zilnic la 08:00</p>
+              <p className="text-[var(--text-soft)] text-sm">Datele se actualizează de trei ori pe zi</p>
             </div>
           ) : (
             <>
@@ -500,8 +470,8 @@ export default function ProduseClient({
               </div>
               {cuPromotii.length > 54 && (
                 <div className="text-center mt-8">
-                  <Link href="/" className="border-2 border-[var(--border-strong)] hover:border-[var(--accent-text)] text-[var(--text-soft)] hover:text-[var(--accent-text)] font-bold px-8 py-3 rounded-xl text-sm transition-all hover:shadow-md inline-block">
-                    Vezi toate cele {cuNumar(cuPromotii.length, "magazin", "magazine")} pe homepage →
+                  <Link href="/oferte-azi" className="border-2 border-[var(--border-strong)] hover:border-[var(--accent-text)] text-[var(--text-soft)] hover:text-[var(--accent-text)] font-bold px-8 py-3 rounded-xl text-sm transition-all hover:shadow-md inline-block">
+                    Toate ofertele de azi →
                   </Link>
                 </div>
               )}
@@ -543,7 +513,7 @@ export default function ProduseClient({
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6">
                     <div>
                       <p className="text-[var(--foreground)] font-black text-xl">{b.merchant}</p>
-                      <p className="text-slate-500 text-sm">{b.name || b.category}</p>
+                      <p className="text-[var(--text-muted)] text-sm">{b.name || b.category}</p>
                     </div>
                     <span className="ml-auto bg-[#ddf93c] text-[#0c1000] font-black px-4 py-2 rounded-xl text-sm">
                       Vezi oferta →
@@ -631,11 +601,11 @@ export default function ProduseClient({
               <p className="text-4xl mb-4">📦</p>
               <h3 className="font-black text-[var(--text-soft)] text-xl mb-2">Feed-urile se populează</h3>
               <p className="text-[var(--text-muted)] text-sm mb-6 max-w-md mx-auto">
-                Produsele din feed-urile magazinelor se actualizează de mai multe ori pe zi. Între timp, vezi ofertele din tab-ul Top Deals.
+                Produsele din feed-urile magazinelor se actualizează de mai multe ori pe zi. Între timp, vezi ofertele din tab-ul Magazine cu oferte.
               </p>
               <button onClick={() => setActiveTab("oferte")}
                 className="bg-[#ddf93c] text-[#0c1000] font-bold px-6 py-3 rounded-xl hover:bg-[#ddf93c] transition-colors text-sm">
-                Vezi Top Deals →
+                Vezi magazinele cu oferte →
               </button>
             </div>
           ) : (

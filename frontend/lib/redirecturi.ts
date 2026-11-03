@@ -22,6 +22,15 @@ export type Redirect = {
 };
 
 export const REDIRECTURI: Redirect[] = [
+  // 03.11.2026: /nisa/* se declarau deja duplicat al paginilor pe teme (canonical, fara sitemap) si filtrau pe subsir
+  // („it" in orice nume de magazin). Paginile s-au sters, semnalul merge la pagina principala.
+  { source: "/nisa/auto", destination: "/moto", permanent: true },
+  { source: "/nisa/carti", destination: "/carti", permanent: true },
+  { source: "/nisa/casa", destination: "/casa", permanent: true },
+  { source: "/nisa/tech", destination: "/electronice", permanent: true },
+  { source: "/nisa/fashion", destination: "/fashion", permanent: true },
+  { source: "/nisa/sport", destination: "/sport", permanent: true },
+  { source: "/nisa/frumusete", destination: "/frumusete", permanent: true },
   // ── Adresele de pe flyer (29.10.2026, scripts/genereaza_flyer.py) ─────────
   // Temporare (307), nu 308: tinta se poate schimba fara ca browserele sa tina minte
   // vechea adresa. UTM-ul spune in GA4 cate vizite vin de pe hartie.

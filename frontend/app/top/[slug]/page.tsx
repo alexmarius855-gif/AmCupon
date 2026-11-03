@@ -63,7 +63,6 @@ interface TopData {
 // lime e ACCENT (numere, butoane, badge-uri), nu suprafata mare. Deci hero-ul devine
 // inchis, iar accentul ramane pe titlu/cifre. `cat.culoare` nu mai controleaza
 // culoarea de fundal, dar il pastram in date pentru eventuale accente viitoare.
-const HERO_BG = "from-[var(--surface)] via-[var(--surface)] to-[var(--background)]";
 
 /**
  * Cand au fost alese modelele si notate preturile din top-produse.json (git: 28.05,
@@ -150,7 +149,6 @@ export default async function TopCategoriePage({
   if (!cat) notFound();
 
   const an = new Date().getFullYear();
-  const gradient = HERO_BG;
   const numeTema = numeInFraza(slug, cat.titlu_scurt);
 
   // ── Magazinele din topul editorial: DOAR partenerii, cu linkul platit de azi ──
@@ -188,10 +186,6 @@ export default async function TopCategoriePage({
 
   const pretMinim = Math.min(...cat.produse.map(p => p.pret_de_la));
   const pretMaxim = Math.max(...cat.produse.map(p => p.pret_de_la));
-  const scorMediu = (
-    cat.produse.reduce((a, p) => a + p.scor_total, 0) / cat.produse.length
-  ).toFixed(1);
-
   const bestPick = produse.find(p => p.badge === "Alegerea Redacției") || produse[0];
 
   // JSON-LD: ItemList schema
@@ -282,10 +276,10 @@ export default async function TopCategoriePage({
 
       <div className="min-h-screen bg-[var(--background)] dark:bg-[var(--surface)]">
         {/* HERO */}
-        <section className={`bg-gradient-to-br ${gradient} text-[var(--foreground)] border-b border-[var(--border)] py-10 px-4`}>
+        <section className="text-[var(--foreground)] pt-5 pb-3 px-4">
           <div className="max-w-5xl mx-auto">
             <div className="flex items-center gap-2 mb-3">
-              <Link href="/top" className="text-slate-500 hover:text-[var(--foreground)] text-sm transition-colors">
+              <Link href="/top" className="text-[var(--text-muted)] hover:text-[var(--foreground)] text-sm transition-colors">
                 &larr; Top Produse
               </Link>
               {cat.tag && (
@@ -295,16 +289,15 @@ export default async function TopCategoriePage({
               )}
             </div>
 
-            <div className="flex items-start gap-4 mb-6">
-              <div className="text-5xl shrink-0">{cat.emoji}</div>
+            <div>
               <div>
-                <h1 className="text-3xl md:text-4xl font-black leading-tight mb-2">{cat.titlu}</h1>
-                <p className="text-slate-500 text-base max-w-2xl">{cat.descriere}</p>
+                <h1 className="text-[1.75rem] md:text-4xl font-black tracking-tight leading-tight mb-2">{cat.titlu}</h1>
+                <p className="text-[var(--text-soft)] max-w-2xl">{cat.descriere.replace(/^Top \d+/, `Top ${cat.produse.length}`)}</p>
                 {/* Metodologie explicita. Pana pe 10.08.2026 paginile scriau "Am analizat
                     20+ modele" / "testate in bucatarie" — o testare care nu a avut loc
                     niciodata. Scorurile sunt evaluare EDITORIALA pe date publice, si spunem
                     asta direct, in loc sa lasam cititorul sa creada ca sunt masuratori. */}
-                <p className="text-xs text-slate-500/80 max-w-2xl mt-2 leading-relaxed">
+                <p className="text-xs text-[var(--text-muted)] max-w-2xl mt-2 leading-relaxed">
                   Selecție editorială pe baza specificațiilor și prețurilor publice, din {SELECTIE}. Scorurile
                   sunt evaluarea noastră, nu rezultate de laborator, iar prețurile din top sunt de referință,
                   notate la selecție. Linkurile către magazine sunt afiliate — prețul tău rămâne același.
@@ -314,32 +307,10 @@ export default async function TopCategoriePage({
                     href="#unde-cumperi"
                     className="inline-flex items-center gap-2 mt-4 bg-[#ddf93c] hover:bg-[#c3dd2c] text-[#0c1000] text-sm font-bold px-4 py-2 rounded-xl transition-colors"
                   >
-                    Prețurile de azi la magazinele partenere &darr;
+                    Prețurile de azi, de la {pret(sectiune.min)} &darr;
                   </Link>
                 )}
               </div>
-            </div>
-
-            {/* STATS BAR — fiecare cifra spune de unde e: top editorial sau feed-ul de azi */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl">
-              {[
-                { val: `${cat.produse.length}`, label: "Modele comparate" },
-                { val: scorMediu, label: "Scor editorial mediu" },
-                ...(sectiune
-                  ? [
-                      { val: `${sectiune.total}`, label: "Oferte azi la parteneri" },
-                      { val: pret(sectiune.min), label: "Cel mai mic preț azi" },
-                    ]
-                  : [
-                      { val: `${pretMinim.toLocaleString("ro-RO")}+ lei`, label: "Preț de referință" },
-                      { val: SELECTIE, label: "Selecția modelelor" },
-                    ]),
-              ].map(s => (
-                <div key={s.label} className="bg-[var(--surface-alt)] rounded-xl py-2.5 px-3">
-                  <div className="text-base font-black">{s.val}</div>
-                  <div className="text-xs text-slate-500">{s.label}</div>
-                </div>
-              ))}
             </div>
           </div>
         </section>
@@ -364,8 +335,6 @@ export default async function TopCategoriePage({
         {/* MAIN CONTENT */}
         <div className="max-w-5xl mx-auto px-4 py-8">
           <CriteriiTema lista={criteriiTema(slug)} />
-
-          <TopProduseClient produse={produse} culoare={cat.culoare} areSectiune={cuModele || !!sectiune || legaturi.length > 0} selectie={SELECTIE} />
 
           {cuModele && (
             <section id="unde-cumperi" className="mt-10 scroll-mt-24">
@@ -397,7 +366,7 @@ export default async function TopCategoriePage({
                 Unde găsești {numeTema} azi
               </h2>
               <p className="text-sm text-[var(--text-soft)] leading-relaxed mb-4">
-                Prețul și stocul de azi le vezi pe site-ul magazinului partener. Prețurile din topul de mai sus sunt de referință, din {SELECTIE}.
+                Prețul și stocul de azi le vezi pe site-ul magazinului partener. Prețurile din topul de mai jos sunt de referință, din {SELECTIE}.
               </p>
               <div className="flex flex-wrap gap-2">
                 {legaturi.map(l => (
@@ -414,6 +383,10 @@ export default async function TopCategoriePage({
               </div>
             </section>
           )}
+
+          {/* 03.11.2026: ofertele de azi inaintea topului editorial — de aici vin clicurile pe telefon. */}
+          <h2 className="text-xl md:text-2xl font-black tracking-tight text-[var(--foreground)] mt-10 mb-4">Topul nostru de {numeTema}</h2>
+          <TopProduseClient produse={produse} culoare={cat.culoare} areSectiune={cuModele || !!sectiune || legaturi.length > 0} selectie={SELECTIE} />
 
           {ghiduriTema.length > 0 && (
             <nav aria-label="Ghiduri pe aceeași temă" className="mt-10">
@@ -544,12 +517,6 @@ export default async function TopCategoriePage({
           </div>
         </div>
 
-        <footer className="border-t border-[var(--border)] dark:border-[var(--border-strong)] py-6 text-center text-xs text-[var(--text-muted)]">
-          &copy; {an} AmCupon.ro &middot;{" "}
-          <Link href="/" className="hover:text-[var(--accent-text)]">Acasă</Link>
-          {" · "}<Link href="/top" className="hover:text-[var(--accent-text)]">Top Produse</Link>
-          {" · "}<Link href="/blog" className="hover:text-[var(--accent-text)]">Blog</Link>
-        </footer>
       </div>
     </>
   );

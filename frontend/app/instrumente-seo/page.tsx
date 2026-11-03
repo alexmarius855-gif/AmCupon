@@ -125,7 +125,7 @@ export default function InstrumenteSeoPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["Semrush","Ahrefs","Moz Pro","SE Ranking","Trial Gratuit","Keyword Research","Audit Site","Backlink Analysis"].map(c => (
-                <span key={c} className="bg-[var(--surface-alt)] border border-[var(--border-strong)] text-slate-500 text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
+                <span key={c} className="bg-[var(--surface-alt)] border border-[var(--border-strong)] text-[var(--text-muted)] text-xs font-semibold px-3 py-1.5 rounded-full">{c}</span>
               ))}
             </div>
           </div>

@@ -323,7 +323,7 @@ export default function TopProduseClient({ produse, culoare, areSectiune, select
                     </ul>
                   </div>
                   <div>
-                    <p className="text-xs font-bold text-red-500 dark:text-red-400 mb-1.5">Dezavantaje</p>
+                    <p className="text-xs font-bold text-red-400 mb-1.5">Dezavantaje</p>
                     <ul className="space-y-1">
                       {p.contra.slice(0, 3).map((item, i) => (
                         <li key={i} className="text-xs text-[var(--text-soft)] flex items-start gap-1.5">

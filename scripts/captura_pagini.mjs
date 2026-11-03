@@ -57,7 +57,7 @@ const MASOARA = `(() => {
   const rgb = (s) => { cx.clearRect(0,0,1,1); cx.fillStyle = s; cx.fillRect(0,0,1,1); const d = cx.getImageData(0,0,1,1).data; return [d[0],d[1],d[2],d[3]/255]; };
   const lum = ([r,g,b]) => { const f = (c) => { c/=255; return c<=.03928?c/12.92:Math.pow((c+.055)/1.055,2.4); }; return .2126*f(r)+.7152*f(g)+.0722*f(b); };
   const peste = (a, f) => { const al = a[3] ?? 1; return [0,1,2].map((i) => a[i]*al + f[i]*(1-al)); };
-  const fundal = (el) => { const st = []; for (let e = el; e; e = e.parentElement) { const c = getComputedStyle(e); if (c.backgroundImage !== 'none') return null; const b = rgb(c.backgroundColor); const a = b[3] ?? 1; if (a > 0) { st.push(b); if (a >= 1) break; } } let r = [13,15,18]; for (const b of st.reverse()) r = peste(b, r); return r; };
+  const fundal = (el) => { const st = []; for (let e = el; e; e = e.parentElement) { const c = getComputedStyle(e); if (c.backgroundImage !== 'none') { const g = c.backgroundImage.match(/(?:rgba?|oklch|oklab|color)\\([^)]*\\)/); if (!g) return null; let r = rgb(g[0]); r = peste(r, [13,15,18]); for (const b of st.reverse()) r = peste(b, r); return r; } const b = rgb(c.backgroundColor); const a = b[3] ?? 1; if (a > 0) { st.push(b); if (a >= 1) break; } } let r = [13,15,18]; for (const b of st.reverse()) r = peste(b, r); return r; };
   const w = document.documentElement.clientWidth;
   const contrast = []; const iesite = []; const vazute = new Set();
   for (const el of document.querySelectorAll('body *')) {

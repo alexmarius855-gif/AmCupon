@@ -97,7 +97,7 @@ function MagazinCard({ m, onRemove, onSwap, position }: { m: Magazin; onRemove: 
           </div>
           <div>
             <h2 className="text-xl font-black">{numeAfisat(m.magazin)}</h2>
-            <p className="text-slate-500 text-sm">{m.categorie}</p>
+            <p className="text-[var(--text-muted)] text-sm">{m.categorie}</p>
           </div>
         </div>
       </div>

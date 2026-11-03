@@ -80,15 +80,15 @@ export default function ExtensiePage() {
       </nav>
 
       {/* HERO — fundal lime plin, deci textul e inchis */}
-      <section className="bg-gradient-to-br from-[#c3dd2c] via-[#ddf93c] to-[#c3dd2c] text-[#0c1000] py-16 px-4">
+      <section className="bg-[var(--surface)] border-b border-[var(--border)] text-[var(--foreground)] py-16 px-4">
         <div className="max-w-3xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-[#0c1000]/10 border border-[#0c1000]/20 text-[#0c1000] text-xs font-bold px-4 py-1.5 rounded-full mb-6">
+          <div className="inline-flex items-center gap-2 bg-[var(--surface-alt)] border border-[var(--border-strong)] text-[var(--foreground)] text-xs font-bold px-4 py-1.5 rounded-full mb-6">
             Nu e încă publicată
           </div>
           <h1 className="text-3xl md:text-4xl font-black mb-4 leading-tight">
             Ofertele active,<br />pe magazinul pe care ești
           </h1>
-          <p className="text-[#2a2f10] text-lg mb-8 max-w-xl mx-auto">
+          <p className="text-[var(--text-soft)] text-lg mb-8 max-w-xl mx-auto">
             Extensia AmCupon îți arată ofertele și codurile active pentru magazinul deschis în tab.
             Încă n-am trimis-o la Google. Lasă-ți emailul și îți scriem când o poți instala.
           </p>

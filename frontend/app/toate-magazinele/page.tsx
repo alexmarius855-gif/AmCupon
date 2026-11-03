@@ -2,7 +2,9 @@ import { deNumar } from "@/lib/acordNumeral";
 import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
-import ToateMagazineleClient from "./ToateMagazineleClient";
+import ToateMagazineleClient, { type MagazinDirector } from "./ToateMagazineleClient";
+import { valoareOferta, type PromotieCupon } from "@/lib/oferta";
+import { procentAfisat } from "@/lib/oferteAcasa";
 import { numarMagazine, PesteMagazine } from "@/lib/cifreSite";
 
 export const metadata: Metadata = {
@@ -22,8 +24,17 @@ export const metadata: Metadata = {
 };
 
 export default function ToateMagazinelePage() {
-  const data = JSON.parse(
+  const data: (Omit<MagazinDirector, "pct"> & { promotii?: PromotieCupon[] })[] = JSON.parse(
     fs.readFileSync(path.join(process.cwd(), "public", "output.json"), "utf-8")
   );
-  return <ToateMagazineleClient magazine={data} />;
+  // Doar ce se afiseaza: pana pe 03.11.2026, in HTML ajungea tot output.json, cu comisionul inclus.
+  const magazine: MagazinDirector[] = data.map((m) => ({
+    magazin: m.magazin,
+    logo_url: m.logo_url,
+    categorie_slug: m.categorie_slug,
+    are_promotie: m.are_promotie,
+    cod_cupon: m.cod_cupon,
+    pct: Math.max(0, ...(m.promotii || []).map((p) => procentAfisat(valoareOferta(p).text))),
+  }));
+  return <ToateMagazineleClient magazine={magazine} />;
 }

@@ -236,7 +236,7 @@ export default function EsimPage() {
                     <div className="w-16 h-16 bg-[var(--surface-alt)] rounded-xl flex items-center justify-center text-2xl font-bold text-[var(--accent-text)] mx-auto mb-2 border border-[var(--border-strong)]">
                       #{esim.rank}
                     </div>
-                    <span className={`inline-block text-xs px-2 py-0.5 rounded-full text-[var(--foreground)] ${esim.badgeColor}`}>
+                    <span className={`inline-block text-xs px-2 py-0.5 rounded-full text-[#0c1000] ${esim.badgeColor}`}>
                       {esim.badge}
                     </span>
                   </div>

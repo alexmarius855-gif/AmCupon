@@ -65,12 +65,12 @@ const TOP_CRACIUN = [
 ];
 
 const IDEI_CADOURI = [
-  { emoji: "🧸", titlu: "Jucării copii", href: "/categorii/copii", culoare: "bg-yellow-100 text-[var(--accent-text)]" },
-  { emoji: "💄", titlu: "Parfumuri & Beauty", href: "/categorii/beauty", culoare: "bg-[#ddf93c] text-[var(--accent-text)]" },
-  { emoji: "📱", titlu: "Electronice", href: "/categorii/electronice", culoare: "bg-[#ddf93c] text-[var(--accent-text)]" },
-  { emoji: "👗", titlu: "Modă & Fashion", href: "/categorii/fashion", culoare: "bg-[#ddf93c] text-[var(--accent-text)]" },
-  { emoji: "📚", titlu: "Cărți & Jocuri", href: "/categorii/carti-educatie", culoare: "bg-green-100 text-[var(--accent-text)]" },
-  { emoji: "🏋️", titlu: "Sport & Outdoor", href: "/categorii/sport", culoare: "bg-[#ddf93c] text-[var(--accent-text)]" },
+  { emoji: "🧸", titlu: "Jucării copii", href: "/categorii/copii", culoare: "bg-[var(--surface)] border border-[var(--border)] text-[var(--foreground)]" },
+  { emoji: "💄", titlu: "Parfumuri & Beauty", href: "/categorii/beauty", culoare: "bg-[var(--surface)] border border-[var(--border)] text-[var(--foreground)]" },
+  { emoji: "📱", titlu: "Electronice", href: "/categorii/electronice", culoare: "bg-[var(--surface)] border border-[var(--border)] text-[var(--foreground)]" },
+  { emoji: "👗", titlu: "Modă & Fashion", href: "/categorii/fashion", culoare: "bg-[var(--surface)] border border-[var(--border)] text-[var(--foreground)]" },
+  { emoji: "📚", titlu: "Cărți & Jocuri", href: "/categorii/carti-educatie", culoare: "bg-[var(--surface)] border border-[var(--border)] text-[var(--foreground)]" },
+  { emoji: "🏋️", titlu: "Sport & Outdoor", href: "/categorii/sport", culoare: "bg-[var(--surface)] border border-[var(--border)] text-[var(--foreground)]" },
 ];
 
 function loadData(): Magazin[] {
@@ -129,13 +129,13 @@ export default function CraciunPage() {
         </nav>
 
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#c3dd2c] via-[#ddf93c] to-[#c3dd2c] text-[#0c1000]">
+        <section className="bg-[var(--surface)] border-b border-[var(--border)] text-[var(--foreground)]">
           <div className="max-w-6xl mx-auto px-4 py-14 text-center">
             <div className="text-5xl mb-4">🎄</div>
             <h1 className="text-4xl md:text-5xl font-black mb-4 leading-tight">
               Reduceri de Crăciun {an}
             </h1>
-            <p className="text-[#2a2f10] text-lg mb-8 max-w-xl mx-auto">
+            <p className="text-[var(--text-soft)] text-lg mb-8 max-w-xl mx-auto">
               Coduri de reducere pentru cadouri — jucării, fashion,
               electronice, parfumuri și multe altele
             </p>
@@ -149,7 +149,7 @@ export default function CraciunPage() {
               ].map((s) => (
                 <div key={s.label} className="bg-[var(--surface-alt)] backdrop-blur-sm rounded-xl py-3 px-2">
                   <div className="text-2xl font-black">{s.val}</div>
-                  <div className="text-xs text-[#2a2f10]">{s.label}</div>
+                  <div className="text-xs text-[var(--text-soft)]">{s.label}</div>
                 </div>
               ))}
             </div>
