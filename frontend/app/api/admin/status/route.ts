@@ -112,7 +112,7 @@ async function getShockDeal() {
       promotii: { nume: string; cod_cupon: string; zile_ramase: number }[];
     }[] = JSON.parse(fs.readFileSync(filePath, "utf-8"));
 
-    // Aceeasi selectie ca "DEAL ZILEI" din HomeClient.tsx — o singura sursa de
+    // Aceeasi selectie ca "DEAL ZILEI" de pe vechea prima pagina — o singura sursa de
     // adevar pt ce inseamna "cea mai buna oferta reala azi", nu inventam alta.
     const cuPromotii = data
       .filter(m => m.are_promotie && m.promotii?.length)

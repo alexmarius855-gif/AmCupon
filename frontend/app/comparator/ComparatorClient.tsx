@@ -198,6 +198,7 @@ function SearchMagazin({ onSelect, exclude }: { onSelect: (slug: string) => void
   }, []);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- lista de sugestii urmeaza textul tastat
     if (query.length < 2) { setResults([]); setShow(false); return; }
     const q = query.toLowerCase();
     setResults(all.filter(m => !exclude.includes(m.magazin) && (m.magazin.toLowerCase().includes(q) || numeAfisat(m.magazin).toLowerCase().includes(q))).slice(0, 6));

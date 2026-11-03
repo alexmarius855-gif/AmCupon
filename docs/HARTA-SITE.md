@@ -21,7 +21,9 @@ Regula de contrast: lime (`--accent`) e fundal de buton cu text `#0c1000`; ca te
 | Vrei să schimbi | Editezi |
 |---|---|
 | Meniul de sus, meniul de pe telefon | `frontend/lib/site.ts` → `MENIU_PRINCIPAL`, `MENIU_MOBIL` |
-| Coloanele din subsol | `frontend/lib/site.ts` → `SUBSOL` |
+| Numele și descrierile categoriilor, paginile pe teme de pe /categorii | `frontend/lib/site.ts` → `CATEGORII_SITE`, `NISE_SITE` |
+| Bara de sus cu Black Friday (apare și dispare singură) | `frontend/app/layout.tsx` → `anuntBF` |
+| Coloanele din subsol (toate paginile, inclusiv prima) | `frontend/lib/site.ts` → `SUBSOL` |
 | Email de contact, rețele sociale | `frontend/lib/site.ts` → `SITE` |
 | Magazinele populare din subsol | `frontend/lib/magazinePopulare.ts` |
 | Numele afișat al unui magazin | `frontend/lib/numeMagazin.ts` |
@@ -47,7 +49,13 @@ Regula de contrast: lime (`--accent`) e fundal de buton cu text `#0c1000`; ca te
 |---|---|
 | Un ghid „Cel mai bun X” (scris pe surse) | `scripts/articole_verificate.py`, apoi `python articole_verificate.py --test` și `python articole_verificate.py` |
 | Cum arată un articol de blog | `frontend/app/blog/[slug]/page.tsx` |
-| Prima pagină | `frontend/app/page.tsx` (date) + `frontend/app/HomeClient.tsx` (aspect) |
+| Prima pagină | `frontend/app/page.tsx` (randată pe server; doar grila de oferte are JavaScript) |
+| Temele cu produse de pe prima pagină | `frontend/app/page.tsx` → `TEME_ACASA` |
+| Ce spune primul ecran în fiecare fază Black Friday | `frontend/app/page.tsx` → `carlig`, fazele în `frontend/lib/momentBF.ts` |
+| Ordinea ofertelor, peste tot | `frontend/lib/oferteAcasa.ts` → `oferteAcasa` (test: `node lib/oferteAcasa.test.mjs`) |
+| Grila de oferte (filtre, card, „Arată încă”) | `frontend/app/components/GrilaOferte.tsx`, datele în `frontend/lib/grilaOferte.ts` |
+| Antetul și blocul de oferte ale paginilor pe teme (/fashion, /casa...) | `frontend/app/components/OferteNisa.tsx` |
+| Pagina unei categorii | `frontend/app/categorii/[slug]/page.tsx` |
 | Pagina de magazin | `frontend/app/cod-reducere/[magazin]/page.tsx` (date) + `MagazinClient.tsx` (aspect) |
 
 ## Automatizări și verificări
@@ -56,6 +64,7 @@ Regula de contrast: lime (`--accent`) e fundal de buton cu text `#0c1000`; ca te
 |---|---|
 | Actualizarea automată (3 rulări pe zi) | `.github/workflows/update-data.yml` |
 | Garda care oprește datele greșite | `scripts/verifica_site.py` |
+| Capturi + scroll orizontal + contrast în browser real, la 1280 și 375 px | `node scripts/captura_pagini.mjs --baza http://localhost:3107 --iesire <folder> /pagina` (în Git Bash cu `MSYS_NO_PATHCONV=1`) |
 | Raport de venit (doar local) | `python scripts/raport_venit.py` — cheile în `scripts/.env` |
 | Raport Google Search Console (doar local) | `python scripts/raport_gsc.py` — cheia în `scripts/gsc-key.local.json` |
 

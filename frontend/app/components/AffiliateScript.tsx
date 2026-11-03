@@ -9,6 +9,7 @@ export default function AffiliateScript() {
   useEffect(() => {
     const consent = localStorage.getItem("cookie_consent");
     if (consent === "accepted") {
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- acordul e in localStorage, citit doar in browser
       setCanLoad(true);
     }
     // Ascultă acceptarea în timp real (când userul apasă Accept în același tab)

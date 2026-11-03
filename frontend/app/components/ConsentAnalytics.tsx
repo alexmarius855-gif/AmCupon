@@ -18,6 +18,7 @@ export default function ConsentAnalytics({ gaId, adsenseId }: Props) {
 
   useEffect(() => {
     // Verificare initiala (revenire pe site dupa acceptare anterioara)
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- acordul e in localStorage, citit doar in browser
     setConsented(localStorage.getItem("cookie_consent") === "accepted");
 
     // Ascultam acceptarea live (acelasi tab)

@@ -6,8 +6,7 @@ import MagazinCard, { type CardMagazin } from "../components/MagazinCard";
 import { numeAfisat } from "@/lib/numeMagazin";
 import { cuNumar } from "@/lib/acordNumeral";
 
-interface Magazin extends CardMagazin {
-}
+type Magazin = CardMagazin;
 
 
 function loadData(): Magazin[] {

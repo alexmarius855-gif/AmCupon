@@ -123,6 +123,9 @@ de timp.
   verifică invariantul „ce produce generatorul trece garda" (pică pe codul vechi). Și: logul gărzii
   sugera „improspatarea nu le rescrie" — prima ipoteză de verificat era că **garda** greșește.
 
+- **03.11.2026:** prima pagină avea antet și subsol proprii, cu liste copiate; fiecare pagină pe teme, antet și card proprii; /oferte-azi,
+  /top-reduceri și /black-friday, câte o ordine și câte un card. Acum: antet și subsol comune, `lib/grilaOferte.ts` + `GrilaOferte` peste tot.
+
 **Regula:** o listă folosită în două locuri se **exportă dintr-unul și se importă în celălalt**.
 Nu se copiază, oricât de mică e. **Același lucru pentru o REGULĂ de afișare**, nu doar pentru o
 listă de date: un prag, un format, o condiție de vizibilitate copiate în două componente diverg la
@@ -478,6 +481,15 @@ cuvinte care nu există în română/engleză), în `curata_promotii` (sursa), �
 (tot istoricul) și în `verifica_promotii.py` — pe output.json ȘI pe textul articolelor de magazin. Engleza,
 EUR, USD rămân (magazinele internaționale cu livrare în România). Capcana prinsă de test înainte de commit:
 „CAD10” e un cod de cupon, nu 10 dolari canadieni — moneda trebuie să fie separată de sumă.
+
+### 03.11.2026 — a zecea: exportul de promoții, pe primul rând al site-ului
+
+Exportul 2Performant pus pe 01.11 a adus titluri scrise pentru afiliați, pe care filtrul nu le știa: „Q4 opportunity: Promovează
+ștergătoarele”, „Accelerează-ți comisioanele!”, „Comision 8% | Coș mediu peste 1.000 RON | Kit Media disponibil!”. Unul a ajuns în
+ticker, pe primul rând al site-ului, și pe locul 2 în grila primei pagini; comisionul a ajuns și pe /black-friday, prin calendar, care
+citea CSV-ul direct, pe lângă `curata_promotii`. **Reguli:** (1) când adaugi o sursă nouă de text din rețea, trece-o prin aceeași regulă,
+chiar dacă nu trece prin merge; (2) după orice import nou, listează titlurile care conțin „comision”, „promovează”, „kit” înainte de
+push. Tot acolo: /toate-magazinele trimitea tot `output.json` în HTML, cu comisionul inclus (nu se afișa, dar era public).
 
 ## 11. Măsoară înainte să tai, și înainte să repari
 

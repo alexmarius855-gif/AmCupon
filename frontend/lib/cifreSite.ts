@@ -19,7 +19,7 @@ import { cuNumar } from "./acordNumeral.ts";
  * atinga fisierul; unul calculat, nu.
  *
  * Doar pentru cod de SERVER (citeste fisierul). Componentele client primesc fraza gata
- * facuta, ca prop (vezi app/page.tsx -> HomeClient).
+ * facuta, ca prop (vezi app/page.tsx).
  */
 
 interface MagazinMin {

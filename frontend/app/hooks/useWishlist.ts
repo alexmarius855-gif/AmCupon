@@ -43,6 +43,7 @@ export function useWishlist() {
   const [items, setItems] = useState<WishlistItem[]>([]);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- lista e in localStorage, citita doar in browser
     setItems(getStored());
   }, []);
 
