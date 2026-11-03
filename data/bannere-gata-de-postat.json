@@ -1,5 +1,83 @@
 [
   {
+    "id": 274226,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274185/original/274185.png",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=f1727e6eb&aff_code=541547473&campaign_unique=ef2621c0a",
+    "landing_raw": "https://automobilus.ro",
+    "width": 1440,
+    "height": 1440,
+    "merchant": "automobilus.ro",
+    "merchant_slug": "automobilus-ro",
+    "name": "Black Friday 2026",
+    "category": "Black Friday 2026",
+    "b_type": "image"
+  },
+  {
+    "id": 274215,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274174/original/274174.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=fee891ea0&aff_code=541547473&campaign_unique=f9db13aad",
+    "landing_raw": "https://www.curteaveche.ro",
+    "width": 1080,
+    "height": 1080,
+    "merchant": "curteaveche.ro",
+    "merchant_slug": "curteaveche-ro",
+    "name": "Black Friday 2026",
+    "category": "Black Friday 2026",
+    "b_type": "image"
+  },
+  {
+    "id": 274208,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274167/original/274167.png",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=db5490a82&aff_code=541547473&campaign_unique=9a6f02fef",
+    "landing_raw": "https://www.libris.ro/lp/comenzicadou",
+    "width": 1080,
+    "height": 1080,
+    "merchant": "libris.ro ",
+    "merchant_slug": "libris-ro",
+    "name": "30 comenzi gratuite. Una poate fi a ta  DOAR AZI»",
+    "category": "30 comenzi gratuite. Una poate fi a ta  DOAR AZI»",
+    "b_type": "image"
+  },
+  {
+    "id": 274206,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274165/original/274165.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=0c93086ad&aff_code=541547473&campaign_unique=bdabf16d9",
+    "landing_raw": "https://www.geekmall.ro/black-friday",
+    "width": 1080,
+    "height": 1080,
+    "merchant": "geekmall.ro",
+    "merchant_slug": "geekmall-ro",
+    "name": "Black Friday 2026",
+    "category": "Black Friday 2026",
+    "b_type": "image"
+  },
+  {
+    "id": 274200,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274159/original/274159.png",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=d77bed2d8&aff_code=541547473&campaign_unique=fcc8c8536",
+    "landing_raw": "https://intimax.ro",
+    "width": 625,
+    "height": 625,
+    "merchant": "intimax.ro",
+    "merchant_slug": "intimax-ro",
+    "name": "teasing Black friday",
+    "category": "teasing Black friday",
+    "b_type": "image"
+  },
+  {
+    "id": 274199,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274158/original/274158.png",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=f44629ee0&aff_code=541547473&campaign_unique=fcc8c8536",
+    "landing_raw": "https://intimax.ro/pages/black-friday-2026",
+    "width": 625,
+    "height": 625,
+    "merchant": "intimax.ro",
+    "merchant_slug": "intimax-ro",
+    "name": "Black Friday - start",
+    "category": "Black Friday - start",
+    "b_type": "image"
+  },
+  {
     "id": 274154,
     "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274113/original/274113.JPG",
     "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=e14fbc443&aff_code=541547473&campaign_unique=313128750",
@@ -88,19 +166,6 @@
     "merchant_slug": "ozone-ro",
     "name": "Black Friday 2026",
     "category": "Black Friday 2026",
-    "b_type": "image"
-  },
-  {
-    "id": 274008,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273967/original/273967.png",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=4f50cee92&aff_code=541547473&campaign_unique=8e59c17b0",
-    "landing_raw": "https://www.scule365.ro",
-    "width": 1080,
-    "height": 1080,
-    "merchant": "scule365.ro",
-    "merchant_slug": "scule365-ro",
-    "name": "Produse Black Friday 2026",
-    "category": "Produse Black Friday 2026",
     "b_type": "image"
   }
 ]

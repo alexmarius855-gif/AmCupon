@@ -568,8 +568,8 @@
    "magazine": 160
   },
   "2026-11-03": {
-   "promotii": 264,
-   "magazine": 162
+   "promotii": 266,
+   "magazine": 163
   }
  },
  "magazine": {
@@ -8353,18 +8353,18 @@
     "titlu": "🔥 Pachete speciale IRON °FLASK: Seturi 2 in 1 Sticle Termice & Pahare de la 115 RON (Până la 63% Reducere)",
     "cod": false,
     "prima": "2026-08-20",
-    "ultima": "2026-10-30",
-    "expira": "2026-10-30",
-    "activa": false
+    "ultima": "2026-11-03",
+    "expira": "2026-11-29",
+    "activa": true
    },
    {
     "k": "dela10la75reducerelauneltelegakagoalegegakagoalegeeficientaexclusivperebloomro|",
     "titlu": "De la 10% la 75% reducere la uneltele Gakago. Alege Gakago. Alege eficiența. Exclusiv pe re-bloom.ro.",
     "cod": false,
     "prima": "2026-07-03",
-    "ultima": "2026-10-31",
-    "expira": "2026-10-31",
-    "activa": false
+    "ultima": "2026-11-03",
+    "expira": "2026-11-30",
+    "activa": true
    },
    {
     "k": "extra20laproduseleselectateextra20laproduseleselectate|",

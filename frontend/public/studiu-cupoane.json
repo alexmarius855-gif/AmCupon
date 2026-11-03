@@ -1,13 +1,13 @@
 {
   "generat": "2026-11-03",
-  "total_magazine": 451,
-  "cu_promotie": 107,
+  "total_magazine": 452,
+  "cu_promotie": 108,
   "cu_cod_real": 1,
-  "doar_oferta": 106,
-  "procent_cu_promotie": 23.7,
+  "doar_oferta": 107,
+  "procent_cu_promotie": 23.9,
   "procent_cu_cod": 0.2,
-  "reducere_mediana_generala": 40.0,
-  "magazine_cu_procent_declarat": 54,
+  "reducere_mediana_generala": 40,
+  "magazine_cu_procent_declarat": 55,
   "categorii": [
     {
       "slug": "carti-educatie",
@@ -17,6 +17,15 @@
       "reducere_mediana": 90,
       "reducere_max": 90,
       "esantion": 7
+    },
+    {
+      "slug": "cadouri-flori",
+      "nume": "Cadouri & flori",
+      "magazine": 10,
+      "cu_promotie": 4,
+      "reducere_mediana": 75,
+      "reducere_max": 87,
+      "esantion": 3
     },
     {
       "slug": "beauty",
@@ -39,7 +48,7 @@
     {
       "slug": "fashion",
       "nume": "Fashion",
-      "magazine": 51,
+      "magazine": 52,
       "cu_promotie": 18,
       "reducere_mediana": 40,
       "reducere_max": 70,
@@ -98,15 +107,6 @@
       "reducere_mediana": null,
       "reducere_max": null,
       "esantion": 1
-    },
-    {
-      "slug": "cadouri-flori",
-      "nume": "Cadouri & flori",
-      "magazine": 10,
-      "cu_promotie": 3,
-      "reducere_mediana": null,
-      "reducere_max": null,
-      "esantion": 2
     },
     {
       "slug": "animale",
