@@ -148,12 +148,17 @@ export function pareCod(x: string): boolean {
  * apoi o eticheta generica. Un titlu fara niciun spatiu (un singur „cuvant" de litere mari si cifre)
  * e tratat ca un cod.
  */
+/** Fara emoji in titlu („📚🔜 Black Friday 2026 📚🔜"): vin din texte scrise de magazine pentru retea, nu pentru card. */
+export function faraEmoji(t: string): string {
+  return t.replace(/[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{FE0F}\u{200D}]/gu, "").replace(/\s{2,}/g, " ").trim();
+}
+
 export function titluPromotie(p: { nume?: string; descriere?: string; cod_cupon?: string }, numeMagazin: string): string {
   // Fara `cod_cupon`, dar cu titlul = un cod („DH2026OCTSAVE3"): codul e chiar titlul, iar descrierea
   // il repeta („using coupon DH2026OCTSAVE3") — se scoate si de acolo.
   const cod = ((p.cod_cupon || "").trim() || (pareCod((p.nume || "").trim()) ? (p.nume || "").trim() : ""));
   const curat = (t?: string) => {
-    const x = faraCod(t || "", cod);
+    const x = faraEmoji(faraCod(t || "", cod));
     return pareCod(x) ? "" : x;
   };
   const titlu = curat(p.nume);

@@ -23,7 +23,7 @@ function cate(n: number, unul: string, multe: string): string {
   return `${n.toLocaleString("ro-RO")}${n !== 0 && (r === 0 || r >= 20) ? " de" : ""} ${multe}`;
 }
 
-function CardProdus({ p }: { p: ProdusFeed }) {
+export function CardProdus({ p }: { p: ProdusFeed }) {
   const titlu = titluAfisat(p.title);
   const img = imagineSigura(p.image);
   const magazin = numeAfisat(p.merchant_slug || "");

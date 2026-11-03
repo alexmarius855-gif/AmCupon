@@ -27,7 +27,6 @@ export default function Navbar() {
   // navighezi (soft nav) catre o pagina ascunsa, Navbar-ul re-randeaza cu mai
   // putine hooks => React error #300 ("rendered fewer hooks") => pagina alba.
   if (
-    pathname === "/" ||
     pathname.startsWith("/cod-reducere/") ||
     pathname.startsWith("/reduceri/")
   ) return null;
@@ -53,12 +52,12 @@ export default function Navbar() {
             type="button"
             onClick={() => window.dispatchEvent(new Event("amcupon:cauta"))}
             className="group w-full flex items-center gap-3 bg-[var(--surface-alt)] border border-[var(--border-strong)] hover:border-[var(--accent-text)]/50 rounded-full pl-10 pr-3 py-2.5 text-sm text-left relative transition-colors"
-            aria-label="Caută un magazin"
+            aria-label="Cauta un magazin"
           >
             <svg className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--text-muted)] group-hover:text-[var(--accent-text)] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
             </svg>
-            <span className="flex-1 min-w-0 truncate text-left text-[var(--text-muted)]">Caută: eMAG, Answear, Notino...</span>
+            <span className="flex-1 min-w-0 truncate text-left text-[var(--text-muted)]">Caută un magazin: Notino, Answear...</span>
             <kbd className="hidden 2xl:inline-flex items-center gap-0.5 text-[10px] font-mono font-bold text-[var(--text-muted)] bg-[var(--surface)] border border-[var(--border-strong)] rounded px-1.5 py-0.5">
               Ctrl K
             </kbd>
@@ -66,43 +65,24 @@ export default function Navbar() {
         </div>
 
         {/* Desktop nav */}
-        <nav className="hidden xl:flex items-center gap-3 text-sm font-semibold text-[var(--text-soft)] ml-auto shrink-0">
+        <nav className="hidden xl:flex items-center gap-4 text-sm font-semibold text-[var(--text-soft)] ml-auto shrink-0">
           {navLinks.map(l => (
             <Link key={l.href} href={l.href}
               className={`hover:text-[var(--accent-text)] transition-colors whitespace-nowrap ${pathname === l.href || (l.href !== "/" && pathname.startsWith(l.href)) ? "text-[var(--accent-text)]" : ""}`}>
               {l.label}
             </Link>
           ))}
-          {/* Social media icons */}
-          <div className="hidden 2xl:flex items-center gap-1.5 border-l border-[var(--border-strong)] pl-4 ml-1">
-            <a href="https://www.facebook.com/amcupon.ro" target="_blank" rel="noopener noreferrer" aria-label="Facebook AmCupon"
-              className="w-8 h-8 rounded-lg bg-[var(--surface-alt)] hover:bg-[#1877F2] flex items-center justify-center transition-colors group">
-              <svg className="w-3.5 h-3.5 text-[var(--text-soft)] group-hover:text-[var(--foreground)] transition-colors" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
-              </svg>
-            </a>
-            <a href="https://www.instagram.com/amcupon.ro" target="_blank" rel="noopener noreferrer" aria-label="Instagram AmCupon"
-              className="w-8 h-8 rounded-lg bg-[var(--surface-alt)] hover:bg-gradient-to-br hover:from-[#ddf93c] hover:to-[#ddf93c] flex items-center justify-center transition-colors group">
-              <svg className="w-3.5 h-3.5 text-[var(--text-soft)] group-hover:text-[var(--foreground)] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-              </svg>
-            </a>
-            <a href="https://www.tiktok.com/@amcupon.ro" target="_blank" rel="noopener noreferrer" aria-label="TikTok AmCupon"
-              className="w-8 h-8 rounded-lg bg-[var(--surface-alt)] hover:bg-black flex items-center justify-center transition-colors group">
-              <svg className="w-3.5 h-3.5 text-[var(--text-soft)] group-hover:text-[var(--foreground)] transition-colors" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.74a4.85 4.85 0 01-1.01-.05z"/>
-              </svg>
-            </a>
-          </div>
-          <Link href="/extensie"
-            className="hidden 2xl:flex items-center gap-1.5 bg-[#2a2f10] hover:bg-[#ddf93c] text-[var(--accent-text)] hover:text-[#0c1000] border border-[#99f6e4] px-3.5 py-1.5 rounded-full text-xs font-bold transition-all hover:scale-105 duration-150">
-            🧩 Extensie
-          </Link>
         </nav>
+
+        {/* Pe telefon, cautarea e la un clic, nu ascunsa in meniu: e primul lucru pe care il face cine vine dupa un cod. */}
+        <button type="button" onClick={() => window.dispatchEvent(new Event("amcupon:cauta"))}
+          className="sm:hidden ml-auto p-2 rounded-xl hover:bg-[var(--surface-alt)] transition-colors text-[var(--text-soft)]" aria-label="Caută un magazin">
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        </button>
 
         {/* Mobile menu btn */}
         <button onClick={() => setMenuOpen(o => !o)}
-          className="xl:hidden ml-auto p-2 rounded-xl hover:bg-[var(--surface-alt)] transition-colors text-[var(--text-soft)]" aria-label="Meniu">
+          className="xl:hidden sm:ml-auto p-2 rounded-xl hover:bg-[var(--surface-alt)] transition-colors text-[var(--text-soft)]" aria-label="Meniu">
           {menuOpen
             ? <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12"/></svg>
             : <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 6h16M4 12h16M4 18h16"/></svg>
@@ -121,7 +101,7 @@ export default function Navbar() {
             <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
             </svg>
-            Caută magazin...
+            Cauta magazin...
           </button>
           <nav className="space-y-0.5">
             {mobileLinks.map(l => (

@@ -27,7 +27,7 @@ export const GAZDE_TRACKING =
 /** Tipar de link Impact generat greșit, fără campanie. Nu duce nicăieri util. */
 const LINK_STRICAT = /\/NA6[?&]/;
 
-interface MagazinCuLink {
+export interface MagazinCuLink {
   url?: string | null;
   url_afiliat?: string | null;
 }

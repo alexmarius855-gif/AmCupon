@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono, Playfair_Display } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import dynamic from "next/dynamic";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -23,8 +23,10 @@ import { MAGAZINE_POPULARE } from "@/lib/magazinePopulare";
 import SearchModal from "./components/SearchModal";
 import AffiliateClickTracker from "./components/AffiliateClickTracker";
 import "./globals.css";
-import AnuntAnimat from "./components/AnuntAnimat";
+import AnuntSite from "./components/AnuntSite";
 import { pesteMagazine, PesteMagazine } from "@/lib/cifreSite";
+import { campaniiBF } from "@/lib/campaniiBlackFriday";
+import { aziRomania, calendarScurt, fazaBF, type DateBF } from "@/lib/momentBF";
 
 // ─── GA4 Measurement ID ───────────────────────────────────────────────────────
 // Mergi la analytics.google.com → Admin → Data Streams → Web → Measurement ID
@@ -40,13 +42,6 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
-});
-
-// Font premium pentru titluri (serif editorial de lux, se potriveste cu auriu)
-const playfair = Playfair_Display({
-  variable: "--font-display",
-  subsets: ["latin"],
-  weight: ["600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
@@ -144,15 +139,29 @@ function magazineInDate(): string[] {
   return _inDate;
 }
 
+/** Bara de sus: doar cat tine Black Friday, cu cifre din date. In afara ferestrei nu apare nimic. */
+function anuntBF(): string {
+  try {
+    const d = JSON.parse(fs.readFileSync(path.join(process.cwd(), "public", "black-friday.json"), "utf-8")) as DateBF;
+    const azi = aziRomania();
+    if (fazaBF(azi, d) === "inchis") return "";
+    const { inCurs } = calendarScurt(azi, campaniiBF(azi));
+    return inCurs > 0 ? `Black Friday: campanii active la ${inCurs} magazine partenere` : "Black Friday: calendarul magazinelor partenere";
+  } catch {
+    return "";
+  }
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const anunt = anuntBF();
   return (
     <html
       lang="ro"
-      className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       // Scriptul din <head> poate adauga `cc-ok` inainte de hidratare (acordul cookie deja dat).
       suppressHydrationWarning
     >
@@ -174,7 +183,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col">
         <Navbar />
-        <AnuntAnimat />
+        {anunt && <AnuntSite text={anunt} href="/black-friday" />}
         {/* 15.10.2026: inapoi pe tema inchisa (alegerea lui Alex). Tema luminoasa ramane in globals.css
             (.tema-luminoasa) — se reactiveaza punand clasa pe acest div. */}
         <div className="flex-1">{children}</div>

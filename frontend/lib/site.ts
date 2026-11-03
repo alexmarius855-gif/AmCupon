@@ -26,42 +26,32 @@ export const SITE = {
 
 /** Meniul de sus, pe ecrane late. */
 export const MENIU_PRINCIPAL: Link[] = [
-  { href: "/", label: "Acasă" },
-  { href: "/black-friday", label: "Black Friday" }, // pana la sfarsitul lui noiembrie
-  { href: "/#promotii", label: "Promoții" },
-  { href: "/produse", label: "Produse" },
-  { href: "/blog", label: "Blog" },
-  { href: "/toate-magazinele", label: "Magazine" },
-  { href: "/categorii", label: "Categorii" },
-  { href: "/comparator", label: "Comparator" },
+  { href: "/oferte-azi", label: "Oferte azi" },
+  { href: "/black-friday", label: "Black Friday" },
   { href: "/top-reduceri", label: "Top reduceri" },
+  { href: "/categorii", label: "Categorii" },
+  { href: "/toate-magazinele", label: "Magazine" },
+  { href: "/alege", label: "Alege produsul" }, // 77 din 86 de clicuri reale (07-14.11.2026) vin de pe /alege
+  { href: "/produse", label: "Produse" },
+  { href: "/blog", label: "Ghiduri" },
 ];
 
 /** Meniul de pe telefon (butonul ☰). */
 export const MENIU_MOBIL: Link[] = [
-  { href: "/", label: "🏠 Acasă" },
-  { href: "/black-friday", label: "🖤 Black Friday" }, // pana la sfarsitul lui noiembrie
-  { href: "/#promotii", label: "🔥 Promoții active" },
-  { href: "/produse", label: "🛍️ Produse" },
-  { href: "/blog", label: "📝 Blog" },
-  { href: "/toate-magazinele", label: "🏪 Toate magazinele" },
-  { href: "/categorii", label: "📂 Categorii" },
-  { href: "/comparator", label: "⚖️ Comparator magazine" },
-  { href: "/top-reduceri", label: "⭐ Top reduceri" },
-  { href: "/esim", label: "📡 eSIM Călătorie" },
-  { href: "/vpn", label: "🛡️ Cel mai bun VPN" },
-  { href: "/hosting", label: "🌐 Hosting ieftin" },
-  { href: "/extensie", label: "🧩 Extensie Chrome" },
-  { href: "/ai-tools", label: "🧠 Programe Afiliere AI" },
-  { href: "/newsletter", label: "📧 Newsletter" },
+  ...MENIU_PRINCIPAL,
+  { href: "/comparator", label: "Comparator magazine" },
+  { href: "/esim", label: "eSIM de călătorie" },
+  { href: "/vpn", label: "VPN" },
+  { href: "/hosting", label: "Hosting" },
+  { href: "/newsletter", label: "Newsletter" },
 ];
 
 /**
- * Coloanele din subsol. Subsolul apare pe toate paginile (si prima pagina il refoloseste), deci un link pus aici
+ * Coloanele din subsol. Subsolul apare pe toate paginile, inclusiv pe prima (din 03.11.2026), deci un link pus aici
  * scoate o pagina din starea de „orfana" — fara linkuri interne Google o gaseste doar din sitemap.
  * Sluguri de categorie: doar cele reale din output.json (vezi CLAUDE.md, „Categorii sluguri").
  */
-export const SUBSOL: { categorii: Link[]; reduceri: Link[]; utilizatori: Link[]; parteneri: Link[] } = {
+export const SUBSOL: { categorii: Link[]; reduceri: Link[]; nise: Link[]; utilizatori: Link[] } = {
   categorii: [
     { href: "/categorii/fashion", label: "Fashion & Haine" },
     { href: "/categorii/electronice", label: "Electronice & IT" },
@@ -93,21 +83,30 @@ export const SUBSOL: { categorii: Link[]; reduceri: Link[]; utilizatori: Link[];
     { href: "/studiu/coduri-reducere-romania", label: "Studiu: coduri de reducere" },
     { href: "/calculatoare", label: "Calculatoare și unelte" },
   ],
+  nise: [
+    { href: "/fashion", label: "Fashion & Haine" },
+    { href: "/casa", label: "Casă & Grădină" },
+    { href: "/frumusete", label: "Beauty" },
+    { href: "/farmacie", label: "Farmacie online" },
+    { href: "/sanatate", label: "Sănătate & Naturiste" },
+    { href: "/sport", label: "Sport & Outdoor" },
+    { href: "/copii", label: "Copii & Jucării" },
+    { href: "/animale", label: "Animale de companie" },
+    { href: "/gadgets", label: "Gadgets & Tech" },
+    { href: "/calatorie", label: "Vacanțe & Travel" },
+    { href: "/flori", label: "Flori & Buchete" },
+    { href: "/servicii", label: "Servicii & Software" },
+    { href: "/asigurari", label: "Asigurări RCA & CASCO" },
+    { href: "/instrumente-seo", label: "Instrumente marketing" },
+  ],
   utilizatori: [
     { href: "/blog", label: "Revista & Ghiduri" },
     { href: "/newsletter", label: "Newsletter gratuit" },
     { href: "/extensie", label: "Extensie Chrome" },
     { href: "/toate-magazinele", label: "Toate magazinele" },
     { href: "/despre-noi", label: "Despre noi" },
-    { href: "/contact", label: "Contact" },
+    { href: "/contact", label: "Contact și listare magazin" },
     { href: "/confidentialitate", label: "Politica GDPR" },
     { href: "/termeni", label: "Termeni și condiții" },
-  ],
-  parteneri: [
-    { href: "/despre-noi", label: "Colaborează cu noi" },
-    { href: "/contact", label: "Listează magazinul tău" },
-    { href: "/servicii", label: "Servicii & Software" },
-    { href: "/asigurari", label: "Asigurări RCA & CASCO" },
-    { href: "/instrumente-seo", label: "Instrumente marketing" },
   ],
 };

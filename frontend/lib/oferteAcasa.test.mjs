@@ -9,7 +9,7 @@
  */
 import { readFileSync } from "node:fs";
 import {
-  oferteAcasa, numaraFiltre, filtreAfisate, alegeAfisate, treceFiltru,
+  oferteAcasa, numaraFiltre, filtreAfisate, alegeAfisate, treceFiltru, procentAfisat,
   oferteDePeMagazin, magazinePopulareAcasa, cuNumar, EXCLUSE_ACASA,
 } from "./oferteAcasa.ts";
 import { linkPromotie } from "./linkMagazin.ts";
@@ -77,6 +77,20 @@ const stricat = oferteAcasa([
 ], linkFals);
 verifica("textul stricat nu trece drept romanesc: oferta romaneasca fara cod iese prima",
   stricat.map((o) => o.m.magazin), ["biciclete.ro", "hotel.com"]);
+// 03.11.2026: criteriile cerute de Alex, fiecare pica daca regula e scoasa din sortare.
+const ordine = oferteAcasa([
+  { magazin: "strain.com", logo_url: "x", promotii: [P("Reducere 90% la tot", "COD90")] },
+  { magazin: "mic.ro", logo_url: "x", promotii: [P("Reducere 10% la produse")] },
+  { magazin: "mare.ro", logo_url: "x", promotii: [P("Reducere 45% la produse")] },
+  { magazin: "maine.ro", logo_url: "x", promotii: [P("Oferte de sezon la produse", "", 1)] },
+  { magazin: "anunt.ro", logo_url: "x", promotii: [P("Teasing: Acces exclusiv la Black Friday pe 5 noiembrie!")] },
+], linkFals, (p) => procentAfisat(p.nume));
+verifica("ordinea: .ro intai, reducerea mare inaintea celei care expira maine, anuntul scos",
+  ordine.map((o) => o.m.magazin), ["mare.ro", "mic.ro", "maine.ro", "strain.com"]);
+verifica("procentAfisat: „până la 45%\"", procentAfisat("până la 45%"), 45);
+verifica("procentAfisat: fara procent", procentAfisat("Livrare gratuită"), 0);
+verifica("o oferta pe magazin, cand i se cere",
+  alegeAfisate(pool, "toate", PRAG_URGENT, { maxPerMagazin: 1 }).filter((o) => o.m.magazin === "cinci.ro").length, 1);
 verifica("filtre: fara buton mort, fara buton inutil",
   filtreAfisate({ toate: 5, cod: 5, oferta: 0, curand: 0 }), []);
 verifica("filtre: doar cele care schimba ceva",

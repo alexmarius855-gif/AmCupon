@@ -52,24 +52,36 @@ export const EXCLUSE_ACASA: ReadonlySet<string> = new Set([
 // Text scris pentru un cititor roman: diacritice sau cuvinte uzuale. Ofertele in engleza
 // ale magazinelor straine raman pe pagina, dar dupa cele romanesti.
 const RE_RO = /[ăâîșțşţ]|\b(reducere|reduceri|livrare|transport|pentru|comenzi|comanda|produse|toate|la)\b/i;
+const RE_ANUNT = /\b(?:teasing|teaser)\b/i;
+
+/** Procentul din textul cardului („-35%", „până la 45%"), ca numar; 0 cand oferta n-are procent. */
+export function procentAfisat(text: string): number {
+  const m = text.match(/(\d{1,2}(?:[.,]\d)?)\s*%/);
+  return m ? Number(m[1].replace(",", ".")) : 0;
+}
+
 // Text UTF-8 citit gresit („rÃ©duction", „â\u0080\u0093"): „â"-ul lui ar trece drept litera romaneasca,
 // iar o oferta franceza cu cod ar urca inaintea celor romanesti (revizia din 24.09.2026, insotel/cllix).
 // Aceeasi expresie ca RE_MOJIBAKE_SIGUR din scripts/promotii.py, care il si repara la sursa.
 const RE_MOJIBAKE = /[\u0080-\u009f]|Ã[ -¿]/;
 
 /**
- * Toate ofertele afisabile pe prima pagina, in ordinea din macheta: text romanesc, apoi
- * cele CU cod, apoi magazinele .ro, apoi cele care expira mai repede.
+ * Toate ofertele afisabile pe prima pagina. Ordinea (03.11.2026, cererea lui Alex „pe criterii
+ * corecte"): magazinele din Romania, textul romanesc, reducerea vizibila cea mai mare, codul,
+ * apoi cele care expira mai repede. Inainte, ordinea pe expirare punea primele ofertele slabe care
+ * expirau maine, iar codurile magazinelor straine urcau peste ofertele partenerilor .ro.
  *
  * O oferta fara link platit NU intra: pe prima pagina butonul ei n-ar avea unde duce, iar
  * garda (scripts/verifica_site.py) considera pierdere orice oferta afisata care pleaca fara
  * tracking. Masurat 24.09.2026: 0 din 188 — regula nu scoate azi nimic, doar previne.
+ * `valoare` = procentul pe care il afiseaza cardul (lib/oferta.ts, prin `procentAfisat`), ca argument.
  */
 export function oferteAcasa<M extends MagazinAcasa>(
   magazine: readonly M[],
   linkPlatit: (m: M, p: PromoDin<M>) => string | null,
+  valoare: (p: PromoDin<M>) => number = () => 0,
 ): OfertaAcasa<M>[] {
-  const pool: (OfertaAcasa<M> & { ro: boolean; dro: boolean })[] = [];
+  const pool: (OfertaAcasa<M> & { ro: boolean; dro: boolean; val: number })[] = [];
   for (const m of magazine) {
     if (EXCLUSE_ACASA.has(m.magazin)) continue;
     (m.promotii || []).forEach((p: PromoDin<M>, i: number) => {
@@ -77,22 +89,26 @@ export function oferteAcasa<M extends MagazinAcasa>(
       if (zile < 0) return; // expirata: curata_promotii o scoate oricum, dar nu ne bazam pe ordine
       const link = linkPlatit(m, p);
       if (!link) return;
+      // „Teasing: Acces exclusiv la Black Friday pe 5 noiembrie!": anuntul unei campanii, nu o oferta.
+      if (RE_ANUNT.test(p.nume || "")) return;
       const text = `${p.nume || ""} ${p.descriere || ""}`;
       pool.push({
         m, promo: p, link, zile,
         cod: String(p.cod_cupon || "").trim(),
         cheie: `${m.magazin}#${i}`,
         ro: !RE_MOJIBAKE.test(text) && RE_RO.test(text),
-        dro: m.magazin.endsWith(".ro"),
+        dro: m.magazin.endsWith(".ro") || m.magazin.startsWith("ro."),
+        val: valoare(p),
       });
     });
   }
   pool.sort((a, b) =>
-    Number(b.ro) - Number(a.ro) ||
-    Number(!!b.cod) - Number(!!a.cod) ||
     Number(b.dro) - Number(a.dro) ||
+    Number(b.ro) - Number(a.ro) ||
+    b.val - a.val ||
+    Number(!!b.cod) - Number(!!a.cod) ||
     a.zile - b.zile);
-  return pool.map(({ ro: _ro, dro: _dro, ...o }) => o);
+  return pool.map(({ ro: _ro, dro: _dro, val: _val, ...o }) => o);
 }
 
 export function treceFiltru<M extends MagazinAcasa>(o: OfertaAcasa<M>, f: FiltruAcasa, pragUrgent: number): boolean {

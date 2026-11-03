@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 import { MAGAZINE_POPULARE } from "@/lib/magazinePopulare";
@@ -9,10 +8,8 @@ import { SITE, SUBSOL } from "@/lib/site";
 
 // Listele din subsol stau in lib/site.ts (SUBSOL) — un singur loc de modificat (14.10.2026).
 const CATEGORII = SUBSOL.categorii;
-// EXPORTAT: prima pagina are subsol propriu si isi importa de aici nisele (vezi HomeClient).
-export const REDUCERI = SUBSOL.reduceri;
+const REDUCERI = SUBSOL.reduceri;
 const UTILIZATORI = SUBSOL.utilizatori;
-const PARTENERI = SUBSOL.parteneri;
 
 // Iconitele retelelor sociale; adresele lor stau in lib/site.ts (SITE.social).
 const ICONITE_SOCIAL: Record<string, React.ReactNode> = {
@@ -76,51 +73,17 @@ function NewsletterMini() {
 // iar /cod-reducere/<slug> devine 404 pe TOATE paginile (bookzone.ro, 16.09.2026 — a doua
 // oara, dupa 21.08). Fara `href` propriu si fara date, linkul nu se mai afiseaza.
 export default function Footer({ magazineInDate }: { magazineInDate?: string[] }) {
-  const pathname = usePathname();
   const an = new Date().getFullYear();
-
-  // Homepage are propriul footer complet
-  if (pathname === "/") return null;
 
   return (
     <footer className="bg-[var(--surface)] text-[var(--text-soft)] border-t border-[var(--border)] mt-auto">
-
-      {/* Facebook Follow banner */}
-      <div className="border-b border-[var(--border)]/60 bg-[#1877F2]/10">
-        <div className="max-w-7xl mx-auto px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-[#1877F2] flex items-center justify-center shrink-0">
-              <svg className="w-5 h-5 text-[var(--foreground)]" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
-              </svg>
-            </div>
-            <div>
-              <p className="text-[var(--foreground)] font-bold text-sm">Urmărește AmCupon.ro pe Facebook</p>
-              <p className="text-[var(--text-soft)] text-xs">Pagina oficială AmCupon.ro</p>
-            </div>
-          </div>
-          <a
-            href="https://www.facebook.com/people/AmCuponro/61590235029734"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="shrink-0 flex items-center gap-2 bg-[#1877F2] hover:bg-[#1565d8] text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-colors"
-          >
-            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
-            </svg>
-            Dă Like paginii
-          </a>
-        </div>
-      </div>
 
       {/* Newsletter banner */}
       <div className="border-b border-[var(--border)]/60">
         <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div>
-            <p className="text-[var(--foreground)] font-black text-lg">📧 Reduceri zilnice pe email</p>
-            <p className="text-[var(--text-soft)] text-sm mt-0.5">
-              Codurile active, pe email — gratuit, fără spam
-            </p>
+            <p className="text-[var(--foreground)] font-black text-lg">Ofertele active, o dată pe zi, pe email</p>
+            <p className="text-[var(--text-soft)] text-sm mt-0.5">Gratuit, fără spam, te dezabonezi oricând.</p>
           </div>
           <div className="w-full sm:w-auto sm:min-w-[320px]">
             <NewsletterMini />
@@ -148,15 +111,11 @@ export default function Footer({ magazineInDate }: { magazineInDate?: string[] }
                 <a key={s.href} href={s.href} target="_blank" rel="noopener noreferrer"
                   aria-label={s.label}
                   className="w-9 h-9 rounded-xl bg-[var(--surface-alt)] hover:bg-[#ddf93c] flex items-center justify-center transition-colors group">
-                  <svg className="w-4 h-4 text-[var(--text-soft)] group-hover:text-[var(--foreground)] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                  <svg className="w-4 h-4 text-[var(--text-soft)] group-hover:text-[#0c1000] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                     {s.svg}
                   </svg>
                 </a>
               ))}
-              <Link href="/extensie"
-                className="w-9 h-9 rounded-xl bg-[var(--surface-alt)] hover:bg-[#ddf93c] flex items-center justify-center transition-colors" title="Extensie Chrome">
-                <span className="text-sm">🧩</span>
-              </Link>
             </div>
           </div>
 
@@ -164,8 +123,9 @@ export default function Footer({ magazineInDate }: { magazineInDate?: string[] }
           <div>
             <p className="text-[var(--foreground)] font-bold text-xs uppercase tracking-widest mb-4">Magazine populare</p>
             <ul className="space-y-2">
+              {/* Doar parteneri: Altex, Flanco, Elefant n-au program la noi, iar paginile lor sunt noindex (03.11.2026). */}
               {MAGAZINE_POPULARE
-                .filter(m => m.href || !magazineInDate || magazineInDate.includes(m.slug))
+                .filter(m => !magazineInDate || magazineInDate.includes(m.slug))
                 .map(m => (
                 <li key={m.slug}>
                   <Link href={m.href ?? `/cod-reducere/${m.slug}`}
@@ -205,6 +165,20 @@ export default function Footer({ magazineInDate }: { magazineInDate?: string[] }
             </ul>
           </div>
 
+          {/* Nise: pana pe 03.11.2026 le lega doar subsolul propriu al primei pagini */}
+          <div>
+            <p className="text-[var(--foreground)] font-bold text-xs uppercase tracking-widest mb-4">Pe teme</p>
+            <ul className="space-y-2">
+              {SUBSOL.nise.map(n => (
+                <li key={n.href}>
+                  <Link href={n.href} className="text-sm text-[var(--text-muted)] hover:text-[var(--accent-text)] transition-colors">
+                    {n.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           {/* Pentru utilizatori */}
           <div>
             <p className="text-[var(--foreground)] font-bold text-xs uppercase tracking-widest mb-4">Pentru utilizatori</p>
@@ -213,20 +187,6 @@ export default function Footer({ magazineInDate }: { magazineInDate?: string[] }
                 <li key={i.label}>
                   <Link href={i.href} className="text-sm text-[var(--text-muted)] hover:text-[var(--accent-text)] transition-colors">
                     {i.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Pentru parteneri */}
-          <div>
-            <p className="text-[var(--foreground)] font-bold text-xs uppercase tracking-widest mb-4">Pentru parteneri</p>
-            <ul className="space-y-2">
-              {PARTENERI.map((p, i) => (
-                <li key={i}>
-                  <Link href={p.href} className="text-sm text-[var(--text-muted)] hover:text-[var(--accent-text)] transition-colors">
-                    {p.label}
                   </Link>
                 </li>
               ))}
