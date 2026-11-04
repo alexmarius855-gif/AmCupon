@@ -10,6 +10,8 @@ interface Magazin {
   pret: number;
   recomandat: boolean;
   url_afiliat?: string;
+  /** Pagina arata produse din aceeasi familie, nu neaparat modelul exact. */
+  modele?: boolean;
   logo_url?: string;
 }
 
@@ -50,7 +52,7 @@ interface TopProduseClientProps {
  */
 function destinatie(p: Produs, areSectiune: boolean): { href: string; extern: boolean; text: string } | null {
   const m = p.magazine[0];
-  if (m?.url_afiliat) return { href: m.url_afiliat, extern: true, text: `Vezi la ${m.eticheta}` };
+  if (m?.url_afiliat) return { href: m.url_afiliat, extern: true, text: `${m.modele ? "Vezi modele la" : "Vezi la"} ${m.eticheta}` };
   if (areSectiune) return { href: "#unde-cumperi", extern: false, text: "Prețuri de azi" };
   return null;
 }
@@ -348,7 +350,7 @@ export default function TopProduseClient({ produse, culoare, areSectiune, select
                             : "bg-[var(--surface-high)] hover:bg-[var(--border-strong)] text-[var(--foreground)]"
                         }`}
                       >
-                        Vezi la {mag.eticheta} &rarr;
+                        {mag.modele ? "Vezi modele la" : "Vezi la"} {mag.eticheta} &rarr;
                       </a>
                     ))}
                     {p.magazine.length === 0 && areSectiune && (

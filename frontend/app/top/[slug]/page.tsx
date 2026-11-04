@@ -8,6 +8,7 @@ import OferteParteneri from "../../components/OferteParteneri";
 import { numeInFraza, type SectiuneTema } from "../../../lib/topFeed";
 import { linkuriPlatite, sectiunePentru, dataFeed } from "../../../lib/oferteTema";
 import { numeAfisat } from "../../../lib/numeMagazin";
+import { destinatieTop, legaturiTema } from "../../../lib/destinatiiTop";
 
 interface Produs {
   pozitie: number;
@@ -31,6 +32,7 @@ interface Produs {
     pret: number;
     recomandat: boolean;
     url_afiliat?: string;
+    modele?: boolean;
   }[];
 }
 
@@ -154,13 +156,21 @@ export default async function TopCategoriePage({
   const linkuri = linkuriPlatite();
   const produse: Produs[] = cat.produse.map(p => ({
     ...p,
+    // 04.11.2026: butonul duce la produs, nu pe prima pagina a magazinului, iar magazinul care
+    // nu vinde produsul nu mai primeste buton. Vezi lib/destinatiiTop.ts.
     magazine: p.magazine
       .filter(m => linkuri.has(m.magazin_slug))
-      .map(m => ({ ...m, url_afiliat: linkuri.get(m.magazin_slug) as string })),
+      .flatMap(m => {
+        const d = destinatieTop(linkuri.get(m.magazin_slug) as string, m.magazin_slug, p.nume);
+        return d ? [{ ...m, url_afiliat: d.url, modele: d.modele }] : [];
+      }),
   }));
 
   // ── Ofertele de azi din feed-ul partenerilor (lib/topFeed.ts) ──
   const sectiune: SectiuneTema | null = sectiunePentru(slug);
+  // Fara oferte in feed: legaturi verificate spre partenerii care vand tema (lib/destinatiiTop.ts).
+  const legaturi = sectiune ? [] : legaturiTema(slug, linkuri);
+  const numeLegaturi = legaturi.map(l => l.eticheta).join(", ");
   const actualizat = dataFeed();
   const ieftin = sectiune ? sectiune.game[0]?.produse[0] : undefined;
   const ceaMaiIeftinaMag = sectiune
@@ -220,6 +230,8 @@ export default async function TopCategoriePage({
       i: `Unde găsești ${numeTema} mai ieftin în România?`,
       r: sectiune && ieftin && ceaMaiIeftinaMag
         ? `La magazinele partenere AmCupon, cel mai mic preț de azi este ${pret(sectiune.min)}, la ${numeAfisat(ceaMaiIeftinaMag.slug)}. Am găsit ${cate(sectiune.total, "produs", "produse")} în ${cate(sectiune.magazine.length, "magazin", "magazine")}; cele mai multe sunt la ${numeAfisat(sectiune.magazine[0].slug)} (${sectiune.magazine[0].nr}). Lista, cu prețurile de azi, e mai sus pe pagină.`
+        : legaturi.length > 0
+        ? `La partenerii AmCupon găsești ${numeTema} la ${numeLegaturi}. Nu comparăm aici prețurile de azi: le vezi pe site-ul magazinului. Prețurile din top sunt de referință, notate în ${SELECTIE}.`
         : `Nu avem încă un magazin partener cu ${numeTema} în feed. Prețurile din top sunt de referință, notate în ${SELECTIE}; verifică prețul actual direct în magazin.`,
     },
     {
@@ -288,7 +300,7 @@ export default async function TopCategoriePage({
                   sunt evaluarea noastră, nu rezultate de laborator, iar prețurile din top sunt de referință,
                   notate la selecție. Linkurile către magazine sunt afiliate — prețul tău rămâne același.
                 </p>
-                {sectiune && (
+                {(sectiune || legaturi.length > 0) && (
                   <Link
                     href="#unde-cumperi"
                     className="inline-flex items-center gap-2 mt-4 bg-[#ddf93c] hover:bg-[#c3dd2c] text-[#0c1000] text-sm font-bold px-4 py-2 rounded-xl transition-colors"
@@ -342,9 +354,33 @@ export default async function TopCategoriePage({
 
         {/* MAIN CONTENT */}
         <div className="max-w-5xl mx-auto px-4 py-8">
-          <TopProduseClient produse={produse} culoare={cat.culoare} areSectiune={!!sectiune} selectie={SELECTIE} />
+          <TopProduseClient produse={produse} culoare={cat.culoare} areSectiune={!!sectiune || legaturi.length > 0} selectie={SELECTIE} />
 
           {sectiune && <OferteParteneri sectiune={sectiune} numeTema={numeTema} actualizat={actualizat} />}
+
+          {legaturi.length > 0 && (
+            <section id="unde-cumperi" className="mt-10 scroll-mt-24 bg-[var(--surface)] dark:bg-[var(--surface-alt)] border border-[var(--border)] dark:border-[var(--border-strong)] rounded-xl p-6">
+              <h2 className="text-lg font-black text-[var(--foreground)] dark:text-[var(--foreground)] mb-2">
+                Unde găsești {numeTema} azi
+              </h2>
+              <p className="text-sm text-[var(--text-soft)] leading-relaxed mb-4">
+                Prețul și stocul de azi le vezi pe site-ul magazinului partener. Prețurile din topul de mai sus sunt de referință, din {SELECTIE}.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {legaturi.map(l => (
+                  <a
+                    key={l.magazin}
+                    href={l.url}
+                    target="_blank"
+                    rel="nofollow sponsored noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm font-bold px-4 py-2 rounded-xl bg-[#ddf93c] hover:bg-[#c3dd2c] text-[#0c1000] transition-colors"
+                  >
+                    Vezi modele la {l.eticheta} &rarr;
+                  </a>
+                ))}
+              </div>
+            </section>
+          )}
 
           {/* CUM AM FACUT TOPUL — pana pe 05.10.2026 aici scria „Cum testam" si „Fiecare produs
               este testat timp de minim 2 saptamani in conditii reale de utilizare". Niciun produs
