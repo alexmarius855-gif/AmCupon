@@ -10,6 +10,7 @@ import { articolFaraPromoActiva, canonicalArticol, construiesteIndexMagazine } f
 import type { IndexableProdus } from "../../../lib/seoIndexable";
 import { numeAfisat } from "@/lib/numeMagazin";
 import { pesteMagazine } from "@/lib/cifreSite";
+import { descriereScurta } from "@/lib/oferta";
 import { temaArticol, NUME_TEME } from "@/lib/topFeed";
 import { sectiunePentru, dataFeed, ofertaModel, type ModelCautat, type OfertaModel } from "@/lib/oferteTema";
 import OferteParteneri from "../../components/OferteParteneri";
@@ -370,12 +371,12 @@ export async function generateMetadata({
     // post.title include deja " | AmCupon.ro" (vezi generate_blog.py) — nu re-adauga,
     // altfel titlul apare dublat in tab/SERP ("... | AmCupon.ro | AmCupon.ro")
     title: titluScurt,
-    description: post.excerpt,
+    description: descriereScurta(post.excerpt),
     alternates: { canonical: canonic },
     ...(faraPromoActiva ? { robots: { index: false, follow: true } } : {}),
     openGraph: {
       title: titluScurt,
-      description: post.excerpt,
+      description: descriereScurta(post.excerpt),
       url: pageUrl,
       siteName: "AmCupon.ro",
       locale: "ro_RO",
@@ -387,7 +388,7 @@ export async function generateMetadata({
     twitter: {
       card: "summary_large_image",
       title: titluScurt,
-      description: post.excerpt,
+      description: descriereScurta(post.excerpt),
       images: [post.cover],
     },
   };
