@@ -59,6 +59,23 @@ RE_SALUT = re.compile(r"^(?:bun[aă]|salut|dragi \w+)\s*[,!]\s*", re.I)
 RE_CUM_FUNCTIONEAZA = re.compile(r"^cum func[tț]ioneaz[aă]\s*:\s*-?\s*", re.I)
 RE_LINK_BRUT = re.compile(r"(?:>>+\s*)?(?:https?://|www\.)\S+", re.I)
 MAX_DESCRIERE = 450
+# Paginile /black-friday/categorie/<slug>: doar cu cel putin MIN_CATEGORIE campanii, ca lista sa merite o
+# pagina. „marketplace" nu e o categorie pe care o cauta cineva. Sursa unica: sitemap-ul, pagina si
+# IndexNow citesc lista din fisierul generat.
+CATEGORII_BF = {
+    "casa-gradina": "casă și grădină",
+    "fashion": "haine și încălțăminte",
+    "beauty": "cosmetice",
+    "electronice": "electronice și IT",
+    "carti-educatie": "cărți",
+    "copii": "jucării și copii",
+    "sanatate": "sănătate",
+    "sport": "sport",
+    "auto-moto": "auto-moto",
+    "animale": "animale de companie",
+    "bijuterii": "bijuterii",
+}
+MIN_CATEGORIE = 3
 
 
 def descriere_publica(desc: str, promo: dict) -> str:
@@ -130,6 +147,17 @@ def pastreaza_vechi(noi: list[dict], vechi: list[dict], magazine: list[dict], an
     return sorted(noi + pastrate, key=lambda c: (c["start"], c["nume"].lower()))
 
 
+def cu_categorii(lista: list[dict], magazine: list[dict]) -> list[dict]:
+    """Pune `categorie` pe fiecare campanie si intoarce categoriile care merita o pagina."""
+    dupa_slug = {m["magazin"]: m.get("categorie_slug") or "" for m in magazine}
+    cate: dict[str, int] = {}
+    for c in lista:
+        c["categorie"] = dupa_slug.get(c["magazin"], "")
+        cate[c["categorie"]] = cate.get(c["categorie"], 0) + 1
+    return [{"slug": k, "nume": n, "campanii": cate[k]} for k, n in CATEGORII_BF.items()
+            if cate.get(k, 0) >= MIN_CATEGORIE]
+
+
 def citeste_csv(p: str) -> list[dict]:
     with io.open(p, encoding="utf-8-sig", errors="replace", newline="") as f:
         return [{(k or "").strip(): (v or "").strip() for k, v in r.items()} for r in csv.DictReader(f)]
@@ -150,10 +178,12 @@ def scrie() -> int:
         except ValueError:
             vechi = []
         lista = pastreaza_vechi(lista, vechi, magazine, acum.year)
+    categorii = cu_categorii(lista, magazine)
     io.open(IESIRE, "w", encoding="utf-8", newline="").write(json.dumps({
         "_nota": "Generat de scripts/calendar_black_friday.py din promotiile anuntate de magazine in 2Performant "
                  "(data/promotii_2p.csv). Doar parteneri cu link platit. Nu edita de mana.",
         "generat": acum.strftime("%Y-%m-%d"),
+        "categorii": categorii,
         "parteneri": lista,
     }, ensure_ascii=False, indent=1))
     print(f"Calendar Black Friday: {len(lista)} campanii ale partenerilor")
@@ -230,6 +260,14 @@ def test() -> int:
             [], [{"magazin": "doctorshield.ro", "nume": "D", "start": "2025-11-20"}], mag, 2026), []),
         ("magazinul fara program nu ramane", pastreaza_vechi(
             [], [{"magazin": "faraprogram.ro", "nume": "F", "start": "2026-11-20"}], mag, 2026), []),
+        ("categoria cu 3 campanii are pagina, cea cu 2 nu; marketplace niciodata", [c["slug"] for c in cu_categorii(
+            [{"magazin": "a"}, {"magazin": "b"}, {"magazin": "c"}, {"magazin": "d"}, {"magazin": "e"},
+             {"magazin": "f"}, {"magazin": "g"}, {"magazin": "h"}],
+            [{"magazin": "a", "categorie_slug": "fashion"}, {"magazin": "b", "categorie_slug": "fashion"},
+             {"magazin": "c", "categorie_slug": "fashion"}, {"magazin": "d", "categorie_slug": "beauty"},
+             {"magazin": "e", "categorie_slug": "beauty"}, {"magazin": "f", "categorie_slug": "marketplace"},
+             {"magazin": "g", "categorie_slug": "marketplace"}, {"magazin": "h", "categorie_slug": "marketplace"}])],
+         ["fashion"]),
         ("emoji scos din titlu", [c["nota"] for c in campanii(
             [r("doctorshield.ro", "\U0001F525 Black Friday pe DoctorShield",
                "2026-11-20 06:00:00 UTC", "2026-11-30 08:00:00 UTC")], mag, 2026)], ["Black Friday pe DoctorShield"]),

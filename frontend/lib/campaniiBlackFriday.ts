@@ -21,6 +21,13 @@ export interface CampanieBF {
   /** Textul magazinului despre campanie, curatat de scripts/calendar_black_friday.py. */
   descriere?: string;
   are_cod?: boolean;
+  categorie?: string;
+}
+
+export interface CategorieBF {
+  slug: string;
+  nume: string;
+  campanii: number;
 }
 
 function citeste(fisier: string): CampanieBF[] {
@@ -51,11 +58,22 @@ function toate(): CampanieBF[] {
     ...c,
     descriere: dupaSlug.get(c.magazin)?.descriere,
     are_cod: dupaSlug.get(c.magazin)?.are_cod,
+    categorie: dupaSlug.get(c.magazin)?.categorie,
   }));
   const vazute = new Set(manuale.map((c) => c.magazin));
   _toate = [...manuale, ...din2p.filter((c) => !vazute.has(c.magazin))]
     .sort((a, b) => a.start.localeCompare(b.start) || a.nume.localeCompare(b.nume, "ro"));
   return _toate;
+}
+
+/** Categoriile cu pagina proprie /black-friday/categorie/<slug> (lista o decide generatorul). */
+export function categoriiBF(): CategorieBF[] {
+  try {
+    const d = JSON.parse(fs.readFileSync(path.join(process.cwd(), "public", "black-friday-parteneri.json"), "utf-8"));
+    return (d.categorii || []) as CategorieBF[];
+  } catch {
+    return [];
+  }
 }
 
 /** Campaniile care nu s-au terminat pana azi (AAAA-LL-ZZ). */

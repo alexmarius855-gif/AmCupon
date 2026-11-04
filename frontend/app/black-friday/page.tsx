@@ -5,7 +5,7 @@ import path from "path";
 import MagazinCard, { CardMagazin } from "../components/MagazinCard";
 import NewsletterCTA from "../components/NewsletterCTA";
 import { areLinkAfiliat } from "@/lib/linkMagazin";
-import { campaniiBF, toateCampaniileBF } from "@/lib/campaniiBlackFriday";
+import { campaniiBF, categoriiBF, toateCampaniileBF } from "@/lib/campaniiBlackFriday";
 import StudiuReale from "./StudiuReale";
 
 /**
@@ -213,6 +213,14 @@ export default function BlackFridayPage() {
                 Black Friday nu mai e o singură zi: {BF.inainteDeEmag} din {BF.totalCampanii} de campanii încep înainte de {emagScurt}, prima
                 pe {BF.primaZi}. O campanie ține {BF.medianaZile} zile în mod obișnuit (valoarea mediană), iar cea mai lungă, {BF.celMaiLung} de zile.
               </p>
+              <nav aria-label="Campanii pe categorii" className="flex flex-wrap gap-2 mb-4">
+                {categoriiBF().map((k) => (
+                  <Link key={k.slug} href={`/black-friday/categorie/${k.slug}`}
+                    className="rounded-full border border-[var(--border)] px-3 py-1 text-sm hover:border-[var(--border-strong)]">
+                    {k.nume} ({k.campanii})
+                  </Link>
+                ))}
+              </nav>
               <div className="grid gap-3 sm:grid-cols-2">
                 {BF.parteneri.map((p) => (
                   <div key={p.magazin} className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-3 flex flex-col gap-1.5">

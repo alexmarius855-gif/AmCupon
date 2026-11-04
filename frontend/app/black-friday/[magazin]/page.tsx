@@ -6,7 +6,9 @@ import { notFound } from "next/navigation";
 import { campaniiBF, toateCampaniileBF, type CampanieBF } from "@/lib/campaniiBlackFriday";
 import { linkAfiliat } from "@/lib/linkMagazin";
 import { alMagazinului } from "@/lib/produseMagazin";
-import { imagineSigura, titluAfisat, type ProdusFeed } from "@/lib/topFeed";
+import { imagineSigura, type ProdusFeed } from "@/lib/topFeed";
+import { categoriiBF } from "@/lib/campaniiBlackFriday";
+import { CardProdus, interval, pret, stare, zi } from "../comun";
 
 /**
  * „Black Friday <magazin> 2026" — o pagina pentru fiecare partener cu campanie anuntata (04.11.2026).
@@ -64,18 +66,6 @@ function produse(): ProdusFeed[] {
 }
 
 const azi = () => new Date().toISOString().slice(0, 10);
-const zi = (iso: string, luna: "long" | "short" = "long") =>
-  new Intl.DateTimeFormat("ro-RO", { day: "numeric", month: luna, timeZone: "UTC" }).format(new Date(iso + "T00:00:00Z"));
-const pret = (n: number) => `${n.toLocaleString("ro-RO", { minimumFractionDigits: 0, maximumFractionDigits: 2 })} lei`;
-
-function interval(c: CampanieBF): string {
-  return c.start === c.final ? zi(c.start) : `${zi(c.start)} – ${zi(c.final)}`;
-}
-
-function stare(c: CampanieBF, ziua: string): "urmeaza" | "acum" | "incheiata" {
-  if (c.final < ziua) return "incheiata";
-  return c.start <= ziua ? "acum" : "urmeaza";
-}
 
 function campanie(slug: string): CampanieBF | null {
   return toateCampaniileBF().find((c) => c.magazin === slug) || null;
@@ -103,29 +93,6 @@ export async function generateMetadata({ params }: { params: Promise<{ magazin: 
   };
 }
 
-function CardProdus({ p, nota }: { p: { url?: string; title?: string; image?: string; price?: number }; nota?: string }) {
-  const titlu = titluAfisat(p.title);
-  const img = imagineSigura(p.image);
-  return (
-    <a
-      href={p.url}
-      target="_blank"
-      rel="nofollow sponsored noopener noreferrer"
-      className="flex flex-col rounded-xl border border-[var(--border)] bg-[var(--surface)] p-3 hover:border-[var(--border-strong)] transition-colors"
-    >
-      <div className="aspect-square w-full rounded-lg bg-white overflow-hidden flex items-center justify-center">
-        {img ? (
-          // eslint-disable-next-line @next/next/no-img-element -- imagini externe din feed, fara pipeline de optimizare (vezi MagazinCard)
-          <img src={img} alt={titlu} loading="lazy" decoding="async" className="h-full w-full object-contain" />
-        ) : null}
-      </div>
-      <p className="mt-2 text-sm leading-snug line-clamp-2">{titlu}</p>
-      {typeof p.price === "number" && p.price > 0 && <p className="mt-1 font-black">{pret(p.price)}</p>}
-      {nota && <p className="text-xs text-[var(--accent-text)] mt-0.5">{nota}</p>}
-    </a>
-  );
-}
-
 export default async function BlackFridayMagazinPage({ params }: { params: Promise<{ magazin: string }> }) {
   const { magazin } = await params;
   const slug = decodeURIComponent(magazin);
@@ -150,6 +117,8 @@ export default async function BlackFridayMagazinPage({ params }: { params: Promi
     .sort((a, b) =>
       Number(magazine().get(b.magazin)?.categorie_slug === m.categorie_slug) - Number(magazine().get(a.magazin)?.categorie_slug === m.categorie_slug))
     .slice(0, 6);
+
+  const categorie = categoriiBF().find((k) => k.slug === c.categorie);
 
   const intrebari = [
     {
@@ -290,9 +259,15 @@ export default async function BlackFridayMagazinPage({ params }: { params: Promi
                 </li>
               ))}
             </ul>
-            <Link href="/black-friday" className="inline-block mt-3 text-sm font-semibold text-[var(--accent-text)]">
-              Tot calendarul Black Friday →
-            </Link>
+            <p className="mt-3 text-sm font-semibold text-[var(--accent-text)]">
+              {categorie && (
+                <>
+                  <Link href={`/black-friday/categorie/${categorie.slug}`}>Black Friday {categorie.nume} →</Link>
+                  {" · "}
+                </>
+              )}
+              <Link href="/black-friday">Tot calendarul Black Friday →</Link>
+            </p>
           </section>
         )}
 

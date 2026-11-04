@@ -6,7 +6,7 @@ import { buildMerchantTokens, esteIndexabil, type IndexableProdus } from "../lib
 import { CAI_REDIRECTIONATE } from "../lib/redirecturi";
 import { articolFaraPromoActiva, ceruteInSitemap, construiesteIndexMagazine } from "../lib/blogCanonical";
 import { gasesteMagazinBrand } from "../lib/brandMagazin";
-import { toateCampaniileBF } from "../lib/campaniiBlackFriday";
+import { categoriiBF, toateCampaniileBF } from "../lib/campaniiBlackFriday";
 
 const BASE_URL = "https://amcupon.ro";
 
@@ -147,6 +147,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
         url: `${BASE_URL}/black-friday/${c.magazin}`, lastModified: ACUM,
         changeFrequency: "daily" as const, priority: 0.85,
       })),
+    ...categoriiBF().map((k) => ({
+      url: `${BASE_URL}/black-friday/categorie/${k.slug}`, lastModified: ACUM,
+      changeFrequency: "daily" as const, priority: 0.85,
+    })),
     { url: `${BASE_URL}/reduceri-reale`,         lastModified: ultimaModificare(`${BASE_URL}/reduceri-reale`), changeFrequency: "daily", priority: 0.9 },
     { url: `${BASE_URL}/produse`,                lastModified: ultimaModificare(`${BASE_URL}/produse`), changeFrequency: "daily",   priority: 0.9 },
     { url: `${BASE_URL}/toate-magazinele`,       lastModified: ultimaModificare(`${BASE_URL}/toate-magazinele`), changeFrequency: "daily",   priority: 0.85 },

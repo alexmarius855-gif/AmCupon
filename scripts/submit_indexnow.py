@@ -29,6 +29,7 @@ SEEN_PATH = os.path.join(repo_root, "data", "indexnow_seen.json")
 BLOG_PATH = os.path.join(repo_root, "frontend", "public", "blog-posts.json")
 OUTPUT_PATH = os.path.join(repo_root, "frontend", "public", "output.json")
 COMPARISONS_PATH = os.path.join(repo_root, "frontend", "public", "comparisons.json")
+BLACK_FRIDAY_PATH = os.path.join(repo_root, "frontend", "public", "black-friday-parteneri.json")
 
 # Toate paginile statice importante — trimise o singura data (raman in seen dupa)
 STATIC_PAGES = [
@@ -101,6 +102,15 @@ def main():
     comparisons = load_json(COMPARISONS_PATH, {})
     for slug in comparisons.keys():
         candidate_urls.add(f"{BASE_URL}/comparatii/{slug}")
+
+    # 5. Paginile de Black Friday (04.11.2026): lipseau din lista, deci Bing nu le afla decat din sitemap.
+    bf = load_json(BLACK_FRIDAY_PATH, {})
+    dupa_slug = {m.get("magazin") for m in magazine}
+    for c in bf.get("parteneri") or []:
+        if c.get("magazin") in dupa_slug:
+            candidate_urls.add(f"{BASE_URL}/black-friday/{c['magazin']}")
+    for k in bf.get("categorii") or []:
+        candidate_urls.add(f"{BASE_URL}/black-friday/categorie/{k['slug']}")
 
     new_urls = sorted(candidate_urls - seen)
 
