@@ -1,3 +1,5 @@
+import { criteriiCategorie } from "@/lib/criterii";
+import CriteriiTema from "../../../components/CriteriiTema";
 import fs from "fs";
 import path from "path";
 import { Metadata } from "next";
@@ -163,6 +165,7 @@ export default async function BlackFridayCategoriePage({ params }: { params: Pro
           {inCurs.length > 0 && ` ${inCurs.length === 1 ? "Una e" : `${inCurs.length} sunt`} în desfășurare.`}
           {urmeaza.length > 0 && ` ${urmeaza.length === 1 ? "Una urmează" : `${urmeaza.length} urmează`}.`}
         </p>
+        <CriteriiTema lista={criteriiCategorie(k.slug)} titlu="Cauți ceva anume? Alege după caracteristică" />
 
         <section className="mt-6">
           <h2 className="text-lg font-black">Campaniile, în ordine</h2>

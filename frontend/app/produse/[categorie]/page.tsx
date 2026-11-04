@@ -4,6 +4,7 @@ import fs from "fs";
 import path from "path";
 import ProduseCategorieClient from "./ProduseCategorieClient";
 import type { Produs } from "../ProduseClient";
+import { criteriiCategorie } from "@/lib/criterii";
 import { CAT_META } from "../categorie-meta";
 import { CAT_FAQ } from "./categorie-faq";
 
@@ -165,6 +166,7 @@ export default async function ProduseCategorieePage(
         categorie={categorie}
         catMeta={meta}
         totalAll={all.length}
+        criterii={criteriiCategorie(categorie)}
       />
     </>
   );

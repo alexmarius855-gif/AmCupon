@@ -78,6 +78,7 @@ export const SUBSOL: { categorii: Link[]; reduceri: Link[]; utilizatori: Link[];
     { href: "/oferte-azi", label: "Oferte de azi" },
     { href: "/top-reduceri", label: "Top reduceri" },
     { href: "/top", label: "Topuri: cele mai bune produse" },
+    { href: "/alege", label: "Alege după caracteristică" },
     { href: "/produse", label: "Produse de la parteneri" },
     { href: "/black-friday", label: "Black Friday" },
     { href: "/reduceri-reale", label: "Reduceri reale (istoric de preț)" },

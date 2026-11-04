@@ -4,7 +4,7 @@ import { pesteMagazine, PesteMagazine, reteleAfiliere, numarMagazine } from "@/l
 
 export const metadata: Metadata = {
   title: "Despre AmCupon.ro — Platforma de Coduri Reducere din Romania",
-  description: `AmCupon.ro aduna codurile de reducere si ofertele active de la ${pesteMagazine()} partenere, actualizate automat de mai multe ori pe zi. 100% gratuit pentru cumparatori.`,
+  description: `AmCupon.ro aduna codurile de reducere si ofertele active de la ${pesteMagazine()} partenere, actualizate automat de mai multe ori pe zi.`,
   keywords: ["despre amcupon","cum functioneaza coduri reducere","platforma reduceri romania","coduri reducere actualizate"],
   alternates: { canonical: "https://amcupon.ro/despre-noi" },
   openGraph: {

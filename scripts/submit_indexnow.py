@@ -44,6 +44,7 @@ OUTPUT_PATH = os.path.join(repo_root, "frontend", "public", "output.json")
 COMPARISONS_PATH = os.path.join(repo_root, "frontend", "public", "comparisons.json")
 BLACK_FRIDAY_PATH = os.path.join(repo_root, "frontend", "public", "black-friday-parteneri.json")
 TOP_PATH = os.path.join(repo_root, "frontend", "public", "top-produse.json")
+CRITERII_PATH = os.path.join(repo_root, "frontend", "public", "criterii.json")
 
 # Toate paginile statice importante — trimise o singura data (raman in seen dupa)
 STATIC_PAGES = [
@@ -201,6 +202,12 @@ def main():
     for c in load_json(TOP_PATH, {}).get("categorii") or []:
         if c.get("slug"):
             candidate_urls.add(f"{BASE_URL}/top/{c['slug']}")
+
+    # 7. Produsele pe o caracteristica: doar paginile care exista (cel putin 4 produse, lib/criterii.ts).
+    for c in load_json(CRITERII_PATH, {}).get("criterii") or []:
+        if len(c.get("produse") or []) >= 4:
+            candidate_urls.add(f"{BASE_URL}/alege/{c['slug']}")
+    candidate_urls.add(f"{BASE_URL}/alege")
 
     # Ora Romaniei, ca in calendar: 2 ore sunt destule pentru granita de zi, indiferent de sezon.
     azi = (datetime.now(timezone.utc) + timedelta(hours=2)).strftime("%Y-%m-%d")

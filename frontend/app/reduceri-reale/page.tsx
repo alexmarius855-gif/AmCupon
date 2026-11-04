@@ -71,7 +71,7 @@ const ziua = (iso: string) =>
 export const metadata: Metadata = {
   title: "Reduceri reale — sub prețul minim din 30 de zile",
   description:
-    "Produse al căror preț de azi e sub cel mai mic preț din ultimele 30 de zile, la magazinele partenere AmCupon. Istoric propriu de prețuri, actualizat de trei ori pe zi.",
+    "Produse al căror preț de azi e sub cel mai mic preț din ultimele 30 de zile, la magazinele partenere AmCupon.",
   alternates: { canonical: "https://amcupon.ro/reduceri-reale" },
   openGraph: {
     title: "Reduceri reale — sub prețul minim din ultimele 30 de zile | AmCupon.ro",

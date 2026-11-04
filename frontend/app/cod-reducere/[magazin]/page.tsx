@@ -15,7 +15,7 @@ import FaraLivrareRo, { tariLivrare, type Alternativa, type MagazinFaraLivrare }
 import { numeAfisat, brandDomeniu } from "@/lib/numeMagazin";
 import { alMagazinului } from "@/lib/produseMagazin";
 import { imagineSigura, normTitlu, titluAfisat } from "@/lib/topFeed";
-import { titluPromotie, notaExpirare } from "@/lib/oferta";
+import { titluPromotie, notaExpirare, descriereScurta } from "@/lib/oferta";
 
 interface Promotie {
   nume: string;
@@ -449,7 +449,7 @@ export async function generateMetadata({
   // ~155 de caractere, iar termenul („pana pe 18 octombrie") e ce aduce clicul. Vezi lib/oferta.ts.
   const nota = notaExpirare(m.promotii, nume);
   const baza = descCustom || descGeneric;
-  const description = nota && !baza.includes(nota) ? `${nota} ${baza}` : baza;
+  const description = descriereScurta(nota && !baza.includes(nota) ? `${nota} ${baza}` : baza);
 
   // ── Indexare selectiva (vezi lib/seoIndexable.ts pentru masuratori + motiv) ──
   // Paginile fara continut propriu (fara promotie si fara produse) primesc

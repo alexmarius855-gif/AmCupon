@@ -7,7 +7,7 @@ import ReducereClient from "./ReducereClient";
 export const metadata: Metadata = {
   title: "Calculator reduceri — cat costa dupa reducere | AmCupon.ro",
   description:
-    "Calculator de reduceri gratuit: afla pretul final si cat economisesti. Calculeaza si doua reduceri succesive (cod peste pret redus) sau ce procent ai primit din doua preturi.",
+    "Calculator de reduceri gratuit: afla pretul final si cat economisesti. Calculeaza si doua reduceri succesive (cod peste pret redus) sau ce procent ai…",
   keywords: [
     "calculator reduceri",
     "calcul procent reducere",

@@ -17,7 +17,7 @@ const LINK_HIDEMYNAME  = "https://www.awin1.com/cread.php?awinmid=5887918&awinaf
 
 export const metadata: Metadata = {
   title: "VPN Romania 2026 — NordVPN vs Surfshark | AmCupon.ro",
-  description: "Comparăm NordVPN, Surfshark și ExpressVPN pentru România în 2026: funcții, dispozitive, securitate, garanție. Alege VPN-ul potrivit pentru streaming și confidențialitate.",
+  description: "Comparăm NordVPN, Surfshark și ExpressVPN pentru România în 2026: funcții, dispozitive, securitate, garanție.",
   keywords: ["cel mai bun vpn romania", "nordvpn romania", "surfshark parere", "vpn streaming", "vpn ieftin romania 2026", "vpn recenzii"],
   alternates: { canonical: "https://amcupon.ro/vpn" },
   openGraph: {

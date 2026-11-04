@@ -128,7 +128,7 @@ export async function generateMetadata(
 
   const title = catLabel
     ? `Oferte ${catLabel} de Azi — Reduceri ${luna} ${an} | AmCupon.ro`
-    : `Oferte de Azi Romania — Toate Promotiile Active ${luna} ${an} | AmCupon.ro`;
+    : `Oferte de azi: toate promoțiile active, ${luna} ${an}`;
   const description = catLabel
     ? `Toate ofertele active ${catLabel} din Romania pentru ${luna} ${an}. Coduri de reducere si promotii actualizate zilnic pe AmCupon.ro.`
     : `Toate ofertele si promotiile active de azi in Romania. Coduri de reducere actualizate zilnic la 1000+ magazine online. Actualizat ${luna} ${an}.`;

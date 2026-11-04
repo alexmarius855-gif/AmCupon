@@ -401,7 +401,7 @@ RE_EMOJI = re.compile("[\U0001F000-\U0001FAFF☀-➿️]")
 RE_CATRE_AFILIATI = re.compile(
     r"\b(bun[aă] ziua|bun[aă] tuturor|salutare|hi everyone|clien[tț]ii pe care|aduce[tț]i|comision\w*|"
     r"converte\w*|converti\w*|conversii?|link\s+promo[tț]ie|afilia\w*|bannere?|landing|dvs\.?|v[aă] rug[aă]m|colabor\w*|clientul|"
-    r"dorim s[aă] v[aă]|pentru voi|oportunitate|de a genera|genera[tț]i|pentru promovare|[iî]n comunicare(?=,)|scaneaz[aă] codul|tot nu e destul)\b", re.I)
+    r"dorim s[aă] v[aă]|pentru voi|oportunitate|de a genera|genera[tț]i|pentru promovare|[iî]n comunicare(?=,)|scaneaz[aă] codul|tot nu e destul|influencer\w*|ar[aă]t[aă] cum te ajut[aă]|include [iî]ntotdeauna)\b", re.I)
 # Promisiuni pe care nu le putem susține, chiar dacă le scrie magazinul (regula „zero informații eronate").
 RE_PROMISIUNE = re.compile(r"\b(garantat\w*|garan[tț]ia celui|cel mai mic pre[tț]|cele mai mici pre[tț]uri|"
                            r"cele? mai (mari?|bune)|celor mai mari|cel mai mare|cea mai (mare|a[sș]teptat[aă])|imbatabil\w*)\b", re.I)
@@ -470,6 +470,14 @@ RE_COMISION_CLIENT = re.compile(
     r"\bf[aă]r[aă]\s+comision|\b0\s*%\s*comision|\bcomision\w*\s+(?:de\s+)?0(?![\d.,])|\bzero\s+comision", re.I)
 
 
+def titlu_fara_cod_lipit(t):
+    """„BOYA15%off" e codul lipit de reducere: ramane „15% off". „Clearance sale50%off" are cuvinte, deci nu se atinge."""
+    if not isinstance(t, str):
+        return t
+    g = re.match(r"^[A-Za-z]{2,}(\d{1,2})\s*%\s*off$", t.strip(), re.I)
+    return f"{g.group(1)}% off" if g else t
+
+
 def fara_segmente_afiliati(nume, m: dict = None):
     """Titlul fara bucatile scrise pentru afiliati. Neatins cand n-are niciuna. None cand nu ramane nimic
     (sau doar numele magazinului): atunci nu e o oferta, e un anunt pentru afiliati."""
@@ -525,6 +533,8 @@ def curata_promotii(magazine: list, azi: str = None) -> dict:
                 continue
             if isinstance(p.get("nume"), str) and RE_EMOJI.search(p["nume"]):
                 p["nume"] = RE_EMOJI.sub("", p["nume"]).strip() or p["nume"]
+            for camp in ("nume", "descriere"):
+                p[camp] = titlu_fara_cod_lipit(p.get(camp)) if p.get(camp) else p.get(camp)
             nume_curat = fara_segmente_afiliati(p.get("nume"), m)
             if nume_curat is None:
                 st["afiliati_scoase"].append(f"{m.get('magazin', '?')} (titlul e pentru afiliati)")

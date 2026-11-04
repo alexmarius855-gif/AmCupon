@@ -3,7 +3,7 @@ import BrandPageTemplate, { metadataBrand } from "../components/BrandPageTemplat
 
 const META: Metadata = {
   title: "Asigurări Online România 2026 — RCA, CASCO, Locuință",
-  description: "Compară asigurări RCA, CASCO, locuință, viață și călătorie prin Otto Broker — 15 ani experiență, peste 130.000 clienți. Obține cotații de la mai mulți asigurători printr-un singur broker.",
+  description: "Compară asigurări RCA, CASCO, locuință, viață și călătorie prin Otto Broker — 15 ani experiență, peste 130.000 clienți.",
   keywords: ["asigurare rca online", "asigurare casco", "compara asigurari romania", "otto broker", "asigurare locuinta", "asigurare calatorie"],
   alternates: { canonical: "https://amcupon.ro/asigurari" },
   openGraph: { title: "Asigurări Online România 2026 | AmCupon.ro", url: "https://amcupon.ro/asigurari", siteName: "AmCupon.ro", locale: "ro_RO", type: "website" },

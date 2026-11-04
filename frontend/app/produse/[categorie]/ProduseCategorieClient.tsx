@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import CriteriiTema from "../../components/CriteriiTema";
 import { useState, useMemo, useEffect, useRef, useCallback } from "react";
 import type { Produs } from "../ProduseClient";
 import { CAT_META } from "../categorie-meta";
@@ -125,12 +126,14 @@ export default function ProduseCategorieClient({
   categorie,
   catMeta,
   totalAll,
+  criterii = [],
 }: {
   products: Produs[];
   updated: string;
   categorie: string;
   catMeta: { label: string; emoji: string; desc: string; h1: string };
   totalAll: number;
+  criterii?: { slug: string; titlu: string }[];
 }) {
   // Produsele NU mai vin integral ca prop (categoria "altele" are 21k+ produse =
   // pagina enorma care risca limita ISR Vercel 19MB). Server trimite set initial
@@ -301,6 +304,7 @@ export default function ProduseCategorieClient({
 
       {/* ─── CONTINUT ────────────────────────────────────────────────────────── */}
       <section className="max-w-7xl mx-auto px-4 py-8">
+        <CriteriiTema lista={criterii} titlu="Cauți ceva anume? Alege după caracteristică" />
 
         {products.length === 0 ? (
           <div className="text-center py-20 bg-[var(--surface)] rounded-xl border border-[var(--border-strong)]">

@@ -15,7 +15,7 @@ interface Magazin {
 
 export const metadata: Metadata = {
   title: "Piese Auto Online Romania 2026 — Coduri și Oferte",
-  description: `Compara magazinele de piese auto, anvelope, jante si detailing din Romania. Coduri de reducere actualizate zilnic ${laParteneri(["auto-moto"], 3)} si la alte magazine partenere.`,
+  description: `Compara magazinele de piese auto, anvelope, jante si detailing din Romania. Coduri de reducere actualizate zilnic ${laParteneri(["auto-moto"], 3)} si la…`,
   keywords: ["piese auto online", "cod reducere piese auto", "anvelope reducere", "jante auto reducere", "detailing auto romania", "magazin piese auto romania"],
   alternates: { canonical: "https://amcupon.ro/piese-auto" },
   openGraph: { title: "Piese Auto Online Romania 2026 | AmCupon.ro", url: "https://amcupon.ro/piese-auto", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },

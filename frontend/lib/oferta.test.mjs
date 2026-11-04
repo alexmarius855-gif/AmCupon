@@ -8,7 +8,7 @@
  * eroare, nu cazuri anume: valoare care nu apare in text, cod ramas in titlu, titlu gol.
  */
 import { readFileSync } from "node:fs";
-import { valoareOferta, faraCod, titluPromotie, indexReducereMaxima, notaExpirare } from "./oferta.ts";
+import { valoareOferta, faraCod, titluPromotie, indexReducereMaxima, notaExpirare, hookMagazin, descriereScurta } from "./oferta.ts";
 
 let esecuri = 0;
 const verifica = (nume, primit, asteptat) => {
@@ -35,7 +35,20 @@ verifica("interval 10-30% = pana la 30%", v("Reduceri 10-30% la colectia noua"),
 verifica("„100% bumbac\" in descriere nu e reducere", v("Tricou nou", "Material 100% bumbac, 95% cotton blend"), "Ofertă");
 verifica("cod fara valoare = „Reducere\", nu inventat", v("Cod de bun venit", "", "WELCOME"), "Reducere");
 
+console.log("\n── descriereScurta ──");
+verifica("scurta ramane", descriereScurta("Text scurt."), "Text scurt.");
+verifica("taie la fraza", descriereScurta(`${"a".repeat(120)}. ${"b".repeat(80)}`), `${"a".repeat(120)}.`);
+verifica("taie la cuvant", descriereScurta(`${"cuvant ".repeat(40)}`).endsWith("cuvant…"), true);
+verifica("nu trece de limita", descriereScurta("x y ".repeat(100)).length <= 156, true);
+console.log("\n── hookMagazin ──");
+verifica("fara oferte", hookMagazin([], "Notino").startsWith("Acum nu e niciun cod activ la Notino"), true);
+verifica("un cod, cu procent", hookMagazin([{ nume: "Reducere 30%", cod_cupon: "X1" }], "Videt"), "Un cod activ la Videt, până la -30%. Apeși pe cod: se copiază și se deschide magazinul.");
+verifica("doua coduri, procentul cel mare", hookMagazin([{ nume: "Reducere 10%", cod_cupon: "A1" }, { nume: "Reducere 25%", cod_cupon: "B2" }], "Oleya").startsWith("2 coduri active la Oleya, până la -25%"), true);
+verifica("oferte fara cod", hookMagazin([{ nume: "Transport gratuit" }, { nume: "Livrare rapida" }], "Noriel"), "2 oferte active la Noriel. Apeși pe ofertă și ajungi direct la ea, fără cod.");
 console.log("\n── faraCod ──");
+verifica("ghilimelele goale ies odata cu codul", faraCod('Extra 15% cu codul "SALE"', "SALE"), "Extra 15%");
+verifica("ghilimelele romanesti ies odata cu codul", faraCod("Extra 15% cu codul „SALE”", "SALE"), "Extra 15%");
+verifica("textul intre ghilimele ramane", faraCod('Colectia "Toamna" cu codul SALE', "SALE"), 'Colectia "Toamna" cu codul de reducere');
 verifica("„– Cod LAMODA\" scos din titlu",
   faraCod("Reducere la încălțăminte bărbătească din piele naturală – Cod LAMODA", "LAMODA"),
   "Reducere la încălțăminte bărbătească din piele naturală");

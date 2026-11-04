@@ -1,3 +1,4 @@
+import { criteriiCategorie } from "@/lib/criterii";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import fs from "fs";
@@ -290,7 +291,7 @@ export default async function PaginaCategorie({
       {itemListSchema && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       )}
-      <CategorieClient magazine={mag} numeCategorie={numeCateg} slug={slug} produse={produse} />
+      <CategorieClient magazine={mag} numeCategorie={numeCateg} slug={slug} produse={produse} criterii={criteriiCategorie(slug)} />
       {CATEG_MERCHANTS[slug] && produse.length === 0 && (
         <NisaProduse
           merchantSlugs={CATEG_MERCHANTS[slug]}

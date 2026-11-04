@@ -95,11 +95,44 @@ export function faraCod(text: string, cod?: string): string {
     .replace(new RegExp(`(use|using|with|enter)\\s+(the\\s+)?code\\s*[:：]?\\s*${tok}`, "giu"), "$1 code")
     .replace(new RegExp(`\\s*[–—-]?\\s*(?:codul|cod|code)\\s*[:：]?\\s*${tok}`, "giu"), "")
     .replace(new RegExp(tok, "gu"), "")
+    // „Extra 15% cu codul \"SALE\"": fara cod raman ghilimele goale, iar „cu codul" nu mai spune nimic.
+    .replace(/(?:\s*(?:cu\s+)?(?:codul|cod)\b)?\s*["„“”«»'’]\s*["„“”«»'’]/giu, "")
     .replace(/\s{2,}/g, " ")
     .replace(/\s+([.,;:!?])/g, "$1")
     // la inceput nu taiem cratima: e minusul din „-20%"
     .replace(/^[\s:：,–—]+|[\s:：,–—-]+$/g, "")
     .trim();
+}
+
+/** Descrierea pentru Google, in limita: taie la fraza sau la cuvant, nu in mijlocul lui. */
+export function descriereScurta(text: string, maxim = 155): string {
+  const t = (text || "").replace(/\s+/g, " ").trim();
+  if (t.length <= maxim) return t;
+  const bucata = t.slice(0, maxim);
+  const fraza = Math.max(bucata.lastIndexOf(". "), bucata.lastIndexOf("! "), bucata.lastIndexOf("? "));
+  if (fraza >= maxim * 0.6) return bucata.slice(0, fraza + 1);
+  return `${bucata.slice(0, bucata.lastIndexOf(" ")).replace(/[,;:–-]+$/, "")}…`;
+}
+
+/**
+ * Prima fraza de pe pagina unui magazin: ce gaseste omul acum, din date, nu o promisiune (04.11.2026).
+ * Picodi si Cuponeria incep cu oferta cea mai buna; la noi, sub titlu erau doar etichete.
+ */
+export function hookMagazin(promos: PromotieCupon[], nume: string): string {
+  if (promos.length === 0) return `Acum nu e niciun cod activ la ${nume}. Mai jos ai magazine similare și te putem anunța pe email când apare unul.`;
+  const procente = promos
+    .map((p) => valoareOferta(p).text.match(/(\d{1,2})(?:,\d)?%/))
+    .filter((m): m is RegExpMatchArray => !!m)
+    .map((m) => Number(m[1]));
+  const maxim = procente.length ? Math.max(...procente) : 0;
+  const pana = maxim > 0 ? `, până la -${maxim}%` : "";
+  const coduri = promos.filter((p) => p.cod_cupon).length;
+  if (coduri > 0) {
+    const cate = coduri === 1 ? "Un cod activ" : `${coduri} coduri active`;
+    return `${cate} la ${nume}${pana}. Apeși pe cod: se copiază și se deschide magazinul.`;
+  }
+  const cate = promos.length === 1 ? "O ofertă activă" : `${promos.length} oferte active`;
+  return `${cate} la ${nume}${pana}. Apeși pe ofertă și ajungi direct la ea, fără cod.`;
 }
 
 /** Un singur „cuvant" de litere si cifre, cu o cifra sau 4+ majuscule: „SAVE10", „DH2026SEPSAVE3". */

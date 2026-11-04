@@ -6,7 +6,7 @@ import { PesteMagazine } from "@/lib/cifreSite";
 
 export const metadata: Metadata = {
   title: "Categorii Coduri Reducere Romania 2026 | AmCupon.ro",
-  description: `Coduri de reducere organizate pe categorii: Fashion, Electronice, Frumusete, Casa, Sport, Farmacie, Copii, Animale si multe altele. ${PesteMagazine()} partenere, actualizate zilnic.`,
+  description: `Coduri de reducere organizate pe categorii: Fashion, Electronice, Frumusete, Casa, Sport, Farmacie, Copii, Animale si multe altele.`,
   keywords: ["categorii reduceri romania","coduri reducere pe categorii","fashion reducere","electronice ieftine","farmacie online reducere"],
   alternates: { canonical: "https://amcupon.ro/categorii" },
   openGraph: {

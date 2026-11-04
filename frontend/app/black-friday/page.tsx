@@ -181,7 +181,7 @@ export default function BlackFridayPage() {
             Black Friday {BF.an} în România
           </h1>
           <p className="text-[var(--text-soft)] text-base md:text-lg max-w-2xl">
-            Ofertele active acum la magazinele partenere AmCupon. Pe fiecare magazin vezi codul,
+            <strong className="text-[var(--foreground)]">{cuOferta.length} magazine partenere au oferte active acum.</strong> Pe fiecare vezi codul,
             dacă există, și până când e valabilă oferta.
           </p>
 

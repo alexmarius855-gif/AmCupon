@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Cel mai bun Broker Romania 2026 — Binance, XTB",
-  description: "Comparăm platformele de investiții folosite de români în 2026 — XTB (acțiuni și ETF-uri), Binance (crypto), eToro (copy trading), Trading212 — pe condițiile publicate de fiecare.",
+  description: "Comparăm platformele de investiții folosite de români în 2026 — XTB (acțiuni și ETF-uri), Binance (crypto), eToro (copy trading), Trading212 — pe…",
   keywords: [
     "cel mai bun broker romania",
     "xtb parere romania",

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import CriteriiTema from "../../components/CriteriiTema";
 
 import MagazinCard, { numeAfisat, type CardMagazin } from "../../components/MagazinCard";
 import FiltreRapide, { trecePrinFiltru, type CheieFiltru } from "../../components/FiltreRapide";
@@ -55,7 +56,8 @@ interface Produs {
   old_price?: number | null; discount_pct: number; merchant?: string; merchant_slug?: string;
 }
 
-export default function CategorieClient({ magazine, numeCategorie, slug, produse = [] }: {
+export default function CategorieClient({ magazine, numeCategorie, slug, produse = [], criterii = [] }: {
+  criterii?: { slug: string; titlu: string }[];
   magazine: Magazin[];
   numeCategorie: string;
   slug: string;
@@ -120,6 +122,8 @@ export default function CategorieClient({ magazine, numeCategorie, slug, produse
       </div>
 
       <div className="max-w-7xl mx-auto px-4 py-8">
+
+        <CriteriiTema lista={criterii} titlu="Cauți ceva anume? Alege după caracteristică" />
 
         {/* CU PROMOTII */}
         {cuPromotii.length > 0 && (

@@ -9,7 +9,7 @@ import PriceAlert from "../../components/PriceAlert";
 import ReviewSection from "./ReviewSection";
 import ShareButton from "../../components/ShareButton";
 import CuponCard from "../../components/CuponCard";
-import { indexReducereMaxima, type PromotieCupon } from "@/lib/oferta";
+import { indexReducereMaxima, hookMagazin, type PromotieCupon } from "@/lib/oferta";
 
 function cuReducereaMaximaPrima<T extends PromotieCupon>(lista: T[]): { lista: T[]; top: boolean } {
   const i = indexReducereMaxima(lista);
@@ -359,6 +359,7 @@ export default function MagazinClient({ magazin: m, produse = [], similare = [],
                   <span className="text-xs font-bold bg-[#ddf93c] text-[#0c1000] px-2 py-0.5 rounded-full">Exclusiv</span>
                 )}
               </div>
+              <p className="text-[var(--foreground)] text-base font-semibold mb-1">{hookMagazin(m.promotii, nume)}</p>
               <p className="text-[var(--text-soft)] text-sm mb-3">{m.categorie}</p>
 
               {/* Stats pills */}

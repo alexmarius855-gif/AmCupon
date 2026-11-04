@@ -10,6 +10,9 @@ import { linkuriPlatite, sectiunePentru, dataFeed } from "../../../lib/oferteTem
 import { numeAfisat } from "../../../lib/numeMagazin";
 import { destinatieTop, legaturiTema } from "../../../lib/destinatiiTop";
 import { ghiduriPentruTema } from "../../../lib/legaturiInterne";
+import { descriereScurta } from "../../../lib/oferta";
+import { criteriiTema } from "../../../lib/criterii";
+import CriteriiTema from "../../components/CriteriiTema";
 
 interface Produs {
   pozitie: number;
@@ -117,7 +120,7 @@ export async function generateMetadata({
     })(),
     // NEATINS pe 05.10.2026, desi „Preturi de la X lei" e pretul de referinta din mai–iunie si
     // „actualizat" e data rularii: title/description raman decizia lui Alex (SEO). Vezi CLAUDE.md.
-    description: `${cat.descriere} Preturi de la ${pretMinim.toLocaleString("ro-RO")} lei. Scor maxim: ${scorMax}/10. Ghid de cumparare actualizat ${data.updated}.`,
+    description: descriereScurta(`${cat.descriere} Preturi de referință de la ${pretMinim.toLocaleString("ro-RO")} lei. Scor maxim: ${scorMax}/10.`),
     alternates: { canonical: pageUrl },
     openGraph: {
       title: `${cat.titlu} | AmCupon.ro`,
@@ -356,6 +359,8 @@ export default async function TopCategoriePage({
 
         {/* MAIN CONTENT */}
         <div className="max-w-5xl mx-auto px-4 py-8">
+          <CriteriiTema lista={criteriiTema(slug)} />
+
           <TopProduseClient produse={produse} culoare={cat.culoare} areSectiune={!!sectiune || legaturi.length > 0} selectie={SELECTIE} />
 
           {sectiune && <OferteParteneri sectiune={sectiune} numeTema={numeTema} actualizat={actualizat} />}

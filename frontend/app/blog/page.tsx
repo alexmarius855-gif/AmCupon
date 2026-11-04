@@ -56,7 +56,7 @@ export async function generateMetadata(
 
   const title = catValid
     ? `Ghiduri ${catValid} — Sfaturi si Comparatii Reduceri${pageNr > 1 ? ` (pag. ${pageNr})` : ""} | AmCupon.ro`
-    : "Revista AmCupon — Ghiduri, Comparatii si Sfaturi de Cumparaturi Online";
+    : "Revista AmCupon: ghiduri și comparații de cumpărături";
   const description = catValid
     ? `Ghiduri si comparatii ${catValid.toLowerCase()}: cum alegi, cand cumperi si cum economisesti cu coduri de reducere active. Sfaturi practice pe AmCupon.ro.`
     : "Ghiduri, comparatii si sfaturi despre cum sa economisesti la cumparaturile online din Romania. Coduri de reducere, oferte si promotii explicate simplu.";
@@ -217,9 +217,8 @@ export default async function BlogPage(
               {/* Featured mozaic */}
               {featured.length === 5 && (
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-14">
-                  <Link href={`/blog/${featured[0].slug}`} className="group relative rounded-xl overflow-hidden border border-[var(--border)] hover:border-[var(--accent-text)]/50 transition-colors min-h-[300px] lg:min-h-[440px] flex">
-                    <Image src={featured[0].cover} alt={featured[0].title} fill priority className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="(max-width: 1024px) 100vw, 50vw" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#F7F9FC] via-[#F7F9FC]/40 to-transparent" />
+                  <Link href={`/blog/${featured[0].slug}`} className="group relative rounded-xl overflow-hidden border border-[var(--border)] hover:border-[var(--accent-text)]/50 transition-colors flex flex-col">
+                    <div className="relative aspect-[1200/630] w-full overflow-hidden bg-[var(--surface-alt)]"><Image src={featured[0].cover} alt={featured[0].title} fill priority className="object-contain group-hover:scale-105 transition-transform duration-500" sizes="(max-width: 1024px) 100vw, 50vw" /></div>
                     <div className="relative mt-auto p-6 z-10">
                       <span className="inline-block bg-[#ddf93c] text-[#0c1000] text-xs font-bold px-2.5 py-1 rounded-full mb-3">{featured[0].category}</span>
                       <h2 className="font-black text-[var(--foreground)] text-xl md:text-2xl leading-tight group-hover:text-[var(--accent-text)] transition-colors line-clamp-3">{featured[0].title}</h2>
@@ -228,9 +227,8 @@ export default async function BlogPage(
                   </Link>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {featured.slice(1).map(post => (
-                      <Link key={post.slug} href={`/blog/${post.slug}`} className="group relative rounded-xl overflow-hidden border border-[var(--border)] hover:border-[var(--accent-text)]/50 transition-colors min-h-[200px] flex">
-                        <Image src={post.cover} alt={post.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="(max-width: 640px) 100vw, 25vw" />
-                        <div className="absolute inset-0 bg-gradient-to-t from-[#F7F9FC] via-[#F7F9FC]/30 to-transparent" />
+                      <Link key={post.slug} href={`/blog/${post.slug}`} className="group relative rounded-xl overflow-hidden border border-[var(--border)] hover:border-[var(--accent-text)]/50 transition-colors flex flex-col">
+                        <div className="relative aspect-[1200/630] w-full overflow-hidden bg-[var(--surface-alt)]"><Image src={post.cover} alt={post.title} fill className="object-contain group-hover:scale-105 transition-transform duration-500" sizes="(max-width: 640px) 100vw, 25vw" /></div>
                         <div className="relative mt-auto p-4 z-10">
                           <span className="inline-block bg-[#ddf93c]/90 text-[#0c1000] text-[10px] font-bold px-2 py-0.5 rounded-full mb-1.5">{post.category}</span>
                           <h3 className="font-bold text-[var(--foreground)] text-sm leading-snug group-hover:text-[var(--accent-text)] transition-colors line-clamp-2">{post.title}</h3>

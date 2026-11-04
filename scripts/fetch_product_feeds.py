@@ -31,6 +31,19 @@ from datetime import datetime, timezone
 from urllib.parse import quote, unquote, urlsplit
 
 
+# Magazine cu feed ramas in urma: toate adresele din feed duc la 404, deci clicul nu poate aduce o vanzare.
+# ro.store.asus.com s-a mutat pe www.asus.com/ro/store (04.11.2026); pcmadd.com: 3 din 3 produse verificate, 404.
+GAZDE_MOARTE = ("ro.store.asus.com", "pcmadd.com")
+
+
+def adresa_moarta(url: str) -> bool:
+    try:
+        gazda = (urlsplit((url or "").strip()).hostname or "").lower()
+    except ValueError:
+        return False
+    return any(gazda == g or gazda.endswith("." + g) for g in GAZDE_MOARTE)
+
+
 def imagine_valida(url: str) -> bool:
     """http(s) cu o gazda reala (are punct, nu e localhost/0.0.0.0/IP privat). „http://0" -> False."""
     try:
@@ -1537,6 +1550,10 @@ def main():
     # 08.10.2026: gorgeaux.ro trimitea in feed imaginea „http://0" la 46 de produse — next/image respinge gazda
     # si prima pagina dadea 500 local. O adresa fara gazda reala devine „fara imagine" (produsul ramane).
     # 14.10.2026: si „http://" (farmec.ro) — next/image accepta doar https; trecute pe https la sursa.
+    inainte = len(all_products)
+    all_products = [p for p in all_products if not adresa_moarta(p.get("url_original"))]
+    if len(all_products) != inainte:
+        print(f"  Produse cu adresa moarta scoase: {inainte - len(all_products)}")
     stricate = 0
     for p in all_products:
         if p.get("image") and not imagine_valida(p["image"]):

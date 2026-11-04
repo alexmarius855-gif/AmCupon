@@ -7,6 +7,7 @@ import { CAI_REDIRECTIONATE } from "../lib/redirecturi";
 import { articolFaraPromoActiva, ceruteInSitemap, construiesteIndexMagazine } from "../lib/blogCanonical";
 import { gasesteMagazinBrand } from "../lib/brandMagazin";
 import { categoriiBF, toateCampaniileBF } from "../lib/campaniiBlackFriday";
+import { criterii } from "../lib/criterii";
 
 const BASE_URL = "https://amcupon.ro";
 
@@ -218,6 +219,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${BASE_URL}/top/${slug}`,
       lastModified: ultimaModificare(`${BASE_URL}/top/${slug}`),
       changeFrequency: "weekly" as const,
+      priority: 0.85,
+    })),
+
+    // ─── Produse pe o caracteristica (/alege, 04.11.2026) ───
+    { url: `${BASE_URL}/alege`, lastModified: ultimaModificare(`${BASE_URL}/alege`), changeFrequency: "daily" as const, priority: 0.85 },
+    ...criterii().map(c => ({
+      url: `${BASE_URL}/alege/${c.slug}`,
+      lastModified: ultimaModificare(`${BASE_URL}/alege/${c.slug}`),
+      changeFrequency: "daily" as const,
       priority: 0.85,
     })),
 

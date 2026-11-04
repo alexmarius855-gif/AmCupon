@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Cel mai bun Cont Bancar Online Romania 2026 — Revolut",
-  description: "Comparăm conturile digitale pe care le pot deschide românii în 2026 — Revolut, Wise, Salt Bank: costuri, schimb valutar, transferuri internaționale, carduri gratuite.",
+  description: "Comparăm conturile digitale pe care le pot deschide românii în 2026 — Revolut, Wise, Salt Bank: costuri, schimb valutar, transferuri internaționale…",
   keywords: [
     "cont bancar online romania",
     "revolut parere romania",

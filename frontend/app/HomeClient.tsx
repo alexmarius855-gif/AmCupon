@@ -209,6 +209,10 @@ interface HomeClientProps {
   ghiduri?: { slug: string; title: string }[];
   /** Topurile /top/<tema>, ca linkuri text — vezi lib/legaturiInterne.ts. */
   topuri?: { slug: string; titlu: string }[];
+  /** Paginile /alege/<criteriu>, de exemplu masini de spalat de 6 kg. */
+  criterii?: { slug: string; titlu: string }[];
+  /** Caracteristicile fiecarei categorii, pentru blocurile „Produse pe categorii". */
+  criteriiPeCategorii?: Record<string, { slug: string; titlu: string }[]>;
 }
 
 export default function HomeClient({
@@ -220,6 +224,8 @@ export default function HomeClient({
   pesteMagazine,
   ghiduri = [],
   topuri = [],
+  criterii = [],
+  criteriiPeCategorii = {},
   blackFriday = null,
 }: HomeClientProps) {
   const FAQ = faqItems(pesteMagazine);
@@ -581,7 +587,9 @@ export default function HomeClient({
           </h1>
 
           <p className={`text-[var(--text-soft)] text-lg mb-6 max-w-lg mx-auto leading-relaxed ${codulZilei ? "lg:mx-0" : ""}`}>
-            Le strângem automat din rețelele de afiliere și le arătăm pe toate, gratuit.
+            {blackFriday && blackFriday.inCurs > 0
+              ? `Black Friday a început la ${blackFriday.inCurs} magazine. Vezi codurile active și mergi direct la oferta potrivită, gratuit.`
+              : "Le strângem automat din rețelele de afiliere și le arătăm pe toate, gratuit."}
           </p>
 
           {/* Cautare eliminata din hero (08.08.2026): scrollIntoView pe fiecare litera
@@ -1090,6 +1098,15 @@ export default function HomeClient({
                         Vezi toate →
                       </Link>
                     </div>
+                    {(criteriiPeCategorii[PAGINI_PRODUSE[cat.slug] || cat.slug] || []).length > 0 && (
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {(criteriiPeCategorii[PAGINI_PRODUSE[cat.slug] || cat.slug] || []).map((c) => (
+                          <Link key={c.slug} href={`/alege/${c.slug}`} className="text-xs font-semibold px-3 py-1.5 rounded-full border border-[var(--border-strong)] text-[var(--text-soft)] hover:border-[var(--accent-text)] hover:text-[var(--accent-text)] transition-colors">
+                            {c.titlu}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
                     {/* Scroll orizontal. Primele 8 (27.09.2026): pe ecran incap 2 pe mobil si ~6 pe desktop,
                         iar cele 64 de carduri (4 randuri x 16) erau 31% din toata pagina. Categoria
                         completa ramane la un clic, pe „Vezi toate". */}
@@ -1371,6 +1388,20 @@ export default function HomeClient({
                       <a href={`/blog/${g.slug}`} className="text-sm text-[var(--text-soft)] hover:text-[var(--accent-text)] transition-colors">
                         {g.title}
                       </a>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            )}
+            {criterii.length > 0 && (
+              <nav aria-label="Alege după caracteristică" className="mt-10">
+                <h3 className="text-sm font-black text-[var(--foreground)] uppercase tracking-widest mb-4">Alege după caracteristică</h3>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-2">
+                  {criterii.map((c) => (
+                    <li key={c.slug}>
+                      <Link href={`/alege/${c.slug}`} className="text-sm text-[var(--text-soft)] hover:text-[var(--accent-text)] transition-colors">
+                        {c.titlu}
+                      </Link>
                     </li>
                   ))}
                 </ul>

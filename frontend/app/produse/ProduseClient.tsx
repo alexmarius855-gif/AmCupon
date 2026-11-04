@@ -417,9 +417,9 @@ export default function ProduseClient({
             {cuPromotii.length} magazine cu promotii active · {products.length} produse in catalog
           </div>
           <h1 className="text-4xl md:text-6xl font-black tracking-tight leading-tight mb-4">
-            <span className="text-[var(--foreground)]">Cumpara mai inteligent</span><br/>
+            <span className="text-[var(--foreground)]">Produse cu prețul de azi</span><br/>
             <span className="text-transparent bg-clip-text" style={{backgroundImage:"linear-gradient(135deg, #ddf93c 0%, #ddf93c 100%)"}}>
-              oferte reale, {an}
+              de la magazinele partenere
             </span>
           </h1>
           <p className="text-[var(--text-soft)] text-lg mb-8 max-w-lg mx-auto">

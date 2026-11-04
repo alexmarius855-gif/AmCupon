@@ -14,6 +14,8 @@ import { temaArticol, NUME_TEME } from "@/lib/topFeed";
 import { sectiunePentru, dataFeed, ofertaModel, type ModelCautat, type OfertaModel } from "@/lib/oferteTema";
 import OferteParteneri from "../../components/OferteParteneri";
 import { topPentruTema } from "@/lib/legaturiInterne";
+import { criteriiTema, criteriuInText, temaCriteriiArticol } from "@/lib/criterii";
+import CriteriiTema from "../../components/CriteriiTema";
 
 interface BlogPost {
   slug: string;
@@ -183,7 +185,7 @@ function CasetaOferta({ o }: { o: OfertaModel }) {
   );
 }
 
-function renderContent(content: string, oferte?: Map<string, OfertaModel>) {
+function renderContent(content: string, oferte?: Map<string, OfertaModel>, temaCriterii?: string | null) {
   // Oferta unui model se pune dupa primul paragraf de sub titlul lui (07.10.2026).
   let deAfisat: OfertaModel | null = null;
   // 22.09.2026: blocurile se impart pe linie goala, iar generatoarele scriu adesea
@@ -239,7 +241,19 @@ function renderContent(content: string, oferte?: Map<string, OfertaModel>) {
           )}
           <ul className="list-disc list-inside space-y-1.5 my-4 text-[var(--text-soft)]">
             {items.map((item, j) => (
-              <li key={j}>{parseInline(item, `${key}-li${j}`)}</li>
+              <li key={j}>
+                {parseInline(item, `${key}-li${j}`)}
+                {(() => {
+                  // „1-2 persoane: 3-4 litri" -> produsele de 3-4 litri (lib/criterii.ts).
+                  const c = criteriuInText(temaCriterii ?? null, item);
+                  return c ? (
+                    <>
+                      {" "}
+                      <a href={`/alege/${c.slug}`} className="font-bold text-[var(--accent-text)] hover:underline whitespace-nowrap">Vezi modele &rarr;</a>
+                    </>
+                  ) : null;
+                })()}
+              </li>
             ))}
           </ul>
         </div>
@@ -548,7 +562,7 @@ export default async function ArticolPage({
           )}
 
           <div className="text-base">
-            {renderContent(post.content, oferteModele)}
+            {renderContent(post.content, oferteModele, temaCriteriiArticol(post.slug))}
           </div>
 
           {sectiune && temaArt && (
@@ -557,6 +571,10 @@ export default async function ArticolPage({
               numeTema={temaArt.nume || NUME_TEME[temaArt.tema] || temaArt.tema}
               actualizat={dataFeed()}
             />
+          )}
+
+          {temaCriteriiArticol(post.slug) && (
+            <CriteriiTema lista={criteriiTema(temaCriteriiArticol(post.slug) as string)} titlu="Mergi direct la produsele potrivite" />
           )}
 
           {temaArt && topPentruTema(temaArt.tema) && (

@@ -6,7 +6,7 @@ import { numarMagazine, PesteMagazine } from "@/lib/cifreSite";
 
 export const metadata: Metadata = {
   title: `Toate Magazinele cu Reduceri Romania 2026 — ${Math.floor(numarMagazine() / 100) * 100}+ Parteneri`,
-  description: `Lista completa a celor ${numarMagazine()} de magazine partenere AmCupon.ro, cu coduri de reducere si oferte active. Cauta magazinul preferat sau filtreaza pe categorie. Actualizat zilnic.`,
+  description: `Lista completa a celor ${numarMagazine()} de magazine partenere AmCupon.ro, cu coduri de reducere si oferte active.`,
   keywords: ["toate magazinele reduceri","coduri reducere magazine online romania","lista magazine afiliate","reduceri active romania"],
   alternates: { canonical: "https://amcupon.ro/toate-magazinele" },
   openGraph: {

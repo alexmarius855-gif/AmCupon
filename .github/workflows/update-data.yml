@@ -260,6 +260,28 @@ jobs:
             echo "TWOPEFORMANT_EMAIL nu e setat — skip product feeds"
           fi
 
+      # ── Produse pe o caracteristica (/alege): cautare in feed-urile 2Performant, cu buget de cereri ──
+      - name: Produse pe caracteristici
+        continue-on-error: true
+        working-directory: scripts
+        env:
+          TWOPEFORMANT_USER:  ${{ secrets.TWOPEFORMANT_USER }}
+          TWOPEFORMANT_EMAIL: ${{ secrets.TWOPEFORMANT_EMAIL }}
+          TWOPEFORMANT_PASS:  ${{ secrets.TWOPEFORMANT_PASS }}
+        run: python criterii_produse.py
+
+      # ── Magazine, produse si coduri in Supabase; istoricul de pret se scrie singur ──
+      # Fara secretul SUPABASE_SERVICE_ROLE_KEY scriptul iese curat si site-ul merge mai departe.
+      - name: Instaleaza Node pentru incarcare
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Incarca produsele in Supabase
+        continue-on-error: true
+        env:
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: node scripts/ingest-2p.mts
+
       # ── 6b. Imbogatire produse din promotii active ────────────────────────
       - name: Injecteaza promo-produse cu discount in products.json
         working-directory: scripts
@@ -419,6 +441,7 @@ jobs:
           rc=0
           python telegram_daily.py || rc=1
           python post_telegram.py || rc=1
+          python telegram_oferte_mari.py --trimite || rc=1
           exit $rc
 
       # ── 11. Generator continut social media pe nise ────────────────────────
@@ -563,6 +586,9 @@ jobs:
           git add data/RAPORT-TOP-CASTIG.md            || true
           git add frontend/public/banners.json         || true
           git add frontend/public/top-produse.json     || true
+          git add frontend/public/criterii.json        || true
+          git add data/criterii-verificari.json        || true
+          git add data/telegram-oferte-trimise.json    || true
           git add data/output.json                     || true
           git add data/price_alert_snapshot.json       || true
           git add data/banners_raw_debug.json          || true

@@ -16,7 +16,7 @@ interface Magazin {
 
 export const metadata: Metadata = {
   title: "Cod Reducere Sanatate & Naturiste 2026 — Vitamine",
-  description: "Coduri de reducere si oferte la produse naturiste si suplimente de la magazinele partenere: Pronaturiste, GoldNutrition, Apiland si altele. Vitamine, suplimente, bio.",
+  description: "Coduri de reducere si oferte la produse naturiste si suplimente de la magazinele partenere: Pronaturiste, GoldNutrition, Apiland si altele.",
   keywords: ["cod reducere sanatate","reduceri suplimente","produse naturiste reducere","vitamine ieftine","goldnutrition cod cupon","pronaturiste reducere","suplimente online romania"],
   alternates: { canonical: "https://amcupon.ro/sanatate" },
   openGraph: { title: "Sanatate & Naturiste 2026 | AmCupon.ro", url: "https://amcupon.ro/sanatate", siteName: "AmCupon.ro", locale: "ro_RO", type: "website", images: [{ url: "https://amcupon.ro/og-image.png", width: 1200, height: 630 }] },

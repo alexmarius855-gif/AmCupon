@@ -6,6 +6,7 @@ import { pesteMagazine, PesteMagazine, laParteneri } from "@/lib/cifreSite";
 import { imagineSigura } from "@/lib/topFeed";
 import { campaniiBF } from "@/lib/campaniiBlackFriday";
 import { topuri } from "@/lib/legaturiInterne";
+import { criterii, criteriiPeCategorii } from "@/lib/criterii";
 
 export const metadata: Metadata = {
   title: "AmCupon.ro — Coduri de reducere si oferte actualizate zilnic",
@@ -163,6 +164,8 @@ export default function Page() {
       pesteMagazine={pesteMagazine()}
       ghiduri={ghiduri}
       topuri={listaTopuri}
+      criterii={criterii().map((c) => ({ slug: c.slug, titlu: c.titlu }))}
+      criteriiPeCategorii={criteriiPeCategorii()}
       blackFriday={blackFriday}
     />
   );
