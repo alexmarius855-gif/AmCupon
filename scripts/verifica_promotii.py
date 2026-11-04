@@ -25,10 +25,11 @@ import json
 import os
 import re
 import sys
+from datetime import timezone
 
 from nume_magazin import nume_afisat
-from promotii import (FARA_DATA, PRAG_DATA_ABSURDA, azi_utc, pentru_alta_piata, promotie_pentru_alta_piata,
-                      titlu_in_text, zile_pana_la)
+from promotii import (FARA_DATA, PRAG_DATA_ABSURDA, azi_utc, data_csv, fara_segmente_afiliati, pentru_alta_piata,
+                      promotie_pentru_alta_piata, titlu_in_text, zile_pana_la)
 
 PUBLIC = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "frontend", "public")
 IMPLICIT = os.path.join(PUBLIC, "output.json")
@@ -88,7 +89,8 @@ def verifica_articole(magazine: list, cale_blog: str) -> list:
 
 
 def verifica(magazine: list, azi: str) -> dict:
-    gresit = {"expirate": [], "contor_gresit": [], "contor_fara_data": [], "flaguri": [], "alta_piata": []}
+    gresit = {"expirate": [], "contor_gresit": [], "contor_fara_data": [], "flaguri": [], "alta_piata": [],
+              "neincepute": [], "pentru_afiliati": [], "api_fara_text": []}
     for m in magazine:
         if not isinstance(m, dict):
             continue
@@ -102,6 +104,12 @@ def verifica(magazine: list, azi: str) -> dict:
             if zile is not None and zile > PRAG_DATA_ABSURDA:
                 zile = None
             eticheta = f"{slug}: {(p.get('nume') or '')[:50]}"
+            # Data de start in UTC, comparata cu `azi` in UTC: oferta inceputa azi nu poate pica garda.
+            start = data_csv(str(p.get("incepe") or ""))
+            if start and start.astimezone(timezone.utc).strftime("%Y-%m-%d") > azi:
+                gresit["neincepute"].append(f"{eticheta} (incepe {p.get('incepe')})")
+            if fara_segmente_afiliati(p.get("nume"), m) != p.get("nume"):
+                gresit["pentru_afiliati"].append(eticheta)
             motiv = promotie_pentru_alta_piata(p)
             if motiv:
                 gresit["alta_piata"].append(f"{eticheta} ({motiv})")
@@ -119,6 +127,11 @@ def verifica(magazine: list, azi: str) -> dict:
         if (bool(m.get("are_promotie")), bool(m.get("cod_cupon"))) != asteptat:
             gresit["flaguri"].append(f"{slug} (are_promotie={m.get('are_promotie')}, cod_cupon={m.get('cod_cupon')}, "
                                      f"promotii={len(promotii)})")
+    # Bugul din 04.11.2026: 146 de oferte fara niciun text, fiindca scriptul citea un camp care nu exista.
+    api = [p for m in magazine if isinstance(m, dict) for p in (m.get("promotii") or [])
+           if isinstance(p, dict) and p.get("sursa") == "2performant_api"]
+    if len(api) >= 20 and not any(p.get("descriere") for p in api):
+        gresit["api_fara_text"].append(f"{len(api)} promotii 2Performant, niciuna cu text: s-a schimbat campul?")
     return gresit
 
 

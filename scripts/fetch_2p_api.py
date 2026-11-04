@@ -22,6 +22,8 @@ import time
 from datetime import datetime, timezone
 from urllib.parse import quote, unquote
 
+from promotii import campuri_client, sfarsit_real
+
 import requests as req_lib
 from requests.adapters import HTTPAdapter
 
@@ -367,27 +369,18 @@ def parse_promotii(promotii_raw: list) -> dict:
         zile_ramase = 99
         expira = ""
         if end_raw:
-            try:
-                end_dt = datetime.fromisoformat(str(end_raw).replace("Z", "+00:00"))
-                if end_dt.tzinfo is None:
-                    end_dt = end_dt.replace(tzinfo=timezone.utc)
+            end_dt = sfarsit_real(str(end_raw))
+            if end_dt is not None:
                 delta = (end_dt - now).days
                 if delta < 0:
                     continue  # expirata
                 zile_ramase = max(0, delta)
                 expira = end_dt.strftime("%Y-%m-%d")
-            except Exception:
-                pass
 
-        # Un cod de reducere explicit poate fi in affiliate_challenge sau description
-        # FIX 05.06.2026: API-ul poate intoarce bool/None pe affiliate_challenge ->
-        # len() pe non-string arunca TypeError si OMORA tot scriptul (pipeline mort 5 zile).
-        challenge = p.get("affiliate_challenge") or ""
-        if not isinstance(challenge, str):
-            challenge = ""
-        cod_cupon = ""
-        if challenge and len(challenge) < 30 and re.match(r"^[A-Z0-9_\-]+$", challenge.strip()):
-            cod_cupon = challenge.strip()
+        # Campurile reale ale retelei, masurate 04.11.2026 (scripts/promotii.py::cod_din_camp).
+        # `affiliate_description` si `affiliate_bonus` sunt pentru noi si nu se publica niciodata.
+        nume_promo = p.get("name", "") or p.get("title", "")
+        cod_cupon, descriere = campuri_client(nume_promo, p.get("customer_description"), p.get("coupon"))
 
         # Link-ul ofertei specifice (deep-link) — TREBUIE wrappat afiliat prin quicklink,
         # altfel click-urile pe oferte/cupoane/Deal Zilei pierd comisionul (fix 05.06.2026).
@@ -395,13 +388,15 @@ def parse_promotii(promotii_raw: list) -> dict:
         landing_afiliat = make_afiliat_url(landing_raw) if landing_raw else ""
 
         promotie = {
-            "nume":          p.get("name", "") or p.get("title", ""),
-            "descriere":     p.get("description", "") or p.get("affiliate_bonus", ""),
+            "nume":          nume_promo,
+            "descriere":     descriere,
             "cod_cupon":     cod_cupon,
             "landing_page":  landing_afiliat,
             "zile_ramase":   zile_ramase,
             # Data reala: `zile_ramase` se recalculeaza din ea la merge (scripts/promotii.py).
             "expira":        expira,
+            # Oferta programata asteapta: scripts/promotii.py::curata_promotii o scoate pana incepe.
+            "incepe":        str(p.get("promotion_start") or ""),
             # Fara `sursa` si fara `expira`, merge_platforms.py nu publica promotia (nu stie de unde e).
             "sursa":         "2performant_api",
         }

@@ -21,7 +21,7 @@ import json
 import os
 import re
 import sys
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 
 # Fix encoding pentru terminal Windows (suport diacritice romane)
 if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf-8-sig"):
@@ -44,6 +44,9 @@ DEFAULT_CSV = os.path.join(REPO_ROOT, "data", "promotii_2p.csv")
 # ─── Quicklink 2Performant (vezi CLAUDE.md) ──────────────────────────────────
 # unique TREBUIE sa fie token-ul real al afiliatului, universal pt toate magazinele.
 from urllib.parse import quote
+
+from promotii import (_cheie, campuri_client, data_csv, fara_segmente_afiliati,  # noqa: E402,F401
+                      inceput_in_viitor, ora_ro, sfarsit_real)
 AFF_CODE = "541547473"
 QUICKLINK_UNIQUE = "bb3071a7d"
 
@@ -187,16 +190,13 @@ def parse_csv(csv_path: str) -> list:
                     except Exception:
                         pass
 
-                # Descriere: prefer "for customer", fallback "for affiliate" (mai scurta)
-                desc_client   = row.get("Description (for customer)", "") or ""
-                desc_afiliat  = row.get("Description (for affiliate)", "") or ""
-                descriere = desc_client if desc_client else desc_afiliat
-                # Curata descrierea — sterge newlines multiple, limiteaza la 500 chars
-                descriere = re.sub(r"\n{3,}", "\n\n", descriere).strip()[:500]
-
-                cod_cupon    = (row.get("Coupon code", "") or "").strip()
+                # Doar textul pentru client. Pana pe 04.11.2026, cand lipsea, se publica textul pentru AFILIATI.
                 landing_page = (row.get("Landing Page", "") or "").strip()
-                nume_promo   = (row.get("Promotion name", "") or "").strip()
+                # Inainte de is_duplicate: titlul din API e deja curatat, altfel oferta ar aparea de doua ori.
+                nume_promo   = fara_segmente_afiliati((row.get("Promotion name", "") or "").strip(),
+                                                      {"magazin": slug_magazin})
+                cod_cupon, descriere = campuri_client(nume_promo, row.get("Description (for customer)"),
+                                                      row.get("Coupon code"))
 
                 if not nume_promo:
                     continue
@@ -210,6 +210,7 @@ def parse_csv(csv_path: str) -> list:
                         "landing_page": landing_page,
                         "zile_ramase":  zile_ramase,
                         "expira":       expira_str,
+                        "incepe":       (row.get("Start Date", "") or "").strip(),
                         "sursa":        "csv_import",
                     }
                 })
@@ -223,46 +224,6 @@ def parse_csv(csv_path: str) -> list:
         print(f"  Programate (incep in viitor, nepublicate inca): {len(programate)} promotii "
               f"la {len(set(programate))} magazine")
     return promotii
-
-
-def data_csv(raw: str) -> datetime | None:
-    """„2026-11-20 06:00:00 UTC" -> datetime UTC; None daca lipseste sau nu se poate citi."""
-    if not raw.strip():
-        return None
-    try:
-        d = datetime.fromisoformat(raw.strip().replace(" UTC", "+00:00").replace(" ", "T", 1))
-    except ValueError:
-        return None
-    return d if d.tzinfo else d.replace(tzinfo=timezone.utc)
-
-
-def ora_ro(d: datetime) -> datetime:
-    """UTC -> ora Romaniei (EET/EEST, regula UE: ora de vara intre ultima duminica din martie si ultima
-    duminica din octombrie, la 01:00 UTC). Fara tzdata, care lipseste pe Windows. 28.10 22:00 UTC = 29.10
-    00:00 in Romania — data luata din UTC ar fi pus evoMAG cu o zi mai devreme decat anuntul lui."""
-    def ultima_duminica(luna: int) -> datetime:
-        z = datetime(d.year, luna, 31, 1, tzinfo=timezone.utc)
-        return z.replace(day=31 - (z.weekday() + 1) % 7)
-    vara = ultima_duminica(3) <= d.astimezone(timezone.utc) < ultima_duminica(10)
-    return d.astimezone(timezone(timedelta(hours=3 if vara else 2)))
-
-
-def sfarsit_real(raw: str) -> datetime | None:
-    """Sfarsitul unei promotii, in ora Romaniei. Magazinele aleg doar ZIUA in 2Performant, care o scrie la
-    00:00 ora Romaniei: la Otter, „pana pe 8 noiembrie, ora 23:59" are End Date 2026-11-07 22:00 UTC, adica
-    8.11 00:00. Luata ca atare, oferta disparea cu o zi inainte de final (masurat 04.11.2026 pe textele a 20
-    de campanii: „6-8 noiembrie" -> 7, „2-15 noiembrie" -> 14). 00:00 = toata ziua aceea."""
-    d = data_csv(raw)
-    if d is None:
-        return None
-    ro = ora_ro(d)
-    return ro.replace(hour=23, minute=59) if (ro.hour, ro.minute) == (0, 0) else ro
-
-
-def inceput_in_viitor(start_raw: str, now: datetime) -> bool:
-    """True cand promotia are data de start si ea e dupa `now`. Fara data = activa (ca pana acum)."""
-    d = data_csv(start_raw)
-    return d is not None and d > now
 
 
 # ─── Matching & merge ─────────────────────────────────────────────────────────
@@ -292,6 +253,9 @@ def is_duplicate(existing_promotii: list, promotie_noua: dict) -> bool:
             return True
         # Duplicate dupa nume (similaritate)
         nume_ex = (p.get("nume", "") or "").lower()
+        # Acelasi titlu, oricat de scurt: „Sale", „Flash Sale", „Oferta 1+1" apareau de doua ori (API + CSV).
+        if _cheie(nume_nou) and _cheie(nume_nou) == _cheie(nume_ex):
+            return True
         if len(nume_nou) > 10 and len(nume_ex) > 10:
             # Daca 80% din cuvinte coincid, e duplicat
             w_nou = set(re.split(r"\W+", nume_nou))

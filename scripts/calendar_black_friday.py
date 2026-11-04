@@ -26,12 +26,10 @@ import sys
 from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(__file__))
-from import_csv_promotii import data_csv, find_magazin, norm_slug, ora_ro, sfarsit_real  # noqa: E402
+from import_csv_promotii import find_magazin, norm_slug  # noqa: E402
 from nume_magazin import nume_afisat  # noqa: E402
-from promotii import (  # noqa: E402
-    RE_PENTRU_AFILIATI, fara_coduri, fara_markdown, pentru_alta_piata, promotie_pentru_alta_piata,
-    repara_mojibake, titlu_in_text,
-)
+from promotii import (RE_EMOJI, data_csv, descriere_publica, fara_segmente_afiliati,  # noqa: E402
+                      inceput_in_viitor, ora_ro, promotie_pentru_alta_piata, sfarsit_real, titlu_in_text)
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 CSV = os.path.join(ROOT, "data", "promotii_2p.csv")
@@ -41,24 +39,8 @@ IESIRE = os.path.join(ROOT, "frontend", "public", "black-friday-parteneri.json")
 RE_BF = re.compile(r"\b(black\s*(friday|week|month|days?|weekend)|cyber\s*(monday|week))\b", re.I)
 # Anuntul DESPRE campanie nu e campania („Teasing: Acces exclusiv la Black Friday pe 5 noiembrie!").
 RE_ANUNT = re.compile(r"\b(teasing|teaser|pre-?black|in curand|în curând|pregate\w*|pregăte\w*)\b", re.I)
-RE_EMOJI = re.compile("[\U0001F000-\U0001FAFF☀-➿️]")
 
 
-# Campul „pentru client" din 2P e scris des tot pentru noi: „Bună ziua, ... Clienții pe care îi aduceți",
-# „Am mărit comisionul", „Avantaje care te ajută să convertești". Fraza respectivă nu se publică.
-RE_CATRE_AFILIATI = re.compile(
-    r"\b(bun[aă] ziua|bun[aă] tuturor|salutare|hi everyone|clien[tț]ii pe care|aduce[tț]i|comision\w*|"
-    r"converte\w*|converti\w*|afilia\w*|bannere?|landing|dvs\.?|v[aă] rug[aă]m|colabor\w*|clientul|"
-    r"dorim s[aă] v[aă]|pentru voi|oportunitate|de a genera|genera[tț]i)\b", re.I)
-# Promisiuni pe care nu le putem susține, chiar dacă le scrie magazinul (regula „zero informații eronate").
-RE_PROMISIUNE = re.compile(r"\b(garantat\w*|garan[tț]ia celui|cel mai mic pre[tț]|cele mai mici pre[tț]uri|"
-                           r"cele? mai (mari?|bune)|celor mai mari|cel mai mare|cea mai (mare|a[sș]teptat[aă])|imbatabil\w*)\b", re.I)
-# „folosind codul: " rămas fără cod, după ce codul a fost scos din text. NU „fără cod": acolo e o informație.
-RE_COD_ORFAN = re.compile(r"\s*\b(?:folosind|cu|utilizând|aplic[aâ]nd)\s+(?:codul|cod)(?:\s+de\s+reducere)?\s*:?\s*(?=[.!,;]|[A-ZĂÂÎȘȚ]|$)")
-RE_SALUT = re.compile(r"^(?:bun[aă]|salut|dragi \w+)\s*[,!]\s*", re.I)
-RE_CUM_FUNCTIONEAZA = re.compile(r"^cum func[tț]ioneaz[aă]\s*:\s*-?\s*", re.I)
-RE_LINK_BRUT = re.compile(r"(?:>>+\s*)?(?:https?://|www\.)\S+", re.I)
-MAX_DESCRIERE = 450
 # Paginile /black-friday/categorie/<slug>: doar cu cel putin MIN_CATEGORIE campanii, ca lista sa merite o
 # pagina. „marketplace" nu e o categorie pe care o cauta cineva. Sursa unica: sitemap-ul, pagina si
 # IndexNow citesc lista din fisierul generat.
@@ -76,31 +58,6 @@ CATEGORII_BF = {
     "bijuterii": "bijuterii",
 }
 MIN_CATEGORIE = 3
-
-
-def descriere_publica(desc: str, promo: dict) -> str:
-    """Textul magazinului despre campanie, doar ce e pentru cumpărător: fără coduri în clar (le vede pe
-    pagina magazinului, după linkul plătit), fără fraze adresate afiliaților, fără promisiuni."""
-    t = RE_EMOJI.sub("", fara_markdown(repara_mojibake(desc or "")))
-    # Linkurile brute din text („>> https://noriel.ro/oferte") ar trimite omul la magazin fara comision.
-    t = re.sub(r"\s+", " ", RE_LINK_BRUT.sub(" ", t)).strip()
-    if not t or pentru_alta_piata(t):
-        return ""
-    fraze = [f for f in re.split(r"(?<=[.!?])\s+", t)
-             if not RE_PENTRU_AFILIATI.search(f) and not RE_CATRE_AFILIATI.search(f) and not RE_PROMISIUNE.search(f)]
-    t = fara_coduri(" ".join(fraze), promo)
-    # dacă după codul scos urmează o frază nouă, punem punctul care lipsea
-    t = RE_COD_ORFAN.sub(lambda m: ". " if m.end() < len(m.string) and m.string[m.end()].isupper() else "", t)
-    t = RE_CUM_FUNCTIONEAZA.sub("", RE_SALUT.sub("", re.sub(r"\s+-\s+", ". ", t).strip(" -–|:")))
-    t = re.sub(r"\s*\.\s*\.", ".", t).lstrip(" .")
-    if t[:1].islower():
-        t = t[0].upper() + t[1:]
-    if len(t) <= MAX_DESCRIERE:
-        return t
-    # tăiem la sfârșit de frază, nu la mijlocul unui cuvânt
-    taiat = t[:MAX_DESCRIERE]
-    capat = max(taiat.rfind(". "), taiat.rfind("! "), taiat.rfind("? "))
-    return taiat[:capat + 1] if capat > 120 else ""
 
 
 def link_platit(m: dict) -> bool:
@@ -125,7 +82,11 @@ def campanii(randuri: list[dict], magazine: list[dict], an: int) -> list[dict]:
         idx = find_magazin(magazine, norm_slug(r.get("Affiliate program") or ""))
         if idx is None or not link_platit(magazine[idx]):
             continue
-        promo = {"nume": nume_p, "descriere": desc, "cod_cupon": (r.get("Coupon code") or "").strip()}
+        # „Voucher Black Friday 6-15 Noiembrie + comision HAVIT 10%": bucata pentru afiliati nu se publica.
+        nume_curat = fara_segmente_afiliati(nume_p, magazine[idx])
+        if not nume_curat:
+            continue
+        promo = {"nume": nume_curat, "descriere": desc, "cod_cupon": (r.get("Coupon code") or "").strip()}
         if promotie_pentru_alta_piata(promo):
             continue
         slug = magazine[idx]["magazin"]
@@ -272,7 +233,6 @@ def test() -> int:
             [r("doctorshield.ro", "\U0001F525 Black Friday pe DoctorShield",
                "2026-11-20 06:00:00 UTC", "2026-11-30 08:00:00 UTC")], mag, 2026)], ["Black Friday pe DoctorShield"]),
     ]
-    from import_csv_promotii import inceput_in_viitor
     acum = datetime(2026, 11, 1, 12, tzinfo=timezone.utc)
     asteptari += [
         ("importul tine promotia programata", inceput_in_viitor("2026-11-20 06:00:00 UTC", acum), True),

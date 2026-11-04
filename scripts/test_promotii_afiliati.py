@@ -228,5 +228,97 @@ verifica("curata_promotii scoate promotia, nu magazinul; flag-urile se recalcule
           len(stp["alta_piata"]), stp["magazine_golite"]),
          (["Deals Page: Reduceri de 10% prin codul OFERTE01"], [], False, 2, ["italki.com"]))
 
+
+# ─── Calea API 2Performant (04.11.2026): oferte programate, ultima zi, text si cod pentru client ──
+from promotii import (campuri_client, cod_din_camp, descriere_publica, fara_segmente_afiliati,  # noqa: E402
+                      sfarsit_real)
+from fetch_2p_api import parse_promotii  # noqa: E402
+
+verifica("API: sfarsitul la 00:00 ora Romaniei inseamna toata ziua aceea",
+         sfarsit_real("2026-11-07T22:00:00Z").strftime("%Y-%m-%d %H:%M"), "2026-11-08 23:59")
+verifica("CSV: acelasi moment, acelasi rezultat",
+         sfarsit_real("2026-11-07 22:00:00 UTC").strftime("%Y-%m-%d %H:%M"), "2026-11-08 23:59")
+verifica("data care nu se poate citi = necunoscuta", sfarsit_real("mai incolo"), None)
+
+for raw, asteptat in {"REGATA5": "REGATA5", " epotion10 ": "epotion10", "5MINUS": "5MINUS", "10": "",
+                      "nu e necesar": "", "": "", None: "", True: ""}.items():
+    verifica(f"cod din camp: {raw!r}", cod_din_camp(raw), asteptat)
+
+UA = M("underarmour.ro")
+for nume_caz, titlu, m_caz, asteptat in [
+    ("bucata cu comision se scoate", "Voucher Black Friday 6-15 Noiembrie + comision HAVIT 10%", None,
+     "Voucher Black Friday 6-15 Noiembrie"),
+    ("mai multe bucati pentru afiliati", "Reduceri de iarna | Comision 8% | Coș mediu peste 1.000 lei", None, "Reduceri de iarna"),
+    ("ramane doar numele magazinului", "Comision de afiliere majorat | Under Armour", UA, None),
+    ("doar pentru afiliati", "Super challenge Otter in noiembrie", None, None),
+    ("capcana: fara comision la banca ramane", "Card fără comision | Cont gratuit", None, "Card fără comision | Cont gratuit"),
+    ("capcana: 0% comision ramane", "0% comision la schimb valutar", None, "0% comision la schimb valutar"),
+    ("capcana: comision 0 ramane", "Comision 0 la transferuri", None, "Comision 0 la transferuri"),
+    ("capcana: challenge cu reducere ramane", "Fitness Challenge -20%", None, "Fitness Challenge -20%"),
+    ("capcana: 1 + 1 nu se rupe", "Oferta 1 + 1 gratis", None, "Oferta 1 + 1 gratis"),
+    ("titlu obisnuit neatins", "Black Friday: -30% la tot", None, "Black Friday: -30% la tot"),
+]:
+    verifica(f"segmente — {nume_caz}", fara_segmente_afiliati(titlu, m_caz), asteptat)
+
+for nume_caz, text, asteptat in [
+    ("fraza cu comision iese", "Reducere 30% la tot. Fiecare comandă generată îți aduce 19% comision.", "Reducere 30% la tot."),
+    ("fara emoji si fara link", "👠 Reducere 20% >> https://exemplu.ro/oferta", "Reducere 20%"),
+    ("textul care repeta titlul nu se mai afiseaza", "Oferta 1+1", ""),
+    ("fraza care ii cere afiliatului sa promoveze iese", "Promovează Abonamentul ca soluția lunară. Livrare gratuită.", "Livrare gratuită."),
+    ("semnatura catre afiliati iese", "Reducere 50%. Link promotie: Spor la conversii, echipa LIBRARIE.net", "Reducere 50%."),
+    ("doar semnatura = fara text", "Echipa LIBRARIE.net", ""),
+    ("semnatura lunga iese", "Reducere 20%. Echipa NUVIA *The Nature of True Beauty*", "Reducere 20%."),
+    ("capcana: intervalul de date ramane intreg", "Intra pe site in perioada 2 - 8 noiembrie.", "Intra pe site in perioada 2 - 8 noiembrie."),
+    ("capcana: liniuta intre cuvinte ramane fraza", "Reducere mare - toate produsele", "Reducere mare. toate produsele"),
+    ("capcana: ... ramane", "Preturile... in umbra", "Preturile... in umbra"),
+    ("spatiul ramas dupa emoji", "Imprimante 🖨️, cititoare", "Imprimante, cititoare"),
+]:
+    verifica(f"text client — {nume_caz}", descriere_publica(text, {"nume": "Oferta 1+1", "cod_cupon": ""}), asteptat)
+
+verifica("codul scris in text se muta in camp si dispare din text",
+         campuri_client("Reducere 10%", "Reducere la tot. Introdu codul Intim10 la finalizare.", None)[0], "Intim10")
+verifica("fara cod in clar in descriere",
+         "Intim10" in campuri_client("Reducere 10%", "Reducere la tot. Introdu codul Intim10 la finalizare.", None)[1], False)
+verifica("ghilimelele ramase dupa cod dispar",
+         campuri_client('Extra 15%', 'Extra 15% cu codul "SALE" la produsele reduse.', "SALE"),
+         ("SALE", "Extra 15% la produsele reduse."))
+verifica("capcana: fara cod ramane informatie",
+         campuri_client("Reducere 45%", "Reduceri aplicate direct in pret, fără cod.", None),
+         ("", "Reduceri aplicate direct in pret, fără cod."))
+
+mprog = [M("programata.ro", dict(P("Black Friday"), incepe="2026-11-20T06:00:00Z", expira="2026-11-30"),
+           dict(P("Reducere 10%"), incepe="2026-10-01T06:00:00Z", expira="2026-11-30"))]
+stp = curata_promotii(mprog, azi="2026-11-04")
+verifica("oferta programata nu se publica, cea inceputa ramane",
+         ([x["nume"] for x in mprog[0]["promotii"]], stp["neincepute"]), (["Reducere 10%"], 1))
+mprog = [M("programata.ro", dict(P("Black Friday"), incepe="2026-11-20T06:00:00Z", expira="2026-11-30"))]
+curata_promotii(mprog, azi="2026-11-20")
+verifica("oferta apare singura in ziua de start", [x["nume"] for x in mprog[0]["promotii"]], ["Black Friday"])
+
+mnim = [M("underarmour.ro", dict(P("Under Armour"), expira="2026-11-30"),
+          dict(P("Under Armour", cod="UA10"), expira="2026-11-30"),
+          dict(P("Black Friday"), expira="2026-11-30"))]
+stp = curata_promotii(mnim, azi="2026-11-04")
+verifica("oferta care spune doar numele magazinului iese; cea cu cod ramane",
+         ([(x["nume"], x.get("cod_cupon")) for x in mnim[0]["promotii"]], stp["fara_continut"]),
+         ([("Under Armour", "UA10"), ("Black Friday", "")], 1))
+from import_csv_promotii import is_duplicate  # noqa: E402
+verifica("titlu scurt identic = dublura", is_duplicate([{"nume": "Flash Sale"}], {"nume": "FLASH sale"}), True)
+verifica("capcana: titluri scurte diferite nu sunt dubluri", is_duplicate([{"nume": "Sale"}], {"nume": "Flash Sale"}), False)
+verifica("text pentru afiliati in engleza iese",
+         descriere_publica("Your audience can save $300 instantly. Free shipping.", {"nume": "X"}), "Free shipping.")
+
+hrt = parse_promotii([{
+    "name": "Reducere 10% la tot", "customer_description": "Reducere 10% la tot cosul, indiferent de valoare.",
+    "affiliate_description": "Comision dublu pentru afiliati in noiembrie.", "affiliate_bonus": True,
+    "affiliate_challenge": True, "coupon": "JOLLY10", "promotion_start": "2026-11-20T06:00:00Z",
+    "promotion_end": "2099-11-07T22:00:00Z", "campaign_slug": "x", "program": {"slug": "exemplu.ro"},
+    "landing_page_link": "",
+}])
+pa = list(hrt.values())[0][0]
+verifica("API: se citesc textul pentru client si codul, nu campurile pentru afiliati",
+         (pa["descriere"], pa["cod_cupon"], pa["incepe"], pa["expira"]),
+         ("Reducere 10% la tot cosul, indiferent de valoare.", "JOLLY10", "2026-11-20T06:00:00Z", "2099-11-08"))
+
 print(f"\n  {esecuri} ESECURI" if esecuri else "\n  Toate testele trec.")
 sys.exit(1 if esecuri else 0)

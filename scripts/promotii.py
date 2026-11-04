@@ -21,7 +21,7 @@ de magazin se recalculeaza din promotiile ramase.
 """
 
 import re
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 
 from reconcile_impact_links import domain_from_url, etld1
 
@@ -61,6 +61,16 @@ RE_PENTRU_AFILIATI = re.compile(r"""
     | \b(?:drive|boost)\s+(?:more\s+)?conversions\b
     | \bstart\s+promoting\b
     | \bupdate\s+your\s+(?:content|links|banners)\b
+    | (?<![\d.,])[1-9]\d?(?:[.,]\d+)?\s*%\s*comision     # „îți aduce 19% comision" (0% comision e pentru client)
+    | \bcomision\w*\s+(?:de\s+)?[1-9]\d?(?:[.,]\d+)?\s*%  # „Comision 8%"
+    | \bcomision\w*\s+(?:de\s+afiliere|acordat|majorat|m[aă]rit|crescut)
+    | \bm[aă]rit\s+comision
+    | ^\W*promov(?:ea|a)z[aă]\b                       # „Promovează Abonamentul Femi.Eko ca soluția..."
+    | \byour\s+audience\b                            # „Your audience can save $300" (Impact)
+    | \bq[1-4]\s+opportunity\b                        # „Q4 opportunity: Promovează ștergătoarele"
+    | \bofer[aă]-le\s+clien                           # „Oferă-le clienților tăi"
+    | \bspor\s+la\s+conversii                         # „Spor la conversii, echipa LIBRARIE.net"
+    | \bpartenerii?\s+no[sș]tri\b                     # „Avem vești bune pentru partenerii noștri"
 """, re.I | re.X)
 # Titlu care incepe cu castigul („Earn More with LWR01") — conteaza DOAR daca promotia are deja
 # un semnal de mai sus. Singur ar prinde si concursurile pentru cumparatori („Câștigă o vacanță").
@@ -226,7 +236,7 @@ _RE_TITLU_COD = re.compile(r"[A-Z0-9][A-Z0-9_-]{2,}", re.I)
 # numeste doua coduri, titlul unul); doua coduri diferite in acelasi text = nu ghicim.
 _RE_COD_IN_TEXT = re.compile(
     r"(?i:\b(?:(?:coupon|promo|discount|voucher)\s*)?(?:code|codul|cod))\s*[:：–—-]?\s*"
-    r"([A-Z0-9][A-Z0-9_-]{2,})(?![\w-])")
+    r"([A-Za-z0-9][A-Za-z0-9_-]{2,})(?![\w-])")
 _NU_SUNT_CODURI = {"NEEDED", "REQUIRED", "FREE", "SALE", "SHIPPING", "DEAL", "DEALS", "OFFER", "ONLY",
                    "APPLIED", "AUTO", "AUTOMATIC", "NONE", "BELOW", "ABOVE", "HERE", "LEI", "RON", "EUR", "USD"}
 
@@ -271,15 +281,169 @@ def valoare_zero(p: dict) -> bool:
     return bool(_RE_VALOARE_ZERO.search(f"{p.get('nume') or ''} {p.get('descriere') or ''}"))
 
 
+# ─── Datele din 2Performant: acelasi moment, oricare ar fi drumul ─────────────────
+# API-ul scrie „2026-11-07T22:00:00Z", exportul CSV „2026-11-07 22:00:00 UTC". Pana pe 04.11.2026 doar
+# CSV-ul trecea prin regulile de mai jos: 34 din cele 39 de oferte programate erau deja pe site prin API
+# (Black Friday la DoctorShield, care incepe pe 20.11), iar ofertele API dispareau cu o zi inainte de final.
+def data_csv(raw: str) -> datetime | None:
+    """Oricare dintre cele doua formate -> datetime cu fus orar; None daca lipseste sau nu se poate citi."""
+    if not isinstance(raw, str) or not raw.strip():
+        return None
+    text = raw.strip().replace(" UTC", "+00:00").replace("Z", "+00:00").replace(" ", "T", 1)
+    try:
+        d = datetime.fromisoformat(text)
+    except ValueError:
+        return None
+    return d if d.tzinfo else d.replace(tzinfo=timezone.utc)
+
+
+def ora_ro(d: datetime) -> datetime:
+    """UTC -> ora Romaniei (EET/EEST, regula UE: ora de vara intre ultima duminica din martie si ultima
+    duminica din octombrie, la 01:00 UTC). Fara tzdata, care lipseste pe Windows. 28.10 22:00 UTC = 29.10
+    00:00 in Romania — data luata din UTC ar fi pus evoMAG cu o zi mai devreme decat anuntul lui."""
+    def ultima_duminica(luna: int) -> datetime:
+        z = datetime(d.year, luna, 31, 1, tzinfo=timezone.utc)
+        return z.replace(day=31 - (z.weekday() + 1) % 7)
+    vara = ultima_duminica(3) <= d.astimezone(timezone.utc) < ultima_duminica(10)
+    return d.astimezone(timezone(timedelta(hours=3 if vara else 2)))
+
+
+def sfarsit_real(raw: str) -> datetime | None:
+    """Sfarsitul unei promotii, in ora Romaniei. Magazinele aleg doar ZIUA in 2Performant, care o scrie la
+    00:00 ora Romaniei: la Otter, „pana pe 8 noiembrie, ora 23:59" are sfarsitul 2026-11-07 22:00 UTC, adica
+    8.11 00:00. Luata ca atare, oferta disparea cu o zi inainte de final (masurat 04.11.2026 pe textele a 20
+    de campanii: „6-8 noiembrie" -> 7, „2-15 noiembrie" -> 14). 00:00 = toata ziua aceea."""
+    d = data_csv(raw)
+    if d is None:
+        return None
+    ro = ora_ro(d)
+    return ro.replace(hour=23, minute=59) if (ro.hour, ro.minute) == (0, 0) else ro
+
+
+def inceput_in_viitor(start_raw: str, now: datetime) -> bool:
+    """True cand promotia are data de start si ea e dupa `now`. Fara data = activa (ca pana acum)."""
+    d = data_csv(start_raw)
+    return d is not None and d > now
+
+
+# ─── Campurile 2Performant pentru cumparator ──────────────────────────────────
+# Masurat 04.11.2026: API-ul trimitea text pentru client la 167 din 171 de promotii si cod la 24, dar
+# fetch_2p_api.py citea `description` (nu exista) si `affiliate_challenge` (e un da/nu, nu un cod). Rezultat:
+# 146 de oferte pe site, 0 cu descriere, 0 cu cod. Garda: verifica_promotii.py::api_fara_text.
+def cod_din_camp(raw) -> str:
+    """Codul din campul retelei, daca arata a cod. „10" la pickndazzle.com sau o fraza nu sunt coduri pe care
+    un om sa le poata folosi: fara ele, oferta ramane o oferta (regula „zero informatii eronate")."""
+    if not isinstance(raw, str):
+        return ""
+    cod = raw.strip()
+    return cod if re.fullmatch(r"[A-Za-z0-9_\-]{3,30}", cod) and re.search(r"[A-Za-z]", cod) else ""
+
+
+RE_EMOJI = re.compile("[\U0001F000-\U0001FAFF☀-➿️]")
+
+
+# Campul „pentru client" din 2P e scris des tot pentru noi: „Bună ziua, ... Clienții pe care îi aduceți",
+# „Am mărit comisionul", „Avantaje care te ajută să convertești". Fraza respectivă nu se publică.
+RE_CATRE_AFILIATI = re.compile(
+    r"\b(bun[aă] ziua|bun[aă] tuturor|salutare|hi everyone|clien[tț]ii pe care|aduce[tț]i|comision\w*|"
+    r"converte\w*|converti\w*|conversii?|link\s+promo[tț]ie|afilia\w*|bannere?|landing|dvs\.?|v[aă] rug[aă]m|colabor\w*|clientul|"
+    r"dorim s[aă] v[aă]|pentru voi|oportunitate|de a genera|genera[tț]i)\b", re.I)
+# Promisiuni pe care nu le putem susține, chiar dacă le scrie magazinul (regula „zero informații eronate").
+RE_PROMISIUNE = re.compile(r"\b(garantat\w*|garan[tț]ia celui|cel mai mic pre[tț]|cele mai mici pre[tț]uri|"
+                           r"cele? mai (mari?|bune)|celor mai mari|cel mai mare|cea mai (mare|a[sș]teptat[aă])|imbatabil\w*)\b", re.I)
+# „folosind codul: " rămas fără cod, după ce codul a fost scos din text. NU „fără cod": acolo e o informație.
+RE_COD_ORFAN = re.compile(r"\s*\b(?:folosind|cu|utilizând|aplic[aâ]nd)\s+(?:codul|cod)(?:\s+de\s+reducere)?\s*:?\s*(?=[.!,;]|[A-ZĂÂÎȘȚ]|$)")
+RE_SALUT = re.compile(r"^(?:bun[aă]|salut|dragi \w+)\s*[,!]\s*", re.I)
+RE_CUM_FUNCTIONEAZA = re.compile(r"^cum func[tț]ioneaz[aă]\s*:\s*-?\s*", re.I)
+# Semnatura unui mesaj catre afiliati: „Echipa LIBRARIE.net", „Cu drag, Echipa Under Armour".
+RE_SEMNATURA = re.compile(r"^\W*(?:cu drag\b|echipa(?:\s+\S+){1,8}\s*$)", re.I)
+# Ce ramane cand codul scos statea intre ghilimele: „Extra 15% cu codul \"\" la produsele...".
+RE_GHILIMELE_GOALE = re.compile(r"(?:\s*\b(?:cu\s+)?(?:codul|cod)\b)?\s*[\"„“”«»'’]\s*[\"„“”«»'’]")
+RE_LINK_BRUT = re.compile(r"(?:>>+\s*)?(?:https?://|www\.)\S+", re.I)
+MAX_DESCRIERE = 450
+
+
+def descriere_publica(desc: str, promo: dict) -> str:
+    """Textul magazinului despre campanie, doar ce e pentru cumpărător: fără coduri în clar (le vede pe
+    pagina magazinului, după linkul plătit), fără fraze adresate afiliaților, fără promisiuni."""
+    t = RE_EMOJI.sub("", fara_markdown(repara_mojibake(desc or "")))
+    # Linkurile brute din text („>> https://noriel.ro/oferte") ar trimite omul la magazin fara comision.
+    t = re.sub(r"\s+", " ", RE_LINK_BRUT.sub(" ", t)).strip()
+    t = re.sub(r"\s+([,.;:!?])", r"\1", t)  # „etichete , cititoare": spatiul ramas dupa emoji scos
+    if not t or pentru_alta_piata(t):
+        return ""
+    fraze = [f for f in re.split(r"(?<=[.!?])\s+", t)
+             if not RE_PENTRU_AFILIATI.search(f) and not RE_CATRE_AFILIATI.search(f)
+             and not RE_PROMISIUNE.search(f) and not RE_SEMNATURA.search(f)]
+    t = RE_GHILIMELE_GOALE.sub("", fara_coduri(" ".join(fraze), promo))
+    # dacă după codul scos urmează o frază nouă, punem punctul care lipsea
+    t = RE_COD_ORFAN.sub(lambda m: ". " if m.end() < len(m.string) and m.string[m.end()].isupper() else "", t)
+    t = RE_CUM_FUNCTIONEAZA.sub("", RE_SALUT.sub("", re.sub(r"(?<!\d)\s+-\s+(?!\d)", ". ", t).strip(" -–|:")))
+    t = re.sub(r"\.\s+\.", ".", t).lstrip(" .")
+    if t[:1].islower():
+        t = t[0].upper() + t[1:]
+    if _cheie(t) == _cheie(promo.get("nume") or ""):
+        return ""  # „Oferta 1+1" / „Oferta 1+1": textul doar repeta titlul
+    if len(t) <= MAX_DESCRIERE:
+        return t
+    # tăiem la sfârșit de frază, nu la mijlocul unui cuvânt
+    taiat = t[:MAX_DESCRIERE]
+    capat = max(taiat.rfind(". "), taiat.rfind("! "), taiat.rfind("? "))
+    return taiat[:capat + 1] if capat > 120 else ""
+
+
+def campuri_client(nume: str, text_client: str, coupon) -> tuple:
+    """(cod, descriere) dintr-o promotie 2Performant, aceeasi regula pentru API si pentru CSV. Codul numit
+    doar in text („Introdu codul Intim10") se muta in `cod_cupon` INAINTE sa fie scos din descriere."""
+    promo = {"nume": nume or "", "descriere": text_client or "", "cod_cupon": cod_din_camp(coupon)}
+    cod_din_titlu(promo)
+    return promo["cod_cupon"], descriere_publica(promo["descriere"], promo)
+
+
+# ─── Titluri scrise pe bucati, pentru afiliati si pentru cumparatori ──────────
+# Masurat 04.11.2026, publicate pe site:
+#   · kinderauto.ro    „... | Comision 8% | Coș mediu peste 1.000 ..."
+#   · underarmour.ro   „Comision de afiliere majorat ... | Under Armour"
+#   · printingmall.ro  „Voucher Black Friday 6-15 Noiembrie + comision HAVIT 10%"
+#   · otter.ro         „Super challenge Otter in noiembrie"
+# „Fără comision" la o banca e o informatie pentru client si ramane. O bucata cu reducere („Fitness Challenge
+# -20%") tot pentru client e.
+RE_SEGMENT_AFILIATI = re.compile(
+    r"\bcomision\w*|\bco[sș]\w*\s+mediu\b|\bconversii\b|\bafilia\w*"
+    r"|^(?!.*(?:\d\s*%|reducer|discount|\boff\b)).*\bchallenge\b", re.I)
+RE_COMISION_CLIENT = re.compile(
+    r"\bf[aă]r[aă]\s+comision|\b0\s*%\s*comision|\bcomision\w*\s+(?:de\s+)?0(?![\d.,])|\bzero\s+comision", re.I)
+
+
+def fara_segmente_afiliati(nume, m: dict = None):
+    """Titlul fara bucatile scrise pentru afiliati. Neatins cand n-are niciuna. None cand nu ramane nimic
+    (sau doar numele magazinului): atunci nu e o oferta, e un anunt pentru afiliati."""
+    if not isinstance(nume, str):
+        return nume
+
+    def pentru_afiliati(s: str) -> bool:
+        return bool(RE_SEGMENT_AFILIATI.search(s)) and not RE_COMISION_CLIENT.search(s)
+
+    parti = [s for s in re.split(r"\s*\|\s*|\s+\+\s+", nume) if s.strip()]
+    if not any(pentru_afiliati(s) for s in parti):
+        return nume
+    ramase = [s.strip() for s in parti if not pentru_afiliati(s)]
+    if not ramase or (m and len(ramase) == 1 and _doar_numele_magazinului(ramase[0], m)):
+        return None
+    return " | ".join(ramase)
+
+
 def curata_promotii(magazine: list, azi: str = None) -> dict:
     """In-place. Scoate promotiile expirate, pe cele scrise pentru afiliati si pe cele pentru alta
     piata (alta limba / moneda altei tari — pentru_alta_piata), curata textul
     (markdown, fraze pentru afiliati), recalculeaza `zile_ramase` din `expira` si flag-urile de
     magazin. Idempotent. Intoarce ce a schimbat, ca sa se vada in log."""
+    # Cu `azi` dat (teste, istoric): orice a inceput pana la sfarsitul acelei zile. Altfel, momentul rularii.
+    acum = datetime.now(timezone.utc) if azi is None else datetime.fromisoformat(f"{azi}T23:59:59+00:00")
     azi = azi or azi_utc()
     st = {"expirate": 0, "zile_recalculate": 0, "fara_data": 0, "data_absurda": 0, "flaguri": 0,
           "markdown": 0, "mojibake": 0, "afiliati_scoase": [], "afiliati_curatate": 0, "magazine_golite": [],
-          "cod_din_titlu": 0, "valoare_zero": 0, "alta_piata": []}
+          "cod_din_titlu": 0, "valoare_zero": 0, "alta_piata": [], "neincepute": 0, "fara_continut": 0}
     for m in magazine:
         if not isinstance(m, dict):
             continue
@@ -300,6 +464,24 @@ def curata_promotii(magazine: list, azi: str = None) -> dict:
                     if curat != p[k]:
                         p[k] = curat
                         st["markdown"] += 1
+            # Oferta programata nu se arata inca: omul ar ajunge pe un site fara reducere.
+            if inceput_in_viitor(str(p.get("incepe") or ""), acum):
+                st["neincepute"] += 1
+                continue
+            if isinstance(p.get("nume"), str) and RE_EMOJI.search(p["nume"]):
+                p["nume"] = RE_EMOJI.sub("", p["nume"]).strip() or p["nume"]
+            nume_curat = fara_segmente_afiliati(p.get("nume"), m)
+            if nume_curat is None:
+                st["afiliati_scoase"].append(f"{m.get('magazin', '?')} (titlul e pentru afiliati)")
+                continue
+            if nume_curat != p.get("nume"):
+                p["nume"] = nume_curat
+                st["afiliati_curatate"] += 1
+            # „Under Armour", fara text si fara cod: nu spune nimic, deci nu e o oferta.
+            if (_doar_numele_magazinului(p.get("nume") or "", m) and not str(p.get("descriere") or "").strip()
+                    and not str(p.get("cod_cupon") or "").strip()):
+                st["fara_continut"] += 1
+                continue
             if valoare_zero(p):
                 st["valoare_zero"] += 1
                 continue
@@ -348,7 +530,9 @@ def curata_promotii(magazine: list, azi: str = None) -> dict:
 
 def raport(st: dict) -> str:
     golite = st["magazine_golite"]
-    return (f"promotii expirate scoase: {st['expirate']}, zile recalculate: {st['zile_recalculate']}, "
+    return (f"promotii expirate scoase: {st['expirate']}, programate (nu au inceput), nepublicate inca: "
+            f"{st.get('neincepute', 0)}, fara continut scoase: {st.get('fara_continut', 0)}, "
+            f"zile recalculate: {st['zile_recalculate']}, "
             f"date absurde (>3 ani) tratate ca necunoscute: {st['data_absurda']}, "
             f"fara data (fara contor): {st['fara_data']}, flaguri de magazin corectate: {st['flaguri']}, "
             f"markdown curatat: {st['markdown']}, texte cu caractere stricate reparate: {st['mojibake']}, "
