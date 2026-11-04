@@ -85,13 +85,20 @@ export function criteriiTema(tema: string): Criteriu[] {
 }
 
 /** Temele, cu criteriile lor, pentru pagina /alege. */
+const ORDINE_TEME = ["saltele", "biciclete-electrice", "cafetiere", "laptopuri", "aer-conditionat", "televizoare", "frigidere", "masini-de-spalat", "monitoare", "scaune-birou"];
+
 export function temeCriterii(): { tema: string; nume: string; criterii: Criteriu[] }[] {
   const harta = new Map<string, { tema: string; nume: string; criterii: Criteriu[] }>();
   for (const c of criterii()) {
     if (!harta.has(c.tema)) harta.set(c.tema, { tema: c.tema, nume: c.tema_nume, criterii: [] });
     harta.get(c.tema)?.criterii.push(c);
   }
-  return [...harta.values()];
+  // Intai temele cu cosul cel mai mare: acolo o singura vanzare conteaza cel mai mult.
+  const rang = (tema: string) => {
+    const i = ORDINE_TEME.indexOf(tema);
+    return i < 0 ? ORDINE_TEME.length : i;
+  };
+  return [...harta.values()].sort((a, b) => rang(a.tema) - rang(b.tema));
 }
 
 /**
