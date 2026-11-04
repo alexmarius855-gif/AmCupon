@@ -1,31 +1,31 @@
 {
- "_nota": "Generat de scripts/calendar_black_friday.py din promotiile anuntate de magazine in 2Performant (data/promotii_2p.csv). Doar parteneri cu link platit. Nu edita de mana.",
+ "_nota": "Generat de scripts/calendar_black_friday.py din promotiile anuntate de magazine in 2Performant (data/promotii_2p.csv si ofertele 2P active din output.json). Doar parteneri cu link platit. Nu edita de mana.",
  "generat": "2026-11-04",
  "categorii": [
   {
    "slug": "casa-gradina",
    "nume": "casă și grădină",
-   "campanii": 13
+   "campanii": 14
   },
   {
    "slug": "fashion",
    "nume": "haine și încălțăminte",
-   "campanii": 13
+   "campanii": 14
   },
   {
    "slug": "beauty",
    "nume": "cosmetice",
-   "campanii": 8
+   "campanii": 9
   },
   {
    "slug": "electronice",
    "nume": "electronice și IT",
-   "campanii": 7
+   "campanii": 9
   },
   {
    "slug": "carti-educatie",
    "nume": "cărți",
-   "campanii": 6
+   "campanii": 7
   },
   {
    "slug": "copii",
@@ -108,6 +108,16 @@
    "descriere": "În perioada 30 octombrie – 30 noiembrie 2026, descoperă ofertele Black Friday la selecția de mobilier și amenajează-ți casa la prețuri reduse.",
    "are_cod": false,
    "categorie": "casa-gradina"
+  },
+  {
+   "magazin": "geekmall.ro",
+   "nume": "Geekmall",
+   "start": "2026-10-30",
+   "final": "2026-11-21",
+   "nota": "Black Friday 2026 – Oferte electrizante | Reduceri de până la 55%!",
+   "descriere": "Tehnologia în lumina reflectoarelor. Prețurile... în umbră! Black Friday la Geekmall.ro aduce oferte electrizante și reduceri de până la 55%! Activează modul SMART și descoperă gadgeturi inteligente, trotinete electrice, aspiratoare robot, produse smart home și multe alte surprize la prețuri speciale. Livrare rapidă, garanție inclusă și siguranța Geekmall – Magazin de Încredere pe Compari.ro. Vezi ofertele",
+   "are_cod": false,
+   "categorie": "electronice"
   },
   {
    "magazin": "lacrimidepanda.ro",
@@ -260,6 +270,26 @@
    "categorie": "casa-gradina"
   },
   {
+   "magazin": "gorillasports.ro",
+   "nume": "Gorillasports",
+   "start": "2026-11-02",
+   "final": "2026-11-08",
+   "nota": "BLACK FRIDAY",
+   "descriere": "Reduceri pana la -80% la echipamente fitness, in perioada 02.11 - 08.11, in limita stocului disponibil.",
+   "are_cod": false,
+   "categorie": "sport"
+  },
+  {
+   "magazin": "store.irinareisler.ro",
+   "nume": "Irinareisler",
+   "start": "2026-11-02",
+   "final": "2026-11-08",
+   "nota": "Black Friday 2026 pe store.irinareisler.ro",
+   "descriere": "Black Friday 2026 vine pe store.irinareisler.ro cu reduceri de 40% la brandurile la brandurile Postquam, Ocleo/Be refrain, Skin System si Seizen.",
+   "are_cod": false,
+   "categorie": "beauty"
+  },
+  {
    "magazin": "kamu.ro",
    "nume": "Kamu",
    "start": "2026-11-02",
@@ -268,6 +298,16 @@
    "descriere": "Black Friday în 2026 la kamu.ro vine cu reduceri de pana la 65%.",
    "are_cod": false,
    "categorie": "beauty"
+  },
+  {
+   "magazin": "mobidea.ro",
+   "nume": "Mobidea",
+   "start": "2026-11-02",
+   "final": "2026-11-30",
+   "nota": "Black Friday Mobidea 2026",
+   "descriere": "Campanie blackfriday cu 300 RON reducere la toate comenzile ce depasesc suma de 3500 RON. Cuponul se aplica automat in cos. Valabilitatea este pana la finalul lunii Noiembrie.",
+   "are_cod": false,
+   "categorie": "casa-gradina"
   },
   {
    "magazin": "ozone.ro",
@@ -320,6 +360,16 @@
    "categorie": "fashion"
   },
   {
+   "magazin": "bazaiot.ro",
+   "nume": "Bazaiot",
+   "start": "2026-11-03",
+   "final": "2026-11-30",
+   "nota": "BlackFriday pentru Brandul Soldered",
+   "descriere": "Oferim 10% discount printr-un cod voucher () pentru toate echipamentele Soldered, acesta fiind un producator de produse electronice precum:. Acumulatori. Senzori. Display uri. Placi dezvoltare. Module etc",
+   "are_cod": true,
+   "categorie": "electronice"
+  },
+  {
    "magazin": "centini.ro",
    "nume": "Centini",
    "start": "2026-11-03",
@@ -360,6 +410,16 @@
    "categorie": "fashion"
   },
   {
+   "magazin": "answear.ro",
+   "nume": "Answear",
+   "start": "2026-11-04",
+   "final": "2026-11-25",
+   "nota": "Magic Black Friday",
+   "descriere": "PÂNĂ LA -70% Reduceri de Black Friday cu până la -50%. În plus, la min. 499 RON, ai până la -40% reducere suplimentară direct în coș.",
+   "are_cod": false,
+   "categorie": "fashion"
+  },
+  {
    "magazin": "duchessenails.ro",
    "nume": "Duchesse Nails",
    "start": "2026-11-04",
@@ -388,6 +448,16 @@
    "descriere": "În perioada 5–11 noiembrie inclusiv, Afisport.ro dă startul campaniei Black Friday – Mari Reduceri, cu oferte la biciclete, piese, accesorii și echipamente de ciclism, plus o serie de produse fitness&sport. Ce puteți promova: Biciclete electrice, MTB, de oraș și pliabile. Biciclete pentru copii. Căști, lumini, antifurturi, genți, pedale, anvelope și alte accesorii. Îmbrăcăminte și echipamente de ciclism.",
    "are_cod": false,
    "categorie": "sport"
+  },
+  {
+   "magazin": "curteaveche.ro",
+   "nume": "Curteaveche",
+   "start": "2026-11-05",
+   "final": "2026-11-10",
+   "nota": "Platesti jumatate, citesti tot! CurteaVeche.ro Black Friday 2026",
+   "descriere": "Curtea Veche Publishing dă Black Friday la cărți și face rafturile să suspine! Între 5 și 10 noiembrie, toate cărțile la preț întreg sunt la jumătate de preț, iar unele titluri au reduceri de până la 90%. Dacă lista ta de citit era deja prea lungă, acum ai încă un motiv să o faci și mai lungă. Bannerele aferente promotiei au fost incarcate in sectiunea specifica si pot fi descarcate si accesand link-ul",
+   "are_cod": false,
+   "categorie": "carti-educatie"
   },
   {
    "magazin": "farmec.ro",
