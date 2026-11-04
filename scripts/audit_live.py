@@ -54,6 +54,11 @@ def ia(url: str):
         return 0, url, str(e)
 
 
+def e_minora(problema: str) -> bool:
+    """Se repara la urmatoarea trecere, nu e o informatie gresita pentru cititor."""
+    return problema.startswith(("titlu lung", "descriere lunga"))
+
+
 def verifica(html: str, cale: str) -> dict:
     """Problemele unei pagini. Functie separata, ca testele sa-i poata da HTML construit."""
     pb = []
@@ -147,8 +152,13 @@ def main() -> int:
         json.dump({"pagini": rez, "titluri_identice": titluri, "descrieri_identice": descrieri, "linkuri_rupte": rupte}, f, ensure_ascii=False, indent=0)
     print("\nRaport:", IESIRE)
     # Inainte de publicare, orice problema opreste rularea: site-ul ramane pe ultima versiune buna.
-    if "--strict" in arg and (curate != len(rez) or titluri or descrieri or rupte):
-        print("\nOPRIT: paginile de mai sus nu se publica.")
+    # Un titlu cu un caracter in plus se noteaza, dar nu tine pe loc tot site-ul: ofertele expirate ar ramane afisate.
+    grave = {p: [x for x in r["probleme"] if not e_minora(x)] for p, r in rez.items()}
+    grave = {p: x for p, x in grave.items() if x}
+    if "--strict" in arg and (grave or rupte):
+        print(f"\nOPRIT: {len(grave)} pagini cu probleme grave, {len(rupte)} linkuri rupte. Nu se publica.")
+        for p, x in list(grave.items())[:20]:
+            print("  ", p[:70], "|", x[0][:90])
         return 1
     return 0
 
@@ -161,6 +171,9 @@ def test() -> int:
         ("fara link platit, pe pagina de magazin", "fara link platit" in verifica(bun.replace("event.2performant.com", "x.ro"), "/top/x")["probleme"], True),
         ("pe o pagina de text nu se cere link platit", verifica(bun.replace("event.2performant.com", "x.ro"), "/despre-noi")["probleme"], []),
         ("doua H1", "2 H1" in verifica(bun + "<h1>a</h1>", "/x")["probleme"], True),
+        ("titlul lung nu opreste publicarea", e_minora("titlu lung (61)"), True),
+        ("textul pentru afiliati opreste publicarea", e_minora("text pentru afiliati: influencer"), False),
+        ("pagina stricata opreste publicarea", e_minora("HTTP 500"), False),
         ("titlu lung", any(x.startswith("titlu lung") for x in verifica(bun.replace("Titlu bun", "x" * 61), "/x")["probleme"]), True),
         ("cod gol", any(x.startswith("ghilimele goale") for x in verifica(bun + '<h3>Extra 15% cu codul ""</h3>', "/x")["probleme"]), True),
         ("undefined", any(x.startswith("undefined") for x in verifica(bun + "<p>Pret undefined lei</p>", "/x")["probleme"]), True),

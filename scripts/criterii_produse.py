@@ -638,7 +638,7 @@ def ruleaza() -> int:
         for p in x["produse"]:
             p["titlu"] = titlu_curat(p["titlu"])
         x["produse"] = [p for p in x["produse"] if se_potriveste(p["titlu"], c, p["pret"]) and not fpf.adresa_moarta(p.get("url_magazin") or "")
-                        and p["magazin"] not in MAGAZINE_RECONDITIONATE]
+                        and p["magazin"] not in MAGAZINE_RECONDITIONATE and p["magazin"] in plati]  # magazin iesit din program = fara comision
     verifica_la_magazine(lista, azi)
     for x in lista:
         x["magazine"] = sorted({p["magazin"] for p in x["produse"]})
