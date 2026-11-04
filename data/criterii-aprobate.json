@@ -1,0 +1,389 @@
+{
+"_nota": "Pagini /alege citite produs cu produs inainte de publicare. Se adauga cu: criterii_produse.py --aproba slug1,slug2",
+"aprobate": {
+"aer-conditionat-12000-btu": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"aer-conditionat-18000-btu": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"aer-conditionat-24000-btu": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"aer-conditionat-9000-btu": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"aspirator-de-mana": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"aspirator-vertical-fara-fir": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"bicicleta-electrica": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"bormasina-cu-acumulator": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"boxa-bluetooth": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"boxa-portabila": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"camera-supraveghere-wifi": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"casti-anulare-zgomot": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"casti-gaming": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"casti-true-wireless": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"colagen-pulbere": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"combina-frigorifica": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"crema-protectie-spf-50": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"cuptor-cu-microunde": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"cuptor-incorporabil": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"drona-cu-camera": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"espressor-automat": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"espressor-cu-capsule": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"frigider-no-frost": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"frigider-side-by-side": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"friteuza-aer-cald-3-4-litri": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"friteuza-aer-cald-5-6-litri": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"friteuza-aer-cald-8-litri": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"friteuza-cu-doua-cosuri": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"friteuza-sub-300-lei": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"generator-curent": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"imprimanta-laser": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"imprimanta-multifunctionala": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"iphone": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"laptop-16-gb-ram": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"laptop-32-gb-ram": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"laptop-gaming": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"laptop-ryzen-7": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"magneziu-capsule": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"masina-de-spalat-10-kg": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"masina-de-spalat-6-kg": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"masina-de-spalat-7-kg": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"masina-de-spalat-8-kg": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"masina-de-spalat-9-kg": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"masina-de-spalat-cu-uscator": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"masina-de-spalat-slim": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"masina-de-spalat-vase-45-cm": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"masina-de-spalat-vase-60-cm": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"masina-de-spalat-vase-incorporabila": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"masina-tuns-gazon": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"mixer-planetar": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"monitor-144-hz": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"monitor-24-inch": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"monitor-27-inch": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"monitor-32-inch": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"monitor-4k": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"monitor-gaming": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"omega-3-capsule": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"parfum-dior-sauvage": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"parfum-la-vie-est-belle": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"parfum-paco-rabanne-invictus": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"parfum-ysl-libre": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"placa-video-rtx": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"plita-inductie": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"polizor-unghiular-125-mm": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"power-bank-10000-mah": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"power-bank-20000-mah": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"robot-de-bucatarie": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"saltea-140x200": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"saltea-160x200": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"saltea-180x200": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"saltea-90x200": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"saltea-ortopedica": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"sampon-fara-sulfati": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"scaun-birou-ergonomic": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"scaun-gaming": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"ser-retinol": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"ser-vitamina-c": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"smartwatch-copii": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"ssd-1-tb": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"tableta-ipad": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"tableta-samsung": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"telefon-256-gb": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"telefon-5g": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"telefon-samsung": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"telefon-xiaomi": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"televizor-32-inch": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"televizor-43-inch": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"televizor-50-inch": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"televizor-55-inch": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"televizor-65-inch": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"televizor-75-inch": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"televizor-oled": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"televizor-qled": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"televizor-sub-2000-lei": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"vitamina-c-1000-mg": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+},
+"vitamina-d3-2000-ui": {
+"data": "2026-11-04",
+"nota": "titluri citite produs cu produs"
+}
+}
+}

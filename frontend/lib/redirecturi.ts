@@ -60,7 +60,7 @@ export const REDIRECTURI: Redirect[] = [
   //
   // CORECTIE 21.08.2026: pe 19.08 redirectionasem si libris.ro, vegis.ro, pint.ro
   // si pcmadd.com. Gresit — alea NU erau Profitshare-only: exista si pe 2Performant,
-  // cu link afiliat real (aff_code 541547473) si comision 8%. Mi-am taiat singur
+  // cu link afiliat real (aff_code 541547473). Mi-am taiat singur
   // 4 pagini monetizabile timp de 2 zile. Regula invatata: exclude dupa PLATFORMA
   // din inregistrare, niciodata dupa numele magazinului — acelasi brand poate exista
   // in mai multe retele simultan.

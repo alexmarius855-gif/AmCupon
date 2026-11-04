@@ -435,7 +435,7 @@ propoziție, întrebând „e adevărat pentru ORICE magazin?” — nu se caut�
 Sweep-urile de până acum trecuseră prin date, generatoare și șabloane; paginile editoriale scrise de mână
 (o singură dată, în iunie) nu le citise nimeni integral. Găsite pe 12 pagini: **comisionul nostru afișat
 cumpărătorului** (/cursuri-online de 44 de ori — grila lua TOATĂ categoria software și scria „Appsumo 100%
-comision”; /servicii „200$ per vanzare”, „150$ CPA”; insigna „Cel mai mare comision”; „Program afiliere: …”
+comision”; /servicii sume pe vanzare; insigna „Cel mai mare comision”; „Program afiliere: …”
 sub butoane), note „9.8/10” fără metodologie, prețuri din iunie prezentate ca actuale (ExpressVPN „6.67€”
 = prețul vechi în USD pe 15 luni), fapte expirate sau false (XTB „reglementat BNR + CNVM” — CNVM nu mai
 există din 2013; cardul Binance retras în SEE; „NordVPN Teams” redenumit NordLayer în 2021; N26 recomandat

@@ -1,3 +1,4 @@
+import { MIN_PRODUSE_OCAZIE, produseOcazie } from "@/lib/cadouri";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import fs from "fs";
@@ -256,21 +257,8 @@ function loadProducts(): Produs[] {
   }
 }
 
-function getProducts(ocazie: typeof OCAZII[string], allProducts: Produs[]) {
-  const real = allProducts.filter((p: Produs) =>
-    !!p.image && p.image.length > 5 &&
-    p.price > 0 &&
-    ocazie.catSluguri.includes(p.cat_slug || "")
-  );
-
-  let filtered = real;
-  if (ocazie.pretMax) filtered = filtered.filter((p: Produs) => p.price <= ocazie.pretMax!);
-  if (ocazie.pretMin) filtered = filtered.filter((p: Produs) => p.price >= ocazie.pretMin!);
-
-  const withDiscount = filtered.filter((p: Produs) => (p.discount_pct || 0) > 0 || p.old_price);
-  const withoutDiscount = filtered.filter((p: Produs) => !p.discount_pct && !p.old_price);
-  const sorted = [...withDiscount, ...withoutDiscount].slice(0, 36);
-  return sorted;
+function getProducts(slug: string, ocazie: typeof OCAZII[string], allProducts: Produs[]) {
+  return produseOcazie(slug, allProducts, ocazie.pretMin, ocazie.pretMax);
 }
 
 function loadOutput(): Magazin[] {
@@ -284,7 +272,11 @@ function loadOutput(): Magazin[] {
 
 /* ─── Static params ──────────────────────────────────────────────────────── */
 export function generateStaticParams() {
-  return Object.keys(OCAZII).map((slug) => ({ slug }));
+  // Pagina apare doar daca are destule produse potrivite ocaziei.
+  const toate = loadProducts();
+  return Object.keys(OCAZII)
+    .filter((slug) => getProducts(slug, OCAZII[slug], toate).length >= MIN_PRODUSE_OCAZIE)
+    .map((slug) => ({ slug }));
 }
 
 /* ─── Metadata ───────────────────────────────────────────────────────────── */
@@ -329,7 +321,8 @@ export default async function CadouriSlugPage({
   if (!oc) notFound();
 
   const allProducts = loadProducts();
-  const products = getProducts(oc, allProducts);
+  const products = getProducts(slug, oc, allProducts);
+  if (products.length < MIN_PRODUSE_OCAZIE) notFound();
   const magazine = loadOutput();
 
   const promoRelevante = magazine

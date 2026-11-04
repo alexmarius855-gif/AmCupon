@@ -49,6 +49,11 @@ data/impact_deeplink.json
 
 # Rapoarte locale cu date private (comisioane) — repo-ul e public
 *.local.json
+*.local.md
+*.local.csv
+# Exporturile si rapoartele cu comisioane stau in afara repo-ului: Projects/amcupon-privat/
+data/RAPORT-TOP-CASTIG*
+data/scor-comercianti*
 
 # Flyerul tiparit (scripts/genereaza_flyer.py) — PDF-ul se regenereaza saptamanal
 docs/flyer/*.pdf

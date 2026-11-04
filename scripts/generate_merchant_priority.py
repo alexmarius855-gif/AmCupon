@@ -9,7 +9,7 @@ Scor = comision% (plafonat) × popularitate (log vanzari) × multiplicator ofert
 
 OUTPUT:
 - frontend/public/recomandate.json   → top magazine cu oferta (pt sectiunea de pe site)
-- data/RAPORT-TOP-CASTIG.md          → raport citibil (pt strategia ta: ce impingi)
+- data/RAPORT-TOP-CASTIG.local.md    → raport citibil, doar local (pt strategia ta: ce impingi)
 
 Ruleaza in cron dupa merge_platforms.py (are nevoie de output.json final).
 """
@@ -24,14 +24,25 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUTPUT_JSON = os.path.join(HERE, "..", "frontend", "public", "output.json")
 RECOM_JSON  = os.path.join(HERE, "..", "frontend", "public", "recomandate.json")
-RAPORT_MD   = os.path.join(HERE, "..", "data", "RAPORT-TOP-CASTIG.md")
+RAPORT_MD   = os.path.join(HERE, "..", "data", "RAPORT-TOP-CASTIG.local.md")  # doar local, ignorat de git
 
 RETELE = {"profitshare.ro", "2performant.com"}
 
 
+from campuri_private import citeste_harta  # noqa: E402
+
+HARTA_COMISIOANE = citeste_harta()
+# Comision necunoscut NU inseamna 0: magazinele fara cifra in rularea curenta ar cadea la coada doar pentru atat.
+COMISION_NECUNOSCUT = 8.0
+
+
 def comision_pct(c: str) -> float:
-    nums = [float(x) for x in re.findall(r"[\d.]+", c or "")]
+    nums = [float(x) for x in re.findall(r"[\d.]+", str(c or ""))]
     return max(nums) if nums else 0.0
+
+
+def comision_magazin(m: dict) -> float:
+    return comision_pct(m.get("comision") or HARTA_COMISIOANE.get(m.get("magazin"), "")) or COMISION_NECUNOSCUT
 
 
 # Numele magazinului: scripts/nume_magazin.py, acelasi rezultat ca numeAfisat() din frontend
@@ -41,7 +52,7 @@ from nume_magazin import nume_afisat  # noqa: E402
 
 def scor_castig(m: dict) -> float:
     """Potential de castig: comision × cerere × ofertă. Plafonat ca sa evite capcanele."""
-    com = min(comision_pct(m.get("comision", "")), 25.0)   # plafon 25% (evita nise 30-35% fara cerere)
+    com = min(comision_magazin(m), 25.0)   # plafon 25% (evita nise 30-35% fara cerere)
     pop = math.log1p(m.get("sales_number", 0) or 0)         # popularitate log (0..~7)
     if m.get("cod_cupon"):       oferta = 2.0               # are COD = cel mai usor de impins
     elif m.get("are_promotie"):  oferta = 1.4               # are oferta
@@ -56,7 +67,7 @@ def main():
     valide = [m for m in magazine if m.get("magazin") and m["magazin"] not in RETELE]
     for m in valide:
         m["_scor"] = scor_castig(m)
-        m["_com"]  = comision_pct(m.get("comision", ""))
+        m["_com"]  = comision_magazin(m)
 
     # ── Sectiune site: DOAR magazine cu oferta activa (au ce impinge), top dupa scor ──
     cu_oferta = [m for m in valide if m.get("are_promotie")]
@@ -68,7 +79,6 @@ def main():
         "nume":      nume_afisat(m["magazin"]),
         "logo_url":  m.get("logo_url", ""),
         "categorie": m.get("categorie", ""),
-        "comision":  round(m["_com"], 1),
         "are_cod":   bool(m.get("cod_cupon")),
         "oferta":    (m.get("promotii", [{}])[0].get("nume", "") if m.get("promotii") else "")[:70],
     } for m in top_site]
@@ -99,9 +109,11 @@ def main():
         "- Comision mare + 0 vânzări = nișă moartă, NU pierde timp pe ele",
         "- Se actualizează automat la fiecare rulare cron (4h)",
     ]
-    os.makedirs(os.path.dirname(RAPORT_MD), exist_ok=True)
-    with open(RAPORT_MD, "w", encoding="utf-8") as f:
-        f.write("\n".join(lines))
+    # Raportul are comisioane: nu se scrie in rularea automata, ca sa nu ajunga in repo-ul public.
+    if not os.environ.get("GITHUB_ACTIONS"):
+        os.makedirs(os.path.dirname(RAPORT_MD), exist_ok=True)
+        with open(RAPORT_MD, "w", encoding="utf-8") as f:
+            f.write("\n".join(lines))
 
     print(f"✅ {len(recomandate)} magazine în recomandate.json (sectiune site)")
     print(f"✅ Top 30 în RAPORT-TOP-CASTIG.md (strategie)")

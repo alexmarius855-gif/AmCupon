@@ -34,7 +34,7 @@ if hasattr(sys.stdout, "reconfigure"):
 ROOT = Path(__file__).parent.parent
 OUTPUT_JSON = ROOT / "frontend" / "public" / "output.json"
 PRODUCTS_JSON = ROOT / "frontend" / "public" / "products.json"
-OUT_CSV = ROOT / "data" / "scor-comercianti.csv"
+OUT_CSV = ROOT / "data" / "scor-comercianti.local.csv"  # are comisioane: doar local
 
 # Pagini brand dedicate (bonus SEO — au deja continut editorial + FAQ)
 BRAND_PAGES = {
@@ -45,6 +45,12 @@ BRAND_PAGES = {
     "scule365.ro","kitunghii.ro","pfarma.ro","brico.ro","liki24.ro","vidaxl.ro",
     "petmart.ro","asos.com","iherb.com","amazon.com",
 }
+
+
+sys.path.insert(0, str(Path(__file__).parent))
+from campuri_private import citeste_harta  # noqa: E402
+
+HARTA_COMISIOANE = citeste_harta()
 
 
 def parse_comision(c: str) -> float:
@@ -70,7 +76,7 @@ def main():
         slug = m.get("magazin", "")
         if not slug or slug in ("profitshare.ro", "2performant.com"):
             continue
-        com = parse_comision(m.get("comision", ""))
+        com = parse_comision(str(m.get("comision") or HARTA_COMISIOANE.get(slug, "")))
         link_real = bool(m.get("url_afiliat")) and m.get("url_afiliat") != m.get("url")
 
         s_trust = (2 if m.get("logo_url") else 0) + min((m.get("sales_number") or 0) / max_sales * 3, 3)   # 0-5

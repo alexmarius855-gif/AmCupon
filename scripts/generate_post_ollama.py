@@ -104,7 +104,7 @@ def build_context(top: list[dict]) -> str:
         name  = m["magazin"]
         promo = get_best_promo(m)
         cod   = promo.get("cod_cupon", "")
-        disc  = promo.get("nume", "") or m.get("comision", "")
+        disc  = promo.get("nume", "")
         cat   = m.get("categorie", "")
         url   = f"{SITE_URL}/cod-reducere/{name}"
         entry = f"- {name} ({cat}): {disc[:80]}"

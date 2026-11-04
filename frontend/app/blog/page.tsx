@@ -22,7 +22,7 @@ interface BlogPost {
 }
 interface Recomandat {
   magazin: string; nume: string; logo_url: string;
-  categorie: string; comision: number; are_cod: boolean; oferta: string;
+  categorie: string; are_cod: boolean; oferta: string;
 }
 interface Magazin {
   magazin: string; are_promotie?: boolean; promotii?: { cod_cupon?: string }[];

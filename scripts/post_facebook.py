@@ -85,7 +85,7 @@ def format_discount(m: dict, max_len: int = 70) -> str:
     """Textul ofertei, DOAR din promotia reala a magazinului.
 
     07.09.2026 — aici era, ca fallback cand magazinul n-avea promotie:
-        c = m.get("comision", ""); ...
+        c = ""  # comisionul nostru nu se publica; ...
         return f"Cashback pana la {max(nums):.0f}%"
     Adica lua COMISIONUL NOSTRU si il publica pe Facebook drept "cashback".
     Cine citea "Cashback pana la 40%" intelegea ca primeste el 40% inapoi.

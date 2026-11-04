@@ -42,7 +42,7 @@ Homepage-ul e singura pagină vizitată des. Restul site-ului — iulie.
    Lista de redirecturi e acum o singură sursă citită și de `next.config.ts` și de
    `sitemap.ts` — nu mai pot diverge.
 3. **4 magazine bune redirecționate din greșeală de mine pe 19.08** (libris.ro,
-   vegis.ro, pint.ro, pcmadd.com — 2Performant, comision 8%, promoții active).
+   vegis.ro, pint.ro, pcmadd.com — 2Performant, promoții active).
    Repuse în funcțiune.
 4. **Homepage-ul linka către 4 pagini moarte** — cele mai crawl-ate linkuri de pe site.
 

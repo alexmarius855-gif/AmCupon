@@ -22,7 +22,6 @@ interface Magazin {
   logo_url?: string;
   categorie: string;
   categorie_slug?: string;
-  comision: string;
   scor_final: number;
   are_promotie: boolean;
   cod_cupon: boolean;

@@ -44,7 +44,17 @@ def _cheie(p: dict) -> str:
     return (p.get("merchant_slug") or p.get("merchant") or "").strip().lower().rstrip("/")
 
 
+RE_NICOTINA = re.compile(r"\b(snus|nicotin\w*|longfill|shortfill|e-?liquid|lichid\w* (?:pentru )?(?:tigar\w*|vape)|vape\w*|tigar\w*|heets|iqos)\b", re.I)
+RE_CATEGORIE_ADULTI = re.compile(r"\b(mature|erotic\w*|sex toys?|adult\w*)\b", re.I)
+
+
 def e_restrictionat(p: dict) -> bool:
     if _cheie(p) in MAGAZINE_EXCLUSE or (p.get("merchant") or "").strip().lower() in MAGAZINE_EXCLUSE:
+        return True
+    # olmarkt.ro: „Mature > Erotic > Sex Toys & Erotic Game" a ajuns la Jocuri, cu un titlu care nu spune nimic.
+    if RE_CATEGORIE_ADULTI.search(p.get("category") or ""):
+        return True
+    # Tutun si nicotina: publicitatea e interzisa (Legea 349/2002), iar „Snus" a ajuns la Farmacie, „Longfill" la Electronice.
+    if RE_NICOTINA.search(p.get("title") or "") or RE_NICOTINA.search(p.get("category") or ""):
         return True
     return bool(RE_TITLU_EXPLICIT.search(p.get("title") or ""))

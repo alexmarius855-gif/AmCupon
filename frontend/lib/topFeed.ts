@@ -27,6 +27,7 @@
  */
 
 export interface ProdusFeed {
+  cat_slug?: string;
   title?: string;
   price?: number;
   url?: string;

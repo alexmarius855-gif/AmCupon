@@ -53,7 +53,6 @@ interface Magazin {
   url_afiliat: string;
   logo_url?: string;
   categorie: string;
-  comision: string;
   rank?: number;
   trend: number;
   are_promotie: boolean;

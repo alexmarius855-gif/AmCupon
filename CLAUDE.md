@@ -12,6 +12,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Site afiliat românesc — coduri de reducere + oferte de la 2Performant și Profitshare. Deployed pe Vercel, date actualizate automat (cron 4h) prin GitHub Actions. Răspunde întotdeauna în română.
 
+**UPDATE 04.11.2026, tarziu — POARTA DE PUBLICARE si comisionul scos (decizia lui Alex: „totul curat, inainte de a avea o pagina/categorie vreau sa verifici inainte"):** garzile rulau DUPA `git push`, deci o rulare rosie publica oricum. Acum in `update-data.yml`, chiar inaintea commit-ului: `campuri_private.py`, `criterii_produse.py --verifica`, `verifica_promotii.py`, `verifica_site.py`, `next build`, `verifica_site.py --html`, `audit_live.py --baza http://localhost:3300 --strict` (fiecare pagina din sitemap, pe site-ul construit). Fara `continue-on-error`: daca ceva pica, commit, IndexNow, newsletter, alerte si Telegram se sar, iar site-ul ramane pe ultima versiune buna. Newsletterul si alertele s-au mutat DUPA publicare. **Nu pune `continue-on-error` pe acesti pasi.** **/alege:** o pagina apare doar daca e in `data/criterii-aprobate.json` (citita produs cu produs) si are cel putin 4 produse cu pretul confirmat pe site-ul magazinului in ultimele 10 zile (`ZILE_VALABIL`). `python criterii_produse.py --de-aprobat` listeaza ce asteapta, `--aproba slug1,slug2` publica. Toti candidatii stau in `data/criterii-stare.json`; `public/criterii.json` are doar ce a trecut. Prinse la citire: presa Smeg la mixer planetar, casti antifonice de bebe la ANC, 12 kg la pagina de 7 kg, bormasini fara acumulator, Eau Sauvage la Sauvage, parfumuri fara volum in titlu, fragranza (acelasi pret pe pagina pentru 30 ml, 50 ml si 100 ml: varianta nu se poate confirma), bsgmag.ro (reconditionate fara s-o spuna in titlu, `MAGAZINE_RECONDITIONATE`). Magazinele care blocheaza citirea (drmax, liki24, xxxlutz, blacktech, gave) nu apar pe /alege pana nu avem cum sa le confirmam. **Categorii:** `scripts/categorii_produse.py` recalculeaza `cat_slug` pentru TOATE produsele, pe cuvant intreg, iar titlul trebuie sa spuna tipul (`VOCABULAR`): `normalize_cat_slug` punea corturi la Animale („cat" din „Uncategorized"), creme la Jocuri („Game" de la Farmec), laptopuri la Carti („Zenbook"). 10.000 din 19.900 de produse raman `altele`: nu apar pe paginile de categorie, dar raman pe paginile de magazin. `continut_restrictionat.py` scoate si categoriile de adulti si nicotina (Legea 349/2002). `lib/cadouri.ts`: /cadouri alege dupa titlu, nu doar dupa categorie (stiletto la Botez, pistol pneumatic la Nastere); pagina sub 8 produse nu se publica. /categorii si /black-friday/categorie filtreaza pe `cat_slug` prin `CATEGORIE_PAGINA`. **Comision:** `campuri_private.py` il scoate inaintea commit-ului din `public/output.json`, `recomandate.json`, `data/output.json`, `extra_merchants.json`; in rulare ramane din API; `verifica_site.py` iese rosu daca reapare. Exporturile si rapoartele cu comisioane stau in `Projects/amcupon-privat/` (in afara repo-ului), rapoartele se scriu `*.local.*`. **Istoricul git inca le contine:** curatarea lui cere rescrierea istoricului public, decizie separata.
+
 **UPDATE 04.11.2026, noaptea — pagini /alege (produse pe o caracteristica) si Supabase:** `affiliate/product_feeds/products?filter[query]=...` cauta in TOATE cele 584 de feed-uri (7,66 milioane de produse), dar nu da adresa produsului; `affiliate/product_feeds/<id>/products?filter[query]=...` o da. `scripts/criterii_produse.py` tine regulile (titlul TREBUIE sa contina caracteristica; `--test`, `--verifica`), scrie `public/criterii.json`, iar `lib/criterii.ts` publica doar criteriile cu cel putin 4 produse. Fiecare produs se verifica pe pagina magazinului (`verifica_la_magazine`, JSON-LD): feed-urile raman in urma (AFI Sport 3.990 in feed fata de 2.621 pe site; `ro.store.asus.com` s-a mutat, toate adresele din feed dau 404, de aceea `GAZDE_MOARTE` in fetch_product_feeds.py). Blocat sau eroare de server = nu stim, deci nu atingem; 404 sau stoc epuizat = produsul iese. Bulinele din articole („Vezi modele") vin din `in_text` al criteriului, fara rescrierea articolelor. Supabase: migrarea din `supabase/migrations/` e aplicata; `scripts/ingest-2p.mts` scrie doar cu secretul `SUPABASE_SERVICE_ROLE_KEY`, iar fara el iese curat. Cheia publica NU poate citi `coupons.code` si `merchants.default_commission` (privilegii pe coloane). `scripts/telegram_oferte_mari.py` respecta TELEGRAM_PAUZA. `/go/p/<id>` = link scurt spre un produs. `scripts/audit_live.py` verifica toate paginile live; NU confunda cu `audit_pagini.py` (build local, din 22.09), pe care era sa-l suprascriu. **Ramas de decis de Alex: `frontend/public/output.json` e public si contine `comision`, la fel `data/RAPORT-TOP-CASTIG.md` in repo-ul public.**
 
 **UPDATE 04.11.2026, noaptea — indexare si linkuri interne:** cheia GSC e doar de citire (`siteRestrictedUser`: retrimiterea sitemap-ului da 403), iar Indexing API accepta doar joburi si transmisiuni video, deci NU se foloseste pentru pagini obisnuite. Singura cerere de indexare reala e butonul „Solicita indexarea" din Search Console (cota aproximativa: 10 pe zi), posibil din browserul aplicatiei daca Alex e conectat. Crawl pe 769 de pagini din sitemap: /top si /top/* erau o INSULA, se legau doar intre ele, de aceea Google nu le stia. `lib/legaturiInterne.ts` le leaga de prima pagina, subsol si ghiduri; `submit_indexnow.py` le anunta acum si pe ele. Orfane ramase, fara niciun link: /produse/animale, /produse/alimente, /produse/bijuterii, /produse/jocuri, /categorii/servicii, /blog/cele-mai-bune-coduri-reducere-noiembrie-2026; iar 159 de pagini /cod-reducere/* au doar 1-2 linkuri.
@@ -174,8 +176,8 @@ si e explicat pe pagina („Ce numaram ca magazin romanesc"). Slug-ul 2P `online
 
 **UPDATE 07.10.2026 (paginile editoriale scrise de mana: recomandari, servicii, financiar, nise — PUSHED):**
 - **Comisionul NOSTRU era afisat pe site**: /cursuri-online (de 44 de ori: grila „Platforme romanesti cu reduceri
-  active" lua TOATA categoria software si scria `m.comision`), /servicii („15% comision", „200$ per vanzare",
-  „150$ CPA", „SaaS cu comision mare"), /servicii-internationale („Cel mai mare comision", „Toate cu comision
+  active" lua TOATA categoria software si scria `m.comision`), /servicii (cifre de comision,
+  „SaaS cu comision mare"), /servicii-internationale („Cel mai mare comision", „Toate cu comision
   verificat"), „Program afiliere: …" sub butoane pe /recomandari, /software-business, /trading. Scos peste tot;
   campurile `comision`/`program` sterse din datele paginilor. Garda noua `comision publicat` in `verifica_site.py`.
 - **Trei butoane spre 404**: Shopify si Coursera (sablonul Impact `pxf.io/c/7761435/1/0`, scos din date pe 22.08,
@@ -482,7 +484,7 @@ si e explicat pe pagina („Ce numaram ca magazin romanesc"). Slug-ul 2P `online
   hero numara acum ofertele, nu magazinele. Copierea trece prin `useCopyCod` + `RedirectModal`.
 - **Texte scrise pentru AFILIATI, afisate cumparatorului** (semnalat de Alex pe prima pagina): interlink.ro
   „Promovează produsele Interlink și câștigă comisioane din fiecare vânzare validă", femieko.ro „Câștigă
-  premii și comision de 19%!", gl-inet.com „affiliates earn an increased commission". Retelele pun uneori in
+  premii și comision!", gl-inet.com „affiliates earn an increased commission". Retelele pun uneori in
   campul promotiei descrierea PROGRAMULUI. `promotii.text_pentru_afiliati()` in `curata_promotii()` (merge +
   import CSV, deci si newsletter/Telegram/postari): scoate promotia cand titlul e pentru afiliati sau e doar
   numele magazinului, altfel scoate doar frazele. Tipare CONTEXTUALE: „fără comision" la o banca, „direct de
@@ -526,7 +528,7 @@ si e explicat pe pagina („Ce numaram ca magazin romanesc"). Slug-ul 2P `online
   `node lib/oferta.test.mjs` (din `frontend/`). 18 cazuri REALE din output.json + trecere prin toate cele
   188 de promotii. Dovedit: cu regexul initial de procent testul pica (tvcmall), restaurat trece.
   Ce inventa prima versiune, gasit de revizie pe datele reale: „9.5% off" → „-5%", „144% sRGB" → „-44%",
-  comisionul unui afiliat → „-19%", „pana la -70%" / „up to" / „bis zu" → „-70%" sec (fara „pana la"),
+  comisionul unui afiliat → un procent de reducere, „pana la -70%" / „up to" / „bis zu" → „-70%" sec (fara „pana la"),
   „Incaltamintelamoda.ro" → „Incaltaminte.ro" (codul LAMODA sters ca subsir), „Freedom" sters din titlu.
 - **Pagina de magazin FARA oferta** (86% din vizitatori): alerta pe email deschisa din start
   (`PriceAlert deschis`), apoi carduri INTREGI cu codul real al magazinelor similare (`page.tsx` le atașeaza
@@ -1706,7 +1708,7 @@ si e explicat pe pagina („Ce numaram ca magazin romanesc"). Slug-ul 2P `online
   intentionat albe). **Daca faci alt rebrand: cauta SI clasele numite, nu doar hexurile.**
 - **Newsletter: comisionul era afisat ca reducere.** `send_newsletter.py` (NU
   `generate_daily_digest.py`) — `format_comision()` era atribuit variabilei `disc` si randat sub
-  logo, exact unde cititorul asteapta reducerea: "Comision 10%" se citea ca "10% reducere".
+  logo, exact unde cititorul asteapta reducerea: comisionul se citea ca reducere.
   Aceeasi greseala "cashback fals" eliminata din site pe 03.07, supravietuise aici. Inlocuit cu
   `badge_onest()`: procent REAL parsat > cod real > verificat CHIAR azi > neutru. NU s-a folosit
   badge-ul "Cod Exclusiv" (0 magazine au `exclusiv=True` — ar fi fost fabricat). Plus grupare pe
@@ -2334,7 +2336,7 @@ folosim lime acolo.
 ### Nise adăugate 20.06.2026
 | URL | Status date |
 |-----|-------------|
-| `/flori` | LIVE, floria.ro (partener real 2P, 7% comision) + 3gifts.ro + mariart.ro — model `/calatorie` |
+| `/flori` | LIVE, floria.ro (partener real 2P) + 3gifts.ro + mariart.ro — model `/calatorie` |
 | Banner publicitar 2P mutat pe pagina de magazin | Era pozitionat al 13/15 sectiuni (dupa tab-uri, CTA-uri, eligibilitate, articol blog) — vizibilitate aproape zero. Mutat imediat sub hero, inainte de tab navigation — confirmat vizual la ~300px de sus, inainte de fold pe majoritatea ecranelor. |
 | Pagina de magazin — produse reale automat pentru 20 magazine | `loadProducts()` in `page.tsx` citea deja `products.json` filtrat per `merchant_slug` — nu necesita nicio modificare de cod, doar date reale (vezi fix-ul feed combinat de mai sus). Verificat live pe libris.ro: 24 produse reale cu poze. |
 | `/servicii` — design colorat per categorie | Era complet monocrom (gri + accent emerald uniform peste tot). Acum: grid "Pagini dedicate" (13 tile-uri) cu gradient distinct per pagina, cele 6 categorii de servicii (Sanatate, Educatie, Software, Hosting, Telecom, Financiar) au fiecare propria culoare (icon badge, buton CTA, hover border), hero cu gradient multi-culoare. Pattern preluat de la `/categorii` care deja avea culori per categorie. Niciun portocaliu. |
@@ -2372,7 +2374,7 @@ folosim lime acolo.
 | Otto Broker (asigurări) | 2Performant | ✅ ACTIV — descoperit 17.07.2026 in output.json (aprobat, dar niciodata folosit), acum pe `/asigurari` |
 | Fiverr, Hostinger, NordVPN | Impact.com / direct | 🔄 In review / pending |
 | Semrush | Impact.com | ❌ RESPINS (18.06.2026, "business model mismatch") |
-| pescar-expert.ro | 2Performant | 🔄 Aplicat 29.06.2026 — aprobare in ~31 zile (5-6% comision, 25k produse) |
+| pescar-expert.ro | 2Performant | 🔄 Aplicat 29.06.2026 — aprobare in ~31 zile (25k produse) |
 | Fixato, MxEnduro, Trendiva, Viada, DYFashion | 2Performant | 🔄 De aplicat — vezi Probleme active |
 | TradeTracker | Direct | ⚠️ cod gata, secrets lipsesc |
 | CJ Affiliate | — | 🔄 Alex a aplicat, export CSV asteptat (seara 17.07.2026) — vezi Probleme active |

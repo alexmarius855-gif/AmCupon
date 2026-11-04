@@ -25,7 +25,6 @@ interface Magazin {
   cod_cupon: boolean;
   promotii: Promotie[];
   scor_final?: number;
-  comision?: string;
 }
 export interface BrandConfig {
   slug: string;          // ex: "altex.ro"

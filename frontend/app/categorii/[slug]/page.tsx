@@ -1,3 +1,4 @@
+import { CATEGORIE_PAGINA } from "@/lib/cadouri";
 import { criteriiCategorie } from "@/lib/criterii";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
@@ -45,7 +46,6 @@ interface Magazin {
   logo_url?: string;
   categorie: string;
   categorie_slug: string;
-  comision: string;
   rank?: number;
   scor_afiliere: number;
   scor_final: number;
@@ -96,10 +96,10 @@ export interface Produs {
   category?: string; brand?: string; merchant?: string; merchant_slug?: string;
 }
 
-// Produse RELEVANTE per categorie = produse de la magazinele care apartin
-// categoriei (potrivire pe merchant_slug=domeniu). categorisirea pe cat_slug din
-// products.json e nesigura (ex: navstore auto taguit "bijuterii") — nu o folosim.
-function loadProduse(merchantDomains: Set<string>, limit = 12): Produs[] {
+// Produse de la magazinele categoriei, si doar cele care chiar sunt din categorie: magazinul singur nu ajunge
+// (fond de ten la Bijuterii, lotiune de corp la Mancare). `cat_slug` vine din scripts/categorii_produse.py.
+function loadProduse(merchantDomains: Set<string>, slug: string, limit = 12): Produs[] {
+  const tinta = CATEGORIE_PAGINA[slug];
   try {
     const p = path.join(process.cwd(), "public", "products.json");
     if (!fs.existsSync(p)) return [];
@@ -111,6 +111,7 @@ function loadProduse(merchantDomains: Set<string>, limit = 12): Produs[] {
         if (!x.image || !x.title || !(x.price > 0)) return false; // exclude intrari promo (0 lei)
         const dom = (x.merchant_slug || x.merchant || "").toLowerCase();
         if (!merchantDomains.has(dom)) return false;
+        if (tinta && x.cat_slug !== tinta) return false;
         if (seen.has(x.title)) return false; // evita duplicate (navstore repeta titluri)
         seen.add(x.title);
         return true;
@@ -199,7 +200,7 @@ export default async function PaginaCategorie({
   if (!mag.length) notFound();
 
   const merchantDomains = new Set(mag.map((m) => (m.magazin || "").toLowerCase()));
-  const produse = loadProduse(merchantDomains, 12);
+  const produse = loadProduse(merchantDomains, slug, 12);
 
   const numeCateg = NUME_CATEGORIE[slug] || mag[0].categorie;
   const cuPromo   = mag.filter((m) => m.are_promotie).length;

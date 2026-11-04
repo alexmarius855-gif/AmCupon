@@ -126,7 +126,7 @@ export default function Page() {
   const sluguriRo = new Set(toate.filter(esteRomanesc).map((m) => String(m.magazin)));
   const blogAll = readJSON<Parameters<typeof HomeClient>[0]["blogPosts"]>("blog-latest.json", []);
   // Doar ce afiseaza sectiunea „Recomandate". Fisierul are si `comision` si `oferta` (textul
-  // retelei, uneori scris pentru afiliati: „Câștigă premii și comision de 19%!") — nu se
+  // retelei, uneori scris pentru afiliati: „Câștigă premii și comision!") — nu se
   // afisau, dar ajungeau in HTML-ul paginii. Aceeasi regula ca CAMPURI_NEFOLOSITE.
   const recomandate = (readJSON<Record<string, unknown>[]>("recomandate.json", []) || []).map((r) => ({
     magazin: String(r.magazin ?? ""), nume: String(r.nume ?? ""), logo_url: String(r.logo_url ?? ""),

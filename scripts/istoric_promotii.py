@@ -36,7 +36,7 @@ import sys
 from datetime import date, timedelta
 from pathlib import Path
 
-from promotii import (PRAG_DATA_ABSURDA, _cheie, _doar_numele_magazinului, azi_utc, curata_promotii,
+from promotii import (fara_segmente_afiliati, PRAG_DATA_ABSURDA, _cheie, _doar_numele_magazinului, azi_utc, curata_promotii,
                       pentru_alta_piata, text_pentru_afiliati, titlu_afisabil, zile_pana_la)
 
 RADACINA = Path(__file__).resolve().parent.parent
@@ -148,6 +148,13 @@ def recurata(istoric: dict, azi: str, dupa_slug: dict) -> int:
         intrari = istoric[slug]
         for k in list(intrari):
             e = intrari[k]
+            # „Voucher Black Friday + comision HAVIT 10%": oferta ramane, bucata pentru afiliati nu.
+            curat = fara_segmente_afiliati(e["titlu"], m)
+            if curat is None:
+                del intrari[k]
+                scoase += 1
+                continue
+            e["titlu"] = curat
             if not titlu_publicabil(e["titlu"], m) or e["ultima"] < limita:
                 del intrari[k]
                 scoase += 1
@@ -341,10 +348,13 @@ def test() -> None:
                                 "prima": "2026-07-01", "ultima": "2026-07-01", "expira": ""}
     ist["exemplu.ro"]["z|save30"] = {"k": "z|save30", "titlu": "SAVE30", "cod": True,
                                      "prima": "2026-07-01", "ultima": "2026-07-01", "expira": ""}
+    ist["exemplu.ro"]["seg|"] = {"k": "seg|", "titlu": "Voucher de toamna + comision HAVIT 10%", "cod": False,
+                                 "prima": "2026-07-01", "ultima": "2026-07-01", "expira": ""}
     ist["test.eu/x"] = {"a|": {"k": "a|", "titlu": "asd de test", "cod": False,
                                "prima": "2026-07-01", "ultima": "2026-07-01", "expira": ""}}
     scoase = recurata(ist, "2026-07-06", {"exemplu.ro": m})
     assert scoase == 4 and not {"x|", "y|", "z|save30"} & set(ist["exemplu.ro"]) and "test.eu/x" not in ist, scoase
+    assert ist["exemplu.ro"]["seg|"]["titlu"] == "Voucher de toamna", "bucata pentru afiliati a ramas in titlu"
     # uitarea dupa un an
     assert recurata(ist, "2027-08-01", {"exemplu.ro": m}) >= 1 and "exemplu.ro" not in ist
 

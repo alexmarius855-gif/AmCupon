@@ -173,7 +173,7 @@ def format_discount_short(m: dict) -> str:
         if nums:
             return f"-{nums[0]}%"
         return f"COD"
-    c = m.get("comision", "")
+    c = ""  # comisionul nostru nu se publica
     nums = [float(x) for x in re.findall(r"[\d.]+", c)]
     if nums:
         return f"-{max(nums):.0f}%"

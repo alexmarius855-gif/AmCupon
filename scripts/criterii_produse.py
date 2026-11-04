@@ -29,7 +29,7 @@ import sys
 import time
 import unicodedata
 from datetime import datetime, timedelta, timezone
-from urllib.parse import quote_plus
+from urllib.parse import quote_plus, unquote
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace", line_buffering=True)
@@ -38,6 +38,10 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 IESIRE = os.path.join(ROOT, "frontend", "public", "criterii.json")
 OUTPUT = os.path.join(ROOT, "frontend", "public", "output.json")
 VERIFICARI = os.path.join(ROOT, "data", "criterii-verificari.json")
+# Toti candidatii, confirmati sau nu; intre rulari de aici se reia. In `criterii.json` (public) ajung doar paginile aprobate.
+STARE = os.path.join(ROOT, "data", "criterii-stare.json")
+# Paginile citite produs cu produs. O pagina noua NU apare singura (cererea lui Alex, 04.11.2026).
+APROBATE = os.path.join(ROOT, "data", "criterii-aprobate.json")
 
 MIN_PRODUSE = 4
 MAX_PRODUSE = 24
@@ -50,6 +54,8 @@ VARSTA_MAXIMA_ZILE = 10
 # Masurat 04.11.2026: feed-urile raman in urma. AFI Sport 3.990 lei in feed fata de 4.790 pe site, ASUS si pcmadd cu pagini 404.
 BUGET_VERIFICARI = int(os.environ.get("CRITERII_VERIFICARI", "200"))
 ZILE_VERIFICARE = 3
+# Un pret confirmat pe site-ul magazinului ramane valabil atat; daca magazinul incepe sa blocheze, produsul iese singur.
+ZILE_VALABIL = 10
 UA_MAGAZIN = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126 Safari/537.36", "Accept-Language": "ro"}
 
 # Piese si accesorii care apar la orice cautare: un furtun nu e o masina de spalat.
@@ -60,6 +66,9 @@ ACCESORII = (r"\b(husa|huse|folie|suport|stand|furtun\w*|detergent|capsule de|ta
              r"recipient|farfurie|platou|bol|capac|instalare|montaj|unitate|stick|card|kit|pentru robot|pentru cuptor)\b")
 # Produsele folosite nu se amesteca cu cele noi: ar lua primele locuri, fiind cele mai ieftine.
 FOLOSITE = r"\b(second hand|sh|refurbished|recondition\w*|resigilat\w*|folosit\w*)\b"
+# Magazine care vand produse reconditionate fara s-o spuna in titlu (bsgmag.ro scrie pe site: „4 stari estetice: Ca nou, Excelent...").
+# Lange produse noi, pretul lor ar insela. Verificat pe pagina magazinului, 04.11.2026.
+MAGAZINE_RECONDITIONATE = {"bsgmag.ro"}
 
 
 def norm(t: str) -> str:
@@ -100,7 +109,7 @@ def dim(d: str) -> str:
 GB = r"(?<![\d.,])%s\s*gb\b"
 INCH = r"(?<![\d.,/-])%s(?:[.,]\d)?\s*inch\b"
 KG = r"(?<![\d.,/])%s(?:[.,]0)?\s*kg\b"
-LITRI = r"(?<![\d.,])(?:%s)(?:[.,]\d+)?\s*(?:l|litri)\b"
+LITRI = r"(?<![\d.,])(?:%s)\s*(?:l|litri)\b"
 BTU = r"(?<!\d)%s\s*btu\b"
 
 CRITERII = [
@@ -123,11 +132,11 @@ CRITERII = [
     C("masini-de-spalat-vase", "masina-de-spalat-vase-60-cm", "Mașini de spălat vase de 60 cm", "masina de spalat vase 60 cm", VASE, r"(?<!\d)(60|59[.,]\d)\s*cm\b", None, 800),
     C("masini-de-spalat-vase", "masina-de-spalat-vase-incorporabila", "Mașini de spălat vase încorporabile", "masina de spalat vase incorporabila", VASE, r"\bincorporabil\w*\b", None, 800),
     # ── Friteuze ──
-    C("friteuze", "friteuza-aer-cald-3-4-litri", "Friteuze cu aer cald de 3-4 litri", "friteuza cu aer cald 4 litri", FRITEUZA, LITRI % "3|4", None, 120, in_text=r"\b3-4 litri\b",
+    C("friteuze", "friteuza-aer-cald-3-4-litri", "Friteuze cu aer cald de 3-4 litri", "friteuza cu aer cald 4 litri", FRITEUZA, LITRI % r"3|3[.,]5|4", None, 120, in_text=r"\b3-4 litri\b",
       nota="Pentru 1-2 persoane sunt de obicei suficienți 3-4 litri."),
-    C("friteuze", "friteuza-aer-cald-5-6-litri", "Friteuze cu aer cald de 5-6 litri", "friteuza cu aer cald 5 litri", FRITEUZA, LITRI % "5|6", None, 120, in_text=r"\b4-6 litri\b",
+    C("friteuze", "friteuza-aer-cald-5-6-litri", "Friteuze cu aer cald de 5-6 litri", "friteuza cu aer cald 5 litri", FRITEUZA, LITRI % r"5|5[.,]\d+|6", None, 120, in_text=r"\b4-6 litri\b",
       nota="Pentru 3-4 persoane, alege în jur de 4-6 litri."),
-    C("friteuze", "friteuza-aer-cald-8-litri", "Friteuze cu aer cald de 8 litri sau mai mari", "friteuza cu aer cald 8 litri", FRITEUZA, LITRI % "7|8|9|10|11|12", None, 200, in_text=r"\b8-10 litri\b",
+    C("friteuze", "friteuza-aer-cald-8-litri", "Friteuze cu aer cald de 8 litri sau mai mari", "friteuza cu aer cald 8 litri", FRITEUZA, LITRI % r"8|8[.,]\d+|9|9[.,]\d+|10|10[.,]\d+|11|12", None, 200, in_text=r"\b8-10 litri\b",
       nota="Pentru 5 persoane sau două feluri deodată, caută 8-10 litri, de obicei în două coșuri."),
     C("friteuze", "friteuza-cu-doua-cosuri", "Friteuze cu două coșuri", "friteuza cu doua cosuri", FRITEUZA, r"\b(doua (cosuri|compartimente|zone)|2 cosuri|dual\w*|twin\w*|double)\b", None, 200, in_text=r"\b(un coș sau două|două coșuri)\b",
       nota="Cu două coșuri gătești două feluri la temperaturi diferite."),
@@ -181,18 +190,18 @@ CRITERII = [
     C("frigidere", "combina-frigorifica", "Combine frigorifice", "combina frigorifica", r"\bcombina frigorifica\b", None, NU_FRIGIDER, 800),
     # ── Bucatarie ──
     C("roboti-de-bucatarie", "robot-de-bucatarie", "Roboți de bucătărie", "robot de bucatarie", r"^(.{0,20})\brobot de bucatarie\b", None, None, 150),
-    C("roboti-de-bucatarie", "mixer-planetar", "Mixere planetare", "mixer planetar", r"\bmixer planetar\b", None, None, 150),
+    C("roboti-de-bucatarie", "mixer-planetar", "Mixere planetare", "mixer planetar", r"\bmixer planetar\b", None, r"\bpentru mixer\b|\bpresa\b", 150),
     C("cuptoare", "cuptor-cu-microunde", "Cuptoare cu microunde", "cuptor cu microunde", r"^(.{0,20})\bcuptor cu microunde\b", None, None, 150),
-    C("cuptoare", "cuptor-incorporabil", "Cuptoare încorporabile", "cuptor incorporabil", r"\bcuptor\b", r"\bincorporabil\b", r"\bmicrounde\b", 500),
+    C("cuptoare", "cuptor-incorporabil", "Cuptoare încorporabile", "cuptor incorporabil", r"\bcuptor\b", r"\bincorporabil\b", r"\bmicrounde\b|\bpachet\b", 500),
     C("cuptoare", "plita-inductie", "Plite cu inducție", "plita inductie", r"\bplita\b", r"\binductie\b", None, 150),
     # ── Scaune ──
     C("scaune-gaming", "scaun-gaming", "Scaune de gaming", "scaun gaming", r"^(.{0,25})scaun\b", r"\bgaming\b", r"\b(copii|roti|piston)\b", 250),
     C("scaune-birou", "scaun-birou-ergonomic", "Scaune de birou ergonomice", "scaun birou ergonomic", r"^(.{0,25})scaun\b", r"\bergonomic\b", r"\b(copii|gaming|roti|piston)\b", 200),
     # ── Audio si ceasuri ──
     C("casti-wireless", "casti-true-wireless", "Căști True Wireless", "casti true wireless", r"\bcasti\b", r"\b(true wireless|tws)\b", None, 50),
-    C("casti-wireless", "casti-anulare-zgomot", "Căști cu anulare a zgomotului", "casti anulare zgomot", r"\bcasti\b", r"\b(anc|noise cancel\w*|anulare\w*( activa)?( a)? zgomot\w*)\b", None, 80),
+    C("casti-wireless", "casti-anulare-zgomot", "Căști cu anulare a zgomotului", "casti anulare zgomot", r"\bcasti\b", r"\b(anc|noise cancel\w*|anulare\w*( activa)?( a)? zgomot\w*)\b", r"\b(antifonic\w*|bebe\w*|microfo\w* cu anulare\w*)\b", 80),
     C("casti-gaming", "casti-gaming", "Căști de gaming", "casti gaming", r"\bcasti\b", r"\bgaming\b", None, 60),
-    C("boxe-bluetooth", "boxa-bluetooth", "Boxe Bluetooth", "boxa bluetooth", r"^(.{0,15})\b(boxa|boxe)\b", r"\b(bluetooth|wireless)\b", r"\b(auto|masina)\b", 50),
+    C("boxe-bluetooth", "boxa-bluetooth", "Boxe Bluetooth", "boxa bluetooth", r"^(.{0,15})\b(boxa|boxe)\b", r"\b(bluetooth|wireless)\b", r"\b(auto|masina|lampa)\b", 50),
     C("boxe-bluetooth", "boxa-portabila", "Boxe portabile", "boxa portabila", r"^(.{0,15})\b(boxa|boxe)\b", r"\bportabil[ae]\b", r"\b(auto|masina)\b", 50),
     C("smartwatch-uri", "smartwatch-copii", "Smartwatch-uri pentru copii", "smartwatch copii", r"\b(smartwatch|ceas (smart|inteligent))\b", r"\bcopii\b", None, 60),
     C("smartwatch-uri", "smartwatch-gps", "Smartwatch-uri cu GPS", "smartwatch gps", r"\b(smartwatch|ceas (smart|inteligent))\b", r"\bgps\b", r"\bcopii\b", 100),
@@ -205,7 +214,7 @@ CRITERII = [
     # ── Anvelope ──
     *[C("anvelope", f"anvelope-iarna-{d.replace('/', '-').replace(' ', '-').lower()}", f"Anvelope de iarnă {d}", f"anvelope iarna {d}", r"\b(anvelop[ae]\w*|cauciuc\w*)\b", rf"(?<!\d){d.split('/')[0]}\s*/\s*{d.split('/')[1].split()[0]}\s*r\s*{d.split()[-1][1:]}\b.*\b(iarna|winter)\b|\b(iarna|winter)\b.*(?<!\d){d.split('/')[0]}\s*/\s*{d.split('/')[1].split()[0]}\s*r\s*{d.split()[-1][1:]}\b", None, 100) for d in ("205/55 R16", "195/65 R15", "225/45 R17")],
     # ── Parfumuri (modelele din topuri) ──
-    C("parfumuri-barbati", "parfum-dior-sauvage", "Parfum Dior Sauvage", "dior sauvage", r"\bsauvage\b", r"\b(parfum|eau de|edp|edt|ml)\b", r"\b(after shave|deodorant|deo\w*|gel de dus|sapun|balsam|crema|esenta)\b", 150, accesorii=False),
+    C("parfumuri-barbati", "parfum-dior-sauvage", "Parfum Dior Sauvage", "dior sauvage", r"\bsauvage\b", r"\b(parfum|eau de|edp|edt|ml)\b", r"\b(eau sauvage|after shave|deodorant|deo\w*|gel de dus|sapun|balsam|crema|esenta)\b", 150, accesorii=False),
     C("parfumuri-barbati", "parfum-paco-rabanne-invictus", "Parfum Paco Rabanne Invictus", "invictus paco rabanne", r"\binvictus\b", r"\b(parfum|eau de|edp|edt|ml)\b", r"\b(after shave|deodorant|deo\w*|gel de dus|sapun|esenta)\b", 100, accesorii=False),
     C("parfumuri-femei", "parfum-la-vie-est-belle", "Parfum Lancôme La Vie Est Belle", "la vie est belle lancome", r"\bla vie est belle\b", r"\b(parfum|eau de|edp|ml)\b", r"\b(lotiune|deodorant|gel de dus|crema|esenta)\b", 150, accesorii=False),
     C("parfumuri-femei", "parfum-ysl-libre", "Parfum Yves Saint Laurent Libre", "yves saint laurent libre", r"\blibre\b", r"\b(yves saint laurent|ysl)\b.*\b(parfum|eau de|edp|apa de)\b|\b(parfum|eau de|edp|apa de)\b.*\b(yves saint laurent|ysl)\b", r"\b(lotiune|deodorant|gel de dus|crema|esenta|ruj|fond de ten|mascara)\b", 150, accesorii=False),
@@ -217,11 +226,11 @@ CRITERII = [
     C("suplimente", "colagen-pulbere", "Colagen pulbere", "colagen pulbere", r"\bcolagen\b", r"\b(pulbere|pudra)\b", None, 40, accesorii=False),
     # ── Cosmetice ──
     C("cosmetice", "crema-protectie-spf-50", "Creme de protecție SPF 50", "crema protectie solara spf 50", r"\b(crema|fluid|lotiune|lapte)\b", r"\bspf ?50\b", None, 25, accesorii=False),
-    C("cosmetice", "ser-retinol", "Seruri cu retinol", "ser retinol", r"^(.{0,20})\bser\b", r"\bretinol\b", None, 25, accesorii=False),
-    C("cosmetice", "ser-vitamina-c", "Seruri cu vitamina C", "ser vitamina c", r"^(.{0,20})\bser\b", r"\bvitamina c\b", None, 25, accesorii=False),
+    C("cosmetice", "ser-retinol", "Seruri cu retinol", "ser retinol", r"^(.{0,20})\bser\b", r"\bretinol\b", r"\b(de|pentru) par\b", 25, accesorii=False),
+    C("cosmetice", "ser-vitamina-c", "Seruri cu vitamina C", "ser vitamina c", r"^(.{0,20})\bser\b", r"\bvitamina c\b", r"\b(de|pentru) par\b|\bretinol\b", 25, accesorii=False),
     C("cosmetice", "sampon-fara-sulfati", "Șampoane fără sulfați", "sampon fara sulfati", r"\bsampon\b", r"\bfara sulfati\b", None, 20, accesorii=False),
     # ── Scule ──
-    C("scule", "bormasina-cu-acumulator", "Bormașini cu acumulator", "bormasina cu acumulator", r"^(.{0,12})\b(bormasina|masina de gaurit|surubelnita electrica)\b", r"\b(acumulator|18 ?v|12 ?v|20 ?v)\b", None, 150, accesorii=False),
+    C("scule", "bormasina-cu-acumulator", "Bormașini cu acumulator", "bormasina cu acumulator", r"^(.{0,12})\b(bormasina|masina de gaurit|surubelnita electrica)\b", r"\b(acumulator|18 ?v|12 ?v|20 ?v)\b", r"\b(fara acumulator\w*|acumulator\w* ne\w*|solo)\b", 150, accesorii=False),
     C("scule", "polizor-unghiular-125-mm", "Polizoare unghiulare de 125 mm", "polizor unghiular 125 mm", r"^(.{0,12})\b(polizor|flex)\b", r"(?<!\d)125\s*mm\b", r"\b(disc|perie|set de discuri)\b", 100, accesorii=False),
     C("scule", "generator-curent", "Generatoare de curent", "generator curent", r"^(.{0,12})\bgenerator\b", r"\b(curent|electric\w*|benzina|inverter)\b", r"\b(fum|abur|ozon|semnal|ceata)\b", 400, accesorii=False),
     C("scule", "masina-tuns-gazon", "Mașini de tuns gazon", "masina de tuns gazon", r"\bmasina de tuns (gazon|iarba)\b", None, None, 300),
@@ -276,6 +285,15 @@ def se_potriveste(titlu: str, c: dict, pret: float) -> bool:
     """Titlul produsului contine caracteristica si pretul e al unui produs, nu al unei piese."""
     t = norm(titlu)
     if not re.search(c["baza"], t):
+        return False
+    # Pagina de „7 kg": prima capacitate din titlu e cea de spalare. „12 kg spalare, 7 kg stoarcere" nu e de 7 kg.
+    kg = re.fullmatch(r"masina-de-spalat-(\d+)-kg", c["slug"])
+    if kg:
+        primul = re.search(r"(?<![\d.,/])(\d+)(?:[.,]\d+)?\s*kg\b", t)
+        if primul and primul.group(1) != kg.group(1):
+            return False
+    # La parfum pretul depinde de volum: fara volum in titlu, cifra nu spune nimic.
+    if c["tema"].startswith("parfum") and not re.search(r"\b\d+\s*ml\b", t):
         return False
     if c["attr"] and not re.search(c["attr"], t):
         return False
@@ -348,9 +366,16 @@ def pret_din_pagina(html: str) -> tuple:
 
     for bloc in re.findall(r'<script[^>]+application/ld\+json[^>]*>([\s\S]*?)</script>', html, re.I):
         try:
-            r = caut(json.loads(bloc.strip()))
+            r = caut(json.loads(bloc.strip(), strict=False))
         except ValueError:
-            continue
+            # JSON stricat de magazin: citim doar din blocul produsului, nu din toata pagina.
+            r = None
+            if re.search(r'"@type"\s*:\s*"Product"', bloc):
+                g = re.search(r'"(?:price|lowPrice)"\s*:\s*"?([\d.,]+)', bloc)
+                if g and _pret_text(g.group(1)) > 0:
+                    disp = re.search(r'"availability"\s*:\s*"([^"]+)"', bloc)
+                    d = disp.group(1).lower() if disp else ""
+                    r = _pret_text(g.group(1)), (False if "outofstock" in d or "soldout" in d or "discontinued" in d else (True if d else None))
         if r:
             return r
     for tipar in (r'<meta[^>]+(?:property|name)="(?:product|og):price:amount"[^>]+content="([\d.,]+)"',
@@ -385,7 +410,52 @@ def aplica_verificare(p: dict, v: dict, azi: str):
         if nou.get("pret_vechi") and not (nou["pret"] < nou["pret_vechi"] <= nou["pret"] * 3):
             nou["pret_vechi"] = None
         return nou
-    return p
+    # Pagina s-a citit, dar nu spune pretul (de obicei produsul nu mai e acolo): nu mai trece drept confirmat.
+    nou = dict(p)
+    nou.pop("verificat", None)
+    return nou
+
+
+def titlu_curat(t: str) -> str:
+    """Fara caractere invizibile si fara textul alternativ lipit de titlu („Imagine produs Friteuza...")."""
+    return re.sub(r"^imagine produs\s+", "", re.sub(r"[\u200b-\u200d\ufeff]", "", t or ""), flags=re.I).strip()
+
+
+def adresa_magazin(p: dict) -> str:
+    """Adresa directa a produsului; la produsele vechi se ia din linkul de afiliere (`redirect_to`)."""
+    if p.get("url_magazin"):
+        return p["url_magazin"]
+    g = re.search(r"[?&]redirect_to=([^&]+)", p.get("url") or "")
+    return unquote(g.group(1)) if g else ""
+
+
+def confirmat(p: dict, azi: str) -> bool:
+    """Pretul a fost citit de pe pagina magazinului in ultimele ZILE_VALABIL zile."""
+    limita = (datetime.strptime(azi, "%Y-%m-%d") - timedelta(days=ZILE_VALABIL)).strftime("%Y-%m-%d")
+    return bool(p.get("verificat")) and p["verificat"] >= limita
+
+
+def aprobate() -> dict:
+    if not os.path.exists(APROBATE):
+        return {}
+    try:
+        return json.load(io.open(APROBATE, encoding="utf-8")).get("aprobate", {})
+    except ValueError:
+        return {}
+
+
+def imparte(lista: list, azi: str, aprobat: dict) -> tuple:
+    """(public, in_asteptare). Public = pagini aprobate, cu cel putin MIN_PRODUSE produse confirmate; doar produsele confirmate."""
+    public, asteapta = [], []
+    for x in lista:
+        bune = sorted((p for p in x["produse"] if confirmat(p, azi)), key=lambda q: q["pret"])
+        rand = {"slug": x["slug"], "confirmate": len(bune), "candidati": len(x["produse"])}
+        if x["slug"] in aprobat and len(bune) >= MIN_PRODUSE:
+            public.append(dict(x, produse=bune, publicat=True, magazine=sorted({p["magazin"] for p in bune})))
+        else:
+            rand["motiv"] = "neaprobata" if x["slug"] not in aprobat else f"sub {MIN_PRODUSE} produse confirmate"
+            asteapta.append(rand)
+    return public, asteapta
 
 
 def verifica_la_magazine(lista: list, azi: str) -> None:
@@ -426,16 +496,22 @@ def verifica_la_magazine(lista: list, azi: str) -> None:
     with ThreadPoolExecutor(8) as ex:
         list(ex.map(gazda, pe_gazda.values()))
 
+    # Mai multe produse pe aceeasi pagina = variante (fragranza: 30 ml, 50 ml, 100 ml). Pretul din pagina e al uneia, nu stim care.
+    baze: dict = {}
+    for u in toate:
+        baze.setdefault(u.split("#")[0], set()).add(u)
     scoase = corectate = 0
     for x in lista:
         noi = []
         for p in x["produse"]:
             v = cache.get(p.get("url_magazin") or "")
-            q = aplica_verificare(p, v, azi) if v else p
+            if v and v.get("pret") and len(baze.get((p.get("url_magazin") or "").split("#")[0], ())) > 1:
+                v = {"citit": True}
+            q = aplica_verificare(p, v, azi) if v else {k: w for k, w in p.items() if k != "verificat"}  # fara dovada in memorie, nu e confirmat
             if q is None:
                 scoase += 1
                 continue
-            corectate += int(q is not p and abs(q["pret"] - p["pret"]) >= 0.01)
+            corectate += int(abs(q["pret"] - p["pret"]) >= 0.01)
             noi.append(q)
         x["produse"] = sorted(noi, key=lambda q: q["pret"])
     io.open(VERIFICARI, "w", encoding="utf-8", newline="").write(json.dumps({u: v for u, v in cache.items() if u in toate}, ensure_ascii=False, indent=0))
@@ -463,11 +539,16 @@ def ruleaza() -> int:
         harta[s.split(".")[0].lower()] = s
 
     vechi = {}
-    if os.path.exists(IESIRE):
-        try:
-            vechi = {c["slug"]: c for c in json.load(io.open(IESIRE, encoding="utf-8")).get("criterii", [])}
-        except ValueError:
-            vechi = {}
+    for sursa in (STARE, IESIRE):
+        if not vechi and os.path.exists(sursa):
+            try:
+                vechi = {c["slug"]: c for c in json.load(io.open(sursa, encoding="utf-8")).get("criterii", [])}
+            except ValueError:
+                vechi = {}
+    for c in vechi.values():
+        for p in c.get("produse", []):
+            if not p.get("url_magazin"):
+                p["url_magazin"] = adresa_magazin(p)
     azi = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     cereri = {"n": 0}
 
@@ -554,15 +635,53 @@ def ruleaza() -> int:
     # Regulile se aplica si pe ce a ramas din rularile trecute, nu doar pe ce s-a improspatat acum.
     for x in lista:
         c = DUPA_SLUG[x["slug"]]
-        x["produse"] = [p for p in x["produse"] if se_potriveste(p["titlu"], c, p["pret"]) and not fpf.adresa_moarta(p.get("url_magazin") or "")]
+        for p in x["produse"]:
+            p["titlu"] = titlu_curat(p["titlu"])
+        x["produse"] = [p for p in x["produse"] if se_potriveste(p["titlu"], c, p["pret"]) and not fpf.adresa_moarta(p.get("url_magazin") or "")
+                        and p["magazin"] not in MAGAZINE_RECONDITIONATE]
     verifica_la_magazine(lista, azi)
     for x in lista:
         x["magazine"] = sorted({p["magazin"] for p in x["produse"]})
+    io.open(STARE, "w", encoding="utf-8", newline="").write(json.dumps({"actualizat": azi, "criterii": lista}, ensure_ascii=False, indent=0))
+    public, asteapta = imparte(lista, azi, aprobate())
     io.open(IESIRE, "w", encoding="utf-8", newline="").write(json.dumps(
-        {"_nota": "Generat de scripts/criterii_produse.py din cautarea in feed-urile 2Performant. Nu edita de mana.",
-         "actualizat": azi, "criterii": lista}, ensure_ascii=False, indent=0))
-    bune = [x for x in lista if len(x["produse"]) >= MIN_PRODUSE]
-    print(f"Criterii: {improspatate} improspatate cu {cereri['n']} cereri; {len(bune)} din {len(lista)} au cel putin {MIN_PRODUSE} produse.")
+        {"_nota": "Generat de scripts/criterii_produse.py. Doar pagini aprobate, doar produse cu pretul confirmat pe site-ul magazinului.",
+         "actualizat": azi, "criterii": public}, ensure_ascii=False, indent=0))
+    print(f"Criterii: {improspatate} improspatate cu {cereri['n']} cereri; publicate {len(public)} din {len(lista)}; in asteptare {len(asteapta)}.")
+    for r in asteapta:
+        print(f"  in asteptare: {r['slug'][:38]:38} {r['confirmate']:3} confirmate din {r['candidati']:3} ({r['motiv']})")
+    return 0
+
+
+def de_aprobat() -> int:
+    """Listeaza titlurile paginilor care nu sunt inca aprobate, ca sa fie citite inainte de publicare."""
+    azi = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    aprobat = aprobate()
+    for x in json.load(io.open(STARE, encoding="utf-8")).get("criterii", []):
+        if x["slug"] in aprobat:
+            continue
+        bune = [p for p in x["produse"] if confirmat(p, azi)]
+        if len(bune) < MIN_PRODUSE:
+            continue
+        print(f"\n## {x['slug']} ({len(bune)})")
+        for p in sorted(bune, key=lambda q: q["pret"]):
+            print(f"  {p['pret']:>9.2f} {p['magazin'][:14]:14} {p['titlu'][:88]}")
+    return 0
+
+
+def aproba(sluguri: list, nota: str) -> int:
+    """Trece paginile citite in lista de publicare. Nicio rulare automata nu poate publica fara acest pas."""
+    azi = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    lista = aprobate()
+    for s in sluguri:
+        if s not in DUPA_SLUG:
+            print(f"Nu exista criteriul {s}")
+            return 1
+        lista[s] = {"data": azi, "nota": nota}
+    io.open(APROBATE, "w", encoding="utf-8", newline="").write(json.dumps(
+        {"_nota": "Pagini /alege citite produs cu produs inainte de publicare. Se adauga cu: criterii_produse.py --aproba slug1,slug2",
+         "aprobate": dict(sorted(lista.items()))}, ensure_ascii=False, indent=0))
+    print(f"Aprobate: {len(lista)}")
     return 0
 
 
@@ -586,7 +705,7 @@ def test() -> int:
         ("televizor 55 Inch intra", se_potriveste("Xiaomi Televizor Xiaomi TV S Pro Mini LED 55 2026, 55 Inch, 138 CM", tv, 3818), True),
         ("suport TV 14-55 nu intra", se_potriveste("Suport Engros pentru televizor, 14-55 inch", tv, 49), False),
         ("friteuza 5 litri intra", se_potriveste("Friteuza cu Aer Cald Tefal Easy Fry Max, 5 litri", fr, 539), True),
-        ("friteuza 6,2 litri intra", se_potriveste("Friteuză cu Aer Cald Cosori Premium II Plus, 6,2 litri", fr, 769), True),
+        ("friteuza de 6,2 litri nu e pe pagina de 5-6 litri", se_potriveste("Friteuză cu Aer Cald Cosori Premium II Plus, 6,2 litri", fr, 769), False),
         ("friteuza 10 litri nu intra la 5-6", se_potriveste("Friteuză cu Aer Cald Cosori Dual Blaze TwinFry, 10 litri", fr, 1219), False),
         ("memorie RAM nu e laptop", se_potriveste("Memorie RAM 16 GB ddr4, 3200 Mhz, Nelbo, pentru laptop", lp, 728), False),
         ("laptop 16 GB intra", se_potriveste("Laptop de gaming ASUS TUF Gaming A16, 16 inch, Ryzen 7, 16 GB RAM", lp, 5469), True),
@@ -627,6 +746,33 @@ def test() -> int:
         ("pretul de pe site inlocuieste feed-ul", aplica_verificare({"pret": 3990, "pret_vechi": None}, {"pret": 4790.0, "data": "2026-11-04"}, "2026-11-04"), {"pret": 4790.0, "pret_vechi": None, "verificat": "2026-11-04"}),
         ("pretul vechi mai mic decat cel nou iese", aplica_verificare({"pret": 3990, "pret_vechi": 4500}, {"pret": 4790.0}, "2026-11-04")["pret_vechi"], None),
         ("verificarea care scoate", aplica_verificare({"pret": 1}, {"sters": True}, "2026-11-04"), None),
+        ("JSON cu caracter de control in text: pretul se citeste", pret_din_pagina('<script type="application/ld+json">{"@type":"Product","description":"a\nb","offers":{"price":"1316.99","priceCurrency":"RON"}}</script>'), (1316.99, None)),
+        ("JSON stricat: pretul se ia din blocul produsului", pret_din_pagina('<script type="application/ld+json">{"@type":"Product","name":"a"b","offers":{"price":"32.50"}}</script>'), (32.5, None)),
+        ("JSON stricat, stoc epuizat", pret_din_pagina('<script type="application/ld+json">{"@type":"Product","name":"a"b","offers":{"price":"32.50","availability":"https://schema.org/OutOfStock"}}</script>'), (32.5, False)),
+        ("pagina citita fara pret nu mai e confirmata", "verificat" in aplica_verificare({"pret": 1, "verificat": "2026-11-01"}, {"citit": True}, "2026-11-04"), False),
+        ("adresa directa din linkul de afiliere", adresa_magazin({"url": "https://event.2performant.com/events/click?a=1&redirect_to=https%3A%2F%2Fa.ro%2Fp%3Fx%3D1"}), "https://a.ro/p?x=1"),
+        ("adresa existenta ramane", adresa_magazin({"url_magazin": "https://b.ro/p", "url": "x?redirect_to=y"}), "https://b.ro/p"),
+        ("pret confirmat recent", confirmat({"verificat": "2026-11-01"}, "2026-11-04"), True),
+        ("pret confirmat prea demult", confirmat({"verificat": "2026-10-01"}, "2026-11-04"), False),
+        ("fara dovada nu e confirmat", confirmat({"pret": 1}, "2026-11-04"), False),
+        ("pagina neaprobata nu apare, oricate produse ar avea", imparte([{"slug": "x", "produse": [{"pret": i, "magazin": "a", "verificat": "2026-11-04"} for i in range(9)]}], "2026-11-04", {})[0], []),
+        ("pagina aprobata sub prag nu apare", imparte([{"slug": "x", "produse": [{"pret": i, "magazin": "a", "verificat": "2026-11-04"} for i in range(3)] + [{"pret": 9, "magazin": "a"}]}], "2026-11-04", {"x": {}})[0], []),
+        ("pe pagina aprobata intra doar produsele confirmate", len(imparte([{"slug": "x", "produse": [{"pret": i, "magazin": "a", "verificat": "2026-11-04"} for i in range(4)] + [{"pret": 9, "magazin": "a"}]}], "2026-11-04", {"x": {}})[0][0]["produse"]), 4),
+        ("12 kg spalare nu e pe pagina de 7 kg", se_potriveste("Masina de spalat rufe semi-automata Nobeltek NSWM 12.7S, 12 kg spalare, 7 kg stoarcere", DUPA_SLUG["masina-de-spalat-7-kg"], 1251), False),
+        ("7 kg spalare ramane pe pagina de 7 kg", se_potriveste("Masina de spalat rufe semi-automata Nobeltek NSWM 7.3B, 7 kg spalare, 3 kg stoarcere", DUPA_SLUG["masina-de-spalat-7-kg"], 885), True),
+        ("4,7 litri nu e 3-4 litri", se_potriveste("Friteuza cu aer cald HAEGER MAGIC WINDOW, 1200W, Capacitate 4.7L", DUPA_SLUG["friteuza-aer-cald-3-4-litri"], 299), False),
+        ("3,5 litri e 3-4 litri", se_potriveste("Friteuza cu aer cald, Salente AirFit, 1500 W, 3,5 l", DUPA_SLUG["friteuza-aer-cald-3-4-litri"], 310), True),
+        ("7 litri nu e 8 litri sau mai mare", se_potriveste("Friteuza cu aer cald AIWA AFR-7000, 7 L, 1800W", DUPA_SLUG["friteuza-aer-cald-8-litri"], 412), False),
+        ("presa pentru mixer nu e mixer", se_potriveste("Presa pentru role Smeg - SMPR01, pentru mixer planetar", DUPA_SLUG["mixer-planetar"], 544), False),
+        ("castile antifonice de bebe nu sunt ANC", se_potriveste("Casti Antifonice 2 in 1 Pentru Bebe si Copii 3-48 luni, anulare zgomot", DUPA_SLUG["casti-anulare-zgomot"], 102), False),
+        ("microfonul cu anulare nu e ANC", se_potriveste("Casti Stereo Logitech H390, USB-C, Microfon cu anulare zgomot", DUPA_SLUG["casti-anulare-zgomot"], 200), False),
+        ("ANC ramane", se_potriveste("Casti Stereo Wireless Acefast H9, Bluetooth, A2DP, ANC, Gri", DUPA_SLUG["casti-anulare-zgomot"], 118), True),
+        ("serul de par nu e ser cu retinol pentru ten", se_potriveste("Ser de par cu argan, Retinol Complex, Cristale Lichide, 50ml", DUPA_SLUG["ser-retinol"], 72), False),
+        ("bormasina fara acumulator iese", se_potriveste("Masina de gaurit Bormasina 20V 1/4 pentru Rigips - fara acumulator", DUPA_SLUG["bormasina-cu-acumulator"], 341), False),
+        ("Eau Sauvage e alt parfum", se_potriveste("Christian Dior Eau Sauvage eau de Toilette pentru barbati 100 ml", DUPA_SLUG["parfum-dior-sauvage"], 544), False),
+        ("parfum fara volum in titlu iese", se_potriveste("DIOR Sauvage Eau de Toilette pentru barbati", DUPA_SLUG["parfum-dior-sauvage"], 919), False),
+        ("parfum cu volum ramane", se_potriveste("Christian Dior Sauvage Apa de toaleta, 100 ml", DUPA_SLUG["parfum-dior-sauvage"], 507), True),
+        ("textul lipit de titlu iese", titlu_curat("\u200bImagine produs Friteuza dubla"), "Friteuza dubla"),
         ("slug-uri unice", len(DUPA_SLUG) == len(CRITERII), True),
         ("fiecare tema are nume", [c["tema"] for c in CRITERII if c["tema"] not in NUME_TEME], []),
         ("pagina sub prag: un magazin nu ia tot", len(aduna([{"titlu": f"Produs {i}", "pret": i, "magazin": "a"} for i in range(1, 30)], 24, 8)), 8),
@@ -645,13 +791,21 @@ def verifica_date() -> int:
     d = json.load(io.open(IESIRE, encoding="utf-8"))
     magazine = {m["magazin"]: m for m in json.load(io.open(OUTPUT, encoding="utf-8"))}
     rele = []
+    azi = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    aprobat = aprobate()
     for x in d.get("criterii", []):
         c = DUPA_SLUG.get(x["slug"])
         if not c:
             rele.append(f"{x['slug']}: criteriu necunoscut")
             continue
+        if x["slug"] not in aprobat:
+            rele.append(f"{x['slug']}: pagina publica fara sa fi fost citita")
+        if len(x["produse"]) < MIN_PRODUSE:
+            rele.append(f"{x['slug']}: sub {MIN_PRODUSE} produse")
         for p in x["produse"]:
             nume = f"{x['slug']} / {p['titlu'][:50]}"
+            if not confirmat(p, azi):
+                rele.append(f"{nume}: pret neconfirmat pe site-ul magazinului")
             if not se_potriveste(p["titlu"], c, p["pret"]):
                 rele.append(f"{nume}: nu respecta regula")
             if "event.2performant.com" not in p["url"] or "redirect_to=" not in p["url"]:
@@ -676,6 +830,10 @@ if __name__ == "__main__":
         sys.exit(test())
     if "--verifica" in sys.argv:
         sys.exit(verifica_date())
+    if "--de-aprobat" in sys.argv:
+        sys.exit(de_aprobat())
+    if "--aproba" in sys.argv:
+        sys.exit(aproba(sys.argv[sys.argv.index("--aproba") + 1].split(","), "titluri citite produs cu produs"))
     try:
         sys.exit(ruleaza())
     except Exception as e:  # noqa: BLE001 — pipeline-ul merge mai departe, criteriile raman cum sunt

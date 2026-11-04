@@ -66,8 +66,8 @@ jobs:
             echo "Ruleaza fetch_2p_api cu email+parola..."
             python fetch_2p_api.py
           else
-            echo "TWOPEFORMANT_EMAIL nu e setat — ruleaza process_data.py cu date existente"
-            python process_data.py
+            echo "TWOPEFORMANT_EMAIL nu e setat: fara date noi nu publicam nimic."
+            exit 1
           fi
 
       # ── 4. Profitshare (optional) ─────────────────────────────────────────
@@ -208,42 +208,7 @@ jobs:
       - name: Calculeaza scor comercianti si genereaza postari zilnice
         working-directory: scripts
         run: |
-          python scor_comercianti.py
           python generate_postari_simple.py
-
-      # ── 5b. Alerte de pret per magazin (Brevo, ALERT_STORES) ────────────────
-      - name: Verifica si trimite alerte cod nou pe magazin
-        continue-on-error: true
-        working-directory: scripts
-        env:
-          BREVO_API_KEY:      ${{ secrets.BREVO_API_KEY }}
-          BREVO_LIST_ID:      "2"
-          BREVO_SENDER_EMAIL: newsletter@amcupon.ro
-          BREVO_SENDER_NAME:  AmCupon.ro
-        run: |
-          if [ -n "$BREVO_API_KEY" ]; then
-            echo "Verific coduri noi si trimit alerte..."
-            python check_price_alerts.py
-          else
-            echo "BREVO_API_KEY nu e setat — skip alerte de pret"
-          fi
-
-      # ── 5c. Seria de bun-venit, ziua 3 + ziua 7 (Brevo, WELCOME_STEP) ───────
-      - name: Continua seria de bun-venit (ziua 3 / ziua 7)
-        continue-on-error: true
-        working-directory: scripts
-        env:
-          BREVO_API_KEY:      ${{ secrets.BREVO_API_KEY }}
-          BREVO_LIST_ID:      "2"
-          BREVO_SENDER_EMAIL: newsletter@amcupon.ro
-          BREVO_SENDER_NAME:  AmCupon.ro
-        run: |
-          if [ -n "$BREVO_API_KEY" ]; then
-            echo "Verific abonati eligibili pt ziua 3 / ziua 7..."
-            python send_welcome_series.py
-          else
-            echo "BREVO_API_KEY nu e setat — skip seria de bun-venit"
-          fi
 
       # ── 6. Product Feeds API ──────────────────────────────────────────────
       - name: Fetch product feeds (2Performant API)
@@ -307,6 +272,12 @@ jobs:
       - name: Repara linkuri produse fara tracking de afiliere
         working-directory: scripts
         run: python fix_product_links.py
+
+      # ── Categoria fiecarui produs, pe cuvant intreg, si pentru produsele pastrate din rularile trecute ──
+      - name: Pune produsele in categoria corecta
+        working-directory: scripts
+        run: python categorii_produse.py
+
 
       # ── 7. Bannere campanii (2Performant) — doar pipeline complet ─────────
       - name: Fetch bannere campanii (2Performant API)
@@ -406,43 +377,6 @@ jobs:
         if: env.IS_FULL_DAILY == 'true'
         working-directory: scripts
         run: python generate_comparisons.py
-
-      # ── 9. Newsletter zilnic (Brevo SMTP) — DOAR la 08:00 Romania ──────────
-      - name: Trimite newsletter zilnic
-        if: env.IS_FULL_DAILY == 'true'
-        continue-on-error: true
-        working-directory: scripts
-        env:
-          BREVO_SMTP_USER:    ${{ secrets.BREVO_SMTP_USER }}
-          BREVO_SMTP_PASS:    ${{ secrets.BREVO_SMTP_PASS }}
-          BREVO_API_KEY:      ${{ secrets.BREVO_API_KEY }}
-          BREVO_LIST_ID:      "2"
-          BREVO_SENDER_EMAIL: newsletter@amcupon.ro
-          BREVO_SENDER_NAME:  AmCupon.ro
-        run: |
-          if [ -n "$BREVO_API_KEY" ]; then
-            echo "Trimite newsletter via Brevo API..."
-            python send_newsletter.py
-          else
-            echo "BREVO_API_KEY nu e setat — skip newsletter (acesta e folosit pentru campanie, nu BREVO_SMTP_PASS)"
-          fi
-
-      # ── 10. Telegram canal oferte ──────────────────────────────────────────
-      - name: Postare Telegram canal oferte
-        if: env.IS_FULL_DAILY == 'true' && env.TELEGRAM_PAUZA != 'true'
-        continue-on-error: true
-        working-directory: scripts
-        env:
-          TELEGRAM_BOT_TOKEN:  ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
-        # Independente: pe 14-16.09.2026 telegram_daily.py a picat (Markdown stricat de un „_")
-        # si, sub `bash -e`, post_telegram.py nici n-a mai pornit — canalul a tacut 3 zile.
-        run: |
-          rc=0
-          python telegram_daily.py || rc=1
-          python post_telegram.py || rc=1
-          python telegram_oferte_mari.py --trimite || rc=1
-          exit $rc
 
       # ── 11. Generator continut social media pe nise ────────────────────────
       - name: Genereaza continut social media pe nise
@@ -549,6 +483,40 @@ jobs:
         working-directory: scripts
         run: python track_sitemap_dates.py
 
+      # ── 13a. POARTA DE PUBLICARE (04.11.2026, cererea lui Alex: verificarea vine INAINTE) ──
+      # Pana azi garzile rulau dupa `git push`: o rulare rosie publica oricum. Acum, daca ceva pica aici,
+      # pasii urmatori se sar singuri (commit, IndexNow, newsletter, Telegram), iar site-ul ramane pe ultima
+      # versiune buna. Nu pune `continue-on-error` pe pasii astia: asta ar deschide poarta.
+      - name: Scoate datele private (comisionul nu iese din rulare)
+        working-directory: scripts
+        run: python campuri_private.py
+
+      - name: Verifica produsele de pe paginile /alege
+        working-directory: scripts
+        run: python criterii_produse.py --verifica
+
+      - name: Verifica promotiile inainte de publicare (fara expirate, fara contoare false)
+        working-directory: scripts
+        run: python verifica_promotii.py
+
+      - name: Verifica starea site-ului inainte de publicare
+        working-directory: scripts
+        run: python verifica_site.py
+
+      - name: Construieste site-ul si verifica fiecare pagina inainte de publicare
+        working-directory: frontend
+        env:
+          NEXT_TELEMETRY_DISABLED: "1"
+        run: |
+          npm ci --no-audit --no-fund
+          npm run build
+          npx next start -p 3300 > /tmp/next-start.log 2>&1 &
+          for i in $(seq 1 45); do curl -sf -o /dev/null http://localhost:3300/sitemap.xml && break; sleep 2; done
+          cd ../scripts
+          python verifica_site.py --html
+          python audit_live.py --baza http://localhost:3300 --strict
+          kill %1 || true
+
       - name: Commit si push date actualizate
         run: |
           git config user.name  "github-actions[bot]"
@@ -568,6 +536,7 @@ jobs:
           git add frontend/public/extensie.json         || true
           git add data/sitemap_fingerprints.json       || true
           git add data/extra_merchants.json            || true
+          git add data/promotii_2p.csv data/impact_campaigns.csv || true
           git add frontend/public/digest-today.json    || true
           git add data/digest-today.txt                || true
           git add frontend/public/nav-index.json       || true
@@ -583,11 +552,11 @@ jobs:
           git add frontend/public/comparisons.json        || true
           git add frontend/public/banner-daily.png     || true
           git add frontend/public/banner-story.png     || true
-          git add data/RAPORT-TOP-CASTIG.md            || true
           git add frontend/public/banners.json         || true
           git add frontend/public/top-produse.json     || true
           git add frontend/public/criterii.json        || true
           git add data/criterii-verificari.json        || true
+          git add data/criterii-stare.json             || true
           git add data/telegram-oferte-trimise.json    || true
           git add data/output.json                     || true
           git add data/price_alert_snapshot.json       || true
@@ -603,7 +572,6 @@ jobs:
           git add data/postari-zilnice.txt              || true
           git add data/bannere-gata-de-postat.json      || true
           git add data/bannere-gata-de-postat.txt       || true
-          git add data/scor-comercianti.csv             || true
 
           if git diff --staged --quiet; then
             echo "Nicio schimbare — skip commit"
@@ -615,6 +583,77 @@ jobs:
               sleep $((i * 10))
             done
           fi
+
+      # ── 5b. Alerte de pret per magazin (Brevo, ALERT_STORES) ────────────────
+      - name: Verifica si trimite alerte cod nou pe magazin
+        continue-on-error: true
+        working-directory: scripts
+        env:
+          BREVO_API_KEY:      ${{ secrets.BREVO_API_KEY }}
+          BREVO_LIST_ID:      "2"
+          BREVO_SENDER_EMAIL: newsletter@amcupon.ro
+          BREVO_SENDER_NAME:  AmCupon.ro
+        run: |
+          if [ -n "$BREVO_API_KEY" ]; then
+            echo "Verific coduri noi si trimit alerte..."
+            python check_price_alerts.py
+          else
+            echo "BREVO_API_KEY nu e setat — skip alerte de pret"
+          fi
+
+      # ── 5c. Seria de bun-venit, ziua 3 + ziua 7 (Brevo, WELCOME_STEP) ───────
+      - name: Continua seria de bun-venit (ziua 3 / ziua 7)
+        continue-on-error: true
+        working-directory: scripts
+        env:
+          BREVO_API_KEY:      ${{ secrets.BREVO_API_KEY }}
+          BREVO_LIST_ID:      "2"
+          BREVO_SENDER_EMAIL: newsletter@amcupon.ro
+          BREVO_SENDER_NAME:  AmCupon.ro
+        run: |
+          if [ -n "$BREVO_API_KEY" ]; then
+            echo "Verific abonati eligibili pt ziua 3 / ziua 7..."
+            python send_welcome_series.py
+          else
+            echo "BREVO_API_KEY nu e setat — skip seria de bun-venit"
+          fi
+
+      # ── 9. Newsletter zilnic (Brevo SMTP) — DOAR la 08:00 Romania ──────────
+      - name: Trimite newsletter zilnic
+        if: env.IS_FULL_DAILY == 'true'
+        continue-on-error: true
+        working-directory: scripts
+        env:
+          BREVO_SMTP_USER:    ${{ secrets.BREVO_SMTP_USER }}
+          BREVO_SMTP_PASS:    ${{ secrets.BREVO_SMTP_PASS }}
+          BREVO_API_KEY:      ${{ secrets.BREVO_API_KEY }}
+          BREVO_LIST_ID:      "2"
+          BREVO_SENDER_EMAIL: newsletter@amcupon.ro
+          BREVO_SENDER_NAME:  AmCupon.ro
+        run: |
+          if [ -n "$BREVO_API_KEY" ]; then
+            echo "Trimite newsletter via Brevo API..."
+            python send_newsletter.py
+          else
+            echo "BREVO_API_KEY nu e setat — skip newsletter (acesta e folosit pentru campanie, nu BREVO_SMTP_PASS)"
+          fi
+
+      # ── 10. Telegram canal oferte ──────────────────────────────────────────
+      - name: Postare Telegram canal oferte
+        if: env.IS_FULL_DAILY == 'true' && env.TELEGRAM_PAUZA != 'true'
+        continue-on-error: true
+        working-directory: scripts
+        env:
+          TELEGRAM_BOT_TOKEN:  ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+        # Independente: pe 14-16.09.2026 telegram_daily.py a picat (Markdown stricat de un „_")
+        # si, sub `bash -e`, post_telegram.py nici n-a mai pornit — canalul a tacut 3 zile.
+        run: |
+          rc=0
+          python telegram_daily.py || rc=1
+          python post_telegram.py || rc=1
+          python telegram_oferte_mari.py --trimite || rc=1
+          exit $rc
 
       # ── 14b. IndexNow — anunta Bing/Yandex de pagini noi (fara cont) ──────
       - name: Trimite URL-uri noi catre IndexNow (Bing/Yandex)
@@ -663,26 +702,6 @@ jobs:
           BANNER_PUBLIC_URL: "https://amcupon.ro/banner-daily.png"
         run: python post_instagram.py
 
-      # ── 16. Garda: nicio promotie expirata sau contor fals pe site ─────────
-      # Pe 13-16.09.2026 site-ul a afisat 58 de promotii expirate cu workflow VERDE. Ultimul pas
-      # si `always()`: nu opreste actualizarea datelor, dar rularea iese ROSIE daca scapa una.
-      - name: Verifica promotiile publicate (fara expirate, fara contoare false)
-        if: always()
-        working-directory: scripts
-        run: python verifica_promotii.py
-
-      # ── 17. Garda de stare: ce s-a schimbat de la ultima rulare ────────────
-      # 22.09.2026. Pasul 16 verifica promotiile; acesta verifica SITE-UL ca intreg si, in plus,
-      # isi tine minte starea (data/stare-site.json, comisa): la fiecare rulare compara cu cea
-      # dinainte si scrie deltele. Motivul: `procent_succes`/`folosit_de` — semnale inventate —
-      # au reaparut de CINCI ori in trei luni, fiindca nimic nu se uita la date ca intreg intre
-      # rulari. La prima rulare reala garda le-a gasit pe 578 de magazine in 10 secunde.
-      # `always()` si ultimul, ca o problema gasita sa nu blocheze actualizarea datelor.
-      - name: Verifica starea site-ului (si ce s-a schimbat de la ultima rulare)
-        if: always()
-        working-directory: scripts
-        run: python verifica_site.py
-
       # ── 17b. Memoria gardii ───────────────────────────────────────────────
       # Garda de mai sus compara starea de acum cu cea de la rularea trecuta, dar ruleaza DUPA
       # commit — iar fiecare rulare porneste dintr-un checkout curat. Fara pasul asta, fisierul
@@ -694,7 +713,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/stare-site.json || true
+          git add data/stare-site.json data/price_alert_snapshot.json data/telegram-oferte-trimise.json || true
           # Scrise de pasul IndexNow, tot dupa commit: fara ele s-ar retrimite aceleasi adrese la fiecare rulare.
           git add data/indexnow_seen.json data/indexnow_amprente.json || true
           if git diff --staged --quiet; then

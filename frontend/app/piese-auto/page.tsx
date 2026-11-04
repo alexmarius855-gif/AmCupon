@@ -10,7 +10,7 @@ interface Promotie { nume: string; cod_cupon: string; landing_page: string; zile
 interface Magazin {
   magazin: string; url: string; url_afiliat: string; logo_url?: string;
   categorie: string; categorie_slug?: string; scor_final: number;
-  are_promotie: boolean; cod_cupon: boolean; promotii: Promotie[]; comision?: string;
+  are_promotie: boolean; cod_cupon: boolean; promotii: Promotie[];
 }
 
 export const metadata: Metadata = {

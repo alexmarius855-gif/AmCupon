@@ -75,6 +75,11 @@ def incarca(nume: str):
 # ─── Reguli pe DATE ───────────────────────────────────────────────────────────
 
 def verifica_date() -> dict:
+    from campuri_private import probleme as private_scapate
+
+    scapate = private_scapate()
+    if scapate:
+        semnaleaza("date private", "comisionul nostru a ajuns intr-un fisier public", scapate)
     stare: dict = {}
 
     magazine = incarca("output.json") or []

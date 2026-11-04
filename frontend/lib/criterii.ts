@@ -32,6 +32,8 @@ export interface Criteriu {
   actualizat: string;
   produse: ProdusCriteriu[];
   magazine?: string[];
+  /** Pusa de scripts/criterii_produse.py: pagina a fost citita, iar preturile sunt confirmate pe site-ul magazinului. */
+  publicat?: boolean;
 }
 
 export const MIN_PRODUSE = 4;
@@ -43,7 +45,9 @@ export function criterii(): Criteriu[] {
   if (!_toate) {
     try {
       const d = JSON.parse(fs.readFileSync(path.join(process.cwd(), "public", "criterii.json"), "utf-8"));
-      _toate = ((d.criterii || []) as Criteriu[]).filter((c) => (c.produse || []).length >= MIN_PRODUSE);
+      _toate = ((d.criterii || []) as Criteriu[])
+        .map((c) => ({ ...c, produse: (c.produse || []).filter((p) => p.verificat) }))
+        .filter((c) => c.publicat === true && c.produse.length >= MIN_PRODUSE);
     } catch {
       _toate = [];
     }

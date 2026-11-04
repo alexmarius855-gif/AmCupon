@@ -40,7 +40,6 @@ export interface Magazin {
   logo_url?: string;
   categorie: string;
   categorie_slug?: string;
-  comision: string;
   are_promotie: boolean;
   cod_cupon: boolean;
   zile_ramase: number;

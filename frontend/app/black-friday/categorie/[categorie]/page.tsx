@@ -1,3 +1,4 @@
+import { CATEGORIE_PAGINA } from "@/lib/cadouri";
 import { criteriiCategorie } from "@/lib/criterii";
 import CriteriiTema from "../../../components/CriteriiTema";
 import fs from "fs";
@@ -91,11 +92,14 @@ export default async function BlackFridayCategoriePage({ params }: { params: Pro
   const urlSub = new Set(sub.map((p) => p.url));
   const raw = citeste<{ products?: ProdusFeed[] } | ProdusFeed[]>("products.json", []);
   const toateProdusele = Array.isArray(raw) ? raw : raw.products || [];
+  const tintaCategorie = CATEGORIE_PAGINA[categorie];
   const peMagazin = new Map<string, number>();
   const dinFeed: ProdusFeed[] = [];
   for (const p of toateProdusele) {
     if (dinFeed.length >= LA_MAXIM - Math.min(sub.length, LA_MAXIM)) break;
     const m = p.merchant_slug || "";
+    // Produsul trebuie sa fie chiar din categoria paginii, nu doar de la un magazin din ea.
+    if (tintaCategorie && p.cat_slug !== tintaCategorie) continue;
     if (!slugs.has(m) || p.is_promo || typeof p.price !== "number" || p.price <= 0 || !p.url || !imagineSigura(p.image) || urlSub.has(p.url)) continue;
     if ((peMagazin.get(m) || 0) >= 2) continue;
     peMagazin.set(m, (peMagazin.get(m) || 0) + 1);

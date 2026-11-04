@@ -146,6 +146,10 @@ def main() -> int:
     with open(IESIRE, "w", encoding="utf-8") as f:
         json.dump({"pagini": rez, "titluri_identice": titluri, "descrieri_identice": descrieri, "linkuri_rupte": rupte}, f, ensure_ascii=False, indent=0)
     print("\nRaport:", IESIRE)
+    # Inainte de publicare, orice problema opreste rularea: site-ul ramane pe ultima versiune buna.
+    if "--strict" in arg and (curate != len(rez) or titluri or descrieri or rupte):
+        print("\nOPRIT: paginile de mai sus nu se publica.")
+        return 1
     return 0
 
 

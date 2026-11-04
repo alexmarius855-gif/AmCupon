@@ -152,7 +152,7 @@ def format_discount(m, max_len=70):
     # Extrage procent din textul promotiei
     if promo.get("procent_reducere"):
         return f"Reducere {promo['procent_reducere']}%"
-    c = m.get("comision", "")
+    c = ""  # comisionul nostru nu se publica
     nums = [float(x) for x in re.findall(r"[\d.]+", c)]
     if nums:
         return f"Cashback pana la {max(nums):.0f}%"

@@ -34,7 +34,6 @@ interface Magazin {
   logo_url?: string;
   categorie: string;
   categorie_slug?: string;
-  comision: string;
   rank?: number;
   scor_afiliere: number;
   scor_final: number;
