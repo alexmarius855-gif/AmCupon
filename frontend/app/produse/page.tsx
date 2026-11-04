@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { CAT_META } from "./categorie-meta";
 import { Metadata } from "next";
 import fs from "fs";
 import path from "path";
@@ -116,6 +118,18 @@ export default function ProduseePage() {
         banners={bannersData.banners || []}
         an={an}
       />
+      <nav aria-label="Produse pe categorii" className="max-w-6xl mx-auto px-4 pb-10">
+        <p className="text-sm font-black text-[var(--foreground)] mb-3">Produse pe categorii</p>
+        <ul className="flex flex-wrap gap-2">
+          {Object.entries(CAT_META).filter(([slug]) => slug !== "altele").map(([slug, c]) => (
+            <li key={slug}>
+              <Link href={`/produse/${slug}`} className="inline-block text-sm px-3 py-1.5 rounded-full border border-[var(--border-strong)] text-[var(--text-soft)] hover:text-[var(--accent-text)] hover:border-[var(--accent-text)]">
+                {c.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </>
   );
 }

@@ -210,7 +210,7 @@ export default function CarduriBancarePage() {
                   </div>
 
                   <div className="flex flex-col sm:flex-row gap-3">
-                    <a href={c.url} target="_blank" rel="nofollow noopener noreferrer"
+                    <a href={c.url} target="_blank" rel="sponsored nofollow noopener noreferrer"
                       className="flex-1 bg-[#ddf93c] hover:bg-[#c3dd2c] text-[#0c1000] font-black text-sm py-3 px-6 rounded-xl text-center transition-colors">
                       Vezi {c.name} →
                     </a>

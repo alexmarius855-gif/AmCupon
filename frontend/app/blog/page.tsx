@@ -104,6 +104,7 @@ export default async function BlogPage(
     (perMacro[m] ||= []).push(p);
   }
   const categoriiCuPosts = MACRO_ORDINE.filter(m => (perMacro[m]?.length || 0) > 0);
+  const faraCategorie = toatePosts.filter(p => !getMacro(p.category));
 
   // Vedere categorie: paginata
   const postsCat = esteHub ? [] : (perMacro[categorieActiva] || []);
@@ -266,6 +267,16 @@ export default async function BlogPage(
                             ))}
                           </ul>
                           {arts.length > 6 && (
+                            <details className="mt-2.5 text-sm">
+                              <summary className="cursor-pointer text-[var(--text-muted)] hover:text-[var(--accent-text)]">Toate ghidurile din categorie</summary>
+                              <ul className="space-y-2 mt-2">
+                                {arts.slice(6).map(p => (
+                                  <li key={p.slug}><Link href={`/blog/${p.slug}`} className="text-[var(--text-soft)] hover:text-[var(--accent-text)]">{p.title.replace(" | AmCupon.ro", "")}</Link></li>
+                                ))}
+                              </ul>
+                            </details>
+                          )}
+                          {arts.length > 6 && (
                             <Link href={`/blog?cat=${encodeURIComponent(m)}`} className="inline-flex items-center gap-1 mt-3 text-xs font-bold text-[var(--accent-text)] hover:text-[var(--accent-text)] transition-colors">
                               Vezi toate cele {arts.length} ghiduri {m} <span aria-hidden>→</span>
                             </Link>
@@ -405,6 +416,16 @@ export default async function BlogPage(
           </div>
         </div>
       </div>
+      {esteHub && faraCategorie.length > 0 && (
+        <nav aria-label="Rezumate" className="max-w-5xl mx-auto px-4 pb-10">
+          <p className="text-sm font-black text-[var(--foreground)] mb-3">Rezumate ale lunii</p>
+          <ul className="space-y-2 text-sm">
+            {faraCategorie.map(p => (
+              <li key={p.slug}><Link href={`/blog/${p.slug}`} className="text-[var(--text-soft)] hover:text-[var(--accent-text)]">{p.title.replace(" | AmCupon.ro", "")}</Link></li>
+            ))}
+          </ul>
+        </nav>
+      )}
     </>
   );
 }

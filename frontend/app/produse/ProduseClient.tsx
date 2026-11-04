@@ -605,7 +605,7 @@ export default function ProduseClient({
               catCounts[slug] = (catCounts[slug] || 0) + 1;
             }
             const catList = Object.entries(CAT_META)
-              .filter(([slug]) => slug !== "altele" && (catCounts[slug] || 0) > 0)
+              .filter(([slug]) => slug !== "altele")
               .sort((a, b) => (catCounts[b[0]] || 0) - (catCounts[a[0]] || 0));
 
             return catList.length > 0 ? (
@@ -617,7 +617,7 @@ export default function ProduseClient({
                       className="group bg-[var(--surface)] border border-[var(--border-strong)] hover:border-[var(--accent-text)]/60 rounded-xl p-2.5 text-center hover:-translate-y-0.5 transition-all duration-200">
                       <div className="text-xl mb-1">{cm.emoji}</div>
                       <p className="text-[10px] font-bold text-[var(--text-soft)] group-hover:text-[var(--accent-text)] transition-colors leading-tight">{cm.label}</p>
-                      <p className="text-[10px] text-[var(--text-muted)] mt-0.5">{(catCounts[slug] || 0).toLocaleString()} produse</p>
+                      {(catCounts[slug] || 0) > 0 && <p className="text-[10px] text-[var(--text-muted)] mt-0.5">{(catCounts[slug] || 0).toLocaleString()} produse</p>}
                     </Link>
                   ))}
                 </div>

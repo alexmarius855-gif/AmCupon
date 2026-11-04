@@ -56,7 +56,7 @@ def ia(url: str):
 
 def e_minora(problema: str) -> bool:
     """Se repara la urmatoarea trecere, nu e o informatie gresita pentru cititor."""
-    return problema.startswith(("titlu lung", "descriere lunga"))
+    return problema.startswith(("titlu lung", "descriere lunga", "fara link platit", "link platit fara sponsored"))
 
 
 def verifica(html: str, cale: str) -> dict:
@@ -75,6 +75,9 @@ def verifica(html: str, cale: str) -> dict:
         pb.append("fara descriere")
     elif len(desc.replace("&amp;", "&").replace("&#x27;", "'")) > 165:
         pb.append(f"descriere lunga ({len(desc)})")
+    fara_rel = [a for a in re.findall(r"<a\b[^>]*>", corp) if re.search(r'href="[^"]*(event\.2performant|sjv\.io|pxf\.io|ojrq\.net)', a) and "sponsored" not in a]
+    if fara_rel:
+        pb.append(f"link platit fara sponsored ({len(fara_rel)})")
     h1 = re.findall(r"<h1[\s>]", corp)
     if len(h1) != 1:
         pb.append(f"{len(h1)} H1")
@@ -165,13 +168,14 @@ def main() -> int:
 
 def test() -> int:
     bun = ('<title>Titlu bun</title><meta name="description" content="Descriere"><h1>H</h1><p>Un text destul de lung ca sa treaca de prag, cu sens.</p>'
-           '<a href="https://event.2performant.com/x">x</a><a href="/top/x">t</a>')
+           '<a rel="sponsored" href="https://event.2performant.com/x">x</a><a href="/top/x">t</a>')
     asteptari = [
         ("pagina buna n-are probleme", verifica(bun, "/top/x")["probleme"], []),
         ("fara link platit, pe pagina de magazin", "fara link platit" in verifica(bun.replace("event.2performant.com", "x.ro"), "/top/x")["probleme"], True),
         ("pe o pagina de text nu se cere link platit", verifica(bun.replace("event.2performant.com", "x.ro"), "/despre-noi")["probleme"], []),
         ("doua H1", "2 H1" in verifica(bun + "<h1>a</h1>", "/x")["probleme"], True),
         ("titlul lung nu opreste publicarea", e_minora("titlu lung (61)"), True),
+        ("linkul platit trebuie marcat", any(x.startswith("link platit fara sponsored") for x in verifica(bun.replace(' rel="sponsored"', ""), "/x")["probleme"]), True),
         ("textul pentru afiliati opreste publicarea", e_minora("text pentru afiliati: influencer"), False),
         ("pagina stricata opreste publicarea", e_minora("HTTP 500"), False),
         ("titlu lung", any(x.startswith("titlu lung") for x in verifica(bun.replace("Titlu bun", "x" * 61), "/x")["probleme"]), True),

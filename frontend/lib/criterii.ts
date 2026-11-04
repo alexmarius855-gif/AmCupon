@@ -59,6 +59,27 @@ export function criteriu(slug: string): Criteriu | null {
   return criterii().find((c) => c.slug === slug) || null;
 }
 
+/**
+ * Cateva produse confirmate pentru o tema: pe rand din fiecare pagina, fara dubluri si cel mult doua de la acelasi
+ * magazin. Le folosesc paginile /top, de unde vin clicurile.
+ */
+export function produseTema(tema: string, maxim = 8): ProdusCriteriu[] {
+  const liste = criteriiTema(tema).map((c) => c.produse);
+  const rez: ProdusCriteriu[] = [];
+  const vazute = new Set<string>();
+  const pe: Record<string, number> = {};
+  for (let i = 0; i < 30 && rez.length < maxim; i++) {
+    for (const l of liste) {
+      const p = l[i];
+      if (!p || vazute.has(p.url) || (pe[p.magazin] || 0) >= 2 || rez.length >= maxim) continue;
+      vazute.add(p.url);
+      pe[p.magazin] = (pe[p.magazin] || 0) + 1;
+      rez.push(p);
+    }
+  }
+  return rez;
+}
+
 export function criteriiTema(tema: string): Criteriu[] {
   return criterii().filter((c) => c.tema === tema);
 }

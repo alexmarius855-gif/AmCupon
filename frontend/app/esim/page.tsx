@@ -292,7 +292,7 @@ export default function EsimPage() {
                     <a
                       href={esim.url}
                       target="_blank"
-                      rel="noopener noreferrer nofollow"
+                      rel="sponsored nofollow noopener noreferrer"
                       className="inline-flex items-center gap-2 bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] font-semibold px-5 py-2.5 rounded-lg text-sm transition-colors"
                     >
                       Alege {esim.name} &rarr;
@@ -330,7 +330,7 @@ export default function EsimPage() {
                 key={e.name}
                 href={e.url}
                 target="_blank"
-                rel="noopener noreferrer nofollow"
+                rel="sponsored nofollow noopener noreferrer"
                 className="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-4 hover:border-[#c3dd2c]/50 transition-colors group"
               >
                 <div className="flex items-center gap-2 mb-2">
@@ -358,7 +358,7 @@ export default function EsimPage() {
                 {ESIM_TOP.map((e, i) => (
                   <tr key={e.name} className={i % 2 === 0 ? "bg-[var(--surface)]/40" : "bg-[var(--surface)]/20"}>
                     <td className="px-4 py-3 font-medium text-[var(--foreground)]">
-                      <a href={e.url} target="_blank" rel="noopener noreferrer nofollow" className="hover:text-[var(--accent-text)] transition-colors">
+                      <a href={e.url} target="_blank" rel="sponsored nofollow noopener noreferrer" className="hover:text-[var(--accent-text)] transition-colors">
                         {e.name}
                       </a>
                     </td>
@@ -389,7 +389,7 @@ export default function EsimPage() {
             <a
               href={LINK_AIRALO}
               target="_blank"
-              rel="noopener noreferrer nofollow"
+              rel="sponsored nofollow noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#ddf93c] hover:bg-[#ddf93c] text-[#0c1000] font-semibold px-7 py-3 rounded-xl text-sm transition-colors"
             >
               Cumpara eSIM pe Airalo &rarr;

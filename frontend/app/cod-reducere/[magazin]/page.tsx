@@ -1,3 +1,4 @@
+import VeciniMagazin from "./VeciniMagazin";
 import { PRET_MINIM_CREDIBIL } from "@/lib/statisticiMagazin";
 import { notFound, permanentRedirect } from "next/navigation";
 import { aceeasiTara } from "@/lib/taraDomeniu";
@@ -265,6 +266,24 @@ function loadAllProducts(): Produs[] {
     _produseCache = [];
   }
   return _produseCache;
+}
+
+// Magazinele indexabile din fiecare categorie, in ordine alfabetica. Fiecare pagina leaga urmatoarele, in cerc, ca toate sa
+// primeasca linkuri: „Magazine similare" trimite mereu spre aceleasi cateva, iar 159 de pagini aveau doar 1-2 linkuri.
+let _peCategorie: Map<string, string[]> | null = null;
+function veciniMagazin(magazine: Magazin[], m: Magazin, maxim = 6): string[] {
+  if (!_peCategorie) {
+    _peCategorie = new Map();
+    for (const x of magazine) {
+      if (!x.categorie_slug || /\s/.test(x.magazin) || x.magazin.split("/").length > 2 || !esteIndexabil(x, merchantTokens())) continue;
+      _peCategorie.set(x.categorie_slug, [...(_peCategorie.get(x.categorie_slug) || []), x.magazin]);
+    }
+    for (const l of _peCategorie.values()) l.sort();
+  }
+  const l = _peCategorie.get(m.categorie_slug || "") || [];
+  const i = l.indexOf(m.magazin);
+  if (i < 0 || l.length < 2) return [];
+  return Array.from({ length: Math.min(maxim, l.length - 1) }, (_, k) => l[(i + k + 1) % l.length]);
 }
 
 let _tokensCache: Set<string> | null = null;
@@ -828,6 +847,7 @@ export default async function PaginaMagazin({
           />
         }
       />
+      <VeciniMagazin categorie={m.categorie || "aceeași categorie"} lista={veciniMagazin(magazine, m).filter((s) => !similare.some((x) => x.magazin === s))} />
     </>
   );
 }

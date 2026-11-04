@@ -11,7 +11,8 @@ import { numeAfisat } from "../../../lib/numeMagazin";
 import { destinatieTop, legaturiTema } from "../../../lib/destinatiiTop";
 import { ghiduriPentruTema } from "../../../lib/legaturiInterne";
 import { descriereScurta } from "../../../lib/oferta";
-import { criteriiTema } from "../../../lib/criterii";
+import { criteriiTema, dataRo, produseTema } from "../../../lib/criterii";
+import ProductDealCard from "../../components/ProductDealCard";
 import CriteriiTema from "../../components/CriteriiTema";
 
 interface Produs {
@@ -174,6 +175,9 @@ export default async function TopCategoriePage({
   const sectiune: SectiuneTema | null = sectiunePentru(slug);
   // Fara oferte in feed: legaturi verificate spre partenerii care vand tema (lib/destinatiiTop.ts).
   const legaturi = sectiune ? [] : legaturiTema(slug, linkuri);
+  // Produse cu pretul citit la magazin (/alege): au prioritate fata de lista din feed, unde pretul poate fi ramas in urma.
+  const modele = produseTema(slug, 8);
+  const cuModele = modele.length >= 4;
   const numeLegaturi = legaturi.map(l => l.eticheta).join(", ");
   const ghiduriTema = ghiduriPentruTema(slug);
   const actualizat = dataFeed();
@@ -361,11 +365,33 @@ export default async function TopCategoriePage({
         <div className="max-w-5xl mx-auto px-4 py-8">
           <CriteriiTema lista={criteriiTema(slug)} />
 
-          <TopProduseClient produse={produse} culoare={cat.culoare} areSectiune={!!sectiune || legaturi.length > 0} selectie={SELECTIE} />
+          <TopProduseClient produse={produse} culoare={cat.culoare} areSectiune={cuModele || !!sectiune || legaturi.length > 0} selectie={SELECTIE} />
 
-          {sectiune && <OferteParteneri sectiune={sectiune} numeTema={numeTema} actualizat={actualizat} />}
+          {cuModele && (
+            <section id="unde-cumperi" className="mt-10 scroll-mt-24">
+              <h2 className="text-lg font-black text-[var(--foreground)] mb-1">Unde găsești {numeTema} azi</h2>
+              <p className="text-sm text-[var(--text-muted)] mb-4">Produse reale, cu prețul citit de pe site-ul magazinului.</p>
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+                {modele.map((p) => (
+                  <ProductDealCard
+                    key={p.url}
+                    titlu={p.titlu}
+                    pret={p.pret}
+                    pretVechi={p.pret_vechi}
+                    imagine={p.imagine}
+                    url={p.url}
+                    magazin={numeAfisat(p.magazin)}
+                    dataPret={p.verificat ? dataRo(p.verificat) : ""}
+                    dePeSite={Boolean(p.verificat)}
+                  />
+                ))}
+              </div>
+            </section>
+          )}
 
-          {legaturi.length > 0 && (
+          {!cuModele && sectiune && <OferteParteneri sectiune={sectiune} numeTema={numeTema} actualizat={actualizat} />}
+
+          {!cuModele && legaturi.length > 0 && (
             <section id="unde-cumperi" className="mt-10 scroll-mt-24 bg-[var(--surface)] dark:bg-[var(--surface-alt)] border border-[var(--border)] dark:border-[var(--border-strong)] rounded-xl p-6">
               <h2 className="text-lg font-black text-[var(--foreground)] dark:text-[var(--foreground)] mb-2">
                 Unde găsești {numeTema} azi

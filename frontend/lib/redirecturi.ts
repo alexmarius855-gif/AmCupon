@@ -91,6 +91,7 @@ export const REDIRECTURI: Redirect[] = [
   { source: "/categorii/ai-tools",            destination: "/ai-tools", permanent: true },
   // /moto n-avea niciun produs si niciun link platit (verificat 04.11.2026).
   { source: "/moto",          destination: "/categorii/auto-moto", permanent: true },
+  { source: "/categorii/sports-outdoors",     destination: "/categorii/sport", permanent: true },
   { source: "/categorii/automotive",          destination: "/categorii/auto-moto", permanent: true },
   { source: "/categorii/babies-kids-toys",    destination: "/categorii/copii", permanent: true },
   { source: "/categorii/books",               destination: "/categorii/carti-educatie", permanent: true },

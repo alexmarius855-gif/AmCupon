@@ -132,7 +132,7 @@ export default function ContextMagazin({
                 Cum am masurat
               </Link>
               {urlSite && (
-                <a href={urlSite} target="_blank" rel="noopener noreferrer nofollow"
+                <a href={urlSite} target="_blank" rel="sponsored nofollow noopener noreferrer"
                   className="text-xs font-bold px-3 py-1.5 rounded-xl bg-[var(--surface-alt)] text-[var(--text-soft)] border border-[var(--border-strong)] hover:text-[var(--accent-text)] hover:border-[#c9ced5] transition-colors">
                   Site oficial {nume}
                 </a>

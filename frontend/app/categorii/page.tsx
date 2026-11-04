@@ -58,7 +58,7 @@ const CATEGORII = [
     keywords: ["software", "vpn", "hosting", "ai", "app", "digital"],
   },
   {
-    slug: "telecom", label: "Telecom", desc: "Abonamente & servicii mobile",
+    slug: "servicii", label: "Servicii", desc: "Abonamente & servicii mobile",
     accent: "#c3dd2c",
     keywords: ["telecom", "mobile", "abonament", "orange", "vodafone", "digi"],
   },

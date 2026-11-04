@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
+import { adresaArticolVechi } from "@/lib/articoleLunare";
 import { Metadata } from "next";
 import Image from "next/image";
 import fs from "fs";
@@ -152,7 +153,7 @@ function parseInline(text: string, baseKey: string): React.ReactNode[] {
       nodes.push(
         <a key={`${baseKey}-l${i}`} href={match[4]}
           className="text-[var(--accent-text)] hover:text-[var(--accent-text)] underline underline-offset-2 font-medium"
-          {...(isExt ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
+          {...(isExt ? { target: "_blank", rel: /event\.2performant|sjv\.io|pxf\.io|ojrq\.net/.test(match[4]) ? "sponsored nofollow noopener noreferrer" : "noopener noreferrer" } : {})}>
           {/* recursiv si aici: „[**Vezi toate ofertele active Dhgate pe AmCupon.ro →**](...)", la finalul
               fiecarui articol de magazin, aparea cu stelutele (27.10.2026) */}
           {parseInline(match[3], `${baseKey}-l${i}`)}
@@ -402,7 +403,12 @@ export default async function ArticolPage({
   const { slug } = await params;
   const posts = loadPosts();
   const post = posts.find((p) => p.slug === slug);
-  if (!post) notFound();
+  if (!post) {
+    // Adresa unui articol dintr-o luna trecuta duce la cel de acum, nu la 404 (lib/articoleLunare.ts).
+    const nou = adresaArticolVechi(slug, posts.map((p) => p.slug), [...magazineDupaSlug().keys()]);
+    if (nou) permanentRedirect(nou);
+    notFound();
+  }
 
   // Ofertele de azi sub articolele „Cel mai bun X" (lib/topFeed.ts -> ARTICOLE_TEME).
   const temaArt = temaArticol(post.slug);

@@ -7,7 +7,13 @@ on:
   schedule:
     - cron: '0 5,17 * * *'  # Sync date de 2 ori/zi (07:00 + 19:00 ora Romaniei)
     - cron: '0 6 * * *'      # Pipeline complet dimineata (08:00 ora Romaniei)
-  workflow_dispatch:        # Buton manual in GitHub -> Actions (ruleaza tot)
+  workflow_dispatch:        # Buton manual in GitHub -> Actions
+    inputs:
+      mod:
+        description: "date = aduce si publica datele, FARA newsletter; complet = tot, cu newsletter"
+        type: choice
+        default: date
+        options: [date, complet]
 
 jobs:
   update:
@@ -17,7 +23,7 @@ jobs:
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
       # Pipeline complet: dimineata + rulare manuala. Sync-urile 05/17 UTC sunt doar date.
-      IS_FULL_DAILY: ${{ github.event.schedule == '0 6 * * *' || github.event_name == 'workflow_dispatch' }}
+      IS_FULL_DAILY: ${{ github.event.schedule == '0 6 * * *' || (github.event_name == 'workflow_dispatch' && inputs.mod == 'complet') }}
       # PAUZA TELEGRAM — ceruta de Alex pe 16.09.2026. Opreste toate cele trei trimiteri pe canal:
       # postarea zilnica, pachetul din uzina de continut si alertele din health check. Codul ramane
       # reparat (HTML, fara „% succes"); pune "false" ca sa reporneasca.
