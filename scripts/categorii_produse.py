@@ -41,11 +41,12 @@ DIN_MAGAZIN = {
 # Tipul din titlu bate orice categorie: „Laptop ASUS Zenbook" nu e carte, oricum ar scrie feed-ul.
 TIP_DIN_TITLU = [
     (re.compile(r"^(?:\w+\s+){0,2}(laptop|telefon|televizor|monitor|tableta|imprimanta|placa video|ssd|router)\b", re.I), "electronice"),
+    (re.compile(r"^(?:\w+\s+){0,2}(kit combo|masina de gaurit|bormasina)\b", re.I), "casa"),
     (re.compile(r"^(?:\w+\s+){0,1}(masuta|masute|masa|canapea|fotoliu|saltea|pat tapitat|cabina de dus|pahar\w*|set \d+ masute)\b", re.I), "casa"),
     (re.compile(r"\b(crema|lotiune|ser facial|sampon|parfum|apa de parfum|fond de ten|set cadou (?:femei|barbati))\b", re.I), "beauty"),
 ]
 # Materiale pentru cabinete si laboratoare: nu sunt pentru cumparatorul de pe site, deci nu stau pe paginile de categorie.
-RE_PROFESIONAL = re.compile(r"\b(reactivi\w*|sutura chirurgicala|fire de sutura|cort evenimente)\b", re.I)
+RE_PROFESIONAL = re.compile(r"\b(reactivi\w*|sutura chirurgicala|fire de sutura|cort evenimente|garaj tip cort|cort tip pavilion)\b", re.I)
 
 
 # Pe categoriile mici, feed-ul si magazinul nu ajung: „Set 6 cesti" de la un magazin de bijuterii sau „Cutit utilitar" de la unul de
@@ -72,7 +73,7 @@ TIP_MUTAT = [(re.compile(r"^rucsac\b"), "fashion"), (re.compile(r"^boxa auto\b")
 MAGAZINE_RECONDITIONATE = {"bsgmag.ro"}
 ETICHETA_RECONDITIONAT = " (recondiționat)"
 RE_NU_COPII = re.compile(r"\b(peru\w*|papagal\w*|caini|pisici|ferplast)\b")
-RE_NU_CARTE = re.compile(r"\b(breloc|kit|puzzle|jucarie|pix|ghiozdan)\b")
+RE_NU_CARTE = re.compile(r"\b(breloc|kit|puzzle|jucarie|pix|ghiozdan|joc|stampila|carte senzoriala)\b")
 RE_MAGHIARA = re.compile(r"[\u0151\u0171\u0150\u0170]|\b(fekete|eredeti|taktikai|nadr\u00e1g|sapka|n\u00e9met|f\u00e9rfi|n\u0151i|kab\u00e1t|cip\u0151)\b", re.I)
 
 
@@ -188,6 +189,8 @@ def test() -> int:
         ("sina de aluminiu nu e moda", categorie({"title": "Sina aluminiu prindere laterala panou", "category": "", "merchant_slug": "b.ro"}, {"b.ro": "fashion"}), "altele"),
         ("jucaria pentru perus nu e pentru copii", categorie({"title": "Ferplast Jucarie Leagan Lemn Perus 40", "category": "", "merchant_slug": "b.ro"}, {"b.ro": "copii"}), "altele"),
         ("rochia ramane la moda", categorie({"title": "Rochie de zi midi in clos", "category": "", "merchant_slug": "b.ro"}, {"b.ro": "fashion"}), "fashion"),
+        ("cortul de evenimente nu e sport", categorie({"title": "5x5 m Cort Evenimente ECONOMY", "category": "Sport", "merchant_slug": "b.ro"}, {}), "altele"),
+        ("jocul nu e carte", categorie({"title": "so chic - joc creativ", "category": "Carti educative", "merchant_slug": "c.ro"}, {}), "altele"),
         ("rucsacul nu e electronica", categorie({"title": "Rucsac urban cu compartiment laptop", "category": "Electronice", "merchant_slug": "b.ro"}, {}), "fashion"),
         ("cartea despre jocuri ramane unde spune feed-ul", categorie({"title": "Carte Go: Speed Baduk", "category": "Carti De Sah", "merchant_slug": "x.ro"}, mag), "carti"),
     ]

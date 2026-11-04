@@ -42,7 +42,8 @@ export default function PieseAutoPage() {
   const all: Magazin[] = JSON.parse(fs.readFileSync(filePath, "utf-8"));
   const an = new Date().getFullYear();
 
-  const magazine = all.filter(m => m.categorie_slug === "auto-moto");
+  // In categoria auto stau si firmele de inchirieri (dollarcars4rent, carrentalexpress): ele nu vand piese.
+  const magazine = all.filter(m => m.categorie_slug === "auto-moto" && !/rent|vipcars/i.test(m.magazin));
   const cuPromo = magazine.filter(m => m.are_promotie);
 
   return (

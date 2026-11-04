@@ -157,6 +157,8 @@ def _detect_cat_from_title(title: str) -> str:
 # output.json) permite doar anumite categorii de produs; la dezacord produsul NU intra in vitrina —
 # mai bine un loc gol decat un produs pus gresit. Magazinele generaliste (marketplace, fara categorie)
 # nu restrang nimic.
+CAT_PAGINA = {"automotive": "auto", "books": "carti", "home-garden": "casa", "fashion": "fashion", "electronics-itc": "electronice", "sports-outdoors": "sport",
+              "beauty": "beauty", "games": "jocuri", "pet-supplies": "animale", "babies-kids-toys": "copii", "pharma": "farmacie", "health-personal-care": "farmacie", "jewelry": "bijuterii"}
 COMPATIBIL: dict[str, set[str]] = {
     "fashion":         {"fashion", "sports-outdoors"},
     "beauty":          {"beauty", "pharma", "health-personal-care"},
@@ -420,6 +422,11 @@ def gen_products():
             )
         cm = cat_magazin.get(_mkey(p)) or cat_magazin.get((p.get("merchant_slug") or "").lower(), "")
         if p["_cat"] != "other" and not compatibil(p["_cat"], cm):
+            p["_cat"] = "other"
+            respinse += 1
+        # Blocul de pe prima pagina spune acelasi lucru ca pagina categoriei (scripts/categorii_produse.py).
+        echivalent = CAT_PAGINA.get(p["_cat"])
+        if echivalent and p.get("cat_slug") != echivalent:
             p["_cat"] = "other"
             respinse += 1
     print(f"  Produse scoase din vitrina (titlul nu se potriveste cu magazinul): {respinse}")
