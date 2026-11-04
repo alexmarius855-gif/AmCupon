@@ -267,6 +267,8 @@ for nume_caz, text, asteptat in [
     ("textul care repeta titlul nu se mai afiseaza", "Oferta 1+1", ""),
     ("fraza care ii cere afiliatului sa promoveze iese", "Promovează Abonamentul ca soluția lunară. Livrare gratuită.", "Livrare gratuită."),
     ("semnatura catre afiliati iese", "Reducere 50%. Link promotie: Spor la conversii, echipa LIBRARIE.net", "Reducere 50%."),
+    ("Answear: codul QR nu exista la noi, fraza iese", "Reduceri de Black Friday cu până la -50%. Tot nu e destul? Scanează codul QR și descoperă reduceri și mai mari!", "Reduceri de Black Friday cu până la -50%."),
+    ("ADA Shoes: frazele pentru afiliati ies", "Avem și -20% la poșete de la brandurile Anekke și Rieker. Este un moment foarte bun pentru promovare, mai ales că am pornit mai devreme. În comunicare, ne dorim să punem accent pe confort.", "Avem și -20% la poșete de la brandurile Anekke și Rieker."),
     ("doar semnatura = fara text", "Echipa LIBRARIE.net", ""),
     ("semnatura lunga iese", "Reducere 20%. Echipa NUVIA *The Nature of True Beauty*", "Reducere 20%."),
     ("capcana: intervalul de date ramane intreg", "Intra pe site in perioada 2 - 8 noiembrie.", "Intra pe site in perioada 2 - 8 noiembrie."),

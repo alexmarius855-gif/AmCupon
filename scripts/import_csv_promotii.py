@@ -116,14 +116,19 @@ def norm_slug(s: str) -> str:
     return s
 
 
+# Primul cuvant din „store.irinareisler.ro" nu e numele magazinului. 04.11.2026: oferta Irina Reisler
+# ajungea la store.boyamic.com, fiindca ambele dadeau varianta „store".
+PREFIXE_GENERICE = {"store", "shop", "us", "de", "en", "eu", "pl", "ro", "fr", "uk", "m", "app"}
+
+
 def slug_variants(slug: str) -> list:
     """Genereaza variante de matching pentru un slug."""
     s = norm_slug(slug)
     base = s.split(".")[0]  # "libris" din "libris.ro"
-    variants = [s, base]
+    variants = [s]
     # Cu / fara TLD
-    if "." in s:
-        variants.append(s.split(".")[0])
+    if "." in s and base not in PREFIXE_GENERICE:
+        variants.append(base)
     # Fara spatii
     variants.append(s.replace(" ", ""))
     return list(dict.fromkeys(v for v in variants if v))
@@ -229,7 +234,11 @@ def parse_csv(csv_path: str) -> list:
 # ─── Matching & merge ─────────────────────────────────────────────────────────
 
 def find_magazin(magazine: list, slug_target: str) -> int | None:
-    """Gaseste indexul magazinului in lista, sau None."""
+    """Gaseste indexul magazinului in lista, sau None. Adresa exacta castiga: bitdefender.com nu e bitdefender.ro."""
+    exact = norm_slug(slug_target)
+    for idx, mag in enumerate(magazine):
+        if norm_slug(mag.get("magazin", "")) == exact:
+            return idx
     variants = slug_variants(slug_target)
     for idx, mag in enumerate(magazine):
         mag_slug = norm_slug(mag.get("magazin", ""))

@@ -1,8 +1,13 @@
 """Calendarul Black Friday al partenerilor, din promotiile anuntate de magazine in 2Performant.
 
-Citeste data/promotii_2p.csv (exportul de promotii 2P, inclusiv cele programate in viitor) si
+Citeste data/promotii_2p.csv (exportul manual de promotii 2P, inclusiv cele programate in viitor) si
 frontend/public/output.json; scrie frontend/public/black-friday-parteneri.json, citit de
 /black-friday langa campaniile confirmate de mana din black-friday.json.
+
+04.11.2026: citeste si ofertele 2P active din output.json. Pana acum, calendarul vedea doar exportul
+din 01.11, deci campaniile aparute dupa (Answear „Magic Black Friday", GeekMall, Mobidea) n-aveau
+pagina /black-friday/<magazin>, chiar daca oferta era pe site cu link platit. Oferta programata
+ramane vizibila doar din CSV: `curata_promotii` o tine nepublicata pana in ziua de start.
 
 Intra o campanie doar daca:
   - numele sau descrierea pentru client spune Black Friday / Black Week / Cyber Monday ...;
@@ -99,6 +104,25 @@ def campanii(randuri: list[dict], magazine: list[dict], an: int) -> list[dict]:
     return sorted(alese.values(), key=lambda c: (c["start"], c["nume"].lower()))
 
 
+def randuri_din_oferte(magazine: list[dict]) -> list[dict]:
+    """Ofertele 2P active din output.json, in forma randurilor din CSV, ca sa treaca prin aceleasi reguli.
+    Doar 2Performant: Impact aduce magazine straine, iar clicurile spre ele n-au dat vanzari (08.10.2026)."""
+    randuri = []
+    for m in magazine:
+        if m.get("platforma") != "2performant":
+            continue
+        for p in m.get("promotii") or []:
+            randuri.append({
+                "Affiliate program": m.get("magazin") or "",
+                "Promotion name": p.get("nume") or "",
+                "Start Date": str(p.get("incepe") or ""),
+                "End Date": str(p.get("expira") or ""),
+                "Description (for customer)": p.get("descriere") or "",
+                "Coupon code": p.get("cod_cupon") or "",
+            })
+    return randuri
+
+
 def pastreaza_vechi(noi: list[dict], vechi: list[dict], magazine: list[dict], an: int) -> list[dict]:
     """Noile campanii + cele de anul acesta care nu mai sunt in export, cat timp magazinul e partener platit."""
     slug_noi = {c["magazin"] for c in noi}
@@ -125,12 +149,10 @@ def citeste_csv(p: str) -> list[dict]:
 
 
 def scrie() -> int:
-    if not os.path.exists(CSV):
-        print("data/promotii_2p.csv lipsa — calendarul ramane cum e")
-        return 0
     magazine = json.load(io.open(OUTPUT, encoding="utf-8"))
     acum = datetime.now(timezone.utc)
-    lista = campanii(citeste_csv(CSV), magazine, acum.year)
+    randuri = citeste_csv(CSV) if os.path.exists(CSV) else []
+    lista = campanii(randuri + randuri_din_oferte(magazine), magazine, acum.year)
     # Campaniile deja scrise raman pana la sfarsitul anului: exportul 2P arata doar promotiile active, iar
     # fiecare campanie are o pagina /black-friday/<magazin>. Fara memorie, pagina ar da 404 la urmatorul export.
     if os.path.exists(IESIRE):
@@ -142,7 +164,7 @@ def scrie() -> int:
     categorii = cu_categorii(lista, magazine)
     io.open(IESIRE, "w", encoding="utf-8", newline="").write(json.dumps({
         "_nota": "Generat de scripts/calendar_black_friday.py din promotiile anuntate de magazine in 2Performant "
-                 "(data/promotii_2p.csv). Doar parteneri cu link platit. Nu edita de mana.",
+                 "(data/promotii_2p.csv si ofertele 2P active din output.json). Doar parteneri cu link platit. Nu edita de mana.",
         "generat": acum.strftime("%Y-%m-%d"),
         "categorii": categorii,
         "parteneri": lista,
@@ -232,6 +254,34 @@ def test() -> int:
         ("emoji scos din titlu", [c["nota"] for c in campanii(
             [r("doctorshield.ro", "\U0001F525 Black Friday pe DoctorShield",
                "2026-11-20 06:00:00 UTC", "2026-11-30 08:00:00 UTC")], mag, 2026)], ["Black Friday pe DoctorShield"]),
+    ]
+    def oferte(platforma, nume, incepe, expira):
+        return [{"magazin": "doctorshield.ro", "url": "https://doctorshield.ro", "url_afiliat": "https://event.2performant.com/x",
+                 "platforma": platforma, "promotii": [{"nume": nume, "descriere": "", "cod_cupon": "", "incepe": incepe, "expira": expira}]}]
+
+    doua_store = [{"magazin": "store.a.com"}, {"magazin": "store.b.ro"}, {"magazin": "bitdefender.ro"}, {"magazin": "bitdefender.com"}]
+    asteptari += [
+        ("store.b.ro nu ajunge la store.a.com", find_magazin(doua_store, "store.b.ro"), 1),
+        ("store.necunoscut.ro nu se leaga de alt magazin", find_magazin(doua_store, "store.necunoscut.ro"), None),
+        ("adresa exacta castiga: bitdefender.com", find_magazin(doua_store, "bitdefender.com"), 3),
+        ("fara TLD inca se potriveste", find_magazin([{"magazin": "libris.ro"}], "libris"), 0),
+    ]
+
+    def din_api(mag_o):
+        return [(c["magazin"], c["start"], c["final"]) for c in campanii(randuri_din_oferte(mag_o), mag_o, 2026)]
+
+    asteptari += [
+        ("oferta din API primeste pagina (Answear: start ISO, sfarsit doar zi)",
+         din_api(oferte("2performant", "Magic Black Friday", "2026-11-04T09:00:00Z", "2026-11-25")),
+         [("doctorshield.ro", "2026-11-04", "2026-11-25")]),
+        ("oferta Impact nu intra (magazine straine)",
+         din_api(oferte("impact", "ROBUD Black Friday", "2026-11-04T09:00:00Z", "2026-11-25")), []),
+        ("oferta care nu e de Black Friday nu intra",
+         din_api(oferte("2performant", "Reduceri de toamna", "2026-11-04T09:00:00Z", "2026-11-25")), []),
+        ("oferta fara data de start nu intra",
+         din_api(oferte("2performant", "Black Friday", "", "2026-11-25")), []),
+        ("oferta inceputa din 1 octombrie nu intra (data din afara ferestrei)",
+         din_api(oferte("2performant", "Black Friday", "2026-10-01T21:00:00Z", "2026-11-08")), []),
     ]
     acum = datetime(2026, 11, 1, 12, tzinfo=timezone.utc)
     asteptari += [

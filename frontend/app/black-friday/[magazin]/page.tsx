@@ -4,7 +4,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { campaniiBF, toateCampaniileBF, type CampanieBF } from "@/lib/campaniiBlackFriday";
-import { linkAfiliat } from "@/lib/linkMagazin";
+import { linkPromotie } from "@/lib/linkMagazin";
 import { alMagazinului } from "@/lib/produseMagazin";
 import { imagineSigura, type ProdusFeed } from "@/lib/topFeed";
 import { categoriiBF } from "@/lib/campaniiBlackFriday";
@@ -29,7 +29,7 @@ interface Magazin {
   url?: string;
   url_afiliat?: string;
   categorie_slug?: string;
-  promotii?: unknown[];
+  promotii?: { nume?: string; descriere?: string; landing_page?: string | null; zile_ramase?: number }[];
   are_promotie?: boolean;
 }
 interface ProdusScadere {
@@ -102,7 +102,10 @@ export default async function BlackFridayMagazinPage({ params }: { params: Promi
 
   const ziua = azi();
   const st = stare(c, ziua);
-  const link = linkAfiliat(m as Parameters<typeof linkAfiliat>[0]);
+  // 04.11.2026: butonul ducea pe prima pagina a magazinului, desi oferta de Black Friday are, de obicei,
+  // pagina ei (Answear: /s/black-friday, GeekMall: /black-friday). Fara oferta activa, ramane prima pagina.
+  const ofertaBF = m.promotii?.find((p) => /black\s*(friday|week)|cyber\s*monday/i.test(`${p.nume || ""} ${p.descriere || ""}`) && p.landing_page);
+  const link = linkPromotie(m as Parameters<typeof linkPromotie>[0], ofertaBF);
 
   // Produsele aflate azi sub minimul din 30 de zile la acest magazin (istoricul nostru), apoi restul feed-ului.
   const sub = citeste<{ produse?: ProdusScadere[] }>("scaderi-pret.json", {}).produse?.filter((p) => p.merchant_slug === slug) || [];

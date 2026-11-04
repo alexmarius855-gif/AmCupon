@@ -401,7 +401,7 @@ RE_EMOJI = re.compile("[\U0001F000-\U0001FAFF☀-➿️]")
 RE_CATRE_AFILIATI = re.compile(
     r"\b(bun[aă] ziua|bun[aă] tuturor|salutare|hi everyone|clien[tț]ii pe care|aduce[tț]i|comision\w*|"
     r"converte\w*|converti\w*|conversii?|link\s+promo[tț]ie|afilia\w*|bannere?|landing|dvs\.?|v[aă] rug[aă]m|colabor\w*|clientul|"
-    r"dorim s[aă] v[aă]|pentru voi|oportunitate|de a genera|genera[tț]i)\b", re.I)
+    r"dorim s[aă] v[aă]|pentru voi|oportunitate|de a genera|genera[tț]i|pentru promovare|[iî]n comunicare(?=,)|scaneaz[aă] codul|tot nu e destul)\b", re.I)
 # Promisiuni pe care nu le putem susține, chiar dacă le scrie magazinul (regula „zero informații eronate").
 RE_PROMISIUNE = re.compile(r"\b(garantat\w*|garan[tț]ia celui|cel mai mic pre[tț]|cele mai mici pre[tț]uri|"
                            r"cele? mai (mari?|bune)|celor mai mari|cel mai mare|cea mai (mare|a[sș]teptat[aă])|imbatabil\w*)\b", re.I)
