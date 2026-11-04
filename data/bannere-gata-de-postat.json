@@ -1,5 +1,57 @@
 [
   {
+    "id": 274261,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274220/original/274220.png",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=8baa39f39&aff_code=541547473&campaign_unique=de929938e",
+    "landing_raw": "https://www.janta.ro/wheelsportal/84677/start",
+    "width": 1000,
+    "height": 1000,
+    "merchant": "janta.ro ",
+    "merchant_slug": "janta-ro",
+    "name": "auto",
+    "category": "auto",
+    "b_type": "image"
+  },
+  {
+    "id": 274256,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274215/original/274215.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=dd135c356&aff_code=541547473&campaign_unique=a5e9e1225",
+    "landing_raw": "https://answear.ro/s/black-friday?utm_medium=affiliate&utm_source=2parale&utm_campaign=black_friday_112026",
+    "width": 627,
+    "height": 627,
+    "merchant": "answear.ro ",
+    "merchant_slug": "answear-ro",
+    "name": "Magic Black Friday",
+    "category": "Magic Black Friday",
+    "b_type": "image"
+  },
+  {
+    "id": 274236,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274195/original/274195.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=87b6e84ba&aff_code=541547473&campaign_unique=ed6e28c6e",
+    "landing_raw": "https://www.inpuff.ro",
+    "width": 1200,
+    "height": 1200,
+    "merchant": "inpuff.ro",
+    "merchant_slug": "inpuff-ro",
+    "name": "Black Friday",
+    "category": "Black Friday",
+    "b_type": "image"
+  },
+  {
+    "id": 274233,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274192/original/274192.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=9c19fcb8f&aff_code=541547473&campaign_unique=bb3071a7d",
+    "landing_raw": "https://noriel.ro/",
+    "width": 1200,
+    "height": 1200,
+    "merchant": "noriel.ro ",
+    "merchant_slug": "noriel-ro",
+    "name": "Lego",
+    "category": "Lego",
+    "b_type": "image"
+  },
+  {
     "id": 274226,
     "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274185/original/274185.png",
     "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=f1727e6eb&aff_code=541547473&campaign_unique=ef2621c0a",
@@ -140,32 +192,6 @@
     "merchant_slug": "pensulemachiaj-ro",
     "name": "-80 BLACK FRIDAY CELEBRITY SECRET BAG GRATUIT ",
     "category": "-80 BLACK FRIDAY CELEBRITY SECRET BAG GRATUIT ",
-    "b_type": "image"
-  },
-  {
-    "id": 274058,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274017/original/274017.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=915c7f071&aff_code=541547473&campaign_unique=4b9a6d5ea",
-    "landing_raw": "https://www.kitunghii.ro",
-    "width": 1200,
-    "height": 1200,
-    "merchant": "kitunghii.ro",
-    "merchant_slug": "kitunghii-ro",
-    "name": "-80% BLACK FRIDAY,SECRET BEAUTY BAG GRATUIT",
-    "category": "-80% BLACK FRIDAY,SECRET BEAUTY BAG GRATUIT",
-    "b_type": "image"
-  },
-  {
-    "id": 274038,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/273997/original/273997.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=bb9cba52d&aff_code=541547473&campaign_unique=e79c3922a",
-    "landing_raw": "https://www.ozone.ro/landing/black-friday/",
-    "width": 1200,
-    "height": 1200,
-    "merchant": "ozone.ro",
-    "merchant_slug": "ozone-ro",
-    "name": "Black Friday 2026",
-    "category": "Black Friday 2026",
     "b_type": "image"
   }
 ]
