@@ -669,6 +669,8 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/stare-site.json || true
+          # Scrise de pasul IndexNow, tot dupa commit: fara ele s-ar retrimite aceleasi adrese la fiecare rulare.
+          git add data/indexnow_seen.json data/indexnow_amprente.json || true
           if git diff --staged --quiet; then
             echo "Stare neschimbata — skip"
           else
