@@ -207,6 +207,8 @@ interface HomeClientProps {
   pesteMagazine: string;
   /** Ghidurile rescrise pe surse (au `surse_din`), ca linkuri text — vezi app/page.tsx. */
   ghiduri?: { slug: string; title: string }[];
+  /** Topurile /top/<tema>, ca linkuri text — vezi lib/legaturiInterne.ts. */
+  topuri?: { slug: string; titlu: string }[];
 }
 
 export default function HomeClient({
@@ -217,6 +219,7 @@ export default function HomeClient({
   astazi,
   pesteMagazine,
   ghiduri = [],
+  topuri = [],
   blackFriday = null,
 }: HomeClientProps) {
   const FAQ = faqItems(pesteMagazine);
@@ -1368,6 +1371,20 @@ export default function HomeClient({
                       <a href={`/blog/${g.slug}`} className="text-sm text-[var(--text-soft)] hover:text-[var(--accent-text)] transition-colors">
                         {g.title}
                       </a>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            )}
+            {topuri.length > 0 && (
+              <nav aria-label="Topuri de produse" className="mt-10">
+                <h3 className="text-sm font-black text-[var(--foreground)] uppercase tracking-widest mb-4">Topuri de produse</h3>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-2">
+                  {topuri.map((t) => (
+                    <li key={t.slug}>
+                      <Link href={`/top/${t.slug}`} className="text-sm text-[var(--text-soft)] hover:text-[var(--accent-text)] transition-colors">
+                        {t.titlu}
+                      </Link>
                     </li>
                   ))}
                 </ul>

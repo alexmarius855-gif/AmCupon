@@ -13,6 +13,7 @@ import { pesteMagazine } from "@/lib/cifreSite";
 import { temaArticol, NUME_TEME } from "@/lib/topFeed";
 import { sectiunePentru, dataFeed, ofertaModel, type ModelCautat, type OfertaModel } from "@/lib/oferteTema";
 import OferteParteneri from "../../components/OferteParteneri";
+import { topPentruTema } from "@/lib/legaturiInterne";
 
 interface BlogPost {
   slug: string;
@@ -556,6 +557,15 @@ export default async function ArticolPage({
               numeTema={temaArt.nume || NUME_TEME[temaArt.tema] || temaArt.tema}
               actualizat={dataFeed()}
             />
+          )}
+
+          {temaArt && topPentruTema(temaArt.tema) && (
+            <p className="mt-6 text-sm text-[var(--text-soft)]">
+              Compară modelele:{" "}
+              <a href={`/top/${temaArt.tema}`} className="font-bold text-[var(--accent-text)] hover:underline">
+                {topPentruTema(temaArt.tema)?.titlu} &rarr;
+              </a>
+            </p>
           )}
 
           {post.magazin && areMagazinPagina && (

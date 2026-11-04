@@ -5,6 +5,7 @@ import HomeClient, { type Magazin } from "./HomeClient";
 import { pesteMagazine, PesteMagazine, laParteneri } from "@/lib/cifreSite";
 import { imagineSigura } from "@/lib/topFeed";
 import { campaniiBF } from "@/lib/campaniiBlackFriday";
+import { topuri } from "@/lib/legaturiInterne";
 
 export const metadata: Metadata = {
   title: "AmCupon.ro — Coduri de reducere si oferte actualizate zilnic",
@@ -139,6 +140,9 @@ export default function Page() {
     .map((p) => ({ slug: p.slug, title: p.title }))
     .sort((a, b) => a.title.localeCompare(b.title, "ro"));
 
+  // 04.11.2026: topurile n-aveau niciun link din site (vezi lib/legaturiInterne.ts).
+  const listaTopuri = topuri();
+
   // Server Component, randat o singura data per request/ISR — Date.now() aici e sigur
   // (nu declanseaza hidratare), acelasi pattern ca cod-reducere/[magazin]/page.tsx.
   const astazi = new Date().toISOString().slice(0, 10);
@@ -158,6 +162,7 @@ export default function Page() {
       astazi={astazi}
       pesteMagazine={pesteMagazine()}
       ghiduri={ghiduri}
+      topuri={listaTopuri}
       blackFriday={blackFriday}
     />
   );

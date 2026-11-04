@@ -43,6 +43,7 @@ BLOG_PATH = os.path.join(repo_root, "frontend", "public", "blog-posts.json")
 OUTPUT_PATH = os.path.join(repo_root, "frontend", "public", "output.json")
 COMPARISONS_PATH = os.path.join(repo_root, "frontend", "public", "comparisons.json")
 BLACK_FRIDAY_PATH = os.path.join(repo_root, "frontend", "public", "black-friday-parteneri.json")
+TOP_PATH = os.path.join(repo_root, "frontend", "public", "top-produse.json")
 
 # Toate paginile statice importante — trimise o singura data (raman in seen dupa)
 STATIC_PAGES = [
@@ -195,6 +196,11 @@ def main():
             candidate_urls.add(f"{BASE_URL}/black-friday/{c['magazin']}")
     for k in bf.get("categorii") or []:
         candidate_urls.add(f"{BASE_URL}/black-friday/categorie/{k['slug']}")
+
+    # 6. Topurile (04.11.2026): nu erau in lista, deci Bing le afla doar din sitemap.
+    for c in load_json(TOP_PATH, {}).get("categorii") or []:
+        if c.get("slug"):
+            candidate_urls.add(f"{BASE_URL}/top/{c['slug']}")
 
     # Ora Romaniei, ca in calendar: 2 ore sunt destule pentru granita de zi, indiferent de sezon.
     azi = (datetime.now(timezone.utc) + timedelta(hours=2)).strftime("%Y-%m-%d")

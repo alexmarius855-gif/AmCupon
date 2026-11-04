@@ -9,6 +9,7 @@ import { numeInFraza, type SectiuneTema } from "../../../lib/topFeed";
 import { linkuriPlatite, sectiunePentru, dataFeed } from "../../../lib/oferteTema";
 import { numeAfisat } from "../../../lib/numeMagazin";
 import { destinatieTop, legaturiTema } from "../../../lib/destinatiiTop";
+import { ghiduriPentruTema } from "../../../lib/legaturiInterne";
 
 interface Produs {
   pozitie: number;
@@ -171,6 +172,7 @@ export default async function TopCategoriePage({
   // Fara oferte in feed: legaturi verificate spre partenerii care vand tema (lib/destinatiiTop.ts).
   const legaturi = sectiune ? [] : legaturiTema(slug, linkuri);
   const numeLegaturi = legaturi.map(l => l.eticheta).join(", ");
+  const ghiduriTema = ghiduriPentruTema(slug);
   const actualizat = dataFeed();
   const ieftin = sectiune ? sectiune.game[0]?.produse[0] : undefined;
   const ceaMaiIeftinaMag = sectiune
@@ -380,6 +382,21 @@ export default async function TopCategoriePage({
                 ))}
               </div>
             </section>
+          )}
+
+          {ghiduriTema.length > 0 && (
+            <nav aria-label="Ghiduri pe aceeași temă" className="mt-10">
+              <h2 className="text-lg font-black text-[var(--foreground)] mb-3">Ghiduri pe aceeași temă</h2>
+              <ul className="space-y-2">
+                {ghiduriTema.map(g => (
+                  <li key={g.slug}>
+                    <Link href={`/blog/${g.slug}`} className="text-sm text-[var(--text-soft)] hover:text-[var(--accent-text)] transition-colors">
+                      {g.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
           )}
 
           {/* CUM AM FACUT TOPUL — pana pe 05.10.2026 aici scria „Cum testam" si „Fiecare produs
