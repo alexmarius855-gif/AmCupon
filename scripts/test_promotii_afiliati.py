@@ -13,7 +13,8 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from promotii import (cod_din_titlu, coduri_in_text, curata_promotii, fara_cod, fara_coduri,  # noqa: E402
+from promotii import (cod_din_titlu, coduri_in_text, coduri_listate, curata_promotii, fara_cod,  # noqa: E402
+                      fara_coduri, fara_coduri_listate, scurteaza,  # noqa: E402
                       fara_markdown, pentru_alta_piata, repara_mojibake, text_pentru_afiliati, titlu_promotie,
                       valoare_zero)
 
@@ -307,6 +308,35 @@ verifica("titlu scurt identic = dublura", is_duplicate([{"nume": "Flash Sale"}],
 verifica("capcana: titluri scurte diferite nu sunt dubluri", is_duplicate([{"nume": "Sale"}], {"nume": "Flash Sale"}), False)
 verifica("text pentru afiliati in engleza iese",
          descriere_publica("Your audience can save $300 instantly. Free shipping.", {"nume": "X"}), "Free shipping.")
+
+# Coduri scrise ca lista de trepte (04.11.2026): pe site se citeau intregi, fara clic pe linkul platit.
+FLEX = "BF12 -- Extra 12% OFF on Any order BF15 -- Extra 15% OFF on Orders $90+ BF20 -- Extra 20% OFF on Orders $120+"
+KLAI = "17% OFF Sitewide: BF17; $30 OFF Orders Over $155: BF30; $60 OFF Orders Over $265: BF60. Nov 2–10, 2026."
+pfx = {"nume": "BLACK FRIDAY -- UP TO 45% OFF", "descriere": FLEX, "cod_cupon": ""}
+verifica("lista de trepte: primul cod trece in cod_cupon", (cod_din_titlu(pfx), pfx["cod_cupon"]), (True, "BF12"))
+verifica("lista de trepte: ramane doar treapta codului", fara_coduri_listate(FLEX, "BF12"), "Extra 12% OFF on Any order")
+verifica("lista de trepte: alta treapta, alt text", fara_coduri_listate(FLEX, "BF20"), "Extra 20% OFF on Orders $120+")
+verifica("lista de trepte: cod strain de lista, toate treptele fara coduri", fara_coduri_listate(FLEX, "ALT9"),
+         "Extra 12% OFF on Any order; Extra 15% OFF on Orders $90+; Extra 20% OFF on Orders $120+")
+verifica("reducere: cod, codurile ies, restul textului ramane", fara_coduri_listate(KLAI, "BF60"),
+         "17% OFF Sitewide; $30 OFF Orders Over $155; $60 OFF Orders Over $265. Nov 2–10, 2026.")
+verifica("off Code：X ramane la regula veche, nu lasa cuvantul Code in text",
+         (coduri_listate("enjoy 5% off Code：OIAFF5"), fara_coduri("enjoy 5% off Code：OIAFF5", {"cod_cupon": "OIAFF5"})),
+         ([], "enjoy 5% off"))
+verifica("cod dupa doua puncte in titlu", coduri_listate("Screen discounts：AVACC88"), ["AVACC88"])
+for capcana in ("LABOR8 Signature Scent: parfum de nisa", "For LONGER RAY5 Laser Engraver Raiser Feet", "$20 off over $300 - 26Q4",
+                "Kospet P10 - 30% off", "Model RTX4090 – 20% off", "Reducere 20% la modelele: RTX4090, RTX4080",
+                "Black Friday: 20% off la tot", "Valabil 2 - 8 noiembrie, reducere 15%: toata gama"):
+    verifica(f"capcana, nu e cod: {capcana}", (coduri_listate(capcana), fara_coduri_listate(capcana)), ([], capcana))
+mfx = [M("flextail.com", dict(P("BLACK FRIDAY -- UP TO 45% OFF"), descriere=FLEX, expira="2026-12-10"))]
+curata_promotii(mfx, azi="2026-11-04")
+verifica("curata_promotii: cod mutat, text fara coduri", (mfx[0]["promotii"][0]["cod_cupon"], mfx[0]["promotii"][0]["descriere"]),
+         ("BF12", "Extra 12% OFF on Any order"))
+verifica("curata_promotii e idempotent pe lista", (curata_promotii(mfx, azi="2026-11-04") and mfx[0]["promotii"][0]["descriere"]),
+         "Extra 12% OFF on Any order")
+verifica("scurtat la cuvant, nu in mijlocul lui", scurteaza("unu doi trei patru", 10), "unu doi…")
+verifica("scurtat la sfarsit de fraza", scurteaza("Prima fraza aici. A doua fraza lunga", 25), "Prima fraza aici.")
+verifica("text scurt ramane intreg", scurteaza("scurt", 10), "scurt")
 
 hrt = parse_promotii([{
     "name": "Reducere 10% la tot", "customer_description": "Reducere 10% la tot cosul, indiferent de valoare.",

@@ -253,6 +253,55 @@ def coduri_in_text(text: str) -> list:
     return gasite
 
 
+# 04.11.2026: codul scris FARA „code" in fata, ca lista de trepte. Flextail: „BF12 -- Extra 12% OFF on Any order
+# BF15 -- Extra 15% OFF on Orders $90+"; Klaiyi: „17% OFF Sitewide: BF17; $30 OFF Orders Over $155: BF30";
+# Valerion: „Screen discounts：AVACC88". Pe site se citeau intregi, fara clic pe linkul platit. Un cuvant cu
+# majuscule si cifre nu ajunge („LABOR8 Signature", „RAY5 Laser", „- 26Q4" nu sunt coduri), deci se cere forma:
+# cod + liniuta + Extra/Save/Get, sau reducere + doua puncte + cod la sfarsit de fraza.
+_TOK_COD = r"(?=[A-Z0-9_-]*\d)(?=[A-Z0-9_-]*[A-Z])[A-Z0-9][A-Z0-9_-]{3,24}"
+_RE_COD_TREAPTA = re.compile(rf"(?<![\w-])(?P<cod>{_TOK_COD})\s*(?:--+|[–—:：])\s*(?=(?i:extra|save|get)\b)")
+_RE_COD_DUPA_REDUCERE = re.compile(
+    r"(?P<inainte>(?i:\boff\b|\bdiscounts?\b|\breducere\b|\bsitewide\b)[^:：;.\n]{0,40})(?i:(?<!code)(?<!cod)(?<!codul)(?<!coupon)(?<!voucher))[:：]\s*"
+    rf"(?P<cod>{_TOK_COD})(?=\s*(?:$|[;.]))")
+
+
+def coduri_listate(text: str) -> list:
+    """Codurile din lista de trepte, in ordinea din text, fara repetitii."""
+    gasite = sorted(list(_RE_COD_TREAPTA.finditer(text or "")) + list(_RE_COD_DUPA_REDUCERE.finditer(text or "")),
+                    key=lambda m: m.start("cod"))
+    return list(dict.fromkeys(m.group("cod") for m in gasite))
+
+
+def fara_coduri_listate(text: str, cod: str = "") -> str:
+    """Textul fara codurile din lista. La „cod -- Extra N%" ramane doar treapta codului din `cod_cupon`: omul
+    primeste un singur cod, iar „Extra 20%" langa un cod de 12% ar promite ce nu da codul."""
+    if not coduri_listate(text):
+        return text or ""
+    trepte = list(_RE_COD_TREAPTA.finditer(text))
+    t = text
+    if trepte:
+        i = next((k for k, m in enumerate(trepte) if m.group("cod") == cod), 0 if not cod else None)
+        if i is None:
+            t = _RE_COD_TREAPTA.sub("; ", text)
+        else:
+            final = trepte[i + 1].start() if i + 1 < len(trepte) else len(text)
+            t = text[:trepte[0].start()] + text[trepte[i].end():final]
+    t = _RE_COD_DUPA_REDUCERE.sub(lambda m: m.group("inainte"), t)
+    t = re.sub(r"\s+([;,.])", r"\1", " ".join(t.split()))
+    return t.lstrip(" ;:–—").rstrip(" ;:–—-")
+
+
+def scurteaza(text: str, maxim: int) -> str:
+    """Scurtat la sfarsit de fraza sau de cuvant, nu in mijlocul lui („Sute de a", articolele din 04.11)."""
+    if len(text) <= maxim:
+        return text
+    taiat = text[:maxim]
+    capat = max(taiat.rfind(". "), taiat.rfind("! "), taiat.rfind("? "))
+    if capat >= maxim // 2:
+        return taiat[:capat + 1]
+    return taiat.rsplit(" ", 1)[0].rstrip(" ,;:-–—") + "…"
+
+
 def cod_din_titlu(p: dict) -> bool:
     """Muta codul din titlu sau din text in `cod_cupon` (in-place). Intoarce True daca a mutat ceva."""
     if (p.get("cod_cupon") or "").strip():
@@ -264,10 +313,15 @@ def cod_din_titlu(p: dict) -> bool:
         p["cod_cupon"] = nume
         return True
     coduri = coduri_in_text(nume) or coduri_in_text(desc)
-    if len(coduri) != 1:
-        return False
-    p["cod_cupon"] = coduri[0]
-    return True
+    if len(coduri) == 1:
+        p["cod_cupon"] = coduri[0]
+        return True
+    # Lista de trepte: primul cod, cel cu pragul cel mai mic. Textul ramane doar pentru el (fara_coduri_listate).
+    listate = [] if coduri else (coduri_listate(nume) or coduri_listate(desc))
+    if listate:
+        p["cod_cupon"] = listate[0]
+        return True
+    return False
 
 
 # 07.10.2026: „USD $0 Off Coupon Code: CHAU21" (geekbuying.com) — o reducere de zero nu e o oferta.
@@ -370,6 +424,7 @@ def descriere_publica(desc: str, promo: dict) -> str:
     # Linkurile brute din text („>> https://noriel.ro/oferte") ar trimite omul la magazin fara comision.
     t = re.sub(r"\s+", " ", RE_LINK_BRUT.sub(" ", t)).strip()
     t = re.sub(r"\s+([,.;:!?])", r"\1", t)  # „etichete , cititoare": spatiul ramas dupa emoji scos
+    t = fara_coduri_listate(t, (promo.get("cod_cupon") or "").strip())
     if not t or pentru_alta_piata(t):
         return ""
     fraze = [f for f in re.split(r"(?<=[.!?])\s+", t)
@@ -491,6 +546,8 @@ def curata_promotii(magazine: list, azi: str = None) -> dict:
                 continue
             if cod_din_titlu(p):
                 st["cod_din_titlu"] += 1
+            if isinstance(p.get("descriere"), str):
+                p["descriere"] = fara_coduri_listate(p["descriere"], (p.get("cod_cupon") or "").strip())
             verdict = text_pentru_afiliati(p, m)
             if verdict and verdict[0] == "scoate":
                 st["afiliati_scoase"].append(f"{m.get('magazin', '?')} ({verdict[1]})")
@@ -591,6 +648,7 @@ def fara_coduri(text: str, p: dict) -> str:
     nume = (p.get("nume") or "").strip()
     coduri = [(p.get("cod_cupon") or "").strip(), nume if pare_cod(nume) else ""]
     coduri += coduri_in_text(nume) + coduri_in_text(p.get("descriere") or "")
+    coduri += coduri_listate(nume) + coduri_listate(p.get("descriere") or "")
     for c in dict.fromkeys(x for x in coduri if x):
         text = fara_cod(text, c)
     return text

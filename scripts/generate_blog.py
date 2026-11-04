@@ -50,7 +50,7 @@ CATEGORII_ROUNDUP = [
 # Numele magazinului: scripts/nume_magazin.py, acelasi rezultat ca numeAfisat() din frontend
 # (06.10.2026 — copia naiva de aici scria „Cod Reducere Us" pentru us.lemorele.com).
 from nume_magazin import nume_afisat  # noqa: E402
-from promotii import fara_coduri, fara_coduri_magazin, pare_cod, titlu_in_text  # noqa: E402
+from promotii import fara_coduri, fara_coduri_magazin, pare_cod, scurteaza, titlu_in_text  # noqa: E402
 
 
 def slug_articol_magazin(magazin: str, luna: str, an: int) -> str:
@@ -175,7 +175,7 @@ def genereaza_articol_magazin(store: dict, luna: str, an: int) -> dict:
         desc_p = " ".join(fara_coduri_magazin(p.get("descriere") or "", promotii).split())
         linie = f"**{i+1}. {titlu_p}**"
         if desc_p and desc_p != titlu_p and not pare_cod(desc_p):
-            linie += f"\n   _{desc_p[:120]}_"
+            linie += f"\n   _{scurteaza(desc_p, 120)}_"
         if p.get("cod_cupon"):
             linie += f"\n   Cod: `{masca_cod(p['cod_cupon'])}`"
         linie += text_expirare(p.get("zile_ramase"))
