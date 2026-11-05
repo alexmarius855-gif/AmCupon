@@ -52,8 +52,8 @@ PAGINI_FEED = 2
 BUGET_CERERI = int(os.environ.get("CRITERII_BUGET", "90"))
 VARSTA_MAXIMA_ZILE = 10
 # Masurat 04.11.2026: feed-urile raman in urma. AFI Sport 3.990 lei in feed fata de 4.790 pe site, ASUS si pcmadd cu pagini 404.
-BUGET_VERIFICARI = int(os.environ.get("CRITERII_VERIFICARI", "200"))
-ZILE_VERIFICARE = 3
+BUGET_VERIFICARI = int(os.environ.get("CRITERII_VERIFICARI", "400"))
+ZILE_VERIFICARE = 2
 # Un pret confirmat pe site-ul magazinului ramane valabil atat; daca magazinul incepe sa blocheze, produsul iese singur.
 ZILE_VALABIL = 10
 UA_MAGAZIN = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126 Safari/537.36", "Accept-Language": "ro"}
@@ -359,6 +359,10 @@ def _pret_text(v) -> float:
         return 0.0
 
 
+def _alta_moneda(m) -> bool:
+    return bool(m) and str(m).strip().upper() not in ("RON", "LEI")
+
+
 def pret_din_pagina(html: str) -> tuple:
     """(pret, in_stoc) din datele structurate ale paginii de produs. (0, None) cand pagina nu le spune:
     atunci nu presupunem nimic. Nu cautam „lei" in text: langa pret stau rate, transport si produse similare."""
@@ -380,7 +384,11 @@ def pret_din_pagina(html: str) -> tuple:
                     pret = _pret_text(o.get("price") or o.get("lowPrice"))
                     if pret > 0:
                         disp = str(o.get("availability") or "").lower()
-                        return pret, (False if "outofstock" in disp or "soldout" in disp or "discontinued" in disp else (True if disp else None))
+                        stoc = False if "outofstock" in disp or "soldout" in disp or "discontinued" in disp else (True if disp else None)
+                        # Rularea automata citeste din SUA, iar unele magazine arata acolo alta moneda (druzy: 160 lei = 40 USD). Doar lei.
+                        if _alta_moneda(o.get("priceCurrency")):
+                            return 0.0, stoc
+                        return pret, stoc
             for k in ("@graph", "mainEntity", "mainEntityOfPage"):
                 r = caut(n.get(k), adanc + 1)
                 if r:
@@ -395,12 +403,16 @@ def pret_din_pagina(html: str) -> tuple:
             r = None
             if re.search(r'"@type"\s*:\s*"Product"', bloc):
                 g = re.search(r'"(?:price|lowPrice)"\s*:\s*"?([\d.,]+)', bloc)
-                if g and _pret_text(g.group(1)) > 0:
+                moneda = re.search(r'"priceCurrency"\s*:\s*"([^"]+)"', bloc)
+                if g and _pret_text(g.group(1)) > 0 and not (moneda and _alta_moneda(moneda.group(1))):
                     disp = re.search(r'"availability"\s*:\s*"([^"]+)"', bloc)
                     d = disp.group(1).lower() if disp else ""
                     r = _pret_text(g.group(1)), (False if "outofstock" in d or "soldout" in d or "discontinued" in d else (True if d else None))
         if r:
             return r
+    m = re.search(r'<meta[^>]+(?:property|name)="(?:product|og):price:currency"[^>]+content="([^"]+)"', html, re.I) or re.search(r'<meta[^>]+content="([^"]+)"[^>]+(?:property|name)="(?:product|og):price:currency"', html, re.I)
+    if m and _alta_moneda(m.group(1)):
+        return 0.0, None
     for tipar in (r'<meta[^>]+(?:property|name)="(?:product|og):price:amount"[^>]+content="([\d.,]+)"',
                   r'<meta[^>]+content="([\d.,]+)"[^>]+(?:property|name)="(?:product|og):price:amount"',
                   r'itemprop="price"[^>]+content="([\d.,]+)"'):
@@ -843,6 +855,12 @@ def test() -> int:
         ("bradul de 180 cm intra", se_potriveste("Brad artificial de Craciun Alpin, verde, 3D, 180 cm", DUPA_SLUG["brad-artificial-180-cm"], 680), True),
         ("bicicleta de 20 inch nu e de 16", se_potriveste("Bicicleta copii 20 inch", DUPA_SLUG["bicicleta-copii-16-inch"], 600), False),
         ("tricicleta electrica pentru adulti nu intra", se_potriveste("Tricicleta electrica adulti 500W", DUPA_SLUG["tricicleta-copii"], 3000), False),
+        ("pret in dolari: nu stim", pret_din_pagina('<script type="application/ld+json">{"@type":"Product","offers":{"price":"40.00","priceCurrency":"USD"}}</script>'), (0.0, None)),
+        ("pret in dolari, stoc epuizat: tot epuizat", pret_din_pagina('<script type="application/ld+json">{"@type":"Product","offers":{"price":"40.00","priceCurrency":"USD","availability":"OutOfStock"}}</script>'), (0.0, False)),
+        ("pret in lei ramane", pret_din_pagina('<script type="application/ld+json">{"@type":"Product","offers":{"price":"160.00","priceCurrency":"RON"}}</script>'), (160.0, None)),
+        ("meta in euro: nu stim", pret_din_pagina('<meta property="product:price:amount" content="40"><meta property="product:price:currency" content="EUR">'), (0.0, None)),
+        ("meta in lei ramane", pret_din_pagina('<meta property="product:price:amount" content="160"><meta property="product:price:currency" content="RON">'), (160.0, None)),
+        ("JSON stricat in dolari: nu stim", pret_din_pagina('<script type="application/ld+json">{"@type":"Product","name":"a"b","offers":{"price":"32.50","priceCurrency":"USD"}}</script>'), (0.0, None)),
         ("CAPTCHA pe alt domeniu: nu stim, nu stergem", stare_magazin(200, "http://captcha.distinct.ro/?original_url=x", "<title>Distinct Captcha</title>", "https://www.evomag.ro/casti-x", "Casti Monster N-Tune"), {}),
         ("www in plus nu e alt domeniu", stare_magazin(200, "https://a.ro/p", '<meta property="product:price:amount" content="10">', "https://www.a.ro/p", "Produs"), {"pret": 10.0}),
         ("categoria nu confirma produsul", stare_magazin(200, "https://www.babyneeds.ro/plimbare-relaxare/", '<title>Plimbare si relaxare</title><script type="application/ld+json">{"@type":"Product","name":"Plimbare","offers":{"lowPrice":"61.99","highPrice":"1789"}}</script>', "https://www.babyneeds.ro/bicicleta-dino-little-heart.html", "Bicicleta copii, Dino Bikes, Little Heart, Roti ajutatoare"), {"sters": True}),
