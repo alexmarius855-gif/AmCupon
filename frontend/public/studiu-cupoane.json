@@ -1,11 +1,11 @@
 {
   "generat": "2026-11-05",
   "total_magazine": 456,
-  "cu_promotie": 79,
-  "cu_cod_real": 13,
+  "cu_promotie": 80,
+  "cu_cod_real": 14,
   "doar_oferta": 66,
-  "procent_cu_promotie": 17.3,
-  "procent_cu_cod": 2.9,
+  "procent_cu_promotie": 17.5,
+  "procent_cu_cod": 3.1,
   "reducere_mediana_generala": 40,
   "magazine_cu_procent_declarat": 55,
   "categorii": [
@@ -13,7 +13,7 @@
       "slug": "carti-educatie",
       "nume": "Cărți & educație",
       "magazine": 22,
-      "cu_promotie": 8,
+      "cu_promotie": 9,
       "reducere_mediana": 85.0,
       "reducere_max": 90,
       "esantion": 6

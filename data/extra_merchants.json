@@ -5169,14 +5169,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": true,
-    "zile_ramase": 360,
+    "zile_ramase": 359,
     "promotii": [
       {
         "nume": "Quber Savings",
         "descriere": "Quber Savings",
         "cod_cupon": "QUBER10",
         "landing_page": "https://orbitmobile.com",
-        "zile_ramase": 360,
+        "zile_ramase": 359,
         "expira": "2027-10-31",
         "sursa": "impact_deals_api"
       }
@@ -6986,14 +6986,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 72,
+    "zile_ramase": 71,
     "promotii": [
       {
         "nume": "8% Sitewide：AFFNEW8",
         "descriere": "Code:AFFNEW8 For new customers only, one use per person",
         "cod_cupon": "",
         "landing_page": "https://www.autofull.com",
-        "zile_ramase": 72,
+        "zile_ramase": 71,
         "expira": "2027-01-16",
         "sursa": "impact_deals_api"
       },
@@ -8860,7 +8860,7 @@
         "descriere": "yilite hair 53% off all products",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 1248,
+        "zile_ramase": 1247,
         "expira": "2030-04-06",
         "sursa": "impact_deals_api"
       },
@@ -9343,14 +9343,14 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 329,
+    "zile_ramase": 328,
     "promotii": [
       {
         "nume": "New Autumn and winter collection",
         "descriere": "New Autumn and winter collection",
         "cod_cupon": "",
         "landing_page": "https://fitory.com/collections/new-arrivals",
-        "zile_ramase": 329,
+        "zile_ramase": 328,
         "expira": "2027-09-30",
         "sursa": "impact_deals_api"
       }
@@ -10992,7 +10992,7 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 6,
+    "zile_ramase": 5,
     "promotii": [
       {
         "nume": "[GL&US] Limited time sale-P10 Save 48% OFF! Use code DPR35",
@@ -11026,7 +11026,7 @@
         "descriere": "Limited time sale-Save 45% OFF! Use code DPR35",
         "cod_cupon": "",
         "landing_page": "https://eu.kospet.com/pages/special-clearance-sale",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-11-12",
         "sursa": "impact_deals_api"
       },
@@ -11035,7 +11035,7 @@
         "descriere": "Limited time sale-S2 Save 54% OFF! Use code DS20",
         "cod_cupon": "",
         "landing_page": "https://eu.kospet.com/pages/special-clearance-sale",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-11-12",
         "sursa": "impact_deals_api"
       },
@@ -11044,7 +11044,7 @@
         "descriere": "Limited time sale-M3U Save 45% OFF! Use code V3U20",
         "cod_cupon": "",
         "landing_page": "https://eu.kospet.com/pages/special-clearance-sale",
-        "zile_ramase": 7,
+        "zile_ramase": 6,
         "expira": "2026-11-12",
         "sursa": "impact_deals_api"
       },
@@ -11053,7 +11053,7 @@
         "descriere": "Limited time sale-T3U2 Save 42% OFF! Use code HT3U2",
         "cod_cupon": "",
         "landing_page": "https://eu.kospet.com/pages/special-clearance-sale",
-        "zile_ramase": 6,
+        "zile_ramase": 5,
         "expira": "2026-11-11",
         "sursa": "impact_deals_api"
       }
@@ -12678,6 +12678,42 @@
       {
         "nume": "X-Sense Exklusiver Affiliate-Rabatt – 12 % auf Ihre gesamte Bestellung",
         "descriere": "Sichern Sie sich exklusiv 12 % Rabatt auf Ihre gesamte Bestellung bei X-Sense mit dem Affiliate-Code XSENSEAF12. Entdecken Sie Rauchmelder, CO-Melder, Wassermelder und smarte Sicherheitslösungen für Ihr Zuhause. Schützen Sie, was wirklich zählt, und sparen Sie bei Ihrem Einkauf. Angebot gültig bis zum 30.12.2026.",
+        "cod_cupon": "",
+        "landing_page": "https://de.x-sense.com/",
+        "zile_ramase": 55,
+        "expira": "2026-12-31",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "X-SENSE Offre Exclusive des Fêtes – 13 % sur Toute Votre Commande",
+        "descriere": "Profitez de la meilleure remise exclusive aux affiliés de la saison chez X-SENSE ! Avec le code BFCMXS13, bénéficiez de 13 % de réduction sur toute votre commande. Découvrez les détecteurs de fumée, de CO, de fuite d'eau et les solutions de sécurité connectées. Cumulez cette offre avec certaines promotions du site pour économiser davantage pendant le Black Friday, le Cyber Monday, Noël et les soldes de fin d'année. Valable jusqu'au 30/12/2026. Non cumulable avec d'autres codes affiliés.",
+        "cod_cupon": "",
+        "landing_page": "https://fr.x-sense.com/",
+        "zile_ramase": 55,
+        "expira": "2026-12-31",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "X-SENSE Exclusive Holiday Season Offer – 13% Off Your Entire Order",
+        "descriere": "Make the most of the holiday shopping season with X-SENSE! Enjoy an exclusive 13% OFF your entire order with affiliate code BFCMXS13—our highest affiliate-exclusive discount of the season. Shop smart smoke alarms, CO detectors, water leak sensors, and home safety essentials. Combine your code with eligible site promotions for even bigger savings during Black Friday, Cyber Monday, Christmas, and year-end sales. Valid through December 30, 2026. Cannot be combined with other affiliate codes.",
+        "cod_cupon": "",
+        "landing_page": "https://www.x-sense.com/",
+        "zile_ramase": 55,
+        "expira": "2026-12-31",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "[EU Site] X-SENSE Exclusive Holiday Season Offer – 13% Off Your Entire Order",
+        "descriere": "Make the most of the holiday shopping season with X-SENSE! Enjoy an exclusive 13% OFF your entire order with affiliate code BFCMXS13—our highest affiliate-exclusive discount of the season. Shop smart smoke alarms, CO detectors, water leak sensors, and home safety essentials. Combine your code with eligible site promotions for even bigger savings during Black Friday, Cyber Monday, Christmas, and year-end sales. Valid through December 30, 2026. Cannot be combined with other affiliate codes.",
+        "cod_cupon": "",
+        "landing_page": "https://eu.x-sense.com/",
+        "zile_ramase": 55,
+        "expira": "2026-12-31",
+        "sursa": "impact_deals_api"
+      },
+      {
+        "nume": "X-SENSE Exklusiver Feiertagsrabatt – 13 % auf Ihre gesamte Bestellung",
+        "descriere": "Sichern Sie sich den höchsten exklusiven Affiliate-Rabatt der Saison bei X-SENSE! Mit dem Code BFCMXS13 sparen Sie 13 % auf Ihre gesamte Bestellung. Entdecken Sie Rauchmelder, CO-Melder, Wassermelder und smarte Sicherheitslösungen. Kombinieren Sie den Code mit ausgewählten Shop-Aktionen und profitieren Sie von zusätzlichen Ersparnissen zum Black Friday, Cyber Monday, zu Weihnachten und beim Jahresendverkauf. Gültig bis 30.12.2026. Nicht mit anderen Affiliate-Codes kombinierbar.",
         "cod_cupon": "",
         "landing_page": "https://de.x-sense.com/",
         "zile_ramase": 55,

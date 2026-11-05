@@ -18338,7 +18338,8 @@
 "id": "Rq2Hi_fVWiUA",
 "brand": "Lorelli",
 "url_magazin": "https://www.evomag.ro/bebe-copii-jucarii-carucioare-transport-bebe-scaune-auto-copii-si-inaltatoare/lorelli-scaun-auto-pentru-copii-lorelli-rio-isofix-76-150-cm-15-luni-12-ani-tetiera-reglabila-prin-mecanism-negru-4302634.html",
-"pret_vechi": null
+"pret_vechi": null,
+"verificat": "2026-11-05"
 },
 {
 "titlu": "Scaun Auto Pentru Copii Cu Isofix U-Grow, Tetina Reglabila Pe Inaltime, Centuri De Prindere Reglabile, Gri - 302GR",
@@ -18673,28 +18674,6 @@
 "pret_vechi": null
 },
 {
-"titlu": "Joc educativ - LEGO Recreate - Magie | Didactica Publishing House",
-"pret": 68.0,
-"imagine": "https://carturesti.ro/img-prod/5284723887-8993046.webp",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fjucarii%2Fjoc-educativ-lego-recreate-magie-5284723887",
-"magazin": "carturesti.ro",
-"id": "UmvP768DBJv1",
-"brand": "Didactica Publishing House",
-"url_magazin": "https://carturesti.ro/jucarii/joc-educativ-lego-recreate-magie-5284723887",
-"pret_vechi": null
-},
-{
-"titlu": "Joc educativ - LEGO Recreate - Spatiu | Didactica Publishing House",
-"pret": 68.0,
-"imagine": "https://carturesti.ro/img-prod/5284723824-8993157.webp",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fjucarii%2Fjoc-educativ-lego-recreate-spatiu-5284723824",
-"magazin": "carturesti.ro",
-"id": "lY_bdWeP9Erl",
-"brand": "Didactica Publishing House",
-"url_magazin": "https://carturesti.ro/jucarii/joc-educativ-lego-recreate-spatiu-5284723824",
-"pret_vechi": null
-},
-{
 "titlu": "LEGO® - Camioneta cu dovleac sculptat 40822, 177 piese",
 "pret": 72.99,
 "imagine": "https://static2.evomag.ro/img?extend=white&file=products%2F4310%2F4310421%2F6a7c191c4e91f.jpg&type=auto&width=500&sign=HGU2dh0hxpJE0nN1jwBJ8-Hy_eh-wG8XV8lbAXl2iAI",
@@ -18853,6 +18832,2158 @@
 "carturesti.ro",
 "dwyn.ro",
 "evomag.ro"
+]
+},
+{
+"slug": "puzzle-1000-piese",
+"tema": "jucarii-copii",
+"tema_nume": "Jucării",
+"titlu": "Puzzle de 1000 de piese",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-05",
+"feeduri": [
+{
+"id": 8767,
+"magazin": "trada.ro"
+},
+{
+"id": 1528,
+"magazin": "ookee.ro"
+},
+{
+"id": 9076,
+"magazin": "hobiktoys.ro"
+},
+{
+"id": 9441,
+"magazin": "infinity.ro"
+}
+],
+"produse": [
+{
+"titlu": "Puzzle Culorile Padurii, 1000 piese",
+"pret": 38.9,
+"imagine": "https://www.ookee.ro/417774-large_default/puzzle-culorile-padurii-1000-piese.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle%2F134500-puzzle-culorile-padurii-1000-piese-4823115901163.html",
+"magazin": "ookee.ro",
+"id": "VbvOnhO9IElu",
+"brand": "Dodo Toys",
+"url_magazin": "https://www.ookee.ro/puzzle/134500-puzzle-culorile-padurii-1000-piese-4823115901163.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle Mini 1000 Piese Tablou Fata cu Cercel de Perla Johannes Vermeer, Format Compact 30 x 42 cm, Carton Rezistent",
+"pret": 43.56,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/275225522/image-dd57b6ef23604e70a9448f27a9a2e81a.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpuzzle-mini-1000-piese-tablou-fata-cu-cercel-de-perla-johannes-vermeer-format-compact-30-x-42-cm-carton-rezistent-9381420%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "k1zyfP4kMpzy",
+"brand": "Daemi",
+"url_magazin": "https://infinity.ro/puzzle-mini-1000-piese-tablou-fata-cu-cercel-de-perla-johannes-vermeer-format-compact-30-x-42-cm-carton-rezistent-9381420/p?utm_source=2performant",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle Mini 1000 Piese Peste Tablou Artistic, Carton Rezistent, Format Compact 42 x 30 cm, Antistres si Relaxare, 14 ani",
+"pret": 43.56,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/275225524/image-172adebedc1e49b39ad7d5eaa5605b7f.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpuzzle-mini-1000-piese-peste-tablou-artistic-carton-rezistent-format-compact-42-x-30-cm-antistres-si-relaxare-14-ani-9381421%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "zioEFsTInwyi",
+"brand": "Daemi",
+"url_magazin": "https://infinity.ro/puzzle-mini-1000-piese-peste-tablou-artistic-carton-rezistent-format-compact-42-x-30-cm-antistres-si-relaxare-14-ani-9381421/p?utm_source=2performant",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle Hagia Sophia, Turcia, 1000 piese",
+"pret": 48.9,
+"imagine": "https://www.ookee.ro/416813-large_default/puzzle-hagia-sophia-turcia-1000-piese.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle%2F134222-puzzle-hagia-sophia-turcia-1000-piese-4823115901156.html",
+"magazin": "ookee.ro",
+"id": "SGAAdy1rUSS6",
+"brand": "Dodo Toys",
+"url_magazin": "https://www.ookee.ro/puzzle/134222-puzzle-hagia-sophia-turcia-1000-piese-4823115901156.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle Iapa cu manz, 1000 piese",
+"pret": 48.9,
+"imagine": "https://www.ookee.ro/416810-large_default/puzzle-iapa-cu-manz-1000-piese.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle%2F134221-puzzle-iapa-cu-manz-1000-piese-4823115901149.html",
+"magazin": "ookee.ro",
+"id": "Xcw67q0vQ5b0",
+"brand": "Dodo Toys",
+"url_magazin": "https://www.ookee.ro/puzzle/134221-puzzle-iapa-cu-manz-1000-piese-4823115901149.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle 1000 Piese, Deico, Franta, Louvre",
+"pret": 51.99,
+"imagine": "https://www.trada.ro/img/puzzle-1000-piese-deico-franta-louvre-148452html_tr-297791-large.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-deico-franta-louvre-148452.html",
+"magazin": "trada.ro",
+"id": "SEbK_FYzZevb",
+"brand": "Deico",
+"url_magazin": "https://www.trada.ro/puzzle-1000-piese-deico-franta-louvre-148452.html",
+"pret_vechi": 60.45,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle 1000 Piese pentru Adulti, Deico, Cascada Bigar",
+"pret": 51.99,
+"imagine": "https://www.trada.ro/img/puzzle-1000-piese-pentru-adulti-deico-cascada-bigar-146188html_tr-295676-large.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-pentru-adulti-deico-cascada-bigar-146188.html",
+"magazin": "trada.ro",
+"id": "zDor_PxJMOYx",
+"brand": "Deico",
+"url_magazin": "https://www.trada.ro/puzzle-1000-piese-pentru-adulti-deico-cascada-bigar-146188.html",
+"pret_vechi": 60.45,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle 1000 Piese, Roovi, Padurea Magica, Primavara",
+"pret": 51.99,
+"imagine": "https://www.trada.ro/img/puzzle-1000-piese-roovi-padurea-magica-primavara-146189html_tr-295677-large.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-roovi-padurea-magica-primavara-146189.html",
+"magazin": "trada.ro",
+"id": "zVC63mIj7X67",
+"brand": "Roovi",
+"url_magazin": "https://www.trada.ro/puzzle-1000-piese-roovi-padurea-magica-primavara-146189.html",
+"pret_vechi": 60.45,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle 1000 Piese, Roovi, Padurea Magica, Vara",
+"pret": 51.99,
+"imagine": "https://www.trada.ro/img/puzzle-1000-piese-roovi-padurea-magica-vara-146190html_tr-295684-large.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-roovi-padurea-magica-vara-146190.html",
+"magazin": "trada.ro",
+"id": "XEoE16kLuPuf",
+"brand": "Roovi",
+"url_magazin": "https://www.trada.ro/puzzle-1000-piese-roovi-padurea-magica-vara-146190.html",
+"pret_vechi": 60.45,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle 1000 Piese, Roovi, Padurea Magica, Toamna",
+"pret": 51.99,
+"imagine": "https://www.trada.ro/img/puzzle-1000-piese-roovi-padurea-magica-toamna-146191html_tr-295691-large.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-roovi-padurea-magica-toamna-146191.html",
+"magazin": "trada.ro",
+"id": "EJwOnyaH0BVj",
+"brand": "Roovi",
+"url_magazin": "https://www.trada.ro/puzzle-1000-piese-roovi-padurea-magica-toamna-146191.html",
+"pret_vechi": 60.45,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle 1000 Piese, Roovi, Padurea Magica, Iarna",
+"pret": 51.99,
+"imagine": "https://www.trada.ro/img/puzzle-1000-piese-roovi-padurea-magica-iarna-146192html_tr-295698-large.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-roovi-padurea-magica-iarna-146192.html",
+"magazin": "trada.ro",
+"id": "EEIQzcMaF87_",
+"brand": "Roovi",
+"url_magazin": "https://www.trada.ro/puzzle-1000-piese-roovi-padurea-magica-iarna-146192.html",
+"pret_vechi": 60.45,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle 1000 Piese, Deico, Animale de Padure",
+"pret": 51.99,
+"imagine": "https://www.trada.ro/img/puzzle-1000-piese-deico-animale-de-padure-146194html_tr-295712-large.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-deico-animale-de-padure-146194.html",
+"magazin": "trada.ro",
+"id": "f9vfdk2MLqWN",
+"brand": "Deico",
+"url_magazin": "https://www.trada.ro/puzzle-1000-piese-deico-animale-de-padure-146194.html",
+"pret_vechi": 60.45,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle 1000 Piese, Deico, Caini",
+"pret": 51.99,
+"imagine": "https://www.trada.ro/img/puzzle-1000-piese-deico-caini-146195html_tr-295713-large.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.trada.ro%2Fpuzzle-1000-piese-deico-caini-146195.html",
+"magazin": "trada.ro",
+"id": "Kb0AJ82b4P51",
+"brand": "Deico",
+"url_magazin": "https://www.trada.ro/puzzle-1000-piese-deico-caini-146195.html",
+"pret_vechi": 60.45,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle Rotund Pamantul - 1000 Piese",
+"pret": 56.0,
+"imagine": "https://cdnmpro.com/780585630/p/raw/3/puzzle-rotund-pamantul-1000-piese~2683.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.hobiktoys.ro%2Fcumpara%2Fpuzzle-rotund-pamantul-1000-piese-1059",
+"magazin": "hobiktoys.ro",
+"id": "DKMieDgfOG0Y",
+"brand": "Guangxing Feng Toys",
+"url_magazin": "https://www.hobiktoys.ro/cumpara/puzzle-rotund-pamantul-1000-piese-1059",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle Rotund Luna 1000 Piese",
+"pret": 64.8,
+"imagine": "https://cdnmpro.com/780585630/p/raw/1/puzzle-rotund-luna-1000-piese~2871.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.hobiktoys.ro%2Fcumpara%2Fpuzzle-rotund-luna-1000-piese-1085",
+"magazin": "hobiktoys.ro",
+"id": "M2lLPmeL_td5",
+"brand": "Guangxing Feng Toys",
+"url_magazin": "https://www.hobiktoys.ro/cumpara/puzzle-rotund-luna-1000-piese-1085",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle de Craciun Grinch cu Schiuri si Cadouri – 1000 de Piese",
+"pret": 78.19,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/274907687/2.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpuzzle-de-cr%C4%83ciun-grinch-cu-schiuri-%C8%99i-cadouri-%E2%80%93-1000-de-piese-9360594%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "Ah1svRmNbBEX",
+"brand": "OEM",
+"url_magazin": "https://infinity.ro/puzzle-de-crăciun-grinch-cu-schiuri-și-cadouri-–-1000-de-piese-9360594/p?utm_source=2performant",
+"pret_vechi": null
+},
+{
+"titlu": "Puzzle Rotund 1000 Piese Zodiac Astrologie si Simboluri Astrale, Carton Premium, Diametru 68 cm, Antistres, 14 ani+",
+"pret": 89.54,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/275225518/image-a14c273ceea449d39683c8615294d090.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpuzzle-rotund-1000-piese-zodiac-astrologie-si-simboluri-astrale-carton-premium-diametru-68-cm-antistres-14-ani--9381417%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "n21nNsUSmu3V",
+"brand": "Daemi",
+"url_magazin": "https://infinity.ro/puzzle-rotund-1000-piese-zodiac-astrologie-si-simboluri-astrale-carton-premium-diametru-68-cm-antistres-14-ani--9381417/p?utm_source=2performant",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Ravensburger - Puzzle provocarea Pokemon 1000 piese design nou",
+"pret": 91.9,
+"imagine": "https://www.ookee.ro/365826-large_default/ravensburger-puzzle-provocarea-pokemon-1000-piese-design-nou.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-ravensburger%2F123228-ravensburger-puzzle-provocarea-pokemon-1000-piese-design-nou.html",
+"magazin": "ookee.ro",
+"id": "IGCWjjicw8fG",
+"brand": "Ravensburger",
+"url_magazin": "https://www.ookee.ro/puzzle-ravensburger/123228-ravensburger-puzzle-provocarea-pokemon-1000-piese-design-nou.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Ravensburger - Puzzle Lamborghini Huracan 1000 piese design nou",
+"pret": 91.9,
+"imagine": "https://www.ookee.ro/361424-large_default/ravensburger-puzzle-lamborghini-huracan-1000-piese-design-nou.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-1000-1499-piese%2F122667-ravensburger-puzzle-lamborghini-huracan-1000-piese-design-nou.html",
+"magazin": "ookee.ro",
+"id": "BnW60P5Q5yjk",
+"brand": "Ravensburger",
+"url_magazin": "https://www.ookee.ro/puzzle-1000-1499-piese/122667-ravensburger-puzzle-lamborghini-huracan-1000-piese-design-nou.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Ravensburger - Puzzle Praga 1000 piese design nou",
+"pret": 91.9,
+"imagine": "https://www.ookee.ro/361570-large_default/ravensburger-puzzle-praga-1000-piese-design-nou.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-1000-1499-piese%2F122690-ravensburger-puzzle-praga-1000-piese-design-nou.html",
+"magazin": "ookee.ro",
+"id": "ETxJoziTfpEj",
+"brand": "Ravensburger",
+"url_magazin": "https://www.ookee.ro/puzzle-1000-1499-piese/122690-ravensburger-puzzle-praga-1000-piese-design-nou.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Ravensburger - Puzzle Praga noaptea 1000 piese design nou",
+"pret": 91.9,
+"imagine": "https://www.ookee.ro/361576-large_default/ravensburger-puzzle-praga-noaptea-1000-piese-design-nou.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-1000-1499-piese%2F122691-ravensburger-puzzle-praga-noaptea-1000-piese-design-nou.html",
+"magazin": "ookee.ro",
+"id": "N76kpjbaWtXE",
+"brand": "Ravensburger",
+"url_magazin": "https://www.ookee.ro/puzzle-1000-1499-piese/122691-ravensburger-puzzle-praga-noaptea-1000-piese-design-nou.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle Lamborghini Huracán, 1000 Piese",
+"pret": 91.9,
+"imagine": "https://www.ookee.ro/286286-large_default/puzzle-lamborghini-huracan-1000-piese.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-1000-1499-piese%2F109155-puzzle-lamborghini-huracan-1000-piese.html",
+"magazin": "ookee.ro",
+"id": "CPoMCpovC6LB",
+"brand": "Ravensburger",
+"url_magazin": "https://www.ookee.ro/puzzle-1000-1499-piese/109155-puzzle-lamborghini-huracan-1000-piese.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle 1000 piese, Acadele",
+"pret": 94.17,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/267082159/image-9cfeab7d6bc24b239044260f5d5ea0cc.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpuzzle-1000-piese-acadele-1293084%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "OaMKJsNd3Bah",
+"brand": "TREFL",
+"url_magazin": "https://infinity.ro/puzzle-1000-piese-acadele-1293084/p?utm_source=2performant",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle Vintage cu Mos Craciun, Sac Cadouri si Vasc, 1000 de piese, Multicolor",
+"pret": 95.96,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/274907851/1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpuzzle-vintage-cu-mos-craciun-sac-cadouri-si-vasc-1000-de-piese-multicolor-9360649%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "pDzws2pm_YWJ",
+"brand": "OEM",
+"url_magazin": "https://infinity.ro/puzzle-vintage-cu-mos-craciun-sac-cadouri-si-vasc-1000-de-piese-multicolor-9360649/p?utm_source=2performant",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+}
+],
+"magazine": [
+"hobiktoys.ro",
+"infinity.ro",
+"ookee.ro",
+"trada.ro"
+]
+},
+{
+"slug": "puzzle-500-piese",
+"tema": "jucarii-copii",
+"tema_nume": "Jucării",
+"titlu": "Puzzle de 500 de piese",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-05",
+"feeduri": [
+{
+"id": 1528,
+"magazin": "ookee.ro"
+},
+{
+"id": 3248,
+"magazin": "carturesti.ro"
+},
+{
+"id": 2039,
+"magazin": "cartepedia.ro"
+},
+{
+"id": 9441,
+"magazin": "infinity.ro"
+}
+],
+"produse": [
+{
+"titlu": "Puzzle 500 piese „Sanctuar în Machu Picchu”",
+"pret": 34.93,
+"imagine": "https://static.cartepedia.ro/image/356540/imagine_url.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.cartepedia.ro%2Fcarte%2Fpuzzle-500-piese-sanctuar-in-machu-picchu-433905.html",
+"magazin": "cartepedia.ro",
+"id": "2b0a7919e",
+"brand": "",
+"url_magazin": "https://www.cartepedia.ro/carte/puzzle-500-piese-sanctuar-in-machu-picchu-433905.html",
+"pret_vechi": 49.9,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle 500 piese „Romanticul Paris”",
+"pret": 34.93,
+"imagine": "https://static.cartepedia.ro/image/356546/imagine_url.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.cartepedia.ro%2Fcarte%2Fpuzzle-500-piese-romanticul-paris-433906.html",
+"magazin": "cartepedia.ro",
+"id": "52e59cd68",
+"brand": "",
+"url_magazin": "https://www.cartepedia.ro/carte/puzzle-500-piese-romanticul-paris-433906.html",
+"pret_vechi": 49.9,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Ravensburger - Puzzle sistemul solar 500 piese design nou",
+"pret": 35.98,
+"imagine": "https://www.ookee.ro/378349-large_default/ravensburger-puzzle-sistemul-solar-500-piese-design-nou.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-ravensburger%2F125751-ravensburger-puzzle-sistemul-solar-500-piese-design-nou.html",
+"magazin": "ookee.ro",
+"id": "jkOmHROVr3RQ",
+"brand": "Ravensburger",
+"url_magazin": "https://www.ookee.ro/puzzle-ravensburger/125751-ravensburger-puzzle-sistemul-solar-500-piese-design-nou.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle Motorbike Garage, 500 piese",
+"pret": 38.9,
+"imagine": "https://www.ookee.ro/417812-large_default/puzzle-motorbike-garage-500-piese.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle%2F134523-puzzle-motorbike-garage-500-piese-4823115910875.html",
+"magazin": "ookee.ro",
+"id": "9AFvO8Ai-l8L",
+"brand": "Dodo Toys",
+"url_magazin": "https://www.ookee.ro/puzzle/134523-puzzle-motorbike-garage-500-piese-4823115910875.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle 500 piese - Wild Leopard | Trefl",
+"pret": 43.99,
+"imagine": "https://carturesti.ro/img-prod/684200052-1.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-500-piese-wild-leopard-684200052",
+"magazin": "carturesti.ro",
+"id": "a4deb4d8e",
+"brand": "Trefl",
+"url_magazin": "https://carturesti.ro/puzzle/puzzle-500-piese-wild-leopard-684200052",
+"pret_vechi": null
+},
+{
+"titlu": "Puzzle 500 piese - Panorama - Orasul Kotor Muntenegru | Trefl",
+"pret": 47.0,
+"imagine": "https://carturesti.ro/img-prod/684200048-0.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-500-piese-panorama-orasul-kotor-muntenegru-684200048",
+"magazin": "carturesti.ro",
+"id": "Qjg1JSfTIdxN",
+"brand": "Trefl",
+"url_magazin": "https://carturesti.ro/puzzle/puzzle-500-piese-panorama-orasul-kotor-muntenegru-684200048",
+"pret_vechi": null
+},
+{
+"titlu": "Puzzle Oia village, Grecia, 500 piese",
+"pret": 48.9,
+"imagine": "https://www.ookee.ro/416804-large_default/puzzle-oia-village-grecia-500-piese.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle%2F134219-puzzle-oia-village-grecia-500-piese-4823115900906.html",
+"magazin": "ookee.ro",
+"id": "TTEg33q1rqKJ",
+"brand": "Dodo Toys",
+"url_magazin": "https://www.ookee.ro/puzzle/134219-puzzle-oia-village-grecia-500-piese-4823115900906.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle 500 piese - Panorama - Piata Navona din Roma | Trefl",
+"pret": 49.0,
+"imagine": "https://carturesti.ro/img-prod/466399770-0.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-500-piese-panorama-piata-navona-din-roma-466399770",
+"magazin": "carturesti.ro",
+"id": "dmLM3l4Uevtk",
+"brand": "Trefl",
+"url_magazin": "https://carturesti.ro/puzzle/puzzle-500-piese-panorama-piata-navona-din-roma-466399770",
+"pret_vechi": null
+},
+{
+"titlu": "Puzzle 500 de piese - Labirint de culori | Trefl",
+"pret": 53.0,
+"imagine": "https://carturesti.ro/img-prod/2148325307-1.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-500-de-piese-labirint-de-culori-2148325307",
+"magazin": "carturesti.ro",
+"id": "AnHtMK7KM9qo",
+"brand": "Trefl",
+"url_magazin": "https://carturesti.ro/puzzle/puzzle-500-de-piese-labirint-de-culori-2148325307",
+"pret_vechi": null
+},
+{
+"titlu": "Puzzle 500 piese - Deasupra apelor | Trefl",
+"pret": 53.0,
+"imagine": "https://carturesti.ro/img-prod/2148325306-1.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-500-piese-deasupra-apelor-2148325306",
+"magazin": "carturesti.ro",
+"id": "KUKVcpCQOLrr",
+"brand": "Trefl",
+"url_magazin": "https://carturesti.ro/puzzle/puzzle-500-piese-deasupra-apelor-2148325306",
+"pret_vechi": null
+},
+{
+"titlu": "Puzzle 500 piese - Discover Europe | Schmidt",
+"pret": 54.99,
+"imagine": "https://carturesti.ro/img-prod/2025072144-1.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-500-piese-discover-europe-2025072144",
+"magazin": "carturesti.ro",
+"id": "fICxq9rr3T-A",
+"brand": "Schmidt",
+"url_magazin": "https://carturesti.ro/puzzle/puzzle-500-piese-discover-europe-2025072144",
+"pret_vechi": null
+},
+{
+"titlu": "Puzzle 500 piese - Calatorie de vis cu unicornul | Schmidt",
+"pret": 54.99,
+"imagine": "https://carturesti.ro/img-prod/4803940848-0.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-500-piese-calatorie-de-vis-cu-unicornul-4803940848",
+"magazin": "carturesti.ro",
+"id": "Z8HtPoOWiwZP",
+"brand": "Schmidt",
+"url_magazin": "https://carturesti.ro/puzzle/puzzle-500-piese-calatorie-de-vis-cu-unicornul-4803940848",
+"pret_vechi": null
+},
+{
+"titlu": "Puzzle 500 piese - Bike near Notre Dame | Educa",
+"pret": 54.99,
+"imagine": "https://carturesti.ro/img-prod/1413624077-0.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-500-piese-bike-near-notre-dame-1413624077",
+"magazin": "carturesti.ro",
+"id": "8au9nRGUnAsi",
+"brand": "Educa",
+"url_magazin": "https://carturesti.ro/puzzle/puzzle-500-piese-bike-near-notre-dame-1413624077",
+"pret_vechi": null
+},
+{
+"titlu": "Puzzle 500 piese, Manarola Cinque Terre, Multicolor, 50x70 cm",
+"pret": 60.41,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/274907535/2.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpuzzle-500-piese-manarola-cinque-terre-multicolor-50x70-cm-9360541%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "-acmbucFabjU",
+"brand": "OEM",
+"url_magazin": "https://infinity.ro/puzzle-500-piese-manarola-cinque-terre-multicolor-50x70-cm-9360541/p?utm_source=2performant",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle cu Flori, 500 de Piese, Multicolor, pentru Adulti",
+"pret": 60.41,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/274907634/0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpuzzle-cu-flori-500-de-piese-multicolor-pentru-adul%C8%9Bi-9360575%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "5XfXm-WuyM7e",
+"brand": "OEM",
+"url_magazin": "https://infinity.ro/puzzle-cu-flori-500-de-piese-multicolor-pentru-adulți-9360575/p?utm_source=2performant",
+"pret_vechi": null
+},
+{
+"titlu": "Puzzle cu inorog fluorescent, 500 piese, multicolor",
+"pret": 60.41,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/274907657/2.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpuzzle-cu-inorog-fluorescent-500-piese-multicolor-9360583%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "zQCWpky2AYMq",
+"brand": "OEM",
+"url_magazin": "https://infinity.ro/puzzle-cu-inorog-fluorescent-500-piese-multicolor-9360583/p?utm_source=2performant",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle de Craciun cu Model Grinch, 500 piese, 508x360 mm",
+"pret": 60.41,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/274907673/2.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpuzzle-de-craciun-cu-model-grinch-500-piese-508x360-mm-9360590%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "kQTm2E_FYgAb",
+"brand": "OEM",
+"url_magazin": "https://infinity.ro/puzzle-de-craciun-cu-model-grinch-500-piese-508x360-mm-9360590/p?utm_source=2performant",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle 500 de piese, Big Ben si cabina telefonica rosie",
+"pret": 60.41,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/274907516/3.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpuzzle-500-de-piese-big-ben-%C8%99i-cabin%C4%83-telefonic%C4%83-ro%C8%99ie-9360535%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "rI_LP83rSpDS",
+"brand": "OEM",
+"url_magazin": "https://infinity.ro/puzzle-500-de-piese-big-ben-și-cabină-telefonică-roșie-9360535/p?utm_source=2performant",
+"pret_vechi": null
+},
+{
+"titlu": "Ravensburger - Puzzle casuta langa rau 500 piese design nou",
+"pret": 65.9,
+"imagine": "https://www.ookee.ro/361436-large_default/ravensburger-puzzle-casuta-langa-rau-500-piese-design-nou.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-500-999-piese%2F122669-ravensburger-puzzle-casuta-langa-rau-500-piese-design-nou.html",
+"magazin": "ookee.ro",
+"id": "xunj-MjRW3zA",
+"brand": "Ravensburger",
+"url_magazin": "https://www.ookee.ro/puzzle-500-999-piese/122669-ravensburger-puzzle-casuta-langa-rau-500-piese-design-nou.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "PUZZLE CAL PE PLAJA, 500 PIESE",
+"pret": 65.9,
+"imagine": "https://www.ookee.ro/213483-large_default/puzzle-cal-pe-plaja-500-piese.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-ravensburger%2F90674-puzzle-cal-pe-plaja-500-piese.html",
+"magazin": "ookee.ro",
+"id": "KS9YkHzVjuhi",
+"brand": "Ravensburger",
+"url_magazin": "https://www.ookee.ro/puzzle-ravensburger/90674-puzzle-cal-pe-plaja-500-piese.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Ravensburger - Puzzle pasari 500 piese design nou",
+"pret": 65.9,
+"imagine": "https://www.ookee.ro/341904-large_default/ravensburger-puzzle-pasari-500-piese-design-nou.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-ravensburger%2F120825-ravensburger-puzzle-pasari-500-piese-design-nou.html",
+"magazin": "ookee.ro",
+"id": "RmYC6crcQ7cy",
+"brand": "Ravensburger",
+"url_magazin": "https://www.ookee.ro/puzzle-ravensburger/120825-ravensburger-puzzle-pasari-500-piese-design-nou.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Ravensburger - Puzzle selfie cu catelusi 500 piese design nou",
+"pret": 65.9,
+"imagine": "https://www.ookee.ro/318066-large_default/ravensburger-puzzle-selfie-cu-catelusi-500-piese-design-nou.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-ravensburger%2F117422-ravensburger-puzzle-selfie-cu-catelusi-500-piese-design-nou.html",
+"magazin": "ookee.ro",
+"id": "xVFfOxQrylhw",
+"brand": "Ravensburger",
+"url_magazin": "https://www.ookee.ro/puzzle-ravensburger/117422-ravensburger-puzzle-selfie-cu-catelusi-500-piese-design-nou.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle Dimineata In Gradina, 500 Piese",
+"pret": 65.9,
+"imagine": "https://www.ookee.ro/284389-large_default/puzzle-dimineata-in-gradina-500-piese.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-500-999-piese%2F108839-puzzle-dimineata-in-gradina-500-piese.html",
+"magazin": "ookee.ro",
+"id": "AFG2ZVdMWHHt",
+"brand": "Ravensburger",
+"url_magazin": "https://www.ookee.ro/puzzle-500-999-piese/108839-puzzle-dimineata-in-gradina-500-piese.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle Moomin, 500 piese",
+"pret": 72.24,
+"imagine": "https://static.cartepedia.ro/image/302607/imagine_url.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.cartepedia.ro%2Fcarte%2Fmoomin-puzzle-500-piese-421566.html",
+"magazin": "cartepedia.ro",
+"id": "dc0635999",
+"brand": "",
+"url_magazin": "https://www.cartepedia.ro/carte/moomin-puzzle-500-piese-421566.html",
+"pret_vechi": 84.99,
+"verificat": "2026-11-05"
+}
+],
+"magazine": [
+"cartepedia.ro",
+"carturesti.ro",
+"infinity.ro",
+"ookee.ro"
+]
+},
+{
+"slug": "puzzle-3d",
+"tema": "jucarii-copii",
+"tema_nume": "Jucării",
+"titlu": "Puzzle 3D",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-05",
+"feeduri": [
+{
+"id": 1528,
+"magazin": "ookee.ro"
+},
+{
+"id": 3248,
+"magazin": "carturesti.ro"
+},
+{
+"id": 811,
+"magazin": "libris.ro"
+},
+{
+"id": 9076,
+"magazin": "hobiktoys.ro"
+}
+],
+"produse": [
+{
+"titlu": "Puzzle 3D - National Geographic - Dinozaur Triceratops, 61 piese | CubicFun",
+"pret": 30.0,
+"imagine": "https://carturesti.ro/img-prod/4789789238-1.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-3d-national-geographic-dinozaur-triceratops-61-piese-4789789238",
+"magazin": "carturesti.ro",
+"id": "Hj_9TkiBC-4j",
+"brand": "CubicFun",
+"url_magazin": "https://carturesti.ro/puzzle/puzzle-3d-national-geographic-dinozaur-triceratops-61-piese-4789789238",
+"pret_vechi": null
+},
+{
+"titlu": "Puzzle 3D - National Geographic - Dinozaur Stegozaur, 51 piese | CubicFun",
+"pret": 30.0,
+"imagine": "https://carturesti.ro/img-prod/4789789232-1.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-3d-national-geographic-dinozaur-stegozaur-51-piese-4789789232",
+"magazin": "carturesti.ro",
+"id": "H1IDDp07wNbR",
+"brand": "CubicFun",
+"url_magazin": "https://carturesti.ro/puzzle/puzzle-3d-national-geographic-dinozaur-stegozaur-51-piese-4789789232",
+"pret_vechi": null
+},
+{
+"titlu": "Puzzle 3D - National Geographic - Dinozaur Tiranozaur, 47 piese | CubicFun",
+"pret": 30.0,
+"imagine": "https://carturesti.ro/img-prod/4789788962-1.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-3d-national-geographic-dinozaur-tiranozaur-47-piese-4789788962",
+"magazin": "carturesti.ro",
+"id": "aZC3IpW9rzXo",
+"brand": "CubicFun",
+"url_magazin": "https://carturesti.ro/puzzle/puzzle-3d-national-geographic-dinozaur-tiranozaur-47-piese-4789788962",
+"pret_vechi": null
+},
+{
+"titlu": "Puzzle 3D - National Geographic, Animale Salbatice - Capibara, 56 piese | CubicFun",
+"pret": 35.0,
+"imagine": "https://carturesti.ro/img-prod/4789789250-1.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-3d-national-geographic-animale-salbatice-capibara-56-piese-4789789250",
+"magazin": "carturesti.ro",
+"id": "gsGISFWDz46I",
+"brand": "CubicFun",
+"url_magazin": "https://carturesti.ro/puzzle/puzzle-3d-national-geographic-animale-salbatice-capibara-56-piese-4789789250",
+"pret_vechi": null
+},
+{
+"titlu": "Puzzle 3D - European Goldfinch, 48 piese | Kikkerland",
+"pret": 37.0,
+"imagine": "https://carturesti.ro/img-prod/5398902059-9020065.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-3d-european-goldfinch-48-piese-5398902059",
+"magazin": "carturesti.ro",
+"id": "UHMSZVAlV7vY",
+"brand": "Kikkerland",
+"url_magazin": "https://carturesti.ro/puzzle/puzzle-3d-european-goldfinch-48-piese-5398902059",
+"pret_vechi": null
+},
+{
+"titlu": "Puzzle 3D: Pitigoi albastru",
+"pret": 37.0,
+"imagine": "https://www.libris.ro/img/pozeprod/48753/48752753-1-small-1.jpg?ver=1792669992",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fjoc%2Fpuzzle-3d-pitigoi-albastru%2F48752753",
+"magazin": "libris.ro",
+"id": "YMPZZivZIoNi",
+"brand": "-",
+"url_magazin": "https://www.libris.ro/joc/puzzle-3d-pitigoi-albastru/48752753",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle 3D: Vrabie",
+"pret": 37.0,
+"imagine": "https://www.libris.ro/img/pozeprod/48753/48752739-1-small-1.jpg?ver=1792669688",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fjoc%2Fpuzzle-3d-vrabie%2F48752739",
+"magazin": "libris.ro",
+"id": "0gzolLe58Wx7",
+"brand": "-",
+"url_magazin": "https://www.libris.ro/joc/puzzle-3d-vrabie/48752739",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle 3D: Ciocanitoare",
+"pret": 37.0,
+"imagine": "https://www.libris.ro/img/pozeprod/48753/48752732-1-small-1.jpg?ver=1792669455",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fjoc%2Fpuzzle-3d-ciocanitoare%2F48752732",
+"magazin": "libris.ro",
+"id": "tuWWNE4LOorH",
+"brand": "-",
+"url_magazin": "https://www.libris.ro/joc/puzzle-3d-ciocanitoare/48752732",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle 3D. Sticlete european",
+"pret": 37.0,
+"imagine": "https://www.libris.ro/img/pozeprod/48753/48752746-1-small-1.jpg?ver=1792668313",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fjoc%2Fpuzzle-3d-sticlete-european%2F48752746",
+"magazin": "libris.ro",
+"id": "YjP-ZSbuJkXa",
+"brand": "-",
+"url_magazin": "https://www.libris.ro/joc/puzzle-3d-sticlete-european/48752746",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle 3D: Paradise Flycatcher",
+"pret": 37.0,
+"imagine": "https://www.libris.ro/img/pozeprod/48753/48752298-1-small-1.jpg?ver=1792668841",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fjoc%2Fpuzzle-3d-paradise-flycatcher%2F48752298",
+"magazin": "libris.ro",
+"id": "gplj9oABl49v",
+"brand": "-",
+"url_magazin": "https://www.libris.ro/joc/puzzle-3d-paradise-flycatcher/48752298",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle 3D - Harry Potter - Hogwarts Students, 31 piese | Ugears",
+"pret": 39.5,
+"imagine": "https://carturesti.ro/img-prod/5129938740-1.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-3d-harry-potter-hogwarts-students-31-piese-5129938740",
+"magazin": "carturesti.ro",
+"id": "I_gxoajwBDky",
+"brand": "Ugears",
+"url_magazin": "https://carturesti.ro/puzzle/puzzle-3d-harry-potter-hogwarts-students-31-piese-5129938740",
+"pret_vechi": 79.0
+},
+{
+"titlu": "Puzzle 3D din Lemn 46 Piese - Cactusi in Ghiveci",
+"pret": 43.0,
+"imagine": "https://cdnmpro.com/780585630/p/raw/8/puzzle-3d-din-lemn-46-piese-cactusi-in-ghiveci~6678.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.hobiktoys.ro%2Fcumpara%2Fpuzzle-3d-din-lemn-46-piese-cactusi-in-ghiveci-2389",
+"magazin": "hobiktoys.ro",
+"id": "BoMDzr80-pHs",
+"brand": "Orui Toys",
+"url_magazin": "https://www.hobiktoys.ro/cumpara/puzzle-3d-din-lemn-46-piese-cactusi-in-ghiveci-2389",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle 3D din lemn cu litere si cifre. Cocos colorat",
+"pret": 43.99,
+"imagine": "https://www.libris.ro/img/pozeprod/42140/42139027-1-small-1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fjoc%2Fpuzzle-3d-din-lemn-cu-litere-si-cifre-cocos-colorat%2F42139027",
+"magazin": "libris.ro",
+"id": "UqT9ZqaWe3QL",
+"brand": "-",
+"url_magazin": "https://www.libris.ro/joc/puzzle-3d-din-lemn-cu-litere-si-cifre-cocos-colorat/42139027",
+"pret_vechi": 54.99,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle 3D din Lemn 97 Piese - Trandafir in Ghiveci",
+"pret": 46.0,
+"imagine": "https://cdnmpro.com/780585630/p/raw/4/puzzle-3d-din-lemn-97-piese-trandafir-in-ghiveci~6674.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.hobiktoys.ro%2Fcumpara%2Fpuzzle-3d-din-lemn-97-piese-trandafir-in-ghiveci-2387",
+"magazin": "hobiktoys.ro",
+"id": "75z2lyLcaS86",
+"brand": "Orui Toys",
+"url_magazin": "https://www.hobiktoys.ro/cumpara/puzzle-3d-din-lemn-97-piese-trandafir-in-ghiveci-2387",
+"pret_vechi": null
+},
+{
+"titlu": "Puzzle 3D mini bila: Disney Stitch Angel si Stitch",
+"pret": 47.52,
+"imagine": "https://www.libris.ro/img/pozeprod/47023/47022661-1-small-1.jpg?ver=1786452439",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fjoc%2Fpuzzle-3d-mini-bila-disney-stitch-angel-si-stitch%2F47022661",
+"magazin": "libris.ro",
+"id": "UrUHRawrUNLQ",
+"brand": "-",
+"url_magazin": "https://www.libris.ro/joc/puzzle-3d-mini-bila-disney-stitch-angel-si-stitch/47022661",
+"pret_vechi": 55.9,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Ravensburger - Puzzle 3D bila Disney Stitch Angel 54 piese",
+"pret": 50.9,
+"imagine": "https://www.ookee.ro/365628-large_default/ravensburger-puzzle-3d-bila-disney-stitch-angel-54-piese.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzles-3d%2F123195-ravensburger-puzzle-3d-bila-disney-stitch-angel-54-piese.html",
+"magazin": "ookee.ro",
+"id": "ZrkJFdRA4Hcy",
+"brand": "Ravensburger",
+"url_magazin": "https://www.ookee.ro/puzzles-3d/123195-ravensburger-puzzle-3d-bila-disney-stitch-angel-54-piese.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle din lemn 3D cu litere si cifre. Broscuta testoasa",
+"pret": 52.0,
+"imagine": "https://www.libris.ro/img/pozeprod/47007/47006792-1-small-1.jpg?ver=1781689650",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.libris.ro%2Fjoc%2Fpuzzle-din-lemn-3d-cu-litere-si-cifre-broscuta-testoasa%2F47006792",
+"magazin": "libris.ro",
+"id": "Nn1HPxXQvqCE",
+"brand": "-",
+"url_magazin": "https://www.libris.ro/joc/puzzle-din-lemn-3d-cu-litere-si-cifre-broscuta-testoasa/47006792",
+"pret_vechi": 65.0,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle Masini 3D",
+"pret": 59.0,
+"imagine": "https://cdnmpro.com/780585630/p/raw/0/puzzle-masini-3d~2690.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.hobiktoys.ro%2Fcumpara%2Fpuzzle-masini-3d-866",
+"magazin": "hobiktoys.ro",
+"id": "PBFfj2Lc2bF9",
+"brand": "Legler Small Foot",
+"url_magazin": "https://www.hobiktoys.ro/cumpara/puzzle-masini-3d-866",
+"pret_vechi": null
+},
+{
+"titlu": "Puzzle 3D 50 piese - Build ’n’ Sound - Elefant African | MierEdu",
+"pret": 65.08,
+"imagine": "https://carturesti.ro/img-prod/3894581747-1.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-3d-50-piese-build-n-sound-elefant-african-3894581747",
+"magazin": "carturesti.ro",
+"id": "SbqhPnLb3W0h",
+"brand": "MierEdu",
+"url_magazin": "https://carturesti.ro/puzzle/puzzle-3d-50-piese-build-n-sound-elefant-african-3894581747",
+"pret_vechi": null
+},
+{
+"titlu": "Puzzle 3D 28 piese - Build 'n' Sound - Orca | MierEdu",
+"pret": 65.08,
+"imagine": "https://carturesti.ro/img-prod/3894581819-1.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fcarturesti.ro%2Fpuzzle%2Fpuzzle-3d-28-piese-build-n-sound-orca-3894581819",
+"magazin": "carturesti.ro",
+"id": "UifcPVewS0IG",
+"brand": "MierEdu",
+"url_magazin": "https://carturesti.ro/puzzle/puzzle-3d-28-piese-build-n-sound-orca-3894581819",
+"pret_vechi": null
+},
+{
+"titlu": "Puzzle 3D Miraculous, 72 Piese",
+"pret": 81.9,
+"imagine": "https://www.ookee.ro/284577-large_default/puzzle-3d-miraculous-72-piese.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fpuzzle-50-100-piese%2F108859-puzzle-3d-miraculous-72-piese.html",
+"magazin": "ookee.ro",
+"id": "fQVuqVcWDgVZ",
+"brand": "Ravensburger",
+"url_magazin": "https://www.ookee.ro/puzzle-50-100-piese/108859-puzzle-3d-miraculous-72-piese.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Puzzle 3D Animale",
+"pret": 104.0,
+"imagine": "https://cdnmpro.com/780585630/p/raw/0/puzzle-3d-animale~1730.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.hobiktoys.ro%2Fcumpara%2Fpuzzle-3d-animale-667",
+"magazin": "hobiktoys.ro",
+"id": "qEmv3yk0xT2i",
+"brand": "Imagimake",
+"url_magazin": "https://www.hobiktoys.ro/cumpara/puzzle-3d-animale-667",
+"pret_vechi": null
+},
+{
+"titlu": "Puzzle 3D Case",
+"pret": 118.0,
+"imagine": "https://cdnmpro.com/780585630/p/raw/6/puzzle-3d-case~1726.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.hobiktoys.ro%2Fcumpara%2Fpuzzle-3d-case-666",
+"magazin": "hobiktoys.ro",
+"id": "xV9MHQwYw7wS",
+"brand": "Imagimake",
+"url_magazin": "https://www.hobiktoys.ro/cumpara/puzzle-3d-case-666",
+"pret_vechi": null
+},
+{
+"titlu": "Puzzle 3D Monumente",
+"pret": 119.0,
+"imagine": "https://cdnmpro.com/780585630/p/raw/8/puzzle-3d-monumente~3558.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.hobiktoys.ro%2Fcumpara%2Fpuzzle-3d-monumente-1460",
+"magazin": "hobiktoys.ro",
+"id": "Fttb31O4IqeO",
+"brand": "Imagimake",
+"url_magazin": "https://www.hobiktoys.ro/cumpara/puzzle-3d-monumente-1460",
+"pret_vechi": null
+}
+],
+"magazine": [
+"carturesti.ro",
+"hobiktoys.ro",
+"libris.ro",
+"ookee.ro"
+]
+},
+{
+"slug": "masina-cu-telecomanda",
+"tema": "jucarii-copii",
+"tema_nume": "Jucării",
+"titlu": "Mașini cu telecomandă",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-05",
+"feeduri": [
+{
+"id": 8740,
+"magazin": "timebox.ro"
+},
+{
+"id": 5171,
+"magazin": "bazarulonline.ro"
+},
+{
+"id": 1528,
+"magazin": "ookee.ro"
+},
+{
+"id": 9367,
+"magazin": "infinity.ro"
+}
+],
+"produse": [
+{
+"titlu": "Masina Acrobatica cu telecomanda si acumulatori Engros TP14",
+"pret": 44.99,
+"imagine": "https://bazarulonline.ro/images/detailed/9109/res_f5f539232053da6028b2932508705382.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fcarucior-pentru-papusi-cu-papusa-engros-tp13-clone",
+"magazin": "bazarulonline.ro",
+"id": "4BvECiSSPnBO",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/carucior-pentru-papusi-cu-papusa-engros-tp13-clone",
+"pret_vechi": null
+},
+{
+"titlu": "Masina Transformabila Robot cu Telecomanda, 25cm, Acumulator Reincarcabil, Diferite Culori Engros",
+"pret": 45.0,
+"imagine": "https://bazarulonline.ro/images/detailed/10096/transparent-Photoroom__40__5xyn-9g_990h-o7.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fmasina-transformabila-robot-cu-telecomanda-25cm-acumulator-reincarcabil-diferite-culori-engros-ro",
+"magazin": "bazarulonline.ro",
+"id": "oNjQKgFqa-pt",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/masina-transformabila-robot-cu-telecomanda-25cm-acumulator-reincarcabil-diferite-culori-engros-ro",
+"pret_vechi": null
+},
+{
+"titlu": "Masinuta cu Telecomanda iUni YHC021, Scara 1:18, Off-Road Climbing Car, 27MHz, Verde",
+"pret": 79.99,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/270210941/image-6d0b415e2d90409882d1030b35d42978.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fmasinuta-cu-telecomanda-iuni-yhc021-scara-1-18-off-road-climbing-car-27mhz-verde-1882330%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "oPFEoWIRVlJS",
+"brand": "iUni",
+"url_magazin": "https://infinity.ro/masinuta-cu-telecomanda-iuni-yhc021-scara-1-18-off-road-climbing-car-27mhz-verde-1882330/p?utm_source=2performant",
+"pret_vechi": 149.0,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Masina Transformers Uriasa 36x14cm, Robot Interactiv, cu Telecomanda, Bump and Go, Lumini LED si Sunete, Diferite Culori",
+"pret": 81.8,
+"imagine": "https://bazarulonline.ro/images/detailed/9481/transparent-Photoroom__48__d99x-5u.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fmasina-transformers-uriasa-36x14cm-robot-interactiv-cu-telecomanda-bump-and-go-lumini-led-si-sunete-diferite-culori-engros-ro",
+"magazin": "bazarulonline.ro",
+"id": "JO0-OrZARZ9J",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/masina-transformers-uriasa-36x14cm-robot-interactiv-cu-telecomanda-bump-and-go-lumini-led-si-sunete-diferite-culori-engros-ro",
+"pret_vechi": null
+},
+{
+"titlu": "Masina cu telecomanda exost rc star rush",
+"pret": 83.28,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/268322631/image-8b432c7f873c4d5f9cd0317847500062.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fmasina-cu-telecomanda-exost-rc-star-rush-1580685%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "P98u4RmIMNAw",
+"brand": "As",
+"url_magazin": "https://infinity.ro/masina-cu-telecomanda-exost-rc-star-rush-1580685/p?utm_source=2performant",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Masina RC metalica sport alba 1:24 cu telecomanda, usi functionale si acumulator Engros",
+"pret": 104.14,
+"imagine": "https://bazarulonline.ro/images/detailed/11582/masina-rc-metalica-sport-alba-1-24-cu-telecomanda-usi-functionale-si~104589240.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fmasina-rc-metalica-sport-alba-1-24-cu-telecomanda-usi-functionale-si-acumulator-engros",
+"magazin": "bazarulonline.ro",
+"id": "EzsC-hgkIHmw",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/masina-rc-metalica-sport-alba-1-24-cu-telecomanda-usi-functionale-si-acumulator-engros",
+"pret_vechi": null
+},
+{
+"titlu": "Masina RC metalica sport rosie 1:24 cu telecomanda, usi functionale si acumulator Engros",
+"pret": 104.14,
+"imagine": "https://bazarulonline.ro/images/detailed/11582/masina-rc-metalica-sport-rosie-1-24-cu-telecomanda-usi-functionale-si~104589231.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fmasina-rc-metalica-sport-rosie-1-24-cu-telecomanda-usi-functionale-si-acumulator-engros",
+"magazin": "bazarulonline.ro",
+"id": "u9YhYwZ13vH4",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/masina-rc-metalica-sport-rosie-1-24-cu-telecomanda-usi-functionale-si-acumulator-engros",
+"pret_vechi": null
+},
+{
+"titlu": "Masina RC metalica sport gri 1:24 cu telecomanda, usi functionale si acumulator Engros",
+"pret": 104.14,
+"imagine": "https://bazarulonline.ro/images/detailed/11582/masina-rc-metalica-sport-gri-1-24-cu-telecomanda-usi-functionale-si~104589222.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fmasina-rc-metalica-sport-gri-1-24-cu-telecomanda-usi-functionale-si-acumulator-engros",
+"magazin": "bazarulonline.ro",
+"id": "lAmPg6Pdrncl",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/masina-rc-metalica-sport-gri-1-24-cu-telecomanda-usi-functionale-si-acumulator-engros",
+"pret_vechi": null
+},
+{
+"titlu": "Masina Cu Telecomanda Lamborghini Galben Cu Scara 1 La 24",
+"pret": 116.9,
+"imagine": "https://www.ookee.ro/422358-large_default/masina-cu-telecomanda-lamborghini-galben-cu-scara-1-la-24.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fradiocomandate%2F135482-masina-cu-telecomanda-lamborghini-galben-cu-scara-1-la-24-6427037025556.html",
+"magazin": "ookee.ro",
+"id": "_2Fe3akhkaH1",
+"brand": "Rastar",
+"url_magazin": "https://www.ookee.ro/radiocomandate/135482-masina-cu-telecomanda-lamborghini-galben-cu-scara-1-la-24-6427037025556.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Masina Cu Telecomanda Lamborghini Superleggera Negru Cu Scara 1 La 24",
+"pret": 116.9,
+"imagine": "https://www.ookee.ro/422363-large_default/masina-cu-telecomanda-lamborghini-superleggera-negru-cu-scara-1-la-24.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fradiocomandate%2F135483-masina-cu-telecomanda-lamborghini-superleggera-negru-cu-scara-1-la-24-6427037056628.html",
+"magazin": "ookee.ro",
+"id": "OZmrGyAEFXFO",
+"brand": "Rastar",
+"url_magazin": "https://www.ookee.ro/radiocomandate/135483-masina-cu-telecomanda-lamborghini-superleggera-negru-cu-scara-1-la-24-6427037056628.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Masina Cu Telecomanda Pagani Zonda R Alb Cu Scara 1 La 24",
+"pret": 116.9,
+"imagine": "https://www.ookee.ro/422374-large_default/masina-cu-telecomanda-pagani-zonda-r-alb-cu-scara-1-la-24.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fradiocomandate%2F135485-masina-cu-telecomanda-pagani-zonda-r-alb-cu-scara-1-la-24-6427037020766.html",
+"magazin": "ookee.ro",
+"id": "0jwS7BUAGoSp",
+"brand": "Rastar",
+"url_magazin": "https://www.ookee.ro/radiocomandate/135485-masina-cu-telecomanda-pagani-zonda-r-alb-cu-scara-1-la-24-6427037020766.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Masina Cu Telecomanda Pagani Zonda R Negru Cu Scara 1 La 24",
+"pret": 116.9,
+"imagine": "https://www.ookee.ro/422379-large_default/masina-cu-telecomanda-pagani-zonda-r-negru-cu-scara-1-la-24.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fradiocomandate%2F135486-masina-cu-telecomanda-pagani-zonda-r-negru-cu-scara-1-la-24-6427037020773.html",
+"magazin": "ookee.ro",
+"id": "8a9Drz7TkJSV",
+"brand": "Rastar",
+"url_magazin": "https://www.ookee.ro/radiocomandate/135486-masina-cu-telecomanda-pagani-zonda-r-negru-cu-scara-1-la-24-6427037020773.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Masina Cu Telecomanda Lamborghini Murcielago Lp670-4 Superveloce China Limited Edition Cu Scara 1 La 24",
+"pret": 116.9,
+"imagine": "https://www.ookee.ro/422383-large_default/masina-cu-telecomanda-lamborghini-murcielago-lp670-4-superveloce-china-limited-edition-cu-scara-1-la-24.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fradiocomandate%2F135487-masina-cu-telecomanda-lamborghini-murcielago-lp670-4-superveloce-china-limited-edition-cu-scara-1-la-24-6930751304970.html",
+"magazin": "ookee.ro",
+"id": "1tOQAvJw-zyk",
+"brand": "Rastar",
+"url_magazin": "https://www.ookee.ro/radiocomandate/135487-masina-cu-telecomanda-lamborghini-murcielago-lp670-4-superveloce-china-limited-edition-cu-scara-1-la-24-6930751304970.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Masina Cu Telecomanda Bmw Z4 Rosu Scara 1 La 24",
+"pret": 116.9,
+"imagine": "https://www.ookee.ro/422389-large_default/masina-cu-telecomanda-bmw-z4-rosu-scara-1-la-24.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fradiocomandate%2F135488-masina-cu-telecomanda-bmw-z4-rosu-scara-1-la-24-6427037028021.html",
+"magazin": "ookee.ro",
+"id": "jqW2DxwJnRGf",
+"brand": "Rastar",
+"url_magazin": "https://www.ookee.ro/radiocomandate/135488-masina-cu-telecomanda-bmw-z4-rosu-scara-1-la-24-6427037028021.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Masina Cu Telecomanda Porsche Gt3 Rs Alb Cu Scara 1 La 24",
+"pret": 116.9,
+"imagine": "https://www.ookee.ro/422395-large_default/masina-cu-telecomanda-porsche-gt3-rs-alb-cu-scara-1-la-24.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fradiocomandate%2F135489-masina-cu-telecomanda-porsche-gt3-rs-alb-cu-scara-1-la-24-6427037021022.html",
+"magazin": "ookee.ro",
+"id": "UvR7TdOgaU1j",
+"brand": "Rastar",
+"url_magazin": "https://www.ookee.ro/radiocomandate/135489-masina-cu-telecomanda-porsche-gt3-rs-alb-cu-scara-1-la-24-6427037021022.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Masina Cu Telecomanda Porsche Gt3 Rs Negru Rs Scara 1 La 24",
+"pret": 116.9,
+"imagine": "https://www.ookee.ro/422404-large_default/masina-cu-telecomanda-porsche-gt3-rs-negru-rs-scara-1-la-24.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fradiocomandate%2F135490-masina-cu-telecomanda-porsche-gt3-rs-negru-rs-scara-1-la-24-6427037021015.html",
+"magazin": "ookee.ro",
+"id": "gjgTIOhRhfvR",
+"brand": "Rastar",
+"url_magazin": "https://www.ookee.ro/radiocomandate/135490-masina-cu-telecomanda-porsche-gt3-rs-negru-rs-scara-1-la-24-6427037021015.html",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Masina cu telecomanda lamborghini galben cu scara 1 la 24",
+"pret": 119.39,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/214281240/image-39748eb8a9594a2b925b006b1754b662.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fmasina-cu-telecomanda-lamborghini-galben-cu-scara-1-la-24-611529%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "p-dnRt4A_0sP",
+"brand": "Rastar 1:24",
+"url_magazin": "https://infinity.ro/masina-cu-telecomanda-lamborghini-galben-cu-scara-1-la-24-611529/p?utm_source=2performant",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Masina cu telecomanda bmw z4 alba scara 1 la 24",
+"pret": 119.39,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/214283692/image-cc5ec33971d94e048e50ff17e7269cd1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fmasina-cu-telecomanda-bmw-z4-alba-scara-1-la-24-612188%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "mgICASGp7uKt",
+"brand": "Rastar 1:24",
+"url_magazin": "https://infinity.ro/masina-cu-telecomanda-bmw-z4-alba-scara-1-la-24-612188/p?utm_source=2performant",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Masina cu telecomanda bmw z4 negru scara 1 la 24",
+"pret": 119.39,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/268323087/image-f6664e70732440f2b567fc126afc5531.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fmasina-cu-telecomanda-bmw-z4-negru-scara-1-la-24-1580749%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "poRxwuRaqOVF",
+"brand": "Rastar",
+"url_magazin": "https://infinity.ro/masina-cu-telecomanda-bmw-z4-negru-scara-1-la-24-1580749/p?utm_source=2performant",
+"pret_vechi": null,
+"verificat": "2026-11-05"
+},
+{
+"titlu": "Masina cu telecomanda lamborghini aventador rosu cu scara 1 la 24",
+"pret": 119.39,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/268323177/image-16fb52df3ed746f88f194c6321adef71.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fmasina-cu-telecomanda-lamborghini-aventador-rosu-cu-scara-1-la-24-1580760%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "bsCvdKPiGwdq",
+"brand": "Rastar",
+"url_magazin": "https://infinity.ro/masina-cu-telecomanda-lamborghini-aventador-rosu-cu-scara-1-la-24-1580760/p?utm_source=2performant",
+"pret_vechi": null
+},
+{
+"titlu": "Masina cu telecomanda mclaren p1 negru scara 1 la 24",
+"pret": 119.39,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/268322793/image-54bddf6672e94f6193335e50f1aa2691.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fmasina-cu-telecomanda-mclaren-p1-negru-scara-1-la-24-1580709%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "8b1daSUCFpsN",
+"brand": "Rastar",
+"url_magazin": "https://infinity.ro/masina-cu-telecomanda-mclaren-p1-negru-scara-1-la-24-1580709/p?utm_source=2performant",
+"pret_vechi": null
+},
+{
+"titlu": "Masina cu telecomanda bugatti divo cu scara 1 la 24",
+"pret": 119.39,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/268322821/image-2a417555eed849d696562a00e18fd103.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fmasina-cu-telecomanda-bugatti-divo-cu-scara-1-la-24-1580710%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "YylZhl_Q3Ie6",
+"brand": "Rastar",
+"url_magazin": "https://infinity.ro/masina-cu-telecomanda-bugatti-divo-cu-scara-1-la-24-1580710/p?utm_source=2performant",
+"pret_vechi": null
+},
+{
+"titlu": "Masinuta pentru copii controlabila prin gesturi si telecomanda, cu efecte de lumini si muzica, Albastru Engros",
+"pret": 133.53,
+"imagine": "https://bazarulonline.ro/images/detailed/11252/masinuta-pentru-copii-controlabila-prin-gesturi-si-telecomanda-cu-efecte-de-lumini-si-muzica-albastru.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fmasinuta-pentru-copii-controlabila-prin-gesturi-si-telecomanda-cu-efecte-de-lumini-si-muzica-albastru-engros",
+"magazin": "bazarulonline.ro",
+"id": "mHKV-JKZsx9e",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/masinuta-pentru-copii-controlabila-prin-gesturi-si-telecomanda-cu-efecte-de-lumini-si-muzica-albastru-engros",
+"pret_vechi": null
+},
+{
+"titlu": "MAISTO - RC MASINA 1:24 F1 PREMIUM 3A.2C. Engros",
+"pret": 175.27,
+"imagine": "https://bazarulonline.ro/images/detailed/11098/maisto-rc-masina-1-24-f1-premium-3a2c.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fmaisto-rc-masina-1-24-f1-premium-3a-2c-engros",
+"magazin": "bazarulonline.ro",
+"id": "pxWEkU1pz3d7",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/maisto-rc-masina-1-24-f1-premium-3a-2c-engros",
+"pret_vechi": null
+}
+],
+"magazine": [
+"bazarulonline.ro",
+"infinity.ro",
+"ookee.ro"
+]
+},
+{
+"slug": "masinuta-electrica-copii",
+"tema": "jucarii-copii",
+"tema_nume": "Jucării",
+"titlu": "Mașinuțe electrice pentru copii",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-05",
+"feeduri": [
+{
+"id": 8404,
+"magazin": "babyroll.ro"
+},
+{
+"id": 8334,
+"magazin": "autokids.ro"
+},
+{
+"id": 1528,
+"magazin": "ookee.ro"
+},
+{
+"id": 9441,
+"magazin": "infinity.ro"
+}
+],
+"produse": [
+{
+"titlu": "Masina Electrica Pentru Copii Tip Nava Spatiala, 2,5 - 5 Ani, Muzica Si Lumini, Verde, 12V - H901",
+"pret": 549.0,
+"imagine": "http://babyroll.ro/12488/masina-electrica-pentru-copii-tip-nava-spatiala-25-5-ani-muzica-si-lumini-verde-12v-h901.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbabyroll.ro%2Fmasinute-copii%2F2182-masina-electrica-pentru-copii-tip-nava-spatiala-25-5-ani-muzica-si-lumini-verde-12v-h901.html%3Futm_source%3D2performant",
+"magazin": "babyroll.ro",
+"id": "5L1jyMyKaaOH",
+"brand": "BabyRoll.ro",
+"url_magazin": "https://babyroll.ro/masinute-copii/2182-masina-electrica-pentru-copii-tip-nava-spatiala-25-5-ani-muzica-si-lumini-verde-12v-h901.html?utm_source=2performant",
+"pret_vechi": 610.0
+},
+{
+"titlu": "Masinuta electrica Bumper Car pentru copii, 2 joystick-uri, rotire 360°, lumini LED, centura siguranta, Alb/Albastru",
+"pret": 729.75,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/273317027/image-73f78e25fb9443a9bd245cce4d155986.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fmasinuta-electrica-bumper-car-pentru-copii-2-joystick-uri-rotire-360-lumini-led-centura-siguranta-alb-albastru-9261681%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "IZBbot210904",
+"brand": "OEM",
+"url_magazin": "https://infinity.ro/masinuta-electrica-bumper-car-pentru-copii-2-joystick-uri-rotire-360-lumini-led-centura-siguranta-alb-albastru-9261681/p?utm_source=2performant",
+"pret_vechi": 829.49
+},
+{
+"titlu": "Masinuta electrica 2 in 1: ride-on si mop detasabil, lumini LED, spatiu depozitare jucarii, interior/exterior, Clickzu",
+"pret": 749.0,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/270187545/image-f3674bf3395b4035931d9a83886c29dd.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fmasinuta-electrica-2-in-1-ride-on-si-mop-detasabil-lumini-led-spatiu-depozitare-jucarii-interior-exterior-clickzu-1878789%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "GI5En0VtdvEV",
+"brand": "Clickzu",
+"url_magazin": "https://infinity.ro/masinuta-electrica-2-in-1-ride-on-si-mop-detasabil-lumini-led-spatiu-depozitare-jucarii-interior-exterior-clickzu-1878789/p?utm_source=2performant",
+"pret_vechi": 999.0
+},
+{
+"titlu": "Masinuta Electrica Cu Telecomanda Pentru Copii, M-Buggy UTV, Muzica Si Lumini, 3+ ani, 2 Motoare, 12V, Roz - FB707",
+"pret": 783.0,
+"imagine": "http://babyroll.ro/14012/masinuta-electrica-cu-telecomanda-pentru-copii-m-buggy-utv-muzica-si-lumini-3-ani-2-motoare-12v-roz-fb707.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbabyroll.ro%2Fmasinute-copii%2F2498-masinuta-electrica-cu-telecomanda-pentru-copii-m-buggy-utv-muzica-si-lumini-3-ani-2-motoare-12v-roz-fb707.html%3Futm_source%3D2performant",
+"magazin": "babyroll.ro",
+"id": "6vM8OJzcQ1OW",
+"brand": "BabyRoll.ro",
+"url_magazin": "https://babyroll.ro/masinute-copii/2498-masinuta-electrica-cu-telecomanda-pentru-copii-m-buggy-utv-muzica-si-lumini-3-ani-2-motoare-12v-roz-fb707.html?utm_source=2performant",
+"pret_vechi": 870.0
+},
+{
+"titlu": "Masinuta Electrica Cu Telecomanda Pentru Copii, Muzica Si Lumini, 3+ ani, 2 Motoare, 12V, Galben - TK6188",
+"pret": 837.0,
+"imagine": "http://babyroll.ro/13788/masinuta-electrica-cu-telecomanda-pentru-copii-muzica-si-lumini-3-ani-2-motoare-12v-galben-tk6188.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbabyroll.ro%2Fmasinute-copii%2F2412-masinuta-electrica-cu-telecomanda-pentru-copii-muzica-si-lumini-3-ani-2-motoare-12v-galben-tk6188.html%3Futm_source%3D2performant",
+"magazin": "babyroll.ro",
+"id": "uCdUk5SBiCNw",
+"brand": "BabyRoll.ro",
+"url_magazin": "https://babyroll.ro/masinute-copii/2412-masinuta-electrica-cu-telecomanda-pentru-copii-muzica-si-lumini-3-ani-2-motoare-12v-galben-tk6188.html?utm_source=2performant",
+"pret_vechi": 930.0
+},
+{
+"titlu": "Masinuta electrica Chipolino Buggy Off Road black",
+"pret": 859.56,
+"imagine": "https://www.ookee.ro/395395-large_default/masinuta-electrica-chipolino-buggy-off-road-black.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fvehicule-electrice%2F130643-masinuta-electrica-chipolino-buggy-off-road-black.html",
+"magazin": "ookee.ro",
+"id": "GhH4cgMmgiVs",
+"brand": "Chipolino",
+"url_magazin": "https://www.ookee.ro/vehicule-electrice/130643-masinuta-electrica-chipolino-buggy-off-road-black.html",
+"pret_vechi": 2148.9
+},
+{
+"titlu": "Masinuta Electrica Cu Telecomanda Pentru Copii Buggy Mini UTV, 3-7 ani, Verde - 5588",
+"pret": 864.0,
+"imagine": "http://babyroll.ro/12645/masinuta-electrica-cu-telecomanda-pentru-copii-buggy-mini-utv-3-7-ani-verde-5588.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbabyroll.ro%2Fmasinute-copii%2F2207-masinuta-electrica-cu-telecomanda-pentru-copii-buggy-mini-utv-3-7-ani-verde-5588.html%3Futm_source%3D2performant",
+"magazin": "babyroll.ro",
+"id": "6djqAbTTmvq3",
+"brand": "BabyRoll.ro",
+"url_magazin": "https://babyroll.ro/masinute-copii/2207-masinuta-electrica-cu-telecomanda-pentru-copii-buggy-mini-utv-3-7-ani-verde-5588.html?utm_source=2performant",
+"pret_vechi": 960.0
+},
+{
+"titlu": "Masinuta electrica Chipolino Police black",
+"pret": 868.98,
+"imagine": "https://www.ookee.ro/313398-large_default/masinuta-electrica-chipolino-police-black.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fvehicule-electrice%2F116570-masinuta-electrica-chipolino-police-black.html",
+"magazin": "ookee.ro",
+"id": "e782002e2",
+"brand": "Chipolino",
+"url_magazin": "https://www.ookee.ro/vehicule-electrice/116570-masinuta-electrica-chipolino-police-black.html",
+"pret_vechi": 1336.9
+},
+{
+"titlu": "Masinuta electrica pentru copii JEEP WRANGLER RUBICON cu telecomanda parentala, Rosu - Autokids.ro",
+"pret": 890.0,
+"imagine": "https://autokids.ro/upload/images/masinuta-electrica-pentru-copii-jeep-wrangler-rubicon-558-11.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fautokids.ro%2Fmasinuta-electrica-pentru-copii-jeep-wrangler-rubicon-558-rosu.html",
+"magazin": "autokids.ro",
+"id": "O0Dx2oe6UQUf",
+"brand": "Jeep",
+"url_magazin": "https://autokids.ro/masinuta-electrica-pentru-copii-jeep-wrangler-rubicon-558-rosu.html",
+"pret_vechi": null
+},
+{
+"titlu": "Masinuta electrica Chipolino SUV Ford Police",
+"pret": 991.8,
+"imagine": "https://www.ookee.ro/366355-large_default/masinuta-electrica-chipolino-suv-ford-police.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fvehicule-electrice%2F123335-masinuta-electrica-chipolino-suv-ford-police.html",
+"magazin": "ookee.ro",
+"id": "24ac3b0d2",
+"brand": "Chipolino",
+"url_magazin": "https://www.ookee.ro/vehicule-electrice/123335-masinuta-electrica-chipolino-suv-ford-police.html",
+"pret_vechi": 1625.9
+},
+{
+"titlu": "Masinuta electrica Chipolino Audi RS Q8 cu scaun din piele si roti EVA black",
+"pret": 1054.02,
+"imagine": "https://www.ookee.ro/320816-large_default/masinuta-electrica-chipolino-audi-rs-q8-cu-scaun-din-piele-si-roti-eva-black.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fvehicule-electrice%2F117943-masinuta-electrica-chipolino-audi-rs-q8-cu-scaun-din-piele-si-roti-eva-black.html",
+"magazin": "ookee.ro",
+"id": "a4f231c53",
+"brand": "Chipolino",
+"url_magazin": "https://www.ookee.ro/vehicule-electrice/117943-masinuta-electrica-chipolino-audi-rs-q8-cu-scaun-din-piele-si-roti-eva-black.html",
+"pret_vechi": 1727.9
+},
+{
+"titlu": "Masinuta electrica Chipolino Porsche Kayenne red",
+"pret": 1084.95,
+"imagine": "https://www.ookee.ro/394819-large_default/masinuta-electrica-chipolino-porsche-kayenne-red.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fvehicule-electrice%2F130600-masinuta-electrica-chipolino-porsche-kayenne-red.html",
+"magazin": "ookee.ro",
+"id": "4f367yZRv6e0",
+"brand": "Chipolino",
+"url_magazin": "https://www.ookee.ro/vehicule-electrice/130600-masinuta-electrica-chipolino-porsche-kayenne-red.html",
+"pret_vechi": 1838.9
+},
+{
+"titlu": "Masinuta electrica Chipolino Porsche Kayenne black",
+"pret": 1084.95,
+"imagine": "https://www.ookee.ro/394834-large_default/masinuta-electrica-chipolino-porsche-kayenne-black.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fvehicule-electrice%2F130601-masinuta-electrica-chipolino-porsche-kayenne-black.html",
+"magazin": "ookee.ro",
+"id": "zhqyqvYAZ38m",
+"brand": "Chipolino",
+"url_magazin": "https://www.ookee.ro/vehicule-electrice/130601-masinuta-electrica-chipolino-porsche-kayenne-black.html",
+"pret_vechi": 1838.9
+},
+{
+"titlu": "Masinuta Electrica Cu Telecomanda Pentru Copii, Mercedes G63 AMG, Muzica Si Lumini, 3+ ani, 2 Motoare, 12V, Alb - FB921",
+"pret": 1161.0,
+"imagine": "http://babyroll.ro/13829/masinuta-electrica-cu-telecomanda-pentru-copii-mercedes-g63-amg-muzica-si-lumini-3-ani-2-motoare-12v-alb-fb921.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbabyroll.ro%2Fmasinute-copii%2F2421-masinuta-electrica-cu-telecomanda-pentru-copii-mercedes-g63-amg-muzica-si-lumini-3-ani-2-motoare-12v-alb-fb921.html%3Futm_source%3D2performant",
+"magazin": "babyroll.ro",
+"id": "UqJeXUkixIVy",
+"brand": "BabyRoll.ro",
+"url_magazin": "https://babyroll.ro/masinute-copii/2421-masinuta-electrica-cu-telecomanda-pentru-copii-mercedes-g63-amg-muzica-si-lumini-3-ani-2-motoare-12v-alb-fb921.html?utm_source=2performant",
+"pret_vechi": 1290.0
+},
+{
+"titlu": "Masinuta electrica pentru copii Range Rover EVOQUE 12V 100W, roti EVA, scaun piele, telecomanda parentala, Roz - Autokid",
+"pret": 1199.0,
+"imagine": "https://autokids.ro/upload/images/masinuta-electrica-pentru-copii-range-rover-evogue-99-roz-44.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fautokids.ro%2Fmasinuta-electrica-pentru-copii-autokids-range-rover-evoque-99-12v-roz.html",
+"magazin": "autokids.ro",
+"id": "vIFEECB-bd-A",
+"brand": "Land Rover",
+"url_magazin": "https://autokids.ro/masinuta-electrica-pentru-copii-autokids-range-rover-evoque-99-12v-roz.html",
+"pret_vechi": null
+},
+{
+"titlu": "Masinuta Electrica Copii, BMW i4, 4 Motoare, 12V, 4x4, Alb",
+"pret": 1251.0,
+"imagine": "http://babyroll.ro/4795/masinuta-electrica-copii-bmw-i4-4-motoare-12v-4x4-alb.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbabyroll.ro%2Fmasinute-copii%2F694-masinuta-electrica-copii-bmw-i4-4-motoare-12v-4x4-alb-5941994201651.html%3Futm_source%3D2performant",
+"magazin": "babyroll.ro",
+"id": "a0blzpvARHMw",
+"brand": "BabyRoll.ro",
+"url_magazin": "https://babyroll.ro/masinute-copii/694-masinuta-electrica-copii-bmw-i4-4-motoare-12v-4x4-alb-5941994201651.html?utm_source=2performant",
+"pret_vechi": 1390.0
+},
+{
+"titlu": "Masinuta electrica pentru copii 3 ani+, Turbo S, cu faruri LED si comenzi pe volan si muzica, rosu",
+"pret": 1290.74,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/266621800/image-5a5449a383c9421ba27abcf4edfe80b2.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fmasinuta-electrica-pentru-copii-3-ani-turbo-s-cu-faruri-led-si-comenzi-pe-volan-si-muzica-rosu-1206583%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "YRTuQ-LrfU76",
+"brand": "ramiz",
+"url_magazin": "https://infinity.ro/masinuta-electrica-pentru-copii-3-ani-turbo-s-cu-faruri-led-si-comenzi-pe-volan-si-muzica-rosu-1206583/p?utm_source=2performant",
+"pret_vechi": 1548.88
+},
+{
+"titlu": "Masinuta electrica pentru copii Mercedes Benz AMG SL63 4x4 12V 200W, roti EVA, scaun piele, telecomanda parentala, Albas",
+"pret": 1390.0,
+"imagine": "https://autokids.ro/upload/images/seo_friendly_pictures/merc_SL63/masinuta-electrica-pentru-copii-mercedes-benz-amg-sl63-albastru-1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fautokids.ro%2Fmasinuta-electrica-pentru-copii-autokids-mercedes-benz-amg-sl63-12v-4x4-albastru-metalizat.html",
+"magazin": "autokids.ro",
+"id": "YTKYyGyUCt1q",
+"brand": "Mercedes",
+"url_magazin": "https://autokids.ro/masinuta-electrica-pentru-copii-autokids-mercedes-benz-amg-sl63-12v-4x4-albastru-metalizat.html",
+"pret_vechi": 1490.0
+},
+{
+"titlu": "Masina electrica copii mini countryman, 12v",
+"pret": 1390.99,
+"imagine": "https://www.ookee.ro/300109-large_default/masina-electrica-copii-mini-countryman-12v.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.ookee.ro%2Fvehicule-electrice%2F112924-masina-electrica-copii-mini-countryman-12v.html",
+"magazin": "ookee.ro",
+"id": "3fa58b33e",
+"brand": "Rollplay",
+"url_magazin": "https://www.ookee.ro/vehicule-electrice/112924-masina-electrica-copii-mini-countryman-12v.html",
+"pret_vechi": 3023.9
+},
+{
+"titlu": "Masinuta Electrica de Politie Pentru Copii, 4x4, 12V, 2 Locuri, Rosu - AT-F8",
+"pret": 1395.0,
+"imagine": "http://babyroll.ro/4605/masinuta-electrica-de-politie-pentru-copii-4x4-12v-2-locuri-rosu-at-f8.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbabyroll.ro%2Fmasinute-copii%2F662-masinuta-electrica-de-politie-pentru-copii-4x4-12v-2-locuri-rosu-at-f8-5941994201873.html%3Futm_source%3D2performant",
+"magazin": "babyroll.ro",
+"id": "yRXgA_5TQBRK",
+"brand": "BabyRoll.ro",
+"url_magazin": "https://babyroll.ro/masinute-copii/662-masinuta-electrica-de-politie-pentru-copii-4x4-12v-2-locuri-rosu-at-f8-5941994201873.html?utm_source=2performant",
+"pret_vechi": 1550.0
+},
+{
+"titlu": "Masinuta Electrica de Politie Pentru Copii, 4x4, 12V, 2 Locuri, Alb - AT-F8",
+"pret": 1395.0,
+"imagine": "http://babyroll.ro/4541/masinuta-electrica-de-politie-pentru-copii-4x4-12v-2-locuri-alb.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbabyroll.ro%2Fmasinute-copii%2F653-masinuta-electrica-de-politie-pentru-copii-4x4-12v-2-locuri-alb-5941994201934.html%3Futm_source%3D2performant",
+"magazin": "babyroll.ro",
+"id": "1CfTh-gMnUF_",
+"brand": "BabyRoll.ro",
+"url_magazin": "https://babyroll.ro/masinute-copii/653-masinuta-electrica-de-politie-pentru-copii-4x4-12v-2-locuri-alb-5941994201934.html?utm_source=2performant",
+"pret_vechi": 1550.0
+},
+{
+"titlu": "Masinuta electrica pentru copii, Mercedes AMG G63 12V 4x4, roti EVA, scaun piele, telecomanda parentala, Gri - Autokids.",
+"pret": 1399.0,
+"imagine": "https://autokids.ro/upload/images/masinuta-electrica-pentru-copii-mercedes-amg-mp3-g63s-4x4-12v-gri-1.9.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fautokids.ro%2Fmasinuta-electrica-pentru-copii-mercedes-amg-mp3-g63s-4x4-12v-gri.html",
+"magazin": "autokids.ro",
+"id": "xgt1p0gTJXnR",
+"brand": "Mercedes",
+"url_magazin": "https://autokids.ro/masinuta-electrica-pentru-copii-mercedes-amg-mp3-g63s-4x4-12v-gri.html",
+"pret_vechi": null
+},
+{
+"titlu": "Masinuta electrica pentru copii de POMPIERI (1818) Rosu - Autokids.ro",
+"pret": 1430.0,
+"imagine": "https://autokids.ro/assets/images/masinuta-electrica-pentru-copii-de-pompieri-sx1818-rosu-11-700x700-fb.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fautokids.ro%2Fmasinuta-electrica-pentru-copii-de-pompieri-sx1818-rosu.html",
+"magazin": "autokids.ro",
+"id": "8kWpdyfi-BlG",
+"brand": "Pompieri",
+"url_magazin": "https://autokids.ro/masinuta-electrica-pentru-copii-de-pompieri-sx1818-rosu.html",
+"pret_vechi": 1490.0
+},
+{
+"titlu": "Masinuta electrica pentru copii 3 ani+, Mercedes Benz AMG SL65S, alb",
+"pret": 1432.46,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/266621849/image-c40607616661475e8f38f6b5751d47dc.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fmasinuta-electrica-pentru-copii-3-ani-mercedes-benz-amg-sl65s-alb-1206593%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "1KNOLLI8n0Y3",
+"brand": "ramiz",
+"url_magazin": "https://infinity.ro/masinuta-electrica-pentru-copii-3-ani-mercedes-benz-amg-sl65s-alb-1206593/p?utm_source=2performant",
+"pret_vechi": 1718.94
+}
+],
+"magazine": [
+"autokids.ro",
+"babyroll.ro",
+"infinity.ro",
+"ookee.ro"
+]
+},
+{
+"slug": "jucarii-montessori",
+"tema": "jucarii-copii",
+"tema_nume": "Jucării",
+"titlu": "Jucării Montessori",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-05",
+"feeduri": [
+{
+"id": 5171,
+"magazin": "bazarulonline.ro"
+},
+{
+"id": 4859,
+"magazin": "nurio.ro"
+},
+{
+"id": 8314,
+"magazin": "atelierulfamiliei.ro"
+},
+{
+"id": 9441,
+"magazin": "infinity.ro"
+}
+],
+"produse": [
+{
+"titlu": "Jucarie educativa interactiva Happy World Card cu cititor de carduri si 224 de cuvinte in limba engleza Montessori pentr",
+"pret": 20.8,
+"imagine": "https://bazarulonline.ro/images/detailed/7999/IMG_7122.jpeg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fjucarie-educativa-interactiva-happy-world-card-cu-cititor-de-carduri-si-224-de-cuvinte-in-limba-engleza-montessori-pentru-copii-12-luni-plus-dezvoltare-vocabular-memorie-invatare-timpurie",
+"magazin": "bazarulonline.ro",
+"id": "5yl8Tw1oA4as",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/jucarie-educativa-interactiva-happy-world-card-cu-cititor-de-carduri-si-224-de-cuvinte-in-limba-engleza-montessori-pentru-copii-12-luni-plus-dezvoltare-vocabular-memorie-invatare-timpurie",
+"pret_vechi": null
+},
+{
+"titlu": "Jucarie interactiva Montessori, Jucarie pentru Bebelusi, Model Racheta Spatiala, din Plastic rezistent, Varsta 18+ luni",
+"pret": 24.64,
+"imagine": "https://bazarulonline.ro/images/detailed/11340/jucarie-pentru-bebelusi-model-racheta-spatiala-15-x-13-x-12-cm-alb-portocaliu.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fjucarie-interactiva-montessori-jucarie-pentru-bebelusi-model-racheta-spatiala-din-plastic-rezistent-varsta-18-luni-engros-ro",
+"magazin": "bazarulonline.ro",
+"id": "UF7Mc4GfIwFD",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/jucarie-interactiva-montessori-jucarie-pentru-bebelusi-model-racheta-spatiala-din-plastic-rezistent-varsta-18-luni-engros-ro",
+"pret_vechi": null
+},
+{
+"titlu": "Jucarie Montessori de Sortat si Pescuit, din Lemn, +3 Ani, cu Magnet, Model Forme Geometrice, Pestisori si Albinute Engr",
+"pret": 24.89,
+"imagine": "https://bazarulonline.ro/images/detailed/11340/jucarie-montesorii-de-sortat-si-pescuit-din-lemn-3-ani-cu-magnet-model-forme-geometrice-pestisori-si-albinute-225-x-13.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fjucarie-montessori-de-sortat-si-pescuit-din-lemn-3-ani-cu-magnet-model-forme-geometrice-pestisori-si-albinute-engros-ro",
+"magazin": "bazarulonline.ro",
+"id": "NPNyUTlmym2G",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/jucarie-montessori-de-sortat-si-pescuit-din-lemn-3-ani-cu-magnet-model-forme-geometrice-pestisori-si-albinute-engros-ro",
+"pret_vechi": null
+},
+{
+"titlu": "Puzzle din Lemn cu Numere Bufnita Montessori - Nurio",
+"pret": 29.0,
+"imagine": "https://gomagcdn.ro/domains/nurio.ro/files/product/large/puzzle-din-lemn-rinocer-copie-621823.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.nurio.ro%2Fpuzzle-din-lemn-cu-numere-bufnita.html",
+"magazin": "nurio.ro",
+"id": "a648df9bc",
+"brand": "Nurio",
+"url_magazin": "https://www.nurio.ro/puzzle-din-lemn-cu-numere-bufnita.html",
+"pret_vechi": null
+},
+{
+"titlu": "Jucarie interactiva Montessori, Jucarie pentru Bebelusi, Model Pinguin Ocupat, din Plastic rezistent, Varsta 18+ luni En",
+"pret": 31.41,
+"imagine": "https://bazarulonline.ro/images/detailed/11340/jucarie-pentru-bebelusi-model-pinguin-ocupat-varsta-18-luni-13-x-11-x-11-cm-albastru-multicolor.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fjucarie-interactiva-montessori-jucarie-pentru-bebelusi-model-pinguin-ocupat-din-plastic-rezistent-varsta-18-luni-engros",
+"magazin": "bazarulonline.ro",
+"id": "dFtv_K7BEC6m",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/jucarie-interactiva-montessori-jucarie-pentru-bebelusi-model-pinguin-ocupat-din-plastic-rezistent-varsta-18-luni-engros",
+"pret_vechi": null
+},
+{
+"titlu": "Cub senzorial Montessori Engros",
+"pret": 32.96,
+"imagine": "https://bazarulonline.ro/images/detailed/7241/New_Picture__28_.png",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fcub-senzorial-montessori-engros",
+"magazin": "bazarulonline.ro",
+"id": "TdBAERugnH5M",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/cub-senzorial-montessori-engros",
+"pret_vechi": null
+},
+{
+"titlu": "Jucarie Educativa Montessori din Lemn, 13 Piese, Sortator cu Discuri Colorate, Joc de Motricitate Fina pentru Copii Engr",
+"pret": 37.39,
+"imagine": "https://bazarulonline.ro/images/detailed/11341/jucarie-educativa-montessori-din-lemn-13-piese-113-x-7-cm-multicolor.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fjucarie-educativa-montessori-din-lemn-13-piese-sortator-cu-discuri-colorate-joc-de-motricitate-fina-pentru-copii-engros",
+"magazin": "bazarulonline.ro",
+"id": "AfLJ7ejznych",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/jucarie-educativa-montessori-din-lemn-13-piese-sortator-cu-discuri-colorate-joc-de-motricitate-fina-pentru-copii-engros",
+"pret_vechi": null
+},
+{
+"titlu": "Jucarie Educativa Montessori din Lemn, 28 Piese, Sortator cu Forme Geometrice, Joc de Motricitate Fina pentru Copii Engr",
+"pret": 37.39,
+"imagine": "https://bazarulonline.ro/images/detailed/11341/jucarie-educativa-montessori-din-lemn-28-piese-113-x-7-cm-multicolor.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fjucarie-educativa-montessori-din-lemn-28-piese-sortator-cu-forme-geometrice-joc-de-motricitate-fina-pentru-copii-engros",
+"magazin": "bazarulonline.ro",
+"id": "q90Tewa2KTYm",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/jucarie-educativa-montessori-din-lemn-28-piese-sortator-cu-forme-geometrice-joc-de-motricitate-fina-pentru-copii-engros",
+"pret_vechi": null
+},
+{
+"titlu": "Jucarie Educativa Montessori din Lemn, Model Pista cu Bile si Tunel, 4 piese, Joc pentru Motricitate si Coordonare Engro",
+"pret": 40.65,
+"imagine": "https://bazarulonline.ro/images/detailed/11341/jucarie-educativa-montessori-din-lemn-model-pista-cu-bile-si-tunel-copii-12-luni-24-x-12-x-85-cm-multicolor.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fbazarulonline.ro%2Fjucarie-educativa-montessori-din-lemn-model-pista-cu-bile-si-tunel-4-piese-joc-pentru-motricitate-si-coordonare-engros",
+"magazin": "bazarulonline.ro",
+"id": "NmWcnMgFNPCw",
+"brand": "",
+"url_magazin": "https://bazarulonline.ro/jucarie-educativa-montessori-din-lemn-model-pista-cu-bile-si-tunel-4-piese-joc-pentru-motricitate-si-coordonare-engros",
+"pret_vechi": null
+},
+{
+"titlu": "Jucarie senzoriala Montessori pentru sortarea culorilor, antistres, motricitate fina, Dinozaurul Colorat, +3 ani",
+"pret": 45.0,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/271720683/image-047fe7f3197a490eb705c65b64469e03.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fjucarie-senzoriala-montessori-pentru-sortarea-culorilor-antistres-motricitate-fina-dinozaurul-colorat-3-ani-9109240%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "Y9lnVXMcs295",
+"brand": "OEM",
+"url_magazin": "https://infinity.ro/jucarie-senzoriala-montessori-pentru-sortarea-culorilor-antistres-motricitate-fina-dinozaurul-colorat-3-ani-9109240/p?utm_source=2performant",
+"pret_vechi": null
+},
+{
+"titlu": "Jucarie educativa Montessori – Calendar din lemn cu activitati, 3+ ani",
+"pret": 63.95,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/271853938/image-df75319134f94ff8af33c38457b18d3e.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fjucarie-educativa-montessori-calendar-din-lemn-cu-activitati-3-ani-9116275%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "PI2J7VBvG_rj",
+"brand": "Unbranded/Generic",
+"url_magazin": "https://infinity.ro/jucarie-educativa-montessori-calendar-din-lemn-cu-activitati-3-ani-9116275/p?utm_source=2performant",
+"pret_vechi": null
+},
+{
+"titlu": "Jucarie de Tras din Lemn - Crocodil Montessori - Nurio",
+"pret": 69.0,
+"imagine": "https://gomagcdn.ro/domains/nurio.ro/files/product/large/jucarie-de-tras-din-lemn-fexibila-dinozaur-copie-770751.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.nurio.ro%2Fjucarie-de-tras-din-lemn-crocodil-montessori.html",
+"magazin": "nurio.ro",
+"id": "5a8637b00",
+"brand": "Nurio",
+"url_magazin": "https://www.nurio.ro/jucarie-de-tras-din-lemn-crocodil-montessori.html",
+"pret_vechi": 89.9
+},
+{
+"titlu": "Jucarie Educativa si Interactiva Cub Montessori cu Activitati Senzoriale pentru Copii",
+"pret": 69.0,
+"imagine": "https://gomagcdn.ro/domains/nurio.ro/files/product/large/jucarie-educativa-si-interactiva-cub-montessori-cu-activitati-senzoriale-pentru-copii-136412.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.nurio.ro%2Fjucarie-educativa-si-interactiva-cub-montessori-cu-activitati-senzoriale-pentru-copii.html",
+"magazin": "nurio.ro",
+"id": "9cf58579f",
+"brand": "Nurio",
+"url_magazin": "https://www.nurio.ro/jucarie-educativa-si-interactiva-cub-montessori-cu-activitati-senzoriale-pentru-copii.html",
+"pret_vechi": 109.0
+},
+{
+"titlu": "Jucarie Educativa Montessori „Ariciul Spike”, Dezvoltare Motricitate Fina, Sortare Culori, 12 Pcs, 18 luni+, Multicolor",
+"pret": 70.0,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/271417619/image-0af1cacd2c06486eaa714ca09d543a47.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fjucarie-educativa-montessori-ariciul-spike-dezvoltare-motricitate-fina-sortare-culori-12-pcs-18-luni-multicolor-9103714%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "KoJmlsCx0cIf",
+"brand": "OEM",
+"url_magazin": "https://infinity.ro/jucarie-educativa-montessori-ariciul-spike-dezvoltare-motricitate-fina-sortare-culori-12-pcs-18-luni-multicolor-9103714/p?utm_source=2performant",
+"pret_vechi": null
+},
+{
+"titlu": "Jucarie de stivuire si indemanare - set din lemn rotativ -13 piese Montessori",
+"pret": 74.0,
+"imagine": "https://gomagcdn.ro/domains/nurio.ro/files/product/large/jucarie-de-stivuire-si-indemanare-set-de-ou-din-lemn-rotativ-13-piese-8845-7578.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.nurio.ro%2Fcolorful-gear-eggs.html",
+"magazin": "nurio.ro",
+"id": "s57cZygxEaMY",
+"brand": "Nurio",
+"url_magazin": "https://www.nurio.ro/colorful-gear-eggs.html",
+"pret_vechi": null
+},
+{
+"titlu": "Jucarie Montessori Cutie sortatoare Cachaboom, Djeco",
+"pret": 85.5,
+"imagine": "https://gomagcdn.ro/domains/atelierulfamiliei.ro/files/product/large/jucarie-montessori-cutie-sortatoare-cachaboom-djeco-969928.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.atelierulfamiliei.ro%2Fjucarie-montessori-cutie-sortatoare-cachaboom-djeco.html",
+"magazin": "atelierulfamiliei.ro",
+"id": "714d8584e",
+"brand": "Djeco",
+"url_magazin": "https://www.atelierulfamiliei.ro/jucarie-montessori-cutie-sortatoare-cachaboom-djeco.html",
+"pret_vechi": 90.0
+},
+{
+"titlu": "Mic Dejun de Jucarie din Lemn Delicious Breakfast - Un Joc Educativ tip Montessori",
+"pret": 94.0,
+"imagine": "https://gomagcdn.ro/domains/nurio.ro/files/product/large/set-waffe-din-lemn-cu-accesorii-copie-037946.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.nurio.ro%2Fmic-dejun-de-jucarie-din-lemn-delicious-breakfast-un-joc-educativ-tip-montessori.html",
+"magazin": "nurio.ro",
+"id": "6c3e78622",
+"brand": "Nurio",
+"url_magazin": "https://www.nurio.ro/mic-dejun-de-jucarie-din-lemn-delicious-breakfast-un-joc-educativ-tip-montessori.html",
+"pret_vechi": 199.9
+},
+{
+"titlu": "Jucarie Educationala din Lemn Xilofon - Jucarie de Tras si Sortat Montessori - Nurio",
+"pret": 99.33,
+"imagine": "https://gomagcdn.ro/domains/nurio.ro/files/product/large/jucarie-din-lemn-xilofon-jucarie-de-tras-montessori-copie-237248.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.nurio.ro%2Fjucarie-educationala-din-lemn-xilofon-jucarie-de-tras-si-sortat-montessori.html",
+"magazin": "nurio.ro",
+"id": "0ef0e873e",
+"brand": "Nurio",
+"url_magazin": "https://www.nurio.ro/jucarie-educationala-din-lemn-xilofon-jucarie-de-tras-si-sortat-montessori.html",
+"pret_vechi": 139.9
+},
+{
+"titlu": "Jucarie Interactiva Montessori 6 in 1 tip Busy Cube Senzorial pentru Bebelusi, Dezvoltare Motricitate Fina, Coordonare",
+"pret": 105.0,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/271417603/image-c0e8bf4a5b004dcd80cca95280e5722f.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fjucarie-interactiva-montessori-6-in-1-tip-busy-cube-senzorial-pentru-bebelusi-dezvoltare-motricitate-fina-coordonare-9103711%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "U3z0eMJnKGnF",
+"brand": "OEM",
+"url_magazin": "https://infinity.ro/jucarie-interactiva-montessori-6-in-1-tip-busy-cube-senzorial-pentru-bebelusi-dezvoltare-motricitate-fina-coordonare-9103711/p?utm_source=2performant",
+"pret_vechi": null
+},
+{
+"titlu": "Casuta de jucarie cu activitati senzoriale montessori",
+"pret": 105.25,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/268737328/image-b8bb79244e5f45e18e39e5430d8c0817.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fcasuta-de-jucarie-cu-activitati-senzoriale-montessori-1660929%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "eNhrZw630ap2",
+"brand": "Jucarii Bebe",
+"url_magazin": "https://infinity.ro/casuta-de-jucarie-cu-activitati-senzoriale-montessori-1660929/p?utm_source=2performant",
+"pret_vechi": 123.82
+},
+{
+"titlu": "Cub Montessori Deblocare - Jucarie de Indemanare",
+"pret": 109.0,
+"imagine": "https://gomagcdn.ro/domains/nurio.ro/files/product/large/dsc9819-10000-8270.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.nurio.ro%2Fcub-montessori-deblocare-jucarie-de-indemanare.html",
+"magazin": "nurio.ro",
+"id": "614b73b03",
+"brand": "Nurio",
+"url_magazin": "https://www.nurio.ro/cub-montessori-deblocare-jucarie-de-indemanare.html",
+"pret_vechi": null
+},
+{
+"titlu": "Casuta de Jucarie cu Activitati Senzoriale Montessori",
+"pret": 111.82,
+"imagine": "https://gomagcdn.ro/domains/atelierulfamiliei.ro/files/product/large/casuta-de-jucarie-cu-activitati-senzoriale-montessori-530852.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.atelierulfamiliei.ro%2Fcasuta-de-jucarie-cu-activitati-senzoriale-montessori.html",
+"magazin": "atelierulfamiliei.ro",
+"id": "hgWRhBuHvk7y",
+"brand": "Hola",
+"url_magazin": "https://www.atelierulfamiliei.ro/casuta-de-jucarie-cu-activitati-senzoriale-montessori.html",
+"pret_vechi": 184.64
+},
+{
+"titlu": "Jucarie Montessori Turn flori si fluture, Djeco",
+"pret": 133.0,
+"imagine": "https://gomagcdn.ro/domains/atelierulfamiliei.ro/files/product/large/jucarie-montessori-turn-flori-si-fluture-djeco-480814.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.atelierulfamiliei.ro%2Fjucarie-montessori-turn-flori-si-fluture-djeco.html",
+"magazin": "atelierulfamiliei.ro",
+"id": "7c2646988",
+"brand": "Djeco",
+"url_magazin": "https://www.atelierulfamiliei.ro/jucarie-montessori-turn-flori-si-fluture-djeco.html",
+"pret_vechi": 140.0
+},
+{
+"titlu": "Circuit jucarie din lemn Marble Building Blocks, Montessori, 42 piese",
+"pret": 170.0,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/271846773/image-53f12959cbb04238964ea4dab1aedb38.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fcircuit-jucarie-din-lemn-marble-building-blocks-montessori-42-piese-9116182%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "i-AmlkhdXTYv",
+"brand": "Ileana Prodexim",
+"url_magazin": "https://infinity.ro/circuit-jucarie-din-lemn-marble-building-blocks-montessori-42-piese-9116182/p?utm_source=2performant",
+"pret_vechi": null
+}
+],
+"magazine": [
+"atelierulfamiliei.ro",
+"bazarulonline.ro",
+"infinity.ro",
+"nurio.ro"
+]
+},
+{
+"slug": "papusa-barbie",
+"tema": "jucarii-copii",
+"tema_nume": "Jucării",
+"titlu": "Păpuși Barbie",
+"nota": null,
+"in_text": null,
+"actualizat": "2026-11-05",
+"feeduri": [
+{
+"id": 8314,
+"magazin": "atelierulfamiliei.ro"
+},
+{
+"id": 9441,
+"magazin": "infinity.ro"
+},
+{
+"id": 5887,
+"magazin": "grupdzc.ro"
+},
+{
+"id": 6851,
+"magazin": "grupdzc.ro"
+}
+],
+"produse": [
+{
+"titlu": "BARBIE PAPUSA CHELSEA BLONDA CU ROCHITA ROZ IN CAROURI",
+"pret": 37.99,
+"imagine": "https://grupdzc.ro/media/catalog/product/1/7/1764756625-0_1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgrupdzc.ro%2Fbarbie-papusa-chelsea-blonda-cu-rochita-roz-in-carouri",
+"magazin": "grupdzc.ro",
+"id": "SZGr6M8ahuFi",
+"brand": "Mattel",
+"url_magazin": "https://grupdzc.ro/barbie-papusa-chelsea-blonda-cu-rochita-roz-in-carouri",
+"pret_vechi": null
+},
+{
+"titlu": "PAPUSA BARBIE BRUNETA CU COSTUM DE BAIE ALBASTRU",
+"pret": 38.85,
+"imagine": "https://grupdzc.ro/media/catalog/product/1/7/1764756620-0_1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgrupdzc.ro%2Fpapusa-barbie-bruneta-cu-costum-de-baie-albastru",
+"magazin": "grupdzc.ro",
+"id": "ceiiFIrNEKjE",
+"brand": "Mattel",
+"url_magazin": "https://grupdzc.ro/papusa-barbie-bruneta-cu-costum-de-baie-albastru",
+"pret_vechi": null
+},
+{
+"titlu": "PAPUSA BARBIE BRUNETA CU COSTUM DE BAIE INFLORAT",
+"pret": 38.85,
+"imagine": "https://grupdzc.ro/media/catalog/product/1/7/1764756621-0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgrupdzc.ro%2Fpapusa-barbie-bruneta-cu-costum-de-baie-inflorat",
+"magazin": "grupdzc.ro",
+"id": "GVD_jSkx5KuM",
+"brand": "Mattel",
+"url_magazin": "https://grupdzc.ro/papusa-barbie-bruneta-cu-costum-de-baie-inflorat",
+"pret_vechi": null
+},
+{
+"titlu": "PAPUSA BARBIE BRUNETA CU COSTUM DE BAIE IN DOUA CULORI",
+"pret": 38.85,
+"imagine": "https://grupdzc.ro/media/catalog/product/1/7/1764756621-0_1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgrupdzc.ro%2Fpapusa-barbie-bruneta-cu-costum-de-baie-in-doua-culori",
+"magazin": "grupdzc.ro",
+"id": "qXuGnxvBjSs2",
+"brand": "Mattel",
+"url_magazin": "https://grupdzc.ro/papusa-barbie-bruneta-cu-costum-de-baie-in-doua-culori",
+"pret_vechi": null
+},
+{
+"titlu": "PAPUSA BARBIE BLONDA CU COSTUM DE BAIE ROZ LA PISCINA",
+"pret": 38.85,
+"imagine": "https://grupdzc.ro/media/catalog/product/1/7/1764756810-0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgrupdzc.ro%2Fpapusa-barbie-blonda-cu-costum-de-baie-roz-la-piscina",
+"magazin": "grupdzc.ro",
+"id": "qQFtHCNf-7sB",
+"brand": "Mattel",
+"url_magazin": "https://grupdzc.ro/papusa-barbie-blonda-cu-costum-de-baie-roz-la-piscina",
+"pret_vechi": null
+},
+{
+"titlu": "PAPUSA BARBIE BLONDA CU ROCHITA ALBASTRA",
+"pret": 43.68,
+"imagine": "https://grupdzc.ro/media/catalog/product/1/7/1764756849-0_1.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgrupdzc.ro%2Fpapusa-barbie-blonda-cu-rochita-albastra",
+"magazin": "grupdzc.ro",
+"id": "czfzf-D8y1Mr",
+"brand": "Mattel",
+"url_magazin": "https://grupdzc.ro/papusa-barbie-blonda-cu-rochita-albastra",
+"pret_vechi": null
+},
+{
+"titlu": "Papusa Barbie Creola cu par afro si cu rochita roz",
+"pret": 43.99,
+"imagine": "https://grupdzc.ro/media/catalog/product/1/6/1674213658-0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgrupdzc.ro%2Fpapusa-barbie-creola-cu-par-afro-si-cu-rochita-roz",
+"magazin": "grupdzc.ro",
+"id": "XGNP1tMMXcSd",
+"brand": "Mattel",
+"url_magazin": "https://grupdzc.ro/papusa-barbie-creola-cu-par-afro-si-cu-rochita-roz",
+"pret_vechi": null
+},
+{
+"titlu": "Papusa clasica bruneta cu rochita roz cu imprimeu Barbie",
+"pret": 45.99,
+"imagine": "https://grupdzc.ro/media/catalog/product/1/7/1720689636-0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fgrupdzc.ro%2Fpapusa-clasica-bruneta-cu-rochita-roz-cu-imprimeu-barbie",
+"magazin": "grupdzc.ro",
+"id": "Md-RSjjWnf72",
+"brand": "Barbie",
+"url_magazin": "https://grupdzc.ro/papusa-clasica-bruneta-cu-rochita-roz-cu-imprimeu-barbie",
+"pret_vechi": null
+},
+{
+"titlu": "BARBIE PAPUSA CHELSEA BLONDA CU ROCHITA ROZ CU BULINE",
+"pret": 48.72,
+"imagine": "https://gomagcdn.ro/domains/atelierulfamiliei.ro/files/product/large/barbie-papusa-chelsea-blonda-cu-rochita-roz-cu-buline-033499.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.atelierulfamiliei.ro%2Fbarbie-papusa-chelsea-blonda-cu-rochita-roz-cu-buline.html",
+"magazin": "atelierulfamiliei.ro",
+"id": "u-zQsn56HmBp",
+"brand": "Mattel",
+"url_magazin": "https://www.atelierulfamiliei.ro/barbie-papusa-chelsea-blonda-cu-rochita-roz-cu-buline.html",
+"pret_vechi": 81.38
+},
+{
+"titlu": "BARBIE PAPUSA CHELSEA BLONDA CU ROCHITA ROZ CU CAPSUNI",
+"pret": 48.72,
+"imagine": "https://gomagcdn.ro/domains/atelierulfamiliei.ro/files/product/large/barbie-papusa-chelsea-blonda-cu-rochita-roz-cu-capsuni-040611.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.atelierulfamiliei.ro%2Fbarbie-papusa-chelsea-blonda-cu-rochita-roz-cu-capsuni.html",
+"magazin": "atelierulfamiliei.ro",
+"id": "nPMipVJSzNQO",
+"brand": "Mattel",
+"url_magazin": "https://www.atelierulfamiliei.ro/barbie-papusa-chelsea-blonda-cu-rochita-roz-cu-capsuni.html",
+"pret_vechi": 81.38
+},
+{
+"titlu": "BARBIE PAPUSA CHELSEA BAIAT BRUNET CU OCHI CAPRUI",
+"pret": 48.72,
+"imagine": "https://gomagcdn.ro/domains/atelierulfamiliei.ro/files/product/large/barbie-papusa-chelsea-baiat-brunet-cu-ochi-caprui-848431.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.atelierulfamiliei.ro%2Fbarbie-papusa-chelsea-baiat-brunet-cu-ochi-caprui.html",
+"magazin": "atelierulfamiliei.ro",
+"id": "ofwCCSUrJVsQ",
+"brand": "Mattel",
+"url_magazin": "https://www.atelierulfamiliei.ro/barbie-papusa-chelsea-baiat-brunet-cu-ochi-caprui.html",
+"pret_vechi": 81.38
+},
+{
+"titlu": "PAPUSA BARBIE BLONDA CU ROCHIE MULTICOLORA",
+"pret": 56.82,
+"imagine": "https://gomagcdn.ro/domains/atelierulfamiliei.ro/files/product/large/papusa-barbie-blonda-cu-rochie-multicolora-946507.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.atelierulfamiliei.ro%2Fpapusa-barbie-blonda-cu-rochie-multicolora.html",
+"magazin": "atelierulfamiliei.ro",
+"id": "CjG12VgPvNFx",
+"brand": "Mattel",
+"url_magazin": "https://www.atelierulfamiliei.ro/papusa-barbie-blonda-cu-rochie-multicolora.html",
+"pret_vechi": 94.94
+},
+{
+"titlu": "PAPUSA BARBIE BRUNETA CU ROCHIE MULTICOLORA",
+"pret": 56.82,
+"imagine": "https://gomagcdn.ro/domains/atelierulfamiliei.ro/files/product/large/papusa-barbie-bruneta-cu-rochie-multicolora-514692.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.atelierulfamiliei.ro%2Fpapusa-barbie-bruneta-cu-rochie-multicolora.html",
+"magazin": "atelierulfamiliei.ro",
+"id": "9JKq5L3f0ZC7",
+"brand": "Mattel",
+"url_magazin": "https://www.atelierulfamiliei.ro/papusa-barbie-bruneta-cu-rochie-multicolora.html",
+"pret_vechi": 94.94
+},
+{
+"titlu": "Papusa Barbie Balerina Blonda cu Costum Roz",
+"pret": 60.94,
+"imagine": "https://gomagcdn.ro/domains/atelierulfamiliei.ro/files/product/large/papusa-barbie-balerina-blonda-cu-costum-roz-945294.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.atelierulfamiliei.ro%2Fpapusa-barbie-balerina-blonda-cu-costum-roz.html",
+"magazin": "atelierulfamiliei.ro",
+"id": "Xdh8JqJLnSf-",
+"brand": "BARBIE - I can be",
+"url_magazin": "https://www.atelierulfamiliei.ro/papusa-barbie-balerina-blonda-cu-costum-roz.html",
+"pret_vechi": 101.82
+},
+{
+"titlu": "Papusa Barbie, La plaja in costum de baie, Tropical Blue",
+"pret": 68.57,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/270504727/image-118846378fd74a1faf671afcd081f6ca.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpapusa-barbie-la-plaja-in-costum-de-baie-tropical-blue-9021698%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "uFVZFF-Ru-bb",
+"brand": "Barbie",
+"url_magazin": "https://infinity.ro/papusa-barbie-la-plaja-in-costum-de-baie-tropical-blue-9021698/p?utm_source=2performant",
+"pret_vechi": null
+},
+{
+"titlu": "PAPUSA BARBIE CARIERE",
+"pret": 78.23,
+"imagine": "https://gomagcdn.ro/domains/atelierulfamiliei.ro/files/product/large/papusa-barbie-cariere-778430.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.atelierulfamiliei.ro%2Fpapusa-barbie-cariere.html",
+"magazin": "atelierulfamiliei.ro",
+"id": "-eHFjZb3pfhy",
+"brand": "Mattel",
+"url_magazin": "https://www.atelierulfamiliei.ro/papusa-barbie-cariere.html",
+"pret_vechi": 130.78
+},
+{
+"titlu": "BARBIE PAPUSA BARBIE JUCATOARE DE GOLF",
+"pret": 78.23,
+"imagine": "https://gomagcdn.ro/domains/atelierulfamiliei.ro/files/product/large/barbie-papusa-barbie-jucatoare-de-golf-634682.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fwww.atelierulfamiliei.ro%2Fbarbie-papusa-barbie-jucatoare-de-golf.html",
+"magazin": "atelierulfamiliei.ro",
+"id": "1mWVRQFPIEnq",
+"brand": "Mattel",
+"url_magazin": "https://www.atelierulfamiliei.ro/barbie-papusa-barbie-jucatoare-de-golf.html",
+"pret_vechi": 130.78
+},
+{
+"titlu": "Papusa Barbie Asistenta medicala, satena",
+"pret": 95.59,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/275825237/Image-5.webp",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpapusa-barbie-asistenta-medicala-satena-1879512%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "qqdnXczCc8oR",
+"brand": "Barbie",
+"url_magazin": "https://infinity.ro/papusa-barbie-asistenta-medicala-satena-1879512/p?utm_source=2performant",
+"pret_vechi": null
+},
+{
+"titlu": "Papusa Barbie Colectie Aniversara 80 de Ani Blonda cu Rochie Rosie Rubin",
+"pret": 114.95,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/270193429/image-c6dc66374d93473fa3ece0284a9708c7.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpapusa-barbie-colectie-aniversara-80-de-ani-blonda-cu-rochie-rosie-rubin-1879545%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "eX5mCb7glkly",
+"brand": "Barbie",
+"url_magazin": "https://infinity.ro/papusa-barbie-colectie-aniversara-80-de-ani-blonda-cu-rochie-rosie-rubin-1879545/p?utm_source=2performant",
+"pret_vechi": null
+},
+{
+"titlu": "Papusa Barbie Dansatoare Latino",
+"pret": 120.18,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/270504876/image-068baac0e1da466983719a9c1de4ebf0.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpapusa-barbie-dansatoare-latino-9021724%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "hTUI35Mbr_8j",
+"brand": "Barbie",
+"url_magazin": "https://infinity.ro/papusa-barbie-dansatoare-latino-9021724/p?utm_source=2performant",
+"pret_vechi": null
+},
+{
+"titlu": "Papusa Barbie Bruneta cu Sindrom Down",
+"pret": 131.89,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/270193360/image-765874fe615241e9801a8f0bd5fae1cf.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpapusa-barbie-bruneta-cu-sindrom-down-1879529%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "Sb5w_JGYaHqK",
+"brand": "Barbie",
+"url_magazin": "https://infinity.ro/papusa-barbie-bruneta-cu-sindrom-down-1879529/p?utm_source=2performant",
+"pret_vechi": null
+},
+{
+"titlu": "Papusa Barbie Fashionista Bruneta Cu Rochie Mov",
+"pret": 131.89,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/270193420/image-85ab930e051040c2a167dcf1b898b063.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpapusa-barbie-fashionista-bruneta-cu-rochie-mov-1879539%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "Ss-dK_-sGyap",
+"brand": "Barbie",
+"url_magazin": "https://infinity.ro/papusa-barbie-fashionista-bruneta-cu-rochie-mov-1879539/p?utm_source=2performant",
+"pret_vechi": null
+},
+{
+"titlu": "Papusa Barbie Blonda Cu Rochie Albastra Cu Fundita",
+"pret": 131.89,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/270193418/image-bc1e112f9bae4d3d9dbf2053b18ea8a5.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpapusa-barbie-blonda-cu-rochie-albastra-cu-fundita-1879540%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "ML5T5O1dRs4n",
+"brand": "Barbie",
+"url_magazin": "https://infinity.ro/papusa-barbie-blonda-cu-rochie-albastra-cu-fundita-1879540/p?utm_source=2performant",
+"pret_vechi": null
+},
+{
+"titlu": "Papusa Barbie Detectiv Pe Plaja",
+"pret": 131.89,
+"imagine": "https://infinityro.vteximg.com.br/arquivos/ids/270193492/image-56e55f1b6e314db6a7f7972bbd2d2335.jpg",
+"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Finfinity.ro%2Fpapusa-barbie-detectiv-pe-plaja-1879553%2Fp%3Futm_source%3D2performant",
+"magazin": "infinity.ro",
+"id": "p6hGZGe7jCYn",
+"brand": "Barbie",
+"url_magazin": "https://infinity.ro/papusa-barbie-detectiv-pe-plaja-1879553/p?utm_source=2performant",
+"pret_vechi": null
+}
+],
+"magazine": [
+"atelierulfamiliei.ro",
+"grupdzc.ro",
+"infinity.ro"
 ]
 },
 {
@@ -19420,66 +21551,6 @@
 ],
 "produse": [
 {
-"titlu": "Inel argint 925 granat | Clasic #2",
-"pret": 18.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/R1001057-133.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Finel-argint-925-granat-clasic-2%3Fvariant%3D57555359105348",
-"magazin": "druzy.ro",
-"id": "7Wp0rjW3QXY2",
-"brand": "druzy.ro - Cristale, Home Deco",
-"url_magazin": "https://druzy.ro/products/inel-argint-925-granat-clasic-2?variant=57555359105348",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Inel argint peridot | Clasic",
-"pret": 22.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/R1001057-141.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Finel-argint-peridot-clasic%3Fvariant%3D57555805438276",
-"magazin": "druzy.ro",
-"id": "9fxy_ANiWE5i",
-"brand": "druzy.ro - Cristale, Home Deco",
-"url_magazin": "https://druzy.ro/products/inel-argint-peridot-clasic?variant=57555805438276",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Inel argint topaz fumuriu | CELESTE #2",
-"pret": 23.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/R1002522-7.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Finel-argint-topaz-fumuriu-celeste-2%3Fvariant%3D57555949191492",
-"magazin": "druzy.ro",
-"id": "5c-0fofv7guO",
-"brand": "druzy.ro - Cristale, Home Deco",
-"url_magazin": "https://druzy.ro/products/inel-argint-topaz-fumuriu-celeste-2?variant=57555949191492",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Inel argint 925 piatra lunii | Moon",
-"pret": 31.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/131282.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Finel-argint-925-piatra-lunii-moon%3Fvariant%3D57556129972548",
-"magazin": "druzy.ro",
-"id": "OSUPaecLnwS_",
-"brand": "druzy.ro - Cristale, Home Deco",
-"url_magazin": "https://druzy.ro/products/inel-argint-925-piatra-lunii-moon?variant=57556129972548",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Inel argint 925 granat | Flower #3",
-"pret": 33.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/R1001163-56.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Finel-argint-925-granat-flower-3%3Fvariant%3D57555359990084",
-"magazin": "druzy.ro",
-"id": "NzWL8CQl9vsM",
-"brand": "druzy.ro - Cristale, Home Deco",
-"url_magazin": "https://druzy.ro/products/inel-argint-925-granat-flower-3?variant=57555359990084",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
 "titlu": "Inel argint 925 lapis lazuli | Round",
 "pret": 40.0,
 "imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/131209.jpg",
@@ -19601,102 +21672,6 @@
 ],
 "produse": [
 {
-"titlu": "Cercei argint lapis lazuli | Marquise 7",
-"pret": 21.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/rn-image_picker_lib_temp_a98fbc5d-4969-4236-abc6-9143d556689c.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Fcercei-argint-lapis-lazuli-marquise-7%3Fvariant%3D56618595713348",
-"magazin": "druzy.ro",
-"id": "A27pe-fSqV4F",
-"brand": "druzy.ro - Cristale, Home Deco",
-"url_magazin": "https://druzy.ro/products/cercei-argint-lapis-lazuli-marquise-7?variant=56618595713348",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Cercei stud peridot din argint | Oval 5 X 7 mm",
-"pret": 27.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/rn-image_picker_lib_temp_07d36a94-b6f3-4568-aeba-e079fa72961c.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Fcercei-stud-peridot-din-argint-oval-5-x-7-mm%3Fvariant%3D57282491810116",
-"magazin": "druzy.ro",
-"id": "c0MDoX0iXbh8",
-"brand": "druzy.ro - Cristale, Home Deco",
-"url_magazin": "https://druzy.ro/products/cercei-stud-peridot-din-argint-oval-5-x-7-mm?variant=57282491810116",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Cercei stud piatra soarelui din argint | Oval 5 X 7 mm",
-"pret": 28.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/rn-image_picker_lib_temp_72ac0e8d-5d42-4145-86c9-045f0abbf8fa.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Fcercei-stud-piatra-soarelui-din-argint-oval-5-x-7-mm%3Fvariant%3D57282712535364",
-"magazin": "druzy.ro",
-"id": "IvZyzrtmQG5J",
-"brand": "druzy.ro - Cristale, Home Deco",
-"url_magazin": "https://druzy.ro/products/cercei-stud-piatra-soarelui-din-argint-oval-5-x-7-mm?variant=57282712535364",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Cercei argint 925 ametist | Lily",
-"pret": 28.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/R6100029-1.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Fcercei-argint-925-ametist-lily%3Fvariant%3D57548630032708",
-"magazin": "druzy.ro",
-"id": "EOtTdMuFzJRB",
-"brand": "druzy.ro - Cristale, Home Deco",
-"url_magazin": "https://druzy.ro/products/cercei-argint-925-ametist-lily?variant=57548630032708",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Cercei argint 925 ametist | Lily 2",
-"pret": 28.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/R6100410-51.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Fcercei-argint-925-ametist-lily-2%3Fvariant%3D57548668961092",
-"magazin": "druzy.ro",
-"id": "ldszd5B6NSOc",
-"brand": "druzy.ro - Cristale, Home Deco",
-"url_magazin": "https://druzy.ro/products/cercei-argint-925-ametist-lily-2?variant=57548668961092",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Cercei argint 925 piatra lunii | Clasic 3",
-"pret": 28.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/130753.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Fcercei-argint-925-piatra-lunii-clasic-3%3Fvariant%3D57548779290948",
-"magazin": "druzy.ro",
-"id": "iua1zWolz8U7",
-"brand": "druzy.ro - Cristale, Home Deco",
-"url_magazin": "https://druzy.ro/products/cercei-argint-925-piatra-lunii-clasic-3?variant=57548779290948",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Cercei argint 925 piatra lunii | Clasic 2",
-"pret": 29.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/130752.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Fcercei-argint-925-piatra-lunii-clasic-1%3Fvariant%3D57548774768964",
-"magazin": "druzy.ro",
-"id": "dZrYmxF-UCEm",
-"brand": "druzy.ro - Cristale, Home Deco",
-"url_magazin": "https://druzy.ro/products/cercei-argint-925-piatra-lunii-clasic-1?variant=57548774768964",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
-"titlu": "Cercei argint pink oyster | AURA",
-"pret": 30.0,
-"imagine": "https://cdn.shopify.com/s/files/1/0666/5165/2389/files/130756.jpg",
-"url": "https://event.2performant.com/events/click?ad_type=quicklink&aff_code=541547473&unique=bb3071a7d&redirect_to=https%3A%2F%2Fdruzy.ro%2Fproducts%2Fcercei-argint-pink-oyster-aura%3Fvariant%3D55891787252036",
-"magazin": "druzy.ro",
-"id": "Y5IvwZaGrZAO",
-"brand": "DRUZY",
-"url_magazin": "https://druzy.ro/products/cercei-argint-pink-oyster-aura?variant=55891787252036",
-"pret_vechi": null,
-"verificat": "2026-11-05"
-},
-{
 "titlu": "Cercei Perlati – Picaturi Albe de Eleganta - Argint 925",
 "pret": 109.0,
 "imagine": "https://cdn7.avanticart.ro/chicbijoux.ro/pictures/products/1500/cercei-perlati-picaturi-albe-de-eleganta-argint-925-103802.jpeg",
@@ -19794,8 +21769,7 @@
 }
 ],
 "magazine": [
-"chicbijoux.ro",
-"druzy.ro"
+"chicbijoux.ro"
 ]
 },
 {

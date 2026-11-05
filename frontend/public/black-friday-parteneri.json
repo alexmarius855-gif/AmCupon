@@ -25,7 +25,7 @@
   {
    "slug": "carti-educatie",
    "nume": "cărți",
-   "campanii": 7
+   "campanii": 8
   },
   {
    "slug": "copii",
@@ -488,6 +488,16 @@
    "descriere": "Ești pregătit? Pe 5 noiembrie începe BLACK FRIDAY la KÄRCHER! Profită de oferte: promoția este valabilă până pe 30 noiembrie. 5 - 30 noiembrie || BLACK FRIDAY la KÄRCHER || || Magazinele KÄRCHER Center #BlackFriday #Karcher #Cleaning #Innovation",
    "are_cod": false,
    "categorie": "casa-gradina"
+  },
+  {
+   "magazin": "libris.ro",
+   "nume": "Libris",
+   "start": "2026-11-05",
+   "final": "2026-11-09",
+   "nota": "Start Black Friday ca la Carte Hai să vezi ce ți-am pregătit!",
+   "descriere": "Campania se încheie duminică, 8 noiembrie, la ora 23:59. Bannerele au fost încărcate. Bannerele au fost incarcate.",
+   "are_cod": true,
+   "categorie": "carti-educatie"
   },
   {
    "magazin": "shopika.ro",

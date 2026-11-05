@@ -576,8 +576,8 @@
    "magazine": 136
   },
   "2026-11-05": {
-   "promotii": 242,
-   "magazine": 136
+   "promotii": 245,
+   "magazine": 137
   }
  },
  "magazine": {
@@ -6217,6 +6217,15 @@
   ],
   "libris.ro": [
    {
+    "k": "startblackfridaycalacartehaisavezicetiampregatit|bf25",
+    "titlu": "Start Black Friday ca la Carte Hai să vezi ce ți-am pregătit!",
+    "cod": true,
+    "prima": "2026-11-05",
+    "ultima": "2026-11-05",
+    "expira": "2026-11-09",
+    "activa": true
+   },
+   {
     "k": "30comenzigratuiteunapoatefiatadoarazi|",
     "titlu": "30 comenzi gratuite. Una poate fi a ta DOAR AZI»",
     "cod": false,
@@ -9800,6 +9809,24 @@
    }
   ],
   "x-sense.com": [
+   {
+    "k": "xsenseexclusiveholidayseasonoffer13offyourentireorder|bfcmxs13",
+    "titlu": "X-SENSE Exclusive Holiday Season Offer – 13% Off Your Entire Order",
+    "cod": true,
+    "prima": "2026-11-05",
+    "ultima": "2026-11-05",
+    "expira": "2026-12-31",
+    "activa": true
+   },
+   {
+    "k": "eusitexsenseexclusiveholidayseasonoffer13offyourentireorder|bfcmxs13",
+    "titlu": "[EU Site] X-SENSE Exclusive Holiday Season Offer – 13% Off Your Entire Order",
+    "cod": true,
+    "prima": "2026-11-05",
+    "ultima": "2026-11-05",
+    "expira": "2026-12-31",
+    "activa": true
+   },
    {
     "k": "xsenseexclusiveaffiliateoffer12offyourentireorder|xsenseaf12",
     "titlu": "X-Sense Exclusive Affiliate Offer – 12% Off Your Entire Order",
