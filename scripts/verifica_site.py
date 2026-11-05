@@ -114,6 +114,17 @@ def verifica_date() -> dict:
                    "produce comision",
                    pierd_bani)
 
+    # 1b. Magazin care interzice site-urile de cupoane (06.11.2026). Regula vine din 2Performant (reguli_2p.py);
+    #     merge_platforms.py ii scoate, iar garda prinde orice drum pe care ar reveni.
+    from reguli_2p import incarca as reguli_2p, interzice_cupoane
+    _reg = reguli_2p()
+    interzise = [m["magazin"] for m in magazine if interzice_cupoane(m, _reg)]
+    stare["interzic_cupoane_pe_site"] = len(interzise)
+    if interzise:
+        semnaleaza("cupoane interzise",
+                   f"{len(interzise)} magazine interzic in 2Performant site-urile de cupoane, dar sunt pe AmCupon",
+                   interzise)
+
     # 2. Countdown absurd. Peste 99 de zile UI-ul afiseaza „Ofertă activă" fara cifra
     #    (lib/expirarePromo.ts), deci valoarea mare in date nu se mai vede — dar ramane
     #    semnul ca sursa livreaza date gresite, si urmatorul consumator poate sa n-o

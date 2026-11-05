@@ -1,5 +1,6 @@
 import type { NextConfig } from "next";
 import { REDIRECTURI } from "./lib/redirecturi";
+import { redirecturiFaraCupoane } from "./lib/redirecturiCupoane";
 
 const ALLOWED_ORIGINS = [
   "https://amcupon.ro",
@@ -38,7 +39,8 @@ const nextConfig: NextConfig = {
   // `app/sitemap.ts`. Doua liste manuale au divergat odata (21.08.2026: 7 URL-uri
   // redirectionate erau inca trimise la indexare) — de aia e un singur fisier.
   async redirects() {
-    return REDIRECTURI;
+    // Plus magazinele care interzic site-urile de cupoane: lista o scrie pipeline-ul (lib/redirecturiCupoane.ts).
+    return [...REDIRECTURI, ...redirecturiFaraCupoane()];
   },
 
   // ── Security headers ────────────────────────────────────────────────────

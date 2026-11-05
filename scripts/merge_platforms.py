@@ -307,6 +307,33 @@ def main():
     with open(_cale_fara_ro, "w", encoding="utf-8") as f:
         json.dump(sorted(_fara_ro, key=lambda x: x["magazin"]), f, ensure_ascii=False, indent=1)
 
+    # ── Programe 2Performant care INTERZIC site-urile de cupoane (06.11.2026, decizia lui Alex) ──────────────
+    # 33 de programe au „Coupons/Vouchers: no" (Kit Unghii: „nu acceptam site-urile de tip coduri reducere care se
+    # folosesc de numele site-ului nostru"). O vanzare venita de pe „Cod reducere X" poate fi respinsa, deci magazinul
+    # iese din output.json (liste, pagini, sitemap, /alege, Black Friday, newsletter). Adresele vechi trimit spre
+    # categoria lui (lib/redirecturiCupoane.ts). Regulile le scrie fetch_2p_api.py; fara ele, ramane lista de data trecuta.
+    from reguli_2p import incarca as _incarca_reguli, interzice_cupoane  # noqa: E402
+    _cale_fara_cup = os.path.join(os.path.dirname(OUTPUT_FRONTEND), "magazine-fara-cupoane.json")
+    _reguli = _incarca_reguli()
+    if _reguli:
+        _fara_cup = [m for m in merged if interzice_cupoane(m, _reguli)]
+        _cat_ramase = {m.get("categorie_slug") for m in merged if m not in _fara_cup}
+        _fara_cup = [{"magazin": m["magazin"], "categorie_slug": m.get("categorie_slug", ""),
+                      "destinatie": f"/categorii/{m['categorie_slug']}" if m.get("categorie_slug") in _cat_ramase else "/toate-magazinele"}
+                     for m in _fara_cup]
+    elif os.path.exists(_cale_fara_cup):
+        with open(_cale_fara_cup, encoding="utf-8") as _f:
+            _fara_cup = json.load(_f)
+        print(f"  (regulile 2Performant lipsesc — pastrez lista de magazine fara cupoane: {len(_fara_cup)})")
+    else:
+        _fara_cup = []
+    if _fara_cup:
+        _scoase = {x["magazin"] for x in _fara_cup}
+        merged = [m for m in merged if m["magazin"] not in _scoase]
+        print(f"  magazine care interzic site-urile de cupoane, scoase: {len(_scoase)} ({', '.join(sorted(_scoase)[:8])}...)")
+    with open(_cale_fara_cup, "w", encoding="utf-8") as f:
+        json.dump(sorted(_fara_cup, key=lambda x: x["magazin"]), f, ensure_ascii=False, indent=1)
+
     # ── ultima_verificare: stampila REALA de "pipeline-ul a confirmat azi acest record" ──
     # Inainte, campul se seta o singura data la creare (fetch_2p_api.py/import_csv_promotii.py/
     # process_data.py) si nu se mai actualiza niciodata dupa — deci "verificat" insemna de fapt

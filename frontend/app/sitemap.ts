@@ -4,6 +4,7 @@ import path from "path";
 import { MACRO_ORDINE, getMacro } from "./blog/categories";
 import { buildMerchantTokens, esteIndexabil, type IndexableProdus } from "../lib/seoIndexable";
 import { CAI_REDIRECTIONATE } from "../lib/redirecturi";
+import { redirecturiFaraCupoane } from "../lib/redirecturiCupoane";
 import { articolFaraPromoActiva, ceruteInSitemap, construiesteIndexMagazine } from "../lib/blogCanonical";
 import { gasesteMagazinBrand } from "../lib/brandMagazin";
 import { categoriiBF, toateCampaniileBF } from "../lib/campaniiBlackFriday";
@@ -357,7 +358,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // si redirectionate in next.config.ts, dar ramase in lista de mai sus. Filtrul
   // citeste ACEEASI sursa ca redirecturile (lib/redirecturi.ts), deci de acum
   // divergenta e imposibila: adaugi un redirect si URL-ul iese singur din sitemap.
-  return intrari.filter(
-    (i) => !CAI_REDIRECTIONATE.has(i.url.replace(BASE_URL, "") || "/")
-  );
+  // Plus adresele magazinelor care interzic site-urile de cupoane (lib/redirecturiCupoane.ts), aceeasi lista ca next.config.
+  const faraCupoane = new Set(redirecturiFaraCupoane().map((r) => r.source));
+  return intrari.filter((i) => {
+    const cale = i.url.replace(BASE_URL, "") || "/";
+    return !CAI_REDIRECTIONATE.has(cale) && !faraCupoane.has(cale);
+  });
 }

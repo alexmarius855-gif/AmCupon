@@ -140,6 +140,19 @@ def ruleaza() -> int:
         print(f"  produse pentru adulti scoase din listari: {len(adulti)}")
         if isinstance(d, dict) and "count" in d:
             d["count"] = len(lista)
+    # Magazinele care interzic in 2Performant site-urile de cupoane (06.11.2026): nici produsele lor nu se listeaza,
+    # fiindca linkul platit ar pleca tot de pe AmCupon. Lista o scrie merge_platforms.py.
+    try:
+        with io.open(os.path.join(os.path.dirname(OUTPUT), "magazine-fara-cupoane.json"), encoding="utf-8") as h:
+            fara_cupoane = {(x.get("magazin") or "").lower() for x in json.load(h)}
+    except (OSError, ValueError):
+        fara_cupoane = set()
+    interzise = [p for p in lista if (p.get("merchant_slug") or "").lower() in fara_cupoane]
+    if interzise:
+        lista[:] = [p for p in lista if (p.get("merchant_slug") or "").lower() not in fara_cupoane]
+        print(f"  produse ale magazinelor care interzic site-urile de cupoane, scoase: {len(interzise)}")
+        if isinstance(d, dict) and "count" in d:
+            d["count"] = len(lista)
     for p in lista:
         titlu = re.sub(r"^descriere\s+", "", p.get("title") or "", flags=re.I)
         if (p.get("merchant_slug") or "").lower() in MAGAZINE_RECONDITIONATE and "recondi" not in titlu.lower():

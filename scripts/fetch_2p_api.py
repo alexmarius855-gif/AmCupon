@@ -523,6 +523,17 @@ def main():
         return
     print(f"  ✅ {len(programe)} programe descarcate")
 
+    # Regulile programelor despre sursele de trafic (06.11.2026): cine interzice site-urile de cupoane sau reclamele Google.
+    # Le citeste merge_platforms.py (scoate magazinele care interzic cupoanele) si garda verifica_site.py.
+    try:
+        import reguli_2p
+        _reg = reguli_2p.din_programe(programe)
+        reguli_2p.scrie(_reg)
+        print(f"  reguli de trafic scrise: {len(_reg)} programe, "
+              f"{sum(1 for v in _reg.values() if v.get('cupoane') == 'no')} interzic site-urile de cupoane")
+    except Exception as e:  # noqa: BLE001 - fara reguli noi ramane fisierul de data trecuta
+        print(f"  ⚠️  regulile de trafic nu s-au scris ({e}); raman cele de data trecuta")
+
     # ── 3. Promotii active ────────────────────────────────────────────────────
     print("\n[3/3] Descarc promotiile active...")
     promotii_raw = fetch_all_pages("affiliate/advertiser_promotions", per_page=100)

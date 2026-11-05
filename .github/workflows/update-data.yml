@@ -530,6 +530,8 @@ jobs:
 
           git add frontend/public/output.json          || true
           git add frontend/public/magazine-fara-livrare-ro.json || true
+          git add frontend/public/magazine-fara-cupoane.json || true
+          git add data/2p-reguli.json                  || true
           git add frontend/public/sitemap-dates.json   || true
           git add frontend/public/studiu-cupoane.json  || true
           git add frontend/public/istoric-promotii.json || true
