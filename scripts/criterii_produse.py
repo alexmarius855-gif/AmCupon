@@ -29,7 +29,7 @@ import sys
 import time
 import unicodedata
 from datetime import datetime, timedelta, timezone
-from urllib.parse import quote_plus, unquote
+from urllib.parse import quote_plus, unquote, urlsplit
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace", line_buffering=True)
@@ -247,12 +247,12 @@ CRITERII = [
     C("jucarii-copii", "seturi-lego", "Seturi LEGO", "lego set", r"\blego\b", None, r"\b(compatibil\w*|tip lego|depozitare|cutie de|recreate|carte|carti)\b", 30, accesorii=False),
     C("jucarii-copii", "puzzle-1000-piese", "Puzzle de 1000 de piese", "puzzle 1000 piese", r"^(.{0,25})\bpuzzle\b", r"(?<!\d)1\.?000\s*(de\s*)?(piese|pcs|pc)\b", r"\b(rama|lipici|covor|mapa|organizator)\b", 20, accesorii=False),
     C("jucarii-copii", "puzzle-500-piese", "Puzzle de 500 de piese", "puzzle 500 piese", r"^(.{0,25})\bpuzzle\b", r"(?<!\d)500\s*(de\s*)?(piese|pcs|pc)\b", r"\b(rama|lipici|covor|mapa|organizator)\b", 15, accesorii=False),
-    C("jucarii-copii", "puzzle-3d", "Puzzle 3D", "puzzle 3d", r"^(.{0,25})\bpuzzle\b", r"\b3d\b", None, 15, accesorii=False),
-    C("jucarii-copii", "masina-cu-telecomanda", "Mașini cu telecomandă", "masina cu telecomanda", r"^(.{0,20})\b(masina|masinuta)\b", r"\b(telecomanda|teleghidat\w*|rc)\b", r"\b(de spalat|de cusut|de tuns|de gaurit|de cafea|cheie|husa)\b", 40, accesorii=False),
+    C("jucarii-copii", "puzzle-3d", "Puzzle 3D", "puzzle 3d", r"^(.{0,25})\bpuzzle\b", r"\b3d\b", r"\bjoc logic\b", 15, accesorii=False),
+    C("jucarii-copii", "masina-cu-telecomanda", "Mașini cu telecomandă", "masina cu telecomanda", r"^(.{0,20})\b(masina|masinuta)\b", r"\b(telecomanda|teleghidat\w*|rc)\b", r"\b(de spalat|de cusut|de tuns|de gaurit|de cafea|cheie|husa|masina electrica|masinuta electrica|\d+\s*v)\b", 40, accesorii=False),
     C("jucarii-copii", "masinuta-electrica-copii", "Mașinuțe electrice pentru copii", "masinuta electrica copii", r"^(.{0,20})\b(masina|masinuta)\b", r"\bmasinuta electrica\b|\bmasina electrica\b.*\bcopii\b|\bcopii\b.*\bmasina electrica\b", r"\b(de schimb|husa|acumulator pentru)\b", 300, accesorii=False),
     C("jucarii-copii", "jucarii-montessori", "Jucării Montessori", "jucarie montessori", r"^(.{0,30})\b(jucari\w*|set|cub|turn|tabla|labirint|puzzle|sortator)\b", r"\bmontessori\b", r"\b(carte|carti|caiet|mobilier|patut|raft|masuta|scaun)\b", 20, accesorii=False),
     C("jucarii-copii", "papusa-barbie", "Păpuși Barbie", "papusa barbie", r"^(.{0,15})\bpapus[ai]\b", r"\bbarbie\b", r"\b(haine|accesorii|tip|similar\w*)\b", 30, accesorii=False),
-    C("jucarii-copii", "joc-de-societate", "Jocuri de societate", "joc de societate", r"^(.{0,12})\bjoc(ul)?\b", r"\bde societate\b", None, 30, accesorii=False),
+    C("jucarii-copii", "joc-de-societate", "Jocuri de societate", "joc de societate", r"^(.{0,12})\bjoc(ul)?\b", r"\bde societate\b", r"\bextensie\b", 30, accesorii=False),
     C("jucarii-copii", "trenulet-electric", "Trenulețe electrice", "trenulet electric", r"^(.{0,12})\b(tren|trenulet)\b", r"\belectric\b", None, 50, accesorii=False),
     C("jucarii-copii", "bucatarie-copii", "Bucătării de jucărie", "bucatarie copii jucarie", r"^(.{0,15})\bbucatari[ae]\b", r"\b(copii|jucarie|fetite)\b", None, 80, accesorii=False),
     C("jucarii-copii", "tricicleta-copii", "Triciclete pentru copii", "tricicleta copii", r"^(.{0,12})\btricicleta\b", None, r"\b(husa|cos|sonerie|electric\w*|adulti)\b", 100, accesorii=False),
@@ -410,14 +410,42 @@ def pret_din_pagina(html: str) -> tuple:
     return 0.0, None
 
 
-def stare_magazin(status: int, final: str, html: str) -> dict:
-    """Ce am aflat de pe pagina produsului. `sters`: pagina nu mai exista. Blocat sau eroare de server: nu stim, deci nu atingem."""
-    from urllib.parse import urlsplit
+def _gazda(u: str) -> str:
+    return re.sub(r"^www\.", "", urlsplit(u).netloc.lower())
 
+
+def _coada(u: str) -> str:
+    parti = [s for s in unquote(urlsplit(u).path).lower().split("/") if s]
+    return re.sub(r"\.(html?|php|aspx)$", "", parti[-1]) if parti else ""
+
+
+def _jetoane(t: str) -> set:
+    return {x for x in re.findall(r"[a-z0-9]+", norm(t)) if len(x) > 2}
+
+
+def alt_produs(ceruta: str, final: str, titlu: str, html: str) -> bool:
+    """Adresa a dus la alta pagina. Un produs redenumit isi pastreaza numele (afisport: Devron 52562 -> Prophete 52562); categoria sau alt
+    produs nu. Fara asta, cel mai mic pret din categorie trecea drept pretul produsului (babyneeds: bicicleta de ~600 lei, 61,99 lei)."""
+    if not ceruta or not titlu or _coada(ceruta) == _coada(final):
+        return False
+    pe_pagina = set()
+    for g in re.findall(r'"name"\s*:\s*"([^"]{3,250})"', html) + re.findall(r'property="og:title"[^>]+content="([^"]+)"', html, re.I) + re.findall(r"<title[^>]*>([^<]+)</title>", html, re.I):
+        pe_pagina |= _jetoane(g)
+    dorit = _jetoane(titlu)
+    return len(dorit & pe_pagina) / max(1, len(dorit)) < 0.5
+
+
+def stare_magazin(status: int, final: str, html: str, ceruta: str = "", titlu: str = "") -> dict:
+    """Ce am aflat de pe pagina produsului. `sters`: pagina nu mai exista. Blocat sau eroare de server: nu stim, deci nu atingem."""
+    # Alt domeniu = pagina de CAPTCHA sau de protectie (evomag -> captcha.distinct.ro/). Spune ca am citit prea mult, nu ca produsul a disparut.
+    if ceruta and _gazda(final) != _gazda(ceruta):
+        return {}
     if status in (404, 410) or (status == 200 and urlsplit(final).path.strip("/") == ""):
         return {"sters": True}
     if status != 200:
         return {}
+    if alt_produs(ceruta, final, titlu, html):
+        return {"sters": True}
     pret, stoc = pret_din_pagina(html)
     if stoc is False:
         return {"sters": True}
@@ -428,6 +456,9 @@ def aplica_verificare(p: dict, v: dict, azi: str):
     """Produsul dupa verificare, sau None daca trebuie scos. Pretul din pagina e cel adevarat, nu cel din feed."""
     if v.get("sters"):
         return None
+    # De trei ori mai mult sau mai putin decat stiam: nu e o reducere, e alt produs sau o eroare. Nu confirmam, verificam din nou.
+    if v.get("pret") and p.get("pret") and not (p["pret"] / 3 <= v["pret"] <= p["pret"] * 3):
+        return {k: w for k, w in p.items() if k != "verificat"}
     if v.get("pret"):
         nou = dict(p, pret=round(v["pret"], 2), verificat=v.get("data", azi))
         if nou.get("pret_vechi") and not (nou["pret"] < nou["pret_vechi"] <= nou["pret"] * 3):
@@ -507,11 +538,11 @@ def verifica_la_magazine(lista: list, azi: str) -> None:
             r = None
             try:
                 r = requests.get(u, headers=UA_MAGAZIN, timeout=15, allow_redirects=True)
-                v = stare_magazin(r.status_code, r.url, r.text[:3_000_000])
+                v = stare_magazin(r.status_code, r.url, r.text[:3_000_000], u, toate[u].get("titlu") or "")
             except requests.RequestException:
                 v = {}
-            if r is not None and r.status_code == 429:
-                break  # magazinul cere pauza: restul la rularea urmatoare
+            if r is not None and (r.status_code == 429 or _gazda(r.url) != _gazda(u)):
+                break  # magazinul cere pauza sau CAPTCHA: restul la rularea urmatoare
             if v:
                 cache[u] = dict(v, data=azi)
             time.sleep(1.0)
@@ -687,8 +718,10 @@ def de_aprobat() -> int:
         if len(bune) < MIN_PRODUSE:
             continue
         print(f"\n## {x['slug']} ({len(bune)})")
+        mediana = sorted(p["pret"] for p in bune)[len(bune) // 2]
         for p in sorted(bune, key=lambda q: q["pret"]):
-            print(f"  {p['pret']:>9.2f} {p['magazin'][:14]:14} {p['titlu'][:88]}")
+            semn = "  <<< pret dubios, deschide pagina" if p["pret"] < mediana / 3 else ""
+            print(f"  {p['pret']:>9.2f} {p['magazin'][:14]:14} {p['titlu'][:88]}{semn}")
     return 0
 
 
@@ -810,6 +843,18 @@ def test() -> int:
         ("bradul de 180 cm intra", se_potriveste("Brad artificial de Craciun Alpin, verde, 3D, 180 cm", DUPA_SLUG["brad-artificial-180-cm"], 680), True),
         ("bicicleta de 20 inch nu e de 16", se_potriveste("Bicicleta copii 20 inch", DUPA_SLUG["bicicleta-copii-16-inch"], 600), False),
         ("tricicleta electrica pentru adulti nu intra", se_potriveste("Tricicleta electrica adulti 500W", DUPA_SLUG["tricicleta-copii"], 3000), False),
+        ("CAPTCHA pe alt domeniu: nu stim, nu stergem", stare_magazin(200, "http://captcha.distinct.ro/?original_url=x", "<title>Distinct Captcha</title>", "https://www.evomag.ro/casti-x", "Casti Monster N-Tune"), {}),
+        ("www in plus nu e alt domeniu", stare_magazin(200, "https://a.ro/p", '<meta property="product:price:amount" content="10">', "https://www.a.ro/p", "Produs"), {"pret": 10.0}),
+        ("categoria nu confirma produsul", stare_magazin(200, "https://www.babyneeds.ro/plimbare-relaxare/", '<title>Plimbare si relaxare</title><script type="application/ld+json">{"@type":"Product","name":"Plimbare","offers":{"lowPrice":"61.99","highPrice":"1789"}}</script>', "https://www.babyneeds.ro/bicicleta-dino-little-heart.html", "Bicicleta copii, Dino Bikes, Little Heart, Roti ajutatoare"), {"sters": True}),
+        ("produsul redenumit ramane", stare_magazin(200, "https://afisport.ro/bicicleta-electrica-prophete-52562-28-inch-m-gri.html", '<title>Bicicleta electrica Prophete 52562 28 inch M gri</title><meta property="product:price:amount" content="2990">', "https://afisport.ro/bicicleta-electrica-devron-52562-28-inch-m-gri.html", "Bicicleta electrica Devron 52562, 28 inch, M, gri"), {"pret": 2990.0}),
+        ("adresa curatata ramane", stare_magazin(200, "https://a.ro/p/", '<meta property="product:price:amount" content="10">', "https://a.ro/p.html?utm=1", "Produs fara alt nume"), {"pret": 10.0}),
+        ("pret de zece ori mai mic: neconfirmat", "verificat" in aplica_verificare({"pret": 600, "verificat": "2026-11-01"}, {"pret": 61.99}, "2026-11-04"), False),
+        ("pret de zece ori mai mic: ramane cel stiut", aplica_verificare({"pret": 600}, {"pret": 61.99}, "2026-11-04")["pret"], 600),
+        ("reducere mare, dar reala: confirmata", aplica_verificare({"pret": 600}, {"pret": 250.0}, "2026-11-04")["pret"], 250.0),
+        ("jocul logic nu e puzzle 3D", se_potriveste("Joc logic IQ 3D Puzzle Cub natur-rosu, Fridolin", DUPA_SLUG["puzzle-3d"], 33), False),
+        ("masinuta pe care se urca nu e RC", se_potriveste("Masina Electrica Cu Telecomanda Tip Jeep, 2 Motoare, 12V, Rosu", DUPA_SLUG["masina-cu-telecomanda"], 801), False),
+        ("RC adevarat ramane", se_potriveste("Masina Cu Telecomanda Bmw Z4 Rosu Scara 1 La 24", DUPA_SLUG["masina-cu-telecomanda"], 117), True),
+        ("extensia nu e joc complet", se_potriveste("Extensie de joc de societate Munchkin 10: Time Warp", DUPA_SLUG["joc-de-societate"], 76), False),
         ("textul lipit de titlu iese", titlu_curat("\u200bImagine produs Friteuza dubla"), "Friteuza dubla"),
         ("slug-uri unice", len(DUPA_SLUG) == len(CRITERII), True),
         ("fiecare tema are nume", [c["tema"] for c in CRITERII if c["tema"] not in NUME_TEME], []),
