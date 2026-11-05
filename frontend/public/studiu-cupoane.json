@@ -1,6 +1,6 @@
 {
   "generat": "2026-11-05",
-  "total_magazine": 456,
+  "total_magazine": 457,
   "cu_promotie": 115,
   "cu_cod_real": 20,
   "doar_oferta": 95,
@@ -84,7 +84,7 @@
     {
       "slug": "sanatate",
       "nume": "Sănătate & farmacie",
-      "magazine": 38,
+      "magazine": 39,
       "cu_promotie": 10,
       "reducere_mediana": 27.5,
       "reducere_max": 70,
