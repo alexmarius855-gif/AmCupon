@@ -8987,7 +8987,7 @@
         "descriere": "52% Off For All Product Code:E52",
         "cod_cupon": "",
         "landing_page": "https://www.yilitehair.com",
-        "zile_ramase": 1577,
+        "zile_ramase": 1576,
         "expira": "2031-03-02",
         "sursa": "impact_deals_api"
       },
@@ -9685,7 +9685,7 @@
     "trend": 0,
     "are_promotie": true,
     "cod_cupon": false,
-    "zile_ramase": 13,
+    "zile_ramase": 12,
     "promotii": [
       {
         "nume": "Redodo 8% Discount Code – Save on All Products",
@@ -9701,7 +9701,7 @@
         "descriere": "Get ready for Redodo Black Friday Early Access from November 5–18, 2026! Enjoy up to 60% OFF across the entire Redodo product range, plus an EXTRA 10% OFF with code BLACKFRIDAY10.",
         "cod_cupon": "",
         "landing_page": "https://www.redodopower.de/pages/redodo-black-friday-angebote",
-        "zile_ramase": 13,
+        "zile_ramase": 12,
         "expira": "2026-11-19",
         "sursa": "impact_deals_api"
       }
