@@ -1,5 +1,70 @@
 [
   {
+    "id": 274294,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274253/original/274253.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=f2d7f5bc7&aff_code=541547473&campaign_unique=f394d2a00",
+    "landing_raw": "https://www.myown.ro/black-friday",
+    "width": 1254,
+    "height": 1254,
+    "merchant": "myown.ro",
+    "merchant_slug": "myown-ro",
+    "name": "Black Friday 2026",
+    "category": "Black Friday 2026",
+    "b_type": "image"
+  },
+  {
+    "id": 274285,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274244/original/274244.png",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=610f89ad3&aff_code=541547473&campaign_unique=9a6f02fef",
+    "landing_raw": "https://www.libris.ro",
+    "width": 1080,
+    "height": 1080,
+    "merchant": "libris.ro ",
+    "merchant_slug": "libris-ro",
+    "name": "Start Black Friday ca la Carte Hai să vezi ce ți-am pregătit!",
+    "category": "Start Black Friday ca la Carte Hai să vezi ce ți-am pregătit!",
+    "b_type": "image"
+  },
+  {
+    "id": 274282,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274241/original/274241.jpg",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=d75376b8d&aff_code=541547473&campaign_unique=f6cf397df",
+    "landing_raw": "https://www.uniquestore.ro/colectie-noua/",
+    "width": 800,
+    "height": 800,
+    "merchant": "uniquestore.ro",
+    "merchant_slug": "uniquestore-ro",
+    "name": "Colectie noua",
+    "category": "Colectie noua",
+    "b_type": "image"
+  },
+  {
+    "id": 274275,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274234/original/274234.png",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=abff0a084&aff_code=541547473&campaign_unique=8dad9830f",
+    "landing_raw": "https://edituracorint.ro/",
+    "width": 1200,
+    "height": 1200,
+    "merchant": "edituracorint.ro",
+    "merchant_slug": "edituracorint-ro",
+    "name": "Teasere Black Friday 2026, 4-5 noiembrie",
+    "category": "Teasere Black Friday 2026, 4-5 noiembrie",
+    "b_type": "image"
+  },
+  {
+    "id": 274265,
+    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274224/original/274224.png",
+    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=062d9a28d&aff_code=541547473&campaign_unique=8dad9830f",
+    "landing_raw": "https://edituracorint.ro/",
+    "width": 1200,
+    "height": 1200,
+    "merchant": "edituracorint.ro",
+    "merchant_slug": "edituracorint-ro",
+    "name": "Black Friday 2026 - materiale 6-8 noiembrie",
+    "category": "Black Friday 2026 - materiale 6-8 noiembrie",
+    "b_type": "image"
+  },
+  {
     "id": 274261,
     "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274220/original/274220.png",
     "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=8baa39f39&aff_code=541547473&campaign_unique=de929938e",
@@ -166,32 +231,6 @@
     "merchant_slug": "edituradiana-ro",
     "name": "Black Friday 2026",
     "category": "Black Friday 2026",
-    "b_type": "image"
-  },
-  {
-    "id": 274113,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274072/original/274072.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=c8ec045d5&aff_code=541547473&campaign_unique=573b44539",
-    "landing_raw": "https://www.aosom.ro/activity/black-friday",
-    "width": 1200,
-    "height": 1200,
-    "merchant": "aosom.ro ",
-    "merchant_slug": "aosom-ro",
-    "name": "BLACK FRIDAY",
-    "category": "BLACK FRIDAY",
-    "b_type": "image"
-  },
-  {
-    "id": 274068,
-    "image_url": "https://img.2performant.com/system/paperclip/banner_pictures/pics/274027/original/274027.jpg",
-    "landing_url": "https://event.2performant.com/events/click?ad_type=banner&unique=853406f3d&aff_code=541547473&campaign_unique=cc08e2536",
-    "landing_raw": "https://www.pensulemachiaj.ro",
-    "width": 1200,
-    "height": 1200,
-    "merchant": "pensulemachiaj.ro",
-    "merchant_slug": "pensulemachiaj-ro",
-    "name": "-80 BLACK FRIDAY CELEBRITY SECRET BAG GRATUIT ",
-    "category": "-80 BLACK FRIDAY CELEBRITY SECRET BAG GRATUIT ",
     "b_type": "image"
   }
 ]

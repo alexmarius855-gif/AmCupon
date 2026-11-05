@@ -8,44 +8,12 @@
   "oferta": "Black Friday Sevensins 2026: -50% la toate produsele de pe site"
  },
  {
-  "magazin": "dhgate.com",
-  "nume": "Dhgate",
-  "logo_url": "https://www.dhgate.com/favicon.ico",
-  "categorie": "Fashion",
-  "are_cod": true,
-  "oferta": "DH2026NOVSAVE6"
- },
- {
-  "magazin": "xmind.com",
-  "nume": "Xmind",
-  "logo_url": "https://www.google.com/s2/favicons?domain=xmind.com&sz=128",
-  "categorie": "Software & Digital",
-  "are_cod": true,
-  "oferta": "Xmind 10% Off | XMIND10OFF"
- },
- {
   "magazin": "hairify.ro",
   "nume": "Hairify",
   "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14301/medium/14301.png",
   "categorie": "Beauty & Îngrijire",
   "are_cod": true,
   "oferta": "15% Discount la fibrele de păr din cheratină pentru păr rar și chelie"
- },
- {
-  "magazin": "orbitmobile.com",
-  "nume": "Orbitmobile",
-  "logo_url": "https://www.google.com/s2/favicons?domain=orbitmobile.com&sz=128",
-  "categorie": "Servicii",
-  "are_cod": true,
-  "oferta": "Quber Savings"
- },
- {
-  "magazin": "outin.com",
-  "nume": "Outin",
-  "logo_url": "https://www.google.com/s2/favicons?domain=outin.com&sz=128",
-  "categorie": "Casă & Grădină",
-  "are_cod": true,
-  "oferta": "OutIn Code：OIAFF5"
  },
  {
   "magazin": "femieko.ro",
@@ -80,19 +48,51 @@
   "oferta": "Reducere de 10% la toate produsele Intimplay.ro"
  },
  {
-  "magazin": "laavooextensions.com",
-  "nume": "Laavooextensions",
-  "logo_url": "https://www.google.com/s2/favicons?domain=laavooextensions.com&sz=128",
-  "categorie": "Marketplace",
-  "are_cod": true,
-  "oferta": "Best Seller 25% off!"
- },
- {
   "magazin": "moftcollection.ro",
   "nume": "Moftcollection",
   "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/13200/medium/13200.png",
   "categorie": "Electronice & IT",
   "are_cod": false,
   "oferta": "Livrare Gratuita la comenzi de peste 200 lei"
+ },
+ {
+  "magazin": "manukashop.ro",
+  "nume": "Manukashop",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/8626/medium/8626.png",
+  "categorie": "Sănătate & Farmacie",
+  "are_cod": false,
+  "oferta": "Transport gratuit la orice comanda!"
+ },
+ {
+  "magazin": "e-potion.ro",
+  "nume": "E Potion",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14406/medium/14406.jpg",
+  "categorie": "Sănătate & Farmacie",
+  "are_cod": true,
+  "oferta": "10% reducere pe tot site-ul e-Potion.ro"
+ },
+ {
+  "magazin": "oleya.ro",
+  "nume": "Oleya",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/7556/medium/7556.jpg",
+  "categorie": "Beauty & Îngrijire",
+  "are_cod": true,
+  "oferta": "Cupon cadou la prima comanda"
+ },
+ {
+  "magazin": "zelto.ro",
+  "nume": "Zelto",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/14523/medium/14523.jpeg",
+  "categorie": "Sănătate & Farmacie",
+  "are_cod": false,
+  "oferta": "Sezonul virozelor, prețuri mai mici!"
+ },
+ {
+  "magazin": "labelshop.ro",
+  "nume": "Labelshop",
+  "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9364/medium/9364.png",
+  "categorie": "Fashion",
+  "are_cod": false,
+  "oferta": "Profita acum de reduceri intre 5% si 15% la echipamente si consumabile"
  }
 ]

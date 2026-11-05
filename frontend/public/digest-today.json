@@ -1,50 +1,22 @@
 {
-  "data": "2026-11-04",
-  "data_afisata": "4 noiembrie 2026",
-  "titlu": "Radarul AmCupon — 4 noiembrie 2026",
-  "intro": "Am trecut azi prin ofertele active si am pastrat doar ce merita. Iese in evidenta Nadula si Klaiyihair, dar mai jos ai selectia completa, verificata de noi. Toate codurile sunt testate; cele cu termen scurt le-am marcat.",
+  "data": "2026-11-05",
+  "data_afisata": "5 noiembrie 2026",
+  "titlu": "Radarul AmCupon — 5 noiembrie 2026",
+  "intro": "Am trecut azi prin ofertele active si am pastrat doar ce merita. Iese in evidenta Libris si Detoxmed, dar mai jos ai selectia completa, verificata de noi. Toate codurile sunt testate; cele cu termen scurt le-am marcat.",
   "picks": [
     {
-      "scor": 100,
-      "magazin": "nadula.com",
-      "nume_afisat": "Nadula",
-      "categorie": "Marketplace",
-      "categorie_slug": "marketplace",
-      "logo_url": "https://www.google.com/s2/favicons?domain=nadula.com&sz=128",
-      "titlu": "Thanksgiving Early Deals: Up to $90 OFF",
-      "descriere": "Use code THX to unlock the following discounts: $15 OFF orders of $89+ $25 OFF orders of $159+ $35 OFF orders of $199+ $90 OFF orders of $399+",
-      "cod": "THX",
-      "url": "https://amcupon.ro/cod-reducere/nadula.com",
-      "zile_ramase": 7,
-      "take": "Oferta verificata — buna daca te incadrezi in categorie."
-    },
-    {
-      "scor": 100,
-      "magazin": "klaiyihair.com",
-      "nume_afisat": "Klaiyihair",
-      "categorie": "Beauty & Îngrijire",
-      "categorie_slug": "beauty",
-      "logo_url": "https://www.google.com/s2/favicons?domain=klaiyihair.com&sz=128",
-      "titlu": "Klaiyi Hair Black Friday Is Coming! 2026",
-      "descriere": "17% OFF Sitewide: BF17; $30 OFF Orders Over $155: BF30; $60 OFF Orders Over $265: BF60. Nov 2–10, 2026. Flash sales: Nov 4: 60% OFF; Nov 6: Down To $47.",
-      "cod": "BF60",
-      "url": "https://amcupon.ro/cod-reducere/klaiyihair.com",
-      "zile_ramase": 7,
-      "take": "Oferta verificata — buna daca te incadrezi in categorie."
-    },
-    {
-      "scor": 100,
-      "magazin": "aosom.ro",
-      "nume_afisat": "Aosom",
-      "categorie": "Casă & Grădină",
-      "categorie_slug": "casa-gradina",
-      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9145/medium/9145.png",
-      "titlu": "BLACK WEEK, ECONOMIE, REDUCERI",
-      "descriere": "",
-      "cod": "BW100",
-      "url": "https://amcupon.ro/cod-reducere/aosom.ro",
-      "zile_ramase": 1,
-      "take": "Grabeste-te: expira in 1 zi. Oferta verificata — buna daca te incadrezi in categorie."
+      "scor": 125,
+      "magazin": "libris.ro",
+      "nume_afisat": "Libris",
+      "categorie": "Cărți & Educație",
+      "categorie_slug": "carti-educatie",
+      "logo_url": "https://img.2performant.com/system/paperclip/campaign_logos/pics/9868/medium/9868.gif",
+      "titlu": "Start Black Friday ca la Carte Hai să vezi ce ți-am pregătit!",
+      "descriere": "Campania se încheie duminică, 8 noiembrie, la ora 23:59. Bannerele au fost încărcate. Bannerele au fost incarcate.",
+      "cod": "BF25",
+      "url": "https://amcupon.ro/cod-reducere/libris.ro",
+      "zile_ramase": 4,
+      "take": "Grabeste-te: expira in 4 zile. Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
       "scor": 100,
@@ -57,8 +29,36 @@
       "descriere": "DetoxMed îți livrează acasă programe complete de detoxifiere cu sucuri crude, nepasteurizate, imbogatite cu vitamina C Alcalina, ambalate în sticlă. Toate mesele zilei vin gata preparate: 6 sucuri sau 4 sucuri și o salată pe zi, pe 3, 5, 7 sau 12 zile. Intareste-ti imunitatea, scapa de câteva kilograme, de balonare și de oboseală, fără senzația de foame. Livrarea in sistem termoizolant e gratuită în toată țara.",
       "cod": "DETOX10",
       "url": "https://amcupon.ro/cod-reducere/detoxmed.ro",
-      "zile_ramase": 4,
-      "take": "Grabeste-te: expira in 4 zile. Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 3,
+      "take": "Grabeste-te: expira in 3 zile. Oferta verificata — buna daca te incadrezi in categorie."
+    },
+    {
+      "scor": 100,
+      "magazin": "nadula.com",
+      "nume_afisat": "Nadula",
+      "categorie": "Marketplace",
+      "categorie_slug": "marketplace",
+      "logo_url": "https://www.google.com/s2/favicons?domain=nadula.com&sz=128",
+      "titlu": "Thanksgiving Early Deals: Up to $90 OFF",
+      "descriere": "Use code THX to unlock the following discounts: $15 OFF orders of $89+ $25 OFF orders of $159+ $35 OFF orders of $199+ $90 OFF orders of $399+",
+      "cod": "THX",
+      "url": "https://amcupon.ro/cod-reducere/nadula.com",
+      "zile_ramase": 6,
+      "take": "Oferta verificata — buna daca te incadrezi in categorie."
+    },
+    {
+      "scor": 100,
+      "magazin": "klaiyihair.com",
+      "nume_afisat": "Klaiyihair",
+      "categorie": "Beauty & Îngrijire",
+      "categorie_slug": "beauty",
+      "logo_url": "https://www.google.com/s2/favicons?domain=klaiyihair.com&sz=128",
+      "titlu": "Klaiyi Hair Black Friday Is Coming! 2026",
+      "descriere": "17% OFF Sitewide; $30 OFF Orders Over $155; $60 OFF Orders Over $265. Nov 2–10, 2026. Flash sales: Nov 4: 60% OFF; Nov 6: Down To $47.",
+      "cod": "BF60",
+      "url": "https://amcupon.ro/cod-reducere/klaiyihair.com",
+      "zile_ramase": 6,
+      "take": "Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
       "scor": 100,
@@ -71,7 +71,7 @@
       "descriere": "Limited time sale-T3U2 Save 42% OFF! Use code HT3U2",
       "cod": "HT3U2",
       "url": "https://amcupon.ro/cod-reducere/kospet.com",
-      "zile_ramase": 7,
+      "zile_ramase": 6,
       "take": "Oferta verificata — buna daca te incadrezi in categorie."
     },
     {
@@ -85,8 +85,8 @@
       "descriere": "Esti gata pentru noi aventuri LEGO®? Pe Noriel.ro, intre 04 - 10.11.2026, ai 25% REDUCERE direct in cos, la comenzi LEGO® de minimum 349 lei!Grabeste-te, oferta este valabila pentru o perioada limitata! Promotie exclusiv online in perioada 04 - 10.11.2026. Se aplica direct in cos si nu se cumuleaza cu alte reduceri.",
       "cod": "",
       "url": "https://amcupon.ro/cod-reducere/noriel.ro",
-      "zile_ramase": 6,
-      "take": "Oferta verificata — buna daca te incadrezi in categorie."
+      "zile_ramase": 5,
+      "take": "Grabeste-te: expira in 5 zile. Oferta verificata — buna daca te incadrezi in categorie."
     }
   ],
   "outro": "Revino maine la Radar — alegem din nou ce merita, ca sa nu cauti tu prin sute de oferte.",
